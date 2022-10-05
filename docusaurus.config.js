@@ -36,6 +36,23 @@ const config = {
         steps: 2, // min, max 사이에서 생성된 최대 이미지 개수(설정값 포함)
         disableInDev: false,
       },
+    ],
+    [
+      'docusaurus-plugin-includes',
+      {
+        replacements: [
+          { key: '{ProductName}', value: 'My long product name for XYZ' },
+          { key: '{ShortName}', value: 'XYZ' },
+        ],
+        embeds: [
+          {
+            key: 'youtube',
+            embedFunction: function(code) {
+              return '<div class="video-container"><iframe width="800" height="500" type="text/html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/' + code + '"></iframe></div>'
+            }      
+          }
+        ]
+      }
     ]
   ],
   presets: [
@@ -65,6 +82,16 @@ const config = {
         sidebar: {
           autoCollapseCategories: true,
         }
+      },
+      imageZoom: {
+        selector: '.markdown img',
+        options: {
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+          container: '#zoom-container',
+          template: '#zoom-template',
+        },
       },
       navbar: {
         title: '',
@@ -141,6 +168,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['batch', 'apacheconf', 'docker'],
       },
     }),
 };

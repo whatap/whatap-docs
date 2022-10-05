@@ -28,12 +28,20 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+html[lang='ko'] {
+  word-wrap: keep-all;
+}
+
 a, a:hover, .menu__link--active, .navbar__link--active, strong em {
   color: #296cf2;
 }
 
 img {
   max-width: 75%;
+}
+img[src*='psgrep.png'] {
+  max-width: 100%;
 }
 
 strong em {
@@ -42,6 +50,34 @@ strong em {
 ul ol {
   padding-left: calc(var(--ifm-list-left-padding) / 2);
 }
+::marker {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #aaaaaa;
+}
 ul ol li::marker {
   content: counter(list-item) '. ';
+}
+/* p.text--truncate {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+} */
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+  margin-bottom: 30px;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

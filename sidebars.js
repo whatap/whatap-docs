@@ -31,28 +31,43 @@ const sidebars = {
   whatapSidebar: [
     {
       type: 'category',
-      label: '시작하기',
-      collapsible: true,
-      collapsed: true,
+      label: '시작하기 전에',
+      collapsible: false,
+      collapsed: false,
       items: [ 
         'getting-started/support-env',
         'getting-started/create-account',
+      ]
+    },
+    {
+      type: 'category',
+      label: '에이전트 적용하기',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'getting-started/install-agent',
+      },
+      items: [
         {
           type: 'category',
-          label: '모니터링 시작하기',
-          collapsible: true,
-          collapsed: true,
+          label: '애플리케이션',
           link: {
             type: 'doc',
-            id: 'getting-started/install-agent',
+            id: 'getting-started/application-agent',
           },
           items: [
-            'getting-started/java'
+            'getting-started/java',
           ]
         },
-        'getting-started/supported-spec',
+        'getting-started/server-agent',
+        'getting-started/database-agent',
+        'getting-started/k8-agent',
+        'getting-started/telegraf-agent',
+        'getting-started/focus-agent',
+        'getting-started/integration-agent',
       ]
-    }
+    },
   ],
 };
 
