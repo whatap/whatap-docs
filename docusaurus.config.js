@@ -50,6 +50,12 @@ const config = {
             embedFunction: function(code) {
               return '<div class="video-container"><iframe width="800" height="500" type="text/html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/' + code + '"></iframe></div>'
             }      
+          },
+          {
+            key: 'video',
+            embedFunction: function(code) {
+              return '<div class="video-container"><video class="p-video" autoplay loop muted playsinline><source src="'+ code + '"/></video></div>'
+            }
           }
         ]
       }
@@ -73,7 +79,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
-    ],
+    ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

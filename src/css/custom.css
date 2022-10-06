@@ -36,6 +36,12 @@ html[lang='ko'] {
 a, a:hover, .menu__link--active, .navbar__link--active, strong em {
   color: #296cf2;
 }
+main .markdown a {
+  text-decoration: underline; /* 문서 본문만 언더라인 적용 */
+}
+main .markdown a.card {
+  text-decoration: none;
+}
 
 img {
   max-width: 75%;

@@ -31,44 +31,68 @@ const sidebars = {
   whatapSidebar: [
     {
       type: 'category',
-      label: '시작하기 전에',
+      label: '시작하기',
       collapsible: false,
       collapsed: false,
       items: [ 
         'getting-started/support-env',
         'getting-started/create-account',
-      ]
+        {
+          type: 'category',
+          label: '에이전트 적용하기',
+          collapsible: false,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'getting-started/install-agent',
+          },
+          items: [
+            'apm/application-agent',
+            'getting-started/server-agent',
+            'getting-started/database-agent',
+            'getting-started/k8-agent',
+            'getting-started/telegraf-agent',
+            'getting-started/focus-agent',
+            'getting-started/integration-agent',
+          ]
+        },
+      ],
+      
     },
+  ],
+  apmSidebar: [
     {
       type: 'category',
-      label: '에이전트 적용하기',
+      label: '애플리케이션 모니터링 에이전트 설치',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'getting-started/install-agent',
+        id: 'apm/application-agent',
       },
-      items: [
+      items: [ 
         {
           type: 'category',
-          label: '애플리케이션',
+          label: 'Java',
+          collapsible: true,
+          collapsed: false,
           link: {
             type: 'doc',
-            id: 'getting-started/application-agent',
+            id: 'apm/java',
           },
           items: [
-            'getting-started/java',
+            'apm/add-jvm-opt/tomcat',
+            'apm/add-jvm-opt/paas',
+            'apm/add-jvm-opt/docker',
           ]
         },
-        'getting-started/server-agent',
-        'getting-started/database-agent',
-        'getting-started/k8-agent',
-        'getting-started/telegraf-agent',
-        'getting-started/focus-agent',
-        'getting-started/integration-agent',
-      ]
+      ],
     },
-  ],
+    {
+      type: 'doc',
+      id: 'apm/supported-spec'
+    }
+  ]
 };
 
 module.exports = sidebars;
