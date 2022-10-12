@@ -28,16 +28,6 @@ const config = {
   },
   plugins: [
     [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 70,
-        max: 640, // 조정할 이미지 최대 크기.
-        min: 320, // 조정할 이미지 최소 크기. 원본이 더 작으면 해당 크기를 사용합니다.
-        steps: 2, // min, max 사이에서 생성된 최대 이미지 개수(설정값 포함)
-        disableInDev: false,
-      },
-    ],
-    [
       'docusaurus-plugin-includes',
       {
         replacements: [
@@ -59,7 +49,10 @@ const config = {
           }
         ]
       }
-    ]
+    ],
+    [
+      'docusaurus-plugin-enlarge-image', {}
+    ],
   ],
   presets: [
     [
@@ -88,16 +81,6 @@ const config = {
         sidebar: {
           autoCollapseCategories: true,
         }
-      },
-      imageZoom: {
-        selector: '.markdown img',
-        options: {
-          margin: 24,
-          background: '#BADA55',
-          scrollOffset: 0,
-          container: '#zoom-container',
-          template: '#zoom-template',
-        },
       },
       navbar: {
         title: '',
@@ -174,8 +157,17 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'apacheconf', 'docker'],
+        additionalLanguages: ['batch', 'apacheconf', 'docker' ],
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        config: {}
+      }
     }),
 };
 

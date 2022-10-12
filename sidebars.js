@@ -75,17 +75,31 @@ const sidebars = {
           type: 'category',
           label: 'Java',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
             id: 'apm/java',
           },
           items: [
             'apm/add-jvm-opt/tomcat',
-            'apm/add-jvm-opt/paas',
+            'apm/add-jvm-opt/jboss',
+            'apm/add-jvm-opt/jeus',
+            'apm/add-jvm-opt/weblogic',
+            'apm/add-jvm-opt/websphere',
+            'apm/add-jvm-opt/resin',
+            'apm/add-jvm-opt/liberty',
+            'apm/add-jvm-opt/jetty',
+            'apm/add-jvm-opt/spring-boot',
+            'apm/add-jvm-opt/play2',
+            'apm/add-jvm-opt/ibm-bluemix',
+            'apm/add-jvm-opt/elastic-beanstalk',
             'apm/add-jvm-opt/docker',
+            'apm/add-jvm-opt/batch-program',
           ]
         },
+        {
+          
+        }
       ],
     },
     {
