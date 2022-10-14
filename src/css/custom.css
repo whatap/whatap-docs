@@ -38,6 +38,16 @@ main .markdown table {
   width: 100%;
   display: table;
 }
+main .markdown .java-name table td:first-of-type {
+  width: 25%;
+}
+main .markdown table code {
+  font-family: monospace;
+  background: none;
+  border: none;
+  font-size: 120%;
+  padding: 0;
+}
 a, a:hover, .menu__link--active, .navbar__link--active, main .markdown strong em {
   color: #296cf2;
 }

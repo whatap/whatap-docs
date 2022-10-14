@@ -78,12 +78,13 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/intro-java'
+            id: 'apm/java-intro'
           },
           items: [
             {
               type: 'doc',
-              id: 'apm/supported-spec'
+              label: '지원 환경',
+              id: 'apm/java-supported-spec',
             },
             {
               type: 'category',
@@ -109,6 +110,7 @@ const sidebars = {
                 'apm/add-jvm-opt/elastic-beanstalk',
                 'apm/add-jvm-opt/docker',
                 'apm/add-jvm-opt/batch-app',
+                'apm/add-jvm-opt/java-under-ver',
               ]
             },
             {
@@ -130,12 +132,31 @@ const sidebars = {
               type: 'doc',
               label: '에이전트 로그',
               id: 'apm/java-agent-log'
-            }
-            ,
+            },
             {
               type: 'doc',
               label: '에이전트 이름 식별',
               id: 'apm/java-agent-name'
+            },
+            {
+              type: 'category',
+              label: '에이전트 플러그인',
+              items: [
+                'apm/java-script-plugin',
+                'apm/java-weaving-plugin'
+              ]
+            },
+            {
+              type: 'category',
+              label: '에이전트 관리',
+              items: [
+                {
+                  type: 'doc',
+                  label: '에이전트 업데이트',
+                  id: 'apm/java-update-agent'
+                },
+                'apm/java-msa-group'
+              ]
             }
           ]
         }
