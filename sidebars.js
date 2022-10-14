@@ -138,6 +138,42 @@ const sidebars = {
               id: 'apm/java-agent-name'
             }
           ]
+        },
+        {
+          type: 'category',
+          label: 'PHP 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/intro-php'
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'apm/supported-spec-php'
+            },
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/php',
+              },
+              items: [
+                'apm/add-jvm-opt/tomcat',
+                'apm/add-jvm-opt/jboss',
+                'apm/add-jvm-opt/jeus'
+              ]
+            },
+            {
+              type: 'doc',
+              label: '설치 시 문제 해결',
+              id: 'apm/php-agent-troubleshooting'
+            }
+          ]
         }
       ]
     }
