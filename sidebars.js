@@ -40,12 +40,12 @@ const sidebars = {
         {
           type: 'category',
           label: '에이전트 적용하기',
-          collapsible: false,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'getting-started/install-agent',
-          },
+          collapsible: true,
+          collapsed: true,
+          // link: {
+          //   type: 'doc',
+          //   id: 'getting-started/install-agent',
+          // },
           items: [
             'apm/application-agent',
             'getting-started/server-agent',
@@ -63,7 +63,7 @@ const sidebars = {
   apmSidebar: [
     {
       type: 'category',
-      label: '애플리케이션 모니터링 에이전트 설치',
+      label: '애플리케이션 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -73,38 +73,73 @@ const sidebars = {
       items: [ 
         {
           type: 'category',
-          label: 'Java',
+          label: 'JAVA 모니터링',
           collapsible: true,
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/java',
+            id: 'apm/intro-java'
           },
           items: [
-            'apm/add-jvm-opt/tomcat',
-            'apm/add-jvm-opt/jboss',
-            'apm/add-jvm-opt/jeus',
-            'apm/add-jvm-opt/weblogic',
-            'apm/add-jvm-opt/websphere',
-            'apm/add-jvm-opt/resin',
-            'apm/add-jvm-opt/liberty',
-            'apm/add-jvm-opt/jetty',
-            'apm/add-jvm-opt/spring-boot',
-            'apm/add-jvm-opt/play2',
-            'apm/add-jvm-opt/ibm-bluemix',
-            'apm/add-jvm-opt/elastic-beanstalk',
-            'apm/add-jvm-opt/docker',
-            'apm/add-jvm-opt/batch-program',
+            {
+              type: 'doc',
+              id: 'apm/supported-spec'
+            },
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/java',
+              },
+              items: [
+                'apm/add-jvm-opt/tomcat',
+                'apm/add-jvm-opt/jboss',
+                'apm/add-jvm-opt/jeus',
+                'apm/add-jvm-opt/weblogic',
+                'apm/add-jvm-opt/websphere',
+                'apm/add-jvm-opt/resin',
+                'apm/add-jvm-opt/liberty',
+                'apm/add-jvm-opt/jetty',
+                'apm/add-jvm-opt/spring-boot',
+                'apm/add-jvm-opt/play2',
+                'apm/add-jvm-opt/ibm-bluemix',
+                'apm/add-jvm-opt/elastic-beanstalk',
+                'apm/add-jvm-opt/docker',
+                'apm/add-jvm-opt/batch-app',
+              ]
+            },
+            {
+              type: 'doc',
+              label: '설치 시 문제 해결',
+              id: 'apm/java-agent-troubleshooting'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설정',
+              id: 'apm/java-set-agent'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설치 파일 구성',
+              id: 'apm/java-agent-files'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 로그',
+              id: 'apm/java-agent-log'
+            }
+            ,
+            {
+              type: 'doc',
+              label: '에이전트 이름 식별',
+              id: 'apm/java-agent-name'
+            }
           ]
-        },
-        {
-          
         }
-      ],
-    },
-    {
-      type: 'doc',
-      id: 'apm/supported-spec'
+      ]
     }
   ]
 };

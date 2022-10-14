@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -64,6 +65,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          rehypePlugins: [rehypeTableMerge],
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -80,6 +82,7 @@ const config = {
       docs: {
         sidebar: {
           autoCollapseCategories: true,
+          hideable: true,
         }
       },
       navbar: {
@@ -100,6 +103,12 @@ const config = {
             docId: 'getting-started/support-env',
             position: 'left',
             label: '시작하기',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/application-agent',
+            position: 'left',
+            label: '애플리케이션 모니터링',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -157,7 +166,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'apacheconf', 'docker' ],
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini' ],
       },
       zoom: {
         selector: '.markdown :not(em) > img',

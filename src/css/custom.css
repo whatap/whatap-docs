@@ -63,7 +63,7 @@ main .markdown strong em {
 }
 main .markdown em {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   color:#21af90;
 }
 main .markdown ul ol {
