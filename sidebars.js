@@ -163,9 +163,13 @@ const sidebars = {
                 id: 'apm/php',
               },
               items: [
-                'apm/add-jvm-opt/tomcat',
-                'apm/add-jvm-opt/jboss',
-                'apm/add-jvm-opt/jeus'
+                'apm/php-os/redhat-centos',
+                'apm/php-os/debian-ubuntu',
+                'apm/php-os/amazon-linux',
+                'apm/php-os/alpine-linux',
+                'apm/php-os/freebsd',
+                'apm/php-os/gcae',
+                'apm/php-os/aws-eb'
               ]
             },
             {
