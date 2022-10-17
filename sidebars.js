@@ -114,50 +114,54 @@ const sidebars = {
               ]
             },
             {
-              type: 'doc',
-              label: '설치 시 문제 해결',
-              id: 'apm/java-agent-troubleshooting'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설정',
-              id: 'apm/java-set-agent'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치 파일 구성',
-              id: 'apm/java-agent-files'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 로그',
-              id: 'apm/java-agent-log'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 이름 식별',
-              id: 'apm/java-agent-name'
-            },
-            {
               type: 'category',
-              label: '에이전트 플러그인',
+              label: '에이전트 설정 및 관리',
+              collapsible: true,
+              collapsed: true,
               items: [
-                'apm/java-script-plugin',
-                'apm/java-weaving-plugin'
-              ]
-            },
-            {
-              type: 'category',
-              label: '에이전트 관리',
-              items: [
+                'apm/java-set-agent',
+                'apm/java-agent-files',
+                {
+                  type: 'doc',
+                  label: '에이전트 로그',
+                  id: 'apm/java-agent-log'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 이름 식별',
+                  id: 'apm/java-agent-name'
+                },
                 {
                   type: 'doc',
                   label: '에이전트 업데이트',
                   id: 'apm/java-update-agent'
                 },
-                'apm/java-msa-group'
+                {
+                  type: 'category',
+                  label: '에이전트 플러그인',
+                  items: [
+                    {
+                      type: 'doc',
+                      label: '스크립트 플러그인',
+                      id: 'apm/java-script-plugin'
+                    },
+                    {
+                      type: 'doc',
+                      label: '위빙 플러그인',
+                      id: 'apm/java-weaving-plugin'
+                    },
+                  ]
+                },
+                'apm/java-msa-group',
+                'apm/java-aes-256-encryption',
+                'apm/java-scale-in-auto-delete',
               ]
-            }
+            },
+            {
+              type: 'doc',
+              label: '설치 시 문제 해결',
+              id: 'apm/java-agent-troubleshooting'
+            },
           ]
         }
       ]

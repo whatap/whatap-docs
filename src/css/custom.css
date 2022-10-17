@@ -48,6 +48,9 @@ main .markdown table code {
   font-size: 120%;
   padding: 0;
 }
+main .markdown pre code {
+  font-size: 85%;
+}
 a, a:hover, .menu__link--active, .navbar__link--active, main .markdown strong em {
   color: #296cf2;
 }
