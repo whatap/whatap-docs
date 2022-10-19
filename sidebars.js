@@ -57,7 +57,6 @@ const sidebars = {
           ]
         },
       ],
-      
     },
   ],
   apmSidebar: [
@@ -113,14 +112,14 @@ const sidebars = {
                 'apm/add-jvm-opt/java-under-ver',
               ]
             },
+            'apm/java-after-install-agent',
             {
               type: 'category',
-              label: '에이전트 설정 및 관리',
+              label: '고급 설정',
               collapsible: true,
               collapsed: true,
               items: [
                 'apm/java-set-agent',
-                'apm/java-agent-files',
                 {
                   type: 'doc',
                   label: '에이전트 로그',
@@ -159,9 +158,39 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '설치 시 문제 해결',
+              label: '문제 진단',
               id: 'apm/java-agent-troubleshooting'
             },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Node.js 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/nodejs-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/nodejs-supported-spec'
+            },
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/nodejs-install-agent'
+              },
+              items: [
+                
+              ]
+            }
           ]
         }
       ]
