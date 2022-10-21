@@ -56,6 +56,9 @@ main .markdown pre code {
 a, a:hover, .menu__link--active, .navbar__link--active, main .markdown strong em {
   color: #296cf2;
 }
+main .markdown strong {
+  font-weight: 500;
+}
 main .markdown code {
   display: inline-block;
 }
@@ -91,6 +94,14 @@ main .markdown ::marker {
 }
 main .markdown ul ol li::marker {
   content: counter(list-item) '. ';
+}
+
+main .markdown span.type {
+  color: #25c2a0;
+  margin-left: 10px;
+}
+main .markdown span.options {
+  font-weight: 500;
 }
 /* p.text--truncate {
   -webkit-line-clamp: 3;

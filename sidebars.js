@@ -115,7 +115,7 @@ const sidebars = {
             'apm/java-after-install-agent',
             {
               type: 'category',
-              label: '고급 설정',
+              label: '설정하기',
               collapsible: true,
               collapsed: true,
               items: [
@@ -129,11 +129,6 @@ const sidebars = {
                   type: 'doc',
                   label: '에이전트 이름 식별',
                   id: 'apm/java-agent-name'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 업데이트',
-                  id: 'apm/java-update-agent'
                 },
                 {
                   type: 'category',
@@ -150,6 +145,18 @@ const sidebars = {
                       id: 'apm/java-weaving-plugin'
                     },
                   ]
+                },
+                'apm/java-agent-adv-settings'
+              ]
+            },
+            {
+              type: 'category',
+              label: '관리하기',
+              items: [
+                {
+                  type: 'doc',
+                  label: '에이전트 업데이트 및 삭제',
+                  id: 'apm/java-update-agent'
                 },
                 'apm/java-msa-group',
                 'apm/java-aes-256-encryption',
@@ -191,6 +198,21 @@ const sidebars = {
                 
               ]
             }
+          ]
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'apm/apm-dashboard',
+            'apm/apm-transaction',
+            'apm/apm-topology',
+            'apm/apm-metrics',
+            'apm/apm-analyze',
+            'apm/apm-set-notics',
+            'apm/apm-openapi'
           ]
         }
       ]
