@@ -174,28 +174,23 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '설치 시 문제 해결',
+              label: '설치 점검',
+              id: 'apm/php-install-check'
+            },
+            {
+              type: 'doc',
+              label: '설치 문제 해결',
               id: 'apm/php-agent-troubleshooting'
             },
             {
               type: 'doc',
-              label: '에이전트 설정',
+              label: '설정하기',
               id: 'apm/php-set-agent'
             },
             {
               type: 'doc',
-              label: '에이전트 설치 파일 구성',
-              id: 'apm/php-agent-files'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 로그',
-              id: 'apm/php-agent-log'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 이름 식별',
-              id: 'apm/php-agent-name'
+              label: '관리하기',
+              id: 'apm/php-agent-mg'
             }
           ]
         }
