@@ -114,6 +114,11 @@ const sidebars = {
             },
             'apm/java-after-install-agent',
             {
+              type: 'doc',
+              label: '설치 문제 해결',
+              id: 'apm/java-agent-troubleshooting'
+            },
+            {
               type: 'category',
               label: '설정하기',
               collapsible: true,
@@ -162,12 +167,7 @@ const sidebars = {
                 'apm/java-aes-256-encryption',
                 'apm/java-scale-in-auto-delete',
               ]
-            },
-            {
-              type: 'doc',
-              label: '문제 진단',
-              id: 'apm/java-agent-troubleshooting'
-            },
+            }
           ]
         },
         {
