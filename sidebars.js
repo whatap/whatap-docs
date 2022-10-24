@@ -151,7 +151,11 @@ const sidebars = {
                     },
                   ]
                 },
-                'apm/java-agent-adv-settings'
+                {
+                  type: 'doc',
+                  label: '부가 기능',
+                  id: 'apm/java-agent-adv-settings'
+                }
               ]
             },
             {
@@ -241,16 +245,31 @@ const sidebars = {
               id: 'apm/nodejs-supported-spec'
             },
             {
-              type: 'category',
+              type: 'doc',
               label: '에이전트 설치',
+              id: 'apm/nodejs-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 점검 사항',
+              id: 'apm/nodejs-after-install-agent',
+            },
+            {
+              type: 'category',
+              label: '설정하기',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/nodejs-install-agent'
-              },
               items: [
-                
+                {
+                  type: 'doc',
+                  label: '환경 설정',
+                  id: 'apm/nodejs-set-agent'
+                },
+                {
+                  type: 'doc',
+                  label: '부가 기능',
+                  id: 'apm/nodejs-set-agent-adv'
+                }
               ]
             }
           ]
