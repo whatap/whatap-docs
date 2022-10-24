@@ -194,15 +194,34 @@ const sidebars = {
                 id: 'apm/php',
               },
               items: [
-                'apm/add-jvm-opt/tomcat',
-                'apm/add-jvm-opt/jboss',
-                'apm/add-jvm-opt/jeus'
+                'apm/php-os/redhat-centos',
+                'apm/php-os/debian-ubuntu',
+                'apm/php-os/amazon-linux',
+                'apm/php-os/alpine-linux',
+                'apm/php-os/freebsd',
+                'apm/php-os/gcae',
+                'apm/php-os/aws-eb'
               ]
             },
             {
               type: 'doc',
-              label: '설치 시 문제 해결',
+              label: '설치 점검',
+              id: 'apm/php-install-check'
+            },
+            {
+              type: 'doc',
+              label: '설치 문제 해결',
               id: 'apm/php-agent-troubleshooting'
+            },
+            {
+              type: 'doc',
+              label: '설정하기',
+              id: 'apm/php-set-agent'
+            },
+            {
+              type: 'doc',
+              label: '관리하기',
+              id: 'apm/php-agent-mg'
             }
           ]
         },
