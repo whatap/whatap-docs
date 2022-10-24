@@ -249,6 +249,12 @@ const sidebars = {
                   label: '에이전트 트랜잭션',
                   id: 'apm/php-transaction'
                 },
+                ,
+                {
+                  type: 'doc',
+                  label: 'DB와 SQL',
+                  id: 'apm/php-db-sql'
+                },
               ]
             },
             {
