@@ -214,9 +214,42 @@ const sidebars = {
               id: 'apm/php-agent-troubleshooting'
             },
             {
-              type: 'doc',
+              type: 'category',
               label: '설정하기',
-              id: 'apm/php-set-agent'
+              collapsible: true,
+              collapsed: true,
+              items: [               
+                {
+                  type: 'doc',
+                  label: '에이전트 이름 식별',
+                  id: 'apm/php-agent-name'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 기능 제어',
+                  id: 'apm/php-control-function'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 통신 설정',
+                  id: 'apm/php-agent-com'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 성능 설정',
+                  id: 'apm/php-agent-tx'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 로그',
+                  id: 'apm/php-agent-log'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 트랜잭션',
+                  id: 'apm/php-transaction'
+                },
+              ]
             },
             {
               type: 'doc',
