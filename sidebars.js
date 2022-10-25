@@ -255,6 +255,11 @@ const sidebars = {
                   label: 'DB와 SQL',
                   id: 'apm/php-db-sql'
                 },
+                {
+                  type: 'doc',
+                  label: 'HTTPC와 API Call',
+                  id: 'apm/php-httpc-api'
+                }
               ]
             },
             {
