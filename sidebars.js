@@ -258,9 +258,17 @@ const sidebars = {
               ]
             },
             {
-              type: 'doc',
+              type: 'category',
               label: '관리하기',
-              id: 'apm/php-agent-mg'
+              items: [
+                {
+                  type: 'doc',
+                  label: '업데이트',
+                  id: 'apm/php-agent-update'
+                },
+                'apm/php-agent-temp-st',
+                'apm/php-agent-remove'
+              ]
             }
           ]
         },
