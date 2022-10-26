@@ -259,6 +259,21 @@ const sidebars = {
                   type: 'doc',
                   label: 'HTTPC와 API Call',
                   id: 'apm/php-httpc-api'
+                },
+                {
+                  type: 'doc',
+                  label: '사용자 수',
+                  id: 'apm/php-collect-user'
+                },
+                {
+                  type: 'doc',
+                  label: 'Apdex',
+                  id: 'apm/php-apdex'
+                },
+                {
+                  type: 'doc',
+                  label: '통계',
+                  id: 'apm/php-stat'
                 }
               ]
             },
