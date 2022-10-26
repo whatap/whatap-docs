@@ -28,37 +28,33 @@ const sidebars = {
     },
   ],
    */
-  whatapSidebar: [
-    {
-      type: 'category',
-      label: '시작하기',
-      collapsible: false,
-      collapsed: false,
-      items: [ 
-        'getting-started/support-env',
-        'getting-started/create-account',
-        {
-          type: 'category',
-          label: '에이전트 적용하기',
-          collapsible: true,
-          collapsed: true,
-          // link: {
-          //   type: 'doc',
-          //   id: 'getting-started/install-agent',
-          // },
-          items: [
-            'apm/application-agent',
-            'getting-started/server-agent',
-            'getting-started/database-agent',
-            'getting-started/k8-agent',
-            'getting-started/telegraf-agent',
-            'getting-started/focus-agent',
-            'getting-started/integration-agent',
-          ]
-        },
-      ],
-    },
-  ],
+  // whatapSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: '시작하기',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     items: [ 
+  //       'getting-started/support-env',
+  //       'getting-started/create-account',
+  //       {
+  //         type: 'category',
+  //         label: '에이전트 적용하기',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         items: [
+  //           'apm/application-agent',
+  //           'getting-started/server-agent',
+  //           'getting-started/database-agent',
+  //           'getting-started/k8-agent',
+  //           'getting-started/telegraf-agent',
+  //           'getting-started/focus-agent',
+  //           'getting-started/integration-agent',
+  //         ]
+  //       },
+  //     ],
+  //   },
+  // ],
   apmSidebar: [
     {
       type: 'category',
@@ -151,7 +147,11 @@ const sidebars = {
                     },
                   ]
                 },
-                'apm/java-agent-adv-settings'
+                {
+                  type: 'doc',
+                  label: '부가 기능',
+                  id: 'apm/java-agent-adv-settings'
+                }
               ]
             },
             {
@@ -241,16 +241,89 @@ const sidebars = {
               id: 'apm/nodejs-supported-spec'
             },
             {
-              type: 'category',
+              type: 'doc',
               label: '에이전트 설치',
+              id: 'apm/nodejs-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 점검 사항',
+              id: 'apm/nodejs-after-install-agent',
+            },
+            {
+              type: 'category',
+              label: '설정하기',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/nodejs-install-agent'
-              },
               items: [
-                
+                {
+                  type: 'doc',
+                  label: '환경 설정',
+                  id: 'apm/nodejs-set-agent'
+                },
+                {
+                  type: 'doc',
+                  label: '부가 기능',
+                  id: 'apm/nodejs-set-agent-adv'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: '.NET 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/dotnet-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/dotnet-supported-spec'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설치',
+              id: 'apm/dotnet-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 문제 해결',
+              id: 'apm/dotnet-agent-troubleshooting',
+            },
+            {
+              type: 'category',
+              label: '설정하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  type: 'doc',
+                  label: '환경 설정',
+                  id: 'apm/dotnet-set-agent'
+                },
+                {
+                  type: 'doc',
+                  label: '부가 기능',
+                  id: 'apm/dotnet-set-agent-adv'
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '관리하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  type: 'doc',
+                  label: '에이전트 업데이트 및 삭제',
+                  id: 'apm/dotnet-update-remove'
+                },
               ]
             }
           ]
