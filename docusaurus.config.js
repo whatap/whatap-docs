@@ -28,6 +28,16 @@ const config = {
     locales: ['ko'],
   },
   plugins: [
+    [ 
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: [ 'ko' ],
+        indexBlog: false,
+        docsRouteBasePath: '/',
+        highlightSearchTermsOnTargetPage: true,
+      }
+    ],
     [
       'docusaurus-plugin-includes',
       {
@@ -45,7 +55,7 @@ const config = {
           {
             key: 'video',
             embedFunction: function(code) {
-              return '<div class="video-container"><video class="p-video" autoplay loop muted playsinline><source src="'+ code + '"/></video></div>'
+              return '<div class="video-container"><video type="video/mp4" autoplay="true" loop="true" muted="true" width="100%" height="auto" class="p-video"><source src="'+ code + '"/></video></div>'
             }
           }
         ]
@@ -98,12 +108,12 @@ const config = {
           //   position: 'left',
           //   label: '홈',
           // },
-          {
-            type: 'doc',
-            docId: 'getting-started/support-env',
-            position: 'left',
-            label: '시작하기',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'getting-started/support-env',
+          //   position: 'left',
+          //   label: '시작하기',
+          // },
           {
             type: 'doc',
             docId: 'apm/application-agent',
@@ -125,8 +135,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '시작하기',
-                to: 'getting-started/support-env',
+                label: 'APM 모니터링',
+                to: 'apm/application-agent',
               },
             ],
           },

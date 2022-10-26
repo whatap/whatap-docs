@@ -57,7 +57,7 @@ a, a:hover, .menu__link--active, .navbar__link--active, main .markdown strong em
   color: #296cf2;
 }
 main .markdown strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 main .markdown code {
   display: inline-block;
@@ -111,7 +111,7 @@ main .markdown span.options {
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
-	padding-top: 30px;
+	padding-top: 0px;
 	height: 0;
 	overflow: hidden;
   margin-bottom: 30px;
