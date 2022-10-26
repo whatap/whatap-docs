@@ -167,11 +167,12 @@ const sidebars = {
                   ]
                 },
                 'apm/java-agent-number-of-user',
-                {
-                  type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/java-agent-adv-settings'
-                }
+                'apm/java-agent-load-amount',
+                'apm/java-agent-notification',
+                'apm/java-agent-apdex',
+                'apm/java-agent-static',
+                'apm/java-agent-toplogy',
+                'apm/java-agent-additional-option'
               ]
             },
             {
@@ -261,7 +262,7 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
+                  label: '에이전트 로그 설정',
                   id: 'apm/php-agent-log'
                 },
                 {
@@ -342,17 +343,25 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/nodejs-set-agent'
+              },
               items: [
                 {
                   type: 'doc',
-                  label: '환경 설정',
-                  id: 'apm/nodejs-set-agent'
+                  label: '에이전트 이름 식별',
+                  id: 'apm/nodejs-agent-name',
                 },
-                {
-                  type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/nodejs-set-agent-adv'
-                }
+                'apm/nodejs-agent-control-function',
+                'apm/nodejs-agent-network',
+                'apm/nodejs-agent-log',
+                'apm/nodejs-agent-transaction',
+                'apm/nodejs-agent-dbsql',
+                'apm/nodejs-agent-httpcapicall',
+                'apm/nodejs-agent-number-of-user',
+                'apm/nodejs-agent-static',
+                'apm/nodejs-agent-topology',
               ]
             }
           ]
@@ -387,17 +396,22 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/dotnet-set-agent'
+              },
               items: [
-                {
-                  type: 'doc',
-                  label: '환경 설정',
-                  id: 'apm/dotnet-set-agent'
-                },
-                {
-                  type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/dotnet-set-agent-adv'
-                }
+                'apm/dotnet-agent-name',
+                'apm/dotnet-control-function',
+                'apm/dotnet-agent-network',
+                'apm/dotnet-agent-performance',
+                'apm/dotnet-agent-log',
+                'apm/dotnet-agent-transaction',
+                'apm/dotnet-agent-dbsql',
+                'apm/dotnet-agent-httpcapicall',
+                'apm/dotnet-agent-number-of-user',
+                'apm/dotnet-agent-static',
+                'apm/dotnet-agent-topology',
               ]
             },
             {
