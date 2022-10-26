@@ -241,15 +241,14 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/php-agent-log'
-                },
-                {
-                  type: 'doc',
                   label: '에이전트 트랜잭션',
                   id: 'apm/php-transaction'
                 },
-                ,
+                {
+                  type: 'doc',
+                  label: '에이전트 로그',
+                  id: 'apm/php-agent-log'
+                },
                 {
                   type: 'doc',
                   label: 'DB와 SQL',
@@ -274,6 +273,16 @@ const sidebars = {
                   type: 'doc',
                   label: '통계',
                   id: 'apm/php-stat'
+                },
+                {
+                  type: 'doc',
+                  label: '토폴로지 맵',
+                  id: 'apm/php-tp-map'
+                },
+                {
+                  type: 'doc',
+                  label: '공유 메모리',
+                  id: 'apm/php-shm'
                 }
               ]
             },
