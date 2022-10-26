@@ -119,8 +119,24 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/java-set-agent',
+              },
               items: [
-                'apm/java-set-agent',
+                {
+                  type: 'doc',
+                  label: '에이전트 이름 식별',
+                  id: 'apm/java-agent-name'
+                },
+                'apm/java-agent-control-function',
+                {
+                  type: 'doc',
+                  label: '사용량 수집',
+                  id: 'apm/java-agent-usage',
+                },
+                'apm/java-agent-network',
+                'apm/java-agent-performance',
                 {
                   type: 'doc',
                   label: '에이전트 로그',
@@ -128,9 +144,12 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/java-agent-name'
+                  label: 'GC 로그 모니터링',
+                  id: 'apm/java-agent-gc-log'
                 },
+                'apm/java-agent-transaction',
+                'apm/java-agent-dbsql',
+                'apm/java-agent-httpcapicall',
                 {
                   type: 'category',
                   label: '에이전트 플러그인',
@@ -147,6 +166,7 @@ const sidebars = {
                     },
                   ]
                 },
+                'apm/java-agent-number-of-user',
                 {
                   type: 'doc',
                   label: '부가 기능',
