@@ -348,6 +348,74 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Python 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/python-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/python-supported-spec'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설치',
+              id: 'apm/python-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 점검',
+              id: 'apm/python-after-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 문제 해결',
+              id: 'apm/python-agent-troubleshooting',
+            },
+            {
+              type: 'category',
+              label: '설정하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  type: 'doc',
+                  label: '환경 설정',
+                  id: 'apm/python-set-agent'
+                },
+                {
+                  type: 'doc',
+                  label: '부가 기능',
+                  id: 'apm/python-set-agent-adv'
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '관리하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  type: 'doc',
+                  label: '에이전트 삭제',
+                  id: 'apm/python-remove'
+                },
+                {
+                  type: 'doc',
+                  label: '패키지',
+                  id: 'apm/python-pkg'
+                }
+              ]
+            }
+          ]
+        },
+        {
+          type: 'category',
           label: '.NET 모니터링',
           collapsible: true,
           collapsed: true,
