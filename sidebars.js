@@ -262,11 +262,6 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그 설정',
-                  id: 'apm/php-agent-log'
-                },
-                {
-                  type: 'doc',
                   label: '에이전트 로그',
                   id: 'apm/php-agent-log'
                 },
