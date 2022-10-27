@@ -76,6 +76,11 @@ main .markdown img[src*='tomcat-win.png'] {
   max-width: 50%;
 }
 
+main .markdown img[alt*='Windows'] {
+  display: inline-block;
+  max-height: 20px;
+}
+
 main .markdown strong em {
   font-style: normal;
 }
