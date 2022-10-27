@@ -167,11 +167,12 @@ const sidebars = {
                   ]
                 },
                 'apm/java-agent-number-of-user',
-                {
-                  type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/java-agent-adv-settings'
-                }
+                'apm/java-agent-load-amount',
+                'apm/java-agent-notification',
+                'apm/java-agent-apdex',
+                'apm/java-agent-static',
+                'apm/java-agent-toplogy',
+                'apm/java-agent-additional-option'
               ]
             },
             {
@@ -217,8 +218,8 @@ const sidebars = {
                 'apm/php-os/redhat-centos',
                 'apm/php-os/debian-ubuntu',
                 'apm/php-os/amazon-linux',
-                'apm/php-os/alpine-linux',
                 'apm/php-os/freebsd',
+                'apm/php-os/alpine-linux',
                 'apm/php-os/gcae',
                 'apm/php-os/aws-eb'
               ]
@@ -261,15 +262,14 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
+                  label: '에이전트 로그 설정',
                   id: 'apm/php-agent-log'
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 트랜잭션',
-                  id: 'apm/php-transaction'
+                  label: '에이전트 로그',
+                  id: 'apm/php-agent-log'
                 },
-                ,
                 {
                   type: 'doc',
                   label: 'DB와 SQL',
@@ -294,6 +294,16 @@ const sidebars = {
                   type: 'doc',
                   label: '통계',
                   id: 'apm/php-stat'
+                },
+                {
+                  type: 'doc',
+                  label: '토폴로지 맵',
+                  id: 'apm/php-tp-map'
+                },
+                {
+                  type: 'doc',
+                  label: '공유 메모리',
+                  id: 'apm/php-shm'
                 }
               ]
             },
@@ -334,8 +344,66 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '설치 점검 사항',
+              label: '설치 점검',
               id: 'apm/nodejs-after-install-agent',
+            },
+            {
+              type: 'category',
+              label: '설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/nodejs-set-agent'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  label: '에이전트 이름 식별',
+                  id: 'apm/nodejs-agent-name',
+                },
+                'apm/nodejs-agent-control-function',
+                'apm/nodejs-agent-network',
+                'apm/nodejs-agent-log',
+                'apm/nodejs-agent-transaction',
+                'apm/nodejs-agent-dbsql',
+                'apm/nodejs-agent-httpcapicall',
+                'apm/nodejs-agent-number-of-user',
+                'apm/nodejs-agent-static',
+                'apm/nodejs-agent-topology',
+              ]
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Python 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/python-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/python-supported-spec'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설치',
+              id: 'apm/python-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 점검',
+              id: 'apm/python-after-install-agent',
+            },
+            {
+              type: 'doc',
+              label: '설치 문제 해결',
+              id: 'apm/python-agent-troubleshooting',
             },
             {
               type: 'category',
@@ -345,13 +413,66 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: '환경 설정',
-                  id: 'apm/nodejs-set-agent'
+                  label: '에이전트 이름 식별',
+                  id: 'apm/python-agent-name'
                 },
                 {
                   type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/nodejs-set-agent-adv'
+                  label: '에이전트 기능 제어',
+                  id: 'apm/python-control-function'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 통신 설정',
+                  id: 'apm/python-agent-com'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 트랜잭션',
+                  id: 'apm/python-transaction'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 로그',
+                  id: 'apm/python-agent-log'
+                },
+                {
+                  type: 'doc',
+                  label: 'DB와 SQL',
+                  id: 'apm/python-db-sql'
+                },
+                {
+                  type: 'doc',
+                  label: 'HTTPC와 API Call',
+                  id: 'apm/python-httpc-api'
+                },
+                {
+                  type: 'doc',
+                  label: '사용자 수',
+                  id: 'apm/python-collect-user'
+                },
+                {
+                  type: 'doc',
+                  label: '통계',
+                  id: 'apm/python-stat'
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '관리하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  type: 'doc',
+                  label: '에이전트 삭제',
+                  id: 'apm/python-remove'
+                },
+                {
+                  type: 'doc',
+                  label: '패키지',
+                  id: 'apm/python-pkg'
                 }
               ]
             }
@@ -379,6 +500,11 @@ const sidebars = {
             },
             {
               type: 'doc',
+              label: '설치 점검',
+              id: 'apm/dotnet-after-install'
+            },
+            {
+              type: 'doc',
               label: '설치 문제 해결',
               id: 'apm/dotnet-agent-troubleshooting',
             },
@@ -387,31 +513,78 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/dotnet-set-agent'
+              },
               items: [
-                {
-                  type: 'doc',
-                  label: '환경 설정',
-                  id: 'apm/dotnet-set-agent'
-                },
-                {
-                  type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/dotnet-set-agent-adv'
-                }
+                'apm/dotnet-agent-name',
+                'apm/dotnet-control-function',
+                'apm/dotnet-agent-network',
+                'apm/dotnet-agent-performance',
+                'apm/dotnet-agent-log',
+                'apm/dotnet-agent-transaction',
+                'apm/dotnet-agent-dbsql',
+                'apm/dotnet-agent-httpcapicall',
+                'apm/dotnet-agent-number-of-user',
+                'apm/dotnet-agent-static',
+                'apm/dotnet-agent-topology',
               ]
             },
             {
-              type: 'category',
+              type: 'doc',
               label: '관리하기',
+              id: 'apm/dotnet-agent-manage'
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Golang 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/golang-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/golang-supported-spec'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설치',
+              id: 'apm/golang-install-agent'
+            },
+            {
+              type: 'doc',
+              label: '설치 점검',
+              id: 'apm/golang-after-install-agent'
+            },
+            {
+              type: 'category',
+              label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/golang-set-agent'
+              },
               items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 업데이트 및 삭제',
-                  id: 'apm/dotnet-update-remove'
-                },
+                'apm/golang-agent-name',
+                'apm/golang-agent-transaction',
+                'apm/golang-agent-dbsql',
+                'apm/golang-agent-httpcall',
+                'apm/golang-agent-method',
+                'apm/golang-agent-number-of-user'
               ]
+            },
+            {
+              type: 'doc',
+              label: '관리하기',
+              id: 'apm/golang-agent-manage'
             }
           ]
         },
