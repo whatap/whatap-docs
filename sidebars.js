@@ -197,8 +197,8 @@ const sidebars = {
                 'apm/php-os/redhat-centos',
                 'apm/php-os/debian-ubuntu',
                 'apm/php-os/amazon-linux',
-                'apm/php-os/alpine-linux',
                 'apm/php-os/freebsd',
+                'apm/php-os/alpine-linux',
                 'apm/php-os/gcae',
                 'apm/php-os/aws-eb'
               ]
@@ -386,6 +386,16 @@ const sidebars = {
                   type: 'doc',
                   label: '환경 설정',
                   id: 'apm/python-set-agent'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 이름 식별',
+                  id: 'apm/python-agent-name'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 기능 제어',
+                  id: 'apm/python-control-function'
                 },
                 {
                   type: 'doc',
