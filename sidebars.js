@@ -384,11 +384,6 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: '환경 설정',
-                  id: 'apm/python-set-agent'
-                },
-                {
-                  type: 'doc',
                   label: '에이전트 이름 식별',
                   id: 'apm/python-agent-name'
                 },
@@ -399,8 +394,38 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '부가 기능',
-                  id: 'apm/python-set-agent-adv'
+                  label: '에이전트 통신 설정',
+                  id: 'apm/python-agent-com'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 트랜잭션',
+                  id: 'apm/python-transaction'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 로그',
+                  id: 'apm/python-agent-log'
+                },
+                {
+                  type: 'doc',
+                  label: 'DB와 SQL',
+                  id: 'apm/python-db-sql'
+                },
+                {
+                  type: 'doc',
+                  label: 'HTTPC와 API Call',
+                  id: 'apm/python-httpc-api'
+                },
+                {
+                  type: 'doc',
+                  label: '사용자 수',
+                  id: 'apm/python-collect-user'
+                },
+                {
+                  type: 'doc',
+                  label: '통계',
+                  id: 'apm/python-stat'
                 }
               ]
             },
