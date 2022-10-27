@@ -1,3 +1,17 @@
 {
-    "mdx-preview.preview.useVscodeMarkdownStyles": true
+    "mdx-preview.preview.useVscodeMarkdownStyles": true,
+    "favorites.resources": [
+        {
+            "filePath": "sidebars.js",
+            "group": "Default"
+        },
+        {
+            "filePath": "docusaurus.config.js",
+            "group": "Default"
+        },
+        {
+            "filePath": "src/css/custom.css",
+            "group": "Default"
+        }
+    ]
 }

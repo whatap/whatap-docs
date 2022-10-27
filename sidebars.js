@@ -335,7 +335,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '설치 점검 사항',
+              label: '설치 점검',
               id: 'apm/nodejs-after-install-agent',
             },
             {
@@ -388,6 +388,11 @@ const sidebars = {
             },
             {
               type: 'doc',
+              label: '설치 점검',
+              id: 'apm/dotnet-after-install'
+            },
+            {
+              type: 'doc',
               label: '설치 문제 해결',
               id: 'apm/dotnet-agent-troubleshooting',
             },
@@ -415,17 +420,59 @@ const sidebars = {
               ]
             },
             {
-              type: 'category',
+              type: 'doc',
               label: '관리하기',
+              id: 'apm/dotnet-agent-manage'
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Golang 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/golang-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/golang-supported-spec'
+            },
+            {
+              type: 'doc',
+              label: '에이전트 설치',
+              id: 'apm/golang-install-agent'
+            },
+            {
+              type: 'doc',
+              label: '설치 점검',
+              id: 'apm/golang-after-install-agent'
+            },
+            {
+              type: 'category',
+              label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/golang-set-agent'
+              },
               items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 업데이트 및 삭제',
-                  id: 'apm/dotnet-update-remove'
-                },
+                'apm/golang-agent-name',
+                'apm/golang-agent-transaction',
+                'apm/golang-agent-dbsql',
+                'apm/golang-agent-httpcall',
+                'apm/golang-agent-method',
+                'apm/golang-agent-number-of-user'
               ]
+            },
+            {
+              type: 'doc',
+              label: '관리하기',
+              id: 'apm/golang-agent-manage'
             }
           ]
         },
