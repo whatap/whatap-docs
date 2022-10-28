@@ -239,6 +239,10 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/php-set-agent'
+              },
               items: [               
                 {
                   type: 'doc',
@@ -405,6 +409,10 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/python-set-agent'
+              },
               items: [
                 {
                   type: 'doc',
