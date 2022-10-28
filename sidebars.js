@@ -598,7 +598,26 @@ const sidebars = {
           collapsed: true,
           items: [
             'apm/apm-dashboard',
-            'apm/apm-transaction',
+            {
+              type: 'category',
+              label: '트랜잭션 추적하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/track-transactions-intro'
+              },
+              items: [
+                'track-transactions/start-end',
+                'track-transactions/trs-profile',
+                'track-transactions/active-transactions',
+                'track-transactions/collect-stacks',
+                'track-transactions/trs-view',
+                'track-transactions/trs-multi-trace',
+                'track-transactions/trs-endpoint-setting',
+
+              ]
+            },
             'apm/apm-topology',
             'apm/apm-metrics',
             'apm/apm-analyze',
