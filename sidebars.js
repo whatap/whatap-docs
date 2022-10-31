@@ -266,6 +266,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  label: '에이전트 트랜잭션',
+                  id: 'apm/php-transaction'
+                },
+                {
+                  type: 'doc',
                   label: '에이전트 로그',
                   id: 'apm/php-agent-log'
                 },
