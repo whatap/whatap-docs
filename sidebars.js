@@ -462,6 +462,11 @@ const sidebars = {
               ]
             },
             {
+              type: 'doc',
+              label: '고급 기능',
+              id: 'apm/python-adf',
+            },
+            {
               type: 'category',
               label: '관리하기',
               collapsible: true,
