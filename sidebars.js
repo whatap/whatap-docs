@@ -239,6 +239,10 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/php-set-agent'
+              },
               items: [               
                 {
                   type: 'doc',
@@ -259,6 +263,11 @@ const sidebars = {
                   type: 'doc',
                   label: '에이전트 성능 설정',
                   id: 'apm/php-agent-tx'
+                },
+                {
+                  type: 'doc',
+                  label: '에이전트 트랜잭션',
+                  id: 'apm/php-transaction'
                 },
                 {
                   type: 'doc',
@@ -405,6 +414,10 @@ const sidebars = {
               label: '설정하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apm/python-set-agent'
+              },
               items: [
                 {
                   type: 'doc',
@@ -452,6 +465,11 @@ const sidebars = {
                   id: 'apm/python-stat'
                 }
               ]
+            },
+            {
+              type: 'doc',
+              label: '고급 기능',
+              id: 'apm/python-adf',
             },
             {
               type: 'category',
@@ -593,38 +611,42 @@ const sidebars = {
             id: 'apm/learn-apm-main-menu'
           },
           items: [
+            'apm/apm-dashboard',
             {
               type: 'category',
-              label: '대시보드',
+              label: '트랜잭션 추적하기',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/dashboard-intro',
+                id: 'track-transactions/track-transactions-intro'
               },
               items: [
-                'dashboard/apm-dashboard',
-                'dashboard/flex-board'
-              ],
-            },
-            'apm/apm-transaction',
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/apm-topology'
-              },
-              items: [
-                'dashboard/topology-basic',
-                'dashboard/topology-type',
-                'dashboard/topology-add-function',
-                'dashboard/topology-settings',
+                'track-transactions/start-end',
+                'track-transactions/trs-profile',
+                'track-transactions/active-transactions',
+                'track-transactions/collect-stacks',
+                'track-transactions/trs-view',
+                'track-transactions/trs-multi-trace',
+                'track-transactions/trs-endpoint-setting',
+
               ]
             },
-            'apm/apm-metrics',
+            'apm/apm-topology',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/metrics-intro'
+              },
+              items: [
+                'metrics/metrics-app',
+                'metrics/metrics-performance-counter',
+              ]
+            },
             'apm/apm-analyze',
             'apm/apm-set-notics',
             'apm/apm-openapi'
