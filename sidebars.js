@@ -611,7 +611,20 @@ const sidebars = {
             id: 'apm/learn-apm-main-menu'
           },
           items: [
-            'apm/apm-dashboard',
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/dashboard-intro'
+              },
+              items: [
+                'dashboard/apm-dashboard',
+                'dashboard/flex-board'
+              ],
+            },
             {
               type: 'category',
               label: '트랜잭션 추적하기',
@@ -632,7 +645,22 @@ const sidebars = {
 
               ]
             },
-            'apm/apm-topology',
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/apm-topology',
+              },
+              items: [
+                'topology/topology-basic',
+                'topology/topology-type',
+                'topology/topology-add-function',
+                'topology/topology-settings'
+              ],
+            },
             {
               type: 'category',
               label: '메트릭스',
