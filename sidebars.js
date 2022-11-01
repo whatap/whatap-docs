@@ -629,7 +629,20 @@ const sidebars = {
               ]
             },
             'apm/apm-topology',
-            'apm/apm-metrics',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/metrics-intro'
+              },
+              items: [
+                'metrics/metrics-app',
+                'metrics/metrics-performance-counter',
+              ]
+            },
             'apm/apm-analyze',
             'apm/apm-set-notics',
             'apm/apm-openapi'
