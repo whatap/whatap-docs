@@ -588,10 +588,42 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/learn-apm-main-menu'
+          },
           items: [
-            'apm/apm-dashboard',
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/dashboard-intro',
+              },
+              items: [
+                'dashboard/apm-dashboard',
+                'dashboard/flex-board'
+              ],
+            },
             'apm/apm-transaction',
-            'apm/apm-topology',
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/apm-topology'
+              },
+              items: [
+                'dashboard/topology-basic',
+                'dashboard/topology-type',
+                'dashboard/topology-add-function',
+                'dashboard/topology-settings',
+              ]
+            },
             'apm/apm-metrics',
             'apm/apm-analyze',
             'apm/apm-set-notics',

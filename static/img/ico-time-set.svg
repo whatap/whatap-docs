@@ -1,0 +1,16 @@
+<svg class="SVGInline-svg" style="width: 16px;height: 16px;" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <!-- <title>ic-custom-time</title> -->
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-Set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WhaTap_Icon_Set" transform="translate(-359.000000, -2242.000000)" fill="#757575">
+            <g id="time-icons" transform="translate(43.000000, 2197.000000)">
+                <g id="ic-custom-time" transform="translate(316.000000, 45.000000)">
+                    <g transform="translate(2.000000, 2.000000)" id="Icon">
+                        <path d="M9.99,0 C4.47,0 0,4.48 0,10 C0,15.52 4.47,20 9.99,20 C15.52,20 20,15.52 20,10 C20,4.48 15.52,0 9.99,0 L9.99,0 Z M10,2 C14.42,2 18,5.58 18,10 C18,14.42 14.42,18 10,18 C5.58,18 2,14.42 2,10 C2,5.58 5.58,2 10,2 Z M10.8581468,5 L9,5 L9,10.9681698 L14.0709266,14 L15,12.5318302 L10.8581468,10.0729443 L10.8581468,5 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

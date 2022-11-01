@@ -35,7 +35,12 @@
 html[lang='ko'] {
   word-wrap: keep-all;
 }
-
+.navbar__logo img {
+  width: 127px;
+  height: 25px;
+  position: relative;
+  top: 4px;
+}
 main .markdown table {
   width: 100%;
   display: table;
@@ -71,14 +76,39 @@ main .markdown a.card {
 
 main .markdown img {
   max-width: 100%;
+  border: 0.5px solid #333;
 }
+
 main .markdown img[src*='tomcat-win.png'] {
   max-width: 50%;
 }
 
+main .markdown img[src*='flexboard-template'] {
+  max-width: 70%;
+}
+
+main .markdown img[alt*='number'], main .markdown img[alt*='icon'], main .markdown img[alt*='아이콘'], main .markdown img[alt*='지시선'], main .markdown img[alt*='arrow'] {
+  position: relative;
+  top: 5px;
+  max-height: 25px !important;
+  width: auto;
+  border: none;
+}
+
+main .markdown h2 img {
+  position: relative;
+  top: 3px;
+  max-height: 30px;
+  width: auto;
+  border: none;
+}
+
 main .markdown img[alt*='Windows'] {
   display: inline-block;
+  position: relative;
   max-height: 20px;
+  top: 3px;
+  border: none;
 }
 
 main .markdown strong em {
@@ -112,6 +142,15 @@ main .markdown span.options {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 } */
+
+main .markdown span.normal {color: rgb(89, 129, 255)}
+main .markdown span.slow {color: rgb(255, 130, 0)}
+main .markdown span.vslow {color: rgb(213, 0, 0)}
+
+.table-of-contents__link strong em {
+  font-style: normal;
+  font-weight: normal;
+}
 
 .video-container {
 	position: relative;
