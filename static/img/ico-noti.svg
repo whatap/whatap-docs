@@ -1,0 +1,16 @@
+<svg class="SVGInline-svg" style="width: 26px;height: 26px;" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <!-- <title>ic-event</title> -->
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-Set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WhaTap_Icon_Set" transform="translate(-68.000000, -2391.000000)" fill="#797979">
+            <g id="application-icons" transform="translate(40.000000, 2346.000000)">
+                <g id="ic-event" transform="translate(28.000000, 45.000000)">
+                    <g transform="translate(2.000000, 1.000000)" id="Combined-Shape">
+                        <path d="M7,19 L13,19 C13,20.6568542 11.6568542,22 10,22 C8.40231912,22 7.09633912,20.75108 7.00509269,19.1762728 L7,19 L13,19 Z M10,0 C11.1045695,0 12,0.8954305 12,2 C12,2.09697653 11.9930979,2.19234099 11.9797582,2.28562895 C14.8818072,3.13814537 17,5.82170747 17,9 L17,15 L19,15 C19.5522847,15 20,15.4477153 20,16 C20,16.5522847 19.5522847,17 19,17 L1,17 C0.44771525,17 6.76353751e-17,16.5522847 0,16 C-6.76353751e-17,15.4477153 0.44771525,15 1,15 L3,15 L3,9 L3.00405902,8.75935025 C3.10785795,5.68687327 5.19172542,3.11650004 8.01990491,2.28398706 C8.00690206,2.19234099 8,2.09697653 8,2 C8,0.8954305 8.8954305,0 10,0 Z M10,4 C7.3028158,4 5.09369119,6.13998707 5.00377459,8.79307928 L5,9 L5,15 L15,15 L15,9 C15,6.23857625 12.7614237,4 10,4 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
