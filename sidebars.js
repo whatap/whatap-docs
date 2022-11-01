@@ -606,6 +606,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/learn-apm-main-menu'
+          },
           items: [
             'apm/apm-dashboard',
             {

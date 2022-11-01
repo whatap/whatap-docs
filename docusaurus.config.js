@@ -9,7 +9,7 @@ const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 const config = {
   title: 'WhaTap',
   tagline: 'Cool monitoring service',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.whatap.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,7 +17,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'WhaTap', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -77,7 +77,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [rehypeTableMerge],
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
         },
         blog: false,
         theme: {
