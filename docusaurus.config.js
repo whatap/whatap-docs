@@ -144,34 +144,34 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Youtube',
+                href: 'https://www.youtube.com/channel/UCLjXEb1IhLuw4GspxHGmQPA',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/whatap.io',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'Indeed',
+                href: 'https://www.linkedin.com/company/65662700/',
+              }
             ],
           },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '와탭 스토리',
+                href: 'https://www.whatap.io/ko/blog/menu/index.html',
               },
+              // {
+              //   label: 'GitLab',
+              //   href: 'https://github.com/facebook/docusaurus',
+              // },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
