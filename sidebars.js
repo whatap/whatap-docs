@@ -680,6 +680,10 @@ const sidebars = {
               label: '분석하기',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/analysis-report-intro'
+              },
               items: [
                 'analysis/cube',
                 'analysis/analysis-apm',
