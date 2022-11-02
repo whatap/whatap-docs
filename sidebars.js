@@ -682,6 +682,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'analysis/cube',
+                'analysis/analysis-apm',
                 {
                   type: 'category',
                   label: '보고서',
@@ -695,8 +696,7 @@ const sidebars = {
                     'analysis/report-apm',
                     'analysis/intergrated-report',
                   ]
-                },
-                'analysis/analysis-apm'
+                }
               ]
             },
             'apm/apm-set-notics',
