@@ -682,9 +682,20 @@ const sidebars = {
               collapsed: true,
               items: [
                 'analysis/cube',
-                'analysis/report-intro',
-                'analysis/report-apm',
-                'analysis/intergrated-report',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/report-intro'
+                  },
+                  items: [
+                    'analysis/report-apm',
+                    'analysis/intergrated-report',
+                  ]
+                },
                 'analysis/analysis-apm'
               ]
             },
