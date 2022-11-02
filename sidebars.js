@@ -675,7 +675,19 @@ const sidebars = {
                 'metrics/metrics-performance-counter',
               ]
             },
-            'apm/apm-analyze',
+            {
+              type: 'category',
+              label: '분석하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'analysis/cube',
+                'analysis/report-intro',
+                'analysis/report-apm',
+                'analysis/intergrated-report',
+                'analysis/analysis-apm'
+              ]
+            },
             'apm/apm-set-notics',
             'apm/apm-openapi'
           ]
