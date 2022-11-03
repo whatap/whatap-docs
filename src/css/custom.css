@@ -79,11 +79,11 @@ main .markdown img {
   border: 0.5px solid #333;
 }
 
-main .markdown img[src*='tomcat-win.png'] {
+main .markdown img[src*='tomcat-win.png'], main .markdown img[src*='blog_12.webp'] {
   max-width: 50%;
 }
 
-main .markdown img[src*='flexboard-template'] {
+main .markdown ol li img {
   max-width: 70%;
 }
 
@@ -93,6 +93,11 @@ main .markdown img[alt*='number'], main .markdown img[alt*='icon'], main .markdo
   max-height: 25px !important;
   width: auto;
   border: none;
+}
+
+main .markdown img[alt='실시간 데이터 조회'] {
+  border: none;
+  width: fit-content;
 }
 
 main .markdown h2 img {

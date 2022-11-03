@@ -13,5 +13,6 @@
             "filePath": "src/css/custom.css",
             "group": "Default"
         }
-    ]
+    ],
+    "favorites.sortOrder": "ASC"
 }
