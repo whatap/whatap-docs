@@ -636,7 +636,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Flex 보드',
+              label: '트랜잭션',
               collapsible: true,
               collapsed: true,
               link: {
@@ -644,13 +644,14 @@ const sidebars = {
                 id: 'dashboard/flex-board',
               },
               items: [
-                'dashboard/flexboard-template',
-                'dashboard/flexboard-create',
-                'dashboard/flexboard-metric-widget',
-                'dashboard/flexboard-widget-manage',
-                'dashboard/flexboard-mode',
-                'dashboard/flexboard-share',
-              ],
+                'track-transactions/trs-view',
+                'track-transactions/trs-profile',
+                'track-transactions/active-transactions',
+                'track-transactions/collect-stacks',
+                'track-transactions/trs-multi-trace',
+                'track-transactions/trs-endpoint-setting',
+
+              ]
             },
             {
               type: 'category',
@@ -702,8 +703,36 @@ const sidebars = {
                 'metrics/metrics-performance-counter',
               ]
             },
-            'apm/apm-analyze',
-            'notification/apm-set-notics',
+            {
+              type: 'category',
+              label: '분석하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/analysis-report-intro'
+              },
+              items: [
+                'analysis/cube',
+                'analysis/analysis-apm',
+                'analysis/analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/report-intro'
+                  },
+                  items: [
+                    'analysis/report-apm',
+                    'analysis/intergrated-report',
+                  ]
+                }
+              ]
+            },
+            'apm/apm-set-notics',
             'apm/apm-openapi'
           ]
         }

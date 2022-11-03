@@ -151,6 +151,8 @@ main .markdown span.options {
 main .markdown span.normal {color: rgb(89, 129, 255)}
 main .markdown span.slow {color: rgb(255, 130, 0)}
 main .markdown span.vslow {color: rgb(213, 0, 0)}
+main .markdown span.lowfg {color: rgb(0, 150, 251)}
+main .markdown span.highfg {color: rgb(27, 31, 131)}
 
 .table-of-contents__link strong em {
   font-style: normal;
