@@ -636,7 +636,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '트랜잭션',
+              label: 'Flex 보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -644,14 +644,13 @@ const sidebars = {
                 id: 'dashboard/flex-board',
               },
               items: [
-                'track-transactions/trs-view',
-                'track-transactions/trs-profile',
-                'track-transactions/active-transactions',
-                'track-transactions/collect-stacks',
-                'track-transactions/trs-multi-trace',
-                'track-transactions/trs-endpoint-setting',
-
-              ]
+                'dashboard/flexboard-template',
+                'dashboard/flexboard-create',
+                'dashboard/flexboard-metric-widget',
+                'dashboard/flexboard-widget-manage',
+                'dashboard/flexboard-mode',
+                'dashboard/flexboard-share',
+              ],
             },
             {
               type: 'category',
@@ -686,7 +685,6 @@ const sidebars = {
                 'track-transactions/trs-view',
                 'track-transactions/trs-multi-trace',
                 'track-transactions/trs-endpoint-setting',
-
               ]
             },
             {
@@ -732,7 +730,7 @@ const sidebars = {
                 }
               ]
             },
-            'apm/apm-set-notics',
+            'notification/apm-set-notics',
             'apm/apm-openapi'
           ]
         }
