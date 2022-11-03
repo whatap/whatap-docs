@@ -687,6 +687,7 @@ const sidebars = {
               items: [
                 'analysis/cube',
                 'analysis/analysis-apm',
+                'analysis/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
