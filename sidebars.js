@@ -670,7 +670,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '트랜잭션 추적하기',
+              label: '트랜잭션',
               collapsible: true,
               collapsed: true,
               link: {
@@ -678,13 +678,13 @@ const sidebars = {
                 id: 'track-transactions/track-transactions-intro'
               },
               items: [
-                'track-transactions/start-end',
+                'track-transactions/trs-view',
                 'track-transactions/trs-profile',
                 'track-transactions/active-transactions',
                 'track-transactions/collect-stacks',
-                'track-transactions/trs-view',
                 'track-transactions/trs-multi-trace',
                 'track-transactions/trs-endpoint-setting',
+
               ]
             },
             {
