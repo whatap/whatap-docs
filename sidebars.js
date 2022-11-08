@@ -326,7 +326,7 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  label: '업데이트',
+                  label: '패키지 업데이트',
                   id: 'apm/php-agent-update'
                 },
                 'apm/php-agent-temp-st',
@@ -493,7 +493,7 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '패키지',
+                  label: '패키지 관리',
                   id: 'apm/python-pkg'
                 }
               ]
