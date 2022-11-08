@@ -87,6 +87,10 @@ main .markdown ol li img {
   max-width: 70%;
 }
 
+main .markdown details ol li img {
+  max-width: 100%;
+}
+
 main .markdown img[alt*='number'], main .markdown img[alt*='icon'], main .markdown img[alt*='아이콘'], main .markdown img[alt*='지시선'], main .markdown img[alt*='arrow'] {
   position: relative;
   top: 5px;

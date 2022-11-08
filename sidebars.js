@@ -33,6 +33,31 @@ const sidebars = {
           type: 'link',
           label: 'Java 에이전트',
           href: 'apm/java'
+        },
+        {
+          type: 'link',
+          label: 'PHP 에이전트',
+          href: 'apm/php'
+        },
+        {
+          type: 'link',
+          label: 'Node.js 에이전트',
+          href: 'apm/nodejs-install-agent',
+        },
+        {
+          type: 'link',
+          label: 'Python 에이전트',
+          href: 'python-install-agent',
+        },
+        {
+          type: 'link',
+          label: '.NET 에이전트',
+          href: 'dotnet-install-agent',
+        },
+        {
+          type: 'link',
+          label: 'Golang 에이전트',
+          href: 'golang-install-agent',
         }
       ]
     }
@@ -730,8 +755,26 @@ const sidebars = {
                 }
               ]
             },
-            'notification/apm-set-notics',
-            'apm/apm-openapi'
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/apm-set-notics',
+              },
+              items: [
+                'notification/apm-warning-notice',
+                'notification/metric-warning-notice',
+                'notification/heatmap-notice',
+                'notification/set-event-detect-anomal',
+                'notification/set-event-log',
+                'notification/set-receive-event',
+                'notification/set-event-history',
+              ],
+            },
+            'openapi'
           ]
         }
       ]
