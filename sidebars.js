@@ -774,7 +774,19 @@ const sidebars = {
                 'notification/set-event-history',
               ],
             },
-            'openapi'
+            {
+              type: 'category',
+              label: 'Open API',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'openapi/openapi-intro'
+              },
+              items: [
+                'openapi/apm-openapi'
+              ],
+            }
           ]
         }
       ]
