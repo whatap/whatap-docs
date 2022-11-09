@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --ifm-code-padding-vertical: 0.01rem;
   /* --ifm-code-padding-horizontal: 0.01rem; */
   word-break: keep-all;
@@ -29,7 +29,7 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
 }
 
 html[lang='ko'] {
@@ -85,6 +85,10 @@ main .markdown img[src*='tomcat-win.png'], main .markdown img[src*='blog_12.webp
 
 main .markdown ol li img {
   max-width: 70%;
+}
+
+main .markdown details ol li img {
+  max-width: 100%;
 }
 
 main .markdown img[alt*='number'], main .markdown img[alt*='icon'], main .markdown img[alt*='아이콘'], main .markdown img[alt*='지시선'], main .markdown img[alt*='arrow'] {
