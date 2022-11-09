@@ -6,6 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: 'WhaTap',
   tagline: 'Cool monitoring service',
@@ -67,8 +68,7 @@ const config = {
   ],
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      '@docusaurus/preset-classic',
       ({
         docs: {
           routeBasePath: '/',
@@ -84,6 +84,25 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+    [
+      'redocusaurus',
+      {
+        specs: [
+          {
+            id: 'whatap-json',
+            spec: 'openapi/whatap.json',
+            route: '/examples/whatap-json/',
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+          options: {
+            disableSearch: true
+          },
+          theme: {},
+        }
+      }
     ]
   ],
   themeConfig:
@@ -173,11 +192,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. Built with Docusaurus.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini' ],
-      },
+      // prism: {
+      //   theme: lightCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      //   additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini' ],
+      // },
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {

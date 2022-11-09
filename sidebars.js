@@ -781,10 +781,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'openapi/openapi-intro'
+                id: 'apidoc/openapi-intro'
               },
               items: [
-                'openapi/apm-openapi'
+                {
+                  type: 'link',
+                  label: '애플리케이션 Open API',
+                  href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
+                },
+                // 'apidoc/apm-openapi'
               ],
             }
           ]
