@@ -99,6 +99,14 @@ main .markdown img[alt*='number'], main .markdown img[alt*='icon'], main .markdo
   border: none;
 }
 
+main .markdown img[alt*='number-s'] {
+  position: relative;
+  top: 5px;
+  max-height: 20px !important;
+  width: auto;
+  border: none;
+}
+
 main .markdown img[alt='실시간 데이터 조회'] {
   border: none;
   width: fit-content;
