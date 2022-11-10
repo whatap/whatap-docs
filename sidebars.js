@@ -772,6 +772,7 @@ const sidebars = {
                 'notification/set-event-log',
                 'notification/set-receive-event',
                 'notification/set-event-history',
+                'notification/set-event-title-message',
               ],
             },
             {
@@ -784,11 +785,11 @@ const sidebars = {
                 id: 'apidoc/openapi-intro'
               },
               items: [
-                {
-                  type: 'link',
-                  label: '애플리케이션 Open API',
-                  href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
-                },
+                // {
+                //   type: 'link',
+                //   label: '애플리케이션 Open API',
+                //   href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
+                // },
                 // 'apidoc/apm-openapi'
               ],
             }
