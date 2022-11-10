@@ -656,6 +656,7 @@ const sidebars = {
               },
               items: [
                 'dashboard/apm-dashboard',
+                'dashboard/dashboard-transactionmap',
                 'dashboard/dashboard-active-transaction',
               ],
             },
@@ -772,7 +773,7 @@ const sidebars = {
                 'notification/set-event-log',
                 'notification/set-receive-event',
                 'notification/set-event-history',
-                'notification/set-event-title-message',
+                'notification/set-event-format',
               ],
             },
             {
