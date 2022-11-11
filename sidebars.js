@@ -300,13 +300,13 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 트랜잭션',
-                  id: 'apm/php-transaction'
+                  label: '에이전트 로그',
+                  id: 'apm/php-agent-log'
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/php-agent-log'
+                  label: '트랜잭션',
+                  id: 'apm/php-transaction'
                 },
                 {
                   type: 'doc',
@@ -470,13 +470,13 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 트랜잭션',
-                  id: 'apm/python-transaction'
+                  label: '에이전트 로그',
+                  id: 'apm/python-agent-log'
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/python-agent-log'
+                  label: '트랜잭션',
+                  id: 'apm/python-transaction'
                 },
                 {
                   type: 'doc',
