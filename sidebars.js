@@ -60,6 +60,11 @@ const sidebars = {
           href: 'golang-install-agent',
         }
       ]
+    },
+    {
+      type: 'link',
+      label: '로그 모니터링',
+      href: 'log/log-intro' 
     }
   ],
   // whatapSidebar: [
@@ -796,7 +801,67 @@ const sidebars = {
         }
       ]
     }
-  ]
+  ],
+  logSidebar: [
+    {
+      type: 'category',
+      label: '로그 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'log/log-intro',
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '작동 원리',
+          id: 'log/log-basics',
+        },
+        {
+          type: 'category',
+          label: '적용하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'log/log-function',
+          },
+          items: [
+            'log/log-java'
+          ],
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'log/log-learn-main-menu',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '분석하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'log/log-ui'
+              },
+              items: [
+                'log/log-lt',
+                'log/log-exp',
+                'log/log-search',
+              ]
+            },            
+            'log/log-alert'
+          ],
+        },
+      ]  
+    }
+  ] 
 };
 
 module.exports = sidebars;

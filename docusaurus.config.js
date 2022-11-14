@@ -139,6 +139,12 @@ const config = {
             position: 'left',
             label: '애플리케이션 모니터링',
           },
+          {
+            type: 'doc',
+            docId: 'log/log-intro',
+            position: 'left',
+            label: '로그 모니터링',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -156,6 +162,10 @@ const config = {
               {
                 label: 'APM 모니터링',
                 to: 'apm/application-agent',
+              },
+              {
+                label: '로그 모니터링',
+                to: 'log/log-intro',
               },
             ],
           },
