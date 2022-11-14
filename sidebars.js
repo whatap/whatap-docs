@@ -815,7 +815,7 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          label: '작동 원리',
+          label: '작동 원리 알아보기',
           id: 'log/log-basics',
         },
         {
@@ -832,6 +832,11 @@ const sidebars = {
           ],
         },
         {
+          type: 'doc',
+          label: '설정하기',
+          id: 'log/log-setting',
+        },
+        {
           type: 'category',
           label: '주요 메뉴 알아보기',
           collapsible: true,
@@ -841,6 +846,7 @@ const sidebars = {
             id: 'log/log-learn-main-menu',
           },
           items: [
+            'log/log-flex',
             {
               type: 'category',
               label: '분석하기',
@@ -861,7 +867,7 @@ const sidebars = {
         },
       ]  
     }
-  ] 
+  ]  
 };
 
 module.exports = sidebars;
