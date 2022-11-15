@@ -171,6 +171,9 @@ main .markdown span.ov5ud10 {color: rgb(255, 195, 127)}
 main .markdown span.ov10 {color: rgb(223, 55, 55)}
 main .markdown span.wer {color: rgb(255, 154, 0)}
 main .markdown span.woer {color: rgb(40, 108, 242)}
+main .markdown span.logft {color: rgb(182, 0, 0)}
+main .markdown span.loger {color: rgb(242, 48, 0)}
+main .markdown span.logwr {color: rgb(242, 182, 0)}
 
 .table-of-contents__link strong em {
   font-style: normal;
