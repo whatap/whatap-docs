@@ -60,6 +60,11 @@ const sidebars = {
           href: 'golang-install-agent',
         }
       ]
+    },
+    {
+      type: 'link',
+      label: '로그 모니터링',
+      href: 'log/log-intro' 
     }
   ],
   // whatapSidebar: [
@@ -300,13 +305,13 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 트랜잭션',
-                  id: 'apm/php-transaction'
+                  label: '에이전트 로그',
+                  id: 'apm/php-agent-log'
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/php-agent-log'
+                  label: '트랜잭션',
+                  id: 'apm/php-transaction'
                 },
                 {
                   type: 'doc',
@@ -470,13 +475,13 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 트랜잭션',
-                  id: 'apm/python-transaction'
+                  label: '에이전트 로그',
+                  id: 'apm/python-agent-log'
                 },
                 {
                   type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/python-agent-log'
+                  label: '트랜잭션',
+                  id: 'apm/python-transaction'
                 },
                 {
                   type: 'doc',
@@ -796,7 +801,72 @@ const sidebars = {
         }
       ]
     }
-  ]
+  ],
+  logSidebar: [
+    {
+      type: 'category',
+      label: '로그 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'log/log-intro',
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '작동 원리 알아보기',
+          id: 'log/log-basics',
+        },
+        {
+          type: 'category',
+          label: '적용하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'log/log-function',
+          },
+          items: [
+            'log/log-java'
+          ],
+        },
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'log/log-setting',
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'log/log-learn-main-menu',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '분석하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'log/log-ui'
+              },
+              items: [
+                'log/log-lt',
+                'log/log-exp',
+                'log/log-search',
+              ]
+            },            
+            'log/log-alert'
+          ],
+        },
+      ]  
+    }
+  ]  
 };
 
 module.exports = sidebars;
