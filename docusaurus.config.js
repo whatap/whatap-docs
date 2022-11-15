@@ -85,25 +85,25 @@ const config = {
         },
       }),
     ],
-    [
-      'redocusaurus',
-      {
-        specs: [
-          {
-            id: 'whatap-json',
-            spec: 'openapi/whatap.json',
-            route: '/examples/whatap-json/',
-          },
-        ],
-        theme: {
-          primaryColor: '#1890ff',
-          options: {
-            disableSearch: true
-          },
-          theme: {},
-        }
-      }
-    ]
+    // [
+    //   'redocusaurus',
+    //   {
+    //     specs: [
+    //       {
+    //         id: 'whatap-json',
+    //         spec: 'openapi/whatap.json',
+    //         route: '/examples/whatap-json/',
+    //       },
+    //     ],
+    //     theme: {
+    //       primaryColor: '#1890ff',
+    //       options: {
+    //         disableSearch: true
+    //       },
+    //       theme: {},
+    //     }
+    //   }
+    // ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -113,6 +113,11 @@ const config = {
           autoCollapseCategories: true,
           hideable: true,
         }
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: '',
@@ -139,6 +144,12 @@ const config = {
             position: 'left',
             label: '애플리케이션 모니터링',
           },
+          {
+            type: 'doc',
+            docId: 'db/db-monitoring-intro',
+            position: 'left',
+            label: '데이터베이스 모니터링',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -156,6 +167,10 @@ const config = {
               {
                 label: 'APM 모니터링',
                 to: 'apm/application-agent',
+              },
+              {
+                label: '데이터베이스 모니터링',
+                to: 'db/db-monitoring-intro',
               },
             ],
           },
@@ -192,11 +207,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. Built with Docusaurus.`,
       },
-      // prism: {
-      //   theme: lightCodeTheme,
-      //   darkTheme: darkCodeTheme,
-      //   additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini' ],
-      // },
+      prism: {
+        theme: darkCodeTheme,
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala' ],
+      },
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
