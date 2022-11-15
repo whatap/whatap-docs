@@ -133,7 +133,7 @@ main .markdown strong em {
 }
 main .markdown em {
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   color:#21af90;
 }
 main .markdown ul ol {
@@ -152,8 +152,23 @@ main .markdown span.type {
   color: #25c2a0;
   margin-left: 10px;
 }
+main .markdown span.api {
+  color: #25c2a0;
+}
+
+main .markdown span.apitype {
+  background-color: #25c2a0;
+  color: #fff;
+  font-weight: 600;
+  padding: 2px;
+}
+
 main .markdown span.options {
   font-weight: 500;
+}
+
+main .markdown .comment {
+  color: #82ab34 !important;
 }
 /* p.text--truncate {
   -webkit-line-clamp: 3;
@@ -174,6 +189,10 @@ main .markdown span.woer {color: rgb(40, 108, 242)}
 main .markdown span.logft {color: rgb(182, 0, 0)}
 main .markdown span.loger {color: rgb(242, 48, 0)}
 main .markdown span.logwr {color: rgb(242, 182, 0)}
+
+main .markdown div.metric table tr td:first-of-type {
+  width: 30%;
+}
 
 .table-of-contents__link strong em {
   font-style: normal;

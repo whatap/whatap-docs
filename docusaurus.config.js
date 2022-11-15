@@ -85,25 +85,25 @@ const config = {
         },
       }),
     ],
-    [
-      'redocusaurus',
-      {
-        specs: [
-          {
-            id: 'whatap-json',
-            spec: 'openapi/whatap.json',
-            route: '/examples/whatap-json/',
-          },
-        ],
-        theme: {
-          primaryColor: '#1890ff',
-          options: {
-            disableSearch: true
-          },
-          theme: {},
-        }
-      }
-    ]
+    // [
+    //   'redocusaurus',
+    //   {
+    //     specs: [
+    //       {
+    //         id: 'whatap-json',
+    //         spec: 'openapi/whatap.json',
+    //         route: '/examples/whatap-json/',
+    //       },
+    //     ],
+    //     theme: {
+    //       primaryColor: '#1890ff',
+    //       options: {
+    //         disableSearch: true
+    //       },
+    //       theme: {},
+    //     }
+    //   }
+    // ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -113,6 +113,11 @@ const config = {
           autoCollapseCategories: true,
           hideable: true,
         }
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: '',
@@ -202,11 +207,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. Built with Docusaurus.`,
       },
-      // prism: {
-      //   theme: lightCodeTheme,
-      //   darkTheme: darkCodeTheme,
-      //   additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini' ],
-      // },
+      prism: {
+        theme: darkCodeTheme,
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala' ],
+      },
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {

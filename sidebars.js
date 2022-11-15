@@ -94,6 +94,189 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  dbSidebar: [
+    {
+      type: 'category',
+      label: '데이터베이스 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'db/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'db/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'db/install-db-agent',
+            'db/after-install-db-agent',
+            'db/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db/db-agent-settings'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '에이전트 네트워크 통신',
+              id: 'db/db-agent-network',
+            },
+            {
+              type: 'doc',
+              label: '에이전트 이름 식별',
+              id: 'db/db-agent-naming',
+            },
+            'db/db-agent-aws',
+            'db/db-agent-data',
+            'db/db-agent-xos-settings',
+          ],
+        },
+        'db/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'db/learn-db-main-menu'
+          },
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/db/db-dashboard-intro'
+              },
+              items: [
+                'dashboard/db/db-instance-list',
+                'dashboard/db/db-instance-monitoring',
+                'dashboard/db/db-multi-instance-monitoring',
+                'dashboard/db/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/db/flex-board',
+              },
+              items: [
+                'dashboard/db/flexboard-template',
+                'dashboard/db/flexboard-create',
+                'dashboard/db/flexboard-metric-widget',
+                'dashboard/db/flexboard-widget-manage',
+                'dashboard/db/flexboard-mode',
+                'dashboard/db/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/db/metrics-intro'
+              },
+              items: [
+                'metrics/db/metrics-database',
+              ]
+            },
+            // {
+            //   type: 'category',
+            //   label: '분석하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'analysis/analysis-report-intro'
+            //   },
+            //   items: [
+            //     'analysis/cube',
+            //     'analysis/analysis-apm',
+            //     'analysis/analysis-apm-trs',
+            //     {
+            //       type: 'category',
+            //       label: '보고서',
+            //       collapsible: true,
+            //       collapsed: true,
+            //       link: {
+            //         type: 'doc',
+            //         id: 'analysis/report-intro'
+            //       },
+            //       items: [
+            //         'analysis/report-apm',
+            //         'analysis/intergrated-report',
+            //       ]
+            //     }
+            //   ]
+            // },
+            // {
+            //   type: 'category',
+            //   label: '알림 설정하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'notification/apm-set-notics',
+            //   },
+            //   items: [
+            //     'notification/apm-warning-notice',
+            //     'notification/metric-warning-notice',
+            //     'notification/heatmap-notice',
+            //     'notification/set-event-detect-anomal',
+            //     'notification/set-event-log',
+            //     'notification/set-receive-event',
+            //     'notification/set-event-history',
+            //     'notification/set-event-format',
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: 'Open API',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'apidoc/openapi-intro'
+            //   },
+            //   items: [
+            //     // {
+            //     //   type: 'link',
+            //     //   label: '애플리케이션 Open API',
+            //     //   href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
+            //     // },
+            //     'apidoc/apm-openapi',
+            //     'apidoc/apm-openapi-call'
+            //   ],
+            // }
+          ]
+        }
+      ],
+    }
+  ],
   apmSidebar: [
     {
       type: 'category',
@@ -657,10 +840,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/dashboard-intro'
+                id: 'dashboard/apm-dashboard-intro'
               },
               items: [
                 'dashboard/apm-dashboard',
+                'dashboard/dashboard-transactionmap',
                 'dashboard/dashboard-active-transaction',
               ],
             },
@@ -777,6 +961,7 @@ const sidebars = {
                 'notification/set-event-log',
                 'notification/set-receive-event',
                 'notification/set-event-history',
+                'notification/set-event-format',
               ],
             },
             {
@@ -789,12 +974,13 @@ const sidebars = {
                 id: 'apidoc/openapi-intro'
               },
               items: [
-                {
-                  type: 'link',
-                  label: '애플리케이션 Open API',
-                  href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
-                },
-                // 'apidoc/apm-openapi'
+                // {
+                //   type: 'link',
+                //   label: '애플리케이션 Open API',
+                //   href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
+                // },
+                'apidoc/apm-openapi',
+                'apidoc/apm-openapi-call'
               ],
             }
           ]
