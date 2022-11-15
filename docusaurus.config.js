@@ -146,9 +146,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'db/db-monitoring-intro',
+            docId: 'log/log-intro',
             position: 'left',
-            label: '데이터베이스 모니터링',
+            label: '로그 모니터링',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
@@ -169,8 +169,8 @@ const config = {
                 to: 'apm/application-agent',
               },
               {
-                label: '데이터베이스 모니터링',
-                to: 'db/db-monitoring-intro',
+                label: '로그 모니터링',
+                to: 'log/log-intro',
               },
             ],
           },
