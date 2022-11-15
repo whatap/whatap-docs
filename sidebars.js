@@ -898,7 +898,6 @@ const sidebars = {
                 'track-transactions/collect-stacks',
                 'track-transactions/trs-multi-trace',
                 'track-transactions/trs-endpoint-setting',
-
               ]
             },
             {
