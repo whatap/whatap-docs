@@ -846,7 +846,6 @@ const sidebars = {
             id: 'log/log-learn-main-menu',
           },
           items: [
-            'log/log-flex',
             {
               type: 'category',
               label: '분석하기',
