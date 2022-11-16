@@ -63,6 +63,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: '데이터베이스 모니터링',
+      href: 'db/db-monitoring-intro' 
+    },
+    {
+      type: 'link',
       label: '로그 모니터링',
       href: 'log/log-intro' 
     }
