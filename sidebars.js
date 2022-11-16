@@ -998,11 +998,11 @@ const sidebars = {
         id: 'log/log-intro',
       },
       items: [
-        {
-          type: 'doc',
-          label: '작동 원리',
-          id: 'log/log-basics',
-        },
+        // {
+        //   type: 'doc',
+        //   label: '작동 원리',
+        //   id: 'log/log-basics',
+        // },
         {
           type: 'category',
           label: '적용하기',
