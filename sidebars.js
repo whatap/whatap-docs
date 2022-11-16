@@ -164,13 +164,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/db/db-dashboard-intro'
+                id: 'dashboard/db-dashboard-intro'
               },
               items: [
-                'dashboard/db/db-instance-list',
-                'dashboard/db/db-instance-monitoring',
-                'dashboard/db/db-multi-instance-monitoring',
-                'dashboard/db/db-slow-query',
+                'dashboard/db-instance-list',
+                'dashboard/db-instance-monitoring',
+                'dashboard/db-multi-instance-monitoring',
+                'dashboard/db-slow-query',
               ],
             },
             {
@@ -180,15 +180,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/db/flex-board',
+                id: 'dashboard/db-flex-board',
               },
               items: [
-                'dashboard/db/flexboard-template',
-                'dashboard/db/flexboard-create',
-                'dashboard/db/flexboard-metric-widget',
-                'dashboard/db/flexboard-widget-manage',
-                'dashboard/db/flexboard-mode',
-                'dashboard/db/flexboard-share',
+                'dashboard/db-flexboard-template',
+                'dashboard/db-flexboard-create',
+                'dashboard/db-flexboard-metric-widget',
+                'dashboard/db-flexboard-widget-manage',
+                'dashboard/db-flexboard-mode',
+                'dashboard/db-flexboard-share',
               ],
             },
             {
