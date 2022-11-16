@@ -203,41 +203,25 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/db/metrics-intro'
+                id: 'metrics/db-metrics-intro'
               },
               items: [
-                'metrics/db/metrics-database',
+                'metrics/metrics-database',
               ]
             },
-            // {
-            //   type: 'category',
-            //   label: '분석하기',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'analysis/analysis-report-intro'
-            //   },
-            //   items: [
-            //     'analysis/cube',
-            //     'analysis/analysis-apm',
-            //     'analysis/analysis-apm-trs',
-            //     {
-            //       type: 'category',
-            //       label: '보고서',
-            //       collapsible: true,
-            //       collapsed: true,
-            //       link: {
-            //         type: 'doc',
-            //         id: 'analysis/report-intro'
-            //       },
-            //       items: [
-            //         'analysis/report-apm',
-            //         'analysis/intergrated-report',
-            //       ]
-            //     }
-            //   ]
-            // },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/db-analysis-report-intro'
+              },
+              items: [
+                
+              ]
+            },
             // {
             //   type: 'category',
             //   label: '알림 설정하기',
