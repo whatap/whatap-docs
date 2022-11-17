@@ -953,6 +953,11 @@ const sidebars = {
               ],
             },
             {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
               type: 'category',
               label: 'Open API',
               collapsible: true,
