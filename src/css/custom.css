@@ -128,6 +128,11 @@ main .markdown img[alt*='Windows'] {
   border: none;
 }
 
+main .markdown img[alt='sc'] {
+  border: none;
+  width: fit-content;
+}
+
 main .markdown strong em {
   font-style: normal;
 }

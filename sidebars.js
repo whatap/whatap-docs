@@ -992,11 +992,11 @@ const sidebars = {
         id: 'log/log-intro',
       },
       items: [
-        {
-          type: 'doc',
-          label: '작동 원리 알아보기',
-          id: 'log/log-basics',
-        },
+        // {
+        //   type: 'doc',
+        //   label: '작동 원리',
+        //   id: 'log/log-basics',
+        // },
         {
           type: 'category',
           label: '적용하기',
@@ -1007,39 +1007,47 @@ const sidebars = {
             id: 'log/log-function',
           },
           items: [
-            'log/log-java'
+            'log/log-java',
+            'log/log-php',
+            'log/log-python',
+            // 'log/log-go',
+            'log/log-server'
           ],
         },
-        {
-          type: 'doc',
-          label: '설정하기',
-          id: 'log/log-setting',
-        },
+        // {
+        //   type: 'doc',
+        //   label: '설정하기',
+        //   id: 'log/log-setting',
+        // },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'log/log-learn-main-menu',
           },
           items: [
-            {
-              type: 'category',
-              label: '분석하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'log/log-ui'
-              },
-              items: [
-                'log/log-lt',
-                'log/log-exp',
-                'log/log-search',
-              ]
-            },            
+            // {
+            //   type: 'category',
+            //   label: '분석하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'log/log-ui'
+            //   },
+            //   items: [
+            //     'log/log-lt',
+            //     'log/log-exp',
+            //     'log/log-search',
+            //   ]
+            // },
+            'log/log-lt',
+            'log/log-exp',
+            'log/log-search', 
+            'log/log-setting',          
             'log/log-alert'
           ],
         },
