@@ -9,7 +9,7 @@ const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 
 const config = {
   title: 'WhaTap',
-  tagline: 'Cool monitoring service',
+  tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
