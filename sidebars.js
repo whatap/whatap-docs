@@ -1029,7 +1029,7 @@ const sidebars = {
           type: 'category',
           label: '주요 메뉴 알아보기',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'log/log-learn-main-menu',
