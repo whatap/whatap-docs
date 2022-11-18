@@ -146,6 +146,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'server/server-intro',
+            position: 'left',
+            label: '서버 모니터링',
+          },
+          {
+            type: 'doc',
             docId: 'db/db-monitoring-intro',
             position: 'left',
             label: '데이터베이스 모니터링',
@@ -175,11 +181,15 @@ const config = {
                 to: 'apm/application-agent',
               },
               {
+                label: 'Server 모니터링',
+                to: 'server/server-intro',
+              },
+              {
                 label: 'DB 모니터링',
                 to: 'db/db-monitoring-intro',
               },
               {
-                label: '로그 모니터링',
+                label: 'Log 모니터링',
                 to: 'log/log-intro',
               },
             ],

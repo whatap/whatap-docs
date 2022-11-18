@@ -63,6 +63,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: '서버 모니터링',
+      href: 'server/server-intro' 
+    },
+    {
+      type: 'link',
       label: '데이터베이스 모니터링',
       href: 'db/db-monitoring-intro' 
     },
@@ -99,6 +104,97 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  serverSidebar: [
+    {
+      type: 'category',
+      label: '서버 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'server/server-intro',
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'server/server-spec',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'server/server-install-agent'
+              },
+              items: [
+                'server/server-os/server-linux',
+                'server/server-os/server-windows',
+                'server/server-os/server-aws',
+                'server/server-os/server-other',
+              ]
+            },
+            'server/after-install-server-agent'
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/server-agent-settings',
+          },
+          items: [
+            'server/server-setting-rfv',
+          ],
+        },
+        {
+          type: 'category',
+          label: '고급 기능',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'server/server-adf',
+          ],
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'server/learn-server-main-menu',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/server-metrics-intro'
+              },
+              items: [
+                'metrics/mtx-server',
+              ]
+            },
+          ],
+        },
+      ]  
+    }
+  ],  
   dbSidebar: [
     {
       type: 'category',
