@@ -156,6 +156,12 @@ const config = {
             position: 'left',
             label: '로그 모니터링',
           },
+          {
+            type: 'doc',
+            docId: 'reference',
+            position: 'left',
+            label: '참조 문서',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -220,7 +226,7 @@ const config = {
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala' ],
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql' ],
       },
       zoom: {
         selector: '.markdown :not(em) > img',
