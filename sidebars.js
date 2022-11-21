@@ -72,6 +72,76 @@ const sidebars = {
       href: 'log/log-intro' 
     }
   ],
+  referSidebar: [
+    {
+      type: 'category',
+      label: '참조 문서',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'reference'
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'MXQL',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mxql/mxql-overview',
+          },
+          items: [
+            'mxql/mxql-guide',
+            {
+              type: 'category',
+              label: '단계별 명령어 가이드',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mxql/mxql-select',
+                'mxql/mxql-loading',
+                'mxql/mxql-calculate',
+              ]
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Open API',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apidoc/openapi-intro',
+          },
+          items: [
+            'apidoc/openapi-spec',
+            {
+              type: 'category',
+              label: 'Open API 호출',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apidoc/openapi-call',
+              },
+              items: [
+                'apidoc/openapi-call-meta',
+                'apidoc/openapi-call-spot',
+                'apidoc/openapi-call-stat-data',
+                'apidoc/openapi-call-long-stat',
+                'apidoc/openapi-call-log',
+                'apidoc/openapi-call-short-stat',
+              ]
+            },
+            'apidoc/openapi-mxql'
+,          ]
+        }
+      ]
+    }
+  ],
   // whatapSidebar: [
   //   {
   //     type: 'category',
@@ -198,69 +268,45 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '메트릭스',
+              label: '분석과 통계',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'metrics/db-metrics-intro'
-              },
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
               items: [
-                'metrics/metrics-database',
+                'analysis/db-analysis-function',
+                'metrics/db-metrics-intro',
+                'analysis/db-log-viewer',
+                'analysis/db-stat',
+                'analysis/db-report',
+                'analysis/db-intergrated-report',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '알림 설정하기',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/db-analysis-report-intro'
+                id: 'notification/db-set-notics',
               },
               items: [
-                
-              ]
+                'notification/db-warning-notice',
+                'notification/db-metric-warning-notice',
+                'notification/db-set-event-detect-anomal',
+                'notification/db-set-receive-event',
+                'notification/db-set-event-history',
+                'notification/db-set-event-format',
+              ],
             },
-            // {
-            //   type: 'category',
-            //   label: '알림 설정하기',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'notification/apm-set-notics',
-            //   },
-            //   items: [
-            //     'notification/apm-warning-notice',
-            //     'notification/metric-warning-notice',
-            //     'notification/heatmap-notice',
-            //     'notification/set-event-detect-anomal',
-            //     'notification/set-event-log',
-            //     'notification/set-receive-event',
-            //     'notification/set-event-history',
-            //     'notification/set-event-format',
-            //   ],
-            // },
-            // {
-            //   type: 'category',
-            //   label: 'Open API',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'apidoc/openapi-intro'
-            //   },
-            //   items: [
-            //     // {
-            //     //   type: 'link',
-            //     //   label: '애플리케이션 Open API',
-            //     //   href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
-            //     // },
-            //     'apidoc/apm-openapi',
-            //     'apidoc/apm-openapi-call'
-            //   ],
-            // }
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
           ]
         }
       ],
@@ -958,23 +1004,9 @@ const sidebars = {
               id: 'log/log-intro'
             },
             {
-              type: 'category',
+              type: 'link',
               label: 'Open API',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apidoc/openapi-intro'
-              },
-              items: [
-                // {
-                //   type: 'link',
-                //   label: '애플리케이션 Open API',
-                //   href: 'https://guide.whatap.io/whatap_guide/use_guide/integration/pages/open_api_application.html',
-                // },
-                'apidoc/apm-openapi',
-                'apidoc/apm-openapi-call'
-              ],
+              href: '/apidoc/openapi-intro'
             }
           ]
         }
