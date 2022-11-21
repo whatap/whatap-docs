@@ -155,16 +155,36 @@ const sidebars = {
             id: 'server/server-agent-settings',
           },
           items: [
+            'server/server-agent-naming',
             'server/server-setting-rfv',
+            'server/server-setting-pcounter',
+            'server/server-setting-win32'
           ],
         },
+        'server/server-adf',
+        // {
+        //   type: 'category',
+        //   label: '고급 기능',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'server/server-adf'
+        //   },
+        //   items: [
+        //     'server/server-adf-exp',
+        //     'server/server-adf-tct',
+        //     'server/server-adf-pn-pc',
+        //   ],
+        // },
         {
           type: 'category',
-          label: '고급 기능',
+          label: '관리하기',
           collapsible: true,
           collapsed: true,
           items: [
-            'server/server-adf',
+            'server/server-agent-update',
+            'server/server-agent-remove',
           ],
         },
         {
