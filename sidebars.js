@@ -129,7 +129,8 @@ const sidebars = {
               },
               items: [
                 'apidoc/openapi-call-meta',
-                'apidoc/openapi-call-spot',
+                'apidoc/openapi-call-apm-spot',
+                'apidoc/openapi-call-server-spot',
                 'apidoc/openapi-call-stat-data',
                 'apidoc/openapi-call-long-stat',
                 'apidoc/openapi-call-log',
