@@ -94,6 +94,17 @@ const sidebars = {
           },
           items: [
             'mxql/mxql-guide',
+            {
+              type: 'category',
+              label: '단계별 명령어 가이드',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mxql/mxql-select',
+                'mxql/mxql-loading',
+                'mxql/mxql-calculate',
+              ]
+            },
           ]
         },
         {
@@ -124,7 +135,8 @@ const sidebars = {
                 'apidoc/openapi-call-log',
                 'apidoc/openapi-call-short-stat',
               ]
-            }
+            },
+            'apidoc/openapi-mxql'
 ,          ]
         }
       ]
