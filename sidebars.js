@@ -138,8 +138,8 @@ const sidebars = {
               items: [
                 'server/server-os/server-linux',
                 'server/server-os/server-windows',
-                'server/server-os/server-aws',
                 'server/server-os/server-other',
+                'server/server-os/server-aws',
               ]
             },
             'server/after-install-server-agent'
