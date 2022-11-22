@@ -375,18 +375,9 @@ const sidebars = {
               ]
             },
             {
-              type: 'category',
+              type: 'link',
               label: 'Open API',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apidoc/server-openapi-intro'
-              },
-              items: [
-                'apidoc/server-openapi-spec',
-                'apidoc/server-openapi-call'
-              ],
+              href: '/apidoc/openapi-intro',
             }
           ],
         },
