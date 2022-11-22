@@ -199,6 +199,21 @@ const sidebars = {
           items: [
             {
               type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/server-dashboard-intro'
+              },
+              items: [
+                'dashboard/server-resourceboard',
+                //'dashboard/server-equalizer',
+                'dashboard/server-compoundeye',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -210,6 +225,65 @@ const sidebars = {
                 'metrics/mtx-server',
               ]
             },
+            {
+              type: 'category',
+              label: '분석하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/server-analysis-report-intro'
+              },
+              items: [
+                'analysis/server-list',
+                'analysis/server-detail',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/server-report-intro'
+                  },
+                  items: [
+                    'analysis/server-report',
+                    'analysis/server-intergrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/server-set-notice'
+              },
+              items: [
+                'notification/set-event-detect-anomal',
+                'notification/set-event-log',
+                'notification/set-receive-event',
+                'notification/set-event-history',
+                'notification/set-event-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Open API',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apidoc/server-openapi-intro'
+              },
+              items: [
+                'apidoc/server-openapi-spec',
+                'apidoc/server-openapi-call'
+              ],
+            }
           ],
         },
       ]  
