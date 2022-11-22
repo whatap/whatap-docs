@@ -140,7 +140,7 @@ const config = {
           // },
           {
             type: 'doc',
-            docId: 'apm/application-agent',
+            docId: 'apm/application-intro',
             position: 'left',
             label: '애플리케이션 모니터링',
           },
@@ -184,7 +184,7 @@ const config = {
             items: [
               {
                 label: 'APM 모니터링',
-                to: 'apm/application-agent',
+                to: 'apm/application-intro',
               },
               {
                 label: 'Server 모니터링',
@@ -237,6 +237,7 @@ const config = {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql' ],
+        // 
       },
       zoom: {
         selector: '.markdown :not(em) > img',
