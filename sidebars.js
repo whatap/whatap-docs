@@ -80,6 +80,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: '서버 모니터링',
+      href: 'server/server-intro' 
+    },
+    {
+      type: 'link',
       label: '데이터베이스 모니터링',
       href: 'db/db-monitoring-intro' 
     },
@@ -203,47 +208,87 @@ const sidebars = {
   //     ],
   //   },
   // ],
-  kubeSidebar: [
+  serverSidebar: [
     {
       type: 'category',
-      label: '쿠버네티스 모니터링',
+      label: '서버 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'kubernetes/kubernetes-intro'
+        id: 'server/server-intro',
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'kubernetes/kubernetes-support'
+          id: 'server/server-spec',
         },
         {
           type: 'category',
           label: '설치하기',
           collapsible: true,
           collapsed: true,
+          items: [
+            {
+              type: 'category',
+              label: '에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'server/server-install-agent'
+              },
+              items: [
+                'server/server-os/server-linux',
+                'server/server-os/server-windows',
+                'server/server-os/server-other',
+                'server/server-os/server-aws',
+              ]
+            },
+            'server/after-install-server-agent'
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'kubernetes/kubernetes-install',
+            id: 'server/server-agent-settings',
           },
           items: [
-            'kubernetes/install-master-node-agent',
-            'kubernetes/install-application-agent',
-            'kubernetes/create-name-space-project'
-          ]
+            'server/server-agent-naming',
+            'server/server-setting-rfv',
+            'server/server-setting-pcounter',
+            'server/server-setting-win32'
+          ],
         },
-        'kubernetes/kubernetes-agent-settings',
+        'server/server-adf',
+        // {
+        //   type: 'category',
+        //   label: '고급 기능',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'server/server-adf'
+        //   },
+        //   items: [
+        //     'server/server-adf-exp',
+        //     'server/server-adf-tct',
+        //     'server/server-adf-pn-pc',
+        //   ],
+        // },
         {
           type: 'category',
           label: '관리하기',
           collapsible: true,
           collapsed: true,
           items: [
-            'kubernetes/kubernetes-project',
-            'kubernetes/kubernetes-agent',
-            'kubernetes/kubernetes-update',
+            'server/server-agent-update',
+            'server/server-agent-remove',
           ],
         },
         {
@@ -253,15 +298,101 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'kubernetes/learn-kubernetes-main-menu'
+            id: 'server/learn-server-main-menu',
           },
           items: [
-            'dashboard/kubernetes-container-map',
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/server-dashboard-intro'
+              },
+              items: [
+                'dashboard/server-resourceboard',
+                //'dashboard/server-equalizer',
+                'dashboard/server-compoundeye',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/server-metrics-intro'
+              },
+              items: [
+                'metrics/mtx-server',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/server-analysis-report-intro'
+              },
+              items: [
+                'analysis/server-list',
+                'analysis/server-detail',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/server-report-intro'
+                  },
+                  items: [
+                    'analysis/server-report',
+                    'analysis/server-intergrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/server-set-notice'
+              },
+              items: [
+                'notification/set-event-detect-anomal',
+                'notification/set-event-log',
+                'notification/set-receive-event',
+                'notification/set-event-history',
+                'notification/set-event-format',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Open API',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'apidoc/server-openapi-intro'
+              },
+              items: [
+                'apidoc/server-openapi-spec',
+                'apidoc/server-openapi-call'
+              ],
+            }
           ],
-        }
-      ]
+        },
+      ]  
     }
-  ],
+  ],  
   dbSidebar: [
     {
       type: 'category',

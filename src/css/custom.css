@@ -203,6 +203,7 @@ main .markdown span.woer {color: rgb(40, 108, 242)}
 main .markdown span.logft {color: rgb(182, 0, 0)}
 main .markdown span.loger {color: rgb(242, 48, 0)}
 main .markdown span.logwr {color: rgb(242, 182, 0)}
+main .markdown span.mstop {color: rgb(192, 192, 192)}
 
 main .markdown div.metric table tr td:first-of-type {
   width: 30%;
