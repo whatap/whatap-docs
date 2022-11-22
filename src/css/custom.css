@@ -133,6 +133,15 @@ main .markdown img[alt='sc'] {
   width: fit-content;
 }
 
+main .markdown img[src*='whatap_kubernetes_create_namespace_project_popup'],
+main .markdown img[src*='whatap_kubernetes_container_map_namespace_project_list'] {
+  width: 600px;
+}
+
+main .markdown img[src*='whatap_kubernetes_application_agent_access_key'] {
+  width: 800px;
+}
+
 main .markdown strong em {
   font-style: normal;
 }
@@ -197,6 +206,16 @@ main .markdown span.logwr {color: rgb(242, 182, 0)}
 
 main .markdown div.metric table tr td:first-of-type {
   width: 30%;
+}
+
+main .markdown div.c4-avg table tr td {
+  width: 25%;
+}
+
+main .markdown div.c5-3-5-avg table tr td:nth-of-type(3),
+main .markdown div.c5-3-5-avg table tr td:nth-of-type(4),
+main .markdown div.c5-3-5-avg table tr td:nth-of-type(5) {
+  width: 15%;
 }
 
 .table-of-contents__link strong em {
