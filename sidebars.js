@@ -392,7 +392,66 @@ const sidebars = {
         },
       ]  
     }
-  ],  
+  ],
+  kubeSidebar: [
+    {
+      type: 'category',
+      label: '쿠버네티스 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'kubernetes/kubernetes-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'kubernetes/kubernetes-support'
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/kubernetes-install',
+          },
+          items: [
+            'kubernetes/install-master-node-agent',
+            'kubernetes/install-application-agent',
+            'kubernetes/create-name-space-project'
+          ]
+        },
+        'kubernetes/kubernetes-agent-settings',
+        {
+          type: 'category',
+          label: '관리하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/kubernetes-project',
+            'kubernetes/kubernetes-agent',
+            'kubernetes/kubernetes-update',
+          ],
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/learn-kubernetes-main-menu'
+          },
+          items: [
+            'dashboard/kubernetes-container-map',
+          ],
+        }
+      ]
+    }
+  ],
   dbSidebar: [
     {
       type: 'category',
