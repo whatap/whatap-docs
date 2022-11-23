@@ -260,6 +260,7 @@ const sidebars = {
           },
           items: [
             'server/server-agent-naming',
+            'server/server-agent-network',
             'server/server-setting-rfv',
             'server/server-setting-pcounter',
             'server/server-setting-win32'
