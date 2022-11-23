@@ -144,12 +144,12 @@ const config = {
             position: 'left',
             label: '애플리케이션 모니터링',
           },
-          {
-            type: 'doc',
-            docId: 'server/server-intro',
-            position: 'left',
-            label: '서버 모니터링',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'server/server-intro',
+          //   position: 'left',
+          //   label: '서버 모니터링',
+          // },
           {
             type: 'doc',
             docId: 'db/db-monitoring-intro',
