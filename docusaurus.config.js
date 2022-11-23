@@ -186,10 +186,10 @@ const config = {
                 label: 'APM 모니터링',
                 to: 'apm/application-intro',
               },
-              {
-                label: 'Server 모니터링',
-                to: 'server/server-intro',
-              },
+              // {
+              //   label: 'Server 모니터링',
+              //   to: 'server/server-intro',
+              // },
               {
                 label: 'DB 모니터링',
                 to: 'db/db-monitoring-intro',
