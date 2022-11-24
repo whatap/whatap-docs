@@ -335,10 +335,10 @@ const sidebars = {
               label: '분석하기',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'analysis/server-analysis-report-intro'
-              },
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/server-analysis-report-intro'
+              // },
               items: [
                 'analysis/server-list',
                 'analysis/server-detail',
@@ -368,12 +368,19 @@ const sidebars = {
                 id: 'notification/server-set-notice'
               },
               items: [
-                'notification/set-event-detect-anomal',
-                'notification/set-event-log',
-                'notification/set-receive-event',
-                'notification/set-event-history',
-                'notification/set-event-format',
+                'notification/server-warning-notice',
+                'notification/server-metric-warning-notice',
+                'notification/server-set-event-detect-anomal',
+                'notification/server-set-event-log',
+                'notification/server-set-receive-event',
+                'notification/server-set-event-history',
+                'notification/server-set-event-format',
               ]
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
             },
             {
               type: 'link',
