@@ -208,6 +208,31 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  rumsSidebar: [
+    {
+      type: 'category',
+      label: 'RUM - 브라우저 모니터링',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'rum/rum-intro'
+      },
+      items: [
+        {
+          type: 'category',
+          label: '호환성 및 사전설정',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'rum/rum-browser-compatibility',
+            'rum/rum-browser-preset',
+          ],
+        },
+        'rum/rum-apply-agent'
+      ],
+    }
+  ],
   serverSidebar: [
     {
       type: 'category',
@@ -437,7 +462,45 @@ const sidebars = {
             id: 'kubernetes/learn-kubernetes-main-menu'
           },
           items: [
-            'dashboard/kubernetes-container-map',
+            {
+              type: 'category',
+              label: '컨테이너 맵',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/kubernetes-container-map',
+              },
+              items: [
+                'dashboard/kubernetes-container-view',
+                'dashboard/kubernetes-container-group',
+                'dashboard/kubernates-container-status',
+              ]
+            },
+            {
+              type: 'category',
+              label: '컨테이너 맵 상세 보기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/kubernetes-container-map-detail-mode'
+              },
+              items: [
+                'dashboard/kubernetes-container-map-metrics',
+                'dashboard/kubernetes-container-map-trace',
+                'dashboard/kubernetes-container-map-log',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'metrics/kubernetes-metrics-intro',
+              ],
+            }
           ],
         }
       ]

@@ -126,18 +126,6 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          // {
-          //   type: 'link',
-          //   docId: '/.',
-          //   position: 'left',
-          //   label: '홈',
-          // },
-          // {
-          //   type: 'doc',
-          //   docId: 'getting-started/support-env',
-          //   position: 'left',
-          //   label: '시작하기',
-          // },
           {
             type: 'doc',
             docId: 'apm/application-intro',
