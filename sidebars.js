@@ -93,6 +93,16 @@ const sidebars = {
       label: '쿠버네티스 모니터링',
       href: 'kubernetes/kubernetes-intro',
     },
+    // {
+    //   type: 'link',
+    //   label: 'Telegraf 모니터링',
+    //   href: 'telegraf/telegraf-intro' 
+    // },
+    {
+      type: 'link',
+      label: 'Telegraf 모니터링',
+      href: 'telegraf/tf-support'
+    },
     {
       type: 'link',
       label: '로그 모니터링',
@@ -208,6 +218,65 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  tfSidebar: [
+    {
+      type: 'category',
+      label: 'Telegraf 모니터링',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'telegraf/telegraf-intro'
+      // },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'telegraf/tf-support'
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          // link: {
+          //   type: 'doc',
+          //   id: 'telegraf/tf-install',
+          // },
+          items: [
+            'telegraf/install-tf-plugin',
+            'telegraf/install-tf-agent',
+            'telegraf/tf-troubleshooting',
+          ]
+        },
+        'telegraf/tf-settings',
+        // {
+        //   type: 'category',
+        //   label: '관리하기',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   items: [
+        //     'telegraf/tf-manage',
+        //   ],
+        // },
+        'telegraf/tf-manage',
+        'telegraf/tf-plugin-ex',
+        // {
+        //   type: 'category',
+        //   label: '주요 메뉴 알아보기',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'telegraf/learn-tf-main-menu'
+        //   },
+        //   items: [
+        //     'dashboard/tf-container-map',
+        //   ],
+        // }
+      ]
+    }
+  ],
   serverSidebar: [
     {
       type: 'category',
