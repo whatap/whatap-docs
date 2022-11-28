@@ -170,6 +170,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'url/url-intro',
+            position: 'left',
+            label: 'URL 모니터링',
+          },
+          {
+            type: 'doc',
             docId: 'reference',
             position: 'left',
             label: '참조 문서',
@@ -207,6 +213,10 @@ const config = {
               {
                 label: 'Log 모니터링',
                 to: 'log/log-intro',
+              },
+              {
+                label: 'URL 모니터링',
+                to: 'url/url-intro',
               },
             ],
           },

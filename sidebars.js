@@ -110,6 +110,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: 'URL 모니터링',
+      href: 'url/url-intro' 
+    },
+    {
+      type: 'link',
       label: '관리 기능',
       href: 'manage' 
     },
@@ -218,6 +223,35 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  urlSidebar: [
+    {
+      type: 'category',
+      label: 'URL 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'url/url-intro'
+      },
+      items: [
+        'url/url-install',
+        'url/url-event',
+        // {
+        //   type: 'category',
+        //   label: '주요 메뉴 알아보기',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'url/learn-url-main-menu'
+        //   },
+        //   items: [
+        //     'dashboard/url-container-map',
+        //   ],
+        // }
+      ]
+    }
+  ],
   tfSidebar: [
     {
       type: 'category',
