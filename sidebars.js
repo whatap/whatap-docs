@@ -313,6 +313,31 @@ const sidebars = {
       ]
     }
   ],
+  rumsSidebar: [
+    {
+      type: 'category',
+      label: 'RUM - 브라우저 모니터링',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'rum/rum-intro'
+      },
+      items: [
+        {
+          type: 'category',
+          label: '호환성 및 사전설정',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'rum/rum-browser-compatibility',
+            'rum/rum-browser-preset',
+          ],
+        },
+        'rum/rum-apply-agent'
+      ],
+    }
+  ],
   serverSidebar: [
     {
       type: 'category',
