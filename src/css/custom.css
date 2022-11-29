@@ -112,7 +112,7 @@ main .markdown img[alt='실시간 데이터 조회'] {
   width: fit-content;
 }
 
-main .markdown h2 img {
+main .markdown h2 img, main .markdown h3 img {
   position: relative;
   top: 3px;
   max-height: 30px;
@@ -137,7 +137,10 @@ main .markdown img[src*='whatap_kubernetes_create_namespace_project_popup'],
 main .markdown img[src*='whatap_kubernetes_container_map_namespace_project_list'] {
   width: 600px;
 }
-
+main .markdown img[src*='kubernetes-time-seletor'],
+main .markdown img[src*='whatap_kubernetes_container_map_state_customization'] {
+  width: 400px;
+}
 main .markdown img[src*='whatap_kubernetes_application_agent_access_key'] {
   width: 800px;
 }
@@ -217,6 +220,12 @@ main .markdown div.c5-3-5-avg table tr td:nth-of-type(3),
 main .markdown div.c5-3-5-avg table tr td:nth-of-type(4),
 main .markdown div.c5-3-5-avg table tr td:nth-of-type(5) {
   width: 15%;
+}
+main .markdown div.rum-compatibility tr td:first-of-type {
+  width: 20%;
+}
+main .markdown div.rum-compatibility tr td {
+  width: 10%;
 }
 
 .table-of-contents__link strong em {

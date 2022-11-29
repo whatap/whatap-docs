@@ -186,6 +186,7 @@ const sidebars = {
                 'apidoc/openapi-call-server-spot',
                 'apidoc/openapi-call-apm-stat-data',
                 'apidoc/openapi-call-server-stat-data',
+                'apidoc/openapi-call-project-stat',
                 'apidoc/openapi-call-long-stat',
                 'apidoc/openapi-call-log',
                 'apidoc/openapi-call-short-stat',
@@ -549,7 +550,45 @@ const sidebars = {
             id: 'kubernetes/learn-kubernetes-main-menu'
           },
           items: [
-            'dashboard/kubernetes-container-map',
+            {
+              type: 'category',
+              label: '컨테이너 맵',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/kubernetes-container-map',
+              },
+              items: [
+                'dashboard/kubernetes-container-view',
+                'dashboard/kubernetes-container-group',
+                'dashboard/kubernates-container-status',
+              ]
+            },
+            {
+              type: 'category',
+              label: '컨테이너 맵 상세 보기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/kubernetes-container-map-detail-mode'
+              },
+              items: [
+                'dashboard/kubernetes-container-map-metrics',
+                'dashboard/kubernetes-container-map-trace',
+                'dashboard/kubernetes-container-map-log',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'metrics/kubernetes-metrics-intro',
+              ],
+            }
           ],
         }
       ]
