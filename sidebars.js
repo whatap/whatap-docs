@@ -135,6 +135,7 @@ const sidebars = {
         id: 'reference'
       },
       items: [
+        'ref-cloud/cloud',
         {
           type: 'category',
           label: 'MXQL',
