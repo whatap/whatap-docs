@@ -93,10 +93,25 @@ const sidebars = {
       label: '쿠버네티스 모니터링',
       href: 'kubernetes/kubernetes-intro',
     },
+    // {
+    //   type: 'link',
+    //   label: 'Telegraf 모니터링',
+    //   href: 'telegraf/telegraf-intro' 
+    // },
+    {
+      type: 'link',
+      label: 'Telegraf 모니터링',
+      href: 'telegraf/tf-support'
+    },
     {
       type: 'link',
       label: '로그 모니터링',
       href: 'log/log-intro' 
+    },
+    {
+      type: 'link',
+      label: 'URL 모니터링',
+      href: 'url/url-intro' 
     },
     {
       type: 'link',
@@ -120,6 +135,7 @@ const sidebars = {
         id: 'reference'
       },
       items: [
+        'ref-cloud/cloud',
         {
           type: 'category',
           label: 'MXQL',
@@ -209,29 +225,92 @@ const sidebars = {
   //     ],
   //   },
   // ],
-  rumsSidebar: [
+  urlSidebar: [
     {
       type: 'category',
-      label: 'RUM - 브라우저 모니터링',
-      collapsible: true,
-      collapsed: true,
+      label: 'URL 모니터링',
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
-        id: 'rum/rum-intro'
+        id: 'url/url-intro'
       },
       items: [
+        'url/url-install',
+        'url/url-event',
+        // {
+        //   type: 'category',
+        //   label: '주요 메뉴 알아보기',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'url/learn-url-main-menu'
+        //   },
+        //   items: [
+        //     'dashboard/url-container-map',
+        //   ],
+        // }
+      ]
+    }
+  ],
+  tfSidebar: [
+    {
+      type: 'category',
+      label: 'Telegraf 모니터링',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'telegraf/telegraf-intro'
+      // },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'telegraf/tf-support'
+        },
         {
           type: 'category',
-          label: '호환성 및 사전설정',
+          label: '설치하기',
           collapsible: true,
           collapsed: true,
+          // link: {
+          //   type: 'doc',
+          //   id: 'telegraf/tf-install',
+          // },
           items: [
-            'rum/rum-browser-compatibility',
-            'rum/rum-browser-preset',
-          ],
+            'telegraf/install-tf-plugin',
+            'telegraf/install-tf-agent',
+            'telegraf/tf-troubleshooting',
+          ]
         },
-        'rum/rum-apply-agent'
-      ],
+        'telegraf/tf-settings',
+        // {
+        //   type: 'category',
+        //   label: '관리하기',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   items: [
+        //     'telegraf/tf-manage',
+        //   ],
+        // },
+        'telegraf/tf-manage',
+        'telegraf/tf-plugin-ex',
+        // {
+        //   type: 'category',
+        //   label: '주요 메뉴 알아보기',
+        //   collapsible: true,
+        //   collapsed: false,
+        //   link: {
+        //     type: 'doc',
+        //     id: 'telegraf/learn-tf-main-menu'
+        //   },
+        //   items: [
+        //     'dashboard/tf-container-map',
+        //   ],
+        // }
+      ]
     }
   ],
   serverSidebar: [
@@ -286,6 +365,7 @@ const sidebars = {
           },
           items: [
             'server/server-agent-naming',
+            'server/server-agent-network',
             'server/server-setting-rfv',
             'server/server-setting-pcounter',
             'server/server-setting-win32'
@@ -360,10 +440,10 @@ const sidebars = {
               label: '분석하기',
               collapsible: true,
               collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'analysis/server-analysis-report-intro'
-              },
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/server-analysis-report-intro'
+              // },
               items: [
                 'analysis/server-list',
                 'analysis/server-detail',
@@ -393,12 +473,19 @@ const sidebars = {
                 id: 'notification/server-set-notice'
               },
               items: [
-                'notification/set-event-detect-anomal',
-                'notification/set-event-log',
-                'notification/set-receive-event',
-                'notification/set-event-history',
-                'notification/set-event-format',
+                'notification/server-warning-notice',
+                'notification/server-metric-warning-notice',
+                'notification/server-set-event-detect-anomal',
+                'notification/server-set-event-log',
+                'notification/server-set-receive-event',
+                'notification/server-set-event-history',
+                'notification/server-set-event-format',
               ]
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
             },
             {
               type: 'link',

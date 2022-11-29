@@ -146,9 +146,21 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'telegraf/tf-support',
+            position: 'left',
+            label: 'Telegraf 모니터링',
+          },
+          {
+            type: 'doc',
             docId: 'log/log-intro',
             position: 'left',
             label: '로그 모니터링',
+          },
+          {
+            type: 'doc',
+            docId: 'url/url-intro',
+            position: 'left',
+            label: 'URL 모니터링',
           },
           {
             type: 'doc',
@@ -183,8 +195,16 @@ const config = {
                 to: 'db/db-monitoring-intro',
               },
               {
+                label: 'Telegraf 모니터링',
+                to: 'telegraf/tf-support',
+              },
+              {
                 label: 'Log 모니터링',
                 to: 'log/log-intro',
+              },
+              {
+                label: 'URL 모니터링',
+                to: 'url/url-intro',
               },
             ],
           },
