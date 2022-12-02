@@ -103,6 +103,11 @@ const sidebars = {
       label: 'Telegraf 모니터링',
       href: 'telegraf/tf-support'
     },
+    // {
+    //   type: 'link',
+    //   label: 'Focus 모니터링',
+    //   href: 'Focus/focus-intro'
+    // },
     {
       type: 'link',
       label: '로그 모니터링',
@@ -136,6 +141,22 @@ const sidebars = {
       },
       items: [
         'ref-cloud/cloud',
+        {
+          type: 'category',
+          label: 'Focus',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'focus/focus-intro'
+          },
+          items: [
+            'focus/focus-supported-spec',
+            'focus/install-focus',
+            'focus/focus-settings',
+            'focus/focus-usage',
+          ]
+        },
         {
           type: 'category',
           label: 'MXQL',
@@ -224,6 +245,24 @@ const sidebars = {
   //       },
   //     ],
   //   },
+  // ],
+  // focusSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: 'Focus 모니터링',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     link: {
+  //       type: 'doc',
+  //       id: 'focus/focus-intro'
+  //     },
+  //     items: [
+  //       'focus/focus-supported-spec',
+  //       'focus/install-focus',
+  //       'focus/focus-settings',
+  //       'focus/focus-usage',
+  //     ]
+  //   }
   // ],
   urlSidebar: [
     {

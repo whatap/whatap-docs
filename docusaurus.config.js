@@ -150,6 +150,12 @@ const config = {
             position: 'left',
             label: 'Telegraf 모니터링',
           },
+          // {
+          //   type: 'doc',
+          //   docId: 'focus/focus-intro',
+          //   position: 'left',
+          //   label: 'Focus 모니터링',
+          // },
           {
             type: 'doc',
             docId: 'log/log-intro',
@@ -198,6 +204,10 @@ const config = {
                 label: 'Telegraf 모니터링',
                 to: 'telegraf/tf-support',
               },
+              // {
+              //   label: 'Focus 모니터링',
+              //   to: 'focus/focus-intro',
+              // },
               {
                 label: 'Log 모니터링',
                 to: 'log/log-intro',
