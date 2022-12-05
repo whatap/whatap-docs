@@ -120,6 +120,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: '인티그레이션',
+      href: 'integration/integ-intro'
+    },
+    {
+      type: 'link',
       label: '관리 기능',
       href: 'manage' 
     },
@@ -264,6 +269,54 @@ const sidebars = {
   //     ]
   //   }
   // ],
+  integSidebar: [
+    {
+      type: 'category',
+      label: '인티그레이션',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'integration/integ-intro'
+      },
+      items: [
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'integration/install-integ',
+          },
+          items: [
+            'integration/items/integ-amazon-ecs',
+            'integration/items/integ-amazon-cloudwatch',
+            'integration/items/integ-azure-monitor',
+            'integration/items/integ-ncloud-monitoring',
+            'integration/items/integ-oracle-cloud-monitor',
+          ],
+          
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'integration/learn-integ-main-menu'
+          },
+          items: [
+            'dashboard/integ-dashboard-intro',
+            'dashboard/integ-flexboard',
+            'metrics/integ-metrics-intro',
+            'notification/integ-set-notice',
+          ],
+        }
+      ]
+    }
+  ],
   urlSidebar: [
     {
       type: 'category',
@@ -522,7 +575,7 @@ const sidebars = {
                   },
                   items: [
                     'analysis/server-report',
-                    'analysis/server-intergrated-report',
+                    'analysis/server-integrated-report',
                   ]
                 }
               ]
@@ -770,7 +823,7 @@ const sidebars = {
                 'analysis/db-log-viewer',
                 'analysis/db-stat',
                 'analysis/db-report',
-                'analysis/db-intergrated-report',
+                'analysis/db-integrated-report',
               ]
             },
             {
@@ -1462,7 +1515,7 @@ const sidebars = {
                   },
                   items: [
                     'analysis/report-apm',
-                    'analysis/intergrated-report',
+                    'analysis/integrated-report',
                   ]
                 }
               ]

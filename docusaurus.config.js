@@ -216,6 +216,10 @@ const config = {
                 label: 'URL 모니터링',
                 to: 'url/url-intro',
               },
+              {
+                label: '인티그레이션',
+                to: 'integration/integ-intro',
+              },
             ],
           },
           {
