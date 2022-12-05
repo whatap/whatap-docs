@@ -29,8 +29,11 @@ const sidebars = {
       },
       items: [
         'account/account-manage',
+        'account/mfa',
         'project/project',
-        'project/project-structure'
+        'project/project-structure',
+        'project/organize',
+        'project/manage-integrated-group',
       ]
     }
   ],
@@ -115,6 +118,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: 'RUM - 브라우저 모니터링',
+      href: 'rum/rum-intro' 
+    },
+    {
+      type: 'link',
       label: '관리 기능',
       href: 'manage' 
     },
@@ -135,6 +143,7 @@ const sidebars = {
         id: 'reference'
       },
       items: [
+        'metrics/common-metrics-intro',
         'ref-cloud/cloud',
         {
           type: 'category',
@@ -238,6 +247,7 @@ const sidebars = {
       items: [
         'url/url-install',
         'url/url-event',
+        'url/url-error-type',
         // {
         //   type: 'category',
         //   label: '주요 메뉴 알아보기',
@@ -316,7 +326,7 @@ const sidebars = {
   rumsSidebar: [
     {
       type: 'category',
-      label: 'RUM - 브라우저 모니터링',
+      label: '브라우저 모니터링(RUM)',
       collapsible: true,
       collapsed: true,
       link: {
@@ -334,7 +344,49 @@ const sidebars = {
             'rum/rum-browser-preset',
           ],
         },
-        'rum/rum-apply-agent'
+        'rum/rum-apply-agent',
+        'rum/rum-before-starting',
+        'rum/rum-dashboard',
+        'rum/rum-pageload-dashboard',
+        'rum/rum-resource-dashboard',
+        'rum/rum-ajax-dashboard',
+        'rum/rum-browser-error-dashboard',
+		    'dashboard/dashboard-widget-setting',
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dashboard/rum-flex-board',
+          },
+          items: [
+            'dashboard/rum-flexboard-template',
+            'dashboard/rum-flexboard-create',
+            'dashboard/rum-flexboard-metric-widget',
+            'dashboard/rum-flexboard-widget-manage',
+            'dashboard/rum-flexboard-mode',
+            'dashboard/rum-flexboard-share',
+          ],
+        },
+        'metrics/rum-metrics-intro',
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'notification/rum-set-notics',
+          },
+          items: [
+            'notification/rum-metric-warning-notice',
+            'notification/rum-set-receive-event',
+            'notification/rum-set-event-history'
+          ],
+        },
+        'rum/rum-collect-data',
       ],
     }
   ],
