@@ -541,6 +541,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/server-flex-board',
+              },
+              items: [
+                'dashboard/server-flexboard-template',
+                'dashboard/server-flexboard-create',
+                'dashboard/server-flexboard-metric-widget',
+                'dashboard/server-flexboard-widget-manage',
+                'dashboard/server-flexboard-mode',
+                'dashboard/server-flexboard-share',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
