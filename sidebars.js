@@ -93,21 +93,6 @@ const sidebars = {
       label: '쿠버네티스 모니터링',
       href: 'kubernetes/kubernetes-intro',
     },
-    // {
-    //   type: 'link',
-    //   label: 'Telegraf 모니터링',
-    //   href: 'telegraf/telegraf-intro' 
-    // },
-    {
-      type: 'link',
-      label: 'Telegraf 모니터링',
-      href: 'telegraf/tf-support'
-    },
-    // {
-    //   type: 'link',
-    //   label: 'Focus 모니터링',
-    //   href: 'Focus/focus-intro'
-    // },
     {
       type: 'link',
       label: '로그 모니터링',
@@ -122,6 +107,11 @@ const sidebars = {
       type: 'link',
       label: '인티그레이션',
       href: 'integration/integ-intro'
+    },
+    {
+      type: 'link',
+      label: '플러그인',
+      href: 'plugin'
     },
     {
       type: 'link',
@@ -146,22 +136,6 @@ const sidebars = {
       },
       items: [
         'ref-cloud/cloud',
-        {
-          type: 'category',
-          label: 'Focus',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'focus/focus-intro'
-          },
-          items: [
-            'focus/focus-supported-spec',
-            'focus/install-focus',
-            'focus/focus-settings',
-            'focus/focus-usage',
-          ]
-        },
         {
           type: 'category',
           label: 'MXQL',
@@ -251,24 +225,63 @@ const sidebars = {
   //     ],
   //   },
   // ],
-  // focusSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: 'Focus 모니터링',
-  //     collapsible: false,
-  //     collapsed: false,
-  //     link: {
-  //       type: 'doc',
-  //       id: 'focus/focus-intro'
-  //     },
-  //     items: [
-  //       'focus/focus-supported-spec',
-  //       'focus/install-focus',
-  //       'focus/focus-settings',
-  //       'focus/focus-usage',
-  //     ]
-  //   }
-  // ],
+  pluginSidebar: [
+    {
+      type: 'category',
+      label: '플러그인',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'plugin'
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Telegraf',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'telegraf/tf-support'
+            },
+            {
+              type: 'category',
+              label: '설치하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'telegraf/install-tf-plugin',
+                'telegraf/install-tf-agent',
+                'telegraf/tf-troubleshooting',
+              ]
+            },
+            'telegraf/tf-settings',
+            'telegraf/tf-manage',
+            'telegraf/tf-plugin-ex',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Focus',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'focus/focus-intro'
+          },
+          items: [
+            'focus/focus-supported-spec',
+            'focus/install-focus',
+            'focus/focus-settings',
+            'focus/focus-usage',
+          ]
+        },
+      ]
+    }
+  ],
   integSidebar: [
     {
       type: 'category',
@@ -341,65 +354,6 @@ const sidebars = {
         //   },
         //   items: [
         //     'dashboard/url-container-map',
-        //   ],
-        // }
-      ]
-    }
-  ],
-  tfSidebar: [
-    {
-      type: 'category',
-      label: 'Telegraf 모니터링',
-      collapsible: false,
-      collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'telegraf/telegraf-intro'
-      // },
-      items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'telegraf/tf-support'
-        },
-        {
-          type: 'category',
-          label: '설치하기',
-          collapsible: true,
-          collapsed: true,
-          // link: {
-          //   type: 'doc',
-          //   id: 'telegraf/tf-install',
-          // },
-          items: [
-            'telegraf/install-tf-plugin',
-            'telegraf/install-tf-agent',
-            'telegraf/tf-troubleshooting',
-          ]
-        },
-        'telegraf/tf-settings',
-        // {
-        //   type: 'category',
-        //   label: '관리하기',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     'telegraf/tf-manage',
-        //   ],
-        // },
-        'telegraf/tf-manage',
-        'telegraf/tf-plugin-ex',
-        // {
-        //   type: 'category',
-        //   label: '주요 메뉴 알아보기',
-        //   collapsible: true,
-        //   collapsed: false,
-        //   link: {
-        //     type: 'doc',
-        //     id: 'telegraf/learn-tf-main-menu'
-        //   },
-        //   items: [
-        //     'dashboard/tf-container-map',
         //   ],
         // }
       ]

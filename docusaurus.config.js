@@ -146,18 +146,6 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'telegraf/tf-support',
-            position: 'left',
-            label: 'Telegraf 모니터링',
-          },
-          // {
-          //   type: 'doc',
-          //   docId: 'focus/focus-intro',
-          //   position: 'left',
-          //   label: 'Focus 모니터링',
-          // },
-          {
-            type: 'doc',
             docId: 'log/log-intro',
             position: 'left',
             label: '로그 모니터링',
@@ -167,6 +155,18 @@ const config = {
             docId: 'url/url-intro',
             position: 'left',
             label: 'URL 모니터링',
+          },
+          {
+            type: 'doc',
+            docId: 'integration/integ-intro',
+            position: 'left',
+            label: '인티그레이션',
+          },
+          {
+            type: 'doc',
+            docId: 'plugin',
+            position: 'left',
+            label: '플러그인',
           },
           {
             type: 'doc',
@@ -200,14 +200,6 @@ const config = {
                 label: 'DB 모니터링',
                 to: 'db/db-monitoring-intro',
               },
-              {
-                label: 'Telegraf 모니터링',
-                to: 'telegraf/tf-support',
-              },
-              // {
-              //   label: 'Focus 모니터링',
-              //   to: 'focus/focus-intro',
-              // },
               {
                 label: 'Log 모니터링',
                 to: 'log/log-intro',
