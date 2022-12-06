@@ -308,8 +308,7 @@ const sidebars = {
             'integration/items/integ-azure-monitor',
             'integration/items/integ-ncloud-monitoring',
             'integration/items/integ-oracle-cloud-monitor',
-          ],
-          
+          ],          
         },
         {
           type: 'category',
@@ -321,10 +320,53 @@ const sidebars = {
             id: 'integration/learn-integ-main-menu'
           },
           items: [
-            'dashboard/integ-dashboard-intro',
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/integ-dashboard-intro',
+              },
+              items: [
+                'dashboard/integ-dashboard',
+              ]
+            },
             'dashboard/integ-flexboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/integ-flexboard',
+              },
+              items: [
+                'dashboard/integ-flexboard-template',
+                'dashboard/integ-flexboard-create',
+                'dashboard/integ-flexboard-metric-widget',
+                'dashboard/integ-flexboard-widget-manage',
+                'dashboard/integ-flexboard-mode',
+                'dashboard/integ-flexboard-share',
+              ]
+            },
             'metrics/integ-metrics-intro',
-            'notification/integ-set-notice',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/integ-set-notice',
+              },
+              items: [
+                'notification/integ-warning-and-history',
+                'notification/integ-set-receive-event',
+              ]
+            },
           ],
         }
       ]
