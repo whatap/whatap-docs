@@ -120,6 +120,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: 'RUM:브라우저 모니터링',
+      href: 'rum/rum-intro'
+    },
+    {
+      type: 'link',
       label: '플러그인',
       href: 'plugin'
     },
