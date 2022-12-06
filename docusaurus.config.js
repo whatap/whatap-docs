@@ -128,33 +128,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'apm/application-intro',
+            docId: 'index',
             position: 'left',
-            label: '애플리케이션 모니터링',
+            label: 'Docs',
           },
           {
             type: 'doc',
-            docId: 'server/server-intro',
+            docId: 'manage',
             position: 'left',
-            label: '서버 모니터링',
-          },
-          {
-            type: 'doc',
-            docId: 'db/db-monitoring-intro',
-            position: 'left',
-            label: '데이터베이스 모니터링',
-          },
-          {
-            type: 'doc',
-            docId: 'log/log-intro',
-            position: 'left',
-            label: '로그 모니터링',
-          },
-          {
-            type: 'doc',
-            docId: 'url/url-intro',
-            position: 'left',
-            label: 'URL 모니터링',
+            label: '관리 기능',
           },
           {
             type: 'doc',
