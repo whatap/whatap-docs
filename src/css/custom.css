@@ -110,7 +110,7 @@ main .markdown img[alt*='number-s'] {
   border: none;
 }
 
-main .markdown img[alt='실시간 데이터 조회'] {
+main .markdown img[alt='실시간 데이터 조회'], main .markdown img[src*='member-authority'] {
   border: none;
   width: fit-content;
 }

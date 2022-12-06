@@ -30,10 +30,12 @@ const sidebars = {
       items: [
         'account/account-manage',
         'account/mfa',
-        'project/project',
         'project/project-structure',
-        'project/organize',
-        'project/manage-integrated-group',
+        'project/project',
+        'project/group',
+        'project/organization',
+        'project/integrated-manage',
+        'billing/billing'
       ]
     }
   ],
