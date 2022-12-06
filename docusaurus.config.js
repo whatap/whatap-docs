@@ -209,6 +209,10 @@ const config = {
                 to: 'url/url-intro',
               },
               {
+                label: 'AWS Log 모니터링',
+                to: 'aws-log/install-aws-log',
+              },
+              {
                 label: '인티그레이션',
                 to: 'integration/integ-intro',
               },

@@ -105,6 +105,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: 'AWS Log 모니터링',
+      href: 'aws-log/install-aws-log'
+    },
+    {
+      type: 'link',
       label: '인티그레이션',
       href: 'integration/integ-intro'
     },
@@ -225,6 +230,22 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  awslogSidebar: [
+    {
+      type: 'category',
+      label: 'AWS Log 모니터링',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'aws-log/aws-log-intro'
+      // },
+      items: [
+        'aws-log/install-aws-log',
+        'aws-log/aws-log-extension',
+      ]
+    }
+  ],
   pluginSidebar: [
     {
       type: 'category',
