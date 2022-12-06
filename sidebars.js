@@ -98,16 +98,6 @@ const sidebars = {
       label: '쿠버네티스 모니터링',
       href: 'kubernetes/kubernetes-intro',
     },
-    // {
-    //   type: 'link',
-    //   label: 'Telegraf 모니터링',
-    //   href: 'telegraf/telegraf-intro' 
-    // },
-    {
-      type: 'link',
-      label: 'Telegraf 모니터링',
-      href: 'telegraf/tf-support'
-    },
     {
       type: 'link',
       label: '로그 모니터링',
@@ -120,8 +110,18 @@ const sidebars = {
     },
     {
       type: 'link',
-      label: 'RUM - 브라우저 모니터링',
-      href: 'rum/rum-intro' 
+      label: 'AWS Log 모니터링',
+      href: 'aws-log/install-aws-log'
+    },
+    {
+      type: 'link',
+      label: '인티그레이션',
+      href: 'integration/integ-intro'
+    },
+    {
+      type: 'link',
+      label: '플러그인',
+      href: 'plugin'
     },
     {
       type: 'link',
@@ -236,6 +236,169 @@ const sidebars = {
   //     ],
   //   },
   // ],
+  awslogSidebar: [
+    {
+      type: 'category',
+      label: 'AWS Log 모니터링',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'aws-log/aws-log-intro'
+      // },
+      items: [
+        'aws-log/install-aws-log',
+        'aws-log/aws-log-extension',
+      ]
+    }
+  ],
+  pluginSidebar: [
+    {
+      type: 'category',
+      label: '플러그인',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'plugin'
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Telegraf',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'telegraf/tf-support'
+            },
+            {
+              type: 'category',
+              label: '설치하기',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'telegraf/install-tf-plugin',
+                'telegraf/install-tf-agent',
+                'telegraf/tf-troubleshooting',
+              ]
+            },
+            'telegraf/tf-settings',
+            'telegraf/tf-manage',
+            'telegraf/tf-plugin-ex',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Focus',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'focus/focus-intro'
+          },
+          items: [
+            'focus/focus-supported-spec',
+            'focus/install-focus',
+            'focus/focus-settings',
+            'focus/focus-usage',
+          ]
+        },
+      ]
+    }
+  ],
+  integSidebar: [
+    {
+      type: 'category',
+      label: '인티그레이션',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'integration/integ-intro'
+      },
+      items: [
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'integration/install-integ',
+          },
+          items: [
+            'integration/items/integ-amazon-ecs',
+            'integration/items/integ-amazon-cloudwatch',
+            'integration/items/integ-azure-monitor',
+            'integration/items/integ-ncloud-monitoring',
+            'integration/items/integ-oracle-cloud-monitor',
+          ],          
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'integration/learn-integ-main-menu'
+          },
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/integ-dashboard-intro',
+              },
+              items: [
+                'dashboard/integ-dashboard',
+              ]
+            },
+            'dashboard/integ-flexboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/integ-flexboard',
+              },
+              items: [
+                'dashboard/integ-flexboard-template',
+                'dashboard/integ-flexboard-create',
+                'dashboard/integ-flexboard-metric-widget',
+                'dashboard/integ-flexboard-widget-manage',
+                'dashboard/integ-flexboard-mode',
+                'dashboard/integ-flexboard-share',
+              ]
+            },
+            'metrics/integ-metrics-intro',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/integ-set-notice',
+              },
+              items: [
+                'notification/integ-warning-and-history',
+                'notification/integ-set-receive-event',
+              ]
+            },
+          ],
+        }
+      ]
+    }
+  ],
   urlSidebar: [
     {
       type: 'category',
@@ -249,7 +412,6 @@ const sidebars = {
       items: [
         'url/url-install',
         'url/url-event',
-        'url/url-error-type',
         // {
         //   type: 'category',
         //   label: '주요 메뉴 알아보기',
@@ -261,65 +423,6 @@ const sidebars = {
         //   },
         //   items: [
         //     'dashboard/url-container-map',
-        //   ],
-        // }
-      ]
-    }
-  ],
-  tfSidebar: [
-    {
-      type: 'category',
-      label: 'Telegraf 모니터링',
-      collapsible: false,
-      collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'telegraf/telegraf-intro'
-      // },
-      items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'telegraf/tf-support'
-        },
-        {
-          type: 'category',
-          label: '설치하기',
-          collapsible: true,
-          collapsed: true,
-          // link: {
-          //   type: 'doc',
-          //   id: 'telegraf/tf-install',
-          // },
-          items: [
-            'telegraf/install-tf-plugin',
-            'telegraf/install-tf-agent',
-            'telegraf/tf-troubleshooting',
-          ]
-        },
-        'telegraf/tf-settings',
-        // {
-        //   type: 'category',
-        //   label: '관리하기',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     'telegraf/tf-manage',
-        //   ],
-        // },
-        'telegraf/tf-manage',
-        'telegraf/tf-plugin-ex',
-        // {
-        //   type: 'category',
-        //   label: '주요 메뉴 알아보기',
-        //   collapsible: true,
-        //   collapsed: false,
-        //   link: {
-        //     type: 'doc',
-        //     id: 'telegraf/learn-tf-main-menu'
-        //   },
-        //   items: [
-        //     'dashboard/tf-container-map',
         //   ],
         // }
       ]
@@ -503,6 +606,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/server-flex-board',
+              },
+              items: [
+                'dashboard/server-flexboard-template',
+                'dashboard/server-flexboard-create',
+                'dashboard/server-flexboard-metric-widget',
+                'dashboard/server-flexboard-widget-manage',
+                'dashboard/server-flexboard-mode',
+                'dashboard/server-flexboard-share',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -537,7 +658,7 @@ const sidebars = {
                   },
                   items: [
                     'analysis/server-report',
-                    'analysis/server-intergrated-report',
+                    'analysis/server-integrated-report',
                   ]
                 }
               ]
@@ -785,7 +906,7 @@ const sidebars = {
                 'analysis/db-log-viewer',
                 'analysis/db-stat',
                 'analysis/db-report',
-                'analysis/db-intergrated-report',
+                'analysis/db-integrated-report',
               ]
             },
             {
@@ -1477,7 +1598,7 @@ const sidebars = {
                   },
                   items: [
                     'analysis/report-apm',
-                    'analysis/intergrated-report',
+                    'analysis/integrated-report',
                   ]
                 }
               ]

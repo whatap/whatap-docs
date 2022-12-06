@@ -140,6 +140,18 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'integration/integ-intro',
+            position: 'left',
+            label: '인티그레이션',
+          },
+          {
+            type: 'doc',
+            docId: 'plugin',
+            position: 'left',
+            label: '플러그인',
+          },
+          {
+            type: 'doc',
             docId: 'reference',
             position: 'left',
             label: '참조 문서',
@@ -171,10 +183,6 @@ const config = {
                 to: 'db/db-monitoring-intro',
               },
               {
-                label: 'Telegraf 모니터링',
-                to: 'telegraf/tf-support',
-              },
-              {
                 label: 'Log 모니터링',
                 to: 'log/log-intro',
               },
@@ -183,8 +191,12 @@ const config = {
                 to: 'url/url-intro',
               },
               {
-                label: 'RUM - 브라우저 모니터링',
-                to: 'rum/rum-intro',
+                label: 'AWS Log 모니터링',
+                to: 'aws-log/install-aws-log',
+              },
+              {
+                label: '인티그레이션',
+                to: 'integration/integ-intro',
               },
             ],
           },
