@@ -35,7 +35,8 @@ const sidebars = {
         'project/group',
         'project/organization',
         'project/integrated-manage',
-        'billing/billing'
+        'billing/billing',
+        'maintenance/maintenance'
       ]
     }
   ],
@@ -44,44 +45,6 @@ const sidebars = {
       type: 'link',
       label: '애플리케이션 모니터링',
       href: 'apm/application-intro' 
-    },
-    {
-      type: 'category',
-      label: '애플리케이션별 에이전트 설치',
-      collapsible: true,
-      collapsed: true,
-      items: [
-        {
-          type: 'link',
-          label: 'Java 에이전트',
-          href: 'apm/java'
-        },
-        {
-          type: 'link',
-          label: 'PHP 에이전트',
-          href: 'apm/php'
-        },
-        {
-          type: 'link',
-          label: 'Node.js 에이전트',
-          href: 'apm/nodejs-install-agent',
-        },
-        {
-          type: 'link',
-          label: 'Python 에이전트',
-          href: 'python-install-agent',
-        },
-        {
-          type: 'link',
-          label: '.NET 에이전트',
-          href: 'dotnet-install-agent',
-        },
-        {
-          type: 'link',
-          label: 'Golang 에이전트',
-          href: 'golang-install-agent',
-        }
-      ]
     },
     {
       type: 'link',
@@ -124,9 +87,26 @@ const sidebars = {
       href: 'rum/rum-intro'
     },
     {
-      type: 'link',
+      type: 'category',
       label: '플러그인',
-      href: 'plugin'
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'plugin'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: 'Telegraf',
+          id: 'telegraf/tf-support',
+        },
+        {
+          type: 'doc',
+          label: 'Focus',
+          id: 'focus/focus-intro',
+        },
+      ]
     },
     {
       type: 'link',

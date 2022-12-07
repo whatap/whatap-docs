@@ -144,6 +144,12 @@ const config = {
             position: 'left',
             label: '참조 문서',
           },
+          {
+            type: 'doc',
+            docId: 'release-note/release-note',
+            position: 'left',
+            label: '릴리스 노트',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -187,7 +193,7 @@ const config = {
                 to: 'integration/integ-intro',
               },
               {
-                label: 'RUM - 브라우저 모니터링',
+                label: 'RUM:브라우저 모니터링',
                 to: 'rum/rum-intro',
               },
             ],
@@ -232,7 +238,7 @@ const config = {
         // 
       },
       zoom: {
-        selector: '.markdown :not(em) > img',
+        selector: '.markdown :not(em, div) > img',
         background: {
           light: 'rgb(255, 255, 255)',
           dark: 'rgb(50, 50, 50)'
