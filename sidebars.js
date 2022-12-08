@@ -273,25 +273,39 @@ const sidebars = {
           label: 'Telegraf',
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'telegraf/telegraf-intro'
+          },
           items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'telegraf/tf-support'
-            },
+            // {
+            //   type: 'doc',
+            //   label: '플러그인 설치와 활용',
+            //   id: 'telegraf/install-tf-plugin',
+            // },
             {
               type: 'category',
-              label: '설치하기',
+              label: '플러그인 설치와 활용',
               collapsible: true,
               collapsed: true,
               items: [
                 'telegraf/install-tf-plugin',
-                'telegraf/install-tf-agent',
-                'telegraf/tf-troubleshooting',
+                'telegraf/tf-plg-settings',
               ]
             },
-            'telegraf/tf-settings',
-            'telegraf/tf-manage',
+            {
+              type: 'category',
+              label: '에이전트 설치와 활용',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'telegraf/tf-support',
+                'telegraf/install-tf-agent',
+                'telegraf/tf-troubleshooting',
+                'telegraf/tf-settings',
+                'telegraf/tf-manage',
+              ]
+            },
             'telegraf/tf-plugin-ex',
           ]
         },
@@ -365,7 +379,6 @@ const sidebars = {
                 'dashboard/integ-dashboard',
               ]
             },
-            'dashboard/integ-flexboard',
             {
               type: 'category',
               label: 'Flex 보드',
