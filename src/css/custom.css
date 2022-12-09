@@ -17,6 +17,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --ifm-code-padding-vertical: 0.01rem;
   /* --ifm-code-padding-horizontal: 0.01rem; */
+  --shortcut-list-colir: #333;
+  --shortcut-background-color: #fff;
   word-break: keep-all;
 }
 
@@ -30,6 +32,8 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
+  --shortcut-list-colir: #eee;
+  --shortcut-background-color: #ddd;
 }
 
 html[lang='ko'] {
@@ -61,7 +65,7 @@ main .markdown table code {
 main .markdown pre code {
   font-size: 88%;
 }
-a, a:hover, .menu__link--active, .navbar__link--active, main .markdown strong em {
+a, a:hover, .menu__link--active, .navbar__link--active, main .markdown strong em, main .markdown span.uitext {
   color: #296cf2;
 }
 main .markdown strong {
@@ -148,7 +152,7 @@ main .markdown img[src*='whatap_kubernetes_application_agent_access_key'] {
   width: 800px;
 }
 
-main .markdown strong em {
+main .markdown strong em, main .markdown span.uitext {
   font-style: normal;
 }
 main .markdown em {
@@ -166,6 +170,10 @@ main .markdown ::marker {
 }
 main .markdown ul ol li::marker {
   content: counter(list-item) '. ';
+}
+
+main .markdown table ul {
+  margin-bottom: 0px;
 }
 
 main .markdown span.type {
@@ -213,6 +221,7 @@ main .markdown span.logft {color: rgb(182, 0, 0)}
 main .markdown span.loger {color: rgb(242, 48, 0)}
 main .markdown span.logwr {color: rgb(242, 182, 0)}
 main .markdown span.mstop {color: rgb(192, 192, 192)}
+main .markdown span.k8s-normal {color: rgb(153, 153, 153)}
 
 main .markdown div.metric table tr td:first-of-type {
   width: 30%;
@@ -246,6 +255,84 @@ main .markdown div.br-data tr td:nth-of-type(3) {
   width: 32%;
 }
 
+main .markdown div.apm-agent {
+  /* background-color: #aaa; */
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid #aaa;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: var(--shortcut-background-color);
+}
+
+main .markdown div.apm-agent p {
+  color: #aaa;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 0 0 0px 0;
+}
+
+main .markdown div.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  /* flex-basis: auto; */
+}
+main .markdown div.flex-container a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+main .markdown div.flex-container a div.apm-agent img {
+  width: 50%;
+  max-width: 167px;
+  border: none;
+  margin-top: 10px;
+}
+
+main .markdown div.shortcut ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.markdown div.shortcut li + li {
+  margin-top: 0;
+}
+
+main .markdown div.shortcut ul li {
+  display: block;
+  border: 1px solid #ddd;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.2em;
+  font-weight: 400;
+  width: 20%;
+  margin: 0 10px 10px 0;
+}
+
+main .markdown div.shortcut ul li a {
+  text-decoration: none;
+  color: var(--shortcut-list-colir);
+}
+
+/* main .markdown .welcome {
+  background: url(img/home_banner_pc.svg);
+  width: 100%;
+  height: 242px;
+  text-align: center;
+} */
+
+main .markdown div.shortcut ul li a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: url(img/right-arrow.svg) no-repeat top 4px right 0px;
+  width: 30px;
+  height: 30px;
+}
+
 .table-of-contents__link strong em {
   font-style: normal;
   font-weight: normal;
@@ -268,4 +355,36 @@ main .markdown div.br-data tr td:nth-of-type(3) {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+main .markdown code.Feature {
+  background-color: rgba(0,153,110,.08);
+  color: #33691e;
+  border: none;
+  padding: 0 5px 0 5px;
+}
+main .markdown code.Change {
+  background-color: rgba(230,130,0,.08);
+  color: #a53221;
+  border: none;
+  padding: 0 5px 0 5px;
+}
+main .markdown code.Fixed {
+  background-color: rgba(24,73,220,.08);
+  color: #039be5;
+  border: none;
+  padding: 0 5px 0 5px;
+}
+
+main .markdown code.New {
+  background-color: rgb(9, 34, 109, 1);
+  color: #fff;
+  border: none;
+  padding: 0 5px 0 5px;
+}
+main .markdown code.Deprecate {
+  background-color: rgba(220,24,24,.08);
+  color: #dc1919;
+  border: none;
+  padding: 0 5px 0 5px;
 }

@@ -28,6 +28,9 @@ const config = {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
+  clientModules: [
+    require.resolve('./static/js/channel_ko.js')
+  ],
   plugins: [
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -144,6 +147,12 @@ const config = {
             position: 'left',
             label: '참조 문서',
           },
+          {
+            type: 'doc',
+            docId: 'release-note/release-note',
+            position: 'left',
+            label: '릴리스 노트',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -187,7 +196,7 @@ const config = {
                 to: 'integration/integ-intro',
               },
               {
-                label: 'RUM - 브라우저 모니터링',
+                label: 'RUM:브라우저 모니터링',
                 to: 'rum/rum-intro',
               },
             ],
@@ -223,7 +232,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved.`,
       },
       prism: {
         theme: darkCodeTheme,
@@ -232,14 +241,14 @@ const config = {
         // 
       },
       zoom: {
-        selector: '.markdown :not(em) > img',
+        selector: '.markdown :not(em, div) > img',
         background: {
           light: 'rgb(255, 255, 255)',
           dark: 'rgb(50, 50, 50)'
         },
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         config: {}
-      }
+      },
     }),
 };
 
