@@ -29,7 +29,7 @@ const config = {
     locales: ['ko'],
   },
   clientModules: [
-    require.resolve('./static/js/channel_ko.js')
+    // require.resolve('./static/js/channel_ko.js')
   ],
   plugins: [
     [ 
