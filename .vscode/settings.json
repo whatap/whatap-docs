@@ -12,6 +12,10 @@
         {
             "filePath": "src/css/custom.css",
             "group": "Default"
+        },
+        {
+            "filePath": "src/components/Highlight.js",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"

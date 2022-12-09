@@ -28,6 +28,9 @@ const config = {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
+  clientModules: [
+    require.resolve('./static/js/channel_ko.js')
+  ],
   plugins: [
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -229,7 +232,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved.`,
       },
       prism: {
         theme: darkCodeTheme,
@@ -245,7 +248,7 @@ const config = {
         },
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         config: {}
-      }
+      },
     }),
 };
 
