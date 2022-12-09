@@ -410,6 +410,7 @@ const sidebars = {
               items: [
                 'notification/integ-warning-and-history',
                 'notification/integ-set-receive-event',
+                'notification/integ-metric-warning-notice',
               ]
             },
           ],
@@ -1723,7 +1724,7 @@ const sidebars = {
             'log/log-exp',
             'log/log-search', 
             'log/log-setting',          
-            'log/log-alert'
+            'notification/log-alert'
           ],
         },
       ]  
