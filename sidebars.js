@@ -25,7 +25,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-note/release-note'
+        id: 'release-notes/release-notes'
       },
       items: [
         {
@@ -34,15 +34,39 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'release-note/service/service-1.92.0',
-            'release-note/service/service-1.90.0',
-            'release-note/service/service-1.88.0',
-            'release-note/service/service-1.86.0',
-            'release-note/service/service-1.84.0',
-            'release-note/service/service-1.82.0',
-            'release-note/service/service-1.80.0',
-            'release-note/service/service-1.78.0',
+            'release-notes/service/service-1.92.0',
+            'release-notes/service/service-1.90.0',
+            'release-notes/service/service-1.88.0',
+            'release-notes/service/service-1.86.0',
+            'release-notes/service/service-1.84.0',
+            'release-notes/service/service-1.82.0',
+            'release-notes/service/service-1.80.0',
+            'release-notes/service/service-1.78.0',
+            'release-notes/service/service-1.76.0',
+            'release-notes/service/service-1.74.0',
           ]
+        },
+        {
+          type: 'category',
+          label: 'Java',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'release-notes/java/java-2.2.0',
+            'release-notes/java/java-2.1.3',
+            'release-notes/java/java-2.1.2',
+            'release-notes/java/java-2.1.1',
+            'release-notes/java/java-2.1.0',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PHP',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'release-notes/php/php-2.5.4'
+          ],
         }
       ]
     }
@@ -151,7 +175,7 @@ const sidebars = {
     {
       type: 'link',
       label: '릴리스 노트',
-      href: 'release-note',
+      href: 'release-notes',
     }
   ],
   referSidebar: [

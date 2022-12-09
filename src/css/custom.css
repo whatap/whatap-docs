@@ -327,8 +327,8 @@ main .markdown div.shortcut ul li a {
 main .markdown div.shortcut ul li a::after {
   content: "";
   display: inline-block;
-  position: absolute;
-  background: url(img/right-arrow.svg) no-repeat top 4px right 0px;
+  position: relative;
+  background: url(img/right-arrow.svg) no-repeat top 11px right 0px;
   width: 30px;
   height: 30px;
 }

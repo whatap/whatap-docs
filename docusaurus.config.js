@@ -149,7 +149,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'release-note/release-note',
+            docId: 'release-notes/release-notes',
             position: 'left',
             label: '릴리스 노트',
           },
