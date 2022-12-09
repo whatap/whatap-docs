@@ -129,7 +129,7 @@ const sidebars = {
         {
           type: 'doc',
           label: 'Telegraf',
-          id: 'telegraf/tf-support',
+          id: 'telegraf/telegraf-intro',
         },
         {
           type: 'doc',
