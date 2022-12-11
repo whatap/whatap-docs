@@ -32,6 +32,22 @@ const config = {
     // require.resolve('./static/js/channel_ko.js')
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-4QXE2TJTM0',
+        anonymizeIP: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+      },
+    ],
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
