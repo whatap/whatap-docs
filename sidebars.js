@@ -257,6 +257,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: '클라우드',
+          href: 'ref-cloud/cloud' 
+        },
+        {
+          type: 'link',
           label: 'AWS Log',
           href: 'aws-log/install-aws-log'
         },
@@ -310,6 +315,21 @@ const sidebars = {
       href: 'release-notes',
     }
   ],
+  cloudSidebar: [
+    {
+      type: 'category',
+      label: '클라우드 모니터링',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'ref-cloud/cloud',
+      },
+      items: [
+
+      ],
+    }
+  ],
   referSidebar: [
     {
       type: 'category',
@@ -322,7 +342,6 @@ const sidebars = {
       },
       items: [
         'metrics/common-metrics-intro',
-        'ref-cloud/cloud',
         {
           type: 'category',
           label: 'MXQL',
