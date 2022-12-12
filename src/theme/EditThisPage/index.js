@@ -5,6 +5,7 @@ export default function EditThisPageWrapper(props) {
   return (
     <>
       {/* <EditThisPage {...props} /> */}
+      {/* <div class='.feedbak'>피드백 보내기</div> */}
     </>
   );
 }

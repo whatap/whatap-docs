@@ -373,7 +373,8 @@ const sidebars = {
             },
             'apidoc/openapi-mxql'
 ,          ]
-        }
+        },
+        'glossary/glossary',
       ]
     }
   ],
