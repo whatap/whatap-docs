@@ -33,6 +33,13 @@ const config = {
   ],
   plugins: [
     [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-4QXE2TJTM0',
+        anonymizeIP: true,
+      },
+    ],
+    [
       '@docusaurus/plugin-google-analytics',
       {
         trackingID: 'G-4QXE2TJTM0',
