@@ -95,25 +95,6 @@ const config = {
         },
       }),
     ],
-    // [
-    //   'redocusaurus',
-    //   {
-    //     specs: [
-    //       {
-    //         id: 'whatap-json',
-    //         spec: 'openapi/whatap.json',
-    //         route: '/examples/whatap-json/',
-    //       },
-    //     ],
-    //     theme: {
-    //       primaryColor: '#1890ff',
-    //       options: {
-    //         disableSearch: true
-    //       },
-    //       theme: {},
-    //     }
-    //   }
-    // ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -140,7 +121,7 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'Docs',
+            label: '모니터링 서비스',
           },
           {
             type: 'doc',
@@ -172,30 +153,30 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '모니터링 서비스',
             items: [
               {
-                label: 'APM 모니터링',
+                label: '애플리케이션',
                 to: 'apm/application-intro',
               },
               {
-                label: 'Server 모니터링',
+                label: '서버',
                 to: 'server/server-intro',
               },
               {
-                label: 'DB 모니터링',
+                label: '데이터베이스',
                 to: 'db/db-monitoring-intro',
               },
               {
-                label: 'Log 모니터링',
+                label: '로그',
                 to: 'log/log-intro',
               },
               {
-                label: 'URL 모니터링',
+                label: 'URL',
                 to: 'url/url-intro',
               },
               {
-                label: 'AWS Log 모니터링',
+                label: 'AWS Log',
                 to: 'aws-log/install-aws-log',
               },
               {
@@ -203,7 +184,7 @@ const config = {
                 to: 'integration/integ-intro',
               },
               {
-                label: 'RUM:브라우저 모니터링',
+                label: '브라우저(RUM)',
                 to: 'rum/rum-intro',
               },
             ],
@@ -239,7 +220,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
         theme: darkCodeTheme,

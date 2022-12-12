@@ -220,58 +220,66 @@ const sidebars = {
   ],
   indexSidebar: [
     {
-      type: 'link',
-      label: '애플리케이션 모니터링',
-      href: 'apm/application-intro' 
-    },
-    {
-      type: 'link',
-      label: '서버 모니터링',
-      href: 'server/server-intro' 
-    },
-    {
-      type: 'link',
-      label: '데이터베이스 모니터링',
-      href: 'db/db-monitoring-intro' 
-    },
-    {
-      type: 'link',
-      label: '쿠버네티스 모니터링',
-      href: 'kubernetes/kubernetes-intro',
-    },
-    {
-      type: 'link',
-      label: '로그 모니터링',
-      href: 'log/log-intro' 
-    },
-    {
-      type: 'link',
-      label: 'URL 모니터링',
-      href: 'url/url-intro' 
-    },
-    {
-      type: 'link',
-      label: 'AWS Log 모니터링',
-      href: 'aws-log/install-aws-log'
-    },
-    {
-      type: 'link',
-      label: '인티그레이션',
-      href: 'integration/integ-intro'
-    },
-    {
-      type: 'link',
-      label: 'RUM:브라우저 모니터링',
-      href: 'rum/rum-intro'
+      type: 'category',
+      label: '모니터링 서비스',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: '애플리케이션',
+          href: 'apm/application-intro' 
+        },
+        {
+          type: 'link',
+          label: '서버',
+          href: 'server/server-intro' 
+        },
+        {
+          type: 'link',
+          label: '데이터베이스',
+          href: 'db/db-monitoring-intro' 
+        },
+        {
+          type: 'link',
+          label: '쿠버네티스',
+          href: 'kubernetes/kubernetes-intro',
+        },
+        {
+          type: 'link',
+          label: '로그',
+          href: 'log/log-intro' 
+        },
+        {
+          type: 'link',
+          label: 'URL',
+          href: 'url/url-intro' 
+        },
+        {
+          type: 'link',
+          label: 'AWS Log',
+          href: 'aws-log/install-aws-log'
+        },
+        {
+          type: 'link',
+          label: '인티그레이션',
+          href: 'integration/integ-intro'
+        },
+        {
+          type: 'link',
+          label: '브라우저(RUM)',
+          href: 'rum/rum-intro'
+        },
+      ],
     },
     {
       type: 'category',
-      label: '플러그인',
-      collapsible: true,
+      label: '확장 도구(Extension)',
+      collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'plugin'
+        id: 'extensions'
       },
       items: [
         {
@@ -429,7 +437,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'plugin'
+        id: 'extensions'
       },
       items: [
         {
