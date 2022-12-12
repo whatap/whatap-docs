@@ -393,6 +393,9 @@ main .markdown code.Deprecate {
   display: flex;
   width: max-content;
 }
+.feedback h3 {
+  display: block;
+}
 .feedback form {
   width: 100%;
 }
@@ -424,4 +427,13 @@ main .markdown code.Deprecate {
   padding: 10px;
   border-radius: 5%;
   margin-bottom: 15px;
+}
+
+@media all and (max-width: 560px) {
+  .feedback input {
+    width: 30%;
+  }
+  .feedback textarea {
+    width: 80%;
+  }
 }

@@ -21,9 +21,11 @@ export default function EditThisPageWrapper(props) {
 
     emailjs.sendForm('service_mtelzo7', 'template_063e8sg', form.current, 'user_DU4Yp7qvwGGHhLkYsHXSQ')
       .then((result) => {
-        alert("OK");  
+        alert("피드백을 전송했습니다.");
+        setIsShown(false);
         console.log(result.text);
       }, (error) => {
+          alert("피드백을 전송을 실패했습니다.");
           console.log(error.text);
       });
   };
@@ -32,11 +34,11 @@ export default function EditThisPageWrapper(props) {
   return (
     <>
       {/* <EditThisPage {...props} /> */}
-      <h3>피드백 보내기</h3>
       <button class='fd-btn' onClick={handleClick}>피드백 보내기</button>
       {isShown && (
         <div class='feedback'>
           <form ref={form} onSubmit={sendEmail}>
+            <h3>피드백 보내기</h3>
             <label>이름</label>
             <input type="text" name="user_name" />
             <label>Email</label>
@@ -45,7 +47,7 @@ export default function EditThisPageWrapper(props) {
             <textarea name="message" class='message'>
               {location + "\n\n메시지를 남겨주세요."}
             </textarea>
-            <input type="submit" value="Send" />
+            <input type="submit" value="보내기" />
           </form>
         </div>
       )}
