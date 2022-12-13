@@ -429,6 +429,11 @@ main .markdown code.Deprecate {
   margin-bottom: 15px;
 }
 
+.fd-btn .feedback-ico {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 @media all and (max-width: 560px) {
   .feedback input {
     width: 30%;

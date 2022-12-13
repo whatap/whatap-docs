@@ -34,7 +34,10 @@ export default function EditThisPageWrapper(props) {
   return (
     <>
       {/* <EditThisPage {...props} /> */}
-      <button class='fd-btn' onClick={handleClick}>피드백 보내기</button>
+      <button class='fd-btn' onClick={handleClick}>
+        <img src="/img/feedback-ico.svg" alt="feedback" class='feedback-ico'/>
+        피드백 보내기
+      </button>
       {isShown && (
         <div class='feedback'>
           <form ref={form} onSubmit={sendEmail}>
