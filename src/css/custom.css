@@ -434,6 +434,10 @@ main .markdown code.Deprecate {
   vertical-align: middle;
 }
 
+.pagination-nav__link--next .pagination-nav__label:after {
+  content: " »";
+}
+
 @media all and (max-width: 560px) {
   .feedback input {
     width: 30%;
