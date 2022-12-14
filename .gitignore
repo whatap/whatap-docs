@@ -1,6 +1,7 @@
 /docs
 /build
 /backup
+/pdf
 
 # Generated files
 .docusaurus
