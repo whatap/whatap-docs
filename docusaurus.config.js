@@ -182,18 +182,18 @@ const config = {
                 label: 'URL',
                 to: 'url/url-intro',
               },
-              {
-                label: 'AWS Log',
-                to: 'aws-log/install-aws-log',
-              },
+              // {
+              //   label: 'AWS Log',
+              //   to: 'aws-log/install-aws-log',
+              // },
               {
                 label: '인티그레이션',
                 to: 'integration/integ-intro',
               },
-              {
-                label: '브라우저(RUM)',
-                to: 'rum/rum-intro',
-              },
+              // {
+              //   label: '브라우저(RUM)',
+              //   to: 'rum/rum-intro',
+              // },
             ],
           },
           {

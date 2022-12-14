@@ -16,6 +16,10 @@
         {
             "filePath": "src/components/Highlight.js",
             "group": "Default"
+        },
+        {
+            "filePath": "node_modules/docusaurus-prince-pdf/print.css",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"

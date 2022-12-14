@@ -106,6 +106,7 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
+            'release-notes/golang/golang-0.1.14',
             'release-notes/golang/golang-0.1.13',
             'release-notes/golang/golang-0.1.12',
             'release-notes/golang/golang-0.1.11',
@@ -116,6 +117,11 @@ const sidebars = {
             'release-notes/golang/golang-0.1.6',
             'release-notes/golang/golang-0.1.5',
           ],
+        },
+        {
+          type: 'doc',
+          label: 'Amazon ECS',
+          id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
         },
         {
           type: 'category',
@@ -260,21 +266,21 @@ const sidebars = {
           label: '클라우드',
           href: 'ref-cloud/cloud' 
         },
-        {
-          type: 'link',
-          label: 'AWS Log',
-          href: 'aws-log/install-aws-log'
-        },
+        // {
+        //   type: 'link',
+        //   label: 'AWS Log',
+        //   href: 'aws-log/install-aws-log'
+        // },
         {
           type: 'link',
           label: '인티그레이션',
           href: 'integration/integ-intro'
         },
-        {
-          type: 'link',
-          label: '브라우저(RUM)',
-          href: 'rum/rum-intro'
-        },
+        // {
+        //   type: 'link',
+        //   label: '브라우저(RUM)',
+        //   href: 'rum/rum-intro'
+        // },
       ],
     },
     {
