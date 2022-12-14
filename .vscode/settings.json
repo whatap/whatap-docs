@@ -20,6 +20,10 @@
         {
             "filePath": "node_modules/docusaurus-prince-pdf/print.css",
             "group": "Default"
+        },
+        {
+            "filePath": "docs/index.mdx",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"
