@@ -106,7 +106,7 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            // 'release-notes/golang/golang-0.1.14',
+            'release-notes/golang/golang-0.1.14',
             'release-notes/golang/golang-0.1.13',
             'release-notes/golang/golang-0.1.12',
             'release-notes/golang/golang-0.1.11',
@@ -118,11 +118,11 @@ const sidebars = {
             'release-notes/golang/golang-0.1.5',
           ],
         },
-        // {
-        //   type: 'doc',
-        //   label: 'Amazon ECS',
-        //   id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
-        // },
+        {
+          type: 'doc',
+          label: 'Amazon ECS',
+          id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
+        },
         {
           type: 'category',
           label: 'Server',
