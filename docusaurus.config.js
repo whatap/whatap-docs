@@ -148,12 +148,6 @@ const config = {
             position: 'left',
             label: '릴리스 노트',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
         ],
       },
       footer: {
@@ -220,10 +214,6 @@ const config = {
                 label: '와탭 스토리',
                 href: 'https://www.whatap.io/ko/blog/menu/index.html',
               },
-              // {
-              //   label: 'GitLab',
-              //   href: 'https://github.com/facebook/docusaurus',
-              // },
             ],
           },
         ],

@@ -411,33 +411,6 @@ const sidebars = {
       ]
     }
   ],
-  // whatapSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: '시작하기',
-  //     collapsible: false,
-  //     collapsed: false,
-  //     items: [ 
-  //       'getting-started/support-env',
-  //       'getting-started/create-account',
-  //       {
-  //         type: 'category',
-  //         label: '에이전트 적용하기',
-  //         collapsible: true,
-  //         collapsed: true,
-  //         items: [
-  //           'apm/application-intro',
-  //           'getting-started/server-agent',
-  //           'getting-started/database-agent',
-  //           'getting-started/k8-agent',
-  //           'getting-started/telegraf-agent',
-  //           'getting-started/focus-agent',
-  //           'getting-started/integration-agent',
-  //         ]
-  //       },
-  //     ],
-  //   },
-  // ],
   awslogSidebar: [
     {
       type: 'category',
@@ -475,11 +448,6 @@ const sidebars = {
             id: 'telegraf/telegraf-intro'
           },
           items: [
-            // {
-            //   type: 'doc',
-            //   label: '플러그인 설치와 활용',
-            //   id: 'telegraf/install-tf-plugin',
-            // },
             {
               type: 'category',
               label: '플러그인 설치와 활용',
@@ -770,21 +738,6 @@ const sidebars = {
           ],
         },
         'server/server-adf',
-        // {
-        //   type: 'category',
-        //   label: '고급 기능',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   link: {
-        //     type: 'doc',
-        //     id: 'server/server-adf'
-        //   },
-        //   items: [
-        //     'server/server-adf-exp',
-        //     'server/server-adf-tct',
-        //     'server/server-adf-pn-pc',
-        //   ],
-        // },
         {
           type: 'category',
           label: '관리하기',
@@ -816,7 +769,6 @@ const sidebars = {
               },
               items: [
                 'dashboard/server-resourceboard',
-                //'dashboard/server-equalizer',
                 'dashboard/server-compoundeye',
               ]
             },
@@ -856,10 +808,6 @@ const sidebars = {
               label: '분석하기',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/server-analysis-report-intro'
-              // },
               items: [
                 'analysis/server-list',
                 'analysis/server-detail',
@@ -1924,11 +1872,6 @@ const sidebars = {
         id: 'log/log-intro',
       },
       items: [
-        // {
-        //   type: 'doc',
-        //   label: '작동 원리',
-        //   id: 'log/log-basics',
-        // },
         {
           type: 'category',
           label: '적용하기',
@@ -1942,15 +1885,9 @@ const sidebars = {
             'log/log-java',
             'log/log-php',
             'log/log-python',
-            // 'log/log-go',
             'log/log-server'
           ],
         },
-        // {
-        //   type: 'doc',
-        //   label: '설정하기',
-        //   id: 'log/log-setting',
-        // },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1961,21 +1898,6 @@ const sidebars = {
             id: 'log/log-learn-main-menu',
           },
           items: [
-            // {
-            //   type: 'category',
-            //   label: '분석하기',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'log/log-ui'
-            //   },
-            //   items: [
-            //     'log/log-lt',
-            //     'log/log-exp',
-            //     'log/log-search',
-            //   ]
-            // },
             'log/log-lt',
             'log/log-exp',
             'log/log-search', 
