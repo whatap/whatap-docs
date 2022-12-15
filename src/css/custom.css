@@ -39,6 +39,16 @@
 html[lang='ko'] {
   word-wrap: keep-all;
 }
+
+.navbar__item a.my-index {
+  position: relative;
+  display: inline-block;
+  top: 3px;
+}
+.navbar__item a.my-index svg {
+  width: 22px;
+  height: 22px
+}
 .navbar__logo img {
   width: 127px;
   height: 25px;
