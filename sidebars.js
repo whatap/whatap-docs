@@ -597,6 +597,7 @@ const sidebars = {
       items: [
         'url/url-install',
         'url/url-event',
+        'url/url-error-type',
         // {
         //   type: 'category',
         //   label: '주요 메뉴 알아보기',
