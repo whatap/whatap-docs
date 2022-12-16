@@ -278,9 +278,9 @@ main .markdown div.apm-agent {
 main .markdown div.apm-agent p {
   color: #aaa;
   font-weight: bold;
-  font-size: 1.0em;
+  font-size: .9em;
   margin: 0 0 10px 0;
-  padding: 0 0 0px 0;
+  padding: 0 0px 0px 0px;
 }
 
 main .markdown div.flex-container {
@@ -447,6 +447,10 @@ main .markdown code.Deprecate {
 .pagination-nav__link--next .pagination-nav__label:after {
   content: " »";
 }
+
+/* .navbar__link--active {
+  
+} */
 
 @media all and (max-width: 560px) {
   .feedback input {
