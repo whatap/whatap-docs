@@ -760,20 +760,22 @@ const sidebars = {
             id: 'server/learn-server-main-menu',
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/server-dashboard-intro'
-              },
-              items: [
-                'dashboard/server-resourceboard',
-                'dashboard/server-compoundeye',
-              ]
-            },
+            // {
+            //   type: 'category',
+            //   label: '대시보드',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'dashboard/server-dashboard-intro'
+            //   },
+            //   items: [
+            //     'dashboard/server-resourceboard',
+            //     'dashboard/server-compoundeye',
+            //   ]
+            // },
+            'dashboard/server-resourceboard',
+            'dashboard/server-compoundeye',
             {
               type: 'category',
               label: 'Flex 보드',
