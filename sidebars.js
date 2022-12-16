@@ -533,19 +533,20 @@ const sidebars = {
             id: 'integration/learn-integ-main-menu'
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/integ-dashboard-intro',
-              },
-              items: [
-                'dashboard/integ-dashboard',
-              ]
-            },
+            // {
+            //   type: 'category',
+            //   label: '대시보드',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'dashboard/integ-dashboard-intro',
+            //   },
+            //   items: [
+            //     'dashboard/integ-dashboard',
+            //   ]
+            // },
+            'dashboard/integ-dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
