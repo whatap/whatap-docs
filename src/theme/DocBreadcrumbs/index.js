@@ -70,12 +70,14 @@ function HomeBreadcrumbItem() {
 export default function DocBreadcrumbs() {
   const breadcrumbs = useSidebarBreadcrumbs();
   const homePageRoute = useHomePageRoute();
-  // if (!breadcrumbs) {
-  //   return null;
-  // }
-  if (breadcrumbs.length < 2) {
+  if (!breadcrumbs) {
+    return null;
+  } else if (breadcrumbs.length == 0) {
     return null;
   }
+  // if (breadcrumbs.length < 2) {
+  //   return null;
+  // }
   return (
     <nav
       className={clsx(

@@ -238,6 +238,7 @@ const sidebars = {
     }
   ],
   indexSidebar: [
+    // 'whatap-overview',
     {
       type: 'category',
       label: '모니터링 서비스',
