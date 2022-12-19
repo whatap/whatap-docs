@@ -30,7 +30,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Service',
+          label: 'Service 🚀',
           collapsible: true,
           collapsed: true,
           items: [
@@ -285,10 +285,35 @@ const sidebars = {
         //   label: 'AWS Log',
         //   href: 'aws-log/install-aws-log'
         // },
+        // {
+        //   type: 'link',
+        //   label: '인티그레이션',
+        //   href: 'integration/integ-intro'
+        // },
         {
           type: 'link',
-          label: '인티그레이션',
-          href: 'integration/integ-intro'
+          label: 'Amazon ECS',
+          href: 'amazon-ecs/amazon-ecs-intro' 
+        },
+        {
+          type: 'link',
+          label: 'Amazon Cloudwatch',
+          href: 'amazon-cloudwatch/amazon-cloudwatch-install'
+        },
+        {
+          type: 'link',
+          label: 'Azure Monitor',
+          href: 'azure/azure-monitor-install' 
+        },
+        {
+          type: 'link',
+          label: 'NCloud Monitoring',
+          href: 'ncloud/ncloud-monitoring-install' 
+        },
+        {
+          type: 'link',
+          label: 'Oracle Cloud Monitor',
+          href: 'oracle-cloud/oracle-cloud-monitor-install' 
         },
         // {
         //   type: 'link',
@@ -492,6 +517,316 @@ const sidebars = {
             'focus/focus-usage',
           ]
         },
+      ]
+    }
+  ],
+  awsecsSidebar: [
+    {
+      type: 'category',
+      label: 'Amazone ECS',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'amazon-ecs/amazon-ecs-intro'
+      },
+      items: [
+        'amazon-ecs/amazon-ecs-install',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'amazon-ecs/learn-ecs-main-menu'
+          },
+          items: [
+            'dashboard/ecs-dashboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/ecs-flexboard',
+              },
+              items: [
+                'dashboard/ecs-flexboard-template',
+                'dashboard/ecs-flexboard-create',
+                'dashboard/ecs-flexboard-metric-widget',
+                'dashboard/ecs-flexboard-widget-manage',
+                'dashboard/ecs-flexboard-mode',
+                'dashboard/ecs-flexboard-share',
+              ]
+            },
+            'metrics/ecs-metrics-intro',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/ecs-set-notice',
+              },
+              items: [
+                'notification/ecs-warning-and-history',
+                'notification/ecs-set-receive-event',
+                'notification/ecs-metric-warning-notice',
+              ]
+            },
+          ],
+        }
+      ]
+    }
+  ],
+  amazoncloudwatchSidebar: [
+    {
+      type: 'category',
+      label: 'Amazon Cloudwatch',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
+      // },
+      items: [
+        'amazon-cloudwatch/amazon-cloudwatch-install',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'amazon-cloudwatch/learn-acw-main-menu'
+          },
+          items: [
+            'dashboard/acw-dashboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/acw-flexboard',
+              },
+              items: [
+                'dashboard/acw-flexboard-template',
+                'dashboard/acw-flexboard-create',
+                'dashboard/acw-flexboard-metric-widget',
+                'dashboard/acw-flexboard-widget-manage',
+                'dashboard/acw-flexboard-mode',
+                'dashboard/acw-flexboard-share',
+              ]
+            },
+            'metrics/aws-cloud-metrics-intro',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/acw-set-notice',
+              },
+              items: [
+                'notification/acw-warning-and-history',
+                'notification/acw-set-receive-event',
+                'notification/acw-metric-warning-notice',
+              ]
+            },
+          ],
+        }
+      ]
+    }
+  ],
+  azuremonitorSidebar: [
+    {
+      type: 'category',
+      label: 'Azure Monitor',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'azure/azure-monitor-intro'
+      // },
+      items: [
+        'azure/azure-monitor-install',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'azure/learn-azure-main-menu'
+          },
+          items: [
+            // 'dashboard/azure-dashboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/azure-flexboard',
+              },
+              items: [
+                'dashboard/azure-flexboard-template',
+                'dashboard/azure-flexboard-create',
+                'dashboard/azure-flexboard-metric-widget',
+                'dashboard/azure-flexboard-widget-manage',
+                'dashboard/azure-flexboard-mode',
+                'dashboard/azure-flexboard-share',
+              ]
+            },
+            'metrics/azure-metrics-intro',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/azure-set-notice',
+              },
+              items: [
+                'notification/azure-warning-and-history',
+                'notification/azure-set-receive-event',
+                'notification/azure-metric-warning-notice',
+              ]
+            },
+          ],
+        }
+      ]
+    }
+  ],
+  ncloudSidebar: [
+    {
+      type: 'category',
+      label: 'NCloud Monitoring',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
+      // },
+      items: [
+        'ncloud/ncloud-monitoring-install',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'ncloud/learn-ncloud-main-menu'
+          },
+          items: [
+            // 'dashboard/ncloud-dashboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/ncloud-flexboard',
+              },
+              items: [
+                'dashboard/ncloud-flexboard-template',
+                'dashboard/ncloud-flexboard-create',
+                'dashboard/ncloud-flexboard-metric-widget',
+                'dashboard/ncloud-flexboard-widget-manage',
+                'dashboard/ncloud-flexboard-mode',
+                'dashboard/ncloud-flexboard-share',
+              ]
+            },
+            'metrics/ncloud-metrics-intro',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/ncloud-set-notice',
+              },
+              items: [
+                'notification/ncloud-warning-and-history',
+                'notification/ncloud-set-receive-event',
+                'notification/ncloud-metric-warning-notice',
+              ]
+            },
+          ],
+        }
+      ]
+    }
+  ],
+  oracleSidebar: [
+    {
+      type: 'category',
+      label: 'Oracle Cloud Monitor',
+      collapsible: false,
+      collapsed: false,
+      // link: {
+      //   type: 'doc',
+      //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
+      // },
+      items: [
+        'oracle-cloud/oracle-cloud-monitor-install',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'oracle-cloud/learn-oracle-main-menu'
+          },
+          items: [
+            // 'dashboard/oracle-dashboard',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/oracle-flexboard',
+              },
+              items: [
+                'dashboard/oracle-flexboard-template',
+                'dashboard/oracle-flexboard-create',
+                'dashboard/oracle-flexboard-metric-widget',
+                'dashboard/oracle-flexboard-widget-manage',
+                'dashboard/oracle-flexboard-mode',
+                'dashboard/oracle-flexboard-share',
+              ]
+            },
+            'metrics/oracle-metrics-intro',
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/oracle-set-notice',
+              },
+              items: [
+                'notification/oracle-warning-and-history',
+                'notification/oracle-set-receive-event',
+                'notification/oracle-metric-warning-notice',
+              ]
+            },
+          ],
+        }
       ]
     }
   ],
