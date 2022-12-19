@@ -419,10 +419,10 @@ const sidebars = {
       label: 'AWS Log 모니터링',
       collapsible: false,
       collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'aws-log/aws-log-intro'
-      // },
+      link: {
+        type: 'doc',
+        id: 'aws-log/aws-log-intro'
+      },
       items: [
         'aws-log/install-aws-log',
         'aws-log/aws-log-extension',
