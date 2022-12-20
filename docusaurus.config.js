@@ -137,6 +137,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'extensions',
+            position: 'left',
+            label: '확장 도구',
+          },
+          {
+            type: 'doc',
             docId: 'manage',
             position: 'left',
             label: '관리 기능',
