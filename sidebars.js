@@ -2126,7 +2126,8 @@ const sidebars = {
                 'apm/nodejs-agent-static',
                 'apm/nodejs-agent-topology',
               ]
-            }
+            },
+            'apm/nodejs-agent-manage',
           ]
         },
         {
