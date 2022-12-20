@@ -54,6 +54,7 @@ const config = {
         indexBlog: false,
         docsRouteBasePath: '/',
         highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
       }
     ],
     [
