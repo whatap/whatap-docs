@@ -283,6 +283,10 @@ main .markdown div.apm-agent p {
   padding: 0 0px 0px 0px;
 }
 
+main .markdown div.nhn p {
+  letter-spacing: -0.5px;
+}
+
 main .markdown div.flex-container {
   display: flex;
   flex-flow: row wrap;
