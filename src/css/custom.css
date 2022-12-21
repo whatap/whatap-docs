@@ -452,9 +452,9 @@ main .markdown code.Deprecate {
   content: " »";
 }
 
-/* .navbar__link--active {
-  
-} */
+.navbar__items .hidden {
+  display: none;
+}
 
 @media all and (max-width: 560px) {
   .feedback input {
