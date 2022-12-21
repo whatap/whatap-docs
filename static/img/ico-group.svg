@@ -1,0 +1,16 @@
+<svg class="SVGInline-svg" style="width: 16px;height: 16px;" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+  <!-- <title>ic-folder</title> -->
+  <desc>Created with Sketch.</desc>
+  <g id="Icon-Set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="WhaTap_Icon_Set" transform="translate(-740.000000, -2551.000000)" fill="#999999">
+          <g id="application-icons" transform="translate(40.000000, 2346.000000)">
+              <g id="ic-folder" transform="translate(700.000000, 205.000000)">
+                  <g transform="translate(2.000000, 4.000000)" id="Shape">
+                      <path d="M18,2 L10,2 L8,0 L2,0 C0.9,0 0.01,0.9 0.01,2 L0,14 C0,15.1 0.9,16 2,16 L18,16 C19.1,16 20,15.1 20,14 L20,4 C20,2.9 19.1,2 18,2 Z M18,14 L2,14 L2"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </g>
+</svg>
