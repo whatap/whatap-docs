@@ -366,7 +366,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Amazone ECS',
+          label: 'Amazon ECS',
           collapsible: true,
           collapsed: true,
           link: {
@@ -827,7 +827,7 @@ const sidebars = {
   awsecsSidebar: [
     {
       type: 'category',
-      label: 'Amazone ECS',
+      label: 'Amazon ECS',
       collapsible: false,
       collapsed: false,
       link: {
