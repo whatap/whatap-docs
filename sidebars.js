@@ -1619,6 +1619,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/k8s-flex-board',
+              },
+              items: [
+                'dashboard/k8s-flexboard-template',
+                'dashboard/k8s-flexboard-create',
+                'dashboard/k8s-flexboard-metric-widget',
+                'dashboard/k8s-flexboard-widget-manage',
+                'dashboard/k8s-flexboard-mode',
+                'dashboard/k8s-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
               label: '분석',
               collapsible: true,
               collapsed: true,
