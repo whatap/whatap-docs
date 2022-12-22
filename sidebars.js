@@ -258,37 +258,37 @@ const sidebars = {
         {
           type: 'link',
           label: '애플리케이션',
-          href: 'apm/application-intro' 
+          href: '../apm/application-intro' 
         },
         {
           type: 'link',
           label: '서버',
-          href: 'server/server-intro' 
+          href: '../server/server-intro' 
         },
         {
           type: 'link',
           label: '데이터베이스',
-          href: 'db/db-monitoring-intro' 
+          href: '../db/db-monitoring-intro' 
         },
         {
           type: 'link',
           label: '쿠버네티스',
-          href: 'kubernetes/kubernetes-intro',
+          href: '../kubernetes/kubernetes-intro',
         },
         {
           type: 'link',
           label: '클라우드',
-          href: 'ref-cloud/cloud' 
+          href: '../ref-cloud/cloud' 
         },
         {
           type: 'link',
           label: '로그',
-          href: 'log/log-intro' 
+          href: '../log/log-intro' 
         },
         {
           type: 'link',
           label: 'URL',
-          href: 'url/url-intro' 
+          href: '../url/url-intro' 
         },
         // {
         //   type: 'link',
@@ -350,17 +350,17 @@ const sidebars = {
     {
       type: 'link',
       label: '관리 기능',
-      href: 'manage' 
+      href: '../manage' 
     },
     {
       type: 'link',
       label: '참조 문서',
-      href: 'reference' 
+      href: '../reference' 
     },
     {
       type: 'link',
       label: '릴리스 노트',
-      href: 'release-notes',
+      href: '../release-notes',
     }
   ],
   cloudSidebar: [
