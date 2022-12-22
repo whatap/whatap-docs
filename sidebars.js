@@ -238,7 +238,17 @@ const sidebars = {
     }
   ],
   indexSidebar: [
-    // 'whatap-overview',
+    {
+      type: 'category',
+      label: '시작하기',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        'getting-started/whatap-overview',
+        'getting-started/support-env',
+        'getting-started/quick-guide',
+      ],
+    },
     {
       type: 'category',
       label: '모니터링 서비스',
@@ -267,6 +277,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: '클라우드',
+          href: 'ref-cloud/cloud' 
+        },
+        {
+          type: 'link',
           label: '로그',
           href: 'log/log-intro' 
         },
@@ -274,11 +289,6 @@ const sidebars = {
           type: 'link',
           label: 'URL',
           href: 'url/url-intro' 
-        },
-        {
-          type: 'link',
-          label: '클라우드',
-          href: 'ref-cloud/cloud' 
         },
         // {
         //   type: 'link',
