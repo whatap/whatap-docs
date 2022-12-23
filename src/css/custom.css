@@ -58,22 +58,43 @@ html[lang='ko'] {
 
 main .markdown .gs {
   padding: 20px;
-  border: 1px solid;
-  border-color: var(--shortcut-list-colir);
+  /* border: 1px solid; */
+  /* border-color: var(--shortcut-list-colir); */
   border-radius: 5px;
-  background: url(img/home_banner_pc.svg) 
+  background: url(img/wave.svg);
+  background-position: 0 70%;
+  background-size: 110%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Other page styling */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 main .markdown .gs h2, main .markdown .gs p {
-  color: #1c1e12;
+  color: #fff;
 }
 
 main .markdown .gs h2, main .markdown .gs p a {
   font-weight: bold;
 }
 
+main .markdown .gs p a {
+  color: #fff
+}
+
 main .markdown .gs p {
   margin-top: 20px;
+  margin-bottom: 0;
+}
+
+main .markdown .gs ul {
   margin-bottom: 0;
 }
 
