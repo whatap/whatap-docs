@@ -254,45 +254,63 @@ const sidebars = {
       ],
     },
     {
+      type: 'html',
+      value: '<hr/>'
+    },
+    {
       type: 'category',
-      label: '모니터링 서비스',
+      label: '제품별 문서 바로가기',
       collapsible: false,
       collapsed: false,
+      className: 'shortcut',
       items: [
         {
           type: 'link',
           label: '애플리케이션',
-          href: '../apm/application-intro' 
+          href: '../apm/application-intro',
+          className: "_productlink"
         },
         {
           type: 'link',
           label: '서버',
-          href: '../server/server-intro' 
+          href: '../server/server-intro',
+          className: "_productlink"
         },
         {
           type: 'link',
           label: '데이터베이스',
-          href: '../db/db-monitoring-intro' 
+          href: '../db/db-monitoring-intro',
+          className: "_productlink"
         },
         {
           type: 'link',
           label: '쿠버네티스',
           href: '../kubernetes/kubernetes-intro',
+          className: "_productlink"
         },
         {
           type: 'link',
           label: '클라우드',
-          href: '../ref-cloud/cloud' 
+          href: '../ref-cloud/cloud',
+          className: "_productlink"
         },
         {
           type: 'link',
           label: '로그',
-          href: '../log/log-intro' 
+          href: '../log/log-intro',
+          className: "_productlink"
         },
         {
           type: 'link',
           label: 'URL',
-          href: '../url/url-intro' 
+          href: '../url/url-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'doc',
+          label: '확장 도구',
+          id: 'extensions',
+          className: "_productlink"
         },
         // {
         //   type: 'link',
@@ -347,9 +365,8 @@ const sidebars = {
       ],
     },
     {
-      type: 'doc',
-      label: '확장 도구',
-      id: 'extensions',
+      type: 'html',
+      value: '<hr/>'
     },
     {
       type: 'link',
@@ -365,7 +382,7 @@ const sidebars = {
       type: 'link',
       label: '릴리스 노트',
       href: '../release-notes',
-    }
+    },
   ],
   cloudSidebar: [
     {

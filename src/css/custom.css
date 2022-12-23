@@ -55,6 +55,20 @@ html[lang='ko'] {
   position: relative;
   top: 4px;
 }
+
+main .markdown .gs {
+  padding: 20px;
+  border: 1px solid;
+  border-color: var(--shortcut-list-colir);
+  border-radius: 5px;
+  background: url(img/home_banner_pc.svg) 
+}
+
+main .markdown .gs h2, main .markdown .gs p {
+  color: #1c1e12;
+}
+
+
 main .markdown table {
   width: 100%;
   display: table;
@@ -461,6 +475,22 @@ main .markdown code.Deprecate {
 .navbar__items .hidden {
   display: none;
 }
+
+.theme-doc-sidebar-item-link-level-1 hr {
+  margin: 10px 10px;
+}
+
+.menu__list ._productlink a::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  background: url(img/menu-link.svg) no-repeat top 1px right 0;
+  background-size: 16px 16px;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
 
 @media all and (max-width: 560px) {
   .feedback input {
