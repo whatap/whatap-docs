@@ -133,7 +133,7 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: '모니터링 서비스',
+            label: '시작하기',
           },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
           {

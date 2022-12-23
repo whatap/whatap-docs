@@ -240,9 +240,13 @@ const sidebars = {
   indexSidebar: [
     {
       type: 'category',
-      label: '기본 안내',
+      label: '시작하기',
       collapsible: false,
       collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'index',
+      },
       items: [
         'getting-started/whatap-overview',
         'getting-started/support-env',
@@ -254,10 +258,6 @@ const sidebars = {
       label: '모니터링 서비스',
       collapsible: false,
       collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'index',
-      },
       items: [
         {
           type: 'link',
