@@ -254,6 +254,10 @@ const sidebars = {
       label: '모니터링 서비스',
       collapsible: false,
       collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'index',
+      },
       items: [
         {
           type: 'link',
