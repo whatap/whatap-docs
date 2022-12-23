@@ -240,7 +240,7 @@ const sidebars = {
   indexSidebar: [
     {
       type: 'category',
-      label: '시작하기',
+      label: '기본 안내',
       collapsible: false,
       collapsed: false,
       items: [
