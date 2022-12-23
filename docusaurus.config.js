@@ -220,13 +220,14 @@ const config = {
             label: 'Oracle Cloud Monitoring',
             className: 'hidden',
           },
-          // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
           {
             type: 'doc',
             docId: 'extensions',
             position: 'left',
             label: '확장 도구',
+            className: 'hidden'
           },
+          // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
           {
             type: 'doc',
             docId: 'manage',

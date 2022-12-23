@@ -68,6 +68,14 @@ main .markdown .gs h2, main .markdown .gs p {
   color: #1c1e12;
 }
 
+main .markdown .gs h2, main .markdown .gs p a {
+  font-weight: bold;
+}
+
+main .markdown .gs p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 
 main .markdown table {
   width: 100%;
