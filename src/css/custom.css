@@ -61,9 +61,10 @@ main .markdown .gs {
   /* border: 1px solid; */
   /* border-color: var(--shortcut-list-colir); */
   border-radius: 5px;
-  background: url(img/wave.svg);
+  background-color: #1e4564;
+  /* background: url(img/wave.svg);
   background-position: 0 70%;
-  background-size: 110%;
+  background-size: 110%; */
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -523,6 +524,22 @@ main .markdown code.Deprecate {
   margin-left: 10px;
 }
 
+@media all and (max-width: 1280px) {
+  main .markdown div.flex-container a {
+    width: 23%;
+  }
+}
+@media all and (max-width: 996px) {
+  .navbar-sidebar a.my-index {
+    display: none;
+  }
+}
+
+@media all and (max-width: 800px) {
+  main .markdown div.flex-container a {
+    width: 30%;
+  }
+}
 
 @media all and (max-width: 560px) {
   .feedback input {
@@ -530,5 +547,14 @@ main .markdown code.Deprecate {
   }
   .feedback textarea {
     width: 80%;
+  }
+  main .markdown div.flex-container a {
+    width: 48% !important;
+  }
+}
+
+@media all and (max-width: 460px) {
+  main .markdown .gs {
+    display: block;
   }
 }
