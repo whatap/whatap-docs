@@ -135,6 +135,59 @@ const config = {
             position: 'left',
             label: '시작하기',
           },
+          {
+            type: 'dropdown',
+            label: '제품별 문서 바로가기',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 'apm/application-intro',
+                label: '애플리케이션',
+              },
+              {
+                type: 'doc',
+                docId: 'server/server-intro',
+                label: '서버',
+              },
+              {
+                type: 'doc',
+                docId: 'db/db-monitoring-intro',
+                label: '데이터베이스',
+              },
+              {
+                type: 'doc',
+                docId: 'kubernetes/kubernetes-intro',
+                label: '쿠버네티스',
+              },
+              {
+                type: 'doc',
+                docId: 'ref-cloud/cloud',
+                label: '클라우드',
+              },
+              {
+                type: 'doc',
+                docId: 'log/log-intro',
+                label: '로그',
+                className: 'hidden',
+              },
+              {
+                type: 'doc',
+                docId: 'url/url-intro',
+                label: 'URL',
+              },
+              {
+                type: 'doc',
+                docId: 'extensions',
+                label: '확장 도구'
+              }
+              // {
+              //   type: 'doc',
+              //   docId: 'rum/rum-intro',
+              //   label: '브라우저 모니터링(RUM)',
+              // },
+            ]
+          },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
           {
             type: 'doc',
