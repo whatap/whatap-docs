@@ -232,6 +232,7 @@ const sidebars = {
         'project/group',
         'project/organization',
         'project/integrated-manage',
+        'notification/rt-notification',
         'billing/billing',
         'maintenance/maintenance'
       ]
