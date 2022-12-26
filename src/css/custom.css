@@ -533,6 +533,9 @@ main .markdown code.Deprecate {
   .navbar-sidebar a.my-index {
     display: none;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media all and (max-width: 800px) {

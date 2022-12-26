@@ -265,6 +265,10 @@ const sidebars = {
       collapsible: false,
       collapsed: false,
       className: 'shortcut',
+      // link: {
+      //   type: 'doc',
+      //   id: 'shortcut',
+      // },
       items: [
         {
           type: 'link',
