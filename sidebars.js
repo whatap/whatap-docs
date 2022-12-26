@@ -252,6 +252,7 @@ const sidebars = {
         'getting-started/whatap-overview',
         'getting-started/support-env',
         'getting-started/quick-guide',
+        'navigation/main-ui-intro',
       ],
     },
     {
