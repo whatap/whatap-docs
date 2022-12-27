@@ -779,22 +779,21 @@ const sidebars = {
       ]
     }
   ],
-  awslogSidebar: [
-    {
-      type: 'category',
-      label: 'AWS Log 모니터링',
-      collapsible: false,
-      collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'aws-log/aws-log-intro'
-      // },
-      items: [
-        'aws-log/install-aws-log',
-        'aws-log/aws-log-extension',
-      ]
-    }
-  ],
+  // awslogSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: 'AWS Log 모니터링',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     link: {
+  //       type: 'doc',
+  //       id: 'aws-log/aws-log-intro'
+  //     },
+  //     items: [
+  //       'aws-log/install-aws-log',
+  //     ]
+  //   }
+  // ],
   pluginSidebar: [
     {
       type: 'category',
