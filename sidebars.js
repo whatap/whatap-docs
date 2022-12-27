@@ -113,7 +113,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Golang 🚀',
+              label: 'Golang',
               collapsible: true,
               collapsed: true,
               items: [
@@ -131,7 +131,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: 'Amazon ECS 🚀',
+              label: 'Amazon ECS',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
