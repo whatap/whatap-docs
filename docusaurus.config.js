@@ -169,7 +169,6 @@ const config = {
                 type: 'doc',
                 docId: 'log/log-intro',
                 label: '로그',
-                className: 'hidden',
               },
               {
                 type: 'doc',
