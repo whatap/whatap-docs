@@ -536,7 +536,9 @@ main .markdown code.Deprecate {
   height: 20px;
   margin-left: 10px;
 }
-
+main .markdown .img_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module {
+  background-color: #fff;
+}
 @media all and (max-width: 1280px) {
   main .markdown div.flex-container a {
     width: 23%;
