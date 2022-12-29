@@ -485,9 +485,12 @@ main .markdown code.Deprecate {
 }
 .feedback input {
   margin-right: 20px;
-  width: 37%;
+  width: 50%;
   font-size: 110%;
   padding: 5px;
+}
+.feedback input[type='submit'] {
+  width: 30%
 }
 .feedback textarea {
   width: 100%;
@@ -555,12 +558,6 @@ main .markdown code.Deprecate {
 }
 
 @media all and (max-width: 560px) {
-  .feedback input {
-    width: 30%;
-  }
-  .feedback textarea {
-    width: 80%;
-  }
   main .markdown div.flex-container a {
     width: 48% !important;
   }
