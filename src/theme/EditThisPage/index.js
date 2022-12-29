@@ -69,6 +69,7 @@ export default function EditThisPageWrapper(props) {
               })
             }
             </h3>
+            <div class='name'>
             <label>
             {
               translate({
@@ -79,6 +80,8 @@ export default function EditThisPageWrapper(props) {
             }
             </label>
             <input type="text" name="user_name" />
+            </div>
+            <div class='email'>
             <label>
             {
               translate({
@@ -89,6 +92,8 @@ export default function EditThisPageWrapper(props) {
             }
             </label>
             <input type="email" name="user_email" />
+            </div>
+            <div class='message'>
             <label id='message'>
             {
               translate({
@@ -107,6 +112,7 @@ export default function EditThisPageWrapper(props) {
                 })
               }
             </textarea>
+            </div>
             <input type="submit" value={
               translate({
                 id: "theme.EditThisPage.feedbackbtnSend",
