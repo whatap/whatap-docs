@@ -78,15 +78,15 @@ main .markdown .gs {
   padding: 0;
 }
 
-main .markdown .gs h2, main .markdown .gs p {
+main .markdown .gs h2, main .markdown .gs li, main .markdown .gs h2, main .markdown .gs p {
   color: #fff;
 }
 
-main .markdown .gs h2, main .markdown .gs p a {
+main .markdown .gs h2, main .markdown .gs li a, main .markdown .gs h2, main .markdown .gs p a {
   font-weight: bold;
 }
 
-main .markdown .gs p a {
+main .markdown .gs li a, main .markdown .gs p a {
   color: #fff
 }
 
