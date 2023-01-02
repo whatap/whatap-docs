@@ -250,7 +250,11 @@ const sidebars = {
       },
       items: [
         'getting-started/whatap-overview',
-        'getting-started/welcome-to-whatapdocs',
+        {
+          type: 'doc',
+          label: '와탭 기술 문서 안내',
+          id: 'getting-started/welcome-to-whatapdocs'
+        },
         'getting-started/support-env',
         'getting-started/quick-guide',
         'navigation/main-ui-intro',
