@@ -73,6 +73,7 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
+                'release-notes/php/php-2.6.0',
                 'release-notes/php/php-2.5.4',
                 'release-notes/php/php-2.5.3',
                 'release-notes/php/php-2.5.2',
