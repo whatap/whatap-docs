@@ -1,0 +1,102 @@
+{
+  "item.label.시작하기": {
+    "message": "시작하기",
+    "description": "Navbar item with label 시작하기"
+  },
+  "item.label.제품별 문서 바로가기": {
+    "message": "제품별 문서 바로가기",
+    "description": "Navbar item with label 제품별 문서 바로가기"
+  },
+  "item.label.애플리케이션 모니터링": {
+    "message": "애플리케이션 모니터링",
+    "description": "Navbar item with label 애플리케이션 모니터링"
+  },
+  "item.label.서버 모니터링": {
+    "message": "서버 모니터링",
+    "description": "Navbar item with label 서버 모니터링"
+  },
+  "item.label.데이터베이스 모니터링": {
+    "message": "데이터베이스 모니터링",
+    "description": "Navbar item with label 데이터베이스 모니터링"
+  },
+  "item.label.쿠버네티스 모니터링": {
+    "message": "쿠버네티스 모니터링",
+    "description": "Navbar item with label 쿠버네티스 모니터링"
+  },
+  "item.label.로그 모니터링": {
+    "message": "로그 모니터링",
+    "description": "Navbar item with label 로그 모니터링"
+  },
+  "item.label.URL 모니터링": {
+    "message": "URL 모니터링",
+    "description": "Navbar item with label URL 모니터링"
+  },
+  "item.label.브라우저 모니터링(RUM)": {
+    "message": "브라우저 모니터링(RUM)",
+    "description": "Navbar item with label 브라우저 모니터링(RUM)"
+  },
+  "item.label.Amazon ECS": {
+    "message": "Amazon ECS",
+    "description": "Navbar item with label Amazon ECS"
+  },
+  "item.label.Amazon Cloudwatch": {
+    "message": "Amazon Cloudwatch",
+    "description": "Navbar item with label Amazon Cloudwatch"
+  },
+  "item.label.Azure Monitor": {
+    "message": "Azure Monitor",
+    "description": "Navbar item with label Azure Monitor"
+  },
+  "item.label.Naver Cloud Monitoring": {
+    "message": "Naver Cloud Monitoring",
+    "description": "Navbar item with label Naver Cloud Monitoring"
+  },
+  "item.label.Oracle Cloud Monitoring": {
+    "message": "Oracle Cloud Monitoring",
+    "description": "Navbar item with label Oracle Cloud Monitoring"
+  },
+  "item.label.확장 도구": {
+    "message": "확장 도구",
+    "description": "Navbar item with label 확장 도구"
+  },
+  "item.label.관리 기능": {
+    "message": "관리 기능",
+    "description": "Navbar item with label 관리 기능"
+  },
+  "item.label.참조 문서": {
+    "message": "참조 문서",
+    "description": "Navbar item with label 참조 문서"
+  },
+  "item.label.릴리스 노트": {
+    "message": "릴리스 노트",
+    "description": "Navbar item with label 릴리스 노트"
+  },
+  "item.label.애플리케이션": {
+    "message": "애플리케이션",
+    "description": "Navbar item with label 애플리케이션"
+  },
+  "item.label.서버": {
+    "message": "서버",
+    "description": "Navbar item with label 서버"
+  },
+  "item.label.데이터베이스": {
+    "message": "데이터베이스",
+    "description": "Navbar item with label 데이터베이스"
+  },
+  "item.label.쿠버네티스": {
+    "message": "쿠버네티스",
+    "description": "Navbar item with label 쿠버네티스"
+  },
+  "item.label.클라우드": {
+    "message": "클라우드",
+    "description": "Navbar item with label 클라우드"
+  },
+  "item.label.로그": {
+    "message": "로그",
+    "description": "Navbar item with label 로그"
+  },
+  "item.label.URL": {
+    "message": "URL",
+    "description": "Navbar item with label URL"
+  }
+}
