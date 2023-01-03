@@ -79,6 +79,12 @@ main .markdown .gs {
   padding: 0;
 }
 
+.ic-gs svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--shortcut-list-color);
+}
+
 main .markdown .gs h2, main .markdown .gs li, main .markdown .gs h2, main .markdown .gs p {
   color: #fff;
 }
