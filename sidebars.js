@@ -205,8 +205,8 @@ const sidebars = {
           },
           items: [
             'analysis/java-cube',
-            'analysis/analysis-apm',
-            'analysis/analysis-apm-trs',
+            'analysis/java-analysis-apm',
+            'analysis/java-analysis-apm-trs',
             {
               type: 'category',
               label: '보고서',
@@ -214,11 +214,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/report-intro'
+                id: 'analysis/java-report-intro'
               },
               items: [
-                'analysis/report-apm',
-                'analysis/integrated-report',
+                'analysis/java-report-apm',
+                'analysis/java-integrated-report',
               ]
             }
           ]
@@ -230,10 +230,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'notification/apm-set-notice',
+            id: 'notification/java-apm-set-notice',
           },
           items: [
-            'notification/apm-warning-notice',
+            'notification/java-warning-notice',
             'notification/metric-warning-notice',
             'notification/hitmap-notice',
             'notification/set-event-detect-anomal',
