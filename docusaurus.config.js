@@ -197,6 +197,27 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'apm/java/apm-introduction',
+            position: "left",
+            label: 'Java 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/php/apm-introduction',
+            position: "left",
+            label: 'PHP 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/nodejs/apm-introduction',
+            position: "left",
+            label: 'Node.js 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'server/server-intro',
             position: "left",
             label: '서버 모니터링',

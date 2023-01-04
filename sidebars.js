@@ -60,12 +60,8 @@ const sidebars = {
             'apm/add-jvm-opt/java-under-ver',
           ]
         },
-        'apm/java/after-install-agent',
-        {
-          type: 'doc',
-          label: '설치 문제 해결',
-          id: 'apm/java/java-agent-troubleshooting'
-        },
+        'apm/java/install-check',
+        'apm/java/agent-troubleshooting',
         {
           type: 'category',
           label: '설정하기',
@@ -115,143 +111,581 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '대시보드',
+          label: '주요 메뉴 알아보기',
           collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'dashboard/java-dashboard-intro'
-          },
+          collapsed: false,
           items: [
-            'dashboard/java-dashboard',
-            'dashboard/java-dashboard-transactionmap',
-            'dashboard/java-dashboard-active-transaction',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'dashboard/java-flex-board',
-          },
-          items: [
-            'dashboard/java-flexboard-template',
-            'dashboard/java-flexboard-create',
-            'dashboard/java-flexboard-metric-widget',
-            'dashboard/java-flexboard-widget-manage',
-            'dashboard/java-flexboard-mode',
-            'dashboard/java-flexboard-share',
-          ],
-        },
-        {
-          type: 'category',
-          label: '토폴로지',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'topology/java-topology',
-          },
-          items: [
-            'topology/java-topology-basic',
-            'topology/java-topology-type',
-            'topology/java-topology-add-function',
-            'topology/java-topology-settings'
-          ],
-        },
-        {
-          type: 'category',
-          label: '트랜잭션',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'track-transactions/java-track-transactions-intro'
-          },
-          items: [
-            'track-transactions/java-trs-view',
-            'track-transactions/java-trs-profile',
-            'track-transactions/java-active-transactions',
-            'track-transactions/java-collect-stacks',
-            'track-transactions/java-trs-multi-trace',
-            'track-transactions/java-trs-endpoint-setting',
-          ]
-        },
-        {
-          type: 'category',
-          label: '메트릭스',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'metrics/java-metrics-intro'
-          },
-          items: [
-            'metrics/java-metrics-app',
-            'metrics/java-metrics-performance-counter',
-          ]
-        },
-        {
-          type: 'category',
-          label: '분석과 통계',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'analysis/java-analysis-report-intro'
-          },
-          items: [
-            'analysis/java-cube',
-            'analysis/java-analysis-apm',
-            'analysis/java-analysis-apm-trs',
             {
               type: 'category',
-              label: '보고서',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/java-report-intro'
+                id: 'dashboard/java-dashboard-intro'
               },
               items: [
-                'analysis/java-report-apm',
-                'analysis/java-integrated-report',
+                'dashboard/java-dashboard',
+                'dashboard/java-dashboard-transactionmap',
+                'dashboard/java-dashboard-active-transaction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/java-flex-board',
+              },
+              items: [
+                'dashboard/java-flexboard-template',
+                'dashboard/java-flexboard-create',
+                'dashboard/java-flexboard-metric-widget',
+                'dashboard/java-flexboard-widget-manage',
+                'dashboard/java-flexboard-mode',
+                'dashboard/java-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/java-topology',
+              },
+              items: [
+                'topology/java-topology-basic',
+                'topology/java-topology-type',
+                'topology/java-topology-add-function',
+                'topology/java-topology-settings'
+              ],
+            },
+            {
+              type: 'category',
+              label: '트랜잭션',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/java-track-transactions-intro'
+              },
+              items: [
+                'track-transactions/java-trs-view',
+                'track-transactions/java-trs-profile',
+                'track-transactions/java-active-transactions',
+                'track-transactions/java-collect-stacks',
+                'track-transactions/java-trs-multi-trace',
+                'track-transactions/java-trs-endpoint-setting',
               ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/java-metrics-intro'
+              },
+              items: [
+                'metrics/java-metrics-app',
+                'metrics/java-metrics-performance-counter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/java-analysis-report-intro'
+              },
+              items: [
+                'analysis/java-cube',
+                'analysis/java-analysis-apm',
+                'analysis/java-analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/java-report-intro'
+                  },
+                  items: [
+                    'analysis/java-report-apm',
+                    'analysis/java-integrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/java-apm-set-notice',
+              },
+              items: [
+                'notification/java-warning-notice',
+                'notification/java-metric-warning-notice',
+                'notification/java-hitmap-notice',
+                'notification/java-set-event-detect-anomal',
+                'notification/java-set-event-log',
+                'notification/java-set-receive-event',
+                'notification/java-set-event-history',
+                'notification/java-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
             }
-          ]
+          ],
+        },
+        
+      ]
+    },
+  ],
+  phpSidebar: [
+    {
+      type: 'category',
+      label: 'PHP 모니터링',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'apm/php/apm-introduction'
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'apm/php/supported-spec'
         },
         {
           type: 'category',
-          label: '알림 설정하기',
+          label: '에이전트 설치',
           collapsible: true,
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'notification/java-apm-set-notice',
+            id: 'apm/php/install-agent',
           },
           items: [
-            'notification/java-warning-notice',
-            'notification/metric-warning-notice',
-            'notification/hitmap-notice',
-            'notification/set-event-detect-anomal',
-            'notification/set-event-log',
-            'notification/set-receive-event',
-            'notification/set-event-history',
-            'notification/set-event-format',
-          ],
+            'apm/php-os/redhat-centos',
+            'apm/php-os/debian-ubuntu',
+            'apm/php-os/amazon-linux',
+            'apm/php-os/freebsd',
+            'apm/php-os/alpine-linux',
+            'apm/php-os/gcae',
+            'apm/php-os/aws-eb'
+          ]
         },
         {
           type: 'doc',
-          label: '로그 모니터링',
-          id: 'log/log-intro'
+          label: '설치 점검',
+          id: 'apm/php/install-check'
         },
         {
-          type: 'link',
-          label: 'Open API',
-          href: '/apidoc/openapi-intro'
+          type: 'doc',
+          label: '설치 문제 해결',
+          id: 'apm/php/agent-troubleshooting'
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/php/php-set-agent'
+          },
+          items: [               
+            'apm/php-agent-name',
+            'apm/php-control-function',
+            'apm/php-agent-com',
+            'apm/php-agent-tx',
+            'apm/php-agent-log',
+            'apm/php-transaction',
+            'apm/php-db-sql',
+            'apm/php-httpc-api',
+            'apm/php-collect-user',
+            'apm/php-apdex',
+            'apm/php-stat',
+            'apm/php-tp-map',
+            'apm/php-shm',
+          ]
+        },
+        {
+          type: 'category',
+          label: '관리하기',
+          items: [
+            'apm/php/php-agent-update',
+            'apm/php/php-agent-temp-st',
+            'apm/php/php-agent-remove'
+          ]
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/php-dashboard-intro'
+              },
+              items: [
+                'dashboard/php-dashboard',
+                'dashboard/php-dashboard-transactionmap',
+                'dashboard/php-dashboard-active-transaction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/php-flex-board',
+              },
+              items: [
+                'dashboard/php-flexboard-template',
+                'dashboard/php-flexboard-create',
+                'dashboard/php-flexboard-metric-widget',
+                'dashboard/php-flexboard-widget-manage',
+                'dashboard/php-flexboard-mode',
+                'dashboard/php-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/php-topology',
+              },
+              items: [
+                'topology/php-topology-basic',
+                'topology/php-topology-type',
+                'topology/php-topology-add-function',
+                'topology/php-topology-settings'
+              ],
+            },
+            {
+              type: 'category',
+              label: '트랜잭션',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/php-track-transactions-intro'
+              },
+              items: [
+                'track-transactions/php-trs-view',
+                'track-transactions/php-trs-profile',
+                // 'track-transactions/php-active-transactions',
+                'track-transactions/php-collect-stacks',
+                'track-transactions/php-trs-multi-trace',
+                // 'track-transactions/php-trs-endpoint-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/php-metrics-intro'
+              },
+              items: [
+                'metrics/php-metrics-app',
+                'metrics/php-metrics-performance-counter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/php-analysis-report-intro'
+              },
+              items: [
+                'analysis/php-cube',
+                // 'analysis/php-analysis-apm',
+                'analysis/php-analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/php-report-intro'
+                  },
+                  items: [
+                    'analysis/php-report-apm',
+                    'analysis/php-integrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/php-apm-set-notice',
+              },
+              items: [
+                'notification/php-warning-notice',
+                'notification/php-metric-warning-notice',
+                'notification/php-hitmap-notice',
+                'notification/php-set-event-detect-anomal',
+                'notification/php-set-event-log',
+                'notification/php-set-receive-event',
+                'notification/php-set-event-history',
+                'notification/php-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ],
+        },
+      ]
+    },
+  ],
+  nodejsSidebar: [
+    {
+      type: 'category',
+      label: 'Node.js 모니터링',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'apm/nodejs/apm-introduction'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'apm/nodejs/supported-spec'
+        },
+        {
+          type: 'doc',
+          label: '에이전트 설치',
+          id: 'apm/nodejs/install-agent',
+        },
+        {
+          type: 'doc',
+          label: '설치 점검',
+          id: 'apm/nodejs/install-check',
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/nodejs/nodejs-set-agent'
+          },
+          items: [
+            'apm/nodejs-agent-name',
+            'apm/nodejs-agent-control-function',
+            'apm/nodejs-agent-network',
+            'apm/nodejs-agent-log',
+            'apm/nodejs-agent-transaction',
+            'apm/nodejs-agent-dbsql',
+            'apm/nodejs-agent-httpcapicall',
+            'apm/nodejs-agent-number-of-user',
+            'apm/nodejs-agent-static',
+            'apm/nodejs-agent-topology',
+          ]
+        },
+        'apm/nodejs/nodejs-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/nodejs-dashboard-intro'
+              },
+              items: [
+                'dashboard/nodejs-dashboard',
+                'dashboard/java-dashboard-transactionmap',
+                'dashboard/java-dashboard-active-transaction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/java-flex-board',
+              },
+              items: [
+                'dashboard/java-flexboard-template',
+                'dashboard/java-flexboard-create',
+                'dashboard/java-flexboard-metric-widget',
+                'dashboard/java-flexboard-widget-manage',
+                'dashboard/java-flexboard-mode',
+                'dashboard/java-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/java-topology',
+              },
+              items: [
+                'topology/java-topology-basic',
+                'topology/java-topology-type',
+                'topology/java-topology-add-function',
+                'topology/java-topology-settings'
+              ],
+            },
+            {
+              type: 'category',
+              label: '트랜잭션',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/java-track-transactions-intro'
+              },
+              items: [
+                'track-transactions/java-trs-view',
+                'track-transactions/java-trs-profile',
+                'track-transactions/java-active-transactions',
+                'track-transactions/java-collect-stacks',
+                'track-transactions/java-trs-multi-trace',
+                'track-transactions/java-trs-endpoint-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/java-metrics-intro'
+              },
+              items: [
+                'metrics/java-metrics-app',
+                'metrics/java-metrics-performance-counter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/java-analysis-report-intro'
+              },
+              items: [
+                'analysis/java-cube',
+                'analysis/java-analysis-apm',
+                'analysis/java-analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/java-report-intro'
+                  },
+                  items: [
+                    'analysis/java-report-apm',
+                    'analysis/java-integrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/java-apm-set-notice',
+              },
+              items: [
+                'notification/java-warning-notice',
+                'notification/java-metric-warning-notice',
+                'notification/java-hitmap-notice',
+                'notification/java-set-event-detect-anomal',
+                'notification/java-set-event-log',
+                'notification/java-set-receive-event',
+                'notification/java-set-event-history',
+                'notification/java-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ],
         }
       ]
     },
@@ -2159,195 +2593,6 @@ const sidebars = {
         id: 'apm/application-intro',
       },
       items: [ 
-        {
-          type: 'category',
-          label: 'PHP 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/intro-php'
-          },
-          items: [
-            {
-              type: 'doc',
-              id: 'apm/supported-spec-php'
-            },
-            {
-              type: 'category',
-              label: '에이전트 설치',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/php',
-              },
-              items: [
-                'apm/php-os/redhat-centos',
-                'apm/php-os/debian-ubuntu',
-                'apm/php-os/amazon-linux',
-                'apm/php-os/freebsd',
-                'apm/php-os/alpine-linux',
-                'apm/php-os/gcae',
-                'apm/php-os/aws-eb'
-              ]
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/php-install-check'
-            },
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/php-agent-troubleshooting'
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/php-set-agent'
-              },
-              items: [               
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/php-agent-name'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 기능 제어',
-                  id: 'apm/php-control-function'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 통신 설정',
-                  id: 'apm/php-agent-com'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 성능 설정',
-                  id: 'apm/php-agent-tx'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/php-agent-log'
-                },
-                {
-                  type: 'doc',
-                  label: '트랜잭션',
-                  id: 'apm/php-transaction'
-                },
-                {
-                  type: 'doc',
-                  label: 'DB와 SQL',
-                  id: 'apm/php-db-sql'
-                },
-                {
-                  type: 'doc',
-                  label: 'HTTPC와 API Call',
-                  id: 'apm/php-httpc-api'
-                },
-                {
-                  type: 'doc',
-                  label: '사용자 수',
-                  id: 'apm/php-collect-user'
-                },
-                {
-                  type: 'doc',
-                  label: 'Apdex',
-                  id: 'apm/php-apdex'
-                },
-                {
-                  type: 'doc',
-                  label: '통계',
-                  id: 'apm/php-stat'
-                },
-                {
-                  type: 'doc',
-                  label: '토폴로지 맵',
-                  id: 'apm/php-tp-map'
-                },
-                {
-                  type: 'doc',
-                  label: '공유 메모리',
-                  id: 'apm/php-shm'
-                }
-              ]
-            },
-            {
-              type: 'category',
-              label: '관리하기',
-              items: [
-                {
-                  type: 'doc',
-                  label: '패키지 업데이트',
-                  id: 'apm/php-agent-update'
-                },
-                'apm/php-agent-temp-st',
-                'apm/php-agent-remove'
-              ]
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Node.js 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/nodejs-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/nodejs-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/nodejs-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/nodejs-after-install-agent',
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/nodejs-set-agent'
-              },
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/nodejs-agent-name',
-                },
-                'apm/nodejs-agent-control-function',
-                'apm/nodejs-agent-network',
-                'apm/nodejs-agent-log',
-                'apm/nodejs-agent-transaction',
-                'apm/nodejs-agent-dbsql',
-                'apm/nodejs-agent-httpcapicall',
-                'apm/nodejs-agent-number-of-user',
-                'apm/nodejs-agent-static',
-                'apm/nodejs-agent-topology',
-              ]
-            },
-            'apm/nodejs-agent-manage',
-          ]
-        },
         {
           type: 'category',
           label: 'Python 모니터링',
