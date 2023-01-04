@@ -30,7 +30,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Service 🚀',
+          label: 'Service',
           collapsible: true,
           collapsed: true,
           items: [
@@ -69,7 +69,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'PHP',
+              label: 'PHP 🚀',
               collapsible: true,
               collapsed: true,
               items: [
@@ -137,7 +137,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server 🚀',
+              label: 'Server',
               collapsible: true,
               collapsed: true,
               items: [
