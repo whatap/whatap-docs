@@ -87,6 +87,29 @@ main .markdown .gs {
   fill: var(--shortcut-list-color);
 }
 
+main .faq th {
+  /* font-family: monospace; */
+  border: none;
+  font-size: 102%;
+  text-align: left;
+  font-weight: 400;
+}
+
+main .markdown .faq th code {
+  display: inline;
+  /* background-color: var(--ifm-code-background);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--ifm-code-border-radius);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
+  padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  vertical-align: middle; */
+}
+
+main .faq blockquote {
+  border: none;
+}
+
 main .markdown .gs h2, main .markdown .gs li, main .markdown .gs h2, main .markdown .gs p {
   color: #fff;
 }
