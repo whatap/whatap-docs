@@ -21,8 +21,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'JAVA 모니터링',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'apm/java/apm-introduction'
@@ -256,8 +256,7 @@ const sidebars = {
               href: '/apidoc/openapi-intro'
             }
           ],
-        },
-        
+        }
       ]
     },
   ],
@@ -265,8 +264,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'PHP 모니터링',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'apm/php/apm-introduction'
@@ -494,8 +493,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Node.js 모니터링',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'apm/nodejs/apm-introduction'
@@ -556,8 +555,8 @@ const sidebars = {
               },
               items: [
                 'dashboard/nodejs-dashboard',
-                'dashboard/java-dashboard-transactionmap',
-                'dashboard/java-dashboard-active-transaction',
+                'dashboard/nodejs-dashboard-transactionmap',
+                'dashboard/nodejs-dashboard-active-transaction',
               ],
             },
             {
@@ -567,15 +566,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/java-flex-board',
+                id: 'dashboard/nodejs-flex-board',
               },
               items: [
-                'dashboard/java-flexboard-template',
-                'dashboard/java-flexboard-create',
-                'dashboard/java-flexboard-metric-widget',
-                'dashboard/java-flexboard-widget-manage',
-                'dashboard/java-flexboard-mode',
-                'dashboard/java-flexboard-share',
+                'dashboard/nodejs-flexboard-template',
+                'dashboard/nodejs-flexboard-create',
+                'dashboard/nodejs-flexboard-metric-widget',
+                'dashboard/nodejs-flexboard-widget-manage',
+                'dashboard/nodejs-flexboard-mode',
+                'dashboard/nodejs-flexboard-share',
               ],
             },
             {
@@ -585,13 +584,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/java-topology',
+                id: 'topology/nodejs-topology',
               },
               items: [
-                'topology/java-topology-basic',
-                'topology/java-topology-type',
-                'topology/java-topology-add-function',
-                'topology/java-topology-settings'
+                'topology/nodejs-topology-basic',
+                'topology/nodejs-topology-type',
+                'topology/nodejs-topology-add-function',
+                'topology/nodejs-topology-settings'
               ],
             },
             {
@@ -601,15 +600,225 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/java-track-transactions-intro'
+                id: 'track-transactions/nodejs-track-transactions-intro'
               },
               items: [
-                'track-transactions/java-trs-view',
-                'track-transactions/java-trs-profile',
-                'track-transactions/java-active-transactions',
-                'track-transactions/java-collect-stacks',
-                'track-transactions/java-trs-multi-trace',
-                'track-transactions/java-trs-endpoint-setting',
+                'track-transactions/nodejs-trs-view',
+                'track-transactions/nodejs-trs-profile',
+                // 'track-transactions/nodejs-active-transactions',
+                // 'track-transactions/java-collect-stacks',
+                'track-transactions/nodejs-trs-multi-trace',
+                'track-transactions/nodejs-trs-endpoint-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/nodejs-metrics-intro'
+              },
+              items: [
+                'metrics/nodejs-metrics-app',
+                'metrics/nodejs-metrics-performance-counter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/nodejs-analysis-report-intro'
+              },
+              items: [
+                'analysis/nodejs-cube',
+                'analysis/nodejs-analysis-apm',
+                'analysis/nodejs-analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/nodejs-report-intro'
+                  },
+                  items: [
+                    'analysis/nodejs-report-apm',
+                    'analysis/nodejs-integrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/nodejs-apm-set-notice',
+              },
+              items: [
+                'notification/nodejs-warning-notice',
+                'notification/nodejs-metric-warning-notice',
+                'notification/nodejs-hitmap-notice',
+                'notification/nodejs-set-event-detect-anomal',
+                'notification/nodejs-set-event-log',
+                'notification/nodejs-set-receive-event',
+                'notification/nodejs-set-event-history',
+                'notification/nodejs-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ],
+        }
+      ]
+    },
+  ],
+  pySidebar: [
+    {
+      type: 'category',
+      label: 'Python 모니터링',
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'apm/python-intro'
+      },
+      items: [
+        'apm/python-supported-spec',
+        'apm/python-install-agent',
+        'apm/python-after-install-agent',
+        'apm/python-agent-troubleshooting',
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/python-set-agent'
+          },
+          items: [
+            'apm/python-agent-name',
+            'apm/python-control-function',
+            'apm/python-agent-com',
+            'apm/python-agent-log',
+            'apm/python-transaction',
+            'apm/python-db-sql',
+            'apm/python-httpc-api',
+            'apm/python-collect-user',
+            'apm/python-stat',
+          ]
+        },
+        {
+          type: 'doc',
+          label: '고급 기능',
+          id: 'apm/python-adf',
+        },
+        {
+          type: 'category',
+          label: '관리하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: '에이전트 삭제',
+              id: 'apm/python-remove'
+            },
+            {
+              type: 'doc',
+              label: '패키지 관리',
+              id: 'apm/python-pkg'
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/python-dashboard-intro'
+              },
+              items: [
+                'dashboard/python-dashboard',
+                'dashboard/python-dashboard-transactionmap',
+                'dashboard/python-dashboard-active-transaction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/python-flex-board',
+              },
+              items: [
+                'dashboard/python-flexboard-template',
+                'dashboard/python-flexboard-create',
+                'dashboard/python-flexboard-metric-widget',
+                'dashboard/python-flexboard-widget-manage',
+                'dashboard/python-flexboard-mode',
+                'dashboard/python-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/python-topology',
+              },
+              items: [
+                'topology/python-topology-basic',
+                'topology/python-topology-type',
+                'topology/python-topology-add-function',
+                // 'topology/python-topology-settings'
+              ],
+            },
+            {
+              type: 'category',
+              label: '트랜잭션',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/python-track-transactions-intro'
+              },
+              items: [
+                'track-transactions/python-trs-view',
+                'track-transactions/python-trs-profile',
+                'track-transactions/python-active-transactions',
+                'track-transactions/python-collect-stacks',
+                'track-transactions/python-trs-multi-trace',
+                'track-transactions/python-trs-endpoint-setting',
               ]
             },
             {
@@ -686,7 +895,7 @@ const sidebars = {
               href: '/apidoc/openapi-intro'
             }
           ],
-        }
+        },
       ]
     },
   ],
@@ -2593,118 +2802,6 @@ const sidebars = {
         id: 'apm/application-intro',
       },
       items: [ 
-        {
-          type: 'category',
-          label: 'Python 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/python-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/python-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/python-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/python-after-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/python-agent-troubleshooting',
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/python-set-agent'
-              },
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/python-agent-name'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 기능 제어',
-                  id: 'apm/python-control-function'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 통신 설정',
-                  id: 'apm/python-agent-com'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/python-agent-log'
-                },
-                {
-                  type: 'doc',
-                  label: '트랜잭션',
-                  id: 'apm/python-transaction'
-                },
-                {
-                  type: 'doc',
-                  label: 'DB와 SQL',
-                  id: 'apm/python-db-sql'
-                },
-                {
-                  type: 'doc',
-                  label: 'HTTPC와 API Call',
-                  id: 'apm/python-httpc-api'
-                },
-                {
-                  type: 'doc',
-                  label: '사용자 수',
-                  id: 'apm/python-collect-user'
-                },
-                {
-                  type: 'doc',
-                  label: '통계',
-                  id: 'apm/python-stat'
-                }
-              ]
-            },
-            {
-              type: 'doc',
-              label: '고급 기능',
-              id: 'apm/python-adf',
-            },
-            {
-              type: 'category',
-              label: '관리하기',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 삭제',
-                  id: 'apm/python-remove'
-                },
-                {
-                  type: 'doc',
-                  label: '패키지 관리',
-                  id: 'apm/python-pkg'
-                }
-              ]
-            }
-          ]
-        },
         {
           type: 'category',
           label: '.NET 모니터링',
