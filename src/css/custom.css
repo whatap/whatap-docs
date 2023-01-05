@@ -467,6 +467,9 @@ main .markdown code.Feature {
   border: none;
   padding: 0 5px 0 5px;
 }
+[data-theme='dark'] main .markdown code.Feature {
+  background-color: rgb(134, 162, 154);
+}
 main .markdown code.Change {
   background-color: rgba(230,130,0,.08);
   color: #a53221;
@@ -482,12 +485,18 @@ main .markdown code.Fixed {
   border: none;
   padding: 0 5px 0 5px;
 }
+[data-theme='dark'] main .markdown code.Fixed {
+  background-color: rgb(54, 66, 102);
+}
 
 main .markdown code.New {
   background-color: rgb(9, 34, 109, 1);
   color: #fff;
   border: none;
   padding: 0 5px 0 5px;
+}
+[data-theme='dark'] main .markdown code.New {
+  background-color: rgb(5, 51, 188);
 }
 main .markdown code.Deprecate {
   background-color: rgba(220,24,24,.08);
