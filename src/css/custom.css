@@ -473,6 +473,9 @@ main .markdown code.Change {
   border: none;
   padding: 0 5px 0 5px;
 }
+[data-theme='dark'] main .markdown code.Change {
+  background-color: rgb(200, 168, 126);
+}
 main .markdown code.Fixed {
   background-color: rgba(24,73,220,.08);
   color: #039be5;
