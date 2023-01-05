@@ -1910,7 +1910,8 @@ const sidebars = {
               href: '/apidoc/openapi-intro'
             }
           ]
-        }
+        },
+        'faq/db-faq',
       ],
     }
   ],
