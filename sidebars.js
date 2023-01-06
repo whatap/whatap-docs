@@ -1172,13 +1172,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/dotnet-topology',
+                id: 'topology/golang-topology',
               },
               items: [
-                'topology/dotnet-topology-basic',
-                'topology/dotnet-topology-type',
-                'topology/dotnet-topology-add-function',
-                'topology/dotnet-topology-settings'
+                'topology/golang-topology-basic',
+                'topology/golang-topology-type',
+                'topology/golang-topology-add-function',
+                // 'topology/golang-topology-settings'
               ],
             },
             {
@@ -1188,14 +1188,14 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/dotnet-track-transactions-intro'
+                id: 'track-transactions/golang-track-transactions-intro'
               },
               items: [
-                'track-transactions/dotnet-trs-view',
-                'track-transactions/dotnet-trs-profile',
+                'track-transactions/golang-trs-view',
+                'track-transactions/golang-trs-profile',
                 // 'track-transactions/php-active-transactions',
-                'track-transactions/dotnet-collect-stacks',
-                'track-transactions/dotnet-trs-multi-trace',
+                'track-transactions/golang-collect-stacks',
+                'track-transactions/golang-trs-multi-trace',
                 // 'track-transactions/php-trs-endpoint-setting',
               ]
             },
@@ -1206,11 +1206,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/dotnet-metrics-intro'
+                id: 'metrics/golang-metrics-intro'
               },
               items: [
-                'metrics/dotnet-metrics-app',
-                'metrics/dotnet-metrics-performance-counter',
+                'metrics/golang-metrics-app',
+                'metrics/golang-metrics-performance-counter',
               ]
             },
             {
