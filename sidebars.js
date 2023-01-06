@@ -341,7 +341,7 @@ const sidebars = {
         // },
         // {
         //   type: 'link',
-        //   label: 'Amazon Cloudwatch',
+        //   label: 'Amazon CloudWatch',
         //   href: 'amazon-cloudwatch/amazon-cloudwatch-install'
         // },
         // {
@@ -469,7 +469,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Amazon Cloudwatch',
+          label: 'Amazon CloudWatch',
           collapsible: true,
           collapsed: true,
           link: {
