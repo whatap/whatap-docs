@@ -504,6 +504,9 @@ main .markdown code.Deprecate {
   border: none;
   padding: 0 5px 0 5px;
 }
+[data-theme='dark'] main .markdown code.Deprecate {
+  background-color: rgb(196, 168, 168);
+}
 
 .theme-doc-footer-edit-meta-row {
   display: block;
