@@ -693,8 +693,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Python 모니터링',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'apm/python-intro'
@@ -828,11 +828,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/java-metrics-intro'
+                id: 'metrics/python-metrics-intro'
               },
               items: [
-                'metrics/java-metrics-app',
-                'metrics/java-metrics-performance-counter',
+                'metrics/python-metrics-app',
+                'metrics/python-metrics-performance-counter',
               ]
             },
             {
@@ -842,12 +842,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/java-analysis-report-intro'
+                id: 'analysis/python-analysis-report-intro'
               },
               items: [
-                'analysis/java-cube',
-                'analysis/java-analysis-apm',
-                'analysis/java-analysis-apm-trs',
+                'analysis/python-cube',
+                'analysis/python-analysis-apm',
+                'analysis/python-analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -855,11 +855,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/java-report-intro'
+                    id: 'analysis/python-report-intro'
                   },
                   items: [
-                    'analysis/java-report-apm',
-                    'analysis/java-integrated-report',
+                    'analysis/python-report-apm',
+                    'analysis/python-integrated-report',
                   ]
                 }
               ]
@@ -871,17 +871,395 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/java-apm-set-notice',
+                id: 'notification/python-apm-set-notice',
               },
               items: [
-                'notification/java-warning-notice',
-                'notification/java-metric-warning-notice',
-                'notification/java-hitmap-notice',
-                'notification/java-set-event-detect-anomal',
-                'notification/java-set-event-log',
-                'notification/java-set-receive-event',
-                'notification/java-set-event-history',
-                'notification/java-set-event-format',
+                'notification/python-warning-notice',
+                'notification/python-metric-warning-notice',
+                'notification/python-hitmap-notice',
+                'notification/python-set-event-detect-anomal',
+                'notification/python-set-event-log',
+                'notification/python-set-receive-event',
+                'notification/python-set-event-history',
+                'notification/python-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ],
+        },
+      ]
+    },
+  ],
+  dotNetSidebar: [
+    {
+      type: 'category',
+      label: '.NET 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'apm/dotnet-intro'
+      },
+      items: [
+        'apm/dotnet-supported-spec',
+        'apm/dotnet-install-agent',
+        'apm/dotnet-after-install',
+        'apm/dotnet-agent-troubleshooting',
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/dotnet-set-agent'
+          },
+          items: [
+            'apm/dotnet-agent-name',
+            'apm/dotnet-control-function',
+            'apm/dotnet-agent-network',
+            'apm/dotnet-agent-performance',
+            'apm/dotnet-agent-log',
+            'apm/dotnet-agent-transaction',
+            'apm/dotnet-agent-dbsql',
+            'apm/dotnet-agent-httpcapicall',
+            'apm/dotnet-agent-number-of-user',
+            'apm/dotnet-agent-static',
+            'apm/dotnet-agent-topology',
+          ]
+        },
+        {
+          type: 'doc',
+          label: '관리하기',
+          id: 'apm/dotnet-agent-manage'
+        },
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/dotnet-dashboard-intro'
+              },
+              items: [
+                'dashboard/dotnet-dashboard',
+                'dashboard/dotnet-dashboard-transactionmap',
+                'dashboard/dotnet-dashboard-active-transaction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/dotnet-flex-board',
+              },
+              items: [
+                'dashboard/dotnet-flexboard-template',
+                'dashboard/dotnet-flexboard-create',
+                'dashboard/dotnet-flexboard-metric-widget',
+                'dashboard/dotnet-flexboard-widget-manage',
+                'dashboard/dotnet-flexboard-mode',
+                'dashboard/dotnet-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/dotnet-topology',
+              },
+              items: [
+                'topology/dotnet-topology-basic',
+                'topology/dotnet-topology-type',
+                'topology/dotnet-topology-add-function',
+                'topology/dotnet-topology-settings'
+              ],
+            },
+            {
+              type: 'category',
+              label: '트랜잭션',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/dotnet-track-transactions-intro'
+              },
+              items: [
+                'track-transactions/dotnet-trs-view',
+                'track-transactions/dotnet-trs-profile',
+                // 'track-transactions/php-active-transactions',
+                'track-transactions/dotnet-collect-stacks',
+                'track-transactions/dotnet-trs-multi-trace',
+                // 'track-transactions/php-trs-endpoint-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/dotnet-metrics-intro'
+              },
+              items: [
+                'metrics/dotnet-metrics-app',
+                'metrics/dotnet-metrics-performance-counter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/dotnet-analysis-report-intro'
+              },
+              items: [
+                'analysis/dotnet-cube',
+                // 'analysis/php-analysis-apm',
+                'analysis/dotnet-analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/dotnet-report-intro'
+                  },
+                  items: [
+                    'analysis/dotnet-report-apm',
+                    'analysis/dotnet-integrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/dotnet-apm-set-notice',
+              },
+              items: [
+                'notification/dotnet-warning-notice',
+                'notification/dotnet-metric-warning-notice',
+                'notification/dotnet-hitmap-notice',
+                'notification/dotnet-set-event-detect-anomal',
+                'notification/dotnet-set-event-log',
+                'notification/dotnet-set-receive-event',
+                'notification/dotnet-set-event-history',
+                'notification/dotnet-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ],
+        },
+      ]
+    },
+  ],
+  goSidebar: [
+    {
+      type: 'category',
+      label: 'Golang 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'apm/golang-intro'
+      },
+      items: [
+        'apm/golang-supported-spec',
+        'apm/golang-install-agent',
+        'apm/golang-after-install-agent',
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/golang-set-agent'
+          },
+          items: [
+            'apm/golang-agent-name',
+            'apm/golang-agent-transaction',
+            'apm/golang-agent-dbsql',
+            'apm/golang-agent-httpcall',
+            'apm/golang-agent-method',
+            'apm/golang-agent-number-of-user'
+          ]
+        },
+        'apm/golang-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/golang-dashboard-intro'
+              },
+              items: [
+                'dashboard/golang-dashboard',
+                'dashboard/golang-dashboard-transactionmap',
+                'dashboard/golang-dashboard-active-transaction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/golang-flex-board',
+              },
+              items: [
+                'dashboard/golang-flexboard-template',
+                'dashboard/golang-flexboard-create',
+                'dashboard/golang-flexboard-metric-widget',
+                'dashboard/golang-flexboard-widget-manage',
+                'dashboard/golang-flexboard-mode',
+                'dashboard/golang-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '토폴로지',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'topology/dotnet-topology',
+              },
+              items: [
+                'topology/dotnet-topology-basic',
+                'topology/dotnet-topology-type',
+                'topology/dotnet-topology-add-function',
+                'topology/dotnet-topology-settings'
+              ],
+            },
+            {
+              type: 'category',
+              label: '트랜잭션',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'track-transactions/dotnet-track-transactions-intro'
+              },
+              items: [
+                'track-transactions/dotnet-trs-view',
+                'track-transactions/dotnet-trs-profile',
+                // 'track-transactions/php-active-transactions',
+                'track-transactions/dotnet-collect-stacks',
+                'track-transactions/dotnet-trs-multi-trace',
+                // 'track-transactions/php-trs-endpoint-setting',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'metrics/dotnet-metrics-intro'
+              },
+              items: [
+                'metrics/dotnet-metrics-app',
+                'metrics/dotnet-metrics-performance-counter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'analysis/dotnet-analysis-report-intro'
+              },
+              items: [
+                'analysis/dotnet-cube',
+                // 'analysis/php-analysis-apm',
+                'analysis/dotnet-analysis-apm-trs',
+                {
+                  type: 'category',
+                  label: '보고서',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'analysis/dotnet-report-intro'
+                  },
+                  items: [
+                    'analysis/dotnet-report-apm',
+                    'analysis/dotnet-integrated-report',
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/dotnet-apm-set-notice',
+              },
+              items: [
+                'notification/dotnet-warning-notice',
+                'notification/dotnet-metric-warning-notice',
+                'notification/dotnet-hitmap-notice',
+                'notification/dotnet-set-event-detect-anomal',
+                'notification/dotnet-set-event-log',
+                'notification/dotnet-set-receive-event',
+                'notification/dotnet-set-event-history',
+                'notification/dotnet-set-event-format',
               ],
             },
             {
@@ -1153,6 +1531,46 @@ const sidebars = {
       //   id: 'shortcut',
       // },
       items: [
+        // 'apm/java/apm-introduction',
+        // 'apm/php/apm-introduction',
+        // 'apm/nodejs/apm-introduction',
+        // 'apm/python-intro',
+        {
+          type: 'link',
+          label: 'Java 모니터링',
+          href: '../apm/java/apm-introduction',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'PHP 모니터링',
+          href: '../apm/php/apm-introduction',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Node.js 모니터링',
+          href: '../apm/nodejs/apm-introduction',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Python 모니터링',
+          href: '../apm/python-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: '.NET 모니터링',
+          href: '../apm/dotnet-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Golang 모니터링',
+          href: '../apm/golang-intro',
+          className: "_productlink"
+        },
         {
           type: 'link',
           label: '애플리케이션',
@@ -2802,116 +3220,6 @@ const sidebars = {
         id: 'apm/application-intro',
       },
       items: [ 
-        {
-          type: 'category',
-          label: '.NET 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/dotnet-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/dotnet-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/dotnet-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/dotnet-after-install'
-            },
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/dotnet-agent-troubleshooting',
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/dotnet-set-agent'
-              },
-              items: [
-                'apm/dotnet-agent-name',
-                'apm/dotnet-control-function',
-                'apm/dotnet-agent-network',
-                'apm/dotnet-agent-performance',
-                'apm/dotnet-agent-log',
-                'apm/dotnet-agent-transaction',
-                'apm/dotnet-agent-dbsql',
-                'apm/dotnet-agent-httpcapicall',
-                'apm/dotnet-agent-number-of-user',
-                'apm/dotnet-agent-static',
-                'apm/dotnet-agent-topology',
-              ]
-            },
-            {
-              type: 'doc',
-              label: '관리하기',
-              id: 'apm/dotnet-agent-manage'
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Golang 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/golang-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/golang-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/golang-install-agent'
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/golang-after-install-agent'
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/golang-set-agent'
-              },
-              items: [
-                'apm/golang-agent-name',
-                'apm/golang-agent-transaction',
-                'apm/golang-agent-dbsql',
-                'apm/golang-agent-httpcall',
-                'apm/golang-agent-method',
-                'apm/golang-agent-number-of-user'
-              ]
-            },
-            {
-              type: 'doc',
-              label: '관리하기',
-              id: 'apm/golang-agent-manage'
-            }
-          ]
-        },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
