@@ -88,6 +88,7 @@ main .markdown .gs {
 }
 
 main .faq th {
+  /* font-family: monospace; */
   border: none;
   font-size: 102%;
   text-align: left;
@@ -96,6 +97,13 @@ main .faq th {
 
 main .markdown .faq th code {
   display: inline;
+  /* background-color: var(--ifm-code-background);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--ifm-code-border-radius);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
+  padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  vertical-align: middle; */
 }
 
 main .faq blockquote {
@@ -459,11 +467,17 @@ main .markdown code.Feature {
   border: none;
   padding: 0 5px 0 5px;
 }
+[data-theme='dark'] main .markdown code.Feature {
+  background-color: rgb(134, 162, 154);
+}
 main .markdown code.Change {
   background-color: rgba(230,130,0,.08);
   color: #a53221;
   border: none;
   padding: 0 5px 0 5px;
+}
+[data-theme='dark'] main .markdown code.Change {
+  background-color: rgb(200, 168, 126);
 }
 main .markdown code.Fixed {
   background-color: rgba(24,73,220,.08);
@@ -471,12 +485,18 @@ main .markdown code.Fixed {
   border: none;
   padding: 0 5px 0 5px;
 }
+[data-theme='dark'] main .markdown code.Fixed {
+  background-color: rgb(54, 66, 102);
+}
 
 main .markdown code.New {
   background-color: rgb(9, 34, 109, 1);
   color: #fff;
   border: none;
   padding: 0 5px 0 5px;
+}
+[data-theme='dark'] main .markdown code.New {
+  background-color: rgb(5, 51, 188);
 }
 main .markdown code.Deprecate {
   background-color: rgba(220,24,24,.08);
