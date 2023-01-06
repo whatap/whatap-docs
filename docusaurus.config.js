@@ -33,15 +33,6 @@ const config = {
   ],
   plugins: [
     [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
-      },
-    ],
-    [
       '@docusaurus/plugin-google-gtag',
       {
         trackingID: 'G-4QXE2TJTM0',
@@ -110,6 +101,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        }
       }),
     ],
   ],
