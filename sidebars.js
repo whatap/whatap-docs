@@ -1220,12 +1220,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/dotnet-analysis-report-intro'
+                id: 'analysis/golang-analysis-report-intro'
               },
               items: [
                 'analysis/dotnet-cube',
                 // 'analysis/php-analysis-apm',
-                'analysis/dotnet-analysis-apm-trs',
+                'analysis/golang-analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -1233,11 +1233,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/dotnet-report-intro'
+                    id: 'analysis/golang-report-intro'
                   },
                   items: [
-                    'analysis/dotnet-report-apm',
-                    'analysis/dotnet-integrated-report',
+                    'analysis/golang-report-apm',
+                    'analysis/golang-integrated-report',
                   ]
                 }
               ]
@@ -1249,17 +1249,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/dotnet-apm-set-notice',
+                id: 'notification/golang-apm-set-notice',
               },
               items: [
-                'notification/dotnet-warning-notice',
-                'notification/dotnet-metric-warning-notice',
-                'notification/dotnet-hitmap-notice',
-                'notification/dotnet-set-event-detect-anomal',
-                'notification/dotnet-set-event-log',
-                'notification/dotnet-set-receive-event',
-                'notification/dotnet-set-event-history',
-                'notification/dotnet-set-event-format',
+                'notification/golang-warning-notice',
+                'notification/golang-metric-warning-notice',
+                'notification/golang-hitmap-notice',
+                'notification/golang-set-event-detect-anomal',
+                'notification/golang-set-event-log',
+                'notification/golang-set-receive-event',
+                'notification/golang-set-event-history',
+                'notification/golang-set-event-format',
               ],
             },
             {
