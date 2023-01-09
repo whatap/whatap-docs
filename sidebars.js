@@ -2063,6 +2063,137 @@ const sidebars = {
       ],
     }
   ],
+  altibaseSidebar: [
+    {
+      type: 'category',
+      label: 'Altibase 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'altibase/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'altibase/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase/install-db-agent',
+            'altibase/after-install-db-agent',
+            'altibase/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/db-agent-settings'
+          },
+          items: [
+            'altibase/db-agent-network',
+            'altibase/db-agent-naming',
+            'altibase/db-agent-aws',
+            'altibase/db-agent-data',
+            // 'altibase/db-agent-xos-settings', // Postgresql, Oracle
+          ],
+        },
+        'altibase/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/db-dashboard-intro'
+              },
+              items: [
+                'altibase/db-instance-list',
+                'altibase/db-instance-monitoring',
+                // 'altibase/db-multi-instance-monitoring',
+                // 'altibase/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/db-flex-board',
+              },
+              items: [
+                'altibase/db-flexboard-template',
+                'altibase/db-flexboard-create',
+                'altibase/db-flexboard-metric-widget',
+                'altibase/db-flexboard-widget-manage',
+                'altibase/db-flexboard-mode',
+                'altibase/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'altibase/db-analysis-function',
+                'altibase/db-metrics-intro',
+                'altibase/db-log-viewer',
+                'altibase/db-stat',
+                'altibase/report-intro',
+                'altibase/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/db-set-notics',
+              },
+              items: [
+                'altibase/db-warning-notice',
+                'altibase/db-metric-warning-notice',
+                'altibase/db-set-event-detect-anomal',
+                'altibase/db-set-receive-event',
+                'altibase/db-set-event-history',
+                'altibase/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   dbSidebar: [
     {
       type: 'category',
