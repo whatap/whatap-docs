@@ -71,19 +71,19 @@ const config = {
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_mysql'
+            from: '/kr/agent_mysql'
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_mssql'
+            from: '/kr/agent_mssql'
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_tibero'
+            from: '/kr/agent_tibero'
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_postgresql/'
+            from: '/kr/agent_postgresql/'
           }
         ]
       }
