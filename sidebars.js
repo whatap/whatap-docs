@@ -1542,18 +1542,18 @@ const sidebars = {
   mysqlSidebar: [
     {
       type: 'category',
-      label: 'Oracle 모니터링',
+      label: 'MySQL 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'oracle/db-monitoring-intro'
+        id: 'mysql/db-monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'oracle/db-monitoring-support',
+          id: 'mysql/db-monitoring-support',
         },
         {
           type: 'category',
@@ -1561,9 +1561,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'oracle/install-db-agent',
-            'oracle/after-install-db-agent',
-            'oracle/db-troubleshooting',
+            'mysql/install-db-agent',
+            'mysql/after-install-db-agent',
+            'mysql/db-troubleshooting',
           ],
         },
         {
@@ -1573,17 +1573,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'oracle/db-agent-settings'
+            id: 'mysql/db-agent-settings'
           },
           items: [
-            'oracle/db-agent-network',
-            'oracle/db-agent-naming',
-            'oracle/db-agent-aws',
-            'oracle/db-agent-data',
-            'oracle/db-agent-xos-settings',
+            'mysql/db-agent-network',
+            'mysql/db-agent-naming',
+            'mysql/db-agent-aws',
+            'mysql/db-agent-data',
+            // 'mysql/db-agent-xos-settings',
           ],
         },
-        'oracle/db-agent-manage',
+        'mysql/db-agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1597,13 +1597,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-dashboard-intro'
+                id: 'mysql/db-dashboard-intro'
               },
               items: [
-                'oracle/db-instance-list',
-                'oracle/db-instance-monitoring',
-                'oracle/db-multi-instance-monitoring',
-                'oracle/db-slow-query',
+                'mysql/db-instance-list',
+                'mysql/db-instance-monitoring',
+                'mysql/db-multi-instance-monitoring',
+                'mysql/db-slow-query',
               ],
             },
             {
@@ -1613,15 +1613,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-flex-board',
+                id: 'mysql/db-flex-board',
               },
               items: [
-                'oracle/db-flexboard-template',
-                'oracle/db-flexboard-create',
-                'oracle/db-flexboard-metric-widget',
-                'oracle/db-flexboard-widget-manage',
-                'oracle/db-flexboard-mode',
-                'oracle/db-flexboard-share',
+                'mysql/db-flexboard-template',
+                'mysql/db-flexboard-create',
+                'mysql/db-flexboard-metric-widget',
+                'mysql/db-flexboard-widget-manage',
+                'mysql/db-flexboard-mode',
+                'mysql/db-flexboard-share',
               ],
             },
             {
@@ -1634,12 +1634,12 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'oracle/db-analysis-function',
-                'oracle/db-metrics-intro',
-                'oracle/db-log-viewer',
-                'oracle/db-stat',
-                'oracle/report-intro',
-                'oracle/integrated-report',
+                'mysql/db-analysis-function',
+                'mysql/db-metrics-intro',
+                'mysql/db-log-viewer',
+                'mysql/db-stat',
+                'mysql/report-intro',
+                'mysql/integrated-report',
               ]
             },
             {
@@ -1649,15 +1649,146 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-set-notics',
+                id: 'mysql/db-set-notics',
               },
               items: [
-                'oracle/db-warning-notice',
-                'oracle/db-metric-warning-notice',
-                'oracle/db-set-event-detect-anomal',
-                'oracle/db-set-receive-event',
-                'oracle/db-set-event-history',
-                'oracle/db-set-event-format',
+                'mysql/db-warning-notice',
+                'mysql/db-metric-warning-notice',
+                'mysql/db-set-event-detect-anomal',
+                'mysql/db-set-receive-event',
+                'mysql/db-set-event-history',
+                'mysql/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  mssqlSidebar: [
+    {
+      type: 'category',
+      label: 'MySQL 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mysql/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mysql/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql/install-db-agent',
+            'mysql/after-install-db-agent',
+            'mysql/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/db-agent-settings'
+          },
+          items: [
+            'mysql/db-agent-network',
+            'mysql/db-agent-naming',
+            'mysql/db-agent-aws',
+            'mysql/db-agent-data',
+            // 'mysql/db-agent-xos-settings',
+          ],
+        },
+        'mysql/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/db-dashboard-intro'
+              },
+              items: [
+                'mysql/db-instance-list',
+                'mysql/db-instance-monitoring',
+                'mysql/db-multi-instance-monitoring',
+                'mysql/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/db-flex-board',
+              },
+              items: [
+                'mysql/db-flexboard-template',
+                'mysql/db-flexboard-create',
+                'mysql/db-flexboard-metric-widget',
+                'mysql/db-flexboard-widget-manage',
+                'mysql/db-flexboard-mode',
+                'mysql/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'mysql/db-analysis-function',
+                'mysql/db-metrics-intro',
+                'mysql/db-log-viewer',
+                'mysql/db-stat',
+                'mysql/report-intro',
+                'mysql/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/db-set-notics',
+              },
+              items: [
+                'mysql/db-warning-notice',
+                'mysql/db-metric-warning-notice',
+                'mysql/db-set-event-detect-anomal',
+                'mysql/db-set-receive-event',
+                'mysql/db-set-event-history',
+                'mysql/db-set-event-format',
               ],
             },
             {
