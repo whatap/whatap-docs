@@ -1472,7 +1472,7 @@ const sidebars = {
                 'oracle/db-instance-list',
                 'oracle/db-instance-monitoring',
                 'oracle/db-multi-instance-monitoring',
-                'oracle/db-slow-query',
+                // 'oracle/db-slow-query',
               ],
             },
             {
@@ -1602,7 +1602,7 @@ const sidebars = {
               items: [
                 'mysql/db-instance-list',
                 'mysql/db-instance-monitoring',
-                'mysql/db-multi-instance-monitoring',
+                // 'mysql/db-multi-instance-monitoring',
                 'mysql/db-slow-query',
               ],
             },
@@ -1734,7 +1734,7 @@ const sidebars = {
                 'mssql/db-instance-list',
                 'mssql/db-instance-monitoring',
                 'mssql/db-multi-instance-monitoring',
-                'mssql/db-slow-query',
+                // 'mssql/db-slow-query',
               ],
             },
             {
@@ -1804,18 +1804,18 @@ const sidebars = {
   tiberoSidebar: [
     {
       type: 'category',
-      label: 'MS SQL Server 모니터링',
+      label: 'Tibero 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'mssql/db-monitoring-intro'
+        id: 'tibero/db-monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'mssql/db-monitoring-support',
+          id: 'tibero/db-monitoring-support',
         },
         {
           type: 'category',
@@ -1823,9 +1823,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mssql/install-db-agent',
-            'mssql/after-install-db-agent',
-            'mssql/db-troubleshooting',
+            'tibero/install-db-agent',
+            'tibero/after-install-db-agent',
+            'tibero/db-troubleshooting',
           ],
         },
         {
@@ -1835,17 +1835,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mssql/db-agent-settings'
+            id: 'tibero/db-agent-settings'
           },
           items: [
-            'mssql/db-agent-network',
-            'mssql/db-agent-naming',
-            'mssql/db-agent-aws',
-            'mssql/db-agent-data',
-            // 'mssql/db-agent-xos-settings',
+            'tibero/db-agent-network',
+            'tibero/db-agent-naming',
+            'tibero/db-agent-aws',
+            'tibero/db-agent-data',
+            // 'tibero/db-agent-xos-settings', // Postgresql, Oracle
           ],
         },
-        'mssql/db-agent-manage',
+        'tibero/db-agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1859,13 +1859,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-dashboard-intro'
+                id: 'tibero/db-dashboard-intro'
               },
               items: [
-                'mssql/db-instance-list',
-                'mssql/db-instance-monitoring',
-                'mssql/db-multi-instance-monitoring',
-                'mssql/db-slow-query',
+                'tibero/db-instance-list',
+                'tibero/db-instance-monitoring',
+                // 'tibero/db-multi-instance-monitoring',
+                // 'tibero/db-slow-query',
               ],
             },
             {
@@ -1875,15 +1875,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-flex-board',
+                id: 'tibero/db-flex-board',
               },
               items: [
-                'mssql/db-flexboard-template',
-                'mssql/db-flexboard-create',
-                'mssql/db-flexboard-metric-widget',
-                'mssql/db-flexboard-widget-manage',
-                'mssql/db-flexboard-mode',
-                'mssql/db-flexboard-share',
+                'tibero/db-flexboard-template',
+                'tibero/db-flexboard-create',
+                'tibero/db-flexboard-metric-widget',
+                'tibero/db-flexboard-widget-manage',
+                'tibero/db-flexboard-mode',
+                'tibero/db-flexboard-share',
               ],
             },
             {
@@ -1896,12 +1896,12 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'mssql/db-analysis-function',
-                'mssql/db-metrics-intro',
-                'mssql/db-log-viewer',
-                'mssql/db-stat',
-                'mssql/report-intro',
-                'mssql/integrated-report',
+                'tibero/db-analysis-function',
+                'tibero/db-metrics-intro',
+                'tibero/db-log-viewer',
+                'tibero/db-stat',
+                'tibero/report-intro',
+                'tibero/integrated-report',
               ]
             },
             {
@@ -1911,15 +1911,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-set-notics',
+                id: 'tibero/db-set-notics',
               },
               items: [
-                'mssql/db-warning-notice',
-                'mssql/db-metric-warning-notice',
-                'mssql/db-set-event-detect-anomal',
-                'mssql/db-set-receive-event',
-                'mssql/db-set-event-history',
-                'mssql/db-set-event-format',
+                'tibero/db-warning-notice',
+                'tibero/db-metric-warning-notice',
+                'tibero/db-set-event-detect-anomal',
+                'tibero/db-set-receive-event',
+                'tibero/db-set-event-history',
+                'tibero/db-set-event-format',
               ],
             },
             {
