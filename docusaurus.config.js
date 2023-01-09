@@ -33,6 +33,17 @@ const config = {
   ],
   plugins: [
     [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: 'url/url-intro',
+            from: '/use_guide/url_monitoring/intro.html'
+          }
+        ]
+      }
+    ],
+    [
       '@docusaurus/plugin-google-gtag',
       {
         trackingID: 'G-4QXE2TJTM0',
