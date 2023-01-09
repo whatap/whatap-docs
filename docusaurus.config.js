@@ -54,10 +54,6 @@ const config = {
             from: '/whatap_guide/install_agent/server/support_env'
           },
           {
-            to: '/server/server-intro',
-            from: '/whatap_guide/install_agent/server/support_env.html#empty'
-          },
-          {
             to: '/kubernetes/kubernetes-intro',
             from: '/whatap_guide/install_agent/kubernetes/install.html',
           },
@@ -75,19 +71,19 @@ const config = {
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_mysql/#empty'
+            from: 'kr/agent_mysql'
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_mssql/#empty'
+            from: 'kr/agent_mssql'
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_tibero/#empty'
+            from: 'kr/agent_tibero'
           },
           {
             to: '/db/install-db-agent',
-            from: 'kr/agent_postgresql/#empty'
+            from: 'kr/agent_postgresql/'
           }
         ]
       }
