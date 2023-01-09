@@ -20,7 +20,7 @@ const sidebars = {
   javaSidebar: [
     {
       type: 'category',
-      label: 'JAVA 모니터링',
+      label: 'JAVA',
       collapsible: false,
       collapsed: false,
       link: {
@@ -263,7 +263,7 @@ const sidebars = {
   phpSidebar: [
     {
       type: 'category',
-      label: 'PHP 모니터링',
+      label: 'PHP',
       collapsible: false,
       collapsed: false,
       link: {
@@ -492,7 +492,7 @@ const sidebars = {
   nodejsSidebar: [
     {
       type: 'category',
-      label: 'Node.js 모니터링',
+      label: 'Node.js',
       collapsible: false,
       collapsed: false,
       link: {
@@ -692,7 +692,7 @@ const sidebars = {
   pySidebar: [
     {
       type: 'category',
-      label: 'Python 모니터링',
+      label: 'Python',
       collapsible: false,
       collapsed: false,
       link: {
@@ -902,7 +902,7 @@ const sidebars = {
   dotNetSidebar: [
     {
       type: 'category',
-      label: '.NET 모니터링',
+      label: '.NET',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1096,7 +1096,7 @@ const sidebars = {
   goSidebar: [
     {
       type: 'category',
-      label: 'Golang 모니터링',
+      label: 'Golang',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1280,7 +1280,7 @@ const sidebars = {
   postgreSidebar: [
     {
       type: 'category',
-      label: 'PostgreSQL 모니터링',
+      label: 'PostgreSQL',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1416,7 +1416,7 @@ const sidebars = {
   dboracleSidebar: [
     {
       type: 'category',
-      label: 'Oracle 모니터링',
+      label: 'Oracle',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1552,7 +1552,7 @@ const sidebars = {
   mysqlSidebar: [
     {
       type: 'category',
-      label: 'MySQL 모니터링',
+      label: 'MySQL',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1688,7 +1688,7 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'MS SQL Server 모니터링',
+      label: 'MS SQL Server',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1824,7 +1824,7 @@ const sidebars = {
   tiberoSidebar: [
     {
       type: 'category',
-      label: 'Tibero 모니터링',
+      label: 'Tibero',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1960,7 +1960,7 @@ const sidebars = {
   cubridSidebar: [
     {
       type: 'category',
-      label: 'CUBRID 모니터링',
+      label: 'CUBRID',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2096,7 +2096,7 @@ const sidebars = {
   altibaseSidebar: [
     {
       type: 'category',
-      label: 'Altibase 모니터링',
+      label: 'Altibase',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2232,7 +2232,7 @@ const sidebars = {
   redisSidebar: [
     {
       type: 'category',
-      label: 'Redis 모니터링',
+      label: 'Redis',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2348,6 +2348,142 @@ const sidebars = {
                 'redis/db-set-receive-event',
                 'redis/db-set-event-history',
                 'redis/db-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  mongodbSidebar: [
+    {
+      type: 'category',
+      label: 'MongoDB',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mongodb/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mongodb/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mongodb/install-db-agent',
+            'mongodb/after-install-db-agent',
+            'mongodb/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/db-agent-settings'
+          },
+          items: [
+            'mongodb/db-agent-network',
+            'mongodb/db-agent-naming',
+            'mongodb/db-agent-aws',
+            'mongodb/db-agent-data',
+            // 'mongodb/db-agent-xos-settings', // Postgresql, Oracle
+          ],
+        },
+        'mongodb/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mongodb/db-dashboard-intro'
+              },
+              items: [
+                'mongodb/db-instance-list',
+                'mongodb/db-instance-monitoring',
+                'mongodb/db-multi-instance-monitoring',
+                // 'mongodb/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mongodb/db-flex-board',
+              },
+              items: [
+                'mongodb/db-flexboard-template',
+                'mongodb/db-flexboard-create',
+                'mongodb/db-flexboard-metric-widget',
+                'mongodb/db-flexboard-widget-manage',
+                'mongodb/db-flexboard-mode',
+                'mongodb/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'mongodb/db-analysis-function',
+                'mongodb/db-metrics-intro',
+                'mongodb/db-log-viewer',
+                'mongodb/db-stat',
+                // 'mongodb/report-intro',
+                // 'mongodb/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mongodb/db-set-notics',
+              },
+              items: [
+                'mongodb/db-warning-notice',
+                'mongodb/db-metric-warning-notice',
+                'mongodb/db-set-event-detect-anomal',
+                'mongodb/db-set-receive-event',
+                'mongodb/db-set-event-history',
+                'mongodb/db-set-event-format',
               ],
             },
             {
@@ -2768,74 +2904,104 @@ const sidebars = {
         // 'apm/python-intro',
         {
           type: 'link',
-          label: 'Java 모니터링',
+          label: 'Java',
           href: '../apm/java/apm-introduction',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: 'PHP 모니터링',
+          label: 'PHP',
           href: '../apm/php/apm-introduction',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: 'Node.js 모니터링',
+          label: 'Node.js',
           href: '../apm/nodejs/apm-introduction',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: 'Python 모니터링',
+          label: 'Python',
           href: '../apm/python-intro',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: '.NET 모니터링',
+          label: '.NET',
           href: '../apm/dotnet-intro',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: 'Golang 모니터링',
+          label: 'Golang',
           href: '../apm/golang-intro',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: '애플리케이션',
-          href: '../apm/application-intro',
-          className: "_productlink"
-        },
-        {
-          type: 'link',
-          label: '서버',
+          label: 'Server',
           href: '../server/server-intro',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: '데이터베이스',
-          href: '../db/db-monitoring-intro',
-          className: "_productlink"
-        },
-        {
-          type: 'link',
-          label: '쿠버네티스',
+          label: 'Kubernetes',
           href: '../kubernetes/kubernetes-intro',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: '클라우드',
-          href: '../ref-cloud/cloud',
+          label: 'PostgreSQL',
+          href: '../postgresql/db-monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: '로그',
-          href: '../log/log-intro',
+          label: 'Oracle',
+          href: '../oracle/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'MySQL',
+          href: '../mysql/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'MS SQL Server',
+          href: '../mssql/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Tibero',
+          href: '../tibero/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'CUBRID',
+          href: '../cubrid/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Altibase',
+          href: '../altibase/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Redis',
+          href: '../redis/db-monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'MongoDB',
+          href: '../mongodb/db-monitoring-intro',
           className: "_productlink"
         },
         {
@@ -2845,8 +3011,20 @@ const sidebars = {
           className: "_productlink"
         },
         {
+          type: 'link',
+          label: 'Cloud',
+          href: '../ref-cloud/cloud',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Log',
+          href: '../log/log-intro',
+          className: "_productlink"
+        },
+        {
           type: 'doc',
-          label: '확장 도구',
+          label: 'Extensions',
           id: 'extensions',
           className: "_productlink"
         },

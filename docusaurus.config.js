@@ -158,17 +158,17 @@ const config = {
               {
                 type: 'doc',
                 docId: 'kubernetes/kubernetes-intro',
-                label: '쿠버네티스',
+                label: 'Kubernetes',
               },
               {
                 type: 'doc',
                 docId: 'ref-cloud/cloud',
-                label: '클라우드',
+                label: 'Cloud',
               },
               {
                 type: 'doc',
                 docId: 'log/log-intro',
-                label: '로그',
+                label: 'Log',
               },
               {
                 type: 'doc',
@@ -178,7 +178,7 @@ const config = {
               {
                 type: 'doc',
                 docId: 'extensions',
-                label: '확장 도구'
+                label: 'Extensions'
               }
               // {
               //   type: 'doc',
