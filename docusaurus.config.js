@@ -37,8 +37,8 @@ const config = {
       {
         redirects: [
           {
-            to: 'url/url-intro',
-            from: '/use_guide/url_monitoring/intro.html'
+            to: '/url/url-intro',
+            from: '//use_guide/url_monitoring/intro.html'
           }
         ]
       }
