@@ -1932,6 +1932,137 @@ const sidebars = {
       ],
     }
   ],
+  cubridSidebar: [
+    {
+      type: 'category',
+      label: 'CUBRID 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'cubrid/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'cubrid/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'cubrid/install-db-agent',
+            'cubrid/after-install-db-agent',
+            'cubrid/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/db-agent-settings'
+          },
+          items: [
+            'cubrid/db-agent-network',
+            'cubrid/db-agent-naming',
+            'cubrid/db-agent-aws',
+            'cubrid/db-agent-data',
+            // 'cubrid/db-agent-xos-settings', // Postgresql, Oracle
+          ],
+        },
+        'cubrid/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid/db-dashboard-intro'
+              },
+              items: [
+                'cubrid/db-instance-list',
+                'cubrid/db-instance-monitoring',
+                // 'cubrid/db-multi-instance-monitoring',
+                // 'cubrid/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid/db-flex-board',
+              },
+              items: [
+                'cubrid/db-flexboard-template',
+                'cubrid/db-flexboard-create',
+                'cubrid/db-flexboard-metric-widget',
+                'cubrid/db-flexboard-widget-manage',
+                'cubrid/db-flexboard-mode',
+                'cubrid/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'cubrid/db-analysis-function',
+                'cubrid/db-metrics-intro',
+                'cubrid/db-log-viewer',
+                'cubrid/db-stat',
+                'cubrid/report-intro',
+                'cubrid/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid/db-set-notics',
+              },
+              items: [
+                'cubrid/db-warning-notice',
+                'cubrid/db-metric-warning-notice',
+                'cubrid/db-set-event-detect-anomal',
+                'cubrid/db-set-receive-event',
+                'cubrid/db-set-event-history',
+                'cubrid/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   dbSidebar: [
     {
       type: 'category',
