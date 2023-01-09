@@ -1277,6 +1277,542 @@ const sidebars = {
       ]
     },
   ],
+  postgreSidebar: [
+    {
+      type: 'category',
+      label: 'PostgreSQL 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'postgresql/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'postgresql/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'postgresql/install-db-agent',
+            'postgresql/after-install-db-agent',
+            'postgresql/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql/db-agent-settings'
+          },
+          items: [
+            'postgresql/db-agent-network',
+            'postgresql/db-agent-naming',
+            'postgresql/db-agent-aws',
+            'postgresql/db-agent-data',
+            'postgresql/db-agent-xos-settings',
+          ],
+        },
+        'postgresql/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/db-dashboard-intro'
+              },
+              items: [
+                'postgresql/db-instance-list',
+                'postgresql/db-instance-monitoring',
+                'postgresql/db-multi-instance-monitoring',
+                'postgresql/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/db-flex-board',
+              },
+              items: [
+                'postgresql/db-flexboard-template',
+                'postgresql/db-flexboard-create',
+                'postgresql/db-flexboard-metric-widget',
+                'postgresql/db-flexboard-widget-manage',
+                'postgresql/db-flexboard-mode',
+                'postgresql/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'postgresql/db-analysis-function',
+                'postgresql/db-metrics-intro',
+                'postgresql/db-log-viewer',
+                'postgresql/db-stat',
+                'postgresql/report-intro',
+                'postgresql/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/db-set-notics',
+              },
+              items: [
+                'postgresql/db-warning-notice',
+                'postgresql/db-metric-warning-notice',
+                'postgresql/db-set-event-detect-anomal',
+                'postgresql/db-set-receive-event',
+                'postgresql/db-set-event-history',
+                'postgresql/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  dboracleSidebar: [
+    {
+      type: 'category',
+      label: 'Oracle 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'oracle/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'oracle/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle/install-db-agent',
+            'oracle/after-install-db-agent',
+            'oracle/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/db-agent-settings'
+          },
+          items: [
+            'oracle/db-agent-network',
+            'oracle/db-agent-naming',
+            'oracle/db-agent-aws',
+            'oracle/db-agent-data',
+            'oracle/db-agent-xos-settings',
+          ],
+        },
+        'oracle/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/db-dashboard-intro'
+              },
+              items: [
+                'oracle/db-instance-list',
+                'oracle/db-instance-monitoring',
+                'oracle/db-multi-instance-monitoring',
+                'oracle/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/db-flex-board',
+              },
+              items: [
+                'oracle/db-flexboard-template',
+                'oracle/db-flexboard-create',
+                'oracle/db-flexboard-metric-widget',
+                'oracle/db-flexboard-widget-manage',
+                'oracle/db-flexboard-mode',
+                'oracle/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'oracle/db-analysis-function',
+                'oracle/db-metrics-intro',
+                'oracle/db-log-viewer',
+                'oracle/db-stat',
+                'oracle/report-intro',
+                'oracle/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/db-set-notics',
+              },
+              items: [
+                'oracle/db-warning-notice',
+                'oracle/db-metric-warning-notice',
+                'oracle/db-set-event-detect-anomal',
+                'oracle/db-set-receive-event',
+                'oracle/db-set-event-history',
+                'oracle/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  mysqlSidebar: [
+    {
+      type: 'category',
+      label: 'Oracle 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'oracle/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'oracle/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle/install-db-agent',
+            'oracle/after-install-db-agent',
+            'oracle/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/db-agent-settings'
+          },
+          items: [
+            'oracle/db-agent-network',
+            'oracle/db-agent-naming',
+            'oracle/db-agent-aws',
+            'oracle/db-agent-data',
+            'oracle/db-agent-xos-settings',
+          ],
+        },
+        'oracle/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/db-dashboard-intro'
+              },
+              items: [
+                'oracle/db-instance-list',
+                'oracle/db-instance-monitoring',
+                'oracle/db-multi-instance-monitoring',
+                'oracle/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/db-flex-board',
+              },
+              items: [
+                'oracle/db-flexboard-template',
+                'oracle/db-flexboard-create',
+                'oracle/db-flexboard-metric-widget',
+                'oracle/db-flexboard-widget-manage',
+                'oracle/db-flexboard-mode',
+                'oracle/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'oracle/db-analysis-function',
+                'oracle/db-metrics-intro',
+                'oracle/db-log-viewer',
+                'oracle/db-stat',
+                'oracle/report-intro',
+                'oracle/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/db-set-notics',
+              },
+              items: [
+                'oracle/db-warning-notice',
+                'oracle/db-metric-warning-notice',
+                'oracle/db-set-event-detect-anomal',
+                'oracle/db-set-receive-event',
+                'oracle/db-set-event-history',
+                'oracle/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  dbSidebar: [
+    {
+      type: 'category',
+      label: '데이터베이스 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'db/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'db/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'db/install-db-agent',
+            'db/after-install-db-agent',
+            'db/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db/db-agent-settings'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '에이전트 네트워크 통신',
+              id: 'db/db-agent-network',
+            },
+            {
+              type: 'doc',
+              label: '에이전트 이름 식별',
+              id: 'db/db-agent-naming',
+            },
+            'db/db-agent-aws',
+            'db/db-agent-data',
+            'db/db-agent-xos-settings',
+          ],
+        },
+        'db/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'db/learn-db-main-menu'
+          },
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/db-dashboard-intro'
+              },
+              items: [
+                'dashboard/db-instance-list',
+                'dashboard/db-instance-monitoring',
+                'dashboard/db-multi-instance-monitoring',
+                'dashboard/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/db-flex-board',
+              },
+              items: [
+                'dashboard/db-flexboard-template',
+                'dashboard/db-flexboard-create',
+                'dashboard/db-flexboard-metric-widget',
+                'dashboard/db-flexboard-widget-manage',
+                'dashboard/db-flexboard-mode',
+                'dashboard/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'analysis/db-analysis-function',
+                'metrics/db-metrics-intro',
+                'analysis/db-log-viewer',
+                'analysis/db-stat',
+                'analysis/db-report',
+                'analysis/db-integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/db-set-notics',
+              },
+              items: [
+                'notification/db-warning-notice',
+                'notification/db-metric-warning-notice',
+                'notification/db-set-event-detect-anomal',
+                'notification/db-set-receive-event',
+                'notification/db-set-event-history',
+                'notification/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   releaseSidebar: [
     {
       type: 'category',
@@ -3064,149 +3600,6 @@ const sidebars = {
           ],
         }
       ]
-    }
-  ],
-  dbSidebar: [
-    {
-      type: 'category',
-      label: '데이터베이스 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'db/db-monitoring-intro'
-      },
-      items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'db/db-monitoring-support',
-        },
-        {
-          type: 'category',
-          label: '설치하기',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            'db/install-db-agent',
-            'db/after-install-db-agent',
-            'db/db-troubleshooting',
-          ],
-        },
-        {
-          type: 'category',
-          label: '설정하기',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'db/db-agent-settings'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '에이전트 네트워크 통신',
-              id: 'db/db-agent-network',
-            },
-            {
-              type: 'doc',
-              label: '에이전트 이름 식별',
-              id: 'db/db-agent-naming',
-            },
-            'db/db-agent-aws',
-            'db/db-agent-data',
-            'db/db-agent-xos-settings',
-          ],
-        },
-        'db/db-agent-manage',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'db/learn-db-main-menu'
-          },
-          items: [
-            {
-              type: 'category',
-              label: '실시간 DB 성능 지표 확인',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/db-dashboard-intro'
-              },
-              items: [
-                'dashboard/db-instance-list',
-                'dashboard/db-instance-monitoring',
-                'dashboard/db-multi-instance-monitoring',
-                'dashboard/db-slow-query',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/db-flex-board',
-              },
-              items: [
-                'dashboard/db-flexboard-template',
-                'dashboard/db-flexboard-create',
-                'dashboard/db-flexboard-metric-widget',
-                'dashboard/db-flexboard-widget-manage',
-                'dashboard/db-flexboard-mode',
-                'dashboard/db-flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석과 통계',
-              collapsible: true,
-              collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
-              items: [
-                'analysis/db-analysis-function',
-                'metrics/db-metrics-intro',
-                'analysis/db-log-viewer',
-                'analysis/db-stat',
-                'analysis/db-report',
-                'analysis/db-integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'notification/db-set-notics',
-              },
-              items: [
-                'notification/db-warning-notice',
-                'notification/db-metric-warning-notice',
-                'notification/db-set-event-detect-anomal',
-                'notification/db-set-receive-event',
-                'notification/db-set-event-history',
-                'notification/db-set-event-format',
-              ],
-            },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
-          ]
-        }
-      ],
     }
   ],
   apmSidebar: [
