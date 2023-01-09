@@ -62,11 +62,11 @@ const config = {
             from: '/whatap_guide/install_agent/kubernetes/install',
           },
           {
-            to: 'db/db-monitoring-intro',
+            to: '/db/db-monitoring-intro',
             from: '/whatap_guide/install_agent/db/install_process.html',
           },
           {
-            to: 'db/db-monitoring-intro',
+            to: '/db/db-monitoring-intro',
             from: '/whatap_guide/install_agent/db/install_process',
           },
           {
@@ -83,7 +83,7 @@ const config = {
           },
           {
             to: '/db/install-db-agent',
-            from: '/kr/agent_postgresql/'
+            from: '/kr/agent_postgresql'
           }
         ]
       }
