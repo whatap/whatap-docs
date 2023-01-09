@@ -1399,6 +1399,11 @@ const sidebars = {
               ],
             },
             {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
               type: 'link',
               label: 'Open API',
               href: '/apidoc/openapi-intro'
@@ -1528,6 +1533,11 @@ const sidebars = {
                 'oracle/db-set-event-history',
                 'oracle/db-set-event-format',
               ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
             },
             {
               type: 'link',
@@ -1661,6 +1671,11 @@ const sidebars = {
               ],
             },
             {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
               type: 'link',
               label: 'Open API',
               href: '/apidoc/openapi-intro'
@@ -1790,6 +1805,11 @@ const sidebars = {
                 'mssql/db-set-event-history',
                 'mssql/db-set-event-format',
               ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
             },
             {
               type: 'link',
@@ -1923,6 +1943,11 @@ const sidebars = {
               ],
             },
             {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
               type: 'link',
               label: 'Open API',
               href: '/apidoc/openapi-intro'
@@ -2054,6 +2079,11 @@ const sidebars = {
               ],
             },
             {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
               type: 'link',
               label: 'Open API',
               href: '/apidoc/openapi-intro'
@@ -2183,6 +2213,147 @@ const sidebars = {
                 'altibase/db-set-event-history',
                 'altibase/db-set-event-format',
               ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  redisSidebar: [
+    {
+      type: 'category',
+      label: 'Redis 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'redis/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'redis/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'redis/install-db-agent',
+            'redis/after-install-db-agent',
+            'redis/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/db-agent-settings'
+          },
+          items: [
+            'redis/db-agent-network',
+            'redis/db-agent-naming',
+            'redis/db-agent-aws',
+            'redis/db-agent-data',
+            // 'redis/db-agent-xos-settings', // Postgresql, Oracle
+          ],
+        },
+        'redis/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis/db-dashboard-intro'
+              },
+              items: [
+                'redis/db-instance-list',
+                'redis/db-instance-monitoring',
+                'redis/db-multi-instance-monitoring',
+                // 'redis/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis/db-flex-board',
+              },
+              items: [
+                'redis/db-flexboard-template',
+                'redis/db-flexboard-create',
+                'redis/db-flexboard-metric-widget',
+                'redis/db-flexboard-widget-manage',
+                'redis/db-flexboard-mode',
+                'redis/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'redis/db-analysis-function',
+                'redis/db-metrics-intro',
+                'redis/db-log-viewer',
+                // 'redis/db-stat',
+                // 'redis/report-intro',
+                // 'redis/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis/db-set-notics',
+              },
+              items: [
+                'redis/db-warning-notice',
+                'redis/db-metric-warning-notice',
+                'redis/db-set-event-detect-anomal',
+                'redis/db-set-receive-event',
+                'redis/db-set-event-history',
+                'redis/db-set-event-format',
+              ],
+            },
+            {
+              type: 'doc',
+              label: '로그 모니터링',
+              id: 'log/log-intro'
             },
             {
               type: 'link',
