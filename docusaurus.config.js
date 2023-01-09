@@ -35,10 +35,59 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
+        fromExtensions: ['html', 'htm'],
         redirects: [
           {
             to: '/url/url-intro',
-            from: '//use_guide/url_monitoring/intro.html'
+            from: '/use_guide/url_monitoring/intro'
+          },
+          {
+            to: '/url/url-intro',
+            from: '/use_guide/url_monitoring/intro.html'
+          },
+          {
+            to: '/server/server-intro',
+            from: '/whatap_guide/install_agent/server/support_env.html'
+          },
+          {
+            to: '/server/server-intro',
+            from: '/whatap_guide/install_agent/server/support_env'
+          },
+          {
+            to: '/server/server-intro',
+            from: '/whatap_guide/install_agent/server/support_env.html#empty'
+          },
+          {
+            to: '/kubernetes/kubernetes-intro',
+            from: '/whatap_guide/install_agent/kubernetes/install.html',
+          },
+          {
+            to: '/kubernetes/kubernetes-intro',
+            from: '/whatap_guide/install_agent/kubernetes/install',
+          },
+          {
+            to: 'db/db-monitoring-intro',
+            from: '/whatap_guide/install_agent/db/install_process.html',
+          },
+          {
+            to: 'db/db-monitoring-intro',
+            from: '/whatap_guide/install_agent/db/install_process',
+          },
+          {
+            to: '/db/install-db-agent',
+            from: 'kr/agent_mysql/#empty'
+          },
+          {
+            to: '/db/install-db-agent',
+            from: 'kr/agent_mssql/#empty'
+          },
+          {
+            to: '/db/install-db-agent',
+            from: 'kr/agent_tibero/#empty'
+          },
+          {
+            to: '/db/install-db-agent',
+            from: 'kr/agent_postgresql/#empty'
           }
         ]
       }
