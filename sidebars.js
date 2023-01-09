@@ -1673,18 +1673,18 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'MySQL 모니터링',
+      label: 'MS SQL Server 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'mysql/db-monitoring-intro'
+        id: 'mssql/db-monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'mysql/db-monitoring-support',
+          id: 'mssql/db-monitoring-support',
         },
         {
           type: 'category',
@@ -1692,9 +1692,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mysql/install-db-agent',
-            'mysql/after-install-db-agent',
-            'mysql/db-troubleshooting',
+            'mssql/install-db-agent',
+            'mssql/after-install-db-agent',
+            'mssql/db-troubleshooting',
           ],
         },
         {
@@ -1704,17 +1704,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mysql/db-agent-settings'
+            id: 'mssql/db-agent-settings'
           },
           items: [
-            'mysql/db-agent-network',
-            'mysql/db-agent-naming',
-            'mysql/db-agent-aws',
-            'mysql/db-agent-data',
-            // 'mysql/db-agent-xos-settings',
+            'mssql/db-agent-network',
+            'mssql/db-agent-naming',
+            'mssql/db-agent-aws',
+            'mssql/db-agent-data',
+            // 'mssql/db-agent-xos-settings',
           ],
         },
-        'mysql/db-agent-manage',
+        'mssql/db-agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1728,13 +1728,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-dashboard-intro'
+                id: 'mssql/db-dashboard-intro'
               },
               items: [
-                'mysql/db-instance-list',
-                'mysql/db-instance-monitoring',
-                'mysql/db-multi-instance-monitoring',
-                'mysql/db-slow-query',
+                'mssql/db-instance-list',
+                'mssql/db-instance-monitoring',
+                'mssql/db-multi-instance-monitoring',
+                'mssql/db-slow-query',
               ],
             },
             {
@@ -1744,15 +1744,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-flex-board',
+                id: 'mssql/db-flex-board',
               },
               items: [
-                'mysql/db-flexboard-template',
-                'mysql/db-flexboard-create',
-                'mysql/db-flexboard-metric-widget',
-                'mysql/db-flexboard-widget-manage',
-                'mysql/db-flexboard-mode',
-                'mysql/db-flexboard-share',
+                'mssql/db-flexboard-template',
+                'mssql/db-flexboard-create',
+                'mssql/db-flexboard-metric-widget',
+                'mssql/db-flexboard-widget-manage',
+                'mssql/db-flexboard-mode',
+                'mssql/db-flexboard-share',
               ],
             },
             {
@@ -1765,12 +1765,12 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'mysql/db-analysis-function',
-                'mysql/db-metrics-intro',
-                'mysql/db-log-viewer',
-                'mysql/db-stat',
-                'mysql/report-intro',
-                'mysql/integrated-report',
+                'mssql/db-analysis-function',
+                'mssql/db-metrics-intro',
+                'mssql/db-log-viewer',
+                'mssql/db-stat',
+                'mssql/report-intro',
+                'mssql/integrated-report',
               ]
             },
             {
@@ -1780,15 +1780,146 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-set-notics',
+                id: 'mssql/db-set-notics',
               },
               items: [
-                'mysql/db-warning-notice',
-                'mysql/db-metric-warning-notice',
-                'mysql/db-set-event-detect-anomal',
-                'mysql/db-set-receive-event',
-                'mysql/db-set-event-history',
-                'mysql/db-set-event-format',
+                'mssql/db-warning-notice',
+                'mssql/db-metric-warning-notice',
+                'mssql/db-set-event-detect-anomal',
+                'mssql/db-set-receive-event',
+                'mssql/db-set-event-history',
+                'mssql/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  tiberoSidebar: [
+    {
+      type: 'category',
+      label: 'MS SQL Server 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mssql/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mssql/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql/install-db-agent',
+            'mssql/after-install-db-agent',
+            'mssql/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/db-agent-settings'
+          },
+          items: [
+            'mssql/db-agent-network',
+            'mssql/db-agent-naming',
+            'mssql/db-agent-aws',
+            'mssql/db-agent-data',
+            // 'mssql/db-agent-xos-settings',
+          ],
+        },
+        'mssql/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/db-dashboard-intro'
+              },
+              items: [
+                'mssql/db-instance-list',
+                'mssql/db-instance-monitoring',
+                'mssql/db-multi-instance-monitoring',
+                'mssql/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/db-flex-board',
+              },
+              items: [
+                'mssql/db-flexboard-template',
+                'mssql/db-flexboard-create',
+                'mssql/db-flexboard-metric-widget',
+                'mssql/db-flexboard-widget-manage',
+                'mssql/db-flexboard-mode',
+                'mssql/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'mssql/db-analysis-function',
+                'mssql/db-metrics-intro',
+                'mssql/db-log-viewer',
+                'mssql/db-stat',
+                'mssql/report-intro',
+                'mssql/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/db-set-notics',
+              },
+              items: [
+                'mssql/db-warning-notice',
+                'mssql/db-metric-warning-notice',
+                'mssql/db-set-event-detect-anomal',
+                'mssql/db-set-receive-event',
+                'mssql/db-set-event-history',
+                'mssql/db-set-event-format',
               ],
             },
             {
