@@ -14,6 +14,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
   favicon: 'https://guide.whatap.io/_/img/favicon.ico',
 
   // GitHub pages deployment config.
