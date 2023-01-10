@@ -391,7 +391,7 @@ const config = {
           //     },
           //     {
           //       label: 'AWS Log',
-          //       to: 'aws-log/install-aws-log',
+          //       to: 'aws-log/aws-log-intro',
           //     },
           //     {
           //       label: '인티그레이션',

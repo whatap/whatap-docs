@@ -785,75 +785,75 @@ const sidebars = {
       ]
     }
   ],
-  awslogSidebar: [
-    {
-      type: 'category',
-      label: 'AWS Log 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'aws-log/aws-log-intro'
-      },
-      items: [
-        'aws-log/install-aws-log',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'aws-log/learn-aws-log-main-menu'
-          },
-          items: [
-            'log/aws-log-lt',
-            'log/aws-log-exp',
-            'log/aws-log-search',
-            'log/aws-log-setting',
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/aws-log-flexboard',
-              },
-              items: [
-                'dashboard/aws-log-flexboard-template',
-                'dashboard/aws-log-flexboard-create',
-                'dashboard/aws-log-flexboard-metric-widget',
-                'dashboard/aws-log-flexboard-widget-manage',
-                'dashboard/aws-log-flexboard-mode',
-                'dashboard/aws-log-flexboard-share',
-              ]
-            },
-            'metrics/aws-log-metrics-intro',
-            {
-              type: 'doc',
-              label: '알림 설정하기',
-              id: 'notification/aws-log-set-notice'
-            },
-            // {
-            //   type: 'category',
-            //   label: '알림 설정하기',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'notification/aws-log-set-notice',
-            //   },
-            //   items: [
-            //     'notification/aws-log-metric-warning-notice',
-            //     'notification/aws-log-set-receive-event',               
-            //   ]
-            // },
-          ],
-        }
-      ]
-    }
-  ],
+  // awslogSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: 'AWS Log 모니터링',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     link: {
+  //       type: 'doc',
+  //       id: 'aws-log/aws-log-intro'
+  //     },
+  //     items: [
+  //       'aws-log/install-aws-log',
+  //       {
+  //         type: 'category',
+  //         label: '주요 메뉴 알아보기',
+  //         collapsible: true,
+  //         collapsed: false,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'aws-log/learn-aws-log-main-menu'
+  //         },
+  //         items: [
+  //           'log/aws-log-lt',
+  //           'log/aws-log-exp',
+  //           'log/aws-log-search',
+  //           'log/aws-log-setting',
+  //           {
+  //             type: 'category',
+  //             label: 'Flex 보드',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'dashboard/aws-log-flexboard',
+  //             },
+  //             items: [
+  //               'dashboard/aws-log-flexboard-template',
+  //               'dashboard/aws-log-flexboard-create',
+  //               'dashboard/aws-log-flexboard-metric-widget',
+  //               'dashboard/aws-log-flexboard-widget-manage',
+  //               'dashboard/aws-log-flexboard-mode',
+  //               'dashboard/aws-log-flexboard-share',
+  //             ]
+  //           },
+  //           'metrics/aws-log-metrics-intro',
+  //           {
+  //             type: 'doc',
+  //             label: '알림 설정하기',
+  //             id: 'notification/aws-log-set-notice'
+  //           },
+  //           // {
+  //           //   type: 'category',
+  //           //   label: '알림 설정하기',
+  //           //   collapsible: true,
+  //           //   collapsed: true,
+  //           //   link: {
+  //           //     type: 'doc',
+  //           //     id: 'notification/aws-log-set-notice',
+  //           //   },
+  //           //   items: [
+  //           //     'notification/aws-log-metric-warning-notice',
+  //           //     'notification/aws-log-set-receive-event',               
+  //           //   ]
+  //           // },
+  //         ],
+  //       }
+  //     ]
+  //   }
+  // ],
   pluginSidebar: [
     {
       type: 'category',
