@@ -140,12 +140,16 @@ const sidebars = {
                 id: 'dashboard/java-flex-board',
               },
               items: [
-                'dashboard/java-flexboard-template',
-                'dashboard/java-flexboard-create',
-                'dashboard/java-flexboard-metric-widget',
-                'dashboard/java-flexboard-widget-manage',
-                'dashboard/java-flexboard-mode',
-                'dashboard/java-flexboard-share',
+                'release-notes/php/php-2.6.0',
+                'release-notes/php/php-2.5.4',
+                'release-notes/php/php-2.5.3',
+                'release-notes/php/php-2.5.2',
+                'release-notes/php/php-2.5.1',
+                'release-notes/php/php-2.5.0',
+                'release-notes/php/php-2.4.1',
+                'release-notes/php/php-2.4.0',
+                'release-notes/php/php-2.3.3',
+                'release-notes/php/php-previous',
               ],
             },
             {
@@ -206,24 +210,18 @@ const sidebars = {
                 id: 'analysis/java-analysis-report-intro'
               },
               items: [
-                'analysis/java-cube',
-                'analysis/java-analysis-apm',
-                'analysis/java-analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'analysis/java-report-intro'
-                  },
-                  items: [
-                    'analysis/java-report-apm',
-                    'analysis/java-integrated-report',
-                  ]
-                }
-              ]
+                'release-notes/server/server-2.3.0',
+                'release-notes/server/server-2.2.9',
+                'release-notes/server/server-2.2.8',
+                'release-notes/server/server-2.2.7',
+                'release-notes/server/server-2.2.6',
+                'release-notes/server/server-2.2.5',
+                'release-notes/server/server-2.2.4',
+                'release-notes/server/server-2.2.3',
+                'release-notes/server/server-2.2.2',
+                'release-notes/server/server-2.2.1',
+                'release-notes/server/server-previous',
+              ],
             },
             {
               type: 'category',
@@ -251,10 +249,24 @@ const sidebars = {
               id: 'log/log-intro'
             },
             {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
+              type: 'category',
+              label: 'Kubernetes 🚀',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'release-notes/k8s/k8s-1.2.1',
+                'release-notes/k8s/k8s-1.2.0',
+                'release-notes/k8s/k8s-1.1.55',
+                'release-notes/k8s/k8s-1.1.54',
+                'release-notes/k8s/k8s-1.1.52',
+                'release-notes/k8s/k8s-1.1.51',
+                'release-notes/k8s/k8s-1.1.50',
+                'release-notes/k8s/k8s-1.1.49',
+                'release-notes/k8s/k8s-1.1.48',
+                'release-notes/k8s/k8s-1.1.46',
+                'release-notes/k8s/k8s-previous',
+              ],
+            },
           ],
         }
       ]
@@ -270,6 +282,32 @@ const sidebars = {
         type: 'doc',
         id: 'apm/php/apm-introduction'
       },
+      items: [
+        'getting-started/whatap-overview',
+        {
+          type: 'doc',
+          label: '와탭 기술 문서 안내',
+          id: 'getting-started/welcome-to-whatapdocs'
+        },
+        'getting-started/support-env',
+        'getting-started/quick-guide',
+        'navigation/main-ui-intro',
+      ],
+    },
+    {
+      type: 'html',
+      value: '<hr/>'
+    },
+    {
+      type: 'category',
+      label: '제품별 문서 바로가기',
+      collapsible: false,
+      collapsed: false,
+      className: 'shortcut',
+      // link: {
+      //   type: 'doc',
+      //   id: 'shortcut',
+      // },
       items: [
         {
           type: 'doc',
@@ -3031,7 +3069,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'AWS Log',
-        //   href: 'aws-log/install-aws-log'
+        //   href: 'aws-log/aws-log-intro'
         // },
         // {
         //   type: 'link',
@@ -3045,7 +3083,7 @@ const sidebars = {
         // },
         // {
         //   type: 'link',
-        //   label: 'Amazon Cloudwatch',
+        //   label: 'Amazon CloudWatch',
         //   href: 'amazon-cloudwatch/amazon-cloudwatch-install'
         // },
         // {
@@ -3173,7 +3211,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Amazon Cloudwatch',
+          label: 'Amazon CloudWatch',
           collapsible: true,
           collapsed: true,
           link: {
@@ -3489,70 +3527,75 @@ const sidebars = {
       ]
     }
   ],
-  awslogSidebar: [
-    {
-      type: 'category',
-      label: 'AWS Log 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'aws-log/aws-log-intro'
-      },
-      items: [
-        'aws-log/install-aws-log',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'aws-log/learn-aws-log-main-menu'
-          },
-          items: [
-            'log/aws-log-lt',
-            'log/aws-log-exp',
-            'log/aws-log-search',
-            'log/aws-log-setting',
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/aws-log-flexboard',
-              },
-              items: [
-                'dashboard/aws-log-flexboard-template',
-                'dashboard/aws-log-flexboard-create',
-                'dashboard/aws-log-flexboard-metric-widget',
-                'dashboard/aws-log-flexboard-widget-manage',
-                'dashboard/aws-log-flexboard-mode',
-                'dashboard/aws-log-flexboard-share',
-              ]
-            },
-            'metrics/aws-log-metrics-intro',
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'notification/aws-log-set-notice',
-              },
-              items: [
-                'notification/aws-log-metric-warning-notice',
-                'notification/aws-log-set-receive-event',               
-              ]
-            },
-          ],
-        }
-      ]
-    }
-  ],
+  // awslogSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: 'AWS Log 모니터링',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     link: {
+  //       type: 'doc',
+  //       id: 'aws-log/aws-log-intro'
+  //     },
+  //     items: [
+  //       'aws-log/install-aws-log',
+  //       {
+  //         type: 'category',
+  //         label: '주요 메뉴 알아보기',
+  //         collapsible: true,
+  //         collapsed: false,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'aws-log/learn-aws-log-main-menu'
+  //         },
+  //         items: [
+  //           'log/aws-log-lt',
+  //           'log/aws-log-exp',
+  //           'log/aws-log-search',
+  //           'log/aws-log-setting',
+  //           {
+  //             type: 'category',
+  //             label: 'Flex 보드',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'dashboard/aws-log-flexboard',
+  //             },
+  //             items: [
+  //               'dashboard/aws-log-flexboard-template',
+  //               'dashboard/aws-log-flexboard-create',
+  //               'dashboard/aws-log-flexboard-metric-widget',
+  //               'dashboard/aws-log-flexboard-widget-manage',
+  //               'dashboard/aws-log-flexboard-mode',
+  //               'dashboard/aws-log-flexboard-share',
+  //             ]
+  //           },
+  //           'metrics/aws-log-metrics-intro',
+  //           {
+  //             type: 'doc',
+  //             label: '알림 설정하기',
+  //             id: 'notification/aws-log-set-notice'
+  //           },
+  //           // {
+  //           //   type: 'category',
+  //           //   label: '알림 설정하기',
+  //           //   collapsible: true,
+  //           //   collapsed: true,
+  //           //   link: {
+  //           //     type: 'doc',
+  //           //     id: 'notification/aws-log-set-notice',
+  //           //   },
+  //           //   items: [
+  //           //     'notification/aws-log-metric-warning-notice',
+  //           //     'notification/aws-log-set-receive-event',               
+  //           //   ]
+  //           // },
+  //         ],
+  //       }
+  //     ]
+  //   }
+  // ],
   pluginSidebar: [
     {
       type: 'category',
@@ -4232,7 +4275,62 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '메트릭스',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/db-set-notics',
+              },
+              items: [
+                'notification/db-warning-notice',
+                'notification/db-metric-warning-notice',
+                'notification/db-set-event-detect-anomal',
+                'notification/db-set-receive-event',
+                'notification/db-set-event-history',
+                'notification/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        },
+        'faq/db-faq',
+      ],
+    }
+  ],
+  apmSidebar: [
+    {
+      type: 'category',
+      label: '애플리케이션 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'apm/application-intro',
+      },
+      items: [ 
+        {
+          type: 'category',
+          label: 'JAVA 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/java-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/java-supported-spec',
+            },
+            {
+              type: 'category',
+              label: '에이전트 설치',
               collapsible: true,
               collapsed: true,
               link: {
