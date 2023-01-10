@@ -221,17 +221,17 @@ const config = {
               {
                 type: 'doc',
                 docId: 'kubernetes/kubernetes-intro',
-                label: '쿠버네티스',
+                label: 'Kubernetes',
               },
               {
                 type: 'doc',
                 docId: 'ref-cloud/cloud',
-                label: '클라우드',
+                label: 'Cloud',
               },
               {
                 type: 'doc',
                 docId: 'log/log-intro',
-                label: '로그',
+                label: 'Log',
               },
               {
                 type: 'doc',
@@ -241,7 +241,7 @@ const config = {
               {
                 type: 'doc',
                 docId: 'extensions',
-                label: '확장 도구'
+                label: 'Extensions'
               }
               // {
               //   type: 'doc',
@@ -256,6 +256,27 @@ const config = {
             docId: 'apm/application-intro',
             position: "left",
             label: '애플리케이션 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/java/apm-introduction',
+            position: "left",
+            label: 'Java 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/php/apm-introduction',
+            position: "left",
+            label: 'PHP 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/nodejs/apm-introduction',
+            position: "left",
+            label: 'Node.js 모니터링',
             className: 'hidden',
           },
           {
