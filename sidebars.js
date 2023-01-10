@@ -327,7 +327,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'AWS Log',
-        //   href: 'aws-log/install-aws-log'
+        //   href: 'aws-log/aws-log-intro'
         // },
         // {
         //   type: 'link',
@@ -831,19 +831,24 @@ const sidebars = {
             },
             'metrics/aws-log-metrics-intro',
             {
-              type: 'category',
+              type: 'doc',
               label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'notification/aws-log-set-notice',
-              },
-              items: [
-                'notification/aws-log-metric-warning-notice',
-                'notification/aws-log-set-receive-event',               
-              ]
+              id: 'notification/aws-log-set-notice'
             },
+            // {
+            //   type: 'category',
+            //   label: '알림 설정하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'notification/aws-log-set-notice',
+            //   },
+            //   items: [
+            //     'notification/aws-log-metric-warning-notice',
+            //     'notification/aws-log-set-receive-event',               
+            //   ]
+            // },
           ],
         }
       ]
