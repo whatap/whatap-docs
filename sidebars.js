@@ -69,7 +69,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'PHP 🚀',
+              label: 'PHP',
               collapsible: true,
               collapsed: true,
               items: [
@@ -137,10 +137,11 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server',
+              label: 'Server 🚀',
               collapsible: true,
               collapsed: true,
               items: [
+                'release-notes/server/server-2.3.0',
                 'release-notes/server/server-2.2.9',
                 'release-notes/server/server-2.2.8',
                 'release-notes/server/server-2.2.7',
@@ -150,8 +151,6 @@ const sidebars = {
                 'release-notes/server/server-2.2.3',
                 'release-notes/server/server-2.2.2',
                 'release-notes/server/server-2.2.1',
-                'release-notes/server/server-2.2.0',
-                'release-notes/server/server-2.1.9',
                 'release-notes/server/server-previous',
               ],
             },
@@ -189,10 +188,11 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Kubernetes',
+              label: 'Kubernetes 🚀',
               collapsible: true,
               collapsed: true,
               items: [
+                'release-notes/k8s/k8s-1.2.1',
                 'release-notes/k8s/k8s-1.2.0',
                 'release-notes/k8s/k8s-1.1.55',
                 'release-notes/k8s/k8s-1.1.54',
@@ -202,12 +202,7 @@ const sidebars = {
                 'release-notes/k8s/k8s-1.1.49',
                 'release-notes/k8s/k8s-1.1.48',
                 'release-notes/k8s/k8s-1.1.46',
-                'release-notes/k8s/k8s-1.1.45',
-                'release-notes/k8s/k8s-1.1.44',
-                'release-notes/k8s/k8s-1.1.43',
-                'release-notes/k8s/k8s-1.1.42',
-                'release-notes/k8s/k8s-1.1.41',
-                'release-notes/k8s/k8s-1.1.40',
+                'release-notes/k8s/k8s-previous',
               ],
             },
           ],
