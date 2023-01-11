@@ -34,7 +34,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --shortcut-list-color: #eee;
-  --shortcut-background-color: #1e4564;
+  --shortcut-background-color: #36424b;
   --main-osd-color: #3ea6ff;
 }
 
@@ -382,16 +382,72 @@ main .markdown div.flex-container {
   align-content: flex-start;
   /* flex-basis: auto; */
 }
+main .markdown div.flex-container-s {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  /* grid-auto-rows: minmax(100px, auto); */
+  /* grid-auto-flow: row; */
+}
 main .markdown div.flex-container a {
   text-decoration: none;
   /* margin-right: 10px; */
   width: 17%;
 }
+
+main .markdown div.flex-container-s a {
+  text-decoration: none;
+}
+
 main .markdown div.flex-container a div.apm-agent img {
   width: 50%;
   max-width: 167px;
   border: none;
   margin-top: 10px;
+}
+
+main .markdown div.flex-container-s div.apm-agent {
+  padding: 22px 22px 12px 8px;
+  min-height: 135px;
+  min-width: 205px;
+}
+main .markdown div.flex-container-s div.apm-agent .logo {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+main .markdown div.flex-container-s div.apm-agent .int {
+  width: 50%;
+  max-width: 86px;
+  display: table-cell;
+  vertical-align: middle;
+}
+main .markdown div.flex-container-s div.apm-agent .int p {
+  font-size: .95em;
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 130%;
+}
+
+main .markdown div.flex-container-s div.apm-agent .int code {
+  display: block;
+  font-size: .75em;
+  color: var(--shortcut-list-color);
+  width: fit-content;
+}
+main .markdown div.flex-container-s div.apm-agent .logo img {
+  border: none;
+  width: 80px;
+  max-width: 80px;
+  height: auto;
+  margin-right: 8px;
+}
+main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-php.svg'] {
+  margin-top: 20px;
+}
+main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-nodejs.svg'] {
+  width: 60px;
 }
 
 main .markdown div.shortcut ul {
@@ -591,9 +647,22 @@ main .markdown code.Deprecate {
 main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
   background-color: #fff;
 }
+@media all and (max-width: 1600px) {
+  main .markdown div.flex-container-s {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media all and (max-width: 1400px) {
+  main .markdown div.flex-container-s {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media all and (max-width: 1280px) {
   main .markdown div.flex-container a {
     width: 23%;
+  }
+  main .markdown div.flex-container-s {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media all and (max-width: 996px) {
@@ -615,10 +684,30 @@ main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
   main .markdown div.flex-container a {
     width: 48% !important;
   }
+  main .markdown div.flex-container-s {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media all and (max-width: 460px) {
   main .markdown .gs {
     display: block;
+  }
+  main .markdown div.flex-container-s {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .markdown div.flex-container-s div.apm-agent .int {
+    width: 100%;
+    min-width: 240px;
+  }
+  main .markdown div.flex-container-s div.apm-agent .int p {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 390px) {
+  main .markdown div.flex-container-s div.apm-agent .int {
+    width: 100%;
+    min-width: 170px;
   }
 }
