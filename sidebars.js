@@ -4194,6 +4194,7 @@ const sidebars = {
         id: 'kubernetes/kubernetes-intro'
       },
       items: [
+        'kubernetes/kubernetes-project',
         {
           type: 'doc',
           label: '지원 환경',
@@ -4221,7 +4222,7 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'kubernetes/kubernetes-project',
+            'kubernetes/kubernetes-namespace',
             'kubernetes/kubernetes-agent',
             'kubernetes/kubernetes-update',
           ],
