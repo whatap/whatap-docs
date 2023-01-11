@@ -3460,7 +3460,7 @@ const sidebars = {
               type: 'category',
               label: '플러그인 설치와 활용',
               collapsible: true,
-              collapsed: true,
+              collapsed: false,
               items: [
                 'telegraf/install-tf-plugin',
                 'telegraf/tf-plg-settings',
@@ -3470,7 +3470,7 @@ const sidebars = {
               type: 'category',
               label: '에이전트 설치와 활용',
               collapsible: true,
-              collapsed: true,
+              collapsed: false,
               items: [
                 'telegraf/tf-support',
                 'telegraf/install-tf-agent',
