@@ -20,7 +20,7 @@ const sidebars = {
   javaSidebar: [
     {
       type: 'category',
-      label: 'JAVA',
+      label: 'JAVA 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -247,7 +247,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -263,7 +263,7 @@ const sidebars = {
   phpSidebar: [
     {
       type: 'category',
-      label: 'PHP',
+      label: 'PHP 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -476,7 +476,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -492,7 +492,7 @@ const sidebars = {
   nodejsSidebar: [
     {
       type: 'category',
-      label: 'Node.js',
+      label: 'Node.js 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -676,7 +676,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -692,7 +692,7 @@ const sidebars = {
   pySidebar: [
     {
       type: 'category',
-      label: 'Python',
+      label: 'Python 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -886,7 +886,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -902,7 +902,7 @@ const sidebars = {
   dotNetSidebar: [
     {
       type: 'category',
-      label: '.NET',
+      label: '.NET 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1080,7 +1080,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1096,7 +1096,7 @@ const sidebars = {
   goSidebar: [
     {
       type: 'category',
-      label: 'Golang',
+      label: 'Golang 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1264,7 +1264,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1280,7 +1280,7 @@ const sidebars = {
   postgreSidebar: [
     {
       type: 'category',
-      label: 'PostgreSQL',
+      label: 'PostgreSQL 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1400,7 +1400,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1416,7 +1416,7 @@ const sidebars = {
   dboracleSidebar: [
     {
       type: 'category',
-      label: 'Oracle',
+      label: 'Oracle 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1536,7 +1536,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1552,7 +1552,7 @@ const sidebars = {
   mysqlSidebar: [
     {
       type: 'category',
-      label: 'MySQL',
+      label: 'MySQL 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1672,7 +1672,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1688,7 +1688,7 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'MS SQL Server',
+      label: 'MS SQL Server 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1808,7 +1808,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1824,7 +1824,7 @@ const sidebars = {
   tiberoSidebar: [
     {
       type: 'category',
-      label: 'Tibero',
+      label: 'Tibero 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1944,7 +1944,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -1960,7 +1960,7 @@ const sidebars = {
   cubridSidebar: [
     {
       type: 'category',
-      label: 'CUBRID',
+      label: 'CUBRID 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2080,7 +2080,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -2096,7 +2096,7 @@ const sidebars = {
   altibaseSidebar: [
     {
       type: 'category',
-      label: 'Altibase',
+      label: 'Altibase 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2216,7 +2216,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -2232,7 +2232,7 @@ const sidebars = {
   redisSidebar: [
     {
       type: 'category',
-      label: 'Redis',
+      label: 'Redis 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2352,7 +2352,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -2368,7 +2368,7 @@ const sidebars = {
   mongodbSidebar: [
     {
       type: 'category',
-      label: 'MongoDB',
+      label: 'MongoDB 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2488,7 +2488,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -2865,8 +2865,32 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Cloud',
-          href: '../ref-cloud/cloud',
+          label: 'Amazon ECS',
+          href: '../amazon-ecs/amazon-ecs-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Amazon CloudWatch',
+          href: '../amazon-cloudwatch/amazon-cloudwatch-install',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Azure Monitor',
+          href: '../azure/azure-monitor-install',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Naver Cloud Monitoring',
+          href: '../ncloud/ncloud-monitoring-install',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'Oracle Cloud Monitor',
+          href: '../oracle-cloud/oracle-cloud-monitor-install',
           className: "_productlink"
         },
         {
@@ -3978,7 +4002,7 @@ const sidebars = {
   serverSidebar: [
     {
       type: 'category',
-      label: '서버 모니터링',
+      label: 'Server 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -4146,7 +4170,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -4162,7 +4186,7 @@ const sidebars = {
   kubeSidebar: [
     {
       type: 'category',
-      label: '쿠버네티스 모니터링',
+      label: 'Kubernetes 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -5166,7 +5190,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              label: '로그 모니터링',
+              label: 'Log 모니터링',
               id: 'log/log-intro'
             },
             {
@@ -5182,7 +5206,7 @@ const sidebars = {
   logSidebar: [
     {
       type: 'category',
-      label: '로그 모니터링',
+      label: 'Log 모니터링',
       collapsible: false,
       collapsed: false,
       link: {

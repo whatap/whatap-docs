@@ -200,23 +200,43 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: '제품별 문서 바로가기',
+            label: '상품별 문서 바로가기',
             position: 'left',
             items: [
               {
                 type: 'doc',
-                docId: 'apm/application-intro',
-                label: '애플리케이션',
+                docId: 'apm/java/apm-introduction',
+                label: 'Java',
+              },
+              {
+                type: 'doc',
+                docId: 'apm/php/apm-introduction',
+                label: 'PHP',
+              },
+              {
+                type: 'doc',
+                docId: 'apm/nodejs/apm-introduction',
+                label: 'Node.js',
+              },
+              {
+                type: 'doc',
+                docId: 'apm/python-intro',
+                label: 'Python',
+              },
+              {
+                type: 'doc',
+                docId: 'apm/dotnet-intro',
+                label: '.NET',
+              },
+              {
+                type: 'doc',
+                docId: 'apm/golang-intro',
+                label: 'Golang',
               },
               {
                 type: 'doc',
                 docId: 'server/server-intro',
-                label: '서버',
-              },
-              {
-                type: 'doc',
-                docId: 'db/db-monitoring-intro',
-                label: '데이터베이스',
+                label: 'Server',
               },
               {
                 type: 'doc',
@@ -225,18 +245,78 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'ref-cloud/cloud',
-                label: 'Cloud',
+                docId: 'postgresql/db-monitoring-intro',
+                label: 'PostgreSQL',
               },
               {
                 type: 'doc',
-                docId: 'log/log-intro',
-                label: 'Log',
+                docId: 'oracle/db-monitoring-intro',
+                label: 'Oracle',
+              },
+              {
+                type: 'doc',
+                docId: 'mysql/db-monitoring-intro',
+                label: 'MySQL',
+              },
+              {
+                type: 'doc',
+                docId: 'mssql/db-monitoring-intro',
+                label: 'MS SQL Server',
+              },
+              {
+                type: 'doc',
+                docId: 'tibero/db-monitoring-intro',
+                label: 'Tibero',
+              },
+              {
+                type: 'doc',
+                docId: 'cubrid/db-monitoring-intro',
+                label: 'CUBRID',
+              },
+              {
+                type: 'doc',
+                docId: 'altibase/db-monitoring-intro',
+                label: 'Altibase',
+              },
+              {
+                type: 'doc',
+                docId: 'redis/db-monitoring-intro',
+                label: 'Redis',
+              },
+              {
+                type: 'doc',
+                docId: 'mongodb/db-monitoring-intro',
+                label: 'MongoDB',
               },
               {
                 type: 'doc',
                 docId: 'url/url-intro',
                 label: 'URL',
+              },
+              {
+                type: 'doc',
+                docId: 'amazon-ecs/amazon-ecs-intro',
+                label: 'Amazon ECS',
+              },
+              {
+                type: 'doc',
+                docId: 'azure/azure-monitor-install',
+                label: 'Azure Monitor',
+              },
+              {
+                type: 'doc',
+                docId: 'ncloud/ncloud-monitoring-install',
+                label: 'Naver Cloud Monitoring',
+              },
+              {
+                type: 'doc',
+                docId: 'oracle-cloud/oracle-cloud-monitor-install',
+                label: 'Oracle Cloud Monitor',
+              },
+              {
+                type: 'doc',
+                docId: 'log/log-intro',
+                label: 'Log',
               },
               {
                 type: 'doc',
@@ -251,13 +331,6 @@ const config = {
             ]
           },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
-          {
-            type: 'doc',
-            docId: 'apm/application-intro',
-            position: "left",
-            label: '애플리케이션 모니터링',
-            className: 'hidden',
-          },
           {
             type: 'doc',
             docId: 'apm/java/apm-introduction',
@@ -281,16 +354,30 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'server/server-intro',
+            docId: 'apm/python-intro',
             position: "left",
-            label: '서버 모니터링',
+            label: 'Python 모니터링',
             className: 'hidden',
           },
           {
             type: 'doc',
-            docId: 'db/db-monitoring-intro',
+            docId: 'apm/dotnet-intro',
             position: "left",
-            label: '데이터베이스 모니터링',
+            label: '.NET 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'apm/golang-intro',
+            position: "left",
+            label: 'Golang 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'server/server-intro',
+            position: "left",
+            label: 'Server 모니터링',
             className: 'hidden',
           },
           {
@@ -302,9 +389,65 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'log/log-intro',
+            docId: 'postgresql/db-monitoring-intro',
             position: "left",
-            label: '로그 모니터링',
+            label: 'PostgreSQL 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'oracle/db-monitoring-intro',
+            position: "left",
+            label: 'Oracle 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'mysql/db-monitoring-intro',
+            position: "left",
+            label: 'MySQL 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'mssql/db-monitoring-intro',
+            position: "left",
+            label: 'MS SQL Server 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'tibero/db-monitoring-intro',
+            position: "left",
+            label: 'Tibero 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'cubrid/db-monitoring-intro',
+            position: "left",
+            label: 'CUBRID 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'altibase/db-monitoring-intro',
+            position: "left",
+            label: 'Altibase 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'redis/db-monitoring-intro',
+            position: "left",
+            label: 'Redis 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'mongodb/db-monitoring-intro',
+            position: "left",
+            label: 'MongoDB 모니터링',
             className: 'hidden',
           },
           {
@@ -316,23 +459,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'rum/rum-intro',
-            position: "left",
-            label: '브라우저 모니터링(RUM)',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'amazon-ecs/amazon-ecs-intro',
-            position: "left",
-            label: 'Amazon ECS',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
             docId: 'amazon-cloudwatch/amazon-cloudwatch-install',
             position: "left",
-            label: 'Amazon Cloudwatch',
+            label: 'Amazon ECS',
             className: 'hidden',
           },
           {
@@ -353,7 +482,21 @@ const config = {
             type: 'doc',
             docId: 'oracle-cloud/oracle-cloud-monitor-install',
             position: "left",
-            label: 'Oracle Cloud Monitoring',
+            label: 'Oracle Cloud Monitor',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'log/log-intro',
+            position: "left",
+            label: 'Log 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'rum/rum-intro',
+            position: "left",
+            label: '브라우저 모니터링(RUM)',
             className: 'hidden',
           },
           {
