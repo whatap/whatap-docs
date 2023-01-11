@@ -140,12 +140,25 @@ const sidebars = {
                 id: 'dashboard/java-flex-board',
               },
               items: [
+<<<<<<< HEAD
                 'dashboard/java-flexboard-template',
                 'dashboard/java-flexboard-create',
                 'dashboard/java-flexboard-metric-widget',
                 'dashboard/java-flexboard-widget-manage',
                 'dashboard/java-flexboard-mode',
                 'dashboard/java-flexboard-share',
+=======
+                'release-notes/php/php-2.6.0',
+                'release-notes/php/php-2.5.4',
+                'release-notes/php/php-2.5.3',
+                'release-notes/php/php-2.5.2',
+                'release-notes/php/php-2.5.1',
+                'release-notes/php/php-2.5.0',
+                'release-notes/php/php-2.4.1',
+                'release-notes/php/php-2.4.0',
+                'release-notes/php/php-2.3.3',
+                'release-notes/php/php-previous',
+>>>>>>> f219377183938a5efdc1674df86606aaf4838a69
               ],
             },
             {
@@ -206,6 +219,7 @@ const sidebars = {
                 id: 'analysis/java-analysis-report-intro'
               },
               items: [
+<<<<<<< HEAD
                 'analysis/java-cube',
                 'analysis/java-analysis-apm',
                 'analysis/java-analysis-apm-trs',
@@ -224,6 +238,20 @@ const sidebars = {
                   ]
                 }
               ]
+=======
+                'release-notes/server/server-2.3.0',
+                'release-notes/server/server-2.2.9',
+                'release-notes/server/server-2.2.8',
+                'release-notes/server/server-2.2.7',
+                'release-notes/server/server-2.2.6',
+                'release-notes/server/server-2.2.5',
+                'release-notes/server/server-2.2.4',
+                'release-notes/server/server-2.2.3',
+                'release-notes/server/server-2.2.2',
+                'release-notes/server/server-2.2.1',
+                'release-notes/server/server-previous',
+              ],
+>>>>>>> f219377183938a5efdc1674df86606aaf4838a69
             },
             {
               type: 'category',
@@ -251,10 +279,31 @@ const sidebars = {
               id: 'log/log-intro'
             },
             {
+<<<<<<< HEAD
               type: 'link',
               label: 'Open API',
               href: '/apidoc/openapi-intro'
             }
+=======
+              type: 'category',
+              label: 'Kubernetes 🚀',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'release-notes/k8s/k8s-1.2.1',
+                'release-notes/k8s/k8s-1.2.0',
+                'release-notes/k8s/k8s-1.1.55',
+                'release-notes/k8s/k8s-1.1.54',
+                'release-notes/k8s/k8s-1.1.52',
+                'release-notes/k8s/k8s-1.1.51',
+                'release-notes/k8s/k8s-1.1.50',
+                'release-notes/k8s/k8s-1.1.49',
+                'release-notes/k8s/k8s-1.1.48',
+                'release-notes/k8s/k8s-1.1.46',
+                'release-notes/k8s/k8s-previous',
+              ],
+            },
+>>>>>>> f219377183938a5efdc1674df86606aaf4838a69
           ],
         }
       ]
@@ -271,6 +320,35 @@ const sidebars = {
         id: 'apm/php/apm-introduction'
       },
       items: [
+<<<<<<< HEAD
+=======
+        'getting-started/whatap-overview',
+        {
+          type: 'doc',
+          label: '와탭 기술 문서 안내',
+          id: 'getting-started/welcome-to-whatapdocs'
+        },
+        'getting-started/support-env',
+        'getting-started/quick-guide',
+        'navigation/main-ui-intro',
+      ],
+    },
+    {
+      type: 'html',
+      value: '<hr/>'
+    },
+    {
+      type: 'category',
+      label: '제품별 문서 바로가기',
+      collapsible: false,
+      collapsed: false,
+      className: 'shortcut',
+      // link: {
+      //   type: 'doc',
+      //   id: 'shortcut',
+      // },
+      items: [
+>>>>>>> f219377183938a5efdc1674df86606aaf4838a69
         {
           type: 'doc',
           id: 'apm/php/supported-spec'
@@ -2501,6 +2579,152 @@ const sidebars = {
       ],
     }
   ],
+<<<<<<< HEAD
+=======
+  dbSidebar: [
+    {
+      type: 'category',
+      label: '데이터베이스 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'db/db-monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'db/db-monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'db/install-db-agent',
+            'db/after-install-db-agent',
+            'db/db-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db/db-agent-settings'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '에이전트 네트워크 통신',
+              id: 'db/db-agent-network',
+            },
+            {
+              type: 'doc',
+              label: '에이전트 이름 식별',
+              id: 'db/db-agent-naming',
+            },
+            'db/db-agent-aws',
+            'db/db-agent-data',
+            'db/db-agent-xos-settings',
+          ],
+        },
+        'db/db-agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'db/learn-db-main-menu'
+          },
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/db-dashboard-intro'
+              },
+              items: [
+                'dashboard/db-instance-list',
+                'dashboard/db-instance-monitoring',
+                'dashboard/db-multi-instance-monitoring',
+                'dashboard/db-slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dashboard/db-flex-board',
+              },
+              items: [
+                'dashboard/db-flexboard-template',
+                'dashboard/db-flexboard-create',
+                'dashboard/db-flexboard-metric-widget',
+                'dashboard/db-flexboard-widget-manage',
+                'dashboard/db-flexboard-mode',
+                'dashboard/db-flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'analysis/db-analysis-function',
+                'metrics/db-metrics-intro',
+                'analysis/db-log-viewer',
+                'analysis/db-stat',
+                'analysis/db-report',
+                'analysis/db-integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/db-set-notics',
+              },
+              items: [
+                'notification/db-warning-notice',
+                'notification/db-metric-warning-notice',
+                'notification/db-set-event-detect-anomal',
+                'notification/db-set-receive-event',
+                'notification/db-set-event-history',
+                'notification/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+>>>>>>> f219377183938a5efdc1674df86606aaf4838a69
   releaseSidebar: [
     {
       type: 'category',
@@ -2553,11 +2777,10 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'PHP 🚀',
+              label: 'PHP',
               collapsible: true,
               collapsed: true,
               items: [
-                'release-notes/php/php-2.6.0',
                 'release-notes/php/php-2.5.4',
                 'release-notes/php/php-2.5.3',
                 'release-notes/php/php-2.5.2',
@@ -2621,7 +2844,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server',
+              label: 'Server 🚀',
               collapsible: true,
               collapsed: true,
               items: [
@@ -2735,11 +2958,7 @@ const sidebars = {
       },
       items: [
         'getting-started/whatap-overview',
-        {
-          type: 'doc',
-          label: '와탭 기술 문서 안내',
-          id: 'getting-started/welcome-to-whatapdocs'
-        },
+        'getting-started/welcome-to-whatapdocs',
         'getting-started/support-env',
         'getting-started/quick-guide',
         'navigation/main-ui-intro',
@@ -2760,6 +2979,10 @@ const sidebars = {
       //   id: 'shortcut',
       // },
       items: [
+        // 'apm/java/apm-introduction',
+        // 'apm/php/apm-introduction',
+        // 'apm/nodejs/apm-introduction',
+        // 'apm/python-intro',
         {
           type: 'link',
           label: 'Java',
@@ -4095,7 +4318,62 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '메트릭스',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'notification/db-set-notics',
+              },
+              items: [
+                'notification/db-warning-notice',
+                'notification/db-metric-warning-notice',
+                'notification/db-set-event-detect-anomal',
+                'notification/db-set-receive-event',
+                'notification/db-set-event-history',
+                'notification/db-set-event-format',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        },
+        'faq/db-faq',
+      ],
+    }
+  ],
+  apmSidebar: [
+    {
+      type: 'category',
+      label: '애플리케이션 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'apm/application-intro',
+      },
+      items: [ 
+        {
+          type: 'category',
+          label: 'JAVA 모니터링',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apm/java-intro'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: '지원 환경',
+              id: 'apm/java-supported-spec',
+            },
+            {
+              type: 'category',
+              label: '에이전트 설치',
               collapsible: true,
               collapsed: true,
               link: {
@@ -4338,150 +4616,6 @@ const sidebars = {
       ]
     }
   ],
-  dbSidebar: [
-    {
-      type: 'category',
-      label: '데이터베이스 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'db/db-monitoring-intro'
-      },
-      items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'db/db-monitoring-support',
-        },
-        {
-          type: 'category',
-          label: '설치하기',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            'db/install-db-agent',
-            'db/after-install-db-agent',
-            'db/db-troubleshooting',
-          ],
-        },
-        {
-          type: 'category',
-          label: '설정하기',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'db/db-agent-settings'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '에이전트 네트워크 통신',
-              id: 'db/db-agent-network',
-            },
-            {
-              type: 'doc',
-              label: '에이전트 이름 식별',
-              id: 'db/db-agent-naming',
-            },
-            'db/db-agent-aws',
-            'db/db-agent-data',
-            'db/db-agent-xos-settings',
-          ],
-        },
-        'db/db-agent-manage',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'db/learn-db-main-menu'
-          },
-          items: [
-            {
-              type: 'category',
-              label: '실시간 DB 성능 지표 확인',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/db-dashboard-intro'
-              },
-              items: [
-                'dashboard/db-instance-list',
-                'dashboard/db-instance-monitoring',
-                'dashboard/db-multi-instance-monitoring',
-                'dashboard/db-slow-query',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dashboard/db-flex-board',
-              },
-              items: [
-                'dashboard/db-flexboard-template',
-                'dashboard/db-flexboard-create',
-                'dashboard/db-flexboard-metric-widget',
-                'dashboard/db-flexboard-widget-manage',
-                'dashboard/db-flexboard-mode',
-                'dashboard/db-flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석과 통계',
-              collapsible: true,
-              collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
-              items: [
-                'analysis/db-analysis-function',
-                'metrics/db-metrics-intro',
-                'analysis/db-log-viewer',
-                'analysis/db-stat',
-                'analysis/db-report',
-                'analysis/db-integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'notification/db-set-notics',
-              },
-              items: [
-                'notification/db-warning-notice',
-                'notification/db-metric-warning-notice',
-                'notification/db-set-event-detect-anomal',
-                'notification/db-set-receive-event',
-                'notification/db-set-event-history',
-                'notification/db-set-event-format',
-              ],
-            },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
-          ]
-        },
-        'faq/db-faq',
-      ],
-    }
-  ],
   apmSidebar: [
     {
       type: 'category',
@@ -4493,542 +4627,6 @@ const sidebars = {
         id: 'apm/application-intro',
       },
       items: [ 
-        {
-          type: 'category',
-          label: 'JAVA 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/java-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/java-supported-spec',
-            },
-            {
-              type: 'category',
-              label: '에이전트 설치',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/java',
-              },
-              items: [
-                'apm/add-jvm-opt/tomcat',
-                'apm/add-jvm-opt/jboss',
-                'apm/add-jvm-opt/jeus',
-                'apm/add-jvm-opt/weblogic',
-                'apm/add-jvm-opt/websphere',
-                'apm/add-jvm-opt/resin',
-                'apm/add-jvm-opt/liberty',
-                'apm/add-jvm-opt/jetty',
-                'apm/add-jvm-opt/spring-boot',
-                'apm/add-jvm-opt/play2',
-                'apm/add-jvm-opt/ibm-bluemix',
-                'apm/add-jvm-opt/elastic-beanstalk',
-                'apm/add-jvm-opt/docker',
-                'apm/add-jvm-opt/batch-app',
-                'apm/add-jvm-opt/java-under-ver',
-              ]
-            },
-            'apm/java-after-install-agent',
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/java-agent-troubleshooting'
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/java-set-agent',
-              },
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/java-agent-name'
-                },
-                'apm/java-agent-control-function',
-                {
-                  type: 'doc',
-                  label: '사용량 수집',
-                  id: 'apm/java-agent-usage',
-                },
-                'apm/java-agent-network',
-                'apm/java-agent-performance',
-                {
-                  type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/java-agent-log'
-                },
-                {
-                  type: 'doc',
-                  label: 'GC 로그 모니터링',
-                  id: 'apm/java-agent-gc-log'
-                },
-                'apm/java-agent-transaction',
-                'apm/java-agent-dbsql',
-                'apm/java-agent-httpcapicall',
-                {
-                  type: 'category',
-                  label: '에이전트 플러그인',
-                  items: [
-                    {
-                      type: 'doc',
-                      label: '스크립트 플러그인',
-                      id: 'apm/java-script-plugin'
-                    },
-                    {
-                      type: 'doc',
-                      label: '위빙 플러그인',
-                      id: 'apm/java-weaving-plugin'
-                    },
-                  ]
-                },
-                'apm/java-agent-number-of-user',
-                'apm/java-agent-load-amount',
-                'apm/java-agent-notification',
-                'apm/java-agent-apdex',
-                'apm/java-agent-static',
-                'apm/java-agent-toplogy',
-                'apm/java-agent-additional-option'
-              ]
-            },
-            {
-              type: 'category',
-              label: '관리하기',
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 업데이트 및 삭제',
-                  id: 'apm/java-update-agent'
-                },
-                'apm/java-msa-group',
-                'apm/java-aes-256-encryption',
-                'apm/java-scale-in-auto-delete',
-              ]
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'PHP 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/intro-php'
-          },
-          items: [
-            {
-              type: 'doc',
-              id: 'apm/supported-spec-php'
-            },
-            {
-              type: 'category',
-              label: '에이전트 설치',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/php',
-              },
-              items: [
-                'apm/php-os/redhat-centos',
-                'apm/php-os/debian-ubuntu',
-                'apm/php-os/amazon-linux',
-                'apm/php-os/freebsd',
-                'apm/php-os/alpine-linux',
-                'apm/php-os/gcae',
-                'apm/php-os/aws-eb'
-              ]
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/php-install-check'
-            },
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/php-agent-troubleshooting'
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/php-set-agent'
-              },
-              items: [               
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/php-agent-name'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 기능 제어',
-                  id: 'apm/php-control-function'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 통신 설정',
-                  id: 'apm/php-agent-com'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 성능 설정',
-                  id: 'apm/php-agent-tx'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/php-agent-log'
-                },
-                {
-                  type: 'doc',
-                  label: '트랜잭션',
-                  id: 'apm/php-transaction'
-                },
-                {
-                  type: 'doc',
-                  label: 'DB와 SQL',
-                  id: 'apm/php-db-sql'
-                },
-                {
-                  type: 'doc',
-                  label: 'HTTPC와 API Call',
-                  id: 'apm/php-httpc-api'
-                },
-                {
-                  type: 'doc',
-                  label: '사용자 수',
-                  id: 'apm/php-collect-user'
-                },
-                {
-                  type: 'doc',
-                  label: 'Apdex',
-                  id: 'apm/php-apdex'
-                },
-                {
-                  type: 'doc',
-                  label: '통계',
-                  id: 'apm/php-stat'
-                },
-                {
-                  type: 'doc',
-                  label: '토폴로지 맵',
-                  id: 'apm/php-tp-map'
-                },
-                {
-                  type: 'doc',
-                  label: '공유 메모리',
-                  id: 'apm/php-shm'
-                }
-              ]
-            },
-            {
-              type: 'category',
-              label: '관리하기',
-              items: [
-                {
-                  type: 'doc',
-                  label: '패키지 업데이트',
-                  id: 'apm/php-agent-update'
-                },
-                'apm/php-agent-temp-st',
-                'apm/php-agent-remove'
-              ]
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Node.js 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/nodejs-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/nodejs-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/nodejs-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/nodejs-after-install-agent',
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/nodejs-set-agent'
-              },
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/nodejs-agent-name',
-                },
-                'apm/nodejs-agent-control-function',
-                'apm/nodejs-agent-network',
-                'apm/nodejs-agent-log',
-                'apm/nodejs-agent-transaction',
-                'apm/nodejs-agent-dbsql',
-                'apm/nodejs-agent-httpcapicall',
-                'apm/nodejs-agent-number-of-user',
-                'apm/nodejs-agent-static',
-                'apm/nodejs-agent-topology',
-              ]
-            },
-            'apm/nodejs-agent-manage',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Python 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/python-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/python-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/python-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/python-after-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/python-agent-troubleshooting',
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/python-set-agent'
-              },
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 이름 식별',
-                  id: 'apm/python-agent-name'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 기능 제어',
-                  id: 'apm/python-control-function'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 통신 설정',
-                  id: 'apm/python-agent-com'
-                },
-                {
-                  type: 'doc',
-                  label: '에이전트 로그',
-                  id: 'apm/python-agent-log'
-                },
-                {
-                  type: 'doc',
-                  label: '트랜잭션',
-                  id: 'apm/python-transaction'
-                },
-                {
-                  type: 'doc',
-                  label: 'DB와 SQL',
-                  id: 'apm/python-db-sql'
-                },
-                {
-                  type: 'doc',
-                  label: 'HTTPC와 API Call',
-                  id: 'apm/python-httpc-api'
-                },
-                {
-                  type: 'doc',
-                  label: '사용자 수',
-                  id: 'apm/python-collect-user'
-                },
-                {
-                  type: 'doc',
-                  label: '통계',
-                  id: 'apm/python-stat'
-                }
-              ]
-            },
-            {
-              type: 'doc',
-              label: '고급 기능',
-              id: 'apm/python-adf',
-            },
-            {
-              type: 'category',
-              label: '관리하기',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                {
-                  type: 'doc',
-                  label: '에이전트 삭제',
-                  id: 'apm/python-remove'
-                },
-                {
-                  type: 'doc',
-                  label: '패키지 관리',
-                  id: 'apm/python-pkg'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: '.NET 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/dotnet-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/dotnet-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/dotnet-install-agent',
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/dotnet-after-install'
-            },
-            {
-              type: 'doc',
-              label: '설치 문제 해결',
-              id: 'apm/dotnet-agent-troubleshooting',
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/dotnet-set-agent'
-              },
-              items: [
-                'apm/dotnet-agent-name',
-                'apm/dotnet-control-function',
-                'apm/dotnet-agent-network',
-                'apm/dotnet-agent-performance',
-                'apm/dotnet-agent-log',
-                'apm/dotnet-agent-transaction',
-                'apm/dotnet-agent-dbsql',
-                'apm/dotnet-agent-httpcapicall',
-                'apm/dotnet-agent-number-of-user',
-                'apm/dotnet-agent-static',
-                'apm/dotnet-agent-topology',
-              ]
-            },
-            {
-              type: 'doc',
-              label: '관리하기',
-              id: 'apm/dotnet-agent-manage'
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Golang 모니터링',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apm/golang-intro'
-          },
-          items: [
-            {
-              type: 'doc',
-              label: '지원 환경',
-              id: 'apm/golang-supported-spec'
-            },
-            {
-              type: 'doc',
-              label: '에이전트 설치',
-              id: 'apm/golang-install-agent'
-            },
-            {
-              type: 'doc',
-              label: '설치 점검',
-              id: 'apm/golang-after-install-agent'
-            },
-            {
-              type: 'category',
-              label: '설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apm/golang-set-agent'
-              },
-              items: [
-                'apm/golang-agent-name',
-                'apm/golang-agent-transaction',
-                'apm/golang-agent-dbsql',
-                'apm/golang-agent-httpcall',
-                'apm/golang-agent-method',
-                'apm/golang-agent-number-of-user'
-              ]
-            },
-            {
-              type: 'doc',
-              label: '관리하기',
-              id: 'apm/golang-agent-manage'
-            }
-          ]
-        },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
