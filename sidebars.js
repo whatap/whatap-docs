@@ -3438,7 +3438,7 @@ const sidebars = {
   pluginSidebar: [
     {
       type: 'category',
-      label: '확장 도구',
+      label: '확장 도구(Extensions)',
       collapsible: false,
       collapsed: false,
       link: {
