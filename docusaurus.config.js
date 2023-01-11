@@ -63,27 +63,19 @@ const config = {
             from: '/whatap_guide/install_agent/kubernetes/install',
           },
           {
-            to: '/db/db-monitoring-intro',
-            from: '/whatap_guide/install_agent/db/install_process.html',
-          },
-          {
-            to: '/db/db-monitoring-intro',
-            from: '/whatap_guide/install_agent/db/install_process',
-          },
-          {
-            to: '/db/install-db-agent',
+            to: '/mysql/install-db-agent',
             from: '/kr/agent_mysql'
           },
           {
-            to: '/db/install-db-agent',
+            to: '/mssql/install-db-agent',
             from: '/kr/agent_mssql'
           },
           {
-            to: '/db/install-db-agent',
+            to: '/tibero/install-db-agent',
             from: '/kr/agent_tibero'
           },
           {
-            to: '/db/install-db-agent',
+            to: '/postgresql/install-db-agent',
             from: '/kr/agent_postgresql'
           }
         ]
@@ -542,69 +534,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: '모니터링 서비스',
-          //   items: [
-          //     {
-          //       label: '애플리케이션',
-          //       to: 'apm/application-intro',
-          //     },
-          //     {
-          //       label: '서버',
-          //       to: 'server/server-intro',
-          //     },
-          //     {
-          //       label: '데이터베이스',
-          //       to: 'db/db-monitoring-intro',
-          //     },
-          //     {
-          //       label: '로그',
-          //       to: 'log/log-intro',
-          //     },
-          //     {
-          //       label: 'URL',
-          //       to: 'url/url-intro',
-          //     },
-          //     {
-          //       label: 'AWS Log',
-          //       to: 'aws-log/aws-log-intro',
-          //     },
-          //     {
-          //       label: '인티그레이션',
-          //       to: 'integration/integ-intro',
-          //     },
-          //     {
-          //       label: '브라우저(RUM)',
-          //       to: 'rum/rum-intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Youtube',
-          //       href: 'https://www.youtube.com/channel/UCLjXEb1IhLuw4GspxHGmQPA',
-          //     },
-          //     {
-          //       label: 'Facebook',
-          //       href: 'https://www.facebook.com/whatap.io',
-          //     },
-          //     {
-          //       label: 'Indeed',
-          //       href: 'https://www.linkedin.com/company/65662700/',
-          //     }
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: '와탭 스토리',
-          //       href: 'https://www.whatap.io/ko/blog/menu/index.html',
-          //     },
-          //   ],
-          // },
+
         ],
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
