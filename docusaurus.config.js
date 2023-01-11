@@ -295,6 +295,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'amazon-cloudwatch/amazon-cloudwatch-install',
+                label: 'Amazon CloudWatch',
+              },
+              {
+                type: 'doc',
                 docId: 'amazon-ecs/amazon-ecs-intro',
                 label: 'Amazon ECS',
               },
@@ -460,6 +465,13 @@ const config = {
           {
             type: 'doc',
             docId: 'amazon-cloudwatch/amazon-cloudwatch-install',
+            position: "left",
+            label: 'Amazon CloudWatch',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'amazon-ecs/amazon-ecs-intro',
             position: "left",
             label: 'Amazon ECS',
             className: 'hidden',

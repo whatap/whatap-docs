@@ -2865,14 +2865,14 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Amazon ECS',
-          href: '../amazon-ecs/amazon-ecs-intro',
+          label: 'Amazon CloudWatch',
+          href: '../amazon-cloudwatch/amazon-cloudwatch-install',
           className: "_productlink"
         },
         {
           type: 'link',
-          label: 'Amazon CloudWatch',
-          href: '../amazon-cloudwatch/amazon-cloudwatch-install',
+          label: 'Amazon ECS',
+          href: '../amazon-ecs/amazon-ecs-intro',
           className: "_productlink"
         },
         {
