@@ -70,7 +70,9 @@ function DocItem({doc}) {
     parent = "URL 모니터링";
   } else if (hrefid.includes('cloudwatch')) {
     parent = "Amazon CloudWatch";
-  } else if (hrefid.includes('ecs')) {
+  } else if (hrefid.includes('acw')) {
+    parent = "Amazon CloudWatch";
+  }else if (hrefid.includes('ecs')) {
     parent = "Amazon ECS";
   } else if (hrefid.includes('azure')) {
     parent = "Azure Moitor";
@@ -86,7 +88,15 @@ function DocItem({doc}) {
     parent = "Telegraf";
   } else if (hrefid.includes('focus')) {
     parent = "Focus";
-  } else if (hrefid.match(/billing|account|manage|group|maintenance|organization|project|rt-notification/g)) {
+  } else if (hrefid.includes('ref-cloud')) {
+    parent = "클라우드 모니터링";
+  } else if (hrefid.includes('mxql')) {
+    parent = "참조 문서 > MXQL";
+  } else if (hrefid.includes('openapi')) {
+    parent = "참조 문서 > Open API";
+  } else if (hrefid.includes('glossary')) {
+    parent = "용어 사전";
+  }else if (hrefid.match(/billing|account|manage|group|maintenance|organization|project|rt-notification/g)) {
     parent = "관리 기능";
   } else {
     parent = '...'
