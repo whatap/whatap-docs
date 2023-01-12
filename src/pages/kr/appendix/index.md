@@ -1,6 +1,6 @@
 import {Redirect} from '@docusaurus/router';
 
-const Home = () => {
+export const Home = () => {
   return <Redirect to="../" />;
 };
 
