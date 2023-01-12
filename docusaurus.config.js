@@ -39,45 +39,9 @@ const config = {
         fromExtensions: ['html', 'htm'],
         redirects: [
           {
-            to: '/url/url-intro',
-            from: '/use_guide/url_monitoring/intro'
+            to: '/mysql/db-monitoring-intro',
+            from: '/db/db-monitoring-intro'
           },
-          {
-            to: '/url/url-intro',
-            from: '/use_guide/url_monitoring/intro.html'
-          },
-          {
-            to: '/server/server-intro',
-            from: '/whatap_guide/install_agent/server/support_env.html'
-          },
-          {
-            to: '/server/server-intro',
-            from: '/whatap_guide/install_agent/server/support_env'
-          },
-          {
-            to: '/kubernetes/kubernetes-intro',
-            from: '/whatap_guide/install_agent/kubernetes/install.html',
-          },
-          {
-            to: '/kubernetes/kubernetes-intro',
-            from: '/whatap_guide/install_agent/kubernetes/install',
-          },
-          {
-            to: '/mysql/install-db-agent',
-            from: '/kr/agent_mysql'
-          },
-          {
-            to: '/mssql/install-db-agent',
-            from: '/kr/agent_mssql'
-          },
-          {
-            to: '/tibero/install-db-agent',
-            from: '/kr/agent_tibero'
-          },
-          {
-            to: '/postgresql/install-db-agent',
-            from: '/kr/agent_postgresql'
-          }
         ]
       }
     ],
