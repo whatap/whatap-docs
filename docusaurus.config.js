@@ -36,13 +36,10 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        fromExtensions: ['html', 'htm'],
-        redirects: [
-          {
-            to: '/mysql/db-monitoring-intro',
-            from: '/db/db-monitoring-intro'
-          },
-        ]
+        // fromExtensions: ['html', 'htm'],
+        // redirects: [
+
+        // ]
       }
     ],
     [
