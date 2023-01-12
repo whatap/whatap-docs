@@ -414,6 +414,7 @@ main .markdown div.flex-container-s div.apm-agent {
 }
 main .markdown div.flex-container-s div.apm-agent .logo {
   width: 50%;
+  height: 99px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -443,9 +444,9 @@ main .markdown div.flex-container-s div.apm-agent .logo img {
   height: auto;
   margin-right: 8px;
 }
-main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-php.svg'] {
-  margin-top: 20px;
-}
+/* main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-php.svg'] {
+  margin-top: 40px;
+} */
 main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-nodejs.svg'] {
   width: 60px;
 }
@@ -694,20 +695,61 @@ main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
     display: block;
   }
   main .markdown div.flex-container-s {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  main .markdown div.flex-container-s div.apm-agent {
+    padding: 5px 5px 5px 5px;
+    min-height: auto;
+    min-width: 50%;
   }
   main .markdown div.flex-container-s div.apm-agent .int {
-    width: 100%;
-    min-width: 240px;
+    /* width: 100%;
+    min-width: 240px; */
   }
   main .markdown div.flex-container-s div.apm-agent .int p {
-    font-size: 1.2rem;
+    font-size: .9rem;
+  }
+  main .markdown div.flex-container-s div.apm-agent .int code {
+    font-size: .5rem;
+  }
+  main .markdown div.flex-container-s div.apm-agent .logo {
+    width: 80px;
+    align-items: center;
+  }
+  main .markdown div.flex-container-s div.apm-agent .logo img {
+    width: 50px;
+  }
+  main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-nodejs.svg'] {
+    width: 35px;
   }
 }
 
 @media all and (max-width: 390px) {
+  main .markdown div.flex-container-s {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+  main .markdown div.flex-container-s div.apm-agent {
+    padding-left: 10px;
+    padding-left: 20px;
+    min-width: 100%;
+  }
   main .markdown div.flex-container-s div.apm-agent .int {
     width: 100%;
-    min-width: 170px;
+    min-width: auto;
+  }
+  main .markdown div.flex-container-s div.apm-agent .int p {
+    font-size: 1.2rem;
+  }
+  main .markdown div.flex-container-s div.apm-agent .logo {
+    min-width: 120px;
+    align-items: center;
+  }
+  main .markdown div.flex-container-s div.apm-agent .logo img {
+    width: 100px;
+  }
+  main .markdown div.flex-container-s div.apm-agent .logo img[src*='ico-index-nodejs.svg'] {
+    width: 60px;
   }
 }
