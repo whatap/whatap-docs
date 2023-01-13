@@ -15,7 +15,7 @@ const config = {
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
-  favicon: 'https://guide.whatap.io/_/img/favicon.ico',
+  favicon: '/img/whatap-favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -65,6 +65,7 @@ const config = {
         docsRouteBasePath: '/',
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        searchResultContextMaxLength: 50,
       }
     ],
     [
