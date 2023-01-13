@@ -5231,6 +5231,7 @@ const sidebars = {
             'log/log-server'
           ],
         },
+        'log/log-setting',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -5243,8 +5244,7 @@ const sidebars = {
           items: [
             'log/log-lt',
             'log/log-exp',
-            'log/log-search', 
-            'log/log-setting',          
+            'log/log-search',           
             'notification/log-alert'
           ],
         },
