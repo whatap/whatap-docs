@@ -2867,7 +2867,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Amazon CloudWatch',
-          href: '../amazon-cloudwatch/amazon-cloudwatch-install',
+          href: '../amazon-cloudwatch/acw-install',
           className: "_productlink"
         },
         {
@@ -2924,7 +2924,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Amazon CloudWatch',
-        //   href: 'amazon-cloudwatch/amazon-cloudwatch-install'
+        //   href: 'amazon-cloudwatch/acw-install'
         // },
         // {
         //   type: 'link',
@@ -3056,10 +3056,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'amazon-cloudwatch/amazon-cloudwatch-install'
+            id: 'amazon-cloudwatch/acw-install'
           },
           items: [
-            'amazon-cloudwatch/amazon-cloudwatch-install',
+            'amazon-cloudwatch/acw-install',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3070,7 +3070,7 @@ const sidebars = {
                 id: 'amazon-cloudwatch/learn-acw-main-menu'
               },
               items: [
-                'dashboard/acw-dashboard',
+                'amazon-cloudwatch/acw-dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3078,15 +3078,15 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/acw-flexboard',
+                    id: 'amazon-cloudwatch/acw-flexboard',
                   },
                   items: [
-                    'dashboard/acw-flexboard-template',
-                    'dashboard/acw-flexboard-create',
-                    'dashboard/acw-flexboard-metric-widget',
-                    'dashboard/acw-flexboard-widget-manage',
-                    'dashboard/acw-flexboard-mode',
-                    'dashboard/acw-flexboard-share',
+                    'amazon-cloudwatch/acw-flexboard-template',
+                    'amazon-cloudwatch/acw-flexboard-create',
+                    'amazon-cloudwatch/acw-flexboard-metric-widget',
+                    'amazon-cloudwatch/acw-flexboard-widget-manage',
+                    'amazon-cloudwatch/acw-flexboard-mode',
+                    'amazon-cloudwatch/acw-flexboard-share',
                   ]
                 },
                 'metrics/aws-cloud-metrics-intro',
@@ -3575,7 +3575,7 @@ const sidebars = {
       //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
       // },
       items: [
-        'amazon-cloudwatch/amazon-cloudwatch-install',
+        'amazon-cloudwatch/acw-install',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3586,7 +3586,7 @@ const sidebars = {
             id: 'amazon-cloudwatch/learn-acw-main-menu'
           },
           items: [
-            'dashboard/acw-dashboard',
+            'amazon-cloudwatch/acw-dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3594,15 +3594,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/acw-flexboard',
+                id: 'amazon-cloudwatch/acw-flexboard',
               },
               items: [
-                'dashboard/acw-flexboard-template',
-                'dashboard/acw-flexboard-create',
-                'dashboard/acw-flexboard-metric-widget',
-                'dashboard/acw-flexboard-widget-manage',
-                'dashboard/acw-flexboard-mode',
-                'dashboard/acw-flexboard-share',
+                'amazon-cloudwatch/acw-flexboard-template',
+                'amazon-cloudwatch/acw-flexboard-create',
+                'amazon-cloudwatch/acw-flexboard-metric-widget',
+                'amazon-cloudwatch/acw-flexboard-widget-manage',
+                'amazon-cloudwatch/acw-flexboard-mode',
+                'amazon-cloudwatch/acw-flexboard-share',
               ]
             },
             'metrics/aws-cloud-metrics-intro',

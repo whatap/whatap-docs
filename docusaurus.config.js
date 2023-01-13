@@ -249,7 +249,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'amazon-cloudwatch/amazon-cloudwatch-install',
+                docId: 'amazon-cloudwatch/acw-install',
                 label: 'Amazon CloudWatch',
               },
               {
@@ -418,7 +418,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'amazon-cloudwatch/amazon-cloudwatch-install',
+            docId: 'amazon-cloudwatch/acw-install',
             position: "left",
             label: 'Amazon CloudWatch',
             className: 'hidden',
