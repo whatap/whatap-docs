@@ -3101,8 +3101,8 @@ const sidebars = {
                   },
                   items: [
                     'amazon-cloudwatch/acw-warning-and-history',
-                    'amazon-cloudwatch/acw-set-receive-event',
                     'amazon-cloudwatch/acw-metric-warning-notice',
+                    'amazon-cloudwatch/acw-set-receive-event',
                   ]
                 },
               ],
@@ -3617,8 +3617,8 @@ const sidebars = {
               },
               items: [
                 'amazon-cloudwatch/acw-warning-and-history',
-                'amazon-cloudwatch/acw-set-receive-event',
                 'amazon-cloudwatch/acw-metric-warning-notice',
+                'amazon-cloudwatch/acw-set-receive-event',
               ]
             },
           ],
