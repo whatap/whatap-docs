@@ -159,7 +159,7 @@ const config = {
             items: [
               {
                 type: 'doc',
-                docId: 'apm/java/apm-introduction',
+                docId: 'java/introduction',
                 label: 'Java',
               },
               {
@@ -292,7 +292,7 @@ const config = {
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
           {
             type: 'doc',
-            docId: 'apm/java/apm-introduction',
+            docId: 'java/introduction',
             position: "left",
             label: 'Java 모니터링',
             className: 'hidden',

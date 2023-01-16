@@ -25,13 +25,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/java/apm-introduction'
+        id: 'java/introduction'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'apm/java/supported-spec',
+          id: 'java/supported-spec',
         },
         {
           type: 'category',
@@ -40,28 +40,28 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/java/install-agent',
+            id: 'java/install-agent',
           },
           items: [
-            'apm/add-jvm-opt/tomcat',
-            'apm/add-jvm-opt/jboss',
-            'apm/add-jvm-opt/jeus',
-            'apm/add-jvm-opt/weblogic',
-            'apm/add-jvm-opt/websphere',
-            'apm/add-jvm-opt/resin',
-            'apm/add-jvm-opt/liberty',
-            'apm/add-jvm-opt/jetty',
-            'apm/add-jvm-opt/spring-boot',
-            'apm/add-jvm-opt/play2',
-            'apm/add-jvm-opt/ibm-bluemix',
-            'apm/add-jvm-opt/elastic-beanstalk',
-            'apm/add-jvm-opt/docker',
-            'apm/add-jvm-opt/batch-app',
-            'apm/add-jvm-opt/java-under-ver',
+            'java/add-jvm-opt/tomcat',
+            'java/add-jvm-opt/jboss',
+            'java/add-jvm-opt/jeus',
+            'java/add-jvm-opt/weblogic',
+            'java/add-jvm-opt/websphere',
+            'java/add-jvm-opt/resin',
+            'java/add-jvm-opt/liberty',
+            'java/add-jvm-opt/jetty',
+            'java/add-jvm-opt/spring-boot',
+            'java/add-jvm-opt/play2',
+            'java/add-jvm-opt/ibm-bluemix',
+            'java/add-jvm-opt/elastic-beanstalk',
+            'java/add-jvm-opt/docker',
+            'java/add-jvm-opt/batch-app',
+            'java/add-jvm-opt/java-under-ver',
           ]
         },
-        'apm/java/install-check',
-        'apm/java/agent-troubleshooting',
+        'java/install-check',
+        'java/agent-troubleshooting',
         {
           type: 'category',
           label: '설정하기',
@@ -69,44 +69,44 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/java/java-set-agent',
+            id: 'java/set-agent',
           },
           items: [
-            'apm/java-agent-name',
-            'apm/java-agent-control-function',
-            'apm/java-agent-usage',
-            'apm/java-agent-network',
-            'apm/java-agent-performance',
-            'apm/java-agent-log',
-            'apm/java-agent-gc-log',
-            'apm/java-agent-transaction',
-            'apm/java-agent-dbsql',
-            'apm/java-agent-httpcapicall',
+            'java/agent-name',
+            'java/agent-control-function',
+            'java/agent-usage',
+            'java/agent-network',
+            'java/agent-performance',
+            'java/agent-log',
+            'java/agent-gc-log',
+            'java/agent-transaction',
+            'java/agent-dbsql',
+            'java/agent-httpcapicall',
             {
               type: 'category',
               label: '에이전트 플러그인',
               items: [
-                'apm/java/java-script-plugin',
-                'apm/java/java-weaving-plugin',
+                'java/script-plugin',
+                'java/weaving-plugin',
               ]
             },
-            'apm/java-agent-number-of-user',
-            'apm/java-agent-load-amount',
-            'apm/java-agent-notification',
-            'apm/java-agent-apdex',
-            'apm/java-agent-static',
-            'apm/java-agent-toplogy',
-            'apm/java-agent-additional-option'
+            'java/agent-number-of-user',
+            'java/agent-load-amount',
+            'java/agent-notification',
+            'java/agent-apdex',
+            'java/agent-static',
+            'java/agent-toplogy',
+            'java/agent-additional-option'
           ]
         },
         {
           type: 'category',
           label: '관리하기',
           items: [
-            'apm/java/java-update-agent',
-            'apm/java/java-msa-group',
-            'apm/java/java-aes-256-encryption',
-            'apm/java/java-scale-in-auto-delete',
+            'java/update-agent',
+            'java/msa-group',
+            'java/aes-256-encryption',
+            'java/scale-in-auto-delete',
           ]
         },
         {
@@ -122,12 +122,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/java-dashboard-intro'
+                id: 'java/dashboard-intro'
               },
               items: [
-                'dashboard/java-dashboard',
-                'dashboard/java-dashboard-transactionmap',
-                'dashboard/java-dashboard-active-transaction',
+                'java/dashboard',
+                'java/dashboard-transactionmap',
+                'java/dashboard-active-transaction',
               ],
             },
             {
@@ -137,15 +137,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/java-flex-board',
+                id: 'java/flex-board',
               },
               items: [
-                'dashboard/java-flexboard-template',
-                'dashboard/java-flexboard-create',
-                'dashboard/java-flexboard-metric-widget',
-                'dashboard/java-flexboard-widget-manage',
-                'dashboard/java-flexboard-mode',
-                'dashboard/java-flexboard-share',
+                'java/flexboard-template',
+                'java/flexboard-create',
+                'java/flexboard-metric-widget',
+                'java/flexboard-widget-manage',
+                'java/flexboard-mode',
+                'java/flexboard-share',
               ],
             },
             {
@@ -155,13 +155,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/java-topology',
+                id: 'java/topology',
               },
               items: [
-                'topology/java-topology-basic',
-                'topology/java-topology-type',
-                'topology/java-topology-add-function',
-                'topology/java-topology-settings'
+                'java/topology-basic',
+                'java/topology-type',
+                'java/topology-add-function',
+                'java/topology-settings'
               ],
             },
             {
@@ -171,15 +171,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/java-track-transactions-intro'
+                id: 'java/track-transactions-intro'
               },
               items: [
-                'track-transactions/java-trs-view',
-                'track-transactions/java-trs-profile',
-                'track-transactions/java-active-transactions',
-                'track-transactions/java-collect-stacks',
-                'track-transactions/java-trs-multi-trace',
-                'track-transactions/java-trs-endpoint-setting',
+                'java/trs-view',
+                'java/trs-profile',
+                'java/active-transactions',
+                'java/collect-stacks',
+                'java/trs-multi-trace',
+                'java/trs-endpoint-setting',
               ]
             },
             {
@@ -189,11 +189,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/java-metrics-intro'
+                id: 'java/metrics-intro'
               },
               items: [
-                'metrics/java-metrics-app',
-                'metrics/java-metrics-performance-counter',
+                'java/metrics-app',
+                'java/metrics-performance-counter',
               ]
             },
             {
@@ -203,12 +203,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/java-analysis-report-intro'
+                id: 'java/analysis-report-intro'
               },
               items: [
-                'analysis/java-cube',
-                'analysis/java-analysis-apm',
-                'analysis/java-analysis-apm-trs',
+                'java/cube',
+                'java/analysis-apm',
+                'java/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -216,11 +216,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/java-report-intro'
+                    id: 'java/report-intro'
                   },
                   items: [
-                    'analysis/java-report-apm',
-                    'analysis/java-integrated-report',
+                    'java/report-apm',
+                    'java/integrated-report',
                   ]
                 }
               ]
@@ -232,17 +232,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/java-apm-set-notice',
+                id: 'java/apm-set-notice',
               },
               items: [
-                'notification/java-warning-notice',
-                'notification/java-metric-warning-notice',
-                'notification/java-hitmap-notice',
-                'notification/java-set-event-detect-anomal',
-                'notification/java-set-event-log',
-                'notification/java-set-receive-event',
-                'notification/java-set-event-history',
-                'notification/java-set-event-format',
+                'java/warning-notice',
+                'java/metric-warning-notice',
+                'java/hitmap-notice',
+                'java/set-event-detect-anomal',
+                'java/set-event-log',
+                'java/set-receive-event',
+                'java/set-event-history',
+                'java/set-event-format',
               ],
             },
             {
@@ -2759,7 +2759,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Java',
-          href: '../apm/java/apm-introduction',
+          href: '../java/introduction',
           className: "_productlink"
         },
         {
