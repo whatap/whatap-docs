@@ -2867,7 +2867,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Amazon CloudWatch',
-          href: '../amazon-cloudwatch/acw-install',
+          href: '../amazon-cloudwatch/install',
           className: "_productlink"
         },
         {
@@ -2924,7 +2924,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Amazon CloudWatch',
-        //   href: 'amazon-cloudwatch/acw-install'
+        //   href: 'amazon-cloudwatch/install'
         // },
         // {
         //   type: 'link',
@@ -3056,10 +3056,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'amazon-cloudwatch/acw-install'
+            id: 'amazon-cloudwatch/install'
           },
           items: [
-            'amazon-cloudwatch/acw-install',
+            'amazon-cloudwatch/install',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3067,10 +3067,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'amazon-cloudwatch/learn-acw-main-menu'
+                id: 'amazon-cloudwatch/learn-main-menu'
               },
               items: [
-                'amazon-cloudwatch/acw-dashboard',
+                'amazon-cloudwatch/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3078,18 +3078,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'amazon-cloudwatch/acw-flexboard',
+                    id: 'amazon-cloudwatch/flexboard',
                   },
                   items: [
-                    'amazon-cloudwatch/acw-flexboard-template',
-                    'amazon-cloudwatch/acw-flexboard-create',
-                    'amazon-cloudwatch/acw-flexboard-metric-widget',
-                    'amazon-cloudwatch/acw-flexboard-widget-manage',
-                    'amazon-cloudwatch/acw-flexboard-mode',
-                    'amazon-cloudwatch/acw-flexboard-share',
+                    'amazon-cloudwatch/flexboard-template',
+                    'amazon-cloudwatch/flexboard-create',
+                    'amazon-cloudwatch/flexboard-metric-widget',
+                    'amazon-cloudwatch/flexboard-widget-manage',
+                    'amazon-cloudwatch/flexboard-mode',
+                    'amazon-cloudwatch/flexboard-share',
                   ]
                 },
-                'amazon-cloudwatch/acw--metrics-intro',
+                'amazon-cloudwatch/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3097,12 +3097,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'amazon-cloudwatch/acw-set-notice',
+                    id: 'amazon-cloudwatch/set-notice',
                   },
                   items: [
-                    'amazon-cloudwatch/acw-warning-and-history',
-                    'amazon-cloudwatch/acw-metric-warning-notice',
-                    'amazon-cloudwatch/acw-set-receive-event',
+                    'amazon-cloudwatch/warning-and-history',
+                    'amazon-cloudwatch/metric-warning-notice',
+                    'amazon-cloudwatch/set-receive-event',
                   ]
                 },
               ],
@@ -3575,7 +3575,7 @@ const sidebars = {
       //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
       // },
       items: [
-        'amazon-cloudwatch/acw-install',
+        'amazon-cloudwatch/install',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3583,10 +3583,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'amazon-cloudwatch/learn-acw-main-menu'
+            id: 'amazon-cloudwatch/learn-main-menu'
           },
           items: [
-            'amazon-cloudwatch/acw-dashboard',
+            'amazon-cloudwatch/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3594,18 +3594,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'amazon-cloudwatch/acw-flexboard',
+                id: 'amazon-cloudwatch/flexboard',
               },
               items: [
-                'amazon-cloudwatch/acw-flexboard-template',
-                'amazon-cloudwatch/acw-flexboard-create',
-                'amazon-cloudwatch/acw-flexboard-metric-widget',
-                'amazon-cloudwatch/acw-flexboard-widget-manage',
-                'amazon-cloudwatch/acw-flexboard-mode',
-                'amazon-cloudwatch/acw-flexboard-share',
+                'amazon-cloudwatch/flexboard-template',
+                'amazon-cloudwatch/flexboard-create',
+                'amazon-cloudwatch/flexboard-metric-widget',
+                'amazon-cloudwatch/flexboard-widget-manage',
+                'amazon-cloudwatch/flexboard-mode',
+                'amazon-cloudwatch/flexboard-share',
               ]
             },
-            'amazon-cloudwatch/acw--metrics-intro',
+            'amazon-cloudwatch/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3613,12 +3613,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'amazon-cloudwatch/acw-set-notice',
+                id: 'amazon-cloudwatch/set-notice',
               },
               items: [
-                'amazon-cloudwatch/acw-warning-and-history',
-                'amazon-cloudwatch/acw-metric-warning-notice',
-                'amazon-cloudwatch/acw-set-receive-event',
+                'amazon-cloudwatch/warning-and-history',
+                'amazon-cloudwatch/metric-warning-notice',
+                'amazon-cloudwatch/set-receive-event',
               ]
             },
           ],
