@@ -3089,7 +3089,7 @@ const sidebars = {
                     'amazon-cloudwatch/acw-flexboard-share',
                   ]
                 },
-                'metrics/aws-cloud-metrics-intro',
+                'amazon-cloudwatch/acw--metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3097,12 +3097,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/acw-set-notice',
+                    id: 'amazon-cloudwatch/acw-set-notice',
                   },
                   items: [
-                    'notification/acw-warning-and-history',
-                    'notification/acw-set-receive-event',
-                    'notification/acw-metric-warning-notice',
+                    'amazon-cloudwatch/acw-warning-and-history',
+                    'amazon-cloudwatch/acw-set-receive-event',
+                    'amazon-cloudwatch/acw-metric-warning-notice',
                   ]
                 },
               ],
@@ -3605,7 +3605,7 @@ const sidebars = {
                 'amazon-cloudwatch/acw-flexboard-share',
               ]
             },
-            'metrics/aws-cloud-metrics-intro',
+            'amazon-cloudwatch/acw--metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3613,12 +3613,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/acw-set-notice',
+                id: 'amazon-cloudwatch/acw-set-notice',
               },
               items: [
-                'notification/acw-warning-and-history',
-                'notification/acw-set-receive-event',
-                'notification/acw-metric-warning-notice',
+                'amazon-cloudwatch/acw-warning-and-history',
+                'amazon-cloudwatch/acw-set-receive-event',
+                'amazon-cloudwatch/acw-metric-warning-notice',
               ]
             },
           ],
