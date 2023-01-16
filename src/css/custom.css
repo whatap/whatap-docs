@@ -61,7 +61,7 @@ html[lang='ko'] {
   top: 4px;
 }
 
-main .markdown .gs {
+main .markdown .gs-main {
   padding: 20px;
   /* border: 1px solid; */
   /* border-color: var(--shortcut-list-color); */
@@ -112,24 +112,24 @@ main .faq blockquote {
   border: none;
 }
 
-main .markdown .gs h2, main .markdown .gs li, main .markdown .gs h2, main .markdown .gs p {
+main .markdown .gs-main h2, main .markdown .gs-main li, main .markdown .gs-main h2, main .markdown .gs-main p {
   color: #fff;
 }
 
-main .markdown .gs h2, main .markdown .gs li a, main .markdown .gs h2, main .markdown .gs p a {
+main .markdown .gs-main h2, main .markdown .gs-main li a, main .markdown .gs-main h2, main .markdown .gs-main p a {
   font-weight: bold;
 }
 
-main .markdown .gs li a, main .markdown .gs p a {
+main .markdown .gs-main li a, main .markdown .gs-main p a {
   color: #fff
 }
 
-main .markdown .gs p {
+main .markdown .gs-main p {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-main .markdown .gs ul {
+main .markdown .gs-main ul {
   margin-bottom: 0;
 }
 
@@ -709,7 +709,7 @@ main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
 }
 
 @media all and (max-width: 460px) {
-  main .markdown .gs {
+  main .markdown .gs-main {
     display: block;
   }
   main .markdown div.flex-container-s {
