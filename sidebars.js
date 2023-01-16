@@ -3089,7 +3089,7 @@ const sidebars = {
                     'amazon-cloudwatch/acw-flexboard-share',
                   ]
                 },
-                'amazon-cloudwatch/acw--metrics-intro',
+                'amazon-cloudwatch/acw-metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3605,7 +3605,7 @@ const sidebars = {
                 'amazon-cloudwatch/acw-flexboard-share',
               ]
             },
-            'amazon-cloudwatch/acw--metrics-intro',
+            'amazon-cloudwatch/acw-metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
