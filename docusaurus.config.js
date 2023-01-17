@@ -269,7 +269,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'oracle-cloud/oracle-cloud-monitor-install',
+                docId: 'oracle-cloud/install-agent',
                 label: 'Oracle Cloud Monitor',
               },
               {
@@ -446,7 +446,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'oracle-cloud/oracle-cloud-monitor-install',
+            docId: 'oracle-cloud/install-agent',
             position: "left",
             label: 'Oracle Cloud Monitor',
             className: 'hidden',

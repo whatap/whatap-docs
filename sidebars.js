@@ -2891,7 +2891,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Oracle Cloud Monitor',
-          href: '../oracle-cloud/oracle-cloud-monitor-install',
+          href: '../oracle-cloud/install-agent',
           className: "_productlink"
         },
         {
@@ -2939,7 +2939,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Oracle Cloud Monitor',
-        //   href: 'oracle-cloud/oracle-cloud-monitor-install' 
+        //   href: 'oracle-cloud/install-agent' 
         // },
         // {
         //   type: 'link',
@@ -3236,10 +3236,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'oracle-cloud/oracle-cloud-monitor-install'
+            id: 'oracle-cloud/install-agent'
           },
           items: [
-            'oracle-cloud/oracle-cloud-monitor-install',
+            'oracle-cloud/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3247,10 +3247,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'oracle-cloud/learn-oracle-main-menu'
+                id: 'oracle-cloud/learn-main-menu'
               },
               items: [
-                // 'dashboard/oracle-dashboard',
+                // 'oracle-cloud/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3258,18 +3258,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/oracle-flexboard',
+                    id: 'oracle-cloud/flexboard',
                   },
                   items: [
-                    'dashboard/oracle-flexboard-template',
-                    'dashboard/oracle-flexboard-create',
-                    'dashboard/oracle-flexboard-metric-widget',
-                    'dashboard/oracle-flexboard-widget-manage',
-                    'dashboard/oracle-flexboard-mode',
-                    'dashboard/oracle-flexboard-share',
+                    'oracle-cloud/flexboard-template',
+                    'oracle-cloud/flexboard-create',
+                    'oracle-cloud/flexboard-metric-widget',
+                    'oracle-cloud/flexboard-widget-manage',
+                    'oracle-cloud/flexboard-mode',
+                    'oracle-cloud/flexboard-share',
                   ]
                 },
-                'metrics/oracle-metrics-intro',
+                'oracle-cloud/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3277,12 +3277,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/oracle-set-notice',
+                    id: 'oracle-cloud/set-notice',
                   },
                   items: [
-                    'notification/oracle-warning-and-history',
-                    'notification/oracle-set-receive-event',
-                    'notification/oracle-metric-warning-notice',
+                    'oracle-cloud/warning-and-history',
+                    'oracle-cloud/set-receive-event',
+                    'oracle-cloud/metric-warning-notice',
                   ]
                 },
               ],
@@ -3761,7 +3761,7 @@ const sidebars = {
       //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
       // },
       items: [
-        'oracle-cloud/oracle-cloud-monitor-install',
+        'oracle-cloud/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3769,10 +3769,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'oracle-cloud/learn-oracle-main-menu'
+            id: 'oracle-cloud/learn-main-menu'
           },
           items: [
-            // 'dashboard/oracle-dashboard',
+            // 'oracle-cloud/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3780,18 +3780,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/oracle-flexboard',
+                id: 'oracle-cloud/flexboard',
               },
               items: [
-                'dashboard/oracle-flexboard-template',
-                'dashboard/oracle-flexboard-create',
-                'dashboard/oracle-flexboard-metric-widget',
-                'dashboard/oracle-flexboard-widget-manage',
-                'dashboard/oracle-flexboard-mode',
-                'dashboard/oracle-flexboard-share',
+                'oracle-cloud/flexboard-template',
+                'oracle-cloud/flexboard-create',
+                'oracle-cloud/flexboard-metric-widget',
+                'oracle-cloud/flexboard-widget-manage',
+                'oracle-cloud/flexboard-mode',
+                'oracle-cloud/flexboard-share',
               ]
             },
-            'metrics/oracle-metrics-intro',
+            'oracle-cloud/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3799,12 +3799,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/oracle-set-notice',
+                id: 'oracle-cloud/set-notice',
               },
               items: [
-                'notification/oracle-warning-and-history',
-                'notification/oracle-set-receive-event',
-                'notification/oracle-metric-warning-notice',
+                'oracle-cloud/warning-and-history',
+                'oracle-cloud/set-receive-event',
+                'oracle-cloud/metric-warning-notice',
               ]
             },
           ],
