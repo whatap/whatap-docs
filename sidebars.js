@@ -497,23 +497,23 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/nodejs/apm-introduction'
+        id: 'nodejs/introduction'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'apm/nodejs/supported-spec'
+          id: 'nodejs/supported-spec'
         },
         {
           type: 'doc',
           label: '에이전트 설치',
-          id: 'apm/nodejs/install-agent',
+          id: 'nodejs/install-agent',
         },
         {
           type: 'doc',
           label: '설치 점검',
-          id: 'apm/nodejs/install-check',
+          id: 'nodejs/install-check',
         },
         {
           type: 'category',
@@ -522,22 +522,22 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/nodejs/nodejs-set-agent'
+            id: 'nodejs/set-agent'
           },
           items: [
-            'apm/nodejs-agent-name',
-            'apm/nodejs-agent-control-function',
-            'apm/nodejs-agent-network',
-            'apm/nodejs-agent-log',
-            'apm/nodejs-agent-transaction',
-            'apm/nodejs-agent-dbsql',
-            'apm/nodejs-agent-httpcapicall',
-            'apm/nodejs-agent-number-of-user',
-            'apm/nodejs-agent-static',
-            'apm/nodejs-agent-topology',
+            'nodejs/agent-name',
+            'nodejs/agent-control-function',
+            'nodejs/agent-network',
+            'nodejs/agent-log',
+            'nodejs/agent-transaction',
+            'nodejs/agent-dbsql',
+            'nodejs/agent-httpcapicall',
+            'nodejs/agent-number-of-user',
+            'nodejs/agent-static',
+            'nodejs/agent-topology',
           ]
         },
-        'apm/nodejs/nodejs-agent-manage',
+        'nodejs/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -551,12 +551,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/nodejs-dashboard-intro'
+                id: 'nodejs/dashboard-intro'
               },
               items: [
-                'dashboard/nodejs-dashboard',
-                'dashboard/nodejs-dashboard-transactionmap',
-                'dashboard/nodejs-dashboard-active-transaction',
+                'nodejs/dashboard',
+                'nodejs/dashboard-transactionmap',
+                'nodejs/dashboard-active-transaction',
               ],
             },
             {
@@ -566,15 +566,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/nodejs-flex-board',
+                id: 'nodejs/flex-board',
               },
               items: [
-                'dashboard/nodejs-flexboard-template',
-                'dashboard/nodejs-flexboard-create',
-                'dashboard/nodejs-flexboard-metric-widget',
-                'dashboard/nodejs-flexboard-widget-manage',
-                'dashboard/nodejs-flexboard-mode',
-                'dashboard/nodejs-flexboard-share',
+                'nodejs/flexboard-template',
+                'nodejs/flexboard-create',
+                'nodejs/flexboard-metric-widget',
+                'nodejs/flexboard-widget-manage',
+                'nodejs/flexboard-mode',
+                'nodejs/flexboard-share',
               ],
             },
             {
@@ -584,13 +584,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/nodejs-topology',
+                id: 'nodejs/topology',
               },
               items: [
-                'topology/nodejs-topology-basic',
-                'topology/nodejs-topology-type',
-                'topology/nodejs-topology-add-function',
-                'topology/nodejs-topology-settings'
+                'nodejs/topology-basic',
+                'nodejs/topology-type',
+                'nodejs/topology-add-function',
+                'nodejs/topology-settings'
               ],
             },
             {
@@ -600,15 +600,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/nodejs-track-transactions-intro'
+                id: 'nodejs/track-transactions-intro'
               },
               items: [
-                'track-transactions/nodejs-trs-view',
-                'track-transactions/nodejs-trs-profile',
-                // 'track-transactions/nodejs-active-transactions',
+                'nodejs/trs-view',
+                'nodejs/trs-profile',
+                'nodejs/active-transactions',
                 // 'track-transactions/java-collect-stacks',
-                'track-transactions/nodejs-trs-multi-trace',
-                'track-transactions/nodejs-trs-endpoint-setting',
+                'nodejs/trs-multi-trace',
+                'nodejs/trs-endpoint-setting',
               ]
             },
             {
@@ -618,11 +618,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/nodejs-metrics-intro'
+                id: 'nodejs/metrics-intro'
               },
               items: [
-                'metrics/nodejs-metrics-app',
-                'metrics/nodejs-metrics-performance-counter',
+                'nodejs/metrics-app',
+                'nodejs/metrics-performance-counter',
               ]
             },
             {
@@ -632,12 +632,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/nodejs-analysis-report-intro'
+                id: 'nodejs/analysis-report-intro'
               },
               items: [
-                'analysis/nodejs-cube',
-                'analysis/nodejs-analysis-apm',
-                'analysis/nodejs-analysis-apm-trs',
+                'nodejs/cube',
+                'nodejs/analysis-apm',
+                'nodejs/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -645,11 +645,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/nodejs-report-intro'
+                    id: 'nodejs/report-intro'
                   },
                   items: [
-                    'analysis/nodejs-report-apm',
-                    'analysis/nodejs-integrated-report',
+                    'nodejs/report-apm',
+                    'nodejs/integrated-report',
                   ]
                 }
               ]
@@ -661,17 +661,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/nodejs-apm-set-notice',
+                id: 'nodejs/apm-set-notice',
               },
               items: [
-                'notification/nodejs-warning-notice',
-                'notification/nodejs-metric-warning-notice',
-                'notification/nodejs-hitmap-notice',
-                'notification/nodejs-set-event-detect-anomal',
-                'notification/nodejs-set-event-log',
-                'notification/nodejs-set-receive-event',
-                'notification/nodejs-set-event-history',
-                'notification/nodejs-set-event-format',
+                'nodejs/warning-notice',
+                'nodejs/metric-warning-notice',
+                'nodejs/hitmap-notice',
+                'nodejs/set-event-detect-anomal',
+                'nodejs/set-event-log',
+                'nodejs/set-receive-event',
+                'nodejs/set-event-history',
+                'nodejs/set-event-format',
               ],
             },
             {
@@ -2771,7 +2771,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Node.js',
-          href: '../apm/nodejs/apm-introduction',
+          href: '../nodejs/introduction',
           className: "_productlink"
         },
         {

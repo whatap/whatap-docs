@@ -169,7 +169,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'apm/nodejs/apm-introduction',
+                docId: 'nodejs/introduction',
                 label: 'Node.js',
               },
               {
@@ -306,7 +306,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'apm/nodejs/apm-introduction',
+            docId: 'nodejs/introduction',
             position: "left",
             label: 'Node.js 모니터링',
             className: 'hidden',
