@@ -3041,8 +3041,8 @@ const sidebars = {
                   },
                   items: [
                     'amazon-ecs/warning-and-history',
-                    'amazon-ecs/set-receive-event',
                     'amazon-ecs/metric-warning-notice',
+                    'amazon-ecs/set-receive-event',
                   ]
                 },
               ],
@@ -3161,8 +3161,8 @@ const sidebars = {
                   },
                   items: [
                     'azure/warning-and-history',
-                    'azure/set-receive-event',
                     'azure/metric-warning-notice',
+                    'azure/set-receive-event',
                   ]
                 },
               ],
@@ -3221,8 +3221,8 @@ const sidebars = {
                   },
                   items: [
                     'ncloud/warning-and-history',
-                    'ncloud/set-receive-event',
                     'ncloud/metric-warning-notice',
+                    'ncloud/set-receive-event',
                   ]
                 },
               ],
@@ -3281,8 +3281,8 @@ const sidebars = {
                   },
                   items: [
                     'oracle-cloud/warning-and-history',
-                    'oracle-cloud/set-receive-event',
                     'oracle-cloud/metric-warning-notice',
+                    'oracle-cloud/set-receive-event',
                   ]
                 },
               ],
@@ -3555,8 +3555,8 @@ const sidebars = {
               },
               items: [
                 'amazon-ecs/warning-and-history',
-                'amazon-ecs/set-receive-event',
                 'amazon-ecs/metric-warning-notice',
+                'amazon-ecs/set-receive-event',
               ]
             },
           ],
@@ -3679,8 +3679,8 @@ const sidebars = {
               },
               items: [
                 'azure/warning-and-history',
-                'azure/set-receive-event',
                 'azure/metric-warning-notice',
+                'azure/set-receive-event',
               ]
             },
           ],
@@ -3741,8 +3741,8 @@ const sidebars = {
               },
               items: [
                 'ncloud/warning-and-history',
-                'ncloud/set-receive-event',
                 'ncloud/metric-warning-notice',
+                'ncloud/set-receive-event',
               ]
             },
           ],
@@ -3803,8 +3803,8 @@ const sidebars = {
               },
               items: [
                 'oracle-cloud/warning-and-history',
-                'oracle-cloud/set-receive-event',
                 'oracle-cloud/metric-warning-notice',
+                'oracle-cloud/set-receive-event',
               ]
             },
           ],
