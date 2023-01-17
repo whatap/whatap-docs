@@ -264,7 +264,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'ncloud/ncloud-monitoring-install',
+                docId: 'ncloud/install-agent',
                 label: 'Naver Cloud Monitoring',
               },
               {
@@ -439,7 +439,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'ncloud/ncloud-monitoring-install',
+            docId: 'ncloud/install-agent',
             position: "left",
             label: 'Naver Cloud Monitoring',
             className: 'hidden',
