@@ -254,7 +254,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'amazon-ecs/amazon-ecs-intro',
+                docId: 'amazon-ecs/introduction',
                 label: 'Amazon ECS',
               },
               {
@@ -425,7 +425,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'amazon-ecs/amazon-ecs-intro',
+            docId: 'amazon-ecs/introduction',
             position: "left",
             label: 'Amazon ECS',
             className: 'hidden',

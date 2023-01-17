@@ -2873,7 +2873,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Amazon ECS',
-          href: '../amazon-ecs/amazon-ecs-intro',
+          href: '../amazon-ecs/introduction',
           className: "_productlink"
         },
         {
@@ -2919,7 +2919,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Amazon ECS',
-        //   href: 'amazon-ecs/amazon-ecs-intro' 
+        //   href: 'amazon-ecs/introduction' 
         // },
         // {
         //   type: 'link',
@@ -2996,7 +2996,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'amazon-ecs/amazon-ecs-intro'
+            id: 'amazon-ecs/introduction'
           },
           items: [
             'amazon-ecs/amazon-ecs-install',
@@ -3510,7 +3510,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'amazon-ecs/amazon-ecs-intro'
+        id: 'amazon-ecs/introduction'
       },
       items: [
         'amazon-ecs/amazon-ecs-install',
