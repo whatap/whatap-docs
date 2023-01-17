@@ -2867,7 +2867,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Amazon CloudWatch',
-          href: '../amazon-cloudwatch/install',
+          href: '../amazon-cloudwatch/install-agent',
           className: "_productlink"
         },
         {
@@ -2924,7 +2924,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Amazon CloudWatch',
-        //   href: 'amazon-cloudwatch/install'
+        //   href: 'amazon-cloudwatch/install-agent'
         // },
         // {
         //   type: 'link',
@@ -3056,10 +3056,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'amazon-cloudwatch/install'
+            id: 'amazon-cloudwatch/install-agent'
           },
           items: [
-            'amazon-cloudwatch/install',
+            'amazon-cloudwatch/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3575,7 +3575,7 @@ const sidebars = {
       //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
       // },
       items: [
-        'amazon-cloudwatch/install',
+        'amazon-cloudwatch/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
