@@ -2879,7 +2879,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Azure Monitor',
-          href: '../azure/azure-monitor-install',
+          href: '../azure/install-agent',
           className: "_productlink"
         },
         {
@@ -2929,7 +2929,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Azure Monitor',
-        //   href: 'azure/azure-monitor-install' 
+        //   href: 'azure/install-agent' 
         // },
         // {
         //   type: 'link',
@@ -3116,10 +3116,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'azure/azure-monitor-install'
+            id: 'azure/install-agent'
           },
           items: [
-            'azure/azure-monitor-install',
+            'azure/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3127,10 +3127,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'azure/learn-azure-main-menu'
+                id: 'azure/learn-main-menu'
               },
               items: [
-                // 'dashboard/azure-dashboard',
+                // 'azure/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3138,18 +3138,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/azure-flexboard',
+                    id: 'azure/flexboard',
                   },
                   items: [
-                    'dashboard/azure-flexboard-template',
-                    'dashboard/azure-flexboard-create',
-                    'dashboard/azure-flexboard-metric-widget',
-                    'dashboard/azure-flexboard-widget-manage',
-                    'dashboard/azure-flexboard-mode',
-                    'dashboard/azure-flexboard-share',
+                    'azure/flexboard-template',
+                    'azure/flexboard-create',
+                    'azure/flexboard-metric-widget',
+                    'azure/flexboard-widget-manage',
+                    'azure/flexboard-mode',
+                    'azure/flexboard-share',
                   ]
                 },
-                'metrics/azure-metrics-intro',
+                'azure/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3157,12 +3157,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/azure-set-notice',
+                    id: 'azure/set-notice',
                   },
                   items: [
-                    'notification/azure-warning-and-history',
-                    'notification/azure-set-receive-event',
-                    'notification/azure-metric-warning-notice',
+                    'azure/warning-and-history',
+                    'azure/set-receive-event',
+                    'azure/metric-warning-notice',
                   ]
                 },
               ],
@@ -3637,7 +3637,7 @@ const sidebars = {
       //   id: 'azure/azure-monitor-intro'
       // },
       items: [
-        'azure/azure-monitor-install',
+        'azure/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3645,10 +3645,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'azure/learn-azure-main-menu'
+            id: 'azure/learn-main-menu'
           },
           items: [
-            // 'dashboard/azure-dashboard',
+            // 'azure/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3656,18 +3656,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/azure-flexboard',
+                id: 'azure/flexboard',
               },
               items: [
-                'dashboard/azure-flexboard-template',
-                'dashboard/azure-flexboard-create',
-                'dashboard/azure-flexboard-metric-widget',
-                'dashboard/azure-flexboard-widget-manage',
-                'dashboard/azure-flexboard-mode',
-                'dashboard/azure-flexboard-share',
+                'azure/flexboard-template',
+                'azure/flexboard-create',
+                'azure/flexboard-metric-widget',
+                'azure/flexboard-widget-manage',
+                'azure/flexboard-mode',
+                'azure/flexboard-share',
               ]
             },
-            'metrics/azure-metrics-intro',
+            'azure/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3675,12 +3675,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/azure-set-notice',
+                id: 'azure/set-notice',
               },
               items: [
-                'notification/azure-warning-and-history',
-                'notification/azure-set-receive-event',
-                'notification/azure-metric-warning-notice',
+                'azure/warning-and-history',
+                'azure/set-receive-event',
+                'azure/metric-warning-notice',
               ]
             },
           ],

@@ -259,7 +259,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'azure/azure-monitor-install',
+                docId: 'azure/install-agent',
                 label: 'Azure Monitor',
               },
               {
@@ -432,7 +432,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'azure/azure-monitor-install',
+            docId: 'azure/install-agent',
             position: "left",
             label: 'Azure Monitor',
             className: 'hidden',
