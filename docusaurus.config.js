@@ -36,10 +36,13 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        // fromExtensions: ['html', 'htm'],
-        // redirects: [
-
-        // ]
+        fromExtensions: ['html', 'htm'],
+        redirects: [
+          {
+            to: '/java/topology-basic',
+            from: '/topology/topology-basic'
+          }
+        ]
       }
     ],
     [
