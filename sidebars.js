@@ -2867,25 +2867,25 @@ const sidebars = {
         {
           type: 'link',
           label: 'Amazon CloudWatch',
-          href: '../amazon-cloudwatch/install',
+          href: '../amazon-cloudwatch/install-agent',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Amazon ECS',
-          href: '../amazon-ecs/amazon-ecs-intro',
+          href: '../amazon-ecs/introduction',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Azure Monitor',
-          href: '../azure/azure-monitor-install',
+          href: '../azure/install-agent',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Naver Cloud Monitoring',
-          href: '../ncloud/ncloud-monitoring-install',
+          href: '../ncloud/install-agent',
           className: "_productlink"
         },
         {
@@ -2919,22 +2919,22 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'Amazon ECS',
-        //   href: 'amazon-ecs/amazon-ecs-intro' 
+        //   href: 'amazon-ecs/introduction' 
         // },
         // {
         //   type: 'link',
         //   label: 'Amazon CloudWatch',
-        //   href: 'amazon-cloudwatch/install'
+        //   href: 'amazon-cloudwatch/install-agent'
         // },
         // {
         //   type: 'link',
         //   label: 'Azure Monitor',
-        //   href: 'azure/azure-monitor-install' 
+        //   href: 'azure/install-agent' 
         // },
         // {
         //   type: 'link',
         //   label: 'NCloud Monitoring',
-        //   href: 'ncloud/ncloud-monitoring-install' 
+        //   href: 'ncloud/install-agent' 
         // },
         // {
         //   type: 'link',
@@ -2996,10 +2996,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'amazon-ecs/amazon-ecs-intro'
+            id: 'amazon-ecs/introduction'
           },
           items: [
-            'amazon-ecs/amazon-ecs-install',
+            'amazon-ecs/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3007,10 +3007,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'amazon-ecs/learn-ecs-main-menu'
+                id: 'amazon-ecs/learn-main-menu'
               },
               items: [
-                'dashboard/ecs-dashboard',
+                'amazon-ecs/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3018,18 +3018,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/ecs-flexboard',
+                    id: 'amazon-ecs/flexboard',
                   },
                   items: [
-                    'dashboard/ecs-flexboard-template',
-                    'dashboard/ecs-flexboard-create',
-                    'dashboard/ecs-flexboard-metric-widget',
-                    'dashboard/ecs-flexboard-widget-manage',
-                    'dashboard/ecs-flexboard-mode',
-                    'dashboard/ecs-flexboard-share',
+                    'amazon-ecs/flexboard-template',
+                    'amazon-ecs/flexboard-create',
+                    'amazon-ecs/flexboard-metric-widget',
+                    'amazon-ecs/flexboard-widget-manage',
+                    'amazon-ecs/flexboard-mode',
+                    'amazon-ecs/flexboard-share',
                   ]
                 },
-                'metrics/ecs-metrics-intro',
+                'amazon-ecs/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3037,12 +3037,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/ecs-set-notice',
+                    id: 'amazon-ecs/set-notice',
                   },
                   items: [
-                    'notification/ecs-warning-and-history',
-                    'notification/ecs-set-receive-event',
-                    'notification/ecs-metric-warning-notice',
+                    'amazon-ecs/warning-and-history',
+                    'amazon-ecs/set-receive-event',
+                    'amazon-ecs/metric-warning-notice',
                   ]
                 },
               ],
@@ -3056,10 +3056,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'amazon-cloudwatch/install'
+            id: 'amazon-cloudwatch/install-agent'
           },
           items: [
-            'amazon-cloudwatch/install',
+            'amazon-cloudwatch/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3116,10 +3116,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'azure/azure-monitor-install'
+            id: 'azure/install-agent'
           },
           items: [
-            'azure/azure-monitor-install',
+            'azure/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3127,10 +3127,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'azure/learn-azure-main-menu'
+                id: 'azure/learn-main-menu'
               },
               items: [
-                // 'dashboard/azure-dashboard',
+                // 'azure/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3138,18 +3138,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/azure-flexboard',
+                    id: 'azure/flexboard',
                   },
                   items: [
-                    'dashboard/azure-flexboard-template',
-                    'dashboard/azure-flexboard-create',
-                    'dashboard/azure-flexboard-metric-widget',
-                    'dashboard/azure-flexboard-widget-manage',
-                    'dashboard/azure-flexboard-mode',
-                    'dashboard/azure-flexboard-share',
+                    'azure/flexboard-template',
+                    'azure/flexboard-create',
+                    'azure/flexboard-metric-widget',
+                    'azure/flexboard-widget-manage',
+                    'azure/flexboard-mode',
+                    'azure/flexboard-share',
                   ]
                 },
-                'metrics/azure-metrics-intro',
+                'azure/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3157,12 +3157,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/azure-set-notice',
+                    id: 'azure/set-notice',
                   },
                   items: [
-                    'notification/azure-warning-and-history',
-                    'notification/azure-set-receive-event',
-                    'notification/azure-metric-warning-notice',
+                    'azure/warning-and-history',
+                    'azure/set-receive-event',
+                    'azure/metric-warning-notice',
                   ]
                 },
               ],
@@ -3176,10 +3176,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'ncloud/ncloud-monitoring-install'
+            id: 'ncloud/install-agent'
           },
           items: [
-            'ncloud/ncloud-monitoring-install',
+            'ncloud/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3187,10 +3187,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'ncloud/learn-ncloud-main-menu'
+                id: 'ncloud/learn-main-menu'
               },
               items: [
-                // 'dashboard/ncloud-dashboard',
+                // 'ncloud/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3198,18 +3198,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/ncloud-flexboard',
+                    id: 'ncloud/flexboard',
                   },
                   items: [
-                    'dashboard/ncloud-flexboard-template',
-                    'dashboard/ncloud-flexboard-create',
-                    'dashboard/ncloud-flexboard-metric-widget',
-                    'dashboard/ncloud-flexboard-widget-manage',
-                    'dashboard/ncloud-flexboard-mode',
-                    'dashboard/ncloud-flexboard-share',
+                    'ncloud/flexboard-template',
+                    'ncloud/flexboard-create',
+                    'ncloud/flexboard-metric-widget',
+                    'ncloud/flexboard-widget-manage',
+                    'ncloud/flexboard-mode',
+                    'ncloud/flexboard-share',
                   ]
                 },
-                'metrics/ncloud-metrics-intro',
+                'ncloud/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3217,12 +3217,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/ncloud-set-notice',
+                    id: 'ncloud/set-notice',
                   },
                   items: [
-                    'notification/ncloud-warning-and-history',
-                    'notification/ncloud-set-receive-event',
-                    'notification/ncloud-metric-warning-notice',
+                    'ncloud/warning-and-history',
+                    'ncloud/set-receive-event',
+                    'ncloud/metric-warning-notice',
                   ]
                 },
               ],
@@ -3510,10 +3510,10 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'amazon-ecs/amazon-ecs-intro'
+        id: 'amazon-ecs/introduction'
       },
       items: [
-        'amazon-ecs/amazon-ecs-install',
+        'amazon-ecs/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3521,10 +3521,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'amazon-ecs/learn-ecs-main-menu'
+            id: 'amazon-ecs/learn-main-menu'
           },
           items: [
-            'dashboard/ecs-dashboard',
+            'amazon-ecs/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3532,18 +3532,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/ecs-flexboard',
+                id: 'amazon-ecs/flexboard',
               },
               items: [
-                'dashboard/ecs-flexboard-template',
-                'dashboard/ecs-flexboard-create',
-                'dashboard/ecs-flexboard-metric-widget',
-                'dashboard/ecs-flexboard-widget-manage',
-                'dashboard/ecs-flexboard-mode',
-                'dashboard/ecs-flexboard-share',
+                'amazon-ecs/flexboard-template',
+                'amazon-ecs/flexboard-create',
+                'amazon-ecs/flexboard-metric-widget',
+                'amazon-ecs/flexboard-widget-manage',
+                'amazon-ecs/flexboard-mode',
+                'amazon-ecs/flexboard-share',
               ]
             },
-            'metrics/ecs-metrics-intro',
+            'amazon-ecs/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3551,12 +3551,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/ecs-set-notice',
+                id: 'amazon-ecs/set-notice',
               },
               items: [
-                'notification/ecs-warning-and-history',
-                'notification/ecs-set-receive-event',
-                'notification/ecs-metric-warning-notice',
+                'amazon-ecs/warning-and-history',
+                'amazon-ecs/set-receive-event',
+                'amazon-ecs/metric-warning-notice',
               ]
             },
           ],
@@ -3575,7 +3575,7 @@ const sidebars = {
       //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
       // },
       items: [
-        'amazon-cloudwatch/install',
+        'amazon-cloudwatch/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3637,7 +3637,7 @@ const sidebars = {
       //   id: 'azure/azure-monitor-intro'
       // },
       items: [
-        'azure/azure-monitor-install',
+        'azure/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3645,10 +3645,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'azure/learn-azure-main-menu'
+            id: 'azure/learn-main-menu'
           },
           items: [
-            // 'dashboard/azure-dashboard',
+            // 'azure/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3656,18 +3656,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/azure-flexboard',
+                id: 'azure/flexboard',
               },
               items: [
-                'dashboard/azure-flexboard-template',
-                'dashboard/azure-flexboard-create',
-                'dashboard/azure-flexboard-metric-widget',
-                'dashboard/azure-flexboard-widget-manage',
-                'dashboard/azure-flexboard-mode',
-                'dashboard/azure-flexboard-share',
+                'azure/flexboard-template',
+                'azure/flexboard-create',
+                'azure/flexboard-metric-widget',
+                'azure/flexboard-widget-manage',
+                'azure/flexboard-mode',
+                'azure/flexboard-share',
               ]
             },
-            'metrics/azure-metrics-intro',
+            'azure/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3675,12 +3675,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/azure-set-notice',
+                id: 'azure/set-notice',
               },
               items: [
-                'notification/azure-warning-and-history',
-                'notification/azure-set-receive-event',
-                'notification/azure-metric-warning-notice',
+                'azure/warning-and-history',
+                'azure/set-receive-event',
+                'azure/metric-warning-notice',
               ]
             },
           ],
@@ -3699,7 +3699,7 @@ const sidebars = {
       //   id: 'amazon-cloudwatch/amazon-cloudwatch-intro'
       // },
       items: [
-        'ncloud/ncloud-monitoring-install',
+        'ncloud/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3707,10 +3707,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'ncloud/learn-ncloud-main-menu'
+            id: 'ncloud/learn-main-menu'
           },
           items: [
-            // 'dashboard/ncloud-dashboard',
+            // 'ncloud/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3718,18 +3718,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/ncloud-flexboard',
+                id: 'ncloud/flexboard',
               },
               items: [
-                'dashboard/ncloud-flexboard-template',
-                'dashboard/ncloud-flexboard-create',
-                'dashboard/ncloud-flexboard-metric-widget',
-                'dashboard/ncloud-flexboard-widget-manage',
-                'dashboard/ncloud-flexboard-mode',
-                'dashboard/ncloud-flexboard-share',
+                'ncloud/flexboard-template',
+                'ncloud/flexboard-create',
+                'ncloud/flexboard-metric-widget',
+                'ncloud/flexboard-widget-manage',
+                'ncloud/flexboard-mode',
+                'ncloud/flexboard-share',
               ]
             },
-            'metrics/ncloud-metrics-intro',
+            'ncloud/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3737,12 +3737,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/ncloud-set-notice',
+                id: 'ncloud/set-notice',
               },
               items: [
-                'notification/ncloud-warning-and-history',
-                'notification/ncloud-set-receive-event',
-                'notification/ncloud-metric-warning-notice',
+                'ncloud/warning-and-history',
+                'ncloud/set-receive-event',
+                'ncloud/metric-warning-notice',
               ]
             },
           ],
