@@ -3037,12 +3037,12 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'notification/ecs-set-notice',
+                    id: 'amazon-ecs/set-notice',
                   },
                   items: [
-                    'notification/ecs-warning-and-history',
-                    'notification/ecs-set-receive-event',
-                    'notification/ecs-metric-warning-notice',
+                    'amazon-ecs/warning-and-history',
+                    'amazon-ecs/set-receive-event',
+                    'amazon-ecs/metric-warning-notice',
                   ]
                 },
               ],
@@ -3551,12 +3551,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/ecs-set-notice',
+                id: 'amazon-ecs/set-notice',
               },
               items: [
-                'notification/ecs-warning-and-history',
-                'notification/ecs-set-receive-event',
-                'notification/ecs-metric-warning-notice',
+                'amazon-ecs/warning-and-history',
+                'amazon-ecs/set-receive-event',
+                'amazon-ecs/metric-warning-notice',
               ]
             },
           ],
