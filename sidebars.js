@@ -2999,7 +2999,7 @@ const sidebars = {
             id: 'amazon-ecs/introduction'
           },
           items: [
-            'amazon-ecs/amazon-ecs-install',
+            'amazon-ecs/install-agent',
             {
               type: 'category',
               label: '주요 메뉴 알아보기',
@@ -3007,10 +3007,10 @@ const sidebars = {
               collapsed: false,
               link: {
                 type: 'doc',
-                id: 'amazon-ecs/learn-ecs-main-menu'
+                id: 'amazon-ecs/learn-main-menu'
               },
               items: [
-                'dashboard/ecs-dashboard',
+                'amazon-ecs/dashboard',
                 {
                   type: 'category',
                   label: 'Flex 보드',
@@ -3018,18 +3018,18 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'dashboard/ecs-flexboard',
+                    id: 'amazon-ecs/flexboard',
                   },
                   items: [
-                    'dashboard/ecs-flexboard-template',
-                    'dashboard/ecs-flexboard-create',
-                    'dashboard/ecs-flexboard-metric-widget',
-                    'dashboard/ecs-flexboard-widget-manage',
-                    'dashboard/ecs-flexboard-mode',
-                    'dashboard/ecs-flexboard-share',
+                    'amazon-ecs/flexboard-template',
+                    'amazon-ecs/flexboard-create',
+                    'amazon-ecs/flexboard-metric-widget',
+                    'amazon-ecs/flexboard-widget-manage',
+                    'amazon-ecs/flexboard-mode',
+                    'amazon-ecs/flexboard-share',
                   ]
                 },
-                'metrics/ecs-metrics-intro',
+                'amazon-ecs/metrics-intro',
                 {
                   type: 'category',
                   label: '알림 설정하기',
@@ -3513,7 +3513,7 @@ const sidebars = {
         id: 'amazon-ecs/introduction'
       },
       items: [
-        'amazon-ecs/amazon-ecs-install',
+        'amazon-ecs/install-agent',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3521,10 +3521,10 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'amazon-ecs/learn-ecs-main-menu'
+            id: 'amazon-ecs/learn-main-menu'
           },
           items: [
-            'dashboard/ecs-dashboard',
+            'amazon-ecs/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3532,18 +3532,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/ecs-flexboard',
+                id: 'amazon-ecs/flexboard',
               },
               items: [
-                'dashboard/ecs-flexboard-template',
-                'dashboard/ecs-flexboard-create',
-                'dashboard/ecs-flexboard-metric-widget',
-                'dashboard/ecs-flexboard-widget-manage',
-                'dashboard/ecs-flexboard-mode',
-                'dashboard/ecs-flexboard-share',
+                'amazon-ecs/flexboard-template',
+                'amazon-ecs/flexboard-create',
+                'amazon-ecs/flexboard-metric-widget',
+                'amazon-ecs/flexboard-widget-manage',
+                'amazon-ecs/flexboard-mode',
+                'amazon-ecs/flexboard-share',
               ]
             },
-            'metrics/ecs-metrics-intro',
+            'amazon-ecs/metrics-intro',
             {
               type: 'category',
               label: '알림 설정하기',
