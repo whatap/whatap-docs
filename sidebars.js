@@ -4038,7 +4038,7 @@ const sidebars = {
                 'server/server-os/server-aws',
               ]
             },
-            'server/agent-troubleshooting'
+            'server/install-check'
           ],
         },
         {
