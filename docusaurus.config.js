@@ -177,7 +177,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'apm/python-intro',
+                docId: 'python/introduction',
                 label: 'Python',
               },
               {
@@ -316,7 +316,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'apm/python-intro',
+            docId: 'python/introduction',
             position: "left",
             label: 'Python 모니터링',
             className: 'hidden',
