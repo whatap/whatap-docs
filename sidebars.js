@@ -2795,7 +2795,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Server',
-          href: '../server/server-intro',
+          href: '../server/introduction',
           className: "_productlink"
         },
         {
@@ -4008,13 +4008,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'server/server-intro',
+        id: 'server/introduction',
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'server/server-spec',
+          id: 'server/supported-spec',
         },
         {
           type: 'category',
@@ -4029,7 +4029,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'server/server-install-agent'
+                id: 'server/install-agent'
               },
               items: [
                 'server/server-os/server-linux',
@@ -4038,7 +4038,7 @@ const sidebars = {
                 'server/server-os/server-aws',
               ]
             },
-            'server/after-install-server-agent'
+            'server/agent-troubleshooting'
           ],
         },
         {
@@ -4048,24 +4048,24 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'server/server-agent-settings',
+            id: 'server/set-agent',
           },
           items: [
-            'server/server-agent-naming',
-            'server/server-agent-network',
-            'server/server-setting-rfv',
-            'server/server-setting-pcounter',
-            'server/server-setting-win32'
+            'server/agent-name',
+            'server/agent-network',
+            'server/agent-remote-file-viewer',
+            'server/agent-pcounter',
+            'server/agent-win32-api'
           ],
         },
-        'server/server-adf',
+        'server/advanced-feature',
         {
           type: 'category',
           label: '관리하기',
           collapsible: true,
           collapsed: true,
           items: [
-            'server/server-agent-update',
+            'server/agent-update',
             'server/server-agent-remove',
           ],
         },
@@ -4076,7 +4076,7 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'server/learn-server-main-menu',
+            id: 'server/learn-main-menu',
           },
           items: [
             // {

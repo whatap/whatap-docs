@@ -192,7 +192,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'server/server-intro',
+                docId: 'server/introduction',
                 label: 'Server',
               },
               {
@@ -337,7 +337,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'server/server-intro',
+            docId: 'server/introduction',
             position: "left",
             label: 'Server 모니터링',
             className: 'hidden',
