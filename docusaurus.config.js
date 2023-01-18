@@ -182,7 +182,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'apm/dotnet-intro',
+                docId: 'dotnet/introduction',
                 label: '.NET',
               },
               {
@@ -323,7 +323,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'apm/dotnet-intro',
+            docId: 'dotnet/introduction',
             position: "left",
             label: '.NET 모니터링',
             className: 'hidden',

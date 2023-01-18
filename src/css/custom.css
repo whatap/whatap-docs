@@ -223,6 +223,10 @@ main .markdown img[alt*='Windows'] {
   border: none;
 }
 
+[data-theme='dark'] main .markdown img[alt*='Windows'] {
+  filter: invert(100%);
+}
+
 main .markdown img[alt='sc'] {
   border: none;
   width: fit-content;
