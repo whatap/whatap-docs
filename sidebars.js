@@ -907,13 +907,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/dotnet-intro'
+        id: 'dotnet/introduction'
       },
       items: [
-        'apm/dotnet-supported-spec',
-        'apm/dotnet-install-agent',
-        'apm/dotnet-after-install',
-        'apm/dotnet-agent-troubleshooting',
+        'dotnet/supported-spec',
+        'dotnet/install-agent',
+        'dotnet/install-check',
+        'dotnet/agent-troubleshooting',
         {
           type: 'category',
           label: '설정하기',
@@ -921,26 +921,26 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/dotnet-set-agent'
+            id: 'dotnet/set-agent'
           },
           items: [
-            'apm/dotnet-agent-name',
-            'apm/dotnet-control-function',
-            'apm/dotnet-agent-network',
-            'apm/dotnet-agent-performance',
-            'apm/dotnet-agent-log',
-            'apm/dotnet-agent-transaction',
-            'apm/dotnet-agent-dbsql',
-            'apm/dotnet-agent-httpcapicall',
-            'apm/dotnet-agent-number-of-user',
-            'apm/dotnet-agent-static',
-            'apm/dotnet-agent-topology',
+            'dotnet/agent-name',
+            'dotnet/agent-control-function',
+            'dotnet/agent-network',
+            'dotnet/agent-performance',
+            'dotnet/agent-log',
+            'dotnet/agent-transaction',
+            'dotnet/agent-dbsql',
+            'dotnet/agent-httpcapicall',
+            'dotnet/agent-number-of-user',
+            'dotnet/agent-static',
+            'dotnet/agent-topology',
           ]
         },
         {
           type: 'doc',
           label: '관리하기',
-          id: 'apm/dotnet-agent-manage'
+          id: 'dotnet/agent-manage'
         },
         {
           type: 'category',
@@ -955,12 +955,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/dotnet-dashboard-intro'
+                id: 'dotnet/dashboard-intro'
               },
               items: [
-                'dashboard/dotnet-dashboard',
-                'dashboard/dotnet-dashboard-transactionmap',
-                'dashboard/dotnet-dashboard-active-transaction',
+                'dotnet/dashboard',
+                'dotnet/dashboard-transactionmap',
+                'dotnet/dashboard-active-transaction',
               ],
             },
             {
@@ -970,15 +970,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/dotnet-flex-board',
+                id: 'dotnet/flex-board',
               },
               items: [
-                'dashboard/dotnet-flexboard-template',
-                'dashboard/dotnet-flexboard-create',
-                'dashboard/dotnet-flexboard-metric-widget',
-                'dashboard/dotnet-flexboard-widget-manage',
-                'dashboard/dotnet-flexboard-mode',
-                'dashboard/dotnet-flexboard-share',
+                'dotnet/flexboard-template',
+                'dotnet/flexboard-create',
+                'dotnet/flexboard-metric-widget',
+                'dotnet/flexboard-widget-manage',
+                'dotnet/flexboard-mode',
+                'dotnet/flexboard-share',
               ],
             },
             {
@@ -988,13 +988,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/dotnet-topology',
+                id: 'dotnet/topology',
               },
               items: [
-                'topology/dotnet-topology-basic',
-                'topology/dotnet-topology-type',
-                'topology/dotnet-topology-add-function',
-                'topology/dotnet-topology-settings'
+                'dotnet/topology-basic',
+                'dotnet/topology-type',
+                'dotnet/topology-add-function',
+                'dotnet/topology-settings'
               ],
             },
             {
@@ -1004,14 +1004,14 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/dotnet-track-transactions-intro'
+                id: 'dotnet/track-transactions-intro'
               },
               items: [
-                'track-transactions/dotnet-trs-view',
-                'track-transactions/dotnet-trs-profile',
+                'dotnet/trs-view',
+                'dotnet/trs-profile',
                 // 'track-transactions/php-active-transactions',
-                'track-transactions/dotnet-collect-stacks',
-                'track-transactions/dotnet-trs-multi-trace',
+                'dotnet/collect-stacks',
+                'dotnet/trs-multi-trace',
                 // 'track-transactions/php-trs-endpoint-setting',
               ]
             },
@@ -1022,11 +1022,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/dotnet-metrics-intro'
+                id: 'dotnet/metrics-intro'
               },
               items: [
-                'metrics/dotnet-metrics-app',
-                'metrics/dotnet-metrics-performance-counter',
+                'dotnet/metrics-app',
+                'dotnet/metrics-performance-counter',
               ]
             },
             {
@@ -1036,12 +1036,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/dotnet-analysis-report-intro'
+                id: 'dotnet/analysis-report-intro'
               },
               items: [
-                'analysis/dotnet-cube',
+                'dotnet/cube',
                 // 'analysis/php-analysis-apm',
-                'analysis/dotnet-analysis-apm-trs',
+                'dotnet/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -1049,11 +1049,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/dotnet-report-intro'
+                    id: 'dotnet/report-intro'
                   },
                   items: [
-                    'analysis/dotnet-report-apm',
-                    'analysis/dotnet-integrated-report',
+                    'dotnet/report-apm',
+                    'dotnet/integrated-report',
                   ]
                 }
               ]
@@ -1065,17 +1065,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/dotnet-apm-set-notice',
+                id: 'dotnet/apm-set-notice',
               },
               items: [
-                'notification/dotnet-warning-notice',
-                'notification/dotnet-metric-warning-notice',
-                'notification/dotnet-hitmap-notice',
-                'notification/dotnet-set-event-detect-anomal',
-                'notification/dotnet-set-event-log',
-                'notification/dotnet-set-receive-event',
-                'notification/dotnet-set-event-history',
-                'notification/dotnet-set-event-format',
+                'dotnet/warning-notice',
+                'dotnet/metric-warning-notice',
+                'dotnet/hitmap-notice',
+                'dotnet/set-event-detect-anomal',
+                'dotnet/set-event-log',
+                'dotnet/set-receive-event',
+                'dotnet/set-event-history',
+                'dotnet/set-event-format',
               ],
             },
             {
@@ -1223,7 +1223,7 @@ const sidebars = {
                 id: 'analysis/golang-analysis-report-intro'
               },
               items: [
-                'analysis/dotnet-cube',
+                'analysis/golang-cube',
                 // 'analysis/php-analysis-apm',
                 'analysis/golang-analysis-apm-trs',
                 {
@@ -2783,7 +2783,7 @@ const sidebars = {
         {
           type: 'link',
           label: '.NET',
-          href: '../apm/dotnet-intro',
+          href: '../dotnet/introduction',
           className: "_productlink"
         },
         {
