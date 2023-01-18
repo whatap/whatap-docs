@@ -4086,15 +4086,15 @@ const sidebars = {
             //   collapsed: true,
             //   link: {
             //     type: 'doc',
-            //     id: 'dashboard/server-dashboard-intro'
+            //     id: 'server/dashboard-intro'
             //   },
             //   items: [
-            //     'dashboard/server-resourceboard',
-            //     'dashboard/server-compoundeye',
+            //     'server/resourceboard',
+            //     'server/compoundeye',
             //   ]
             // },
-            'dashboard/server-resourceboard',
-            'dashboard/server-compoundeye',
+            'server/resourceboard',
+            'server/compoundeye',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -4102,15 +4102,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/server-flex-board',
+                id: 'server/flex-board',
               },
               items: [
-                'dashboard/server-flexboard-template',
-                'dashboard/server-flexboard-create',
-                'dashboard/server-flexboard-metric-widget',
-                'dashboard/server-flexboard-widget-manage',
-                'dashboard/server-flexboard-mode',
-                'dashboard/server-flexboard-share',
+                'server/flexboard-template',
+                'server/flexboard-create',
+                'server/flexboard-metric-widget',
+                'server/flexboard-widget-manage',
+                'server/flexboard-mode',
+                'server/flexboard-share',
               ]
             },
             {
@@ -4120,10 +4120,10 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/server-metrics-intro'
+                id: 'server/metrics-intro'
               },
               items: [
-                'metrics/mtx-server',
+                'server/metrics-server',
               ]
             },
             {
@@ -4132,8 +4132,8 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'analysis/server-list',
-                'analysis/server-detail',
+                'server/server-list',
+                'server/server-detail',
                 {
                   type: 'category',
                   label: '보고서',
@@ -4141,11 +4141,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/server-report-intro'
+                    id: 'server/report-intro'
                   },
                   items: [
-                    'analysis/server-report',
-                    'analysis/server-integrated-report',
+                    'server/report',
+                    'server/integrated-report',
                   ]
                 }
               ]
@@ -4157,16 +4157,16 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/server-set-notice'
+                id: 'server/set-notice'
               },
               items: [
-                'notification/server-warning-notice',
-                'notification/server-metric-warning-notice',
-                'notification/server-set-event-detect-anomal',
-                'notification/server-set-event-log',
-                'notification/server-set-receive-event',
-                'notification/server-set-event-history',
-                'notification/server-set-event-format',
+                'server/warning-notice',
+                'server/metric-warning-notice',
+                'server/set-event-detect-anomal',
+                'server/set-event-log',
+                'server/set-receive-event',
+                'server/set-event-history',
+                'server/set-event-format',
               ]
             },
             {
