@@ -1009,7 +1009,7 @@ const sidebars = {
               items: [
                 'dotnet/trs-view',
                 'dotnet/trs-profile',
-                // 'track-transactions/php-active-transactions',
+                'dotnet/active-transactions',
                 'dotnet/collect-stacks',
                 'dotnet/trs-multi-trace',
                 // 'track-transactions/php-trs-endpoint-setting',

@@ -38,10 +38,10 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         redirects: [
-          {
-            to: '/java/topology-basic',
-            from: '/topology/topology-basic'
-          }
+          // {
+          //   to: '/java/topology-basic',
+          //   from: '/topology/topology-basic'
+          // }
         ]
       }
     ],
