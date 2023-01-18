@@ -273,7 +273,7 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'apm/php/supported-spec'
+          id: 'php/supported-spec'
         },
         {
           type: 'category',
@@ -282,27 +282,27 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/php/install-agent',
+            id: 'php/install-agent',
           },
           items: [
-            'apm/php-os/redhat-centos',
-            'apm/php-os/debian-ubuntu',
-            'apm/php-os/amazon-linux',
-            'apm/php-os/freebsd',
-            'apm/php-os/alpine-linux',
-            'apm/php-os/gcae',
-            'apm/php-os/aws-eb'
+            'php/php-os/redhat-centos',
+            'php/php-os/debian-ubuntu',
+            'php/php-os/amazon-linux',
+            'php/php-os/freebsd',
+            'php/php-os/alpine-linux',
+            'php/php-os/gcae',
+            'php/php-os/aws-eb'
           ]
         },
         {
           type: 'doc',
           label: '설치 점검',
-          id: 'apm/php/install-check'
+          id: 'php/install-check'
         },
         {
           type: 'doc',
           label: '설치 문제 해결',
-          id: 'apm/php/agent-troubleshooting'
+          id: 'php/agent-troubleshooting'
         },
         {
           type: 'category',
@@ -311,31 +311,31 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/php/php-set-agent'
+            id: 'php/set-agent'
           },
           items: [               
-            'apm/php-agent-name',
-            'apm/php-control-function',
-            'apm/php-agent-com',
-            'apm/php-agent-tx',
-            'apm/php-agent-log',
-            'apm/php-transaction',
-            'apm/php-db-sql',
-            'apm/php-httpc-api',
-            'apm/php-collect-user',
-            'apm/php-apdex',
-            'apm/php-stat',
-            'apm/php-tp-map',
-            'apm/php-shm',
+            'php/agent-name',
+            'php/agent-control-function',
+            'php/agent-network',
+            'php/agent-performance',
+            'php/agent-log',
+            'php/agent-transaction',
+            'php/agent-dbsql',
+            'php/agent-httpcapi',
+            'php/agent-number-of-user',
+            'php/agent-apdex',
+            'php/agent-static',
+            'php/agent-toplogy',
+            'php/agent-shared-memory',
           ]
         },
         {
           type: 'category',
           label: '관리하기',
           items: [
-            'apm/php/php-agent-update',
-            'apm/php/php-agent-temp-st',
-            'apm/php/php-agent-remove'
+            'php/agent-update',
+            'php/agent-temp-st',
+            'php/agent-remove'
           ]
         },
         {
@@ -4663,13 +4663,13 @@ const sidebars = {
   //               id: 'apm/php',
   //             },
   //             items: [
-  //               'apm/php-os/redhat-centos',
-  //               'apm/php-os/debian-ubuntu',
-  //               'apm/php-os/amazon-linux',
-  //               'apm/php-os/freebsd',
-  //               'apm/php-os/alpine-linux',
-  //               'apm/php-os/gcae',
-  //               'apm/php-os/aws-eb'
+  //               'php/php-os/redhat-centos',
+  //               'php/php-os/debian-ubuntu',
+  //               'php/php-os/amazon-linux',
+  //               'php/php-os/freebsd',
+  //               'php/php-os/alpine-linux',
+  //               'php/php-os/gcae',
+  //               'php/php-os/aws-eb'
   //             ]
   //           },
   //           {
