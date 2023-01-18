@@ -1101,12 +1101,12 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/golang-intro'
+        id: 'golang/introduction'
       },
       items: [
-        'apm/golang-supported-spec',
-        'apm/golang-install-agent',
-        'apm/golang-after-install-agent',
+        'golang/supported-spec',
+        'golang/install-agent',
+        'golang/install-check',
         {
           type: 'category',
           label: '설정하기',
@@ -1114,18 +1114,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/golang-set-agent'
+            id: 'golang/set-agent'
           },
           items: [
-            'apm/golang-agent-name',
-            'apm/golang-agent-transaction',
-            'apm/golang-agent-dbsql',
-            'apm/golang-agent-httpcall',
-            'apm/golang-agent-method',
-            'apm/golang-agent-number-of-user'
+            'golang/agent-name',
+            'golang/agent-transaction',
+            'golang/agent-dbsql',
+            'golang/agent-httpcall',
+            'golang/agent-method',
+            'golang/agent-number-of-user'
           ]
         },
-        'apm/golang-agent-manage',
+        'golang/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1139,12 +1139,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/golang-dashboard-intro'
+                id: 'golang/dashboard-intro'
               },
               items: [
-                'dashboard/golang-dashboard',
-                'dashboard/golang-dashboard-transactionmap',
-                'dashboard/golang-dashboard-active-transaction',
+                'golang/dashboard',
+                'golang/dashboard-transactionmap',
+                'golang/dashboard-active-transaction',
               ],
             },
             {
@@ -1154,15 +1154,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/golang-flex-board',
+                id: 'golang/flex-board',
               },
               items: [
-                'dashboard/golang-flexboard-template',
-                'dashboard/golang-flexboard-create',
-                'dashboard/golang-flexboard-metric-widget',
-                'dashboard/golang-flexboard-widget-manage',
-                'dashboard/golang-flexboard-mode',
-                'dashboard/golang-flexboard-share',
+                'golang/flexboard-template',
+                'golang/flexboard-create',
+                'golang/flexboard-metric-widget',
+                'golang/flexboard-widget-manage',
+                'golang/flexboard-mode',
+                'golang/flexboard-share',
               ],
             },
             {
@@ -1172,13 +1172,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/golang-topology',
+                id: 'golang/topology',
               },
               items: [
-                'topology/golang-topology-basic',
-                'topology/golang-topology-type',
-                'topology/golang-topology-add-function',
-                // 'topology/golang-topology-settings'
+                'golang/topology-basic',
+                'golang/topology-type',
+                'golang/topology-add-function',
+                // 'golang/topology-settings'
               ],
             },
             {
@@ -1188,15 +1188,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/golang-track-transactions-intro'
+                id: 'golang/track-transactions-intro'
               },
               items: [
-                'track-transactions/golang-trs-view',
-                'track-transactions/golang-trs-profile',
-                // 'track-transactions/php-active-transactions',
-                'track-transactions/golang-collect-stacks',
-                'track-transactions/golang-trs-multi-trace',
-                // 'track-transactions/php-trs-endpoint-setting',
+                'golang/trs-view',
+                'golang/trs-profile',
+                'golang/active-transactions',
+                'golang/collect-stacks',
+                'golang/trs-multi-trace',
+                // 'golang/php-trs-endpoint-setting',
               ]
             },
             {
@@ -1206,11 +1206,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/golang-metrics-intro'
+                id: 'golang/metrics-intro'
               },
               items: [
-                'metrics/golang-metrics-app',
-                'metrics/golang-metrics-performance-counter',
+                'golang/metrics-app',
+                'golang/metrics-performance-counter',
               ]
             },
             {
@@ -1220,12 +1220,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/golang-analysis-report-intro'
+                id: 'golang/analysis-report-intro'
               },
               items: [
-                'analysis/golang-cube',
+                'golang/cube',
                 // 'analysis/php-analysis-apm',
-                'analysis/golang-analysis-apm-trs',
+                'golang/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -1233,11 +1233,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/golang-report-intro'
+                    id: 'golang/report-intro'
                   },
                   items: [
-                    'analysis/golang-report-apm',
-                    'analysis/golang-integrated-report',
+                    'golang/report-apm',
+                    'golang/integrated-report',
                   ]
                 }
               ]
@@ -1249,17 +1249,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/golang-apm-set-notice',
+                id: 'golang/apm-set-notice',
               },
               items: [
-                'notification/golang-warning-notice',
-                'notification/golang-metric-warning-notice',
-                'notification/golang-hitmap-notice',
-                'notification/golang-set-event-detect-anomal',
-                'notification/golang-set-event-log',
-                'notification/golang-set-receive-event',
-                'notification/golang-set-event-history',
-                'notification/golang-set-event-format',
+                'golang/warning-notice',
+                'golang/metric-warning-notice',
+                'golang/hitmap-notice',
+                'golang/set-event-detect-anomal',
+                'golang/set-event-log',
+                'golang/set-receive-event',
+                'golang/set-event-history',
+                'golang/set-event-format',
               ],
             },
             {
@@ -2789,7 +2789,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Golang',
-          href: '../apm/golang-intro',
+          href: '../golang/introduction',
           className: "_productlink"
         },
         {
