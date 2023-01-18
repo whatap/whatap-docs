@@ -4066,7 +4066,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'server/agent-update',
-            'server/server-agent-remove',
+            'server/agent-remove',
           ],
         },
         {
