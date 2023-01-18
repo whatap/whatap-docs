@@ -268,7 +268,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/php/apm-introduction'
+        id: 'php/introduction'
       },
       items: [
         {
@@ -2765,7 +2765,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'PHP',
-          href: '../apm/php/apm-introduction',
+          href: '../php/introduction',
           className: "_productlink"
         },
         {
