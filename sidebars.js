@@ -697,13 +697,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/python-intro'
+        id: 'python/introduction'
       },
       items: [
-        'apm/python-supported-spec',
-        'apm/python-install-agent',
-        'apm/python-after-install-agent',
-        'apm/python-agent-troubleshooting',
+        'python/supported-spec',
+        'python/install-agent',
+        'python/install-check',
+        'python/agent-troubleshooting',
         {
           type: 'category',
           label: '설정하기',
@@ -711,24 +711,24 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/python-set-agent'
+            id: 'python/set-agent'
           },
           items: [
-            'apm/python-agent-name',
-            'apm/python-control-function',
-            'apm/python-agent-com',
-            'apm/python-agent-log',
-            'apm/python-transaction',
-            'apm/python-db-sql',
-            'apm/python-httpc-api',
-            'apm/python-collect-user',
-            'apm/python-stat',
+            'python/agent-name',
+            'python/agent-control-function',
+            'python/agent-network',
+            'python/agent-log',
+            'python/agent-transaction',
+            'python/agent-db-sql',
+            'python/agent-httpcapicall',
+            'python/agent-number-of-user',
+            'python/agent-static',
           ]
         },
         {
           type: 'doc',
           label: '고급 기능',
-          id: 'apm/python-adf',
+          id: 'python/advanced-feature',
         },
         {
           type: 'category',
@@ -739,12 +739,12 @@ const sidebars = {
             {
               type: 'doc',
               label: '에이전트 삭제',
-              id: 'apm/python-remove'
+              id: 'python/agent-remove'
             },
             {
               type: 'doc',
               label: '패키지 관리',
-              id: 'apm/python-pkg'
+              id: 'python/manage-pkg'
             }
           ]
         },
@@ -761,12 +761,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/python-dashboard-intro'
+                id: 'python/dashboard-intro'
               },
               items: [
-                'dashboard/python-dashboard',
-                'dashboard/python-dashboard-transactionmap',
-                'dashboard/python-dashboard-active-transaction',
+                'python/dashboard',
+                'python/dashboard-transactionmap',
+                'python/dashboard-active-transaction',
               ],
             },
             {
@@ -776,15 +776,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/python-flex-board',
+                id: 'python/flex-board',
               },
               items: [
-                'dashboard/python-flexboard-template',
-                'dashboard/python-flexboard-create',
-                'dashboard/python-flexboard-metric-widget',
-                'dashboard/python-flexboard-widget-manage',
-                'dashboard/python-flexboard-mode',
-                'dashboard/python-flexboard-share',
+                'python/flexboard-template',
+                'python/flexboard-create',
+                'python/flexboard-metric-widget',
+                'python/flexboard-widget-manage',
+                'python/flexboard-mode',
+                'python/flexboard-share',
               ],
             },
             {
@@ -794,13 +794,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/python-topology',
+                id: 'python/topology',
               },
               items: [
-                'topology/python-topology-basic',
-                'topology/python-topology-type',
-                'topology/python-topology-add-function',
-                // 'topology/python-topology-settings'
+                'python/topology-basic',
+                'python/topology-type',
+                'python/topology-add-function',
+                // 'python/topology-settings'
               ],
             },
             {
@@ -810,15 +810,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/python-track-transactions-intro'
+                id: 'python/track-transactions-intro'
               },
               items: [
-                'track-transactions/python-trs-view',
-                'track-transactions/python-trs-profile',
-                'track-transactions/python-active-transactions',
-                'track-transactions/python-collect-stacks',
-                'track-transactions/python-trs-multi-trace',
-                'track-transactions/python-trs-endpoint-setting',
+                'python/trs-view',
+                'python/trs-profile',
+                'python/active-transactions',
+                'python/collect-stacks',
+                'python/trs-multi-trace',
+                'python/trs-endpoint-setting',
               ]
             },
             {
@@ -828,11 +828,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/python-metrics-intro'
+                id: 'python/metrics-intro'
               },
               items: [
-                'metrics/python-metrics-app',
-                'metrics/python-metrics-performance-counter',
+                'python/metrics-app',
+                'python/metrics-performance-counter',
               ]
             },
             {
@@ -842,12 +842,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/python-analysis-report-intro'
+                id: 'python/analysis-report-intro'
               },
               items: [
-                'analysis/python-cube',
-                'analysis/python-analysis-apm',
-                'analysis/python-analysis-apm-trs',
+                'python/cube',
+                'python/analysis-apm',
+                'python/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -855,11 +855,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/python-report-intro'
+                    id: 'python/report-intro'
                   },
                   items: [
-                    'analysis/python-report-apm',
-                    'analysis/python-integrated-report',
+                    'python/report-apm',
+                    'python/integrated-report',
                   ]
                 }
               ]
@@ -871,17 +871,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/python-apm-set-notice',
+                id: 'python/apm-set-notice',
               },
               items: [
-                'notification/python-warning-notice',
-                'notification/python-metric-warning-notice',
-                'notification/python-hitmap-notice',
-                'notification/python-set-event-detect-anomal',
-                'notification/python-set-event-log',
-                'notification/python-set-receive-event',
-                'notification/python-set-event-history',
-                'notification/python-set-event-format',
+                'python/warning-notice',
+                'python/metric-warning-notice',
+                'python/hitmap-notice',
+                'python/set-event-detect-anomal',
+                'python/set-event-log',
+                'python/set-receive-event',
+                'python/set-event-history',
+                'python/set-event-format',
               ],
             },
             {
@@ -2777,7 +2777,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Python',
-          href: '../apm/python-intro',
+          href: '../python/introduction',
           className: "_productlink"
         },
         {
