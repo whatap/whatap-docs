@@ -1243,15 +1243,9 @@ const sidebars = {
                 id: 'golang/analysis-report-intro'
               },
               items: [
-<<<<<<< HEAD
-                'analysis/golang-cube',
-                // 'php/analysis-apm',
-                'analysis/golang-analysis-apm-trs',
-=======
                 'golang/cube',
                 // 'analysis/php-analysis-apm',
                 'golang/analysis-apm-trs',
->>>>>>> b0518e6606ea019116c0e76daf8efdf2fb1c5334
                 {
                   type: 'category',
                   label: '보고서',
