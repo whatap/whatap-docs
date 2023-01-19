@@ -1407,7 +1407,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'postgresql/db-set-notics',
+                id: 'postgresql/db-set-notice',
               },
               items: [
                 'postgresql/db-warning-notice',
@@ -1543,7 +1543,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-set-notics',
+                id: 'oracle/db-set-notice',
               },
               items: [
                 'oracle/db-warning-notice',
@@ -1679,7 +1679,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-set-notics',
+                id: 'mysql/db-set-notice',
               },
               items: [
                 'mysql/db-warning-notice',
@@ -1815,7 +1815,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-set-notics',
+                id: 'mssql/db-set-notice',
               },
               items: [
                 'mssql/db-warning-notice',
@@ -1951,7 +1951,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'tibero/db-set-notics',
+                id: 'tibero/db-set-notice',
               },
               items: [
                 'tibero/db-warning-notice',
@@ -2087,7 +2087,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'cubrid/db-set-notics',
+                id: 'cubrid/db-set-notice',
               },
               items: [
                 'cubrid/db-warning-notice',
@@ -2223,7 +2223,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/db-set-notics',
+                id: 'altibase/db-set-notice',
               },
               items: [
                 'altibase/db-warning-notice',
@@ -2359,7 +2359,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'redis/db-set-notics',
+                id: 'redis/db-set-notice',
               },
               items: [
                 'redis/db-warning-notice',
@@ -2495,7 +2495,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mongodb/db-set-notics',
+                id: 'mongodb/db-set-notice',
               },
               items: [
                 'mongodb/db-warning-notice',
@@ -4501,7 +4501,7 @@ const sidebars = {
   //             collapsed: true,
   //             link: {
   //               type: 'doc',
-  //               id: 'notification/db-set-notics',
+  //               id: 'notification/db-set-notice',
   //             },
   //             items: [
   //               'notification/db-warning-notice',
