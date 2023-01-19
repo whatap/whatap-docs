@@ -295,7 +295,7 @@ const sidebars = {
             'php/php-os/freebsd',
             'php/php-os/alpine-linux',
             'php/php-os/gcae',
-            'php/php-os/aws-eb'
+            'php/php-os/aws-eb',
           ]
         },
         {
