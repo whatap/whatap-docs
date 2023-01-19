@@ -187,7 +187,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'apm/golang-intro',
+                docId: 'golang/introduction',
                 label: 'Golang',
               },
               {
@@ -330,7 +330,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'apm/golang-intro',
+            docId: 'golang/introduction',
             position: "left",
             label: 'Golang 모니터링',
             className: 'hidden',

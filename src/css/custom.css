@@ -150,6 +150,11 @@ main .markdown table code {
   font-size: 120%;
   padding: 0;
 }
+
+main .markdown p div {
+  display: inline;
+}
+
 main .markdown pre code {
   font-size: 88%;
 }
