@@ -150,6 +150,11 @@ main .markdown table code {
   font-size: 120%;
   padding: 0;
 }
+
+main .markdown p div {
+  display: inline;
+}
+
 main .markdown pre code {
   font-size: 88%;
 }
@@ -667,6 +672,14 @@ main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
 
 .searchResultItemPath::after {
   content: " › ";
+}
+
+div[class*='dataset'] span[class*='hitPath'] {
+  color: #00a400;
+}
+[data-theme='dark'] div[class*='dataset'] span[class*='hitPath'] {
+  font-weight: 700;
+  color: #00FFFF;
 }
 
 /* media size */

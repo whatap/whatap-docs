@@ -323,5 +323,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "project_add_btn": {
+    "message": "프로젝트"
   }
 }

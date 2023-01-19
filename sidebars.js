@@ -114,6 +114,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'java/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -543,6 +547,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'nodejs/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -753,6 +761,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'python/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -947,6 +959,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'dotnet/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -1101,12 +1117,12 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/golang-intro'
+        id: 'golang/introduction'
       },
       items: [
-        'apm/golang-supported-spec',
-        'apm/golang-install-agent',
-        'apm/golang-after-install-agent',
+        'golang/supported-spec',
+        'golang/install-agent',
+        'golang/install-check',
         {
           type: 'category',
           label: '설정하기',
@@ -1114,23 +1130,27 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/golang-set-agent'
+            id: 'golang/set-agent'
           },
           items: [
-            'apm/golang-agent-name',
-            'apm/golang-agent-transaction',
-            'apm/golang-agent-dbsql',
-            'apm/golang-agent-httpcall',
-            'apm/golang-agent-method',
-            'apm/golang-agent-number-of-user'
+            'golang/agent-name',
+            'golang/agent-transaction',
+            'golang/agent-dbsql',
+            'golang/agent-httpcall',
+            'golang/agent-method',
+            'golang/agent-number-of-user'
           ]
         },
-        'apm/golang-agent-manage',
+        'golang/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'golang/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -1139,12 +1159,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/golang-dashboard-intro'
+                id: 'golang/dashboard-intro'
               },
               items: [
-                'dashboard/golang-dashboard',
-                'dashboard/golang-dashboard-transactionmap',
-                'dashboard/golang-dashboard-active-transaction',
+                'golang/dashboard',
+                'golang/dashboard-transactionmap',
+                'golang/dashboard-active-transaction',
               ],
             },
             {
@@ -1154,15 +1174,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/golang-flex-board',
+                id: 'golang/flex-board',
               },
               items: [
-                'dashboard/golang-flexboard-template',
-                'dashboard/golang-flexboard-create',
-                'dashboard/golang-flexboard-metric-widget',
-                'dashboard/golang-flexboard-widget-manage',
-                'dashboard/golang-flexboard-mode',
-                'dashboard/golang-flexboard-share',
+                'golang/flexboard-template',
+                'golang/flexboard-create',
+                'golang/flexboard-metric-widget',
+                'golang/flexboard-widget-manage',
+                'golang/flexboard-mode',
+                'golang/flexboard-share',
               ],
             },
             {
@@ -1172,13 +1192,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/golang-topology',
+                id: 'golang/topology',
               },
               items: [
-                'topology/golang-topology-basic',
-                'topology/golang-topology-type',
-                'topology/golang-topology-add-function',
-                // 'topology/golang-topology-settings'
+                'golang/topology-basic',
+                'golang/topology-type',
+                'golang/topology-add-function',
+                // 'golang/topology-settings'
               ],
             },
             {
@@ -1188,15 +1208,24 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/golang-track-transactions-intro'
+                id: 'golang/track-transactions-intro'
               },
               items: [
+<<<<<<< HEAD
                 'track-transactions/golang-trs-view',
                 'track-transactions/golang-trs-profile',
                 // 'php/active-transactions',
                 'track-transactions/golang-collect-stacks',
                 'track-transactions/golang-trs-multi-trace',
                 // 'php/trs-endpoint-setting',
+=======
+                'golang/trs-view',
+                'golang/trs-profile',
+                'golang/active-transactions',
+                'golang/collect-stacks',
+                'golang/trs-multi-trace',
+                // 'golang/php-trs-endpoint-setting',
+>>>>>>> b0518e6606ea019116c0e76daf8efdf2fb1c5334
               ]
             },
             {
@@ -1206,11 +1235,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/golang-metrics-intro'
+                id: 'golang/metrics-intro'
               },
               items: [
-                'metrics/golang-metrics-app',
-                'metrics/golang-metrics-performance-counter',
+                'golang/metrics-app',
+                'golang/metrics-performance-counter',
               ]
             },
             {
@@ -1220,12 +1249,18 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/golang-analysis-report-intro'
+                id: 'golang/analysis-report-intro'
               },
               items: [
+<<<<<<< HEAD
                 'analysis/golang-cube',
                 // 'php/analysis-apm',
                 'analysis/golang-analysis-apm-trs',
+=======
+                'golang/cube',
+                // 'analysis/php-analysis-apm',
+                'golang/analysis-apm-trs',
+>>>>>>> b0518e6606ea019116c0e76daf8efdf2fb1c5334
                 {
                   type: 'category',
                   label: '보고서',
@@ -1233,11 +1268,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/golang-report-intro'
+                    id: 'golang/report-intro'
                   },
                   items: [
-                    'analysis/golang-report-apm',
-                    'analysis/golang-integrated-report',
+                    'golang/report-apm',
+                    'golang/integrated-report',
                   ]
                 }
               ]
@@ -1249,17 +1284,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/golang-apm-set-notice',
+                id: 'golang/apm-set-notice',
               },
               items: [
-                'notification/golang-warning-notice',
-                'notification/golang-metric-warning-notice',
-                'notification/golang-hitmap-notice',
-                'notification/golang-set-event-detect-anomal',
-                'notification/golang-set-event-log',
-                'notification/golang-set-receive-event',
-                'notification/golang-set-event-history',
-                'notification/golang-set-event-format',
+                'golang/warning-notice',
+                'golang/metric-warning-notice',
+                'golang/hitmap-notice',
+                'golang/set-event-detect-anomal',
+                'golang/set-event-log',
+                'golang/set-receive-event',
+                'golang/set-event-history',
+                'golang/set-event-format',
               ],
             },
             {
@@ -1387,7 +1422,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'postgresql/db-set-notics',
+                id: 'postgresql/db-set-notice',
               },
               items: [
                 'postgresql/db-warning-notice',
@@ -1523,7 +1558,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-set-notics',
+                id: 'oracle/db-set-notice',
               },
               items: [
                 'oracle/db-warning-notice',
@@ -1659,7 +1694,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-set-notics',
+                id: 'mysql/db-set-notice',
               },
               items: [
                 'mysql/db-warning-notice',
@@ -1795,7 +1830,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-set-notics',
+                id: 'mssql/db-set-notice',
               },
               items: [
                 'mssql/db-warning-notice',
@@ -1931,7 +1966,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'tibero/db-set-notics',
+                id: 'tibero/db-set-notice',
               },
               items: [
                 'tibero/db-warning-notice',
@@ -2067,7 +2102,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'cubrid/db-set-notics',
+                id: 'cubrid/db-set-notice',
               },
               items: [
                 'cubrid/db-warning-notice',
@@ -2203,7 +2238,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/db-set-notics',
+                id: 'altibase/db-set-notice',
               },
               items: [
                 'altibase/db-warning-notice',
@@ -2339,7 +2374,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'redis/db-set-notics',
+                id: 'redis/db-set-notice',
               },
               items: [
                 'redis/db-warning-notice',
@@ -2475,7 +2510,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mongodb/db-set-notics',
+                id: 'mongodb/db-set-notice',
               },
               items: [
                 'mongodb/db-warning-notice',
@@ -2789,7 +2824,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Golang',
-          href: '../apm/golang-intro',
+          href: '../golang/introduction',
           className: "_productlink"
         },
         {
@@ -2801,7 +2836,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Kubernetes',
-          href: '../kubernetes/kubernetes-intro',
+          href: '../kubernetes/introduction',
           className: "_productlink"
         },
         {
@@ -2944,7 +2979,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: '브라우저(RUM)',
-        //   href: 'rum/rum-intro'
+        //   href: 'rum/introduction'
         // },
         // {
         //   type: 'doc',
@@ -3941,7 +3976,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: 'doc',
-        id: 'rum/rum-intro'
+        id: 'rum/introduction'
       },
       items: [
         {
@@ -3950,18 +3985,18 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/rum-browser-compatibility',
-            'rum/rum-browser-preset',
+            'rum/browser-compatibility',
+            'rum/browser-preset',
           ],
         },
-        'rum/rum-apply-agent',
-        'rum/rum-before-starting',
-        'rum/rum-dashboard',
-        'rum/rum-pageload-dashboard',
-        'rum/rum-resource-dashboard',
-        'rum/rum-ajax-dashboard',
-        'rum/rum-browser-error-dashboard',
-		    'dashboard/dashboard-widget-setting',
+        'rum/apply-agent',
+        'rum/before-starting',
+        'rum/dashboard',
+        'rum/pageload-dashboard',
+        'rum/resource-dashboard',
+        'rum/ajax-dashboard',
+        'rum/browser-error-dashboard',
+		    'rum/dashboard-widget-setting',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -3969,18 +4004,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'dashboard/rum-flex-board',
+            id: 'rum/flex-board',
           },
           items: [
-            'dashboard/rum-flexboard-template',
-            'dashboard/rum-flexboard-create',
-            'dashboard/rum-flexboard-metric-widget',
-            'dashboard/rum-flexboard-widget-manage',
-            'dashboard/rum-flexboard-mode',
-            'dashboard/rum-flexboard-share',
+            'rum/flexboard-template',
+            'rum/flexboard-create',
+            'rum/flexboard-metric-widget',
+            'rum/flexboard-widget-manage',
+            'rum/flexboard-mode',
+            'rum/flexboard-share',
           ],
         },
-        'metrics/rum-metrics-intro',
+        'rum/metrics-intro',
         {
           type: 'category',
           label: '알림 설정하기',
@@ -3988,15 +4023,15 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'notification/rum-set-notics',
+            id: 'rum/set-notics',
           },
           items: [
-            'notification/rum-metric-warning-notice',
-            'notification/rum-set-receive-event',
-            'notification/rum-set-event-history'
+            'rum/metric-warning-notice',
+            'rum/set-receive-event',
+            'rum/set-event-history'
           ],
         },
-        'rum/rum-collect-data',
+        'rum/collect-data',
       ],
     }
   ],
@@ -4192,14 +4227,14 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'kubernetes/kubernetes-intro'
+        id: 'kubernetes/introduction'
       },
       items: [
-        'kubernetes/kubernetes-project',
+        'kubernetes/before-starting',
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'kubernetes/kubernetes-support'
+          id: 'kubernetes/supported-spec'
         },
         {
           type: 'category',
@@ -4208,7 +4243,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'kubernetes/kubernetes-install',
+            id: 'kubernetes/install',
           },
           items: [
             'kubernetes/install-master-node-agent',
@@ -4216,16 +4251,16 @@ const sidebars = {
             'kubernetes/create-name-space-project'
           ]
         },
-        'kubernetes/kubernetes-agent-settings',
+        'kubernetes/set-agent',
         {
           type: 'category',
           label: '관리하기',
           collapsible: true,
           collapsed: true,
           items: [
-            'kubernetes/kubernetes-namespace',
-            'kubernetes/kubernetes-agent',
-            'kubernetes/kubernetes-update',
+            'kubernetes/namespace',
+            'kubernetes/agent-manage',
+            'kubernetes/agent-update',
           ],
         },
         {
@@ -4245,12 +4280,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/kubernetes-container-map',
+                id: 'kubernetes/container-map',
               },
               items: [
-                'dashboard/kubernetes-container-view',
-                'dashboard/kubernetes-container-group',
-                'dashboard/kubernetes-container-status',
+                'kubernetes/container-view',
+                'kubernetes/container-group',
+                'kubernetes/container-status',
               ]
             },
             {
@@ -4260,13 +4295,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/kubernetes-container-map-detail-mode'
+                id: 'kubernetes/container-map-detail-mode'
               },
               items: [
-                'dashboard/kubernetes-container-map-metrics',
-                'dashboard/kubernetes-container-map-trace',
-                'dashboard/kubernetes-container-map-log',
-                'dashboard/kubernetes-container-map-event',
+                'kubernetes/container-map-metrics',
+                'kubernetes/container-map-trace',
+                'kubernetes/container-map-log',
+                'kubernetes/container-map-event',
               ],
             },
             {
@@ -4275,12 +4310,12 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'resource/performance-summary',
-                'resource/resource-node-list',
-                'resource/resource-container-list',
-                'resource/resource-container-volume',
-                'resource/resource-master-meta',
-                'resource/resource-namespace',
+                'kubernetes/performance-summary',
+                'kubernetes/resource-node-list',
+                'kubernetes/resource-container-list',
+                'kubernetes/resource-container-volume',
+                'kubernetes/resource-master-meta',
+                'kubernetes/resource-namespace',
               ],
             },
             {
@@ -4290,9 +4325,9 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/application-service-dashboard',
-                'kubernetes/kubernetes-hitmap',
-                'kubernetes/kubernetes-multiservice-hitmap',
-                'kubernetes/kubernetes-tx-profile',
+                'kubernetes/trs-view',
+                'kubernetes/multiservice-hitmap',
+                'kubernetes/tx-profile',
                 'kubernetes/application-daily-stat',
               ],
             },
@@ -4303,15 +4338,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/k8s-flex-board',
+                id: 'kubernetes/flex-board',
               },
               items: [
-                'dashboard/k8s-flexboard-template',
-                'dashboard/k8s-flexboard-create',
-                'dashboard/k8s-flexboard-metric-widget',
-                'dashboard/k8s-flexboard-widget-manage',
-                'dashboard/k8s-flexboard-mode',
-                'dashboard/k8s-flexboard-share',
+                'kubernetes/flexboard-template',
+                'kubernetes/flexboard-create',
+                'kubernetes/flexboard-metric-widget',
+                'kubernetes/flexboard-widget-manage',
+                'kubernetes/flexboard-mode',
+                'kubernetes/flexboard-share',
               ],
             },
             {
@@ -4320,16 +4355,16 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'metrics/kubernetes-metrics-intro',
-                'analysis/kubernetes-analysis-msa',
-                'analysis/kubernetes-analysis-stack',
-                'analysis/kubernetes-pod-init-perform',
-                'analysis/kubernetes-analysis-oom-container',
+                'kubernetes/metrics-intro',
+                'kubernetes/analysis-msa',
+                'kubernetes/analysis-stack',
+                'kubernetes/pod-init-perform',
+                'kubernetes/analysis-oom-container',
               ],
             },
-            'kubernetes/kubernetes-log',
-            'analysis/kubernetes-report',
-            'analysis/kubernetes-integrated-report',
+            'kubernetes/log',
+            'kubernetes/report-intro',
+            'kubernetes/integrated-report',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -4337,16 +4372,16 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/kubernetes-set-notice'
+                id: 'kubernetes/set-notice'
               },
               items: [
-                'notification/k8s-warning-notice',
-                'notification/k8s-metric-warning-notice',
-                'notification/k8s-hitmap-notice',
-                'notification/k8s-set-event-detect-anomal',
-                'notification/k8s-set-event-log',
-                'notification/k8s-set-receive-event',
-                'notification/k8s-set-event-history',
+                'kubernetes/container-warning-notice',
+                'kubernetes/metric-warning-notice',
+                'kubernetes/hitmap-notice',
+                'kubernetes/set-event-detect-anomal',
+                'kubernetes/set-event-log',
+                'kubernetes/set-receive-event',
+                'kubernetes/set-event-history',
               ],
             },
             {
@@ -4481,7 +4516,7 @@ const sidebars = {
   //             collapsed: true,
   //             link: {
   //               type: 'doc',
-  //               id: 'notification/db-set-notics',
+  //               id: 'notification/db-set-notice',
   //             },
   //             items: [
   //               'notification/db-warning-notice',

@@ -38,11 +38,19 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         redirects: [
-          // {
-          //   to: '/java/topology-basic',
-          //   from: '/topology/topology-basic'
-          // }
-        ]
+          {
+            to: '/java/introduction',
+            from: '/apm/java/apm-introduction'
+          },
+          {
+            to: '/java/introduction',
+            from: '/apm/java-intro'
+          },
+          {
+            to: '/server/introduction',
+            from: '/server/server-intro'
+          }
+        ],
       }
     ],
     [
@@ -127,6 +135,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents',
+        },
+        {
+          name: 'naver-site-verification',
+          content: '0c21fc5664a467108fb762ade47a3f81ee9b88ed',
+        }
+      ],
       docs: {
         sidebar: {
           autoCollapseCategories: false,
@@ -187,7 +205,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'apm/golang-intro',
+                docId: 'golang/introduction',
                 label: 'Golang',
               },
               {
@@ -197,7 +215,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'kubernetes/kubernetes-intro',
+                docId: 'kubernetes/introduction',
                 label: 'Kubernetes',
               },
               {
@@ -287,7 +305,7 @@ const config = {
               }
               // {
               //   type: 'doc',
-              //   docId: 'rum/rum-intro',
+              //   docId: 'rum/introduction',
               //   label: '브라우저 모니터링(RUM)',
               // },
             ]
@@ -330,7 +348,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'apm/golang-intro',
+            docId: 'golang/introduction',
             position: "left",
             label: 'Golang 모니터링',
             className: 'hidden',
@@ -344,9 +362,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'kubernetes/kubernetes-intro',
+            docId: 'kubernetes/introduction',
             position: "left",
-            label: '쿠버네티스 모니터링',
+            label: 'Kubernetes 모니터링',
             className: 'hidden',
           },
           {
@@ -463,7 +481,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'rum/rum-intro',
+            docId: 'rum/introduction',
             position: "left",
             label: '브라우저 모니터링(RUM)',
             className: 'hidden',
