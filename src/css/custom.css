@@ -674,6 +674,14 @@ main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
   content: " › ";
 }
 
+div[class*='dataset'] span[class*='hitPath'] {
+  color: #00a400;
+}
+[data-theme='dark'] div[class*='dataset'] span[class*='hitPath'] {
+  font-weight: 700;
+  color: #00FFFF;
+}
+
 /* media size */
 @media all and (max-width: 1600px) {
   main .markdown div.flex-container-s {
