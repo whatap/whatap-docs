@@ -127,6 +127,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents'
+        },
+        {
+          name: 'description',
+          content: '와탭 기술 문서 페이지에 오신 것을 환영합니다. 와탭 모니터링 서비스 상품에 대한 사용법을 확인할 수 있습니다. 와탭 모니터링 서비스에 대해 알고 싶다면 와탭 모니터링 서비스 안내 문서를 확인하세요. 와탭 모니터링 서비스를 처음 사용한다면 빠른 시작하기 문서를 확인하세요.'
+        }
+      ],
       docs: {
         sidebar: {
           autoCollapseCategories: false,
