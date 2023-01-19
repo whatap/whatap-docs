@@ -4360,7 +4360,7 @@ const sidebars = {
                 id: 'kubernetes/set-notice'
               },
               items: [
-                'kubernetes/warning-notice',
+                'kubernetes/container-warning-notice',
                 'kubernetes/metric-warning-notice',
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
