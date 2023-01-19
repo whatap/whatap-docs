@@ -2964,7 +2964,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: '브라우저(RUM)',
-        //   href: 'rum/rum-intro'
+        //   href: 'rum/introduction'
         // },
         // {
         //   type: 'doc',
@@ -3961,7 +3961,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: 'doc',
-        id: 'rum/rum-intro'
+        id: 'rum/introduction'
       },
       items: [
         {
@@ -3970,18 +3970,18 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/rum-browser-compatibility',
-            'rum/rum-browser-preset',
+            'rum/browser-compatibility',
+            'rum/browser-preset',
           ],
         },
-        'rum/rum-apply-agent',
-        'rum/rum-before-starting',
-        'rum/rum-dashboard',
-        'rum/rum-pageload-dashboard',
-        'rum/rum-resource-dashboard',
-        'rum/rum-ajax-dashboard',
-        'rum/rum-browser-error-dashboard',
-		    'dashboard/dashboard-widget-setting',
+        'rum/apply-agent',
+        'rum/before-starting',
+        'rum/dashboard',
+        'rum/pageload-dashboard',
+        'rum/resource-dashboard',
+        'rum/ajax-dashboard',
+        'rum/browser-error-dashboard',
+		    'rum/dashboard-widget-setting',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -3989,18 +3989,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'dashboard/rum-flex-board',
+            id: 'rum/flex-board',
           },
           items: [
-            'dashboard/rum-flexboard-template',
-            'dashboard/rum-flexboard-create',
-            'dashboard/rum-flexboard-metric-widget',
-            'dashboard/rum-flexboard-widget-manage',
-            'dashboard/rum-flexboard-mode',
-            'dashboard/rum-flexboard-share',
+            'rum/flexboard-template',
+            'rum/flexboard-create',
+            'rum/flexboard-metric-widget',
+            'rum/flexboard-widget-manage',
+            'rum/flexboard-mode',
+            'rum/flexboard-share',
           ],
         },
-        'metrics/rum-metrics-intro',
+        'rum/metrics-intro',
         {
           type: 'category',
           label: '알림 설정하기',
@@ -4008,15 +4008,15 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'notification/rum-set-notics',
+            id: 'rum/set-notics',
           },
           items: [
-            'notification/rum-metric-warning-notice',
-            'notification/rum-set-receive-event',
-            'notification/rum-set-event-history'
+            'rum/metric-warning-notice',
+            'rum/set-receive-event',
+            'rum/set-event-history'
           ],
         },
-        'rum/rum-collect-data',
+        'rum/collect-data',
       ],
     }
   ],

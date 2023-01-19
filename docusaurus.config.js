@@ -305,7 +305,7 @@ const config = {
               }
               // {
               //   type: 'doc',
-              //   docId: 'rum/rum-intro',
+              //   docId: 'rum/introduction',
               //   label: '브라우저 모니터링(RUM)',
               // },
             ]
@@ -481,7 +481,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'rum/rum-intro',
+            docId: 'rum/introduction',
             position: "left",
             label: '브라우저 모니터링(RUM)',
             className: 'hidden',
