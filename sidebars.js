@@ -1211,21 +1211,12 @@ const sidebars = {
                 id: 'golang/track-transactions-intro'
               },
               items: [
-<<<<<<< HEAD
-                'track-transactions/golang-trs-view',
-                'track-transactions/golang-trs-profile',
-                // 'php/active-transactions',
-                'track-transactions/golang-collect-stacks',
-                'track-transactions/golang-trs-multi-trace',
-                // 'php/trs-endpoint-setting',
-=======
                 'golang/trs-view',
                 'golang/trs-profile',
                 'golang/active-transactions',
                 'golang/collect-stacks',
                 'golang/trs-multi-trace',
                 // 'golang/php-trs-endpoint-setting',
->>>>>>> b0518e6606ea019116c0e76daf8efdf2fb1c5334
               ]
             },
             {
