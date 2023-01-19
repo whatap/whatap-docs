@@ -167,7 +167,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'apm/php/apm-introduction',
+                docId: 'php/introduction',
                 label: 'PHP',
               },
               {
@@ -302,7 +302,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'apm/php/apm-introduction',
+            docId: 'php/introduction',
             position: "left",
             label: 'PHP 모니터링',
             className: 'hidden',

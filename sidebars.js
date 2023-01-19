@@ -268,12 +268,12 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'apm/php/apm-introduction'
+        id: 'php/introduction'
       },
       items: [
         {
           type: 'doc',
-          id: 'apm/php/supported-spec'
+          id: 'php/supported-spec'
         },
         {
           type: 'category',
@@ -282,27 +282,27 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/php/install-agent',
+            id: 'php/install-agent',
           },
           items: [
-            'apm/php-os/redhat-centos',
-            'apm/php-os/debian-ubuntu',
-            'apm/php-os/amazon-linux',
-            'apm/php-os/freebsd',
-            'apm/php-os/alpine-linux',
-            'apm/php-os/gcae',
-            'apm/php-os/aws-eb'
+            'php/php-os/redhat-centos',
+            'php/php-os/debian-ubuntu',
+            'php/php-os/amazon-linux',
+            'php/php-os/freebsd',
+            'php/php-os/alpine-linux',
+            'php/php-os/gcae',
+            'php/php-os/aws-eb'
           ]
         },
         {
           type: 'doc',
           label: '설치 점검',
-          id: 'apm/php/install-check'
+          id: 'php/install-check'
         },
         {
           type: 'doc',
           label: '설치 문제 해결',
-          id: 'apm/php/agent-troubleshooting'
+          id: 'php/agent-troubleshooting'
         },
         {
           type: 'category',
@@ -311,31 +311,31 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'apm/php/php-set-agent'
+            id: 'php/set-agent'
           },
           items: [               
-            'apm/php-agent-name',
-            'apm/php-control-function',
-            'apm/php-agent-com',
-            'apm/php-agent-tx',
-            'apm/php-agent-log',
-            'apm/php-transaction',
-            'apm/php-db-sql',
-            'apm/php-httpc-api',
-            'apm/php-collect-user',
-            'apm/php-apdex',
-            'apm/php-stat',
-            'apm/php-tp-map',
-            'apm/php-shm',
+            'php/agent-name',
+            'php/agent-control-function',
+            'php/agent-network',
+            'php/agent-performance',
+            'php/agent-log',
+            'php/agent-transaction',
+            'php/agent-dbsql',
+            'php/agent-httpcapi',
+            'php/agent-number-of-user',
+            'php/agent-apdex',
+            'php/agent-static',
+            'php/agent-toplogy',
+            'php/agent-shared-memory',
           ]
         },
         {
           type: 'category',
           label: '관리하기',
           items: [
-            'apm/php/php-agent-update',
-            'apm/php/php-agent-temp-st',
-            'apm/php/php-agent-remove'
+            'php/agent-update',
+            'php/agent-temp-st',
+            'php/agent-remove'
           ]
         },
         {
@@ -351,12 +351,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/php-dashboard-intro'
+                id: 'php/dashboard-intro'
               },
               items: [
-                'dashboard/php-dashboard',
-                'dashboard/php-dashboard-transactionmap',
-                'dashboard/php-dashboard-active-transaction',
+                'php/dashboard',
+                'php/dashboard-transactionmap',
+                'php/dashboard-active-transaction',
               ],
             },
             {
@@ -366,15 +366,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/php-flex-board',
+                id: 'php/flex-board',
               },
               items: [
-                'dashboard/php-flexboard-template',
-                'dashboard/php-flexboard-create',
-                'dashboard/php-flexboard-metric-widget',
-                'dashboard/php-flexboard-widget-manage',
-                'dashboard/php-flexboard-mode',
-                'dashboard/php-flexboard-share',
+                'php/flexboard-template',
+                'php/flexboard-create',
+                'php/flexboard-metric-widget',
+                'php/flexboard-widget-manage',
+                'php/flexboard-mode',
+                'php/flexboard-share',
               ],
             },
             {
@@ -384,13 +384,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'topology/php-topology',
+                id: 'php/topology',
               },
               items: [
-                'topology/php-topology-basic',
-                'topology/php-topology-type',
-                'topology/php-topology-add-function',
-                'topology/php-topology-settings'
+                'php/topology-basic',
+                'php/topology-type',
+                'php/topology-add-function',
+                'php/topology-settings'
               ],
             },
             {
@@ -400,15 +400,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'track-transactions/php-track-transactions-intro'
+                id: 'php/track-transactions-intro'
               },
               items: [
-                'track-transactions/php-trs-view',
-                'track-transactions/php-trs-profile',
-                // 'track-transactions/php-active-transactions',
-                'track-transactions/php-collect-stacks',
-                'track-transactions/php-trs-multi-trace',
-                // 'track-transactions/php-trs-endpoint-setting',
+                'php/trs-view',
+                'php/trs-profile',
+                // 'php/active-transactions',
+                'php/collect-stacks',
+                'php/trs-multi-trace',
+                // 'php/trs-endpoint-setting',
               ]
             },
             {
@@ -418,11 +418,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'metrics/php-metrics-intro'
+                id: 'php/metrics-intro'
               },
               items: [
-                'metrics/php-metrics-app',
-                'metrics/php-metrics-performance-counter',
+                'php/metrics-app',
+                'php/metrics-performance-counter',
               ]
             },
             {
@@ -432,12 +432,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'analysis/php-analysis-report-intro'
+                id: 'php/analysis-report-intro'
               },
               items: [
-                'analysis/php-cube',
-                // 'analysis/php-analysis-apm',
-                'analysis/php-analysis-apm-trs',
+                'php/cube',
+                // 'php/analysis-apm',
+                'php/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -445,11 +445,11 @@ const sidebars = {
                   collapsed: true,
                   link: {
                     type: 'doc',
-                    id: 'analysis/php-report-intro'
+                    id: 'php/report-intro'
                   },
                   items: [
-                    'analysis/php-report-apm',
-                    'analysis/php-integrated-report',
+                    'php/report-apm',
+                    'php/integrated-report',
                   ]
                 }
               ]
@@ -461,17 +461,17 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/php-apm-set-notice',
+                id: 'php/apm-set-notice',
               },
               items: [
-                'notification/php-warning-notice',
-                'notification/php-metric-warning-notice',
-                'notification/php-hitmap-notice',
-                'notification/php-set-event-detect-anomal',
-                'notification/php-set-event-log',
-                'notification/php-set-receive-event',
-                'notification/php-set-event-history',
-                'notification/php-set-event-format',
+                'php/warning-notice',
+                'php/metric-warning-notice',
+                'php/hitmap-notice',
+                'php/set-event-detect-anomal',
+                'php/set-event-log',
+                'php/set-receive-event',
+                'php/set-event-history',
+                'php/set-event-format',
               ],
             },
             {
@@ -1012,7 +1012,7 @@ const sidebars = {
                 'dotnet/active-transactions',
                 'dotnet/collect-stacks',
                 'dotnet/trs-multi-trace',
-                // 'track-transactions/php-trs-endpoint-setting',
+                // 'php/trs-endpoint-setting',
               ]
             },
             {
@@ -1040,7 +1040,7 @@ const sidebars = {
               },
               items: [
                 'dotnet/cube',
-                // 'analysis/php-analysis-apm',
+                // 'php/analysis-apm',
                 'dotnet/analysis-apm-trs',
                 {
                   type: 'category',
@@ -1193,10 +1193,10 @@ const sidebars = {
               items: [
                 'track-transactions/golang-trs-view',
                 'track-transactions/golang-trs-profile',
-                // 'track-transactions/php-active-transactions',
+                // 'php/active-transactions',
                 'track-transactions/golang-collect-stacks',
                 'track-transactions/golang-trs-multi-trace',
-                // 'track-transactions/php-trs-endpoint-setting',
+                // 'php/trs-endpoint-setting',
               ]
             },
             {
@@ -1224,7 +1224,7 @@ const sidebars = {
               },
               items: [
                 'analysis/golang-cube',
-                // 'analysis/php-analysis-apm',
+                // 'php/analysis-apm',
                 'analysis/golang-analysis-apm-trs',
                 {
                   type: 'category',
@@ -2765,7 +2765,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'PHP',
-          href: '../apm/php/apm-introduction',
+          href: '../php/introduction',
           className: "_productlink"
         },
         {
@@ -4663,13 +4663,13 @@ const sidebars = {
   //               id: 'apm/php',
   //             },
   //             items: [
-  //               'apm/php-os/redhat-centos',
-  //               'apm/php-os/debian-ubuntu',
-  //               'apm/php-os/amazon-linux',
-  //               'apm/php-os/freebsd',
-  //               'apm/php-os/alpine-linux',
-  //               'apm/php-os/gcae',
-  //               'apm/php-os/aws-eb'
+  //               'php/php-os/redhat-centos',
+  //               'php/php-os/debian-ubuntu',
+  //               'php/php-os/amazon-linux',
+  //               'php/php-os/freebsd',
+  //               'php/php-os/alpine-linux',
+  //               'php/php-os/gcae',
+  //               'php/php-os/aws-eb'
   //             ]
   //           },
   //           {
