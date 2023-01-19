@@ -38,11 +38,19 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         redirects: [
-          // {
-          //   to: '/java/topology-basic',
-          //   from: '/topology/topology-basic'
-          // }
-        ]
+          {
+            to: '/java/introduction',
+            from: '/apm/java/apm-introduction'
+          },
+          {
+            to: '/java/introduction',
+            from: '/apm/java-intro'
+          },
+          {
+            to: '/server/introduction',
+            from: '/server/server-intro'
+          }
+        ],
       }
     ],
     [
@@ -197,7 +205,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'kubernetes/kubernetes-intro',
+                docId: 'kubernetes/introduction',
                 label: 'Kubernetes',
               },
               {
@@ -344,9 +352,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'kubernetes/kubernetes-intro',
+            docId: 'kubernetes/introduction',
             position: "left",
-            label: '쿠버네티스 모니터링',
+            label: 'Kubernetes 모니터링',
             className: 'hidden',
           },
           {

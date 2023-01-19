@@ -2821,7 +2821,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Kubernetes',
-          href: '../kubernetes/kubernetes-intro',
+          href: '../kubernetes/introduction',
           className: "_productlink"
         },
         {
@@ -4212,14 +4212,14 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'kubernetes/kubernetes-intro'
+        id: 'kubernetes/introduction'
       },
       items: [
-        'kubernetes/kubernetes-project',
+        'kubernetes/before-starting',
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'kubernetes/kubernetes-support'
+          id: 'kubernetes/supported-spec'
         },
         {
           type: 'category',
@@ -4228,7 +4228,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'kubernetes/kubernetes-install',
+            id: 'kubernetes/install',
           },
           items: [
             'kubernetes/install-master-node-agent',
@@ -4236,16 +4236,16 @@ const sidebars = {
             'kubernetes/create-name-space-project'
           ]
         },
-        'kubernetes/kubernetes-agent-settings',
+        'kubernetes/set-agent',
         {
           type: 'category',
           label: '관리하기',
           collapsible: true,
           collapsed: true,
           items: [
-            'kubernetes/kubernetes-namespace',
-            'kubernetes/kubernetes-agent',
-            'kubernetes/kubernetes-update',
+            'kubernetes/namespace',
+            'kubernetes/agent-manage',
+            'kubernetes/agent-update',
           ],
         },
         {
@@ -4265,12 +4265,12 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/kubernetes-container-map',
+                id: 'kubernetes/container-map',
               },
               items: [
-                'dashboard/kubernetes-container-view',
-                'dashboard/kubernetes-container-group',
-                'dashboard/kubernetes-container-status',
+                'kubernetes/container-view',
+                'kubernetes/container-group',
+                'kubernetes/container-status',
               ]
             },
             {
@@ -4280,13 +4280,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/kubernetes-container-map-detail-mode'
+                id: 'kubernetes/container-map-detail-mode'
               },
               items: [
-                'dashboard/kubernetes-container-map-metrics',
-                'dashboard/kubernetes-container-map-trace',
-                'dashboard/kubernetes-container-map-log',
-                'dashboard/kubernetes-container-map-event',
+                'kubernetes/container-map-metrics',
+                'kubernetes/container-map-trace',
+                'kubernetes/container-map-log',
+                'kubernetes/container-map-event',
               ],
             },
             {
@@ -4295,12 +4295,12 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'resource/performance-summary',
-                'resource/resource-node-list',
-                'resource/resource-container-list',
-                'resource/resource-container-volume',
-                'resource/resource-master-meta',
-                'resource/resource-namespace',
+                'kubernetes/performance-summary',
+                'kubernetes/resource-node-list',
+                'kubernetes/resource-container-list',
+                'kubernetes/resource-container-volume',
+                'kubernetes/resource-master-meta',
+                'kubernetes/resource-namespace',
               ],
             },
             {
@@ -4310,9 +4310,9 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/application-service-dashboard',
-                'kubernetes/kubernetes-hitmap',
-                'kubernetes/kubernetes-multiservice-hitmap',
-                'kubernetes/kubernetes-tx-profile',
+                'kubernetes/trs-view',
+                'kubernetes/multiservice-hitmap',
+                'kubernetes/tx-profile',
                 'kubernetes/application-daily-stat',
               ],
             },
@@ -4323,15 +4323,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'dashboard/k8s-flex-board',
+                id: 'kubernetes/flex-board',
               },
               items: [
-                'dashboard/k8s-flexboard-template',
-                'dashboard/k8s-flexboard-create',
-                'dashboard/k8s-flexboard-metric-widget',
-                'dashboard/k8s-flexboard-widget-manage',
-                'dashboard/k8s-flexboard-mode',
-                'dashboard/k8s-flexboard-share',
+                'kubernetes/flexboard-template',
+                'kubernetes/flexboard-create',
+                'kubernetes/flexboard-metric-widget',
+                'kubernetes/flexboard-widget-manage',
+                'kubernetes/flexboard-mode',
+                'kubernetes/flexboard-share',
               ],
             },
             {
@@ -4340,16 +4340,16 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'metrics/kubernetes-metrics-intro',
-                'analysis/kubernetes-analysis-msa',
-                'analysis/kubernetes-analysis-stack',
-                'analysis/kubernetes-pod-init-perform',
-                'analysis/kubernetes-analysis-oom-container',
+                'kubernetes/metrics-intro',
+                'kubernetes/analysis-msa',
+                'kubernetes/analysis-stack',
+                'kubernetes/pod-init-perform',
+                'kubernetes/analysis-oom-container',
               ],
             },
-            'kubernetes/kubernetes-log',
-            'analysis/kubernetes-report',
-            'analysis/kubernetes-integrated-report',
+            'kubernetes/log',
+            'kubernetes/report-intro',
+            'kubernetes/integrated-report',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -4357,16 +4357,16 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'notification/kubernetes-set-notice'
+                id: 'kubernetes/set-notice'
               },
               items: [
-                'notification/k8s-warning-notice',
-                'notification/k8s-metric-warning-notice',
-                'notification/k8s-hitmap-notice',
-                'notification/k8s-set-event-detect-anomal',
-                'notification/k8s-set-event-log',
-                'notification/k8s-set-receive-event',
-                'notification/k8s-set-event-history',
+                'kubernetes/warning-notice',
+                'kubernetes/metric-warning-notice',
+                'kubernetes/hitmap-notice',
+                'kubernetes/set-event-detect-anomal',
+                'kubernetes/set-event-log',
+                'kubernetes/set-receive-event',
+                'kubernetes/set-event-history',
               ],
             },
             {
