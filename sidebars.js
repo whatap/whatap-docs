@@ -114,6 +114,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'java/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -543,6 +547,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'nodejs/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -753,6 +761,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'python/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -947,6 +959,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'dotnet/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
@@ -1131,6 +1147,10 @@ const sidebars = {
           label: '주요 메뉴 알아보기',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'golang/learn-apm-main-menu'
+          },
           items: [
             {
               type: 'category',
