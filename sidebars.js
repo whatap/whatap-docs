@@ -252,7 +252,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -481,7 +481,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -685,7 +685,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -899,7 +899,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1097,7 +1097,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1285,7 +1285,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1421,7 +1421,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1557,7 +1557,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1693,7 +1693,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1829,7 +1829,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1965,7 +1965,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -2101,7 +2101,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -2237,7 +2237,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -2373,7 +2373,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -2509,7 +2509,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -2918,7 +2918,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Log',
-          href: '../log/log-intro',
+          href: '../log/introduction',
           className: "_productlink"
         },
         {
@@ -4193,7 +4193,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Log 모니터링',
-              id: 'log/log-intro'
+              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -5234,7 +5234,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'log/log-intro',
+        id: 'log/introduction',
       },
       items: [
         {
@@ -5261,13 +5261,14 @@ const sidebars = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'log/log-learn-main-menu',
+            id: 'log/learn-main-menu',
           },
           items: [
             'log/log-lt',
             'log/log-exp',
             'log/log-search',           
-            'notification/log-alert'
+            'log/set-notice',
+            'log/set-receive-event',
           ],
         },
       ]  

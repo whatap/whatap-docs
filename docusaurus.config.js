@@ -295,7 +295,7 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'log/log-intro',
+                docId: 'log/introduction',
                 label: 'Log',
               },
               {
@@ -474,7 +474,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'log/log-intro',
+            docId: 'log/introduction',
             position: "left",
             label: 'Log 모니터링',
             className: 'hidden',
