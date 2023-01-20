@@ -2591,10 +2591,11 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Python',
+              label: 'Python 🚀',
               collapsible: true,
               collapsed: true,
               items: [
+                'release-notes/python/python-1.3.0',
                 'release-notes/python/python-1.2.4',
                 'release-notes/python/python-1.2.1',
                 'release-notes/python/python-1.2.0',
