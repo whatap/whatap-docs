@@ -2970,12 +2970,12 @@ const sidebars = {
         // {
         //   type: 'doc',
         //   label: 'Telegraf',
-        //   id: 'telegraf/telegraf-intro',
+        //   id: 'telegraf/introduction',
         // },
         // {
         //   type: 'doc',
         //   label: 'Focus',
-        //   id: 'focus/focus-intro',
+        //   id: 'focus/introduction',
         // },
       ],
     },
@@ -3475,7 +3475,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'telegraf/telegraf-intro'
+            id: 'telegraf/introduction'
           },
           items: [
             {
@@ -3484,8 +3484,8 @@ const sidebars = {
               collapsible: true,
               collapsed: false,
               items: [
-                'telegraf/install-tf-plugin',
-                'telegraf/tf-plg-settings',
+                'telegraf/telegraf-plugin-install',
+                'telegraf/telegraf-plugin-settings',
               ]
             },
             {
@@ -3494,14 +3494,14 @@ const sidebars = {
               collapsible: true,
               collapsed: false,
               items: [
-                'telegraf/tf-support',
-                'telegraf/install-tf-agent',
-                'telegraf/tf-troubleshooting',
-                'telegraf/tf-settings',
-                'telegraf/tf-manage',
+                'telegraf/supported-spec',
+                'telegraf/install-agent',
+                'telegraf/agent-troubleshooting',
+                'telegraf/set-agent',
+                'telegraf/manage',
               ]
             },
-            'telegraf/tf-plugin-ex',
+            'telegraf/telegraf-usage',
           ]
         },
         {
@@ -3511,12 +3511,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'focus/focus-intro'
+            id: 'focus/introduction'
           },
           items: [
-            'focus/focus-supported-spec',
+            'focus/supported-spec',
             'focus/install-focus',
-            'focus/focus-settings',
+            'focus/focus-setting',
             'focus/focus-usage',
           ]
         },
