@@ -1418,11 +1418,11 @@ const sidebars = {
                 'postgresql/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -1554,11 +1554,11 @@ const sidebars = {
                 'oracle/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -1690,11 +1690,11 @@ const sidebars = {
                 'mysql/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -1826,11 +1826,11 @@ const sidebars = {
                 'mssql/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -1962,11 +1962,11 @@ const sidebars = {
                 'tibero/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2098,11 +2098,11 @@ const sidebars = {
                 'cubrid/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2234,11 +2234,11 @@ const sidebars = {
                 'altibase/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2370,11 +2370,11 @@ const sidebars = {
                 'redis/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2506,11 +2506,11 @@ const sidebars = {
                 'mongodb/db-set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
             {
               type: 'link',
               label: 'Open API',
