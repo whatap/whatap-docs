@@ -2641,6 +2641,7 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
+                'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
                 'release-notes/server/server-2.2.9',
                 'release-notes/server/server-2.2.8',
@@ -2650,7 +2651,6 @@ const sidebars = {
                 'release-notes/server/server-2.2.4',
                 'release-notes/server/server-2.2.3',
                 'release-notes/server/server-2.2.2',
-                'release-notes/server/server-2.2.1',
                 'release-notes/server/server-previous',
               ],
             },
