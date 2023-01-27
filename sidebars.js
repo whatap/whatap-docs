@@ -3588,7 +3588,7 @@ const sidebars = {
   amazoncloudwatchSidebar: [
     {
       type: 'category',
-      label: 'Amazon Cloudwatch',
+      label: 'Amazon CloudWatch',
       collapsible: false,
       collapsed: false,
       // link: {
