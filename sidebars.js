@@ -1305,13 +1305,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'postgresql/db-monitoring-intro'
+        id: 'postgresql/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'postgresql/db-monitoring-support',
+          id: 'postgresql/monitoring-support',
         },
         {
           type: 'category',
@@ -1319,9 +1319,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'postgresql/install-db-agent',
-            'postgresql/after-install-db-agent',
-            'postgresql/db-troubleshooting',
+            'postgresql/install-agent',
+            'postgresql/after-install-agent',
+            'postgresql/troubleshooting',
           ],
         },
         {
@@ -1331,17 +1331,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'postgresql/db-agent-settings'
+            id: 'postgresql/agent-settings'
           },
           items: [
-            'postgresql/db-agent-network',
-            'postgresql/db-agent-naming',
-            'postgresql/db-agent-aws',
-            'postgresql/db-agent-data',
-            'postgresql/db-agent-xos-settings',
+            'postgresql/agent-network',
+            'postgresql/agent-naming',
+            'postgresql/agent-aws',
+            'postgresql/agent-data',
+            'postgresql/agent-xos-settings',
           ],
         },
-        'postgresql/db-agent-manage',
+        'postgresql/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1355,13 +1355,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'postgresql/db-dashboard-intro'
+                id: 'postgresql/dashboard-intro'
               },
               items: [
-                'postgresql/db-instance-list',
-                'postgresql/db-instance-monitoring',
-                'postgresql/db-multi-instance-monitoring',
-                'postgresql/db-slow-query',
+                'postgresql/instance-list',
+                'postgresql/instance-monitoring',
+                'postgresql/multi-instance-monitoring',
+                'postgresql/slow-query',
               ],
             },
             {
@@ -1371,15 +1371,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'postgresql/db-flex-board',
+                id: 'postgresql/flex-board',
               },
               items: [
-                'postgresql/db-flexboard-template',
-                'postgresql/db-flexboard-create',
-                'postgresql/db-flexboard-metric-widget',
-                'postgresql/db-flexboard-widget-manage',
-                'postgresql/db-flexboard-mode',
-                'postgresql/db-flexboard-share',
+                'postgresql/flexboard-template',
+                'postgresql/flexboard-create',
+                'postgresql/flexboard-metric-widget',
+                'postgresql/flexboard-widget-manage',
+                'postgresql/flexboard-mode',
+                'postgresql/flexboard-share',
               ],
             },
             {
@@ -1392,10 +1392,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'postgresql/db-analysis-function',
-                'postgresql/db-metrics-intro',
-                'postgresql/db-log-viewer',
-                'postgresql/db-stat',
+                'postgresql/analysis-function',
+                'postgresql/metrics-intro',
+                'postgresql/log-viewer',
+                'postgresql/stat',
                 'postgresql/report-intro',
                 'postgresql/integrated-report',
               ]
@@ -1407,15 +1407,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'postgresql/db-set-notice',
+                id: 'postgresql/set-notice',
               },
               items: [
-                'postgresql/db-warning-notice',
-                'postgresql/db-metric-warning-notice',
-                'postgresql/db-set-event-detect-anomal',
-                'postgresql/db-set-receive-event',
-                'postgresql/db-set-event-history',
-                'postgresql/db-set-event-format',
+                'postgresql/warning-notice',
+                'postgresql/metric-warning-notice',
+                'postgresql/set-event-detect-anomal',
+                'postgresql/set-receive-event',
+                'postgresql/set-event-history',
+                'postgresql/set-event-format',
               ],
             },
             // {
@@ -1441,13 +1441,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'oracle/db-monitoring-intro'
+        id: 'oracle/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'oracle/db-monitoring-support',
+          id: 'oracle/monitoring-support',
         },
         {
           type: 'category',
@@ -1455,9 +1455,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'oracle/install-db-agent',
-            'oracle/after-install-db-agent',
-            'oracle/db-troubleshooting',
+            'oracle/install-agent',
+            'oracle/after-install-agent',
+            'oracle/troubleshooting',
           ],
         },
         {
@@ -1467,17 +1467,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'oracle/db-agent-settings'
+            id: 'oracle/agent-settings'
           },
           items: [
-            'oracle/db-agent-network',
-            'oracle/db-agent-naming',
-            'oracle/db-agent-aws',
-            'oracle/db-agent-data',
-            'oracle/db-agent-xos-settings',
+            'oracle/agent-network',
+            'oracle/agent-naming',
+            'oracle/agent-aws',
+            'oracle/agent-data',
+            'oracle/agent-xos-settings',
           ],
         },
-        'oracle/db-agent-manage',
+        'oracle/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1491,13 +1491,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-dashboard-intro'
+                id: 'oracle/dashboard-intro'
               },
               items: [
-                'oracle/db-instance-list',
-                'oracle/db-instance-monitoring',
-                'oracle/db-multi-instance-monitoring',
-                // 'oracle/db-slow-query',
+                'oracle/instance-list',
+                'oracle/instance-monitoring',
+                'oracle/multi-instance-monitoring',
+                // 'oracle/slow-query',
               ],
             },
             {
@@ -1507,15 +1507,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-flex-board',
+                id: 'oracle/flex-board',
               },
               items: [
-                'oracle/db-flexboard-template',
-                'oracle/db-flexboard-create',
-                'oracle/db-flexboard-metric-widget',
-                'oracle/db-flexboard-widget-manage',
-                'oracle/db-flexboard-mode',
-                'oracle/db-flexboard-share',
+                'oracle/flexboard-template',
+                'oracle/flexboard-create',
+                'oracle/flexboard-metric-widget',
+                'oracle/flexboard-widget-manage',
+                'oracle/flexboard-mode',
+                'oracle/flexboard-share',
               ],
             },
             {
@@ -1528,10 +1528,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'oracle/db-analysis-function',
-                'oracle/db-metrics-intro',
-                'oracle/db-log-viewer',
-                'oracle/db-stat',
+                'oracle/analysis-function',
+                'oracle/metrics-intro',
+                'oracle/log-viewer',
+                'oracle/stat',
                 'oracle/report-intro',
                 'oracle/integrated-report',
               ]
@@ -1543,15 +1543,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/db-set-notice',
+                id: 'oracle/set-notice',
               },
               items: [
-                'oracle/db-warning-notice',
-                'oracle/db-metric-warning-notice',
-                'oracle/db-set-event-detect-anomal',
-                'oracle/db-set-receive-event',
-                'oracle/db-set-event-history',
-                'oracle/db-set-event-format',
+                'oracle/warning-notice',
+                'oracle/metric-warning-notice',
+                'oracle/set-event-detect-anomal',
+                'oracle/set-receive-event',
+                'oracle/set-event-history',
+                'oracle/set-event-format',
               ],
             },
             // {
@@ -1577,13 +1577,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'mysql/db-monitoring-intro'
+        id: 'mysql/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'mysql/db-monitoring-support',
+          id: 'mysql/monitoring-support',
         },
         {
           type: 'category',
@@ -1591,9 +1591,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mysql/install-db-agent',
-            'mysql/after-install-db-agent',
-            'mysql/db-troubleshooting',
+            'mysql/install-agent',
+            'mysql/after-install-agent',
+            'mysql/troubleshooting',
           ],
         },
         {
@@ -1603,17 +1603,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mysql/db-agent-settings'
+            id: 'mysql/agent-settings'
           },
           items: [
-            'mysql/db-agent-network',
-            'mysql/db-agent-naming',
-            'mysql/db-agent-aws',
-            'mysql/db-agent-data',
-            // 'mysql/db-agent-xos-settings',
+            'mysql/agent-network',
+            'mysql/agent-naming',
+            'mysql/agent-aws',
+            'mysql/agent-data',
+            // 'mysql/agent-xos-settings',
           ],
         },
-        'mysql/db-agent-manage',
+        'mysql/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1627,13 +1627,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-dashboard-intro'
+                id: 'mysql/dashboard-intro'
               },
               items: [
-                'mysql/db-instance-list',
-                'mysql/db-instance-monitoring',
-                // 'mysql/db-multi-instance-monitoring',
-                'mysql/db-slow-query',
+                'mysql/instance-list',
+                'mysql/instance-monitoring',
+                // 'mysql/multi-instance-monitoring',
+                'mysql/slow-query',
               ],
             },
             {
@@ -1643,15 +1643,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-flex-board',
+                id: 'mysql/flex-board',
               },
               items: [
-                'mysql/db-flexboard-template',
-                'mysql/db-flexboard-create',
-                'mysql/db-flexboard-metric-widget',
-                'mysql/db-flexboard-widget-manage',
-                'mysql/db-flexboard-mode',
-                'mysql/db-flexboard-share',
+                'mysql/flexboard-template',
+                'mysql/flexboard-create',
+                'mysql/flexboard-metric-widget',
+                'mysql/flexboard-widget-manage',
+                'mysql/flexboard-mode',
+                'mysql/flexboard-share',
               ],
             },
             {
@@ -1664,10 +1664,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'mysql/db-analysis-function',
-                'mysql/db-metrics-intro',
-                'mysql/db-log-viewer',
-                'mysql/db-stat',
+                'mysql/analysis-function',
+                'mysql/metrics-intro',
+                'mysql/log-viewer',
+                'mysql/stat',
                 'mysql/report-intro',
                 'mysql/integrated-report',
               ]
@@ -1679,15 +1679,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/db-set-notice',
+                id: 'mysql/set-notice',
               },
               items: [
-                'mysql/db-warning-notice',
-                'mysql/db-metric-warning-notice',
-                'mysql/db-set-event-detect-anomal',
-                'mysql/db-set-receive-event',
-                'mysql/db-set-event-history',
-                'mysql/db-set-event-format',
+                'mysql/warning-notice',
+                'mysql/metric-warning-notice',
+                'mysql/set-event-detect-anomal',
+                'mysql/set-receive-event',
+                'mysql/set-event-history',
+                'mysql/set-event-format',
               ],
             },
             // {
@@ -1713,13 +1713,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'mssql/db-monitoring-intro'
+        id: 'mssql/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'mssql/db-monitoring-support',
+          id: 'mssql/monitoring-support',
         },
         {
           type: 'category',
@@ -1727,9 +1727,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mssql/install-db-agent',
-            'mssql/after-install-db-agent',
-            'mssql/db-troubleshooting',
+            'mssql/install-agent',
+            'mssql/after-install-agent',
+            'mssql/troubleshooting',
           ],
         },
         {
@@ -1739,17 +1739,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mssql/db-agent-settings'
+            id: 'mssql/agent-settings'
           },
           items: [
-            'mssql/db-agent-network',
-            'mssql/db-agent-naming',
-            'mssql/db-agent-aws',
-            'mssql/db-agent-data',
-            // 'mssql/db-agent-xos-settings',
+            'mssql/agent-network',
+            'mssql/agent-naming',
+            'mssql/agent-aws',
+            'mssql/agent-data',
+            // 'mssql/agent-xos-settings',
           ],
         },
-        'mssql/db-agent-manage',
+        'mssql/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1763,13 +1763,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-dashboard-intro'
+                id: 'mssql/dashboard-intro'
               },
               items: [
-                'mssql/db-instance-list',
-                'mssql/db-instance-monitoring',
-                'mssql/db-multi-instance-monitoring',
-                // 'mssql/db-slow-query',
+                'mssql/instance-list',
+                'mssql/instance-monitoring',
+                'mssql/multi-instance-monitoring',
+                // 'mssql/slow-query',
               ],
             },
             {
@@ -1779,15 +1779,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-flex-board',
+                id: 'mssql/flex-board',
               },
               items: [
-                'mssql/db-flexboard-template',
-                'mssql/db-flexboard-create',
-                'mssql/db-flexboard-metric-widget',
-                'mssql/db-flexboard-widget-manage',
-                'mssql/db-flexboard-mode',
-                'mssql/db-flexboard-share',
+                'mssql/flexboard-template',
+                'mssql/flexboard-create',
+                'mssql/flexboard-metric-widget',
+                'mssql/flexboard-widget-manage',
+                'mssql/flexboard-mode',
+                'mssql/flexboard-share',
               ],
             },
             {
@@ -1800,10 +1800,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'mssql/db-analysis-function',
-                'mssql/db-metrics-intro',
-                'mssql/db-log-viewer',
-                'mssql/db-stat',
+                'mssql/analysis-function',
+                'mssql/metrics-intro',
+                'mssql/log-viewer',
+                'mssql/stat',
                 'mssql/report-intro',
                 'mssql/integrated-report',
               ]
@@ -1815,15 +1815,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mssql/db-set-notice',
+                id: 'mssql/set-notice',
               },
               items: [
-                'mssql/db-warning-notice',
-                'mssql/db-metric-warning-notice',
-                'mssql/db-set-event-detect-anomal',
-                'mssql/db-set-receive-event',
-                'mssql/db-set-event-history',
-                'mssql/db-set-event-format',
+                'mssql/warning-notice',
+                'mssql/metric-warning-notice',
+                'mssql/set-event-detect-anomal',
+                'mssql/set-receive-event',
+                'mssql/set-event-history',
+                'mssql/set-event-format',
               ],
             },
             // {
@@ -1849,13 +1849,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'tibero/db-monitoring-intro'
+        id: 'tibero/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'tibero/db-monitoring-support',
+          id: 'tibero/monitoring-support',
         },
         {
           type: 'category',
@@ -1863,9 +1863,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'tibero/install-db-agent',
-            'tibero/after-install-db-agent',
-            'tibero/db-troubleshooting',
+            'tibero/install-agent',
+            'tibero/after-install-agent',
+            'tibero/troubleshooting',
           ],
         },
         {
@@ -1875,17 +1875,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'tibero/db-agent-settings'
+            id: 'tibero/agent-settings'
           },
           items: [
-            'tibero/db-agent-network',
-            'tibero/db-agent-naming',
-            'tibero/db-agent-aws',
-            'tibero/db-agent-data',
-            // 'tibero/db-agent-xos-settings', // Postgresql, Oracle
+            'tibero/agent-network',
+            'tibero/agent-naming',
+            'tibero/agent-aws',
+            'tibero/agent-data',
+            // 'tibero/agent-xos-settings', // Postgresql, Oracle
           ],
         },
-        'tibero/db-agent-manage',
+        'tibero/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -1899,13 +1899,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'tibero/db-dashboard-intro'
+                id: 'tibero/dashboard-intro'
               },
               items: [
-                'tibero/db-instance-list',
-                'tibero/db-instance-monitoring',
-                // 'tibero/db-multi-instance-monitoring',
-                // 'tibero/db-slow-query',
+                'tibero/instance-list',
+                'tibero/instance-monitoring',
+                // 'tibero/multi-instance-monitoring',
+                // 'tibero/slow-query',
               ],
             },
             {
@@ -1915,15 +1915,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'tibero/db-flex-board',
+                id: 'tibero/flex-board',
               },
               items: [
-                'tibero/db-flexboard-template',
-                'tibero/db-flexboard-create',
-                'tibero/db-flexboard-metric-widget',
-                'tibero/db-flexboard-widget-manage',
-                'tibero/db-flexboard-mode',
-                'tibero/db-flexboard-share',
+                'tibero/flexboard-template',
+                'tibero/flexboard-create',
+                'tibero/flexboard-metric-widget',
+                'tibero/flexboard-widget-manage',
+                'tibero/flexboard-mode',
+                'tibero/flexboard-share',
               ],
             },
             {
@@ -1936,10 +1936,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'tibero/db-analysis-function',
-                'tibero/db-metrics-intro',
-                'tibero/db-log-viewer',
-                'tibero/db-stat',
+                'tibero/analysis-function',
+                'tibero/metrics-intro',
+                'tibero/log-viewer',
+                'tibero/stat',
                 'tibero/report-intro',
                 'tibero/integrated-report',
               ]
@@ -1951,15 +1951,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'tibero/db-set-notice',
+                id: 'tibero/set-notice',
               },
               items: [
-                'tibero/db-warning-notice',
-                'tibero/db-metric-warning-notice',
-                'tibero/db-set-event-detect-anomal',
-                'tibero/db-set-receive-event',
-                'tibero/db-set-event-history',
-                'tibero/db-set-event-format',
+                'tibero/warning-notice',
+                'tibero/metric-warning-notice',
+                'tibero/set-event-detect-anomal',
+                'tibero/set-receive-event',
+                'tibero/set-event-history',
+                'tibero/set-event-format',
               ],
             },
             // {
@@ -1985,13 +1985,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'cubrid/db-monitoring-intro'
+        id: 'cubrid/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'cubrid/db-monitoring-support',
+          id: 'cubrid/monitoring-support',
         },
         {
           type: 'category',
@@ -1999,9 +1999,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'cubrid/install-db-agent',
-            'cubrid/after-install-db-agent',
-            'cubrid/db-troubleshooting',
+            'cubrid/install-agent',
+            'cubrid/after-install-agent',
+            'cubrid/troubleshooting',
           ],
         },
         {
@@ -2011,17 +2011,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'cubrid/db-agent-settings'
+            id: 'cubrid/agent-settings'
           },
           items: [
-            'cubrid/db-agent-network',
-            'cubrid/db-agent-naming',
-            'cubrid/db-agent-aws',
-            'cubrid/db-agent-data',
-            // 'cubrid/db-agent-xos-settings', // Postgresql, Oracle
+            'cubrid/agent-network',
+            'cubrid/agent-naming',
+            'cubrid/agent-aws',
+            'cubrid/agent-data',
+            // 'cubrid/agent-xos-settings', // Postgresql, Oracle
           ],
         },
-        'cubrid/db-agent-manage',
+        'cubrid/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -2035,13 +2035,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'cubrid/db-dashboard-intro'
+                id: 'cubrid/dashboard-intro'
               },
               items: [
-                'cubrid/db-instance-list',
-                'cubrid/db-instance-monitoring',
-                // 'cubrid/db-multi-instance-monitoring',
-                // 'cubrid/db-slow-query',
+                'cubrid/instance-list',
+                'cubrid/instance-monitoring',
+                // 'cubrid/multi-instance-monitoring',
+                // 'cubrid/slow-query',
               ],
             },
             {
@@ -2051,15 +2051,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'cubrid/db-flex-board',
+                id: 'cubrid/flex-board',
               },
               items: [
-                'cubrid/db-flexboard-template',
-                'cubrid/db-flexboard-create',
-                'cubrid/db-flexboard-metric-widget',
-                'cubrid/db-flexboard-widget-manage',
-                'cubrid/db-flexboard-mode',
-                'cubrid/db-flexboard-share',
+                'cubrid/flexboard-template',
+                'cubrid/flexboard-create',
+                'cubrid/flexboard-metric-widget',
+                'cubrid/flexboard-widget-manage',
+                'cubrid/flexboard-mode',
+                'cubrid/flexboard-share',
               ],
             },
             {
@@ -2072,10 +2072,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'cubrid/db-analysis-function',
-                'cubrid/db-metrics-intro',
-                'cubrid/db-log-viewer',
-                'cubrid/db-stat',
+                'cubrid/analysis-function',
+                'cubrid/metrics-intro',
+                'cubrid/log-viewer',
+                'cubrid/stat',
                 'cubrid/report-intro',
                 'cubrid/integrated-report',
               ]
@@ -2087,15 +2087,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'cubrid/db-set-notice',
+                id: 'cubrid/set-notice',
               },
               items: [
-                'cubrid/db-warning-notice',
-                'cubrid/db-metric-warning-notice',
-                'cubrid/db-set-event-detect-anomal',
-                'cubrid/db-set-receive-event',
-                'cubrid/db-set-event-history',
-                'cubrid/db-set-event-format',
+                'cubrid/warning-notice',
+                'cubrid/metric-warning-notice',
+                'cubrid/set-event-detect-anomal',
+                'cubrid/set-receive-event',
+                'cubrid/set-event-history',
+                'cubrid/set-event-format',
               ],
             },
             // {
@@ -2121,13 +2121,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'altibase/db-monitoring-intro'
+        id: 'altibase/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'altibase/db-monitoring-support',
+          id: 'altibase/monitoring-support',
         },
         {
           type: 'category',
@@ -2135,9 +2135,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'altibase/install-db-agent',
-            'altibase/after-install-db-agent',
-            'altibase/db-troubleshooting',
+            'altibase/install-agent',
+            'altibase/after-install-agent',
+            'altibase/troubleshooting',
           ],
         },
         {
@@ -2147,17 +2147,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'altibase/db-agent-settings'
+            id: 'altibase/agent-settings'
           },
           items: [
-            'altibase/db-agent-network',
-            'altibase/db-agent-naming',
-            'altibase/db-agent-aws',
-            'altibase/db-agent-data',
-            // 'altibase/db-agent-xos-settings', // Postgresql, Oracle
+            'altibase/agent-network',
+            'altibase/agent-naming',
+            'altibase/agent-aws',
+            'altibase/agent-data',
+            // 'altibase/agent-xos-settings', // Postgresql, Oracle
           ],
         },
-        'altibase/db-agent-manage',
+        'altibase/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -2171,13 +2171,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/db-dashboard-intro'
+                id: 'altibase/dashboard-intro'
               },
               items: [
-                'altibase/db-instance-list',
-                'altibase/db-instance-monitoring',
-                // 'altibase/db-multi-instance-monitoring',
-                // 'altibase/db-slow-query',
+                'altibase/instance-list',
+                'altibase/instance-monitoring',
+                // 'altibase/multi-instance-monitoring',
+                // 'altibase/slow-query',
               ],
             },
             {
@@ -2187,15 +2187,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/db-flex-board',
+                id: 'altibase/flex-board',
               },
               items: [
-                'altibase/db-flexboard-template',
-                'altibase/db-flexboard-create',
-                'altibase/db-flexboard-metric-widget',
-                'altibase/db-flexboard-widget-manage',
-                'altibase/db-flexboard-mode',
-                'altibase/db-flexboard-share',
+                'altibase/flexboard-template',
+                'altibase/flexboard-create',
+                'altibase/flexboard-metric-widget',
+                'altibase/flexboard-widget-manage',
+                'altibase/flexboard-mode',
+                'altibase/flexboard-share',
               ],
             },
             {
@@ -2208,10 +2208,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'altibase/db-analysis-function',
-                'altibase/db-metrics-intro',
-                'altibase/db-log-viewer',
-                'altibase/db-stat',
+                'altibase/analysis-function',
+                'altibase/metrics-intro',
+                'altibase/log-viewer',
+                'altibase/stat',
                 'altibase/report-intro',
                 'altibase/integrated-report',
               ]
@@ -2223,15 +2223,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/db-set-notice',
+                id: 'altibase/set-notice',
               },
               items: [
-                'altibase/db-warning-notice',
-                'altibase/db-metric-warning-notice',
-                'altibase/db-set-event-detect-anomal',
-                'altibase/db-set-receive-event',
-                'altibase/db-set-event-history',
-                'altibase/db-set-event-format',
+                'altibase/warning-notice',
+                'altibase/metric-warning-notice',
+                'altibase/set-event-detect-anomal',
+                'altibase/set-receive-event',
+                'altibase/set-event-history',
+                'altibase/set-event-format',
               ],
             },
             // {
@@ -2257,13 +2257,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'redis/db-monitoring-intro'
+        id: 'redis/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'redis/db-monitoring-support',
+          id: 'redis/monitoring-support',
         },
         {
           type: 'category',
@@ -2271,9 +2271,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'redis/install-db-agent',
-            'redis/after-install-db-agent',
-            'redis/db-troubleshooting',
+            'redis/install-agent',
+            'redis/after-install-agent',
+            'redis/troubleshooting',
           ],
         },
         {
@@ -2283,17 +2283,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'redis/db-agent-settings'
+            id: 'redis/agent-settings'
           },
           items: [
-            'redis/db-agent-network',
-            'redis/db-agent-naming',
-            'redis/db-agent-aws',
-            'redis/db-agent-data',
-            // 'redis/db-agent-xos-settings', // Postgresql, Oracle
+            'redis/agent-network',
+            'redis/agent-naming',
+            'redis/agent-aws',
+            'redis/agent-data',
+            // 'redis/agent-xos-settings', // Postgresql, Oracle
           ],
         },
-        'redis/db-agent-manage',
+        'redis/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -2307,13 +2307,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'redis/db-dashboard-intro'
+                id: 'redis/dashboard-intro'
               },
               items: [
-                'redis/db-instance-list',
-                'redis/db-instance-monitoring',
-                'redis/db-multi-instance-monitoring',
-                // 'redis/db-slow-query',
+                'redis/instance-list',
+                'redis/instance-monitoring',
+                'redis/multi-instance-monitoring',
+                // 'redis/slow-query',
               ],
             },
             {
@@ -2323,15 +2323,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'redis/db-flex-board',
+                id: 'redis/flex-board',
               },
               items: [
-                'redis/db-flexboard-template',
-                'redis/db-flexboard-create',
-                'redis/db-flexboard-metric-widget',
-                'redis/db-flexboard-widget-manage',
-                'redis/db-flexboard-mode',
-                'redis/db-flexboard-share',
+                'redis/flexboard-template',
+                'redis/flexboard-create',
+                'redis/flexboard-metric-widget',
+                'redis/flexboard-widget-manage',
+                'redis/flexboard-mode',
+                'redis/flexboard-share',
               ],
             },
             {
@@ -2344,10 +2344,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'redis/db-analysis-function',
-                'redis/db-metrics-intro',
-                'redis/db-log-viewer',
-                // 'redis/db-stat',
+                'redis/analysis-function',
+                'redis/metrics-intro',
+                'redis/log-viewer',
+                // 'redis/stat',
                 // 'redis/report-intro',
                 // 'redis/integrated-report',
               ]
@@ -2359,15 +2359,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'redis/db-set-notice',
+                id: 'redis/set-notice',
               },
               items: [
-                'redis/db-warning-notice',
-                'redis/db-metric-warning-notice',
-                'redis/db-set-event-detect-anomal',
-                'redis/db-set-receive-event',
-                'redis/db-set-event-history',
-                'redis/db-set-event-format',
+                'redis/warning-notice',
+                'redis/metric-warning-notice',
+                'redis/set-event-detect-anomal',
+                'redis/set-receive-event',
+                'redis/set-event-history',
+                'redis/set-event-format',
               ],
             },
             // {
@@ -2393,13 +2393,13 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'mongodb/db-monitoring-intro'
+        id: 'mongodb/monitoring-intro'
       },
       items: [
         {
           type: 'doc',
           label: '지원 환경',
-          id: 'mongodb/db-monitoring-support',
+          id: 'mongodb/monitoring-support',
         },
         {
           type: 'category',
@@ -2407,9 +2407,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'mongodb/install-db-agent',
-            'mongodb/after-install-db-agent',
-            'mongodb/db-troubleshooting',
+            'mongodb/install-agent',
+            'mongodb/after-install-agent',
+            'mongodb/troubleshooting',
           ],
         },
         {
@@ -2419,17 +2419,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'mongodb/db-agent-settings'
+            id: 'mongodb/agent-settings'
           },
           items: [
-            'mongodb/db-agent-network',
-            'mongodb/db-agent-naming',
-            'mongodb/db-agent-aws',
-            'mongodb/db-agent-data',
-            // 'mongodb/db-agent-xos-settings', // Postgresql, Oracle
+            'mongodb/agent-network',
+            'mongodb/agent-naming',
+            'mongodb/agent-aws',
+            'mongodb/agent-data',
+            // 'mongodb/agent-xos-settings', // Postgresql, Oracle
           ],
         },
-        'mongodb/db-agent-manage',
+        'mongodb/agent-manage',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -2443,13 +2443,13 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mongodb/db-dashboard-intro'
+                id: 'mongodb/dashboard-intro'
               },
               items: [
-                'mongodb/db-instance-list',
-                'mongodb/db-instance-monitoring',
-                'mongodb/db-multi-instance-monitoring',
-                // 'mongodb/db-slow-query',
+                'mongodb/instance-list',
+                'mongodb/instance-monitoring',
+                'mongodb/multi-instance-monitoring',
+                // 'mongodb/slow-query',
               ],
             },
             {
@@ -2459,15 +2459,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mongodb/db-flex-board',
+                id: 'mongodb/flex-board',
               },
               items: [
-                'mongodb/db-flexboard-template',
-                'mongodb/db-flexboard-create',
-                'mongodb/db-flexboard-metric-widget',
-                'mongodb/db-flexboard-widget-manage',
-                'mongodb/db-flexboard-mode',
-                'mongodb/db-flexboard-share',
+                'mongodb/flexboard-template',
+                'mongodb/flexboard-create',
+                'mongodb/flexboard-metric-widget',
+                'mongodb/flexboard-widget-manage',
+                'mongodb/flexboard-mode',
+                'mongodb/flexboard-share',
               ],
             },
             {
@@ -2480,10 +2480,10 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'mongodb/db-analysis-function',
-                'mongodb/db-metrics-intro',
-                'mongodb/db-log-viewer',
-                'mongodb/db-stat',
+                'mongodb/analysis-function',
+                'mongodb/metrics-intro',
+                'mongodb/log-viewer',
+                'mongodb/stat',
                 // 'mongodb/report-intro',
                 // 'mongodb/integrated-report',
               ]
@@ -2495,15 +2495,15 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mongodb/db-set-notice',
+                id: 'mongodb/set-notice',
               },
               items: [
-                'mongodb/db-warning-notice',
-                'mongodb/db-metric-warning-notice',
-                'mongodb/db-set-event-detect-anomal',
-                'mongodb/db-set-receive-event',
-                'mongodb/db-set-event-history',
-                'mongodb/db-set-event-format',
+                'mongodb/warning-notice',
+                'mongodb/metric-warning-notice',
+                'mongodb/set-event-detect-anomal',
+                'mongodb/set-receive-event',
+                'mongodb/set-event-history',
+                'mongodb/set-event-format',
               ],
             },
             // {
@@ -2660,6 +2660,7 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
+                'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
                 'release-notes/k8s/k8s-1.2.0',
                 'release-notes/k8s/k8s-1.1.55',
@@ -2669,7 +2670,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1.1.50',
                 'release-notes/k8s/k8s-1.1.49',
                 'release-notes/k8s/k8s-1.1.48',
-                'release-notes/k8s/k8s-1.1.46',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -2828,55 +2828,55 @@ const sidebars = {
         {
           type: 'link',
           label: 'PostgreSQL',
-          href: '../postgresql/db-monitoring-intro',
+          href: '../postgresql/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Oracle',
-          href: '../oracle/db-monitoring-intro',
+          href: '../oracle/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'MySQL',
-          href: '../mysql/db-monitoring-intro',
+          href: '../mysql/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'MS SQL Server',
-          href: '../mssql/db-monitoring-intro',
+          href: '../mssql/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Tibero',
-          href: '../tibero/db-monitoring-intro',
+          href: '../tibero/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'CUBRID',
-          href: '../cubrid/db-monitoring-intro',
+          href: '../cubrid/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Altibase',
-          href: '../altibase/db-monitoring-intro',
+          href: '../altibase/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'Redis',
-          href: '../redis/db-monitoring-intro',
+          href: '../redis/monitoring-intro',
           className: "_productlink"
         },
         {
           type: 'link',
           label: 'MongoDB',
-          href: '../mongodb/db-monitoring-intro',
+          href: '../mongodb/monitoring-intro',
           className: "_productlink"
         },
         {
