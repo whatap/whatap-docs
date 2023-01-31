@@ -2534,9 +2534,13 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Service 🚀',
+          label: 'Service',
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'release-notes/service/service-1.94.0',
+          },
           items: [
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
@@ -2562,6 +2566,10 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/java/java-2.2.0',
+              },
               items: [
                 'release-notes/java/java-2.2.0',
                 'release-notes/java/java-2.1.3',
@@ -2576,6 +2584,10 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/php/php-2.6.0',
+              },
               items: [
                 'release-notes/php/php-2.6.0',
                 'release-notes/php/php-2.5.4',
@@ -2591,9 +2603,13 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Python 🚀',
+              label: 'Python',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/python/python-1.3.0',
+              },
               items: [
                 'release-notes/python/python-1.3.0',
                 'release-notes/python/python-1.2.4',
@@ -2608,6 +2624,10 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/dotnet/dotnet-2.0.4',
+              },
               items: [
                 'release-notes/dotnet/dotnet-2.0.4',
                 'release-notes/dotnet/dotnet-2.0.3',
@@ -2622,6 +2642,10 @@ const sidebars = {
               label: 'Golang',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/golang/golang-0.1.14',
+              },
               items: [
                 'release-notes/golang/golang-0.1.14',
                 'release-notes/golang/golang-0.1.13',
@@ -2640,6 +2664,10 @@ const sidebars = {
               label: 'Server 🚀',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/server/server-2.3.1',
+              },
               items: [
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
@@ -2659,6 +2687,10 @@ const sidebars = {
               label: 'Kubernetes 🚀',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'release-notes/k8s/k8s-1.2.2',
+              },
               items: [
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -2675,19 +2707,36 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'DB',
+              label: 'DB 🚀',
               collapsible: true,
               collapsed: true,
               items: [
-                'release-notes/db/xos-1.1.3',
-                'release-notes/db/xos-1.1.2',
-                'release-notes/db/xos-1.1.1b',
-                'release-notes/db/xos-1.1.1a',
-                'release-notes/db/xos-1.1.1',
-                'release-notes/db/xos-1.1.0b',
-                'release-notes/db/xos-1.1.0a',
-                'release-notes/db/xos-1.1.0',
-                'release-notes/db/xos-previous',
+                {
+                  type: 'doc',
+                  label: 'DBX 🚀',
+                  id: 'release-notes/db/dbx-release-notes',
+                },
+                {
+                  type: 'category',
+                  label: 'XOS',
+                  collapsible: true,
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: 'release-notes/db/xos-1.1.3',
+                  },
+                  items: [
+                    'release-notes/db/xos-1.1.3',
+                    'release-notes/db/xos-1.1.2',
+                    'release-notes/db/xos-1.1.1b',
+                    'release-notes/db/xos-1.1.1a',
+                    'release-notes/db/xos-1.1.1',
+                    'release-notes/db/xos-1.1.0b',
+                    'release-notes/db/xos-1.1.0a',
+                    'release-notes/db/xos-1.1.0',
+                    'release-notes/db/xos-previous',
+                  ]
+                },
               ],
             },
             {
