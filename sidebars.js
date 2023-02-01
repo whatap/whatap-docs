@@ -146,6 +146,7 @@ const sidebars = {
               items: [
                 'java/flexboard-template',
                 'java/flexboard-create',
+                'java/flexboard-manage',
                 'java/flexboard-metric-widget',
                 'java/flexboard-widget-manage',
                 'java/flexboard-mode',
@@ -375,6 +376,7 @@ const sidebars = {
               items: [
                 'php/flexboard-template',
                 'php/flexboard-create',
+                'php/flexboard-manage',
                 'php/flexboard-metric-widget',
                 'php/flexboard-widget-manage',
                 'php/flexboard-mode',
@@ -579,6 +581,7 @@ const sidebars = {
               items: [
                 'nodejs/flexboard-template',
                 'nodejs/flexboard-create',
+                'nodejs/flexboard-manage',
                 'nodejs/flexboard-metric-widget',
                 'nodejs/flexboard-widget-manage',
                 'nodejs/flexboard-mode',
@@ -793,6 +796,7 @@ const sidebars = {
               items: [
                 'python/flexboard-template',
                 'python/flexboard-create',
+                'python/flexboard-manage',
                 'python/flexboard-metric-widget',
                 'python/flexboard-widget-manage',
                 'python/flexboard-mode',
@@ -991,6 +995,7 @@ const sidebars = {
               items: [
                 'dotnet/flexboard-template',
                 'dotnet/flexboard-create',
+                'dotnet/flexboard-manage',
                 'dotnet/flexboard-metric-widget',
                 'dotnet/flexboard-widget-manage',
                 'dotnet/flexboard-mode',
@@ -1179,6 +1184,7 @@ const sidebars = {
               items: [
                 'golang/flexboard-template',
                 'golang/flexboard-create',
+                'golang/flexboard-manage',
                 'golang/flexboard-metric-widget',
                 'golang/flexboard-widget-manage',
                 'golang/flexboard-mode',
@@ -1376,6 +1382,7 @@ const sidebars = {
               items: [
                 'postgresql/flexboard-template',
                 'postgresql/flexboard-create',
+                'postgresql/flexboard-manage',
                 'postgresql/flexboard-metric-widget',
                 'postgresql/flexboard-widget-manage',
                 'postgresql/flexboard-mode',
@@ -1512,6 +1519,7 @@ const sidebars = {
               items: [
                 'oracle/flexboard-template',
                 'oracle/flexboard-create',
+                'oracle/flexboard-manage',
                 'oracle/flexboard-metric-widget',
                 'oracle/flexboard-widget-manage',
                 'oracle/flexboard-mode',
@@ -1648,6 +1656,7 @@ const sidebars = {
               items: [
                 'mysql/flexboard-template',
                 'mysql/flexboard-create',
+                'mysql/flexboard-manage',
                 'mysql/flexboard-metric-widget',
                 'mysql/flexboard-widget-manage',
                 'mysql/flexboard-mode',
@@ -1784,6 +1793,7 @@ const sidebars = {
               items: [
                 'mssql/flexboard-template',
                 'mssql/flexboard-create',
+                'mssql/flexboard-manage',
                 'mssql/flexboard-metric-widget',
                 'mssql/flexboard-widget-manage',
                 'mssql/flexboard-mode',
@@ -1920,6 +1930,7 @@ const sidebars = {
               items: [
                 'tibero/flexboard-template',
                 'tibero/flexboard-create',
+                'tibero/flexboard-manage',
                 'tibero/flexboard-metric-widget',
                 'tibero/flexboard-widget-manage',
                 'tibero/flexboard-mode',
@@ -2056,6 +2067,7 @@ const sidebars = {
               items: [
                 'cubrid/flexboard-template',
                 'cubrid/flexboard-create',
+                'cubrid/flexboard-manage',
                 'cubrid/flexboard-metric-widget',
                 'cubrid/flexboard-widget-manage',
                 'cubrid/flexboard-mode',
@@ -2192,6 +2204,7 @@ const sidebars = {
               items: [
                 'altibase/flexboard-template',
                 'altibase/flexboard-create',
+                'altibase/flexboard-manage',
                 'altibase/flexboard-metric-widget',
                 'altibase/flexboard-widget-manage',
                 'altibase/flexboard-mode',
@@ -2328,6 +2341,7 @@ const sidebars = {
               items: [
                 'redis/flexboard-template',
                 'redis/flexboard-create',
+                'redis/flexboard-manage',
                 'redis/flexboard-metric-widget',
                 'redis/flexboard-widget-manage',
                 'redis/flexboard-mode',
@@ -2464,6 +2478,7 @@ const sidebars = {
               items: [
                 'mongodb/flexboard-template',
                 'mongodb/flexboard-create',
+                'mongodb/flexboard-manage',
                 'mongodb/flexboard-metric-widget',
                 'mongodb/flexboard-widget-manage',
                 'mongodb/flexboard-mode',
@@ -3093,6 +3108,7 @@ const sidebars = {
                   items: [
                     'amazon-ecs/flexboard-template',
                     'amazon-ecs/flexboard-create',
+                    'amazon-ecs/flexboard-manage',
                     'amazon-ecs/flexboard-metric-widget',
                     'amazon-ecs/flexboard-widget-manage',
                     'amazon-ecs/flexboard-mode',
@@ -3153,6 +3169,7 @@ const sidebars = {
                   items: [
                     'amazon-cloudwatch/flexboard-template',
                     'amazon-cloudwatch/flexboard-create',
+                    'amazon-cloudwatch/flexboard-manage',
                     'amazon-cloudwatch/flexboard-metric-widget',
                     'amazon-cloudwatch/flexboard-widget-manage',
                     'amazon-cloudwatch/flexboard-mode',
@@ -3213,6 +3230,7 @@ const sidebars = {
                   items: [
                     'azure/flexboard-template',
                     'azure/flexboard-create',
+                    'azure/flexboard-manage',
                     'azure/flexboard-metric-widget',
                     'azure/flexboard-widget-manage',
                     'azure/flexboard-mode',
@@ -3273,6 +3291,7 @@ const sidebars = {
                   items: [
                     'ncloud/flexboard-template',
                     'ncloud/flexboard-create',
+                    'ncloud/flexboard-manage',
                     'ncloud/flexboard-metric-widget',
                     'ncloud/flexboard-widget-manage',
                     'ncloud/flexboard-mode',
@@ -3333,6 +3352,7 @@ const sidebars = {
                   items: [
                     'oracle-cloud/flexboard-template',
                     'oracle-cloud/flexboard-create',
+                    'oracle-cloud/flexboard-manage',
                     'oracle-cloud/flexboard-metric-widget',
                     'oracle-cloud/flexboard-widget-manage',
                     'oracle-cloud/flexboard-mode',
@@ -3607,6 +3627,7 @@ const sidebars = {
               items: [
                 'amazon-ecs/flexboard-template',
                 'amazon-ecs/flexboard-create',
+                'amazon-ecs/flexboard-manage',
                 'amazon-ecs/flexboard-metric-widget',
                 'amazon-ecs/flexboard-widget-manage',
                 'amazon-ecs/flexboard-mode',
@@ -3669,6 +3690,7 @@ const sidebars = {
               items: [
                 'amazon-cloudwatch/flexboard-template',
                 'amazon-cloudwatch/flexboard-create',
+                'amazon-cloudwatch/flexboard-manage',
                 'amazon-cloudwatch/flexboard-metric-widget',
                 'amazon-cloudwatch/flexboard-widget-manage',
                 'amazon-cloudwatch/flexboard-mode',
@@ -3731,6 +3753,7 @@ const sidebars = {
               items: [
                 'azure/flexboard-template',
                 'azure/flexboard-create',
+                'azure/flexboard-manage',
                 'azure/flexboard-metric-widget',
                 'azure/flexboard-widget-manage',
                 'azure/flexboard-mode',
@@ -3793,6 +3816,7 @@ const sidebars = {
               items: [
                 'ncloud/flexboard-template',
                 'ncloud/flexboard-create',
+                'ncloud/flexboard-manage',
                 'ncloud/flexboard-metric-widget',
                 'ncloud/flexboard-widget-manage',
                 'ncloud/flexboard-mode',
@@ -3855,6 +3879,7 @@ const sidebars = {
               items: [
                 'oracle-cloud/flexboard-template',
                 'oracle-cloud/flexboard-create',
+                'oracle-cloud/flexboard-manage',
                 'oracle-cloud/flexboard-metric-widget',
                 'oracle-cloud/flexboard-widget-manage',
                 'oracle-cloud/flexboard-mode',
@@ -4044,6 +4069,7 @@ const sidebars = {
           items: [
             'rum/flexboard-template',
             'rum/flexboard-create',
+            'rum/flexboard-manage',
             'rum/flexboard-metric-widget',
             'rum/flexboard-widget-manage',
             'rum/flexboard-mode',
@@ -4177,6 +4203,7 @@ const sidebars = {
               items: [
                 'server/flexboard-template',
                 'server/flexboard-create',
+                'server/flexboard-manage',
                 'server/flexboard-metric-widget',
                 'server/flexboard-widget-manage',
                 'server/flexboard-mode',
@@ -4378,6 +4405,7 @@ const sidebars = {
               items: [
                 'kubernetes/flexboard-template',
                 'kubernetes/flexboard-create',
+                'kubernetes/flexboard-manage',
                 'kubernetes/flexboard-metric-widget',
                 'kubernetes/flexboard-widget-manage',
                 'kubernetes/flexboard-mode',
