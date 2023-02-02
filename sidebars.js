@@ -2549,7 +2549,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Service',
+          label: 'Service 🚀',
           collapsible: true,
           collapsed: true,
           link: {
