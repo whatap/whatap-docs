@@ -237,6 +237,10 @@ main .markdown img[alt='sc'] {
   width: fit-content;
 }
 
+main .markdown img[alt*='cht'] {
+  width: 600px;
+}
+
 main .markdown img[src*='whatap_kubernetes_create_namespace_project_popup'],
 main .markdown img[src*='whatap_kubernetes_container_map_namespace_project_list'] {
   width: 600px;
