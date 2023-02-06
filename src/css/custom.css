@@ -237,6 +237,15 @@ main .markdown img[alt='sc'] {
   width: fit-content;
 }
 
+main .markdown img[alt*='cht'] {
+  width: 600px;
+}
+
+main .markdown img[alt*='cht2'] {
+  width: 500px;
+  border: none;
+}
+
 main .markdown img[src*='whatap_kubernetes_create_namespace_project_popup'],
 main .markdown img[src*='whatap_kubernetes_container_map_namespace_project_list'] {
   width: 600px;
@@ -319,6 +328,7 @@ main .markdown span.loger {color: rgb(242, 48, 0)}
 main .markdown span.logwr {color: rgb(242, 182, 0)}
 main .markdown span.mstop {color: rgb(192, 192, 192)}
 main .markdown span.k8s-normal {color: rgb(153, 153, 153)}
+main .markdown span.snormal {color: rgb(73, 168, 71)}
 
 main .markdown div.metric table tr td:first-of-type {
   width: 30%;
