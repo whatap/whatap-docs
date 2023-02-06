@@ -23,3 +23,5 @@ npx docusaurus-prince-pdf -u http://localhost:4000/docs/reference --prince-args=
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/extensions --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-extensions.pdf --include-index
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/docs/best-practice-guides/about-apm-dashboard --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-best-practice-guides-about-apm-dashboard.pdf --include-index
+
+# npx docusaurus-prince-pdf -u http://localhost:4000/docs/best-practice-guides/about-server-dashboard --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-best-practice-guides-about-server-dashboard.pdf --include-index
