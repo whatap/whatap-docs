@@ -241,6 +241,11 @@ main .markdown img[alt*='cht'] {
   width: 600px;
 }
 
+main .markdown img[alt*='cht2'] {
+  width: 500px;
+  border: none;
+}
+
 main .markdown img[src*='whatap_kubernetes_create_namespace_project_popup'],
 main .markdown img[src*='whatap_kubernetes_container_map_namespace_project_list'] {
   width: 600px;
