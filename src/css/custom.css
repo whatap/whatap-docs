@@ -695,6 +695,25 @@ main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
   background-color: #fff;
 }
 
+main .markdown div.pattern-intro {
+  display: flex;
+}
+main .markdown div.pattern-img {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-right: 15px;
+}
+main .markdown div.pattern-img img {
+  width: auto;
+  display: block;
+}
+main .markdown div.pattern-intro div:nth-of-type(2) {
+  float: left;
+  display: block;
+  width: 50%;
+}
+
 .searchResultItemPath {
   font-size: inherit;
   color: inherit;
