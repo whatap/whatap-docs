@@ -4084,6 +4084,7 @@ const sidebars = {
           ],
         },
         'rum/metrics-intro',
+        'rum/analyze-pageload',
         {
           type: 'category',
           label: '알림 설정하기',
