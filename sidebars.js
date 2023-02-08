@@ -2676,7 +2676,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server 🚀',
+              label: 'Server',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2699,7 +2699,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Kubernetes 🚀',
+              label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
               link: {

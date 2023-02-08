@@ -83,7 +83,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [ 'wip' ]
+        ignoreFiles: [ '/wip/' ]
       }
     ],
     [
