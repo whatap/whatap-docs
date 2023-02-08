@@ -3453,6 +3453,13 @@ const sidebars = {
             'apidoc/openapi-mxql'
 ,          ]
         },
+        {
+          type: 'category',
+          label: '자주 묻는 질문',
+          items: [
+            'faq/db-faq',
+          ]
+        },
         'glossary/glossary',
       ]
     }
