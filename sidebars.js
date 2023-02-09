@@ -1914,7 +1914,7 @@ const sidebars = {
               items: [
                 'tibero/instance-list',
                 'tibero/instance-monitoring',
-                // 'tibero/multi-instance-monitoring',
+                'tibero/multi-instance-monitoring',
                 // 'tibero/slow-query',
               ],
             },
