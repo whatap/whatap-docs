@@ -2676,7 +2676,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server 🚀',
+              label: 'Server',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2699,7 +2699,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Kubernetes 🚀',
+              label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
               link: {
@@ -3453,6 +3453,13 @@ const sidebars = {
             'apidoc/openapi-mxql'
 ,          ]
         },
+        {
+          type: 'category',
+          label: '자주 묻는 질문',
+          items: [
+            'faq/db-faq',
+          ]
+        },
         'glossary/glossary',
       ]
     }
@@ -4077,6 +4084,7 @@ const sidebars = {
           ],
         },
         'rum/metrics-intro',
+        'rum/analyze-pageload',
         {
           type: 'category',
           label: '알림 설정하기',

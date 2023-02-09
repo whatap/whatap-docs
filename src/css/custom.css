@@ -307,6 +307,26 @@ main .markdown span.options {
 main .markdown .comment {
   color: #82ab34 !important;
 }
+
+main .markdown .mark {
+  width: 20px;
+  vertical-align: middle;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  white-space: normal;
+}
+main .markdown .active {
+  background-color: rgb(108, 108, 119);
+}
+main .markdown .multi {
+  background-color: rgb(116, 143, 252);
+}
 /* p.text--truncate {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -673,6 +693,25 @@ main .markdown code.Deprecate {
 }
 main .markdown img[alt*='light'], main .markdown img[alt*='dark'] {
   background-color: #fff;
+}
+
+main .markdown div.pattern-intro {
+  display: flex;
+}
+main .markdown div.pattern-img {
+  display: block;
+  float: left;
+  width: 30%;
+  margin-right: 15px;
+}
+main .markdown div.pattern-img img {
+  width: auto;
+  display: block;
+}
+main .markdown div.pattern-intro div:nth-of-type(2) {
+  float: left;
+  display: block;
+  width: 70%;
 }
 
 .searchResultItemPath {
