@@ -199,6 +199,7 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
+                'java/metrics-detect-anormal',
               ]
             },
             {
@@ -429,6 +430,7 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                'php/metrics-detect-anormal',
               ]
             },
             {
@@ -634,6 +636,7 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                'nodejs/metrics-detect-anormal',
               ]
             },
             {
@@ -849,6 +852,7 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                'python/metrics-detect-anormal',
               ]
             },
             {
@@ -1048,6 +1052,7 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                'dotnet/metrics-detect-anormal',
               ]
             },
             {
@@ -1237,6 +1242,7 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                'golang/metrics-detect-anormal',
               ]
             },
             {
@@ -1401,6 +1407,7 @@ const sidebars = {
               items: [
                 'postgresql/analysis-function',
                 'postgresql/metrics-intro',
+                'postgresql/metrics-detect-anormal',
                 'postgresql/log-viewer',
                 'postgresql/stat',
                 'postgresql/report-intro',
@@ -1538,6 +1545,7 @@ const sidebars = {
               items: [
                 'oracle/analysis-function',
                 'oracle/metrics-intro',
+                'oracle/metrics-detect-anormal',
                 'oracle/log-viewer',
                 'oracle/stat',
                 'oracle/report-intro',
@@ -1675,6 +1683,7 @@ const sidebars = {
               items: [
                 'mysql/analysis-function',
                 'mysql/metrics-intro',
+                'mysql/metrics-detect-anormal',
                 'mysql/log-viewer',
                 'mysql/stat',
                 'mysql/report-intro',
@@ -1812,6 +1821,7 @@ const sidebars = {
               items: [
                 'mssql/analysis-function',
                 'mssql/metrics-intro',
+                'mssql/metrics-detect-anormal',
                 'mssql/log-viewer',
                 'mssql/stat',
                 'mssql/report-intro',
@@ -1949,6 +1959,7 @@ const sidebars = {
               items: [
                 'tibero/analysis-function',
                 'tibero/metrics-intro',
+                'tibero/metrics-detect-anormal',
                 'tibero/log-viewer',
                 'tibero/stat',
                 'tibero/report-intro',
@@ -2086,6 +2097,7 @@ const sidebars = {
               items: [
                 'cubrid/analysis-function',
                 'cubrid/metrics-intro',
+                'cubrid/metrics-detect-anormal',
                 'cubrid/log-viewer',
                 'cubrid/stat',
                 'cubrid/report-intro',
@@ -2223,6 +2235,7 @@ const sidebars = {
               items: [
                 'altibase/analysis-function',
                 'altibase/metrics-intro',
+                'altibase/metrics-detect-anormal',
                 'altibase/log-viewer',
                 'altibase/stat',
                 'altibase/report-intro',
@@ -2360,6 +2373,7 @@ const sidebars = {
               items: [
                 'redis/analysis-function',
                 'redis/metrics-intro',
+                'redis/metrics-detect-anormal',
                 'redis/log-viewer',
                 // 'redis/stat',
                 // 'redis/report-intro',
@@ -2497,6 +2511,7 @@ const sidebars = {
               items: [
                 'mongodb/analysis-function',
                 'mongodb/metrics-intro',
+                'mongodb/metrics-detect-anormal',
                 'mongodb/log-viewer',
                 'mongodb/stat',
                 // 'mongodb/report-intro',
@@ -3641,7 +3656,19 @@ const sidebars = {
                 'amazon-ecs/flexboard-share',
               ]
             },
-            'amazon-ecs/metrics-intro',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'amazon-ecs/metrics-intro',
+              },
+              items: [
+                'amazon-ecs/metrics-detect-anormal',
+              ]
+            },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3704,7 +3731,19 @@ const sidebars = {
                 'amazon-cloudwatch/flexboard-share',
               ]
             },
-            'amazon-cloudwatch/metrics-intro',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'amazon-cloudwatch/metrics-intro',
+              },
+              items: [
+                'amazon-cloudwatch/metrics-detect-anormal',
+              ]
+            },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3767,7 +3806,19 @@ const sidebars = {
                 'azure/flexboard-share',
               ]
             },
-            'azure/metrics-intro',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'azure/metrics-intro',
+              },
+              items: [
+                'azure/metrics-detect-anormal',
+              ]
+            },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3830,7 +3881,19 @@ const sidebars = {
                 'ncloud/flexboard-share',
               ]
             },
-            'ncloud/metrics-intro',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'ncloud/metrics-intro',
+              },
+              items: [
+                'ncloud/metrics-detect-anormal',
+              ]
+            },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3893,7 +3956,19 @@ const sidebars = {
                 'oracle-cloud/flexboard-share',
               ]
             },
-            'oracle-cloud/metrics-intro',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle-cloud/metrics-intro',
+              },
+              items: [
+                'oracle-cloud/metrics-detect-anormal',
+              ]
+            },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -4229,6 +4304,7 @@ const sidebars = {
               },
               items: [
                 'server/metrics-server',
+                'server/metrics-detect-anormal',
               ]
             },
             {
@@ -4427,6 +4503,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/metrics-intro',
+                'kubernetes/metrics-detect-anormal',
                 'kubernetes/analysis-msa',
                 'kubernetes/analysis-stack',
                 'kubernetes/pod-init-perform',
