@@ -1723,6 +1723,144 @@ const sidebars = {
       ],
     }
   ],
+  mysqlrdsSidebar: [
+    {
+      type: 'category',
+      label: 'MySQL RDS 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mysql-rds/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mysql-rds/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql-rds/install-agent',
+            'mysql-rds/after-install-agent',
+            'mysql-rds/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql-rds/agent-settings'
+          },
+          items: [
+            'mysql-rds/agent-network',
+            'mysql-rds/agent-naming',
+            'mysql-rds/agent-aws',
+            'mysql-rds/agent-data',
+            // 'mysql-rds/agent-xos-settings',
+          ],
+        },
+        'mysql-rds/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/dashboard-intro'
+              },
+              items: [
+                'mysql-rds/instance-list',
+                'mysql-rds/instance-monitoring',
+                // 'mysql-rds/multi-instance-monitoring',
+                'mysql-rds/slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/flex-board',
+              },
+              items: [
+                'mysql-rds/flexboard-template',
+                'mysql-rds/flexboard-create',
+                'mysql-rds/flexboard-manage',
+                'mysql-rds/flexboard-metric-widget',
+                'mysql-rds/flexboard-widget-manage',
+                'mysql-rds/flexboard-mode',
+                'mysql-rds/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'analysis/db-analysis-report-intro'
+              // },
+              items: [
+                'mysql-rds/analysis-function',
+                'mysql-rds/metrics-intro',
+                'mysql-rds/metrics-detect-anormal',
+                'mysql-rds/log-viewer',
+                'mysql-rds/stat',
+                'mysql-rds/report-intro',
+                'mysql-rds/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/set-notice',
+              },
+              items: [
+                'mysql-rds/warning-notice',
+                'mysql-rds/metric-warning-notice',
+                'mysql-rds/set-event-detect-anomal',
+                'mysql-rds/set-receive-event',
+                'mysql-rds/set-event-history',
+                'mysql-rds/set-event-format',
+              ],
+            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   mssqlSidebar: [
     {
       type: 'category',
@@ -2920,6 +3058,12 @@ const sidebars = {
           type: 'link',
           label: 'MySQL',
           href: '../mysql/monitoring-intro',
+          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'MySQL RDS',
+          href: '../mysql-rds/monitoring-intro',
           className: "_productlink"
         },
         {
