@@ -1746,27 +1746,11 @@ const sidebars = {
           collapsed: true,
           items: [
             'mysql-rds/install-agent',
-            'mysql-rds/after-install-agent',
+            // 'mysql-rds/after-install-agent',
             'mysql-rds/troubleshooting',
           ],
         },
-        {
-          type: 'category',
-          label: '설정하기',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'mysql-rds/agent-settings'
-          },
-          items: [
-            'mysql-rds/agent-network',
-            'mysql-rds/agent-naming',
-            'mysql-rds/agent-aws',
-            'mysql-rds/agent-data',
-            // 'mysql-rds/agent-xos-settings',
-          ],
-        },
+        'mysql-rds/agent-settings',
         'mysql-rds/agent-manage',
         {
           type: 'category',
