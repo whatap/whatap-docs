@@ -4574,7 +4574,11 @@ const sidebars = {
             'log/log-server'
           ],
         },
-        'log/log-setting',
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'log/log-setting',
+        },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
