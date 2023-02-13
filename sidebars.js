@@ -3656,19 +3656,20 @@ const sidebars = {
                 'amazon-ecs/flexboard-share',
               ]
             },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'amazon-ecs/metrics-intro',
-              },
-              items: [
-                'amazon-ecs/metrics-detect-anormal',
-              ]
-            },
+            'amazon-ecs/metrics-intro',
+            // {
+            //   type: 'category',
+            //   label: '메트릭스',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'amazon-ecs/metrics-intro',
+            //   },
+            //   items: [
+            //     'amazon-ecs/metrics-detect-anormal',
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3731,19 +3732,20 @@ const sidebars = {
                 'amazon-cloudwatch/flexboard-share',
               ]
             },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'amazon-cloudwatch/metrics-intro',
-              },
-              items: [
-                'amazon-cloudwatch/metrics-detect-anormal',
-              ]
-            },
+            'amazon-cloudwatch/metrics-intro',
+            // {
+            //   type: 'category',
+            //   label: '메트릭스',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'amazon-cloudwatch/metrics-intro',
+            //   },
+            //   items: [
+            //     'amazon-cloudwatch/metrics-detect-anormal',
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3806,19 +3808,20 @@ const sidebars = {
                 'azure/flexboard-share',
               ]
             },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'azure/metrics-intro',
-              },
-              items: [
-                'azure/metrics-detect-anormal',
-              ]
-            },
+            'azure/metrics-intro',
+            // {
+            //   type: 'category',
+            //   label: '메트릭스',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'azure/metrics-intro',
+            //   },
+            //   items: [
+            //     'azure/metrics-detect-anormal',
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3881,19 +3884,20 @@ const sidebars = {
                 'ncloud/flexboard-share',
               ]
             },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'ncloud/metrics-intro',
-              },
-              items: [
-                'ncloud/metrics-detect-anormal',
-              ]
-            },
+            'ncloud/metrics-intro',
+            // {
+            //   type: 'category',
+            //   label: '메트릭스',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'ncloud/metrics-intro',
+            //   },
+            //   items: [
+            //     'ncloud/metrics-detect-anormal',
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3956,19 +3960,20 @@ const sidebars = {
                 'oracle-cloud/flexboard-share',
               ]
             },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-cloud/metrics-intro',
-              },
-              items: [
-                'oracle-cloud/metrics-detect-anormal',
-              ]
-            },
+            'oracle-cloud/metrics-intro',
+            // {
+            //   type: 'category',
+            //   label: '메트릭스',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   link: {
+            //     type: 'doc',
+            //     id: 'oracle-cloud/metrics-intro',
+            //   },
+            //   items: [
+            //     'oracle-cloud/metrics-detect-anormal',
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
