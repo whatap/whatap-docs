@@ -2617,14 +2617,15 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'PHP',
+              label: 'PHP 🚀',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2.6.0',
+                id: 'release-notes/php/php-2.6.1',
               },
               items: [
+                'release-notes/php/php-2.6.1',
                 'release-notes/php/php-2.6.0',
                 'release-notes/php/php-2.5.4',
                 'release-notes/php/php-2.5.3',
@@ -2743,13 +2744,13 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'DB 🚀',
+              label: 'DB',
               collapsible: true,
               collapsed: true,
               items: [
                 {
                   type: 'doc',
-                  label: 'DBX 🚀',
+                  label: 'DBX',
                   id: 'release-notes/db/dbx-release-notes',
                 },
                 {
