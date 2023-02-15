@@ -1403,6 +1403,21 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/metrics-intro'
+              },
+              items: [
+                'postgresql/metrics-postgresql',
+                'postgresql/metrics-chart',
+                'postgresql/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -1412,8 +1427,8 @@ const sidebars = {
               // },
               items: [
                 'postgresql/analysis-function',
-                'postgresql/metrics-intro',
-                'postgresql/metrics-detect-anormal',
+                // 'postgresql/metrics-intro',
+                // 'postgresql/metrics-detect-anormal',
                 'postgresql/log-viewer',
                 'postgresql/stat',
                 'postgresql/report-intro',
@@ -1541,6 +1556,21 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/metrics-intro'
+              },
+              items: [
+                'oracle/metrics-oracle',
+                'oracle/metrics-chart',
+                'oracle/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -1550,8 +1580,8 @@ const sidebars = {
               // },
               items: [
                 'oracle/analysis-function',
-                'oracle/metrics-intro',
-                'oracle/metrics-detect-anormal',
+                // 'oracle/metrics-intro',
+                // 'oracle/metrics-detect-anormal',
                 'oracle/log-viewer',
                 'oracle/stat',
                 'oracle/report-intro',
@@ -1679,6 +1709,21 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/metrics-intro'
+              },
+              items: [
+                'mysql/metrics-mysql',
+                'mysql/metrics-chart',
+                'mysql/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -1688,8 +1733,8 @@ const sidebars = {
               // },
               items: [
                 'mysql/analysis-function',
-                'mysql/metrics-intro',
-                'mysql/metrics-detect-anormal',
+                // 'mysql/metrics-intro',
+                // 'mysql/metrics-detect-anormal',
                 'mysql/log-viewer',
                 'mysql/stat',
                 'mysql/report-intro',
@@ -1817,6 +1862,21 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/metrics-intro'
+              },
+              items: [
+                'mssql/metrics-mssql',
+                'mssql/metrics-chart',
+                'mssql/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -1826,8 +1886,8 @@ const sidebars = {
               // },
               items: [
                 'mssql/analysis-function',
-                'mssql/metrics-intro',
-                'mssql/metrics-detect-anormal',
+                // 'mssql/metrics-intro',
+                // 'mssql/metrics-detect-anormal',
                 'mssql/log-viewer',
                 'mssql/stat',
                 'mssql/report-intro',
@@ -1955,6 +2015,20 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'tibero/metrics-intro'
+              },
+              items: [
+                'tibero/metrics-chart',
+                'tibero/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -1964,8 +2038,8 @@ const sidebars = {
               // },
               items: [
                 'tibero/analysis-function',
-                'tibero/metrics-intro',
-                'tibero/metrics-detect-anormal',
+                // 'tibero/metrics-intro',
+                // 'tibero/metrics-detect-anormal',
                 'tibero/log-viewer',
                 'tibero/stat',
                 'tibero/report-intro',
@@ -2093,6 +2167,20 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid/metrics-intro'
+              },
+              items: [
+                'cubrid/metrics-chart',
+                'cubrid/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -2102,8 +2190,8 @@ const sidebars = {
               // },
               items: [
                 'cubrid/analysis-function',
-                'cubrid/metrics-intro',
-                'cubrid/metrics-detect-anormal',
+                // 'cubrid/metrics-intro',
+                // 'cubrid/metrics-detect-anormal',
                 'cubrid/log-viewer',
                 'cubrid/stat',
                 'cubrid/report-intro',
@@ -2231,6 +2319,20 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/metrics-intro'
+              },
+              items: [
+                'altibase/metrics-chart',
+                'altibase/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -2240,8 +2342,8 @@ const sidebars = {
               // },
               items: [
                 'altibase/analysis-function',
-                'altibase/metrics-intro',
-                'altibase/metrics-detect-anormal',
+                // 'altibase/metrics-intro',
+                // 'altibase/metrics-detect-anormal',
                 'altibase/log-viewer',
                 'altibase/stat',
                 'altibase/report-intro',
@@ -2369,6 +2471,20 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'redis/metrics-intro'
+              },
+              items: [
+                'redis/metrics-chart',
+                'redis/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -2378,8 +2494,8 @@ const sidebars = {
               // },
               items: [
                 'redis/analysis-function',
-                'redis/metrics-intro',
-                'redis/metrics-detect-anormal',
+                // 'redis/metrics-intro',
+                // 'redis/metrics-detect-anormal',
                 'redis/log-viewer',
                 // 'redis/stat',
                 // 'redis/report-intro',
@@ -2507,6 +2623,20 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mongodb/metrics-intro'
+              },
+              items: [
+                'mongodb/metrics-chart',
+                'mongodb/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
@@ -2516,8 +2646,8 @@ const sidebars = {
               // },
               items: [
                 'mongodb/analysis-function',
-                'mongodb/metrics-intro',
-                'mongodb/metrics-detect-anormal',
+                // 'mongodb/metrics-intro',
+                // 'mongodb/metrics-detect-anormal',
                 'mongodb/log-viewer',
                 'mongodb/stat',
                 // 'mongodb/report-intro',
@@ -4510,13 +4640,28 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/metrics-intro'
+              },
+              items: [
+                'kubernetes/metrics-kubernetes',
+                'kubernetes/metrics-chart',
+                'kubernetes/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
               label: '분석',
               collapsible: true,
               collapsed: true,
               items: [
-                'kubernetes/metrics-intro',
-                'kubernetes/metrics-chart',
-                'kubernetes/metrics-detect-anormal',
+                // 'kubernetes/metrics-intro',
+                // 'kubernetes/metrics-chart',
+                // 'kubernetes/metrics-detect-anormal',
                 'kubernetes/analysis-msa',
                 'kubernetes/analysis-stack',
                 'kubernetes/pod-init-perform',
