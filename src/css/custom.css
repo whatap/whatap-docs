@@ -357,7 +357,9 @@ main .markdown div.metric table tr td:first-of-type {
 main .markdown div.c4-avg table tr td {
   width: 25%;
 }
-
+main .markdown div.server-op table {
+  font-size: .9em;
+}
 main .markdown div.db-support-type table {
   font-size: .8em;
 }
