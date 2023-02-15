@@ -314,7 +314,7 @@ main .markdown .mark {
   height: 20px;
   border-radius: 50%;
   font-size: 15px;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   line-height: 20px;
   overflow: hidden;
   text-align: center;
@@ -326,6 +326,11 @@ main .markdown .active {
 }
 main .markdown .multi {
   background-color: rgb(116, 143, 252);
+}
+main .markdown .instance {
+  background-color: none;
+  border: 1px solid #296cf2;
+  color: #296cf2;
 }
 /* p.text--truncate {
   -webkit-line-clamp: 3;
