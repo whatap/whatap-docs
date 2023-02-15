@@ -232,7 +232,7 @@ main .markdown img[alt*='Windows'] {
   filter: invert(100%);
 }
 
-main .markdown img[alt='sc'] {
+main .markdown img[alt*='sc'] {
   border: none;
   width: fit-content;
 }
