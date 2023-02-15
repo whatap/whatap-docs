@@ -199,6 +199,7 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
+                'java/metrics-chart',
                 'java/metrics-detect-anormal',
               ]
             },
@@ -430,6 +431,7 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                'php/metrics-chart',
                 'php/metrics-detect-anormal',
               ]
             },
@@ -636,6 +638,7 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                'nodejs/metrics-chart',
                 'nodejs/metrics-detect-anormal',
               ]
             },
@@ -852,6 +855,7 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                'python/metrics-chart',
                 'python/metrics-detect-anormal',
               ]
             },
@@ -1052,6 +1056,7 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                'dotnet/metrics-chart',
                 'dotnet/metrics-detect-anormal',
               ]
             },
@@ -1242,6 +1247,7 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                'golang/metrics-chart',
                 'golang/metrics-detect-anormal',
               ]
             },
@@ -4309,6 +4315,7 @@ const sidebars = {
               },
               items: [
                 'server/metrics-server',
+                'server/metrics-chart',
                 'server/metrics-detect-anormal',
               ]
             },
@@ -4508,6 +4515,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/metrics-intro',
+                'kubernetes/metrics-chart',
                 'kubernetes/metrics-detect-anormal',
                 'kubernetes/analysis-msa',
                 'kubernetes/analysis-stack',
@@ -4574,7 +4582,11 @@ const sidebars = {
             'log/log-server'
           ],
         },
-        'log/log-setting',
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'log/log-setting',
+        },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',

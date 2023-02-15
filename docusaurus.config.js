@@ -76,7 +76,7 @@ const config = {
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        hashed: true,
+        hashed: false,
         language: [ 'ko' ],
         indexBlog: false,
         docsRouteBasePath: '/',

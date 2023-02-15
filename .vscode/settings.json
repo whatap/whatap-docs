@@ -24,6 +24,10 @@
         {
             "filePath": "docs/index.mdx",
             "group": "Default"
+        },
+        {
+            "filePath": "pdf",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"
