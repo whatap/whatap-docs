@@ -1770,8 +1770,8 @@ const sidebars = {
               items: [
                 'mysql-rds/instance-list',
                 'mysql-rds/instance-monitoring',
-                // 'mysql-rds/multi-instance-monitoring',
-                'mysql-rds/slow-query',
+                'mysql-rds/multi-instance-monitoring',
+                // 'mysql-rds/slow-query',
               ],
             },
             {
