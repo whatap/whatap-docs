@@ -320,6 +320,8 @@ main .markdown .mark {
   text-align: center;
   display: inline-block;
   white-space: normal;
+  border-width: 1px;
+  border-style: solid;
 }
 main .markdown .active {
   background-color: rgb(108, 108, 119);
@@ -328,9 +330,14 @@ main .markdown .multi {
   background-color: rgb(116, 143, 252);
 }
 main .markdown .instance {
-  background-color: none;
+  background-color: #fff;
   border: 1px solid #296cf2;
   color: #296cf2;
+}
+main .markdown .master {
+  background-color: #296cf2;
+  border: 1px solid #296cf2;
+  color: #fff;
 }
 /* p.text--truncate {
   -webkit-line-clamp: 3;
