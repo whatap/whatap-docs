@@ -362,7 +362,11 @@ main .markdown span.mstop {color: rgb(192, 192, 192)}
 main .markdown span.k8s-normal {color: rgb(153, 153, 153)}
 main .markdown span.snormal {color: rgb(73, 168, 71)}
 
-main .markdown div.metric table tr td:first-of-type {
+main .markdown div.db-metric table tr td code {
+  word-break: break-all;
+}
+
+main .markdown div.metric table tr td:first-of-type, main .markdown div.db-metric table tr td:first-of-type {
   width: 30%;
 }
 
