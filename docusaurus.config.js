@@ -76,10 +76,11 @@ const config = {
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        hashed: false,
+        hashed: true,
         language: [ 'ko' ],
         indexBlog: false,
         docsRouteBasePath: '/',
+        removeDefaultStemmer: false,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
