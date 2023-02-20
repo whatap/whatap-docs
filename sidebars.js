@@ -1793,24 +1793,40 @@ const sidebars = {
                 'mysql-rds/flexboard-share',
               ],
             },
+            'mysql-rds/analysis-function',
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/metrics-intro'
+              },
+              items: [
+                'mysql-rds/metrics-data-list',
+                'mysql-rds/metrics-chart',
+                'mysql-rds/metrics-detect-anormal',
+                // 'mysql-rds/log-viewer',
+                // 'mysql-rds/stat',
+                // 'mysql-rds/report-intro',
+                // 'mysql-rds/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               // link: {
               //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
+              //   id: 'mysql/stat'
               // },
               items: [
-                'mysql-rds/analysis-function',
-                'mysql-rds/metrics-intro',
-                'mysql-rds/metrics-detect-anormal',
-                'mysql-rds/log-viewer',
                 'mysql-rds/stat',
                 'mysql-rds/report-intro',
                 'mysql-rds/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
