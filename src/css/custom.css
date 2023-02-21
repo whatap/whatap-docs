@@ -314,18 +314,30 @@ main .markdown .mark {
   height: 20px;
   border-radius: 50%;
   font-size: 15px;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   line-height: 20px;
   overflow: hidden;
   text-align: center;
   display: inline-block;
   white-space: normal;
+  border-width: 1px;
+  border-style: solid;
 }
 main .markdown .active {
   background-color: rgb(108, 108, 119);
 }
 main .markdown .multi {
   background-color: rgb(116, 143, 252);
+}
+main .markdown .instance {
+  background-color: #fff;
+  border: 1px solid #296cf2;
+  color: #296cf2;
+}
+main .markdown .master {
+  background-color: #296cf2;
+  border: 1px solid #296cf2;
+  color: #fff;
 }
 /* p.text--truncate {
   -webkit-line-clamp: 3;
@@ -350,14 +362,20 @@ main .markdown span.mstop {color: rgb(192, 192, 192)}
 main .markdown span.k8s-normal {color: rgb(153, 153, 153)}
 main .markdown span.snormal {color: rgb(73, 168, 71)}
 
-main .markdown div.metric table tr td:first-of-type {
+main .markdown div.db-metric table tr td code {
+  word-break: break-all;
+}
+
+main .markdown div.metric table tr td:first-of-type, main .markdown div.db-metric table tr td:first-of-type {
   width: 30%;
 }
 
 main .markdown div.c4-avg table tr td {
   width: 25%;
 }
-
+main .markdown div.server-op table {
+  font-size: .9em;
+}
 main .markdown div.db-support-type table {
   font-size: .8em;
 }

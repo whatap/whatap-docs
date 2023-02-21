@@ -76,10 +76,11 @@ const config = {
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        hashed: false,
+        hashed: true,
         language: [ 'ko' ],
         indexBlog: false,
         docsRouteBasePath: '/',
+        removeDefaultStemmer: false,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
@@ -239,6 +240,11 @@ const config = {
                 type: 'doc',
                 docId: 'mysql/monitoring-intro',
                 label: 'MySQL',
+              },
+              {
+                type: 'doc',
+                docId: 'mysql-rds/monitoring-intro',
+                label: 'MySQL RDS',
               },
               {
                 type: 'doc',
