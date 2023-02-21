@@ -33,6 +33,7 @@ const config = {
     // require.resolve('./static/js/channel_ko.js')
   ],
   plugins: [
+    [ 'docusaurus-plugin-sass' ],
     [
       '@docusaurus/plugin-client-redirects',
       {
