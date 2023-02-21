@@ -84,7 +84,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/],
+        ignoreFiles: [/wip/, /on-prem/, /mysql-rds/],
       }
     ],
     [
@@ -125,6 +125,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined',
+          exclude: ['mysql-rds/*.{md,mdx}'],
             // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
         },
         blog: false,
@@ -241,11 +242,11 @@ const config = {
                 docId: 'mysql/monitoring-intro',
                 label: 'MySQL',
               },
-              {
-                type: 'doc',
-                docId: 'mysql-rds/monitoring-intro',
-                label: 'MySQL RDS',
-              },
+              // {
+              //   type: 'doc',
+              //   docId: 'mysql-rds/monitoring-intro',
+              //   label: 'MySQL RDS',
+              // },
               {
                 type: 'doc',
                 docId: 'mssql/monitoring-intro',
