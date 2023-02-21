@@ -1,0 +1,50 @@
+/* noto-sans-kr-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/noto-sans-kr-v27-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/noto-sans-kr-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/noto-sans-kr-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/noto-sans-kr-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/noto-sans-v27-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/noto-sans-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/noto-sans-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/noto-sans-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/noto-sans-v27-latin-regular.svg#NotoSans') format('svg'); /* Legacy iOS */
+}
+/* noto-emoji-regular - emoji */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/noto-emoji-v34-emoji-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/noto-emoji-v34-emoji-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/noto-emoji-v34-emoji-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/noto-emoji-v34-emoji-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/noto-emoji-v34-emoji-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/noto-emoji-v34-emoji-regular.svg#NotoEmoji') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/noto-sans-mono-v21-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/noto-sans-mono-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/noto-sans-mono-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/noto-sans-mono-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/noto-sans-mono-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/noto-sans-mono-v21-latin-regular.svg#NotoSansMono') format('svg'); /* Legacy iOS */
+}

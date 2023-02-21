@@ -33,7 +33,7 @@ const config = {
     // require.resolve('./static/js/channel_ko.js')
   ],
   plugins: [
-    [ 'docusaurus-plugin-sass' ],
+    [ 'docusaurus-plugin-sass', {} ],
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -130,7 +130,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
         sitemap: {
           changefreq: 'always',
@@ -161,7 +161,7 @@ const config = {
         }
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
