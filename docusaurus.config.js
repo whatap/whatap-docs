@@ -126,6 +126,7 @@ const config = {
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined',
             // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
+          exclude: [ 'mysql-rds/*.mdx' ],
         },
         blog: false,
         theme: {
@@ -399,6 +400,13 @@ const config = {
             docId: 'mysql/monitoring-intro',
             position: "left",
             label: 'MySQL 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'mysql-rds/monitoring-intro',
+            position: "left",
+            label: 'MySQL RDS 모니터링',
             className: 'hidden',
           },
           {
