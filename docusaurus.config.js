@@ -84,7 +84,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /mysql-rds/],
+        ignoreFiles: [/wip/, /on-prem/],
       }
     ],
     [
@@ -394,13 +394,6 @@ const config = {
             docId: 'mysql/monitoring-intro',
             position: "left",
             label: 'MySQL 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'mysql-rds/monitoring-intro',
-            position: "left",
-            label: 'MySQL RDS 모니터링',
             className: 'hidden',
           },
           {
