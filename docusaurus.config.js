@@ -243,6 +243,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'mysql-rds/monitoring-intro',
+                label: 'MySQL RDS',
+              },
+              {
+                type: 'doc',
                 docId: 'mssql/monitoring-intro',
                 label: 'MS SQL Server',
               },
