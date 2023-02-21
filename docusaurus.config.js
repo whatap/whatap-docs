@@ -125,7 +125,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined',
-          exclude: ['mysql-rds/*.mdx'],
             // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
         },
         blog: false,
