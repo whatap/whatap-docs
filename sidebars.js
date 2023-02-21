@@ -2966,14 +2966,15 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server',
+              label: 'Server 🚀',
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2.3.1',
+                id: 'release-notes/server/server-2.3.2',
               },
               items: [
+                'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
                 'release-notes/server/server-2.2.9',
@@ -2983,7 +2984,6 @@ const sidebars = {
                 'release-notes/server/server-2.2.5',
                 'release-notes/server/server-2.2.4',
                 'release-notes/server/server-2.2.3',
-                'release-notes/server/server-2.2.2',
                 'release-notes/server/server-previous',
               ],
             },
