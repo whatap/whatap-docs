@@ -420,13 +420,11 @@ main {
     }
     > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])) {
       margin: 20px 0;
+      padding: 0;
     }
     p {
       margin: 8px 0;
       padding: 8px 0;
-      &:first-of-type {
-        padding-top:0;
-      }
       div {
         display: inline;
       }
@@ -492,6 +490,7 @@ main {
         }
         p {
           margin: 0;
+          padding: 0;
           // display: inline-block;
           &:last-of-type:not(:only-of-type) {
             margin-bottom: 12px;
@@ -517,6 +516,7 @@ main {
         margin: 8px 0;
         p {
           margin: 0;
+          padding: 0;
         }
         p + p {
           margin: 8px 0;
@@ -576,6 +576,10 @@ main {
         li:last-of-type {
           margin-bottom: 0;
         }
+      }
+      p:first-of-type {
+        padding: 0;
+        margin-top: 0;
       }
     }
     .alert--secondary, .alert--info {
