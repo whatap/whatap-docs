@@ -402,13 +402,13 @@ const config = {
             label: 'MySQL 모니터링',
             className: 'hidden',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'mysql-rds/monitoring-intro',
-          //   position: "left",
-          //   label: 'MySQL RDS 모니터링',
-          //   className: 'hidden',
-          // },
+          {
+            type: 'doc',
+            docId: 'mysql-rds/monitoring-intro',
+            position: "left",
+            label: 'MySQL RDS 모니터링',
+            className: 'hidden',
+          },
           {
             type: 'doc',
             docId: 'mssql/monitoring-intro',
