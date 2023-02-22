@@ -117,16 +117,16 @@ const config = {
   presets: [
     [
       '@docusaurus/preset-classic',
-      ({
+      {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [rehypeTableMerge],
-          editUrl: 'undefined',
-          // exclude: [ 'mysql-rds/*.mdx' ],
-          // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
+          editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
+          include: [ '**/*.mdx' ],
+          exclude: [ 'mysql-rds/*.mdx' ],
         },
         blog: false,
         theme: {
@@ -138,7 +138,7 @@ const config = {
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
         }
-      }),
+      },
     ],
   ],
   themeConfig:
@@ -402,13 +402,13 @@ const config = {
             label: 'MySQL 모니터링',
             className: 'hidden',
           },
-          {
-            type: 'doc',
-            docId: 'mysql-rds/monitoring-intro',
-            position: "left",
-            label: 'MySQL RDS 모니터링',
-            className: 'hidden',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'mysql-rds/monitoring-intro',
+          //   position: "left",
+          //   label: 'MySQL RDS 모니터링',
+          //   className: 'hidden',
+          // },
           {
             type: 'doc',
             docId: 'mssql/monitoring-intro',

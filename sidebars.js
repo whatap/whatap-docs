@@ -1774,144 +1774,144 @@ const sidebars = {
       ],
     }
   ],
-  mysqlrdsSidebar: [
-    {
-      type: 'category',
-      label: 'MySQL RDS 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'mysql-rds/monitoring-intro'
-      },
-      items: [
-        {
-          type: 'doc',
-          label: '지원 환경',
-          id: 'mysql-rds/monitoring-support',
-        },
-        {
-          type: 'category',
-          label: '설치하기',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            'mysql-rds/install-agent',
-            // 'mysql-rds/after-install-agent',
-            'mysql-rds/troubleshooting',
-          ],
-        },
-        'mysql-rds/agent-settings',
-        'mysql-rds/agent-manage',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql-rds/dashboard-intro'
-              },
-              items: [
-                'mysql-rds/instance-list',
-                'mysql-rds/instance-monitoring',
-                'mysql-rds/multi-instance-monitoring',
-                // 'mysql-rds/slow-query',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql-rds/flex-board',
-              },
-              items: [
-                'mysql-rds/flexboard-template',
-                'mysql-rds/flexboard-create',
-                'mysql-rds/flexboard-manage',
-                'mysql-rds/flexboard-metric-widget',
-                'mysql-rds/flexboard-widget-manage',
-                'mysql-rds/flexboard-mode',
-                'mysql-rds/flexboard-share',
-              ],
-            },
-            'mysql-rds/analysis-function',
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql-rds/metrics-intro'
-              },
-              items: [
-                'mysql-rds/metrics-data-list',
-                'mysql-rds/metrics-chart',
-                'mysql-rds/metrics-detect-anormal',
-                // 'mysql-rds/log-viewer',
-                // 'mysql-rds/stat',
-                // 'mysql-rds/report-intro',
-                // 'mysql-rds/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'mysql/stat'
-              // },
-              items: [
-                'mysql-rds/stat',
-                'mysql-rds/report-intro',
-                'mysql-rds/integrated-report',
-              ],
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql-rds/set-notice',
-              },
-              items: [
-                'mysql-rds/warning-notice',
-                'mysql-rds/metric-warning-notice',
-                'mysql-rds/set-event-detect-anomal',
-                'mysql-rds/set-receive-event',
-                'mysql-rds/set-event-history',
-                'mysql-rds/set-event-format',
-              ],
-            },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
-          ]
-        }
-      ],
-    }
-  ],
+  // mysqlrdsSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: 'MySQL RDS 모니터링',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     link: {
+  //       type: 'doc',
+  //       id: 'mysql-rds/monitoring-intro'
+  //     },
+  //     items: [
+  //       {
+  //         type: 'doc',
+  //         label: '지원 환경',
+  //         id: 'mysql-rds/monitoring-support',
+  //       },
+  //       {
+  //         type: 'category',
+  //         label: '설치하기',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         items: [
+  //           'mysql-rds/install-agent',
+  //           // 'mysql-rds/after-install-agent',
+  //           'mysql-rds/troubleshooting',
+  //         ],
+  //       },
+  //       'mysql-rds/agent-settings',
+  //       'mysql-rds/agent-manage',
+  //       {
+  //         type: 'category',
+  //         label: '주요 메뉴 알아보기',
+  //         collapsible: true,
+  //         collapsed: false,
+  //         items: [
+  //           {
+  //             type: 'category',
+  //             label: '대시보드',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'mysql-rds/dashboard-intro'
+  //             },
+  //             items: [
+  //               'mysql-rds/instance-list',
+  //               'mysql-rds/instance-monitoring',
+  //               'mysql-rds/multi-instance-monitoring',
+  //               // 'mysql-rds/slow-query',
+  //             ],
+  //           },
+  //           {
+  //             type: 'category',
+  //             label: 'Flex 보드',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'mysql-rds/flex-board',
+  //             },
+  //             items: [
+  //               'mysql-rds/flexboard-template',
+  //               'mysql-rds/flexboard-create',
+  //               'mysql-rds/flexboard-manage',
+  //               'mysql-rds/flexboard-metric-widget',
+  //               'mysql-rds/flexboard-widget-manage',
+  //               'mysql-rds/flexboard-mode',
+  //               'mysql-rds/flexboard-share',
+  //             ],
+  //           },
+  //           'mysql-rds/analysis-function',
+  //           {
+  //             type: 'category',
+  //             label: '메트릭스',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'mysql-rds/metrics-intro'
+  //             },
+  //             items: [
+  //               'mysql-rds/metrics-data-list',
+  //               'mysql-rds/metrics-chart',
+  //               'mysql-rds/metrics-detect-anormal',
+  //               // 'mysql-rds/log-viewer',
+  //               // 'mysql-rds/stat',
+  //               // 'mysql-rds/report-intro',
+  //               // 'mysql-rds/integrated-report',
+  //             ]
+  //           },
+  //           {
+  //             type: 'category',
+  //             label: '통계/보고서',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             // link: {
+  //             //   type: 'doc',
+  //             //   id: 'mysql/stat'
+  //             // },
+  //             items: [
+  //               'mysql-rds/stat',
+  //               'mysql-rds/report-intro',
+  //               'mysql-rds/integrated-report',
+  //             ],
+  //           },
+  //           {
+  //             type: 'category',
+  //             label: '알림 설정하기',
+  //             collapsible: true,
+  //             collapsed: true,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'mysql-rds/set-notice',
+  //             },
+  //             items: [
+  //               'mysql-rds/warning-notice',
+  //               'mysql-rds/metric-warning-notice',
+  //               'mysql-rds/set-event-detect-anomal',
+  //               'mysql-rds/set-receive-event',
+  //               'mysql-rds/set-event-history',
+  //               'mysql-rds/set-event-format',
+  //             ],
+  //           },
+  //           // {
+  //           //   type: 'doc',
+  //           //   label: 'Log 모니터링',
+  //           //   id: 'log/introduction'
+  //           // },
+  //           {
+  //             type: 'link',
+  //             label: 'Open API',
+  //             href: '/apidoc/openapi-intro'
+  //           }
+  //         ]
+  //       }
+  //     ],
+  //   }
+  // ],
   mssqlSidebar: [
     {
       type: 'category',
