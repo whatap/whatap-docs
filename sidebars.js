@@ -2843,10 +2843,10 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1.96.0',
+            id: 'release-notes/service/service-1.94.0',
           },
           items: [
-            'release-notes/service/service-1.96.0',
+            // 'release-notes/service/service-1.96.0',
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
             'release-notes/service/service-1.90.0',
