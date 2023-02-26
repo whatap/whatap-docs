@@ -1,6 +1,7 @@
 @import url(fonts.css);
 
 :root {
+  --doc-sidebar-width: 220px !important;
   --ifm-color-primary: #296cf2;
   --ifm-color-primary-dark: #255fd3;
   --ifm-color-primary-darker: #1d4aa3;
@@ -20,8 +21,9 @@
   --ifm-h4-font-size: 1.25rem;
   --ifm-h5-font-size: 1.0rem;
   --ifm-body-small-size: 0.875rem;
+  --ifm-body-breacrums-size: 12px;
   --ifm-code-font-size: 85%;
-  --ifm-heading-font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Emoji';
+  // --ifm-heading-font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Emoji';
   --ifm-heading-font-weight: bold;
   --ifm-font-family-monospace: 'Noto Sans Coptic';
   --ifm-font-color-base: #222222;
@@ -37,10 +39,18 @@
   --ifm-alert-shadow: 0;
   --ifm-alert-background: #F5F7F9;
   --ifm-navbar-height: 76px;
+  --ifm-breadcrums-arrow-color: #979797;
+  --ifm-breadcrumb-border-radius: 12px;
+  --ifm-breadcrumb-color-active: #326DE6;
+  --ifm-navbar-search-input-color: #969696;
+  --ifm-navbar-search-input-background-color: #fff;
+  --ifm-navbar-search-input-placeholder-color: #666666;
+  --ifm-menu-color: #000000;
 }
 
 // 다크모드
 [data-theme='dark'] {
+  --ifm-menu-color: #dadde1;
   --ifm-color-primary: #3ea6ff;
   --ifm-color-primary-dark: #378fdc;
   --ifm-color-primary-darker: #2e77b7;
@@ -59,11 +69,11 @@
 }
 
 html {
-  font-family: 'Noto Sans', 'Noto Sans KR'; //'Noto Emoji'
   line-height: 1.5;
 }
 html[lang='ko'] {
   word-wrap: keep-all;
+  font-family: 'Noto Sans KR'; //'Noto Emoji'
 }
 
 * {
@@ -72,10 +82,38 @@ html[lang='ko'] {
 }
 
 // UI
+.hold-menu {
+  padding: 12px 0;
+  margin: 0 8px;
+  border-bottom: 1px solid #f0f0f0;
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    li {
+      font-size: var(--ifm-font-size-base);
+      padding: 3px 8px;
+      &:last-of-type {
+        margin-top: 4px;
+      }
+      a {
+        color: var(--ifm-menu-color);
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+      }
+      a.ext {
+        display: inline-block;
+        background: url('img/external-link.svg') no-repeat top 6px right 0;
+      }
+    }
+  }
+}
 .navbar {
   padding: 24px 16px;
   .navbar__inner {
-    align-items: baseline;
+    align-items: center;
+    flex-wrap: inherit;
   }
 }
 .navbar__brand {
@@ -98,9 +136,48 @@ html[lang='ko'] {
     columns:  2;
     -webkit-columns: 2;
     -moz-columns: 2;
+    column-gap: 8px;
+    padding: 12px 8px;
+    // visibility: visible;
+    // opacity: 1;
     li {
       display: grid;
+      margin-bottom: 4px;
+      color: #333333;
+      font-size: var(--ifm-body-small-size);
+      font-weight: normal;
+      &:nth-of-type(13), &:last-of-type() {
+        margin-bottom: 0px;
+      }
+      a {
+        width: 148px;
+        padding: 2px 8px;
+        margin: 0;
+        &:hover {
+          background: #efefef;
+          color: inherit;
+          font-weight: normal;
+          border-radius: 4px;
+        }
+      }
+      a.dropdown__link--active {
+        font-weight: bold;
+        background: #ebf0fd;
+        border-radius: 4px;
+      }
     }
+    .narrow {
+      letter-spacing: -0.06rem;
+    }
+  }
+}
+.navbar__search-input {
+  background: #f2f2f2;
+  border-radius: 2px;
+  padding-left: 8px;
+  font-family: "Noto Sans KR", "Noto Sans";
+  &:focus {
+    outline: 2px solid var(--main-osd-color);
   }
 }
 .navbar__items {
@@ -110,6 +187,19 @@ html[lang='ko'] {
   .navbar__link {
     font-weight: normal;
   }
+}
+.dropdown > .navbar__link:after {
+  border-color: #757575;
+  border-style: solid;
+  border-width: 0 0.1em 0.1em 0;
+  content: '';
+  display: inline-block;
+  margin-left: 0.3em;
+  position: relative;
+  top: -3px;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
 }
 .menu__link--active, .navbar__link--active {
   color: var(--main-osd-color);
@@ -214,6 +304,9 @@ html[lang='ko'] {
 div[class*='dataset'] span[class*='hitPath'] {
   color: #00a400;
 }
+[data-theme='dark'] .themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module {
+  filter: invert(100%);
+}
 [data-theme='dark'] div[class*='dataset'] span[class*='hitPath'] {
   font-weight: 700;
   color: #00FFFF;
@@ -228,6 +321,27 @@ code {
 
 // document
 main {
+  .breadcrumbsContainer_src-theme-DocBreadcrumbs-styles-module {
+    margin-bottom: 16px;
+  }
+  ul.breadcrumbs {
+    li.breadcrumbs__item {
+      a.breadcrumbs__link {
+        padding: 2px 6px;
+        font-size: var(--ifm-body-breacrums-size);
+        &:first-of-type {
+          padding-left: 2px;
+          padding-right: 2px;
+        }
+      }
+      &:not(:last-child):after {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 1px;
+        opacity: 1;
+      }
+    }
+  }
   .markdown {
     // 마크다운 문서 내 css
     h1 {
@@ -237,6 +351,9 @@ main {
       code {
         font-size: inherit;
       }
+    }
+    hr + h2, hr + h3 {
+      padding: 0;
     }
     h2, h3 {
       margin-top: 0;
@@ -1021,7 +1138,16 @@ main {
     }
   }
 }
-
+@media (max-width: 576px) {
+  .navbar__search-input {
+    background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+    padding-left: 35px;
+    // padding-right: 30px;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
 @media (max-width: 559px) and (max-width: 460px) {
   main {
     .markdown {

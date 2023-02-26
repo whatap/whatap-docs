@@ -279,6 +279,7 @@ const config = {
                 type: 'doc',
                 docId: 'amazon-cloudwatch/install-agent',
                 label: 'Amazon CloudWatch',
+                className: 'narrow',
               },
               {
                 type: 'doc',
@@ -294,11 +295,13 @@ const config = {
                 type: 'doc',
                 docId: 'ncloud/install-agent',
                 label: 'Naver Cloud Monitoring',
+                className: 'narrow',
               },
               {
                 type: 'doc',
                 docId: 'oracle-cloud/install-agent',
                 label: 'Oracle Cloud Monitor',
+                className: 'narrow',
               },
               {
                 type: 'doc',
