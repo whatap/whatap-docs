@@ -3963,9 +3963,9 @@ const sidebars = {
                 id: 'amazon-ecs/set-notice',
               },
               items: [
-                'amazon-ecs/warning-and-history',
                 'amazon-ecs/metric-warning-notice',
                 'amazon-ecs/set-receive-event',
+                'amazon-ecs/set-event-history',
               ]
             },
           ],
@@ -4040,9 +4040,9 @@ const sidebars = {
                 id: 'amazon-cloudwatch/set-notice',
               },
               items: [
-                'amazon-cloudwatch/warning-and-history',
                 'amazon-cloudwatch/metric-warning-notice',
                 'amazon-cloudwatch/set-receive-event',
+                'amazon-cloudwatch/set-event-history',
               ]
             },
           ],
@@ -4117,9 +4117,9 @@ const sidebars = {
                 id: 'azure/set-notice',
               },
               items: [
-                'azure/warning-and-history',
                 'azure/metric-warning-notice',
                 'azure/set-receive-event',
+                'azure/set-event-history',
               ]
             },
           ],
@@ -4194,9 +4194,9 @@ const sidebars = {
                 id: 'ncloud/set-notice',
               },
               items: [
-                'ncloud/warning-and-history',
                 'ncloud/metric-warning-notice',
                 'ncloud/set-receive-event',
+                'ncloud/set-event-history',
               ]
             },
           ],
@@ -4271,9 +4271,9 @@ const sidebars = {
                 id: 'oracle-cloud/set-notice',
               },
               items: [
-                'oracle-cloud/warning-and-history',
                 'oracle-cloud/metric-warning-notice',
                 'oracle-cloud/set-receive-event',
+                'oracle-cloud/set-event-history',
               ]
             },
           ],
