@@ -28,6 +28,10 @@
         {
             "filePath": "pdf",
             "group": "Default"
+        },
+        {
+            "filePath": "src/css/custom.scss",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"

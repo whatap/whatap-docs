@@ -24,7 +24,7 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
       )}>
       <div className='hold-menu'>
         <ul>
-          <li><a href='/'>
+          <li><a href='/' className='home'>
             {
               translate({
                 id: "docs_Name",
