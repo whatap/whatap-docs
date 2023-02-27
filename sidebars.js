@@ -4882,7 +4882,7 @@ const sidebars = {
           type: 'category',
           label: '적용하기',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'log/log-function',
