@@ -2885,7 +2885,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'PHP 🚀',
+              label: 'PHP',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2971,9 +2971,10 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2.3.2',
+                id: 'release-notes/server/server-2.3.3',
               },
               items: [
+                'release-notes/server/server-2.3.3',
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
@@ -2983,7 +2984,6 @@ const sidebars = {
                 'release-notes/server/server-2.2.6',
                 'release-notes/server/server-2.2.5',
                 'release-notes/server/server-2.2.4',
-                'release-notes/server/server-2.2.3',
                 'release-notes/server/server-previous',
               ],
             },
