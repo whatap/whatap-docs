@@ -27,6 +27,7 @@
   --ifm-heading-font-weight: bold;
   --ifm-font-family-monospace: 'Noto Sans Coptic';
   --ifm-font-color-base: #222222;
+  --ifm-font-color-doc-card: #000000;
   --ifm-font-code-color: #4c4c4c;
   --shortcut-list-color: #222222;
   --ifm-safe-color: #00b543;
@@ -52,6 +53,7 @@
   --ifm-global-shadow-lw: 0;
   --ifm-pagination-sub-label: #757575;
   --ifm-color-emphasis-300: #d3d3d3;
+  --ifm-active-menu-color: #efefef;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -70,11 +72,13 @@
   --main-osd-color: #3ea6ff;
   --ifm-h2-font-size: 1.1rem;
   --ifm-font-color-base: #f0f0f0;
+  --ifm-font-color-doc-card: #f0f0f0;
   --shortcut-list-color: #f0f0f0;
   --ifm-alert-background: #444444;
   --ifm-font-code-color: #f0f0f0;
   --ifm-sidebar-font-color: #f0f0f0;
   --ifm-pagination-sub-label: #f0f0f0;
+  --ifm-active-menu-color: #636363;
 }
 
 html {
@@ -185,7 +189,7 @@ html[lang='ko'] {
         padding: 2px 8px;
         margin: 0;
         &:hover {
-          background: #efefef;
+          background: var(--ifm-active-menu-color);
           color: inherit;
           font-weight: normal;
           border-radius: 4px;
@@ -236,6 +240,9 @@ html[lang='ko'] {
   color: var(--main-osd-color);
   font-weight: 700;
 }
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--ifm-active-menu-color);
+}
 .menu__list {
   ._productlink {
     a::after {
@@ -263,7 +270,7 @@ html[lang='ko'] {
       padding: 3px 8px;
       line-height: 1.5;
       &:hover {
-        background: #efefef;
+        background: var(--ifm-active-menu-color);
       }
     }
     hr.distnq {
@@ -289,7 +296,13 @@ html[lang='ko'] {
   margin-left: 6px;
 }
 .menu__list-item-collapsible:hover {
-  background: none;
+  background: var(--ifm-active-menu-color);
+}
+.menu__list-item-collapsible--active {
+  background: var(--ifm-active-menu-color);
+}
+.theme-doc-sidebar-item-category-level-1:last-of-type{
+  border-bottom: none;
 }
 .theme-doc-sidebar-item-category-level-1 {
   border-bottom: 1px solid #f0f0f0;
@@ -331,6 +344,7 @@ details.feedback[open] summary {
   display: block;
   width: 100%;
   padding: 8px 20px;
+  cursor: pointer;
   summary {
     background: url('img/ic-arrow-down.svg') no-repeat right 0px;
     &::marker {
@@ -469,6 +483,9 @@ div[class*='dataset'] span[class*='hitPath'] {
 [data-theme='dark'] .themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module {
   filter: invert(100%);
 }
+[data-theme='dark'] .menu__link:hover {
+  color: #333333;
+}
 [data-theme='dark'] div[class*='dataset'] span[class*='hitPath'] {
   font-weight: bold;
   color: #00FFFF;
@@ -576,7 +593,8 @@ main {
       a {
         border-radius: 4px;
         text-decoration: none;
-        color: #000000;
+        color: var(--ifm-font-color-doc-card);
+        border-color: var(--ifm-font-color-doc-card);
         h2 {
           padding: 0 0 6px 0;
           line-height: 1.5;
@@ -1370,6 +1388,13 @@ main {
   .markdown {
     img[alt*='Windows'] {
       filter: invert(100%);
+    }
+    .margin-bottom--lg {
+      a {
+        h2::before {
+          filter: invert(100);
+        }
+      }
     }
   }
   .feedback {

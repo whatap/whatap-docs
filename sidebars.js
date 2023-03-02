@@ -2838,15 +2838,21 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Service 🚀',
+          label: 'Service',
           collapsible: true,
           collapsed: true,
+          className: 'new',
           link: {
             type: 'doc',
             id: 'release-notes/service/service-1.96.0',
           },
           items: [
-            'release-notes/service/service-1.96.0',
+            {
+              type: 'doc',
+              // label: 'Service 1.94.0',
+              id: 'release-notes/service/service-1.96.0',
+              className: 'new',
+            },
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
             'release-notes/service/service-1.90.0',
@@ -2966,15 +2972,20 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server 🚀',
+              label: 'Server',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2.3.3',
               },
               items: [
-                'release-notes/server/server-2.3.3',
+                {
+                  type: 'doc',
+                  id: 'release-notes/server/server-2.3.3',
+                  className: 'new',
+                },
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
@@ -3052,6 +3063,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
@@ -3101,10 +3113,6 @@ const sidebars = {
       label: '시작하기',
       collapsible: false,
       collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'index',
-      },
       items: [
         'getting-started/whatap-overview',
         {
@@ -3116,10 +3124,6 @@ const sidebars = {
         'getting-started/quick-guide',
         'navigation/main-ui-intro',
       ],
-    },
-    {
-      type: 'html',
-      value: '<hr/>'
     },
     {
       type: 'category',
@@ -3136,67 +3140,68 @@ const sidebars = {
           type: 'link',
           label: 'Java',
           href: '../java/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'PHP',
           href: '../php/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Node.js',
           href: '../nodejs/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Python',
           href: '../python/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: '.NET',
           href: '../dotnet/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Golang',
           href: '../golang/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Server',
           href: '../server/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Kubernetes',
           href: '../kubernetes/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'PostgreSQL',
           href: '../postgresql/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Oracle',
           href: '../oracle/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'MySQL',
           href: '../mysql/monitoring-intro',
-          className: "_productlink"
         },
         // {
         //   type: 'link',
@@ -3208,157 +3213,117 @@ const sidebars = {
           type: 'link',
           label: 'MS SQL Server',
           href: '../mssql/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Tibero',
           href: '../tibero/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'CUBRID',
           href: '../cubrid/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Altibase',
           href: '../altibase/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Redis',
           href: '../redis/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'MongoDB',
           href: '../mongodb/monitoring-intro',
-          className: "_productlink"
         },
         {
-          type: 'link',
-          label: 'URL',
-          href: '../url/url-intro',
-          className: "_productlink"
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Amazon CloudWatch',
           href: '../amazon-cloudwatch/install-agent',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Amazon ECS',
           href: '../amazon-ecs/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Azure Monitor',
           href: '../azure/install-agent',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Naver Cloud Monitoring',
           href: '../ncloud/install-agent',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Oracle Cloud Monitor',
           href: '../oracle-cloud/install-agent',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Log',
           href: '../log/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'URL',
+          href: '../url/url-intro',
         },
         {
           type: 'doc',
           label: 'Extensions',
           id: 'extensions',
-          className: "_productlink"
         },
-        // {
-        //   type: 'link',
-        //   label: 'AWS Log',
-        //   href: 'aws-log/aws-log-intro'
-        // },
-        // {
-        //   type: 'link',
-        //   label: '인티그레이션',
-        //   href: 'integration/integ-intro'
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Amazon ECS',
-        //   href: 'amazon-ecs/introduction' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Amazon CloudWatch',
-        //   href: 'amazon-cloudwatch/install-agent'
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Azure Monitor',
-        //   href: 'azure/install-agent' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'NCloud Monitoring',
-        //   href: 'ncloud/install-agent' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Oracle Cloud Monitor',
-        //   href: 'oracle-cloud/install-agent' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: '브라우저(RUM)',
-        //   href: 'rum/introduction'
-        // },
-        // {
-        //   type: 'doc',
-        //   label: 'Telegraf',
-        //   id: 'telegraf/introduction',
-        // },
-        // {
-        //   type: 'doc',
-        //   label: 'Focus',
-        //   id: 'focus/introduction',
-        // },
       ],
     },
     {
-      type: 'html',
-      value: '<hr/>'
-    },
-    {
-      type: 'link',
-      label: '관리 기능',
-      href: '../manage' 
-    },
-    {
-      type: 'link',
-      label: '참조 문서',
-      href: '../reference' 
-    },
-    {
-      type: 'link',
-      label: '릴리스 노트',
-      href: '../release-notes',
-    },
+      type: 'category',
+      label: '관리',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: '관리 기능',
+          href: '../manage' 
+        },
+        {
+          type: 'link',
+          label: '참조 문서',
+          href: '../reference' 
+        },
+        {
+          type: 'link',
+          label: '릴리스 노트',
+          href: '../release-notes',
+        },
+      ],
+    }
   ],
   cloudSidebar: [
     {
