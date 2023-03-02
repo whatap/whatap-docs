@@ -9,7 +9,7 @@
   --ifm-color-primary-light: #3574f0;
   --ifm-color-primary-lighter: #4a7fe9;
   --ifm-color-primary-lightest: #618ce4;
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 12px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --ifm-code-padding-vertical: 0.01rem;
   /* --ifm-code-padding-horizontal: 0.01rem; */
@@ -22,7 +22,7 @@
   --ifm-h5-font-size: 1.0rem;
   --ifm-body-small-size: 0.875rem;
   --ifm-body-breacrums-size: 12px;
-  --ifm-code-font-size: 85%;
+  // --ifm-code-font-size: 85%;
   // --ifm-heading-font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Emoji';
   --ifm-heading-font-weight: bold;
   --ifm-font-family-monospace: 'Noto Sans Coptic';
@@ -71,7 +71,7 @@
   --ifm-h2-font-size: 1.1rem;
   --ifm-font-color-base: #f0f0f0;
   --shortcut-list-color: #f0f0f0;
-  --ifm-alert-background: #626262;
+  --ifm-alert-background: #444444;
   --ifm-font-code-color: #f0f0f0;
   --ifm-sidebar-font-color: #f0f0f0;
   --ifm-pagination-sub-label: #f0f0f0;
@@ -286,6 +286,7 @@ html[lang='ko'] {
   height: 16px;
   background: url('img/ic-release-up.svg') no-repeat;
   transform: rotateZ(0deg);
+  margin-left: 6px;
 }
 .menu__list-item-collapsible:hover {
   background: none;
@@ -321,9 +322,36 @@ html[lang='ko'] {
 .theme-doc-footer-edit-meta-row {
   display: block;
 }
+details.feedback[open] summary {
+  background: url('img/ic-arrow-up.svg') no-repeat right 0px;
+}
 .feedback {
+  background-color: #F2F7FF;
+  border-radius: 4px;
   display: block;
   width: 100%;
+  padding: 8px 20px;
+  summary {
+    background: url('img/ic-arrow-down.svg') no-repeat right 0px;
+    &::marker {
+      content: '👉 ';
+    }
+    color: #296CF2;
+    font-weight: 500;
+  }
+  .widget_src-components-Feedback-styles-module {
+    display: table;
+    margin: 0 auto;
+  }
+  button.hr-reaction {
+    &:hover {
+      background-color: #296cf2;
+      color: #ffffff;
+    }
+  }
+  .hr-powered-by {
+    font-size: 10px;
+  }
   h3 {
     display: block;
   }
@@ -372,6 +400,15 @@ html[lang='ko'] {
     vertical-align: middle;
   }
 }
+.theme-doc-footer-tags-row {
+  font-size: var(--ifm-body-small-size);
+  b {
+    font-weight: 600;
+  }
+}
+.tagRegular_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
+  padding: 0.5px 4px 3px 4px !important;
+}
 .pagination-nav {
   grid-gap: 10px;
 }
@@ -412,6 +449,9 @@ html[lang='ko'] {
     content: " › ";
   }
 }
+.searchBarContainer_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module {
+  margin-left: 2px !important;
+}
 .details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module[data-collapsed='false'].isBrowser_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module > summary::before {
   top: 0px;
 }
@@ -424,12 +464,13 @@ html[lang='ko'] {
 }
 div[class*='dataset'] span[class*='hitPath'] {
   color: #00a400;
+  font-weight: 700;
 }
 [data-theme='dark'] .themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module {
   filter: invert(100%);
 }
 [data-theme='dark'] div[class*='dataset'] span[class*='hitPath'] {
-  font-weight: 700;
+  font-weight: bold;
   color: #00FFFF;
 }
 code {
@@ -437,6 +478,18 @@ code {
   color: #4c4c4c;
   padding: 0 6px;
   border-radius: 4px;
+}
+.margin-bottom--sm {
+  margin-bottom: 40px !important;
+}
+.pagination-nav {
+  margin-top: 12px !important;
+}
+.theme-doc-footer {
+  margin-top: 40px !important;
+}
+.theme-doc-footer-tags-row {
+  padding: 16.5px 0;
 }
 // UI
 
@@ -507,6 +560,115 @@ main {
       max-height: 30px;
       width: auto;
       border: none;
+    }
+    section.row {
+      margin-top: 40px;
+    }
+    .margin-bottom--lg {
+      margin-right: 12px;
+      margin-bottom: 10px !important;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      .padding--lg {
+        padding: 24px 24px 16px 24px !important;
+      }
+      a {
+        border-radius: 4px;
+        text-decoration: none;
+        color: #000000;
+        h2 {
+          padding: 0 0 6px 0;
+          line-height: 1.5;
+          &::before {
+            content: ' ';
+            background: url('img/ic-file.svg') no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            margin-right: 4px;
+          }
+        }
+        p.text--truncate {
+          padding: 0;
+          white-space: break-spaces !important;
+          height: 48px;
+          line-height: 1.5;
+        }
+      }
+      a[href*='account-manage'] {
+        h2::before {
+          background: url('img/ic-user.svg') no-repeat;
+        }
+      }
+      a[href*='account/mfa'] {
+        h2::before {
+          background: url('img/ic-multifactor.svg') no-repeat;
+        }
+      }
+      a[href*='project-structure'] {
+        h2::before {
+          background: url('img/ic-tree.svg') no-repeat;
+        }
+      }
+      a[href='/project/'] {
+        h2::before {
+          background: url('img/ic-project.svg') no-repeat;
+        }
+      }
+      a[href='/project/group'] {
+        h2::before {
+          background: url('img/ic-team.svg') no-repeat;
+        }
+      }
+      a[href='/project/organization'] {
+        h2::before {
+          background: url('img/ic-folder-add.svg') no-repeat;
+        }
+      }
+      a[href='/project/integrated-manage'] {
+        h2::before {
+          background: url('img/ic-branches.svg') no-repeat;
+        }
+      }
+      a[href='/report/integrated-report'] {
+        h2::before {
+          background: url('img/ic-report.svg') no-repeat;
+        }
+      }
+      a[href='/notification/rt-notification'] {
+        h2::before {
+          background: url('img/ic-alert.svg') no-repeat;
+        }
+      }
+      a[href*='billing'] {
+        h2::before {
+          background: url('img/ic-pay.svg') no-repeat;
+        }
+      }
+      a[href*='maintenance'] {
+        h2::before {
+          background: url('img/ic-tool.svg') no-repeat;
+        }
+      }
+      a[href*='glossary'] {
+        h2::before {
+          background: url('img/ic-dict.svg') no-repeat;
+        }
+      }
+    }
+    .padding--lg a {
+      padding: 24px 24px !important;
+      margin: 0;
+    }
+    .col--6 {
+      --ifm-col-width: calc(6 / 12 * 98.57%);
+    }
+    .cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
+      border: 1px solid rgba(119,119,119,0.7);
+      box-shadow: none;
     }
     .ic-gs svg {
       width: 22px;
@@ -763,6 +925,7 @@ main {
       margin: 0;
       padding-top: 8px;
       padding-bottom: 8px;
+      padding-left: 19px;
       li {
         margin: 0;
         padding: 4px 0 4px 6.4px;
@@ -797,6 +960,11 @@ main {
         ul {
           list-style: circle;
         }
+      }
+    }
+    ul[role='tablist'] {
+      li[role='tab'] {
+        padding: 4px 6px;
       }
     }
     ul {
@@ -996,7 +1164,7 @@ main {
         .int {
           display: table-cell;
           padding-left: 6px;
-
+          vertical-align: middle;
           p {
             color: var(--ifm-font-color-base);
             font-weight: 600;
@@ -1173,6 +1341,9 @@ main {
         }
         tbody {
           tr {
+            &:nth-of-type(2n) {
+              background: none;
+            }
             &:last-of-type {
               td {
                 border-bottom: 0;
@@ -1200,6 +1371,9 @@ main {
     img[alt*='Windows'] {
       filter: invert(100%);
     }
+  }
+  .feedback {
+    background-color: #444444;
   }
 }
 // 다크모드 문서 내 css

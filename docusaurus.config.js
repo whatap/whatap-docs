@@ -32,6 +32,12 @@ const config = {
   clientModules: [
     // require.resolve('./static/js/channel_ko.js')
   ],
+  scripts: [
+    {
+      src: 'https://app.happyreact.com/widget/reactions.js',
+      defer: true,
+    },
+  ],
   plugins: [
     [ 'docusaurus-plugin-sass', {} ],
     [
@@ -85,7 +91,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/],
       }
     ],
     [
@@ -175,42 +181,48 @@ const config = {
         },
         items: [
           {
-            type: 'dropdown',
+            type: 'doc',
+            docId: 'getting-started/whatap-overview',
             label: '시작하기',
             position: 'left',
-            className: 'start-menu',
-            items: [
-              // 'getting-started/whatap-overview',
-              // 'getting-started/support-env',
-              // 'getting-started/quick-guide',
-              // 'navigation/main-ui-intro',
-              {
-                type: 'doc',
-                docId: 'getting-started/whatap-overview',
-                label: '와탭 모니터링 서비스',
-              },
-              {
-                type: 'doc',
-                docId: 'getting-started/welcome-to-whatapdocs',
-                label: '와탭 기술 문서 안내',
-              },
-              {
-                type: 'doc',
-                docId: 'getting-started/support-env',
-                label: '지원 환경',
-              },
-              {
-                type: 'doc',
-                docId: 'getting-started/quick-guide',
-                label: '빠른 시작하기',
-              },
-              {
-                type: 'doc',
-                docId: 'navigation/main-ui-intro',
-                label: '홈 화면 안내',
-              },
-            ]
           },
+          // {
+          //   type: 'dropdown',
+          //   label: '시작하기',
+          //   position: 'left',
+          //   className: 'start-menu',
+          //   items: [
+          //     // 'getting-started/whatap-overview',
+          //     // 'getting-started/support-env',
+          //     // 'getting-started/quick-guide',
+          //     // 'navigation/main-ui-intro',
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/whatap-overview',
+          //       label: '와탭 모니터링 서비스',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/welcome-to-whatapdocs',
+          //       label: '와탭 기술 문서 안내',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/support-env',
+          //       label: '지원 환경',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/quick-guide',
+          //       label: '빠른 시작하기',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'navigation/main-ui-intro',
+          //       label: '홈 화면 안내',
+          //     },
+          //   ]
+          // },
           {
             type: 'dropdown',
             label: '상품별 문서 바로가기',
