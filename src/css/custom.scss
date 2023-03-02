@@ -749,6 +749,7 @@ main {
           width: 18px;
           height: 18px;
           margin-right: 8px;
+          top: 6px;
         }
       }
       .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
@@ -1079,10 +1080,7 @@ main {
       border-bottom-left-radius: 4px;
       padding: 16px 20px 16px 46px;
       margin: 16px 0;
-      .themedImage--dark_node_modules-\@docusaurus-theme-classic-lib-theme-ThemedImage-styles-module {
-        display: none;
-      }
-      .admonitionHeading_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-styles-module {
+      div[class*='admonitionHeading'] {
         display: none;
       }
       p + ul:first-of-type, p + ol:first-of-type {
