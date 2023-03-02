@@ -32,7 +32,14 @@ const config = {
   clientModules: [
     // require.resolve('./static/js/channel_ko.js')
   ],
+  scripts: [
+    {
+      src: 'https://app.happyreact.com/widget/reactions.js',
+      defer: true,
+    },
+  ],
   plugins: [
+    [ 'docusaurus-plugin-sass', {} ],
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -84,7 +91,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /mysql-rds/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/],
       }
     ],
     [
@@ -130,7 +137,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
         sitemap: {
           changefreq: 'always',
@@ -157,31 +164,66 @@ const config = {
       docs: {
         sidebar: {
           autoCollapseCategories: false,
-          hideable: true,
+          hideable: false,
         }
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'WhaTap Docs',
+          src: 'img/whatap-docs-logo.svg',
+          width: 152,
+          height: 28,
         },
         items: [
           {
-            type: 'html',
-            value: '<a href="/" class="my-index"><svg viewBox="0 0 24 24"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=""></path></svg></a>'
-          },
-          {
             type: 'doc',
-            docId: 'index',
-            position: 'left',
+            docId: 'getting-started/whatap-overview',
             label: '시작하기',
+            position: 'left',
           },
+          // {
+          //   type: 'dropdown',
+          //   label: '시작하기',
+          //   position: 'left',
+          //   className: 'start-menu',
+          //   items: [
+          //     // 'getting-started/whatap-overview',
+          //     // 'getting-started/support-env',
+          //     // 'getting-started/quick-guide',
+          //     // 'navigation/main-ui-intro',
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/whatap-overview',
+          //       label: '와탭 모니터링 서비스',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/welcome-to-whatapdocs',
+          //       label: '와탭 기술 문서 안내',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/support-env',
+          //       label: '지원 환경',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'getting-started/quick-guide',
+          //       label: '빠른 시작하기',
+          //     },
+          //     {
+          //       type: 'doc',
+          //       docId: 'navigation/main-ui-intro',
+          //       label: '홈 화면 안내',
+          //     },
+          //   ]
+          // },
           {
             type: 'dropdown',
             label: '상품별 문서 바로가기',
@@ -286,6 +328,7 @@ const config = {
                 type: 'doc',
                 docId: 'amazon-cloudwatch/install-agent',
                 label: 'Amazon CloudWatch',
+                className: 'narrow',
               },
               {
                 type: 'doc',
@@ -301,11 +344,13 @@ const config = {
                 type: 'doc',
                 docId: 'ncloud/install-agent',
                 label: 'Naver Cloud Monitoring',
+                className: 'narrow',
               },
               {
                 type: 'doc',
                 docId: 'oracle-cloud/install-agent',
                 label: 'Oracle Cloud Monitor',
+                className: 'narrow',
               },
               {
                 type: 'doc',

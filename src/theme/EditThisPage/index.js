@@ -1,14 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
 import { useRef } from 'react';
+import {useDoc} from '@docusaurus/theme-common/internal';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import EditThisPage from '@theme-original/EditThisPage';
 import emailjs from 'emailjs-com';
 import Translate, { translate } from "@docusaurus/Translate";
+import Feedback from '../../components/Feedback';
 
 export default function EditThisPageWrapper(props) {
   const [isShown, setIsShown] = useState(false);
   const form = useRef();
+  const {metadata} = useDoc();
   const handleClick = event => {
     // 👇️ toggle shown state
     setIsShown(current => !current);
@@ -46,8 +49,9 @@ export default function EditThisPageWrapper(props) {
   const location = isBrowser ? window.location.href : 'fetching location...';
   return (
     <>
+      <Feedback resource={metadata.unversionedId} />
       {/* <EditThisPage {...props} /> */}
-      <button class='fd-btn' onClick={handleClick}>
+      {/* <button class='fd-btn' onClick={handleClick}>
         <img src="/img/feedback-ico.svg" alt="feedback" class='feedback-ico'/>
         {
           translate({
@@ -122,7 +126,7 @@ export default function EditThisPageWrapper(props) {
             } />
           </form>
         </div>
-      )}
+      )} */}
     </>
   );
 }
