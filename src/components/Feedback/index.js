@@ -18,8 +18,8 @@ export default function Feedback({ resource }) {
         {
           translate({
             id: "Feedback.feedbackMessage",
-            message: "독스 문서는 편하게 이용했나요?",
-            description: "독스 문서는 편하게 이용했나요?",
+            message: "WhTap Docs는 편하게 이용했나요?",
+            description: "WhTap Docs는 편하게 이용했나요?",
           })
         }
       </summary>

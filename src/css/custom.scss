@@ -54,6 +54,7 @@
   --ifm-pagination-sub-label: #757575;
   --ifm-color-emphasis-300: #d3d3d3;
   --ifm-active-menu-color: #efefef;
+  --ifm-dropdown-link-color: #222222;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -79,6 +80,7 @@
   --ifm-sidebar-font-color: #f0f0f0;
   --ifm-pagination-sub-label: #f0f0f0;
   --ifm-active-menu-color: #636363;
+  --ifm-dropdown-link-color: #f2f2f2;
 }
 
 html {
@@ -205,6 +207,9 @@ html[lang='ko'] {
       letter-spacing: -0.06rem;
     }
   }
+}
+[data-theme='dark'] .navbar__item .dropdown__menu li a:hover {
+  color: var(--ifm-dropdown-link-color);
 }
 .navbar__search-input {
   background: #f2f2f2;
@@ -484,7 +489,7 @@ div[class*='dataset'] span[class*='hitPath'] {
   filter: invert(100%);
 }
 [data-theme='dark'] .menu__link:hover {
-  color: #333333;
+  color: #f2f2f2;
 }
 [data-theme='dark'] div[class*='dataset'] span[class*='hitPath'] {
   font-weight: bold;
@@ -577,6 +582,9 @@ main {
       max-height: 30px;
       width: auto;
       border: none;
+    }
+    h3[id='pdf-download'] img {
+      top: 5px;
     }
     section.row {
       margin-top: 40px;
@@ -682,7 +690,7 @@ main {
       margin: 0;
     }
     .col--6 {
-      --ifm-col-width: calc(6 / 12 * 98.57%);
+      --ifm-col-width: calc(6 / 12 * (100% - 12px));
     }
     .cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module {
       border: 1px solid rgba(119,119,119,0.7);
@@ -1480,6 +1488,15 @@ main {
     }
   }
 }
+@media (max-width: 590px) {
+  main {
+    .markdown {
+      .col--6 {
+        --ifm-col-width: 100%;
+      }
+    }
+  }
+}
 @media (max-width: 576px) {
   .navbar__search-input {
     background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
@@ -1491,6 +1508,7 @@ main {
   }
 }
 @media (max-width: 559px) and (max-width: 360px) {
+  
   main {
     .markdown {
       .flex-container-s {
