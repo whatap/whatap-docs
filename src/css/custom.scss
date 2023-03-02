@@ -1093,15 +1093,19 @@ main {
       }
     }
     .alert--secondary, .alert--info {
+      color: var(--ifm-font-color-base);
       background: url('img/alert-note.svg') var(--ifm-alert-background) no-repeat top 19px left 20px;
     }
     .alert--success {
+      color: var(--ifm-font-color-base);
       background: url('img/alert-tip.svg') var(--ifm-alert-background) no-repeat top 20px left 20px;
     }
     .alert--warning {
+      color: var(--ifm-font-color-base);
       background: url('img/alert-warning.svg') var(--ifm-alert-background) no-repeat top 19px left 20px;
     }
     .alert--danger {
+      color: var(--ifm-font-color-base);
       background: url('img/alert-danger.svg') var(--ifm-alert-background) no-repeat top 21px left 20px;
     }
     .alert + .alert {
