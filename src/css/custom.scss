@@ -432,6 +432,9 @@ details.feedback[open] summary {
 .tagRegular_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
   padding: 0.5px 4px 3px 4px !important;
 }
+a[class*='tagRegular'] {
+  padding: 4px 4px 3px 4px !important;
+}
 .pagination-nav {
   grid-gap: 10px;
 }
@@ -474,9 +477,6 @@ details.feedback[open] summary {
 }
 .searchBarContainer_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module {
   margin-left: 2px !important;
-}
-.details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module[data-collapsed='false'].isBrowser_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module > summary::before {
-  top: 0px;
 }
 .col--3 {
   padding-left: 60px;
@@ -526,6 +526,11 @@ code {
 }
 .navbar-sidebar__close {
   margin-right: 15px;
+}
+.navbar-sidebar {
+  .navbar__logo {
+    margin-left: 15px;
+  }
 }
 // UI
 
@@ -734,6 +739,9 @@ main {
         white-space: pre-wrap;
         overflow-wrap: anywhere;
       }
+    }
+    details.alert--info[open] summary::before {
+      top: -2px;
     }
     details.alert--info {
       background-image: none;
@@ -1528,7 +1536,6 @@ main {
   }
 }
 @media (max-width: 559px) and (max-width: 360px) {
-  
   main {
     .markdown {
       .flex-container-s {
