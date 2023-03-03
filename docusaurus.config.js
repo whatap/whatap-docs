@@ -35,7 +35,7 @@ const config = {
   scripts: [
     {
       src: 'https://app.happyreact.com/widget/reactions.js',
-      defer: true,
+      async: true,
     },
   ],
   plugins: [
