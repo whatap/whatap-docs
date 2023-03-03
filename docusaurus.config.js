@@ -32,12 +32,12 @@ const config = {
   clientModules: [
     // require.resolve('./static/js/channel_ko.js')
   ],
-  scripts: [
-    {
-      src: 'https://app.happyreact.com/widget/reactions.js',
-      async: true,
-    },
-  ],
+  // scripts: [
+  //   {
+  //     src: 'https://app.happyreact.com/widget/reactions.js',
+  //     async: true,
+  //   },
+  // ],
   plugins: [
     [ 'docusaurus-plugin-sass', {} ],
     [

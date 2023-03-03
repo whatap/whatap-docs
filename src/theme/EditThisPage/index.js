@@ -7,7 +7,7 @@ export default function EditThisPageWrapper(props) {
 
   return (
     <>
-      <Feedback resource={metadata.unversionedId} />
+      {/* <Feedback resource={metadata.unversionedId} /> */}
       {/* <EditThisPage {...props} /> */}
     </>
   );
