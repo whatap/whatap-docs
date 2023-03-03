@@ -73,13 +73,13 @@ const config = {
         containerId: 'GTM-WJSZDJR',
       },
     ],
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-4QXE2TJTM0',
-        anonymizeIP: true,
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-google-analytics',
+    //   {
+    //     trackingID: 'G-4QXE2TJTM0',
+    //     anonymizeIP: true,
+    //   },
+    // ],
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
