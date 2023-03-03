@@ -133,7 +133,7 @@ const config = {
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
-          exclude: [ 'mysql-rds/*.mdx' ],
+          // exclude: [ 'mysql-rds/*.mdx' ],
         },
         blog: false,
         theme: {
@@ -447,13 +447,13 @@ const config = {
             label: 'MySQL 모니터링',
             className: 'hidden',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'mysql-rds/monitoring-intro',
-          //   position: "left",
-          //   label: 'MySQL RDS 모니터링',
-          //   className: 'hidden',
-          // },
+          {
+            type: 'doc',
+            docId: 'mysql-rds/monitoring-intro',
+            position: "left",
+            label: 'MySQL RDS 모니터링',
+            className: 'hidden',
+          },
           {
             type: 'doc',
             docId: 'mssql/monitoring-intro',
