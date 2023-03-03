@@ -37,7 +37,6 @@ function CardLayout({href, icon, title, description}) {
 function CardCategory({item}) {
   const href = findFirstCategoryLink(item);
   // Unexpected: categories that don't have a link have been filtered upfront
-  console.log(item);
   if (!href) {
     return null;
   }
@@ -59,7 +58,6 @@ function CardCategory({item}) {
   );
 }
 function CardLink({item}) {
-  console.log(item);
   const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
   const doc = useDocById(item.docId ?? undefined);
   return (
