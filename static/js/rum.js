@@ -1,4 +1,4 @@
-(function (w, h, _a, t, a, b) {
+!(function (w, h, _a, t, a, b) {
     w = w[a] = w[a] || {
       config: {
         projectAccessKey: "x4rlr21vl48m6-x3p90pdqgusqpp-z6g3nepfnvhr8m",
