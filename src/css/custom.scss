@@ -1197,6 +1197,7 @@ main {
     .flex-container-s {
       width: 100%;
       margin-top: 22px;
+      margin-bottom: 40px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 10px;
@@ -1264,7 +1265,7 @@ main {
     }
     .apm-agent.new {
       background: url('img/ic-release-up.svg') no-repeat right 6px top 6px;
-      background-size: 14px;
+      background-size: 20px;
       background-color: var(--shortcut-background-color);
     }
     // .shortcut {
