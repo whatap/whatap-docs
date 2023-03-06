@@ -43,7 +43,7 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        fromExtensions: ['html', 'htm'],
+        // fromExtensions: ['html', 'htm'],
         redirects: [
           {
             to: '/java/introduction',
