@@ -326,5 +326,14 @@
   },
   "project_add_btn": {
     "message": "프로젝트"
+  },
+  "docs_Name": {
+    "message": "WhaTap Docs"
+  },
+  "whatap_link_go": {
+    "message": "와탭 홈페이지 바로가기"
+  },
+  "Feedback.feedbackMessage": {
+    "message": "WhTap Docs는 편하게 이용했나요?"
   }
 }
