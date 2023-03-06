@@ -60,6 +60,7 @@ const sidebars = {
             'java/add-jvm-opt/java-under-ver',
           ]
         },
+        'java/software-proxy',
         'java/install-check',
         'java/agent-troubleshooting',
         {
@@ -1774,144 +1775,144 @@ const sidebars = {
       ],
     }
   ],
-  // mysqlrdsSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: 'MySQL RDS 모니터링',
-  //     collapsible: false,
-  //     collapsed: false,
-  //     link: {
-  //       type: 'doc',
-  //       id: 'mysql-rds/monitoring-intro'
-  //     },
-  //     items: [
-  //       {
-  //         type: 'doc',
-  //         label: '지원 환경',
-  //         id: 'mysql-rds/monitoring-support',
-  //       },
-  //       {
-  //         type: 'category',
-  //         label: '설치하기',
-  //         collapsible: true,
-  //         collapsed: true,
-  //         items: [
-  //           'mysql-rds/install-agent',
-  //           // 'mysql-rds/after-install-agent',
-  //           'mysql-rds/troubleshooting',
-  //         ],
-  //       },
-  //       'mysql-rds/agent-settings',
-  //       'mysql-rds/agent-manage',
-  //       {
-  //         type: 'category',
-  //         label: '주요 메뉴 알아보기',
-  //         collapsible: true,
-  //         collapsed: false,
-  //         items: [
-  //           {
-  //             type: 'category',
-  //             label: '대시보드',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             link: {
-  //               type: 'doc',
-  //               id: 'mysql-rds/dashboard-intro'
-  //             },
-  //             items: [
-  //               'mysql-rds/instance-list',
-  //               'mysql-rds/instance-monitoring',
-  //               'mysql-rds/multi-instance-monitoring',
-  //               // 'mysql-rds/slow-query',
-  //             ],
-  //           },
-  //           {
-  //             type: 'category',
-  //             label: 'Flex 보드',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             link: {
-  //               type: 'doc',
-  //               id: 'mysql-rds/flex-board',
-  //             },
-  //             items: [
-  //               'mysql-rds/flexboard-template',
-  //               'mysql-rds/flexboard-create',
-  //               'mysql-rds/flexboard-manage',
-  //               'mysql-rds/flexboard-metric-widget',
-  //               'mysql-rds/flexboard-widget-manage',
-  //               'mysql-rds/flexboard-mode',
-  //               'mysql-rds/flexboard-share',
-  //             ],
-  //           },
-  //           'mysql-rds/analysis-function',
-  //           {
-  //             type: 'category',
-  //             label: '메트릭스',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             link: {
-  //               type: 'doc',
-  //               id: 'mysql-rds/metrics-intro'
-  //             },
-  //             items: [
-  //               'mysql-rds/metrics-data-list',
-  //               'mysql-rds/metrics-chart',
-  //               'mysql-rds/metrics-detect-anormal',
-  //               // 'mysql-rds/log-viewer',
-  //               // 'mysql-rds/stat',
-  //               // 'mysql-rds/report-intro',
-  //               // 'mysql-rds/integrated-report',
-  //             ]
-  //           },
-  //           {
-  //             type: 'category',
-  //             label: '통계/보고서',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             // link: {
-  //             //   type: 'doc',
-  //             //   id: 'mysql/stat'
-  //             // },
-  //             items: [
-  //               'mysql-rds/stat',
-  //               'mysql-rds/report-intro',
-  //               'mysql-rds/integrated-report',
-  //             ],
-  //           },
-  //           {
-  //             type: 'category',
-  //             label: '알림 설정하기',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             link: {
-  //               type: 'doc',
-  //               id: 'mysql-rds/set-notice',
-  //             },
-  //             items: [
-  //               'mysql-rds/warning-notice',
-  //               'mysql-rds/metric-warning-notice',
-  //               'mysql-rds/set-event-detect-anomal',
-  //               'mysql-rds/set-receive-event',
-  //               'mysql-rds/set-event-history',
-  //               'mysql-rds/set-event-format',
-  //             ],
-  //           },
-  //           // {
-  //           //   type: 'doc',
-  //           //   label: 'Log 모니터링',
-  //           //   id: 'log/introduction'
-  //           // },
-  //           {
-  //             type: 'link',
-  //             label: 'Open API',
-  //             href: '/apidoc/openapi-intro'
-  //           }
-  //         ]
-  //       }
-  //     ],
-  //   }
-  // ],
+  mysqlrdsSidebar: [
+    {
+      type: 'category',
+      label: 'MySQL RDS 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mysql-rds/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mysql-rds/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql-rds/install-agent',
+            // 'mysql-rds/after-install-agent',
+            'mysql-rds/troubleshooting',
+          ],
+        },
+        'mysql-rds/agent-settings',
+        'mysql-rds/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/dashboard-intro'
+              },
+              items: [
+                'mysql-rds/instance-list',
+                'mysql-rds/instance-monitoring',
+                'mysql-rds/multi-instance-monitoring',
+                // 'mysql-rds/slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/flex-board',
+              },
+              items: [
+                'mysql-rds/flexboard-template',
+                'mysql-rds/flexboard-create',
+                'mysql-rds/flexboard-manage',
+                'mysql-rds/flexboard-metric-widget',
+                'mysql-rds/flexboard-widget-manage',
+                'mysql-rds/flexboard-mode',
+                'mysql-rds/flexboard-share',
+              ],
+            },
+            'mysql-rds/analysis-function',
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/metrics-intro'
+              },
+              items: [
+                'mysql-rds/metrics-data-list',
+                'mysql-rds/metrics-chart',
+                'mysql-rds/metrics-detect-anormal',
+                // 'mysql-rds/log-viewer',
+                // 'mysql-rds/stat',
+                // 'mysql-rds/report-intro',
+                // 'mysql-rds/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'mysql/stat'
+              // },
+              items: [
+                'mysql-rds/stat',
+                'mysql-rds/report-intro',
+                'mysql-rds/integrated-report',
+              ],
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-rds/set-notice',
+              },
+              items: [
+                'mysql-rds/warning-notice',
+                'mysql-rds/metric-warning-notice',
+                'mysql-rds/set-event-detect-anomal',
+                'mysql-rds/set-receive-event',
+                'mysql-rds/set-event-history',
+                'mysql-rds/set-event-format',
+              ],
+            },
+            // {
+            //   type: 'doc',
+            //   label: 'Log 모니터링',
+            //   id: 'log/introduction'
+            // },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   mssqlSidebar: [
     {
       type: 'category',
@@ -2838,15 +2839,21 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Service 🚀',
+          label: 'Service',
           collapsible: true,
           collapsed: true,
+          className: 'new',
           link: {
             type: 'doc',
             id: 'release-notes/service/service-1.96.0',
           },
           items: [
-            'release-notes/service/service-1.96.0',
+            {
+              type: 'doc',
+              // label: 'Service 1.94.0',
+              id: 'release-notes/service/service-1.96.0',
+              className: 'new',
+            },
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
             'release-notes/service/service-1.90.0',
@@ -2885,7 +2892,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'PHP 🚀',
+              label: 'PHP',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2966,14 +2973,20 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Server 🚀',
+              label: 'Server',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2.3.2',
+                id: 'release-notes/server/server-2.3.3',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server/server-2.3.3',
+                  className: 'new',
+                },
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
@@ -2983,7 +2996,6 @@ const sidebars = {
                 'release-notes/server/server-2.2.6',
                 'release-notes/server/server-2.2.5',
                 'release-notes/server/server-2.2.4',
-                'release-notes/server/server-2.2.3',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3052,6 +3064,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
@@ -3085,7 +3098,7 @@ const sidebars = {
         'account/mfa',
         'project/project-structure',
         'project/project',
-        'project/group',
+        'project/group',   
         'project/organization',
         'project/integrated-manage',
         'report/integrated-report',
@@ -3101,10 +3114,6 @@ const sidebars = {
       label: '시작하기',
       collapsible: false,
       collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'index',
-      },
       items: [
         'getting-started/whatap-overview',
         {
@@ -3116,10 +3125,6 @@ const sidebars = {
         'getting-started/quick-guide',
         'navigation/main-ui-intro',
       ],
-    },
-    {
-      type: 'html',
-      value: '<hr/>'
     },
     {
       type: 'category',
@@ -3136,67 +3141,68 @@ const sidebars = {
           type: 'link',
           label: 'Java',
           href: '../java/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'PHP',
           href: '../php/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Node.js',
           href: '../nodejs/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Python',
           href: '../python/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: '.NET',
           href: '../dotnet/introduction',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Golang',
           href: '../golang/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Server',
           href: '../server/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Kubernetes',
           href: '../kubernetes/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'PostgreSQL',
           href: '../postgresql/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Oracle',
           href: '../oracle/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'MySQL',
           href: '../mysql/monitoring-intro',
-          className: "_productlink"
         },
         // {
         //   type: 'link',
@@ -3208,157 +3214,117 @@ const sidebars = {
           type: 'link',
           label: 'MS SQL Server',
           href: '../mssql/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Tibero',
           href: '../tibero/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'CUBRID',
           href: '../cubrid/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Altibase',
           href: '../altibase/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Redis',
           href: '../redis/monitoring-intro',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'MongoDB',
           href: '../mongodb/monitoring-intro',
-          className: "_productlink"
         },
         {
-          type: 'link',
-          label: 'URL',
-          href: '../url/url-intro',
-          className: "_productlink"
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Amazon CloudWatch',
           href: '../amazon-cloudwatch/install-agent',
-          className: "_productlink"
         },
         {
           type: 'link',
           label: 'Amazon ECS',
           href: '../amazon-ecs/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Azure Monitor',
           href: '../azure/install-agent',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Naver Cloud Monitoring',
           href: '../ncloud/install-agent',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Oracle Cloud Monitor',
           href: '../oracle-cloud/install-agent',
-          className: "_productlink"
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
         },
         {
           type: 'link',
           label: 'Log',
           href: '../log/introduction',
-          className: "_productlink"
+        },
+        {
+          type: 'link',
+          label: 'URL',
+          href: '../url/url-intro',
         },
         {
           type: 'doc',
           label: 'Extensions',
           id: 'extensions',
-          className: "_productlink"
         },
-        // {
-        //   type: 'link',
-        //   label: 'AWS Log',
-        //   href: 'aws-log/aws-log-intro'
-        // },
-        // {
-        //   type: 'link',
-        //   label: '인티그레이션',
-        //   href: 'integration/integ-intro'
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Amazon ECS',
-        //   href: 'amazon-ecs/introduction' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Amazon CloudWatch',
-        //   href: 'amazon-cloudwatch/install-agent'
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Azure Monitor',
-        //   href: 'azure/install-agent' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'NCloud Monitoring',
-        //   href: 'ncloud/install-agent' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: 'Oracle Cloud Monitor',
-        //   href: 'oracle-cloud/install-agent' 
-        // },
-        // {
-        //   type: 'link',
-        //   label: '브라우저(RUM)',
-        //   href: 'rum/introduction'
-        // },
-        // {
-        //   type: 'doc',
-        //   label: 'Telegraf',
-        //   id: 'telegraf/introduction',
-        // },
-        // {
-        //   type: 'doc',
-        //   label: 'Focus',
-        //   id: 'focus/introduction',
-        // },
       ],
     },
     {
-      type: 'html',
-      value: '<hr/>'
-    },
-    {
-      type: 'link',
-      label: '관리 기능',
-      href: '../manage' 
-    },
-    {
-      type: 'link',
-      label: '참조 문서',
-      href: '../reference' 
-    },
-    {
-      type: 'link',
-      label: '릴리스 노트',
-      href: '../release-notes',
-    },
+      type: 'category',
+      label: '관리',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: '관리 기능',
+          href: '../manage' 
+        },
+        {
+          type: 'link',
+          label: '참조 문서',
+          href: '../reference' 
+        },
+        {
+          type: 'link',
+          label: '릴리스 노트',
+          href: '../release-notes',
+        },
+      ],
+    }
   ],
   cloudSidebar: [
     {
@@ -3963,9 +3929,9 @@ const sidebars = {
                 id: 'amazon-ecs/set-notice',
               },
               items: [
-                'amazon-ecs/warning-and-history',
                 'amazon-ecs/metric-warning-notice',
                 'amazon-ecs/set-receive-event',
+                'amazon-ecs/set-event-history',
               ]
             },
           ],
@@ -4040,9 +4006,9 @@ const sidebars = {
                 id: 'amazon-cloudwatch/set-notice',
               },
               items: [
-                'amazon-cloudwatch/warning-and-history',
                 'amazon-cloudwatch/metric-warning-notice',
                 'amazon-cloudwatch/set-receive-event',
+                'amazon-cloudwatch/set-event-history',
               ]
             },
           ],
@@ -4117,9 +4083,9 @@ const sidebars = {
                 id: 'azure/set-notice',
               },
               items: [
-                'azure/warning-and-history',
                 'azure/metric-warning-notice',
                 'azure/set-receive-event',
+                'azure/set-event-history',
               ]
             },
           ],
@@ -4194,9 +4160,9 @@ const sidebars = {
                 id: 'ncloud/set-notice',
               },
               items: [
-                'ncloud/warning-and-history',
                 'ncloud/metric-warning-notice',
                 'ncloud/set-receive-event',
+                'ncloud/set-event-history',
               ]
             },
           ],
@@ -4271,9 +4237,9 @@ const sidebars = {
                 id: 'oracle-cloud/set-notice',
               },
               items: [
-                'oracle-cloud/warning-and-history',
                 'oracle-cloud/metric-warning-notice',
                 'oracle-cloud/set-receive-event',
+                'oracle-cloud/set-event-history',
               ]
             },
           ],
