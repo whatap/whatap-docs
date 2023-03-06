@@ -60,7 +60,6 @@ const sidebars = {
             'java/add-jvm-opt/java-under-ver',
           ]
         },
-        'java/software-proxy',
         'java/install-check',
         'java/agent-troubleshooting',
         {
@@ -3123,6 +3122,7 @@ const sidebars = {
         },
         'getting-started/support-env',
         'getting-started/quick-guide',
+        'getting-started/software-proxy',
         'navigation/main-ui-intro',
       ],
     },
