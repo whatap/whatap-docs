@@ -29,9 +29,9 @@ const config = {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
-  clientModules: [
-    // require.resolve('./static/js/channel_ko.js')
-  ],
+  // clientModules: [
+  //   require.resolve('./static/js/rum.js')
+  // ],
   scripts: [
     {
       src: 'https://app.happyreact.com/widget/reactions.js',
@@ -43,7 +43,7 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        fromExtensions: ['html', 'htm'],
+        // fromExtensions: ['html', 'htm'],
         redirects: [
           {
             to: '/java/introduction',
