@@ -2559,11 +2559,8 @@ const sidebars = {
             id: 'redis/agent-settings'
           },
           items: [
-            'redis/agent-network',
-            'redis/agent-naming',
-            'redis/agent-aws',
-            'redis/agent-data',
-            // 'redis/agent-xos-settings', // Postgresql, Oracle
+            'redis/agent-dbx-settings',
+            'redis/agent-xos-settings'
           ],
         },
         'redis/agent-manage',
