@@ -4348,7 +4348,16 @@ const sidebars = {
       },
       items: [
         'url/url-install',
-        'url/url-event',
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'url/url-event',
+            'url/url-event-history',
+          ],
+        },
         'url/url-error-type',
         // {
         //   type: 'category',
