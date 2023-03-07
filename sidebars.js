@@ -2572,7 +2572,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2583,7 +2583,6 @@ const sidebars = {
                 'redis/instance-list',
                 'redis/instance-monitoring',
                 'redis/multi-instance-monitoring',
-                // 'redis/slow-query',
               ],
             },
             {
@@ -2615,27 +2614,19 @@ const sidebars = {
                 id: 'redis/metrics-intro'
               },
               items: [
+                'redis/metrics-data-list',
                 'redis/metrics-chart',
                 'redis/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '분석',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'redis/analysis-function',
-                // 'redis/metrics-intro',
-                // 'redis/metrics-detect-anormal',
                 'redis/log-viewer',
-                // 'redis/stat',
-                // 'redis/report-intro',
-                // 'redis/integrated-report',
               ]
             },
             {
@@ -2648,7 +2639,6 @@ const sidebars = {
                 id: 'redis/set-notice',
               },
               items: [
-                'redis/warning-notice',
                 'redis/metric-warning-notice',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
@@ -2656,11 +2646,6 @@ const sidebars = {
                 'redis/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
