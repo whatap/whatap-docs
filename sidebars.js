@@ -2257,6 +2257,7 @@ const sidebars = {
           items: [
             'cubrid/agent-dbx-settings',
             'cubrid/agent-xos-settings',
+            'cubrid/agent-xcube-settings'
             // 'cubrid/agent-network',
             // 'cubrid/agent-naming',
             // 'cubrid/agent-aws',
