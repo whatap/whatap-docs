@@ -104,6 +104,7 @@ const sidebars = {
           label: '관리하기',
           items: [
             'java/update-agent',
+            'java/uninstall-agent',
             'java/msa-group',
             'java/aes-256-encryption',
             'java/scale-in-auto-delete',
