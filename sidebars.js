@@ -2255,11 +2255,13 @@ const sidebars = {
             id: 'cubrid/agent-settings'
           },
           items: [
-            'cubrid/agent-network',
-            'cubrid/agent-naming',
-            'cubrid/agent-aws',
-            'cubrid/agent-data',
-            // 'cubrid/agent-xos-settings', // Postgresql, Oracle
+            'cubrid/agent-dbx-settings',
+            'cubrid/agent-xos-settings',
+            'cubrid/agent-xcub-settings'
+            // 'cubrid/agent-network',
+            // 'cubrid/agent-naming',
+            // 'cubrid/agent-aws',
+            // 'cubrid/agent-data',
           ],
         },
         'cubrid/agent-manage',
