@@ -2258,10 +2258,6 @@ const sidebars = {
             'cubrid/agent-dbx-settings',
             'cubrid/agent-xos-settings',
             'cubrid/agent-xcub-settings'
-            // 'cubrid/agent-network',
-            // 'cubrid/agent-naming',
-            // 'cubrid/agent-aws',
-            // 'cubrid/agent-data',
           ],
         },
         'cubrid/agent-manage',
@@ -2273,7 +2269,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2283,8 +2279,6 @@ const sidebars = {
               items: [
                 'cubrid/instance-list',
                 'cubrid/instance-monitoring',
-                // 'cubrid/multi-instance-monitoring',
-                // 'cubrid/slow-query',
               ],
             },
             {
@@ -2325,14 +2319,8 @@ const sidebars = {
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'cubrid/analysis-function',
-                // 'cubrid/metrics-intro',
-                // 'cubrid/metrics-detect-anormal',
                 'cubrid/log-viewer',
                 'cubrid/stat',
                 'cubrid/report-intro',
@@ -2357,11 +2345,6 @@ const sidebars = {
                 'cubrid/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
