@@ -4423,6 +4423,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'rum/analyze-pageload',
+            'rum/tracking-error',
             'rum/metrics-intro',
           ],
         },
