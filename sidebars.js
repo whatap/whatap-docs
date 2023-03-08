@@ -2255,11 +2255,13 @@ const sidebars = {
             id: 'cubrid/agent-settings'
           },
           items: [
-            'cubrid/agent-network',
-            'cubrid/agent-naming',
-            'cubrid/agent-aws',
-            'cubrid/agent-data',
-            // 'cubrid/agent-xos-settings', // Postgresql, Oracle
+            'cubrid/agent-dbx-settings',
+            'cubrid/agent-xos-settings',
+            'cubrid/agent-xcub-settings'
+            // 'cubrid/agent-network',
+            // 'cubrid/agent-naming',
+            // 'cubrid/agent-aws',
+            // 'cubrid/agent-data',
           ],
         },
         'cubrid/agent-manage',
@@ -2986,11 +2988,13 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1.2.2',
+                id: 'release-notes/k8s/k8s-1.2.4',
               },
               items: [
+                'release-notes/k8s/k8s-1.2.4',
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
                 'release-notes/k8s/k8s-1.2.0',
@@ -3000,7 +3004,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1.1.51',
                 'release-notes/k8s/k8s-1.1.50',
                 'release-notes/k8s/k8s-1.1.49',
-                'release-notes/k8s/k8s-1.1.48',
                 'release-notes/k8s/k8s-previous',
               ],
             },
