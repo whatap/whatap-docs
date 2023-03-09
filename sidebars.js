@@ -4647,7 +4647,21 @@ const sidebars = {
           },
           items: [
             'kubernetes/install-master-node-agent',
-            'kubernetes/install-application-agent',
+            {
+              type: 'category',
+              label: '애플리케이션 에이전트 설치',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/install-application-agent',
+              },
+              items: [
+                'kubernetes/install-docker-java',
+                'kubernetes/install-docker-nodejs',
+                'kubernetes/install-docker-python',
+              ],
+            },
             'kubernetes/create-name-space-project'
           ]
         },

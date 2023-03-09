@@ -580,6 +580,15 @@ main {
         font-size: inherit;
       }
     }
+    .tabs-container h2 {
+      --ifm-h2-font-size: 2rem;
+    }
+    .tabs-container h3 {
+      --ifm-h3-font-size: 1.5rem;
+    }
+    .tabs-container h4 {
+      --ifm-h4-font-size: 1.25rem;
+    }
     hr + h2, hr + h3 {
       padding: 0;
     }
@@ -940,6 +949,9 @@ main {
     }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
+    }
+    img[src*='k8s-download-yaml'] {
+      width: 400px;
     }
     img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'] {
       position: relative;
