@@ -489,6 +489,12 @@ a[class*='tagRegular'] {
 .tabs__item--active {
   background-color: var(--ifm-alert-background);
 }
+div[class*='dataset'] kbd {
+    display: inline-block;
+    position: relative;
+    font-size: 60%;
+    margin-left: 10px;
+}
 div[class*='dataset'] span[class*='hitPath'] {
   color: #00a400;
   font-weight: 700;
