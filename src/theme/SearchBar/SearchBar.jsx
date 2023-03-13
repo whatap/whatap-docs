@@ -243,6 +243,12 @@ export default function SearchBar({ handleSearchBarToggle, }) {
             setInputChanged(true);
         }
     }, []);
+    const onInputKeyPress = useCallback((event) => {
+        console.log(event.key);
+        if (event.key === 'Enter') {
+            console.log("OK");
+        }
+    });
     // Implement hint icons for the search shortcuts on mac and the rest operating systems.
     const isMac = ExecutionEnvironment.canUseDOM
         ? /mac/i.test(navigator.userAgentData?.platform ?? navigator.platform)
