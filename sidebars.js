@@ -2610,7 +2610,8 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'redis/analysis-function',
+                'redis/analysis-count-trend',
+                'redis/analysis-databaseparameter',
                 'redis/log-viewer',
               ]
             },
