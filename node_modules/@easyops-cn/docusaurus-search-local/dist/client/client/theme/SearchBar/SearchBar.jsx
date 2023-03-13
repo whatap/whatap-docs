@@ -244,14 +244,11 @@ export default function SearchBar({ handleSearchBarToggle, }) {
         }
     }, []);
     const onInputKeyPress = useCallback((event) => {
-        console.log(event.target.value);
-        const { siteConfig: { baseUrl }, } = useDocusaurusContext();
-        const params = new URLSearchParams();
-        params.set("q", event.target.value);
-        const url = `${baseUrl}search?${params.toString()}`;
+        // console.log(event.target.value);
+        const searchUrl = `${baseUrl}search?q=${event.target.value.toString()}`;
         if (event.key === 'Enter') {
-            console.log(event.target.value);
-            history.push(url);
+            // console.log(event.target.value);
+            history.push(searchUrl);
         }
     }, []);
     // Implement hint icons for the search shortcuts on mac and the rest operating systems.
