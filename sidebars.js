@@ -185,7 +185,6 @@ const sidebars = {
                 'java/active-transactions',
                 'java/trs-multi-trace',
                 'java/trs-endpoint-setting',
-                'java/analysis-apm-trs',
                 'java/collect-stacks',
               ]
             },
@@ -217,6 +216,7 @@ const sidebars = {
               items: [
                 'java/cube',
                 'java/analysis-apm',
+                'java/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -416,7 +416,6 @@ const sidebars = {
                 'php/trs-profile',
                 // 'php/active-transactions',
                 'php/trs-multi-trace',
-                'php/analysis-apm-trs',
                 'php/collect-stacks',
                 // 'php/trs-endpoint-setting',
               ]
@@ -448,6 +447,7 @@ const sidebars = {
               },
               items: [
                 'php/cube',
+                'php/analysis-apm-trs',
                 // 'php/analysis-apm',
                 {
                   type: 'category',
@@ -625,7 +625,6 @@ const sidebars = {
                 // 'track-transactions/java-collect-stacks',
                 'nodejs/trs-multi-trace',
                 'nodejs/trs-endpoint-setting',
-                'nodejs/analysis-apm-trs',
               ]
             },
             {
@@ -656,6 +655,7 @@ const sidebars = {
               items: [
                 'nodejs/cube',
                 'nodejs/analysis-apm',
+                'nodejs/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -842,7 +842,6 @@ const sidebars = {
                 'python/collect-stacks',
                 'python/trs-multi-trace',
                 'python/trs-endpoint-setting',
-                'python/analysis-apm-trs',
               ]
             },
             {
@@ -873,6 +872,7 @@ const sidebars = {
               items: [
                 'python/cube',
                 'python/analysis-apm',
+                'python/analysis-apm-trs',
                 {
                   type: 'category',
                   label: '보고서',
@@ -1041,7 +1041,6 @@ const sidebars = {
                 'dotnet/trs-profile',
                 'dotnet/active-transactions',
                 'dotnet/trs-multi-trace',
-                'dotnet/analysis-apm-trs',
                 'dotnet/collect-stacks',
                 // 'php/trs-endpoint-setting',
               ]
@@ -1073,6 +1072,7 @@ const sidebars = {
               },
               items: [
                 'dotnet/cube',
+                'dotnet/analysis-apm-trs',
                 // 'php/analysis-apm',
                 {
                   type: 'category',
@@ -1232,7 +1232,6 @@ const sidebars = {
                 'golang/trs-profile',
                 'golang/active-transactions',
                 'golang/trs-multi-trace',
-                'golang/analysis-apm-trs',
                 'golang/collect-stacks',
                 // 'golang/php-trs-endpoint-setting',
               ]
@@ -1264,6 +1263,7 @@ const sidebars = {
               },
               items: [
                 'golang/cube',
+                'golang/analysis-apm-trs',
                 // 'analysis/php-analysis-apm',
                 {
                   type: 'category',
