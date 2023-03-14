@@ -621,7 +621,7 @@ const sidebars = {
               items: [
                 'nodejs/trs-view',
                 'nodejs/trs-profile',
-                'nodejs/active-transactions',
+                // 'nodejs/active-transactions',
                 // 'track-transactions/java-collect-stacks',
                 'nodejs/trs-multi-trace',
                 'nodejs/trs-endpoint-setting',
