@@ -625,6 +625,7 @@ const sidebars = {
                 // 'track-transactions/java-collect-stacks',
                 'nodejs/trs-multi-trace',
                 'nodejs/trs-endpoint-setting',
+                'nodejs/collect-stacks',
               ]
             },
             {
@@ -839,9 +840,9 @@ const sidebars = {
                 'python/trs-view',
                 'python/trs-profile',
                 'python/active-transactions',
-                'python/collect-stacks',
                 'python/trs-multi-trace',
                 'python/trs-endpoint-setting',
+                'python/collect-stacks',
               ]
             },
             {
