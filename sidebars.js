@@ -2945,7 +2945,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2.3.3',
@@ -2954,7 +2954,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2.3.3',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
@@ -2979,7 +2979,11 @@ const sidebars = {
                 id: 'release-notes/k8s/k8s-1.2.4',
               },
               items: [
-                'release-notes/k8s/k8s-1.2.4',
+                {
+                  type: 'doc',
+                  id: 'release-notes/k8s/k8s-1.2.4',
+                  className: 'new',
+                },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
                 'release-notes/k8s/k8s-1.2.0',
@@ -3034,7 +3038,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              className: 'new',
+              // className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
