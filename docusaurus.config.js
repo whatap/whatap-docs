@@ -317,6 +317,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'aws-log/introduction',
+                label: 'AWS Log',
+              },
+              {
+                type: 'doc',
                 docId: 'log/introduction',
                 label: 'Log',
               },
