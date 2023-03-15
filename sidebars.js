@@ -655,7 +655,7 @@ const sidebars = {
               },
               items: [
                 'nodejs/cube',
-                'nodejs/analysis-apm',
+                // 'nodejs/analysis-apm',
                 'nodejs/analysis-apm-trs',
                 {
                   type: 'category',
