@@ -81,6 +81,7 @@
   --ifm-pagination-sub-label: #f0f0f0;
   --ifm-active-menu-color: #636363;
   --ifm-dropdown-link-color: #f2f2f2;
+  --ifm-dropdown-background-color: #3c3e40;
 }
 
 html {
@@ -608,6 +609,9 @@ main {
       code {
         font-size: inherit;
       }
+    }
+    h3[id*='pdf-download'] img {
+      filter: invert(.5);
     }
     h4 {
       margin-top: 0;
@@ -1465,7 +1469,7 @@ main {
     .margin-bottom--lg {
       a {
         h2::before {
-          filter: invert(100);
+          filter: invert(.5);
         }
       }
     }
