@@ -91,7 +91,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /aws-log/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/],
       }
     ],
     [
@@ -300,6 +300,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'aws-log/introduction',
+                label: 'AWS Log',
+              },
+              {
+                type: 'doc',
                 docId: 'azure/install-agent',
                 label: 'Azure Monitor',
               },
@@ -314,11 +319,6 @@ const config = {
                 docId: 'oracle-cloud/install-agent',
                 label: 'Oracle Cloud Monitor',
                 className: 'narrow',
-              },
-              {
-                type: 'doc',
-                docId: 'aws-log/introduction',
-                label: 'AWS Log',
               },
               {
                 type: 'doc',

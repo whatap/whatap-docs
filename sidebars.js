@@ -3235,6 +3235,15 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: 'AWS Log',
+          href: '../aws-log/introduction',
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'link',
           label: 'Azure Monitor',
           href: '../azure/install-agent',
         },
@@ -3255,15 +3264,6 @@ const sidebars = {
           type: 'link',
           label: 'Oracle Cloud Monitor',
           href: '../oracle-cloud/install-agent',
-        },
-        {
-          type: 'html',
-          value: '<hr class="distnq"/>'
-        },
-        {
-          type: 'link',
-          label: 'AWS Log',
-          href: '../aws-log/introduction',
         },
         {
           type: 'html',
@@ -3723,7 +3723,11 @@ const sidebars = {
       },
       items: [
         'aws-log/install-aws-log',
-        'aws-log/uninstall-aws-log',
+        {
+          type: 'doc',
+          label: '자원 삭제하기',
+          id: 'aws-log/delete-aws-resource',
+        },
         'aws-log/aws-log-setting',
         {
           type: 'category',
@@ -3738,8 +3742,28 @@ const sidebars = {
             'aws-log/aws-log-lt',
             'aws-log/aws-log-exp',
             'aws-log/aws-log-search',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'aws-log/flexboard',
+              },
+              items: [
+                'aws-log/flexboard-template',
+                'aws-log/flexboard-create',
+                'aws-log/flexboard-manage',
+                'aws-log/flexboard-metric-widget',
+                'aws-log/flexboard-widget-manage',
+                'aws-log/flexboard-mode',
+                'aws-log/flexboard-share',
+              ],
+            },
             'aws-log/set-notice',
             'aws-log/set-receive-event',
+            'aws-log/set-event-history',
             // {
             //   type: 'category',
             //   label: 'Flex 보드',
