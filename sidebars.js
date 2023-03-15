@@ -2887,11 +2887,17 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.0',
+                id: 'release-notes/python/python-1.3.1',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/python/python-1.3.1',
+                  className: 'new',
+                },
                 'release-notes/python/python-1.3.0',
                 'release-notes/python/python-1.2.4',
                 'release-notes/python/python-1.2.1',
