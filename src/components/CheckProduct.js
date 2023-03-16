@@ -15,6 +15,8 @@ export default function CheckProduct() {
         product = 'python';
     } else if (location.includes('golang')) {
         product = 'golang';
+    } else if (location.includes('dotnet')) {
+        product = 'dotnet';
     } else if (location.includes('server')) {
         product = 'server';
     } else if (location.includes('kubernetes')) {
