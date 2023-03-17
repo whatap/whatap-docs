@@ -275,7 +275,6 @@ html[lang='ko'] {
     a {
       padding: 3px 8px;
       line-height: 1.5;
-      display: inline-block;
       &:hover {
         background: var(--ifm-active-menu-color);
       }
@@ -297,7 +296,7 @@ html[lang='ko'] {
 .menu__list-item.new > div > a::after, .menu__list-item.new > a::after {
   display: inline-block;
   content: '';
-  width: 16px;
+  width: 18px;
   height: 16px;
   background: url('img/ic-release-up.svg') no-repeat;
   transform: rotateZ(0deg);
