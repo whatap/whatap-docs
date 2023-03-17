@@ -51,6 +51,10 @@ export default function CheckProduct() {
         product = 'azure';
     } else if (location.includes('ncloud')) {
         product = 'ncloud';
+    } else if (location.includes('aws-log')) {
+        product = 'aws-log';
+    } else if (location.includes('log')) {
+        product = 'log';
     }
     return (
         product
