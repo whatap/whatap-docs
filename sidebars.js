@@ -1660,11 +1660,8 @@ const sidebars = {
             id: 'mysql/agent-settings'
           },
           items: [
-            'mysql/agent-network',
-            'mysql/agent-naming',
-            'mysql/agent-aws',
-            'mysql/agent-data',
-            // 'mysql/agent-xos-settings',
+            'mysql/agent-dbx-settings',
+            'mysql/agent-xos-settings',
           ],
         },
         'mysql/agent-manage',
@@ -1676,7 +1673,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {

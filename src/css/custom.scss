@@ -868,7 +868,7 @@ main {
     span.snormal {color: #00b543}
     .mark {
       width: 20px;
-      vertical-align: middle;
+      vertical-align: text-top;
       height: 20px;
       border-radius: 50%;
       font-size: var(--ifm-body-small-size);
@@ -880,6 +880,7 @@ main {
       white-space: normal;
       border-width: 1px;
       border-style: solid;
+      padding-bottom: 21px;
     }
     .active {
       background-color: rgb(108, 108, 119);
