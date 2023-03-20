@@ -1714,6 +1714,7 @@ const sidebars = {
               items: [
                 'mysql/analysis-count-trend',
                 'mysql/analysis-databaseparameter',
+                'mysql/analysis-lock-and-deadlock',
                 'mysql/log-viewer',
               ]
             },
@@ -1734,7 +1735,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               // link: {
@@ -1742,10 +1743,6 @@ const sidebars = {
               //   id: 'analysis/db-analysis-report-intro'
               // },
               items: [
-                'mysql/analysis-function',
-                // 'mysql/metrics-intro',
-                // 'mysql/metrics-detect-anormal',
-                'mysql/log-viewer',
                 'mysql/stat',
                 'mysql/report-intro',
                 'mysql/integrated-report',
