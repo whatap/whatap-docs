@@ -4371,7 +4371,7 @@ const sidebars = {
           type: 'category',
           label: '경고 알림',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           items: [
             'url/url-event',
             'url/url-event-history',
