@@ -6,55 +6,57 @@ export default function CheckProduct() {
     const location = isBrowser ? window.location.href : 'fetching location...';
     var product;
     if (location.includes('nodejs')) {
-        product = 'nodejs';
+        product = '-nodejs';
     } else if (location.includes('java')) {
-        product = 'java';
+        product = '-java';
     } else if (location.includes('php')) {
-        product = 'php';
+        product = '-php';
     } else if (location.includes('python')) {
-        product = 'python';
+        product = '-python';
     } else if (location.includes('golang')) {
-        product = 'golang';
+        product = '-golang';
     } else if (location.includes('dotnet')) {
-        product = 'dotnet';
+        product = '-dotnet';
     } else if (location.includes('server')) {
-        product = 'server';
+        product = '-server';
     } else if (location.includes('kubernetes')) {
-        product = 'k8s';
+        product = '-k8s';
     } else if (location.includes('postgresql')) {
-        product = 'postgresql';
+        product = '-postgresql';
     } else if (location.includes('oracle-cloud')) {
-        product = 'oracle-cloud';
+        product = '-oracle-cloud';
     } else if (location.includes('oracle')) {
-        product = 'oracle';
+        product = '-oracle';
     } else if (location.includes('mysql')) {
-        product = 'mysql';
+        product = '-mysql';
     } else if (location.includes('mssql')) {
-        product = 'mssql';
+        product = '-mssql';
     } else if (location.includes('tibero')) {
-        product = 'tibero';
+        product = '-tibero';
     } else if (location.includes('cubrid')) {
-        product = 'cubrid';
+        product = '-cubrid';
     } else if (location.includes('altibase')) {
-        product = 'altibase';
+        product = '-altibase';
     } else if (location.includes('redis')) {
-        product = 'redis';
+        product = '-redis';
     } else if (location.includes('mongodb')) {
-        product = 'mongodb';
+        product = '-mongodb';
     } else if (location.includes('url')) {
-        product = 'url';
+        product = '-url';
     } else if (location.includes('amazon-cloudwatch')) {
-        product = 'aws-cloudwatch';
+        product = '-aws-cloudwatch';
     } else if (location.includes('amazon-ecs')) {
-        product = 'aws-ecs';
+        product = '-aws-ecs';
     } else if (location.includes('azure')) {
-        product = 'azure';
+        product = '-azure';
     } else if (location.includes('ncloud')) {
-        product = 'ncloud';
+        product = '-ncloud';
     } else if (location.includes('aws-log')) {
-        product = 'aws-log';
+        product = '-aws-log';
     } else if (location.includes('log')) {
-        product = 'log';
+        product = '-log';
+    } else {
+        product = '';
     }
     return (
         product

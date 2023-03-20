@@ -1,5 +1,4 @@
 import React from 'react';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 import checkProduct from '@site/src/components/CheckProduct';
 
 export default function ChangeImgName({img, ext, desc}) {
@@ -7,7 +6,7 @@ export default function ChangeImgName({img, ext, desc}) {
     // console.log(isBrowser);
     // console.log(product);
     return (
-        <img src={'/img/' + img + '-' + product + ext} alt={desc}
+        <img src={'/img/' + img + product + ext} alt={desc}
         />
     );
 }

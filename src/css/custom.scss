@@ -552,6 +552,9 @@ code {
     }
   }
 }
+.medium-zoom-image--opened {
+  z-index: 999;
+}
 // UI
 
 // document
@@ -596,9 +599,6 @@ main {
     }
     .tabs-container h4 {
       --ifm-h4-font-size: 1.25rem;
-    }
-    hr {
-      margin: 10px 0;
     }
     hr + h2, hr + h3 {
       padding: 0;
@@ -1091,7 +1091,7 @@ main {
       }
     }
     blockquote {
-      * {
+      > * {
         margin-left: 12px !important;
       }
     }
