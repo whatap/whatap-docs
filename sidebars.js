@@ -2979,7 +2979,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1.2.4',
@@ -2988,7 +2988,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1.2.4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3056,6 +3056,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Focus',
+              className: 'new',
               id: 'release-notes/focus/focus-release-notes',
             },
           ],
