@@ -1683,7 +1683,7 @@ const sidebars = {
               items: [
                 'mysql/instance-list',
                 'mysql/instance-monitoring',
-                // 'mysql/multi-instance-monitoring',
+                'mysql/multi-instance-monitoring',
                 'mysql/slow-query',
               ],
             },
@@ -1708,6 +1708,17 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql/analysis-count-trend',
+                'mysql/analysis-databaseparameter',
+                'mysql/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -1716,7 +1727,7 @@ const sidebars = {
                 id: 'mysql/metrics-intro'
               },
               items: [
-                'mysql/metrics-mysql',
+                'mysql/metrics-data-list',
                 'mysql/metrics-chart',
                 'mysql/metrics-detect-anormal',
               ]
