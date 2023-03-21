@@ -1764,6 +1764,7 @@ const sidebars = {
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
                 'mysql/set-event-format',
+                'mysql/file-log-notice',
               ],
             },
             // {
@@ -2636,6 +2637,7 @@ const sidebars = {
                 'redis/set-receive-event',
                 'redis/set-event-history',
                 'redis/set-event-format',
+                'redis/file-log-notice',
               ],
             },
             {

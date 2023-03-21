@@ -6,7 +6,8 @@ export default function ChangeImgName({img, ext, desc}) {
     // console.log(isBrowser);
     // console.log(product);
     return (
-        <img src={'/img/' + img + product + ext} alt={desc}
-        />
+        <p>
+            <img src={'/img/' + img + product + ext} alt={desc} />
+        </p>
     );
 }
