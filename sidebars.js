@@ -4921,6 +4921,7 @@ const sidebars = {
             'log/log-search',           
             'log/set-notice',
             'log/set-receive-event',
+            'log/set-event-history',
           ],
         },
       ]  
