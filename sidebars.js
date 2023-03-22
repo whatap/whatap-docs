@@ -4352,8 +4352,8 @@ const sidebars = {
     {
       type: 'category',
       label: '브라우저 모니터링(RUM)',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'rum/introduction'
