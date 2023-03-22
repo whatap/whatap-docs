@@ -3709,75 +3709,64 @@ const sidebars = {
       ]
     }
   ],
-  // awslogSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: 'AWS Log 모니터링',
-  //     collapsible: false,
-  //     collapsed: false,
-  //     link: {
-  //       type: 'doc',
-  //       id: 'aws-log/aws-log-intro'
-  //     },
-  //     items: [
-  //       'aws-log/install-aws-log',
-  //       {
-  //         type: 'category',
-  //         label: '주요 메뉴 알아보기',
-  //         collapsible: true,
-  //         collapsed: false,
-  //         link: {
-  //           type: 'doc',
-  //           id: 'aws-log/learn-aws-log-main-menu'
-  //         },
-  //         items: [
-  //           'log/aws-log-lt',
-  //           'log/aws-log-exp',
-  //           'log/aws-log-search',
-  //           'log/aws-log-setting',
-  //           {
-  //             type: 'category',
-  //             label: 'Flex 보드',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             link: {
-  //               type: 'doc',
-  //               id: 'dashboard/aws-log-flexboard',
-  //             },
-  //             items: [
-  //               'dashboard/aws-log-flexboard-template',
-  //               'dashboard/aws-log-flexboard-create',
-  //               'dashboard/aws-log-flexboard-metric-widget',
-  //               'dashboard/aws-log-flexboard-widget-manage',
-  //               'dashboard/aws-log-flexboard-mode',
-  //               'dashboard/aws-log-flexboard-share',
-  //             ]
-  //           },
-  //           'metrics/aws-log-metrics-intro',
-  //           {
-  //             type: 'doc',
-  //             label: '알림 설정하기',
-  //             id: 'notification/aws-log-set-notice'
-  //           },
-  //           // {
-  //           //   type: 'category',
-  //           //   label: '알림 설정하기',
-  //           //   collapsible: true,
-  //           //   collapsed: true,
-  //           //   link: {
-  //           //     type: 'doc',
-  //           //     id: 'notification/aws-log-set-notice',
-  //           //   },
-  //           //   items: [
-  //           //     'notification/aws-log-metric-warning-notice',
-  //           //     'notification/aws-log-set-receive-event',               
-  //           //   ]
-  //           // },
-  //         ],
-  //       }
-  //     ]
-  //   }
-  // ],
+  awslogSidebar: [
+    {
+      type: 'category',
+      label: 'AWS Log 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'aws-log-p/introduction'
+      },
+      items: [
+        'aws-log-p/install-aws-log',
+        {
+          type: 'doc',
+          label: '자원 삭제하기',
+          id: 'aws-log-p/delete-aws-resource',
+        },
+        'aws-log-p/aws-log-setting',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          // link: {
+          //   type: 'doc',
+          //   id: 'aws-log-p/learn-aws-log-main-menu'
+          // },
+          items: [
+            'aws-log-p/aws-log-lt',
+            'aws-log-p/aws-log-exp',
+            'aws-log-p/aws-log-search',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'aws-log-p/flexboard',
+              },
+              items: [
+                'aws-log-p/flexboard-template',
+                'aws-log-p/flexboard-create',
+                'aws-log-p/flexboard-manage',
+                'aws-log-p/flexboard-metric-widget',
+                'aws-log-p/flexboard-widget-manage',
+                'aws-log-p/flexboard-mode',
+                'aws-log-p/flexboard-share',
+              ],
+            },
+            'aws-log-p/set-notice',
+            'aws-log-p/set-receive-event',
+            'aws-log-p/set-event-history',
+          ],
+        }
+      ]
+    }
+  ],
   pluginSidebar: [
     {
       type: 'category',
