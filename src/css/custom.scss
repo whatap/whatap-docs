@@ -179,7 +179,7 @@ html[lang='ko'] {
     // visibility: visible;
     // opacity: 1;
     li {
-      display: grid;
+      display: inline-grid;
       margin-bottom: 4px;
       color: #333333;
       font-size: var(--ifm-body-small-size);
