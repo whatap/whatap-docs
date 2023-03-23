@@ -1745,7 +1745,6 @@ const sidebars = {
               items: [
                 'mysql/stat',
                 'mysql/report-intro',
-                'mysql/integrated-report',
               ]
             },
             {
