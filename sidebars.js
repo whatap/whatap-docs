@@ -1851,7 +1851,16 @@ const sidebars = {
                 'mysql-rds/flexboard-share',
               ],
             },
-            'mysql-rds/analysis-function',
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql-rds/analysis-lock-and-deadlock',
+                'mysql-rds/analysis-databaseparameter',
+              ]
+            },
             {
               type: 'category',
               label: '메트릭스',

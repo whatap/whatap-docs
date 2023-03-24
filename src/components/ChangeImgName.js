@@ -3,11 +3,17 @@ import checkProduct from '@site/src/components/CheckProduct';
 
 export default function ChangeImgName({img, ext, desc}) {
     const product = checkProduct();
-    // console.log(isBrowser);
-    // console.log(product);
+    
+    let imgFilePath = '/img/' + img + product + ext;
+    const onErrorImg = (e) => {
+        e.target.src = '/img/' + img + ext;
+    }
     return (
         <p>
-            <img src={'/img/' + img + product + ext} alt={desc} />
+            <img src={imgFilePath} 
+                alt={desc} 
+                onError={onErrorImg} 
+            />
         </p>
     );
 }
