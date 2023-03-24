@@ -4563,30 +4563,47 @@ const sidebars = {
                 'server/metrics-detect-anormal',
               ]
             },
+            'server/server-list',
+            'server/server-detail',
+            'server/cube',
             {
               type: 'category',
-              label: '분석하기',
+              label: '보고서',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'server/report-intro'
+              },
               items: [
-                'server/server-list',
-                'server/server-detail',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'server/report-intro'
-                  },
-                  items: [
-                    'server/report',
-                    'server/integrated-report',
-                  ]
-                }
+                'server/report',
+                'server/integrated-report',
               ]
             },
+            // {
+            //   type: 'category',
+            //   label: '분석하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   items: [
+            //     'server/server-list',
+            //     'server/server-detail',
+            //     {
+            //       type: 'category',
+            //       label: '보고서',
+            //       collapsible: true,
+            //       collapsed: true,
+            //       link: {
+            //         type: 'doc',
+            //         id: 'server/report-intro'
+            //       },
+            //       items: [
+            //         'server/report',
+            //         'server/integrated-report',
+            //       ]
+            //     }
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
