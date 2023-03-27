@@ -84,7 +84,7 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: false,
-        language: [ 'ko' ],
+        language: [ 'ko', 'en' ],
         indexBlog: false,
         docsRouteBasePath: '/',
         removeDefaultStemmer: false,
@@ -298,11 +298,11 @@ const config = {
                 docId: 'amazon-ecs/introduction',
                 label: 'Amazon ECS',
               },
-              {
-                type: 'doc',
-                docId: 'aws-log/introduction',
-                label: 'AWS Log',
-              },
+              // {
+              //   type: 'doc',
+              //   docId: 'aws-log/introduction',
+              //   label: 'AWS Log',
+              // },
               {
                 type: 'doc',
                 docId: 'azure/install-agent',

@@ -89,7 +89,7 @@ html {
 }
 html[lang='ko'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans KR'; //'Noto Emoji'
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 * {
@@ -179,7 +179,7 @@ html[lang='ko'] {
     // visibility: visible;
     // opacity: 1;
     li {
-      display: grid;
+      display: inline-grid;
       margin-bottom: 4px;
       color: #333333;
       font-size: var(--ifm-body-small-size);

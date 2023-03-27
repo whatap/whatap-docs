@@ -2979,7 +2979,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1.2.4',
@@ -2988,7 +2988,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1.2.4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3056,6 +3056,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Focus',
+              className: 'new',
               id: 'release-notes/focus/focus-release-notes',
             },
           ],
@@ -3239,15 +3240,15 @@ const sidebars = {
           type: 'html',
           value: '<hr class="distnq"/>'
         },
-        {
-          type: 'link',
-          label: 'AWS Log',
-          href: '../aws-log/introduction',
-        },
-        {
-          type: 'html',
-          value: '<hr class="distnq"/>'
-        },
+        // {
+        //   type: 'link',
+        //   label: 'AWS Log',
+        //   href: '../aws-log/introduction',
+        // },
+        // {
+        //   type: 'html',
+        //   value: '<hr class="distnq"/>'
+        // },
         {
           type: 'link',
           label: 'Azure Monitor',
@@ -3770,44 +3771,6 @@ const sidebars = {
             'aws-log/set-notice',
             'aws-log/set-receive-event',
             'aws-log/set-event-history',
-            // {
-            //   type: 'category',
-            //   label: 'Flex 보드',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'dashboard/aws-log-flexboard',
-            //   },
-            //   items: [
-            //     'dashboard/aws-log-flexboard-template',
-            //     'dashboard/aws-log-flexboard-create',
-            //     'dashboard/aws-log-flexboard-metric-widget',
-            //     'dashboard/aws-log-flexboard-widget-manage',
-            //     'dashboard/aws-log-flexboard-mode',
-            //     'dashboard/aws-log-flexboard-share',
-            //   ]
-            // },
-            // 'metrics/aws-log-metrics-intro',
-            // {
-            //   type: 'doc',
-            //   label: '알림 설정하기',
-            //   id: 'notification/aws-log-set-notice'
-            // },
-            // {
-            //   type: 'category',
-            //   label: '알림 설정하기',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'notification/aws-log-set-notice',
-            //   },
-            //   items: [
-            //     'notification/aws-log-metric-warning-notice',
-            //     'notification/aws-log-set-receive-event',               
-            //   ]
-            // },
           ],
         }
       ]
@@ -4398,8 +4361,8 @@ const sidebars = {
     {
       type: 'category',
       label: '브라우저 모니터링(RUM)',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'rum/introduction'
@@ -4609,30 +4572,47 @@ const sidebars = {
                 'server/metrics-detect-anormal',
               ]
             },
+            'server/server-list',
+            'server/server-detail',
+            'server/cube',
             {
               type: 'category',
-              label: '분석하기',
+              label: '보고서',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'server/report-intro'
+              },
               items: [
-                'server/server-list',
-                'server/server-detail',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'server/report-intro'
-                  },
-                  items: [
-                    'server/report',
-                    'server/integrated-report',
-                  ]
-                }
+                'server/report',
+                'server/integrated-report',
               ]
             },
+            // {
+            //   type: 'category',
+            //   label: '분석하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   items: [
+            //     'server/server-list',
+            //     'server/server-detail',
+            //     {
+            //       type: 'category',
+            //       label: '보고서',
+            //       collapsible: true,
+            //       collapsed: true,
+            //       link: {
+            //         type: 'doc',
+            //         id: 'server/report-intro'
+            //       },
+            //       items: [
+            //         'server/report',
+            //         'server/integrated-report',
+            //       ]
+            //     }
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',
