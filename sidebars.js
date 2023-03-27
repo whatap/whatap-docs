@@ -1738,10 +1738,6 @@ const sidebars = {
               label: '통계/보고서',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'mysql/stat',
                 'mysql/report-intro',
@@ -1766,11 +1762,6 @@ const sidebars = {
                 'mysql/file-log-notice',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
@@ -1804,7 +1795,6 @@ const sidebars = {
           collapsed: true,
           items: [
             'mysql-rds/install-agent',
-            // 'mysql-rds/after-install-agent',
             'mysql-rds/troubleshooting',
           ],
         },
@@ -1829,7 +1819,6 @@ const sidebars = {
                 'mysql-rds/instance-list',
                 'mysql-rds/instance-monitoring',
                 'mysql-rds/multi-instance-monitoring',
-                // 'mysql-rds/slow-query',
               ],
             },
             {
@@ -1874,10 +1863,6 @@ const sidebars = {
                 'mysql-rds/metrics-data-list',
                 'mysql-rds/metrics-chart',
                 'mysql-rds/metrics-detect-anormal',
-                // 'mysql-rds/log-viewer',
-                // 'mysql-rds/stat',
-                // 'mysql-rds/report-intro',
-                // 'mysql-rds/integrated-report',
               ]
             },
             {
@@ -1885,14 +1870,9 @@ const sidebars = {
               label: '통계/보고서',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'mysql/stat'
-              // },
               items: [
                 'mysql-rds/stat',
                 'mysql-rds/report-intro',
-                'mysql-rds/integrated-report',
               ],
             },
             {
@@ -1913,11 +1893,6 @@ const sidebars = {
                 'mysql-rds/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
