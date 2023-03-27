@@ -24,7 +24,7 @@ export default function CheckProduct() {
     } else if (location.includes('postgresql')) {
         product = '-postgresql';
     } else if (location.includes('oracle-cloud')) {
-        product = '-oracle-cloud';
+        product = '-oci';
     } else if (location.includes('oracle')) {
         product = '-oracle';
     } else if (location.includes('mysql')) {
