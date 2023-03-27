@@ -3,13 +3,825 @@
     "message": "Next",
     "description": "The label for version current"
   },
+  "sidebar.javaSidebar.category.JAVA 모니터링": {
+    "message": "JAVA 모니터링",
+    "description": "The label for category JAVA 모니터링 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.에이전트 설치": {
+    "message": "에이전트 설치",
+    "description": "The label for category 에이전트 설치 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.에이전트 플러그인": {
+    "message": "에이전트 플러그인",
+    "description": "The label for category 에이전트 플러그인 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.관리하기": {
+    "message": "관리하기",
+    "description": "The label for category 관리하기 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.토폴로지": {
+    "message": "토폴로지",
+    "description": "The label for category 토폴로지 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.트랜잭션": {
+    "message": "트랜잭션",
+    "description": "The label for category 트랜잭션 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.보고서": {
+    "message": "보고서",
+    "description": "The label for category 보고서 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar javaSidebar"
+  },
+  "sidebar.javaSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar javaSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.javaSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar javaSidebar, linking to the doc java/supported-spec"
+  },
+  "sidebar.javaSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar javaSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.phpSidebar.category.PHP 모니터링": {
+    "message": "PHP 모니터링",
+    "description": "The label for category PHP 모니터링 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.에이전트 설치": {
+    "message": "에이전트 설치",
+    "description": "The label for category 에이전트 설치 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.관리하기": {
+    "message": "관리하기",
+    "description": "The label for category 관리하기 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.토폴로지": {
+    "message": "토폴로지",
+    "description": "The label for category 토폴로지 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.트랜잭션": {
+    "message": "트랜잭션",
+    "description": "The label for category 트랜잭션 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.보고서": {
+    "message": "보고서",
+    "description": "The label for category 보고서 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar phpSidebar"
+  },
+  "sidebar.phpSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar phpSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.phpSidebar.doc.설치 점검": {
+    "message": "설치 점검",
+    "description": "The label for the doc item 설치 점검 in sidebar phpSidebar, linking to the doc php/install-check"
+  },
+  "sidebar.phpSidebar.doc.설치 문제 해결": {
+    "message": "설치 문제 해결",
+    "description": "The label for the doc item 설치 문제 해결 in sidebar phpSidebar, linking to the doc php/agent-troubleshooting"
+  },
+  "sidebar.phpSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar phpSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.nodejsSidebar.category.Node.js 모니터링": {
+    "message": "Node.js 모니터링",
+    "description": "The label for category Node.js 모니터링 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.토폴로지": {
+    "message": "토폴로지",
+    "description": "The label for category 토폴로지 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.트랜잭션": {
+    "message": "트랜잭션",
+    "description": "The label for category 트랜잭션 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.보고서": {
+    "message": "보고서",
+    "description": "The label for category 보고서 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar nodejsSidebar"
+  },
+  "sidebar.nodejsSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar nodejsSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.nodejsSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar nodejsSidebar, linking to the doc nodejs/supported-spec"
+  },
+  "sidebar.nodejsSidebar.doc.에이전트 설치": {
+    "message": "에이전트 설치",
+    "description": "The label for the doc item 에이전트 설치 in sidebar nodejsSidebar, linking to the doc nodejs/install-agent"
+  },
+  "sidebar.nodejsSidebar.doc.설치 점검": {
+    "message": "설치 점검",
+    "description": "The label for the doc item 설치 점검 in sidebar nodejsSidebar, linking to the doc nodejs/install-check"
+  },
+  "sidebar.nodejsSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar nodejsSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.pySidebar.category.Python 모니터링": {
+    "message": "Python 모니터링",
+    "description": "The label for category Python 모니터링 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.관리하기": {
+    "message": "관리하기",
+    "description": "The label for category 관리하기 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.토폴로지": {
+    "message": "토폴로지",
+    "description": "The label for category 토폴로지 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.트랜잭션": {
+    "message": "트랜잭션",
+    "description": "The label for category 트랜잭션 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.보고서": {
+    "message": "보고서",
+    "description": "The label for category 보고서 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar pySidebar"
+  },
+  "sidebar.pySidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar pySidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.pySidebar.doc.고급 기능": {
+    "message": "고급 기능",
+    "description": "The label for the doc item 고급 기능 in sidebar pySidebar, linking to the doc python/advanced-feature"
+  },
+  "sidebar.pySidebar.doc.에이전트 삭제": {
+    "message": "에이전트 삭제",
+    "description": "The label for the doc item 에이전트 삭제 in sidebar pySidebar, linking to the doc python/agent-remove"
+  },
+  "sidebar.pySidebar.doc.패키지 관리": {
+    "message": "패키지 관리",
+    "description": "The label for the doc item 패키지 관리 in sidebar pySidebar, linking to the doc python/manage-pkg"
+  },
+  "sidebar.pySidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar pySidebar, linking to the doc log/introduction"
+  },
+  "sidebar.dotNetSidebar.category..NET 모니터링": {
+    "message": ".NET 모니터링",
+    "description": "The label for category .NET 모니터링 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.토폴로지": {
+    "message": "토폴로지",
+    "description": "The label for category 토폴로지 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.트랜잭션": {
+    "message": "트랜잭션",
+    "description": "The label for category 트랜잭션 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.보고서": {
+    "message": "보고서",
+    "description": "The label for category 보고서 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar dotNetSidebar"
+  },
+  "sidebar.dotNetSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar dotNetSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.dotNetSidebar.doc.관리하기": {
+    "message": "관리하기",
+    "description": "The label for the doc item 관리하기 in sidebar dotNetSidebar, linking to the doc dotnet/agent-manage"
+  },
+  "sidebar.dotNetSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar dotNetSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.goSidebar.category.Golang 모니터링": {
+    "message": "Golang 모니터링",
+    "description": "The label for category Golang 모니터링 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.토폴로지": {
+    "message": "토폴로지",
+    "description": "The label for category 토폴로지 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.트랜잭션": {
+    "message": "트랜잭션",
+    "description": "The label for category 트랜잭션 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.보고서": {
+    "message": "보고서",
+    "description": "The label for category 보고서 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar goSidebar"
+  },
+  "sidebar.goSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar goSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.goSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar goSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.postgreSidebar.category.PostgreSQL 모니터링": {
+    "message": "PostgreSQL 모니터링",
+    "description": "The label for category PostgreSQL 모니터링 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar postgreSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.postgreSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar postgreSidebar, linking to the doc postgresql/monitoring-support"
+  },
+  "sidebar.dboracleSidebar.category.Oracle 모니터링": {
+    "message": "Oracle 모니터링",
+    "description": "The label for category Oracle 모니터링 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar dboracleSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.dboracleSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar dboracleSidebar, linking to the doc oracle/monitoring-support"
+  },
+  "sidebar.mysqlSidebar.category.MySQL 모니터링": {
+    "message": "MySQL 모니터링",
+    "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar mysqlSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.mysqlSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar mysqlSidebar, linking to the doc mysql/monitoring-support"
+  },
+  "sidebar.mysqlrdsSidebar.category.MySQL RDS 모니터링": {
+    "message": "MySQL RDS 모니터링",
+    "description": "The label for category MySQL RDS 모니터링 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar mysqlrdsSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.mysqlrdsSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar mysqlrdsSidebar, linking to the doc mysql-rds/monitoring-support"
+  },
+  "sidebar.mssqlSidebar.category.MS SQL Server 모니터링": {
+    "message": "MS SQL Server 모니터링",
+    "description": "The label for category MS SQL Server 모니터링 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar mssqlSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.mssqlSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar mssqlSidebar, linking to the doc mssql/monitoring-support"
+  },
+  "sidebar.tiberoSidebar.category.Tibero 모니터링": {
+    "message": "Tibero 모니터링",
+    "description": "The label for category Tibero 모니터링 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar tiberoSidebar"
+  },
+  "sidebar.tiberoSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar tiberoSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.tiberoSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar tiberoSidebar, linking to the doc tibero/monitoring-support"
+  },
+  "sidebar.cubridSidebar.category.CUBRID 모니터링": {
+    "message": "CUBRID 모니터링",
+    "description": "The label for category CUBRID 모니터링 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar cubridSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.cubridSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar cubridSidebar, linking to the doc cubrid/monitoring-support"
+  },
+  "sidebar.altibaseSidebar.category.Altibase 모니터링": {
+    "message": "Altibase 모니터링",
+    "description": "The label for category Altibase 모니터링 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar altibaseSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.altibaseSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar altibaseSidebar, linking to the doc altibase/monitoring-support"
+  },
+  "sidebar.redisSidebar.category.Redis 모니터링": {
+    "message": "Redis 모니터링",
+    "description": "The label for category Redis 모니터링 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar redisSidebar"
+  },
+  "sidebar.redisSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar redisSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.redisSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar redisSidebar, linking to the doc redis/monitoring-support"
+  },
+  "sidebar.mongodbSidebar.category.MongoDB 모니터링": {
+    "message": "MongoDB 모니터링",
+    "description": "The label for category MongoDB 모니터링 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "실시간 DB 성능 지표 확인",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.분석과 통계": {
+    "message": "분석과 통계",
+    "description": "The label for category 분석과 통계 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar mongodbSidebar"
+  },
+  "sidebar.mongodbSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar mongodbSidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.mongodbSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar mongodbSidebar, linking to the doc mongodb/monitoring-support"
+  },
   "sidebar.releaseSidebar.category.릴리스 노트": {
     "message": "릴리스 노트",
     "description": "The label for category 릴리스 노트 in sidebar releaseSidebar"
   },
-  "sidebar.releaseSidebar.category.Service 🚀": {
-    "message": "Service 🚀",
-    "description": "The label for category Service 🚀 in sidebar releaseSidebar"
+  "sidebar.releaseSidebar.category.Service": {
+    "message": "Service",
+    "description": "The label for category Service in sidebar releaseSidebar"
   },
   "sidebar.releaseSidebar.category.에이전트": {
     "message": "에이전트",
@@ -35,17 +847,29 @@
     "message": "Golang",
     "description": "The label for category Golang in sidebar releaseSidebar"
   },
-  "sidebar.releaseSidebar.category.Server 🚀": {
-    "message": "Server 🚀",
-    "description": "The label for category Server 🚀 in sidebar releaseSidebar"
+  "sidebar.releaseSidebar.category.Server": {
+    "message": "Server",
+    "description": "The label for category Server in sidebar releaseSidebar"
+  },
+  "sidebar.releaseSidebar.category.Kubernetes": {
+    "message": "Kubernetes",
+    "description": "The label for category Kubernetes in sidebar releaseSidebar"
   },
   "sidebar.releaseSidebar.category.DB": {
     "message": "DB",
     "description": "The label for category DB in sidebar releaseSidebar"
   },
-  "sidebar.releaseSidebar.category.Kubernetes": {
-    "message": "Kubernetes",
-    "description": "The label for category Kubernetes in sidebar releaseSidebar"
+  "sidebar.releaseSidebar.category.XOS": {
+    "message": "XOS",
+    "description": "The label for category XOS in sidebar releaseSidebar"
+  },
+  "sidebar.releaseSidebar.doc.DBX": {
+    "message": "DBX",
+    "description": "The label for the doc item DBX in sidebar releaseSidebar, linking to the doc release-notes/db/dbx-release-notes"
+  },
+  "sidebar.releaseSidebar.doc.URL": {
+    "message": "URL",
+    "description": "The label for the doc item URL in sidebar releaseSidebar, linking to the doc release-notes/url/url-release-notes"
   },
   "sidebar.releaseSidebar.doc.Amazon ECS": {
     "message": "Amazon ECS",
@@ -54,10 +878,6 @@
   "sidebar.releaseSidebar.doc.Telegraf": {
     "message": "Telegraf",
     "description": "The label for the doc item Telegraf in sidebar releaseSidebar, linking to the doc release-notes/telegraf/telegraf-release-notes"
-  },
-  "sidebar.releaseSidebar.doc.URL": {
-    "message": "URL",
-    "description": "The label for the doc item URL in sidebar releaseSidebar, linking to the doc release-notes/url/url-release-notes"
   },
   "sidebar.releaseSidebar.doc.Focus": {
     "message": "Focus",
@@ -71,33 +891,105 @@
     "message": "시작하기",
     "description": "The label for category 시작하기 in sidebar indexSidebar"
   },
-  "sidebar.indexSidebar.category.제품별 문서 바로가기": {
-    "message": "제품별 문서 바로가기",
-    "description": "The label for category 제품별 문서 바로가기 in sidebar indexSidebar"
+  "sidebar.indexSidebar.category.상품별 문서 바로가기": {
+    "message": "상품별 문서 바로가기",
+    "description": "The label for category 상품별 문서 바로가기 in sidebar indexSidebar"
   },
-  "sidebar.indexSidebar.link.애플리케이션": {
-    "message": "애플리케이션",
-    "description": "The label for link 애플리케이션 in sidebar indexSidebar, linking to ../apm/application-intro"
+  "sidebar.indexSidebar.category.관리": {
+    "message": "관리",
+    "description": "The label for category 관리 in sidebar indexSidebar"
   },
-  "sidebar.indexSidebar.link.서버": {
-    "message": "서버",
-    "description": "The label for link 서버 in sidebar indexSidebar, linking to ../server/server-intro"
+  "sidebar.indexSidebar.link.Java": {
+    "message": "Java",
+    "description": "The label for link Java in sidebar indexSidebar, linking to ../java/introduction"
   },
-  "sidebar.indexSidebar.link.데이터베이스": {
-    "message": "데이터베이스",
-    "description": "The label for link 데이터베이스 in sidebar indexSidebar, linking to ../db/db-monitoring-intro"
+  "sidebar.indexSidebar.link.PHP": {
+    "message": "PHP",
+    "description": "The label for link PHP in sidebar indexSidebar, linking to ../php/introduction"
   },
-  "sidebar.indexSidebar.link.쿠버네티스": {
-    "message": "쿠버네티스",
-    "description": "The label for link 쿠버네티스 in sidebar indexSidebar, linking to ../kubernetes/kubernetes-intro"
+  "sidebar.indexSidebar.link.Node.js": {
+    "message": "Node.js",
+    "description": "The label for link Node.js in sidebar indexSidebar, linking to ../nodejs/introduction"
   },
-  "sidebar.indexSidebar.link.클라우드": {
-    "message": "클라우드",
-    "description": "The label for link 클라우드 in sidebar indexSidebar, linking to ../ref-cloud/cloud"
+  "sidebar.indexSidebar.link.Python": {
+    "message": "Python",
+    "description": "The label for link Python in sidebar indexSidebar, linking to ../python/introduction"
   },
-  "sidebar.indexSidebar.link.로그": {
-    "message": "로그",
-    "description": "The label for link 로그 in sidebar indexSidebar, linking to ../log/log-intro"
+  "sidebar.indexSidebar.link..NET": {
+    "message": ".NET",
+    "description": "The label for link .NET in sidebar indexSidebar, linking to ../dotnet/introduction"
+  },
+  "sidebar.indexSidebar.link.Golang": {
+    "message": "Golang",
+    "description": "The label for link Golang in sidebar indexSidebar, linking to ../golang/introduction"
+  },
+  "sidebar.indexSidebar.link.Server": {
+    "message": "Server",
+    "description": "The label for link Server in sidebar indexSidebar, linking to ../server/introduction"
+  },
+  "sidebar.indexSidebar.link.Kubernetes": {
+    "message": "Kubernetes",
+    "description": "The label for link Kubernetes in sidebar indexSidebar, linking to ../kubernetes/introduction"
+  },
+  "sidebar.indexSidebar.link.PostgreSQL": {
+    "message": "PostgreSQL",
+    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to ../postgresql/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.Oracle": {
+    "message": "Oracle",
+    "description": "The label for link Oracle in sidebar indexSidebar, linking to ../oracle/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.MySQL": {
+    "message": "MySQL",
+    "description": "The label for link MySQL in sidebar indexSidebar, linking to ../mysql/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.MS SQL Server": {
+    "message": "MS SQL Server",
+    "description": "The label for link MS SQL Server in sidebar indexSidebar, linking to ../mssql/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.Tibero": {
+    "message": "Tibero",
+    "description": "The label for link Tibero in sidebar indexSidebar, linking to ../tibero/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.CUBRID": {
+    "message": "CUBRID",
+    "description": "The label for link CUBRID in sidebar indexSidebar, linking to ../cubrid/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.Altibase": {
+    "message": "Altibase",
+    "description": "The label for link Altibase in sidebar indexSidebar, linking to ../altibase/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.Redis": {
+    "message": "Redis",
+    "description": "The label for link Redis in sidebar indexSidebar, linking to ../redis/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.MongoDB": {
+    "message": "MongoDB",
+    "description": "The label for link MongoDB in sidebar indexSidebar, linking to ../mongodb/monitoring-intro"
+  },
+  "sidebar.indexSidebar.link.Amazon CloudWatch": {
+    "message": "Amazon CloudWatch",
+    "description": "The label for link Amazon CloudWatch in sidebar indexSidebar, linking to ../amazon-cloudwatch/install-agent"
+  },
+  "sidebar.indexSidebar.link.Amazon ECS": {
+    "message": "Amazon ECS",
+    "description": "The label for link Amazon ECS in sidebar indexSidebar, linking to ../amazon-ecs/introduction"
+  },
+  "sidebar.indexSidebar.link.Azure Monitor": {
+    "message": "Azure Monitor",
+    "description": "The label for link Azure Monitor in sidebar indexSidebar, linking to ../azure/install-agent"
+  },
+  "sidebar.indexSidebar.link.Naver Cloud Monitoring": {
+    "message": "Naver Cloud Monitoring",
+    "description": "The label for link Naver Cloud Monitoring in sidebar indexSidebar, linking to ../ncloud/install-agent"
+  },
+  "sidebar.indexSidebar.link.Oracle Cloud Monitor": {
+    "message": "Oracle Cloud Monitor",
+    "description": "The label for link Oracle Cloud Monitor in sidebar indexSidebar, linking to ../oracle-cloud/install-agent"
+  },
+  "sidebar.indexSidebar.link.Log": {
+    "message": "Log",
+    "description": "The label for link Log in sidebar indexSidebar, linking to ../log/introduction"
   },
   "sidebar.indexSidebar.link.URL": {
     "message": "URL",
@@ -115,9 +1007,13 @@
     "message": "릴리스 노트",
     "description": "The label for link 릴리스 노트 in sidebar indexSidebar, linking to ../release-notes"
   },
-  "sidebar.indexSidebar.doc.확장 도구": {
-    "message": "확장 도구",
-    "description": "The label for the doc item 확장 도구 in sidebar indexSidebar, linking to the doc extensions"
+  "sidebar.indexSidebar.doc.와탭 기술 문서 안내": {
+    "message": "와탭 기술 문서 안내",
+    "description": "The label for the doc item 와탭 기술 문서 안내 in sidebar indexSidebar, linking to the doc getting-started/welcome-to-whatapdocs"
+  },
+  "sidebar.indexSidebar.doc.Extensions": {
+    "message": "Extensions",
+    "description": "The label for the doc item Extensions in sidebar indexSidebar, linking to the doc extensions"
   },
   "sidebar.cloudSidebar.category.클라우드 모니터링": {
     "message": "클라우드 모니터링",
@@ -139,9 +1035,9 @@
     "message": "알림 설정하기",
     "description": "The label for category 알림 설정하기 in sidebar cloudSidebar"
   },
-  "sidebar.cloudSidebar.category.Amazon Cloudwatch": {
-    "message": "Amazon Cloudwatch",
-    "description": "The label for category Amazon Cloudwatch in sidebar cloudSidebar"
+  "sidebar.cloudSidebar.category.Amazon CloudWatch": {
+    "message": "Amazon CloudWatch",
+    "description": "The label for category Amazon CloudWatch in sidebar cloudSidebar"
   },
   "sidebar.cloudSidebar.category.Azure Monitor": {
     "message": "Azure Monitor",
@@ -175,6 +1071,10 @@
     "message": "Open API 호출",
     "description": "The label for category Open API 호출 in sidebar referSidebar"
   },
+  "sidebar.referSidebar.category.자주 묻는 질문": {
+    "message": "자주 묻는 질문",
+    "description": "The label for category 자주 묻는 질문 in sidebar referSidebar"
+  },
   "sidebar.awslogSidebar.category.AWS Log 모니터링": {
     "message": "AWS Log 모니터링",
     "description": "The label for category AWS Log 모니터링 in sidebar awslogSidebar"
@@ -187,13 +1087,13 @@
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar awslogSidebar"
   },
-  "sidebar.awslogSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar awslogSidebar"
+  "sidebar.awslogSidebar.doc.자원 삭제하기": {
+    "message": "자원 삭제하기",
+    "description": "The label for the doc item 자원 삭제하기 in sidebar awslogSidebar, linking to the doc aws-log-p/delete-aws-resource"
   },
-  "sidebar.pluginSidebar.category.확장 도구": {
-    "message": "확장 도구",
-    "description": "The label for category 확장 도구 in sidebar pluginSidebar"
+  "sidebar.pluginSidebar.category.확장 도구(Extensions)": {
+    "message": "확장 도구(Extensions)",
+    "description": "The label for category 확장 도구(Extensions) in sidebar pluginSidebar"
   },
   "sidebar.pluginSidebar.category.Telegraf": {
     "message": "Telegraf",
@@ -223,13 +1123,17 @@
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar awsecsSidebar"
   },
+  "sidebar.awsecsSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar awsecsSidebar"
+  },
   "sidebar.awsecsSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
     "description": "The label for category 알림 설정하기 in sidebar awsecsSidebar"
   },
-  "sidebar.amazoncloudwatchSidebar.category.Amazon Cloudwatch": {
-    "message": "Amazon Cloudwatch",
-    "description": "The label for category Amazon Cloudwatch in sidebar amazoncloudwatchSidebar"
+  "sidebar.amazoncloudwatchSidebar.category.Amazon CloudWatch": {
+    "message": "Amazon CloudWatch",
+    "description": "The label for category Amazon CloudWatch in sidebar amazoncloudwatchSidebar"
   },
   "sidebar.amazoncloudwatchSidebar.category.주요 메뉴 알아보기": {
     "message": "주요 메뉴 알아보기",
@@ -238,6 +1142,10 @@
   "sidebar.amazoncloudwatchSidebar.category.Flex 보드": {
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar amazoncloudwatchSidebar"
+  },
+  "sidebar.amazoncloudwatchSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar amazoncloudwatchSidebar"
   },
   "sidebar.amazoncloudwatchSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
@@ -255,6 +1163,10 @@
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar azuremonitorSidebar"
   },
+  "sidebar.azuremonitorSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar azuremonitorSidebar"
+  },
   "sidebar.azuremonitorSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
     "description": "The label for category 알림 설정하기 in sidebar azuremonitorSidebar"
@@ -270,6 +1182,10 @@
   "sidebar.ncloudSidebar.category.Flex 보드": {
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar ncloudSidebar"
+  },
+  "sidebar.ncloudSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar ncloudSidebar"
   },
   "sidebar.ncloudSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
@@ -287,6 +1203,10 @@
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar oracleSidebar"
   },
+  "sidebar.oracleSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar oracleSidebar"
+  },
   "sidebar.oracleSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
     "description": "The label for category 알림 설정하기 in sidebar oracleSidebar"
@@ -294,6 +1214,10 @@
   "sidebar.urlSidebar.category.URL 모니터링": {
     "message": "URL 모니터링",
     "description": "The label for category URL 모니터링 in sidebar urlSidebar"
+  },
+  "sidebar.urlSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar urlSidebar"
   },
   "sidebar.rumsSidebar.category.브라우저 모니터링(RUM)": {
     "message": "브라우저 모니터링(RUM)",
@@ -303,17 +1227,25 @@
     "message": "호환성 및 사전설정",
     "description": "The label for category 호환성 및 사전설정 in sidebar rumsSidebar"
   },
+  "sidebar.rumsSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar rumsSidebar"
+  },
   "sidebar.rumsSidebar.category.Flex 보드": {
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar rumsSidebar"
+  },
+  "sidebar.rumsSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar rumsSidebar"
   },
   "sidebar.rumsSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
     "description": "The label for category 알림 설정하기 in sidebar rumsSidebar"
   },
-  "sidebar.serverSidebar.category.서버 모니터링": {
-    "message": "서버 모니터링",
-    "description": "The label for category 서버 모니터링 in sidebar serverSidebar"
+  "sidebar.serverSidebar.category.Server 모니터링": {
+    "message": "Server 모니터링",
+    "description": "The label for category Server 모니터링 in sidebar serverSidebar"
   },
   "sidebar.serverSidebar.category.설치하기": {
     "message": "설치하기",
@@ -343,10 +1275,6 @@
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar serverSidebar"
   },
-  "sidebar.serverSidebar.category.분석하기": {
-    "message": "분석하기",
-    "description": "The label for category 분석하기 in sidebar serverSidebar"
-  },
   "sidebar.serverSidebar.category.보고서": {
     "message": "보고서",
     "description": "The label for category 보고서 in sidebar serverSidebar"
@@ -361,19 +1289,23 @@
   },
   "sidebar.serverSidebar.doc.지원 환경": {
     "message": "지원 환경",
-    "description": "The label for the doc item 지원 환경 in sidebar serverSidebar, linking to the doc server/server-spec"
+    "description": "The label for the doc item 지원 환경 in sidebar serverSidebar, linking to the doc server/supported-spec"
   },
-  "sidebar.serverSidebar.doc.로그 모니터링": {
-    "message": "로그 모니터링",
-    "description": "The label for the doc item 로그 모니터링 in sidebar serverSidebar, linking to the doc log/log-intro"
+  "sidebar.serverSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar serverSidebar, linking to the doc log/introduction"
   },
-  "sidebar.kubeSidebar.category.쿠버네티스 모니터링": {
-    "message": "쿠버네티스 모니터링",
-    "description": "The label for category 쿠버네티스 모니터링 in sidebar kubeSidebar"
+  "sidebar.kubeSidebar.category.Kubernetes 모니터링": {
+    "message": "Kubernetes 모니터링",
+    "description": "The label for category Kubernetes 모니터링 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.설치하기": {
     "message": "설치하기",
     "description": "The label for category 설치하기 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.애플리케이션 에이전트 설치": {
+    "message": "애플리케이션 에이전트 설치",
+    "description": "The label for category 애플리케이션 에이전트 설치 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.관리하기": {
     "message": "관리하기",
@@ -403,6 +1335,10 @@
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar kubeSidebar"
   },
+  "sidebar.kubeSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar kubeSidebar"
+  },
   "sidebar.kubeSidebar.category.분석": {
     "message": "분석",
     "description": "The label for category 분석 in sidebar kubeSidebar"
@@ -417,255 +1353,11 @@
   },
   "sidebar.kubeSidebar.doc.지원 환경": {
     "message": "지원 환경",
-    "description": "The label for the doc item 지원 환경 in sidebar kubeSidebar, linking to the doc kubernetes/kubernetes-support"
+    "description": "The label for the doc item 지원 환경 in sidebar kubeSidebar, linking to the doc kubernetes/supported-spec"
   },
-  "sidebar.dbSidebar.category.데이터베이스 모니터링": {
-    "message": "데이터베이스 모니터링",
-    "description": "The label for category 데이터베이스 모니터링 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.설치하기": {
-    "message": "설치하기",
-    "description": "The label for category 설치하기 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.설정하기": {
-    "message": "설정하기",
-    "description": "The label for category 설정하기 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.주요 메뉴 알아보기": {
-    "message": "주요 메뉴 알아보기",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "실시간 DB 성능 지표 확인",
-    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.Flex 보드": {
-    "message": "Flex 보드",
-    "description": "The label for category Flex 보드 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar dbSidebar"
-  },
-  "sidebar.dbSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar dbSidebar, linking to /apidoc/openapi-intro"
-  },
-  "sidebar.dbSidebar.doc.지원 환경": {
-    "message": "지원 환경",
-    "description": "The label for the doc item 지원 환경 in sidebar dbSidebar, linking to the doc db/db-monitoring-support"
-  },
-  "sidebar.dbSidebar.doc.에이전트 네트워크 통신": {
-    "message": "에이전트 네트워크 통신",
-    "description": "The label for the doc item 에이전트 네트워크 통신 in sidebar dbSidebar, linking to the doc db/db-agent-network"
-  },
-  "sidebar.dbSidebar.doc.에이전트 이름 식별": {
-    "message": "에이전트 이름 식별",
-    "description": "The label for the doc item 에이전트 이름 식별 in sidebar dbSidebar, linking to the doc db/db-agent-naming"
-  },
-  "sidebar.apmSidebar.category.애플리케이션 모니터링": {
-    "message": "애플리케이션 모니터링",
-    "description": "The label for category 애플리케이션 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.JAVA 모니터링": {
-    "message": "JAVA 모니터링",
-    "description": "The label for category JAVA 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.에이전트 설치": {
-    "message": "에이전트 설치",
-    "description": "The label for category 에이전트 설치 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.설정하기": {
-    "message": "설정하기",
-    "description": "The label for category 설정하기 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.에이전트 플러그인": {
-    "message": "에이전트 플러그인",
-    "description": "The label for category 에이전트 플러그인 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.관리하기": {
-    "message": "관리하기",
-    "description": "The label for category 관리하기 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.PHP 모니터링": {
-    "message": "PHP 모니터링",
-    "description": "The label for category PHP 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.Node.js 모니터링": {
-    "message": "Node.js 모니터링",
-    "description": "The label for category Node.js 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.Python 모니터링": {
-    "message": "Python 모니터링",
-    "description": "The label for category Python 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category..NET 모니터링": {
-    "message": ".NET 모니터링",
-    "description": "The label for category .NET 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.Golang 모니터링": {
-    "message": "Golang 모니터링",
-    "description": "The label for category Golang 모니터링 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.주요 메뉴 알아보기": {
-    "message": "주요 메뉴 알아보기",
-    "description": "The label for category 주요 메뉴 알아보기 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.대시보드": {
-    "message": "대시보드",
-    "description": "The label for category 대시보드 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.Flex 보드": {
-    "message": "Flex 보드",
-    "description": "The label for category Flex 보드 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.토폴로지": {
-    "message": "토폴로지",
-    "description": "The label for category 토폴로지 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.트랜잭션": {
-    "message": "트랜잭션",
-    "description": "The label for category 트랜잭션 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.메트릭스": {
-    "message": "메트릭스",
-    "description": "The label for category 메트릭스 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.분석하기": {
-    "message": "분석하기",
-    "description": "The label for category 분석하기 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.보고서": {
-    "message": "보고서",
-    "description": "The label for category 보고서 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar apmSidebar"
-  },
-  "sidebar.apmSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar apmSidebar, linking to /apidoc/openapi-intro"
-  },
-  "sidebar.apmSidebar.doc.지원 환경": {
-    "message": "지원 환경",
-    "description": "The label for the doc item 지원 환경 in sidebar apmSidebar, linking to the doc apm/golang-supported-spec"
-  },
-  "sidebar.apmSidebar.doc.설치 문제 해결": {
-    "message": "설치 문제 해결",
-    "description": "The label for the doc item 설치 문제 해결 in sidebar apmSidebar, linking to the doc apm/dotnet-agent-troubleshooting"
-  },
-  "sidebar.apmSidebar.doc.에이전트 이름 식별": {
-    "message": "에이전트 이름 식별",
-    "description": "The label for the doc item 에이전트 이름 식별 in sidebar apmSidebar, linking to the doc apm/python-agent-name"
-  },
-  "sidebar.apmSidebar.doc.사용량 수집": {
-    "message": "사용량 수집",
-    "description": "The label for the doc item 사용량 수집 in sidebar apmSidebar, linking to the doc apm/java-agent-usage"
-  },
-  "sidebar.apmSidebar.doc.에이전트 로그": {
-    "message": "에이전트 로그",
-    "description": "The label for the doc item 에이전트 로그 in sidebar apmSidebar, linking to the doc apm/python-agent-log"
-  },
-  "sidebar.apmSidebar.doc.GC 로그 모니터링": {
-    "message": "GC 로그 모니터링",
-    "description": "The label for the doc item GC 로그 모니터링 in sidebar apmSidebar, linking to the doc apm/java-agent-gc-log"
-  },
-  "sidebar.apmSidebar.doc.스크립트 플러그인": {
-    "message": "스크립트 플러그인",
-    "description": "The label for the doc item 스크립트 플러그인 in sidebar apmSidebar, linking to the doc apm/java-script-plugin"
-  },
-  "sidebar.apmSidebar.doc.위빙 플러그인": {
-    "message": "위빙 플러그인",
-    "description": "The label for the doc item 위빙 플러그인 in sidebar apmSidebar, linking to the doc apm/java-weaving-plugin"
-  },
-  "sidebar.apmSidebar.doc.에이전트 업데이트 및 삭제": {
-    "message": "에이전트 업데이트 및 삭제",
-    "description": "The label for the doc item 에이전트 업데이트 및 삭제 in sidebar apmSidebar, linking to the doc apm/java-update-agent"
-  },
-  "sidebar.apmSidebar.doc.설치 점검": {
-    "message": "설치 점검",
-    "description": "The label for the doc item 설치 점검 in sidebar apmSidebar, linking to the doc apm/golang-after-install-agent"
-  },
-  "sidebar.apmSidebar.doc.에이전트 기능 제어": {
-    "message": "에이전트 기능 제어",
-    "description": "The label for the doc item 에이전트 기능 제어 in sidebar apmSidebar, linking to the doc apm/python-control-function"
-  },
-  "sidebar.apmSidebar.doc.에이전트 통신 설정": {
-    "message": "에이전트 통신 설정",
-    "description": "The label for the doc item 에이전트 통신 설정 in sidebar apmSidebar, linking to the doc apm/python-agent-com"
-  },
-  "sidebar.apmSidebar.doc.에이전트 성능 설정": {
-    "message": "에이전트 성능 설정",
-    "description": "The label for the doc item 에이전트 성능 설정 in sidebar apmSidebar, linking to the doc apm/php-agent-tx"
-  },
-  "sidebar.apmSidebar.doc.트랜잭션": {
-    "message": "트랜잭션",
-    "description": "The label for the doc item 트랜잭션 in sidebar apmSidebar, linking to the doc apm/python-transaction"
-  },
-  "sidebar.apmSidebar.doc.DB와 SQL": {
-    "message": "DB와 SQL",
-    "description": "The label for the doc item DB와 SQL in sidebar apmSidebar, linking to the doc apm/python-db-sql"
-  },
-  "sidebar.apmSidebar.doc.HTTPC와 API Call": {
-    "message": "HTTPC와 API Call",
-    "description": "The label for the doc item HTTPC와 API Call in sidebar apmSidebar, linking to the doc apm/python-httpc-api"
-  },
-  "sidebar.apmSidebar.doc.사용자 수": {
-    "message": "사용자 수",
-    "description": "The label for the doc item 사용자 수 in sidebar apmSidebar, linking to the doc apm/python-collect-user"
-  },
-  "sidebar.apmSidebar.doc.Apdex": {
-    "message": "Apdex",
-    "description": "The label for the doc item Apdex in sidebar apmSidebar, linking to the doc apm/php-apdex"
-  },
-  "sidebar.apmSidebar.doc.통계": {
-    "message": "통계",
-    "description": "The label for the doc item 통계 in sidebar apmSidebar, linking to the doc apm/python-stat"
-  },
-  "sidebar.apmSidebar.doc.토폴로지 맵": {
-    "message": "토폴로지 맵",
-    "description": "The label for the doc item 토폴로지 맵 in sidebar apmSidebar, linking to the doc apm/php-tp-map"
-  },
-  "sidebar.apmSidebar.doc.공유 메모리": {
-    "message": "공유 메모리",
-    "description": "The label for the doc item 공유 메모리 in sidebar apmSidebar, linking to the doc apm/php-shm"
-  },
-  "sidebar.apmSidebar.doc.패키지 업데이트": {
-    "message": "패키지 업데이트",
-    "description": "The label for the doc item 패키지 업데이트 in sidebar apmSidebar, linking to the doc apm/php-agent-update"
-  },
-  "sidebar.apmSidebar.doc.에이전트 설치": {
-    "message": "에이전트 설치",
-    "description": "The label for the doc item 에이전트 설치 in sidebar apmSidebar, linking to the doc apm/golang-install-agent"
-  },
-  "sidebar.apmSidebar.doc.고급 기능": {
-    "message": "고급 기능",
-    "description": "The label for the doc item 고급 기능 in sidebar apmSidebar, linking to the doc apm/python-adf"
-  },
-  "sidebar.apmSidebar.doc.에이전트 삭제": {
-    "message": "에이전트 삭제",
-    "description": "The label for the doc item 에이전트 삭제 in sidebar apmSidebar, linking to the doc apm/python-remove"
-  },
-  "sidebar.apmSidebar.doc.패키지 관리": {
-    "message": "패키지 관리",
-    "description": "The label for the doc item 패키지 관리 in sidebar apmSidebar, linking to the doc apm/python-pkg"
-  },
-  "sidebar.apmSidebar.doc.관리하기": {
-    "message": "관리하기",
-    "description": "The label for the doc item 관리하기 in sidebar apmSidebar, linking to the doc apm/golang-agent-manage"
-  },
-  "sidebar.apmSidebar.doc.로그 모니터링": {
-    "message": "로그 모니터링",
-    "description": "The label for the doc item 로그 모니터링 in sidebar apmSidebar, linking to the doc log/log-intro"
-  },
-  "sidebar.logSidebar.category.로그 모니터링": {
-    "message": "로그 모니터링",
-    "description": "The label for category 로그 모니터링 in sidebar logSidebar"
+  "sidebar.logSidebar.category.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for category Log 모니터링 in sidebar logSidebar"
   },
   "sidebar.logSidebar.category.적용하기": {
     "message": "적용하기",
@@ -674,5 +1366,9 @@
   "sidebar.logSidebar.category.주요 메뉴 알아보기": {
     "message": "주요 메뉴 알아보기",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar logSidebar"
+  },
+  "sidebar.logSidebar.doc.설정하기": {
+    "message": "설정하기",
+    "description": "The label for the doc item 설정하기 in sidebar logSidebar, linking to the doc log/log-setting"
   }
 }
