@@ -85,6 +85,7 @@ const sidebars = {
             {
               type: 'category',
               label: '에이전트 플러그인',
+              description: 'Java 에이전트에서 제공하는 플러그인을 활용해 다양한 일을 할 수 있습니다.',
               items: [
                 'java/script-plugin',
                 'java/weaving-plugin',
@@ -2969,7 +2970,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1.2.4',
@@ -2978,7 +2979,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1.2.4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3046,6 +3047,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Focus',
+              className: 'new',
               id: 'release-notes/focus/focus-release-notes',
             },
           ],
@@ -3633,6 +3635,7 @@ const sidebars = {
           label: 'MXQL',
           collapsible: true,
           collapsed: true,
+          description: 'MXQL은 와탭의 성능 데이터(메트릭스)를 유연한게 조회하기 위한 쿼리 언어입니다.',
           link: {
             type: 'doc',
             id: 'mxql/mxql-overview',
@@ -3657,6 +3660,7 @@ const sidebars = {
           label: 'Open API',
           collapsible: true,
           collapsed: true,
+          description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
           link: {
             type: 'doc',
             id: 'apidoc/openapi-intro',
@@ -3690,6 +3694,7 @@ const sidebars = {
         {
           type: 'category',
           label: '자주 묻는 질문',
+          description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
           items: [
             'faq/db-faq',
           ]
@@ -3698,75 +3703,64 @@ const sidebars = {
       ]
     }
   ],
-  // awslogSidebar: [
-  //   {
-  //     type: 'category',
-  //     label: 'AWS Log 모니터링',
-  //     collapsible: false,
-  //     collapsed: false,
-  //     link: {
-  //       type: 'doc',
-  //       id: 'aws-log/aws-log-intro'
-  //     },
-  //     items: [
-  //       'aws-log/install-aws-log',
-  //       {
-  //         type: 'category',
-  //         label: '주요 메뉴 알아보기',
-  //         collapsible: true,
-  //         collapsed: false,
-  //         link: {
-  //           type: 'doc',
-  //           id: 'aws-log/learn-aws-log-main-menu'
-  //         },
-  //         items: [
-  //           'log/aws-log-lt',
-  //           'log/aws-log-exp',
-  //           'log/aws-log-search',
-  //           'log/aws-log-setting',
-  //           {
-  //             type: 'category',
-  //             label: 'Flex 보드',
-  //             collapsible: true,
-  //             collapsed: true,
-  //             link: {
-  //               type: 'doc',
-  //               id: 'dashboard/aws-log-flexboard',
-  //             },
-  //             items: [
-  //               'dashboard/aws-log-flexboard-template',
-  //               'dashboard/aws-log-flexboard-create',
-  //               'dashboard/aws-log-flexboard-metric-widget',
-  //               'dashboard/aws-log-flexboard-widget-manage',
-  //               'dashboard/aws-log-flexboard-mode',
-  //               'dashboard/aws-log-flexboard-share',
-  //             ]
-  //           },
-  //           'metrics/aws-log-metrics-intro',
-  //           {
-  //             type: 'doc',
-  //             label: '알림 설정하기',
-  //             id: 'notification/aws-log-set-notice'
-  //           },
-  //           // {
-  //           //   type: 'category',
-  //           //   label: '알림 설정하기',
-  //           //   collapsible: true,
-  //           //   collapsed: true,
-  //           //   link: {
-  //           //     type: 'doc',
-  //           //     id: 'notification/aws-log-set-notice',
-  //           //   },
-  //           //   items: [
-  //           //     'notification/aws-log-metric-warning-notice',
-  //           //     'notification/aws-log-set-receive-event',               
-  //           //   ]
-  //           // },
-  //         ],
-  //       }
-  //     ]
-  //   }
-  // ],
+  awslogSidebar: [
+    {
+      type: 'category',
+      label: 'AWS Log 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'aws-log-p/introduction'
+      },
+      items: [
+        'aws-log-p/install-aws-log',
+        {
+          type: 'doc',
+          label: '자원 삭제하기',
+          id: 'aws-log-p/delete-aws-resource',
+        },
+        'aws-log-p/aws-log-setting',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          // link: {
+          //   type: 'doc',
+          //   id: 'aws-log-p/learn-aws-log-main-menu'
+          // },
+          items: [
+            'aws-log-p/aws-log-lt',
+            'aws-log-p/aws-log-exp',
+            'aws-log-p/aws-log-search',
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'aws-log-p/flexboard',
+              },
+              items: [
+                'aws-log-p/flexboard-template',
+                'aws-log-p/flexboard-create',
+                'aws-log-p/flexboard-manage',
+                'aws-log-p/flexboard-metric-widget',
+                'aws-log-p/flexboard-widget-manage',
+                'aws-log-p/flexboard-mode',
+                'aws-log-p/flexboard-share',
+              ],
+            },
+            'aws-log-p/set-notice',
+            'aws-log-p/set-receive-event',
+            'aws-log-p/set-event-history',
+          ],
+        }
+      ]
+    }
+  ],
   pluginSidebar: [
     {
       type: 'category',
@@ -3783,6 +3777,7 @@ const sidebars = {
           label: 'Telegraf',
           collapsible: true,
           collapsed: true,
+          description: 'Telegraf에 대해 안내합니다.',
           link: {
             type: 'doc',
             id: 'telegraf/introduction'
@@ -3819,6 +3814,7 @@ const sidebars = {
           label: 'Focus',
           collapsible: true,
           collapsed: true,
+          description: 'Focus 서비스를 안내합니다.',
           link: {
             type: 'doc',
             id: 'focus/introduction'
@@ -4325,7 +4321,7 @@ const sidebars = {
           type: 'category',
           label: '경고 알림',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           items: [
             'url/url-event',
             'url/url-event-history',
@@ -4352,8 +4348,8 @@ const sidebars = {
     {
       type: 'category',
       label: '브라우저 모니터링(RUM)',
-      collapsible: true,
-      collapsed: true,
+      collapsible: false,
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'rum/introduction'
@@ -4563,30 +4559,47 @@ const sidebars = {
                 'server/metrics-detect-anormal',
               ]
             },
+            'server/server-list',
+            'server/server-detail',
+            'server/cube',
             {
               type: 'category',
-              label: '분석하기',
+              label: '보고서',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'server/report-intro'
+              },
               items: [
-                'server/server-list',
-                'server/server-detail',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'server/report-intro'
-                  },
-                  items: [
-                    'server/report',
-                    'server/integrated-report',
-                  ]
-                }
+                'server/report',
+                'server/integrated-report',
               ]
             },
+            // {
+            //   type: 'category',
+            //   label: '분석하기',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   items: [
+            //     'server/server-list',
+            //     'server/server-detail',
+            //     {
+            //       type: 'category',
+            //       label: '보고서',
+            //       collapsible: true,
+            //       collapsed: true,
+            //       link: {
+            //         type: 'doc',
+            //         id: 'server/report-intro'
+            //       },
+            //       items: [
+            //         'server/report',
+            //         'server/integrated-report',
+            //       ]
+            //     }
+            //   ]
+            // },
             {
               type: 'category',
               label: '알림 설정하기',

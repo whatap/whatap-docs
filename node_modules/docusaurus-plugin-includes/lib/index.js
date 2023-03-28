@@ -50,6 +50,7 @@ function default_1(context, pluginOptions) {
                     rules: [{
                             test: /(\.mdx?)$/,
                             include: docsPluginInclude,
+                            exclude: /\_import\_/,
                             use: [
                                 {
                                     loader: path_1.default.resolve(__dirname, './includesLoader.js'),

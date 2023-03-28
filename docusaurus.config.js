@@ -84,14 +84,14 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: false,
-        language: [ 'ko' ],
+        language: [ 'ko', 'en' ],
         indexBlog: false,
         docsRouteBasePath: '/',
         removeDefaultStemmer: false,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /aws-log/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/],
       }
     ],
     [
