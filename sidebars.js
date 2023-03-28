@@ -85,6 +85,7 @@ const sidebars = {
             {
               type: 'category',
               label: '에이전트 플러그인',
+              description: 'Java 에이전트에서 제공하는 플러그인을 활용해 다양한 일을 할 수 있습니다.',
               items: [
                 'java/script-plugin',
                 'java/weaving-plugin',
@@ -3644,6 +3645,7 @@ const sidebars = {
           label: 'MXQL',
           collapsible: true,
           collapsed: true,
+          description: 'MXQL은 와탭의 성능 데이터(메트릭스)를 유연한게 조회하기 위한 쿼리 언어입니다.',
           link: {
             type: 'doc',
             id: 'mxql/mxql-overview',
@@ -3668,6 +3670,7 @@ const sidebars = {
           label: 'Open API',
           collapsible: true,
           collapsed: true,
+          description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
           link: {
             type: 'doc',
             id: 'apidoc/openapi-intro',
@@ -3701,6 +3704,7 @@ const sidebars = {
         {
           type: 'category',
           label: '자주 묻는 질문',
+          description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
           items: [
             'faq/db-faq',
           ]
@@ -3783,6 +3787,7 @@ const sidebars = {
           label: 'Telegraf',
           collapsible: true,
           collapsed: true,
+          description: 'Telegraf에 대해 안내합니다.',
           link: {
             type: 'doc',
             id: 'telegraf/introduction'
@@ -3819,6 +3824,7 @@ const sidebars = {
           label: 'Focus',
           collapsible: true,
           collapsed: true,
+          description: 'Focus 서비스를 안내합니다.',
           link: {
             type: 'doc',
             id: 'focus/introduction'
