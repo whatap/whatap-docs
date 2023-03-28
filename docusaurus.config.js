@@ -97,10 +97,6 @@ const config = {
     [
       'docusaurus-plugin-includes',
       {
-        replacements: [
-          { key: '{ProductName}', value: 'My long product name for XYZ' },
-          { key: '{ShortName}', value: 'XYZ' },
-        ],
         embeds: [
           {
             key: 'youtube',
