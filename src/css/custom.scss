@@ -603,6 +603,15 @@ main {
     hr + h2, hr + h3 {
       padding: 0;
     }
+    .indentTab {
+      border-left: 1px solid #ddd;
+      > h3 {
+        margin-left: 20px;
+      }
+      > * {
+        margin-left: 50px;
+      }
+    }
     h2, h3 {
       margin-top: 0;
       margin-bottom: 0;
@@ -612,10 +621,16 @@ main {
         font-size: inherit;
       }
     }
+    .indentTab h3 code {
+      font-size: 24px;
+    }
+    h3 sup, .indentTab h3 sup {
+      vertical-align: middle;
+    }
     h3[id*='pdf-download'] img {
       filter: invert(.5);
     }
-    h4 {
+    h4, .indentTab h4 {
       margin-top: 0;
       margin-bottom: 0;
       padding-top: 20px;
@@ -1074,6 +1089,7 @@ main {
         }
         div[class*='language-'], blockquote {
           margin: 8px 0;
+          padding-left: 10px;
         }
       }
       > li > details ul {
