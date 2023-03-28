@@ -28,7 +28,7 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
             {
               translate({
                 id: "docs_Name",
-                message: "와탭 Docs",
+                message: "WhaTap Docs",
               })
             }
           </a></li>
