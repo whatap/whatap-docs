@@ -27,6 +27,8 @@ export default function CheckProduct() {
         product = '-oci';
     } else if (location.includes('oracle')) {
         product = '-oracle';
+    } else if (location.includes('mysql-rds')) {
+        product = '-mysql-rds';
     } else if (location.includes('mysql')) {
         product = '-mysql';
     } else if (location.includes('mssql')) {

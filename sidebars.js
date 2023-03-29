@@ -1661,11 +1661,8 @@ const sidebars = {
             id: 'mysql/agent-settings'
           },
           items: [
-            'mysql/agent-network',
-            'mysql/agent-naming',
-            'mysql/agent-aws',
-            'mysql/agent-data',
-            // 'mysql/agent-xos-settings',
+            'mysql/agent-dbx-settings',
+            'mysql/agent-xos-settings',
           ],
         },
         'mysql/agent-manage',
@@ -1677,7 +1674,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -1687,7 +1684,7 @@ const sidebars = {
               items: [
                 'mysql/instance-list',
                 'mysql/instance-monitoring',
-                // 'mysql/multi-instance-monitoring',
+                'mysql/multi-instance-monitoring',
                 'mysql/slow-query',
               ],
             },
@@ -1712,6 +1709,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql/analysis-count-trend',
+                'mysql/analysis-databaseparameter',
+                'mysql/analysis-lock-and-deadlock',
+                'mysql/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -1720,28 +1729,19 @@ const sidebars = {
                 id: 'mysql/metrics-intro'
               },
               items: [
-                'mysql/metrics-mysql',
+                'mysql/metrics-data-list',
                 'mysql/metrics-chart',
                 'mysql/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
-                'mysql/analysis-function',
-                // 'mysql/metrics-intro',
-                // 'mysql/metrics-detect-anormal',
-                'mysql/log-viewer',
                 'mysql/stat',
                 'mysql/report-intro',
-                'mysql/integrated-report',
               ]
             },
             {
@@ -1760,13 +1760,9 @@ const sidebars = {
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
                 'mysql/set-event-format',
+                'mysql/file-log-notice',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
@@ -1800,7 +1796,6 @@ const sidebars = {
           collapsed: true,
           items: [
             'mysql-rds/install-agent',
-            // 'mysql-rds/after-install-agent',
             'mysql-rds/troubleshooting',
           ],
         },
@@ -1825,7 +1820,6 @@ const sidebars = {
                 'mysql-rds/instance-list',
                 'mysql-rds/instance-monitoring',
                 'mysql-rds/multi-instance-monitoring',
-                // 'mysql-rds/slow-query',
               ],
             },
             {
@@ -1847,7 +1841,16 @@ const sidebars = {
                 'mysql-rds/flexboard-share',
               ],
             },
-            'mysql-rds/analysis-function',
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql-rds/analysis-lock-and-deadlock',
+                'mysql-rds/analysis-databaseparameter',
+              ]
+            },
             {
               type: 'category',
               label: '메트릭스',
@@ -1861,10 +1864,6 @@ const sidebars = {
                 'mysql-rds/metrics-data-list',
                 'mysql-rds/metrics-chart',
                 'mysql-rds/metrics-detect-anormal',
-                // 'mysql-rds/log-viewer',
-                // 'mysql-rds/stat',
-                // 'mysql-rds/report-intro',
-                // 'mysql-rds/integrated-report',
               ]
             },
             {
@@ -1872,14 +1871,9 @@ const sidebars = {
               label: '통계/보고서',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'mysql/stat'
-              // },
               items: [
                 'mysql-rds/stat',
                 'mysql-rds/report-intro',
-                'mysql-rds/integrated-report',
               ],
             },
             {
@@ -1900,11 +1894,6 @@ const sidebars = {
                 'mysql-rds/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2632,6 +2621,7 @@ const sidebars = {
                 'redis/set-receive-event',
                 'redis/set-event-history',
                 'redis/set-event-format',
+                'redis/file-log-notice',
               ],
             },
             {
