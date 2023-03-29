@@ -91,7 +91,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /aws-log-p/],
       }
     ],
     [
@@ -294,6 +294,11 @@ const config = {
                 docId: 'amazon-ecs/introduction',
                 label: 'Amazon ECS',
               },
+              // {
+              //   type: 'doc',
+              //   docId: 'aws-log/introduction',
+              //   label: 'AWS Log',
+              // },
               {
                 type: 'doc',
                 docId: 'azure/install-agent',

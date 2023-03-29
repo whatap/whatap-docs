@@ -3230,6 +3230,15 @@ const sidebars = {
           type: 'html',
           value: '<hr class="distnq"/>'
         },
+        // {
+        //   type: 'link',
+        //   label: 'AWS Log',
+        //   href: '../aws-log/introduction',
+        // },
+        // {
+        //   type: 'html',
+        //   value: '<hr class="distnq"/>'
+        // },
         {
           type: 'link',
           label: 'Azure Monitor',
@@ -3710,16 +3719,16 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'aws-log-p/introduction'
+        id: 'aws-log/introduction'
       },
       items: [
-        'aws-log-p/install-aws-log',
+        'aws-log/install-aws-log',
         {
           type: 'doc',
           label: '자원 삭제하기',
-          id: 'aws-log-p/delete-aws-resource',
+          id: 'aws-log/delete-aws-resource',
         },
-        'aws-log-p/aws-log-setting',
+        'aws-log/aws-log-setting',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -3727,12 +3736,12 @@ const sidebars = {
           collapsed: false,
           // link: {
           //   type: 'doc',
-          //   id: 'aws-log-p/learn-aws-log-main-menu'
+          //   id: 'aws-log/learn-aws-log-main-menu'
           // },
           items: [
-            'aws-log-p/aws-log-lt',
-            'aws-log-p/aws-log-exp',
-            'aws-log-p/aws-log-search',
+            'aws-log/aws-log-lt',
+            'aws-log/aws-log-exp',
+            'aws-log/aws-log-search',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -3740,21 +3749,21 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'aws-log-p/flexboard',
+                id: 'aws-log/flexboard',
               },
               items: [
-                'aws-log-p/flexboard-template',
-                'aws-log-p/flexboard-create',
-                'aws-log-p/flexboard-manage',
-                'aws-log-p/flexboard-metric-widget',
-                'aws-log-p/flexboard-widget-manage',
-                'aws-log-p/flexboard-mode',
-                'aws-log-p/flexboard-share',
+                'aws-log/flexboard-template',
+                'aws-log/flexboard-create',
+                'aws-log/flexboard-manage',
+                'aws-log/flexboard-metric-widget',
+                'aws-log/flexboard-widget-manage',
+                'aws-log/flexboard-mode',
+                'aws-log/flexboard-share',
               ],
             },
-            'aws-log-p/set-notice',
-            'aws-log-p/set-receive-event',
-            'aws-log-p/set-event-history',
+            'aws-log/set-notice',
+            'aws-log/set-receive-event',
+            'aws-log/set-event-history',
           ],
         }
       ]
@@ -4887,6 +4896,7 @@ const sidebars = {
             'log/log-search',           
             'log/set-notice',
             'log/set-receive-event',
+            'log/set-event-history',
           ],
         },
       ]  
