@@ -2805,15 +2805,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1.96.0',
+            id: 'release-notes/service/service-1.98.x',
           },
           items: [
             {
               type: 'doc',
-              // label: 'Service 1.94.0',
-              id: 'release-notes/service/service-1.96.0',
+              id: 'release-notes/service/service-1.98.x',
               className: 'new',
             },
+            'release-notes/service/service-1.96.0',
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
             'release-notes/service/service-1.90.0',
@@ -2822,7 +2822,6 @@ const sidebars = {
             'release-notes/service/service-1.84.0',
             'release-notes/service/service-1.82.0',
             'release-notes/service/service-1.80.0',
-            'release-notes/service/service-1.78.0',
             'release-notes/service/service-previous',
           ]
         },
@@ -2878,7 +2877,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1.3.1',
@@ -2887,7 +2886,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1.3.1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1.3.0',
                 'release-notes/python/python-1.2.4',
