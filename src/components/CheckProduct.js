@@ -24,7 +24,7 @@ export default function CheckProduct() {
     } else if (location.includes('postgresql')) {
         product = '-postgresql';
     } else if (location.includes('oracle-cloud')) {
-        product = '-oracle-cloud';
+        product = '-oci';
     } else if (location.includes('oracle')) {
         product = '-oracle';
     } else if (location.includes('mysql-rds')) {
@@ -53,6 +53,10 @@ export default function CheckProduct() {
         product = '-azure';
     } else if (location.includes('ncloud')) {
         product = '-ncloud';
+    } else if (location.includes('aws-log')) {
+        product = '-aws-log';
+    } else if (location.includes('log')) {
+        product = '-log';
     } else {
         product = '';
     }

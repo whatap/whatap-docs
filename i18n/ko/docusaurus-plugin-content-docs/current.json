@@ -1089,7 +1089,7 @@
   },
   "sidebar.awslogSidebar.doc.자원 삭제하기": {
     "message": "자원 삭제하기",
-    "description": "The label for the doc item 자원 삭제하기 in sidebar awslogSidebar, linking to the doc aws-log-p/delete-aws-resource"
+    "description": "The label for the doc item 자원 삭제하기 in sidebar awslogSidebar, linking to the doc aws-log/delete-aws-resource"
   },
   "sidebar.pluginSidebar.category.확장 도구(Extensions)": {
     "message": "확장 도구(Extensions)",
