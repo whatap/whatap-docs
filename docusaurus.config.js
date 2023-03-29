@@ -91,7 +91,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /aws-log-p/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /aws-log-p/, /release-notes\/preview/],
       }
     ],
     [
