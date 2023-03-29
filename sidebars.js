@@ -2582,6 +2582,17 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'redis/analysis-count-trend',
+                'redis/analysis-databaseparameter',
+                'redis/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2593,17 +2604,6 @@ const sidebars = {
                 'redis/metrics-data-list',
                 'redis/metrics-chart',
                 'redis/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'redis/analysis-count-trend',
-                'redis/analysis-databaseparameter',
-                'redis/log-viewer',
               ]
             },
             {
