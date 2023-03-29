@@ -34,8 +34,8 @@ export default function Feedback({ resource }) {
         {
           translate({
             id: "Feedback.feedbackMessage",
-            message: "WhTap Docs는 편하게 이용했나요?",
-            description: "WhTap Docs는 편하게 이용했나요?",
+            message: "이 페이지가 마음에 드셨나요?",
+            description: "Was this page helpful?",
           })
         }
       </summary>
