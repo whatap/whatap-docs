@@ -813,7 +813,7 @@ main {
           top: 6px;
         }
       }
-      .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
+      div[class*='collapsibleContent'] {
         border-top: none;
         margin-top: 16px;
         padding-top: 0;
