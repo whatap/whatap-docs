@@ -1076,6 +1076,7 @@ main {
       padding-bottom: 8px;
       + ul {
         padding-top: 0;
+        margin-top: -8px;
       }
       li {
         margin: 0;
@@ -1557,12 +1558,27 @@ main {
     grid-template-columns: repeat(4, 1fr) !important;
     grid-gap: 10px;
   }
+  .navbar-sidebar__items {
+    .menu__list {
+      .menu__list {
+        margin-left: 20px;
+      }
+    }
+  }
+  .navbar-sidebar__items.navbar-sidebar__items--show-secondary {
+    .menu__list {
+      .menu__list {
+        margin-left: 0px;
+      }
+    }
+  }
 }
 
 @media (max-width: 995px) and (max-width: 800px) {
   .flex-container-s {
     grid-template-columns: repeat(3, 1fr) !important;
   }
+  
 }
 
 @media (max-width: 799px) and (max-width: 560px) {
