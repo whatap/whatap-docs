@@ -1074,6 +1074,9 @@ main {
       margin: 0;
       padding-top: 8px;
       padding-bottom: 8px;
+      + ul {
+        padding-top: 0;
+      }
       li {
         margin: 0;
         padding-top: 4px;

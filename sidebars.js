@@ -2786,6 +2786,32 @@ const sidebars = {
       ],
     }
   ],
+  previewSidebar: [
+    {
+      type: 'category',
+      label: '릴리스 노트 - Preview',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'release-notes/preview/preview-1.99.x',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'release-notes/preview/preview-1.99.x',
+          className: 'new',
+        },
+        'release-notes/preview/preview-1.97.x',
+        'release-notes/preview/preview-1.95.2',
+        'release-notes/preview/preview-1.95.1',
+        'release-notes/preview/preview-1.95.0',
+        'release-notes/preview/preview-1.93.2',
+        'release-notes/preview/preview-1.93.1',
+        'release-notes/preview/preview-1.93.0',
+      ],
+    }
+  ],
   releaseSidebar: [
     {
       type: 'category',

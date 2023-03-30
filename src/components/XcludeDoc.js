@@ -3,10 +3,15 @@ import MDXContent from '@theme/MDXContent';
 import {useLocation} from '@docusaurus/router';
 
 export default function ExcludeDoc ({children, exclude}) {
-    let prods = exclude.split(",");
+    let prods;
+    if (typeof exclude.split(",") !== undefined) {
+        prods = exclude.split(",");
+    } else {
+        prods.push(exclude);
+    }
     let location = useLocation();
     let myContents;
-    let cProd = location.pathname.split("/")[1];
+    const cProd = location.pathname.split("/")[1];
     let i, prod;
     
     for (i =0; i < prods.length; i ++) {
