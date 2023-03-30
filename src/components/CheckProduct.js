@@ -1,61 +1,62 @@
 import React from 'react';
 import useIsBrowser from '@docusaurus/useIsBrowser';
+import {useLocation} from '@docusaurus/router';
 
 export default function CheckProduct() {
-    const isBrowser = useIsBrowser();
-    const location = isBrowser ? window.location.href : 'fetching location...';
+    let location = useLocation();
+    let cProd = location.pathname.split("/")[1];
     var product;
-    if (location.includes('nodejs')) {
+    if (cProd === 'nodejs') {
         product = '-nodejs';
-    } else if (location.includes('java')) {
+    } else if (cProd === 'java') {
         product = '-java';
-    } else if (location.includes('php')) {
+    } else if (cProd === 'php') {
         product = '-php';
-    } else if (location.includes('python')) {
+    } else if (cProd === 'python') {
         product = '-python';
-    } else if (location.includes('golang')) {
+    } else if (cProd === 'golang') {
         product = '-golang';
-    } else if (location.includes('dotnet')) {
+    } else if (cProd === 'dotnet') {
         product = '-dotnet';
-    } else if (location.includes('server')) {
+    } else if (cProd === 'server') {
         product = '-server';
-    } else if (location.includes('kubernetes')) {
+    } else if (cProd === 'kubernetes') {
         product = '-k8s';
-    } else if (location.includes('postgresql')) {
+    } else if (cProd === 'postgresql') {
         product = '-postgresql';
-    } else if (location.includes('oracle-cloud')) {
+    } else if (cProd === 'oracle-cloud') {
         product = '-oci';
-    } else if (location.includes('oracle')) {
+    } else if (cProd === 'oracle') {
         product = '-oracle';
-    } else if (location.includes('mysql-rds')) {
+    } else if (cProd === 'mysql-rds') {
         product = '-mysql-rds';
-    } else if (location.includes('mysql')) {
+    } else if (cProd === 'mysql') {
         product = '-mysql';
-    } else if (location.includes('mssql')) {
+    } else if (cProd === 'mssql') {
         product = '-mssql';
-    } else if (location.includes('tibero')) {
+    } else if (cProd === 'tibero') {
         product = '-tibero';
-    } else if (location.includes('cubrid')) {
+    } else if (cProd === 'cubrid') {
         product = '-cubrid';
-    } else if (location.includes('altibase')) {
+    } else if (cProd === 'altibase') {
         product = '-altibase';
-    } else if (location.includes('redis')) {
+    } else if (cProd === 'redis') {
         product = '-redis';
-    } else if (location.includes('mongodb')) {
+    } else if (cProd === 'mongodb') {
         product = '-mongodb';
-    } else if (location.includes('url')) {
+    } else if (cProd === 'url') {
         product = '-url';
-    } else if (location.includes('amazon-cloudwatch')) {
+    } else if (cProd === 'amazon-cloudwatch') {
         product = '-aws-cloudwatch';
-    } else if (location.includes('amazon-ecs')) {
+    } else if (cProd === 'amazon-ecs') {
         product = '-aws-ecs';
-    } else if (location.includes('azure')) {
+    } else if (cProd === 'azure') {
         product = '-azure';
-    } else if (location.includes('ncloud')) {
+    } else if (cProd === 'ncloud') {
         product = '-ncloud';
-    } else if (location.includes('aws-log')) {
+    } else if (cProd === 'aws-log') {
         product = '-aws-log';
-    } else if (location.includes('log')) {
+    } else if (cProd === 'log') {
         product = '-log';
     } else {
         product = '';

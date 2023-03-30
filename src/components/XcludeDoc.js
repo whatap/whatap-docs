@@ -6,7 +6,7 @@ export default function ExcludeDoc ({children, exclude}) {
     let prods = exclude.split(",");
     let location = useLocation();
     let myContents;
-    const cProd = location.pathname.split("/")[1];
+    let cProd = location.pathname.split("/")[1];
     let i, prod;
     
     for (i =0; i < prods.length; i ++) {
