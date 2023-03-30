@@ -28,6 +28,10 @@
         {
             "filePath": "src/css/custom.scss",
             "group": "Default"
+        },
+        {
+            "filePath": "src/components",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"
