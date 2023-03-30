@@ -4900,7 +4900,7 @@ const sidebars = {
             'log/log-php',
             'log/log-python',
             'log/log-server',
-            //'log/log-k8s',
+            'log/log-k8s',
           ],
         },
         {
