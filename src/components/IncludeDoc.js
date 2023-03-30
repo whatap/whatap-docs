@@ -3,7 +3,12 @@ import MDXContent from '@theme/MDXContent';
 import {useLocation} from '@docusaurus/router';
 
 export default function IncludeDoc ({children, include}) {
-    let prods = include.split(",");
+    let prods;
+    if (typeof include.split(",") !== undefined) {
+        prods = include.split(",");
+    } else {
+        prods.push(include);
+    }
     let location = useLocation();
     let myContents;
     let cProd = location.pathname.split("/")[1];
