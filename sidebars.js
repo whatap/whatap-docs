@@ -4604,8 +4604,8 @@ const sidebars = {
               //},
               items: [
                 'server/server-list',
-                'server/server-list-server-detail',
                 'server/server-detail',
+                'server/server-detail-process-group',
               ]
             },
             // 'server/server-list',
