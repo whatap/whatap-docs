@@ -2270,6 +2270,7 @@ const sidebars = {
               items: [
                 'cubrid/instance-list',
                 'cubrid/instance-monitoring',
+                'cubrid/multi-instance-monitoring',
               ],
             },
             {
