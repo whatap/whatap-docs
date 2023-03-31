@@ -2831,12 +2831,12 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1.98.0',
+            id: 'release-notes/service/service-1.98.x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1.98.0',
+              id: 'release-notes/service/service-1.98.x',
               className: 'new',
             },
             'release-notes/service/service-1.96.0',
@@ -2903,17 +2903,18 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.1',
+                id: 'release-notes/python/python-1.3.2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1.3.1',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1.3.2',
+                  className: 'new',
                 },
+                'release-notes/python/python-1.3.1',
                 'release-notes/python/python-1.3.0',
                 'release-notes/python/python-1.2.4',
                 'release-notes/python/python-1.2.1',

@@ -665,7 +665,7 @@ main {
         margin-right: 0;
       }
       .padding--lg {
-        padding: 24px 24px 16px 24px !important;
+        padding: 24px 24px 24px 24px !important;
       }
       a {
         border-radius: 4px;
@@ -688,9 +688,15 @@ main {
         }
         p.text--truncate {
           padding: 0;
-          white-space: break-spaces !important;
-          height: 48px;
+          white-space: normal !important;
+          height: 40px;
           line-height: 1.5;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          word-break: break-all;
         }
       }
       a[href*='account-manage'] {
