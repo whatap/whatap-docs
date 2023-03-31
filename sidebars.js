@@ -2294,6 +2294,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'cubrid/analysis-count-trend',
+                'cubrid/analysis-databaseparameter',
+                'cubrid/analysis-lock-and-deadlock',
+                'cubrid/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2308,7 +2320,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계',
               collapsible: true,
               collapsed: true,
               items: [
