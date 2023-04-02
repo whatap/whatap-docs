@@ -2314,22 +2314,20 @@ const sidebars = {
                 id: 'cubrid/metrics-intro'
               },
               items: [
+                'cubrid/metrics-data-list',
                 'cubrid/metrics-chart',
                 'cubrid/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'cubrid/analysis-function',
-                'cubrid/log-viewer',
                 'cubrid/stat',
                 'cubrid/report-intro',
-                'cubrid/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
