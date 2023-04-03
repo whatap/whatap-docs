@@ -2270,6 +2270,7 @@ const sidebars = {
               items: [
                 'cubrid/instance-list',
                 'cubrid/instance-monitoring',
+                'cubrid/multi-instance-monitoring',
               ],
             },
             {
@@ -2293,6 +2294,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'cubrid/analysis-count-trend',
+                'cubrid/analysis-databaseparameter',
+                'cubrid/analysis-lock-and-deadlock',
+                'cubrid/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2301,22 +2314,20 @@ const sidebars = {
                 id: 'cubrid/metrics-intro'
               },
               items: [
+                'cubrid/metrics-data-list',
                 'cubrid/metrics-chart',
                 'cubrid/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'cubrid/analysis-function',
-                'cubrid/log-viewer',
                 'cubrid/stat',
                 'cubrid/report-intro',
-                'cubrid/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
