@@ -2345,6 +2345,7 @@ const sidebars = {
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
                 'cubrid/set-event-format',
+                'cubrid/file-log-notice',
               ],
             },
             {

@@ -1,5 +1,5 @@
 import React from 'react';
-import MDXContent from '@theme/MDXContent';
+import MDXContent from '@site/src/theme/MDXContent';
 import {useLocation} from '@docusaurus/router';
 
 export default function IncludeDoc ({children, include}) {
