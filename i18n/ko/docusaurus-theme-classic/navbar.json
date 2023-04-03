@@ -206,5 +206,9 @@
   "item.label.Extensions": {
     "message": "Extensions",
     "description": "Navbar item with label Extensions"
+  },
+  "logo.alt": {
+    "message": "WhaTap Docs",
+    "description": "The alt text of navbar logo"
   }
 }

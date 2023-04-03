@@ -483,10 +483,6 @@
     "message": "주요 메뉴 알아보기",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar mysqlSidebar"
   },
-  "sidebar.mysqlSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "실시간 DB 성능 지표 확인",
-    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar mysqlSidebar"
-  },
   "sidebar.mysqlSidebar.category.Flex 보드": {
     "message": "Flex 보드",
     "description": "The label for category Flex 보드 in sidebar mysqlSidebar"
@@ -494,10 +490,6 @@
   "sidebar.mysqlSidebar.category.메트릭스": {
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar mysqlSidebar"
-  },
-  "sidebar.mysqlSidebar.category.분석과 통계": {
-    "message": "분석과 통계",
-    "description": "The label for category 분석과 통계 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
@@ -1370,5 +1362,25 @@
   "sidebar.logSidebar.doc.설정하기": {
     "message": "설정하기",
     "description": "The label for the doc item 설정하기 in sidebar logSidebar, linking to the doc log/log-setting"
+  },
+  "sidebar.mysqlSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlrdsSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar mysqlrdsSidebar"
+  },
+  "sidebar.previewSidebar.category.릴리스 노트 - Preview": {
+    "message": "릴리스 노트 - Preview",
+    "description": "The label for category 릴리스 노트 - Preview in sidebar previewSidebar"
   }
 }

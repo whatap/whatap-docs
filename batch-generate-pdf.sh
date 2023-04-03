@@ -22,10 +22,10 @@ npx docusaurus-prince-pdf -u http://localhost:4000/docs/manage --prince-args="--
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/reference --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-reference.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/extensions --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-extensions.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/amazon-cloudwatch/install-agent --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-amazon-cloudwatch.pdf --include-index
+npx docusaurus-prince-pdf -u http://localhost:4000/docs/amazon-ecs/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-amazon-ecs.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/azure/install-agent --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-azure.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/ncloud/install-agent --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-ncloud.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/oracle-cloud/install-agent --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-oracle-cloud.pdf --include-index
-
 npx docusaurus-prince-pdf -u http://localhost:4000/docs/aws-log/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-aws-log-monitoring.pdf --include-index
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/docs/best-practice-guides/about-apm-dashboard --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-best-practice-guides-about-apm-dashboard.pdf --include-index
