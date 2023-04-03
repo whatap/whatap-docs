@@ -2,12 +2,12 @@ import React from 'react';
 import MDXContents from '@theme-original/MDXContent';
 import {useLocation} from '@docusaurus/router';
 
-export default function IncludeDoc ({children, include}) {
+export default function InDoc ({children, product}) {
     let prods;
-    if (typeof include.split(",") !== undefined) {
-        prods = include.split(",");
+    if (typeof product.split(",") !== undefined) {
+        prods = product.split(",");
     } else {
-        prods.push(include);
+        prods.push(product);
     }
     let location = useLocation();
     let myContents;
@@ -18,11 +18,11 @@ export default function IncludeDoc ({children, include}) {
         // console.log(prods[i]);
         prod = prods[i]
         if (cProd == prod) {
-            // console.log("include!!!");
+            // console.log("product!!!");
             myContents = children;
             break;
         } else {
-            // console.log("not include!!!");
+            // console.log("not product!!!");
             myContents = "";
         }
     }

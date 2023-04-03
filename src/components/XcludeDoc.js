@@ -2,12 +2,12 @@ import React from 'react';
 import MDXContent from '@theme-original/MDXContent';
 import {useLocation} from '@docusaurus/router';
 
-export default function ExcludeDoc ({children, exclude}) {
+export default function XcludeDoc ({children, product}) {
     let prodsx;
-    if (typeof exclude.split(",") !== undefined) {
-        prodsx = exclude.split(",");
+    if (typeof product.split(",") !== undefined) {
+        prodsx = product.split(",");
     } else {
-        prodsx.push(exclude);
+        prodsx.push(product);
     }
     let locationx = useLocation();
     let myContent;
@@ -18,11 +18,11 @@ export default function ExcludeDoc ({children, exclude}) {
         // console.log(prods[i]);
         prodx = prodsx[s]
         if (cProdx == prodx) {
-            // console.log("exclude!!!");
+            // console.log("product!!!");
             myContent = "";
             break;
         } else {
-            // console.log("not exclude!!!");
+            // console.log("not product!!!");
             myContent = children;
         }
     }
