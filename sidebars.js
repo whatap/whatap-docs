@@ -3007,16 +3007,16 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1.2.4',
+                id: 'release-notes/k8s/k8s-1.2.5',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1.2.4',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1.2.5',
+                  className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3026,7 +3026,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1.1.52',
                 'release-notes/k8s/k8s-1.1.51',
                 'release-notes/k8s/k8s-1.1.50',
-                'release-notes/k8s/k8s-1.1.49',
                 'release-notes/k8s/k8s-previous',
               ],
             },
