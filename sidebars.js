@@ -4605,8 +4605,23 @@ const sidebars = {
                 'server/metrics-detect-anormal',
               ]
             },
-            'server/server-list',
-            'server/server-detail',
+            {
+              type: 'category',
+              label: '서버 목록',
+              collapsible: true,
+              collapsed: true,
+              // link: {
+              //   type: 'doc',
+              //   id: 'server/metrics-intro'
+              //},
+              items: [
+                'server/server-list',
+                'server/server-detail',
+                'server/server-detail-process-group',
+              ]
+            },
+            // 'server/server-list',
+            // 'server/server-detail',
             'server/cube',
             {
               type: 'category',
