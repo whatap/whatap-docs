@@ -2270,6 +2270,7 @@ const sidebars = {
               items: [
                 'cubrid/instance-list',
                 'cubrid/instance-monitoring',
+                'cubrid/multi-instance-monitoring',
               ],
             },
             {
@@ -2293,6 +2294,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'cubrid/analysis-count-trend',
+                'cubrid/analysis-databaseparameter',
+                'cubrid/analysis-lock-and-deadlock',
+                'cubrid/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2301,22 +2314,20 @@ const sidebars = {
                 id: 'cubrid/metrics-intro'
               },
               items: [
+                'cubrid/metrics-data-list',
                 'cubrid/metrics-chart',
                 'cubrid/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'cubrid/analysis-function',
-                'cubrid/log-viewer',
                 'cubrid/stat',
                 'cubrid/report-intro',
-                'cubrid/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
@@ -2334,6 +2345,7 @@ const sidebars = {
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
                 'cubrid/set-event-format',
+                'cubrid/file-log-notice',
               ],
             },
             {
@@ -2996,16 +3008,16 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1.2.4',
+                id: 'release-notes/k8s/k8s-1.2.5',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1.2.4',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1.2.5',
+                  className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3015,7 +3027,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1.1.52',
                 'release-notes/k8s/k8s-1.1.51',
                 'release-notes/k8s/k8s-1.1.50',
-                'release-notes/k8s/k8s-1.1.49',
                 'release-notes/k8s/k8s-previous',
               ],
             },

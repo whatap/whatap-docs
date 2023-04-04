@@ -1,35 +1,35 @@
 import React from 'react';
-import MDXContent from '@theme/MDXContent';
+import MDXContent from '@theme-original/MDXContent';
 import {useLocation} from '@docusaurus/router';
 
-export default function ExcludeDoc ({children, exclude}) {
-    let prods;
-    if (typeof exclude.split(",") !== undefined) {
-        prods = exclude.split(",");
+export default function XcludeDoc ({children, product}) {
+    let prodsx;
+    if (typeof product.split(",") !== undefined) {
+        prodsx = product.split(",");
     } else {
-        prods.push(exclude);
+        prodsx.push(product);
     }
-    let location = useLocation();
-    let myContents;
-    const cProd = location.pathname.split("/")[1];
-    let i, prod;
+    let locationx = useLocation();
+    let myContent;
+    const cProdx = locationx.pathname.split("/")[1];
+    let s, prodx;
     
-    for (i =0; i < prods.length; i ++) {
+    for (s =0; s < prodsx.length; s ++) {
         // console.log(prods[i]);
-        prod = prods[i]
-        if (cProd == prod) {
-            // console.log("exclude!!!");
-            myContents = "";
+        prodx = prodsx[s]
+        if (cProdx == prodx) {
+            // console.log("product!!!");
+            myContent = "";
             break;
         } else {
-            // console.log("not exclude!!!");
-            myContents = children;
+            // console.log("not product!!!");
+            myContent = children;
         }
     }
 
     return (
         <MDXContent>
-            {myContents}
+            {myContent}
         </MDXContent>
     );
 }

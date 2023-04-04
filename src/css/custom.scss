@@ -1381,6 +1381,26 @@ main {
         }
       }
     }
+    .db-metric-cubrid {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 10%;
+            }
+            &:nth-of-type(2) {
+              width: 35%;
+            }
+            &:last-of-type {
+              width: 55%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
     .metric {
       table {
         tr {

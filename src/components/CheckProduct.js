@@ -4,59 +4,59 @@ import {useLocation} from '@docusaurus/router';
 
 export default function CheckProduct() {
     let location = useLocation();
-    let cProd = location.pathname.split("/")[1];
+    let cProdt = location.pathname.split("/")[1];
     var product;
-    if (cProd === 'nodejs') {
+    if (cProdt === 'nodejs') {
         product = '-nodejs';
-    } else if (cProd === 'java') {
+    } else if (cProdt === 'java') {
         product = '-java';
-    } else if (cProd === 'php') {
+    } else if (cProdt === 'php') {
         product = '-php';
-    } else if (cProd === 'python') {
+    } else if (cProdt === 'python') {
         product = '-python';
-    } else if (cProd === 'golang') {
+    } else if (cProdt === 'golang') {
         product = '-golang';
-    } else if (cProd === 'dotnet') {
+    } else if (cProdt === 'dotnet') {
         product = '-dotnet';
-    } else if (cProd === 'server') {
+    } else if (cProdt === 'server') {
         product = '-server';
-    } else if (cProd === 'kubernetes') {
+    } else if (cProdt === 'kubernetes') {
         product = '-k8s';
-    } else if (cProd === 'postgresql') {
+    } else if (cProdt === 'postgresql') {
         product = '-postgresql';
-    } else if (cProd === 'oracle-cloud') {
+    } else if (cProdt === 'oracle-cloud') {
         product = '-oci';
-    } else if (cProd === 'oracle') {
+    } else if (cProdt === 'oracle') {
         product = '-oracle';
-    } else if (cProd === 'mysql-rds') {
+    } else if (cProdt === 'mysql-rds') {
         product = '-mysql-rds';
-    } else if (cProd === 'mysql') {
+    } else if (cProdt === 'mysql') {
         product = '-mysql';
-    } else if (cProd === 'mssql') {
+    } else if (cProdt === 'mssql') {
         product = '-mssql';
-    } else if (cProd === 'tibero') {
+    } else if (cProdt === 'tibero') {
         product = '-tibero';
-    } else if (cProd === 'cubrid') {
+    } else if (cProdt === 'cubrid') {
         product = '-cubrid';
-    } else if (cProd === 'altibase') {
+    } else if (cProdt === 'altibase') {
         product = '-altibase';
-    } else if (cProd === 'redis') {
+    } else if (cProdt === 'redis') {
         product = '-redis';
-    } else if (cProd === 'mongodb') {
+    } else if (cProdt === 'mongodb') {
         product = '-mongodb';
-    } else if (cProd === 'url') {
+    } else if (cProdt === 'url') {
         product = '-url';
-    } else if (cProd === 'amazon-cloudwatch') {
+    } else if (cProdt === 'amazon-cloudwatch') {
         product = '-aws-cloudwatch';
-    } else if (cProd === 'amazon-ecs') {
+    } else if (cProdt === 'amazon-ecs') {
         product = '-aws-ecs';
-    } else if (cProd === 'azure') {
+    } else if (cProdt === 'azure') {
         product = '-azure';
-    } else if (cProd === 'ncloud') {
+    } else if (cProdt === 'ncloud') {
         product = '-ncloud';
-    } else if (cProd === 'aws-log') {
+    } else if (cProdt === 'aws-log') {
         product = '-aws-log';
-    } else if (cProd === 'log') {
+    } else if (cProdt === 'log') {
         product = '-log';
     } else {
         product = '';
