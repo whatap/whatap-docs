@@ -1355,10 +1355,7 @@ const sidebars = {
             id: 'postgresql/agent-settings'
           },
           items: [
-            'postgresql/agent-network',
-            'postgresql/agent-naming',
-            'postgresql/agent-aws',
-            'postgresql/agent-data',
+            'postgresql/agent-dbx-settings',
             'postgresql/agent-xos-settings',
           ],
         },
@@ -1371,7 +1368,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -1406,6 +1403,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'postgresql/analysis-count-trend',
+                'postgresql/analysis-lock-and-deadlock',
+                'postgresql/analysis-databaseparameter',
+                'postgresql/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -1414,29 +1423,20 @@ const sidebars = {
                 id: 'postgresql/metrics-intro'
               },
               items: [
-                'postgresql/metrics-postgresql',
+                'postgresql/metrics-data-list',
                 'postgresql/metrics-chart',
                 'postgresql/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
-                'postgresql/analysis-function',
-                // 'postgresql/metrics-intro',
-                // 'postgresql/metrics-detect-anormal',
-                'postgresql/log-viewer',
                 'postgresql/stat',
                 'postgresql/report-intro',
-                'postgresql/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
