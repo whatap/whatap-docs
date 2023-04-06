@@ -1509,10 +1509,7 @@ const sidebars = {
             id: 'oracle/agent-settings'
           },
           items: [
-            'oracle/agent-network',
-            'oracle/agent-naming',
-            'oracle/agent-aws',
-            'oracle/agent-data',
+            'oracle/agent-dbx-settings',
             'oracle/agent-xos-settings',
           ],
         },
