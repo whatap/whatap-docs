@@ -1454,6 +1454,7 @@ const sidebars = {
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
                 'postgresql/set-event-format',
+                'postgresql/file-log-notice',
               ],
             },
             // {
