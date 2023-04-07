@@ -4603,6 +4603,7 @@ const sidebars = {
                 'server/metrics-server',
                 'server/metrics-chart',
                 'server/metrics-detect-anormal',
+                'server/metrics-search',
               ]
             },
             {
