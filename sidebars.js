@@ -1522,7 +1522,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -1533,7 +1533,6 @@ const sidebars = {
                 'oracle/instance-list',
                 'oracle/instance-monitoring',
                 'oracle/multi-instance-monitoring',
-                // 'oracle/slow-query',
               ],
             },
             {
@@ -1557,6 +1556,19 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'oracle/analysis-count-trend',
+                'oracle/analysis-lock-and-deadlock',
+                'oracle/analysis-pq-tree',
+                'oracle/analysis-databaseparameter',
+                'oracle/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -1565,29 +1577,20 @@ const sidebars = {
                 id: 'oracle/metrics-intro'
               },
               items: [
-                'oracle/metrics-oracle',
+                'oracle/metrics-data-list',
                 'oracle/metrics-chart',
                 'oracle/metrics-detect-anormal',
               ]
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
-                'oracle/analysis-function',
-                // 'oracle/metrics-intro',
-                // 'oracle/metrics-detect-anormal',
-                'oracle/log-viewer',
                 'oracle/stat',
                 'oracle/report-intro',
-                'oracle/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
