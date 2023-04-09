@@ -1382,5 +1382,17 @@
   "sidebar.previewSidebar.category.릴리스 노트 - Preview": {
     "message": "릴리스 노트 - Preview",
     "description": "The label for category 릴리스 노트 - Preview in sidebar previewSidebar"
+  },
+  "sidebar.cubridSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar cubridSidebar"
+  },
+  "sidebar.cubridSidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar cubridSidebar"
+  },
+  "sidebar.serverSidebar.category.서버 목록": {
+    "message": "서버 목록",
+    "description": "The label for category 서버 목록 in sidebar serverSidebar"
   }
 }
