@@ -2918,14 +2918,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.2',
+                id: 'release-notes/python/python-1.3.3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1.3.2',
+                  id: 'release-notes/python/python-1.3.3',
                   className: 'new',
                 },
+                'release-notes/python/python-1.3.2',
                 'release-notes/python/python-1.3.1',
                 'release-notes/python/python-1.3.0',
                 'release-notes/python/python-1.2.4',
@@ -3084,7 +3085,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Focus',
-              className: 'new',
+              // className: 'new',
               id: 'release-notes/focus/focus-release-notes',
             },
           ],
