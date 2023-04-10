@@ -1,6 +1,6 @@
 {
   "Feedback.feedbackMessage": {
-    "message": "WhaTap Docs는 편하게 이용했나요?",
+    "message": "이 페이지가 마음에 드셨나요?",
     "description": "Was this page helpful?"
   },
   "theme.admonition.note": {
@@ -32,7 +32,7 @@
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "1개 항목",
+    "message": "{count} 항목",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
@@ -57,6 +57,26 @@
     "message": "검색",
     "description": "The ARIA label and placeholder for search button"
   },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\"에 대한 검색 결과",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "문서 검색",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "everywhere"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "총 {count} 문서 발견",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "문서를 찾을 수 없습니다",
+    "description": "The paragraph for empty search result"
+  },
+  
   "docs_Name": {
     "message": "WhaTap Docs"
   },
@@ -66,10 +86,6 @@
   "theme.ErrorPageContent.title": {
     "message": "페이지에 오류가 발생하였습니다.",
     "description": "The title of the fallback page when the page crashed"
-  },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "다시 시도해 보세요",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NotFound.title": {
     "message": "페이지를 찾을 수 없습니다.",
@@ -230,10 +246,6 @@
     "message": "Main",
     "description": "The ARIA label for the main navigation"
   },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "언어",
-    "description": "The label for the mobile language switcher dropdown"
-  },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "이 페이지에서",
     "description": "The label used by the button on the collapsible TOC component"
@@ -245,6 +257,10 @@
   "theme.blog.post.readMoreLabel": {
     "message": "{title} 에 대해 더 읽어보기",
     "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "언어",
+    "description": "The label for the mobile language switcher dropdown"
   },
   "theme.blog.post.readingTime.plurals": {
     "message": "약 {readingTime}분",
@@ -283,26 +299,11 @@
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "문서를 찾을 수 없습니다."
+    "message": "결과가 없습니다"
   },
-  "theme.SearchPage.existingResultsTitle": {
-    "message": "\"{query}\"에 대한 검색 결과",
-    "description": "The search page title for non-empty query"
-  },
-  "theme.SearchPage.emptyResultsTitle": {
-    "message": "문서 검색",
-    "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
-  },
-  "theme.SearchPage.documentsFound.plurals": {
-    "message": "총 발견 {count} 문서",
-    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.SearchPage.noResultsText": {
-    "message": "문서를 찾을 수 없습니다",
-    "description": "The paragraph for empty search result"
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "다시 시도해 보세요",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
     "message": "본문으로 건너뛰기",
