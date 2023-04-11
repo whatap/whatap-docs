@@ -1,13 +1,15 @@
 import React from 'react';
 import checkProduct from '@site/src/components/CheckProduct';
 
-export default function ChangeImgName({img, ext, desc}) {
+export default function ChangeImgName({img, desc}) {
     const product = checkProduct();
-    
-    let imgFilePath = '/img/' + img + product + ext;
+    let fext = img.substr(img.lastIndexOf('.') + 1);
+    let fileName = img.replace('.' + fext, '');
+    let imgFilePath = '/img/' + fileName + product + '.' + fext;
     const onErrorImg = (e) => {
-        e.target.src = '/img/' + img + ext;
+        e.target.src = '/img/' + img;
     }
+    
     return (
         <p>
             <img src={imgFilePath} 
