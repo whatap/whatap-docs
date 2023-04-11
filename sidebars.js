@@ -1608,6 +1608,7 @@ const sidebars = {
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
                 'oracle/set-event-format',
+                'oracle/file-log-notice',
               ],
             },
             // {
