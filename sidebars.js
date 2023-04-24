@@ -2989,17 +2989,18 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2.3.3',
+                id: 'release-notes/server/server-2.3.4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2.3.3',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2.3.4',
+                  className: 'new',
                 },
+                'release-notes/server/server-2.3.3',
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
