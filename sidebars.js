@@ -2923,7 +2923,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1.3.3',
@@ -2932,7 +2932,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1.3.3',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1.3.2',
                 'release-notes/python/python-1.3.1',
@@ -3018,7 +3018,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1.2.5',
@@ -3027,7 +3027,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1.2.5',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3045,11 +3045,13 @@ const sidebars = {
               label: 'DB',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               items: [
                 {
                   type: 'doc',
                   label: 'DBX',
                   id: 'release-notes/db/dbx-release-notes',
+                  className: 'new',
                 },
                 {
                   type: 'category',
