@@ -1394,5 +1394,29 @@
   "sidebar.serverSidebar.category.서버 목록": {
     "message": "서버 목록",
     "description": "The label for category 서버 목록 in sidebar serverSidebar"
+  },
+  "sidebar.postgreSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar postgreSidebar"
+  },
+  "sidebar.dboracleSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar dboracleSidebar"
+  },
+  "sidebar.dboracleSidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar dboracleSidebar"
   }
 }
