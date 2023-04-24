@@ -4413,7 +4413,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'rum/introduction'
+        id: 'browser/introduction'
       },
       items: [
         {
@@ -4422,24 +4422,24 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/browser-compatibility',
-            'rum/browser-preset',
+            'browser/browser-compatibility',
+            'browser/browser-preset',
           ],
         },
-        'rum/apply-agent',
-        'rum/before-starting',
+        'browser/apply-agent',
+        'browser/before-starting',
         {
           type: 'category',
           label: '대시보드',
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/dashboard',
-            'rum/pageload-dashboard',
-            'rum/resource-dashboard',
-            'rum/ajax-dashboard',
-            'rum/browser-error-dashboard',
-            'rum/dashboard-widget-setting',
+            'browser/dashboard',
+            'browser/pageload-dashboard',
+            'browser/resource-dashboard',
+            'browser/ajax-dashboard',
+            'browser/browser-error-dashboard',
+            'browser/dashboard-widget-setting',
           ],
         },
         {
@@ -4449,16 +4449,16 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'rum/flex-board',
+            id: 'browser/flex-board',
           },
           items: [
-            'rum/flexboard-template',
-            'rum/flexboard-create',
-            'rum/flexboard-manage',
-            'rum/flexboard-metric-widget',
-            'rum/flexboard-widget-manage',
-            'rum/flexboard-mode',
-            'rum/flexboard-share',
+            'browser/flexboard-template',
+            'browser/flexboard-create',
+            'browser/flexboard-manage',
+            'browser/flexboard-metric-widget',
+            'browser/flexboard-widget-manage',
+            'browser/flexboard-mode',
+            'browser/flexboard-share',
           ],
         },
         {
@@ -4467,9 +4467,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/analyze-pageload',
-            'rum/tracking-error',
-            'rum/metrics-intro',
+            'browser/analyze-pageload',
+            'browser/tracking-error',
+            'browser/metrics-intro',
           ],
         },
         {
@@ -4479,15 +4479,15 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'rum/set-notics',
+            id: 'browser/set-notics',
           },
           items: [
-            'rum/metric-warning-notice',
-            'rum/set-receive-event',
-            'rum/set-event-history'
+            'browser/metric-warning-notice',
+            'browser/set-receive-event',
+            'browser/set-event-history'
           ],
         },
-        'rum/collect-data',
+        'browser/collect-data',
       ],
     }
   ],
