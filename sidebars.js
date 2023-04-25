@@ -3327,6 +3327,11 @@ const sidebars = {
           href: '../url/url-intro',
         },
         {
+          type: 'link',
+          label: 'Browser',
+          href: '../browser/introduction',
+        },
+        {
           type: 'doc',
           label: 'Extensions',
           id: 'extensions',
@@ -4410,7 +4415,7 @@ const sidebars = {
   rumsSidebar: [
     {
       type: 'category',
-      label: '브라우저 모니터링(RUM)',
+      label: 'Browser',
       collapsible: false,
       collapsed: false,
       link: {

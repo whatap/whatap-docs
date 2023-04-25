@@ -285,6 +285,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'browser/introduction',
+                label: 'Browser',
+              },
+              {
+                type: 'doc',
                 docId: 'amazon-cloudwatch/install-agent',
                 label: 'Amazon CloudWatch',
                 className: 'narrow',
@@ -325,12 +330,7 @@ const config = {
                 type: 'doc',
                 docId: 'extensions',
                 label: 'Extensions'
-              }
-              // {
-              //   type: 'doc',
-              //   docId: 'rum/introduction',
-              //   label: '브라우저 모니터링(RUM)',
-              // },
+              },
             ]
           },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
@@ -513,7 +513,7 @@ const config = {
             type: 'doc',
             docId: 'browser/introduction',
             position: "left",
-            label: '브라우저 모니터링',
+            label: 'Browser',
             className: 'hidden',
           },
           {
