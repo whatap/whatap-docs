@@ -4435,10 +4435,11 @@ const sidebars = {
           collapsed: true,
           items: [
             'browser/dashboard',
+            'browser/browser-error-dashboard',
             'browser/pageload-dashboard',
             'browser/resource-dashboard',
             'browser/ajax-dashboard',
-            'browser/browser-error-dashboard',
+            'browser/using-dashboard',
             'browser/dashboard-widget-setting',
           ],
         },
