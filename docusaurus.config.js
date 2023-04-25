@@ -511,9 +511,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'rum/introduction',
+            docId: 'browser/introduction',
             position: "left",
-            label: '브라우저 모니터링(RUM)',
+            label: '브라우저 모니터링',
             className: 'hidden',
           },
           {
