@@ -2923,7 +2923,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1.3.4',
@@ -2932,7 +2932,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1.3.4',
-                  // className: 'new',
+                  className: 'new',
                 },
                 'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
