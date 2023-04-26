@@ -3130,6 +3130,35 @@ const sidebars = {
       ]
     }
   ],
+  learningSidebar: [
+    {
+      type: 'category',
+      label: '학습하기',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'getting-started/learning-guides'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '애플리케이션 대시보드',
+          id: 'best-practice-guides/about-apm-dashboard'
+        },
+        {
+          type: 'doc',
+          label: '히트맵 트랜잭션',
+          id: 'best-practice-guides/about-apm-hitmap-class'
+        },
+        {
+          type: 'doc',
+          label: '리소스 보드',
+          id: 'best-practice-guides/about-server-dashboard'
+        },
+      ]
+    }
+  ],
   indexSidebar: [
     {
       type: 'category',
