@@ -3145,6 +3145,7 @@ const sidebars = {
         },
         'getting-started/support-env',
         'getting-started/quick-guide',
+        'getting-started/learning-guides',
         'getting-started/software-proxy',
         'navigation/main-ui-intro',
       ],
