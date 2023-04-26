@@ -4951,6 +4951,7 @@ const sidebars = {
             'log/log-java',
             'log/log-php',
             'log/log-python',
+            'log/log-go',
             'log/log-server',
             'log/log-k8s',
           ],
