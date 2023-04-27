@@ -3157,6 +3157,11 @@ const sidebars = {
           label: '리소스 보드',
           id: 'best-practice-guides/about-server-dashboard'
         },
+        {
+          type: 'doc',
+          label: '브라우저 모니터링',
+          id: 'best-practice-guides/using-browser-monitoring'
+        },
       ]
     }
   ],
