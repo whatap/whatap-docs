@@ -32,6 +32,7 @@ const config = {
   ],
   plugins: [
     [ 'docusaurus-plugin-sass', {} ],
+    [ 'docusaurus-plugin-pagemove', {} ],
     [
       '@docusaurus/plugin-client-redirects',
       {
