@@ -2851,14 +2851,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1.98.x',
+            id: 'release-notes/service/service-1.100.x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1.98.x',
+              id: 'release-notes/service/service-1.100.x',
               className: 'new',
             },
+            'release-notes/service/service-1.98.x',
             'release-notes/service/service-1.96.0',
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
@@ -2867,7 +2868,6 @@ const sidebars = {
             'release-notes/service/service-1.86.0',
             'release-notes/service/service-1.84.0',
             'release-notes/service/service-1.82.0',
-            'release-notes/service/service-1.80.0',
             'release-notes/service/service-previous',
           ]
         },
@@ -2923,17 +2923,18 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.3',
+                id: 'release-notes/python/python-1.3.4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1.3.3',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1.3.4',
+                  className: 'new',
                 },
+                'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
                 'release-notes/python/python-1.3.1',
                 'release-notes/python/python-1.3.0',
@@ -2989,7 +2990,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2.3.4',
@@ -2998,7 +2999,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2.3.4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2.3.3',
                 'release-notes/server/server-2.3.2',
@@ -3129,6 +3130,35 @@ const sidebars = {
       ]
     }
   ],
+  learningSidebar: [
+    {
+      type: 'category',
+      label: '학습하기',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'getting-started/learning-guides'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '애플리케이션 대시보드',
+          id: 'best-practice-guides/about-apm-dashboard'
+        },
+        {
+          type: 'doc',
+          label: '히트맵 트랜잭션',
+          id: 'best-practice-guides/about-apm-hitmap-class'
+        },
+        {
+          type: 'doc',
+          label: '리소스 보드',
+          id: 'best-practice-guides/about-server-dashboard'
+        },
+      ]
+    }
+  ],
   indexSidebar: [
     {
       type: 'category',
@@ -3144,6 +3174,7 @@ const sidebars = {
         },
         'getting-started/support-env',
         'getting-started/quick-guide',
+        'getting-started/learning-guides',
         'getting-started/software-proxy',
         'navigation/main-ui-intro',
       ],

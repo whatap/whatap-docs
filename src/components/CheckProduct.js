@@ -58,6 +58,8 @@ export default function CheckProduct() {
         product = '-aws-log';
     } else if (cProdt === 'log') {
         product = '-log';
+    } else if (cProdt === 'browser') {
+        product = '-browser';
     } else {
         product = '';
     }
