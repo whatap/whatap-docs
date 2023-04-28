@@ -2814,14 +2814,15 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-notes/preview/preview-1.99.x',
+        id: 'release-notes/preview/preview-1.101.x',
       },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1.99.x',
+          id: 'release-notes/preview/preview-1.101.x',
           className: 'new',
         },
+        'release-notes/preview/preview-1.99.x',
         'release-notes/preview/preview-1.97.x',
         'release-notes/preview/preview-1.95.2',
         'release-notes/preview/preview-1.95.1',
@@ -3155,6 +3156,11 @@ const sidebars = {
           type: 'doc',
           label: '리소스 보드',
           id: 'best-practice-guides/about-server-dashboard'
+        },
+        {
+          type: 'doc',
+          label: '브라우저 모니터링',
+          id: 'best-practice-guides/using-browser-monitoring'
         },
       ]
     }
