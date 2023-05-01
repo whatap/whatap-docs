@@ -27,6 +27,9 @@ npx docusaurus-prince-pdf -u http://localhost:4000/azure/install-agent --prince-
 npx docusaurus-prince-pdf -u http://localhost:4000/ncloud/install-agent --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-ncloud.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/oracle-cloud/install-agent --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-oracle-cloud.pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/aws-log/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-aws-log-monitoring.pdf --include-index
+npx docusaurus-prince-pdf -u http://localhost:4000/browser/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-browser-monitoring.pdf --include-index
+
+# npx docusaurus-prince-pdf -u http://localhost:4000/best-practice-guides/using-browser-monitoring --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-best-practice-guides-using-browser-monitoring.pdf --include-index
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/best-practice-guides/about-apm-dashboard --prince-args="--page-size='a4' --page-margin='10mm'" -o ./pdf/whatap-best-practice-guides-about-apm-dashboard.pdf --include-index
 
