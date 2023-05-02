@@ -210,5 +210,9 @@
   "logo.alt": {
     "message": "WhaTap Docs",
     "description": "The alt text of navbar logo"
+  },
+  "item.label.Browser": {
+    "message": "Browser",
+    "description": "Navbar item with label Browser"
   }
 }
