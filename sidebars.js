@@ -2924,7 +2924,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1.3.4',
@@ -2933,7 +2933,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1.3.4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
@@ -2951,11 +2951,18 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2.0.4',
+                id: 'release-notes/dotnet/dotnet-2.0.6',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/dotnet/dotnet-2.0.6',
+                  className: 'new',
+                },
+                'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
                 'release-notes/dotnet/dotnet-2.0.3',
                 'release-notes/dotnet/dotnet-2.0.2',
