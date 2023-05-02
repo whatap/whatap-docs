@@ -16,19 +16,11 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
   favicon: '/img/whatap-favicon.ico',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'WhaTap', // Usually your GitHub org/user name.
-  // projectName: 'WhaTap Docs', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
+  trailingSlash: false,
   // clientModules: [
   //   require.resolve('./static/js/rum.js')
   // ],
@@ -40,6 +32,7 @@ const config = {
   ],
   plugins: [
     [ 'docusaurus-plugin-sass', {} ],
+    [ 'docusaurus-plugin-pagemove', {} ],
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -91,7 +84,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /aws-log-p/, /release-notes\/preview/, /java\/install-agent-with-buildpack/],
+        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /release-notes\/preview/, /java\/install-agent-with-buildpack/],
       }
     ],
     [
@@ -285,6 +278,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'browser/introduction',
+                label: 'Browser',
+              },
+              {
+                type: 'doc',
                 docId: 'amazon-cloudwatch/install-agent',
                 label: 'Amazon CloudWatch',
                 className: 'narrow',
@@ -325,12 +323,7 @@ const config = {
                 type: 'doc',
                 docId: 'extensions',
                 label: 'Extensions'
-              }
-              // {
-              //   type: 'doc',
-              //   docId: 'rum/introduction',
-              //   label: '브라우저 모니터링(RUM)',
-              // },
+              },
             ]
           },
           // 여기부터 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴
@@ -511,9 +504,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'rum/introduction',
+            docId: 'browser/introduction',
             position: "left",
-            label: '브라우저 모니터링(RUM)',
+            label: 'Browser',
             className: 'hidden',
           },
           {

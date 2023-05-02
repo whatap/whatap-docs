@@ -201,6 +201,7 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
+                'java/metrics-search',
                 'java/metrics-chart',
                 'java/metrics-detect-anormal',
               ]
@@ -433,6 +434,7 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                'php/metrics-search',
                 'php/metrics-chart',
                 'php/metrics-detect-anormal',
               ]
@@ -641,6 +643,7 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                'nodejs/metrics-search',
                 'nodejs/metrics-chart',
                 'nodejs/metrics-detect-anormal',
               ]
@@ -858,6 +861,7 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                'python/metrics-search',
                 'python/metrics-chart',
                 'python/metrics-detect-anormal',
               ]
@@ -1059,6 +1063,7 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                'dotnet/metrics-search',
                 'dotnet/metrics-chart',
                 'dotnet/metrics-detect-anormal',
               ]
@@ -1250,6 +1255,7 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                'golang/metrics-search',
                 'golang/metrics-chart',
                 'golang/metrics-detect-anormal',
               ]
@@ -2808,14 +2814,15 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-notes/preview/preview-1.99.x',
+        id: 'release-notes/preview/preview-1.101.x',
       },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1.99.x',
+          id: 'release-notes/preview/preview-1.101.x',
           className: 'new',
         },
+        'release-notes/preview/preview-1.99.x',
         'release-notes/preview/preview-1.97.x',
         'release-notes/preview/preview-1.95.2',
         'release-notes/preview/preview-1.95.1',
@@ -2845,14 +2852,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1.98.x',
+            id: 'release-notes/service/service-1.100.x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1.98.x',
+              id: 'release-notes/service/service-1.100.x',
               className: 'new',
             },
+            'release-notes/service/service-1.98.x',
             'release-notes/service/service-1.96.0',
             'release-notes/service/service-1.94.0',
             'release-notes/service/service-1.92.0',
@@ -2861,7 +2869,6 @@ const sidebars = {
             'release-notes/service/service-1.86.0',
             'release-notes/service/service-1.84.0',
             'release-notes/service/service-1.82.0',
-            'release-notes/service/service-1.80.0',
             'release-notes/service/service-previous',
           ]
         },
@@ -2920,14 +2927,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.3',
+                id: 'release-notes/python/python-1.3.4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1.3.3',
+                  id: 'release-notes/python/python-1.3.4',
                   className: 'new',
                 },
+                'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
                 'release-notes/python/python-1.3.1',
                 'release-notes/python/python-1.3.0',
@@ -2986,14 +2994,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2.3.3',
+                id: 'release-notes/server/server-2.3.4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2.3.3',
+                  id: 'release-notes/server/server-2.3.4',
                   // className: 'new',
                 },
+                'release-notes/server/server-2.3.3',
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
                 'release-notes/server/server-2.3.0',
@@ -3011,7 +3020,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1.2.5',
@@ -3020,7 +3029,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1.2.5',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.2',
                 'release-notes/k8s/k8s-1.2.1',
@@ -3038,11 +3047,13 @@ const sidebars = {
               label: 'DB',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               items: [
                 {
                   type: 'doc',
                   label: 'DBX',
                   id: 'release-notes/db/dbx-release-notes',
+                  className: 'new',
                 },
                 {
                   type: 'category',
@@ -3120,6 +3131,40 @@ const sidebars = {
       ]
     }
   ],
+  learningSidebar: [
+    {
+      type: 'category',
+      label: '학습하기',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'getting-started/learning-guides'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '애플리케이션 대시보드',
+          id: 'best-practice-guides/about-apm-dashboard'
+        },
+        {
+          type: 'doc',
+          label: '히트맵 트랜잭션',
+          id: 'best-practice-guides/about-apm-hitmap-class'
+        },
+        {
+          type: 'doc',
+          label: '리소스 보드',
+          id: 'best-practice-guides/about-server-dashboard'
+        },
+        {
+          type: 'doc',
+          label: '브라우저 모니터링',
+          id: 'best-practice-guides/using-browser-monitoring'
+        },
+      ]
+    }
+  ],
   indexSidebar: [
     {
       type: 'category',
@@ -3135,6 +3180,7 @@ const sidebars = {
         },
         'getting-started/support-env',
         'getting-started/quick-guide',
+        'getting-started/learning-guides',
         'getting-started/software-proxy',
         'navigation/main-ui-intro',
       ],
@@ -3316,6 +3362,11 @@ const sidebars = {
           type: 'link',
           label: 'URL',
           href: '../url/url-intro',
+        },
+        {
+          type: 'link',
+          label: 'Browser',
+          href: '../browser/introduction',
         },
         {
           type: 'doc',
@@ -3930,6 +3981,7 @@ const sidebars = {
                 id: 'amazon-ecs/metrics-intro',
               },
               items: [
+                'amazon-ecs/metrics-search',
                 'amazon-ecs/metrics-cube',
                 'amazon-ecs/metrics-chart',
                 'amazon-ecs/metrics-detect-anormal',
@@ -4007,6 +4059,7 @@ const sidebars = {
                 id: 'amazon-cloudwatch/metrics-intro',
               },
               items: [
+                'amazon-cloudwatch/metrics-search',
                 'amazon-cloudwatch/metrics-cube',
                 'amazon-cloudwatch/metrics-chart',
                 'amazon-cloudwatch/metrics-detect-anormal',
@@ -4084,6 +4137,7 @@ const sidebars = {
                 id: 'azure/metrics-intro',
               },
               items: [
+                'azure/metrics-search',
                 'azure/metrics-cube',
                 'azure/metrics-chart',
                 'azure/metrics-detect-anormal',
@@ -4161,6 +4215,7 @@ const sidebars = {
                 id: 'ncloud/metrics-intro',
               },
               items: [
+                'ncloud/metrics-search',
                 'ncloud/metrics-cube',
                 'ncloud/metrics-chart',
                 'ncloud/metrics-detect-anormal',
@@ -4238,6 +4293,7 @@ const sidebars = {
                 id: 'oracle-cloud/metrics-intro',
               },
               items: [
+                'oracle-cloud/metrics-search',
                 'oracle-cloud/metrics-cube',
                 'oracle-cloud/metrics-chart',
                 'oracle-cloud/metrics-detect-anormal',
@@ -4396,12 +4452,12 @@ const sidebars = {
   rumsSidebar: [
     {
       type: 'category',
-      label: '브라우저 모니터링(RUM)',
+      label: 'Browser',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'rum/introduction'
+        id: 'browser/introduction'
       },
       items: [
         {
@@ -4410,24 +4466,25 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/browser-compatibility',
-            'rum/browser-preset',
+            'browser/browser-compatibility',
+            'browser/browser-preset',
           ],
         },
-        'rum/apply-agent',
-        'rum/before-starting',
+        'browser/apply-agent',
+        'browser/before-starting',
         {
           type: 'category',
           label: '대시보드',
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/dashboard',
-            'rum/pageload-dashboard',
-            'rum/resource-dashboard',
-            'rum/ajax-dashboard',
-            'rum/browser-error-dashboard',
-            'rum/dashboard-widget-setting',
+            'browser/dashboard',
+            'browser/browser-error-dashboard',
+            'browser/pageload-dashboard',
+            'browser/resource-dashboard',
+            'browser/ajax-dashboard',
+            'browser/using-dashboard',
+            'browser/dashboard-widget-setting',
           ],
         },
         {
@@ -4437,16 +4494,16 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'rum/flex-board',
+            id: 'browser/flex-board',
           },
           items: [
-            'rum/flexboard-template',
-            'rum/flexboard-create',
-            'rum/flexboard-manage',
-            'rum/flexboard-metric-widget',
-            'rum/flexboard-widget-manage',
-            'rum/flexboard-mode',
-            'rum/flexboard-share',
+            'browser/flexboard-template',
+            'browser/flexboard-create',
+            'browser/flexboard-manage',
+            'browser/flexboard-metric-widget',
+            'browser/flexboard-widget-manage',
+            'browser/flexboard-mode',
+            'browser/flexboard-share',
           ],
         },
         {
@@ -4455,9 +4512,9 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'rum/analyze-pageload',
-            'rum/tracking-error',
-            'rum/metrics-intro',
+            'browser/analyze-pageload',
+            'browser/tracking-error',
+            'browser/metrics-intro',
           ],
         },
         {
@@ -4467,15 +4524,15 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'rum/set-notics',
+            id: 'browser/set-notics',
           },
           items: [
-            'rum/metric-warning-notice',
-            'rum/set-receive-event',
-            'rum/set-event-history'
+            'browser/metric-warning-notice',
+            'browser/set-receive-event',
+            'browser/set-event-history'
           ],
         },
-        'rum/collect-data',
+        'browser/collect-data',
       ],
     }
   ],
@@ -4604,6 +4661,7 @@ const sidebars = {
               },
               items: [
                 'server/metrics-server',
+                'server/metrics-search',
                 'server/metrics-chart',
                 'server/metrics-detect-anormal',
               ]
@@ -4854,6 +4912,7 @@ const sidebars = {
               },
               items: [
                 'kubernetes/metrics-kubernetes',
+                'kubernetes/metrics-search',
                 'kubernetes/metrics-chart',
                 'kubernetes/metrics-detect-anormal',
               ]
@@ -4929,6 +4988,7 @@ const sidebars = {
             'log/log-java',
             'log/log-php',
             'log/log-python',
+            'log/log-go',
             'log/log-server',
             'log/log-k8s',
           ],
