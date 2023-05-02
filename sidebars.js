@@ -2885,9 +2885,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2.2.0',
+                id: 'release-notes/java/java-2.2.3',
               },
               items: [
+                'release-notes/java/java-2.2.3',
+                'release-notes/java/java-2.2.2',
                 'release-notes/java/java-2.2.0',
                 'release-notes/java/java-2.1.3',
                 'release-notes/java/java-2.1.2',
