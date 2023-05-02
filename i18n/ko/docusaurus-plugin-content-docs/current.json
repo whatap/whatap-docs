@@ -1418,5 +1418,33 @@
   "sidebar.dboracleSidebar.category.통계/보고서": {
     "message": "통계/보고서",
     "description": "The label for category 통계/보고서 in sidebar dboracleSidebar"
+  },
+  "sidebar.learningSidebar.category.학습하기": {
+    "message": "학습하기",
+    "description": "The label for category 학습하기 in sidebar learningSidebar"
+  },
+  "sidebar.learningSidebar.doc.애플리케이션 대시보드": {
+    "message": "애플리케이션 대시보드",
+    "description": "The label for the doc item 애플리케이션 대시보드 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-dashboard"
+  },
+  "sidebar.learningSidebar.doc.히트맵 트랜잭션": {
+    "message": "히트맵 트랜잭션",
+    "description": "The label for the doc item 히트맵 트랜잭션 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-hitmap-class"
+  },
+  "sidebar.learningSidebar.doc.리소스 보드": {
+    "message": "리소스 보드",
+    "description": "The label for the doc item 리소스 보드 in sidebar learningSidebar, linking to the doc best-practice-guides/about-server-dashboard"
+  },
+  "sidebar.learningSidebar.doc.브라우저 모니터링": {
+    "message": "브라우저 모니터링",
+    "description": "The label for the doc item 브라우저 모니터링 in sidebar learningSidebar, linking to the doc best-practice-guides/using-browser-monitoring"
+  },
+  "sidebar.indexSidebar.link.Browser": {
+    "message": "Browser",
+    "description": "The label for link Browser in sidebar indexSidebar, linking to ../browser/introduction"
+  },
+  "sidebar.rumsSidebar.category.Browser": {
+    "message": "Browser",
+    "description": "The label for category Browser in sidebar rumsSidebar"
   }
 }
