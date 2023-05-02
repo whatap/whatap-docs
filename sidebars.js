@@ -2968,7 +2968,11 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2.0.2',
                 'release-notes/dotnet/dotnet-2.0.1',
                 'release-notes/dotnet/dotnet-2.0.0',
-                'release-notes/dotnet/dotnet-previous',
+                {
+                  type: 'link',
+                  label: '.NET Agent 지난 버전',
+                  href: 'https://deprecated-docs.whatap.io/kr/releasenotes/#net-agent-release-notes'
+                }
               ],
             },
             {
