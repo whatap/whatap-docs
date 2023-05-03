@@ -3379,7 +3379,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Browser',
-          href: '../browser/introduction',
+          href: '../browser',
         },
         {
           type: 'doc',
@@ -4470,7 +4470,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'browser/introduction'
+        id: 'browser'
       },
       items: [
         {

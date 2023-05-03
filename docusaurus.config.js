@@ -279,7 +279,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'browser/introduction',
+                docId: 'browser',
                 label: 'Browser',
               },
               {
@@ -505,7 +505,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'browser/introduction',
+            docId: 'browser',
             position: "left",
             label: 'Browser',
             className: 'hidden',
