@@ -1,0 +1,40 @@
+---
+id: container-view
+title: コンテナビュー、Podビュー
+description: コンテナマップメニューではコンテナ単位、Pod単位のモニタリングが可能です。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - コンテナ
+  - Pod
+  - コンテナマップ
+---
+
+## カテゴリ選択（コンテナビュー、Podビュー）
+
+**_コンテナマップ_**メニューに初めて進入すると、ユーザークラスタープロジェクト内の個別コンテナまたはPodがすべて展開されることを確認できます。
+
+WhaTap Kubernetesの**_コンテナマップ_**メニューでは、**コンテナ基準ビュー**、**Pod基準ビュー**の2つのモードに対応しているため、コンテナ単位のモニタリング、Pod単位のモニタリングなど状況に応じたモニタリングが可能です。
+
+-   **コンテナ基準ビュー**
+
+    ![コンテナ基準ビュー](https://img.whatap.io/media/images/whatap_kubernetes_container_map_container_category.png)
+
+-   **Pod基準ビュー**
+
+    ![Pod基準ビュー](https://img.whatap.io/media/images/whatap_kubernetes_container_map_pod_category.png)
+
+**コンテナ基準ビュー**と**Pod基準ビュー**は、**_コンテナマップ_**メニュー画面上のユーザー設定を通じて切り替えることができます。
+
+:::note
+구버전 쿠버네티스 에이전트를 사용한다면 Pod 기준 뷰를 확인할 수 없습니다. 에이전트 업그레이드를 수행하세요.
+
+```bash title='Master'
+kubectl set image deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:<エージェントバージョン> -n whatap-monitoring
+```
+
+```bash title='Node'
+kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<エージェントバージョン> -n whatap-monitoring
+```
+
+:::

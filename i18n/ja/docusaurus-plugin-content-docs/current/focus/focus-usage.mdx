@@ -1,0 +1,64 @@
+---
+id: focus-usage
+title: 使用例
+description: WhaTap Focusの使用例について案内します。
+tags:
+  - Focus
+  - 使用例
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Focusを活用してよく使用するコマンドやその他の活用例について案内します。これを通じて開発・運用時にデータを時系列で確認できるようにしています。開発・運用に役立てればと思います。
+
+## プロジェクトアクセスキーと収集サーバーのIP確認
+
+{@include: ../common-items/_check-pak-ip.mdx}
+
+## TOPコマンドのpid別CPU、Memory収集
+
+{@include: ../common-items/_top-collect-cpu-memory.mdx}
+
+## NETSTAT活用
+
+次の例は、netstatコマンドを実行してTCP Connectionステータス別の個数を収集します。
+
+```bash title='Linux Shell'
+#メトリクスカテゴリ
+CATEGORY="my_category"
+
+netstat -nat| tail -n+3 |  awk '{print $6}' | sort | uniq -c | awk 'BEGIN { printf "{" } {if (NR!=1) {printf ", "}}{printf "\"%s\":%s",$2,$1} END { print "}" }' | \
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -category $CATEGORY -onetime
+```
+
+## VMSTAT活用
+
+次の例は、ststatコマンドを実行して項目別指数を収集します。
+
+```bash title='Linux Shell'
+#メトリクスカテゴリ
+CATEGORY="my_category"
+
+vmstat -n 5 | awk ' NR>2 {printf "{ \"r\":%s,\"b\":%s, \"swpd\" :%s, \"free\" :%s, \"buff\" :%s, \"cache\" :%s, \"si\" :%s, \"so\":%s, \"bi\" :%s, \"bo\" :%s,  \"in\" :%s,  \"cs\":%s, \"us\":%s, \"sy\":%s, \"id\":%s, \"wa\":%s, \"st\" :%s }\n", $1,$2, $3,$4, $5,$6, $7,$8, $9,$10, $11,$12, $13,$14, $15,$16,$17}\n' | \
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -category $CATEGORY
+```
+
+## DU活用
+
+次の例は、duコマンドを実行して任意のディレクトリ容量を収集します。
+
+```bash title='Linux Shell'
+#メトリクスカテゴリ
+CATEGORY="my_category"
+TARGET=容量を収集したいディレクトリ
+
+du -sb $TARGET --max-depth=0 | awk 'BEGIN { printf "{" } {if (NR!=1) {printf ", "}}{printf "\"%s\":%s",$2,$1} END { print "}" }' | \
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -category $CATEGORY -onetime
+```

@@ -1,0 +1,23 @@
+---
+id: k8s-1.1.43
+title: Kubernetes Agent 1.1.43
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+-   Release date: 2022-05-11
+-   Agent download: http://repo.whatap.io/docker/kube_mon_1.1.43.tar
+
+## Improvement of the broken Hangul symptom when collecting the container logs
+
+Improved the broken Hangul symptom when collecting the container logs. 
+
+## Improvement of the container CPU usage collection
+
+Fixed an error where the container CPU usage exceeds 100 upon computing delay during collection. 
+
+## Adding columns in the kube_pod 
+
+Added the phase to the kube_pod category to improve the container map display.

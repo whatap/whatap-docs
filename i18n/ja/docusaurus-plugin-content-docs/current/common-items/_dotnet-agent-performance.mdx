@@ -1,0 +1,58 @@
+:::note
+
+-   エージェントの性能オプションを有効にするには、設定後に、WhaTap .NET Windows サービスを再起動する必要があります。
+
+-   エージェントのパフォーマンスを拡大すると、CPU、メモリ使用率が増加する可能性があります。
+    :::
+
+-   **tx_max_count** <span class='type'>Int</span><br/>
+    기본값 `5000`<br/>트랜잭션을 최대 저장하는 개수입니다. 同時に処理するトランザクションが多い場合は、そのサイズをさらに大きくしてください。
+
+-   **tx_default_capacity** <span class='type'>Int</span><br/>
+    기본값 `101`<br/>트랜잭션을 저장하는 버퍼의 시작 크기입니다.
+
+-   **tx_load_factor** <span class='type'>String(Float)</span><br/>
+    기본값 `0.75`<br/>트랜잭션을 저장하는 버퍼의 크기를 점차 증가시키기 위한 기준입니다. 101個から75％以上保存すると、バッファのサイズを2倍にします。
+                              
+
+-   **queue_log_enabled** <span class='type'>Boolean</span><br/>
+    기본값 `false`<br/>queue 관련 로그를 출력합니다.
+
+-   **queue_tcp_enabled** <span class='type'>Boolean</span><br/>기본값 `true`<br/> 
+    TCP 데이터 송신 처리에 사용하는 Channel을 대신해서 별도의 Queue를 이용합니다. データ優先度付きキューを使用します。
+
+-   **queue_tcp_sender_thread_count** <span class='type'>Int</span><br/>기본값 `2`<br/> 
+    TCP 데이터 송신을 처리하는 스레드의 개수를 설정합니다. スレッド数を増やすと、データ送信をより迅速に処理できます。 
+
+-   **net_send_buffer_size** <span class='type'>Int</span><br/>기본값 `1024`<br/> 
+    TCP 데이터 처리를 위한 Channel 버퍼를 설정합니다.
+
+-   **queue_udp_enabled** <span class='type'>Boolean</span><br/>기본값 `false`<br/> 
+    UDP 데이터 수신 처리에 Channel을 대신해서 별도의 Queue를 사용합니다.
+
+-   **queue_udp_size** <span class='type'>Int</span><br/>기본값 `2048`<br/> 
+    UDP 데이터 수신 버퍼를 설정합니다. チャンネル、キューバッファを設定します。 
+
+-   **queue_udp_read_thread_count** <span class='type'>Int</span><br/>기본값 `3`<br/> 
+    UDP 데이터 수신을 처리하는 스레드의 개수를 설정합니다. スレッド数を増やすと、UDPバッファからより迅速にデータを読むことができます。 
+
+-   **queue_udp_overflowed_size** <span class='type'>Int</span><br/>기본값 `4096`<br/> 
+    UDP 데이터 수신에 Queue를 사용하는 경우 overflowed Queue 버퍼 크기를 설정합니다.
+
+-   **queue_udp_process_thread_count** <span class='type'>Int</span><br/>기본값 `1`<br/> 
+    UDP 데이터를 처리하는 스레드의 개수를 설정합니다. スレッド数を増やすと、UDPで読んだデータをより迅速に処理できます。
+
+-   **queue_profile_enabled** <span class='type'>Boolean</span><br/>기본값 `false`<br/> 
+    트레이스 정보 처리에 Channel을 대신해 별도의 Queue 를 사용합니다.
+
+-   **queue_profile_size** <span class='type'>Int</span><br/>기본값 `512`<br/> 
+    트레이스 정보 처리를 위한 버퍼를 설정합니다.
+
+-   **queue_profile_process_thread_count** <span class='type'>Int</span><br/>기본값 `1`<br/> 
+    트레이스 정보를 처리하는 스레드의 개수를 설정합니다. スレッド数を増やすと、より迅速に処理できます。
+
+-   **queue_text_enabled** <span class='type'>Boolean</span><br/>기본값 `false`<br/> 
+    텍스트 데이터 처리를 위해 Channel 대신에 Queue 를 사용합니다.
+
+-   **queue_text_size** <span class='type'>Int</span><br/>기본값 `512`<br/> 
+    텍스트 데이터 처리를 위한 버퍼를 설정합니다.

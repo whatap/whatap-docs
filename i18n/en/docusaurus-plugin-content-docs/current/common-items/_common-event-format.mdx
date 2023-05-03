@@ -1,0 +1,153 @@
+## Common Alert Template
+
+Common templates are applicable in most cases. You can receive alerts in the same format in various environments.
+
+-   Product Type: Application, Database, Kubernetes
+-   Event Type: Application Alert, Database Alert, Metrics Alert
+-   Event Channel: sms, mobile, 3rd party plugin , plugin
+
+### Event Title
+
+```log title='이벤트 제목 포맷'
+[Level][Platform][ProjectName][ApplicationName][EventTitle]
+```
+
+```log title='이벤트 제목 예시'
+[Info][JAVA][Application Project][TC-0-1-8081][CRITICAL_HIGH_MEMORY]
+```
+
+:::note
+
+-   If the application name has not been set, omit it from the event title.
+-   Platform is represented by one of the following:
+    -   JAVA
+    -   NODEJS 
+    -   PYTHON
+    -   PHP
+    -   DOTNET
+    -   GO
+    -   POSTGRESQL
+    -   ORACLE
+    -   MYSQL
+    -   MSSQL
+    -   BSM_JAVA
+    -   CLOUDWATCH
+    -   TIBERO
+    -   KUBERNETES
+    -   KUBE_NS
+    -   URLCHECK
+    -   URLCHECK_ADMIN
+    -   CUBRID
+    -   ALTIBASE
+    -   CLUSTER
+    -   REDIS
+    -   MONGODB
+    -   VR
+    -   RUM
+        :::
+
+### Event Message
+
+The data can be included in the event message. Always include it in the message if `optional` is `false`. If `optional` is `true`, the corresponding data appears if available.
+
+```log title='이벤트 메시지 예시'
+Project Name: Application project
+Project Code: 3
+Application Name: TC-0-1-8081
+Event Message: RECOVERED: Memory is too high. Less than 10%
+Event ON Time: 2022-04-12 18:53:24 +0900
+Event OFF Time: 2022-04-12 18:53:24 +0900
+Alert Type: APPLICATION_MEMORY
+Metric Name: memory
+Metric Value: 20
+Metric Threshold: 10
+Stateful: true
+```
+
+The following lists the event message components.
+
+| En                                                | Ko                  | Supported alert type    | Description                                                                                                    |
+| ------------------------------------------------- | ------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Project Name                                      | 프로젝트 이름             | All                     | -                                                                                                              |
+| Project Code                                      | 프로젝트 Code           | All                     | -                                                                                                              |
+| Application Name                                  | Application name    | All (optional)          | oname                                                                                                          |
+| Event Message                                     | Event Message       | All                     | -                                                                                                              |
+| Alert Type                                        | 이벤트 종류              | All                     | See the AlertType table below                                                                                  |
+| Event ON Time                                     | 이벤트 발생 시간           | All                     | In 2022-04-13 10:40:49 +0900, +0900 means GMT.                                                                 |
+| Event OFF Time                                    | 이벤트 해제 시간           | All (optional)          | In 2022-04-13 10:40:49 +0900, +0900 means GMT.                                                                 |
+| Metric Name                                       | 메트릭스 이름             | All (optional)          | The metrics name used to judge the event condition                                                             |
+| Metric Value                                      | 메트릭스 값              | All (optional)          | If the metric value exceeds the metric threshold, the event occurrence condition is met.                       |
+| Metric Threshold                                  | 메트릭스 임계치            | All (optional)          | If the metric value exceeds the metric threshold, the event occurrence condition is met.                       |
+| Stateful                                          | 해결된 이벤트 알림          | All (optional)          | If the resolved event alert is being used, the value is true. Otherwise, the value is false.                   |
+| Event Rule                                        | 이벤트 발생 조건           | Metrics Alert           | -                                                                                                              |
+| Event Target Filter                               | 이벤트 대상 선택           | Metrics Alert           | Check the event conditions only for metrics collected in specific targets.                                     |
+| Repeat Count                                      | 이벤트 반복 횟수           | Metrics Alert           | An event occurs only when the event condition meets the event repetitions count for the event repetition time. |
+| Repeat Duration                                   | 이벤트 반복 시간           | Metrics Alert           | An event occurs only when the event condition meets the event repetitions count for the event repetition time. |
+| Receiver                                          | 수신자                 | Metrics Alert           | -                                                                                                              |
+| Query                                             | MXQL 쿼리             | Composite metrics alert | -                                                                                                              |
+| Rule                                              | 이벤트 발생 조건           | Composite metrics alert | -                                                                                                              |
+| Query Period                                      | 쿼리 기간               | Composite metrics alert | -                                                                                                              |
+| Query Interval                                    | 쿼리 간격               | Composite metrics alert | -                                                                                                              |
+| Silent Time                                       | 무음 시간               | Composite metrics alert | -                                                                                                              |
+| Query                                             | URL                 | Exception Alert         | URL of the request that caused the exception                                                                   |
+| TXID                                              | 트랜잭션 ID             | Exception Alert         | -                                                                                                              |
+| Class                                             | 에러 클래스 이름           | Exception Alert         | -                                                                                                              |
+| Log Message                                       | 로그 메시지              | Server - File Log Alert | -                                                                                                              |
+| Log File                                          | 로그 파일 경로            | Server - File Log Alert | -                                                                                                              |
+| IP                                                | IP                  | Server Alert All        | -                                                                                                              |
+| CPU                                               | CPU                 | Server Alert All        | Snapshot at the time of event                                                                                  |
+| CPU_load1                                         | CPU_load1           | Server Alert All        | Snapshot at the time of event                                                                                  |
+| CPU_loadPerCore                                   | CPU_loadPerCore     | Server Alert All        | Snapshot at the time of event                                                                                  |
+| Memory                                            | Memory              | Server Alert All        | Snapshot at the time of event                                                                                  |
+| Swap                                              | Swap                | Server Alert All        | Snapshot at the time of event                                                                                  |
+| Disk Name | Used Percent | Free Size | IO Percent | Disk performance    | Server Alert All        | Snapshot at the time of event                                                                                  |
+| Name | Bps | Pps                                  | Traffic performance | Server Alert All        | Snapshot at the time of event                                                                                  |
+| Message | Time | Name                             | Acknowledge Message | Server Alert All        | -                                                                                                              |
+
+:::note
+
+-   It displays as much information as the event can provide.
+-   AlertType is represented by one of the following:
+
+| AlertType                      | Description                            |
+| ------------------------------ | -------------------------------------- |
+| APPLICATION_CPU                | Application CPU Alert                  |
+| APPLICATION_MEMORY             | Application Memory Alert               |
+| APPLICATION_DISK               | Application Disk Alert                 |
+| APPLICATION_ACTIVE_TRANSACTION | Application Active Transaction Alert   |
+| APPLICATION_ERROR_TRANSACTION  | Application Error Transaction Alert    |
+| APPLICATION_SLOW_TRANSACTION   | Application Transaction Response Alert |
+| METRICS                        | Metrics Alert                          |
+| COMPOSITE_METRICS              | Composite metrics alert                |
+| ANOMALY                        | Anomaly Detection Alert                |
+| LOG_REALTIME                   | Log Alert Status                       |
+| COMPOSITE_LOG                  | Composite Log Alert                    |
+| SERVER_REBOOT                  | Server - Restart Alert                 |
+| SERVER_NO_DATA                 | Server - Not received Alert            |
+| SERVER_PORT                    | Server - Port Alert                    |
+| SERVER_NETWORK_IOPS            | Server - Network IOPS Alert            |
+| SERVER_NETWORK_BPS             | Server - Network BPS Alert             |
+| SERVER_DISK_IO                 | Server - Disk I/O Alert                |
+| SERVER_DISK_QUOTA              | Server - Disk Quota Alert              |
+| SERVER_DISK_INODE              | Server - inode Alert                   |
+| SERVER_CPU                     | Server - CPU Alert                     |
+| SERVER_MEMORY                  | Server - Memory Alert                  |
+| SERVER_CPU_STEAL               | Server - steal Alert                   |
+| SERVER_MEMORY_SWAP             | Server - Swap Alert                    |
+| SERVER_LOG_FILE                | Server - Log File Alert                |
+| SERVER_WINDOW_EVENT            | Server - Window Event Alert            |
+| SERVER_OFF                     | Server - Alert OFF                     |
+| SERVER_ACKNOWLEDGE             | Server - Acknowledge Alert             |
+| SERVER_PROCESS_COUNT           | Server - Process Count Alert           |
+| SERVER_PROCESS_CPU             | Server - Process CPU Alert             |
+| SERVER_PROCESS_MEMORY          | Server - Process Memory Alert          |
+| SERVER_PROCESS_OFF             | Server - Process Alert OFF             |
+| AGENT_ACTIVE                   | Agent Enable Alert                     |
+| AGENT_INACTIVE                 | Agent Disable Alert                    |
+| AGENT_REACTIVATED              | Agent Reenable Alert                   |
+| URL                            | URL Alert                              |
+| TOO_MANY_EVENT                 | Too Many Event Alert                   |
+| CLOUD_WATCH                    | Cloud Watch Alert                      |
+| EXCEPTION                      | Exception Alert                        |
+
+:::

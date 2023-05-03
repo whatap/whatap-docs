@@ -1,0 +1,52 @@
+-   **profile_step_normal_count**<span class='type'>Int</span><br/>
+      Default `1000`<br/>
+      Set the default number of steps of the transaction trace.
+
+-   **profile_step_heavy_count**<span class='type'>Int</span><br/>
+      Default `1020`<br/>
+      If the trace's default step count is exceeded, it limits the maximum heavy step count. In `profile_step_normal_count`, it counts the steps that are over `profile_step_heavy_time`. The steps with no response time are not collected.
+
+-   **profile_step_max_count**<span class='type'>Int</span><br/>
+      Default `1024`<br/>
+      Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored. If `profile_step_heavy_count` is set up to 1000, active stacks are collected as many as `profile_step_max_count`.
+
+-   **profile_step_heavy_time**<span class='type'>Millisecond</span><br/>
+      Default `100`<br/>
+      Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made within `profile_step_heavy_count`.
+
+-   **profile_basetime**<span class='type'>Millisecond</span><br/>
+      Default `0`<br/>
+      Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
+
+-   **query_string_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It enables the function to collect query strings of the transaction URL together.
+
+-   **query_string_urls**<span class='type'>String</span><br/>
+      Register the URLs to collect query strings in transactions. To register multiple items, comma (,) is used as the delimiter.  
+
+-   **hook_method_patterns**<span class='type'>String</span><br/>
+        Use this when measuring the response time of a specific method. Use the values in the `[MODULE_NAME]:[CLASS_NAME].[FUNCTION_NAME]` or `[MODULE_NAME]:[FUNCTION_NAME]` format. Multiple method patterns can be set using comma (,) as the delimiter. All classes for a module or all modules for a class can be traced using asterisk (\*). 
+    :::note\
+    Because tracing all modules may incur overhead, it is recommended to use accurate module and method names if possible.
+    :::
+
+-   **trace_error_callstack_depth**<span class='type'>Int</span><br/>
+      Default `50`<br/>
+      Set the maximum number of call stack lines when collecting error call stacks for transactions. This data can be viewed from the error statistics data.       
+
+-   **trace_active_callstack_depth** <span class='type'>Int</span><br/>
+      Default `50`<br/>
+      Set the maximum number of call stack lines when collecting active stacks for transactions.
+
+-   **trace_active_transaction_slow_time**<span class='type'>MiliSecond</span><br/>
+      Default `3000`<br/>
+      Set the response criteria in the slow section of the active transaction's arc equalizer.   
+
+-   **trace_active_transaction_very_slow_time**<span class='type'>MiliSecond</span><br/>
+      Default `8000`<br/>
+      Set the response criteria in the very slow section of the active transaction's arc equalizer.  
+
+-   **trace_active_transaction_lost_time**<span class='type'>MiliSecond</span><br/>
+      Default `300000`<br/>
+      Timeout waiting for a transaction to end. If a transaction does not end in 5 minutes, transactions are not collected any longer. 

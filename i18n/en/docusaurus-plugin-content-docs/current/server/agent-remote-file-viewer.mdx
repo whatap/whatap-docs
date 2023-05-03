@@ -1,0 +1,28 @@
+---
+id: agent-remote-file-viewer
+title: 에이전트 로그 뷰어 설정
+description: 에이전트 로그 뷰어 설정을 안내합니다.
+tags:
+  - Server
+  - Configuration
+---
+
+와탭 웹에서 사용자 서버의 사용자가 지정한 임의의 텍스트 파일의 내용을 볼 수 있습니다. 와탭 서버 모니터링 설정 파일에 웹에서 조회할 텍스트 파일을 다음과 같이 추가하세요.
+
+-   **Linux Shell**
+    ```bash title=SH
+    echo "webview.allow.`date +%s%N`=Full path of the file to search" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    ```
+
+-   **Windows Powershell**
+    ```bash title=SH
+    Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "webview.allow.$(Get-Date -uformat %s)=Full path of the file to search"
+    ```
+
+<!-- 
+
+0307
+기존 원격 파일 뷰어
+에이전트 로그 뷰어로 변경
+
+-->

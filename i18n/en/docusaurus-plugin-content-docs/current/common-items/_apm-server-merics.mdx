@@ -1,0 +1,123 @@
+### app_active_stat
+
+---
+
+It is the metric for the active transaction section.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name     | Description                  | Remarks       |
+| ------------ | ---------------------------- | ------------- |
+| container    | Container name               | Unique value  |
+| containerKey | Container's key value        | Unique value  |
+| host_ip      | Host IP                      | Unique value  |
+| okindName    | Name of the application type | -             |
+| oname        | Application name             | Unique value  |
+| onodeName    | Name of the application node | -             |
+| pid          | Application PID              | -             |
+| type         | Application type             | Language name |
+
+#### Fields
+
+| Field name | Unit  | Description                                                 | Remarks |
+| ---------- | ----- | ----------------------------------------------------------- | ------- |
+| dbc        | Count | Number of transactions in progress for database connection  | -       |
+| httpc      | Count | Number of transactions in progress for HTTP call            | -       |
+| method     | Count | Number of transactions during execution of the method logic | -       |
+| socket     | Count | Number of transactions in progress for socket connection    | -       |
+| sql        | Count | Number of transactions in progress for SQL query            | -       |
+
+### app_counter
+
+---
+
+It is the transaction metric.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name     | Description                  | Remarks       |
+| ------------ | ---------------------------- | ------------- |
+| alias        | Application's alias          | Unique value  |
+| container    | Container name               | Unique value  |
+| containerKey | Container's key value        | Unique value  |
+| host_ip      | Host IP                      | Unique value  |
+| okindName    | Name of the application type | -             |
+| oname        | Application name             | Unique value  |
+| onodeName    | Name of the application node | -             |
+| pid          | Application PID              | -             |
+| type         | Application type             | Language name |
+
+#### Fields
+
+| Field name      | Unit        | Description                                                           | Remarks                        |
+| --------------- | ----------- | --------------------------------------------------------------------- | ------------------------------ |
+| active_tx_0     | Count       | Number of transactions in the section within 3 seconds                | -                              |
+| active_tx_3     | Count       | Number of transactions in the section between 3 seconds and 8 seconds | -                              |
+| active_tx_8     | Count       | Number of transactions in the section over 8 seconds                  | -                              |
+| active_tx_count | Count       | Number of all transactions in progress                                | -                              |
+| apdex_satisfied | Count       | Number of APDEX satisfactions                                         | -                              |
+| apdex_tolerated | Count       | Number of APDEX toleration cases                                      | -                              |
+| apdex_total     | Count       | Total number of APDEX transactions                                    | -                              |
+| arrival_rate    | Percentage  | Transaction request rate                                              | -                              |
+| httpc_count     | Count       | Number of HTTP outbound calls                                         | -                              |
+| httpc_error     | Count       | Number of HTTP outbound call errors                                   | -                              |
+| httpc_time      | millisecond | Mean time of HTTP outbound calls                                      | -                              |
+| metering        | Core        | Number of cores on the host where the applications are running        | Limit CPU in case of container |
+| resp_time       | millisecond | Average response time                                                 | -                              |
+| sql_count       | Count       | Number of completed SQL cases                                         | -                              |
+| sql_error       | Count       | Number of SQL errors                                                  | -                              |
+| sql_fetch_count | Count       | Number of SQL fetches                                                 | -                              |
+| sql_fetch_time  | millisecond | Execution time of the SQL fetch                                       | -                              |
+| sql_time        | millisecond | Mean time for SQL execution                                           | -                              |
+| tps             | Count       | Number of transactions per second                                     | -                              |
+| tx_count        | Count       | Number of transactions processed                                      | -                              |
+| tx_dbc_time     | millisecond | Mean time for DB connection                                           | -                              |
+| tx_error        | Count       | Number of transaction errors                                          | -                              |
+| tx_httpc_time   | millisecond | Mean time of HTTP calls                                               | -                              |
+| tx_sql_time     | millisecond | Average of the sum of SQL execution times per transaction             | -                              |
+| tx_time         | millisecond | Transaction execution time                                            | -                              |
+
+### app_host_resource
+
+---
+
+It is the metric for application server resources.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name     | Description                  | Remarks       |
+| ------------ | ---------------------------- | ------------- |
+| alias        | Application's alias          | Unique value  |
+| container    | Container name               | Unique value  |
+| containerKey | Container's key value        | Unique value  |
+| host_ip      | Host IP                      | Unique value  |
+| okindName    | Name of the application type | -             |
+| oname        | Application name             | Unique value  |
+| onodeName    | Name of the application node | -             |
+| pid          | Application PID              | -             |
+| type         | Application type             | Language name |
+
+#### Fields
+
+| Field name | Unit            | Description                              | Remarks                                                            |
+| ---------- | --------------- | ---------------------------------------- | ------------------------------------------------------------------ |
+| cpu        | Percentage      | Host's CPU utilization                   | -                                                                  |
+| cpu_cores  | Positive number | Number of CPU cores of the host          | -                                                                  |
+| cpu_irq    | Percentage      | CPU IRQ utilization of the host          | -                                                                  |
+| cpu_proc   | Percentage      | CPU utilization of the Java process      | -                                                                  |
+| cpu_steal  | Percentage      | CPU steal utilization of the host        | -                                                                  |
+| cpu_sys    | Percentage      | CPU SYS utilization of the host          | -                                                                  |
+| cpu_usr    | Percentage      | CPU user utilization of the host         | -                                                                  |
+| cpu_wait   | Percentage      | CPU wait utilization of the host         | -                                                                  |
+| disk       | Percentage      | Disk utilization of the root file system | Disk utilization of the file system path specified by JAVA setting |
+| mem        | Percentage      | Memory utilization of the host           | -                                                                  |
+| swap       | Percentage      | SWAP utilization of the host             | -                                                                  |

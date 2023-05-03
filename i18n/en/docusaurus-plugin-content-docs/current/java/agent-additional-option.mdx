@@ -1,0 +1,42 @@
+---
+id: agent-additional-option
+title: Additional options
+description: The options are frequently used but excluded from the agent default settings for security purpose and others.
+tags:
+  - Java
+---
+
+Depending on your application environment, the agent defaults alone may not provide the desired level of information. The following are the options excluded from the agent default settings. If necessary, you can add the following options for application.
+
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>It collects the SQL parameters.
+
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>It collects HTTP parameters.
+
+-   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>It collects HTTP headers.
+
+-   **trace_http_client_ip_header_key** <span class='type'>String</span><br/>
+    Default `X-Forwarded-For`<br/>It extracts the user IPs from the HTTP header keys.
+
+-   **trace_user_method** <span class='type'>Boolean</span><br/>
+    Default `cookie`<br/>It traces user counts based on the cookie.
+
+-   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>If SAP JCO is used, it traces the SAP functions.
+
+-   **weaving_reserved** = `jedis-3.2` & **jedis_show_parameter** = `true`<br/>
+    If the Jedis library is used, it traces the Redis response times and parameters.
+
+-   **weaving_reserved** = `spring-mongodb-2.2` & **mongo_show_parameter** = `true`<br/>
+    If Spring MongoDB is used, it traces the response times and parameters.
+
+-   **weaving_reserved** = `webflux-5.2`<br/>
+    It monitors the WebFlux environment.
+
+-   **weaving_reserved** = `okhttp-2.7` & **weaving_reserved** = `okhttp3`<br/>
+    It traces external calls using OkHttp.
+
+-   **weaving_reserved** = `reactor-rabbitmq-1.2` & **weaving_reserved** = `spring-rabbitmq-2.1`<br/>
+    It traces the RabbitMQ calls.

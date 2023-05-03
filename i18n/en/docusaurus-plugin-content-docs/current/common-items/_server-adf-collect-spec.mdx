@@ -1,0 +1,24 @@
+It collects the specifications for CPU, memory, disk, and NIC, installed packages, and meta data of virtual machines.
+For each **_category_**, you can check the following.
+
+-   `server_package`: Installed package.
+-   `server_inventory`: Specifications for CPU, memory, disk, and NIC.
+-   `server_pending_security_update`: Waiting list for Linux security patches.
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "inventory.product.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+// The admin role is required.
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "inventory.product.enabled=true"
+```
+
+</TabItem>
+</Tabs>

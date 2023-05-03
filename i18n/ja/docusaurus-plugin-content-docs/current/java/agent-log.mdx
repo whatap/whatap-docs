@@ -1,0 +1,39 @@
+---
+id: agent-log
+title: エージェントログの設定
+description: Javaエージェントログの位置とオプションを設定できます。
+tags:
+  - Java
+  - エージェントログ
+  - ログ
+---
+
+アプリケーションサーバーが実行されると、モニタリング情報を収集します。収集した情報は、ログファイルに保存します。
+
+## パスおよび名前設定
+
+エージェントログのパスと名前は、_whatap.conf_ファイルに設定できます。`log_root`のデフォルト値として_${WHATAP_HOME}/logs_パスを使用します。
+
+```ini title='whatap.conf'
+log_root=System.getProperty("whatap.home", ".") + "/logs"
+log_name=whatap
+```
+
+## ログ管理オプション
+
+_whatap.conf_ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
+
+```ini title='whatap.conf 예시'
+watchlog_enabled=true
+log_rotation_enabled=true
+log_oname_enabled=true
+log_keep_days=7
+```
+
+{@include: ../common-items/_java-agent-log-list.mdx}  
+
+## ログシンク（LogSink）{#logsink}
+
+whatap.agent-2.1.0以降のバージョンからは、アプリケーションサーバーを統合モニタリングするログシンク（LogSink）機能を提供します。
+
+{@include: ../common-items/_java-logsink.mdx}  

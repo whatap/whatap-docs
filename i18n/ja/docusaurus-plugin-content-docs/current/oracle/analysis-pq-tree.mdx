@@ -1,0 +1,25 @@
+---
+id: analysis-pq-tree
+title: 並列クエリツリー
+description: description
+tags:
+  - Oracle
+  - データベース
+  - 並列クエリツリー
+---
+
+ホーム画面>プロジェクト選択 > **_分析_** > **_並列クエリのツリー_**
+
+**_並列クエリツリー_**（Parallel Query Tree）は、1日の間にParallel Queryが発生した推移を分析できる機能を提供します。 実際のタスクを実行するSlave Processと、それらにタスクを割り当てたCoordinator Processとを区別して表示し、全体の実行情報をわかりやすく表示します。 特定の時点で実行したParallel Query情報を提供し、どのような目的で使用されたかを確認するのに役立ちます。
+
+## 基本画面案内
+
+![並列クエリーのツリー](/img/db-pq-tree.png)
+
+![数字1](/img/number-01.png) **_インスタンス_**項目で並列クエリ情報を照会するインスタンスを選択し、![数字2](/img/number-02.png) **_日付_**と**_開始時間_**、**_終了時間_**を設定してください。
+
+グラフチャートを通じて、設定した条件に合った並列クエリ情報の推移を確認することができます。CoordinatorとSlaveの構造をツリー形式で表現して提供します。
+
+<!-- 컬럼 정보 안내 -->
+
+{@include: ../common-items/_db_oracle-column.mdx}

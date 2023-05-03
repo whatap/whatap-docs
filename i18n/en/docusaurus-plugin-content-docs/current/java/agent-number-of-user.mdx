@@ -1,0 +1,18 @@
+---
+id: agent-number-of-user
+title: User count
+description: It aggregates the numbers of real-time users connected to WAS.
+tags:
+  - Java
+---
+
+It collects the number of users who connect to the Java web application server.
+
+-   **trace_user_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>
+    Set whether or not to aggregate real-time users. If the user tracing option setting is duplicated, the action priority is as follows.
+    > 1.  **trace_user_using_ip**
+    > 2.  **trace_user_using_jsession**
+    > 3.  **user_header_ticket**
+
+{@include: ../common-items/_common-collect-user.mdx} 

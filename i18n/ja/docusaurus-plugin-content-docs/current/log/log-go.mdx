@@ -1,0 +1,59 @@
+---
+id: log-go
+title: Golang
+description: Goアプリケーションでログを収集する方法について案内します。
+tags:
+  - ログモニタリング
+  - Golang
+  - ログ
+---
+
+Golangアプリケーションでログを収集するには、次のことを確認してください。
+
+<!-- 
+
+## 에이전트 업데이트
+
+업데이트 확인 필요없음 개발 단계에 이미 포함
+
+Golang Agent [기입 필요] 버전부터 가능합니다. 업데이트 방법은 [다음 문서](/)를 참조하세요. 
+
+-->
+
+## エージェント設定の確認
+
+ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ設定_**
+
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、プロジェクトメニュー下位の**_ログ_** > **_ログ設定_**メニューを選択してください。**_ログモニタリングを開始する_**セクションの**_エージェント設定確認_**タブの案内を参考にして進めてください。
+
+### ログ収集の活性化
+
+次のコマンドを入力すると、すぐにログ収集が開始されます。
+
+```bash
+export LOGFILES=/some/path/file1,/some/other/file2
+echo "logsink_enabled=true" | sudo tee -a /usr/whatap/agent/whatap.conf
+echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/agent/whatap.conf
+```
+
+## ログモニタリングの活性化
+
+ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ設定_** 
+
+**_ログモニタリングを開始する_**セクションの**_ログモニタリングの活性化_**タブのトグルボタンで、WhaTapログモニタリングの活性化・非活性化ができます。
+
+{@include: ../common-items/_log-java-start.mdx}
+
+{@include: ../common-items/_log-active-note.mdx} 
+
+<!-- 
+
+:::note
+
+**권한**
+
+프로젝트에 대한 **수정 권한**이 있는 경우에만 로그 모니터링 설정을 수정할 수 있습니다. 권한에 대한 자세한 내용은 [다음 문서](../project/project-structure)를 참조하세요.
+
+:::
+
+-->

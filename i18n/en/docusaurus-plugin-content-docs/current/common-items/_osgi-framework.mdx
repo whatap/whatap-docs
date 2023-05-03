@@ -1,0 +1,35 @@
+## In case of the application server using the OSGI framework
+
+Register any agent package prefix (whatap) in the JVM options for an OSGI framework-based application server.
+
+The application server is available in Jboss EAP 6.0 or later, Jboss AS 7.0 or later, Wildfly 8.0 or later, IBM WebSphere AS 7.0 or later, and such.
+
+### JBoss AS, Wildfly, JBoss EAP 6.0 or later
+
+Register a prefix in the following file:
+
+```apacheconf title='$JBOSS_HOME/bin/standalone.conf(domain.conf)'
+-Djboss.modules.system.pkgs=whatap
+```
+
+![JBOSS EAP 7.0](https://img.whatap.io/media/agent_java/install/410.png)
+
+### WebSphere
+
+As an JVM option, add the following.
+
+```bash
+-Dcom.ibm.ws.classloader.server.alwaysAllowedPackages=whatap
+```
+
+-   If "\*" is specified as the default value, no additional setting is required.
+-   For the setting location, see [WebSphere](add-jvm-opt/websphere).
+
+Add the _security.policy_ role as follows:
+
+```java title='$WEBSPHERE_HOME/properties/server.policy 또는 $WEBSPHERE_PROFILE_HOME/properties/server.policy'
+grant codeBase "file:$WHATAP_HOME/-"
+{
+   permission java.security.AllPermission;
+};
+```

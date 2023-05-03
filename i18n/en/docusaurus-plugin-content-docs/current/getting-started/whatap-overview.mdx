@@ -1,0 +1,122 @@
+---
+id: whatap-overview
+title: WhaTap Monitoring services
+displayed_sidebar: indexSidebar
+description: The following introduces the WhaTap Monitoring services.
+tags:
+  - WhaTap Monitoring services
+---
+
+## Integrated Monitoring for multiple platforms
+
+The purpose of WhaTap Monitoring is to share resources (human and material). The previous monitoring products require a separate collection servers and web screens for each monitoring target. However, WhaTap's Monitoring services share the data collection server while preserving the independence of services. For integrated management, the monitoring server must provide a flexible structure for expansion and multi-tenant functionality.
+
+It can visualize business conditions in real time to identify problems quickly. Transactions are traced in real time to track any problems without reproduction. WhaTap Monitoring visualizes the IT service performance in a distributed environment in real time, to save time for problem recognition and enable preemptive responses.
+
+## Scopes of Monitoring
+
+It covers almost all aspects of system monitoring through monitoring for applications, servers, databases, Kubernetes, clouds, logs, and URLs.
+
+### Application Monitoring
+
+{@video: https://www.whatap.io/video/main-product/monitoring_step_0.mp4}
+
+It provides application monitoring features such as [Java](../java/introduction), [PHP](../php/introduction), [Node.js](../nodejs/introduction), [Python](../python/introduction), [.NET](../dotnet/introduction), and [Golang](../golang/introduction). You can check the current active transactions running in real time. 
+
+It also monitors performance degradation issues in real time for the applications in complex and distributed business environments such as cloud, hybrid, and on-premise, to find the root cause quickly without reproduction. Any application problem can cause an increase of active transactions. If any problematic SQL query, HTTP call, or method is detected immediately at the moment of increase of transactions, you can find the problem faster along with analysis. With the monitoring, you can analyze the collected logs of transactions.
+
+### Server Monitoring
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/application/monitoring_step_1.mp4}
+
+Even with more than 10,000 servers, [Server Monitoring](../server/introduction) can collect the usage data for CPU, memory, IO, and such of all processes in seconds to analyze and report the momentary overload and performance degradation in real time. It provides automatic detection and notification of vulnerabilities that may occur in cloud applications, and helps easily predict and control the system size, which may differ monthly or weekly.
+
+### Kubernetes Monitoring
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/k8s/01.webm}
+
+[Kubernetes Monitoring](../kubernetes/introduction) provides a unified analytics from containers to applications. It monitors pods, worker nodes, and applications to analyze the impact to transaction performance for each item. In an MSA environment, you can trace the correlations among container level, service level, and transaction level, and visually check the call relationships between pods, containers, and services. It presents integrated matrix-trace-log information for observability. This enables quick root cause analysis and action when a problem occurs.
+
+It also supports major platforms including EKS, AKS, GKE, OKE, Openshift, Cocktail, Accordion, and PaaS-TA.
+
+:::note
+WhaTap Labs obtained certifications from Cloud Native Computing Foundation (CNCF), Kubernetes Certified Service Provider (KCSP), and Cloud Service Security Certification (CSAP).
+:::
+
+### Database Monitoring
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/db/DB_01_instanceMonitoring.mp4}
+
+Database Monitoring can monitor database active sessions, running SQL, and the statistics and details of various metrics in real time, to select tuning targets and check whether they can be resolved or not. Through the views linked with applications, servers, and databases, you can check the DB status and analyze the root cause immediately when any service failure occurs. Through an efficient performance data collection structure, it is easy to analyze the data by providing a unified view after a quick collection even while monitoring multiple databases. Without any further installation, you can view and monitor the performance and failures of various databases at a glance in a cloud environment.
+
+The provided products are as follows. Click a link to access the technical documentation.
+
+-   [PostgreSQL](../postgresql/monitoring-intro)
+-   [Oracle](../oracle/monitoring-intro)
+-   [MySQL](../mysql/monitoring-intro)
+-   [MS SQL Server](../mssql/monitoring-intro)
+-   [Tibero](../tibero/monitoring-intro)
+-   [CUBRID](../cubrid/monitoring-intro)
+-   [Altibase](../altibase/monitoring-intro)
+-   [Redis](../redis/monitoring-intro)
+-   [MongoDB](../mongodb/monitoring-intro)
+
+### URL Monitoring
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/application/monitoring_step_4.mp4}
+
+From the user's point of view, [URL Monitoring](../url/url-intro) plays a monitoring role of the administrator who periodically checks the website for any problem. The displayed HTTP status codes allow you to monitor usage issues in real time and determine the access times for each location. It can check the status of services in major cities (6 countries) in North America, Europe, and Asia.
+
+### Browser Monitoring
+
+![브라우저 안내 이미지 임시](/img/browser-start.png)
+
+[브라우저 모니터링](../browser)은 브라우저 애플리케이션의 페이지 로드 시간, 서버 응답 시간, 리소스 로딩 시간, 브라우저 에러 등 다양한 성능 지표를 수집하여 분석합니다. 또한 브라우저 애플리케이션의 병목 현상이나 성능 이슈를 파악 후 최적화를 통해 모든 사용자에게 일관된 최상의 성능을 제공할 수 있도록 돕습니다.
+
+### Cloud Monitoring
+
+[Cloud Monitoring](../ref-cloud/cloud) collects all metrics and cloud events in real time by connecting to the API of the cloud service provider. You can check the collected data in real time through the dashboard and directly analyze the cause of failure.
+
+The provided products are as follows. Click a link to access the technical documentation.
+
+-   [Amazon CloudWatch](../amazon-cloudwatch/install-agent)
+-   [Amazon ECS](../amazon-ecs/introduction)
+-   [Azure Monitor](../azure/install-agent)
+-   [Naver Cloud Monitoring](../ncloud/install-agent)
+-   [Oracle Cloud Monitor](../oracle-cloud/install-agent)
+
+### Log Monitoring
+
+With [Log Monitoring](../log/introduction), you can easily use various and numerous logs generated from complex systems (e.g. Cloud). The logs from hundreds or thousands of servers can be transferred to be checked in an integrated manner. You can search for logs flowing on the screen. For statistical purposes, you can categorize logs to see the count trend of them that occur in specific increments. You can explore the logs that are closely related to the time points of failures and resolutions, and can search for a large amount of logs under various conditions.
+
+## Features of WhaTap Monitoring
+
+### Real-time Monitoring Dashboard
+
+![](/img/blog_35_3.png)
+
+You can quickly recognize information and status of servers in real time on the chart-type dashboard. You can check and analyze the previous data for each metric. Through active transactions, you can find bottlenecks and troubleshoot them.
+
+### Support for channels that issue various notifications
+
+![](/img/overview-notification.png)
+
+You can set event conditions and provide alerts through various channels such as Email, SMS, Messenger, and App Push. You can configure alert settings for communication loss of agents and collection servers, application resource utilization, active transactions, errors, response delays, and response distribution failures. In addition, through the machine learning-based AI alert settings, response distribution patterns are detected to send alerts.
+
+### Multi-region support for integrated monitoring
+
+![](https://www.whatap.io/img/platform/solution_06.jpg)
+
+Each time a region is added, only a collection server is installed to monitor servers in multiple regions on a single monitoring screen in an integrated manner. WhaTap Monitoring can expand the collection server only by establishing additional IDC centers or cloud platforms.
+
+### Guaranteed stability and scalability of the collection server
+
+![](https://www.whatap.io/img/platform/solution_07.jpg)
+
+Integrated monitoring is enabled only when server scalability is guaranteed. To accommodate the increased number of target servers to be monitored, internal scalability must be guaranteed. To ensure scalability, the WhaTap monitoring server consists of micro applications and maintain a distributed environment with low coupling. It also supports redundancy and data recovery to ensure data stability.
+
+### Collaboration and multi-tenant support
+
+![](https://www.whatap.io/img/platform/solution_08.jpg)
+
+Through WhaTap Monitoring, the development team can use monitoring functions independently, and the operation team can use them in an integrated manner. In a single monitoring product, independence for each team or task is guaranteed, and the administrator in the center can control resources in an integrated manner. The administrator in the center does not directly access the development team projects, but the owners of each development team project access the authority.

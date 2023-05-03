@@ -1,0 +1,16 @@
+The WhaTap agent must access the collection server's **TCP 6600** port. Allow the collection server address near what you are monitoring.
+
+**Source: WhaTap agent**
+
+| Destination                           | Destination IP                | Port     |
+| ------------------------------------- | ----------------------------- | -------- |
+| WhaTap collection server (Seoul)      | 13.124.11.223 / 13.209.172.35 | TCP 6600 |
+| WhaTap collection server (Tokyo)      | 52.68.36.166 / 52.193.60.176  | TCP 6600 |
+| WhaTap collection server (Singapore)  | 18.138.0.93 / 18.139.67.236   | TCP 6600 |
+| WhaTap collection server (Mumbai)     | 13.127.125.69 / 13.235.15.118 | TCP 6600 |
+| WhaTap collection server (California) | 52.8.223.130 / 52.8.239.99    | TCP 6600 |
+| WhaTap collection server (Frankfurt)  | 3.125.142.162 / 3.127.76.140  | TCP 6600 |
+
+If the agent cannot directly access the collection server, use the provided proxy module to access it.
+
+![Proxy](https://img.whatap.io/media/appendix/proxy.png)

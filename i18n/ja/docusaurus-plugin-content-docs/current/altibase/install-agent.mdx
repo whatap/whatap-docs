@@ -1,0 +1,63 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - Altibase
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## WhaTapデータベースエージェントのダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapのサーバー情報
+
+dbms=altibase
+db =データベース名(sid)
+db_ip=データベースIP
+db_port=データベースポート
+```
+
+1.  次のパスにJDBCドライバーをダウンロードしてください。 _圧縮解除したフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+
+**Altibase JDBC Drivers**: http://support.altibase.com/kr/product
+
+:::note
+_/解凍されたフォルダ/jdbc/README.md_ファイルで各データベースのJDBCドライバのインストールパスが記載されています。
+:::
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+```bash
+create user whatapidentified by '[DB_PASSWORD]; ##希望するpasswordを入力してください。
+```
+
+<!-- 시스템 계정 사용 CUBRID -->
+
+<!-- {@include: ../common-items/_db-create-monitoring-account-using-system.mdx}-->
+
+## DBユーザーファイルの作成{#create-db-user}
+
+{@include: ../common-items/_db-create-db-user-file.mdx}  

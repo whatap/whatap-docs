@@ -1,0 +1,58 @@
+---
+id: websphere
+title: WebSphere
+description: Complete the additional settings for JVM options in the WebSphere application server environment.
+tags:
+  - Java
+  - WebSphere
+---
+
+## Adding JVM options
+
+Access the Admin Console to add JVM options in the WebSphere application server environment.
+
+1.  Log in the Admin Console in your web browser.
+
+2.  Select **_Environment_** > **_Virtual Hosts_** > **_default host_** > **_Host Aliases_** and then check the port number of the server to install the agent to.
+
+    ![WebSphere port](https://img.whatap.io/media/agent_java/install/330.png)
+
+3.  Go to **_Servers_** > **_Server Types_** > **_Websphere application servers_** and then select a server to install the agent to.
+
+    ![WebSpherer application servers](https://img.whatap.io/media/agent_java/install/300.png)
+
+4.  Select the **_Configuration_** tab on the selected server screen and then select **_Java and Process Management_** > **_Process definition_** in the **_Server Infrastructure_** section.
+
+    ![WebSphere Configuration](https://img.whatap.io/media/agent_java/install/310.png)
+
+5.  Among the menus on the right, select **_Additional Properties_** > **_Java Virtual Machine_**.
+
+6.  In the **_Configuration_** tab, add `-javaagent` and \``-Dwhatap.port` to the **_Generic JVM arguments_** field.
+
+    ```bash
+    -javaagent:/whatap/whatap.agent-X.Y.Z.jar 
+    -Dwhatap.port={port number} ## Port number of the item 2 ##
+    ```
+
+    ![Add JVM arguments](https://img.whatap.io/media/agent_java/install/340.png)
+
+:::note
+{@include: _java-17.mdx} 
+:::
+
+## Starting the monitoring
+
+{@include: ../../common-items/_start-apm.mdx}  
+
+## WebSphere compatibility
+
+| WAS Ver. |        ibm-java-x86_64-60       |
+| -------- | :-----------------------------: |
+| 8.5.5.10 | <span class='emoji-ok'>✅</span> |
+
+## WebSphere DataSource
+
+| DB     | JDBC Driver file name               | JDBC Ver.  | JDK Ver.     |          Compatibility          |
+| ------ | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| Mysql  | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |

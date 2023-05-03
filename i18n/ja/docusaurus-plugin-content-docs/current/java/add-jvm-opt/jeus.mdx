@@ -1,0 +1,113 @@
+---
+id: jeus
+title: JEUS
+description: JEUSアプリケーションサーバ環境でJVMオプションの追加設定を完了してください。
+tags:
+  - Java
+  - JEUS
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+JEUSを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認してください。
+
+## JVMオプションの追加
+
+1.  JEUSバージョンによる開始オプションの設定ファイルのパスを参考にして、`-javaagent`オプションを追加してください。
+
+    <Tabs>
+    <TabItem value='jeus7' label='JEUS 7' default>
+
+    ```xml title="$JEUS_HOME/domains/jeus_domain/config.xml" {6-9} showLineNumbers
+    <domain>
+        <servers>
+            <server>
+                <name>server1</name>
+                <jvm-config>
+                    <jvm-option>
+                        -Xmx1024m -XX:MaxPermSize=128m
+                        -javaagent:/whatap/whatap.agent-X.Y.Z.jar
+                    </jvm-option>
+                </jvm-config>
+            </server>
+        </servers>
+        ...
+    </domain>
+    ```
+
+    </TabItem>
+    <TabItem value='jeus6' label='JEUS 6'>
+
+    ```xml title="$JEUS_HOME/config/$hostname/JEUSMain.xml" {6-9} showLineNumbers
+    <node>
+        <name>node01</name>
+        <engine-container1>
+            <name>container1</name>
+            ...
+            <command-option>-Xmx1024m -XX:MaxPermSize=128m
+                -javaagent:/whatap/whatap.agent-#.#.#.jar
+            </command-option>
+            ...
+        </engine-container1>
+    </node>
+    ```
+
+    </TabItem>
+    </Tabs>
+
+2.  アプリケーションサーバーを再起動してください。
+
+    ```bash
+    jdown && jboot
+    ```
+
+3.  アプリケーションサーバーのログファイルとエージェントのログファイルを通じて、エージェントが正常に動作しているか、エラーが発生していないかを確認してください。ログファイルの位置については、以下を参考にしてください。
+
+    -   エージェント：_$WHATAP_HOME/logs/whatap-{SERVER_NAME}-{DATE}.log_
+    -   JEUS 7: _$JEUS_HOME/domains/$HOST_NAME/servers/$NODE_NAME/logs/JeusServer.log_
+    -   JEUS 6: _$JEUS_HOME/logs/$NODE_NAME/JeusServer.log_
+
+4.  エージェントがアプリケーションサーバーの種類とサービスコンテナー名を認識していることを確認してください。
+
+<!-- 내용 확인 필요 -->
+
+:::note
+
+[WhaTapモニタリングサービス](https://service.whatap.io/)にログインし、プロジェクトを選択してください。**_アプリケーション_** > **_インスタンス性能分析_**メニューを選択し、**_実行環境変数_**タブを選択してください。**_whatap.name_**と**_whatap.type_**項目を確認してください。**\*whatap.name**項目の最後の要素は、コンテナ名にしてください。**_whatap.type_**項目には、アプリケーションサーバーの種類を明示してください。
+
+![Boot Environment](https://img.whatap.io/media/agent_java/install/380.png)
+
+:::
+
+:::note
+{@include: _java-17.mdx} 
+:::
+
+## JEUS互換性
+
+| WAS Ver. |       Java SE 6（jdk1.6.0）       |      Java SE 7（jdk1.7.0_80）     |      Java SE 8（jdk1.8.0_91）     |
+| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JEUS7    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JEUS6    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+
+| WAS Ver. |        OpenJDK6（1.6.0_45）       |        OpenJDK7（1.7.0_80）       |        OpenJDK8（1.8.0_91）       |
+| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JEUS7    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JEUS6    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+
+| WAS Ver. |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
+| -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JEUS7    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JEUS6    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+
+## JEUS DataSource
+
+| DB            | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
+| ------------- | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL         | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| MariaDB       | mariadb-java-client-1.4.6.jar       | 1.4.6      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| PostgreSQL    | postgresql-9.4.1209.jre7.jar        | 9.4.1209   | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Amazon Aurora | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle        | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| DB2           | db2jcc.jar, db2jcc_license_cu.jar   | 1.4.2      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |

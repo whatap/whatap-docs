@@ -1,0 +1,62 @@
+---
+id: container-map-trace
+title: Trace
+description: WhaTap Kubernetes Monitoring's trace function provides information about status monitoring for applications running on containers.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Trace
+---
+
+Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > **_Trace_**
+
+## Containerized Application Trace
+
+During Kubernetes monitoring, it is difficult to pinpoint the current status or cause of a failure by simply monitoring the cluster without tracing the applications in the Kubernetes environment.
+
+When tracing the cause of a failure, it is often an application-level problem such as delay in SQL processing of a specific transaction or business logic error.
+
+WhaTap Kubernetes trace function provides information about status monitoring for applications running on containers.
+
+:::note
+To trace applications running on Kubernetes, the WhaTap monitoring agent must have been installed on each application container such as Java, Node.js, and Python. For more information about the agent installation, see [the following](install-application-agent).
+:::
+
+![Trace](https://img.whatap.io/media/images/whatap_kubernetes_container_map_trace_example.png)
+
+The **_Trace_** function has the following sub menus: **_Dashboard_** and **Transaction List**.
+
+## Dashboard
+
+Dashboard provides key data for the following applications:
+
+-   **_Active Transaction_**: Current running transactions that are distinguished by color.
+    -   Red (Very slow): 8 seconds or more
+    -   Orange (Slow): 3 to 8 seconds
+    -   Blue (Normal): 0 to 3 seconds
+-   **_Active Transaction Count_**(Active Transaction Trend)
+-   **_Htimap_**: Distribution of response times for completed transactions
+    -   Horizontal axis: Transaction end time
+    -   Vertical axis: Execution time
+    -   Transactions with longer execution times are at the top of the distribution.
+    -   Transaction data can be checked when dragging a specific area.
+-   **_TPS_** (Transaction Per Second): Number of transactions processed per second
+-   **_Concurrent User_**: Concurrent users
+-   **_Apdex _ 100\*** (Application Performance Index): Measured user satisfaction for web applications
+-   **_HTTP Call Count_**: Number of HTTP calls
+-   **_HTTP Call Error Count_**: Number of HTTP call errors
+-   **_SQL Count_**
+-   **_SQL Error Count_**
+-   **_Transaction Total Count_**: Number of all transactions
+-   **_Transaction Error Count_**: Number of transaction errors
+-   **_Response Time_**: Response time
+-   **_Heap Memory Usage_**: Heap memory usage, available maximum/current memory
+    -   Real-time monitoring for changes in memory usage over time
+    -   Process total memory usage in case of Python
+-   **_ThreadCount_**: Number of threads. Node.js and Python are excluded.
+-   **_GC Count_**: Number of GCs. Node.js and Python are excluded.
+-   **_GC Old Generation Count_**: Number of GCs in the Old area (Node.js and Python excluded)
+
+## Transaction List
+
+The transaction list screen provides the transaction list for a specified time period. To check the transaction distribution chart and check only the transactions in a specific section, select (drag) a target from the hitmap chart of the above trace dashboard.

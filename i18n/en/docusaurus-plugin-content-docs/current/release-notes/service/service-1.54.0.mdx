@@ -1,0 +1,64 @@
+---
+id: service-1.54.0
+title: Service 1.54.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Deployment data: 2021-12-28
+
+## `공통`
+
+[프로젝트 관리 체계 개편](https://docs.whatap.io/project/project-structure)
+
+**_클라우드 모니터링_** 
+
+-   Added the function to interwork with the ARN-type AWS
+-   Added the Flex board AWS widget
+-   Applied the default interval of 5 minutes for the AWS linked data collection cycle 
+
+**_로그모니터링_** - Live Tail 화면 조회 성능 개선
+
+**_Flex 보드_** - 차트 수정 및 개선
+
+-   Resolved the active transaction chart's sizing problem
+-   Applied the dark theme in daily charts
+-   Fixed the chart tooltip remaining problem
+
+## Application
+
+**_트랜잭션 프로파일_** - 사용성 개선
+
+-   Improved the display styling in the step details
+-   Improved the display styling in the SQL, HTTPC detailed statistics 
+-   Improved the usability for binding SQL parameters
+
+**_액티브트랜잭션_** - 데이터 호출 루프 성능개선
+
+**_애플리케이션 일자별 현황_** - 에러율 데이터 표현 방식 수정
+
+**_트랜잭션 검색_** - 새로고침 시 선택 컬럼 초기화 현상 수정
+
+## Server
+
+**_리소스보드_** - 다크 테마 적용
+
+**_메트릭스 차트_** - 메모리 합계 지표 표시 단위 수정 
+
+**_이벤트 설정_** - 설정 값 최소값 입력 오류 수정
+
+**_서버 카드_** - Deprecated
+
+## Database
+
+**_에이전트 설치_** - 오라클 모니터링 에이전트 설치 안내 개선
+
+**_인스턴스 모니터링_** - 링크 깨짐 현상 수정
+
+## Container
+
+**_에이전트 설치_** - EKS Fargate 설치 방법 안내
+
+**_컨테이너맵_** - 와탭 에이전트 구분 표시

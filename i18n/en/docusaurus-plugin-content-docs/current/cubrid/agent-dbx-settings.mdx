@@ -1,0 +1,69 @@
+---
+id: agent-dbx-settings
+title: DBX 에이전트 설정
+description: whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.
+tags:
+  - CUBRID
+  - Database Monitoring
+  - DBX 에이전트
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import CurProd from '@site/src/components/GetProductName.js';
+
+DBX 에이전트에 필요한 설정은 _whatap.conf_ 파일에 작성합니다. 설정할 수 있는 옵션은 다음을 참조하세요.
+
+## Default options
+
+{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+
+## CUBRID-dedicated options
+
+-   **db_port** <span class='type'>Int</span>
+
+    Default `0`
+
+    Broker port information used for application connection information. Enter the value defined in `BROKER_PORT` in the broker configuration file (_cubrid_broker.conf_). (CUBRID default `BROKER_PORT: 33000`)
+
+-   **cms_port** <span class='type'>Int</span>
+
+    Default `8001`
+
+    This port is used by **CUBRID Manager**. In the **CUBRID Manager** configuration file (_cm.conf_), enter the value defined in `cm_port`. It is necessary to fetch monitoring information through the API of **CUBRID Manager**.
+
+-   **cms_token_file** <span class='type'>String</span>
+
+    If there are multiple DBs created by the user, WhaTap agents must have been installed and set as many as the number of DBs. In this case, the `cms_token_file` path is required to share tokens between agents. Set to _`{Agent installation path}`/cms_token_. 
+
+    For example, if agent2 has been installed, set as follows to share the `cms_token_file` path of agent1.
+
+    ```ini title='whtap.conf'
+
+    cms_token_file=/agent1/cms_token
+
+    ```
+
+-   **broker** <span class='type'>String</span>
+
+    Default `broker1`, `query_editor`
+
+    Once CUBRID has been installed, the broker runs as `broker1` and `query_editor` by default. If you arbitrarily changed the name of the broker or started it additionally, enter the changes.
+
+## 데이터 수집
+
+{@include: ../common-items/_db-agent-setting-data-collection.mdx}
+
+## Application of AWS RDS CloudWatch{#using-aws-rds}
+
+{@include: ../common-items/_db-agent-aws.mdx}
+
+<!-- AES 256 암호화 적용 -->
+
+{@include: ../common-items/_db-aes-256-encrypt.mdx}  
+
+## Identifying the agent name{#naming}
+
+{@include: ../common-items/_db-setting-agent-name-details.mdx}
+
+{@include: ../common-items/_db-agent-dbx-naming.mdx}

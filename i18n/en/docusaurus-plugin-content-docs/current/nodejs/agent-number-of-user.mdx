@@ -1,0 +1,21 @@
+---
+id: agent-number-of-user
+title: User count
+description: It aggregates the numbers of real-time users connected to WAS.
+tags:
+  - Node.js
+---
+
+It aggregates the numbers of users who connect to the Node.js web application server.
+
+-   **trace_user_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>
+    Set whether or not to aggregate real-time users. If the user tracing option setting is duplicated, the action priority is as follows.
+    > 1.  **trace_user_using_ip**
+    > 2.  **user_header_ticket**
+
+{@include: ../common-items/_common-collect-user.mdx}
+
+-   **user_header_ticket_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>
+    It is used to differentiate user IDs with a specific value in the HTTP header. It is frequently delivered when accessing from mobile devices.

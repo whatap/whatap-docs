@@ -1,0 +1,66 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - Tibero
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## WhaTapデータベースエージェントのダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapのサーバー情報
+
+dbms=tibero
+db=データベース名（sid）
+db_ip=データベースのIPアドレス
+db_port=データベースのポート番号 
+```
+
+1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+
+**Tibero JDBC Drivers**: `{$TB_HOME}`/client/lib/jar/tibero\{Version}-jdbc.jar
+
+:::note
+_/解凍されたフォルダ/jdbc/README.md_ファイルで各データベースのJDBCドライバのインストールパスが記載されています。
+:::
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+<!-- Tibero -->
+
+```bash showLineNumbers
+create user whatap identified by 'DB_PASSWORD'; ## パスワードを入力してください。
+grant create session to whatap;
+grant select any dictionary to whatap;
+ 
+## kill session 使用時
+grant alter system to whatap;
+```
+
+## DBユーザーファイルの作成{#create-db-user}
+
+{@include: ../common-items/_db-create-db-user-file.mdx}  

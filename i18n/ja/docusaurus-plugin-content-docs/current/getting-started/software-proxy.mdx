@@ -1,0 +1,151 @@
+---
+id: software-proxy
+title: ソフトウェアプロキシ
+description: モニタリング対象サーバーから外部網への直接アクセスを遮断し、単一チャンネルを通じて外部接続を許可することができます。
+tags:
+  - Java
+  - アプリケーションモニタリング
+  - ソフトウェアプロキシ
+---
+
+モニタリング対象サーバーから外部網への直接的なアクセスを遮断し、単一チャンネルを通じて外部への接続を許可しようとする場合、TCP/UDP Proxy
+サーバーを構成して、WhaTapサーバーにデータを転送できます。
+
+ユーザーが直接Proxyサーバーを構成することが困難な状況であれば、WhaTapが提供するソフトウェアベースの**WhaTap Software Proxy**が活用できます。 
+これにより、ユーザーは多数のサーバーが外部網に直接接続することなく**WhaTap Software Proxy**を経由するように制御できます。[HAProxy](https://www.haproxy.org)といった汎用プロキシを利用することもできます。
+
+![](/img/software_proxy.jpg)
+
+## ソフトウェアプロキシ
+
+### エージェントのインストール
+
+エージェントインストール案内に従ってインストールを進めると_whatap.agent.java.tar.gz_ファイルをダウンロードできます。圧縮を解凍すると_whatap.agent.proxy-`X.Y.Z`.jar_ファイルをWhaTap収集サーバーと通信可能なサーバーの位置に保存してください。インストール済みのエージェントがある場合は、その位置のファイルを利用できます。
+
+### エージェント設定
+
+この文書では、エージェントが位置するサーバーの帯域を**内部網(Private Subnet)**, ソフトウェアプロキシが位置するサーバーの帯域を**外部網(Public Subnet)**といいます。
+
+#### 外部網（Public Subnet）
+
+_whatap.agent.proxy-`X.Y.Z`.jar_ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために_proxy.conf_ファイルを作成してください。_whatap.agent.proxy-`X.Y.Z`.jar_ファイルが位置するパスは`$PROXY_HOME`となります。
+
+```ini title='$PROXY_HOME/proxy.conf'
+whatap.server.host=52.78.209.94/52.78.224.235 ## WhaTapアプリケーションモニタリング収集サーバーアドレス
+listen_port=6600 ## ProxyがListenするポート番号
+```
+
+#### 内部網（Private Subnet）
+
+`$WHATAP_HOME`は、エージェントをインストールしたパスです。`$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**外部網(Public Subnet)**サーバーのIPに変更してください。
+
+```ini title='$WHATAP_HOME/whatap.conf'
+whatap.server.host={外部網(Public Subnet)プロキシサーバーIP}
+```
+
+安定性のために**外部網(Public Subnet)**にプロキシを複数構成できます。 スラッシュ（「/」）を区切り文字として入力します。
+
+```ini title='$WHATAP_HOME/whatap.conf'
+whatap.server.host={外部網(Public Subnet)プロキシサーバーIP #1}/{外部網(Public Subnet)プロキシサーバーIP #2} 
+```
+
+### エージェント実行
+
+ソフトウェアプロキシは、`java`コマンドを通じて実行したり_proxy.sh_(_proxy.bat_)ファイルを作成して実行してください。
+
+```bash title='java 명령'
+java -jar whatap.agent.proxy-X.Y.Z.jar &
+```
+
+```bash title='proxy.sh (Windows: proxy.bat)'
+#!/usr/bin/env bash 
+EXE_JAR=`ls *.proxy* | sort | tail -1` 
+${JAVA_HOME}/bin/java ${JAVA_OPTS} -jar $EXE_JAR
+```
+
+```bash
+sh proxy.sh &
+```
+
+:::note
+
+_proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod +x proxy.sh`コマンドで実行権限を付与してください。
+
+:::
+
+### ソフトウェアプロキシ終了
+
+ソフトウェアプロキシが動作している場合は、_$PROXY_HOME/{PID}.proxy.run_ファイルを作成します。このファイルを削除すると、ソフトウェアプロキシは終了します。
+
+## HAProxy
+
+**HAProxy**を利用してプロキシサーバーを構築する方法を案内します。
+
+### 内部網（Private Subnet）
+
+```ini title='$WHATAP_HOME/whatap.conf'
+license=<プロジェクトアクセスキー>
+whatap.server.host=192.168.203.60 ## プロキシサーバーのIP
+```
+
+### 外部網（Public Subnet）
+
+次を参考にして_haproxy.cfg_ファイルを設定してください。
+
+```ini title='/etc/haproxy/haproxy.cfg'
+frontend proxy_in
+  mode              tcp
+  bind              *:6600
+  default_backend   proxy_out
+  log               global
+  option            httplog
+
+backend proxy_out
+  mode      tcp
+  server    server1 13.124.11.223:6600 maxconn 32 
+  server    server2 13.209.172.35:6600 maxconn 32
+```
+
+:::note
+
+13.124.11.223:6600と13.209.172.35:6600は、WhaTapアプリケーションモニタリング収集サーバーのアドレスとポート番号です。
+
+:::
+
+## Nginxリバースプロキシ
+
+**Nginxリバースプロキシ**を利用してプロキシサーバーを構築する方法を案内します。
+
+### 内部網（Private Subnet）
+
+```ini title='$WHATAP_HOME/whatap.conf'
+license=<プロジェクトアクセスキー>
+whatap.server.host=192.168.203.60 ## プロキシサーバーのIP
+```
+
+### 外部網（Public Subnet）
+
+次を参考にして_nginx.conf_ファイルを設定してください。
+
+```apacheconf title='/etc/nginx/nginx.conf'
+stream {
+  upstream tcp_proxy {
+    server 13.124.11.223:6600;
+    server 13.209.172.35:6600;
+  }
+  server {
+    listen 6600;
+    proxy_pass tcp_proxy;
+  }
+}
+```
+
+:::note
+
+13.124.11.223:6600と13.209.172.35:6600は、WhaTapアプリケーションモニタリング収集サーバーのアドレスとポート番号です。
+
+:::
+
+## エージェントのインストール確認
+
+エージェントをインストールしたサーバーと収集サーバーが接続されている場合は、[WhaTapモニタリングサービス](https://service.whatap.io)で確認できます。

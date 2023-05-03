@@ -1,0 +1,66 @@
+---
+id: server-detail-process-group
+title: Adding the process group
+description: It guides you to the method how to add the process group.
+tags:
+  - Server details
+  - Server List
+  - Process Group
+  - Analysis
+  - UI
+  - Server
+---
+
+## What is the process group?
+
+프로세스 그룹이란 하나의 인스턴스에서 동일한 동작을 하는 여러 개의 프로세스를 묶은 것입니다. 개별 프로세스가 아닌 그룹 단위로 모니터링하거나 알림을 받고 싶을 때 프로세스 그룹을 사용해 보세요.
+
+기존에 나눠져 있던 각 프로세스의 자원 사용량 합계치를 한눈에 확인해 볼 수 있습니다. 개별 프로세스의 자원 사용량을 일일이 계산할 필요가 없어집니다.
+
+프로세스 그룹의 자원 사용량 합계치가 특정 기준을 넘으면 알림을 받도록 지정할 수 있습니다. 알림 설정에 관한 자세한 설명은 [다음 문서](warning-notice#process-event)를 참조하세요.
+
+<!-- ***경고 알림*** > ***이벤트 설정*** > ***+ 이벤트 추가*** > ***프로세스*** 탭을 -->
+
+## Adding the process group
+
+<!-- Admin 계정으로 로그인한 후 다음 절차를 순서대로 진행하세요. -->
+
+:::note
+
+프로젝트 **수정 권한**이 필요합니다. 권한에 대한 자세한 내용은 [다음 문서](../project/project-structure)를 참조하세요.
+
+:::
+
+1.  홈 화면 > 프로젝트 선택 > **_서버 목록_** > **_서버 상세_**로 이동한 후 프로세스 목록에서 **_그룹화_** 버튼을 클릭하세요.<br/>
+    ![서버 상세 프로세스 목록](/img/server-detail-process.png)
+2.  프로세스 그룹 설정창이 뜨면 **_Pattern_**에 해당 그룹에 포함할 프로세스 명칭 패턴을 앞뒤 별표(\*)를 포함해서 입력하세요.
+
+    > e.g. \*whatap\*
+
+    ![](https://img.whatap.io/media/images/process_group_details.png)
+
+    입력 후 오른쪽의 ![돋보기 아이콘](/img/ic-search.svg) **_돋보기_** 버튼을 선택하세요. 해당 패턴에 해당하는 프로세스 목록을 조회할 수 있습니다. 프로세스 명칭은 화면 상에 표시되는 프로세스 명을 기준으로 합니다.
+3.  **_Pattern 별칭_**에 프로세스 그룹 이름을 입력하고 오른쪽의 **_적용_** 버튼을 선택하세요. 그룹화 설정 시 **설정한 프로젝트**의 **모든 서버**에 해당 그룹화가 진행됩니다.
+
+## Process group example
+
+-   **프로세스 그룹화 적용**\
+      다음 화면은 **_Pattern_**에 \*tomcat\*을 입력하고, **_Pattern 별칭_**을 test_group으로 적용한 예시입니다.
+      ![](https://img.whatap.io/media/images/process_group_example.png)
+
+-   **프로세스 그룹화 이전 프로세스 목록**\
+      ![그룹화 이전 프로세스 목록](/img/server-process-list.png)
+      **_Pattern_**에 맞게 그룹화할 프로세스 목록은 다음과 같습니다.
+    > -   예시, javatomcat_left/bin/test.jarcom.virtual.App 
+    > -   예시, javatomcat_right/bin/test.jarcom.virtual.App
+
+-   **프로세스 그룹화 등록 확인**\
+      새로운 프로세스 그룹 test_group이 다음과 같이 프로세스 목록에 등록된 것을 확인할 수 있습니다.
+      ![](https://img.whatap.io/media/images/test_group.png)
+
+:::note
+
+-   After applying the grouping, you can check the sum of the data corresponding to each process in the process group. 
+-   그룹화 이전의 데이터를 확인하려면 프로세스별로 데이터를 보세요.
+
+:::

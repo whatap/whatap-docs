@@ -1,0 +1,14 @@
+### エージェントのインストールサーバーから削除する
+
+<Tabs groupId='os'>
+<TabItem value='linux' label='Linux' default>
+
+サーバー上で起動されるJavaプロセスのうち、`whatap.agent.dbx`文字列を含むプロセスを終了します。エージェントをインストールしたパスで_stop.sh_を実行してください。その後、エージェントファイルとエージェントに登録したUser権限を削除してください。
+
+</TabItem>
+<TabItem value='windows' label='Windows'>
+
+サーバー上に起動されるJavaプロセスのうち、エージェントファイル名のjarファイルで起動中のプロセスを見つけて停止してください。もしbatファイルをForegroundで実行中の場合は、そのbat実行スクリプトを終了してください。その後、エージェントファイルとエージェントに登録したUser権限を削除してください。
+
+</TabItem>
+</Tabs>

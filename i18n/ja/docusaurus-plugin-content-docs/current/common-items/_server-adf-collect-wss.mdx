@@ -1,0 +1,6 @@
+ウィンドウサーバーサービスの運用状態を収集します。収集されたサービスの運用状態は、**\*カテゴリ**`server_windows_service`で確認できます。
+
+```bash title='Windows Powershell'
+// 管理者権限が必要です。
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "winservice.enabled=true"
+```

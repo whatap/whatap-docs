@@ -1,0 +1,98 @@
+---
+id: agent-update
+title: Agent Update
+description: It provides the method how to update the PHP agent.
+tags:
+  - PHP
+  - Update
+  - Management
+  - Application
+---
+
+This updates the PHP monitoring service with the existing settings. Normal update is available in the version 0.2.7 or later. The previous version must be deleted and then **reinstallation** is required.
+
+:::caution
+If _shared library(.so)_ among PHP extensions has been changed while Apache is running, the Apache daemon may crash abnormally. Be sure to proceed with a safe update while the Apache server is stopped.
+:::
+
+## Redhat/CentOS
+
+1.  Delete cache data for updating package information.
+
+    ```bash
+    $ yum clean all
+    ```
+
+2.  Stop the Apache or PHP-FPM service.
+
+3.  Update the whatap-php package.
+
+    ```bash
+    $ yum update whatap-php
+    ```
+
+    :::note
+     To download a specific version, specify the version as follows:
+
+    ```bash
+    $ yum update whatap-php-{version}
+    ```
+
+    :::
+
+## Debian/Ubuntu
+
+1.  Update cache data for updating package information.
+
+    ```bash
+    $ sudo apt-get update
+    ```
+
+2.  Stop the Apache or PHP-FPM service.
+
+3.  Update the whatap-php package.
+
+    ```bash
+    $ sudo apt-get install --only-upgrade whatap-php
+    ```
+
+    :::note
+     To download a specific version, specify the version as follows:
+
+    ```bash
+    $ sudo apt-get install whatap-php={version}
+    ```
+
+    :::
+
+## FreeBSD
+
+After uninstalling the agent, install it again. Proceed by referring to the following items.
+
+1.  Stop the Apache or PHP-FPM service.
+
+2.  Install the agent again after uninstalling it.
+
+    ```bash
+    $ /usr/whatap/php/install.sh remove
+
+    $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-0.4.10.txz
+    $ pkg install whatap-php-0.4.10.txz
+    ```
+
+3.  Registering the PHP extension module and whatap-php service
+
+    ```bash
+    $ /usr/whatap/php/install.sh
+    ```
+
+    :::note
+
+    -   To download a specific version, specify the version as follows:
+
+        ```bash
+        $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
+        $ pkg install whatap-php-{version}.txz
+        ```
+    -   Apache or PHP-FPM service is started.
+        :::

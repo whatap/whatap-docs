@@ -1,0 +1,61 @@
+---
+id: jetty
+title: Jetty
+description: Jettyアプリケーションサーバ環境でJVMオプションの追加設定を完了してください。
+tags:
+  - Java
+  - Jetty
+---
+
+Jettyを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認してください。 
+
+## JVMオプションの追加
+
+-   _jetty.sh_ファイルにJVMオプションを追加
+
+    ```bash title='$JETTY_HOME/bin/jetty.sh' {2} showLineNumbers
+    ...
+    JAVA_OPTIONS+=("-javaagent:/home/vagrant/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.port=8080")
+    usage()
+    {
+        echo "Usage: ${0##*/} [-d] {start|stop|run|restart|check|supervise} [ CONFIGS ... ] "
+        exit 1
+    }
+    [ $# -gt 0 ] || usage
+    ...
+    ```
+
+-   シェルスクリプトがいない状態でJettyの開始
+
+    ```bash
+    $ java -javaagent:/home/vagrant/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.port=8080 -jar start.jar &
+    ```
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+## モニタリングの開始
+
+{@include: ../../common-items/_start-apm.mdx}
+
+## Jetty互換性
+
+| WAS Ver.    |       Java SE 6（jdk1.6.0）       |      Java SE 7（jdk1.7.0_80）     |      Java SE 8（jdk1.8.0_91）     |
+| ----------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Jetty8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+
+| WAS Ver.    |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
+| ----------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Jetty8.1.21 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty9.2.18 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Jetty9.3.12 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+
+## Jetty DataSource
+
+| DB     | JDBC Driverファイル名                    | JDBC Ver.  | JDK Ver.     |               互換性               |
+| ------ | ----------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL  | mysql-connector-java-5.1.39-bin.jar | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle | ojdbc6-11.2.0.2.0.jar               | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |

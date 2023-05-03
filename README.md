@@ -2,44 +2,27 @@
 
 와탭 모니터링 서비스 콘텐츠 관리 도구입니다.
 
-# Website
+## 다국어 문서 수정 사항
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+* /\\_([a-z]) -> /_$1
 
-### Installation
+* : \_ -> : _
 
-```
-$ yarn
-```
+* \[ -> [
 
-### Local Development
+* _trs-profile.mdx 주석 삭제
 
-```
-$ yarn start
-```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+* * * * -> ---
 
-### Build
+:::note null -> note
 
-```
-$ yarn build
-```
+<Version> -> {Version}
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+<version> -> {version}
 
-### Deployment
+server-list.mdx -> 주석 삭제
 
-Using SSH:
+< > -> 부호 앞에 슬래시 적용할 것
 
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+\<whatap-monitoring\> 

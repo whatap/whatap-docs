@@ -1,0 +1,37 @@
+---
+id: agent-dbx-settings
+title: DBX 에이전트 설정
+description: whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.
+tags:
+  - PostgreSQL
+  - Database Monitoring
+  - DBX 에이전트
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import CurProd from '@site/src/components/GetProductName.js';
+
+Write the settings for the DBX agent in the _whatap.conf_ file. For the options that can be set, see the following.
+
+## Default options
+
+{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+
+## 데이터 수집
+
+{@include: ../common-items/_db-agent-setting-data-collection.mdx}
+
+## Application of AWS RDS CloudWatch{#using-aws-rds}
+
+{@include: ../common-items/_db-agent-aws.mdx}
+
+<!-- AES 256 암호화 적용 -->
+
+{@include: ../common-items/_db-aes-256-encrypt.mdx}  
+
+## Identifying the agent name{#naming}
+
+{@include: ../common-items/_db-setting-agent-name-details.mdx}
+
+{@include: ../common-items/_db-agent-dbx-naming.mdx}

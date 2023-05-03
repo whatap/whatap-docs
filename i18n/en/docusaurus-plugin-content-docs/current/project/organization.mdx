@@ -1,0 +1,131 @@
+---
+id: organization
+title: Organization Management
+description: An organization is a parent group to which groups can belong.
+tags:
+  - Management
+  - Organization
+  - Create Organization
+  - Organization Management
+---
+
+An organization is a parent group to which groups can belong. In most situations, projects and groups are enough. However, in case of a business that specializes in the operations management service, multiple companies exist as a group. The number of groups and projects can be great. In this case, the group concept is not enough. We need one more concept to integrate groups for management. Use the organization concept.
+
+A professional maintenance service company can group multiple subgroups into a single organization at a parent level. Grant each group member the corresponding roles. Members who have been granted roles can manage the group independently.
+
+## Create Organization
+
+1.  Select the profile icon on the upper right of the screen. A drop-down menu appears.
+
+2.  Select **_Create Organization_**.
+
+3.  Enter values for **_Organization Name_**, **_Logo_**, and **_Description_**, and then select Next.
+
+4.  Select a group to the organization in the group list, and then click **_Complete_**.
+
+If the **_Created organization successfully._** message appears, the organization has been created successfully.
+
+:::note
+
+-   **_Organization Name_** is required. Even if you have not entered the **_logo_** and **_description_**, the organization can be created.
+-   The group with the editing permission can be added to an organization.
+-   If there is no editing permission, the group cannot be selected.
+-   If you do not select a group, an organization can be created.
+-   For more information about the roles, see [the following](../project/project-structure#project-auth).
+-   If invited to the group without editing permission, it does not have editing permission for the group.
+-   It cannot be deleted by the upper group or cannot be moved to another group.
+    :::
+
+## Checking the groups and projects in the organization
+
+On the upper left of Home screen, select **_Non-Organization_**. If the **_organization list_** appears, select a desired organization. You can see the groups that belong to the organization under **_All Projects_**. In **_Project list_**, you can see the projects of all groups that belong to the organization.
+
+## Organization Management{#manage}
+
+![Organization Management](/img/project-organize-manage.png)
+
+1.  In Home screen, select Non-Organization on the upper left.
+
+2.  If **_Organization List_** appears, hover your mouse over the organization name for management. 
+
+3.  Select ![Configuration icon](/img/ico-setting.svg).
+
+**_Organization Management_** appears.
+
+![Organization Management](/img/project-organize-manage-group.png)
+
+-   ![Leader line 1](/img/number-01.png) Organization name area
+
+    To see the list of organizations to which you belong, select the ![Leader line 1](/img/number-01.png) organization name area. If the **_Organization List_** appears, select another organization or **_Return to non-organizational list_** to return to the project list.
+
+-   ![Leader line 2](/img/number-02.png) **_Organization List_**
+
+    -   All organizations to which you belong appear in the panel list. To change the organization, select ![Leader line 4](/img/number-04.png) **_Move_**.
+    -   To modify the organization name, logo, and description, click ![Edit icon](/img/ico-edit.svg).
+    -   To delete an organization, click ![Delete icon](/img/ico-trash.svg). The groups and projects to which you belong are moved to a group that is not part of the organization.
+    -   Without editing permission, the Edit and Delete buttons do not appear.
+
+-   ![Leader line 3](/img/number-03.png) **_Group List_**
+
+    All groups belonging to the selected organization appear in a list. If you click ![Right arrow icon](/img/right-arrow.svg), the management screen of the selected group appears.
+
+-   ![Leader line 5](/img/number-05.png) Edit Organization
+
+    To modify the basic information of the selected organization, select ![Edit icon](/img/ico-edit.svg). If the **_Edit Organization_** window appears, you can modify the organization name, logo, and description. After modification, select **_Save_**.
+
+## Inviting organization members
+
+1.  In **_Organization Management_**, select **_Member List_**.
+
+2.  Select **_Invite Member_** on the upper right of the screen.
+
+3.  You can also add members by selecting a sub group and a project in **_Organization_**.
+
+4.  In **_User Role_**, set the roles of the user to invite and then select **_Apply_**.
+
+5.  Enter the email address of the user to invite in **_Email_**, and then select **_Add_**. You can add extra users continuously.
+
+6.  After adding all users to invite, select **_Complete_**.
+
+:::note
+If there are invited members to cancel before completion, in **_List of members to invite_**, select ![Delete icon](/img/ico-trash-red.svg).
+:::
+
+## Checking the organization members{#member-list}
+
+![Checking Organization Members](/img/organization-member.png)
+
+In **_Organization Management_**, select **_Member List_**. You can select groups or projects in the organization tree structure. You can check the members belonging to each selected group or project. You can also add or delete members, and modify permissions for each selected group or project.
+
+### Modifying an organization member role
+
+1.  In **_Organization Management_**, select **_Member List_**.
+
+2.  In the **_Organization Member_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the member to edit. 
+
+3.  If the **_Edit Member Role_** window appears, set the values for **_Member Role_** and **_User role per group_**.
+
+    -   **_Member Role_**: You can set the roles for the organization and the groups in the organization.
+    -   **_User role per group_**: You can set the roles for the selected members for each group in your organization.
+
+4.  After configuration, select **_Apply_**.
+
+:::note
+
+-   In the organization tree structure, you can select a group or project to modify the roles of the members belonging to each group or project. Depending on the selected group or project, the scope of the applicable roles may differ.
+-   For more information about the member roles, see [the following](../project/project-structure#project-auth).
+    :::
+
+## Deleting an organization member
+
+1.  In **_Organization Management_**, select **_Member List_**.
+
+2.  In the **_Organization Member_** list, select ![Delete icon](/img/ico-trash-red.svg) on the right of the member to delete. 
+
+3.  If the message window appears, select **_Delete_**.
+
+:::note
+
+-   To delete members from sub groups and projects, click any checkbox in the message window and then select **_Delete_**.
+-   In the organization tree structure, you can select a group or project to delete the members belonging to each group or project.
+    :::

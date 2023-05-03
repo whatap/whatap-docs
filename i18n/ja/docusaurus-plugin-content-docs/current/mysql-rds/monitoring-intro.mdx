@@ -1,0 +1,65 @@
+---
+id: monitoring-intro
+title: MySQL RDSモニタリング
+description: WhaTapデータベースモニタリングサービス（DBX）は、Queryベースでデータを収集し、性能モニタリングサービスを提供します。
+displayed_sidebar: mysqlrdsSidebar
+hide_table_of_contents: false
+tags:
+  - MySQL RDS
+  - データベースモニタリング
+  - データベース
+  - モニタリング
+  - DBX
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import RdsCont from '../common-items/_import_db-specification-rds.mdx';
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+
+{@include: ../common-items/_db-introduction-desc.mdx} 
+
+WhaTap MySQL RDSモニタリングサービスは、既存のMySQLモニタリング機能を提供するだけでなく、エージェントのインストールから管理までWhaTapで提供します。データベース接続さえ成功すれば、DBエージェント（DBX）をダウンロードしてインストール·設定するなどの面倒な過程なく、簡単にDBモニタリングを開始できます。
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/log/db_prd_main.mp4}
+
+## MySQL RDSモニタリングの特長
+
+<Xclude product='mysql-rds'>
+  <CommonCont />
+</Xclude>
+
+<InDoc product='mysql-rds'>
+  <RdsCont/>
+</InDoc>
+
+{@include: ../common-items/_db-specification.mdx}
+
+## 対応機能
+
+次は利用可能な機能です。他の製品と対応機能について比較したい場合は、[次の文書]（../getting-started/support-env#compare-db）を参考にしてください。
+
+| カテゴリ       | 機能区分                            |                           MySQL RDS                          |
+| ---------- | ------------------------------- | :----------------------------------------------------------: |
+| Monitoring | Instance List                   |                <span class='emoji-ok'>✅</span>               |
+| ^          | Instancs Monitoring             |                <span class='emoji-ok'>✅</span>               |
+| ^          | Multi DataBase (tenant)         |                <span class='emoji-ok'>✅</span>               |
+| ^          | Slow Query                      |                <span class='emoji-no'>❌</span>               |
+| Analysis   | Trends                          | <span class='emoji-ok'>✅</span><br/>(Instance Monitoringに統合) |
+| ^          | Trends Compare                  |                <span class='emoji-no'>❌</span>               |
+| ^          | Lock Tree                       |                <span class='emoji-ok'>✅</span>               |
+| ^          | Parallel Query Tree             |                <span class='emoji-no'>❌</span>               |
+| ^          | Dead Lock                       |                <span class='emoji-ok'>✅</span>               |
+| ^          | DB Parameter                    |                <span class='emoji-ok'>✅</span>               |
+| Statistics | SQL Stat                        |                <span class='emoji-ok'>✅</span>               |
+| ^          | Table Size                      |                <span class='emoji-ok'>✅</span>               |
+| ^          | Database(TableSpace) Size       |                <span class='emoji-ok'>✅</span>               |
+| ^          | SGA Size                        |                <span class='emoji-no'>❌</span>               |
+| Report     | Daily / Weekly / Monthly Report |                <span class='emoji-ok'>✅</span>               |
+| Event      | Event List                      |                <span class='emoji-ok'>✅</span>               |
+| ^          | Event Stat                      |                <span class='emoji-ok'>✅</span>               |
+| ^          | Event Setting                   |                <span class='emoji-ok'>✅</span>               |
+| ^          | Notification                    |                <span class='emoji-ok'>✅</span>               |
+| Management | Agent Setup                     |                <span class='emoji-ok'>✅</span>               |
+| ^          | Agent List                      |                <span class='emoji-ok'>✅</span>               |
+| ^          | Project Management              |                <span class='emoji-ok'>✅</span>               |

@@ -1,0 +1,45 @@
+---
+id: golang-0.1.11
+title: Golang Agent 0.1.11
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-05-26
+
+## ベータ - バグの修正
+
+### Parameter収集エラーの修正
+
+内部のParamter収集のために「http.Request」の「ParseForm()」関数の呼び出しを削除しました。該当関数をあらかじめ呼び出して後でボディにアクセスする時、またはMultipart/form-dataタイプのパラメータにアクセスする時にエラーが発生します。 
+
+トランザクション終了時点でreqest.Formの内容を照会だけできるように修正しました。
+
+## ベータ - アップデート
+
+### database/sql Tx関連の修正
+
+database/sql driver内部において「Begin()」、「BeginTx()」、「Commit()」、「Rollback()」、「Close()」関数に対してSQL構文の形式で収集していた部分を一般メッセージとして収集します。トランザクションプロファイル情報で照会されます。 
+
+**_統計_** > **_SQL_** 統計でこれ以上照会されません。
+
+### ウェブトランザクションに含まれないError情報の収集
+
+既存のウェブトランザクションの場合、contextにwhatap情報を含み（「trace.Start()」呼び出しが必要）固有トランザクションID（「Txid」）が発行された場合に限ってError情報を収集しました。 
+
+固有のトランザクションIDがない場合、収集された情報は統計情報で照会できます。 
+
+### error情報収集にerror.（Type）の情報を収集
+
+エラー統計は、クラスとメッセージに分かれています。従来は「error.Error()」メッセージをクラスとメッセージの同じ方法で収集していました。 
+
+以下のようにクラス項目に「error.(Type)」として収集し、メッセージ項目に「error.Error()」として収集します。 
+
+| クラス                    | メッセージ                                                      |
+| ---------------------- | ---------------------------------------------------------- |
+| \*`errors.errorString` | custom panic                                               |
+| \*`errors.errorString` | mysql: driver does not support the use of Named Parameters |
+| `mssql.Error`          | mssql: Incorrect syntax near '1'.                          |
+| \*`echo.HTTPError`     | code=404, message=Not Found                                |

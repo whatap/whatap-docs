@@ -1,0 +1,18 @@
+---
+id: k8s-1.1.51
+title: Kubernetes Agent 1.1.51
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+-   Release date: 2022-08-02
+-   Agent download: http://repo.whatap.io/docker/kube_mon_1.1.51.tar
+
+## Modification of the worker node memory usage
+
+The worker node's memory usage calculation method has been modified.
+
+-   Previous: Total Memory - Free - Buffer - Cached
+-   Changed: Root Container Memory Usage - InactiveFile

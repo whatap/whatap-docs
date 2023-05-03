@@ -1,0 +1,43 @@
+---
+id: resin
+title: Resin
+description: Complete the additional settings for JVM options in the Resin application server environment.
+tags:
+  - Java
+  - Resin
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Check the method how to add JVM options in the application server environment using Resin. 
+
+1.  In the Resin configuration file, add `jvm-arg` to set the `-javaagent` option.
+
+    ```xml title='Resin 4.x: $RESIN_HOME/conf/resin.properties'
+    ...
+    <resin xmlns="http://caucho.com/ns/resin">
+    <cluster id="web-tier">
+        <server-default>
+            <jvm-arg>-Xmx1024m -XX:MaxPermSize=128m -javaagent:/whatap/whatap.agent-X.Y.Z.jar</jvm-arg>
+        </server-default>
+        ...
+    </cluster>
+    </resin>
+    ...
+    ```
+
+2.  Restart the application server.
+
+3.  Through the application server log file and the agent log file, check whether the agent is operating normally or any error occurs. For the location of log files, check the following:
+
+    -   Agent: _$WHATAP_HOME/logs/whatap-{SERVER_NAME}-{DATE}.log_
+    -   RESIN 4.x: _$RESIN_HOME/log/jvm-app-#.log_
+
+:::note
+{@include: _java-17.mdx} 
+:::
+
+:::note
+If the agent does not work normally or an error occurs, check [the following](../install-check).
+:::

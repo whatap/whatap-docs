@@ -1,0 +1,54 @@
+---
+id: agent-control-function
+title: Control of agent functions
+description: The following provides the method how to control the functions of the application server.
+tags:
+  - Pyton
+  - Controlling the function
+  - Configuration
+---
+
+The functions of the Python application server are controlled.
+
+-   **enabled**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      All the functions are enabled. Even when the value is `false`, the minimum data to maintain communication with the server is sent.
+
+<!-- 명시된 enable이 어디 enable인지 문의 -->
+
+-   **counter_enabled**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      The performance counter tracing is enabled. The performance counter includes data such as active transaction, user, CPU, memory, SQL, and external HTTP call. It is ignored when the `enabled` value is `false`.
+
+-   **stat_enabled**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      The statistics tracing is enabled. Statistical data such as transactions, SQL queries, external HTTP calls, user agents, and client IPs is collected every 5 minutes, but now the collection is stopped. It is ignored when the `enabled` value is `false`. 
+
+-   **active_stack_enabled**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        Active stack tracing is enabled.\
+    :::note
+    If `counter_enabled` is deactivated, active stacks are not collected because active transactions are not collected.
+    :::
+
+-   **eactive_stack_second**<span class='type'>Seconds</span><br/>
+        Default `10`<br/>
+        Set the interval for tracing the active stacks.
+    :::caution
+    It is not recommended changing the value.
+    :::
+
+-   **realtime_user_thinktime_max**<span class='type'>Milliseconds</span><br/>
+      Default `300000`<br/>
+      Set the maximum call interval credited by the same user when measuring the number of real-time users.
+
+-   **time_sync_interval_ms**<span class='type'>Milliseconds</span><br/>
+      Default `300000`<br/>
+      Set the synchronization interval between the agents and the server. For no synchronization, set it to `0`.  
+
+-   **realtime_user_thinktime_max**<span class='type'>Int</span><br/>
+        Default `0`<br/>
+        The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If the value is set different from the previous setting, the data is sent again.
+    :::note
+    Transaction URLs and SQL strings correspond to text data.
+    :::

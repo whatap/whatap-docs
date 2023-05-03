@@ -1,0 +1,321 @@
+---
+id: support-env
+title: サポート環境
+displayed_sidebar: indexSidebar
+description: WhaTapモニタリングサービスの対応環境に関する説明です。
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<!-- 공통 문구 -->
+
+{@include: ../getting-started/_support-common.mdx}
+
+{@include: ../getting-started/_env-note.mdx}
+
+---
+
+## アプリケーションモニタリング
+
+| 環境      | サポート環境                    |
+| ------- | ------------------------- |
+| Java    | Java 6以降~Java 17以下        |
+| Node.js | Node.js 0.1.12以降          |
+| PHP     | PHP 5.2以降、7.0以降、8.0 ~ 8.2 |
+| Python  | Python 2.7、3.3以降          |
+| .NET    | .NET Framework 4.5以降      |
+| Golang  | Golang 1.14バージョン以降        |
+
+---
+
+## サーバーモニタリング
+
+| 環境      | サポート環境                |
+| ------- | --------------------- |
+| Linux   | Debian 6.0以降          |
+| ^       | Ubuntu 12.04以降        |
+| ^       | CentOS 5.0以降          |
+| ^       | Red Hat 5.0以降         |
+| ^       | Rocky Linux 8.6以降     |
+| ^       | Amazon Linuxすべてのバージョン |
+| ^       | SUSE 10.1以降           |
+| Unix    | AIX 6.1以降             |
+| ^       | HP-UX 11.23以降         |
+| ^       | SunOS 5.8以降           |
+| ^       | FreeBSD 10以降          |
+| Windows | Windows 2008 R2以降     |
+| ^       | Windows 7 SP1バージョン以降  |
+
+---
+
+## DBモニタリング
+
+### データベースの種類別対応バージョン
+
+| 環境        | サポート環境            |
+| --------- | ----------------- |
+| Oracle    | Oracle 10g以降      |
+| Tibero    | Tibero 5.x以降      |
+| CUBRID    | CUBRID 9以降        |
+| MS-SQL    | SQL Server 2005以降 |
+| MySQL     | MySQL 5.5以降       |
+| MariaDB   | MariaDB 5.5以降     |
+| Altibase  | Altibase 6以降      |
+| Redis     | Redis 6.0.5以降     |
+| MongoDB   | MongoDB 4.2以降     |
+| PostgeSQL | EBD 9.2以降         |
+
+:::note
+DBモニタリングを適用する際、DB Metadata（Dictionary、 performance_schema）の照会権限のあるモニタリング用アカウントが必要です。
+:::
+
+### 対応機能の比較{#compare-db}
+
+<div class='db-support-type'>
+
+| カテゴリ       | 機能区分                        |                           Postgresql                          |                              Oracle                              |              MySQL              |          MS SQL Server          |
+| ---------- | --------------------------- | :-----------------------------------------------------------: | :--------------------------------------------------------------: | :-----------------------------: | :-----------------------------: |
+| Monitoring | Instance List               |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Instance Monitoring         |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Multi Database(tenant) 機能   | <span class='emoji-ok'>✅</span><br/>(一部の指標に限ってmultidb stat可能) | <span class='emoji-ok'>✅</span><br/>(12cバージョン以降、multi tenantの場合) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Slow Query                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                      |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare              |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Parallel Query Tree         |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                   |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameter                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                    |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Table Size                  |                              対応予定                             |                               対応予定                               | <span class='emoji-ok'>✅</span> |               対応予定              |
+| ^          | Database(TableSpace) Size   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> |               対応予定              |
+| ^          | SGA Size                    |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Report     | Daily/Weekly/Monthly Report |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Event      | Event List                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting               |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                 |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management          |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+
+| カテゴリ       | 機能区分                        |              Tibero             |              CUBRID             |             Altibase            |              Redis              |             MongoDB             |
+| ---------- | --------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| Monitoring | Instance List               | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Instance Monitoring         | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Multi Database(tenant) 機能   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Slow Query                  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare              | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Parallel Query Tree         | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameter                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Table Size                  |               対応予定              | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Database(TableSpace) Size   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| ^          | SGA Size                    | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Report     | Daily/Weekly/Monthly Report | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| Event      | Event List                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting               | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management          | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+
+</div>
+
+---
+
+## クバネティスモニタリング
+
+| 環境        | サポート環境                                             |
+| --------- | -------------------------------------------------- |
+| EKS       | Amazon Elastic Kubernetes Service 1.16 ~ 1.23      |
+| AKS       | Azure Kubernetes Service 1.16 ~ 1.23               |
+| GKE       | Google Kubernetes Engine 1.16 ~ 1.23               |
+| OKE       | Oracle Container Engine for Kubernetes 1.16 ~ 1.23 |
+| Openshift | Openshift 3.xx / 4.xx                              |
+| Cocktail  | Cocktail 1.16 ~ 1.23                               |
+| Accordion | Accordion 1.16 ~ 1.23                              |
+| PaaS-TA   | PaaS-TA 1.16 ~ 1.23                                |
+| plugins項目 | istio, GPU                                         |
+
+---
+
+## クラウドモニタリング
+
+次のAWS対応Namespace一覧を確認してください。 
+
+<details>
+<summary>AWS対応Namespace一覧</summary>
+
+-   AWS ACMPrivateCA
+-   AWS AmazonMQ
+-   AWS ApplicationELB Monitoring
+-   AWS AppSync
+-   AWS Athena
+-   AWS AutoScaling
+-   AWS Elastic Beanstalk Health
+-   AWS Billing
+-   AWS Cassandra
+-   AWS Chatbot
+-   AWS Cloud Front
+-   AWS CloudHSM
+-   AWS CloudSearch
+-   AWS CodeBuild
+-   AWS CodeGuruProfiler
+-   AWS Cognito
+-   AWS Connect
+-   AWS ContainerInsights Monitoring
+-   AWS DataSync
+-   AWS DAX
+-   AWS DDoSProtection
+-   AWS DMS
+-   AWS DocDB
+-   AWS DX
+-   AWS Dynamo DB
+-   AWS Ebs Usage
+-   AWS EC2 Monitoring
+-   AWS EC2 Alert Config
+-   AWS EC2Spot
+-   AWS ECS
+-   AWS EFS
+-   AWS ElastiCache Usage
+-   AWS ElasticGPUs
+-   AWS ElasticInference
+-   AWS ElasticMapReduce
+-   AWS ElasticTranscoder
+-   AWS Classic ELB Monitoring
+-   AWS ES
+-   AWS Events
+-   AWS Firehose
+-   AWS FSx
+-   AWS GameLift
+-   AWS GatewayELB
+-   AWS Glue
+-   AWS GroundStation
+-   AWS Health
+-   AWS Inspector
+-   AWS IoT
+-   AWS IoTAnalytics
+-   AWS IoTSiteWise
+-   AWS IVS
+-   AWS Kafka
+-   AWS Kinesis
+-   AWS KinesisAnalytics
+-   AWS KinesisVideo
+-   AWS KMS
+-   AWS Lambda
+-   AWS Lex
+-   AWS Location
+-   AWS Logs
+-   AWS LookoutMetrics
+-   AWS MediaConnect
+-   AWS MediaConvert
+-   AWS MediaPackage
+-   AWS MediaStore
+-   AWS MediaTailor
+-   AWS ML
+-   AWS NATGateway
+-   AWS Neptune
+-   AWS NetworkELB
+-   AWS NetworkFirewall
+-   AWS OpsWorks
+-   AWS Polly
+-   AWS QLDB
+-   AWS RDS Monitoring
+-   AWS Redshift
+-   AWS Robomaker
+-   AWS Route53
+-   AWS S3
+-   AWS SageMaker
+-   AWS SDKMetrics
+-   AWS ServiceCatalog
+-   AWS SES
+-   AWS SNS
+-   AWS SQS
+-   AWS SQS Message
+-   AWS SSM-RunCommand
+-   AWS States
+-   AWS StorageGateway
+-   AWS SWF
+-   AWS Textract
+-   AWS ThingsGraph
+-   AWS Timestream
+-   AWS Transfer
+-   AWS TransitGateway
+-   AWS Translate
+-   AWS TrustedAdvisor
+-   AWS Api Usage
+-   AWS VPN Monitoring
+-   AWS WAF
+-   AWS WorkMail
+-   AWS WorkSpaces
+
+</details>
+
+---
+
+## ログモニタリング
+
+Java、PHP、Python、Serverアプリケーションでログ収集が可能です。エージェント対応バージョンについては、以下を確認してください。
+
+| 環境     | 対応バージョン                   |
+| ------ | ------------------------- |
+| Java   | Java Agent 2.1.0バージョン以降   |
+| PHP    | PHP Agent 2.3.2バージョン以降    |
+| Python | Python Agent 1.2.2バージョン以降 |
+| Server | Server Agent 2.1.2バージョン以降 |
+
+---
+
+## 拡張ツール
+
+### Telegraf
+
+| 環境       | サポート環境             |
+| -------- | ------------------ |
+| Linux    | Red Hat 6.x x64以降  |
+| ^        | Ubuntu 12.x x64以降  |
+| Unix     | FreeBSD 10.x x64以降 |
+| Telegraf | Telegraf 1.3以降     |
+
+:::note
+Telegrafは、socket_writer ouput pluginに対応するバージョンに限って可能です。
+:::
+
+### Focus
+
+| 環境              | サポート環境               |
+| --------------- | -------------------- |
+| Windows         | Windows 2008R2以降     |
+| Linux           | Debian 7.0以降         |
+| ^               | Ubuntu 12.04以降       |
+| ^               | CentOS、Red Hat 6.0以降 |
+| ^               | Amazon Linux 1.0以降   |
+| ^               | SUSE 12.1以降          |
+| Unix            | FreeBSD 10以降         |
+| OSX             | Lion 10.7以降          |
+| Raspberry Pi OS | 8以降                  |
+
+---
+
+## 対応ブラウザー
+
+{@include: ../getting-started/_supported-browser.mdx}  
+
+---
+
+## ファイアウォール
+
+{@include: ../getting-started/_proxy.mdx} 
+
+---
+
+## モバイルアプリ
+
+{@include: ../getting-started/_mobile-app.mdx}  
+
+---

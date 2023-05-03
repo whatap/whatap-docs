@@ -1,0 +1,586 @@
+---
+id: mxql-calculate
+title: メトリクス加工
+description: MXQL構文を使用してメトリクスを操作するコマンドについて説明します。
+toc_max_heading_level: 2
+tags:
+  - MXQL
+  - メトリクス加工
+---
+
+MXQL構文を使用してメトリクスを操作するコマンドについて説明します。行列処理ステップは、検索されたデータが各ステップを順次実行する構成です。したがって、この手順に含まれる**コマンド**の順序が重要です。
+
+| コマンド                        | 機能                                                                     |
+| --------------------------- | ---------------------------------------------------------------------- |
+| [ROWNUM](#rownum)           | 行番号フィールドを追加します。                                                        |
+| [SELECT](#select)           | フィールドを選択します。選択されていないフィールドは検索されません。                                     |
+| [CREATE](#create)           | フィールドを追加します。                                                           |
+| [DELETE](#delete)           | フィールドを削除します。                                                           |
+| [RENAME](#rename)           | フィールド名を変更します。                                                          |
+| [GROUP](#group)             | データをグループ化します。                                                          |
+| [ORDER](#order)             | データをソートします。                                                            |
+| [JOIN](#join)               | 他のMQLで取得したデータを本データにカラム単位で追加するときに使用します。                                 |
+| [UPDATE](#update)           | データの加工とクリーニング。                                                         |
+| [LIMIT](#limit)             | 抽出されるデータの数を制限します。                                                      |
+| [SKIP](#skip)               | その場所で検索される一部のデータを無視します。                                                |
+| [FILTER-KEYS](#filter-keys) | 特定のデータを含む、データのみを抽出します。                                                 |
+| [FIRST-ONLY](#first-only)   | データのうち、最初のデータのみ送られ、残りは破棄されます。                                          |
+| [TIME-FILTER](#time-filter) | 特定の時間にデータをスキップするときに使用します。                                              |
+| [INJECT](#inject)           | その場所にMXQLクエリを追加します。                                                    |
+| [ADJUST](#adjust)           | 数値フィールドの値を変更するために使用します。                                                |
+| [FILTER](#filter)           | 特定の条件を持つデータのみが次のステップに渡されます。                                            |
+
+## ROWNUM{#rownum}
+
+行番号フィールドを追加します。
+
+```sql title='예시'
+CATEGORY agent_list
+FLEXLOAD
+ROWNUM
+```
+
+## SELECT{#select}
+
+フィールドを選択します。選択されていないフィールドは、次の手順に渡されません。 
+
+| オプション名    | オプション機能                                                     |
+| --------- | ----------------------------------------------------------- |
+| default   | `like`、`notlike`に関係なく、参照したいフィールドを設定します。                     |
+| like      | 設定値を部分文字列として持つフィールドのみが表示されます。                               |
+| notlike   | 設定値を部分文字列として持たないフィールドのみが検索されます。                             |
+
+-   すべてのフィールドが選択されている場合は、 1 （`SELECT`コマンド、オペランド両方を入力していない場合）
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    ```
+
+-   すべてのフィールドが選択されている場合は、 2 （`SELECT`コマンドのオペランドを入力されていない場合）
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ```
+
+-   参照するフィールド名を設定する場合は、文字列配列のオペランドを使用します。
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode]
+    ```
+
+-   `default`に設定するフィールドの値が１つしかなく、`like`オプションを使用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT {default:time, like:_m}
+    ```
+
+-   `default`に設定するフィールドの値が複数ある場合、`like`オプションを使用する場合、`default`として設定するフィールドの値が複数ある場合と`like`オプションを使用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT {default:[time,name], like:_m}
+    ```
+
+-   `like`と`notlike`の両方を使いたい場合は、`SELECT`コマンドを2回入力する必要があります。
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT {default:[time,name], like:name}
+    SELECT {notlike:pname}
+    ```
+
+:::caution
+
+-   フィールド全体を選択する場合、オペランドを入力されません。 
+-   `like`と`notlike`は同時に設定することができません。 複数の`SELECT`時間に設定する必要があります。 
+    :::
+
+:::note
+`SELECT`コマンドは、出力フィールドの順序を変更するときに使用します。 
+:::
+
+## CREATE{#create}
+
+フィールドを追加します。
+
+| オプション名 | オプション機能                                                  |
+| ------ | -------------------------------------------------------- |
+| value  | 特定の値を持つフィールドを作成します。                                      |
+| from   | 特定の値を持つフィールドを作成します。                                      |
+| expr   | 入力した数式の結果を値として持つフィールドを作成します。数式では、フィールド名を使用できます。          |
+| oname  | `oid`カラム名を設定し`oid`値に対応する`oname`の値を持つカラムを作成します。           |
+| okind  | `okid`カラム名を設定して、`okid`値に対応する`okind name`の値を持つカラムを作成します。  |
+| onode  | `onode`カラム名を設定して、`onid`値に対応する`onode name`の値を持つカラムを作成します。 |
+
+-   `value`属性を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    CREATE {key:active$, value:'#'}
+    ```
+
+-   `from`属性を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    CREATE {key:_id_, from:okind }
+    ```
+
+-   `expr`属性を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated*0.5))/apdex_total " }
+    ```
+
+-   `okind`属性を設定する場合
+    ```sql
+    CATEGORY agent_list
+    FLEXLOAD
+    CREATE { key : my_okind_name, okind : okind}
+    SELECT [ time, okind, okindName, my_okind_name]
+    ```
+
+## DELETE{#delete}
+
+フィールドを削除します。
+
+```sql title='예시'
+CATEGORY app_counter
+TAGLOAD
+DELETE [pcode]
+```
+
+:::caution
+文字列の配列で入力する必要があります。`DELETE` `pcode`は動作しません。 (2021-06-23時点)
+:::
+
+## RENAME{#rename}
+
+フィールド名を変更します。
+
+-   `pcode`フィールド名を`my_pcode`に変更します。
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    RENAME { src : pcode, dst : my_pcode }
+    ```
+
+:::caution
+`time`は、`ORDER`で使用されるソート基準あり、`time`の名前を任意に変更すると、[ORDER](#order)が動作しない場合があります。
+:::
+
+## GROUP{#group}
+
+データをグループ化します。
+
+| オプション名           | オプション機能                                                                                               |
+| ---------------- | ----------------------------------------------------------------------------------------------------- |
+| timeunit         | グループを分割する時間基準を設定します。                                                                                  |
+| pk or primaryKey | グループの`primaryKey`を設定します。                                                                              |
+| last             | 設定したカラム（column）のデータの最後の値だけを保存したい場合に設定します。`oname`のように繰り返して同じ値が使用される場合に使用します。内部で設定した値は、keyを持つ値に上書きされます。 |
+| listup           | 設定したカラム（column）のデータをすべてメモリに保存したい場合に設定します。内部で設定した値は、keyを持つListに値が追加されます。                               |
+| user             | リアルタイムユーザーを計算するためのオプションです。Blobタイプのデータを保存したカラム（column）を設定できます。（`app_user`カテゴリの`logbits`など）             |
+| merge            | 設定したカラム（column）のデータをMetricValue（複合値）として保存する場合に設定します。内部的には、設定値をkeyとしてMetric Value値に追加されます。             |
+| rows             | 1つのグループで保存できるデータの最大数を設定します。デフォルト値は`10000`です。                                                          |
+
+-   設定したフィールドを`merge`に設定し、MetricValue に設定した後、sum演算を実行します。
+
+    ```
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
+    GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
+    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+    ```
+
+:::note
+原則として`merge`フィールドは個別に設定する必要があります。ただ、`last`、`merge`、`listup`の3つの属性をすべて指定されていない場合は、すべての`number`フィールドは`merge`フィールドに、`number`フィールドではないフィールドは`last`フィールドに自動的に選択されます。
+:::
+
+:::caution
+만약 레코드에 `time` 필드가 없으면 전체를 그룹핑합니다. 
+
+-   `GROUP`コマンドが実行される前に、`SELECT`コマンドで`time`フィールドが設定されていない場合
+-   `RENAME` コマンドで`time`フィールド名を変更した場合
+-   `DELETE`コマンドで`time`フィールドを削除した場合
+    :::
+
+## UPDATE{#update}
+
+フィールドのデータを変更します。MetricValue値の状態にあるフィールドに対して操作を選択することができます。
+
+| オプション    | 機能                                                                                |
+| -------- | --------------------------------------------------------------------------------- |
+| sum      | MetricValueに含まれる値を追加します。                                                          |
+| min      | MetricValue値に含まれる最小値を検索します。                                                       |
+| max      | MetricValue値に含まれる最大値を検索します。                                                       |
+| last     | MetricValue値に含まれる、最後に追加された値を戻します。                                                 |
+| avg      | MetricValue値に含まれる値の平均を求めます。                                                       |
+| cnt      | MetricValue値に保存されている値の数を検索します。                                                    |
+| datetime | 時刻データの形式を変更します。                                                                   |
+| timezone | 時間データの基準を設定します。                                                                   |
+| notnull  | 設定したカラムの値が`null`の場合、適用する`default`の値を設定します。                                        |
+| pct      | `GROUP`コマンドの実行時`percentile`のためフィールドのすべての値をlistupした場合、`percentile`値をフィールド値に変更できます。 |
+| decimal  | フィールドの数値データを書式設定できます。                                                             |
+
+次のオプションを設定してデータの値を変更します。
+
+-   `value`オプションを設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode,pname, tps]
+    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+    UPDATE {key:tps, value:sum}
+    ```
+
+-   `datetime`、`timezone`オプションを設定する場合は、`CREATE {key:localtime, from:time}`で`time`フィールドの'long'タイプの値でコピーします。
+
+    ```sql
+    CATEGORY app_user
+    TAGLOAD
+    SELECT [time, pcode, pname, logbits]
+    CREATE {key:localtime, from:time}
+    UPDATE {key:localtime, datetime:'yyyyMMdd HH:mm:ss', timezone: GMT9}
+    ```
+
+-   `notnull`オプションを設定する場合
+
+    ```sql
+    UPDATE {key:tps, notnull:0}
+    ```
+
+-   `pct`を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [ time, pcode, tx_count ]
+    GROUP { key : pcode, listup : tx_count}
+    UPDATE { key : tx_count, pct : 90}
+    ```
+
+-   `decimal`オプションを設定する場合
+
+    ```sql
+    CATEGORY app_counter 
+    TAGLOAD 
+    SELECT [ time, oname, apdex_satisfied, apdex_tolerated, apdex_total]  
+    GROUP  { timeunit:5m, pk:oname}
+    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated/2.0))/apdex_total " } 
+    UPDATE { key:time, datetime:'yyyyMMdd HH:mm:ss', timezone:'GMT9'}
+    UPDATE { key:apdex, decimal:'0.000'} 
+    ROWNUM
+    ```
+
+:::caution
+
+-   `{datetime:'yyyyMMdd HH:mm:ss'}`の場合は、コロン（:）を含んでいるため、必ずバッククォート('')またはダブルクォート("")で囲む必要があります。
+-   `pct: 90`は、90%番目の値を選択する意味です。ただし、このフィールドは`GROUP`コマンドを実行時に、`listup`フィールドとして設定されている必要があります。 
+-   formatの形式は、[Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html)を使います。
+    :::
+
+## ORDER{#order}
+
+データをソートします。 
+
+| オプション | 機能                                        |
+| ----- | ----------------------------------------- |
+| key   | ソートするフィールドを選択します。                         |
+| sort  | ソートしたdirectionを設定します。(ascまたはdesc)         |
+| rows  | 同じ時間値を持つデータを保持する最大数を設定します。default `10000` |
+
+-   `key`、`sort`、`rows`を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pname, host_ip, pid, httpc_count]
+    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:2}
+    ```
+
+-   2回に分けてソートする場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pname, host_ip, pid, httpc_count]
+    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:1000}
+    ORDER  {key:tps, sort:desc}
+    ```
+
+:::caution
+データに`time`フィールドが含まれる場合、`ORDER`のkeyに`time`が含まれてなくても、`time`がソートの最初の基準となります。
+:::
+
+## JOIN{#join}
+
+`JOIN`コマンドを説明する前に、joinの概念を見てみましょう。 joinは、２つのクエリの結果を結合するために使用します。このとき、2つのクエリの結果よりどのフィールドに基準にを合わせるかの情報を伝える必要があります。このフィールドを`pk`または`primaryKey`といいます。  
+
+![](https://img.whatap.io/media/images/mxql-11.png)
+
+![](https://img.whatap.io/media/images/mxql-12.png)
+
+![](https://img.whatap.io/media/images/mxql-13.png)
+
+**表1**と**表2**はクエリの結果を表し、`pk`として設定した`file_name_4`フィールドは青で表示します。**表3**は`pk`に設定した`file_name_4`を基準に2つのクエリの組み合わせ結果を示します。  
+
+2つのMXQLを組み合わせて表示したデータを見ることができます。`RENAME`コマンドと`INJECT`コマンドは、`JOIN`コマンドを実行した結果を処理するプロセスであり、joinの動作には影響しません。 
+
+-   1番目のクエリ : CATEGORY agent_list FLEXLOAD 
+-   2番目のクエリ : /app/act_tx/act_tx_oid
+
+```sql
+CATEGORY agent_list
+FLEXLOAD
+JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8, act] }
+RENAME {src:[act0, act3, act8, act], dst:[normal, slow, verySlow, total]}
+INJECT default
+```
+
+サンプルクエリの結果の例は次のとおりです。
+
+![](https://img.whatap.io/media/images/mxql-14.png)
+
+:::note
+Yardに保存するすべてのデータは`time`、`oid`の値を持っています。いつ(`time`)どのエージェント(`oid`)から収集した情報であるかを示すためです。これらのフィールドも`pk`として使用できます。
+:::
+
+:::caution
+
+-   `JOIN`コマンドに使用される最初のクエリは直接作成したMXQLクエリ、2番目のクエリは[pathに設定できるクエリ](mxql-guide#custom-mxql)です。 
+-   `JOIN`コマンドを使用してMXQLクエリ全体をYardにファイルとして登録すると、3つ以上のカテゴリが`JOIN`できます。 
+    :::
+
+## LIMIT{#limit}
+
+抽出するデータの数を制限します。その前に設定した数のデータを次のステップに渡します。
+
+最初に抽出された3つデータを出力します。
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+LIMIT 3
+```
+
+## SKIP{#skip}
+
+その前の段階から受け取ったデータの一部を無視します。
+
+1~5 番目のデータは除外され、6番目のデータは、10個表示されます。 
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+SKIP 5
+LIMIT 10
+```
+
+## FILTER-KEYS{#filter-keys}
+
+特定のデータを含む、データのみを抽出します。
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FILTERKEYS {keys : [oid], values : [497765289]}
+```
+
+:::caution
+`key`、`value`ではなく`keys`、`values`です。複数形sに注意してください。
+:::
+
+## FIRST-ONLY{#first-only}
+
+特定のデータ（ペア）を持つ最初のデータのみ、次のステップに渡します。
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FIRST-ONLY {key:oid}
+```
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FIRST-ONLY {key: [httpc_count, type]}
+SELECT [httpc_count, type]
+```
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FIRST-ONLY [httpc_count, type]
+SELECT [httpc_count, type]
+```
+
+:::caution
+データの読み込み段階で`{backward : true}`を使用した場合、このコマンドの結果が異なる場合があります。
+:::
+
+## TIME-FILTER{#time-filter}
+
+特定の時間にデータをスキップするときに使用します。
+
+| オプション          | 機能                                                                                     |
+| -------------- | -------------------------------------------------------------------------------------- |
+| time           | `yyyy/MM/dd HH:mm:ss`に設定します。設定した時間を基準に`duration:1000`を設定します。（設定した時間基準で1000msの間のデータを除く） |
+| date           | `yyyy/MM/dd`に設定する必要があります。設定した時間を基準にduration:d1に設定します。（設定した時間を基準に1日のデータを除く）             |
+| durationまたはdur | フィルタリング範囲を設定します。（`d1`: 1日、`h1`: 1時間、`m1`、`m5`、`m10`: 1分、5分、10分、`number`: millisec）     |
+| timezone       | データのタイムゾーンを設定します。（例：'`GMT9`'）                                                          |
+| gmt            | データのタイムゾーンを設定します。（例：`9`または`-9`）                                                        |
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+TIME-FILTER { date:'2020/07/28' , timezone:'GMT9'}
+```
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+TIME-FILTER {time:'2021/06/22 00:00:00', gmt:9 }
+```
+
+## INJECT{#inject}
+
+その場所にMXQLクエリを追加します。
+
+`default`の場所にinjectされるMXQLクエリを渡す必要があります。 
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+SELECT
+INJECT default
+ROWNUM
+```
+
+:::caution
+프론트 단에서 `INJECT` 명령어의 오퍼랜드에 맵핑될 정보를 전달해주어야 합니다. 다음 예제는 키가 `default`로 설정된 값을 추가합니다.
+
+**_サイトマップ_** > **_MXQLデータ参照_**'においてINJECT値を渡す例
+
+![](https://img.whatap.io/media/images/mxql-example-5.png)
+:::
+
+## ADJUST{#adjust}
+
+数値フィールドの値を変更するために使用します。 (`time`値は変更できません。)
+
+| オプション名 | オプション機能              |
+| ------ | -------------------- |
+| add    | すべての数字データに値を追加します。   |
+| sub    | すべての数字データから値を減算します。  |
+| mul    | すべての数値データに値を乗算します。   |
+| div    | すべての数値データから値を除算します。  |
+| over   | すべての数字データの最小値を設定します。 |
+| under  | すべての数値データの最大値を設定します。 |
+
+-   `mul`を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ADJUST {mul : 100}
+    ```
+
+-   `over`を設定する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ADJUST { key:[rate], over:30}
+    ```
+
+    ![](https://img.whatap.io/media/images/mxql-9.png)
+
+-   `under`を設定する場合
+
+    ```sql
+    ADJUST { key:[rate], under:30}
+    ```
+
+    ![](https://img.whatap.io/media/images/mxql-10.png)
+
+## FILTER{#filter}
+
+特定の条件を持つデータのみが次のステップに渡されます。
+
+| オプション名   | オプション機能                               |
+| -------- | ------------------------------------- |
+| expr     | 条件を数式として入力します。                        |
+| value    | 特定の値を持つデータを検索します。                     |
+| exist    | 値を持つデータを検索します。                        |
+| notexist | 値のないデータを検索します。                        |
+| over     | 特定の値以上のデータを検索します。(greaterまたはequal to) |
+| under    | 特定の値以下のデータを検索します。(lessまたはequal to)    |
+
+-   `expr`オプションを適用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER {expr : "tx_count != 0"}
+    ```
+
+-   `value`オプションを適用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, value : 5}
+    ```
+
+-   `exist`オプションを適用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, exist : true}
+    ```
+
+-   `exist`オプションを適用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, notexist : true}
+    ```
+
+-   `under`オプションを適用する場合
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, under : 6}
+    ```
+
+:::caution
+
+-   データが0の場合、データは存在します。`{exist: true}`に適用されます。
+-   `{exist : false}`と`{notexist : false}`は不可能です。 `{notexist : true}`と`{exist : true}`を使用します。
+    :::

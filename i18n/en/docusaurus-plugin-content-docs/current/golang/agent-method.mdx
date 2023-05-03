@@ -1,0 +1,50 @@
+---
+id: agent-method
+title: Tracing the methods
+description: It provides the options related to the Golang agent's method tracing.
+tags:
+  - Golang
+  - Tracing the methods
+---
+
+## Tracing the methods
+
+```go title='GO'
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Trace Method")
+    defer trace.End(ctx, nil)
+
+    getUser(ctx)
+}
+
+func getUser(ctx context.Context) {
+    methodCtx, _ := method.Start(ctx, "getUser")
+    defer method.End(methodCtx, nil)
+    time.Sleep(time.Duration(1) * time.Second)
+}
+```
+
+## API
+
+```go title='GO'
+func Start(ctx context.Context, name string) (*MethodCtx, error)
+
+func End(methodCtx *MethodCtx, err error) error
+
+func Trace(ctx context.Context, name string, elapsed int, err error) error
+```
+
+## Whatap.conf configuration
+
+**ignore_http_method_urls** <span class='type'>String</span><br/>**ignore_http_method** <span class='type'>String</span>
+
+It excludes the collection of transactions requested by specific HTTP methods for the set URIs. Multiple URIs and methods can be registered using comma (,) as the delimiter. The values are case-insensitive.
+
+```ini title='예시'
+ignore_http_method_urls=/index, /sql/select
+ignore_http_method=options, connect
+```

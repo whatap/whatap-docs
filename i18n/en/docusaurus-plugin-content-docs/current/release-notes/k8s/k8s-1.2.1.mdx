@@ -1,0 +1,22 @@
+---
+id: k8s-1.2.1
+title: Kubernetes Agent 1.2.1
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+#### 2023년 1월 11일
+
+:::info
+
+Agent download: http://repo.whatap.io/docker/kube_mon_1.2.1.tar
+
+:::
+
+-   <Status>Change</Status> K8S SDK 상위 버전에서 Horizontal Pod Autoscaling(HPA)의 Metric 수집 미지원으로 해당 컬럼 삭제
+
+-   <Status>Change</Status> POD phase ‘<b>Running</b>’인 경우에만 <b>kube_stat</b>의 <b>TotalRequestCpu</b>, <b>TotalLimitCpu</b>, <b>TotalRequestCpu</b>, <b>TotalRequestMemory</b>를 집계하도록 변경
+
+-   <Status>Fix</Status> K8S Server API 1.23 버전 이후 Role 조회 불능 원인인 낮은 버전 SDK를 13버전으로 업그레이드

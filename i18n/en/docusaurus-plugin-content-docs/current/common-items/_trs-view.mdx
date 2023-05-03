@@ -1,0 +1,119 @@
+## Hitmap{#hitmap}
+
+Home > Select Project > **_Analysis_** > **_HITMAP_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_HITMAP_** under Project Menu. 
+
+:::note
+**_Hitmap_** can be also accessed through the **_hitmap_** widget in **_Dashboard_** > **_Application Dashboard_**.
+:::
+
+### Detailed analysis{#details}
+
+<!-- 내용 재검토 및 최신화 필요 -->
+
+<!-- ![view-hitmap](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring11.png) -->
+
+<!-- 실시간 히트맵을 드래그하거나 ***→***를 클릭하면 다음과 같은 상세 분석 화면이 열립니다. -->
+
+<!-- ![view-hitmap](/img/trs-hitmap-view-number.png)-->
+
+<!-- ![number-s 5](/img/number-05.png) 영역에서 **TX 트레이스** 목록을 확인할 수 있습니다.  
+목록과 같은 상세 분석 화면을 볼 수 있습니다.
+-->
+
+![Hitmap sc](/img/tx-hitmap.png)
+
+#### ![number1](/img/number-01.png) agent area
+
+You can filter by selecting agents linked with the current project. If you select the ![Icon](/img/ic-search-on-press.svg) **_Magnifier_** icon, the **_HITMAP Transaction_** chart can be viewed in the ![number2](/img/number-02.png) area.
+
+#### ![number2](/img/number-02.png) Hitmap transaction chart
+
+If transactions with latency issues are included, they appear in <span class='ov5ud10'>orange</span> or <span class='etrs'>red</span> on the **_Hitmap Transaction_** chart. If only normal transactions are included, they appear in <span class='woer'>blue</span>.
+
+#### ![number3](/img/number-03.png) Selection area
+
+If you drag the real-time hitmap chart, the ![number5]\(/img/number-05 .png) **_TX Trace_** list appears where ![number4](/img/number-04.png) **_agent list_** and transaction information can be viewed in the selected area.
+
+#### ![number4](/img/number-04.png) Agent list
+
+You can check the numbers of transactions and errors included in the selected area on the chart. If you click the desired application in the list, the information details of the application appear in ![number5](/img/number-05.png) **_Transaction List_**.
+
+#### ![number5](/img/number-05.png) TX Trace list
+
+The **_TX Trace_** list contains information details. If you select a desired transaction from the list, the **_Statistics_** information window appears. In the **_Statistics_** window, you can see the detailed trace details for the transaction. For more information, see [the following](trs-profile#details).
+
+### Understanding the hitmap patterns
+
+The hitmap is a distribution chart whose X-axis is the transaction end time, and Y-axis is the response time. A normal web application displays a distribution concentrated in a few seconds or less.
+
+![hitmap-pattern](https://img.whatap.io/media/user_guide_application/analysis/h0.png)
+
+### Analyzing the hitmap lines
+
+{@youtube: JHVYfJjtYQo}
+
+-   **Vertical line (LOCK symptom) pattern**  
+
+    If a temporary lock (not only DB lock) occurs during transaction processing, the processing is queued. If the lock is released, pending transactions are finished together at a similar time. This creates vertical lines as follows:
+
+    ![hitmap-lock](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+
+    Detecting locks in vertical line patterns is a very powerful concept. Especially in the microservice architecture, locks from backend systems can be equally detected.
+
+    ![hitmap-front-api-db](https://img.whatap.io/media/user_guide_application/analysis/h8.png)
+
+    The vertical lines for response patterns in the front applications are also detected when any lock occurs in the DB used by the back-end system.
+
+-   **Horizontal line (timeout) pattern**  
+
+    In the 10-second timeout condition, if the resources are insufficient, the transactions wait for 10 seconds until a timeout error occurs. At this time, horizontal lines appear near 10 seconds of the hitmap as follows:
+
+    ![hitmap-timeout](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+
+    If there is a logic to retry after timeout, the horizontal lines repeat every 10 seconds as shown in the figure. The following is the hitmap for **failures**.
+
+    ![hitmap-error](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+
+    (1) The response time increased in the section and (2) the red lines in the section are **horizontal line patterns**. (1) ConnectionPool is exhausted due to section load, (2) the secondary **timeout** failure occurred due to insufficient ConnectionPool.
+
+### Using the pattern analysis
+
+A line in the transaction response distribution indicates a bottleneck. If the lock is temporary, a vertical line is generated. If the bottleneck is release by timeout, a horizontal line is generated.
+
+![hitmap-pattern-analysis](https://img.whatap.io/media/user_guide_application/analysis/h4.png)
+
+When analyzing a problem, you can quickly pinpoint a transaction included in the line for selective analysis.
+
+## Analyzing the machine learning based response patterns
+
+This function automatically detects abnormalities after analyzing the hitmap patterns with an aid of machine learning technology and then issues an alert.
+
+![ml_pattern](https://img.whatap.io/media/user_guide_application/analysis/ml_pattern.png)
+
+### Abnormal pattern example
+
+It learns abnormal patterns from hundreds of TB of performance data every month and issues an alarm when a pattern similar to the learned abnormal one is detected.
+
+-   **Vertical line pattern**  
+
+    ![hitmap-abnormal1](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+
+-   **Horizontal line pattern**  
+
+    ![hitmap-abnormal2](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+
+-   **Composite pattern**  
+
+    ![hitmap-abnormal3](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+
+-   **Hitmap alarm**  
+
+    ![hitmap-ai-alert](https://img.whatap.io/media/images/ai_alert.png)
+
+:::note
+
+For more information about the analysis method of the **_hitmap transaction_** chart, see [the following](../best-practice-guides/about-apm-hitmap-class).
+
+:::

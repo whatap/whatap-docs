@@ -1,0 +1,41 @@
+## 기본 화면 안내
+
+<ProdImg img='db-multi-instance.png' desc='멀티 인스턴스 모니터링' />
+
+-   ![number1](/img/number-01.png) **_Database_**
+
+    It is a list of instances (databases) where the agent has been installed. The color of the instance matches the color of the graph chart placed on the screen. To exclude some instances of data from the graph chart, select the corresponding instances. If you select the instance again, the graph chart reflects the instance data.
+
+-   ![number2](/img/number-02.png) **_Status_**
+
+    You can monitor the metrics related to the resources of your database server.
+
+-   ![number3](/img/number-03.png) **_Load Balance_**
+
+    You can monitor whether the load is concentrated on one server by checking which instance has a high metric value.
+
+-   ![number4](/img/number-04.png) Graph chart area
+
+    The horizontal axis of each widget is time, and the vertical axis is the metric number. 
+
+    :::note
+
+    For more information about each metric, see [the following](metrics-data-list). 
+
+    :::
+
+<Xclude product='redis'>
+
+-   ![number5](/img/number-05.png) **_Active Sessions_** | **_Lock Tree_** | **_Process Info_**
+
+    You can view the active session, lock tree, and process information for a specific instance. Select Instance Name.
+
+</Xclude>
+
+<InDoc product='redis'>
+
+-   ![number5](/img/number-05.png) **_Active Sessions_**
+
+    You can view the active session information for a specific instance. Select Instance Name.
+
+</InDoc>

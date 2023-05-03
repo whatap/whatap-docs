@@ -1,0 +1,40 @@
+---
+id: agent-network
+title: エージェントの通信設定
+description: アプリケーションサーバーの通信を設定する方法を提供します。
+tags:
+  - PHP
+  - 通信
+  - 設定
+  - アプリケーション
+---
+
+PHPアプリケーションサーバーの通信を設定する方法を提供します。
+
+-   **whatap.server.host**<span class='type'>ip_address</span><br/>
+      기본값 `127.0.0.1,127.0.0.1`<br/>
+      エージェントが収集したデータを送信するサーバーを指定します。 収集サーバーを二重化して2つ以上のIPを持つ場合、コンマ（,）で区切って指定することができます。 指定されたIPには、収集サーバーのproxyデーモンがリスニング状態でサービスされる必要があります。
+
+-   **whatap.server.port** <span class='type'>tcp_port</span><br/>
+      デフォルト値 「6600」<br/>
+      収集サーバーのポート番号を指定します。 ポートは1つしか指定できないので、「whatap_server_host」に指定されている収集サーバーは同じポート番号を使用する必要があります。
+
+-   **whatap.tcp_so_timeout**<span class='type'>Millisecond</span><br/>
+      デフォルト値「60000」<br/>
+      収集サーバーと通信するTCPセッションのSocket Timeout値を指定します。
+
+-   **whatap.tcp_connection_timeout**<span class='type'>Millisecond</span><br/>
+      デフォルト値「5000」<br/>
+      収集サーバーと通信するTCPセッションのConnection Timeout値を指定します。
+
+-   **whatap.net_send_max_bytes**<span class='type'>Byte</span><br/>
+      デフォルト値「5242880」<br/>
+      収集サーバーにデータを送信するときに、一度に送信される最大サイズを指定します。
+
+-   **whatap.net_udp_port** <span class='type'>tcp_port</span>
+
+        デフォルト値「6600」
+
+        WhaTapエージェントは、トレーサーからUDPを通じて収集したデータを収集サーバーに転送します。最初のUDPサーバーのポート番号を指定できます。デフォルト値として提供される 6600番ポートが使用されているときに、このオプションを使用します。PHPコンパイルインストールをして、_php.ini_にwhatap項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
+
+    {@iclude: ../common-items/_php-restart-apply.mdx}

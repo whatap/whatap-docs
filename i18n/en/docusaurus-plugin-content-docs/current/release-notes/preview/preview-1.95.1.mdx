@@ -1,0 +1,89 @@
+---
+id: preview-1.95.1
+title: Preview 1.95.1
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+<https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+
+---
+
+## Hotfix: 2023-02-02
+
+### `공통`
+
+<Status>Fixed</Status> <UI>관리</UI> > <UI>정비 계획</UI> 메뉴에서 등록한 정비 계획 항목이 삭제되지 않는 버그 수정
+
+## Official Release: 2023-01-31
+
+### `공통`
+
+#### Dashboard
+
+**_Flex 보드_** 메뉴에서 다음의 기능을 추가합니다.
+
+-   <Status>Feature</Status> <UI>액티브 트랜잭션 TopN</UI> 위젯 추가
+
+-   <Status>Feature</Status> <UI>히트맵</UI> 위젯: 트랜잭션 트레이스 테이블의 <UI>URL</UI> 컬럼 항목에 <b>복사</b>(<img src='/img/ico-copy.svg' alt='복사 아이콘' />) 버튼 추가
+
+#### My Usage
+
+**_청구서 미리보기_** 메뉴에서 다음의 기능을 추가합니다.
+
+-   <Status>Feature</Status> 프로젝트, 상품명 컬럼별 그룹핑 버튼 추가: 그룹핑한 데이터들의 시간 합, 비용 평균, 청구 비용 합 정보를 미리보기로 제공
+
+-   <Status>Feature</Status> 청구서 테이블 위에 <UI>제품 종류</UI>, <UI>플랫폼</UI>, <UI>상품 통화</UI>, <UI>상품 단가</UI>, <UI>적용 환율</UI>, <UI>청구 통화</UI> 컬럼의 표시 여부를 선택할 수 있는 옵션 추가
+
+#### Analytics
+
+<Status>Feature</Status> <UI>메트릭스 차트</UI> 메뉴의 위젯 상단에 시간병합, 객체병합 방식 표시
+
+### `Container`
+
+**_대시보드_** > **_컨테이너 맵_** 메뉴에서 다음의 기능을 추가합니다.
+
+-   <Status>Feature</Status> 컨테이너 상태 정보를 라벨로 표시하는 기능 추가: 화면 상단 <img src='/img/ico-setting.svg' alt='설정 아이콘' /> 버튼을 클릭한 다음 <UI>컨테이너 상태</UI> 선택
+
+-   <Status>Change</Status> 컨테이너 맵 <b>상세 보기</b> 화면에서 컨테이너 및 파드 목록의 디자인 요소를 수정
+
+    -   각 항목을 선택해도 상세 정보가 펼쳐지지 않은채 다중 선택할 수 있도록 수정
+    -   토글 버튼을 선택해 상세 정보를 확인할 수 있도록 수정
+
+### `Database`
+
+<b>Tibero</b> 상품의 <UI>통계/보고서</UI> 메뉴에서 다음의 기능을 추가 및 수정합니다.
+
+-   <Status>Feature</Status> <UI>테이블스페이스 사이즈</UI> 메뉴의 화면 UI 개선
+
+    -   테이블스페이스 사이즈를 누적 차트 형태로 제공
+    -   누적 차트에 **_Total_**, **_Used_** 버튼을 통해 차트 데이터 변경
+    -   상세 정보를 테이블 형태로 제공
+    -   각 항목의 토글 버튼을 선택해 데이터 파일 정보 확인 가능
+    -   **_사용량 (%)_** 컬럼에 막대 그래프를 추가해 데이터 가시성 개선
+    -   각 컬럼의 이름을 클릭해 테이블 정렬 기능 추가
+    -   **_테이블스페이스 이름_** 컬럼의 크기 조절 기능 추가
+
+-   <Status>Change</Status> <UI>SQL 통계</UI> 메뉴의 통계 테이블에서 <UI>sql_id</UI> 컬럼 추가
+
+### `AWS`, `Azure`, `NCP`, `OCI`
+
+-   <Status>Fixed</Status> <UI>에이전트 설치</UI> 페이지 진입 후 <UI>액세스 키 변경</UI> 버튼을 클릭하면 등록한 인증 정보가 바로 나타나지 않는 문제 수정
+
+-   <Status>Fixed</Status> 프로젝트를 생성한 다음 페이지 이동 시 화면 위의 메뉴 경로가 <UI>인티그레이션 > 설치</UI>로 나타나는 문제 수정(<UI>관리 > 에이전트 설치</UI>)
+
+<!-- 
+### `RUM`
+
+<Status>Feature</Status> <UI>분석</UI> > <UI>페이지 로드 분석</UI> 메뉴 추가: 시간에 따른 페이지 로딩 경과 시간을 타임라인 차트 형태로 제공하며, 각 이벤트에 대한 상세 정보 제공
+-->
+
+### `URL`
+
+<Status>Feature</Status> <UI>URL 목록</UI> 메뉴에서 엑셀 파일로 작성한 URL 목록을 가져오거나 엑셀 파일로 내보낼 수 있는 기능 추가: 화면 오른쪽 위에 <UI>가져오기</UI>/<UI>내보내기</UI> 버튼 추가

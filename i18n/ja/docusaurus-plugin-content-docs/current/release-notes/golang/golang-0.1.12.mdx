@@ -1,0 +1,420 @@
+---
+id: golang-0.1.12
+title: Golang Agent 0.1.12
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-05-26
+
+## ベータ - アップデート
+
+### alpine linuxに対応します。
+
+#### インストール方法
+
+[whatap-agent.tar.gz]（https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz）をダウンロードして「/」ディレクトリを基準に圧縮を解凍します。_/usr/whatap/agent_ディレクトリにモニタリングインストールファイルが生成されます。
+
+```bash
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+tar -xvzf whatap-agent.tar.gz -C /
+```
+
+#### whatap-agent実行
+
+```bash
+/usr/whatap/agent/whatap-agent 
+    Default restart
+    Command start, stop, restart, version
+
+## バージョン確認
+# /usr/whatap/agent/whatap-agent version
+0.8.5.20201209
+
+## 実行確認
+# ps -elf | grep whatap
+  103 root      0:05 ./whatap_agent_static -t=4
+```
+
+### github.com/go-chi/chiライブラリに対応
+
+chiフレームワークのウェブトランザクションを追跡します。「Use」関数でミドルウェアを登録して追跡します。
+
+#### インストール方法
+
+```go
+import (
+  "github.com/go-chi/chi"
+  "github.com/whatap/go-api/trace"
+  "github.com/whatap/go-api/instrumentation/github.com/go-chi/chi/whatapchi"
+)
+
+func main() {
+  config := make(map[string]string)
+  trace.Init(config)
+  defer trace.Shutdown()
+  
+  r := chi.NewRouter()
+  
+  // whatapchiのmiddlewareを登録します。
+  r.Use(whatapchi.Middleware)
+  
+  r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+      fmt.Println("Response -", r.Response)
+})
+```
+
+[参考例]（https://github.com/whatap/go-api-example/tree/main/github.com/go-chi/chi）
+
+### github.com/go-gorm/gormライブラリに対応
+
+gorm v2フレームワークを通じて処理されるDB ConnectionおよびSQLを追跡します。
+
+#### whatapgormの使い方
+
+「gorm.Open」関数の代わりに「whatapgorm.OpenWithContext」関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージの「Start」関数を通じて生成することができます。
+
+```go title='설치 안내'
+import (
+  "net/http"
+
+  "github.com/whatap/go-api/instrumentation/github.com/go-gorm/gorm/whatapgorm"
+  "github.com/whatap/go-api/trace"
+  "gorm.io/driver/sqlite"
+  "gorm.io/gorm"
+)
+
+func main() {
+  whatapConfig := make(map[string]string)
+  trace.Init(whatapConfig)
+  defer trace.Shutdown()
+
+  http.HandleFunc("/InsertAndDelete", func(w http.ResponseWriter, r *http.Request) {
+    // Contextを作成します。
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+
+    // whatapgormでDBと接続します。
+    db, err := whatapgorm.OpenWithContext(sqlite.Open("test.db"), &gorm.Config{}, ctx)
+    if err != nil {
+      panic("Db接続に失敗しました。")
+    }
+
+    for i := 0; i < 100; i++ {
+      db.Create(&Product{Code: i, Price: i * 100})
+    }
+
+    db.Unscoped().Delete(&Product{}, "Code >= ? AND Code < ?", 0, 100)
+  })
+
+  _ = http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+}
+```
+
+#### whatapsqlの使い方
+
+gormは正式対応するsqlite、mysql、postgres、sqlserverの他にもdialect interfaceベースで作成されたdirverに対して互換性があります。 
+
+関連リンク：[gorm driver]（https://gorm.io/docs/write_driver.html）
+
+```go title='설치 안내'
+import (
+  "net/http"
+  "github.com/whatap/go-api/instrumentation/database/sql/whatapsql"
+  "github.com/whatap/go-api/trace"
+  "gorm.io/driver/mysql"
+  "gorm.io/gorm"
+)
+
+func main() {
+  whatapConfig := make(map[string]string)
+  trace.Init(whatapConfig)
+  defer trace.Shutdown()
+
+  http.HandleFunc("/WhatapDriverTest", func(w http.ResponseWriter, r *http.Request) {
+    // Contextを作成します。
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+
+    // whatapsql driverでdb connectionを生成します。
+    dbConn, err := whatapsql.OpenContext(ctx, "mysql", dataSource)
+    
+    // 既に生成されたconnectionを通じてgormに接続します。
+    db, err := gorm.Open(mysql.New(mysql.Config{Conn: dbConn}), &gorm.Config{})
+    if err != nil {
+      panic("Db接続に失敗しました。")
+    }
+    
+    for i := 0; i < 100; i++ {
+      db.Create(&Product{Code: i, Price: i * 100})
+    }
+  })
+
+  _ = http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+}
+```
+
+[参考例]（https://github.com/whatap/go-api-example/tree/main/github.com/go-orm/gorm）
+
+### github.com/jinzhu/gormライブラリに対応
+
+gorm v1フレームワークを通じて処理されるDB ConnectionおよびSQLを追跡します。
+
+#### whatapgormの使い方
+
+「gorm.Open」関数の代わりに「whatapgorm.OpenWithContext」関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージのStart関数を通じて生成することができます。
+
+```go title='설치 안내'
+import (
+  "net/http"
+
+  "github.com/whatap/go-api/instrumentation/github.com/go-gorm/gorm/whatapgorm"
+  "github.com/whatap/go-api/trace"
+  _ "github.com/mattn/go-sqlite3"
+  "github.com/jinzhu/gorm"
+)
+
+func main() {
+  whatapConfig := make(map[string]string)
+  trace.Init(whatapConfig)
+  defer trace.Shutdown()
+
+  http.HandleFunc("/InsertAndDelete", func(w http.ResponseWriter, r *http.Request) {
+    // Contextを作成します。
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+
+    // whatapgormでDBと接続します。
+    db, err := whatapgorm.OpenWithContext(ctx, "sqlite3", "test.db")
+    defer db.Close()
+    if err != nil {
+      trace.Error(ctx, err)
+      panic("Gorm Open Fail")
+    }
+
+    for i := 0; i < 100; i++ {
+      db.Create(&Product{Code: i, Price: i * 100})
+    }
+
+    db.Unscoped().Delete(Product{}, "Code >= ? AND Code < ?", 0, 100)
+  })
+
+  _ = http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+}
+```
+
+#### whatapsqlの使い方
+
+gormは正式対応するsqlite、mysql、postgres、sqlserverの他にもdialect interfaceベースで作成されたdirverに対して互換性があります。 
+
+関連リンク：[gorm driver]（https://v1.gorm.io/docs/dialects.html）
+
+```go title='설치 안내'
+import (
+  "net/http"
+  "github.com/whatap/go-api/instrumentation/database/sql/whatapsql"
+  "github.com/whatap/go-api/trace"
+  "github.com/jinzhu/gorm"
+_ "github.com/go-sql-driver/mysql"
+)
+
+func main() {
+  whatapConfig := make(map[string]string)
+  trace.Init(whatapConfig)
+  defer trace.Shutdown()
+
+  http.HandleFunc("/WhatapDriverTest", func(w http.ResponseWriter, r *http.Request) {
+    //Contextを作成します。
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+
+    // whatapsql driverでdb connectionを生成します。
+    var conn gorm.SQLCommon
+    var err error
+    conn, err = whatapsql.OpenContext(ctx, "mysql", dataSource)
+    if err != nil {
+      trace.Error(ctx, err)
+      panic("Whatapsql Open Fail")
+    }
+    
+    // 既に生成されたconnectionを通じてgormに接続します。
+    db, err := gorm.Open("mysql", conn)
+    if err != nil {
+      trace.Error(ctx, err)
+      panic("Gorm Open Fail")
+    }
+    for i := 0; i < 100; i++ {
+      db.Create(&Product{Code: i, Price: i * 100})
+    }
+  })
+
+  _ = http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+}
+```
+
+[参考例]（https://github.com/whatap/go-api-example/tree/main/github.com/jinzhu/gorm）
+
+### github.com/gomodule/redigoライブラリに対応
+
+redigoフレームワークを通じてredisに渡されるコマンドを追跡します。「redis.Dial」の代わりに「whatapredigo.DialContext」の関数を使用します。
+
+```go title='설치 안내'
+import (
+  "context"
+  "net/http"
+
+  "github.com/gomodule/redigo/redis"
+  "github.com/whatap/go-api/instrumentation/github.com/gomodule/redigo/whatapredigo"
+  "github.com/whatap/go-api/trace"
+)
+
+func main() {
+  whatapConfig := make(map[string]string)
+  trace.Init(whatapConfig)
+  defer trace.Shutdown()
+
+  http.HandleFunc("/SetAndGetWithDialContext", func(w http.ResponseWriter, r *http.Request) {
+    // Contextを作成します。
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+
+    // whtapredigoを通じてredis connectionを生成します。
+    conn, err := whatapredigo.DialContext(ctx, "tcp", "127.0.0.1:6379")
+    if err != nil {
+      trace.Error(ctx, err)
+      return
+    }
+    defer conn.Close()
+
+    _, err = conn.Do("SET", "DataKey", "DataValue")
+    if err != nil {
+      trace.Error(ctx, err)
+      return
+    }
+
+    data, err := redis.Bytes(conn.Do("GET", "DataKey"))
+    if err != nil {
+      trace.Error(ctx, err)
+      return
+    }
+  })
+}
+```
+
+[参考例]（https://github.com/whatap/go-api-example/tree/main/github.com/gomodule/redigo）
+
+### github.com/shopify/saramaライブラリに対応
+
+saramaフレームワークを通じて処理されるkafka produce、consumeイベントを追跡します。
+
+#### async producer追跡
+
+whatapsaramaのInterceptorを通じてasync producer情報を追跡します。Producer Message作成時にCtx関連情報をMetadataを通じて伝達すると、Multi Transactionにつながります。
+
+```go title='설치 안내'
+import (
+  "context"
+  "net/http"
+  "github.com/Shopify/sarama"
+  "github.com/whatap/go-api/instrumentation/github.com/Shopify/sarama/whatapsarama"
+  "github.com/whatap/go-api/trace"
+)
+
+func main() {
+  config := sarama.NewConfig()
+  brokers := []string{"127.0.0.1:9092"} //config kafka broker IP/Port
+
+  // whatapsaramaの割り込みをconfigに登録します。
+  interceptor := whatapsarama.Interceptor{Brokers: brokers}
+  config.Producer.Interceptors = []sarama.ProducerInterceptor{&interceptor}
+
+  whatapConfig := make(map[string]string)
+  trace.Init(whatapConfig)
+  defer trace.Shutdown()
+
+  // Prdoducer生成時にconfigを伝達します。
+  producer, err := sarama.NewAsyncProducer(brokers, config)
+  consumerOffset := sarama.OffsetOldest
+  if err != nil {
+    panic(err)
+  }
+  defer func() {
+    if err := producer.Close(); err != nil {
+      panic(err)
+    }
+  }()
+
+  http.HandleFunc("/AsyncProduceInput", func(w http.ResponseWriter, r *http.Request) {
+    ctx, _ := trace.StartWithRequest(r)
+    defer func() {
+      trace.End(ctx, nil)
+    }()
+    msg := &sarama.ProducerMessage{
+      Topic:    "tmp-topic",
+      Key:      sarama.StringEncoder("Data Key"),
+      Value:    sarama.StringEncoder("Data Value"),
+      Metadata: trace.GetMTrace(ctx),
+    }
+    producer.Input() <- msg //error check
+
+  })
+
+  _ = http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+}
+```
+
+#### consumer追跡
+
+whatapsaramaのInterceptorを通じてconsumer情報を追跡します。Produceから渡されたMessageを基準にMulti Transactionに接続されます。
+
+```go title='설치 안내'
+import (
+  "context"
+  "flag"
+  "fmt"
+  "net/http"
+  "text/template"
+
+  "github.com/Shopify/sarama"
+  "github.com/whatap/go-api/instrumentation/github.com/Shopify/sarama/whatapsarama"
+  "github.com/whatap/go-api/trace"
+)
+
+func main() {
+  config := sarama.NewConfig()
+  brokers := []string{"127.0.0.1:9092"} //config kafka broker IP/Port
+
+  // whatapsaramaの割り込みをconfigに登録します。
+  interceptor := whatapsarama.Interceptor{Brokers: brokers}
+  config.Consumer.Interceptors = []sarama.ConsumerInterceptor{&interceptor}
+
+  // consume 1回あたり1tx
+  // Consumer生成時にconfigを伝達します。
+  consumer, err := sarama.NewConsumer(brokers, config)
+  topic := "tmp-topic"
+
+  partitions, _ := consumer.Partitions(topic)
+  consume, _ := consumer.ConsumePartition(topic, partitions[0], consumerOffset)
+
+  if consume == nil {
+    fmt.Println("consume nil")
+    return
+  }
+
+  go func() {
+    for {
+      select {
+      case msg := <-consume.Messages():
+        fmt.Println(msg)
+      case consumerError := <-consume.Errors():
+        fmt.Println("error", consumerError)
+        return
+      }
+    }
+  }()
+}
+```
+
+[参考例]（https://github.com/whatap/go-api-example/tree/main/github.com/shopify/sarama）

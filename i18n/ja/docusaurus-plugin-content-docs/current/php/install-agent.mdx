@@ -1,0 +1,90 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: PHP環境で動作するアプリケーションサーバーに適用できるエージェントのインストール方法を確認してください。
+tags:
+  - PHP
+  - PHPモニタリング
+  - アプリケーション
+  - アプリケーションモニタリング
+  - インストール
+  - エージェント
+---
+
+import DocCardList from '@theme/DocCardList';
+import TR from '@site/src/components/TR';
+
+{@include: ../common-items/_agent-signup-guide.mdx}
+
+{@youtube: yL6BFY6_rrw}
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+## エージェントダウンロード
+
+**アクセスキー**を発行されたら、使用するオペレーティングシステムを選択してください。そして、**エージェントダウンロード**セクションで、そのオペレーティング システムのコマンドをコピーしてエージェントをインストールしてください。
+
+PHPエージェントのインストール方式は、**Linuxパッケージのインストール**方式です。インストールの手順は次のとおりです。
+
+1.  WhaTap **リポジトリ**を登録します。
+
+2.  whatap-php **Linuxパッケージ**（yum、 apt-get）をインストールしてください。
+
+3.  **設定スクリプト**を実行してください。設定スクリプトを通じてトレーサーは**PHP拡張モジュール**として登録され、エージェントは**whatap-phpサービス**として実行されます。
+
+    ![php](https://img.whatap.io/media/images/php.png)
+
+4.  ApacheまたはPHP-FPMを**再起動**してください。
+
+<!-- 상단 트레이서 등록 안내 개요 페이지로 옮길지 고민 -->
+
+:::note
+エージェントファイル構成の詳細については、PHPファイル構成を参考にしてください。
+:::
+
+<details>
+<summary>PHPエージェントファイルの構成</summary>
+
+PHPエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出してWhaTap収集サーバーに転送するトレーサー、収集された情報をサーバーに転送するためのエージェント、トレーサーとエージェントをサーバーに動的に適用するためのインストールスクリプトファイルで構成されています。
+
+-   _whatap\_`X.Y.Z`.so_<br/>
+      トレーサーとして登録されたPHP拡張モジュールとして追加され、情報を収集し、収集された情報をエージェントに送信するライブラリです。拡張モジュールはPHPバージョン（PHP API Version）別、Zend Thread Safe対応可否によって区分されます。例は次のとおりです。 
+    -   _whatap_zts_20041225.so_\
+          PHP 5.2バージョン、Zend Thread safe enable
+    -   _whatap_20041225.so_\
+          PHP 5.2バージョン、Non Thread Safe 
+
+-   _whatap-php(whatap_php)_<br/>
+      エージェント、トレーサーからUDPに渡された情報を収集サーバーに送信するプログラムです。
+
+-   _/etc/init.d/whatap-php_<br/>
+      サービススクリプトです。
+
+-   _whatap_php_<br/>
+      サービス実行ファイルです。
+
+-   _whatap.ini_<br/>
+      アプリケーションサーバのデータを収集するPHP拡張モジュールの設定情報、収集サーバのアドレスとサーバのプロジェクトアクセスキーが入力されるファイルです。
+
+-   _template.ini_ <br/>
+      _whatap.ini_作成時、コピーして使用するテンプレートファイルです。
+
+-   _whatap-install-`yyyymmdd`.log_<br/>
+      インストールプロセスに対するログファイルです。基本保存パスは_/usr/whata/php/logs_です。日付ごとにファイルが作成されます。基本的にの7日間のログが保持されます。
+
+-   _whatap-boot-`yyyymmdd`.log_<br/>
+      エージェントのログファイルです。基本保存パスは_/usr/whata/php/logs_です。日付ごとにファイルが作成されます。基本的にの7 日間のログが保持されます。
+
+-   _install.sh_<br/>
+      インストールスクリプトです。PHP拡張モジュール(_whatap.so _)をApacheまたはPHP-FPMにインストールし、whatap-phpサービスのインストールを進めます。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参考にしてください。
+
+-   _WhaTap.php (sample.php)_<br/>
+      PHPソースコードで使用するAPIリファレンスクラス（_/usr/whatap/php/lib/WhaTap.php_）および例題ソースファイル（_sample.php_）です。
+
+</details>
+
+使用するアプリケーションサーバー環境に応じたインストール方法を次のように提供します。 エージェントをインストールして適用する前に [動作環境環境]（supported-spec）を確認してください。
+
+<DocCardList/>

@@ -1,0 +1,247 @@
+<!-- 와탭 에이전트는 트랜잭션 트레이스 정보, 통계 정보 외 애플리케이션 성능과 관련된 다양한 정보를 수집하며 이는 크게 3가지로 분류할 수 있습니다. -->
+
+The WhaTap agent collects various data related to the application performance. The data can be broadly classified into 3 categories:
+
+-   **User**: Real-time user or visitor
+
+-   **Service**: Transaction, SQL, outbound call count and response, error rate, etc.
+
+-   **Resource**: System and process resource usage
+
+## User Counter
+
+User is a client using the monitoring system. In the client, users are counted based on the browser.
+
+In the web system performance, user is important because it is the start point that generates the load. For user tracing, it is required to consider what criteria users are classified with and how to count them.
+
+### User types
+
+The WhaTap agent provides various options to identify users.
+
+-   **Remote IP**<br/>
+      Remote IP is used by default to identify the user. Remote IP has limitations when distinguishing actual users.
+
+-   **Cookie**<br/>
+      Users are identified using the cookie. UUID is saved in the cookie named **_WHATAP_** for all connected clients.
+
+    ```ini title='whatap.conf'
+    trace_user_using_ip=false
+    ```
+
+-   **Header Key**<br/>
+      Users can be identified using the value passed to the HTTP header.
+
+    ```ini title='whatap.conf'
+    user_header_ticket=USER
+    ```
+
+### User counting
+
+Depending on the counting method, it is used differently. Real-time users are measured to see how many users are using the system. Daily Active User is a measure for business management on how many users are interested in the service for a day.
+
+-   **Real-time User**\
+      The number of users is counted in the last 5 minutes. Users are counted by shifting every 5 seconds. The numbers counted on each server are merged through the HyperLogLog algorithm.
+
+-   **Daily Active User** (**DAU**)\
+      The users who accessed the system for a day are counted. The number of users logged in for 24 hours is calculated through HyperLogLog.
+
+:::tip
+WhaTap collects byte blocks for user data by the server to count long-term users. If the data is merged by HyperLogLog, the visitors for more than a month can be theoretically calculated.
+:::
+
+## Service Counter
+
+Performance metrics for transactions include the number of SQLs or outbound calls used by transactions, the number of response time errors, etc.
+
+-   **Transaction Counter**<br/>
+      This counter measures when any transaction is performed.
+    -   **Count**
+    -   **Response Time**
+    -   **Error Count**  
+
+-   **Active Transaction Counter**<br/>
+    It counts the number of active transactions.
+    -   **Count**
+    -   **Active Status**<br/>
+          Progress status is fixed into five: METHOD, SQL, HTTPC, DBC, SOCKET.
+        -   METHOD - Calling a general function
+        -   SQL - Running DB SQL
+        -   HTTPC - Calling an HTTP outbound API (service)
+        -   DBC - DB connection is requrested; it is usually taken from the pool
+        -   SOCKET - Connecting the TCP session
+
+-   **SQL**<br/>
+      It counts the status of SQL running.
+    -   **Count**
+    -   **Response Time**
+    -   **Error Count**
+    -   **Patch Count**
+
+-   **HTTP Call**<br/>
+      It counts the status of HTTP outbound calls.
+    -   **Count**
+    -   **Response Time**
+    -   **Error Count**   
+
+## Resource Counter
+
+It counts the server resources or resource uses inside the node processes.
+
+---
+
+-   **CPU** (sys, usr, wait, steal, irq, cores)<br/>
+      CPU usage %. The data is collected for each type. Steal is meaningful only in the virtual environment. The number of CPU cores is also collected.
+
+-   **Process CPU**<br/>
+      CPU usage % by Java processes
+
+-   **Memory**<br/>
+      System memory utilization (%).
+
+-   **Swap**<br/>
+      Swap memory utilization (%).
+
+-   **Disk**<br/>
+      Java process utilization (%) of the current directory.
+
+-   **Heap** (Total, Used, Perm)<br/>
+      Total, Used, Perm amounts of the Java heap memory. The data unit is KBytes.
+
+-   **GC** (Count, Time)<br/>
+      Total sum of GC count and time for 5 seconds.
+
+-   **ObjectPendingFinalizationCount**<br/>
+      The number of objects waiting to finalize() during a GC call. As the value increases, the GC time may be delayed.
+
+-   **Thread** (start Count, Count, Daemon, Peak Count)<br/>
+      It collects the numbers of threads from the start of JVM, number of running threads, number of daemons, and the maximum number of threads. You can make judgment about whether the thread pool is required.
+
+-   **DB Connection Count** (active,idle)<br/>
+      It collects the numbers of Idle and Active transactions in the connection pool.
+
+-   **Tomcat Thread Pool** (active, queueSize)<br/>
+      It collects the performance data if the Tomcat's executor thread pool has been set.
+
+    ```xml title='XML'
+       <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"
+        maxThreads="50" minSpareThreads="2" maxQueueSize="78"/>
+    ```
+
+---
+
+### DB connection pool counter
+
+DB connection pool is called "DataSource." It is usually provided by WAS, but in some cases, any open source pool is used. Usage data is sometimes exposed as JMX, but not always.
+
+WhaTap provides 2 different methods. The direct inquiry is performed by a single BCI and another method uses JMX. The BCI method is used by default and as a secondary method, the JMX method is provided.
+
+The following is the ByteCode Injection class associated with the default values for each option.
+
+```java title='hikari_pool_enabled=false'
+com.zaxxer.hikari.pool.HikariPool
+```
+
+```java title='dbcp_pool_enabled=true'
+org.apache.commons.dbcp.BasicDataSource
+org.apache.commons.dbcp2.BasicDataSource
+org.apache.tomcat.dbcp.dbcp.BasicDataSource
+org.apache.tomcat.dbcp.dbcp2.BasicDataSource
+```
+
+```java title='tomcat_pool_enabled=true'
+org.apache.tomcat.jdbc.pool.ConnectionPool
+```
+
+```java title='weblogic_pool_enabled=true'
+weblogic.jdbc.common.internal.ConnectionPool
+```
+
+```java title='jeus_pool_enabled=true'
+jeus.jdbc.connectionpool.ConnectionPoolImpl
+```
+
+```java title='jboss_pool_enabled=true'
+org.jboss.jca.core.connectionmanager.pool.PoolStatisticsImpl
+```
+
+:::caution
+If the BCI-related option is changed, you have to **restart** the service. Even after a class has been instrumented, it needs to be registered in the tracing table. Accordingly, redefinition does not work during execution.
+:::
+
+#### Importing data sources into JMX
+
+<!-- 아래 명령어 내용 파악과 수정 필요 -->
+
+```bash
+If dbcp_pool_enabled==true, tomcat_ds_enabled=false
+If weblogic_pool_enabled== true, weblogic_ds_enabled=false
+```
+
+1.  Check the **option auto determination** details.
+
+2.  Declare the option value of the related pool to `false`. 
+
+3.  Change the DataSource-related option value to `true`. The default value is `false`.
+
+    ```bash title='DataSource 관련 옵션'
+    tomcat_ds_enabled=false
+    weblogic_ds_enabled=false
+    ```
+
+### ThreadPool counter
+
+ThreadPool counters are collected through the JMX Mbean data. This metric may not be collected in some environments, although collection is fine for many use cases such as Tomcat. 
+
+Additional settings are required for collection. The related settings are as follows:
+
+```ini title='whatap.conf' {1,3,5} showLineNumbers
+jmx_threadpool_objectname=Catalina:type=ThreadPool,name="http-bio-8080"
+// Set the name of JMX ThreadPool MBean
+jmx_threadpool_atter_activecount=connectionCount
+// Set the attribute representing the activecount value.
+jmx_threadpool_atter_queuesize=maxThreads
+// Set the attribute representing the maxThreads value.
+```
+
+Check the Mbean names such as JMX ThreadPool ObjectName and AttributeName through the JMX monitoring tool or see the Mbean documents for each WAS.
+
+:::note
+See the active WAS and framework-related [document](https://www.ibm.com/support/knowledgecenter/ko/SS7K4U_liberty/com.ibm.websphere.wlp.zseries.doc/ae/rwlp_mon_threadpool.html) and check the Mbean information.
+:::
+
+#### In case of using the Jconsole
+
+-   **ObjectName** : Catalina<br/>
+      **type** : ThreadPool<br/>
+      **name** : "http-bio-8080"<br/>
+      ![](https://img.whatap.io/media/agent_java/data/threadpool_jmx01.png)
+
+-   **ActiveName** : connectionCount<br/>
+      **QueueName** : maxThreads<br/>
+      ![](https://img.whatap.io/media/agent_java/data/threadpool_jmx02.png)
+
+#### Checking the result
+
+If the setting is finished, you can view the data from the counter as follows:
+
+![Performance counter - normal status](https://img.whatap.io/media/agent_java/data/threadpool_counter.png)
+
+## Apdex
+
+![](https://img.whatap.io/media/agent_php/data/tinified/apdex.png)
+
+Apdex (Appliccation Performance Index) is a performance metric that complies with the open standards. Apdex is based on the response time and is quantified as percentages of satisfied and accepted requests out of total requests. The Apdex graph has been added to the dashboard. 
+
+Apdex can be used as a metric for user satisfaction and have a value between 0 and 1.
+
+> (Number of satisfied cases + (Number of tolerating cases \* 0.5))/Total number of requests
+
+| Status             | Description                                                      |
+| ------------------ | ---------------------------------------------------------------- |
+| Satisfied (**S**)  | No problem with the work ≤ 1.2 secs (**S** as the default)       |
+| Tolerating (**T**) | Users feel delay but working is possible ≤ 4.8 secs (**S** \* 4) |
+| Frustrated (**F**) | Working is impossible > 4.8 secs (exceeds T and error)           |
+
+-   **whatap.apdex_time** <span class='type'>millisecond</span><br/>
+      Default `1200`<br/>
+      The default value of **S** can be changed in Agent CONF.

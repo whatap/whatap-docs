@@ -1,0 +1,16 @@
+-   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>
+    To record HTTP headers in the trace details, set it to `true`.
+
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
+    :::note
+    Set the security key to a 6-letter value in _`${WHATAP_AGENT_HOME}`/paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+    :::
+
+-   **profile_http_header_url_prefix** <span class='type'>String</span><br/>
+    It is used to define the prefix of URL to record HTTP header data in the trace details.
+
+-   **profile_http_parameter_url_prefix** <span class='type'>String</span><br/>
+    It is used to define the prefix of URL to record HTTP parameters in the trace details.

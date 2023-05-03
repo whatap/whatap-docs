@@ -1,0 +1,44 @@
+---
+id: aes-256-encryption
+title: AES 256 encryption
+description: It can encrypt the data collected by the WhaTap agent.
+tags:
+  - Java
+  - AES 256
+---
+
+The WhaTap application agent transfers the collected data after encryption. For this purpose, the XOR (Exclusive-OR) operation and Advanced Encryption Standard (AES) encryption are used. Encryption and decryption are performed by dividing plaintext into 128-bit units. To enhance security, the encryption can be extended up to 256 bits.
+
+The Java Cryptography Extension (JCE) supports 128 bits by default. To apply the AES 256, JCE must be updated.
+
+If you apply AES 256 in the default environment, the following error occurs.
+
+```bash
+Unsupported keysize or algorithm parameters.
+##Or
+Illegal key size or default parameters.
+```
+
+1.  Download the file for your version from the following links.
+
+    :::note
+
+    **Download versions for each Java version**
+
+    -   [JAVA 8](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
+    -   [JAVA 7](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
+    -   [JAVA 6](http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html)
+    -   [JAVA 5](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#jce_policy-1.5.0-oth-JPR)
+    -   [JAVA 1.42](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-plat-419418.html#7503-jce-1.4.2-oth-JPR)
+
+    :::
+
+2.  Overwrite the file in the _`$JAVA_HOME`/jre/lib/security_ path.
+
+3.  If JCE has been applied, add the following settings in _`${WHATAP_HOME}`/whatap.conf_.
+
+    ```ini title='whatap.conf'
+    cypher_level=256
+    ```
+
+4.  Once the application server has been restarted, the ACE 256 encryption is applied.

@@ -1,0 +1,32 @@
+## カラム情報の案内{#column-info}
+
+| 項目               | 説明                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| pid              | 프로세스 ID                                                                                                                   |
+| cpuusage         | CPU使用率                                                                                                                    |
+| cpu(xos)         | XOSをインストールした場合、収集されるCPUの使用率                                                                                               |
+| dataname         | 데이터베이스 이름                                                                                                                 |
+| application_name | 클라이언트 애플리케이션 이름                                                                                                           |
+| wait_event_type  | 백엔드가 대기 중인 이벤트 type                                                                                                       |
+| wait_event       | 백엔드가 현재 대기 중인 경우 대기 이벤트 이름                                                                                                |
+| runtime          | 現在COMMANDの遂行時間（秒）                                                                                                         |
+| query            | 실행되고 있는 statement, 리터럴 문자열을 분리한 SQL 문                                                                                     |
+| query_param      | `query`에서 분리한 리터럴 값                                                                                                       |
+| state            | スレッドの現在の状態（executing/updating/sending dataなど）                                                                             |
+| bind_query       | 쿼리에서 사용하는 Bind 변수                                                                                                         |
+| xact_start       | 해당 프로세스의 현재 트랜잭션이 시작된 시간(활성 트랜잭션이 없는 경우 null)                                                                             |
+| backend_start    | 이 프로세스가 시작된 시간, 즉 클라이언트가 해당 WAL(Write-Ahead Logging) 발신자에 연결된 시간                                                          |
+| client_addr      | 해당 WAL 발신자에 연결된 클라이언트의 IP 주소                                                                                              |
+| client_hostname  | 연결된 클라이언트의 호스트 이름(`client_addr`의 역방향 DNS 조회로 보고됨)                                                                         |
+| client_port      | 클라이언트가 해당 WAL 발신자와 통신하는 데 사용하는 TCP 포트 번호(유닉스 소켓을 사용하는 경우 -1)                                                              |
+| query_hash       | クエリのハッシュ値（WhaTap内部管理値）                                                                                                    |
+| query_start      | 현재 활성 상태인 쿼리가 시작된 시간(상태가 활성 상태가 아닌 경우 마지막 쿼리가 시작된 시간)                                                                     |
+| query_pre        | `PREPARE` 명령을 이용해 세션 프로세스에 저장한 SQL문과 PLAN                                                                                 |
+| rss(xos)         | Resident Set Size(RSS), 프로세스와 관련한 물리적 페이지 수                                                                               |
+| pss(xos)         | Proportional Set Size(PSS), USS(Unique Set Size) + (공유 페이지 / 공유하는 프로세스 수) <br/>프로세스 고유 메모리 사용량 + 하나의 프로세스가 차지하는 공유 메모리 비율 |
+| ioread(xos)      | 블록을 읽는 데 소요된 실제 시간(milliseconds)                                                                                          |
+| iowrite(xos)     | 블록을 쓰는 데 소요된 실제 시간(milliseconds)                                                                                          |
+| holder type      | holderセッションのtype                                                                                                          |
+| lock mode        | holder_mode                                                                                                               |
+| waiter type      | waiterセッションのtype                                                                                                          |
+| lock request     | waiter_mode                                                                                                               |

@@ -1,0 +1,64 @@
+---
+id: server-2.2.8
+title: Server Agent 2.2.8
+toc_max_heading_level: 2
+---
+
+Release date: 2022-11-29
+
+:::caution
+윈도우 모니터링 에이전트는 02시경 자동 재시작 오류로 오전 2시경 정지되고 Agent NoData 오탐이 발생할 수 있습니다. 2.2.8 버전을 사용하고 있다면 2.2.9 버전 이상으로 업데이트를 권장합니다. 설치 파일을 다시 다운로드 받은 다음, 해당 서버에서 재실행할 수 있습니다. 에이전트 삭제는 불필요합니다.
+:::
+
+## Enhancement in handling the Windows process monitoring owner name
+
+-   The Windows process monitoring owner name lookup API has been improved to reduce the call load through caching.
+
+## Enhancement in handling the Linux CPU IRQ collection error
+
+-   When collecting Linux CPU IRQs, the under-collecting error due to a code error when calculating IRQ has been fixed.
+
+## Download
+
+-   RPM (Red Hat/CentOS/Amazon linux)
+
+    -   6Server/6 
+        -   x86_64 http://repo.whatap.io/centos/6/x86_64/whatap-infra-2.2-8.x86_64.rpm 
+        -   i386 http://repo.whatap.io/centos/6/i386/whatap-infra-1.2-4.i386.rpm
+
+    -   7Server/7 
+        -   x86_64 http://repo.whatap.io/centos/7/x86_64/whatap-infra-2.2-8.x86_64.rpm 
+        -   aarch64 http://repo.whatap.io/centos/7/aarch64/whatap-infra-2.2-8.aarch64.rpm
+
+    -   8Server/8 
+        -   x86_64 http://repo.whatap.io/centos/8/x86_64/whatap-infra-2.2-8.x86_64.rpm 
+        -   aarch64 http://repo.whatap.io/centos/8/aarch64/whatap-infra-2.2-8.aarch64.rpm
+
+    -   9Server/9 
+        -   x86_64 http://repo.whatap.io/centos/9/x86_64/whatap-infra-2.2-8.x86_64.rpm 
+        -   aarch64 http://repo.whatap.io/centos/9/aarch64/whatap-infra-2.2-8.aarch64.rpm
+
+    -   Amazon Linux2
+        -   x86_64 http://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.2-8.x86_64.rpm 
+        -   aarch64 http://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.2-8.aarch64.rpm
+
+    -   SUSE 12
+        -   x86_64 http://repo.whatap.io/suse/12/x86_64/whatap-infra-2.2-8.x86_64.rpm
+
+-   DEB (Ubuntu/Debian)
+
+    -   Ubuntu 12 or later
+        -   amd64 http://repo.whatap.io/debian/unstable/whatap-infra_2.2.8_amd64.deb
+        -   arm64 http://repo.whatap.io/debian/unstable/whatap-infra_2.2.8_arm64.deb
+
+-   TXZ (Freebsd)
+    -   Freebsd 10 or later
+        -   http://repo.whatap.io/freebsd/10/whatap-infra-1.1.2.txz
+
+-   EXE (Windows)
+    -   Windows Server 2008 R2 and above
+        -   32/64bit http://repo.whatap.io/windows/whatap_infra.zip
+
+-   PKG (SPARC)
+    -   SUNOS 11 or later
+        -   SPARC http://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz

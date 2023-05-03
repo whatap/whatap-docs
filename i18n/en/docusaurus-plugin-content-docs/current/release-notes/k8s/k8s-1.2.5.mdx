@@ -1,0 +1,21 @@
+---
+id: k8s-1.2.5
+title: Kubernetes Agent 1.2.5
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+#### 2023년 4월 3일
+
+:::info
+
+Agent download: http://repo.whatap.io/docker/kube_mon_1.2.5.tar
+
+:::
+
+<p><Status>Fixed</Status> Dead(Complete)상태의 파드(POD)가 2,000개 이상 증가할 때 중지된 컨테이너의 성능을 조회합니다. 이때 발생하는 다음의 문제를 개선했습니다.</p>
+
+-   작동 중인(Running) 컨테이너 성능 정보 수집 지연
+-   메모리 과다 사용 증가 현상

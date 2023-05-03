@@ -1,0 +1,119 @@
+---
+id: install-agent
+title: インストール
+description: NCloudアイテムのインストールを説明します。
+tags:
+  - インストール
+  - Oracle Cloud Monitor
+  - クラウド
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Oracle Cloud Monitorは、API連動を通じてメトリクスを周期的に収集します。収集を希望するサービスに該当するOracle Cloud Monitorネームスペースを5分周期でご希望のスタットを取捨選択して収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Oracle Cloud API登録時に必要なssh公開キーを自動生成し、安全かつ便利に使用できます。 
+
+{@include: ../getting-started/_create-project-cloud.mdx}
+
+## モニタリング手順
+
+<!-- 
+1. 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Oracle Cloud Monitor 사용 상태로 생성하세요.
+-->
+
+1.  Oracle Cloud認証情報を入力してください。
+2.  Oracle Cloud Monitoringネームスペースおよび収集サイクルを選択してください。
+3.  リージョン、メトリクス、スタットなどを選択してください。
+
+:::note
+インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。 インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://www.oracle.com/kr/cloud/price-list/)で確認してください。
+:::
+
+### 認証情報入力
+
+![OCI Monitor]（/img/oci-install.png）
+
+1.  **RSA Public Key**を生成後、メモ帳にコピーしてください。 
+    :::note
+    以後、**_インストール案内_**画面で**_RSA Public Key生成_**ボタンを選択すると、生成されたKEYをいつでも確認できます。
+    :::
+2.  Oracle CloudコンソールのIdentity & Securityメニューに移動してください。 
+3.  Identity & Securityメニュー下段のGroupsを選択してモニタリングに使用する**Group**を新規作成または選択してください。
+4.  Identity & Securityメニュー下段のPoliciesを選択してモニタリング用の**Policy**を生成してください。
+    -   Create Policyを選択して名前、DescritionおよびCompartmentを入力してください。
+    -   Policy BuilderでShow Manual Editorを選択し、以下の権限を入力した後Createを選択してください。
+        > -   Allow group {グループ} to read metrics in compartment {コンパートメント}
+        > -   Allow group {グループ} to inspect metrics in compartment {コンパートメント}
+5.  Identity & Securityメニュー下段のUsersを選択して**User**を生成または選択してください。
+    -   Create Userを選択して新規Userを生成したりUserを選択してください。
+    -   User Details画面で、3で選択したGroupにそのユーザーを追加してください。
+    -   左下のAPI Keysを選択してください。
+    -   Add API Keyボタンを選択してください。
+    -   ラジオボタンのPaste Public Keyを選択し、2段階で受け取った**RSA Public Key**を入力してください。
+    -   追加完了時、**User**、**Tenancy**情報を画面で確認することができます。この情報をメモ帳にコピーしてください。
+6.  Identity & Securityメニュー下段のCompartmentsを選択して、モニタリングするCompartmentの**OCID**を確認し、メモ帳にコピーしてください。
+7.  WhaTap**_管理_** > **_エージェントのインストール_**画面に戻り、5で確認した**_Tenancy_**と**_User_**及び6で確認した**_CompartmentID_**を入力してください。
+8.  **_確認_**ボタンを選択してください。
+
+### ネームスペースおよび収集サイクルの選択
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+#### WhaTap収集サイクル
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### ネームスペース
+
+-   API Gateway
+-   Bastion
+-   Big Data
+-   Blockchain Platform
+-   Block Volume
+-   Events
+-   Compute
+-   Compute Infrastructure Health
+-   ComputeAgent
+-   Data TransferData Flow
+-   Database Migration
+-   Data TransferDatacatalog
+-   Data TransferDataintegration
+-   DevOpsDevops Build
+-   DevOpsDevops Code Repos
+-   DevOpsDevops Deployment
+-   Digital Assistant
+-   DNS
+-   Email Delivery
+-   Functions
+-   NetworkingFastconnect
+-   File Storage
+-   GoldenGate
+-   Health Checks
+-   ComputeNstancepools
+-   IntegrationNtegration
+-   Java Management
+-   VaultKms Keys
+-   Load Balancing
+-   Logging Analytics
+-   Management Agent
+-   IntegrationMonitoring Metrics
+-   NoSQL
+-   Notifications
+-   Object Storage
+-   Container Engine for Kubernetes
+-   Operations Insights
+-   OS Management
+-   VaultSecrets
+-   Service Connector Hub
+-   NetworkingService Gateway
+-   Streaming
+-   NetworkingVcn
+-   NetworkingVpn
+-   Vulnerability Scanning
+-   WAF
+
+### リージョン、メトリクス、スタット選択
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+![Oracle Cloud Monitor - Region, Metric, Stats](https://img.whatap.io/media/images/oci_region.png)

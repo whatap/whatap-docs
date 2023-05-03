@@ -1,0 +1,149 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapのTelegrafエージェント利用のための基本インストール方法を案内します。
+tags:
+  - Telegraf
+  - インストール
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+WhaTapのTelegrafエージェント利用のための基本インストール方法を案内します。
+
+Telegrafから収集するメトリクスをWhaTap収集サーバーに渡すことができます。収集されたデータはWhaTapのプロジェクト内部で確認できます。
+このページでは、whatap-telegrafエージェントをインストールし、Telegrafから受け取ったデータを収集サーバーに中継する方法について説明します。 
+
+既にインストールされているTelegrafの「socket_writer output plugin」を活性化し、whatap-telegraf（Local TCP）エージェントにデータを渡します。
+
+WhaTapサービスを使用するには、[会員登録]（https://www.whatap.io/ko/signup/）後にプロジェクトを作成し、対象サーバーにエージェントをインストールする必要があります。 会員登録に関する詳細については [次の文書]（../account/account-manage）を参考にしてください。
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## インストール手順とファイル構成
+
+1.  WhaTap **リポジトリ**をインストールしてください。
+2.  whatap-telegraf **Linuxパッケージ**（yum, apt-get）を設置してください。
+3.  **プロジェクトアクセスキー** および **WhaTapサーバー情報**を設定してください。
+4.  Telegrafの「socket_writer output plugin」を設定し、データを連動させてください。
+
+<details>
+<summary>Telegrafエージェントファイル構成</summary>
+
+-   **whatap_telegraf**\
+      サービスの実行ファイルです。Telegrafから渡された情報を収集サーバーに送信するプログラムです。       
+-   **/etc/init.d/whatap-telegraf**(FreeBSD /usr/local/etc/whatap_telegraf)\
+      サービススクリプトです。
+-   **whatap.conf**\
+      設定ファイルです。 収集サーバーのアドレスとサーバーのプロジェクトアクセスキーが入力されるファイルです。
+-   **whatap-telegraf-#.log**\
+      エージェントのログファイルです。（_/usr/whatap/telegraf/logs_）
+
+</details>
+
+## パッケージインストール
+
+<Tabs>
+<TabItem value="rc" label="Red Hat/CentOS">
+
+1.  WhaTap **リポジトリ**をインストールしてください。
+    ```bash title=SH
+    $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+    ```
+2.  次のコマンドを使用して**パッケージ**をインストールしてください。
+    ```bash title=SH
+    $ sudo yum install whatap-telegraf
+    ```
+3.  **設定スクリプト**を実行してサービスを開始します。
+    ```bash title=SH
+    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTapサーバーアドレス]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+    sudo service whatap-telegraf restart
+    ```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+1.  WhaTap **リポジトリ**をインストールしてください。
+    ```bash title=SH
+    $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+    $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+    $ sudo dpkg -i whatap-repo_1.0_all.deb
+    $ sudo apt-get update
+    ```
+2.  次のコマンドを使用して**パッケージ**をインストールしてください。
+    ```bash title=SH
+    $ sudo apt-get install whatap-telegraf
+    ```
+3.  **設定スクリプト**を実行してサービスを開始します。
+    ```bash title=SH
+    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTapサーバーアドレス]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+    sudo service whatap-telegraf restart
+    ```
+
+</TabItem>
+<TabItem value="al" label="Amazon Linux">
+
+1.  WhaTap **リポジトリ**をインストールしてください。
+    ```bash title=SH
+    $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ```
+2.  次のコマンドを使用して**パッケージ**をインストールしてください。
+    ```bash title=SH
+    $ sudo yum install whatap-telegraf
+    ```
+3.  **設定スクリプト**を実行してサービスを開始します。
+    ```bash title=SH
+    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTapサーバーアドレス]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+    sudo service whatap-telegraf restart
+    ```
+
+</TabItem>
+<TabItem value="fb" label="FreeBSD">
+
+1.  WhaTap **リポジトリ**をインストールしてください。
+    ```bash title=SH
+    $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
+    $ pkg install whatap-telegraf-0.0.4.txz
+    ```
+2.  **設定スクリプト**を実行してサービスを開始します。
+    ```bash title=SH
+    echo "license=[発行されたプロジェクトアクセスキー]" | tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTapサーバーアドレス]" | tee -a /usr/whatap/telegraf/whatap.conf
+    sudo service whatap_telegraf restart
+    ```
+
+</TabItem>
+</Tabs>
+
+## Telegraf連携
+
+_Telegraf.conf_に「socket_writer output plugin」設定を行い、収集された情報をwhatap-telegrafに渡します。
+
+```toml title='TOML'
+# # Generic socket writer capable of handling multiple socket types.
+ [[outputs.socket_writer]]
+
+#   ## URL to connect to
+    address = "tcp://127.0.0.1:6600"
+
+#   # data_format = "influx"
+    data_format = "json"
+```
+
+-   `[[outputs.socket_writer]]`のコメントを解除します。
+-   address項目にtcp接続を設定します。
+-   データタイプは、json形式として設定します。
+
+Telegrafエージェントのインストールを完了しました。[次の文書]（agent-troubleshooting）で、インストール時のトラブルを解決する方法を確認してください。

@@ -1,0 +1,41 @@
+---
+id: agent-name
+title: Agent name identification
+description: The following explains how to set the agent name in order to identify the monitoring target.
+tags:
+  - Python
+  - Agent name
+  - Configuration
+---
+
+{@include: ../common-items/_apm-name-description.mdx}
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+:::note
+
+-   In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
+    :::
+
+<!-- 와탭은 애플리케이션 서버 식별을 위해 애플리케이션 서버 종류, 서버 IP, 서비스 포트를 조합하여 고유 식별자로 사용합니다. -->
+
+-   **object_name**<span class='type'>String</span><br/>
+      Default `{type}-{ip2}-{ip3}-{process}`\
+      The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME. 
+
+    | Name       | Description                                   |
+    | ---------- | --------------------------------------------- |
+    | {type}     | Use the value set in whatap.app_name.         |
+    | {ip#}      | When IPs are divided, the #th digit is used.  |
+    | {process}  | Use the value set in whatap.app_process_name. |
+    | {hostname} | The server host name is used.                 |
+
+<!-- 문의 -->
+
+-   **app_name**<span class='type'>String</span><br/>
+      The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.
+
+-   **app_process_name**<span class='type'>String</span><br/>
+      It is the application process name used in the agent naming (ONAME) scheme to identify applications. 
+
+      Set the target process to collect CPU, heap memory, and such of the application server. It is a value corresponding to `{process}` in `object_name`. 

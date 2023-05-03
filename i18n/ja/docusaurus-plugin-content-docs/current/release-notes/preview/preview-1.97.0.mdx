@@ -1,0 +1,326 @@
+---
+id: preview-1.97.x
+title: Preview 1.97.X
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+:::note
+
+[https://preview.whatap.io]（https://preview.whatap.io）で、次の新機能と修正した内容を事前に体験することができます。 
+
+:::
+
+## Preview-1.97.14
+
+2023年3月27日
+
+### 「共通」
+
+<p><Status>Fixed</Status> MXQLデータ照会後、CSVがダウンロードされない問題を修正</p>
+
+## Preview-1.97.12
+
+2023年3月24日
+
+### 「共通」
+
+-   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント設定</UI> メニューでログイベントを追加する時の <UI>イベント発生一時中止</UI> 項目に対する説明文の修正
+
+-   <Status>Change</Status> 画面左サイドバーで <img src='/img/ico-search.svg' alt='검색 아이콘' /> 検索機能利用時のエージェント検索照会性能の改善件のロールバック
+
+### 「Server」
+
+<p><Status>Fixed</Status> <UI>警告通知メニュー</UI>で通知をコピーするとき、<UI>通知ポリシーコピー</UI> ウィンドウで選択できるプロジェクト一覧の一部が欠落しているバグの修正</p>
+
+## Preview-1.97.11
+
+2023年3月24日
+
+### 「Database」
+
+<p><Status>Fixed</Status> <UI>警告通知</UI> &gt; <UI>ファイルログ通知</UI> メニューでログが発生していない時間帯を照会する場合、以前のログデータが残っている現象を修正</p>
+
+## Preview-1.97.10
+
+2023年3月23日
+
+### 「共通」
+
+#### 利用履歴
+
+**_プロジェクト有料プラン転換_** メニューに次の機能を追加・修正します。
+
+-   <Status>Change</Status> ユーザーの利便性のためのUI改善
+-   <Status>Feature</Status> プロジェクトを複数選択して有料プランに転換する機能を追加
+-   <Status>Change</Status> <UI>月間予想費用</UI> カラムで製品別の詳細を確認できるように修正
+
+#### 管理
+
+<p><Status>Change</Status> <UI>アカウント情報管理</UI> &gt; <UI>会員退会</UI> メニューを利用して会員退会する場合の注意事項の最新化及び退会関連事項（未納金、権限情報）などの確認手続きを追加</p>
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> &gt; <UI>コンテナマップ</UI> メニューで <img src='/img/ico-reset.svg' alt='리셋 아이콘' /> <UI>リセット</UI> ボタンをクリックするとオプションが初期化されない現象を修正</p>
+
+### 「AWS」、「Azure」、「NCP」、「OCI」
+
+-   <Status>Change</Status> プロジェクト内のサービスごとに収集周期を設定できるように機能とUIを修正
+-   <Status>Feature</Status> 活性化されたサービスのみを表示するフィルターを追加
+-   <Status>Feature</Status> サービス名の検索ウインドウを追加
+
+## Preview-1.97.9
+
+2023年3月22日
+
+<!--
+### `AWS`
+
+<p><Status>New</Status> <b>AWS Log</b> 신규 상품을 추가했습니다. 많은 이용 부탁드립니다! 자세한 내용은 <a href='../../aws-log/introduction' target='_blank'>다음 문서</a>를 참조하세요.</p>
+-->
+
+### 「共通」
+
+-   <Status>Fixed</Status> 画面左サイドバーで <img src='/img/ico-search.svg' alt='검색 아이콘' /> 検索機能利用時のエージェント検索照会性能の改善
+
+-   <Status>Change</Status> <UI>ログ</UI> > <UI>ログトレンド</UI> メニューで照会時間を変更した時に、選択したフィルターに対する結果がない場合、上記のフィルターを解除できるよう改善
+
+-   <Status>Deprecate</Status> <UI>統合ダッシュボード</UI>、<UI>統合メトリックボード</UI> メニューは2023年5月1日付で左サイドメニューから除去、サイトマップへ移転予定に関する案内を表示
+
+## Preview-1.97.8
+
+2023年3月20日
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> &gt; <UI>コンテナマップ</UI>の <UI>フィルター</UI> オプションで <UI>含む</UI>を選択すると、部分一致するコンテナが表示されない現象を修正</p>
+
+## Preview-1.97.7
+
+2023年3月17日
+
+### 「共通」
+
+<!--
+#### 계정 정보 관리
+
+<p><Status>Feature</Status> <UI>계정 정보</UI> &gt; <UI>회원 탈퇴</UI> 유의 사항 최신화 및 회원 탈퇴 관련 확인 절차 추가</p>
+-->
+
+#### MXQLデータ照会
+
+<p><Status>Fixed</Status> <UI>CSVダウンロード</UI>機能が正常に作動しないため、ダウンロードボタンを除去して再デプロイする予定</p>
+
+<!-- 
+### `RUM`
+
+#### Flex 보드
+
+- <Status>Fixed</Status> 대시보드의 URL 그룹 필터가 정상 적용되지 않는 문제 수정 및 필터 위치 이동
+- <Status>Fixed</Status> 환경별 대시보드의 브라우저별, OS별, 디바이스별 바(bar) 차트 위젯 MXQL 버그 수정
+- <Status>Fixed</Status> 일부 위젯 중 필드 기준으로 차트 컬러가 설정되지 않는 위젯 수정
+-->
+
+#### 分析
+
+-   <Status>Fixed</Status> スタック情報が正常に表示されない問題を修正
+
+## Preview-1.97.6
+
+2023年3月14日
+
+<p><Status>Fixed</Status> MXQLクエリ内のフィールド名に特殊文字が入る場合、MXQLデータ呼び出し時に発生するバグの修正のため、MXQLクエリ生成ロジックを修正</p>
+
+## Preview-1.97.5
+
+2023年3月14日
+
+<p><Status>Fixed</Status> <UI>管理</UI> &gt; <UI>メンテナンス計画</UI> メニューで <UI>毎月</UI> タブをクリックすると発生するホワイトアウト現象を修正</p>
+
+## Preview-1.97.4
+
+2023年3月14日
+
+### 「共通」
+
+<p><Status>Feature</Status> <UI>管理</UI> &gt; <UI>プロジェクト管理</UI> メニューで警告通知の言語選択オプションを追加</p>
+
+### 「Server」
+
+-   <Status>Feature</Status> <UI>サーバー一覧</UI> &gt; <UI>サーバー詳細</UI> メニューで <UI>プロセス</UI> テーブルのソートオプションとして <UI>個数の降順</UI> を追加
+
+-   <Status>Feature</Status> <UI>警告通知</UI> &gt; <UI>イベント受信設定</UI> メニューの <UI>3rd パーティープラグイン</UI> 設定に <UI>エスカレーション</UI>オプションを追加
+
+    -   Escalationを<UI>エスカレーション</UI>に翻訳
+    -   オプションを修正すると有効性チェックを進めるように修正
+    -   オプション値を変更して保存しない場合、ボタンの色を変更するように修正
+
+## Preview-1.97.2
+
+2023年3月13日
+
+<p><Status>Fixed</Status> <UI>警告通知</UI> &gt; <UI>イベント受信設定</UI> メニューで登録したモバイルデバイスの数が表示されないバグを修正</p>
+
+## Preview-1.97.1
+
+2023年3月9日
+
+-   <Status>Fixed</Status> <code>Server</code> プロジェクトの <UI>ログ設定</UI> メニューのエージェント設定オプションを修正
+
+-   <Status>Fixed</Status> チャンネルトーク > WhaTap支援チームの招待機能が動作しないバグを修正
+
+    :::note
+
+    WhaTap支援チームの招待ボタンは、**メンバー管理** 権限を保有しているユーザーに限って表示されます。
+
+    :::
+
+-   <Status>Fixed</Status> <code>Server</code> プロジェクトの <UI>ダッシュボード</UI> > <UI>リソースボード</UI> メニューで <b>Top N イコライザー</b> チャートの画面サイズが大きい場合、Y軸が長く表示される現象を修正
+
+## Preview-1.97.0
+
+2023年3月8日
+
+### 「共通」
+
+#### User Interface（UI）
+
+ユーザーの満足度を高めるために、次のようにユーザーインターフェースデザインを改善します。
+
+-   <Status>Change</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI> メニューのUI改善
+
+    -   プロジェクト、製品別にグループ化された請求書プレビュー情報の提供
+    -   グループ化されたデータの関連商品情報及び課金の集計量、請求額の合計などの確認が可能
+
+-   <Status>Change</Status> 画面上段に位置する「メニューパス」を「メニュー名」として表示するように変更
+
+    -   変更前：上位パス > メニュー名
+    -   変更後：メニュー名
+
+-   <Status>Change</Status> 画面右上のWhaTap技術文書のリンクボタン追加およびチャンネルトーク内の技術文書リンクを除去
+
+-   <Status>Fixed</Status> サービスロゴの横のブラウザー時間の不一致通知アイコンの位置を修正
+
+-   <Status>Fixed</Status> プロジェクトのないグループを選択すると、プロジェクト作成ページに移動しないように修正
+
+#### Flexボード
+
+-   <Status>Change</Status> ダッシュボードと一覧を画面に読み込む時に、読み込みインジケーターを適用
+
+-   <Status>Feature</Status> Seriesウィジェットタイプのチャート設定で凡例表示を追加
+
+-   <Status>Feature</Status> Seriesウィジェットタイプに累積チャートタイプを追加
+
+-   <Status>Feature</Status> Seriesウィジェットタイプのチャート設定でチャート色基準のオプションを追加
+
+    -   従来：タグを基準にチャートの色を表現
+    -   追加：フィールドを基準にチャートの色を表示するオプション
+
+-   <Status>Feature</Status> DB製品群で次のウィジェットテンプレートを追加
+
+    -   **DB共通**
+        -   CPU %（xos）ウィジェット
+        -   Memory %（xos）ウィジェット
+    -   **MySQL**
+        -   スロークエリ
+    -   **PostgreSQL**
+        -   スロークエリ
+        -   PostgreSQL Wait Event件数ウィジェット
+        -   PostgreSQL Client Ip件数ウィジェット
+        -   PostgreSQL統計テーブル
+        -   PostgreSQLアクティブセッション件数
+        -   PostgreSQLアクティブセッションテーブル
+
+#### ログ
+
+-   <Status>Change</Status> <UI>ログ</UI> メニューの機能を容易に理解するため、メニュー名を変更
+
+    -   <UI>ライブTail</UI> → <UI>ライブテール</UI>
+    -   <UI>探索機</UI> → <UI>ログトレンド</UI>
+    -   <UI>検索機</UI> → <UI>ログ検索</UI>
+
+-   <Status>Change</Status> <UI>ログ検索</UI> メニューで照会内容を <UI>Timestamp</UI> を基準にソートする機能（<UI>新しい順</UI>/<UI>古い順</UI>）に変更
+
+-   <Status>Feature</Status> <UI>ログトレンド</UI>から検索キーを最大2つまで選択できるように修正（検索値は制限なし）
+
+-   <Status>Change</Status> <code>Server</code> プロジェクトの <UI>ログ設定</UI> メニューでエージェント設定オプションを変更
+
+#### 警告通知
+
+-   <Status>Feature</Status> <UI>イベント設定</UI> メニューで <UI>エージェント重複通知</UI> オプションを追加
+
+    > モニタリング中のエージェントのうち、同じIDを設定したエージェントが2つ以上ある場合、メトリクスを重複して収集することによって発生する警告通知です。 エージェント名が重複して設定されていないかエージェント設定で関連オプションを確認してください。ブルー/グリーンのようなデプロイ状況でエージェントが重複して警告通知が発生した場合、この機能を利用することをお勧めします。 同名のエージェントが同時に2つ以上起動した場合、選択した時間中は通知が発生しません。
+
+-   <Status>Feature</Status> <UI>イベント受信設定</UI> メニューで <UI>受信タグの未設定通知を受け取る</UI> オプションを追加
+
+    > **_イベント受信タグ_**が設定されていない警告通知を受信しない場合は、そのオプションを選択してください。
+
+#### 管理
+
+-   <Status>Feature</Status> <b>ログ照会</b> 権限の追加
+
+-   <Status>Fixed</Status> メンバー招待ウィンドウで <b>メンバー管理</b> 権限をオフできないバグを修正
+
+#### 製品カタログ
+
+-   <Status>Feature</Status> プロジェクト追加時 <UI>プロジェクトグループ</UI> 項目にグループ検索機能を追加
+
+-   <Status>Change</Status> 組織を選択した状態でプロジェクトを追加する場合 <UI>プロジェクトグループ</UI> 項目を必須選択するように変更
+
+### 「Server」
+
+-   <Status>Feature</Status> <UI>警告通知</UI> > <UI>イベント記録メニュー</UI>に <UI>最後の変更時刻表示</UI> オプションを追加
+
+-   <Status>Change</Status> <UI>サーバ設定</UI> > <b>リモートファイルビューアー</b> メニューの名称を <UI>エージェント対数ビューアー</UI>に変更
+
+### 「Application」
+
+#### アプリケーションダッシュボード
+
+-   <Status>Fixed</Status> ヒートマップウィジェットでヤード中断以後データ呼び出しが中断される現象を修正
+
+-   <Status>Fixed</Status> アクティブトランザクションウィジェットですべてのエージェントを非活性化する場合、チャートを更新しない問題を修正
+
+#### 統計/レポート
+
+<p><Status>Change</Status> <UI>統計</UI> メニューで照会時間の範囲を最大62日から <b>最大31日</b>に変更</p>
+
+### 「Container」
+
+<p><Status>Change</Status> <UI>管理</UI> > <UI>エージェントインストール</UI> ページUIおよび内容改善</p>
+
+### 「Database」
+
+#### データベース共通
+
+-   <Status>Feature</Status> <UI>統計/レポート</UI> > <UI>SQL統計</UI> メニューに次のテーブル機能を追加
+
+    -   テーブルのカラムサイズの調整を可能に
+    -   ページを離脱しても調整したカラムのサイズが解除されないように設定を保存
+    -   テーブルヘッダーの各カラム項目を選択すると、選択基準に従って一覧をソート
+
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI> メニューの案内メッセージの位置を修正
+
+#### PostgreSQL、MySQL
+
+<p><Status>Feature</Status> <UI>統計/レポート</UI> > <UI>データベースサイズ</UI> 新規UI適用</p>
+
+#### Tibero
+
+<p><Status>Change</Status> <UI>統計/レポート</UI> > <UI>テーブルスペースサイズ</UI> メニューでテーブルスペースの使用量に応じたプログレスバーの色を変更</p>
+
+### 「AWS」
+
+<p><Status>Fixed</Status> AWSプロジェクトの <UI>イベント記録</UI> メニューを選択すると、関連のないスナップショットページに移動するバグ修正</p>
+
+### 「RUM」
+
+<p><Status>Feature</Status> <UI>分析</UI> > <UI>エラー追跡</UI> メニュー追加</p>
+
+> ウェブアプリケーションブラウザーレベルで発生するエラーを収集・確認できます。

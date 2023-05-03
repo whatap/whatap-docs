@@ -1,0 +1,27 @@
+---
+id: dashboard
+title: 項目別ダッシュボードメニュー
+description: WhaTapモニタリングダッシュボードは、プロジェクトの全体的なステータスを一目で確認する機能を提供します。
+tags:
+  - クラウド
+  - Amazon CloudWatch
+  - ダッシュボード
+  - UI
+---
+
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、**_プロジェクトメニュー_**の下位にある**_Amazon CloudWatch_**メニューからアイテム別ダッシュボードにアクセスしてください。
+
+## Amazon CloudWatch
+
+-   **_EC2_**, **_EBS_**, **_ELB_**, **_AutoScaling_**, **_ElasticBeanstalk_**, **_ElastiCache_** サービスダッシュボードを提供します。
+    ![cloudwatch ec2](/img/aws-cloudwatch-ec2.png)
+-   ネームスペースは、WhaTapメトリクス**カテゴリ**で収集されます。 表記形式はAmazon CloudWatchネームスペースを**小文字**に変更し、'/'を'**\_**'に変更します。
+    > 例）AWS/EC2 → **_aws_ec2_**
+-   指標はWhaTap**メトリクス**として収集されます。 表記形式は「Cloud Watch Metric.Stat」です。
+    > 例）**_CPUUtilization.Average_**
+
+:::note
+
+-   収集されるAmazon Cloud Watch指標は[次の文書](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html)を参照してください。
+-   WhaTapが提供するテンプレートダッシュボードの他に、カスタム統合ダッシュボードである[Flexboard]を作成して活用してみてください。
+    :::

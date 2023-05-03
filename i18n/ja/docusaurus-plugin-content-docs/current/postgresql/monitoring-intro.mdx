@@ -1,0 +1,63 @@
+---
+id: monitoring-intro
+title: PostgreSQLモニタリング
+description: WhaTapデータベースモニタリングサービス（DBX）は、Queryベースでデータを収集し、性能モニタリングサービスを提供します。
+displayed_sidebar: postgreSidebar
+hide_table_of_contents: false
+tags:
+  - PostgreSQL
+  - データベースモニタリング
+  - データベース
+  - モニタリング
+  - DBX
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import RdsCont from '../common-items/_import_db-specification-rds.mdx';
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+
+{@include: ../common-items/_db-introduction-desc.mdx} 
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/db/DB_01_instanceMonitoring.mp4}
+
+## PostgreSQLモニタリングの特長
+
+<Xclude product='mysql-rds'>
+  <CommonCont />
+</Xclude>
+
+<InDoc product='mysql-rds'>
+  <RdsCont/>
+</InDoc>
+
+{@include: ../common-items/_db-specification.mdx}
+
+## 対応機能
+
+次は利用可能な機能です。他の製品と対応機能について比較したい場合は、[次の文書]（../getting-started/support-env#compare-db）を参考にしてください。
+
+| カテゴリ       | 機能区分                            |                           PostgreSQL                           |
+| ---------- | ------------------------------- | :------------------------------------------------------------: |
+| Monitoring | Instance List                   |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Instancs Monitoring             |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Multi DataBase (tenant)         | <span class='emoji-ok'>✅</span><br/>一部のメトリクスに限ってmultidb stat可能 |
+| ^          | Slow Query                      |                 <span class='emoji-ok'>✅</span>                |
+| Analysis   | Trends                          |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Trends Compare                  |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Lock Tree                       |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Parallel Query Tree             |                 <span class='emoji-no'>❌</span>                |
+| ^          | Dead Lock                       |                 <span class='emoji-no'>❌</span>                |
+| ^          | DB Parameter                    |                 <span class='emoji-ok'>✅</span>                |
+| Statistics | SQL Stat                        |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Table Size                      |                              対応予定                              |
+| ^          | Database(TableSpace) Size       |                 <span class='emoji-ok'>✅</span>                |
+| ^          | SGA Size                        |                 <span class='emoji-no'>❌</span>                |
+| Report     | Daily / Weekly / Monthly Report |                 <span class='emoji-ok'>✅</span>                |
+| Event      | Event List                      |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Event Stat                      |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Event Setting                   |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Notification                    |                 <span class='emoji-ok'>✅</span>                |
+| Management | Agent Setup                     |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Agent List                      |                 <span class='emoji-ok'>✅</span>                |
+| ^          | Project Management              |                 <span class='emoji-ok'>✅</span>                |

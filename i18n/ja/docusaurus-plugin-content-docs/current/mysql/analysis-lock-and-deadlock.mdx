@@ -1,0 +1,36 @@
+---
+id: analysis-lock-and-deadlock
+title: ロックツリー & デッドロック
+description: 1日に発生したロックの推移を分析し、デッドロック状態のクエリを確認できます。
+tags:
+  - MySQL
+  - データベース
+  - Lock
+  - Dead Lock
+  - ロックツリー
+  - デッドロック
+---
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import InDoc from '@site/src/components/InDoc.js';
+
+<!-- 개요 -->
+
+{@include: ../common-items/_analysis-lock-desc.mdx}
+
+## ロックツリー
+
+{@include: ../common-items/_db-locktree-desc.mdx} 
+
+### 基本画面案内
+
+{@include: ../common-items/_db-locktree-using-basic.mdx}  
+
+<!-- 락트리 컬럼 정보 -->
+
+{@include: ../common-items/_db-locktree-column-info.mdx}  
+
+<!-- 데드락 -->
+
+{@include: ../common-items/_db-deadlock-desc.mdx}  

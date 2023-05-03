@@ -1,0 +1,99 @@
+:::caution
+LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
+:::
+
+### ログモニタリング機能の活性化
+
+-   **logsink_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`false`<br/>
+      ログモニタリング機能をアクティブにします。
+
+-   **logsink_stdout_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      Javaアプリケーションで発生するSystem.outログを収集するかどうかを設定します。
+
+-   **logsink_stderr_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      Javaアプリケーションで発生するSystem.errログを収集するかどうかを設定します。
+
+-   **logsink_logback_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      logbackフレームワークログを収集するかどうかを設定します。
+
+-   **logsink_log4j_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      log4jフレームワークログを収集するかどうかを設定します。
+
+-   **logsink_tomcat_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      Tomcatログを収集するかどうかを設定します。
+
+-   **logsink_custom_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      ユーザーカスタムログを収集するかどうかを設定します。
+
+### フレームワークログ内容の収集
+
+フレームワークで収集するログをモニタリングするには、モジュールからログをインターセプトするための設定とプラグインを追加する必要があります。フレームワークで収集するログの基本カテゴリ名を`AppLog`に設定します。デフォルト値は、`hooklog_enabled`オプションの設定と同じです。
+
+`hooklog_enabled`値を変更すると、再起動が必要です。`hooklog_enabled` のデフォルト値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`として設定され`hooklog_logback_enabled`も`true`に設定されます。
+
+-   **hooklog_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`logsink_enabled`<br/>
+      ログ追跡をアクティブにするかどうかを設定します。
+
+-   **hooklog_logback_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`hooklog_enabled`<br/>
+      logbackフレームワークでのログ収集を追跡する機能をアクティブにするかどうかを設定します
+
+-   **hooklog_log4j_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`hooklog_enabled`<br/>
+      log4jフレームワークでのログ収集を追跡する機能をアクティブにするかどうかを設定します
+
+-   **hooklog_tomcat_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`hooklog_enabled`<br/>
+      Tomcatログ追跡をアクティブにするかどうかを設定します。
+
+-   **hooklog_custom_methods**<br/>
+      ユーザーカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用してください。
+    ```ini title='예시'
+    hooklog_custom_methods=com.greatshop.common.Log.print
+    ```
+
+### ログ転送の設定
+
+-   **logsink_queue_size** <span class='type'>Int</span><br/>
+      デフォルト値`1000`<br/>
+      ログ転送時のキューサイズ設定です。
+
+-   **logsink_line_size** <span class='type'>Int</span><br/>
+      デフォルト値`512`<br/>
+      ログ転送時の単一ラインの最大サイズ設定です。
+
+### ログの圧縮伝送
+
+-   **logsink_zip_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`true`<br/>
+      収集したログデータを圧縮転送できます。
+
+-   **debug_logsink_zip_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`false`<br/>
+      ログデータを圧縮して転送するときにデバッグするかどうかを設定します。関連情報をエージェントログに表示します。
+
+-   **logsink_zip_min_size** <span class='type'>Int</span><br/>
+      デフォルト値`100`<br/>
+      ログを圧縮する時、転送する最小サイズを設定します。転送データが100bytes以下の場合、データを圧縮しません。
+
+-   **logsink_max_buffer_size** <span class='type'>Int</span><br/>
+      デフォルト値`65536`<br/>
+      収集したログデータのサイズが設定した値を超えると、データをサーバーに転送します。
+
+-   **logsink_max_wait_time** <span class='type'>Int</span><br/>
+      デフォルト値`2000`<br/>
+      収集したログデータをまとめて転送するために待機する最大時間を設定します。 設定した値を超えると、データがサーバーに転送されます。
+
+-   **logsink_zip_libpath** <span class='type'>String</span><br/>
+      ログデータを圧縮転送する時、圧縮アルゴリズムの変更が可能です。 基本アルゴリズムはGZIPです。
+    ```ini title='예시'
+    logsink_zip_libpath=/whatap/whatap-logsink-lz4-1.7.0.jar
+    ```

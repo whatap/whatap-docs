@@ -1,0 +1,340 @@
+---
+id: install-aws-log
+title: Installation
+description: The following guides you to the basic installation method for using the WhaTap AWS log service.
+tags:
+  - AWS Log
+  - Installation
+---
+
+import TR from '@site/src/components/TR';
+
+{@include: ../getting-started/_how-to-start-intro.mdx} 
+
+## Preliminary checking
+
+To collect AWS logs, additional resources are required. WhaTap provides **WhatTap Forwarder** through the AWS Lambda function so that log information output from your AWS environment can be obtained and transmitted to the WhaTap collection server. Use AWS CloudFormation to run **Whatap Forwarder** in your AWS environment.
+
+**WhatTap Forwarder** depends on the lifecycle of the AWS Lambda function. Concurrency constraints can be overcome through control factors. Adjust the following control factors depending on the number of logs of your environment.
+
+<!-- 
+AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 로그 정보를 입수 후 와탭 수집 서버로 전송할 수 있도록 부가적인 자원이 필요합니다. 와탭은 로그를 감지하고 전송하기 위해 **WhaTap Forwarder**를 AWS Lambda Function을 통해 제공합니다. AWS CloudFormation을 활용해 **WhaTap Forwarder**를 사용자의 AWS 환경에 구동합니다.
+
+**WhaTap Forwarder**는 AWS Lambda Function의 Lifecycle에 의존적이기에 동시성 제약을 극복하기 위한 제어 요소를 가집니다. 사용자 환경에서 발생하는 로그량에 따라 다음과 같은 제어 요소를 조정해야 합니다.
+와탭은 로그를 감지하고 전송하기 위해 와탭 포워더를 제공합니다.
+
+와탭 포워더는 로그를 감지하고 전송합니다. 와탭 포워더가 로그를 감지하고 전송합니다.
+
+와탭 포워더는 람다 펑션의 라이프사이클에 의존적이기에 동시성 제약 극복을 
+
+-->
+
+-   `ReservedConcurrency`: Number of concurrent executions
+-   `Timeout`: Retention time when there is no log inflow to the Lambda function
+-   `Memory`: Memory allocated to the Lambda function
+-   `ConnectionTimeout`: Timeout when sending logs to the WhaTap collection server
+
+<details>
+<summary>AWS resource logs supported by AWS Log</summary>
+
+#### CloudWatch Log Group
+
+-   WAF
+-   API Gateway: The log group names must be set to **_api-gateway/gateway resource_** for collection.
+-   RDS
+-   DocumentDB
+-   REDIS
+-   EKS
+-   ECS
+
+#### S3
+
+-   VPC: S3 bucket names must be set to **_VPC resource_** for collection of logs.
+-   CloudFront: While setting logs, the prefix must be set to **_cloudfront_** to enable collection of logs.
+-   ELB
+
+</details>
+
+<!--  프로젝트 생성 -->
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+:::note 
+
+**Project access key**
+
+If you have already been granted a **project access key**, the key appears instead of the button.
+
+:::
+
+## Installing the WhaTap Forwarder
+
+Install the **WhatTap Forwarder** for log transmission by using the AWS Lambda function. Proceed with the installation in AWS CloudFormation. Be sure to see the **_WhatTap Forwarder Installation_** tab in the WhaTap **_Agent Installation_** > **_Install guide_** section. The following installation inputs are required. 
+
+-   **AWS Region** <br/>
+    Select an AWS region to install the Whatap Forwarder in. It must be the same as that of resources to collect.
+-   **CloudFormation Stack Name**<br/>
+    Specify the name of the CloudFormation stack used to install and uninstall the Whatap Forwarder.
+-   **ConnectionTimeOut**<span class='type'>Second</span><br/>
+    Default `10`<br/>
+    Specify the timeout period (seconds) when the Whatap Forwarder accesses the WhaTap collection server.
+-   **MemorySize**<span class='type'>Int</span><br/>
+    Default `1024`<br/>
+    Specify the memory size (MB) allocated for the WhaTap Forwarder.
+-   **Timeout**<span class='type'>Second</span><br/>
+    Default `150`<br/>
+    Specify the idle period for the Whatap Forwarder in seconds. Specify the time before the Lambda function is removed when there is no log transmission request. 
+-   **UseReservedConcurrency**<span class='type'>Boolean</span><br/>
+    Default `false`<br/>
+    Set whether or not to specify the maximum number of functions to be assigned to the Whatap Forwarder for stable log transmission.
+-   **ReservedConcurrency**<span class='type'>Second</span><br/>
+    Default `10`<br/>
+    If the value of `UseReservedConcurrency` is `true`, specify the number of functions to be assigned to the WhaTap Forwarder. The number of assignable functions per AWS account is 1,000. The total number of functions that a user can use is limited to the value obtained by subtracting the `ReservedConcurrency` value from the total number of assignable functions per account (1,000).
+
+    <!-- 사용자는 AWS 계정 당 할당 가능한 총 Function 개수에서 `ReservedConcurrency` 설정 값을 뺀 만큼 Function을 사용할 수 있습니다. -->
+
+### Installing the CloudFormation stack
+
+![WhaTap Forwarder](/img/aws-log-whatap-forwarder-install.png)
+![WhaTap Forwarder create stack](/img/aws-log-create-stack.png)
+
+1.  In the ![number1](/img/number-01.png) **_WhaTap Forwarder installation_** tab of the **_Install guide_** section, select ![number2](/img/number-02.png) **_AWS Region_**.
+2.  Select ![number3](/img/number-03.png) **_WhaTap Forwarder installation page_** to go to the CloudFormation execution page.
+3.  Specify the installation options on the CloudFormation launch page. Default parameters have been set.
+4.  At the bottom, **_check_** ![number4](/img/number-04.png) Approve **_Check_** and then select ![number5](/img/number-05.png) **_Create stack_**. Installation takes about 2 minutes.
+
+### Getting the ARN of the WhaTap Forwarder{#whatapforwarder-arn}
+
+![WhaTap Forwarder arn1](/img/aws-log-whatap-forwarder-arn.png)
+
+1.  Select ![number1](/img/number-01.png) **_Update_** on the upper right to check the progress of the stack creation. 
+    :::note
+
+  You can get the **ARN** of the **Whatap Forwarder** if the final step of the stack installation, the creation of the WhataTapAWSLog, is in progress. 
+
+  :::
+
+1.  Select ![number2](/img/number-02.png) **_Pyhsical ID_** of the resource whose logical ID is designated as WhatapAWSLOG to go to the detail screen of **Whatap Forwarder**.
+2.  You can check ![number3](/img/number-03.png) **_Function ARN_** (**WhatTap Forwarder ARN**) in the **_Description_** area on the right of the detail screen.
+3.  Copy it for the next step.
+
+### Checklist in case of an installation failure
+
+#### Role setting
+
+If the following error message occurs, check if any permission is granted.
+
+```bash
+User {user name} is not authorized to perform
+```
+
+-   **Required roles**
+
+    -   Policies for CloudFormation installation
+    -   Policies for fetching the AWS log codes
+    -   Policy to create AWS logs and grant required roles
+    -   Policy for creating a policy in AWS logs
+
+    ```bash title='AWS Log 필요 권한'
+    {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Sid": "VisualEditor0",
+              "Effect": "Allow",
+              "Action": [
+                  "iam:GetRole",
+                  "iam:GetRolePolicy",
+                  "iam:CreateRole",
+                  "iam:PutRolePolicy",
+                  "iam:PassRole",
+                  "iam:AttachRolePolicy",
+                  "cloudformation:ListStacks",
+                  "cloudformation:DescribeStackResource",
+                  "cloudformation:GetTemplateSummary",
+                  "cloudformation:DescribeStacks",
+                  "cloudformation:DescribeStackEvents",
+                  "cloudformation:CreateStack",
+                  "cloudformation:GetTemplate",
+                  "cloudformation:ValidateTemplate",
+                  "lambda:CreateFunction",
+                  "lambda:InvokeFunction",
+                  "lambda:GetFunction",
+                  "lambda:AddPermission",
+                  "s3:CreateBucket",
+                  "s3:GetObject"
+              ],
+              "Resource": "*"
+          }
+      ]
+    }
+    ```
+
+#### Stack name
+
+Change the CloudFormation stack name when the following error message occurs.
+
+```bash
+Stack {stack name} already exists
+```
+
+## Creating the AWS IAM policy and role
+
+The **_IAM policy_** and **_IAM role_** are required for the WhaTap Forwarder to receive logs from your AWS environment resources. If you have not created any IAM policy and IAM role for setting the Whatap Forwarder before, create new ones. 
+
+### Creating the IAM policy{#create-iam-policy}
+
+Specify whether or not to allow the access target resource. See the **_Create AWS IAM Policy_** tab in the WhaTap **_Agent Installation_** > **_Install guide_** section to proceed on. If any policy is missing, the setup does not work properly.
+
+![IAM Policy Creation sc](/img/aws-log-create-policy.png)
+
+1.  Log in to the AWS management console and open the IAM console. 
+2.  Select the **_Policy_** tab on the IAM console.
+3.  Select **_Create Policy_** and copy the following policy and paste it into the ![number1](/img/number-01.png) **_JSON_** tab.
+
+```bash title='IAM 정책'
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:List*",
+                "s3:PutBucketNotification",
+                "s3:GetBucketNotification",
+                "logs:PutSubscriptionFilter",
+                "logs:DescribeLogGroups",
+                "lambda:ListFunctions",
+                "logs:DescribeSubscriptionFilters",
+                "s3:GetBucketNotification"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "lambda:UpdateFunctionCode",
+            "Resource": "*",
+            "Condition": {
+                "ForAllValues:StringEquals": {
+                    "aws:TagKeys": "WhaTapForwarder"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::whatapforwarder",
+                "arn:aws:s3:::whatapforwarder/whatap.zip"
+            ]
+        }
+    ]
+}
+```
+
+1.  Select ![number2](/img/number-02.png) **_Review Policy_** at the bottom.
+2.  Specify the ![number3](/img/number-03.png) policy name.
+3.  Select ![number4](/img/number-04.png) **_Create Policy_** at the bottom.
+
+:::note
+
+**Roles in the IAM policy**
+
+The IAM policy specifies the following roles:
+
+-   Role to view the S3 storage list
+-   Role to get notifications when objects are mounted in S3 buckets
+-   CloudWatch log subscription filter role
+-   Role to query the CloudWatch log group
+
+:::
+
+### Creating the IAM role{#create-iam-role}
+
+<!-- 어떤 AWS 계정 ID로 생성된 자원에 대해 권한을 허용할지를 지정하고 직전에 생성한 IAM 정책을 매핑합니다. -->
+
+Specify which AWS accounts are granted roles for the created resources and map the IAM policy you just created. See the **_Create AWS IAM Role_** tab in the WhaTap **_Agent Installation_** > **_Install guide_** section to proceed on. 
+
+<!-- 
+
+![IAM Role sc](/img/aws-log-iam-role-v.png) 
+1. ***Account ID***에 와탭 계정(**911937781722**)을 입력하세요.
+
+-->
+
+1.  Log in to the AWS management console and open the IAM console.
+2.  Select **_Roles_** in the console navigation bar, and then select ![number1](/img/number-01.png) **_Create role_**. <br/>
+    ![IAM Role 1](/img/aws-log-iam-role-create.png)
+3.  In **_Select type of trusted entity_**, select ![number2](/img/number-02.png) **_AWS account_** and then enter the WhaTap account (**911937781722**) in ![number3](/img/number-03.png) **_Account ID_**. <br/>
+    ![IAM Role 2](/img/aws-log-iam-role-account.png)
+4.  Select **_Next_** at the bottom.
+5.  Select the ![number4](/img/number-04.png) **IAM policy** created in the [previous step](#create-iam-policy). <br/>
+    ![IAM Role 3](/img/aws-log-iam-role-policy.png)
+6.  Select **_Next_** at the bottom.
+7.  Enter the ![number5](/img/number-05.png) name as the IAM role. <br/>
+    ![IAM Role 4](/img/aws-log-iam-role-name.png)
+8.  Select **_Create Role_**.
+9.  You can check ![number6](/img/number-06.png) **_IAM Role ARN_** created in the Information tab. <br/>
+    ![IAM Role 5](/img/aws-log-iam-role-arn-c.png)
+10. Copy **_IAM Role ARN_** for the next step. 
+
+## AWS Log Subscription
+
+:::note
+
+You can subscribe to CloudWatch Log and Archive Log mounted to S3.
+
+:::
+
+### Viewing and subscribing to AWS CloudWatch Log
+
+At the top of the **_AWS Resource Log Search and Subscription_** tab in the **_Agent Installation_** > **_Install guide_**, select **_AWS CloudWatch Log Group_** to proceed on. 
+
+![AWS CloudWatch Log Search and Subscription sc](/img/aws-log-cloudwatch-subs.png)
+
+1.  Select the ![number1](/img/number-01.png) **_AWS region_** where AWS Log has been installed. 
+2.  Copy **Whatap Forwarder ARN** from the [previous step](#whatapforwarder-arn) and paste to ![number2](/img/number-02.png) **_AWS IAM Role ARN_**.
+3.  Select ![number3](/img/number-03.png) **_View_** to view the AWS resources that can be subscribed to.
+4.  Among the resources queried, select the ![number4](/img/number-04.png) target to subscribe to.
+5.  Select ![number5](/img/number-05.png) **_Register_**.
+
+:::note
+
+**In case of a query and subscription failure**
+
+-   Make sure no policies are missing under **_IAM Role Policy_**.
+-   Check that the trust policy has been correctly set during creation of **_IAM role_**.
+
+:::
+
+### AWS S3 bucket subscription
+
+At the top of the **_AWS Resource Log Search and Subscription_** tab in the **_Agent Installation_** > **_Install guide_** section, select **_AWS S3 Bucket_** to proceed on. 
+
+![AWS S3 Bucket Search and Subscription sc](/img/aws-log-s3-subs.png)
+
+1.  Select the ![number1](/img/number-01.png) **_AWS region_** where AWS Log has been installed. 
+2.  Copy **Whatap Forwarder ARN** from the [previous step](#whatapforwarder-arn) and paste to ![number2](/img/number-02.png) **_AWS IAM Role ARN_**.
+3.  Select ![number3](/img/number-03.png) **_View_** to view the AWS resources that can be subscribed to.
+4.  Among the resources queried, select the ![number4](/img/number-04.png) target to subscribe to.
+5.  Select ![number5](/img/number-05.png) **_Register_**.
+
+## Starting the monitoring
+
+![Starting the AWS Log Monitoring](/img/aws-log-start.png)
+
+After installation, go to **_Management_** > **_Log Setting_**. In the **_Start Log Monitoring_** section, select the **_Activate Log Monitoring_** toggle button to start monitoring AWS logs. 
+
+-   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled.
+-   If you turn off ![Icon](/img/ic-toggle-off.svg), the log monitoring is disabled. Logs are no longer saved.
+
+If monitoring is enabled, you can check the output of incoming logs in **_Dashboard_** > **_Live Tail_**.
+
+:::note
+
+프로젝트에 대한 **수정 권한**이 있는 경우에만 로그 모니터링을 활성화할 수 있습니다. 권한에 대한 자세한 내용은 [다음 문서](../project/project-structure)를 참조하세요.
+
+:::

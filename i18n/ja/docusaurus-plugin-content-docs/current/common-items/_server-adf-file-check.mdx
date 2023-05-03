@@ -1,0 +1,20 @@
+ファイルシステム上に存在または存在する可能性のあるファイルおよびディレクトリをモニタリングできます。
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "filecheck.enabled=true" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
+echo "モニタリングしたいファイルまたはディレクトリのフルパス" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "filecheck.enabled=true"
+Add-Content -Path "C:\Program Files\WhatapInfra\filesystem.conf" -Value "モニタリングしたいファイルまたはディレクトリのフルパス"
+```
+
+</TabItem>
+</Tabs>

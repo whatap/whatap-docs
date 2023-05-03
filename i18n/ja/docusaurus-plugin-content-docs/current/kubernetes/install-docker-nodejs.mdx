@@ -1,0 +1,152 @@
+---
+id: install-docker-nodejs
+title: Docker Node.jsインストール
+description: コンテナ内のNode.jsアプリケーションをモニタリングするためのエージェントのインストール段階です。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - アプリケーションインストール
+  - Node.js
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Dockerコンテナベースで実行するNode.jsアプリケーションにWhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする過程です。
+
+## エージェントダウンロード
+
+次のコマンドを通じてWhaTapをインストールしてください。
+
+```bash
+npm install --save whatap
+```
+
+アップデートを進めるには、次のコマンドを実行してください。
+
+```bash
+npm update whatap
+```
+
+## エージェント設定
+
+_node_modules/whatap_パスに位置する_whatap.conf_ファイルをNode.jsアプリケーションのルートディレクトリにコピーしてください。コピーした_whatap.conf_ファイルの内容を次を参考に修正してください。
+
+```ini
+license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+whatap.server.host={収集サーバーのIP}
+whatap_micro_enabled=true
+```
+
+## 使い方
+
+アプリケーションのメインモジュールの最初の行に次のコードを追加してください。
+
+```javascript title='적용 예시' showLineNumbers {1}
+var WhatapAgent = require('whatap').NodeAgent;
+
+WhatapAgent.NodeAgent;
+import http from 'http';
+import setupApp from '../src/app';
+let server = null;
+const port = normalizePort(process.env.PORT || '3000');
+```
+
+ECMAScript（ES）を活用するなら、次のコードを追加してください。
+
+```javascript
+import WhatapAgent from 'whatap';
+WhatapAgent.NodeAgent;
+```
+
+## 環境変数
+
+<Tabs>
+<TabItem value='basic' label='기본' default>
+
+```ini
+env:
+  - name: NODE_IP
+    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+  - name: NODE_NAME
+    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+  - name: POD_NAME
+    valueFrom: {fieldRef: {fieldPath: metadata.name}}
+```
+
+</TabItem>
+<TabItem value='eksfragate' label='EKS Fargate'>
+
+1.  デプロイメント（Deployment）またはレプリカセット（ReplicaSet）の_.spec_のフィールドにユーザーポッド（Pod）リソースをモニタリングするための`shareProcessNamespace`、`serviceAccount`を追加してください。
+
+    ```ini
+    apiVersion: apps/v1
+    kind: Deployment
+    ...
+    spec:
+    ...
+        spec:
+          shareProcessNamespace: true
+          serviceAccount: whatap
+    ...
+    ```
+
+2.  ユーザーのKubernetes環境内のコンテナ環境変数を設定してください。アプリケーションエージェントに必要な環境変数情報を入力してください。
+
+  `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。
+
+````
+```ini showLineNumbers {8}
+env:
+  - name: NODE_IP
+    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+  - name: NODE_NAME
+    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+  - name: POD_NAME
+    valueFrom: {fieldRef: {fieldPath: metadata.name}}
+  # whatap.confファイルを使用しない場合は、設定を追加してください。
+  - name: license
+    value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
+  - name: whatap_server_host
+    value: "15.165.146.117"
+  - name: whatap_micro_enabled
+    value: "true"
+```
+````
+
+1.  ユーザーPodリソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加してください。
+
+    ```ini
+    ...
+      - name: whatap-node-agent
+        image: whatap/kube_mon_sidecar
+        resources:
+          requests:
+            memory: 20Mi
+            cpu: 10m
+          limits:
+            memory: 40Mi
+            cpu: 20m
+        ports:
+          - name: nodeport
+            containerPort: 6600
+        env:
+          - name: NODE_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.hostIP
+          - name: NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+            envFrom:
+            - configMapRef:
+                name: node-license
+    volumes:
+    ...
+    ```
+
+</TabItem>
+</Tabs>
+
+{@include: _check-install-agent.mdx}

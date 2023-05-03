@@ -1,0 +1,73 @@
+Linuxサーバーで実行可能なユーザースクリプトを定期的に実行して結果をアップロードします。
+
+次の例を参考にして、ユーザースクリプトを作成してください。
+
+1.  スクリプトを次のように作成して実行してください。
+
+```bash title='Linux Shell'
+#!/bin/bash
+
+
+urls=("https://www.whatap.io"  "https://blog.whatap.io"  "https://service.whatap.io")
+
+for url in ${urls[*]}; do
+
+echo "M $url url $url"
+curl -w @- -o /dev/null -s "$url" <<'EOF'
+M %{url_effective} url %{url_effective}\n
+H %{url_effective} time_namelookup %{time_namelookup}\n
+H %{url_effective} time_connect %{time_connect}\n
+H %{url_effective} time_appconnect %{time_appconnect}\n
+H %{url_effective} time_pretransfer %{time_pretransfer}\n
+H %{url_effective} time_redirect %{time_redirect}\n
+H %{url_effective} time_starttransfer %{time_starttransfer}\n
+H %{url_effective} time_total %{time_total}\n
+EOF
+
+
+done
+```
+
+2.  次のように出力されるか確認してください。
+
+```bash title='Linux Shell'
+$ ./curl.sh
+M https://www.whatap.io/ url https://www.whatap.io/
+H https://www.whatap.io/ time_namelookup 0.007289
+H https://www.whatap.io/ time_connect 0.010702
+H https://www.whatap.io/ time_appconnect 0.033637
+H https://www.whatap.io/ time_pretransfer 0.033831
+H https://www.whatap.io/ time_redirect 0.000000
+H https://www.whatap.io/ time_starttransfer 0.043230
+H https://www.whatap.io/ time_total 0.043312
+M https://blog.whatap.io/ url https://blog.whatap.io/
+H https://blog.whatap.io/ time_namelookup 0.000000
+H https://blog.whatap.io/ time_connect 0.000000
+H https://blog.whatap.io/ time_appconnect 0.000000
+H https://blog.whatap.io/ time_pretransfer 0.000000
+H https://blog.whatap.io/ time_redirect 0.000000
+H https://blog.whatap.io/ time_starttransfer 0.000000
+H https://blog.whatap.io/ time_total 0.005654
+M https://service.whatap.io/ url https://service.whatap.io/
+H https://service.whatap.io/ time_namelookup 0.004296
+H https://service.whatap.io/ time_connect 0.007282
+H https://service.whatap.io/ time_appconnect 0.038404
+H https://service.whatap.io/ time_pretransfer 0.038607
+H https://service.whatap.io/ time_redirect 0.000000
+H https://service.whatap.io/ time_starttransfer 0.055226
+H https://service.whatap.io/ time_total 0.055307
+```
+
+3.  スクリプト正常収集を確認し、次のようにWhaTapサーバーのモニタリングエージェントにスクリプトを登録してください。
+
+```bash title='Linux Shell'
+export USER_SCRIPT=実行するユーザースクリプトの絶対パス
+suco chmod +x $USER_SCRIPT
+sudo mkdir /usr/whatap/infra/ext/
+sudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/
+export RUNAS_USER=ユーザースクリプトを実行するアカウント。rootアカウントを除く
+sudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script
+sudo service whatap-infra restart
+```
+
+収集されたデータは、**_分析_** > **_メトリクスチャート_**の**_カテゴリ_**`server_ext_フォルダ_実行スクリプト`で確認することができます。

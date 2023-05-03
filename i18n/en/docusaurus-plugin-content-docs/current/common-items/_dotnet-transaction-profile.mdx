@@ -1,0 +1,33 @@
+-   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/>
+    To record HTTP headers in the trace details, set it to `true`.
+
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/>
+        To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
+    :::note
+    Set the security key to a 6-letter value in _'%PROGRAMFILES%'\\WhaTap .NET\\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+    :::
+
+-   **profile_http_parameter_url_prefix** <span class='type'>String</span><br/>
+    It is used to define the prefix of URL to record HTTP parameters in the trace details.
+
+-   **profile_http_host_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/>
+    It outputs the host data of the transaction. If the value is `false`, only the URI appears in the transaction URL, and if `true`, it is output in /xxx.aaa.com/URL format.
+
+-   **biz_exceptions** <span class='type'>String</span><br/>Default `Empty`<br/>
+    Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+
+-   **ignore_exceptions** <span class='type'>String</span><br/>Default `NONE`<br/>
+    Register an exception to ignore. The error itself of the registered exception is ignored.<br/>
+    In case of an exception, if the custom exception class has not been defined, it is collected with `Exception` by default. To exclude specific exceptions, define the custom exception class and then set the name of exception.
+
+-   **trace_normalize_enabled** <span class='type'>Boolean</span><br/>Default `true`<br/>
+        To exclude specific exceptions, define the custom exception class and then set the name of exception.
+    :::note
+    If the value is changed to `false`, it disables the path parameter parsing. In this case, it is recommended to temporarily use the setting only for debugging purposes because the statistical data is less meaningful.
+    :::
+
+-   **trace_normalize_urls** <span class='type'>String</span><br/>Default `NONE`<br/>
+        Set transaction URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
+    :::note
+    For example, if declared as **a/{v}/b**, **123** is replaced by **a/{v}/b**. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+    :::

@@ -1,0 +1,84 @@
+---
+id: jboss
+title: JBoss
+description: Complete the additional settings for JVM options in the JBoss application server environment.
+tags:
+  - Java
+  - JBoss
+---
+
+Check the method how to add JVM options in the application server environment using JBoss.
+
+## Adding the boot environment
+
+For JVM options, add options for `-javaagent` and `-Djboss.modules.system.pkgs`.
+
+### JBOSS 7.0 or later & EAP 6.0 or later
+
+Installation location: (JBoss installation path)/bin/standalone.conf(domain.conf)
+
+```bash title=standalone.sh
+#!/bin/sh
+########## WHATAP ############
+WHATAP_HOME=/home/ec2-user/whatap
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} -Djboss.modules.system.pkgs=whatap"
+########## WHATAP ############
+```
+
+:::note
+
+For JBoss 5.0 or earlier, set in the _(JBoss installation path)/bin/run.conf_ path. If any error occurs, add the `-Djboss.platform.mbeanserver=true` option.
+
+:::
+
+### Java 17 or later
+
+{@include: _java-17.mdx} 
+
+## Starting the monitoring
+
+{@include: ../../common-items/_start-apm.mdx}  
+
+## JBoss compatibility
+
+| WAS Ver.                     |    Java SE 6 (jdk1.6.0)         |   Java SE 7 (jdk1.7.0_80)       |   Java SE 8 (jdk1.8.0_91)       |
+| ---------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JBOSS EAP 7.0 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.1.1 (standalone) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBOSS EAP 6.2 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.3 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.4 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 7.0 (domain)       | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS AS 5.1.0 (default)     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+
+| WAS Ver.                     |    OpenJDK 6 (1.6.0_45)         |    OpenJDK 7 (1.7.0_80)         |    OpenJDK 8 (1.8.0_91)         |
+| ---------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JBOSS EAP 7.0 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.1.1 (standalone) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBOSS EAP 6.2 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.3 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.4 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 7.0 (domain)       | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS AS 5.1.0 (default)     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+
+| WAS Ver.                     |    ibm-java-x86_64-60           |    ibm-java-x86_64-71           |    ibm-java-x86_64-80           |
+| ---------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
+| JBOSS EAP 7.0 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.1.1 (standalone) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBOSS EAP 6.2 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.3 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 6.4 (standalone)   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBOSS EAP 7.0 (domain)       |                -                |                -                |                -                |
+| JBOSS AS 5.1.0 (default)     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+
+## JBoss DataSource trace test
+
+| DB            | JDBC Driver file name                  | JDBC Ver.  | JDK Ver.     |    Compatibility                |
+| ------------- | -------------------------------------- | ---------- | ------------ | :-----------------------------: |
+| MySQL         | mysql-connector-java-5.1.39-bin.jar    | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| MariaDB       | mariadb-java-client-1.4.6.jar          | 1.4.6      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| PostgreSQL    | postgresql-9.4.1209.jre7.jar           | 9.4.1209   | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Amazon Aurora | mysql-connector-java-5.1.39-bin.jar    | 5.1.39     | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| Oracle        | ojdbc6-11.2.0.2.0.jar                  | 11.2.0.2.0 | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |
+| DB2           | db2jcc.jar, db2jcc_license_cu.jar      | 1.4.2      | JDK 1.7.0_80 | <span class='emoji-ok'>✅</span> |

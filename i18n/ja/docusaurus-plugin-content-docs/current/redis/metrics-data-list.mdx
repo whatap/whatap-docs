@@ -1,0 +1,84 @@
+---
+id: metrics-data-list
+title: Redisメトリクス
+description: WhaTap Redisで使用する重要メトリクスについて案内します。
+tags:
+  - Redis
+  - メトリックス
+  - データベース
+  - データベースモニタリング
+---
+
+データベースメトリクスは、データベースの作業量とリソース使用量を包括的に収集します。WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+
+メトリクスに関する詳細については、[次の文書](https://redis.io/commands/info)を参考にしてください。
+
+| Metric                        | 説明                                                                                                                                               | Category     |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| `BLOCKED_CLIENTS`             | BLPOP、BRPOP、BRPOPLPUSHのコマンドで待機中のクライアント数                                                                                                          | CLIENTS      |
+| `CONNECTED_CLIENTS`           | 現在接続しているクライアント数（スレーブノード接続は除く）                                                                                                                    | CLIENTS      |
+| `TRACKING_CLIENTS`            | Number of clients being tracked                                                                                                                  | CLIENTS      |
+| `CMDSTAT_XXX_CALLS`           | Redisコマンドの統計情報を表示します。<br/>call：XXX Commandの実行回数                                                                                                  | COMMANDSTATS |
+| `CMDSTAT_XXX_USEC`            | Redisコマンドの統計情報を表示します。<br/>usec：XXX Commandの実行時間（microsecond）                                                                                     | COMMANDSTATS |
+| `CMDSTAT_XXX_USEC_PER_CALL`   | Redisコマンドの統計情報を表示します。<br/>`usec_per_call`：XXX Commandを一回実行するのにかかった平均時間（microsecond）                                                              | COMMANDSTATS |
+| `USED_CPU`                    | `used_cpu_sys` + `used_cpu_user`                                                                                                                 | CPU          |
+| `USED_CPU_SYS`                | システムモードで使用したCPU                                                                                                                                  | CPU          |
+| `USED_CPU_SYS_CHILDREN`       | RDB/AOFファイル保存時に子プロセスがシステムモードで使用したCPU                                                                                                             | CPU          |
+| `USED_CPU_USER`               | ユーザーモードで使用したCPU                                                                                                                                  | CPU          |
+| `USED_CPU_USER_CHILDREN`      | RDB/AOFファイル保存時に子プロセスがユーザーモードで使用したCPU                                                                                                             | CPU          |
+| `AVG_TTL_DB0`                 | DB0にKeyが残っている時間（millisecond）                                                                                                                     | KEYSPACE     |
+| `AVG_TTL_DB1`                 | DB1にKeyが残っている時間（millisecond）                                                                                                                     | KEYSPACE     |
+| `EXPIRES_DB0`                 | DB0のexpireされるKey数                                                                                                                                | KEYSPACE     |
+| `EXPIRES_DB1`                 | DB1のexpireされるKey数                                                                                                                                | KEYSPACE     |
+| `KEYS_DB0`                    | DB0のキーの個数                                                                                                                                        | KEYSPACE     |
+| `KEYS_DB1`                    | DB1のキーの個数                                                                                                                                        | KEYSPACE     |
+| `KEYS_TOTAL`                  | KEYS_DBnの合計                                                                                                                                      | KEYSPACE     |
+| `MEM_FRAGMENTATION_RATIO`     | `used_memory`と`used_memory_rss`の比率                                                                                                               | MEMORY       |
+| `USED_MEMORY`                 | Bytes                                                                                                                                            | MEMORY       |
+| `USED_MEMORY_PEAK`            | 最大に使用したメモリ（bytes）                                                                                                                                | MEMORY       |
+| `USED_MEMORY_RSS`             | Resident Set Size。プロセスが占める実際のメモリ（RAM）サイズ                                                                                                         | MEMORY       |
+| `AOF_ENABLED`                 | _redis.conf_のappendonlyモードがyesなら1、noなら0です。yesのときはRedisサーバーの起動時に_appendonly.aof_を読み込み、noなら_dump.rdb_ファイルを読み込みます。                                  | PERSISTENCE  |
+| `AOF_LAST_REWRITE_TIME_SEC`   | 最後のAOF rewrite所要時間（秒）                                                                                                                            | PERSISTENCE  |
+| `AOF_REWRITE_IN_PROGRESS`     | 現在AOFファイルをバックグラウンドで保存中であれば、1と表示されます。                                                                                                             | PERSISTENCE  |
+| `AOF_REWRITE_SCHEDULED`       | AOF rewriteをする予定がある場合は1です。RDBファイルを保存中であれば、同時にAOFファイルを保存できないので予定（scheduled：1）に入れておき、保存が完了したらAOF rewriteを開始します。                                    | PERSISTENCE  |
+| `RDB_BGSAVE_IN_PROGRESS`      | RDBファイルのbackground saveが進行中の時に1と表示されます。                                                                                                          | PERSISTENCE  |
+| `RDB_CHANGES_SINCE_LAST_SAVE` | RDBファイルを最後に保存して以来、入力されたデータ件数                                                                                                                     | PERSISTENCE  |
+| `RDB_CURRENT_BGSAVE_TIME_SEC` | 現在バックグラウンドでRDBファイルを保存している場合は、保存開始から現在までの所要時間                                                                                                     | PERSISTENCE  |
+| `RDB_LAST_BGSAVE_TIME_SEC`    | 最後のバックグラウンドRDBファイルの保存所要時間（秒）                                                                                                                     | PERSISTENCE  |
+| `RDB_LAST_SAVE_TIME`          | 最後にRDBファイルを保存するのに成功した時間                                                                                                                          | PERSISTENCE  |
+| `CONNECTED_SLAVES`            | マスターの場合、接続されたスレーブ数                                                                                                                               | REPLICATION  |
+| `REPL_BACKLOG_ACTIVE`         | マスターの場合は1、スレーブの場合は0です。                                                                                                                           | REPLICATION  |
+| `REPL_BACKLOG_SIZE`           | _redis.conf_ファイルの`repl-backlog-size`の設定値です。スレーブとの接続が切れたときに入力されるデータをbacklog-bufferに保存して、再び接続されると、全体データを交換する必要なくbacklog-bufferのデータをスレーブに送って同期化します。 | REPLICATION  |
+| `EVICTED_KEYS`                | maxmemory制限により消し飛ばされたキー数                                                                                                                         | STATS        |
+| `EXPIRED_KEYS`                | expireコマンドで削除されたキー数                                                                                                                              | STATS        |
+| `INSTANTANEOUS_INPUT_KBPS`    | 現在の入力kbps                                                                                                                                        | STATS        |
+| `INSTANTANEOUS_OPS_PER_SEC`   | 現在毎秒処理したコマンド数、現在毎秒処理している件数が分かる                                                                                                                   | STATS        |
+| `INSTANTANEOUS_OUTPUT_KBPS`   | 現在の出力kbps                                                                                                                                        | STATS        |
+| `KEYSPACE_HITS`               | `get key`で値が出たら1増加                                                                                                                               | STATS        |
+| `KEYSPACE_MISSES`             | `get key`で`nil`が出たら1増加                                                                                                                           | STATS        |
+| `LATEST_FORK_USEC`            | 最後の`fork()`にかかった時間（microsecond）                                                                                                                  | STATS        |
+| `MIGRATE_CACHED_SOCKETS`      | クラスタmigrate関連値                                                                                                                                   | STATS        |
+| `PUBSUB_CHANNELS`             | pub/sub channelで接続されたchannel数                                                                                                                    | STATS        |
+| `PUBSUB_PATTERNS`             | pub/sub patternで接続されたpattrn channel数                                                                                                             | STATS        |
+| `REJECTED_CONNECTIONS`        | maxclients制限により拒否された接続数                                                                                                                          | STATS        |
+| `SYNC_FULL`                   | マスターノードの場合、スレーブノードとのfull sync回数                                                                                                                  | STATS        |
+| `SYNC_PARTIAL_ERR`            | マスターノードの場合、スレーブノードとのpartial sync err回数                                                                                                           | STATS        |
+| `SYNC_PARTIAL_OK`             | マスターノードの場合、スレーブノードとのpartial sync ok回数                                                                                                            | STATS        |
+| `TOTAL_COMMANDS_PROCESSED`    | サーバーの起動後に処理したコマンドの総数（保存、照会の両方）                                                                                                                   | STATS        |
+| `TOTAL_CONNECTIONS_RECEIVED`  | サーバー開始後の総接続数                                                                                                                                     | STATS        |
+| `CPU_IDLE_XOS`                | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `CPU_IOWAIT_XOS`              | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `CPU_SYS_XOS`                 | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `CPU_USER_XOS`                | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `CPU_XOS`                     | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_AVAILABLE_XOS`           | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_BUFFCACHE_XOS`           | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_SWAPFREE_XOS`            | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_SWAPTOTAL_XOS`           | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_TOTAL_XOS`               | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_USED_XOS`                | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `MEM_XOS`                     | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `NET_RECV_BYTES_XOS`          | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `NET_RECV_PACKETS_XOS`        | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `NET_SEND_BYTES_XOS`          | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |
+| `NET_SEND_PACKETS_XOS`        | XOSで収集するOSメトリクス                                                                                                                                  | XOS          |

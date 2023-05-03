@@ -1,0 +1,39 @@
+---
+id: install-check
+title: Installation checking items
+description: The items must be checked after installing the agent.
+tags:
+  - Java
+---
+
+The items must be checked after installing the agent. If any problem occurs during installation, see [the following](agent-troubleshooting).
+
+## Restarting WAS
+
+Restart the application server. If the following WhaTap character log appears in a running log, it indicates that the `JAVA_OPTS` setting has been completed.
+
+```bash
+Nov 16, 2016 3:06:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /var/lib/tomcat7/webapps/ROOT has finished in 577 ms
+Nov 16, 2016 3:06:40 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 16, 2016 3:06:40 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3984 ms
+_  	 ____       ______
+| | /| / / /  ___ /_  __/__ ____
+| |/ |/ / _ \/ _ `// / / _ `/ _ \
+|__/|__/_//_/\_,_//_/  \_,_/ .__/
+        	             /_/
+Just Tap, Always Monitoring
+WhaTap Agent version 0.3.9 20161115
+```
+
+<!-- 에이전트 연결 확인 -->
+
+{@include: ../common-items/_check-agent-connection.mdx} 
+
+:::note
+
+-   The default agent name is {type}-{ip2}-{ip3}-{port}.
+-   To change the agent name or add properties, see [the following](agent-name).
+    :::

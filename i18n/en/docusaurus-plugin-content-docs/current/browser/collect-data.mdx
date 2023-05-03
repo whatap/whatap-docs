@@ -1,0 +1,153 @@
+---
+id: collect-data
+title: Browser agent collection data
+description: It is a description of the data collected by the WhaTap browser agent.
+tags:
+  - Browser Monitoring
+  - Agent
+---
+
+The WhaTap browser agent collects events that occur from each user's browser, reprocesses the collected data, and uses the data for monitoring. All collected data is user session dependent.
+
+## Types
+
+The following lists the types of data that the WhaTap browser agent collects.
+
+-   **Long** : long to string32형식의 고유 ID 데이터 타입입니다.
+-   **TimeStamp** : ms(millisecond) 단위, 측정 시각의 타임스탬프입니다.
+-   **HighResolutionTime** : ms 단위의 소요된 시간입니다.
+-   **TimeSet** : 타임라인 표시를 위해 시작 타임스탬프와 소요시간으로 표현합니다.
+-   **ResourceType** : `document`, `xhr`, `fetch`, `beacon`, `css`, `script`, `image`, `font`, `media`, `other` 중 하나를 의미합니다.
+-   **ErrorType** : `console`, `onError`, `promiseRejection`, `fetchError`, `xhrError`, `messageError` 중 하나를 의미합니다.
+
+## Common collection data
+
+When any event occurs, the collected basic data is as follows:
+
+<div class='br-data'>
+
+| 데이터 이름        |               Type               | Description                                                                                                                                                                                                         | Example                                                                                                                           |
+| ------------- | :------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| sessionID     |  <span class='type'>Long</span>  | A unique ID issued when a web application user starts navigating to a web page. The maximum duration of a session is 4 hours, and the ID expires after 15 minutes of inactivity. IDs are stored in browser cookies. | x7dbvq64ga80sd                                                                                                                    |
+| userID        |  <span class='type'>Long</span>  | It is a unique ID issued when a web application user first connects and has no expiration time. IDs are stored in browser cookies.                                                                                  | z7eqnnitlc19j9                                                                                                                    |
+| sendEventID   |  <span class='type'>Long</span>  | 이벤트 발생 후 수집 서버로 데이터 전송 시 발급하는 요청 고유 ID입니다.                                                                                                                                                                          | x4rp4tnuq25i0h                                                                                                                    |
+| page.url      | <span class='type'>String</span> | 이벤트가 발생한 페이지 URL입니다.                                                                                                                                                                                                | https<span>://</span>site.whatap.io/8/dashboard?dataKey=abcd                                                                      |
+| page.host     | <span class='type'>String</span> | 이벤트가 발생한 페이지 URL의 도메인 이름입니다.                                                                                                                                                                                        | site.whatap.io                                                                                                                    |
+| page.path     | <span class='type'>String</span> | 이벤트가 발생한 페이지 URL의 경로입니다.                                                                                                                                                                                            | /8/dashboard                                                                                                                      |
+| page.query    | <span class='type'>String</span> | 이벤트가 발생한 페이지 URL의 parameter입니다.                                                                                                                                                                                     | dataKey=abcd                                                                                                                      |
+| page.protocol | <span class='type'>String</span> | 이벤트가 발생한 페이지 URL의 프로토콜입니다.                                                                                                                                                                                          | https                                                                                                                             |
+| page.title    | <span class='type'>String</span> | 이벤트가 발생한 페이지의 문서 제목입니다.                                                                                                                                                                                             | SaaS 모니터링 No.1 와탭 모니터링 | 와탭                                                                                                       |
+| userAgent     | <span class='type'>String</span> | 이벤트가 발생한 브라우저의 useragent입니다.                                                                                                                                                                                        | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)<br/>AppleWebKit/537.36 (KHTML, like Gecko)<br/>Chrome/103.0.0.0<br/>Safari/537.36 |
+
+</div>
+
+## Page Load Event
+
+This event occurs when you access the web application and the page content is fully loaded. The basic collection data is as follows:
+
+<div class='br-data'>
+
+| 데이터 이름                             |                     Type                     | Description                                                                                         | Example                     |
+| ---------------------------------- | :------------------------------------------: | --------------------------------------------------------------------------------------------------- | --------------------------- |
+| navigationTiming.startTimeStamp    |      <span class='type'>TimeStamp</span>     | It is the time stamp of `navigationStart`. Time stamp of the page that starts loading               | 1658057382311               |
+| navigationTiming.eventID           |        <span class='type'>Long</span>        | 페이지를 불러오는 이벤트 발생 시 발급하는 고유 ID입니다.                                                                   | x7mkg24tags307              |
+| navigationTiming.redirect          |       <span class='type'>TimeSet</span>      | http 리디렉션의 소요 시간입니다.                                                                                | {duration: 10, start: 315}  |
+| navigationTiming.cache             |       <span class='type'>TimeSet</span>      | app cache 리소스를 불러오는 소요 시간입니다.                                                                       | {duration: 5, start: 325}   |
+| navigationTiming.dns               |       <span class='type'>TimeSet</span>      | 웹사이트 domain 탐색 소요 시간입니다.                                                                            | {duration: 5, start: 330}   |
+| navigationTiming.connect           |       <span class='type'>TimeSet</span>      | TCP 연결 설정의 소요 시간입니다.                                                                                | {duration: 6, start: 335}   |
+| navigationTiming.ssl               |       <span class='type'>TimeSet</span>      | ssl handshake 프로세스 소요 시간입니다.                                                                        | {duration: 5, start: 336}   |
+| navigationTiming.download          |       <span class='type'>TimeSet</span>      | document 다운로드 소요 시간입니다.                                                                             | {duration: 100, start: 341} |
+| navigationTiming.firstByte         |       <span class='type'>TimeSet</span>      | 브라우저가 서버에 document를 요청하고 첫 번째 바이트를 수신할 때까지의 소요 시간입니다.                                               | {duration: 10, start: 341}  |
+| navigationTiming.domInteractive    | <span class='type'>HighResolutionTime</span> | It is the time when the browser finished parsing the document from `navigationStart`. DOM is ready. | 441                         |
+| navigationTiming.domContnentLoaded |       <span class='type'>TimeSet</span>      | DOM 트리를 생성하는데 걸린 소요 시간입니다.                                                                          | {duration: 50, start: 441}  |
+| navigationTiming.domComplete       | <span class='type'>HighResolutionTime</span> | `navigationStart`부터 document 및 하위 리소스 불러오기를 완료한 시각입니다.                                              | 491                         |
+| navigationTiming.domLoad           |       <span class='type'>TimeSet</span>      | `onload` 이벤트 소요 시간입니다.                                                                              | {duration: 1, start: 491}   |
+| navigationTiming.backendTime       | <span class='type'>HighResolutionTime</span> | `navigationStart`부터 리소스 다운로드까지의 소요 시간입니다.                                                           | 126                         |
+| navigationTiming.frontendTime      |       <span class='type'>TimeSet</span>      | 브라우저가 파싱을 완료한 시각부터 load 이벤트가 완료될 때까지의 소요 시간입니다.                                                     | {duration: 51, start: 441}  |
+| navigationTiming.loadTime          | <span class='type'>HighResolutionTime</span> | `navigationStart`부터 `loadEventEnd`까지 소요 시간입니다.                                                      | 492                         |
+| totalDuration                      | <span class='type'>HighResolutionTime</span> | `navigationStart`부터 최종 페이지 불러오기를 완료한 시각입니다.                                                         | 550                         |
+
+</div>
+
+## Router change event
+
+This event occurs when you move to a page in a single page application (SPA) type web application. The basic collection data is as follows:
+
+<div class='br-data'>
+
+| 데이터 이름         |                     Type                     | Description                                             | Example                                                      |
+| -------------- | :------------------------------------------: | ------------------------------------------------------- | ------------------------------------------------------------ |
+| loadTime       | <span class='type'>HighResolutionTime</span> | 라우터 변경 소요 시간입니다.                                        | 500                                                          |
+| startTimeStamp |      <span class='type'>TimeStamp</span>     | 라우터 변경 시작 시각 타임스탬프입니다.                                  | 1658057382311                                                |
+| endTimeStamp   |      <span class='type'>TimeStamp</span>     | 라우터 변경 종료 시각 타임스탬프입니다.                                  | 1658057382811                                                |
+| pageLocation   |       <span class='type'>String</span>       | 라우터 변경 이벤트가 발생한 페이지 URL입니다.                             | https<span>://</span>site.whatap.io/8/dashboard?dataKey=abcd |
+| host           |       <span class='type'>String</span>       | 라우터 변경 이벤트가 발생한 페이지 URL의 도메인 이름입니다.                     | site.whatap.io                                               |
+| path           |       <span class='type'>String</span>       | 라우터 변경 이벤트가 발생한 페이지 URL의 경로입니다.                         | /8/dashboard                                                 |
+| query          |       <span class='type'>String</span>       | 라우터 변경 이벤트가 발생한 페이지 URL의 parameter입니다.                  | dataKey=abcd                                                 |
+| protocol       |       <span class='type'>String</span>       | 라우터 변경 이벤트가 발생한 페이지 URL의 프로토콜입니다.                       | https                                                        |
+| isComplete     |       <span class='type'>Boolean</span>      | 라우터 변경이 완료되지 않은 상태에서 다른 페이지로 라우터를 변경하는 경우 구분하기 위한 값입니다. | true                                                         |
+
+</div>
+
+## Resource Load Event
+
+This event occurs when you call a resource while using the web application. The basic collection data is as follows:
+
+<div class='br-data'>
+
+| 데이터 이름              |                     Type                     | Description                                      | Example                                                                                   |
+| ------------------- | :------------------------------------------: | ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| startTime           | <span class='type'>HighResolutionTime</span> | `navigationStart`로 부터 리소스 요청 시작까지의 시간입니다.        | 1000                                                                                      |
+| startTimeStamp      |      <span class='type'>TimeStamp</span>     | 리소스 요청 시작 타임스탬프입니다.                              | 1658057382321                                                                             |
+| eventID             |        <span class='type'>Long</span>        | 리소스를 불러올 때마다 발급하는 고유 ID입니다.                      | x280or4ok0kqo0                                                                            |
+| type                |    <span class='type'>ResourceType</span>    | 리소스 타입입니다.                                       | image                                                                                     |
+| url                 |       <span class='type'>String</span>       | 리소스 URL입니다.                                      | https<span>://</span>unpkg.com/purecss<span>@</span>2.0.3/build/pure-min.css?dataKey=abcd |
+| urlHost             |       <span class='type'>String</span>       | 리소스 URL의 도메인 이름입니다.                              | unpkg.com                                                                                 |
+| urlPath             |       <span class='type'>String</span>       | 리소스 URL의 경로입니다.                                  | /purecss<span>@</span>2.0.3/build/pure-min.css                                            |
+| urlQuery            |       <span class='type'>String</span>       | 리소스 URL의 parameter입니다.                           | dataKey=abcd                                                                              |
+| urlProtocol         |       <span class='type'>String</span>       | 리소스 URL의 프로토콜입니다.                                | https                                                                                     |
+| is3rdParty          |       <span class='type'>Boolean</span>      | 3rd party로 요청한 리소스를 구분하기 위한 값입니다.                | false                                                                                     |
+| timing.duration     | <span class='type'>HighResolutionTime</span> | 리소스 다운로드 완료까지 소요된 시간입니다.                         | 61                                                                                        |
+| timing.size         |       <span class='type'>Number</span>       | 리소스 인코딩 사이즈입니다.                                  | 20                                                                                        |
+| timing.redirect     |       <span class='type'>TimeSet</span>      | http 리디렉션의 소요시간입니다.                              | {duration: 10, start: 315}                                                                |
+| timing.cache        |       <span class='type'>TimeSet</span>      | app cache 리소스를 불러오는 소요 시간입니다.                    | {duration: 5, start: 325}                                                                 |
+| timing.dns          |       <span class='type'>TimeSet</span>      | 리소스 도메인 탐색 소요시간입니다.                              | {duration: 5, start: 330}                                                                 |
+| timing.connect      |       <span class='type'>TimeSet</span>      | TCP 연결 설정의 소요 시간입니다.                             | {duration: 6, start: 335}                                                                 |
+| timing.ssl          |       <span class='type'>TimeSet</span>      | ssl handshake 프로세스 소요 시간입니다.                     | {duration: 5, start: 336}                                                                 |
+| timing.firstByte    |       <span class='type'>TimeSet</span>      | 브라우저가 서버에 리소스를 요청하고 첫 번째 바이트를 수신할 때까지의 소요 시간입니다. | {duration: 10, start: 341}                                                                |
+| timing.download     |       <span class='type'>TimeSet</span>      | 리소스 다운로드 소요 시간입니다.                               | {duration: 100, start: 341}                                                               |
+| resourceInfo.method |       <span class='type'>String</span>       | 리소스 요청 메소드입니다.                                   | POST                                                                                      |
+| resourceInfo.status |       <span class='type'>Number</span>       | 리소스 요청 상태입니다.                                    | 200                                                                                       |
+
+</div>
+
+## Error event{#error-event}
+
+It is an error that occurred from the browser while you are using the web application. The basic collection data is as follows:
+
+<div class='br-data'>
+
+| 데이터 이름    |                 Type                | Description                               | Example                                                                                                                                                                                                |
+| --------- | :---------------------------------: | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| message   |   <span class='type'>String</span>  | 에러 발생 시 메시지 정보입니다.                        | SyntaxError: Unexpected end of JSON input                                                                                                                                                              |
+| stack     |   <span class='type'>String</span>  | 에러 발생 시 스택 정보입니다.                         | at printWarning (webpack-internal:///../node_modules/react-dom/cjs/react-dom.development.js:86:30)<br/><br/>at error (webpack-internal:///../node_modules/react-dom/cjs/react-dom.development.js:60:7) |
+| timestamp | <span class='type'>TimeStamp</span> | 에러 발생 시점의 타임스탬프입니다.                       | 1658057382321                                                                                                                                                                                          |
+| type      | <span class='type'>ErrorType</span> | 에러 타입입니다.                                 | onError                                                                                                                                                                                                |
+| status    |   <span class='type'>Number</span>  | 에러 타입이 `xhr`, `fetch`의 경우 수집하는 에러 상태값입니다. | 501                                                                                                                                                                                                    |
+| url       |   <span class='type'>String</span>  | 에러 타입이 `xhr`, `fetch`의 경우 AJAX 요청 URL입니다. | https<span>://</span>site.whatap.io/yard/api?pcode=8&type=summary                                                                                                                                      |
+
+</div>
+
+## Core Web Vitals Event
+
+**Core Web Vitals** are three metrics that Google considers important, among various measurement values that affect the user experience of web content. The basic collection data is as follows:
+
+<div class='br-data'>
+
+| 데이터 이름 |                     Type                     | Description                                                                                                                                                        | Example |
+| ------ | :------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| lcp    | <span class='type'>HighResolutionTime</span> | Largest Contentful Paint(LCP), 페이지를 처음 불러오기 시작한 시간을 기준으로 뷰포트 내에 있는 가장 큰 이미지 또는 텍스트 블록의 렌더링 시간을 보고합니다.                                                              | 12334   |
+| fid    | <span class='type'>HighResolutionTime</span> | First Input Delay(FID), 사용자가 페이지와 처음 상호 작용할 때(예: 링크를 클릭하거나 버튼을 탭할 때, 사용자 지정 JavaScript 기반 컨트롤을 사용할 때)부터 해당 상호 작용에 대한 응답으로 브라우저가 실제로 이벤트 핸들러 처리를 시작하기까지의 시간을 측정합니다. | 7       |
+| cls    |       <span class='type'>Number</span>       | Cumulative Layout Shift(CLS)는 동적으로 불러온 콘텐츠로 예기치 못한 레이아웃 이동을 수치화하여 표현한 점수입니다.                                                                                       | 2       |
+
+</div>

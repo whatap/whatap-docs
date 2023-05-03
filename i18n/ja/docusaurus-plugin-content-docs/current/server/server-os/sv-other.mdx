@@ -1,0 +1,39 @@
+---
+id: server-other
+title: サーバーコンピューター以外の場合
+description: サーバーコンピューターではない環境でWhaTapサーバーモニタリングエージェントをインストールする方法を提供します。
+tags:
+  - Server
+  - インストール
+  - Linux
+  - Windows
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+ノートパソコンのようにサーバーコンピューターではないパソコンやIPアドレスが変わるWi-Fiを使用する環境では、次のオプションを適用してください。 
+
+<Tabs>
+<TabItem value="lx" label="Linux">
+
+```bash title=SH
+echo "ipreg=false" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows">
+
+```bash title='SH' {2,3}
+// 管理者権限パワーシェルで次のコマンドを実行してください。
+Add-Content "c:\Program Files\WhatapInfra\whatap.conf" "ipreg=false"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>
+
+:::note
+IPが変更されるたびに自動的に再登録されないため、便利に使用できます。
+:::

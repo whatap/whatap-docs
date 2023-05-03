@@ -1,0 +1,35 @@
+## OSGI フレームワーク対応アプリケーション・サーバーの場合
+
+OSGIフレームワーク構造を持つアプリケーション・サーバーの場合は、JVMオプションにエージェント・パッケージプリフィックス(whatap)を登録します。
+
+JBoss EAP6.0以降、 Jboss AS7.0以降、 Wildfly 8.0以降、IBM WebSphere AS 7.0以降が含まれます。
+
+### JBoss AS, Wildfly, JBoss EAP6.0以降
+
+次のファイルにプレフィックスを登録します。
+
+```apacheconf title='$JBOSS_HOME/bin/standalone.conf(domain.conf)'
+-Djboss.modules.system.pkgs=whatap
+```
+
+![JBOSS EAP 7.0](https://img.whatap.io/media/agent_java/install/410.png)
+
+### WebSphere
+
+JVM オプションとして、以下を追加します。
+
+```bash
+-Dcom.ibm.ws.classloader.server.alwaysAllowedPackages=whatap
+```
+
+-   デフォルト値として '\*' で指定されている場合、設定は必要ありません。
+-   設定位置は、[WebSphere](add-jvm-opt/websphere)を参照してください。
+
+_security.policy_権限を次のように追加してください。
+
+```java title='$WEBSPHERE_HOME/properties/server.policy 또는 $WEBSPHERE_PROFILE_HOME/properties/server.policy'
+grant codeBase "file:$WHATAP_HOME/-"
+{
+   permission java.security.AllPermission;
+};
+```

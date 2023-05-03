@@ -1,0 +1,53 @@
+## Non-HTTP transaction tracing
+
+-   **trace_auto_transaction_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>Collection is not allowed when the trace target method is not performed within the transaction start point (`Javax.http.httpservlet`, `hook_service_*`). In this case, set to make the trace target method become the transaction start point.
+    :::note
+    This is used when finding the end point of the background transaction mainly in the development environment.
+    :::
+
+-   **trace_auto_transaction_backstack_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>If the value of the `trace_auto_transaction_enabled` option is `true`, the stack trace is recorded upon start of transaction. As the above, the start point of transaction can be found.
+
+-   **trace_background_socket_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>
+    Tracing is recorded even when the socket is opened by the background, not by the transaction.
+
+-   **async_stack_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>Set whether or not to use the active stack function for the background threads.
+
+-   **async_thread_match** <span class='type'>String</span><br/>
+    Set the background thread name for dumping the active stacks. To set multiple items, use comma (,) as the delimiter. When setting the name, you can use a comparison pattern using an asterisk (\*), such as "Thread-\*."
+
+-   **async_thread_parking_class** <span class='type'>String</span><br/>
+    Default `sun.misc.Unsafe`<br/>If the top method of the stack is a class or method registered in `async_thread_parking`, the system considers that the thread is parked and does not generate any dump.
+
+-   **hook_service_patterns** <span class='type'>String</span><br/>
+    It sets the start point pattern for non-HTTP transaction tracing.
+
+-   **hook_serivce_ignore_methods** <span class='type'>String</span><br/>
+    Among the settings in `hook_service_patterns`, unnecessary methods as the start point can be added.
+
+-   **hook_service_supers** <span class='type'>String</span><br/>
+    Set this if the common denominator of the start points for non-HTTP transaction tracing inherits a method from a specific class.
+
+-   **hook_service_interfaces** <span class='type'>String</span><br/>
+    Set this if the common denominator of the start points for non-HTTP transaction tracing has implemented a specific interface.
+
+-   **hook_service_access_public_enabled** <span class='type'>Boolean</span><br/>
+    Default 'true'<br/>When setting the transactions for the non-HTTP daemon process, it sets the access permission criteria to on or off only for public methods.
+
+-   **hook_service_access_private_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>When setting the transactions of the non-HTTP daemon process, it sets the access permission criterion to on or off only for private methods.
+
+-   **hook_service_access_protected_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>When setting the transactions of the non-HTTP daemon process, it sets the access permission criterion to on or off only for protected method.
+
+-   **service_name_mode** <span class='type'>String</span><br/>
+      Default `full`<br/>You can use the following options with the transaction name.
+
+    -   `full`: Full class name is used.
+    -   `class`: The service name is used with the service name.
+    -   `method`: The service name is used with the method name.
+    -   `string`: The service name is used with the first parameter in the string.
+    -   `arg`: Among parameters, the service name is used with the parameter of the index set in the `service_name_index` option.

@@ -1,0 +1,122 @@
+---
+id: dashboard-widget-setting
+title: Setting a widget
+description: You can change the widget's graph chart settings on the dashboard screen.
+tags:
+  - Browser Monitoring
+  - Dashboard
+  - Widget
+---
+
+Widgets placed in the dashboard menu can be set with the desired options.
+
+:::note
+Depending on the screen size of the web browser, the icon shape on the upper right of a widget may differ. If you select ![More icon](/img/ico-more.svg), the additional icons appear.
+:::
+
+## Changing data based on the graph chart
+
+![Widget](/img/widget-sample.png)
+
+위젯의 오른쪽 위에 ![지시선 1](/img/number-01.png) 메트릭스 버튼을 선택하세요. **_메트릭스_** 팝업창이 나타납니다. You can change the data of the graph chart by selecting the desired item.
+
+:::note
+
+-   **_메트릭스_** 팝업창에서 선택할 수 있는 항목은 위젯에 따라 다를 수 있습니다.
+-   위젯의 데이터에 따라 메트릭스 버튼을 지원하지 않을 수 있습니다.
+    :::
+
+## Viewing the full screen
+
+전체 화면으로 보고 싶은 위젯의 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택하세요. You can check the widget's graph chart in full screen on the web browser.
+
+![위제 전체 화면](/img/widget-fullscreen-mode.png)
+
+-   화면 오른쪽 위에 ![지시선 1](/img/number-01.png) 옵션 버튼들을 선택해 원하는 데이터를 다양한 방식으로 조회할 수 있습니다.
+-   화면 오른쪽 ![지시선 2](/img/number-02.png) 영역은 메트릭스 버튼을 통해 선택할 수 있는 데이터 유형입니다. [다음 문서](#change-data)를 참조하세요.
+
+:::note
+위젯의 데이터에 따라 선택할 수 있는 옵션이 다를 수 있습니다.
+:::
+
+### Changing the data lookup time
+
+You can see the current data flow in real time and also check the data of the past. ![시간 선택 아이콘](/img/ico-time-set.svg)을 선택하세요. **_시간 선택_** 팝업창이 나타납니다.
+
+![시간 선택](/img/widget-select-time.png)
+
+-   To change the data lookup time on the graph chart, deselect **_Use dashboard settings_**.
+-   그래프 차트를 실시간으로 모니터링하려면 ![실시간 아이콘](/img/ico-play-time.svg) 버튼을 선택하세요.
+-   조회 시간은 ![일시 정지 아이콘](/img/ico-pause.svg) 버튼을 선택한 다음 변경할 수 있습니다.
+-   ![왼쪽 방향 아이콘](/img/left-arrow.svg) 또는 ![오른쪽 방향 아이콘](/img/right-arrow.svg) 버튼을 선택해 시간을 이동할 수 있습니다. 이동 간격은 오른쪽에 설정된 ![지시선 1](/img/number-01.png) 시간 간격입니다.
+-   ![지시선 1](/img/number-01.png) 시간 간격 버튼을 클릭해 시간 간격을 선택할 수 있습니다.
+-   Click the Date & Time area to manually select the desired date and time.
+
+### Comparing with the previous time
+
+You can compare the past data with the current data. ![이전 시간과 비교 아이콘](/img/ico-timing.svg) 버튼을 선택하세요. **_이전 시간과 비교_** 팝업창이 나타납니다.
+
+![이전 시간과 비교](/img/widget-compare-time.png)
+
+You can compare the time in seconds, minutes, hours, and dates, or select a date for comparison. 원하는 옵션을 선택한 다음 **_적용_** 버튼을 클릭해야 그래프 차트에 적용할 수 있습니다. 이전 시간 데이터와 비교를 취소하려면 **_미설정_**을 클릭한 다음 적용 버튼을 선택하세요.
+
+### Changing the reference data{#change-data}
+
+![Metrics](/img/widget-metric.png)
+
+1.  From the options on the upper right, select a text that corresponds to the widget's metric. (It is usually located at the third position.)
+
+2.  메트릭스 팝업창이 나타납니다.
+
+3.  Select a desired item.
+
+Change the data in the graph chart with the selected item.
+
+### Checking the top N data
+
+-   **_상위 5_** 버튼을 클릭하면 최대 상위 10 항목까지 선택할 수 있습니다. You can apply the data to the graph chart in ascending order by the selected number.
+
+    ![상위 N](/img/widget-n-data.png)
+
+-   ![상위 N 아이콘](/img/ico-topn-graph.svg) 버튼을 선택해 상위 N 데이터 항목을 그래프 차트에 오버레이 형식으로 표시할 수 있습니다. 그래프 차트에서 상위 N 데이터 항목을 사라지게 하려면 ![그래프 아이콘](/img/ico-normal-graph.svg) 버튼을 선택하세요.
+
+### Viewing the data with MXQL
+
+MXQL을 이용해 데이터를 조회하려면 ![메트릭스 편집 아이콘](/img/ico-edit-metric.svg) 버튼을 선택하세요. MXQL editing window appears.
+
+:::note
+MXQL에 대한 자세한 내용은 [다음 문서](../mxql/mxql-overview)를 참조하세요.
+:::
+
+### Displaying the data of the previous day
+
+![전일 데이터 표시하기](/img/widget-before-data.png)
+
+-   전일 데이터와 비교해 그래프 차트를 확인하려면 ![전일 데이터 비교 아이콘](/img/ico-before-data.svg) 버튼을 선택하세요. ![지시선 1](/img/number-01.png) 화면 왼쪽 위에 전일 데이터의 값을 표시할 수 있습니다.
+-   화면 오른쪽 위에 ![지시선 2](/img/number-02.png) **평균** 버튼을 클릭해 그래프 차트의 데이터 유형을 변경할 수 있습니다. You can select the following options. 기본값은 **_평균_**입니다.
+    -   **_최근값_**
+    -   **_최대값_**
+    -   **_평균_**
+    -   **_합산_**
+
+### Changing the table columns
+
+In case of the data table widgets, you can change columns in full screen. 오른쪽 위에 ![컬럼 아이콘](/img/ico-column.svg) 버튼을 선택하세요. **_컬럼 편집_** 창이 나타나면 테이블에 표시할 컬럼을 숨기거나 추가할 수 있습니다. 설정을 완료한 다음 **_저장_** 버튼을 선택해야 데이터 테이블 차트에 적용할 수 있습니다.
+
+![컬럼 편집](/img/widget-column.png)
+
+## Configuring the chart
+
+y축의 최대값을 설정하고 수평선을 추가해 임계치를 설정하려면 위젯의 오른쪽 위에 ![설정 아이콘](/img/ico-setting.svg) 버튼을 선택하세요.
+
+![차트 설정](/img/widget-chart-set.png)
+
+-   **_y축 차트 최대값_**: **_자동_** 또는 **_고정_**을 선택해 y축의 최대값을 설정할 수 있습니다. **_고정_**을 선택한 경우 수치를 입력할 수 있습니다. 수치를 입력했다면 **_적용_** 버튼을 선택하세요.
+
+-   **_수평선 설정_**: 그래프 차트에 수평선을 추가해 임계치를 설정하고 효율적으로 모니터링할 수 있습니다.
+
+    -   **_+ 추가_** 버튼을 선택한 다음 **_라벨_**과 **_임계치_** 항목에 수치를 입력하고, 색상을 선택하세요. **_임계치_** 항목에서는 **_범위_**를 선택해 수평선 구역을 설정할 수 있습니다. **_적용_** 버튼을 선택해 설정을 완료하세요.
+
+    -   수평선을 삭제하려면 ![삭제 아이콘](/img/ico-trash-red.svg) 버튼을 선택하세요.
+
+-   **_차트 최대값 표시_**: 그래프 차트에 최대값을 표시할 수 있습니다. It displays the highest number on the chart.

@@ -1,0 +1,48 @@
+---
+id: agent-control-function
+title: Control of agent functions
+description: The following provides the method how to control the functions of the application server.
+tags:
+  - PHP
+  - Controlling the function
+  - Configuration
+  - Application
+---
+
+The PHP application server's functions can be controlled.
+
+-   **whatap.stat_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>
+      It enables the statistical data tracing. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes.
+
+-   **whatap.license**<span class='type'>String</span><br/>
+      에이전트를 설치할 때 서버로부터 부여받은 를 설정합니다. 에는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함하고 있습니다.
+
+-   **whatap.realtime_user_thinktime_max**<span class='type'>Milliseconds</span><br/>
+      Default `300000`<br/>
+      Set the maximum call interval credited by the same user when measuring the number of real-time users.
+
+-   **whatap.time_sync_interval_ms**<span class='type'>Milliseconds</span><br/>
+    Default `300000`<br/>
+    Set the synchronization interval between the agents and the server. For no synchronization, set it to `0`.
+
+-   **whatap.text_reset**<span class='type'>Int</span><br/>
+        Default `0`<br/>
+        The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If the value is set different from the previous setting, the data is sent again.
+    :::note
+    Transaction URLs and SQL strings correspond to text data.
+    :::
+
+-   **whatap.ext.error_enabled**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        It activates the function to collect errors from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.ext.exception_enabled**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        It activates the function to collect exceptions from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.debug_gc_percent**<span class='type'>Int</span><br/>
+      Default `200`<br/> 
+      It can reduce the CPU load by increasing the interval between GC calls by the whatap-php service daemon. The memory usage increases instead of reducing the CPU load. It applied up to 1000.

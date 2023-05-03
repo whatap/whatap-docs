@@ -1,0 +1,97 @@
+---
+id: install-docker-java
+title: Docker Javaインストール
+description: コンテナ内のJavaアプリケーションをモニタリングするためのエージェントのインストール段階です。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - アプリケーションインストール
+  - Java
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Dockerコンテナベースで実行するJavaアプリケーションのJVM Optionにエージェント適用のための設定を追加し、コンテナイメージをパッケージングする過程です。
+
+## エージェントダウンロード
+
+<Tabs>
+<TabItem value="dockerinstall" label="Docker Install" default>
+
+{@include: _docker-build.mdx}  
+
+1.  WhaTapエージェントをインストールしたDockerイメージをデプロイしてください。
+
+</TabItem>
+<TabItem value="direct" label="직접 설치">
+
+1.  インストールファイル(_whatap.agent.java.tar.gz_)をダウンロードするには、**_ダウンロード_**ボタンを選択してください。
+
+2.  Dockerfileを作成できるサーバーにアップロードし、圧縮を解凍してください。
+
+    :::info
+
+    インストールするサーバーから直接ダウンロードするには、次のコマンドを実行してください。
+
+    ```bash
+    wget https://api.whatap.io/agent/whatap.agent.java.tar.gz
+    ```
+
+    :::
+
+3.  _whatap.conf_ファイルで設定内容を確認してください。
+
+    ```ini
+    license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+    whatap.server.host={収集サーバーのIP}
+    ```
+
+4.  _paramkey.txt_ファイルを作成し、6桁の英語と数字で構成されたパスワードを入力してください。
+
+5.  次の例を参考にしてDockerfileを作成してください。
+
+    ```bash title='Dockerfile 생성 예시'
+    FROM openjdk:8-jdk-alpine
+
+    # whatap
+    RUN mkdir -p /whatap
+
+    COPY ./whatap/whatap.conf /whatap/
+    COPY ./whatap/paramkey.txt /whatap/
+    COPY ./whatap/whatap-virtual-X.Y.Z.jar whatap-virtual-X.Y.Z.jar
+    COPY ./whatap/whatap.agent-X.Y.Z.jar /whatap/
+
+    EXPOSE 8085
+
+    ENTRYPOINT ["java", "-javaagent:/whatap/whatap.agent-X.Y.Z.jar", "-Dwhatap.micro.enabled=true", "-cp", "whatap-virtual-X.Y.Z.jar", "-Dwhatap.port=8085", "-Duser.timezone=Asia/Seoul", "-Dfile.encoding=UTF-8", "com.virtual.App"]
+    ```
+
+    :::tip
+
+    Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加する必要があります。
+
+    :::
+
+:::note
+
+-   _whatap-virtual-X.Y.Z.jar_：モニタリング対象(サンプルアプリケーション)
+-   _whatap.agent-X.Y.Z.jar_：WhaTapエージェント
+-   エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+-   JVMオプション追加の詳細については、[次の文書](https://docs.whatap.io/java/install-agent#addjvmopt)を参考にしてください。
+
+:::
+
+</TabItem>
+<TabItem value='eksfargate' label='EKS Fargate'>
+
+{@include: _docker-build.mdx}  
+
+{@include: _pod-sidecar.mdx}
+
+1.  WhaTapエージェントをインストールしたDockerイメージをデプロイしてください。
+
+</TabItem>
+</Tabs>
+
+{@include: _check-install-agent.mdx}

@@ -1,0 +1,15 @@
+## Application alert
+
+Application alerts provide both Event Title and Event Message. If the **_Notify when event status is resolved_** function is used and the event occurrence condition is released, the Event Off message is transmitted.
+
+| Event Type         | Event Level | Event Title             | Event Message                                                 | Event Off Message                                                  |
+| ------------------ | ----------- | ----------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Application CPU    | Warning     | HIGH_CPU                | CPU is high. `${value}% (>= ${threshold}%)`                   | RECOVERED: CPU is high. less than `${threshold}%`                  |
+| Application CPU    | Critical    | CRITICAL_HIGH_CPU       | CPU is too high. `${value}% (>= ${threshold}%)`               | RECOVERED: CPU is too high. less than `${threshold}%`              |
+| Application Memory | Warning     | HIGH_MEMORY             | Memory is high. `${value}% (>= ${threshold}%)`                | RECOVERED: Memory is high. less than `${threshold}%`               |
+| Application Memory | Critical    | CRITICAL_HIGH_MEMORY    | Memory is too high `${value}% (>= ${threshold}%)`             | RECOVERED: Memory is too high. less than `${threshold}%`           |
+| Application Disk   | Warning     | HIGH_DISK               | Disk is high `${value}% (>= ${threshold}%)`                   | RECOVERED: Disk id high. less than `${threshold}%`                 |
+| Application Disk   | Critical    | CRITICAL_HIGH_DISK      | Disk is too high `${value}% (>= ${threshold}%)`               | RECOVERED: Disk is too highf. less than `${threshold}%`            |
+| Normal Transaction | Warning     | HIGH_ACTIVE_TRANSACTION | Active Transaction Count is over `${value} (>= ${threshold})` | RECOVERED: Active Transaction Count is less than `${threshold}`    |
+| Error Transaction  | Warning     | HIGH_ERROR_TRANSACTION  | Error Transaction Count is over `${threshold} (${value})`     | RECOVERED: Error Transaction Count is less than `${threshold}`     |
+| Slow Transaction   | Warning     | TOO_MANY_SLOW_TX        | Too many delayed transactions `(${value}, above ${time} ms)`  | RECOVERED: Too many delayed transactions. less than `${threshold}` |

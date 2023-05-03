@@ -1,0 +1,11 @@
+## Applying the AES 256 encryption
+
+The WhaTap DBX agent transfers the collected data to the server after encryption. You can change this depending on the importance of the data or setting. Basically, the XOR operation and encryption through the AES algorithm are used, and encryption and decryption are performed by dividing the plain text into 128-bit units. It can be expanded up to 256 bits depending on the setting.
+
+Add the following options to the _whatap.conf_ file in the path where the WhaTap DBX agent has been installed.
+
+```ini title='whatap.conf' {3} showLineNumbers
+cypher_level=256
+```
+
+Add the settings and then restart the agent.

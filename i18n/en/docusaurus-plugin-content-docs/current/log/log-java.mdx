@@ -1,0 +1,78 @@
+---
+id: log-java
+title: Java
+description: It explains how to collect logs from your Java application.
+tags:
+  - Log Monitoring
+  - Java
+---
+
+To collect logs from your Java application, complete the following 3 steps:
+
+## Agent Update
+
+It is available from Java agent 2.1.1. For more information about update, see [the following](../java/update-agent).
+
+## Checking the agent settings
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. Proceed with the process according to the instructions in the **_Check Agent Settings_** tab of the **_Start Log Monitoring_** section.
+
+1.  Under Project Menu, select **_Management_** > **_Agent CONFIG._**.
+
+2.  In the **_Write Options_** tab, select **_Direct Input_**. Add the `logsink_enabled=true` option in the field. <br/>
+    ![](https://img.whatap.io/media/images/log_java_config1.png)
+
+3.  Restart the application to apply the log monitoring.
+
+### Key options
+
+-   **hooklog_enabled** <span class='type'>Boolean</span><br/>
+        Default `false`<br/>
+        It enables the log monitoring by hooking the log library. 
+    :::caution
+    Before running the application, this option must have been enabled in _whatap.conf_ to dynamically turn on or off the monitoring through the `logsink_enabled` setting.
+    If the `logsink_enabled` option is set to `true` before running the application, log monitoring is possible without a separate setting.
+    :::
+    :::note
+    If there is a possibility to use the log monitoring, it is recommended to set this option in advance.
+    :::
+
+-   **logsink_enabled** <span class='type'>Boolean</span><br/>
+        Default `false`<br/>
+        It turns on or off Log Monitoring.\
+    :::caution
+    Before running the application, if in _whatap.conf_, the `hooklog_enabled` option is set, this option can dynamically turn on or off the log monitoring.
+    ::: 
+
+-   **logsink_zip_enabled** <span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      It sets whether or not to compress the log data to transfer. 
+
+-   **logsink_trace_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It sets whether or not to expose the log tab of the transaction trace by adding the transaction ID into the log.  
+
+## Enabling the log monitoring
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+You can enable or disable the WhaTap log monitoring with the toggle button in the **_Activate log monitoring_** tab of the **_Starting the log monitoring_** section.
+
+{@include: ../common-items/_log-java-start.mdx} 
+
+{@include: ../common-items/_log-active-note.mdx} 
+
+<!-- 내용 최신화 확인 -->
+
+<!-- 
+
+프로젝트 관리자만 로그 모니터링 설정을 수정할 수 있습니다.
+
+토글 버튼을 켜면 로그 모니터링이 활성화됩니다.
+활성화한 날부터 15일 동안 무료로 체험하실 수 있습니다.
+
+토글 버튼을 끄면 로그 모니터링이 비활성화됩니다.
+로그를 더 이상 저장하지 않습니다.
+-->

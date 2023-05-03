@@ -1,0 +1,18 @@
+---
+id: php-2.4.1
+title: PHP Agent 2.4.1
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-02-16
+
+## Fixed（バグ修正）
+
+### mysqli関連デバッグログ出力の削除
+
+Mysqliライブラリの使用中にエラーが発生した場合、errornoとerror内容を収集します。 この時、デバッグログがerror_logに出力されます。
+
+該当ログを削除しました。 

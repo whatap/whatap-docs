@@ -1,0 +1,126 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+#### Registering the PHP extension module and whatap-php service
+
+To automatically install the PHP extension module and whatap-php service, apply the following.
+
+```bash title=SH
+$ sudo /usr/whatap/php/install.sh
+Input license key
+xxxxxxxxxxxxxxxx                          # 발급된 액세스 키 입력
+
+Input whatap.server.host
+192.x.x.x                                  # 발급된 서버 IP 입력
+```
+
+If the PHP extension module and whatap-php service are not recognized automatically, proceed with optional installation as the following.
+
+If Apache commands (`apachectl`, `httpd`, `apache2`) and PHP commands (CLI) have not been set in the default path ($PATH), or multiple PHPs have been installed and there are multiple PHP commands (php5, php70, php-zts, zts-php…), select an applied version for processing.
+
+```bash title=SH
+$ sudo /usr/whatap/php/install.sh manual
+
+Input license key
+xxxxxxxxxxxxxxxx                            # 발급된 액세스 키 입력
+
+Input whatap.server.host
+192.x.x.x                                    # 발급된 서버 IP 입력
+
+Input : which apache or php-fpm ex)/usr/sbin/httpd, /usr/sbin/apache2, /usr/sbin/php-fpm ...
+/usr/sbin/httpd                             # apache 및 php-fpm 명령어 위치 입력
+
+Input : which php ex) /usr/bin/php, /usr/bin/php5, /usr/bin/php70 ...
+/usr/bin/php5                                # php 명령어 위치 입력
+```
+
+#### Configuration script (install.sh)
+
+```bash title=SH
+Usage: install.sh [ commands manual|remove ]
+    install.sh -l <license> -s <server> -v <php version> -i <php config file> -p <process_name> [-z ]
+    install.sh -l <license> -s <server> -e <php command> -p <process_name> [-z ]
+Commands
+    auto(default) Auto scan web server and php environment
+    manual User input web server and php environment
+    remove Remove php extension and service(whatap-php)
+Options
+    -v <php version>     PHP version ex) 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0                        -v 5.3
+                           --php-version 5.3
+    -i <php config file> PHP config file
+                           -i /etc/php.ini
+                           --php-ini /etc/php.ini
+    -e <php cli>         PHP CLI(command line interface)
+                           -e /usr/bin/php
+                           --php-exe: /usr/bin/php-fpm
+    -p <process name>    Web server or PHP-FPM process name. for get used memory
+                           -p httpd
+                           -p httpd.worker, -process-name: php-fpm
+    -l <license>         License key
+                           -l xxxxxxxxxxxxxxx,
+                           --license: xxxxxxxxxxxxx
+    -s <server>          WhaTap Server Host
+                           -s xx.xx.xx.xx/yy.yy.yy.yy,
+                           --server xxx.xxx.xxx.xxx
+    -z                   PHP thread safe
+                           -z ,
+                           --php-zts
+```
+
+-   **license**\
+      발급된 액세스 키 입니다.
+
+-   **server**\
+      Granted server IP.
+
+-   **php version**\
+      Server-installed PHP version(5.2. 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0).
+
+-   \*_php config file
+      Set the full path of php.ini installed on the server (_/etc/php.ini\*). Proceed with the configuration of the PHP extension.
+
+-   \*_php cli
+      Using the executable command on the command line in the PHP command's full path (_/usr/bin/php\*), you can check the basic PHP environment.
+
+-   **process name**\
+      Apache running process name (`httpd`, `apache2`, `httpd.worker`…) or PHP-FPM running process name (`php-fpm`, `php5-fpm`). It collects the memory data running.
+
+-   **zts**\
+      It sets whether or not to support Zend Thread Safe. 
+
+<!-- 
+**PHP 버전 지정 설치**
+
+```javascript title=SH
+$ /usr/whatap/php/install.sh -l [발급된 라이센스 key] -s [발급된 서버 IP] -v [PHP 버전 x.x] -i [php.ini의 전체 경로] -p [프로세스명]
+$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
+```
+
+**PHP Cli 명령어 지정 설치**
+
+```javascript title=SH
+$ /usr/whatap/php/install.sh -l [발급된 라이센스 key] -s [발급된 서버 IP] -e [PHP Cli] -p [프로세스명]
+$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php -p apache2
+$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php-fpm -p php-fpm
+```
+-->
+
+<Tabs>
+<TabItem value="phpvs" label="PHP 버전 지정 설치" default>
+
+```bash title=SH
+$ /usr/whatap/php/install.sh -l [발급된 액세스 키] -s [발급된 서버 IP] -v [PHP 버전 x.x] -i [php.ini의 전체 경로] -p [프로세스명]
+$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
+```
+
+</TabItem>
+<TabItem value="phcli" label="PHP Cli 명령어 지정 설치">
+
+```bash title=SH
+$ /usr/whatap/php/install.sh -l [발급된 액세스 키] -s [발급된 서버 IP] -e [PHP Cli] -p [프로세스명]
+$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php -p apache2
+$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php-fpm -p php-fpm
+```
+
+</TabItem>
+</Tabs>

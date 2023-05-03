@@ -1,0 +1,187 @@
+---
+id: preview-1.101.x
+title: Preview 1.101.X
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[https://preview.whatap.io]（https://preview.whatap.io）で、次の新機能と修正した内容を事前に体験することができます。 
+
+::: 
+
+## Preview 1.101.08
+
+2023년 5월 3일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> > <UI>로그 파서 설정</UI> > <UI>필터 입력</UI> > 필터키의 오타 수정(okineName → okindName)
+
+-   <Status>Fixed</Status> <UI>로그</UI> > <UI>라이브 테일</UI> 메뉴에서 조회된 로그 데이터가 없는 경우 이전의 로그가 표시되는 현상 수정
+
+</div>
+
+## Preview 1.101.07
+
+2023년 5월 3일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 <b>로그 편집</b> 권한이 있음에도 <b>권한</b> 컬럼에 표시되지 않는 현상 수정
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 관리</UI> 메뉴에서 사용자가 설정한 테마에 따라 패널 제목 색상이 변경되지 않는 버그 수정
+
+</div>
+
+## Preview 1.101.06
+
+2023년 5월 2일
+
+<div class='indentTab'>
+
+<p><Status>Feature</Status> <b>로그 편집</b> 권한 추가 및 관련 기능 <UI>로그 설정</UI> 메뉴에 적용</p>
+
+</div>
+
+## Preview 1.101.05
+
+2023년 5월 2일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> 브라우저 창 크기가 특정 크기일 때, <UI>Flex 보드</UI> 메뉴의 <UI>관리자</UI> 모드에서 위젯의 JSON 편집 창을 불러오면 텍스트 상자에 스크롤이 반복해서 나타났다가 사라지는 현상 수정</p>
+
+</div>
+
+## Preview 1.101.04
+
+2023年4月28日
+
+<div class='indentTab'>
+
+### 「共通」
+
+-   <Status>Fixed</Status>ログプロファイル照会時、断続的にログが照会されないバグを修正
+
+-   <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>使用量</UI>メニューでUI改善を再反映
+
+### 「Application」
+
+<p><Status>Fixed</Status> <UI>統計・レポート</UI> > <UI>統計</UI>メニューで<UI>ドメイン</UI>タブにアクセスすると発生するホワイトアウト現象を修正</p>
+
+</div>
+
+## Preview 1.101.03
+
+2023年4月28日
+
+<div class='indentTab'>
+
+### 「Application」
+
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>トランザクション検索</UI>メニューでフィルターのうち数字だけを入力するオプションに対して数字タイプの検証ロジックを適用</p>
+
+</div>
+
+## Preview 1.101.02
+
+2023年4月27日
+
+<div class='indentTab'>
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
+
+---
+
+### `ECS`
+
+<p><Status>Fixed</Status> <UI>Flexボード</UI>、<UI>Amazon ECS</UI> > <UI>Service</UI>メニューで<UI>ecs_service</UI>ウィジェットに全体サービスのうち1つだけが表示される問題を修正</p>
+
+</div>
+
+## Preview 1.101.01
+
+2023年4月27日
+
+<div class='indentTab'>
+
+### 「共通」
+
+#### 利用履歴
+
+-   <Status>Change</Status> <UI>使用量</UI>メニューでユーザーエクスペリエンスを改善するためのUI改善
+
+-   <Status>Feature</Status> <UI>使用量</UI>メニューでプロジェクト名を検索できる機能を追加
+
+-   <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで<b>Brwoser</b>, <b>Log</b>、<b>Cloud</b>、<b>Amazon ECS</b>製品の場合、ホストカラムデータを表示しないように修正
+
+#### Flexボード
+
+-   <Status>Change</Status>ダッシュボードでサイドメニューのオン・オフに関係なくウィジェットの相互作用ボタンの状態が変更されないように修正
+
+-   <Status>Fixed</Status>リッチテキストウィジェットの場合、修正後に保存した内容が反映されないバグを修正
+
+---
+
+### `AWS Log`
+
+-   <Status>Feature</Status>ログ照会権限のあるユーザーに限って<UI>ダッシュボード</UI>メニュー内の<UI>ライブテール</UI>、<UI>ログ検索機</UI>、<UI>ログトレンド</UI>メニューにアクセスできるように修正
+
+-   <Status>Change</Status>ログ照会権限のないユーザーは、<UI>警告通知</UI> > <UI>イベント設定</UI>メニューに進入できるように修正(ただ、機能の追加・修正はできない)
+
+---
+
+### 「Database」
+
+#### DB共通
+
+<p><Status>Change</Status>サイドバーで<UI>分析</UI> > <UI>メトリクス異常検知</UI>メニュー非表示</p>
+
+#### POSTGRESQL
+
+-   <Status>Change</Status> <UI>統計・レポート</UI> > <UI>PG_STAT_STATEMENT</UI>メニュー非表示
+
+-   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューで案内メッセージのリンクをクリックすると空のページに移動する問題を修正
+
+#### MYSQL
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューで案内メッセージのリンクをクリックすると空のページに移動する問題を修正</p>
+
+---
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
+
+---
+
+### `ECS`
+
+<p><Status>Fixed</Status> <UI>Flexボード</UI>、<UI>Amazon ECS</UI> > <UI>Service</UI>メニューで<UI>ecs_service</UI>ウィジェットに全体サービスのうち1つだけが表示される問題を修正</p>
+
+</div>
+
+## Preview 1.101.0
+
+2023年4月26日
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータの照会時にデータが出力されない問題を修正</p>
+
+---
+
+### `Browser`
+
+<p><Status>Fixed</Status> <UI>プロジェクト一覧</UI>で<UI>リストビュー</UI>モードへの切り替え時<code>Browser</code>プロジェクトが照会されない問題を修正</p>
+
+</div>

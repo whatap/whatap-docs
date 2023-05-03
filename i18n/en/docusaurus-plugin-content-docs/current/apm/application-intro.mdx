@@ -1,0 +1,81 @@
+---
+id: application-intro
+title: Application Monitoring
+description: Java, PHP, Node.js, Python, .Net, Golang
+tags:
+  - Application Monitoring
+---
+
+import {Redirect} from '@docusaurus/router';
+
+export const Home = () => {
+  return <Redirect to="/java/introduction" />;
+};
+
+<Home/>
+
+<!--
+import DocCardList from '@theme/DocCardList'; -->
+
+WhaTap's Application Monitoring can monitor application in real time without reproducing failures. With WhaTap's proprietary technology, called "**Active Stack**," it provides improvement points to locate the source of problems from hidden areas that were not found in other products.
+
+{@video: https://www.whatap.io/video/main-product/monitoring_step_0.mp4}
+
+## Features of Application Monitoring
+
+-   **Real-time transaction monitoring**
+
+    WhaTap displays the status of active transactions in real time. Any application issue manifests itself as an increase of active transactions. If you can immediately check SQLs, outbound calls, and method stacks being executed the very moment when transactions increase, you can recognize or analyze the problem very fast.
+
+-   **Transaction performance Deep Dive**
+
+    WhaTap can collect and analyze the performance history of all transactions. Transaction performance can be traced down to the method level as well as SQLs and HTTP calls. In particular, the **active stack** function enables you to analyze the method level without a cumbersome task of complicated method profile setting. 
+
+    :::note
+    The active stack function is available only in Java and Python:::
+
+-   **MSA call pattern analysis**
+
+    WhaTap visualizes the ratio of calls based on the transaction URL for the relationships between complex applications that have the MSA structure. This enables you to view the call relations and change of call ratios.
+
+-   **Analysis of AI-based response distribution patterns**
+
+    WhaTap automatically recognizes specific patterns through machine learning and sends alert notifications to operators. This can inform you of the issues that the operator did not recognize. (Please contact support for on-premise type)<br/> Application number: 10-2020-0037381
+
+-   **Analysis of the multi-project transaction linkage**
+
+    WhaTap provides the transaction-based tracing in the MSA environment. All transactions can be traced to determine which applications were delayed.
+
+-   **Stack statistics analysis**
+
+    Statistical analysis can find tuning points that are difficult to find in real-time monitoring or profile data. You can also select improvement targets through graphs and tables, or check response delays in specific time periods.
+
+-   **Post analysis (Cube)**
+
+    You can check various metrics at a time based on the time axis. Because it is possible to specify the time zone where the response time, error count, or throughput is high, you can identify problematic factors in the same time zone or accurately view the service status.
+
+-   **Load control in service congestion**
+
+    If there are excessive requests that the system cannot handle, part of them are rejected or incorrect ones are blocked for service stability.
+
+-   **Asynchronous transaction trace**
+
+    WhaTap's unique BCI (Byte Code Instrumentation) technology effectively traces the performance of asynchronous transactions. It collects transaction profiles for applications that are using WebFlux, Reactor, Hystrix, etc.
+
+## Common environment
+
+### Supporting the browser
+
+{@include: ../getting-started/_supported-browser.mdx}  
+
+### Firewall
+
+{@include: ../getting-started/_proxy.mdx}  
+
+### Mobile app
+
+{@include: ../getting-started/_mobile-app.mdx}  
+
+## Installation of the application monitoring agent{#install-agent}
+
+The following explains how to install agents for the servers running Java, PHP, Node.js, Python, .Net, and Golang applications. Select applications that suit your server environment.

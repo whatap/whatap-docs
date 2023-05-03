@@ -1,0 +1,71 @@
+{@include: ../common-items/_log-role-view.mdx}
+
+ホーム画面 > プロジェクト選択 > {@include: _lt-path.mdx}
+
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、プロジェクトメニューの下位に{@include:\_lt-path.mdx}メニューを選択してください。**_ライブテール_**メニューからサーバーコンソールにアクセスすることなく、モニタリング画面上でログデータストリームを簡単に確認できます。大量のログの中から必要なログを選別し、ハイライト機能により希望するログを迅速に認知できます。 
+
+![ライブテールsc](/img/log-live-tail.png)
+
+**_ライブテール_**メニューから複雑なログにも簡単にアクセスできます。必要に応じて**_フィルター_**または**_ハイライト_**などの機能を活用してリアルタイムで照会することができます。ログデータの照会サイクルは2秒です。{@include: ../common-items/_log-ui-main-term.mdx}
+
+## ![]（/img/number-01.png）フィルター領域
+
+#### フィルター適用
+
+{@include: ../common-items/_log-filter-apply.mdx} 
+
+#### フィルター修正
+
+{@include: ../common-items/_log-filter-modify.mdx}
+
+#### フィルター数式
+
+{@include: ../common-items/_log-filter-expression.mdx}
+
+#### 検索キー（Search Key）
+
+次のイメージでは、青いボックス部分はパーシング（parsing）された検索キーです。検索キーは、**_ログ_** > **_設定_**の**_ログParser設定_**でパーシングロジックを登録して設定することができます。
+![検索キー](https://img.whatap.io/media/images/livetail_007_parsed_key.png)
+
+#### フィルター入力文法
+
+{@include: ../common-items/_log-filter-rule.mdx}
+
+## ![](/img/number-02.png)コンテンツフィルター領域
+
+#### Contentフィルター
+
+ログ内のコンテンツのうち、そのキーワードを含むログのみをフィルタリングします。 
+
+![](https://img.whatap.io/media/images/livetail_008_contents_filter.png)
+
+-   入力ウィンドウにフィルターを入力して![アイコン]\(/img/ic-search.svg）**_検索_**ボタンをクリックしてください。 クライアントからログデータをフィルタリングし、[number-s3](/img/number-03.png)領域で照会することができます。 
+-   キーワードを含むContentの文字列はハイライトされます。
+-   単一または複数のキーワードでフィルターをかけることができます。
+
+<!-- whatap is good~whatap is the best -->
+
+#### Contentフィルター条件
+
+複数キーワードでフィルターをする場合は、次のように作成します。
+
+| 入力文字列               | 説明                                    | 結果                |
+| ------------------- | ------------------------------------- | ----------------- |
+| a b c               | 分かち書きで各キーワードを区分します。                   | a, b, c           |
+| "Whatap is good."   | 分かち書きをキーワードに含めたい場合''または""で囲みます。       | Whatap is good.   |
+| "Whatap\\ is good." | ""で囲まれたキーワードから\\を含む場合、\\で入力する必要があります。 | Whatap\\ is good. |
+
+#### ハイライト
+
+目的のキーワードを簡単に識別できるようにハイライト機能を提供します。
+
+![ライブテールハイライト](/img/lt-highlight.png)
+
+-   ![アイコン](/img/ic-highlight.svg) **_ハイライト_** ボタンをクリックしてキーワードを入力してください。 
+-   入力ウィンドウ左側の**_色_**を選択すると、選択できる色メニューが表示されます。 
+-   基本的にログレベルによるハイライト(<span class='logwr'>WARN</span>, <span class='loger'>ERROR</span>, <span class='logft'>FATAL</span>)が適用されています。   
+-   設定した内容は**プロジェクト単位**で保存されます。  
+
+#### テーブル設定
+
+-   ![number-s](/img/number-02.png)領域の右側{@include: ../common-items/_log-ui-table-setting.mdx}

@@ -1,0 +1,90 @@
+---
+id: metrics-data-list
+title: CUBRID指標
+description: CUBRID指標について案内します。
+tags:
+  - CUBRID
+  - メトリックス
+  - データベース
+  - データベースモニタリング
+---
+
+データベースメトリクスは、データベースの作業量とリソース使用量を包括的に収集します。WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+
+<div class='db-metric-cubrid'>
+
+| 分類            | 項目                                         | 説明                                                                                                            |
+| ------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| File I/O関連    | `Num_file_removes`                         | 削除したファイル数                                                                                                     |
+| ^             | `Num_file_creates`                         | 作成したファイル数                                                                                                     |
+| ^             | `Num_file_ioreads`                         | ディスクから読み込んだ回数                                                                                                 |
+| ^             | `Num_file_iowrites`                        | ディスクに保存した回数                                                                                                   |
+| ^             | `Num_file_iosynches`                       | ディスクとの同期化を実行した回数                                                                                              |
+| ページバッファ関連     | `Num_data_page_fetches`                    | 読み込み（fetch）したページ数                                                                                             |
+| ^             | `Num_data_page_dirties`                    | ダーティページ数                                                                                                      |
+| ^             | `Num_data_page_ioreads`                    | ディスクから読み込んだページ数（この値が大きいほど効率が悪くなり、ヒット率が低いことに関係する）                                                              |
+| ^             | `Num_data_page_iowrites`                   | ディスクで記録したページ数（この値が大きいほど効率が悪くなる）                                                                               |
+| ^             | `Num_data_page_victims`                    | データバッファからディスクへの書き込みスレッドが活性化される回数（書き込みページまたは犠牲者（victim）の個数ではない）                                                |
+| ^             | `Num_data_page_iowrites_for_replacement`   | 候補に選ばれ、ディスクに書き込まれたデータページ数                                                                                     |
+| ^             | `Num_adaptive_flush_pages`                 | データバッファからディスクに書き込み（flush）したデータページ数                                                                            |
+| ^             | `Num_adaptive_flush_log_pages`             | ログバッファからディスクに書き込み（flush）したログページ数                                                                              |
+| ^             | `Num_adaptive_flush_max_pages`             | データおよびログバッファからディスクに書き込み（flush）を許可する最大ページ数                                                                     |
+| ^             | `Num_sort_io_pages`                        | ソート中にディスクからFetchしたページ数（この値が大きいほど効率が悪くなる）                                                                      |
+| ^             | `Num_sort_data_pages`                      | ソート中にページバッファで見つかったページ数（この値が大きいほど効率的になる）                                                                       |
+| ログ関連          | `Num_log_page_ioreads`                     | 読み込んだログページ数                                                                                                   |
+| ^             | `Num_log_page_iowrites`                    | 保存したログページ数                                                                                                    |
+| ^             | `Num_log_append_records`                   | 追加（append）したログレコード数                                                                                           |
+| ^             | `Num_log_archives`                         | 保管ログの個数                                                                                                       |
+| ^             | `Num_log_start_checkpoints`                | チェックポイント開始回数                                                                                                  |
+| ^             | `Num_log_end_checkpoints`                  | チェックポイント終了回数                                                                                                  |
+| ^             | `Num_log_wals`                             | 現在使用していない                                                                                                     |
+| トランザクション関連    | `Num_tran_commits`                         | コミットした回数                                                                                                      |
+| ^             | `Num_tran_rollbacks`                       | ロールバックした回数                                                                                                    |
+| ^             | `Num_tran_savepoints`                      | セーブポイント回数                                                                                                     |
+| ^             | `Num_tran_start_topops`                    | 開始したtop operationの個数                                                                                          |
+| ^             | `Num_tran_end_topops`                      | 終了したtop operationの個数                                                                                          |
+| ^             | `Num_tran_interrupts`                      | 割り込み数                                                                                                         |
+| 同時性/ロック関連     | `Num_page_locks_acquired`                  | ページロックを獲得した回数                                                                                                 |
+| ^             | `Num_object_locks_acquired`                | オブジェクトロックを獲得した回数                                                                                              |
+| ^             | `Num_page_locks_converted`                 | ページロックタイプを変換した回数                                                                                              |
+| ^             | `Num_object_locks_converted`               | オブジェクトロックタイプを変換した回数                                                                                           |
+| ^             | `Num_page_locks_re-requested`              | ページロックを再リクエストした回数                                                                                             |
+| ^             | `Num_object_locks_re-requested`            | オブジェクトロックを再リクエストした回数                                                                                          |
+| ^             | `Num_page_locks_waits`                     | ロックを待機するページ数                                                                                                  |
+| ^             | `Num_object_locks_waits`                   | ロックを待機するオブジェクト数                                                                                               |
+| インデックス関連      | `Num_btree_inserts`                        | 挿入された項目の個数                                                                                                    |
+| ^             | `Num_btree_deletes`                        | 削除された項目の個数                                                                                                    |
+| ^             | `Num_btree_updates`                        | 更新された項目の個数                                                                                                    |
+| ^             | `Num_btree_covered`                        | クエリ時にインデックスがデータをすべて含む場合の個数                                                                                    |
+| ^             | `Num_btree_noncovered`                     | クエリ時にインデックスがデータを一部だけ含むか、まったく含まない場合の個数                                                                         |
+| ^             | `Num_btree_resumes`                        | `index_scan_oid_buffer_pages`を超えたインデックスのスキャン回数                                                                |
+| ^             | `Num_btree_multirange_optimization`        | `WHERE ... IN ... LIMIT`条件のクエリに対し、多重範囲最適化（multi-range optimization）を行った回数                                     |
+| ^             | `Num_btree_splits`                         | B-treeノード分割演算回数                                                                                               |
+| ^             | `Num_btree_merges`                         | B-treeノードのマージ演算回数                                                                                             |
+| クエリ関連         | `Num_query_selects`                        | SELECTクエリの実行回数                                                                                                |
+| ^             | `Num_query_inserts`                        | INSERTクエリの実行回数                                                                                                |
+| ^             | `Num_query_deletes`                        | DELETEクエリの実行回数                                                                                                |
+| ^             | `Num_query_updates`                        | UPDATEクエリの実行回数                                                                                                |
+| ^             | `Num_query_sscans`                         | 順次スキャン（フルスキャン）回数                                                                                              |
+| ^             | `Num_query_iscans`                         | インデックススキャン回数                                                                                                  |
+| ^             | `Num_query_lscans`                         | LISTスキャン回数                                                                                                    |
+| ^             | `Num_query_setscans`                       | SETスキャン回数                                                                                                     |
+| ^             | `Num_query_methscans`                      | METHODスキャン回数                                                                                                  |
+| ^             | `Num_query_nljoins`                        | Nested Loopの結合（Join）回数                                                                                        |
+| ^             | `Num_query_mjoins`                         | マージ結合回数                                                                                                       |
+| ^             | `Num_query_objfetches`                     | オブジェクトを読み込み（fetch）した回数                                                                                        |
+| ネットワークリクエスト関連 | `Num_network_requests`                     | ネットワークリクエスト回数                                                                                                 |
+| クエリ計画キャッシュ関連  | `Num_plan_cache_add`                       | キャッシュエントリー（entry）が新たに追加された回数                                                                                  |
+| ^             | `Num_plan_cache_lookup`                    | 特定のキーを使用してルックアップ（lookup）を試みた回数                                                                                |
+| ^             | `Num_plan_cache_hit`                       | クエリ文字列ハッシュテーブルでエントリーを見つけた（hit）回数                                                                              |
+| ^             | `Num_plan_cache_miss`                      | クエリ文字列ハッシュテーブルでエントリーを見つけなかった（miss）回数                                                                          |
+| ^             | `Num_plan_cache_full`                      | キャッシュエントリーの個数が許可された最大個数を超えて犠牲者（victim）探索を試みた回数                                                                |
+| ^             | `Num_plan_cache_delete`                    | キャッシュエントリーが削除された（victimized）回数                                                                                |
+| ^             | `Num_plan_cache_invalid_xasl_id`           | `xasl_id`ハッシュテーブルでエントリーを見つけなかった（miss）回数。サーバーから特定のエントリーが削除（victimized）されたものの当該エントリーをクライアントでリクエストしたときに発生するエラー回数 |
+| ^             | `Num_plan_cache_query_string_hash_entries` | クエリ文字列ハッシュテーブルの現在のエントリー数                                                                                      |
+| ^             | `Num_plan_cache_xasl_id_hash_entries`      | xasl idハッシュテーブルの現在のエントリー数                                                                                     |
+| ^             | `Num_plan_cache_class_oid_hash_entries`    | class oidハッシュテーブルの現在のエントリー数                                                                                   |
+| バッファヒット率関連    | `Data_page_buffer_hit_ratio`               | ページバッファのヒット率<br/>(`Num_data_page_fetches` - `Num_data_page_ioreads`)\*100 / `Num_data_page_fetches`           |
+| HA関連          | `Time_ha_replication_delay`                | 複製遅延時間（秒）                                                                                                     |
+
+</div>

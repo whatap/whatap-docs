@@ -1,0 +1,195 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: Golang環境のアプリケーションサーバーにエージェントをインストールする方法を提供します。
+tags:
+  - Golang
+  - エージェントのインストール
+---
+
+import TR from '@site/src/components/TR';
+
+モニタリング対象アプリケーションサーバーからUDP通信にデータを配信します。また、WhaTap収集サーバーにデータを送信するには、同じサーバにエージェントをインストールする必要があります。インストール方式は、パッケージインストールで可能です。
+
+1.  WhaTapリポジトリ（Repository）をインストールしてください。
+
+2.  whatap-agent Linuxパッケージ（yum, apt-get）をインストールしてください。
+
+3.  whatap-agentサービスを実行してください。
+
+![Golang Monitoring](https://img.whatap.io/media/images/golang_system.png)
+
+WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ko/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。
+
+{@include: ../getting-started/_create-project-v2.mdx} 
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+## エージェントダウンロード
+
+**アクセスキー**を発行されたら、次のコマンドを使用してエージェントをダウンロードしてください。
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="Red Hat/CentOS">
+
+```bash title='SH'
+## パッケージリポジトリ登録
+$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+
+## パッケージインストール
+$ sudo yum install whatap-agent
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+## パッケージリポジトリ登録
+$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+$ sudo dpkg -i whatap-repo_1.0_all.deb
+$ sudo apt-get update
+
+## パッケージインストール
+$ sudo apt-get install whatap-agent
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+## パッケージリポジトリ登録
+$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
+$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+
+## パッケージインストール
+$ sudo yum install whatap-agent
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリ基準で圧縮を解凍してください。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
+
+```bash title='SH'
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+$ tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+<TabItem value="al-docker" label="Alpine Linux Docker">
+
+[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードしてから、 _/usr/whatap/agent_ パスに圧縮を解凍してください。
+
+```bash title='SH'
+FROM alpine
+
+RUN apk update && apk upgrade
+
+# Install WhaTap Golang monitoring agent
+RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+RUN tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+</Tabs>
+
+<details>
+<summary>エージェント構成ファイル</summary>
+
+モニタリング情報を収集するトレーサー、収集した情報をサーバーに転送するエージェント、トレーサーとエージェントをサーバーへ動的に適用するインストールスクリプト ファイルで構成されます。
+
+-   _whatap-agent_：エージェント、トレーサーからUDPとして転送した情報を収集サーバーに転送するプログラムです。
+
+-   _/etc/init.d/whatap-agent_：サービスのスクリプトファイルです。
+
+-   _whatap_agent_：サービスの実行ファイルです。
+
+-   _whatap.conf_：設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。
+
+-   _whatap-boot-`yyyymmdd`.log_：エージェントログファイルです。(パス：_/usr/whata/agent/log_)
+
+</details>
+
+## エージェント設定
+
+次のコマンドを順番に実行して、_whatap.conf_ファイルに**アクセスキー**と**収集サーバーIP**などを設定してください。
+
+```bash title='SH'
+$ echo "license={アクセスキー}" >> /usr/whatap/agent/whatap.conf
+$ echo "whatap.server.host={収集サーバーIP}" >> /usr/whatap/agent/whatap.conf
+$ echo "app_name={アプリケーション名}" >> /usr/whatap/agent/whatap.conf
+$ echo "app_process_name={アプリケーションプロセス名}" >> /usr/whatap/agent/whatap.conf
+```
+
+-   **license**：**アクセスキー**を入力してください。
+-   **whatap.server.host**：**収集サーバーIP**を入力してください。
+-   **app_name**：アプリケーション名を入力してください。文字列でユーザー設定します。
+-   **app_process_name**：モニタリング対象アプリケーションのプロセス名を入力してください。入力したプロセス名でメモリ使用量を測定します。
+
+---
+
+Alpine Linuxの場合、次のようにスクリプトを実行し、案内に従って**アクセスキー**と**収集サーバーIP**を入力してください。
+
+```bash title='SH'
+$ sudo /usr/whatap/php/install.sh
+
+Input project access key
+xxxxxxxxxxxxxxxx   # 発行したアクセスキーを入力
+
+Input whatap.server.host
+192.x.x.x          # WhaTap収集サーバーのIPを入力
+```
+
+## Golangライブラリの使用
+
+Golangのソースコードにwhatap/go-apiを追加して配布します。
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="Red Hat/CentOS">
+
+```bash title='SH'
+$ go get -u github.com/whatap/go-api
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ go get github.com/whatap/go-api/trace
+$ go get github.com/whatap/go-api/sql
+$ go get github.com/whatap/go-api/httpc
+$ go get github.com/whatap/go-api/method
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ go get github.com/whatap/go-api/trace
+$ go get github.com/whatap/go-api/sql
+$ go get github.com/whatap/go-api/httpc
+$ go get github.com/whatap/go-api/method
+```
+
+</TabItem>
+</Tabs>
+
+```go title='GO'
+import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+    ...
+}
+```
+
+## モニタリングの開始
+
+アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。

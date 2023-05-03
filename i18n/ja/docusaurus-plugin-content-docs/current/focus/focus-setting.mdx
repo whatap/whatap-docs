@@ -1,0 +1,233 @@
+---
+id: focus-setting
+title: 設定
+description: Focusの設定方法について案内します。
+tags:
+  - Focus
+  - 設定
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+WhaTapプロジェクトで任意の収集データをアップロードできます。Focusは、そのプロジェクトの基本エージェントがインストールされていなくても使用できます。
+
+## プロジェクトアクセスキーと収集サーバーのIP確認
+
+{@include: ../common-items/_check-pak-ip.mdx}
+
+## 通知送信
+
+カスタム通知をすぐに送信できます。通知を送信した後、Focusは終了します。
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#通知の重大度を選択します。
+level={info|warn|fatal}
+#通知の題名
+title=希望する通知の題名
+#通知の本文
+message=希望する通知の本文
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -alert -level $level -title $title -message $message
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#通知の重大度を選択します。
+$level="{info|warn|fatal}"
+#通知の題名
+$title="希望する通知の題名"
+#通知の本文
+$message="希望する通知の本文"
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -alert -level $level -title $title -message $message
+```
+
+</TabItem>
+</Tabs>
+
+## SQL Query結果の収集
+
+ユーザー定義SQL Queryの実行結果を時系列で無期限収集します。
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#メトリクスカテゴリ
+category=my_category
+#データベースドライバー
+driver={mysql|postgres}
+#データベース接続情報
+dburl="ID:パスワード@tcp(IP:ポート番号)/データベース"
+#Sql Query
+sqlquery="select some, columns from sometable"
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -rdb $driver -rdb.connect $dburl \
+    -rdb.sql $sqlquery
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#メトリクスカテゴリ
+$CATEGORY="my_category"
+#データベースドライバー
+$driver="{mysql|postgres}"
+#データベース接続情報
+$dburl="ID:パスワード@tcp(IP:ポート番号)/データベース"
+#Sql Query
+$sqlquery="select some, columns from sometable"
+
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -category $CATEGORY `
+    -rdb $driver -rdb.connect $dburl `
+    -rdb.sql $sqlquery
+```
+
+</TabItem>
+</Tabs>
+
+## ログファイルキーワードマッチングログの収集
+
+指定したテキストログファイルでログが発生した場合、キーワードを含めると、そのログラインが収集されます。
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#メトリクスカテゴリ
+category=my_category
+#ログファイル
+LOG_FILE=ログファイルパス
+#2つ以上のログキーワードを入力する際にキーワード間で使用する区切り文字
+LOG_KEYWORDS_SEPERATOR=,
+#ログキーワードを「,」でつないで入力
+LOG_KEYWORDS=keyword1,keyword2
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -tail $LOG_FILE \
+    -tail.keys $LOG_KEYWORDS \
+    -tail.seperator $LOG_KEYWORDS_SEPERATOR
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#メトリクスカテゴリ
+$CATEGORY="my_category"
+#ログファイル
+LOG_FILE=ログファイルパス
+#2つ以上のログキーワードを入力する際にキーワード間で使用する区切り文字
+LOG_KEYWORDS_SEPERATOR=,
+#ログキーワードを区切り文字でつないで入力
+LOG_KEYWORDS=keyword1,keyword2
+
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -category $CATEGORY `
+    -tail $LOG_FILE `
+    -tail.keys $LOG_KEYWORDS `
+    -tail.seperator $LOG_KEYWORDS_SEPERATOR
+```
+
+</TabItem>
+</Tabs>
+
+## WhaTapログ分析サービス
+
+指定したテキストログファイルでログが発生した場合、WhaTapログ分析サービスにリアルタイムでアップロードします。
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#カテゴリ
+category=my_category
+#ログファイルwildcard(*)、日付パターン(http://strftime.org)を含む
+LOG_FILE=ログファイルパス
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -logsink $LOG_FILE
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#カテゴリ
+$CATEGORY="my_category"
+#ログファイルwildcard(*)、日付パターン(http://strftime.org)を含む
+$LOG_FILE=ログファイルパス
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -category $CATEGORY `
+    -logsink $LOG_FILE
+```
+
+</TabItem>
+</Tabs>
+
+## OSリソース使用量の収集
+
+Focusが動作しているサーバーのリソース使用量を収集します。
+
+```bash title='Linux Shell'
+#メトリクスカテゴリ
+category=my_category
+#ディスクモニタリングの活性化有無
+diskenabled=true|false
+#モニタリングするディスクマウント
+diskmount=/mypartition
+#NICモニタリングの活性化有無
+nicenabled=true|false
+#モニタリングするNIC
+nic=eth0
+
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -sys \
+    -sys.disk.enabled $diskenabled \
+    -sys.disk $diskmount \
+    -sys.net.enabled $nicenabled \
+    -sys.net $nic
+```
+
+## 任意のプログラムおよびスクリプト実行結果の収集
+
+任意のプログラムおよびスクリプトを実行し、stdoutで出力される結果を継続的に収集します。WhaTap Focusはjson dictionary形式で、stdinとして入力されると当該dictionaryのkey、valueを収集します。入力手段としてパイプを使用するので、バッファリングを使わないように設定する必要があります。
+
+:::note
+
+-   継続的に収集するのではなく、一回限りの収集を希望する場合は、次のオプションを適用できます。`-onetime`
+-   収集時間を指定したい場合は、次のオプションで指定できます。`-now {unix epoch time(second)}`
+    :::
+
+```bash title='Linux Shell'
+#メトリクスカテゴリ
+CATEGORY="my_category"
+
+
+プログラムまたはスクリプト | \
+json dictionary形に再加工 | \
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST
+```
+
+{@include: ../common-items/_top-collect-cpu-memory.mdx}

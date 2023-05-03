@@ -1,0 +1,325 @@
+---
+id: java-2.2.0
+title: Java Agent 2.2.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-11-01
+
+## New features
+
+-   Added the function to generate the logsink data in the virtual application.
+
+-   Added the function to connect the stdout log of the logsink with txid information.
+
+-   Added the data collection function for 2 seconds. 
+
+    ```ini title='whatap.conf 기본 설정'
+    fast_perf_enabled=false
+    fast_perf_interval=2000
+    fast_perf_gc_enabled=true
+    fast_perf_os_enabled=true
+    debug_fast_perf_enabled=false
+    ```
+
+    Collection data
+
+    -   Elapsed time
+    -   Active Transaction
+    -   gc information: number of gc cases, gc elapsed time, number of old generation gc cases, old generation gc elapsed time
+    -   OS info
+
+-   Added the function to send notifications based on the number of active transactions.
+
+    ```ini title='whatap.conf'
+    # 엑티브 트랜잭션 알림 설정 여부
+    too_many_actx_alert_enabled=false
+
+    # 엑티브 트랜잭션 알림 무시 시간 (ms)
+    too_many_actx_alert_silent_time=30000
+
+    # 엑티브 트랜잭션 알림 기준 건수
+    too_many_actx_alert_count=50
+
+    # 엑티브 트랜잭션 알림 메시지 표시 건수
+    too_many_actx_alert_msg_url_count=5
+
+    # 엑티브 트랜잭션 알림 기준 시간
+    too_many_actx_alert_over_time=30000
+    ```
+
+    -   엑티브 트랜잭션 기준 건수는 `too_many_actx_alert_count >= (too_many_actx_alert_over_time / 5000)`으로 결정
+
+    -   엑티브 트랜잭션 기준 건수와 같거나 넘어가는 경우 `too_many_actx_alert_msg_url_count` 만큼의 url 정보를 알림 메시지에 추가해 알림 전송    
+
+-   Profile Debug option: Added the function to check the stack in the profile and agent log when a debug target pattern is registered.
+
+    ```ini title='whatap.conf 설정'
+    hook_method_debug_enabled=true
+    hook_method_debug_patterns=
+    ```
+
+-   Adding the plug-in using class
+
+    -   _{AGENT_HOME}/plugin/{...}.x_ 파일에서 활용할 수 있도록 `HashTable` 클래스를 추가하였습니다.
+    -   `whatap.agent.api.Ref.h`를 사용하면 `HashTable`을 활용할 수 있습니다.
+
+        ```java title='예시'
+        Class hashTable = (Class) whatap.agent.api.Ref.h;
+        ```
+
+-   Adding the dedicated classes for TTA BMT: Can be used to demonstrate the Java agent.
+
+    ```java title='Java 클래스'
+    # map
+    bmt.m.MyMap
+
+    # datasource
+    bmt.ds.MyDataSource
+    bmt.ds.MyConnection
+
+    # jdbc
+    bmt.jdbc.Config
+    bmt.jdbc.FakeBlob
+    bmt.jdbc.FakeClob
+    bmt.jdbc.FakeConnection
+    bmt.jdbc.FakeDatabaseMetaData
+    bmt.jdbc.FakeDriver
+    bmt.jdbc.FakeCallableStatement
+    bmt.jdbc.FakePreparedStatement
+    bmt.jdbc.FakeResultSet
+    bmt.jdbc.FakeStatement
+    bmt.jdbc.FakeSocket
+    bmt.jdbc.Lock
+    ```
+
+    ```java title='추적'
+    // Connection Pool 추적
+    // ConnectionPoolASM
+    target.put("bmt/ds/MyDataSource", MyDataSource.className);
+
+    // Connection Pool 추적
+    // DBConCountCollectorThread
+    add(new MyDataSource());
+
+    // JDBC Connection 추적
+    // JDBCConnectionOpenASM
+    AsmUtil.add(reserved, "bmt/ds/MyDataSource", "getConnection()Ljava/sql/Connection;");
+
+    // JDBC Statement 추적
+    // JDBCStatementASM
+    target.add("bmt/jdbc/FakeStatement");
+
+    // JDBC PreparedStatement 추적
+    // JDBCPreparedStatementASM 
+    target.add("bmt/jdbc/FakePreparedStatement");
+
+    // JDBC ResultSet 추적
+    // JDBCResultSetASM
+    target.add("bmt/jdbc/FakeResultSet");
+    ```
+
+-   Error step
+
+    -   Added the function to add the error step to the profile.
+
+    -   Added the step to display error-related data in the profile by adding settings.
+
+    ```ini title='whatap.conf 설정(기본값)'
+    profile_error_step_enabled=false
+    ```
+
+-   Adding the JMX setting: Added the function to additionally view the JMX data.
+
+    ```ini title='whatap.conf 설정'
+    perfx_tomcat_enabled=false
+    perfx_jmx_value_limit=100
+    perfx_jmx_tag_from_objectname_enabled=false
+    ```
+
+    By collecting the JMX data of tomcat, the settings for checking with test1 and test2 in metrics lookup are as follows:
+
+    ```ini title='whatap.conf'
+    perfx_jmx_enabled=true
+    perfx_jmx@test1=Catalina:type=Connector,*
+    perfx_jmx@test2=java.lang:type=GarbageCollector,*
+    perfx_jmx_ignore@test2=LastGcInfo
+    # perfx_debug_enabled=true
+    # perfx_jmx_tag_from_objectname_enabled=false
+    ```
+
+-   Using the OSHI library, added the function to trace the proc_mem_rss data of the process.
+
+    ```ini title='whatap.conf'
+    oshi_proc_mem_enabled=false
+    ```
+
+-   `org.edb.jdbc.PgCallableStatement`를 jdbc statement 추적 기능 추가
+
+-   Function to trace SQL parameters in the Oracle procedure
+
+    -   Added the function to trace SQL parameters in Oracle procedures.
+
+    -   Added the function to trace SQL parameters in CallableStatement.
+
+-   Weblogic에서 `HttpURLConnection`으로 http 호출을 하는 경우 `weblogic.net.http.HttpURLConnection`을 사용하는 것을 추적하는 기능 추가
+    ```ini title='whatap.conf'
+    HttpURLConnection_weblogic=true
+    ```
+
+-   Added the function to collect the native memory data (proc_mem_rss) of the process by using the sigar library.
+
+-   Added the function to collect TPS data collected with the 30-second average, in the 5-second average.
+
+    ```ini title='whatap.conf 기본 설정'
+    service_metrics_spike_enabled=false
+    ```
+
+-   Added the compressed transfer function for the profile data.
+
+    -   프로파일 데이터가 `profile_zip_max_buffer_size` 크기를 넘는 경우 프로파일 데이터를 전송
+
+    -   큐에 데이터가 쌓인지 `profile_zip_max_wait_time` 값을 넘은 경우 프로파일 데이터를 전송
+
+    -   프로파일 데이터를 전송할 때 큐에 있는 프로파일 데이터가 `profile_zip_min_size` 크기 미만인 경우를 제외하고는 프로파일 데이터를 압축 전송    
+
+    ```ini title='whatap.conf 설정'
+    # 프로파일 데이터 압축 여부
+    profile_zip_enabled=true
+
+    # 프로파일 데이터들을 가지고 있을 큐 사이즈
+    # ZipProfileThread.java가 사용하는 RequestQueue 사이즈를 결정
+    profile_zip_queue_size=1000
+
+    # 프로파일 데이터를 보내는 대기 시간
+    # 1000ms 지난 경우 프로파일 데이터 전송
+    profile_zip_max_wait_time=1000
+
+    # 프로파일 데이터 버퍼 사이즈
+    # 프로파일 데이터가 1MB가 넘는 경우 데이터를 전송
+    profile_zip_max_buffer_size=1024*1024
+
+    # 프로파일 데이터 압축 여부 결정 최소 사이즈
+    # 프로파일 데이터가 100byte 미만인 경우 압축하지 않음
+    profile_zip_min_size=100
+
+    # 프로파일 데이터 압축 디버그 여부
+    # 프로파일 데이터 전송 관련 정보(ZipPack의 status, recordCount, buffer 사이즈, 프로파일 데이터 큐 사이즈)를 에이전트 로그에 출력
+    debug_profile_zip_enabled=false
+
+    # 프로파일 데이터 압축 디버그 로그 출력 간격
+    # 프로피알 데이터 압축 디버그 옵션이 켜져 있는 경우 5000ms 간격으로 프로파일 데이터 전송 관련 정보를 에이전트 로그에 출력 
+    debug_profile_zip_interval=5000
+    ```
+
+## Change (update)
+
+-   logsink 데이터 전송 주기인 `max_wait_time`을 `logsink_max_wait_time`으로 옵션 이름 수정
+
+-   Replaced the CustomCounter function collected by the plug-in with CustomTaskLoader instead of CustomCounterTask.
+
+    ```ini title='whatap.conf 기본 설정'
+    custom_task_enabled=true
+    custom_task_jarfile={full_path}
+    ```
+
+-   Added the function to output logs when the server time difference between the agent and proxy is 10 seconds or more.
+
+-   Measuring the elapsed time
+
+    -   Modified to use the JVM time rather than the system time when measuring the elapsed times for transactions and profiles.
+
+    -   경과시간을 측정하는 경우 기존 `System.currentTimeMillis()`에서 `System.nanoTime()`을 사용하도록 수정
+
+-   Modified to display the time difference between servers seen in the agent log when there is a difference in the server time between the agent and proxy.
+
+    ```bash title='에이전트 로그'
+    # 30초 이상 차이가 나는 경우 
+    "fatal warning time-reverse (시간 차이) ms"
+
+    # 30초 미만 차이가 나는 경우
+    "warning time-reverse (시간 차이) ms"
+    ```
+
+-   Modified the options for user counting in the form of wclient_xxx. The previous option names can be used but new option names are recommended, starting from v2.2.0.
+
+    ```ini title='whatap.conf 설정(교체/추가)'
+    # 교체
+    trace_user_method=IP
+    wclient_trace_type=IP
+
+    # 교체
+    trace_user_jsession_key=JSESSIONID
+    wclient_jsession_key=JSESSIONID
+
+    # 교체
+    trace_user_header_key=token
+    wclient_header_key=token
+
+    # 교체
+    trace_user_cookie_limit=4000
+    wclient_cookie_limit=4000
+
+    # 교체
+    trace_user_cookie_domain=
+    wclient_cookie_domain=
+
+    # 교체
+    realtime_user_thinktime_max=300000
+    wclient_thinktime_max=300000
+
+    # 교체
+    trace_user_using_ip=true
+    wclient_using_ip=true
+
+    # 교체
+    user_header_ticket=
+    wclient_header_ticket=
+
+    # 추가
+    wclient_max_count=70000
+    ```
+
+-   Recompiled the embedded weaving component by applying the count settings related to the number of users.
+
+-   CounterPack 경과시간 계산에 `System.nanoTime()`을 사용하도록 수정
+
+-   Included the release version in the log output logo.
+    ```bash title='로고'
+      _       ____  ______           
+    | |     / / /_/_  __/___ _____   ___  ___ 
+    | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
+    | |/ |/ / / / / / / /_/ / /_/ / |   / / /
+    |__/|__/_/ /_/_/  \__,_/ .___/  |_|_\/___|
+                          /_/                    
+    The Best Observability in Java
+    ```
+
+-   Modified the default value for the Java agent’s statistics collection from 5000 to 10000, checking every 2 seconds when sending statistics data.
+
+    ```ini title='whatap.conf 기본 설정'
+    stat_tx_max_count=10000
+    ```
+
+-   Updated the version of the OSHI library that collects performance metrics from oshi-core-5.4.1 to oshi-core-6.1.6.
+
+-   Changed the library folder name of {AGENT_HOME} that collects performance metrics.
+
+    -   sigar 라이브러리 폴더 이름 변경 : lib -> lib3
+
+    -   oshi 라이브러리 폴더 이름 변경 : lib2 -> lib4    
+
+## Fixed (bug fixing)
+
+-   Fixed a bug that occurred when adding headers related to multi-transaction to the read-only HttpHeaders of the Webflux weaving plug-in, an embedded Java agent plug-in. 
+
+    Applied to webflux-5.1, webflux-5.2, and webflux-5.3.
+
+-   Fixed the bug that occurred when the elapsed time of transactions and steps was less than 0.
+
+-   Fixed the bug where the elapsed time is displayed as 0, when the elapsed time of transactions and steps is less than 0.
+
+-   `blocking_detect_count` 건수 처리 버그를 수정

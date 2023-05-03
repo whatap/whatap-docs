@@ -1,0 +1,107 @@
+---
+id: preview-1.95.0
+title: Preview 1.95.0
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+-   <https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+
+---
+
+## Hotfix: 2023-01-26
+
+<Status>Change</Status> 애플리케이션 프로젝트 > 트랜잭션 상세 창 > <UI>트리뷰</UI> 탭에서 메소드(METHOD) 타입 프로파일 표시 정보 중 <UI>진입 CPU 시간</UI> 항목 제거
+
+## Hotfix: 2023-01-18
+
+<Status>Fixed</Status> Java, Python, Node.js 에이전트 설정 옵션 이름 수정
+
+-   `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
+-   `trace_active_stack_red_time` → `trace_active_transaction_red_time`
+
+## Official Release: 2023-01-16
+
+### `공통`
+
+#### 용어 변경
+
+-   <Status>Change</Status> <b>프로파일</b> 용어를 <b>트레이스</b>로 변경합니다.
+
+#### Log setting
+
+-   <Status>Change</Status> <UI>카테고리별 데이터 유지기간</UI> 테이블에서 저장량 컬럼 삭제
+
+-   <Status>Feature</Status> <UI>카테고리별 데이터 유지기간</UI> 테이블에서 <UI>금일 로그수</UI> 컬럼 추가 및 컬럼 별 도움말 추가
+
+-   <Status>Feature</Status> <UI>로그 Parser 설정</UI> 섹션에서 상태 성공률 파서, 4xx, 5xx 파서 등록 시 동일한 카테고리에 파서를 중복 등록할 수 없도록 유효성 검사 추가
+
+#### Manages the account information
+
+-   <Status>Feature</Status> <UI>계정 정보</UI> 메뉴에서 멀티팩터 인증 활성화 시 최종 확인을 위한 메시지 창 추가
+
+#### Flex Board
+
+<Status>Change</Status> <UI>Log RPS Board</UI> 대시보드 템플릿 수정
+
+-   데이터 조회 기간의 기본값 변경: 실시간 30분 → 실시간 12시간
+-   **_Log RPS trend_**, **_서버 상태_** 위젯의 레이아웃 높이 수정
+-   **_4XX, 5XX Count_** 위젯의 보조 테이블 데이터 단위 설정
+-   일부 위젯 데이터 호출 간격을 5초에서 1분으로 변경
+
+### `Application`
+
+#### 트랜잭션 상세
+
+다음 메뉴 경로에서 추가 및 수정한 사항입니다.
+
+:::note
+
+-   **_대시보드_** > **_애플리케이션 대시보드_** > **_액티브 트랜잭션_** 위젯 오른쪽에 '![자세히 보기 아이콘](/img/right-arrow.svg)' 버튼 클릭 > 종료된 트랜잭션 항목 선택 > **_트랜잭션 보기_** 버튼 클릭
+-   **_대시보드_** > **_애플리케이션 대시보드_** > **_히트맵_** 위젯 오른쪽에 '![자세히 보기 아이콘](/img/right-arrow.svg)' 버튼 클릭 > **_히트맵 트랜잭션_** 차트 드래그 > **_TX 트레이스_** 목록에서 항목 클릭
+-   **_대시보드_** > **_트랜잭션 맵_** > **_트랜잭션_** 차트 드래그 > **_TX 트레이스_** 목록에서 가장 왼쪽의 ![자세히 보기 아이콘](/img/ico-detail-view.svg) 버튼 클릭
+-   **_대시보드_** > **_액티브 트랜잭션_** > **_트랜잭션_** 탭에서 종료된 트랜잭션 컬럼 선택 > **_트랜잭션 보기_** 버튼 클릭
+-   **_분석_** > **_히트맵_** > **_히트맵 트랙잭션_** 차트 드래그 > **_TX 트레이스_** 목록에서 항목 클릭
+    :::
+
+수정 전<br/>
+![](/img/release/apm-transaction-list-before.png)
+
+수정 후<br/>
+![](/img/release/apm-transaction-list-after.png)
+
+-   <Status>Feature</Status> <UI>메소드 분석</UI>: 트레이스 스탭 정보에서 중복 실행된 메소드에 대한 분석 정보를 제공합니다.
+
+-   <Status>Feature</Status> <UI>SQL 분석</UI>: 트레이스 스탭 정보에서 중복 실행된 SQL 문에 대한 분석 정보를 제공합니다.
+
+-   <Status>Change</Status> 탭 메뉴의 명칭 수정
+
+    -   **_프로파일_** → **_테이블 뷰_**
+    -   **_프로파일 트리_** → **_트리 뷰_**
+    -   **_로그_** → **_트랜잭션 로그_**
+
+-   <Status>Change</Status> <UI>테이블 뷰</UI> 탭의 디자인 수정
+
+    -   메소드 정보 스텝(**_스탭 내용_** 컬럼)의 텍스트 색상 표시
+    -   메소드 정보 스텝(**_스탭 내용_** 컬럼)의 depth 정보를 들여쓰기로 표시
+    -   컬럼명 변경: **_누적 시간_** → **_구간 시간_**
+
+-   <Status>Change</Status> <UI>트리 뷰</UI> 탭의 디자인 변경
+
+    수정 전<br/>
+    ![](/img/release/transaction-profile-trace-before.png)
+
+    수정 후<br/>
+    ![](/img/release/transaction-profile-trace-after.png)
+
+    -   트레이스 타입에 따른 텍스트 색상 표시
+    -   데이터 구분 컬럼 추가(**_상세 정보_**, **_타입_**, **_경과 시간_**)
+    -   액티브 스택 항목을 클릭하면 **상세 정보** 확인 뷰 추가
+
+-   <Status>Change</Status> 트랙잭션 차트에서 버튼 명칭 수정: <UI>프로파일 다이어그램</UI> → <UI>다이어그램</UI>

@@ -1,0 +1,7 @@
+1.  トランザクションの開始点を次のように設定します。 
+
+    ```bash
+    hook_service_patterns=com.virtual.web.SimulaNonHttp.process
+    ```
+
+2.  再起動してください。 `process()`メソッドは、新しいトランザクションの**エンドポイント**になります。

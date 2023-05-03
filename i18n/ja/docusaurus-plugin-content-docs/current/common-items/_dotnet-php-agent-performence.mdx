@@ -1,0 +1,57 @@
+:::note
+
+-   エージェントの性能オプションを有効にするには、設定後に、WhaTap .NET Windows サービスを再起動する必要があります。
+
+-   エージェントのパフォーマンスをスケールアップすると、CPU、メモリ使用率が増加する可能性があります。
+    :::
+
+-   **whatap.tx_max_count**<span class='type'>Int</span><br/>
+    デフォルト値`5000`<br/>トランザクションが保存される最大数です。同時に処理するトランザクションが多い場合は、サイズを大きくします。
+
+-   **whatap.tx_default_capacity**<span class='type'>Int</span><br/>
+    デフォルトは、`101`<br/>トランザクションを保存するバッファの開始サイズです。
+
+-   **whatap.tx_load_factor** <span class='type'>String(Float)</span><br/>
+    デフォルト値`0.75`<br/>は、トランザクションを保存するバッファのサイズを徐々に増加させるための基準です。 101個から75%以上を保存すると、バッファのサイズは2倍になります。                          
+
+-   **whatap.queue_log_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>queue関連ログを出力します。
+
+-   **whatap.queue_tcp_enabled**<span class='type'>Boolean</span><br/>デフォルト値`true`<br/>
+    TCPデータ送信処理に使用するChannelの代わりに、別のQueueが使用されます。データ優先順位Queueを使用します。
+
+-   **whatap.queue_tcp_sender_thread_count** <span class='type'>Int</span><br/>デフォルト値`2`<br/> 
+    TCPデータ送信を処理するスレッド数を設定します。数を増やすと、データ送信をより迅速に処理できます。 
+
+-   **whatap.net_send_buffer_size** <span class='type'>Int</span><br/>デフォルト値`1024`<br/> 
+    TCPデータ処理のChannel bufferを設定します。
+
+-   **whatap.queue_udp_enabled** <span class='type'>Boolean</span><br/>デフォルト値`false`<br/> 
+    UDPデータ受信処理にChannelの代わりに別のQueueを使用します。
+
+-   **whatap.queue_udp_size** <span class='type'>Int</span><br/>デフォルト値`2048`<br/> 
+    UDPデータ受信バッファを設定します。 Channel、Queueバッファを設定します。 
+
+-   **whatap.queue_udp_read_thread_count** <span class='type'>Int</span><br/>デフォルト値`3`<br/> 
+    UDPデータ受信を処理するスレッドの数を設定します。 カウントを増やすことで、UDPバッファからより高速にデータを読み取ることができます。 
+
+-   **whatap.queue_udp_overflowed_size** <span class='type'>Int</span><br/>デフォルト値 `4096`<br/> 
+    UDPデータ受信にQueueを使用する場合は、overflowed Queueバッファのサイズを設定します。
+
+-   **whatap.queue_udp_process_thread_count** <span class='type'>Int</span><br/>デフォルト値`1`<br/> 
+    UDPデータを処理するスレッド数を設定します。 カウント数を増やすと、UDPから読み取られたデータ処理が高速になります。
+
+-   **whatap.queue_profile_enabled**<span class='type'>Boolean</span><br/>デフォルト値`false`<br/>
+    トレース情報を処理する時、Channelの代わりに別のQueueを使用します。
+
+-   **whatap.queue_profile_size** <span class='type'>Int</span><br/>デフォルト値`512`<br/> 
+    トレース情報を処理するためのバッファを設定します。
+
+-   **whatap.queue_profile_process_thread_count** <span class='type'>Int</span><br/>デフォルト値`1`<br/> 
+    トレース情報を処理するスレッド数を設定します。 数を増やせば処理が速くなります。
+
+-   **whatap.queue_text_enabled** <span class='type'>Boolean</span><br/>デフォルト値`false`<br/> 
+    テキストデータ処理は、Channelの代わりにQueueを使用します。
+
+-   **whatap.queue_text_size** <span class='type'>Int</span><br/>デフォルト値`512`<br/> 
+    テキストデータを処理するためのバッファを設定します。

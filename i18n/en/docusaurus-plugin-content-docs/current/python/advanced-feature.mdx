@@ -1,0 +1,67 @@
+---
+id: advanced-feature
+title: Advanced functions
+description: It guides you to the advanced functions of the Python agent.
+tags:
+  - Python
+  - Advanced functions
+---
+
+## Arbitrary assignment and management of server names{#custom-naming}
+
+The agent automatically assigns server names by using the type, IP, and service port of the application server.
+
+### Application naming option
+
+The default pattern can be modified in _whatap.conf_.
+
+```bash
+object_name default: {type}-{ip2}-{ip3}-{process}
+```
+
+### Application naming pattern
+
+The same name must not be used for registered application servers in the project. Do not use fixed server names. If the server IPs are duplicated due to the internal IP addresses, the application server names can be patterned and applied for each group.
+
+**Pattern Options**
+
+| Configuration | Description                                                         |
+| ------------- | ------------------------------------------------------------------- |
+| type          | app_name                                                            |
+| ip#           | When IPs are divided by period (.), the #th digit (from 0) is used. |
+| process       | app_process_name                                                    |
+| hostname      | Host name                                                           |
+
+## Applying the AES 256 encryption
+
+The WhaTap application monitoring agent transfers the collected data after encryption. You can change this depending on the importance of the data or setting.  
+
+By default, it uses XOR operation and the encryption using AES algorithm. Encryption and decryption are performed by dividing the plain texts into 128-bit units. It can be expanded up to 256 bits depending on the setting.
+
+1.  **Set up**\
+    In the directory where the agent has been installed, add the following settings to _whatap.conf_.
+
+    ```ini title='cypher_level=256 설정 추가하기'
+    license={액세스 키}
+    whatap.server.host={수집 서버 IP}
+    cypher_level=256
+    ```
+
+2.  **Restart**\
+    After adding the settings, restart the WAS.
+
+## Constraints
+
+### Multiple regions impossible to be selected as a single project
+
+In [WhaTap Monitoring Service](https://service.whatap.io), when **_creating a project_**, you cannot select multiple regions. When using multiple regions, create separate projects.
+
+If servers exist in multiple regions as in the cloud environment, the collection servers must be located in each region to avoid constraints on the performance data collection such as network latency. WhaTap builds collection servers for each region to meet customer requirements.
+
+### Duplicate agent names (ONAME) impossible to be used
+
+WhaTap application monitoring uses the IP address and port to identify agents. If the application server to be monitored in the user environment uses the same IP and port, the WhaTap server cannot identify the server instances.
+
+If the server instance is not dynamically expanded, it can be bypassed by directly assigning a name for identifying applications by seeing [the following](#custom-naming).
+
+If the applications to be monitored use internal addresses or duplicate IPs due to network virtualization, use separate application naming patterns by seeing [the following](#custom-naming).

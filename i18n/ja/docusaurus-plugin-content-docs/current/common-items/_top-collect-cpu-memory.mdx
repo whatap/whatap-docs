@@ -1,0 +1,12 @@
+次の例は、topコマンドを実行して特定のプロセスのCPUとメモリの使用量を収集し続けます。
+
+```bash title='Linux Shell'
+#メトリクスカテゴリー
+CATEGORY="my_category"
+
+export PID=収集したいプロセスのPID
+top -b -p $PID | awk '/'$PID'/{ printf "{\"pid\": %s, \"cpuPercent\": %s, \"memoryPercent\": %s, \"cmd\": \"%s\"}\n",$1, $9, $10, $12}; system("")' | \
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -category $CATEGORY
+```

@@ -1,0 +1,29 @@
+## Running the agent
+
+Execute a shell script (or batch file) from the path where you have installed the agent.
+
+<Tabs groupId='os'>
+
+<TabItem value="linux" label="Linux" default>
+
+```bash
+./start.sh
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```bash
+start.bat
+```
+
+</TabItem>
+</Tabs>
+
+To use it like a daemon, execute the following command. However, it works only in the environment where **nohup** has been installed.
+
+```bash
+./startd.sh
+```
+
+You completed installing the agent for database monitoring. In [the following](after-install-agent), check the post-installation checklist.

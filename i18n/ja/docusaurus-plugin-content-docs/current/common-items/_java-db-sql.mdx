@@ -1,0 +1,152 @@
+-   **dbcp_pool_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`true`<br/>
+    JMXを使用せずにDBCPのDB Connection情報を追跡するために使用します。
+
+-   **hikari_pool_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    JMXを使用せずにhikari poolのDB Connection情報を追跡するために使用します。
+
+-   **tomcat_ds_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    JMXを使ってTomcat DB Connection Pool情報を追跡する機能をアクティブにします。
+
+-   **tomcat_pool_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`true`<br/>
+    JMXを使用せずにTomcat DB Connection Pool情報を追跡する機能をアクティブにします。
+
+-   **weblogic_ds_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    JMXを使用してWeblogic DB Connection Pool情報を追跡する機能をアクティブにします。
+
+-   **weblogic_pool_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`true`<br/>
+    JMXを使用せずにWeblogic DB Connection Pool情報を追跡する機能をアクティブにします。
+
+-   **jeus_pool_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`true`<br/>
+    JMXを使用せずにJEUS DB Connection Pool情報を追跡する機能をアクティブにします。
+
+-   **profile_connection_open_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>
+    トレース履歴にDBConnectionオープン情報を記録します。
+
+-   **profile_dbc_close**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    `profile_connection_open_enabled`の値が`true`の場合にのみ動作します。トレース履歴にDBConnectionのクローズ情報を記録します。
+
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値「false」
+
+    트레이스 내역에 SQL 파라미터 정보를 기록할 때 사용합니다. 파라미터는 별도 보안 키를 입력해야 조회할 수 있습니다.
+
+    :::note
+
+    -   **Java 에이전트 2.2.2 버전 이전**: 보안 키는 WAS 서버 _`${WHATAP_AGENT_HOME}`/paramkey.txt_ 파일 내에 6자리로 작성합니다. _paramkey.txt_ 파일이 존재하지 않는 경우 랜덤 값으로 자동 생성합니다.
+
+    -   **Java 에이전트 2.2.2 버전 이후**: 보안 키는 WAS 서버 _`${WHATAP_AGENT_HOME}`/security.conf_ 파일 내에 `paramkey` 키값을 확인하세요. _security.conf_ 파일이 존재하지 않을 경우 `paramkey` 키값을 **WHATAP**으로 자동 생성합니다.
+
+    -   _security.conf_ 파일에 대한 자세한 내용은 [다음 문서](install-agent#agent-files)를 참조하세요.
+
+    :::
+
+-   **profile_sql_resource_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    トレースからSQLを収集する時、そのステップで使用したCPUとメモリの使用量を追跡します。
+
+-   **profile_update_count**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    `executeUpdate()`メソッドを通じてSQL UPDATE文を実行した場合、UPDATE件数を収集します。
+
+-   **custom_pool_classes** <span class='type'>String</span><br/>
+    pre-defineされない別途のConnection Poolを使用する場合は、該当のクラス名を設定します。
+
+-   **ds_update_interval** <span class='type'>MiliSeconds</span><br/>
+    デフォルト値`5000`<br/>
+    DB Connection情報をカウントする間隔を設定します。
+
+-   **profile_position_sql**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    SQLを実行する時点のStackTraceを記録します。
+
+-   **profile_sql_param_length**<span class='type'>Int</span><br/>
+    デフォルト値`40`<br/>
+    SQLパラメータの長さを設定します。
+    :::note
+    最大値は128であり、それ以上の値を入力してもパラメータは128まで保存します。
+    :::
+
+-   **trace_dbc_leak_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    DBConnection Leakを追跡する機能をアクティブにします。
+    :::caution
+    Connection Wrapperを使用してLeakを追跡するため、運営サービスに影響を与える可能性がありますので、必ずテストしてから適用してください。
+    :::
+
+-   **trace_dbc_leak_fullstack_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    DBConnection Leakが検出された場合、その時点でStackTraceを収集します。
+    :::caution
+    ピークタイム（Peak Time）にはなるべく適用しないでください。 オプションを適用すると、CPU使用量が多少増加する可能性があります。 問題解決用途にのみ一時的に適用することをお勧めします。
+    :::
+
+-   **trace_sql_normalize_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>
+    SQL文からリテラル部分を抽出してSQL文を正規化する機能を活性化します。
+
+-   **profile_error_jdbc_fetch_max** <span class='type'>Int</span><br/>
+    デフォルト値`10000`<br/>
+    SQL Fetch Count（`ResultSet.next()`呼び出し件数）が設定した値を超えるとTOO MANY Fetchエラーとして処理されます。`0`に設定するとエラーとして処理しません。
+
+-   **profile_error_sql_time_max** <span class='type'>Int</span><br/>
+    デフォルト値 `30000`<br/>
+    SQLの実行時間が設定した値を超えると、TOO SLOWエラーとして処理されます。`0`に設定する場合、エラー処理は行いません。
+
+-   **hook_connection_open_patterns** <span class='type'>String</span><br/>
+      DB Connection Open時に呼び出すメソッドを登録します。事前に設定していないConnection PoolのgetConnectionを登録するのが一般的です。
+
+    ```ini title='예시'
+    hook_connection_open_patterns=mypool.ConPool.getConnection
+    ```
+
+-   **hook_jdbc_con_classes**<span class='type'>String</span><br/>
+      未登録のJDBC Connectionクラスを指定します。
+
+    ```ini title='예시'
+    hook_jdbc_con_classes=mypool.ConPool
+    ```
+
+-   **hook_jdbc_pstmt_classes**<span class='type'>String</span><br/>
+      未登録のJDBC PreparedStatementクラスを設定します。作成者パラメータにSQL文字列が転送される構造である必要があります。
+
+    ```ini title='예시'
+    hook_jdbc_pstmt_classes=org.apache.derby.impl.jdbc.EmbedPreparedStatement
+    ```
+
+-   **hook_jdbc_cstmt_classes**<span class='type'>String</span><br/>
+    未登録のjdbc CallableStatementクラスを設定します。
+
+    ```ini title='예시'
+    hook_jdbc_cstmt_classes=org.apache.derby.impl.jdbc.EmbedCallableStatement
+    ```
+
+-   **hook_jdbc_stmt_classes** <span class='type'>String</span><br/>
+      未登録のJDBC Statementクラスを設定します。
+
+    ```ini title='예시'
+    hook_jdbc_stmt_classes=org.apache.derby.impl.jdbc.EmbedStatement
+    ```
+
+-   **hook_jdbc_rs_classes** <span class='type'>String</span><br/>
+      未登録のJDBC ResultSetクラスを設定します。
+
+    ```ini title='예시'
+    hook_jdbc_rs_classes=org.apache.derby.impl.jdbc.EmbedResultSet
+    ```
+
+-   **hook_jdbc_wrapping_driver_patterns** <span class='type'>String</span><br/>
+    DB2ドライバーのように難読化したJDBCドライバーは、`hook_jdbc_xx`オプションで直接BCIが難しいです。 このような場合、Wrapper方式でSQLを追跡することができます。 このとき、`Driver.connect`を設定して追跡します。
+
+-   **debug_dbc_stack_enabled**<span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    DB Connection時点のStackTraceをトレースに保存します。アプリケーションで使用するConnection Pool情報を取得するために使用します。

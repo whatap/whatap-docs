@@ -1,0 +1,34 @@
+## Guide on how to use
+
+To use the **_Slow Query_** menu, set parameters and roles as follows.
+
+### Configuration of DB, parameters, and roles
+
+```ini
+slow_query_log = 1
+long_query_time = 3 # e.g. Recording for SQLs taking 3 seconds or more
+log_output=FILE # or TABLE
+```
+
+:::note
+
+If you set as `log_output=TABLE`, the role and capacity management are required for `mysql.slow_log`. Execute the following command.
+
+```bash
+grant select on mysql.slow_log to whatap;
+```
+
+:::
+
+### Configuring the whatap.conf file
+
+```ini title='whatap.conf'
+slow_query_log=ON
+```
+
+:::note
+
+-   If you have set `log_output=FILE` in DB server, you need to install XOS. For more information, see [the following](agent-xos-settings).
+-   RDS requires configuration to use CloudWatch instead of installing XOS. For more information, see [the following](agent-dbx-settings#using-aws-rds).
+
+:::

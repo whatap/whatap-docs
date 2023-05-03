@@ -1,0 +1,18 @@
+エージェントが収集したデータを転送するサーバーと通信するためのネットワーク設定オプションです。
+
+-   **whatap_server_host** <span class='type'>ip_address</span><br/>
+      デフォルト値「127.0.0.1,127.0.1」<br/>エージェントが収集したデータを転送するサーバーを設定します。 収集サーバーの二重化で2つ以上のIPアドレスを持っている場合は、コンマ（,）を区切り文字として利用してください。 設定したIPアドレスには、収集サーバーproxyサーバーがリスニング（Listening）状態でサービスされなければなりません。
+
+-   **whatap_server_port** <span class='type'>tcp_port</span><br/>
+      デフォルト値「6600」<br/>収集サーバーのポートを設定します。 ポートは1つだけ設定できるので、「whatap_server_host」オプションに設定した収集サーバは同一のポートを使用する必要があります。
+
+-   **tcp_so_timeout**<span class='type'>MiliSecond</span><br/>
+      デフォルト値「60000」<br/>
+      収集サーバーと通信するTCPセッションのSocket Timeout値を指定します。
+
+-   **tcp_connection_timeout** <span class='type'>MiliSecond</span><br/>
+    デフォルト値 「5000」<br/>収集サーバーと通信するTCPセッションのConnection Timeout値を指定します。
+
+-   **net_send_max_bytes**<span class='type'>Byte</span><br/>
+      デフォルト値「5242880」<br/>
+      エージェントがデータを収集し、ネットワークに一度に送信できる最大バイトのサイズです。

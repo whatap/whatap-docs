@@ -1,0 +1,56 @@
+---
+id: metrics-data-list
+title: Oracle Metrics
+description: It guides you to MySQL metrics.
+tags:
+  - Oracle
+  - Metrics
+  - Database
+  - Database Monitoring
+---
+
+Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metric data to identify bottlenecks in the database and provides data to help identify the root cause of the performance issue.
+
+For more information about columns, see [the link](https://docs.oracle.com/).
+
+<div class='metric'>
+
+| Metric                                   | Description                                                                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `cpu_used_by_this_session`               | CPU time (in 10 milliseconds) used by the session, from the user call start time to its end time.           |
+| `db_time`                                | Elapsed time (in microseconds) to perform user-level calls to the database.                                 |
+| `active_sessions`                        | Number of sessions running queries                                                                          |
+| `cpu`                                    | CPU Utilization                                                                                             |
+| `cpu_cores`                              | CPU core count                                                                                              |
+| `db_block_changes`                       | Number of blocks changed in SGA                                                                             |
+| `db_file_scattered_read_time_waited`     | Total waiting time for the DB file scattered read events                                                    |
+| `db_file_scattered_read_total_timeouts`  | Total timeout count for the DB file scattered read events                                                   |
+| `db_file_scattered_read_total_waits`     | Total wait count for the DB file scattered read events                                                      |
+| `db_file_sequential_read_time_waited`    | Total waiting time for the DB file sequential read events                                                   |
+| `db_file_sequential_read_total_timeouts` | Total timeout count for the DB file sequential read events                                                  |
+| `db_file_sequential_read_total_waits`    | Total wait count for the DB file sequential read events                                                     |
+| `enqueue_waits`                          | Total number of waits during queue conversion or import due to queue import delays.                         |
+| `excute_count`                           | Total number of calls that performed SQL statements                                                         |
+| `fatal_count`                            | Fatal error count                                                                                           |
+| `iowait_cpu`                             | Percentage of the CPU queued time for I/O                                                                   |
+| `lock_wait_sessions`                     | Number of waits to acquire the current row lock                                                             |
+| `logons_current`                         | Total current logon count                                                                                   |
+| `long_running_sessions`                  | Number of sessions running for long time                                                                    |
+| `memory`                                 | Memory utilization                                                                                          |
+| `opened_cursors_current`                 | Number of open cursors                                                                                      |
+| `parse_count_(hard)`                     | Total number of syntax analysis calls (actual syntax analysis)                                              |
+| `parse_count_(total)`                    | Total number of syntax analysis calls (hard, soft, describe)                                                |
+| `physical_reads`                         | Number of data blocks read from disk                                                                        |
+| `physical_writes`                        | Number of data blocks written to disk, or sum of `physical writes direct` and `physical writes from cache`. |
+| `session_logical_reads`                  | Number of data blocks read from memory, or sum of `db block gets` and `consistent gets`.                    |
+| `sorts_(memory)`                         | Number of sorts performed in memory                                                                         |
+| `sys_cpu`                                | Sum of CPU time used by the session                                                                         |
+| `total_elapse_time`                      | Cumulative total elapsed time of all requests since the last database instance restart.                     |
+| `total_sessions`                         | Number of all sessions                                                                                      |
+| `txn_sessions`                           | Number of sessions with transactions                                                                        |
+| `user_commits`                           | User commit count per transaction                                                                           |
+| `user_cpu`                               | User CPU usage (%)                                                                                          |
+| `wait_sessions`                          | Number of sessions queuing for events                                                                       |
+| `warning_count`                          | Number of all alerts                                                                                        |
+
+</div>

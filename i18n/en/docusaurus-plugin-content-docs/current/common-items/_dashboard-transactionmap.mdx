@@ -1,0 +1,71 @@
+Home > Select Project > **_Dashboard_** > **_Transaction Map_**
+
+The transaction map chart expresses the response time of each complete transaction in the form of distribution chart. Same as the hitmap, you can find and analyze problems based on the distribution patterns. The hitmap displays transactions that are grouped every 5 minutes, while the transaction map displays transactions individually.
+
+:::tip 
+
+**How is it different from the hitmap analysis?**
+
+The hitmap chart displays the total number of transactions during a specific period. Differences are expressed in color where the number of occurrences is high. In case of the hitmap, the sums for each section are stored separately. Accordingly, you can check the trend over a relatively long time. However, because transactions are aggregated and displayed, it is difficult to know individual transactions.
+
+-   To analyze the distribution of the long-term, high-volume transactions, use the hit map analysis. (**_Project Menu_** > **_Analysis_** > **_HITMAP_**)
+-   To do performance test, or analyze the transaction distribution within 1 to 5 minutes upon a failure, or check the transaction distribution without limiting the execution time, check the **_transaction map_**.
+
+:::
+
+:::note
+
+-   For more information about the **_Hitmap_** menu, see [the following](trs-view). 
+-   For more information about the analysis method of the **_hitmap transaction_** chart, see [the following](../best-practice-guides/about-apm-hitmap-class).
+
+:::
+
+![Transaction map](/img/dashboard-transaction-map.png)
+
+## ![](/img/number-01.png) agent area
+
+You can check the transaction maps for each agent by selecting an agent included in the project. You can select duplicate items and select all agents by selecting **_Select All_**. Depending on the selected agent, the distribution of the transaction map changes.
+
+If you select ![Down arrow icon](/img/down-arrow.svg) on the upmost right, you can filter or search agents by server or type.
+
+## ![](/img/number-02.png) Time and search area
+
+-   **_End Time_**<br/>
+    To express the response times of the complete transactions on the chart in real time in the form of distribution chart, select **_Real Time_**. To check the chart based on a specific time, select **_End Time_** and then set the time.
+
+-   **_Duration_**: You can check the distribution of transactions within the maximum of 5 minutes.
+
+-   **_Filter_**: The services, domains, and IPs that match the entered string are filtered. 
+
+    1.  Select **_Add Filter_**.
+    2.  Click **_+ Add_** to enter the desired string. You can enter multiple strings.
+
+      ![Adding filters](/img/transactionmap-filter.png)
+
+    1.  If the filtered strings are all entered, select **_Apply_**.
+
+## ![](/img/number-03.png) **_Top 30_**
+
+The Top 30 list is sorted in descending order of the count among the filtered transactions according to the set metrics. If you click a service item in the list, the transaction is added as a filter.
+
+## ![](/img/number-04.png) **_Transaction Map_**
+
+This map displays the distribution of transactions. 
+
+-   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart on the Y axis.
+
+-   On the upper right, select [Configuration icon](/img/ico-setting.svg) to modify the chart settings. You can select a metric on the Y axis and set the maximum value.
+
+    ![Transaction map setting](/img/transaction-map-setting.png)
+
+-   If **_Error Only_** is selected, only the transactions in error appear on the transaction map.
+
+-   If you drag a part of the transaction map, the transaction information appears in the **_TX Trace_** area.
+
+## ![](/img/number-05.png) **_TX Trace_**
+
+To check the detailed trace information for transactions, select ![Detail icon](/img/ico-detail-view.svg). The detailed trace information window appears.
+
+![Detailed trace info](/img/best-p/hitmap-transaction-sample-05.png)
+
+<!-- 1.96.0 /img/best-p/hitmap-transaction-sample-05.png -->

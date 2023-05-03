@@ -1,0 +1,104 @@
+---
+id: gcae
+title: Google Cloud App Engine
+description: Google Cloud App Engine
+tags:
+  - Google Cloud App Engine
+  - PHP
+---
+
+## Custom Docker
+
+GoogleAppエンジン（Google Cloud App Engine）にPHPモニタリングエージェントをインストールするには、Custom dockerを使用する必要があります。 
+
+GoogleAppエンジンPHPの**基本型は、PHP拡張型モジュールおよびサービスデーモンを実行できません**。Docker Containerを通じてインストールしてください。 
+
+GoogleAppエンジンの設定ファイルである_app.yaml_ファイルに`flex`環境、`custom`ランタイムとして設定してください。
+
+```yaml title=SH
+$ vi app.yaml
+env: flex
+runtime: custom
+```
+
+<!-- 경로? flex/custom -->
+
+Custom Dockerで実行するには、`flex`環境と`custom`ランタイムとして設定された_app.yaml_ファイルと同じ位置に_Dockerfile_を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参考にしてください。
+
+```docker title=Docker
+# google-appengine php php56, php70, php71
+FROM gcr.io/google-appengine/php56
+```
+
+## PHPモニタリングエージェントのインストール
+
+PHPモニタリングエージェントをインストールしてください。
+
+1.  ライブラリー（wget）をインストールしてください。
+
+```docker
+RUN apt-get install wget -y
+```
+
+1.  php-fpm実行コマンドのリンクを作成してください。
+
+```docker
+RUN ln -s /opt/php/sbin/php-fpm /usr/bin/php-fpm
+```
+
+1.  WhaTapリポジトリおよび、Whatap-phpパッケージをインストールしてください。
+
+```docker
+RUN wget http://repo.whatap.io/debian/release.gpg -O -| apt-key add -
+RUN wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+RUN dpkg -i whatap-repo_1.0_all.deb
+RUN apt-get update
+RUN apt-get install whatap-php
+```
+
+1.  PHP拡張モジュールおよびwhatap-phpサービスを設定してください。
+
+```docker
+#RUN (echo "[発行されたアクセスキー]"; echo "[発行されたサーバーIP]")|/usr/whatap/php/install.sh
+RUN (echo "xxxxxxxx"; echo "1.1.1.1/2.2.2.2")|/usr/whatap/php/install.sh
+```
+
+  :::note
+
+  PHPモニタリングプロジェクトの作成後、**アクセスキー**とサーバーIPが発行されます。_/_を区切り文字として複数のIP発行が可能です。
+
+  :::
+
+1.  `supervisor`を通じてwhatap-phpサービスを実行してくたさい。
+
+```docker
+RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "command = /etc/init.d/whatap-php start" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autorestart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "priority = 10" >> /etc/supervisor/conf.d/whatap.conf
+```
+
+## ファイアウォールルールの追加
+
+GoogleAppエンジンで使用するネットワークに対してファイアウォールルールを追加してください。発行されたサーバーIPに対して6600番ポートを介したTCP送信を許可する必要があります。
+
+![gae_firewall](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall.png)
+![gae_firewall_detail](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall_detail.png)
+
+## 配布およびインスタンスの確認
+
+Google Cloud SDKを通じて設定された_app.yaml_ファイルと_Dockerfile_をデプロイしてください。
+
+```bash title=SH
+$ gcloud app deploy
+```
+
+Googleクラウドコンソールからアプリエンジンのインスタンスを確認してください。
+
+![gae_instance](https://img.whatap.io/media/agent_php/install/tinified/gae_instance.png)

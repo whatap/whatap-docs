@@ -1,0 +1,279 @@
+---
+id: service-1.100.x
+title: Service 1.100.X
+toc_max_heading_level: 3
+---
+
+## Service 1.100.7
+
+2023년 5월 3일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> > <UI>로그 파서 설정</UI> > <UI>필터 입력</UI> > 필터키의 오타 수정(okineName → okindName)
+
+-   <Status>Fixed</Status> <UI>로그</UI> > <UI>라이브 테일</UI> 메뉴에서 조회된 로그 데이터가 없는 경우 이전의 로그가 표시되는 현상 수정
+
+</div>
+
+## Service 1.100.6
+
+2023년 5월 3일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 관리</UI> 메뉴에서 사용자가 설정한 테마에 따라 패널 제목 색상이 변경되지 않는 버그 수정</p>
+
+</div>
+
+## Service 1.100.5
+
+2023年4月28日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータ照会時に選択されたカテゴリではなく、全体カテゴリを対象にログを照会するバグを修正</p>
+
+</div>
+
+## Service 1.100.4
+
+2023年4月28日
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Fixed</Status>ログプロファイル照会時、断続的にログが照会されないバグを修正</p>
+
+---
+
+### 「Application」
+
+<p><Status>Fixed</Status> <UI>統計・レポート</UI> > <UI>統計</UI>メニューで<UI>ドメイン</UI>タブにアクセスすると発生するホワイトアウト現象を修正</p>
+
+</div>
+
+## Service 1.100.3
+
+2023年4月28日
+
+<div class='indentTab'>
+
+### 「Application」
+
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>トランザクション検索</UI>メニューでフィルターのうち数字だけを入力するオプションに対して数字タイプの検証ロジックを適用</p>
+
+</div>
+
+## Service 1.100.2
+
+2023年4月27日
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで<b>Brwoser</b>, <b>Log</b>、<b>Cloud</b>、<b>Amazon ECS</b>製品の場合、ホストカラムデータを表示しないように修正</p>
+
+---
+
+### 「Application」
+
+<p><Status>Fixed</Status> <b>Java</b>プロジェクトの<UI>役人</UI> > <UI>エージェントインストール</UI> メニューでエージェントダウンロードコマンドの誤字を修正</p>
+
+---
+
+### 「Database」
+
+#### DB共通
+
+<p><Status>Change</Status>サイドバーで<UI>分析</UI> > <UI>メトリクス異常検知</UI>メニュー非表示</p>
+
+#### POSTGRESQL
+
+-   <Status>Change</Status> <UI>統計・レポート</UI> > <UI>PG_STAT_STATEMENT</UI>メニュー非表示
+
+-   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューで案内メッセージのリンクをクリックすると空のページに移動する問題を修正
+
+#### MYSQL
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューで案内メッセージのリンクをクリックすると空のページに移動する問題を修正</p>
+
+---
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
+
+---
+
+### `ECS`
+
+<p><Status>Fixed</Status> <UI>Flexボード</UI>、<UI>Amazon ECS</UI> > <UI>Service</UI>メニューで<UI>ecs_service</UI>ウィジェットに全体サービスのうち1つだけが表示される問題を修正</p>
+
+</div>
+
+## Service 1.100.1
+
+2023年4月26日
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータの照会時にデータが出力されない問題を修正</p>
+
+---
+
+### `Browser`
+
+<p><Status>Fixed</Status> <UI>プロジェクト一覧</UI>で<UI>リストビュー</UI>モードへの切り替え時<code>Browser</code>プロジェクトが照会されない問題を修正</p>
+
+</div>
+
+## Service 1.100.0
+
+2023年4月26日
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>New</Status>Browserモニタリングサービスをオープンします。 たくさんのご利用をお待ちしております。 Browserモニタリングの詳細については、<a href='../../browser'>次の文書</a>を参考にしてください。</p>
+
+---
+
+### 「共通」
+
+#### 検索
+
+-   <Status>Change</Status> <UI>サイドバー</UI> > <UI>検索</UI>キーワード入力後、Enterキー入力で照会
+
+-   <Status>Fixed</Status> <UI>サイドバー</UI> > <UI>検索</UI> > <UI>エージェント検索</UI>実行時、画面が途切れる現象を修正
+
+#### Flexボード
+
+-   <Status>Feature</Status> <UI>Flexボード</UI>メニューでシリーズウィジェットのチャート設定オプションとして補助チャートのデータ併合・合算機能を追加
+
+-   <Status>Fixed</Status>Seriesウィジェットで3日以上のデータを照会する場合、X軸に日付を表記するよう修正
+
+#### 分析
+
+<p><Status>Fixed</Status> <UI>メトリクスチャート</UI> メニューでオーバーレイチャートのCSVダウンロードのバグを修正</p>
+
+#### 統計/レポート
+
+-   <Status>Feature</Status> <UI>統合レポート</UI>メニューで<UI>日間Http Call遅延レポート</UI>作成時、終了時間を翌日に選択できる機能を追加
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>レポート</UI>メニューで、ユーザーが選択した開始日基準ではなく、現在の基準だけでエージェント一覧を<UI>フィルター</UI>オプションとして取得するバグを修正
+
+#### ログ
+
+-   <Status>Change</Status> <UI>ログ設定</UI>メニューで製品別のエージェントの対応バージョン情報を修正
+
+-   <Status>Fixed</Status> <UI>ライブテール</UI>メニューで最初のデータのロード時にロードアニメーションを画面に表示するよう修正
+
+-   <Status>Change</Status> <UI>ログ設定</UI>メニューでトライアルの実際残日数を表現するように変更
+
+-   <Status>Feature</Status> <UI>ログ検索</UI>メニューで検索キーが2つ以下の場合、全体照会件数のうち一致するログ数を表示
+
+-   <Status>Feature</Status> <UI>ログトレンド</UI>メニューで照会したログ数を表示
+
+-   <Status>Feature</Status> <UI>ログ設定</UI>メニューで<code>Go</code>エージェント設定案内を追加
+
+#### 警告通知
+
+-   <Status>Change</Status> <UI>イベント受信設定</UI>メニューで<b>エスカレーション</b>のオプション名を<UI>繰り返し通知</UI>に変更
+
+-   <Status>Feature</Status> <UI>イベント受信設定</UI>メニューの<UI>ユーザー別のイベント受信設定</UI>と <UI>3rd partyプラグイン</UI>セクションに<UI>繰り返し通知</UI>オプションを追加
+
+-   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューでプロジェクトの初期作成時に白化現象が出る問題を修正
+
+-   <Status>Fixed</Status> <UI>複合メトリクスイベント</UI>の有効性チェックロジックのバグを修正
+
+-   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューでブラウザー画面のサイズを縮小する場合、テキストのずれ現象を修正
+
+#### 利用履歴
+
+-   <Status>Change</Status> <UI>請求書プレビュー</UI>メニューで請求履歴テーブルに<UI>割引金額</UI>カラムを追加
+
+-   <Status>Change</Status> <UI>請求・納付履歴</UI>メニューの<UI>請求内容の詳細を見る</UI>一覧で<b>製品タイプ</b>カラムを除去
+
+#### 管理
+
+-   <Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>会員退会</UI>メニューを利用して会員退会する場合、退会の関連事項（未払金、権限情報など）をポップアップウィンドウで確認するよう修正
+
+-   <Status>Fixed</Status>プロジェクト管理ページでボタンをクリックすると、読み込み表示が正しく動作しないバグを修正
+
+-   <Status>Change</Status>プロジェクトが制限状態の場合、プロジェクトに所属するメンバーであれば<UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューにアクセスできるように修正
+
+-   <Status>Fixed</Status>画面右上の「アカウント」アイコン選択 > <UI>アカウント情報管理</UI> > <UI>アカウント情報</UI> メニューで会員退会時の未払金額の表現及び経営支援チームの電話番号案内を修正
+
+#### MXQL
+
+<p><Status>Fixed</Status> MXQLデータ照会後、CSVがダウンロードされない問題を修正</p>
+
+---
+
+### 「Application」
+
+-   <Status>Change</Status> <UI>管理</UI> > <UI>エージェントインストール</UI> メニューでインストール案内セクションに対するデザインの改善
+
+-   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>アプリケーションダッシュボード</UI>メニューで言語設定が日本語の場合、要約ウィジェットのテキストが改行されずメトリクスが隠れるバグを修正
+
+-   <Status>Feature</Status> <UI>分析</UI> > <UI>ヒートマップ</UI>メニューでトランザクション一覧をクリックすると表示される<UI>統計</UI>ポップアップウィンドウに次の情報を追加
+
+    -   `HttpCall`タイプのトレースの場合、収集されたdriver情報があれば**Http Call**テキストの代わりに**driver情報**を表示
+
+    -   `SQL`、`DBC`タイプのトレースをクリックすると表示される詳細を見るウィンドウにSID値を追加表示
+
+-   <Status>Change</Status> <UI>分析</UI> > <UI>ヒートマップ</UI> > <UI>Txトレース一覧</UI>でトランザクションを選択し<UI>統計</UI>ウィンドウでSQLステップを照会する時、下段に「SQLクエリコピー」ボタンを追加
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI>メニューで<UI>Caller</UI>照会時<UI>Callerエージェント種類</UI>および<UI>Caller URL</UI>カラムのデータ抜けが発生するバグを修正
+
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>値を入力しない場合、データが検索されないバグを修正
+
+-   <Status>Change</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>検索値の有効性チェックロジックを追加
+
+---
+
+### 「Server」
+
+-   <Status>Fixed</Status> <UI>サーバー一覧</UI> > <UI>サーバー詳細</UI>メニューで<UI>プロセス</UI>ウィジェットの<UI>グループ化</UI>オプション権限のチェックロジックの欠落を修正
+
+-   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンパウンドアイ</UI>メニューの<UI>更新間隔（秒）</UI>に24桁以上の数字を入力すると、Topology Viewが描かれないバグを修正
+
+---
+
+### 「Container」
+
+-   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI> > <img src='/img/ico-setting.svg' alt='설정 아이콘'/>ボタン > <UI>1分以内に生成されたコンテナを表示する</UI>オプションの追加：生成から1分以内のコンテナの場合、明るい色で表示
+
+---
+
+### `CloudWatch`、`NCP`、`OCI`、`Azure`
+
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで説明追加及びUI修正
+
+    -   プロジェクト作成直後、エージェントインストールページに入ると表示される読み込み画像の下段に説明を追加
+
+    -   サービス一覧の照会・保存時に表示される読み込み画像の下段に説明を追加
+
+    -   `CloudWatch`インストール案内ページがスクロールに隠さずにすぐ表示されるように説明部分の高さを修正
+
+---
+
+### `OCI`、`Cloud Monitoring`
+
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで該当OCIプロジェクトの修正権限がない場合<b>RSA Public Key</b>生成ボタンを非活性化
+
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>クラウドモニタリング</UI> > <UI>Oracle Cloud Monitor</UI>タブで<b>RSA Public Key</b>生成時、認証情報が登録されていない状態でも登録済みとして区分されるバグを修正
+
+---
+
+### `ECS`
+
+<p><Status>Fixed</Status> <UI>利用履歴</UI> > <UI>プロジェクト有料転換</UI>メニューでホワイトアウト現象が発生するバグを修正</p>
+
+</div>

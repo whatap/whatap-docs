@@ -1,0 +1,266 @@
+---
+id: openapi-call-meta
+title: メタ情報照会
+description: メタ性情報照会のためのOpenAPIに関する説明を提供します。
+tags:
+  - Open API
+  - API
+  - メタ情報照会
+---
+
+## プロジェクトリストのルックアップ
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/projects
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap.io/open/api/json/projects"
+```
+
+```json title='response'
+{
+  "data": [ {
+        "groupName": "",
+        "projectCode": 35,
+        "projectName": "APM_TEST2",
+        "createTime": "2018-10-19 07:17:03.774",
+        "status": "subscribe",
+        "productType": "APM",
+        "platform": "JAVA",
+        "gatewayName": "LOCAL",
+        "apiToken": "5**********************R"
+    }, {
+    }, (...)
+  ],
+  "accountEmail": "xxx@whatap.io",
+  "total": 6
+}
+```
+
+| Response Field  |      Field Type                 | 説明                       |
+| --------------- | :-----------------------------: | ------------------------ |
+| gourpName       | <span class='api'>string</span> | プロジェクト上位グループ名            |
+| projectCode     | <span class='api'>number</span> | プロジェクトコード                |
+| projectName     | <span class='api'>string</span> | プロジェクト名                  |
+| createTime      | <span class='api'>string</span> | プロジェクト作成日                |
+| lastUpdatedTime | <span class='api'>string</span> | プロジェクト編集日                |
+| status          | <span class='api'>string</span> | プロジェクトステータス              |
+| productType     | <span class='api'>string</span> | アプリケーションサーバーのタイプ         |
+| platform        | <span class='api'>string</span> | アプリケーションサーバーのプラットフォーム    |
+| gatewayName     | <span class='api'>string</span> | ゲートウェイ名                  |
+| apiToken        | <span class='api'>string</span> | PROJECT API TOKEN        |
+| accountEmail    | <span class='api'>string</span> | ユーザーアカウントのメールアドレス        |
+| total           | <span class='api'>number</span> | プロジェクト数                  |
+
+## プロジェクト情報照会{#project-info}
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/project
+
+:::note
+この機能は、アプリケーションモニタリングの商品群に相当します。
+:::
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/project"
+```
+
+```json title='response'
+{
+  "platform": "JAVA",
+  "createTime": "Tue Sep 18 08:34:27 GMT 2018",
+  "gatewayName": "Office-OTE",
+  "projectCode": 1**1,
+  "status": "Subscribe",
+  "lastUpdatedTime": "Tue Sep 18 08:34:34 GMT 2018", 
+  "name": "SEO_APM",
+  "productType": "APM"
+}
+```
+
+| Response Field  |      Field Type                 | 説明                     |
+| --------------- | :-----------------------------: | ---------------------- |
+| platform        | <span class='api'>string</span> | アプリケーションサーバーのプラットフォーム  |
+| createTime      | <span class='api'>string</span> | プロジェクト作成日              |
+| projectCode     | <span class='api'>number</span> | プロジェクトコード              |
+| status          | <span class='api'>string</span> | プロジェクトステータス            |
+| lastUpdatedTime | <span class='api'>string</span> | プロジェクト編集日              |
+| productType     | <span class='api'>string</span> | アプリケーションサーバーのタイプ       |
+
+## プロジェクト情報および詳細サーバー照会
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/projects
+
+:::note
+この機能は、サーバーモニタリング商品群に該当します。
+:::
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/project"
+```
+
+```json title='response'
+{
+  "pname":"LOCAL_PC",
+  "timezone":9,
+  "regionName":"LOCAL",
+  "values":{
+    "servers":[
+      {
+        "public_ip":"192.168.1.0",
+        "os_cpuvendor":"Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "agent_created":"1572406071216",
+        "ip":"192.168.1.0",
+        "os_arch":"amd64",
+        "actTime":1572406264112,
+        "cpu_cores":"8",
+        "oid":-1030311093,
+        "isActive":true,
+        "okind":"",
+        "version":"1.2.4",
+        "tags":[
+          "network:169.254.0.0/16",
+          "network:192.168.1.0/24",
+          "java",
+          "OpenVpn",
+          "oracle",
+          "ftp"
+        ],
+        "inactTime":0,
+        "oname":"DESKTOP-KEIPLT5",
+        "os_name":"windows",
+        "startTime":1572406263602,
+        "os_memory":"17036419072",
+        "os_status":"warning"
+      },
+      (...)
+    ],
+  }
+}
+```
+
+## プロジェクトエージェントのステータスおよびホスト照会
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/json/agents
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/json/agents"
+```
+
+```json title='response'
+{
+   "data":[
+      {
+         "host_ip":"127.0.0.1",
+         "oname":"TC-29-96-8082",
+         "active":true
+      }, { 
+      } (...)
+   ]
+}
+```
+
+## プロジェクトメンバー一覧を参照
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/project/<code>projectCode</code>/members
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap.io/open/api/json/project/{{projectCode}}/members"
+```
+
+```json title='response'
+{
+  "data": [ {
+      "email": "honggildong@whatap.io",
+      "name": "홍길동",
+      "typeKey": "super_admin",
+      "typeName": "Super Admin"
+    }, {
+    }, (...)
+      ],
+  "total": 6
+}
+```
+
+| Response Field |      Field Type                 | 説明                    |
+| -------------- | :-----------------------------: | --------------------- |
+| email          | <span class='api'>string</span> | ユーザーアカウントのメールアドレス     |
+| name           | <span class='api'>string</span> | ユーザーアカウント名            |
+| typeKey        | <span class='api'>string</span> | ユーザー権限                |
+| typeName       | <span class='api'>string</span> | ユーザー権限の名              |
+| total          | <span class='api'>number</span> | プロジェクトメンバーの数          |
+
+## グループ一覧の照会
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/groups
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap.io/open/api/v2/json/groups"
+```
+
+```json title='response'
+{
+  "data": [ {
+        "groupName": "WHATAP APM",
+        "groupKey": "grp****ab123kskd*****q",
+        "description": "APM Group"
+    }, {
+    }, (...)
+  ],
+  "total": 3
+}
+```
+
+## グループメンバーのリストを表示
+
+<span class='apitype'>GET</span> https://api.whatap.io/open/api/json/group/<code>groupKey</code>/members
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap.io/open/api/json/group/{{groupKey}}/members"
+```
+
+```json title='response'
+{
+  "data": [ {
+      "groupName": "WHATAP APM",
+      "groupKey": "AB123KSKD*****2uasQ",
+      "description": "APM Group"
+    }, {
+    }, (...)
+  ],
+  "total": 3
+}
+```
+
+## グループに含まれるプロジェクトを表示
+
+<span class='apitype'>GET</span> https://api.whatap.io//open/api/json/group/<code>groupKey</code>/projects
+
+グループに含まれたプロジェクトのメタ情報を照会するAPIです。 アカウントのAPI Tokenが必要であり、curlを使用した例のリクエストは以下を参照してください。
+
+```bash title='command'
+$ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap.io/open/api/json/group/{{groupKey}}/projects" 
+```
+
+```json title='response'
+{
+  "data": [
+    {
+      "projectCode":35,
+      "name":"APM_TEST2",
+      "status":"Subscribe",
+      "productType":"APM",
+      "platform":"JAVA",
+      "gatewayName":"LOCAL"
+    }, {
+    }, (...)
+  ]
+}
+```
+
+| Response Field  |              Field Type                  | 説明                                                                                                   |
+| --------------- | :--------------------------------------: | ---------------------------------------------------------------------------------------------------- |
+| projectCode     | <span class='api'>number(integer)</span> | プロジェクトコード                                                                                            |
+| name            |      <span class='api'>string</span>     | プロジェクト名                                                                                              |
+| status          |      <span class='api'>string</span>     | プロジェクトステータス（'pending'、 'trial'、 'subscribe'、 'close_pending'、 ' limited'、 'closed'、 'trial_limited'） |
+| productType     |      <span class='api'>string</span>     | プロジェクトに使用された製品                                                                                       |
+| platform        |      <span class='api'>string</span>     | プロジェクトに使用された製品のプラットフォーム                                                                              |
+| gatewayName     |      <span class='api'>string</span>     | データサーバーエリア                                                                                           |

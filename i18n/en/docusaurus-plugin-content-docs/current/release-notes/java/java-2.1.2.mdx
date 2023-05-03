@@ -1,0 +1,317 @@
+---
+id: java-2.1.2
+title: Java Agent 2.1.2
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+## Change (update)
+
+### Adding the weaving setting
+
+The weaving setting has been added to track open source plug-ins. +
+
+The weaving setting that has the same functionality as the existing weaving_reserved setting has been added. +
+
+```ini title='whatap.conf 설정'
+weaving=tomcat10
+```
+
+```ini title='whatap.conf 설정'
+weaving_reserved=tomcat10
+```
+
+### Adding the thread stop setting
+
+An item has been added to set whether or not to stop the thread when the thread operation time exceeds the set value.
+
+The default values is false.
+
+```ini title='whatap.conf 기본 설정'
+auto_thread_kill_elapsed=0
+auto_thread_kill_enabled=false
+```
+
+### Modification of collection monitoring
+
+The existing method of hooking the collection class has been modified so that the collection class data can be retrieved indirectly through CollectionHolder.
+
+The class that creates the collection to the collection_nonstatic_holders setting has been added so you can see it in the collection map menu.
+
+```ini title='whatap.conf 설정'
+collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
+```
+
+### Adding the number of errors upon database call to the real-time statistics
+
+If an error occurs during database call, the setting has been added to add the number of errors in the real-time statistics.
+
+### Adding the real-time logs to connect the HTTP and database
+
+The real-time logs have been added for HTTP and DB connections.
+
+### Display of oname specified in the agent log
+
+`oname`을 `-D` 옵션으로 지정한 경우에도 에이전트로그에서 PID 대신에 에이전트 이름을 표시하도록 수정하였습니다.
+
+### Adding the JDBC URL extraction delimiter
+
+Modified to truncate based on "?" and ";" when extracting JDBC URL. 
+
+```
+Added ";"
+```
+
+### Adding the automatic recognition function when using the log open source
+
+When using the logback and log4j open sources, or log related open sources including the logging string, the function has been added to automatically disable the hooking option.
+
+### Adding the logsink collection data
+
+The data collected in logsink has been added.
+
+According to the configuration, you can determine whether the transaction ID, login ID, and HTTP host data are to be collected.
+
+```ini title='whatap.conf 기본 설정'
+_logtag_enabled = false         # tag 
+logtag_txid_enabled=false       # transation id
+logtag_login_enabled=false      # login id
+logtag_httphost_enabled=false   # http host
+```
+
+### Application of HttpClient Timeout and error handling
+
+Added the function to apply timeout to HttpClient and handle errors upon timeout.
+
+### Adding the JMX pool setting
+
+jmx pool object의 기본값을 수정하였습니다. jmx pool의 데이터소스 이름 사용 여부를 결정할 수 있는 옵션을 추가하였습니다. 데이터소스 이름을 등록하는 경우 jndi 방식을 실행하고, 이름을 등록하지 않은 경우 기본 url 방식으로 동작합니다.
+
+```ini title='whatap.conf 기본 설정'
+jmx_pool_dsname_enabled=false
+jmx_pool_object="*:type=DataSource,class=*,name=*"
+```
+
+### Adding the heapdump file path option
+
+The log-root option has been added to set the heapdump file path.
+
+```ini title='whatap.conf 기본 설정'
+log_root=${WHATAP_HOME}/dump
+```
+
+### Modification of the active start part of the batch agent
+
+Modified the batch agent to leave an active stack on the main thread of the batch process.
+
+### Adding the thread name display setting on the active stack
+
+The setting has been added to display the thread name of the active stack.
+
+```ini title='whatap.conf 기본 설정'
+active_stack_thread_name_enabled=false
+```
+
+:::note
+If the Yard version is low and the value is set to true, the agent connection is disconnected continually due to a protocol error.
+:::
+
+### Adding the setting to display the asynchronous thread name
+
+Added the setting to display the thread ID and name of the asynchronous thread.
+
+```ini title='whatap.conf 기본 설정'
+debug_async_thread_enabled=false
+```
+
+### Saving the database call URL
+
+Modified to save the database call URL.
+
+### Deletion of the database call hash value
+
+Deleted the database call hash value from an error text.
+
+### Modification of the agent execution logo
+
+The logo content has been modified while the Java agent is running.
+
+```bash
+The Best Observability in Java
+```
+
+### Modified the asynchronous HTTP call error notification message.
+
+The notification message has been modified to display the status code when an asynchronous HTTP call error occurs.
+
+### Modification of the license key option in the agent settings
+
+Modified whatap.conf to use both license and accesskey options.
+
+```ini title='whatap.conf'
+# Same function
+license=
+accesskey=
+```
+
+### Modification of the Java agent meta option name
+
+Modified the name of the Java agent meta tag option.
+
+```ini title='whatap.conf 기본 설정'
+agent_meta_tags_enabled=true
+```
+
+## New features
+
+### Adding the exclusions for the agent environment variables
+
+The function has been added to exclude from the search items when a specific key value is entered in the environment variable search function.
+
+구분자는 ','로 대소문자를 구분하지 않습니다. `agent_env_system_enabled`, `agent_env_jvm_enabled` 설정과 연결하여 사용할 수 있습니다.
+
+```ini title='whatap.conf 기본 설정'
+agent_env_system_enabled=false
+agent_env_jvm_enabled=true
+
+agent_env_ignore_keys=user.timezone,user.name,user.language
+```
+
+### Adding the linked service tracing function
+
+The linked service status tracing function has been added so that the target IP or service connection status can be checked in liveTail of log monitoring.
+
+`logsink_rt_enabled` 옵션을 `true`로 설정하여 기능을 활성화 할 수 있고 `#RemoteTrace` 카테고리로 로그를 수집합니다.
+
+-   In case of a normal response, the level is ok. In case of error, the level is error.
+
+-   정상 응답인 경우 `logsink_rt_ok_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 30초 입니다.
+
+-   에러 응답인 경우 `logsink_rt_error_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 5초 입니다.
+
+```ini title='whatap.conf 기본 설정'
+logsink_rt_enabled=false
+
+logsink_rt_error_interval=5000
+logsink_rt_ok_interval=30000
+```
+
+### Adding the external call error notification
+
+The function has been added to receive a notification when an error occurs when calling HTTP or database or the response is slower than the specified time.
+
+-   `exception_alert_enabled` 옵션을 true로 설정하여 기능을 활성화 할 수 있습니다.
+
+-   `exception_alert_stack_size` 옵션으로 에러 스택 길이를 지정하여 알림 메세지로 받을 수 있습니다.
+
+-   `exception_alert_silent_time` 옵션으로 지정한 기간만큼 에러 알림을 비활성화할 수 있습니다.
+
+-   알림 메세지에는 url, `status_code`, `error_message`, `error_stack` 등을 표시합니다.
+
+```ini title='whatap.conf'
+# Default
+# Whether the error notification is enabled
+exception_alert_enabled=false
+
+# Whether the transaction error notification is enabled
+exception_alert_service_enabled=false
+
+# Whether the error notification is enabled upon HTTP call
+exception_alert_httpc_enabled=false
+
+# Whether the error notification is enabled upon JDBC call
+exception_alert_jdbc_enabled=false
+
+# Length of the stack displayed in the error notification message
+exception_alert_stack_size=50
+
+# Period of disabling the error notification message = 5 minutes (30000ms)
+exception_alert_silent_time=300000
+
+# Status code to ignore in the transaction error notification
+status_alert_ignore=403
+
+# url:status_code combinations to ignore in the transaction error notification
+status_alert_ignore_set=/api/test/timeout:408
+
+# Status code ignored in the HTTP call error notification
+httpc_status_alert_ignore=408,500
+
+# url:status code combinations ignored in the HTTP call error notification
+httpc_status_url_alert_ignore_set=/api/test/timeout:408
+```
+
+### Adjustment of error levels of transactions and HTTP calls
+
+트랜잭션이나 http 호출의 상태를 정상 호출로 인식할 수 있도록 기능을 추가하였습니다. 트랜잭션이나 http 호출의 상태를 info로 설정하게 되면 Spring Framework의 ExceptionHandler에서 처리하지 않은 에러를 정상으로 인식할 수 있도록 버전 기능을 추가하였습니다. 조건에 해당하는 경우 히트맵에 ErrorLevel에 INFO로 표시하고 에러 통계에는 포함합니다.
+
+```ini title='whatap.conf'
+# Default
+transaction_status_mode=normal
+httpc_status_mode=normal
+
+# Ignoring errors
+transaction_status_mode=info
+httpc_status_mode=info
+
+# Recognized as status code info to ignore in the transaction error notification
+status_alert_ignore=403
+
+# url:status_code combinations to ignore in the transaction error notification are recognized as info
+status_alert_ignore_set=/api/test/timeout:408
+
+# Recognized as status code infor ignorec in the HTTP call error notification
+httpc_status_alert_ignore=408,500
+
+# url:status code combinations ignored in the HTTP call error notification are recognized as info
+httpc_status_url_alert_ignore_set=/api/test/timeout:408
+```
+
+### Adding the Alibaba Druid connection pool tracing function
+
+The function to trace the Alibaba Druid connection pool has been added.
+
+```ini title='whatap.conf 기본 설정'
+druid_pool_enabled=false
+```
+
+### Addition of the netstat function
+
+oshi 라이브러리 활용하여 netstat을 수집하는 기능을 추가하였습니다. 네트워크 지표들 중 packet, collision, drop, error, bps 데이터를 수집합니다.
+
+```ini title='whatap.conf 기본 설정'
+oshi_netstat_enabled=false
+debug_oshi_netstat_enabled=false
+```
+
+## Fixed (bug fixing)
+
+### Fixing the .x plug-in int type recognition error
+
+Fixed the bug where the int type could not be recognized in the plug-ins that use the x extension.
+
+### Fixing the batch agent's getResultSet error
+
+The `TraceSQL.getResultSet` error of the batch agent has been corrected. 
+
+### Fixing the HTTP error time setting bug
+
+Fixed the bug where an error appears even if the maximum error time is set to 0 when calling an HTTP.
+
+### Bug that cannot trace the local date when tracing SQLs
+
+sql 요청시 `java.time.LocalDate` 타입을 추적하지 못하는 문제를 수정하였습니다.
+
+### Fixing the bug upon displaying the agent log
+
+`java.sql.Timestamp` 타입을 활용하여 로그를 남기는 경우 에러가 발생하는 문제를 수정하였습니다.
+
+### Fixed the class signature verification bug
+
+에이전트 설정 메뉴의 클래스 시그니처 표시 요청할 때 `java.lang.NullPointerException` 발생하는 것을 수정하였습니다.
+
+### Fixing the bug upon container ID extraction
+
+Fixed the container ID extraction bug.

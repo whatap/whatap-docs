@@ -1,0 +1,82 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
+tags:
+  - CUBRID
+  - Database Monitoring
+  - Agent
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+The following guides you to the basic installation method for using the WhaTap database monitoring service.
+
+{@include: ../common-items/_agent-signup-guide.mdx}
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## Downloading the agent
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+
+```ini title='whatap.conf'
+license=project access key
+whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap Server info
+
+db = {$CUBRID_HOME/databases/databases.txt 의 db-name}
+db_ip = {DB server IP address}
+db_port = {$CUBRID_HOME/conf/cubrid_broker.conf 의 BROKER_PORT (default : 33000)}
+cms_port = {$CUBRID_HOME/conf/cm.conf 의 cm_port (default : 8001)}
+```
+
+1.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+
+  Download the JDBC driver for the OS and version of your database server. https://www.cubrid.com/downloads
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+## Creating the monitoring account
+
+Both a DB account and a CUBRID Manager account are required for CUBRID monitoring. In general, the default dba account (`dba`) of the database and the CUBRID Manager account (`admin`) are used. You can also create a separate account.
+
+## Creating the DB user file{#create-db-user}
+
+Generate an encrypted UID for database connection. All user files must be run for both the user DB (`dba`) and CUBRID Manager (`admin`). Enter your username and password and run the shell script (or batch file). 
+
+-   _The uid.sh_ shell script file (or _uid.bat_ batch file) can be found in the path where the WhaTap database agent has been installed.
+
+-   `dba` and `DB_PASSWORD` are the username and password used for sign up.
+
+    ```bash title='uid.sh | uid.bat'
+    ./uid.sh dba DB_PASSWORD
+    ./cmsuid.sh admin ADMIN_PASSWORD
+
+    # Or
+
+    ./uid.bat "dba" "DB_PASSWORD"
+    ./cmsuid.bat "admin" "ADMIN_PASSWORD"
+    ```
+
+:::note
+
+-   After setting it once, it collects data from the database server to be monitored through the encrypted UID.
+-   To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
+-   In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
+-   If special characters are included in `dba` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
+
+    ```bash title='예시'
+    ./uid.sh whatap whatap\!pwd
+    ```
+
+:::

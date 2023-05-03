@@ -1,0 +1,50 @@
+---
+id: resource-container-list
+title: Container List and Detail
+description: You can check the container status and detailed information of the current project.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Resources
+  - Container
+---
+
+:::note
+If the data for specific columns does not appear, your Kubernetes node agent may be outdated. In this case, update the Kubernetes agent so that enough data can be collected. 
+:::
+
+## Container List
+
+Home > Select Project > **_Resource_** > **_Container List_**
+
+You can check the container status of the current project in a table.
+
+![Container List](https://img.whatap.io/media/images/whatap_kubernetes_resource_container_list.png)
+
+Key features are as follows:
+
+-   Automatic refresh of the container list (default 60 seconds, forced refresh, automatic refresh)
+-   Searching the container list for each node (agent)
+-   Container or pod-based search
+
+The following are the exposed data.
+
+| Item          | Description                                                            |
+| ------------- | ---------------------------------------------------------------------- |
+| ContainerId   | Container ID                                                           |
+| ContainerName | Container Name                                                         |
+| Namespace     | Namespace to which the container belongs                               |
+| ReplicaSet    | ReplicaSet to which the container belongs                              |
+| CpuTotUsage   | Container CPU Usage                                                    |
+| CpuByRequest  | Container CPU utilization by request                                   |
+| CpuRequest    | Container CPU Request                                                  |
+| CpuByLimit    | Container CPU utilization by limit                                     |
+| CpuLimit      | Container's CPU Limit Quota                                            |
+| NetRxBytes    | Sum of bytes read per second across all block devices in the container |
+| NetTxByes     | Container Network Transmit Data Size                                   |
+
+## Container Detail
+
+You can see the detailed information of a container. Multiple selection also allows container states to be compared to each other.
+
+![Container Detail](https://img.whatap.io/media/images/whatap_kubernetes_resource_container_detail.png)

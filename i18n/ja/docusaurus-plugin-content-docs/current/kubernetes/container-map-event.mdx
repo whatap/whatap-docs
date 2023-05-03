@@ -1,0 +1,72 @@
+---
+id: container-map-event
+title: Event
+description: WhaTap Kubernetesモニタリングでは、KubernetesイベントとWhaTapイベントを提供します。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - Event
+---
+
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後**詳細を見る**画面に進入 > **_イベント_**
+
+WhaTap Kubernetesモニタリングで提供するイベント情報は次のとおりです。
+
+-   Kubernetesイベント(**_kubernetes_**)
+-   WhaTapイベント(**_WhaTap_**)
+
+## Kubernetes
+
+Kubernetesイベントは、Kubernetesが自主的に提供するイベント情報です。ユーザーKubernetes環境で`kubectl get events`コマンドを使用すると、ユーザーKubernetesクラスターのイベント情報が確認できます。
+
+```bash
+$ kubectl get events -A
+ NAMESPACE   LAST SEEN   TYPE      REASON                   OBJECT                            MESSAGE
+ community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5`
+ community   12m         Normal    ScalingReplicaSet        deployment/suraksan               Scaled down replica set suraksan-66fc4bf889 to 3
+ community   5m18s       Normal    ScalingReplicaSet        deployment/baekdusan              Scaled down replica set baekdusan-59554d4859 to 3
+ community   7m10s       Normal    Created                  pod/suraksan-66fc4bf889-h2cw8     Created container suraksan
+ community   6m56s       Normal    Pulled                   pod/suraksan-66fc4bf889-h2cw8     Container image "123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/suraksan:0.48" already present on machine
+ community   7m9s        Normal    Started                  pod/suraksan-66fc4bf889-h2cw8     Started container suraksan
+ community   2m7s        Warning   BackOff                  pod/suraksan-66fc4bf889-h2cw8     Back-off restarting failed container
+ community   7m12s       Normal    Started                  pod/suraksan-66fc4bf889-t27rp     Started container suraksan
+ community   6m54s       Normal    Pulled                   pod/suraksan-66fc4bf889-t27rp     Container image "123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/suraksan:0.48" already present on machine
+ community   7m12s       Normal    Created                  pod/suraksan-66fc4bf889-t27rp     Created container suraksan
+ community   2m46s       Warning   BackOff                  pod/suraksan-66fc4bf889-t27rp     Back-off restarting failed container
+ community   7m19s       Normal    ScalingReplicaSet        deployment/mountain               Scaled up replica set mountain-6795bfbc54 to 5
+ community   27m         Normal    ScalingReplicaSet        deployment/mountain               Scaled down replica set mountain-6795bfbc54 to 4
+ community   6m53s       Normal    Pulled                   pod/suraksan-66fc4bf889-mjbsj     Container image "123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/suraksan:0.48" already present on machine
+ community   7m10s       Normal    Created                  pod/suraksan-66fc4bf889-mjbsj     Created container suraksan
+ community   7m10s       Normal    Started                  pod/suraksan-66fc4bf889-mjbsj     Started container suraksan
+ community   2m10s       Warning   BackOff                  pod/suraksan-66fc4bf889-mjbsj     Back-off restarting failed container
+ community   5m18s       Warning   FailedToUpdateEndpoint   endpoints/baekdusan-svc           Failed to update endpoint community/baekdusan-svc: Operation cannot be fulfilled on endpoints "baekdusan-svc": the object has been modified; please apply your changes to the latest version and try again
+```
+
+ただ、これらのイベント情報は継続的に保存されません。したがって、一定時間が経過したイベントは、もう情報を確認できません。 
+
+WhaTap Kubernetesは、ユーザークラスター環境で発生したKubernetesイベント情報をすべて収集して保存します。そして、ユーザーが確認したい対象によってPod、ReplicaSet、Deployment、Namespaceなどのイベント情報を提供します。
+
+![Kubernetesイベント](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_k8s.png)
+
+各イベントの左帯は、イベントタイプを示します。灰色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>を意味します。このイベントタイプは、Kubernetesが提供するEvent Typeの情報と同じです。
+
+ユーザー選択対象によって提供されるKubernetesイベントは次のとおりです。
+
+| 選択対象       | 提供イベント                                               | 提供関連イベント                                      |
+| ---------- | ---------------------------------------------------- | --------------------------------------------- |
+| 全体（All）    | >                                                    | プロジェクト全体イベント                                  |
+| Namespace  | >                                                    | Namespace下位の全体イベント                            |
+| Node       | >                                                    | 当該Nodeイベントまたはノード内のPod （コンテナ） 全体イベント           |
+| Deployment | ① `kind`がDeployment<br/>② `name`がユーザーのDeployment名と一致 | `name`がユーザーDeployment名でスタート                   |
+| ReplicaSet | ① `kind`がReplicaSet<br/>② `name`がユーザーのReplicaSet名と一致 | `name`がユーザーReplicaSet名でスタート                   |
+| Pod（コンテナ）  | ① `kind`がPod<br/>② `name`がユーザーのPod名と一致               | 当該Podが所属するDeployment名でスタートまたはReplicaSet名でスタート |
+
+WhaTapに保存されているKubernetesイベントは、`message`、`namespace`、`kind`、`name`、`reason`などの項目で構成されています。
+
+## WhaTap
+
+コンテナマップでは、ユーザーのWhaTap警告設定によるイベント一覧を確認できます。
+
+![WhaTapイベント](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_whatap.png)
+
+各イベントの左帯はイベントレベルを表します。灰色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>、赤は<span class='vslow'>Critical</span>の状態を意味します。

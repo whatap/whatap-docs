@@ -1,0 +1,34 @@
+Generate an encrypted UID for database connection. Enter the username and password and then run the shell script (or batch file). 
+
+The _uid.sh_ shell script file (or _uid.bat_ batch file) can be found in the path where the WhaTap database agent has been installed. Set `DB_USER` to `default` if there is only a password without user. 
+
+<Tabs groupId='os'>
+
+<TabItem value="linux" label="Linux" default>
+
+```bash
+./uid.sh DB_USER DB_PASSWORD
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```bash
+./uid.bat "DB_USER" "DB_PASSWORD"
+```
+
+</TabItem>
+</Tabs>
+
+:::note
+
+-   After setting it once, it collects data from the database server to be monitored through the encrypted UID.
+-   To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
+-   In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
+-   If special characters are included in `DB_USER` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
+
+    ```bash title='예시'
+    ./uid.sh whatap whatap\!pwd
+    ```
+
+:::

@@ -1,0 +1,69 @@
+---
+id: ibm-bluemix
+title: IBM BlueMix
+description: Complete application of the WhaTap agent in the IBM BlueMix environment.
+tags:
+  - Java
+  - IBM BlueMix
+---
+
+The following explains how to apply the WhaTap agent when deploying with **IBM BlueMix**. 
+
+[IBM BlueMix](https://console.bluemix.net/docs/apps/index.html%E2%80%8B) provides the **WebSphere Liberty** environment with the container. **Liberty** is a lightweight environment different from **WebSphere Application Server**, and it is similar to how **Spring Boot** works.
+
+{@include: _pass-note.mdx}
+
+The following is an example of the configuration environment. These files are created in the local development environment when configuring the environment according to [Guide](https://cloud.ibm.com/docs).
+
+```bash
+whatap@vmwas01:/apps/bluemix/java-helloworld$ ls -alrt
+Total 64
+drwxrwxr-x 3 whatap whatap  4096 10/29 13:13 ..
+-rw-rw-r-- 1 whatap whatap  1079 10/29 13:13 .classpath
+-rw-rw-r-- 1 whatap whatap  1184 10/29 13:13 .project
+-rw-rw-r-- 1 whatap whatap    39 10/29 13:13 .gitignore
+-rw-rw-r-- 1 whatap whatap   151 10/29 13:13 CONTRIBUTING.md
+drwxrwxr-x 2 whatap whatap  4096 10/29 13:13 .settings
+-rw-rw-r-- 1 whatap whatap  2823 10/29 13:13 pom.xml
+-rw-rw-r-- 1 whatap whatap   122 10/29 13:13 manifest.yml
+-rw-rw-r-- 1 whatap whatap  3522 10/29 13:13 README.md
+-rw-rw-r-- 1 whatap whatap 11323 10/29 13:13 LICENSE
+drwxrwxr-x 3 whatap whatap  4096 10/29 13:13 src
+drwxrwxr-x 2 whatap whatap  4096 10/29 13:13 target
+drwxrwxr-x 8 whatap whatap  4096 10/29 13:13 .git
+drwxrwxr-x 6 whatap whatap  4096 10/29 15:26 .
+```
+
+1.  In `${APP_HOME}`, create the _src/main/resources/whatap-agent/_ directory and then copy jar files and conf files.
+
+    ```bash
+    $ mkdir -p src/main/resources/whatap-agent/
+    $ cp /apps/whatap/whatap.agent.tracer-1.5.4.jar src/main/resources/whatap-agent/
+    $ cp /apps/whatap/whatap.conf src/main/resources/whatap-agent/
+    ```
+
+2.  Add options in the _${APP_HOME}/manifest.yml_ file. Because it is a yml file, write it with according to spacing and indentation standards.
+
+    ```yaml title=${APP_HOME}/manifest.yml {8-9} showLineNumbers
+    ---
+    applications:
+    - name: sample-java-helloworld
+    random-route: true
+    memory: 256M
+    path: target/JavaHelloWorldApp.war
+    # Add from here.
+    env:
+        JAVA_OPTS: "-javaagent:/{APPLICATION_DIR}/WEB-INF/classes/whatap-agent/whatap.agent-X.Y.Z.jar -Dorg.osgi.framework.bootdelegation=whatap.* "
+    ```
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+:::note
+
+-   The _whatap.conf_ configuration is applied the same as in non-PaaS environments. Because it may be difficult to identify the agent name after application, apply the agent name that suits the situation.
+-   For more information about the agent naming, see [the following](../agent-name).
+    :::
+
+{@include: ../../common-items/_start-apm.mdx}  

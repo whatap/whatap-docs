@@ -1,0 +1,28 @@
+---
+id: php-2.6.1
+title: PHP Agent 2.6.1
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+#### 2023-02-15
+
+-   <Status>Change</Status> TPSデータを <b>30秒平均</b>から  <b>5秒平均</b>で収集するよう修正
+
+    ```ini title='whatap.conf 기본 설정'
+
+    service_metrics_spike_enabled=false // falseなら5秒平均で収集
+
+    ```
+
+-   <Status>Fixed</Status> たまに正常トランザクションを5分以上遅延したトランザクションとして収集するエラーを修正
+
+    UDP通信によりトランザクションの開始と終了イベントの順序が逆転し、トランザクション終了イベントを先に処理する場合は、5分経過後、内部プロファイル情報に「Lost connection」として表示します。 終了イベントを先に送信する場合、30秒間開始イベントを待機できるように修正しました。
+
+    内部プロファイル情報に「Lost connection」を表示したトランザクションの原因は次のとおりです。トランザクション開始イベントから5分間、終了イベントを収集できない場合は、収集を停止します。
+
+    -   実際、トランザクションの実行時間が5分以上になる場合。
+    -   apacheまたはphp-fpmの再起動または終了によりプロセスが直ちに終了し、トランザクション終了イベントを収集できなかった場合
+    -   予期しないエラー（segmentaion、sigbusなどerror logの内容で確認可能）によりapacheまたはphp-fpmが強制終了する場合

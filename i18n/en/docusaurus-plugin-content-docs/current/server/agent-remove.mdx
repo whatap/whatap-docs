@@ -1,0 +1,34 @@
+---
+id: agent-remove
+title: Agent deletion
+description: It explains how to delete the server agent.
+tags:
+  - Server
+  - Delete
+  - Management
+---
+
+### Linux
+
+To delete the installed agent, execute the following command.
+
+-   **Debian/Ubuntu**
+    ```bash title=SH
+    sudo apt-get remove whatap-infra
+    ```
+-   **CentOS/Amazon Linux/SUSE/XenServer**
+    ```bash title=SH
+    sudo yum remove whatap-infra
+    ```
+-   **FreeBSD**
+    ```bash title=SH
+    pkg delete whatap-infra
+    ```
+
+### Windows
+
+-   Execute the server monitoring agent deletion command in the command line with the admin privilege. 
+    ```bash title=SH
+    "C:\Program Files\WhatapInfra\unins000.exe"
+    ```
+-   You can also use the Uninstall a Program function in Control Panel.

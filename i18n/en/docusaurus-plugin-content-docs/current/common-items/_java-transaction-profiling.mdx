@@ -1,0 +1,107 @@
+-   **profile_step_normal_count** <span class='type'>Int</span><br/>
+      Default `1000`<br/>
+      Set the maximum number of steps of the transaction trace.
+
+-   **profile_step_heavy_count** <span class='type'>Int</span><br/>
+      Default `1020`<br/>
+       If the default number of trace steps is exceeded in case of a heavy step, recording is made as many as the set value.
+
+-   **profile_step_max_count**<span class='type'>Int</span><br/>
+      Default `1024`<br/>
+      Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored. If `profile_step_heavy_count` is set up to 1000, active stacks are collected as many as `profile_step_max_count`.
+
+-   **profile_step_heavy_time** <span class='type'>MiliSecond</span><br/>
+      Default `100`<br/>
+      Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made as many as `profile_step_heavy_count`.
+
+-   **active_stack_count** <span class='type'>Int</span><br/>
+      Default `100`<br/>
+      Set the maximum number of active stacks collected in transactions.
+
+-   **profile_method_resource_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      When collecting method steps from a transaction trace, it traces the CPU and memory usages in that step.
+
+-   **profile_position_method** <span class='type'>String</span><br/>
+      It records the stack trace at the execution time of the set method.
+
+-   **profile_position_depth** <span class='type'>Int</span><br/>
+      Default `50`<br/>
+       Set the maximum number of lines to record the stack traces for position tracking.
+
+-   **trace_error_callstack_depth** <span class='type'>Int</span><br/>
+      Default `50`<br/>
+      Set the maximum number of stack trace lines collected upon any error.
+
+-   **trace_active_callstack_depth** <span class='type'>Int</span><br/>
+      Default `50`<br/>
+      Set the maximum number of stack trace lines to be collected in active stacks.
+
+{@include: ../common-items/_transaction-profile-active-color.mdx}
+
+-   **hook_method_patterns** <span class='type'>String</span><br/>
+      It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
+
+    ```ini title='예시'
+    hook_method_patterns=a.b.C1.*
+    ```
+
+-   **hook_method_supers** <span class='type'>String</span><br/>
+      Set the super class when measuring the response time of the method inherited from a specific class. It sets the full name of the class. Multiple items are separated with comma (,).
+
+    ```ini title='예시'
+    hook_method_supers=a.b.C1
+    ```
+
+-   **hook_method_interfaces** <span class='type'>String</span><br/>
+    When measuring the response time of the method that implements a specific interface, it sets the interface. It sets the full name of the interface. Multiple items are separated with comma (,).
+
+-   **hook_method_ignore_classes** <span class='type'>String</span><br/>
+    When setting a method trace, it sets the classes to exclude from the trace.
+
+-   **hook_method_access_public_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
+
+-   **hook_method_access_private_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
+
+-   **hook_method_access_protected_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
+
+-   **hook_method_access_none_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
+
+-   **stacklog_socket_port** <span class='type'>TCP_PortNumber</span><br/>
+        Default `0`<br/>
+        If the destination TCP port has been set, the stack trace is recorded as an agent log at the time of Socket.connect(). It can be used when tracing DB connections, HTTPC connections, and such that are not checked by default settings.
+    :::caution
+    Stack traces are recorded whenever the set destination is connected. It may cause performance degradation. It should be used temporarily only for the agents selected for debugging purposes.
+    Example of DB connection tracing: `stacklog_socket_port=1521`
+    :::
+
+-   **biz_exceptions** <span class='type'>String</span><br/>
+    It registers the business exceptions. The registered business exceptions are excluded from error statistics. It appears in the transaction trace details.
+
+-   **ignore_exceptions** <span class='type'>String</span><br/>
+    Register any exceptions to ignore. The errors of the registered exceptions are ignored.
+
+-   **transaction_status_error_enable** <span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, it is treated as an error.
+
+-   **status_ignore** <span class='type'>String</span><br/>
+      Set the `STATUS_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+-   **status_ignore_set** <span class='type'>String</span><br/>
+      `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+-   **httpc_status_error_enable** <span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      Set whether or not to return `HTTPC_ERROR`.
+
+-   **httpc_status_ignore** <span class='type'>String</span><br/>
+      Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+-   **httpc_status_ignore_set** <span class='type'>String</span><br/>
+      `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.<br/>
+      Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.

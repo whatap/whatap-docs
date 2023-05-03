@@ -1,0 +1,422 @@
+---
+id: java-2.1.1
+title: Java Agent 2.1.1
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+## 2022-07-12
+
+### New features
+
+#### Sending alert messages upon slow HTTP or SQL
+
+Added the function to send alert messages upon slow HTTP or SQL calls.
+
+#### Adjustment of error levels of transactions and HTTP calls
+
+A function has been added to recognize the status of transactions or HTTP calls as normal.
+
+```ini title='whatap.conf'
+# Default value
+transaction_status_mode=normal
+httpc_status_mode=normal
+
+# Ignorance of errors
+transaction_status_mode=info
+httpc_status_mode=info
+```
+
+## 2022-06-30
+
+### Update
+
+#### Modification of the Java agent meta option name
+
+Modified the name of the Java agent meta tag option.
+
+```ini title='whatap.conf'
+# Default value
+agent_meta_tags_enabled=true
+```
+
+### Bugs
+
+#### Fixed the bug upon ID extraction from the container
+
+Fixed the ID extraction bug in the container environment.
+
+## 2022-06-22
+
+### Update
+
+#### Modification of the license key option in the agent settings
+
+Modified whatap.conf to use both license and accesskey options.
+
+```ini title='whatap.conf'
+# Same function
+license=
+accesskey=
+```
+
+## 2022-06-16
+
+### Update
+
+#### Modification of the agent execution logo
+
+The logo content has been modified while the Java agent is running.
+
+```
+The Best Observability in Java
+```
+
+#### Modified the asynchronous HTTP call error notification message.
+
+The notification message has been modified to display the status code when an asynchronous HTTP call error occurs.
+
+### Bugs
+
+#### Fixed the class signature verification bug
+
+Fixed the NullPointException case when requesting to display the class signature in the Agent CONFIG. menu.
+
+## 2022-05-18
+
+### New features
+
+#### Addition of the netstat function
+
+Added the netstat function by using the OSHI library.
+
+### Update
+
+#### Update in error notification settings
+
+Added the settings related to transaction error notification and modified the setting name.
+
+```ini title='whatap.conf'
+# Default value
+# Whether the error notification is enabled
+exception_alert_enabled=false
+
+# Whether the transaction error notification is enabled
+exception_alert_service_enabled=false
+
+# Whether the error notification is enabled upon HTTP call
+exception_alert_httpc_enabled=false
+
+# Whether the error notification is enabled upon JDBC call
+exception_alert_jdbc_enabled=false
+
+# Length of the stack displayed in the error notification message
+exception_alert_stack_size=50
+
+# Period of disabling the error notification message = 5 minutes (30000ms)
+exception_alert_silent_time=300000
+
+# Status code to ignore in the transaction error notification
+status_alert_ignore=403
+
+# url:status_code combinations to ignore in the transaction error notification
+status_alert_ignore_set=/api/test/timeout:408
+
+# Status code to ignore in the HTTP call error notification
+httpc_status_alert_ignore=408,500
+
+# url:status code combinations to ignore in the HTTP call error notification
+httpc_status_url_alert_ignore_set=/api/test/timeout:408
+```
+
+### Bugs
+
+#### Fixing the bug upon displaying the agent log
+
+Fixed the bug when recording timestamp logs.
+
+#### Fixed the class detail view error in JDK15.
+
+Fixed the bug of not being able to view class signatures from the agent configuration screen.
+
+## 2022-05-16
+
+### Update
+
+#### Addition of the error notification message
+
+Transaction URL has been added to the error notification messages.
+
+### Bugs
+
+#### Bug that cannot trace the local date when tracing SQLs
+
+`java.time.LocalDate` 추적하지 못하는 문제 수정
+
+## 2022-05-11
+
+### Update
+
+#### Addition of the error notification message
+
+에러 알림 메세지에 status code 추가하였습니다. 에러 알림 메세지에 무시한 알림의 수를 추가하였습니다.
+
+## 2022-04-25
+
+### New features
+
+#### Adding the Alibaba Druid connection pool tracing function
+
+The function to trace the Alibaba Druid connection pool has been added.
+
+```ini title='whatap.conf'
+# Default
+druid_pool_enabled=false
+```
+
+#### Adding an alert upon HTTP call error
+
+Added the function to send notifications upon HTTP call error.
+
+```ini title='whatap.conf'
+# Default
+httpc_event_detail_enable=false
+```
+
+2022-03-24
+
+### New features
+
+#### Adding the HTTP call error notification
+
+The function has been added to receive a notification when an error occurs upon HTTP call.
+
+`exception_alert_enabled` 옵션을 `true`로 설정하여 기능을 활성화 할 수 있고, `exception_alert_stack_size` 옵션으로 지정한 값에 맞게 에러 스택을 알림 메세지로 받을 수 있습니다.
+
+한번 알림이 발생하게 되면 `exception_alert_silent_time` 옵션으로 지정한 기간만큼 에러 알림을 비활성화할 수 있습니다.
+
+```ini title='whatap.conf'
+# Default
+exception_alert_enabled=false
+exception_alert_buffer_size=5
+exception_alert_stack_size=50
+
+# 5 minutes (30000 ms)
+exception_alert_silent_time=300000
+```
+
+## 2022-03-18
+
+### Update
+
+#### Saving the database call URL
+
+Modified to save the database call URL.
+
+#### Deletion of the database call hash value
+
+Deleted the database call hash value from an error text.
+
+### New features
+
+#### Adding the linked service tracing function
+
+The linked service status tracing function has been added so that the target IP or service connection status can be checked in liveTail of log monitoring.
+
+`logsink_rt_enabled` 옵션을 `true`로 설정하여 기능을 활성화 할 수 있고 #RemoteTrace 카테고리로 로그를 수집합니다.
+
+-   In case of a normal response, the level is ok. In case of error, the level is error.
+
+-   정상 응답인 경우 `logsink_rt_ok_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 30초 입니다.
+
+-   에러 응답인 경우 `logsink_rt_error_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 5초 입니다.
+
+```ini title='whatap.conf'
+# Default
+logsink_rt_enabled=false
+
+logsink_rt_error_interval=5000
+logsink_rt_ok_interval=30000
+```
+
+## 2022-02-18
+
+### Bugs
+
+#### Fixing the HTTP error time setting bug
+
+Fixed the bug where an error appears even if the maximum error time is set to 0 when calling an HTTP.
+
+### Update
+
+#### Adding the display setting for the active stack's thread name
+
+Added the setting to display the active stack's thread name.
+
+```ini title='whatap.conf'
+# Default
+active_stack_thread_name_enabled=false
+```
+
+:::note
+If the Yard version is low and the value is set to true, the agent connection is disconnected continually due to a protocol error.
+:::
+
+#### Adding the setting to display the asynchronous thread name
+
+Added the setting to display the thread ID and name of the asynchronous thread.
+
+```ini title='whatap.conf'
+# Default
+debug_async_thread_enabled=false
+```
+
+## 2022-02-11
+
+### Bugs
+
+#### Fixing the .x plug-in int recognition error
+
+Fixed the bug where int values could not be used in the plug-ins that use the x extension.
+
+#### Fixing the batch agent's getResultSet error
+
+Fixed the TraceSQL.getResultSet error of the batch agent.
+
+### Update
+
+#### Adding automation options for the filenames including logging
+
+Added the function to automatically disable the hooking option when using a file name including the logging string as a plug-in.
+
+#### Adding the transaction data from the Java agent to the log
+
+Added the function to add transaction data to the log by the Java agent, not by the plug-in.
+
+#### Application of HttpClient Timeout and error handling
+
+Added the function to apply timeout to HttpClient and handle errors upon timeout.
+
+#### Adding the JMX pool setting
+
+jmx pool object의 기본값을 수정하였습니다. jmx pool의 데이터소스 이름 사용 여부를 결정할 수 있는 옵션을 추가하였습니다.
+
+If the data source name is registered, the JNDI method is executed. If the name is not registered, the default URL method is executed.
+
+```ini title='whatap.conf'
+jmx_pool_dsname_enabled=false
+jmx_pool_object="*:type=DataSource,class=*,name=*"
+```
+
+#### Adding the heapdump file path option
+
+The log-root option has been added to set the heapdump file path.
+
+```ini title='whatap.conf'
+# Default
+log_root=${WHATAP_HOME}/dump
+```
+
+#### Modification of the active start part of the batch agent
+
+Modified the batch agent to leave an active stack on the main thread of the batch process.
+
+## 2022-01-12
+
+### Update
+
+#### Adding the number of DB call errors in the real-time statistics
+
+If an error occurs during database call, the setting has been added to add the number of errors in the real-time statistics.
+
+#### Adding the HTTP and DB connection's real-time logs
+
+The real-time logs have been added for HTTP and DB connections.
+
+#### Display of oname specified in the agent log
+
+Even when oname is specified using the -D option, the setting has been modified to display the agent name instead of the PID in the agent logs.
+
+#### Adding the JDBC URL extraction delimiter
+
+Modified to truncate based on "?" and ";" when extracting JDBC URL. 
+
+```
+Added ";"
+```
+
+#### Adding the automatic recognition function upon use of logsink and log4j plug-ins
+
+Added the function to automatically disable the hooking option when using logsink and log4j plug-ins.
+
+#### Adding the logsink collection data
+
+logsink에서 수집하는 데이터를 추가하였습니다. 설정에 따라서 transation id, login id, http host 데이터 수집 여부를 결정할 수 있습니다.
+
+```ini title='whatap.conf'
+# Default
+_logtag_enabled = false         # tag 
+logtag_txid_enabled=false       # transation id
+logtag_login_enabled=false      # login id
+logtag_httphost_enabled=false   # http host
+```
+
+## 2022-01-03
+
+### Update
+
+#### Modification of collection monitoring
+
+In the manner of hooking an existing collection class, it has been modified to retrieve the collection class data indirectly through CollectionHolder.
+
+Collection을 생성하는 클래스를 `collection_nonstatic_holders` 설정에 추가하여 Collection Map 항목에서 확인할 수 있습니다.
+
+```ini title='whatap.conf'
+collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
+```
+
+## 2021-12-21
+
+### Update
+
+#### Adding the thread stop setting
+
+thread 동작 시간이 설정값을 초과하는 경우에 thread 중단 여부를 설정할 수 있도록 항목을 추가하였습니다. 기본 설정값은 `false` 입니다.
+
+```ini title='whatap.conf'
+auto_thread_kill_enabled=false  # default value
+```
+
+#### The item, "Cookie" has been excluded from the HTTP header.
+
+Modified to exclude the item, "Cookie" from the HTTP header.
+
+```ini title='whatap.conf - http header 기본 제외 항목'
+(Previous) cookie,accept,user-agent,referer
+(To-be) Cookie,cookie,accept,user-agent,referer
+```
+
+## 2021-12-17
+
+### Update
+
+#### Adding the weaving setting
+
+플러그인을 추적할 수 있도록 weaving 설정을 추가하였습니다. 기존의 `weaving_reserved` 설정과 동일한 기능으로 `weaving` 또는 `weaving_reserved` 설정 모두 동작합니다.
+
+```ini title='whatap.conf'
+weaving=tomcat10
+```
+
+#### Adding the exclusions for the agent environment variables
+
+환경 변수 조회 기능에서 특정 키값을 입력하면 조회 항목에서 제외할 수 있도록 기능을 추가하였습니다. 구분자는 ','로 대소문자를 구분하지 않습니다. `agent_env_system_enabled`, `agent_env_jvm_enabled` 설정과 연결하여 사용할 수 있습니다.
+
+```ini title='whatap.conf'
+agent_env_system_enabled=false
+agent_env_jvm_enabled=true
+
+agent_env_ignore_keys=user.timezone,user.name,user.language
+```

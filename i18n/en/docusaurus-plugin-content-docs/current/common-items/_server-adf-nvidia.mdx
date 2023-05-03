@@ -1,0 +1,32 @@
+If the `nvidia-smi` command is embedded, the GPU performance data is collected every 5 seconds to upload to WhaTap. The data is collected to the metrics **_Category_** `server_nvidiasmi`.
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "nvidiasmi.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "nvidiasmi.enabled=true"
+```
+
+</TabItem>
+</Tabs>
+
+-   **category server_nvidiasmi**
+
+    | Metrics              | Remarks                                 |
+    | -------------------- | --------------------------------------- |
+    | DecoderUtil          | gauge, Decoder utilization (in %)       |
+    | EncoderUtil          | gauge, Encoder utilization (in %)       |
+    | FreeFbMemoryUsageGpu | gauge, Framebuffer memory free (in MiB) |
+    | UsedFbMemoryUsageGpu | gauge, Framebuffer memory used (in MiB) |
+    | GpuTemp              | gauge, GPU temperature (in C)           |
+    | GpuUtil              | gauge, GPU utilization (in %)           |
+    | MemClock             | gauge, Memory clock frequency (in MHz)  |
+    | MemoryUtil           | gauge, Memory utilization (in %)        |
+    | SmClock              | gauge, SM clock frequency (in MHz)      |

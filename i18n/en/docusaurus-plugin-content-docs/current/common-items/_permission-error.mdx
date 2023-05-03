@@ -1,0 +1,35 @@
+## In case of occurrence of a permission error
+
+If any Java security policy-related error occurs, add the role setting in _$JAVA_HOME/jre/lib/security/java.policy_.
+
+To apply all roles collectively, add the setting in _java.policy_ as follows:
+
+```java title='$JAVA_HOME/jre/lib/security/java.policy'
+grant {
+   permission java.security.AllPermission;
+};
+```
+
+### In case of occurrence of the java.io.FilePermission error
+
+![java.io.FilePermision error](/img/troubleshooting-permission-error.png)
+
+Add the setting in _java.policy_.
+
+```java title='$JAVA_HOME/jre/lib/security/java.policy'
+grant {
+   ...
+   permission java.io.FilePermission {package path seen in the error message}, "read"
+};
+```
+
+### In case of occurrence of the java.util.PropertyPermission error
+
+Add the setting in _java.policy_.
+
+```java title='$JAVA_HOME/jre/lib/security/java.policy'
+grant {
+   ...
+   permission java.util.PropertyPermission {package path see in the error message}, "read"
+};
+```

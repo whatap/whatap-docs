@@ -1,0 +1,20 @@
+---
+id: analysis-oom-container
+title: OOM Killedコンテナ
+description: Out Of Memory（OOM）が発生したコンテナを素早く検索し、その時点のメモリ使用量の変化推移を確認できます。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - OOM Killedコンテナ
+  - Out Of Memory
+---
+
+ホーム画面 > プロジェクト選択 > **_分析_** > **_Out Of Memory Killedコンテナ_**
+
+![Out Of Memory Killedコンテナ](https://img.whatap.io/media/images/whatap_kubernetes_analysis_oom_container.png)
+
+**Out Of Memory(OOM)**が発生したコンテナを迅速に検索し、その時点でのメモリ使用量の変化推移（急激か漸進的か）を確認できます。これにより、適切なPOD数とメモリ臨界点に関する客観的な判断が可能になります。
+
+:::note
+コンテナのメモリ使用量がメモリ制限を超えたり、コンテナが実行中のノードのメモリ不足状態が発生したりするとOut Of Memoryが発生します。もしコンテナがコード137で終了したらOut Of MemoryによってSIGKILLを受信したものです。
+:::

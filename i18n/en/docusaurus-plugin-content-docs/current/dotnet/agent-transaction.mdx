@@ -1,0 +1,40 @@
+---
+id: agent-transaction
+title: Transactions
+description: The agent traces the transaction performance and provides the following configurable options.
+tags:
+  - .NET
+  - Transactions
+---
+
+{@include: ../common-items/_transaction.mdx}
+
+The agent traces the transaction performance and provides the following configurable options.
+
+### Transaction Tracing
+
+{@include: ../common-items/_dotnet-transaction-profile.mdx}
+
+### Transaction tracing
+
+-   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span><br/> Default `3000`<br/>
+    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+
+-   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span><br/> Default `8000`<br/>
+    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a very slow section. If the transaction response time exceeds the set time, the number of very slow active transactions is included.
+
+-   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span><br/>Default `30000`<br/>
+    Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+
+<!-- 
+
+### 멀티 트랜잭션 추적
+
+**mtrace_spec** <span class='type'>String</span><br/>
+기본값: `v1`<br/>현재 인스턴스의 애플리케이션 버전을 설정합니다. 임의의 문자열을 입력할 수 있습니다. 이 데이터는 호출 통계를 위해 이용합니다.
+
+:::note
+{@include: ../common-items/_donet-iis-restart.mdx}
+:::
+
+-->

@@ -1,0 +1,414 @@
+---
+id: preview-1.99.x
+title: Preview 1.99.X
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+:::note
+
+[https://preview.whatap.io]（https://preview.whatap.io）で、次の新機能と修正した内容を事前に体験することができます。 
+
+::: 
+
+## Preview-1.99.29
+
+2023年4月25日
+
+<div class='indentTab'>
+
+### 「Server」
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンパウンドアイ</UI>メニューの<UI>更新間隔（秒）</UI>に24桁以上の数字を入力すると、Topology Viewが描かれないバグを修正</p>
+
+</div>
+
+## Preview-1.99.28
+
+2023年4月24日
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューでプロジェクトの初期作成時に白化現象が出る問題を修正
+
+-   <Status>Fixed</Status> <UI>複合メトリクスイベント</UI>の有効性チェックロジックのバグを修正
+
+</div>
+
+## Preview-1.99.27
+
+2023年4月24日
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Change</Status>次のメニューパスで<b>RUM</b>製品名を<UI>Browser Monitoring</UI>に変更</p>
+
+-   **_利用履歴_** > **_プロジェクト有料転換_**
+
+-   **_利用履歴_** > **_請求書プレビュー_**
+
+### 「Application」
+
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>値を入力しない場合、データが検索されないバグを修正
+
+-   <Status>Change</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>検索値の有効性チェックロジックを追加
+
+</div>
+
+## Preview-1.99.26
+
+2023年4月24日
+
+<div class='indentTab'>
+
+### `AWS Log`
+
+-   <Status>Feature</Status> <UI>エージェントインストール</UI> > <UI>WhaTap Forwarderインストール</UI>メニューで <UI>VPC使用</UI>オプションを追加
+
+</div>
+
+## Preview-1.99.25
+
+2023年4月20日
+
+<div class='indentTab'>
+
+### 「共通」
+
+#### 管理
+
+-   <Status>Fixed</Status> アカウントアイコン選択 > <UI>アカウント情報管理</UI> > <UI>アカウント情報</UI> メニューで会員退会時の未払金額の表現及び経営支援チームの電話番号案内を修正
+
+#### Flexボード
+
+-   <Status>Fixed</Status>Seriesウィジェットで3日以上のデータを照会する場合、X軸に日付を表記するよう修正
+
+### `Browser`
+
+-   <Status>Change</Status> <b>RUM</b>の製品名を<UI>Browser Monitoring</UI>に変更
+
+</div>
+
+## Preview-1.99.24
+
+2023年4月20日
+
+<div class='indentTab'>
+
+### 「共通」
+
+-   <Status>Feature</Status> <UI>ログ</UI> > <UI>ログ検索</UI>メニューで検索キーが2つ以下の場合、全体照会件数のうち一致するログ数を表示
+
+-   <Status>Feature</Status> <UI>ログ</UI> > <UI>ログトレンド</UI>メニューで照会したログ数を表示
+
+</div>
+
+<div class='indentTab'>
+
+### `OCI`、`クラウドモニタリング`
+
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで該当OCIプロジェクトの修正権限がない場合<b>RSA Public Key</b>生成ボタンを非活性化
+
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>クラウドモニタリング</UI> > <UI>Oracle Cloud Monitor</UI>タブで<b>RSA Public Key</b>生成時、認証情報が登録されていない状態でも登録済みとして区分されるバグを修正
+
+</div>
+
+## Preview-1.99.23
+
+2023年4月19日
+
+<div class='indentTab'>
+
+### 「Application」
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI>メニューで<UI>Caller</UI>照会時<UI>Callerエージェント種類</UI>および<UI>Caller URL</UI>カラムのデータ抜けが発生するバグを修正
+
+</div>
+
+## Preview-1.99.22
+
+2023年4月19日
+
+<div class='indentTab'>
+
+### `Go`
+
+-   <Status>Feature</Status> <UI>ログ</UI> > <UI>ログ設定</UI>メニューで<code>Go</code>エージェント設定案内を追加
+
+</div>
+
+## Preview-1.99.21
+
+2023年4月18日
+
+<div class='indentTab'>
+
+### 「共通」
+
+#### 利用履歴
+
+-   <Status>Change</Status> <UI>利用履歴</UI> > <UI>請求・納付履歴</UI>メニューの<UI>請求内容の詳細を見る</UI>一覧で<b>製品タイプ</b>カラムを除去
+
+</div>
+
+## Preview-1.99.20
+
+2023年4月18日
+
+<div class='indentTab'>
+
+### 「共通」
+
+### 「Application」
+
+<p><Status>Change</Status> <UI>分析</UI> > <UI>ヒートマップ</UI> > <UI>Txトレース一覧</UI>でトランザクションを選択し<UI>統計</UI>ウィンドウでSQLステップを照会する時、下段に「SQLクエリコピー」ボタンを追加</p>
+
+</div>
+
+## Preview-1.99.19
+
+2023年4月17日
+
+<div class='indentTab'>
+
+### `ECS`
+
+-   <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>プロジェクト有料転換</UI>メニューでホワイトアウト現象が発生するバグを修正
+
+</div>
+
+## Preview-1.99.18
+
+2023年4月14日
+
+<div class='indentTab'>
+
+### 「共通」
+
+-   <Status>Change</Status> <UI>サイドバー</UI> > <UI>検索</UI>キーワード入力後、Enterキー入力で照会
+
+-   <Status>Fixed</Status> <UI>サイドバー</UI> > <UI>検索</UI> > <UI>エージェント検索</UI>実行時、画面が途切れる現象を修正
+
+</div>
+
+## Preview-1.99.17
+
+2023年4月13日
+
+<div class='indentTab'>
+
+### 「共通」
+
+#### レポート
+
+-   <Status>Feature</Status> <UI>統合レポート</UI>メニューで<UI>日間Http Call遅延レポート</UI>作成時、終了時間を翌日に選択できる機能を追加
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>レポート</UI>メニューで、ユーザーが選択した開始日基準ではなく、現在の基準だけでエージェント一覧を<UI>フィルター</UI>オプションとして取得するバグを修正
+
+### `AWS Log`
+
+<p><Status>Change</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>AWS IAM ポリシー作成</UI>手順のIAMポリシーを変更</p>
+
+### 「RUM」
+
+-   <Status>Change</Status> <UI>RUMダッシュボード</UI>と<UI>ブラウザーエラーダッシュボード</UI>メニューのウィジェット構成を変更
+
+-   <Status>Deprecate</Status> <UI>RUMダッシュボード</UI>メニューでウィジェットのmxql照会機能を削除
+
+</div>
+
+## Preview-1.99.16
+
+2023年4月12日
+
+<div class='indentTab'>
+
+### 「Container」
+
+<p><Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI> > <img src='/img/ico-setting.svg' alt='설정 아이콘'/>ボタン > <UI>1分以内に生成されたコンテナを表示する</UI>オプションの追加：生成から1分以内のコンテナの場合、明るい色で表示</p>
+
+</div>
+
+## Preview-1.99.15
+
+2023年4月11日
+
+<div class='indentTab'>
+
+### `CloudWatch`、`NCP`、`OCI`、`Azure`
+
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで説明追加及びUI修正</p>
+
+-   プロジェクト作成直後、エージェントインストールページに入ると表示される読み込み画像の下段に説明を追加
+
+-   サービス一覧の照会・保存時に表示される読み込み画像の下段に説明を追加
+
+-   `CloudWatch`インストール案内ページがスクロールに隠さずにすぐ表示されるように説明部分の高さを修正
+
+</div>
+
+## Preview-1.99.14
+
+2023年4月10日
+
+<div class='indentTab'>
+
+### 「Application」
+
+<p><Status>Feature</Status> <UI>分析</UI> > <UI>ヒートマップ</UI>メニューでトランザクション一覧をクリックすると表示される<UI>統計</UI>ポップアップウィンドウに次の情報を追加</p>
+
+-   `HttpCall`タイプのトレースの場合、収集されたdriver情報があれば**Http Call**テキストの代わりに**driver情報**を表示
+-   `SQL`、`DBC`タイプのトレースをクリックすると表示される詳細を見るウィンドウにSID値を追加表示
+
+</div>
+
+## Preview-1.99.12
+
+2023年4月6日
+
+<div class='indentTab'>
+
+<p><Status>Change</Status>プロジェクトが制限状態の場合、プロジェクトに所属するメンバーであれば<UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューにアクセスできるように修正</p>
+
+<!-- - <Status>Feature</Status> <UI>로그</UI> > <UI>로그 탐색기</UI>, <UI>로그 트렌드</UI> 메뉴에 조회한 로그 개수 표시 -->
+
+</div>
+
+## Preview-1.99.11
+
+2023年4月5日
+
+<div class='indentTab'>
+
+### 「Application」
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>アプリケーションダッシュボード</UI>メニューで言語設定が日本語の場合、要約ウィジェットのテキストが改行されずメトリクスが隠れるバグを修正</p>
+
+### 「Server」
+
+<p><Status>Fixed</Status> <UI>サーバー一覧</UI> > <UI>サーバー詳細</UI>メニューで<UI>プロセス</UI>ウィジェットの<UI>グループ化</UI>オプション権限のチェックロジックの欠落を修正</p>
+
+</div>
+
+## Preview-1.99.10
+
+2023年4月4日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>会員退会</UI>メニューを利用して会員退会する場合、退会の関連事項（未払金、権限情報など）をポップアップウィンドウで確認するよう修正</p>
+
+</div>
+
+## Preview-1.99.9
+
+2023年4月4日
+
+<div class='indentTab'>
+
+#### 警告通知
+
+-   <Status>Change</Status> <UI>イベント受信設定</UI>メニューで<b>エスカレーション</b>のオプション名を<UI>繰り返し通知</UI>に変更
+-   <Status>Feature</Status> <UI>イベント受信設定</UI>メニューの<UI>ユーザー別のイベント受信設定</UI>と <UI>3rd partyプラグイン</UI>セクションに<UI>繰り返し通知</UI>オプションを追加
+
+#### ログ
+
+<p><Status>Change</Status> <UI>ログ設定</UI>メニューでプロジェクトのトライアル期間がログモニタリングのトライアル期間より長い場合、ログモニタリングトライアル期間をより長い期間として表示するように修正</p>
+
+</div>
+
+## Preview-1.99.8
+
+2023年4月3日
+
+<div class='indentTab'>
+
+#### 利用履歴
+
+<p><Status>Change</Status> <UI>請求書プレビュー</UI>メニューで請求履歴テーブルに<UI>割引金額</UI>カラムを追加</p>
+
+</div>
+
+## Preview-1.99.7
+
+2023年4月3日
+
+<div class='indentTab'>
+
+### 「共通」
+
+#### Flexボード
+
+<p><Status>Feature</Status> <UI>Flexボード</UI>メニューでシリーズウィジェットのチャート設定オプションとして補助チャートのデータ併合・合算機能を追加</p>
+
+### 「RUM」
+
+<p><Status>Change</Status> <b>ダッシュボード</b>メニューで一部のウィジェットのタイトルと照会データを変更</p>
+
+</div>
+
+## Preview-1.99.6
+
+2023年4月3日
+
+<div class='indentTab'>
+
+#### ログ
+
+-   <Status>Change</Status> <UI>ログ設定</UI>メニューで製品別のエージェントの対応バージョン情報を修正
+
+-   <Status>Fixed</Status> <UI>ライブテール</UI>メニューで最初のデータのロード時にロードアニメーションを画面に表示するよう修正
+
+</div>
+
+## Preview-1.99.5
+
+2023年3月31日
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>メトリクスチャート</UI> メニューでオーバーレイチャートのCSVダウンロードのバグを修正</p>
+
+</div>
+
+## Preview-1.99.3
+
+2023年3月30日
+
+<div class='indentTab'>
+
+### 「Application」
+
+<p><Status>Change</Status> <UI>管理</UI> > <UI>エージェントインストール</UI> メニューでインストール案内セクションに対するデザインの改善</p>
+
+</div>
+
+## Preview-1.99.2
+
+2023年3月30日
+
+<div class='indentTab'>
+
+### 「共通」
+
+#### 管理
+
+-   <Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>会員退会</UI> メニューで会員退会する場合、「未払い金表記」を一時除去し、案内メッセージを表示
+
+-   <Status>Fixed</Status>プロジェクト管理ページでボタンをクリックすると、読み込み表示が正しく動作しないバグを修正
+
+#### MXQL
+
+<p><Status>Fixed</Status> MXQLデータ照会後、CSVがダウンロードされない問題を修正</p>
+
+</div>

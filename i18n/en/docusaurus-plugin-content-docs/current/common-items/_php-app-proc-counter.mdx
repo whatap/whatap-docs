@@ -1,0 +1,25 @@
+### app_proc_counter
+
+---
+
+It is the metric of the application process.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name  | Description                  | Remarks       |
+| --------- | ---------------------------- | ------------- |
+| host_ip   | Host IP                      | Unique value  |
+| oname     | Application name             | Unique value  |
+| okindName | Name of the application type | -             |
+| onodeName | Name of the application node | -             |
+| type      | Application type             | Language name |
+
+#### Fields
+
+| Field name | Unit | Description              | Remarks |
+| ---------- | ---- | ------------------------ | ------- |
+| mem_proc   | Byte | PHP process memory usage | -       |
+| mem_system | Byte | Total system memory size | -       |

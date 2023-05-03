@@ -1,0 +1,108 @@
+---
+id: set-agent
+title: Configuration
+description: The following explains how to configure the default settings of the Golang agent.
+tags:
+  - Golang
+  - Configuration
+---
+
+The application server in the Golang environment uses libraries to configure the environment.
+
+```go title='라이브러리 다운로드'
+$ go get github.com/whatap/go-api
+```
+
+## Initial configuration
+
+-   Start the monitoring module by using the `trace.Init` function at the beginning of the main function.
+
+-   `defer trace.Shutdown()` makes sure that the monitoring ends.
+
+```go title='GO'
+import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+	...
+}
+```
+
+This can be set in the initial stage of the application by declaring it in the form of `map[string]string`.
+
+```go title='GO'
+func Init(m map[string]string)
+```
+
+The agent is connected based on UDP 127.0.0.1:6600. If the UDP port 6600 is being used internally, change it to another port.
+
+```go title='GO'
+m := make(map[string]string)
+m["net_udp_port"] = "6601"
+
+trace.Init(m)
+```
+
+Settings can be changed while the application is running by directly modifying the _whatap.conf_ file, or in the Whatap Monitoring Service's Project menu.
+
+When the application ends, all collected data is delivered and the UDP connection is closed.
+
+```go title='GO'
+func Shutdown()
+```
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## Configuring the agent on the service screen
+
+Home > Select Project > **_Management_** > **_Agent CONFIG._**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## Guide to the agent configuration options
+
+The following links provide descriptions of the options that can be set.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

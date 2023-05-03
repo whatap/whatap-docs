@@ -1,0 +1,60 @@
+---
+id: log-php
+title: PHP
+description: It guides you how to collect logs from your PHP application.
+tags:
+  - Log Monitoring
+  - PHP
+---
+
+To collect logs by your PHP application, check the following:
+
+## Agent Update
+
+It is available from PHP agent 2.3.2. For more information about update, see [the following](../php/agent-update).
+
+## Checking the agent settings
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. Proceed with the process according to the instructions in the **_Check Agent Settings_** tab of the **_Start Log Monitoring_** section.
+
+### Checking the configuration file path
+
+Check the **configuration file path** of the file for log monitoring. You can check it in the CLI environment or on the web.
+
+#### Checking in the CLI environment
+
+```shell
+$ php -i | grep 'Scan'
+Scan this dir for additional .ini files => /etc/php8.0.d
+```
+
+:::note
+If the path is "(None)," the configuration file path is _/usr/whatap/php_.
+:::
+
+#### Checking on the web
+
+If the PHP settings of the CLI and Apache environments are different, check the results of the `phpinfo()` function on the web.
+![](https://img.whatap.io/media/images/check_phpinfo.png)
+
+### Entering the command
+
+Log monitoring starts when you enter the command including the configuration file path.
+
+```shell
+export LOGFILES=/some/path/file1,/some/other/file2
+echo "whatap.logsink_enabled=true" | sudo tee -a [configuration file path]/whatap.ini
+echo "whatap.logsink.files=$LOGFILES" | sudo tee -a [configuration file path]/whatap.ini
+```
+
+## Enabling the log monitoring
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+You can enable or disable the WhaTap log monitoring with the toggle button in the **_Activate log monitoring_** tab of the **_Starting the log monitoring_** section. 
+
+{@include: ../common-items/_log-java-start.mdx} 
+
+{@include: ../common-items/_log-active-note.mdx} 

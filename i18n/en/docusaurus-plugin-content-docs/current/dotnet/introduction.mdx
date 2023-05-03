@@ -1,0 +1,28 @@
+---
+id: introduction
+title: .NET Monitoring
+description: Application servers running in the .NET environment can be monitored.
+tags:
+  - .NET
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+
+WhaTap .NET Application Monitoring provides the monitoring service for .NET-based web application servers in response to .NET Framework 4.5.
+
+You can monitor the .NET framework applications. It monitors IIS, consoles, services, and Windows applications. DB queries and external calls can be traced to find out which area created the delay.
+
+<!-- {@video: https://www.whatap.io/video/product/ko/app_dotnet.mp4}-->
+
+{@include: ../common-items/_apm-common-intro.mdx}
+
+## Operation method
+
+In case of the .Net program, it is converted to an executable or dll file in the form of Microsoft Intermediate Language (MSIL) after compilation. It works by translating this into native code by the Just-In-Time (JIT) compiler in the Common Language Runtime (CLR). WhaTap monitors running applications through the tracing API provided by the .NET framework.
+
+![Tracing Architecture](https://img.whatap.io/media/agent_dotnet/install/profiling-architecture.png)
+
+To use the .NET monitoring service, the monitoring agent must be installed on the monitored application. The agent is provided as an installer that can be installed on Windows.
+
+When the installation is completed, the WhaTap agent is automatically registered in the Windows service.

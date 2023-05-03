@@ -1,0 +1,24 @@
+---
+id: agent-troubleshooting
+title: インストール問題の解決
+description: Telegrafエージェントのインストール時に発生する問題を確認することができます。
+tags:
+  - Telegraf
+  - 問題解決
+  - インストール
+---
+
+whatap-telegrafサービスが実行中でないか、エラーが発生した場合は再起動します。
+
+-   **Red Hat/CentOS**  
+    ```bash title=SH
+    $ service whatap-telegraf restart
+    ```
+-   **Debian/Ubuntu**  
+    ```bash title=SH
+    $ sudo service whatap-telegraf restart
+    ```
+-   **FreeBSD**  
+    ```bash title=SH
+    $ service whatap_telegraf restart
+    ```

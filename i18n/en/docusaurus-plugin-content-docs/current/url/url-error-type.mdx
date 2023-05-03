@@ -1,0 +1,52 @@
+---
+id: url-error-type
+title: Error Type
+description: It guides you through the types of errors that can occur when applying URL Monitoring and how to set the types.
+tags:
+  - URL
+  - Installation
+  - Error Type
+---
+
+It guides you through the types of errors that can occur when applying URL Monitoring and how to set the types.
+
+URL 모니터링 화면에 나타나는 차트 영역을 드래그하면 해당 시간대에 URL 호출 시 취득한 결과 데이터를 화면 하단에 표시합니다. 데이터의 상세 원인에 표시된 메세지에 따른 조치 방법을 안내합니다.
+
+![URL 모니터링 에러 유형](/img/url-error-type.png)
+
+## connect timed out
+
+In this case, the access for URL call is blocked.
+
+-   웹 브라우저에서 URL을 입력해 접속에 문제가 없는지 먼저 점검하세요. 입력 과정에서 오류가 발생할 수 있습니다.
+-   방화벽 및 빈번한 호출에 대한 IP 차단 내역을 확인해 모니터링 에이전트의 IP에 대하여 명시적으로 접근을 허용하세요. 서울 에이전트의 외부 아이피는 54.180.11.176입니다
+
+## no route to host
+
+목적지에 도달하기 위한 경로가 존재하지 않습니다. 다음 항목을 정확하게 입력했는지 확인하세요.
+
+-   Port assignment
+-   Protocol of the input URL
+    :::note
+    Incorrect input of htts://, https://, etc.
+    :::
+
+## https
+
+URL 입력에 protocol을 중복 입력했을 경우에 발생할 수 있습니다. URL이 https://https://…​; 과 같은 형식으로 입력했는지 확인하세요.
+
+## handshake alert: unrecognized_name
+
+에이전트가 호출한 서버명이 서버 측에서 식별되지 않을 경우 발생합니다. http protocol을 사용하는 URL을 https://…​;으로 입력했는지 확인하세요.
+
+## sun.security.validator
+
+```text
+sun.security.validator.ValidatorException: PKIX path building failed:
+sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+
+It occurs when the agent cannot access the SSL certificate of the called site.
+
+-   에이전트의 문제입니다. [support@whatap.io](mailto:support@whatap.io)로 문의주세요. 현재까지는 SSL 인증서의 알고리즘에 대응이 안 된 몇 가지 사례가 식별되었습니다.
+-   If it is possible to share a sample module that can call HTTPS protocol based on Java HttpClient, we will develop and deliver a similar agent.

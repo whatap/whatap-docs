@@ -1,0 +1,51 @@
+---
+id: agent-manage
+title: Kubernetesエージェント
+description: Kubernetes内で実行中のアプリケーションをモニタリングするためにインストールしたエージェント構成について説明します。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - アプリケーションモニタリング
+  - エージェント
+---
+
+Kubernetes内で実行中のアプリケーションをモニタリングするためにインストールしたエージェント構成について説明します。
+
+## エージェント構成
+
+WhaTap Kubernetesをインストールすると、デフォルトでは、Kubernetes環境の\<whatap-monitoring\>Namespaceの下に
+エージェントのリソースを構成します。
+
+マスターエージェントはDeploymentの形式であり、ノードエージェントはDaemonSet形式です。以下は、Kubernetes環境にインストールされているWhaTapエージェントを確認する方法です。
+
+-   **マスターエージェント**
+
+    ```bash
+    kubectl get deployments -n whatap-monitoring 
+    kubectl get pods -l=name=whatap-master-agent -n whatap-monitoring
+    ```
+
+-   **ノードエージェント**
+
+    ```bash
+    kubectl get daemonsets -n whatap-monitoring
+    kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
+    ```
+
+以下は、\<whatap-monitoring\>
+Namespace内で実行中のマスターエージェント、ノードエージェントの実行の例です。
+
+```bash
+$ kubectl get pods -n whatap-monitoring
+NAME                                   READY   STATUS    RESTARTS   AGE
+whatap-master-agent-57f4499567-ltbbr   1/1     Running   0          3d19h
+whatap-node-agent-5q8rj                2/2     Running   0          21h
+whatap-node-agent-6nb2z                2/2     Running   0          30h
+whatap-node-agent-8m2vk                2/2     Running   0          21h
+whatap-node-agent-9thmw                2/2     Running   0          3h31m
+whatap-node-agent-kpv7d                2/2     Running   0          21h
+```
+
+以下は、WhaTap Kubernetesコンテナマップに表示されている\<whatap-monitoring\>Namespaceです。
+
+![コンテナマップ内のwhatap-monitoring Namespace](https://img.whatap.io/media/images/whatap_kubernetes_container_whatap_monitoring.png)

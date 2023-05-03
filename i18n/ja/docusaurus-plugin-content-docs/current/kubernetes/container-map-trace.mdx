@@ -1,0 +1,62 @@
+---
+id: container-map-trace
+title: Trace
+description: WhaTap Kubernetesモニタリングのトレース機能は、コンテナ上で実行中のアプリケーション状態モニタリング情報を提供します。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - Trace
+---
+
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後**詳細を見る**画面に進入 > **_トレース_**
+
+## コンテナ化されたアプリケーショントレース
+
+Kubernetesモニタリング時、Kubernetes環境内部で実行中のアプリケーションに対する追跡なしに、ただクラスターだけをモニタリングしては、現在の状態や問題の原因を正確に把握することは容易ではありません。
+
+問題の原因を追跡していると、特定のトランザクションのSQL処理遅延、ビジネスロジックのエラーなどアプリケーションレベルの問題である場合が多いからです。
+
+WhaTap Kubernetesのトレース機能は、コンテナ上で実行中のアプリケーション状態モニタリング情報を提供します。
+
+:::note
+Kubernetes上で実行中のアプリケーションを追跡するためには、Java、Node.js、Pythonなどの各アプリケーションコンテナにWhaTapモニタリングエージェントがインストールされている必要があります。エージェントインストールの詳細については、[次の文書](install-application-agent)を参考にしてください。
+:::
+
+![트레이스](https://img.whatap.io/media/images/whatap_kubernetes_container_map_trace_example.png)
+
+**\*トレース**機能の下位メニューは、**\*ダッシュボード**、**\*トランザクション一覧**で構成されています。
+
+## ダッシュボード
+
+ダッシュボードは、次のようなアプリケーションのコア情報をひと目で提供します。
+
+-   **_Active Transaction_**：現在実行中のトランザクションで、トランザクション実行時間に応じて色分け
+    -   赤（Very slow）：8秒以上
+    -   オレンジ色（Slow） ：3秒～8秒
+    -   青（Normal） ：0秒～3秒
+-   **_Active Transaction Count_**(アクティブトランザクションの推移)
+-   **_Htimap_**(ヒートマップ)：終了したトランザクションレスポンス時間の分布図
+    -   横軸：トランザクションの終了時間
+    -   縦軸：実行時間
+    -   実行時間の長いトランザクションは、分布図の上部に位置
+    -   特定領域のドラッグ時、トランザクション情報を確認可能
+-   **_TPS_**(Transaction Per Second)：毎秒処理されたトランザクション数
+-   **_Conrurrent User_**：同時ユーザー
+-   **_Apdex _ 100\***(Application Performance Index)：ウェブアプリケーションのユーザー満足度の測定
+-   **_HTTP Call Count_**：HTTP呼び出し件数
+-   **_HTTP Call Error Count_**：HTTP呼び出しエラー件数
+-   **_SQL Count_**
+-   **_SQL Error Count_**
+-   **_Transaction Total Conunt_**：トランザクション件数
+-   **_Transaction Error Conunt_**：トランザクションError件数
+-   **_Response Time_**：レスポンス時間
+-   **_Heap Memory Usage_**：Heap Memory使用量、使用可能な最大/現在のメモリ
+    -   時間によるメモリ使用量の変化をリアルタイムで把握可能
+    -   Pythonの場合、Process Totalメモリ使用量
+-   **_ThreadCount_**：Thread件数、Node.js、Pythonを除く
+-   **_GC Count_**：GC回数、Node.js、Pythonを除く
+-   **_GC Old Generation Count_**：Old領域のGC回数、Node.js、Pythonを除く
+
+## トランザクション一覧
+
+トランザクション一覧画面は、指定された時間帯のトランザクション一覧情報を提供します。もしトランザクション分布図を確認して特定区間のトランザクションだけを確認したい場合は、上記トレースダッシュボードのヒートマップチャートで対象を選択（ドラッグ）してください。

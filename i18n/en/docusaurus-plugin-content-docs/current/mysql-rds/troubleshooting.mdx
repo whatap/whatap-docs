@@ -1,0 +1,48 @@
+---
+id: troubleshooting
+title: Troubleshooting
+description: Resolve the problem where connection is not possible after entering the DB data.
+tags:
+  - MySQL RDS
+  - Database
+  - Troubleshooting
+  - Agent
+---
+
+If the connection fails in the **Entry of DB information** step, see the following to troubleshoot the problem.
+
+## Resource cleanup after connection failure
+
+If DB information has been entered incorrectly or the firewall has not been opened, the following message appears.
+
+![DB connection failure](/img/mysql-rds-db-info-fail.png)
+
+1.  Select **_Delete failed agent_** to clean up the agent resources.
+
+2.  The Delete operation proceeds with the message, `***Deleting agent that failed to create.***`.
+
+3.  After completing the deletion, the **Entry of DB information** screen appears again.
+
+See the message including the cause of the connection failure and then resolve the problem.
+
+## Connection failure examples
+
+### IP address or port error
+
+![IP or port error](/img/mysql-rds-db-fail-01.png)
+
+-   Make sure that you have entered the IP address or port number correctly.
+-   Open the firewall of the DB to be monitored and then check if external access is allowed.
+
+### Monitoring account entry error
+
+![Account entry error](/img/mysql-rds-db-fail-02.png)
+
+-   Check that you have entered the correct ID and password for the created monitoring account.
+-   Make sure all required roles have been granted to the monitoring account.
+
+:::note
+
+For more information about the monitoring account creation, see [the following](install-agent#uid).
+
+:::

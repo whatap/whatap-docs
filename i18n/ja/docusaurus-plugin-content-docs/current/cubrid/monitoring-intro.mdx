@@ -1,0 +1,72 @@
+---
+id: monitoring-intro
+title: CUBRIDモニタリング
+description: WhaTapデータベースモニタリングサービス（DBX）は、Queryベースでデータを収集し、性能モニタリングサービスを提供します。
+displayed_sidebar: cubridSidebar
+hide_table_of_contents: false
+tags:
+  - CUBRID
+  - データベースモニタリング
+  - データベース
+  - モニタリング
+  - DBX
+---
+
+WhaTapデータベースモニタリングサービス（DBX）は、Queryベースでデータを収集して性能モニタリングサービスを提供します。データベースの性能管理は、データベースの性能をリアルタイムでモニタリングし、問題点を診断・分析します。問題となるSQLをチューニングして適用し、イシューが解決されたか確認します。
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/db/DB_01_instanceMonitoring.mp4}
+
+## CUBRIDモニタリングの特長
+
+-   **リアルタイムDBモニタリング**
+
+    リアルタイムでDB性能指標と実行中のSQLを収集し、問題点の分析と性能最適化に必要なデータを共有し、データベースの意思決定を可能にします。Active Session、Lock Treeなど障害の主な関心事であるダッシュボードを提供し、通知発生の内容をリアルタイムで検知することができます。特定SQLのPlan情報を確認し、SQLチューニングの手がかりを提供します。
+
+-   **特定時点分析**
+
+    指標の短期推移、長期推移、指標比較機能を提供することで、過ぎ去った時点の問題状況を分析することができます。SQL、Lock Tree、Parallel Query、テーブルスペース増減などの履歴情報を確認することができます。 データベースパラメータの変更履歴を追跡します。
+
+-   **大容量規模でも効率的な構造**
+
+    多数のDBサーバー管理時にも単一化された性能データ収集および効率的なデータ保存構造を通じて最適な分析環境を提供します。
+
+-   **クラウドDBモニタリング可能**
+
+    Queryベースのモニタリングデータ収集構造で、DBサーバーの種類に制限はありません。AWS、GCP、Azure、OCI環境のDBもモニタリングでき、クラウドリソース指標と統合モニタリングにも対応しています。
+
+-   **統合モニタリング**
+
+    アプリケーション、サーバー、データベースモニタリング製品をすべてインストールすると、サービス異常現象把握時に連携したビューを通じて障害発生時に迅速な原因分析が可能になります。
+
+-   **WhaTap SaaS**
+
+    様々なデータベース製品を選択でき、月間サブスクリプション方式で使用期間を自由に決めることができます。（インストール型も提供可能）
+
+## 対応機能
+
+次は利用可能な機能です。他の製品と対応機能について比較したい場合は、[次の文書]（../getting-started/support-env#compare-db）を参考にしてください。
+
+| カテゴリ       | データベース                          |              CUBRID             |
+| ---------- | ------------------------------- | :-----------------------------: |
+| Monitoring | Instance List                   | <span class='emoji-ok'>✅</span> |
+| ^          | Instancs Monitoring             | <span class='emoji-ok'>✅</span> |
+| ^          | Multi DataBase (tenant)         | <span class='emoji-no'>❌</span> |
+| ^          | Slow Query                      | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                          | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare                  | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                       | <span class='emoji-ok'>✅</span> |
+| ^          | Parallel Query Tree             | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                       | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameter                    | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                        | <span class='emoji-ok'>✅</span> |
+| ^          | Table Size                      | <span class='emoji-ok'>✅</span> |
+| ^          | Database(TableSpace) Size       | <span class='emoji-ok'>✅</span> |
+| ^          | SGA Size                        | <span class='emoji-no'>❌</span> |
+| Report     | Daily / Weekly / Monthly Report | <span class='emoji-ok'>✅</span> |
+| Event      | Event List                      | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                      | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting                   | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                    | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                     | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                      | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management              | <span class='emoji-ok'>✅</span> |

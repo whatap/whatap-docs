@@ -1,0 +1,36 @@
+You can be notified when the network daemon's listening port has been disabled.
+
+Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Server_** tab, and then select **_+ Add alert policy_**.
+
+![](/img/server-adf-tcp-port.png)
+
+-   Click the ![number-s](/img/number-01.png) port metric toggle button and then change it to **_Use_**.
+-   Select ![number3](/img/number-03.png) **_Save_** to save the settings.
+-   Add it with the following command on the target server. 
+
+    <Tabs>
+      <TabItem value="lxst" label="Linux Shell">
+
+    ```bash title=SH
+    #Specify the IP to be monitored in the following variable.
+    export TARGET_IP=127.0.0.1
+    #Specify the port to be monitored in the following variable.
+    export TARGET_PORT=80
+    echo "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    ```
+
+    </TabItem>
+      <TabItem value="wpst" label="Windows Powershell">
+
+    ```bash title=SH
+    #Specify the IP to be monitored in the following variable.
+    $TARGET_IP="127.0.0.1"
+    #Specify the port to be monitored in the following variable.
+    $TARGET_PORT="80"
+    Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT"
+    ```
+
+    </TabItem>
+      </Tabs>
+
+<!-- 데몬형 프로세스가 bind 해서 사용하는 listen 포트가 접속이 안되면 알림을 받을 수 있습니다. -->

@@ -1,0 +1,165 @@
+<!-- 스크린샷 최신화/상세화 필요-->
+
+Home > Select Project > **_Analysis_** > **_Stack_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_Stack_** under **_Project Menu_**. This feature allows you to check **_top stack_**, **_unique stack_**, and **_active stack_**. 
+
+:::note
+The application that can use the stack analysis function is **Java** and **Python**. 
+:::
+
+WhaTap can use the thread stacks collected every 10 seconds (default value) to analyze the performance delay sections in the method level.
+
+![st1](https://img.whatap.io/media/user_guide_application/stack/st1.png)
+
+In the example stack, the **top line** is `socketRead0`. 
+
+```java
+java.net.SocketInputStream.socketRead0(Native Method)
+```
+
+**Top line** indicates that the thread to be dumped is executing that method. It may be caught momentarily, but it appears on the stack as a percentage of the sum of the module processing times. By calculating the frequency of this **top line** method, you can determine the method-level performance. WhaTap calls the **top line frequency statistics** as **_top stack_**.
+
+![tline1](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring23.png)
+
+You can analyze the frequencies of the methods that called the methods derived through the **_top stack_** analysis.
+
+![tst1](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring24.png)
+
+The original active stack was difficult to identify in the top stack hierarchy analysis. Thus, WhaTap provides the **_Unique Stack_** function to view **_Active Stacks_** after collecting the same stacks.
+
+## **_Top Stack_**{#top-stack}
+
+Based on each step on the stack trace, it provides the call rates between steps as percentage. The backlog frequencies of the top step are calculated as a percentage and the results are sorted in descending order.
+
+If each step is clicked, the upper step that calls the step is calculated and provided as percentage based on the call frequency.
+
+The **_Top Stack_** statistics are good to make decision with enough data. If the number of collected stacks is a prime number of less than 10, it is insufficient to have a statistical significance.
+
+**_Top stack_** is useful to find tuning points that were difficult to recognize while tuning. The most frequent stacks can be determined to cause the most response delays in the application server. The rate that appears on the utmost left is how much it affects the application server's performance.
+
+Even on a stable application server, frequently appearing stacks have the potential to cause performance degradation, so keep an eye on those classes.
+
+If you click **_Top Stack_**, the frequency of calls on the top stack can be checked. Because the call relationship of the **_top stack_** is one-to-one, the data accuracy may decrease as the depth of the **_top stack_** goes down. Use the information on the sub-depths for reference purposes and proceed with tuning.
+
+To improve the application performance, the module with a high backlog rate in the top-level step must be checked for bottleneck. For modules with high backlog rates, even a small performance improvement can lead to significant enhancement throughout all applications.
+
+![tst2](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring25.png)
+
+```java {1,3}
+whatap.util.ThreadUtil.sleep
+// The call rate of jdbc.Control.exec is 87.10%.
+jdbc.Control.exec 
+// The call rate of jdbc.FakePreparedStatement.executeQuery is 61.18%.
+```
+
+The call rate of `whatap.util.ThreadUtil.sleep` ← `jdbc.Control.exec` ← `jdbc.FakePreparedStatement.executeQuery` does not indicate 87.10% \* 61.18%. It is because the possibility of calling other modules exist in `jdbc.Control.exec`.
+
+When determining the call rate through **_Top Stack_**, do not multiply the call rates between steps to calculate the overall call relationship. Because the call rate of the top stack is the result of the call rates between steps of the data exposed on the stack trace, the total call rate derived with the call rates between steps can lead to a distorted result.
+
+In the **_top stack_** statistics, the history of collection counts and rate changes over time based on a specific period of time are provided.
+
+![tst3](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring27.png)
+
+-   **_Percent_**  
+
+    -   It displays changes in rate of the top stacks selected during the query period.  
+    -   It is useful to identify the status of failure and to compare before and after the improvement.
+
+-   **_Count_**  
+
+    -   The number of collected stacks is proportional to the number of active transactions.  
+    -   If the collection amount increased in a specific section, it can be seen that there was a service delay or a sudden increase in inflow.
+
+This can also be seen in the following diagram:
+
+![tst-dg](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring26.png)
+
+-   **_Stack Chart_**
+
+    The rates of individual top stacks appear on the chart.
+
+## **_Unique Stack_**{#unique-stack}
+
+As a result of calculation based on the hash value of the entire stack trace, the analysis information is provided with the percentage of the same call rates in all steps. **_Top Stack_** provides the call rates between steps. 
+
+**_Unique Stack_** provides the data based on accurate calls in the entire stack trace. Useful data for call relationship details is provided. For example, you can identify stack traces with higher backlog rates.
+
+![ust](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring27_Y8LaYJq.png)
+
+By reviewing the call step details, you can determine whether there is any abnormal module on the call path.
+
+## **_Active Stack_**{#active-stack}
+
+Transactions in progress are called "active transactions." **The stacks regularly dumped by active transactions** are called "active stacks."
+
+:::note
+The WhaTap agent dumps **active stacks** for **active transactions** every 10 seconds (optional) and sends them to the server.\
+`active_stack_second=10`
+:::
+
+If **_Active Stack_** is selected, you can check the collected active stacks on the chart. With statistical data for every 5 minutes, the **_active transaction count_** is displayed with the bar chart and the **_TPS_** with the line chart. 
+
+If you click the bar, the active transaction information for the clicked period appears, and if you click the information, you can see the active stack of the transaction.
+
+![ast](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring29.png)
+
+:::note
+For more information about active transaction, see [the following](active-transactions).
+:::
+
+\#{@include: ../common-items/_compact-active-stacks.mdx}
+
+\#{@include: ../common-items/_background-thread.mdx} 
+
+## Usage example
+
+<!-- 스크린샷 수정 필요 -->
+
+The following is an example to view the details for a specific period in **_Stack_** > **_Top Stack_**. You can find various improvements that cannot be known from the trace or transaction statistical data.
+
+1.  In **_Stack_** > **_Top Stack_**, check the top stack information.
+
+  ![tst-view](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring31.png)
+
+1.  Check the class and method from the top items in order of share.
+
+    -   Top stack with the **highest** 79.92% share<br/>
+        `org.apache.logging.log4j.core.layout.TextEncoderHelper.copyDataToDestination()`
+    -   Top stack with the **second highest** 8.01% share<br/>
+        `sun.misc.Unsafe.park()` 
+
+2.  You can check the trends for each time period with the histogram.
+
+    ![history](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring30.png)
+
+    -   Around 6 am, we can see that the `TextEncoderHelper.copyDataToDestination()` rate has decreased.
+    -   In the concurrent time zone, `sun.misc.Unsafe.park` has increased by the `TextEncoderHelper.copyDataToDestination()` rate decreased.
+
+    The first and second-highest top stacks are all related with logging. In other words, it can be seen that this system spends approximately 90% of the execution time for logging.    
+
+3.  Based on the confirmed market share, the expected effects of improvement are calculated.  
+
+    In the example, the rate of `copyDataToDestination()` 79.92% and the rate of `sun.misc.Unsafe.park()` 8.01% are percentages of time while running the service. If the `copyDataToDestination()` share is reduced by half, the performance can be improved by 44% based on the response rate.
+
+4.  Review the improvement plan based on the top stack information.
+
+    ```java title='org.apache.logging.log4j.core.layout.TextEncoderHelper.copyDataToDestination()'
+    private static void copyDataToDestination(final ByteBuffer temp, final ByteBufferDestination destination) {
+        synchronized (destination) {
+            ByteBuffer destinationBuffer = destination.getByteBuffer();
+            if (destinationBuffer != temp) { // still need to write to the destination
+                temp.flip();
+                if (temp.remaining() > destinationBuffer.remaining()) {
+                    destinationBuffer = destination.drain(destinationBuffer);
+                }
+                destinationBuffer.put(temp);
+                temp.clear();
+            }
+        }
+    }
+    ```
+
+    -   The `TextEncoderHelper` API has been deprecated due to many reasons such as performance issue.
+
+    -   `sun.misc.Unsafe.park()` is related with synchronization inside `TextEncoderHelper`.

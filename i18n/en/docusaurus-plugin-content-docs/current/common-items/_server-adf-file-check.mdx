@@ -1,0 +1,20 @@
+You can monitor the files and directories that exist or can exist on the file system.
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "filecheck.enabled=true" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
+echo "Full path of the file or directory to monitor" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "filecheck.enabled=true"
+Add-Content -Path "C:\Program Files\WhatapInfra\filesystem.conf" -Value "Full path of the file or directory to monitor"
+```
+
+</TabItem>
+</Tabs>

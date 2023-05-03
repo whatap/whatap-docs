@@ -1,0 +1,41 @@
+アプリケーション・モニタリング・エージェントは、線形収集方式と環状収集方式を提供します。
+
+## 線形収集
+
+個々のトランザクショントレースは、無期限にステップを収集することができません。トランザクションごとに長さが制限されているバッファーにトレースステップを保存します。各トランザクションは、最大で収集できるステップの数がオプションとして指定されます。
+
+-   **profile_step_max_count**\
+      デフォルト値「1024」<br/>
+      最大で収集可能なステップ数です。
+
+-   **profile_step_normal_count**\
+      デフォルト値「800」<br />
+      通常、何の制約もなく収集されるステップの数です。
+
+-   **profile_step_heavy_count**\
+      デフォルト値「1000」<br/>
+      normal countを超過した場合、ステップは応答時間が遅いステップとアクティブスタックステップのみを収集します。
+
+-   **profile_step_heavy_time**\
+      デフォルト値「100」<br/>
+      heavy count以内で収集されるステップの基準時間は、「profile_step_heavy_time」です。
+
+      ![step_buffer](https://img.whatap.io/media/agent_java/data/step_buffer.png) 
+
+      収集されるトレースのステップ数がheavy countを超える場合は、アクティブスタックのみが収集されます。 この場合でも、最大ステップ数は 「profile_step_max_count」 を超えません。
+
+## 環状収集
+
+線状収集は、トレースの最初の部分を収集し、バッファサイズを超えた部分の内容を破棄します。一方、環状収集は、最初のステップを破棄する方式です。 
+
+```ini
+circular_profile_enabled=true
+```
+
+![circular_profile](https://img.whatap.io/media/agent_java/data/circular_profile.png)
+
+バッファサイズは「profile_step_max_count」に設定します。
+
+```ini
+profile_step_max_count=1024
+```

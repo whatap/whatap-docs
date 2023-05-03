@@ -1,0 +1,29 @@
+---
+id: resource-master-meta
+title: Master Meta Information
+description: You can check the meta data of the Kubernetes master at a glance.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Master
+  - Meta Data
+---
+
+Home > Select Project > **_Resource_** > **_Master Meta Information_**
+
+You can check the meta data of the Kubernetes master at a glance.
+
+![Master Meta Information](https://img.whatap.io/media/images/whatap_kubernetes_resource_master.png)
+
+The following lists the provided key meta data:
+
+| Classification | Target                                                                                        |
+| -------------- | --------------------------------------------------------------------------------------------- |
+| Workload       | Event<br/>CronJob<br/>DaemonSet<br/>Deployment<br/>Job<br/>Pod<br/>ReplicaSet<br/>StatefulSet |
+| Service        | Ingresss<br/>Service                                                                          |
+| Config/Storage | ConfigMap<br/>Persistent Volume<br/>PersistentVolumeClaim<br/>StorageClass                    |
+| Cluster        | ClusterRoleBinding<br/>ClusterRole<br/>Node<br/>Role<br/>ServiceAccount                       |
+
+:::note
+If the master meta data cannot be searched, check whether the WhaTap master agent in the Kubernetes environment is running normally.
+:::

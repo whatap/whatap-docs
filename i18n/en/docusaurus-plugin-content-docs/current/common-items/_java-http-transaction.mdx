@@ -1,0 +1,27 @@
+## HTTP transaction tracing
+
+{@include: ../common-items/_transaction-profile-http.mdx} 
+
+-   **trace_transaction_name_key** <span class='type'>String</span><br/>
+    The value extracted from the set HTTP request parameter is added at the end of the transaction name.
+
+{@include: ../common-items/_transaction-trace-common.mdx} 
+
+-   **recursive_max** <span class='type'>Int</span><br/>
+    Default `1000000`<br/>This option is used to detect whether any transaction has been recursively called. Set the criteria for issuing event notifications by counting the number of recursive calls that are caused by a single transaction.
+
+    :::note
+    It targets the HTTP URL recursive calls. It counts the recursive calls delivered through jsp:forward.
+    :::
+
+-   **hook_httpservlet_classes** <span class='type'>String</span><br/>
+    It additionally sets END POINT for HTTP transactions. For the first 2 parameters of the method, only `HttpServletRequest` and `HttpServletResponse` can be set.
+
+-   **hook_jsp_patterns** <span class='type'>String</span><br/>
+    Default `org.apache.jasper.servlet.JspServlet.serviceJspFile`<br/>Set the method to load the JSP files. It displays the JSP information returned as a result of the transaction call in a trace. Default values are automatically added to the settings added through this option.
+
+-   **trace_ignore_url_set** <span class='type'>String</span><br/>
+    It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+-   **trace_ignore_url_set** <span class='type'>String</span><br/>
+    It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.

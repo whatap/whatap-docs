@@ -1,0 +1,108 @@
+---
+id: set-agent
+title: 設定
+description: Golangエージェントの基本設定方法を提供します。
+tags:
+  - Golang
+  - 設定
+---
+
+Golang環境のアプリケーションサーバーは、ライブラリを利用して設定します。
+
+```go title='라이브러리 다운로드'
+$ go get github.com/whatap/go-api
+```
+
+## 初期設定
+
+-   main関数の最初で`trace.Init`関数を利用してモニタリングモジュールを開始してください。
+
+-   `defer trace.Shutdown()`でモニタリング終了を保証します。
+
+```go title='GO'
+import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+	...
+}
+```
+
+`map[string]string`形式として宣言して、アプリケーションの初期設定ができます。
+
+```go title='GO'
+func Init(m map[string]string)
+```
+
+エージェントの接続情報は、UDP 127.0.0.1:6600です。内部でUDP 6600番ポートが使用中の場合は、別のポート番号に変更する必要があります。
+
+```go title='GO'
+m := make(map[string]string)
+m["net_udp_port"] = "6601"
+
+trace.Init(m)
+```
+
+アプリケーション実行中の設定変更は、_whatap.conf_ファイルを直接修正したり、WhaTapモニタリングサービスのプロジェクトメニューから変更することができます。
+
+アプリケーションを終了する時、収集したデータを最後にすべて転送し、UDP Connectionを終了します。
+
+```go title='GO'
+func Shutdown()
+```
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## サービス画面でエージェントを設定する
+
+ホーム画面 > プロジェクト選択 > **_管理_** > **_エージェント設定_**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## エージェント設定オプションの案内
+
+次のリンクは、設定できるオプションについて説明します。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

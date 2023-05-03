@@ -1,0 +1,57 @@
+---
+id: weblogic
+title: WebLogic
+description: Complete the additional settings for JVM options in the WebLogic application server environment.
+tags:
+  - Java
+  - WebLogic
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Check the method how to add JVM options in the application server environment using WebLogic. 
+
+Check the OS and then complete the configuration.
+
+<Tabs>
+<TabItem value="windows" label="Windows" default>
+
+```batch title="{WebLogic 설치 경로}/user_projects/domains/{사용자도메인}/bin/startWebLogic.bat"
+rem ########## WHATAP START ############
+set WHATAP_HOME=C:\whatap
+for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-X.Y.Z.jar"') do set last=%%f
+set WHATAP_JAR=%last%
+set WHATAP_OPTS=-javaagent:%WHATAP_HOME%\%WHATAP_JAR%
+
+if "x%JAVA_OPTS%"=="x" goto setWhatap
+
+set JAVA_OPTS_TMP=%JAVA_OPTS:"=%
+if not "x%JAVA_OPTS_TMP:whatap=%"=="x%JAVA_OPTS_TMP%" goto endWhatap
+
+:setWhatap
+set JAVA_OPTS=%JAVA_OPTS% %WHATAP_OPTS%
+
+:endWhatap
+rem ########## WHATAP END ############
+```
+
+</TabItem>
+<TabItem value="mac" label="MAC">
+
+```bash title="{WebLogic 설치 경로}/user_projects/domains/{사용자도메인}/bin/startWebLogic.sh"
+########## WHATAP START ############
+WHATAP_HOME=/whatap
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
+########## WHATAP END ############
+```
+
+</TabItem>
+</Tabs>
+
+:::note
+{@include: _java-17.mdx} 
+:::
+
+{@include: ../../common-items/_start-apm.mdx}  

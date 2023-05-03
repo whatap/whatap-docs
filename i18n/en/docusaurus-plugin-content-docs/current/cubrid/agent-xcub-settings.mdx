@@ -1,0 +1,65 @@
+---
+id: agent-xcub-settings
+title: XCUB agent configuration
+description: For CUBRID DB monitoring, sql_text and delta calculation data of the metrics are provided through installation of an additional agent, XCUB.
+tags:
+  - CUBRID
+  - Database Monitoring
+  - XCUB agent
+---
+
+For **CUBRID** DB monitoring, it is recommended to install XCUB, an additional agent. XCUB has to be installed on the database server and provides `sql_text` and delta calculation data of metrics. The installation and start-up method is the same as that of XOS agent.
+
+## Configuring the whatap.conf file
+
+-   **xcub** <span class='type'>Int</span>
+
+    Default `0`
+
+    Set whether or not to use the XCUB agent. If the value is `0` the XOS agent is not used for collection. Enter the value as `1` or IP address of the XCUB agent. If the IP address is specified, data is collected from only the XCUB agent.
+
+## Configuring the xcub.conf file
+
+After creating the _xcub.conf_ file on the database server, you can enter the agent server information and set additional options.
+
+-   **db** <span class='type'>String</span>
+
+    Set them in the `dbname@dbserverIP` format.
+
+-   **dba_pwd** <span class='type'>String</span>
+
+    Once a password has been set, the _xcub.pwd_ file is created at initial execution. After that, delete the `dba_pwd` entry in the _xcub.conf_ file.  
+
+-   **dbx_ip** <span class='type'>String</span>
+
+    Enter the IP address of the server in which the DBX agent has been installed.  
+
+-   **dbx_port** <span class='type'>String</span>
+
+    Default `3002`
+
+    Set the port to communicate with the DBX agent. DBX agent can be communicated via UDP. If you have set a firewall on that port, disable it for UDP communication.
+
+    :::note
+
+    If you have installed the XOS agent, you do not have to set it because it is used together with the XOS port.
+
+    :::  
+
+-   **sql_limit** <span class='type'>Int</span>
+
+    Default `1024`
+
+    The **byte size limit** of `sql_text`. Increase the value to check long queries.
+
+## XCUB agent execution
+
+Run the following batch file on the database server.
+
+```bash title='start.sh'
+$ ./start.sh
+
+# or
+
+$ ./startd.sh #In case of running in the background
+```

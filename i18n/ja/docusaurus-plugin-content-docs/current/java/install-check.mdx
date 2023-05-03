@@ -1,0 +1,39 @@
+---
+id: install-check
+title: インストールチェックリスト
+description: エージェントをインストールしてから確認する必要があります。
+tags:
+  - Java
+---
+
+エージェントをインストールした後の確認事項です。もしインストールに問題がある場合は、[次の文書](agent-troubleshooting)を参考にしてください。
+
+## WAS再起動
+
+アプリケーションサーバーを再起動してください。駆動ログに次のようなWhaTapキャラクターログが表示されたら、`JAVA_OPTS`設定が完了した状態です。
+
+```bash
+Nov 16, 2016 3:06:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /var/lib/tomcat7/webapps/ROOT has finished in 577 ms
+Nov 16, 2016 3:06:40 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 16, 2016 3:06:40 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3984 ms
+_  	 ____       ______
+| | /| / / /  ___ /_  __/__ ____
+| |/ |/ / _ \/ _ `// / / _ `/ _ \
+|__/|__/_//_/\_,_//_/  \_,_/ .__/
+        	             /_/
+Just Tap, Always Monitoring
+WhaTap Agent version 0.3.9 20161115
+```
+
+<!-- 에이전트 연결 확인 -->
+
+{@include: ../common-items/_check-agent-connection.mdx} 
+
+:::note
+
+-   エージェント名のデフォルト値は{type}-{ip2}-{ip3}-{port}です。
+-   エージェントの名前を変更またはプロパティを追加するには、[次の文書](agent-name)を参考にしてください。
+    :::

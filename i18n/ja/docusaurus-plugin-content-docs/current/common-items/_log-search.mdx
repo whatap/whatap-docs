@@ -1,0 +1,60 @@
+{@include: ../common-items/_log-role-view.mdx}
+
+ホーム画面 > プロジェクト選択 > {@include:\_search-path.mdx}
+
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択してください。その後、プロジェクトメニューの下位の{@include:\_search-path.mdx}メニューを選択してください。 
+
+**_ログ検索_**メニューから統合収集された大量のログをさまざまな条件で検索し、ユーザーが希望するログを特定できます。複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータのみを抽出します。 
+
+動的ページで検索されたログデータは、指定された行単位で取得され、スクロールなどにより画面の下部に到達すると自動的に次のデータが取得されて表示されます{@include:../common-items/_log-ui-main-term.mdx}
+
+![ログ検索sc](/img/log-search.png)
+
+<!-- 조회된 로그 개수 표시 픽스 시 이미지 변경 필요 0410 -->
+
+## データ照会
+
+-   下部までスクロールすると、次のデータを検索します。一度に30,000個のログを照会します。
+-   ![number-s](/img/number-03.png) 조회한 총 로그 개수를 확인할 수 있습니다. 
+-   ![number-s](/img/number-03.png)ログテーブルでログデータを時間順と逆順で照会できます。**_Timestamp_**カラム基準**_最近順_**と**_過去順_**の中から希望の照会方式を選択してください。
+
+<!-- * ![number-s](/img/number-02.png) 로그 테이블의 ***Timestamp*** 컬럼을 선택하면 로그 데이터를 시간 역순으로 조회할 수 있습니다. -->
+
+## ログContentの確認
+
+{@include: ../common-items/_log-ui-log-content.mdx}
+
+-   ![number-s](/img/number-03.png) **_テーブル_**テーブルの行（ログ）ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、該当ログの全体contentを確認することができます。
+-   ログのタグを選択すると、**_コピー_**, **_検索_**, **_除外検索_**ができるドロップダウンメニューが表示されます。
+
+## フィルター
+
+#### フィルター適用
+
+![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。右側の{@include:../common-items/_log-filter-apply.mdx} 
+
+#### フィルター修正
+
+{@include: ../common-items/_log-filter-modify.mdx}
+
+#### フィルター数式
+
+{@include: ../common-items/_log-filter-expression.mdx}
+
+#### 検索キー（Search Key）
+
+左側の![number-s](/img/number-02.png)領域にあるタグはカテゴリ別にパーシング（parsing）された検索キーです。タグを選択してフィルターを入力できます。<span class='logwr'>橙色</span> タグはカテゴリー、<span class='lowfg'>青色</span>タグは検索キーです。
+
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリー、その下の<span class='lowfg'>oid</span>といったタグは、パーシングされた検索キーです。検索キーは**_ログ_** > **_ログ設定_**の**_ログParser 設定_**からパーシングロジックを登録して設定できます。
+
+#### フィルター入力文法
+
+{@include: ../common-items/_log-filter-rule.mdx}
+
+## ハイライト
+
+{@include: ../common-items/_log-highlight.mdx}
+
+## テーブル設定
+
+-   ![number-s](/img/number-03.png)領域の右側{@include: ../common-items/_log-ui-table-setting.mdx}

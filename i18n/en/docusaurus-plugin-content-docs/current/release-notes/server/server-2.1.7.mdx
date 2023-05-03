@@ -1,0 +1,17 @@
+---
+id: server-2.1.7
+title: Server Agent 2.1.7
+toc_max_heading_level: 2
+---
+
+Release date: 2022-03-17
+
+## Fixing the Windows agent log excessive output problem
+
+Fixed the excessive log output problem on some servers of the Windows agent.
+
+## Optimizing the process name collection #2
+
+Modified to collect volatile process names associated with end-user sessions during the process as representative names.
+
+-   Target: If the user is Oracle and the executable file is of aaa_bbb_ccc pattern, the processes are summed and collected as aaa.

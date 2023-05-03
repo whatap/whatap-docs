@@ -1,0 +1,85 @@
+---
+id: agent-temp-st
+title: Pausing monitoring
+description: It provides the method how to pause the PHP agent monitoring.
+tags:
+  - PHP
+  - Pause
+  - Management
+  - Application
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+To pause the PHP monitoring service, you must stop the PHP extension module and whatap-php service. See the following.
+
+1.  Stop the PHP extension module. 
+
+    Comment out the `extension=` syntax in _whatap.ini_. Set the comment by using a semicolon (_;_).
+
+    <!--
+    :::note
+    주석은 세미콜론(;)으로 설정하세요.
+    ::: -->
+
+    ```bash
+    $ sudo vi whatap.ini
+
+    extension=whatap.so
+
+    ;Comment
+    ;extension=whatap.so
+    ```
+
+    Even if manual configuration is made in _php.ini_, comment out the `extension=` syntax. 
+
+    :::note
+    {@include: ../common-items/_php-restart-apache.mdx} 
+    :::
+
+2.  Stop the whatap-php service.
+
+    <Tabs>
+    <TabItem value="rdct" label="Redhat/CentOS" default>
+
+    ```bash
+    $ sudo service whatap-php stop
+    ```
+
+    </TabItem>
+    <TabItem value="dbub" label="Debian/Ubuntu">
+
+    ```bash
+    $ sudo service whatap-php stop
+    ```
+
+    </TabItem>
+    <TabItem value="frbsd" label="FreeBSD">
+
+    ```bash
+    $ service whatap_php stop
+    ```
+
+    </TabItem>
+    </Tabs>
+
+<!--
+**Redhat/CentOS**
+
+```bash
+$ sudo service whatap-php stop
+```
+
+**Debian/Ubuntu**
+
+```bash
+$ sudo service whatap-php stop
+```
+
+**FreeBSD**
+
+```bash
+$ service whatap_php stop
+```
+-->

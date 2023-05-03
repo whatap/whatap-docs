@@ -1,0 +1,51 @@
+---
+id: agent-remove
+title: Agent deletion
+description: It provides the method how to delete the PHP agent.
+tags:
+  - PHP
+  - Agent deletion
+  - Management
+  - Application
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Delete the tracers that are the PHP extension module and whatap-php service daemon by using the installation script. Afterward, delete the package (yum, apt-get) and then if necessary, delete the log file and other files under _/usr/whatap/php_.
+
+1.  Delete the PHP extension module and whatap-php service.
+
+    ```bash
+    $ /usr/whatap/php/install.sh remove
+    ```
+
+2.  Delete the package.
+
+    <Tabs>
+    <TabItem value="rdct" label="Redhat/CentOS" default>
+
+    ```bash
+    $ sudo yum remove whatap-php
+    ```
+
+    </TabItem>
+    <TabItem value="dbub" label="Debian/Ubuntu">
+
+    ```bash
+    $ sudo apt-get purge whatap-php
+    ```
+
+    </TabItem>
+    <TabItem value="frbsd" label="FreeBSD">
+
+    ```bash
+    $ pkg delete whatap-php
+    ```
+
+    </TabItem>
+    </Tabs>
+
+    :::note
+    {@include: ../common-items/_php-restart-apache.mdx} 
+    :::

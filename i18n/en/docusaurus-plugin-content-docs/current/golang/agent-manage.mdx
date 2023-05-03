@@ -1,0 +1,119 @@
+---
+id: agent-manage
+title: Agent Management
+description: You can pause or delete the Golang agent service.
+tags:
+  - Golang
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+The following explains how to restart, pause, or delete the Golang agent service.
+
+## Restarting the agent service
+
+If the WhaTap agent service is running or erroneous, restart it.
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="RedHat/CentOS">
+
+```bash title='SH'
+$ service whatap-agent restart
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo service whatap-agent restart
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ sudo service whatap-agent restart
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+```bash title='SH'
+$ /usr/whatap/agent/whatap-agent stop
+$ /usr/whatap/agent/whatap-agent start
+```
+
+</TabItem>
+</Tabs>
+
+## Stopping the whatap-agent service
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="RedHat/CentOS">
+
+```bash title='SH'
+$ sudo service whatap-agent stop
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo service whatap-agent stop
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ sudo service whatap-agent stop
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+```bash title='SH'
+$ /usr/whatap/agent/whatap-agent stop
+```
+
+</TabItem>
+</Tabs>
+
+## Agent deletion
+
+Delete the WhaTap library from the Golang application's source code.
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="RedHat/CentOS">
+
+```bash title='SH'
+$ sudo yum remove whatap-agent
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo apt-get purge whatap-agent
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ sudo yum remove whatap-agent
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+```bash title='SH'
+$ /usr/whatap/agent/whatap-agent stop
+
+# /usr/whatap/agent Deleting the directory
+$ sudo rm -r /usr/whatap/agent
+```
+
+</TabItem>
+</Tabs>

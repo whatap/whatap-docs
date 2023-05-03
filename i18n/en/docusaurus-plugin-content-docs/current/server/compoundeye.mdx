@@ -1,0 +1,58 @@
+---
+id: compoundeye
+title: Compound Eye
+description: The WhaTap monitoring dashboard provides functions to understand the overall status of a project at a glance.
+tags:
+  - Server
+  - Dashboard
+  - Compound Eye
+  - UI
+---
+
+홈 화면 > 프로젝트 선택 > **_대시보드_** > **_컴파운드 아이_**
+
+와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 **_프로젝트 메뉴_** 하위에 **_대시보드_** > **_컴파운드 아이_**를 선택하세요.
+
+<!--![](https://img.whatap.io/media/images/Screenshot_2021-03-17_Server_Monitoring1.png) -->
+
+![대시보드 컴파운드 아이](/img/compoundeye-chart.png)
+
+컴파운드 아이를 통해 와탭 에이전트가 설치된 모든 서버를 빈틈없이 볼 수 있습니다. 대규모 서버의 자원 상황을 한눈에 확인 가능합니다. 대규모 서버 자원에 대해 샘플링 혹은 요약된 결과가 아닌 시각적으로 가시화 된 뷰를 제공합니다
+
+## Provided information
+
+<!-- ![](https://img.whatap.io/media/user_guide_server/dashboard/1430.png) -->
+
+![컴파운드 아이 sc](/img/compound-eye.png)
+
+하나의 눈(Eye)입니다. 총 5 가지 정보를 제공합니다.
+
+-   <font color='73C2FC'>CPU</font>: CPU 사용량
+-   <font color='C0CA33'>Memory</font>: Memory 사용량
+-   <font color='7632FF'>Disk</font>: Disk 사용량
+-   <font color='00BEB8'>Rx</font>: 네트워크의 Rx (수신량)
+-   <font color='0076AC'>Tx</font>: 네트워크의 Tx (송신량)
+
+:::note
+
+네트워크 <font color='00BEB8'>Rx</font>/<font color='0076AC'>Tx</font> 사용량 지표를 보고 DDoS와 같은 외부 공격이 여러 서버에서 일제히 발생하는지 확인할 수 있습니다.
+
+:::
+
+## Anomaly occurrence
+
+![](https://img.whatap.io/media/images/Screenshot.png)
+
+When an anomaly occurs on the server, each Eye expresses the condition with a color.
+
+-   <span class='ov10'>Red</span>: Fatal condition
+-   <span class='wer'>Orange</span>: Alert condition
+-   <span class='mstop'>Gray</span>: Monitoring paused
+
+추가적으로 서버 위에 마우스를 위치하게 될 경우 개별 정보가 수치화된 팝업 메시지가 뜹니다. 서버 클릭 시 해당 서버의 요약 페이지로 이동하게 되어 자세한 내용을 파악할 수 있습니다.
+
+## Traffic Max Value option
+
+네트워크 환경에 따라 트래픽 양이 변화할 수 있기 때문에 트래픽의 최댓값을 조정할 수 있습니다. 희망하는 트래픽 최댓값을 설정하면 값에 따라 Rx/Tx 그래프가 변경됩니다.
+
+![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring6.png)

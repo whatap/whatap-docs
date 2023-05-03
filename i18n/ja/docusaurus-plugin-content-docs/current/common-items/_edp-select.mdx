@@ -1,0 +1,43 @@
+1.  **メソッドトレース設定**\
+    メソッドトレースを設定してください。 確実にトランザクションから呼び出されるクラスを指定してください。 DBを使用するプログラムでは**JDBCドライバー**が役に立ちます。 
+    ```ini title='whatap.conf'
+    hook_method_patterns=jdbc.*.*
+    hook_method_access_public_enabled=true
+    hook_method_access_protected_enabled=true
+    hook_method_access_none_enabled=true
+    ```
+2.  **トランザクション開始オプションの設定**\
+    メソッドが呼び出されたら、トランザクションを開始してください。 トランザクション開始オプションとトランザクション開始時にスタックをダンプするオプションをオンにします。 
+
+    ```ini title='whatap.conf'
+    trace_auto_transaction_enabled=true
+    trace_auto_transaction_backstack_enabled=true
+    ```
+3.  **再起動後のトレース分析**\
+    再起動してください。 その後、サービスを呼び出すと、トランザクションが追跡されるのを見ることができます。 
+
+    トランザクションを照会すると、`jdbc.*`で始まるすべてのクラスのメソッドがこのトランザクションで表示されることがわかります。トランザクショントレースを照会すると、**TRANSACTION BACKSTACK**というメッセージステップが確認できます。
+
+    ```bash title='TRANSACTION BACKSTACK'
+    jdbc.FakePreparedStatement.executeQuery(FakePreparedStatement.java),
+    com.virtual.dao.SelectDAO.execute2(SelectDAO.java:29),
+    com.virtual.web.SimulaNonHttp.execute(SimulaNonHttp.java:147),
+    com.virtual.web.SimulaNonHttp.process(SimulaNonHttp.java:76),
+    com.virtual.web.SimulaNonHttp.run(SimulaNonHttp.java:100)
+    ```
+4.  **スタック内容確認**\
+    スタック内容を確認すると、どのメソッドから出発しているかを推定できます。
+
+    ```bash title='예제'
+    com.virtual.web.SimulaNonHttp.execute(SimulaNonHttp.java:147),
+    com.virtual.web.SimulaNonHttp.process(SimulaNonHttp.java:76),
+    com.virtual.web.SimulaNonHttp.run(SimulaNonHttp.java:100)
+    ```
+
+    上記3つのメソッドのいずれかをトランザクションの開始点として判断できます。この状況では、逆コンパイルを実行して適切な**トランザクションエンドポイント**を決定する必要があります。
+
+    ロジックを見ると、`SimulaNonHtp.run`内で`while()`が動作しながら`SimulaNonHtp.process()`を呼び出し、`SimulaNonHtp.execute()`が実行されます。これを通じて、`process()`が適当であることがわかります。この部分はソースを見て判断する必要があります。
+
+    :::tip
+    **エンドポイント**の最も\*\*重要な基準は終了機能です。正常な状況で遅延することなく直ちに終了してこそ、パフォーマンスに関する判断ができます。
+    :::

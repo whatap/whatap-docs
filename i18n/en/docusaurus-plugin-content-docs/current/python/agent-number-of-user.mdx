@@ -1,0 +1,19 @@
+---
+id: agent-number-of-user
+title: User count
+description: The following describes the number of Python agent users.
+tags:
+  - User count
+  - Python
+  - Configuration
+---
+
+It aggregates the numbers of users who connect to the Python web application server.
+
+-   **trace_user_enabled(\*)**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      It determines whether or not to trace real-time users. If this value is enabled, the default value is the IP.
+
+-   **trace_user_using_ip(\*)**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      Enable to identify real-time users based on the IP address. The data can be checked in Real Time User. The `user_header_ticket` option and exclusive settings cannot be applied at the same time.

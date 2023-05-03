@@ -1,0 +1,89 @@
+---
+id: preview-1.95.1
+title: Preview 1.95.1
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+[https://preview.whatap.io]（https://preview.whatap.io）で、次の新機能と修正した内容を事前に体験することができます。 
+
+---
+
+## Hotfix: 2023-02-02
+
+### 「共通」
+
+<Status>Fixed</Status> <UI>役人</UI> > <UI>メンテナンス計画</UI> メニューで、登録したメンテナンス計画項目が削除されないバグを修正
+
+## Official Release: 2023-01-31
+
+### 「共通」
+
+#### ダッシュボード
+
+**_Flexボード_** メニューに次の機能を追加します。
+
+-   <Status>Feature</Status> <UI>アクティブトランザクションTopN</UI>ウィジェットを追加
+
+-   <Status>Feature</Status> <UI>ヒートマップ</UI> ウィジェット：トランザクショントレーステーブルの <UI>URL</UI> カラム項目に <b>コピー</b>(<img src='/img/ico-copy.svg' alt='복사 아이콘' />) ボタンを追加
+
+#### 利用履歴
+
+**_請求書プレビュー_** メニューに次の機能を追加します。
+
+-   <Status>Feature</Status> プロジェクト、製品名カラム別のグループ化ボタンを追加：グループ化したデータの時間合計、費用平均、請求費用の合計情報をプレビューで提供
+
+-   <Status>Feature</Status> 請求書テーブルの上に <UI>製品種類</UI>、<UI>プラットフォーム</UI>、<UI>製品通貨</UI>、<UI>製品単価</UI>、<UI>適用為替</UI>、<UI>請求通貨</UI> カラムの表示有無を選択できるオプションを追加
+
+#### 分析
+
+<Status>Feature</Status> <UI>メトリクスチャート</UI> メニューのウィジェット上段に時間マージ、オブジェクトマージ方式を表示
+
+### 「Container」
+
+**_ダッシュボード_** > **_コンテナマップ_** メニューに次の機能を追加します。
+
+-   <Status>Feature</Status> コンテナステータス情報をラベルとして表示する機能を追加：画面上段 <img src='/img/ico-setting.svg' alt='설정 아이콘' /> ボタンをクリックして <UI>コンテナステータス</UI> 選択
+
+-   <Status>Change</Status> コンテナマップ <b>詳細を見る</b> 画面のコンテナおよびポッド一覧のデザイン要素を修正
+
+    -   各項目を選択しても詳細情報が展開されないまま多重選択できるように修正
+    -   トグルボタンをクリックして詳細情報を確認できるよう修正
+
+### 「Database」
+
+<b>Tibero</b>製品の <UI>統計/レポート</UI> メニューに次の機能を追加・修正します。
+
+-   <Status>Feature</Status> <UI>テーブルスペースサイズ</UI> メニューの画面UIを改善
+
+    -   テーブルスペースサイズを累積チャート形式で提供
+    -   累積チャートに **_Total_**、**_Used_**ボタンを通じてチャートデータを変更
+    -   詳細情報をテーブルの形で提供
+    -   各項目のトグルボタンをクリックしてデータファイル情報の確認が可能
+    -   **_使用量（%）_** カラムに棒グラフを追加してデータの可視性を改善
+    -   各カラムの名前をクリックしてテーブルにソート機能を追加
+    -   **_テーブルスペース名_** カラムのサイズ調整機能を追加
+
+-   <Status>Change</Status> <UI>SQL統計</UI> メニューの統計テーブルに <UI>sql_id</UI> カラムを追加
+
+### 「AWS」、「Azure」、「NCP」、「OCI」
+
+-   <Status>Fixed</Status> <UI>エージェントインストール</UI> ページに入った後 <UI>アクセスキーの変更</UI> ボタンをクリックしても登録した認証情報がすぐに表示されない問題を修正
+
+-   <Status>Fixed</Status> プロジェクトを作成した後ページ移動時に画面上のメニューパスが <UI>インテグレーション > インストール</UI>として表示される問題を修正（<UI>管理 > エージェントインストール</UI>）
+
+<!-- 
+### `RUM`
+
+<Status>Feature</Status> <UI>분석</UI> > <UI>페이지 로드 분석</UI> 메뉴 추가: 시간에 따른 페이지 로딩 경과 시간을 타임라인 차트 형태로 제공하며, 각 이벤트에 대한 상세 정보 제공
+-->
+
+### `URL`
+
+<Status>Feature</Status> <UI>URL一覧</UI> メニューでExcelファイルで作成したURL一覧を取得したり、Excel ファイルに書き出しできる機能を追加：画面右上の <UI>読み込み</UI>/<UI>書き出し</UI> ボタンを追加

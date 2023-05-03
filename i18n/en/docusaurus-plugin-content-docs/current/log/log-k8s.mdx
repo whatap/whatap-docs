@@ -1,0 +1,95 @@
+---
+id: log-k8s
+title: Kubernetes
+description: The following guides you through collecting logs from Kubernetes containers and the applications in Kubernetes containers.
+tags:
+  - Log Monitoring
+  - Kubernetes
+---
+
+To collect logs from Kubernetes containers and the applications in Kubernetes containers, check the following. 
+
+## Agent Update
+
+It is available from Kubernetes agent 1.1.35. For more information about update, see [the following](../kubernetes/agent-update).
+
+## Checking the agent settings
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. Proceed with the process according to the instructions in the **_Check Agent Settings_** tab of the **_Start Log Monitoring_** section.
+
+### Enabling the container log collection
+
+![Kubernetes Log Node Agent Setting](/img/log-k8s-node-agent-setting.png)
+
+1.  On the lower part of **_Check agent settings_**, select ![number1](/img/number-01.png) ![Agent CONFIG. menu icon](/img/ic-agent.svg) **_Agent CONFIG._**. 
+
+2.  Go to **_Node Agent CONFIG._**, and then select **_Direct Input_** in the ![number2](/img/number-02.png) **_Write Options_** window.
+
+3.  Enter the **_key_**, `logsink_enabled` and the **_value_**, `true` of the following agent configuration command in the ![number 3](/img/number-03.png) field.
+
+```bash
+
+logsink_enabled=true 
+
+```
+
+1.  Select ![number4](/img/number-04.png) **_Apply_**. You can collect logs to the Kubernetes container.
+
+### Enabling application log collection in the container
+
+It is available from Java 2.1.1 and Python 1.2.2. To collect logs of the applications running on Kubernetes containers, see the following. 
+
+![Kubernetes Log Application Agent Setting](/img/log-k8s-app-agent-setting.png)
+
+1.  On the lower part of **_Check agent settings_**, select ![number1](/img/number-01.png) ![Agent CONFIG. menu icon](/img/ic-agent.svg) **_Agent CONFIG._**. 
+
+2.  Go to **_Application Agent CONFIG._**, and then select **_Direct Input_** in the ![number2](/img/number-02.png) **_Write Options_** window.
+
+3.  Enter the **_key_**, `logsink_enabled` and the **_value_**, `true` of the following agent configuration command in the ![number 3](/img/number-03.png) field.
+
+```bash
+
+logsink_enabled=true 
+
+```
+
+1.  Select ![number4](/img/number-04.png) **_Apply_**. You can collect application logs in the Kubernetes containers.
+
+:::note
+
+-   For more information about the collection of Java application logs, see [the following](log-java).
+
+-   For more information about the collection of Python application logs, see [the following](log-python).
+
+-   Golang 애플리케이션 로그 수집에 대한 자세한 내용은 [다음 문서](log-go)를 참조하세요.
+
+:::
+
+## Enabling the log monitoring
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+You can enable or disable the WhaTap log monitoring with the toggle button in the **_Activate log monitoring_** tab of the **_Starting the log monitoring_** section. 
+
+{@include: ../common-items/_log-java-start.mdx} 
+
+{@include: ../common-items/_log-active-note.mdx} 
+
+## Kubernetes log monitoring category guide
+
+You can check various logs related to Kubernetes. The monitoring categories provided by WhaTap Kubernetes are as follows. Depending on the settings, duplicate log contents may be stored. Be sure to check for duplicates.
+
+| Category          | Description                                                                                                                                                           |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `#K8sEvent`       | <ul><li>Logs that store the events that occur in Kubernetes</li><li>Generation by default regardless of user settings </li></ul>                                      |
+| `#WhatapEvent`    | <ul><li>Logs that store the events that occur by WhaTap event settings</li><li>Generation by default regardless of user settings </li></ul>                           |
+| `containerStdout` | <ul><li>Container Standard Out logs</li><li>Generation by user settings</li><li>When `logsink_enabled=true` setting is added to the node agent</li></ul>              |
+| `AppLog`          | <ul><li>Application logs in the container</li><li>Generation by user settings</li><li>When `logsink_enabled=true` setting is added to the application agent</li></ul> |
+
+<!-- 
+
+쿠버네티스 컨테이너에 로그를 수집할 수 있도록 위의 설정 과정을 마쳤다면, 다음으로 컨테이너 상에서 실행되는 애플리케이션의 로그를 수집할 수 있도록 설정하세요. 
+
+-->

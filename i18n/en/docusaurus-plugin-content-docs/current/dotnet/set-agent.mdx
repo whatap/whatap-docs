@@ -1,0 +1,64 @@
+---
+id: set-agent
+title: Configuration
+description: It provides the default method how to install the .NET agent.
+tags:
+  - .NET
+  - Environment configuration
+---
+
+The Whatap agent writes the necessary settings for each agent in _whatap.conf_. The agent locates and loads the configuration file through the environment variables. For user convenience, the [WhaTap Monitoring Service](https://service.whatap.io) also provides the agent configuration function.
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## Configuring the agent on the service screen
+
+Home > Select Project > **_Management_** > **_Agent CONFIG._**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## Guide to the agent configuration options
+
+The following links provide descriptions of the options that can be set.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

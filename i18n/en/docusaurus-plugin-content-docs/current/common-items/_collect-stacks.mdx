@@ -1,0 +1,41 @@
+The application monitoring agent provides linear and circular collection methods.
+
+## Linear collection
+
+Individual transaction traces cannot collect steps indefinitely. Store trace steps in buffers of limited length for each transaction. For each transaction, the maximum number of steps that can be collected is specified as an option.
+
+-   **profile_step_max_count**\
+      Default `1024`<br/>
+      Maximum number of steps that can be collected
+
+-   **profile_step_normal_count**\
+      Default `800`<br/>
+      Number of steps that are generally collected without any restrictions
+
+-   **profile_step_heavy_count**\
+      Default `1000`<br/>
+      If the normal count is exceeded, only the steps with slow response time and the active stack steps are collected.
+
+-   **profile_step_heavy_time**\
+      Default `100`<br/>
+      The reference time to collect steps within heavy count is `profile_step_heavy_time`.
+
+      ![step_buffer](https://img.whatap.io/media/agent_java/data/step_buffer.png) 
+
+      If the number of steps in the profile being collected exceeds the heavy count, only active stacks are collected. Even in this case, the maximum number of steps does not exceed `profile_step_max_count`.
+
+## Circular collection
+
+Linear collection collects the front part of the trace and discards the later part, if it exceeds the buffer size. On the other hand, circular collection discards the front step. 
+
+```ini
+circular_profile_enabled=true
+```
+
+![circular_profile](https://img.whatap.io/media/agent_java/data/circular_profile.png)
+
+The buffer size is set in `profile_step_max_count`.
+
+```ini
+profile_step_max_count=1024
+```

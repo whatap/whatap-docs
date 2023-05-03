@@ -1,0 +1,75 @@
+<Xclude product ='cubrid,redis'>
+
+-   **deadlock_interval** <span class='type'>Int</span>
+
+    Default `60`
+
+    Set the interval (unit: minute) to fetch the deadlock data. For deadlock information, only the latest deadlock information that occurred during the set interval is retrieved.
+
+</Xclude>
+
+<Xclude product ='redis'>
+
+-   **long_run_session_sec** <span class='type'>Second</span>
+
+    Default `10`
+
+    The session running longer than the set time is treated as the long run session (unit: second).
+
+-   **tables_hour** <span class='type'>Int</span>
+
+    Default `5`
+
+    Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
+
+-   **tables_min_row** <span class='type'>Int</span>
+
+    Default `10000`
+
+    When collecting the table information, table data with the number of rows smaller than the set value is not collected.
+
+</Xclude>
+
+<InDoc product='oracle,tibero'>
+
+-   **tables_exclude_sys** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.
+
+</InDoc>
+
+<Xclude product ='cubrid,redis'>
+
+-   **replication_name** <span class='type'>String</span>
+
+    If you set the replication name, it is considered that there is a Master/Slave relationship between DBs with the same `replication_name`.
+
+-   **skip_whatap_session** <span class='type'>Int</span>
+
+    Default `0`
+
+    If you set `1`, the session in which the query to collect from WhaTap operates, does not appear in the active session list. (Default value: 0)
+
+</Xclude>
+
+<InDoc product='mysql'>
+
+-   **skip_sys_session** <span class='type'>Int</span>
+
+    Default `1`
+
+    If set to `2`, the sys sessions (root, system user, event_scheduler) are not visible in the active session. The set value, `1` makes sys sessions visible, but excludes them from the total runtime.
+
+</InDoc>
+
+<InDoc product='redis'>
+
+-   **idle_as_active** <span class='type'>Second</span>
+
+    Default `1`
+
+    This option considers the sessions that have been idle for less than the set value as active sessions since the last active status. For example, if the setting is 1, the sessions that were active within 1 second appear in the Active Sessions window.
+
+</InDoc>

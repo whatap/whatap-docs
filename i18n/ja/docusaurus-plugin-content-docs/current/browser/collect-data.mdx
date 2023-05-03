@@ -1,0 +1,153 @@
+---
+id: collect-data
+title: ブラウザーエージェント収集データ
+description: WhaTapブラウザーエージェントが収集するデータに関する説明です。
+tags:
+  - ブラウザーモニタリング
+  - エージェント
+---
+
+와탭 브라우저 에이전트는 사용자의 브라우저에서 발생한 이벤트를 수집하고, 수집한 데이터를 재가공해 모니터링에 활용합니다. 모든 수집 데이터는 사용자 세션에 종속적입니다.
+
+## タイプ（Type）
+
+以下は、WhaTapブラウザーエージェントが収集するデータタイプです。
+
+-   **Long**：long to string32形式の固有IDのデータタイプです。
+-   **TimeStamp**：ms（millisecond）単位で、測定時刻のタイムスタンプです。
+-   **HighResolutionTime**：ms単位の所要時間です。
+-   **TimeSet**：タイムライン表示のために開始タイムスタンプと所要時間として表現します。
+-   **ResourceType**：「document」、「xhr」、「fetch」、「beacon」、「css」、「script」、「image」、「font」、「media」、「other」のいずれかを意味します。
+-   **ErrorType**：「console」、「onError」、「promiseRejection」、「fetchError」、「xhrError」、 「messageError」のいずれかを意味します。
+
+## 共通収集データ
+
+イベント発生時の基本的な収集データは次のとおりです。
+
+<div class='br-data'>
+
+| データ名          |                タイプ               | 説明                                                                                                          | 例                                                                                                                                 |
+| ------------- | :------------------------------: | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| sessionID     |  <span class='type'>Long</span>  | 웹 애플리케이션 사용자가 웹 페이지 탐색을 시작할 때 발급하는 고유 ID입니다. 세션의 유지 기간은 최대 4시간이며, 15분 동안 활동이 없으면 ID는 만료합니다. 브라우저 쿠키에 저장합니다. | x7dbvq64ga80sd                                                                                                                    |
+| userID        |  <span class='type'>Long</span>  | 웹 애플리케이션 사용자가 처음 접속할 때 발급하는 고유 ID로 만료 시간이 없습니다. 브라우저 쿠키에 저장합니다.                                             | z7eqnnitlc19j9                                                                                                                    |
+| sendEventID   |  <span class='type'>Long</span>  | イベント発生後、収集サーバーへのデータ送信時に発行するリクエストの固有IDです。                                                                    | x4rp4tnuq25i0h                                                                                                                    |
+| page.url      | <span class='type'>String</span> | イベントが発生したページのURLです。                                                                                         | https<span>://</span>site.whatap.io/8/dashboard?dataKey=abcd                                                                      |
+| page.host     | <span class='type'>String</span> | イベントが発生したページのURLのドメイン名です。                                                                                   | site.whatap.io                                                                                                                    |
+| page.path     | <span class='type'>String</span> | イベントが発生したページのURLのパスです。                                                                                      | /8/dashboard                                                                                                                      |
+| page.query    | <span class='type'>String</span> | イベントが発生したページのURLのパラメータです。                                                                                   | dataKey=abcd                                                                                                                      |
+| page.protocol | <span class='type'>String</span> | イベントが発生したページのURLのプロトコルです。                                                                                   | HTTPS                                                                                                                             |
+| page.title    | <span class='type'>String</span> | イベントが発生したページの文書タイトルです。                                                                                      | SaaSモニタリングNo.1のWhaTapモニタリング | WhaTap                                                                                              |
+| userAgent     | <span class='type'>String</span> | イベントが発生したブラウザーのuseragentです。                                                                                 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)<br/>AppleWebKit/537.36 (KHTML, like Gecko)<br/>Chrome/103.0.0.0<br/>Safari/537.36 |
+
+</div>
+
+## ページロードイベント
+
+사용자가 웹 애플리케이션에 접속 후 페이지의 콘텐츠를 완전히 불러오고 발생하는 이벤트입니다. 기본 수집 데이터는 다음과 같습니다.
+
+<div class='br-data'>
+
+| データ名                               |                      タイプ                     | 説明                                                                | 例                           |
+| ---------------------------------- | :------------------------------------------: | ----------------------------------------------------------------- | --------------------------- |
+| navigationTiming.startTimeStamp    |      <span class='type'>TimeStamp</span>     | `navigationStart`의 타임스탬프입니다. 페이지를 불러오기 시작하는 시간의 타임스탬프값입니다.        | 1658057382311               |
+| navigationTiming.eventID           |        <span class='type'>Long</span>        | ページを読み込むイベントの発生時に発行する固有IDです。                                      | x7mkg24tags307              |
+| navigationTiming.redirect          |       <span class='type'>TimeSet</span>      | httpリダイレクションの所要時間です。                                              | {duration: 10, start: 315}  |
+| navigationTiming.cache             |       <span class='type'>TimeSet</span>      | app cacheリソースを読み込むのにかかる時間です。                                      | {duration: 5, start: 325}   |
+| navigationTiming.dns               |       <span class='type'>TimeSet</span>      | ウェブサイトのドメイン探索にかかる時間です。                                            | {duration: 5, start: 330}   |
+| navigationTiming.connect           |       <span class='type'>TimeSet</span>      | TCP接続設定の所要時間です。                                                   | {duration: 6, start: 335}   |
+| navigationTiming.ssl               |       <span class='type'>TimeSet</span>      | ssl handshakeプロセスの所要時間です。                                         | {duration: 5, start: 336}   |
+| navigationTiming.download          |       <span class='type'>TimeSet</span>      | documentダウンロードの所要時間です。                                            | {duration: 100, start: 341} |
+| navigationTiming.firstByte         |       <span class='type'>TimeSet</span>      | ブラウザーがサーバーにdocumentをリクエストし、最初のバイトを受信するまでの所要時間です。                  | {duration: 10, start: 341}  |
+| navigationTiming.domInteractive    | <span class='type'>HighResolutionTime</span> | `navigationStart`부터 브라우저가 document 파싱을 완료한 시각입니다. DOM이 준비된 상태입니다. | 441                         |
+| navigationTiming.domContnentLoaded |       <span class='type'>TimeSet</span>      | DOMツリーを生成するのにかかる所要時間です。                                           | {duration: 50, start: 441}  |
+| navigationTiming.domComplete       | <span class='type'>HighResolutionTime</span> | 「navigation Start」からdocumentおよび下位リソースの読み込みを完了した時刻です。              | 491                         |
+| navigationTiming.domLoad           |       <span class='type'>TimeSet</span>      | 「onload」イベントの所要時間です。                                              | {duration: 1, start: 491}   |
+| navigationTiming.backendTime       | <span class='type'>HighResolutionTime</span> | 「navigationStart」からリソースのダウンロードまでの所要時間です。                          | 126                         |
+| navigationTiming.frontendTime      |       <span class='type'>TimeSet</span>      | ブラウザーが構文解析を完了した時刻からloadイベントが完了するまでの所要時間です。                        | {duration: 51, start: 441}  |
+| navigationTiming.loadTime          | <span class='type'>HighResolutionTime</span> | 「navigationStart」から「loadEventEnd」までの所要時間です。                       | 492                         |
+| totalDuration                      | <span class='type'>HighResolutionTime</span> | 「navigation Start」から最終ページの読み込みを完了した時刻です。                          | 550                         |
+
+</div>
+
+## ルーター変更イベント
+
+사용자가 Single Page Application(SPA) 형태의 웹 애플리케이션에서 페이지 이동 시 발생하는 이벤트입니다. 기본 수집 데이터는 다음과 같습니다.
+
+<div class='br-data'>
+
+| データ名           |                      タイプ                     | 説明                                          | 例                                                            |
+| -------------- | :------------------------------------------: | ------------------------------------------- | ------------------------------------------------------------ |
+| loadTime       | <span class='type'>HighResolutionTime</span> | ルーター変更の所要時間です。                              | 500                                                          |
+| startTimeStamp |      <span class='type'>TimeStamp</span>     | ルーター変更開始時刻のタイムスタンプです。                       | 1658057382311                                                |
+| endTimeStamp   |      <span class='type'>TimeStamp</span>     | ルーター変更終了時刻のタイムスタンプです。                       | 1658057382811                                                |
+| pageLocation   |       <span class='type'>String</span>       | ルーター変更イベントが発生したページのURLです。                   | https<span>://</span>site.whatap.io/8/dashboard?dataKey=abcd |
+| host           |       <span class='type'>String</span>       | ルーター変更イベントが発生したページのURLのドメイン名です。             | site.whatap.io                                               |
+| path           |       <span class='type'>String</span>       | ルーター変更イベントが発生したページのURLのパスです。                | /8/dashboard                                                 |
+| query          |       <span class='type'>String</span>       | ルーター変更イベントが発生したページのURLのパラメータです。             | dataKey=abcd                                                 |
+| protocol       |       <span class='type'>String</span>       | ルーター変更イベントが発生したページのプロトコルです。                 | HTTPS                                                        |
+| isComplete     |       <span class='type'>Boolean</span>      | ルーターの変更が完了していない状態でルーターを別のページに変更する場合の区切り値です。 | true                                                         |
+
+</div>
+
+## リソースロードイベント
+
+사용자가 웹 애플리케이션을 사용 중 리소스를 불러올 때 발생하는 이벤트입니다. 기본 수집 데이터는 다음과 같습니다.
+
+<div class='br-data'>
+
+| データ名                |                      タイプ                     | 説明                                           | 例                                                                                         |
+| ------------------- | :------------------------------------------: | -------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| startTime           | <span class='type'>HighResolutionTime</span> | 「navigationStart」からリソースリクエスト開始までの時間です。       | 1000                                                                                      |
+| startTimeStamp      |      <span class='type'>TimeStamp</span>     | リソースリクエスト開始のタイムスタンプです。                       | 1658057382321                                                                             |
+| eventID             |        <span class='type'>Long</span>        | リソースを読み込むたびに発行する固有IDです。                      | x280or4ok0kqo0                                                                            |
+| type                |    <span class='type'>ResourceType</span>    | リソースタイプです。                                   | image                                                                                     |
+| url                 |       <span class='type'>String</span>       | リソースURLです。                                   | https<span>://</span>unpkg.com/purecss<span>@</span>2.0.3/build/pure-min.css?dataKey=abcd |
+| urlHost             |       <span class='type'>String</span>       | リソースURLのドメイン名です。                             | unpkg.com                                                                                 |
+| urlPath             |       <span class='type'>String</span>       | リソースURLのパスです。                                | /purecss<span>@</span>2.0.3/build/pure-min.css                                            |
+| urlQuery            |       <span class='type'>String</span>       | リソースURLのパラメータです。                             | dataKey=abcd                                                                              |
+| urlProtocol         |       <span class='type'>String</span>       | リソースURLのプロトコルです。                             | HTTPS                                                                                     |
+| is3rdParty          |       <span class='type'>Boolean</span>      | 3rd partyにリクエストしたリソースを区分するための値です。            | false                                                                                     |
+| timing.duration     | <span class='type'>HighResolutionTime</span> | リソースのダウンロード完了までにかかる時間です。                     | 61                                                                                        |
+| timing.size         |       <span class='type'>Number</span>       | リソースのエンコードサイズです。                             | 20                                                                                        |
+| timing.redirect     |       <span class='type'>TimeSet</span>      | httpリダイレクションの所要時間です。                         | {duration: 10, start: 315}                                                                |
+| timing.cache        |       <span class='type'>TimeSet</span>      | app cacheリソースを読み込むのにかかる時間です。                 | {duration: 5, start: 325}                                                                 |
+| timing.dns          |       <span class='type'>TimeSet</span>      | リソースドメイン探索の所要時間です。                           | {duration: 5, start: 330}                                                                 |
+| timing.connect      |       <span class='type'>TimeSet</span>      | TCP接続設定の所要時間です。                              | {duration: 6, start: 335}                                                                 |
+| timing.ssl          |       <span class='type'>TimeSet</span>      | ssl handshakeプロセスの所要時間です。                    | {duration: 5, start: 336}                                                                 |
+| timing.firstByte    |       <span class='type'>TimeSet</span>      | ブラウザーがサーバーにリソースをリクエストし、最初のバイトを受信するまでの所要時間です。 | {duration: 10, start: 341}                                                                |
+| timing.download     |       <span class='type'>TimeSet</span>      | リソースダウンロードの所要時間です。                           | {duration: 100, start: 341}                                                               |
+| resourceInfo.method |       <span class='type'>String</span>       | リソースリクエストのメソッドです。                            | POST                                                                                      |
+| resourceInfo.status |       <span class='type'>Number</span>       | リソースリクエストのステータスです。                           | 200                                                                                       |
+
+</div>
+
+## エラーイベント{#error-event}
+
+사용자가 웹 애플리케이션 사용 중 브라우저에서 발생한 에러입니다. 기본 수집 데이터는 다음과 같습니다.
+
+<div class='br-data'>
+
+| データ名      |                 タイプ                 | 説明                                       | 例                                                                                                                                                                                                      |
+| --------- | :---------------------------------: | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| message   |   <span class='type'>String</span>  | エラー発生時のメッセージ情報です。                        | SyntaxError: Unexpected end of JSON input                                                                                                                                                              |
+| stack     |   <span class='type'>String</span>  | エラー発生時のスタック情報です。                         | at printWarning (webpack-internal:///../node_modules/react-dom/cjs/react-dom.development.js:86:30)<br/><br/>at error (webpack-internal:///../node_modules/react-dom/cjs/react-dom.development.js:60:7) |
+| timestamp | <span class='type'>TimeStamp</span> | エラー発生時点のタイムスタンプです。                       | 1658057382321                                                                                                                                                                                          |
+| type      | <span class='type'>ErrorType</span> | エラータイプです。                                | onError                                                                                                                                                                                                |
+| status    |   <span class='type'>Number</span>  | エラータイプが「xhr」、「fetch」の場合に収集するエラーステータス値です。 | 501                                                                                                                                                                                                    |
+| url       |   <span class='type'>String</span>  | エラータイプが「xhr」、「fetch」の場合は、AJAXリクエストURLです。 | https<span>://</span>site.whatap.io/yard/api?pcode=8&type=summary                                                                                                                                      |
+
+</div>
+
+## コアウェブバイタルイベント
+
+**코어 웹 바이탈**(Core Web Vitals)은 웹 콘텐츠 이용자의 사용 경험에 영향을 미치는 다양한 측정값들 중 구글이 중요하다고 강조하는 3가지 지표입니다. 기본 수집 데이터는 다음와 같습니다.
+
+<div class='br-data'>
+
+| データ名 |                      タイプ                     | 説明                                                                                                                                                                 | 例     |
+| ---- | :------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+| lcp  | <span class='type'>HighResolutionTime</span> | Largest Contentful Paint（LCP）、ページを最初に読み込み始めた時間を基準にビューポート内の最大の画像またはテキストブロックのレンダリング時間を報告します。                                                                         | 12334 |
+| fid  | <span class='type'>HighResolutionTime</span> | First Input Delay（FID）、ユーザーがページと初めて相互作用するとき（例：リンクをクリックしたりボタンをタップしたりするとき、カスタムJavaScriptベースのコントロールを使用するとき）からその相互作用に対するレスポンスであり、ブラウザーが実際にイベントハンドラー処理を開始するまでの時間を測定します。 | 7     |
+| cls  |       <span class='type'>Number</span>       | Cumulative Layout Shift（CLS）は、動的に読み込んだコンテンツで、予期せぬレイアウト移動を数値化して表現した点数です。                                                                                            | 2     |
+
+</div>

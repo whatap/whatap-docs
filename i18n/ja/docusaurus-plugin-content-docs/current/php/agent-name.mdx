@@ -1,0 +1,59 @@
+---
+id: agent-name
+title: エージェント名の識別
+description: モニタリング対象を識別するエージェント名を設定する方法を提供します。
+tags:
+  - PHP
+  - エージェント名
+  - 設定
+  - アプリケーション
+---
+
+{@include: ../common-items/_apm-name-description.mdx}
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+:::note
+
+-   WhaTapモニタリンサービスでは、モニタリング対象をオブジェクトまたはエージェントとして組み合わせて使用します。
+    :::
+
+WhaTapエージェントがアプリケーションサーバーを識別するために使用するデフォルトパターンは次のとおりです。
+
+```javascript title='object_name 기본 패턴'
+{type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
+```
+
+<!-- * default: {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips} -->
+
+デフォルトパターンの変更は_whatap.ini_で設定できます。
+
+<!--
+```javascript title='whatap.object_name'
+{type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
+```
+-->
+
+<!-- * object_name default: {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips} -->
+
+| 設定       | 説明                            |
+| -------- | ----------------------------- |
+| type     | whatap.app_nameに設定された値を使用します。 |
+| Ip#      | Ipを「.」で分けたとき、#番目の桁（0から）を使います。 |
+| process  | whatap.app_nameに設定された値を使用します。 |
+| hostname | サーバーホスト名を使用します。               |
+| dockerid | DockerコンテナID                  |
+| ips      | 全体IPの情報 (ip4、ip6)             |
+
+-   **whatap.object_name**<span class='type'>String</span><br/>
+      デフォルト値「{type}-{ip2}-{ip3}-{process}」\
+      アプリケーションを識別するエージェント名（ONAME）体系です。 ONAMEに基づいてOIDが生成されます。\
+    {@include: ../common-items/_php-restart-whatap-service.mdx}
+
+-   **whatap.app_name**<span class='type'>String</span><br/>
+        アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名で、「object_name」の「{type}」に該当する値です。\
+    {@include: ../common-items/_php-restart-whatap-service.mdx}
+
+-   **whatap.app_process_name**<span class='type'>String</span><br/>
+        アプリケーションを識別するエージェント名（ONAME）システムに使用されるアプリケーションプロセス名で、アプリケーションサーバのCPU、Heap Memoryなどを収集する対象プロセスを設定します。 「object_name」の「{process}」に該当する値です。\
+    {@include: ../common-items/_php-restart-whatap-service.mdx}

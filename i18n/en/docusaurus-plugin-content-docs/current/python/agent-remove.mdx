@@ -1,0 +1,31 @@
+---
+id: agent-remove
+title: Agent deletion
+description: It provides the method how to delete the Python agent.
+tags:
+  - Python
+  - Agent deletion
+  - Management
+---
+
+Proceed with the following procedure to delete the Python monitoring agent.
+
+1.  Delete the `WHATAP_AGENT` startup command added when restarting the application server.
+
+2.  With the `whatap-stop-agent` command, end the WhaTap Python agent process.
+
+    ```javascript title=SH
+    $ whatap-stop-agent
+    ```
+
+3.  If the process is not ended, use the following command to end the process.
+
+    ```javascript title=SH
+    $ killall whatap-python
+    ```
+
+4.  Execute the following command to check whether the process is ended.
+
+    ```javascript title=SH
+    $ ps -ef|grep whatap_python
+    ```

@@ -1,0 +1,216 @@
+---
+id: install-agent
+title: インストール
+description: Azureアイテムのインストールを説明します。
+tags:
+  - インストール
+  - Azure Monitor
+  - クラウド
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Azure MonitorはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するAzure Monitorネームスペースを5分周期で希望するスタットを炊事選択して収集します。 モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリンを開始できます。 WhaTapは安全で便利な使用のためにAzure Registard Appをサポートします。
+
+{@include: ../getting-started/_create-project-cloud.mdx}
+
+## モニタリング手順
+
+<!-- 
+1. 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Azure Monitor 사용 상태로 생성하세요. 
+-->
+
+1.  Azure Registered Appを追加してください。
+2.  Azure認証情報を入力してください。
+3.  Azure Monitorネームスペースおよび収集サイクルを選択してください。
+4.  リソース グループ、メトリックス、スタットなどを選択してください。
+
+:::note
+インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。 インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://azure.microsoft.com/ko-kr/pricing/details/monitor/)で確認してください。
+:::
+
+### Azure Registered Appの追加
+
+<!--  
+와탭 모니터링용 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)을 추가할 수 있습니다. Secret을 생성하고 Application ID, Tenant Id 와 Secret을 와탭에 입력하세요.
+ 
+Monitoring Reader 역할(Role)을 지정하고 설치하기 버튼을 선택해 다음 세 가지 접속 정보를 입력하세요. 
+
+-->
+
+WhaTapモニタリング用 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)を追加してください。 Secretを作成し、アプリケーションID(ApplicationId), テナントID(TenantId)とシークレット(Secret)をWhaTapに入力してください。 
+
+WhaTapモニタリングのためにはMonitor Reader、読者、API Managementサービスの独自権限が必要です。 Azure PortalでSubscript > アクセス制御（IAM）メニューから「追加」ボタンを押して権限を追加することができます。
+
+![Azure Active Directory](https://img.whatap.io/media/images/registeredapps.png)
+
+### 認証情報入力
+
+Azureの認証情報である**_アプリケーションID_**(ApplicationID), **_テナントID_**（TenantID）と**_Azureシークレットキー_**（Secret）をWhaTapに入力してください。
+
+![Azure Monitor - Authentification](https://img.whatap.io/media/images/whatap_azure_auth_dialog.png)
+
+### ネームスペースおよび収集サイクルの選択
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+#### WhaTap収集サイクル
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### ネームスペース
+
+-   Microsoft.aadiam azureADMetrics
+-   Microsoft.AnalysisServices servers
+-   Microsoft.ApiManagement service
+-   Microsoft.AppConfiguration configurationStores
+-   Microsoft.AppPlatform Spring
+-   Microsoft.Automation automationAccounts
+-   Microsoft.AVS privateClouds
+-   Microsoft.Batch batchAccounts
+-   Microsoft.BatchAI workspaces
+-   Microsoft.Blockchain blockchainMembers
+-   Microsoft.botservice botservices
+-   Microsoft.Cache redis
+-   Microsoft.Cache redisEnterprise
+-   Microsoft.Cdn cdnwebapplicationfirewallpolicies
+-   Microsoft.Cdn profiles
+-   Microsoft.ClassicCompute domainNames slots roles
+-   Microsoft.ClassicCompute virtualMachines
+-   Microsoft.ClassicStorage storageAccounts
+-   Microsoft.ClassicStorage storageAccounts blobServices
+-   Microsoft.ClassicStorage storageAccounts fileServices
+-   Microsoft.ClassicStorage storageAccounts queueServices
+-   Microsoft.ClassicStorage storageAccounts tableServices
+-   Microsoft.CognitiveServices accounts
+-   Microsoft.Communication CommunicationServices
+-   Microsoft.Compute cloudServices
+-   Microsoft.Compute cloudServices roles
+-   Microsoft.compute disks
+-   Microsoft.Compute virtualMachines
+-   Microsoft.Compute virtualMachineScaleSets
+-   Microsoft.Compute virtualMachineScaleSets virtualMachines
+-   Microsoft.ContainerInstance containerGroups
+-   Microsoft.ContainerRegistry registries
+-   Microsoft.ContainerService managedClusters
+-   Microsoft.CustomProviders resourceproviders
+-   Microsoft.DataBoxEdge dataBoxEdgeDevices
+-   Microsoft.DataCollaboration workspaces
+-   Microsoft.DataFactory datafactories
+-   Microsoft.DataFactory factories
+-   Microsoft.DataLakeAnalytics accounts
+-   Microsoft.DataLakeStore accounts
+-   Microsoft.DataShare accounts
+-   Microsoft.DBforMariaDB servers
+-   Microsoft.DBforMySQL flexibleServers
+-   Microsoft.DBforMySQL servers
+-   Microsoft.DBforPostgreSQL flexibleServers
+-   Microsoft.DBforPostgreSQL servers
+-   Microsoft.DBforPostgreSQL serversv2
+-   Microsoft.Devices ElasticPools
+-   Microsoft.Devices ElasticPools IotHubTenants
+-   Microsoft.Devices IotHubs
+-   Microsoft.Devices provisioningServices
+-   Microsoft.DigitalTwins digitalTwinsInstances
+-   Microsoft.DocumentDB databaseAccounts
+-   Microsoft.EventGrid domains
+-   Microsoft.EventGrid eventSubscriptions
+-   Microsoft.EventGrid extensionTopics
+-   Microsoft.EventGrid partnerNamespaces
+-   Microsoft.EventGrid partnerTopics
+-   Microsoft.EventGrid systemTopics
+-   Microsoft.EventGrid topics
+-   Microsoft.EventHub clusters
+-   Microsoft.EventHub namespaces
+-   Microsoft.HDInsight clusters
+-   Microsoft.HealthcareApis services
+-   Microsoft.hybridnetwork networkfunctions
+-   Microsoft.hybridnetwork virtualnetworkfunctions
+-   Microsoft.insights autoscalesettings
+-   Microsoft.Insights Components
+-   Microsoft.IoTCentral IoTApps
+-   Microsoft.IoTSpaces Graph
+-   Microsoft.keyvault managedhsms
+-   Microsoft.KeyVault vaults
+-   Microsoft.kubernetes connectedClusters
+-   Microsoft.Kusto Clusters
+-   Microsoft.Logic integrationServiceEnvironments
+-   Microsoft.Logic workflows
+-   Microsoft.MachineLearningServices workspaces
+-   Microsoft.Maps accounts
+-   Microsoft.Media mediaservices
+-   Microsoft.Media mediaservices liveEvents
+-   Microsoft.Media mediaservices streamingEndpoints
+-   Microsoft.MixedReality remoteRenderingAccounts
+-   Microsoft.MixedReality spatialAnchorsAccounts
+-   Microsoft.NetApp netAppAccounts capacityPools
+-   Microsoft.NetApp netAppAccounts capacityPools volumes
+-   Microsoft.Network applicationGateways
+-   Microsoft.Network azurefirewalls
+-   Microsoft.Network connections
+-   Microsoft.Network dnszones
+-   Microsoft.Network expressRouteCircuits
+-   Microsoft.Network expressRouteCircuits peerings
+-   Microsoft.Network expressRouteGateways
+-   Microsoft.Network expressRoutePorts
+-   Microsoft.Network frontdoors
+-   Microsoft.Network loadBalancers
+-   Microsoft.Network natGateways
+-   Microsoft.Network networkInterfaces
+-   Microsoft.Network networkWatchers connectionMonitors
+-   Microsoft.Network p2sVpnGateways
+-   Microsoft.Network privateDnsZones
+-   Microsoft.Network privateEndpoints
+-   Microsoft.Network privateLinkServices
+-   Microsoft.Network publicIPAddresses
+-   Microsoft.Network trafficManagerProfiles
+-   Microsoft.Network virtualNetworkGateways
+-   Microsoft.Network virtualNetworks
+-   Microsoft.Network virtualRouters
+-   Microsoft.Network vpnGateways
+-   Microsoft.NotificationHubs Namespaces NotificationHubs
+-   Microsoft.OperationalInsights workspaces
+-   Microsoft.Peering peerings
+-   Microsoft.Peering peeringServices
+-   Microsoft.PowerBIDedicated capacities
+-   Microsoft.ProjectBabylon accounts
+-   Microsoft.purview accounts
+-   Microsoft.Relay namespaces
+-   Microsoft.resources subscriptions
+-   Microsoft.Search searchServices
+-   Microsoft.ServiceBus namespaces
+-   Microsoft.ServiceFabricMesh applications
+-   Microsoft.SignalRService SignalR
+-   Microsoft.Sql managedInstances
+-   Microsoft.Sql servers databases
+-   Microsoft.Sql servers elasticPools
+-   Microsoft.Storage storageAccounts
+-   Microsoft.Storage storageAccounts blobServices
+-   Microsoft.Storage storageAccounts fileServices
+-   Microsoft.Storage storageAccounts queueServices
+-   Microsoft.Storage storageAccounts tableServices
+-   Microsoft.StorageCache caches
+-   Microsoft.storagesync storageSyncServices
+-   Microsoft.storagesync storageSyncServices registeredServers
+-   Microsoft.storagesync storageSyncServices syncGroups
+-   Microsoft.storagesync storageSyncServices syncGroups serverEndpoints
+-   Microsoft.StreamAnalytics streamingjobs
+-   Microsoft.Synapse workspaces
+-   Microsoft.Synapse workspaces bigDataPools
+-   Microsoft.Synapse workspaces sqlPools
+-   Microsoft.TimeSeriesInsights environments
+-   Microsoft.TimeSeriesInsights environments eventsources
+-   Microsoft.VMwareCloudSimple virtualMachines
+-   Microsoft.Web hostingEnvironments multiRolePools
+-   Microsoft.Web hostingEnvironments workerPools
+-   Microsoft.Web serverfarms
+-   Microsoft.Web sites
+-   Microsoft.Web sites slots
+-   Microsoft.Web staticSites
+
+### リソース グループ、メトリックス、スタット選択
+
+![number 2](/img/number-02.png)収集チェックされたネームスペースの右側![修正アイコン](/img/ico-edit.svg)**修正**ボタンをクリックすると、収集する**_リソースグループ_**、**_メトリクス_**、**_スタット_**を選択できます。
+
+![Azure Monitor - ResourceGroup, Metric, Stats](https://img.whatap.io/media/images/whatap_azure_resourcegroup_dialog.png) 

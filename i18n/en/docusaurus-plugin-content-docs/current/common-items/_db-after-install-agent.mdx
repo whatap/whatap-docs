@@ -1,0 +1,82 @@
+The database monitoring has been installed completely. Check the checklist after installation.
+
+## Checking the agent logs
+
+Run the _start.sh_ shell script file or the _start.bat_ batch file from the installation path of the database agent. When you run the agent, it starts collecting monitoring data from the database. Check the agent log to see whether the agent has started.
+
+```bash title='start.sh'
+$ ./start.sh
+
+ _      ____       ______
+| | /| / / /  ___ /_  __/__ ____
+| |/ |/ / _ \/ _ `// / / _ `/ _ \
+|__/|__/_//_/\_,_//_/  \_,_/ .__/
+                          /_/
+Just Tap, Always Monitoring
+WhaTap DBX version 1.3.9 20181120
+```
+
+## Checking the agent processes
+
+You can check the status of the active WhaTap DBX agent process with the following command.
+
+```bash title='SH'
+$ ps –ef | grep dbx
+```
+
+## Checking the logs
+
+If the log appears normally when restarting the service, you can check that the agent has been installed successfully. After registering the agent, the collection-related log can be checked in the _$WHATAP_HOME/logs_ path. If the agent runs normally, check the following log files on the date.
+
+-   whatap-DBX-`OID`-`DATE`
+-   whatap-boot-`DATE`.log
+
+## Checking the monitoring
+
+To check that the log has been normally uploaded from the server and the console has been registered normally, go to the initial screen of [Whatap Monitoring Service](https://service.whatap.io). Select the project to check and then select **_Management_** > **_Agent List_** on the left. From **_Agent List_**, you can check the name of the database server.
+
+![Database Agent List](https://img.whatap.io/media/agent_oracle/install/agent_list.png)
+
+For the database name, an ID is given in the format of {type}-{ip2}-{ip3}-{port}.
+
+## Agent structure
+
+Let's learn about the elements of the agent structure.
+
+![Agent Architecture](https://img.whatap.io/media/agent_oracle/install/agent_architecture.png)
+
+-   **Collection server**
+
+    It collects and stores the database performance data collected by agents, extracts statistical data, and efficiently provides them to users. The collection server can be set by region. Different collection server addresses are allocated to each region. The collection server address may differ depending on the selected region. When creating a project, the region is also set.
+
+-   **Default Agent**
+
+    Query-based performance data is collected and transmitted to the server. Monitoring is possible without installing agents directly on the database server to be monitored.
+
+-   **Additional agent (XOS agent)**
+
+    ![XOS Agent Architecture](https://img.whatap.io/media/agent_oracle/install/agent_xos_architecture.png)
+    The XOS agent is an optional add-on agent that can monitor the process usage of the database server. To monitor the process usage of the database server, run a separate agent on the database server to collect data. For more information about the process monitoring configuration, see [the following](agent-manage).
+
+-   **Network**
+
+    -   Default agent: The WhaTap monitoring agent uses the external communication (TCP) port 6600 to transfer the collected monitoring data to the WhaTap collection server.
+
+    -   Additional agent: The external communication (UDP) port 3002 is used between the server where the agent has been installed and the database server. If the internal port conflicts, the port can be changed using the `dbx_port` option.
+
+## Agent structure file
+
+| File name                      | Description                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| whatap.conf                    | This is the file where you can enter the address of the collection server that collects data from the database server and the server's project access key.                                                                                                                                                                                                           |
+| alert/alert.conf               | This is the file that sets thresholds for monitoring items to be collected. An alert occurs when the threshold is exceeded.                                                                                                                                                                                                                                          |
+| scripts/                       | This directory contains the scripts that can remotely run SQL scripts.                                                                                                                                                                                                                                                                                               |
+| ps.sh                          | This script fetches the process ID. When ending the agent process, the ID is referenced.                                                                                                                                                                                                                                                                             |
+| stop.sh                        | This script is used when ending the agent process.                                                                                                                                                                                                                                                                                                                   |
+| uid.sh (uid.bat)               | This shell script file generates an encrypted UID by combining the database connection data. It creates the _db.user_ file. Once you have set it for the first time, it collects data from the database server to be monitored through the encrypted UID. <br/>For more details about creation of an account for monitoring, see [the following](install-agent#uid). |
+| start.sh (start.bat)           | This shell script file runs the agent. When the agent starts, it starts collecting monitoring data from the database server.                                                                                                                                                                                                                                         |
+| startd.sh (startd.bat)         | This shell script file runs the agent, which can be run in the background.                                                                                                                                                                                                                                                                                           |
+| whatap.agent.dbx-`VERSION`.jar | The Tracer program is a program that collects data from the database server and transmits the collected data to the server.                                                                                                                                                                                                                                          |
+| jdbc                           | This directory collects the libraries referenced for database server connection. Download the library for connecting the agent and database server and use it by setting the path in the class path option of Java.                                                                                                                                                  |
+| xos                            | The directory contains the optional agent that can monitor the process usage of the database server.                                                                                                                                                                                                                                                                 |
+| xos/xos.conf                   | This file is used to enter the address and communication port of the agent server for collecting the process usage of the database server and transmitting the data.                                                                                                                                                                                                 |

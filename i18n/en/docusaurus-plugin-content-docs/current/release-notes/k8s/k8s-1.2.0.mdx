@@ -1,0 +1,23 @@
+---
+id: k8s-1.2.0
+title: Kubernetes Agent 1.2.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+-   Release date: 2022-11-21
+-   Agent download: http://repo.whatap.io/docker/kube_mon_1.2.0.tar
+
+## Adding the support of Cgroup V2
+
+<Status>Change</Status> Cgroup V2를 사용 중인 워커노드를 지원하도록 개선했습니다.
+
+## Adding the pod volume monitoring
+
+<Status>Change</Status> Pod에 마운트된 볼륨 중 cgroup에 overlay로 탑재된 볼륨 사용량을 수집하도록 개선했습니다.
+
+## Adding the support of the ARM architecture
+
+<Status>Change</Status> AWS Graviton을 포함하여 ARM Architecture에서 작동하도록 빌드를 추가했습니다.

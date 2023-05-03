@@ -1,0 +1,36 @@
+---
+id: create-name-space-project
+title: ネームスペースプロジェクトの作成
+description: description
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - ネームスペース
+---
+
+次のような状況では、クラスタープロジェクトからネームスペースプロジェクトの分離を考慮します。
+
+-   単一クラスター（Master）プロジェクトに存在するリソース数が多く、Kubernetes Namespaceを基準に分離可能な場合
+-   Kubernetes Namespaceごとに部署や担当者が異なり、特定のNamespaceだけをモニタリングする必要がある場合 
+
+クラスタープロジェクトの各Kubernetes Namespaceを別のWhaTapネームスペースに分離するには、**_管理_** > **_ネームスペース管理_**メニューを通じてプロジェクトを作成します。
+
+![ネームスペース管理](https://img.whatap.io/media/images/whatap_kubernetes_namespace_project_mgt.png)
+
+:::note
+**_管理_** > **_ネームスペース管理_**メニューは、クラスタープロジェクトの選択時に表示されます。ネームスペースプロジェクトでは、そのメニューに入ることはできません。
+:::
+
+**_ネームスペース一覧_**に**_+ プロジェクト追加_**ボタンが表示される場合は、そのボタンをクリックしてWhaTapネームスペースプロジェクトを作成できます。ネームスペース名を入力し、**_確認_**ボタンを選択してください。
+
+![ネームスペースプロジェクト作成](https://img.whatap.io/media/images/whatap_kubernetes_create_namespace_project_popup.png)
+
+ネームスペースプロジェクトを作成すると、新たな別途のプロジェクトに分離されるため、**_ネームスペース一覧_**のクラスタープロジェクトではもう確認できません。
+
+クラスタープロジェクトからネームスペースプロジェクトに分離して追加されたNamespaceは、次のように現況情報を表示します。
+
+![ネームスペースプロジェクト](https://img.whatap.io/media/images/whatap_kubernetes_namespace_project_mgt_complete.png)
+
+クラスタープロジェクトの下位にネームスペースプロジェクトを作成した場合、クラスタープロジェクトを含むプロジェクト一覧の確認やプロジェクト間の移動が可能です。**_ダッシュボード_** > **_コンテナマップ_**メニューの画面上段のプロジェクト一覧ボックスを選択してください。
+
+![コンテナマップメニューのプロジェクト一覧](https://img.whatap.io/media/images/whatap_kubernetes_container_map_namespace_project_list.png)

@@ -1,0 +1,17 @@
+## Column information guide{#column-info}
+
+| Item        | Description                                                                   |
+| ----------- | ----------------------------------------------------------------------------- |
+| tranindex   | Transaction index                                                             |
+| user        | Database user name                                                            |
+| host        | Host name of CAS that performs transactions                                   |
+| pid         | Broker process ID                                                             |
+| program     | Client program name                                                           |
+| query_time  | Total execution time of active queries (unit: second)                         |
+| tran_time   | Total execution time of transactions (unit: second)                           |
+| transtatus  | Transaction status                                                            |
+| lock_holder | List of transactions that own a lock if transactions are waiting for the lock |
+| sql_id      | ID for SQL text                                                               |
+| sql_text    | Query statement being executed (up to 30 characters)                          |
+| sql_param   | Literal value separated from query                                            |
+| sql_hash    | Hash value of query (internal WhaTap control value)                           |

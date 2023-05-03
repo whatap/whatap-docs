@@ -1,0 +1,91 @@
+---
+id: container-map-log
+title: Log
+description: コンテナまたはコンテナ内部で実行中のアプリケーションが出力するログをすぐに確認できます。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - Log
+---
+
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後**詳細を見る**画面に進入 > **_ログ_**
+
+## Kubernetesログ
+
+Kubernetesには、次の2種類のログがあります。
+
+-   各コンテナのStandard Out（標準出力）ログ
+-   各コンテナの内部で実行中のアプリケーションが出力するログ
+
+このようなログは、コンテナの状態やメトリクス情報では確認しにくいモニタリングの死角地帯を補完する役割を果たします。このログを確認する方法は次のとおりです。
+
+-   各コンテナのStandard Outログの場合は、コンテナ内部に進入しなくてもKubernetesが提供する`kubectl logs`コマンドで確認できます。
+-   各コンテナ内部のアプリケーションログは、コンテナ内部に進入して確認するか、別途のログ収集方法を策定する必要があります。
+
+## 最近のログメッセージ （コンテナStdout／Stderr）
+
+現在のコンテナログをすぐに確認できる機能です。通常、コンテナログを確認するには、次のコマンドを使用します。
+
+```bash
+kubectl logs pod/<Pod명> -n <Namespace명>
+```
+
+Pod内に2つ以上のコンテナが存在する場合は、個々のコンテナを選択してログを確認します。
+
+```bash
+kubectl logs pod/<Pod명> -c <コンテナ名> -n <Namespace명>
+```
+
+ログを確認するために毎回ターミナル画面にアクセスしてコマンドラインツールを実行するのは非常に不便です。WhaTap Kubernetesモニタリングの**_ログ_**機能を使用すると、現在のログを便利に確認できます。 
+
+![最近のログメッセージ](/img/kubernetes-container-stdout.png)
+
+ただ、注意点があります。まず、コンテナを終了すると、ログを確認できなくなります。また、コンテナが継続して実行中であっても、一定期間または一定容量のログだけを確認できるというデメリットがあります。WhaTapの最近のログメッセージ(**_コンテナStdout/Stderr_**) 機能は、ユーザーKubernetes環境のログをWhaTapを通じて確認できるように提供する機能であり、ユーザー環境から消えたログは、WhaTapでも確認できません。 
+
+したがって、ログデータを安定的かつ継続的に管理するためには、別途の管理策が不可欠です。特にマイクロサービスアーキテクチャの導入が広がり、ビジネスを構成するコンテナ数量が増加するにつれてログの確認、管理策はさらに複雑になりつつあります。
+
+いい方法があるでしょうか？
+
+## ログ検索
+
+WhaTapログサービスを通じてコンテナStandard Outログを保存すると、思うように保存期間を設定でき、特定の対象別情報の確認や相互連携分析が可能です。
+
+![ログ検索](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_search.png)
+
+:::caution
+WhaTapログサービスを活性化してコンテナのStandard Outputログ保存機能を使用すると、それに伴う追加費用が請求されます。関連する料金の詳細については、[次の文書](https://www.whatap.io/ko/pricing/)を参考にしてください。
+:::
+
+:::note
+일부 구 버전 에이전트의 경우는 컨테이너 Standard Output 로그 저장 기능을 제공하지 않습니다. 에이전트 업그레이드 방법은 다음과 같습니다.
+
+```bahs title='에이전트 업데이트'
+kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<エージェントバージョン> -n whatap-monitoring
+```
+
+WhaTap Kubernetesエージェントバージョンは [次の文書](https://hub.docker.com/r/whatap/kube_mon/tags)で確認できます。
+:::
+
+### Standard Out保存のためのノードエージェント設定の追加
+
+WhaTapログサービスを通じてコンテナのStandard Outputを保存するためには、WhaTap Kubernetesノードエージェントに`logsink_enabled=true`設定を追加する必要があります。WhaTap KubernetesノードエージェントはDaemonSet形式です。
+
+<!-- 개발자에게 관련 사항 문의 필요 -->
+
+-   WhaTapモニタリングサービスページで**_管理_** > **_エージェント設定_**を通じて、`logsink_enabled=true`設定を追加
+-   クラスタープロジェクトの全体ノードを対象に設定を追加するには、**_プロジェクトデフォルト_** > **_ノード_**を対象に設定を追加
+-   一部のノードを対象に設定を追加するには、単一または複数のノードを選択した後に設定を追加
+
+**_管理_** > **_エージェント設定_** > ノードエージェント選択 > **_+ オプション追加_** > すべてのエージェントに適用するオプションを選択 > 適用対象ノード選択 
+
+![エージェント設定](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
+
+## WhaTapログサービス機能の使用
+
+WhaTapログモニタリングサービスの詳細については、[次の文書](../log/introduction)を参考にしてください。
+
+## ログ検索移動
+
+![ログ検索移動ボタン](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_button.png)
+
+ログ画面右側のボタンをクリックすると、ログ詳細確認のためのログ検索画面に移動します。

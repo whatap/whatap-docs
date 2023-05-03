@@ -1,0 +1,43 @@
+Home > Select Project > **_Alert_** > **_Event Setting_** > **_Hitmap Pattern_**
+
+Alerts are sent by automatically recognizing application distribution patterns through machine learning. You can quickly and accurately recognize issues without setting complex conditions. Numerous heatmap patterns have been learned, and you can receive an alert when a pattern similar to the learned pattern occurs in the real-time data.
+
+![Hitmap Pattern](/img/set-event-heatmap.png)
+
+:::note
+
+For more information about the hitmap and its patterns, see [the following](trs-view).
+
+:::
+
+## Default options
+
+-   **_Detection Exclusion Time_**: Patterns out of the set time are ignored.
+
+-   **_Silent_**: This option can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in **_Event History_**.
+
+-   **_Save_**: The settings are saved and applied.
+
+## Hitmap Pattern
+
+You can set the alerts to be sent when any of the following hitmap patterns occur. This alert can be enabled or disabled by selecting the toggle buttons for each item.
+
+-   **_Hitmap Horizontal pattern_**: A pattern in which multiple transactions end within a specific time. Timeout or delay occurs when resources are acquired or making external HTTPS calls.
+
+    ![Horizontal line pattern](/img/blog_49_04.png)
+
+-   **_Hitmap Vertical pattern_**: This is a pattern where the transactions with different call times end at the same time point. There is a temporary bottleneck in common resources used by transactions.
+
+    ![Vertical line pattern](/img/blog_49_05.png)
+
+-   **_Hitmap Flying pattern_**: Shortage of specific resources or common resources such as logs, causes a wave-like pattern at intervals.
+
+    ![Flying pattern](/img/blog_49_06.png)
+
+-   **_Hitmap Overload pattern_**: Temporary problems with all or part of response results cause a pattern of transient transaction crowding.
+
+    ![Overload pattern](/img/blog_49_07.png)
+
+-   **_Hitmap Flood pattern_**: If excessive transactional requests or load occur, an overall pattern of increase in the response time appears.
+
+    ![Flood pattern](/img/blog_49_08.png)

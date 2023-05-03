@@ -1,0 +1,32 @@
+`nvidia-smi`コマンドが組み込まれた場合、GPU性能を5秒間隔で収集し、WhaTapにアップロードします。収集された情報はメトリクス**_カテゴリ_**`server_nvidiasmi`に収集されます。
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "nvidiasmi.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "nvidiasmi.enabled=true"
+```
+
+</TabItem>
+</Tabs>
+
+-   **category server_nvidiasmi**
+
+    | メトリックス               | 備考                                      |
+    | -------------------- | --------------------------------------- |
+    | DecoderUtil          | gauge、Decoder utilization (in %)        |
+    | EncoderUtil          | gauge、Encoder utilization (in %)        |
+    | FreeFbMemoryUsageGpu | gauge、Framebuffer memory free (in MiB). |
+    | UsedFbMemoryUsageGpu | gauge、Framebuffer memory used (in MiB). |
+    | GpuTemp              | gauge、GPU temperature (in C).           |
+    | GpuUtil              | gauge、GPU utilization (in %).           |
+    | MemClock             | gauge、Memory clock frequency (in MHz).  |
+    | MemoryUtil           | gauge、Memory utilization (in %).        |
+    | SmClock              | gauge、SM clock frequency (in MHz).      |

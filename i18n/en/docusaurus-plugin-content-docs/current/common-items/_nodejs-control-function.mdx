@@ -1,0 +1,27 @@
+-   **whatap.enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>All the functions are enabled. Even when the value is `false`, the minimum data to maintain communication with the server is sent.
+
+-   **transaction_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>It enables the transaction tracing. If the `whatap.enabled` option is `false`, this is ignored.
+
+-   **counter_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>It enables the performance counter (e.g. transaction, resource) tracing. If the `whatap.enabled` option is `false`, this is ignored.
+
+-   **stat_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>It enables the statistical data tracing. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes. If the `whatap.enabled` option is `false`, this is ignored.
+
+-   **license** <span class='type'>String</span><br/>
+    에이전트 설치 시 서버로부터 부여받은 액세스 키를 입력합니다. 액세스 키에는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함합니다.
+
+-   **encrypt_level** <span class='type'>encrypt_level [1, 2, 3]</span><br/>
+      Default `2`<br/>
+      The WhaTap agent encrypts data selectively depending on the attributes when transferring data to the server. It has performance benefits along with high security. To apply encryption policies in bulk regardless of the data type, see the following options:<br/>
+    -   `1`: Encrypted transmission disabled
+    -   `2`: Encrypted transmission for sensitive attributes such as SQL parameters and plain texts.
+    -   `3`: Encrypted transmission for all items
+
+-   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span><br/>
+    Default `300000`<br/>Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
+
+-   **time_sync_interval_ms** <span class='type'>Milliseconds</span><br/>
+    Default `300000`<br/>Set the synchronization time interval between the agent and the server. For no synchronization, set it to `0`.

@@ -1,0 +1,22 @@
+Change the path of the WhaTap agent logs (`whatap_infrad.log`, `whatap_infra.log`, `whatap_infrad.fork.stdout.log`). If the specified path does not exist, the WhaTap agent attempts to create the path. It is available in the agent 2.0.6 or later.
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "agent.log.prefix=Desired Directory" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "agent.log.prefix=Directory to change"
+```
+
+</TabItem>
+</Tabs>
+
+:::note
+In case of Windows, enter "\\" as the path delimiter.
+:::

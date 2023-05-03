@@ -1,0 +1,11 @@
+-   **mtrace_rate**<span class='type'>Percentage</span><br/>
+      Default `0`<br/>
+      This option sets the rate of the MTID (Multi Transaction ID) issued when the first transaction occurs. By tracing MTIDs, the calls between all registered applications can be checked. Through the Caller & Callee function, the transaction trace can be viewed for the applications that belong to the same project.
+
+-   **mtrace_spec** <span class='type'>String</span><br/>
+      Default `v1`<br/>
+      Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics.
+
+-   **mtrace_send_url_length**<span class='type'>Integer</span><br/>
+      Default `80`<br/>
+      The HTTP caller delivers its own URL to the callee. At this time, it limits the URL length. Set this length.

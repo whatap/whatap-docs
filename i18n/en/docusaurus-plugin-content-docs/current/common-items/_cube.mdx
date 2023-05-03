@@ -1,0 +1,77 @@
+Home > Select Project > **_Analysis_** > **_CUBE_**
+
+Select a project on the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_Cube_** under the **_Project menu_**. It provides information for connections, hitmap, transactions, TOP transactions, TPS, response times, and resource usage for each country.
+
+![cube-apm](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring19.png)
+
+## What is Cube?
+
+We call the performance statistics generated every 5 minutes as **Cube**. Cube analysis uses each 5-minute performance data stored in cubes.
+
+## Cube selection panel
+
+Because the cubes are stored every 5 minutes, you have to select a specific time. Select a specific time from the basic data on the panel.
+
+<div style={{textAlign: 'center'}}>
+
+![cube-select-pannel](https://img.whatap.io/media/images/cube.png)
+
+</div>
+
+There are 5 metrics of interest on the cube selection panel.
+
+-   **_TPS_**
+
+-   **_Response Time_**
+
+-   **_Tx error count_**
+
+-   **_Active TX count_**
+
+-   **_Concurrent User_**
+
+The cubes are displayed in different colors depending on the number of the selected metrics.
+
+-   <span class='highfg'>Dark blue</span>: <span class='highfg'>high figure</span>
+
+-   <span class='lowfg'>Light blue</span>: <span class='lowfg'>low figure</span>
+
+## Application selection
+
+In a cube, you can select a specific application data.
+
+![cube-select-apm-data](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring21.png)
+
+## Cube data
+
+-   **_Hitmap_**<br/>
+      It displays the distribution of transactions over the cube time. Detailed trace analysis is possible. 
+      If you select ![right-arrow](/img/right-arrow.svg), you can view the **_top stack_** and **_unique stack_** during the cube time.
+    :::note
+    The applications for stack analysis are **Java** and **Python**. 
+    :::
+
+-   **_Country_**<br/>
+    By mapping countries based on the client IP, it displays from which country the transactions are coming. The circle size indicates the relative amount of transactions.
+
+-   **_TPS_**<br/>
+    Number of transactions processed per second
+
+-   **_Response Time_**<br/>
+    Average response time for transactions
+
+-   **_CPU #5_**<br/>
+    After sorting the project applications (agents) by the IP, it displays CPUs of the busy server with a bar chart.
+
+-   **_Concurrent User_**<br/>
+    It displays the number of real-time users.
+
+-   **_Top TX_**<br/>
+    It displays 5 transactions of high invocation. Transaction statistics provide more detailed data.
+
+-   **_Heap Memory #5_**<br/>
+    It displays the top 5 instances of the applications that used high amount of heap memory.
+
+:::note
+This product contains the data from **GeoLite2** of **MaxMind**. It complies with the license policy. **GeoLite2** can be checked from the MaxMind website (http://www.maxmind.com). (This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com)
+:::

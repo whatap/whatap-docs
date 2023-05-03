@@ -1,0 +1,71 @@
+---
+id: batch-app
+title: バッチアプリケーション
+description: バッチアプリケーションの環境で、WhaTapエージェントの適用を完了してください。
+tags:
+  - Java
+  - バッチアプリケーション
+---
+
+バッチアプリケーションでWhaTapエージェントを適用する方法です。 
+
+バッチアプリケーションは、WASとは異なり、アプリケーションが実行と中断を繰り返す特性があります。したがって、通常のウェブアプリケーションとは異なるモニタリングを行う必要があります。
+
+![Batch Application](/img/batch-app-intro.png)
+
+## バッチジョブ（Batch Job）のインストール
+
+バッチジョブ（Batch Job）を1つのトランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、JobプロセスのためのJob Agentと、この情報をサーバーに中継するためのHost Agentに分離された2つのエージェントをインストールする必要があります。
+
+```bash title='Batch Job Agent'
+java -javaagent:/full/path/to/whatap.agent.batch-X.Y.Z.jar -jar {batch job jar}
+```
+
+```bash title='Batch Host Agent'
+java -jar whatap.agent.host-X.Y.Z.jar
+```
+
+:::note
+Batch Job AgentとBatch Host Agentは、Batch Jobを実行するホストと一緒にインストールしてください。
+:::
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+## Time Limitの設定
+
+Batch Job AgentとBatch Host Agentの間はUDPを利用して通信します。
+
+![Batch Job UDP](/img/batch-app-udp.png)
+
+バッチジョブは通常、長時間実行します。数十秒を超える場合もあります。したがって、バッチジョブごとに`time_limit`の値は異なる場合があります。バッチジョブが実行される予想処理時間を`time_limit`に設定してください。
+
+```ini title=whatap.conf
+time_limit=300000
+warning_time=time_limit's 70%
+step_interval=5000
+```
+
+## アクティブイコライザーカラーの設定
+
+バッチジョブの実行時間が`time_limit`の70％を過ぎると黄色で表示し、`time_limit`を超えると赤色で表示します。
+
+```ini title='whatap.conf' {2,4} showLineNumbers
+## 期待終了時間の７０％
+yellow_time = time_limit * 0.7;
+## 期待終了時間を超過
+red_time = time_limit;
+```
+
+![Batch Job UDP](/img/batch-app-timelimit.png)
+
+:::note
+サーバーオペレータは、バッチジョブの遅延をリアルタイムで確認するには、`time_limit`値を適切に設定してください。
+:::
+
+## アクティブスタック収集間隔の設定
+
+Batch Job Agentは、`step_interval`値の間隔でアクティブスタックを収集します。 
+
+![Batch Job Step Interval](/img/batch-app-prof.png)

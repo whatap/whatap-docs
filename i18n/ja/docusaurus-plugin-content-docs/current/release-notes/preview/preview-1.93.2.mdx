@@ -1,0 +1,241 @@
+---
+id: preview-1.93.2
+title: Preview 1.93.2
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+-   [https://preview.whatap.io]（https://preview.whatap.io）で、次の新機能と修正した内容を事前に体験することができます。 
+
+---
+
+## Hotfix : 2023-01-10
+
+### 「共通」
+
+#### Flexボード
+
+-   <Status>Fixed</Status> ダッシュボードの作成・修正時にダッシュボードのタイトルを最大100文字まで制限
+
+-   <Status>Fixed</Status> ダッシュボード選択後 <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>フィルター</UI> 機能利用時、<UI>保存されたフィルター</UI>の項目を修正する際に表示されるウィンドウの重複する <img src='/img/ico-close.svg' alt='닫기 아이콘'/>閉じるボタンを除去
+
+-   <Status>Fixed</Status> イコライザーチャートをのクリック時に、アクティブトランザクション機能に対応する製品でのみ詳細情報ウィンドウが開くように修正
+
+-   <Status>Fixed</Status> アクティブトランザクションウィジェットをクリックすると表示される詳細情報ウィンドウのロードレイアウトを改善
+
+-   <Status>Fixed</Status> 時間選択UIオプションのアニメーションが更新されない現象を修正
+
+#### メトリクスチャート
+
+-   <Status>Fixed</Status> ウィジェットで時間変更時にエージェントを全体選択するバグを修正
+
+-   <Status>Fixed</Status> <UI>アプリケーションダッシュボード</UI>から <UI>メトリクスチャート</UI> メニューへの移動時にエージェントを重複選択するバグを修正
+
+#### 警告通知
+
+-   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>複合メトリクス</UI> > <UI>イベント追加</UI> 機能でタイトルとメッセージを入力しないと保存できないように修正
+
+-   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>複合メトリクス</UI> > <UI>イベント追加</UI> > <UI>チャートで生成する</UI> > <UI>イベント照会</UI> > <UI>テキスト</UI> モードでウィジェットのタイプをチャートまたはテーブルに変更するとローディングが続くバグを修正
+
+-   <Status>Fixed</Status> <UI>イベント設定</UI> メニューの <UI>イベント追加</UI> ウィンドウで <UI>プロジェクトイベント受信設定メニュー</UI> または <UI>プロジェクトイベント受信設定メニューのショートカット</UI> ボタンをクリックするとURLパスがアプリケーションタイプ（<code>apm</code>）に変更されるバグを修正
+
+-   <Status>Fixed</Status> <UI>イベント受信設定</UI> > <UI>ユーザー別イベント受信設定</UI>で受信時間選択オプションの <img src='/img/ico-close.svg' alt='닫기 아이콘'/> ボタンをクリックすると、有効ではない時間値として保存されるバグを修正および <img src='/img/ico-close.svg' alt='닫기 아이콘'/> ボタンを削除
+
+-   <Status>Fixed</Status> <UI>イベント記録</UI> メニューに初めて進入する場合、設定されたフィルターによってデータがテーブル一覧に反映されないバグを修正
+
+#### ログ
+
+<Status>Fixed</Status> <UI>ライブTail</UI> メニューで3秒周期のTailデータ呼び出しが遅延する現象を修正
+
+#### ユーザー行為
+
+<Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>管理</UI> > <UI>ユーザー行為</UI>メニューでテーブルのテキストがテーブル領域外にはみ出す現象を修正
+
+#### エージェント設定 / サーバー設定
+
+-   <Status>Change</Status> Kubernetes環境のプロジェクトでエージェント一覧をマスター、ノード、アプリケーション単位に区分
+
+-   <Status>Feature</Status> エージェント別名の編集機能を追加
+
+-   <Status>Fixed</Status> 一部のプロジェクトで検索フィルターが作動しない問題を修正
+
+-   <Status>Fixed</Status> エージェント一覧が拡張された状態で既存に選択したエージェントがクリックされないためエージェント一覧を折りたたむことができない問題を修正
+
+-   <Status>Deprecate</Status> サーバープロジェクト、Kubernetes環境のプロジェクトにおいて <b>同時適用</b> 機能を削除
+
+### 「Application」
+
+#### トポロジー
+
+<Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>統計/レポート</UI> > <UI>トポロジー</UI> > <UI>アプリケーション統計トポロジー</UI> メニューでエージェントを選択するとエラーが発生する現象を修正
+
+### 「Server」
+
+#### サーバー一覧
+
+-   <Status>Fixed</Status> <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>エージェント移転</UI> ウィンドウで非活性化されていたエージェントを選択できるバグを修正
+
+-   <Status>Fixed</Status> CSVダウンロード時に空きデータのあるセルに「undefined」と表示されるものを空白として処理するよう修正
+
+#### 分析
+
+<Status>Fixed</Status> <UI>キューブ</UI> メニューからエージェント選択フィルターがチャートに適用されないバグを修正
+
+#### サーバー設定
+
+<Status>Fixed</Status> <UI>リモートファイルビューアー</UI> メニューで画面左側のメニュー名と一致するように画面上のメニュー名を修正
+
+### 「Container」
+
+#### コンテナマップ
+
+-   <Status>Fixed</Status> チャートメトリクス（<UI>ConState (state)</UI>）の一覧で一部のメトリクスが「undefined」と表示されるバグを修正
+
+-   <Status>Fixed</Status> 画面下の情報セクションで <img src='/img/ico-info.svg' alt='정보 아이콘'/> アイコンにマウスオーバー時に現れるツールチップテキストが表示されないバグを修正
+
+-   <Status>Fixed</Status> <UI>フィルター</UI> 機能の利用時に <UI>除外</UI> または <UI>含む</UI> オプションを選択した後、キーワード入力フィールドで選択できる値と選択した値の名前に相違があるバグを修正
+
+### `AWS` `AZURE`
+
+#### プロジェクト作成
+
+-   <Status>Change</Status> Azureプロジェクト作成時のインストール案内メッセージを追加
+
+-   <Status>Change</Status> Amazon CloudWatch プロジェクト作成時に <UI>認証有効期間（時）</UI>を必須入力するように変更
+
+### `URL`
+
+-   <Status>Fixed</Status> <UI>URLを追加する</UI> 機能の利用時に <UI>ガイドショートカット</UI>のリンクエラーを修正
+
+-   <Status>Fixed</Status> <UI>URL一覧</UI>でチャートをクリックすると表示されるウィンドウでリアルタイム照会（<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>）ボタンを削除
+
+-   <Status>Fixed</Status> <UI>URL一覧</UI>でチャートをクリックすると表示されるウィンドウで「1分」単位の照会時にチャートに表示されないバグを修正
+
+## Official Release : 2022-12-28
+
+### 「共通」
+
+#### プロジェクト作成
+
+-   <Status>Change</Status> メニュー名を <UI>プロジェクト一覧</UI>から <UI>製品カタログ</UI>に変更
+
+-   <Status>Change</Status>プロジェクト作成URLパスの変更（<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>）
+
+-   <Status>Change</Status> プロジェクト作成画面のUI変更
+
+    ![](/img/create-project-new.png)
+
+#### プロジェクト一覧
+
+-   <Status>Fixed</Status> クラスタープロジェクトカードビューでエージェント数の表示エラーを修正
+
+-   <Status>Fixed</Status> お気に入り機能が誤作動する現象を修正
+
+-   <Status>Change</Status> リストビューでプロジェクト項目を選択する時に、新しいウィンドウではなくページに移動するように修正
+
+#### サーバー詳細、ノード詳細
+
+<Status>Fixed</Status> 次のメニューパスで「リソース情報の詳細を見る」をクリックする時に、照会に使用された時間値と詳細を見るウィンドウの時間が一致しないバグを修正
+
+-   サーバープロジェクト > <UI>サーバー一覧</UI> > <UI>サーバー詳細</UI>
+
+-   クラスタープロジェクト > <UI>リソース</UI> > <UI>ノード詳細</UI>
+
+#### 警告通知 > イベント設定
+
+-   <Status>Change</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI> タブで通知一覧をタイトルを基準にソートするように変更
+
+-   <Status>Fixed</Status> プロジェクト修正権限のないユーザーが <UI>イベント設定</UI> メニューで通知を修正できないバグを修正
+
+#### 分析 > メトリクスチャート
+
+-   <Status>Change</Status> ウィジェットでエージェントを複数選択できるように機能を修正
+
+-   <Status>Feature</Status> ウィジェットチャートのY軸の最大値を固定できるようにオプションを追加
+
+-   <Status>Fixed</Status> ウィジェット「詳細を見る」でチャートのドラッグ範囲が1分以上の場合に限って照会期間を変更するよう修正
+
+-   <Status>Fixed</Status> ウィジェット「詳細を見る」でデータリクエストをロード中の場合、ウィジェットの照会期間が変更できないように照会ボタンを非活性化
+
+#### Flexボード
+
+-   <Status>Fixed</Status> クラスタープロジェクトをヒートマップウィジェットで確認できない問題を修正
+
+-   <Status>Feature</Status> ログカウント数のウィジェットカテゴリ選択オプションに全体カテゴリオプションを追加
+
+-   <Status>Change</Status> ダッシュボードテンプレート一覧で、各項目ごとに対応可能な製品カテゴリはアイコンを表示するように修正
+
+#### エージェント / サーバー設定
+
+-   <Status>Feature</Status> 次のメニューパスのエージェント一覧で非活性化されていたエージェントを削除できるアイコンボタンを追加
+
+    -   アプリケーション、クラスタープロジェクト：**_管理_** > **_エージェント設定_**
+    -   サーバープロジェクト：**_サーバー設定_** > **_サーバー設定_**
+
+-   <Status>Feature</Status> 次のメニュー経路で <UI>非活性化されたすべてのエージェントを削除</UI> ボタンを追加
+
+    -   アプリケーション、クラスタープロジェクト：**_管理_** > **_エージェント設定_**
+    -   サーバープロジェクト：**_サーバー設定_** > **_サーバー設定_**
+
+#### 統計/レポート > レポート
+
+<Status>Fixed</Status> レポートメールの送信予約時のメールアドレスの有効性チェックの追加 - 漢字、絵文字を除く特殊記号はピリオド（.）、ハイフン（-）、アンダーライン（_）のみを許可するように修正
+
+---
+
+### 「Container」
+
+#### ダッシュボード > コンテナマップ
+
+-   <Status>Fixed</Status> <UI>Critical</UI> 入力ウインドウと <UI>Warning</UI> 入力ウィンドウに同じ値を入力すると、入力ウィンドウが増加するバグを修正
+
+-   <Status>Feature</Status> 詳細を見る画面で <code>ContainerId</code> タグにコンテナリストに移動するリンク（<UI>コンテナ性能情報</UI>）を追加
+
+-   <Status>Change</Status> TXプロファイルウィンドウのサイズを調整
+
+-   <Status>Feature</Status> PodStatusがPending状態の時に <UI>イベント</UI> タブを優先して表示するように機能を追加
+
+-   <Status>Fixed</Status> <UI>ログ</UI> タブに入るとコンテンツが点滅する現象を修正
+
+#### リソース > コンテナ一覧
+
+-   <Status>Fixed</Status> コンテナ一覧の個数が1200個の場合のフリーズ現象を修正
+-   <Status>Feature</Status> コンテナ選択時に表示される <UI>Memory</UI> タブに <b>Container Memory Total RSS By Limit (%)</b> メトリクスを追加
+
+---
+
+### 「Server」
+
+#### サーバー一覧 > サーバー詳細
+
+<Status>Fixed</Status> リアルタイム通知一覧の一部項目を選択して <UI>サーバー詳細</UI> メニューに移動する場合、画面にチャートを正しく表現できない問題を修正
+
+---
+
+### 「Application」
+
+#### ダッシュボード > アプリケーションダッシュボード
+
+-   <Status>Feature</Status> ヒープメモリウィジェットに使用量をパーセンテージ（USED/TOTAL * 100）として表示するボタンを追加
+
+-   <Status>Fixed</Status> ウィジェット「詳細を見る表示」でチャートデータの間隔を1時間から5分に修正
+
+-   <Status>Fixed</Status> 終了したアクティブトランザクションの 「プロファイルを表示」をクリックする時に画面が表示されないバグの修正
+
+#### 分析 > キューブ
+
+<Status>Change</Status> <UI>国・地域</UI> ウィジェットの地図を拡大・縮小できるようにチャートを変更
+
+<!-- 
+### MySQL RDS 상품 알파 출시
+
+<Status>New</Status> MySQL RDS 상품 알파 출시, 프로젝트 생성 화면에서 상품 선택 가능
+
+![](/img/create-project-new-mysqlrds.png)
+-->

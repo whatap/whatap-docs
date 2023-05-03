@@ -1,0 +1,32 @@
+---
+id: amazon-linux
+title: Amazon Linux
+description: Amazon Linux
+tags:
+  - Amazon Linux
+  - Linux
+  - PHP
+---
+
+1.  Register the WhaTap **repository**.
+
+    ```bash title=SH
+    $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ```
+
+2.  Install the **package** with the following command.
+
+    ```bash title=SH
+    $ sudo yum install whatap-php
+    ```
+
+3.  {@include: ../../common-items/_php-install-script.mdx}
+
+{@include: ../../common-items/_php-extension-whatap.mdx}
+
+{@include: ../../common-items/_php-restart-apply.mdx} 

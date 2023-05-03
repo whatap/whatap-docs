@@ -1,0 +1,3 @@
+WhaTap basically uses the data collected from application servers to identify each server while collecting monitoring data. Basic information uses the application server as a unique identifier by a combination of application server's type, IP address, and such. If necessary, use the name set by the user or change the pattern to a unique value. The agent name must be unique.
+
+The reason why the data extracted from the application server is used, is like the following. When a communication loss caused by the stop of the application server, network disconnection, or agent problem between the collection server and the agent, is restored, the continuity of the data from the reconnected agent is maintained. 

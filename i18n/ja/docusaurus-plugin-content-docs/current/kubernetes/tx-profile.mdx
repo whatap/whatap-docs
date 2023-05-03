@@ -1,0 +1,128 @@
+---
+id: tx-profile
+title: トランザクション検索
+description: 個々のトランザクションの性能属性に基づいて、目的のトランザクションを検索できます。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - アプリケーション
+  - トランザクション
+---
+
+ホーム画面 > プロジェクト選択 > **_アプリケーション_** > **_トランザクション検索_**
+
+![トランザクション検索](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile.png)
+
+個々のトランザクションの性能属性に基づいて、目的のトランザクションを検索できます。
+
+![カラム選択](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_column.png)
+
+結果照会時![カラム選択アイコン](/img/ico-column-set.svg) **_カラム選択_**ボタンをクリックし、確認が必要なカラムを適切に選択してください。
+
+:::note
+検索条件によってレスポンス遅延が発生する可能性があるため、検索時間をできるだけ短く設定することをお勧めします。
+:::
+
+## 経過時間
+
+![経過時間](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_time.png)
+
+トランザクションのレスポンス時間を基準に検索します。基準以上と未満の2つの値を入力して検索します。
+
+## エラーメッセージ
+
+![エラーメッセージ](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_error.png)
+
+トランザクションのエラーメッセージに基づいて検索します。デフォルト状態ではエラー関連カラムが表示されない場合があります。カラムを選択して確認してください。
+
+## HTTPコール件数
+
+![HTTPコール件数](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_http.png)
+
+トランザクション中に外部HTTPサービスを呼び出した件数に基づいて検索します。
+
+## SQL件数
+
+![SQL件数](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_sql.png)
+
+トランザクション別のSQL実行件数が設定した件数以上のトランザクションを検索します。例外的に過度な数のSQLを呼び出すトランザクションを検索するときに利用します。
+
+## SQLパッチ件数
+
+![SQLパッチ件数](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_sqlfetch.png)
+
+SQL実行後のDBパッチ件数に基づいて検索します。件数の基準は、トランザクション別です。過度なデータパッチを実行するトランザクションを検索するときに利用します。
+
+## URL
+
+![URL](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_url.png)
+
+URLベースでトランザクションを検索します。入力した検索文字列は、含めるかどうか（部分一致）で比較検索します。
+
+## IP
+
+![IP](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_ip.png)
+
+IPベースでトランザクションを検索します。ただ、IP文字列は、PREFIX比較（前方一致）で検索します。
+
+## ドメイン
+
+![도메인](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_domain.png)
+
+HTTPサービスドメイン(host:port)ベースでトランザクションを検索します。検索条件は、ドメインが完全に一致（完全一致）する必要があります。
+
+## ユーザーエージェント
+
+![ユーザーエージェント](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_useragent.png)
+
+ユーザーエージェントベースでトランザクションを検索（部分一致）します。 
+
+## Referer
+
+![Referer](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_referer.png)
+
+Referer文字列ベースでトランザクションを検索します。
+
+:::note
+기본 설정 상태의 에이전트는 Referer 정보를 수집하지 않습니다. Referer 설정이 필요한 경우 다음 문서를 참조해 관련 설정을 추가하세요.
+
+-   [Java](../java/analysis-apm-trs#stat-referer)
+-   [Node.js](../nodejs/analysis-apm-trs#stat-referer)
+-   [Python](../python/analysis-apm-trs#stat-referer)
+    :::
+
+## トランザクションID
+
+![トランザクションID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_tid.png)
+
+トランザクションID ベースでトランザクションを検索（完全一致）します。トランザクションIDの場合、検索インデックスが作成されているため、高速で検索できます。
+
+:::note
+最新バージョンのエージェントでない場合、インデックスを使用しないフルスキャンが発生する可能性があります。
+:::
+
+## マルチTXID
+
+![マルチTXID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_mtid.png)
+
+マルチTXIDベースでトランザクションを検索（完全一致）します。
+
+:::note
+最新バージョンのエージェントでない場合、インデックスを使用しないフルスキャンが発生する可能性があります。
+:::
+
+## クライアントID
+
+![クライアントID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_clientid.png)
+
+クライアントID(`wClientId`)は、WhaTapエージェントがユーザーを区分するために付与するIDです。このID値に基づいてトランザクションを検索（完全一致）します。検索のための別途のインデックスはありません。
+
+## ログインID
+
+![ログインID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_loginid.png)
+
+ログインIDに基づいてトランザクションを検索します。
+
+:::note
+基本設定状態のエージェントでは、ログインID情報を収集しません。ログインIDの設定が必要な場合は、[次の文書](../java/script-plugin#common-plugin)を参考に設定を追加してください。
+:::

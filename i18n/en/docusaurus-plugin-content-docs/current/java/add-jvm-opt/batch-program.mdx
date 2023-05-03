@@ -1,0 +1,71 @@
+---
+id: batch-app
+title: Batch application
+description: Complete application of the WhaTap agent in the batch application environment.
+tags:
+  - Java
+  - Batch application
+---
+
+The following explains how to apply the WhaTap agent in a batch application. 
+
+Different from WAS, the batch application runs and stops repeatedly. Accordingly, it must be monitored differently.
+
+![Batch Application](/img/batch-app-intro.png)
+
+## Installing the batch job
+
+The batch job must be monitored from a single transaction perspective. WhaTap's Java agent needs to install two separate agents: Job agent for job processes and Host agent for relaying this information to the server.
+
+```bash title='Batch Job Agent'
+java -javaagent:/full/path/to/whatap.agent.batch-X.Y.Z.jar -jar {batch job jar}
+```
+
+```bash title='Batch Host Agent'
+java -jar whatap.agent.host-X.Y.Z.jar
+```
+
+:::note
+The batch job agent and batch host agent must be installed in the host that performs the batch job.
+:::
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+## Setting the time limit
+
+Between the batch job agent and batch host agent, communication is enabled through UDP.
+
+![Batch Job UDP](/img/batch-app-udp.png)
+
+Generally, a batch job is performed for a long time. It may take more than tens of seconds. Accordingly, the `time_limit` values may differ depending on each batch job. Set the estimated process time for the batch job in `time_limit`.
+
+```ini title=whatap.conf
+time_limit=300000
+warning_time=time_limit's 70%
+step_interval=5000
+```
+
+## Setting the active equalizer's color
+
+If the process time of a batch job exceeds 70% of `time_limit`, it is distinguished in yellow. If it exceeds `time_limit`, it is displayed in red.
+
+```ini title='whatap.conf' {2,4} showLineNumbers
+## 70% of the estimated end time
+yellow_time = time_limit * 0.7;
+## upon exceeding the estimated end time
+red_time = time_limit;
+```
+
+![Batch Job UDP](/img/batch-app-timelimit.png)
+
+:::note
+In order for the server administrator to check the delay of a batch job in real time, set the value of `time_limit` properly.
+:::
+
+## Setting the active stack's collection interval
+
+The batch job agent collects active stacks at an interval of `step_interval`. 
+
+![Batch Job Step Interval](/img/batch-app-prof.png)

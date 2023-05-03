@@ -1,0 +1,41 @@
+---
+id: service-1.88.0
+title: Service 1.88.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-09-28
+
+## 「共通」
+
+**共通** - 組織選択時のエラーを修正
+
+## インテグレーション
+
+**インテグレーションプロジェクト** - プロジェクト作成ページの改編
+
+## アプリケーション
+
+**マルチトランザクション追跡** - 照会エラーを修正
+
+## コンテナ
+
+**共通** - 用語変更、「マスタープロジェクト」を「クラスタープロジェクト」に変更
+
+**コンテナマップ** - 名前変更、「最近のログメッセージ」のタブ名を「コンテナStdout/Stderr」に変更
+
+**Out Of Memory Killedコンテナ** 
+
+-   コンテナの照会時間を最大2日に制限
+-   既存のmemory_totalrssメトリクスをmemory_workingsetメトリクスに変更
+
+**コンテナ一覧** - 照会エラーの修正
+
+## ログ
+
+**共通** - Pythonプロジェクト公開
+
+**ログ検索機** - 照会エラーの修正

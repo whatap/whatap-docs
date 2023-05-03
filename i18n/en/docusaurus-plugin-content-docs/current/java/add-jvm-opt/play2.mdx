@@ -1,0 +1,36 @@
+---
+id: play2
+title: Play2
+description: Complete the additional settings for JVM options in the Play2 application server environment.
+tags:
+  - Java
+  - Play2
+---
+
+Check the method how to add JVM options in the application server environment using Play2. 
+
+Set the agent options in the _$PLAY_HOME/framework/build_ file. If you have a separate startup or stop script, apply it to that file.
+
+```bash title=$PLAY_HOME/framework/build {6} showLineNumbers
+#! /usr/bin/env sh
+
+########## WHATAP START ############
+WHATAP_HOME=/apps/whatap
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+JAVA_OPTS="${JAVA_OPTS} -Dwhatap.play2=2.2.6 -javaagent:${WHATAP_JAR}"
+########## WHATAP END ############
+
+if [ -z "${PLAY_VERSION}" ]; then
+  PLAY_VERSION="2.2.6"
+...
+```
+
+:::note
+For Play, add the `-Dwhatap.play2=2.2.6` option other than the default settings.
+:::
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+{@include: ../../common-items/_start-apm.mdx}  

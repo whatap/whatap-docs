@@ -1,0 +1,217 @@
+---
+id: install-agent
+title: インストール
+description: Amazon CloudWatchアイテムのインストールについて説明します。
+tags:
+  - インストール
+  - Amazon CloudWatch
+  - クラウド
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。 モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。 Role方式認証で安全かつ便利に使用できます。 
+
+{@include: ../getting-started/_create-project-cloud.mdx}
+
+## チェックリスト
+
+必要な権限と推奨されるポリシーを確認してください。
+
+| Resouce           | 権限   |
+| ----------------- | ---- |
+| CloudWatch        | Read |
+| EC2               | Read |
+| ElasticCache      | Read |
+| CloudFront        | Read |
+| Dynammodb         | Read |
+| ElasticBeansTalk  | Read |
+| AutoScaling       | Read |
+| EFS               | Read |
+| RDS               | Read |
+
+-   **推奨ポリシ**
+    -   arn:aws:iam::aws:policy/ReadOnlyAccess
+
+## モニタリング手順
+
+<!-- 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Amazon CloudWatch 사용 상태로 생성하세요. -->
+
+1.  Amazon認証情報を入力してください。
+2.  CloudWatchネームスペースおよび収集周期を選択してください。
+3.  リージョン、メトリクス、スタットなどを選択してください。
+
+:::note
+インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。 インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
+:::
+
+<!-- 
+
+1. CloudWatch 네임스페이스 및 ***수집 주기***를 선택하세요.
+1. ***리전***, ***메트릭스***, 스탯(***Average***, ***Maximum***, ***Medium***, ***Sum***) 등을 선택하세요.
+
+## 인증 정보 입력
+
+Role ARN을 이용한 설치 방법을 지원합니다. 
+
+Amazon CloudWatch 인증 방법은 다음 두 가지 방법 중 하나를 선택할 수 있습니다.
+
+* Accesskey
+* Role ARN
+
+-->
+
+<!-- 
+
+### Access / Secret 정보 입력
+
+![Amazon Cloudwatch](https://img.whatap.io/media/images/amazon_cloudwatch_auth_dialog.png)
+
+와탭 모니터링 용 Identity and Access Management(IAM) 사용자를 생성, 선정 하고 필요한 권한을 추가할 수 있습니다. 액세스 키를 생성하고 Access Key ID와 Secret을 와탭에 입력하세요. 
+
+-->
+
+### 認証情報入力
+
+Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)が直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。 Role Assumeはアクセスキーの発行が不要なため、安全で便利です。
+
+:::note
+Roleを利用した設定をお勧めします。 Access Keyの活用は、既存のAccess Keyユーザーのみ可能です。
+:::
+
+#### ロールの作成
+
+![Amazon Cloudwatch - role](https://img.whatap.io/media/images/amazon_cloudwatch_auth_role_dialog.png)
+
+1.  AWS Management Consoleにログインしてから、IAMコンソールを開きます。
+2.  コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。
+3.  「Select type of trusted entity」(信頼されたエンティティタイプ選択)から「Another AWS account」を選択してください。
+4.  Account IDにWhaTapアカウントID**911937781722**を入力してください。 ReadOnly Accessを選択して適用してください。
+5.  Roleの名前と説明を入力します。「Create Role」ボタンをクリックしてSummary画面に切り替えてください。
+6.  「Maximum session duration」項目の「Edit」をクリックして「12時間」に変更して保存してください。 
+7.  **Role ARN**項目をコピーしてください。
+8.  WhaTap**_管理_** > **\*エージェントのインストール** ページに戻り、**_Role_** **_ARN_**ウィンドウにコピーした**RoleARN**を貼り付け、**_確認_**ボタンをクリックしてください。
+
+### ネームスペースおよび収集サイクルの選択
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+<!-- ![Amazon Cloudwatch - Namespace](https://img.whatap.io/media/images/amazon_cloudwatch_setup_dialog_1st.png) -->
+
+#### WhaTap収集サイクル
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### ネームスペース
+
+-   AWS ACMPrivateCA
+-   AWS AmazonMQ
+-   AWS ApplicationELB Monitoring
+-   AWS AppSync
+-   AWS Athena
+-   AWS AutoScaling
+-   AWS Elastic Beanstalk Health
+-   AWS Billing
+-   AWS Cassandra
+-   AWS Chatbot
+-   AWS Cloud Front
+-   AWS CloudHSM
+-   AWS CloudSearch
+-   AWS CodeBuild
+-   AWS CodeGuruProfiler
+-   AWS Cognito
+-   AWS Connect
+-   AWS ContainerInsights Monitoring
+-   AWS DataSync
+-   AWS DAX
+-   AWS DDoSProtection
+-   AWS DMS
+-   AWS DocDB
+-   AWS DX
+-   AWS Dynamo DB
+-   AWS Ebs Usage
+-   AWS EC2 Monitoring
+-   AWS EC2 Alert Config
+-   AWS EC2Spot
+-   AWS ECS
+-   AWS EFS
+-   AWS ElastiCache Usage
+-   AWS ElasticGPUs
+-   AWS ElasticInference
+-   AWS ElasticMapReduce
+-   AWS ElasticTranscoder
+-   AWS Classic ELB Monitoring
+-   AWS ES
+-   AWS Events
+-   AWS Firehose
+-   AWS FSx
+-   AWS GameLift
+-   AWS GatewayELB
+-   AWS Glue
+-   AWS GroundStation
+-   AWS Health
+-   AWS Inspector
+-   AWS IoT
+-   AWS IoTAnalytics
+-   AWS IoTSiteWise
+-   AWS IVS
+-   AWS Kafka
+-   AWS Kinesis
+-   AWS KinesisAnalytics
+-   AWS KinesisVideo
+-   AWS KMS
+-   AWS Lambda
+-   AWS Lex
+-   AWS Location
+-   AWS Logs
+-   AWS LookoutMetrics
+-   AWS MediaConnect
+-   AWS MediaConvert
+-   AWS MediaPackage
+-   AWS MediaStore
+-   AWS MediaTailor
+-   AWS ML
+-   AWS NATGateway
+-   AWS Neptune
+-   AWS NetworkELB
+-   AWS NetworkFirewall
+-   AWS OpsWorks
+-   AWS Polly
+-   AWS QLDB
+-   AWS RDS Monitoring
+-   AWS Redshift
+-   AWS Robomaker
+-   AWS Route53
+-   AWS S3
+-   AWS SageMaker
+-   AWS SDKMetrics
+-   AWS ServiceCatalog
+-   AWS SES
+-   AWS SNS
+-   AWS SQS
+-   AWS SQS Message
+-   AWS SSM-RunCommand
+-   AWS States
+-   AWS StorageGateway
+-   AWS SWF
+-   AWS Textract
+-   AWS ThingsGraph
+-   AWS Timestream
+-   AWS Transfer
+-   AWS TransitGateway
+-   AWS Translate
+-   AWS TrustedAdvisor
+-   AWS Api Usage
+-   AWS VPN Monitoring
+-   AWS WAF
+-   AWS WorkMail
+-   AWS WorkSpaces
+
+### リージョン、メトリクス、スタット選択
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+![Amazon Cloudwatch - Region,Metric,Stats](https://img.whatap.io/media/images/amazon_cloudwatch_setup_dialog_2nd.png)
+
+<!-- 이미지 최신화 필요 230127  -->

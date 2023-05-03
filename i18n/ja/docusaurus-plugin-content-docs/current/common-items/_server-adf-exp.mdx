@@ -1,0 +1,104 @@
+通常のインストール後に拡張パックの機能を使用するには、構成ファイルを作成し、次のようにエージェントを再起動します。
+
+### MySQLサーバー一覧
+
+MySQL/MariaDB モニタリングエージェントが利用可能です。
+
+### Web URLの性能チェック
+
+WhaTapインフラエージェントは、与えられたWebアドレスに接続し、接続有無および応答時間を収集します。収集されたWeb URLの性能は**_カテゴリ_**`server_webcheck`で確認できます。次のコマンドでチェックするWebアドレスを追加してください。URLモニタリングサービスの詳細については、[次の文書](../url/url-intro)を参考にしてください。
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "チェックするウェブアドレス" | sudo tee -a /usr/whatap/infra/conf/webcheck.conf
+echo "webcheck.enabled=true" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\webcheck.conf" -Value "チェックするウェブアドレス"
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "webcheck.enabled=true"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>
+
+<!-- 
+
+아래는 필드명 관련 컨펌 후 추가 예정 .. 현재 수정 임시로 남겨둠
+
+:::caution
+
+***이벤트 발생 조건***과 ***이벤트 대상 필터링***에서 ***선택 입력*** 모드를 선택한 상태에서 마침표(.)가 2개 이상인 필드 또는 태그 이름을 선택했다면 ***직접 입력*** 모드를 선택한 다음 `${필드 또는 태그 이름}`과 같은 형식으로 묶어서 입력해야 합니다.
+
+예를 들어 `webcheck.ping.status_code` 필드 이름과 연산자는 `!=`, 값은 `200`을 입력할 경우, ***직접 입력*** 모드를 선택한 다음 `${webcheck.ping.status_code} != 200`으로 직접 입력하세요.
+
+:::
+
+:::note
+
+**필드명 규칙**
+
+필드명에 마침표(*.*)가 2개 이상 포함된 경우 다음과 같이 입력해 주세요.
+
+> 예시, `webcheck.ping.status_code` → `${webcheck.ping.status_code}`
+
+:::
+
+-->
+
+### Redisインスタンス
+
+WhaTapインフラエージェントは、特定のRedisアドレスに接続し、接続数を含む複数の性能指数を収集します。収集された性能情報は、**_カテゴリ_**`server_redis`で確認できます。次のコマンドでチェックするRedisサーバーの接続情報を追加することができます。
+
+<Tabs>
+<TabItem value="lxs2" label="Linux Shell">
+
+```bash title=SH
+sudo echo "addr=Redisアドレス:ポート番号" | sudo tee /usr/whatap/infra/conf/redis.conf
+sudo echo "password=Redis 패스워드" | sudo tee -a /usr/whatap/infra/conf/redis.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wps2" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\redis.conf" -Value "addr=Redisアドレス:ポート番号"
+Add-Content -Path "C:\Program Files\WhatapInfra\redis.conf" -Value "password=Redisパスワード"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>
+
+### Memcachedインスタンス
+
+WhaTapインフラエージェントは、特定のMemcachedアドレスに接続し、接続数を含む複数の性能指数を収集します。収集された情報は、**_カテゴリ_**`server_memcached`で確認できます。次のコマンドでチェックするMemcachedサーバーの接続情報を追加することができます。
+
+<Tabs>
+<TabItem value="lxs3" label="Linux Shell">
+
+```bash title=SH
+sudo echo "addr=Memcachedアドレス:ポート番号" | sudo tee /usr/whatap/infra/conf/memcached.conf
+sudo echo "password=Memcachedパスワード" | sudo tee -a /usr/whatap/infra/conf/memcached.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wps3" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\memcached.conf" -Value "addr=Memcachedアドレス"
+Add-Content -Path "C:\Program Files\WhatapInfra\memcached.conf" -Value "password=Memcachedパスワード"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>

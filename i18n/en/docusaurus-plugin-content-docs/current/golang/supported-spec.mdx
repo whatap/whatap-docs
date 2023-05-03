@@ -1,0 +1,44 @@
+---
+id: supported-spec
+title: Support Environment
+description: It provides the basic specifications of the Golang application server in which the WhaTap Monitoring service runs.
+tags:
+  - Golang
+---
+
+## Golang agent support environment
+
+-   **Golang version**: 1.14 or later
+
+-   **OS**
+
+    -   CentOS/Redhat 6.x (64bit) or later 
+    -   Debian/Ubuntu 12.04 (64 bit) or later
+    -   Amazon linux (64bit)
+    -   Alpine Linux (64 bit)
+
+-   **Library compatibility**
+
+    -   net/http, gin, chi, fiber, gorilla, echo, fasthttp
+    -   database/sql, gorm, redigo
+    -   grpc, sarama, k8s.io/client-go
+
+:::note
+
+See the [GitHub site](https://github.com/whatap/go-api-example) on how to apply the framework, libraries, and examples.
+
+:::
+
+## Common environment
+
+### Supporting the browser
+
+{@include: ../getting-started/_supported-browser.mdx}  
+
+### Firewall
+
+{@include: ../getting-started/_proxy.mdx}  
+
+### Mobile app
+
+{@include: ../getting-started/_mobile-app.mdx}  

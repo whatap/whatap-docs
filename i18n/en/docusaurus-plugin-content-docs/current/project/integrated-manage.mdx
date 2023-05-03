@@ -1,0 +1,170 @@
+---
+id: integrated-manage
+title: Integrated Management
+description: You can check and manage the group list in the selected organization.
+tags:
+  - Management
+  - Group
+  - Integrated Group
+---
+
+## Integrated Group Management
+
+Home > Select Organization > **_Management_** > **_Integrated Group Management_**
+
+You can check the group list in the selected organization. If your organization does not have editing permission, the function is disabled.
+
+-   If an organization is not selected, the group that **does not belong to the organization** and its project list appears. You can select a group or project to move to another organization or group.
+-   The list is disabled when you do not have editing permission for the group or project.
+
+:::note
+
+-   To move groups or projects to an organization or group that you do not own, invite them to the organization or group, or contact the WhaTap support team at help@whatap.io.
+    :::
+
+### Adding a group
+
+![Integrated Group Management](/img/manage-integrated-group.png)
+
+1.  Select **+ Add Group\*** from **_Integrated Group Management_**.
+
+2.  When the **_Add Group_** window appears, enter the **_group name_** and **_description_**. The group name is required.
+
+3.  Select a project to add to the group in **_Add Project_**.
+
+4.  Select **_Apply_**.
+
+Add the selected project to the group.
+
+:::note
+Enter text in **_Add Project_** to filter projects to add to the group. You can select additional projects.
+:::
+
+### Moving a group (removing a group from an organization)
+
+![Group Movement](/img/manage-group-move-group.png)
+
+The selected groups can be moved to another organization or removed from the organization.
+
+1.  Select a group to move to another organization. You can select multiple groups.
+
+2.  If **_Move Group_** is active, select the button.
+
+3.  If the **_Move Group_** window appears, click **_Select Organization_** and then select an organization to move.
+
+4.  Select **_OK_**.
+
+:::note
+
+-   For the group that cannot be modified, the **_Select Group_** entry does not appear.
+-   To delete a group from the organization, select **_other organizations_** in **_Select Organization_**.
+    :::
+
+### Moving a project (removing a project from the group)
+
+![Project movement](/img/move-project-from-group.png)
+
+You can move the selected project to another group or remove it from the group.
+
+1.  Select a project to move to another group. You can select multiple projects.
+
+2.  If **_Move Project_** is active, select the button.
+
+3.  If the **_Move Project_** window appears, click **_Select Group_** and then select a group to move.
+
+4.  Select **_OK_**.
+
+:::note
+
+-   For the group that cannot be modified, the **_Select Group_** entry does not appear.
+-   To delete a project from the group, select **_other projects_** in **_Select Group_**.
+    :::
+
+### Modifying a group
+
+1.  Hover your mouse over the group whose name and description to modify, and the ![Edit icon](/img/ico-edit.svg) button appears.
+
+2.  Select ![Edit icon](/img/ico-edit.svg). 
+
+3.  If the **_Edit Group_** window appears, modify the settings and then select **_Apply_**.
+
+### Deleting a group or project
+
+1.  If you hover your mouse over the group or project to delete, the ![Delete icon](/img/ico-trash.svg) button appears.
+
+2.  Select ![Delete icon](/img/ico-trash.svg).
+
+3.  If the **_Delete Group_** or **_Delete Project_** window appears, check the message and then select **_OK_**.
+
+:::caution
+
+-   If a group is deleted, the group and its user list are all deleted. The projects that were in the group do not belong to any group.
+-   If a project is deleted, the user list and the collected data are all deleted. Note that the deleted data cannot be restored.
+    :::
+
+## Integrated Member Management{#member}
+
+Home > Select Organization > **_Management_** > **_Integrated Member Management_**
+
+![Integrated Member Management](/img/integrated-manage-member.png)
+
+You can check, add, or delete the members by the selected organization, group, or project. If your organization does not have editing permission, the function is disabled.
+
+-   If an organization is not selected, the group that **does not belong to the organization** and its project list appears. You can select a group or project to move to another organization or group.
+-   You cannot add or delete members if you do not have editing permission for the group or project.
+
+:::note
+
+To see the members in the organization or group that you do not own, invite them to the organization or group, or contact the WhaTap support team at help@whatap.io.
+
+:::
+
+### Inviting members
+
+1.  In **_Integrated Member Management_**, select an organization, group, or project.
+
+2.  Select **_Invite Member_** on the upper right of the screen.
+
+3.  In **_User Role_**, set the roles of the user to invite and then select **_Apply_**.
+
+4.  Enter the email address of the user to invite in **_Email_**, and then select **_Add_**. You can add extra users continuously.
+
+5.  After adding all users to invite, select **_Complete_**.
+
+:::note
+If there are invited members to cancel before completion, in **_List of members to invite_**, select ![Delete icon](/img/ico-trash-red.svg).
+:::
+
+### Modifying a member role
+
+1.  In **_Integrated Member Management_**, select an organization, group, or project.
+
+2.  In the member list, select ![Edit icon](/img/ico-edit.svg) on the right of the member to modify. 
+
+3.  If the **_Edit Member Role_** window appears, set the values for **_Member Role_** and **_User role per group_** or **_User Role per project of a group_**.
+
+    -   **_Member Role_**: You can set the roles for the organization and the groups in the organization.
+    -   (If an organization is selected) **_User role per group_**: You can set the roles for the selected members for each group in your organization.
+    -   (If an organization is selected) **_User Role per project of a group_**: Roles of the selected members can be set for each project in the group.
+
+4.  After configuration, select **_Apply_**.
+
+:::note
+
+-   Depending on the selected organization, group, or project, the scope of the applicable roles may differ.
+-   For more information about the member roles, see [the following](../project/project-structure#project-auth).
+    :::
+
+### Deleting members
+
+1.  In **_Integrated Member Management_**, select an organization, group, or project.
+
+2.  In the member list, select ![Delete icon](/img/ico-trash-red.svg) on the right of the member to delete. 
+
+3.  If the message window appears, select **_Delete_**.
+
+:::note
+
+-   If an organization is selected, in order to delete members under subordinate groups and projects, click the checkbox in the message window and then select **_Delete_**.
+-   If a group is selected, in order to delete members under subordinate projects, click the checkbox in the message window and then select **_Delete_**.
+    :::

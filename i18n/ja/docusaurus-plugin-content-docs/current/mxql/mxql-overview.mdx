@@ -1,0 +1,71 @@
+---
+id: mxql-overview
+title: MXQL
+description: MXQLは、WhaTapの性能データ（メトリクス）を柔軟に照会するためのクエリ言語です。
+displayed_sidebar: referSidebar
+tags:
+  - MXQL
+  - WhaTap
+  - メトリックス
+---
+
+:::note
+MXQLの内容を確認する前に、まずメトリクスの概念について確認することをお勧めします。メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参考にしてください。
+:::
+
+## MXQLとは
+
+MXQLは、WhaTapの性能データ（メトリクス）を柔軟に照会するためのクエリ言語です。一つのプロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会・活用するために使用します。
+
+## MXQLとSQLの違い
+
+よく知られているSQLとの比較を通じて、MXQLの概念について見てみましょう。
+
+### 用語
+
+まずSQLで使用する用語を見てみましょう。
+
+![SQLのデータ格納構造](https://img.whatap.io/media/images/mxql-6.png)
+
+上記のように、whatapのデータベースにproductテーブル(Table)が含まれています。productテーブル(Table)にはid、descriptionの2つのカラム(Column)が含まれています。SQLのDatabase、Table、Columnに対応するMXQLの用語はそれぞれdatabase、category、fieldです。
+
+| 格納方式  | MXQL     | SQL      |
+| ----- | -------- | -------- |
+| 大分類   | Database | Database |
+| 中分類   | Category | Table    |
+| 小分類   | Field    | Column   |
+
+### クエリー（Query）
+
+MXQLとSQLのサンプルクエリです。各行の右側のコメントを参考にしてください。
+
+```sql title='간단한 SQL 쿼리'
+SELECT time, pcode  -- Column選択（time、 pcodeカラムを照会するように設定します。）
+FROM app_counter    -- Table選択（app_counterテーブルでデータを照会します。）
+WHERE tx_count = 1  -- データフィルタリング（tx_count columnの値が1のデータを照会するように設定します。
+```
+
+```sql title='간단한 mxql 쿼리'
+CATEGORY app_counter                 -- app_counterカテゴリでデータを照会するように設定します。
+TAGLOAD                              -- データを照会します。
+SELECT [ time, pcode ]               -- 照会された全体カラムのうちtime、pcodeフィールドを選択します。
+FILTER { key : tx_count, value : 5}  -- tx_countフィールドの値が5のデータを残します。
+```
+
+## 実行結果
+
+MXQLクエリを実行すると、選択したカテゴリで選択したフィールドのメトリクスを照会します。
+
+`app_counter`カテゴリで`tx_count`、`tx_error`指標を照会するクエリは次のとおりです。
+
+```sql title='MXQL 수행'
+CATEGORY app_counter                   -- app_counterカテゴリでデータを照会するように設定します。
+TAGLOAD                                -- データを照会します。
+SELECT [time, oid, tx_count, tx_error] -- 照会したいフィールドの名前を設定します。
+```
+
+クエリを実行すると、次のようにメトリクスを照会します。
+
+![MXQL実行結果の例](https://img.whatap.io/media/images/mxql_overview.png)
+
+メトリクスには常に`time`、`oid`値が含まれるため、MXQLクエリでも`time`、`oid`フィールドを常に含めて照会することをお勧めします。最終的に照会したデータがいつ(`time`)、どのエージェント(`oid`)から収集したメトリクスなのかを確認できます。

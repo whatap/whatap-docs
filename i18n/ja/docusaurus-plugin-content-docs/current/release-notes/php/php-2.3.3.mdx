@@ -1,0 +1,42 @@
+---
+id: php-2.3.3
+title: PHP Agent 2.3.3
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2021-11-10
+
+## Change（アップデート）
+
+### ファイル関連関数の追加
+
+従来収集中の「fopen()」関数に、「file()」、「file_get_contest()」関数の実行時間とファイル名を追加で収集します。
+
+ファイル関連の収集対象関数
+
+```php
+fopen()
+file()
+file_get_contents()
+```
+
+## Fixed（バグ修正）
+
+### GETパラメータ収集エラーの修正
+
+コードイグナイターフレームワークでURLがrewrite moduleに変更された場合GETパラメータを収集できないエラーを修正、URIの「Query_string」からパラメータを分離して重複なく追加しました。 
+
+### PHP 8.0でJIT disabled警告
+
+PHP 8.0で「opcache.jit=on」設定時に以下のような警告が発生するエラーを修正しました。
+
+```bash
+PHP Warning: JIT is incompatible with third party extensions that override zend_execute_ex(). JIT disabled. in Unknown on line 0
+```
+
+:::note
+PHP 8.0.3以降をお勧めします。
+:::

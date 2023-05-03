@@ -1,0 +1,79 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - PostgreSQL
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## WhaTapデータベースエージェントのダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+
+dbms=postgresql
+db=postgres
+db_ip={DBサーバーのIPアドレス}
+db_port={DBサーバーのポート番号} 
+```
+
+1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
+
+  **Postgresql 9.2バージョン以降**：https://jdbc.postgresql.org/download
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+<!-- 모니터링용 계정 생성 -->
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+<!-- PostgreSQL -->
+
+```bash showLineNumbers
+# 10バージョン以降
+create user whatap with password 'DB Password'; # ご希望のpasswordを入力してください。
+grant pg_read_all_stats to whatap;
+ 
+# 10バージョン以前
+create user whatap with password 'DB Password'; # ご希望のpasswordを入力してください。
+alter user whatap with superuser;
+ 
+# kill session使用時
+alter user whatap with superuser;
+```
+
+## DBユーザーファイルの作成{#create-db-user}
+
+<DBuserDesc name='default'/>
+
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
+
+<!--## 에이전트 실행-->
+
+{@include: ../common-items/_db-run-agent.mdx}

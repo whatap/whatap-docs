@@ -1,0 +1,68 @@
+---
+id: service-1.78.0
+title: Service 1.78.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+## 2022-12-02
+
+### Multiple transaction trace
+
+<Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 일부 테이터 조회 시 차트가 그려지지 않는 버그 수정
+
+### Transaction search
+
+<Status>Fixed</Status> <UI>분석</UI> > <UI>트랜잭션 검색</UI> 메뉴에서, 이전 프로젝트에서 조회한 데이터가 프로젝트 이동 시 표시되는 버그 수정
+
+## 2022-10-24
+
+### `공통`
+
+-   <Status>Fixed</Status> 알림 수신 설정 - 서드 파티 슬랙 redirect url이 정상 연결되지 않는 버그 수정
+
+## 2022-06-22
+
+### `공통`
+
+**_Flex 보드_** - 시리즈 위젯, 전일 데이터 비교 위젯 카운트 정보 표시 옵션 추가
+
+**_이벤트 설정_** - 복합 메트릭스 이벤트의 수신 태그 설정 기능 추가
+
+**_프로젝트 액세스 키_** - 프로젝트 라이선스를 프로젝트 액세스 키로 용어 변경
+
+**_이벤트 수신 설정_** - 3rd party 수신 설정 시 알림 테스트 기능 추가
+
+### Application
+
+**_에이전트 설정_** 메뉴 개편
+
+-   Enhanced usability and reorganized menus in Agent CONF (Management - Agent Setting)
+-   Application - Renamed the existing menu to Instance Performance Analysis
+
+**_트랜잭션 검색_** - 키워드 검색 시 대소문자 구분 제거
+
+### Database
+
+**_이벤트 설정_** - 메트릭스 이상치 탐지 이벤트 설정 기능 추가 
+
+**_SQL 자세히 보기_** - SQL 파싱 에러 현상 수정
+
+**_보고서_** - 큐브리드 프로젝트 월간 보고서 종류 추가
+
+**_트랜잭션 검색_** - 키워드 검색 시 대소문자 구분 제거
+
+### Container
+
+**_컨테이너맵_**
+
+-   Added the WhaTap event lookup function 
+-   Saving the user selection option status
+-   Enhanced the card view responsive styles
+-   Added the container information lookup function
+
+**_네임스페이스 관리_** - 네임스페이스 프로젝트 추가 기능 수정
+
+**_멀티 서비스 히트맵_** - 데이터 조회 이상 현상 수정

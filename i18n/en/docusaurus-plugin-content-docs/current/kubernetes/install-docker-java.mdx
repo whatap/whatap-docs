@@ -1,0 +1,97 @@
+---
+id: install-docker-java
+title: Installing Docker Java
+description: This step allows you to install the agent to monitor Java applications in the container.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Application Installation
+  - Java
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+This process adds the settings for applying the agent to the JVM option of the Java application running on a Docker container and packages the container image.
+
+## Downloading the agent
+
+<Tabs>
+<TabItem value="dockerinstall" label="Docker Install" default>
+
+{@include: _docker-build.mdx}  
+
+1.  Release the Docker image with the WhaTap agent installed.
+
+</TabItem>
+<TabItem value="direct" label="직접 설치">
+
+1.  Select **_Download_** to download the installation file (_whatap.agent.java.tar.gz_).
+
+2.  Upload the dockerfile to the server and then unzip the file.
+
+    :::info
+
+    To download to the installation server, execute the following command.
+
+    ```bash
+    wget https://api.whatap.io/agent/whatap.agent.java.tar.gz
+    ```
+
+    :::
+
+3.  Check the settings in _whatap.conf_.
+
+    ```ini
+    license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+    whatap.server.host={collection server IP}
+    ```
+
+4.  Create the _paramkey.txt_ file and then enter a 6-letter alphanumeric password.
+
+5.  See the following example to create a Dockerfile.
+
+    ```bash title='Dockerfile 생성 예시'
+    FROM openjdk:8-jdk-alpine
+
+    # whatap
+    RUN mkdir -p /whatap
+
+    COPY ./whatap/whatap.conf /whatap/
+    COPY ./whatap/paramkey.txt /whatap/
+    COPY ./whatap/whatap-virtual-X.Y.Z.jar whatap-virtual-X.Y.Z.jar
+    COPY ./whatap/whatap.agent-X.Y.Z.jar /whatap/
+
+    EXPOSE 8085
+
+    ENTRYPOINT ["java", "-javaagent:/whatap/whatap.agent-X.Y.Z.jar", "-Dwhatap.micro.enabled=true", "-cp", "whatap-virtual-X.Y.Z.jar", "-Dwhatap.port=8085", "-Duser.timezone=Asia/Seoul", "-Dfile.encoding=UTF-8", "com.virtual.App"]
+    ```
+
+    :::tip
+
+    For Java 17 or later, add the `--add-opens=java.base/java.lang=ALL-UNNAMED` option related to the reflection.
+
+    :::
+
+:::note
+
+-   _whatap-virtual-X.Y.Z.jar_: Monitoring target (sample application)
+-   _whatap.agent-X.Y.Z.jar_: WhaTap agent
+-   If the agent's file name is _whatap.agent-1.2.3.jar_, change the **X.Y.Z** part to **1.2.3**.
+-   For more information about addition of JVM options, see [the following](https://docs.whatap.io/java/install-agent#addjvmopt).
+
+:::
+
+</TabItem>
+<TabItem value='eksfargate' label='EKS Fargate'>
+
+{@include: _docker-build.mdx}  
+
+{@include: _pod-sidecar.mdx}
+
+1.  Release the Docker image with the WhaTap agent installed.
+
+</TabItem>
+</Tabs>
+
+{@include: _check-install-agent.mdx}

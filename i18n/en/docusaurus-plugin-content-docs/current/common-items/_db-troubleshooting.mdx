@@ -1,0 +1,38 @@
+Check for possible problems upon database agent installation.
+
+## Firewall configuration checking
+
+Unblock your firewall. Monitoring data cannot be sent to the server if the TCP outbound firewall is set for the WhaTap server.
+
+### How to check the firewall
+
+It is normal only when the following connection-related information appears after executing the `telnet` command. (`telnet [Server IP] [Server Port]`)
+
+```bash title='예시'
+$ telnet 52.193.60.176 6600
+Trying 52.193.60.176...
+Connected to 52.193.60.176.
+Escape character is '^]'.
+```
+
+:::note
+The WhaTap collection server data can be found in **_Project Menu_** > **_Management_** > **_Agent Installation_**.
+:::
+
+## Constraints
+
+### Multiple regions impossible to be selected as a single project
+
+-   In the [WhaTap monitoring service](https://services.whatap.io) website, when creating a project, you cannot select multiple regions. When using multiple regions, create separate projects.
+
+-   If servers exist in multiple regions as in the cloud environment, the collection servers must be located in each region to avoid constraints on the performance data collection such as network latency.
+
+-   WhaTap builds collection servers for each region to meet customer requirements.
+
+### Duplicate agent names (ONAME) impossible to be used
+
+WhaTap DBX monitoring uses the agent's IP address and port to identify the agent. If the database server to be monitored in the user environment uses the same IP and port, the WhaTap server cannot identify the server instance.
+
+-   If the server instance is not dynamically expanded, you can bypass it by manually setting a name for database identification by seeing [the following](agent-manage#custom-server-name).
+
+-   If the databases to be monitored use internal addresses or duplicate IPs due to network virtualization, use separate database naming patterns by seeing [the following](agent-manage#custom-server-name).

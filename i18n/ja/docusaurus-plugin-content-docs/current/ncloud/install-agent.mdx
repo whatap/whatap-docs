@@ -1,0 +1,63 @@
+---
+id: install-agent
+title: インストール
+description: Naver Cloudアイテムのインストールについて説明します。
+tags:
+  - インストール
+  - Naver Cloud Monitoring
+  - クラウド
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Naver Cloud Monitoring は、API連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するNaver Cloud Monitoringネームスペースを5分周期で希望するスタットを炊事選択して収集します。 モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリンを開始できます。 
+
+{@include: ../getting-started/_create-project-cloud.mdx}
+
+## モニタリング手順
+
+<!-- 
+1. 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Naver Cloud Monitoring 사용 상태로 생성하세요. 
+-->
+
+1.  Naver Cloud認証情報を入力してください。
+2.  Naver Cloud Monitoringネームスペースおよび収集サイクルを選択してください。
+3.  リージョン、メトリクス、スタットなどを選択してください。
+
+:::note
+インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。 インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://www.ncloud.com/charge/price)で確認してください。
+:::
+
+### 認証情報入力
+
+AccessKeyとSecretをWhaTapに入力します。
+
+![NCloud Monitoring - Authentification](https://img.whatap.io/media/images/whatap_ncloud_auth_dialog.png)
+
+### ネームスペースおよび収集サイクルの選択
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+#### WhaTap収集サイクル
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### ネームスペース
+
+-   Ncloud VAutoScalingGroup Monitoring
+-   Ncloud VCloudMongoDB Monitoring
+-   Ncloud VCloudDBMSSQL Monitoring
+-   Ncloud VCloudDBMySQL Monitoring
+-   Ncloud VCloudDBRedis Monitoring
+-   Ncloud VCloudHadoop Monitoring
+-   Ncloud VCloudKubernetesMonitoring
+-   Ncloud VLBTargetGroup Monitoring
+-   Ncloud VLoadbalancer Monitoring
+-   Ncloud VServer Monitoring
+
+### リージョン、メトリクス、スタット選択
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+![Ncloud Monitoring - ResourceGroup, Metric, Stats](https://img.whatap.io/media/images/ncloud_region_dialog.png)

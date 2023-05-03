@@ -1,0 +1,140 @@
+---
+id: group
+title: Group Management
+description: You can group multiple projects for management.
+tags:
+  - Management
+  - Group
+---
+
+You can group multiple projects for management. A user can own multiple projects. To manage multiple projects, the concept, "Group" has been provided. If there are multiple projects, it is cumbersome to add users or grant permissions for each project. In this case, you can group two projects into a group and manage users by the group.
+
+:::note
+
+-   A project can belong to a group.
+-   A project may not belong to a group.
+    :::
+
+Project users can inherit group users, and the users can monitor all projects in the group. A user who is granted the role only on the project can monitor only the project, regardless of whether the user is in a group or not.
+
+## Adding a group
+
+1.  Select **_+ Group_** on the upper left of the [WhaTap Monitoring Service](https://service.whatap.io).
+
+2.  Enter the group name to create in **_Group Name_**.
+
+3.  Enter the group description in **_Group Description_**. The field is optional.
+
+4.  Select a project to add to the group in **_Add Project_**. You can search a desired project for addition.
+
+5.  After adding the project, select **_Add Group_**.
+
+:::note
+The projects that can be added to the group are the ones with Edit permission or not part of the group.
+:::
+
+## Adding a project into a group
+
+1.  On the upper right of a project entry in the **_Project list_** of Home screen, select ![Configuration icon](/img/ico-setting.svg). 
+
+  ![Project configuration](/img/project-add-group.png)
+
+1.  Select **_Add to Group_**.
+
+2.  Select a group to add a project in.
+
+3.  Select **_Add to Group_**.
+
+## Viewing the project list in the selected group
+
+From Home screen, select one of the **_All Projects_** menu's subgroups. Only the projects that belong to the selected group appear.
+
+![Project Group Selection](/img/project-select-group.png)
+
+To see all the projects again, select **_All Projects_**. To see the projects that are not part of the group, scroll down in All Projects. You can check the list of **_other projects_**.
+
+## Deleting a project from the group
+
+1.  On the upper right of a project entry in the **_Project list_** of Home screen, select ![Configuration icon](/img/ico-setting.svg). 
+
+  ![Deletion from group](/img/remove-project-from-group.png)
+
+1.  Select **_Delete from Group_**.
+
+2.  If the **_Remove project from group_** window appears, click **_OK_**.
+
+## Deleting a group
+
+1.  From Home screen, select one of the **_All Projects_** menu's subgroups.
+
+2.  Select **_Group Management_**.
+
+3.  On the upper right of the **_Group Info_** section, select **_Delete Group_**.
+
+4.  See the details of the **_Delete Group_** message window, and then select **_Delete_**.
+
+:::caution
+
+-   To delete a group, the user list is also deleted. 
+-   In case of the projects in the group, only the group information is deleted. 
+-   The deleted information cannot be restored.
+    :::
+
+## Inviting group member{#add-member}
+
+1.  From Home screen, select one of the **_All Projects_** menu's subgroups.
+
+2.  On the left of the screen, select **_Group Menu_** > **_Group Member_**.
+
+3.  Select **_Invite Member_** on the upper right of the screen.
+
+4.  You can also add members by selecting a sub-project's unit in the **_Group_** section.
+
+5.  In **_User Role_**, set the roles of the user to invite and then select **_Apply_**.
+
+6.  Enter the email address of the user to invite in **_Email_**, and then select **_Add_**. You can add extra users continuously.
+
+7.  After adding all users to invite, select **_Complete_**.
+
+:::note
+If there are invited members to cancel before completion, in **_List of members to invite_**, select ![Delete icon](/img/ico-trash-red.svg).
+:::
+
+## Checking members for each project
+
+![Checking Project Member](/img/group-memer-by-project.png)
+
+From Home screen, select one of the **_All Projects_** menu's subgroups. In the left menu of the screen, select **_Group Menu_** > **_Group Member_**. If you select a project under the group, you can check the members in the project.
+
+## Modifying a group member role
+
+1.  From Home screen, select one of the **_All Projects_** menu's subgroups.
+
+2.  On the left of the screen, select **_Group Menu_** > **_Group Member_**.
+
+3.  In the **_Group Member_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the member to edit. 
+
+4.  If the **_Edit Member Role_** window appears, set the values for **_Member Role_** and **_User Role per project of a group_**.
+
+    -   **_Member Role_**: You can set the roles for the group and the projects in the group.
+    -   **_User Role per project of a group_**: Permissions of the selected members can be set for each project in the group.
+
+5.  After configuration, select **_Apply_**.
+
+:::note
+For more information about the member roles, see [the following](../project/project-structure#project-auth).
+:::
+
+## Deleting group members
+
+1.  From Home screen, select one of the **_All Projects_** menu's subgroups.
+
+2.  On the left of the screen, select **_Group Menu_** > **_Group Member_**.
+
+3.  In the **_Group Member_** list, select ![Delete icon](/img/ico-trash-red.svg) on the right of the member to delete.
+
+4.  If the message window appears, select **_Delete_**.
+
+:::note
+To delete members from subgroups, click any checkbox in the message window and then select **_Delete_**.
+:::

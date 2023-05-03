@@ -1,0 +1,33 @@
+---
+id: amazon-ecs-release-notes
+title: Amazon ECS Agent release notes
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+## Amazon ECS Agent 1.2.4
+
+Release date: 2023-03-02
+
+<Status>Fixed</Status> 한번에 10개의 Amazon ECS Service를 조회해야 하는 API 스펙 미준수로 성능 측정 오류 발생, 10개단위로 반복 조회하도록 코드 수정
+
+## Amazon ECS Agent 1.2.1
+
+Release date: 2022-12-11
+
+### Fixing the problem where the task goes down when the collection server is disconnected due to code error
+
+Fixed the problem where the task goes down when the collection server is disconnected due to WhaTap agent code error as follows: 
+
+-   Added code to safely rerun the agent in the task execution script if the agent goes down.
+-   Fixed the reconnection attempt code error (asynchronous routine) when disconnecting from the collection server.
+
+## Amazon ECS Agent 1.2.0
+
+Release date: 2022-12-06
+
+### Adding the support for Amazon ECS Graviton Instance Type
+
+Added support by compiling the executable separately to support the Amazon ECS Graviton Graviton Instance Type.

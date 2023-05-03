@@ -1,0 +1,109 @@
+---
+id: multi-instance-monitoring
+title: Multiple Instance Monitoring
+description: You can check and compare the metrics of multiple instances on a screen.
+tags:
+  - MySQL RDS
+  - Instance
+  - Dashboard
+  - Database Monitoring
+  - Multiple Instance Monitoring
+---
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+Home > Select Project > **_Dashboard_** > **_Multiple Instance Monitoring_**
+
+In **_[Instance Monitoring](instance-monitoring)_**, to monitor only one instance, **_Multiple Instance Monitoring_** allows you to check and compare metrics and active sessions of multiple instances on one screen. You can quickly see the status of instances through grouped values of instance metrics such as running agent count, total number of active sessions, and average buffer hit rate. Graph charts make it easy to see how instances' metric values are trending and which instances have higher metric values. It provides information on the longest active sessions.
+
+{@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
+
+## 기본 화면 안내
+
+<ProdImg img='db-multi-instance.png' desc='멀티 인스턴스 모니터링' />
+
+### ![](/img/number-01.png) Instance
+
+It is a list of instances to which the agent was connected through installation. The colors of instances match the ones on the graph chart in the middle of the screen. If the color changes to gray when an instance is selected, it is in the deselected state. The data of the instances that have been deselected from each metric and graph chart, are excluded.
+
+### ![](/img/number-02.png) Checking the instance status{#instance-status}
+
+-   **_Instance_**
+
+    You can check the numbers of active/inactive instances.
+
+-   **_Active Session_**
+
+    It is the same as the `Threads_running` variable. It is the number of active threads that are not sleeping.
+
+-   **_Connection Usage_**
+
+    It is the percentage of open connections (connection threads). A high percentage indicates that there are many concurrent connections to the MySQL server, which can lead to the `Too many connections` error. The formula for obtaining the connection rate is as follows.
+
+    ```txt
+
+    Current connections(%) = (threads_connected / max_connections) x 100
+
+    ```
+
+    :::note
+
+    The optimal percentage must be 80% or less. Try increasing `max_connections` or using SHOW FULL PROCESSLIST to test the connection. If you encounter a `Too many connections` error, normal users cannot access the MySQL database server until some connections are released. Increasing `max_connections` may increase the MySQL's memory usage.
+
+    :::
+
+-   **_Buffer Hit Rate_**
+
+    It is the percentage of how often the page is searched from memory rather than disk. If the **_Buffer Hit Rate_** is low when starting MySQL for the first time, allow some time for the buffer pool to warm up. 100% is an optimal value, which means the frequently accessed data is entirely in memory.
+
+    :::note
+
+    Increasing `innodb_buffer_pool_size` helps MySQL have more space to work on. However, make sure you have enough memory resources in advance. It is also useful to eliminate redundant indexes.
+
+    :::
+
+-   **_SQL Executed_**
+
+    It is the sum of SQL executions per second for the selected instances. It is based on the value of the `questions` (total number of query requests) metric collected every 5 seconds.
+
+-   **_Lock waiting_**
+
+    Use the value of the `Innodb_row_lock_current_waits` variable. It is the number of waits to acquire a row lock.
+
+### ![](/img/number-03.png) Instance metric status
+
+Important metrics for all instances can be seen through the following four classifications. The colors of each graph match those of the instance in ![number1](/img/number-01.png). You can check the trend of metric values over time through a graph chart.
+
+-   **_Connection_**
+
+    It queries the number of active threads that are not sleeping (**_Threads_running_**) and the number of connected threads (**_Threads_connected_**) in real time. This is related to **_[Connection Usage](#instance-status)_** in ![number2](/img/number-02.png). If there are many connections to the DB server, find the related tuning and then take possible actions.
+
+-   **_Throughput_**
+
+    You can monitor the instance performance in terms of the processed data size. Check which instances process the bulk of work. For more information about metrics, see [the following](metrics-data-list).
+
+-   **_Performance_**
+
+    It monitors the related metrics for server status. If the values of the metrics included in the section increase, it may degrade the performance. For more information about metrics, see [the following](metrics-data-list).
+
+-   **_Disk I/O_**
+
+    Disk utilization allows you to monitor the impact on the database processing performance. If the values of metrics in the section are high, the disks are being used excessively. For more information about metrics, see [the following](metrics-data-list).
+
+### ![](/img/number-04.png) Active Sessions/Lock Tree
+
+You can view the active sessions and lock trees in real time.
+
+-   **_Acitive Sessions_** 
+
+    You can view active sessions and queries. If you select an item in the rightmost **_query_** column in the table, the **_Show SQL_** window appears. You can see the full text and plan information for the selected query. For more information about the columns in the table, see the following.
+
+-   **_Lock Tree_**
+
+    You can see the lock session information, and holder and waiter information in real time. For more information about the table columns, see the following.
+
+{@include: ../common-items/_db-data-list-filter.mdx}
+
+{@include: ../common-items/_db-data-edit-column.mdx}
+
+{@include: ../common-items/_db_ats-lock-column.mdx}  

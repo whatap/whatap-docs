@@ -1,0 +1,18 @@
+---
+id: introduction
+title: Golang Monitoring
+description: You can monitor the application server that runs in the Golang environment.
+tags:
+  - Golang
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+
+WhaTap Golang Application Monitoring provides the monitoring service for the Golang applications.
+
+-   It supports the web framework. It collects the data such as web transaction URL, response time, TPS information, error message, etc.
+-   It continuously collects data from the Go Runtime package. It also collects data including memory, goroutine, and GC related data.
+-   When multiple API/RPC services are called in the MSA environment, the call relationships are collected through link tracing.
+
+{@include: ../common-items/_apm-common-intro.mdx}

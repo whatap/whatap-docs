@@ -1,0 +1,43 @@
+### app_proc_counter
+
+---
+
+It is the metric of the application process.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name     | Description                  | Remarks       |
+| ------------ | ---------------------------- | ------------- |
+| container    | Container name               | Unique value  |
+| containerKey | Container's key value        | Unique value  |
+| host_ip      | Host IP                      | Unique value  |
+| okindName    | Name of the application type | -             |
+| oname        | Application name             | Unique value  |
+| onodeName    | Name of the application node | -             |
+| pid          | Application PID              | -             |
+| type         | Application type             | Language name |
+
+#### Fields
+
+| Field name           | Unit            | Description                                       | Remarks |
+| -------------------- | --------------- | ------------------------------------------------- | ------- |
+| cputime              | millisecond     | Transaction CPU time                              | -       |
+| db_num_active        | Positive number | DB Connection Pool Active 수                       | -       |
+| db_num_idle          | Positive number | DB connection pool idle counter                   | -       |
+| gc_count             | Count           | GC occurrence count                               | -       |
+| gc_oldgen_count      | Count           | Old Generation GC Count                           | -       |
+| gc_time              | millisecond     | GC execution time                                 | -       |
+| heap_max             | Byte            | Maximum heap amout                                | -       |
+| heap_perm            | Byte            | Perm usage                                        | -       |
+| heap_tot             | Byte            | Total heap amount                                 | -       |
+| heap_use             | Byte            | Heap usage                                        | -       |
+| pending_finalization | Positive number | Number of objects waiting to fianlize during GC   | -       |
+| proc_fd              | Positive number | Process FD usage count                            | -       |
+| proc_fd_max          | Positive number | Maximum process FD count                          | -       |
+| thread_count         | Positive number | Number of threads running JVM                     | -       |
+| thread_daemon        | Positive number | Number of JVM daemon threads                      | -       |
+| thread_peak_count    | Positive number | Maximum number of JVM threads                     | -       |
+| thread_total_started | Positive number | Total number of threads started after running JVM | -       |

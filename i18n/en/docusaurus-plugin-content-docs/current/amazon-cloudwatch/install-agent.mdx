@@ -1,0 +1,217 @@
+---
+id: install-agent
+title: Installation
+description: It guides you to the installation of Amazon CloudWatch items.
+tags:
+  - Installation
+  - Amazon CloudWatch
+  - Cloud
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Amazon CloudWatch monitoring collects metrics periodically through API integration. It collects the target stats every 5 minutes from the CloudWatch namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently with role-based authentication. 
+
+{@include: ../getting-started/_create-project-cloud.mdx}
+
+## Preliminary inspection
+
+Check the required permissions and recommended policies.
+
+| Resouce           | Role |
+| ----------------- | ---- |
+| CloudWatch        | Read |
+| EC2               | Read |
+| ElasticCache      | Read |
+| CloudFront        | Read |
+| Dynammodb         | Read |
+| ElasticBeansTalk  | Read |
+| AutoScaling       | Read |
+| EFS               | Read |
+| RDS               | Read |
+
+-   **Recommended policy**
+    -   arn:aws:iam::aws:policy/ReadOnlyAccess
+
+## Monitoring procedure
+
+<!-- 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Amazon CloudWatch 사용 상태로 생성하세요. -->
+
+1.  Enter the Amazon authentication data.
+2.  Select values for Cloudwatch namespace and collection cycle.
+3.  Select values for region, metric, and stat.
+
+:::note
+After installation, extra charge may be incurred in the cloud depending on the usage, separate from the WhaTap fee. Before installation, check the pricing policy of the active cloud service in [the following](https://aws.amazon.com/en/cloudwatch/pricing/).
+:::
+
+<!-- 
+
+1. CloudWatch 네임스페이스 및 ***수집 주기***를 선택하세요.
+1. ***리전***, ***메트릭스***, 스탯(***Average***, ***Maximum***, ***Medium***, ***Sum***) 등을 선택하세요.
+
+## 인증 정보 입력
+
+Role ARN을 이용한 설치 방법을 지원합니다. 
+
+Amazon CloudWatch 인증 방법은 다음 두 가지 방법 중 하나를 선택할 수 있습니다.
+
+* Accesskey
+* Role ARN
+
+-->
+
+<!-- 
+
+### Access / Secret 정보 입력
+
+![Amazon Cloudwatch](https://img.whatap.io/media/images/amazon_cloudwatch_auth_dialog.png)
+
+와탭 모니터링 용 Identity and Access Management(IAM) 사용자를 생성, 선정 하고 필요한 권한을 추가할 수 있습니다. 액세스 키를 생성하고 Access Key ID와 Secret을 와탭에 입력하세요. 
+
+-->
+
+### Entry of authentication data
+
+Installation method using Role ARN is supported. The WhaTap AWS account (**911937781722**) collects Cloudwatch data by directly assuming the user role. Role assuming is safe and convenient because it does not require access key issuance.
+
+:::note
+Configuration using the role is recommended. The access key is available only to existing access key users.
+:::
+
+#### Creating a role
+
+![Amazon Cloudwatch - role](https://img.whatap.io/media/images/amazon_cloudwatch_auth_role_dialog.png)
+
+1.  Log in to the AWS management console and open the IAM console.
+2.  In the console navigation pane, select roles and then select Create Role.
+3.  In Select type of trusted entity, select Another AWS account.
+4.  Enter the WhaTap account ID, **911937781722** in Account ID. Select and apply ReadOnlyAccess.
+5.  Enter the role name and description and then click Create Role to switch to the Summary screen.
+6.  In Maximum session duration, click Edit to change to 12 hours and then save it. 
+7.  Copy the **Role ARN** item.
+8.  Return to the WhaTap **_Management_** > **_Agent Installation_** page. Paste the copied **Role ARN** into the **_Role_** **_ARN_** window, and then click **_OK_**.
+
+### Selecting the namespace and collection cycle
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+<!-- ![Amazon Cloudwatch - Namespace](https://img.whatap.io/media/images/amazon_cloudwatch_setup_dialog_1st.png) -->
+
+#### Whatap Data Interval
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### Namespace
+
+-   AWS ACMPrivateCA
+-   AWS AmazonMQ
+-   AWS ApplicationELB Monitoring
+-   AWS AppSync
+-   AWS Athena
+-   AWS AutoScaling
+-   AWS Elastic Beanstalk Health
+-   AWS Billing
+-   AWS Cassandra
+-   AWS Chatbot
+-   AWS Cloud Front
+-   AWS CloudHSM
+-   AWS CloudSearch
+-   AWS CodeBuild
+-   AWS CodeGuruProfiler
+-   AWS Cognito
+-   AWS Connect
+-   AWS ContainerInsights Monitoring
+-   AWS DataSync
+-   AWS DAX
+-   AWS DDoSProtection
+-   AWS DMS
+-   AWS DocDB
+-   AWS DX
+-   AWS Dynamo DB
+-   AWS Ebs Usage
+-   AWS EC2 Monitoring
+-   AWS EC2 Alert Config
+-   AWS EC2Spot
+-   AWS ECS
+-   AWS EFS
+-   AWS ElastiCache Usage
+-   AWS ElasticGPUs
+-   AWS ElasticInference
+-   AWS ElasticMapReduce
+-   AWS ElasticTranscoder
+-   AWS Classic ELB Monitoring
+-   AWS ES
+-   AWS Events
+-   AWS Firehose
+-   AWS FSx
+-   AWS GameLift
+-   AWS GatewayELB
+-   AWS Glue
+-   AWS GroundStation
+-   AWS Health
+-   AWS Inspector
+-   AWS IoT
+-   AWS IoTAnalytics
+-   AWS IoTSiteWise
+-   AWS IVS
+-   AWS Kafka
+-   AWS Kinesis
+-   AWS KinesisAnalytics
+-   AWS KinesisVideo
+-   AWS KMS
+-   AWS Lambda
+-   AWS Lex
+-   AWS Location
+-   AWS Logs
+-   AWS LookoutMetrics
+-   AWS MediaConnect
+-   AWS MediaConvert
+-   AWS MediaPackage
+-   AWS MediaStore
+-   AWS MediaTailor
+-   AWS ML
+-   AWS NATGateway
+-   AWS Neptune
+-   AWS NetworkELB
+-   AWS NetworkFirewall
+-   AWS OpsWorks
+-   AWS Polly
+-   AWS QLDB
+-   AWS RDS Monitoring
+-   AWS Redshift
+-   AWS Robomaker
+-   AWS Route53
+-   AWS S3
+-   AWS SageMaker
+-   AWS SDKMetrics
+-   AWS ServiceCatalog
+-   AWS SES
+-   AWS SNS
+-   AWS SQS
+-   AWS SQS Message
+-   AWS SSM-RunCommand
+-   AWS States
+-   AWS StorageGateway
+-   AWS SWF
+-   AWS Textract
+-   AWS ThingsGraph
+-   AWS Timestream
+-   AWS Transfer
+-   AWS TransitGateway
+-   AWS Translate
+-   AWS TrustedAdvisor
+-   AWS API Usage
+-   AWS VPN Monitoring
+-   AWS WAF
+-   AWS WorkMail
+-   AWS WorkSpaces
+
+### Selecting the region, metric, and stat
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+![Amazon Cloudwatch - Region,Metric,Stats](https://img.whatap.io/media/images/amazon_cloudwatch_setup_dialog_2nd.png)
+
+<!-- 이미지 최신화 필요 230127  -->

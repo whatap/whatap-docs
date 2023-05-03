@@ -1,0 +1,66 @@
+{@include: ../common-items/_log-role-view.mdx}
+
+Home > Select Project > {@include: _exp-path.mdx}
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select {@include: _exp-path.mdx} under Project Menu. 
+
+In **_Log Trend_**, you can check the occurrence pattern of a specific error type through the number of logs classified by type, and check detailed log data by hour. A highlight feature allows you to quickly identify the desired logs. You can search the trend of logs collected by category. {@include: ../common-items/_log-ui-main-term.mdx}
+
+![Log Trend](/img/log-exp.png) 
+
+<!-- 조회된 로그 개수 표시 픽스 시 이미지 변경 필요 0410 -->
+
+## Request Data
+
+-   If the scroll reaches the bottom, the next data is retrieved.
+-   In ![number-s](/img/number-01.png), specify the **_time_** and collection unit, **_category_**, of the log data to be searched.
+-   If the **_category_** is changed, the logs that correspond to the selected category are searched. You can see the logs in ![number-s](/img/number-02.png) **_bar chart_** and ![number-s](/img/number-03.png) **_table_**.
+-   If you click a bar in ![number-s](/img/number-02.png) **_bar chart_**, the logs are viewed that correspond to the time range of the bar. 
+-   ![number-s](/img/number-03.png) 조회한 총 로그 개수를 확인할 수 있습니다. 
+-   ![number-s](/img/number-04.png) In **_Side_**, you can see the logs filtered by tags. Up to two search keys can be selected, and multiple search values can be selected.
+
+## Checking the log content
+
+{@include: ../common-items/_log-ui-log-content.mdx} 
+
+-   ![number-s](/img/number-03.png) For each row (log) of the **_table_**, the [Icon](/img/ic-caret-right.svg)**_More_** button exists. If you select the button, you can check the entire content of the log like ![number-s](/img/number-05.png).
+
+## Viewing the logs with a chart
+
+-   You can click a desired time in ![number-s](/img/number-02.png) **_bar chart_** to see the log of the time.
+-   Under ![number-s](/img/number-02.png), use **_Time Selector Option_** on the left of ![number-s](/img/number-03.png) to search more granular logs in the selected time zone.
+    -   1min: interval (spacing between bars on the chart)
+    -   Time Selector Option: Time zone that divides the selected time range into 6 segments
+        ![](https://img.whatap.io/media/images/logexplorer_007_select_seconds.png)
+
+## Highlight
+
+{@include: ../common-items/_log-highlight.mdx}
+
+## Setting the table
+
+-   Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx} 
+
+<!-- ***테이블 설정*** 메뉴는 ***라이브 테일***, ***로그 검색***, ***로그 트렌드***에서 사용할 수 있습니다. 
+
+### 컬럼 추가 
+
+### 테이블 컨텐츠 설정 
+
+하이라이트
+![](https://img.whatap.io/media/images/logexplorer_009_highlight.png)
+
+-->
+
+<!-- 홀딩 후 기능으로 화면 재구조화
+## ![](/img/number-01.png) 시간 및 카테고리
+
+탐색할 로그 데이터의 특정 시간대와 수집 단위를 지정합니다. 스크롤이 바닥에 닿으면 데이터를 조회합니다.
+
+## ![](/img/number-02.png) 바 차트 조회
+
+## ![](/img/number-03.png) 테이블 조회
+
+## ![](/img/number-04.png) 검색 키(Search Key) 내비게이션
+
+-->

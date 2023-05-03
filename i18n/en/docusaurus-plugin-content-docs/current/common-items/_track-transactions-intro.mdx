@@ -1,0 +1,47 @@
+## What is Transaction?
+
+Transaction means the logical unit of work (LUW) on the server side for processing a user browser request. The process for an individual web service (URL) request is a transaction. A transaction in a web application is the process from receiving an HTTP request for a web service (URL) to returning a response.
+
+The performance of the application can be summarized as the performance of these transactions. Transaction performance includes information such as transaction start-to-end time, response time, resource usage, or attributes of the transaction caller.
+
+Basically, the transaction performance can be analyzed through the response distribution and statistics.
+
+## Transaction name
+
+The transaction name is URL. However, the Get parameter (query string) is excluded.
+
+**Browser Request**
+
+```bash
+http://www.whatap.io/hr/apply.do?name='kim'
+```
+
+**Transaction Name**
+
+```bash
+/hr/apply.do
+```
+
+:::note
+In WhaTap, the **_web service name_** and **_transaction name_** are used interchangeably. It can be viewed as a module for handling service-specific URLs and requests to them. Because it means a process of a transaction request, the names of both can be called as URL.
+:::
+
+## Normalizing the transaction name
+
+As the MSA-based systems evolve, instead of URL + ? argument parameter type, it is better to use the methods to put parameters in the URL path.
+
+```bash
+http://www.whatap.io/hr/kim/apply.do
+```
+
+If the path parameter is used as the transaction name as it is, it is difficult to analyze the performance from a statistical point of view. You need to normalize this. WhaTap provides options and functions for normalization.
+
+```bash title='whtap.conf'
+trace_normalize_urls=/hr/{name}/apply.do
+```
+
+If set as the above, the transaction name is replaced for collection: _/hr/kim/apply.do_ → _/hello/:name/apply.do_. To leave the target URL setting as it is and turn off only the function, specify the option as follows. he default value is `true`.
+
+```bash title='whatap.conf'
+trace_normalize_enabled=false
+```

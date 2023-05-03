@@ -1,0 +1,580 @@
+---
+id: glossary
+title: Glossary
+description: A glossary of terms is provided for easier use of the monitoring service.
+---
+
+The glossary is updated on a regular basis.
+
+## Basic terms
+
+**Monitoring**  
+
+Monitoring means monitoring or observing something. In the field of IT services, services are provided with limited costs and resources. Therefore, it is very important to prepare and overcome unexpected situations and failures through monitoring.
+
+:::note
+
+For more information, see the following document.
+
+-   [Story of monitoring solution development by WhaTap CTO](https://www.whatap.io/ko/blog/59/index.html)
+-   [IT service monitoring A TO Z](https://www.whatap.io/ko/blog/70/index.html)
+-   [Monitoring for beginners](https://www.whatap.io/ko/blog/35/index.html)
+-   [Why we service monitoring?](https://www.whatap.io/ko/blog/8/index.html)
+-   [5 reasons why startups should monitor their servers](https://www.whatap.io/ko/blog/5/index.html)
+
+:::
+
+---
+
+**SaaS** (Software as a Service)
+
+SaaS provides and manages software and data on behalf of customers. SaaS does not need to download and install applications on individual computers. Customers can focus on their own businesses by streamlining maintenance activities and resources.  
+
+With SaaS, the service provider manages all potential technical issues such as data, middlewares, servers, and storage on behalf of customers.
+
+---
+
+**Application** (Application Performance Management)
+
+It means the `management of application performance`. It is usually called "APM service." 
+
+-   A indicates Application.
+-   P indicates Performance or application performance. The application performance is measured through the response speed of the web service. To get the response speed of the web service, the APM service traces and analyzes transactions.
+-   M indicates Management or Monitoring.
+
+:::note
+
+For more information, see the following document.
+
+-   [What is Application Monitoring?](https://brunch.co.kr/@leedongins/147)
+-   [Why top startups use APM?](https://www.whatap.io/ko/blog/16/index.html)
+-   [Detailed explanation of APM](https://www.whatap.io/ko/blog/16/index.html)
+
+:::
+
+---
+
+**Agent**
+
+In WhaTap, an agent is an application that forwards the data collected from monitoring targets to the WhaTap collection server. Agents are installed on the web server.
+
+Agents correspond one to one with the monitored target. If the monitoring target is application, the agent runs together with the application. If the monitoring target is server, the agents are installed and executed on the server.
+
+:::note
+
+For more information about agent installation, see the following.
+
+-   [Java agent installation](../java/install-agent)
+-   [Linux agent installation](../server/install-agent)
+-   [MySQL agent installation](../mysql/install-agent)
+
+:::
+
+---
+
+**Throughput**  
+
+In terms of performance, the throughput means how many requests can be completed. This means how many transactions the system can process.  
+
+Throughput is measured in seconds or minutes. Throughput is different from the request volume. Throughput is the amount of finalized requests. If the number of requests per second (RPS) is 100 but the throughput per second (TPS) is 10, 90 requests are still unprocessed.  
+
+:::note
+
+For more information, see the following document.
+
+-   [Performance test requisites](https://brunch.co.kr/@leedongins/130)
+-   [Performance - Throughput](https://brunch.co.kr/@leedongins/129)
+
+:::
+
+---
+
+**Cloud Computing**  
+
+Cloud Computing means the provision of virtualized IT resources over the Internet as a service. In addition, the targets that are virtualized and provided as services in a cloud computing environment are servers, platforms, and software. Users only pay for what they use.  
+
+There are three types of cloud services.
+
+-   Infrastructure as a Service (IaaS)
+-   Platform as a Service (PaaS)
+-   Software as a Service (SaaS)
+
+:::note
+
+For more information about the cloud services, see [the following](https://www.whatap.io/ko/blog/9/index.html).
+
+:::
+
+---
+
+**Tuning**  
+
+It means improving the performance of the system. There are two types of tuning: throughput tuning and stability tuning.  
+
+-   Throughput tuning is used to increase the maximum throughput. 
+-   Stability tuning is used to keep the system from crashing even under heavy loads.
+
+---
+
+**Average response time**  
+
+It is the time needed for the application server to return the request result. The WhaTap's service calculates the average response time for transactions every 5 seconds. The average response time is meaningful as a tuning metric.
+
+:::note
+
+For more information, see [the following](https://www.whatap.io/ko/blog/15/index.html).
+
+:::
+
+---
+
+## Dashboard
+
+**Dashboard**  
+
+You can use the dashboard to see the status of the entire system in real time. The dashboard displays key metrics such as status of active transactions, distribution of response times for terminated transactions, number of users, CPU, and memory trend.
+
+:::note
+
+For more information, see the following document.
+
+-   [Application Dashboard](../java/dashboard)
+-   [Server Resource Board](../server/resourceboard)
+-   [Server Compound Eye](../server/compoundeye)
+
+:::
+
+---
+
+**Concurrent users** (Realtime User)  
+
+It displays the number of real-time browser users. Every 5 seconds, users who have generated transactions within the last 5 minutes are counted and displayed.  
+
+Users are counted based on their browser's IP. In the agent settings, the IP or cookies can be used to distinguish users.
+
+---
+
+**DISK I/O**  
+
+The disk I/O (%) metric displays the disk utilization. If the disk I/O (%) exceeds 80%, the system performance can be affected.  
+
+The default alert value is 90%. If the disk I/O (%) is 100%, it means that the disk is working non-stop. 
+
+:::note
+
+For more information, see [the following](https://www.whatap.io/ko/blog/41/index.html).
+
+:::
+
+---
+
+**DISK IOPS** (Input/Output Operations Per Second)  
+
+It is a unit of measure representing inputs and outputs per second. It is measured in KiB.  
+
+The underlying drive technology determines the maximum amount of data in which the volume is calculated by a single I/O. HDDs typically range from 55 to 180 IOPS. SSDs have 3,000 to 40,000 IOPS.
+
+---
+
+**Resource Board**  
+
+You can monitor all servers registered in a single project on the resource board. It provides the CPU resource map to check the summary of all servers in the project and changes in real-time resource usage.  
+
+It displays the total resource size, CPU, memory, and top 5 utilization processes. You can immediately recognize and respond to failures through the resource board.
+
+:::note
+
+For more information, see [the following](../server/resourceboard). 
+
+:::
+
+---
+
+**Resource Equalizer**  
+
+It displays a list of the top 5 servers in real time for CPU, memory, disk I/O, and disk IOPS.
+
+---
+
+**MSA Analysis** (Microservices Architecture)  
+
+It displays the call relationship between services as a percentage based on the URL.
+
+---
+
+**Metrics Chart**  
+
+The collected data is displayed on the time-series chart. After selecting a time zone, select a desired metric. Then its result appears.
+
+---
+
+**CPU Resource Map**  
+
+This distribution chart displays the CPU usage of all servers. It displays data for 10 minutes and is updated every 10 seconds.
+
+---
+
+**Apdex** (Application Performance Index)  
+
+Apdex stands for Application Performance Index. Apdex is based on the response time and is quantified as a percentage for total requests satisfied and accepted. Apdex can be used as a metric for user satisfaction and have a value between 0 and 1.
+
+:::note
+
+For more information, see the following document.
+
+-   [Performance Counter](../java/metrics-performance-counter)
+-   [Application Metrics](https://brunch.co.kr/@leedongins/149)
+
+:::
+
+---
+
+**Perf. Trend**  
+
+You can see information that affected the performance in the specified time. 
+You can also see graphs for all and individual application servers. You can see which application servers have significant impacts on the performance.
+
+The following data can be viewed in the performance trend:
+
+-   Real-time User
+-   Transaction/Sec (Sum)
+-   Response Time
+-   CPU
+-   Heap Memory
+-   Active TX
+-   Top 10 transactions
+-   HTTP Call Top 10
+-   SQL Top 10
+
+---
+
+**Application Topology**  
+
+It represents the relationship of all applications included in the project scope.
+
+:::note
+
+For more information, see [the following](../java/topology).
+
+:::
+
+---
+
+**Active Status**  
+
+It displays the numbers of active transactions for each status.
+
+-   METHOD: Method running
+-   SQL: SQL running
+-   HTTPC: External API called
+-   DBC: A transaction is attempting to get a new connection from the connection pool
+-   SOCKET: TCP socket is being connected to outside
+
+:::note
+
+For more information, see [the following](../java/dashboard#active-status).
+
+:::
+
+---
+
+**Compound Eye**  
+
+Each server where the WhaTap agent has been installed is expressed as an eye. 
+It brings the servers together in a place.
+
+It provides 5 different data.
+
+-   CPU Usage
+-   Memory Usage
+-   Disk Usage
+-   Network Rx (received amount)
+-   Network Tx (sent amount)
+
+:::note
+
+For more information, see the following document.
+
+-   [Compound Eye](../server/compoundeye)
+-   [System status monitoring by server at a glance](https://www.whatap.io/ko/blog/65/index.html)
+
+:::
+
+---
+
+**CUBE**  
+
+We call the performance statistics generated every 5 minutes as Cube. Cube analysis uses each 5-minute performance data stored in cubes.
+
+:::note
+
+For more information, see the following document. 
+
+-   [Cube](../java/cube)
+-   [Cube data repository](https://brunch.co.kr/@leedongins/124)
+
+:::
+
+---
+
+**Transaction Map**
+
+It is the distribution of response times for individual terminated transactions. Same as the hitmap, you can find and analyze problems based on the distribution patterns.  
+
+The hitmap displays transactions grouped by the 5-minute timeframe, whereas the transaction map shows transactions individually.
+
+---
+
+**Flex Board**  
+
+This dashboard allows you to customize the method. Data of the WhaTap projects such as applications, servers, databases, and containers, can be freely arranged on the screen.
+
+:::note
+
+For more information, see [the following](../java/flex-board).
+
+:::
+
+---
+
+**HITMAP**   
+
+It is the response time's distribution chart. You can see the distribution of response times over a specific period.  
+
+Slow transactions can be easily found based on the location. You can also quickly find errors through the color. The X-axis indicates the end time of the transaction, and the Y-axis indicates the response time of the transaction. If you drag a specific area on the hitmap, it goes to the screen that displays a list of transactions.  
+
+:::note
+
+For more information, see [the following](../java/trs-view#hitmap).
+
+:::
+
+---
+
+**Heap Memory**  
+
+JVM (Java Virtual Machine) allocates the data storage in memory to run programs.  
+
+Memory space is broadly classified into three areas. The areas are Static, Stack, and Heap. Key data such as objects (instances) and arrays is stored in the heap memory area.
+
+:::note
+
+For more information, see the following document. 
+
+-   [Dashboard widget heap memory](../java/dashboard#heap-memory)
+-   [Metrics to pay attention while monitoring](https://www.whatap.io/ko/blog/94/index.html)
+-   [Heap Memory](https://brunch.co.kr/@leedongins/153)
+
+:::
+
+---
+
+## Log
+
+**Log**  
+
+Logs are stored in files that record events and messages that occur during application execution. 
+
+It is required to look at the log files to understand application activities and root causes of issues.
+
+---
+
+**Log Monitoring**  
+
+Through WhaTap's log monitoring, you can see logs in real time.\
+Or you can selectively see only the desired logs by applying a specific time, category, tag, or filter.
+
+:::note
+
+For more information, see [the following](../log/introduction). 
+
+:::
+
+---
+
+## Server
+
+**Repository Server**  
+
+This server collects monitoring data when creating a project. When using SaaS services, the WhaTap's collection server is used, and there is no need to build a separate collection server.
+
+---
+
+**Redis server**  
+
+It is an in-memory data repository. WhaTap uses it as a session repository that holds HTTP sessions.
+
+---
+
+## Stack
+
+**Thread**  
+
+It is a unit of execution within a process. Every process has one or more threads to perform tasks.  
+
+A process with multiple threads is called "multi-thread process."\
+Each thread has its own stacks and resisters.
+
+:::note
+
+For more information, see [the following](https://brunch.co.kr/@leedongins/114).
+
+:::
+
+---
+
+**Top Stack**  
+
+Top stack collects stack information in transactions and provides the usage analysis of active methods by the statistics.  
+
+At the top of the stack, use the usage statistics to check which method has the most impact on the service. If you know how often the method is called, you can analyze the reason why there is a load on the CPU or memory.
+
+:::note
+
+For more information, see [the following](../java/analysis-apm#top-stack).
+
+:::
+
+---
+
+**Unique Stack**  
+
+It is the statistical information collected when the same set of methods has been executed. Using the Unique Stack, you can get insight into which particular type of stack has been used frequently.  
+
+If methods have been repeatedly exposed in Unique Stack, they are frequently called or require long time to complete.
+
+:::note
+
+For more information, see [the following](../java/analysis-apm#unique-stack).
+
+:::
+
+---
+
+**Active Stack**  
+
+Active Stack collects data in active transactions. Stack information is collected every 10 seconds. Collected data can be checked in statistical data.  
+
+Statistical information can be identified through the rates for both long-term methods and short-term but frequently executed methods. You can check which part has been delayed at the method level while the transactions are active.
+
+:::note
+
+For more information, see [the following](../java/analysis-apm#active-stack).
+
+:::
+
+---
+
+## Notification
+
+**Notification** (Alarm)  
+
+When a problem occurs in the monitoring project, users are notified in real time through various channels.  
+
+The notification service provides pre-defined rules tailored to the characteristics of the IT systems to monitor. If necessary, you can set specific conditions.
+
+:::note
+
+-   [Notification settings](../java/apm-set-notice)
+-   [Using the WhaTap notification service fully](https://www.whatap.io/ko/blog/89/index.html)
+-   [Reorganizing the WhaTap notification settings and statistics UIs](https://www.whatap.io/ko/blog/64/index.html)
+
+:::
+
+---
+
+## Transactions
+
+**Transaction**  
+
+In Application Monitoring, a transaction means the process from a single request to the returning of result by the application processes.
+
+---
+
+**TPS** (Transactions Per Second)  
+
+It means the number of transactions processed per second. It is the basic criterion among service performance metrics. WhaTap displays the entire project TPS in real time.
+
+:::note
+
+For more information, see [the following](https://www.whatap.io/ko/blog/14/index.html).
+
+:::
+
+---
+
+**Transaction Trace**  
+
+It indicates a series of processes while executing a single transaction.
+
+:::note
+
+For more information, see [the following](https://www.whatap.io/ko/blog/71/index.html).
+
+:::
+
+---
+
+**Active Transaction**  
+
+It means the transaction in progress.
+
+:::note
+
+For more information, see the following document.
+
+-   [Active Transaction](../java/active-transactions)
+-   [What is Active Transaction](https://brunch.co.kr/@leedongins/152)
+-   [Active transactions that can detect failures quickly](https://brunch.co.kr/@leedongins/31)
+
+:::
+
+---
+
+**Multi-transaction**  
+
+This function allows you to identify where a problem has occurred and needs improvement, if it is required to trace the call relationship of multiple applications such as MSA.
+
+:::note
+
+For more information, see the following document.
+
+-   [Adding multi-transaction menu](https://www.whatap.io/ko/blog/85/index.html)
+-   [Reorganizing multi-transaction diagram](https://www.whatap.io/ko/blog/72/index.html)
+
+:::
+
+---
+
+**Caller and Callee**
+
+-   **Caller**: Transaction that called a service.
+-   **Callee**: Transaction in which a service has been invoked.
+
+---
+
+## ETC
+
+**Okind**  
+
+It is used to distinguish the agent type for the purpose. For example, the following means that the agent is for mobile_ui.
+
+```bash
+-Dwhatap.okind=mobile_ui
+```
+
+---
+
+**CPU Steal Time**  
+
+CPU Steal Time is a percentage of time when the virtual CPU waits for the actual CPU while the hypervisor is servicing another virtual processor.  
+
+Virtual machines (VMs) running in a virtual environment share resources with other instances on a single host.  
+
+CPU Steal Time displays how long the CPU in the VM is waiting to receive resources from a physical machine.
+
+:::note
+
+For more information, see [the following](https://www.whatap.io/ko/blog/25/index.html).
+
+:::

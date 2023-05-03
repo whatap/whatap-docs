@@ -1,0 +1,39 @@
+---
+id: agent-troubleshooting
+title: Golang installation troubleshooting
+description: You can check the problems that may occur during Golang agent installation.
+tags:
+  - Golang
+  - Troubleshooting
+  - Troubleshooting
+---
+
+## Checking the service behaviors
+
+Check whether the **_WhaTap.NET_** service is registered normally and it is **_running_**.
+
+With the administrator role, execute the `services.msc` command or double-click the service icon to open the Services administrator.
+
+![Windows Service Admin](https://img.whatap.io/media/agent_dotnet/install/whatap-windows-service.png)
+
+The **WhaTap .NET** service transfers the collected monitoring data to the WhaTap server. Check the related logs in the _C:\\Program Files\\WhatTap .NET\\logs_ path.
+
+## Checking the system environment variables
+
+Execute the `sysdm.cpl` command to open the **_System Properties_** window. Click **_Advanced_** > **_Boot Environment_** and check if the system environment variables have been registered properly.
+
+![Windows System Boot Environment](https://img.whatap.io/media/agent_dotnet/install/system_properties.png)
+
+System environment variables are automatically registered during agent installation. Check that the following content has been registered.
+
+-   **COR_ENABLE_PROFILING = 1**<br/>The CLR profiler is enabled.
+
+-   **COR_PROFILER = {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}**<br/>This GUID is used when registering the WhaTap CLR profiler to the API. It is the fixed value.
+
+-   **COR_PROFILER_PATH = C:\\Program Files\\WhaTap .NET\\WhaTap.ClrProfiler.dll**<br/>Path of the WhaTap CLR profiler DLL.
+
+-   **WHATAP_APP_TYPE = 7**<br/>It is the type of the agent that communicates with the WhaTap server and it is the fixed value.
+
+-   **WHATAP_DOTNET_HOME = C:\\Program Files\\WhaTap**<br/>Home path of the WhaTap programs.
+
+-   **WHATAP_DOTNET_TRACE = 1**<br/>The monitoring data collection function is enabled.

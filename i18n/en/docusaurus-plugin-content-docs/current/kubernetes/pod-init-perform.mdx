@@ -1,0 +1,16 @@
+---
+id: pod-init-perform
+title: POD Initialization Performance
+description: If you use the POD initialization performance function, you can analyze the peak usage and initialization time at the Pod startup to help you set the optimal initial delay.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - POD
+  - Initialization
+---
+
+Home > Select Project > **_Analysis_** > **_POD Initialization Performance_**
+
+JVM-based applications including the springboot may fail the liveness check at initialization by using a large number of resources. If the liveness check fails over a specific number of times, the POD is deleted and restart is attempted infinitely, which may cause deployment failure.
+
+If you use the **_POD initialization performance_** function of WhaTap Kubernetes, by analyzing the peak usage and initialization time at POD startup, you can get help in setting the optimal initial delay (liveness check exemption time).

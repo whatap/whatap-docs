@@ -1,0 +1,57 @@
+:::note
+
+-   The agent performance option is applied only when the whatap .NET Windows service has been restarted after configuration.
+
+-   If the agent performance is expanded, the CPU and memory utilization can increase.
+    :::
+
+-   **whatap.tx_max_count** <span class='type'>Int</span><br/>
+    Default `5000`<br/>Maximum number of transactions to store. If there are numerous concurrent transactions, increase this size.
+
+-   **whatap.tx_default_capacity** <span class='type'>Int</span><br/>
+    Default `101`<br/>Initial size of the buffer in which transactions are stored.
+
+-   **whatap.tx_load_factor** <span class='type'>String(Float)</span><br/>
+    Default `0.75`<br/>This criterion is needed to gradually increase the buffer size to store transactions. If more than 75% of 101 are stored, it doubles the buffer size.                          
+
+-   **whatap.queue_log_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>It outputs the queue-related logs.
+
+-   **whatap.queue_tcp_enabled** <span class='type'>Boolean</span><br/>Default `true`<br/> 
+    Instead of the channel that is used for TCP data transmission, a separate queue is used. The data priority queue is used.
+
+-   **whatap.queue_tcp_sender_thread_count** <span class='type'>Int</span><br/>Default `2`<br/> 
+    Set the number of threads for TCP data transmission. If the number increases, data can be transferred a little faster. 
+
+-   **whatap.net_send_buffer_size** <span class='type'>Int</span><br/>Default `1024`<br/>
+    Set the channel buffer for TCP data processing.
+
+-   **whatap.queue_udp_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/> 
+    Instead of the channel for receiving the TCP data, a separate queue is used.
+
+-   **whatap.queue_udp_size** <span class='type'>Int</span><br/>Default `2048`<br/>
+    Set the buffer for receiving the UDP data. Set the channel and queue buffer. 
+
+-   **whatap.queue_udp_read_thread_count** <span class='type'>Int</span><br/>Default `3`<br/> 
+    Set the number of threads for receiving the UDP data. If the number increases, data can be read a little faster. 
+
+-   **whatap.queue_udp_overflowed_size** <span class='type'>Int</span><br/>Default `4096`<br/>
+    If the queue is used for receiving the UDP data, set the size of the overflowed queue buffer.
+
+-   **whatap.queue_udp_process_thread_count** <span class='type'>Int</span><br/>Default `1`<br/> 
+    Set the number of threads for processing the TCP data. If the number increases, data can be processed a little faster.
+
+-   **whatap.queue_profile_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/> 
+    Instead of the channel for processing the TCP data, a separate queue is used.
+
+-   **whatap.queue_profile_size** <span class='type'>Int</span><br/>Default `512`<br/>
+    Set the buffer for trace data processing.
+
+-   **whatap.queue_profile_process_thread_count** <span class='type'>Int</span><br/>Default `1`<br/> 
+    Set the number of threads for trace data processing. If the number increases, data can be processed a little faster.
+
+-   **whatap.queue_text_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/> 
+    Instead of the channel for text data processing, a queue is used.
+
+-   **whatap.queue_text_size** <span class='type'>Int</span><br/>Default `512`<br/>
+    Set the buffer for text data processing.

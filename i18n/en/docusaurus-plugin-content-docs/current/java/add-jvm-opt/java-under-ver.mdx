@@ -1,0 +1,64 @@
+---
+id: java-under-ver
+title: Java 1.6 or earlier
+description: Complete the additional settings for JVM options in Java 1.6 or earlier.
+tags:
+  - Java
+---
+
+You can apply the WhaTap agent on Java 1.6 or earlier. However, some functions are limited.
+
+## Java 1.5
+
+Java 1.5 supports the `-javaagent` option. However, there are restrictions on information inquiry for external threads, so some functions are limited.
+
+The following functions do not work.
+
+-   Real-time trace on active transactions
+
+-   Stack analysis (Top stack, Unique stack, Active stack)
+
+-   Detailed stack of the thread list
+
+## Java 1.4
+
+Java 1.4 does not have the `-javaagent` option. Install the WhaTap agent differently. Of course, Java 1.4 must be used for the _whatap.agent.jar_ file.
+
+> whatap.java14.tracer-`X.Y.Z`.jar
+
+### Creating boot.jar
+
+Create _boot.jar_ by using the _setup.sh_ file.\
+If [JAVA_HOME] is not entered, it automatically recognizes the current path as the location of JDK.
+
+```bash
+$ setup.sh [JAVA_HOME]
+```
+
+_setup.sh_ execution result: _whatap.java14.boot-`X.Y.Z`.jar_
+
+### Installing in bootclasspath
+
+Using the `bootclasspath` option, add the built jar and tracer jar as prepend.
+
+```java tite='java 실행 옵션'
+-Xbootclasspath/p:${WHATAP_HOME}/whatap.java14.boot-1.0.2.jar:${WHATAP_HOME}/whatap.java14.tracer-1.0.2.jar
+```
+
+### Constraints
+
+In JDK 1.4, the following functions do not work.
+
+-   Real-time trace on active transactions
+
+-   Stack analysis (Top stack, Unique stack, Active stack)
+
+-   Component version
+
+-   Thread list, heap history
+
+-   Loaded class
+
+-   Open socket
+
+-   Agent dump

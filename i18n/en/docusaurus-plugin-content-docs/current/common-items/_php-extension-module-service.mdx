@@ -1,0 +1,118 @@
+## Manual configuration of PHP extension module and whatap-php service{#extension-modul-manual-setting}
+
+If installation of the PHP extension module and whatap-php service (_install.sh_) has not been successful, you can install them manually. Use this method when environment information cannot be checked for any reasons such as PHP compile installation.
+
+### Creation of whatap.ini
+
+```bash
+$ cp /usr/whatap/php/template.ini /usr/whatap/php/whatap.ini
+$ vi /usr/whatap/php/whatap.ini
+
+# 상단에 내용 추가
+; Enable whatap extension module
+extension=whatap.so
+whatap.license=            # 발급된 액세스 키
+whatap.server.host=        # 발급된 서버 IP
+whatap.app_name=           # 웹서버 구분 APHP, FPHP (apache : APHP, php-fpm : FPHP)
+whatap.app_process_name=   # apache, php-fpm 의 프로세스 이름(httpd,php-fpm)
+```
+
+| Configuration           | Description                                                                                                                                                                                    |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| whatap.license          | **_프로젝트 메뉴_** > **_관리_** > **_에이전트 설치_** 페이지에서 발급된 액세스 키를 확인할 수 있습니다.                                                                                                                          |
+| whatap.server.host      | You can see the server IP issued from **_Project Menu_** > **_Management_** > **_Agent Installation_**.                                                                                        |
+| whatap.app_name         | `APHP` is used for the Apache server and `FPHP` is used for php-fpm.                                                                                                                           |
+| whatap.app_process_name | If you enter the exact value as the execution process name of Apache or php-fpm, the memory usage for the process is collected. For example, they are `httpd`, `apache2`, `php-fpm`, and such. |
+
+### Checking the PHP command (CLI){#check-php-cli-path}
+
+```bash
+$ which php
+
+/usr/bin/php
+```
+
+### Configuring the environment variables for the whatap-php service
+
+Set the PHP CLI command's path in the `$WHATAP_PHP_BIN` environment variable.
+
+```bash
+$ sudo vi /etc/init.d/whatap-php
+
+export WHATAP_PHP_BIN=    # PHP command's location (/usr/bin/php)
+```
+
+### Checking the PHP API version
+
+Set the PHP CLI command's path in the `$WHATAP_PHP_BIN` environment variable.
+
+```bash
+$ sudo php -i | grep 'PHP API'
+
+PHP API => 20100412
+```
+
+### Checking whether PHP ZTS (Zend Thread Safe) is available
+
+```bash title=apache
+$ sudo apachectl -V | grep MPM
+
+Server MPM: Prefork      # ZTS unavailable
+Server MPM: Worker       # ZTS available
+```
+
+```bash title=PHP-FPM
+$ sudo php-fpm -i | grep Thread
+
+Thread Safety => disabled       # ZTS unavailable
+Thread Safety => enabled       	# ZTS available
+```
+
+### Checking and configuring the PHP extension module's path
+
+#### Checking the PHP extension module's path{#check-php-extension-module}
+
+```bash
+$ sudo php -i | grep extension_dir
+
+extension_dir => /usr/lib64/php/modules => /usr/lib64/php/modules
+```
+
+#### Configuring the PHP extension module
+
+After checking the PHP API version and PHP ZTS's availability, select a library that meets the environment. In the PHP extension module's path, copy the _whatap.so_ file name.
+
+-   In case PHP ZTS is available - _whatap_zts\_[PHP API version].so_
+-   In case PHP ZTS is unavailable - _whatap\_[PHP API version].so_
+    ```bash title='PHP ZTS 지원하지 않을 경우 예시'
+    $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
+    ```
+
+#### Configuring the environment variables for the whatap-php service
+
+```bash
+$ sudo vi /etc/init.d/whatap-php
+
+export WHATAP_PHP_EXT_HOME=   # PHP extension path (/usr/lib64/php/modules)
+export WHATAP_PHP_EXT_SRC=    # whatap library path and file name
+                              # (/usr/whatap/php/modules/x64/whatap_20100412.so)]
+```
+
+1.  In the `$WHATAP_PHP_EXT_HOME` environment variable, set the PHP extension module's path.
+2.  In the `$WHATAP_PHP_EXT_SRC` environment variable, set the whatap library's full file path.
+
+### whatap.ini configuration{#php-ini-path}
+
+1.  Check the PHP ini file's path that has been added.
+
+    ```bash
+    $ sudo php -i | grep '.ini files'
+
+    Scan this dir for additional .ini files => /etc/php.d
+    ```
+
+2.  Copy _whatap.ini_ and paste it to the path.
+
+    ```bash
+    $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini
+    ```
