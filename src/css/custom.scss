@@ -1251,6 +1251,31 @@ main {
         }
       }
     }
+    div.flex-container-s:has([class*='admonitionContent']) {
+      display: block;
+      border-radius: 4px 0 0 4px;
+      margin: 16px 0;
+      padding: 16px 20px 16px 46px;
+      color: var(--ifm-font-color-base);
+      background: url('img/alert-note.svg') var(--ifm-alert-background) no-repeat top 19px left 20px;
+      --ifm-code-background: var(--ifm-alert-background-color-highlight);
+      --ifm-link-color: var(--ifm-alert-foreground-color);
+      --ifm-link-hover-color: var(--ifm-alert-foreground-color);
+      --ifm-link-decoration: underline;
+      --ifm-tabs-color: var(--ifm-alert-foreground-color);
+      --ifm-tabs-color-active: var(--ifm-alert-foreground-color);
+      --ifm-tabs-color-active-border: var(--ifm-alert-border-color);
+      border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
+      border-left-width: var(--ifm-alert-border-left-width);
+      box-shadow: var(--ifm-alert-shadow);
+      --ifm-alert-background-color: var(--ifm-color-secondary-contrast-background);
+      --ifm-alert-background-color-highlight: #ebedf026;
+      --ifm-alert-foreground-color: var(--ifm-color-secondary-contrast-foreground);
+      --ifm-alert-border-color: var(--ifm-color-secondary-dark);
+      p:first-of-type {
+        padding: 0;
+      }
+    }
     .flex-container-s {
       width: 100%;
       margin-top: 22px;

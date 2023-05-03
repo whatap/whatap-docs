@@ -2885,9 +2885,11 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2.2.0',
+                id: 'release-notes/java/java-2.2.3',
               },
               items: [
+                'release-notes/java/java-2.2.3',
+                'release-notes/java/java-2.2.2',
                 'release-notes/java/java-2.2.0',
                 'release-notes/java/java-2.1.3',
                 'release-notes/java/java-2.1.2',
@@ -2924,7 +2926,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1.3.4',
@@ -2933,7 +2935,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1.3.4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
@@ -2951,17 +2953,28 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2.0.4',
+                id: 'release-notes/dotnet/dotnet-2.0.6',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/dotnet/dotnet-2.0.6',
+                  className: 'new',
+                },
+                'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
                 'release-notes/dotnet/dotnet-2.0.3',
                 'release-notes/dotnet/dotnet-2.0.2',
                 'release-notes/dotnet/dotnet-2.0.1',
                 'release-notes/dotnet/dotnet-2.0.0',
-                'release-notes/dotnet/dotnet-previous',
+                {
+                  type: 'link',
+                  label: '.NET Agent 지난 버전',
+                  href: 'https://deprecated-docs.whatap.io/kr/releasenotes/#net-agent-release-notes'
+                }
               ],
             },
             {
