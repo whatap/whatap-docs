@@ -1211,10 +1211,6 @@
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar urlSidebar"
   },
-  "sidebar.rumsSidebar.category.브라우저 모니터링(RUM)": {
-    "message": "브라우저 모니터링(RUM)",
-    "description": "The label for category 브라우저 모니터링(RUM) in sidebar rumsSidebar"
-  },
   "sidebar.rumsSidebar.category.호환성 및 사전설정": {
     "message": "호환성 및 사전설정",
     "description": "The label for category 호환성 및 사전설정 in sidebar rumsSidebar"
@@ -1441,10 +1437,18 @@
   },
   "sidebar.indexSidebar.link.Browser": {
     "message": "Browser",
-    "description": "The label for link Browser in sidebar indexSidebar, linking to ../browser/introduction"
+    "description": "The label for link Browser in sidebar indexSidebar, linking to ../browser"
   },
   "sidebar.rumsSidebar.category.Browser": {
     "message": "Browser",
     "description": "The label for category Browser in sidebar rumsSidebar"
+  },
+  "sidebar.releaseSidebar.link..NET Agent 지난 버전": {
+    "message": ".NET Agent 지난 버전",
+    "description": "The label for link .NET Agent 지난 버전 in sidebar releaseSidebar, linking to https://deprecated-docs.whatap.io/kr/releasenotes/#net-agent-release-notes"
+  },
+  "sidebar.rumsSidebar.category.Browser 모니터링": {
+    "message": "Browser 모니터링",
+    "description": "The label for category Browser 모니터링 in sidebar rumsSidebar"
   }
 }
