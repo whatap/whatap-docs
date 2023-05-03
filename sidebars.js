@@ -4465,7 +4465,7 @@ const sidebars = {
   rumsSidebar: [
     {
       type: 'category',
-      label: 'Browser',
+      label: 'Browser 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
