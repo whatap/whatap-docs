@@ -15,7 +15,9 @@
 
 * * * * -> ---
 
-:::note null -> note
+:::note null -> :::note
+
+:::note\ -> :::note
 
 <Version> -> {Version}
 
