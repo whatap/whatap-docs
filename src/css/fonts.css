@@ -50,3 +50,9 @@
        url('fonts/noto-sans-coptic-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/noto-sans-coptic-v17-latin-regular.svg#NotoSansCoptic') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src:   url('fonts/Regular.woff'),url('fonts/Regular.eot');
+}

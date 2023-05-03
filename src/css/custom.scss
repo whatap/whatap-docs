@@ -92,6 +92,17 @@ html[lang='ko'] {
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
+html[lang='en'] {
+  word-wrap: keep-all;
+  font-family: 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+}
+
+html[lang='ja'] {
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: 'Noto Sans Japanese', 'Apple SD Gothic Neo'; //'Noto Emoji'
+}
+
 * {
   margin: 0;
   padding: 0;
