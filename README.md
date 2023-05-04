@@ -33,3 +33,5 @@ server-list.mdx -> 주석 삭제
   _sv-w-cpf.mdx 파일 수정
 
   ../../account/account-manage -> ../account/account-manage 경로 수정할 것
+
+../../project/ -> ../project/
