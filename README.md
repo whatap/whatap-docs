@@ -1,34 +1,3 @@
-# Introduction
-
-와탭 모니터링 서비스 콘텐츠 관리 도구입니다.
-
-## 다국어 문서 수정 사항
-
-* /\\_([a-z]) -> /_$1
-
-* : \_ -> : _
-
-* \[ -> [
-
-* _trs-profile.mdx 주석 삭제
-
-
-* * * * -> ---
-
-:::note null -> :::note
-
-:::note\ -> :::note
-
-<Version> -> {Version}
-
-<version> -> {version}
-
-server-list.mdx -> 주석 삭제
-
-< > -> 부호 앞에 슬래시 적용할 것
-
-\<whatap-monitoring\> 
-
-  ::: 확인해볼 것
-
-  _sv-w-cpf.mdx 파일 수정
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f80bcd01bed6bb27b54a3c8bedfedeb4f5651b0e3cf4a7236c2c770dce1504c
+size 568
