@@ -73,10 +73,10 @@ For more information about the agent file structure, see the Python agent file s
 <summary>Python agent structure file</summary>
 The Python agent file consists of a tracer that extracts the data needed to monitor applications and passes it to the WhaTap collection server, and the elements that help the tracer send the data.
 
--   _whatap.conf_\
+-   _whatap.conf_<br/>
       This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
 
--   _paramkey.txt_\
+-   _paramkey.txt_<br/>
       It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
       The security key is stored in a file. To check the actual collected data through a browser, enter the security key in the file to retrieve the data. 
       You can modify the security key by directly modifying the file. The related options are as follows: 
@@ -89,14 +89,14 @@ The Python agent file consists of a tracer that extracts the data needed to moni
 
 ## Agent CONFIG.
 
-1.  **WHATAP_HOME default path configuration**\
+1.  **WHATAP_HOME default path configuration**<br/>
     Specify the `$WHATAP_HOME` path for log and configuration files. It is recommended to create a new whatap directory.
 
     ```bash
     $ export WHATAP_HOME=[PATH]
     ```
 
-2.  **액세스 키 및 수집 서버 IP 설정**\
+2.  **액세스 키 및 수집 서버 IP 설정**<br/>
     다음 명령어를 실행하면 `$WHATAP_HOME`에 지정한 경로에 바로 _whatap.conf_ 파일이 생성 및 설정됩니다.
 
     ```bash
@@ -107,7 +107,7 @@ The Python agent file consists of a tracer that extracts the data needed to moni
     --app_process_name [프로세스 명, ex. uwsgi, gunicorn]
     ```
 
-3.  **Check configuration**\
+3.  **Check configuration**<br/>
     Check whether the configuration file has been created as follows.
 
     ```bash

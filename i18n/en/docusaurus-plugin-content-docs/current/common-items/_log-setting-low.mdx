@@ -115,10 +115,10 @@ Four different types of parsers are provided as follows. You can check them in t
 ![Grok Pattern Parser](https://img.whatap.io/media/images/log_011_grok_syntax.png)
 The syntax rule is %{SYNTAX:SEMANTIC}.    
 
--   **SYNTAX**\
+-   **SYNTAX**<br/>
       It is the Grok definition pattern.      
 
--   **SEMANTIC**\
+-   **SEMANTIC**<br/>
       It is the key to be assigned to the parsed data.
 
 :::note 
@@ -129,7 +129,7 @@ It is recommended to use combination words in SEMANTIC so that reserved words ar
 
 ### Registering the JSON format parser pattern
 
-![JSON Format Parser Pattern Registration](https://img.whatap.io/media/images/log_012_json_format_parser_1101.png)\
+![JSON Format Parser Pattern Registration](https://img.whatap.io/media/images/log_012_json_format_parser_1101.png)<br/>
 If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser.
 
 To detect the JSON output of the log, the prefix and postfix options are combined to specify which part of the log to be recognized by JSON for parsing. 
@@ -194,16 +194,16 @@ To detect the JSON output of the log, the prefix and postfix options are combine
 
 ### 4xx, 5xx Status Code Parser registration{#4xx-5xx-status-parser}
 
-![4XX 5XX Status Code Parser](https://img.whatap.io/22/11/28/085706log_020_status_parser.png)\
+![4XX 5XX Status Code Parser](https://img.whatap.io/22/11/28/085706log_020_status_parser.png)<br/>
 A parser that can be used if the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. 
 
 You can enter or select 4xx, 5xx status codes in the pattern, and the entered status codes are excluded when parsing 4xx, 5xx status codes from the log. To use the 4xx, 5xx status code parser, the status must have been parsed first.
 
--   **status parser registration example**\
+-   **status parser registration example**<br/>
       ![Grok parser - status parsing pattern registration](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)
       If the incoming log is `{"msg":"message","status":404}` and the status is parsed by the Grok parser as in the example, parsing is performed like `status: 404`. If you confirm that the status has been normally parsed, register the 4XX, 5XX status code parser pattern.     
 
--   **Widget Templates**\
+-   **Widget Templates**<br/>
        If all parsers have been registered, go to **_Flex Board_** and then create the log 4XX, 5XX count widget.
 
       ![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png)  
@@ -223,7 +223,7 @@ The status code success rate parser can be used when the status has already been
 
 Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. You can enter or select 2xx, 3xx status codes in the pattern, and the entered status codes are excluded when parsing 2xx, 3xx status codes from the log. 
 
--   **Widget Templates**\
+-   **Widget Templates**<br/>
        If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
 
       ![Flex Board - Log Request Success Rate Widget Template](https://img.whatap.io/22/11/28/120046log_success_rate_01_widget_template.png)  
@@ -318,9 +318,9 @@ If a setting is added as follows, statistical data is generated with a key value
 
 ### Widget template
 
-1.  In **_Widget Templates_** of **_Flex Board_**, search for **_Log long-term archive statistics_** to create a widget.\
+1.  In **_Widget Templates_** of **_Flex Board_**, search for **_Log long-term archive statistics_** to create a widget.<br/>
     ![Long-term Archive Statistics Widget Templates](https://img.whatap.io/22/11/28/090932log_024_long_period_widget_template.png)
-2.  Specify the **_category_** and **_key_** for data search and then select **_Apply_**.\
+2.  Specify the **_category_** and **_key_** for data search and then select **_Apply_**.<br/>
     ![Long-term Archive Statistics Widget - selection of category and key](https://img.whatap.io/22/11/28/090932log_025_long_period_widget_config.png)
-3.  With the added settings, you can check the **_long-term archive statistical data_** as follows:\
+3.  With the added settings, you can check the **_long-term archive statistical data_** as follows:<br/>
     ![Long-term Archive Statistics Widget](https://img.whatap.io/22/11/28/090932log_026_long_period_widget_view.png)

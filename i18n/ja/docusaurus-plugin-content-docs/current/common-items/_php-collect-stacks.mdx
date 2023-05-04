@@ -4,19 +4,19 @@
 
 個々のトランザクショントレースは、無期限にステップを収集することができません。トランザクションごとに長さが制限されているバッファーにトレースステップを保存します。各トランザクションは、最大で収集できるステップの数がオプションとして指定されます。
 
--   **whatap.profile_step_max_count**\
+-   **whatap.profile_step_max_count**<br/>
       デフォルト値 `1024`<br/>
       最大で収集可能なステップ数です。
 
--   **whatap.profile_step_normal_count**\
+-   **whatap.profile_step_normal_count**<br/>
       デフォルト値 `800`<br />
       これは通常、制限なしで収集されるステップの数です。
 
--   **whatap.profile_step_heavy_count**\
+-   **whatap.profile_step_heavy_count**<br/>
       デフォルト値 `1000`<br/>
       normal countを超過した場合、ステップは応答時間が遅いステップとアクティブスタックステップのみを収集します。
 
--   **whatap.profile_step_heavy_time**\
+-   **whatap.profile_step_heavy_time**<br/>
       デフォルト値 `100`<br/>
       heavy count以内で収集されるステップの基準時間は、`whatap.profile_step_heavy_time`です。
 

@@ -1,4 +1,4 @@
-1.  **メソッドトレース設定**\
+1.  **メソッドトレース設定**<br/>
     メソッドトレースを設定してください。 確実にトランザクションから呼び出されるクラスを指定してください。 DBを使用するプログラムでは**JDBCドライバー**が役に立ちます。 
     ```ini title='whatap.conf'
     hook_method_patterns=jdbc.*.*
@@ -6,14 +6,14 @@
     hook_method_access_protected_enabled=true
     hook_method_access_none_enabled=true
     ```
-2.  **トランザクション開始オプションの設定**\
+2.  **トランザクション開始オプションの設定**<br/>
     メソッドが呼び出されたら、トランザクションを開始してください。 トランザクション開始オプションとトランザクション開始時にスタックをダンプするオプションをオンにします。 
 
     ```ini title='whatap.conf'
     trace_auto_transaction_enabled=true
     trace_auto_transaction_backstack_enabled=true
     ```
-3.  **再起動後のトレース分析**\
+3.  **再起動後のトレース分析**<br/>
     再起動してください。 その後、サービスを呼び出すと、トランザクションが追跡されるのを見ることができます。 
 
     トランザクションを照会すると、`jdbc.*`で始まるすべてのクラスのメソッドがこのトランザクションで表示されることがわかります。トランザクショントレースを照会すると、**TRANSACTION BACKSTACK**というメッセージステップが確認できます。
@@ -25,7 +25,7 @@
     com.virtual.web.SimulaNonHttp.process(SimulaNonHttp.java:76),
     com.virtual.web.SimulaNonHttp.run(SimulaNonHttp.java:100)
     ```
-4.  **スタック内容確認**\
+4.  **スタック内容確認**<br/>
     スタック内容を確認すると、どのメソッドから出発しているかを推定できます。
 
     ```bash title='예제'

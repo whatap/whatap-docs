@@ -39,10 +39,10 @@ The WhaTap agent provides various options to identify users.
 
 Depending on the counting method, it is used differently. Real-time users are measured to see how many users are using the system. Daily Active User is a measure for business management on how many users are interested in the service for a day.
 
--   **Real-time User**\
+-   **Real-time User**<br/>
       The number of users is counted in the last 5 minutes. Users are counted by shifting every 5 seconds. The numbers counted on each server are merged through the HyperLogLog algorithm.
 
--   **Daily Active User** (**DAU**)\
+-   **Daily Active User** (**DAU**)<br/>
       The users who accessed the system for a day are counted. The number of users logged in for 24 hours is calculated through HyperLogLog.
 
 :::tip
