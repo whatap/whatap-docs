@@ -19,7 +19,7 @@ module.exports = Promise.resolve({
   favicon: '/img/whatap-favicon.ico',
   i18n: {
     defaultLocale: 'ko',
-    locales: ['ko'],
+    locales: ['ko', 'en', 'ja'],
   },
   trailingSlash: false,
   // clientModules: [
@@ -78,7 +78,7 @@ module.exports = Promise.resolve({
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: false,
-        language: [ 'ko', 'en' ],
+        language: [ 'ko', 'en', 'ja' ],
         indexBlog: false,
         docsRouteBasePath: '/',
         removeDefaultStemmer: false,

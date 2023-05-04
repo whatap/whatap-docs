@@ -28,3 +28,7 @@ server-list.mdx -> 주석 삭제
 < > -> 부호 앞에 슬래시 적용할 것
 
 \<whatap-monitoring\> 
+
+  ::: 확인해볼 것
+
+  _sv-w-cpf.mdx 파일 수정
