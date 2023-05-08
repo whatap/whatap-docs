@@ -1416,7 +1416,7 @@
     "description": "The label for category 통계/보고서 in sidebar dboracleSidebar"
   },
   "sidebar.learningSidebar.category.학습하기": {
-    "message": "학습하기",
+    "message": "学習資料",
     "description": "The label for category 학습하기 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.애플리케이션 대시보드": {
