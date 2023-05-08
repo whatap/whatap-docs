@@ -47,3 +47,9 @@ server-list.mdx -> 주석 삭제
 [次の文書]\(..// account/account-manage) 관련 부분 수정
 
 [次の文書]（trs-view#詳細-分析）
+
+[次の記事] \(openapi-call-apm-stat-data)
+
+）로 끝나는 부분 확인
+
+\(https://pypi.org/project/whatap-python/ #files)
