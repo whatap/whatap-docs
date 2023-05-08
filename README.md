@@ -39,3 +39,5 @@ server-list.mdx -> 주석 삭제
   ../../account/account-manage -> ../account/account-manage 경로 수정할 것
 
 ../../project/ -> ../project/
+
+영문, 일본어에서 index(홈화면), reference 페이지의 pdf 다운로드 관련 내용 삭제할 것
