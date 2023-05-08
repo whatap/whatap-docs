@@ -41,3 +41,9 @@ server-list.mdx -> 주석 삭제
 ../../project/ -> ../project/
 
 영문, 일본어에서 index(홈화면), reference 페이지의 pdf 다운로드 관련 내용 삭제할 것
+
+일본어 괄호 부분 수정
+
+[次の文書]\(..// account/account-manage) 관련 부분 수정
+
+[次の文書]（trs-view#詳細-分析）
