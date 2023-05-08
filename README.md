@@ -32,7 +32,7 @@ server-list.mdx -> 주석 삭제
 
 \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
 
-  ::: 확인해볼 것
+  ::: 탭 공백 확인해볼 것
 
   _sv-w-cpf.mdx 파일 수정
 
