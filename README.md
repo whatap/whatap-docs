@@ -18,7 +18,7 @@
 
 :::note\ -> :::note
 
-<Version> -> {Version} 또는 \<Version\>
+<Version> -> {Version} 또는 &lt;Version&gt;
 
 <version> -> {version}
 
@@ -26,7 +26,7 @@ server-list.mdx -> 주석 삭제
 
 < > -> 부호 앞에 슬래시 적용할 것
 
-\<whatap-monitoring\>
+\<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
 
   ::: 확인해볼 것
 
