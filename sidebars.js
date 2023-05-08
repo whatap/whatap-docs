@@ -3152,7 +3152,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'getting-started/learning-guides'
+        id: 'learning-guides'
       },
       items: [
         {
@@ -3185,17 +3185,17 @@ const sidebars = {
       collapsible: false,
       collapsed: false,
       items: [
-        'getting-started/whatap-overview',
+        'whatap-overview',
         {
           type: 'doc',
           label: '와탭 기술 문서 안내',
-          id: 'getting-started/welcome-to-whatapdocs'
+          id: 'welcome-to-whatapdocs'
         },
-        'getting-started/support-env',
-        'getting-started/quick-guide',
-        'getting-started/learning-guides',
-        'getting-started/software-proxy',
-        'navigation/main-ui-intro',
+        'support-env',
+        'quick-guide',
+        'learning-guides',
+        'software-proxy',
+        'main-ui-intro',
       ],
     },
     {
@@ -3212,32 +3212,32 @@ const sidebars = {
         {
           type: 'link',
           label: 'Java',
-          href: '../java/introduction',
+          href: 'java/introduction',
         },
         {
           type: 'link',
           label: 'PHP',
-          href: '../php/introduction',
+          href: 'php/introduction',
         },
         {
           type: 'link',
           label: 'Node.js',
-          href: '../nodejs/introduction',
+          href: 'nodejs/introduction',
         },
         {
           type: 'link',
           label: 'Python',
-          href: '../python/introduction',
+          href: 'python/introduction',
         },
         {
           type: 'link',
           label: '.NET',
-          href: '../dotnet/introduction',
+          href: 'dotnet/introduction',
         },
         {
           type: 'link',
           label: 'Golang',
-          href: '../golang/introduction',
+          href: 'golang/introduction',
         },
         {
           type: 'html',
@@ -3246,7 +3246,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Server',
-          href: '../server/introduction',
+          href: 'server/introduction',
         },
         {
           type: 'html',
@@ -3255,7 +3255,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Kubernetes',
-          href: '../kubernetes/introduction',
+          href: 'kubernetes/introduction',
         },
         {
           type: 'html',
@@ -3264,53 +3264,53 @@ const sidebars = {
         {
           type: 'link',
           label: 'PostgreSQL',
-          href: '../postgresql/monitoring-intro',
+          href: 'postgresql/monitoring-intro',
         },
         {
           type: 'link',
           label: 'Oracle',
-          href: '../oracle/monitoring-intro',
+          href: 'oracle/monitoring-intro',
         },
         {
           type: 'link',
           label: 'MySQL',
-          href: '../mysql/monitoring-intro',
+          href: 'mysql/monitoring-intro',
         },
         // {
         //   type: 'link',
         //   label: 'MySQL RDS',
-        //   href: '../mysql-rds/monitoring-intro',
+        //   href: 'mysql-rds/monitoring-intro',
         //   className: "_productlink"
         // },
         {
           type: 'link',
           label: 'MS SQL Server',
-          href: '../mssql/monitoring-intro',
+          href: 'mssql/monitoring-intro',
         },
         {
           type: 'link',
           label: 'Tibero',
-          href: '../tibero/monitoring-intro',
+          href: 'tibero/monitoring-intro',
         },
         {
           type: 'link',
           label: 'CUBRID',
-          href: '../cubrid/monitoring-intro',
+          href: 'cubrid/monitoring-intro',
         },
         {
           type: 'link',
           label: 'Altibase',
-          href: '../altibase/monitoring-intro',
+          href: 'altibase/monitoring-intro',
         },
         {
           type: 'link',
           label: 'Redis',
-          href: '../redis/monitoring-intro',
+          href: 'redis/monitoring-intro',
         },
         {
           type: 'link',
           label: 'MongoDB',
-          href: '../mongodb/monitoring-intro',
+          href: 'mongodb/monitoring-intro',
         },
         {
           type: 'html',
@@ -3319,12 +3319,12 @@ const sidebars = {
         {
           type: 'link',
           label: 'Amazon CloudWatch',
-          href: '../amazon-cloudwatch/install-agent',
+          href: 'amazon-cloudwatch/install-agent',
         },
         {
           type: 'link',
           label: 'Amazon ECS',
-          href: '../amazon-ecs/introduction',
+          href: 'amazon-ecs/introduction',
         },
         {
           type: 'html',
@@ -3333,7 +3333,7 @@ const sidebars = {
         // {
         //   type: 'link',
         //   label: 'AWS Log',
-        //   href: '../aws-log/introduction',
+        //   href: 'aws-log/introduction',
         // },
         // {
         //   type: 'html',
@@ -3342,7 +3342,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Azure Monitor',
-          href: '../azure/install-agent',
+          href: 'azure/install-agent',
         },
         {
           type: 'html',
@@ -3351,7 +3351,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Naver Cloud Monitoring',
-          href: '../ncloud/install-agent',
+          href: 'ncloud/install-agent',
         },
         {
           type: 'html',
@@ -3360,7 +3360,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Oracle Cloud Monitor',
-          href: '../oracle-cloud/install-agent',
+          href: 'oracle-cloud/install-agent',
         },
         {
           type: 'html',
@@ -3369,17 +3369,17 @@ const sidebars = {
         {
           type: 'link',
           label: 'Log',
-          href: '../log/introduction',
+          href: 'log/introduction',
         },
         {
           type: 'link',
           label: 'URL',
-          href: '../url/url-intro',
+          href: 'url/url-intro',
         },
         {
           type: 'link',
           label: 'Browser',
-          href: '../browser',
+          href: 'browser',
         },
         {
           type: 'doc',
@@ -3397,17 +3397,17 @@ const sidebars = {
         {
           type: 'link',
           label: '관리 기능',
-          href: '../manage' 
+          href: 'manage' 
         },
         {
           type: 'link',
           label: '참조 문서',
-          href: '../reference' 
+          href: 'reference' 
         },
         {
           type: 'link',
           label: '릴리스 노트',
-          href: '../release-notes',
+          href: 'release-notes',
         },
       ],
     }

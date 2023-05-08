@@ -4,7 +4,7 @@
     "description": "Navbar item with label 시작하기"
   },
   "item.label.상품별 문서 바로가기": {
-    "message": "製品固有のドキュメントに移動",
+    "message": "製品",
     "description": "Navbar item with label 상품별 문서 바로가기"
   },
   "item.label.Java 모니터링": {
@@ -124,7 +124,7 @@
     "description": "Navbar item with label 참조 문서"
   },
   "item.label.릴리스 노트": {
-    "message": "リリースNode",
+    "message": "リリースノート",
     "description": "Navbar item with label 릴리스 노트"
   },
   "item.label.Java": {

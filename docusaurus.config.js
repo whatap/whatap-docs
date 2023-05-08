@@ -173,7 +173,7 @@ module.exports = Promise.resolve({
         items: [
           {
             type: 'doc',
-            docId: 'getting-started/whatap-overview',
+            docId: 'whatap-overview',
             label: '시작하기',
             position: 'left',
           },
