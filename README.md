@@ -1,6 +1,10 @@
 # Introduction
 
-와탭 모니터링 서비스 콘텐츠 관리 도구입니다.
+WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
+
+## 빌드 방법 및 PDF 제작 방법
+
+<https://www.notion.so/whatap/Docusaurus-b64bd9c10e484e89b302d5ad6ce2295f?pvs=4>
 
 ## 다국어 문서 수정 사항
 
@@ -24,7 +28,7 @@
 
 server-list.mdx -> 주석 삭제
 
-< > -> 부호 앞에 슬래시 적용할 것
+< > -> 부호 앞에 &lt;, &gt; 적용할 것
 
 \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
 
