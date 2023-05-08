@@ -14,13 +14,13 @@ import TabItem from '@theme/TabItem';
 
 新規作成したサーバーモニタリングプロジェクトを選択すると、**_エージェントのインストール_**画面が表示されます。 プロジェクト**_管理_** >**_エージェントのインストール_**メニューから行うことができます。
 
-![サーバーモニタリングLinux Unix]（/img/server-install-lx-unx.png）
+![サーバーモニタリングLinux Unix](/img/server-install-lx-unx.png)
 
 <!-- ![](/img/server-install.png) -->
 
 1.  WhaTap **リポジトリ**を登録します。  
 
-    ![number-s]（/img/number-01.png） **_役人_** > **_エージェントインストール_** 画面上段のOSタブで「サーバーOS」を選択してください。 ![number-s]（/img/number-02.png） **_WhaTapリポジトリの追加_** タブで該当するコマンドをコピーして入力します。
+    ![number-s](/img/number-01.png) **_役人_** > **_エージェントインストール_** 画面上段のOSタブで「サーバーOS」を選択してください。 ![number-s](/img/number-02.png) **_WhaTapリポジトリの追加_** タブで該当するコマンドをコピーして入力します。
 
     <Tabs>
     <TabItem value="du" label="Debian / Ubuntu" default>
@@ -87,7 +87,7 @@ import TabItem from '@theme/TabItem';
     </Tabs>
 
 2.  次のコマンドを使用して**パッケージ**をインストールしてください。<br/>
-    ![number-s]（/img/number-03.png） **_WhaTapサーバーモニタリングパッチ設置_** タブで該当するコマンドをコピーして入力します。
+    ![number-s](/img/number-03.png) **_WhaTapサーバーモニタリングパッチ設置_** タブで該当するコマンドをコピーして入力します。
 
     <Tabs>
     <TabItem value="du" label="Debian / Ubuntu" default>
@@ -123,7 +123,7 @@ import TabItem from '@theme/TabItem';
     </Tabs>
 
 3.  **設定スクリプト**を実行してください。<br/>
-    ![number-s]（/img/number-04.png）**_サーバーモニタリングを開始する_** タブに移動してコマンドを発行するか、下段のコマンドにプロジェクトアクセスキーとサーバーIPを追加して実行してください。
+    ![number-s](/img/number-04.png)**_サーバーモニタリングを開始する_** タブに移動してコマンドを発行するか、下段のコマンドにプロジェクトアクセスキーとサーバーIPを追加して実行してください。
 
     ```bash
     echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/infra/conf/whatap.conf
