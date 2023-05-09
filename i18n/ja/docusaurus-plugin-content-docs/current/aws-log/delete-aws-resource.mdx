@@ -1,0 +1,56 @@
+---
+id: delete-aws-resource
+title: AWSリソースの削除
+description: WhaTap AWS Logプロジェクトで使用するAWSリソースの削除方法を案内します。
+tags:
+  - AWS Log
+  - 削除
+---
+
+import TR from '@site/src/components/TR';
+
+AWS Logプロジェクトで使用するAWSリソースを完全に削除するためには、次の3種類のリソースをすべて削除する必要があります。
+
+-   **Cloud Formation**で作成された**AWSリソース**
+-   **CloudWatch LogGroup**に追加された**Subscription filters**
+-   **S3 Bucket**に追加された**Event Notifications**
+
+## CloudFormationで作成されたAWSリソースの削除
+
+![cloudformationリソース削除](/img/aws-log-cloudformation-resource.png)
+
+1.  AWSコンソールで**_CloudFormation_**を選択してください。
+
+2.  削除する**_Stack_**を選択してください。
+
+3.  **_Stack_**によって作成されたすべてのリソースを削除するには**_Delete_**ボタンを選択してください。
+
+<!-- Delete 버튼을 선택해 해당 **Stack**에 의해 생성된 모든 자원들 한 번에 삭제하세요. -->
+
+## CloudWatch LogGroup의 Subscription filters削除
+
+![subscription filters削除](/img/aws-log-delete-subscription-filter.png)
+
+1.  AWSコンソールで**_CloudWatch_**を選択してください。 
+
+2.  購読した**_LogGroup_**を検索します。
+
+3.  **_LogGroup_**の![number1](/img/number-01.png)**_Subscriptionfilters_**タブを選択してください。 
+
+4.  ![number 2](/img/number-02.png) **_Subscription filters_**リストから設定された履歴を選択してください。 
+
+5.  ![number 3](/img/number-03.png) **_Delete_**ボタンを押してから、削除してください。
+
+## S3 Bucket의 Event Notifications削除
+
+![event notifications削除](/img/aws-log-delete-event-notification.png)
+
+1.  AWSコンソールで **_S3_**を選択してください。 
+
+2.  購読した**_S3 Bucket_**을 찾습니다.
+
+3.  **_Buckets_**の![number 1](/img/number-01.png) **_Properties_**タブに移動してください。 
+
+4.  **_Properties_**タブで設定された![number 2](/img/number-02.png) **_Event notifications_**の履歴を選択してください。 
+
+5.  ![number 3](/img/number-03.png) **_Delete_**ボタンを押してから、削除してください。

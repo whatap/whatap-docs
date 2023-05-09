@@ -1,0 +1,38 @@
+---
+id: before-starting
+title: Understanding the project concept
+description: Let's learn about configuring and managing the clusters and namespace projects in Kubernetes.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Cluster
+  - Project
+---
+
+## Cluster and project configuration
+
+WhaTap Kubernetes monitoring service manages one or more WhaTap projects for a user's Kubernetes cluster environment.
+
+The user's Kubernetes cluster is basically represented as a **cluster project** on the WhaTap service. When you first create a project for your Kubernetes product, the project is a **cluster project**. If there are multiple namespaces in a Kubernetes cluster and there are numerous containers and pods, you can divide the WhaTap project by creating and separating namespace projects for each namespace.
+
+![Kubernetes Project](/img/k8s-kuber-namespace.png)
+
+### ![](/img/number-01.png) Cluster Project
+
+-   It is a project for monitoring all resources in a Kubernetes cluster.
+
+-   Through the **cluster project**, proceed with installation of the master agent and node agents.
+
+-   In the project list, **cluster projects** appear with the `CP` tag next to the project name and the `Kubernetes` tag at the very bottom.
+
+-   For more information about the creation of **cluster project**, see [the following](install#create-project).
+
+### ![](/img/number-02.png) Namespace Project
+
+-   It is a project, a Kubernetes cluster's child namespace unit.
+
+-   This project monitors the resources in namespace units and monitors application containers.
+
+-   In the project list, **namespace projects** display the `Namespace` tag at the bottom.
+
+-   For more information about the **namespace project** management, see [the following](namespace).

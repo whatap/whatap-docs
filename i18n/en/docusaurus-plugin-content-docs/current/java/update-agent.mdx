@@ -1,0 +1,30 @@
+---
+id: update-agent
+title: Agent Update
+description: It provides the method how to update the Java agent.
+tags:
+  - Java
+  - Update
+---
+
+{@include: ../common-items/_download-agent.mdx} 
+
+## Automatic configuration of the update agent
+
+To update the Java agent, the server must be restarted. If _whatap.agent.jar_ is modified before restart, a graceful shutdown may fail while the application server is restarting.
+
+To update the Java agent, proceed in the following order:
+
+1.  App shutdown
+2.  Modification of the agent jar
+3.  App start
+
+To easily process the above steps, the agent jar file name is to include the version number. It is important to set to automatically apply the latest versions during the update.
+
+```bash {3} showLineNumbers
+########## WHATAP ############
+WHATAP_HOME=/whatap
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
+########## WHATAP ############
+```

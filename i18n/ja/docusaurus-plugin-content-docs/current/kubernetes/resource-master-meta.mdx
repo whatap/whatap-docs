@@ -1,0 +1,29 @@
+---
+id: resource-master-meta
+title: マスターメタ情報
+description: Kubernetesマスターのメタ情報がひと目で確認できます。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - マスター
+  - メタ情報
+---
+
+ホーム画面 > プロジェクト選択 > **_リソース_** > **_マスターメタ情報_**
+
+Kubernetesマスターのメタ情報がひと目で確認できます。
+
+![マスターメタ情報](https://img.whatap.io/media/images/whatap_kubernetes_resource_master.png)
+
+以下は、提供する主なメタ情報です。
+
+| 分類             | 対象                                                                                            |
+| -------------- | --------------------------------------------------------------------------------------------- |
+| Workload       | Event<br/>CronJob<br/>DaemonSet<br/>Deployment<br/>Job<br/>Pod<br/>ReplicaSet<br/>StatefulSet |
+| Service        | Ingresss<br/>Service                                                                          |
+| Config/Storage | ConfigMap<br/>Persistent Volume<br/>PersistentVolumeClaim<br/>StorageClass                    |
+| Cluster        | ClusterRoleBinding<br/>ClusterRole<br/>Node<br/>Role<br/>ServiceAccount                       |
+
+:::note
+マスターメタ情報が照会されない場合は、Kubernetes環境内のWhaTapマスターエージェントが正常に動作しているか確認してください。
+:::

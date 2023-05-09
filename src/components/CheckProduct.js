@@ -4,7 +4,15 @@ import {useLocation} from '@docusaurus/router';
 
 export default function CheckProduct() {
     let location = useLocation();
-    let cProdt = location.pathname.split("/")[1];
+    let cProdt;
+    let selLang = location.pathname.split("/")[1];
+
+    if (selLang == 'en' || selLang == 'ja') {
+        cProdt = location.pathname.split("/")[2];
+    } else {
+        cProdt = location.pathname.split("/")[1];
+    }
+
     var product;
     if (cProdt === 'nodejs') {
         product = '-nodejs';

@@ -1,0 +1,175 @@
+---
+id: log-server
+title: Server
+description: It guides you how to collect logs from your server application.
+tags:
+  - Log Monitoring
+  - Server
+---
+
+<!-- 안내 디테일 추가 필요 -->
+
+<!-- showLineNumbers {5-10} -->
+
+To collect logs by your server application, check the following:
+
+## Agent Update
+
+It is available from Server agent 2.1.2. For more information about update, see [the following](../server/agent-update).
+
+## Checking the agent settings
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. In the OS selection tab at the top of **_Check Agent CONF._**, select a server OS (**_Linux (shell)_**, **_Windows (Powershell)_**). See **_Basic Installation_** or **_Install with Category_** for the process. 
+
+:::note
+
+The following configuration requires restart of the agent.
+
+:::
+
+<!-- 의 ***에이전트 설정 확인*** 탭의 안내를 참조해 진행하세요. 임의의 로그를 수집할 수 있습니다.  -->
+
+### Linux Shell
+
+-   **_Basic installation_**
+    ```bash title='Linux Shell'
+    export LOGFILES=/some/path/file1,/some/other/file2
+    echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    ```
+
+-   **_Install with Category_**
+
+    ```bash title='Linux Shell' {7-12,14,15} showLineNumbers
+    cd /usr/whatap/infra
+    sudo mkdir extension
+
+    cat >extension/logsink.conf<<EOL
+    [[inputs.logsink]]
+      category = "serverlog"
+      ## Whether or not to send the data with separate log generation statistics
+      stats_enabled = true 
+      ## Category for log generation statistics
+      stats_category = "logsink_stats"
+      ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
+      excludeNames = [ ".gz",".zip" ] 
+      [[inputs.logsink.file]]
+        ## When setting a log file, you can set the date pattern (strftime.org).
+        path = "/some/path/%Y-%m-%d/.log" 
+        disabled = false
+        encoding = "euc-kr"
+
+      [[inputs.logsink.file]]
+        path = "/some/other/log"
+        disabled = false
+        encoding = "utf-8"
+    EOL
+
+    sudo service whatap-infra restart
+    ```
+
+### Windows Powershell
+
+-   **_Basic installation_**
+    ```bash title='Windows Powershell'
+    $LOGFILES="/some/path/file1,/some/other/file2"
+    Add-Content "c:Program FilesWhatapInfrawhatap.conf" -Value "logsink.files=$LOGFILES"
+    ```
+
+-   **_Install with Category_**  
+
+    ```bash title='Windows Powershell (관리자 권한)' {6-11,13,14} showLineNumbers
+    New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
+
+    $contentToAdd = @"
+    [[inputs.logsink]]
+    category = "serverlog"
+    ## Whether or not to send the data with separate log generation statistics
+    stats_enabled = true 
+    ## Category for log generation statistics
+    stats_category = "logsink_stats"
+    ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
+    excludeNames = [ ".gz",".zip" ] 
+    [[inputs.logsink.file]]
+    ## When setting a log file, you can set the date pattern
+    path = "c:\\whatap\\logs%Y-%m-%d_.log"
+    disabled = false
+    encoding = "euc-kr"
+
+    "@
+
+    New-Item -path "C:\Program Files\WhatapInfra\extension" -name "logsink.conf" -type "file" -value $contentToAdd -Force
+
+    Restart-Service "Whatap Infra"
+    ```
+
+### Configuring options
+
+-   `stats_enabled`: Set whether or not to collect the collection status data. The default value is `false`. The value must be set to `true`. If set to `true`, statistical data is generated in the category (`logsink_stats`) set in the following `stats_category`.
+
+-   `stats_category`: Set the metrics category to store the collection status data in. The value must be set to `logsink_stats`. Statistical data fields are as follows:
+    -   `file`
+    -   `checkInterval`
+    -   `encoding`
+    -   `filepos`
+    -   `checkedLocalTime`
+    -   `lastupdatedLocalTime`
+    -   `fileSize`
+    -   `error`
+    -   `firstCheck`
+    -   `transferBytes`
+
+-   `excludeNames`: By including asterisks (\*) in the log file path, you can set the file name to exclude non log files. You can set multiple values using comma (,) as the delimiter.
+
+    ```ini title='예시'
+    excludeNames = [ ".gz",".zip" ]
+    ```
+
+## Enabling the log monitoring
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+You can enable or disable the WhaTap log monitoring with the toggle button in the **_Activate log monitoring_** tab of the **_Starting the log monitoring_** section. 
+
+{@include: ../common-items/_log-java-start.mdx} 
+
+{@include: ../common-items/_log-active-note.mdx} 
+
+<!-- 
+ 
+별도의 로그 수집 통계 데이터 발생 여부를 설정합니다.
+
+로그 모니터링을 원하는 파일 경로를 다음과 같이 지정하세요. 명령어를 입력하면 로그 모니터링이 시작됩니다.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="linux" label="Linux" default>
+
+```shell
+export LOGFILES=/some/path/file1,/some/other/file2
+echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows" default>
+
+```shell
+$LOGFILES="/some/path/file1,/some/other/file2"
+Add-Content "c:\\Program Files\\WhatapInfra\\whatap.conf" -Value "$LOGFILES"
+```
+
+</TabItem>
+</Tabs>
+
+## 로그 모니터링 활성화
+
+홈 화면 > 프로젝트 선택 > ***로그*** > ***설정***
+
+***로그 모니터링 시작하기*** 섹션의 ***로그 모니터링 활성화*** 탭에서 토글 버튼으로 와탭 로그 모니터링을 활성화 또는 비활성화 할 수 있습니다.
+
+{@include: ../common-items/_log-java-start.mdx}
+
+-->

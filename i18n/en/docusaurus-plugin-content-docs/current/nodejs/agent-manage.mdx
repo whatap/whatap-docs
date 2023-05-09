@@ -1,0 +1,41 @@
+---
+id: agent-manage
+title: Management
+description: It explains how to update or delete the Node.js agent.
+tags:
+  - Node.js
+  - Management
+  - Delete
+  - Update
+---
+
+## Agent Update
+
+It stops the application and updates it by using `npm`. After an update, restart the application.
+
+```bash title='SH'
+$ npm update whatap
+```
+
+:::note
+특정 버전으로 다운로드를 하고자 하는 경우에는 다음과 같이 버전을 명시합니다.
+
+```bash title='SH'
+$ npm install whatap@{version}
+```
+
+:::
+
+## Deleting (stopping) the agent
+
+1.  Delete the agent code inserted into your source (e.g. app.js).
+
+    ```javascript title='app.js'
+    var whatap=require('whatap').NodeAgent; // deletion
+    ```
+
+2.  Stop the application and update the module by using `npm`.
+
+    ```bash title='SH'
+    $ npm uninstall whatap
+    ```

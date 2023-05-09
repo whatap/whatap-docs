@@ -1,0 +1,186 @@
+---
+id: install-master-node-agent
+title: マスターおよびノードエージェントのインストール
+description: インストール案内ページに従って、マスターおよびノードエージェントのインストールプロセスを進めてください。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - エージェント
+  - マスター
+  - ノード
+  - エージェントのインストール
+hide_table_of_contents: true
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+**_インストール案内_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびノードエージェントのインストールプロセスを進めてください。 
+
+<Tabs groupId='k8stype'>
+
+<TabItem value='kubernetes' label='KUBERNETES' default>
+
+## 環境設定
+
+ユーザーのKubernetes環境によっては、事前の環境設定が必要な場合があります。Istio、GKE、OpenShift環境に該当しない場合は、次のステップに進んでください。
+
+<Tabs>
+
+<TabItem value='istio' label='Istio 환경' default>
+
+Istio環境であれば、次のコマンドを実行して必要なリソースを生成してください。
+
+```bash title='SH'
+kubectl create namespace whatap-monitoring
+kubectl label namespace whatap-monitoring istio-injection=enabled
+kubectl apply -f - <<EOF
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: whatap-external
+spec:
+  hosts:
+  - whatap-proxy1
+  - whatap-proxy2
+  addresses:
+  - 13.124.11.223
+  - 13.209.172.35
+  ports:
+  - name: proxy
+    number: 6600
+    protocol: tcp
+    location: MESH_EXTERNAL
+EOF
+```
+
+</TabItem>
+
+<TabItem value='gke' label='GKE 환경'>
+
+Google Kubernetes Engine（GKE）の場合、ユーザークラスターを作成した後、権限設定のために次のコマンドを実行してください。
+
+```bash title='GKE 권한 설정'
+ACCOUNT=$(gcloud info --format='value(config.account)')
+kubectl create clusterrolebinding owner-cluster-admin-binding \
+  --clusterrole cluster-admin \
+  --user $ACCOUNT
+```
+
+:::note
+
+gcloudコマンドのインストールの詳細については、[グーグルクラウド文書](https://cloud.google.com/sdk/docs/install)を参考にしてください。
+
+:::
+
+</TabItem>
+
+<TabItem value='openshift' label='OpenShift 환경'>
+
+![OpenShift](/img/kube-install-openshift.png)
+
+**_インストール案内_**画面で**_OpenShift環境の場合は追加設定_**セクションを開いて**_openshift_scc_**ボタンを選択してください。ファイルをダウンロードした後、次のコマンドを実行してください。
+
+```bash
+oc create -f whatap_openshift_scc.yaml
+```
+
+</TabItem>
+
+</Tabs>
+
+## Kubernetesエージェント作成
+
+ユーザーのKubernetesバージョンとContainer Runtimeに合うYAMLファイルをダウンロードしてエージェントをインストールする段階です。
+
+1.  マスターノードで次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
+
+    ```bash
+    kubectl get node -o wide
+    ```
+
+    ![](/img/k8s-check-version.svg)
+
+2.  **_エージェントインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**に合うYAMLファイルを選択し**_ダウンロード_**ボタンを選択してください。
+
+    ![](/img/k8s-download-yaml.png)
+
+3.  ダウンロードしたYAMLファイルをマスターノードにアップロードしてください。
+
+4.  エージェントを作成するには、マスターノードで次のコマンドを実行してください。 
+
+    ```bash
+    # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように修正してください。
+    kubectl apply -f {whatap_kube_X.YZ.yaml}
+    ```
+
+    :::note
+
+    **WhaTapエージェントは、プロジェクト情報を記憶するために少量のPersistent Volume（PV）が必要です。**パブリッククラウド環境のK8Sでは、Persistent Volume Claim（PVC）リクエストだけでPVが自動的に作成できます。しかし、プライベート環境の場合は、WhaTapのPVCリクエストを受けられるPVが作成されてから、コマンドを実行してください。
+
+    :::
+
+Kubernetes APIを利用して、エージェントが作成（create）されたかが確認できます。
+
+![](/img/k8s-install-agent-check.svg)
+
+## Kubernetesエージェントのインストール確認
+
+次のコマンドを実行して、マスターエージェントとノード エージェントの状態を確認してください。
+
+```bash
+kubectl get pod -n whatap-monitoring
+```
+
+![](/img/k8s-check-running-agent-monitoring.svg)
+
+**STATUS**項目が**Running**の場合は、インストール済みです。マスターおよびノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューで性能情報を収集することを確認してください。
+
+#### Running状態でない場合
+
+![](/img/k8s-not-running-agent-monitoring.svg)
+
+マスターノードで次のコマンドを実行して、ポッド生成の失敗原因を把握してください。実行結果の下段の**Events:**項目を確認してください。
+
+```bash
+kubectl describe pod {POD_NAME} -n whatap-monitoring
+```
+
+![](/img/k8s-check-install-fail.svg)
+
+:::tip
+
+`kubectl`コマンド使用時`-n <ネームスペース>`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるので`-n whatap-monitoring`というオプションを追加します。
+
+:::
+
+</TabItem>
+
+<TabItem value='eksfragate' label='EKS Fargate'>
+
+## Kubernetesエージェント作成
+
+1.  Kubernetesモニタリングのためのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択してください。
+
+2.  ダウンロードしたYAMLファイルを使用してエージェントを作成してください。
+
+    ```bash
+    kubectl -f whatap_kube_fargate.yaml apply
+    ```
+
+{@include: _check-k8s-agent.mdx}
+
+## クラスターネームスペースの確認
+
+エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)画面左側のメニューでプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
+
+</TabItem>
+
+</Tabs>
+
+:::note
+
+-   アプリケーションエージェントのインストールを進めるには、画面右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参考にしてください。
+-   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参考にしてください。
+
+:::

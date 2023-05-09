@@ -1,0 +1,43 @@
+### app_proc_counter
+
+---
+
+アプリケーションプロセスの指標です。
+
+-   収集間隔：5秒
+-   統計データ：5分、1時間
+
+#### Tags
+
+| タグ名          | 説明            | 備考    |
+| ------------ | ------------- | ----- |
+| container    | コンテナ名         | ユニーク値 |
+| containerKey | コンテナキーの値      | ユニーク値 |
+| host_ip      | Host IP       | ユニーク値 |
+| okindName    | アプリケーションの種類名  | -     |
+| oname        | アプリケーション名     | ユニーク値 |
+| onodeName    | アプリケーションNode名 | -     |
+| pid          | アプリケーションPID   | -     |
+| type         | アプリケーションタイプ   | 言語名   |
+
+#### Fields
+
+| フィールド名               | 単位  | 説明                             | 備考 |
+| -------------------- | --- | ------------------------------ | -- |
+| cputime              | ミリ秒 | トランザクションのcpuの時間                | -  |
+| db_num_active        | 整数  | DB Connection Pool Active 수    | -  |
+| db_num_idle          | 整数  | DB Connection Pool Idel 数      | -  |
+| gc_count             | 回数  | GCの発生回数                        | -  |
+| gc_oldgen_count      | 件数  | Old Generation GCカウント          | -  |
+| gc_time              | ミリ秒 | GCの実行時間                        | -  |
+| heap_max             | バイト | ヒープ最大量                         | -  |
+| heap_perm            | バイト | Perm使用量                        | -  |
+| heap_tot             | バイト | ヒープ総量                          | -  |
+| heap_use             | バイト | ヒープ使用量                         | -  |
+| pending_finalization | 整数  | GC中にfianlizeの実行を待機しているオブジェクトの数 | -  |
+| proc_fd              | 整数  | プロセスfdの使用数                     | -  |
+| proc_fd_max          | 整数  | プロセスfdの最大数                     | -  |
+| thread_count         | 整数  | JVMを実行しているスレッドの数               | -  |
+| thread_daemon        | 整数  | JVMデーモンのスレッド数                  | -  |
+| thread_peak_count    | 整数  | JVMの最大スレッド数                    | -  |
+| thread_total_started | 整数  | JVMの実行後、startされたスレッドの総数        | -  |

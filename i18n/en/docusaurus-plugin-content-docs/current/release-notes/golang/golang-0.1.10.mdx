@@ -1,0 +1,18 @@
+---
+id: golang-0.1.10
+title: Golang Agent 0.1.10
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-05-12
+
+## Beta - update
+
+### Collecting SQL and HTTP calls not included in the web transactions
+
+기존에 웹 트랜잭션의 경우 context에 whatap 정보를 포함하고(`trace.Start()` 호출 필요) 고유 트랜잭션 아이디(`Txid`)가 발급된 경우에만 SQL, HTTP Call 정보를 수집했습니다. 
+
+If there is no unique transaction ID, the collected data can be retrieved from only the statistical data.

@@ -1,0 +1,58 @@
+---
+id: compoundeye
+title: コンパウンドアイ
+description: WhaTapモニタリングダッシュボードは、プロジェクトの全体的なステータスを一目で確認する機能を提供します。
+tags:
+  - Server
+  - ダッシュボード
+  - コンパウンドアイ
+  - UI
+---
+
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンパウンドアイ_**
+
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択し **_プロジェクトメニュー_** 下位の **_ダッシュボード_** > **_コンパウンドアイ_**を選択してください。
+
+<!--![](https://img.whatap.io/media/images/Screenshot_2021-03-17_Server_Monitoring1.png) -->
+
+![ダッシュボードコンパウンドアイ](/img/compoundeye-chart.png)
+
+コンパウンドアイにより、WhaTapエージェントがインストールされているすべてのサーバーを漏れなく確認できます。 大規模サーバーのリソース状況を一目で確認できます。 大規模なサーバーリソースに対するサンプリングまたは要約された結果ではなく、視覚的に可視化されたビューを提供します。
+
+## 提供情報
+
+<!-- ![](https://img.whatap.io/media/user_guide_server/dashboard/1430.png) -->
+
+![コンパウンドアイsc](/img/compound-eye.png)
+
+ひとつの目（Eye）です。 全部で5つの情報を提供します。
+
+-   <font color='73C2FC'>CPU</font>：CPU使用量
+-   <font color='C0CA33'>Memory</font>：メモリ使用量
+-   <font color='7632FF'>Disk</font>：Disk使用量
+-   <font color='00BEB8'>Rx</font>：ネットワークのRx（受信量）
+-   <font color='0076AC'>Tx</font>：ネットワークのTx（送信量）
+
+:::note
+
+ネットワーク <font color='00BEB8'>Rx</font>/<font color='0076AC'>Tx</font> 使用量のメトリクスを見てDDoSなどの外部攻撃が複数のサーバーで一斉に発生するか確認できます。
+
+:::
+
+## 異常現象発生
+
+![](https://img.whatap.io/media/images/Screenshot.png)
+
+サーバーに異常現象が発生した場合、個別のアイ（Eye、目）は色でそのステータスを表現します。
+
+-   <span class='ov10'>赤</span>：危険ステータス
+-   <span class='wer'>オレンジ</span>：アラートステータス
+-   <span class='mstop'>グレー</span>：モニタリングの一時停止
+
+さらに、サーバー上にカーソルを置くと、個別情報が数値化されたポップアップメッセージが表示されます。 サーバーをクリックすると、そのサーバーの要約ページに移動し、詳細を把握できます。
+
+## Traffic Max Valueオプション
+
+ネットワーク環境によってトラフィック量が変化する可能性があるため、トラフィックの最大値を調整できます。トラフィックの最大値を設定すると、値に応じてRx/Txグラフが変更されます。
+
+![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring6.png)

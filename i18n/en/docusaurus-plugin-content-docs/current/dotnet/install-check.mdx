@@ -1,0 +1,17 @@
+---
+id: install-check
+title: Installation checking items
+description: The items must be checked after installing the .NET agent.
+tags:
+  - .NET
+---
+
+## Checking the service behaviors
+
+Check whether the **_WhaTap.NET_** service is registered normally and it is **_running_**.
+
+With the administrator role, execute the `services.msc` command or double-click the service icon to open the Services administrator.
+
+![Windows Service Admin](https://img.whatap.io/media/agent_dotnet/install/whatap-windows-service.png)
+
+The **WhaTap .NET** service transfers the collected monitoring data to the WhaTap server. Check the related logs in the _C:\\Program Files\\WhatTap .NET\\logs_ path.

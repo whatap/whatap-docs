@@ -1,0 +1,24 @@
+---
+id: agent-pcounter
+title: Configuring the Windows performance counter
+description: It explains how to configure the Windows performance counter.
+tags:
+  - Server
+  - Configuration
+---
+
+The Windows performance count can be arbitrarily collected. 
+
+Add the performance counter set name to the WhaTap server monitoring configuration file. 
+
+-   The performance counter set name can be retrieved.
+    ```bash title='Windows Powershell'
+    Get-Counter -ListSet *
+    ```
+
+-   A performance counter set can be added in the configuration file.
+    ```bash title='Windows Powershell'
+    Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "performance.counter.$(Get-Date -uformat %s)=Performance counter set name to view"
+    ```
+
+-   추가한 성능 카운터는 **_분석_** > **_메트릭스 조회_** 메뉴에서 **_카테고리_** `performance_counter_{성능 카운터 세트 이름}`으로 조회할 수 있습니다.

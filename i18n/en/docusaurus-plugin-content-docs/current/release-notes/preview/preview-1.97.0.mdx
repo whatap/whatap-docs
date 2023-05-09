@@ -1,0 +1,326 @@
+---
+id: preview-1.97.x
+title: Preview 1.97.X
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+:::note
+
+<https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+
+:::
+
+## Preview-1.97.14
+
+2023년 3월 27일
+
+### `공통`
+
+<p><Status>Fixed</Status> MXQL 데이터 조회 후 CSV가 다운로드되지 않는 문제 수정</p>
+
+## Preview-1.97.12
+
+2023년 3월 24일
+
+### `공통`
+
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 로그 이벤트 추가 시 <UI>이벤트 발생 일시 중지</UI> 항목에 대한 설명 문구 수정
+
+-   <Status>Change</Status> 화면 왼쪽 사이드 바에서 <img src='/img/ico-search.svg' alt='검색 아이콘' /> 검색 기능 이용 시 에이전트 검색 조회 성능 개선건 롤백
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>경고 알림 메뉴</UI>에서 알림을 복사할 때, <UI>알림 정책 복사</UI> 창에서 선택할 수 있는 프로젝트 목록 중 일부가 누락되는 버그 수정</p>
+
+## Preview-1.97.11
+
+2023년 3월 24일
+
+### `Database`
+
+<p><Status>Fixed</Status> <UI>경고 알림</UI> &gt; <UI>파일 로그 알림</UI> 메뉴에서 로그가 발생하지 않은 시간대를 조회하면 이전 로그 데이터가 남아있는 현상 수정</p>
+
+## Preview-1.97.10
+
+2023년 3월 23일
+
+### `공통`
+
+#### My Usage
+
+**_프로젝트 유료 전환_** 메뉴에서 다음의 기능을 추가 및 수정합니다.
+
+-   <Status>Change</Status> 사용자 편의성 위한 UI 개선
+-   <Status>Feature</Status> 원하는 프로젝트를 여러 개 선택해 유료로 전환하는 기능 추가
+-   <Status>Change</Status> <UI>월간 예상비용</UI> 컬럼에서 제품별 상세를 확인할 수 있도록 수정
+
+#### Management
+
+<p><Status>Change</Status> <UI>계정 정보 관리</UI> &gt; <UI>회원 탈퇴</UI> 메뉴를 이용해 회원 탈퇴할 경우 유의 사항 최신화 및 탈퇴 관련 사항(미납금, 권한 정보) 등 확인 절차 추가</p>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> &gt; <UI>컨테이너 맵</UI> 메뉴에서 <img src='/img/ico-reset.svg' alt='리셋 아이콘' /> <UI>리셋</UI> 버튼을 클릭하면 옵션이 초기화되지 않는 현상 수정</p>
+
+### `AWS`, `Azure`, `NCP`, `OCI`
+
+-   <Status>Change</Status> 프로젝트 내 서비스마다 수집 주기를 설정할 수 있도록 기능 및 UI 수정
+-   <Status>Feature</Status> 활성화된 서비스만 표시하는 필터 추가
+-   <Status>Feature</Status> 서비스 이름 검색창 추가
+
+## Preview-1.97.9
+
+2023년 3월 22일
+
+<!--
+### `AWS`
+
+<p><Status>New</Status> <b>AWS Log</b> 신규 상품을 추가했습니다. 많은 이용 부탁드립니다! 자세한 내용은 <a href='../../aws-log/introduction' target='_blank'>다음 문서</a>를 참조하세요.</p>
+-->
+
+### `공통`
+
+-   <Status>Fixed</Status> 화면 왼쪽 사이드 바에서 <img src='/img/ico-search.svg' alt='검색 아이콘' /> 검색 기능 이용 시 에이전트 검색 조회 성능 개선
+
+-   <Status>Change</Status> <UI>로그</UI> > <UI>로그 트렌드</UI> 메뉴에서 조회 시간을 변경했을 때 선택한 필터에 대한 결과가 없을 경우 앞서 선택한 필터를 해제할 수 있도록 개선
+
+-   <Status>Deprecate</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI> 메뉴는 2023년 5월 1일 이후 왼쪽 사이드 메뉴에서 제거, 사이트맵으로 이전 예정 관련 안내 표시
+
+## Preview-1.97.8
+
+2023년 3월 20일
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> &gt; <UI>컨테이너 맵</UI>에서 <UI>필터</UI> 옵션으로 <UI>포함</UI>을 선택하면 부분 일치하는 컨테이너가 표시되지 않는 현상 수정</p>
+
+## Preview-1.97.7
+
+2023년 3월 17일
+
+### `공통`
+
+<!--
+#### 계정 정보 관리
+
+<p><Status>Feature</Status> <UI>계정 정보</UI> &gt; <UI>회원 탈퇴</UI> 유의 사항 최신화 및 회원 탈퇴 관련 확인 절차 추가</p>
+-->
+
+#### MXQL Executor
+
+<p><Status>Fixed</Status> <UI>CSV 다운로드</UI> 기능이 정상 작동하지 않아 다운로드 버튼 제거 후 재배포 예정</p>
+
+<!-- 
+### `RUM`
+
+#### Flex 보드
+
+- <Status>Fixed</Status> 대시보드의 URL 그룹 필터가 정상 적용되지 않는 문제 수정 및 필터 위치 이동
+- <Status>Fixed</Status> 환경별 대시보드의 브라우저별, OS별, 디바이스별 바(bar) 차트 위젯 MXQL 버그 수정
+- <Status>Fixed</Status> 일부 위젯 중 필드 기준으로 차트 컬러가 설정되지 않는 위젯 수정
+-->
+
+#### Analytics
+
+-   <Status>Fixed</Status> 스택 정보가 정상 표시되지 않는 문제 수정
+
+## Preview-1.97.6
+
+2023년 3월 14일
+
+<p><Status>Fixed</Status> MXQL 쿼리 내 필드명에 특수 문자가 들어가면 MXQL 데이터 호출 시 발생하는 버그 수정을 위해 MXQL 쿼리 생성 로직 수정</p>
+
+## Preview-1.97.5
+
+2023년 3월 14일
+
+<p><Status>Fixed</Status> <UI>관리</UI> &gt; <UI>정비 계획</UI> 메뉴에서 <UI>매월</UI> 탭을 클릭하면 화이트 아웃 발생 현상 수정</p>
+
+## Preview-1.97.4
+
+2023년 3월 14일
+
+### `공통`
+
+<p><Status>Feature</Status> <UI>관리</UI> &gt; <UI>프로젝트 관리</UI> 메뉴에서 경고 알림 언어 선택 옵션 추가</p>
+
+### `Server`
+
+-   <Status>Feature</Status> <UI>서버 목록</UI> &gt; <UI>서버 상세</UI> 메뉴에서 <UI>프로세스</UI> 테이블의 정렬 옵션으로 <UI>개수 내림차순</UI> 추가
+
+-   <Status>Feature</Status> <UI>경고 알림</UI> &gt; <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>3rd 파티 플러그인</UI> 설정에 <UI>에스컬레이션</UI> 옵션 추가
+
+    -   Escalation을 <UI>에스컬레이션</UI>으로 번역
+    -   옵션을 수정하면 유효성 체크를 진행하도록 수정
+    -   옵션값을 변경한 다음 저장하지 않으면 버튼의 색상을 변경하도록 수정
+
+## Preview-1.97.2
+
+2023년 3월 13일
+
+<p><Status>Fixed</Status> <UI>경고 알림</UI> &gt; <UI>이벤트 수신 설정</UI> 메뉴에서 등록한 모바일 기기의 수가 표시되지 않는 버그 수정</p>
+
+## Preview-1.97.1
+
+2023년 3월 9일
+
+-   <Status>Fixed</Status> <code>Server</code> 프로젝트의 <UI>로그 설정</UI> 메뉴의 에이전트 설정 옵션 수정
+
+-   <Status>Fixed</Status> 채널톡 > 와탭 지원팀 초대 기능이 동작하지 않는 버그 수정
+
+    :::note
+
+    와탭 지원팀 초대 버튼은 **멤버 관리** 권한을 보유한 사용자에게만 노출됩니다.
+
+    :::
+
+-   <Status>Fixed</Status> <code>Server</code> 프로젝트의 <UI>대시보드</UI> > <UI>리소스 보드</UI> 메뉴에서 <b>Top N 이퀄라이저</b> 차트 화면 사이즈가 큰 경우 Y축이 길게 표시되는 현상 수정
+
+## Preview-1.97.0
+
+2023년 3월 8일
+
+### `공통`
+
+#### User Interface (UI)
+
+사용자 만족도를 높이기 위해 다음과 같이 사용자 인터페이스 디자인을 개선합니다.
+
+-   <Status>Change</Status> <UI>이용내역</UI> > <UI>청구서 미리보기</UI> 메뉴의 UI 개선
+
+    -   프로젝트, 상품별로 그룹화 된 청구서 미리보기 정보 제공
+    -   그룹화된 데이터의 관련 상품 정보 및 과금 집계량, 청구금액 합 확인 가능
+
+-   <Status>Change</Status> 화면 상단에 위치한 '메뉴 경로'를 '메뉴명'으로 표시하도록 변경
+
+    -   변경 전: 상위 경로 > 메뉴명
+    -   변경 후: 메뉴명
+
+-   <Status>Change</Status> 화면 오른쪽 위에 와탭 기술 문서 링크 버튼 추가 및 채널톡 내 기술 문서 링크 제거
+
+-   <Status>Fixed</Status> 서비스 로고 옆에 위치한 브라우저 시간 불일치 알림 아이콘 위치 수정
+
+-   <Status>Fixed</Status> 프로젝트가 없는 그룹을 선택하면 프로젝트 생성 페이지로 이동하지 않도록 수정
+
+#### Flex Board
+
+-   <Status>Change</Status> 대시보드 및 목록을 화면에 불러올 때 로딩 인디케이터 적용
+
+-   <Status>Feature</Status> Series 위젯 타입의 차트 설정에서 범례 표시 추가
+
+-   <Status>Feature</Status> Series 위젯 타입에 누적 차트 타입 추가
+
+-   <Status>Feature</Status> Series 위젯 타입의 차트 설정에서 차트 색상 기준 옵션 추가
+
+    -   기존: 태그를 기준으로 차트 색상 표현
+    -   추가: 필드 기준으로 차트 색상을 나타낼 수 있는 옵션
+
+-   <Status>Feature</Status> DB 상품군에서 다음 위젯 템플릿 추가
+
+    -   **DB 공통**
+        -   CPU % (xos) 위젯
+        -   Memory % (xos) 위젯
+    -   **MySQL**
+        -   Slow Query
+    -   **PostgreSQL**
+        -   Slow Query
+        -   PostgreSQL Wait Event 건수 위젯
+        -   PostgreSQL Client Ip 건수 위젯
+        -   PostgreSQL 통계 테이블
+        -   PostgreSQL 액티브 세션 건수
+        -   PostgreSQL 액티브 세션 테이블
+
+#### Log
+
+-   <Status>Change</Status> <UI>로그</UI> 메뉴의 기능에 대한 빠른 이해를 위해 메뉴명 변경
+
+    -   <UI>라이브 Tail</UI> → <UI>라이브 테일</UI>
+    -   <UI>탐색기</UI> → <UI>로그 트렌드</UI>
+    -   <UI>검색기</UI> → <UI>로그 검색</UI>
+
+-   <Status>Change</Status> <UI>로그 검색</UI> 메뉴에서 조회 내용을 <UI>Timestamp</UI> 기준으로 정렬하는 기능(<UI>최근 순</UI>/<UI>과거 순</UI>) 변경
+
+-   <Status>Feature</Status> <UI>로그 트렌드</UI>에서 검색키를 최대 2개까지 선택할 수 있도록 수정(검색값은 제한 없음)
+
+-   <Status>Change</Status> <code>Server</code> 프로젝트의 <UI>로그 설정</UI> 메뉴에서 에이전트 설정 옵션 변경
+
+#### Alert
+
+-   <Status>Feature</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>에이전트 중복 알림</UI> 옵션 추가
+
+    > 모니터링 중인 에이전트 가운데 동일한 ID를 설정한 에이전트가 2개 이상일 때 지표를 중복으로 수집하면서 발생하는 경고 알림입니다. 에이전트 이름을 중복으로 설정하지 않았는지 에이전트 설정에서 관련 옵션을 확인하세요. 블루/그린과 같은 배포 상황에서 에이전트가 중복되어 경고 알림이 발생할 경우 이 기능을 이용하길 권장합니다. 같은 이름의 에이전트가 동시에 2개 이상 기동된 경우 선택한 시간 동안 알림을 받지 않습니다.
+
+-   <Status>Feature</Status> <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>수신 태그 미설정 알림 받기</UI> 옵션 추가
+
+    > **_이벤트 수신 태그_**가 설정되지 않은 경고 알림을 받지 않으려면 해당 옵션을 선택하세요.
+
+#### Management
+
+-   <Status>Feature</Status> <b>로그 조회</b> 권한 추가
+
+-   <Status>Fixed</Status> 멤버 초대 창에서 <b>멤버 관리</b> 권한을 OFF할 수 없는 버그 수정
+
+#### has been changed to product catalog
+
+-   <Status>Feature</Status> 프로젝트 추가 시 <UI>프로젝트 그룹</UI> 항목에 그룹 검색 기능 추가
+
+-   <Status>Change</Status> 조직을 선택한 상태에서 프로젝트 추가 시 <UI>프로젝트 그룹</UI> 항목을 필수 선택하도록 변경
+
+### `Server`
+
+-   <Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 기록 메뉴</UI>에서 <UI>마지막 변경 시간 표시</UI> 옵션 추가
+
+-   <Status>Change</Status> <UI>서버 설정</UI> > <b>원격 파일 뷰어</b> 메뉴 명칭을 <UI>에이전트 로그 뷰어</UI>로 변경
+
+### `Application`
+
+#### Application Dashboard
+
+-   <Status>Fixed</Status> 히트맵 위젯에서 Yard 중단 이후 데이터 호출이 중단되는 현상 수정
+
+-   <Status>Fixed</Status> 액티브 트랜잭션 위젯에서 모든 에이전트를 비활성화하면 차트를 업데이트하지 않는 문제 수정
+
+#### STAT/REPORT
+
+<p><Status>Change</Status> <UI>통계</UI> 메뉴에서 조회 시간 범위를 최대 62일에서 <b>최대 31일</b>로 변경</p>
+
+### `Container`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 페이지 UI 및 내용 개선</p>
+
+### `Database`
+
+#### 데이터베이스 공통
+
+-   <Status>Feature</Status> <UI>통계/보고서</UI> > <UI>SQL 통계</UI> 메뉴에서 다음의 테이블 기능 추가
+
+    -   테이블의 컬럼 크기 조절 가능
+    -   페이지를 벗어나도 조절한 컬럼 크기가 해제되지 않도록 설정 저장
+    -   테이블 헤더의 각 컬럼 항목을 선택하면 선택 기준에 따라 목록 정렬
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴의 안내 문구 위치 수정
+
+#### PostgreSQL, MySQL
+
+<p><Status>Feature</Status> <UI>통계/보고서</UI> > <UI>데이터베이스 사이즈</UI> 신규 UI 적용</p>
+
+#### Tibero
+
+<p><Status>Change</Status> <UI>통계/보고서</UI> > <UI>테이블스페이스 사이즈</UI> 메뉴에서 테이블스페이스 사용량에 따른 프로그레스 바의 색상 변경</p>
+
+### `AWS`
+
+<p><Status>Fixed</Status> AWS 프로젝트의 <UI>이벤트 기록</UI> 메뉴를 선택하면 연관 없는 스냅샷 페이지로 이동하는 버그 수정</p>
+
+### `RUM`
+
+<p><Status>Feature</Status> <UI>분석</UI> > <UI>에러 추적</UI> 메뉴 추가</p>
+
+> 웹 애플리케이션 브라우저 레벨에서 발생하는 에러를 수집하여 확인할 수 있습니다.

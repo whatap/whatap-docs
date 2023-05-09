@@ -1,0 +1,328 @@
+Home > Select Project > **_STAT/REPORT_** > **_REPORT_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_STAT/REPORT_** > **_REPORT_** under Project Menu. If you click ![down-arrow](/img/down-arrow.svg) on the report screen, you can see various application analysis reports categorized by daily, weekly, and monthly.
+
+## **_Daily Application Report_**
+
+**_Daily Application Report_** displays the application performance records for the day with figures and charts. You can search by setting the start date, start time, and end time.
+
+### Summary
+
+<!-- ÷  개요, 피크타임 성능 요약, 지표별 평균 최댓값 안내 함께?-->
+
+![](https://img.whatap.io/media/images/app_daily_report_01.png)
+
+**Summary** displays an overview of the application for the selected query period. **Peak Time Performance Summary** can display the time when the throughput was highest for the day and the metrics for the time period.
+
+-   **Visitor**(**DAU**, Daily Active User)<br/>
+    Number of users who accessed during the selected query period.
+
+-   **Request**<br/>
+    Number of transactions that flowed in during the query period.
+
+-   **Error Rate**<br/>
+    Rate of the number of errors divided by the number of transactions.
+
+-   **Fatal Event**<br/>
+    Number of metrics events in critical level that occurred during the query period.
+
+-   **Application Server**<br/>
+    Number of applications (agents) monitored during the query period.
+
+-   **CPU Core**<br/>
+    Number of CPU cores during the query period.
+
+-   **APDEX\*100** (Application Performance Index) <br/>
+    Customer performance satisfaction on the application during the query period.
+
+-   **Throughput**(TPS, Transactions Per Second)<br/>
+    It indicates the number of transactions processed per second and is the criterion for service performance metrics.
+
+<!-- 지표별 평균 최댓값 안내 삽입? -->
+
+### Performance trend chart
+
+![](/img/app_daily_report_dau-process.png)
+
+Through **Perf. Trend Chart**, you can see the visualized key metrics.
+
+The metrics that can be seen in **Perf. Trend Chart** are **Concurrent User**, **Visitor Count per Hour**, **Throughput** (TPS), **Average Res. Time**, **CPU Utilization**, **Heap Usage**, **Error Count**, and **Daily Transaction Distribution**. In each graph, you can check the time and number whose metric was the highest.
+
+{@include: ../common-items/_csv-download.mdx} 
+
+![](https://img.whatap.io/media/images/app_daily_report_03.png)
+
+The daily transaction distribution displays the hourly transaction distributions at a glance. The X-axis of the graph represents the end times of each transaction, and the Y-axis represents the response times (seconds). Normal transactions are displayed in <span class='ntrs'>blue</span>, and erroneous transactions are displayed in <span class='etrs'>red</span>.
+
+### Status for each application
+
+![](https://img.whatap.io/media/images/app_daily_report_04.png)
+
+For each monitoring target, you can see the **peak time performance** and **daily average performance**. **Active Count** indicates the number of active transactions.
+
+### Top 5 transactions
+
+![](https://img.whatap.io/media/images/app_daily_report_05.png)
+
+It displays only top 5 transactions with the highest number of transactions, errors, and average response time during the day.
+
+### Top 10 SQL average response times
+
+![](https://img.whatap.io/media/images/app_daily_report_07.png)
+
+It is the statistical data sorted by the average response time for SQL queries during the query period. In **_STAT/REPORT_** > **_Statistics_** > **_SQL_**, you can see the times and performances for each query in detail.
+
+:::note 
+
+**Increase %**  
+
+It is a figure calculated by comparing the average value of the data for three days before inquiry with the data on the day of inquiry.
+
+-   Example<br/>
+    `4/25 00:00` to `23:59` data inquiry → comparison with `4/22 00:00` to `4/24 23:59` data<br/>
+    If the figure is greater than 10%, it appears in <span class='ov10'>red</span>, and it is between 5% and 10%, it appears in <span class='ov5ud10'>orange</span>. The increase rates of less than 5% do not appear.
+
+:::
+
+## **_Weekly Application Report_**
+
+**_Weekly Application Report_** displays the application performances for the week with figures and charts. You can enter the start date and view from 7 days before the day of inquiry.
+
+### Summary
+
+![](https://img.whatap.io/media/images/app_weekly_report_01.png)
+
+-   **Weekly Active User**<br/>
+    Number of users logged on for the week
+
+-   **Weekly Transaction Count**<br/>
+    Numbers of processed requests and responses returned for the week  
+
+-   **APDEX\*100**<br/>
+    It indicates the customer performance satisfaction with the application for the query period.    
+
+### Working rate
+
+![](https://img.whatap.io/media/images/app_weekly_report_02.png)
+
+You can check the working rates for each monitoring target by date, and you can check their weekly averages. If no data, the status appears with **-**. If data exists but the value is too small, the status appears with **0**.
+
+### Performance trend chart
+
+![](https://img.whatap.io/media/images/app_weekly_report_03.png)
+
+On the chart of the weekly application report, there are **visitor count**, **APDEX\*100**, **real-time user**, **transaction count**, **response time**, **throughput**, **active transaction**, **CPU utilization**, and **heap usage**.
+
+The X-axis of the chart represents the date, and the Y-axis represents the value of the metric. You can see the date with the highest value and the value can be checked in text on the graph.
+In the table below the graph, you can see the daily average, maximum value, weekly average, and more. 
+
+{@include: ../common-items/_csv-download.mdx} 
+
+### Top 10 transactions
+
+In the comparison of Top 10 transactions, you can compare data for the week based on the start date with the data for the previous week.
+
+For detailed information for each transaction, you can see in **_STAT/REPORT_** > **_Statistics_** > **_Transaction_**.
+
+:::note 
+
+**Example** Start date: 4/22
+
+-   Lookup week: `4/22 00:00` to `4/28 23:59`
+-   Previous week: `4/15 00:00` to `4/21 23:59`
+
+:::
+
+#### Transaction count
+
+![](https://img.whatap.io/media/images/app_weekly_report_04.png)
+
+This is the sorted result of the transactions received for the week in descending order based on the number of transactions.
+
+-   **Transaction Count**<br/>
+    It indicates the number of responses returned by the application after processing. It becomes a metric to see which service (URL) is most active during the week.
+
+-   **Inc/Dec**<br/>
+    The figure is used to compare between the numbers of transactions for the week and the previous week of inquiry, and the rate is the figure as a percentage.
+
+#### Number of errors
+
+![](https://img.whatap.io/media/images/app_weekly_report_05.png)
+
+This is the sorted result of transactions received during the week in descending order based on the number of errors. 
+
+-   **Error Count**<br/>
+    This statistical data allows you to check which services (URL) have many errors.
+
+-   **Inc/Dec**<br/>
+    The figure is used to compare the error counts for the week and the previous week of inquiry, and the rate is the figure as a percentage.
+
+#### Average response time
+
+![](https://img.whatap.io/media/images/app_weekly_report_06.png)
+
+This is the sorted result of transactions received during the week in descending order based on the average response time.
+
+{@include: ../common-items/_average-response-time.mdx} 
+
+-   **Inc/Dec Time**<br/>
+    The figure is used to compare the response times between the week and the previous week of inquiry, and the rate is a percentage.
+
+### Top 10 SQL average response times
+
+![](https://img.whatap.io/media/images/app_weekly_report_08.png)
+
+This is the sorted result of SQL queries by the average response time. You can compare the numbers of weekly cases and average times for each query statement.
+
+-   **Inc/Dec Time**<br/>
+    The figure is used to compare the average SQL processing times between the week and the previous week of inquiry, and the rate is a percentage.
+
+### Project errors
+
+![](https://img.whatap.io/media/images/app_weekly_report_09.png)
+
+In the project error status, errors are compared for each week. You can see the classes and error messages of errors. 
+
+-   **Error Count**<br/>
+    This is the sorted result of errors in descending order after summing the same error classes and error messages.
+
+-   **Inc/Dec**<br/>
+    The figure is used to compare the error counts between the week and the previous week of inquiry, and the rate is a percentage.
+
+{@include: ../common-items/_rate-of-change.mdx}  
+
+## **_Monthly Application Report_**
+
+**_Monthly Application Report_** displays the application performances for the month with figures and charts. You can enter the start date and view from 30 days before the day of inquiry.
+
+### Summary
+
+![](https://img.whatap.io/media/images/app_monthly_report_01.png)
+
+In **Summary**, you can see the figures for **transaction count**, **user count**, **working rate**, **application count**, **core count**, and **Apdex\*100** for the month.
+
+-   **Monthly Transaction Count**<br/>
+    Total number of transactions received for the month.
+
+-   **Monthly User Count**(**MAU**, Monthly Active User)<br/>
+    Number of users who accessed during the selected query period.
+
+-   **Working Rate**<br/>
+    Average value of working rates for each application for the month.
+
+-   **Application Servers**<br/>
+    Number of applications monitored during the month.
+
+-   **All Cores**<br/>
+    Number of CPU cores during the month.
+
+-   **APDEX\*100** (Application Performance Index) <br/>
+    Customer performance satisfaction on the application during the query period.
+
+### Status for each application
+
+![](https://img.whatap.io/media/images/app_monthly_report_02.png)
+
+For each monitoring target, you can see the data for **IP address**, **OS information**, and**monthly average working rate**.
+
+### Performance trend chart
+
+![](https://img.whatap.io/media/images/app_monthly_report_03.png)
+
+You can see the key metrics for a month with a chart. In the monthly application report, the metrics displayed on the chart are as follows:
+
+-   **Customer Loyalty**<br/>
+    This value quantifies how many users are using the service every day among week-based users.
+
+-   **Daily Active User**<br/>
+    This graph displays the number of users logged on for the day.
+
+-   **Daily Transaction Count**<br/>
+    This graph displays the number of incoming transactions for the day.
+
+-   **Transaction Count per Hour**<br/>
+    This graph displays the numbers of incoming transactions for each hour.
+
+-   **Error Count per Hour**<br/>
+    This graph displays the numbers of incoming transaction errors per hour by date.
+
+-   **Active Transaction**<br/>
+    This graph displays the numbers of incoming active transactions per hour by date.
+
+-   **Throughput**<br/>
+    This graph displays the transaction throughput per second calculated every hour by date.
+
+-   **Average Response Time per Hour**<br/>
+    This graph displays the average response times of incoming transactions per hour by date.
+
+-   **Heap Use**<br/>
+    This graph displays the used Java heap memory amount per hour by date.
+
+-   **CPU SYS Utilization**<br/>
+    This graph displays the CPU SYS usage % for the day by date.
+
+-   **Process CPU Utilization**<br/>
+    This graph displays the utilization percentage of CPU used by the Java process for the day by date.
+
+-   **APDEX\*100**<br/>
+    This graph displays the customer satisfactions for the day by date.
+
+:::note
+
+**APDEX** (Application Performance Index) calculation method
+
+According to the response speed, calculation is performed with 3-level classifications (**Satisfied**, **Allowed**, **Dissatisfied**).  
+
+> APDEX\*100 = (number of satisfied users + (allowed count \* 0.5 / total user count)) \* 100
+
+:::
+
+{@include: ../common-items/_csv-download.mdx} 
+
+### Top 10 transactions
+
+#### Transaction count
+
+![](https://img.whatap.io/media/images/app_monthly_report_04.png)
+
+This is the sorted result of transactions received for the month in descending order based on the number of transactions. 
+
+-   **Transaction Count**<br/>
+    It indicates the number of responses returned by the application after processing. It becomes a metric to see which service (URL) was most active during the week.
+
+-   **Inc/Dec**<br/>
+    The figure is used to compare the transaction counts for the month and the previous month of inquiry, and the rate is a percentage.
+
+#### Number of errors
+
+![](https://img.whatap.io/media/images/app_monthly_report_05.png)
+
+This is the sorted result of transactions received for the month in descending order based on the number of errors. 
+
+-   **Error Count**<br/>
+    This statistical data allows you to check which services (URL) have many errors.
+
+-   **Inc/Dec**<br/>
+    The figure is used to compare transaction counts for the month and the previous month of inquiry, and the rate is a percentage.
+
+#### Average response time
+
+![](https://img.whatap.io/media/images/app_monthly_report_06.png)
+
+This is the sorted result of transactions received for the month in descending order based on the average response time. 
+
+{@include: ../common-items/_average-response-time.mdx} 
+
+-   **Inc/Dec Time**<br/>
+    The figure is used to compare the response times for the month and the previous month of inquiry, and the rate is a percentage.
+
+### Top 10 SQL average response times
+
+![](https://img.whatap.io/media/images/app_monthly_report_08.png)
+
+This is the sorted result of SQL queries by the average response time. You can compare the numbers of monthly cases and average times for each query statement.
+
+-   **Inc/Dec Time**<br/>
+    The figure is used to compare the average SQL processing times between the month and the previous month of inquiry, and the rate is a percentage.
+
+{@include: ../common-items/_rate-of-change.mdx}  

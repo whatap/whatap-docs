@@ -1,0 +1,38 @@
+---
+id: manage-pkg
+title: パッケージ管理
+description: Pythonエージェントのパッケージ管理方法を提供します。
+tags:
+  - Python
+  - 管理
+---
+
+## パッケージインストールの確認
+
+次のコマンドを使用して、WhaTap Pythonエージェントパッケージのインストール状態を確認できます。
+
+```javascript title=SH
+$ pip list | grep whatap-python
+```
+
+## パッケージアップデート{#update-pkg}
+
+次のコマンドを使用して、WhaTap Pythonエージェントのパッケージをアップデートできます。
+
+```javascript title=SH
+$ pip install -U whatap-python
+```
+
+特定のバージョンを明示している場合は、以下を参照してください。
+
+```javascript title=SH
+$ pip install -U whatap-python==[特定のバージョン]
+```
+
+## パッケージ削除
+
+次のコマンドを使用して、WhaTap Pythonエージェントのパッケージを削除できます。
+
+```javascript title=SH
+$ pip uninstall whatap-python
+```

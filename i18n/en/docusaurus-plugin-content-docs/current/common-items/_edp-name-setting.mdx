@@ -1,0 +1,19 @@
+Generally, transactions are identified by the method name.
+
+```ini title='whatap.conf'
+service_name_mode=[full,class,method,string,arg]
+service_name_index=0
+```
+
+-   **service_name_mode**<br/>
+      You can specify any of 5 options: `full`, `class`, `method`, `string`, and `arg`.
+
+    -   `full`: The full class name is used as the service name.
+
+    -   `class`: The class name is used as the service name.
+
+    -   `method`: The method name is used as the service name.
+
+    -   `string`: The first parameter in the text string is used as the service name.
+
+    -   `arg`: Among parameters, the parameter of the index specified in the `service_name_index` option is used as the service name.

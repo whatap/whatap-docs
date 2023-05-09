@@ -1,0 +1,94 @@
+---
+id: agent-transaction
+title: トランザクション
+description: エージェントのトランザクションパフォーマンスを追跡および設定するためのオプションを提供します。
+tags:
+  - Node.js
+  - トランザクション
+---
+
+{@include: ../common-items/_transaction.mdx}
+
+エージェントでトランザクションのパフォーマンスを追跡および設定するため、次のオプションを提供します。
+
+### トランザクショントレーシング
+
+{@include: ../common-items/_transaction-profiling-common.mdx}
+
+{@include: ../common-items/_transaction-profile-active-color.mdx}
+
+-   **hook_method_patterns** <span class='type'>String</span><br/>
+      レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、星印(\*)をワイルドカードとして使用することができます。対象が複数ある場合は、コンマ(,)で区切ります。
+
+    ```ini title='예시'
+    hook_method_patterns=a.b.C1.*
+    ```
+
+-   **hook_method_access_public_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>メソッドトレースを設定する際、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
+
+-   **hook_method_access_protected_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>メソッドトレースを設定する際、protectedメソッドに限って別途対象として処理するかを設定します。
+
+-   **hook_method_access_private_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>メソッドトレースを設定する際、privateメソッドに限り、別途対象として処理するかを設定します。
+
+-   **hook_method_access_none_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
+
+-   **hook_method_ignore_prefixes** <span class='type'>String</span><br/>
+    デフォルト値 `get,set`<br/>メソッドトレースを設定する際、トレースから除外したいクラスをprefixに設定します。
+
+-   **hook_method_ignore_classes** <span class='type'>String</span><br/>
+    メソッドトレースを設定する際にトレースから除外したいクラスを設定します。
+
+### HTTPトランザクションの追跡
+
+{@include: ../common-items/_transaction-trace-common.mdx}
+
+{@include: ../common-items/_transaction-profile-http.mdx}
+
+-   **trace_ignore_url_set** <span class='type'>String</span><br/>
+    トランザクション追跡から除外するURLを設定します。2つ以上の値を設定するには、コンマ（,）を区切り文字として使用します。
+
+-   **trace_ignore_url_prefix** <span class='type'>String</span><br/>
+    トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定するには、コンマ（,）を区切り文字として使用します。
+
+### 非HTTPトランザクションのトレース
+
+-   **hook_service_patterns** <span class='type'>String</span><br/>
+    NON-Httpトランザクション追跡の開始点パターンを設定します。
+
+-   **trace_background_socket_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>ソケット（TCP）接続がオープンした時にトランザクションを開始した状況でオープンを追跡しますが、トランザクションではなくバックグラウンドスレッドによってソケットがオープンされた時も追跡するようにします。
+
+### トランザクションのトレース
+
+-   **trace_service_port_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `fasle`<br/>は、トランザクション名にポート番号を追加します。
+
+### マルチトランザクショントレース
+
+-   **mtrace_rate** <span class='type'>Int</span><br/>
+    デフォルト値 `0`<br/>最初のトランザクションが発生したときに発行されるマルチトランザクション追跡機能（Multi Transaction ID、以下MTID）の発行レートを設定するオプションです。`0`から`100`まで設定できます。MTIDを追ことで、登録されているすべてのアプリケーション間の呼び出しを確認できます。同じプロジェクトに属するアプリケーションは、Caller & Callee機能を使用してトランザクションのトレースをすぐに確認することができます。
+
+-   **mtrace_spec** <span class='type'>String</span><br/>
+    デフォルト値：`v1`<br/>現在のインスタンスのアプリケーションバージョンを設定します。任意の文字列を入力できます。このデータは、呼び出し統計のために利用します。
+
+-   **mtrace_caller_key** <span class='type'>String</span><br/>
+    デフォルト値 `x-wtap-mst`<br/>MTID追跡に使用するCaller Key Nameを設定します。
+
+-   **mtrace_callee_key** <span class='type'>String</span><br/>
+    デフォルト値 `x-wtap-tx`<br/>MTID追跡に使用するCallee Key Nameを決めます。
+
+-   **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>は、MTID追跡時に受信したCallee IDのトレースを表します。
+
+-   **mtrace_alltx_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>log4jなどのロギングシステムと連携するために、すべてのトランザクションのMTIDを追跡できます。
+
+-   **mtrace_basetime** <span class='type'>Miliseconds</span><br/>
+    デフォルト値 `100`<br/>`mtrace_alltx_enabled`オプションの値が`true`の場合、あまりにも多くのログが残る可能性があります。この場合、トレースログの量を減らす必要があります。
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>CallerとCalleeの相関統計を収集します。Callerに適用するとCallerの詳細情報が送信され、Calleeを適用するとurl単位のCaller-Calleeの呼び出し統計が収集サーバーに送信されます。

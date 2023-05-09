@@ -1,0 +1,34 @@
+## What is Topology?
+
+Through the real-time data collected from the monitored servers, you can easily understand the correlation between application servers.
+
+Learn more about the topology from the following video clip:
+
+{@youtube: 10sYNSZNZEk}
+
+:::note
+A typical topology definition does not include the nodes that have no link data. From the monitoring point of view, the topology also requires the data of isolated nodes.
+:::
+
+## Basic elements of the topology
+
+The data on the topology screen is divided into nodes, links, and additional information for each.
+
+![Topology Node Error Info](/img/topology-element.png)
+
+-   ![Leader line 1](/img/number-01.png) **Node** 
+
+    It represents the project, application group, application, database, external host to which HTTP calls, and external module (application caller).
+
+    :::note
+    If any call information exists from the **node**, the error weight is represented outside the **node**
+    :::
+
+-   ![Leader line 2](/img/number-02.png) **Link**
+    It represents call data between applications or application groups, database call data, external host call data, and call data from external modules.
+    -   **_Average Res. Time_**: Value of the sum of response times of transactions or calls between nodes for 5 seconds divided by the total number
+    -   **_Count_**: Total number of transactions or calls (including errors) between nodes for 5 seconds
+    -   **_Error_**: Total number of errors in transactions or calls between nodes for 5 seconds
+    -   **_Active TX_**: Number of transactions or calls in progress between nodes
+    -   **_Fetch Time_**: Total sum of record acquisition times in DB calls for 5 seconds
+    -   **_Fetch Count_**: Total sum of records acquired in DB calls for 5 seconds

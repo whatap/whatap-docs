@@ -1,0 +1,21 @@
+### カラム情報
+
+次は、画面下のテーブルのカラムに関する説明します。
+
+| 項目           | 説明                                                          |
+| ------------ | ----------------------------------------------------------- |
+| id           | connection識別子                                               |
+| user         | SQL実行アカウント                                                  |
+| db           | default database名、 ない場合はNULL                                |
+| host         | このスレッドが接続されたhostname                                        |
+| command      | 実行中のコマンドtype（Query/Sleep/Daemonなど）                          |
+| time         | 現在COMMANDの遂行時間（秒）                                           |
+| state        | スレッドの現在の状態（executing/updating/sending dataなど）               |
+| query        | 実行されているstatementです。`Processlist.info`からリテラル値を除外したSQLを表示します。 |
+| query_param  | `query`에서 분리한 리터럴 값                                         |
+| holder type  | holderセッションのtype                                            |
+| lock mode    | holder_mode                                                 |
+| waiter type  | waiterセッションのtype                                            |
+| lock request | waiter_mode                                                 |
+| table        | holder_table/waiter_table                                   |
+| index        | holder_index/waiter_index                                   |

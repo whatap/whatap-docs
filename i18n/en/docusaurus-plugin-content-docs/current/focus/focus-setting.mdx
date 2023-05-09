@@ -1,0 +1,234 @@
+---
+id: focus-setting
+title: Configuration
+description: Let's learn about the Focus setting method.
+tags:
+  - Focus
+  - Configuration
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+You can upload any collected data from the WhaTap project. Focus can be used even if the default agent has not been installed for the project.
+
+## Checking the project access key and collection server IP
+
+{@include: ../common-items/_check-pak-ip.mdx}
+
+## Sending alerts
+
+Custom alerts can be sent immediately. After sending an alert, the Focus is ended.
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#Select a severity of the alert.
+level={info|warn|fatal}
+#Alert title
+title=Desired alert title
+#Alert body
+message=Desired alert body
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -alert -level $level -title $title -message $message
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#Select a severity of the alert.
+$level="{info|warn|fatal}"
+#Alert title
+$title="Desired alert title"
+#Alert body
+$message=Desired alert body
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -alert -level $level -title $title -message $message
+```
+
+</TabItem>
+</Tabs>
+
+## Collecting the SQL query result
+
+It collects the execution results of user-defined SQL queries in time series indefinitely.
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#Metric category
+category=my_category
+#Database driver
+driver={mysql|postgres}
+#Database connection info
+dburl="ID:password@tcp(IP:Port)/Database"
+#Sql Query
+sqlquery="select some, columns from sometable"
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -rdb $driver -rdb.connect $dburl \
+    -rdb.sql $sqlquery
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#Metric category
+$CATEGORY="my_category"
+#Database driver
+$driver="{mysql|postgres}"
+#Database connection info
+$dburl="ID:password@tcp(IP:port)/Database"
+#Sql Query
+$sqlquery="select some, columns from sometable"
+
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -category $CATEGORY `
+    -rdb $driver -rdb.connect $dburl `
+    -rdb.sql $sqlquery
+```
+
+</TabItem>
+</Tabs>
+
+## Collecting the keyword matching logs of the log file
+
+If a keyword is included when a log occurs in the specified text log file, the log line is collected.
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#Metric category
+category=my_category
+#Log file
+LOG_FILE=Log file path
+#Delimiter to use between keywords when entering multiple log keywords
+LOG_KEYWORDS_SEPERATOR=,
+#Enter log keywords by using the delimiter (,).
+LOG_KEYWORDS=keyword1,keyword2
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -tail $LOG_FILE \
+    -tail.keys $LOG_KEYWORDS \
+    -tail.seperator $LOG_KEYWORDS_SEPERATOR
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#Metric category
+$CATEGORY="my_category"
+#Log file
+LOG_FILE=Log file path
+#Delimiter to use between keywords when entering multiple log keywords
+LOG_KEYWORDS_SEPERATOR=,
+#Enter log keywords by using the delimiter
+LOG_KEYWORDS=keyword1,keyword2
+
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -category $CATEGORY `
+    -tail $LOG_FILE `
+    -tail.keys $LOG_KEYWORDS `
+    -tail.seperator $LOG_KEYWORDS_SEPERATOR
+```
+
+</TabItem>
+</Tabs>
+
+## WhaTap log analyzing service
+
+When a log occurs in the specified text log file, it is uploaded in real time to the WhaTap log analysis service.
+
+<Tabs groupId="operating-systems">
+<TabItem value="lx" label="Linux Shell">
+
+```bash title=SH
+#Category
+category=my_category
+#Can include the log file wildcard (*) and date pattern (http://strftime.org)
+LOG_FILE=log file path
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -logsink $LOG_FILE
+```
+
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
+
+```bash title='SH'
+#Category
+$CATEGORY="my_category"
+#Can include the log file wildcard (*) and date pattern (http://strftime.org)
+$LOG_FILE=log file path
+.\focus.exe -license $WHATAP_LICENSE `
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST `
+    -category $CATEGORY `
+    -logsink $LOG_FILE
+```
+
+</TabItem>
+</Tabs>
+
+## Collecting the OS resource usage
+
+It collects the resource usage of the server on which Focus is running.
+
+```bash title='Linux Shell'
+#Metric category
+category=my_category
+#Whether or not to enable the disk monitoring
+diskenabled=true|false
+#Disk mount to monitor
+diskmount=/mypartition
+#Whether or not to enable the NIC monitoring
+nicenabled=true|false
+#NIC to monitor
+nic=eth0
+
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+    -sys \
+    -sys.disk.enabled $diskenabled \
+    -sys.disk $diskmount \
+    -sys.net.enabled $nicenabled \
+    -sys.net $nic
+```
+
+## Collecting results of running the temporary programs and scripts
+
+It runs programs and scripts and continuously collects results to stdout. WhaTap Focus collects the keys and values of the dictionary when any value is input to stdin in the json dictionary format. Because the pipe is to be used as an input method, it is required to disable buffering.
+
+:::note
+
+-   For continuous collection instead of one-time collection, you can apply the following option. `-onetime`
+-   To specify the collection time, you can enter it with the following option. `-now {unix epoch time(second)}`
+
+:::
+
+```bash title='Linux Shell'
+#Metric category
+CATEGORY="my_category"
+
+
+Program or script | \
+Reprocessing in the json format | \
+./focus -license $WHATAP_LICENSE \
+    -category $category \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST
+```
+
+{@include: ../common-items/_top-collect-cpu-memory.mdx}

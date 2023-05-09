@@ -1,0 +1,82 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - Oracle
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## WhaTapデータベースエージェントのダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+
+dbms=oracle
+db={DB名(sid)}
+db_ip={DBサーバーのIPアドレス}
+db_port={DBサーバーのポート番号}
+```
+
+1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
+
+  **Oracle 10g R2バージョン以降**：https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+<!-- 모니터링용 계정 생성 -->
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+<!-- Oracle -->
+
+```bash showLineNumbers
+# 一般的な場合
+create user whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
+grant create session to whatap;
+grant select any dictionary to whatap;
+ 
+# 12c以降でマルチテナントの場合（接頭語はc##）
+create user c##whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
+grant create session to c##whatap;
+grant select any dictionary to c##whatap;
+alter user c##whatap set container_data = ALL container = CURRENT;
+ 
+# kill session機能の使用時
+grant alter system to whatap
+```
+
+## DBユーザーファイルの作成{#create-db-user}
+
+<DBuserDesc name='default'/>
+
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
+
+<!--## 에이전트 실행-->
+
+{@include: ../common-items/_db-run-agent.mdx}

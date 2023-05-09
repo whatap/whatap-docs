@@ -1,0 +1,86 @@
+---
+id: install-agent-with-buildpack
+title: Installing the Java agent using the buildpack
+description: It guides you how to install the Java agent using the buildpack.
+tags:
+  - Java
+  - Agent
+  - Project
+  - Application
+---
+
+If you are building an executable Docker image with the Java application using Gradle, you can use the buildpack to install the agent. 
+
+## Basic settings of the WhaTap buildpack
+
+```java title='build.gradle'
+tasks.named("bootBuildImage") {
+	buildpacks = ["urn:cnb:builder:paketo-buildpacks/java",	
+								"docker.io/whatap/paketo-buildpack-apm"]
+}
+```
+
+## Configuring options
+
+Only when the WhaTap collection server is connected, data can be collected. The access key (`accesskey`) and WhaTap collection server address (`whatap.server.host`) are required. Additional options can be set according to the needs for the environment and functions.
+
+```java title='build.gradle'
+tasks.named("bootBuildImage") {
+  // Whatap 
+  environment["BP_WHATAP_ENABLED"] = "true"
+  // java 17, There must be a space at the beginning.
+  environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "
+  // add multi options, delimeter is linefeed character
+  environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
+
+  buildpacks = ["urn:cnb:builder:paketo-buildpacks/java",	"docker.io/whatap/paketo-buildpack-apm"]
+}
+```
+
+-   `BP_WHATAP_ENABLED`
+
+    Set whether or not to enable the WhaTap agent. If the value is `false`, installation is performed but started with monitoring stopped. You can change it to `true` in **_Management_**> **_Agent CONF._** in [Whatap Monitoring Service](https://service.whatap.io) later.
+
+-   `BPE_APPEND_JAVA_TOOL_OPTIONS`
+
+    If Java 17 is used, be sure to add the JVM option.
+
+    ```java
+    environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
+    environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = "--add-opens=java.base/java.lang=ALL-UNNAMED"
+    ```
+
+    Add spaces before and after if you are not using the delimiter environment variable.
+
+    ```java
+    environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "
+    ```
+
+-   `BP_WHATAP_OPTIONS`
+
+    You can add the WhaTap agent settings. Set options with linefeed "\\n" as the delimiter. The option is `key=value`. The set option values are saved in the `whatap.conf` file during the Docker Image creation step. 
+
+    ```java
+    environment["BP_WHATAP_OPTIONS"] = "accesskey={access key}\nwhatap.server.host={collection server address}"
+    // Example: environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
+    ```
+
+## Tomcat 10 environment
+
+In the Tomcat environment, the `weaving=tomcat10` option must be added.
+
+```java
+environment["BP_WHATAP_OPTIONS"] = "accesskey={access key}\nwhatap.server.host={collection server address}\nweaving=tomcat10"
+```
+
+## Container execution option
+
+When running the container, you can set the access key and WhaTap collection server address as environment variables as follows.
+
+```docker
+docker run --rm -p 8080:8080 \
+  -e accesskey={access key} \
+  -e whatap.server.host={collection server address} \
+  -e weaving=tomcat10,webflux-6.0 \
+  spring-boot-gradle-hello-world-pcketo-buildpack-whatap
+```

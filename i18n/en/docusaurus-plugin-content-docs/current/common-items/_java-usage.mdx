@@ -1,0 +1,18 @@
+If the collection settings for CPU, memory, and disk usages are not added, the performance metrics are collected through Java's JMX libraries.
+
+-   **linux_proc_stat_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      For CPU, memory, and disk usages, set whether or not to collect from the Linux's _proc_ directory.
+
+-   **oshi_enabled** <span class='type'>Boolean</span><br/>
+        Default `false`<br/>
+        When measuring the CPU, memory, and disk usages, set whether or not to use the OSHI libraries.
+    :::note
+    It is available only in whatap.agent.2.1.0 or later.
+    :::
+
+-   **sigar_enabled** <span class='type'>Boolean</span><br/>
+        When measuring the CPU, memory, and disk usages, set whether or not to use the sigar libraries.
+    :::note
+    In earlier than whatap.agent.2.1.0, the default value is `true`. In whatap.agent.2.1.0 or later, the default value is `false`.
+    :::

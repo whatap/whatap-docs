@@ -1,0 +1,27 @@
+## Configuring the whatap.conf file
+
+Set the following options in the _whatap.conf_ file before running the XOS agent.
+
+-   **xos** <span class='type'>Int</span>
+
+    Default `0`
+
+    Set whether or not to use the XOS agent. If the value is `0` the XOS agent is not used for collection. Enter the value as `1` or IP address of the XOS agent. If the IP address is specified, data is collected from only the XOS agent.
+
+-   **xos_port** <span class='type'>String</span>
+
+    Default `3002`
+
+    Set the port to communicate with the XOS agent. XOS agent can be communicated via UDP. If you have set a firewall on that port, disable it for UDP communication.
+
+-   **xos_cpu_iowait** <span class='type'>Int</span>
+
+    Default `1`
+
+    Set whether the CPU utilization collected from the XOS agent is to include the iowait value. If the value is set to `1`, the iowait value is included. If set to `0`, the value is not included.
+
+-   **xos_mem_buffcache** <span class='type'>Int</span>
+
+    Default `0`
+
+    Set whether the memory utilization collected from the XOS agent is to include the buffcache value. If the value is set to `1`, the buffcache value is included. If set to `0`, the value is not included.

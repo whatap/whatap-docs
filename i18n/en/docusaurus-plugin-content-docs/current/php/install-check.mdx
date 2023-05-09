@@ -1,0 +1,85 @@
+---
+id: install-check
+title: Installation checking items
+description: The following explains how to check the PHP agent installation.
+tags:
+  - PHP
+  - PHP Monitoring
+  - Application
+  - Application Monitoring
+  - Installation checking items
+---
+
+<!-- 구성 수정 -->
+
+## Restarting
+
+If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's _whatap.so_ file is loaded.
+
+If the whatap-php service is not running or an error occurs, restart it.
+
+### Redhat/CentOS
+
+```bash title=SH
+$ service whatap-php restart
+```
+
+### Debian/Ubuntu
+
+```bash title=SH
+$ sudo service whatap-php restart
+```
+
+### FreeBSD
+
+```bash title=SH
+$ service whatap_php restart
+```
+
+## Checking the status of the PHP extension module installation
+
+If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's _whatap.so_ file is loaded. You can check whether the PHP extension module is installed properly as follows:
+
+<!-- 설치가 완료된 후 Apache 또는 PHP-FPM 서비스(Service)를 다시 시작하면 설정된 PHP 확장 모듈(PHP Extension module) *whatap.so* 파일이 로딩됩니다.
+
+PHP 확장 모듈이 잘 설치됐는지 다음의 방법으로 확인할 수 있습니다. -->
+
+1.  Check whether _whatap.ini_ has been created in the PHP's additional INI path.
+
+    ```bash title=SH
+    $ find / | grep whatap.ini
+    ```
+
+2.  Check whether _whatap.so_ has been created in the PHP extension module path.
+
+    ```bash title=SH
+    $ find / | grep whatap.so
+    ```
+
+3.  Check whether the PHP extension module is running.
+
+    ```bash title=SH
+    $ sudo php -m
+
+    [PHP Modules]
+    bz2
+    calendar
+    Core
+    ctype
+    curl
+    date
+    …
+    whatap   # Check the execution of the whatap module.
+    …
+    [Zend Modules]
+    ```
+
+4.  Check the whatap-php service status.
+
+    ```bash title=SH
+    $ service whatap-php status
+    ```
+
+5.  Check whether the servers set in the application server list have been added. 
+
+ ![server_agents](https://img.whatap.io/media/agent_php/install/tinified/server_agents.png)

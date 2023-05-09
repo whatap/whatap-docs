@@ -1,0 +1,58 @@
+---
+id: install-check
+title: インストールチェックリスト
+description: サーバーモニタリングのインストールをすべて完了しました。 インストール後の確認事項をチェックしてください。
+tags:
+  - Server
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+サーバーモニタリングのインストールをすべて完了しました。 インストール後の確認事項をチェックしてください。
+
+## Linux及びUnix
+
+### ログ出力確認
+
+エージェントが正常にインストールされると、次のようなログ出力を確認できます。 接続が正常に完了すると、connectedというメッセージが表示されます。
+
+<Tabs>
+<TabItem value="dus" label="Debian/Ubuntu/SUSE" default>
+
+```bash title=SH
+tail -10 /var/log/syslog
+...
+Apr  8 16:28:08 localhost systemd[1]: Started LSB: Start whatap-infra daemon.
+Apr  8 16:28:08 localhost whatap_infrad[32468]: 2019/04/08 16:28:08 Config file :  /usr/whatap/infra/conf/whatap.conf
+Apr  8 16:28:08 localhost whatap_infrad[32468]: 2019/04/08 16:28:08 OID: 1193741647 ONAME: localhost
+Apr  8 16:28:08 localhost whatap_infrad[32468]: 2019/04/08 16:28:08 connected to  {whatap ip}:{whatap port}
+```
+
+</TabItem>
+<TabItem value="coalu" label="CentOS/Amazon Linux/Unix">
+
+```bash title=SH
+tail -10 /var/log/messages
+...
+Apr  8 16:28:08 localhost systemd[1]: Started LSB: Start whatap-infra daemon.
+Apr  8 16:28:08 localhost whatap_infrad[32468]: 2019/04/08 16:28:08 Config file :  /usr/whatap/infra/conf/whatap.conf
+Apr  8 16:28:08 localhost whatap_infrad[32468]: 2019/04/08 16:28:08 OID: 1193741647 ONAME: localhost
+Apr  8 16:28:08 localhost whatap_infrad[32468]: 2019/04/08 16:28:08 connected to  {whatap ip}:{whatap port}
+```
+
+</TabItem>
+</Tabs>
+
+### ファイアウォール設定とネットワーク設定の確認
+
+接続できない場合は、ファイアウォール設定を含めてネットワーク設定を確認してください。 ネットワーク設定が反映されると、エージェントは自動的に接続されます。
+
+## Windows
+
+正常にインストールが完了した場合、インストールの最終段階で次のような画面が表示されます。 エージェントが自動的にモニタリングを開始します。 
+
+![](https://img.whatap.io/media/user_guide_server/management/1230.png)
+
+{@include: ../common-items/_sv-tcp6600.mdx}  

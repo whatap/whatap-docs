@@ -1,0 +1,153 @@
+## 共通の通知テンプレート
+
+共通テンプレートは、ほとんどの場合に適用できます。 さまざまな環境で同じフォーマットで通知を受けることができます。
+
+-   Product Type：アプリケーション、DB、Kubernetes
+-   Event Type：アプリケーション通知、データベース通知、メトリック通知
+-   Event Channel : sms, mobile, 3rd party plugin , plugin
+
+### イベントタイトル
+
+```log title='이벤트 제목 포맷'
+[Level][Platform][ProjectName][ApplicationName][EventTitle]
+```
+
+```log title='이벤트 제목 예시'
+[Info][JAVA][アプリケーションプロジェクト][TC-0-1-8081][CRITICAL_HIGH_MEMORY]
+```
+
+:::note
+
+-   Application Nameを設定していない場合は、イベントのタイトルから除外されます。
+-   Platformは次のいずれかで表示します。
+    -   JAVA
+    -   NODEJS 
+    -   PYTHON
+    -   PHP
+    -   DOTNET
+    -   GO
+    -   POSTGRESQL
+    -   ORACLE
+    -   MYSQL
+    -   MSSQL
+    -   BSM_JAVA
+    -   CLOUDWATCH
+    -   TIBERO
+    -   KUBERNETES
+    -   KUBE_NS
+    -   URLCHECK
+    -   URLCHECK_ADMIN
+    -   CUBRID
+    -   ALTIBASE
+    -   CLUSTER
+    -   REDIS
+    -   MONGODB
+    -   VR
+    -   RUM
+:::
+
+### イベントメッセージ
+
+イベントメッセージに含まれる情報です。 「optional」が 「false」の場合は、常にメッセージに含まれます。 「optional」が「true」の場合、そのデータを確認できれば表示します。
+
+```log title='이벤트 메시지 예시'
+Project Name : アプリケーションプロジェクト
+Project Code : 3
+Application Name : TC-0-1-8081
+Event Message : RECOVERED: Memory is too high. less than 10%
+Event ON Time : 2022-04-12 18:53:24 +0900
+Event OFF Time : 2022-04-12 18:53:24 +0900
+Alert Type : APPLICATION_MEMORY
+Metric Name : memory
+Metric Value : 20
+Metric Threshold : 10
+Stateful : true
+```
+
+以下は、イベントメッセージのコンポーネントです。
+
+| En                                                | Ko              | サポートされている通知タイプ   | 説明                                           |
+| ------------------------------------------------- | --------------- | ---------------- | -------------------------------------------- |
+| Project Name                                      | プロジェクト名         | 全体               | -                                            |
+| Project Code                                      | プロジェクトCode      | 全体               | -                                            |
+| Application Name                                  | アプリケーション名       | 全体（optional）     | oname                                        |
+| Event Message                                     | イベントメッセージ       | 全体               | -                                            |
+| Alert Type                                        | イベントタイプ         | 全体               | 下記のAlertTypeの種類表を参考                          |
+| Event ON Time                                     | イベント発生時間        | 全体               | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。   |
+| Event OFF Time                                    | イベント解除時間        | 全体（optional）     | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。   |
+| Metric Name                                       | メトリクス名          | 全体（optional）     | イベント条件判断で使用するメトリクスの名前。                       |
+| Metric Value                                      | メトリック値          | 全体（optional）     | メトリック値がメトリックしきい値を超えると、イベント発生条件が満たされている場合です。  |
+| Metric Threshold                                  | メトリックしきい値       | 全体（optional）     | メトリック値がメトリックしきい値を超えると、イベント発生条件が満たされている場合です。  |
+| Stateful                                          | 解決されたイベント通知     | 全体（optional）     | 解決されたイベント通知機能を使用している場合はtrue、使用していない場合はfalse  |
+| Event Rule                                        | イベント発生条件        | メトリック通知          | -                                            |
+| Event Target Filter                               | イベント対象選択        | メトリック通知          | 特定の対象から収集されたメトリクスに対してイベント条件を確認します。           |
+| Repeat Count                                      | イベントの反復回数       | メトリック通知          | イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。 |
+| Repeat Duration                                   | イベント反復時間        | メトリック通知          | イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。 |
+| Receiver                                          | 受信者             | メトリック通知          | -                                            |
+| Query                                             | MXQLクエリ         | 複合メトリックの通知       | -                                            |
+| Rule                                              | イベント発生条件        | 複合メトリックの通知       | -                                            |
+| Query Period                                      | クエリ期間           | 複合メトリックの通知       | -                                            |
+| Query Interval                                    | クエリ間隔           | 複合メトリックの通知       | -                                            |
+| Silent Time                                       | 無音時間            | 複合メトリックの通知       | -                                            |
+| Query                                             | URL             | Exception通知      | Exceptionを発生させたリクエストのURL                     |
+| TXID                                              | トランザクションID      | Exception通知      | -                                            |
+| Class                                             | エラークラス名         | Exception通知      | -                                            |
+| Log Message                                       | ログメッセージ         | サーバー - ファイルログの通知 | -                                            |
+| Log File                                          | ログファイルのパス       | サーバー - ファイルログの通知 | -                                            |
+| IP                                                | IP              | サーバー通知の全体        | -                                            |
+| CPU                                               | CPU             | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| CPU_load1                                         | CPU_load1       | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| CPU_loadPerCore                                   | CPU_loadPerCore | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| Memory                                            | Memory          | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| Swap                                              | Swap            | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| Disk Name | Used Percent | Free Size | IO Percent | ディスクパフォーマンス     | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| Name | Bps | Pps                                  | トラフィックパフォーマンス   | サーバー通知の全体        | イベント発生当時のSnapshot                            |
+| Message | Time | Name                             | 処理履歴のメッセージ      | サーバー通知の全体        | -                                            |
+
+:::note
+
+-   このイベントで提供できる最大限の情報を表示します。
+-   アラートTypeは次のいずれかで表示します。
+
+| AlertType                      | 説明                       |
+| ------------------------------ | ------------------------ |
+| APPLICATION_CPU                | アプリケーションCPUの通知           |
+| APPLICATION_MEMORY             | アプリケーションMEMORYの通知        |
+| APPLICATION_DISK               | アプリケーションDISKの通知          |
+| APPLICATION_ACTIVE_TRANSACTION | アプリケーションのアクティブトランザクション通知 |
+| APPLICATION_ERROR_TRANSACTION  | アプリケーションのエラートランザクション通知   |
+| APPLICATION_SLOW_TRANSACTION   | アプリケーションのトランザクション応答時間の通知 |
+| METRICS                        | メトリック通知                  |
+| COMPOSITE_METRICS              | 複合メトリックの通知               |
+| ANOMALY                        | 異常検知通知                   |
+| LOG_REALTIME                   | ログリアルタイムの通知              |
+| COMPOSITE_LOG                  | 複合ログの通知                  |
+| SERVER_REBOOT                  | サーバー - 再起動通知             |
+| SERVER_NO_DATA                 | サーバー - 未受信通知             |
+| SERVER_PORT                    | サーバー - ポート通知             |
+| SERVER_NETWORK_IOPS            | サーバ - ネットワークIOPS通知       |
+| SERVER_NETWORK_BPS             | サーバ - ネットワークBPS通知        |
+| SERVER_DISK_IO                 | サーバー - ディスクI/O通知         |
+| SERVER_DISK_QUOTA              | サーバー - ディスク使用量通知         |
+| SERVER_DISK_INODE              | サーバ - inode通知            |
+| SERVER_CPU                     | サーバ - CPU通知              |
+| SERVER_MEMORY                  | サーバ - メモリ通知              |
+| SERVER_CPU_STEAL               | サーバー - steal通知           |
+| SERVER_MEMORY_SWAP             | サーバ - スワップ通知             |
+| SERVER_LOG_FILE                | サーバー - ログファイルの通知         |
+| SERVER_WINDOW_EVENT            | サーバー - Windowsイベントの通知    |
+| SERVER_OFF                     | サーバー - 通知OFFの通知          |
+| SERVER_ACKNOWLEDGE             | サーバー - 処理履歴の通知           |
+| SERVER_PROCESS_COUNT           | サーバー - プロセス数の通知          |
+| SERVER_PROCESS_CPU             | サーバ - プロセスCPUの通知         |
+| SERVER_PROCESS_MEMORY          | サーバー - プロセスメモリの通知        |
+| SERVER_PROCESS_OFF             | サーバー - プロセス通知OFFの通知      |
+| AGENT_ACTIVE                   | エージェントのアクティブ化通知          |
+| AGENT_INACTIVE                 | エージェントの非アクティブ化通知         |
+| AGENT_REACTIVATED              | エージェントの再アクティブ化通知         |
+| URL                            | URL通知                    |
+| TOO_MANY_EVENT                 | イベントの過剰発生の通知             |
+| CLOUD_WATCH                    | Cloud Watch通知            |
+| EXCEPTION                      | Exception通知              |
+
+:::

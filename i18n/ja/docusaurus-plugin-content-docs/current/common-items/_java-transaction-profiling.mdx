@@ -1,0 +1,107 @@
+-   **profile_step_normal_count** <span class='type'>Int</span><br/>
+      デフォルト値`1000`<br/>
+      トランザクショントレースの最大ステップ数を設定します。
+
+-   **profile_step_heavy_count** <span class='type'>Int</span><br/>
+      デフォルト値`1020`<br/>
+      Heavyなステップの場合、トレース基本ステップ数を超えても設定値だけ記録します。
+
+-   **profile_step_max_count**<span class='type'>Int</span><br/>
+      デフォルト値`1024`<br/>
+      トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後収集されるステップはすべて捨てられます。`profile_step_heavy_count`を最大1000として設定すると、`profile_step_max_count`ほどのアクティブスタックが収集されます。
+
+-   **profile_step_heavy_time** <span class='type'>MiliSecond</span><br/>
+      デフォルト値`100`<br/>
+      Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`値を超えても`profile_step_heavy_count`の設定値だけ記録します。
+
+-   **active_stack_count** <span class='type'>Int</span><br/>
+      デフォルト値`100`<br/>
+      トランザクション内で収集するアクティブスタックの最大数を設定します。
+
+-   **profile_method_resource_enabled** <span class='type'>Boolean</span><br/>
+      デフォルト値`false`<br/>
+      トレースからmethodステップを収集する時、そのステップで使用したCPUとメモリ使用量を追跡します。
+
+-   **profile_position_method** <span class='type'>String</span><br/>
+      設定したメソッドを実行する時点のStackTraceを記録します。
+
+-   **profile_position_depth** <span class='type'>Int</span><br/>
+      デフォルト値`50`<br/>
+      position追跡のためにStackTraceを記録する時、ラインの最大数を設定します。
+
+-   **trace_error_callstack_depth** <span class='type'>Int</span><br/>
+      デフォルト値`50`<br/>
+      Error発生時に収集するStackTraceの最大ライン数を設定します。
+
+-   **trace_active_callstack_depth** <span class='type'>Int</span><br/>
+      デフォルト値`50`<br/>
+      アクティブスタックから収集するStackTraceのラインの最大数を設定します。
+
+{@include: ../common-items/_transaction-profile-active-color.mdx}
+
+-   **hook_method_patterns** <span class='type'>String</span><br/>
+      レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、星印(\*)をワイルドカードとして使用することができます。対象が複数ある場合は、コンマ(,)で区切ります。
+
+    ```ini title='예시'
+    hook_method_patterns=a.b.C1.*
+    ```
+
+-   **hook_method_supers** <span class='type'>String</span><br/>
+      特定のクラスを継承したメソッドの応答時間を測定したい時、Super Classを設定します。 クラスFullNameを設定し、対象が複数ある場合はコンマ（,）で区切ります。
+
+    ```ini title='예시'
+    hook_method_supers=a.b.C1
+    ```
+
+-   **hook_method_interfaces** <span class='type'>String</span><br/>
+    特定のインターフェイスを実装したメソッドの応答時間を測定したいときにInterfaceを設定します。インターフェイスのFullNameを設定し、対象が複数ある場合はコンマ（,）で区切ります。
+
+-   **hook_method_ignore_classes** <span class='type'>String</span><br/>
+    メソッドトレースを設定する際にトレースから除外したいクラスを設定します。
+
+-   **hook_method_access_public_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>メソッドトレースを設定する際、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
+
+-   **hook_method_access_private_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>メソッドトレースを設定する際、privateメソッドに限り、別途対象として処理するかを設定します。
+
+-   **hook_method_access_protected_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>メソッドトレースを設定する際、protectedメソッドに限って別途対象として処理するかを設定します。
+
+-   **hook_method_access_none_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
+
+-   **stacklog_socket_port** <span class='type'>TCP_PortNumber</span><br/>
+        デフォルト値`0`<br/>
+        目的地のTCPポートを設定すると、Socket.connect()時点StackTraceをエージェントログで記録します。基本設定として確認されていないDB接続、HTTPC接続などを追跡する際に使用できます。
+    :::caution
+    設定した目的地に接続するたびにStackTraceを記録します。これはパフォーマンスの低下を引き起こす可能性があります。デバッグ用に選別したエージェントに一時的に使用する必要があります。
+    DB接続状態の追跡例）`stacklog_socket_port=1521`
+    :::
+
+-   **biz_exceptions** <span class='type'>String</span><br/>
+    ビジネスExceptionを登録します。 登録したビジネスExceptionはエラー統計から除外します。トレース詳細では照会できます。
+
+-   **ignore_exceptions** <span class='type'>String</span><br/>
+    無視するExceptionを登録します。登録したExceptionのエラー自体を無視します。
+
+-   **transaction_status_error_enable** <span class='type'>Boolean</span><br/>
+      デフォルト値`true`<br/>
+      HTTP401、403のように正常応答ではないHTTP状態コードを返すす場合、エラーとして処理します。
+
+-   **status_ignore** <span class='type'>String</span><br/>
+      無視する`STATUS_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
+
+-   **status_ignore_set** <span class='type'>String</span><br/>
+      `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
+
+-   **httpc_status_error_enable** <span class='type'>Boolean</span><br/>
+      デフォルト値`true`<br/>
+      `HTTPC_ERROR`を返却するかどうかを決定します。
+
+-   **httpc_status_ignore** <span class='type'>String</span><br/>
+      無視する`HTPC_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
+
+-   **httpc_status_ignore_set** <span class='type'>String</span><br/>
+      `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。<br/>
+      `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 このとき、urlは統計／エラー分析で`HTPC_URL`値を入力します。

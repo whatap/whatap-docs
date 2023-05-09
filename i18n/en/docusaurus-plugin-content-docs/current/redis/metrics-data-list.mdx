@@ -1,0 +1,84 @@
+---
+id: metrics-data-list
+title: Redis 지표
+description: 와탭 Redis에서 사용하는 중요 지표를 안내합니다.
+tags:
+  - Redis
+  - Metrics
+  - Database
+  - Database Monitoring
+---
+
+Database metric comprehensively collects the database workload and resource usage. The WhaTap monitoring service continuously collects metric data to identify bottlenecks in the database and provides data to help identify the root cause of the performance issue.
+
+지표에 대한 자세한 내용은 [다음 문서](https://redis.io/commands/info/)를 참조하세요.
+
+| Metric                        | Description                                                                                                                                                       | Category     |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `BLOCKED_CLIENTS`             | BLPOP, BRPOP, BRPOPLPUSH 명령으로 대기중인 클라이언트 수                                                                                                                        | CLIENTS      |
+| `CONNECTED_CLIENTS`           | 현재 접속해 있는 클라이언트의 수(슬레이브 노드 접속은 제외)                                                                                                                                | CLIENTS      |
+| `TRACKING_CLIENTS`            | Number of clients being tracked                                                                                                                                   | CLIENTS      |
+| `CMDSTAT_XXX_CALLS`           | 레디스 명령 통계 정보를 보여줍니다.<br/>call: XXX Command 실행 횟수                                                                                                                  | COMMANDSTATS |
+| `CMDSTAT_XXX_USEC`            | 레디스 명령 통계 정보를 보여줍니다.<br/>usec : XXX Command 실행시간(microsecond)                                                                                                     | COMMANDSTATS |
+| `CMDSTAT_XXX_USEC_PER_CALL`   | 레디스 명령 통계 정보를 보여줍니다.<br/>`usec_per_call` : XXX Command 한번 실행하는데 걸린 평균 시간 (microsecond)                                                                            | COMMANDSTATS |
+| `USED_CPU`                    | `used_cpu_sys` + `used_cpu_user`                                                                                                                                  | CPU          |
+| `USED_CPU_SYS`                | 시스템 모드에서 사용한 CPU                                                                                                                                                  | CPU          |
+| `USED_CPU_SYS_CHILDREN`       | RDB/AOF 파일 저장 시 자식 프로세스가 시스템 모드에서 사용한 CPU                                                                                                                         | CPU          |
+| `USED_CPU_USER`               | 사용자 모드에서 사용한 CPU                                                                                                                                                  | CPU          |
+| `USED_CPU_USER_CHILDREN`      | RDB/AOF 파일 저장 시 자식 프로세스가 사용자 모드에서 사용한 CPU                                                                                                                         | CPU          |
+| `AVG_TTL_DB0`                 | DB0에 Key가 남아있는 시간(millisecond)                                                                                                                                    | KEYSPACE     |
+| `AVG_TTL_DB1`                 | DB1에 Key가 남아있는 시간(millisecond)                                                                                                                                    | KEYSPACE     |
+| `EXPIRES_DB0`                 | DB0의 expire될 key 개수                                                                                                                                               | KEYSPACE     |
+| `EXPIRES_DB1`                 | DB1의 expire될 key 개수                                                                                                                                               | KEYSPACE     |
+| `KEYS_DB0`                    | DB0의 키의 갯수                                                                                                                                                        | KEYSPACE     |
+| `KEYS_DB1`                    | DB1의 키의 갯수                                                                                                                                                        | KEYSPACE     |
+| `KEYS_TOTAL`                  | KEYS_DBn의 합계                                                                                                                                                      | KEYSPACE     |
+| `MEM_FRAGMENTATION_RATIO`     | `used_memory`와 `used_memory_rss` 비율                                                                                                                               | MEMORY       |
+| `USED_MEMORY`                 | Bytes                                                                                                                                                             | MEMORY       |
+| `USED_MEMORY_PEAK`            | 최대로 사용한 메모리(bytes)                                                                                                                                                | MEMORY       |
+| `USED_MEMORY_RSS`             | Resident Set Size. 프로세스가 차지하는 실제 메모리(RAM) 사이즈                                                                                                                     | MEMORY       |
+| `AOF_ENABLED`                 | _redis.conf_에 appendonly 모드가 yes이면 1, no면 0 입니다. yes일 때는 레디스 서버 시작 시 _appendonly.aof_을 읽고, no이면 _dump.rdb_ 파일을 읽습니다.                                              | PERSISTENCE  |
+| `AOF_LAST_REWRITE_TIME_SEC`   | 마지막 AOF rewrite 소요 시간(초)                                                                                                                                          | PERSISTENCE  |
+| `AOF_REWRITE_IN_PROGRESS`     | 현재 AOF 파일을 백그라운드로 저장 중이면 1로 표시됩니다.                                                                                                                                | PERSISTENCE  |
+| `AOF_REWRITE_SCHEDULED`       | AOF rewrite를 할 것으로 예정되어 있으면 1. RDB 파일을 저장 중이면 동시에 AOF 파일을 저장할 수 없으므로 예정(scheduled:1)해놓고, 저장이 완료되면 AOF rewrite를 시작합니다.                                             | PERSISTENCE  |
+| `RDB_BGSAVE_IN_PROGRESS`      | RDB 파일 background save가 진행중일때 1로 표시됩니다.                                                                                                                           | PERSISTENCE  |
+| `RDB_CHANGES_SINCE_LAST_SAVE` | RDB 파일을 마지막으로 저정한 이후로 입력된 데이터 건수                                                                                                                                  | PERSISTENCE  |
+| `RDB_CURRENT_BGSAVE_TIME_SEC` | 현재 백그라운드로 RDB 파일을 저장중이라면 저장 시작부터 현재까지 소요된 시간                                                                                                                      | PERSISTENCE  |
+| `RDB_LAST_BGSAVE_TIME_SEC`    | 마지막 백그라운드 RDB 파일 저장 소요 시간(초)                                                                                                                                      | PERSISTENCE  |
+| `RDB_LAST_SAVE_TIME`          | 마지막 성공적으로 RDB 파일을 저장한 시간                                                                                                                                          | PERSISTENCE  |
+| `CONNECTED_SLAVES`            | 마스터일 경우 연결된 슬레이브 수                                                                                                                                                | REPLICATION  |
+| `REPL_BACKLOG_ACTIVE`         | 마스터일경우 1이고 슬레이브는 0입니다.                                                                                                                                            | REPLICATION  |
+| `REPL_BACKLOG_SIZE`           | _redis.conf_ 파일에 `repl-backlog-size` 설정값입니다. 슬레이브와 연결이 끊어졌을때 입력되는 데이터를 backlog-buffer에 저장했다가 다시 연결되면 전체 데이터를 다시 주고 받을 필요없이 backlog-buffer의 데이터를 슬레이브에 보내서 동기화합니다. | REPLICATION  |
+| `EVICTED_KEYS`                | maxmemory 제한에 의해 퇴출된 키 수                                                                                                                                          | STATS        |
+| `EXPIRED_KEYS`                | expire 명령으로 삭제된 키 수                                                                                                                                               | STATS        |
+| `INSTANTANEOUS_INPUT_KBPS`    | 현재 입력 kbps                                                                                                                                                        | STATS        |
+| `INSTANTANEOUS_OPS_PER_SEC`   | 현재 초당 처리한 명령 수, 현재 초당 몇 건씩 처리하고 있는지 알 수 있음                                                                                                                        | STATS        |
+| `INSTANTANEOUS_OUTPUT_KBPS`   | 현재 출력 kbps                                                                                                                                                        | STATS        |
+| `KEYSPACE_HITS`               | `get key`해서 값이 나오면 1 증가                                                                                                                                           | STATS        |
+| `KEYSPACE_MISSES`             | `get key`해서 `nil`이 나오면 1 증가                                                                                                                                       | STATS        |
+| `LATEST_FORK_USEC`            | 마지막 `fork()`하는데 걸린 시간(microsecond)                                                                                                                                | STATS        |
+| `MIGRATE_CACHED_SOCKETS`      | 클러스터 migrate 관련 값                                                                                                                                                 | STATS        |
+| `PUBSUB_CHANNELS`             | pub/sub channel로 연결된 channel 수                                                                                                                                    | STATS        |
+| `PUBSUB_PATTERNS`             | pub/sub pattern로 연결된 pattrn channel 수                                                                                                                             | STATS        |
+| `REJECTED_CONNECTIONS`        | maxclients 제한으로 거부된 접속 수                                                                                                                                          | STATS        |
+| `SYNC_FULL`                   | 마스터 노드일때 슬레이브 노드와 full sync 횟수                                                                                                                                    | STATS        |
+| `SYNC_PARTIAL_ERR`            | 마스터 노드일때 슬레이브 노드와 partial sync err 횟수                                                                                                                             | STATS        |
+| `SYNC_PARTIAL_OK`             | 마스터 노드일때 슬레이브 노드와 partial sync ok 횟수                                                                                                                              | STATS        |
+| `TOTAL_COMMANDS_PROCESSED`    | 서버 시작 후 처리한 총 명령 수(저장,조회 모두)                                                                                                                                      | STATS        |
+| `TOTAL_CONNECTIONS_RECEIVED`  | 서버 시작 후 총 접속 수                                                                                                                                                    | STATS        |
+| `CPU_IDLE_XOS`                | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `CPU_IOWAIT_XOS`              | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `CPU_SYS_XOS`                 | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `CPU_USER_XOS`                | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `CPU_XOS`                     | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_AVAILABLE_XOS`           | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_BUFFCACHE_XOS`           | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_SWAPFREE_XOS`            | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_SWAPTOTAL_XOS`           | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_TOTAL_XOS`               | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_USED_XOS`                | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `MEM_XOS`                     | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `NET_RECV_BYTES_XOS`          | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `NET_RECV_PACKETS_XOS`        | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `NET_SEND_BYTES_XOS`          | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |
+| `NET_SEND_PACKETS_XOS`        | XOS에서 수집하는 OS 지표                                                                                                                                                  | XOS          |

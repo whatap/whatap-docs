@@ -1,0 +1,15 @@
+## アプリケーション警告通知
+
+アプリケーションの通知は、Event Title、Event Messageの両方を提供します。**_イベントの状態が解決されると追加通知_**機能を使用する場合、イベント発生条件が解除されるとEvnet Off Messageが送信されます。
+
+| Event Type   | Event Level | Event Title             | Event Message                                                 | Event Off Message                                                  |
+| ------------ | ----------- | ----------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
+| アプリケーションCPU  | Warning     | HIGH_CPU                | CPU is high. `${value}% (>= ${threshold}%)`                   | RECOVERED: CPU is high. less than `${threshold}%`                  |
+| アプリケーションCPU  | Critical    | CRITICAL_HIGH_CPU       | CPU is too high. `${value}% (>= ${threshold}%)`               | RECOVERED: CPU is too high. less than `${threshold}%`              |
+| アプリケーションメモリ  | Warning     | HIGH_MEMORY             | Memory is high. `${value}% (>= ${threshold}%)`                | RECOVERED: Memory is high. less than `${threshold}%`               |
+| アプリケーションメモリ  | Critical    | CRITICAL_HIGH_MEMORY    | Memory is too high `${value}% (>= ${threshold}%)`             | RECOVERED: Memory is too high. less than `${threshold}%`           |
+| アプリケーションディスク | Warning     | HIGH_DISK               | Disk is high `${value}% (>= ${threshold}%)`                   | RECOVERED: Disk id high. less than `${threshold}%`                 |
+| アプリケーションディスク | Critical    | CRITICAL_HIGH_DISK      | Disk is too high `${value}% (>= ${threshold}%)`               | RECOVERED: Disk is too highf. less than `${threshold}%`            |
+| 正常トランザクション   | Warning     | HIGH_ACTIVE_TRANSACTION | Active Transaction Count is over `${value} (>= ${threshold})` | RECOVERED: Active Transaction Count is less than `${threshold}`    |
+| エラートランザクション  | Warning     | HIGH_ERROR_TRANSACTION  | Error Transaction Count is over `${threshold} (${value})`     | RECOVERED: Error Transaction Count is less than `${threshold}`     |
+| 遅いトランザクション   | Warning     | TOO_MANY_SLOW_TX        | Too many delayed transactions `(${value}, above ${time} ms)`  | RECOVERED: Too many delayed transactions. less than `${threshold}` |

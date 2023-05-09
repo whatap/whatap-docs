@@ -1,0 +1,227 @@
+---
+id: quick-guide
+title: クイックスタート
+displayed_sidebar: indexSidebar
+description: WhaTapモニタリングサービス機能を迅速に使用できるように簡単な案内を提供します。
+---
+
+import TR from '@site/src/components/TR';
+
+WhaTapモニタリングサービスの概括的な案内ページです。WhaTapモニタリングサービスに初めて利用する新規ユーザーに有用です。
+
+:::note
+WhaTapモニタリングサービスエージェントのインストールと活用に関する詳細については、左側の製品別技術文書を参考にしてください。
+:::
+
+## クイックスタートの段階別案内
+
+---
+
+### ![](/img/number-01.png)WhaTap会員登録{#account}
+
+{@include: account/_create-account.mdx}  
+
+---
+
+### ![](/img/number-02.png)プロジェクト作成{#cproject}
+
+{@include: getting-started/_create-project-intro-v2.mdx} 
+
+---
+
+### ![](/img/number-03.png)プロジェクトアクセスキー確認{#accesskey}
+
+{@include: getting-started/_accesskey-intro.mdx}
+
+---
+
+### ![](/img/number-04.png)エージェントインストール{#install}
+
+**プロジェクトアクセスキー**を発行された場合は、インストール案内セクションでWhaTapエージェントのインストールを進めることができます。 
+
+**_管理_** > **_エージェントインストール_**メニューを通じてインストール案内セクションにアクセスすることもできます。
+
+1.  対応環境を確認してください。 
+
+2.  **_管理_** > **_エージェントインストール_**メニューの**_WhaTapエージェントダウンロード_**タブを選択してください。案内に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
+
+    :::note 
+
+    **エージェントダウンロード**
+
+    -   環境により**_Download_**ボタンを選択するか、コマンドを使用してサーバーから直接ダウンロードします。
+    -   環境に応じてリポジトリを登録し、パッケージをインストールします。
+
+    :::
+
+3.  **プロジェクトアクセスキー**と**WhaTapサーバーIP**を入力し、該当設定スクリプトを実行してください。  
+
+4.  エージェントを再起動してください。 
+
+これからWhaTapモニタリングサービスが始まります。 
+
+ダウンロードおよび設定プロセスの詳細については、製品別のインストール案内文書を参考にしてください。左側から製品別メニューを選択するか、次のショートカットを確認してください。
+
+<details>
+<summary>製品別動作環境およびインストール案内文書へのショートカット</summary>
+
+-   **Java**
+    -   [動作環境](java/supported-spec)
+    -   [エージェントインストール](java/install-agent)
+-   **PHP**
+    -   [動作環境](php/supported-spec)
+    -   [エージェントインストール](php/install-agent)
+-   **Node.js**
+    -   [動作環境](nodejs/supported-spec)
+    -   [エージェントインストール](nodejs/install-agent)
+-   **Python**
+    -   [動作環境](python/supported-spec)
+    -   [エージェントインストール](python/install-agent)
+-   **.NET**
+    -   [動作環境](dotnet/supported-spec)
+    -   [エージェントインストール](dotnet/install-agent)
+-   **Golang**
+    -   [動作環境](golang/supported-spec)
+    -   [エージェントインストール](golang/install-agent)
+-   **Server**
+    -   [動作環境](server/supported-spec)
+    -   [エージェントインストール](server/install-agent)
+-   **Kubernetes**
+    -   [動作環境](kubernetes/supported-spec)
+    -   [エージェントインストール](kubernetes/install) 
+-   **PostgreSQL**
+    -   [動作環境](postgresql/monitoring-support)
+    -   [エージェントインストール](postgresql/install-agent)
+-   **Oracle**
+    -   [動作環境](oracle/monitoring-support)
+    -   [エージェントインストール](oracle/install-agent)
+-   **MySQL**
+    -   [動作環境](mysql/monitoring-support)
+    -   [エージェントインストール](mysql/install-agent)
+-   **MS SQL Server**
+    -   [動作環境](mssql/monitoring-support)
+    -   [エージェントインストール](mssql/install-agent)
+-   **Tibero**
+    -   [動作環境](tibero/monitoring-support)
+    -   [エージェントインストール](tibero/install-agent)
+-   **CUBRID**
+    -   [動作環境](cubrid/monitoring-support)
+    -   [エージェントインストール](cubrid/install-agent)
+-   **Altibase**
+    -   [動作環境](altibase/monitoring-support)
+    -   [エージェントインストール](altibase/install-agent)
+-   **Redis**
+    -   [動作環境](redis/monitoring-support)
+    -   [エージェントインストール](redis/install-agent)
+-   **MongoDB**
+    -   [動作環境](mongodb/monitoring-support)
+    -   [エージェントインストール](mongodb/install-agent)
+-   [URL](url/url-install)
+-   **クラウド** 
+    -   [Amazon ECS](amazon-ecs/install-agent)
+    -   [Amazon Cloudwatch](amazon-cloudwatch/install-agent)
+    -   [Azure Monitor](azure/install-agent)
+    -   [Naver Cloud Monitoring](ncloud/install-agent)
+    -   [Oracle Cloud Monitor](oracle-cloud/install-agent)
+-   [Log](log/log-function)
+
+</details>
+
+:::note
+インストール中に問題が発生した場合は、製品別**インストール問題解決**文書を参考にしてください。
+:::
+
+---
+
+### ![](/img/number-05.png)ダッシュボード照会{#dashboard}
+
+エージェントインストール後、データがWhaTapサーバーに送信されると、**_ダッシュボード_**メニューでプロジェクトの全体現況をリアルタイムで照会することができます。WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズダッシュボードを提供します。
+
+-   アプリケーションは、**_アプリケーションダッシュボード_**と**_トランザクションマップ_**、**_アクティブトランザクション_**、**_アプリケーショントポロジー_**そして**_Flexボード_**の各ウィジェットで収集された性能指標を確認できます。
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
+-   サーバは、**_リソースボード_**と**_コンパウンドアイ_**そして**_Flexボード_**の各ウィジェットで収集された性能指標を確認できます。
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
+-   データベースは、**_インスタンス一覧_**と**_インスタンスモニタリング_**、**_マルチインスタンスモニタリング_**、**_スロークエリ_**そして**_Flexボード_**の各ウィジェットで収集された性能指標を確認できます。
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/db-realtimeMonitoring.mp4}
+-   Kubernetesは、**_コンテナマップ_**の各ウィジェットを使用して、ノード、コンテナ、アプリケーション、ログ、イベント情報を動的に確認できます。
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/k8s-targetgroup.mp4}
+
+:::note
+사용자 정의형 통합 대시보드인 Flex 보드 생성 및 설정에 대한 자세한 설명은 [다음 문서](java/flex-board)를 참조하세요.
+
+:::
+
+---
+
+### ![](/img/number-06.png)外部データ収集{#collect}
+
+TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張できます。詳細については、次の文書[Telegraf](telegraf/introduction.mdx)、[Focus](focus/introduction.mdx)を参考にしてください。
+
+-   WhaTapプラグインをインストールしてTelegrafで収集したデータをWhaTap収集サーバーに伝えることができます。
+-   WhaTap Focusをインストールして、ユーザーが直接開発したチェックスクリプトまたはデータベースクエリを作動させ、収集された値などをユーザーのWhaTapプロジェクトにアップロードできます。
+
+---
+
+### ![](/img/ic-number-07.svg)通知設定{#notification}
+
+WhaTapモニタリングサービスは、収集されるすべての指標に対してしきい値ベースの通知設定が可能です。**_警告通知_**メニューでイベントと受信設定及び過去の記録を確認することができます。個人別に通知受信の設定が可能なだけでなく、メール、SMS、メッセンジャー、App Pushなど多様な通知受信チャンネルを提供します。 
+
+<!-- 와탭 모니터링 서비스는 이메일, SMS, 메신저, App Push 등 사용자가 선호하는 수단을 선택하여 알림을 수신할 수 있습니다. -->
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_04_evnetAlert.mp4}
+
+通知設定の詳細については、製品ごとに以下の文書を参考にしてください。 
+
+<details>
+<summary>製品別通知設定案内文書へのショートカット</summary>
+
+-   [Java](java/apm-set-notice)
+-   [PHP](php/apm-set-notice)
+-   [Node.js](nodejs/apm-set-notice)
+-   [Python](python/apm-set-notice)
+-   [.NET](dotnet/apm-set-notice)
+-   [Golang](golang/apm-set-notice)
+-   [Server](server/set-notice)
+-   [PostgreSQL](postgresql/set-notice)
+-   [Oracle](oracle/set-notice)
+-   [MySQL](mysql/set-notice)
+-   [MS SQL Server](mssql/set-notice)
+-   [Tibero](tibero/set-notice)
+-   [CUBRID](cubrid/set-notice)
+-   [Altibase](altibase/set-notice)
+-   [Redis](redis/set-notice)
+-   [MongoDB](mongodb/set-notice) 
+-   [Kubernetes](kubernetes/set-notice)
+-   [URL](url/url-event)
+-   [Amazon CloudWatch](amazon-cloudwatch/set-notice)
+-   [Amazon ECS](amazon-ecs/set-notice)
+-   [Azure Monitor](azure/set-notice)
+-   [Naver Cloud Monitoring](ncloud/set-notice)
+-   [Oracle Cloudd Monitor](oracle-cloud/set-notice)
+-   [Log](log/set-notice)
+
+</details>
+
+---
+
+### ![](/img/ic-number-08.svg)レポート照会{#report}
+
+レポートは、サービス利用状況と障害の発生記録を報告する文書で、モニタリングデータ分析はサービスの改善方向を決める指標になります。WhaTapは、**_レポート_**メニューでレポートを作成し、業務自動化をサポートします。個々のプロジェクト単位のレポートとマルチプロジェクト単位の統合レポートを提供します。
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_05_report.mp4}
+
+:::note
+レポートの詳細については、[次の文書](java/report-intro)を参考にしてください。製品別レポートの案内については、製品別の技術文書を参考にしてください。
+:::
+
+---
+
+### ![](/img/ic-number-09.svg)メンバー管理{#member}
+
+ユーザーは、**_管理_** > **_プロジェクトメンバー_**メニューでプロジェクトメンバーを追加することができます。プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
+
+:::note
+メンバー権限体系の詳細については、[次の文書](project/project-structure#project-auth)を参考にしてください。
+:::
+
+---

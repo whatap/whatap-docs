@@ -1,0 +1,53 @@
+Home > Select Project > **_Sitemap_** > **_Metrics Search_**
+
+You can query specific metrics based on tags in **_Metrics Search_**. 
+
+![Metrics Search sc](/img/metrics-search-java.png)
+
+## ![](/img/number-01.png) Time and category selection
+
+In the ![number1](/img/number-01.png) area, you can specify the **_time_**, **_max count_**, and **_category_** for the collected metrics. **_time_** and **_category_** must be specified.
+
+-   **_Time_**: You can query by specifying the time when metrics were collected. The default value is `1 hour`. In addition to the lookup time provided as the default option, you can specify the date and time after selecting the **_Time_** tab.
+
+-   **_Max count_**: You can specify the maximum number of metrics to search in the ![number3](/img/number-03.png) list. You can set the count up to `10`, `50`, `100`, `200`, `300`, `1000`, `2000`, and `3000`.
+
+-   **_Category_**: It is a classification unit for the related metrics. You can set the desired **_category_** after selecting the **_category_** tab.
+
+-   ![Refresh icon](/img/ic-refresh-w-bg.svg) **_Refresh_**: When you select the **_Refresh_** icon, the **_Category_**, **_Tag_**, and **_Field_** options can be fetched.
+
+## ![](/img/number-02.png) Tag and field selection
+
+In the ![number2](/img/number-02.png) area, select **_tag_** and **_field_**. The default setting is "Select All," unless specified separately by user. 
+
+-   **_Tag_**: Unique data that can identify the collected targets.
+
+-   **_Field_**: Metrics collected from the monitored targets.
+
+-   **_Filter_**: Select ![Filtering icon](/img/ico-filter.svg) **_Filter by Tag Value_** and then set the tag value for filtering.
+
+    > For example, you can search filtered data by setting the value of `oname` to `demo-8101`.
+
+-   ![Search icon](/img/ic-search-on-press.svg) **_Search_**: If you set the conditions and then select **_Search_**, you can search the source data of the metric in the ![number3](/img/number-03.png) area. 
+
+-   ![CSV Download icon](/img/ic-csv-download-ms.svg) **_Download CSV_**: Select **_Download CSV_** and then download the source data of the metric as a CSV file.
+
+## ![](/img/number-03.png) Metrics table
+
+Because the metrics to be collected cannot be specified in advance, it is important to check the source data for all metrics being collected.  After setting the desired conditions in the condition area above, you can search the original data of the metric in a table format in the ![number3](/img/number-03.png) area. Columns in the table are changed when you specify the conditions for **_tag_** and **_field_**.
+
+:::note
+
+-   To search metrics, **_time_** and **_category_** must have been specified. 
+
+-   To search metrics, **_tag_** and **_field_** are optional. 
+
+:::
+
+<!-- 
+
+`5분`, `10분`, `1시간`, `1주`, `3주`, `금일`, `1일 전`, `7일 전`, `시작 시간 ~ 5분`, `시작 시간 ~ 10분`, `시작 시간 ~ 1시간`
+
+***시간***과 ***카테고리***는 반드시 지정해야 합니다. If you do not specify ***tag*** and ***field***, "Select All" is the default setting. 
+
+-->

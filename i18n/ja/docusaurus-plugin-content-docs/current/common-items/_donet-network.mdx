@@ -1,0 +1,27 @@
+-   **whatap.server.host**<span class='type'>ip_address</span><br/>
+    デフォルト値'127.0.0.1,127.0.1\`<br/>エージェントが収集したデータを転送するサーバーを設定します。収集サーバーの二重化で2つ以上のIPアドレスを持っている場合は、コンマ（,）を区切り文字として利用してください。設定したIPアドレスには、収集サーバーであるproxyサーバーがリスニング（Listening）状態でサービスされなければなりません。
+
+-   **whatap.server.port**<span class='type'>tcp_port</span><br/>
+    デフォルト値'6600`<br/>収集サーバーポートを設定します。ポートは1つだけ設定できるので、`whatap.server.host\`オプションに設定した収集サーバは同一ポートを使用する必要があります。
+
+-   **tcp_so_timeout** <span class='type'>MiliSecond</span><br/>
+    기본값 `60000`<br/>수집 서버와 통신하는 TCP 세션의 Socket Timeout 값을 설정합니다.
+
+-   **tcp_connection_timeout** <span class='type'>MiliSecond</span><br/>
+    기본값 `5000`<br/>수집 서버와 통신하는 TCP 세션의 Connection Timeout 값을 설정합니다.
+
+-   **net_send_max_bytes** <span class='type'>Byte</span><br/>
+    기본값 `5242880`<br/>에이전트가 데이터를 수집하고 네트워크로 한 번에 전송할 수 있는 최대 byte 크기입니다.
+
+-   **net_udp_port** <span class='type'>tcp_port</span><br/>
+        기본값 `6600`<br/>와탭 에이전트는 트레이서에서 UDP를 통해 수집한 데이터를 수집 서버로 전송합니다. 처음 UDP 서버의 포트를 지정할 수 있습니다. 기본값으로 제공되는 6600포트가 사용 중일 때 이 옵션을 사용합니다.
+    :::note
+    <!-- IIS를 다시 시작해야 적용할 수 있습니다. -->
+    {@include: ../common-items/_donet-iis-restart.mdx}
+    :::
+
+-   **net_send_queue1_size** <span class='type'>Int</span><br/>
+    기본값 `256`<br/>TCP 데이터 처리를 위한 Queue 버퍼를 설정합니다. 우선 순위가 높은 데이터를 위한 Queue입니다.
+
+-   **net_send_queue2_size** <span class='type'>Int</span><br/>
+    기본값 `5000`<br/>TCP 데이터 처리를 위한 Queue 버퍼를 설정합니다. 트레이스 데이터를 위한 Queue입니다.

@@ -1,0 +1,18 @@
+---
+id: php-2.4.1
+title: PHP Agent 2.4.1
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-02-16
+
+## Fixed (bug fixing)
+
+### Deleting the MySQLi-related debug log output
+
+mysqli 라이브러리 사용 중 오류가 발생하면, errorno 및 error 내용을 수집합니다. 이때 디버그 로그가 error_log에 출력됩니다.
+
+The log has been deleted. 

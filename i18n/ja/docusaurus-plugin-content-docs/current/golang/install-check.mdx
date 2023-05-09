@@ -1,0 +1,22 @@
+---
+id: install-check
+title: インストールチェックリスト
+description: エージェントをインストールしてから確認する必要があります。
+tags:
+  - Golang
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## サービス状態の確認
+
+次のコマンドを使用して、WhaTapエージェント（whata-agent）サービスの状態を確認してください。
+
+```bash title='SH'
+$ service whatap-agent status
+```
+
+<!-- 에이전트 연결 확인 -->
+
+{@include: ../common-items/_check-agent-connection.mdx}

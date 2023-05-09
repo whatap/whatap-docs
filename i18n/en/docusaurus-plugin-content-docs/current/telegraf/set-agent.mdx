@@ -1,0 +1,69 @@
+---
+id: set-agent
+title: Configuration
+description: Let's learn about the options you can set through the whatap.conf file in the Telegraf agent server.
+tags:
+  - Telegraf
+  - Configuration
+---
+
+와탭 에이전트는 에이전트 별 필요한 설정을 _whatap.conf_ 파일에 작성합니다. 에이전트는 환경변수를 통해 설정 파일의 위치를 파악하고 로딩합니다. _whatap.conf_ 파일을 통해 설정할 수 있는 옵션은 다음과 같습니다.
+
+## Agent name identification
+
+WhaTap basically uses the data collected from the server for identifying the infrastructure server that is the target of monitoring data collection. 
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+-   **object_name** <span class='type'>String</span><br/>
+    기본값 `{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`<br/>애플리케이션을 식별하는 에이전트 이름(ONAME) 체계입니다. ONAME을 토대로 OID가 생성됩니다.
+
+| Name       | Description                                  |
+| ---------- | -------------------------------------------- |
+| {type}     | app_name에 설정된 값을 사용합니다. 기본값은 Telegraf입니다.    |
+| {ip#}      | When IPs are divided, the #th digit is used. |
+| {hostname} | The server host name is used.                |
+| {docker}   | Use the IP of the Docker container.          |
+
+-   **app_name** <span class='type'>String</span><br/>
+        애플리케이션을 식별하는 에이전트 이름(ONAME) 체계에 사용되는 애플리케이션 명입니다.`object_name`의 `{type}`에 해당하는 값입니다.
+    {@include: ../common-items/_restart-w-tf.mdx}
+
+## Agent communication settings
+
+-   **license** <span class='type'>String</span><br/>
+      에이전트를 설치할 때 서버로부터 부여받은 프로젝트 액세스 키를 설정합니다. 프로젝트 액세스 키에는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함하고 있습니다.
+
+-   **whatap.server.host** <span class='type'>ip_address</span><br/>
+    기본값 `127.0.0.1,127.0.0.1`<br/>에이전트가 수집한 데이터를 전송할 서버를 지정합니다. 수집 서버 이중화로 2개 이상의 IP를 가진 경우 콤마(,)로 분리하여 지정할 수 있습니다. 지정된 IP에는 수집 서버 proxy 데몬이 리스닝 상태로 서비스되어야 합니다.
+
+-   **whatap.server.port** <span class='type'>tcp_port</span><br/>
+    기본값 `6600`<br/>수집 서버 PORT를 지정합니다. 포트는 하나만 지정할 수 있으므로 `whatap_server_host`에 지정된 수집 서버들은 동일 PORT를 사용해야 합니다.
+
+-   **tcp_so_timeout** <span class='type'>Millisecond</span><br/>
+    기본값 `60000`<br/>수집 서버와 통신하는 TCP 세션의 Socket Timeout 값을 지정합니다.
+
+-   **tcp_connection_timeout** <span class='type'>Millisecond</span><br/>
+    기본값 `5000`<br/>수집 서버와 통신하는 TCP 세션의 Connection Timeout 값을 지정합니다.
+
+-   **net_send_max_bytes** <span class='type'>Byte</span><br/>
+    기본값 `5242880`<br/>수집 서버로 데이터를 전송할 때 한번에 전송되는 최대 크기를 지정합니다.
+
+-   **net_send_buffer_size** <span class='type'>Byte</span><br/>
+    기본값 `1024`<br/>데이터 전송을 하기 위해 가지고 있는 최대 바이트 크기입니다. 
+
+## Telegraf
+
+-   **telegraf_tcp_port** <span class='type'>tcp_port</span><br/>
+    기본값 `6600`<br/>Telegraf socker_writer output plugin이 연결할 TCP Port입니다.
+    {@include: ../common-items/_restart-w-tf.mdx}
+
+-   **telegraf_delta_fields** <span class='type'>String</span><br/>
+    기본값 `1024`<br/>
+        누적값을 가지는 필드의 증가 값을 계산하여 별도의 필드를 추가합니다. name.fields 형식으로 지정하고, 여러 개는 콤마(,)로 구분합니다.<br/>
+        e.g. nginx.accepts,nginx.requests nginx의 accepts, requests 값의 증가 값을 acceptsDelta, requestsDelta 필드 이름으로 추가 전달합니다.
+
+## Log
+
+-   **log_keep_days** <span class='type'>Day</span><br/>
+    기본값 `7`<br/>로그 파일 보관 기간을 설정 합니다.

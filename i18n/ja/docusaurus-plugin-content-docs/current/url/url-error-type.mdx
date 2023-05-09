@@ -1,0 +1,52 @@
+---
+id: url-error-type
+title: エラータイプ
+description: WhaTapのURLモニタリング適用する際に発生するエラータイプとそのタイプによる設定方法を案内します。
+tags:
+  - URL
+  - インストール
+  - エラータイプ
+---
+
+WhaTapのURLモニタリング適用する際に発生するエラータイプとそのタイプによる設定方法を案内します。
+
+URLモニタリング画面に表示されるチャート領域をドラッグすると、その時間帯にURLを呼び出し時に取得した結果データを画面下部に表示します。データの詳細原因に表示されたメッセージによる措置方法を案内します。
+
+![URLモニタリングエラータイプ](/img/url-error-type.png)
+
+## connect timed out
+
+URLを呼び出すための接続自体が遮断された場合です。
+
+-   ウェブブラウザーでURLを入力し、まず接続に問題がないかチェックしてください。 入力中にエラーが発生する可能性があります。
+-   ファイアウォールおよび頻繁な呼び出しに対するIPのブロック履歴を確認し、モニタリングエージェントのIPに対して明示的にアクセスを許可してください。 ソウルエージェントの外部IPは54.180.11.176です。
+
+## no route to host
+
+目的地に到達するためのパスが存在しません。 次の項目を正確に入力したか確認してください。
+
+-   ポート指定
+-   入力URLのプロトコル
+    :::note
+    htts://とhttps://を間違って入力した場合など
+    :::
+
+## HTTPS
+
+URLを入力するときに、protocolを重複入力した場合に発生する可能性があります。 URLがhttps://https://…​; と同じ形式で入力したことを確認してください。
+
+## handshake alert: unrecognized_name
+
+エージェントが呼び出したサーバー名がサーバー側で識別されない場合に発生します。http protocolを使うURLをhttps://…​;と入力したか確認してください。
+
+## sun.security.validator
+
+```text
+sun.security.validator.ValidatorException: PKIX path building failed:
+sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+
+エージェントが呼び出したサイトのSSL証明書にアクセスできない場合に発生します。
+
+-   エージェントの問題です。[support@whatap.io](mailto:support@whatap.io)まで問い合わせてください。 現在まではSSL認証書のアルゴリズムに対応していない事例が識別されました。
+-   自主的にJava HttpClientベースでHTTPSプロトコルベースの呼び出しが可能なサンプルモジュールを共有可能であれば、類似のエージェントを追加開発して提供します。

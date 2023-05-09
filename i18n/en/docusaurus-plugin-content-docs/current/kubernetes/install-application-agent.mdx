@@ -1,0 +1,50 @@
+---
+id: install-application-agent
+title: Application Agent Installation
+description: Agent installation steps to monitor applications such as Java, Python, and Node.js in containers.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Application Installation
+  - Java
+  - Node.js
+  - Python
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Agent installation steps to monitor applications such as Java, Python, and Node.js in containers.
+
+The installation of micro-application agent is the same as the procedure of Application Monitoring Agent Installation. The difference is that the containerization task has been added. See the following link.
+
+-   [Java agent installation](https://docs.whatap.io/java/install-agent)
+
+-   [Python agent installation](https://docs.whatap.io/python/install-agent)
+
+-   [Node.js agent installation](https://docs.whatap.io/nodejs/install-agent)
+
+To proceed with the application agent installation, select **_Application Agent Installation_** at the lower right of the screen in **_Management_** > **_Agent Installation_**.
+
+![](/img/k8s-agent2application.png)
+
+## Checking the access key
+
+![Checking the access key](/img/k8s-application-accesskey.png)
+
+In the **_Check Access Key_** section of the installation guide page, select **_Getting the access key_**. If an access key has been already issued, the key appears.
+
+:::caution
+
+-   Use of the service is restricted if the **access key** is invalid. You can renew or extend it through ![Channel inquiry icon](/img/ico-help.svg) **_Channel inquiry_** on the upper right of the screen.
+-   The **access key** cannot be duplicated for other projects, and it is different from the **cluster project** authentication key.
+
+:::
+
+## Containerizing the application agent
+
+See the following to proceed with application agent containerization.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

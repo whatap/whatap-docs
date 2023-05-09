@@ -1,0 +1,32 @@
+---
+id: redhat-centos
+title: RedHat/CentOS
+description: RedHat/CentOS
+tags:
+  - RedHat
+  - CentOSX
+  - Linux
+  - PHP
+---
+
+1.  Register the WhaTap **repository**.
+
+    ```bash title=SH
+    $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+    ```
+
+2.  Install the **package** with the following command. 
+
+    ```bash title=SH
+    $ sudo yum install whatap-php
+    ```
+
+3.  {@include: ../../common-items/_php-install-script.mdx}
+
+{@include: ../../common-items/_php-extension-whatap.mdx}
+
+{@include: ../../common-items/_php-restart-apply.mdx}
+
+<!-- 4. Apache 및 PHP-FPM 다시 시작 후 적용됩니다. -->
+
+<!-- PHP 확장 모듈 및 whatap-php 서비스 데몬을 설치하세요. -->

@@ -1,0 +1,50 @@
+---
+id: install-application-agent
+title: 管理 > アプリケーションエージェントのインストール
+description: コンテナ内のJava、Python、Node.jsなどのアプリケーションをモニタリングするためのエージェントインストール段階です。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - アプリケーションインストール
+  - Java
+  - Node.js
+  - Python
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+コンテナ内のJava、Python、Node.jsなどのアプリケーションをモニタリングするためのエージェントインストール段階です。
+
+マイクロアプリケーションエージェントのインストールは、WhaTapのアプリケーションモニタリングエージェントのインストールの手順と同じです。ただ、コンテナ化（Containerization）作業が追加されることが異なります。次のリンクを参考にしてください。
+
+-   [Javaエージェントインストール](https://docs.whatap.io/java/install-agent)
+
+-   [Pythonエージェントインストール](https://docs.whatap.io/python/install-agent)
+
+-   [Node.jsエージェントインストール](https://docs.whatap.io/nodejs/install-agent)
+
+アプリケーションエージェントのインストールを進めるには、**_管理_** > **_エージェントインストール_** メニューの画面右下の**_アプリケーションエージェントインストール_**ボタンを選択してください。
+
+![](/img/k8s-agent2application.png)
+
+## アクセスキーの確認
+
+![アクセスキーの確認](/img/k8s-application-accesskey.png)
+
+インストール案内ページの**_アクセスキーの確認_**セクションで**_プロジェクトアクセスキーを発行する_**ボタンをクリックしてください。発行済みの場合、アクセスキーが表示されます。
+
+:::caution
+
+-   **アクセスキー**が無効な場合、サービスの利用が制限されます。画面右上にある![チャネル問い合わせアイコン](/img/ico-help.svg) **_チャンネル問い合わせ_**により、更新または延長することができます。
+-   **アクセスキー**は、他のプロジェクトとの重複使用はできません。**クラスタープロジェクト**認証キーと異なります。
+
+:::
+
+## アプリケーションエージェントのコンテナ化
+
+次の文書を参考にして、アプリケーションエージェントのコンテナー化を進めてください。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

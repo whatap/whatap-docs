@@ -1,0 +1,18 @@
+## Configuring the whatap.conf file
+
+압축을 푼 `$WHATAP_HOME` 경로로 이동하세요. _$WHATAP_HOME/whatap.conf_ 파일 내용에 액세스 키와 데이터 수집 서버 주소가 정상적으로 들어가 있는지 확인하세요. 값이 없다면 [와탭 모니터링 서비스](https://service.whatap.io) 화면으로 이동해 **_설치 안내_** 섹션에서 **액세스 키** 값을 복사한 다음 붙여넣기하세요.
+
+```ini title=$WHATAP_HOME/whatap.conf
+license={액세스 키}
+whatap.server.host={수집 서버 IP}
+```
+
+:::note
+
+-   **_다운로드_** 버튼을 선택해 에이전트를 다운로드했다면 _whatap.conf_에 설정 값이 입력되어 있습니다. 
+
+-   서버에서 직접 다운로드했다면 **액세스 키**와 **수집 서버 IP**를 직접 입력하세요.
+
+-   _whantap.conf_ 파일에 대한 자세한 내용은 [다음 문서](set-agent)를 참조하세요.
+
+:::

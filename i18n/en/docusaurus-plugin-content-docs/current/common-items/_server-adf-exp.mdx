@@ -1,0 +1,104 @@
+To use the extension pack function after installation, create the configuration file and then restart the agent as follows.
+
+### MySQL instances
+
+The MySQL/MariaDB monitoring agent is available.
+
+### Checking the web URL performance
+
+The WhaTap infrastructure agent accesses the given web address and then collects the access status and response time. The collected web URL performance can be checked in **_Category_** `server_webcheck`. Add web addresses to check with the following command. For more information about URL monitoring, see [the following](../url/url-intro).
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "web address to check" | sudo tee -a /usr/whatap/infra/conf/webcheck.conf
+echo "webcheck.enabled=true" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\webcheck.conf" -Value "web address to check"
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "webcheck.enabled=true"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>
+
+<!-- 
+
+아래는 필드명 관련 컨펌 후 추가 예정 .. 현재 수정 임시로 남겨둠
+
+:::caution
+
+***이벤트 발생 조건***과 ***이벤트 대상 필터링***에서 ***선택 입력*** 모드를 선택한 상태에서 마침표(.)가 2개 이상인 필드 또는 태그 이름을 선택했다면 ***직접 입력*** 모드를 선택한 다음 `${필드 또는 태그 이름}`과 같은 형식으로 묶어서 입력해야 합니다.
+
+예를 들어 `webcheck.ping.status_code` 필드 이름과 연산자는 `!=`, 값은 `200`을 입력할 경우, ***직접 입력*** 모드를 선택한 다음 `${webcheck.ping.status_code} != 200`으로 직접 입력하세요.
+
+:::
+
+:::note
+
+**필드명 규칙**
+
+필드명에 마침표(*.*)가 2개 이상 포함된 경우 다음과 같이 입력해 주세요.
+
+> 예시, `webcheck.ping.status_code` → `${webcheck.ping.status_code}`
+
+:::
+
+-->
+
+### Redis Instances
+
+The WhaTap infrastructure agent accesses the given Redis address and collects multiple performance metrics including the number of connections. The collected performance data can be checked in **_Category_** `server_redis`. You can add the connection data to the Redis server to be checked with the following command.
+
+<Tabs>
+<TabItem value="lxs2" label="Linux Shell">
+
+```bash title=SH
+sudo echo "addr=Redis address:port" | sudo tee /usr/whatap/infra/conf/redis.conf
+sudo echo "password=Redis password" | sudo tee -a /usr/whatap/infra/conf/redis.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wps2" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\redis.conf" -Value "addr=Redis address:port"
+Add-Content -Path "C:\Program Files\WhatapInfra\redis.conf" -Value "password=Redis password"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>
+
+### Memcached Server List
+
+The WhaTap infrastructure agent accesses the given Memcached address and collects multiple performance metrics including the number of connections. The collected performance data can be checked in **_Category_** `server_memcached`. You can add the connection data to the Memcached server to be checked with the following command.
+
+<Tabs>
+<TabItem value="lxs3" label="Linux Shell">
+
+```bash title=SH
+sudo echo "addr=Memcached address:port" | sudo tee /usr/whatap/infra/conf/memcached.conf
+sudo echo "password=Memcached password" | sudo tee -a /usr/whatap/infra/conf/memcached.conf
+sudo service whatap-infra restart
+```
+
+</TabItem>
+<TabItem value="wps3" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\memcached.conf" -Value "addr=Memcached address"
+Add-Content -Path "C:\Program Files\WhatapInfra\memcached.conf" -Value "password=Memcached password"
+Restart-Service "Whatap Infra"
+```
+
+</TabItem>
+</Tabs>

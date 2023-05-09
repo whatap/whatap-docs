@@ -1,0 +1,107 @@
+---
+id: php-2.5.0
+title: PHP Agent 2.5.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-05-18
+
+## Fixed (bug fixing)
+
+### Fixed the problem where CPU and memory are displayed with negative values in the transaction list of active transactions.
+
+PHP 모니터링은 트랜잭션이 완료 되는 시점에 cpu, memory가 계산됩니다. 진행 중에 조회하는 트랜잭션의 cpu, memory의 음수값을 0으로 조정했습니다.
+
+### Changes from resource type to object type in PHP 8.0 or later
+
+php8.0 버전 이후 부터 일부 라이브러리의 Resource 타입의 핸들이 Object 타입의 핸들로 변경되었습니다. 기존 Resource 타입의 핸들로 상세 정보를 수집 못하는 문제를 수정했습니다. 
+
+curl 라이브러리를 예로 들면, `curl_init` 함수는 php7.4 버전 까지는 resource id 를 반환하고, php8.0 이상 부터 CurlHandle Object 타입을 반환합니다. 
+
+### Fixing the problem where URIs ending with "/" are normalized during normalization of transaction URIs
+
+트랜잭션 URI 정규화 중 설정 상에 `/{AAA}` 로 등록하면, `/aaa.php`, `/` 두 URI 모두 `/{AAA}` 로 정규화되는 문제를 수정했습니다. 이후 `/aaa.php`만 `/{AAA}`로 정규화됩니다.
+
+### Fixing the user_agent and referer collection problems
+
+PHP Extension 내부의 수집 제한 옵션을 삭제 했습니다. whatap-php 서비스 데몬에서 수집데이터에 대한 처리 여부를 결정합니다.
+
+## Change (update)
+
+### Collecting the bind parameters
+
+DB 관련 라이브러리들의 bind parameter를 수집합니다. `whatap.profile_sql_param_enabled` 옵션을 활성화하면 수집됩니다. 최대 수집 개수는 20개 입니다. 
+
+**파라미터 이름**
+
+-   It can collect up to 256 bytes. 
+
+**파라미터 값**
+
+-   In case of the string type, it collects up to 256 bytes.
+-   In case of the array type, only the string, "ARRAY" is displayed. 
+-   The data other than number and text is not collected. 
+
+### Adding the odbc_do function
+
+Added the alias function that does the same as odbc_exec. 
+
+### Excluding the transaction collection for the set URI and HTTP method
+
+`ignore_http_method_urls`<br/>
+    Default : ""<br/>
+    Type : String
+
+`ignore_http_method`<br/>
+    Default : ""<br/>
+    Type : String  
+
+```
+whatap.ignore_http_method_urls=/index, /path
+whatap.ignore_http_method=options, connect
+```
+
+### `query_string_keys` 옵션 추가
+
+`query_string_enabled`로 URI 에 Get 파라미터를 추가해서 서비스 URL로 표기할 수 있습니다.Get 파라미터가 많을 경우, 파라미터 순서가 매번 달라질 수 있고 너무 긴 경우가 있어서 표기할 파라미터 이름을 지정할 수 있도록 수정했습니다.
+
+If only the specified parameters are collected, the service URL is simplified and more accurate information can be checked in the statistical data.
+
+`query_string_keys`<br/>
+    Default : ""<br/>
+    Type : String
+
+콤마(,)로 구분해서 여러개의 파라미터를 지정합니다. 설정 순서와 동일하게 수집된 파라미터정보가 표시됩니다. 
+
+:::note
+파라미터 이름을 지정하지 않으면 기존과 동일하게 모든 Get 파라미터를 추가해서 서비스 URL로 표기합니다.
+:::
+
+All parameters are collected. 
+
+```
+whatap.query_string_enabled=true
+whatap.query_string_keys=
+```
+
+`/aaa.php?aaa=2&bbb=3&cccc=4&dddd=5`로 수집됩니다. cccc 파라미터만 수집됩니다. 
+
+```
+whatap.query_string_enabled=true
+whatap.query_string_keys=cccc
+```
+
+`/aaa.php?ccc=4` 로 수집됩니다. 
+
+### Changing to automatically configure the cURL header
+
+The function that was modified in 2.4.0 to manually set the Whatap header for multi-transaction tracing has been modified back to the automatic addition method. 
+
+`curl_setopt`, `curl_setopt_array` 함수를 통해 HTTP Header 설정(CURLOPT_HTTPHEADER)을 하는 경우, 중복 설정이 되면 이전 정보는 초기화되고 새로운 정보만 설정됩니다.
+
+The Whatap header has been added when it does not exist after setting the user's cURL Header. 
+
+멀티 트랜잭션(`whatap.mtrace_enabled=true`) 설정이 활성화 되면, `curl_init()` 함수 호출 후에 WhaTap Header를 설정합니다. (`x-wtap-mst`, `x-wtap-sp1`, `x-wtap-po`) `curl_exec()` 함수 호출 전에 Header를 확인해서 WhaTap Header 가 없는 경우 추가 합니다.

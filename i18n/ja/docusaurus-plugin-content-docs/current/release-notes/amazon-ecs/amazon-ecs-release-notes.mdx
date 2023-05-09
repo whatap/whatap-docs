@@ -1,0 +1,33 @@
+---
+id: amazon-ecs-release-notes
+title: Amazon ECS Agent release notes
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+## Amazon ECS Agent 1.2.4
+
+リリーズ：2023-03-02
+
+<Status>Fixed</Status> 一度に10個のAmazon ECS サービスクエリを必要とするAPI仕様に準拠していないことによるパフォーマンス測定エラーを修正し、10回ずつ繰り返しクエリするようにコードを変更します。
+
+## Amazon ECS Agent 1.2.1
+
+リリーズ：2022-12-11
+
+### 収集サーバーとの接続が切断された際、タスクが異常終了する原因となっていたコードエラーを修正しました。
+
+WhaTapエージェントコードエラーによる収集サーバーの接続が切断されると、以下のタスクが異常終了する問題を修正しました。 
+
+-   エージェントがダウンした場合、タスクの実行スクリプトにコードを追加することで安全に再実行します。
+-   収集サーバーとの接続時の再接続試行コードのエラー（非同期ルーチン）を修正
+
+## Amazon ECS Agent 1.2.0
+
+リリーズ：2022-12-06
+
+### Amazon ECS が Graviton インスタンスタイプのサポートを追加
+
+Amazon ECS Graviton Graviton Instance Typeに対応できるよう、実行ファイルを別途にコンパイルしました。

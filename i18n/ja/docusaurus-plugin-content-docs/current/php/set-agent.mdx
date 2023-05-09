@@ -1,0 +1,73 @@
+---
+id: set-agent
+title: PHPエージェントの設定
+description: PHPエージェントの設定ファイルコンポーネントについて説明します。
+tags:
+  - PHP
+  - PHPモニタリング
+  - アプリケーション
+  - アプリケーションモニタリング
+  - 設定
+---
+
+<!-- PHP 에이전트는 필요한 설정을 *whatap.ini* 파일에 작성합니다. 에이전트는 환경변수를 통해 설정 파일의 위치를 파악하고 로딩합니다. -->
+
+PHPエージェントは、必要な設定を_whatap.ini_ファイルに作成して変更することができます。ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)でもエージェント設定機能を提供しています。
+
+:::note
+一般的に設定はランタイムにすぐreloadされます。ただし、該当設定のメカニズム上、ApacheまたはPHP-FPMが起動する時に適用されるオプションは、再起動しなければならない場合があります。
+:::
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## サービス画面でエージェントを設定する
+
+ホーム画面 > プロジェクト選択 > **_管理_** > **_エージェント設定_**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.ini'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.ini'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## エージェント設定オプションの案内
+
+次のリンクは、設定できるオプションについて説明します。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

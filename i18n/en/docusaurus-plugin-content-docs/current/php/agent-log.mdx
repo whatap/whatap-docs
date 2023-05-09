@@ -1,0 +1,60 @@
+---
+id: agent-log
+title: Agent log configuration
+description: The location and options of the PHP agent can be set.
+tags:
+  - PHP
+  - Agent Log
+  - Configuration
+  - Application
+---
+
+When the application server runs, it starts collecting the monitoring data. The collected data is stored in the log file. 
+
+## Log setting
+
+-   **whatap.log_keep_days**<span class='type'>Day</span><br/>
+      Default `7`<br/>
+      Set the retention period of log files.
+
+## Setting the log sink
+
+It is used to log data.
+
+### Default settings
+
+-   **whatap.logsink_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the log data is collected.
+
+-   **whatap.logsink_zip_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the zipped log data is transmitted. The default value is Gzip.
+
+-   **whatap.watchlog_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the log data is collected into the specified log file.
+
+### Setting the log file
+
+-   **whatap.watchlog.[Log file unique ID].enabled** <span class='type'>Boolean</span><br/>
+      If the value is `true`, a unique ID for the log file is arbitrarily assigned, and then log data is collected with that ID.
+
+-   **whatap.watchlog.[Log file unique ID].file**<span class='type'>String</span><br/>
+      It arbitrarily assigns a unique log file ID and then sets the file path and file name.
+
+### Example
+
+```ini title='기본 설정'
+whatap.logsink_enabled=true
+whatap.logsink_zip_enabled=true
+whatap.watchlog_enabled=true
+```
+
+```ini title='Apache error log 및 access log 설정'
+whatap.watchlog.apache_error_log.enabled=true
+whatap.watchlog.apache_error_log.file=/etc/httpd/logs/error_log
+
+whatap.watchlog.apache_access_log.enabled=true
+whatap.watchlog.apache_access_log.file=/etc/httpd/logs/access_log
+```

@@ -1,0 +1,45 @@
+-   **watchlog_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the log monitoring is enabled.
+
+-   **watchlog_check_interval** <span class='type'>Int</span><br/>
+      Default `2000`<br/>
+      It is the log monitoring interval. You can check whether any records have been added in the log file at this interval.
+
+-   **watchlog_read_count** <span class='type'>Int</span><br/>
+      Default `8`<br/>
+      It is the maximum count to read the log. It reads as many as `watchlog_buffer_size` at a time.
+
+-   **watchlog_buffer_size** <span class='type'>Int</span><br/>
+      Default '131072(128k)'<br/>
+      Size to read the log at a time.
+
+-   **watchlog.LOGKEY**<br/>
+      This is the setting to monitor a log file. Enter the `file` name and set multiple `words` with the delimiter, comma (,). It watches the logs at `check_interval` and alerts you when any keywords are found. Once an alert has occurred, the occurrence of alert stops for the `silent` period.
+
+    -   **watchlog.LOGKEY.enabled** <span class='type'>Boolean</span> Default `true`
+    -   **watchlog.LOGKEY.file** <span class='type'>String</span>
+    -   **watchlog.LOGKEY.words** <span class='type'>String</span>
+    -   **watchlog.LOGKEY.silent** <span class='type'>Int</span> Default `10000`
+    -   **watchlog.LOGKEY.check_interval** <span class='type'>Int</span> Default `1000`
+
+-   **log_root** <span class='type'>String</span><br/>
+      Default `${WHATAP_HOME}`/logs<br/>
+      Set the agent log path.
+
+-   **log_datasource_lookup_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>
+    The function to record the log is activated in case of DataSource upon InitialContext Lookup.
+
+-   **log_rotation_enabled** <span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      The function to store agent log files by date is activated. The log file name is stored in the format of _whatap-'yyyymmdd'.log_. If the value is `false`, the log file name is stored in the format of _whatap.log_.
+
+-   **log_keep_days** <span class='type'>Int</span><br/>
+      Default `7`<br/>
+      It sets the log file retention period. It works only when `log_rotation_enabled` is `true`.
+
+-   **log_oname_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the agent name is added for each log.<br/>
+      ![](/img/java-agent-log-oname.png)

@@ -1,0 +1,49 @@
+---
+id: url-event
+title: Event Setting
+description: 와탭 URL 모니터링 서비스 이벤트 설정 방법을 안내합니다.
+tags:
+  - URL
+  - Installation
+  - Event Setting
+  - Alert
+---
+
+홈 화면 > 프로젝트 선택 > **_경고 알림_** > **_이벤트 설정_**
+
+URL 모니터링은 이벤트 설정을 통해 이메일 형태의 경고 알림을 제공받을 수 있습니다. 모니터링 중인 프로젝트 화면에서는 실시간으로 발생하는 이벤트에 대해서도 알림을 제공합니다. 등록된 URL을 대상으로 다음과 같이 개별 이벤트 설정을 할 수 있습니다. 
+
+1.  이벤트 목록 화면에서 편집하고자 하는 URL의 ![수정 아이콘](/img/ico-edit.svg) **_수정_** 아이콘을 선택하세요.
+
+  ![이벤트 목록 화면](/img/url-event.png)
+
+1.  해당 URL에 대한 **_이벤트 설정 수정_** 창을 확인하세요. 
+
+  ![url 이벤트 설정창](/img/url-event-mod.png)
+
+  **_상태_**, **_경과 시간_** 등 이벤트 규칙은 모니터링 지표와 조건식을 조합하여 설정합니다. 
+
+```
+* **상태 이벤트**<br/>
+    상태 이벤트는 선택한 ***상태*** 코드 옵션에 따라 이벤트가 발생합니다.<br/>
+    ![상태 이벤트](https://img.whatap.io/media/user_guide_url/alert/alert_status.png)
+
+* **경과 시간 이벤트**<br/>
+    경과 시간 이벤트는 실시간 수집 중인 ***경과 시간*** 값이 사용자가 입력한 임계치와 조건문에 해당하는 경우 이벤트가 발생합니다.<br/>
+    ![경과 시간 이벤트](https://img.whatap.io/media/user_guide_url/alert/alert_elapsed.png)
+```
+
+:::note 
+
+**알림 메시지란?**
+
+해당 규칙에서 이벤트가 발생하는 경우 표시할 제목을 말합니다. 개별 이벤트 규칙에 알림 메시지를 설정할 수 있습니다. 설정을 적용하지 않는 경우 기본 표시되는 알림 메시지는 **_상태 코드_**, **_경과 시간_**, **_URL: 상세 이유_** 입니다.
+
+:::
+
+<!--
+
+![이벤트 목록 화면](https://img.whatap.io/media/user_guide_url/alert/alert_list.png)
+![url 이벤트 설정창](https://img.whatap.io/media/user_guide_url/alert/alert_add.png)
+
+-->

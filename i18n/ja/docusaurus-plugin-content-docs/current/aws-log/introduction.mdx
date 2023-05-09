@@ -1,0 +1,44 @@
+---
+id: introduction
+title: AWS Log モニタリング
+description: AWS リソースに保存されているログを収集する Watab AWS ログについて説明します。
+tags:
+  - AWS Log
+toc_max_heading_level: 2
+---
+
+<!-- displayed_sidebar: awslogSidebar
+hide_table_of_contents: false -->
+
+<!-- 임시
+와탭 AWS Log는 AWS Resource들의 로그를 수집하여 WhaTap 환경에 보냅니다.
+
+![sc](/img/aws-log-intro.png)
+
+:::note
+와탭 AWS Log는 AWS Resource들의 로그가 쌓이는 S3, CloudWatch Log Group을 구독해 로그 생성 시 WhaTap 환경으로 보내줍니다.
+:::
+-->
+
+import TR from '@site/src/components/TR';
+
+AWS上で発生するリソースログは、CloudWatch Logを通じて収集されるログの行単位の文字列情報と、S3にアーカイブ形で保存されるログの形に区分されます。 一般的に、ユーザーは次のようにS3とLog Groupにそれぞれ属して、リソースごとに確認する煩雑なプロセスを実行する必要があります。 
+
+![none aws-log sc](/img/aws-log-none.png)
+
+WhaTap AWS Logは、AWS上で発生する各種ログを収集し、統合モニタリングするための機能を提供します。 AWS Logを活用する場合、ユーザーは上記の煩わしい過程は必要がありません。 AWSのリソースログが蓄積されるS3とCloudWatch Log GroupをWhaTap Forwarderがサブスクリプションし、ログ作成時にWhaTap環境に送信します。 
+
+![aws-log sc](/img/aws-log-intro-c.png)
+
+### 主な特長
+
+-   WhaTap AWS Logを使用してリソースログを一度に収集できます。
+-   WhaTap AWS Logを活用し、時間帯別ログ発生量を計算することができます。
+-   WhaTap AWS Logを使用してログの内容を検索することができます。
+
+<!--
+와탭 AWS Log는 AWS 리소스 로그가 쌓이는 S3와 CloudWatch LogGroup을 구독해 로그 생성 시 와탭 환경으로 보냅니다.
+
+AWS 리소스 로그는 S3 혹은 CloudWatch Log Group에 쌓입니다.
+
+-->

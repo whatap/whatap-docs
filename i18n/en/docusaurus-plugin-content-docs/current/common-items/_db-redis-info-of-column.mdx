@@ -1,0 +1,24 @@
+## Column information guide {#info-of-column}
+
+It is the description of column items in the **_Active Sessions_** table. For more information, see [the following](https://redis.io/commands/client-list/).
+
+| Item      | Description                                                                                    |
+| --------- | ---------------------------------------------------------------------------------------------- |
+| id        | Unique 64-bit client ID                                                                        |
+| addr      | Client IP address and port number                                                              |
+| age       | Total connection time                                                                          |
+| cmd       | Last executed command                                                                          |
+| db        | Current database ID                                                                            |
+| events    | `r`: Can read the client socket (event loop)<br/>`w`: Can write the client socket (event loop) |
+| fd        | Client socket file's descriptor (file descriptor) number                                       |
+| flags     | The client type, N indicates normal client. (normal/master/replica/pubsub)                     |
+| idle      | Time (seconds) whose connection status is idle.                                                |
+| multi     | Number of commands in the MULTI/EXEC context                                                   |
+| obl       | Output buffer length                                                                           |
+| oll       | Output list length (response is queued to this list if the buffer is full)                     |
+| omem      | Amount of memory the client uses for output buffers                                            |
+| psub      | Number of matched subscription patterns                                                        |
+| qbuf      | Query buffer size (0 is not query dependent)                                                   |
+| qbuf-free | Query buffer free space (0 indicates the buffer is full, no free space)                        |
+| sub       | Number of subscription channels                                                                |
+| user      | Client's authenticated username                                                                |

@@ -1,0 +1,30 @@
+---
+id: instance-list
+title: Instance List
+description: You can see the list of database servers in which the agent has been installed.
+tags:
+  - MySQL RDS
+  - Instance
+  - Dashboard
+  - Database Monitoring
+---
+
+Home > Select Project > **_Dashboard_** > **_Instance List_**
+
+You can see the list of database servers in which the agent has been connected through installation. You can check key performance metrics and status for each instance. The performance metrics are updated every 5 seconds, and the order of the columns and the metrics in the list can be changed through settings.
+
+## 기본 화면 안내
+
+![Instance List](/img/mysql-rds-instancelist.png)
+
+{@include: ../common-items/_db-instance-list-basic.mdx}  
+
+-   In the **_Instance List_**, <span class='mark master'>M</span> and <span class='mark instance'>S</span> displayed in the **_Server Name_** column mean Master and Slave respectively. It is displayed in case of the DB composed as replication.
+
+{@include: ../common-items/_db-instance-list-basic-common-ui.mdx} 
+
+## Comparing the instance metrics
+
+You can select multiple instances to compare their performance metrics. If you select an instance from the list, the **_Multi View_** button is enabled on the upper right of the screen. Select **_Multi View_** to go to **_Multi Instance_**. You can see the graph charts comparing data for key performance metrics and the detailed information about active sessions and lock trees. 
+
+{@include: ../common-items/_db-column-display-hide.mdx}

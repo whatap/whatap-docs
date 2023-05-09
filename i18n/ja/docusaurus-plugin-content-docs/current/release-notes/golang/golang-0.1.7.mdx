@@ -1,0 +1,156 @@
+---
+id: golang-0.1.7
+title: Golang Agent 0.1.7
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-01-04
+
+## ベータ - アップデート
+
+### database/sqlライブラリに対応します。
+
+database/sqlパッケージの「sql.Open」関数の代わりに「whatapsql.OpenContext」関数を使用します。「PrepareContext」、「QueryContext」、「ExecContext」などcontextを伝える関数の使用をお勧めします。 
+
+伝達するcontextは「trace.Start()」を通じる必要があり、whatap TraceCtx情報が必要です。
+
+```go title='설치 안내'
+
+import (
+  _ "github.com/go-sql-driver/mysql"
+  "github.com/whatap/go-api/instrumentation/database/sql/whatapsql"
+)
+
+func main() {
+  config := make(map[string]string)
+  trace.Init(config)
+  defer trace.Shutdown()
+  
+  // whataphttp.Func内部でwhatap TraceCtxを生成します。 
+  http.HandleFunc("/query", whataphttp.Func(func(w http.ResponseWriter, r *http.Request) {
+    ctx := r.Context()
+    
+    // Use WhaTap Driver. whatapのTraceCtxがあるcontextを伝達します。 
+    db, err := whatapsql.OpenContext(ctx, "mysql", dataSource)
+    if err != nil {
+      fmt.Println("Error whatapsql.Open ", err)
+      return
+    }
+    defer db.Close()
+
+    ... 
+    query := "select id, subject from tbl_faq limit 10"
+    
+    // whatap TraceCtxがあるcontextを伝達します。 
+    if rows, err := db.QueryContext(ctx, query); err == nil {
+      ...
+    }
+  }
+  ...
+}
+```
+
+[参考例](https://github.com/whatap/go-api-example/tree/main/database/sql)
+
+#### 設定
+
+`go.sql_profile_enabled`<br/>
+#Default : true#<br/>
+#Type : boolean# 
+
+database/sql情報の収集有無を設定します。
+
+### github.com/go-gonic/ginライブラリに対応
+
+```go title='설치 안내'
+import (
+  "github.com/go-gonic/gin"
+  
+  "github.com/whatap/go-api/trace"
+  "github.com/whatap/go-api/instrumentation/github.com/go-gonic/gin/whatapgin"
+)
+
+func main() {
+  config := make(map[string]string)
+  trace.Init(config)
+  defer trace.Shutdown()
+  
+  r := gin.Default()
+  
+  // Set the whatap
+  r.Use(whatapgin.Middleware())
+  
+  r.GET("/", func(c *gin.Context) {
+      c.JSON(http.StatusOK, gin.H{
+          "message": "ok",
+      })
+  })
+}
+```
+
+[参考例](https://github.com/whatap/go-api-example/tree/main/github.com/gin-gonic/gin)
+
+### github.com/gorilla/muxライブラリに対応
+
+```go title='설치 안내'
+
+import (
+  "github.com/gorilla/mux"
+  
+  "github.com/whatap/go-api/trace"
+  "github.com/whatap/go-api/instrumentation/github.com/gorilla/mux/whatapmux"
+)
+
+func main() {
+  config := make(map[string]string)
+  trace.Init(config)
+  defer trace.Shutdown()
+  
+  r := mux.NewRouter()
+  
+  // Set the whatap
+  r.Use(whatapmux.Middleware())
+  
+  r.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
+    w.Header().Add("Content-Type", "text/html")
+    reply := "/index <br/>Test Body"
+    _, _ = w.Write(([]byte)(reply))
+    fmt.Println("Response -", r.Response)
+  }
+}
+```
+
+[参考例](https://github.com/whatap/go-api-example/tree/main/github.com/gorilla/mux)
+
+### github.com/labstack/echoライブラリに対応
+
+```go title='설치 안내'
+import (
+  "github.com/labstack/echo"
+  
+  "github.com/whatap/go-api/trace"
+  "github.com/whatap/go-api/instrumentation/github.com/labstack/echo/whatapecho"
+)
+
+func main() {
+  config := make(map[string]string)
+  trace.Init(config)
+  defer trace.Shutdown()
+  
+  ...
+  
+  e := echo.New()
+  
+  // Set the whatap
+  e.Use(whatapecho.Middleware())
+  
+  e.GET("/", func(c echo.Context) error {
+      return c.String(http.StatusOK, "Hello, World!\n")
+  })
+}
+```
+
+[参考例](https://github.com/whatap/go-api-example/tree/main/github.com/labstack/echo)

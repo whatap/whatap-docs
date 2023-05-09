@@ -1,0 +1,31 @@
+:::note
+次のオプションで設定した値を適用するには、IISを再起動してください。
+:::
+
+<!-- 
+
+* **trace_user_enabled** <span class='type'>Boolean</span><br/>기본값 `true`<br/>
+실시간 사용자 집계 여부를 설정합니다. `trace_user_cookie_keys` 옵션에 쿠키를 설정하지 않는 경우 IP 주소 기반으로 집계합니다.
+
+-->
+
+-   **trace_user_cookie_keys** <span class='type'>String</span><br/>
+    設定したクッキーの値をユニークなユーザー情報として選択します。 複数を登録する場合は、コンマ（,）を区切り文字として使用します。 設定した順で検索します。
+
+-   **trace_user_using_ip** <span class='type'>Boolean</span><br/>기본값 `false`<br/>
+    실시간 사용자를 IP 주소 기반으로 집계합니다. IP 주소가 아닌 쿠키를 기반으로 사용자를 구분하고 싶으면 값을 `false`로 변경하세요.
+
+<!-- 
+
+* **trace_user_header_ticket** <span class='type'>Boolean</span><br/>기본값 `false`<br/>
+사용자 구분을 HTTP 헤더의 특정 값으로 구분하고 싶을 때 사용할 HTTP 키 값을 설정합니다. `trace_user_using_ip` 옵션이 `true`인 경우 적용할 수 없습니다. HTTP 키를 찾지 못하는 경우 쿠키를 기준으로 사용자를 구분합니다.
+
+* **trace\_user\_set\_cookie** <span class='type'>Boolean</span><br/>기본값 `false`<br/>
+사용자 구분을 위해 쿠키에 'WHATAP' 키 이름으로 사용자 구분 값을 설정합니다. `trace_user_using_ip` 옵션이 `true`인 경우 적용할 수 없습니다. trace_user_header_ticket이 설정되는 경우 header key를 찾지 못하는 경우 설정됩니다.
+HTTP 키를 찾지 못하는 경우 쿠키를 기준으로 사용자를 구분합니다.
+
+* **trace_http_client_ip_header_key** <span class='type'>String</span><br/>
+클라이언트 IP(Remote IP)의 정보를 특정 HTTP 헤더의 값으로 변경해 설정하는 기능입니다. 프록시(Proxy) 환경에서 `X-Forwarded-For` 헤더 값을 클라이언트 IP로 설정할 수 있습니다.<br/>
+WEB/WAS 앞에 L4와 같은 로드밸런서가 위치한 경우 클라이언트의 IP 주소가 아닌 L4의 IP 주소가 Remote Address가 되는 경우가 있습니다. 이 상황에서 실제 클라이언트 IP 정보가 http 헤더에 특정 키 값으로 기록되는 경우라면 해당 키 값으로 대체할 수 있습니다.
+
+-->

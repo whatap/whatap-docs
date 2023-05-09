@@ -1,0 +1,106 @@
+---
+id: preview-1.95.2
+title: Preview 1.95.2
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と修正した内容を事前に体験することができます。 
+
+---
+
+## Hotfix: 2023-02-16
+
+### 「Application」
+
+#### 分析
+
+<Status>Fixed</Status> <UI>ヒートマップ</UI> メニューで <UI>TXトレース</UI> テーブルの <UI>終了時間</UI> カラムが <UI>開始時間</UI> カラムより前に表示されるバグを修正
+
+## Hotfix: 2023-02-09
+
+### 「Application」
+
+#### 分析
+
+<Status>Fixed</Status> <UI>マルチトランザクション追跡</UI> > <UI>ツリービュー</UI> メニューで、プロファイル連携情報がツリー型構造として表現されないバグを修正
+
+## Official Release: 2023-02-08
+
+### 「共通」
+
+#### Flexボード
+
+<Status>Feature</Status> <UI>ホーム画面</UI> > <UI>Flexボード</UI> メニューのダッシュボード一覧でダッシュボード共有（<img src='/img/ico-flexboard-share.svg' alt='공유 아이콘' />）機能を追加
+
+#### 分析
+
+-   <Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>分析</UI> > <UI>メトリクス異常検出</UI> メニューでカテゴリ、フィールド選択のUIバグによりUIロジックを変更
+
+-   <Status>Fixed</Status> <UI>キューブ</UI> メニューで照会が終わっていない場合 <UI>開始日</UI>, <UI>関心メトリクス</UI>, ダッシュボードタブを変更できないように修正
+
+#### トランザクション詳細「Application」
+
+-   <Status>Change</Status> <UI>SQL</UI> 分析タブの名称を <UI>SQL要約</UI>に変更
+
+-   <Status>Change</Status> <UI>メソッド分析</UI> タブの名称を <UI>メソッド要約</UI>に変更
+
+-   <Status>Feature</Status> <UI>HTTP呼び出し要約</UI>タブの追加：HTTP呼び出しの呼び出し件数、合計時間、平均時間情報を提供
+
+#### 管理
+
+-   **_管理_** > **_プロジェクトメンバー_** メニューに次の機能を追加します。
+
+    -   <Status>Feature</Status> プロジェクトメンバーの管理性向上のためのメンバーの所属（<UI>グループ</UI>/<UI>プロジェクト</UI>）タイプを表示
+
+    -   <Status>Feature</Status> メンバー削除（<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>）ボタンを非表示する場合、ツールチップ（削除できない理由）を追加
+
+-   **_利用履歴_**、**_決済管理_** メニューで次の機能を修正します。
+
+    -   <Status>Change</Status> <UI>請求書プレビュー</UI> / <UI>使用量</UI> メニューでログ課金基準の変更に伴うログ表示単位および表現単位の変更
+
+        -   ログ表示単位の変更：LOGs ⇒ LOG UNITs
+        -   ログ表現単位の変更：合算されたログ行数の日平均表示に変更
+        -   <UI>請求書プレビュー</UI> メニューで <UI>課金集計量</UI> カラムのログ使用量の表示を変更
+        -   <UI>使用量</UI> メニューで使用量詳細のメータリング要約カラムを変更
+
+<!--
+### front.conf 파일 설정
+
+- <Status>Change</Status> <code>Application</code>에만 해당, <code>hide_apply_to_all_agents=true</code> 옵션 설정 시 <UI>모든 에이전트에 적용</UI> 버튼을 노출하지 않도록 수정
+
+- <Status>Change</Status> <code>ui_show_logsink=false</code> 옵션 설정 시 <UI>로그</UI> 관련 메뉴를 노출하지 않도록 수정
+-->
+
+### 「Application」
+
+#### アクティブトランザクション
+
+<Status>Change</Status> スレッド停止のためにシークレットキーを入力するウィンドウで入力値が表示されないように修正
+
+### 「Server」
+
+<Status>Fixed</Status> <UI>サーバー一覧</UI> メニューでサーバーステータスアイコンをクリックすると表示されるモーダル内容が選択したサーバーと一致しないバグを修正
+
+### 「Container」
+
+#### コンテナマップ
+
+<Status>Feature</Status> Podカテゴリビューのグループ化条件に <UI>DaemonSet</UI>、<UI>StatefulSet</UI> を追加
+
+<!--
+### `Database`
+
+#### 통계/보고서
+
+<Status>Feature</Status> <b>MySQL</b>, <b>Tibero</b> 상품의 <UI>보고서</UI> 메뉴에서 일간/주간/월간 사용자 정의 보고서 추가
+
+  - 성능 추이 차트 지표 선택 기능
+  - 테이블 사이즈 증감, 데이터베이스 사이즈 리스트
+-->

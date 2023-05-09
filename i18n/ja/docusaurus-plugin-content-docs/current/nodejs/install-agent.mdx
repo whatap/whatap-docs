@@ -1,0 +1,181 @@
+---
+id: install-agent
+title: Node.jsエージェントインストール
+description: Node.js環境のアプリケーションサーバーにエージェントをインストールする方法を提供します。
+tags:
+  - Node.js
+---
+
+import TR from '@site/src/components/TR';
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: QXKweGBucjI}
+
+Node.jsモニタリングサービスを使用するには、モニタリング対象アプリケーションにモニタリングエージェントをインストールする必要があります。インストールはnpm（Node Package Manager）を利用してください。
+
+-   サービス中のNode.jsアプリケーションディレクトリパスにWhaTapエージェントモジュールをインストールしてください。
+
+-   WhaTapエージェントの環境設定(_whatap.conf_)を作成してください。
+
+-   Node.jsサービスを再起動します。
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+## エージェントダウンロード
+
+1.  サービス中のNode.jsアプリケーションディレクトリパスにエージェントモジュールをインストールしてください。
+
+    ```bash
+    $ npm install --save whatap
+    ```
+
+2.  _node_modules/whatap_パスの_whatap.conf_ファイルをコピーしてルート（root）パスに貼り付てください。
+
+3.  [WhaTapモニタリングサービス](https://service.whatap.io)画面に移動してください。
+
+4.  作成したプロジェクトを選択し**_インストール案内_**セクションの**_エージェントダウンロード_** 内容のうち、次の内容をコピーしてください。
+
+    ```ini title='예시'
+    license={アクセスキー}
+    whatap.server.host={収集サーバーのIP}
+    ```
+
+5.  _whatap.conf_ファイルに貼り付けてください。
+
+ホスト(`whatap.server.host`)のアドレスは、WhaTap proxyをインストールしたサーバーのアドレスです。スラッシュ（'/'）を区切り文字として利用し、WhaTapサーバーのうちproxyサーバーが実行中のサーバーのすべてのアドレスを入力することができます。
+
+<details>
+<summary>Node.jsエージェント構成ファイル</summary>
+
+Node.jsモニタリングサービスを構成する各ファイルの役割は次のとおりです。
+
+-   _whatap.conf_：エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。
+
+-   _lib_：エージェント、トレーサープログラムです。
+
+-   _README.md_：エージェントのインストールに関する案内文書です。
+
+-   _package.json_：npmモジュール環境構成ファイルです。
+
+-   _index.js_：main export宣言ファイルです。
+
+</details>
+
+## 活用方法
+
+アプリケーションのメインモジュールの最上段に次のコードを追加してください。例えば、expressモジュールの場合は_app.js_ファイルです。
+
+```javascript title='Javascript'
+var whatap = require('whatap').NodeAgent;
+```
+
+ECMAScript（ES）を活用するなら、次のコードをともに追加してください。
+
+```javascript title='ES'
+import WhatapAgent from 'whatap';
+WhatapAgent.NodeAgent;
+```
+
+次の適用例を参考にしてください。
+
+```javascript
+var WhatapAgent = require('whatap').NodeAgent;
+import http from 'http';
+import setupApp from '../src/app';
+let server = null;
+const port = normalizePort(process.env.PORT || '3000');
+```
+
+:::note
+
+エージェントの実行コードは、node.jsを起動してから、最初に実行する必要があります。このため、最初の`import`より先に位置するようにしてください。
+
+:::
+
+インストールをすべて完了したら、[次の文書](install-check)を確認して問題がないか確認してください。
+
+### 環境別にwhatap.confファイルを区分して使用する
+
+次の場合に該当する場合は、.confを除いたファイル名を設定してください。
+
+-   環境別にプロジェクトを区分した場合
+
+-   異なるエージェントオプションを設定する場合
+
+-   pm2によりクラスター（Cluster）モードで起動する場合
+
+```javascript
+process.env.WHATAP_CONF = 'whatapdev';
+process.env.WHATAP_NAME = 'NodeAgent-{ip2}-{ip3}-{cluster}';
+var WhatapAgent = require('whatap').NodeAgent;
+```
+
+:::note
+
+`WHATAP_NAME`オプションで設定可能な因子は次のとおりです。
+
+-   **ipN**：ip0、ip1、ip2、ip3
+
+-   **cluster**：cluster ID
+
+-   **pid**：process ID
+
+-   **hostname**：ホスト名
+
+:::
+
+### エージェントグループ単位の機能を活用する
+
+エージェントグループ単位の機能には、グループトポロジ、統合トポロジなどがあります。次のコードで`{グループ識別子}`部分をエージェントグループ名に置き換えて使用してください。
+
+```javascript
+process.env.WHATAP_OKIND = '{識別子}';
+var WhatapAgent = require('whatap').NodeAgent;
+```
+
+## PaaSのアプリケーション環境
+
+### デフォルトの環境変数設定
+
+PaaSアプリケーションでエージェントをインストールする場合は、すべての設定をソース(_app.js_)ファイルで設定する必要があります。_whatap.conf_ファイルは使用できません。
+
+アクセスキー(`WHATAP_LICENSE`)収集サーバーIP(`WHATAP_SERVER_HOST`)を環境変数として設定してください。
+
+```javascript title='app.js'
+process.env.WHATAP_LICENSE={アクセスキー};
+process.env.WHATAP_SERVER_HOST={収集サーバーIP};
+var whatap=require('whatap').NodeAgent;
+...
+```
+
+### 環境変数として設定可能なオプション
+
+_whatap.conf_ファイルが使用できないため、ソースファイルに環境変数としてWhaTapエージェントオプションを設定する必要があります。
+
+```javascript title='app.js'
+process.env.profile_http_header_enabled=false;
+process.env.profile_http_parameter_enabled=false;
+
+process.env.profile_basetime=500;
+
+process.env.auto_oname_enabled=false;
+process.env.auto_oname_prefix='nodejs';
+
+process.env.mtrace_rate=0;
+process.env.mtrace_spec='v1';
+process.env.stat_mtrace_enabled=false;
+process.env.stat_domain_enabled=false;
+```
+
+:::note
+
+Node.jsで設定できるオプションの詳細については、[次の文書](set-agent)を参考にしてください。
+
+:::
+
+## モニタリングの開始
+
+アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。

@@ -1,0 +1,21 @@
+---
+id: agent-static
+title: 統計
+description: エージェントによって収集されたデータから統計を収集する機能に関連するオプションです。
+tags:
+  - Node.js
+  - 統計
+---
+
+エージェントによって収集されたデータから統計を収集する機能に関連するオプションです。
+
+-   **mtrace_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>マルチトランザクション追跡機能（Multi Transaction ID、以下MTID）の使用有無を設定します。MTIDを追跡すると、登録したすべてのアプリケーション間の呼び出しを確認できます。
+
+-   **stat_domain_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>
+    クライアントの接続ドメイン別のトランザクション統計収集機能を活性化します。
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>
+    MSAアーキテクチャにおいてサービス間の呼び出し統計を活性化します。値が `true` の場合、外部呼び出しをするときに自分の情報を転送します。

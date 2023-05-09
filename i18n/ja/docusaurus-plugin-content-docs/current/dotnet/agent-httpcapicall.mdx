@@ -1,0 +1,22 @@
+---
+id: agent-httpcapicall
+title: HTTPC, API Call
+description: .NETエージェントのHTTPC、API Call関連オプションを提供します。
+tags:
+  - .NET
+  - HTTPC
+  - API
+---
+
+### HTTPC、API Call関連オプシ
+
+.NETエージェントのHTTPC、API Call関連オプションを提供します。
+
+-   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span><br/>デフォルト値`true`<br/>
+    トランザクション内のHTTPC URLをパーシングして正規化する機能をアクティブにします。
+
+-   **trace_httpc_normalize_urls** <span class='type'>String</span><br/>デフォルト値 `NONE`<br/>
+        正規化するHTTPC URLパターンを設定します。呼び出しURLパターンをパーシングしてパスパラメータを削除します。
+    :::note
+    例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。 複数を登録するときは、コンマ（,）を区切り文字として使用します。 置換パターンを整理した後、補完が必要です。
+    :::

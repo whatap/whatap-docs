@@ -1,0 +1,144 @@
+<!-- 메트릭스 정의 -->
+
+## What is the metrics?
+
+WhaTap collects data from the monitoring targets and provides them to users. The data collected by the agent is marked with **metrics**. 
+
+<!-- 메트릭스 효용성 안내 -->
+
+**Metrics** provides a baseline for viewing the user environment at a glance. For example, you can easily check the average memory utilization by server and average DB connection time through the list of source data or a visualized chart view. After finding any problem factor, you can see the detailed analysis through logs or traces. 
+
+**Metrics** also helps you scale the user environment. Determining the required amount of resources through the resource usage statistics is important in terms of performance improvement and cost effectiveness.
+
+<!-- 메트릭스 수집 방식 -->
+
+## WhaTap's metrics collection
+
+<div style={{textAlign: 'center'}}>
+
+![metrics_overview sc](/img/metrics-overview.png)
+
+</div>
+
+The WhaTap agent collects monitoring metrics from the monitoring target and sends them to the WhaTap collection server in the form of metric data. The WhaTap collection server stores and manages the related data by category. 
+
+WhaTap's collection server collects metrics from various monitoring targets. Users need to go to the corresponding product-specific guide screen and then follow the provided process to access the desired metric. 
+
+<InDoc product='java'>
+
+For example, to monitor **_Java applications_**, you need to install the WhaTap agent first. See [the following](../java/install-agent). For more information about the related metrics, see the [product-specific page](../java/metrics-app).
+
+</InDoc>
+
+<InDoc product='php'>
+
+For example, to monitor **_PHP applications_**, you need to install the WhaTap agent first. See [the following](../php/install-agent). For more information about the related metrics, see the [product-specific page](../php/metrics-app).
+
+</InDoc>
+
+<InDoc product='nodejs'>
+
+For example, to monitor **_Node.js applications_**, you need to install the WhaTap agent first. See [the following](../nodejs/install-agent). For more information about the related metrics, see the [product-specific page](../hodejs/metrics-app).
+
+</InDoc>
+
+<InDoc product='python'>
+
+For example, to monitor **_Python applications_**, you need to install the WhaTap agent first. See [the following](../python/install-agent). For more information about the related metrics, see the [product-specific page](../python/metrics-app).
+
+</InDoc>
+
+<InDoc product='dotnet'>
+
+For example, to monitor **_.NET applications_**, you need to install the WhaTap agent first. See [the following](../dotnet/install-agent). For more information about the related metrics, see the [product-specific page](../dotnet/metrics-app).
+
+</InDoc>
+
+<InDoc product='golang'>
+
+For example, to monitor **_Golang applications_**, you need to install the WhaTap agent first. See [the following](../golang/install-agent). For more information about the related metrics, see the [product-specific page](../golang/metrics-app).
+
+</InDoc>
+
+<InDoc product='server'>
+
+For example, to monitor **_servers_**, you need to install the WhaTap agent first. See [the following](../server/install-agent). For more information about the related metrics, see the [product-specific page](../server/metrics-server).
+
+</InDoc>
+
+<InDoc product='kubernetes'>
+
+For example, to start **_Kubernetes_** monitoring, you need to install the WhaTap agent first. See [the following](../kubernetes/install). For more information about the related metrics, see the [product-specific page](../kubernetes/metrics-kubernetes).
+
+</InDoc>
+
+<InDoc product='amazon-cloudwatch'>
+
+For example, to monitor **_Amazon CloudWatch_**, API integration is required. See [the following](../amazon-cloudwatch/install-agent). For collected metrics, see [the following](https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html).
+
+</InDoc>
+
+<InDoc product='amazon-ecs'>
+
+For example, to monitor **_Amazon ECS_**, API integration is required. See [the following](../amazon-ecs/install-agent). For more information about the related metrics, see the [product-specific page](../amazon-ecs/dashboard).
+
+</InDoc>
+
+<InDoc product='azure'>
+
+For example, to monitor **_Azure_**, API integration is required. See [the following](../azure/install-agent). For the collected metrics, see [the following](https://learn.microsoft.com/ko-kr/azure/azure-monitor/essentials/metrics-supported).
+
+</InDoc>
+
+<InDoc product='ncloud'>
+
+For example, to monitor **_Naver Cloud_**, API integration is required. See [the following](../ncloud/install-agent). For the collected metrics, see [the following](https://api.ncloud-docs.com/docs/management-cloudinsight-productinfo).
+
+</InDoc>
+
+<InDoc product='oracle-cloud'>
+
+For example, to monitor **_Oracle Cloud_**, API integration is required. See [the following](../oracle-cloud/install-agent). For the collected metrics, see [the following](https://docs.oracle.com/en-us/iaas/Content/Monitoring/Concepts/monitoringoverview.htm#SupportedServices).
+
+</InDoc>
+
+<InDoc product='metrics'>
+
+For example, to monitor **_Java applications_**, you need to install the WhaTap agent first. See [the following](../java/install-agent). To monitor **_Amazon CloudWatch_**, API integration is required. See [the following](../amazon-cloudwatch/install-agent). Information on the related metrics can also be found on the product-specific pages.
+
+</InDoc>
+
+## WhaTap's metrics elements
+
+WhaTap's **metric** consists of the following components:
+
+-   **_Category_**: It means a key to identify units that bind the related metrics.
+-   **_Tags_**: Data containing unique identifiers to find the targets to collect. It stores items such as IP, Oname, and host that rarely change. Multiple tags exist in the form of map.
+-   **_Fields_**: It stores all metrics collected from the agent. Multiple fields exist in the form of map.
+-   **_Time_**: Time when the metric has been collected.
+-   **_Oid_**: Unique number of the agent that has collected metrics.
+-   **_Oname_**: Unique name of the agent that has collected metrics.
+
+## Viewing and visualizing the metrics data
+
+WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as **_Metrics Search_** that can look up the original data of metrics, **_Metrics Chart_** that can look up metrics data through visualized charts, and **_Metrics Anomaly Detection_** that can detect out-of-pattern anomalies by comparing with the patterns of metrics learned by AI.
+
+![Metrics View sc](/img/metrics-views.png)
+
+<!-- 사용자는 와탭의 메트릭스 메뉴를 통해 사용자 지정 조건에 따라 원본 데이터 목록을 조회하거나 다양하게 시각화한 차트를 확인할 수 있습니다. -->
+
+<!-- 
+
+ 
+* ***Category***: 관련된 지표들을 묶는 단위입니다.
+* ***Tags***: Data containing unique identifiers to find the targets to collect.
+* ***Fields***: Metrics collected from the agent.
+* ***Time***: Time when the metric has been collected.
+* ***Oid***: Unique number of the agent that has collected metrics.
+* ***Oname***: Unique name of the agent that has collected metrics.
+
+Metrics can be sent to the WhaTap collection server from various monitoring targets. 
+WhaTap's collection server collects metrics with various methods.
+Metrics indicator information is also provided for each product. 
+
+-->

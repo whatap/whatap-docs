@@ -1,0 +1,76 @@
+---
+id: service-1.84.0
+title: Service 1.84.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-08-24
+
+## `공통`
+
+**_프로젝트 관리_** - 프로젝트 설명 편집 기능 추가
+
+**_Flex Board_**
+
+-   Automatic adjustment of data interval depending on the lookup time range when creating a metrics widget
+-   The Union condition is applied to the same filtering targets when multiple filters are used.
+
+**_조직 관리_**
+
+-   Disabled the function to delete groups if you do not have the edit permission for organizaitons
+-   Modified the organization logo changing function
+
+**_프로젝트 실시간 알림_** - 새로 발생한 이벤트 알림 팝업이 시간 경과 후에도 사라지지 않고 화면 상에 남아있는 현상 수정
+
+**_청구 및 납부 내역_** - 미납 금액 표시 컬럼 수정
+
+## Server
+
+**_에이전트 설치_** - Red Hat 계열 운영체제 모니터링 설치 안내
+
+**_서버 설정_** - 서버 설정 메뉴 진입 시 화면 깜빡임 현상 수정
+
+## Application
+
+**_에이전트 설치_** - Golang, PHP 프로젝트에 Alpine Linux 에이전트 설치 기능 추가
+
+**_액티브 스택_** - thread_name 정보 추가
+
+**_멀티 트랜잭션_** - 멀티 트랜잭션 차트 뷰에서 프로젝트 목록 변경 시 화면 갱신 이상 현상 수정
+
+**_이벤트 설정_** - 히트맵 패턴 이벤트 설정 저장 시 안내 메시지 수정
+
+## Container
+
+**_컨테이너맵_**
+
+-   컨테이너/파드 상세화면 > 로그 > 로그보기 화면 태그 필터 기능 추가
+-   컨테이너/파드 상세화면 > 트레이스 > 히트맵 상세 화면 너비 조정 기능 추가
+-   To use the ConState field as the pod status display's default value
+-   Added the memory total data to the single container lookup screen
+-   Fixed the bug where the time condition changes when moving the container/pod summary screen's log search menu
+-   Modified the container/pod summary logs and event tab's button styles
+-   Modified the Y-axis unit display on the container/pod details screen's metrics chart
+-   파드 요약화면 > 로그 조회 후 메트릭스 데이터가 비어보이는 현상 수정
+
+**_노드 목록/상세_** 
+
+-   Added the number of CPU cores and memory total information
+-   Display with "-" for the columns with no data
+
+**_로그 설정_** - 로그 설정 안내 문구 일부 수정
+
+**_애플리케이션 서비스 대시보드_** - 히트맵 위젯 Y축 자동 조정 및 에러만 보기 옵션 수정
+
+**_이벤트 설정_** - 메트릭스 이벤트 설정 JSON 내보내기 기능 수정 
+
+## Log
+
+**_로그 검색기_**
+
+-   Added the selection option to limit the number of log data lookup lines 
+-   Deleted the phrase, "Activate log monitoring" when retrieving the system logs (# start log category)
+-   Added the case-sensitive search option and reverse chronological search option

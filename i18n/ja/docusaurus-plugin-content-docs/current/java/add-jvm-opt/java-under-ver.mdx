@@ -1,0 +1,64 @@
+---
+id: java-under-ver
+title: Java1.6以下
+description: Java1.6以下の環境でJVMオプションの追加設定を完了してください。
+tags:
+  - Java
+---
+
+Java 1.6バージョン以下でもWhaTapエージェントを適用できますが、一部の機能に制約があります。
+
+## Java1.5
+
+Java 1.5バージョンは、`-javaagent`オプションを提供します。 ただ、外部スレッドの情報を照会するのに制約があり、一部の機能に制約があります。
+
+次の機能は動作不可
+
+-   アクティブトランザクションにおけるリアルタイムトレース
+
+-   スタック分析（トップスタック、ユニークスタック、アクティブスタック）
+
+-   スレッド一覧の詳細スタック
+
+## Java1.4
+
+Java 1.4バージョンは、`-javaagent`オプションがありません。別の方法でWhaTapエージェントをインストールする必要があります。_whatap.agent.jar_ファイルもJava 1.4バージョンを使用してください。
+
+> whatap.java14.tracer-`X.Y.Z`.jar
+
+### boot.jar作成
+
+_setup.sh_ファイルを利用して_boot.jar_ファイルを作成してください。\
+もし[JAVA_HOME]を入力しない場合、現在のパスはJDKの位置を自動的に認識します。
+
+```bash
+$ setup.sh [JAVA_HOME]
+```
+
+_setup.sh_実行結果：_whatap.java14.boot-`X.Y.Z`.jar_
+
+### bootclasspathにインストール
+
+`bootclasspath`オプションを使用し、ビルドされたjarとtracerjarをprependに追加してください。
+
+```java tite='java 실행 옵션'
+-Xbootclasspath/p:${WHATAP_HOME}/whatap.java14.boot-1.0.2.jar:${WHATAP_HOME}/whatap.java14.tracer-1.0.2.jar
+```
+
+### 制約事項
+
+jdk 1.4 バージョンでは、次の機能が動作しません。
+
+-   アクティブトランザクションにおけるリアルタイムトライス
+
+-   スタック分析（トップスタック、ユニークスタック、アクティブスタック）
+
+-   コンポーネントのバージョン
+
+-   スレッド一覧、ヒープヒストグラム
+
+-   ロードされたクラス
+
+-   オープンソケット
+
+-   ダンプエージェント

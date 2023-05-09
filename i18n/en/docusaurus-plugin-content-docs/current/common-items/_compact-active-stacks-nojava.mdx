@@ -1,0 +1,23 @@
+## Collecting the compact active stacks
+
+Because the active stack regularly performs thread dumps, it can add lots of overheads to the agent if implemented incorrectly. WhaTap has various options to collect active stacks while minimizing the agent load.
+
+:::tip
+In **_Sitemap_** > **_Thread List/Dump_**, from the thread list, the overhead can be determined by checking the CPU time of the **_WhaTap-ActiveStackDump_** thread.
+:::
+
+**Optimized data collection**
+
+-   Dump the stack only for the thread that is performing transactions.
+
+-   You can adjust the active stack dump time interval.
+      `active_stack_second=10`
+
+-   It is limited to the maximum line of the active stack. It collects 50 lines from the top line by default.
+      `trace_active_callstack_depth=50`
+
+-   Each hashed line of the active stack is collected. Text is collected only once. 
+    <!-- 문의 -->
+
+-   The maximum number of active stacks collected at a time is limited.
+      'active_stack_count=100'

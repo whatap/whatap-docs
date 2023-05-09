@@ -1,0 +1,37 @@
+---
+id: supported-spec
+title: Node.jsのサポート環境
+description: WhaTapモニタリングサービスが動作するNode.jsアプリケーションサーバーの基本仕様について説明します。
+tags:
+  - Node.js
+---
+
+## Node.jsのサポート環境
+
+エージェントをインストールする前に、Node.jsアプリケーションサーバーが以下の仕様を満たしていることを確認してください。
+
+-   **Node.jsバージョン**：7.10.0バージョン以降
+
+-   **オペレーティング システム**: Windows、Mac (OSX)、Linux、Ubuntu、Centos など、Node.Jsを実行できるすべての環境をサポートします。
+
+-   **データベース**：MySQL、Microsoft SQL、MongoDB、Redisなど
+
+-   **アプリケーションサーバー**：Node.js基本モジュールを使用するすべてのフレームワーク（Express、Hapi、Mean、Koa、Restifyなど）
+
+:::note
+WhaTapサーバーにデータを送信するには、6600番ポートが開いている必要があります。
+:::
+
+## 共通サポート環境
+
+### 対応ブラウザー
+
+{@include: ../getting-started/_supported-browser.mdx}  
+
+### ファイアウォール
+
+{@include: ../getting-started/_proxy.mdx}  
+
+### モバイルアプリ
+
+{@include: ../getting-started/_mobile-app.mdx}  

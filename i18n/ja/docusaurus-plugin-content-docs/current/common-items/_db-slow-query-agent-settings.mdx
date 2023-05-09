@@ -1,0 +1,34 @@
+## 使用設定の案内
+
+**_スロークエリ_**メニューを使用するには、次のようにパラメータと権限を設定する必要があります。
+
+### DB、パラメータおよび権限設定
+
+```ini
+slow_query_log = 1
+long_query_time = 3 # 例）3秒以上SQL記録S
+log_output=FILE # または TABLE
+```
+
+:::note
+
+`log_output=TABLE`として設定した場合、`mysql.slow_log`の権限と容量を管理する必要があります。 次のコマンドを実行してください。
+
+```bash
+grant select on mysql.slow_log to whatap;
+```
+
+:::
+
+### whatap.confファイルの設定
+
+```ini title='whatap.conf'
+slow_query_log=ON
+```
+
+:::note
+
+-   DBサーバーに`log_output=FILE`として設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
+-   RDSはxosをインストールする代わりに、CloudWatch使用のための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
+
+:::

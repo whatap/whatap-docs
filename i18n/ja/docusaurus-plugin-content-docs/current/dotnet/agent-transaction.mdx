@@ -1,0 +1,27 @@
+---
+id: agent-transaction
+title: トランザクション
+description: エージェントのトランザクションパフォーマンスを追跡および設定するためのオプションを提供します。
+tags:
+  - .NET
+  - トランザクション
+---
+
+{@include: ../common-items/_transaction.mdx}
+
+エージェントでトランザクションのパフォーマンスを追跡および設定するため、次のオプションを提供します。
+
+### トランザクショントレーシング
+
+{@include: ../common-items/_dotnet-transaction-profile.mdx}
+
+### トランザクションのトレース
+
+-   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span><br/>デフォルト値 `3000`<br/>
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてslow区間として表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、slowアクティブトランザクション数に含まれます。
+
+-   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span><br/>デフォルト値 `8000`<br/>
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてvery slow区間として表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合は、very slowアクティブトランザクション数に含まれます。
+
+-   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span><br/>デフォルト値 `30000`<br/>
+    トランザクションの終了を待つ制限時間です。5分以内にトランザクションが終了しない場合、トランザクションはこれ以上情報を収集しません。トランザクションのトレース情報で「Lost Connection」を確認できます。

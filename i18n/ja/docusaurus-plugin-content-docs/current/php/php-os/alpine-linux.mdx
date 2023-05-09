@@ -1,0 +1,79 @@
+---
+id: alpine-linux
+title: Alpine Linux
+description: Alpine Linux
+tags:
+  - Alpine Linux
+  - Linux
+  - PHP
+---
+
+<!-- 전체적으로 구조 다시 잡아야 함 -->
+
+<!-- / 디렉터리 기준? -->
+
+### 標準インストールのプロセス
+
+1.  _whatap-php.tar.gz_をダウンロードして_/_ディレクトリを基準に圧縮を解凍してください。_/usr/whatap/php_ ディレクトリにモニタリングインストールファイルが作成されます。
+
+    ```bash title=SH
+    wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
+    tar -xvzf whatap-php.tar.gz -C /
+    ```
+2.  {@include: ../../common-items/_php-install-script.mdx}
+
+{@include: ../../common-items/_php-extension-whatap.mdx} 
+
+<!-- 
+php 확장 모듈 내용 
+-->
+
+#### whatap-php実行
+
+```bash title=SH
+/usr/whatap/php/whatap-php
+    Default restart
+    Command start, stop, restart, version
+
+
+##バージョン確認
+# /usr/whatap/php/whatap-php version
+0.8.5.20201209
+
+
+##実行確認
+# ps -elf | grep whatap
+  103 root      0:05 ./whatap_php_static -t=4
+```
+
+インストールが完了された後、ApacheまたはPHP-FPMサービスを再起動すると、設定されたPHP拡張モジュール_whatap.so_ファイルがロードされます。
+
+### Dockerインストールプロセス
+
+1.  _whatap-php.targ.gz_を_/usr/whatap/php_ディレクトリに圧縮を解凍してください。 
+
+2.  「install.sh」スクリプトを通じてインストールしてください。
+
+```docker title=SH
+FROM alpine
+
+RUN apk update && apk upgrade
+RUN apk add php7 php7-fpm php7-opcache
+RUN apk add php7-gd php7-mysqli php7-zlib php7-curl
+RUN apk add php7-pdo php7-pdo_mysql
+RUN apk add php7-pgsql
+
+RUN apk add apache2 php7-apache2
+
+# Install WhaTap PHP monitoring
+ADD whatap-php.tar.gz /
+RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
+RUN tar -xvzf whatap-php.tar.gz -C /
+RUN /usr/whatap/php/install.sh -l <アクセスキー> -s <Whatap server Host> -e <php CLI 경로> -p <プロセス名>
+```
+
+Dockerのentrypointにwhatap-php実行コマンドを追加します。containerの実行後にwhatap-phpデーモンが開始されるように設定してください。
+
+```bash title=SH
+/usr/whatap/php/whatap-php
+```

@@ -1,0 +1,30 @@
+## Allocating the server name for management{#custom-server-name}
+
+The agent automatically assigns the instance names by using the database server type, the IP address of the database server, and the service port.
+
+### Database instance name setting option
+
+Change to the default pattern can be set in the _whatap.conf_ file.
+
+```ini title='whatap.conf'
+## Default
+object_name={type}-{ip2}-{ip3}-{port}
+```
+
+### Database instance name pattern
+
+The same database instance names cannot be used in a project. If the server IPs are duplicated due to the internal IP addresses, the database server names can be patterned and applied for each group.
+
+| Configuration     | Description                                                                      |
+| ----------------- | -------------------------------------------------------------------------------- |
+| {type}            | DBX                                                                              |
+| {ip0}             | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)     |
+| {ip1}             | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13)    |
+| {ip2}             | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)     |
+| {ip3}             | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**)    |
+| {port}            | Database port                                                                    |
+| {hostname}        | Host name                                                                        |
+
+:::note
+For more information about the whatap.conf file that has the agent name setting, see [the following](agent-naming).
+:::

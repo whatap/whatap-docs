@@ -1,0 +1,56 @@
+---
+id: agent-static
+title: Statistics
+description: It describes the PHP agent statistics.
+tags:
+  - Statistics
+  - PHP
+  - Configuration
+  - Application
+---
+
+-   **whatap.stat_domain_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It collects transaction statistics for each domain.
+
+-   **whatap.stat_domain_max_count**<span class='type'>Int</span><br/>
+      Default `7000`<br/>
+      Maximum number of records of transaction statistics for each domain that collects for 5 minutes.
+
+-   **whatap.stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It collects the version-dependent statistics between callers and callees among multiple server transactions.
+
+-   **whatap.mtrace_spec** <span class='type'>String</span><br/>
+       Default `v1`<br/>
+       Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics.
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.stat_mtrace_max_count** <span class='type'>Int</span><br/>
+      Default `7000`<br/>
+      It collects the version-dependent statistics between callers and callees among multiple server transactions.
+
+-   **whatap.stat_referer_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It collects transaction statistics by referer.
+
+-   **whatap.stat_referer_max_count**<span class='type'>Int</span><br/>
+      Default `7000`<br/>
+      Maximum number of records of transaction statistics for each referer that collects by JVM for 5 minutes.
+
+<!-- 문의 남김 .. 해결-->
+
+-   **whatap.stat_referer_format**<span class='type'>Int</span><br/>
+      Default `7000`<br/>
+
+    | Value | Description                                |
+    | ----- | ------------------------------------------ |
+    | 0     | All (Domain + Path + Query parameter)      |
+    | 1     | Domain (http://www.aa.com)                 |
+    | 2     | Domain and path (http://www.aa.com/aa.php) |
+    | 3     | Path (_/aa.php_)                           |
+
+<!-- 기본값 "" none? .. 해결-->
+
+-   **whatap.okind**<span class='type'>String</span><br/>
+      It is arbitrarily assigned for the group topology. By setting multiple agents together, the topology can be checked by the group name.

@@ -1,0 +1,41 @@
+---
+id: service-1.88.0
+title: Service 1.88.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-09-28
+
+## `공통`
+
+**공통** - 조직선택 오류 수정
+
+## Integration
+
+**인티그레이션 프로젝트** - 프로젝트 생성 페이지 개편
+
+## Application
+
+**멀티트랜잭션 추적** - 조회 오류 수정
+
+## Container
+
+**공통** - 용어 변경, "마스터 프로젝트"를 "클러스터 프로젝트"로 변경
+
+**컨테이너맵** - 이름 변경, "최근 로그 메시지" 탭 이름을 "컨테이너 Stdout/Stderr"로 변경
+
+**Out of Memory Killed Container** 
+
+-   Limited the container lookup time to 2 days
+-   Changed the metric from "memory-totalrss" to "memory_workingset"
+
+**컨테이너 목록** - 조회 오류 수정
+
+## Log
+
+**공통** - Python 프로젝트 오픈
+
+**로그 검색기** - 조회 오류 수정

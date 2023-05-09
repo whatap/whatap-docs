@@ -1,0 +1,24 @@
+---
+id: scale-in-auto-delete
+title: Scale Inからエージェントの自動削除
+description: Auto Scale環境でScale Inが発生した場合、エージェントの自動削除方法を提供します。
+tags:
+  - Java
+---
+
+Auto Scale環境でエージェント名を自動付与すると、Scale Outが発生した場合、オペレータの介入は必要ありません。システムを自動的に拡張します。一方、Scale Inが発生すると、システムが正常なShut downとして認識する必要があります。
+
+エージェントの自動削除のために、WhaTapサーバーは、Javaエージェントからメッセージを受け取る必要があります。エージェントは、`${WHATAP_HOME}`にJavaプロセスの_whatap\_{java-process-pid>}.shutdown_ファイルが生成されたら**SILENT_SHUTDOWN**イベントをWhaTapサーバーに転送します。転送は5秒以内に完了します。
+
+**SILENT_SHUTDOWN**イベントをWhaTapサーバに転送します。その後、1分以内にエージェントがシャットダウンすると、WhaTapサーバはリストから該当Javaエージェントをすぐに削除します。inactiveイベントも発生させません。
+
+:::note
+Tomcat의 경우 _shutdown.sh_ 파일에 설정할 수 있습니다.
+
+```bash title=$TOMCAT_HOME/bin/shutdown.sh
+touch $WHATAP_HOME/whatap_{java-process-pid}.shutdown
+```
+
+<!-- 관련 https://desk.channel.io/#/channels/6280/user_chats/63bfcb1a3962bededb99 -->
+
+:::

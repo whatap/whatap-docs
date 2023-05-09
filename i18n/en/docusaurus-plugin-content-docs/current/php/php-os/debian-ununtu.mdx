@@ -1,0 +1,31 @@
+---
+id: debian-ubuntu
+title: Debian/Ubuntu
+description: Debian/Ubuntu
+tags:
+  - Debian
+  - Ubuntu
+  - Linux
+  - PHP
+---
+
+1.  Register the WhaTap **repository**. 
+
+    ```bash title=SH
+    $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+    $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+    $ sudo dpkg -i whatap-repo_1.0_all.deb
+    $ sudo apt-get update
+    ```
+
+2.  Install the **package** with the following command. 
+
+    ```bash title=SH
+    $ sudo apt-get install whatap-php
+    ```
+
+3.  {@include: ../../common-items/_php-install-script.mdx}
+
+{@include: ../../common-items/_php-extension-whatap.mdx}
+
+{@include: ../../common-items/_php-restart-apply.mdx} 

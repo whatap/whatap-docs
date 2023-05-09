@@ -1,0 +1,117 @@
+---
+id: agent-dbsql
+title: Tracing DB and SQL
+description: It provides the options related to the Golang agent's DB and SQL.
+tags:
+  - Golang
+  - DB
+  - SQL
+---
+
+This API collects database-related information of the Golang agent.
+
+Execution times and errors can be collected by passing parameters for DB connection, SQL syntax, errors, and prepared statements to the API. SQL statements can be collected up to 32 KB. The parameters for SQL prepared statements are collected up to 20 and up to 256 bytes for each.
+
+## whatap.conf configuration
+
+-   **go.sql_profile_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>Set whether or not to collect database/SQL data.
+
+## DB Connection
+
+```go title='GO'
+import (
+    whatapsql "github.com/whatap/go-api/sql"
+)
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Trace Open DB")
+    defer trace.End(ctx, nil)
+
+    sqlCtx, _ := whatapsql.StartOpen(ctx, "id@tcp(x.x.x.x:3306)/test")
+    db, err := sql.Open("mysql", "id:pwd@tcp(x.x.x.x:3306)/test")
+    whatapsql.End(sqlCtx, err)
+    defer db.Close()
+}
+```
+
+## SQL
+
+### Tracing queries
+
+```go title='GO'
+import (
+    whatapsql "github.com/whatap/go-api/sql"
+)
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Trace Query")
+    defer trace.End(ctx, nil)
+
+    query = "select id, subject from tbl_faq limit 10"
+    sqlCtx, _ = whatapsql.Start(ctx, "id:pwd@tcp(x.x.x.x:3306)/test", query)
+    rows, err := db.QueryContext(ctx, query)
+    whatapsql.End(sqlCtx, err)
+}
+```
+
+### Tracing the prepared statements
+
+```go title='GO'
+import (
+    whatapsql "github.com/whatap/go-api/sql"
+)
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Trace Prepared Statement")
+    defer trace.End(ctx, nil)
+
+    // Prepared Statement 생성
+    query = "select id, subject from tbl_faq where id = ? limit ?"
+    stmt, err := db.Prepare(query)
+    if err != nil {
+    	return
+    }
+    defer stmt.Close()
+
+    params := make([]interface{}, 0)
+    params = append(params, 8)
+    params = append(params, 1)
+
+    sqlCtx, _ := whatapsql.StartWithParamArray(ctx, "id:pwd(x.x.x.x:3306)/test", query, params)
+    rows, err := stmt.QueryContext(ctx, params...)
+    whatapsql.End(sqlCtx, err)
+
+    sqlCtx, _ = whatapsql.StartWithParam(ctx, "id:pwd(x.x.x.x:3306)/test", query, params...)
+    rows, err := stmt.QueryContext(ctx, params...)
+    whatapsql.End(sqlCtx, err)
+}
+```
+
+## API
+
+```go title='GO'
+func Start(ctx context.Context, dbhost, sql string) (*SqlCtx, error)
+
+func StartOpen(ctx context.Context, dbhost string) (*SqlCtx, error)
+
+func End(sqlCtx *SqlCtx, err error) error
+
+func StartWithParam(ctx context.Context, dbhost, sql, param ...interface{}) (*SqlCtx, error)
+
+func StartWithParamArray(ctx context.Context, dbhost, sql string, param []interface{}) (*SqlCtx, error)
+
+func Trace(ctx context.Context, dbhost, sql, param string, elapsed int, err error) error
+```

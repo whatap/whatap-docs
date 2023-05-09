@@ -1,0 +1,89 @@
+---
+id: cube
+title: CUBE
+description: It guides you to the cube analysis.
+tags:
+  - Server
+  - CUBE
+  - Analysis
+  - UI
+---
+
+import TR from '@site/src/components/TR';
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+Home > Select Project > **_Analysis_** > **_CUBE_**
+
+와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 **_프로젝트 메뉴_** 하위에 **_분석_** > **_큐브_**를 선택하세요. 
+
+<!-- It provides information for connections, hitmap, transactions, TOP transactions, TPS, response times, and resource usage for each country. -->
+
+## What is Cube?
+
+We call the performance statistics generated every 5 minutes as **Cube**. Cube analysis uses each 5-minute performance data stored in cubes.
+
+<ProdImg img='cube.png' desc='큐브' />
+
+## ![](/img/number-01.png) Cube selection panel
+
+왼쪽의 큐브 셀렉트 패널에서 특정 시간 기준으로 큐브를 선택하세요. 큐브는 5분 단위로 저장되어 있기 때문에 특정 시간을 선택해야 합니다. 
+
+-   **패널 관심 지표**<br/>
+    서버 큐브 셀렉트 패널의 관심 지표는 **_CPU_**와 **_메모리_**입니다.
+
+<!-- 이미지 및 패널 지표 안내는 재기술 필요해서 현재는 생략 상태 -->
+
+-   **Cube color**<br/>
+    The cubes are displayed in different colors depending on the number of the selected metrics.
+
+    -   <span class='highfg'>Dark blue</span>: <span class='highfg'>high figure</span>
+
+    -   <span class='lowfg'>Light blue</span>: <span class='lowfg'>low figure</span>
+
+## ![](/img/number-02.png) Application selection
+
+You can select data for a specific application through the application selection option in the top ![number 2](/img/number-02.png) area. If you select ![down-arrow](/img/down-arrow.svg) on the right, you can see all the applications that can be selected as follows. 
+
+![Cube selection application](/img/cube-select-app.png)
+
+-   **_Select All_**: All applications are viewed. By default, **_Select All_** and **_Active Applications_** are selected. 
+
+-   **_Active Application_**: Among the applications, the active applications are specified for inquiry. 
+
+-   **_View Only Selected_**: Among the applications, only the specified applications are queried. 
+
+-   **_Search_**: If there are many applications, you can search for them through the input field.
+
+-   <font color='5B7DEC'>Number</font>/<font color='979797'>Number</font>: Displays the <font color='5B7DEC'>number of applications specified</font>/<font color='979797 '>number of all applications</font>.
+
+<!-- ![cube-select-apm-data](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring21.png) -->
+
+## ![](/img/number-03.png) Cube data
+
+<!-- 상기와 같이 현재는 생략 상태 -->
+
+:::note
+
+-   차트 상단 오른쪽의 ![바 차트 아이콘](/img/ic-dashboard-bar-chart.svg) 아이콘을 선택하면 바형 차트를 제공합니다. 
+-   차트 상단 오른쪽의 ![개별 아이콘](/img/ic-multiline-chart.svg) 아이콘을 선택하면 선형 차트를 제공합니다.
+
+:::
+
+![number 3](/img/number-03.png) 영역에서 해당 큐브 데이터를 **_CPU_**, **_메모리_**, **_디스크_**, **_네트워크_** 등의 차트를 통해 확인할 수 있습니다.
+
+-   **_CPU_**<br/>
+    프로젝트 내 애플리케이션을 CPU 사용량이 많은 순서대로 정렬해 표시합니다. 
+
+-   **_메모리_**<br/>
+    프로젝트 내 애플리케이션을 메모리 사용량이 많은 순서대로 정렬해 표시합니다.
+
+-   **_디스크_**<br/>
+    프로젝트 내 애플리케이션을 디스크 사용량이 많은 순서대로 정렬해 표시합니다.
+
+-   **_네트워크_**<br/>
+    프로젝트 내 애플리케이션을 네트워크 입출력 트래픽량이 많은 순서대로 정렬해 표시합니다.
+
+:::note
+This product contains the data from **GeoLite2** of **MaxMind**. It complies with the license policy. **GeoLite2** can be checked from the MaxMind website (http://www.maxmind.com). (This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com)
+:::

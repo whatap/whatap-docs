@@ -1,0 +1,84 @@
+---
+id: log-python
+title: Python
+description: Pythonアプリケーションでログを収集する方法について案内します。
+tags:
+  - ログモニタリング
+  - Python
+---
+
+Pythonアプリケーションでログを収集するには、次のことを確認してください。
+
+## エージェントのアップデート
+
+Pythonエージェント1.2.2バージョンから可能です。アップデート方法は[次の文書](../python/manage-pkg#update-pkg)を参考にしてください。
+
+## エージェント設定の確認
+
+ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ設定_**
+
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、プロジェクトメニュー下位の**_ログ_** > **_ログ設定_**メニューを選択してください。**_ログモニタリングを開始する_**セクションの**_エージェント設定確認_**タブの案内を参考にして進めてください。
+
+### ログ収集の活性化
+
+設定ファイルパス(_WHATAP_HOME_)を含むコマンドを入力すると、ログ収集がすぐに開始されます。
+
+```shell
+export LOGFILES={ログファイル全体パス},...
+echo "logsink_enabled=true" | sudo tee -a {設定ファイルパス}/whatap.conf
+echo "logsink.files=$LOGFILES" | sudo tee -a {設定ファイルパス}/whatap.conf
+```
+
+### ログとウェブトランザクションの連動
+
+トランザクションごとに発生したログを別途照会できるように、トランザクションID`{txid}`をログに出力します。WhaTapモニタリングでは、Python LogRecordに`{txid}`を自動注入してフォーマターの設定時、ログファイルに`{txid}`を出力できるようにします。
+
+```shell
+settings.py
+...
+LOGGING = {
+...
+    'formatters': {
+        ...
+    },
+    'handlers': {
+        ...
+    },
+    'loggers': {
+        ...
+        '{ロガー名}': {
+            'handlers': [...],
+        ...
+        },
+    },
+}
+
+try:
+    import whatap.trace.mod.logging as whatap_logging
+    if whatap_logging.logging_injection_processed:
+        LOGGING['formatters']['whatap.formatter']={
+                '()': 'django.utils.log.ServerFormatter',
+                'format': '[{server_time}] -- {{ "@txid" : "{txid}" }} -- {message}',
+                'style': '{',
+            }
+        LOGGING['handlers']['whatap']={
+                'level': 'DEBUG',
+                'class': 'logging.handlers.RotatingFileHandler',
+                'filename': os.path.join(BASE_DIR, 'logs','whatap_log.log'),
+                'formatter': 'whatap.formatter',
+            }
+        LOGGING['loggers'][{ロガー名}]['handlers'].append('whatap')
+except:
+    pass
+...
+```
+
+## ログモニタリングの活性化
+
+ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ設定_**
+
+**_ログモニタリングを開始する_**セクションの**_ログモニタリングの活性化_**タブのトグルボタンで、WhaTapログモニタリングの活性化・非活性化ができます。 
+
+{@include: ../common-items/_log-java-start.mdx} 
+
+{@include: ../common-items/_log-active-note.mdx} 

@@ -1,0 +1,90 @@
+---
+id: container-map-log
+title: Log
+description: You can immediately check the logs output by the containers or applications inside containers.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Log
+---
+
+Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > **_Log_**
+
+## Kubernetes logs
+
+Kubernetes has two types of logs:
+
+-   Standard out logs for each container
+-   Logs output by applications running inside each container
+
+These logs serve to compensate for monitoring blind spots that are difficult to check with the container status or metrics data. You can check these logs as follows:
+
+-   Standard Out logs of each container can be checked through the `kubectl logs` command provided by Kubernetes without entering into the container.
+-   Application logs in each container must be checked in the container or for that purpose, a separate log collection method must be devised.
+
+## Recent log messages (Container Stdout/Stderr)
+
+This function allows you to immediately check the current container logs. To check the container logs, the following command is used.
+
+```bash
+kubectl logs pod/<Pod명> -n <Namespace명>
+```
+
+If there are multiple containers in a pod, select each individual container to view logs.
+
+```bash
+kubectl logs pod/<Pod명> -c <container name> -n <Namespace명>
+```
+
+It is very inconvenient to access the terminal screen and run the command line tools every time to check logs. By using the **_Log_** function of WhaTap Kubernetes Monitoring, you can conveniently check the current logs. 
+
+![Recent Log Messages](/img/kubernetes-container-stdout.png)
+
+However, there are things to think about. If you exit the container, you cannot see logs any longer. Even if the container is still running, you can check only the logs for a specific period or amount. The WhaTap's Recent Log Messages (**_Container Stdout/Stderr_**) function allows you to see the logs in the Kubernetes environment. The disappeared logs from the user environment are difficult to check even through WhaTap. 
+
+Therefore, a separate method is required for stable and continuous management of log data. In particular, as the microservice architecture spreads and the number of containers for businesses increases, the log checking and management methods are becoming more complex.
+
+Any good idea?
+
+## Log Search
+
+If the container standard out logs are stored through the WhaTap log service, you can set the desired storage period, and you can check specific target-specific data or perform correlation analysis.
+
+![Log Search](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_search.png)
+
+:::caution
+If you enable the WhaTap log service and use the container's standard output log storage function, an additional fee is incurred. For more information about pricing, see [the following](https://www.whatap.io/ko/pricing/).
+:::
+
+:::note
+일부 구 버전 에이전트의 경우는 컨테이너 Standard Output 로그 저장 기능을 제공하지 않습니다. 에이전트 업그레이드 방법은 다음과 같습니다.
+
+```bahs title='에이전트 업데이트'
+kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<agent version> -n whatap-monitoring
+```
+
+The latest version of the WhaTap Kubernetes agent can be checked in [the following](https://hub.docker.com/r/whatap/kube_mon/tags).
+
+### Adding the node agent settings to save Standard Out
+
+To save the container's standard output through the WhaTap log service, add the `logsink_enabled=true` setting to the WhaTap Kubernetes node agent. The WhaTap Kubernetes node agent is in the DaemonSet format.
+
+<!-- 개발자에게 관련 사항 문의 필요 -->
+
+-   Add the `logsink_enabled=true` setting in **_Management_** > **_Agent CONFIG._** on the WhaTap monitoring service page.
+-   To add the settings for all nodes in the cluster project, go to **_Project Default_** > **_Nodes_**.
+-   To add settings for some nodes, first select one or more nodes.
+
+**_Management_** > **_Agent CONFIG._** > Select Node Agent > **_+ Add Option_** > Select options for all agents > Select node to apply 
+
+![Agent configuration](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
+
+## Using the WhaTap log service function
+
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction).
+
+## Go to Log Search
+
+![Go to Log Search button](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_button.png)
+
+When you click the button on the right of the log, the Log Search screen appears.

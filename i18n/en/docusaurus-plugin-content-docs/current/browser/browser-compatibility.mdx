@@ -1,0 +1,30 @@
+---
+id: browser-compatibility
+title: Browser Compatibility
+description: Before applying the browser agent, check the browser compatibility.
+tags:
+  - Browser Monitoring
+  - Compatibility
+---
+
+To start the Browser monitoring, apply the browser agent to the web application to collect. Before applying the browser agent, check the browser compatibility.
+
+## Collected data items for each browser version
+
+The data that WhaTap browser agent can collect may differ depending on the browser and its version.
+
+<div class='rum-compatibility'>
+
+| 수집 데이터                                   | Chrome | Edge  |  Safari  | Firefox  |  Opera  | Chrome Android | Safari iOS | Samsung Internet |
+| ---------------------------------------- | :----: | :---: | :------: | :------: | :-----: | :------------: | :--------: | :--------------: |
+| Page Load                                |  \> 6  | \> 12 |  \> 8    |  \> 7    |  \> 15  |    107         |   \> 9     |    \> 4          |
+| 페이지 로드에 관한 리소스                           | \> 28  | \> 12 |  \> 11   |  \> 35   |  \> 15  |    107         |  \> 11     |    \> 4          |
+| Resources                                | \> 52  | \> 79 |  \> 11   |  \> 57   |  \> 39  |    107         |  \> 11     |    \> 6.2        |
+| AJAX                                     |  \> 4  | \> 12 |  \> 3.1  |  \> 2    |  \> 10  |    107         |  \> 3.2    |    \> 4          |
+| Core Web Vitals                          | \> 77  | \> 79 | fid only | fid only |  \> 64  |    107         |  fid only  |    \> 12         |
+| SPA 페이지 전환                               |  \> 4  | \> 12 |  \> 3.1  |  \> 2    |  \> 10  |    107         |  \> 3.2    |    \> 4          |
+| console 에러                               |  \> 4  | \> 12 |  \> 3.1  |  \> 4    | \> 11.5 |    107         |  \> 3.2    |    \> 4          |
+| 예외 처리 되지 않은 프로미스 에러                      | \> 49  | \> 79 |  \> 11   |  \> 69   |  \> 36  |    107         |  \> 11.3   |    \> 5          |
+| 예외 처리 되지 않은 자바스크립트 에러                    | \> 10  | \> 12 |  \> 5.1  |  \> 6    |  \> 15  |    107         |   \> 5     |    \> 4          |
+
+</div>

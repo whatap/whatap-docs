@@ -1,0 +1,47 @@
+---
+id: supported-spec
+title: Support Environment
+description: The following lists basic specifications of the Python application server on which the WhaTap monitoring service operates.
+tags:
+  - Python
+  - Support Environment
+---
+
+## Python agent-supported environment
+
+Before installing the WhaTap Python monitoring agent, check the support environment.
+
+-   **OS**
+
+    -   Redhat/CentOS 6.x (64 bit) or later
+    -   Debian/Ubuntu 12.04 (64 bit) or later
+    -   OSX 10.15 Catalina
+
+-   **Support versions**
+
+    -   Python 2.7 & Python 3.3 or later
+    -   WSGI Application
+
+-   **Support libraries**
+
+    -   External calls: HttpLib, Requests, Urllib
+    -   Database : MySQL, SQL Server, PostgreSQL, Redis
+    -   Kombu, Pika
+
+-   **Application Server**
+
+    Django, Bottle, CherryPy, Flask, Tornado, Nameko, Celery
+
+## Common environment
+
+### Supporting the browser
+
+{@include: ../getting-started/_supported-browser.mdx}  
+
+### Firewall
+
+{@include: ../getting-started/_proxy.mdx}  
+
+### Mobile app
+
+{@include: ../getting-started/_mobile-app.mdx}  

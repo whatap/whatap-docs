@@ -1,45 +1,55 @@
 # Introduction
 
-와탭 모니터링 서비스 콘텐츠 관리 도구입니다.
+WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
-# Website
+## 빌드 방법 및 PDF 제작 방법
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+<https://www.notion.so/whatap/Docusaurus-b64bd9c10e484e89b302d5ad6ce2295f?pvs=4>
 
-### Installation
+## 다국어 문서 수정 사항
 
-```
-$ yarn
-```
+* /\\_([a-z]) -> /_$1
 
-### Local Development
+* : \_ -> : _
 
-```
-$ yarn start
-```
+* \[ -> [
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+* _trs-profile.mdx 주석 삭제
 
-### Build
+      * ** * -> ---
 
-```
-$ yarn build
-```
+:::note null -> :::note
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+:::note\ -> :::note
 
-### Deployment
+<Version> -> {Version} 또는 &lt;Version&gt;
 
-Using SSH:
+<version> -> {version}
 
-```
-$ USE_SSH=true yarn deploy
-```
+server-list.mdx -> 주석 삭제
 
-Not using SSH:
+< > -> 부호 앞에 &lt;, &gt; 적용할 것
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+\<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+  ::: 탭 공백 확인해볼 것
+
+  _sv-w-cpf.mdx 파일 수정
+
+  ../../account/account-manage -> ../account/account-manage 경로 수정할 것
+
+../../project/ -> ../project/
+
+영문, 일본어에서 index(홈화면), reference 페이지의 pdf 다운로드 관련 내용 삭제할 것
+
+일본어 괄호 부분 수정
+
+[次の文書]\(..// account/account-manage) 관련 부분 수정
+
+[次の文書]（trs-view#詳細-分析）
+
+[次の記事] \(openapi-call-apm-stat-data)
+
+）로 끝나는 부분 확인
+
+\(https://pypi.org/project/whatap-python/ #files)

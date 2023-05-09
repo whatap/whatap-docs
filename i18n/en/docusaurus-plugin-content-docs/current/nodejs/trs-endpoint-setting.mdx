@@ -1,0 +1,28 @@
+---
+id: trs-endpoint-setting
+title: 트랜잭션 엔드포인트 설정
+description: 트랜잭션 엔드포인트 설정을 안내합니다.
+tags:
+  - Node.js
+  - Transactions
+---
+
+{@include: ../common-items/_edp-def.mdx}
+
+## Non-HTTP tracing
+
+{@include: ../common-items/_edp-track-non-http.mdx} 
+
+## Selecting the target
+
+<!-- 먼저 메소드 트레이스를 설정하세요. 확실하게 트랜잭션에서 호출되는 클래스를 지정하세요. 그래서 DB를 사용하는 프로그램에서는 **JDBC 드라이버**가 유용합니다. JDBC 드라이버에 트레이스를 설정하세요. -->
+
+{@include: ../common-items/_edp-select.mdx} 
+
+## 트랜잭션 엔드포인트 지정
+
+{@include: ../common-items/_edp-trs-setting.mdx}
+
+## Defining the transaction name
+
+{@include: ../common-items/_edp-name-setting.mdx}

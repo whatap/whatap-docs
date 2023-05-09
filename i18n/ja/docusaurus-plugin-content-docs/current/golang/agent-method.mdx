@@ -1,0 +1,50 @@
+---
+id: agent-method
+title: Method追跡
+description: GolangエージェントのMethod追跡オプションを提供します。
+tags:
+  - Golang
+  - Method追跡
+---
+
+## Method追跡
+
+```go title='GO'
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Trace Method")
+    defer trace.End(ctx, nil)
+
+    getUser(ctx)
+}
+
+func getUser(ctx context.Context) {
+    methodCtx, _ := method.Start(ctx, "getUser")
+    defer method.End(methodCtx, nil)
+    time.Sleep(time.Duration(1) * time.Second)
+}
+```
+
+## API
+
+```go title='GO'
+func Start(ctx context.Context, name string) (*MethodCtx, error)
+
+func End(methodCtx *MethodCtx, err error) error
+
+func Trace(ctx context.Context, name string, elapsed int, err error) error
+```
+
+## Whatap.conf設定
+
+**ignore_http_method_urls** <span class='type'>String</span><br/>**ignore_http_method** <span class='type'>String</span>
+
+設定したURIに対して特定のHTTP Methodでリクエストされるトランザクションの収集を除きます。コンマ（,）を区切り文字として利用して複数のURI、Methodを登録することができます。大文字と小文字の区分はありません。
+
+```ini title='예시'
+ignore_http_method_urls=/index, /sql/select
+ignore_http_method=options, connect
+```

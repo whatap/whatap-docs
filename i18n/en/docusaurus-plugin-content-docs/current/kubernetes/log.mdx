@@ -1,0 +1,50 @@
+---
+id: log
+title: Log
+description: You can check various logs related to Kubernetes.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Log
+---
+
+Home > Select Project > **_Log_**
+
+You can check various logs related to Kubernetes. The monitoring categories provided by WhaTap Kubernetes are as follows:
+
+| Category          | Description                                                                                                                                                           |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `#K8sEvent`       | <ul><li>Logs that store the events that occur in Kubernetes</li><li>Generation by default regardless of user settings </li></ul>                                      |
+| `#WhatapEvent`    | <ul><li>Logs that store the events that occur by WhaTap event settings</li><li>Generation by default regardless of user settings </li></ul>                           |
+| `containerStdout` | <ul><li>Container Standard Out logs</li><li>Generation by user settings</li><li>When `logsink_enabled=true` setting is added to the node agent</li></ul>              |
+| `AppLog`          | <ul><li>Application logs in the container</li><li>Generation by user settings</li><li>When `logsink_enabled=true` setting is added to the application agent</li></ul> |
+
+:::note
+Depending on the settings, duplicate log contents may be stored. Be sure to check for duplicates.
+:::
+
+## Live Tail
+
+Home > Select Project > **_Log_** > **_Live Tail_**
+
+You can check the content in the WhaTap Kubernetes monitoring category in real time. For more information about **_Live Tail_**, see [the following](../log/log-lt).
+
+## Log Trend
+
+Home > Select Project > **_Log_** > **_Log Trend_**
+
+You can see the stored log trend by setting a time range. For more information about **_Log Trend_**, see [the following](../log/log-exp).
+
+## Log Search
+
+Home > Select Project > **_Log_** > **_Log Search_**
+
+You can search the stored logs by setting a time range. For example, you can see the standard out logs of a specific container or all containers in the deployment at once. You can also highlight a specific keyword for display.
+
+For more information about **_Log Trend_**, see [the following](../log/log-search).
+
+## Setting the log
+
+Home > Select Project > **_Log_** > **_Setting_**
+
+You can configure various log-related settings including log activation. For more information about the log settings, see [the following](../log/log-setting).

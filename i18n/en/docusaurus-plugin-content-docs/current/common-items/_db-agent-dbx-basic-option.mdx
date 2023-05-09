@@ -1,0 +1,39 @@
+-   **license** <span class='type'>String</span>
+
+    To install the agent, set the project access key granted from the server. The project access key includes the agent's project and the encryption key for secured communication.
+
+-   **whatap.server.host** <span class='type'>String</span>
+
+    Default `127.0.0.1,127.0.0.1`
+
+    Specify the IP address of the collection server to transfer the data collected by the agent. If there are multiple IP addresses for collection server redundancy, use comma (,) as the delimiter. The collection server proxy daemon must be serviced in the listening state for the set IP address.
+
+-   **whatap.server.port** <span class='type'>String</span>
+
+    Default `6600`
+
+    Set the port of the collection server. Because only one port can be set, use the same port set in the "whatap_server_host" option.
+
+-   **dbms** <span class='type'>String</span>
+
+    <p><CurProd/></p>
+
+<InDoc product='cubrid'>
+
+-   **db** <span class='type'>String</span>
+
+    Set the name of the database to be monitored.
+
+</InDoc>
+
+-   **db_ip** <span class='type'>String</span>
+
+    Set the IP address of the database server to be monitored.
+
+<Xclude product='cubrid'>
+
+-   **db_port** <span class='type'>String</span>
+
+    Set the port used for DB communication.
+
+</Xclude>

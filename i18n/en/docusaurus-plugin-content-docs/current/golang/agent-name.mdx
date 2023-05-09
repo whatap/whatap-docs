@@ -1,0 +1,53 @@
+---
+id: agent-name
+title: Agent name identification
+description: The following explains how to set the agent name in order to identify the monitoring target.
+tags:
+  - golang
+  - Agent name
+---
+
+{@include: ../common-items/_apm-name-description.mdx}
+
+## Agent naming method
+
+The default patterns used to identify the application server are as follows:
+
+```ini title='기본 패턴'
+{type}-{ip2}-{ip3}-{process}
+```
+
+To change the default pattern value, modify _whatap.conf_ as follows:
+
+```ini title='whatap.conf'
+object_name={type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
+```
+
+## Variable of the agent name
+
+| Variable       | Description                                                                      |
+| -------------- | -------------------------------------------------------------------------------- |
+| {type}         | Name of the application server                                                   |
+| {ip0}          | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)     |
+| {ip1}          | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13)    |
+| {ip2}          | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)     |
+| {ip3}          | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**)    |
+| {process}      | Process name of the application server                                           |
+| {hostname}     | Host name                                                                        |
+| {dockerid}     | ID of the docker container                                                       |
+| {ips}          | It is the full IP (IPv4, IPv6).                                                  |
+
+## Setting the agent name{#agentname}
+
+-   **object_name** <span class='type'>String</span><br/>
+    Default `{type}-{ip2}-{ip3}-{process}`<br/>
+    The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME.
+
+-   **app_name** <span class='type'>String</span><br/>
+    Application name that is used in the agent name (ONAME) scheme that identifies applications. It corresponds to `{type}` among `object_name` options.
+
+-   **app_process_name** <span class='type'>String</span><br/>
+    It is the application process name used in the agent naming (ONAME) scheme to identify applications. Set the target process to collect CPU, heap memory, and such of the application server. It corresponds to `{process}` among `object_name` options.
+
+-   **whatap.okind** <span class='type'>String</span><br/>
+    Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.

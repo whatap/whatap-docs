@@ -1,0 +1,14 @@
+### Deleting from the server where the agent have been installed
+
+<Tabs groupId='os'>
+<TabItem value='linux' label='Linux' default>
+
+Among the Java processes running on the server, the process containing `whatap.agent.dbx` string is terminated. Run _stop.sh_ in the path where the agent has been installed. Afterwards, delete the agent file and user roles registered in the agent.
+
+</TabItem>
+<TabItem value='windows' label='Windows'>
+
+Among the Java processes running on the server, find the process running with the jar file of the agent file name and then stop it. If the batch file is running in the foreground, end the batch execution script. Afterwards, delete the agent file and user permission registered in the agent.
+
+</TabItem>
+</Tabs>

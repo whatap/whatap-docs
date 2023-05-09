@@ -1,0 +1,34 @@
+---
+id: php-2.5.2
+title: PHP Agent 2.5.2
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-07-06
+
+## Change（アップデート）
+
+### ログモニタリングの圧縮転送をデフォルト設定に変更
+
+「whatap.logsink_zip_enabled」のデフォルト値を「true」に設定します。 圧縮転送をデフォルトとします。 
+
+### プロジェクトライセンスキーの名称をアクセスキーに変更
+
+エージェントオプションのうち、「whatap.license」を「whatap.accesskey」に変更します。 既存の「license」も使用可能です。
+
+### TCP queueのサイズ変更
+
+256、512 から 512、1024に拡張します。 ログモニタリングファイルが多く設定されている場合は、tcpパケットの増加を処理するために拡張します。 
+
+## Fixed（バグ修正）
+
+### segmentation faultの修整
+
+マルチトランザクション追跡オプション（「whatap.mtrace_enabled」）が設定された状態で 「curl_setopt_array」関数使用中にsegmentation faultが発生するエラーを修正しました。 
+
+### biz_exceptionsオプション
+
+「biz_exceptions」オプションで除外したエラーは、ヒートマップにはエラーとして表記されず、トランザクションプロファイルと統計情報にのみ適用されます。 統計情報に適用されないエラーを修正しました。 

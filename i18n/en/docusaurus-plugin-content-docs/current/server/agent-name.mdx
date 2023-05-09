@@ -1,0 +1,32 @@
+---
+id: agent-name
+title: Agent name identification
+description: The following explains how to set the agent name in order to identify the monitoring target.
+tags:
+  - Server
+  - Agent
+  - Setting the name
+---
+
+와탭은 모니터링 정보 수집 대상인 인프라 서버 식별을 위해 기본적으로 서버로부터 수집한 정보를 활용합니다. 기본값은 서버의 호스트 명(hostname)입니다.
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+For a user-friendly name, you can specify it in the configuration file as follows.
+
+-   **Linux Shell**
+
+    ```bash title=SH
+    export WHATAP_SERVER_NAME=사용자 친화적인 이름
+
+    echo "oname=$WHATAP_SERVER_NAME" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    ```
+
+-   **Windows Power Shell** 
+
+    ```bash title=SH
+    // 관리자 권한이 필요합니다.
+    $WHATAP_SERVER_NAME="사용자 친화적인 이름"
+
+    Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"
+    ```

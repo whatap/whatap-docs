@@ -1,0 +1,150 @@
+---
+id: server-linux
+title: Linux and Unix
+description: It explains how to install the WhaTap server monitoring agent in the Linux or Unix environment.
+tags:
+  - Server
+  - Installation
+  - Linux
+  - Unix
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+신규 생성한 서버 모니터링 프로젝트를 선택하면 **_에이전트 설치_** 화면이 나타납니다. 프로젝트 **_관리_** > **_에이전트 설치_** 메뉴를 통해서도 가능합니다.
+
+![서버 모니터링 Linux Unix](/img/server-install-lx-unx.png)
+
+<!-- ![](/img/server-install.png) -->
+
+1.  Register the WhaTap **repository**.  
+
+    ![number-s](/img/number-01.png) **_관리_** > **_에이전트 설치_** 화면 상단 영역의 OS 탭에서 서버 OS를 선택하세요. ![number-s](/img/number-02.png) **_와탭 리포지토리 추가_** 탭에서 해당하는 명령어를 복사하여 입력합니다.
+
+    <Tabs>
+    <TabItem value="du" label="Debian / Ubuntu" default>
+
+    ```bash title=SH
+    wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+    wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+    sudo dpkg -i whatap-repo_1.0_all.deb
+    sudo apt-get update
+    ```
+
+    </TabItem>
+    <TabItem value="co" label="CentOS">
+
+    ```bash title=SH
+    sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+    ```
+
+    </TabItem>
+    <TabItem value="al" label="Amazon Linux">
+
+    ```bash title=SH
+    sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ```
+
+    </TabItem>
+    </Tabs>
+
+    <Tabs>
+    <TabItem value="suse" label="SUSE">
+
+    ```bash title=SH
+    sudo rpm --import http://repo.whatap.io/suse/release.gpg
+    echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    sudo zypper refresh
+    ```
+
+    </TabItem>
+    <TabItem value="fb" label="FreeBSD">
+
+    ```bash title=SH
+    wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+    ```
+
+    </TabItem>
+    <TabItem value="xs" label="XenServer">
+
+    ```bash title=SH
+    sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
+    ```
+
+    </TabItem>
+    </Tabs>
+
+2.  다음 명령어를 통해 **패키지**를 설치하세요.<br/>
+    ![number-s](/img/number-03.png) **_와탭 서버 모니터링 패치 설치_** 탭에서 해당하는 명령어를 복사하여 입력합니다.
+
+    <Tabs>
+    <TabItem value="du" label="Debian / Ubuntu" default>
+
+    ```bash title=SH
+    sudo apt-get install whatap-infra
+    ```
+
+    </TabItem>
+    <TabItem value="suse" label="SUSE">
+
+    ```bash title=SH
+    sudo zypper install whatap-infra
+    ```
+
+    </TabItem>
+    <TabItem value="fb" label="FreeBSD">
+
+    ```bash title=SH
+    pkg install whatap-infra.txz
+    ```
+
+    </TabItem>
+
+    <TabItem value="cax" label="CentOS / Amazon Linux / XenServer">
+
+    ```bash title=SH
+    sudo yum install whatap-infra
+    ```
+
+    </TabItem>
+
+    </Tabs>
+
+3.  **설정 스크립트**를 실행하세요.<br/>
+    ![number-s](/img/number-04.png) **_서버 모니터링 시작하기_** 탭으로 이동하여 명령어를 발급 받거나, 하단의 명령어에 프로젝트 액세스 키와 서버 IP를 추가하여 실행하세요.
+
+    ```bash
+    echo "license=[발급된 프로젝트 액세스 키]" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host=[할당된 와탭 서버 IP]" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    sudo service whatap-infra restart
+    ```
+
+{@include: ../../common-items/_sv-tcp6600.mdx}  
+
+<details>
+<summary>서버 에이전트 파일 구성</summary>
+
+{@include: ../../common-items/_sv-cpf.mdx} 
+
+{@include: ../../common-items/_sv-lf-cpf.mdx}
+
+</details>
+
+<!-- 
+    :::note
+    에이전트에서 수집 서버로 **TCP 6600** 포트 접근이 가능해야 합니다.(TCP 아웃바운드)
+    :::
+-->

@@ -1,0 +1,42 @@
+---
+id: spring-boot
+title: Spring Boot
+description: Complete the additional settings for JVM options in the Spring Boot application server environment.
+tags:
+  - Java
+  - Spring Boot
+---
+
+Check the method how to add JVM options in the application server environment using Spring Boot. 
+
+## Spring Boot 2.X.X or earlier
+
+For the JVM options in the startup script, add `-javaagent`.
+
+```bash
+java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
+```
+
+{@include: ../../common-items/_start-apm.mdx}
+
+## Spring Boot 3.0.X
+
+-   jakarta.servlet.http.HttpServlet tracing (synchronization method)
+
+    ```ini title='whatap.conf'
+    weaving=tomcat10
+    ```
+
+-   WebClient tracing (Asynchronization method)
+
+    ```ini title='whatap.conf'
+    weaving=webflux-6.0
+    ```
+
+-   Start the application by adding the JVM option related to reflection
+
+    ```bash title='Java 17 이상만 지원'
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
+    ```
+
+{@include: ../../common-items/_start-apm.mdx}

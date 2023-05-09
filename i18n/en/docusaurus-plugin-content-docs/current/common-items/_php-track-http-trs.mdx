@@ -1,0 +1,51 @@
+-   **whatap.trace_normalize_enabled**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      It enables the function to normalize a transaction URL by transforming it.
+
+-   **whatap.trace_normalize_urls**<span class='type'>String</span><br/>
+        Set the target URL to transform and normalize. It deletes the path parameter by transforming the call URL patterns.<br/>
+    :::note
+    For example, if it is set as **/a/{v}/b**, the called transaction URLs are transformed to the **/a/{v}/b** format. To register multiple items, comma (,) is used as the delimiter.
+    :::
+
+-   **whatap.trace_ignore_url_set**<span class='type'>String</span><br/>
+      Default `0`<br/>
+      If a specific URL is set, the corresponding transactions are excluded from tracing. The set URLs are not displayed in the transaction list because they do not collect transaction data. Set URLs to exclude from transaction tracing. To set multiple items, use comma (,) as the delimiter.
+
+-   **whatap.trace_ignore_url_prefix**<span class='type'>String</span><br/>
+      Default `0`<br/>
+      Set the URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+
+-   **whatap.profile_http_header_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It is used to record HTTP headers in the transaction trace details.
+
+<!-- 기본값 "host,accept,user-agent,referer, accept-language, connection" 타입 srting -->
+
+-   **whatap.profile_http_header_ignore_keys**<span class='type'>String</span><br/>
+      Default `host,accept,user-agent,referer, accept-language, connection`<br/>
+      It is used to record HTTP headers in the profile details. The set HTTP header names are excluded from collection, and they are marked with "#."
+
+-   **whatap.profile_http_parameter_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It is used to record the HTTP parameters in the transaction trace details. Parameters can be viewed by entering a separate security key.
+
+      It collects the text names and values among Get and Post parameters. Parameters are collected up to 40 (Get 20, Post 20) and the parameter names and values are collected up to 256 bytes.
+
+      Parameter data is transferred after being encrypted separately, and can be viewed by decrypting with the key in _/usr/whatap/php/paramkey.txt_ of the application server.
+
+-   **whatap.profile_http_parameter_url_prefix**<span class='type'>String</span><br/>
+      Default `/`<br/>
+      It is used to define the prefix of URL to record HTTP parameters in the trace details.
+
+-   **whatap.profile_http_host_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It outputs the host data of the transaction. If the value is `false`, only the URI appears in the transaction URL, and if `true`, it is output in `/xxx.aaa.com/URL` format.
+
+-   **whatap.biz_exceptions** <span class='type'>String</span><br/>
+      Default `Empty`<br/>
+      Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+
+-   **whatap.ignore_exceptions**<span class='type'>String</span><br/>
+      Register any exceptions to ignore. The errors of the registered exceptions are ignored. 
+      In case of exception, if the custom exception class is not defined, data is collected as exception by default. To exclude specific exceptions, define the custom exception class and then set the name of exception.

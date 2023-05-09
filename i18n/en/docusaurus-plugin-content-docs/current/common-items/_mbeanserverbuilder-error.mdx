@@ -1,0 +1,12 @@
+## In case the MBeanServerBuilder error occurs
+
+If any MBeanServerBuilder-related error is output in JBoss 5.0 or earlier, add the JVM options.
+
+```apacheconf title='(JBoss 설치 경로)/bin/run.conf' {5} showLineNumbers
+# Specify options to pass to the Java VM.
+#
+if [ "x$JAVA_OPTS" = "x" ]; then
+   JAVA_OPTS="-Xms128m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000"
+   JAVA_OPTS="$JAVA_OPTS -Djboss.platform.mbeanserver"
+fi
+```

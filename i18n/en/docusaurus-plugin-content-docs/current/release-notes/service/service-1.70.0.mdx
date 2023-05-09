@@ -1,0 +1,72 @@
+---
+id: service-1.70.0
+title: Service 1.70.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-04-20
+
+## `공통`
+
+**_로그 이벤트 설정_**
+
+-   Added the composite log event function
+-   Added the log filtering conditions for real-time log events
+
+**_이벤트 수신 태그 설정_**
+
+1.  Set to receive user-specific events or add tags to a 3rd plug-in
+2.  Allowed users to specify recipients by selecting tags when setting the metrics events
+
+**_조직 관리_** - 사용성 개선 및 기능 추가
+
+-   Enhanced usability for organization and group management
+-   Enhanced the UI of Edit Member Role
+-   Enhanced usability of the member inviting function
+-   Added the inviting function for the DB project support team (dbx@whatap.io)
+
+**_메트릭스 이벤트_** 
+
+-   Added the event filtering function (like, and, or, isNull, isNotNull, isEmpty, isNotEmpty)
+-   Added the guide shortcut link 
+
+**_이용 내역_** - 구매이력 정보 표시, 프로젝트 유료 전환 목록 CSV 다운로드 기능 추가 
+
+**_보고서_** - 보고서 종류 간소화
+
+**_Flex Board_**
+
+-   Modified the function to view the details of active widgets
+-   Modified the widget search function in Korean 
+
+**_회원가입_** - 이메일 검증 로직 수정
+
+**_MFA_** - 이메일을 이용한 2차 인증 기능 수정, 2차 인증 비활성화 기능 추가
+
+## Application
+
+**_트랜잭션 프로파일_** 
+
+-   Added the function to display the SQL sections with errors on the diagram
+-   Modified the SQL statistics viewing link
+
+**_트랜잭션맵_** - 필터링 조건 직접 입력 시 단어 부분 검색 제한, 안내 문구 추가
+
+**_애플리케이션 대시보드_** - 히트맵 도움말에 가이드 문서 링크 추가
+
+## Server
+
+**_이벤트 기록_** - 진행 중 이벤트 상태 표시
+
+## Container
+
+**_컨테이너맵_**
+
+-   Enhanced data lookup visibility; integrated the application agent collection data
+-   Enhanced the summary (sliding information on the right)
+-   Display of metrics information by the grouped card
+-   Display of details for selection of ① single ② multiple (user-defined) ③ All groups based on the container
+-   Provision of major data based on the metrics, traces, and logs for the selected target

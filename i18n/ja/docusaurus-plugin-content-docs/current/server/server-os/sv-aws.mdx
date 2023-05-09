@@ -1,0 +1,128 @@
+---
+id: server-aws
+title: Elastic Beanstalk
+description: Elastic Beanstalk環境でWhaTapサーバーモニタリングエージェントをインストールする方法を提供します。
+tags:
+  - Server
+  - インストール
+  - Elastic Beanstalk
+  - AWS
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+**Elastic Beanstalk**を利用してデプロイする場合、WhaTapエージェントを適用する方法です。
+
+1.  Linuxインストール環境に合わせて、次の内容をElastic Beanstalkの **インストールスクリプト**に追加してください。
+
+    :::note
+    「whatap.server.host」と「license」、つまり**プロジェクトアクセスキー**はユーザーに合わせて入力します。
+    :::
+
+    <Tabs>
+    <TabItem value="du" label="Debian / Ubuntu" default>
+
+    ```bash
+    wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+    wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+    sudo dpkg -i whatap-repo_1.0_all.deb
+    sudo apt-get update
+    sudo apt-get install whatap-infra
+    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    sudo service whatap-infra restart
+    ```
+
+    </TabItem>
+    <TabItem value="co" label="CentOS">
+
+    ```bash
+    sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+    sudo yum install whatap-infra
+    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    sudo service whatap-infra restart
+    ```
+
+    </TabItem>
+    <TabItem value="al" label="Amazon Linux">
+
+    ```bash
+    sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    sudo yum install whatap-infra
+    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    sudo service whatap-infra restart
+    ```
+
+    </TabItem>
+    </Tabs>
+    <Tabs>
+    <TabItem value="suse" label="SUSE">
+
+    ```bash
+    sudo rpm --import http://repo.whatap.io/suse/release.gpg
+    echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+    sudo zypper refresh
+    sudo zypper install whatap-infra
+    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    sudo /etc/init.d/whatap-infra restart
+    ```
+
+    </TabItem>
+    <TabItem value="fb" label="FreeBSD">
+
+    ```bash
+    wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+    pkg install whatap-infra.txz
+    echo "license={LICENSE_INFO}" |tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host={HOST_IP}" |tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=`date +%s%N`" |tee -a /usr/whatap/infra/conf/whatap.conf
+    service whatap_infra restart
+    ```
+
+    </TabItem>
+    <TabItem value="xs" label="XenServer">
+
+    ```bash
+    sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
+    sudo yum install whatap-infra
+    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    sudo service whatap_infra restart
+    ```
+
+    </TabItem>
+    </Tabs>
+
+2.  次の**コマンド**を修正してください。  
+
+    ```bash
+    echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    ```
+
+    インストール後、サーバーモニタリングをBeanstalkに含めてアプリケーションをデプロイすると、サーバーモニタリングの新規リストが引き続き作成されます。 
+
+    WhaTapエージェントの内部IDが、上記のコマンドが実行されるたびに新しく発行されるためです。 今後のデプロイ時に新規一覧が追加発生しないように、次のように修正してください。
+
+    ```bash
+    echo "createdtime=12345678" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    ```

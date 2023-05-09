@@ -1,0 +1,119 @@
+## ヒートマップ{#hitmap}
+
+ホーム画面 > プロジェクト選択 > **_分析_** > **_ヒートマップ_**
+
+WhaTapモニタリングサービスのホーム画面でプロジェクトを選択し、プロジェクトメニューの配下にある**_分析_** > **_ヒートマップ_**メニューを選択してください。 
+
+:::note
+***ヒートマップ***は、**_ダッシュボード_** > **_アプリケーションダッシュボード_**の**_ヒートマップ_**ウィジェットからもアクセスできます。
+:::
+
+### 詳細分析{#details}
+
+<!-- 내용 재검토 및 최신화 필요 -->
+
+<!-- ![view-hitmap](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring11.png) -->
+
+<!-- 실시간 히트맵을 드래그하거나 ***→***를 클릭하면 다음과 같은 상세 분석 화면이 열립니다. -->
+
+<!-- ![view-hitmap](/img/trs-hitmap-view-number.png)-->
+
+<!-- ![number-s 5](/img/number-05.png) 영역에서 **TX 트레이스** 목록을 확인할 수 있습니다.  
+목록과 같은 상세 분석 화면을 볼 수 있습니다.
+-->
+
+![ヒートマップsc](/img/tx-hitmap.png)
+
+#### ![number1](/img/number-01.png)エージェント領域
+
+現在のプロジェクトと関連付けられているエージェントを選択するとフィルタリングすることができます。![アイコン](/img/ic-search-on-press.svg) **_虫眼鏡_**アイコンを選択すると、![number2](/img/number-02.png)領域で**_ヒートマップトランザクション_**チャートが確認できます。
+
+#### ![number2](/img/number-02.png)ヒートマップトランザクションチャート
+
+遅延時間の問題があるトランザクションが含まれている場合**_ヒートマップトランザクション_**チャートでは、<span class='ov5ud10'>オレンジ</span>や<span class='etrs'>赤</span>で表示されます。通常のトランザクションが含まれている場合は、<span class='woer'>青</span>で表示されます。
+
+#### ![number3](/img/number-03.png)選択領域
+
+リアルタイムヒットマップチャートをドラッグすると、選択領域の ![number4](/img/number-04.png) **_エージェント一覧_**とトランザクション情報が確認できます ![number5](/img/number-05.png) **_TXトレース_** 一覧が表示されます。
+
+#### ![number4](/img/number-04.png)エージェント一覧
+
+チャートで選択された領域に含まれるトランザクション数とエラー数を確認できます。一覧からご目的のアプリケーションを選択すると、そのアプリケーションの![number5](/img/number-05.png)の**_TXトレース_**一覧に詳細が表示されます。
+
+#### ![number5](/img/number-05.png)TXトレース一覧
+
+**_TXトレース_**一覧には、詳細情報が含まれています。一覧で目的のトランザクションを選択すると、**_統計_**情報ウィンドウが表示されます。**_統計_**ウィンドウでは、該当するトランザクションのトレースの詳細分析を確認することができます。詳細については、[次の文書](trs-profile#details)を参照してください。
+
+### ヒートマップパターンを理解する
+
+ヒートマップは、トランザクションの終了時間をX軸、レスポンス時間をY軸とした分布チャートです。通常のWebアプリケーションは、数秒以下の集中分布を示します。
+
+![hitmap-pattern](https://img.whatap.io/media/user_guide_application/analysis/h0.png)
+
+### ヒートマップラインの分析
+
+{@youtube: JHVYfJjtYQo}
+
+-   **縦線（LOCK現象）パターン**  
+
+    トランザクション処理中に一時的なロック（Notonly DB Lock）が発生すると、処理が待機します。ロックが解決されると、処理待機中のトランザクションは、同様の時間帯に同時終了します。これにより、次のように垂直線が作成されます。
+
+    ![hitmap-lock](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+
+    垂直パターンでロックを検知することは非常に強力な概念です。特にマイクロサービスアーキテクチャでは、バックエンドシステムで発生するロックも同様に検出できます。
+
+    ![hitmap-front-api-db](https://img.whatap.io/media/user_guide_application/analysis/h8.png)
+
+    Frontアプリケーションにおけるレスポンスパターンの縦線は、バックエンドシステムが使用するDBでロックが発生した場合にも検出されます。
+
+-   **横線（タイムアウト）パターン**  
+
+    10秒のタイムアウト条件でリソースが不十分な場合、トランザクションは10秒間待機後にタイムアウトエラーが発生します。この時点で、ヒートマップの約10秒で、次のような横線が作成されます。
+
+    ![hitmap-timeout](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+
+    タイムアウト後に再試行するロジックがある場合は、図のような横線が10秒ごとに繰り返されます。以下は、実際の**障害状況**のヒートマップです。
+
+    ![hitmap-error](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+
+    (1) セクションでレスポンス時間が急増し、(2) セクションの赤い線は典型的な**横線パターン**です。(1) セクションの負荷発生によりConnectionPoolが使い果たされ、(2) セクションはConnectionPool不足で2次の**タイムアウト**障害が発生した状況です。
+
+### パターン分析活用
+
+トランザクションレスポンス分布に線が表示されている場合は、ボトルネックがあることを意味します。 一時的なロッキングの場合は縦線が描写され、ボトルネックがタイムアウトになると横線が描写されます。
+
+![hitmap-pattern-analysis](https://img.whatap.io/media/user_guide_application/analysis/h4.png)
+
+問題を分析する場合、行に含まれるトランザクションのみを選択的に分析して、問題をすばやく見つけることができます。
+
+## 機械学習ベースの応答パターン分析
+
+機械学習技術によりヒートマップパターンを分析し、異常を自動検知してアラートを発信する機能です。
+
+![ml_pattern](https://img.whatap.io/media/user_guide_application/analysis/ml_pattern.png)
+
+### 異常パターンの例
+
+毎月数百TBのパフォーマンスデータから異常パターンを学習し、学習した異常と同様のパターンが発生したときにアラームを発信します。
+
+-   **縦線パターン**  
+
+    ![hitmap-abnormal1](https://img.whatap.io/media/user_guide_application/analysis/h3.png)
+
+-   **横線パターン**  
+
+    ![hitmap-abnormal2](https://img.whatap.io/media/user_guide_application/analysis/h2.png)
+
+-   **複合パターン**  
+
+    ![hitmap-abnormal3](https://img.whatap.io/media/user_guide_application/analysis/h7.png)
+
+-   **ヒートマップ通知**  
+
+    ![hitmap-ai-alert](https://img.whatap.io/media/images/ai_alert.png)
+
+:::note
+
+**_ヒットマップトランザクション_**チャートを分析する方法についての詳細は、[次の文書](../../best-practice-guides/about-apm-hitmap-class)を参照してください。
+
+:::

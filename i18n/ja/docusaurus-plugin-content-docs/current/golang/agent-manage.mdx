@@ -1,0 +1,119 @@
+---
+id: agent-manage
+title: エージェント管理
+description: Golangエージェントサービスを一時停止または削除することができます。
+tags:
+  - Golang
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Golangエージェントサービスを再起動または一時停止、削除する方法を提供します。
+
+## エージェントサービスの再起動
+
+WhaTapエージェント（whata-agent）サービスが実行中またはエラーが発生した場合は、サービスを再起動してください。
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="RedHat/CentOS">
+
+```bash title='SH'
+$ service whatap-agent restart
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo service whatap-agent restart
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ sudo service whatap-agent restart
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+```bash title='SH'
+$ /usr/whatap/agent/whatap-agent stop
+$ /usr/whatap/agent/whatap-agent start
+```
+
+</TabItem>
+</Tabs>
+
+## WhaTapエージェントサービスを停止する
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="RedHat/CentOS">
+
+```bash title='SH'
+$ sudo service whatap-agent stop
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo service whatap-agent stop
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ sudo service whatap-agent stop
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+```bash title='SH'
+$ /usr/whatap/agent/whatap-agent stop
+```
+
+</TabItem>
+</Tabs>
+
+## エージェント削除
+
+GolangアプリケーションのソースコードからWhaTapライブラリを削除します。
+
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="RedHat/CentOS">
+
+```bash title='SH'
+$ sudo yum remove whatap-agent
+```
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo apt-get purge whatap-agent
+```
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+```bash title='SH'
+$ sudo yum remove whatap-agent
+```
+
+</TabItem>
+<TabItem value="alpinelinux" label="Alpine Linux">
+
+```bash title='SH'
+$ /usr/whatap/agent/whatap-agent stop
+
+# /usr/whatap/agentディレクトリ削除
+$ sudo rm -r /usr/whatap/agent
+```
+
+</TabItem>
+</Tabs>

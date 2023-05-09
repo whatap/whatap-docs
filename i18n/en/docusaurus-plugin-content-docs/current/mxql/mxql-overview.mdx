@@ -1,0 +1,71 @@
+---
+id: mxql-overview
+title: MXQL
+description: MXQL is a query language to flexibly query WhaTap's performance data (metrics).
+displayed_sidebar: referSidebar
+tags:
+  - MXQL
+  - WhaTap
+  - Metrics
+---
+
+:::note
+Before learning MXQL, it is recommended to be familiar with the concept of metrics. For more information about metrics, see [the following](../metrics/common-metrics-intro).
+:::
+
+## What is MXQL?
+
+MXQL is a query language to flexibly query WhaTap's performance data (metrics). It is used to comprehensively search and use the metrics collected from multiple agents in a project.
+
+## Difference between MXQL and SQL
+
+Let's learn about the concept of MXQL by comparing it with well-known SQL.
+
+### Terms
+
+First, let's look at the terms used in SQL.
+
+![SQL data saving structure](https://img.whatap.io/media/images/mxql-6.png)
+
+As above, the WhaTap database includes the product table. The product table contains ID, description, and two columns. The terms of MXQL that correspond to database, table, and column of SQL are database, category, and field, respectively.
+
+| Storage method | MXQL     | SQL      |
+| -------------- | -------- | -------- |
+| Major          | Database | Database |
+| Sub-major      | Category | Table    |
+| Minor          | Field    | Column   |
+
+### Query
+
+It is a sample query in MXQL and SQL. See comments to the right of each line in MX.
+
+```sql title='간단한 SQL 쿼리'
+SELECT time, pcode  -- Column selection (Set to search only the time and pcode columns.)
+FROM app_counter    -- Table selection (Data is searched in the app_counter table.)
+WHERE tx_count = 1  -- Data filtering (Set to search only the data whose value of tx_count column is 1.)
+```
+
+```sql title='간단한 mxql 쿼리'
+CATEGORY app_counter                 -- Set to search data in the app_counter category.
+TAGLOAD                              -- Data is searched.
+SELECT [ time, pcode ]               -- Select only the time and pcode fields from all columns searched.
+FILTER { key : tx_count, value : 5}  -- Leave only the data with a value of 5 in the tx_count field.
+```
+
+## Execution result
+
+When you perform an MXQL query, it retrieves the metrics of the selected field in the selected category.
+
+The query to search for the `tx_count` and `tx_error` metrics in the `app_counter` category is as follows:
+
+```sql title='MXQL 수행'
+CATEGORY app_counter                   -- Set to search data in the app_counter category.
+TAGLOAD                                -- Data is searched.
+SELECT [time, oid, tx_count, tx_error] -- Set the name of the field to search for.
+```
+
+When a query is performed, it retrieves the metrics as follows:
+
+![Example of MXQL execution result](https://img.whatap.io/media/images/mxql_overview.png)
+
+Because the metrics have always `time` and `oid` values, it is recommended to include `time` and `oid` fields in MXQL queries. You can check when (`time`) and from which agent (`oid`) the metrics were collected.

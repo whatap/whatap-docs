@@ -1,0 +1,129 @@
+---
+id: main-ui-intro
+title: Guide to Home screen (UI)
+displayed_sidebar: indexSidebar
+description: The following introduces the initial screen of WhaTap Monitoring.
+tags:
+  - UI
+  - User Interface
+  - Application
+  - Application Monitoring
+---
+
+It guides you to the elements displayed on the initial screen, after you log in [WhaTap Monitoring Service](https://service.whatap.io). The default menu of the initial screen is **_Project list_**.
+
+![Initial screen](/img/main-ui.png)
+
+## ![](/img/number-01.png) Fixed menu area
+
+-   **Menu**: The menu path appears on the left.
+
+-   ![This page theme icon](/img/ico-theme.svg) **Theme**: You can change the theme of the current page. The default value is **_Light_** mode.
+
+    -   **_Light_**: Theme that is applied by default.
+    -   **_Dark_**: The theme with the black background is applied.
+    -   **_Presentation_**: The optimized color is applied when using a beam projector.
+    -   **_Add Custom Theme_**: You can set the desired color.
+
+-   ![WhaTap Docs icon](/img/ic-guide.svg) **WhaTap Docs**
+
+      Go to the WhaTap Docs technical documentation page. For more information about Whatap Docs, see [the following](welcome-to-whatapdocs).
+
+-   ![Customer Support icon](/img/ico-help.svg) **Customer Support** / **Setting and Information**
+
+      Online customer support is available. Select **_Ask us_** and then send your questions about technical and payment issues. For previous records, select **_Consultation list_**. To make a wired inquiry, select ![Wired Connection icon](/img/ico-tel.svg).
+
+      To set the inquiry language, notification, or advertisement reception, select ![Setting and Information icon](/img/ico-setting.svg).
+
+-   **Profile icon**: Select the icon on the utmost right. It provides the function to select the **_Manage Account INFO._**, **_Create Organization_**, **_Organization Management_**, and user language. If you select **_Log Out_**, it exits from the service screen.
+
+## ![](/img/number-02.png) Project search area
+
+-   **_Project Name/PCODE_** (input field): You can enter the project name or code to search for the desired project.
+
+-   ![Favorite icon](/img/ico-favorite.svg) **_Favorite_**: Only the projects set as favorite appear in the list. To set the project as favorite, select ![Favorite icon](/img/ico-favorite.svg) at the upper left of the project card view in the project list. To cancel the favorite setting, select ![Favorite icon](/img/ico-favorite-set.svg) again.
+
+-   ![Wide card view icon](/img/ico-extend-card-view.svg) **_Wide card view_**: You can see the project list in the form of a card. The basic project information is also displayed.
+
+-   ![Compact card view Icon](/img/ico-reduction-view.svg) **_Compact card view_**: You can see the project list in the form of compact card rather than **_Wide card view_**.
+
+-   ![List View icon](/img/ico-list-view.svg) **_List View_**: You can see the project list in the form of table by classifying the projects by product catalog.
+
+-   **_15 / page_**: You can set the number of projects to be displayed for each page. You can set up to 100 projects to be displayed on a page.  To go to another page, select the page number.
+
+## ![](/img/number-03.png) Organization and group, project area
+
+-   **_Non-Organization_**: You can select an organization or go to **_Organization_** > **_Management_**. For more information about organization management, see [the following](project/organization).
+
+-   **_+ Group_**: You can add a group. For more information about group addition, see [the following](project/group).
+
+-   **_+ Project_**: You can add a project. For more information about project addition, see [the following](project#create-project).
+
+-   ![Search icon](/img/ico-search.svg) **_Search_**: You can perform search by the group, project, or agent. For more information about project search, see [the following](#search-project).
+
+-   ![Filter icon](/img/ico-filter.svg): By setting filters, you can see the project list by product category. It displays a list under **_All Projects_** according to the set value.
+
+    ![Project List filtering](/img/main-project-filter.png)
+
+-   If you select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg), you can show or hide the project list area.
+
+-   **_All Projects_**: You can see the list of all projects. If you select this menu after entering a project, you can go to the initial project list screen.
+
+-   Under the area, the project list is displayed. The group is displayed as the ![Folder icon](/img/ico-group.svg) shape. Non-group projects appear with icons for each product type.
+
+## ![](/img/number-04.png) Integrated menu area
+
+-   **_Menu_**: You can resize the menu area up or down by dragging the mouse over it.
+
+-   **_Sitemap_**: You can see the list of all menus that can be selected from your menu path and go to a menu.
+
+    :::note
+    Depending on your menu path or project, the menus that can be selected in **_Sitemap_** may differ.
+    :::
+
+-   **_Project list_**: You can see the list of all projects.
+
+-   **_Flex Board_**: User-defined integrated dashboard. You can create a real-time dashboard with metrics collected from projects such as applications, servers, databases, and containers.
+
+    <details>
+    <summary>Product documentation</summary>
+
+    -   [애플리케이션 모니터링 > Flex 보드](java/flex-board)
+    -   [서버 모니터링 > Flex 보드](server/flex-board)
+    -   [데이터베이스 모니터링 > Flex 보드](mysql/flex-board)
+    -   [쿠버네티스 모니터링 > Flex 보드](kubernetes/flex-board)
+    -   [Amazon ECS > Flex 보드](amazon-ecs/flexboard)
+    -   [Amazon CloudWatch > Flex 보드](amazon-cloudwatch/flexboard)
+    -   [Azure Monitor > Flex 보드](azure/flexboard)
+    -   [Naver Cloud Monitoring > Flex 보드](ncloud/flexboard)
+    -   [Oracle Cloud Monitor > Flex 보드](oracle-cloud/flexboard)
+
+    </details>
+
+-   **_Integrated Dashboard_**: You can create a dashboard that allows you to view data from all projects with permission. For more information, see [the following](navigation/int-dashboard).
+
+-   **_Integrated Metrics Board_**: You can create a dashboard that allows you to view metrics data for all projects with permission. For more information, see [the following](navigation/int-metrics-board).
+
+-   **_Integrated Report_**: You can easily create reports for multiple projects. For more information, see [the following](report/integrated-report).
+
+-   **_Integrated Topology_**: You can collectively select the projects that support the **_Topology_** to see in a single topology. For more information, see [the following](java/topology-type#int-topology).
+
+-   **_Real-time Alert List_**: You can see alerts from all projects with permission at a glance in real time. For more information, see [the following](notification/rt-notification).
+
+-   **_Management_**: You can manage all groups and members. For more information, see [the following](project/integrated-manage).
+
+## Searching for a project{#search-project}
+
+1.  If you select ![Search icon](/img/ico-search.svg) on the upper left of the screen, the project **_search_** window appears.
+
+  ![Project Search window](/img/search-project.png)
+
+1.  Enter a project or group name. Then the matched project list appears under the search window. 
+
+2.  Select a desired project.
+
+The corresponding project screen appears.
+
+:::note
+To search for a project based on the agent in the **_Search_** window, click **_Group/Project_** and then select **_Agent_** from the drop-down list.
+:::

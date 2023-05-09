@@ -1,0 +1,106 @@
+-   **whatap.profile_step_normal_count**<span class='type'>Int</span><br/>
+      Default `1000`<br/>
+      Set the maximum number of steps of the transaction trace.
+
+-   **whatap.profile_step_max_count**<span class='type'>Int</span><br/>
+      Default `1024`<br/>
+      Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored.
+
+-   **whatap.profile_step_heavy_count**<span class='type'>Int</span><br/>
+      Default `1000`<br/>
+      If the collection number of basic steps is exceeded, only the steps whose execution time exceeds profile_step_heavy_time are collected. Set the count of the step that can be collected. In case of default settings, if `profile_step_normal_count` is 800, up to 200 steps are collected.
+
+<!-- 문장 부자연스러움 -->
+
+-   **whatap.profile_step_heavy_time**<span class='type'>Millisecond</span><br/>
+      Default `100`<br/>
+      Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made within `profile_step_heavy_count`.
+
+-   **whatap.profile_basetime**<span class='type'>Millisecond</span><br/>
+      Default `500`<br/>
+      Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
+
+-   **whatap.query_string_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It enables the function to collect query strings of the transaction URL together. It is applied to only the URLs registered in `whatap.query_string_urls`.
+
+-   **whatap.query_string_urls**<span class='type'>String</span><br/>
+      Register the URLs to collect query strings in transactions.
+
+-   **whatap.whatap.profile_compile_file_enabled**<span class='type'>Boolean</span><br/>
+        Default `false`<br/>
+        It sets whether or not to trace the `compile_file` and `compile_string` functions. The `compile_file` and `compile_string` functions (PHP internal functions) are compiled before executing the scripts. You can check the compile times for main, include, require, and autoload scripts, the script file paths, and the execution times.
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_compile_file_basetime**<span class='type'>Millisecond</span><br/>
+        Default `200`<br/>
+        Set the criterion of the execution time. Data is collected only when execution has been made while the set time was exceeded.
+    :::caution
+    If the `whatap.profile_compile_file_basetime` has been set too small, excessive collection may cause burden on the server.
+    :::
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_method_enabled**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        You can check the user function information whose execution time exceeds `whatap.profile_method_time` (default: 1 second) in the transaction details.
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_method_time**<span class='type'>Milliseconds</span><br/>
+        Default `1000`<br/>
+        Set the execution time of the function that is collected with the `whatap.profile_method_enabled` setting. 
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_method_stack_enabled**<span class='type'>Boolean</span><br/>
+        Default `false`<br/>
+        The stack data of the user function can be seen in the transaction details.
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_internal_method_enabled**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        Set whether or not to trace the PHP internal function. Tracing is performed only when the function takes more than the `whatap.profile_internal_method_time` setting (Default: `1 second`). 
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+<!-- 두 개가 어떻게 다른지? 0309 수정완-->
+
+-   **whatap.profile_internal_method_time**<span class='type'>Milliseconds</span><br/>
+        Default `1000`<br/>
+        Set the execution time of the `whatap.profile_internal_method_enabled` function for tracing the internal PHP functions. 
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_internal_method_param_enabled**<span class='type'>Milliseconds</span><br/>
+        Default `1000`<br/>
+        It additionally collects the function parameters when tracing internal PHP functions (`whatap.profile_internal_method_enabled`).
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.net_udp_flush_start**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        If the value is `false`, the transaction start time is not collected.<br/>
+    :::note
+    Because the start point is not collected, it can be reflected a little later in the active transaction data that counts the number of active transactions. Active status is recorded normally.
+    :::
+
+-   **whatap.net_udp_profile_basetime_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the trace information of transactions faster than the set response time is not collected.
+
+-   **whatap.net_udp_profile_basetime**<span class='type'>Miliseconds</span><br/>
+        Default `false`<br/>
+        Set the response time of transactions that exclude collection of trace data.
+    :::note
+    Because transaction trace data is not collected, it is not applied to the statistics such as SQL and HTTPC.
+    :::
+
+-   **whatap.net_udp_trace_ignoretime_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If the value is `true`, the transaction and trace data that take the set response time, are not collected.
+
+-   **whatap.net_udp_trace_ignoretime**<span class='type'>Miliseconds</span><br/>
+      Default `30`<br/>
+      Set the response time of transactions that exclude collection of transactions and trace data.
+
+-   **whatap.shm_tx_counter_enable**<span class='type'>Boolean</span><br/>
+        Default `false`<br/>
+        If the value is `true`, in case collection of transaction data is excluded by the `whatap.net_udp_trace_ignoretime_enabled` setting, the excluded transaction data is applied to the statistics when TPS, average response time, and Apdex metrics are collected by the shared memory.
+    :::note
+    Transactions that have not been collected are normally reflected in TPS, average response time, and Apdex metrics, but they are not reflected in other statistical data.
+    :::

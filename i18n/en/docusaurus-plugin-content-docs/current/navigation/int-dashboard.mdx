@@ -1,0 +1,163 @@
+---
+id: int-dashboard
+title: Integrated Dashboard
+description: You can create a dashboard where you can view data from all your projects.
+tags:
+  - Integrated Dashboard
+  - Dashboard
+---
+
+Home > **_Integrated Dashboard_**
+
+You can create a dashboard where you can view data from all your projects. The status of different product groups can be seen at a glance by configuring them as widgets on the dashboard.
+
+:::note
+**_통합 대시보드_** 메뉴를 처음 이용한다면 **_Flex 보드_** 메뉴를 사용할 것을 권장합니다. **_Flex 보드_**에 대한 자세한 내용은 각 상품별 문서를 참조하세요.
+
+{@include: ../_link2flexboard.mdx}
+:::
+
+## Creation of Integrated Dashboard
+
+### Creating the dashboard by using the template
+
+You can easily create a dashboard by using the provided template.
+
+1.  Select **_Create dashboard_** on the screen.
+
+2.  Under **_Create dashboard_**, the template list appears.
+
+  ![Dashboard template selection](/img/integrated-dashboard-sel-template-1.png)
+
+1.  If you select a desired template, the **_Dashboard Templates_** window appears.
+
+  ![Dashboard Template](/img/main-int-dashboard-sel-template.png)
+
+1.  Enter the dashboard name and description, and then select a project to import data from. The number of selectable projects may differ depending on the template.
+
+2.  Select **_OK_**.
+
+You can see the dashboard created in the **_Integrated Dashboard_** list. To select the created dashboard from the list, the dashboard screen appears.
+
+### Creating a dashboard by using the blank template
+
+1.  Select **_Create dashboard_** on the screen.
+
+2.  Under **_Create dashboard_**, the template list appears.
+
+3.  Select **_Create an empty dashboard_** on the upmost left.
+
+  ![Empty Dashboard](/img/integrated-dashboard-sel-template.png)
+
+1.  If the **_Create dashboard_** window appears, enter the name and description, and then select **_Save_**.
+
+2.  You can see the dashboard created in the **_Integrated Dashboard_** list. To select the created dashboard from the list, the dashboard screen appears.
+
+3.  Select **_+ Add Widget_** and then add desired widgets.
+
+## Adding a widget
+
+You can see the metrics of different projects by adding widgets on the dashboard. For example, you can add a hitmap chart widget from Project A and a hitmap chart widget from Project B to the dashboard to view them simultaneously.
+
+1.  From the **_Integrated Dashboard_** list, select a dashboard to add a widget to and then go to the dashboard screen.
+
+2.  Select **_+ Add Widget_**.
+
+3.  When the widget creation window appears, select the desired widget name, widget chart type, and project in order.
+
+    ![Create Widget](/img/int-dashboard-add-widget.png)
+
+    :::note
+
+    -   Depending on the selected widget chart type, the selectable product category and project may differ.
+    -   Multiple projects can be selected for a product category. You cannot select them in combination with other product categories.
+    -   In **_Custom chart_**, you can set the options such as **_metric_** and **_object merge_**, **_period filter_**, etc.
+    :::
+
+4.  Select **_Next_**.
+
+5.  The agents for each project can be selected based on the agent name or group ID and node ID. From the upmost left of the project, select ▶︎.
+
+    ![Data type](/img/int-dashboard-widget-data.png)
+
+    -   Click an agent to see the metrics through the widget, and then select **_Apply_**.
+    -   To see metrics for all agents, click **_All_** and then select **_Apply_**.
+
+6.  Select **_Complete_**.
+
+In **_Integrated Dashboard_**, check the added widget.
+
+:::note
+
+-   You can resize the widget by dragging over the lower right corner of the widget.
+-   You can reposition the widget by dragging over its title.
+-   To see the widget information, hover over ![Information icon](/img/ico-widget-info.svg) on the upper right of the widget.
+:::
+
+## Modifying a widget
+
+1.  Select ![Edit icon](/img/ico-edit.svg) on the upper right of the widget.
+
+2.  When the **_Create Widget_** window appears, you can change the widget chart type and project.
+
+3.  Select **_Next_**.
+
+4.  To select a separate agent that belongs to the project, select ▶︎ on the utmost left of the project and then select a desired agent.
+
+5.  Select **_Complete_**.
+
+In **_Integrated Dashboard_**, check the modified widget.
+
+## Deleting a widget
+
+In **_Integrated Dashboard_**, select ![Delete icon](/img/ico-close.svg) on the upper right of the widget to delete. When the confirmation message appears, select **_OK_**.
+
+## Modifying the integrated dashboard's name and description
+
+1.  In the **_Integrated Dashboard_** list, select ![Edit icon](/img/ico-edit.svg) for the item (name or description) to modify. 
+
+2.  If the **_Edit Dashboard_** window appears, modify the name and description. 
+
+3.  After modification, select **_Save_**.
+
+In the **_Integrated Dashboard_** list, you can see the modified items.
+
+## Sharing the integrated dashboard
+
+You can share and reuse the dashboard created in **_Integrated Dashboard_**.
+
+### Copying a dashboard
+
+You can copy the created dashboard and share it with other users.
+
+Select ![Copy icon](/img/ico-copy.svg) from the **_Integrated Dashboard_** list for the dashboard items to copy. Select **_Copy to me_** or **_Copy to others_**.
+
+-   When **_Copy to me_** is selected, you can see the item with "Copied" in the dashboard list.
+
+-   If **_Copy to others_** is selected, enter the email addresses for other users and then click **_Send at_**. When the **_Read Only_** option is selected, the other user cannot modify the dashboard.
+
+    :::note
+    If any items are changed after a dashboard is shared, they are not shared.
+    :::
+
+### Export, Import
+
+The Integrated Dashboard settings saved as a json file can be imported and copied from other user accounts. This function is for the dashboard administrator role.
+
+1.  In the **_Integrated Dashboard_** list, select ![Export icon](/img/ico-export.svg) for the dashboard items to share.
+
+2.  If the **_Export Dashboard_** window appears, select **_Export_**.
+
+3.  Download the json file.
+
+4.  Forward the downloaded file to other users.
+
+5.  On the upper right of the **_Integrated Dashboard_** screen, select ![Import icon](/img/ico-import.svg) **_Import_**.
+
+6.  If the **_Export Dashboard_** window appears, select **_Save_**.
+
+From the dashboard list, you can see the item with "(Imported)."
+
+## Deleting from the integrated dashboard
+
+In the **_Integrated Dashboard_** list, select ![Delete icon](/img/ico-trash.svg) for the dashboard item to delete. When the pop-up message appears, select **_Delete_**.

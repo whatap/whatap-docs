@@ -1,0 +1,15 @@
+---
+id: agent-number-of-user
+title: ユーザー数
+description: WASに接続したリアルタイムユーザー数を集計します。
+tags:
+  - Golang
+---
+
+Golangウェブアプリケーションサーバーに接続したユーザーの数を集計します。
+
+-   **trace_user_header_ticket**<span class='type'>String</span><br/>
+    HTTP Headerに特定の値でユーザー数を集計する場合は、対応するKey値を設定します。
+
+-   **trace_user_cookie_keys** <span class='type'>String</span><br/>
+    設定したクッキーの値をユニークなユーザー情報として選択します。 複数を登録する場合は、コンマ（,）を区切り文字として使用します。 設定した順で検索します。

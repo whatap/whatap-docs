@@ -1,0 +1,19 @@
+:::caution
+It is recommended to use a plug-in only if you are familiar with it.
+:::
+
+Create the _plugin_ folder under the _WHATAP_HOME_ path. Through vi, create the _AppServiceStart.x_ file.
+
+![Plugin usage example](https://img.whatap.io/media/agent_python/data/app_start_plug.png)
+
+If you type `println("test");` and save it, you can see that the string "test" is displayed on the screen. After checking it, extract data from the parameter. 
+
+In this example, parameters are passed to HashMap and the URL parameter is passed to the map.
+
+```javascript title=JAVA
+Object url =((java.util.HashMap)$point.getArgs()[0]).get("url");
+$ctx.service((String)url);
+//println("url="+url);
+```
+
+If you create a plug-in like this, the transaction name is changed.

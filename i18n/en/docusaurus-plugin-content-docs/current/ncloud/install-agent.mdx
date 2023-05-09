@@ -1,0 +1,63 @@
+---
+id: install-agent
+title: Installation
+description: It guides you to the installation of Naver Cloud items.
+tags:
+  - Installation
+  - Naver Cloud Monitoring
+  - Cloud
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Naver Cloud Monitoring collects metrics periodically through API integration. Select and collect the desired stats in the Naver Cloud Monitoring namespaces that correspond to the services to collect every 5 minutes. When you start monitoring, you can search for user resources in all regions and then start monitoring with a click. 
+
+{@include: ../getting-started/_create-project-cloud.mdx}  
+
+## Monitoring procedure
+
+<!-- 
+1. 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Naver Cloud Monitoring 사용 상태로 생성하세요. 
+-->
+
+1.  Enter your Naver Cloud authentication data.
+2.  Select values for the Naver Cloud Monitoring namespace and collection cycle.
+3.  Select values for region, metric, and stat.
+
+:::note
+After installation, extra charge may be incurred in the cloud depending on the usage, separate from the WhaTap fee. For more information about the Cloud service pricing policy before installation, see [the following](https://www.ncloud.com/charge/price).
+:::
+
+### Entry of authentication data
+
+Enter values for AccessKey and Secret.
+
+![NCloud Monitoring - Authentification](https://img.whatap.io/media/images/whatap_ncloud_auth_dialog.png)
+
+### Selecting the namespace and collection cycle
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+#### Whatap Data Interval
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### Namespace
+
+-   Ncloud VAutoScalingGroup Monitoring
+-   Ncloud VCloudMongoDB Monitoring
+-   Ncloud VCloudDBMSSQL Monitoring
+-   Ncloud VCloudDBMySQL Monitoring
+-   Ncloud VCloudDBRedis Monitoring
+-   Ncloud VCloudHadoop Monitoring
+-   Ncloud VCloudKubernetesMonitoring
+-   Ncloud VLBTargetGroup Monitoring
+-   Ncloud VLoadbalancer Monitoring
+-   Ncloud VServer Monitoring
+
+### Selecting the region, metric, and stat
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+![Ncloud Monitoring - ResourceGroup, Metric, Stats](https://img.whatap.io/media/images/ncloud_region_dialog.png)

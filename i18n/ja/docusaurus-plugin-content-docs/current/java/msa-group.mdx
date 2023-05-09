@@ -1,0 +1,38 @@
+---
+id: msa-group
+title: MSA業務グループの区分
+description: Javaエージェントにokind属性を付与します。これを通じて、業務単位情報を認知しやすいように設定できます。
+tags:
+  - Java
+  - MSA
+---
+
+Auto Scale Out環境で自動登録されたエージェントのIP／Port／PID情報だけで業務単位の情報を認知することが難しい場合があります。この場合、`okind`属性をJVMオプションとして付与することで簡単に識別できます。
+
+次は典型的なDocker環境の説明です。
+
+---
+
+-   各エージェントは、細かく分けたMSA（Micro Service Architecture）コンポーネントです。
+
+-   エージェントは自動的にScale In／Outされます。
+
+-   どのIPを持つサーバーからどのPIDでアプリケーションが起動するか予測できません。
+
+---
+
+上記のようなDocker環境でエージェント名とともに業務を識別できるJVMオプションとして`whatap.okind`を追加して`okind`属性を追加することができます。
+
+```bash title='JAVA_OPTS'
+-Dwhatap.okind=mobile_ui
+```
+
+_whatap.conf_ファイルに設定を追加することもできます。
+
+```ini title='whatap.conf'
+whatap.okind=common_api
+```
+
+:::tip
+MSA環境でWhaTapが提供する様々な機能を活用するには、`okind`属性を追加してください。
+:::

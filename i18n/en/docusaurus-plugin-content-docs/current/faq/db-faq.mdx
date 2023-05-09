@@ -1,0 +1,86 @@
+---
+id: db-faq
+title: DB FAQ
+description: This document has FAQs of the WhaTap database monitoring service.
+tags:
+  - Database Monitoring
+  - FAQ
+---
+
+Check out frequently asked questions from users about the WhaTap database monitoring service. 
+
+---
+
+<div class ='faq'>
+
+### Authentication plugin 'caching_sha2_password' cannot be loaded error
+
+| Q. When I checked the _dbx.log_ while connecting to the DB after installing the agent, the error, `Authentication plugin 'caching_sha2_password' cannot be loaded` occurred. What should I do? |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+> A. It can happen when using MySQL 8.0, and its default authentication plug-in is `caching_sha2_password`. To use the `caching_sha2_password`, use the SSL-secured connection or a non-encrypted connection with the RSA security applied. The easiest way to solve this problem is to use the `mysql_native_password` when generating passwords as follows.
+>
+> ```sql
+> ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword';
+> ```
+>
+> :::note
+> See the following.
+>
+> -   2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
+> -   6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+> :::
+
+<br/>
+
+### In case monitoring is not possible after creating an additional database in the DB instance
+
+| Q. I created an additional database in the DB instance, but it was not monitored by WhaTap. What should I do? |
+| ------------------------------------------------------------------------------------------------------------- |
+
+> A. The agent collects DB data upon startup and once a day after startup. If a DB has been additionally created while the agent is running, it may not be reflected. In this case, restart the agent. If that does not work, you may not have proper permissions. Grant permission as follows:
+>
+> ```sql
+> grant select on 'added DB' to whatap;
+> ```
+
+<br/>
+
+### Based on the instance list of M, S, and C
+
+| Q. What is the criteria for **_M_**, **_S_**, **_C_** in the instance list? |
+| --------------------------------------------------------------------------- |
+
+> A. They mean **_M_**aster, **_S_**lave, and **_C_**luster respectively. They appear in case of a DB built by replication. Cluster appears when MariaDB has been configured as a galera solution. 
+>
+> ```sql
+> -- In case of Cluster: WSREP_ON is not ON and WSREP_CLUSTER_NAME is galera
+> select variable_name,variable_value 
+> from information_schema.global_variables 
+> where variable_name in ('wsrep_on','wsrep_cluster_name');
+>
+> -- In case of Master: The data for show slave hosts exists
+> show slave hosts ;
+>
+> -- In case of Slave: The data for show slave status exists
+> show slave status ;
+> ```
+
+<br/>
+
+### Instance list, M is not displayed
+
+| Q. I can't see **_M_** in the instance list even though it is Master. What's the reason? |
+| ---------------------------------------------------------------------------------------- |
+
+> A. If you have no permission for replication, it may not appear. Please check your monitoring account privileges. 
+>
+> ```sql
+> --Permission checking
+> show grants for whatap;
+>
+> --Granting permissions
+> grant REPLICATION SLAVE, REPLICATION CLIENT on *.* to whatap;
+> ```
+
+</div>

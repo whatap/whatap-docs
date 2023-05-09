@@ -1,0 +1,37 @@
+---
+id: url-release-notes
+title: URL Monitoring Agent release notes
+toc_max_heading_level: 2
+---
+
+## URL Monitoring Agent 2.0.2
+
+Release date: 2022-01-05 
+
+### Minor Change
+
+Changed the URL Monitoring User-Agent name in Java/1.8 to Whatap URL Monitoring Agent. 
+
+## URL Monitoring Agent 2.0.1
+
+Release date: 2021-10-07
+
+### Bug fixing
+
+-   FullChain 인증서를 사용하지 않는 일부 URL에서 `sun.security.validator.ValidatorException ` 발생하는 현상을 개선했습니다.
+
+-   Modified to enable URL checking for the SHA-256 ECDSA algorithm certificate that was not supported in the previous version.
+
+## URL Monitoring Agent 0.0.3
+
+Release date: 2019-04-25
+
+### Bug fixing
+
+Fixed the case where the following error occurred because it was impossible to monitor the URLs with the HTTPS protocol.
+
+```java title='Java'
+sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+
+In case of SSL-based communication, because the mechanism to accept a certificate and enable communication is required, the client module has been improved to accept the certificate when accessing the registered URL.

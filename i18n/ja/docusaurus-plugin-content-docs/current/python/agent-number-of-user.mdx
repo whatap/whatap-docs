@@ -1,0 +1,19 @@
+---
+id: agent-number-of-user
+title: ユーザー数
+description: Pythonエージェントのユーザー数に関する説明です。
+tags:
+  - ユーザー数
+  - Python
+  - 設定
+---
+
+Pythonアプリケーションサーバーに接続したユーザーの数を集計します。
+
+-   **trace_user_enabled(\*)**<span class='type'>Boolean</span><br/>
+      デフォルト値「true」<br/>
+      リアルタイムでのユーザーの追跡有無を決定します。この値を活性化する場合のデフォルト値はIPになります。
+
+-   **trace_user_using_ip(\*)**<span class='type'>Boolean</span><br/>
+      デフォルト値「true」<br/>
+      リアルタイムユーザーの区分をIPにしたい場合は設定します。このデータは、Real Time Userで確認できます。「user_header_ticket」オプションとは排他的で、設定を同時に適用することはできません。

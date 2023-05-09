@@ -1,0 +1,241 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: Python環境のアプリケーションサーバーにエージェントをインストールする方法を提供します。
+tags:
+  - Python
+  - インストール
+---
+
+import TR from '@site/src/components/TR';
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: MWDFeegF6mQ}
+
+{@include: ../getting-started/_create-project-v2.mdx}   
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+## Virtual Environmentの活性化
+
+アプリケーションが[virtualenv](https://docs.python.org/ko/3.7/library/venv.html)を使用中の場合は、仮想環境を活性化してください。_bin/activate_ファイルを実行します。
+
+## エージェントダウンロード
+
+**アクセスキー**を発給して**_エージェントダウンロード_**セクションに移動してください。 次のコードを実行してエージェントをインストールしてください。
+
+```bash
+sudo pip install whatap-python
+```
+
+:::note
+
+pipコマンドでインストールできない場合は、[pypi WhaTapページ](https://pypi.org/project/whatap-python/#files)でインストールファイルをダウンロードしてください。ダウンロードしたファイルを解凍してインストールを進めてください。
+
+:::
+
+### Docker
+
+1.  Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加してください。
+
+    -   **Pythonエージェント**をインストールしてください。
+
+        ```docker title='Dockerfile' {3}
+        ENV WHATAP_HOME /whatap
+        RUN mkdir -p /whatap
+        RUN pip install whatap-python
+        // requirements.txtを使用する場合は、そのファイルにwhatap-pythonを追加してください。
+        ```
+
+    -   **アクセスキー**および**収集サーバーIP**設定を登録してください。
+
+        ```docker title='Dockerfile'
+        RUN touch /whatap/whatap.conf
+        RUN echo "license=[発行されたアクセスキー]" > /whatap/whatap.conf
+        RUN echo "whatap.server.host=[収集サーバーIP]" >> /whatap/whatap.conf
+        RUN echo "app_name=[アプリケーション名]" >> /whatap/whatap.conf
+        RUN echo "app_process_name=[アプリケーションプロセス名 例）uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
+        ```
+
+2.  既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
+
+    ```docker title='Dockerfile'
+    #ENTRYPOINT python manage.py runserver
+    ENTRYPOINT whatap-start-agent python manage.py runserver
+    ```
+
+:::note
+エージェントファイル構成の詳細については、Pythonファイル構成を参考にしてください。
+:::
+
+<details>
+<summary>Pythonエージェント構成ファイル</summary>
+Pythonエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、タブ収集サーバーに伝達するトレーサーと、トレーサーがデータを送信できるよう支援する要素で構成されています。
+
+-   _whatap.conf_<br/>
+      エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて_whatap.conf_ファイルで設定できます。
+
+-   _paramkey.txt_<br/>
+      追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するときに使用します。 
+      セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力してこそ照会できます。 
+      ファイルの内容を直接変更することで、セキュリティ キーの修正が可能です。関連オプションは次のとおりです。 
+    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
+          デフォルト値`false`
+    -   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>
+          デフォルト値`false`
+
+</details>
+
+## エージェント設定
+
+1.  **WHATAP_HOMEの基本パス設定**<br/>
+    ログと設定ファイルパスのための`$WHATAP_HOME`パスを指定してください。whatapディレクトリを新たに作成することをお勧めします。
+
+    ```bash
+    $ export WHATAP_HOME=[PATH]
+    ```
+
+2.  **アクセスキーと収集サーバーIPの設定**<br/>
+    次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルがすぐ生成・設定されます。
+
+    ```bash
+    whatap-setting-config
+    --host [収集サーバIP]
+    --license [アクセスキー]
+    --app_name [ユーザー指定アプリケーション名入力]
+    --app_process_name [プロセス名、ex. uwsgi, gunicorn]
+    ```
+
+3.  **設定確認**<br/>
+    次のように設定ファイルが正常に生成されているか確認してください。
+
+    ```bash
+    $ cat $WHATAP_HOME/whatap.conf
+    ```
+
+## アプリケーションサーバごとに適用
+
+`WHATAP_AGENT`の開始コマンドでアプリケーションサーバーを再起動してください。再起動後、WhaTap エージェントがアプリケーションのモニタリング情報を収集します。
+
+### Command
+
+```bash title=SH
+$ whatap-start-agent python manage.py runserver
+```
+
+### uWSGI
+
+#### 例題１
+
+```bash title=SH
+$ whatap-start-agent uwsgi --ini myapp.ini
+```
+
+#### 例題２
+
+```bash title=VI
+description "uWSGI application server handling myapp"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+exec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
+または
+exec env WHATAP_HOME=[PATH] [絶対パス]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
+```
+
+#### 例題３
+
+```bash title=SH
+$ whatap-start-agent gunicorn myapp.wsgi
+```
+
+### Gunicorn
+
+#### 例題１
+
+```bash title=SH
+NAME="uwsgi"
+PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/local/bin/uwsgi
+
+########## WHATAP_AGENT_CONF ##########
+WHATAP_HOME=[PATH]
+WHATAP_AGENT=[絶対パス]/whatap-start-agent
+...
+do_start(){
+    env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]
+}
+```
+
+#### 例題２
+
+```bash title=SH
+description "Gunicorn application server handling myapp"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+exec whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
+または
+exec env WHATAP_HOME=[PATH] [絶対パス]/whatap-start-agent [YOUR_APPLICATION_START_COMMAND]
+```
+
+#### 例題３
+
+```bash title=SH
+NAME="gunicorn"
+PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/local/bin/gunicorn
+
+########## WHATAP_AGENT_CONF ##########
+WHATAP_HOME=[PATH]
+WHATAP_AGENT=[絶対パス]/whatap-start-agent
+...
+do_start(){
+    env WHATAP_HOME=$WHATAP_HOME $WHATAP_AGENT [YOUR_APPLICATION_START_COMMAND]
+}
+```
+
+### Supervisor
+
+```bash title=SH
+[program:app-uwsgi]
+environment = WHATAP_HOME=[PATH]
+command = [絶対パス]/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini
+
+[program:nginx-app]
+command = /usr/sbin/nginx
+```
+
+### WSGIアプリケーションの直接実装
+
+```python title=PYTHON
+import whatap
+
+@whatap.register_app
+def simple_app(environ, start_response):
+    """Simplest possible application object"""
+    status = '200 OK'
+    response_headers = [('Content-type', 'text/plain')]
+    start_response(status, response_headers)
+    return ['Hello world!\n']
+```
+
+## エージェントの適用およびサービス実行の確認
+
+-   **WhaTapエージェントの適用**<br/>
+    最上段にAPIを直接呼び出すコードを次のように追加し、WhaTapエージェントを適用してください。
+
+    ```bash
+    import whatap
+    whatap.agent
+    ```
+
+-   **サービス実行の確認**<br/>
+    次のコマンドを実行して、WhaTap Pythonサービスが正常に実行されたか確認してください。
+
+    ```bash
+    ps -ef | grep whatap_python
+    ```

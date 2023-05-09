@@ -1,0 +1,88 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: JVM環境で動作するすべてのアプリケーションサーバーに適用できるエージェントのインストール方法を確認してください。
+tags:
+  - Java
+  - エージェント
+  - プロジェクト
+---
+
+import DocCardList from '@theme/DocCardList';
+import TR from '@site/src/components/TR';
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: QXKweGBucjI}
+
+{@include: ../getting-started/_create-project-v2.mdx}    
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+{@include: ../common-items/_download-java-agent.mdx}  
+
+### エージェントのインストールファイルを構成{#agent-files}
+
+エージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、WhaTap収集サーバーに送信するトレーサーとトレーサーがデータを送信するのに役立つ要素で構成されています。
+
+-   _whatap.conf_<br/>
+    モニタリングエージェントの設定情報、アクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。詳細については、[次の文書](set-agent)を参照してください。
+
+-   _security.conf_ `Javaエージェント2.2.2バージョン以降`
+
+    thread停止と画面上の各種変数を確認するためのパスワード（6桁の英語、数字で構成）を入力してください。
+
+    ```ini title='security.conf'
+    paramkey=ABCDEF # SQL変数およびHTTPクエリの照会
+    threadkill=ABCDEF # Thread停止機能
+    ```
+
+-   _paramkey.txt_ `Javaエージェント2.2.2バージョン以前`
+
+    画面上で各種変数を確認するためのパスワード（6桁の英語、数字で構成）を入力します。
+
+    ```ini title='paramkey.txt'
+    ABCDEF # SQL変数およびHTTPクエリの参照
+    ```
+
+    :::note
+
+    Javaエージェント2.2.2バージョン以前から2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が_seuciry.conf_ファイルのキー値として自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用している場合、2.2.2バージョンにアップデートすると、_セキュリティ.conf_ファイルには次のように適用されます。
+
+    ```ini
+    paramkey=FEDCBA
+    threadkill=FEDCBA
+    ```
+
+    _paramkey.txt_ファイルが存在しない場合、_セキュリティ.conf_ファイルのキー値は、**WHATAP**というキー値で自動生成されます。
+
+    :::
+
+-   _ping.sh(bat)_<br/>
+    現在設定しているアクセスキー、WhaTapデータ収集サーバーと通信を行い、設定やネットワークの問題がないか確認するためのスクリプト（バッチ）ファイルです。
+
+-   _proxy.sh(bat)_<br/>
+    _whatap.agent.proxy-`X.Y.Z`.jar_ファイルを開始するためのスクリプト（バッチ）ファイルです。
+
+-   _resmon.sh(bat)_<br/>
+    CPU、Memory、Disk情報を正常に収集しているかを確認するためのスクリプト（バッチ）ファイルです。
+
+-   _whatap-logsink-lz4-`X.Y.Z`.jar_<br/>
+    アプリケーションサーバからログ情報を収集するためのplugin形式のファイルです。
+
+-   _whatap.agent-`X.Y.Z`.jar_<br/>
+    アプリケーションサーバーの各種モニタリング情報を収集および収集サーバーに送信するモニタリングエージェントのファイルです。
+
+-   _whatap.agent.proxy-`X.Y.Z`.jar_<br/>
+    アプリケーションサーバが動作するサーバーからWhaTapの収集サーバーに直接接続ができない場合、Proxyサーバー（経由サーバー）経由の役割を果たすアプリケーションです。
+
+-   _logs/whatap-`yyyymmdd`.log_<br/>
+    モニタリングエージェントで出力するログファイルです。
+
+{@include: ../common-items/_whatap_conf.mdx}
+
+## JVMオプション追加{#addjvmopt}
+
+使用するアプリケーションサーバー環境に応じて、以下の設定を行います。エージェントをインストールして適用する前に [動作環境](supported-spec)を確認してください。
+
+<DocCardList/>

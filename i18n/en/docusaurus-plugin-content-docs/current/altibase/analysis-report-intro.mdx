@@ -1,0 +1,47 @@
+---
+id: analysis-report-intro
+title: Analysis and statistics
+description: It guides you to the database analysis and the statistics menu.
+tags:
+  - Database
+  - Database Monitoring
+  - Statistics
+  - Analytics
+---
+
+<!-- 분석과 통계 / 애플리케이션 분석하기 -->
+
+<!-- 분석 개요 필요 / 검토하기?-->
+
+## Analysis
+
+Based on the collected data, the function to analyze the overall trend for a specified day. It compares the performance trends through comparison databases for different days. You can analyze delayed queries by finding active sessions at specific points.
+
+You can analyze the trend of locks during the day. The session that caused a lock (Lock Holder) and the session waiting for a lock (Lock Waiter) can be checked through a tree structure. Through these functions, you can analyze queries by checking the relationship between holders and waiters for locks that occurred at specific points.
+
+It provides the function to analyze the long-term trends for more than a day and Top N queries for collected data.
+
+## Statistics and reports
+
+Collected SQL statistics allow you to view the statistics for applications, databases, users, and hosts. You can check the hourly change in tablespaces and database sizes stored every hour, and detect the change in table sizes stored every day.
+
+You can view the daily reports such as hourly performance metric trends and SQL Top 10 of the day. In the weekly report, you can check the trend of daily performance metrics, comparisons of the last week's performance metrics, and SQL Top 10 for the week. In the monthly report, you can check the trend of daily performance metrics and Top 10 SQLs during the month.
+
+## Guidance to functions and menus
+
+At the initial WhaTap monitoring service screen, select a project and then select a subordinate menu under **_Project Menu_**. 
+
+-   In **_Project Menu_** > **_Analysis_**, you can use the following functions.
+    -   ***Counts Trend***
+    -   ***Counts Trend Comparison***
+    -   **_Lock Tree_**
+    -   **_Dead Lock_**
+    -   **_Database Parameter_**
+    -   **_Metrics Chart_**
+    -   **_Metric Anomaly Detection_**
+    -   **_Log File Viewer_**
+    -   **_Log file viewer (cloud)_**
+
+-   **_Project Menu_** > **_STAT/REPORT_**
+
+      **_STAT/REPORT_** provides the **weekly, daily, and monthly reports**, and **statistics**.

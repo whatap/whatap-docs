@@ -1,0 +1,30 @@
+---
+id: java-2.1.3
+title: Java Agent 2.1.3
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2022-09-08
+
+## New Feature（新機能）
+
+-   Kakao Cloud環境を確認し、メータリングポリシーを決定できるようにオプションを追加
+
+-   起動後最初の5分にKIC情報を送信、以後24時間ごとにKIC情報を伝送する機能を追加
+
+-   hash64 v2ロジックの作成
+
+## Change（アップデート）
+
+-   トランザクションエラー通知が発生した場合「status_code」がある場合に限って「status_code」項目を表示するように修正
+
+-   INFOモードの場合「status_code」がない場合は、通知メッセージを送信しないように修正
+
+-   INFOモードの場合、遅延されたhttp呼び出しが発生しても「status_code」の有無に関係なくメッセージを送信するよう修正
+
+## Fixed（バグ修正）
+
+メータリング情報対象の「cpu_core」データをwrite権限がない場合でも収集できるようバグを修正

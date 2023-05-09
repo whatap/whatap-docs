@@ -1,0 +1,119 @@
+---
+id: install-agent
+title: Installation
+description: It guides you to the installation of NCloud items.
+tags:
+  - Installation
+  - Oracle Cloud Monitor
+  - Cloud
+---
+
+import TR from '@site/src/components/TR';
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+WhaTap Oracle Cloud Monitor collects metrics periodically through API integration. It collects the target stats every 5 minutes from the Oracle Cloud Monitor namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently by automatically generating the ssh public key required for authentication. 
+
+{@include: ../getting-started/_create-project-cloud.mdx}  
+
+## Monitoring procedure
+
+<!-- 
+1. 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Oracle Cloud Monitor 사용 상태로 생성하세요.
+-->
+
+1.  Enter your Oracle Cloud authentication data.
+2.  Select values for the Oracle Cloud Monitor namespace and collection cycle.
+3.  Select values for region, metric, and stat.
+
+:::note
+After installation, extra charge may be incurred in the cloud depending on the usage, separate from the WhaTap fee. Before installation, check the pricing policy of the active cloud service in [the following](https://www.oracle.com/kr/cloud/price-list/).
+:::
+
+### Entry of authentication data
+
+![OCI Monitor](/img/oci-install.png)
+
+1.  After creating the **RSA public key**, copy it to Notepad. 
+    :::note
+    After that, you can check the generated key on the **_Install guide_** screen at any time by clicking **_Generate RSA Public Key_**.
+    :::
+2.  Go to Oracle Cloud Console Identity & Security. 
+3.  Select Groups at the bottom of the Identity & Security menu to create or select a new **group** for monitoring.
+4.  Select Policies at the bottom of the Identity & Security menu to create a **policy** for monitoring.
+    -   Select Create Policy to enter the name, description, and compartment.
+    -   In Policy Builder, select Show Manual Editor to enter the roles below, and then select Create.
+        > -   Allow group {group} to read metrics in compartment {compartment}
+        > -   Allow group {group} to inspect metrics in compartment {compartment}
+5.  Select Users at the bottom of the Identity & Security menu, and then create or select a **user**.
+    -   Select Create user and then create a new user or select a user.
+    -   On the User Details screen, add the user to the group selected in Step 3.
+    -   Select API Keys at the lower left.
+    -   Select Add API Key.
+    -   Select Paste Public Key and then enter the **RSA public key** generated in Step 2.
+    -   After addition, you can see the **user** and **tenancy** on the screen. Copy the information to Notepad.
+6.  Select Compartment at the bottom of the Identity & Security menu, and then copy the **OCID** of the compartment to be monitored to Notepad.
+7.  Return to **_Management_** > **_Agent Installation_** and then enter values for **_Tenancy_** and **_User_** checked in Step 5 and **_CompartmentID_** checked in Step 6
+8.  Select **_OK_**.
+
+### Selecting the namespace and collection cycle
+
+{@include: ../common-items/_namespace-collect.mdx}  
+
+#### Whatap Data Interval
+
+{@include: ../common-items/_collecting-period.mdx} 
+
+#### Namespace
+
+-   API Gateway
+-   Bastion
+-   Big Data
+-   Blockchain Platform
+-   Block Volume
+-   Events
+-   Compute
+-   Compute Infrastructure Health
+-   ComputeAgent
+-   Data TransferData Flow
+-   Database Migration
+-   Data TransferDatacatalog
+-   Data TransferDataintegration
+-   DevOpsDevops Build
+-   DevOpsDevops Code Repos
+-   DevOpsDevops Deployment
+-   Digital Assistant
+-   DNS
+-   Email Delivery
+-   Functions
+-   NetworkingFastconnect
+-   File Storage
+-   GoldenGate
+-   Health Checks
+-   ComputeNstancepools
+-   IntegrationNtegration
+-   Java Management
+-   VaultKms Keys
+-   Load Balancing
+-   Logging Analytics
+-   Management Agent
+-   IntegrationMonitoring Metrics
+-   NoSQL
+-   Notifications
+-   Object Storage
+-   Container Engine for Kubernetes
+-   Operations Insights
+-   OS Management
+-   VaultSecrets
+-   Service Connector Hub
+-   NetworkingService Gateway
+-   Streaming
+-   NetworkingVcn
+-   NetworkingVpn
+-   Vulnerability Scanning
+-   WAF
+
+### Selecting the region, metric, and stat
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+![Oracle Cloud Monitor - Region, Metric, Stats](https://img.whatap.io/media/images/oci_region.png)

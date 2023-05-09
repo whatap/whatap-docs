@@ -1,0 +1,30 @@
+---
+id: agent-shared-memory
+title: Shared memory
+description: It describes the PHP agent's shared memory.
+tags:
+  - Shared memory
+  - PHP
+  - Configuration
+  - Application
+---
+
+-   **whatap.shm_enabled**<span class='type'>String</span><br/>
+      Set whether or not to use the shared memory. The setting is applied after Apache or PHP-FPM has been restarted.
+    -   The IPC function that uses the shared memory between the PHP extension (_whatap.so_) and the whatap-php service, is added.  
+    -   The key that has been set to `shm_key` is generated. If the key is already in use, a different key can be set.  
+    -   The whatap-php service manages creation and deletion of the shared memory. In PHP extension, only viewing is possible.  
+
+-   **whatap.shm_key**<span class='type'>String</span><br/>
+      The key is required to create shared memory. Apache or PHP-FPM and the whatap-php service must be restarted for application.
+
+-   **whatap.active_stat_enabled**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      Set whether or not to use the active status.  
+
+      It collects the active request status through shared memory at 5-second intervals. The active status graph appears on the dashboard screen. Status includes general function, SQL, DB connection, external HTTP connection, and socket connection. The counts of active requests for each status appears on the graph.
+
+      If Apache or PHP-FPM is restarted and the active process is terminated in the middle, an error may occur because the active status has not been terminated normally.
+
+    1.  If there is a large difference from the number of active transactions, `whatap.active_stat_enabled` is set to `false`. 
+    2.  If the number is reset to 0 on the dashboard, it changes to `true`.

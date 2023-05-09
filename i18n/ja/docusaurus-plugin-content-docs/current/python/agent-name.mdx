@@ -1,0 +1,41 @@
+---
+id: agent-name
+title: エージェント名の識別
+description: モニタリング対象を識別するエージェント名を設定する方法を提供します。
+tags:
+  - Python
+  - エージェント名
+  - 設定
+---
+
+{@include: ../common-items/_apm-name-description.mdx}
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+:::note
+
+-   WhaTapモニタリンサービスでは、モニタリング対象をオブジェクトまたはエージェントとして組み合わせて使用します。
+:::
+
+<!-- 와탭은 애플리케이션 서버 식별을 위해 애플리케이션 서버 종류, 서버 IP, 서비스 포트를 조합하여 고유 식별자로 사용합니다. -->
+
+-   **object_name**<span class='type'>String</span><br/>
+      デフォルト値「{type}-{ip2}-{ip3}-{process}」<br/>
+      アプリケーションを識別するエージェント名（ONAME）体系です。 ONAMEに基づいてOIDが生成されます。 
+
+    | 名称         | 説明                                    |
+    | ---------- | ------------------------------------- |
+    | {type}     | whatap.app_nameに設定された値を使用します。         |
+    | {ip#}      | IPを分割するときは、#番目の桁を使用します。               |
+    | {process}  | whatap.app_process_nameに設定された値を使用します。 |
+    | {hostname} | サーバーのホスト名を使用します。                      |
+
+<!-- 문의 -->
+
+-   **app_name**<span class='type'>String</span><br/>
+      アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名です。 「object_name」の「{type}」に該当する値です。
+
+-   **app_process_name**<span class='type'>String</span><br/> 
+      アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーションプロセス名です。 
+
+      アプリケーションサーバのCPU、Heap Memoryなどを収集する対象プロセスを設定します。「object_name」の「{process}」に対応する値です。 

@@ -1,0 +1,121 @@
+---
+id: preview-1.93.1
+title: Preview 1.93.1
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+[https://preview.whatap.io](https://preview.whatap.io)ページから、以下に追加された新機能を体験できます。 
+
+## 2022-12-15
+
+<Status>Fixed</Status> <UI>管理</UI> > <UI>インテグレーション</UI> メニューで変更権限がない場合、アイテムのインストールと設定が可能なバグを修正しました。
+
+## 2022-12-08
+
+### Flexボード
+
+<Status>Fixed</Status> ダッシュボードを読み取り専用としてコピーされている場合、削除できるように変更します。
+
+### ログ
+
+-   <Status>Fixed</Status> フィルターに比較演算子として「==」を入力時、表現式に「==」が重複表示されるバグを修正
+-   <Status>Fixed</Status> フィルターに数値フィールド（.nフィールド）を入力時、プリフィックスとして「＋」が追加され検索できないバグを修正しました。
+
+## 2022-12-05
+
+### コンテナーマップ
+
+<Status>Fixed</Status> エージェント1.2.0にバージョンアップデート後、Podカテゴリを選択時に「エージェントアップデート」の表示メッセージを出力するバグを修正しました。
+
+## 2022-12-02
+
+### マルチトランザクショントレース
+
+<Status>Fixed</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI> メニューで一部のデータ参照時にチャートが表示されないバグを修正
+
+### トランザクション検索
+
+<Status>Fixed</Status> <UI>分析</UI> > <UI>トランザクション検索</UI> メニューで、以前のプロジェクトで参照したデータがプロジェクト移動時にも表示されるバグを修正
+
+## 2022-11-30
+
+### 「共通」
+
+-   <Status>Change</Status> プロジェクト作成時のプラットフォーム選択画面でインテグレーション項目のベータ表示を削除
+-   <Status>Change</Status> <UI>イベント設定</UI> メニューと <UI>イベント受信設定</UI> メニューで、イベントに適用中の <UI>イベント受信タグ</UI>は削除できないよう修正
+
+### コンテナマップ
+
+-   <Status>New</Status> Kubernetes製品群の実験メニューに <UI>Pending Pod</UI> 機能を追加
+-   <Status>Change</Status> 1 つのPod内に1つ以上のコンテナが存在する場合、コンテナ情報を表示するように修正
+-   <Status>Feature</Status> JobタイプのPodに追加ログ情報を提供するため、関連イベントにCronジョブを追加
+
+### Flexボード
+
+-   <Status>Feature</Status> ダッシュボードにサーバー製品群のLog RPS Boardテンプレートを追加
+-   <Status>Feature</Status> ウィジェットテンプレートの追加
+    * 毎秒ログカウント数
+    * 4xx、5xxログ件数
+    * ログリクエスト成功率
+    * ログレスポンス時間
+
+### メンテナンス計画
+
+<Status>Change</Status> 画面上部のメンテナンス計画ガイダンスのテキストのスタイルの変更及びボタン位置を修正
+
+### ログ
+
+<Status>Change</Status> ログ設定メニューで、データ保持期間の設定機能を「カテゴリ別にデータ保持期間をログに記録する」設定に修正
+
+### マルチトランザクショントレース
+
+<Status>Fixed</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI> メニューで「新しいウィンドウでチャートを開く」ボタンをクリックすると発生するホワイトアウト現象を修正
+
+### 通知メッセージ
+
+<Status>New</Status> Application、Container、DB、サーバー製品群に新規メニュー <UI>サイトマップ</UI> > <UI>実験室</UI> > <UI>通知メッセージ</UI> 追加
+
+### イベント設定
+
+<Status>New</Status> <UI>警告通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI> メニューで実験室の <UI>通知メッセージ設定</UI> メニュー移動が可能なボタンを追加
+
+### インテグレーション
+
+インテグレーションアイテムのインストール数（制限なし→1個）の変更に応じたメニューの入力パスとデザイン修正
+
+-   <Status>Change</Status> <UI>インテグレーションアイテム</UI> メニューの位置を <UI>管理</UI> のサブメニューに移動、1つのインテグレーションアイテムのみインストールと設定ができるように修正
+
+-   <Status>Change</Status> プロジェクト進入時のインテグレーションアイテムのインストール状況に応じてエントリパスを修正
+
+    -   アイテムがインストールされている場合：アイテムの種類に合わせたダッシュボードに移動します。
+        -   aws：<UI>Amazon CloudWatch</UI> > <UI>EC2</UI> メニューに移動
+        -   ec：<UI>Amazon ECS</UI> > <UI>Task</UI> メニューに移動
+        -   その他：<UI>Flexボード</UI>メニューに移動
+
+    -   アイテムがインストールされていない場合：<UI>管理</UI> > <UI>インテグレーションアイテム</UI> メニューに移動
+
+-   <Status>Change</Status> プロジェクトカードデザイン修正
+
+-   <Status>Change</Status> インテグレーションアイテムがECSの場合：<UI>管理</UI> > <UI>インテグレーションインストール</UI> メニューで <UI>インストール案内</UI> ページ下段に固定されていた <UI>モニタリングサービスの活性化</UI> ボタン位置をインストール過程中に移動
+
+### インテグレーション、クラウドモニタリング
+
+<Status>Deprecate</Status> <UI>管理</UI> > <UI>インテグレーションアイテム</UI> メニューで <UI>AWS CloudWatch</UI> サービス設定時 <UI>全体選択</UI> チェックボックスの除去
+
+### エージェント設定
+
+<Status>Fixed</Status> エージェント名を別名として設定すると、サーバー一覧画面に反映されない問題を修正
+
+### 決済管理
+
+<UI>決済管理</UI> > <UI>有料プラン転換履歴</UI> メニューで次の機能を修正します。
+
+-   <Status>Change</Status> <UI>月間予想費用</UI> カラムに「セッション使用詳細履歴」を追加表示するよう修正
+-   <Status>Change</Status> <UI>製品の種類</UI> カラムにMYSQL RDS製品を表示するよう修正

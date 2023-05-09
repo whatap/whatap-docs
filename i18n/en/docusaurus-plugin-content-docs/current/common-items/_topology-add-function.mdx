@@ -1,0 +1,103 @@
+It describes additional functions available in the Topology menu.
+
+## Highlight filter
+
+This function highlights the related nodes of a selected node. Complex relationships between numerous nodes can be easily verified with the topology.
+
+![Highlight Filter](/img/topology-highlight.png)
+
+-   Hover your mouse over a specific node to highlight the node, related nodes, and link data.
+-   Entry of the keyword allows you to keep the selection of the desired node. The highlighted state is kept even when the topology is updated.
+
+## Using the node selection function
+
+On the lower right of the screen, double-click the **_Node Selection (Double Click)_** box. In **_Node Selection_**, click the sub-node on the right to apply the highlight filter.
+
+![Node Selection](/img/topology-select-node.png)
+
+In this chart, the projects, DB calls, and outbound call nodes are grouped to provide with a diagram, and in **_Node Selection_**, click a subordinate node on the right to apply the node name to the highlight filter.
+
+If you click **_Node Selection_**, you can use the following functions:
+
+-   Zoon In/Out
+-   Dragging
+-   Applying the highlight filter when clicking the subordinate node
+-   Hiding or displaying the subordinate node when clicking the upper node
+
+If you do not use the highlight filter with **_Node Selection_**, double-click the outer dotted line or double-click **_Hide Node Selection (Double Click)_**.
+
+:::note
+According to the menu, the location of **_Node Selection_** may differ. In **_Application Topology_**, the menus are provided with **_Node Selection_**.
+:::
+
+## Variable fonts
+
+The more information on a chart, you are more likely to zoom out the chart. If the chart is zoomed out, the position of any node can be fixed for identification. However, the font size is relatively small making it difficult to identify the call information. Topology charts display font sizes proportional to the link distances between nodes.
+
+![Variable Font](https://img.whatap.io/media/user_guide_application/topology/dynamic_font_size.png)
+
+## Context menus
+
+Context menus appear when you right-click on a node in the topology. They provide the menus such as links to go to the application monitoring dashboard.
+
+![Context Menu](https://img.whatap.io/media/user_guide_application/topology/context_menu.png)
+
+:::note
+The menus such as **_Container Map_**, **_Node Resource_**, and **_Container Resource_** are available only in Container Monitoring.
+:::
+
+## Saving and restoring the node positions
+
+On the topology, the position of a node in the chart can be changed by dragging with the left mouse button. The position of the changed node is maintained even if you enter another menu and then return to the topology screen.
+
+-   **_Save Position_**: The position of a changed node can be saved.
+-   **_Load Position_**: The position of a node is restored to the point when the position was saved.
+-   **_Clear Position_**: The node position is initialized.
+
+:::note
+
+-   The node position menu may not be supported depending on the topology menu.
+-   The position data of the changed node is stored in the local storage of the web browser. The changed node position is not applied to the screens of other users.
+
+:::
+
+## Assigning and removing the alias
+
+You can set the alias of the node through **_Node Selection_** at the lower right of the topology screen.
+
+1.  Double-click **_Node Selection (Double Click)_**.
+
+2.  Go to the node to alias and right-click on it.
+    ![Alias Input](/img/node-custom-name.png)
+
+3.  When the alias input field appears, enter the alias and then press Enter.
+
+The alias data is saved. The alias saved at the time of retrieving the chart data is applied.
+
+To remove the saved alias, on the topology menu screen, select **_Reset Alias_**. The saved alias data is deleted. It is applied to the screen at the time when the chart data is newly retrieved.
+
+:::note
+
+The node alias data is saved to the local storage of the web browser.
+
+:::
+
+## Inbound/outbound filters
+
+By using the **_Inbound_**/**_Outbound_** toggle button, you can change the visibility of external modules and outbound call nodes on the topology screen.
+
+-   Inbound/Outbound visible status
+    ![Inbound/Outbound visible status](https://img.whatap.io/media/user_guide_application/topology/inbound_outbound_displayed.png)
+
+-   Inbound/Outbound invisible status
+    ![Inbound/Outbound invisible status](https://img.whatap.io/media/user_guide_application/topology/inbound_outbound_hidden.png)
+
+## Highlighting data above the threshold
+
+When setting the call response time and error count threshold between nodes, the nodes and call relationships that exceed the threshold are highlighted. In the menus on the topology screen, enter the desired settings in the **_Response Time(ms)_** and **_Error Count_** fields.
+
+![Emphasizing data over the threshold](https://img.whatap.io/media/user_guide_application/topology/threshold_emphasized.png)
+
+:::note
+In **_Application Topology_**, you can enter the following settings after selecting **_Warning sign_**.
+:::

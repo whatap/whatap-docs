@@ -1,0 +1,63 @@
+---
+id: set-agent
+title: Node.js環境設定
+description: ノード.js エージェントに推奨される方法を提供します。
+tags:
+  - Node.js
+---
+
+WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルに書き込みます。エージェントは、環境変数を使用して構成ファイルを見つけてロードします。コンテナやPaaS環境でNode.jsサーバーが動作する場合、環境変数を使用してエージェント設定を構成します。ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)は、エージェント設定機能を用意しています。
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## サービス画面でエージェントを設定する
+
+ホーム画面 > プロジェクト選択 > **_管理_** > **_エージェント設定_**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## エージェント設定オプションの案内
+
+次のリンクは、設定できるオプションについて説明します。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

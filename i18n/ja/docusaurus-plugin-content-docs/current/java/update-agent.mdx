@@ -1,0 +1,30 @@
+---
+id: update-agent
+title: エージェントのアップデート
+description: Javaエージェントをアップデートする方法を提供します。
+tags:
+  - Java
+  - アップデート
+---
+
+{@include: ../common-items/_download-agent.mdx} 
+
+## エージェントアップデートの自動設定
+
+Javaエージェントをアップデートするには、サーバーを再起動する必要があります。再起動前に_whatap.agent.jar_ファイルが変更されると、アプリケーションサーバが再起動する過程で安全なシステム終了（shutdown）が失敗する可能性があります。
+
+Javaエージェントを更新するには、次の手順に進むことが原則です。
+
+1.  app shutdown
+2.  agent jar変更
+3.  app start
+
+上記の過程をより簡単に処理するために、WhaTapのエージェントjarファイル名にはバージョン番号が含まれます。アップデート過程で最新バージョンを自動適用するように設定することが重要です。
+
+```bash {3} showLineNumbers
+########## WHATAP ############
+WHATAP_HOME=/whatap
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
+########## WHATAP ############
+```

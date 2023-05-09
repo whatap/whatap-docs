@@ -1,0 +1,65 @@
+---
+id: apply-agent
+title: Application of the browser agent
+description: Apply the WhaTap browser agent to your web application and start the browser monitoring.
+tags:
+  - Browser Monitoring
+  - Agent
+---
+
+import TR from '@site/src/components/TR';
+
+와탭 브라우저 모니터링 서비스를 사용하기 위해서는 [회원 가입](https://www.whatap.io/ko/signup/) 후 프로젝트를 생성하고 웹 애플리케이션에 와탭 브라우저 에이전트를 적용해야 합니다.
+
+{@include: ../getting-started/_create-project-v2.mdx}    
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## Installing the WhaTap browser agent
+
+Follow the instructions on the agent installation screen to apply the WhaTap browser agent code to your web application.
+
+![와탭 브라우저 에이전트 설치](/img/rum-apply-agent.png)
+
+### ![](/img/number-01.png) 데이터 수집 샘플링
+
+The WhaTap browser agent collects data based on the user session. You can set the percentage of all sessions collected from 0 to 100.
+
+### ![](/img/number-02.png) 와탭 브라우저 에이전트 스크립트
+
+The WhaTap browser agent is provided in the form of an inline script. Add the script code provided by the installation guide to the top in the `<head>` tag of any HTML page to monitor.
+
+Select one of the following two methods to apply the agent.
+
+-   **_Async_**(비동기 로드): 웹 애플리케이션에 와탭 브라우저 에이전트를 비동기 형태로 로드합니다. 
+    -   It does not affect the load performance of your web application. 
+    -   There may be missing data such as AJAX or errors that occurred before loading the browser agent.
+-   **_Sync_**(동기 로드): 웹 애플리케이션에 와탭 브라우저 에이전트를 동기 형태로 로드합니다.
+    -   It is recommended if you want to collect all data when loading your web application. 
+    -   It may affect the load performance of your web application.
+
+## Setting the WhaTap browser agent's options
+
+It sets the options to apply to the WhaTap browser agent. The options can be set in the Config object of the installation script. You can set the project access keys, percentage of all user sessions, resource domains to exclude from collection, and such.
+
+```json title='config example' showLineNumbers
+config: {
+  projectAccessKey: {Project Access Key},
+  pcode: {pcode},
+  sampleRate: 100,
+  ignoreOrigins: [ 'https://ignore-site.com/' , '/^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i' ],
+}
+```
+
+-   **projectAccessKey**: 프로젝트 액세스 키입니다.
+-   **pcode**: 프로젝트 코드입니다.
+-   **sampleRate**: 수집하는 사용자 세션 비율을 설정할 수 있습니다.
+-   **ignoreOrigins**: You can add specific resource domains to be excluded from statistics collection in the form of an array of strings. You can also apply regular expressions.
+
+:::note
+`projectAccessKey`, `pcode` 값은 설치 안내에서 제공하는 스크립트 코드를 가져와 사용하길 권장합니다.
+:::
+
+## Starting the browser monitoring
+
+You have completed all settings. Go to [WhaTap Monitoring Service](https://service.whatap.io) and then start the browser monitoring. Select the created project and then go to **_Dashboard_** > **_Browser Monitoring Dashboard_**. You can see the monitoring status.

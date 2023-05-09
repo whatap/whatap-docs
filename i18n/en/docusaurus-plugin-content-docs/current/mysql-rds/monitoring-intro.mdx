@@ -1,0 +1,65 @@
+---
+id: monitoring-intro
+title: MySQL RDS Monitoring
+description: The WhaTap database monitoring service (DBX) provides the performance monitoring service by collecting data based on queries.
+displayed_sidebar: mysqlrdsSidebar
+hide_table_of_contents: false
+tags:
+  - MySQL RDS
+  - Database Monitoring
+  - Database
+  - Monitoring
+  - DBX
+---
+
+import InDoc from '@site/src/components/InDoc.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import RdsCont from '../common-items/_import_db-specification-rds.mdx';
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+
+{@include: ../common-items/_db-introduction-desc.mdx} 
+
+WhaTap MySQL RDS monitoring service provides not only the existing MySQL monitoring function, but also agent installation and management. If the database connection is successful, DB monitoring can be started conveniently without the hassle of downloading, installing, and configuring the DB agent (DBX).
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/log/db_prd_main.mp4}
+
+## MySQL RDS Monitoring features
+
+<Xclude product='mysql-rds'>
+  <CommonCont />
+</Xclude>
+
+<InDoc product='mysql-rds'>
+  <RdsCont/>
+</InDoc>
+
+{@include: ../common-items/_db-specification.mdx}
+
+## 지원 기능
+
+다음은 이용 가능한 기능들입니다. 다른 상품과 지원 기능에 대해 비교하고 싶다면 [다음 문서](../support-env#compare-db)를 참조하세요.
+
+| Category   | Function type                   |                                 MySQL RDS                                 |
+| ---------- | ------------------------------- | :-----------------------------------------------------------------------: |
+| Monitoring | Instance List                   |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Instancs Monitoring             |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Multi DataBase (tenant)         |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Slow Query                      |                      <span class='emoji-no'>❌</span>                      |
+| Analysis   | Trends                          | <span class='emoji-ok'>✅</span><br/>(Integrated with Instance Monitoring) |
+| ^          | Trends Compare                  |                      <span class='emoji-no'>❌</span>                      |
+| ^          | Lock Tree                       |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Parallel Query Tree             |                      <span class='emoji-no'>❌</span>                      |
+| ^          | Dead Lock                       |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | DB Parameter                    |                      <span class='emoji-ok'>✅</span>                      |
+| Statistics | SQL Stat                        |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Table Size                      |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Database(TableSpace) Size       |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | SGA Size                        |                      <span class='emoji-no'>❌</span>                      |
+| Report     | Daily / Weekly / Monthly Report |                      <span class='emoji-ok'>✅</span>                      |
+| Event      | Event List                      |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Event Stat                      |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Event Setting                   |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Notification                    |                      <span class='emoji-ok'>✅</span>                      |
+| Management | Agent Setup                     |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Agent List                      |                      <span class='emoji-ok'>✅</span>                      |
+| ^          | Project Management              |                      <span class='emoji-ok'>✅</span>                      |

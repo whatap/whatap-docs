@@ -1,0 +1,89 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - MySQL RDS
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+MySQL RDSは、DB接続さえできれば別途のインストールプロセスを必要としません。[会員登録](https://www.whatap.io/ko/signup/)後、プロジェクトを作成し、画面の案内に従って進めてください。会員登録に関する詳細については、[次の文書](account/account-manage)を参考にしてください。
+
+次の動画ガイドを参照してください。
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/log/db_guide_setting.mp4}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## モニタリング用アカウントの作成{#uid}
+
+データベースモニタリングを行うために必要な権限を持つアカウントを作成します。root(admin) アカウントでログインしてアカウントを作成してください。
+
+:::note
+
+既にあるアカウントを使用したい場合は、[DB情報入力](#create-db-user)に移動してください。権限がない場合、モニタリングを開始できません。
+
+:::
+
+<!-- MySQL -->
+
+```bash showLineNumbers
+create user whatap identified by 'DB_PASSWORD'; ## passwordを入力してください。
+grant process on *.* to whatap;
+grant select on performance_schema.* to whatap;
+grant show databases on *.* to whatap;
+ 
+## テーブル情報を収集する場合
+## table listを読み込むdb名.*または*.*を指定すると、table情報が収集されます。
+grant select on DB名.*または*.* to whatap;
+ 
+## replication使用時
+grant replication client on *.* to whatap;
+grant replication slave on *.* to whatap;
+ 
+## kill session使用時
+grant super on *.* to whatap;
+```
+
+## DB情報入力
+
+![DB情報入力](/img/mysql-rds-db-info.png)
+
+1.  モニタリング対象DBと接続するための必須情報を順番に入力してください。<span class='vslow'>\*</span>表示は必須入力です。
+
+    -   **_インスタンス名_**：DBを識別するための名称を入力してください。プロジェクト内で固有の名称である必要があり、英語の小文字、数字、ハイフン（-）のみ入力できます。
+
+    -   **_DB IP_**：DBサーバーのIPアドレスを入力してください。
+
+    -   **_DB Port_**：WhaTap収集サーバーに接続するポート番号を入力してください。
+
+    -   **_DB User ID_**：先に作成したモニタリング用のアカウントを入力してください。
+
+    -   **_DB Password_**：先に作成したモニタリングの用アカウントのパスワードを入力してください。
+
+2.  すべての項目を入力したら、**_接続_**ボタンを選択してください。
+
+3.  WhaTap収集サーバー（DBCTL）で接続を試みます。この過程では、内部的にエージェントを作成した後、入力したアドレスとアカウント情報を持ってアクセスを試みるため、多少時間がかかる場合があります。
+
+DB接続に成功すると、エージェントの作成を完了したというメッセージが確認できます。
+
+-   プロジェクトにモニタリング対象DBを追加するには、**_DB接続追加_**ボタンを選択してください。**3. DB情報入力**段階を追加で進めます。
+
+    :::note
+
+    **_DB接続の追加_**ボタンが表示されない場合は、**_管理_** > **_エージェントインストール_**メニューに移動し、**DB情報入力**を進めてください。
+
+    :::
+
+-   登録したDB情報を確認するには、**_インスタンス一覧_**または**_インスタンスモニタリング_**ボタンを選択してください。
+
+-   エージェント設定内容を確認・変更するには、**_エージェント設定_**ボタンを選択してください。
+
+-   エージェント接続に失敗した場合は、[次の文書](troubleshooting)を参考にしてください。

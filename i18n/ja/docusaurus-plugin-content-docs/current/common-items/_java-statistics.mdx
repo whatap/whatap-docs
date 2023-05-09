@@ -1,0 +1,72 @@
+-   **addin_monitor_num** <span class='type'>Int</span><br/>
+    デフォルト値`0`<br/>
+    パフォーマンスカウンターの拡張のために追加宣言するクラス数を設定します。`addin_monitor_num`に設定した値だけ`addin_monitor_x`を宣言します。
+
+-   **addin_monitor_0** <span class='type'>Int</span><br/>
+      デフォルト値`0`
+
+    :::note
+
+    **addin_monitor_xの使用例**
+
+    addin_monitor_num=2<br/>
+    addin_monitor_0=a.a.Class1<br/>
+    addin_monitor_1=a.a.Class2<br/>
+
+    :::
+
+-   **stat_domain_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>
+    クライアントの接続ドメイン別のトランザクション統計収集機能を活性化します。
+
+-   **stat_domain_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`7000`<br/>
+    1つのJVMから5分間収集するドメイン別トランザクション統計の最大レコード数です。
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    マルチサーバトランザクションでCaller & Calleeの間でバージョン別の依存性統計を収集します。
+
+-   **mtrace_spec** <span class='type'>String</span><br/>
+    デフォルト値`v1`<br/>
+    現在のインスタンスのアプリケーションバージョンを設定します。任意の文字列を設定できます。 このデータは、呼び出し統計に使用します。
+
+-   **stat_mtrace_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`7000`<br/>
+    マルチサーバトランザクションでCallerとCalleeの間でバージョン別の依存性統計の最大レコード数です。
+
+-   **stat_login_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    ログイン別のトランザクション統計を収集します。
+
+-   **stat_login_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`7000`<br/>
+    1つのJVMから5分間収集するログイン別トランザクション統計の最大レコード数です。
+
+-   **stat_referer_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    Referer別のトランザクション統計を収集します。
+
+-   **stat_referer_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`7000`<br/>
+    1つのJVMから5分間収集するReferer別トランザクション統計の最大レコード数です。
+
+-   **stat_tx_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`5000`<br/>
+    トランザクション統計情報の数を制限します。5分間収集してサーバーに転送する統計情報の最大レコード数を制限します。
+
+-   **stat_sql_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`5000`<br/>
+    SQL統計情報の個数を制限します。5分間収集してサーバーに転送する統計情報の最大レコード数を制限します。
+
+-   **stat_httpc_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`5000`<br/>
+    HTTP Call統計情報の個数を制限します。5分間収集してサーバーに転送する統計情報の最大レコード数を制限します。
+
+-   **stat_error_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`1000`<br/>
+    Error統計情報の個数を制限します。5分間収集してサーバーに送信する統計情報の最大レコード数を制限します。
+
+-   **stat_useragent_max_count** <span class='type'>Int</span><br/>
+    デフォルト値`500`<br/>
+    User Agent統計情報の個数を制限します。5分間収集してサーバーに転送する統計情報の最大レコード数を制限します。

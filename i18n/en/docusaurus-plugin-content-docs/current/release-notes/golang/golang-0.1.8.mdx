@@ -1,0 +1,119 @@
+---
+id: golang-0.1.8
+title: Golang Agent 0.1.8
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release data: 2022-01-19
+
+## Beta - update
+
+### Adding the concurrent user collection setting
+
+동시접속 사용자 지표는 5분전 부터 현재까지의 고유한 사용자의 수를 표시합니다. 5분간 합산된 사용자 수가 표시 됩니다. 고유한 사용자 정보를 HyperLogLog 알고리즘으로 처리합니다.
+
+고유한 사용자 정보는 초기에 IP로 설정됩니다. 추가로 HTTP Header , Cookie 항목의 값으로 사용자 식별 정보를 설정할 수 있습니다. 
+
+#### Configuration
+
+`trace_user_header_ticket`<br/>
+#Default : ""#<br/>
+#Type : string#
+
+Select the set HTTP header value as the unique user data.
+
+`trace_user_cookie_keys`<br/>
+#Default : ""#<br/>
+#Type : string#
+
+설정된 Cookie의 값을 고유한 사용자 정보로 선택합니다. 콤마(,) 구분으로 여러개의 이름을 설정할 수 있습니다. 설정된 순서대로 검색합니다.
+
+### Active Status
+
+The active status function has been added. 
+
+대시보드 화면에 액티브 스테이터스 그래프가 표기됩니다. 상태는 일반 함수, SQL, DB connection, 외부 HTTP 연결, 소켓 연결이 있으며 각 상태별로 진행중인 요청 개수를 표시합니다.
+
+![](https://img.whatap.io/media/agent_php/rease/tinified/active_status.png)
+
+### Collecting the internal metrics
+
+Run a separate goroutine to collect metrics at an interval of 5 seconds. 
+
+### Collecting the runtime metrics
+
+**_분석_** > **_메트릭스 차트_**에서 카테고리 `go_runtime`를 선택해서 볼 수 있습니다. 
+
+#### Collected metrics
+
+| Metric name    | Description                                                                           |
+| -------------- | ------------------------------------------------------------------------------------- |
+| NumCpu         | Number of logical CPUs that can be used in the current process                        |
+| NumCgoCall     | Number of CGO calls in the current process                                            |
+| NumGoroutine   | Number of the current go routines                                                     |
+| Alloc          | Bytes of the allocated heap object                                                    |
+| TotalAlloc     | Cumulative bytes that has been allocated to the heap object                           |
+| Sys            | Total bytes of the memory obtained from OS                                            |
+| Lookups        | -                                                                                     |
+| Mallocs        | Cumulative number of the allocated heap objects                                       |
+| Frees          | Cumulative number of the freed heap objects                                           |
+| HeapAlloc      | Bytes of the allocated heap object                                                    |
+| HeapSys        | Bytes of the heap memory obtained from OS                                             |
+| HeapIdel       | Unused bytes                                                                          |
+| HeapInuse      | Used bytes                                                                            |
+| HeapReleased   | Bytes of the physical memory returned to OS                                           |
+| HeapObjects    | Number of the allocated heap objects                                                  |
+| StackInuse     | Used stack bytes                                                                      |
+| StackSys       | Bytes of the stack memory obtained from OS                                            |
+| MSpanInuse     | Bytes of the allocated MSPAN                                                          |
+| MSpanSys       | Bytes of the memory obtained from OS for MSPAN                                        |
+| MCacheInuse    | Bytes of the allocated MCache                                                         |
+| MCacheSys      | MCache bytes of the memory obtained from OS                                           |
+| BuckHashSys    | 버킷 해시 테이블을 프로파일링하는 메모리의 바이트                                                           |
+| GCSys          | Memory bytes of the garbage collection metadata                                       |
+| OtherSys       | Bytes of other off-heap memories (runtime allocation)                                 |
+| NextGC         | Target heap size of the next GC cycle                                                 |
+| LastGC         | Time in which the last garbage collection has ended (unixstamp nanosecond)            |
+| PauseTotalNs   | Cumulative nanoseconds of GC                                                          |
+| NumGC          | Number of completed GC cycles                                                         |
+| NumForcedGC    | Number of forced GC cycles                                                            |
+
+### Supporting RoundTripper by the NET/HTTP library
+
+http transport에 RoundTripper를 사용할 수 있도록 지원합니다. 패키지의 `sql.Open` 함수 대신 `whatapsql.OpenContext` 함수를 사용합니다. `PrepareContext`, `QueryContext`, `ExecContext` 등 context를 전달하는 함수를 사용하기를 권장합니다. 
+
+전달하는 context는 `trace.Start()`를 통해서 whatap TraceCtx 정보가 있어야합니다.
+
+```go title='설치 안내 '
+import (
+  "github.com/whatap/go-api/instrumentation/net/http/whataphttp"
+)
+
+func main() {
+  config := make(map[string]string)
+  trace.Init(config)
+  defer trace.Shutdown()
+  
+  ctx, _ := trace.Start(context.Background(), "Http call")
+  defer trace.End(ctx, nil)
+
+  callUrl := "http://aaa.com/xxx"
+  client := http.DefaultClient
+      
+  // Use WhaTap RoundTripper. whatap의 TraceCtx가 있는 context 를 전달합니다. 
+  client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)
+      
+  resp, err := client.Get(callUrl)
+  if err != nil {
+      ...
+  }
+  defer resp.Body.Close()
+
+  ...
+}
+```
+
+[참조 예제](https://github.com/whatap/go-api-example/tree/main/net/http/client)

@@ -1,0 +1,51 @@
+---
+id: agent-remove
+title: エージェント削除
+description: PHPエージェントを削除する方法を提供します。
+tags:
+  - PHP
+  - エージェント削除
+  - 管理
+  - アプリケーション
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+インストールスクリプトを利用してトレーサー、すなわちPHP拡張モジュールとwhatap-phpサービスデーモンを削除してください。以後、パッケージ（yum、 apt-get）の削除を進め、必要に応じて_/usr/whatap/php_の下のログファイルおよびその他のファイルを削除してください。
+
+1.  PHP 拡張モジュールとwhatap-php サービスを削除します。
+
+    ```bash
+    $ /usr/whatap/php/install.sh remove
+    ```
+
+2.  パッケージを削除します。
+
+    <Tabs>
+    <TabItem value="rdct" label="Redhat/CentOS" default>
+
+    ```bash
+    $ sudo yum remove whatap-php
+    ```
+
+    </TabItem>
+    <TabItem value="dbub" label="Debian/Ubuntu">
+
+    ```bash
+    $ sudo apt-get purge whatap-php
+    ```
+
+    </TabItem>
+    <TabItem value="frbsd" label="FreeBSD">
+
+    ```bash
+    $ pkg delete whatap-php
+    ```
+
+    </TabItem>
+    </Tabs>
+
+    :::note
+    {@include: ../common-items/_php-restart-apache.mdx} 
+    :::

@@ -1,0 +1,120 @@
+---
+id: set-agent
+title: Agent CONFIG.
+description: It provides the default method how to install the Java agent.
+tags:
+  - Java
+---
+
+The Whatap agent writes the necessary settings for each agent in _whatap.conf_. The agent locates and loads the configuration file through the environment variables.
+
+If any separate setting, the agent is set to find _whatap.conf_ under the (_whatap.agent-X.Y.Z.jar_) directory. It checks whether _whatap.conf_ has been changed every 5 seconds and then reloads the file.
+
+For user convenience, [Whatap Monitoring Service](https://service.whatap.io) also provides the agent configuration function.
+
+## Default settings
+
+<!-- 담당자 확인 필요 -->
+
+```ini title='whatap.conf 설정'
+whatap.home=.
+whatap.config=whatap.conf
+```
+
+-   `whatap.home`: Enter the path of _whatap.agent.jar_ as the default.
+
+-   `whatap.config`: It is recommended to specify the file name. You can also specify the status path.
+
+에이전트가 데이터를 수집하고, 서버로 데이터를 전송하기 위해서는 최소한 액세스 키와 서버 주소는 설정돼 있어야 합니다.
+
+```ini title='whatap.conf 최소 설정 예시'
+license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
+whatap.server.host=10.10.0.1
+```
+
+When the WhaTap agent is run for the first time, you can check which jar file has been used as the agent and from which path _whatap.conf_ has been loaded, as the following.
+
+![Java start screen](/img/set-java-agent-start.png)
+
+## Server connection and data transmission
+
+The WhaTap agent is connected to the server address that has been set in _whatap.conf_.
+
+```ini title='whatap.conf'
+whatap.server.host=10.10.1.1
+whatap.server.port=6600 # default value
+```
+
+-   When the TCP session is connected, it receives the communication key by using the `license`. When a wrong `license` is set, the server terminates the session.
+-   If the TCP connection is terminated repeatedly, check for any firewall problem or check whether the `license` value is correct.
+-   When a TCP session is connected, data is transferred through the secure communication channel based on the private key received from the server.
+
+## Management of the configuration file for multiple applications
+
+When running multiple applications on one server, to separately control the configuration files for each application, change the name of _whatap.conf_ and then add the JVM options to your startup script.
+
+```bash title='A 서비스'
+-Dwhatap.config=whatap_Aservice.conf
+```
+
+```bash title='B 서비스'
+-Dwhatap.config=whatap_Bservice.conf
+```
+
+:::caution
+The _whatap.conf_ configuration file must be located in the `${WHATAP_HOME}` path.
+:::
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## Configuring the agent on the service screen
+
+Home > Select Project > **_Management_** > **_Agent CONFIG._**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## Guide to the agent configuration options
+
+The following links provide descriptions of the options that can be set.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

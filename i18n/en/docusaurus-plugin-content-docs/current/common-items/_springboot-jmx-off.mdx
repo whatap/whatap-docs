@@ -1,0 +1,18 @@
+## SpringBoot 2.2 or later, Tomcat JMX off
+
+If the embedded Tomcat is used in SpringBoot 2.2 or later, the JMX functions do not work with the default settings. In this case, activate the JMX functions. [Related link](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2-Release-Notes#jmx-now-disabled-by-default)
+
+```properties title='application.properties'
+spring.jmx.enabled=true
+server.tomcat.mbeanregistry.enabled=true # tomcat embedded인 경우 #
+```
+
+```yml title='application.yml'
+spring:
+  jmx:
+    enabled: true
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true #tomcat embedded
+```

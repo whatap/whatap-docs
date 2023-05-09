@@ -1,0 +1,35 @@
+-   **whatap.stat_enabled**<span class='type'>Boolean</span><br/>デフォルト値`true`<br/>
+    統計情報の追跡機能をアクティブにします。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。 
+
+-   **whatap.license** <span class='type'>String</span><br/>기본값 `NONE`<br/>
+    에이전트 설치 시 서버로부터 부여받은 액세스 키를 입력합니다. 액세스 키에는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함합니다.
+
+-   **whatap.realtime_user_thinktime_max**<span class='type'>Milliseconds</span><br/>デフォルト値`300000`<br/>
+    リアルタイムブラウザユーザー数を測定する場合、同じユーザーとして認められる最大呼び出し間隔を設定します。
+
+-   **whatap.time_sync_interval_ms** <span class='type'>Milliseconds</span><br/>デフォルト値 `300000`<br/>
+    エージェントとサーバー間の同期化サイクルを設定します。 同期化しない場合は`0`として設定してください。
+
+-   **whatap.text_reset**<span class='type'>Int</span><br/>デフォルト値`0`<br/>
+    WhaTapエージェントは一度送ったテキストタイプデータをhash処理するため、翌日まで再送信しません。以前の設定値と異なる値を入力する場合は、再送信します。
+    :::note
+    トランザクションURL、SQL Stringなどがテキストタイプデータに該当します。
+    :::
+
+-   **whatap.profile_method_enabled**<span class='type'>Boolean</span><br/>デフォルト値`true`<br/>
+    実行時間`whatap.profile_method_time` オプションの値を超えるユーザー関数の情報をトランザクション詳細情報から確認することができます。
+    :::note
+    {@include:../common-items/_donet-iis-restart.mdx}
+    :::
+
+-   **whatap.profile_method_time** <span class='type'>Milliseconds</span><br/>デフォルト値`1000`<br/>
+        `whatap.profile_method_enabled`オプションで収集する関数の実行時間を設定できます。
+    :::note
+    {@include: ../common-items/_donet-iis-restart.mdx}
+    :::
+
+-   **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span><br/>デフォルト値 `false`<br/>
+        ユーザー関数のスタック情報をトランザクション詳細から確認できます。
+    :::note
+    {@include: ../common-items/_donet-iis-restart.mdx}
+    :::

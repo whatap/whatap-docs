@@ -1,0 +1,76 @@
+Let's learn about the topologies by type and see the features for each topology.
+
+## Application Topology
+
+Home > Select Project > **_Dashboard_** > **_Application Topology_**
+
+![Application Topology](https://img.whatap.io/media/user_guide_application/topology/application_topology.png)
+
+It represents call related data for all applications included in the project scope. 
+
+:::note
+When you double-click the application node, the screen switches to **_Instance Topology_** of the application. It represents the selected application-centric topology.
+:::
+
+## Group topology
+
+Home > Select Project > **_Sitemap_** > **_Group Statistics Topology_** (**_STAT/REPORT_** > **_Topology_**)
+
+<!-- 담당자 문의 -->
+
+<!--![그룹 애플리케이션 토폴로지 선택하기](/img/select-group-topology.png)
+
+***애플리케이션 토폴로지*** 화면에서 ![지시선 1](/img/number-01.png) 에이전트 영역을 선택한 다음 ![지시선 2](/img/number-02.png) 에이전트 선택 목록에서 ***에이전트 서버*** 또는 ***에이전트 종류***를 선택하세요. 프로젝트 범위에 포함된 애플리케이션 그룹 사이의 호출 연관 정보를 표현합니다. -->
+
+-   A topology with the database call history includes the database nodes as follows:
+    ![Group Topology (DB node included)](https://img.whatap.io/media/user_guide_application/topology/group_topology_1.png)
+
+-   If there is a call history from another project, the group nodes of the other project are included.
+    ![Group Topology (other project group nodes included)](https://img.whatap.io/media/user_guide_application/topology/group_topology_2.png)
+
+-   If you click the other project group node, the topology information of other projects appears together.
+    ![Group Topology (click the other project group)](https://img.whatap.io/media/user_guide_application/topology/group_topology_with_other_project.png)
+
+## Integrated topology{#int-topology}
+
+If you have the roles for multiple projects, there is a limitation that is difficult to view the entire situation with a project topology. In this case, this function meets the requirements to select multiple projects at a time and view them with a single topology.
+
+1.  On the Home screen of WhaTap Monitoring Service, select **_Integrated Topology_**.
+
+2.  On the upper left of the screen, select **_Project_**.
+
+  ![Project Selection](/img/uni-topology-select-project.png)
+
+1.  Select a group or project to represent on the topology.
+
+Project unit clusters are formed based on the center of the topology screen, and the groups included in each project are clustered in adjacent locations. To adjust the spacing between adjacent nodes, use the Zoom In/Out (![Zoom icon](/img/ico-topology-node-zoom.png) buttons to adjust the node spacing.
+
+:::note
+
+-   A large volume environment is usually organized with multiple projects. If this is represented as a topology, it is easier to see the entire scale by grouping and arranging individual nodes for each project rather than distributing them evenly across the entire screen. Accordingly, the cluster units are automatically selected and placed.
+-   Cluster units are external modules that call projects, databases, external hosts, applications, and groups.
+-   Cluster configuration consists of projects, external modules, external calls, and DB calls.
+
+:::
+
+## Instance topology
+
+Home > Select Project > **_Sitemap_** > **_Instance Topology_** (**_Dashboard_** > **_Topology_**)
+
+**_Instance Topology_** represents the same data as the application topology. **_Instance Topology_** represents relationships with the related applications, external modules, DBs, and outbound call modules for a single application. Meanwhile, **_Application Topology_** covers all applications in the project.
+
+If there are too many represented data in **_Application Topology_** and they are checked for each application, use **_Instance Topology_**.
+
+![Instance Topology](https://img.whatap.io/media/user_guide_application/topology/instance_topology.png)
+
+## Netstat topology
+
+Home > Select Project > **_Sitemap_** > **_Netstat Topology_** (**_Dashboard_** > **_Topology_**)
+
+Applications in the project, application listening data, and outbound call data are expressed as nodes. The relationship with the listening port is expressed as a straight line, and the relationship with outbound call data is expressed as a curve.
+
+![Netstat Topology](/img/netstat-topology.png)
+
+:::note
+The acquisition of the Netstat topology causes load to the agent so it does not provide an automatic update. Through the ![Data lookup icon](/img/ico-btn-search.png) button, the data is retrieved upon a user request.
+:::

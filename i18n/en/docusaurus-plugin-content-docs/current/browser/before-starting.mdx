@@ -1,0 +1,50 @@
+---
+id: before-starting
+title: Before starting
+description: Before using the browser monitoring dashboard, be familiar with the terms defined by WhaTap.
+tags:
+  - Browser Monitoring
+---
+
+Before using the browser monitoring dashboard, be familiar with the terms defined by WhaTap.
+
+## Page Load{#load-page}
+
+This process loads the content and resources of the page when accessing the web application. The browser monitoring service defines the page load time as follows.
+
+-   When there is no DOM interaction, AJAX request, or resource response within 100 ms
+-   `window onload` 이벤트가 발생한 경우
+
+The combination of the above conditions determines the final load time.
+
+## Changing the router
+
+If you configure your web application as a Single Page Application (SPA), the page load event does not occur whenever you navigate to any page. We use the browser's history API to collect the data related to the page switching. 
+
+라우터 변경 시간의 정의는 페이지 [로드에 대한 첫번째 정의](#load-page)와 같습니다.
+
+The event ends when there is no DOM interaction, AJAX request, or resource response within 100 ms after page switching.
+
+## User Session
+
+In the browser monitoring service, the **user session** is a unit of behavior by which a user continues to interact with the web application.
+
+It defines the session between user's page entry to exit as one **user session**. The session has a maximum duration of 4 hours and it is reset if there is no interaction with the web application for 15 minutes.
+
+## 페이지 그룹{#page-group}
+
+To have a meaningful statistical group in the browser monitoring service, the URL path is normalized and provided under the name of **page group**. Numbers and dates that are judged to be meaningless in the URL path unit analysis are replaced with question marks (?) for provision.
+
+예를 들어, _/v2/project/sms**/`12`/**dashboard/resource_board_와 같은 URL Path를 _/v2/project/sms**/`?`/**dashboard/resource_board_와 같은 형태로 제공합니다.
+
+## Browser Error
+
+The browser monitoring service classifies errors that occur in the browser as follows:
+
+-   `console`: 개발자가 정의한 에러, 브라우저 콘솔에서 발생하는 에러입니다.
+
+-   `onError`: 특정 리소스를 로드하지 못하거나 스크립트에 오류가 있는 경우 발생하는 에러입니다.
+
+-   `fetch error`: fetch를 통한 HTTP 요청(HTTP Request)이 있을 경우 발생하는 에러입니다.
+
+-   `xhr error`: xhr를 통한 HTTP 요청(HTTP Request)이 있을 경우 발생하는 에러입니다.

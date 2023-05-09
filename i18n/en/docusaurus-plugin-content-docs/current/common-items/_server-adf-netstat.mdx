@@ -1,0 +1,18 @@
+If the netstat command is embedded, collection is uploaded to **_Category_** `server_netstat` (netstat connection statistics) and `server_netstat_s` (result of netstat -s command).
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "netstats.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "netstats.enabled=true"
+```
+
+</TabItem>
+</Tabs>

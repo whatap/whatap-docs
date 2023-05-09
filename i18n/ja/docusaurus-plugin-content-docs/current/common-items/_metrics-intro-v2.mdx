@@ -1,0 +1,144 @@
+<!-- 메트릭스 정의 -->
+
+## メトリクスとは
+
+WhaTapは、モニタリング対象からデータを収集し、ユーザーに提供します。 エージェントから収集されるデータを**メトリクス**と表記します。 
+
+<!-- 메트릭스 효용성 안내 -->
+
+**メトリクス**は、ユーザー環境をひと目で確認できる基準要素を提供します。 例えば、サーバー別メモリ使用率の平均、DBの平均接続時間などを原本データ一覧や視覚化したチャートビューなどを通じて簡単に確認することができます。 問題要素を見つけた後は、ログやトレースなどで詳細な分析を確認できます。 
+
+**メトリクス**は、ユーザー環境のスケールを調整するのにも役立ちます。 リソース使用量の統計を通じて必要なリソース量を確定することは、性能向上とコストパフォーマンスの面で重要な基準です。
+
+<!-- 메트릭스 수집 방식 -->
+
+## WhaTapのメトリクス収集方法
+
+<div style={{textAlign: 'center'}}>
+
+![metrics_overview sc](/img/metrics-overview.png)
+
+</div>
+
+WhaTapエージェントは、モニタリング対象からモニタリング指標を収集し、メトリクスデータの形でWhaTap収集サーバーに転送します。 WhaTap収集サーバーは、関連データをカテゴリ別に保存・管理します。 
+
+WhaTapの収集サーバーは、様々なモニタリング対象からメトリクスを収集します。 ユーザーは、希望するメトリクスにアクセスするために、該当製品別の案内画面に移動して記述されたプロセスに従う必要があります。 
+
+<InDoc product='java'>
+
+例えば**_Javaアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../java/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../java/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='php'>
+
+例えば**_PHPアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../php/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../php/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='nodejs'>
+
+例えば**_Node.jsアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../nodejs/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../nodejs/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='python'>
+
+例えば**_Pythonアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../python/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../python/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='dotnet'>
+
+例えば**_.NETアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../dotnet/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../dotnet/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='golang'>
+
+例えば**_Golangアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../golang/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../golang/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='server'>
+
+例えば**_Server_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../server/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../server/metrics-app)で確認できます。
+
+</InDoc>
+
+<InDoc product='kubernetes'>
+
+例えば**_Kubernetes_**モニタリングを開始したい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../kubernetes/install)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../kubernetes/metrics-kubernetes)で確認できます。
+
+</InDoc>
+
+<InDoc product='amazon-cloudwatch'>
+
+例えば**_Amazon CloudWatch_**をモニタリングしたい場合は、API連携が必要です。 [次の文書](../amazon-cloudwatch/install-agent)を参考にしてください。 収集されるメトリクス指標の場合は、[次の文書](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html)を参考にしてください。
+
+</InDoc>
+
+<InDoc product='amazon-ecs'>
+
+例えば**_Amazon ECS_**をモニタリングしたい場合は、API連携が必要です。 [次の文書](../amazon-ecs/install-agent)を参考にしてください。 関連メトリクス指標の案内については、[次の製品別ページ](../amazon-ecs/dashboard)で確認できます。
+
+</InDoc>
+
+<InDoc product='azure'>
+
+例えば**_Azure_**をモニタリングしたい場合は、API連携が必要です。 [次の文書](../azure/install-agent)を参考にしてください。 収集されるメトリクス指標の場合は、[次の文書](https://learn.microsoft.com/ko-kr/azure/azure-monitor/essentials/metrics-supported)を参考にしてください。
+
+</InDoc>
+
+<InDoc product='ncloud'>
+
+例えば**_Naver Cloud_**をモニタリングしたい場合は、API連携が必要です。 [次の文書](../ncloud/install-agent)を参考にしてください。 収集されるメトリクス指標の場合は、[次の文書](https://api.ncloud-docs.com/docs/management-cloudinsight-productinfo)を参考にしてください。
+
+</InDoc>
+
+<InDoc product='oracle-cloud'>
+
+例えば**_Oracle Cloud_**をモニタリングしたい場合は、API連携が必要です。 [次の文書](../oracle-cloud/install-agent)を参考にしてください。 収集されるメトリクス指標の場合は、[次の文書](https://docs.oracle.com/en-us/iaas/Content/Monitoring/Concepts/monitoringoverview.htm#SupportedServices)を参考にしてください。
+
+</InDoc>
+
+<InDoc product='metrics'>
+
+例えば**_Javaアプリケーション_**をモニタリングしたい場合は、まずWhaTapエージェントをインストールする必要があります。 [次の文書](../java/install-agent)を参考にしてください。 **_Amazon CloudWatch_**をモニタリングしたい場合は、API連携が必要です。 [次の文書](../amazon-cloudwatch/install-agent)を参考にしてください。 関連メトリクス指標の案内については、製品別ページで確認できます。
+
+</InDoc>
+
+## WhaTapのメトリクス構成要素
+
+WhaTapの**メトリクス**は、次の情報で構成されています。
+
+-   **_Category_**：関連するメトリクスをまとめる単位で、メトリクスを区分するKeyを意味します。
+-   **_Tags_**：収集対象を区分できる固有情報を含むデータです。 ほとんど変更されることのないIP、Oname、Host情報などの項目を保存します。 Mapの形でMulti Tagが存在します。
+-   **_Fields_**：エージェントから収集されたすべての指標値を保存します。 Mapの形でMulti Fieldが存在します。
+-   **_Time_**：メトリクスが収集された時間です。
+-   **_Oid_**：メトリクスを収集したエージェントの固有番号です。
+-   **_Oname_**：メトリクスを収集したエージェントの名称です。
+
+## メトリクスデータの照会と視覚化
+
+WhaTapは、ユーザーが指定した条件に従って収集した原本データの一覧や、利便性のために様々な形で視覚化されたチャートを次のように提供します。 メトリクスの原本データを照会できる**_メトリクス照会_**、視覚化したチャートを通じてメトリクスデータを照会できる**_メトリクスチャート_**、AIが学習したメトリクス指標のパターンと比較して予想パターンから外れた異常を検知できる**_メトリクス異常検知_**メニューを確認してみてください。
+
+![メトリクスビューsc](/img/metrics-views.png)
+
+<!-- 사용자는 와탭의 메트릭스 메뉴를 통해 사용자 지정 조건에 따라 원본 데이터 목록을 조회하거나 다양하게 시각화한 차트를 확인할 수 있습니다. -->
+
+<!-- 
+
+ 
+* ***Category***: 관련된 지표들을 묶는 단위입니다.
+* ***Tags***：収集対象を区分できる固有情報を含むデータです。
+* ***Fields***：エージェントから収集された指標です。
+* ***Time***：メトリクスが収集された時間です。
+* ***Oid***：メトリクスを収集したエージェントの固有番号です。
+* ***Oname***：メトリクスを収集したエージェントの名称です。
+
+様々なモニタリング対象からWhaTapの収集サーバーにメトリクスを送信できます。 
+WhaTapの収集サーバーは、様々な方法でメトリクスを収集します。
+メトリック指標の案内については、製品別に案内を提供します。 
+
+-->

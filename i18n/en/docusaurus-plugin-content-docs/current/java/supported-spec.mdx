@@ -1,0 +1,59 @@
+---
+id: supported-spec
+title: Java support environment
+description: The following lists basic specifications of the JVM application server on which the WhaTap monitoring service operates.
+tags:
+  - Java
+  - Linux
+  - MySQL
+---
+
+Before installing the agent, make sure that the JVM application server meets the following specifications.
+
+It can be applied not only to Web Application Server (WAS) but also to all applications running on JVM, such as daemons and batch applications. For Java 1.5 or earlier, contact [support@whatap.io](mailto:support@whatap.io) or see [the following](add-jvm-opt/java-under-ver).
+
+## JVM
+
+| Scope of support | Environment | OS                               | JVM version                         |
+| ---------------- | ----------- | -------------------------------- | ----------------------------------- |
+| Fully support    | Java        | Operating systems running on JVM | Java 6 or later, Java 17 or earlier |
+| Limited support  | Java        | Operating systems running on JVM | Java 1.5 or earlier                 |
+
+## Web Application Server (WAS)
+
+For all application servers that comply with Java EE Spec, such as Tomcat, JBoss, JEUS, WebLogic, and WebSphere, see [the following link](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html).
+
+## Framework/Library
+
+-   Spring Boot Project
+-   Asynchronous frameworks such as Netty, Akka HTTP, and Play Framework
+-   All other libraries operating in application servers conforming to Java EE Spec
+
+## DataSource
+
+-   Generic JDBC (any JDBC compliant driver)
+-   DB2 JDBC
+-   Derby JDBC
+-   H2 JDBC
+-   jTDS JDBC
+-   MariaDB JDBC
+-   Microsoft SQL Server JDBC
+-   MySQL mysql-connector-java
+-   Oracle ojdbc14, ojdbc5, ojdbc6, ojdbc7, ojdbc8
+-   Postgres JDBC
+-   Tibero
+-   Jedis Redis driver
+
+## Common environment
+
+### Supporting the browser
+
+{@include: ../getting-started/_supported-browser.mdx}  
+
+### Firewall
+
+{@include: ../getting-started/_proxy.mdx}  
+
+### Mobile app
+
+{@include: ../getting-started/_mobile-app.mdx}  

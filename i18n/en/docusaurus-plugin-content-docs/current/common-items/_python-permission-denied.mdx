@@ -1,0 +1,12 @@
+## Permission denied error
+
+To use WhaTap Python Monitoring, the **read and write** role is required. 
+
+-   Read and write role of the_ $WHATAP_HOME/whatap.conf_ file
+-   Read and write permission for the _$WHATAP_HOME/logs_ log directory and subordinate files
+
+If the permission denied error occurs, give the role for `$WHATAP_HOME`.
+
+```bash
+$ echo `sudo chmod -R 777 $WHATAP_HOME`
+```

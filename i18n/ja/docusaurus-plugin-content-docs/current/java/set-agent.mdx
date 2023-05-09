@@ -1,0 +1,120 @@
+---
+id: set-agent
+title: エージェント設定
+description: Javaエージェントの基本設定方法を提供します。
+tags:
+  - Java
+---
+
+WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
+
+別途設定がない場合、エージェントは自身(_whatap.agent-X.Y.Z.jar_)この位置したディレクトリから_whatap.conf_ ファイルを探すように実装しました。5秒に1回ずつ_whatap.conf_ファイルの変更有無をチェックしてリロードします。
+
+ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)でもエージェント設定機能を提供しています。
+
+## 基本設定
+
+<!-- 담당자 확인 필요 -->
+
+```ini title='whatap.conf 설정'
+whatap.home=.
+whatap.config=whatap.conf
+```
+
+-   `whatap.home`：デフォルト値は_whatap.agent.jar_ファイルへのパスを入力してください。
+
+-   `whatap.config`：ファイル名のみを指定することをお勧めします。ステータスパスを一緒に指定することはできます。
+
+エージェントがデータを収集し、サーバーにデータを転送するためには、少なくともアクセスキーとサーバーアドレスが設定されている必要があります。
+
+```ini title='whatap.conf 최소 설정 예시'
+license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
+whatap.server.host=10.10.0.1
+```
+
+WhaTapエージェントは、最初の実行時に次のようにどのjarファイルがエージェントとして使用されたのか、どのパスで_whatap.conf_ファイルをロードするのかを確認できます。
+
+![Java start screen](/img/set-java-agent-start.png)
+
+## サーバー接続およびデータ転送
+
+WhaTapエージェントは、_whatap.conf_ファイルに設定したサーバーアドレスに接続します。
+
+```ini title='whatap.conf'
+whatap.server.host=10.10.1.1
+whatap.server.port=6600 # デフォルト値
+```
+
+-   TCPセッションを接続すると`license`を利用してサーバーから通信キーを受け取ります。誤った`license`を設定すると、サーバーはセッションを終了します。
+-   TCP接続が繰り返して終了したら、ファイアウォールの確認または`license`の値を確認してください。
+-   TCPセッションを接続すると、サーバーから受信した秘密鍵に基づいてセキュリティ通信にデータを転送します。
+
+## 複数のアプリケーションサーバーの設定ファイル管理
+
+1つのサーバーの中で複数のアプリケーションを運営する場合、各アプリケーション別の設定ファイルを別途管理するには、_whatap.conf_ファイル名を変更し、開始スクリプトにJVMオプションを追加してください。
+
+```bash title='A 서비스'
+-Dwhatap.config=whatap_Aservice.conf
+```
+
+```bash title='B 서비스'
+-Dwhatap.config=whatap_Bservice.conf
+```
+
+:::caution
+_whatap.conf_設定ファイルは必ず`${WHATAP_HOME}`パスに位置する必要があります。
+:::
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+<!--서비스 화면에서 에이전트 설정하기 start-->
+
+## サービス画面でエージェントを設定する
+
+ホーム画面 > プロジェクト選択 > **_管理_** > **_エージェント設定_**
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-desc-notes.mdx}
+
+<!--옵션추가하기-->
+
+{@include: ../common-items/_set-agent-in-service-add-options.mdx}  
+
+<!--옵션 수정 또는 삭제 -->
+
+{@include: ../common-items/_set-agent-in-service-modify-options.mdx}  
+
+<!-- 여러에이전트 동시 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-muli-agent.mdx}
+
+<!-- 에이전트 기본값 적용 -->
+
+{@include: ../common-items/_set-agent-in-service-apply-dafault-desc.mdx}
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+<!--Notes-->
+
+{@include: ../common-items/_set-agent-in-service-default-notes.mdx}
+
+<!--설정 공유하기-->
+
+{@include: ../common-items/_set-agent-sharing.mdx}  
+
+<!--서비스 화면에서 에이전트 설정하기 end-->
+
+## エージェント設定オプションの案内
+
+次のリンクは、設定できるオプションについて説明します。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

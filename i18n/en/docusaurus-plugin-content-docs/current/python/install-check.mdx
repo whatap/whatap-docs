@@ -1,0 +1,40 @@
+---
+id: install-check
+title: Installation checking items
+description: The items must be checked after installing the agent.
+tags:
+  - Python
+---
+
+The items must be checked after installing the agent. If any problem occurs during installation, see [the following](agent-troubleshooting).
+
+## Agent Log
+
+When the application server runs, it starts collecting the monitoring data.
+
+The locations of logs are created as the following file in the _logs_ directory under `$WHATAP_HOME`. There are two types of log files.
+
+-   _whatap-boot-`yyyymmdd`.log_: Data collection log
+-   _whatap-hook.log_: Log for data collection
+
+An example of a normal log is as follows: 
+
+```javascript title=SH
+_      ____       ______Python-AGENT
+| | /| / / /  ___ /_  __/__ ____
+| |/ |/ / _ \/ _ `// / / _ `/ _ \
+|__/|__/_//_/\_,_//_/  \_,_/ .__/
+                          /_/
+Just Tap, Always Monitoring
+WhaTap Python Agent version 0.1.33, 20171017
+
+WHATAP_HOME: /Users/kimjihye/workspace/whatap/python-sample/whatap
+Config: /Users/kimjihye/workspace/whatap/python-sample/whatap/whatap.conf
+Logs: /Users/kimjihye/workspace/whatap/python-sample/whatap/logs
+```
+
+## Collecting the GraphQL performance data
+
+If the GraphQL library is included in web transactions, the document and latency are collected.
+
+For document-specific performance analysis, set the GraphQL API end point to a transactional exception. After configuration, it automatically uses the `graphql.execute` function as the transaction start point. The transactions are collected that have the name of the object at the top of the document as the service name.

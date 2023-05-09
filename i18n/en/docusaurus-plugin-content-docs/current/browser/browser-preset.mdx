@@ -1,0 +1,38 @@
+---
+id: browser-preset
+title: Preliminary configuration
+description: It provides a preliminary configuration method for applying browser agents.
+tags:
+  - Browser Monitoring
+  - Preliminary configuration
+---
+
+Apply the browser agent and then proceed with the preliminary configuration according to the instructions for data collection.
+
+## Content Security Policy Settings
+
+In case of web applications with the content security policy (CSP) settings, add the CDN URL of the browser agent and the URL of the collection server for sending the collected data.
+
+In addition, the browser agent needs to add the web worker-related CSP options for efficient data transfer.
+
+| Directive                   | Source                                             | Description                                                                                   |
+| --------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| script-src, script-src-elem | unsafe-inline                                      | Install the browser agent by using an inline script.                                          |
+| script-src, script-src-elem | https://repo.whatap-browser-agent.io/rum/prod/     | Browser agent CDN domain                                                                      |
+| connect-src                 | https://rum-ap-northeast-2.whatap-browser-agent.io | Domain for transmission of collected data                                                     |
+| worker-src, child-src       | blob:                                              | Web worker-related CSP options for efficient data transfer by the browser agent (recommended) |
+
+## Timing-Allow-Origin Setting
+
+If you apply CORS to the server that provides resources, most resource timing properties return 0. In order for the browser agent to collect property values of resources, the server must return the `Timing-Allow-Origin` HTTP response header. 
+
+If you can control the server that provides resources, add headers to each response and all domains that access the properties (the domain of the website to which the browser agent is applied).
+
+-   Example 1: Resource timing data is provided from all sources.
+    ```json
+    Timing-Allow-Origin: *
+    ```
+-   Example 2: Resource timing data is provided only in the domain of the web application to which the browser agent is applied.
+    ```json
+    Timing-Allow-Origin: www.site.com
+    ```

@@ -1,0 +1,19 @@
+The process network performance can be checked in the **_process_** widget under **_Server List_** > **_Server Detail_**.
+
+<Tabs>
+<TabItem value="lxs" label="Linux Shell">
+
+```bash title=SH
+echo "process.fdcheck=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```
+
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
+
+```bash title=SH
+// The admin role is required.
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "process.fdcheck=true"
+```
+
+</TabItem>
+</Tabs>

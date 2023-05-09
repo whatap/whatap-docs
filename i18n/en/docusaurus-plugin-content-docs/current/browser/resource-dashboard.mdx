@@ -1,0 +1,65 @@
+---
+id: resource-dashboard
+title: Resources
+description: Resource Dashboard is a real-time statistical data dashboard composed of widgets related to resource data.
+tags:
+  - Browser Monitoring
+  - Resources
+  - Dashboard
+---
+
+홈 화면 > 프로젝트 선택 > **_대시보드_** > **_리소스_**
+
+Widget charts are created by reprocessing resource data loaded by end users while using the web application. **_리소스_** 대시보드는 이 위젯들로 구성한 실시간 통계 데이터 대시보드입니다. The load time of resources is an important user experience metric for web applications. The faster the resources are loaded, the more end users perceive the page to be available. 우수한 사용자 경험을 제공하는 리소스의 로드 시간은 **800ms** 미만입니다. 리소스 로드 시간과 관련한 자세한 내용은 [다음 문서](https://web.dev/ttfb/#what-is-a-good-ttfb-score)를 참조하세요.
+
+{@include: _dashboard-note.mdx}
+
+## **_리소스 건수_**
+
+![리소스 건수](/img/rum-resource-count.png)
+
+You can check the resource load count in real time. 위젯 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택한 다음 시간대를 설정해 리소스 로드 수를 조회할 수도 있습니다. 데이터 조회 기준을 **_리소스 Host_** 또는 **_전체_** 리소스로 변경하려면 위젯 오른쪽 위에 **_리소스 Path_** 버튼을 선택하세요.
+
+## **_Average 1st Party Resource Response Time_**
+
+![평균 1st Party 리소스 응답시간](/img/rum-resource-1stparty.png)
+
+This widget analyzes the resource host and provides the average response time of resources called by the 1st party with a chart. 
+
+-   데이터 조회 기준을 **_리소스 Host_** 또는 **_전체_** 리소스로 변경하려면 위젯 오른쪽 위에 **_리소스 Path_** 버튼을 선택하세요.
+
+-   **_리소스 Path_**, **_리소스 Host_** 기준으로 조회 시 상위 10개에 해당하는 평균 리소스 응답 시간을 제공합니다.
+
+-   You can identify resources that take a long average response time by specific paths and hosts.
+
+-   위젯 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택한 다음 시간대를 설정해 리소스 응답시간을 조회할 수 있습니다.
+
+## **_Average 3rd Party Resource Response Time_**
+
+![평균 3rd Party 리소스 응답시간](/img/rum-resource-3rdparty.png)
+
+This widget analyzes the resource host and provides the average response time of resources called by the 3rd party with a chart. 
+
+-   데이터 조회 기준을 **_리소스 Host_** 또는 **_전체_** 리소스로 변경하려면 위젯 오른쪽 위에 **_리소스 Path_** 버튼을 선택하세요.
+
+-   **_리소스 Path_**, **_리소스 Host_** 기준으로 조회 시 상위 10개에 해당하는 평균 리소스 응답 시간을 제공합니다.
+
+-   You can identify resources that take a long average response time by specific paths and hosts.
+
+-   위젯 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택한 다음 시간대를 설정해 리소스 응답시간을 조회할 수 있습니다.
+
+## **_리소스 테이블_**
+
+![리소스 테이블](/img/rum-resource-table.png)
+
+You can identify resources that take longer to respond and see where the delay occurs. 데이터 조회 기준을 **_리소스 Host_** 또는 **_전체_** 리소스로 변경하려면 위젯 오른쪽 위에 **_리소스 Path_** 버튼을 선택하세요.
+
+-   **_Avg. Dns Time_**: 리소스의 평균 DNS 탐색 시간입니다.
+
+-   **_Avg. Connection Time_**: 리소스를 제공하는 서버에 연결하는데 걸린 평균 시간입니다.
+
+-   **_Avg. TTFB Time_**: 서버에 연결 후 리소스의 첫 번째 바이트를 수신할 때까지의 평균 소요 시간입니다.
+
+-   **_Avg. Download Time_**: 리소스를 다운로드하는 평균 소요 시간입니다.
+
+-   **_type_**: 리소스의 유형입니다.

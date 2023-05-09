@@ -1,0 +1,25 @@
+## Errors of Log Manager
+
+If any Log Manager error occurs in JBoss AS 7.0 or later and JBoss EAP 6.0 or later, add the JVM options.
+
+-   Set the package name of Log Manager in `-Djava.util.logging.manager`.
+-   Set the JBoss Log Manager JAR file in `-Xbootclassloader`.
+
+```apacheconf title='(JBoss 설치 경로)/bin/standalone.conf(domain.conf)' {4,12,13} showLineNumbers
+# Specify the exact Java VM executable to use.
+#
+if [ "x$JBOSS_MODULES_SYSTEM_PKGS" = "x" ]; then
+    JBOSS_MODULES_SYSTEM_PKGS="org.jboss.byteman,org.jboss.logmanager,whatap"
+fi
+
+...
+# Specify options to pass to the Java VM.
+#
+if [ "x$JAVA_OPTS" = "x" ]; then
+    JAVA_OPTS="-Xms1303m -Xmx1303m -Djava.net.preferIPv4Stack=true"
+    JAVA_OPTS="$JAVA_OPTS -Djboss.modules.system.pkgs=$JBOSS_MODULES_SYSTEM_PKGS -Djava.awt.headless=true"
+    JAVA_OPTS="$JAVA_OPTS -Djava.util.logging.manager=org.jboss.logmanager.LogManager -Xbootclasspath/p:/home/vagrant/EAP-7.0.0/modules/system/layers/base/org/jboss/logmanager/main/jboss-logmanager-2.0.3.Final-redhat-1.jar"
+else
+    echo "JAVA_OPTS already set in environment; overriding default settings with values: $JAVA_OPTS"
+fi
+```

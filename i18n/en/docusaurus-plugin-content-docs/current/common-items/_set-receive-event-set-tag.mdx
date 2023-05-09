@@ -1,0 +1,38 @@
+## Setting notifications by team and user
+
+Set whether or not to receive notifications for specific members or teams among project members. For event settings of **_Metrics_**, **_Anomaly Detection_**, and **_Log_**, add tags in **_Event Receiving Tag_**. You can select members or teams to receive alerts for each event.
+
+On the contrary, if you do not set any event reception tag, you can send alerts to all members.
+
+<details>
+<summary>Event Receiving Tag Example</summary>
+
+Let's learn how to send the alerts for each team or user through the event reception tag example. Set different alerts to be sent by team as follows:
+
+| Notification types             | Whether or not to receive by the server team | Whether or not to receive by the DevOps team |
+| ------------------------------ | :------------------------------------------: | :------------------------------------------: |
+| Metrics alert                  |        <span class='emoji-ok'>✅</span>       |        <span class='emoji-no'>❌</span>       |
+| Anomaly detection alert        |        <span class='emoji-ok'>✅</span>       |        <span class='emoji-ok'>✅</span>       |
+| Log real-time alert            |        <span class='emoji-no'>❌</span>       |        <span class='emoji-ok'>✅</span>       |
+
+1.  **Setting up receiving events** (**_Alert_** > **_Notification Setting_**)
+
+  ![Event Notification Settings Per-User](/img/set-event-tag.png)
+
+  Among project members, for the members in the server team, set the event reception tag to `Sever Team`. For the members in the DevOps team, set to `DevOps Team`.
+
+1.  **Metrics Alert Settings** (**_Alert_** > **_Event Setting_** > **_Metrics_** > **_+ Add alert policy_** > **_Notification Setting_**)
+
+  ![Metrics Alert Settings](https://img.whatap.io/media/images/reception_tag_002_metric_event_with_tag.png)
+
+  Click **_+ Add Tag_** or **_+_**. Select a tag from the tag list or create a new tag. This is the case that the notification of metrics events has been set to `Server Team`.
+
+1.  **_Realtime Log Alert Settings_** (**_Alert_** > **_Event Setting_** > **_Log_** > **_+ Add alert policy_** > **_Event Receiving Tag_**)
+
+  ![Realtime Log Alert Settings](https://img.whatap.io/media/images/reception_tag_004_tag_devops.png)
+
+  Click **_+ Add Tag_** or **_+_**. Select a tag from the tag list or create a new tag. This is the case that the notification of log events has been set to `DevOps Team`.
+
+1.  Because the anomaly detection event sends alerts to all members, no tag is set to receive the event.
+
+</details>

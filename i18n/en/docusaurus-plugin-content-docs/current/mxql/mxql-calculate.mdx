@@ -1,0 +1,586 @@
+---
+id: mxql-calculate
+title: Processing the metrics
+description: Let's learn about the commands that process metrics with the MXQL syntax.
+toc_max_heading_level: 2
+tags:
+  - MXQL
+  - Processing the metrics
+---
+
+Let's learn about the commands that process metrics with the MXQL syntax. The metrics processing step performs each step by the retrieved data. Therefore, the input order of the **_commands_** included in this step is important.
+
+| Command                      | Function                                                                                |
+| ---------------------------- | --------------------------------------------------------------------------------------- |
+| [ROWNUM](#rownum)            | Adds a line number field.                                                               |
+| [SELECT](#select)            | Selects a field. The fields that are not selected are not retrieved.                    |
+| [CREATE](#create)            | Adds a field.                                                                           |
+| [DELETE](#delete)            | Deletes a field.                                                                        |
+| [RENAME](#rename)            | Changes the field name.                                                                 |
+| [GROUP](#group)              | The data is grouped.                                                                    |
+| [ORDER](#order)              | The data is aligned.                                                                    |
+| [JOIN](#join)                | It is used when adding the data retrieved from other MQL to this data column by column. |
+| [UPDATE](#update)            | Processes and refines data.                                                             |
+| [LIMIT](#limit)              | Limits the number of data extracted.                                                    |
+| [SKIP](#skip)                | Ignores some data that is retrieved at that location.                                   |
+| [FILTER-KEYS](#filter-keys)  | Extracts only the data with specific content.                                           |
+| [FIRST-ONLY](#first-only)    | Only the first data is passed and the rest is discarded.                                |
+| [TIME-FILTER](#time-filter)  | Used to skip data in a specific time.                                                   |
+| [INJECT](#inject)            | Adds MXQL queries to that location.                                                     |
+| [ADJUST](#adjust)            | Used to change the value of a numeric field.                                            |
+| [FILTER](#filter)            | Only the data with specific conditions is passed to the next step.                      |
+
+## ROWNUM {#rownum}
+
+Adds a line number field.
+
+```sql title='예시'
+CATEGORY agent_list
+FLEXLOAD
+ROWNUM
+```
+
+## SELECT {#select}
+
+Select a field. Fields that are not selected are not passed to the next step. 
+
+| Option name | Option function                                                             |
+| ----------- | --------------------------------------------------------------------------- |
+| default     | Regardless of `like` or `notlike`, specify the desired fields to search.    |
+| like        | Retrieves only the fields that have the set value as a substring.           |
+| notlike     | Retrieves only the fields that have no set value as a substring.            |
+
+-   1 when all fields are selected (`SELECT` command, when all operands are not entered)
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    ```
+
+-   2 when all fields are selected (`SELECT` command, when all operands are not entered)
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ```
+
+-   When setting the field name to search, use the string array operands.
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode]
+    ```
+
+-   In case the value of the field to be set by `default` is single and the `like` option is used
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT {default:time, like:_m}
+    ```
+
+-   If the fields to be set by `default` are multiple and the `like` option is used
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT {default:[time,name], like:_m}
+    ```
+
+-   If both `like` and `notlike` need to be used, enter the `SELECT` command in two separate steps.
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT {default:[time,name], like:name}
+    SELECT {notlike:pname}
+    ```
+
+:::caution
+
+-   To select all fields, do not enter any operand. 
+-   `like` and `notlike` cannot be set at a time. It needs to be divided in `SELECT` for setting.
+:::
+
+:::note
+The `SELECT` command is also used when changing the field sequences. 
+:::
+
+## CREATE{#create}
+
+Adds a field.
+
+| Option name | Option function                                                                                                                        |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| value       | Creates the field with a specific value.                                                                                               |
+| from        | Creates the field with the set field value.                                                                                            |
+| expr        | It creates a field whose value is the result of the expression entered. The field name can be used in the expression.                  |
+| oname       | By setting the name of the `oid` column, it creates a column with the value of `oname` that corresponds to the value of `oid`.         |
+| okind       | By setting the name of the `okid` column, it creates a column with the value of `okind name` that corresponds to the value of `okid`.  |
+| onode       | By setting the name of the `onode` column, it creates a column with the value of `onode name` that corresponds to the value of `onid`. |
+
+-   In case of setting the `value` property
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    CREATE {key:active$, value:'#'}
+    ```
+
+-   In case of setting the `from` property
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    CREATE {key:_id_, from:okind }
+    ```
+
+-   In case of setting the `expr` property
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated*0.5))/apdex_total " }
+    ```
+
+-   In case of setting the `okind` property
+    ```sql
+    CATEGORY agent_list
+    FLEXLOAD
+    CREATE { key : my_okind_name, okind : okind}
+    SELECT [ time, okind, okindName, my_okind_name]
+    ```
+
+## DELETE{#delete}
+
+Deletes a field.
+
+```sql title='예시'
+CATEGORY app_counter
+TAGLOAD
+DELETE [pcode]
+```
+
+:::caution
+Be sure to enter it as a string array. `DELETE` `pcode` does not work. (as of 2021-06-23)
+:::
+
+## RENAME{#rename}
+
+Changes the field name.
+
+-   Change the name of the `pcode` field to `my_pcode`.
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    RENAME { src : pcode, dst : my_pcode }
+    ```
+
+:::caution
+`time` is the top priority sorting criterion in `ORDER`. Accordingly, if you change the name of `time`, [ORDER](#order) may not work.
+:::
+
+## GROUP{#group}
+
+The data is grouped.
+
+| Option name      | Option function                                                                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| timeunit         | Set the time criterion to divide into groups.                                                                                                                                                          |
+| pk or primaryKey | Set the `primaryKey` of the group.                                                                                                                                                                     |
+| last             | Set to save the last one of the entered values of the column. Use it when the same value is repeatedly entered such as `oname`. The internally set value is continuously overwritten on the key value. |
+| listup           | Set to save all data of the set column in memory. Internally, values are continuously added to the list that has the set value as a key.                                                               |
+| user             | Option to count the real-time users. Only the columns that store Blob type data can be set (e.g. `app_user` category's `logbits`).                                                                     |
+| merge            | Set to save all data of the set column in MetricValue (composite value). Internally, values are continuously added to the MetricValue that has the set value as the key.                               |
+| rows             | Set the maximum number of data that can be stored in a group. The default value is `1000`.                                                                                                             |
+
+-   For the set field, it sets it with `merge` to MetricValue and then performs the sum operation.
+
+    ```
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
+    GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
+    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+    ```
+
+:::note
+The `merge` field must be set separately. However, if the `last`, `merge`, and `listup` properties are all specified, all `number` fields are selected as the `merge` field, and the fields other than `number` are selected as the `last` field.
+:::
+
+:::caution
+만약 레코드에 `time` 필드가 없으면 전체를 그룹핑합니다. 
+
+-   Before executing the `GROUP` command, the `time` field has not been set with the `SELECT` command.
+-   The name of the `time` field has been changed with the `RENAME` command.
+-   The `time` field has been deleted with the `DELETE` command. 
+:::
+
+## UPDATE{#update}
+
+It changes the data of the field. You can select an operation for the fields that are in the MetricValue state.
+
+| Option   | Function                                                                                                                                      |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| sum      | Adds the values in MetricValue.                                                                                                               |
+| min      | Returns the minimum of the values in MetricValue.                                                                                             |
+| max      | Returns the maximum of the values in MetricValue.                                                                                             |
+| last     | Returns the last added one of the values in MetricValue.                                                                                      |
+| avg      | Returns the average for the values in MetricValue.                                                                                            |
+| cnt      | Returns the number of the values in MetricValue.                                                                                              |
+| datetime | Changes the time format.                                                                                                                      |
+| timezone | Sets the standard for the time data.                                                                                                          |
+| notnull  | If the value of the set column is `null`, set the `default` value to apply.                                                                   |
+| pct      | While executing the `GROUP` command, if all field values are listed for `percentile`, you can change the `percentile` value to a field value. |
+| decimal  | You can format numeric data in the fields.                                                                                                    |
+
+You can modify data values by setting the following options.
+
+-   In case of setting the `value` option
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode,pname, tps]
+    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+    UPDATE {key:tps, value:sum}
+    ```
+
+-   If the `datetime` and `timezone` options are set, `CREATE {key:localtime, from:time}` copies the value in the `time` field as a value of `long` type.
+
+    ```sql
+    CATEGORY app_user
+    TAGLOAD
+    SELECT [time, pcode, pname, logbits]
+    CREATE {key:localtime, from:time}
+    UPDATE {key:localtime, datetime:'yyyyMMdd HH:mm:ss', timezone: GMT9}
+    ```
+
+-   In case of setting the `notnull` option
+
+    ```sql
+    UPDATE {key:tps, notnull:0}
+    ```
+
+-   In case of setting `pct`
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [ time, pcode, tx_count ]
+    GROUP { key : pcode, listup : tx_count}
+    UPDATE { key : tx_count, pct : 90}
+    ```
+
+-   In case of setting the `decimal` option
+
+    ```sql
+    CATEGORY app_counter 
+    TAGLOAD 
+    SELECT [ time, oname, apdex_satisfied, apdex_tolerated, apdex_total]  
+    GROUP  { timeunit:5m, pk:oname}
+    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated/2.0))/apdex_total " } 
+    UPDATE { key:time, datetime:'yyyyMMdd HH:mm:ss', timezone:'GMT9'}
+    UPDATE { key:apdex, decimal:'0.000'} 
+    ROWNUM
+    ```
+
+:::caution
+
+-   `{datetime:'yyyyMMdd HH:mm:ss'}` contains colon (:), so it must be enclosed in single quotation marks ('') or double quotation marks ("").
+-   `pct: 90` indicates that the 90%th value is selected. However, the field must have been set as the `listup` field when executing the `GROUP` command. 
+-   Its format is [Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html).
+:::
+
+## ORDER{#order}
+
+The data is aligned. 
+
+| Option | Function                                                                   |
+| ------ | -------------------------------------------------------------------------- |
+| key    | Select a field for sorting.                                                |
+| sort   | Set the sorting direction. (asc or desc)                                   |
+| rows   | Set the maximum number of data with the same time to keep. Default `10000` |
+
+-   In case of setting `key`, `sort`, and `rows`
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pname, host_ip, pid, httpc_count]
+    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:2}
+    ```
+
+-   In case of sorting by dividing into two
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pname, host_ip, pid, httpc_count]
+    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:1000}
+    ORDER  {key:tps, sort:desc}
+    ```
+
+:::caution
+If the data contains the `time` field, `time` becomes the top priority for sorting, even if the key of `ORDER` does not include `time`.
+:::
+
+## JOIN{#join}
+
+Before introducing the `JOIN` command, let's understand the concept of the command. The command, join is used to check the merged results of two query statements. At this time, the data to merge the results of the two queries based on which field must be passed, and this field is called `pk` or `primaryKey`.  
+
+![](https://img.whatap.io/media/images/mxql-11.png)
+
+![](https://img.whatap.io/media/images/mxql-12.png)
+
+![](https://img.whatap.io/media/images/mxql-13.png)
+
+**Table 1** and **Table 2** display the query results. The `file_name_4` field set as `pk` appears in blue. **Table 3** displays the results of the two queries merged based on `file_name_4` that has been set as `pk`.  
+
+Data retrieved from both MXQLs can be merged for a view. `RENAME` and `INJECT` commands are interim steps to process the `JOIN` command, and they do not affect the join operation. 
+
+-   First query: CATEGORY agent_list FLEXLOAD 
+-   Second query: /app/act_tx/act_tx_oid
+
+```sql
+CATEGORY agent_list
+FLEXLOAD
+JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8, act] }
+RENAME {src:[act0, act3, act8, act], dst:[normal, slow, verySlow, total]}
+INJECT default
+```
+
+The example of a sample query result is as follows:
+
+![](https://img.whatap.io/media/images/mxql-14.png)
+
+:::note
+All data to be saved in Yard has the values for `time` and `oid`. This indicates the data has been collected at the time of (`time`) and from which agent (`oid`). These fields can be used as `pk`.
+:::
+
+:::caution
+
+-   The first query used in the `JOIN` command is a custom MXQL query, and the second query allows only the [query that can be set as path](mxql-guide#custom-mxql). 
+-   You can `JOIN` three or more categories by registering all MXQL queries using the `JOIN` command as a file in Yard. 
+:::
+
+## LIMIT{#limit}
+
+It limits the number of data extracted. The data as many as the number set earlier is passed to the next step.
+
+The first extracted three data are output.
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+LIMIT 3
+```
+
+## SKIP{#skip}
+
+It ignores some data passed from the previous step.
+
+Data from first to 5th are excluded and the data from 6th to 10th are displayed. 
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+SKIP 5
+LIMIT 10
+```
+
+## FILTER-KEYS{#filter-keys}
+
+Extracts only the data with specific content.
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FILTERKEYS {keys: [oid], values: [497765289]}
+```
+
+:::caution
+`keys` and `values`, not `key` and `value`. Be sure to note the plural form -s.
+:::
+
+## FIRST-ONLY{#first-only}
+
+Only the first data with a specific value (pair) is passed to the next step.
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FIRST-ONLY {key:oid}
+```
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FIRST-ONLY {key: [httpc_count, type]}
+SELECT [httpc_count, type]
+```
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+FIRST-ONLY [httpc_count, type]
+SELECT [httpc_count, type]
+```
+
+:::caution
+If `{backward : true}` is used in the data loading step, the result of this command may differ.
+:::
+
+## TIME-FILTER{#time-filter}
+
+Used to skip data in a specific time.
+
+| Option          | Function                                                                                                                           |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| time            | Set to `yyyy/MM/dd HH:mm:ss`. Set the set time reference: `duration:1000`. (excluding the data for 1,000 ms based on the set time) |
+| date            | Set to `yyyy/MM/dd`. Set the set time reference: `duration:d1`. (excluding the data for a day based on the set time)               |
+| duration or dur | Set the filtering range. (`d1`: 1 day, `h1`: 1 hour, `m1`, `m5`, `m10`: 1 minute, 5 minutes, 10 minutes, `number`: millisec)       |
+| timezone        | Set the data time zone. (e.g. '`GMT9`')                                                                                            |
+| gmt             | Set the data time zone. (e.g. `9` or `-9`)                                                                                         |
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+TIME-FILTER { date:'2020/07/28' , timezone:'GMT9'}
+```
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+TIME-FILTER {time:'2021/06/22 00:00:00', gmt:9 }
+```
+
+## INJECT{#inject}
+
+Adds MXQL queries to that location.
+
+In `default`, the MXQL query to be injected must be delivered. 
+
+```sql
+CATEGORY app_counter
+TAGLOAD
+SELECT
+INJECT default
+ROWNUM
+```
+
+:::caution
+프론트 단에서 `INJECT` 명령어의 오퍼랜드에 맵핑될 정보를 전달해주어야 합니다. 다음 예제는 키가 `default`로 설정된 값을 추가합니다.
+
+Example of the passing INJECT value in **_Sitemap_** > **_MXQL Executor_**
+
+![](https://img.whatap.io/media/images/mxql-example-5.png)
+:::
+
+## ADJUST{#adjust}
+
+It is used to change the value of a numeric field. (`time` value cannot be changed.)
+
+| Option name | Option function                              |
+| ----------- | -------------------------------------------- |
+| add         | Adds the value to all numeric data.          |
+| sub         | Subtracts the value from all numeric data.   |
+| mul         | Multiplies the value to all numeric data.    |
+| div         | Divides all numeric data by the value.       |
+| over        | Sets the minimum value for all numeric data. |
+| under       | Sets the maximum value for all numeric data. |
+
+-   In case of setting `mul`
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ADJUST {mul : 100}
+    ```
+
+-   In case of setting `over`
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ADJUST { key:[rate], over:30}
+    ```
+
+    ![](https://img.whatap.io/media/images/mxql-9.png)
+
+-   In case of setting `under`
+
+    ```sql
+    ADJUST { key:[rate], under:30}
+    ```
+
+    ![](https://img.whatap.io/media/images/mxql-10.png)
+
+## FILTER{#filter}
+
+Only the data with specific conditions is passed to the next step.
+
+| Option name | Option function                                                                |
+| ----------- | ------------------------------------------------------------------------------ |
+| expr        | Enter the condition as a formula.                                              |
+| value       | Searches data with a specific value.                                           |
+| exist       | Searches data with the value.                                                  |
+| notexist    | Searches data without the value.                                               |
+| over        | Searches data equal to or greater than a specific value. (greater or equal to) |
+| under       | Searches data less than or equal to a specific value (less or equal to).       |
+
+-   In case of applying the `expr` option
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER {expr : "tx_count != 0"}
+    ```
+
+-   In case of applying the `value` option
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, value : 5}
+    ```
+
+-   In case of applying the `exist` option
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, exist : true}
+    ```
+
+-   In case of applying the `exist` option
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, notexist : true}
+    ```
+
+-   In case of applying the `under` option
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    FILTER { key : tx_count, under : 6}
+    ```
+
+:::caution
+
+-   A case where the data is 0 is also a case where the data exists. It is applied to `{exist: true}`.
+-   `{exist : false}` and `{notexist : false}` are impossible. Be sure to use `{notexist : true}` and `{exist : true}`.
+:::

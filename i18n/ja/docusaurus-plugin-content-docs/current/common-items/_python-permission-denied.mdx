@@ -1,0 +1,12 @@
+## Permission deniedエラー
+
+WhaTap Pythonモニタリングを使用するには**読み取りおよび書き込み**権限が必要です。 
+
+-   _$WHATAP_HOME/whatap.conf_WhaTap設定ファイルの**読み取りおよび書き込み**権限
+-   _$WHATAP_HOME/logs_WhaTapログディレクトリと下位ファイルの**読み取りおよび書き込み**権限
+
+権限問題（Permission denied error）が発生すると、次のように`$WHATAP_HOME`に権限を与えてください。
+
+```bash
+$ echo `sudo chmod -R 777 $WHATAP_HOME`
+```

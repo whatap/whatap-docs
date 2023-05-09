@@ -1,0 +1,93 @@
+You can arbitrarily collect the logs. The following configuration requires restart of the agent.
+
+### Linux Shell
+
+```bash title='Linux Shell' {7-12,14,15} showLineNumbers
+cd /usr/whatap/infra
+sudo mkdir extension
+
+cat >extension/logsink.conf<<EOL
+[[inputs.logsink]]
+  category = "serverlog"
+  ## Whether or not to send the data with separate log generation statistics
+  stats_enabled = true 
+  ## Category for log generation statistics
+  stats_category = "logsink_stats"
+  ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
+  excludeNames = [ ".gz",".zip" ] 
+  [[inputs.logsink.file]]
+    ## When setting a log file, you can set the date pattern (strftime.org).
+    path = "/some/path/%Y-%m-%d/.log" 
+    disabled = false
+    encoding = "euc-kr"
+
+  [[inputs.logsink.file]]
+    path = "/some/other/log"
+    disabled = false
+    encoding = "utf-8"
+EOL
+
+sudo service whatap-infra restart
+```
+
+### Windows Powershell
+
+```bash title='Windows Powershell (관리자 권한)' {6-11,13,14} showLineNumbers
+New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
+
+$contentToAdd = @"
+[[inputs.logsink]]
+category = "serverlog"
+## Whether or not to send the data with separate log generation statistics
+stats_enabled = true 
+## Category for log generation statistics
+stats_category = "logsink_stats"
+## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
+excludeNames = [ ".gz",".zip" ] 
+[[inputs.logsink.file]]
+## When setting a log file, you can set the date pattern
+path = "c:\\whatap\\logs%Y-%m-%d_.log"
+disabled = false
+encoding = "euc-kr"
+
+"@
+
+New-Item -path "C:\Program Files\WhatapInfra\extension" -name "logsink.conf" -type "file" -value $contentToAdd -Force
+
+Restart-Service "Whatap Infra"
+```
+
+### Configuring options
+
+-   `stats_enabled`: Set whether or not to collect the collection status data. The default value is `false`. The value must be set to `true`. If set to `true`, statistical data is generated in the category (`logsink_stats`) set in the following `stats_category`.
+
+-   `stats_category`: Set the metrics category to store the collection status data in. The value must be set to `logsink_stats`. Statistical data fields are as follows:
+
+    -   `file`
+    -   `checkInterval`
+    -   `encoding`
+    -   `filepos`
+    -   `checkedLocalTime`
+    -   `lastupdatedLocalTime`
+    -   `fileSize`
+    -   `error`
+    -   `firstCheck`
+    -   `transferBytes`
+
+-   `excludeNames`: By including asterisks (\*) in the log file path, you can set the file name to exclude non log files. You can set multiple values using comma (,) as the delimiter.
+
+    ```ini title='예시'
+    excludeNames = [ ".gz",".zip" ]
+    ```
+
+<!-- 
+
+0214 로그 모니터링 요청-추가 업데이트
+
+stats_enabled = false ## 로그 발생량 통계 별도 데이터로 전송 여부
+stats_category = "serverlog_stats" ## 로그 발생량 통계 카테고리
+
+* `stats_enabled`: 별도의 로그 수집 통계 데이터 발생 여부를 설정합니다. 기본값은 `false`입니다. 값을 `true`로 설정하면 `stats_category`에서 설정한 카테고리로 통계 데이터가 발생합니다.
+* `stats_category`: 별도의 로그 수집 통계 데이터를 저장할 메트릭스 카테고리를 설정합니다. 통계 데이터 필드는 다음과 같습니다.
+
+-->

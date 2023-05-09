@@ -1,0 +1,62 @@
+---
+id: php-2.4.0
+title: PHP Agent 2.4.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2021-12-16
+
+## Change (update)
+
+### PHP 8.1
+
+PHP 8.1 is supported.
+
+## Fixed (bug fixing)
+
+### cURL header setting data initialization error
+
+`curl_setopt`, `curl_setopt_array` 함수를 통해 HTTP Header 설정(CURLOPT_HTTPHEADER)을 하는 경우, 중복 설정이 되면 이전 정보는 초기화 되고 새로운 정보만 설정됩니다. 
+
+멀티 트랜잭션(`whatap.mtrace_enabled=true`) 설정이 활성화 되면, `curl_exec()` 함수 전에 WhaTap Header 정보를 설정해서 이전 사용자 Header 정보가 초기화 되는 오류가 있습니다. 
+
+`curl_exec()` 함수 호출 전에 WhaTap Header를 설정하는 기능을 삭제 하고 `curl_init()` 함수 호출 후에 설정하도록 수정했습니다. 
+
+`curl_exec()` 함수 호출 전에 사용자 Header를 설정하는 경우 먼저 설정된 WhatTap Header 가 삭제 됩니다. 
+
+To do multi-transaction, add the WhatTap header directly in the PHP source code according to the following guide. 
+
+Sample source code /usr/whatap/php/lib/Whatap/sample_mtrace.php
+
+```php title='php'
+// Whatap 설치 디렉터리(/usr/whatap/php/lib/Whatap/Whatap.php)  
+// Whatap.php 를 로딩합니다. 
+include_once './Whatap.php';
+
+...
+
+// 사용자 헤더 정보
+$headers = array();
+array_push($headers, "aaaa:bbbb");
+
+// Whatap 헤더 추가 
+$whatap_mtrace = Whatap::whatap_get_mtrace();
+foreach ($whatap_mtrace as $key => $value){
+	//echo $key."=".$value."<br/>";
+	array_push($headers, "$key:$value");
+}
+unset($value);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+...
+```
+
+You can adjust the automatic setup function with the following settings: 
+
+`whatap.mtrace_auto_inject_enabled=true`  
+
+-   `curl_init()` 함수 호출 후 내부적으로 `curl_setopt()`를 호출하면서 whatap header를 설정합니다.
+-   `false`: WhaTap Header 자동 설정기능을 중지합니다. 

@@ -1,0 +1,109 @@
+---
+id: agent-settings
+title: Configuration
+description: Let's learn about the agent configuration method.
+tags:
+  - MySQL RDS
+  - Database
+  - Database Monitoring
+---
+
+In MySQL RDS, unlike the existing [MySQL product](../mysql/agent-settings), the agent is located in the WhaTap resources. Accordingly, it can be set directly on the WhaTap monitoring service screen. Select a project on Home screen, and then select **_Management_** > **_Agent CONFIG._**. You can set the agent options.
+
+:::note
+
+In **_Agent CONFIG._**, only members with the **Edit** role can set options.
+
+:::
+
+## Adding options
+
+![Agent configuration](/img/mysql-rds-agent-settings.png)
+
+1.  In **_Agent List_**, select an agent to change the agent settings in.
+
+2.  In **_Write Options_**, select **_Select Option_**.
+
+3.  Select a desired option.
+
+    To add any option, click **_Add_** and then select the following option.
+
+4.  Select **_Apply_** on the upper right of the screen. 
+
+Restart the agent to apply the changes.
+
+:::note
+
+To delete the added option, select ![Delete icon](/img/ico-trash.svg) next to the option.
+
+:::
+
+## Agent CONFIG. option{#agent-option}
+
+It is the description of the option that can be set on the agent that collects data from the database server. 
+
+-   **deadlock_interval** <span class='type'>Int</span>
+
+    Default `60`
+
+    Set the interval (unit: minute) to fetch the deadlock data. For deadlock information, only the latest deadlock information that occurred during the set interval is retrieved.
+
+-   **tables_hour** <span class='type'>Int</span>
+
+    Default `20`
+
+    Set the collection time (based on UTC) to store the table data. By default, it is collected at 20:00 UTC that is 5:00 AM in Korea.
+
+-   **tables_min_row** <span class='type'>Int</span>
+
+    Default `10000`
+
+    When collecting the table information, table data with the number of rows smaller than the set value is not collected.
+
+-   **replication_name** <span class='type'>String</span>
+
+    If you set the replication name, it is considered that there is a Master/Slave relationship between DBs with the same `replication_name`.
+
+-   **skip_whatap_session** <span class='type'>Int</span>
+
+    Default `0`
+
+    If you set `1`, the session in which the query to collect from WhaTap operates, does not appear in the active session list. (Default value: 0)
+
+-   **skip_sys_session** <span class='type'>Int</span>
+
+    Default `1`
+
+    If set to `2`, the sys sessions (root, system user, event_scheduler) are not visible in the active session. The set value, `1` makes sys sessions visible, but excludes them from the total runtime.
+
+### Sharing the agent settings
+
+Agent settings can be saved as a json file, and the file can be loaded and applied to other agents.
+
+1.  In the **_agent list_**, select an agent to export the settings to a json file.
+
+2.  On the upper right of the screen, select ![Export icon](/img/ico-export.svg). 
+
+3.  Download the json file.
+
+4.  In **_Agent List_**, select other agents. 
+
+5.  On the upper right of the screen, select ![Import icon](/img/ico-import.svg).
+
+Check the agent settings fetched from the json file.
+
+## Initialization
+
+To add options or reset changes, select ![Refresh icon](/img/ico-refresh.svg) on the upper right of the screen.
+
+## Agent list filtering
+
+If you have many agents connected to your project, you can find the desired agent by selecting Search or sorting method in **_Agent List_**.
+
+-   In **_Agent Search_**, enter the name of the desired agent. It automatically updates the list of agents matching the entered text.
+
+-   To check only the list of agents connected to the DB, select the checkbox of **_Active Agents_**. 
+
+-   Select **_Select Column_** to sort the list of agents by name, port, agent version, etc. The list of agents is sorted by the selected column. Select a table header to change the sorting order.
+
+-   To reset the criteria set above, select ![Refresh icon](/img/ico-refresh.svg) next to **_Agent List_**.

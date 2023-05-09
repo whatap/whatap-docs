@@ -1,0 +1,68 @@
+---
+id: container-status
+title: Container map metrics and status
+description: You can check the status of containers or pods according to the properties of the chart provided by the container map menu.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+---
+
+## Customizing the chart metrics
+
+The property of the default chart provided by the WhaTap Kubernetes monitoring service's **_Container Map_** menu is the state of container or pod. The metric name is **_ConState_** (Container State). However, it is required to construct the map based on the criteria other than the default state. For example, it may be required to determine the states of each target based on the CPU usage (millicore), memory usage (%), network usage (byte), and such rather than the default state.
+
+WhaTap provides the function to change the container's chart metrics. Changeable chart metrics values are the same ones that WhaTap Kubernetes collects.
+
+![Customizable chart metrics list](https://img.whatap.io/media/images/whatap_kubernetes_container_map_state_customization.png)
+
+{@include: ../common-items/_container-note-reset.mdx} 
+
+## Metrics threshold settings and state colors
+
+The states of each target can be classified by color by setting the threshold values of the metrics given to the targets. Thresholds can be set when the units of metrics are for numbers (pct, bps, millicore).
+
+The colors and meanings for states such as <span class='normal'>Normal</span>, <span class='slow'>Warning</span>, <span class='vslow'>Critical</span>, and such are as follows:
+
+![Target status color](/img/container-map-status-color.png)
+
+| Status                              | Description                                                                             |
+| ----------------------------------- | --------------------------------------------------------------------------------------- |
+| <span class='normal'>Normal</span>  | Displays the normal section (three divisions under Warning).                            |
+| <span class='slow'>Warning</span>   | Indicates that it is within the warning threshold range (between Warning and Critical). |
+| <span class='vslow'>Critical</span> | Indicates that it is within the critical threshold range (above Critical)               |
+| Dead                                | Container exit state                                                                    |
+| Wait                                | Container startup state                                                                 |
+| Pause                               | Container's suspended state                                                             |
+
+## Event-based container state
+
+In **_Container Map_**, the container view provides a state value called `EventConState`. `EventConState` is the `event-based container state`, which represents the container state where the event is reflected. The event types reflected to `EventConState` are as follows:
+
+| Event            | Level                                                                  |
+| ---------------- | ---------------------------------------------------------------------- |
+| Kubernetes Event | <span class='slow'>Warning</span>                                      |
+| WhaTap Event     | <span class='slow'>Warning</span>, <span class='vslow'>Critical</span> |
+
+-   `Kubernetes Event` is the event data provided by Kubernetes. It is the same as the event data that can be found in the user's Kubernetes environment through the `kubectl get events` command.
+-   `WhaTap Event` is set through the WhaTap event function.
+
+`EventConState` is determined by the following methods:
+
+| Status                              | State value | Cause                                                                                                                                                              |
+| ----------------------------------- | :---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <span class='vslow'>Critical</span> |      50     | Critical event caused by the WhaTap microagent<br/>Critical event caused by the WhaTap node agent<br/>Toggle container state OOMKILLED                             |
+| <span class='slow'>Warning</span>   |      30     | Warning event caused by Kubernetes<br/>WhaTap microagent-caused Warning event<br/>WhaTap node agent-caused Warning event<br/>Container state RESTARTING transition |
+| Dead                                |      23     | Transition of the container state to DEAD                                                                                                                          |
+| Pause                               |      22     | Transition of the container state to PAUSE                                                                                                                         |
+| Waiting                             |      21     | Transition of the container state to WAITING                                                                                                                       |
+| <span class='normal'>Normal</span>  |      10     | Transition of the container state to Normal                                                                                                                        |
+
+Among Whatap events, there are events where you have set "Notify when event status is resolved." Internally, two types of events are distinguished as follows:
+
+-   Events that do not trace the state resolution: `stateless` events
+-   Events that set additional notifications when the state is resolved: `stateful` events
+
+The `stateless` and `stateful` events generated by the container are used to determine the `EventConState` state as follows: 
+
+-   `stateless` events: Reflects `stateless` events that occurred in the container within the last minute to the `EventConState` state.
+-   `stateful` events: Reflects `stateful` events from occurrence to termination to the `EventConState` state.

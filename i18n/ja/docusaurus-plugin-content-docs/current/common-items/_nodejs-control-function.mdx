@@ -1,0 +1,27 @@
+-   **whatap.enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>全体機能を活性化します。 ただ、`false`になっても、サーバーと最小限の通信を維持するための情報は送信します。
+
+-   **transaction_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>トランザクション追跡機能を活性化します。`whatap.enabled`オプションの値が`false`なら無視します。
+
+-   **counter_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>性能カウンター（トランザクション、リソースなど）追跡を活性化します。`whatap.enabled`オプションの値が`false`なら無視します。
+
+-   **stat_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>統計情報の追跡機能を活性化します。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。`whatap.enabled`オプションの値が`false`なら無視します。
+
+-   **license**<span class='type'>String</span><br/>
+    エージェントのインストール時にサーバーから与えられたアクセスキーを入力します。アクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
+
+-   **encrypt_level**<span class='type'>encrypt_level[1,2,3]</span><br/>
+    デフォルト値`2`<br/>
+    WhaTapエージェントは、サーバーにデータを送信する際にデータ属性に基づいて選択的に暗号化します。高いセキュリティを維持しながらも、パフォーマンス上の利点を持っています。データタイプに関係なく、一括した暗号化ポリシーを適用するには、次のオプションを参照してください。<br/>
+    -   `1`：暗号化転送機能の未使用
+    -   `2`：SQLパラメータ、Plain Textのような敏感な属性に対する暗号化転送
+    -   `3`：すべての項目に対する暗号化転送
+
+-   **realtime_user_thinktime_max**<span class='type'>MiliSeconds</span><br/>
+    デフォルト値`300000`<br/>リアルタイムブラウザのユーザー数を測定する場合、同一ユーザーとして認められる呼び出し間隔の最大値を設定します。
+
+-   **time_sync_interval_ms** <span class='type'>MiliSeconds</span><br/>
+    デフォルト値 `300000`<br/>エージェントとサーバー間の同期化する時間間隔を設定します。同期化しない場合は`0`に設定してください。

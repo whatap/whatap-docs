@@ -1,0 +1,181 @@
+---
+id: install-agent
+title: Installation of the Node.js agent
+description: The following explains how to install an agent on the application server in the Node.js environment.
+tags:
+  - Node.js
+---
+
+import TR from '@site/src/components/TR';
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: QXKweGBucjI}
+
+To use the Node.js monitoring service, the monitoring agent must be installed on the monitored application. For installation, use NPM (Node Package Manager).
+
+-   Install the WhaTap agent module in the active Node.js application directory.
+
+-   Write the configuration of WhaTap agent (_whatap.conf_).
+
+-   Run the Node.js service again.
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+## Downloading the agent
+
+1.  서비스 중인 Node.js 애플리케이션의 디렉터리 경로로 이동해 에이전트를 설치하세요.
+
+    ```bash
+    $ npm install --save whatap
+    ```
+
+2.  Copy the _whatap.conf_ file in the _node_modules/whatap_ path and paste it into the root path.
+
+3.  Go to the [WhaTap Monitoring Service](https://service.whatap.io).
+
+4.  생성한 프로젝트를 선택한 다음 **_설치 안내_** 섹션의 **_에이전트 다운로드_** 내용 중 다음 내용을 복사하세요.
+
+    ```ini title='예시'
+    license={액세스 키}
+    whatap.server.host={수집 서버 IP}
+    ```
+
+5.  Paste it into the _whatap.conf_ file.
+
+The host (`whatap.server.host`) address is the server address in which the WhaTap proxy has been installed. You can use a forward slash (/) as the delimiter to enter all addresses of the servers where the proxy server is running among the WhaTap servers.
+
+<details>
+<summary>Node.js agent configuration file</summary>
+
+The roles of each file that makes up the Node.js monitoring service are as follows:
+
+-   _whatap.conf_: 에이전트 설정 파일 샘플입니다. 해당 파일을 복사해서 액세스 키를 입력하세요.
+
+-   _lib_: Agent and tracer program
+
+-   _README.md_: Guide to the agent installation
+
+-   _package.json_: Configuration file for the NPM module environment
+
+-   _index.js_: Main export declaration file
+
+</details>
+
+## Using
+
+Add the following code to the first line of the application's main module. In case of the express module, the file is _app.js_ for example.
+
+```javascript title='Javascript'
+var whatap = require('whatap').NodeAgent;
+```
+
+ECMAScript(ES)를 활용한다면 다음 코드를 같이 추가하세요.
+
+```javascript title='ES'
+import WhatapAgent from 'whatap';
+WhatapAgent.NodeAgent;
+```
+
+다음 적용 예시를 참조하세요.
+
+```javascript
+var WhatapAgent = require('whatap').NodeAgent;
+import http from 'http';
+import setupApp from '../src/app';
+let server = null;
+const port = normalizePort(process.env.PORT || '3000');
+```
+
+:::note
+
+Because the agent executable code needs to be run first after starting node.js, it must be placed before the first `import`.
+
+:::
+
+After installation, see [the following](install-check) to make sure there is no problem.
+
+### 환경 별로 whatap.conf 파일을 구분해 사용하기
+
+다음의 경우에 해당한다면 .conf를 제외한 파일명을 설정해 주세요.
+
+-   환경 별로 프로젝트를 구분한 경우
+
+-   에이전트 옵션을 다르게 설정할 경우
+
+-   pm2에 의해 클러스터(Cluster) 모드로 기동할 경우
+
+```javascript
+process.env.WHATAP_CONF = 'whatapdev';
+process.env.WHATAP_NAME = 'NodeAgent-{ip2}-{ip3}-{cluster}';
+var WhatapAgent = require('whatap').NodeAgent;
+```
+
+:::note
+
+`WHATAP_NAME` 옵션으로 설정 가능한 인자는 다음과 같습니다.
+
+-   **ipN**: ip0, ip1, ip2, ip3
+
+-   **cluster**: cluster ID
+
+-   **pid**: process ID
+
+-   **hostname**: 호스트 이름
+
+:::
+
+### 에이전트 그룹 단위 기능 활용하기
+
+에이전트 그룹 단위 기능에는 그룹 토폴로지, 통합 토폴로지 등이 있으며, 다음 코드에서 `{그룹 식별자}` 부분을 에이전트 그룹명으로 대체하여 사용하세요.
+
+```javascript
+process.env.WHATAP_OKIND = '{group identifier}';
+var WhatapAgent = require('whatap').NodeAgent;
+```
+
+## PaaS application environment
+
+### Configuring the default environment variables
+
+When installing the agent in the PaaS application, all settings must be configured in the source file (_app.js_). The _whatap.conf_ file cannot be used.
+
+액세스 키(`WHATAP_LICENSE`)와 수집 서버 IP(`WHATAP_SERVER_HOST`)를 환경 변수로 설정하세요.
+
+```javascript title='app.js'
+process.env.WHATAP_LICENSE={액세스 키};
+process.env.WHATAP_SERVER_HOST={수집 서버 IP};
+var whatap=require('whatap').NodeAgent;
+...
+```
+
+### Options that can be configured as environment variables
+
+Because you cannot use the _whatap.conf_ file, set the WhaTap agent options as environment variables in the source file.
+
+```javascript title='app.js'
+process.env.profile_http_header_enabled=false;
+process.env.profile_http_parameter_enabled=false;
+
+process.env.profile_basetime=500;
+
+process.env.auto_oname_enabled=false;
+process.env.auto_oname_prefix='nodejs';
+
+process.env.mtrace_rate=0;
+process.env.mtrace_spec='v1';
+process.env.stat_mtrace_enabled=false;
+process.env.stat_domain_enabled=false;
+```
+
+:::note
+
+For more information about the options that can be set in Node.js, see [the following](set-agent).
+
+:::
+
+## Starting the monitoring
+
+애플리케이션 서버를 다시 시작하면 에이전트가 정보 수집을 시작합니다.

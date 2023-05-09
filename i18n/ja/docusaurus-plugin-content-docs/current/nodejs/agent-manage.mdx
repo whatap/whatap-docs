@@ -1,0 +1,41 @@
+---
+id: agent-manage
+title: 管理
+description: Node.jsエージェントをアップデートまたは削除する方法を説明します。
+tags:
+  - Node.js
+  - 管理
+  - 削除
+  - アップデート
+---
+
+## エージェントのアップデート
+
+アプリケーションを中断し、'npm'を使用してアップデートします。アップデートを進めてから、アプリケーションを再起動してください。
+
+```bash title='SH'
+$ npm update whatap
+```
+
+:::note
+특정 버전으로 다운로드를 하고자 하는 경우에는 다음과 같이 버전을 명시합니다.
+
+```bash title='SH'
+$ npm install whatap@{version}
+```
+
+:::
+
+## エージェント削除（中止）
+
+1.  ソース（例、app.js）に挿入したエージェントコードを削除してください。
+
+    ```javascript title='app.js'
+    var whatap=require('whatap').NodeAgent; // 削除
+    ```
+
+2.  アプリケーションを中断し、`npm`を利用してモジュールを削除してください。
+
+    ```bash title='SH'
+    $ npm uninstall whatap
+    ```

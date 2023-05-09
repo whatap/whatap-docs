@@ -1,0 +1,65 @@
+---
+id: agent-xcub-settings
+title: XCUBエージェント設定
+description: CUBRID DBモニタリングのためには、付加エージェントであるXCUBインストールを通じてsql_textと指標のデルタ計算のための情報を提供します。
+tags:
+  - CUBRID
+  - データベースモニタリング
+  - XCUBエージェント
+---
+
+**CUBRID** DBモニタリングのためには、付加エージェントであるXCUBのインストールをお勧めします。XCUBは、データベースサーバーにインストールする必要があり、`sql_text`と指標のデルタ計算のための情報を提供します。インストールおよび起動方法は、XOSエージェントと同じです。
+
+## whatap.confファイルの設定
+
+-   **xcub** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    XCUBエージェントを使用するかどうかを設定してください。値が`0`の場合、データを収集しません。値を`1`またはXCUBエージェントのIPアドレスを入力してください。IPアドレスを設定すると、そのXCUBエージェントからのみデータを収集します。
+
+## xcub.confファイルの設定
+
+データベースサーバーに_xcub.conf_ファイルを作成した後、エージェント サーバー情報を入力し、追加オプションを設定できます。
+
+-   **db** <span class='type'>String</span>
+
+    `dbname@dbサーバーIP`形式に設定してください。
+
+-   **dba_pwd** <span class='type'>String</span>
+
+    パスワードを設定すると、最初の実行時に_xcub.pwd_ファイルを作成します。以後_xcub.conf_ファイルでは `dba_pwd`項目を削除してください。  
+
+-   **dbx_ip** <span class='type'>String</span>
+
+    DBXエージェントをインストールしたサーバーのIPアドレスを入力してください。  
+
+-   **dbx_port** <span class='type'>String</span>
+
+    デフォルト値`3002`
+
+    DBXエージェントと通信するポートを設定してください。DBXエージェントとはUDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためファイアウォールを解除してください。
+
+    :::note
+
+    XOSエージェントをインストールした場合、XOSポートと一緒に使用するため、設定しなくても構いません。
+
+    :::  
+
+-   **sql_limit** <span class='type'>Int</span>
+
+    デフォルト値 `1024`
+
+    `sql_text`の**byte size limit**です。長いクエリを確認するには、値を増やして使用してください。
+
+## XCUBエージェント実行
+
+データベースサーバーで次のバッチファイルを実行してください。
+
+```bash title='start.sh'
+$ ./start.sh
+
+# または
+
+$ ./startd.sh #バックグラウンドで実行する場合
+```

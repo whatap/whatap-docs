@@ -1,0 +1,140 @@
+---
+id: mxql-loading
+title: Metrics loading
+description: Let's learn about the commands that load metrics with the MXQL syntax.
+toc_max_heading_level: 2
+tags:
+  - MXQL
+  - Metrics loading
+---
+
+Let's learn about the commands that load metrics with the MXQL syntax.
+
+| Command               | Function                                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------------------- |
+| [TAGLOAD](#tagload)   | It is used to search the data of the category that stores the collected data in the `tag-field` format. |
+| [FLEXLOAD](#flexload) | It is used to search the data of the category that stores the collected data in the `field` format.     |
+
+## TAGLOAD{#tagload}
+
+It is used to search the data of the category that stores the collected data in the `tag-field` format.
+
+| Option                                          | Function                                                                                        |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| {backward : true}                               | Loads data in reverse chronological order.                                                      |
+| {filter : {key:fieldName, value :fieldValue}}   | Extracts data where the value of the fieldName field is equal to fieldValue.                    |
+| {filter : {key:fieldName, exclude :fieldValue}} | Data is extracted while excluding the data whose fieldName value is equal to fieldValue.        |
+| {filter : {key:fieldName, like :fieldValue}}    | Extracts data where the value of the fieldName field has fieldValue as a substring.             |
+| {filter : {key:fieldName, notlike :fieldValue}} | Data is extracted while excluding the data whose fieldName value has fieldValue as a substring. |
+
+-   In case no options are set
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    ```
+
+-   In case the backward option is set
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD {backward : true}
+    ```
+
+-   In case the value filter is set
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD {filter : {key:pid, value:905}}
+    ```
+
+-   In case the exclude filter is set
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD {filter : {key:pid, exclude:905}}
+    ```
+
+-   In case of setting the like filter
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD {filter : {key:okindName, like:keeper}}
+    ```
+
+-   In case of setting the notlike filter
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD {filter : {key:okindName, notlike:keeper}}
+    ```
+
+-   In case of setting multiple filters
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'}, {key:'container', like:'gateway'}] }
+    ```
+
+:::caution
+
+-   `TAGLOAD` and `FLEXLOAD` have set values for `CATEGORY` that can be set respectively.
+-   When using the `filter-like` or `filter-notlike` option, if a number comes as a value, it must be enclosed in single quotation marks ('') or double quotation marks ("") for operation.
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
+    ```
+:::
+
+## FLEXLOAD{#flexload}
+
+It is used to search the data of the category that stores the collected data in the `field` format.
+
+| Option              | Function                                   |
+| ------------------- | ------------------------------------------ |
+| {backward : true}   | Loads data in reverse chronological order. |
+
+Data is loaded depending on the information set in the data search condition step.
+
+```sql
+CATEGORY event_cache
+FLEXLOAD {backward : true}
+```
+
+:::caution
+Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of categories included in [the following](#flexload-items).
+:::
+
+## List of categories that need to use FLEXLOAD{#flexload-items}
+
+-   `agent_list` category
+
+    ```sql
+    CATEGORY agent_list
+    FLEXLOAD
+    SELECT
+    ```
+
+-   `db_agent_list` category
+
+    ```sql
+    CATEGORY db_agent_list
+    FLEXLOAD
+    SELECT
+    ```
+
+-   `agent_count` category
+
+    ```sql
+    CATEGORY agent_count
+    FLEXLOAD
+    SELECT
+    ```
+
+-   `event_cache` category 
+
+    ```sql
+    CATEGORY event_cache
+    FLEXLOAD
+    SELECT
+    ```

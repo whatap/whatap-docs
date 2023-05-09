@@ -1,0 +1,132 @@
+---
+id: telegraf-usage
+title: Usage examples
+description: It guides you to use cases.
+tags:
+  - Telegraf
+  - Usage examples
+---
+
+<!--
+Telegraf는 데이터베이스, 시스템 및 IoT 센서에서 메트릭 및 이벤트를 수집하고 전송하기 위한 플러그인 중심 서버 에이전트입니다. Telegraf는 Go로 작성되었으며 외부 종속성 없이 단일 바이너리로 컴파일되며 최소한의 메모리 공간만 필요합니다.
+
+* **데이터베이스** : MongoDB, MySQL, Redis 등의 데이터 소스에 연결하여 메트릭을 수집하고 보냅니다.
+* **시스템** : 현대적인 클라우드 플랫폼, 컨테이너 및 오케 스트레이터 스택에서 메트릭을 수집합니다.
+* **IoT 센서** : IoT 센서 및 장치에서 중요한 상태 저장 데이터 (압력 수준, 온도 수준 등)를 수집합니다.
+-->
+
+Telegraf에 관한 자세한 내용은 influxdata의 [Telegraf documentation](https://docs.influxdata.com/telegraf/v1.24/)을 참조하세요.
+
+## SNMP
+
+SNMP input plugin을 사용하여 SNMP 성능 데이터를 실시간으로 수집 및 차트 표시 가능합니다. 수집된 데이터는 `telegraf_snmp`, `telegraf_interface` 카테고리로 검색하실 수 있습니다.
+
+```batch title='Linux Shell'
+cat >/etc/telegraf/telegraf.d/snmp_device.conf <<EOL
+[[inputs.snmp]]
+  ## Agent addresses to retrieve values from.
+  ##   format:  agents = ["<scheme://><hostname>:<port>"]
+  ##   scheme:  optional, either udp, udp4, udp6, tcp, tcp4, tcp6.
+  ##            default is udp
+  ##   port:    optional
+  ##   example: agents = ["udp://127.0.0.1:161"]
+  ##            agents = ["tcp://127.0.0.1:161"]
+  ##            agents = ["udp4://v4only-snmp-agent"]
+
+  agents = ["udp://1.1.1.1:161"]
+
+  ## Timeout for each request.
+  # timeout = "5s"
+
+  ## SNMP version; can be 1, 2, or 3.
+   version = 2
+
+  ## SNMP community string.
+   community = "xxxx@xxxxx"
+
+  ## Agent host tag
+  # agent_host_tag = "agent_host"
+
+  ## Number of retries to attempt.
+  # retries = 3
+
+  ## The GETBULK max-repetitions parameter.
+  # max_repetitions = 10
+
+  ## SNMPv3 authentication and encryption options.
+  ##
+  ## Security Name.
+  # sec_name = "myuser"
+  ## Authentication protocol; one of "MD5", "SHA", "SHA224", "SHA256", "SHA384", "SHA512" or "".
+  # auth_protocol = "MD5"
+  ## Authentication password.
+  # auth_password = "pass"
+  ## Security Level; one of "noAuthNoPriv", "authNoPriv", or "authPriv".
+  # sec_level = "authNoPriv"
+  ## Context Name.
+  # context_name = ""
+  ## Privacy protocol used for encrypted messages; one of "DES", "AES", "AES192", "AES192C", "AES256", "AES256C", or "".
+  ### Protocols "AES192", "AES192", "AES256", and "AES256C" require the underlying net-snmp tools
+  ### to be compiled with --enable-blumenthal-aes (http://www.net-snmp.org/docs/INSTALL.html)
+  # priv_protocol = ""
+  ## Privacy password used for encrypted messages.
+  # priv_password = ""
+
+  ## Add fields and tables defining the variables you wish to collect.  This
+  ## example collects the system uptime and interface variables.  Reference the
+  ## full plugin documentation for configuration details.
+  [[inputs.snmp.field]]
+    oid = "RFC1213-MIB::sysUpTime.0"
+    name = "uptime"
+
+  [[inputs.snmp.field]]
+    oid = "RFC1213-MIB::sysName.0"
+    name = "source"
+    is_tag = true
+
+  [[inputs.snmp.table]]
+    oid = "IF-MIB::ifXTable"
+    name = "interface"
+    inherit_tags = ["source"]
+
+  [[inputs.snmp.table.field]]
+    oid = "IF-MIB::ifDescr"
+    name = "ifDescr"
+    is_tag = true
+
+  [[aggregators.derivative]]
+    period = "60s"
+    max_roll_over = 1
+
+    fieldpass = ["*Octets", "*Pkts"]
+    drop_original = false
+
+  [aggregators.derivative.tags]
+    aggr = "derivative"
+
+[[processors.starlark]]
+  source = '''
+def apply(metric):
+    for (k, v) in metric.fields.items():
+        if k.endswith('Octets_rate'):
+            metric.fields[k] *= 8
+
+    return metric
+
+'''
+
+EOL
+service telegraf restart
+```
+
+## SNMP Trap
+
+SNMP Trap input plugin을 사용하여 SNMP Trap 이벤트를 실시간으로 수집 및 이메일, 문자 메시지 및 메신저로 전파 가능합니다. 수집된 데이터는 `telegraf_snmp_trap` 카테고리로 검색하실 수 있습니다.
+
+```batch title='Linux Shell'
+cat >/etc/telegraf/telegraf.d/snmp_trap.conf <<EOL
+[[inputs.snmp_trap]]
+  service_address = "udp://:162"
+EOL
+service telegraf restart
+```

@@ -1,0 +1,293 @@
+---
+id: metrics-server
+title: Server metrics
+description: It guides you to the server monitoring metrics.
+tags:
+  - Server
+  - Metrics
+---
+
+<!-- 
+
+{@include: ../common-items/_metrics-index.mdx}
+
+-->
+
+서버 모니터링 지표를 다음과 같이 안내합니다.
+
+## server_base
+
+---
+
+It is the metric for server resources.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name  | Description                | Remarks |
+| --------- | -------------------------- | ------- |
+| cpu_cores | Number of server cores     | -       |
+| host_ip   | Server IP                  | -       |
+| oname     | Server name                | -       |
+| okindName | Server type name           | -       |
+| os        | OS type (Linux or Windows) | -       |
+
+#### Fields
+
+| Field name           | Unit            | Description                            | Remarks |
+| -------------------- | --------------- | -------------------------------------- | ------- |
+| cpu                  | Percentage      | All CPU utilization                    | Common  |
+| cpu_c1               | Percentage      | CPU c1 state utilization               | Windows |
+| cpu_c2               | Percentage      | CPU c2 state utilization               | Windows |
+| cpu_c3               | Percentage      | CPU c3 state utilization               | Windows |
+| cpu_ctxt             | Prime number    | Context switching utilization          | Linux   |
+| cpu_dpc              | Percentage      | CPU DPC time percentage                | Windows |
+| cpu_idle             | Percentage      | CPU idle rate                          | Common  |
+| cpu_interrupt        | Percentage      | cpu interrupt                          | Linux   |
+| cpu_iowait           | Percentage      | CPU iowait rate                        | Linux   |
+| cpu_irq              | Percentage      | CPU IRQ utilization                    | Linux   |
+| cpu_load1            | Prime number    | Load average for 1 minute              | Linux   |
+| cpu_load5            | Prime number    | Load average for 5 minutes             | Linux   |
+| cpu_load15           | Prime number    | Load average for 15 minutes            | Linux   |
+| cpu_new_procs_forked | Positive number | OS process fork call                   | Linux   |
+| cpu_procs_blocked    | Positive number | Process blocked state count            | Linux   |
+| cpu_procs_running    | Positive number | Process running state count            | Linux   |
+| cpu_softirq          | Percentage      | CPU softirq utilization                | Linux   |
+| cpu_steal            | Percentage      | CPU steal utilization                  | Linux   |
+| cpu_sys              | Percentage      | CPU system utilization                 | Common  |
+| cpu_usr              | Percentage      | CPU user utilization                   | Common  |
+| epochtime            | Positive number | 메트릭이 수집된 시간의 epoch time                | Common  |
+| memory_available     | Byte            | 메모리 available 크기                       | Common  |
+| memory_buffers       | Byte            | Memory buffer size                     | Linux   |
+| memory_cached        | Byte            | Memory cache size                      | Common  |
+| memory_free          | Byte            | Free memory size                       | Common  |
+| memory_pageFaults    | Positive number | Memory page fault count                | Common  |
+| memory_pavailble     | Percentage      | Available memory utilization           | Common  |
+| memory_pused         | Percentage      | Memory utilization                     | Common  |
+| memory_shared        | Byte            | Shared memory size                     | Linux   |
+| memory_slab          | Byte            | Slab memory size                       | Linux   |
+| memory_sreclaimable  | Byte            | Slab reclaimable memory size           | Linux   |
+| memory_sunreclaim    | Byte            | Slab claimable memory size             | Linux   |
+| memory_swappused     | Percentage      | Swap utilization                       | Common  |
+| memory_swaptotal     | Byte            | Total swap size                        | Common  |
+| memory_swapused      | Byte            | Swap usage                             | Common  |
+| memory_total         | Byte            | Total memory size                      | Common  |
+| memory_used          | Byte            | Memory usage                           | Common  |
+| processorQueueLength | Positive number | Process queue length                   | Windows |
+| uptime               | Positive number | Server uptime after a boot (TimeStamp) | Common  |
+
+## server_cpu_core
+
+---
+
+Metrics for each server CPU core
+
+-   Collection interval: 5 seconds
+-   Statistical data: -
+
+#### Tags
+
+| Tag name | Description                | Remarks |
+| -------- | -------------------------- | ------- |
+| cpu      | Server core number         | -       |
+| ip       | Server IP                  | -       |
+| oname    | Server name                | -       |
+| os       | OS type (Linux or Windows) | -       |
+
+#### Fields
+
+| Field name           | Unit            | Description                      | Remarks |
+| -------------------- | --------------- | -------------------------------- | ------- |
+| idle                 | Percentage      | Core idle rate                   | Common  |
+| iowait               | Percentage      | Core iowait rate                 | Windows |
+| irq                  | Percentage      | Core IRQ utilization             | Linux   |
+| load1                | Prime number    | Core load average for 1 minute   | Linux   |
+| load5                | Prime number    | Core load average for 5 minutes  | Linux   |
+| load15               | Prime number    | Core load average for 15 minutes | Linux   |
+| nice                 | Percentage      | Core nice utilization            | Common  |
+| processorQueueLength | Positive number | Core process queue length        | Windows |
+| softirq              | Percentage      | Core softirq utilization         | Linux   |
+| steal                | Percentage      | Core steal utilization           | Linux   |
+| sys                  | Percentage      | Core sys utilization             | Linux   |
+| usr                  | Percentage      | Core usr utilization             | Linux   |
+
+## server_disk
+
+---
+
+It has metrics for each file system mounted on each server.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name       | Description                    | Remarks |
+| -------------- | ------------------------------ | ------- |
+| deviceId       | Device ID                      | -       |
+| deviceIdHash   | Device ID hash value           | -       |
+| fileSystem     | File system type               | -       |
+| mountPoint     | File system's mount point      | -       |
+| mountPointHash | File system's mount point hash | -       |
+| oname          | Server name                    | -       |
+| os             | OS type (Linux or Windows)     | -       |
+
+#### Fields
+
+| Field name       | Unit            | Description                               | Remarks |
+| ---------------- | --------------- | ----------------------------------------- | ------- |
+| blksize          | Byte            | Block size                                | Linux   |
+| count            | Positive number | WhaTap only                               | Common  |
+| freePercent      | Percentage      | File system's free space rate             | Linux   |
+| freeSpace        | Byte            | File system's free space amount           | Linux   |
+| ioPercent        | Percentage      | IO 사용률 `일부 디스크 유형에서는 부정확한 값이 측정될 수 있습니다.` | Linux   |
+| ioutilOrder      | Positive number | WhaTap only                               | Linux   |
+| queueLength      | Mistake         | Queue length                              | Common  |
+| totalInode       | Positive number | Total number of Inodes                    | Linux   |
+| totalSpace       | Byte            | Total size of the file system             | Linux   |
+| usedPercent      | Percentage      | File system utilization                   | Linux   |
+| usedInode        | Positive number | Number of used inodes                     | Linux   |
+| usedInodePercent | Percentage      | Inode utilization                         | Linux   |
+| userSpaceOrder   | Positive number | WhaTap only                               | Common  |
+| readBps          | Byte            | Bytes read per second                     | Common  |
+| writeBps         | Byte            | Bytes written per second                  | Common  |
+| readIops         | Prime number    | Read count per second                     | Common  |
+| writeIops        | Prime number    | Written count per second                  | Common  |
+
+## server_network
+
+---
+
+Network interface metrics for each server
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name | Description                    | Remarks |
+| -------- | ------------------------------ | ------- |
+| desc     | Network interface name         | -       |
+| descHash | Network interface's hash value | -       |
+| hwAddr   | MAC address                    | -       |
+| ip       | Interface IP address           | -       |
+| oname    | Server name                    | -       |
+| os       | OS type (Linux or Windows)     | -       |
+
+#### Fields
+
+| Field name       | Unit            | Description                               | Remarks |
+| ---------------- | --------------- | ----------------------------------------- | ------- |
+| blksize          | Byte            | Block size                                | Linux   |
+| count            | Positive number | WhaTap only                               | Common  |
+| freePercent      | Percentage      | File system's free space rate             | Linux   |
+| freeSpace        | Byte            | File system's free space amount           | Linux   |
+| ioPercent        | Percentage      | IO 사용률 `일부 디스크 유형에서는 부정확한 값이 측정될 수 있습니다.` | Linux   |
+| ioutilOrder      | Positive number | WhaTap only                               | Linux   |
+| queueLength      | Mistake         | Queue length                              | Common  |
+| totalInode       | Positive number | Total number of Inodes                    | Linux   |
+| totalSpace       | Byte            | Total size of the file system             | Linux   |
+| usedPercent      | Percentage      | File system utilization                   | Linux   |
+| usedInode        | Positive number | Number of used inodes                     | Linux   |
+| usedInodePercent | Percentage      | Inode utilization                         | Linux   |
+| userSpaceOrder   | Positive number | WhaTap only                               | Common  |
+| readBps          | Byte            | Bytes read per second                     | Common  |
+| writeBps         | Byte            | Bytes written per second                  | Common  |
+| readIops         | Prime number    | Read count per second                     | Common  |
+| writeIops        | Prime number    | Written count per second                  | Common  |
+
+## server_netstat
+
+---
+
+It provides the network protocol statistics for each server.
+
+-   Collection interval: 5 seconds
+-   Statistical data: 5 minutes, 1 hour
+
+#### Tags
+
+| Tag name                        | Description                     | Remarks |
+| ------------------------------- | ------------------------------- | ------- |
+| oname                           | Server name                     | -       |
+| os_arch                         | OS architecture name            | -       |
+| os_cpucore                      | Number of server CPU cores      | -       |
+| os_cpusocket                    | Number of server CPU sockets    | -       |
+| os_cpuvendor                    | Server CPU's vendor name        | -       |
+| os_ip                           | Server IP                       | -       |
+| os_memory                       | Server memory size              | -       |
+| OS name type (Linux or Windows) | -                               |         |
+| os_public_ip                    | Public server IP                | -       |
+| os_release                      | Server OS release name          | -       |
+| whatap_build                    | WhaTap agent's build hash value | -       |
+| whatap_home                     | Path of the WhaTap agent Home   | -       |
+| whatap_product                  | 와탭 상품 유형                        | -       |
+| whatap_version                  | WhaTap agent version            | -       |
+
+#### Fields
+
+| Field name             | Unit            | Description                        | Remarks |
+| ---------------------- | --------------- | ---------------------------------- | ------- |
+| netstat_Close_Wait     | Positive number | Number of CLOSE_WAIT state sockets | Common  |
+| netstat_Closing        | Positive number | Number of closed sockets           | Common  |
+| netstat_Established    | Positive number | Number of established sockets      | Common  |
+| netstat_Fin_Wait1      | Positive number | Number of FIN_WAIT1 sockets        | Common  |
+| netstat_Fin_Wait2      | Positive number | Number of FIN_WAIT2 sockets        | Common  |
+| netstat_Last_Ack       | Positive number | Number of LASK_ASK sockets         | Common  |
+| netstat_Listen         | Positive number | Number of LISTEN sockets           | Common  |
+| netstat_Syn_Recv       | Positive number | Number of SYN_RECV sockets         | Common  |
+| netstat_Syn_Sent       | Positive number | Number of SYN_SENT sockets         | Common  |
+| netstat_Time_Wait      | Positive number | Number of TIME_WAIT sockets        | Common  |
+| netstat_Unknown        | Positive number | Number of unknown sockets          | Common  |
+| Server_Filedescriptors | Positive number | Number of OS file descriptors      | Common  |
+
+## server_process
+
+---
+
+It has the server process information.
+
+-   Collection interval: 20 seconds
+-   Statistical data: 5 minutes
+
+#### Tags
+
+| Tag name | Description                     | Remarks |
+| -------- | ------------------------------- | ------- |
+| alias    | Server alias                    | -       |
+| cmd1     | Process execution command 1     | -       |
+| cmd2     | Process execution parameter     | -       |
+| hash     | Process hash value              | -       |
+| name     | Process name                    | -       |
+| oname    | Server name                     | -       |
+| user     | Linux user name for the process | -       |
+
+#### Fields
+
+| Field name          | Unit            | Description                          | Remarks |
+| ------------------- | --------------- | ------------------------------------ | ------- |
+| count               | Positive number | Number of processes                  | Common  |
+| cpu                 | Percentage      | CPU Utilization                      | Common  |
+| cpuAccumulated      | Percentage      | WhaTap only                          | Common  |
+| cpuOrder            | Order           | WhaTap only                          | Common  |
+| memOrder            | Order           | WhaTap only                          | Common  |
+| memory              | Percentage      | Memory utilization                   | Common  |
+| memoryAccumulated   | Percentage      | WhaTap only                          | Common  |
+| openFileDescriptors | Positive number | Number of open file descriptors      | Common  |
+| rbps                | Byte            | Bytes of the disk read per second    | Common  |
+| rbpsAccmulated      | Byte            | WhaTap only                          | Common  |
+| riops               | Positive number | Count read per second in the disk    | Common  |
+| riopsAccmulated     | Positive number | WhaTap only                          | Common  |
+| wbps                | Byte            | Bytes written per second in the disk | Common  |
+| wbpsAccmulated      | Byte            | WhaTap only                          | Common  |
+| wiops               | Positive number | Count written per second in the disk | Common  |
+| wiopsAccmulated     | Positive number | WhaTap only                          | Common  |
+| rss                 | Byte            | RSS memory size                      | Common  |
+| rssAccmulated       | Byte            | WhaTap only                          | Common  |
+
+## References
+
+-   [윈도우 지수 자료](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/cpu-analysis)
+-   [리눅스 지수 자료](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index)

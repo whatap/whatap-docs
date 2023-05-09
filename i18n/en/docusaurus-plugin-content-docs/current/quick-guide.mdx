@@ -1,0 +1,239 @@
+---
+id: quick-guide
+title: Quick Guide
+displayed_sidebar: indexSidebar
+description: The following provides a brief guide to quickly use the functions of WhaTap Monitoring.
+---
+
+import TR from '@site/src/components/TR';
+
+This page is the WhaTap Monitoring overview. This is useful for the users who are new to WhaTap Monitoring.
+
+:::note
+For more information about installation and utilization of WhaTap Monitoring agents, see the product-specific technical documentation to the left.
+:::
+
+## Step-by-step guide for quick start
+
+---
+
+### ![](/img/number-01.png) WhaTap sign up{#account}
+
+{@include: account/_create-account.mdx}  
+
+---
+
+### ![](/img/number-02.png) Project creation{#cproject}
+
+{@include: getting-started/_create-project-intro-v2.mdx} 
+
+---
+
+### ![](/img/number-03.png) Checking the project access key{#accesskey}
+
+{@include: getting-started/_accesskey-intro.mdx}
+
+---
+
+### ![](/img/number-04.png) Agent installation{#install}
+
+<!-- 공통 안내로 적용되지 않는 경우가 많아서 상품군 링크 제공? -->
+
+Once you have been granted a **project access key**, you can install any WhaTap agent according to the Install Guide section. 
+
+Through **_Management_** > **_Agent Installation_**, you can access the installation guide section.
+
+1.  Check the support environment. 
+
+2.  In **_Management_** > **_Agent Installation_**, select the **_Download WhaTap agent_** tab. Follow the instructions to download the agent or install the package.
+
+    :::note 
+
+    **Download agent**
+
+    -   Depending on the environment, select **_Download_** or use the command to download from the server.
+    -   Depending on the environment, register the repository and install the package.
+
+    :::
+
+3.  Enter the **project access key** and **WhaTap server IP**, and then run the setup script.  
+
+4.  Restart the agent. 
+
+The WhaTap Monitoring service is started. 
+
+For more information about the download and installation, see the product-specific installation guides. Select a product-specific menu on the left, or check the shortcuts below.
+
+<details>
+<summary>Shortcuts for product-specific support environment and installation guide</summary>
+
+-   **Java**
+    -   [Support environment](java/supported-spec)
+    -   [Agent installation](java/install-agent)
+-   **PHP**
+    -   [Support environment](php/supported-spec)
+    -   [Agent installation](php/install-agent)
+-   **Node.js**
+    -   [Support environment](nodejs/supported-spec)
+    -   [Agent installation](nodejs/install-agent)
+-   **Python**
+    -   [Support environment](python/supported-spec)
+    -   [Agent installation](python/install-agent)
+-   **.NET**
+    -   [Support environment](dotnet/supported-spec)
+    -   [Agent installation](dotnet/install-agent)
+-   **Golang**
+    -   [Support environment](golang/supported-spec)
+    -   [Agent installation](golang/install-agent)
+-   **Server**
+    -   [Support environment](server/supported-spec)
+    -   [Agent installation](server/install-agent)
+-   **Kubernetes**
+    -   [Support environment](kubernetes/supported-spec)
+    -   [Agent installation](kubernetes/install) 
+-   **PostgreSQL**
+    -   [Support environment](postgresql/monitoring-support)
+    -   [Agent installation](postgresql/install-agent)
+-   **Oracle**
+    -   [Support environment](oracle/monitoring-support)
+    -   [Agent installation](oracle/install-agent)
+-   **MySQL**
+    -   [Support environment](mysql/monitoring-support)
+    -   [Agent installation](mysql/install-agent)
+-   **MS SQL Server**
+    -   [Support environment](mssql/monitoring-support)
+    -   [Agent installation](mssql/install-agent)
+-   **Tibero**
+    -   [Support environment](tibero/monitoring-support)
+    -   [Agent installation](tibero/install-agent)
+-   **CUBRID**
+    -   [Support environment](cubrid/monitoring-support)
+    -   [Agent installation](cubrid/install-agent)
+-   **Altibase**
+    -   [Support environment](altibase/monitoring-support)
+    -   [Agent installation](altibase/install-agent)
+-   **Redis**
+    -   [Support environment](redis/monitoring-support)
+    -   [Agent installation](redis/install-agent)
+-   **MongoDB**
+    -   [Support environment](mongodb/monitoring-support)
+    -   [Agent installation](mongodb/install-agent)
+-   [URL](url/url-install)
+-   **Cloud** 
+    -   [Amazon ECS](amazon-ecs/install-agent)
+    -   [Amazon Cloudwatch](amazon-cloudwatch/install-agent)
+    -   [Azure Monitor](azure/install-agent)
+    -   [Naver Cloud Monitoring](ncloud/install-agent)
+    -   [Oracle Cloud Monitor](oracle-cloud/install-agent)
+-   [Log](log/log-function)
+
+</details>
+
+:::note
+If you encounter any problem during installation, see the product-specific **installation troubleshooting**.
+:::
+
+---
+
+### ![](/img/number-05.png) Viewing the dashboard{#dashboard}
+
+When data is transferred to the WhaTap server after agent installation, you can view the overall project status in real time through **_Dashboard_**. WhaTap Monitoring can show all collected data on the integrated dashboard, which can be freely personalized by user.
+
+-   The displayed performance metrics of applications are collected from the widgets of **_Application Dashboard_**, **_Transaction Map_**, **_Active Transaction_**, **_Application Topology_**, and **_Flex Board_**.
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
+-   The server performance metrics collected from each widget of **_Resource Board_**, **_Compound Eye_**, and **_Flex Board_** can be viewed.
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
+-   The database performance metrics collected from each widget of **_Instance List_**, **_Instance Monitoring_**, **_Multiple Instance Monitoring_**, **_Slow Query_**, and **_Flex Board_** can be viewed.
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/db-realtimeMonitoring.mp4}
+-   For Kubernetes, the nodes, containers, applications, logs, and events are dynamically displayed through the widgets of **_Container Map_**.
+    {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/k8s-targetgroup.mp4}
+
+:::note
+사용자 정의형 통합 대시보드인 Flex 보드 생성 및 설정에 대한 자세한 설명은 [다음 문서](java/flex-board)를 참조하세요.
+
+<!-- * 대시보드 위젯을 비롯한 자세한 설명은 상품별 다음 문서([애플리케이션](java/learn-apm-main-menu), [서버](server/learn-main-menu), [데이터베이스](db/learn-db-main-menu), [쿠버네티스](kubernetes/learn-kubernetes-main-menu))를 참조하세요. -->
+
+<!-- * VR 타입 아이템 안내는 기술 문서 페이지 개편 이후 클라우드 메뉴에서 확인할 수 있습니다.-->
+
+:::
+
+<!-- 대시보드 안내를 대시보드 메뉴 안내만 할 지 아니면 에이전트 주요 메뉴 안내로 활용할지?  -->
+
+<!-- 로그 모니터링, URL 모니터링, 클라우드 모니터링 등 각 성능 지표 조회 방식 취합하기? -->
+
+---
+
+### ![](/img/number-06.png) External data collection{#collect}
+
+<!-- 텔레그라프, 포커스 -->
+
+You can expand the WhaTap service collection data by using Telegraf and Focus. For more information, see [Telegraf](telegraf/introduction.mdx) and [Focus](focus/introduction.mdx).
+
+-   You can install a WhaTap plugin to forward the data collected by Telegraf to the WhaTap collection server.
+-   By installing the WhaTap Focus, you can upload the values collected by running your own check scripts or database queries to your WhaTap project.
+
+---
+
+### ![](/img/ic-number-07.svg) Alert Settings{#notification}
+
+WhaTap Monitoring allows you to set threshold-based alerts for all metrics collected. In **_Alert_**, you can check events, notification settings, and previous records. The alert reception can be set for each individual and it provides various alert reception channels such as Email, SMS, Messenger, App Push, etc. 
+
+<!-- 와탭 모니터링 서비스는 이메일, SMS, 메신저, App Push 등 사용자가 선호하는 수단을 선택하여 알림을 수신할 수 있습니다. -->
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_04_evnetAlert.mp4}
+
+For more information about alert settings, see the following for each product. 
+
+<details>
+<summary>Shortcuts to product-specific alert setting guides</summary>
+
+-   [Java](java/apm-set-notice)
+-   [PHP](php/apm-set-notice)
+-   [Node.js](nodejs/apm-set-notice)
+-   [Python](python/apm-set-notice)
+-   [.NET](dotnet/apm-set-notice)
+-   [Golang](golang/apm-set-notice)
+-   [Server](server/set-notice)
+-   [PostgreSQL](postgresql/set-notice)
+-   [Oracle](oracle/set-notice)
+-   [MySQL](mysql/set-notice)
+-   [MS SQL Server](mssql/set-notice)
+-   [Tibero](tibero/set-notice)
+-   [CUBRID](cubrid/set-notice)
+-   [Altibase](altibase/set-notice)
+-   [Redis](redis/set-notice)
+-   [MongoDB](mongodb/set-notice) 
+-   [Kubernetes](kubernetes/set-notice)
+-   [URL](url/url-event)
+-   [Amazon CloudWatch](amazon-cloudwatch/set-notice)
+-   [Amazon ECS](amazon-ecs/set-notice)
+-   [Azure Monitor](azure/set-notice)
+-   [Naver Cloud Monitoring](ncloud/set-notice)
+-   [Oracle Cloudd Monitor](oracle-cloud/set-notice)
+-   [Log](log/set-notice)
+
+</details>
+
+---
+
+### ![](/img/ic-number-08.svg) Viewing reports{#report}
+
+Reports are the documents that report the service usage and failure records. For example, the monitoring data analysis becomes a metric to determine the direction of service improvement. WhaTap supports task automation by allowing you to create reports through the **_Report_** menu. It provides unit reports for each project and the integrated reports for multiple projects.
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_05_report.mp4}
+
+:::note
+For more information about reporting, see [the following](java/report-intro). For product-specific report guides, see product-specific technical documents.
+:::
+
+---
+
+### ![](/img/ic-number-09.svg) Member Management{#member}
+
+You can add project members in **_Management_** > **_Project Member_**. You can set the permissions for each project and member group, and delete members.  
+
+:::note
+For more information about the member role scheme, see [the following](project/project-structure#project-auth).
+:::
+
+---

@@ -1,0 +1,50 @@
+---
+id: agent-update
+title: エージェントのアップデート
+description: サーバーエージェントの更新方法について案内します。
+tags:
+  - Server
+  - アップデート
+  - 管理
+---
+
+:::note
+以前のバージョンをインストールするには、support@whatap.io まで問い合わせてください。
+:::
+
+## Linux及びUnix
+
+インストールされているエージェントを最新バージョンに更新するには、次のコマンドを実行してください。
+
+-   **Debian / Ubuntu**
+    ```bash title=SH
+    sudo apt-get update
+    sudo apt-get install whatap-infra
+    sudo service whatap-infra restart
+    ```
+    -   特定のバージョンをインストールするには、インストール時にバージョン情報を次のように明示してください。
+        ```bash
+        sudo apt-get install whatap-infra={version}
+        ```
+-   **CentOS / Amazon Linux / SUSE / XenServer**
+    ```bash title=SH
+    sudo yum update whatap-infra
+    sudo service whatap-infra restart
+    ```
+    -   特定のバージョンをインストールするには、インストール時にバージョン情報を次のように明示してください。
+        ```bash
+        sudo yum install whatap-infra-{version}
+        ```
+-   **FreeBSD**
+    ```bash title=SH
+    wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+    pkg install whatap-infra.txz
+    ```
+
+## Windows
+
+インストールされているエージェントを最新バージョンに更新するには、 **_管理_** > **_エージェントインストール_** メニューに移動してください。 **_インストール案内_** セクションの **_インストールファイルダウンロード_** 案内に従ってWindowsサーバーオペレーティングシステム用のインストールファイルをダウンロードした後 _whatap_infra.exe_ ファイルを実行してください。 エージェントの更新後、サービスが再起動されます。
+
+:::note
+セキュリティ設定のため _.exe_ 形式のファイルがダウンロードできないユーザーのため _.zip_ 形式のファイルも提供します。 詳しい内容は [次の文書](../server/server-os/server-windows)を参考にしてください。
+:::

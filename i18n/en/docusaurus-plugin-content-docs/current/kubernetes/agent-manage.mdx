@@ -1,0 +1,49 @@
+---
+id: agent-manage
+title: Kubernetes agent
+description: Let's learn about the configuration of the installed agent to monitor applications running in Kubernetes.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Application Monitoring
+  - Agent
+---
+
+Let's learn about the configuration of the installed agent to monitor applications running in Kubernetes.
+
+## Agent structure
+
+When installing WhaTap Kubernetes, configure resources for agents under the \<whatap-monitoring\>Namespace in the Kubernetes environment.
+
+The master agent is for Deployment and the node agents are for DaemonSet. The following explains how to check the WhaTap agent installed in the Kubernetes environment.
+
+-   **Master Agent**
+
+    ```bash
+    kubectl get deployments -n whatap-monitoring 
+    kubectl get pods -l=name=whatap-master-agent -n whatap-monitoring
+    ```
+
+-   **Node Agent**
+
+    ```bash
+    kubectl get daemonsets -n whatap-monitoring
+    kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
+    ```
+
+The following is an example for the master agent and node agents running in the \<whatap-monitoring\>namespace.
+
+```bash
+$ kubectl get pods -n whatap-monitoring
+NAME                                   READY   STATUS    RESTARTS   AGE
+whatap-master-agent-57f4499567-ltbbr   1/1     Running   0          3d19h
+whatap-node-agent-5q8rj                2/2     Running   0          21h
+whatap-node-agent-6nb2z                2/2     Running   0          30h
+whatap-node-agent-8m2vk                2/2     Running   0          21h
+whatap-node-agent-9thmw                2/2     Running   0          3h31m
+whatap-node-agent-kpv7d                2/2     Running   0          21h
+```
+
+The following is the \<whatap-monitoring\> namespace displayed on the WhaTap Kubernetes container map.
+
+![whatap-monitoring Namespace inside the container map](https://img.whatap.io/media/images/whatap_kubernetes_container_whatap_monitoring.png)

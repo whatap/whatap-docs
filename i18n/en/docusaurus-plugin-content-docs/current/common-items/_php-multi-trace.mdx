@@ -1,0 +1,23 @@
+-   **whatap.mtrace_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It sets whether or not to use the multi-transaction tracing (MTID). By tracing the MTID, you can check the calls between all the registered applications.
+
+-   **whatap.mtrace_rate**<span class='type'>Percentage</span><br/>
+      Default `10`<br/>
+      This option sets the rate of the MTID (Multi Transaction ID) issued when the first transaction occurs.
+
+-   **whatap.mtrace_poid_key**<span class='type'>String</span><br/>
+      Default `x-wtap-po`<br/>
+      It sets the key name to deliver the caller project information to be used for MTID tracing.
+
+-   **whatap.mtrace_caller_key**<span class='type'>String</span><br/>
+      Default `x-wtap-mst`<br/>
+      It sets the caller key name to be used for MTID tracing.
+
+-   **whatap.mtrace_callee_key**<span class='type'>String</span><br/>
+      Default `x-wtap-tx`<br/>
+      It sets the callee key name to be used for MTID tracing.
+
+-   **whatap.mtrace_send_url_length**<span class='type'>Int</span><br/>
+      Default `80`<br/>
+      The HTTP caller passes its URL to callees. At this time, the URL length is restricted. This sets the length value.

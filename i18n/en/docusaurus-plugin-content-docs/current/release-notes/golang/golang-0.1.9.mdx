@@ -1,0 +1,116 @@
+---
+id: golang-0.1.9
+title: Golang Agent 0.1.9
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-04-27
+
+## Beta - bug fixing
+
+### Fixed the bug where the web transaction data cannot be collected in a panic situation.
+
+-   net/http
+-   github.com/labstack/echo
+-   github.com/gorilla/mux
+-   github.com/go-gonic/gin
+
+:::note
+`recover()`를 통해서 오류 정보를 수집하지만, 다시 동일한 panic를 발생시킵니다. 
+:::
+
+```go title='Golang'
+defer func() {
+  // panic 
+  
+  x := recover()
+  var err error = nil
+  if x != nil {
+    err = fmt.Errorf("Panic: %v", x)
+    
+    // panic 정보 수집
+    trace.Error(ctx, err)
+    err = nil
+  }
+
+  ...
+
+  // 다시 panic 발생
+
+  if x != nil {
+    panic(x)
+  }
+}()
+```
+
+## Beta - update
+
+### Collecting the HTTP status code
+
+Status codes over 400 are collected as error messages.
+
+### github.com/labstack/echo
+
+#### Supporting the Echo/V4
+
+Use echo/v4/whatapecho instead of the previous echo/whatapecho package. 
+
+```go title='Golang'
+import (
+  "github.com/labstack/echo"
+  
+  "github.com/whatap/go-api/trace"
+  "github.com/whatap/go-api/instrumentation/github.com/labstack/echo/v4/whatapecho"
+)
+```
+
+#### Adding the HTTPErrorHandler wrapper of the echo
+
+Additional error data is collected through HTTPErrorHandler.
+
+`echo.Context.Error()` 함수가 호출될 때 오류 정보를 수집합니다.Recover 미들웨어가 처리한 panic 정보를 수집합니다. 
+
+whatapecho 미들웨어가 마지막으로 실행 되면 HTTPErrorHandler 정보를 최대한 많이 수집할 수 있습니다. 미들웨어 등록을 최상단에서 설정하고, `Pre()` 함수를 통해 등록합니다.
+
+```go title='Golang'
+func main() {
+  ...
+
+  e := echo.New()
+  //echo DefaultHTTPErrorHandler wrapper
+  e.HTTPErrorHandler = whatapecho.WrapHTTPErrorHandler(e.DefaultHTTPErrorHandler)
+  e.Pre(whatapecho.Middleware())
+  e.Use(middleware.Recover())
+  ...
+}
+```
+
+### Log output
+
+If the debug option is set, the monitoring-related log is output.
+
+```ini
+debug=true
+```
+
+The logs for transactions, DB connections, SQL executions, and HTTP external calls have been added. 
+
+### Adding the setting to exclude collection by specifying the HTTP method
+
+지정한 uri 에 대해서 특정 HTTP Method로 요청되는 트랜잭션의 수집을 제외합니다. 콤마(,) 구분으로 여러개의 uri, Method를 등록할 수 있습니다. 대소문자 구분은 없습니다.
+
+`ignore_http_method_urls`<br/>
+#Default : ""#<br/>
+#Type : String#
+
+`ignore_http_method`<br/>
+#Default : ""#<br/>
+#Type : String#
+
+```ini
+ignore_http_method_urls=/index, /sql/select
+ignore_http_method=options, connect
+```

@@ -1,0 +1,31 @@
+-   **profile_http_header_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      The HTTP header's content is output in the transaction trace. This setting is used to expose headers to the transaction trace regardless of whether headers are collected or not. 
+
+-   **profile_http_parameter_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      Tracing HTTP parameters is enabled. However, the parameters can be retrieved only by entering a separate security key. Set the security key to 6 digits in _paramkey.txt_ of the agent installation path. If _paramkey.txt_ does not exist, it is automatically generated and a random key is set.
+
+-   **trace_normalize_enabled**<span class='type'>Boolean</span><br/>
+        Default `true`<br/>
+        It enables the function to parse and normalize transaction URLs.
+    :::note
+    If the value is changed to `false`, the path parameter parsing is disabled. In this case, it is recommended to temporarily use the setting only for debugging purposes because the statistical data is less meaningful.
+    :::
+
+-   **trace_auto_normalize_enabled(\*)**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      It enables automatic parsing of patterns by extracting them from annotations when normalizing transaction URLs.
+
+-   **trace_normalize_urls**<span class='type'>String</span><br/>
+        It parses and normalizes transaction URLs. It deletes the path parameter by parsing the call URL patterns.<br/>
+    :::note
+    For example, if declared as **/a/{v}/b**, **a/123/b** is replaced by **a/{v}/b**. To register multiple items, comma (,) is used as the delimiter. Using /a/\*/b, you can collect after deleting the path parameter with a specific format.
+    :::
+
+-   **web_static_content_extensions(\*)**<span class='type'>String</span><br/>
+      Default `js, htm, html, gif, png, jpg, css, swf, ico`<br/>
+      Specify the extension to determine the static content. Transactions with extensions set here are excluded from transaction tracing and counting.
+
+-   **trace_ignore_url_prefix**<span class='type'>String</span><br/>
+      Set the URL prefix for excluding transactions during collection. Any URLs whose prefix matches the set value do not collect the transaction performance. For multiple values, use comma (,) as the delimiter.

@@ -1,0 +1,32 @@
+While the transaction performance means the summary metrics or attributes between the start and end of transaction, the transaction profile traces the steps during transactions. If any transaction is slow or erroneous, the execution records must be traced step by step to find the cause. This is called **_transaction tracing_**.
+
+The types of steps that WhaTap collects include SQL steps, HTTP call steps, message steps, socket open steps, DB connection steps, and method steps. 
+
+:::note
+WhaTap's step is used with the same meaning as Span.
+:::
+
+---
+
+-   **DB connection step**<span class='type'>START-END</span><br/>
+      It includes the performance for connection to RDB. Step information includes the name, response time, and error.
+
+-   **SQL step**<span class='type'>START-END</span><br/>
+      It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
+
+-   **HTTP call step**<span class='type'>START-END</span><br/>
+      It includes the performance for the external HTTP service call. Step information includes URL, host, port, response time, and errors.
+
+-   **Message step** <span class='type'>ADD</span><br/>
+      While collecting transaction traces, the message steps are used to collect the records of all irregular sections.  
+
+-   **SOCKET step**<span class='type'>ADD</span><br/>
+      Step to represent the socket open.
+
+-   **METHOD step**<span class='type'>START-END</span><br/>
+      The method response time is traced.
+
+-   **ACTIVE STACK step**<span class='type'>START-END</span><br/>
+       It includes the active step information. It is created and collected by a separate thread and it is added to the transaction trace.
+
+---

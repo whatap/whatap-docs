@@ -1,0 +1,29 @@
+## エージェント実行
+
+エージェントをインストールしたパスでシェルスクリプト（またはバッチファイル）を実行してください。
+
+<Tabs groupId='os'>
+
+<TabItem value="linux" label="Linux" default>
+
+```bash
+./start.sh
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```bash
+start.bat
+```
+
+</TabItem>
+</Tabs>
+
+デーモンのように使いたい場合、次のコマンドを実行してください。ただし、**nohup**を設置した環境でのみ動作します。
+
+```bash
+./startd.sh
+```
+
+データベースモニタリングのためのエージェントのインストールを完了しました。[次の文書](after-install-agent)でインストール後、チェックリストを確認してください。

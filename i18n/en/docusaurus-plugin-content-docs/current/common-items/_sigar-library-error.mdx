@@ -1,0 +1,15 @@
+## In case the sigar library cannot be loaded
+
+Check whether the execution role for <em>$WHATAP_HOME/lib1/*.so</em> exists. If no permission, give the execution role.
+
+```bash
+$ sudo chmod +x *.so
+```
+
+If under _$WHATAP_HOME/lib1_ of AIX 7, _libsigar-ppc64-aix-7.so_ does not exist and the error occurs, copy the file.
+
+![Sigar library error on AIX 7](/img/troubleshooting-sigar-error.png)
+
+```bash
+$ cp libsigar-ppc64-aix-5.so libsigar-ppc64-aix-7.so
+```

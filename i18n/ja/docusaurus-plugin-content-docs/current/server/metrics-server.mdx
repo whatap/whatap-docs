@@ -1,0 +1,293 @@
+---
+id: metrics-server
+title: サーバーメトリクス
+description: サーバーモニタリングメトリクスについて案内します。
+tags:
+  - Server
+  - メトリックス
+---
+
+<!-- 
+
+{@include: ../common-items/_metrics-index.mdx}
+
+-->
+
+サーバーモニタリングメトリクスについて次のように案内します。
+
+## server_base
+
+---
+
+サーバーリソースメトリクスです。
+
+-   収集間隔：5秒
+-   統計データ：5分、1時間
+
+#### Tags
+
+| タグ名       | 説明                   | 備考 |
+| --------- | -------------------- | -- |
+| cpu_cores | サーバーコア数              | -  |
+| host_ip   | サーバーIP               | -  |
+| oname     | サーバー名                | -  |
+| okindName | サーバー種類名              | -  |
+| os        | OSタイプ linuxまたはwindow | -  |
+
+#### Fields
+
+| フィールド名               | 単位    | 説明                       | 備考     |
+| -------------------- | ----- | ------------------------ | ------ |
+| cpu                  | パーセント | CPU全体使用率                 | 共通     |
+| cpu_c1               | パーセント | cpu c1 state 使用率         | window |
+| cpu_c2               | パーセント | cpu c2 state 使用率         | window |
+| cpu_c3               | パーセント | cpu c3 state 使用率         | window |
+| cpu_ctxt             | 少数    | context switching 使用率    | linux  |
+| cpu_dpc              | パーセント | CPU DPC 時間比率             | window |
+| cpu_idle             | パーセント | CPU idle 比率              | 共通     |
+| cpu_interrupt        | パーセント | cpu interrupt            | linux  |
+| cpu_iowait           | パーセント | CPU iowait 比率            | linux  |
+| cpu_irq              | パーセント | CPU IRQ 使用率              | linux  |
+| cpu_load1            | 少数    | 1分平均Load Average         | linux  |
+| cpu_load5            | 少数    | 5分平均Load Average         | linux  |
+| cpu_load15           | 少数    | 15分平均Load Average        | linux  |
+| cpu_new_procs_forked | 整数    | os process fork呼び出し      | linux  |
+| cpu_procs_blocked    | 整数    | プロセス blocked ステータス個数     | linux  |
+| cpu_procs_running    | 整数    | プロセス Running ステータス個数     | linux  |
+| cpu_softirq          | パーセント | CPU softirq 使用率          | linux  |
+| cpu_steal            | パーセント | CPU steal 使用率            | linux  |
+| cpu_sys              | パーセント | CPU system 使用率           | 共通     |
+| cpu_usr              | パーセント | CPU user 使用率             | 共通     |
+| epochtime            | 整数    | メトリックが収集された時間のepoch time | 共通     |
+| memory_available     | バイト   | メモリ available サイズ        | 共通     |
+| memory_buffers       | バイト   | メモリ buffers サイズ          | linux  |
+| memory_cached        | バイト   | メモリ cached サイズ           | 共通     |
+| memory_free          | バイト   | メモリ free サイズ             | 共通     |
+| memory_pageFaults    | 整数    | メモリ page fault 回数        | 共通     |
+| memory_pavailble     | パーセント | メモリ available 使用率        | 共通     |
+| memory_pused         | パーセント | メモリ使用率                   | 共通     |
+| memory_shared        | バイト   | メモリ shared サイズ           | linux  |
+| memory_slab          | バイト   | メモリ slab サイズ             | linux  |
+| memory_sreclaimable  | バイト   | メモリ slab reclaimable サイズ | linux  |
+| memory_sunreclaim    | バイト   | メモリ slab cclaimable サイズ  | linux  |
+| memory_swappused     | パーセント | スワップ使用率                  | 共通     |
+| memory_swaptotal     | バイト   | スワップの全体サイズ               | 共通     |
+| memory_swapused      | バイト   | スワップ使用量                  | 共通     |
+| memory_total         | バイト   | メモリの全体サイズ                | 共通     |
+| memory_used          | バイト   | メモリ使用量                   | 共通     |
+| processorQueueLength | 整数    | プロセッサキューの長さ              | window |
+| uptime               | 整数    | 起動後サーバーの稼働時間（TimeStamp）  | 共通     |
+
+## server_cpu_core
+
+---
+
+サーバーCPUコア別メトリクスです。
+
+-   収集間隔：5秒
+-   統計データ：-
+
+#### Tags
+
+| タグ名   | 説明                   | 備考 |
+| ----- | -------------------- | -- |
+| cpu   | サーバーコア番号             | -  |
+| IP    | サーバーIP               | -  |
+| oname | サーバー名                | -  |
+| os    | OSタイプ linuxまたはwindow | -  |
+
+#### Fields
+
+| フィールド名               | 単位    | 説明                   | 備考     |
+| -------------------- | ----- | -------------------- | ------ |
+| idle                 | パーセント | コアidle比率             | 共通     |
+| iowait               | パーセント | コアiowait比率           | window |
+| irq                  | パーセント | コアirq使用率             | linux  |
+| load1                | 少数    | コア1分平均 Load Average  | linux  |
+| load5                | 少数    | コア5分平均 Load Average  | linux  |
+| load15               | 少数    | コア15分平均 Load Average | linux  |
+| nice                 | パーセント | コアnice使用率            | 共通     |
+| processorQueueLength | 整数    | コアプロセスキューの長さ         | window |
+| softirq              | パーセント | コアsoftirq使用率         | linux  |
+| steal                | パーセント | コアsteal使用率           | linux  |
+| sys                  | パーセント | コアsys使用率             | linux  |
+| usr                  | パーセント | コアusr使用率             | linux  |
+
+## server_disk
+
+---
+
+各サーバーにマウントされたファイルシステム別メトリクスです。
+
+-   収集間隔：5秒
+-   統計データ：5分、1時間
+
+#### Tags
+
+| タグ名            | 説明                   | 備考 |
+| -------------- | -------------------- | -- |
+| deviceId       | デバイスID               | -  |
+| deviceIdHash   | デバイスIDハッシュ値          | -  |
+| fileSystem     | ファイルシステムタイプ          | -  |
+| mountPoint     | ファイルシステムマウントポイント     | -  |
+| mountPointHash | ファイルシステムマウントポイントハッシュ | -  |
+| oname          | サーバー名                | -  |
+| os             | OSタイプ linuxまたはwindow | -  |
+
+#### Fields
+
+| フィールド名           | 単位    | 説明                                     | 備考    |
+| ---------------- | ----- | -------------------------------------- | ----- |
+| blksize          | バイト   | ブロックサイズ                                | linux |
+| count            | 整数    | WhaTap専用                               | 共通    |
+| freePercent      | パーセント | ファイルシステム﻿残存率                           | linux |
+| freeSpace        | バイト   | ファイルシステム﻿残存量                           | linux |
+| ioPercent        | パーセント | IO使用率 「一部のディスクタイプでは不正確な値が測定されることがあります」 | linux |
+| ioutilOrder      | 整数    | WhaTap専用                               | linux |
+| queueLength      | 実数    | Queue Length                           | 共通    |
+| totalInode       | 整数    | Inode全体個数                              | linux |
+| totalSpace       | バイト   | ファイルシステム全体サイズ                          | linux |
+| usedPercent      | パーセント | ファイルシステム使用率                            | linux |
+| usedInode        | 整数    | Inode使用個数                              | linux |
+| usedInodePercent | パーセント | Inode使用率                               | linux |
+| userSpaceOrder   | 整数    | WhaTap専用                               | 共通    |
+| readBps          | バイト   | 毎秒読み込みバイト数                             | 共通    |
+| writeBps         | バイト   | 毎秒書き込みバイト数                             | 共通    |
+| readIops         | 少数    | 毎秒読み込み数                                | 共通    |
+| writeIops        | 少数    | 毎秒書き込み数                                | 共通    |
+
+## server_network
+
+---
+
+各サーバーのネットワークインターフェースのメトリクスです。
+
+-   収集間隔：5秒
+-   統計データ：5分、1時間
+
+#### Tags
+
+| タグ名      | 説明                   | 備考 |
+| -------- | -------------------- | -- |
+| desc     | ネットワークインターフェース名      | -  |
+| descHash | ネットワークインターフェースハッシュ値  | -  |
+| hwAddr   | MACアドレス              | -  |
+| IP       | インターフェースIPアドレス       | -  |
+| oname    | サーバー名                | -  |
+| os       | OSタイプ linuxまたはwindow | -  |
+
+#### Fields
+
+| フィールド名           | 単位    | 説明                                     | 備考    |
+| ---------------- | ----- | -------------------------------------- | ----- |
+| blksize          | バイト   | ブロックサイズ                                | linux |
+| count            | 整数    | WhaTap専用                               | 共通    |
+| freePercent      | パーセント | ファイルシステム﻿残存率                           | linux |
+| freeSpace        | バイト   | ファイルシステム﻿残存量                           | linux |
+| ioPercent        | パーセント | IO使用率 「一部のディスクタイプでは不正確な値が測定されることがあります」 | linux |
+| ioutilOrder      | 整数    | WhaTap専用                               | linux |
+| queueLength      | 実数    | Queue Length                           | 共通    |
+| totalInode       | 整数    | Inode全体個数                              | linux |
+| totalSpace       | バイト   | ファイルシステム全体サイズ                          | linux |
+| usedPercent      | パーセント | ファイルシステム使用率                            | linux |
+| usedInode        | 整数    | Inode使用個数                              | linux |
+| usedInodePercent | パーセント | Inode使用率                               | linux |
+| userSpaceOrder   | 整数    | WhaTap専用                               | 共通    |
+| readBps          | バイト   | 毎秒読み込みバイト数                             | 共通    |
+| writeBps         | バイト   | 毎秒書き込みバイト数                             | 共通    |
+| readIops         | 少数    | 毎秒読み込み数                                | 共通    |
+| writeIops        | 少数    | 毎秒書き込み数                                | 共通    |
+
+## server_netstat
+
+---
+
+各サーバーごとのネットワークプロトコルの統計情報です。
+
+-   収集間隔：5秒
+-   統計データ：5分、1時間
+
+#### Tags
+
+| タグ名                         | 説明                   | 備考 |
+| --------------------------- | -------------------- | -- |
+| oname                       | サーバー名                | -  |
+| os_arch                     | OSアーキテクチャ名           | -  |
+| os_cpucore                  | サーバーCPUコア数           | -  |
+| os_cpusocket                | サーバーCPUソケット数         | -  |
+| os_cpuvendor                | サーバーCPUベンダー名         | -  |
+| os_ip                       | サーバーIP               | -  |
+| os_memory                   | サーバーメモリサイズ           | -  |
+| os_nameOSタイプ linuxまたはwindow | -                    |    |
+| os_public_ip                | サーバーパブリックIP          | -  |
+| os_release                  | サーバーOSリリース名          | -  |
+| whatap_build                | WhaTapエージェントビルドハッシュ値 | -  |
+| whatap_home                 | WhaTapエージェントホームパス    | -  |
+| whatap_product              | WhaTap製品タイプ          | -  |
+| whatap_version              | WhaTapエージェントバージョン    | -  |
+
+#### Fields
+
+| フィールド名                 | 単位 | 説明                    | 備考 |
+| ---------------------- | -- | --------------------- | -- |
+| netstat_Close_Wait     | 整数 | CLOSE_WAITステータスソケット数  | 共通 |
+| netstat_Closing        | 整数 | CLOSINGステータスソケット数     | 共通 |
+| netstat_Established    | 整数 | Establishedステータスソケット数 | 共通 |
+| netstat_Fin_Wait1      | 整数 | FIN_WAIT1ステータスソケット数   | 共通 |
+| netstat_Fin_Wait2      | 整数 | FIN_WAIT2ステータスソケット数   | 共通 |
+| netstat_Last_Ack       | 整数 | LASK_ASKステータスソケット数    | 共通 |
+| netstat_Listen         | 整数 | LISTENステータスソケット数      | 共通 |
+| netstat_Syn_Recv       | 整数 | SYN_RECVステータスソケット数    | 共通 |
+| netstat_Syn_Sent       | 整数 | SYN_SENTステータスソケット数    | 共通 |
+| netstat_Time_Wait      | 整数 | TIME_WAITステータスソケット数   | 共通 |
+| netstat_Unknown        | 整数 | Unknownステータスソケット数     | 共通 |
+| Server_Filedescriptors | 整数 | OS file descriptor個数  | 共通 |
+
+## server_process
+
+---
+
+サーバープロセス情報です。
+
+-   収集間隔：20秒
+-   統計データ ：5分
+
+#### Tags
+
+| タグ名   | 説明                  | 備考 |
+| ----- | ------------------- | -- |
+| alias | サーバー別名              | -  |
+| cmd1  | プロセス実行コマンド1         | -  |
+| cmd2  | プロセス実行パラメータ         | -  |
+| hash  | プロセスハッシュ値           | -  |
+| name  | プロセス名               | -  |
+| oname | サーバー名               | -  |
+| user  | プロセスを実行したLinuxユーザー名 | -  |
+
+#### Fields
+
+| フィールド名              | 単位    | 説明                     | 備考 |
+| ------------------- | ----- | ---------------------- | -- |
+| count               | 整数    | プロセス個数                 | 共通 |
+| cpu                 | パーセント | CPU使用率                 | 共通 |
+| cpuAccumulated      | パーセント | WhaTap専用               | 共通 |
+| cpuOrder            | 順序    | WhaTap専用               | 共通 |
+| memOrder            | 順序    | WhaTap専用               | 共通 |
+| memory              | パーセント | メモリ使用率                 | 共通 |
+| memoryAccumulated   | パーセント | WhaTap専用               | 共通 |
+| openFileDescriptors | 整数    | open file descriptor個数 | 共通 |
+| rbps                | バイト   | ディスク毎秒読み込みバイト数         | 共通 |
+| rbpsAccmulated      | バイト   | WhaTap専用               | 共通 |
+| riops               | 整数    | ディスク毎秒読み込み数            | 共通 |
+| riopsAccmulated     | 整数    | WhaTap専用               | 共通 |
+| wbps                | バイト   | ディスク毎秒書き込みバイト数         | 共通 |
+| wbpsAccmulated      | バイト   | WhaTap専用               | 共通 |
+| wiops               | 整数    | ディスク毎秒の書き込み数           | 共通 |
+| wiopsAccmulated     | 整数    | WhaTap専用               | 共通 |
+| rss                 | バイト   | メモリRSSサイズ              | 共通 |
+| rssAccmulated       | バイト   | WhaTap専用               | 共通 |
+
+## 参考資料
+
+-   [ウィンドウインデックスデータ](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/cpu-analysis)
+-   [linuxメトリクス資料](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index)

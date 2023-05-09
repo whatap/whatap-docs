@@ -1,0 +1,14 @@
+A transaction in progress is called "active transaction." **A stack that has been regularly dumped by an active transaction is called active stack**.
+
+:::note
+The WhaTap agent dumps active stacks for active transactions every 10 seconds (optional) and sends them to the server. `active_stack_second=10`
+:::
+
+{@include: ../common-items/_compact-active-stacks.mdx}
+
+{@include: ../common-items/_background-thread.mdx} 
+
+## References
+
+-   [Active Transaction](https://brunch.co.kr/@leedongins/152)  
+-   [Active transactions that can detect failures quickly](https://brunch.co.kr/@leedongins/31)

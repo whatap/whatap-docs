@@ -1,0 +1,56 @@
+---
+id: delete-aws-resource
+title: Deleting AWS resources
+description: It explains how to delete the AWS resources being used by the WhaTap AWS Log project.
+tags:
+  - AWS Log
+  - Deleting
+---
+
+import TR from '@site/src/components/TR';
+
+To completely delete AWS resources used by your AWS Log project, delete the following three types of resources.
+
+-   **AWS resources** created by **CloudFormation**
+-   **Subscription filters** added to **CloudWatch LogGroup**
+-   **Event Notifications** added to **S3 Bucket**
+
+## Deleting AWS resources created by CloudFormation
+
+![Deleting cloudformation resources](/img/aws-log-cloudformation-resource.png)
+
+1.  Select **_CloudFormation_** on the AWS console.
+
+2.  Select a **_stack_** to delete.
+
+3.  Select **_Delete_** to delete all resources created by **_Stack_**.
+
+<!-- Delete 버튼을 선택해 해당 **Stack**에 의해 생성된 모든 자원들 한 번에 삭제하세요. -->
+
+## Deleting subscription filters from CloudWatch LogGroup
+
+![Deleting subscription filters](/img/aws-log-delete-subscription-filter.png)
+
+1.  Select **_CloudWatch_** on the AWS console. 
+
+2.  Find the subscribed **_LogGroup_**.
+
+3.  Select the ![number1](/img/number-01.png) **_Subscription filters_** tab of **_LogGroup_**. 
+
+4.  From the ![number2](/img/number-02.png) **_Subscription filters_** list, select your subscription settings. 
+
+5.  Select ![number3](/img/number-03.png) **_Delete_** for deletion.
+
+## Deleting event notifications from the S3 bucket
+
+![Deleting event notifications](/img/aws-log-delete-event-notification.png)
+
+1.  Select **_S3_** on the AWS console. 
+
+2.  Find the subscribed **_S3 bucket_**.
+
+3.  Go to the ![number1](/img/number-01.png) **_Properties_** tab of **_Buckets_**. 
+
+4.  Select ![number2](/img/number-02.png) **_Event notifications_** content set in the **_Properties_** tab. 
+
+5.  Select ![number3](/img/number-03.png) **_Delete_** for deletion.

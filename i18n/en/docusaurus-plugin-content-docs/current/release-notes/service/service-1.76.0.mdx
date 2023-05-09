@@ -1,0 +1,43 @@
+---
+id: service-1.76.0
+title: Service 1.76.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-06-08
+
+## `공통`
+
+**_Flex Board_**
+
+-   Enhance usability of the dashboard filtering
+-   Added the server process TopN widget
+-   Added the process TopN widget of the server resource Plus template and changed the layout
+-   Applied the function to distinguish mount points for each server on the server disk widget and to perform server filtering
+-   Fixed the server disk's treemap data duplication error
+-   Modified the Copy to me function
+-   Modified not to expose the board to other users upon creation of the Flex board in the integrated menu after selecting an organization
+
+**_멤버 관리_** - 멤버별 권한 정보 표시 수정
+
+## Application
+
+**_트랜잭션 검색_** - 에러만 보기 기능 추가
+
+**_MSA 분석_** - Caller-Callee 추이 차트 클릭 시 프로젝트 상세 화면 이동 링크 수정
+
+## Server
+
+**_메트릭스 차트_** - Network Traffic 지표 단위 수정
+
+## Container
+
+**_컨테이너맵_**
+
+-   Added the K8sEvent lookup function
+-   Changed the chart colors to distinguish the container status
+-   Enabled displaying the chart colors to distinguish depending on the threshold setting after selecting the field
+-   Added the metrics detail widgets for each container category

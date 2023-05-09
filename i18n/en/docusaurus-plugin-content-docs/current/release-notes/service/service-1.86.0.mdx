@@ -1,0 +1,63 @@
+---
+id: service-1.86.0
+title: Service 1.86.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-09-14
+
+## `공통`
+
+**_Flex Board_**
+
+-   Added the function to export the dashboard data as a PDF file 
+-   위젯 간 그룹화 기능 추가 (위젯 템플릿 > 기타 > 위젯 그룹화)
+-   Renewed the time inquiry range when navigating menus between favorite dashboards
+
+**_통합 대시보드_** - 트랜잭션 프로파일 연속 조회 불가 건 수정
+
+**_시간 선택자_** - 시간 이동 이상현상 수정
+
+## Integration
+
+**_인티그레이션 프로젝트_**
+
+-   클라우드 서비스를 비롯한 다양한 모니터링 대상을 단일 프로젝트에서 통합적으로 관리하기 위한 신규 상품 추가
+-   Provided the dashboards for each integration item, analysis menus with collected metrics, and event setting functions
+-   Integration Items
+    -   Amazon CloudWatch
+    -   Amazon ECS
+    -   Naver Cloud Monitoring
+    -   Oracle Cloud Monitor
+    -   Azure Monitor
+
+## Application
+
+**_멀티 트랜잭션 추적_** - 프로젝트 목록 계층화 표시 오류 수정
+
+**_트랜잭션 프로파일_** - 다이어그램 폰트 사이즈 조절 문제 수정
+
+## Container
+
+**_컨테이너 맵_**
+
+-   Enhanced the ActiveTX operation rules of the container screen
+-   상세 화면 > 이벤트 Normal, Warning 타입 필터링 기능 추가
+-   상세 화면 > 카드 상단 상태별 수량 부분 표시 스타일 개선
+
+**_Out of Memory Killed 컨테이너_** - 조회 시간 범위 선택 옵션 제거, 테이블 정렬 기능 수정 
+
+## Log
+
+**_로그 설정_** - 현재 사용량 조회 기능 추가 
+
+## Site Admin
+
+**_결제 관리_** > **_프로젝트 유료 전환_** - 상품 종류, 플랫폼 컬럼 병합
+
+**_결제 관리_** > **_청구 관리_**, **_계정 상태_** - 'open'에서 '정상'으로 컬럼 이름 변경
+
+**_결제 관리_** > **_청구서_** - 'Sub Total'에서 '사용액'으로 컬럼 이름 변경, 고객 노출(설정), 고객 노출(상태), 할인 정보 미표시 컬럼 숨김/표시 문구 수정

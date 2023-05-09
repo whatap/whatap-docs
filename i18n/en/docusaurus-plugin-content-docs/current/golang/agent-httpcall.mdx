@@ -1,0 +1,37 @@
+---
+id: agent-httpcall
+title: Tracing the HTTP calls
+description: It provides the options related to the Golang agent's HTTP calls.
+tags:
+  - Golang
+  - Tracing HTTPs
+---
+
+```go title='GO'
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Trace Http Call")
+    defer trace.End(ctx, nil)
+
+	httpcCtx, _ := httpc.Start(ctx, callUrl)
+    resp, err := http.Get(callUrl)
+    if err == nil {
+    	httpc.End(httpcCtx, resp.StatusCode, "", nil)
+    } else {
+    	httpc.End(httpcCtx, 0, "", err)
+    }
+}
+```
+
+**API**
+
+```go title='GO'
+func Start(ctx context.Context, url string) (*HttpcCtx, error)
+
+func End(httpcCtx *HttpcCtx, status int, reason string, err error) error
+
+func Trace(ctx context.Context, host string, port int, url string, elapsed int, status int, reason string, err error) error
+```

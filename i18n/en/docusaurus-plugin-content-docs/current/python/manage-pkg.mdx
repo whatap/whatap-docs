@@ -1,0 +1,38 @@
+---
+id: manage-pkg
+title: Package management
+description: The following explains how to manage the Python agent package.
+tags:
+  - Python
+  - Management
+---
+
+## Checking the package installation
+
+You can check the installation status of the WhaTap Python agent package with the following command:
+
+```javascript title=SH
+$ pip list | grep whatap-python
+```
+
+## Package update{#update-pkg}
+
+You can update the WhaTap Python agent package with the following command:
+
+```javascript title=SH
+$ pip install -U whatap-python
+```
+
+If a specific version has been specified, see the following:
+
+```javascript title=SH
+$ pip install -U whatap-python==[Specific Version]
+```
+
+## Deleting the package
+
+You can delete the WhaTap Python agent package with the following command:
+
+```javascript title=SH
+$ pip uninstall whatap-python
+```

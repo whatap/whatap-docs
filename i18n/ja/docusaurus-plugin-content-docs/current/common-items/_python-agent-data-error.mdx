@@ -1,0 +1,40 @@
+## プロジェクトエージェントの未登録およびモニタリングデータの未収集エラー
+
+ログファイル(_$WHATAP_HOME/logs/_)を確認してから、それぞれの問題について次のように解決してください。
+
+-   _whatap-hook.log_
+    -   CONF FILE ERROR：設定ファイルの作成権限がありません。ファイルを作ってください。
+    -   CONF READ ERROR：設定ファイルはありますが、読み取り権限がありません。権限を付与してください。
+    -   LOG FILE ERROR：ログディレクトリ作成権限がありません。ディレクトリを作成してください。
+    -   LOGGING ERROR：ログディレクトリはありますが、書き込み権限がありません。権限を付与してください。
+-   _whatap-boot-`yyyymmdd`.log_
+    -   license or whatp.server.host error：アクセスキーまたは収集サーバーのアドレスが無効です。
+
+### ポートの競合発生
+
+内部通信を行うエージェントは、基本的にUDP 6600番ポートを使用します。内部ポートが衝突する場合、`net_udp_port=xxx`オプションでポート番号を変更してください。
+
+### $WHATAP_HOME 環境変数の設定不可
+
+-   **Apache HTTPD**<br/>
+      Apacheでウェブサーバーを駆動する場合は、次のように環境変数を設定してください。
+
+    ```bash title=SH
+    <VirtualHost *:80>
+        #ServerName
+        #DocumentRoot
+
+            SetEnv WHATAP_HOME "application path"
+        # Directory
+    </VirtualHost>
+    ```
+-   **環境変数の手動設定**<br/>
+      必要によって、次のように手動で環境変数を設定してください。
+
+    ```python title=Python
+    ---
+    import os
+    os.environ.setdefault("WHATAP_HOME", [application path]")
+    import whatap
+    ---
+    ```

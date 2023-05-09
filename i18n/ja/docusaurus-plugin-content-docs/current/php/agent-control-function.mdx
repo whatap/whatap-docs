@@ -1,0 +1,48 @@
+---
+id: agent-control-function
+title: エージェント機能の制御
+description: アプリケーションサーバーの機能を制御する方法を提供します。
+tags:
+  - PHP
+  - 機能制御
+  - 設定
+  - アプリケーション
+---
+
+PHPアプリケーションサーバーの機能を制御できます。
+
+-   **whatap.stat_enabled**<span class='type'>Boolean</span><br/>
+      デフォルト値「true」<br/>
+      統計情報の追跡機能を活性化します。5分単位で収集されるトランザクション、SQL、HTTPCALL、UserAgent、ClientIPなどの統計データなどが該当します。
+
+-   **whatap.license**<span class='type'>String</span><br/>
+      エージェントのインストール時にサーバーから割り当てられたプロジェクトアクセスキーを設定します。 プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。
+
+-   **whatap.realtime_user_thinktime_max**<span class='type'>Milliseconds</span><br/>
+      デフォルト値「300000」<br/>
+      リアルタイムユーザーを測定するときに、同一ユーザーとして認められる最大の呼び出し間隔を指定します。
+
+-   **whatap.time_sync_interval_ms**<span class='type'>Milliseconds</span><br/>
+      デフォルト値「300000」<br/>
+      エージェントとサーバー間の時間の同期化サイクルを指定します。同期化しない場合は0と指定します。
+
+-   **whatap.text_reset**<span class='type'>Int</span><br/>
+        デフォルト値「0」<br/>
+        WhaTapエージェントは、一度送ったテキストタイプのデータはhash処理されるため、翌日まで再送信しません。以前の設定値と異なる値を設定する場合は、再送信します。
+    :::note
+    トランザクションURL、SQL Stringなどがテキストタイプデータに該当します。
+    :::
+
+-   **whatap.ext.error_enabled**<span class='type'>Boolean</span><br/>
+        デフォルト値「true」<br/>
+        PHP拡張モジュール（PHP Extension module）でエラー情報を収集する機能を活性化します。PHPコンパイルインストールをして、_php.ini_にwhatap項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.ext.exception_enabled**<span class='type'>Boolean</span><br/>
+        デフォルト値「true」<br/>
+        PHP拡張モジュール（PHP Extension module）で例外処理情報を収集する機能を活性化します。PHPコンパイルインストールをして、_php.ini_にwhatap項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
+    {@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.debug_gc_percent**<span class='type'>Int</span><br/>
+      デフォルト値「200」<br/> 
+      whatap-phpサービスデーモンのgc呼び出し間隔を増やすことでCPU負荷を減らすことができます。CPUの負荷が減る代わりにメモリ使用量が増えます。最大1000まで適用されます。

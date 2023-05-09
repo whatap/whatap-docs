@@ -8,6 +8,7 @@ import NavbarSearch from '@theme/Navbar/Search';
 import SearchBar from '@theme/SearchBar';
 import styles from './styles.module.css';
 import Translate, { translate } from "@docusaurus/Translate";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
   const {
     navbar: {hideOnScroll},
@@ -15,6 +16,17 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
       sidebar: {hideable},
     },
   } = useThemeConfig();
+  const {
+    i18n: {currentLocale},
+  } = useDocusaurusContext();
+  let whataphome, docshome;
+  if (currentLocale == 'ko') {
+    whataphome = 'https://www.whatap.io';
+    docshome = '/';
+  } else {
+    whataphome = 'https://www.whatap.io/' + currentLocale;
+    docshome = '/' + currentLocale;
+  }
   return (
     <div
       className={clsx(
@@ -24,7 +36,7 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
       )}>
       <div className='hold-menu'>
         <ul>
-          <li><a href='/' className='home'>
+          <li><a href={docshome} className='home'>
             {
               translate({
                 id: "docs_Name",
@@ -32,7 +44,7 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
               })
             }
           </a></li>
-          <li><a href='https://www.whatap.io' target='_blank' className='ext'>
+          <li><a href={whataphome} target='_blank' className='ext'>
             {
               translate({
                 id: "whatap_link_go",

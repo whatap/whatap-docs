@@ -1,0 +1,102 @@
+---
+id: container-map-metrics
+title: Metrics
+description: You can check the resource usage of Kubernetes and make sure the usage is set appropriately.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Metrics
+  - Metrics
+---
+
+Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > **_Metrics_**
+
+## Kubernetes metrics
+
+Kubernetes keeps an optimal state by continuously controlling and monitoring each container's resource usage. Accordingly, the process of checking resource usage and verifying the container resource usage setting based on that data is a basic pattern for Kubernetes monitoring.
+
+## CPU and memory metrics
+
+Typical Kubernetes resource settings are the container's CPU request/limit and memory request/limit. The following is an example of configuration.
+
+```text {10-15,19-24} showLineNumbers
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <Pod명>
+spec:
+  containers:
+  - name: <Container 1 person>
+    image: <Container 1 image>
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "100m"
+      limits:
+        memory: "128Mi"
+        cpu: "200m"
+  - name: <Container 2 persons>
+    image: <Container 2 images>
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "250m"
+      limits:
+        memory: "256Mi"
+        cpu: "500m"
+```
+
+With the above configuration, there are 2 containers in the pod. The resource settings for each container are as follows:
+
+| Target container | Resource type | Resource setting | Value    |
+| ---------------- | ------------- | ---------------- | -------- |
+| Container 1      | CPU           | Request          | 100 m    |
+| ^                | ^             | Limit            | 200 m    |
+| ^                | Memory        | Request          | 64 Mi    |
+| ^                | ^             | Limit            | 128 Mi   |
+| Container 2      | CPU           | Request          | 250 m    |
+| ^                | ^             | Limit            | 500 m    |
+| ^                | Memory        | Request          | 128 Mi   |
+| ^                | ^             | Limit            | 256 Mi   |
+
+It is not easy to understand the resource configuration data and the current usage of various containers. Therefore, the WhaTap Kubernetes monitoring service provides the function to easily check the resource settings and current usage for a single container, selected multiple containers, or the overall deployment.
+
+-   **Display Detail** screen > **_Metrics_** - Resource usage monitoring and analysis
+
+    ![Resource usage monitoring and analysis](https://img.whatap.io/media/images/whatap_kubernetes_container_map_resource_example.png)
+
+-   You can select a specific container to check its status.
+
+    ![Resource usage monitoring and analysis](https://img.whatap.io/media/images/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
+
+According to the above data, the CPU is set to Request 0.2 cores (200 m) and Limit 0.4 cores (400 m). The current CPU usage is 0.02 cores (20 m) (average for 5 seconds). If you check the CPU-related trend graph on the right, you can see that the CPU usage increases intermittently, although there is enough space.
+
+The memory is set to Request 128 MiB and Limit 256 MiB. By the way, the current memory usage is 184 MiB. According to the memory-related trend graph on the right, it exceeded 100% on a request basis and is using more than 70% on a limit basis.
+
+The main WhaTap metrics related to CPU and memory are as follows: 
+
+| Target resource | Shortname      | Name                                              | Description                                   |
+| --------------- | -------------- | ------------------------------------------------- | --------------------------------------------- |
+| CPU             | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | Container CPU utilization                     |
+| ^               | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | Container CPU utilization by request          |
+| ^               | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | Container CPU utilization by limit            |
+| Memory          | MemWs          | **_Container Memory Working Set (byte)_**         | Container memory working set                  |
+| ^               | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | Container memory working set usage by request |
+| ^               | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | Container memory working set usage by quota   |
+
+:::note
+Pod가 실행 중인 노드에 사용 가능한 리소스가 충분하면 컨테이너에 설정된 Request 이상의 리소스를 사용할 수 있습니다. 와탭 메트릭 중 **_Container CPU Usage by Request (%)_**, **_Container Memory Working Set by Request (%)_**의 값이 100%를 넘어설 수 있는 이유입니다.
+
+For example, let's assume that the container's memory request has been set to 128 MiB. If the node of the active container (pod) has the total memory of 4 GiB and there has no pod on that node, this container can use more than 128 MiB of memory.
+:::
+
+## Other metrics
+
+WhaTap provides various metrics other than CPU and memory.
+
+-   **_Container Block I/O Read Byte_** (IoReadBytes)
+-   **_Container Block I/O Write Byte_** (IoWriteBytes)
+-   **_Container Network Receive Byte_** (NetRxBytes)
+-   **_Container Network Transmit Byte_** (NetTxByes) 
+
+For more information about the WhaTap Kubernetes metrics, see [the following](metrics-intro).

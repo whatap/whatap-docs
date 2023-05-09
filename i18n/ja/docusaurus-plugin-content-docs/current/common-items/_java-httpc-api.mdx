@@ -1,0 +1,37 @@
+-   **profile_error_httpc_time_max** <span class='type'>Int</span><br/>
+    デフォルト値`10000`<br/>
+    HTTPCの実行時間が指定した値を超えると、TOO SLOWエラーとして処理されます。 `0`に設定するとエラー処理しません。
+
+-   **profile_httpc_resource_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    トレースからHTTP Call ステップを収集する時、そのステップで使用したCPUとメモリ使用量を追跡します。
+
+-   **profile_position_httpc** <span class='type'>Boolean</span><br/>
+    デフォルト値`false`<br/>
+    HTTPCが実行する時点のStackTraceを記録します。
+
+-   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値`true`<br/>
+    トランザクション内のHTTPC URLをパーシングして正規化する機能をアクティブにします。
+
+-   **trace_httpc_normalize_urls** <span class='type'>String</span><br/>
+      정규화할 HTTPC URL 패턴을 설정합니다. 호출 URL 패턴을 파싱해 패스 파라미터를 제거합니다.
+    :::note
+    예시, **/a/{v}/b**라고 선언하면 **a/123/b** → **a/{v}/b**로 치환합니다. 여러 개를 등록할 때는 쉼표(,)를 구분자로 사용합니다. 치환 패턴 정리 후 보완이 필요합니다.
+    :::
+
+-   **hook_httpc_patterns** <span class='type'>String</span>
+
+    HTTP outbound 호출을 수행하는 `full package 클래스명`.`메소드`를 설정합니다. HTTP Call을 수행하는 메소드(method)의 전체 경로(full path)를 등록해 사용합니다. 등록 후 클래스 재정의(class redefine)를 하거나 에이전트를 재시작해야 합니다.
+
+    ```ini title='whatap.conf'
+    hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
+    ```
+
+    :::note
+
+    -   클래스를 여러 개 등록하려면 쉼표(,)를 구분자로 사용하세요. 
+
+    -   와일드 카드는 별표(\*)만 사용할 수 있으며 정규식은 사용할 수 없습니다.
+
+    :::

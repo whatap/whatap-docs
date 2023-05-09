@@ -1,0 +1,30 @@
+---
+id: uninstall-agent
+title: Agent removal and rollback
+description: It explains how to remove and roll back the Java agent.
+tags:
+  - Java
+  - Delete
+---
+
+## Agent deletion
+
+On the application server, delete the JVM's `-javaagent` option and then restart the server. Afterwards, delete the `$WHATAP_HOME` environment variable.
+
+## Agent rollback
+
+1.  Select a project for rollback in [WhaTap Monitoring Service](https://service.whatap.io).
+
+2.  On the left of the screen, select **_Management_** > **_Agent Update_**.
+
+3.  Select **_Other Versions_**.
+
+    ![Management - Agent Rollback 1](/img/agent_rollback_1.png)
+
+4.  Select a version for rollback and then click **_Selected version_** or **_Download to all agents with the selected version_**.
+
+    ![Management - Agent Rollback 2](/img/agent_rollback_2.png)
+
+5.  During agent installation, in the modified script, change the `WHATAP_JAR` environment variable to the version for rollback.
+
+    ![Management - Agent Rollback JVM update](/img/agent_rollback_3.png)

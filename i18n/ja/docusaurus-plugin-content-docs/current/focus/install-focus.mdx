@@ -1,0 +1,90 @@
+---
+id: install-focus
+title: インストール
+description: WhaTap Focusをインストールする方法を提供します。
+tags:
+  - Focus
+  - インストール
+---
+
+WhaTap Focusは、単一実行ファイルで構成され、別途のインストールプロセスや登録プロセスが不要です。実行ファイルをダウンロードして任意の場所で実行できます。
+
+<!-- 구성 수정 필요 -->
+
+## 実行ファイルダウンロード
+
+WhaTap Focusは、単一実行ファイルで構成され、バージョン別にダウンロードしてすぐに使用できます。
+
+### 64 bit Debian / Ubuntu / Red Hat / CentOS / Amazon Linux / SUSE
+
+```bash title=SH
+wget http://repo.whatap.io/focus/linux_amd64/focus
+chmod +x ./focus
+```
+
+### 64 bit OSX
+
+```bash title=SH
+wget http://repo.whatap.io/focus/darwin_amd64/focus
+chmod +x ./focus
+```
+
+### 64 bit FreeBSD
+
+```bash title=SH
+wget http://repo.whatap.io/focus/freebsd_amd64/focus
+chmod +x ./focus
+```
+
+### 64 bit OSX
+
+```bash title=SH
+wget http://repo.whatap.io/focus/darwin_amd64/focus
+chmod +x ./focus
+```
+
+### 64 bit Windows
+
+```bash title=SH
+Invoke-WebRequest -Uri http://repo.whatap.io/focus/windows_amd64/focus.exe -OutFile focus.exe
+```
+
+### ArmV5 Linux
+
+```bash title=SH
+wget http://repo.whatap.io/focus/linux_arm_5/focus
+chmod +x ./focus
+```
+
+### ArmV6 Linux
+
+```bash title=SH
+wget http://repo.whatap.io/focus/linux_arm_6/focus
+chmod +x ./focus
+```
+
+### ArmV7 Linux
+
+```bash title=SH
+wget http://repo.whatap.io/focus/linux_arm_7/focus
+chmod +x ./focus
+```
+
+### Arm64 Linux
+
+```bash title=SH
+wget http://repo.whatap.io/focus/linux_amd64/focus
+chmod +x ./focus
+```
+
+<details>
+<summary>Focusファイル構成</summary>
+
+-   **Linux / FreeBSD / OSX / Raspberry Pi OS**
+    -   **focus**<br/>
+          データ収集および転送プログラムです。
+-   **Windows**        
+    -   **focus.exe**<br/>
+          データ収集および転送プログラムです。             
+
+</details>

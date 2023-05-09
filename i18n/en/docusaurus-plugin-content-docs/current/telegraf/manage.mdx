@@ -1,0 +1,120 @@
+---
+id: manage
+title: Management
+description: You can manage Telegraf agents through the whatap.conf file.
+tags:
+  - Telegraf
+  - Management
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Telegraf 에이전트 관리를 위해 _whatap.conf_ 파일을 통해 설정할 수 있는 추가 옵션에 대해 알아봅니다.
+
+## Update
+
+<Tabs>
+<TabItem value="rc" label="Red Hat/CentOS">
+
+1.  Delete cache data for updating package information.
+    ```bash title=SH
+    $ yum clean all
+    ```
+2.  Update the whatap-telegraf package.
+    ```bash title=SH
+    $ yum update whatap-telegraf
+    ```
+3.  To install a version, specify the version data during installation.
+    ```bash title=SH
+    $ sudo yum install whatap-telegraf-{version}
+    ```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+1.  Delete cache data for updating package information.
+    ```bash title=SH
+    $ sudo apt-get update
+    ```
+2.  Update the whatap-telegraf package.
+    ```bash title=SH
+    $ sudo apt-get install --only-upgrade whatap-telegraf
+    ```
+3.  To install a version, specify the version data during installation.
+    ```bash title=SH
+    $ sudo apt-get install whatap-telegraf={version}
+    ```
+
+</TabItem>
+<TabItem value="fb" label="FreeBSD">
+
+1.  Install the package again.
+    ```bash title='SH'
+    # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
+    # pkg install whatap-telegraf-0.0.4.txz
+    ```
+2.  특정 버전을 설치하기 위해서는 `{version}`에 버전 정보를 입력해 설치하세요.
+    ```bash title='SH'
+    # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-{version}.txz
+    # pkg install whatap-telegraf-{version}.txz
+    ```
+
+</TabItem>
+</Tabs>
+
+## Pause
+
+<Tabs>
+<TabItem value="rc" label="Red Hat/CentOS">
+
+```bash title='SH'
+$ sudo service whatap-telegraf stop
+```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+```bash title='SH'
+$ sudo service whatap-telegraf stop
+```
+
+</TabItem>
+<TabItem value="fb" label="FreeBSD">
+
+```bash title='SH'
+$ service whatap_telegraf stop
+```
+
+</TabItem>
+</Tabs>
+
+## Delete
+
+-   Delete the package (yum, apt-get). 
+
+    <Tabs>
+      <TabItem value="rc" label="Red Hat/CentOS">
+
+    ```bash title='SH'
+    $ sudo yum remove whatap-telegraf
+    ```
+
+    </TabItem>
+      <TabItem value="du" label="Debian/Ubuntu">
+
+    ```bash title='SH'
+    $ sudo apt-get purge whatap-telegraf
+    ```
+
+    </TabItem>
+      <TabItem value="fb" label="FreeBSD">
+
+    ```bash title='SH'
+    $ pkg delete whatap-telegraf
+    ```
+
+    </TabItem>
+      </Tabs>
+
+-   필요한 경우 _/usr/whatap/telegraf_ 하위의 로그 파일 및 기타 파일을 삭제하세요.

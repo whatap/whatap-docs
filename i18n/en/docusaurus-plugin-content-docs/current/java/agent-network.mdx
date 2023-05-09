@@ -1,0 +1,15 @@
+---
+id: agent-network
+title: Agent communication settings
+description: It describes the connection settings between the agent and the server.
+tags:
+  - Java
+---
+
+{@include: ../common-items/_common-network.mdx}
+
+-   **net_send_queue1_size** <span class='type'>Int</span><br/>
+    Default `256`<br/>Set the size of the queue for data transfer excluding the trasaction traces and active stacks. Set it to 10, when the set size is 10 or less.
+
+-   **net_send_queue2_size** <span class='type'>Int</span><br/>
+    Default `512`<br/>Set the size of the queue to be used for transfer of transaction traces and active stack data. Set it to 10, when the set size is 10 or less.

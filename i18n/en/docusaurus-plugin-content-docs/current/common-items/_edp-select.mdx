@@ -1,0 +1,43 @@
+1.  **Method Trace Setting**<br/>
+    Set the method trace. Be sure to specify a class that is called in transactions. The **JDBC driver** is useful for the programs that use the database. 
+    ```ini title='whatap.conf'
+    hook_method_patterns=jdbc.*.*
+    hook_method_access_public_enabled=true
+    hook_method_access_protected_enabled=true
+    hook_method_access_none_enabled=true
+    ```
+2.  **Transaction start option setting**<br/>
+    Start a transaction when the method is called. Turn on the transaction start option and the option to dump the stack at the start of a transaction. 
+
+    ```ini title='whatap.conf'
+    trace_auto_transaction_enabled=true
+    trace_auto_transaction_backstack_enabled=true
+    ```
+3.  **Trace analysis after restart**<br/>
+    Restart it. After calling the service, you can see the transaction being traced. 
+
+    If you view the transaction, you can see that the methods of all classes starting with `jdbc.*` appear in this transaction. If you view the transaction trace, you can see the message step called **TRANSACTION BACKSTACK**.
+
+    ```bash title='TRANSACTION BACKSTACK'
+    jdbc.FakePreparedStatement.executeQuery(FakePreparedStatement.java),
+    com.virtual.dao.SelectDAO.execute2(SelectDAO.java:29),
+    com.virtual.web.SimulaNonHttp.execute(SimulaNonHttp.java:147),
+    com.virtual.web.SimulaNonHttp.process(SimulaNonHttp.java:76),
+    com.virtual.web.SimulaNonHttp.run(SimulaNonHttp.java:100)
+    ```
+4.  **Check Stack Content**<br/>
+     By checking the stack content, you can infer which method the transaction is departing from.
+
+    ```bash title='예제'
+    com.virtual.web.SimulaNonHttp.execute(SimulaNonHttp.java:147),
+    com.virtual.web.SimulaNonHttp.process(SimulaNonHttp.java:76),
+    com.virtual.web.SimulaNonHttp.run(SimulaNonHttp.java:100)
+    ```
+
+    One of the above three methods can be determined as the start point of a transaction. In this situation, perform reverse compilation to determine the appropriate **transaction end point**.
+
+    Looking at the logic, `while()` runs within `SimulaNonHttp.run`, `SimulaNonHttp.process()` is called, and then `SimulaNonHttp.execute()` is run. We can guess that `process()` is appropriate. This part must be determined by looking at the source.
+
+    :::tip
+    The most **important criterion for **end point** is that it must be ended**. Under normal circumstances, it must terminate immediately without any delay so that the performance evaluation can be made.
+    :::

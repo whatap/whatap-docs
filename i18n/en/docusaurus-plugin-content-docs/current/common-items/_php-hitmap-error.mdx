@@ -1,0 +1,32 @@
+## In case transactions do not appear in the response time distribution chart
+
+<!-- 응답 시간 분포도(히트맵) -> 응답 시간 분포도 즉 히트맵 -->
+
+The CPU and memory graphs appear but the response time distribution chart (hitmap) does not appear in the following cases: 
+
+-   The agent is connected to the collection server but the tracer is not applied to the PHP extension module.
+-   Apache and PHP-FPM have not been restarted after configuration.
+
+1.  Check whether the PHP extension module has been applied.
+
+    ```bash title='PHP 확장 모듈 확인'
+    $ sudo php -m
+
+    [PHP Modules]
+    bz2
+    calendar
+    Core
+    ctype
+    curl
+    date
+    …
+    whatap               # Check the WhaTap module load
+    …
+    [Zend Modules]
+    ```
+
+2.  Restart Apache and PHP-FPM services.
+
+3.  If the PHP extension module has not been applied, it indicates abnormal installation. Check whether the path of _whatap.so_ or _whatap.ini_ meets the PHP environment.<br/>
+        With referring to the following guide, check the items like ![PHP command (CLI) path] \(#check-php-cli-path), ![PHP extension module path](#check-php-extension-module), and ![Additional PHP ini configuration file path](#php-ini-path).
+    <!-- 위 항목의 포함관계 검토 필요-->

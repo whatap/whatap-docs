@@ -1,0 +1,84 @@
+---
+id: golang-0.1.6
+title: Golang Agent 0.1.6
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+リリーズ：2021-11-23
+
+## ベータ - アップデート
+
+### google.golang.org/grpcライブラリに対応
+
+```go title='설치 안내'
+
+import (
+  "github.com/whatap/go-api/instrumentation/google.golang.org/grpc/whatapgrpc"
+)
+
+func main() {
+  ...
+  // client
+  // Set the whatap interceptor to grpc
+  conn, err := grpc.Dial(fmt.Sprintf("%s:%d", *grpcHost, *grpcPort),
+    grpc.WithInsecure(),
+    grpc.WithBlock(),
+    grpc.WithUnaryInterceptor(whatapgrpc.UnaryClientInterceptor()),
+    grpc.WithStreamInterceptor(whatapgrpc.StreamClientInterceptor()))
+      
+  //---------------------------
+
+  // server
+  // Set the whatap interceptor to grpc
+  grpcServer := grpc.NewServer(
+    grpc.UnaryInterceptor(whatapgrpc.UnaryServerInterceptor()),
+    grpc.StreamInterceptor(whatapgrpc.StreamServerInterceptor()))
+
+  ...
+}
+```
+
+[参考例](https://github.com/whatap/go-api-example/tree/main/google.golang.org/grpc)
+
+#### 設定
+
+`grpc_profile_enabled`<br/>
+#Default : true#<br/>
+#Type : boolean# 
+
+grpc情報の収集有無を設定します。 
+
+`grpc_profile_stream_client_enabled`<br/>
+#Default : true#<br/>
+#Type : boolean#  
+
+client stream method情報の収集有無を設定します。
+「false」：stream method情報を収集しません。 
+
+`grpc_profile_stream_server_enabled`<br/>
+#Default : true#<br/>
+#Type : boolean#  
+
+server stream method情報の収集有無を設定します。
+「false」：stream method情報を収集しません。 
+
+`grpc_profile_ignore_method`<br/>
+#Default : agent#<br/>
+#Type : String# 
+
+指定されたメソッドを収集しません。複数指定の場合はコンマ（,）で区切ります。
+
+`grpc_profile_stream_method`<br/>
+#Default : "" #<br/>
+#Type : String# 
+
+指定されたstream methodを別のトランザクションとして構成します。複数指定の場合はコンマ（,）で区切ります。長時間続くstream接続に対して、methodそれぞれの呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。 
+
+`grpc_profile_stream_identify`<br/>
+#Default : false#<br/>
+#Type : boolean#  
+
+Stream full methodをトランザクション名で収集し、同じfull methodに対してclient、serverを区別できる接頭辞を追加します。（_/Stream Client/[full method]_、_/Stream Server/[full method]_）

@@ -1,0 +1,128 @@
+---
+id: tx-profile
+title: Transaction search
+description: You can search for the desired transaction based on the individual transaction's performance properties.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Application
+  - Transactions
+---
+
+Home > Select Project > **_Application_** > **_Transaction Search_**
+
+![Transaction Search](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile.png)
+
+You can search for the desired transaction based on the individual transaction's performance properties.
+
+![Column Selection](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_column.png)
+
+To query the result, click ![Column selection icon](/img/ico-column-set.svg) **_Select Column_** to check.
+
+:::note
+It is recommended to set the search time as short as possible because a response delay may occur depending on the search conditions.
+:::
+
+## Elapsed Time
+
+![Elapsed Time](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_time.png)
+
+Search is performed based on the transaction response time. Search by entering two values above and below the reference.
+
+## Error Message
+
+![Error Message](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_error.png)
+
+Search is performed based on the transaction error message. In the default state, error-related columns may not be seen. Select a column to check.
+
+## HTTP Call Count
+
+![HTTP call count](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_http.png)
+
+Search based on the number of external HTTP service calls made for transactions.
+
+## SQL Count
+
+![SQL Review](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_sql.png)
+
+Search for transactions where the number of SQL executions per transaction exceeds the set number. Exceptionally, this is used to search transactions that call SQLs excessively.
+
+## SQL Fetch Count
+
+![SQL Patch Count](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_sqlfetch.png)
+
+After executing an SQL, search based on the number of DB patches. The count is based on the transaction. Use this to search transactions that perform excessive data fetches.
+
+## URL
+
+![URL](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_url.png)
+
+Transactions are searched based on the URL. The entered search string is compared and searched by inclusion (partial matching).
+
+## IP
+
+![IP](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_ip.png)
+
+Transactions are searched based on the IP. However, IP strings are searched by prefix comparison (forward matching).
+
+## Domain
+
+![Domain](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_domain.png)
+
+Transactions are retrieved based on the HTTP service domain (host:port). The search conditions must match the domain completely (full match).
+
+## User Agent
+
+![User Agent](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_useragent.png)
+
+Search transactions based on the user agent (partial match). 
+
+## Referer
+
+![Referer](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_referer.png)
+
+Search transactions based on the referer string.
+
+:::note
+기본 설정 상태의 에이전트는 Referer 정보를 수집하지 않습니다. Referer 설정이 필요한 경우 다음 문서를 참조해 관련 설정을 추가하세요.
+
+-   [Java](../java/analysis-apm-trs#stat-referer)
+-   [Node.js](../nodejs/analysis-apm-trs#stat-referer)
+-   [Python](../python/analysis-apm-trs#stat-referer)
+:::
+
+## 트랜잭션 ID
+
+![Transaction ID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_tid.png)
+
+Search transactions based on their transaction ID (full match). For transaction IDs, the search indexes are created for searching at a high speed.
+
+:::note
+If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+:::
+
+## Multi-transaction ID
+
+![Multi Transaction ID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_mtid.png)
+
+Search transactions based on the multi-transaction ID (full match).
+
+:::note
+If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+:::
+
+## Client ID
+
+![Client ID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_clientid.png)
+
+The client ID (`wClientId`) is an ID given by the WhaTap agent to identify users. Transactions are searched based on this ID (full match). There is no separate index for searching.
+
+## Login ID
+
+![Login ID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_loginid.png)
+
+Search transactions based on the login ID.
+
+:::note
+Agents in their default settings do not collect login IDs. For more information about the login ID setting, see [the following](../java/script-plugin#common-plugin) to add settings.
+:::

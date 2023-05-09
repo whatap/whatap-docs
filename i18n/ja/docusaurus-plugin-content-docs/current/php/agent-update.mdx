@@ -1,0 +1,99 @@
+---
+id: agent-update
+title: エージェントのアップデート
+description: PHPエージェントのアップデート方法を提供します。
+tags:
+  - PHP
+  - アップデート
+  - 管理
+  - アプリケーション
+---
+
+パッケージアップデートは、既存の設定を維持したままPHPモニタリングサービスをアップデートします。0.2.7以降のバージョンから正常なアップデートが提供されます。以前のバージョンは削除後、**再インストール**が必要です。
+
+:::caution
+Apache実行中にphp extensionの_shared library(.so)_ファイルが変更される場合、Apache Daemonが異常終了することがあります。必ずApacheサーバーを停止した状態でアップデートを進めてください。
+:::
+
+## Redhat/CentOS
+
+1.  パッケージ情報の更新のためにキャッシュ情報を削除してください。
+
+    ```bash
+    $ yum clean all
+    ```
+
+2.  ApacheまたはPHP-FPMのサービスを停止してください。
+
+3.  whatap-phpのパッケージをアップデートしてください。
+
+    ```bash
+    $ yum update whatap-php
+    ```
+
+    :::note
+    特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
+
+    ```bash
+    $ yum update whatap-php-{version}
+    ```
+
+    :::
+
+## Debian/Ubuntu
+
+1.  パッケージ情報の更新のため、キャッシュ情報を更新してください。
+
+    ```bash
+    $ sudo apt-get update
+    ```
+
+2.  ApacheまたはPHP-FPMのサービスを停止してください。
+
+3.  whatap-phpのパッケージをアップデートしてください。
+
+    ```bash
+    $ sudo apt-get install --only-upgrade whatap-php
+    ```
+
+    :::note
+    特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
+
+    ```bash
+    $ sudo apt-get install whatap-php={version}
+    ```
+
+    :::
+
+## FreeBSD
+
+エージェントを削除した後、再インストールしてください。次の項目を参考にして進めてください。
+
+1.  ApacheまたはPHP-FPMのサービスを停止
+
+2.  エージェントを削除した後、再インストール
+
+    ```bash
+    $ /usr/whatap/php/install.sh remove
+
+    $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-0.4.10.txz
+    $ pkg install whatap-php-0.4.10.txz
+    ```
+
+3.  PHP拡張モジュールおよびwhatap-phpサービスの登録
+
+    ```bash
+    $ /usr/whatap/php/install.sh
+    ```
+
+    :::note
+
+    -   特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
+
+        ```bash
+        $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
+        $ pkg install whatap-php-{version}.txz
+        ```
+    -   ApacheまたはPHP-FPMのサービスを開始します。
+
+    :::

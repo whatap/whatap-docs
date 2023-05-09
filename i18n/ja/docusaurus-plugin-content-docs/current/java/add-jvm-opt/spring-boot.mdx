@@ -1,0 +1,42 @@
+---
+id: spring-boot
+title: Spring Boot
+description: Spring Bootアプリケーションサーバ環境でJVMオプションの追加設定を完了してください。
+tags:
+  - Java
+  - Spring Boot
+---
+
+Spring Bootを使用するアプリケーションサーバー環境でJVMオプションを追加する方法を確認してください。 
+
+## Spring Boot 2.X.X以下
+
+開始スクリプトにJVMオプションとして`-javaagent`を追加してください。
+
+```bash
+java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
+```
+
+{@include: ../../common-items/_start-apm.mdx}
+
+## Spring Boot 3.0.X
+
+-   jakarta.servlet.http.HttpServlet追跡（同期方式）
+
+    ```ini title='whatap.conf'
+    weaving=tomcat10
+    ```
+
+-   WebClient追跡（非同期方式）
+
+    ```ini title='whatap.conf'
+    weaving=webflux-6.0
+    ```
+
+-   reflection関連JVMオプションの追加でアプリケーション起動
+
+    ```bash title='Java 17 이상만 지원'
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
+    ```
+
+{@include: ../../common-items/_start-apm.mdx}

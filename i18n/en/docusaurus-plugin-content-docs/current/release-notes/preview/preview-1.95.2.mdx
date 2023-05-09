@@ -1,0 +1,106 @@
+---
+id: preview-1.95.2
+title: Preview 1.95.2
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+<https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+
+---
+
+## Hotfix: 2023-02-16
+
+### `Application`
+
+#### Analytics
+
+<Status>Fixed</Status> <UI>히트맵</UI> 메뉴에서 <UI>TX 트레이스</UI> 테이블의 <UI>종료 시간</UI> 컬럼이 <UI>시작 시간</UI> 컬럼보다 앞에 표시되는 버그 수정
+
+## Hotfix: 2023-02-09
+
+### `Application`
+
+#### Analytics
+
+<Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> > <UI>트리 뷰</UI> 메뉴에서 프로파일 연계 정보가 트리형 구조로 표현되지 않는 버그 수정
+
+## Official Release: 2023-02-08
+
+### `공통`
+
+#### Flex Board
+
+<Status>Feature</Status> <UI>홈 화면</UI> > <UI>Flex 보드</UI> 메뉴의 대시보드 목록에서 대시보드 공유(<img src='/img/ico-flexboard-share.svg' alt='공유 아이콘' />) 기능 추가
+
+#### Analytics
+
+-   <Status>Fixed</Status> <UI>사이트맵</UI> > <UI>분석</UI> > <UI>메트릭스 이상 탐지</UI> 메뉴에서 카테고리, 필드 선택 UI 버그로 인해 UI 로직 교체
+
+-   <Status>Fixed</Status> <UI>큐브</UI> 메뉴에서 조회가 끝나지 않은 경우 <UI>시작일</UI>, <UI>관심 지표</UI>, 대시보드 탭을 변경할 수 없도록 수정
+
+#### 트랜잭션 상세 `Application`
+
+-   <Status>Change</Status> <UI>SQL</UI> 분석 탭의 명칭을 <UI>SQL 요약</UI>으로 변경
+
+-   <Status>Change</Status> <UI>메소드 분석</UI> 탭의 명칭을 <UI>메소드 요약</UI>으로 변경
+
+-   <Status>Feature</Status> <UI>HTTP 호출 요약</UI> 탭 추가 : HTTP 호출의 호출 건수, 합계 시간, 평균 시간 정보  제공
+
+#### Management
+
+-   **_관리_** > **_프로젝트 멤버_** 메뉴에서 다음의 기능을 추가합니다.
+
+    -   <Status>Feature</Status> 프로젝트 멤버 관리성 향상을 위한 멤버의 소속(<UI>그룹</UI>/<UI>프로젝트</UI>) 유형 표시
+
+    -   <Status>Feature</Status> 멤버 삭제(<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) 버튼 비활성화 시 툴팁(삭제 불가능한 이유) 추가
+
+-   **_이용 내역_**, **_결제 관리_** 메뉴에서 다음의 기능을 수정합니다.
+
+    -   <Status>Change</Status> <UI>청구서 미리보기</UI> / <UI>사용량</UI> 메뉴에서 로그 과금 기준 변경에 따른 로그 표시 단위 및 표현 단위 변경
+
+        -   로그 표시 단위 변경: LOGs ⇒ LOG UNITs
+        -   로그 표현 단위 변경: 합산된 로그 라인 수의 일 평균 표시로 변경
+        -   <UI>청구서 미리보기</UI> 메뉴에서 <UI>과금 집계량</UI> 컬럼의 로그 사용량 표시 변경
+        -   <UI>사용량</UI> 메뉴에서 사용량 상세의 미터링 요약 컬럼 변경
+
+<!--
+### front.conf 파일 설정
+
+- <Status>Change</Status> <code>Application</code>에만 해당, <code>hide_apply_to_all_agents=true</code> 옵션 설정 시 <UI>모든 에이전트에 적용</UI> 버튼을 노출하지 않도록 수정
+
+- <Status>Change</Status> <code>ui_show_logsink=false</code> 옵션 설정 시 <UI>로그</UI> 관련 메뉴를 노출하지 않도록 수정
+-->
+
+### `Application`
+
+#### Active Transaction
+
+<Status>Change</Status> 스레드 중지를 위해 시크릿키를 입력하는 창에서 입력값이 보이지 않도록 수정
+
+### `Server`
+
+<Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 서버 상태 아이콘 클릭 시 나타나는 모달 내용이 선택한 서버와 일치하지 않는 버그 수정
+
+### `Container`
+
+#### Container Map
+
+<Status>Feature</Status> Pod 카테고리 뷰 그룹화 조건에 <UI>DaemonSet</UI>, <UI>StatefulSet</UI> 추가
+
+<!--
+### `Database`
+
+#### 통계/보고서
+
+<Status>Feature</Status> <b>MySQL</b>, <b>Tibero</b> 상품의 <UI>보고서</UI> 메뉴에서 일간/주간/월간 사용자 정의 보고서 추가
+
+  - 성능 추이 차트 지표 선택 기능
+  - 테이블 사이즈 증감, 데이터베이스 사이즈 리스트
+-->

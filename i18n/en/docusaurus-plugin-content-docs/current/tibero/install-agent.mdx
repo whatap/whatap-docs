@@ -1,0 +1,66 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
+tags:
+  - Tibero
+  - Database Monitoring
+  - Agent
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+The following guides you to the basic installation method for using the WhaTap database monitoring service.
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## Downloading the WhaTap database agent
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+
+```ini title='whatap.conf'
+license=프로젝트 액세스 키
+whatap.server.host=13.124.11.223/13.209.172.35 // 와탭 서버 정보
+
+dbms=tibero
+db=데이터베이스명(sid)
+db_ip=데이터베이스 IP
+db_port=데이터베이스 포트 
+```
+
+1.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+
+  Download the JDBC driver for the OS and version of your database server.
+
+**Tibero JDBC Drivers**: `{$TB_HOME}`/client/lib/jar/tibero\{Version}-jdbc.jar
+
+:::note
+In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installation paths for each database.
+:::
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+<!-- Tibero -->
+
+```bash showLineNumbers
+create user whatap identified by 'DB_PASSWORD'; ## 원하는 password를 입력하세요.
+grant create session to whatap;
+grant select any dictionary to whatap;
+ 
+## kill session 사용시
+grant alter system to whatap;
+```
+
+## DB user file creation {#create-db-user}
+
+{@include: ../common-items/_db-create-db-user-file.mdx}  

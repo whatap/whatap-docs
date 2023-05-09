@@ -1,0 +1,82 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - CUBRID
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## エージェントダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
+
+db = {$CUBRID_HOME/databases/databases.txtのdb-name}
+db_ip = {DBサーバーのIPアドレス}
+db_port = {$CUBRID_HOME/conf/cubrid_broker.confのBROKER_PORT (default : 33000)}
+cms_port = {$CUBRID_HOME/conf/cm.confのcm_port (default : 8001)}
+```
+
+1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョンに合うJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+## モニタリングのためのアカウント作成
+
+CUBRIDをモニタリングするためには、DBアカウントとCUBRID Managerアカウントの両方が必要です。一般的にDBのデフォルトdbaアカウント(`dba`)とCUBRID Managerアカウント(`admin`)を使います。別のアカウントを作成して使用することもできます。
+
+## DBユーザーファイルの作成{#create-db-user}
+
+データベース接続のために暗号化されたUIDを生成します。 ユーザーファイルは、ユーザーDB(`dba`)와 CUBRID Manager(`admin`)に対してすべて実行する必要があります。usernameとpasswordを入力し、シェルスクリプト（またはバッチファイル）を実行してください。 
+
+-   _uid.sh_シェルスクリプトファイル（または_uid.bat_配置ファイル）は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。
+
+-   `dba`と`DB_PASSWORD`は、会員登録時に使用したユーザー名とパスワードです。
+
+    ```bash title='uid.sh | uid.bat'
+    ./uid.sh dba DB_PASSWORD
+    ./cmsuid.sh admin ADMIN_PASSWORD
+
+    # または
+
+    ./uid.bat "dba" "DB_PASSWORD"
+    ./cmsuid.bat "admin" "ADMIN_PASSWORD"
+    ```
+
+:::note
+
+-   最初の一度だけ設定すると、それ以降は暗号化されたUIDでモニタリング対象データベースサーバーからデータ収集を進めます。
+-   DBユーザー ファイルを生成するには、プロジェクトアクセスキーが_whatap.conf_ファイルに入力されている必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
+-   Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameのような形式で入力する必要があります。
+-   `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character（\\）を一緒に入力してください。
+
+    ```bash title='예시'
+    ./uid.sh whatap whatap\!pwd
+    ```
+
+:::

@@ -1,0 +1,57 @@
+---
+id: service-1.74.0
+title: Service 1.74.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-05-25
+
+## `공통`
+
+**_Flex Board_**
+
+-   Added the responsive Flex board (placing widgets in grid format) function
+-   Added the widgets for server process CPU and memory TopN
+-   Modified the server resource plus template widget configuration; fixed the filtering application bug of user-created dashboards that use the templates
+-   Display of the email entered for sharing the integrated Flex board with other users 
+
+**_에이전트 설정_** - 신규 에이전트 설정 메뉴 추가
+
+-   Application, Container Project - Agent CONF. - Provided the New Agents Setting link
+-   Enhanced usability of the setting value input function
+-   Enhanced the agent option search function
+-   Added the export and import functions using JSON
+-   Added the function to edit the agent type and project-based agent settings (default values) (if you have edit permission for projects)
+-   Enhanced the function to apply to all agents
+
+**_프로젝트 목록_** - 프로젝트별 카드뷰 스타일 개선 
+
+**_멤버 관리_** - 멤버 초대 시 이메일 검증 기능 개선
+
+**_MXQL 실행기_** - 테이블 데이터 표현 수정
+
+## Application
+
+**_에이전트 설치_** - Go 모니터링 라이브러리 사용 안내 링크 수정
+
+**_멀티 트랜잭션_** - 일자 선택 옵션 추가
+
+## Server
+
+**_정비계획_** - 멤버 수정 권한 적용, 화면 오류 수정
+
+**_서버 에이전트 이전_** - 조직 변경 시 프로젝트 선택 목록 갱신 오류 수정
+
+## Container
+
+**_컨테이너맵_**
+
+-   Added the container information for each pod upon selection of a pod category; added the function to select the container state (ConState) field
+-   Added the function to view the Kubernetes events
+-   Added the description pop-ups for each metric
+-   Enabled to display the weight on the threshold color upon threshold setting; modified to display as normal when the field value is 0
+
+**_멀티 서비스 히트맵_** - 위젯 배치 정렬

@@ -1,0 +1,317 @@
+---
+id: java-2.1.0
+title: Java Agent 2.1.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+## 2021-12-15
+
+### Modification of the agent management scheme
+
+#### Agent version scheme modified
+
+The agent version scheme has been changed to 2.1.x.
+
+### Modification of the configuration of the Java agent release package
+
+From whatap.agent-2.1.0, the configuration of the Java agent package has been changed.
+
+-   _whatap.agent-2.1.0.jar_ : 에이전트 코어 jar
+-   _whatap.agent.proxy-2.1.0.jar_ : 와탭 서버와 직접연결이 어려워 우회 연결 지원
+-   _whatap-logsink-lz4-1.7.0.jar_ : 로그 모니터링(LogSink)에서 데이터를 압축 하기 위한 플러그 모듈 (기본은 JDK에서 기본으로 제공하는 GZIP 사용)
+
+### Expansion of Java support range
+
+By using the ASM library v9.2, the support scope of WhaTap Labs Java agent has been expanded from java14 to java17.
+
+### Automation of multi-server tracing (mtrace)
+
+#### The default policy for tracing the multi-server connection modified
+
+The default value of agent-to-agent call performance tracing has been changed to on.
+
+```ini title='whatap.conf'
+tx_caller_meter_enabled = true
+sql_dbc_meter_enabled = true
+httpc_host_meter_enabled = true
+actx_meter_enabled = true
+actx_slice_meter_enabled = true
+
+tx_caller_meter_pkind_enabled = true
+actx_meter_pkind_enabled = true
+```
+
+#### Automatic application of the multi-server tracing
+
+User Agent를 기반으로 브라우저가 호출하는 트랜잭션에 한하여 자동으로 처리하도록 변경 하였습니다.
+(User Agent가 'Moz'로 시작하는 경우에 한하여 mtrace_rate가 동작하는 방식)
+
+```ini title='whatap.conf'
+mtrace_auto_enabled=true (default value)
+mtraceable_user_agent=Moz  (default value)
+```
+
+#### Automatic adjustment of the multi-server tracing rate
+
+명시적으로 mtrace_rate를 지정하지 않은 경우 500tps 이상의 환경에서는 자동으로 rate를 낮추는 기능을 추가 하였습니다. 단일 프로세스에서 500tps 기준으로 mtrace_rate는 기본 10%이며 tps가 높아질수록 동일 비율로 mtrace_rate를 자동 조절 합니다.
+
+#### Changes in collection of dependencies between servers (agents)
+
+It changed to collect caller data by OID when calls occur between agents belonging to different projects.
+
+In the previous version, collection was made by PKIND (pcode + okind). It has been modified to collect by POID (pcode + oid).
+
+### Enhancement of tracing information
+
+#### DB 연결URL 에서 '?' 이하를 제거
+
+SQL 수행 성능을 추적을 위해 JDBC 연결정보를 수집할때 '?' 이하를 제거 하였습니다.
+
+#### ContextPath reflected in URL normalization
+
+It changed to reflect ContextPath when performing URL normalization.
+
+#### Change in URL patterns to set for the server
+
+In WhaTap Labs, the patterns of the service or HttpClient URL have been changed to be set and collected by the WhaTap server.
+
+URL pattern configuration targets
+
+-   Service URL
+-   HttpClient URL
+
+:::note
+기존 에이전트 설정 방식으로는 쿠버네티스 환경에서 변경에 어려움
+:::
+
+#### ONAME output in the agent log
+
+It changed the agent log's output from the (date)(PID)(message) format to the (date)(agent name)(message) format.
+
+```bash
+20211224 05:12:31(GMT) [JA-161-111][UrlNorm] Service PathTree done. PathTree=0
+20211224 05:12:31(GMT) [JA-161-111][HttpcUrlNorm] PathTree build done. PathTree=0
+```
+
+#### Adding the custom counter
+
+App Extra Counter를 추적하기 플러그인을 사용할 수 있도록 수정 하였습니다. 단, 에이전트에서 플러그인 ExtraCounter.x 구현이 필요합니다.
+
+-   _${WHATAP}/plugin/ExtraCounter.x_
+
+```
+$pack.put("mycount",100);
+$pack.put("myrandom",(float)( whatap.util.KeyGen.next()%100));
+```
+
+### Application Log Monitoring
+
+애플리케이션 로그를 통합 모니터링 하는 기능을 추가 하였습니다. 자바 애플리케이션에서 로그 모니터링 기능을 사용하기 위해서는 whatap.agent-2.1.0 이후 버전이 필요합니다.
+
+:::caution
+whatap.agent-2.1.0 or later
+:::
+
+The function name of WhaTap's application log monitoring is LogSink.
+
+#### Enabling the log monitoring function
+
+로그 모니터링을 위해서는 _whatap.conf_ 설정 파일에서 `logsink_enabled`를 `true`로 설정 해야 합니다.
+
+```ini title='whatap.conf'
+logsink_enabled=true
+```
+
+자바 애플리케이션에서 발생하는 System.out, System.err 그리고 프레임워크에서 구현한 LOGBACK, LOG4J 로그를 수집 합니다. 기본값은 `logsink_enabled`의 설정과 동일 합니다.
+
+```ini title='whatap.conf'
+logsink_stdout_enabled=logsink_enabled
+logsink_stderr_enabled=logsink_enabled
+logsink_logback_enabled=logsink_enabled
+logsink_log4j_enabled=logsink_enabled
+logsink_tomcat_enabled=logsink_enabled
+logsink_custom_enabled=logsink_enabled
+```
+
+#### Collection of log details in the framework
+
+프레임워크에서 수집하는 로그를 모니터링 하기 위해서는 모듈에서 로그를 가로채기 위한 설정과 플러그인을 추가해야 합니다. 프레임워크에서 수집하는 로그의 기본 카테고리 이름을 'AppLog'로 설정합니다.
+
+기본값은 `hooklog_enabled`의 설정과 동일 합니다.
+
+```ini title='whatap.conf'
+hooklog_logback_enabled=hooklog_enabled;
+hooklog_log4j_enabled=hooklog_enabled;
+hooklog_tomcat_enabled=hooklog_enabled;
+hooklog_custom_methods= (set to collect logs in the user method)
+```
+
+다만 `hooklog_enabled`는 기본값으로 `logsink_enabled` 값이 적용되며 기동전에 `true`로 설정할 필요가 있습니다.
+
+운영중에 `hooklog_enabled=true`로 변경한다면 재기동 후에 로그 수집이 가능합니다.
+
+:::note
+`logsink_enabled=true` 변경 후 재기동
+:::
+
+#### Collection of logs in the user method
+
+`hooklog_custom_methods`는 임의의 로그 프레임워크의 내용을 전달합니다. 사이트에서 개별로 만든 로그 모듈의 로그를 추적할때 사용합니다.
+
+```ini title='whatap.conf'
+hooklog_custom_methods=com.greatshop.common.Log.print
+```
+
+#### Setting to deliver logs
+
+You can set the maximum size of a single line and the queue size during data transfer.
+
+```ini title='whatap.conf'
+logsink_queue_size=1000
+logsink_line_size=512
+```
+
+#### Enabling or debugging the compressed log transfer
+
+`logsink_zip_enabled=true` 설정으로 로그를 압축 전송할 수 있습니다.
+
+```ini title='whatap.conf'
+logsink_zip_enabled=false
+debug_logsink_zip_enabled=false
+```
+
+All data is not compressed, and the debug options are used to check whether compressed logs are sent.
+
+#### Minimum size of compressed logs transmission
+
+If the data to send is less than 100 bytes, it is not compressed.
+
+```ini title='whatap.conf'
+logsink_zip_min_size=100
+```
+
+#### Size and time of the log's compressed transfer bundle
+
+For compressed transfer, data must be bundled. However, because the next data cannot be waited indefinitely, the maximum time must be specified.
+
+```ini title='whatap.conf'
+max_buffer_size=65536
+max_wait_time=2000
+```
+
+에이전트는 데이터 수집 사이즈가 `max_buffer_size`를 초과하거나 로그를 묶기 위해 기다리는 시간이 `max_wait_time`을 초과하면 로그 데이터를 서버로 전송합니다.
+
+#### Selecting the log compression algorithm
+
+로그를 압축전송할 때 압축 알고리즘 변경이 가능합니다. 기본 알고리즘은 GZip이며 lz4도 선택 가능합니다.
+
+```ini title='whatap.conf'
+logsink_zip_libpath=/whatap/whatap-logsink-lz4-1.7.0.jar
+```
+
+:::note
+알고리즘 선택은 `logsink_zip_libpath`에 jar파일을 지정하는것으로 처리
+:::
+
+### Fixing the bug where the agent does not work in the IBM Java6 Websphere environment
+
+Fixed the bug where the Whatap agent could not initialize and collect data in the IBM Java6 Websphere environment.
+
+:::note
+`ManagementFactory.getPlatformMBeanServer()` 로직이 내부적으로 오류가 발생하면서 WhaTap Agent가 초기화되지 못하는 문제
+:::
+
+### Adding the CounterPack debugging option
+
+Added an option to debug whether the real-time performance data has been transferred from the agent.
+
+```ini title='whatap.conf'
+debug_counterpack_enabled=true (default value)
+debug_counterpack_factor=3 (default value)
+debug_counterpack_recvtime=9000 (default value)
+```
+
+If the number of standby CounterPacks in the agent queue increases to 3 or more, or the server's last transmission data speed exceeds 9000 ms, it is displayed as a log.
+
+### Text & ActiveStack 정보 수집시 압축 옵션 추가
+
+Added an option to compress text data and ActiveStack data during collection.
+
+```ini title='whatap.conf'
+active_stack_zip_enabled=false (default value)
+text_zip_enabled=false (default value)
+```
+
+### Change of the system metrics collection library and fixing the memory data collection bug
+
+#### Added OSHI
+
+OSHI(Operating System and Hardware Information)는 시스템 인프라 메트릭을 수집하기 위한 라이브러리로, 최근에도 활발히 업데이트 되고 있어 시스템 성능 지표를 수집하기 위한 라이브러리로 선택 하였습니다. 단, Java8 이상의 환경에서만 사용 가능합니다.
+
+-   `oshi_enabled=false` (기본값)
+-   Available only in JDK8 or later
+-   Can measure the usage and alert for disk="."
+
+#### Deprecation for the Sigar function
+
+It has not been updated for more than 5 years, so it was excluded from the initial settings.
+
+-   sigar_enabled=false (default value)
+-   Only aix included for lib1
+
+Sigar 기능을 사용하기 위해서는 명시적으로 `sigar_enabled=true` 설정 후 사용할 수 있습니다.
+
+#### Fixing the Linux memory collection bug
+
+Fixed the collection bug for the memory usage and utilization in the Linux environment.
+
+### Setting the environment variables lookup as an option
+
+An option has been added to turn on or off whether or not to perform the function when environment variables are viewed.
+
+```ini title='whatap.conf'
+agent_env_system_enabled=true
+agent_env_jvm_enabled=true
+```
+
+You can control whether or not to view the process environment variables and Java environment variables as an option.
+
+### Option to exclude specific keys when viewing the agent environment variables
+
+Added an option to exclude specific environment variables from the function to view the environment variables of the Java runtime environment.
+
+```ini title='whatap.conf'
+agent_env_ignore_keys=USER,Address
+```
+
+Options can be specified using comma (,) as the delimiter and they are not case sensitive.
+
+### Available in TOMCAT10
+
+Tomcat10의 jakarta 라이브러리를 추적할 수 있도록 지원 범위를 확대 하였습니다.
+weaving 옵션에 tomcat10을 지정하여 추적할 수 있습니다.
+
+```ini title='whatap.conf'
+weaving=tomcat10
+```
+
+:::note
+weaving 옵션은 `weaving_reserved` 옵션을 축약하여 v2.1.1에서 추가
+:::
+
+### Tracing the HttpCall information details
+
+Added the tracing data for HttpCall while tracing transactions.
+
+:::caution
+OLD 버전의 수집서버에서는 트랜잭션 상세 스텝 정보 확인이 불가합니다.
+:::
+
+만약 OLD 수집서버에 데이터를 보내야 한다면 `trace_httpc_version` 옵션을 _whatap.conf_ 파일에 추가해야 합니다.
+
+```ini title='whatap.conf'
+trace_httpc_version=1
+```

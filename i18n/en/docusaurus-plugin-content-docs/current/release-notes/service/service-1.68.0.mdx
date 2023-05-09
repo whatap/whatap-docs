@@ -1,0 +1,50 @@
+---
+id: service-1.68.0
+title: Service 1.68.0
+toc_max_heading_level: 2
+---
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+Release date: 2022-04-06
+
+## `공통`
+
+**_조직 관리_** - 프로젝트 그룹 간 이동 기능 사용선 개선
+
+**_로그 모니터링_**
+
+-   Added the LiveTail filtering
+-   Added the log data retention cycle option
+-   Modified the dark theme and applied the design guide
+
+**_메트릭스 차트_** - CSV 내보내기 기능 수정
+
+**_메트릭스 이벤트 설정_** - 조건 자동완성 입력 오탈자 수정
+
+**_프로젝트 실시간 알림_** - 알림 발생시 소리 재생 기능 복구
+
+## Application
+
+**_히트맵_** - 차트 데이터 조회 시간 제한을 기본 15일치로 연장
+
+**_멀티 트랜잭션_** - 다중 프로젝트 선택 시 차트 깨짐 현상 수정
+
+## Server
+
+**_이상치 탐지_** - 카테고리 선택 옵션 추가, 디자인 가이드 적용
+
+**_이상치 탐지 이벤트 설정_** - 카테고리 선택 옵션 추가
+
+**_서버 상세_** - 차트 데이터 인터벌 표시
+
+## Container
+
+**_메트릭스 이벤트 설정_** - 쿠버네티스 마스터 프로젝트 알림 정보 표시
+
+## Database
+
+**_카운터 추이 비교_** - 시간 옵션 변경 시 차트 구간 선택 이상 현상 수정
+
+**_카운터 추이_** - 프로세스 시간 선택 이상 현상 수정

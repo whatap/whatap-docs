@@ -1,0 +1,86 @@
+---
+id: install-agent-with-buildpack
+title: ビルドパックを使用したJavaエージェントのインストール
+description: ビルドパックを使用してJavaエージェントをインストールする方法を案内します。
+tags:
+  - Java
+  - エージェント
+  - プロジェクト
+  - アプリケーション
+---
+
+Gradleを使用するJavaアプリケーションで実行可能なドッカーイメージをビルドする場合、ビルドパックを利用してエージェントをインストールできます。 
+
+## WhaTap buildpack基本設定
+
+```java title='build.gradle'
+tasks.named("bootBuildImage") {
+	buildpacks = ["urn:cnb:builder:paketo-buildpacks/java",	
+								"docker.io/whatap/paketo-buildpack-apm"]
+}
+```
+
+## オプション設定
+
+WhaTap収集サーバーに接続されていないとデータを収集できません。 アクセスキー(`accesskey`)、WhaTap収集サーバーアドレス(`whatap.server.host`)情報は必須です。 その他、環境や機能の必要に応じてオプションを追加設定できます。
+
+```java title='build.gradle'
+tasks.named("bootBuildImage") {
+  // Whatap 
+  environment["BP_WHATAP_ENABLED"] = "true"
+  // java 17, There must be a space at the beginning.
+  environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "
+  // add multi options, delimeter is linefeed character
+  environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
+
+  buildpacks = ["urn:cnb:builder:paketo-buildpacks/java",	"docker.io/whatap/paketo-buildpack-apm"]
+}
+```
+
+-   `BP_WHATAP_ENABLED`
+
+    WhaTapエージェントの活性化有無を設定します。 値が`false`の場合、インストールは進められますが、モニタリングが中止された状態で開始します。 後で、[WhaTapモニタリングサービス](https://service.whatap.io)の**_管理_** > **_エージェント設定_**メニューを通じて`true`に変更できます。
+
+-   `BPE_APPEND_JAVA_TOOL_OPTIONS`
+
+    Java 17バージョンを使用する場合は、必ずjvmオプションを追加してください。
+
+    ```java
+    environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
+    environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = "--add-opens=java.base/java.lang=ALL-UNNAMED"
+    ```
+
+    delimeter環境変数を使用しない場合は、前後に空白を追加してください。
+
+    ```java
+    environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "
+    ```
+
+-   `BP_WHATAP_OPTIONS`
+
+    WhaTapエージェント設定を追加できます。 ラインフィード"\\n"を区切り文字としてプションを設定します。 オプションは`key=value`となります。 設定したオプション値は、Docker Image生成段階で`whatap.conf`ファイルに保存されます。 
+
+    ```java
+    environment["BP_WHATAP_OPTIONS"] = "accesskey={アクセスキー}\nwhatap.server.host={収集サーバーアドレス}"
+    // 例：environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
+    ```
+
+## Tomcat 10環境
+
+Tomcat環境では、`weaving=tomcat10`オプションを必須で追加する必要があります。
+
+```java
+environment["BP_WHATAP_OPTIONS"] = "accesskey={アクセスキー}\nwhatap.server.host={収集サーバーアドレス}\nweaving=tomcat10"
+```
+
+## Container実行オプション
+
+コンテナ（Container）の実行時、環境変数としてアクセスキーとWhaTap収集サーバーアドレスを次のように設定できます。
+
+```docker
+docker run --rm -p 8080:8080 \
+  -e accesskey={アクセスキー} \
+  -e whatap.server.host={収集サーバーのアドレス} \
+  -e weaving=tomcat10,webflux-6.0 \
+  spring-boot-gradle-hello-world-pcketo-buildpack-whatap
+```

@@ -1,0 +1,109 @@
+The following describes the functions available depending on the screen mode on the Flex board.
+
+## Screen modes
+
+**_Flex Board_** provides the following screen modes. The functions that can be set differ depending on the screen mode.
+
+-   **_Edit Mode_**: From the widget template list, you can place, modify, delete, or reposition widgets on the Flex board layout.
+
+-   **_Admin_**: You can manage the attributes of widgets in json format. Select ![Code icon](/img/ico-custom-code.svg) on the upper right of the widget placed on the layout.
+
+-   **_View Mode_**: After finishing the settings such as widget placement, resizing, and option selection, you can monitor data for each widget including the dashboard in real time.
+
+You can use the following common features in **_Flex Board_**.
+
+-   Data filtering
+-   Real-time data lookup range setting
+-   Print mode
+-   Flex board management
+-   Data merging option
+
+## Data filtering
+
+In the Flex board, you can handle hundreds of types of data. Organize your Flex board by using the data filtering feature to narrow down what you want to monitor.
+
+![Flex Board - Filter](/img/flexboard-filter.png)
+
+1.  Select ![Leader line 1](/img/number-01.png) ![Filter icon](/img/ico-filter.svg) **_Filter_** on the screen. 
+
+2.  On the left of the screen, the ![Leader line 2](/img/number-02.png) **_Filter_** window appears.
+
+    -   If the **_Agent_** option has been selected, you can select filtering targets based on the agent type or application list. To select all as the filtering target, select **_Select All_**. If necessary, you can select the targets by using the **_search_** function.
+
+    -   If the **_Metrics_** option has been selected, you can select filtering targets based on the project and agent type in **_Category_**. In the **_category_** option, you can add more by selecting **_+ And_**. If **_Includes_** or **_Exclude_** has been selected, filtering targets are automatically selected with any string.
+
+3.  If filtering targets have been selected, select **_Apply_**. 
+
+To save the filter settings for later use, select **_Save Filter_**. Enter the filter name and then select **_Save_**. ![Leader line 3](/img/number-03.png) **_Saved filters_** appears at the bottom of the **_Filter_** window.
+
+Filtering conditions are divided into the agent type and metrics type.
+
+| Type                | Agent                                                                                                          | Metrics                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Option              | WhaTap project monitoring targets <br/>(applications, servers, DB,<br/> containers, and Kubernetes POD & node) | All metrics tags including the agent               |
+| Application range   | All widgets                                                                                                    | All widgets using the metrics data                 |
+| Filtering condition | Checkbox                                                                                                       | **_Equal_**, **_Includes_**, **_Exclude_** methods |
+
+:::note
+
+-   The agent type provides only basic monitoring targets as options.
+-   The metrics type provides optional tags for all metrics data being collected in the project. Metrics types are useful when filtering is applied after collecting data in a non-agent manner, such as cloud monitoring.
+-   For more information about the metrics, see [the following](metrics-intro).
+
+:::
+
+## Real-time data lookup range setting
+
+Using the UI elements on the upper right of **_Flex Board_**, you can set the time to output the widget data.
+
+![Real-time data inquiry](/img/flexboard-time-set.png)
+
+If you select ![Pause icon](/img/ico-pause.svg), you can pause viewing real-time data and set the lookup time as follows:
+
+![Real-time data inquiry](/img/flexboard-time-set-pause.png)
+
+-   Select the time button with a green background at the utmost right corner. The options appear to select from various time settings. Select a desired time setting.
+
+-   If you click ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), it can be adjusted by the set time range.
+
+-   If you click the text range for date and time, the option appears to select the date and time.
+
+-   After setting the lookup time, select ![Playback icon](/img/ico-play-time.svg). The real-time data query starts.
+
+## Printing
+
+The screen of the Flex board can be saved as a PDF file to be printed. Select ![Print icon](/img/ico-print.svg) on the upper right of the Flex Board screen. Switch the screen to Print mode. After setting the following options, select **_Download PDF_**.
+
+-   **_Viewing Filter Options_**: You can turn on or off the filter option of the screen.
+-   **_Convert to Horizontal/Vertical_**: The screen can be converted to landscape or portrait.
+
+To end the Print mode, select ![End icon](/img/ico-close.svg) **_Exit print mode_** on the upper right.
+
+## Flex board management
+
+It provides management functions such as changing the Flex board layout, repositioning/resizing widgets, and changing the name. Select ![Configuration icon](/img/ico-setting.svg) on the upper right of the Flex Board screen. The **_Flex Board Management_** window appears. 
+
+-   **_Rename_**: You can change the name of the Flex board. Enter the name to change.
+
+-   **_Layout_**: You can reposition or resize the widgets. To delete a placed widget, click ![Delete icon](/img/ico-trash.svg). Select the **_Overlap_** toggle button for enabling the option. The widgets can be overlapped.
+
+-   **_Don't allow other users to modify_**: You can set for other users not to modify the Flex board. Only members with the edit permission can modify, delete, or edit widgets. If you click the button, it is changed to **_Don't allow other users to modify: on_**.
+
+-   **_Widget json_**: You can edit the widgets on the Flex board into json format for management.
+
+-   **_Option json_**: You can edit the Flex board settings into json format for management. You can edit the settings such as project information, Flex board filtering, and time selection.
+
+After all settings are made, at the lower right of the screen, click **_Save_**.
+
+:::note
+
+-   **_Widget json_** and **_Option json_** are available only to the users with the dashboard administrator role.
+-   **_Flex Board Management_** can also be accessed by selecting ![Edit icon](/img/ico-edit.svg) in **_Dashboard_** > **_Flex Board_**.
+
+:::
+
+## Registering the dashboard as a favorite
+
+![Flex Board - Favorite](/img/flexboard-favorite.png)
+
+The created Flex board can be registered as a favorite under **_Dashboard_**. In **_Dashboard_** > **_Flex Board_**, select ![Favorite icon](/img/ico-favorite.svg) from the **_board_** list. The item set as a favorite is changed to ![Favorite setting icon](/img/ico-favorite-check.svg).

@@ -1,0 +1,414 @@
+---
+id: preview-1.99.x
+title: Preview 1.99.X
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+import Status from '@site/src/components/Highlight';
+import UI from '@site/src/components/UItext';
+
+:::note
+
+<https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+
+::: 
+
+## Preview-1.99.29
+
+2023년 4월 25일
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컴파운드아이</UI> 메뉴에서 <UI>갱신 간격(초)</UI>에 24자리 이상의 숫자를 입력하면 TopologyView가 그려지지 않는 버그 수정</p>
+
+</div>
+
+## Preview-1.99.28
+
+2023년 4월 24일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 프로젝트 초기 생성 시 백화 현상이 나오는 문제 수정
+
+-   <Status>Fixed</Status> <UI>복합 메트릭스 이벤트</UI>의 유효성 체크 로직 버그 수정
+
+</div>
+
+## Preview-1.99.27
+
+2023년 4월 24일
+
+<div class='indentTab'>
+
+### `공통`
+
+<p><Status>Change</Status> 다음 메뉴 경로에서 <b>RUM</b> 상품명을 <UI>Browser Monitoring</UI>으로 변경</p>
+
+-   **_이용 내역_** > **_프로젝트 유료 전환_**
+
+-   **_이용 내역_** > **_청구서 미리보기_**
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID</UI> 값을 입력하지 않을 경우 데이터가 검색되지 않는 버그 수정
+
+-   <Status>Change</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID</UI> 검색 값에 대한 유효성 체크 로직 추가
+
+</div>
+
+## Preview-1.99.26
+
+2023년 4월 24일
+
+<div class='indentTab'>
+
+### `AWS Log`
+
+-   <Status>Feature</Status> <UI>에이전트 설치</UI> > <UI>WhaTap Forwarder 설치</UI> 메뉴에서 <UI>VPC 사용</UI> 옵션 추가
+
+</div>
+
+## Preview-1.99.25
+
+2023년 4월 20일
+
+<div class='indentTab'>
+
+### `공통`
+
+#### Management
+
+-   <Status>Fixed</Status> 계정 아이콘 선택 > <UI>계정 정보 관리</UI> > <UI>계정 정보</UI> 메뉴에서 회원 탈퇴 시 미납 금액 표현 및 경영 지원팀 전화번호 안내 수정
+
+#### Flex Board
+
+-   <Status>Fixed</Status> Series 위젯에서 3일 이상의 데이터를 조회하는 경우 X축에 날짜 표기하도록 수정
+
+### `Browser`
+
+-   <Status>Change</Status> <b>RUM</b>의 상품명을 <UI>Browser Monitoring</UI>으로 변경
+
+</div>
+
+## Preview-1.99.24
+
+2023년 4월 20일
+
+<div class='indentTab'>
+
+### `공통`
+
+-   <Status>Feature</Status> <UI>로그</UI> > <UI>로그 검색</UI> 메뉴에서 검색키가 2개 이하일 경우 전체 조회 건수 중 일치하는 로그 개수 표시
+
+-   <Status>Feature</Status> <UI>로그</UI> > <UI>로그 트렌드</UI> 메뉴에서 조회한 로그 개수 표시
+
+</div>
+
+<div class='indentTab'>
+
+### `OCI`, `클라우드 모니터링`
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 해당 OCI 프로젝트 수정 권한 없을 시 <b>RSA Public Key</b> 생성 버튼 비활성화
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>클라우드 모니터링</UI> > <UI>Oracle Cloud Monitor</UI> 탭에서 <b>RSA Public Key</b> 생성 시 인증 정보 미등록 상태여도 등록 완료 상태로 구분되는 버그 수정
+
+</div>
+
+## Preview-1.99.23
+
+2023년 4월 19일
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> 메뉴에서 <UI>Caller</UI> 조회 시 <UI>Caller 에이전트 종류</UI> 및 <UI>Caller URL</UI> 컬럼 데이터 일부 누락 버그 수정
+
+</div>
+
+## Preview-1.99.22
+
+2023년 4월 19일
+
+<div class='indentTab'>
+
+### `Go`
+
+-   <Status>Feature</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 <code>Go</code> 에이전트 설정 안내 추가
+
+</div>
+
+## Preview-1.99.21
+
+2023년 4월 18일
+
+<div class='indentTab'>
+
+### `공통`
+
+#### My Usage
+
+-   <Status>Change</Status> <UI>이용 내역</UI> > <UI>청구 및 납부 내역</UI> 메뉴에서 <UI>청구 내역 상세 보기</UI> 목록에서 <b>상품 타입</b> 컬럼 제거
+
+</div>
+
+## Preview-1.99.20
+
+2023년 4월 18일
+
+<div class='indentTab'>
+
+### `공통`
+
+### `Application`
+
+<p><Status>Change</Status> <UI>분석</UI> > <UI>히트맵</UI> > <UI>Tx 트레이스 목록</UI>에서 트랜잭션을 선택해 <UI>통계</UI> 창에서 SQL 스텝 조회 시 하단에 SQL 쿼리 복사 버튼 추가</p>
+
+</div>
+
+## Preview-1.99.19
+
+2023년 4월 17일
+
+<div class='indentTab'>
+
+### `ECS`
+
+-   <Status>Fixed</Status> <UI>이용 내역</UI> > <UI>프로젝트 유료 전환</UI> 메뉴에서 화이트 아웃 현상 버그 수정
+
+</div>
+
+## Preview-1.99.18
+
+2023년 4월 14일
+
+<div class='indentTab'>
+
+### `공통`
+
+-   <Status>Change</Status> <UI>사이드 바</UI> > <UI>검색</UI> 키워드 입력 후 엔터 입력으로 조회
+
+-   <Status>Fixed</Status> <UI>사이드 바</UI> > <UI>검색</UI> > <UI>에이전트 검색</UI> 실행 시 화면 끊김 현상 수정
+
+</div>
+
+## Preview-1.99.17
+
+2023년 4월 13일
+
+<div class='indentTab'>
+
+### `공통`
+
+#### Report
+
+-   <Status>Feature</Status> <UI>통합 보고서</UI> 메뉴에서 <UI>일간 Http Call 지연 보고서</UI> 생성 시 종료 시간을 다음 날로 선택할 수 있는 기능 추가
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>보고서</UI> 메뉴에서 사용자가 선택한 시작일 기준이 아니라 현재 기준으로만 에이전트 목록을 <UI>필터</UI> 옵션으로 가져오는 버그 수정
+
+### `AWS Log`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>AWS IAM 정책 생성</UI> 순서의 IAM 정책 변경</p>
+
+### `RUM`
+
+-   <Status>Change</Status> <UI>RUM 대시보드</UI>와 <UI>브라우저 에러 대시보드</UI> 메뉴의 위젯 구성 변경
+
+-   <Status>Deprecate</Status> <UI>RUM 대시 보드</UI> 메뉴에서 위젯의 mxql 조회 기능 제거
+
+</div>
+
+## Preview-1.99.16
+
+2023년 4월 12일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> > <img src='/img/ico-setting.svg' alt='설정 아이콘'/> 버튼 > <UI>1분 내 생성된 컨테이너 표시하기</UI> 옵션 추가: 생성된지 1분 이내의 컨테이너의 경우 밝은 색상으로 표시</p>
+
+</div>
+
+## Preview-1.99.15
+
+2023년 4월 11일
+
+<div class='indentTab'>
+
+### `CloudWatch`, `NCP`, `OCI`, `Azure`
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 설명 추가 및 UI 수정</p>
+
+-   프로젝트 생성 직후 에이전트 설치 페이지 진입 시 표시되는 로딩 이미지 하단에 설명 추가
+
+-   서비스 목록 조회, 저장 시 표시되는 로딩 이미지 하단에 설명 추가
+
+-   `CloudWatch` 설치 안내 페이지가 스크롤에 가려지지 않고 바로 표시되도록 설명 부분의 높이 수정
+
+</div>
+
+## Preview-1.99.14
+
+2023년 4월 10일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Feature</Status> <UI>분석</UI> > <UI>히트맵</UI> 메뉴에서 트랜잭션 목록을 클릭하면 표시되는 <UI>통계</UI> 팝업 창에 다음의 정보 추가</p>
+
+-   `HttpCall` 타입의 트레이스의 경우 수집된 driver 정보가 있다면 **Http Call** 텍스트 대신 **driver 정보**를 표시
+-   `SQL`, `DBC` 타입의 트레이스를 클릭하면 나타나는 상세 정보 창에 SID 값 추가 표시
+
+</div>
+
+## Preview-1.99.12
+
+2023년 4월 6일
+
+<div class='indentTab'>
+
+<p><Status>Change</Status> 프로젝트가 제한 상태인 경우 프로젝트에 소속된 멤버라면 <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에 접근할 수 있도록 수정</p>
+
+<!-- - <Status>Feature</Status> <UI>로그</UI> > <UI>로그 탐색기</UI>, <UI>로그 트렌드</UI> 메뉴에 조회한 로그 개수 표시 -->
+
+</div>
+
+## Preview-1.99.11
+
+2023년 4월 5일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> 메뉴에서 언어 설정이 일본어일 때, 요약 위젯의 텍스트가 줄 바꿈이 되지 않아 지표가 가려지는 버그 수정</p>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 <UI>프로세스</UI>위젯의 <UI>그룹화</UI> 옵션 권한 체크 로직 누락 수정</p>
+
+</div>
+
+## Preview-1.99.10
+
+2023년 4월 4일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>회원 탈퇴</UI> 메뉴를 이용해 회원 탈퇴할 경우 탈퇴 관련 사항(미납금, 권한 정보 등)을 팝업창에서 확인하도록 수정</p>
+
+</div>
+
+## Preview-1.99.9
+
+2023년 4월 4일
+
+<div class='indentTab'>
+
+#### Alert
+
+-   <Status>Change</Status> <UI>이벤트 수신 설정</UI> 메뉴에서 <b>에스컬레이션</b> 옵션 이름을 <UI>반복 알림</UI>으로 변경
+-   <Status>Feature</Status> <UI>이벤트 수신 설정</UI> 메뉴의 <UI>사용자별 이벤트 수신 설정</UI>과 <UI>3rd 파티 플러그인</UI> 섹션에 <UI>반복 알림</UI> 옵션 추가
+
+#### Log
+
+<p><Status>Change</Status> <UI>로그 설정</UI> 메뉴에서 프로젝트의 트라이얼 기간이 로그 모니터링의 트라이얼 기간보다 긴 경우, 로그 모니터링 트라이얼 기간을 더 긴 기간으로 표시하도록 수정</p>
+
+</div>
+
+## Preview-1.99.8
+
+2023년 4월 3일
+
+<div class='indentTab'>
+
+#### My Usage
+
+<p><Status>Change</Status> <UI>청구서 미리보기</UI> 메뉴에서 청구 내역 테이블에 <UI>할인 금액</UI> 컬럼 추가</p>
+
+</div>
+
+## Preview-1.99.7
+
+2023년 4월 3일
+
+<div class='indentTab'>
+
+### `공통`
+
+#### Flex Board
+
+<p><Status>Feature</Status> <UI>Flex 보드</UI> 메뉴에서 시리즈 위젯의 차트 설정 옵션으로 보조 차트의 데이터 병합 합산 기능 추가</p>
+
+### `RUM`
+
+<p><Status>Change</Status> <b>대시보드</b> 메뉴에서 일부 위젯의 제목과 조회 데이터 변경</p>
+
+</div>
+
+## Preview-1.99.6
+
+2023년 4월 3일
+
+<div class='indentTab'>
+
+#### Log
+
+-   <Status>Change</Status> <UI>로그 설정</UI> 메뉴에서 상품별 에이전트 지원 버전 정보 수정
+
+-   <Status>Fixed</Status> <UI>라이브 테일</UI> 메뉴에서 최초 데이터 로딩 시 로딩 애니메이션을 화면에 표시하도록 수정
+
+</div>
+
+## Preview-1.99.5
+
+2023년 3월 31일
+
+<div class='indentTab'>
+
+### `공통`
+
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 오버레이 차트의 CSV 다운로드 버그 수정</p>
+
+</div>
+
+## Preview-1.99.3
+
+2023년 3월 30일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 설치 안내 섹션에 대한 디자인 개선</p>
+
+</div>
+
+## Preview-1.99.2
+
+2023년 3월 30일
+
+<div class='indentTab'>
+
+### `공통`
+
+#### Management
+
+-   <Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>회원 탈퇴</UI> 메뉴에서 회원 탈퇴할 경우 '미납금 표기' 임시 제거 및 안내 노출
+
+-   <Status>Fixed</Status> 프로젝트 관리 페이지에서 버튼을 클릭할 경우 로딩 표시가 제대로 동작하지 않는 버그 수정
+
+#### MXQL
+
+<p><Status>Fixed</Status> MXQL 데이터 조회 후 CSV가 다운로드되지 않는 문제 수정</p>
+
+</div>

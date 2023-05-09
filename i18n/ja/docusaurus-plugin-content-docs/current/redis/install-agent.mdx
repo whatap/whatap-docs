@@ -1,0 +1,63 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - Redis
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## WhaTapデータベースエージェントのダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  圧縮して解凍したフォルダに入り、_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報とWhaTapサーバー情報、DB接続情報を入力します。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
+
+dbms=redis
+db_ip={DBサーバーのIPアドレス}
+db_port={DBサーバーのポート番号}
+```
+
+1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cdata.com/drivers/redis/jdbc/
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+## DBユーザーファイルの作成{#create-db-user}
+
+:::tip
+
+userとpasswordを使用しない場合（認証なしでRedisに接続可能な場合）**_DBユーザーファイル作成_**手順をスキップできます。
+
+:::
+
+<DBuserDesc name='""'/>
+
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
+
+<!--## 에이전트 실행-->
+
+{@include: ../common-items/_db-run-agent.mdx}

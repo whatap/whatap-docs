@@ -1,0 +1,139 @@
+**Multi-transaction** means the transaction involving a different agent or project. **Multiple Transaction Trace** is to trace calls between the application services registered in the WhaTap project. 
+
+:::note
+
+**Enabling the multi-transaction**
+
+To trace multi-transactions, set the activation option. 
+
+1.  Go to **_Management_** > **_Agent CONFIG._**. 
+2.  Set the value of **_activation_** option, `mtrace_enabled` to `true` under the **_Multi-server Transaction_** settings.
+
+:::
+
+## Multiple transaction trace
+
+Drag the chart area in Home > Select Project > **_Analysis_** > **_Hitmap_**. The transaction information of the dragged chart area appears in the **_TX Trace_** list at the bottom. Transactions including multi-transactions in the list are marked with the ![Icon](/img/ic-s-mult-transation.svg) icon.
+
+![mtrace_M](/img/tx-trace-table.png)
+
+If you select the trace, the **_Statistics_** information window appears. If multi-transactions are traced, you can see the **_MTID_** value in **_Multi-transaction_** under the Summary information tab at the top. The same **_MTID_** is generated even if you issue an external call in a transaction. Even if the projects are separated by service, all transactions between applications can be checked through the initially issued **_MTID_**. For more information about the detailed analysis of TX traces through the **_Statistics_** window, see [the following](trs-profile#details).
+
+![mtrace_apm](/img/tx-trace-dt-up.png)
+
+If you select the ![Right arrow icon](/img/ic-arrow-right.svg) icon next to **_MTID_**, **_Analysis_** > **_Multiple Transaction Trace_** appears. **_Multiple Transaction Trace_** provides transactions and trace data so that you can see various call relationships at a glance that occur within the system or between systems and you can identify where problems have occurred for improvements. 
+
+![Multi-transaction chart sc](/img/multi-tx-cht.png)
+
+The ![number1](/img/number-01.png) area is the **_Filter panel_**. You can filter data by editing a specific key value (**_MTID_**/**_CUSTID_**) or project list for search. The applied filter is applied in tabs for **_Chart View_**, **_Table View_**, and **_Tree View_** displayed on the right ![number2](/img/number-02.png).
+
+### Chart View
+
+The main screen of **_Multiple Transaction Trace_** is **_Chart View_**. The **_Chart View_** tab quickly and clearly provides users with the call relationship between transactions. You can see individual execution times of transaction services with the same **_MTID_**. You can see the call relationship between transactions through the elapsed time (**_Time Bar_**) represented with the background color of the transaction node. 
+
+Through the option at the top of **_Chart View_** ![number3](/img/number-03.png), you can see additional information including **_Time Bar_**. If you select **_Font Size_**, you can adjust the size of the font displayed on the chart. If you select **_Time Bar_**, **_Application Name_**, or **_Project_**, you can control the information displayed in the node. If you select **_Database_**, **_External_**, or **_Internal_**, you can see the information of other database connection requests or HTTP calls in transactions on a chart.
+
+If you select a transaction node, the **_Statistics_** window appears as follows. The transaction trace allows you to see the transaction details. For more information about the transaction trace through the **_statistics_** window, see [the following](trs-profile#details).
+
+![Display Detail of Multi-transaction](/img/multi-tx-stat.png)
+
+### Table View
+
+If you select the **_Table View_** tab, you can see the data for each transaction included in multi-transactions in a table. Select the ![Select Column Icon](/img/ic-column.svg) **_Select Column_** icon to edit the column in the table. 
+
+![Multi-transaction Table View](/img/multi-tx-tb.png)
+
+If you select ![Detail icon](/img/ic-pageview.svg) **_Detail_** icon, the **_Statistics_** window appears as selection of a **_chart view_** node. The transaction trace allows you to see the transaction details. For more information about the transaction trace through the **_Statistics_** window, see [the following](trs-profile#details).
+
+### Tree View
+
+If you select the **_Tree View_** tab, you can see the detailed information of each transaction and their traces. The transactions within the overall transaction time or start times and step times of each trace to provide transaction call relationships in a tree format. 
+
+![Multi-transaction Tree View](/img/multi-tx-tr.png)
+
+The ![number4](/img/number-04.png) area is a detailed information display option in a tree structure. **_View one line_** and **_View multiple lines_** are provided. **_View one line_** is the default setting. It can be collectively controlled through the top button, and individual expression methods can be switched by selecting each row.
+
+The ![number5](/img/number-05.png) area is the elapsed time option. ![Time Bar icon](/img/ic-dashbaord-bar-chart-h.svg) **_Time Bar_**, ![Time Set icon](/img/ic-custom-time.svg) **_Time Set_**, and ![Invisible icon](/img/ic-eye-invisible.svg) **_Invisible_** are provided. In the case of start time and elapsed time, the time difference caused by the transaction call environment is corrected through traces and mappings in the parent transaction, so there may be differences from the actual collected times. The elapsed time is represented in color depending on the value as follows.
+
+-   8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
+-   Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
+-   Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
+
+The ![number6](/img/number-06.png) area provides dedicated options for viewing statistics or query information for each trace type. If you select ![Statistics icon](/img/ic-static.svg) icon or ![Pop-up icon](/img/ic-popup.svg) icon, you can see the summary window such as ***HTTP Call Statistics*** and ***Active Stack***.
+
+## References
+
+-   [Adding multi-transaction menu](https://www.whatap.io/ko/blog/85/index.html)
+-   [Reorganizing multi-transaction diagram](https://www.whatap.io/ko/blog/72/index.html)
+
+<!-- 
+
+**멀티 트랜잭션**은 다른 에이전트나 프로젝트와 연관된 트랜잭션을 의미합니다. 와탭 프로젝트에 등록된 애플리케이션 서비스 간의 호출을 추적하는 것이 **멀티 트랜잭션 추적**입니다. 
+
+:::note 
+멀티 트랜잭션 활성화
+멀티 트랜잭션을 추적하려면 활성화 옵션을 설정해야 합니다. 
+1. ***관리*** > ***에이전트 설정*** 메뉴로 이동하세요. 
+1. ***멀티서버 트랜잭션*** 설정 하위의 ***활성화*** 옵션 `mtrace_enabled`의 값을 `true`로 지정하세요.
+:::
+
+1. 홈 화면 > 프로젝트 선택 > ***분석*** > ***히트맵*** 메뉴에서 차트 영역을 드래그하세요.<br/>
+  드래그한 차트 영역의 트랜잭션 정보가 다음과 같이 하단 ***TX 트레이스*** 목록에 나타납니다. 목록에서 멀티 트랜잭션을 포함한 트랜잭션은 ![아이콘](/img/ic-s-mult-transation.svg) 아이콘이 표시됩니다.
+
+  ![mtrace_M](/img/tx-trace-table.png)
+
+1. 해당 트레이스를 선택하면 ***통계*** 정보 창이 나타납니다.<br/>
+  멀티 트랜잭션이 추적되는 경우 상단 요약 정보 탭의 ***멀티 트랜잭션***에서 **MTID** 값을 확인할 수 있습니다. 트랜잭션에서 외부 호출을 하는 경우에도 동일한 **MTID**가 생성됩니다. 업무별로 프로젝트가 분리되어 있더라도 처음 발급한 **MTID**를 통해 애플리케이션 간의 모든 트랜잭션을 확인할 수 있습니다. ***통계*** 창을 활용한 TX 트레이스 상세 분석에 관한 자세한 내용은 [다음 문서](trs-profile#details)를 참조하세요.
+
+  ![mtrace_apm](/img/tx-trace-dt-up.png)
+
+1. ***멀티 트랜잭션*** 옆의 ![오른쪽 화살표 아이콘](/img/ic-arrow-right.svg) 아이콘을 선택하면 ***분석*** > ***멀티 트랜잭션 추적*** 메뉴로 이동합니다.<br/>
+  ***멀티 트랜잭션 추적*** 메뉴의 기본 화면은 ***차트 뷰***입니다. ***차트 뷰*** 탭에서는 동일한 **MTID**를 갖는 트랜잭션 서비스들의 개별 수행 시간을 확인할 수 있습니다.
+
+  ![멀티 트랜잭션 차트](/img/multi-tx-cht.png)
+
+1. ***테이블 뷰*** 탭을 선택하세요.<br/>
+  ***테이블 뷰*** 탭에서는 티어별 트랜잭션 트레이스 정보를 확인할 수 있습니다. 
+
+  ![멀티 트랜잭션 테이블 뷰](/img/multi-tx-tb.png)
+
+  ![상세 아이콘](/img/ic-pageview.svg)상세 아이콘을 선택하면 ***통계*** 창이 나타납니다. 같은 프로젝트에 속한 애플리케이션 서비스 간의 호출 관계를 확인할 수 있습니다. 
+
+  ![멀티 트랜잭션 상세 보기](/img/multi-tx-stat.png)
+  
+:::note
+Caller와 Callee
+* **Caller**: 서비스를 호출한 트랜잭션(호출자)을 의미합니다.
+* **Callee**: 서비스를 호출 당한 트랜잭션(피호출자)을 의미합니다.
+:::
+
+## 참고 자료
+
+* [멀티 트랜잭션 메뉴 추가](https://www.whatap.io/ko/blog/85/index.html)
+* [멀티트랜잭션 다이어그램 개편](https://www.whatap.io/ko/blog/72/index.html)
+
+-->
+
+<!-- 
+ * ![왼쪽 아이콘](/img/ic-metrics-cube-back.svg) 아이콘을 선택하면 ***프로젝트 목록***을 숨기고 차트에 집중할 수 있도록 ***차트 뷰*** 영역을 확장시킬 수 있습니다.
+ 같은 프로젝트에 속한 애플리케이션 서비스들 간의 호출 관계는 트레이스 내에서 데이터를 확인할 수 있습니다.
+-->
+
+<!--
+서비스(업무) 별로 분리되어 있는 애플리케이션 서비스들 간의 호출을 추적할 수 있습니다. 와탭에 등록되어 있는 프로젝트라면 프로젝트에 등록된 애플리케이션 서비스들 간의 호출에 대한 추적을 말합니다.
+화면에서 멀티 트랜잭션 추적이 적용된 경우 히트맵 트랜잭션을 드래그하세요.
+
+-->
+
+<!--
+
+**멀티 트랜잭션**은 다른 APM과 연계된 트랜잭션을 의미합니다. 단일 APM에서 분리된 모든 트랜잭션을 수집하면 부하가 많이 걸리기 때문에 하나의 트랜잭션에 연계된 트랜잭션을 같이 수집합니다. **멀티 멀티 트랜잭션 추적**은 와탭 프로젝트에 등록된 애플리케이션 서비스 간의 호출을 추적하는 것을 의미합니다.
+
+1. 멀티 트랜잭션을 추적하려면 에이전트 설정 파일에 다음 옵션을 설정하세요.<br/>
+  `mtrace_enabled`는 값이 `true`일 때 기본값 10% 비율로 멀티 트랜잭션을 추적합니다.  
+
+  ```ini title='whatap.conf'
+  mtrace_enabled=true 
+  ```
+
+-->

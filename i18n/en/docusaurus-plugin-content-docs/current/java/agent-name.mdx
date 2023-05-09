@@ -1,0 +1,64 @@
+---
+id: agent-name
+title: Agent name identification
+description: The following explains how to set the agent name in order to identify the monitoring target.
+tags:
+  - Java
+  - Agent name
+---
+
+{@include: ../common-items/_apm-name-description.mdx}
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+:::note
+
+-   In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
+
+:::
+
+## How to determine the default name
+
+If there is no setting for `whatap.oname` as an JVM option, agent names are automatically assigned in the following priority.
+
+1.  `whatap.type` is identified.
+2.  When `whatap.type` is a servlet container, the port used by the application is identified.
+3.  If the port cannot be identified, the process ID (PID) is retrieved.
+4.  By adding the third and fourth IPv4 addresses to the identified information, the final name is determined.
+
+For example, if **Tomcat** is started with the port **8080** on a server whose IP address is 10.11.**12**.**13**, the agent name is automatically assigned with `TC-12-13-8080`.
+
+## Variable of the agent name
+
+Available name variables are as follows:
+
+| Variable | Description                                                                                                                                                                                         |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| String   | The entered string is used.                                                                                                                                                                         |
+| {type}   | The container type is automatically identified and assigned. <br/> Targets to be identified automatically: JAVA, TOMCAT, JBOSS, RESIN, SPRINGBOOT, JETTY, JEUS, WEBLOGIC, WEBSPHERE, UNDERTOW, PLAY |
+| {ip0}    | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)                                                                                                                        |
+| {ip1}    | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13)                                                                                                                       |
+| {ip2}    | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)                                                                                                                        |
+| {ip3}    | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**)                                                                                                                       |
+| {pid}    | The process ID (PID) of Java is used.                                                                                                                                                               |
+| {port}   | The port that the application listens to is used.                                                                                                                                                   |
+
+## Setting the agent name
+
+Instead of the name that has been automatically assigned, you can enter the name by adding the JVM option into the startup script.
+
+| Priority | Option           | Setting location   | Description                                                                         |
+| -------- | ---------------- | ------------------ | ----------------------------------------------------------------------------------- |
+| 1        | \-Dwhatap.name   | JVM Options        | Set the application name as a pattern. <br/>default: `{type}-{ip2}-{ip3}-{port}`    |
+| 2        | \-Dwhatap.oname  | JVM Options        | Set the application name to a fixed value. <br/>`-Dwhatap.oname=front-{ip3}-{port}` |
+
+:::note
+
+-   In the scale out environment of the cloud, VM can be copied and used. Thus, it is important that object names are automatically assigned.
+-   If two VPC environments have been created and the network has been set to use the same private IP, the two VPCs must not be duplicated. For example, it can be separated as another project or the `-Dwhatap.name` option can be set by combining the name variables in different ways.
+
+:::
+
+The following options can be applied as an agent name to _whatap.conf_.
+
+{@include: ../common-items/_java-agent-name.mdx}

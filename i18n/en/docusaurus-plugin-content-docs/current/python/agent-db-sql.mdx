@@ -1,0 +1,32 @@
+---
+id: agent-db-sql
+title: DB, SQL
+description: Python agent's DB and SQL settings are provided.
+tags:
+  - Python
+  - DB
+  - SQL
+  - Configuration
+---
+
+It provides the options related to the Python agent's DB and SQL.
+
+-   **profile_dbc_close(\*)**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      If `profile_connection_open_enabled` is active, the closed DB connection data is output to the transaction trace.
+
+-   **trace_sql_normalize_enabled**<span class='type'>Boolean</span><br/>
+      Default `true`<br/>
+      It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement.
+
+-   **profile_sql_parameter_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      SQL parameter collection is enabled. However, the parameters can be retrieved only by entering a separate security key. Set the security key to 6 digits in _paramkey.txt_ of the agent installation path. If _paramkey.txt_ does not exist, it is automatically generated and a random key is set.
+
+-   **profile_sql_resource_enabled**<span class='type'>Boolean</span><br/>
+      Default `false`<br/>
+      It traces the CPU and memory usages during collection of SQLs in the transaction trace. When checking the usage of resources in a transaction, it is easy to trace in divided sections.
+
+-   **stat_sql_max_count**<span class='type'>Int</span><br/>
+      Default `5000`<br/>
+      The number of SQL statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.  

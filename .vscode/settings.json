@@ -32,6 +32,10 @@
         {
             "filePath": "src/components",
             "group": "Default"
+        },
+        {
+            "filePath": "README.md",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"

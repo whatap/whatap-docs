@@ -1,0 +1,81 @@
+---
+id: elastic-beanstalk
+title: Elastic Beanstalk
+description: Elastic Beanstalkの環境でWhaTapエージェントの適用を完了してください。
+tags:
+  - Java
+  - Elastic Beanstalk
+---
+
+**Elastic Beanstalk**を利用してデプロイする場合、WhaTapエージェントを適用する方法です。 
+
+{@include: _pass-note.mdx}
+
+1.  Spring Bootの結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮してzip形式でデプロイしてください。
+
+    -   _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
+    -   _.ebextensions/{config_name}.config_：ebの設定ファイル
+    -   _Procfile_：JVM command lineオプションを設定するためのファイル
+    -   _{application}.jar_：実行するapplicaion.jarのファイル
+
+2.  Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3（またはダウンロードできるpublicパス）にアップロードしてください。
+
+    -   _paramkey.txt_
+    -   _whatap.agent-2.0_25.jar_
+    -   _whatap.conf_
+
+    ```bash title='디렉터리 압축하기'
+    zip -r whatap-agent.zip agent
+    ```
+
+3.  _.ebextension/{config_name}.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。<br/>
+    ダウンロードできるように圧縮ファイルの形にしておいた場合、ebを実行して自動的にダウンロードして圧縮を解凍します。
+
+    ```yaml title=ebextension/{config_name}.config
+    sources:
+      target directory:
+        S3のパス
+    ```
+
+    ```yaml title=예시
+    sources:
+      /home/webapp:
+        http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
+    ```
+
+4.  WhaTapエージェントオプションを追加したJVM commandを入力して_Procfile_を作成してください。
+
+    ```yaml title=Procfile
+    web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
+    ```
+
+    ```yaml title=예시
+    web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
+    ```
+
+5.  _Procfile_ファイルと_.ebextensions_ファイル、_{application}.jar_ファイルを圧縮してください。
+
+    ```bash
+    zip -r {application}.zip Procfile .ebextensions/{application}.jar
+    ```
+
+6.  _.elasticbeanstalk/config.yml_ファイルに配布するzipファイルパスを追加してください。
+
+    ```yaml
+    deploy:
+      artifact: /path/to/{application}.zip
+    ```
+
+7.  eb配布コマンドを実行してください。
+
+    ```bash
+    eb deploy
+    ```
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+:::note
+詳細は、[AWSガイド文書](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html)を参考にしてください。
+:::

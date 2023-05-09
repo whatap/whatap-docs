@@ -1,0 +1,102 @@
+---
+id: container-map-metrics
+title: Metrics
+description: Kubernetesのリソース使用量を確認し、使用量が適切に設定されているか確認できます。
+tags:
+  - クバネティス
+  - クバネティスモニタリング
+  - Metrics
+  - メトリックス
+---
+
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後**詳細を見る**画面に進入 > **_メトリクス_**
+
+## Kubernetesメトリクス
+
+Kubernetesは、各コンテナのリソース使用量を制御し、継続的にモニタリングすることで最適な状態を維持します。したがって、リソース使用量を確認し、そのデータに基づいてコンテナリソース使用量が適切に設定されているかを確認する過程は、Kubernetesモニタリングの基本的なパターンといえます。
+
+## CPUとMemoryメトリクス
+
+代表的なKubernetesリソース設定は、コンテナのCPU Request/Limit、Memory Request/Limitです。以下は設定例です。
+
+```text {10-15,19-24} showLineNumbers
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <Pod명>
+spec:
+  containers:
+  - name: <コンテナ1名>
+    image: <コンテナ1イメージ>
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "100m"
+      limits:
+        memory: "128Mi"
+        cpu: "200m"
+  - name: <コンテナ2名>
+    image: <コンテナ2イメージ>
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "250m"
+      limits:
+        memory: "256Mi"
+        cpu: "500m"
+```
+
+上記の設定により、該当するPod内には2つのコンテナが存在します。各コンテナのリソース設定は次のとおりです。
+
+| 対象コンテナ        | リソース区分      | リソース設定      | 値     |
+| ------------- | ----------- | ----------- | ----- |
+| コンテナ1         | CPU         | Request     | 100m  |
+| ^             | ^           | Limit       | 200m  |
+| ^             | Memory      | Request     | 64Mi  |
+| ^             | ^           | Limit       | 128Mi |
+| コンテナ2         | CPU         | Request     | 250m  |
+| ^             | ^           | Limit       | 500m  |
+| ^             | Memory      | Request     | 128Mi |
+| ^             | ^           | Limit       | 256Mi |
+
+様々なコンテナのリソース設定情報や現在の使用量を簡単に把握することは容易ではありません。それで、WhaTap Kubernetesモニタリングサービスは、特定の単一コンテナ、ユーザーが選択した複数のコンテナ、またはDeployment全体を対象にリソース設定および現在の使用量を簡単に確認できる機能を提供します。
+
+-   **詳細を見る** 画面 > **_メトリクス_** - リソース使用量のモニタリングと分析
+
+    ![リソース使用量のモニタリングと分析](https://img.whatap.io/media/images/whatap_kubernetes_container_map_resource_example.png)
+
+-   特定のコンテナを選択して状態を確認できます。
+
+    ![リソース使用量のモニタリングと分析](https://img.whatap.io/media/images/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
+
+上記のデータを見ると、CPUはRequest 0.2colores(200m)、Limit 0.4colores(400m)に設定されています。現在のCPU使用量は0.02cores(20m)(5秒平均)です。右側のCPU関連推移グラフを確認すると、全体的には余裕がありますが、断続的にCPU使用量が増加する現象が確認できます。
+
+Memoryは、Request 128MiB、Limit 256MiBに設定されています。ところで現在のMemory使用量は184MiBです。右側のMemory関連推移グラフを見てもRequest基準で100%を超過し、Limit基準でも70%以上を使用しています。
+
+CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです。 
+
+| 対象リソース | Shortname      | Name                                              | 説明                         |
+| ------ | -------------- | ------------------------------------------------- | -------------------------- |
+| CPU    | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | コンテナCPU使用率                 |
+| ^      | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | コンテナCPU要請対比使用率             |
+| ^      | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | CPU Limit基準CPUの全体使用率       |
+| Memory | MemWs          | **_Container Memory Working Set (byte)_**         | コンテナメモリworking set         |
+| ^      | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | コンテナメモリの要請量基準workingset使用量 |
+| ^      | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | コンテナメモリ割当量基準workingset使用量  |
+
+:::note
+Pod가 실행 중인 노드에 사용 가능한 리소스가 충분하면 컨테이너에 설정된 Request 이상의 리소스를 사용할 수 있습니다. 와탭 메트릭 중 **_Container CPU Usage by Request (%)_**, **_Container Memory Working Set by Request (%)_**의 값이 100%를 넘어설 수 있는 이유입니다.
+
+例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ（Pod）が実行中のノードの総メモリは4GiBであり、そのノードに他のPodがない場合、このコンテナは128MiB以上のメモリを使用できます。
+:::
+
+## その他のメトリクス
+
+WhaTapはCPU、Memoryの他にも様々なメトリクスを提供します。
+
+-   **_Container Block I/O Read Byte_** (IoReadBytes)
+-   **_Container Block I/O Write Byte_** (IoWriteBytes)
+-   **_Container Network Receive Byte_** (NetRxBytes)
+-   **_Container Network Transmit Byte_** (NetTxByes) 
+
+WhaTap Kubernetesメトリクスの詳細については、[次の文書](metrics-intro)を参考にしてください。

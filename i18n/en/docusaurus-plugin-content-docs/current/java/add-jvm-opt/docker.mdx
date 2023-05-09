@@ -1,0 +1,75 @@
+---
+id: docker
+title: Docker
+description: Complete application of the WhaTap agent in the Docker environment.
+tags:
+  - Java
+  - Docker
+---
+
+Based on an existing Docker image, build an image with the WhaTap agent settings added.
+
+:::note
+The following handles only installation of the Java agent. See the separate procedure when applying with WhaTap Kubernetes Monitoring.
+:::
+
+1.  Create a Docker build directory.
+
+    ```bash
+    mkdir -p {Docker build dir}
+    ```
+
+2.  Create the _whatap.conf_ file.
+
+    ```docker {3,5} showLineNumbers
+    cat >{Docker build Dir}/whatap.conf <<EOL
+    # 액세스 키를 입력하세요.
+    license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX 
+    # 수집 서버 IP 정보를 입력하세요.
+    whatap.server.host=xx.xx.xx.xx/yy.yy.yy.yy 
+    EOL
+    ```
+
+3.  Create Dockerfile.\
+    In case of building an image, you can copy the jar file to apply in the `-javaagent` option from the WhaTap image.
+
+    ```docker
+    cat >/home/silver/whatap/docker/Dockerfile <<EOL
+    FROM whatap/kube_mon as build
+    ## Create an actual image (Add the WhaTap image)
+    ## $Image_Name (image name)
+    FROM $Image_Name
+    RUN mkdir -p /whatap
+    COPY --from=build /data/agent/micro/whatap.agent-*.jar /whatap
+    COPY ./whatap.conf /whatap/
+    #...
+    EOL
+    ```
+
+4.  In `JAVA_OPT`, add the following content.
+
+    ```bash
+    WHATAP_HOME=/whatap
+    WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1
+    export JAVA_OPTS="-javaagent:${WHATAP_JAR} "
+    ```
+
+5.  Build the Docker.
+
+    ```bash
+    cd docker
+    docker build -t $Image_Name
+    ```
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+:::note
+Java 에이전트 파일 이름은 `Rename` 기능을 활용해 수정할 수 있습니다. Java 에이전트의 이름을 수정했다면 `JAVA_OPTS`에 새로운 Java 에이전트 이름을 등록하세요.
+
+```bash title='Java 에이전트 이름 수정 방법 예시'
+java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.Rename -from whatap.agent-X.Y.Z.jar -to whatap.agent.jar
+```
+
+:::

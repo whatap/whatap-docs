@@ -1,0 +1,89 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
+tags:
+  - MySQL RDS
+  - Database Monitoring
+  - Agent
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+
+MySQL RDS does not require a separate installation process as long as you can access the database. After [Sign up](https://www.whatap.io/en/signup/), create a project, and then follow the instructions on the screen. For more information about registration as a member, see [the following](account/account-manage).
+
+See the following video guide.
+
+{@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/log/db_guide_setting.mp4}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## Creating the monitoring account{#uid}
+
+Create an account with roles required for database monitoring. Log in with the root account and then create accounts.
+
+:::note
+
+To use a previous account, go to [Create DB Info](#create-db-user). If you do not have any role, you may not be able to proceed with normal monitoring.
+
+:::
+
+<!-- MySQL -->
+
+```bash showLineNumbers
+create user whatap identified by 'DB_PASSWORD'; ## Enter a desired password.
+grant process on *.* to whatap;
+grant select on performance_schema.* to whatap;
+grant show databases on *.* to whatap;
+ 
+## In case of collecting table data
+## Specify the DB name.* or *.* to fetch the table list to collect table data.
+grant select on DB name.* or *.* to whatap;
+ 
+## In case of using the replication
+grant replication client on *.* to whatap;
+grant replication slave on *.* to whatap;
+ 
+## In case of using the kill session
+grant super on *.* to whatap;
+```
+
+## Entry of DB information
+
+![Entry of DB information](/img/mysql-rds-db-info.png)
+
+1.  Enter the required information to connect to the target DB to be monitored. The mark of <span class='vslow'>\*</span> is a required entry.
+
+    -   **_Instance Name_**: Enter a name to identify the DB. It must be unique in the project, and only lowercase letters, numbers, and hyphens (-) can be entered.
+
+    -   **_DB IP_**: Enter the IP address of the DB server.
+
+    -   **_DB Port_**: Enter the port number for accessing the WhaTap collection server.
+
+    -   **_DB User ID_**: Enter the created monitoring account.
+
+    -   **_DB Password_**: Enter the created monitoring account's password.
+
+2.  After all items are entered, select **_Connect_**
+
+3.  It attempts to access the WhaTap collection server (DBCTL). This process may take some time because the agent is created internally and then connection trials are made with the entered address and account data.
+
+If the DB connection is successful, you can see a confirmation message of agent creation.
+
+-   To add a monitoring target DB to this project, select **_Add DB connection_**. Proceed with the **3. Entry of DB Info** step additionally.
+
+    :::note
+
+    If **_Add DB connection_** does not appear, go to **_Management_** > **_Agent Installation_** and then proceed with **Entry of DB Info**.
+
+    :::
+
+-   To check the registered DB information, select **_Instance List_** or **_Instance Monitoring_**.
+
+-   To see or change the agent configuration, select **_Agent CONFIG._**.
+
+-   If agent connection failure occurs, see [the following](troubleshooting).

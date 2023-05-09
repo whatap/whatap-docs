@@ -1,0 +1,95 @@
+---
+id: agent-transaction
+title: Transactions
+description: The agent traces the transaction performance and provides the following configurable options.
+tags:
+  - Golang
+  - Transactions
+---
+
+{@include: ../common-items/_transaction.mdx}
+
+## Transaction tracing
+
+It traces all transactions from web requests to responses, and traces transactions for normal work units. It consists of the start and end functions. It is recognized as a single transaction, and you can check detailed views on the hitmap and statistical metrics such as TPS, response time, and average response time. 
+
+Through the configuration in _whatap.conf_, it collects HTTP parameters and HTTP header data. The keys and values are collected up to 20 cases, and up to 256 bytes for each case.
+
+### whatap.conf configuration
+
+-   **grpc_profile_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>Set whether or not to collect the gRPC (Google Remote Procedure Call) data.
+
+-   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>Set whether or not to collect the client stream method.
+
+-   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span><br/>
+    Default `true`<br/>Set whether or not to collect the server stream method.
+
+-   **grpc_profile_ignore_method** <span class='type'>String</span><br/>
+    Default `agent`<br/>It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
+
+-   **grpc_profile_stream_method** <span class='type'>String</span><br/>
+    Configure the set stream method as a separate transaction. For multiple values, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search.
+
+-   **grpc_profile_stream_identify** <span class='type'>Boolean</span><br/>
+      Default `false`<br/>Stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added.
+    ```ini title='예시'
+    grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
+    ```
+
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>Set whether or not to collect HTTP parameters among gRPC data.
+
+-   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>Set whether or not to collect HTTP headers among gRPC data.
+
+## Web transaction trace
+
+```go title='GO'
+http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+}
+```
+
+Through the `trace.Func()` and `trace.HandlerFunc()` functions, requests are traced.
+
+```go title='GO : trace.Func()'
+http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
+    ...
+}))
+```
+
+```go title='GO : trace.HandlerFunc()'
+http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    ...
+}))
+```
+
+## General transaction trace
+
+```go title='GO'
+func main() {
+    ctx := context.Background()
+    ctx, _ := trace.Start(ctx, "Custom Transaction")
+    defer trace.End(ctx, nil)
+    ...
+}
+```
+
+## API
+
+```go title='GO'
+func Start(ctx context.Context, name string) (context.Context, error)
+
+func End(ctx context.Context, err error) error
+
+func StartWithRequest(r *http.Request) (context.Context, error)
+
+func Step(ctx context.Context, title, message string, elapsed, value int) error
+
+func HandlerFunc(handler func(http.ResponseWriter, *http.Request)) http.HandlerFunc
+
+func Func(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request)
+```

@@ -1,0 +1,60 @@
+---
+id: agent-log
+title: エージェントログの設定
+description: PHPエージェントログの位置とオプションを設定できます。
+tags:
+  - PHP
+  - エージェントログ
+  - 設定
+  - アプリケーション
+---
+
+アプリケーションサーバーが実行されると、モニタリング情報を収集します。収集した情報は、ログファイルに保存します。 
+
+## ログの設定
+
+-   **whatap.log_keep_days**<span class='type'>Day</span><br/>
+      デフォルト値「7」<br/>
+      ログファイルの保管期間を設定します。
+
+## ログシンク（LogSink）の設定
+
+ログデータを収集します。
+
+### 基本設定
+
+-   **whatap.logsink_enabled**<span class='type'>Boolean</span><br/>
+      デフォルト値「false」<br/>
+      値が「true」の場合、ログデータを収集します。
+
+-   **whatap.logsink_zip_enabled**<span class='type'>Boolean</span><br/>
+      デフォルト値「false」<br/>
+      値が「true」の場合、ログデータを圧縮して転送します。デフォルトはGzipです。
+
+-   **whatap.watchlog_enabled**<span class='type'>Boolean</span><br/>
+      デフォルト値「false」<br/>
+      値が「true」の場合、ログファイルを指定してログデータを収集します。
+
+### ログファイル設定
+
+-   **whatap.watchlog.[ログファイル固有ID指定].enabled**<span class='type'>Boolean</span><br/>
+      値が「true」の場合、ログファイルの固有IDを任意に指定し、該当IDでログデータを収集します。
+
+-   **whatap.watchlog.[로그파일 고유 아이디 지정].file**<span class='type'>String</span><br/>
+      ログファイルの固有IDを任意に指定し、ファイルパスとファイル名を設定します。
+
+### 例
+
+```ini title='기본 설정'
+whatap.logsink_enabled=true
+whatap.logsink_zip_enabled=true
+whatap.watchlog_enabled=true
+```
+
+```ini title='Apache error log 및 access log 설정'
+whatap.watchlog.apache_error_log.enabled=true
+whatap.watchlog.apache_error_log.file=/etc/httpd/logs/error_log
+
+whatap.watchlog.apache_access_log.enabled=true
+whatap.watchlog.apache_access_log.file=/etc/httpd/logs/access_log
+```

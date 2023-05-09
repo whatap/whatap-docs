@@ -1,0 +1,95 @@
+---
+id: agent-transaction
+title: トランザクション
+description: エージェントのトランザクションパフォーマンスを追跡および設定するためのオプションを提供します。
+tags:
+  - Golang
+  - トランザクション
+---
+
+{@include: ../common-items/_transaction.mdx}
+
+## トランザクションのトレース
+
+ウェブリクエストとレスポンスまでのトランザクションと一般的なタスク単位のトランザクションの両方を追跡します。開始関数と終了関数で構成します。一つのトランザクションとして認識され、ヒートマップで詳細表示やTPS、レスポンス時間、平均レスポンス時間などの統計指標を確認することができます。 
+
+_whatap.conf_ファイル設定を通じてHTTP Parameter、HTTP Header情報を収集します。key, valueは最大20個、それぞれ256 byteまで収集します。
+
+### whatap.conf設定
+
+-   **grpc_profile_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>gRPC（Google Remote Procedure Call, 以下gRPC）情報の収集有無を設定します。
+
+-   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>client stream method情報の収集有無を設定します。
+
+-   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `true`<br/>server stream method情報の収集有無を設定します。
+
+-   **grpc_profile_ignore_method** <span class='type'>String</span><br/>
+    デフォルト値 `agent`<br/>設定した値に対するメソッドを収集しません。複数登録するときは、コンマ（,）を区切り文字として利用してください。
+
+-   **grpc_profile_stream_method** <span class='type'>String</span><br/>
+    設定したstream methodを別途のトランザクションとして構成します。複数登録するときは、コンマ（,）を区切り文字として利用してください。長時間続くstream接続に対して、それぞれのmethod呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。
+
+-   **grpc_profile_stream_identify** <span class='type'>Boolean</span><br/>
+      デフォルト値 `false`<br/>Stream full methodをトランザクション名で収集し、同一のfull methodに対してclientとserverを区切る接頭辞を追加します。
+    ```ini title='예시'
+    grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
+    ```
+
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>gRPC情報の中でhttpパラメータ情報の収集有無を設定します。
+
+-   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
+    デフォルト値 `false`<br/>gRPC情報の中でhttpヘッダー情報の収集有無を設定します。
+
+## Webトランザクション追跡
+
+```go title='GO'
+http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
+    ctx, _ := trace.StartWithRequest(r)
+    defer trace.End(ctx, nil)
+}
+```
+
+`trace.Func()`、`trace.HandlerFunc()`関数を通じてRequestを追跡します。
+
+```go title='GO : trace.Func()'
+http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
+    ...
+}))
+```
+
+```go title='GO : trace.HandlerFunc()'
+http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    ...
+}))
+```
+
+## ノーマルトランザクション追跡
+
+```go title='GO'
+func main() {
+    ctx := context.Background()
+    ctx, _ := trace.Start(ctx, "Custom Transaction")
+    defer trace.End(ctx, nil)
+    ...
+}
+```
+
+## API
+
+```go title='GO'
+func Start(ctx context.Context, name string) (context.Context, error)
+
+func End(ctx context.Context, err error) error
+
+func StartWithRequest(r *http.Request) (context.Context, error)
+
+func Step(ctx context.Context, title, message string, elapsed, value int) error
+
+func HandlerFunc(handler func(http.ResponseWriter, *http.Request)) http.HandlerFunc
+
+func Func(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request)
+```

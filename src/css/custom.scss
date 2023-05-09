@@ -92,6 +92,17 @@ html[lang='ko'] {
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
+html[lang='en'] {
+  word-wrap: keep-all;
+  font-family: 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+}
+
+html[lang='ja'] {
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: 'Noto Sans Japanese', 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -162,10 +173,19 @@ html[lang='ko'] {
       fill: var(--shortcut-list-color);
     }
   }
-  .start-menu + .dropdown__menu {
+  .oneColumn + .dropdown__menu {
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;
+    width: 100%;
+    min-width: fit-content;
+    li {
+      min-width: none;
+      display: block;
+      a {
+        width: 100%;
+      }
+    }
     li:last-of-type {
       margin-bottom: 0;
     }
@@ -989,7 +1009,7 @@ main {
     img[src*='k8s-download-yaml'] {
       width: 400px;
     }
-    img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'] {
+    img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'] {
       position: relative;
       top: 3px;
       max-height: 19px !important;

@@ -1,0 +1,10 @@
+By uploading the Linux system logs in real time, you can check the logs generated upon failure. The log files to collect are as follows:
+
+-   _/var/log/syslog_
+-   _/var/log/messages_
+
+The configuration is as follows:
+
+```bash title='Linux Shell'
+echo "systemlog.enabled=true" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+```

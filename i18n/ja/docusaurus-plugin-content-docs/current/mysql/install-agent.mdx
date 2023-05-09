@@ -1,0 +1,88 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+tags:
+  - MySQL
+  - データベースモニタリング
+  - エージェント
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+{@include: ../common-items/_agent-signup-guide.mdx}  
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}  
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## WhaTapデータベースエージェントのダウンロード
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+
+```ini title='whatap.conf'
+license=プロジェクトアクセスキー
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+
+dbms=mysql
+db_ip={DBサーバーのIPアドレス}
+db_port={DBサーバーのポート番号}
+```
+
+1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+
+  **Mysql & MariaDB 5.5バージョン以降**
+
+```
+* [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
+* [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
+```
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+<!-- 모니터링용 계정 생성 -->
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+<!-- MySQL -->
+
+```bash showLineNumbers
+create user whatap identified by 'DB_PASSWORD'; # passwordを入力してください。
+grant process on *.* to whatap;
+grant select on performance_schema.* to whatap;
+grant show databases on *.* to whatap;
+ 
+# テーブル情報を収集する場合
+# table listを読み込むdb名.*または*.*を指定すると、table情報が収集されます。
+grant select on DB名.*または*.* to whatap;
+ 
+# replicationを使用する場合
+grant replication client on *.* to whatap;
+grant replication slave on *.* to whatap;
+ 
+# kill sessionを使用する場合
+grant super on *.* to whatap;
+```
+
+## DBユーザーファイルの作成{#create-db-user}
+
+<DBuserDesc name='default'/>
+
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
+
+<!--## 에이전트 실행-->
+
+{@include: ../common-items/_db-run-agent.mdx}

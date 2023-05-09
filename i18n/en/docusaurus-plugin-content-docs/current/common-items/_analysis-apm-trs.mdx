@@ -1,0 +1,192 @@
+Home > Select Project > **_STAT/REPORT_** > **_Statistics_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_STAT/REPORT_** > **_Statistics_** under **_Project Menu_**. The WhaTap agent collects statistical data for the key trace information such as transaction information and SQL. A list is created every 5 minutes and is sent to the server.
+
+## Transaction statistics
+
+It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specific performance statistics are collected and sent to the server. If the number of URLs for 5 minutes exceeds 5,000, this is ignored.
+
+| Columns        | Description                 | Type |
+| -------------- | --------------------------- | ---- |
+| hash           | URL hash                    | u4   |
+| count          | Count                       | u4   |
+| error          | Number of errors            | u4   |
+| time_sum       | Sum of response times       | u8   |
+| time_max       | Maximum response time       | u4   |
+| sql_count      | SQL execution count         | u4   |
+| sql_time       | Sum of SQL execution times  | u8   |
+| sql_fetch      | SQL Fetch Count             | u4   |
+| sql_fetch_time | Sum of SQL patch times      | u8   |
+| httpc_count    | Number of HTTP calls        | u4   |
+| httpc_time     | Sum of HTTP call times      | u8   |
+| malloc_sum     | Sum of memory usage amounts | u8   |
+| cpu_sum        | Sum of CPU usage amounts    | u8   |
+
+:::note
+`malloc_sum` is collected only when changed to `trace_malloc_enabled=true`. The default value is `false`.
+:::
+
+## Transaction domain statistics
+
+The WhaTap agent can collect transaction statistics for each domain. In the systems where multiple domains are separated and serviced on a server, domain-specific analysis may be required. Set the following option:
+
+```ini title='whatap.conf'
+stat_domain_enabled=true
+```
+
+Through the collected data, you can identify the processing status of URLs for each domain.
+
+| Columns | Description               | Type |
+| ------- | ------------------------- | ---- |
+| domain  | Service domain hash       | u4   |
+| url     | Transaction URL hash      | u4   |
+| count   | Number of execution cases | u4   |
+| error   | Number of errors          | u4   |
+| time    | Sum of response times     | u8   |
+
+## Transaction caller statistics
+
+If the multi server is connected by a rest call, the relationship statistics between **callers** and **callees** can be collected. To collect this data, set the following options:
+
+```ini title='whatap.conf'
+mtrace_rate=100
+mtrace_spec=v1
+stat_mtrace_enabled=true
+```
+
+![msa-system](https://img.whatap.io/media/agent_java/data/msa.png)
+
+In the above architecture, the **Caller & Callee** statistics can be viewed only in api1 and api2. The system called by the user browser cannot see the **Caller** statistics.
+
+However, because the server on the **caller** side must transfer data, the relevant settings must be entered for all servers.
+
+```ini title='whatap.conf of [front]'
+mtrace_rate=100
+mtrace_spec=v1
+stat_mtrace_enabled=true
+```
+
+```ini title='whatap.conf of [api1] & [api2]'
+mtrace_spec=v1
+stat_mtrace_enabled=true
+```
+
+The statistical data collected is as follows. The data must be viewed from the **callee** side.
+
+| Columns      | Description                         | Type |
+| ------------ | ----------------------------------- | ---- |
+| caller_pcode | Project (whatap) code of the caller | u8   |
+| caller_spec  | Version string hash of the caller   | u4   |
+| caller_url   | URL hash of the caller              | u4   |
+| spec         | Version string hash of the callee   | u4   |
+| url          | Callee URL hash                     | u4   |
+| count        | Number of execution cases           | u4   |
+| error        | Number of errors                    | u4   |
+| time         | Sum of response times               | u8   |
+
+## Transaction referer statistics{#stat-referer}
+
+The WhaTap agent can collect transaction statistics for each referer. Set the following option:
+
+```ini title='whatap.conf'
+stat_referer_enabled=true
+```
+
+Through the collected data, you can see the referer data on the statistics.
+
+| Columns | Description               | Type |
+| ------- | ------------------------- | ---- |
+| referer | Referer hash              | u4   |
+| url     | Transaction URL hash      | u4   |
+| count   | Number of execution cases | u4   |
+| error   | Number of errors          | u4   |
+| time    | Sum of response times     | u8   |
+
+## Error statistics
+
+They are statistics on the service errors that occurred for 5 minutes. It collects different errors and transaction names with the keys. Statistics appear for up to 1,000 errors every 5 minutes.
+
+| Columns   | Description           | Type |
+| --------- | --------------------- | ---- |
+| classHash | Error class           | u4   |
+| service   | Transaction hash      | u4   |
+| snapSeq   | Stack data            | u8   |
+| msg       | Message hash          | u4   |
+| count     | Number of occurrences | u4   |
+
+## SQL execution statistics
+
+The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL statements are allowed in 5 minutes. If a single Java process generates SQL statements that exceed the limit, they are discarded from statistical data.
+
+| Columns     | Description                            | Type |
+| ----------- | -------------------------------------- | ---- |
+| dbc         | Hash of DB connection data             | u4   |
+| sql         | Hash of the SQL statement              | u4   |
+| count_total | Number of execution cases              | u4   |
+| count_error | Number of errors                       | u4   |
+| time_sum    | Sum of response times                  | u8   |
+| time_max    | Maximum response time                  | u4   |
+| fetch_count | Number of patches                      | u4   |
+| fetch_time  | Sum of patch times                     | u8   |
+| service     | One of the services that performed SQL | u4   |
+
+:::note
+The `service (URL)` hash collects one (the last URL called) of URLs that called the SQL for 5 minutes for analysis.
+:::
+
+## HTTP call execution statistics
+
+The HTTP call execution statistics for 5 minutes are collected. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single node.js process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
+
+| Columns     | Description               | Type |
+| ----------- | ------------------------- | ---- |
+| url         | Target URL hash           | u4   |
+| host        | Host or IP                | u4   |
+| port        | TCP port                  | u4   |
+| count_total | Number of execution cases | u4   |
+| count_error | Number of errors          | u4   |
+| time_sum    | Sum of response times     | u8   |
+| time_max    | Maximum response time     | u4   |
+| service     | One of HTTP call services | u4   |
+
+## Number of calls for each client IP region
+
+<!-- 정은님 수정 예정? -->
+
+The physical distance between the server and the client is proportional to the data transfer time. It statistically collects call counts for each region of the client IP. The number of different IPs that can be collected per 5 minutes is up to 70,000 per instance.
+
+| Columns | Description         | Type |
+| ------- | ------------------- | ---- |
+| ip      | IP address          | u4   |
+| country | User access country | -    |
+| city    | User access city    | -    |
+| count   | Count               | u4   |
+
+### Share chart by region
+
+The share chart collects user access locations and presents them for each country and city. 
+
+-   If a country is selected, the detailed chart appears to display each country's cities and connected user IPs.
+-   If you select the center circle, it goes to the country selection chart.
+
+<!-- 
+
+IP 별 호출 건수
+
+IP별로 호출한 트랜잭션 건수를 통계적으로 수집합니다. 5분당 수집할 수 있는 서로 다른 IP 수는 인스턴스 당 최대 70,000개입니다.
+
+
+**클라이언트 IP 의 지역을 확인하는 이유**
+
+**네트워크 성능 최적화**에 ‘클라이언트 IP’가 중요한 이유는 서버와 클라이언트의 물리적 거리가 네트워크 소요 시간에 영향을 주기 때문입니다. 서버와 클라이언트가 지리적 거리는 데이터의 전송 시간과 비례합니다. 클라이언트 IP의 지역 통계를 통해 유저 수가 많은 리전으로 서버를 이전, 증설하는 것을 고려 할 수 있습니다.
+
+-->
+
+## Call counts for each user agent
+
+The numbers of calls for each hash of the user agent string are collected. There is a maximum of 500 different user agent hashes for each instance that can be collected every 5 minutes.
+
+| Columns | Description | Type |
+| ------- | ----------- | ---- |
+| hash    | hash        | u4   |
+| count   | Count       | u4   |

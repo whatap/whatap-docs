@@ -1,0 +1,139 @@
+---
+id: mxql-select
+title: Metrics selection
+description: Let's learn about the commands that select metrics with the MXQL syntax.
+toc_max_heading_level: 2
+tags:
+  - MXQL
+  - Metrics selection
+---
+
+Let's learn about the commands that select metrics with the MXQL syntax.
+
+| Command                   | Function                                                                               |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| [CATEGORY](#category)     | Select which category to search the data from. This command and operands must be set.  |
+| [OKIND](#oid)             | Set to search only the collected data from a specific `OKIND`.                         |
+| [OID](#oid)               | Set to search only the collected data from a specific `OID`.                           |
+| [ONODE](#oid)             | Set to search only the collected data from a specific `ONODE`.                         |
+| [HEADER](#header)         | Set the value to be passed to the front end.                                           |
+| [TIME-RANGE](#time-range) | Set the start time and end time to search data.                                        |
+
+## CATEGORY{#category}
+
+Select which category to search the data from. This **command** and **operands** must be set. 
+
+### Operand
+
+-   **String**: Searches data in a specific category.
+
+    ```sql title='조회시간에 상관없이 항상 app_counter 카테고리의 데이터를 로드합니다.''
+    CATEGORY app_counter
+    TAGLOAD
+    ```
+
+-   **JSON**: You can set to select categories depending on the data query time.
+
+    Select `app_counter`, `app_counter{m5}`, and `app_counter{h1}` categories respectively for the cases where the lookup time is 6 hours, 3 days, or more.
+
+    ```sql
+    CATEGORY {"app_counter":6h, "app_counter{m5}":3d, "app_counter{h1}":unlimit } 
+    TAGLOAD 
+    ```
+
+:::caution
+
+-   Only one value can be specified as the operand of `CATEGORY`. To check the data of multiple `categories` at once, use [JOIN](mxql-calculate#join).
+-   Depending on the loading method ([TAGLOAD](mxql-loading#tagload) or [FLEXLOAD](mxql-loading#flexload)), the categories that can be set differ. 
+-   If `{m5}` or `{h1}` is attached to the name of `CATEGORY`, see [MetricValue](mxql-guide#metric-value).
+
+## OID, OKIND, ONODE{#oid}
+
+Set to search the data extracted from specific `OID`, `OKIND`, and `ONODE`. It can select one value of `OID`, `OKIND`, and `ONODE`.
+
+### Operand
+
+You can set a single value as a string or set multiple values as an array of strings. 
+
+```sql title='예시 1'
+CATEGORY app_counter
+OID 1388369480
+TAGLOAD
+```
+
+```sql title='예시 2'
+CATEGORY app_counter
+OID [1388369480, 1388369481] 
+TAGLOAD
+```
+
+```sql title='예시 3'
+CATEGORY app_active_stat
+ONODE 1693789385
+TAGLOAD
+```
+
+:::caution
+
+-   It can select one value of `OID`, `OKIND`, and `ONODE`. 
+-   Instructions that have not input operands (or have not passed parameter values) are ignored.
+-   If `OID`, `OKIND`, and `ONODE` are used repeatedly, only the last entered command is applied.
+-   Because `OIDSET` is deprecated, it is recommended to use a command of `OID`, `OKIND`, and `ONODE`.
+-   It is different from applying [FILTER](mxql-calculate#filter) in the data processing step in that only the required data is searched from the data loading step.
+:::
+
+:::note
+In case of `OKIND` and `ONODE` commands, only when the `okind` and `onode` related fields (`okind`, `onode`, `okindName`, `onodeName`) are included, they can be used in the `CATEGORY` command. In **_Sitemap_** > **_Analysis_** > **_Metrics Search_**, you can see which categories contain which fields. 
+:::
+
+## HEADER{#header}
+
+The data searched by MXQL is used in the widget of the Flex Board. You can set information about which fields (of the data searched by MXQL) and which type have been used to express the widget of the Flex Board.
+
+### Operand
+
+You can set only with JSON strings. 
+
+```sql title='예시'
+HEADER { apdex_satisfied$:I, apdex_tolerated$:I, apdex_total$:I,  apdex$:F, category: app_counter}
+OID $oid
+CATEGORY app_counter
+TAGLOAD
+```
+
+:::caution
+It must be passed depending on the format used by the widget of the Flex Board.
+:::
+
+## TIME-RANGE{#time-range}
+
+You can set the data lookup time range. Basically, you can use DatePicker from [Test environment](mxql-guide#test-env) to set the time. If this command is used in the test environment, the value set for DatePicker is ignored. 
+
+![DatePicker in the test environment](https://img.whatap.io/media/images/mxql-8.png)
+
+-   Retrieving data only for the last 15 seconds
+
+    ```sql
+    TIME-RANGE { recent : 15s }
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ```
+
+-   Retrieving data only for the previous 15 seconds before `etime` (passes `etime` as a parameter)
+
+    ```sql
+    TIME-RANGE {duration:15s, etime:$etime}
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ```
+
+-   Retrieving data only for 15 seconds from `stime` (passes `stime` as a parameter)
+
+    ```sql
+    TIME-RANGE {duration:15s, stime:$stime}
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT
+    ```

@@ -1,0 +1,15 @@
+---
+id: agent-network
+title: エージェントの通信設定
+description: エージェントとサーバー間の接続に関する設定です。
+tags:
+  - Java
+---
+
+{@include: ../common-items/_common-network.mdx}
+
+-   **net_send_queue1_size** <span class='type'>Int</span><br/>
+    デフォルト値 `256`<br/>トレース情報とアクティブスタックを除く残りのデータ転送に使用するキューのサイズを設定します。設定したサイズが10以下の場合は10に設定します。
+
+-   **net_send_queue2_size** <span class='type'>Int</span><br/>
+    デフォルト値 `512`<br/>トレース情報とアクティブスタック データ転送に使用するキューのサイズを設定します。設定したサイズが10以下の場合は10に設定します。

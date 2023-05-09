@@ -1,0 +1,69 @@
+---
+id: ibm-bluemix
+title: IBM BlueMix
+description: IBM BlueMix環境でWhaTapブエージェントの適用を完了してください。
+tags:
+  - Java
+  - IBM BlueMix
+---
+
+**IBM BlueMix**を利用して配布する場合、WhaTapエージェントを適用する方法です。 
+
+[IBM BlueMix](https://console.bluemix.net/docs/apps/index.html%E2%80%8B)は、コンテナで**WebSphere Liberty**環境を提供します。**Liberty**は、**WebSphere Application Server**とは異なる軽量化環境で**Spring Boot**が動作する方式と似ています。
+
+{@include: _pass-note.mdx}
+
+以下は設定環境の例です。 [ガイド](https://cloud.ibm.com/docs)による環境を構成する場合、ローカル開発環境で生成するファイルです。
+
+```bash
+whatap@vmwas01:/apps/bluemix/java-helloworld$ ls -alrt
+合計 64
+drwxrwxr-x 3 whatap whatap  4096 10月 29 13:13 ..
+-rw-rw-r-- 1 whatap whatap  1079 10月 29 13:13 .classpath
+-rw-rw-r-- 1 whatap whatap  1184 10月 29 13:13 .project
+-rw-rw-r-- 1 whatap whatap    39 10月 29 13:13 .gitignore
+-rw-rw-r-- 1 whatap whatap   151 10月 29 13:13 CONTRIBUTING.md
+drwxrwxr-x 2 whatap whatap  4096 10月 29 13:13 .settings
+-rw-rw-r-- 1 whatap whatap  2823 10月 29 13:13 pom.xml
+-rw-rw-r-- 1 whatap whatap   122 10月 29 13:13 manifest.yml
+-rw-rw-r-- 1 whatap whatap  3522 10月 29 13:13 README.md
+-rw-rw-r-- 1 whatap whatap 11323 10月 29 13:13 LICENSE
+drwxrwxr-x 3 whatap whatap  4096 10月 29 13:13 src
+drwxrwxr-x 2 whatap whatap  4096 10月 29 13:13 target
+drwxrwxr-x 8 whatap whatap  4096 10月 29 13:13 .git
+drwxrwxr-x 6 whatap whatap  4096 10月 29 15:26 .
+```
+
+1.  `${APP_HOME}`で_src/main/resources/whatap-agent/_ディレクトリを作成し、jarファイル、confファイルをコピーしてください。
+
+    ```bash
+    $ mkdir -p src/main/resources/whatap-agent/
+    $ cp /apps/whatap/whatap.agent.tracer-1.5.4.jar src/main/resources/whatap-agent/
+    $ cp /apps/whatap/whatap.conf src/main/resources/whatap-agent/
+    ```
+
+2.  _${APP_HOME}/manifest.yml_ファイルにオプションを追加してください。ymlファイルですので、スペース、インデント基準に沿って作成してください。
+
+    ```yaml title=${APP_HOME}/manifest.yml {8-9} showLineNumbers
+    ---
+    applications:
+    - name: sample-java-helloworld
+    random-route: true
+    memory: 256M
+    path: target/JavaHelloWorldApp.war
+    # ここから追加します。
+    env:
+        JAVA_OPTS: "-javaagent:/{APPLICATION_DIR}/WEB-INF/classes/whatap-agent/whatap.agent-X.Y.Z.jar -Dorg.osgi.framework.bootdelegation=whatap.* "
+    ```
+
+:::note
+{@include: _java-17.mdx}
+:::
+
+:::note
+
+-   _whatap.conf_設定は、PaaSではなく環境と同様に適用します。適用後、エージェント名の識別が困難な場合がありますので、状況に応じたエージェント名を適用してください。
+-   エージェントネーミングの詳細については、[次の文書](../agent-name)を参考にしてください。
+:::
+
+{@include: ../../common-items/_start-apm.mdx}  

@@ -1,0 +1,59 @@
+---
+id: agent-name
+title: Agent name identification
+description: The following explains how to set the agent name in order to identify the monitoring target.
+tags:
+  - PHP
+  - Agent name
+  - Configuration
+  - Application
+---
+
+{@include: ../common-items/_apm-name-description.mdx}
+
+{@include: ../common-items/_agent-name-warning.mdx}
+
+:::note
+
+-   In WhaTap Monitoring, the object and agent can be used interchangeably as the monitoring target.
+:::
+
+The default patterns used to identify the application server are as follows:
+
+```javascript title='object_name 기본 패턴'
+{type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
+```
+
+<!-- * default: {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips} -->
+
+The default pattern can be modified in _whatap.ini_.
+
+<!--
+```javascript title='whatap.object_name'
+{type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
+```
+-->
+
+<!-- * object_name default: {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips} -->
+
+| Configuration | Description                                                         |
+| ------------- | ------------------------------------------------------------------- |
+| type          | Use the value set in whatap.app_name.                               |
+| Ip#           | When IPs are divided by period (.), the #th digit (from 0) is used. |
+| process       | Use the value set in whatap.app_name.                               |
+| hostname      | The server host name is used.                                       |
+| dockerid      | Docker container ID                                                 |
+| ips           | Full IP (IPv4, IPv6)                                                |
+
+-   **whatap.object_name**<span class='type'>String</span><br/>
+        Default `{type}-{ip2}-{ip3}-{process}`<br/>
+        The agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.<br/>
+    {@include: ../common-items/_php-restart-whatap-service.mdx}
+
+-   **whatap.app_name**<span class='type'>String</span><br/>
+        The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.<br/>
+    {@include: ../common-items/_php-restart-whatap-service.mdx}
+
+-   **whatap.app_process_name**<span class='type'>String</span><br/>
+         It is the application process name used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. It is the value that corresponds to the `{process}` of `object_name`.<br/>
+    {@include: ../common-items/_php-restart-whatap-service.mdx}

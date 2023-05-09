@@ -1,0 +1,21 @@
+---
+id: agent-static
+title: Statistics
+description: The following options are related to the statistics collection for the data collected by the agent.
+tags:
+  - Node.js
+  - Statistics
+---
+
+The following options are related to the statistics collection for the data collected by the agent.
+
+-   **mtrace_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>It sets whether or not to use the multi-transaction tracing (MTID). By tracing the MTID, you can check the calls between all the registered applications.
+
+-   **stat_domain_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>
+    It enables the function to collect transaction statistics for each domain that connects to clients.
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
+    Default `false`<br/>
+    It enables the function to collect call statistics between services in the MSA architecture. If the value is `true`, it delivers its own data upon outbound call.

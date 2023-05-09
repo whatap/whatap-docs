@@ -1,0 +1,67 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following explains how to install an agent on the application server in the .NET environment.
+tags:
+  - .NET
+  - Agent Installation
+---
+
+import TR from '@site/src/components/TR';
+
+To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/ko/signup/), create a project and then install the agent to the target server.
+
+{@include: ../getting-started/_create-project-v2.mdx}   
+
+{@include: ../getting-started/_accesskey-v2.mdx}
+
+## Downloading the agent
+
+**액세스 키**를 발급 받으면 **_에이전트 파일 다운로드_** 섹션에서 다운로드 버튼이 활성화됩니다. **_EXE 다운로드_** 또는 **_ZIP 다운로드_** 버튼을 선택해 에이전트 설치 파일을 다운로드하세요.
+
+:::note
+
+-   The .zip file is also provided for the users who cannot accept .exe files due to security issues.
+
+-   For server security, it is recommended to run the downloaded installation file rather than installing through the browser.
+
+:::
+
+## Installing the agent{#install-agent}
+
+1.  Double-click the downloaded installation file to run it.
+
+2.  화면의 안내에 따라 **_License Key_** 항목에는 **액세스 키**를, **_WhaTap IP_** 항목에는 **와탭 서버 IP**를 입력하세요.<br/>와탭 모니터링 서비스의 프로젝트 생성 화면에서 **_액세스 키_**와 **_와탭 서버 IP_** 값을 복사할 수 있습니다.
+
+    ![.NET installation - 01](https://img.whatap.io/media/agent_dotnet/install/agent_install_02.png)
+
+3.  **_Next_** 버튼을 클릭하세요.
+
+4.  다음 화면에서 **_Install_** 버튼을 클릭하세요. 설치를 진행합니다.
+
+5.  **_Finish_** 버튼을 클릭해 설치를 완료하세요.
+
+<details>
+<summary>Configuration file after installation of the .NET agent</summary>
+
+It consists of a tracer to collect monitoring data and agents to transfer the collected data to the server.
+
+-   _WhaTap.ClrProfiler.dll_: .NET CLR profiler. It is connected to the .NET tracing API.
+
+-   _WhaTap.Trace.dll_: It processes the data passed by the profiler and sends it to the agent.
+
+-   _whatap_dotnet.exe_: This program transfers the data passed from the agent or tracer to the collection server.
+
+-   _whatap.conf_: Configuration file for the agent environment
+
+</details>
+
+## Starting the monitoring
+
+애플리케이션 서버를 다시 시작하면 에이전트가 정보 수집을 시작합니다.
+
+:::note
+
+에이전트 업데이트에 대한 자세한 내용은 [다음 문서](agent-manage)를 참조하세요.
+
+:::

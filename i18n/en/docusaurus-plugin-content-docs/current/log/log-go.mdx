@@ -1,0 +1,59 @@
+---
+id: log-go
+title: Golang
+description: It guides you how to collect logs from your Go application.
+tags:
+  - Log Monitoring
+  - Golang
+  - Log
+---
+
+To collect logs by your Golang application, check the following.
+
+<!-- 
+
+## 에이전트 업데이트
+
+업데이트 확인 필요없음 개발 단계에 이미 포함
+
+Golang Agent [기입 필요] 버전부터 가능합니다. 업데이트 방법은 [다음 문서](/)를 참조하세요. 
+
+-->
+
+## Checking the agent settings
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. Proceed with the process according to the instructions in the **_Check Agent Settings_** tab of the **_Start Log Monitoring_** section.
+
+### Enabling the collection of logs
+
+If you enter the following command, log collection is started immediately.
+
+```bash
+export LOGFILES=/some/path/file1,/some/other/file2
+echo "logsink_enabled=true" | sudo tee -a /usr/whatap/agent/whatap.conf
+echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/agent/whatap.conf
+```
+
+## Enabling the log monitoring
+
+Home > Select Project > **_Log_** > **_Log Setting_** 
+
+You can enable or disable the WhaTap log monitoring with the toggle button in the **_Activate log monitoring_** tab of the **_Starting the log monitoring_** section.
+
+{@include: ../common-items/_log-java-start.mdx}
+
+{@include: ../common-items/_log-active-note.mdx} 
+
+<!-- 
+
+:::note
+
+**권한**
+
+프로젝트에 대한 **수정 권한**이 있는 경우에만 로그 모니터링 설정을 수정할 수 있습니다. 권한에 대한 자세한 내용은 [다음 문서](../project/project-structure)를 참조하세요.
+
+:::
+
+-->

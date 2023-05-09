@@ -1,0 +1,155 @@
+---
+id: int-metrics-board
+title: Integrated Metrics Board
+description: description
+tags:
+  - Integrated Metrics Board
+  - Metrics
+---
+
+Home > **_Integrated Metrics Board_**
+
+You can create a dashboard where you can view metrics data from all your projects. The metrics of different product groups can be seen at a glance by configuring them as widgets on the dashboard.
+
+:::note
+**_통합 메트릭스 보드_** 메뉴를 처음 이용한다면 **_Flex 보드_** 메뉴를 사용할 것을 권장합니다. **_Flex 보드_**에 대한 자세한 내용은 각 상품별 문서를 참조하세요.
+
+{@include: ../_link2flexboard.mdx}
+:::
+
+## Adding a widget chart
+
+1.  In **_Integrated Metrics Board_**, select **_+ Add Widget_**. 
+
+2.  A **_dashboard_** widget is created on the dashboard. Select ![Edit icon](/img/ico-edit.svg) on the upper right of the widget.
+
+3.  The **_Create dashboard_** window appears.
+
+### Setting the series chart shape
+
+Select **_Series_** in **_Chart Type_**. In the **_series_** chart, you can see the flow of metric data over time.
+
+![Series Chart](/img/int-metrics-dashboard-add.png)
+
+-   **_Preview_**: You can see that the chart shape changes depending on the options.
+
+-   **_Title_**: Enter the widget chart name.
+
+-   **_X Axis_**
+    -   **_Axis Line_**: You can show or hide the X-axis line.
+    -   **_Plot Line_**: You can show or hide the vertical lines over time.
+    -   **_Tick_**: You can show or hide the X-axis text.
+
+-   **_Y Axis_**
+    -   **_Axis Line_**: You can show or hide the Y-axis line.
+    -   **_Plot Line_**: You can show or hide the horizontal lines by data.
+    -   **_Tick_**: You can show or hide the Y-axis text.
+    -   **_Inner Label_**: Y-axis text is moved inside the chart.
+    -   **_uni_**: You can set the unit for the Y-axis data.
+
+-   **_Style_**
+    -   **_Area_**: The inside of the graph area is filled with color.
+    -   **_Plot Vertical Line_**
+    -   **_Show Plot Max Y Value_**: It displays the highest number as text on the chart.
+
+-   **_Hover tooltip_**
+    -   **_Tick_**
+
+### Setting the shape of the static chart
+
+In **_Chart Type_**, select **_Static_**. The **_static_** chart represents metric data as text. It is convenient to immediately check the real-time data values.
+
+![Static Chart](/img/int-metric-dashboard-static.png)
+
+-   **_Preview_**: You can see that the chart shape changes depending on the options.
+
+-   **_Title Style_**
+    -   **_Title_**: Enter the title of the metric chart widget.
+    -   **_description_**: 메트릭스 차트 위젯에 대한 설명을 입력하세요.
+    -   **_Title Font Color_**: Set the color of the title.
+
+-   **_Content Label_**
+    -   **_Content Font Size_**: Set the size of the text to display on the chart.
+    -   **_Content Background Color_**: Set the background color of the text to display on the chart.
+    -   **_Content Front Color_**: Set the color of the text to display on the chart.
+    -   **_Vertical Align_**: Set the text's vertical alignment.
+    -   **_Horizontal Align_**: Set the text's horizontal alignment.
+
+-   **_Formats_**
+    -   **_format_**: Set the unit of the metric data.
+    -   **_Separator_**: Thousands can be separated with a comma (,).
+    -   **_Prefix_**: You can add a prefix to texts on the chart.
+    -   **_Suffix_**: You can add a suffix to texts on the chart.
+
+### Setting the shape of the color alert chart
+
+Select **_Color alert_** in **_Chart Type_**. With the **_Color alert_** chart, you can easily see the delay interval of metric data. The intervals can be set in three steps by default, and can be subtracted or added.
+
+-   **_Title_**: Enter the title of the chart.
+
+-   **_Values_**
+
+    -   **_Name_**: You can enter names for each section to identify the current status.
+    -   **_Min_**: You can set the delay time in minutes.
+    -   **_Color_**: You can intuitively grasp the current status by setting colors for each delay section.
+
+    :::note
+    To delete an unnecessary step, select ![Delete icon](/img/ico-close.svg). To add a step, select **_+ Add_**.
+    :::
+
+### Setting the reference time
+
+**_Data Settings_**: Data appears on the chart based on the set time.
+
+-   **_Real Time_**: You can check real-time data based on the last 5 minutes, 10 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, and 12 hours.
+-   **_Stat Past time_**: You can check the last 5-minute data based on today, yesterday, two days ago, three days ago, and a week ago. If you select Today, you can see 5-minute data based on the current time.
+-   **_Custom_**: You can select the desired date and time.
+
+### Adding tag data
+
+Select **_Add Tag Data_** and then select a project to import the metrics data.
+
+![Add Tag Data](/img/int-metric-dashboard-add-data.png)
+
+-   You can rename the tag data by selecting ![Edit icon](/img/ico-edit.svg).
+
+-   **_Time_**: You can load data and draw a chart based on the time set in **_Data Settings_** or set to draw a chart compared to the previous time.
+
+-   **_Project_**: You can select a project by product. If you select a project, the **_Category_** item appears.
+
+-   **_Category_**: Select a category to import metrics from the selected project. 카When a category is selected, the additional options appear.
+
+![Add Tag Data](/img/int-metric-dashboard-add-data-tag.png)
+
+-   **_Tag_**: You can select what to collect. You can select by agent aame (**_Oname_**), group (**_OkindName_**), host IP (**_Hostip_**), or type (**_Type_**).
+
+-   **_Field_**: Select metrics to display in the chart.
+
+-   **_Time Merge_**: The data with the same field values are merged at regular time intervals (5 minutes or 1 hour) depending on the time range.
+
+-   **_Object Merge_**: Used to group data based on the value selected in the tag. This method merges data with matched tags among the data with different field values.
+
+Once you have finished setting all items, select **_Complete_**.
+
+:::note
+
+-   Depending on the selected project, the items that can be selected in **_Category_** may differ.
+-   For more information about metrics, see [the following](../metrics/common-metrics-intro).
+-   For more information about **_Time Merge_** and **_Object Merge_**, see [the following](../java/flexboard-widget-manage#datamerge-option).
+:::
+
+## Checking the widget chart
+
+To check the metrics trend in real time after adding a widget chart, select **_View Mode_** at the top of the screen. To add, modify, or delete a widget chart, select **_Edit Mode_**.
+
+## Modifying a widget chart
+
+To edit the widget chart, switch to **_Edit Mode_** and then select ![Edit icon](/img/ico-edit.svg) at the upper right of the widget chart. If the **_Create dashboard_** window appears, you can modify the desired items. After completion, select **_OK_**.
+
+## Copying a widget chart
+
+You can copy a widget chart of the same type and then change only the metrics values. Switch to **_Edit Mode_** and then select ![Copy icon](/img/ico-copy.svg) on the upper right of the widget chart. To change the metrics, select ![Edit icon](/img/ico-edit.svg) on the upper right of the widget chart, and then modify the desired items.
+
+## Deleting a widget chart
+
+To delete any widget chart, switch to **_Edit Mode_** and then select ![Delete icon](/img/ico-close.svg) on the upper right of the widget chart. If the pop-up window appears, select **_OK_**.

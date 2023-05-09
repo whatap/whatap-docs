@@ -1,0 +1,32 @@
+---
+id: trs-view
+title: Hitmap
+description: You can check the hitmap of the applications in the container.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Application
+  - Hitmap
+---
+
+Home > Select Project > **_Application_** > **_Hitmap_**
+
+You can check the hitmap of the applications in the container. The hitmap displays the distribution of response times as a map for the numbers of transactions. The search conditions are divided into time selection, classification, and application. The classification criteria are as follows:
+
+| Classification          | Description                                                      |
+| ----------------------- | ---------------------------------------------------------------- |
+| Agent                   | Name of the application agent installed in the container         |
+| Agent type              | Agent type by which agents are grouped (`OKIND`)                 |
+| Agent server            | Name of the Kubernetes node where the agents are running         |
+
+![Hitmap Transaction](https://img.whatap.io/media/images/whatap_kubernetes_application_hitmap_transaction.png)
+
+You can check the trace data by dragging a specific area of the hitmap. Trace data can be searched based on the URL, and can be checked by filtering data based on the transaction trace with active stacks and traces performed with multi-transactions.
+
+:::note
+히트맵에 대한 자세한 내용은 다음 문서를 참조하세요.
+
+-   [Java](../java/trs-view)
+-   [Node.js](../nodejs/trs-view)
+-   [Python](../python/trs-view)
+:::

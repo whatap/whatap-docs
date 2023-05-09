@@ -1,0 +1,52 @@
+-   **profile_step_normal_count**<span class='type'>Int</span><br/>
+      デフォルト値 `1000`<br/>
+      トランザクショントレースの基本ステップ数を指定します。
+
+-   **profile_step_heavy_count**<span class='type'>Int</span><br/>
+      デフォルト値 `1020`<br/>
+      トレースの基本ステップを超えた場合、最大heavyステップ数を制限します。`profile_step_normal_count`で`profile_step_heavy_time`を超えるステップをカウントします。レスポンス時間のないステップは収集されません。
+
+-   **profile_step_max_count**<span class='type'>Int</span><br/>
+      デフォルト値`1024`<br/>
+      トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後収集されるステップはすべて捨てられます。`profile_step_heavy_count`を最大1000として設定すると、`profile_step_max_count`ほどのアクティブスタックが収集されます。
+
+-   **profile_step_heavy_time**<span class='type'>MiliSecond</span><br/>
+      デフォルト値 `100`<br/>
+      Heavyステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
+
+-   **profile_basetime**<span class='type'>MiliSecond</span><br/>
+      デフォルト値 `0`<br/>
+      トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただ、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
+
+-   **query_string_enabled**<span class='type'>Boolean</span><br/>
+      デフォルト値 `false`<br/>
+      トランザクションURLのクエリ文字列を一緒に収集する機能を活性化します。
+
+-   **query_string_urls**<span class='type'>String</span><br/>
+      トランザクションからクエリ文字列を収集するURLを登録します。複数登録するときはコンマ（_,_）を使います。  
+
+-   **hook_method_patterns**<span class='type'>String</span><br/>
+        特定のメソッドのレスポンス時間を測定したいときに使用します。`[MODULE_NAME]:[CLASS_NAME].[FUNCTION_NAME]`あるいは`[MODULE_NAME]:[FUNCTION_NAME]`形式で値を使用します。コンマ（、）を区切り文字として複数のメソッドパターンを指定することができます。モジュールに対する全体クラスやクラスに対する全体モジュールは、asterisk（\*）を使用して追跡できます。 
+    :::note
+    全体モジュールの追跡はオーバーヘッドが発生する可能性があるため、できるだけ正確なモジュール名とメソッド名への使用をお勧めします。
+    :::
+
+-   **trace_error_callstack_depth**<span class='type'>Int</span><br/>
+      デフォルト値 `50`<br/>
+      トランザクションからエラーコールスタックを収集するときに、コールスタックの最大ライン数を指定します。このデータは、エラー統計データで照会できます。       
+
+-   **trace_active_callstack_depth**<span class='type'>Int</span><br/>
+      デフォルト値 `50`<br/>
+      トランザクションからアクティブスタックを収集するときに、コールスタックの最大ライン数を指定します。
+
+-   **trace_active_transaction_slow_time**<span class='type'>MiliSecond</span><br/>
+      デフォルト値 `3000`<br/>
+      アクティブトランザクションのアークイコライザーでslow区間のレスポンス基準を指定します。   
+
+-   **trace_active_transaction_very_slow_time**<span class='type'>MiliSecond</span><br/>
+      デフォルト値 `8000`<br/>
+      アクティブトランザクションのアークイコライザーでvery slow区間のレスポンス基準を指定します。  
+
+-   **trace_active_transaction_lost_time**<span class='type'>MiliSecond</span><br/>
+      デフォルト値 `300000`<br/>
+      トランザクションの終了を待つ制限時間です。5分以内にトランザクションが終了しない場合、トランザクションの情報は収集されません。 

@@ -1,0 +1,99 @@
+---
+id: container-map
+title: Container Map
+description: The container map in WhaTap Kubernetes is the starting point for Kubernetes monitoring.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Container Map
+---
+
+Home > Select Project > **_Dashboard_** > **_Container Map_**
+
+The container map in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
+
+<!-- ![쿠버네티스 컨테이너 맵](https://img.whatap.io/media/images/whatap_kubernetes_container_map_intro.png)-->
+
+![Container Map](/img/kube-container-map-01.png)
+
+## ![](/img/number-01.png) Container or Pod
+
+The shapes and designs for each object represent the characteristics and states of the container or pod.
+
+-   Color: Container or pod state. For more information, see [the following](container-status).
+-   Border
+    -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
+    -   If there are 2 containers in a pod and the microagents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have microagents installed, the borders are displayed.
+
+## ![](/img/number-02.png) Go to Cluster Project - Namespace Project
+
+![Container map project list](https://img.whatap.io/media/images/whatap_kubernetes_container_map_namespace_project_list.png)
+
+If a namespace project is created under a cluster project, you can check the list of projects including cluster projects and move between projects through the project list box on the container map screen.
+
+:::note
+
+-   WhaTap Kubernetes Service's **cluster project** is a new name for the **master project**.
+-   For more information about the namespace project creation, see [the following](namespace).
+:::
+
+## ![](/img/number-03.png) User configuration
+
+![User configuration](/img/container-map-custom-view.png)
+
+A container map provides multiple user settings that allow you to create any desired screen view. The functions available in the screen are as follows in order.
+
+-   Category: You can select **_Container_** or **_Pod_**.
+
+-   **_Grouping_** (clustering): You can select conditions for grouping. The containers or pods are classified into cards based on the selected conditions. For more information, see [the following](container-group).
+
+-   **_ConState(state)_**: You can select any chart metric.
+
+-   If you click ![Configuration icon](/img/ico-setting.svg), you can select any option to display information of containers or pods on each object.
+
+    ![Option](/img/k8s-container-map-setting.png)
+
+    -   **_Show WhaTap Agent_**: You can display information of containers or pods. Select a desired **_label_** option.
+
+    -   **_Show metrics at the bottom of the card_**: You can select whether or not to display the metrics information at the bottom.
+
+    -   **_1분 내 생성된 컨테이너 표시하기_**: 생성된지 1분 이내의 컨테이너의 경우 밝은 색상으로 표시하는 옵션입니다.
+
+-   ![Filter icon](/img/ico-filter.svg) **_Filter_**: You can see the status of containers or pods by filtering them based on your selections.
+
+-   ![Reset icon](/img/ico-reset.svg) **_Reset_**: It initializes the screen view set by you.
+
+## Summary view and Detailed view
+
+You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
+
+-   Trace
+-   Metrics
+-   Log
+-   Event
+
+Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
+
+### Summary view
+
+Click a specific object or a set of objects. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
+
+![Summary view](https://img.whatap.io/media/images/whatap_kubernetes_container_map_right_summary.png)
+
+### Detailed view
+
+On the upper right of the **Display Summary** screen, click ![Display Detail icon](/img/ico-detail-mode.svg). **Display Detail** appears.
+
+![Detailed view](/img/container-map-detail-mode.png)
+
+## Real-time and historical inquiries
+
+Container maps are based on real-time lookups based on multiple viewpoints. Use the time selector at the top right of the screen to change the real-time inquiry.
+
+![Time Selector](/img/kubernetes-time-seletor.png)
+
+| Lookup status            | Description                                                                 |
+| ------------------------ | --------------------------------------------------------------------------- |
+| Real-time inquiry (LIVE) | Default mode<br/>Real-time status changes every 10 seconds.                 |
+| Paused inquiry (PAUSE)   | Real-time status change OFF<br/>Used to check the current status in detail. |
+| Historical inquiry       | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute         |
