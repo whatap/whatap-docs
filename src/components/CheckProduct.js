@@ -10,7 +10,7 @@ export default function CheckProduct() {
     const {
         i18n: {currentLocale},
     } = useDocusaurusContext();
-    console.log(currentLocale);
+    // console.log(currentLocale);
     if (currentLocale == 'ko') {
         cProdt = location.pathname.split("/")[1];
     } else {
