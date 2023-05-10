@@ -25,7 +25,7 @@ export default function LocaleDropdownNavbarItem({
     // preserve ?search#hash suffix on locale switches
     let curPage = `${baseTo}${search}${hash}`;
     let to;
-    if (curPage.slice(-1) == '/') {
+    if (curPage.slice(-1) == '/' || curPage.includes('search?q') || curPage.includes('_highlight')) {
       to = `${baseTo}${search}${hash}`;
     } else {
       to = `${baseTo}${search}${hash}` + '.html';
