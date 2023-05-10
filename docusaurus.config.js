@@ -78,7 +78,7 @@ module.exports = Promise.resolve({
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: [ 'ko', 'en', 'ja' ],
+        language: [ 'ko', 'ja', 'en' ],
         indexBlog: false,
         docsRouteBasePath: '/',
         removeDefaultStemmer: true,
