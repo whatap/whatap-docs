@@ -88,7 +88,7 @@ const sidebars = {
               description: 'Java 에이전트에서 제공하는 플러그인을 활용해 다양한 일을 할 수 있습니다.',
               items: [
                 'java/script-plugin',
-                'java/weaving-plugin',
+                // 'java/weaving-plugin',
               ]
             },
             'java/agent-number-of-user',
@@ -97,7 +97,8 @@ const sidebars = {
             'java/agent-apdex',
             'java/agent-static',
             'java/agent-toplogy',
-            'java/agent-additional-option'
+            'java/agent-additional-option',
+            'weaving/README'
           ]
         },
         {
@@ -5031,7 +5032,43 @@ const sidebars = {
         },
       ]  
     }
-  ]  
+  ],
+  ospSidebar: [
+    {
+      type: 'category',
+      label: '오픈 소스 지원 목록',
+      collapsible: false,
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'cassandra',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'cassandra-driver-core-3.3.0 이상',
+              id: 'weaving/cassandra/cassandra-driver-core/whatap-cassandra-driver-core-3.3.0/README',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'log4j',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'log4j-1.2.17 이상',
+              id: 'weaving/log4j/apache-log4j/whatap-log4j-1.2.17/README',
+            }
+          ],
+        },
+      ],
+    }
+  ],
 };
 
 module.exports = sidebars;
