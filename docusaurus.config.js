@@ -7,7 +7,8 @@ const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
 
 /** @type {import('@docusaurus/types').Config} */
 
-const config = {
+// const config = {
+module.exports = Promise.resolve({
   title: 'WhaTap',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
@@ -77,10 +78,10 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: [ 'ko', 'en', 'ja' ],
+        language: [ 'ko', 'ja', 'en' ],
         indexBlog: false,
         docsRouteBasePath: '/',
-        // removeDefaultStemmer: true,
+        removeDefaultStemmer: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
@@ -565,6 +566,6 @@ const config = {
         config: {}
       },
     }),
-}
+});
 
-module.exports = config;
+// module.exports = config;
