@@ -83,7 +83,7 @@ module.exports = Promise.resolve({
         docsRouteBasePath: '/',
         // removeDefaultStemmer: true,
         highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
+        // explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
         ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /release-notes\/preview/, /java\/install-agent-with-buildpack/],
       }
