@@ -122,8 +122,8 @@ module.exports = Promise.resolve({
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
-          // include: [ '**/*.mdx' ],
-          // exclude: [ 'mysql-rds/*.mdx' ],
+          include: [ '**/*.mdx' ],
+          exclude: [ 'weaving/*.md', 'weaving/**/*.md', 'wip/*.mdx' ],
         },
         blog: false,
         theme: {
