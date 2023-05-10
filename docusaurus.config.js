@@ -81,7 +81,7 @@ module.exports = Promise.resolve({
         language: [ 'ko', 'ja', 'en' ],
         indexBlog: false,
         docsRouteBasePath: '/',
-        removeDefaultStemmer: true,
+        // removeDefaultStemmer: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
