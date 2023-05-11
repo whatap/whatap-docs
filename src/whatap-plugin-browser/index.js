@@ -12,7 +12,7 @@ module.exports = function () {
                                 projectAccessKey: "x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",
                                 pcode: 29856,
                                 sampleRate: 100,
-                                ignoreOrigins: [ 'http://localhost:*/', 'http://localhost:*/*', /^(https?://)([^/]*)(ngrok-free.app)(/)(.*)/i' ],
+                                ignoreOrigins: [ 'http://localhost:*/', 'http://localhost:*/*', '/^(https?://)([^/]*)(ngrok-free.app)(/)(.*)/i' ],
                               },
                             };
                             a = h.createElement(_a);
