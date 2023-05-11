@@ -32,6 +32,7 @@ module.exports = Promise.resolve({
     },
   ],
   plugins: [
+    [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
     [ 'docusaurus-plugin-pagemove', {} ],
     [
