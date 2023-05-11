@@ -3810,6 +3810,7 @@ const sidebars = {
           description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
           items: [
             'faq/db-faq',
+            'faq/log-faq',
           ]
         },
         'glossary/glossary',
