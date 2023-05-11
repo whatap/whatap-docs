@@ -5428,6 +5428,76 @@ const sidebars = {
               label: 'spring-cloud-starter-gateway-2.0.3 이상',
               id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.0.3/README'
             },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.0.4 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.0.4/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.1.0 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.1.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.1.1 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.1.1/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.1.2 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.1.2/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.1.3 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.1.3/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.1.4 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.1.4/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.1.5 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.1.5/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.2.0 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.2.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.2.1 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.2.1/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.2.2 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.2.2/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.2.9 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.2.9/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-3.0.0 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-3.0.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-3.0.2 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-3.0.2/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-3.0.3 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-3.0.3/README'
+            }
           ],
         },
       ],
