@@ -21,7 +21,7 @@ module.exports = Promise.resolve({
     defaultLocale: 'ko',
     locales: [ 'ko', 'en', 'ja' ],
   },
-  trailingSlash: false,
+  // trailingSlash: false,
   // clientModules: [
   //   require.resolve('./static/js/rum.js')
   // ],
@@ -77,11 +77,11 @@ module.exports = Promise.resolve({
     [ 
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        hashed: false,
+        hashed: true,
         language: [ 'ko', 'en', 'ja' ],
         indexBlog: false,
         docsRouteBasePath: '/',
-        removeDefaultStemmer: false,
+        // removeDefaultStemmer: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         searchResultContextMaxLength: 50,
@@ -122,8 +122,8 @@ module.exports = Promise.resolve({
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
-          // include: [ '**/*.mdx' ],
-          // exclude: [ 'mysql-rds/*.mdx' ],
+          include: [ '**/*.mdx' ],
+          exclude: [ 'weaving/*.md', 'weaving/**/*.md', 'wip/*.mdx' ],
         },
         blog: false,
         theme: {
