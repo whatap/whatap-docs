@@ -5063,7 +5063,371 @@ const sidebars = {
               type: 'doc',
               label: 'log4j-1.2.17 이상',
               id: 'weaving/log4j/apache-log4j/whatap-log4j-1.2.17/README',
+            },
+            {
+              type: 'doc',
+              label: 'slf4j-log4j12-1.7.5 이상',
+              id: 'weaving/log4j/apache-log4j/whatap-slf4j-log4j12-1.7.5/README'
+            },
+            {
+              type: 'doc',
+              label: 'apache-logging-log4j-2.7 이상',
+              id: 'weaving/log4j/apache-logging-log4j/whatap-apache-logging-log4j-2.7/README'
+            },
+            {
+              type: 'doc',
+              label: 'apache-logging-log4j-2.11.2 이상',
+              id: 'weaving/log4j/apache-logging-log4j/whatap-apache-logging-log4j-2.11.2/README'
+            },
+            {
+              type: 'doc',
+              label: 'apache-logging-log4j-2.17.1 이상',
+              id: 'weaving/log4j/apache-logging-log4j/whatap-apache-logging-log4j-2.17.1/README'
             }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'logback',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'logback-core-1.2.8 이상',
+              id: 'weaving/logback/logback-core/whatap-logback-core-1.2.8/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'okhttp',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'okhttp-2.7.5 이상',
+              id: 'weaving/okhttp/whatap-okhttp-2.7.5/README'
+            },
+            {
+              type: 'doc',
+              label: 'okhttp3-3.14.0 이상',
+              id: 'weaving/okhttp3/whatap-okhttp3-3.14.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'okhttp3-4.0.0 이상',
+              id: 'weaving/okhttp3/whatap-okhttp3-4.0.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'okhttp3-4.4.0 이상',
+              id: 'weaving/okhttp3/whatap-okhttp3-4.0.0/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'redis',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'jedis-3.3.0 이상',
+              id: 'weaving/redis/jedis/whatap-jedis-3.3.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'lettuce-core-6.1.0 이상',
+              id: 'weaving/redis/lettuce-core/whatap-lettuce-core-6.1.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'lettuce-core-6.0.0 이상',
+              id: 'weaving/redis/lettuce-core/whatap-lettuce-core-6.0.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'lettuce-core-5.3.0 이상',
+              id: 'weaving/redis/lettuce-core/whatap-lettuce-core-5.3.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'lettuce-core-5.2.0 이상',
+              id: 'weaving/redis/lettuce-core/whatap-lettuce-core-5.2.0/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'retrofit',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'retrofit2-2.5.0 이상',
+              id: 'weaving/retrofit2/whatap-retrofit2-2.5.0/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'solr',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'solr-6.6.2 이상',
+              id: 'weaving/solr/solr-solrj/whatap-solr-6.6.2/README'
+            }
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Spring-boot 라이브러리',
+      collapsible: false,
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'cassandra',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-cassandra-2.4.0 이상',
+              id: 'weaving/cassandra/spring-boot-starter-data-cassandra/whatap-spring-boot-starter-data-cassandra-2.4.0/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'kafka',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'sspring-cloud-stream-binder-kafka-3.0.5.RELEASE 이상',
+              id: 'weaving/kafka/spring-kafka-stream/whatap-spring-kafka-stream-2.2.0/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'log4j',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-log4j2-1.5.0 이상',
+              id: 'weaving/log4j/spring-boot-starter-log4j2/whatap-spring-boot-starter-log4j2-1.5.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-log4j2-2.1.3 이상',
+              id: 'weaving/log4j/spring-boot-starter-log4j2/whatap-spring-boot-starter-log4j2-2.1.3/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-log4j2-2.6.3 이상',
+              id: 'weaving/log4j/spring-boot-starter-log4j2/whatap-spring-boot-starter-log4j2-2.6.3/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'logback',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-logging-2.6.2 이상',
+              id: 'weaving/logback/spring-boot-starter-logging/whatap-spring-boot-starter-logging-2.6.2/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'mongodb',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-2.3.0 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb/whatap-spring-boot-starter-data-mongodb-2.3.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-2.4.0 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb/whatap-spring-boot-starter-data-mongodb-2.4.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-2.4.4 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb/whatap-spring-boot-starter-data-mongodb-2.4.4/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'mongodb-reactive',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-reactive-2.1.0 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb-reactive/whatap-spring-boot-starter-data-mongodb-reactive-2.1.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-reactive-2.3.0 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb-reactive/whatap-spring-boot-starter-data-mongodb-reactive-2.3.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-reactive-2.6.0 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb-reactive/whatap-spring-boot-starter-data-mongodb-reactive-2.6.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-mongodb-reactive-3.0.0 이상',
+              id: 'weaving/mongodb/spring-boot-starter-data-mongodb-reactive/whatap-spring-boot-starter-data-mongodb-reactive-3.0.0/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'rabbitmq',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-stream-rabbit-3.0.0 이상',
+              id: 'weaving/rabbitmq/whatap-spring-cloud-stream-rabbit/whatap-spring-cloud-stream-rabbit-3.0.0/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'redis',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-redis-2.2.0 이상',
+              id: 'weaving/redis/spring-boot-starter-data-redis/whatap-spring-boot-starter-data-redis-2.2.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-redis-2.3.0 이상',
+              id: 'weaving/redis/spring-boot-starter-data-redis/whatap-spring-boot-starter-data-redis-2.3.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-redis-2.4.0 이상',
+              id: 'weaving/redis/spring-boot-starter-data-redis/whatap-spring-boot-starter-data-redis-2.4.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-data-redis-2.5.0 이상',
+              id: 'weaving/redis/spring-boot-starter-data-redis/whatap-spring-boot-starter-data-redis-2.5.0/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'solr',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-data-solr-2.0.0 ~ 2.4.x',
+              id: 'weaving/solr/spring-data-solr/whatap-spring-data-solr-2.0.0/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'webflux',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-webflux-2.1.0 이상',
+              id: 'weaving/spring-boot-starter-webflux/whatap-spring-boot-starter-webflux-2.1.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-webflux-2.2.0 이상',
+              id: 'weaving/spring-boot-starter-webflux/whatap-spring-boot-starter-webflux-2.2.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-webflux-3.0.0 이상',
+              id: 'weaving/spring-boot-starter-webflux/whatap-spring-boot-starter-webflux-3.0.0/README'
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'websocket',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-websocket-1.5.6.RELEASE 이상 (sockjs 사용)',
+              id: 'weaving/spring-boot-websocket/whatap-spring-boot-starter-websocket-sockjs-1.5.6/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-boot-starter-websocket-1.5.6.RELEASE 이상 (stomp 사용)',
+              id: 'weaving/spring-boot-websocket/whatap-spring-boot-websocket-stomp-messaging-1.5.6/README'
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'gateway',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.0.0 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.0.0/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.0.1 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.0.1/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.0.2 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.0.2/README'
+            },
+            {
+              type: 'doc',
+              label: 'spring-cloud-starter-gateway-2.0.3 이상',
+              id: 'weaving/spring-cloud-gateway/whatap-spring-cloud-starter-gateway/whatap-spring-cloud-starter-gateway-2.0.3/README'
+            },
           ],
         },
       ],
