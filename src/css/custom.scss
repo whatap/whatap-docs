@@ -1419,6 +1419,12 @@ main {
             &:first-of-type {
               width: 30%;
             }
+            &:nth-of-type(2) {
+              width: 40%;
+            }
+            &:nth-of-type(3) {
+              width: 50%;
+            }
             code {
               word-break: break-all;
             }
