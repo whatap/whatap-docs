@@ -124,7 +124,7 @@ module.exports = Promise.resolve({
           rehypePlugins: [rehypeTableMerge],
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
-          exclude: [ 'weaving/*.md', 'weaving/**/*.md', 'wip/*.mdx' ],
+          exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx' ],
         },
         blog: false,
         theme: {
