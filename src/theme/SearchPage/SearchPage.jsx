@@ -158,7 +158,7 @@ function SearchResultItem({ searchResult: { document, type, page, tokens, metada
       <h2>
         <a href={document.u + search + (document.h || "")}>
           {pathItems.length > 0 && (<span className={styles.searchResultItemPath}>
-            {concatDocumentPath(pathItems)} › 
+            {concatDocumentPath(pathItems)}
           </span>)}
           <Link to={document.u + search + (document.h || "")} dangerouslySetInnerHTML={{
               __html: isContent
