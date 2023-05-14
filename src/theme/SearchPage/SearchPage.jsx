@@ -157,7 +157,7 @@ function SearchResultItem({ searchResult: { document, type, page, tokens, metada
     return (<article className={styles.searchResultItem}>
       <h2>
         <a href={document.u + search + (document.h || "")}>
-          {pathItems.length > 0 && (<span className={styles.searchResultItemPath}>{concatDocumentPath(pathItems)}</span>)}
+          {pathItems.length > 0 && (<span>{concatDocumentPath(pathItems)}</span>)}
           <Link to={document.u + search + (document.h || "")} dangerouslySetInnerHTML={{
               __html: isContent
                   ? highlight(articleTitle, tokens)
