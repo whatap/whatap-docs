@@ -36,12 +36,20 @@ PHPアプリケーションサーバーの機能を制御できます。
 -   **whatap.ext.error_enabled**<span class='type'>Boolean</span><br/>
         デフォルト値`true`<br/>
         PHP拡張モジュール（PHP Extension module）でエラー情報を収集する機能を活性化します。PHPコンパイルインストールをして、_php.ini_にwhatap項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.ext.exception_enabled**<span class='type'>Boolean</span><br/>
         デフォルト値`true`<br/>
         PHP拡張モジュール（PHP Extension module）で例外処理情報を収集する機能を活性化します。PHPコンパイルインストールをして、_php.ini_にwhatap項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.debug_gc_percent**<span class='type'>Int</span><br/>
       デフォルト値`200`<br/> 

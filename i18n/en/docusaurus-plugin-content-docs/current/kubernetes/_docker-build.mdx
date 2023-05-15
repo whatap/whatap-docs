@@ -6,17 +6,17 @@ mkdir -p {Docker build Dir}
 
 1.  Create the _whatap.conf_ file.
 
-```bash
-cat >{Docker build Dir}/whatap.conf <<EOL
-whatap.server.host={Collection server IP}
-EOL
-```
+    ```bash
+    cat >{Docker build Dir}/whatap.conf <<EOL
+    whatap.server.host={Collection server IP}
+    EOL
+    ```
 
-  :::note
+    :::note
 
-  The _whatap.conf_ file can be managed using the ConfigMap function in the user Kubernetes environment.
+    The _whatap.conf_ file can be managed using the ConfigMap function in the user Kubernetes environment.
 
-  :::
+    :::
 
 1.  To download the installation image for the dockerfile agent, download the file or copy the agent file to the image.
 
@@ -74,10 +74,10 @@ EOL
 
 4.  Build the Docker.
 
-```docker
-cd docker
-docker build -t $Image_Name.
-```
+    ```docker
+    cd docker
+    docker build -t $Image_Name.
+    ```
 
 1.  Set container environment variables in your Kubernetes environment. Enter the environment variables for the application agent.
 

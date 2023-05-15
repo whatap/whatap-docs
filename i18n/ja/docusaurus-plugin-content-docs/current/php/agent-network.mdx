@@ -34,4 +34,8 @@ PHPアプリケーションサーバーの通信を設定する方法を提供�
 -   **whatap.net_udp_port**<span class='type'>tcp\_port</span><br/>
         デフォルト値`6600`<br/>
         WhaTapエージェントは、トレーサーからUDPを通じて収集したデータを収集サーバーに転送します。最初のUDPサーバーのポート番号を指定できます。デフォルト値として提供される 6600番ポートが使用されているときに、このオプションを使用します。PHPコンパイルインストールをして、_php.ini_にwhatap項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::

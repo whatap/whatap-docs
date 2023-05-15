@@ -36,12 +36,20 @@ The PHP application server's functions can be controlled.
 -   **whatap.ext.error_enabled**<span class='type'>Boolean</span><br/>
         Default `true`<br/>
         It activates the function to collect errors from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.ext.exception_enabled**<span class='type'>Boolean</span><br/>
         Default `true`<br/>
         It activates the function to collect exceptions from the PHP extension module. If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.debug_gc_percent**<span class='type'>Int</span><br/>
       Default `200`<br/> 

@@ -864,7 +864,7 @@
     "description": "The label for category 시작하기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.category.상품별 문서 바로가기": {
-    "message": "製品固有のドキュメントに移動",
+    "message": "製品",
     "description": "The label for category 상품별 문서 바로가기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.category.관리": {

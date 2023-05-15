@@ -11,7 +11,9 @@ The data collected from the agent can be checked in **_Dashboard_** in real time
 -   ![Alert Status icon](/img/ico-noti.svg) **Alert Status**: It displays recent events. You can turn on or off the browser notifications by clicking the toggle menu.
 
 :::note
+
 For more information about basic elements in the fixed menu area, see [the following](../main-ui-intro).
+
 :::
 
 ## ![](/img/number-02.png) agent area
@@ -33,7 +35,9 @@ The icons displayed on the widget function as follows:
     -   **_Y tick static max setting_**: You can set the maximum value displayed on the Y-axis. To enter the desired number, select **_Custom_** and then enter the number.
 
 :::note
+
 The widget displayed with the **_All APP._** icon has the data for all applications.
+
 :::
 
 ### Speed Meter
@@ -63,7 +67,9 @@ Equalizer's color means the importance. **_DBC_** and **_SOCKET_** are must be r
 -   **_SOCKET_**: TCP socket is being connected from outside.
 
 :::note
+
 If the **_DBC_** or **_SOCKET_** count persists above 1, suspect any problem.
+
 :::
 
 ### **_Active Transaction_**
@@ -87,7 +93,9 @@ The situation where lots of blue colors are represented is not a problem. You mu
 -   Two bars around active transactions rotate around the chart at a three-step rate based on the throughput (TPS).
 
 :::note
+
 For more information about transactions, see [the following](track-transactions-intro).
+
 :::
 
 ### **_HITMAP_**
@@ -99,6 +107,8 @@ The **_hitmap_** chart represents the distribution of response times of complete
 -   The detailed information for the transactions with no error whose execution time is less than 500 ms is collected once every 5 minutes for each URL.
 -   It does not affect the statistics such as TPS and average response time.
 -   Policy can be adjusted through the agent settings. See the transaction-related information in the configurations for each agent.
+
+:::
 
 In **_HITMAP_**, the point color represents its density.
 
@@ -117,7 +127,9 @@ In **_HITMAP_**, the point color represents its density.
 {@include: ../common-items/_java-apdex-desc.mdx}
 
 :::note
+
 The default value of S (Satisfied) can be changed in **_Management_** > **_Agent CONF._**. The value of the setting key is `apdex_time`. It is available only in the agent 2.0 or later.
+
 :::
 
 ### **_TPS_**
@@ -163,8 +175,11 @@ It displays the number of real-time browser users. Every 5 seconds, users who ha
 -   In general, the connected user means a connected user who has access to the current network. However, web systems are different because they use connectionless networks. It does not mean that you are connected, but rather the user who sent the recent request can be measured.
 -   Real-time (concurrent access) users indicate the users who are using the system in the same time zone. There are various ways to count or measure real-time (concurrent access) users.
 -   The number of users is calculated by **HyperLog** rather than simply adding up. **HyperLog** is a probabilistic data structure that estimates the number of elements in a set with very little memory.
+
 :::
 
 :::note
+
 For more information about the method how to analyze **_Application Dashboard_**, see [the following](../best-practice-guides/about-apm-dashboard).
+
 :::

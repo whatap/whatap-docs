@@ -25,9 +25,11 @@ WhaTap basically uses the data collected from the server for identifying the inf
 | {hostname} | The server host name is used.                                   |
 | {docker}   | Use the IP of the Docker container.                             |
 
--   **app_name**<span class='type'>String</span><br/>
-      The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.
-    {@include: ../common-items/_restart-w-tf.mdx}
+-   **app_name**<span class='type'>String</span>
+
+    The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.
+
+{@include: ../common-items/_restart-w-tf.mdx} 
 
 ## Agent communication settings
 
@@ -56,7 +58,8 @@ WhaTap basically uses the data collected from the server for identifying the inf
 
 -   **telegraf_tcp_port** <span class='type'>tcp_port</span><br/>
     Default `6600`<br/> TCP port to connect with Telegraf socker_writer output plugin.
-    {@include: ../common-items/_restart-w-tf.mdx}
+
+{@include: ../common-items/_restart-w-tf.mdx} 
 
 -   **telegraf_delta_fields** <span class='type'>String</span><br/>
     Default `1024`\

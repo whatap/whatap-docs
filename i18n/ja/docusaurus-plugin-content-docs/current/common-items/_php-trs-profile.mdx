@@ -30,7 +30,11 @@
 -   **whatap.whatap.profile_compile_file_enabled**<span class='type'>Boolean</span><br/>
         デフォルト値 `false`<br/>
         `compile_file`、`compile_string`関数の追跡有無を設定します。PHPの内部関数である`compile_file`、 `compile_string`関数は、スクリプト実行前にコンパイルする関数で、Main、include、requireおよびautoload スクリプトのコンパイル時点およびスクリプトファイルのパスと実行時間を確認できます。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_compile_file_basetime**<span class='type'>Millisecond</span><br/>
         デフォルト値 `200`<br/>
@@ -38,39 +42,67 @@
     :::caution
     `whatap.profile_compile_file_basetime`を小さく設定しすぎると、過剰な収集でサーバーに負荷をかける可能性があります。
     :::
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_method_enabled**<span class='type'>Boolean</span><br/>
         デフォルト値 `true`<br/>
         実行時間が`whatap.profile_method_time`設定値（デフォルト値`1秒`）を超えるユーザー関数の情報をトランザクション詳細情報で確認できます。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_method_time**<span class='type'>Milliseconds</span><br/>
         デフォルト値 `1000`<br/>
         `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_method_stack_enabled**<span class='type'>Boolean</span><br/>
         デフォルト値 `false`<br/>
         ユーザー関数のスタック情報をトランザクション詳細で確認できます。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_internal_method_enabled**<span class='type'>Boolean</span><br/>
         デフォルト値 `true`<br/>
         PHP内部関数の追跡有無を設定します。`whatap.profile_internal_method_time`設定値（デフォルト値`1秒`）より長くかかる場合に限って追跡します。 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 <!-- 두 개가 어떻게 다른지? 0309 수정완-->
 
 -   **whatap.profile_internal_method_time**<span class='type'>Milliseconds</span><br/>
         デフォルト値 `1000`<br/>
         PHP内部関数を追跡する時に(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_internal_method_param_enabled**<span class='type'>Milliseconds</span><br/>
         デフォルト値 `1000`<br/>
         PHP内部関数を追跡する時に(`whatap.profile_internal_method_enabled`)付加的に関数パラメータ情報を収集します。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.net_udp_flush_start**<span class='type'>Boolean</span><br/>
         デフォルト値 `true`<br/>
