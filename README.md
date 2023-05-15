@@ -53,3 +53,6 @@ server-list.mdx -> 주석 삭제
 ）로 끝나는 부분 확인 => 정규식 \]\(([^>]+)）
 
 \(<https://pypi.org/project/whatap-python/> #files)
+
+```sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
+=> 한글로 들어간 부분 수정 필요
