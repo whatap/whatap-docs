@@ -24,6 +24,8 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 <version> -> {version}
 
+<section>
+
 server-list.mdx -> 주석 삭제
 
 < > -> 부호 앞에 &lt;, &gt; 적용할 것
