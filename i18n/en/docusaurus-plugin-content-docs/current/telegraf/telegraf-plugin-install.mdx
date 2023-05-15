@@ -13,15 +13,15 @@ import TabItem from '@theme/TabItem';
 
 ## whatap output plugin
 
-Telegraf의 whatap output plugin(tcp)을 활용해 Telegraf에서 수집하는 메트릭스를 와탭 수집 서버로 전달할 수 있습니다. 수집된 데이터는 whatap의 프로젝트 내부에서 확인 가능합니다.
+You can use the Telegraf's WhaTap output plug-in (TCP) to forward metrics collected in Telegraf to the WhaTap collection server. The collected data can be checked in the WhaTap's project.
 
 :::note
-Telegraf 오픈 소스 내에 whatap plugin 리뷰가 진행 중입니다. 정식 배포 전에는 whatap plugin을 포함하는 Telegraf를 교체해서 사용하세요.
+The WhaTap plug-in is being reviewed for the Telegraf open source. Be sure to replace Telegraf with the WhaTap plug-in before official distribution.
 :::
 
 ## Support Environment
 
-다음 목록에 있는 운영체제는 다운로드 설치가 가능합니다. 다른 운영체제는 [컴파일 설치](#컴파일-설치)로 진행해 주세요.
+The following operating systems are available for installation via download. For other operating systems, proceed with [Compile-install](#Compiled-installation).
 
 -   macOS
 -   Red Hat & CentOS
@@ -31,7 +31,7 @@ Telegraf 오픈 소스 내에 whatap plugin 리뷰가 진행 중입니다. 정�
 
 ## Installing via download
 
-Telegraf release 버전을 기준으로 whatap plugin을 추가하여 미리 생성한 설치 파일입니다. Telegraf가 이미 설치되었으면 실행 파일만 교체해 whatap plugin을 활성화할 수 있습니다.
+This installation file has been created in advance by adding the WhaTap plug-in based on the Telegraf release version. If Telegraf has been already installed, you can enable the WhaTap plug-in by replacing only the executable.
 
 <!-- 
 다운로드 설치는 다음 목록에 있는 운영체제에서 가능합니다. 다른 운영체제는 [컴파일 설치](#컴파일-설치)로 진행해 주세요.
@@ -49,105 +49,105 @@ Telegraf release 버전을 기준으로 whatap plugin을 추가하여 미리 생
 <TabItem value="1160" label="1.16.0">
 
 -   **macOS**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/darwin/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/darwin/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/darwin/amd64/telegraf-1.16.0_darwin_amd64.tar.gz
 -   **Red Hat & CentOS**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.16.0-1.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.16.0_linux_amd64.tar.gz
 -   **Ubuntu & Debian**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf_1.16.0-1_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.16.0_linux_amd64.tar.gz
 -   **FreeBSD**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/freebsd/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/freebsd/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/freebsd/amd64/telegraf-1.16.0_freebsd_amd64.tar.gz
--   **windows**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/windows/amd64/telegraf.exe (실행파일)
+-   **Windows**
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/windows/amd64/telegraf.exe (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/windows/amd64/telegraf-1.16.0_windows_amd64.zip
 
 </TabItem>
 <TabItem value="1154" label="1.15.4">
 
 -   **macOS**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/darwin/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/darwin/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/darwin/amd64/telegraf-1.15.4_darwin_amd64.tar.gz
 -   **Red Hat & CentOS**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf-1.15.4-1.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf-1.15.4_linux_amd64.tar.gz
 -   **Ubuntu & Debian**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf_1.15.4-1_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf-1.15.4_linux_amd64.tar.gz
 -   **FreeBSD**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/freebsd/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/freebsd/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/freebsd/amd64/telegraf-1.15.4_freebsd_amd64.tar.gz
--   **windows**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/windows/amd64/telegraf.exe (실행파일)
+-   **Windows**
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/windows/amd64/telegraf.exe (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/windows/amd64/telegraf-1.15.4_windows_amd64.zip
 
 </TabItem>
 <TabItem value="1145" label="1.14.5">
 
 -   **macOS**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/darwin/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/darwin/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/darwin/amd64/telegraf-1.14.5_darwin_amd64.tar.gz
 -   **Red Hat & CentOS**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf-1.14.5-1.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf-1.14.5_linux_amd64.tar.gz
 -   **Ubuntu & Debian**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf_1.14.5-1_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf-1.14.5_linux_amd64.tar.gz
 -   **FreeBSD**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/freebsd/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/freebsd/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/freebsd/amd64/telegraf-1.14.5_freebsd_amd64.tar.gz
--   **windows**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/windows/amd64/telegraf.exe (실행파일)
+-   **Windows**
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/windows/amd64/telegraf.exe (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/windows/amd64/telegraf-1.14.5_windows_amd64.zip
 
 </TabItem>
 <TabItem value="1132" label="1.13.2">
 
 -   **macOS**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/darwin/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/darwin/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/darwin/amd64/telegraf-1.13.0~842282d_darwin_amd64.tar.gz
 -   **Red Hat & CentOS**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf-1.13.0~842282d-0.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf-1.13.0~842282d_linux_amd64.tar.gz
 -   **Ubuntu & Debian**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf_1.13.0~842282d-0_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf-1.13.0~842282d_linux_amd64.tar.gz
 -   **FreeBSD**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/freebsd/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/freebsd/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/freebsd/amd64/telegraf-1.13.0~842282d_freebsd_amd64.tar.gz
--   **windows**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/windows/amd64/telegraf.exe (실행파일)
+-   **Windows**
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/windows/amd64/telegraf.exe (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/windows/amd64/telegraf-1.13.0~842282d_windows_amd64.zip
 
 </TabItem>
 <TabItem value="112" label="1.12">
 
 -   **macOS**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf-1.12.0~842282d_darwin_amd64.tar.gz
 -   **Red Hat & CentOS**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf-1.12.0~842282d-0.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf-1.12.0~842282d_linux_amd64.tar.gz
 -   **Ubuntu & Debian**  
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf_1.12.0~842282d-0_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf-1.12.0~842282d_linux_amd64.tar.gz
 -   **FreeBSD**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/freebsd/amd64/telegraf (실행파일)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/freebsd/amd64/telegraf (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/freebsd/amd64/telegraf-1.12.0~842282d_freebsd_amd64.tar.gz
--   **windows**
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/windows/amd64/telegraf.exe (실행파일)
+-   **Windows**
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/windows/amd64/telegraf.exe (executable file)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/windows/amd64/telegraf-1.12.0~842282d_windows_amd64.zip
 
 </TabItem>
@@ -158,11 +158,11 @@ Telegraf release 버전을 기준으로 whatap plugin을 추가하여 미리 생
 ### Preparations
 
 -   **Golang SDK configuration**
--   **go dep 설치**
--   **소스 파일**<br/>
-    _${GOPATH}/src/github.com/influxdata/telegraf/_ 디렉터리 밑에 압축을 해제하세요.
+-   **go dep installation**
+-   **Source file**<br/>
+    Unzip in _${GOPATH}/src/github.com/influxdata/telegraf/_.
     :::note
-    Telegraf release 버전에 whatap plugin을 포함한 소스 파일입니다. 
+    They are source files that include the WhaTap plug-in in the Telegraf release version. 
     :::
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12_whatap.tar.gz
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2_whatap.tar.gz
@@ -173,20 +173,20 @@ Telegraf release 버전을 기준으로 whatap plugin을 추가하여 미리 생
 ### Installation procedure
 
 :::note
-상세한 빌드 안내는 [Telegraf github](https://github.com/influxdata/telegraf) 페이지를 참조하세요.
+For the detailed builds, see the [Telegraf github](https://github.com/influxdata/telegraf) page.
 :::
 
-_${GOPATH}/src/github.com/influxdata/telegraf_ 이하 Makefile로 빌드를 진행하세요.
+Under _${GOPATH}/src/github.com/influxdata/telegraf_ proceed with the build with the Makefile.
 
-1.  의존성 설치를 진행하세요. 의존성 설치는 go dep을 사용하기 때문에 go dep이 먼저 설치되어야 합니다.
+1.  Proceed with the dependency installation. Dependency installation uses the go dep. Accordingly, the go dep must have been installed first.
     ```bash title=SH
     # make deps
     ```
-2.  실행 파일을 빌드하세요. _${GOPATH}/bin_ 디렉터리에 실행 파일(telegraf)이 생성됩니다.
+2.  Build the executable file. Under the _${GOPATH}/bin_ directory, the executable file (telegraf) is generated.
     ```bash title=SH
     # make go-install
     ```
-3.  설치 패키지가 필요하면 `make package` 명령어로 생성할 수 있습니다. 크로스 컴파일을 진행하여 운영 체제별로 패키지 파일을 생성하세요.
+3.  If the installation package is required, you can create it with the `make package` command. Proceed with cross-compilation to generate the package files for each operating system.
     ```bash title=SH
     # make package
     ```

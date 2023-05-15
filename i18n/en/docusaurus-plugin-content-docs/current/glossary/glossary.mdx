@@ -24,7 +24,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **SaaS** (Software as a Service)
 
@@ -32,7 +32,7 @@ SaaS provides and manages software and data on behalf of customers. SaaS does no
 
 With SaaS, the service provider manages all potential technical issues such as data, middlewares, servers, and storage on behalf of customers.
 
----
+* * *
 
 **Application** (Application Performance Management)
 
@@ -52,7 +52,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Agent**
 
@@ -70,7 +70,7 @@ For more information about agent installation, see the following.
 
 :::
 
----
+* * *
 
 **Throughput**  
 
@@ -87,7 +87,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Cloud Computing**  
 
@@ -105,7 +105,7 @@ For more information about the cloud services, see [the following](https://www.w
 
 :::
 
----
+* * *
 
 **Tuning**  
 
@@ -114,7 +114,7 @@ It means improving the performance of the system. There are two types of tuning:
 -   Throughput tuning is used to increase the maximum throughput. 
 -   Stability tuning is used to keep the system from crashing even under heavy loads.
 
----
+* * *
 
 **Average response time**  
 
@@ -126,7 +126,7 @@ For more information, see [the following](https://www.whatap.io/ko/blog/15/index
 
 :::
 
----
+* * *
 
 ## Dashboard
 
@@ -144,7 +144,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Concurrent users** (Realtime User)  
 
@@ -152,7 +152,7 @@ It displays the number of real-time browser users. Every 5 seconds, users who ha
 
 Users are counted based on their browser's IP. In the agent settings, the IP or cookies can be used to distinguish users.
 
----
+* * *
 
 **DISK I/O**  
 
@@ -166,7 +166,7 @@ For more information, see [the following](https://www.whatap.io/ko/blog/41/index
 
 :::
 
----
+* * *
 
 **DISK IOPS** (Input/Output Operations Per Second)  
 
@@ -174,7 +174,7 @@ It is a unit of measure representing inputs and outputs per second. It is measur
 
 The underlying drive technology determines the maximum amount of data in which the volume is calculated by a single I/O. HDDs typically range from 55 to 180 IOPS. SSDs have 3,000 to 40,000 IOPS.
 
----
+* * *
 
 **Resource Board**  
 
@@ -184,35 +184,35 @@ It displays the total resource size, CPU, memory, and top 5 utilization processe
 
 :::note
 
-For more information, see [the following](server/resourceboard). 
+For more information, see [the following](../server/resourceboard). 
 
 :::
 
----
+* * *
 
 **Resource Equalizer**  
 
 It displays a list of the top 5 servers in real time for CPU, memory, disk I/O, and disk IOPS.
 
----
+* * *
 
 **MSA Analysis** (Microservices Architecture)  
 
 It displays the call relationship between services as a percentage based on the URL.
 
----
+* * *
 
 **Metrics Chart**  
 
 The collected data is displayed on the time-series chart. After selecting a time zone, select a desired metric. Then its result appears.
 
----
+* * *
 
 **CPU Resource Map**  
 
 This distribution chart displays the CPU usage of all servers. It displays data for 10 minutes and is updated every 10 seconds.
 
----
+* * *
 
 **Apdex** (Application Performance Index)  
 
@@ -227,7 +227,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Perf. Trend**  
 
@@ -246,7 +246,7 @@ The following data can be viewed in the performance trend:
 -   HTTP Call Top 10
 -   SQL Top 10
 
----
+* * *
 
 **Application Topology**  
 
@@ -258,7 +258,7 @@ For more information, see [the following](../java/topology).
 
 :::
 
----
+* * *
 
 **Active Status**  
 
@@ -276,7 +276,7 @@ For more information, see [the following](../java/dashboard#active-status).
 
 :::
 
----
+* * *
 
 **Compound Eye**  
 
@@ -300,7 +300,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **CUBE**  
 
@@ -315,7 +315,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Transaction Map**
 
@@ -323,7 +323,7 @@ It is the distribution of response times for individual terminated transactions.
 
 The hitmap displays transactions grouped by the 5-minute timeframe, whereas the transaction map shows transactions individually.
 
----
+* * *
 
 **Flex Board**  
 
@@ -335,7 +335,7 @@ For more information, see [the following](../java/flex-board).
 
 :::
 
----
+* * *
 
 **HITMAP**   
 
@@ -349,7 +349,7 @@ For more information, see [the following](../java/trs-view#hitmap).
 
 :::
 
----
+* * *
 
 **Heap Memory**  
 
@@ -367,7 +367,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 ## Log
 
@@ -377,11 +377,11 @@ Logs are stored in files that record events and messages that occur during appli
 
 It is required to look at the log files to understand application activities and root causes of issues.
 
----
+* * *
 
 **Log Monitoring**  
 
-Through WhaTap's log monitoring, you can see logs in real time.<br/>
+Through WhaTap's log monitoring, you can see logs in real time.\
 Or you can selectively see only the desired logs by applying a specific time, category, tag, or filter.
 
 :::note
@@ -390,7 +390,7 @@ For more information, see [the following](../log/introduction).
 
 :::
 
----
+* * *
 
 ## Server
 
@@ -398,13 +398,13 @@ For more information, see [the following](../log/introduction).
 
 This server collects monitoring data when creating a project. When using SaaS services, the WhaTap's collection server is used, and there is no need to build a separate collection server.
 
----
+* * *
 
 **Redis server**  
 
 It is an in-memory data repository. WhaTap uses it as a session repository that holds HTTP sessions.
 
----
+* * *
 
 ## Stack
 
@@ -412,7 +412,7 @@ It is an in-memory data repository. WhaTap uses it as a session repository that 
 
 It is a unit of execution within a process. Every process has one or more threads to perform tasks.  
 
-A process with multiple threads is called "multi-thread process."<br/>
+A process with multiple threads is called "multi-thread process."\
 Each thread has its own stacks and resisters.
 
 :::note
@@ -421,7 +421,7 @@ For more information, see [the following](https://brunch.co.kr/@leedongins/114).
 
 :::
 
----
+* * *
 
 **Top Stack**  
 
@@ -435,7 +435,7 @@ For more information, see [the following](../java/analysis-apm#top-stack).
 
 :::
 
----
+* * *
 
 **Unique Stack**  
 
@@ -449,7 +449,7 @@ For more information, see [the following](../java/analysis-apm#unique-stack).
 
 :::
 
----
+* * *
 
 **Active Stack**  
 
@@ -463,7 +463,7 @@ For more information, see [the following](../java/analysis-apm#active-stack).
 
 :::
 
----
+* * *
 
 ## Notification
 
@@ -481,7 +481,7 @@ The notification service provides pre-defined rules tailored to the characterist
 
 :::
 
----
+* * *
 
 ## Transactions
 
@@ -489,7 +489,7 @@ The notification service provides pre-defined rules tailored to the characterist
 
 In Application Monitoring, a transaction means the process from a single request to the returning of result by the application processes.
 
----
+* * *
 
 **TPS** (Transactions Per Second)  
 
@@ -501,7 +501,7 @@ For more information, see [the following](https://www.whatap.io/ko/blog/14/index
 
 :::
 
----
+* * *
 
 **Transaction Trace**  
 
@@ -513,7 +513,7 @@ For more information, see [the following](https://www.whatap.io/ko/blog/71/index
 
 :::
 
----
+* * *
 
 **Active Transaction**  
 
@@ -529,7 +529,7 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Multi-transaction**  
 
@@ -544,14 +544,14 @@ For more information, see the following document.
 
 :::
 
----
+* * *
 
 **Caller and Callee**
 
 -   **Caller**: Transaction that called a service.
 -   **Callee**: Transaction in which a service has been invoked.
 
----
+* * *
 
 ## ETC
 
@@ -563,7 +563,7 @@ It is used to distinguish the agent type for the purpose. For example, the follo
 -Dwhatap.okind=mobile_ui
 ```
 
----
+* * *
 
 **CPU Steal Time**  
 

@@ -10,161 +10,297 @@ toc_max_heading_level: 3
 
 :::note
 
-<https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+[In https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
 
-::: 
+:::
 
-## Preview 1.101.08
+## Preview 1.101.15
 
-2023년 5월 3일
+May 11, 2023
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> > <UI>로그 파서 설정</UI> > <UI>필터 입력</UI> > 필터키의 오타 수정(okineName → okindName)
+### `Common`
 
--   <Status>Fixed</Status> <UI>로그</UI> > <UI>라이브 테일</UI> 메뉴에서 조회된 로그 데이터가 없는 경우 이전의 로그가 표시되는 현상 수정
+-   <Status>Fixed</Status> Among sidebar menus, modified to add <code>Browser</code> types in <img src='/img/ico-filter.svg' alt='필터 아이콘'/> project type filters and display the text according to the selected language.
+
+-   <Status>Fixed</Status> While moving the tab in <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, fixed the problem where the parameters in the selected organization are kept.
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent List</UI>, fixed the error where set instance <UI>alias</UI> is not applied to the following menu.</p>
+
+-   **_Dashboard_** > **_Instance List_**
+
+-   **_Dashboard_** > **_Multiple Instance Monitoring_**
+
+-   **_Analysis_** > **_Counts Trend Comparison_**
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Resource</UI> > <UI>Node Details</UI>, fixed the bug where partial data in the container list does not appear.</p>
+
+</div>
+
+## Preview 1.101.14
+
+May 11, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In Home > <UI>Flex Board</UI>, fixed the bug where the slow query widget does not appear.
+
+-   <Status>Change</Status> Updated the MXQL path versions of the widgets used in the <b>Integrated Service Dashboard</b> template.
+
+### `Container`
+
+-   <Status>Feature</Status>  In <UI>Dashboard</UI> > <UI>Container Map</UI>, the metrics whose unit is percentage among the chart tooltips that appear when user hovers the mouse over a container element, are displayed with the bar graph charts.
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, added the <UI>selected metrics</UI> item in the <img src='/img/ico-setting.svg' alt='설정 아이콘'/> > <UI>Label</UI> option.
+
+</div>
+
+## Preview 1.101.13
+
+May 10, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Deprecate</Status> In <UI>Dashboard</UI> > <UI>Application Service Dashboard</UI>, deleted the <UI>Dashboard for Service</UI> button for each group panel under the <UI>Multi Service Dashboard</UI> tab.</p>
+
+</div>
+
+## Preview 1.101.12
+
+May 9, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Container Map</UI>, fixed the bug where the user without <b>Log Read</b> role cannot see the <UI>Container Stdout/Stderr</UI> data.</p>
+
+</div>
+
+## Preview 1.101.11
+
+May 9, 2023
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> Through Home > <UI>Flex Board</UI> > <UI>Hitmap</UI> widget, fixed the problem where the member with the <b>Log Read</b> role cannot see the <UI>Transaction Log</UI> tab in the <b>Transaction Detail</b> screen.
+
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Project Member</UI>, fixed the problem where the icon button on the utmost right is hidden when the width of the browser screen is a specific size.
+
+</div>
+
+## Preview 1.101.10
+
+May 3, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+-   <Status>Change</Status> <UI>통계/보고서</UI> > <UI>테이블 사이즈 증감</UI> 메뉴에서 <UI>CSV 다운로드</UI> 버튼을 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼으로 변경
+
+-   <Status>Fixed</Status> 다음 메뉴 경로에서 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼을 선택하면 나타나는 드롭다운 메뉴 항목을 클릭한 영역에 따라 다운로드 기능이 작동하지 않는 문제 수정
+
+    -   <UI>통계/보고서</UI> > <UI>테이블 사이즈 증감</UI>
+
+    -   <UI>통계/보고서</UI> > <UI>SQL 통계</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI> 탭
+
+</div>
+
+## Preview 1.101.09
+
+2023년 5월 4일
+
+<div class='indentTab'>
+
+### `Server`
+
+-   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 목록</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+
+-   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 환경 변수</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+
+</div>
+
+## Preview 1.101.08
+
+2023년 5월 4일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> Fixed the typo error in <UI>Log</UI> > <UI>Log Setting</UI> > <UI>Log Parser Setting</UI> > <UI>Input Filter</UI> > Filter Key (okineName → okindName).
+
+-   <Status>Fixed</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed the problem where the previous log appears when there is no log data searched.
+
+-   <Status>Change</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI>를 사이드 메뉴에서 제거, <UI>사이트 맵</UI>을 통해서만 접근 가능하도록 변경
+
+-   <Status>Change</Status> 다음 위젯들에서 데이터 응답이 없을 경우 구체적인 사유를 표시하도록 수정
+
+    -   로그 4XX, 5XX 건수
+
+    -   Request Success Rate
+
+    -   응답시간 by 로그
 
 </div>
 
 ## Preview 1.101.07
 
-2023년 5월 3일
+May 3, 2023
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 <b>로그 편집</b> 권한이 있음에도 <b>권한</b> 컬럼에 표시되지 않는 현상 수정
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Project Member</UI>, Fixed the issue where the <b>Edit Log</b> role does not appear in the <b>Role</b> column.
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 관리</UI> 메뉴에서 사용자가 설정한 테마에 따라 패널 제목 색상이 변경되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Project Management</UI>, fixed the bug where the panel title color does not change depending on the theme set by the user.
 
 </div>
 
 ## Preview 1.101.06
 
-2023년 5월 2일
+May 2, 2023
 
 <div class='indentTab'>
 
-<p><Status>Feature</Status> <b>로그 편집</b> 권한 추가 및 관련 기능 <UI>로그 설정</UI> 메뉴에 적용</p>
+<p><Status>Feature</Status> The <b>Edit Log</b> role has been added and the related functions has been applied to <UI>Log Setting</UI>.</p>
 
 </div>
 
 ## Preview 1.101.05
 
-2023년 5월 2일
+May 2, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 브라우저 창 크기가 특정 크기일 때, <UI>Flex 보드</UI> 메뉴의 <UI>관리자</UI> 모드에서 위젯의 JSON 편집 창을 불러오면 텍스트 상자에 스크롤이 반복해서 나타났다가 사라지는 현상 수정</p>
+<p><Status>Fixed</Status> If the browser window has a specific size, when the JSON editing window of the widget is imported in <UI>Manager</UI> mode under <UI>Flex Board</UI>, a scroll appears and disappears repeatedly in the text box.</p>
 
 </div>
 
 ## Preview 1.101.04
 
-2023년 4월 28일
+April 28, 2023
 
 <div class='indentTab'>
 
-### `공통`
+### `Common`
 
--   <Status>Fixed</Status> 로그 프로파일 조회 시 간헐적으로 로그가 조회되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where logs are not queried intermittently when searching log profiles.
 
--   <Status>Fixed</Status> <UI>이용 내역</UI> > <UI>사용량</UI> 메뉴에서 UI 개선 재반영
+-   <Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Usage</UI>, UI improvements have been reapplied.
 
 ### `Application`
 
-<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> 메뉴에서 <UI>도메인</UI> 탭을 접근하면 발생하는 화이트 아웃 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>STAT/REPORT</UI> <UI>Statistics</UI>, fixed the problem where a whiteout occurs when the <UI>Domain</UI> tab is accessed.</p>
 
 </div>
 
 ## Preview 1.101.03
 
-2023년 4월 28일
+April 28, 2023
 
 <div class='indentTab'>
 
 ### `Application`
 
-<p><Status>Fixed</Status> <UI>분석</UI> > <UI>트랜잭션 검색</UI> 메뉴에서 필터 중 숫자만 입력해야 하는 옵션은 숫자 타입 검증 로직 적용</p>
+<p><Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Transaction Search</UI>, applied the numeric type validation logic for the options that require numeric data only.</p>
 
 </div>
 
 ## Preview 1.101.02
 
-2023년 4월 27일
+April 27, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>설치 전 유의사항</UI>에 수집 서버 IP 표기 오류 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, fixed the collection server IP display error in <UI>Precautions</UI>.</p>
 
----
+* * *
 
 ### `ECS`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI>, <UI>Amazon ECS</UI> > <UI>Service</UI> 메뉴에서 <UI>ecs_service</UI> 위젯에 전체 서비스 중 1개의 서비스만 표시되는 문제 수정</p>
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, <UI>Amazon ECS</UI> > <UI>Service</UI>, fixed the problem where only one service is displayed in the <UI>ecs_service</UI> widget.</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> Java 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 에이전트 다운로드 명령어 오타 수정</p>
 
 </div>
 
 ## Preview 1.101.01
 
-2023년 4월 27일
+April 27, 2023
 
 <div class='indentTab'>
 
-### `공통`
+### `Common`
 
 #### My Usage
 
--   <Status>Change</Status> <UI>사용량</UI> 메뉴에서 사용자 경험 개선을 위한 UI 개선
+-   <Status>Change</Status> In <UI>Usage</UI>, applied UI improvements for better user experiences.
 
--   <Status>Feature</Status> <UI>사용량</UI> 메뉴에서 프로젝트 이름을 검색할 수 있는 기능 추가
+-   <Status>Feature</Status> In <UI>Usage</UI>, added the function to search the project name.
 
--   <Status>Fixed</Status> <UI>이용 내역</UI> > <UI>청구서 미리보기</UI> 메뉴에서 <b>Brwoser</b>, <b>Log</b>, <b>Cloud</b>, <b>Amazon ECS</b> 상품의 경우 호스트 컬럼 데이터를 표시하지 않도록 수정
+-   <Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, modified not to display the host column data in case of <b>Browser</b>, <b>Log</b>, <b>Cloud</b>, and <b>Amazon ECS</b> products.
 
 #### Flex Board
 
--   <Status>Change</Status> 대시보드에서 사이드 메뉴 On/Off에 상관없이 위젯의 상호 작용 버튼 상태가 변경되지 않도록 수정
+-   <Status>Change</Status> Modified the widget's interaction button state not to be changed regardless of the side menu On/Off under Dashboard.
 
--   <Status>Fixed</Status> 리치 텍스트 위젯의 경우 수정 후 저장한 내용이 반영되지 않는 버그 수정
+-   <Status>Fixed</Status> In case of the rich text widgets, fixed the bug where the saved content are not applied after modification.
 
----
+* * *
 
 ### `AWS Log`
 
--   <Status>Feature</Status> 로그 조회 권한이 있는 사용자만 <UI>대시보드</UI> 메뉴 내 <UI>라이브테일</UI>, <UI>로그 검색기</UI>, <UI>로그 트렌드</UI> 메뉴를 접근할 수 있도록 수정
+-   <Status>Feature</Status> Modified for only the users with log query role to access the <UI>Live Tail</UI>, <UI>Log Search</UI>, and <UI>Log Trend</UI> menus under <UI>Dashboard</UI>.
 
--   <Status>Change</Status> 로그 조회 권한이 없는 사용자는 <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴를 진입할 수 있도록 수정(단 기능을 추가하거나 수정할 수 없음)
+-   <Status>Change</Status> Modified for the users who do not have the role to view logs to access <UI>Alert</UI> > <UI>Event Setting</UI> (however, functions cannot be added or modified).
 
----
+* * *
 
 ### `Database`
 
-#### DB 공통
+#### DB commons
 
-<p><Status>Change</Status> 사이드바에서 <UI>분석</UI> > <UI>메트릭스 이상 탐지</UI> 메뉴 숨김</p>
+<p><Status>Change</Status> Hid a menu: <UI>Analysis</UI> > <UI>Metric Anomaly Detection</UI>.</p>
 
 #### POSTGRESQL
 
--   <Status>Change</Status> <UI>통계/보고서</UI> > <UI>PG_STAT_STATEMENT</UI> 메뉴 숨김
+-   <Status>Change</Status> Hid <UI>STAT/REPORT</UI> > <UI>PG_STAT_STATEMENT</UI>.
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>슬로우 쿼리</UI> 메뉴에서 안내 문구 링크를 클릭하면 빈 페이지로 이동되는 문제 수정
+-   <Status>Fixed</Status> Fixed the problem where a blink page appears when the guide link is clicked in <UI>Dashboard</UI> > <UI>Slow Query</UI>.
 
 #### MYSQL
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>슬로우 쿼리</UI> 메뉴에서 안내 문구 링크를 클릭하면 빈 페이지로 이동되는 문제 수정</p>
+<p><Status>Fixed</Status> Fixed the problem where a blink page appears when the guide link is clicked in <UI>Dashboard</UI> > <UI>Slow Query</UI>.</p>
 
----
+* * *
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>설치 전 유의사항</UI>에 수집 서버 IP 표기 오류 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, fixed the collection server IP display error in <UI>Precautions</UI>.</p>
 
----
+* * *
 
 ### `ECS`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI>, <UI>Amazon ECS</UI> > <UI>Service</UI> 메뉴에서 <UI>ecs_service</UI> 위젯에 전체 서비스 중 1개의 서비스만 표시되는 문제 수정</p>
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, <UI>Amazon ECS</UI> > <UI>Service</UI>, fixed the problem where only one service is displayed in the <UI>ecs_service</UI> widget.</p>
 
 </div>
 
@@ -174,14 +310,14 @@ April 26, 2023
 
 <div class='indentTab'>
 
-### `공통`
+### `Common`
 
-<p><Status>Fixed</Status> <UI>로그</UI> > <UI>라이브 테일</UI> 메뉴에서 최초 로그 데이터 조회 시 데이터가 출력되지 않는 문제 수정</p>
+<p><Status>Fixed</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed the problem where data is not output when initially searching for log data.</p>
 
----
+* * *
 
 ### `Browser`
 
-<p><Status>Fixed</Status> <UI>프로젝트 목록</UI>에서 <UI>리스트 뷰</UI> 모드 전환 시 <code>Browser</code> 프로젝트가 조회되지 않는 문제 수정</p>
+<p><Status>Fixed</Status> In <UI>Project list</UI>, fixed the problem where a <code>Browser</code> project is not searched when switched to <UI>List View</UI> mode.</p>
 
 </div>

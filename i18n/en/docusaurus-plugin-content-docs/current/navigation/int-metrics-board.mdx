@@ -7,14 +7,16 @@ tags:
   - Metrics
 ---
 
-Home > **_Integrated Metrics Board_**
+Home > **_Sitemap_** > **_Integrated Metrics Board_**
 
 You can create a dashboard where you can view metrics data from all your projects. The metrics of different product groups can be seen at a glance by configuring them as widgets on the dashboard.
 
 :::note
-**_통합 메트릭스 보드_** 메뉴를 처음 이용한다면 **_Flex 보드_** 메뉴를 사용할 것을 권장합니다. **_Flex 보드_**에 대한 자세한 내용은 각 상품별 문서를 참조하세요.
 
-{@include: ../_link2flexboard.mdx}
+If you use **_Integrated Metrics Board_** for the first time, it is recommended to use **_Flex Board_**. For more information about **_Flex Board_**, see documents for each product.
+
+{@include: ../_link2flexboard.mdx}  
+
 :::
 
 ## Adding a widget chart
@@ -36,23 +38,35 @@ Select **_Series_** in **_Chart Type_**. In the **_series_** chart, you can see 
 -   **_Title_**: Enter the widget chart name.
 
 -   **_X Axis_**
+
     -   **_Axis Line_**: You can show or hide the X-axis line.
+
     -   **_Plot Line_**: You can show or hide the vertical lines over time.
+
     -   **_Tick_**: You can show or hide the X-axis text.
 
 -   **_Y Axis_**
+
     -   **_Axis Line_**: You can show or hide the Y-axis line.
+
     -   **_Plot Line_**: You can show or hide the horizontal lines by data.
+
     -   **_Tick_**: You can show or hide the Y-axis text.
+
     -   **_Inner Label_**: Y-axis text is moved inside the chart.
+
     -   **_uni_**: You can set the unit for the Y-axis data.
 
 -   **_Style_**
+
     -   **_Area_**: The inside of the graph area is filled with color.
+
     -   **_Plot Vertical Line_**
+
     -   **_Show Plot Max Y Value_**: It displays the highest number as text on the chart.
 
 -   **_Hover tooltip_**
+
     -   **_Tick_**
 
 ### Setting the shape of the static chart
@@ -64,21 +78,33 @@ In **_Chart Type_**, select **_Static_**. The **_static_** chart represents metr
 -   **_Preview_**: You can see that the chart shape changes depending on the options.
 
 -   **_Title Style_**
+
     -   **_Title_**: Enter the title of the metric chart widget.
-    -   **_description_**: 메트릭스 차트 위젯에 대한 설명을 입력하세요.
+
+    -   **_description_**: Enter the description of the metric chart widget.
+
     -   **_Title Font Color_**: Set the color of the title.
 
 -   **_Content Label_**
+
     -   **_Content Font Size_**: Set the size of the text to display on the chart.
+
     -   **_Content Background Color_**: Set the background color of the text to display on the chart.
+
     -   **_Content Front Color_**: Set the color of the text to display on the chart.
+
     -   **_Vertical Align_**: Set the text's vertical alignment.
+
     -   **_Horizontal Align_**: Set the text's horizontal alignment.
 
 -   **_Formats_**
+
     -   **_format_**: Set the unit of the metric data.
+
     -   **_Separator_**: Thousands can be separated with a comma (,).
+
     -   **_Prefix_**: You can add a prefix to texts on the chart.
+
     -   **_Suffix_**: You can add a suffix to texts on the chart.
 
 ### Setting the shape of the color alert chart
@@ -90,11 +116,15 @@ Select **_Color alert_** in **_Chart Type_**. With the **_Color alert_** chart, 
 -   **_Values_**
 
     -   **_Name_**: You can enter names for each section to identify the current status.
+
     -   **_Min_**: You can set the delay time in minutes.
+
     -   **_Color_**: You can intuitively grasp the current status by setting colors for each delay section.
 
     :::note
+
     To delete an unnecessary step, select ![Delete icon](/img/ico-close.svg). To add a step, select **_+ Add_**.
+
     :::
 
 ### Setting the reference time
@@ -102,7 +132,9 @@ Select **_Color alert_** in **_Chart Type_**. With the **_Color alert_** chart, 
 **_Data Settings_**: Data appears on the chart based on the set time.
 
 -   **_Real Time_**: You can check real-time data based on the last 5 minutes, 10 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, and 12 hours.
+
 -   **_Stat Past time_**: You can check the last 5-minute data based on today, yesterday, two days ago, three days ago, and a week ago. If you select Today, you can see 5-minute data based on the current time.
+
 -   **_Custom_**: You can select the desired date and time.
 
 ### Adding tag data
@@ -134,8 +166,11 @@ Once you have finished setting all items, select **_Complete_**.
 :::note
 
 -   Depending on the selected project, the items that can be selected in **_Category_** may differ.
+
 -   For more information about metrics, see [the following](../metrics/common-metrics-intro).
+
 -   For more information about **_Time Merge_** and **_Object Merge_**, see [the following](../java/flexboard-widget-manage#datamerge-option).
+
 :::
 
 ## Checking the widget chart

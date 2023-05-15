@@ -13,33 +13,33 @@ tags:
 <!-- 페이지 구성 수정 필요 -->
 
 -   **whatap.profile_httpc_resource_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       トレースでHTTP Callステップが収集されるとき、そのステップで使用したCPUとメモリの使用量を追跡します。
 
 -   **whatap.trace_httpc_normalize_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
+      デフォルト値`true`<br/>
       トランザクション内のHTTPC URLを構文解析して正規化する機能を活性化します。
 
 -   **whatap.trace_httpc_normalize_urls**<span class='type'>String</span><br/>
-        正規化するHTTPC URL パターンを定義します。呼び出しURLパターンを構文解析してパスパラメータを削除します。
+        正規化するHTTPC URLパターンを定義します。呼び出しURLパターンを構文解析してパスパラメータを削除します。
     <!-- 아래 노트 내용 체크 필요 -->
     :::note
     例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。複数登録するときは、コンマ（,）を区切り文字として使用します。 置換パターンの整理後、補完が必要です。
     :::
 
 -   **whatap.profile_curl_return_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、curlライブラリ関数の結果が「false」のときにエラーと表記する機能を活性化します。
+      デフォルト値`true`<br/>
+      値が`true`の場合、curlライブラリ関数の結果が`false`のときにエラーと表記する機能を活性化します。
 
 <!-- 가독성 떨어지고 보기 깔끔하지 않음 -->
 
 -   **whatap.profile_curl_error_info_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、curlライブラリ関数の結果値が「false」のときにエラーメッセージ情報を収集する機能を活性化します。「whatap.profile_curl_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`true`の場合、curlライブラリ関数の結果値が`false`のときにエラーメッセージ情報を収集する機能を活性化します。`whatap.profile_curl_return_enabled`の設定が`false`の場合は適用されません。
 
-    -   cURLライブラリのエラータイプは、「HttpConnectionReturnFalse」の後にエラー番号が追加された形式です。
-    -   呼び出しURLのhttp結果コードが400以上の場合のエラータイプを追加しました。「HttpConnectionServerError（結果コード）」の例は次のとおりです。「HttpConnectionReturnFalse（6）」、「HttpConnectionServerError（500）」
+    -   cURLライブラリのエラータイプは、`HttpConnectionReturnFalse`の後にエラー番号が追加された形式です。
+    -   呼び出しURLのhttp結果コードが400以上の場合のエラータイプを追加しました。`HttpConnectionServerError(結果コード)`の例は次のとおりです。`HttpConnectionReturnFalse(6)`、`HttpConnectionServerError(500)`
 
 -   **whatap.profile_curl_error_ignore_empty**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 「whatap.profile_curl_return_enabled」の設定が「false」の場合は適用されません。 
+      デフォルト値`true`<br/>
+      値が`false`の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。`whatap.profile_curl_return_enabled`の設定が`false`の場合は適用されません。 

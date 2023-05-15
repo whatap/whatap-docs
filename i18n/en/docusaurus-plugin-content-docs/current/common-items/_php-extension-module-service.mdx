@@ -8,18 +8,18 @@ If installation of the PHP extension module and whatap-php service (_install.sh_
 $ cp /usr/whatap/php/template.ini /usr/whatap/php/whatap.ini
 $ vi /usr/whatap/php/whatap.ini
 
-# 상단에 내용 추가
+# Add this content at the top
 ; Enable whatap extension module
 extension=whatap.so
-whatap.license=            # 발급된 액세스 키
-whatap.server.host=        # 발급된 서버 IP
-whatap.app_name=           # 웹서버 구분 APHP, FPHP (apache : APHP, php-fpm : FPHP)
-whatap.app_process_name=   # apache, php-fpm 의 프로세스 이름(httpd,php-fpm)
+whatap.license=            # Issued access key
+whatap.server.host=        # Issued server IP
+whatap.app_name=           # Web server classification: APHP, FPHP (apache: APHP, php-fpm : FPHP)
+whatap.app_process_name=   # Process name of apache and php-fpm (httpd,php-fpm)
 ```
 
 | Configuration           | Description                                                                                                                                                                                    |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| whatap.license          | **_프로젝트 메뉴_** > **_관리_** > **_에이전트 설치_** 페이지에서 발급된 액세스 키를 확인할 수 있습니다.                                                                                                                          |
+| whatap.license          | The access key issued from **_Project Menu_** > **_Management_** > **_Agent Installation_** can be checked.                                                                                    |
 | whatap.server.host      | You can see the server IP issued from **_Project Menu_** > **_Management_** > **_Agent Installation_**.                                                                                        |
 | whatap.app_name         | `APHP` is used for the Apache server and `FPHP` is used for php-fpm.                                                                                                                           |
 | whatap.app_process_name | If you enter the exact value as the execution process name of Apache or php-fpm, the memory usage for the process is collected. For example, they are `httpd`, `apache2`, `php-fpm`, and such. |

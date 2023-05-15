@@ -8,4 +8,74 @@ tags:
 
 .NETアプリケーションサーバーの機能を制御します。
 
-{@include: ../common-items/_dotnet-control-function.mdx} 
+-   **stat_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    統計情報の追跡機能をアクティブにします。 5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。 
+
+-   **license** <span class='type'>String</span>
+
+    デフォルト値`NONE`
+
+    エージェントのインストール時にサーバーから与えられたアクセスキーを入力します。 アクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
+
+-   **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
+
+    デフォルト値`300000`
+
+    リアルタイムブラウザのユーザー数を測定する場合、同一ユーザーとして認められる呼び出し間隔の最大値を設定します。
+
+-   **time_sync_interval_ms** <span class='type'>Milliseconds</span>
+
+    デフォルト値`300000`
+
+    エージェントとサーバー間の同期化する時間間隔を設定します。同期化しない場合は`0`に設定してください。
+
+-   **text_reset** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    WhaTapエージェントは、一度送信したテキストタイプデータをhash処理するため、翌日まで再送信しません。 以前の設定値と異なる値を入力する場合は、再送信します。
+
+    :::note
+
+    トランザクションURL、SQL Stringなどがテキストタイプデータに該当します。
+
+    :::
+
+-   **profile_method_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    実行時間`profile_method_time` オプションの値を超えるユーザー関数の情報をトランザクション詳細情報から確認することができます。
+
+    :::note
+
+    {@include: ../common-items/_donet-iis-restart.mdx}
+
+    :::
+
+-   **profile_method_time** <span class='type'>Milliseconds</span>
+
+    デフォルト値 `1000`
+
+    `profile_method_enabled`オプションで収集する関数の実行時間を設定できます。
+
+    :::note
+
+    {@include: ../common-items/_donet-iis-restart.mdx}
+
+    :::
+
+-   **profile_method_stack_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    ユーザー関数のスタック情報をトランザクション詳細から確認できます。
+
+    :::note
+
+    {@include: ../common-items/_donet-iis-restart.mdx}
+
+    :::

@@ -19,12 +19,12 @@ Release date: 2022-09-08
 
 ## Change (update)
 
--   트랜잭션 에러 알림 발생 시 `status_code`가 있는 경우에만 `status_code` 항목을 표시하도록 수정
+-   Modified to display `status_code` only if there is `status_code` when a transaction error notification occurs.
 
--   INFO 모드인 경우 `status_code`가 없는 경우에는 알림 메시지를 전송하지 않도록 수정
+-   Modified not to transfer notification messages if there is no `status_code` in INFO mode.
 
--   INFO 모드인 경우 지연된 http 호출 발생시 `status_code` 여부와 상관없이 메시지 전송하도록 수정
+-   Modified to send messages regardless of `status_code` upon delayed HTTP call in INFO mode.
 
 ## Fixed (bug fixing)
 
-미터링 정보 대상인 `cpu_core` 데이터를 write 권한이 없는 경우에도 수집할 수 있도록 버그 수정
+Fixed the bug to collect the `cpu_core` data (metering target) with no write role.

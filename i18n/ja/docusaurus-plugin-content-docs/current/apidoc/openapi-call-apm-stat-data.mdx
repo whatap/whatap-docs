@@ -17,7 +17,7 @@ tags:
 | ------- | --------------------------------------------------------------------------------- |
 | `stime` | 照会開始時間、UTC（UNIX epoch time、 millisecond）                                          |
 | `etime` | 照会終了時間、UTC（UNIX epoch time、 millisecond）                                          |
-| filter  | 基本的に「m5」で自動設定されます。時間範囲内に5分の統計を取得する際に「m5」を使用します。<br/>5秒の統計は「s5」、1時間の統計は「h1」を使用します。 |
+| filter  | 基本的に`m5`で自動設定されます。時間範囲内に5分の統計を取得する際に`m5`を使用します。<br/>5秒の統計は`s5`、1時間の統計は`h1`を使用します。 |
 | `oid`   | 特定のサーバーのみをモニタリングしたい場合は、次を追加してください。                                                |
 
 ## Exception
@@ -542,9 +542,9 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 :::note
 
--   **filterkey**：照会条件キー（'caller_pcode'、'caller_spec' （バージョン）、'caller_url'、'spec' （バージョン）、 'url'）
--   **filterval**：照会条件（'filterkey'が'caller_url'または'url'の場合、base64としてエンコード）
-:::
+-   **filterkey**：照会条件キー（`caller_pcode`、`caller_spec` （バージョン）、`caller_url`、`spec`（バージョン）、 `url`）
+-   **filterval**：照会条件（`filterkey`が`caller_url`または`url`の場合、base64としてエンコード）
+    :::
 
 ## ドメイン呼び出し統計
 
@@ -555,6 +555,6 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 :::note
 
--   **filterkey**：照会条件キー（'caller_pcode'、'caller_spec' （バージョン）、'caller_url'、'spec' （バージョン）、 'url'）
--   **filterval**：照会条件（'filterkey'が'caller_url'または'url'の場合、base64としてエンコード）
-:::
+-   **filterkey**：照会条件キー（`caller_pcode`、`caller_spec` （バージョン）、`caller_url`、`spec`（バージョン）、 `url`）
+-   **filterval**：照会条件（`filterkey`が`caller_url`または`url`の場合、base64としてエンコード）
+    :::

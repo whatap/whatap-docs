@@ -31,10 +31,7 @@ The following provides the method how to set the communication for the PHP appli
       Default `5242880`<br/>
       Set the maximum size of the data to send to the collection server at one time.
 
--   **whatap.net_udp_port** <span class='type'>tcp_port</span>
-
-    Default `6600`
-
-    The WhaTap agent transfers the data collected from the tracer through UDP communication to the collection server. You can specify the port of the first UDP server. If the provided port 6600 is in use, you can use this option. If you have a whatap entry in _php.ini_ by a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
-    
+-   **whatap.net_udp_port**<span class='type'>tcp_port</span><br/>
+        Default `6600`<br/>
+        The WhaTap agent transfers the data collected from the tracer through UDP communication to the collection server. You can specify the port of the first UDP server. If the provided port 6600 is in use, you can use this option. If you have a whatap entry in _php.ini_ by a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
     {@include: ../common-items/_php-restart-apply.mdx}

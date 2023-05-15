@@ -16,8 +16,6 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 * _trs-profile.mdx 주석 삭제
 
-      * ** * -> ---
-
 :::note null -> :::note
 
 :::note\ -> :::note
@@ -50,6 +48,6 @@ server-list.mdx -> 주석 삭제
 
 [次の記事] \(openapi-call-apm-stat-data)
 
-）로 끝나는 부분 확인
+）로 끝나는 부분 확인 => 정규식 \]\(([^>]+)）
 
-\(https://pypi.org/project/whatap-python/ #files)
+\(<https://pypi.org/project/whatap-python/> #files)

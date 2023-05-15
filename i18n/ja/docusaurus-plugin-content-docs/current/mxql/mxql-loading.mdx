@@ -79,12 +79,12 @@ MXQL文法を利用してメトリクスを読み込むコマンドについて�
 :::caution
 
 -   `TAGLOAD`と`FLEXLOAD`は、それぞれ設定できる`CATEGORY`の値が決まっています。
--   `fileter-like`または`filter-notlike`オプションを使用するとき、値として数字が来る場合、バッククォート('')またはダブルクォート('')で囲まないと動作しません。
+-   `fileter-like`または`filter-notlike`オプションを使用するとき、値として数字が来る場合、バッククォート(' ')またはダブルクォート(" ")で囲まないと動作しません。
     ```sql
     CATEGORY app_counter
     TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
     ```
-:::
+    :::
 
 ## FLEXLOAD{#flexload}
 

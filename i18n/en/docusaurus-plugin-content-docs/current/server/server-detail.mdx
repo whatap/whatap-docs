@@ -10,19 +10,19 @@ tags:
   - Server
 ---
 
-홈 화면 > 프로젝트 선택 > **_서버 목록_** > **_서버 상세_**
+Home > Select Project > **_Server List_** > **_Detail_**
 
-와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 **_서버 목록_** 메뉴 하위에 **_서버 상세_** 메뉴를 선택하세요. **_서버 상세_**는 서버의 자원 현황과 실행 프로세스의 상세 정보를 제공합니다.
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Server Detail_** under **_Server List_**. **_Server Detail_** provides detailed information on the server resource status and running processes.
 
-![서버 상세](/img/server-detail.png)
+![Server Details](/img/server-detail.png)
 
-## ![](/img/number-01.png) 상단 옵션
+## ![](/img/number-01.png) Options at the top
 
-상단 ![number 1](/img/number-01.png) 영역에서 **_데이터 갱신 시간_** 및 조회할 **_서버_**를 지정할 수 있습니다. **_데이터 갱신 시간_** 및 **_서버_** 지정 옵션과 함께 해당 서버의 **_요약 정보_**를 확인할 수 있습니다.
+In the ![number1](/img/number-01.png) area at the top, you can set the data for **_data update time_** and **_server_**. You can see the **_Summary Info_** of the server, along with the **_Data Update Time_** and **_Server_** options.
 
-### 데이터 갱신 시간
+### Data update time
 
-서버 상세 페이지의 데이터는 5초마다 자동으로 갱신합니다. 
+The data on the server detail page is automatically updated every 5 seconds. 
 
 <div style={{textAlign: 'center'}}>
 
@@ -30,77 +30,77 @@ tags:
 
 </div>
 
--   ![일시정지 아이콘](/img/ic-s-pause.svg) **_일시정지_** : 사용자는 데이터의 자동 갱신을 중지할 수 있습니다. 
--   ![재생 아이콘](/img/ic-play-grn.svg) **_재생_** : 사용자는 중지한 자동 갱신을 재시작할 수 있습니다.
--   ![새로고침 아이콘](/img/ic-refresh2.svg) **_새로고침_** : 사용자는 현재 시간을 기준으로 데이터를 갱신할 수 있습니다.
+-   ![Pause icon](/img/ic-s-pause.svg) **_Pause_** : You can stop automatic update of the data. 
+-   ![Playback icon](/img/ic-play-grn.svg) **_Playback_** : You can restart the auto update you have stopped.
+-   ![Refresh icon](/img/ic-refresh2.svg) **_Refresh_** : You can update the data based on the current time.
 
 ### Select Server
 
-**_서버 선택_** 옵션을 통해 상세 내용을 조회할 서버를 지정할 수 있습니다. 선택창의 목록에서 조회할 서버를 선택하면 다음 ![number 2](/img/number-02.png) 영역에서 서버 자원 현황과 실행 프로세스의 상세 정보 등을 확인할 수 있습니다.
+The **_Select Server_** option allows you to set the server to view. If you select a server to inquire from the list, you can see the server resources and detailed information of running processes in the ![number2](/img/number-02.png) area.
 
-## ![](/img/number-02.png) 서버 상세
+## ![](/img/number-02.png) Detail
 
-### 서버 자원 현황
+### Server resources
 
-![number 2](/img/number-02.png) 영역에서 **_CPU Usage_**, **_Memory Usage_**, **_Network_**, **_Disk I/O_** 차트를 통해 해당 서버의 자원 현황을 확인할 수 있습니다.
+In the ![number2](/img/number-02.png) area, you can see the resources of the server through the **_CPU Usage_**, **_Memory Usage_**, **_Network_**, and **_Disk I/O_** charts.
 
--   ![csv 아이콘](/img/ic-csv-download.svg): **_CSV_** 아이콘을 선택하면 차트 기록을 CSV 파일로 저장할 수 있습니다.
+-   ![csv icon](/img/ic-csv-download.svg): If you select the **_CSV_** icon, you can save the chart records in a CSV file.
 
--   ![카메라 아이콘](/img/ic-camera.svg): **_카메라_** 아이콘을 선택하면 이미지 형식으로 차트 화면을 저장할 수 있습니다.
+-   ![Camera icon](/img/ic-camera.svg): If you select **_Camera_**, the chart data is saved in an image data.
 
--   ![상세 아이콘](/img/ic-zoom-in.svg): **_상세_** 아이콘을 선택하면 CPU 사용률, 메모리 사용률, 네트워크, 디스크 입출력 각 상세 차트를 확인할 수 있습니다.
+-   ![Detail icon](/img/ic-zoom-in.svg): If you select the **_Detail_** icon, you can see the charts for CPU utilization, memory utilization, network, and disk I/O.
 
-    -   CPU 사용률<br/> 
+    -   CPU utilization<br/> 
         **_CPU Usage_**, **_CPU Idle_**, **_CPU Nice_**, **_CPU I/O Wait_**, **_CPU Steal_**, **_CPU IRQ_**, **_CPU Soft IRQ_**, **_CPU Load_**
 
-    -   메모리 사용률<br/> 
+    -   Memory utilization<br/> 
         **_Memory Usage_**, **_Memory Available_**, **_Memory SReclaimable_**, **_Memory SUnreclaim_**, **_Memory Slab_**, **_Memory Swap Used_**,**_ Memory Page Faults_**
 
-    -   네트워크<br/> 
+    -   Network<br/> 
         **_Traffic In/Out_**. **_Packet In/Out_**, **_Error In/Out_**, **_Dropped In/Out_**
 
-    -   디스크 입출력<br/> 
+    -   Disk I/O<br/> 
         **_Disk I/O_**, **_IOPS Read/Write_**, **_Disk Bph Read/Write_**, **_Used Space_**, **_Queue Length_**, **_Inode Used_**, **_Free Space_**
 
 ### Process List
 
 #### sorting
 
--   **_프로세스 목록_** 상단에서 선택한 지표에 따라 내림차순 또는 오름차순 정렬을 지정해 조회할 수 있습니다. 
+-   You can search by setting a sorting in descending or ascending order according to the selected metric at the top of **_Process List_**. 
 
--   **_프로세스 목록_** 상단에서 선택한 지표에 따라 상위 **_10개_**, **_20개_**, **_30개_**, **_전체_** 프로세스를 지정해 확인할 수 있습니다. 
+-   According to the metric selected at the top of **_Process List_**, you can check by setting the top **_10_**, **_20_**, **_30_**, and **_All_** processes. 
 
 #### Grouping
 
-프로세스 그룹은 하나의 인스턴스에서 동일한 동작을 하는 여러 프로세스를 묶은 것입니다. **_그룹화_** 버튼을 선택해 프로세스 그룹을 추가할 수 있습니다. 프로세스 그룹화에 대한 자세한 내용은 [다음 문서](server-detail-process-group)를 참조하세요.
+A process group is a set of multiple processes with the same behaviors in an instance. You can add process groups by selecting the **_Grouping_** button. For more information about process grouping, see [the following](server-detail-process-group).
 
-### 서버 정보 패널
+### Server information panel
 
-**_서버 정보_** 패널에서 확인할 수 있는 내용은 다음과 같습니다. **_디스플레이 이름_**과 **_메모_**의 경우 **_서버 정보_** 패널에서만 편집이 가능합니다.
+You can see the following in the **_Server Info_** panel. In case of **_Display Name_** and **_Memo_**, you can edit only in **_Server Info_** panel.
 
--   ![알림 아이콘](/img/ic-alert.svg) **_서버 알림 목록_** <br/>
-    **_서버 정보 패널_** 상단의 ![알림 아이콘](/img/ic-alert.svg) **_서버 알림 목록_** 버튼을 선택하면 현재 서버에 할당된 알림을 확인할 수 있습니다.
+-   ![Alert icon](/img/ic-alert.svg) **_Server Alert List_** <br/>
+    At the top of **_Server Info_** panel, if you select ![Alert icon](/img/ic-alert.svg) **_Server Alert List_**, the alerts for the current server appear.
 
 -   **_Display Name_**/**_ID_** <br/>
-    선택한 서버의 **_디스플레이 이름_**(ONAME 별칭)과 **_서버 아이디_**(OID)를 확인할 수 있습니다. ![수정 아이콘](/img/ic-edit.svg) **_수정_** 아이콘을 선택하면 **_디스플레이 이름_**을 수정할 수 있습니다. 
+    You can see the **_display name_** (ONAME alias) and **_server ID_** (OID) of the selected server. If you select the ![Edit icon](/img/ic-edit.svg) **_Edit_** icon, you can modify the **_display name_**. 
 
     :::note
 
-    ONAME은 디폴트로 호스트 이름이 설정됩니다. 
+    ONAME is set to the host name by default. 
 
     :::
 
 -   **_OS_**<br/>
-    선택한 서버의 **_OS 정보_**를 확인할 수 있습니다.
+    You can see the **_OS information_** of the selected server.
 
 -   **_IP Address_**<br/>
-    선택한 서버의 **_IP 주소_**를 확인할 수 있습니다.
+    You can see the **_IP address_** of the selected server.
 
 -   **_Agent_**<br/>
-    선택한 서버의 **_에이전트 버전_**을 확인할 수 있습니다.
+    You can see the **_agent version_** of the selected server.
 
 -   **_Memo_**<br/>
-    작성한 **_메모_**를 확인하거나 ![수정 아이콘](/img/ic-edit.svg) **_수정_** 아이콘을 선택해 메모를 수정 및 추가 작성할 수 있습니다.
+    By checking the written **_memo_** or selecting ![Edit icon](/img/ic-edit.svg) **_Edit_** icon, you can modify or add any memo.
 
 <!-- 
 

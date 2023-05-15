@@ -3,13 +3,13 @@ id: container-status
 title: コンテナマップの指標と状態
 description: コンテナマップメニューで提供されるチャートの属性に応じて、コンテナまたはPodの状態を確認できます。
 tags:
-  - クバネティス
-  - クバネティスモニタリング
+  - Kubernetes
+  - Kubernetesモニタリング
 ---
 
 ## チャート指標のカストマイズ
 
-WhaTap Kubernetesモニタリングサービスの**_コンテナマップ_**メニューで提供する基本チャート属性は、コンテナまたはPodの状態（State）です。メトリクス名では**_ConState_**（Container State）です。ただ、基本状態ではなく別の基準でマップを構成する必要があります。例えば、基本State状態ではなくCPU使用量（millicore）、メモリ使用率（%）、ネットワーク使用量（byte）などを基準に各対象の状態を把握しなければならない場合もあります。
+WhaTap Kubernetesモニタリングサービスの**_コンテナマップ_**メニューで提供する基本チャート属性は、コンテナまたはPodの状態（State）です。メトリクス名では**_ConState_**（Container State）です。ただし、基本状態以外の基準でマップを構成する必要があります。例えば、基本State状態ではなくCPU使用率（millicore）、メモリ使用率（%）、ネットワーク使用率（byte）に基づいて各対象の状態を判断できます。
 
 WhaTapは、コンテナのチャート指標変更機能を提供します。変更可能なチャートの指標値は、WhaTap Kubernetesが収集するメトリックス（指標）と同じです。
 
@@ -17,52 +17,52 @@ WhaTapは、コンテナのチャート指標変更機能を提供します。�
 
 {@include: ../common-items/_container-note-reset.mdx} 
 
-## 指標のしきい値設定および状態色
+## 指標のしきい値設定およびステータス色
 
-対象に付与した指標のしきい値設定により、各対象の状態を色分けできます。指標の単位が数字の場合（pct、bps、millicore）にしきい値設定が可能です。
+対象に割り当てられた指標のしきい値を設定することで、各対象の状態を色で分類できます。指標の単位が数値（pct、bps、millicore）の場合、しきい値を設定できます。
 
-<span class='normal'>Normal</span>、<span class='slow'>Warning</span>、<span class='vslow'>Critical</span> など状態別の色や意味は以下の通りです。
+<span class='normal'>Normal</span>、<span class='slow'>Warning</span>、<span class='vslow'>Critical</span> などステータス別の色や意味は以下の通りです。
 
 ![各対象の状態色](/img/container-map-status-color.png)
 
-| 상태                                  | 説明                                                                |
+| 状態                                  | 説明                                                                |
 | ----------------------------------- | ----------------------------------------------------------------- |
-| <span class='normal'>Normal</span>  | 定常状態区間の表示（~Warning未満の区間を3等分）                                      |
-| <span class='slow'>Warning</span>   | Warningしきい値区間内にあることを表示（Warning以上～Critical未満）                      |
-| <span class='vslow'>Critical</span> | Criticalしきい値区間内にあることを表示（Critical以上～）                              |
-| Dead                                | コンテナ終了進行状態                                                        |
-| Wait                                | コンテナ開始進行状態                                                        |
-| Pause                               | コンテナ一時停止状態                                                        |
+| <span class='normal'>Normal</span>  | 定常間隔の表示（~Warning未満の区間を3等分）                                        |
+| <span class='slow'>Warning</span>   | Warningしきい値区間内であることを表示（Warning以上～Critical未満）                      |
+| <span class='vslow'>Critical</span> | Criticalしきい値区間内であることを表示（Critical以上～）                              |
+| Dead                                | コンテナ終了の進行状態                                                       |
+| Wait                                | コンテナ開始の進行状態                                                       |
+| Pause                               | コンテナの一時停止状態                                                       |
 
 ## イベントベースのコンテナ状態
 
-**_コンテナマップ_**メニューでコンテナビューは、`EventConState`というステータス値を提供します。`EventConState`は`Event-based Container State`でイベントが反映されたコンテナ状態を示します。`EventConState`に反映されたイベントの種類は次のとおりです。
+**_コンテナマップ_**メニューでコンテナビューは、`EventConState`というステータス値を表示します。`EventConState`は`Event-based Container State`でイベントが反映されたコンテナ状態を表します。`EventConState`に反映されたイベントの種類は次のとおりです。
 
 | イベント             | レベル                                                                    |
 | ---------------- | ---------------------------------------------------------------------- |
 | Kubernetes Event | <span class='slow'>Warning</span>                                      |
 | WhaTap Event     | <span class='slow'>Warning</span>, <span class='vslow'>Critical</span> |
 
--   `Kubernetes Event`は、Kubernetesが提供するイベント情報です。ユーザーのクKubernetes環境で`kubectl get events`コマンドで確認可能なイベント情報と同じです。
--   `WhaTap Event`は、ユーザーがWhaTapイベント機能を通じて設定したイベントです。
+-   `Kubernetes Event`は、Kubernetesが提供するイベント情報です。ユーザーのKubernetes環境で`kubectl get events`コマンドで表示可能なイベント情報と同じです。
+-   `WhaTap Event`は、ユーザーがWhaTapイベント機能を通じて設定するイベントです。
 
 `EventConState`は、次のような方式で決定されます。
 
-| 상태                                  | 状態値 | 原因                                                                                                                          |
-| ----------------------------------- | :-: | --------------------------------------------------------------------------------------------------------------------------- |
-| <span class='vslow'>Critical</span> |  50 | WhaTapマイクロエージェントでCriticalイベントが発生<br/>WhaTapノードエージェントでCriticalイベントが発生<br/>コンテナ状態がOOMKILLEDに切り替え                              |
-| <span class='slow'>Warning</span>   |  30 | KubernetesでWarningイベントが発生<br/>WhaTapマイクロエージェントでWarningイベントが発生<br/>WhaTapノードエージェントでWarningイベントが発生<br/>コンテナ状態がRESTARTINGに切り替え |
-| Dead                                |  23 | コンテナ状態がDEADに切り替え                                                                                                            |
-| Pause                               |  22 | コンテナ状態がPAUSEに切り替え                                                                                                           |
-| Waiting                             |  21 | コンテナ状態がWAITINGに切り替え                                                                                                         |
-| <span class='normal'>Normal</span>  |  10 | コンテナ状態がNormalに切り替え                                                                                                          |
+| 状態                                  | 状態値 | 原因                                                                                                                           |
+| ----------------------------------- | :-: | ---------------------------------------------------------------------------------------------------------------------------- |
+| <span class='vslow'>Critical</span> |  50 | WhaTapマイクロエージェントでCriticalイベントの発生<br/>WhaTapノードエージェントでCriticalイベントの発生<br/>コンテナ状態がOOMKILLEDに切り替え                               |
+| <span class='slow'>Warning</span>   |  30 | KubernetesでWarningイベントが発生<br/>WhaTapマイクロエージェントでWarningイベントが発生<br/>WhaTapノードエージェントでWarningイベントが発生<br/>コンテナ状態がRESTARTINGに切り替わり |
+| Dead                                |  23 | コンテナ状態がDEADに切り替わり                                                                                                            |
+| Pause                               |  22 | コンテナ状態がPAUSEに切り替わり                                                                                                           |
+| Waiting                             |  21 | コンテナ状態がWAITINGに切り替わり                                                                                                         |
+| <span class='normal'>Normal</span>  |  10 | コンテナ状態がNormalに切り替わり                                                                                                          |
 
-WhaTapイベント中には、「イベントの状態が解決したら、追加通知」を設定したイベントがあります。内部的に 2つのタイプのイベントを次のように区別します。
+WhaTapイベント中は、「イベントの状態が解決時の追加通知」が設定されています。内部的に イベントを次のように区別します。
 
 -   状態解決を追跡しないイベント：`stateless`イベント
--   状態解決時に追加通知を設定したイベント：`stateful`イベント
+-   サーバーステータスの解決時に追加の通知を設定するイベント：`stateful`イベント
 
-コンテナで発生した`stateless`、`stateful`イベントは、`EventConState`状態を決定するうえで次のように使用します。 
+コンテナで発生した`stateless`、`stateful`イベントは、`EventConState`状態を判別する上で次のように使用します。 
 
--   `stateless`イベント：コンテナで発生した直近1分以内の`stateless`イベントを`EventConState`状態に反映
--   `stateful`イベント：発生時点から終了時点までの`stateful`イベントを`EventConState`状態に反映
+-   `stateless`イベント：コンテナで発生した直近の1分間の`stateless`イベントを`EventConState`状態に反映します。
+-   `stateful`イベント：発生から終了までの`stateful`イベントを`EventConState`状態に反映します。

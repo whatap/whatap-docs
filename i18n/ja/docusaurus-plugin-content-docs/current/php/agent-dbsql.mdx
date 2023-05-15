@@ -11,7 +11,7 @@ tags:
 ---
 
 -   **whatap.trace_sql_normalize_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
+      デフォルト値`true`<br/>
       SQL文のリテラル部分を抽出してSQL文を正規化する機能を活性化します。リテラル部分は"#"と表記されます。
 
 -   **whatap.profile_sql_resource_enabled**<span class='type'>Boolean</span><br/>
@@ -19,73 +19,73 @@ tags:
       トレースでSQLが収集されるとき、そのステップで使用したCPUとメモリの使用量を追跡します。
 
 -   **whatap.profile_sql_param_enabled**<span class='type'>Boolean</span><br/>
-        デフォルト値「false」<br/>
+        デフォルト値`false`<br/>
         トレース履歴にSQLパラメータ情報を記録したいときに使用します。パラメータは、別途のセキュリティキーを入力しないと照会できません。
     :::note
     セキュリティキーは、WASサーバーの_/usr/whatap/php/paramkey.txt_ファイル内に6桁で指定します。 _paramkey.txt_ファイルが存在しない場合、ランダム値で自動生成されます。
     :::
 
 -   **whatap.profile_sql_comment_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
-      収集するSQL文のコメントを削除します。「false」の場合、コメントを除いたSQL文を収集します。設定により、コメントを含めたり削除したりできます。
+      デフォルト値`false`<br/>
+      収集するSQL文のコメントを削除します。`false`の場合、コメントを除いたSQL文を収集します。設定により、コメントを含めたり削除したりできます。
 
 -   **whatap.profile_db_connection_map_size**<span class='type'>Int</span><br/>
-        デフォルト値「20」<br/>
+        デフォルト値`20`<br/>
         同時に接続が維持されるDB Connection情報を最大に保存できるサイズです。超過するDB Connection接続時には、古い情報から削除されます。 
     {@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.profile_mysql_return_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、Mysqlライブラリ関数の結果が「false」のときにエラーと表記する機能を活性化します。「whatap.profile_mysql_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`true`の場合、Mysqlライブラリ関数の結果が`false`のときにエラーと表記する機能を活性化します。`whatap.profile_mysql_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_mysql_error_ignore_empty**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 「whatap.profile_mysql_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`false`の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 `whatap.profile_mysql_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_mysqli_return_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、Mysqliライブラリ関数の結果が「false」のときにエラーと表記する機能を活性化します。
+      デフォルト値`true`<br/>
+      値が`true`の場合、Mysqliライブラリ関数の結果が`false`のときにエラーと表記する機能を活性化します。
 
 -   **whatap.profile_mysqli_error_info_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、Mysqliライブラリ関数の結果値が「false」のときにエラーメッセージ情報を収集する機能を活性化します。「whatap.profile_mysqli_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`true`の場合、Mysqliライブラリ関数の結果値が`false`のときにエラーメッセージ情報を収集する機能を活性化します。`whatap.profile_mysqli_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_mysqli_error_ignore_empty**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 「whatap.profile_mysqli_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`false`の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 `whatap.profile_mysqli_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_pdo_return_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、pdoライブラリ関数の結果が「false」のときにエラーと表記する機能を活性化します。
+      デフォルト値`true`<br/>
+      値が`true`の場合、pdoライブラリ関数の結果が`false`のときにエラーと表記する機能を活性化します。
 
 -   **whatap.profile_pdo_error_info_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、Mysqlライブラリ関数の結果値が「false」のときにエラーメッセージ情報を収集する機能を活性化します。「whatap.profile_pdo_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`true`の場合、Mysqlライブラリ関数の結果値が`false`のときにエラーメッセージ情報を収集する機能を活性化します。`whatap.profile_pdo_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_pdo_error_ignore_empty**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 「whatap.profile_pdo_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`false`の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。`whatap.profile_pdo_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_pdo_return_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、pdoライブラリ関数の結果が「false」のときにエラーと表記する機能を活性化します。
+      デフォルト値`true`<br/>
+      値が`true`の場合、pdoライブラリ関数の結果が`false`のときにエラーと表記する機能を活性化します。
 
 -   **whatap.profile_pgsql_error_info_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、pgsql（Posgressql）ライブラリ関数の結果値が「false」のときにエラーメッセージ情報を収集する機能を活性化します。「whatap.profile_pgsql_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`true`の場合、pgsql（Posgressql）ライブラリ関数の結果値が`false`のときにエラーメッセージ情報を収集する機能を活性化します。`whatap.profile_pgsql_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_pgsql_error_ignore_empty**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 「whatap.profile_pgsql_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`false`の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 `whatap.profile_pgsql_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **wwhatap.profile_oci8_return_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、oci8（Oracle）ライブラリ関数の結果がFalseのときにエラーと表記する機能を活性化します。
+      デフォルト値`true`<br/>
+      値が`true`の場合、oci8（Oracle）ライブラリ関数の結果がFalseのときにエラーと表記する機能を活性化します。
 
 -   **whatap.profile_oci8_error_info_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「true」の場合、Mysqlライブラリ関数の結果値が「false」のときにエラーメッセージ情報を収集する機能を活性化します。「whatap.profile_pdo_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`true`の場合、Mysqlライブラリ関数の結果値が`false`のときにエラーメッセージ情報を収集する機能を活性化します。`whatap.profile_pdo_return_enabled`の設定が`false`の場合は適用されません。
 
 -   **whatap.profile_pdo_error_ignore_empty**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。 「whatap.profile_pdo_return_enabled」の設定が「false」の場合は適用されません。
+      デフォルト値`true`<br/>
+      値が`false`の場合、エラーコードまたはエラーメッセージの内容がない場合は正常結果として表記します。`whatap.profile_pdo_return_enabled`の設定が`false`の場合は適用されません。

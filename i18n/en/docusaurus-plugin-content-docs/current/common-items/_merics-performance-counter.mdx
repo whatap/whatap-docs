@@ -39,10 +39,10 @@ The WhaTap agent provides various options to identify users.
 
 Depending on the counting method, it is used differently. Real-time users are measured to see how many users are using the system. Daily Active User is a measure for business management on how many users are interested in the service for a day.
 
--   **Real-time User**<br/>
+-   **Real-time User**\
       The number of users is counted in the last 5 minutes. Users are counted by shifting every 5 seconds. The numbers counted on each server are merged through the HyperLogLog algorithm.
 
--   **Daily Active User** (**DAU**)<br/>
+-   **Daily Active User** (**DAU**)\
       The users who accessed the system for a day are counted. The number of users logged in for 24 hours is calculated through HyperLogLog.
 
 :::tip
@@ -87,7 +87,7 @@ Performance metrics for transactions include the number of SQLs or outbound call
 
 It counts the server resources or resource uses inside the node processes.
 
----
+* * *
 
 -   **CPU** (sys, usr, wait, steal, irq, cores)<br/>
       CPU usage %. The data is collected for each type. Steal is meaningful only in the virtual environment. The number of CPU cores is also collected.
@@ -127,7 +127,7 @@ It counts the server resources or resource uses inside the node processes.
         maxThreads="50" minSpareThreads="2" maxQueueSize="78"/>
     ```
 
----
+* * *
 
 ### DB connection pool counter
 

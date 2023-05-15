@@ -24,9 +24,9 @@ WhaTap AmazonECSモニタリングはMETA APIおよびCgroupディレクトリ�
 
 :::note
 
--   インストールに使用されるWhaTapイメージ（whatap/ecs_mon）をダウンロードし、レジストリにユーザー登録してから使用することをお勧めします。
+-   インストールに使用されるWhaTapイメージ(_whatap/ecs_mon_)をダウンロードし、レジストリにユーザー登録してから使用することをお勧めします。
 -   WhaTapサーバーにデータを転送するためには、**6600**番ポートが開いている必要があります。
-:::
+    :::
 
 ## モニタリング対象
 
@@ -57,7 +57,7 @@ Amazon ECS launch typesについての詳しい説明は[次の文書](https://d
 
 1.  プロジェクトを作成してから、**_チェックリスト_**を確認します。以降、**_管理_** > **_エージェントのインストール_**のインストール案内セクションに移動してください。 
 2.  ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2 Launch Type_**を選択してください。
-3.  次のスクリプトを実行して、DAEMONタイプのTaskを作成してください。 「CLUSTER」、「REGION」を追加し、「ACCESSKEY」および「WHATAP_HOST」を設定して収集サーバーと通信できるようにします。
+3.  次のスクリプトを実行して、DAEMONタイプのTaskを作成してください。 `CLUSTER`、`REGION`を追加し、`ACCESSKEY`および`WHATAP_HOST`を設定して収集サーバーと通信できるようにします。
     ```bash title='Linux'
     #!/usr/bin/env bash
     export ACCESSKEY=
@@ -118,10 +118,10 @@ Amazon ECS launch typesについての詳しい説明は[次の文書](https://d
     ```
 
 -   実行するために必要な項目は次のとおりです。
-    -   「ACCESSKEY」（WhaTap プロジェクトAccess Key）
-    -   「WHATAP_HOST」（WhaTap収集リージョンのIP）
-    -   「REGION」（AWS Region）
-    -   「CLUSTER」（ECS Cluster）
+    -   `ACCESSKEY`（WhaTap プロジェクトAccess Key）
+    -   `WHATAP_HOST`（WhaTap収集リージョンのIP）
+    -   `REGION`（AWS Region）
+    -   `CLUSTER`（ECS Cluster）
 
 ### Fargate Launch Type
 
@@ -133,16 +133,16 @@ Amazon ECS launch typesについての詳しい説明は[次の文書](https://d
     WhaTap TaskがECSサービスを照会し、サービスの状態をリアルタイムで収集するとき必要です。
     :::
 -   実行するために必要な項目は次のとおりです。
-    -   「ACCESSKEY」（WhaTap プロジェクトAccess Key）
-    -   「WHATAP_HOST」（WhaTap収集リージョンのIP、複数のIPは`/`で接続）
-    -   「REGION」（AWS Region）
-    -   「PROFILE」（ECS Profile）
-    -   「CLUSTER」（ECS Cluster）
-    -   「CLUSTER_CONFIG」（ECS Cluster Config）
-    -   「TASK_EXECUTION_ROLE」 （WhaTapエージェントTask ECS Taskの実行ロール）
-    -   「SUBNET_1」（WhaTapエージェントTask SUBNET#1）
-    -   「SUBNET_2」（WhaTapエージェントTask SUBNET#2）
-    -   「SGGRP」（WhaTapエージェントTask Security Group）
+    -   `ACCESSKEY`（WhaTap プロジェクトAccess Key）
+    -   `WHATAP_HOST`（WhaTap収集リージョンのIP、複数のIPは`/`で接続）
+    -   `REGION`（AWS Region）
+    -   `PROFILE`（ECS Profile）
+    -   `CLUSTER`（ECS Cluster）
+    -   `CLUSTER_CONFIG`（ECS Cluster Config）
+    -   `TASK_EXECUTION_ROLE`（WhaTapエージェントTask ECS Taskの実行ロール）
+    -   `SUBNET_1`（WhaTapエージェントTask SUBNET#1）
+    -   `SUBNET_2`（WhaTapエージェントTask SUBNET#2）
+    -   `SGGRP`（WhaTapエージェントTask Security Group）
 -   次の例を参照してください。
     ```bash title='Linux'
     #!/usr/bin/env bash
@@ -239,7 +239,7 @@ Amazon ECS launch typesについての詳しい説明は[次の文書](https://d
         --cluster-config $CLUSTER_CONFIG \
         --ecs-profile $PROFILE --region $REGION
     ```
-4.  次のようにエンドユーザーTaskにWhaTap Sidecarエージェントを配布してください。 「ACCESSKEY」および「WHATAP_HOST」を環境変数として追加し、収集サーバーと通信できるようにします。
+4.  次のようにエンドユーザーTaskにWhaTap Sidecarエージェントを配布してください。 `ACCESSKEY`および`WHATAP_HOST`を環境変数として追加し、収集サーバーと通信できるようにします。
     ```bash title='Linux'
     version: '3'
     services:

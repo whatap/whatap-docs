@@ -25,11 +25,15 @@
 -   **query_string_urls**<span class='type'>String</span><br/>
       Register the URLs to collect query strings in transactions. To register multiple items, comma (,) is used as the delimiter.  
 
--   **hook_method_patterns**<span class='type'>String</span><br/>
-        Use this when measuring the response time of a specific method. Use the values in the `[MODULE_NAME]:[CLASS_NAME].[FUNCTION_NAME]` or `[MODULE_NAME]:[FUNCTION_NAME]` format. Multiple method patterns can be set using comma (,) as the delimiter. All classes for a module or all modules for a class can be traced using asterisk (\*). 
-    :::note
-    Because tracing all modules may incur overhead, it is recommended to use accurate module and method names if possible.
-    :::
+-   **hook_method_patterns**<span class='type'>String</span>
+
+      Use this when measuring the response time of a specific method. Use the values in the `[MODULE_NAME]:[CLASS_NAME].[FUNCTION_NAME]` or `[MODULE_NAME]:[FUNCTION_NAME]` format. Multiple method patterns can be set using comma (,) as the delimiter. All classes for a module or all modules for a class can be traced using asterisk (\*).
+
+      :::note
+
+      Because tracing all modules may incur overhead, it is recommended to use accurate module and method names if possible.
+      
+      :::
 
 -   **trace_error_callstack_depth**<span class='type'>Int</span><br/>
       Default `50`<br/>

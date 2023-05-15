@@ -45,40 +45,40 @@ func main() {
 
 #### 設定
 
-`grpc_profile_enabled`<br/>
-#Default : true#<br/>
+`grpc_profile_enabled`\
+#Default : true#\
 #Type : boolean# 
 
 grpc情報の収集有無を設定します。 
 
-`grpc_profile_stream_client_enabled`<br/>
-#Default : true#<br/>
+`grpc_profile_stream_client_enabled`\
+#Default : true#\
 #Type : boolean#  
 
 client stream method情報の収集有無を設定します。
-「false」：stream method情報を収集しません。 
+`false`：stream method情報を収集しません。 
 
-`grpc_profile_stream_server_enabled`<br/>
-#Default : true#<br/>
+`grpc_profile_stream_server_enabled`\
+#Default : true#\
 #Type : boolean#  
 
 server stream method情報の収集有無を設定します。
-「false」：stream method情報を収集しません。 
+`false`：stream method情報を収集しません。 
 
-`grpc_profile_ignore_method`<br/>
-#Default : agent#<br/>
+`grpc_profile_ignore_method`\
+#Default : agent#\
 #Type : String# 
 
 指定されたメソッドを収集しません。複数指定の場合はコンマ（,）で区切ります。
 
-`grpc_profile_stream_method`<br/>
-#Default : "" #<br/>
+`grpc_profile_stream_method`\
+#Default : "" #\
 #Type : String# 
 
 指定されたstream methodを別のトランザクションとして構成します。複数指定の場合はコンマ（,）で区切ります。長時間続くstream接続に対して、methodそれぞれの呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。 
 
-`grpc_profile_stream_identify`<br/>
-#Default : false#<br/>
+`grpc_profile_stream_identify`\
+#Default : false#\
 #Type : boolean#  
 
 Stream full methodをトランザクション名で収集し、同じfull methodに対してclient、serverを区別できる接頭辞を追加します。（_/Stream Client/[full method]_、_/Stream Server/[full method]_）

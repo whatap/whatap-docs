@@ -11,9 +11,9 @@ tags:
 import TR from '@site/src/components/TR';
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。 モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。 Role方式認証で安全かつ便利に使用できます。 
+WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Role方式認証で安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}  
+{@include: ../getting-started/_create-project-cloud.mdx}
 
 ## チェックリスト
 
@@ -43,7 +43,7 @@ WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリッ�
 3.  リージョン、メトリクス、スタットなどを選択してください。
 
 :::note
-インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。 インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
+インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
 :::
 
 <!-- 
@@ -74,7 +74,7 @@ Amazon CloudWatch 인증 방법은 다음 두 가지 방법 중 하나를 선택
 
 ### 認証情報入力
 
-Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)が直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。 Role Assumeはアクセスキーの発行が不要なため、安全で便利です。
+Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)が直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。Role Assumeはアクセスキーの発行が不要なため、安全で便利です。
 
 :::note
 Roleを利用した設定をお勧めします。 Access Keyの活用は、既存のAccess Keyユーザーのみ可能です。
@@ -86,12 +86,12 @@ Roleを利用した設定をお勧めします。 Access Keyの活用は、既�
 
 1.  AWS Management Consoleにログインしてから、IAMコンソールを開きます。
 2.  コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。
-3.  「Select type of trusted entity」(信頼されたエンティティタイプ選択)から「Another AWS account」を選択してください。
-4.  Account IDにWhaTapアカウントID**911937781722**を入力してください。 ReadOnly Accessを選択して適用してください。
+3.  Select type of trusted entity(信頼されたエンティティタイプ選択)から Another AWS accountを選択してください。
+4.  Account IDにWhaTapアカウントID**911937781722**を入力してください。ReadOnly Accessを選択して適用してください。
 5.  Roleの名前と説明を入力します。「Create Role」ボタンをクリックしてSummary画面に切り替えてください。
-6.  「Maximum session duration」項目の「Edit」をクリックして「12時間」に変更して保存してください。 
+6.  Maximum session duration項目の「Edit」ボタンをクリックして12時間に変更して保存してください。 
 7.  **Role ARN**項目をコピーしてください。
-8.  WhaTap***管理*** > ***エージェントのインストール*** ページに戻り、***Role*** ***ARN***ウィンドウにコピーした**RoleARN**を貼り付け、***確認***ボタンをクリックしてください。
+8.  WhaTap**_管理_** > **_エージェントのインストール_** ページに戻り、**_Role_** **_ARN_**ウィンドウにコピーした**RoleARN**を貼り付け、**_確認_**ボタンをクリックしてください。
 
 ### ネームスペースおよび収集サイクルの選択
 

@@ -13,9 +13,9 @@ Release date: 2022-01-04
 
 ### The database/SQL library is supported.
 
-database/sql 패키지의 `sql.Open` 함수 대신 `whatapsql.OpenContext` 함수를 사용합니다. `PrepareContext`, `QueryContext`, `ExecContext` 등 context를 전달하는 함수를 사용하기를 권장합니다. 
+Use the `whatapsql.OpenContext` function instead of the `sql.Open` function from the database/sql package. It is recommended to use the functions that pass the context, such as `PrepareContext`, `QueryContext`, and `ExecContext`. 
 
-전달하는 context는 `trace.Start()`를 통해서 whatap TraceCtx 정보가 있어야합니다.
+The context to be delivered must have the whatap TraceCtx data through `trace.Start()`.
 
 ```go title='설치 안내'
 
@@ -29,11 +29,11 @@ func main() {
   trace.Init(config)
   defer trace.Shutdown()
   
-  // whataphttp.Func 내부에서 whatap TraceCtx를 생성합니다. 
+  // Create the whatap TraceCtx inside whataphttp.Func. 
   http.HandleFunc("/query", whataphttp.Func(func(w http.ResponseWriter, r *http.Request) {
     ctx := r.Context()
     
-    // Use WhaTap Driver. whatap의 TraceCtx가 있는 context 를 전달합니다. 
+    // Use the WhaTap driver. Deliver the context where the whatap's TraceCtx exists. 
     db, err := whatapsql.OpenContext(ctx, "mysql", dataSource)
     if err != nil {
       fmt.Println("Error whatapsql.Open ", err)
@@ -44,7 +44,7 @@ func main() {
     ... 
     query := "select id, subject from tbl_faq limit 10"
     
-    // whatap TraceCtx가 있는 context 를 전달합니다. 
+    // Deliver the context that has the whatap TraceCtx. 
     if rows, err := db.QueryContext(ctx, query); err == nil {
       ...
     }
@@ -53,12 +53,12 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/database/sql)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/database/sql)
 
 #### Configuration
 
-`go.sql_profile_enabled`<br/>
-#Default : true#<br/>
+`go.sql_profile_enabled`\
+#Default : true#\
 #Type : boolean# 
 
 It sets whether or not to collect the database/SQL data.
@@ -91,7 +91,7 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/gin-gonic/gin)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/gin-gonic/gin)
 
 ### Supporting the github.com/gorilla/mux library
 
@@ -123,7 +123,7 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/gorilla/mux)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/gorilla/mux)
 
 ### Supporting the github.com/labstack/echo library
 
@@ -153,4 +153,4 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/labstack/echo)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/labstack/echo)

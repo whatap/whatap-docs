@@ -10,7 +10,7 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Telegraf 에이전트 관리를 위해 _whatap.conf_ 파일을 통해 설정할 수 있는 추가 옵션에 대해 알아봅니다.
+Let's learn about additional options you can set through the _whatap.conf_ file to manage the Telegraf agents.
 
 ## Update
 
@@ -18,14 +18,19 @@ Telegraf 에이전트 관리를 위해 _whatap.conf_ 파일을 통해 설정할 
 <TabItem value="rc" label="Red Hat/CentOS">
 
 1.  Delete cache data for updating package information.
+
     ```bash title=SH
     $ yum clean all
     ```
+
 2.  Update the whatap-telegraf package.
+
     ```bash title=SH
     $ yum update whatap-telegraf
     ```
+
 3.  To install a version, specify the version data during installation.
+
     ```bash title=SH
     $ sudo yum install whatap-telegraf-{version}
     ```
@@ -34,14 +39,19 @@ Telegraf 에이전트 관리를 위해 _whatap.conf_ 파일을 통해 설정할 
 <TabItem value="du" label="Debian/Ubuntu">
 
 1.  Delete cache data for updating package information.
+
     ```bash title=SH
     $ sudo apt-get update
     ```
+
 2.  Update the whatap-telegraf package.
+
     ```bash title=SH
     $ sudo apt-get install --only-upgrade whatap-telegraf
     ```
+
 3.  To install a version, specify the version data during installation.
+
     ```bash title=SH
     $ sudo apt-get install whatap-telegraf={version}
     ```
@@ -50,11 +60,14 @@ Telegraf 에이전트 관리를 위해 _whatap.conf_ 파일을 통해 설정할 
 <TabItem value="fb" label="FreeBSD">
 
 1.  Install the package again.
+
     ```bash title='SH'
     # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
     # pkg install whatap-telegraf-0.0.4.txz
     ```
-2.  특정 버전을 설치하기 위해서는 `{version}`에 버전 정보를 입력해 설치하세요.
+
+2.  To install a version, `{version}`enter the version data before installation.
+
     ```bash title='SH'
     # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-{version}.txz
     # pkg install whatap-telegraf-{version}.txz
@@ -117,4 +130,4 @@ $ service whatap_telegraf stop
     </TabItem>
       </Tabs>
 
--   필요한 경우 _/usr/whatap/telegraf_ 하위의 로그 파일 및 기타 파일을 삭제하세요.
+-   If necessary, delete the log files and others under _/usr/whatap/telegraf_.

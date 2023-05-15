@@ -1,91 +1,91 @@
 ---
 id: browser
-title: 브라우저 (Browser) 모니터링
-description: 브라우저 모니터링(Browser Monitoring)은 브라우저 애플리케이션의 페이지 로드 시간, 서버 응답 시간, 리소스 로딩 시간, 브라우저 에러 등 다양한 성능 지표를 수집하여 분석합니다.
+title: Browser Monitoring
+description: Browser Monitoring collects and analyzes various performance metrics such as page load time, server response time, resource loading time, and browser errors for browser applications.
 tags:
   - Browser Monitoring
 ---
 
-**브라우저 모니터링(Browser Monitoring)**은 브라우저 애플리케이션의 페이지 로드 시간, 서버 응답 시간, 리소스 로딩 시간, 브라우저 에러 등 다양한 성능 지표를 수집하여 분석합니다. 수집, 분석한 데이터를 통해 브라우저 애플리케이션의 병목 현상이나 성능 이슈를 파악하고 최적화할 수 있습니다. 또한 브라우저별로 성능 차이를 파악할 수 있어 최상의 사용자 경험을 제공할 수 있는 데이터를 제공합니다.
+**Browser Monitoring** collects and analyzes various performance metrics such as page load time, server response time, resource loading time, and browser errors for browser applications. Through the collected and analyzed data, bottlenecks or performance issues for browser applications can be identified and optimized. It also provides insight into performance differences across browsers, providing you with the data to have the best user experience.
 
-## **브라우저 모니터링**, 왜 필요한가?
+## Why do you need **Browser Monitoring**?
 
--   **클라우드와 MSA 시대의 복잡한 서버환경에서 브라우저 애플리케이션의 응답 시간 최적화**
+-   **Optimizing the response time for browser applications in a complex server environment in the era of Cloud and MSA**
 
-    클라우드, MSA 등의 등장에 따라 서버 환경이 더욱 복잡해졌습니다. 이렇게 복잡해진 환경에서 개별 서버의 성능 지표만으로는 브라우저 애플리케이션의 응답 시간 지연 원인을 파악하기 어렵습니다. 이에 따라 서버와 클라이언트 간의 네트워크 상황과 브라우저의 로딩 시간을 포함한 요소를 고려해야 합니다. 또한 응답 시간에 영향을 미치는 브라우저의 요청 데이터 사이즈나 요청 주기 등 관련 요소들도 고려해야 합니다.
+    With the advent of Cloud and MSA, the server environment has become more complex. In this complex environment, it is difficult to determine the cause of a slow browser application response time based on the performance metrics of each individual server. Accordingly, the factors including the network status between the server and clients and the browser loading time must be taken into account. In addition, the related factors such as browser's request data size and request cycle that can affect the response time should be considered.
 
-    실 사용자의 응답 시간 및 사용자 경험 최적화를 위해 **브라우저 모니터링**은 필요합니다.
+    **Browser Monitoring** is required to optimize the response times and user experiences of real users.
 
--   **실 사용자 환경에서 발생하는 예측 불가능한 에러에 대한 빠른 대응**
+-   **Quick response to unpredictable errors that occur in real user environments**
 
-    개발, 수정, 배포가 빈번하게 발생하는 CI/CD 도입으로 실제 사용자에게 발생하는 에러를 배포 전 테스트만으로 예방하기 어렵습니다. 실 사용자가 웹 페이지를 이용하면서 발생하는 에러는 사용자의 디바이스나 브라우저 종류, 네트워크 상태 등에 따라 다양한 에러가 발생할 수 있습니다. 
+    Due to the introduction of CI/CD, where development, modification, and distribution are made frequently, it is difficult to prevent errors that occur to actual users by only pre-release testing. Various errors may occur depending on the user device, browser type, and network conditions while using web pages. 
 
-    **브라우저 모니터링**을 통해 실제 사용자에게 발생하는 에러를 모니터링하고 이를 예방하거나 최소화하는 기술적인 방법을 적용해야 합니다.
+    **Browser Monitoring** should monitor errors that occur to actual users and apply technical approaches to prevent or minimize them.
 
--   **다양한 브라우저와 디바이스에서 최적화된 사용자 경험을 제공하기 위한 통계 데이터 제공**
+-   **Provision of statistical data to provide optimized user experiences in various browsers and devices**
 
-    브라우저의 종류와 디바이스가 다양해짐에 따라 실제 사용자들이 경험하는 에러를 모니터링해야 합니다. 예를 들어 특정 브라우저 또는 디바이스에서만 발생하는 에러를 확인할 수 있습니다. 이를 통해 사용자 경험을 개선하고, 더 나은 서비스를 제공할 수 있습니다.
+    As browser types and devices become more diverse, it is required to monitor errors encountered by real users. For example, you can see the errors that occur only in a specific browser or device. This allows us to improve user experiences and provide better services.
 
--   **SPA 환경에서 브라우저 애플리케이션 성능 분석 및 최적화**
+-   **Analyzing and optimizing the browser application performance in the SPA environment**
 
-    웹 애플리케이션인 SPA(Single Page Application)에서는 주로 브라우저에서 웹 페이지를 구현합니다. 이전에는 웹 페이지의 모든 요소가 서버에서 렌더링되었지만, 이제는 브라우저에서 페이지를 렌더링하고 필요한 데이터만 서버에서 가져와 사용합니다. 이렇게 웹 애플리케이션이 복잡해지면서 서버만 관리한다고 해서 성능이 빠르거나 느리다는 것을 알 수 없습니다. 따라서 **브라우저 모니터링**을 통해 브라우저 애플리케이션의 문제를 찾고 최적화를 수행해야 합니다.
+    In a web application, Single Page Application (SPA), web pages have been implemented primarily in the browser. In the past, all elements of a web page were rendered on the server, but now the browser renders pages and fetches only the required data from the server for operation. With all this complexity of web applications, you cannot tell the application performance status only by managing the server. Therefore, **Browser Monitoring** should be used to find problems in browser applications and perform optimization.
 
--   **1st Party와 3rd Party 리소스의 종합적 응답 시간 측정 및 최적화를 통한 사용자 체감 성능 개선**
+-   **Improving the user experience performance through the comprehensive response time measurement and optimization of 1st party and 3rd party resources**
 
-    웹 서비스의 실 사용자 체감 성능은 사내에서 직접 운영하는 1st party와 외부에서 운영하는 3rd party의 응답 시간을 종합적으로 측정해야 합니다. 3rd party 리소스의 응답 시간 지연만으로 전체 응답 시간이 지연될 수 있습니다.
+    The performance experienced by actual users of any web service should be comprehensively measured with the response times of the 1st party resources operated in house and the 3rd party resources operated externally. The overall response time may be delayed only by the response time delay of the 3rd party resources.
 
 ## Key features
 
-**브라우저 모니터링**은 최종 사용자 입장에서 웹사이트 이용의 문제 여부, 최종 사용자의 사용성, 최종 사용자의 환경을 모니터링합니다. It provides the following key features.
+**Browser Monitoring** monitors the website operation problems, end-user usability, and end-user environment from the end user's point of view. It provides the following key features.
 
-### 페이지 로드 성능 정보 제공
+### Provision of the page load performance data
 
 ![Page load timeline](/img/browser-pageload-timeline.png)
 
 ![Page load details](/img/browser-pageload-details.png)
 
-브라우저가 웹 페이지를 얼마나 빠르게 로드하는지를 모니터링합니다. 사용자들은 빠르게 로드되는 웹 페이지를 선호하므로 페이지 로드 성능 정보를 통해 개발자들은 웹 페이지의 성능을 최적화할 수 있습니다. 페이지 로드 성능 정보는 브라우저가 페이지를 로드하는 데 걸린 시간, 페이지 요소의 로드 시간, 서버 응답 시간 등을 제공합니다. 이 정보를 통해 웹 페이지의 성능을 개선할 수 있는 방안을 찾을 수 있습니다.
+It monitors how quickly the browser loads web pages. Users prefer the web pages that are loaded quickly. Accordingly, the page load performance data allows developers to optimize the web page performance. The page load performance data provides information such as how long it took the browser to load pages, how long the page elements were loaded, and the server response time. This information can help you find the way to improve the performance of the web pages.
 
-### AJAX 성능 정보 제공
+### Provision of AJAX performance data
 
 ![AJAX hitmap](/img/browser-ajax-hitmap.png)
 
-AJAX를 통해 서버와 데이터를 주고 받을 때의 성능 정보를 모니터링합니다. AJAX는 웹 페이지가 서버와 비동기적으로 데이터를 교환하여, 페이지를 새로고침하지 않고도 브라우저 애플리케이션을 업데이트할 수 있게 해주는 기술입니다. **브라우저 모니터링**은 AJAX 요청 및 응답 시간 측정, 서버 응답 시간 분석, 네트워크 대기 시간 등 다양한 데이터를 수집합니다. 수집 데이터는 브라우저 애플리케이션의 성능 향상 및 사용자 경험을 개선하는데 유용합니다.
+It monitors the performance data when exchanging data with the server via AJAX. AJAX is a technology that allows the web pages to exchange data asynchronously with the server, allowing browser applications to be updated without refreshing the pages. **Browser Monitoring** collects various data, including AJAX requests and response times, server response time analysis, and network latency. The collected data is useful to improve the performance of browser applications and improve the user experience.
 
-### 웹 페이지 리소스 정보 제공
+### Provision of the web page resource data
 
 ![Web page resource list](/img/browser-page-resource-list.png)
 
-브라우저가 서버로부터 다운로드하는 리소스는 페이지 로드 성능에 큰 영향을 끼칩니다. 리소스 목록에서는 로딩 속도가 느리거나 파일 사이즈가 큰 리소스를 빠르게 파악할 수 있습니다. 이러한 정보를 사용해 웹 페이지의 성능을 향상시키고 사용자 경험을 개선하는데 활용할 수 있습니다.
+The resources downloaded from the server by the browser significantly affect the page loading performance. The resource list lets you quickly identify the resources that are slow to load or have large files. We can use this information to improve the performance of web pages and the user experience.
 
-### 브라우저 에러 정보 제공
+### Provision of the browser error information
 
 ![Browser error information](/img/browser-error-info.png)
 
-사용자가 웹사이트를 이용하는 과정에서 발생하는 브라우저 에러 정보를 수집합니다. 이 정보를 통해 개발자는 사용자가 웹사이트를 이용하면서 겪는 문제를 파악하고 신속 대응할 수 있습니다. 사용자 경험을 개선하고 웹사이트의 안정성을 높일 수 있습니다.
+It collects browser error data that occurs while using the website. This information enables developers to identify and respond quickly to any problems while using the website. You can improve the user experience and increase the stability of the website.
 
-### 코어 웹 바이탈 정보 제공
+### Provision of the core web vitals information
 
 ![Core web vitals](/img/rum-core-web-vitals.png)
 
-코어 웹 바이탈은 구글에서 정의한 웹 페이지의 성능에 대한 중요한 지표로 페이지 로드 시간과 응답 시간, 렌더링 시간, 사용자 상호 작용 시간 등이 있습니다. 이러한 정보를 수집하고 분석하여 웹 사이트가 상위 노출하는 데 도움이 될 수 있습니다.
+Core Web Vitals is an important metric for the web page performance, defined by Google, including page load time, response time, rendering time, and user interaction time. By collecting and analyzing this data, we can help the website achieve higher exposure.
 
 ### User access environment analysis
 
 ![User environments](/img/browser-user-env.png)
 
-사용자의 디바이스 정보 및 브라우저 정보, 운영체제 정보, 지역 정보 등 다양한 사용자 접속 환경을 분석합니다.
+It analyzes various user access environments such as user device information, browser information, operating system information, and regional information.
 
-특정 디바이스에서 문제가 발생하는 경우 해당 디바이스의 정보를 분석하여 문제를 해결할 수 있습니다. 또한 특정 지역에서 웹 애플리케이션이 느리게 동작하는 경우 해당 지역의 정보를 파악하여 최적화를 수행할 수 있습니다. 사용자들이 사용하는 브라우저나 운영체제 등을 파악하여 웹 애플리케이션의 호환성 문제를 해결하는데 필요한 정보를 제공할 수 있습니다.
+If a problem occurs on a specific device, you can resolve the problem by analyzing information from the device. In addition, if the web application runs slowly in a specific region, you can optimize it by identifying information in the region. By identifying the browser or operating system, we can provide the data needed to resolve web application compatibility issues.
 
-## **브라우저 모니터링** 시작하기
+## Starting the **browser monitoring**
 
-다음의 단계를 따라 **브라우저 모니터링**을 시작할 수 있습니다.
+You can start **browser monitoring** by following the steps below.
 
-1.  와탭 계정이 없다면 [회원 가입](https://www.whatap.io/ko/signup/)을 진행하세요.
+1.  If you have no WhaTap account, proceed with [Sign Up](https://www.whatap.io/ko/signup/).
 
 2.  Check the browser compatibility and preliminary settings.
 
-3.  [와탭 모니터링 서비스](https://service.whatap.io)로 이동해 브라우저 프로젝트를 생성하세요.
+3.  Go to [WhaTap Monitoring Service](https://service.whatap.io) and then create the browser project.
 
 4.  Apply the browser agent.

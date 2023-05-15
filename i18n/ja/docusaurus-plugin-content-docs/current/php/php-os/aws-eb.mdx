@@ -7,15 +7,15 @@ tags:
   - PHP
 ---
 
-_Elastic Beanstalk Configuration files_（_.ebextensions_）を通じてインストールします。 
+_Elastic Beanstalk Configuration files_(_.ebextensions_)を使用してインストールします。 
 
-_.ebextensions_ディレクトリに以下の_config_ファイルを追加した後、新規バージョンをデプロイしてください。 そして「commands」コマンドを実行してください。
+_.ebextensions_ディレクトリの配下の_config_ファイルを追加し、新しいバージョンをデプロイします。次に、`commands`コマンドを実行します。
 
 1.  WhaTap **リポジトリ**を登録します。 
 
-2.  **パッケージ**をインストールしてください。
+2.  **パッケージ**をインストールします。
 
-3.  「install.sh」**設定スクリプト**を通じて**PHP拡張モジュール**を設定してください。
+3.  `install.sh`**設定スクリプト**で、**PHP拡張モジュール**を設定します。
 
 ```java title=SH
 $ vi 01-WhaTap_install_repository_php.config
@@ -49,8 +49,8 @@ commands:
 
   :::note
 
-  **アクセスキー**と**サーバーIP**は***プロジェクト管理*** > ***エージェントインストール***ページで発行され、確認することができます。
+  **アクセスキー**と**サーバーIP**は**_プロジェクト管理_** > **_エージェントのインストール_**ページで発行および表示できます。
 
   :::
 
-1.  Beanstalkに新規バージョンをデプロイしてください。PHPモニタリングエージェントがインストールされます。
+1.  Beanstalkに新しいバージョンをデプロイします。PHPモニタリングエージェントがインストールされます。

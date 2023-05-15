@@ -11,230 +11,230 @@ import UI from '@site/src/components/UItext';
 
 ## Hotfix: 2023-03-27
 
-### `공통`
+### `Common`
 
-<p><Status>Fixed</Status> MXQL 데이터 조회 후 CSV가 다운로드되지 않는 문제 수정</p>
+<p><Status>Fixed</Status> Fixed the problem where CSV is not downloaded after MXQL data query.</p>
 
 ## Hotfix: 2023-03-20
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> &gt; <UI>컨테이너 맵</UI>에서 <UI>필터</UI> 옵션으로 <UI>포함</UI>을 선택하면 부분 일치하는 컨테이너가 표시되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> &gt; <UI>Container Map</UI>, fixed the problem where partial matched containers are not displayed when <UI>Include</UI> is selected as the <UI>Filter</UI> option.</p>
 
 ## Hotfix: 2023-03-14
 
-### `공통`
+### `Common`
 
--   <Status>Fixed</Status> <UI>관리</UI> &gt; <UI>정비 계획</UI> 메뉴에서 <UI>매월</UI> 탭을 클릭하면 화이트 아웃 발생 현상 수정
+-   <Status>Fixed</Status> In <UI>Management</UI> &gt; <UI>Maintenance Plan</UI>, fixed the problem where a whiteout occurs when the <UI>Monthly</UI> tab is clicked.
 
--   <Status>Fixed</Status> MXQL 쿼리 내 필드명에 특수 문자가 들어가면 MXQL 데이터 호출 시 발생하는 버그 수정을 위해 MXQL 쿼리 생성 로직 수정
+-   <Status>Fixed</Status> Modified the MXQL query generation logic to fix the bugs that occur when calling the MXQL data while special characters are used in the field names for MXQL queries.
 
 ## Hotfix: 2023-03-09
 
 ### `Container`
 
-<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 페이지 UI 및 내용 개선</p>
+<p><Status>Change</Status> Improved the UI and content in <UI>Management</UI> > <UI>Agent Installation</UI>.</p>
 
 ## Hotfix: 2023-02-23
 
-### `공통`
+### `Common`
 
 #### Flex Board
 
-<Status>Fixed</Status> <UI>서버 디스크 트리맵</UI> 위젯에서 올바르지 않은 URL 경로를 생성하는 버그 수정
+<Status>Fixed</Status> Fixed the bug where a wrong URL path is generated in the <UI>Server Disk Treemap</UI> widget.
 
 ### `URL`
 
-<Status>Fixed</Status> <UI>URL 목록</UI> 메뉴에서 <b>조회 권한</b>이 없는 사용자에게 엑셀 파일 <UI>가져오기</UI> 버튼을 감추도록 수정
+<Status>Fixed</Status> In <UI>URL List</UI>, modified to hide the Excel file <UI>import</UI> button to the users with no <b>View role</b>.
 
 ## Official Release: 2023-02-22
 
-### `공통`
+### `Common`
 
-#### 용어 변경
+#### Changing the terms
 
-<Status>Change</Status> <b>프로파일</b> 용어를 <b>트레이스</b>로 변경합니다.
+<Status>Change</Status> Changed the term from <b>profile</b> to <b>trace</b>.
 
 #### Flex Board
 
--   <Status>Change</Status> <UI>Log RPS Board</UI> 대시보드 템플릿 수정
+-   <Status>Change</Status> Modified the <UI>Log RPS Board</UI> dashboard template.
 
-    -   데이터 조회 기간의 기본값 변경: 실시간 30분 → 실시간 12시간
-    -   **_Log RPS trend_**, **_서버 상태_** 위젯의 레이아웃 높이 수정
-    -   **_4XX, 5XX Count_** 위젯의 보조 테이블 데이터 단위 설정
-    -   일부 위젯 데이터 호출 간격을 5초에서 1분으로 변경
+    -   Change of the default value in the data lookup period: real-time 30 minutes → real-time 12 hours
+    -   Modified the layout height of the **_Log RPS trend_** and **_server status_** widgets.
+    -   Setting the **_4XX, 5XX Count_** widget's auxiliary table data units
+    -   Changed the widget data call interval for some widgets from 5 seconds to 1 minute.
 
--   <Status>Feature</Status> <UI>액티브 트랜잭션 TopN</UI> 위젯 추가
+-   <Status>Feature</Status> Added the <UI>Active Transaction TopN</UI> widget.
 
--   <Status>Feature</Status> <UI>히트맵</UI> 위젯: 트랜잭션 트레이스 테이블의 <UI>URL</UI> 컬럼 항목에 <b>복사</b>(<img src='/img/ico-copy.svg' alt='복사 아이콘' />) 버튼 추가
+-   <Status>Feature</Status> <UI>Hitmap</UI> Widget: Added the <b>Copy</b>(<img src='/img/ico-copy.svg' alt='복사 아이콘' />) button in the <UI>URL</UI> column of the transaction trace table.
 
--   <Status>Feature</Status> <UI>홈 화면</UI> > <UI>Flex 보드</UI> 메뉴의 대시보드 목록에서 대시보드 공유(<img src='/img/ico-flexboard-share.svg' alt='공유 아이콘' />) 기능 추가
+-   <Status>Feature</Status> In the dashboard list under <UI>Home</UI> > <UI>Flex Board</UI>, added the Share Dashboard (<img src='/img/ico-flexboard-share.svg' alt='공유 아이콘' />) function.
 
 #### Analytics
 
--   <Status>Feature</Status> <UI>메트릭스 차트</UI> 메뉴의 위젯 상단에 시간 병합, 오브젝트 병합 방식 표시
+-   <Status>Feature</Status> At the top of the widget in the <UI>metrics chart</UI> menu, displayed the method to merge times and objects at the top of the widget.
 
--   <Status>Fixed</Status> <UI>사이트맵</UI> > <UI>분석</UI> > <UI>메트릭스 이상 탐지</UI> 메뉴에서 카테고리, 필드 선택 UI 버그로 인해 UI 로직 교체
+-   <Status>Fixed</Status> In <UI>Sitemap</UI> > <UI>Analysis</UI> > <UI>Metric Anomaly Detection</UI>, replaced the UI logic due to the UI bug upon selection of category and field.
 
--   <Status>Fixed</Status> <UI>큐브</UI> 메뉴에서 조회가 끝나지 않은 경우 <UI>시작일</UI>, <UI>관심 지표</UI>, 대시보드 탭을 변경할 수 없도록 수정
+-   <Status>Fixed</Status> Modified not to change the <UI>start date</UI>, <UI>metrics of interest</UI>, and dashboard tab, if query is not finished in <UI>CUBE</UI>.
 
 #### Log setting
 
--   <Status>Change</Status> <UI>카테고리별 데이터 유지기간</UI> 테이블에서 저장량 컬럼 삭제
+-   <Status>Change</Status> Deleted the storage column from the <UI>Data retention period by category</UI> table.
 
--   <Status>Feature</Status> <UI>카테고리별 데이터 유지기간</UI> 테이블에서 <UI>금일 로그수</UI> 컬럼 추가 및 컬럼 별 도움말 추가
+-   <Status>Feature</Status> In the <UI>Data retention period by category</UI> table, added the <UI>Daily Log Count</UI> column and helps for each column.
 
--   <Status>Feature</Status> <UI>로그 Parser 설정</UI> 섹션에서 상태 성공률 파서, 4xx, 5xx 파서 등록 시 동일한 카테고리에 파서를 중복 등록할 수 없도록 유효성 검사 추가
+-   <Status>Feature</Status> In the <UI>Log Parser Settings</UI> section, when registering the status success rate parser and the 4xx, 5xx parser, added validation so that the parser cannot be registered twice in the same category.
 
 #### Manages the account information
 
--   <Status>Feature</Status> <UI>계정 정보</UI> 메뉴에서 멀티팩터 인증 활성화 시 최종 확인을 위한 메시지 창 추가
+-   <Status>Feature</Status> In <UI>My Profile</UI>, added the message window for final confirmation when enabling the multi-factor authentication.
 
 #### Management
 
--   <Status>Fixed</Status> <UI>정비 계획</UI> 메뉴에서 등록한 정비 계획 항목을 삭제할 수 없는 버그 수정
+-   <Status>Fixed</Status> In <UI>Maintenance Plan</UI>, fixed the bug where any registered maintenance plan cannot be deleted.
 
--   **_관리_** > **_프로젝트 멤버_** 메뉴에서 다음의 기능을 추가합니다.
+-   In **_Management_** > **_Project Member_**, the following functions have been added.
 
-    -   <Status>Feature</Status> 프로젝트 멤버 관리성 향상을 위한 멤버의 소속(<UI>그룹</UI>/<UI>프로젝트</UI>) 유형 표시
-    -   <Status>Feature</Status> 멤버 삭제(<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) 버튼 비활성화 시 툴팁(삭제 불가능한 이유) 추가
+    -   <Status>Feature</Status> Added the function to display the member affiliation type (<UI>group</UI>/<UI>project</UI>) for improved project member management.
+    -   <Status>Feature</Status> Added the tooltip (deletion is impossible) when the member deletion (<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) button is disabled.
 
--   **_이용 내역_**, **_결제 관리_** 메뉴에서 다음의 기능을 수정합니다.
+-   In **_My Usage_** and **_Billing Management_**, the following functions have been modified.
 
-    <Status>Change</Status> <UI>청구서 미리보기</UI> / <UI>사용량</UI> 메뉴에서 로그 과금 기준 변경에 따른 로그 표시 단위 및 표현 단위 변경
+    <Status>Change</Status> In <UI>Preview Invoice</UI> and <UI>Usage</UI>, changed the log display and expression units according to the change in log charging policy.
 
-    -   로그 표시 단위 변경: LOGs ⇒ LOG UNITs
-    -   로그 표현 단위 변경: 매시간 카운트한 로그 라인 수에 대한 하루 평균값 표시로 변경
-    -   <UI>청구서 미리보기</UI> 메뉴에서 <UI>과금 집계량</UI> 컬럼의 로그 사용량 표시 변경
-    -   <UI>사용량</UI> 메뉴에서 사용량 상세의 미터링 요약 컬럼 변경
+    -   Change of the log display unit: LOGs ⇒ LOG UNITs
+    -   Change of the log expression unit: Changed to display the daily average instead of the log line counts per hour.
+    -   In <UI>Preview Invoice</UI>, changed to display the log usage in the <UI>Metered Units</UI> column.
+    -   In <UI>Usage</UI>, changed the metering summary column for usage details.
 
 #### My Usage
 
-**_청구서 미리보기_** 메뉴에서 다음의 기능을 추가합니다.
+In **_Preview Invoice_**, the following functions have been added.
 
--   <Status>Feature</Status> 프로젝트, 상품명 컬럼별 그룹핑 버튼 추가: 그룹핑한 데이터들의 시간 합, 비용 평균, 청구 비용 합 정보를 미리보기로 제공
+-   <Status>Feature</Status> Addition of grouping buttons for each project or product name column: Provides the previews for time sum, cost average, and billing cost sum.
 
--   <Status>Feature</Status> 청구서 테이블 위에 <UI>제품 종류</UI>, <UI>플랫폼</UI>, <UI>상품 통화</UI>, <UI>상품 단가</UI>, <UI>적용 환율</UI>, <UI>청구 통화</UI> 컬럼의 표시 여부를 선택할 수 있는 옵션 추가
+-   <Status>Feature</Status> In the invoice table, added the option to select whether or not to display the <UI>product type</UI>, <UI>platform</UI>, <UI>product currency</UI>, <UI>product price</UI>, <UI>exchange rate</UI>, and <UI>currency</UI> columns.
 
 ### `Application`
 
 #### Active Transaction
 
-<Status>Change</Status> 스레드 중지를 위해 시크릿키를 입력하는 창에서 입력값이 보이지 않도록 수정
+<Status>Change</Status> Modified to make the input value invisible in the secret key field to stop threading.
 
-#### 트랜잭션 상세
+#### Transaction Detail
 
-다음 메뉴 경로에서 추가 및 수정한 사항입니다.
+The items have been added and modified in the following menu path.
 
 :::note
 
--   **_대시보드_** > **_애플리케이션 대시보드_** > **_액티브 트랜잭션_** 위젯 오른쪽에 '![자세히 보기 아이콘](/img/right-arrow.svg)' 버튼 클릭 > 종료된 트랜잭션 항목 선택 > **_트랜잭션 보기_** 버튼 클릭
--   **_대시보드_** > **_애플리케이션 대시보드_** > **_히트맵_** 위젯 오른쪽에 '![자세히 보기 아이콘](/img/right-arrow.svg)' 버튼 클릭 > **_히트맵 트랜잭션_** 차트 드래그 > **_TX 트레이스_** 목록에서 항목 클릭
--   **_대시보드_** > **_트랜잭션 맵_** > **_트랜잭션_** 차트 드래그 > **_TX 트레이스_** 목록에서 가장 왼쪽의 ![자세히 보기 아이콘](/img/ico-detail-view.svg) 버튼 클릭
--   **_대시보드_** > **_액티브 트랜잭션_** > **_트랜잭션_** 탭에서 종료된 트랜잭션 컬럼 선택 > **_트랜잭션 보기_** 버튼 클릭
--   **_분석_** > **_히트맵_** > **_히트맵 트랙잭션_** 차트 드래그 > **_TX 트레이스_** 목록에서 항목 클릭
+-   Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > **_Active Transaction_** widget > select a finished transaction item > click **_Show Transaction_**.
+-   Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > drag the **_Hitmap Transaction_** chart > click a desired item from the **_TX Trace_** list.
+-   Drag the **_Dashboard_** > **_Transaction Map_** > **_Transaction_** chart > In the **_TX Trace_** list, click ![See details icon](/img/ico-detail-view.svg) on the upmost left.
+-   Select the finished transaction column on the **_Dashboard_** > **_Active Transaction_** > **_Transaction_** tab > Click **_Show Trace_**.
+-   Drag **_Analysis_** > **_Hitmap_** > **_Hitmap Transaction_** chart > Click a desired item in **_TX Trace_** list.
 
 :::
 
-수정 전<br/>
+Before modification<br/>
 ![](/img/release/apm-transaction-list-before.png)
 
-수정 후<br/>
+After modification<br/>
 ![](/img/release/apm-transaction-list-after-change.png)
 
--   <Status>Feature</Status> <UI>메소드 요약</UI>: 트레이스 스탭 정보에서 중복 실행된 메소드에 대한 분석 정보를 제공합니다.
+-   <Status>Feature</Status> <UI>Methods</UI>: Trace step information provides the analysis of the duplicated methods.
 
--   <Status>Feature</Status> <UI>SQL 요약</UI>: 트레이스 스탭 정보에서 중복 실행된 SQL 문에 대한 분석 정보를 제공합니다.
+-   <Status>Feature</Status> <UI>SQLs</UI>: Trace step information provides the analysis of the duplicated SQLs.
 
--   <Status>Feature</Status> <UI>HTTP 호출 요약</UI> 탭 추가 : HTTP 호출의 호출 건수, 합계 시간, 평균 시간 정보  제공
+-   <Status>Feature</Status> Added the <UI>HTTP Calls</UI> tab: Provided the HTTP call count, time sum, and time average.
 
--   <Status>Change</Status> 탭 메뉴의 명칭 수정
+-   <Status>Change</Status> Changed the name of the tab menu.
 
-    -   **_프로파일_** → **_테이블 뷰_**
-    -   **_프로파일 트리_** → **_트리 뷰_**
-    -   **_로그_** → **_트랜잭션 로그_**
+    -   **_Profile_** → **_Table View_**
+    -   **_Profile Tree_** → **_Tree View_**
+    -   **_Log_** > **_Transaction Log_**
 
--   <Status>Change</Status> <UI>테이블 뷰</UI> 탭의 디자인 수정
+-   <Status>Change</Status> Modified the design of the <UI>Table View</UI> tab.
 
-    -   메소드 정보 스텝(**_스탭 내용_** 컬럼)의 텍스트 색상 표시
-    -   메소드 정보 스텝(**_스탭 내용_** 컬럼)의 depth 정보를 들여쓰기로 표시
-    -   컬럼명 변경: **_누적 시간_** → **_구간 시간_**
+    -   Display of text colors of the method information step (**_step content_** column)
+    -   Indentation of the depth information of the method information step (**_step content_** column)
+    -   Change of the column name: **_Cumulative Time_** → **_Interval Time_**
 
--   <Status>Change</Status> <UI>트리 뷰</UI> 탭의 디자인 변경
+-   <Status>Change</Status> Modified the design of the <UI>Tree View</UI> tab.
 
-    수정 전<br/>
+    Before modification<br/>
     ![](/img/release/transaction-profile-trace-before.png)
 
-    수정 후<br/>
+    After modification<br/>
     ![](/img/release/transaction-profile-trace-after.png)
 
-    -   트레이스 타입에 따른 텍스트 색상 표시
-    -   데이터 구분 컬럼 추가(**_상세 정보_**, **_타입_**, **_경과 시간_**)
-    -   액티브 스택 항목을 클릭하면 **상세 정보** 확인 뷰 추가
+    -   Display of the text color according to the trace type
+    -   Addition of the data type column (**_Detail Info_**, **_Type_**, **_Elapsed Time_**)
+    -   If the active stack item is clicked, **Detail Info** confirmation view has been added.
 
--   <Status>Change</Status> <UI>트리뷰</UI> 탭에서 메소드(METHOD) 타입 트레이스 표시 정보 중 <UI>진입 CPU 시간</UI> 항목 제거
+-   <Status>Change</Status> In <UI>Tree View</UI> tab, deleted the <UI>Start Point CPU Time</UI> item from the Method type trace display information.
 
--   <Status>Change</Status> 트랙잭션 차트에서 버튼 명칭 수정: <UI>프로파일 다이어그램</UI> → <UI>다이어그램</UI>
+-   <Status>Change</Status> Modification of the button name on the transaction chart: <UI>Profile Diagram</UI> → <UI>Diagram</UI>
 
 #### Analytics
 
--   <Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> > <UI>트리 뷰</UI> 메뉴에서 트레이스 연계 정보가 트리형 구조로 표현되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Multiple Transaction Trace</UI> > <UI>Tree View</UI>, fixed the bug where the trace integration data is not represented in a tree structure.
 
--   <Status>Fixed</Status> <UI>히트맵</UI> 메뉴에서 <UI>TX 트레이스</UI> 테이블의 <UI>종료 시간</UI> 컬럼이 <UI>시작 시간</UI> 컬럼보다 앞에 표시되는 버그 수정
+-   <Status>Fixed</Status> In <UI>HITMAP</UI>, fixed the bug where the <UI>End Time</UI> column in the <UI>TX Trace</UI> table appears before the <UI>Start Time</UI> column.
 
 ### `Server`
 
 #### Server List
 
-<Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 서버 상태 아이콘 클릭 시 나타나는 모달 내용이 선택한 서버와 일치하지 않는 버그 수정
+<Status>Fixed</Status> In <UI>Server List</UI>, fixed the bug where the modal content that appears when the server status icon is clicked does not match that of the selected server.
 
 ### `Database`
 
--   <b>Tibero</b> 상품의 <UI>통계/보고서</UI> 메뉴에서 다음의 기능을 추가 및 수정합니다.
+-   In <UI>STAT/REPORT</UI> of the <b>Tibero</b> product, the following functions have been added and modified.
 
-    -   <Status>Feature</Status> <UI>테이블스페이스 사이즈</UI> 메뉴의 화면 UI 개선
+    -   <Status>Feature</Status> Improved the screen UI of the <UI>tablespace size</UI>.
 
-        -   테이블스페이스 사이즈를 누적 차트 형태로 제공
-        -   누적 차트에 **_Total_**, **_Used_** 버튼을 통해 차트 데이터 변경
-        -   상세 정보를 테이블 형태로 제공
-        -   각 항목의 토글 버튼을 선택해 데이터 파일 정보 확인 가능
-        -   **_사용량 (%)_** 컬럼에 막대 그래프를 추가해 데이터 가시성 개선
-        -   각 컬럼의 이름을 클릭해 테이블 정렬 기능 추가
-        -   **_테이블스페이스 이름_** 컬럼의 크기 조절 기능 추가
+        -   The tablespace size is provided in the form of a stacked chart.
+        -   Changed the chart data via the **_Total_** and **_Used_** buttons for stacked charts.
+        -   Provision of the information details in a table
+        -   Data file information can be checked by selecting the toggle buttons for each item.
+        -   Added a bar graph to the **_Usage (%)_** column to improve the data visibility.
+        -   Click names for each column to add the table sorting function.
+        -   Added the function to adjust the size of the **_tablespace name_** column.
 
-    -   <Status>Change</Status> <UI>SQL 통계</UI> 메뉴의 통계 테이블에서 <UI>sql_id</UI> 컬럼 추가
+    -   <Status>Change</Status> In the <UI>SQL Statistics</UI>, added the <UI>sql_id</UI> column in the statistics table.
 
-    -   <Status>Feature</Status> 일간/주간/월간 사용자 정의 보고서 추가
+    -   <Status>Feature</Status> Addition of the daily/weekly/monthly user-defined reports
           
-        - 성능 추이차트 지표선택 기능
-        - 테이블 사이즈 증감, 테이블스페이스 사이즈 리스트
+        - Function to select a metric in the performance trend chart
+        - Table size increase/decrease, list of tablespace sizes
 
--   **MySQL** 상품의 **_통계/보고서_** 메뉴에서 다음의 기능을 추가합니다.
+-   In **_STAT/REPORT_** for the **MySQL** product, the following functions have been added.
 
-    -   <Status>Feature</Status> 일간/주간/월간 사용자 정의 보고서 추가
+    -   <Status>Feature</Status> Addition of the daily/weekly/monthly user-defined reports
           
-        - 성능 추이차트 지표선택 기능
-        - 테이블 사이즈 증감, 데이터베이스 사이즈 리스트
+        - Function to select a metric in the performance trend chart
+        - Table size increase/decrease, list of database sizes
 
 ### `Container`
 
-**_대시보드_** > **_컨테이너 맵_** 메뉴에서 다음의 기능을 추가합니다.
+In **_Dashboard_** > **_Container Map_**, the following functions have been added.
 
--   <Status>Feature</Status> 컨테이너 상태 정보를 라벨로 표시하는 기능 추가: 화면 상단 <img src='/img/ico-setting.svg' alt='설정 아이콘' /> 버튼을 클릭한 다음 <UI>컨테이너 상태</UI> 선택
+-   <Status>Feature</Status> Added the function to display the container status with a label: Click the <img src='/img/ico-setting.svg' alt='설정 아이콘' /> button at the top of the screen and then select <UI>Container Status</UI>.
 
--   <Status>Change</Status> 컨테이너 맵 <b>상세 보기</b> 화면에서 컨테이너 및 파드 목록의 디자인 요소를 수정
+-   <Status>Change</Status> In Display Container Map <b>Detail</b>, modified the design elements of the container and pod lists.
 
-    -   각 항목을 선택해도 상세 정보가 펼쳐지지 않은채 다중 선택할 수 있도록 수정
-    -   토글 버튼을 선택해 상세 정보를 확인할 수 있도록 수정
+    -   Modified to enable multi-selection without expanding information details even when each item is selected.
+    -   Modified to check information details by selecting the toggle button.
 
--   <Status>Feature</Status> Pod 카테고리 뷰 그룹화 조건에 <UI>DaemonSet</UI>, <UI>StatefulSet</UI> 추가
+-   <Status>Feature</Status> Added <UI>DaemonSet</UI> and <UI>StatefulSet</UI> in the pod category view grouping conditions.
 
 ### `AWS`, `Azure`, `NCP`, `OCI`
 
--   <Status>Fixed</Status> <UI>에이전트 설치</UI> 페이지 진입 후 <UI>액세스 키 변경</UI> 버튼을 클릭하면 등록한 인증 정보가 바로 나타나지 않는 문제 수정
+-   <Status>Fixed</Status> Fixed the problem where the registered authentication information does not appear immediately after clicking <UI>Change access key</UI> after entering the <UI>Agent Installation</UI> page.
 
--   <Status>Fixed</Status> 프로젝트를 생성한 다음 페이지 이동 시 화면 위의 메뉴 경로가 <UI>인티그레이션 > 설치</UI>로 나타나는 문제 수정(<UI>관리 > 에이전트 설치</UI>)
+-   <Status>Fixed</Status> Fixed the problem where the menu path on the screen appears after creating a project as <UI>Integration > Install</UI> (<UI>Management > Install Agent</UI>).
 
 ### `URL`
 
-<Status>Feature</Status> <UI>URL 목록</UI> 메뉴에서 엑셀 파일로 작성한 URL 목록을 가져오거나 엑셀 파일로 내보낼 수 있는 기능 추가: 화면 오른쪽 위에 <UI>가져오기</UI>/<UI>내보내기</UI> 버튼 추가
+<Status>Feature</Status> In <UI>URL List</UI>, added the function to fetch the URL list written in an Excel file or export the list as an Excel file: Added the <UI>Import</UI>/<UI>Export</UI>buttons on the upper right of the screen.

@@ -21,13 +21,13 @@ An agent must be installed on the same server to forward data from the monitored
 
 To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/ko/signup/), create a project and then install the agent to the target server.
 
-{@include: ../getting-started/_create-project-v2.mdx}   
+{@include: ../getting-started/_create-project-v2.mdx} 
 
 {@include: ../getting-started/_accesskey-v2.mdx}
 
 ## Downloading the agent
 
-**액세스 키**를 발급 받으면 다음 명령어를 이용해 에이전트를 다운로드하세요.
+Once you have received the **access key**, download the agent with the following command.
 
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">
@@ -109,7 +109,7 @@ It consists of a tracer to collect the monitoring data, an agent to transmit the
 
 -   _whatap_agent_: Service execution file.
 
--   _whatap.conf_: 설정 정보 및 수집 서버 IP, 액세스 키를 입력하는 파일입니다.
+-   _whatap.conf_: Enter the configuration data, collection server IP, and access key in this file.
 
 -   _whatap-boot-`yyyymmdd`.log_: Agent log file. (path: _/usr/whata/agent/log_)
 
@@ -117,32 +117,32 @@ It consists of a tracer to collect the monitoring data, an agent to transmit the
 
 ## Agent CONFIG.
 
-다음 명령어를 차례로 실행해 _whatap.conf_ 파일에 **액세스 키**와 **수집 서버 IP** 등을 설정하세요.
+Execute the following commands in order to set the **access key** and **collection server IP** in _whatap.conf_.
 
 ```bash title='SH'
-$ echo "license={액세스 키}" >> /usr/whatap/agent/whatap.conf
-$ echo "whatap.server.host={수집 서버 IP}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_name={애플리케이션 이름}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_process_name={애플리케이션 프로세스 이름}" >> /usr/whatap/agent/whatap.conf
+$ echo "license={Access Key}" >> /usr/whatap/agent/whatap.conf
+$ echo "whatap.server.host={Collection Server IP}" >> /usr/whatap/agent/whatap.conf
+$ echo "app_name={Application Name}" >> /usr/whatap/agent/whatap.conf
+$ echo "app_process_name={Application Process Name}" >> /usr/whatap/agent/whatap.conf
 ```
 
--   **license**: **액세스 키**를 입력하세요.
--   **whatap.server.host**: **수집 서버 IP**를 입력하세요.
+-   **license**: Enter the **access key**.
+-   **whatap.server.host**: Enter the **collection server IP**.
 -   **app_name**: Enter the application name. Set the user as a string.
 -   **app_process_name**: Enter the name of the application to be monitored. Measure the memory usage with the specified process name.
 
----
+* * *
 
-Alpine Linux의 경우 다음과 같이 스크립트를 실행해 안내에 따라 **액세스 키**와 **수집 서버 IP**를 입력하세요.
+For Alpine Linux, run the script as follows according to the instructions to enter the **access key** and **collection server IP**.
 
 ```bash title='SH'
 $ sudo /usr/whatap/php/install.sh
 
 Input project access key
-xxxxxxxxxxxxxxxx   # 발급한 액세스 키 입력
+xxxxxxxxxxxxxxxx   # Enter the granted access key
 
 Input whatap.server.host
-192.x.x.x          # 와탭 수집 서버 IP 입력
+192.x.x.x          # Enter the WhaTap collection server IP
 ```
 
 ## Using the Golang library
@@ -192,4 +192,4 @@ func main(){
 
 ## Starting the monitoring
 
-애플리케이션 서버를 다시 시작하면 에이전트가 정보 수집을 시작합니다.
+Once the application server has been restarted, the agent starts collecting data.

@@ -1,19 +1,19 @@
 ---
 id: tomcat
 title: Tomcat
-description: Tomcatアプリケーションサーバ環境でJVMオプションの追加設定を完了してください。
+description: Tomcatアプリケーションサーバ環境でJVMオプションの追加設定を終了します。
 tags:
   - Tomcat
   - Java
 ---
 
-Tomcatを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認してください。使用するオペレーティングシステムに合わせて設定してください。
+Tomcatを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認します。使用するオペレーティングシステムに合わせて設定します。
 
 ## 環境変数の追加
 
 ### **Linux**
 
-_catalina.sh_ファイルの上段に`JAVA_OPTS`環境変数を追加してください。
+_catalina.sh_ファイルの先頭に`JAVA_OPTS`環境変数を追加します。
 
 ```bash title='{Tomcat 설치 경로}/bin/catalina.sh' showLineNumbers
 ########## WHATAP START ############
@@ -24,14 +24,14 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 ```
 
 :::note
-`ls ${WHATAP_HOME}/whatap.agent-*.jar|sort|tail-1`項目は、今後エージェントアップデートを進める場合、最新のWhaTapエージェントを適用するためです。
+`ls ${WHATAP_HOME}/whatap.agent-*.jar|sort|tail-1`項目は、エージェントのアップデートで最新のWhaTapエージェントを適用します。
 :::
 
 ### **Windows**
 
--   _setup.bat_ファイルを通じて実行する場合
+-   _setup.bat_ファイルを実行した場合
 
-    _catalina.bat_ファイルの上段に`JAVA_OPT`環境変数を追加してください。
+    _catalina.bat_ファイルの先頭に`JAVA_OPT`環境変数を追加します。
 
     ```batch title='{Tomcat 설치 경로}/bin/catalina.bat' {3} showLineNumbers
     rem ########## WHATAP START ############
@@ -54,11 +54,11 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 -   TomcatをWindowsインストーラーでインストールした場合
 
-    1.  **_開始_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**を選択してください。
+    1.  **_開始_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**を選択します。
 
-    2.  **_Java_**タブを選択してください。
+    2.  **_Java_**タブを選択します。
 
-    3.  **_Java Options_**テキストボックスに`-javaagent`オプションを追加してください。
+    3.  **_Java Options_**テキストボックスに`-javaagent`オプションを追加します。
 
     ```text
     -javaagent:{WhaTapインストールパス}/whatap.agent-X.Y.Z.jar
@@ -76,21 +76,21 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 ## Tomcat互換性
 
-| WAS Ver. |       Java SE 6（jdk1.6.0）       |      Java SE 7（jdk1.7.0_80）     |      Java SE 8（jdk1.8.0_91）     |
+| WAS Ver. |       Java SE 6 (jdk1.6.0)      |     Java SE 7 (jdk1.7.0_80)     |     Java SE 8 (jdk1.8.0_91)     |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | Tomcat6  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat7  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat8  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat9  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 
-| WAS Ver. |        OpenJDK6（1.6.0_45）       |        OpenJDK7（1.7.0_80）       |        OpenJDK8（1.8.0_91）       |
+| WAS Ver. |       OpenJDK6 (1.6.0_45)       |       OpenJDK7 (1.7.0_80)       |       OpenJDK8 (1.8.0_91)       |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | Tomcat6  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat7  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat8  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat9  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 
-| WAS Ver. |        OpenJDK6（1.6.0_45）       |        OpenJDK7（1.7.0_80）       |        OpenJDK8（1.8.0_91）       |
+| WAS Ver. |       OpenJDK6 (1.6.0_45)       |       OpenJDK7 (1.7.0_80)       |       OpenJDK8 (1.8.0_91)       |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | Tomcat6  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Tomcat7  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |

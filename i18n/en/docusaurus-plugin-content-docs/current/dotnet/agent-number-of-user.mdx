@@ -7,7 +7,7 @@ tags:
 hide_table_of_contents: false
 ---
 
-### Aggregates the numbers of users
+### Aggregating the user count
 
 It aggregates the numbers of users who connect to the .NET web application server.
 
@@ -19,16 +19,16 @@ To apply the value set in the following option, restart IIS.
 
 -   **trace_user_enabled** <span class='type'>Boolean</span>
 
-    기본값 `true`
+    Default `true`
 
-    실시간 사용자 집계 여부를 설정합니다. 사용자 추적 옵션이 중복 설정된 경우 쿠키값을 우선으로 사용합니다.
+    Set whether or not to aggregate real-time users. If the user tracing option is set redundantly, the cookie value takes precedence.
 
 -   **trace_user_cookie_keys** <span class='type'>String</span>
 
-    설정한 쿠키의 값을 고유한 사용자 정보로 선택합니다. 여러 개를 등록할 때는 쉼표(,)를 구분자로 이용하세요. 설정한 순서대로 검색합니다.
+    Select the set cookie's value as unique user data. For multiple values, use comma (,) as the delimiter. Search in the set order.
 
 -   **trace_user_using_ip** <span class='type'>Boolean</span>
 
     Default `false`
 
-    실시간 사용자를 IP 주소 기반으로 집계합니다. IP 주소가 아닌 쿠키를 기반으로 사용자를 구분하고 싶으면 값을 `false`로 변경하세요.
+    It aggregates real-time users based on the IP address. If you want to distinguish users based on the cookie rather than IP addresses, change the value to `false`.

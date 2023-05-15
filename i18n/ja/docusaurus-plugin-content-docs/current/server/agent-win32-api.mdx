@@ -1,15 +1,15 @@
 ---
 id: agent-win32-api
 title: Win32 APIの性能メトリクス収集
-description: Win32 APIで性能メトリクスを収集する方法について案内します。
+description: Win32 APIを使用して性能メトリクスを収集する手順について説明します。
 tags:
   - Server
   - 設定
 ---
 
-CPU、MEMORY、DISK、TRAFFIC、PROCESSの性能情報を収集する際にはWin32APIを使用します。 Windows性能カウンターがオフになっているか、使用不可能な環境で性能を収集する場合に使用できます。
+CPU、MEMORY、DISK、TRAFFIC、PROCESSの性能情報を収集する場合、Win32APIを使用します。Windows性能カウンターがオフまたは、使用不可能な環境で性能を収集する場合に使用できます。
 
-WhaTapサーバーモニタリング設定ファイルに「native_api.enabled=true」のオプションを追加します。 パワーシェルで次のように適用してください。
+WhaTapサーバーモニタリング設定ファイルに「native_api.enabled=true」オプションを追加します。 パワーシェルで以下を適用してます。
 
 ```bash title='Windows Powershell'
 Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "native_api.enabled=true"

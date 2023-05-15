@@ -11,26 +11,26 @@ toc_max_heading_level: 2
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
-<https://preview.whatap.io> 페이지를 통해서 아래 추가한 신기능을 미리 경험해볼 수 있습니다. 
+Through <https://preview.whatap.io>, you can experience the following new features. 
 
 ## 2022-11-24
 
-### `공통`
+### `Common`
 
-<Status>Change</Status> <UI>이벤트 설정</UI> 메뉴와 <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>이벤트 수신 태그</UI> 기능 사용 중 수신 태그를 삭제하면, 알림 수신이 불가능한 버그가 발생해 다음 메뉴에서 태그 삭제 기능 임시 제한
+<Status>Change</Status> In <UI>Event Setting</UI> and <UI>Notification Setting</UI>, if the reception tag was deleted while using the <UI>Event Receiving Tag</UI> function, the alert reception was impossible. Accordingly, the tag deletion has been temporarily disabled in the following menus.
 
--   애플리케이션 상품군: 메트릭스(복합 메트릭스 포함), 히트맵 패턴, 이상치 탐지, 로그
--   서버 상품군: 메트릭스(복합 메트릭스 포함), 이상치 탐지, 로그
--   쿠버네티스 상품군: 메트릭스(복합 메트릭스 포함), 히트맵 패턴, 이상치 탐지, 로그
--   데이터베이스 상품군: 메트릭스(복합 메트릭스 포함), 이상치 탐지
+-   Application products: Metrics (including the composite metrics), hitmap patterns, anomaly detections, logs
+-   Server products: Metrics (including the composite metrics), anomaly detections, logs
+-   Kubernetes products: Metrics (including the composite metrics), hitmap patters, anomaly detections, logs
+-   Database products: Metrics (including the composite metrics), anomaly detections
 
 ## 2022-11-16
 
-### `공통`
+### `Common`
 
--   <Status>Fixed</Status> 서버 상품군 프로젝트 > <UI>서버 목록</UI> 메뉴에서 데이터 로딩 시, '설치된 에이전트가 없음' 문구 삭제, 로딩 스피너를 표시하도록 수정
+-   <Status>Fixed</Status> While loading the data in Server Suite Project > <UI>Sever List</UI>, deleted the message, "No agent installed" and modified to display the loading spinner.
 
--   <Status>Fixed</Status> 초기 화면에서 그룹 선택 후 프로젝트 목록으로 이동 시, 딜레이가 발생하면 로딩 스피너를 표시하도록 수정
+-   <Status>Fixed</Status> When going to the project list by selecting a group on the initial screen, modified to display a loading spinner when a delay occurs.
 
 <!-- ## 브라우저 - RUM
 
@@ -38,73 +38,73 @@ import UI from '@site/src/components/UItext';
 
 ### Alert
 
-<Status>Feature</Status> 프로젝트 > <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>히트맵 패턴</UI> 메뉴에서 각 항목 하단에 <UI>이벤트 수신 태그</UI>를 추가할 수 있는 기능 추가
+<Status>Feature</Status> In Project > <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Hitmap Pattern</UI>, added the function to add the <UI>Event Receiving Tag</UI> beneath each item.
 
 ### Log
 
-프로젝트 > <UI>로그</UI> 메뉴에서 다음의 기능을 추가 및 수정합니다.
+In Project > <UI>Log</UI>, added and modified the following functions.
 
--   <Status>Feature</Status> <UI>설정</UI> 메뉴에서 <UI>로그 장기 보관 통계</UI> 패널 추가
+-   <Status>Feature</Status> In <UI>Setting</UI>, added the <UI>Log long-term archive statistics</UI> panel.
 
--   <Status>Feature</Status> <UI>설정</UI> 메뉴의 <UI>로그 Parser 설정</UI>에서 <UI>4xx, 5xx 상태 코드 파서</UI>, <UI>상태 코드 성공률 파서</UI> 추가
+-   <Status>Feature</Status> In <UI>Setting</UI>, under <UI>Log Parser Setting</UI>, added the <UI>4xx, 5xx Status Code Parser</UI> and <UI>Status Code Success Rate Parser</UI>.
 
--   <Status>Fixed</Status> <UI>라이브 Tail</UI> 메뉴에서 콘텐츠 보기 기능 오작동 수정
+-   <Status>Fixed</Status> In <UI>Live Tail</UI>, fixed the malfunction of the content lookup function.
 
--   <Status>Fixed</Status> <UI>라이브 Tail</UI> 메뉴에서 콘텐츠 필터링(하이라이트) 기능 오작동 수정
+-   <Status>Fixed</Status> In <UI>Live Tail</UI>, fixed the malfunction of the content filtering (highlighting) function.
 
 ### Daily Application Status/Performance Trend
 
-<Status>Fixed</Status> 쿠버네티스 상품군 프로젝트에서 아래 메뉴의 조회 버튼 작동 이상 수정
+<Status>Fixed</Status> Fixed the malfunction of the lookup button in the following menus for the Kubernetes product suite projects.
 
--   <UI>애플리케이션</UI> > <UI>일자별 애플리케이션 현황</UI>
--   <UI>애플리케이션</UI> > <UI>성능 추이</UI>
+-   <UI>Application</UI> > <UI>Daily Application Status</UI>
+-   <UI>Application</UI> > <UI>Perf. Trend</UI>
 
 ### Agent Installation
 
-<Status>Fixed</Status> 쿠버네티스 상품군 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Application Agent</UI> 메뉴에서 Java 에이전트 설치 jar 파일명 변경(whatap.agent-X.Y.Z.jar → whatap.agent.kube.jar)
+<Status>Fixed</Status> Kubernetes Suite Project > <UI>Management</UI> > <UI>Agent Installation</UI> > <UI>Application Agent</UI>, changed the Java agent installation jar file name (whatap.agent-X.Y.Z.jar → whatap.agent.kube.jar).
 
 ### Maintenance Plan
 
-프로젝트 > <UI>관리</UI> > <UI>정비 계획</UI> 메뉴에서 다음의 기능 추가 및 수정합니다.
+In Project > <UI>Management</UI> > <UI>Maintenance Plan</UI>, added and modified the following functions.
 
--   <Status>Feature</Status> 정비 계획 공지를 화면 상단에 표시하는 기능 추가
--   <Status>Change</Status> 정비 계획 UI 개선
-    * 반복 옵션 UI 텍스트 변경 : <UI>일간</UI>/<UI>주간</UI>/<UI>월간</UI>/<UI>년간</UI> → <UI>매일</UI>/<UI>매주</UI>/<UI>매월</UI>/<UI>매년</UI>
-    * 정비 계획 테이블 컬럼 순서 변경
-    * 정비 계획 추가/수정 모달 UI 개선
-    * 정비 계획 추가 시 <UI>한번만</UI> 기본 선택하도록 수정
-    * 정비 계획 안내 문구 및 위치 수정
--   <Status>Fixed</Status> 서버 상품 정비 계획 삭제 불가 수정
+-   <Status>Feature</Status> Added the function to display the maintenance plan notice at the top of the screen.
+-   <Status>Change</Status> Maintenance Plan UI improvements
+    * Changed the repeat option UI text: <UI>Daily</UI>/<UI>Weekly</UI>/<UI>Monthly</UI>/<UI>Yearly</UI>
+    * Changed the maintenance plan table column order.
+    * Improved the maintenance plan addition/modification modal.
+    * Upon addition of any maintenance plan, modified to select <UI>Once</UI> by default.
+    * Modified the maintenance plan guide texts and their locations.
+-   <Status>Fixed</Status> Modified not to delete any server maintenance plan.
 
 ### Metrics Chart
 
-<Status>Change</Status> 쿠버네티스 상품군 프로젝트 > <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 일정 크기 이상의 태그 목록 조회 시 발생하는 미응답 상태 수정 : 태그 목록 조회 API 변경 `search` → `tags`
+<Status>Change</Status> In Kubernetes Suite Project > <UI>Analysis</UI> > <UI>Metrics Chart</UI>, fixed the no response status that occurs when searching a tag list that exceeds a specific size: changed the tag list search API `search` → `tags`.
 
 ### HITMAP (Transaction List)
 
-<Status>Change</Status> 쿠버네티스 상품군 프로젝트 > <UI>애플리케이션</UI> > <UI>히트맵</UI> 메뉴에서 <UI>컨테이너 ID</UI>, <UI>Pod 명</UI> 컬럼을 추가할 수 있도록 수정
+<Status>Change</Status> In Kubernetes Suite Project > <UI>Application</UI> > <UI>Hitmap</UI>, modified to add the <UI>container ID</UI> and <UI>pod name</UI> columns.
 
 ### Flex Board
 
-프로젝트 > <UI>대시보드</UI> > <UI>Flex 보드</UI> 메뉴 또는 초기 화면 > <UI>Flex 보드</UI> 메뉴에서 다음의 기능 추가 및 수정합니다
+In Project > <UI>Dashboard</UI> > <UI>Flex Board</UI> or Home > <UI>Flex Board</UI>, added or modified the following functions.
 
--   <Status>Feature</Status> <UI>정비 계획</UI> 위젯 추가
--   <Status>Feature</Status> <UI>로그 장기 보관 통계</UI> 위젯 추가
--   <Status>Feature</Status> 대시보드 목록 화면에서 오른쪽 위에 <UI>정렬</UI> 기능 추가
--   <Status>Change</Status> 대시보드 즐겨찾기 아이콘 버튼에 안내 툴팁 추가
--   <Status>Change</Status> ECS 상품의 대시보드 템플릿에서 위젯의 가로 너비 조정
+-   <Status>Feature</Status> Added the <UI>maintenance plan</UI> widget.
+-   <Status>Feature</Status> Added the <UI>Log long-term archive statistics</UI> widget.
+-   <Status>Feature</Status> Added the <UI>Align</UI> function on the upper right of the dashboard list screen.
+-   <Status>Change</Status> Added the guide tooltip on the dashboard favorite icon.
+-   <Status>Change</Status> Adjusted the width of widgets in the dashboard template for ECS products.
 
 ### Project Subscription
 
-<UI>이용 내역</UI> > <UI>프로젝트 유료 전환</UI> 메뉴에서 다음의 기능 추가합니다.
+In <UI>My Usage</UI> > <UI>Project Subscription</UI>, added the following functions.
 
--   <Status>Feature</Status> 유료 전환 시점이 7일 미만인 프로젝트의 경우 <UI>유료전환 취소</UI> 기능 추가
--   <Status>Feature</Status> 유료 전환시점으로부터 7일 이후인 프로젝트의 경우 <UI>프로젝트 삭제</UI> 기능 추가
+-   <Status>Feature</Status> Added the <UI>Cancel Subscription</UI> function for the projects with the subscription time of less than 7 days.
+-   <Status>Feature</Status> Added the <UI>Delete Project</UI> function for the projects that are after 7 days from the subscription time.
 
 ### Invoice
 
-<Status>Change</Status> <UI>사이트 관리</UI> > <UI>결제 관리</UI> > <UI>청구서</UI> 메뉴에서 <UI>월간 사용 Session</UI> 컬럼 추가
+<Status>Change</Status> In <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Invoice</UI>, added the <UI>Monthly Session Usage</UI> column.
 
 ### Usage
 
-<Status>Change</Status> <UI>이용 내역</UI> > 사용량, <UI>사이트 관리</UI> > <UI>결제 관리</UI> > <UI>사용량</UI> 메뉴에서 범용 미터링 정보(MtypeDetail)를 <UI>사용량</UI> > <UI>상세</UI> 항목에 추가해 표시하도록 기능 추가
+<Status>Change</Status> In <UI>My Usage</UI> > Usage, <UI>Site Management</UI> > <UI>Billing Management</UI> > <UI>Usage</UI>, added the function to display universal metering information (MtypeDetail) by adding it to <UI>Usage</UI> > <UI>Detail</UI>.

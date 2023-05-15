@@ -1,10 +1,10 @@
 {
   "item.label.시작하기": {
-    "message": "始まり",
+    "message": "はじめに",
     "description": "Navbar item with label 시작하기"
   },
   "item.label.상품별 문서 바로가기": {
-    "message": "製品",
+    "message": "製品固有のドキュメントに移動",
     "description": "Navbar item with label 상품별 문서 바로가기"
   },
   "item.label.Java 모니터링": {
@@ -107,10 +107,6 @@
     "message": "Logモニタリング",
     "description": "Navbar item with label Log 모니터링"
   },
-  "item.label.브라우저 모니터링(RUM)": {
-    "message": "ブラウザーモニタリング(RUM)",
-    "description": "Navbar item with label 브라우저 모니터링(RUM)"
-  },
   "item.label.확장 도구": {
     "message": "拡張ツール",
     "description": "Navbar item with label 확장 도구"
@@ -120,7 +116,7 @@
     "description": "Navbar item with label 관리 기능"
   },
   "item.label.참조 문서": {
-    "message": "参照文書",
+    "message": "リファレンス文書",
     "description": "Navbar item with label 참조 문서"
   },
   "item.label.릴리스 노트": {

@@ -4,7 +4,7 @@
 mkdir -p {Docker build Dir}
 ```
 
-1.  _whatap.conf_ファイルを作成してください。
+1.  _whatap.conf_ファイルを作成します。
 
 ```bash
 cat >{Docker build Dir}/whatap.conf <<EOL
@@ -72,14 +72,14 @@ EOL
 
     :::
 
-4.  Dockerをビルドしてください。
+4.  Dockerをビルドします。
 
 ```docker
 cd docker
 docker build -t $Image_Name.
 ```
 
-1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定してください。アプリケーションエージェントに必要な環境変数情報を入力してください。
+1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
   `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。もしデプロイメント名に設定すると、該当するPodをグループ化します。
 

@@ -101,7 +101,7 @@ Select a field. Fields that are not selected are not passed to the next step.
 
 -   To select all fields, do not enter any operand. 
 -   `like` and `notlike` cannot be set at a time. It needs to be divided in `SELECT` for setting.
-:::
+    :::
 
 :::note
 The `SELECT` command is also used when changing the field sequences. 
@@ -216,7 +216,7 @@ The `merge` field must be set separately. However, if the `last`, `merge`, and `
 -   Before executing the `GROUP` command, the `time` field has not been set with the `SELECT` command.
 -   The name of the `time` field has been changed with the `RENAME` command.
 -   The `time` field has been deleted with the `DELETE` command. 
-:::
+    :::
 
 ## UPDATE{#update}
 
@@ -293,7 +293,7 @@ You can modify data values by setting the following options.
 -   `{datetime:'yyyyMMdd HH:mm:ss'}` contains colon (:), so it must be enclosed in single quotation marks ('') or double quotation marks ("").
 -   `pct: 90` indicates that the 90%th value is selected. However, the field must have been set as the `listup` field when executing the `GROUP` command. 
 -   Its format is [Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html).
-:::
+    :::
 
 ## ORDER{#order}
 
@@ -365,7 +365,7 @@ All data to be saved in Yard has the values for `time` and `oid`. This indicates
 
 -   The first query used in the `JOIN` command is a custom MXQL query, and the second query allows only the [query that can be set as path](mxql-guide#custom-mxql). 
 -   You can `JOIN` three or more categories by registering all MXQL queries using the `JOIN` command as a file in Yard. 
-:::
+    :::
 
 ## LIMIT{#limit}
 
@@ -583,4 +583,4 @@ Only the data with specific conditions is passed to the next step.
 
 -   A case where the data is 0 is also a case where the data exists. It is applied to `{exist: true}`.
 -   `{exist : false}` and `{notexist : false}` are impossible. Be sure to use `{notexist : true}` and `{exist : true}`.
-:::
+    :::

@@ -11,21 +11,26 @@ After installing the WhaTap agent, log in [WhaTap Monitoring Service](https://se
 
 <!-- 주요 메뉴 안내 개요 위치 -->
 
-서버 모니터링은 실시간 수집으로 장애 원인 도출에 용이합니다. 운영 편리성을 높이기 위해 보고서 기능을 강화했으며, 선호하는 알림 수단을 선택할 수 있습니다.
+Server Monitoring is easy to derive the cause of failure through real-time collection. Reporting has been enhanced to improve operational convenience, and the preferred notification method can be selected.
 
 The WhaTap server monitoring service provides the following key functions:
 
--   **실시간 통합 모니터링**
+-   **Real-time integrated monitoring**
+
     -   Real-time usage for less than 300 server resources
     -   Provision of the overall server summary metrics
     -   Provision of top 5 servers based on the CPU, memory, disk I/O, and IOPS usage
     -   Provision of top 5 processes based on the maximum share of CPU and memory
--   **성능 분석**
+
+-   ** Performance analysis**
+
     -   Status of all collection servers
-    -   1분에 10회 이상 수집된 CPU, Memory, Disk. Network 성능 정보
-    -   최대 5개 서버 간 메트릭스 차트로 성능 비교 정보
+    -   CPU, memory, disk, and network performance collected more than 10 cases per minute
+    -   Performance comparison with metrics charts between maximum of 5 servers
     -   Sum of multi-process resource usage after process grouping
--   **이벤트 알림**
+
+-   ** Event notification**
+
     -   Email, SMS, and SNS (Telegram, Slack) transmission
     -   Event occurrence by setting the event duration and threshold and the event simulation based on the past data
     -   Same event notification suppression by the silent setting time registration and keyword repetition
@@ -33,10 +38,14 @@ The WhaTap server monitoring service provides the following key functions:
     -   Notification of server event settings according to the restart status, communication failure duration, and resource usage
     -   Notification of process event settings by the process count increase/decrease, CPU usage, and memory usage
     -   Notification of event settings and event risk level settings by the file log keyword
--   **통계 및 보고**
+
+-   ** Statistics and reports**
+
     -   Server daily/weekly report
     -   Server monthly report
--   **관리 기능**
+
+-   **Management**
+
     -   Role management
     -   Agent deletion
     -   Pre-entry of the maintenance plans  

@@ -11,163 +11,163 @@ import UI from '@site/src/components/UItext';
 
 ### My Usage
 
--   <Status>Change</Status> <UI>이용 내역</UI> 사용량 및 사이트 관리자의 <UI>사용량</UI> 메뉴에서 RUM 및 Oracle DMA 상품의 사용량을 상세 내역에 표시하도록 수정
+-   <Status>Change</Status> In the usage of <UI>My Usage</UI> and the <UI>Usage</UI> menu for site administrators, modified to display the RUM and Oracle DMA usages in the history details.
 
--   <Status>Change</Status> <UI>프로젝트 유료 전환</UI> 메뉴에서, 유료 전환 이력 컬럼에 관련 상품을 모두 표시하도록 수정
+-   <Status>Change</Status> In <UI>Project Subscription</UI>, modified to display all the related products on the Subscription History column.
 
 ## Hotfix: 2022-12-26
 
-### 경고 알림 > 이벤트 설정
+### Alert > Event Setting
 
-<Status>Fixed</Status> 클러스터 프로젝트에서 컨테이너 알림 저장을 실패하는 버그 수정
+<Status>Fixed</Status> Fixed the bug where saving the container alerts fails in cluster projects.
 
 ## Hotfix: 2022-12-23
 
 ### Application Dashboard
 
-<Status>Fixed</Status> 종료된 액티브 트랜잭션의 '프로파일 보기' 클릭 시 화면이 표시되지 않는 버그 수정
+<Status>Fixed</Status> Fixed the bug where the screen does not appear when "Show Profile" is clicked for a closed active transaction.
 
 ## Hotfix: 2022-12-19
 
 ### Integration Items
 
-<Status>Change</Status> 프로젝트 생성 시 선택한 아이템만 설치 및 설정 가능하도록 UI 개편
+<Status>Change</Status> Reorganized UIs to install and configure only the items selected for project creation.
 
-### `공통`
+### `Common`
 
-<Status>Change</Status> 인티그레이션 프로젝트 목록 카드와 리스트 UI 수정
+<Status>Change</Status> Modified the integration project list cards and the list UI.
 
--   프로젝트 생성 시 선택한 인티그레이션 아이템 아이콘만 노출
+-   Exposed only integration items selected for project creation.
     <!-- 프로젝트 목록 중 VR타입(Integration)의 카드/리스트 UI 수정 - 인티그레이션 아이템 아이콘 목록 → 프로젝트 생성 시 선택한 아이템 아이콘만 노출  -->
 
 ## Hotfix: 2022-12-08
 
 ### Flex Board
 
-<Status>Fixed</Status> 대시보드를 읽기 전용으로 복사한 경우 삭제 가능하도록 수정
+<Status>Fixed</Status> Modified to enable deletion when the dashboard is copied as read-only.
 
 ### Log
 
--   <Status>Fixed</Status> 필터에 비교 연산자로 '==' 입력 시, 표현식에 '=='가 중복으로 표시되는 버그 수정
--   <Status>Fixed</Status> 필터에 숫자 필드(.n 필드) 입력시, prefix로 '+'가 붙어서 검색이 되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where `==` is duplicated in the expression statement when "==" has been entered as a comparison operator in the filter.
+-   <Status>Fixed</Status> Fixed the bug where search cannot be performed because "+" has been added as a prefix when entering a numeric field (.n field) in the filter.
 
 ## Hotfix: 2022-12-05
 
 ### Container Map
 
-<Status>Fixed</Status> 에이전트 1.2.0 버전 업데이트 후 Pod 카테고리 선택시 '에이전트 업데이트' 안내 메시지를 출력하는 버그 수정
+<Status>Fixed</Status> Fixed the bug where the "Agent Update" guide message appears when selecting a Pod category after updating to Agent 1.2.0.
 
 ## Hotfix: 2022-12-02
 
 ### Multiple transaction trace
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 일부 테이터 조회 시 차트가 그려지지 않는 버그 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Multiple Transaction Trace</UI>, fixed the bug where charts were not drawn when searching for some data.
 
 ### Transaction search
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>트랜잭션 검색</UI> 메뉴에서, 이전 프로젝트에서 조회한 데이터가 프로젝트 이동 시 표시되는 버그 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Transaction Search</UI>, fixed the bug where the data retrieved from the previous project appears when moving to another project.
 
 ## Hotfix: 2022-11-30
 
-### `공통`
+### `Common`
 
--   <Status>Change</Status> 프로젝트 생성 시 플랫폼 선택 화면에서 인티그레이션 아이템의 베타 표시 제거
+-   <Status>Change</Status> Removed the Beta display in integration items for platform selection when creating a project.
 
--   <Status>Change</Status> <UI>이벤트 설정</UI> 메뉴와 <UI>이벤트 수신 설정</UI> 메뉴에서 이벤트에 적용 중인 <UI>이벤트 수신 태그</UI>는 삭제할 수 없도록 수정
+-   <Status>Change</Status> In <UI>Event Setting</UI> and <UI>Notification Setting</UI>, modified not to delete <UI>Event Receiving Tag</UI> that is being applied to events.
 
 ### Agent CONFIG.
 
-<Status>Fixed</Status> 에이전트 이름을 별칭으로 설정하면 서버 목록 화면에 반영되지 않는 문제 수정
+<Status>Fixed</Status> Fixed the issue where the agent name is not reflected in the server list when it has been set as an alias.
 
 ### Multiple transaction trace
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 '차트 새창으로 띄우기' 버튼 클릭 시 발생하는 화이트 아웃 현상 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Multiple Transaction Trace</UI>, fixed the white out issue that occurs when `Open chart in new window` is clicked.
 
 ### Integration, Cloud Monitoring
 
-<Status>Deprecate</Status> <UI>관리</UI> > <UI>인티그레이션 아이템</UI> 메뉴에서 AWS CloudWatch 서비스 설정 시 <UI>전체 선택</UI> 체크 박스 제거
+<Status>Deprecate</Status> In <UI>Management</UI> > <UI>Integration items</UI>, deleted the <UI>Select All</UI> checkbox upon configuration of the AWS CloudWatch service.
 
 ## Hotfix: 2022-11-24
 
-### `공통`
+### `Common`
 
-<Status>Change</Status> <UI>이벤트 설정</UI> 메뉴와 <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>이벤트 수신 태그</UI> 기능 사용 중 수신 태그를 삭제하면, 알림 수신이 불가능한 버그가 발생해 다음 메뉴에서 태그 삭제 기능 임시 제한
+<Status>Change</Status> In <UI>Event Setting</UI> and <UI>Notification Setting</UI>, if the reception tag was deleted while using the <UI>Event Receiving Tag</UI> function, the alert reception was impossible. Accordingly, the tag deletion has been temporarily disabled in the following menus.
 
--   애플리케이션 상품군: 메트릭스(복합 메트릭스 포함), 히트맵 패턴, 이상치 탐지, 로그
--   서버 상품군: 메트릭스(복합 메트릭스 포함), 이상치 탐지, 로그
--   쿠버네티스 상품군: 메트릭스(복합 메트릭스 포함), 히트맵 패턴, 이상치 탐지, 로그
--   데이터베이스 상품군: 메트릭스(복합 메트릭스 포함), 이상치 탐지
+-   Application products: Metrics (including the composite metrics), hitmap patterns, anomaly detections, logs
+-   Server products: Metrics (including the composite metrics), anomaly detections, logs
+-   Kubernetes products: Metrics (including the composite metrics), hitmap patters, anomaly detections, logs
+-   Database products: Metrics (including the composite metrics), anomaly detections
 
 ## Official Release: 2022-11-02
 
 ### Log
 
-<Status>Change</Status> 로그 파서 설정 UI 수정
+<Status>Change</Status> Modified the log parser configuration UI.
 
 -   Modified to select a parser type when adding the log parser (Grok, JSON format parser)
--   JSON 포맷 파서 UI 변경 - [다음 문서](../../log/log-setting) 참조
+-   JSON format parser UI update - See [the following](../../log/log-setting).
 
 ### Integration
 
-<Status>Change</Status> AWS Cloud Watch - Access Key deprecated 안내 수정
+<Status>Change</Status> AWS Cloud Watch - Modified the access key deprecated guide.
 
 -   Deleted the access key entry field when a new item is created
 -   Set not to modify the access key and to add the deprecated guide when modifying existing items
 
 ### Flex Board
 
--   <Status>Fixed</Status> 대시보드 검색 버튼 UI 수정
+-   <Status>Fixed</Status> Modified the dashboard search button UI.
 
--   <Status>Fixed</Status> 위젯 차트 설정 UI 디자인 수정
+-   <Status>Fixed</Status> Modified the widget chart configuration UI design.
 
--   <Status>Change</Status> Pending Pod 위젯에 일부 데이터 추가 표시하도록 수정
+-   <Status>Change</Status> Modified to display partial data additionally in the Pending Pod widget.
 
 ### Transaction Profiles
 
--   <Status>Fixed</Status> 멀티 트랜잭션에서 프로파일 상세 보기 화면이 모달과 새창에서 표현 형식이 서로 다른 오류 수정
+-   <Status>Fixed</Status> Fixed the error where the profile detail view screens in multi-transaction have different display formats in the modal and a new window.
 
 ### Transaction search
 
-<Status>Fixed</Status> 필터 검색어에 공백 입력해 검색 요청 수행 시 서버 타임아웃 발생 - 우회 처리를 위해 url 입력 값에 한하여 트림(trim) 처리 후 API 요청하도록 수정
+<Status>Fixed</Status> Server timeout upon a search request by entering blank in the filter search keyword - Modified to request the API after trimming the URL input for bypassing.
 
 ### Statistics
 
-<Status>Change</Status> <UI>통계</UI> > <UI>보고서</UI> 메뉴에서 쿼리 검색 요청 수행 시 줄넘김 인식 못하는 현상 수정 - SQL 케이스의 경우 inputbox 대신 textarea 사용하도록 수정
+<Status>Change</Status> In <UI>Statistics</UI> > <UI>REPORT</UI>, fixed the issue where line breaks are not recognized upon query search requests; modified to use the text area instead of the input box in case of an SQL statement.
 
 ### Metrics Chart
 
--   <Status>Change</Status> 메트릭스 차트의 <UI>시간 병합</UI> 옵션을 <UI>기본</UI>으로 선택한 경우 태그 메타에 설정한 시간 병합 방법으로 차트를 만들도록 수정
+-   <Status>Change</Status> If the <UI>Time Merge</UI> option of the metrics chart is selected by <UI>default</UI>, modified to create charts by using the time merge set in the tag meta.
 
--   <Status>Fixed</Status> 메트릭스 차트에서 에이전트를 전체 선택하여 데이터 조회 시 서버 부하 발생 버그 수정
+-   <Status>Fixed</Status> Fixed the bug that causes server load when searching data by selecting all agents in the metric chart.
 
 ### Container Map
 
-<Status>Change</Status> 파드(POD) 카테고리에 여러 개의 애플리케이션이 있을 경우 라벨에 애플리케이션 개수를 표현하도록 수정
+<Status>Change</Status> Modified to display the number of applications on the label when there are multiple applications in the Pod category.
 
 <!-- <Status>Change</Status> 컨테이너맵 데이터의 duration을 **front.config** 파일에서도 설정할 수 있도록 수정 -->
 
 ### Database
 
-<Status>Feature</Status> 액티브 세션 테이블에 문자열 필터링 <UI>포함</UI>, <UI>미포함</UI>, <UI>일치</UI>, <UI>불일치</UI> 옵션을 설정할 수 있도록 기능 추가
+<Status>Feature</Status> Added the function to set any option of <UI>Includes</UI>, <UI>Excludes</UI>, <UI>Equal</UI>, and <UI>Unequal</UI> in the active session table.
 
-### `공통`
+### `Common`
 
--   <Status>Feature</Status> 조직/그룹/프로젝트에서 멤버 제거 시 하위 그룹/프로젝트에서도 해당 멤버 제거 옵션 추가
+-   <Status>Feature</Status> Added the option to delete a member from the subgroups and subprojects as well when deleting the member from an organization/group/project.
 
--   <Status>Fixed</Status> 멤버 목록에서 멤버의 권한이 없는 경우 <UI>권한 없음</UI>으로 표시하도록 수정
+-   <Status>Fixed</Status> Modified to display <UI>No permission</UI> if the member has no role in the member list.
 
--   <Status>Fixed</Status> 멤버 목록 페이지에서 결제 권한 중복 표시 버그 수정
+-   <Status>Fixed</Status> Fixed the bug that displays duplicate payment permissions on the member list page.
 
--   <Status>Fixed</Status> 메트릭스 큐브 필터 팝오버 창이 닫히지 않는 현상 수정
+-   <Status>Fixed</Status> Fixed the issue where the Matrix Cube Filter popover window does not close.
 
 ### Subscription
 
--   <Status>Feature</Status> 프로젝트 유료 전환, 프로젝트 유료 전환 내역 페이지에서 '빌링 권한 미보유 프로젝트' 및 '삭제(대기) 상태의 프로젝트' 조회 기능 추가
+-   <Status>Feature</Status> Added the search function for projects with no billing permission and for deleted (standby) projects on the Project Subscription and its history pages.
 
--   <Status>Fixed</Status> 프로젝트 리스트를 CSV 파일로 다운로드 시 월간 예상 비용이 '[Object object]' 표시 버그 수정
+-   <Status>Fixed</Status> Fixed the bug that where estimated monthly cost appears as "[Object object]" when downloading the project list as a CSV file.
 
--   <Status>Fixed</Status> '빌링 권한 미보유 프로젝트'일 경우 프로젝트 상태 미표시 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the project status does not appear for the `projects with no billing role`.
 
 ### Payment Information
 
-<Status>Change</Status> 프로젝트를 생성하지 않은 유저도 결제 정보를 등록할 수 있도록 결제 정보 등록 버튼을 노출하도록 수정
+<Status>Change</Status> Modified to expose the Payment Information Registration button to allow users who have not created any project can register payment information.

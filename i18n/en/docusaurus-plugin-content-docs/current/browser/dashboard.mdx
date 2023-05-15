@@ -61,99 +61,99 @@ To check the overall status, select **_Page Group_** in the upper right corner. 
 
 -   **_Average Page Load Time TopN_**
 
-    It displays the average page load times by page group. The horizontal bar chart displays the average load times for each page group during the lookup period. 상위 8개까지만 표시됩니다.
+    It displays the average page load times by page group. The horizontal bar chart displays the average load times for each page group during the lookup period. Only the top 8 are displayed.
 
--   **_페이지 로드 수 TopN_**
+-   **_Page Load Count TopN_**
 
-    페이지 로드 수를 페이지 그룹별로 표시합니다. 수평 막대 차트는 조회 시간 동안 발생한 페이지 그룹별 로드수의 합계입니다. 상위 8개까지만 표시됩니다.
+    Page load counts are displayed by the page group. The horizontal bar chart displays the sum of loads for each page group during the lookup period. Only the top 8 are displayed.
 
-## 페이지 로드 히트맵
+## Page Load Hitmap
 
 ![Page load hitmap](/img/browser-pageload-hitmap.png)
 
 **_Page Load Hitmap_** is a distribution chart of response times for page loads over time.
 
--   가로축은 페이지 로드 이벤트의 종료시간, 세로축은 페이지 로드 이벤트의 경과 시간입니다.
+-   The horizontal axis is the end time of the page load event, and the vertical axis is the elapsed time of the page load event.
 
--   정상 페이지 로드 이벤트는 하늘색 → 파란색 → 남색 순으로 표현합니다.
+-   Normal page load events are displayed in light blue → blue → Indigo in order.
 
--   에러 발생 페이지 로드 이벤트는 노란색 → 주황색 → 빨간색 순으로 표현합니다. 에러 페이지 로드 이벤트는 페이지를 불러오는 중 브라우저 에러가 발생한 경우입니다.
+-   Erroneous page load events are displayed in yellow → orange → red in order. The erroneous page load event occurs when a browser error is encountered while loading pages.
 
--   Drag a specific area of the chart to see the detailed information. **_페이지 로드 상세_** 창이 나타나며 드래그한 영역의 로드 이벤트에 대한 상세 정보를 확인할 수 있습니다. 관련한 자세한 내용은 [다음 문서](analyze-pageload#pageload-details)를 참조하세요.
+-   Drag a specific area of the chart to see the detailed information. The **_Page Load Detail_** window appears. You can see the detailed information of the load event in the dragged area. For more information, see [the following](analyze-pageload#pageload-details).
 
-## 페이지별, 메시지별 에러 건수
+## Error counts per page and message
 
 ![Error count](/img/browser-error-num.png)
 
-최종 사용자가 브라우저 애플리케이션을 사용하는 동안 발생한 브라우저 에러를 표시합니다. 페이지별로 발생한 에러와 에러 메시지별로 표시합니다. 이를 통해 에러가 주로 발생되는 페이지와 에러에 대한 내용을 빠르게 식별할 수 있습니다.
+It displays the browser errors encountered by end users while using the browser applications. The errors are displayed for each page and error message. Through this, you can quickly identify the pages where errors usually occur and the content of each error.
 
--   **_페이지 에러 건수_**
+-   **_Page Error Count_**
 
-    It displays the numbers of all errors on each page. 차트 위에 마우스 커서를 가져가면 페이지 그룹의 에러 건수를 툴팁 형태로 확인할 수 있습니다.
+    It displays the numbers of all errors on each page. If you hover your mouse over the chart, you can see the number of errors in the page group.
 
--   **_에러 메시지별 에러 건수_**
+-   **_Error Counts per Error Message_**
 
-    콘솔 에러가 아닌 소스 에러 및 AJAX 에러에 대한 메시지를 표시합니다. 수평 막대 차트는 조회 시간 동안 발생한 에러 메시지별 오류 수의 합계입니다. 상위 8개까지만 표시됩니다.
+    It displays the messages for source and AJAX errors, excluding console errors. The horizontal bar chart displays the sum of errors for each error message during the lookup period. Only the top 8 are displayed.
 
-## 유저 세션 수, 유전 세션
+## User session count and user sessions
 
 ![User sessions](/img/browser-user-session.png)
 
-브라우저 애플리케이션에 접속한 사용자 세션 수를 실시간으로 모니터링할 수 있습니다. 이를 통해 브라우저 애플리케이션의 사용량을 파악할 수 있습니다. 세션 수가 급격하게 늘어난다면 사용자 수가 증가했음을 의미합니다. 반면 세션 수가 감소하면 사용자가 애플리케이션을 더 이상 사용하지 않거나 불편한 경험을 겪었을 가능성이 있습니다.
+You can monitor the numbers of user sessions accessing the browser applications in real time. You can see the overall usage of your browser applications through this. A sharp increase in the session count indicates an increase in the number of users. On the other hand, if the session count decreases, it is likely that many users are no longer using the application or had uncomfortable experiences.
 
-유선 세션 위젯과 다른 위젯들을 함께 사용하면 애플리케이션의 사용 현황을 종합적으로 파악할 수 있습니다.
+If you use the wired session widget and other widgets together, you can see a comprehensive view of the application usage.
 
--   **_유저 세션 수_**
+-   **_User Session Count_**
 
-    조회 시간을 기준으로 중복을 제거한 총 유저 세션 수를 표시합니다.
+    It displays the total number of non-overlapping user sessions based on the lookup time.
 
--   **_유저 세션_**
+-   **_User Sessions_**
 
-    5초, 5분, 1시간 간격으로 중복되지 않은 유저 세션 수를 표시합니다. 위젯의 오른쪽 위에 ![더보기 아이콘](/img/ico-more.svg) 버튼을 선택한 다음 메트릭스 변경 버튼을 선택하세요. 원하는 시각 간격을 선택할 수 있습니다.
+    It displays the numbers of non-overlapping user sessions every 5 seconds, 5 minutes, and 1 hour. Select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Change Metric. You can select a desired time interval.
 
-## 평균 AJAX 응답 시간 TopN
+## Average AJAX Response Time TopN
 
 ![AJAX response time](/img/browser-ajax-response-time.png)
 
-브라우저 애플리케이션은 AJAX를 통해 렌더링에 필요한 데이터를 주고 받는 경우가 많습니다. 페이지 로드 이후에도 AJAX가 계속해서 발생하는 페이지에서는 AJAX의 로드가 브라우저 애플리케이션의 사용자 경험에서 중요한 지표로 사용될 수 있습니다. **_평균 AJAX 응답 시간 TopN_** 위젯은 최종 사용자가 브라우저 애플리케이션을 사용할 때 발생하는 AJAX의 평균 응답시간입니다.
+Browser applications frequently send and receive data for rendering via AJAX. On pages where AJAX events continue to occur after page loads, the load of AJAX can be used as an important metric for user experience to browser applications. The **_Average AJAX Response Time TopN_** widget displays the average AJAX response times when end users are using the browser applications.
 
--   AJAX 요청 path별로 차트를 제공하며 요청 호스트별, 요청 페이지별, 전체 평균 기준으로 선택해 확인할 수 있습니다. 위젯의 오른쪽 위에 ![더보기 아이콘](/img/ico-more.svg) 버튼을 선택한 다음 메트릭스 변경 버튼을 선택하세요. 차트 데이터를 변경할 수 있습니다.
+-   It provides charts for each AJAX request path. You can select and check the charts by the request host, request page, and overall average. Select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Change Metric. You can change the chart data.
 
--   기본으로 조회 시간 기준 상위 10개에 해당하는 데이터가 표시됩니다. 데이터 개수를 변경하려면 위젯의 오른쪽 위에 ![더보기 아이콘](/img/ico-more.svg) 버튼을 선택한 다음 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택하세요. 화면 오른쪽 위에 상위 N 버튼을 선택하면 개수를 변경할 수 있는 옵션이 나타납니다.
+-   By default, the top 10 data appears based on the lookup time. To change the data count, select ![More icon](/img/ico-more.svg) on the upper right of the widget and then select ![Display Detail icon](/img/ico-detail-mode.svg). If you select the Top N button on the upper right of the screen, the option to change the count appears.
 
-## AJAX 실패 건수
+## AJAX failure count
 
 ![AJAX fail count](/img/browser-ajax-fail-count.png)
 
-AJAX 에러는 상태 코드가 400 이상이거나 요청을 자체를 하지 못해 취소된 경우를 의미합니다. 브라우저 애플리케이션에서 발생하는 AJAX 에러 건수에 대하여 fetch 또는 xhr 타입으로 분류하여 표시됩니다.
+The AJAX error indicates that the status code is 400 or higher or the request has been canceled because the request itself could not be executed. It displays the number of AJAX errors occurring in the browser applications by classifying them by the fetch or XHR type.
 
 ## AJAX HITMAP
 
-브라우저 애플리케이션에서 발생한 AJAX 요청을 히트맵 차트 형태로 제공하며 각 요청에 대한 상세 정보는 테이블 형식으로 확인할 수 있습니다. 각 AJAX를 분석하여 성능 이상의 원인을 특정할 수 있습니다.
+AJAX requests from browser applications are provided in the form of a hitmap chart, and the detailed information on each request can be viewed in a table form. By analyzing each AJAX, you can pinpoint the cause of the performance anomaly.
 
-### 히트맵 차트
+### Hitmap Chart
 
 ![AJAX hitmap](/img/rum-ajax-hitmap.png)
 
-AJAX 히트맵은 시간에 따른 AJAX 요청의 응답 시간을 분포도 차트로 표시합니다.
+The AJAX hitmap chart displays a distribution of the response times of AJAX requests over time.
 
--   가로축은 AJAX 종료 시간, 세로축은 AJAX 로드 시간입니다.
+-   The horizontal axis is the AJAX end time, and the vertical axis is the AJAX load time.
 
 -   Normal AJAXs are displayed in light blue → blue → Indigo in order.
 
--   Erroneous AJAXs are displayed in yellow → orange → red in order. Their state code is 400. 차트에서 에러만 확인하려면 위젯 오른쪽 위에 **_에러_** 버튼을 선택하세요.
+-   Erroneous AJAXs are displayed in yellow → orange → red in order. Their state code is 400. To see only the errors on the chart, select **_Error_** on the upper right of the widget.
 
--   **_Y축 자동_** 버튼이 활성화되어 있으면 y축의 최대값이 분포도에 따라 자동으로 변경됩니다. y축을 고정하려면 **_Y축 자동_** 버튼을 선택해 비활성화하세요.
+-   If **_Y Axis Auto_** is active, the maximum value of the Y axis automatically changed depending on the distribution. To fix the Y-axis, select **_Y-Axis Auto_** to disable it.
 
--   ![위 방향 아이콘](/img/up-arrow.svg) 또는 ![아래 방향 아이콘](/img/down-arrow.svg) 버튼을 선택해 차트의 위치를 위 또는 아래 방향으로 이동할 수 있습니다.
+-   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to move the chart location up or down.
 
 -   Drag a specific area of the chart to see the detailed information. It provides AJAX information details in the form of table. By applying an error filter, you can see only AJAXs with errors.
 
-### AJAX 이벤트 상세 정보
+### AJAX Event Detailed Information
 
 ![AJAX details](/img/rum-ajax-details.png)
 
-히트맵 차트의 셀 영역을 드래그하면 상세 정보를 테이블로 제공합니다. By applying an error filter, you can see only AJAXs with errors. Each AJAX has the following information:
+If you drag a cell of the hitmap chart, the detailed information is provided in a table. By applying an error filter, you can see only AJAXs with errors. Each AJAX has the following information:
 
 -   AJAX URL
 
@@ -167,17 +167,17 @@ AJAX 히트맵은 시간에 따른 AJAX 요청의 응답 시간을 분포도 차
 
 -   AJAX detailed timing
 
-## 지역별 페이지 로드 시간 및 수
+## Page load times and counts per region
 
 ![Pageload map](/img/browser-pageload-map.png)
 
-It provides the page load times and page load counts per region in a chart for browser applications. 지역별로 웹사이트의 성능을 쉽게 비교할 수 있습니다.
+It provides the page load times and page load counts per region in a chart for browser applications. You can easily compare the website performances for each region.
 
 -   You can zoom in or out the map using the mouse wheel.
 
 -   Select a desired country on the world map to switch to a specific country's regional map view for monitoring. Currently only Korea is available.
 
--   국가별 또는 지역별 지도로 전환하려면 위젯의 오른쪽 위에 ![더보기 아이콘](/img/ico-more.svg) 버튼을 선택한 다음 메트릭스 버튼을 선택하세요. **_WORLD_** 또는 국가를 선택할 수 있습니다.
+-   To switch to the map by country or region, select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Metrics. You can select **_WORLD_** or a country.
 
 -   In case of regional maps, data appears based on the upper administrative district. (Korea: province or metropolitan city)
 
@@ -185,34 +185,34 @@ It provides the page load times and page load counts per region in a chart for b
 
 ![Pageload by browser](/img/browser-pageload-by-browser.png)
 
-브라우저 애플리케이션별 페이지 로드 시간과 페이지 로드 수를 제공합니다. 브라우저별 성능을 쉽게 비교할 수 있습니다. **_페이지 로드 시간_** 또는 **_페이지 로드 수_**로 데이터를 변경하려면 위젯의 오른쪽 위에 ![더보기 아이콘](/img/ico-more.svg) 버튼을 선택한 다음 메트릭스 버튼을 선택하세요.
+It provides the page load times and page load counts for browser applications. You can easily compare the performances of different browsers. To change the data to **_Page Load Time_** or **_Page Load Count_**, select ![More icon](/img/ico-more.svg) on the upper right of the widget, and then select Metrics.
 
-## 코어 웹 바이탈 지표
+## Core Web Vitals Metric
 
-코어 웹 바이탈(Core Web Vitals)은 구글에서 정의한 사용자 경험에 영향을 미치는 다양한 측정값 중에서 웹사이트의 성능과 관련된 3가지 중요한 지표입니다. 지표들은 웹사이트가 어떻게 로딩되고 사용자와 상호 작용하는지에 따라 다르게 표시됩니다.
+Core web vitals are three important metrics related to the website performance among various metrics that affect user experience as defined by Google. Metrics are displayed differently depending on the website loading and interaction with users.
 
--   **최대 콘텐츠풀 페인트(Largest Contentful Paint)**: 웹사이트에서 가장 큰 콘텐츠 요소가 로드되는 시간을 의미하는 지표입니다.
+-   **Largest Contentful Paint**: A metric that measures the time loaded for the largest content element on your website.
 
--   **최초 입력 지연(First Input Delay)**: 웹사이트가 로딩되고 사용자가 첫 번째 입력을 하기까지 걸리는 시간입니다. 
+-   **First Input Delay**: Time taken between the website loading and user's first input. 
 
--   **누적 레이아웃 이동(Cumulative Layout Shift)**: 웹사이트가 로딩되는 동안 레이아웃이 얼마나 자주 변경되는지를 나타내는 지표입니다.
+-   **Cumulative Layout Shift**: A metric of how often the layout changes while the website is loaded.
 
-이러한 측정값들은 웹사이트의 성능을 평가하고 개선하는 데 중요한 역할을 합니다. 코어 웹 바이탈 지표를 이해하고 측정하는 것은 사용자 경험을 개선하고 웹사이트의 성능을 최적화하는 데 매우 유용합니다.
+These measurements play an important role in evaluating and improving the website performance. Understanding and measuring the core web vitals metrics is very useful to improve user experiences and optimizing the website performance.
 
-### 최대 콘텐츠풀 페인트(Largest Contentful Paint)
+### Largest Contentful Paint
 
 ![LCP](/img/browser-lcp-widget.png)
 
-각 페이지 그룹의 평균 최대 콘텐츠풀 페인트 시간을 표시합니다. 조회 시간 동안 발생한 각 페이지 그룹 중 상위 8개 그룹의 최대 콘텐츠풀 페인트 시간의 평균을 수평 막대 차트로 표시됩니다.
+It displays the average maximum contentful paint time for each page group. It displays the averages of maximum contentful paint times for the top 8 groups of each page group during the lookup time in a horizontal bar chart.
 
-### 최초 입력 지연(First Input Delay)
+### First Input Delay
 
 ![FID](/img/browser-fid-widget.png)
 
-각 페이지 그룹의 평균 최초 입력 지연 시간을 표시합니다. 차트 위로 마우스를 오버하면 해당 페이지 그룹에 대한 시간 값이 표시됩니다.
+It displays the average initial input delay times for each page group. If you hover your mouse over the chart, the time value for the page group appears.
 
-### 누적 레이아웃 이동(Cumulative Layout Shift)
+### Cumulative Layout Shift
 
 ![CLS](/img/browser-cls-widget.png)
 
-각 페이지 그룹의 누적 레이아웃 값을 표시합니다. 차트 위로 마우스를 오버하면 해당 페이지 그룹에 대한 값이 표시됩니다.
+It displays the cumulative layout values for each page group. If you hover your mouse over the chart, the value for the page group appears.

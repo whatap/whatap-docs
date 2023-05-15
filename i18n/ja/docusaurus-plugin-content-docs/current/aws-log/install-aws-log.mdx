@@ -57,7 +57,7 @@ AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 
 
 <!--  프로젝트 생성 -->
 
-{@include: ../getting-started/_create-project-v2.mdx}  
+{@include: ../getting-started/_create-project-v2.mdx}
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -85,7 +85,7 @@ AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 
     WhaTap Forwarderのメモリ割り当てサイズ（MB）を指定します。
 -   **Timeout**<span class='type'>Second</span><br/>
     デフォルト値`150`<br/>
-    WhaTap Forwarderの休止期間（秒）を指定します。 ログ転送リクエストがないときにLambda Functionが削除されるまでの時間を指定します。 
+    WhaTap Forwarderの休止期間（秒）を指定します。ログ転送リクエストがないときにLambda Functionが削除されるまでの時間を指定します。 
 -   **UseReservedConcurrency**<span class='type'>Boolean</span><br/>
     デフォルト値`false`<br/>
     ログの安定的な転送のために、WhaTap Forwarderに割り当てる最大Function数の指定の可否を設定します。
@@ -112,12 +112,12 @@ AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 
 1.  上段右側の![number 1](/img/number-01.png)**_更新_**ボタンをクリックしてスタックの作成進行状況を確認してください。 
     :::note
 
-    スタックインストールの最終段階であるWhaTapAWSLogの作成が進行中であれば、**WhaTapForwarder**の**ARN**を確保することができます。 
+  スタックインストールの最終段階であるWhaTapAWSLogの作成が進行中であれば、**WhaTapForwarder**の**ARN**を確保することができます。 
 
-    :::
+  :::
 
-1.  Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)***Pyhsical ID***を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
-2.  詳細画面右側の***Description***領域で![number 3](/img/number-03.png)***Function ARN***(**WhaTap Forwarder ARN**)を確認することができます。
+1.  Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)**_Pyhsical ID_**を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
+2.  詳細画面右側の**_Description_**領域で![number 3](/img/number-03.png)**_Function ARN_**(**WhaTap Forwarder ARN**)を確認することができます。
 3.  次のステップのためにコピーしてください。
 
 ### インストール失敗時のチェックリスト
@@ -186,7 +186,7 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 ### IAMポリシーの作成{#create-iam-policy}
 
-アクセス対象のリソースに対する許可または拒否を指定します。WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS IAMポリシー作成_**タブを参照して進めてください。 欠落したポリシーがある場合、設定は正常に行われません。
+アクセス対象のリソースに対する許可または拒否を指定します。WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS IAMポリシー作成_**タブを参照して進めてください。欠落したポリシーがある場合、設定は正常に行われません。
 
 ![IAMポリシー作成sc](/img/aws-log-create-policy.png)
 
@@ -237,7 +237,7 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 1.  下段の![number 2](/img/number-02.png) **_Review Policy_**ボタンをクリックしてください。
 2.  ![number 3](/img/number-03.png)ポリシー名を指定してください。
-3.  下段の![number 4](/img/number-04.png) **_Create Policy_**ボタンを選択してください。
+3.  下段の![number 4](/img/number-04.png)**_Create Policy_**ボタンを選択してください。
 
 :::note
 
@@ -291,12 +291,12 @@ CloudWatch LogとS3に搭載されるArchive Logを購読することができ�
 
 ### AWS CloudWatch Logの照会およびサブスクリプション
 
-WhaTap**_エージェントのインストール_** > **_インストール案内_**セクションの**_AWS Resource Logの照会およびサブスクリプション_**タブで上段の***AWS Cloud Watch Log Group***を選択して進めてください。 
+WhaTap**_エージェントのインストール_** > **_インストール案内_**セクションの**_AWS Resource Logの照会およびサブスクリプション_**タブで上段の**_AWS Cloud Watch Log Group_**を選択して進めてください。 
 
 ![AWS CloudWatch Logの照会およびサブスクリプションsc](/img/aws-log-cloudwatch-subs.png)
 
 1.  AWS Logがインストールされた![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
-2.  [기존 단계](#whatapforwarder-arn)에서 획득한 **WhaTap Forwarder ARN**을 복사 후![number 2](/img/number-02.png) **_AWS IAM Role ARN_**에 붙여넣기 하세요.
+2.  [既存のステップ](#whatapforwarder-arn)で獲得した**WhaTap Forwarder ARN**をコピー後![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
 3.  ![number 3](/img/number-03.png) **_照会_**ボタンを選択してから、サブスクリプションできるAWSリソースを照会してください。
 4.  照会されたリソースのうち![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
 5.  ![number 5](/img/number-05.png) **_登録_**ボタンを選択してください。
@@ -312,12 +312,12 @@ WhaTap**_エージェントのインストール_** > **_インストール案�
 
 ### AWS S3 Bucketのサブスクリプション
 
-WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS Resource Log照会およびサブスクリプション_**タブで上段の***AWS3 Bucket***を選択して進めてください。 
+WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS Resource Log照会およびサブスクリプション_**タブで上段の**_AWS3 Bucket_**を選択して進めてください。 
 
 ![AWS S3 Bucketの照会およびサブスクリプションsc](/img/aws-log-s3-subs.png)
 
 1.  AWS Logがインストールされた![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
-2.  [기존 단계](#whatapforwarder-arn)에서 획득한 **WhaTap Forwarder ARN**을 복사 후 ![number 2](/img/number-02.png) **_AWS IAM Role ARN_**에 붙여넣기 하세요.
+2.  [既存のステップ](#whatapforwarder-arn)で獲得した**WhaTap Forwarder ARN**をコピー後![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
 3.  ![number 3](/img/number-03.png) **_照会_**ボタンを選択してから、サブスクリプションできるAWSリソースを照会してください。
 4.  照会されたリソースのうち![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
 5.  ![number 5](/img/number-05.png) **_登録_**ボタンを選択してください。
@@ -326,15 +326,15 @@ WhaTap**_エージェントインストール_** > **_インストール案内_*
 
 ![AWS Logモニタリングの開始](/img/aws-log-start.png)
 
-インストールを完了した後、**_管理_** >**_ログ設定_**メニューに移動してください。 **_ログモニタリングの開始_**セクションで**_ログモニタリングサービスのアクティブ化_**トグルボタンをクリックし、AWS Logモニタリングを開始してください。 
+インストールを完了した後、**_管理_** > **_ログ設定_**メニューに移動してください。 **_ログモニタリングの開始_**セクションで**_ログモニタリングサービスのアクティブ化_**トグルボタンをクリックし、AWS Logモニタリングを開始してください。 
 
 -   ![アイコン](/img/ic-toggle-on.svg)トグルボタンをオンにすると、ログモニタリンがアクティブになります。
--   ![アイコン](/img/ic-toggle-off.svg)トグル ボタンをオフにすると、ログモニタリンが非アクティブになります。 ログをこれ以上保存しません。
+-   ![アイコン](/img/ic-toggle-off.svg)トグル ボタンをオフにすると、ログモニタリンが非アクティブになります。ログをこれ以上保存しません。
 
 モニタリングがアクティブ化されると、**_ダッシュボード_** > **_ライブテール_**メニューから流入されるログの出力を確認することができます。
 
 :::note
 
-프로젝트에 대한 **수정 권한**이 있는 경우에만 로그 모니터링을 활성화할 수 있습니다. 권한에 대한 자세한 내용은 [다음 문서](../project/project-structure)를 참조하세요.
+プロジェクトに対する**修正権限**がある場合に限ってログモニタリングをアクティブにすることができます。権限の詳細については、[次の文書](../project/project-structure)を参考にしてください。
 
 :::

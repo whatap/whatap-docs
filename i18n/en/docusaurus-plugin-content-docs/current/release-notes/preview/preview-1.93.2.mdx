@@ -11,226 +11,226 @@ toc_max_heading_level: 3
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
--   <https://preview.whatap.io>에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. 
+-   [In https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
 
----
+* * *
 
 ## Hotfix : 2023-01-10
 
-### `공통`
+### `Common`
 
 #### Flex Board
 
--   <Status>Fixed</Status> 대시보드 생성, 수정 시 대시보드 제목 최대 100자로 제한
+-   <Status>Fixed</Status> When creating or editing a dashboard, the dashboard title has been limited to 100 characters.
 
--   <Status>Fixed</Status> 대시보드 선택 후 <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>필터</UI> 기능 이용 시, <UI>저장된 필터</UI>의 항목을 수정할 때 나타나는 창의 중복되는 <img src='/img/ico-close.svg' alt='닫기 아이콘'/> 닫기 버튼 제거
+-   <Status>Fixed</Status> When using the <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>Filter</UI> function after selecting a dashboard, deleted the <img src='/img/ico-close.svg' alt='닫기 아이콘'/> Close button that appears when modifying the <UI>saved filters</UI>.
 
--   <Status>Fixed</Status> 이퀄라이져 차트 클릭 시 액티브 트랜잭션 기능을 지원하는 상품에서만 상세 정보 창이 열리도록 수정
+-   <Status>Fixed</Status> Modified to open the detailed information window for only the products that support the active transaction function when the equalizer chart is clicked.
 
--   <Status>Fixed</Status> 액티브 트랜잭션 위젯을 클릭하면 나타나는 상세 정보 창의 로딩 레이아웃 개선
+-   <Status>Fixed</Status> Improved the loading layout of the detailed information window that appears when the active transaction widget is clicked.
 
--   <Status>Fixed</Status> 시간 선택 UI 옵션의 애니메이션이 갱신되지 않는 현상 수정
+-   <Status>Fixed</Status> Fixed the problem where the animation of the time selection UI option is not updated.
 
 #### Metrics Chart
 
--   <Status>Fixed</Status> 위젯에서 시간 변경시 에이전트를 전체 선택하는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where all agents are selected when changing the time in the widget.
 
--   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI>에서 <UI>메트릭스 차트</UI> 메뉴로 이동할 때 에이전트를 중복 선택하는 버그 수정
+-   <Status>Fixed</Status> In <UI>Application Dashboard</UI>, fixed the bug where double selection of agents is made when going to <UI>Metrics Chart</UI>.
 
 #### Alert
 
--   <Status>Fixed</Status> <UI>이벤트 설정</UI> > <UI>복합 메트릭스</UI> > <UI>이벤트 추가</UI> 기능에서 제목과 메시지를 입력하지 않으면 저장할 수 없도록 수정
+-   <Status>Fixed</Status> In <UI>Event Setting</UI> > <UI>Composite Metrics</UI> > <UI>Add alert policy</UI>, modified not to be saved without entering the title and message.
 
--   <Status>Fixed</Status> <UI>이벤트 설정</UI> > <UI>복합 메트릭스</UI> > <UI>이벤트 추가</UI> > <UI>차트로 생성하기</UI> > <UI>이벤트 조회</UI> > <UI>텍스트</UI> 모드에서 위젯 종류를 차트 또는 테이블로 변경 시 로딩이 계속되는 버그 수정
+-   <Status>Fixed</Status> In <UI>Event Setting</UI> > <UI>Composite Metrics</UI> > <UI>Add alert policy</UI> > <UI>Creating as a Chart</UI> > <UI>Show Event</UI> > <UI>Text</UI> mode, fixed the bug where loading continues when changing to the widget type or table.
 
--   <Status>Fixed</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 추가</UI> 창에서 <UI>프로젝트 이벤트 수신설정 메뉴</UI> 또는 <UI>프로젝트 이벤트 수신설정 메뉴 바로가기</UI> 버튼을 클릭하면 URL 경로가 애플리케이션 타입(<code>apm</code>)으로 변경되는 버그 수정
+-   <Status>Fixed</Status> In the <UI>Add alert policy</UI> window under <UI>Event Setting</UI>, fixed the bug where the URL path is changed to the application type (<code>apm</code>), if <UI>Project Notification Setting Menu</UI> or its shortcut is clicked.
 
--   <Status>Fixed</Status> <UI>이벤트 수신 설정</UI> > <UI>사용자별 이벤트 수신 설정</UI>에서 수신 시간 선택 옵션의 <img src='/img/ico-close.svg' alt='닫기 아이콘'/> 버튼 클릭하면 유효하지 않은 시간 값으로 저장되는 버그 수정 및 <img src='/img/ico-close.svg' alt='닫기 아이콘'/> 버튼 삭제
+-   <Status>Fixed</Status> In <UI>Notification Setting</UI> > <UI>Event Notification Settings Per-User</UI>, fixed the bug where invalid time is saved if <img src='/img/ico-close.svg' alt='닫기 아이콘'/> of the receiving time selector option is clicked and deleted the <img src='/img/ico-close.svg' alt='닫기 아이콘'/> button.
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴를 처음 진입할 경우 설정된 필터에 따라 데이터가 테이블 목록에 반영되지 않는 버그 수정
+-   <Status>Fixed</Status> If <UI>Event History</UI> is accessed for the first time, fixed the bug where the data is not applied to the table list according to the set filters.
 
 #### Log
 
-<Status>Fixed</Status> <UI>라이브 Tail</UI> 메뉴에서 3초 주기의 Tail 데이터 호출이 밀리는 현상 수정
+<Status>Fixed</Status> Fixed the issue where in <UI>Live Tail</UI>, the Tail data calls at an interval of 3 seconds are not delayed.
 
 #### User Behavior
 
-<Status>Fixed</Status> <UI>사이트맵</UI> > <UI>관리</UI> > <UI>사용자 행위</UI> 메뉴에서 테이블의 텍스트가 테이블 영역 밖으로 넘치는 현상 수정
+<Status>Fixed</Status> In <UI>Sitemap</UI> > <UI>Management</UI> > <UI>User Behavior</UI>, fixed the issue where text in the table overflows outside the table area.
 
-#### 에이전트 설정 / 서버 설정
+#### Agent/Server Configuration
 
--   <Status>Change</Status> 쿠버네티스 환경의 프로젝트에서 에이전트 목록을 마스터, 노드, 애플리케이션 단위로 구분
+-   <Status>Change</Status> In a project in the Kubernetes environment, the agent list is divided into master, node, and application units.
 
--   <Status>Feature</Status> 에이전트 별칭 편집 기능 추가
+-   <Status>Feature</Status> Added the agent alias editing function.
 
--   <Status>Fixed</Status> 일부 프로젝트에서 검색 필터 작동하지 않는 문제 수정
+-   <Status>Fixed</Status> Fixed the bug where the search filter does not work in some projects.
 
--   <Status>Fixed</Status> 에이전트 목록이 확장된 상태에서 기존에 선택한 에이전트가 클릭되지 않아 에이전트 목록을 접을 수 없는 문제 수정
+-   <Status>Fixed</Status> Fixed the problem where the agent list is collapsed because the selected agent cannot be clicked while the agent list is expanded.
 
--   <Status>Deprecate</Status> 서버 프로젝트, 쿠버네티스 환경의 프로젝트에서 <b>다중 적용</b> 기능 삭제
+-   <Status>Deprecate</Status> Removed the <b>Applying Multiple</b> function from the server project or the project in the Kubernetes environment.
 
 ### `Application`
 
 #### Topology
 
-<Status>Fixed</Status> <UI>사이트맵</UI> > <UI>통계/보고서</UI> > <UI>토폴로지</UI> > <UI>애플리케이션 통계 토폴로지</UI> 메뉴에서 에이전트를 선택하면 오류가 나는 현상 수정
+<Status>Fixed</Status> In <UI>Sitemap</UI> > <UI>STAT/REPORT</UI> > <UI>Topology</UI> > <UI>Application Statistics Topology</UI>, fixed the issue where an error occurs when an agent is selected.
 
 ### `Server`
 
 #### Server List
 
--   <Status>Fixed</Status> <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>에이전트 이전</UI> 창에서 비활성화된 에이전트를 선택할 수 있는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where any disabled agent can be selected in the <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>Agent Transfer</UI> window.
 
--   <Status>Fixed</Status> CSV 다운로드 시 빈 데이터가 있는 셀에 'undefined'로 표시되는 것을 공백으로 처리하도록 수정
+-   <Status>Fixed</Status> Modified to display the `undefined` item in cells with empty data when downloading CSV, as blank.
 
 #### Analytics
 
-<Status>Fixed</Status> <UI>큐브</UI> 메뉴에서 에이전트 선택 필터가 차트에 적용되지 않는 버그 수정
+<Status>Fixed</Status> In <UI>CUBE</UI>, fixed the bug where the agent selection filter is not applied to charts.
 
 #### Server Setting
 
-<Status>Fixed</Status> <UI>원격 파일 뷰어</UI> 메뉴에서 화면 왼쪽의 메뉴 이름과 일치하도록 화면 위의 메뉴 이름 수정
+<Status>Fixed</Status> In <UI>Remote File Viewer</UI>, renamed the menu on the screen to match the menu name on the left of the screen.
 
 ### `Container`
 
 #### Container Map
 
--   <Status>Fixed</Status> 차트 지표(<UI>ConState (state)</UI>) 목록에서 일부 지표가 'undefined'로 표시되는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where some metrics appear as `undefined` in the chart metrics (<UI>ConState (state)</UI>) list.
 
--   <Status>Fixed</Status> 화면 아래 정보 섹션에서 <img src='/img/ico-info.svg' alt='정보 아이콘'/> 아이콘에 마우스 오버 시 나타나는 툴팁 텍스트가 보이지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where tooltip text does not appear when you hover your mouse over the <img src='/img/ico-info.svg' alt='정보 아이콘'/> icon.
 
--   <Status>Fixed</Status> <UI>필터</UI> 기능 이용 시 <UI>제외</UI> 또는 <UI>포함</UI> 옵션을 선택한 다음 키워드 입력란에서 선택할 수 있는 값과 선택한 값의 이름이 다르게 보이는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the value in the input field is different from the selected value after the <UI>Exclude</UI> or <UI>Include</UI> option is selected while using the <UI>filter</UI> function.
 
 ### `AWS` `AZURE`
 
 #### Project Creation
 
--   <Status>Change</Status> Azure 프로젝트 생성 시 설치 안내 문구 추가
+-   <Status>Change</Status> Added the installation guide text upon creation of an Azure project.
 
--   <Status>Change</Status> Amazon CloudWatch 프로젝트 생성 시 <UI>인증 유효 기간(시)</UI>을 필수로 입력하도록 변경
+-   <Status>Change</Status> Changed the <UI>Validity period(hours)</UI> to be entered as mandatory when creating an Amazon CloudWatch project.
 
 ### `URL`
 
--   <Status>Fixed</Status> <UI>URL 추가하기</UI> 기능 이용 시 <UI>가이드 바로 가기</UI>의 링크 오류 수정
+-   <Status>Fixed</Status> Fixed the link error to the <UI>guide shortcut</UI> when the <UI>Add URL</UI> function is used.
 
--   <Status>Fixed</Status> <UI>URL 목록</UI>에서 차트를 클릭하면 나타나는 창에서 실시간 조회(<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>) 버튼 삭제
+-   <Status>Fixed</Status> Deleted the real-time query (<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>) button in the window that appears after clicking the chart in <UI>URL List</UI>.
 
--   <Status>Fixed</Status> <UI>URL 목록</UI>에서 차트를 클릭하면 나타나는 창에서 '1분' 단위 조회 시 차트에 표시 되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the content does not appear on the chart upon query in the minute units in the window popping up after clicking the chart in <UI>URL List</UI>.
 
 ## Official Release : 2022-12-28
 
-### `공통`
+### `Common`
 
 #### Project Creation
 
--   <Status>Change</Status> 메뉴 이름을 <UI>프로젝트 목록</UI>에서 <UI>상품 카탈로그</UI>로 변경
+-   <Status>Change</Status> Change the menu name from <UI>Project List</UI> to <UI>Product Catalog</UI>.
 
--   <Status>Change</Status> 프로젝트 생성 URL 경로 변경(<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>)
+-   <Status>Change</Status> Changed the project creation URL path (<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>).
 
--   <Status>Change</Status> 프로젝트 생성 화면 UI 변경
+-   <Status>Change</Status> Modified the project creation UI.
 
     ![](/img/create-project-new.png)
 
 #### Project list
 
--   <Status>Fixed</Status> 클러스터 프로젝트 카드 뷰에서 에이전트 수 표시 오류 수정
+-   <Status>Fixed</Status> Fixed the agent count display error in the cluster project card view.
 
--   <Status>Fixed</Status> 즐겨찾기 기능이 오작동하는 현상 수정
+-   <Status>Fixed</Status> Fixed the problem where the favorites feature malfunctioned.
 
--   <Status>Change</Status> 리스트 뷰에서 프로젝트 항목 선택 시 새창이 아닌 페이지로 이동하도록 수정
+-   <Status>Change</Status> Modified to go to the page other than a new window when selecting a project item in the list view.
 
 #### Server Detail, Node Detail
 
-<Status>Fixed</Status> 다음 메뉴 경로에서 '리소스 정보 자세히 보기' 클릭 시, 조회에 사용된 시간 값과 자세히 보기 창의 시간이 일치하지 않는 버그 수정
+<Status>Fixed</Status> Fixed the bug where the search time and the time for the detail view are not matched when clicking "See resource details" in the following menu paths:
 
--   서버 프로젝트 > <UI>서버 목록</UI> > <UI>서버 상세</UI>
+-   Server Project > <UI>Server List</UI> > <UI>Server Detail</UI>
 
--   클러스터 프로젝트 > <UI>리소스</UI> > <UI>노드 상세</UI>
+-   Cluster Project > <UI>Resource</UI> > <UI>Node Details</UI>
 
-#### 경고 알림 > 이벤트 설정
+#### Alert > Event Setting
 
--   <Status>Change</Status> <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 탭에서 알림 목록을 제목 기준으로 정렬하도록 변경
+-   <Status>Change</Status> In <UI>Event Setting</UI> > <UI>Metrics</UI> tab, modified to sort the alert list by the title.
 
--   <Status>Fixed</Status> 프로젝트 수정 권한이 없는 사용자가 <UI>이벤트 설정</UI> 메뉴에서 알림을 수정할 수 없는 버그 수정
+-   <Status>Fixed</Status> In <UI>Event Setting</UI>, fixed the bug where the user with no project Edit role cannot modify the alert.
 
-#### 분석 > 메트릭스 차트
+#### Analysis > Metrics Chart
 
--   <Status>Change</Status> 위젯에서 에이전트를 다중 선택 가능하도록 기능 수정
+-   <Status>Change</Status> Modified the function to select multiple agents in the widget.
 
--   <Status>Feature</Status> 위젯 차트의 Y축 최대값을 고정할 수 있도록 옵션 추가
+-   <Status>Feature</Status> Added the option to fix the maximum value on Y-axis of the widget chart.
 
--   <Status>Fixed</Status> 위젯 '상세 보기'에서 차트 드래그 범위가 1분 이상인 경우에만 조회 기간을 변경하도록 수정
+-   <Status>Fixed</Status> Modified to change the query period only when the chart dragging range in the widget's `Display Detail` is greater than 1 minute.
 
--   <Status>Fixed</Status> 위젯 '상세 보기'에서 데이터 요청 로딩 중인 경우, 위젯의 조회 기간을 변경할 수 없도록 조회 버튼 비활성화
+-   <Status>Fixed</Status> Disabled the view button not to change the query period of the widget while loading the data request in the widget's `Display Detail`.
 
 #### Flex Board
 
--   <Status>Fixed</Status> 클러스터 프로젝트를 히트맵 위젯으로 확인할 수 없는 문제 수정
+-   <Status>Fixed</Status> Fixed the problem where the cluster cannot be viewed by the hitmap widget.
 
--   <Status>Feature</Status> 로그 카운트 수 위젯 카테고리 선택 옵션에 전체 카테고리 옵션 추가
+-   <Status>Feature</Status> Added all category options for the log count widget category selection.
 
--   <Status>Change</Status> 대시보드 템플릿 목록에서 각 항목마다 지원 가능한 상품 카테고리는 아이콘을 표시하도록 수정
+-   <Status>Change</Status> In the dashboard template list, modified to display icons for available product categories for each item.
 
 #### Agent/Server Setting
 
--   <Status>Feature</Status> 다음 메뉴 경로의 에이전트 목록에서 비활성화된 에이전트를 삭제할 수 있는 아이콘 버튼 추가
+-   <Status>Feature</Status> Added an icon button to delete disabled agents from the agent list in the following menu paths.
 
-    -   애플리케이션, 클러스터 프로젝트: **_관리_** > **_에이전트 설정_**
-    -   서버 프로젝트: **_서버 설정_** > **_서버 설정_**
+    -   Application, Cluster Project: **_Management_** > **_Agent CONFIG._**
+    -   Server Project: **_Server Setting_** > **_Server Setting_**
 
--   <Status>Feature</Status> 다음 메뉴 경로에서 <UI>모든 비활성화된 에이전트 삭제</UI> 버튼 추가
+-   <Status>Feature</Status> In the following menu path, added the <UI>Delete All Disabled Agents</UI> button.
 
-    -   애플리케이션, 클러스터 프로젝트: **_관리_** > **_에이전트 설정_**
-    -   서버 프로젝트: **_서버 설정_** > **_서버 설정_**
+    -   Application, Cluster Project: **_Management_** > **_Agent CONFIG._**
+    -   Server Project: **_Server Setting_** > **_Server Setting_**
 
-#### 통계/보고서 > 보고서
+#### STAT/REPORT > REPORT
 
-<Status>Fixed</Status> 보고서 메일 발송 예약 시 이메일 주소 유효성 검사 추가 - 한자, 이모티콘을 제외한 특수기호는 마침표(.), 붙임표(-), 밑줄(_)만 허용하도록 수정
+<Status>Fixed</Status> Added the email address validation test when scheduling the report mailing - modified to allow only period (.), hyphen (-), and underscore (_) as special characters except for Chinese characters and emoticons.
 
----
+* * *
 
 ### `Container`
 
-#### 대시보드 > 컨테이너맵
+#### Dashboard > Container Map
 
--   <Status>Fixed</Status> <UI>Critical</UI> 입력창과 <UI>Warning</UI> 입력창에 동일한 값을 입력하면 입력 창 증가하는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the input fields increase when the same values are entered in <UI>Critical</UI> and <UI>Warning</UI>.
 
--   <Status>Feature</Status> 상세 보기 화면에서 <code>ContainerId</code> Tag에 컨테이너 목록으로 이동하는 링크(<UI>컨테이너 성능 정보</UI>) 추가
+-   <Status>Feature</Status> In Display Detail, added the container list link (<UI>Container Performance</UI>) in the <code>ContainerId</code> tag.
 
--   <Status>Change</Status> TX 프로파일 창 크기 조절
+-   <Status>Change</Status> Adjusted the TX profile window size.
 
--   <Status>Feature</Status> PodStatus가 Pending 상태일 때 <UI>이벤트</UI> 탭을 우선 표시하도록 기능 추가
+-   <Status>Feature</Status> Added the function to display <UI>Event</UI> tab first when PodStatus is in Pending state.
 
--   <Status>Fixed</Status> <UI>로그</UI> 탭 진입하면 컨텐츠가 깜빡이는 현상 수정
+-   <Status>Fixed</Status> Fixed the problem where the content blinks when going to the <UI>Log</UI> tab.
 
-#### 리소스 > 컨테이너목록
+#### Resource > Container List
 
--   <Status>Fixed</Status> 컨테이너 목록의 갯수가 1200개일 경우 화면 멈춤 현상 수정
--   <Status>Feature</Status> 컨테이너 선택 시에 나타나는 <UI>Memory</UI> 탭에 <b>Container Memory Total RSS By Limit (%)</b> 지표 추가
+-   <Status>Fixed</Status> Fixed the screen freezing issue when the number of container lists reaches 1,200.
+-   <Status>Feature</Status> Added the <b>Container Memory Total RSS By Limit (%)</b> metric into the <UI>Memory</UI> tab that appears upon selection of a container.
 
----
+* * *
 
 ### `Server`
 
-#### 서버 목록 > 서버 상세
+#### Server List > Server Detail
 
-<Status>Fixed</Status> 실시간 알림 목록에서 일부 항목을 선택해 <UI>서버 상세</UI> 메뉴로 이동할 경우 화면에 차트를 제대로 표현하지 못하는 문제 수정
+<Status>Fixed</Status> Fixed the problem where charts are not drawn properly on the screen when the <UI>Server Detail</UI> menu appears by selecting several items from the real-time alert list.
 
----
+* * *
 
 ### `Application`
 
-#### 대시보드 > 애플리케이션 대시보드
+#### Dashboard > Application Dashboard
 
--   <Status>Feature</Status> 힙 메모리 위젯에 사용량을 백분율(USED/TOTAL * 100)로 표시하는 버튼 추가
+-   <Status>Feature</Status> Added a button to the heap memory widget to display the usage as percentage (USED/TOTAL * 100).
 
--   <Status>Fixed</Status> 위젯 '상세 보기'에서 차트 데이터 간격을 1시간에서 5분으로 수정
+-   <Status>Fixed</Status> In the widget's "Display Detail," the chart data interval has been changed from 1 hour to 4 minutes.
 
--   <Status>Fixed</Status> 종료된 액티브 트랜잭션의 '프로파일 보기' 클릭 시 화면이 표시되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the screen does not appear when "Show Profile" is clicked for a closed active transaction.
 
-#### 분석 > 큐브
+#### Analysis > Cube
 
-<Status>Change</Status> <UI>국가</UI> 위젯에서 지도를 확대/축소할 수 있도록 차트 변경
+<Status>Change</Status> Changed the chart to zoom in or out the map in the <UI>Country</UI> widget.
 
 <!-- 
 ### MySQL RDS 상품 알파 출시

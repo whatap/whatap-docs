@@ -43,7 +43,7 @@ tasks.named("bootBuildImage") {
 
 -   `BPE_APPEND_JAVA_TOOL_OPTIONS`
 
-    Java 17バージョンを使用する場合は、必ずjvmオプションを追加してください。
+    Java17バージョンを使用する場合は、必ずjvmオプションを追加してください。
 
     ```java
     environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
@@ -65,7 +65,7 @@ tasks.named("bootBuildImage") {
     // 例：environment["BP_WHATAP_OPTIONS"] = "accesskey=aaa-bbb-ccc\nwhatap.server.host=1.1.1.1/2.2.2.2"
     ```
 
-## Tomcat 10環境
+## Tomcat10環境
 
 Tomcat環境では、`weaving=tomcat10`オプションを必須で追加する必要があります。
 

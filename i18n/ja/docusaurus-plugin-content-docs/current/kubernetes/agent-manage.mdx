@@ -3,8 +3,8 @@ id: agent-manage
 title: Kubernetesエージェント
 description: Kubernetes内で実行中のアプリケーションをモニタリングするためにインストールしたエージェント構成について説明します。
 tags:
-  - クバネティス
-  - クバネティスモニタリング
+  - Kubernetes
+  - Kubernetesモニタリング
   - アプリケーションモニタリング
   - エージェント
 ---
@@ -13,7 +13,7 @@ Kubernetes内で実行中のアプリケーションをモニタリングする�
 
 ## エージェント構成
 
-WhaTap Kubernetesをインストールすると、デフォルトでは、Kubernetes環境の\<whatap-monitoring\>Namespaceの下に
+WhaTap Kubernetesをインストールすると、デフォルトでは、Kubernetes環境の&lt;whatap-monitoring&gt;Namespaceの下に
 エージェントのリソースを構成します。
 
 マスターエージェントはDeploymentの形式であり、ノードエージェントはDaemonSet形式です。以下は、Kubernetes環境にインストールされているWhaTapエージェントを確認する方法です。
@@ -32,8 +32,7 @@ WhaTap Kubernetesをインストールすると、デフォルトでは、Kubern
     kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
     ```
 
-以下は、\<whatap-monitoring\>
-Namespace内で実行中のマスターエージェント、ノードエージェントの実行の例です。
+以下は、&lt;whatap-monitoring&gt; Namespace内で実行中のマスターエージェント、ノードエージェントの実行の例です。
 
 ```bash
 $ kubectl get pods -n whatap-monitoring
@@ -46,6 +45,6 @@ whatap-node-agent-9thmw                2/2     Running   0          3h31m
 whatap-node-agent-kpv7d                2/2     Running   0          21h
 ```
 
-以下は、WhaTap Kubernetesコンテナマップに表示されている\<whatap-monitoring\>Namespaceです。
+以下は、WhaTap Kubernetesコンテナマップに表示されている&lt;whatap-monitoring&gt;Namespaceです。
 
 ![コンテナマップ内のwhatap-monitoring Namespace](https://img.whatap.io/media/images/whatap_kubernetes_container_whatap_monitoring.png)

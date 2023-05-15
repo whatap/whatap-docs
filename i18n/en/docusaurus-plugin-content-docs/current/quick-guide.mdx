@@ -15,25 +15,25 @@ For more information about installation and utilization of WhaTap Monitoring age
 
 ## Step-by-step guide for quick start
 
----
+* * *
 
 ### ![](/img/number-01.png) WhaTap sign up{#account}
 
 {@include: account/_create-account.mdx}  
 
----
+* * *
 
 ### ![](/img/number-02.png) Project creation{#cproject}
 
-{@include: getting-started/_create-project-intro-v2.mdx} 
+{@include: getting-started/_create-project-intro-v2.mdx}  
 
----
+* * *
 
 ### ![](/img/number-03.png) Checking the project access key{#accesskey}
 
 {@include: getting-started/_accesskey-intro.mdx}
 
----
+* * *
 
 ### ![](/img/number-04.png) Agent installation{#install}
 
@@ -62,7 +62,7 @@ Through **_Management_** > **_Agent Installation_**, you can access the installa
 
 The WhaTap Monitoring service is started. 
 
-For more information about the download and installation, see the product-specific installation guides. Select a product-specific menu on the left, or check the shortcuts below.
+For more information about the download and setup, see the product-specific installation guides. Select a product-specific menu on the left and then see the following shortcut.
 
 <details>
 <summary>Shortcuts for product-specific support environment and installation guide</summary>
@@ -130,49 +130,51 @@ For more information about the download and installation, see the product-specif
 </details>
 
 :::note
+
 If you encounter any problem during installation, see the product-specific **installation troubleshooting**.
+
 :::
 
----
+* * *
 
 ### ![](/img/number-05.png) Viewing the dashboard{#dashboard}
 
 When data is transferred to the WhaTap server after agent installation, you can view the overall project status in real time through **_Dashboard_**. WhaTap Monitoring can show all collected data on the integrated dashboard, which can be freely personalized by user.
 
 -   The displayed performance metrics of applications are collected from the widgets of **_Application Dashboard_**, **_Transaction Map_**, **_Active Transaction_**, **_Application Topology_**, and **_Flex Board_**.
+
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
+
 -   The server performance metrics collected from each widget of **_Resource Board_**, **_Compound Eye_**, and **_Flex Board_** can be viewed.
+
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
+
 -   The database performance metrics collected from each widget of **_Instance List_**, **_Instance Monitoring_**, **_Multiple Instance Monitoring_**, **_Slow Query_**, and **_Flex Board_** can be viewed.
+
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/db-realtimeMonitoring.mp4}
+
 -   For Kubernetes, the nodes, containers, applications, logs, and events are dynamically displayed through the widgets of **_Container Map_**.
+
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/k8s-targetgroup.mp4}
 
 :::note
-사용자 정의형 통합 대시보드인 Flex 보드 생성 및 설정에 대한 자세한 설명은 [다음 문서](java/flex-board)를 참조하세요.
 
-<!-- * 대시보드 위젯을 비롯한 자세한 설명은 상품별 다음 문서([애플리케이션](java/learn-apm-main-menu), [서버](server/learn-main-menu), [데이터베이스](db/learn-db-main-menu), [쿠버네티스](kubernetes/learn-kubernetes-main-menu))를 참조하세요. -->
-
-<!-- * VR 타입 아이템 안내는 기술 문서 페이지 개편 이후 클라우드 메뉴에서 확인할 수 있습니다.-->
+For more information about the creation and configuration of Flex Dashboard, the user-defined integrated dashboard, see [the following](java/flex-board).
 
 :::
 
-<!-- 대시보드 안내를 대시보드 메뉴 안내만 할 지 아니면 에이전트 주요 메뉴 안내로 활용할지?  -->
-
-<!-- 로그 모니터링, URL 모니터링, 클라우드 모니터링 등 각 성능 지표 조회 방식 취합하기? -->
-
----
+* * *
 
 ### ![](/img/number-06.png) External data collection{#collect}
 
 <!-- 텔레그라프, 포커스 -->
 
-You can expand the WhaTap service collection data by using Telegraf and Focus. For more information, see [Telegraf](telegraf/introduction.mdx) and [Focus](focus/introduction.mdx).
+You can expand the WhaTap service collection data by using Telegraf and Focus. For more information, see the [Telegraf](telegraf/introduction.mdx) and [Focus](focus/introduction.mdx).
 
 -   You can install a WhaTap plugin to forward the data collected by Telegraf to the WhaTap collection server.
 -   By installing the WhaTap Focus, you can upload the values collected by running your own check scripts or database queries to your WhaTap project.
 
----
+* * *
 
 ### ![](/img/ic-number-07.svg) Alert Settings{#notification}
 
@@ -214,7 +216,7 @@ For more information about alert settings, see the following for each product.
 
 </details>
 
----
+* * *
 
 ### ![](/img/ic-number-08.svg) Viewing reports{#report}
 
@@ -226,7 +228,7 @@ Reports are the documents that report the service usage and failure records. For
 For more information about reporting, see [the following](java/report-intro). For product-specific report guides, see product-specific technical documents.
 :::
 
----
+* * *
 
 ### ![](/img/ic-number-09.svg) Member Management{#member}
 
@@ -236,4 +238,4 @@ You can add project members in **_Management_** > **_Project Member_**. You can 
 For more information about the member role scheme, see [the following](project/project-structure#project-auth).
 :::
 
----
+* * *

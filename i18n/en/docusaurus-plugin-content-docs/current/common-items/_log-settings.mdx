@@ -2,7 +2,7 @@ Home > Select Project > **_Management_** > **_Log Setting_**
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_Management_** > **_Log Setting_** under Project Menu. 
 
-**_로그 설정_** 메뉴에서 로그 모니터링 관련 설정을 할 수 있습니다. You can use menus for checking the agent settings, determining whether to enable log monitoring, setting the log data retention period and lookup password, registering the log parser, and setting the quick indexes.
+You can configure the log monitoring related settings in **_Log Setting_**. You can use menus for checking the agent settings, determining whether to enable log monitoring, setting the log data retention period and lookup password, registering the log parser, and setting the quick indexes.
 
 <InDoc product='aws-log'>
 
@@ -33,7 +33,7 @@ In the ![number-s](/img/number-02.png) area, click the **_Activate log monitorin
 ![](/img/log-start-aws.png)
 
 -   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
--   ![아이콘](/img/ic-toggle-off.svg) 토글 버튼을 끄면 로그 모니터링이 비활성화됩니다. Logs are no longer saved. 
+-   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
 
 </InDoc>
 
@@ -41,16 +41,16 @@ In the ![number-s](/img/number-02.png) area, click the **_Activate log monitorin
 
 ### Checking the agent settings
 
-Check the agent version and settings to start the log monitoring. ![number-s](/img/number-02.png) 영역의 **_에이전트 설정 확인_** 메뉴를 선택하여 안내대로 과정을 진행하세요.
+Check the agent version and settings to start the log monitoring. In the ![number-s](/img/number-02.png) area, select **_Check agent configuration_** and then proceed with the process according to the instructions.
 
--   **애플리케이션 모니터링**<br/>
-       **_적용하기_** 메뉴 하위에 애플리케이션별 적용 안내를 확인하세요. 다음 설명서 [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go) 등을 참조하세요.
+-   **Application Monitoring**\
+       Under **_Apply_**, check the guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
 
--   **서버 모니터링**<br/>
-      **_적용하기_** 메뉴 하위에 개별 적용 안내를 확인하세요. [다음 문서](log-server)를 참조하세요. 안내대로 _whatap.conf_ 에 로그 감시 대상 파일 설정을 추가하세요.
+-   **Server Monitoring**\
+       Under **_Apply_**, check the guides for each application. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in _whatap.conf_.
 
--   **쿠버네티스 모니터링**<br/>
-      **_적용하기_** 메뉴 하위에 개별 적용 안내를 확인하세요. [다음 문서](log-k8s)를 참조하세요. 
+-   **Kubernetes Monitoring**\
+       Under **_Apply_**, check the guides for each application. See [the following](log-k8s). 
 
 ### Enabling the log monitoring
 
@@ -59,25 +59,21 @@ In the ![number-s](/img/number-02.png) area, select **_Activate log monitoring_*
 ![](/img/log-start.png)
 
 -   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date. 
--   ![아이콘](/img/ic-toggle-off.svg) 토글 버튼을 끄면 로그 모니터링이 비활성화됩니다. Logs are no longer saved. 
+-   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
 
 </InDoc>
 
-## ![](/img/number-03.png) Log Monitoring Data Setting
+## ![](/img/number-03.png) Log Monitoring Data Setting{#log-data-setting}
 
-![number-s](/img/number-03.png) 상단에서 **_로그 사용량_**을 확인할 수 있습니다. 또한 **_데이터 유지 기간_** 및 **_로그 조회 비밀번호_** 설정을 변경할 수 있습니다.
+At the top of ![number-s](/img/number-03.png), you can see the **_Log Usage_**. Furthermore, you can change the settings for **_Data Retention_** and **_Log lookup password_**.
 
-### Data retention period
+### Data retention period{#data-retention}
 
-<!-- 수연님 편집 중 -->
-
-This is the default data retention period to be applied commonly. If you do not set the data retention periods for each category, this data retention period is applied by default. 카테고리별 데이터 유지 기간을 설정하고 **_리셋_** 버튼을 선택하면 기본 데이터 유지 기간으로 초기화됩니다.
+This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select **_Reset_**, the default data retention period is reset.
 
 ### Data retention periods for each category
 
-<!-- 저장량 컬럼 삭제 -->
-
-You can specify the log data retention periods for each category. **로그 수**는 해당 기간 동안 쌓인 로그 라인을 의미합니다. 예를 들어 **_금일 로그 수_**는 하루 동안 쌓인 로그 라인 개수, **_예상 로그 수_**는 데이터 보관일에 금일 로그 수를 곱한 로그 라인 개수를 의미합니다. 
+You can specify the log data retention periods for each category. **Log Count** means the log lines stacked for the period. For example, **_Today Log Count_** is the number of log lines accumulated during the day, and **_Expected Log Count_** is the number of log lines of the today's log count multiplied by the days of data retention. 
 
 You can specify the log data retention period as follows. You can free the space by deleting old data according to the specified period.
 
@@ -91,7 +87,7 @@ You can specify the log data retention period as follows. You can free the space
 
 ### Log lookup password
 
-보안을 강화하기 위해 **_로그 조회 비밀번호_**를 설정하세요. The log lookup password is optional. If you are using a log lookup password, enter the password to go to the log screen. 
+To enhance security, set the **_log lookup password_**. The log lookup password is optional. If you are using a log lookup password, enter the password to go to the log screen. 
 
 :::note
 
@@ -99,7 +95,7 @@ You can specify the log data retention period as follows. You can free the space
 
 **In case you forgot the password**
 
-**프로젝트 수정** 권한이 있는 경우 **_로그 설정_** 메뉴에서 새 비밀번호로 수정할 수 있습니다.
+If you have the **Edit Project** role for the project, you can modify it with a new password in **_Log Setting_**.
 
 </InDoc>
 
@@ -107,7 +103,7 @@ You can specify the log data retention period as follows. You can free the space
 
 **In case you forgot the password**
 
-**로그 편집** 권한이 있는 경우 **_로그 설정_** 메뉴에서 새 비밀번호로 수정할 수 있습니다.
+If you have the **Edit Log** role, you can modify it with a new password in **_Log Setting_**.
 
 </InDoc>
 
@@ -115,7 +111,7 @@ You can specify the log data retention period as follows. You can free the space
 
 ## ![](/img/number-04.png) Log Parser Setting
 
-수집된 로그를 검색할 수 있는 키를 만들기 위해 **파싱**(Parsing) **로직을 등록**할 수 있습니다. If the parsing logic is not registered, searching is possible only with the following keys.
+You can register **parsing** logic to create a key to retrieve the collected logs. If the parsing logic is not registered, searching is possible only with the following keys.
 
 :::note 
 
@@ -131,13 +127,13 @@ You can specify the log data retention period as follows. You can free the space
 
 1.  On the lower part of the ![number-s](/img/number-04.png) area, select **_+ Add_**.
 
-2.  ![number-s](/img/number-04.png) 영역 **_파서 선택창_**에서 파서를 선택하세요. 파서 및 패턴 등록에 관한 [다음 문서](#log-pattern)를 참조하세요
+2.  In the ![number-s](/img/number-04.png) area, select a parser in the **_parser selection_** window. For more information about the parser and pattern registration, see [the following](#log-pattern).
 
 3.  In the **_category selection field_** of ![number-s](/img/ic-number-07.svg), select a category or directly input it. 
 
-4.  ![number-s](/img/ic-number-07.svg) 영역 ![아이콘](/img/ico-filter.svg)**_필터_** 버튼을 선택해 필터를 추가할 수 있습니다. If you enter a filter, the pattern is applied to the log data that meets the filtering condition.
+4.  You can add a filter by selecting ![Icon](/img/ico-filter.svg)**_filter_** of ![number-s](/img/ic-number-07.svg). If you enter a filter, the pattern is applied to the log data that meets the filtering condition.
 
-5.  등록하려는 패턴이 정상적인지 ![number-s](/img/ic-number-08.svg) 영역 **_시뮬레이션_** 버튼을 선택해 시뮬레이션 및 패턴의 퍼포먼스를 측정하세요. 시뮬레이션과 퍼포먼스 측정에 관한 [다음 문서](#parser-simulation)를 참조하세요.
+5.  To check whether the pattern is normal, click **_Simulation_** of ![number-s](/img/ic-number-08.svg) and then measure the performance of simulation and pattern. For more information about the simulation and performance measurement, see [the following](#parser-simulation).
 
 6.  If the simulation is normal, in the ![number-s](/img/ic-number-08.svg) area, click **_Save_** to save it.
 
@@ -154,7 +150,7 @@ You can specify the log data retention period as follows. You can free the space
 | Set value | Description                                                                                                                                                     | ETC                          |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
 | Category  | Category to apply the pattern to                                                                                                                                | required                     |
-| Filtering | 필터로 적용할 `search key`, `search value`를 입력합니다. The pattern is applied only to the log data that meets the filter conditions.                                      | optional                     |
+| Filtering | Enter values for `search key` and `search value` to apply as filters. The pattern is applied only to the log data that meets the filter conditions.             | optional                     |
 | Pattern   | It is the pattern to parse the log for. Parsing is performed according to the created pattern, and indexes are created. Grok and Custom grammars are supported. | required                     |
 | Enabled   | Whether it is active or inactive                                                                                                                                | The default value is `true`. |
 
@@ -162,13 +158,13 @@ You can specify the log data retention period as follows. You can free the space
 
 ![](/img/log-parser-pattern.png)
 
-Four different types of parsers are provided as follows. ![number-s](/img/number-04.png) 영역 파서 선택창에서 확인할 수 있습니다.
+Four different types of parsers are provided as follows. In the parser selection window of ![number-s](/img/number-04.png), you can see the results.
 
 1.  **Grok Parser**
 2.  **JSON Format Parser**
 3.  **4xx** and **5xx Status Code Parser**
 4.  **Status Code Success Rate Parser** 
-    <!-- **Grok**과 **JSON 포맷 파서** 2가지 유형의 파서를 제공합니다. ![number-s](/img/number-04.png) 영역 파서 선택창에서 확인할 수 있습니다. -->
+    <!-- It provides 2 types of parsers: **Grok** and **JSON format parser**. In the parser selection window of ![number-s](/img/number-04.png), you can see the results. -->
 
 :::note
 
@@ -182,10 +178,10 @@ Four different types of parsers are provided as follows. ![number-s](/img/number
 ![Grok Pattern Parser](https://img.whatap.io/media/images/log_011_grok_syntax.png)
 The syntax rule is %{SYNTAX:SEMANTIC}.    
 
--   **SYNTAX**<br/>
+-   **SYNTAX**\
       It is the Grok definition pattern.      
 
--   **SEMANTIC**<br/>
+-   **SEMANTIC**\
       It is the key to be assigned to the parsed data.
 
 :::note 
@@ -196,15 +192,15 @@ It is recommended to use combination words in SEMANTIC so that reserved words ar
 
 ### Registering the JSON format parser pattern
 
-![JSON Format Parser Pattern Registration](https://img.whatap.io/media/images/log_012_json_format_parser_1101.png)<br/>
+![JSON Format Parser Pattern Registration](https://img.whatap.io/media/images/log_012_json_format_parser_1101.png)\
 If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser.
 
-로그 중 JSON 형태로 출력된 부분을 검출하기 위하여 **_Prefix_**, **_Postfix_** 옵션을 조합해 로그의 어느 부분을 JSON으로 인식해 파싱할지 지정합니다. 
+To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. 
 
 | Option  | Description                                                                                                                                       |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Prefix  | Specify the string before the beginning of JSON string. If not specified, it is identified as a JSON string from the beginning of the log output. |
-| Postfix | Specify the string after the end of JSON string. 미지정 시 로그 출력문의 맨 뒤 까지를 JSON 문자열로 식별합니다.                                                           |
+| Postfix | Specify the string after the end of JSON string. If not specified, it is identified as a JSON string up to the end of the log output.             |
 | Ignore  | Specify fields in the JSON output to exclude from key extraction.                                                                                 |
 
 -   **Registration example**
@@ -225,13 +221,13 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
         > String from "Response : " to the end of a log {"key3":"value3","key4":"value4",...} Target
 -   **JSON custom pattern registration**
 
-      로그 중 일부가 JSON 형태로 출력되는 경우 JSON으로 출력된 부분을 전용 커스텀 파서를 통해 파싱할 수 있습니다. Enter the pattern as follows:
+      If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
 
     ```java
     io.whatap.logsink.parser.JsonFormatParser{}
     ```
 
-      로그 중 JSON 형태로 출력된 부분을 검출하기 위해 **_Prefix_**, **_Postfix_** 옵션을 조합해 로그의 어느 부분을 JSON으로 인식하여 파싱할지 지정하세요.
+      To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
 
       Specify an option in `{}` of `JsonFormatParser{}`.
 
@@ -261,16 +257,15 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 ### 4xx, 5xx Status Code Parser registration{#4xx-5xx-status-parser}
 
-![4XX 5XX 상태 코드 파서](https://img.whatap.io/22/11/28/085706log_020_status_parser.png)<br/>
-status가 이미 파싱된 경우 사용할 수 있는 파서입니다. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. 
+![4XX 5XX Status Code Parser](https://img.whatap.io/22/11/28/085706log_020_status_parser.png) A parser that can be used if the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. 
 
 You can enter or select 4xx, 5xx status codes in the pattern, and the entered status codes are excluded when parsing 4xx, 5xx status codes from the log. To use the 4xx, 5xx status code parser, the status must have been parsed first.
 
--   **status 파서 등록 예시**<br/>
-      ![Grok파서 - status 파싱 패턴 등록](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)<br/>
-      유입되는 로그가 `{"msg":"message","status":404}`이고 예시처럼 Grok 파서로 status를 파싱한다면, `status: 404`와 같이 파싱됩니다. If you confirm that the status has been normally parsed, register the 4XX, 5XX status code parser pattern.     
+-   **status parser registration example**\
+      ![Grok parser - status parsing pattern registration](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)
+      If the incoming log is `{"msg":"message","status":404}` and the status is parsed by the Grok parser as in the example, parsing is performed like `status: 404`. If you confirm that the status has been normally parsed, register the 4XX, 5XX status code parser pattern.     
 
--   **Widget Templates**<br/>
+-   **Widget Templates**\
        If all parsers have been registered, go to **_Flex Board_** and then create the log 4XX, 5XX count widget.
 
       ![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png)  
@@ -285,12 +280,12 @@ You can enter or select 4xx, 5xx status codes in the pattern, and the entered st
 
 ### Registering the pattern of the status code success rate parser
 
-![상태 코드 성공률 파서](https://img.whatap.io/22/11/28/090004log_021_status_success_rate_parser.png)
-상태 코드 성공률 파서는 status가 이미 파싱된 경우 사용할 수 있는 파서입니다. status 파싱에 관한 내용은 [다음 문서](#4xx-5xx-status-parser)를 참조하세요. 
+![Status Code Success Rate Parser](https://img.whatap.io/22/11/28/090004log_021_status_success_rate_parser.png)
+The status code success rate parser can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). 
 
 Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. You can enter or select 2xx, 3xx status codes in the pattern, and the entered status codes are excluded when parsing 2xx, 3xx status codes from the log. 
 
--   **Widget Templates**<br/>
+-   **Widget Templates**\
        If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
 
       ![Flex Board - Log Request Success Rate Widget Template](https://img.whatap.io/22/11/28/120046log_success_rate_01_widget_template.png)  
@@ -299,7 +294,7 @@ Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP req
 
       ![Flex Board - Log Request Success Rate Widget](https://img.whatap.io/22/11/28/120046log_success_rate_02_widget.png)
 
-      차트 위 데이터는 조회 기간에 대한 통계를 나타냅니다. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
+      The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
 
 ### Parser Simulation{#parser-simulation}
 
@@ -332,7 +327,7 @@ json 커스텀 파서 추가 문의
 
 ### Performance measurement
 
-시뮬레이션 성공 후 **_퍼포먼스 측정_** 버튼을 선택하여 파서에 대한 퍼포먼스를 측정할 수 있습니다. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
+After successful simulation, select **_Performance measurement_** to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
 
 ![](https://img.whatap.io/media/images/log_016_performance.png)
 
@@ -346,7 +341,7 @@ The parsed key can be checked in **_Live Tail_**, **_Log Search_**, and **_Log T
 
 ## ![](/img/number-05.png) Quick index parser
 
-Collecting a large number of logs can significantly decrease the log search performance. 자주 사용하는 검색 조건을 **인덱스**(index)로 생성하면 로그 검색 성능을 개선해 빠른 탐색이 가능합니다. The setting items are as follows:
+Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
 
 | Set value        | Required  | Description                                  |
 | ---------------- | --------- | -------------------------------------------- |
@@ -358,7 +353,7 @@ Collecting a large number of logs can significantly decrease the log search perf
 
 ## ![](/img/number-06.png) Log long-term archive statistics
 
-Log data is so large and difficult to retain for a long time. 따라서 로그 통계 데이터 설정 기능을 사용하여 **특정 조건을 만족하는 로그 데이터가 5분마다 몇 건씩 수집되었는지에 대한 정보를 저장**할 수 있습니다. 
+Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. 
 
 Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
 
@@ -366,7 +361,7 @@ Even if actual log data has been deleted for a long time, you can check the tren
 
 ### Setting items
 
-<!-- 제외 항목 내용 추가 예정 .. 추가1202 -->
+<!-- Excluded items to be added .. Add 1202 -->
 
 | Field          | Description                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -385,9 +380,9 @@ If a setting is added as follows, statistical data is generated with a key value
 
 ### Widget template
 
-1.  **_Flex 보드_**의 **_위젯 템플릿_**에서 **_로그 장기 보관 통계_**를 검색해 위젯을 생성하세요.<br/>
-    ![장기 보관 통계 위젯 템플릿](https://img.whatap.io/22/11/28/090932log_024_long_period_widget_template.png)
-2.  데이터를 조회할 **_카테고리_**와 **_키_**를 지정한 뒤 **_적용_** 버튼을 선택합니다.<br/>
-    ![장기 보관 통계 위젯 - 카테고리 및 키 선택](https://img.whatap.io/22/11/28/090932log_025_long_period_widget_config.png)
-3.  추가한 설정값으로 **_로그 장기 보관 통계_** 데이터를 다음처럼 확인할 수 있습니다.<br/>
-    ![장기 보관 통계 위젯](https://img.whatap.io/22/11/28/090932log_026_long_period_widget_view.png)
+1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.\
+    ![Long-term archive statistics widget template](https://img.whatap.io/22/11/28/090932log_024_long_period_widget_template.png)
+2.  Enter the **_category_** and **_key_** to view and then select **_Apply_**.\
+    ![Long-term archive statistics widget - category and key selection](https://img.whatap.io/22/11/28/090932log_025_long_period_widget_config.png)
+3.  With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.\
+    ![Long-term archive statistics widget](https://img.whatap.io/22/11/28/090932log_026_long_period_widget_view.png)

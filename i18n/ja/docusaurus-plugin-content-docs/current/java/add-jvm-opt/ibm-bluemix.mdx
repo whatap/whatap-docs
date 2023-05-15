@@ -1,19 +1,19 @@
 ---
 id: ibm-bluemix
 title: IBM BlueMix
-description: IBM BlueMix環境でWhaTapブエージェントの適用を完了してください。
+description: IBM BlueMix環境でWhaTapブエージェントを有効にして終了します。
 tags:
   - Java
   - IBM BlueMix
 ---
 
-**IBM BlueMix**を利用して配布する場合、WhaTapエージェントを適用する方法です。 
+**IBM BlueMix**を使用してデプロイする場合、WhaTapエージェントを有効にする方法です。 
 
-[IBM BlueMix](https://console.bluemix.net/docs/apps/index.html%E2%80%8B)は、コンテナで**WebSphere Liberty**環境を提供します。**Liberty**は、**WebSphere Application Server**とは異なる軽量化環境で**Spring Boot**が動作する方式と似ています。
+[IBM BlueMix](https://console.bluemix.net/docs/apps/index.html%E2%80%8B)は、コンテナで**WebSphere Liberty**環境を提供します。**Liberty**は、**WebSphere Application Server**と異なる環境で**Spring Boot**が動作する方式と類似しています。
 
 {@include: _pass-note.mdx}
 
-以下は設定環境の例です。 [ガイド](https://cloud.ibm.com/docs)による環境を構成する場合、ローカル開発環境で生成するファイルです。
+以下は設定環境の例です。 [ガイド](https://cloud.ibm.com/docs)による環境を設定する場合、ローカル開発環境で生成するファイルです。
 
 ```bash
 whatap@vmwas01:/apps/bluemix/java-helloworld$ ls -alrt
@@ -34,7 +34,7 @@ drwxrwxr-x 8 whatap whatap  4096 10月 29 13:13 .git
 drwxrwxr-x 6 whatap whatap  4096 10月 29 15:26 .
 ```
 
-1.  `${APP_HOME}`で_src/main/resources/whatap-agent/_ディレクトリを作成し、jarファイル、confファイルをコピーしてください。
+1.  `${APP_HOME}`で_src/main/resources/whatap-agent/_ディレクトリを作成し、jarファイルと confファイルをコピーします。
 
     ```bash
     $ mkdir -p src/main/resources/whatap-agent/
@@ -42,7 +42,7 @@ drwxrwxr-x 6 whatap whatap  4096 10月 29 15:26 .
     $ cp /apps/whatap/whatap.conf src/main/resources/whatap-agent/
     ```
 
-2.  _${APP_HOME}/manifest.yml_ファイルにオプションを追加してください。ymlファイルですので、スペース、インデント基準に沿って作成してください。
+2.  _${APP_HOME}/manifest.yml_ファイルにオプションを追加します。ymlファイルですので、スペースとインデントに沿って作成します。
 
     ```yaml title=${APP_HOME}/manifest.yml {8-9} showLineNumbers
     ---
@@ -62,8 +62,8 @@ drwxrwxr-x 6 whatap whatap  4096 10月 29 15:26 .
 
 :::note
 
--   _whatap.conf_設定は、PaaSではなく環境と同様に適用します。適用後、エージェント名の識別が困難な場合がありますので、状況に応じたエージェント名を適用してください。
--   エージェントネーミングの詳細については、[次の文書](../agent-name)を参考にしてください。
-:::
+-   _whatap.conf_設定は、PaaS以外の環境と同様に適用します。適用後、エージェント名の識別が特定しにくい場合があるため、状況に応じたエージェント名を適用してください。
+-   エージェントネーミングの詳細については、[次の文書](../agent-name)を参照ください。
+    :::
 
 {@include: ../../common-items/_start-apm.mdx}  

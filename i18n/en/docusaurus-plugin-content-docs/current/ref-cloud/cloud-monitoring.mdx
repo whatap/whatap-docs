@@ -7,19 +7,19 @@ tags:
   - Cloud
 ---
 
-클라우드 모니터링 서비스 지표를 확인하면 장애를 실시간으로 대처할 수 있습니다. 클라우드 서비스를 이용하다 보면 운영에 영향을 미치는 장애가 발생하곤 합니다. 예를 들면 사용자 자산 상태, 호스트 머신(물리적인 서버 컴퓨터), 네트워크에 이상이 생기는 경우입니다.
+You can respond to failures in real time by checking cloud monitoring service metrics. When using the cloud services, the failures that affect the operation often occur. For example, there may be problems with the user asset status, host machine (physical server computer), or network.
 
-또한 클라우드 네임스페이스나 리전에 이상이 없는지 미리 파악해두는 게 좋습니다. 향후 클라우드 인프라에서 발생한 장애를 대응하는 데 도움이 많이 되기 때문입니다.
+It is also a good idea to know in advance whether there are any anomalies in the cloud namespace or region. It is very helpful in responding to failures that occur in the cloud infrastructure in the future.
 
-와탭 클라우드 모니터링은 클라우드 제공 업체의 API에 연결하여 모든 지표와 클라우드 이벤트를 실시간으로 수집합니다.
-대표적으로 다음 2가지 지표가 있습니다.
+After connecting the WhaTap cloud provider's APIs, Cloud Monitoring can collect all metrics and events in real time.
+Typically, there are two metrics:
 
 -   Metrics to determine whether your instances (virtual servers) are healthy
 -   Cloud service provider's own availability metrics
 
 Metrics collection interval can be adjusted from real time (5 minutes) to 3 hours for cost optimization.
 
-와탭 클라우드 모니터링을 이용하시면 수집한 데이터를 Flex 보드로 확인할 수 있습니다. 장애 원인에 대한 직접적인 분석이 가능합니다.
+If you use the WhaTap cloud monitoring, you can check the collected data on the Flex board. An immediate analysis of the causes of failures is possible.
 
 You can also set alerts by email, SMS, and messenger (Slack, Telegram, etc.).
 
@@ -28,8 +28,8 @@ You can also set alerts by email, SMS, and messenger (Slack, Telegram, etc.).
 -   Namespace is a way to group services for an application.
 -   A region in the cloud indicates a set of data centers that are installed to provide cloud services.
 -   If you select a region, the user data is stored in the data centers of the region.
--   클라우드 모니터링은 하나의 프로젝트를 선택하고 프로젝트 메뉴 하위의 **_관리_** > **_클라우드 모니터링_** 메뉴에서 확인할 수 있습니다.
-:::
+-   Select a project and then check the cloud monitoring in **_Management_** > **_Cloud Monitoring_** under the Project Menu.
+    :::
 
 ## Configuration
 

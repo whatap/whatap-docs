@@ -13,16 +13,11 @@
 -   **net_send_max_bytes** <span class='type'>Byte</span><br/>
     Default '5242880'<br/>Maximum data size in bytes the agent can collect and transfer over the network at a time.
 
--   **net_udp_port** <span class='type'>tcp_port</span>
-
-    Default `6600`
-    
-    The WhaTap agent transfers the data collected from the tracer through UDP communication to the collection server. You can specify the port of the first UDP server. If the provided port 6600 is in use, you can use this option.
-
+-   **net_udp_port** <span class='type'>tcp_port</span><br/>
+        Default `6600`<br/>The WhaTap agent transfers the data collected from the tracer through UDP communication to the collection server. You can specify the port of the first UDP server. If the provided port 6600 is in use, you can use this option.
     :::note
-
+    <!-- IIS를 다시 시작해야 적용할 수 있습니다. -->
     {@include: ../common-items/_donet-iis-restart.mdx}
-
     :::
 
 -   **net_send_queue1_size** <span class='type'>Int</span><br/>
