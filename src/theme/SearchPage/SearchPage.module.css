@@ -26,6 +26,10 @@
   margin: 0.5rem 0px 0px;
 }
 
+.searchResultItemPath::after {
+  content: " › ";
+}
+
 .searchResultItemSummary {
   font-style: italic;
   margin: 0.5rem 0px 0px;
