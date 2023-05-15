@@ -101,7 +101,7 @@ ROWNUM
 
 -   フィールド全体を選択する場合、オペランドを入力されません。 
 -   `like`と`notlike`は同時に設定することができません。 複数の`SELECT`時間に設定する必要があります。 
-    :::
+:::
 
 :::note
 `SELECT`コマンドは、出力フィールドの順序を変更するときに使用します。 
@@ -216,7 +216,7 @@ DELETE [pcode]
 -   `GROUP`コマンドが実行される前に、`SELECT`コマンドで`time`フィールドが設定されていない場合
 -   `RENAME` コマンドで`time`フィールド名を変更した場合
 -   `DELETE`コマンドで`time`フィールドを削除した場合
-    :::
+:::
 
 ## UPDATE{#update}
 
@@ -293,7 +293,7 @@ DELETE [pcode]
 -   `{datetime:'yyyyMMdd HH:mm:ss'}`の場合は、コロン（:）を含んでいるため、必ずバッククォート('')またはダブルクォート("")で囲む必要があります。
 -   `pct: 90`は、90%番目の値を選択する意味です。ただし、このフィールドは`GROUP`コマンドを実行時に、`listup`フィールドとして設定されている必要があります。 
 -   formatの形式は、[Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html)を使います。
-    :::
+:::
 
 ## ORDER{#order}
 
@@ -365,7 +365,7 @@ Yardに保存するすべてのデータは`time`、`oid`の値を持ってい�
 
 -   `JOIN`コマンドに使用される最初のクエリは直接作成したMXQLクエリ、2番目のクエリは[pathに設定できるクエリ](mxql-guide#custom-mxql)です。 
 -   `JOIN`コマンドを使用してMXQLクエリ全体をYardにファイルとして登録すると、3つ以上のカテゴリが`JOIN`できます。 
-    :::
+:::
 
 ## LIMIT{#limit}
 
@@ -583,4 +583,4 @@ ROWNUM
 
 -   データが0の場合、データは存在します。`{exist: true}`に適用されます。
 -   `{exist : false}`と`{notexist : false}`は不可能です。 `{notexist : true}`と`{exist : true}`を使用します。
-    :::
+:::
