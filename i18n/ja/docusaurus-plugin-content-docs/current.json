@@ -1426,5 +1426,9 @@
   "sidebar.rumsSidebar.category.Browser 모니터링": {
     "message": "Browserモニタリング",
     "description": "The label for category Browser 모니터링 in sidebar rumsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.에이전트 설치": {
+    "message": "エージェントのインストール",
+    "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
   }
 }
