@@ -494,7 +494,7 @@ a[class*='tagRegular'] {
     content: "";
   }
 }
-.searchResultItemPath {
+article[class*='searchResultItem'] > h2 > a > span {
   font-size: inherit;
   color: inherit;
   &::after {
