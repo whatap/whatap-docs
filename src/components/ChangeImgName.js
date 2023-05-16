@@ -6,15 +6,15 @@ export default function ChangeImgName({img, desc}) {
     let fext = img.substr(img.lastIndexOf('.') + 1);
     let fileName = img.replace('.' + fext, '');
     let imgFilePath = '/img/' + fileName + product + '.' + fext;
-    const onErrorImg = (e) => {
+
+    function onError(e) {
         e.target.src = '/img/' + img;
     }
-    
     return (
         <p>
             <img src={imgFilePath} 
                 alt={desc} 
-                onError={onErrorImg} 
+                onError={(e) => onError(e)}
             />
         </p>
     );
