@@ -497,9 +497,9 @@ a[class*='tagRegular'] {
 .searchResultItemPath {
   font-size: inherit;
   color: inherit;
-  // &::after {
-  //   content: " › ";
-  // }
+  &::after {
+    content: " › ";
+  }
 }
 .searchBarContainer_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module {
   margin-left: 2px !important;
