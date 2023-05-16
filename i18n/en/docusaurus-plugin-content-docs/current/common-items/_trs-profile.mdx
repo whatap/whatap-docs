@@ -2,96 +2,107 @@
 
 ![profile_apm sc](/img/tx-trace-static.png)
 
-#### ![number1](/img/number-01.png) 트랜잭션 속성과 성능 정보
+#### ![number1](/img/number-01.png) Transaction properties and performance information
 
-상단 오른쪽 **_더보기_** 버튼을 선택하면 다음과 같이 트랜잭션 속성과 성능 요약 정보를 확인할 수 있습니다. 
+If you select **_More_** on the upper right of the screen, you can see the transaction properties and summary information as follows. 
 
 ![profile_apm](/img/tx-trace-dt.png)
 
--   ![통계 아이콘](/img/ic-static.svg) **_통계_**: 해당 URL의 통계 데이터 **_요약_** 창이 나타납니다. **_요약_** 창에서 **_상세 >_** 버튼을 선택하면 **_통계 / 분석_** > **_통계_** 화면으로 이동합니다. 
--   ![오른쪽 화살표 아이콘](/img/ic-arrow-right.svg) **_MTID_**: 연관 트랜잭션을 추가적으로 조회하고 분석할 수 있습니다.
+-   ![Statistics icon](/img/ic-static.svg) **_Statistics_**: The statistical data **_summary_** window of the URL appears. In the **_Summary_** window, if you select **_Detail >_**, **_Statistics/Analysis_** > **_Statistics_** appears. 
+-   ![Right arrow icon](/img/ic-arrow-right.svg) **_MTID_**: Associated transactions can be viewed and analyzed additionally.
 
+**Transaction properties and their performances**
 
-**트랜잭션 속성 및 성능**
-
-| Property        | Performance data                                                                                      |
-| --------------- | ----------------------------------------------------------------------------------------------------- |
-| **프로젝트 코드**     | WhaTap monitoring's project code                                                                      |
-| **OID**         | Application (agent) object ID                                                                         |
-| **Oname**       | Application object name                                                                               |
-| **Type**        | Application types - Java, Node.Js, PHP, Python, etc.                                                  |
-| **TID**         | Transaction ID                                                                                        |
-| **UrlHash**     | URL's hash value                                                                                      |
-| **UserToken**   | User token - User ID given by WhaTap                                                                  |
-| **Method**      | HTTP methods - GET, POST, PUT, HEAD, etc.                                                             |
-| **StartTime**   | Transaction start time                                                                                |
-| **EndTime**     | Transaction end time                                                                                  |
-| **Elapsed**     | Transaction execution time                                                                            |
-| **CpuTime**     | CPU occupied time                                                                                     |
-| **MemAlloc**    | Amount of memory used by transaction                                                                  |
-| **Ipaddr**      | Client IP                                                                                             |
-| **Country**     | Client's country                                                                                      |
-| **City**        | Client's city                                                                                         |
-| **SqlCount**    | SQL execution count                                                                                   |
-| **SqlTime**     | SQL execution time                                                                                    |
-| **FetchCount**  | Number of the records retrieved from SQL                                                              |
-| **FetchTime**   | Time taken to retrieve records (may overlap or involve other logics)                                  |
-| **HttpcCount**  | External HTTP call count                                                                              |
-| **HttpcTime**   | External HTTP call time                                                                               |
-| **ClientOs**    | Client OS                                                                                             |
-| **ClientOsPro** | Client OS company                                                                                     |
-| **ClientType**  | Client type (e.g. browser)                                                                            |
-| **ClientName**  | Client browser name                                                                                   |
-| **UserAgent**   | Web client information. By parsing it, the information such as ClientOs and ClientOsPro is extracted. |
-| **MTID**        | Multi-server transaction ID                                                                           |
-| **Depth**       | It indicates what tier the multi-server transaction is in.                                            |
-| **Caller TID**  | TID of the transaction that called me                                                                 |
+| Properties       | Performance data                                                                                      |
+| ---------------- | ----------------------------------------------------------------------------------------------------- |
+| **Project Code** | WhaTap monitoring's project code                                                                      |
+| **OID**          | Application (agent) object ID                                                                         |
+| **Oname**        | Application object name                                                                               |
+| **Type**         | Application types - Java, Node.Js, PHP, Python, etc.                                                  |
+| **TID**          | Transaction ID                                                                                        |
+| **UrlHash**      | URL's hash value                                                                                      |
+| **UserToken**    | User token - User ID given by WhaTap                                                                  |
+| **Method**       | HTTP methods - GET, POST, PUT, HEAD, etc.                                                             |
+| **StartTime**    | Transaction start time                                                                                |
+| **EndTime**      | Transaction end time                                                                                  |
+| **Elapsed**      | Transaction execution time                                                                            |
+| **CpuTime**      | CPU occupied time                                                                                     |
+| **MemAlloc**     | Amount of memory used by transaction                                                                  |
+| **Ipaddr**       | Client IP                                                                                             |
+| **Country**      | Client's country                                                                                      |
+| **City**         | Client's city                                                                                         |
+| **SqlCount**     | SQL execution count                                                                                   |
+| **SqlTime**      | SQL Execution Time                                                                                    |
+| **FetchCount**   | Number of the records retrieved from SQL                                                              |
+| **FetchTime**    | Time taken to retrieve records (may overlap or involve other logics)                                  |
+| **HttpcCount**   | External HTTP call count                                                                              |
+| **HttpcTime**    | External HTTP call time                                                                               |
+| **ClientOs**     | Client OS                                                                                             |
+| **ClientOsPro**  | Client OS company                                                                                     |
+| **ClientType**   | Client type (e.g. browser)                                                                            |
+| **ClientName**   | Client browser name                                                                                   |
+| **UserAgent**    | Web client information. By parsing it, the information such as ClientOs and ClientOsPro is extracted. |
+| **MTID**         | Multi-server transaction ID                                                                           |
+| **Depth**        | It indicates what tier the multi-server transaction is in.                                            |
+| **Caller TID**   | TID of the transaction that called me                                                                 |
 
 :::note
 
 -   Some items may not appear depending on the agent application type or settings.
+
 -   For more information about the **_Statistics_** menu, see [the following](analysis-apm-trs).
--   멀티 트랜잭션 추적에 대한 자세한 설명은 [다음 문서](trs-multi-trace)를 참조하세요.
+
+-   For more information about Multi Transaction Trace, see [the following](trs-multi-trace).
 
 :::
 
-#### ![number2](/img/number-02.png) 트랜잭션 트레이스 상세 정보
+#### ![number2](/img/number-02.png) Transaction trace details
 
-![number2](/img/number-02.png) 영역에서 트랜잭션 수행 상세 이력을 확인할 수 있습니다. **_다이어그램_** 차트는 이 상세 정보를 요약해 그래프로 표현한 것입니다. **_멀티 TX 차트_**에서는 트랜잭션 별 연계 정보를 확인할 수 있습니다. 목록에서 **_테이블 뷰_** 탭을 선택하면 단계별 **_구간 시간_**과 **_소요 시간_** 및 **_스텝 내용_** 등을 확인하고 느려진 구간을 찾아볼 수 있습니다. **_테이블 뷰_** 탭의 각 컬럼의 트랜잭션 트레이스 정보는 다음과 같습니다.
+In ![number2](/img/number-02.png), the transaction execution records can be checked. The **_diagram_** chart displays the summay of the information details. The **_Multi TX Chart_** displays the associated data for each transaction. If you select **_Table View_** tab in the list, you can see the **_section time_**, **_elapsed time_**, **_step content_**, and such for each step and slowed sections can be also viewed. The transation trace details in the **_Table View_** tab are as follows.
 
+-   **_Step_**: Step occurrence sequence
 
--   **_단계_**: 스텝의 발생 순서
--   **_구간 시간_**: 각 단계가 시작 또는 종료한 시간
--   **_갭_**: 직전 스텝과 현재 스텝 사이의 갭 시간
--   **_소요_**: 각 메소드 시작부터 종료까지 총 소요 시간
--   **_스텝 내용_**: 해당 스텝의 세부 수행 내역
+-   **_Section Time_**: Start or end time of each step
 
-이 중 **_스텝 내용_**은 다음과 같이 구분됩니다.
+-   **_Gap_**: Gap time between the previous step and the current step
 
--   **HTTP-HEADERS**: 수집된 HTTP Header 정보를 보여줍니다.
--   **HTTP-PARAMETERS**: 수집된 HTTP Parameter 정보를 보여줍니다.
--   **DB연결**: DB 연결 URL과 연결 시간을 보여줍니다.
--   **SQL**: JDBC SQL에 대한 SQL문, 응답 시간 에러를 보여줍니다.
--   **HTTP Call**: 외부 http 서비스 URL과 응답 시간, 에러를 보여줍니다.
--   **Message**: 메시지 스텝을 비정형적 모든 구간에 대한 이력을 표시합니다. file 오픈, Http Header 출력, 파라미터 출력 혹은 사용자도 임의의 위치를 지정하는 데 사용할 수 있습니다.
--   **SOCKET**: Socket 오픈을 표현합니다. 응답 시간은 추적하지 않습니다.
--   **METHOD**: 에이전트에 추적이 설정된 메소드 이름과 응답시간을 보여줍니다.
--   **액티브 스택**: 액티브 스택이 수집된 것을 의미합니다. **_액티브 스택_** 버튼을 선택하면 **_액티브 스택_** 창이 나타나 상세 내용을 확인할 수 있습니다.
+-   **_Step Time_**: Total time from the start to the end of each method
 
-**_트리 뷰_**를 선택하면 다음과 같이 트리 뷰 형태로 분석을 확인할 수 있습니다. 액티브 스택과 앞서 실행된 메소드와의 상관 관계를 확인하려면 해당 단계의 번호를 확인하고 **_트리 뷰_** 탭에서 다음 번호를 찾을 수 있습니다. 메소드 트레이스 설정을 많이 한 경우 **_테이블 뷰_**에서 상태 분석이 잘 안될 수 있습니다. 반대로 메소드 트레이스 설정을 거의 하지 않은 상태에서는 **_테이블 뷰_**가 분석하기에 유리합니다. 
+-   **_Step Contents_**: Detailed execution history of the step
 
-![트리 뷰](/img/tx-trace-tree.png)
+Among them, **_step contents_** are classified as follows.
 
-**_메소드 요약_** 탭은 트레이스 스텝 정보에서 중복 실행된 메소드에 대한 분석 정보를 제공합니다. **_SQL 요약_** 탭은 트레이스 스텝 정보에서 중복 실행된 SQL문에 대한 분석 정보를 제공합니다. **_HTTP 호출 요약_** 탭은 HTTP 호출의 호출 건수, 합계 시간, 평균 시간 등을 제공합니다. **_멀티 TX 테이블_** 탭은 멀티 트랜잭션 상세 정보를 제공합니다.
+-   **HTTP-HEADERS**: Displays the collected HTTP's header data.
+
+-   **HTTP-PARAMETERS**: Displays the collected HTTP parameters.
+
+-   **DB Connection**: Displays the DB connection URL and time.
+
+-   **SQL**: Displays SQL statements and response time errors for JDBC SQL.
+
+-   **HTTP Call**: Displays the external HTTP service URL and response time, and errors.
+
+-   **Message**: Displays the records for all atypical sections about the message step. It can be used to open files, output HTTP headers, output parameters, or specify arbitrary locations.
+
+-   **SOCKET**: Represents that the socket is open. Response times are not traced.
+
+-   **METHOD**: Displays the method name and response time for which tracing is set on the agent.
+
+-   **Active Stack**: This indicates that active stacks have been collected. If you select **_Active Stack_**, the **_Active Stack_** window appears along with the information details.
+
+If **_Tree View_** is selected, you can see the analysis in the form of tree view as follows. To correlate the active stack with the executed previous method, you can see the step number and find the next number in the **_Tree View_** tab. If you set a lot of method traces, the status analysis may not work well in **_Table View_**. On the contrary, with few method trace settings, **_Table View_** is better for analysis. 
+
+![Tree View](/img/tx-trace-tree.png)
+
+The **_Methods_** tab provides the analysis on the redundantly executed methods from the trace step information. The **_SQLs_** tab provides the analysis on the redundantly executed SQLs from the trace step information. The **_HTTP Calls_** tab provides the HTTP call count, time sum, average time, etc.The **_Multi TX Table_** tab provides multi-transaction details.
 
 :::note
 
-**액티브 스택**
+**Active Stack**
 
-와탭은 여러 개의 사용자 요청을 기본 10초 간격마다 스냅샷으로 저장합니다. 스냅샷에 저장된 스택 정보를 트랜잭션에 포함시키는데 이때의 스택 정보를 **_액티브 스택_**이라고 합니다.
+WhaTap stores multiple user requests as snapshots at default intervals of 10 seconds. The stack information stored in the snapshot is included in the transaction, and the stack information at this time is called **_active stack_**.
 
 :::
-
 
 ### Viewing the transaction parameters
 
@@ -99,15 +110,16 @@
 
     ```bash title='whatap.conf' {1,3}
     profile_sql_param_enabled=true 
-    // SQL 파라미터 조회 옵션: 옵션이 적용되면 SQL 파라미터를 암호화하여 수집합니다.
+    // SQL parameter query option: If the option is applied, SQL parameters are collected after being encrypted.
     profile_http_parameter_enabled=true 
-    // HTTP 파라미터 조회 옵션: 옵션이 적용되면 HTTP 쿼리 파라미터를 암호화하여 수집합니다.
+    // HTTP parameter lookup option: If the option is applied, HTTP query parameters are collected after being encrypted.
     ```
 
-2.  설정 적용 후 트레이스 스텝 내 SQL문을 선택하면 파라미터를 조회할 수 있습니다.
+2.  Apply the settings and then select the SQL statement within the trace step to query parameters.
+
     ![profile-sql](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring18.png)  
 
-3.  파라미터 조회에 필요한 키는 에이전트가 설치된 서버 경로 _$WHATAP_HOME/paramkey.txt_ 파일 내 6자리 문자열입니다. 다른 문자열로 변경 가능합니다.
+3.  The key required to view parameters is a 6-character string in _$WHATAP_HOME/paramkey.txt_ under the server path where the agent has been installed. You can change it to another string.
 
     ```bash title='paramkey.txt'
     whatap@vmwas01:/apps/whatap$ cat paramkey.txt
@@ -115,5 +127,7 @@
     ```
 
     :::note
-    _paramkey.txt_ 내 키는 SQL 변수 조회, HTTP 쿼리 조회, Thread 중지에 필요합니다.
+
+    The key in _paramkey.txt_ is required to view the SQL variables and HTTP queries, and stop the threads.
+
     :::

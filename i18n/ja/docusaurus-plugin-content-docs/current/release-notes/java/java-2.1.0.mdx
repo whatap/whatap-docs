@@ -68,7 +68,7 @@ mtraceable_user_agent=Moz （デフォルト値）
 
 #### DB接続のURLから「?」以下を削除
 
-SQLの実行性能を追跡するためにJDBC接続情報を収集する際、「？」以下を削除しました。
+SQLの実行性能を追跡するためにJDBC接続情報を収集する際、「?」以下を削除しました。
 
 #### URL正規化作業にContextPathを反映
 
@@ -89,7 +89,7 @@ URL パターン設定対象
 
 #### エージェントログにONAME出力
 
-エージェントログの出力内容を （日付）（PID）（メッセージ）のフォーマットから（日付）（エージェント名）（メッセージ）のフォーマットに変更しました。
+エージェントログの出力内容を(日付)(PID)(メッセージ)のフォーマットから(日付)(エージェント名)(メッセージ)のフォーマットに変更しました。
 
 ```bash
 20211224 05:12:31(GMT) [JA-161-111][UrlNorm] Service PathTree done. PathTree=0
@@ -119,13 +119,13 @@ WhaTapのアプリケーションログモニタリングの機能名称はロ�
 
 #### ログモニタリング機能の活性化
 
-ログモニタリングのためには、_whatap.conf_設定ファイルで「logsink_enabled」を「true」に設定する必要があります。
+ログモニタリングのためには、_whatap.conf_設定ファイルで`logsink_enabled`を`true`に設定する必要があります。
 
 ```ini title='whatap.conf'
 logsink_enabled=true
 ```
 
-Javaアプリケーションで発生するSystem.out、System.err、そしてフレームワークで実装したLOGBACK、LOG4Jログを収集します。 デフォルト値は「logsink_enabled」の設定と同じです。
+Javaアプリケーションで発生するSystem.out、System.err、そしてフレームワークで実装したLOGBACK、LOG4Jログを収集します。 デフォルト値は`logsink_enabled`の設定と同じです。
 
 ```ini title='whatap.conf'
 logsink_stdout_enabled=logsink_enabled
@@ -140,7 +140,7 @@ logsink_custom_enabled=logsink_enabled
 
 フレームワークで収集するログをモニタリングするには、モジュールでログを横取りするための設定とプラグインを追加する必要があります。フレームワークで収集するログの基本カテゴリ名を「AppLog」に設定します。
 
-デフォルト値は、「hooklog_enabled」の設定と同じです。
+デフォルト値は、`hooklog_enabled`の設定と同じです。
 
 ```ini title='whatap.conf'
 hooklog_logback_enabled=hooklog_enabled;
@@ -149,17 +149,17 @@ hooklog_tomcat_enabled=hooklog_enabled;
 hooklog_custom_methods= （ユーザーメソッドでログ収集設定）
 ```
 
-ただし、「hooklog_enabled」はデフォルト値として「logsink_enabled」値が適用され、起動前に「true」に設定する必要があります。
+ただし、`hooklog_enabled`はデフォルト値として`logsink_enabled`値が適用され、起動前に`true`に設定する必要があります。
 
-運用中に「hooklog_enabled=true」に変更すると、再起動後にログ収集が可能です。
+運用中に`hooklog_enabled=true`に変更すると、再起動後にログ収集が可能です。
 
 :::note
-「logsink_enabled=true」変更後に再起動
+`logsink_enabled=true`変更後に再起動
 :::
 
 #### ユーザーメソッドにおけるログ収集
 
-「hooklog_custom_methods」は任意のログフレームワークの内容を伝えます。サイトで個別に作成されたログモジュールのログを追跡するときに使用します。
+`hooklog_custom_methods`は任意のログフレームワークの内容を伝えます。サイトで個別に作成されたログモジュールのログを追跡するときに使用します。
 
 ```ini title='whatap.conf'
 hooklog_custom_methods=com.greatshop.common.Log.print
@@ -176,7 +176,7 @@ logsink_line_size=512
 
 #### ログ圧縮転送の活性化・非活性化
 
-「logsink_zip_enabled=true」設定でログを圧縮転送することができます。
+`logsink_zip_enabled=true`設定でログを圧縮転送することができます。
 
 ```ini title='whatap.conf'
 logsink_zip_enabled=false

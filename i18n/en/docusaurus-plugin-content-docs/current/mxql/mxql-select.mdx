@@ -47,6 +47,8 @@ Select which category to search the data from. This **command** and **operands**
 -   Depending on the loading method ([TAGLOAD](mxql-loading#tagload) or [FLEXLOAD](mxql-loading#flexload)), the categories that can be set differ. 
 -   If `{m5}` or `{h1}` is attached to the name of `CATEGORY`, see [MetricValue](mxql-guide#metric-value).
 
+:::
+
 ## OID, OKIND, ONODE{#oid}
 
 Set to search the data extracted from specific `OID`, `OKIND`, and `ONODE`. It can select one value of `OID`, `OKIND`, and `ONODE`.
@@ -80,10 +82,13 @@ TAGLOAD
 -   If `OID`, `OKIND`, and `ONODE` are used repeatedly, only the last entered command is applied.
 -   Because `OIDSET` is deprecated, it is recommended to use a command of `OID`, `OKIND`, and `ONODE`.
 -   It is different from applying [FILTER](mxql-calculate#filter) in the data processing step in that only the required data is searched from the data loading step.
+
 :::
 
 :::note
+
 In case of `OKIND` and `ONODE` commands, only when the `okind` and `onode` related fields (`okind`, `onode`, `okindName`, `onodeName`) are included, they can be used in the `CATEGORY` command. In **_Sitemap_** > **_Analysis_** > **_Metrics Search_**, you can see which categories contain which fields. 
+
 :::
 
 ## HEADER{#header}

@@ -1,13 +1,13 @@
 ---
 id: install-master-node-agent
-title: マスターおよびノードエージェントのインストール
-description: インストール案内ページに従って、マスターおよびノードエージェントのインストールプロセスを進めてください。
+title: マスターおよびNodeエージェントのインストール
+description: インストール案内ページに従って、マスターおよびNodeエージェントのインストールプロセスを進めてください。
 tags:
-  - クバネティス
-  - クバネティスモニタリング
+  - Kubernetes
+  - Kubernetesモニタリング
   - エージェント
   - マスター
-  - ノード
+  - Node
   - エージェントのインストール
 hide_table_of_contents: true
 ---
@@ -15,7 +15,7 @@ hide_table_of_contents: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**_インストール案内_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびノードエージェントのインストールプロセスを進めてください。 
+**_インストール案内_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびNodeエージェントのインストールプロセスを進めてください。 
 
 <Tabs groupId='k8stype'>
 
@@ -93,7 +93,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ユーザーのKubernetesバージョンとContainer Runtimeに合うYAMLファイルをダウンロードしてエージェントをインストールする段階です。
 
-1.  マスターノードで次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
+1.  マスターNodeで次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
     ```bash
     kubectl get node -o wide
@@ -105,9 +105,9 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-download-yaml.png)
 
-3.  ダウンロードしたYAMLファイルをマスターノードにアップロードしてください。
+3.  ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
 
-4.  エージェントを作成するには、マスターノードで次のコマンドを実行してください。 
+4.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
 
     ```bash
     # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように修正してください。
@@ -126,7 +126,7 @@ Kubernetes APIを利用して、エージェントが作成（create）された
 
 ## Kubernetesエージェントのインストール確認
 
-次のコマンドを実行して、マスターエージェントとノード エージェントの状態を確認してください。
+次のコマンドを実行して、マスターエージェントとNodeエージェントの状態を確認してください。
 
 ```bash
 kubectl get pod -n whatap-monitoring
@@ -134,13 +134,13 @@ kubectl get pod -n whatap-monitoring
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
-**STATUS**項目が**Running**の場合は、インストール済みです。マスターおよびノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューで性能情報を収集することを確認してください。
+**STATUS**項目が**Running**の場合は、インストール済みです。マスターおよびNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューでパフォーマンス情報を収集することを確認してください。
 
 #### Running状態でない場合
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-マスターノードで次のコマンドを実行して、ポッド生成の失敗原因を把握してください。実行結果の下段の**Events:**項目を確認してください。
+マスターNodeで次のコマンドを実行して、Pod生成の失敗原因を把握してください。実行結果の下段の**Events:**項目を確認してください。
 
 ```bash
 kubectl describe pod {POD_NAME} -n whatap-monitoring
@@ -150,7 +150,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::tip
 
-`kubectl`コマンド使用時`-n <ネームスペース>`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるので`-n whatap-monitoring`というオプションを追加します。
+`kubectl`コマンド使用時`-n {ネームスペース}`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるので`-n whatap-monitoring`というオプションを追加します。
 
 :::
 

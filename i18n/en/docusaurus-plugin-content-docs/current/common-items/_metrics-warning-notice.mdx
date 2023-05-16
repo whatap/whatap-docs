@@ -13,7 +13,7 @@ For more information about the metrics, see [the following](metrics-intro).
 
 ## Metrics Event
 
-Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select ***+ Add alert policy*** on the upper right of the screen. The **_Metrics Events_** window appears.
+Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select **_+ Add alert policy_** on the upper right of the screen. The **_Metrics Events_** window appears.
 
 ![Metrics Event](/img/set-events-metrics.png)
 
@@ -53,18 +53,6 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
     ![Filtering event targets](/img/set-event-filtering.png)
 
     It filters the targets by entering the ![Leader line 1](/img/number-01.png) tag, ![Leader line 2](/img/number-02.png) operator selection, and ![Leader line 3](/img/number-03.png) filtering value. If no input, alerts are sent to all agents.
-
-<!-- 
-
-:::caution
-
-***이벤트 발생 조건***과 ***이벤트 대상 필터링***에서 ***선택 입력*** 모드를 선택한 상태에서 마침표(.)가 2개 이상인 필드 또는 태그 이름을 선택했다면 ***직접 입력*** 모드를 선택한 다음 `${필드 또는 태그 이름}`과 같은 형식으로 묶어서 입력해야 합니다.
-
-예를 들어 `webcheck.ping.status_code` 필드 이름과 연산자는 `!=`, 값은 `200`을 입력할 경우, ***직접 입력*** 모드를 선택한 다음 `${webcheck.ping.status_code} != 200`으로 직접 입력하세요.
-
-:::
-
--->
 
 :::note
 

@@ -15,7 +15,7 @@ Release date: 2022-05-26
 
 #### Installation guide
 
-[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)을 다운받고 '/' 디렉터리 기준으로 압축을 해제합니다. _/usr/whatap/agent_ 디렉터리에 모니터링 설치 파일이 생성됩니다.
+[whatap-agent.tar.gz]After downloading the file (https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz), unzip the file based on the "/" directory. Create the monitoring file in the _/usr/whatap/agent_ path.
 
 ```bash
 wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
@@ -40,7 +40,7 @@ tar -xvzf whatap-agent.tar.gz -C /
 
 ### Supporting the github.com/go-chi/chi library
 
-chi 프레임워크의 웹 트랜잭션을 추적합니다. `Use` 함수를 통해 미들웨어를 등록하여 추적합니다.
+It traces the web transactions in the chi framework. Through the `Use` function, register and trace the middleware.
 
 #### Installation guide
 
@@ -58,7 +58,7 @@ func main() {
   
   r := chi.NewRouter()
   
-  // whatapchi의 middleware를 등록합니다.
+  // Register the middleware of whatapchi.
   r.Use(whatapchi.Middleware)
   
   r.Get("/", func(w http.ResponseWriter, r *http.Request) {
@@ -66,7 +66,7 @@ func main() {
 })
 ```
 
-[예제 참조](https://github.com/whatap/go-api-example/tree/main/github.com/go-chi/chi)
+[Example reference](https://github.com/whatap/go-api-example/tree/main/github.com/go-chi/chi)
 
 ### Supporting the github.com/go-gorm/gorm library
 
@@ -74,7 +74,7 @@ It traces the DB connection and SQLs processed through the gorm v2 framework.
 
 #### How to use the whatapgorm
 
-`gorm.Open` 함수 대신에 `whatapgorm.OpenWithContext` 함수를 사용합니다. 전달하는 context는 내부에 whatap TraceCtx를 포함해야 하며 trace 패키지의 `Start` 함수를 통해 생성 할 수 있습니다.
+Instead of the `gorm.Open` function, the `whatapgorm.OpenWithContext` function is used. The context to be passed must include whatap TraceCtx, and can be created through the `Start` function of the trace package.
 
 ```go title='설치 안내'
 import (
@@ -92,14 +92,14 @@ func main() {
   defer trace.Shutdown()
 
   http.HandleFunc("/InsertAndDelete", func(w http.ResponseWriter, r *http.Request) {
-    // Context를 생성합니다.
+    // Create the context.
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
 
-    // whatapgorm을 통해 DB를 연결합니다.
+    // Connect the DB through whatapgorm.
     db, err := whatapgorm.OpenWithContext(sqlite.Open("test.db"), &gorm.Config{}, ctx)
     if err != nil {
-      panic("Db 연결에 실패하였습니다.")
+      panic("Db connection failed.")
     }
 
     for i := 0; i < 100; i++ {
@@ -117,7 +117,7 @@ func main() {
 
 In addition to officially supported sqlite, mysql, postgres, and sqlserver, the gorm is compatible with the drivers written based on the dialect interface. 
 
-관련 링크 : [gorm driver](https://gorm.io/docs/write_driver.html)
+Related link: [gorm driver](https://gorm.io/docs/write_driver.html)
 
 ```go title='설치 안내'
 import (
@@ -134,17 +134,17 @@ func main() {
   defer trace.Shutdown()
 
   http.HandleFunc("/WhatapDriverTest", func(w http.ResponseWriter, r *http.Request) {
-    // Context를 생성합니다.
+    // Create the context.
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
 
-    // whatapsql driver로 db connection을 생성합니다.
+    // Create the DB connection via the whatapsql driver.
     dbConn, err := whatapsql.OpenContext(ctx, "mysql", dataSource)
     
-    // 기 생성된 connection을 통해 gorm에 연결합니다.
+    // Connect gorm through the created connection.
     db, err := gorm.Open(mysql.New(mysql.Config{Conn: dbConn}), &gorm.Config{})
     if err != nil {
-      panic("Db 연결에 실패하였습니다.")
+      panic("DB connection failed.")
     }
     
     for i := 0; i < 100; i++ {
@@ -156,7 +156,7 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/go-orm/gorm)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/go-orm/gorm)
 
 ### Supporting the github.com/jinzhu/gorm library
 
@@ -164,7 +164,7 @@ It traces the DB connection and SQLs processed through the gorm v1 framework.
 
 #### How to use the whatapgorm
 
-`gorm.Open` 함수 대신에 `whatapgorm.OpenWithContext` 함수를 사용합니다. 전달하는 context는 내부에 whatap TraceCtx를 포함해야 하며 trace 패키지의 Start 함수를 통해 생성 할 수 있습니다.
+Instead of the `gorm.Open` function, the `whatapgorm.OpenWithContext` function is used. The context to be passed must include whatap TraceCtx, and can be created through the Start function of the trace package.
 
 ```go title='설치 안내'
 import (
@@ -182,11 +182,11 @@ func main() {
   defer trace.Shutdown()
 
   http.HandleFunc("/InsertAndDelete", func(w http.ResponseWriter, r *http.Request) {
-    // Context를 생성합니다.
+    // Create the context.
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
 
-    // whatapgorm을 통해 DB를 연결합니다.
+    // Connect the DB via whatapgorm.
     db, err := whatapgorm.OpenWithContext(ctx, "sqlite3", "test.db")
     defer db.Close()
     if err != nil {
@@ -209,7 +209,7 @@ func main() {
 
 In addition to officially supported sqlite, mysql, postgres, and sqlserver, the gorm is compatible with the drivers written based on the dialect interface. 
 
-관련 링크 : [gorm driver](https://v1.gorm.io/docs/dialects.html)
+Related link: [gorm driver](https://v1.gorm.io/docs/dialects.html)
 
 ```go title='설치 안내'
 import (
@@ -226,11 +226,11 @@ func main() {
   defer trace.Shutdown()
 
   http.HandleFunc("/WhatapDriverTest", func(w http.ResponseWriter, r *http.Request) {
-    // Context를 생성합니다.
+    // Create the context.
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
 
-    // whatapsql driver로 db connection을 생성합니다.
+    // Create the DB connection via the whatapsql driver.
     var conn gorm.SQLCommon
     var err error
     conn, err = whatapsql.OpenContext(ctx, "mysql", dataSource)
@@ -239,7 +239,7 @@ func main() {
       panic("Whatapsql Open Fail")
     }
     
-    // 기 생성된 connection을 통해 gorm에 연결합니다.
+    // Connect gorm via the created connection.
     db, err := gorm.Open("mysql", conn)
     if err != nil {
       trace.Error(ctx, err)
@@ -254,11 +254,11 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/jinzhu/gorm)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/jinzhu/gorm)
 
 ### Supporting the github.com/gomodule/redigo library
 
-redigo 프레임워크를 통해 redis에 전달되는 명령을 추적합니다. `redis.Dial` 대신에 `whatapredigo.DialContext`를 함수를 사용합니다.
+It traces commands passed to Redis via the redigo framework. Instead of `redis.Dial`, the `whatapredigo.DialContext` function is used.
 
 ```go title='설치 안내'
 import (
@@ -276,11 +276,11 @@ func main() {
   defer trace.Shutdown()
 
   http.HandleFunc("/SetAndGetWithDialContext", func(w http.ResponseWriter, r *http.Request) {
-    // Context를 생성합니다.
+    // Create the context.
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
 
-    // whtapredigo를 통해 redis connection을 생성합니다.
+    // Create the Redis connection via the whtapredigo.
     conn, err := whatapredigo.DialContext(ctx, "tcp", "127.0.0.1:6379")
     if err != nil {
       trace.Error(ctx, err)
@@ -303,7 +303,7 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/gomodule/redigo)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/gomodule/redigo)
 
 ### Supporting the github.com/shopify/sarama library
 
@@ -311,7 +311,7 @@ It traces the kafka produce and consume events processed through the sarama fram
 
 #### Tracing the async producer
 
-whatapsarama의 Interceptor를 통해 async producer 정보를 추적합니다. Producer Message 생성시 Ctx 관련 정보를 Metadata를 통해 전달하면 Multi Transaction으로 연결 됩니다.
+It traces the async producer data through the whatapsarama's interceptor. When generating the producer message, if CTX-related data is passed through metadata, it is connected to the multi-transaction.
 
 ```go title='설치 안내'
 import (
@@ -326,7 +326,7 @@ func main() {
   config := sarama.NewConfig()
   brokers := []string{"127.0.0.1:9092"} //config kafka broker IP/Port
 
-  // whatapsarama의 인터럽트를 config에 등록합니다.
+  // Register the interrupt of whatapsarama in the config.
   interceptor := whatapsarama.Interceptor{Brokers: brokers}
   config.Producer.Interceptors = []sarama.ProducerInterceptor{&interceptor}
 
@@ -334,7 +334,7 @@ func main() {
   trace.Init(whatapConfig)
   defer trace.Shutdown()
 
-  // Prdoducer 생성시 config를 전달합니다.
+  // The config is delivered upon prdoducer creation.
   producer, err := sarama.NewAsyncProducer(brokers, config)
   consumerOffset := sarama.OffsetOldest
   if err != nil {
@@ -367,7 +367,7 @@ func main() {
 
 #### Tracing the consumer
 
-whatapsarama의 Interceptor를 통해 consumer 정보를 추적합니다. Produce에서 전달된 Message 기준으로 Multi Transaction으로 연결 됩니다.
+It traces the consumer data through the whatapsarama's interceptor. Based on the message delivered from the producer, it is connected to the multi-transaction.
 
 ```go title='설치 안내'
 import (
@@ -386,12 +386,12 @@ func main() {
   config := sarama.NewConfig()
   brokers := []string{"127.0.0.1:9092"} //config kafka broker IP/Port
 
-  // whatapsarama의 인터럽트를 config에 등록합니다.
+  // Register the interrupt of whatapsarama in the config.
   interceptor := whatapsarama.Interceptor{Brokers: brokers}
   config.Consumer.Interceptors = []sarama.ConsumerInterceptor{&interceptor}
 
-  // consume 1회당1tx
-  // Consumer 생성시 config를 전달합니다.
+  // 1 transaction per consumption
+  // The config is delivered when creating a consumer.
   consumer, err := sarama.NewConsumer(brokers, config)
   topic := "tmp-topic"
 
@@ -417,4 +417,4 @@ func main() {
 }
 ```
 
-[참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/shopify/sarama)
+[Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/shopify/sarama)

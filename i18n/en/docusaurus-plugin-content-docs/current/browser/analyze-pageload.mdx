@@ -1,92 +1,92 @@
 ---
 id: analyze-pageload
-title: 페이지 로드 분석하기
-description: 페이지 로드 이벤트를 차트 형태로 제공하고, 이벤트에 대한 상세 정보를 분석할 수 있습니다.
+title: Analyzing the page load
+description: Page Load events are provided in a chart, and the detailed information about events can be analyzed.
 tags:
   - Browser Monitoring
   - Agent
   - Page Load
 ---
 
-홈 화면 > 프로젝트 선택 > **_분석_** > **_페이지 로드 히트맵_**
+Home > Select Project > **_Analysis_** > **_Page Load HITMAP_**
 
 The **[Page Load](before-starting#load-page)** event occurs when an end user visiting your web applications has finished loading. **Page Load** events are provided in a hitmap chart, and the detailed information about each event can be viewed in timelines. This allows you to determine what prevents your web pages from loading. The following information is included.
 
--   **페이지 로드** 이벤트 구간별 세부 시간 정보
--   로드한 리소스의 세부 정보
+-   Time details for each **page load** event section
+-   Details of the loaded resources
 
-## 페이지 로드 이벤트 목록 확인
+## Checking the page load event list
 
 You can analyze load events on a single page basis. It provides the hitmap and various metrics to analyze the page load performance.
 
-![페이지 로드 히트맵](/img/rum-pageload-event-01.png)
+![Page Load Hitmap](/img/rum-pageload-event-01.png)
 
-Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) **_Page List_** at the bottom of the screen, and the events are classified by **[Page Group]\(before-starting# page-group)** and then fetched as ![Leader line 3](/img/number-03.png) **_Page Group List_** on the right of the screen.
+Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) **_Page List_** at the bottom of the screen, and the events are classified by **[Page Group](before-starting#page-group)** and then fetched as ![Leader line 3](/img/number-03.png) **_Page Group List_** on the right of the screen.
 
-### ![](/img/number-01.png) 페이지 로드 히트맵
+### ![](/img/number-01.png) Page Load Hitmap
 
-**_페이지 로드 히트맵_** 위젯은 시간에 따른 **페이지 로드**의 응답시간을 분포도 차트로 표현합니다. 
+**_Page Load Hitmap_** widget is a distribution chart of response times for **page loads** over time. 
 
--   가로축은 **페이지 로드** 이벤트의 종료 시간입니다.
--   세로축은 **페이지 로드** 이벤트의 경과 시간입니다.
--   <span class='lowfg'>하늘색</span> → <span class='normal'>파란색</span> → <span class='highfg'>남색</span> 순으로 정상 **페이지 로드** 이벤트를 표현합니다.
+-   The horizontal axis is the end time of the **page load** event.
+-   The vertical axis is the elapsed time of the **page load** event.
+-   The normal **page load** events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
 -   The error occurrence **page load** events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. The error **page load** event occurs when a browser error is encountered while loading pages.
 
-### ![](/img/number-02.png) 페이지 목록
+### ![](/img/number-02.png) Page list
 
 The **page load** events in the area dragged from the **_page load hitmap_** widget appear in the table for **_page list_** widgets. If you select ![Display Detail icon](/img/ico-detail-view.svg) on the utmost left of each item in the list, the **_Page Load Detail_** window appears.
 
-**_페이지 목록_** 위젯의 테이블에는 다음 기본 정보를 포함합니다.
+The table of the **_Page List_** widget includes the following data.
 
--   **_시작 시간_**: **페이지 로드** 이벤트의 시작 시간
--   **_경과 시간_**: **페이지 로드** 이벤트 완료까지의 소요 시간
--   **_페이지 URL_**: 최종 사용자가 접속한 페이지 URL 경로
--   **_도시_**: 최종 사용자가 위치한 도시 이름
--   **_브라우저_**: 최종 사용자가 사용한 브라우저 종류
--   **_디바이스_**: 최종 사용자가 사용한 기기 종류
+-   **_Start Time_**: Start time of the **page load** event.
+-   **_Elapsed Time_**: Elapsed time up to the **page load** event completion.
+-   **_Page URL_**: Path of the page URL accessed by the end user.
+-   **_City_**: Name of the city of the end user.
+-   **_Browser_**: Type of the browser of the end user.
+-   **_Device_**: Type of the device of the end user.
 
 You can add other data columns to the table, or you can hide the added columns. Select ![Column icon](/img/ico-column.svg) on the upper right of the **_page list_** widget.
 
-### ![](/img/number-03.png) 페이지 그룹 목록
+### ![](/img/number-03.png) Page group list
 
 In the **_page load hitmap_** widget, you can check the **page load** events of the dragged area by **[Page Group](before-starting#page-group)**. If you select the checkbox of the desired item in the list, the **page load** events corresponding to the selected **page group** appear on the **_Page List_** widget.
 
-전체 **페이지 그룹**을 선택하려면 테이블 헤더의 체크박스를 선택하세요.
+To select all **page groups**, select the checkbox of the table header.
 
 ## Page Load Event Detail{#pageload-details}
 
 If you select ![Display Detail icon](/img/ico-detail-view.svg) on the utmost left of each item in **_Page List_**, the **_Page Load Detail_** window appears. It provides various metrics to analyze the **page load** performance and the factors that affect the performance.
 
-![페이지 로드 상세](/img/rum-pageload-event-02.png)
+![Page Load Detail](/img/rum-pageload-event-02.png)
 
-### ![](/img/number-01.png) URL 목록
+### ![](/img/number-01.png) URL List
 
 The items in the **_page list_** can be seen on the URL basis. **_URL List_** is sorted by the elapsed time. If you select a URL item, you can see the detailed information about the **page load** events on the right of ![Leader line 2](/img/number-02.png).
 
--   각 항목의 파랑색 막대 그래프는 **페이지 로드** 경과 시간입니다.
--   각 항목의 막대 그래프 오른쪽의 시간은 **페이지 로드** 시작 시간입니다.
+-   The blue bar graph of each item is the elapsed time of **page load**.
+-   The time to the right of the bar graph for each item is the start time of **page load**.
 
-### ![](/img/number-02.png) 개요(페이지 로드 이벤트 요약)
+### ![](/img/number-02.png) Overview (Page Load Event Summary)
 
 The **_Overview_** tab provides the times spent for the **page load** step in a graph chart. This allows you to identify slow sections during the **page load**.
 
--   **_페이지 정보_**: 최종 사용자의 접속 환경, 접속 페이지 정보, **_사용자 ID_**, **_세션 ID_** 정보를 제공합니다.
+-   **_Page Info_**: It provides the end users' access environment, access pages, **_user IDs_**, and **_session IDs_**.
 
--   **_페이지 로드 타이밍 정보_**: **페이지 로드** 시 구간별 소요 시간을 확인할 수 있습니다.
+-   **_Page Load Timing_**: You can check the times elapsed for each section upon **page load**.
 
-    -   **_redirect_**: 브라우저가 리디렉션에 소요한 시간
+    -   **_redirect_**: Elapsed time for browser's redirection.
 
-    -   **_cache_**: 브라우저가 캐시된 리소스를 검색하는데 소요한 시간
+    -   **_cache_**: Time spent for the browser to search the cached resources.
 
-    -   **_dns_**: 브라우저가 도메인을 조회하는데 소요한 시간
+    -   **_dns_**: Time spent for the browser to search domains.
 
-    -   **_wait_**: 브라우저가 **페이지 로드**에 필요한 데이터에 대한 응답을 기다리는데 소요한 시간
+    -   **_wait_**: Time spent for the browser to respond to the data required for **page load**.
 
-    -   **_download_**: 브라우저가 서버로부터 리소스를 다운로드하는데 소요한 시간
+    -   **_download_**: Time taken for the browser to download resources from the server.
 
-    -   **_render_**: 서버로부터 다운로드한 리소스를 화면에 렌더링하고 **페이지 로드** 이벤트를 완료하는데 걸린 시간
+    -   **_render_**: Time spent to render the resources downloaded from the server on the screen and complete a **page load** event.
 
-### 리소스 목록
+### Resource list
 
 The resources downloaded from the server by the browser can significantly affect the **page load** performance. The **_resource list_** lets you quickly identify the resources that are slow to load or have large files.
 
@@ -94,4 +94,4 @@ The resources downloaded from the server by the browser can significantly affect
 
 We provide a timeline chart based on the start times for each resource so that you can identify which resources are loaded slowly. By seeing the file sizes of each resource, you can improve the performance impact. You can check the detailed time information through the **_Resource Detail_** window that appears when you click each resource.
 
-![리소스 상세](/img/rum-pageload-event-04.png)
+![Resource Detail](/img/rum-pageload-event-04.png)

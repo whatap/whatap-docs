@@ -11,111 +11,111 @@ toc_max_heading_level: 2
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
-<https://preview.whatap.io> 페이지를 통해서 아래 추가한 신기능을 미리 경험해볼 수 있습니다. 
+Through <https://preview.whatap.io>, you can experience the following new features. 
 
 ## 2022-12-15
 
-<Status>Fixed</Status> <UI>관리</UI> > <UI>인티그레이션</UI> 메뉴에서 수정 권한이 없는 경우 아이템 설치 및 설정 가능한 버그 수정
+<Status>Fixed</Status> In <UI>Management</UI> > <UI>Integration</UI>, fixed the bug where you can install and set items when you do not have the Edit role.
 
 ## 2022-12-08
 
 ### Flex Board
 
-<Status>Fixed</Status> 대시보드를 읽기 전용으로 복사한 경우 삭제 가능하도록 수정
+<Status>Fixed</Status> Modified to enable deletion when the dashboard is copied as read-only.
 
 ### Log
 
--   <Status>Fixed</Status> 필터에 비교 연산자로 '==' 입력 시, 표현식에 =='가 중복으로 표시되는 버그 수정
--   <Status>Fixed</Status> 필터에 숫자 필드(.n 필드) 입력시, prefix로 '+'가 붙어서 검색이 되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where "==" is duplicated in the expression statement when "==" has been entered as a comparison operator in the filter.
+-   <Status>Fixed</Status> Fixed the bug where search cannot be performed because "+" has been added as a prefix when entering a numeric field (.n field) in the filter.
 
 ## 2022-12-05
 
 ### Container Map
 
-<Status>Fixed</Status> 에이전트 1.2.0 버전 업데이트 후 Pod 카테고리 선택시 '에이전트 업데이트' 안내 메시지를 출력하는 버그 수정
+<Status>Fixed</Status> Fixed the bug where the "Agent Update" guide message appears when selecting a Pod category after updating to Agent 1.2.0.
 
 ## 2022-12-02
 
 ### Multiple transaction trace
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 일부 테이터 조회 시 차트가 그려지지 않는 버그 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Multiple Transaction Trace</UI>, fixed the bug where charts were not drawn when searching for some data.
 
 ### Transaction search
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>트랜잭션 검색</UI> 메뉴에서, 이전 프로젝트에서 조회한 데이터가 프로젝트 이동 시 표시되는 버그 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Transaction Search</UI>, fixed the bug where the data retrieved from the previous project appears when moving to another project.
 
 ## 2022-11-30
 
-### `공통`
+### `Common`
 
--   <Status>Change</Status> 프로젝트 생성 시 플랫폼 선택 화면에서 인티그레이션 아이템의 베타 표시 제거
--   <Status>Change</Status> <UI>이벤트 설정</UI> 메뉴와 <UI>이벤트 수신 설정</UI> 메뉴에서 이벤트에 적용 중인 <UI>이벤트 수신 태그</UI>는 삭제할 수 없도록 수정
+-   <Status>Change</Status> Removed the Beta display in integration items for platform selection when creating a project.
+-   <Status>Change</Status> In <UI>Event Setting</UI> and <UI>Notification Setting</UI>, modified not to delete <UI>Event Receiving Tag</UI> that is being applied to events.
 
 ### Container Map
 
--   <Status>New</Status> 쿠버네티스 상품군의 실험실 메뉴에 <UI>Pending Pod</UI> 기능 추가
--   <Status>Change</Status> 한 개의 Pod 내에 1개 이상의 컨테이너가 존재할 경우 컨테이너 정보를 노출하도록 수정
--   <Status>Feature</Status> Job형태의 Pod에 추가 로그 정보를 제공하기 위해 연관이벤트에 CronJob 추가
+-   <Status>New</Status> Added the <UI>Pending Pod</UI> function to the Laboratory menu for Kubernetes suite products.
+-   <Status>Change</Status> Modified to expose the container information when one or more containers exist in a pod.
+-   <Status>Feature</Status> Added CronJob to the related events to provide additional log data to the job-type pods.
 
 ### Flex Board
 
--   <Status>Feature</Status> 대시보드에 서버 상품군 Log RPS Board 템플릿 추가
--   <Status>Feature</Status> 위젯 템플릿 추가
-    * 초당 로그 카운트 수
-    * 로그 4xx, 5xx 건수
-    * 로그 요청 성공률
-    * 로그 응답시간
+-   <Status>Feature</Status> Add the Log RPS Board template for the server suite products to Dashboard.
+-   <Status>Feature</Status> Addition of widget templates
+    * Log count per second
+    * 4xx, 5xx Count
+    * Request Success Rate
+    * Response Time
 
 ### Maintenance Plan
 
-<Status>Change</Status> 화면 상단 정비 계획 안내 문구 스타일 변경 및 버튼 위치 수정
+<Status>Change</Status> Changed the style of the maintenance plan's guide text at the top of the screen and modified the locations of buttons.
 
 ### Log
 
-<Status>Change</Status> 로그 설정 메뉴에서 데이터 유지기간 설정 기능을 '카테고리별 로그 데이터 유지기간' 설정으로 수정
+<Status>Change</Status> Changed the data retention period setting in the log setting menu to the log data retention period by category setting.
 
 ### Multiple transaction trace
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 '차트 새창으로 띄우기' 버튼 클릭 시 발생하는 화이트 아웃 현상 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Multiple Transaction Trace</UI>, fixed the white out issue that occurs when `Open chart in new window` is clicked.
 
 ### Alert message
 
-<Status>New</Status> Application, Container, DB, Server 상품군에 신규 메뉴 <UI>사이트 맵</UI> > <UI>실험실</UI> > <UI>알림 메시지</UI> 추가
+<Status>New</Status> Added a new menu, <UI>Site Map</UI> > <UI>Laboratory</UI> > <UI>Alert Message</UI> to the Application, Container, DB, and Server suite products.
 
 ### Event Setting
 
-<Status>New</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 실험실의 <UI>알림 메시지 설정</UI> 메뉴 이동이 가능한 버튼 추가
+<Status>New</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Metrics</UI>, added the button to move the <UI>Notification message settings</UI> menu under Laboratory.
 
 ### Integration
 
 Changed the menu entry path and design after changing the number of installed integration items (Unlimited → 1).
 
--   <Status>Change</Status> <UI>인티그레이션 아이템</UI> 메뉴 위치를 <UI>관리</UI> 하위 메뉴로 이동, 하나의 인티그레이션 아이템만을 설치, 설정 가능하도록 수정
+-   <Status>Change</Status> Repositioned the <UI>Integration Items</UI> menu to the submenu under <UI>Management</UI>; modified to install and set only one integration item.
 
--   <Status>Change</Status> 프로젝트 진입 시 인티그레이션 아이템 설치 현황에 따라 진입 경로 수정
+-   <Status>Change</Status> When entering into the project, modified the entry path depending on the installation status of integration items.
 
     -   In case any item has been installed: Goes to the dashboard that matches the item type.
-        -   aws: <UI>Amazon CloudWatch</UI> > <UI>EC2</UI> 메뉴로 이동
-        -   ecs: <UI>Amazon ECS</UI> > <UI>Task</UI> 메뉴로 이동
-        -   그 외: <UI>Flex 보드</UI> 메뉴로 이동
+        -   aws: Moved to <UI>Amazon CloudWatch</UI> > <UI>EC2</UI>.
+        -   ecs: Moved to <UI>Amazon ECS</UI> > <UI>Task</UI>.
+        -   Others: Moved to <UI>Flex Board</UI>.
 
-    -   아이템이 설치되지 않은 경우: <UI>관리</UI> > <UI>인티그레이션 아이템</UI> 메뉴로 이동
+    -   In case the items have not been installed: Moves to <UI>Management</UI> > <UI>Integration Items</UI>.
 
--   <Status>Change</Status> 프로젝트 카드 디자인 수정
+-   <Status>Change</Status> Changed the project card design.
 
--   <Status>Change</Status> 인트그레이션 아이템이 ECS인 경우: <UI>관리</UI> > <UI>인티그레이션 설치</UI> 메뉴에서 <UI>설치 안내</UI> 페이지 하단에 고정되었던 <UI>모니터링 서비스 활성화</UI> 버튼 위치를 설치 과정 내부로 이동
+-   <Status>Change</Status> In case the integration item is ECS: In <UI>Management</UI> > <UI>Install Integration</UI>, repositioned the <UI>Activate monitoring</UI> button, which was fixed at the bottom of the <UI>Install guide</UI> page, to the inside of the installation process.
 
 ### Integration, Cloud Monitoring
 
-<Status>Deprecate</Status> <UI>관리</UI> > <UI>인티그레이션 아이템</UI> 메뉴에서 <UI>AWS CloudWatch</UI> 서비스 설정 시 <UI>전체 선택</UI> 체크 박스 제거
+<Status>Deprecate</Status> In <UI>Management</UI> > <UI>Integration items</UI>, deleted the <UI>Select All</UI> checkbox upon configuration of the <UI>AWS CloudWatch</UI> service.
 
 ### Agent CONFIG.
 
-<Status>Fixed</Status> 에이전트 이름을 별칭으로 설정하면 서버 목록 화면에 반영되지 않는 문제 수정
+<Status>Fixed</Status> Fixed the issue where the agent name is not reflected in the server list when it has been set as an alias.
 
 ### Billing Management
 
-<UI>결제 관리</UI> > <UI>유료 전환 내역</UI> 메뉴에서 다음의 기능을 수정합니다.
+In <UI>Billing Management</UI> > <UI>Subscription History</UI>, modified the following functions.
 
--   <Status>Change</Status> <UI>월간 예상비용</UI> 컬럼에 '세션 사용 상세 내역' 추가 표시하도록 수정
--   <Status>Change</Status> <UI>상품 종류</UI> 컬럼에 MYSQL RDS 상품 표시하도록 수정
+-   <Status>Change</Status> In the <UI>Monthly Estimation</UI> column, modified to additionally display the `session usage details`.
+-   <Status>Change</Status> Modified to display the MYSQL RDS product on the <UI>Product Type</UI> column.

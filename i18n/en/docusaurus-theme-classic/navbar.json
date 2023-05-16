@@ -107,10 +107,6 @@
     "message": "Log Monitoring",
     "description": "Navbar item with label Log 모니터링"
   },
-  "item.label.브라우저 모니터링(RUM)": {
-    "message": "Browser Monitoring (RUM)",
-    "description": "Navbar item with label 브라우저 모니터링(RUM)"
-  },
   "item.label.확장 도구": {
     "message": "Extension Tool",
     "description": "Navbar item with label 확장 도구"

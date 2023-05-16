@@ -4,38 +4,38 @@ title: .NET Agent 2.0.6
 toc_max_heading_level: 2
 ---
 
-#### 2023년 5월 2일
+#### 2023年5月2日
 
--   <Status>New</Status> StackExchcange Redis 최신 라이브러리 추가 적용 (2.x)
+-   <Status>New</Status> StackExchcange Redisの最新ライブラリを追加適用(2.x)
 
--   <Status>New</Status> Oracle.ManagedDataAccess 최신 라이브러리 추가 적용 (19.19.0 버전까지)
+-   <Status>New</Status> Oracle.ManagedDataAccessの最新ライブラリを追加適用(19.19.0バージョンまで)
 
--   <Status>New</Status> 특정 응용 애플리케이션 풀만 선별하여 추적하기
+-   <Status>New</Status>特定のアプリケーションプールのみを選別して追跡する
 
     -   **application_pool_filter_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値「false」
+        デフォルト値`false`
 
-        `application_pool_filter` 옵션에 등록한 애플리케이션만 추적하려면 `true`로 설정하세요.
+        `application_pool_filter`オプションに登録したアプリケーションのみを追跡するには、`true`に設定してください。
 
     -   **application_pool_filter** <span class='type'>String</span>
 
-        추적하고 싶은 애플리케이션의 이름을 입력하세요. コンマ（,）を区切り文字として複数設定することができます。
+        追跡したいアプリケーションの名前を入力してください。 コンマ(,)区切り文字として複数設定することができます。
 
         ```ini title='whatap.conf'
         application_pool_filter="DefaultAppPool, userSiteAppName"
         ```
 
--   <Status>Fixed</Status> <b>ASP.NET Web API</b>를 추적하지 못하는 버그 수정
+-   <Status>Fixed</Status> <b>ASP.NET Web API</b>を追跡できないバグを修正
 
--   <Status>Fixed</Status> 액티브 트랜잭션을 추적하지 못하는 버그 수정
+-   <Status>Fixed</Status>アクティブトランザクションを追跡できないバグを修正
 
--   <Status>Fixed</Status> 트랜잭션 ID가 가끔 중복되는 버그 수정
+-   <Status>Fixed</Status>トランザクションIDが時々重複するバグを修正
 
--   <Status>Fixed</Status> 복수의 스레드가 같은 로그 파일에 동시에 접근하여 로그가 무시되는 현상 수정
+-   <Status>Fixed</Status>複数のスレッドが同じログファイルに同時にアクセスしてログが無視される現象を修正
 
 -   <Status>Fixed</Status> 사용자 수가 측정되지 않는 버그 수정
-    
+
     [.NET 설정하기 - 사용자 수](../../dotnet/agent-number-of-user) 참조
 
 -   <Status>Fixed</Status> <code>trace_httpc_normalize_urls</code> 옵션이 동작하지 않는 버그 수정

@@ -27,7 +27,7 @@
     JMXを使用せずにJEUS DB Connection Pool情報を追跡する機能をアクティブにします。
 
 -   **profile_connection_open_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>
+    デフォルト値`true`<br/>
     トレース履歴にDBConnectionオープン情報を記録します。
 
 -   **profile_dbc_close**<span class='type'>Boolean</span><br/>
@@ -36,17 +36,17 @@
 
 -   **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値「false」
+    デフォルト値`false`
 
-    트레이스 내역에 SQL 파라미터 정보를 기록할 때 사용합니다. 파라미터는 별도 보안 키를 입력해야 조회할 수 있습니다.
+    トレース履歴にSQLパラメータ情報を記録するときに使用します。パラメータは、別途のセキュリティ キーを入力しないと照会できません。
 
     :::note
 
-    -   **Java 에이전트 2.2.2 버전 이전**: 보안 키는 WAS 서버 _`${WHATAP_AGENT_HOME}`/paramkey.txt_ 파일 내에 6자리로 작성합니다. _paramkey.txt_ 파일이 존재하지 않는 경우 랜덤 값으로 자동 생성합니다.
+    -   **Javaエージェント2.2.2バージョン以前**：セキュリティキーは、WASサーバー_`${WHATAP_AGENT_HOME}`/paramkey.txt_ファイル内に6桁で作成します。_paramkey.txt_ファイルが存在しない場合は、ランダム値で自動生成します。
 
-    -   **Java 에이전트 2.2.2 버전 이후**: 보안 키는 WAS 서버 _`${WHATAP_AGENT_HOME}`/security.conf_ 파일 내에 `paramkey` 키값을 확인하세요. _security.conf_ 파일이 존재하지 않을 경우 `paramkey` 키값을 **WHATAP**으로 자동 생성합니다.
+    -   **Javaエージェント2.2.2バージョン以降**：セキュリティキーは、WASサーバー_`${WHATAP_AGENT_HOME}`/security.conf_ファイル内に`paramkey`キー値を確認してください。_security.conf_ファイルが存在しない場合は、`paramkey`キー値を**WHATAP**で自動生成します。
 
-    -   _security.conf_ 파일에 대한 자세한 내용은 [다음 문서](install-agent#agent-files)를 참조하세요.
+    -   _security.conf_ファイルの詳細については、[次の文書](install-agent#agent-files)を参考にしてください。
 
     :::
 
@@ -91,7 +91,7 @@
     :::
 
 -   **trace_sql_normalize_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>
+    デフォルト値`true`<br/>
     SQL文からリテラル部分を抽出してSQL文を正規化する機能を活性化します。
 
 -   **profile_error_jdbc_fetch_max** <span class='type'>Int</span><br/>
@@ -99,7 +99,7 @@
     SQL Fetch Count（`ResultSet.next()`呼び出し件数）が設定した値を超えるとTOO MANY Fetchエラーとして処理されます。`0`に設定するとエラーとして処理しません。
 
 -   **profile_error_sql_time_max** <span class='type'>Int</span><br/>
-    デフォルト値 `30000`<br/>
+    デフォルト値`30000`<br/>
     SQLの実行時間が設定した値を超えると、TOO SLOWエラーとして処理されます。`0`に設定する場合、エラー処理は行いません。
 
 -   **hook_connection_open_patterns** <span class='type'>String</span><br/>

@@ -12,15 +12,15 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-신규 생성한 서버 모니터링 프로젝트를 선택하면 **_에이전트 설치_** 화면이 나타납니다. 프로젝트 **_관리_** > **_에이전트 설치_** 메뉴를 통해서도 가능합니다.
+If you select a newly generated server monitoring project, the **_agent installation_** screen appears. It is also possible in **_Management_** > **_Agent Installation_** for the project.
 
-![서버 모니터링 Linux Unix](/img/server-install-lx-unx.png)
+![Server Monitoring Linux Unix](/img/server-install-lx-unx.png)
 
 <!-- ![](/img/server-install.png) -->
 
 1.  Register the WhaTap **repository**.  
 
-    ![number-s](/img/number-01.png) **_관리_** > **_에이전트 설치_** 화면 상단 영역의 OS 탭에서 서버 OS를 선택하세요. ![number-s](/img/number-02.png) **_와탭 리포지토리 추가_** 탭에서 해당하는 명령어를 복사하여 입력합니다.
+    ![number-s](/img/number-01.png) At the top of **_Management_** > **_Agent Installation_**, select the OS tab and then select the server OS. ![number-s](/img/number-02.png) In the **_Add WhaTap Repository_** tab, copy the command and enter it.
 
     <Tabs>
     <TabItem value="du" label="Debian / Ubuntu" default>
@@ -86,8 +86,8 @@ import TabItem from '@theme/TabItem';
     </TabItem>
     </Tabs>
 
-2.  다음 명령어를 통해 **패키지**를 설치하세요.<br/>
-    ![number-s](/img/number-03.png) **_와탭 서버 모니터링 패치 설치_** 탭에서 해당하는 명령어를 복사하여 입력합니다.
+2.  Install the **package** with the following command.\
+    ![number-s](/img/number-03.png) In the **_Install WhaTap Server Monitoring Patch_** tab, copy the command and enter it.
 
     <Tabs>
     <TabItem value="du" label="Debian / Ubuntu" default>
@@ -122,12 +122,12 @@ import TabItem from '@theme/TabItem';
 
     </Tabs>
 
-3.  **설정 스크립트**를 실행하세요.<br/>
-    ![number-s](/img/number-04.png) **_서버 모니터링 시작하기_** 탭으로 이동하여 명령어를 발급 받거나, 하단의 명령어에 프로젝트 액세스 키와 서버 IP를 추가하여 실행하세요.
+3.  Run the **configuration script**.\
+    ![number-s](/img/number-04.png) Go to the **_Start Server Monitoring_** tab, get the command or execute the command below after adding the project access key and server IP.
 
     ```bash
-    echo "license=[발급된 프로젝트 액세스 키]" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host=[할당된 와탭 서버 IP]" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+    echo "license=[Granted Project Access Key]" |sudo tee /usr/whatap/infra/conf/whatap.conf
+    echo "whatap.server.host=[Granted WhaTap Server IP]" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
     echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
     sudo service whatap-infra restart
     ```
@@ -135,7 +135,7 @@ import TabItem from '@theme/TabItem';
 {@include: ../../common-items/_sv-tcp6600.mdx}  
 
 <details>
-<summary>서버 에이전트 파일 구성</summary>
+<summary>Server agent installation file configuration</summary>
 
 {@include: ../../common-items/_sv-cpf.mdx} 
 

@@ -11,58 +11,58 @@ import UI from '@site/src/components/UItext';
 
 ### Multiple transaction trace
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>멀티 트랜잭션 추적</UI> 메뉴에서 일부 테이터 조회 시 차트가 그려지지 않는 버그 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Multiple Transaction Trace</UI>, fixed the bug where charts were not drawn when searching for some data.
 
 ### Transaction search
 
-<Status>Fixed</Status> <UI>분석</UI> > <UI>트랜잭션 검색</UI> 메뉴에서, 이전 프로젝트에서 조회한 데이터가 프로젝트 이동 시 표시되는 버그 수정
+<Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Transaction Search</UI>, fixed the bug where the data retrieved from the previous project appears when moving to another project.
 
 ## 2022-10-24
 
-### `공통`
+### `Common`
 
--   <Status>Fixed</Status> 알림 수신 설정 - 서드 파티 슬랙 redirect url이 정상 연결되지 않는 버그 수정
+-   <Status>Fixed</Status> Alert Notification Setting - Fixed the bug where the 3rd party Slack redirection URL is not connected.
 
 ## 2022-06-22
 
-### `공통`
+### `Common`
 
-**_Flex 보드_** - 시리즈 위젯, 전일 데이터 비교 위젯 카운트 정보 표시 옵션 추가
+**_Flex Board_** - Added the display option for the series widget and widget count comparison with the data of the previous day
 
-**_이벤트 설정_** - 복합 메트릭스 이벤트의 수신 태그 설정 기능 추가
+**_Event Setting_** - Added the receiving tag setting function for composite metrics.
 
-**_프로젝트 액세스 키_** - 프로젝트 라이선스를 프로젝트 액세스 키로 용어 변경
+**_Project access key_** - Changed the term from `project license` to `project access key`.
 
-**_이벤트 수신 설정_** - 3rd party 수신 설정 시 알림 테스트 기능 추가
+**_Notification Setting_** - Added the notification test function when setting the 3rd party reception
 
 ### Application
 
-**_에이전트 설정_** 메뉴 개편
+Reorganized the **_Agent CONFIG._** menu.
 
 -   Enhanced usability and reorganized menus in Agent CONF (Management - Agent Setting)
 -   Application - Renamed the existing menu to Instance Performance Analysis
 
-**_트랜잭션 검색_** - 키워드 검색 시 대소문자 구분 제거
+**_Transaction Search_** - Removed case sensitivity for keyword searches.
 
 ### Database
 
-**_이벤트 설정_** - 메트릭스 이상치 탐지 이벤트 설정 기능 추가 
+**_Event Setting_** - Added the metrics anomaly detection event setting function. 
 
-**_SQL 자세히 보기_** - SQL 파싱 에러 현상 수정
+**_See SQL details_** - Fixed the SQL parsing error.
 
-**_보고서_** - 큐브리드 프로젝트 월간 보고서 종류 추가
+**_REPORT_** - Added the CUBRID project monthly report.
 
-**_트랜잭션 검색_** - 키워드 검색 시 대소문자 구분 제거
+**_Transaction Search_** - Removed case sensitivity for keyword searches.
 
 ### Container
 
-**_컨테이너맵_**
+**_Container Map_**
 
 -   Added the WhaTap event lookup function 
 -   Saving the user selection option status
 -   Enhanced the card view responsive styles
 -   Added the container information lookup function
 
-**_네임스페이스 관리_** - 네임스페이스 프로젝트 추가 기능 수정
+**_Namespace Management_** - Modified the namespace project adding function.
 
-**_멀티 서비스 히트맵_** - 데이터 조회 이상 현상 수정
+**_Multi Service Hitmap_** - Fixed the data query error.

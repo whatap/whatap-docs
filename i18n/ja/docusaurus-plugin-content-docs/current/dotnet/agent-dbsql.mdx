@@ -11,13 +11,13 @@ tags:
 .NETエージェントのDB、SQL関連オプションを提供します。
 
 -   **trace_sql_normalize_enabled** <span class='type'>Boolean</span><br/>デフォルト値 `true`<br/>
-    SQL文のリテラル部分を抽出してSQL文を正規化する機能を活性化します。リテラル部分は"#"と表記します。
+    SQL文のリテラル部分を抽出して、SQL文を正規化する機能を有効にします。リテラル部分は"#"と表記します。
 
 -   **profile_sql_resource_enabled** <span class='type'>Boolean</span><br/>デフォルト値`false`<br/>
-    トレースからSQLを収集する時、そのステップで使用したCPUとメモリの使用量を追跡します。
+    トレースからSQLを収集する場合、そのステップで使用されるCPUとメモリの使用量を追跡します。
 
 -   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>デフォルト値 `false`<br/>
-        トレース履歴にSQLパラメータ情報を記録するときに使用します。パラメータは、別途のセキュリティキーを入力して照会します。
+        トレース履歴にSQLパラメータ情報を記録するために使用します。パラメータは、別のセキュリティキーを入力することで表示します。
     :::note
-    セキュリティキーは、WASサーバー_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ファイル内に6桁で作成します。_paramkey.txt_ファイルが存在しない場合は、ランダム値で自動生成します。
+    セキュリティキーは、WASサーバー_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ファイル内に6桁で書き込まれます。_paramkey.txt_ファイルが存在しない場合は、ランダム値で自動的に生成されます。
     :::

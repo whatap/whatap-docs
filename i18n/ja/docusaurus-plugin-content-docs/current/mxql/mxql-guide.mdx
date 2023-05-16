@@ -84,7 +84,7 @@ FILTER {expr : "tx_error < 3"}        -- データ10件のうち3件が通過
 
 以下は、メトリクス加工段階をすべて通過したメトリクスの例です。
 
-![예시](https://img.whatap.io/media/images/mxql_metrics_calculate_example.png)
+![例](https://img.whatap.io/media/images/mxql_metrics_calculate_example.png)
 
 ## コメント
 
@@ -161,7 +161,7 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
     UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
     ```
 
--   収集サーバーにデータを保存するとき、すべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス照会_** > **_カテゴリ_**オプションには、**_デフォルト_**、**_5분_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
+-   収集サーバーにデータを保存するとき、すべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス照会_** > **_カテゴリ_**オプションには、**_デフォルト_**、**_5分_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
 
     ![MetricValue形式として設定できるカテゴリ一覧](https://img.whatap.io/media/images/mxql-3.png)
 
@@ -196,9 +196,9 @@ UPDATE {key:tps, value:avg}
 
 ## 事前定義MXQLクエリ文{#custom-mxql}
 
-MXQLクエリを直接作成するのではなく、事前に定義されたMXQLクエリファイルのパスを設定してMXQLを実行することができます。例えば、'エージェント別アクティブTX件数'、'\<区間別>件数'、'直近15秒'を求めるMXQLクエリは次のとおりです。
+MXQLクエリを直接作成するのではなく、事前に定義されたMXQLクエリファイルのパスを設定してMXQLを実行することができます。例えば、「エージェント別アクティブTX件数」、「区間別件数」、「直近15秒」を求めるMXQLクエリは次のとおりです。
 
-```sql title='에이전트별 액티브TX 건수, \<구간별> 건수, 최근 15초'
+```sql title='에이전트별 액티브TX 건수, 구간별 건수, 최근 15초'
 HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 TIME-RANGE {duration:15s, etime:$etime}
 OIDSET {oid:$oid, okind:$okind, onode:$onode}

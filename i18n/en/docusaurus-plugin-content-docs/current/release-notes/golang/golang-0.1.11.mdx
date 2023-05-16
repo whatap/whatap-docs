@@ -13,7 +13,7 @@ Release date: 2022-05-26
 
 ### Correction of the parameter collection error
 
-내부에 Paramter 수집을 위해 `http.Request`의 `ParseForm()` 함수 호출을 삭제 했습니다. 해당 함수를 미리 호출해서 추후 body 접근 또는 Multipart/form-data 타입의 파라메터 접근에 오류가 발생합니다. 
+For collection of internal parameters, the `ParseForm()` function call in `http.Request` has been deleted. By calling the function in advance, an error occurs later when accessing the body or parameters of the multipart/form-data type. 
 
 At the end of transaction, it has been modified to only retrieve the contents of request.
 
@@ -21,21 +21,21 @@ At the end of transaction, it has been modified to only retrieve the contents of
 
 ### Database/SQL transaction-related modification
 
-database/sql driver 내부에서 `Begin()`, `BeginTx()`, `Commit()`, `Rollback()`, `Close()` 함수에 대해서 SQL 구문의 형식으로 수집하던 부분을 일반 메세지로 수집합니다. 트랜잭션 프로파일 정보에서만 조회됩니다. 
+Inside the database/SQL driver, for `Begin()`, `BeginTx()`, `Commit()`, `Rollback()`, and `Close()` functions, the part that was collected in the form of SQL statement is now collected as a general message. It is retrieved only in the transaction profile data. 
 
-**_통계_** > **_SQL_** 통계에서 더이상 조회되지 않습니다.
+In **_Statistics_** > **_SQL_** Statistics, it is no longer viewed.
 
 ### Collecting errors not included in the web transaction
 
-기존에 웹 트랜잭션의 경우 context에 whatap 정보를 포함하고(`trace.Start()` 호출 필요) 고유 트랜잭션 아이디(`Txid`)가 발급된 경우에만 Error 정보를 수집했습니다. 
+In case of web transactions in the past, the error data was collected only when the context includes WhaTap data (`trace.Start()` call required) and the unique transaction ID (`Txid`) was granted. 
 
 If there is no unique transaction ID, the collected data can be retrieved from only the statistical data. 
 
 ### Collecting error.(Type) data upon error collection
 
-에러 통계는 클래스와 메세지로 나누어져 있습니다. 기존에는 `error.Error()` 메세지를 클래스와 메세지로 동일하게 수집했습니다. 
+Error statistics are divided into two parts: class and message. In the past, `error.Error()` messages were collected equally as classes and messages. 
 
-아래와 같이 클래스 항목에 `error.(Type)`으로 수집하고, 메세지 항목에 `error.Error()`를 수집합니다. 
+As shown below, `error.(Type)` is collected in the class, and `error.Error()` is collected in the message. 
 
 | Class                  | Message                                                     |
 | ---------------------- | ----------------------------------------------------------- |

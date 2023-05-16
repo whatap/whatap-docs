@@ -12,12 +12,12 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**Elastic Beanstalk**を利用してデプロイする場合、WhaTapエージェントを適用する方法です。
+**Elastic Beanstalk**を使用してデプロイする場合、WhaTapエージェントを適用します。
 
-1.  Linuxインストール環境に合わせて、次の内容をElastic Beanstalkの **インストールスクリプト**に追加してください。
+1.  Linuxのインストール環境に合わせ、以下をElastic Beanstalkの **インストールスクリプト**に追加します。
 
     :::note
-    「whatap.server.host」と「license」、つまり**プロジェクトアクセスキー**はユーザーに合わせて入力します。
+    「whatap.server.host」と「license」は**プロジェクトアクセスキー**をユーザーに合わせて入力します。
     :::
 
     <Tabs>
@@ -113,15 +113,15 @@ import TabItem from '@theme/TabItem';
     </TabItem>
     </Tabs>
 
-2.  次の**コマンド**を修正してください。  
+2.  次の**コマンド**を変更します。  
 
     ```bash
     echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
     ```
 
-    インストール後、サーバーモニタリングをBeanstalkに含めてアプリケーションをデプロイすると、サーバーモニタリングの新規リストが引き続き作成されます。 
+    インストール後、サーバーモニタリングをBeanstalkに含めてアプリケーションをデプロイすると、サーバーモニタリングの新規リストが引き継がれて作成されます。 
 
-    WhaTapエージェントの内部IDが、上記のコマンドが実行されるたびに新しく発行されるためです。 今後のデプロイ時に新規一覧が追加発生しないように、次のように修正してください。
+    WhaTapエージェントの内部IDが、上記のコマンドが実行されるたびに新しく発行されるためです。 今後のデプロイ時に新しいリストが追加されないように、次のように変更します。
 
     ```bash
     echo "createdtime=12345678" |sudo tee -a /usr/whatap/infra/conf/whatap.conf

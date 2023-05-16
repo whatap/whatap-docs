@@ -12,6 +12,6 @@ import UI from '@site/src/components/UItext';
 
 ## Change of the worker node's disk capacity calculation unit into block
 
--   <Status>Change</Status> 워커 노드 디스크 용량 계산 시 전체 Byte 단위 용량에서 Byte 단위 사용량으로 계산하여 Block 기준 100% 사용 시에도 100% 이하 사용으로 표시되는 현상 개선
+-   <Status>Change</Status> When calculating the disk capacity of the worker node, it is calculated from the capacity of total Bytes to the usage of Bytes. The symptom where less than 100% usage appears even when using 100% based on the block has been improved.
 
--   <Status>Change</Status> Block 기준 사용량을 Byte 단위로 환산 표시하고, 퍼센트 표시는 Block 기준으로 변경
+-   <Status>Change</Status> Block-based usage has been converted to Bytes for display, and the percentage display has been changed to blocks.

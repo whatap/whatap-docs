@@ -8,7 +8,7 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}  
+{@include: ../common-items/_agent-signup-guide.mdx}
 
 {@youtube: QXKweGBucjI}
 
@@ -20,13 +20,13 @@ To use the Node.js monitoring service, the monitoring agent must be installed on
 
 -   Run the Node.js service again.
 
-{@include: ../getting-started/_create-project-v2.mdx}  
+{@include: ../getting-started/_create-project-v2.mdx}
 
 {@include: ../getting-started/_accesskey-v2.mdx}
 
 ## Downloading the agent
 
-1.  서비스 중인 Node.js 애플리케이션의 디렉터리 경로로 이동해 에이전트를 설치하세요.
+1.  Install the agent in the active Node.js application directory.
 
     ```bash
     $ npm install --save whatap
@@ -36,11 +36,11 @@ To use the Node.js monitoring service, the monitoring agent must be installed on
 
 3.  Go to the [WhaTap Monitoring Service](https://service.whatap.io).
 
-4.  생성한 프로젝트를 선택한 다음 **_설치 안내_** 섹션의 **_에이전트 다운로드_** 내용 중 다음 내용을 복사하세요.
+4.  Select the created project and then copy the following among the **_downloaded items from the agent_** in the **_Install guide_** section.
 
     ```ini title='예시'
-    license={액세스 키}
-    whatap.server.host={수집 서버 IP}
+    license={access key}
+    whatap.server.host={collection server IP}
     ```
 
 5.  Paste it into the _whatap.conf_ file.
@@ -52,7 +52,7 @@ The host (`whatap.server.host`) address is the server address in which the WhaTa
 
 The roles of each file that makes up the Node.js monitoring service are as follows:
 
--   _whatap.conf_: 에이전트 설정 파일 샘플입니다. 해당 파일을 복사해서 액세스 키를 입력하세요.
+-   _whatap.conf_: Sample of the agent configuration file. Copy the file and enter the access key.
 
 -   _lib_: Agent and tracer program
 
@@ -72,14 +72,14 @@ Add the following code to the first line of the application's main module. In ca
 var whatap = require('whatap').NodeAgent;
 ```
 
-ECMAScript(ES)를 활용한다면 다음 코드를 같이 추가하세요.
+To use ECMAScript (ES), add the following code together.
 
 ```javascript title='ES'
 import WhatapAgent from 'whatap';
 WhatapAgent.NodeAgent;
 ```
 
-다음 적용 예시를 참조하세요.
+See the following application example:
 
 ```javascript
 var WhatapAgent = require('whatap').NodeAgent;
@@ -97,15 +97,15 @@ Because the agent executable code needs to be run first after starting node.js, 
 
 After installation, see [the following](install-check) to make sure there is no problem.
 
-### 환경 별로 whatap.conf 파일을 구분해 사용하기
+### Separating whatap.conf files for each environment
 
-다음의 경우에 해당한다면 .conf를 제외한 파일명을 설정해 주세요.
+In the following cases, set the file names excluding .conf.
 
--   환경 별로 프로젝트를 구분한 경우
+-   In case of separating the projects for each environment
 
--   에이전트 옵션을 다르게 설정할 경우
+-   In case the agent options are set differently
 
--   pm2에 의해 클러스터(Cluster) 모드로 기동할 경우
+-   In case of starting by pm2 in Cluster mode
 
 ```javascript
 process.env.WHATAP_CONF = 'whatapdev';
@@ -115,21 +115,21 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 :::note
 
-`WHATAP_NAME` 옵션으로 설정 가능한 인자는 다음과 같습니다.
+The arguments that can be set by the `WHATAP_NAME` option are as follows.
 
 -   **ipN**: ip0, ip1, ip2, ip3
 
--   **cluster**: cluster ID
+-   **cluster**: Cluster ID
 
--   **pid**: process ID
+-   **pid**: Process ID
 
--   **hostname**: 호스트 이름
+-   **hostname**: Host name
 
 :::
 
-### 에이전트 그룹 단위 기능 활용하기
+### Using the agent group unit function
 
-에이전트 그룹 단위 기능에는 그룹 토폴로지, 통합 토폴로지 등이 있으며, 다음 코드에서 `{그룹 식별자}` 부분을 에이전트 그룹명으로 대체하여 사용하세요.
+Agent group unit function includes group topology and integrated topology. Replace `{group identifier}` with agent group name in the following code.
 
 ```javascript
 process.env.WHATAP_OKIND = '{group identifier}';
@@ -142,11 +142,11 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 When installing the agent in the PaaS application, all settings must be configured in the source file (_app.js_). The _whatap.conf_ file cannot be used.
 
-액세스 키(`WHATAP_LICENSE`)와 수집 서버 IP(`WHATAP_SERVER_HOST`)를 환경 변수로 설정하세요.
+Set the access key (`WHATAP_LICENSE`) and collection server IP (`WHATAP_SERVER_HOST`) as environment variables.
 
 ```javascript title='app.js'
-process.env.WHATAP_LICENSE={액세스 키};
-process.env.WHATAP_SERVER_HOST={수집 서버 IP};
+process.env.WHATAP_LICENSE={Access Key};
+process.env.WHATAP_SERVER_HOST={Collection Server IP};
 var whatap=require('whatap').NodeAgent;
 ...
 ```
@@ -178,4 +178,4 @@ For more information about the options that can be set in Node.js, see [the foll
 
 ## Starting the monitoring
 
-애플리케이션 서버를 다시 시작하면 에이전트가 정보 수집을 시작합니다.
+Once the application server has been restarted, the agent starts collecting data.

@@ -30,51 +30,91 @@
 -   **whatap.whatap.profile_compile_file_enabled**<span class='type'>Boolean</span><br/>
         Default `false`<br/>
         It sets whether or not to trace the `compile_file` and `compile_string` functions. The `compile_file` and `compile_string` functions (PHP internal functions) are compiled before executing the scripts. You can check the compile times for main, include, require, and autoload scripts, the script file paths, and the execution times.
-    {@include: ../common-items/_php-restart-apply.mdx}
+        
+    :::note
 
--   **whatap.profile_compile_file_basetime**<span class='type'>Millisecond</span><br/>
-        Default `200`<br/>
-        Set the criterion of the execution time. Data is collected only when execution has been made while the set time was exceeded.
-    :::caution
-    If the `whatap.profile_compile_file_basetime` has been set too small, excessive collection may cause burden on the server.
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
     :::
-    {@include: ../common-items/_php-restart-apply.mdx}
+
+- **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
+
+  Default `200`
+
+  Set the criterion of the execution time. Data is collected only when execution has been made while the set time was exceeded.
+
+  :::caution
+
+  If the `whatap.profile_compile_file_basetime` has been set too small, excessive collection may cause burden on the server.
+  
+  :::
+
+  :::note
+
+  The setting is applied after Apache and PHP-FPM have been restarted.
+
+  :::
+ 
 
 -   **whatap.profile_method_enabled**<span class='type'>Boolean</span><br/>
         Default `true`<br/>
         You can check the user function information whose execution time exceeds `whatap.profile_method_time` (default: 1 second) in the transaction details.
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_method_time**<span class='type'>Milliseconds</span><br/>
         Default `1000`<br/>
         Set the execution time of the function that is collected with the `whatap.profile_method_enabled` setting. 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_method_stack_enabled**<span class='type'>Boolean</span><br/>
         Default `false`<br/>
         The stack data of the user function can be seen in the transaction details.
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_internal_method_enabled**<span class='type'>Boolean</span><br/>
         Default `true`<br/>
         Set whether or not to trace the PHP internal function. Tracing is performed only when the function takes more than the `whatap.profile_internal_method_time` setting (Default: `1 second`). 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 <!-- 두 개가 어떻게 다른지? 0309 수정완-->
 
 -   **whatap.profile_internal_method_time**<span class='type'>Milliseconds</span><br/>
         Default `1000`<br/>
         Set the execution time of the `whatap.profile_internal_method_enabled` function for tracing the internal PHP functions. 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_internal_method_param_enabled**<span class='type'>Milliseconds</span><br/>
         Default `1000`<br/>
         It additionally collects the function parameters when tracing internal PHP functions (`whatap.profile_internal_method_enabled`).
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.net_udp_flush_start**<span class='type'>Boolean</span><br/>
         Default `true`<br/>
-        If the value is `false`, the transaction start time is not collected.<br/>
+        If the value is `false`, the transaction start time is not collected.
     :::note
     Because the start point is not collected, it can be reflected a little later in the active transaction data that counts the number of active transactions. Active status is recorded normally.
     :::

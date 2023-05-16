@@ -15,14 +15,14 @@
     トランザクション内のHTTPC URLをパーシングして正規化する機能をアクティブにします。
 
 -   **trace_httpc_normalize_urls** <span class='type'>String</span><br/>
-      정규화할 HTTPC URL 패턴을 설정합니다. 호출 URL 패턴을 파싱해 패스 파라미터를 제거합니다.
+        正規化するHTTPC URLパターンを設定します。呼び出しURLパターンをパーシングしてパスパラメータを削除します。
     :::note
-    예시, **/a/{v}/b**라고 선언하면 **a/123/b** → **a/{v}/b**로 치환합니다. 여러 개를 등록할 때는 쉼표(,)를 구분자로 사용합니다. 치환 패턴 정리 후 보완이 필요합니다.
+    例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。 複数を登録するときは、コンマ(,)を区切り文字として使用します。 置換パターンを整理した後、補完が必要です。
     :::
 
 -   **hook_httpc_patterns** <span class='type'>String</span>
 
-    HTTP outbound 호출을 수행하는 `full package 클래스명`.`메소드`를 설정합니다. HTTP Call을 수행하는 메소드(method)의 전체 경로(full path)를 등록해 사용합니다. 등록 후 클래스 재정의(class redefine)를 하거나 에이전트를 재시작해야 합니다.
+    HTTP outbound呼び出しを行う`full packageクラス名`.`メソッド`を設定します。HTTP Callを実行するメソッド(method)のフルパス(full path)を登録して使用します。登録後のクラス再定義(class redefine)を行うか、エージェントを再起動する必要があります。
 
     ```ini title='whatap.conf'
     hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
@@ -30,8 +30,8 @@
 
     :::note
 
-    -   클래스를 여러 개 등록하려면 쉼표(,)를 구분자로 사용하세요. 
+    -   クラスを複数登録するには、コンマ(,)を区切り文字として使用してください。 
 
-    -   와일드 카드는 별표(\*)만 사용할 수 있으며 정규식은 사용할 수 없습니다.
+    -   ワイルドカードとしてはアスタリスク(\*)のみ使用でき、正規式は使用できません。
 
     :::

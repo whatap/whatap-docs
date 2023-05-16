@@ -12,7 +12,9 @@ tags:
 This updates the PHP monitoring service with the existing settings. Normal update is available in the version 0.2.7 or later. The previous version must be deleted and then **reinstallation** is required.
 
 :::caution
+
 If _shared library(.so)_ among PHP extensions has been changed while Apache is running, the Apache daemon may crash abnormally. Be sure to proceed with a safe update while the Apache server is stopped.
+
 :::
 
 ## Redhat/CentOS
@@ -32,7 +34,8 @@ If _shared library(.so)_ among PHP extensions has been changed while Apache is r
     ```
 
     :::note
-     To download a specific version, specify the version as follows:
+
+    To download a specific version, specify the version as follows:
 
     ```bash
     $ yum update whatap-php-{version}
@@ -57,7 +60,8 @@ If _shared library(.so)_ among PHP extensions has been changed while Apache is r
     ```
 
     :::note
-     To download a specific version, specify the version as follows:
+
+    To download a specific version, specify the version as follows:
 
     ```bash
     $ sudo apt-get install whatap-php={version}
@@ -94,5 +98,7 @@ After uninstalling the agent, install it again. Proceed by referring to the foll
         $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
         $ pkg install whatap-php-{version}.txz
         ```
+
     -   Apache or PHP-FPM service is started.
+
     :::

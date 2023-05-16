@@ -11,75 +11,75 @@ import UI from '@site/src/components/UItext';
 
 ### Container Map
 
-<Status>Fixed</Status> Container 카테고리와 Pod 카테고리의 히트맵 차트에 그려진 정보가 다른 현상 수정
+<Status>Fixed</Status> Fixed the issue where the data drawn on the hitmap charts for Container and Pod categories is different.
 
-### `공통`
+### `Common`
 
-<Status>Fixed</Status> <UI>계정 정보</UI> - 기존 비밀번호가 9글자 이하이면 신규 비밀번호 변경이 되지 않는 현상 수정
+<Status>Fixed</Status> <UI>My Profile</UI> - Fixed the issue where the new password cannot be changed if the existing password is 9 characters or less.
 
 ## 2022-10-20
 
 ### Log
 
--   <Status>Fixed</Status> 무료 체험 기간이 NaN으로 화면에 표시되는 현상 수정(NaN → 0)
--   <Status>Fixed</Status> 로그 모니터링 비활성화 프로젝트에 진입 시 '로그 모니터링 활성화 안내 모달'의 내용 없는 현상 수정
--   <Status>Fixed</Status> <UI>라이브 Tail</UI> 메뉴에서 파싱된 키를 조회하는 API를 호출하지 않는 현상 수정
+-   <Status>Fixed</Status> Fixed the issue that the free trial period appears as NaN on the screen (NaN → 0).
+-   <Status>Fixed</Status> Fixed the issue that there is no content in the log monitoring activation guide modal when entering the disabled log monitoring project.
+-   <Status>Fixed</Status> Fixed the issue where the <UI>Live Tail</UI> menu does not call the API to retrieve the parsed key.
 
 ### URL
 
-<Status>Fixed</Status> URL 목록 - 이름 변경 버튼의 오타(cancle → cancel) 수정
+<Status>Fixed</Status> URL List - Fixed the typo in the rename button (cancle → cancel).
 
 ## 2022-10-18
 
 ### Chart
 
--   <Status>Feature</Status> Out of Memory 메트릭스 차트 이동 로직 추가 - 분석 동선 생성을 위해 행 클릭 시 메트릭스 챠트로 이동하도록 수정
--   <Status>Fixed</Status> 히트맵의 다크 테마 적용 시 화면 처리 개선하도록 수정
+-   <Status>Feature</Status> Addition of the logic to go to the Out of Memory metrics chart - Modified to go to the metrics chart when clicking a row for creating the analysis flow.
+-   <Status>Fixed</Status> Modified to enhance the screen handling when applying the hitmap's dark theme.
 
 ### Resources
 
--   <Status>Change</Status> <UI>리소스</UI> > <UI>마스터 메타 정보</UI> > '데이터 없음' 메시지를 <UI>마스터 메타 데이터 없음</UI>으로 수정
+-   <Status>Change</Status> Changed the <UI>Resource</UI> > <UI>Master Meta Information</UI> > `No Data` message to <UI>No Master Meta Data</UI>.
 
 ### Container Map
 
--   <Status>Change</Status> 요약보기 창이 열린 상태에서 상태별 개수 텍스트 짤림 현상 수정
--   <Status>Change</Status> 로그 검색 탭에서 (로그 카테고리가 존재할 경우) 로그 대상 카테고리 수정
--   <Status>Fixed</Status> 카테고리가 Pod일 때 컨테이너가 복수이면 일부 컨테이너 정보만 표시하는 버그 수정
+-   <Status>Change</Status> Fixed the issue where the counts by state were cut off while the summary view window is open.
+-   <Status>Change</Status> Modified the log category under the log search tab (if any log category).
+-   <Status>Fixed</Status> Fixed the bug that displays only some container data when the category is Pod and there are multiple containers.
 
 ### Application status/performance trend
 
--   <Status>Fixed</Status> 에이전트 정보가 잘못 노출되는 오류 수정
+-   <Status>Fixed</Status> Fixed the error that displays wrong agent data.
 
 ### Log
 
--   <Status>Feature</Status> <UI>라이브 Tail</UI>, <UI>검색기</UI>, <UI>탐색기</UI>에 테이블 컬럼 순서 변경 기능 추가
--   <Status>Change</Status> 로그 설정의 데이터 유지 기간 옵션 수정
+-   <Status>Feature</Status> In <UI>Live Tail</UI>, <UI>Search</UI>, and <UI>Explorer</UI>, added the function to change the order of table columns.
+-   <Status>Change</Status> Modified the data retention period option in Log Setting.
 
     -   Trial Project: Can keep data up to 3 days
     -   Subscribed project: Can keep data up to 40 days
-    -   _front.conf_ 파일에 `ui_log_retention_limit` 옵션을 추가하면 해당 값까지 데이터 유지하도록 수정
+    -   Modified to keep data up to the value, if the `ui_log_retention_limit` option is added in _front.conf_.
 
 ### Kubernetes
 
--   <Status>Change</Status> 클러스터 프로젝트에서 헤더 메뉴를 통해 네임스페이스 이동 시 기존 메뉴를 유지한 상태로 이동할 수 있도록 수정
--   <Status>Change</Status> 퍼포먼스 요약 페이지 위젯 데이터 수정
+-   <Status>Change</Status> Modified to move the namespace through the header menu in a cluster project, while keeping the existing menu.
+-   <Status>Change</Status> Modified the widget data on the performance summary page.
 
-### `공통`
+### `Common`
 
--   <Status>Change</Status> 조회 및 분석 권한을 OFF 할 수 없도록 비활성화 처리 수정
--   <Status>Fixed</Status> 알림 수신 설정 - 서드 파티 슬랙에 redirect url이 정상적으로 연결되지 않는 버그 수정
--   <Status>Fixed</Status> <UI>통합 보고서</UI> 메뉴 첫 진입 시 시간 선택 값이 정상적으로 초기화 되지 않는 버그 수정
+-   <Status>Change</Status> Modified the inactivation handling not to turn off the view and analyze roles.
+-   <Status>Fixed</Status> Alert Notification Setting - Fixed the bug where the 3rd party Slack redirection URL is not connected.
+-   <Status>Fixed</Status> Fixed the bug where the selected time is not initialized when entering the <UI>Integrated Report</UI> menu for the first time.
 
 ### User Interface (UI)
 
-<Status>Change</Status> 다음 메뉴에서 데이터 조회 '<UI>시간 선택</UI>' UI 요소를 신규 버전으로 교체 수정
+<Status>Change</Status> `<UI>Time Selector</UI>` UI component has been changed to a new version.
 
--   **_통합 보고서_**
--   **_Flex 보드_** - 위젯
--   **_이벤트 설정_** > **_메트릭스 이벤트_** - 이벤트 시뮬레이션
--   **_복합 메트릭스 알림_** - 데이터 조회
--   **_경고 알림_** > **_파일 로그 알림_**
--   **_경고 알림_** > **_이벤트 기록_**
--   **_관리_** > **_사용자 행위_**
--   **_실험실_** > **_메트릭스 이상 탐지_**
--   **_실험실_** > **_MXQL 데이터 조회_**
+-   **_Integrated Report_**
+-   **_Flex Board_** - widget
+-   **_Event Setting_** > **_Metrics Event_** - Event simulation
+-   **_Composite Metrics Alert_** - Data Search
+-   **_Alert_** > **_File Log Alert_**
+-   **_Alert_** > **_Event History_**
+-   **_Management_** > **_User Behavior_**
+-   **_Laboratory_** > **_Metric Anomaly Detection_**
+-   **_Laboratory_** > **_MXQL Executor_**

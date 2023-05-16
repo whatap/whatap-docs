@@ -9,9 +9,9 @@ import UI from '@site/src/components/UItext';
 
 Release date: 2022-05-11
 
-## `공통`
+## `Common`
 
-**_로그 모니터링_**
+**_Log Monitoring_**
 
 -   Added the transaction profile log tab
 -   Added the log parser 
@@ -25,53 +25,53 @@ Release date: 2022-05-11
 -   Fixed the issue that the selection of the applied filtering option is not displayed; enabled displaying information on the filters added to the top of the dashboard
 -   Enhanced usability of the widget editing function
 
-**_청구 및 납부 내역_** - CSV 다운로드 기능 추가 
+**_Billing and payment history_** - Added the CSV download function. 
 
-**_메트릭스 이벤트 설정_** - 이벤트 발생 조건 및 대상 필터링 조건 입력 사용성 개선
+**_Metrics Event Setting_** - Enhanced usability of entering the event triggering conditions and target filtering conditions
 
-**_조직 관리_**
+**_Organization Management_**
 
 -   Fixed an issue where the selected organization data is initialized when moving a menu or deleting a project
 -   Fixed an issue where Kubernetes namespace project organizations and groups are not reflected in the list when moving 
 
 ## Application
 
-**_트랜잭션 프로파일_** - 로그 조회 기능 추가
+**_Transaction Profile_** - Added the log lookup function.
 
-**_트랜잭션맵_** - 필터 기능 수정 
+**_Transaction Map_** - Modified the filtering function. 
 
-**_액티브트랜잭션_** - 차트 초기 로딩 지연 현상 수정
+**_Active Transaction_** - Modified the initial chart loading delay.
 
-**_통계 - 도메인 조회_** - 빈 데이터 조회 시 로딩 상태가 지속되는 현상 수정
+**_Statistics - View Domain_** - Fixed the issue where the loading status persists when retrieving empty data
 
 ## Server
 
-**_프로세스 이벤트 설정_** - 지속 시간 설정 시 0분 ~ 999분으로 입력값 제한
+**_Process Event Setting_** - Can limit the input between 0 and 999 minutes when setting the duration
 
 ## Database
 
-**_카운터 추이_** - 시간 옵션 변경을 연속할 경우 차트 데이터가 가려지는 현상 수정
+**_Counter Trend_** - Fixed the issue where the chart data is hidden when continuously changing the time option
 
 ## Container
 
-**_네임스페이스 관리_**
+**_Namespace Management_**
 
--   쿠버네티스 마스터 프로젝트의 **_관리 - 네임스페이스 관리_** 메뉴 추가
+-   Added **_Management - Namespace Management_** of the Kubernetes master project.
 -   Namespace project addition function
 -   Viewing the status of nodes, containers, and pods
 
 **_Namespace Status_**
 
--   프로젝트 목록에서 클러스터 프로젝트 클릭 시 이동하던 쿠버네티스 마스터 그룹뷰를 마스터 프로젝트 내에 **_리소스 - 네임스페이스 현황_** 메뉴로 이동
+-   Moved the Kubernetes master group view that is moved when clicking the Kubernetes project in the project list to Resource - Namespace Status.
 -   Modified the displayed content to the project group specified by the user instead of the existing Kubernetes master group. 
 
-**_컨테이너맵_**
+**_Container Map_**
 
 -   Added the widget to view the container and pod category metrics details
 -   Enhanced the chart visibility
 
 ## URL Monitoring
 
-**_무료화_** - URL 등록 및 프로젝트 생성 무제한 이용
+**_Free_** - Unlimited use of URL registration and project creation.
 
-**_Flex 보드_** - URL 목록 위젯 추가
+**_Flex Board_** - Added the URL list widget.

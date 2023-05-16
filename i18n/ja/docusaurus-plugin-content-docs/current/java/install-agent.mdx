@@ -11,11 +11,11 @@ tags:
 import DocCardList from '@theme/DocCardList';
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}  
+{@include: ../common-items/_agent-signup-guide.mdx}
 
 {@youtube: QXKweGBucjI}
 
-{@include: ../getting-started/_create-project-v2.mdx}    
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey-v2.mdx}
 
@@ -47,14 +47,14 @@ import TR from '@site/src/components/TR';
 
     :::note
 
-    Javaエージェント2.2.2バージョン以前から2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が_seuciry.conf_ファイルのキー値として自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用している場合、2.2.2バージョンにアップデートすると、_セキュリティ.conf_ファイルには次のように適用されます。
+    Javaエージェント2.2.2バージョン以前から2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が_seuciry.conf_ファイルのキー値として自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用している場合、2.2.2バージョンにアップデートすると、_security.conf_ファイルには次のように適用されます。
 
     ```ini
     paramkey=FEDCBA
     threadkill=FEDCBA
     ```
 
-    _paramkey.txt_ファイルが存在しない場合、_セキュリティ.conf_ファイルのキー値は、**WHATAP**というキー値で自動生成されます。
+    _paramkey.txt_ファイルが存在しない場合、_security.conf_ファイルのキー値は、**WHATAP**というキー値で自動生成されます。
 
     :::
 

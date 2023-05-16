@@ -19,14 +19,14 @@ import UI from '@site/src/components/UItext';
 
 #### 設定
 
-`trace_user_header_ticket`<br/>
-#Default : ""#<br/>
+`trace_user_header_ticket`\
+#Default : ""#\
 #Type : string#
 
 設定されたHTTP Headerの値を固有のユーザー情報として選択します。
 
-`trace_user_cookie_keys`<br/>
-#Default : ""#<br/>
+`trace_user_cookie_keys`\
+#Default : ""#\
 #Type : string#
 
 設定されたCookieの値を固有のユーザー情報として選択します。コンマ（,）を区切り文字として複数の名前を設定できます。設定された順に検索します。
@@ -45,7 +45,7 @@ import UI from '@site/src/components/UItext';
 
 ### runtimeメトリクスの収集
 
-**_分析_** > **_メトリクスチャート_**で「go_runtime」カテゴリを選択して確認することができます。 
+**_分析_** > **_メトリクスチャート_**で`go_runtime`カテゴリを選択して確認することができます。 
 
 #### 収集メトリクス
 
@@ -83,9 +83,9 @@ import UI from '@site/src/components/UItext';
 
 ### net/htpライブラリのRoundTripper対応
 
-http transportでのRoundTripper使用に対応します。パッケージの「sql.Open」関数の代わりに「whatapsql.OpenContext」関数を使用します。「PrepareContext」、「QueryContext」、「ExecContext」などのcontextを伝える関数の使用をお勧めします。 
+http transportでのRoundTripper使用に対応します。パッケージの`sql.Open`関数の代わりに`whatapsql.OpenContext`関数を使用します。`PrepareContext`、`QueryContext`、`ExecContext`などのcontextを伝える関数の使用をお勧めします。 
 
-伝達するcontextは「trace.Start()」を通じる必要があり、whatap TraceCtx情報が必要です。
+伝達するcontextは`trace.Start()`を通じる必要があり、whatap TraceCtx情報が必要です。
 
 ```go title='설치 안내 '
 import (

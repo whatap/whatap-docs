@@ -8,9 +8,9 @@ tags:
   - Dashboard
 ---
 
-홈 화면 > 프로젝트 선택 > **_대시보드_** > **_페이지 로드_**
+Home > Select Project > **_Dashboard_** > **_Page Load_**
 
-**_페이지 로드_** 대시보드에서는 페이지 로드와 관련한 코어 웹 바이탈(Core Web Vitals, CWV) 및 리소스, AJAX 등의 성능 데이터를 실시간으로 모니터링할 수 있습니다. This can help you understand the factors that affect the web application experience and derive improvements.
+In the **_Page Load_** dashboard, you can monitor Core Web Vitals (CWV) related to page load and performance data such as resources and AJAX in real time. This can help you understand the factors that affect the web application experience and derive improvements.
 
 {@include: _dashboard-note.mdx}
 
@@ -18,73 +18,73 @@ tags:
 
 Core Web Vitals (CWV) means three metrics that Google considers important among various measures that affect the end-user experience.
 
-![코어 웹 바이탈](/img/rum-core-web-vitals.png)
+![Core Web Vitals](/img/rum-core-web-vitals.png)
 
 :::note
 
-구글의 [코어웹 바이탈 보고서](https://support.google.com/webmasters/answer/9205520) 문서에서 페이지 성능이 최종 사용자 경험에 미치는 영향을 참조하세요.
+Through the Google [Core Web Vitals Report](https://support.google.com/webmasters/answer/9205520), you can see how the page performance affects the end user experience.
 
 :::
 
-### **_평균 최대 콘텐츠 렌더링 시간_**
+### **_Average Largest Content Rendering Time_**
 
-**최대 콘텐츠풀 페인트(Largest Contentful Paint, 이하 LCP)**는 처음 페이지를 불러오기 시작한 시점을 기준으로 브라우저 뷰포트 내에 있는 가장 큰 이미지 또는 텍스트 블록의 렌더링 시간을 보고합니다. It is an important user-centric metric that allows you to measure page load times as perceived by end users. A fast LCP helps end users perceive that the page is available.
+**Largest Contentful Paint (LCP)\*** reports the rendering time of the largest image or text block in the browser viewport based on the first page load. It is an important user-centric metric that allows you to measure page load times as perceived by end users. A fast LCP helps end users perceive that the page is available.
 
-![평균 최대 콘텐츠 렌더링 시간](/img/rum-lcp.png)
+![Average Largest Content Rendering Time](/img/rum-lcp.png)
 
-최적화된 사용자 경험을 제공하려면 웹 애플리케이션의 LCP가 **2.5초** 이하여야 합니다. **_평균 최대 콘텐츠 렌더링 시간_** 위젯은 페이지 그룹 또는 전체 페이지 기준으로 평균 LCP를 확인할 수 있습니다. If you see the chart by page group, it provides you the average LCP for the top 5 page groups.
+To provide an optimized user experience, your web application must have an LCP of **2.5 seconds** or less. The **_Average Largest Content Rendering Time_** widget allows you to see the average LCP based on the page group or all pages. If you see the chart by page group, it provides you the average LCP for the top 5 page groups.
 
-### **_평균 최대 입력 반응 시간_**
+### **_Average Largest Input Response Time_**
 
-**최초 입력 지연(First Input Delay, 이하 FID)**는 최종 사용자가 웹 애플리케이션의 페이지와 처음 상호 작용할 때(링크를 클릭하거나 버트을 탭하거나 사용자 지정 Javascript 기반 컨트롤을 사용할 때)부터 해당 상호 작용에 대한 응답으로 브라우저가 실제로 이벤트 핸들러 처리를 시작하기까지의 시간을 측정합니다. It is a metric of the user's experience when interacting with an unresponsive page. When the FID is low, users consider that the page can be used normally.
+**First Input Delay (FID)** measures from when an end user first interacts with a web application page (click a link, tap a button, or use the custom Javascript-based controls) to the time until the browser starts processing the event handler in response to the interaction. It is a metric of the user's experience when interacting with an unresponsive page. When the FID is low, users consider that the page can be used normally.
 
-![평균 최대 입력 반응 시간](/img/rum-pageload-fid.png)
+![Average Largest Input Response Time](/img/rum-pageload-fid.png)
 
-To provide an optimized user experience, your web application must have an FID of 100 ms or less. **_평균 최대 입력 반응 시간_** 위젯은 페이지 그룹 또는 전체 페이지 기준으로 평균 FID를 확인할 수 있습니다. If you see the chart by page group, it provides you the average FID for the top 5 page groups.
+To provide an optimized user experience, your web application must have an FID of 100 ms or less. The **_Average Largest Input Response Time_** widget allows you to see the average FID based on the page group or all pages. If you see the chart by page group, it provides you the average FID for the top 5 page groups.
 
-### **_평균 레이아웃 변경 점수_**
+### **_Average Cumulative Layout Shift_**
 
 Cumulative Layout Shift (CLS) is an important user-driven metric for measuring visual stability by quantifying the frequency with which end users experience unexpected layout shifts. A low CLS helps ensure a good user experience.
 
-![평균 레이아웃 변경 점수](/img/rum-pageload-cls.png)
+![Average Cumulative Layout Shift](/img/rum-pageload-cls.png)
 
-CLS must be kept below 0.1 to provide an optimized user experience. **_평균 레이아웃 변경 점수_** 위젯은 페이지 그룹 또는 전체 페이지 기준으로 평균 CLS를 확인할 수 있습니다. If you see the chart by page group, it provides you the average CLS for the top 5 page groups.
+CLS must be kept below 0.1 to provide an optimized user experience. The **_Average Cumulative Layout Shift_** widget allows you to see the average CLS based on the page group or all pages. If you see the chart by page group, it provides you the average CLS for the top 5 page groups.
 
-### **_코어 웹 바이탈 테이블_**
+### **_Core Web Vitals Table_**
 
-![코어 웹 바이탈 테이블](/img/rum-pageload-cwv-table.png)
+![Core Web Vitals Table](/img/rum-pageload-cwv-table.png)
 
-조회 시간 기준 페이지 그룹(**_Page Group_**) 단위로 평균 LCP(**_Avg. LCP_**), 평균 FID(**_Avg. FID_**), 평균 CLS(**_Avg. CLS_**)를 테이블로 확인할 수 있습니다. You can click the table header column to sort by column.
+Based on the lookup time, for each **_page group_**, the average LCP (**_Avg. LCP_**), average FID (**_Avg. FID_**), average CLS (**_Avg. CLS_**) can be checked in the table. You can click the table header column to sort by column.
 
 ## Page Load Timing-related widget
 
 When an end user accesses a web application, the page load time and load count allow you to determine when loading a page takes so long and which pages are causing load.
 
-### **_평균 페이지 로드 시간_** / **_페이지 로드 수_**
+### **_Avg Page Load Time_** / **_Page Load Count_**
 
-![평균 페이지 로드 시간, 페이지 로드 수](/img/rum-pageload-timing.png)
+![Avg Page Load Time, Page Load Count](/img/rum-pageload-timing.png)
 
-최종 사용자가 웹 애플리케이션의 웹 페이지를 접속했을 때 실시간 또는 선택한 시간 기준으로 **_평균 페이지 로드 시간_**과 **_페이지 로드 수_**를 확인할 수 있습니다. The load times and load counts are provided for each page group by default.
+If an end user accesses the page of the web application, you can see the **_average page load time_** and **_page load count_** based on the real time or selected time. The load times and load counts are provided for each page group by default.
 
 -   When viewed by the page group, it provides the average page load time and page load count for the top 10 page groups.
 
 -   If you hover your mouse over the widget chart, you can see the page groups, average page load times, and page load counts in the form of tooltip.
 
-### **_평균 라우터 변경 시간_** / **_라우터 변경 횟수_**
+### **\*Avg Router Change Time** / **_Router Change Count_**
 
-![평균 라우터 변경 시간, 라우터 변경 횟수](/img/rum-pageload-router.png)
+![Avg Router Change Time, Router Change Count](/img/rum-pageload-router.png)
 
-최종 사용자가 Single Page Application(SPA)로 구성되어 있는 웹 애플리케이션에서 페이지 전환을 했을 때 실시간 또는 선택한 시간 기준으로 **_평균 라우터 변경 시간_**과 **_라우터 변경 횟수_**를 실시간으로 확인할 수 있습니다. The router change times and change counts are provided for each page group by default.
+When the end users switch to a web application page that consists of single page applications (SPA), you can see values for **_Average Router Change Time_** and **_Router Change Count_** based on the real time or the selected time. The router change times and change counts are provided for each page group by default.
 
 -   When viewed by the page group, it provides the average router change time and change count for the top 10 page groups.
 
 -   If you hover your mouse over the widget chart, the page group, average router change time, and change count are provided in the form of tooltip.
 
-### **_페이지 로드 타이밍 테이블_**
+### **_Page Load Timing Table_**
 
-![페이지 로드 타이밍 테이블](/img/rum-pageload-timing-table.png)
+![Page Load Timing Table](/img/rum-pageload-timing-table.png)
 
-페이지 그룹(**_Page Group_**) 단위로 페이지 로드 수(**_Load count_**), 평균 로드 시간(**_Avg. Load Time_**), 평균 백엔드 처리 시간(**_Avg. Backend Time_**), 평균 프론트엔드 처리 시간(**_Avg. Frontend Time_**)을 테이블로 확인할 수 있습니다. You can click the table header column to sort by column.
+For each page group (**_Page Group_**), the page load count (**_Load count_**), average load time (**_Avg. Load Time_**), average back-end process time (**_Avg. Backend Time_**), average frontend process time (**_Avg. Frontend Time_**) can be checked in the table. You can click the table header column to sort by column.
 
 ## Resource-related widget
 
@@ -92,36 +92,36 @@ You can identify resources that affect the page load. It is recommended that the
 
 ### Average Resource Response Time/Resource Count
 
-![평균 리소스 응답시간, 리소스 건수](/img/rum-pageload-resource.png)
+![Avg Resource Response Time, Resource Count](/img/rum-pageload-resource.png)
 
-It provides a chart for the average resource response time and resource count that occurred during loading pages. 위젯 오른쪽 위에 **_리소스 Path_** 버튼을 선택해 **_리소스 Host_**, **_전체_** 리소스 기준으로 확인할 수 있습니다.
+It provides a chart for the average resource response time and resource count that occurred during loading pages. Select **_Resource Path_** on the upper right of the widget to check the data based on **_Resource Host_** and **_All_** resources.
 
--   **_리소스 Path_**, **_리소스 Host_** 기준으로 조회 시 상위 10개에 해당하는 평균 리소스 응답시간 및 리소스 건수를 제공합니다.
+-   When viewed based on the **_Resource Path_** and **_Resource Host_**, the average response time and count for the top 10 resources are provided.
 
 -   If you hover your mouse over the widget chart, the average resource response time and resource count are provided in the form of tooltip.
 
 ### Resource Table
 
-![리소스 테이블](/img/rum-pageload-resource-table.png)
+![Resource Table](/img/rum-pageload-resource-table.png)
 
-**_페이지 로드 - 리소스 테이블_** 위젯에서는 리소스 URL의 Path 기준과 요청한 페이지 그룹 기준을 테이블로 확인할 수 있습니다. 위젯 오른쪽 위에 **_리소스 Path_** 버튼을 선택해 **_페이지 그룹_** 기준으로 전환해 데이터를 조회할 수 있습니다.
+In the **_Page Load - Resource Table_** widget, you can see a chart for the path reference of the resource URL and the requested page. You can search data by selecting **_Resource Path_** on the upper right of the widget and switching based on the **_page group_**.
 
 ## AJAX-related widget
 
 You can identify AJAXs that affect the page load. When the rendering data is provided through AJAX, the screen rendering may take long if the response is slow.
 
-### Average AJAX Response Time/AJAX Count
+### Avg AJAX Response Time/AJAX Count
 
-![AJAX 응답시간, AJAX 건수](/img/rum-pageload-ajax.png)
+![AJAX Response Time, AJAX Count](/img/rum-pageload-ajax.png)
 
-It provides a chart for the average AJAX response time and AJAX count that occurred during loading pages. 위젯 오른족 위에 **_AJAX Path_** 버튼을 선택해 **_AJAX Host_**, **_전체_** AJAX 기준으로 전환해 데이터를 조회할 수 있습니다.
+It provides a chart for the average AJAX response time and AJAX count that occurred during loading pages. Select **_AHAX Path_** on the upper right of the widget to check the data based on **_AJAX Host_** and **_All_** AJAX.
 
--   **_AJAX Path_**, **_AJAX Host_** 기준으로 조회 시 상위 10개에 해당하는 평균 AJAX 응답시간 및 AJAX 건수를 제공합니다.
+-   When viewed based on the **_AJAX Path_** and **_AJAX Host_**, the average response time and count for the top 10 AJAX cases are provided.
 
 -   If you hover your mouse over the widget chart, the average AJAX response time and AJAX count are provided in the form of tooltip.
 
 ### AJAX Table
 
-![AJAX 테이블](/img/rum-pageload-ajax-table.png)
+![AJAX Table](/img/rum-pageload-ajax-table.png)
 
-**_페이지 로드 - AJAX 테이블_** 위젯에서는 AJAX URL의 Path 기준과 요청한 페이지 그룹 기준을 테이블로 확인할 수 있습니다. 위젯 오른쪽 위에 **_AJAX Path_** 버튼을 선택해 **_페이지 그룹_** 기준으로 전환해 데이터를 조회할 수 있습니다.
+In the **_Page Load - AJAX Table_** widget, you can see a chart for the path reference of the AJAX URL and the requested page. You can search data by selecting **_AJAX Path_** on the upper right of the widget and switching based on the **_page group_**.

@@ -4,19 +4,19 @@ The application monitoring agent provides linear and circular collection methods
 
 Individual transaction traces cannot collect steps indefinitely. Store trace steps in buffers of limited length for each transaction. For each transaction, the maximum number of steps that can be collected is specified as an option.
 
--   **whatap.profile_step_max_count**<br/>
+-   **whatap.profile_step_max_count**\
       Default `1024`<br/>
       Maximum number of steps that can be collected
 
--   **whatap.profile_step_normal_count**<br/>
+-   **whatap.profile_step_normal_count**\
       Default `800`<br/>
       Number of steps that are generally collected without any restrictions
 
--   **whatap.profile_step_heavy_count**<br/>
+-   **whatap.profile_step_heavy_count**\
       Default `1000`<br/>
       If the normal count is exceeded, only the steps with slow response time and the active stack steps are collected.
 
--   **whatap.profile_step_heavy_time**<br/>
+-   **whatap.profile_step_heavy_time**\
       Default `100`<br/>
       The reference time to collect steps within heavy count is `whatap.profile_step_heavy_time`.
 

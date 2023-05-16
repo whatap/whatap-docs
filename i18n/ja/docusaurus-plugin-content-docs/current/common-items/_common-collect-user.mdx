@@ -1,13 +1,13 @@
 -   **trace_user_cookie_limit** <span class='type'>Int</span><br/>
-    デフォルト値「2048」<br/>
+    デフォルト値`2048`<br/>
     ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多すぎるとクッキーオーバーフロアが発生する可能性があります。 これを防止するためにlimitを設定します。
 
 -   **trace_user_using_ip** <span class='type'>Boolean</span><br/>
-    デフォルト値「true」<br/>
+    デフォルト値`true`<br/>
     リアルタイムユーザーをIPアドレスによって集計します。IPアドレスではなくクッキーに基づいてユーザーを区分したい場合は、値を「false」に変更してください。
 
 -   **trace_http_client_ip_header_key** <span class='type'>String</span><br/>
-    クライアントIP（RemoteIP）の情報を特定HTTPヘッダーの値に変更して設定する機能です。 プロキシ（Proxy）環境で「X-Forwarded-For」ヘッダー値をクライアントIPに設定できます。<br/>
+    クライアントIP（RemoteIP）の情報を特定HTTPヘッダーの値に変更して設定する機能です。 プロキシ（Proxy）環境で`X-Forwarded-For`ヘッダー値をクライアントIPに設定できます。<br/>
     WEB/WAS の前にL4のようなロードバランサーが位置している場合、クライアントのIPアドレスではなくL4 のIPアドレスがRemote Adressになる場合があります。 この状況で、実際のクライアントIP情報がHTTPヘッダーに特定のキー値として記録される場合は、そのキー値に置き換えることができます。
 
 -   **user_header_ticket** <span class='type'>String</span><br/>
@@ -18,4 +18,4 @@
     ```
 
 -   **trace_user_using_jsession** <span class='type'>Boolean</span><br/>
-    デフォルトの「false」<br/>リアルタイムユーザーをSESSIONIDに基づいて集計します。
+    デフォルトの`false`<br/>リアルタイムユーザーをSESSIONIDに基づいて集計します。

@@ -54,7 +54,7 @@ The real-time logs have been added for HTTP and DB connections.
 
 ### Display of oname specified in the agent log
 
-`oname`을 `-D` 옵션으로 지정한 경우에도 에이전트로그에서 PID 대신에 에이전트 이름을 표시하도록 수정하였습니다.
+Even when `oname` is specified using the `-D` option, the setting has been modified to display the agent name instead of the PID in the agent logs.
 
 ### Adding the JDBC URL extraction delimiter
 
@@ -87,7 +87,7 @@ Added the function to apply timeout to HttpClient and handle errors upon timeout
 
 ### Adding the JMX pool setting
 
-jmx pool object의 기본값을 수정하였습니다. jmx pool의 데이터소스 이름 사용 여부를 결정할 수 있는 옵션을 추가하였습니다. 데이터소스 이름을 등록하는 경우 jndi 방식을 실행하고, 이름을 등록하지 않은 경우 기본 url 방식으로 동작합니다.
+The default value of the JMX pool object has been modified. An option to determine whether or not to use the data source name of the JMX pool has been added. If the data source name is registered, the JNDI method is executed. If the name is not registered, the default URL method is executed.
 
 ```ini title='whatap.conf 기본 설정'
 jmx_pool_dsname_enabled=false
@@ -170,7 +170,7 @@ agent_meta_tags_enabled=true
 
 The function has been added to exclude from the search items when a specific key value is entered in the environment variable search function.
 
-구분자는 ','로 대소문자를 구분하지 않습니다. `agent_env_system_enabled`, `agent_env_jvm_enabled` 설정과 연결하여 사용할 수 있습니다.
+The delimiter is "," and the value is not case sensitive. It can be used in connection with the `agent_env_system_enabled` and `agent_env_jvm_enabled` settings.
 
 ```ini title='whatap.conf 기본 설정'
 agent_env_system_enabled=false
@@ -183,13 +183,13 @@ agent_env_ignore_keys=user.timezone,user.name,user.language
 
 The linked service status tracing function has been added so that the target IP or service connection status can be checked in liveTail of log monitoring.
 
-`logsink_rt_enabled` 옵션을 `true`로 설정하여 기능을 활성화 할 수 있고 `#RemoteTrace` 카테고리로 로그를 수집합니다.
+You can enable the function by setting `logsink_rt_enabled` to `true`, which collects logs with the `#RemoteTrace` category.
 
 -   In case of a normal response, the level is ok. In case of error, the level is error.
 
--   정상 응답인 경우 `logsink_rt_ok_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 30초 입니다.
+-   In case of a normal response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 30 seconds.
 
--   에러 응답인 경우 `logsink_rt_error_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 5초 입니다.
+-   In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
 
 ```ini title='whatap.conf 기본 설정'
 logsink_rt_enabled=false
@@ -202,13 +202,13 @@ logsink_rt_ok_interval=30000
 
 The function has been added to receive a notification when an error occurs when calling HTTP or database or the response is slower than the specified time.
 
--   `exception_alert_enabled` 옵션을 true로 설정하여 기능을 활성화 할 수 있습니다.
+-   The function can be enabled by setting `exception_alert_enabled` to `true`.
 
--   `exception_alert_stack_size` 옵션으로 에러 스택 길이를 지정하여 알림 메세지로 받을 수 있습니다.
+-   Using the `exception_alert_stack_size` option, you can specify the error stack length to receive alert messages.
 
--   `exception_alert_silent_time` 옵션으로 지정한 기간만큼 에러 알림을 비활성화할 수 있습니다.
+-   You can disable error notifications for the specified period by the `exception_alert_silent_time` option.
 
--   알림 메세지에는 url, `status_code`, `error_message`, `error_stack` 등을 표시합니다.
+-   The notification messages include URL, `status_code`, `error_message`, and `error_stack`.
 
 ```ini title='whatap.conf'
 # Default
@@ -245,7 +245,7 @@ httpc_status_url_alert_ignore_set=/api/test/timeout:408
 
 ### Adjustment of error levels of transactions and HTTP calls
 
-트랜잭션이나 http 호출의 상태를 정상 호출로 인식할 수 있도록 기능을 추가하였습니다. 트랜잭션이나 http 호출의 상태를 info로 설정하게 되면 Spring Framework의 ExceptionHandler에서 처리하지 않은 에러를 정상으로 인식할 수 있도록 버전 기능을 추가하였습니다. 조건에 해당하는 경우 히트맵에 ErrorLevel에 INFO로 표시하고 에러 통계에는 포함합니다.
+A function has been added to recognize the status of transactions or HTTP calls as normal. When the transaction or HTTP call status is set to info, the version function has been added so that errors not handled by Spring Framework's ExceptionHandler can be recognized as normal. If the condition is met, INFO appears at the ErrorLevel in the hitmap and the error statistics include it.
 
 ```ini title='whatap.conf'
 # Default
@@ -279,7 +279,7 @@ druid_pool_enabled=false
 
 ### Addition of the netstat function
 
-oshi 라이브러리 활용하여 netstat을 수집하는 기능을 추가하였습니다. 네트워크 지표들 중 packet, collision, drop, error, bps 데이터를 수집합니다.
+Added the function to collect netstat by using the OSHI library. Among network metrics, the packet, collision, drop, error, and bps are collected.
 
 ```ini title='whatap.conf 기본 설정'
 oshi_netstat_enabled=false
@@ -302,15 +302,15 @@ Fixed the bug where an error appears even if the maximum error time is set to 0 
 
 ### Bug that cannot trace the local date when tracing SQLs
 
-sql 요청시 `java.time.LocalDate` 타입을 추적하지 못하는 문제를 수정하였습니다.
+Fixed the bug where the `java.time.LocalDate` type cannot be traced upon SQL request.
 
 ### Fixing the bug upon displaying the agent log
 
-`java.sql.Timestamp` 타입을 활용하여 로그를 남기는 경우 에러가 발생하는 문제를 수정하였습니다.
+Fixed the bug where an error occurs if logs are left using the `java.sql.Timestamp` type.
 
 ### Fixed the class signature verification bug
 
-에이전트 설정 메뉴의 클래스 시그니처 표시 요청할 때 `java.lang.NullPointerException` 발생하는 것을 수정하였습니다.
+Fixed the bug where `java.lang.NullPointerException` occurs upon display request of class signature on the Agent CONFIG. menu.
 
 ### Fixing the bug upon container ID extraction
 

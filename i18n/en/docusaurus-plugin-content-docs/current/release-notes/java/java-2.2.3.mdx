@@ -4,19 +4,19 @@ title: Java Agent 2.2.3
 toc_max_heading_level: 2
 ---
 
-2023년 2월 14일
+February 14, 2023
 
-## <Status>New</Status> (신기능)
+## <Status>New</Status> (new feature)
 
--   **spring-webflux-6.x** 추적 추가
+-   Added the **spring-webflux-6.x** tracing.
 
     ```ini title='whatap.conf'
     weaving=webflux-6.0
     ```
 
--   database connection close를 step에 표시
+-   Displayed the database connection close in the step.
 
-    -   close 표시 클래스 정보 목록
+    -   List of the close displaying class data
 
         -   org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
 
@@ -28,32 +28,32 @@ toc_max_heading_level: 2
 
         -   com.zaxxer.hikari.pool.ProxyConnection.close()V
 
-    -   patterns 설정을 통해서 database connection close를 표시할 클래스 추가 가능 (기본값 `true`)
+    -   You can add a class to display the database connection close by setting patterns (Default `true`).
 
         ```ini title='whatap.conf'
         hook_connection_close_default_enabled=true
         hook_connection_close_patterns=a.b.c.D
         ```
 
--   jdbc url 표시 설정 추가
+-   Added the JDBC URL display setting.
 
-    -   `jdbc_url_enabled=false`로 설정 시 자바 에이전트가 추적하고 있는 database connection 정보를 url이 아닌 클래스로 표시 (기본값 `true`)
+    -   When set to `jdbc_url_enabled=false`, the database connection information traced by the Java agent appears as a class rather than a URL (Default `true`).
 
         ```ini title='whatap.conf'
         jdbc_url_enabled=true
         ```
 
--   database connection pool 클래스 표시 설정 추가
+-   Added the setting to display the database connection pool class.
 
-    -   database connection pool의 클래스 이름을 jdbc url 데이터 뒤에 표시하여 connection pool의 정보를 추가로 확인할 수 있도록 설정 추가 (기본값 `false`)
+    -   Added the setting to display the class name of the database connection pool behind the JDBC URL data to additionally check the information of the connection pool (Default `false`).
 
         ```ini title='whatap.conf'
         trace_dbc_append_classname_enabled=false
         ```
 
-    -   database connection 정보를 자세하게 표시하기 위한 예시
+    -   Example for displaying the database connection information in detail
 
-        `jdbc_url` + "@클래스 정보"; connection close 정보; 표시
+        Display of `jdbc_url` + "@class info" and connection close info
 
         ```ini title='whatap.conf'
         trace_dbc_append_classname_enabled=true
@@ -61,50 +61,50 @@ toc_max_heading_level: 2
         trace_dbc_wrap_enabled=true
         ```
 
--   kubernetes 마스터 에이전트 연결 여부 설정 추가 (기본값 `false`)
+-   Added the setting whether or not to connect the Kubernetes master agent (Default `false`).
 
     ```ini title='whatap.conf'
     kube_agent_connect_enabled=false
     ```
 
--   (batch) 액티브 스택 수집 여부 설정 추가 (기본값 `false`)
+-   (batch) Added the setting whether or not to collect active stacks (Default `false`).
 
     ```ini title='whatap.conf'
     active_stack_enabled=false
     ```
 
--   (batch) batch job에 트랜잭션을 분리하여 추적 기능 추가 (기본값 `false`)
+-   (batch) Added the tracking function by separating transactions to a batch job (Default `false`).
 
     ```ini title='whatap.conf'
     split_trace_enabled=false
     ```
 
--   (batch) batch job의 시작 트랜잭션의 최대 step 설정 추가 (기본값 `2000`)
+-   (batch) Added the maximum step setting for the batch job's start transaction (Default `2000`).
 
     ```ini title='whatap.conf'
     trace_batch_main_step_max_count=2000
     ```
 
--   (batch) 실시간으로 분리된 트랜잭션 추적 예시
+-   (batch) Real-time separated transaction tracing example
     ```ini title='whatap.conf'
     trace_batch_main_step_max_count=2000
     split_trace_enabled=true
     ```
 
-## <Status>Change</Status> (업데이트)
+## <Status>Change</Status> (update)
 
--   자바에이전트 내장 오픈소스 플러그인의 **webflux-5.x** 업데이트
+-   **webflux-5.x** update of the open source plug-in with the built-in Java agent
 
--   ResultSet의 fetch time을 system time에서 jvm의 nanotime으로 수정
+-   Changed the fetch time of ResultSet to the nanotime of JVM.
 
--   `service_patterns`로 트랜잭션을 등록하는 경우 트랜잭션 이름을 "클래스#메서드" 방식으로 표시
+-   When registering transactions with `service_patterns`, the transaction name is displayed in the form of `class#method`.
 
--   SQL 모니터링 시 null sql이 전달되는 경우 step에 **sql is null** 표시
+-   When null SQL is delivered during SQL monitoring, **sql is null** is displayed in the step.
 
--   (batch) DeadLock 제거
+-   (batch) Deleted the DeadLock.
 
-## <Status>Fixed</Status> (버그 수정)
+## <Status>Fixed</Status> (bug fixing)
 
--   ResultSet wrapper 이중 카운팅 버그 수정
+-   Fixed the double counting bug in the ResultSet wrapper.
 
--   SQL parameter의 Big Decimal 수집 버그 수정
+-   Fixed the Big Decimal collection bug in the SQL parameters.

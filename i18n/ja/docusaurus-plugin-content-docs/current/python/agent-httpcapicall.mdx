@@ -12,13 +12,13 @@ tags:
 PythonエージェントのHTTPC、API Call関連オプションを提供します。
 
 -   **profile_httpc_resource_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       トレースでHTTP Callステップが収集されるとき、そのステップで使用したCPUとメモリの使用量を追跡します。
 
 -   **trace_httpc_normalize_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
+      デフォルト値`true`<br/>
       外部HTTP呼び出し（HTPCall）URLを構文解析して正規化する機能を活性化します。 
 
 -   **trace_httpc_normalize_urls**<span class='type'>String</span><br/>
-      外部HTTP呼び出しURLを構文解析して正規化します。呼び出しURLパターンを構文解析してパスパラメータを削除します。<br/>
+      外部HTTP呼び出しURLを構文解析して正規化します。呼び出しURLパターンを構文解析してパスパラメータを削除します。\
       例えば、/a/{v}/bと宣言すると/a/123/b → /a/{v}/bに置き換えます。複数登録するときはコンマ（_,_）を使います。/a/\*/bのように使用して特定形式のパスパラメータを除去して収集することができます。      

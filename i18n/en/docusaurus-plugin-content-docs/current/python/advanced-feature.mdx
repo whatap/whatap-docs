@@ -38,16 +38,16 @@ The WhaTap application monitoring agent transfers the collected data after encry
 
 By default, it uses XOR operation and the encryption using AES algorithm. Encryption and decryption are performed by dividing the plain texts into 128-bit units. It can be expanded up to 256 bits depending on the setting.
 
-1.  **Set up**<br/>
+1.  **Set up**\
     In the directory where the agent has been installed, add the following settings to _whatap.conf_.
 
     ```ini title='cypher_level=256 설정 추가하기'
-    license={액세스 키}
-    whatap.server.host={수집 서버 IP}
+    license={access key}
+    whatap.server.host={collection server IP}
     cypher_level=256
     ```
 
-2.  **Restart**<br/>
+2.  **Restart**\
     After adding the settings, restart the WAS.
 
 ## Constraints

@@ -8,289 +8,289 @@ tags:
   - UI
 ---
 
-홈 화면 > 프로젝트 선택 > **_경고 알림_** > **_이벤트 설정_** 
+Home > Select Project > **_Alert_** > **_Event Setting_** 
 
 <!--
 > ***서버*** 탭 선택
 <span class='vslow'>위험</span>, <span class='slow'>경고</span> 수준으로 나누어 알림을 보낼 수 있습니다.
 -->
 
-**_서버_**, **_프로세스_**, **_로그 파일_** 및 **_윈도우 이벤트_** 등의 이벤트 정책을 생성, 수정, 삭제할 수 있습니다. 이벤트 타입을 선택해 서버 재시작 여부, 에이전트의 통신 장애 지속 시간, 자원 사용량 등에 따라 이벤트를 설정할 수 있습니다.
+You can create, modify, and delete event policies such as **_Server_**, **_Process_**, **_Log File_**, and **_Window Event_**. By selecting an event type, you can configure events according to the server restart, agent's communication failure duration, and resource usage.
 
-![이벤트 설정 - 서버 sc](/img/server-warning.png)
+![Event Setting - Server sc](/img/server-warning.png)
 
--   ![지시선 1](/img/number-01.png) **_+ 이벤트 추가_**<br/>
-      해당 이벤트를 추가할 수 있습니다.
+-   ![Leader line 1](/img/number-01.png) **_+ Add Event_**\
+      You can add the event.
 
--   ![지시선 2](/img/number-02.png) **_이름_**<br/>
-      해당 이벤트의 이름을 표시합니다
+-   ![Leader line 2](/img/number-02.png) **_Name_**\
+      Displays the event name.
 
--   ![지시선 3](/img/number-03.png) **_조건_**<br/>
-      해당 이벤트의 조건을 표시합니다.
+-   ![Leader line 3](/img/number-03.png) **_Condition_**\
+      Displays the event condition.
 
--   ![지시선 4](/img/number-04.png) **_서버_**<br/>
-      해당 이벤트가 설정된 서버를 표시합니다.    
+-   ![Leader line 4](/img/number-04.png) **_Server_**\
+      Displays the server on which the event has been set.    
 
--   ![지시선 5](/img/number-05.png) **_수정_**과 **_복사_**  
-    -   ![수정 아이콘](/img/ico-edit.svg) 버튼을 선택해 저장된 이벤트 설정을 **_수정_**할 수 있습니다. 
-    -   ![복제 아이콘](/img/ico-copy.svg) 버튼을 선택해 다른 인프라에 해당 이벤트를 **_복사_**할 수 있습니다.    
+-   ![Leader line 5](/img/number-05.png) **_Edit_** and **_Copy_**  
+    -   By selecting ![Edit icon](/img/ico-edit.svg), you can **_modify_** the saved event settings. 
+    -   By selecting ![Copy icon](/img/ico-copy.svg), you can **_copy_** the event to other infrastructure.    
 
 :::note
 
--   **_메트릭스_** 이벤트 추가는 [다음 문서](metric-warning-notice)를 참조하세요.
+-   For more information about addition of **_metrics_** events, see [the following](metric-warning-notice).
 
--   **_이상치 탐지_** 이벤트 추가는 [다음 문서](set-event-detect-anomal)를 참조하세요.
+-   For addition of **_Anomaly Detection_** events, see [the following](set-event-detect-anomal).
 
--   **_로그_** 이벤트 추가는 [다음 문서](set-event-log)를 참조하세요.
+-   For addition of **_log_** events, see [the following](set-event-log).
 
 :::
 
-## 서버 이벤트 추가
+## Adding the alert settings
 
-홈 화면 > 프로젝트 선택 > **_경고 알림_** > **_이벤트 설정_** > **_서버_** 탭 > **_+ 이벤트 추가_** 버튼 선택
+Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Server_** tab, and then select **_+ Add alert policy_**.
 
 You can set overall events for a specific server. 
 
-![이벤트 추가 - 서버 sc](/img/server-server-event.png)
+![Event Alert settings - Server sc](/img/server-server-event.png)
 
-1.  **_이벤트 추가_** 창이 뜨면 ![number 1](/img/number-01.png) 이벤트 **_제목_**을 입력하세요.
+1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  ![number 2](/img/number-02.png) **_서버 목록_**을 확인하거나 검색창을 통해 모니터링을 원하는 서버를 선택하세요. 
+2.  Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
 
-3.  ![number 3](/img/number-03.png) **_이벤트 발행 조건_** 탭에서 원하는 **_지표_**의 **_조건_**, **_레벨_**, **_지속 시간_**, **_활성화_** 여부를 설정하세요.
+3.  In the ![number3](/img/number-03.png) **_Event rule condition_** tab, set the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
 
-    -   **_레벨_**: <span class='slow'>경고</span> 혹은 <span class='vslow'>위험</span> 수준을 선택할 수 있습니다.
+    -   **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
 
-    -   **_지속 시간_**:  설정한 **_지속 시간_** 이후 서버의 상태가 <span class='slow'>경고</span>, <span class='vslow'>위험</span> 수준으로 변경됩니다.
+    -   **_Duration_**: After the set **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
 
-    **_지표_** 안내는 다음을 참고하세요. 
+    For guide to **_metrics_**, see the following. 
 
-    -   **_재시작_**<br/>
-          서버 재시작 시 발생하는 이벤트입니다.
-    -   **_미수신_**<br/>
-          에이전트로부터 **_지속 시간_**동안 정상적인 데이터를 수신하지 못했을 경우 발생하는 통신 장애 이벤트입니다.
-    -   **_포트_**<br/>
-          포트 접속 불가 이벤트입니다. 프로젝트 내 등록된 에이전트는 **10120 포트**를 통해 서로의 상태를 확인합니다. **_지속 시간_**동안 통신이 이루어지지 않을 경우 발생하는 이벤트입니다.  
-    -   **_CPU, Memory, 스왑_**<br/>
-          CPU, Memory, SWAP 메모리 등의 사용량에 대한 이벤트를 설정합니다. 
-    -   **_Steal_**<br/>
-          CPU Steal Time에 대한 이벤트를 설정합니다. 리눅스 계열 OS만 설정할 수 있습니다. 
-    -   **_Disk_**<br/>
-          디스크 사용량과 I/O 사용량 및 Inode 사용량을 기반으로 이벤트를 설정합니다. 
-    -   **_Network_**<br/>
-          네트워크 사용량과 관련한 이벤트를 설정합니다. 트래픽 양과 초당 패킷을 기준으로 설정할 수 있습니다. 
+    -   **_Restart_**\
+          This event occurs when the server restarts.
+    -   **_Not received_**\
+          This is a communication failure event that occurs when normal data is not received from the agent for the **_duration_**.
+    -   **_Port_**\
+          Port access unavailable event. Registered agents in the project check each other's status through **10120 port**. This event occurs when communication fails for the **_duration_**.  
+    -   \*\*\*CPU Memory Swap
+          Set the usage events such as CPU, memory, and SWAP memory. 
+    -   **_Steal_**\
+          Set the event for CPU steal time. Only Linux-based OS can be set. 
+    -   **_Disk_**\
+          Set the events based on the disk usage, I/O usage, and Inode usage. 
+    -   **_Network_**\
+          Set the network usage-related event. It can be set based on the traffic and packets per second. 
 
-4.  이벤트 설정을 마쳤으면 ![number 4](/img/number-04.png) **_저장_** 버튼을 선택하세요.
+4.  If you finished the event configuration, select ![number4](/img/number-04.png) **_Save_**.
 
 :::caution
-하나의 서버에 하나의 이벤트를 할당할 수 있습니다.
+One event can be assigned to a server.
 :::
 
 <details>
-<summary> 서버 이벤트 기본 설정 </summary>
+<summary> Default settings of server event </summary>
 
-와탭 서버 모니터링 서비스는 에이전트 설치와 동시에 다음과 같은 기본 이벤트 설정을 제공합니다. 
+WhaTap server monitoring service provides the following basic event settings after agent installation. 
 
-![서버 기본 알람 sc](/img/server-default-notice-setting.png)
+![Server Default Alarm sc](/img/server-default-notice-setting.png)
 
--   **_재시작_**: 활성화
+-   **_Restart_**: Enable
 
--   **_네트워크 IOPS_**
-    -   <span class='slow'>경고</span>: 45,000 pps / 지속 시간: 5분
-    -   <span class='vslow'>위험</span>: 50,000 pps / 지속 시간: 5분
+-   **_Network IOPS_**
+    -   <span class='slow'>Warning</span>: 45,000 pps/duration: 5 minutes
+    -   <span class='vslow'>Fatal</span>: 50,000 pps/duration: 5 minutes
 
--   **_네트워크 BPS_**
-    -   <span class='slow'>경고</span>: 5000,000,000 bps / 지속 시간: 5분
-    -   <span class='vslow'>위험</span>: 7000,000,000 bps / 지속 시간: 5분
+-   **_Network BPS_**
+    -   <span class='slow'>Warning</span>: 5000,000 bps/duration: 5 minutes
+    -   <span class='vslow'>Fatal</span>: 7000,000 bps/duration: 5 minutes
 
--   **_디스크 I/O_**
-    -   <span class='slow'>경고</span>: 90% / 지속 시간: 5분
-    -   <span class='vslow'>위험</span>: 95% / 지속 시간: 5분
+-   **_Disk I/O_**
+    -   <span class='slow'>Warning</span>: 90%/duration: 5 minutes
+    -   <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
 
--   **_디스크 사용량_**
-    -   <span class='slow'>경고</span>: 90% / 지속 시간: 5분
-    -   <span class='vslow'>위험</span>: 95% / 지속 시간: 5분
+-   **_Disk Usage_**
+    -   <span class='slow'>Warning</span>: 90%/duration: 5 minutes
+    -   <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
 
 -   **_inode_**
-    -   <span class='slow'>경고</span>: 90% / 지속 시간: 5분
-    -   <span class='vslow'>위험</span>: 95% / 지속 시간: 5분
+    -   <span class='slow'>Warning</span>: 90%/duration: 5 minutes
+    -   <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
 
 -   **_CPU_**
-    -   <span class='slow'>경고</span>: 70% / 지속 시간: 1분
-    -   <span class='vslow'>위험</span>: 90% / 지속 시간: 1분
+    -   <span class='slow'>Warning</span>: 70%/duration: 1 minute
+    -   <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
 
--   **_메모리_**
-    -   <span class='slow'>경고</span>: 70% / 지속 시간: 1분
-    -   <span class='vslow'>위험</span>: 90% / 지속 시간: 1분
+-   **_Memory_**
+    -   <span class='slow'>Warning</span>: 70%/duration: 1 minute
+    -   <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
 
 -   **_steal_**
-    -   <span class='slow'>경고</span>: 5% / 지속 시간: 1분
-    -   <span class='vslow'>위험</span>: 10% / 지속 시간: 1분
+    -   <span class='slow'>Warning</span>: 5%/duration: 1 minute
+    -   <span class='vslow'>Fatal</span>: 10%/duration: 1 minutes
 
--   **_스왑_**
-    -   <span class='slow'>경고</span>: 50% / 지속 시간: 1분
-    -   <span class='vslow'>위험</span>: 90% / 지속 시간: 1분
+-   **_Swap_**
+    -   <span class='slow'>Warning</span>: 50%/duration: 1 minute
+    -   <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
 
 </details>
 
-## 프로세스 이벤트 추가{#process-event}
+## Adding process event{#process-event}
 
-홈 화면 > 프로젝트 선택 > **_경고 알림_** > **_이벤트 설정_** > **_프로세스_** 탭 > **_+ 이벤트 추가_** 버튼 선택
+Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Process_** tab, and then select **_+ Add alert policy_**.
 
 You can set the event policy for a specific process.
 
-![이벤트 추가 - 프로세스 sc](/img/server-process-event.png)
+![Event Alert settings - Process sc](/img/server-process-event.png)
 
-1.  **_이벤트 추가_** 창이 뜨면 ![number 1](/img/number-01.png) 이벤트 **_제목_**을 입력하세요.
+1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  ![number 2](/img/number-02.png) **_이벤트 발행 조건_** 탭에서 **_서버 목록_**의 **_선택된 에이전트가 없습니다_** 버튼을 클릭해 **_서버 목록_** 창에서 서버를 선택하세요. 
-
-    :::note
-
-    **_프로젝트 기본 정책_** 옵션 토글 ![아이콘](/img/ic-toggle-on.svg) 활성화 시 프로젝트가 관리하는 서버에 기본 알림 정책을 적용합니다.
-
-    :::
-
-3.  **_프로세스_** 선택창에서 프로세스 혹은 프로세스 그룹을 선택하세요. 
+2.  In the ![number2](/img/number-02.png) **_Event rule condition_** tab, click **_No agent selected_** under the **_server list_** and then select a server from the **_server list_** window. 
 
     :::note
 
-    프로세스 그룹 추가 방법에 대한 자세한 내용은 [다음 문서](server-detail-process-group.mdx)를 참조하세요.
+    When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
 
     :::
 
-4.  **_프로세스 소유자_**를 선택하세요. 
+3.  In the **_process_** selection window, select a process or process group. 
 
-    -   **_프로세스 소유자_**를 지정하지 않을 시 소유자와 관계없이 같은 이름의 모든 프로세스에 해당 설정이 적용됩니다.
-    -   이벤트 조건은 **_프로세스 소유자_**를 생략한 경우라도 소유자-프로세스 단위로 동작합니다.
+    :::note
 
-5.  원하는 **_지표_**의 **_레벨_**, **_지속 시간_**, **_활성화_** 여부를 설정하세요.
+    For more information about addition of a process group, see [the following](server-detail-process-group.mdx).
 
-    -   **_레벨_**: <span class='slow'>경고</span> 혹은 <span class='vslow'>위험</span> 수준을 선택할 수 있습니다.
+    :::
 
-    -   **_지속 시간_**:  설정한 임곗값의 **_지속 시간_** 이후 서버의 상태가 <span class='slow'>경고</span>, <span class='vslow'>위험</span> 수준으로 변경됩니다.
+4.  Select a **_process owner_**. 
 
-    **_지표_** 안내는 다음을 참고하세요. 
+    -   If no **_process owner_** has been assigned, the settings are applied to all processes with the same name regardless of the owner.
+    -   Event conditions work on the owner-process unit basis, even if the **_process owner_** is omitted.
 
-    -   **_프로세스 수_**<br/>
-          동일한 이름의 프로세스의 개수에 대한 이벤트를 설정할 수 있습니다. **_위험_**과 **_경고_** 조건의 개수를 지정하세요.
-    -   **_프로세스 CPU_**<br/>
-          CPU 사용량에 따라 이벤트를 설정할 수 있습니다.
-    -   **_프로세스 메모리_**<br/>
-          메모리 사용량에 따라 이벤트를 설정할 수 있습니다.
+5.  Set the **_level_**, **_duration_**, and **_Enable_** for the desired **_metric_**.
 
-6.  이벤트 설정을 마쳤으면 ![number 3](/img/number-03.png) **_저장_** 버튼을 선택하세요.
+    -   **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
+
+    -   **_Duration_**: After the threshold's **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
+
+    For guide to **_metrics_**, see the following. 
+
+    -   **_Process Count_**\
+          You can set an event for the number of processes with the same name. Set the number of **_Danger_** and **_Warning_** conditions.
+    -   **_Process CPU_**\
+          You can set the events depending on the CPU usage.
+    -   **_Process Memory_**\
+          You can set the events depending on the memory usage.
+
+6.  If you finished the event configuration, select ![number3](/img/number-03.png) **_Save_**.
 
 :::note
 
--   프로세스 알림 **_조건_**을 잘못 설정한 경우 해당 알림을 비활성화하거나 알림 **_조건_**을 재설정하세요.
--   **_프로세스_** 및 **_프로세스 소유자_**를 잘못 지정한 경우 해당 알림을 비활성화해 진행 중인 알림을 해소한 후 알림 **_조건_**을 재설정하세요.
+-   If you set the process alert **_conditions_** incorrectly, disable it or set the alert **_conditions_** again.
+-   If you have incorrectly set the **_process_** and **_process owner_**, disable these alerts to cancel activation, and then set the alert **_conditions_** again.
 
 :::
 
-## 로그 파일 및 윈도우 이벤트 추가
+## Adding the log files and Windows events
 
-홈 화면 > 프로젝트 선택 > **_경고 알림_** > **_이벤트 설정_** > **_로그 파일/윈도우 이벤트_** 탭 > **_+ 이벤트 추가_** 버튼 선택
+Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Log File/Window Event_** tab, and then select **_+ Add alert policy_**.
 
-특정 로그 파일과 윈도우 이벤트 설정을 관리할 수 있습니다.
+You can manage specific log files and Windows event settings.
 
-### 로그 파일{#log-file-event}
+### Log File{#log-file-event}
 
-**_로그 파일_** 이벤트를 추가하려면 다음을 참고해 **_이벤트 발생 조건_**을 지정하세요. 
+To add a **_log file_** event, set the **_event rules_** seeing the following. 
 
-![이벤트 추가 - 로그 파일 sc](/img/server-log-file.png)
+![Add alert policy - Log File sc](/img/server-log-file.png)
 
-1.  **_이벤트 추가_** 창이 뜨면 ![number 1](/img/number-01.png) 이벤트 **_제목_**을 입력하세요.
+1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  ![number 2](/img/number-02.png) **_서버 목록_**을 확인하거나 검색창을 통해 모니터링을 원하는 서버를 선택하세요. 
-
-    :::note
-
-    **_프로젝트 기본 정책_** 옵션 토글 ![아이콘](/img/ic-toggle-on.svg) 활성화 시 프로젝트가 관리하는 서버에 기본 알림 정책을 적용합니다.
-
-    :::
-
-3.  ![number 3](/img/number-03.png) **_이벤트 발행 조건_** 탭에서 **_로그 종류_**를 **_로그 파일_**로 선택하세요.
-
-4.  예시를 참고해 **_파일 경로_**를 정규식대로 입력하세요. 
-
-    > 예시, _/var/log/mylogfile_%Y-%m-%d_%H:%M:%S.log_
-
-5.  이벤트를 발생시킬 **_검색 키워드_**를 입력하세요. 복수 개 지정할 수 있습니다.
-
-6.  알림에서 제외할 **_검출 제외 문자열_**을 입력하세요. 복수 개 지정할 수 있습니다.
-
-7.  몇 초 동안 몇 회 지정한 **_키워드_** 검출 시 알림을 받을 지 **_반복 횟수_**와 **_기간_**을 입력하세요. 
-
-8.  이벤트의 **_위험도_**를 선택하세요. <span class='vslow'>위험</span> 혹은 <span class='slow'>경고</span> 수준을 선택할 수 있습니다.
-
-9.  ![number 4](/img/number-04.png) **_저장_** 버튼을 선택하세요.
-
-### 윈도우 이벤트{#windows-event}
-
-**_윈도우 이벤트_**를 추가하려면 다음을 참고해 **_이벤트 발행 조건_**을 지정하세요. Windows 환경에서만 사용 가능합니다.
-
-![이벤트 추가 - 이벤트 로그 sc](/img/server-window-event.png)
-
-1.  **_이벤트 추가_** 창이 뜨면 ![number 1](/img/number-01.png) 이벤트 **_제목_**을 입력하세요.
-
-2.  ![number 2](/img/number-02.png) **_서버 목록_**을 확인하거나 검색창을 통해 모니터링을 원하는 서버를 선택하세요. 
+2.  Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
 
     :::note
 
-    **_프로젝트 기본 정책_** 옵션 토글 ![아이콘](/img/ic-toggle-on.svg) 활성화 시 프로젝트가 관리하는 서버에 기본 알림 정책을 적용합니다.
+    When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
 
     :::
 
-3.  ![number 3](/img/number-03.png) **_이벤트 발행 조건_** 탭에서 **_로그 종류_**를 **_윈도우 이벤트_**로 선택하세요.
+3.  ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Log File_** in **_Log Type_**.
 
-4.  다음 예시를 참고해 **_로그명_**을 선택하세요.<br/>
-    ![로그명](https://img.whatap.io/media/user_guide_server/noti/1530.png)
+4.  See the example and then enter the **_file path_** following a regular expression rule. 
 
-5.  다음 예시를 참고해 **_수준_**, **_원본_**(이벤트 소스), **_이벤트 ID_**, **_검색 키워드_**를 지정하세요. **_검색 키워드_**는 복수 개 지정할 수 있습니다.<br/>
-    ![수준 이벤트 소스 등](https://img.whatap.io/media/user_guide_server/noti/1540.png)
+    > e.g. _/var/log/mylogfile_%Y-%m-%d_%H:%M:%S.log_
 
-6.  알림에서 제외할 **_검출 제외 문자열_**을 입력하세요. 복수 개 지정할 수 있습니다.
+5.  Enter the **_search keyword_** to trigger events. Multiple items can be specified.
 
-7.  이벤트의 **_위험도_**를 선택하세요. <span class='vslow'>위험</span> 혹은 <span class='slow'>경고</span> 수준을 선택할 수 있습니다.
+6.  Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
 
-8.  ![number 4](/img/number-04.png) **_저장_** 버튼을 선택하세요.
+7.  Enter the **_repetitions_** and **_duration_** for alerts how many seconds and how many times when detecting the specified **_keyword_**. 
 
-#### 로그 파일 처리량
+8.  Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
 
-로그 파일 처리량은 로그 라인 기준으로 다음과 같이 설정되어 있습니다. 로그 과다 발생 시 와탭 서버 모니터링 에이전트 CPU 과다 사용 방지를 위해서입니다. 초과량은 처리하지 않습니다.
+9.  Select ![number4](/img/number-04.png) **_Save_**.
 
--   버전 1.3.6 이하 : 약 2초당 60 라인을 처리합니다. 
--   버전 1.3.7 이상 : 약 2초당 1000 라인을 처리합니다. 
+### Window Event{#windows-event}
 
-다음 옵션으로 2초당 초과량을 조절할 수 있습니다.
+To add an **_Windows event_**, set the **_event rule conditions_** seeing the following. It is available only in the Windows environment.
+
+![Add alert policy - Event Log sc](/img/server-window-event.png)
+
+1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+
+2.  Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+
+    :::note
+
+    When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
+
+    :::
+
+3.  ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Window Event_** in **_Log Type_**.
+
+4.  Noting the following example, select a **_log name_**.<br/>
+    ![Log Name](https://img.whatap.io/media/user_guide_server/noti/1530.png)
+
+5.  Noting the following example, set the values for **_Level_**, **_Event Source_**, **_Event ID_**, and **_Keyword_**. For the **_search keyword_**, multiple items can be specified.<br/>
+    ![Level Event Source, etc.](https://img.whatap.io/media/user_guide_server/noti/1540.png)
+
+6.  Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
+
+7.  Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
+
+8.  Select ![number4](/img/number-04.png) **_Save_**.
+
+#### Log File Throughput
+
+The file log throughput is set as follows based on the log lines. This is to prevent excessive CPU use of the WhaTap server monitoring agent when too many logs occur. Excessive amount is not processed.
+
+-   Version 1.3.6 or earlier: Exceeding 60 lines per 2 seconds are processed. 
+-   Version 1.3.7 or later: Exceeding 1000 lines per 2 seconds are processed. 
+
+You can adjust the excess per 2 seconds with the following option.
 
 -   **Linux**  
-    > _/usr/whatap/infra/conf/whatap.conf_ 파일에 `log.skip.threshold=2초당 처리 가능 라인 수`
+    > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _/usr/whatap/infra/conf/whatap.conf_ file
 -   **Windows**  
-    > _C:\\Program Files\\WhatapInfra\\whatap.conf_ 파일에 `log.skip.threshold=2초당 처리 가능 라인 수`
+    > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _C:\\Program Files\\WhatapInfra\\whatap.conf_ file
 
-## 이벤트 수정
+## Event modification
 
-1.  이벤트 목록 오른쪽의 ![수정 아이콘](/img/ico-edit.svg)**_수정_** 아이콘을 선택하세요. 
+1.  On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
 
-2.  **_이벤트 발행 조건_** 탭에서 원하는 **_지표_**의 **_조건_**, **_레벨_**, **_지속 시간_**, **_활성화_** 여부를 수정하세요.
+2.  In the **_Event rule condition_** tab, modify the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
 
-3.  이벤트 수정을 마쳤으면 **_저장_** 버튼을 선택하세요.
+3.  After modification, select **_Save_**.
 
 :::note
 
--   이벤트 수정 시 특정 지표에 대한 변경 사항이 있는 경우 해당 지표에 걸려있던 진행 중 알림은 <span class='vslow'>Disabled</span> 됩니다.
--   수정 후 조건에 맞는 데이터가 유입되면 새로운 알림이 발생합니다.
--   프로세스 알림의 **_제목_**, **_프로세스_**, **_프로세스 소유자_** 중 하나 이상의 값을 수정하는 경우 해당 조건에 걸린 모든 알림이 <span class='vslow'>Disabled</span> 됩니다.
+-   If there is any modification for a specific metric, all active alerts for the metric are <span class='vslow'>disabled</span>.
+-   After modification, a new alert is triggered when any data for the set conditions is received.
+-   If any process alert data of **_title_**, **_process_**, and **_process owner_** has been modified, all alerts for the condition are <span class='vslow'>disabled</span>.
 
 :::
 
-## 이벤트 삭제
+## Deleting event
 
-1.  이벤트 목록 오른쪽의 ![수정 아이콘](/img/ico-edit.svg)**_수정_** 아이콘을 선택하세요. 
+1.  On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
 
-2.  수정 화면 상단 오른쪽의 ![삭제 아이콘](/img/ic-delete-critical.svg)**_삭제_** 아이콘을 선택하세요.
+2.  On the upper right of the modification screen, select ![Delete icon](/img/ic-delete-critical.svg)**_Delete_**.
 
 <!-- 로그 파일 처리량 삭제 예정 -->
 

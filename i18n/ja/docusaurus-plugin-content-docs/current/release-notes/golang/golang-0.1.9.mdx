@@ -19,7 +19,7 @@ import UI from '@site/src/components/UItext';
 -   github.com/go-gonic/gin
 
 :::note
-「recover()」を通じてエラー情報を収集しますが、再び同じpanicを発生させます。 
+`recover()`を通じてエラー情報を収集しますが、再び同じpanicを発生させます。 
 :::
 
 ```go title='Golang'
@@ -71,9 +71,9 @@ import (
 
 HTTPErrorHandlerを通じてエラー情報を追加で収集します。
 
-「echo.Context.Error()」関数が呼び出されるときにエラー情報を収集します。Recoverミドルウェアが処理したpanic情報を収集します。 
+`echo.Context.Error()`関数が呼び出されるときにエラー情報を収集します。Recoverミドルウェアが処理したpanic情報を収集します。 
 
-whatapechoミドルウェアが最後に実行されると、HTTPErrorHandler情報をできるだけ多く収集できます。ミドルウェアの登録を最上段で設定し、「Pre()」関数を通じて登録します。
+whatapechoミドルウェアが最後に実行されると、HTTPErrorHandler情報をできるだけ多く収集できます。ミドルウェアの登録を最上段で設定し、`Pre()`関数を通じて登録します。
 
 ```go title='Golang'
 func main() {
@@ -102,12 +102,12 @@ debug=true
 
 指定したuriに対して特定のHTTP Methodでリクエストされるトランザクションの収集を除外します。 コンマ（,）を区切り文字として複数のuri、Methodを登録できます。 大文字と小文字の区分はありません。
 
-`ignore_http_method_urls`<br/>
-#Default : ""#<br/>
+`ignore_http_method_urls`\
+#Default : ""#\
 #Type : String#
 
-`ignore_http_method`<br/>
-#Default : ""#<br/>
+`ignore_http_method`\
+#Default : ""#\
 #Type : String#
 
 ```ini

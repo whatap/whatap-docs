@@ -13,6 +13,6 @@ Release date: 2022-05-12
 
 ### Collecting SQL and HTTP calls not included in the web transactions
 
-기존에 웹 트랜잭션의 경우 context에 whatap 정보를 포함하고(`trace.Start()` 호출 필요) 고유 트랜잭션 아이디(`Txid`)가 발급된 경우에만 SQL, HTTP Call 정보를 수집했습니다. 
+In case of web transactions in the past, SQL and HTTP calls were collected only when the context includes WhaTap data (`trace.Start()` call required) and the unique transaction ID (`Txid`) was granted. 
 
 If there is no unique transaction ID, the collected data can be retrieved from only the statistical data.

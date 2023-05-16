@@ -12,7 +12,7 @@ tags:
 サーバーを構成して、WhaTapサーバーにデータを転送できます。
 
 ユーザーが直接Proxyサーバーを構成することが困難な状況であれば、WhaTapが提供するソフトウェアベースの**WhaTap Software Proxy**が活用できます。 
-これにより、ユーザーは多数のサーバーが外部網に直接接続することなく**WhaTap Software Proxy**を経由するように制御できます。[HAProxy](https://www.haproxy.org)といった汎用プロキシを利用することもできます。
+これにより、ユーザーは多数のサーバーが外部網に直接接続することなく**WhaTap Software Proxy**を経由するように制御できます。 [HAProxy](https://www.haproxy.org)といった汎用プロキシを利用することもできます。
 
 ![](/img/software_proxy.jpg)
 
@@ -20,7 +20,7 @@ tags:
 
 ### エージェントのインストール
 
-エージェントインストール案内に従ってインストールを進めると_whatap.agent.java.tar.gz_ファイルをダウンロードできます。圧縮を解凍すると_whatap.agent.proxy-`X.Y.Z`.jar_ファイルをWhaTap収集サーバーと通信可能なサーバーの位置に保存してください。インストール済みのエージェントがある場合は、その位置のファイルを利用できます。
+エージェントインストール案内に従ってインストールを進めると_whatap.agent.java.tar.gz_ファイルをダウンロードできます。 圧縮を解凍すると_whatap.agent.proxy-`X.Y.Z`.jar_ファイルをWhaTap収集サーバーと通信可能なサーバーの位置に保存してください。 インストール済みのエージェントがある場合は、その位置のファイルを利用できます。
 
 ### エージェント設定
 
@@ -28,7 +28,7 @@ tags:
 
 #### 外部網（Public Subnet）
 
-_whatap.agent.proxy-`X.Y.Z`.jar_ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために_proxy.conf_ファイルを作成してください。_whatap.agent.proxy-`X.Y.Z`.jar_ファイルが位置するパスは`$PROXY_HOME`となります。
+_whatap.agent.proxy-`X.Y.Z`.jar_ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために_proxy.conf_ファイルを作成してください。 _whatap.agent.proxy-`X.Y.Z`.jar_ファイルが位置するパスは`$PROXY_HOME`となります。
 
 ```ini title='$PROXY_HOME/proxy.conf'
 whatap.server.host=52.78.209.94/52.78.224.235 ## WhaTapアプリケーションモニタリング収集サーバーアドレス
@@ -37,13 +37,13 @@ listen_port=6600 ## ProxyがListenするポート番号
 
 #### 内部網（Private Subnet）
 
-`$WHATAP_HOME`は、エージェントをインストールしたパスです。`$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**外部網(Public Subnet)**サーバーのIPに変更してください。
+`$WHATAP_HOME`は、エージェントをインストールしたパスです。 `$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**外部網(Public Subnet)**サーバーのIPに変更してください。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 whatap.server.host={外部網(Public Subnet)プロキシサーバーIP}
 ```
 
-安定性のために**外部網(Public Subnet)**にプロキシを複数構成できます。 スラッシュ（「/」）を区切り文字として入力します。
+安定性のために**外部網(Public Subnet)**にプロキシを複数構成できます。 スラッシュ（/）を区切り文字として入力します。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 whatap.server.host={外部網(Public Subnet)プロキシサーバーIP #1}/{外部網(Public Subnet)プロキシサーバーIP #2} 
@@ -75,7 +75,7 @@ _proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod 
 
 ### ソフトウェアプロキシ終了
 
-ソフトウェアプロキシが動作している場合は、_$PROXY_HOME/{PID}.proxy.run_ファイルを作成します。このファイルを削除すると、ソフトウェアプロキシは終了します。
+_$PROXY_HOME/{PID}.proxy.run_ファイルを作成します。 このファイルを削除すると、ソフトウェアプロキシは終了します。
 
 ## HAProxy
 

@@ -10,38 +10,42 @@ tags:
 ---
 
 -   **whatap.stat_domain_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       ドメイン別のトランザクション統計を収集します。
 
 -   **whatap.stat_domain_max_count**<span class='type'>Int</span><br/>
-      デフォルト値「7000」<br/>
+      デフォルト値`7000`<br/>
       5分間に収集するドメイン別のトランザクション統計の最大レコード数です。
 
 -   **whatap.stat_mtrace_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       マルチサーバートランザクションにおいてCaller&Callee間のバージョンごとの依存関係の統計を収集します。
 
 -   **whatap.mtrace_spec**<span class='type'>String</span><br/>
-        デフォルト値「v1」<br/>
+        デフォルト値`v1`<br/>
         現在のインスタンスのアプリケーションバージョンを指定します。任意の文字列を指定できます。このデータは、呼び出し統計に使用されます。 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 -   **whatap.stat_mtrace_max_count**<span class='type'>Int</span><br/>
-      基本値 「7000」<br/>
+      基本値 `7000`<br/>
       マルチサーバートランザクションにおいてCallser&Callee間のバージョン別の依存関係の統計の最大レコード数です。
 
 -   **whatap.stat_referer_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       Referer別のトランザクション統計を収集します。
 
 -   **whatap.stat_referer_max_count**<span class='type'>Int</span><br/>
-      デフォルト値「7000」<br/>
+      デフォルト値`7000`<br/>
       5分間に１つのJVMで収集するReferer別のトランザクション統計の最大レコード数です。
 
 <!-- 문의 남김 .. 해결-->
 
 -   **whatap.stat_referer_format**<span class='type'>Int</span><br/>
-      デフォルト値「7000」<br/>
+      デフォルト値`7000`<br/>
 
     | 値 | 説明                                  |
     | - | ----------------------------------- |

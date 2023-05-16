@@ -2,84 +2,84 @@
 
 カラム情報に関するより詳しい内容は、[次のリンク](https://docs.oracle.com/)を参照してください。
 
-| 項目                              | 説明                                                                                                                                                                   |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sid`                           | セッションのID                                                                                                                                                             |
-| `cpu(xos)`                      | XOSをインストールした場合、収集されるCPUの使用率                                                                                                                                          |
-| `serial#`                       | 同一のセッションidを使用した場合、判別するために増加させる値                                                                                                                                      |
-| `username`                      | DBユーザー名                                                                                                                                                              |
-| `command`                       | `COMMAND_TYPE`と同一、SQLのcommand number                                                                                                                                 |
-| `status`                        | セッションの状態                                                                                                                                                             |
-| `schemaname`                    | スキーマ、usernameと同一                                                                                                                                                     |
-| `osuser`                        | セッションに接続したオペレーティングシステムのユーザー名                                                                                                                                         |
-| `spid`                          | オペレーティングシステムプロセスの識別子                                                                                                                                                 |
-| `process`                       | セッションに接続したクライアントプロセスID                                                                                                                                               |
-| `logon_time`                    | セッションが作成された時点                                                                                                                                                        |
-| `last_call_et`                  | セッションがアクティブになっている場合、アクティブになってから経過した時間（秒）                                                                                                                             |
-| `sql_text`                      | `query`、実行されているstatement、リテラル文字列を除外したSQL文                                                                                                                            |
-| `sql_param`                     | `query`에서 분리한 리터럴 값                                                                                                                                                  |
-| `prev_sql_text`                 | 以前実行したquery                                                                                                                                                          |
-| `prev_sql_param`                | 以前実行したquery param                                                                                                                                                    |
-| `program`                       | クライアントで実行したプログラムの情報                                                                                                                                                  |
-| `type`                          | session type - user background recursive (_whatap.conf_)で設定可能                                                                                                        |
-| `seq#`                          | 現在または最後の待機を固有に識別する数字（待機するたびに増加）                                                                                                                                      |
-| `event`                         | セッションが待機中の場合、セッションが待機中のリソースまたはイベントの番号                                                                                                                                |
-| `p1`                            | 最初の待機イベントのパラメータ（小数点）                                                                                                                                                 |
-| `p2`                            | 2番目の待機イベントのパラメータ（小数点）                                                                                                                                                |
-| `p3`                            | 3番目の待機イベントのパラメータ（小数点）                                                                                                                                                |
-| `wait_class`                    | 待機中のイベントのクラス名                                                                                                                                                        |
-| `wait_time`                     | セッションが現在待機中であれば、値は`0`です。`0`より大きい場合、最後の待機時間(milliseconds)                                                                                                             |
-| `seconds_in_wait`               | セッションが現在待機中の場合、待機のために待機した時間を意味します。セッションが待機中でない場合、最後の待機開始後の時間を意味します。                                                                                                  |
-| `state`                         | 待機状態、`WAITING`, `WAITED UNKNOWN TIME`, `WAITED SHORT TIME`, `WAITED KNOWN TIME`                                                                                      |
-| `machine`                       | セッションに接続したクライアントサーバー名(hostname)                                                                                                                                      |
-| `port`                          | クライアントポート数                                                                                                                                                           |
-| `terminal`                      | クライアントターミナル名                                                                                                                                                         |
-| `module`                        | クライアントで実行したプログラムでユーザが設定したモジュール（module）名                                                                                                                              |
-| `アクション`                         | 現在実行されているモジュールのユーザーが設定したアクション名                                                                                                                                       |
-| `client_info`                   | ユーザーが設定したクライアントの情報                                                                                                                                                   |
-| `client_identifier`             | ユーザーが設定したクライアントの識別子                                                                                                                                                  |
-| session logical reads           | バッファキャッシュ内でデータを読み込んだ回数                                                                                                                                               |
-| physical reads                  | 物理ディスクからデータを読み込んだ回数                                                                                                                                                  |
-| excute count                    | 実行されているSQLの数                                                                                                                                                         |
-| parse count (hard)              | 構文分析呼出の総数（実際の構文分析）                                                                                                                                                   |
-| parse count (total)             | 構文分析呼び出しの総数（hard、soft、describe）                                                                                                                                      |
-| opened cursors current          | 現在開いているcursorの数                                                                                                                                                      |
-| db block changes                | データベース内のすべてのブロックの変更回数                                                                                                                                                |
-| session pga memory              | セッションの現在のPGAサイズ                                                                                                                                                      |
-| `undo_segid`                    | undo情報id                                                                                                                                                             |
-| `undo_blk`                      | undoブロックの数                                                                                                                                                           |
-| `undo_rec`                      | undoレコードの数                                                                                                                                                           |
-| `sql_address`                   | SQL文(statement)を識別する情報                                                                                                                                               |
-| `sql_hash_value`                | SQL文(statement)を識別する情報                                                                                                                                               |
-| `sql_id`                        | 現在実行中のSQL文のSQL識別子                                                                                                                                                    |
-| `sql_child_number`              | 現在実行中のSQL文の下位番号                                                                                                                                                      |
-| `sql_exec_start`                | 当該セッションで現在実行中のSQL実行が開始時点                                                                                                                                             |
-| `sql_exec_id`                   | SQL実行の識別子                                                                                                                                                            |
-| `prev_sql_addr`                 | 最後に実行されたSQL文(statement)を識別する情報                                                                                                                                       |
-| `prev_child_number`             | 最後に実行されたSQL文(statement)の下位番号                                                                                                                                         |
-| `prev_exec_start`               | 最後に実行されたSQL文のSQL実行開始時点                                                                                                                                               |
-| `prev_exec_id`                  | 最後に実行されたSQL文のSQL実行識別id                                                                                                                                               |
-| `plsql_entry_object_id`         | スタックで一番上にあるPL/SQL下位プログラムのオブジェクトid                                                                                                                                    |
-| `plsql_entry_subprogram_id`     | 스택에서 가장 위에 있는 PL/SQL 서브 프로그램의 서브 프로그램 id                                                                                                                             |
-| `plsql_object_id`               | 현재 실행 중인 PL/SQL 개체의 서브 프로그램 id                                                                                                                                       |
-| `taddr`                         | 트랜잭션의 주소(address)                                                                                                                                                    |
-| `lockwait`                      | lock wait address, 세션이 대기 중인 락 주소                                                                                                                                    |
-| `row_wait_obj`                  | `ROW_WAIT_ROW#`에 지정된 행이 포함된 테이블의 개체 ID                                                                                                                               |
-| `row_wait_file`                 | `ROW_WAIT_ROW#`에 지정된 행이 포함된 데이터 파일의 식별자                                                                                                                              |
-| `row_wait_block`                | `ROW_WAIT_ROW#`에 지정된 행이 포함된 블록의 식별자                                                                                                                                  |
-| `row_wait_row`                  | 현재 잠긴 행                                                                                                                                                              |
-| `pdml_status`                   | 값이 `ENABLED`인 경우 세션이 `PARALLEL DML` 활성화 모드입니다. 값이 `DISABLE`인 경우 세션에서 `PARALLE DML` 활성화 모드를 지원하지 않습니다. 값이 `FORCED`인 경우 세션이 `PARALLE DML`을 강제로 사용하도록 변경된 것입니다.         |
-| `pq_status`                     | 값이 `ENABLED`인 경우 세션이 `PARALLEL QUERY` 활성화 모드입니다. 값이 `DISABLE`인 경우 세션에서 `PARALLEL QUERY` 활성화 모드를 지원하지 않습니다. 값이 `FORCED`인 경우 세션이 `PARALLEL QUERY`을 강제로 사용하도록 변경된 것입니다. |
-| `blocking_session_status`       | 차단 세션이 있는지 여부에 대한 세부 정보를 제공                                                                                                                                          |
-| `blocking_instance`             | 차단 세션에 대한 인스턴스 식별자                                                                                                                                                   |
-| `blocking_session`              | 차단 세션의 세션 식별자                                                                                                                                                        |
-| `final_blocking_session_status` | 최종 차단 세션이 있는지 여부에 대한 세부 정보를 제공                                                                                                                                       |
-| `final_blocking_instance`       | 최종 차단 세션에 대한 인스턴스 식별자                                                                                                                                                |
-| `final_blocking_session`        | 최종 차단 세션의 세션 식별자                                                                                                                                                     |
-| `service_name`                  | 해당 세션의 서비스 이름, DB 이름과 유사                                                                                                                                             |
-| `saddr`                         | 세션 주소                                                                                                                                                                |
-| `con_id`                        | 데이터와 관련한 컨테이너의 id (멀티 데이터베이스를 지원하는 경우에만 해당)                                                                                                                          |
-| `rss(xos)`                      | XOSエージェントで収集するOSメトリクス                                                                                                                                                |
-| `pss(xos)`                      | XOSエージェントで収集するOSメトリクス                                                                                                                                                |
-| `ioread(xos)`                   | XOSエージェントで収集するOSメトリクス                                                                                                                                                |
-| `iowrite(xos)`                  | XOSエージェントで収集するOSメトリクス                                                                                                                                                |
+| 項目                              | 説明                                                                                                                                                                |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sid`                           | セッションのID                                                                                                                                                          |
+| `cpu(xos)`                      | XOSをインストールした場合、収集されるCPUの使用率                                                                                                                                       |
+| `serial#`                       | 同一のセッションidを使用した場合、判別するために増加させる値                                                                                                                                   |
+| `username`                      | DBユーザー名                                                                                                                                                           |
+| `command`                       | `COMMAND_TYPE`と同一、SQLのcommand number                                                                                                                              |
+| `status`                        | セッションの状態                                                                                                                                                          |
+| `schemaname`                    | スキーマ、usernameと同一                                                                                                                                                  |
+| `osuser`                        | セッションに接続したオペレーティングシステムのユーザー名                                                                                                                                      |
+| `spid`                          | オペレーティングシステムプロセスの識別子                                                                                                                                              |
+| `process`                       | セッションに接続したクライアントプロセスID                                                                                                                                            |
+| `logon_time`                    | セッションが作成された時点                                                                                                                                                     |
+| `last_call_et`                  | セッションがアクティブになっている場合、アクティブになってから経過した時間（秒）                                                                                                                          |
+| `sql_text`                      | `query`、実行されているstatement、リテラル文字列を除外したSQL文                                                                                                                         |
+| `sql_param`                     | `query`から分離したリテラル値                                                                                                                                                |
+| `prev_sql_text`                 | 以前実行したquery                                                                                                                                                       |
+| `prev_sql_param`                | 以前実行したquery param                                                                                                                                                 |
+| `program`                       | クライアントで実行したプログラムの情報                                                                                                                                               |
+| `type`                          | session type - user background recursive (_whatap.conf_)で設定可能                                                                                                     |
+| `seq#`                          | 現在または最後の待機を固有に識別する数字（待機するたびに増加）                                                                                                                                   |
+| `event`                         | セッションが待機中の場合、セッションが待機中のリソースまたはイベントの番号                                                                                                                             |
+| `p1`                            | 最初の待機イベントのパラメータ（小数点）                                                                                                                                              |
+| `p2`                            | 2番目の待機イベントのパラメータ（小数点）                                                                                                                                             |
+| `p3`                            | 3番目の待機イベントのパラメータ（小数点）                                                                                                                                             |
+| `wait_class`                    | 待機中のイベントのクラス名                                                                                                                                                     |
+| `wait_time`                     | セッションが現在待機中であれば、値は`0`です。`0`より大きい場合、最後の待機時間(milliseconds)                                                                                                          |
+| `seconds_in_wait`               | セッションが現在待機中の場合、待機のために待機した時間を意味します。セッションが待機中でない場合、最後の待機開始後の時間を意味します。                                                                                               |
+| `state`                         | 待機状態、`WAITING`, `WAITED UNKNOWN TIME`, `WAITED SHORT TIME`, `WAITED KNOWN TIME`                                                                                   |
+| `machine`                       | セッションに接続したクライアントサーバー名(hostname)                                                                                                                                   |
+| `port`                          | クライアントポート数                                                                                                                                                        |
+| `terminal`                      | クライアントターミナル名                                                                                                                                                      |
+| `module`                        | クライアントで実行したプログラムでユーザが設定したモジュール（module）名                                                                                                                           |
+| `アクション`                         | 現在実行されているモジュールのユーザーが設定したアクション名                                                                                                                                    |
+| `client_info`                   | ユーザーが設定したクライアントの情報                                                                                                                                                |
+| `client_identifier`             | ユーザーが設定したクライアントの識別子                                                                                                                                               |
+| session logical reads           | バッファキャッシュ内でデータを読み込んだ回数                                                                                                                                            |
+| physical reads                  | 物理ディスクからデータを読み込んだ回数                                                                                                                                               |
+| excute count                    | 実行されているSQLの数                                                                                                                                                      |
+| parse count (hard)              | 構文分析呼出の総数（実際の構文分析）                                                                                                                                                |
+| parse count (total)             | 構文分析呼び出しの総数（hard、soft、describe）                                                                                                                                   |
+| opened cursors current          | 現在開いているcursorの数                                                                                                                                                   |
+| db block changes                | データベース内のすべてのブロックの変更回数                                                                                                                                             |
+| session pga memory              | セッションの現在のPGAサイズ                                                                                                                                                   |
+| `undo_segid`                    | undo情報id                                                                                                                                                          |
+| `undo_blk`                      | undoブロックの数                                                                                                                                                        |
+| `undo_rec`                      | undoレコードの数                                                                                                                                                        |
+| `sql_address`                   | SQL文(statement)を識別する情報                                                                                                                                            |
+| `sql_hash_value`                | SQL文(statement)を識別する情報                                                                                                                                            |
+| `sql_id`                        | 現在実行中のSQL文のSQL識別子                                                                                                                                                 |
+| `sql_child_number`              | 現在実行中のSQL文の下位番号                                                                                                                                                   |
+| `sql_exec_start`                | 当該セッションで現在実行中のSQL実行が開始時点                                                                                                                                          |
+| `sql_exec_id`                   | SQL実行の識別子                                                                                                                                                         |
+| `prev_sql_addr`                 | 最後に実行されたSQL文(statement)を識別する情報                                                                                                                                    |
+| `prev_child_number`             | 最後に実行されたSQL文(statement)の下位番号                                                                                                                                      |
+| `prev_exec_start`               | 最後に実行されたSQL文のSQL実行開始時点                                                                                                                                            |
+| `prev_exec_id`                  | 最後に実行されたSQL文のSQL実行識別id                                                                                                                                            |
+| `plsql_entry_object_id`         | スタックで一番上にあるPL/SQL下位プログラムのオブジェクトid                                                                                                                                 |
+| `plsql_entry_subprogram_id`     | スタックで一番上にあるPL/SQLサブプログラムのサブプログラムid                                                                                                                                |
+| `plsql_object_id`               | 現在実行中のPL/SQLオブジェクトのサブプログラムid                                                                                                                                      |
+| `taddr`                         | トランザクションのアドレス(address)                                                                                                                                            |
+| `lockwait`                      | lock wait address、セッションが待機中のロックアドレス                                                                                                                               |
+| `row_wait_obj`                  | `ROW_WAIT_ROW#`に指定された行を含むテーブルのオブジェクトID                                                                                                                            |
+| `row_wait_file`                 | `ROW_WAIT_ROW#`に指定された行を含むデータファイルの識別子                                                                                                                              |
+| `row_wait_block`                | `ROW_WAIT_ROW#`に指定された行を含むブロックの識別子                                                                                                                                 |
+| `row_wait_row`                  | 現在ロックされている行                                                                                                                                                       |
+| `pdml_status`                   | 値が`ENABLED`の場合、セッションが`PARALLEL DML`活性化モードです。 値段が`DISABLE`の場合、セッションで`PARALLE DML`活性化モードに対応していません。 値段が`FORCED`の場合、セッションが`PARALLE DML`を強制的に使用するように変更されたものです。         |
+| `pq_status`                     | 値が`ENABLED`の場合、セッションが`PARALLEL QUERY`活性化モードです。 値段が`DISABLE`の場合、セッションで`PARALLEL QUERY`活性化モードに対応していません。 値段が`FORCED`の場合、セッションが`PARALLEL QUERY`を強制的に使用するように変更されたものです。 |
+| `blocking_session_status`       | ブロックセッションの存在有無に関する詳細を提供                                                                                                                                           |
+| `blocking_instance`             | ブロックセッションのインスタンス識別子                                                                                                                                               |
+| `blocking_session`              | ブロックセッションのセッション識別子                                                                                                                                                |
+| `final_blocking_session_status` | 最終ブロックセッションの存在有無に関する詳細を提供                                                                                                                                         |
+| `final_blocking_instance`       | 最終ブロックセッションのインスタンス識別子                                                                                                                                             |
+| `final_blocking_session`        | 最終ブロックセッションのセッション識別子                                                                                                                                              |
+| `service_name`                  | 当該セッションのサービス名、DB名と類似                                                                                                                                              |
+| `saddr`                         | セッションアドレス                                                                                                                                                         |
+| `con_id`                        | データに関連するコンテナのid(マルチデータベースをサポートする場合のみ)                                                                                                                             |
+| `rss(xos)`                      | XOSエージェントで収集するOSメトリクス                                                                                                                                             |
+| `pss(xos)`                      | XOSエージェントで収集するOSメトリクス                                                                                                                                             |
+| `ioread(xos)`                   | XOSエージェントで収集するOSメトリクス                                                                                                                                             |
+| `iowrite(xos)`                  | XOSエージェントで収集するOSメトリクス                                                                                                                                             |

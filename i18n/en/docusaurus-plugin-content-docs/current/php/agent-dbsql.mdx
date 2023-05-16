@@ -32,7 +32,11 @@ tags:
 -   **whatap.profile_db_connection_map_size**<span class='type'>Int</span><br/>
         Default `20`<br/>
         It is the maximum size to store DB connection data that keeps connection at the same time. Upon connection of exceeded DB, the oldest data is deleted first. 
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.profile_mysql_return_enabled**<span class='type'>Boolean</span><br/>
       Default `true`<br/>

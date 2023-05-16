@@ -520,9 +520,17 @@ const sidebars = {
           id: 'nodejs/supported-spec'
         },
         {
-          type: 'doc',
+          type: 'category',
           label: '에이전트 설치',
-          id: 'nodejs/install-agent',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/install-agent',
+          },
+          items: [
+            'nodejs/install-agent-docker'
+          ]
         },
         {
           type: 'doc',
@@ -3193,6 +3201,11 @@ const sidebars = {
         },
         'support-env',
         'quick-guide',
+        {
+          type: 'doc',
+          label: '활용하기',
+          id: 'implementation',
+        },
         'learning-guides',
         'software-proxy',
         'main-ui-intro',

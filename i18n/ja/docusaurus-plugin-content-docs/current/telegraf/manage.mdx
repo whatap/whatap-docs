@@ -18,14 +18,19 @@ Telegrafエージェント管理のために _whatap.conf_ ファイルを通じ
 <TabItem value="rc" label="Red Hat/CentOS">
 
 1.  パッケージ情報の更新のためにキャッシュ情報を削除してください。
+
     ```bash title=SH
     $ yum clean all
     ```
+
 2.  whatap-telegrafパッケージをアップデートしてください。
+
     ```bash title=SH
     $ yum update whatap-telegraf
     ```
+
 3.  特定のバージョンをインストールするには、インストール時にバージョン情報を明示してください。
+
     ```bash title=SH
     $ sudo yum install whatap-telegraf-{version}
     ```
@@ -34,14 +39,19 @@ Telegrafエージェント管理のために _whatap.conf_ ファイルを通じ
 <TabItem value="du" label="Debian/Ubuntu">
 
 1.  パッケージ情報の更新のためにキャッシュ情報を削除してください。
+
     ```bash title=SH
     $ sudo apt-get update
     ```
+
 2.  whatap-telegrafパッケージをアップデートしてください。
+
     ```bash title=SH
     $ sudo apt-get install --only-upgrade whatap-telegraf
     ```
+
 3.  特定のバージョンをインストールするには、インストール時にバージョン情報を明示してください。
+
     ```bash title=SH
     $ sudo apt-get install whatap-telegraf={version}
     ```
@@ -50,11 +60,14 @@ Telegrafエージェント管理のために _whatap.conf_ ファイルを通じ
 <TabItem value="fb" label="FreeBSD">
 
 1.  パッケージを再インストールしてください。
+
     ```bash title='SH'
     # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
     # pkg install whatap-telegraf-0.0.4.txz
     ```
-2.  特定のバージョンをインストールするには 「{version}」にバージョン情報を入力してインストールしてください。
+
+2.  特定のバージョンをインストールするには`{version}`にバージョン情報を入力してインストールしてください。
+
     ```bash title='SH'
     # wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-{version}.txz
     # pkg install whatap-telegraf-{version}.txz

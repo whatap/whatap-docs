@@ -8,21 +8,21 @@ tags:
 
 import DocCardList from '@theme/DocCardList';
 
-Telegraf는 데이터베이스, 시스템 및 IoT 센서에서 메트릭 및 이벤트를 수집하고 전송하기 위한 플러그인 중심 서버 에이전트입니다. Telegraf는 Go로 작성되었으며 외부 종속성 없이 단일 바이너리로 컴파일되며 최소한의 메모리 공간만 필요합니다.
+Telegraf is a plug-in driven server agent for collecting and sending metrics and events from databases, systems, and IoT sensors. Telegraf has been written in Go, compiles into a single binary file without any external dependency, and requires the minimum memory space.
 
--   **모든 종류의 데이터 수집 및 전송**
-    -   **데이터베이스**<br/>
-          MongoDB, MySQL, Redis 등의 데이터 소스에 연결하여 메트릭을 수집하고 보냅니다. 
-    -   **시스템**<br/>
-          현대적인 클라우드 플랫폼, 컨테이너 및 오케스트레이터 스택에서 메트릭을 수집합니다. 
-    -   **IoT 센서**<br/>
-          IoT 센서 및 장치에서 중요한 상태 저장 데이터(압력 수준, 온도 수준 등)를 수집합니다.
--   **Telegraf 플러그인**<br/>
-      Telegraf는 메트릭을 수집, 처리, 집계 및 작성하는 플러그인 중심 에이전트입니다. 입력, 출력, 애그리게이터 및 프로세서를 포함한 4가지 범주의 플러그인을 지원합니다.
+-   ** Collection and transmission of all types of data**
+    -   **Database**
+          It collects and sends metrics by connecting data sources such as MongoDB, MySQL, and Redis. 
+    -   **System**
+          It collects metrics from modern cloud platforms, containers, and orchestrator stacks. 
+    -   **IoT Sensor**
+          It collects important stateful data (pressure levels, temperature levels, etc.) from IoT sensors and devices.
+-   **Telegraf Plug-in**\
+      Telegraf is a plug-in driven agent that collects, processes, aggregates, and creates metrics. It supports four categories of plug-ins: input, output, aggregator, and processor.
 
 You can forward the metrics collected by Telegraf to the WhaTap collection server by using the Telegraf's WhaTap output plug-in and installing the WhaTap Telegraf agent. 
 
-![Telegraf - 와탭 연동 구조](/img/blog_46_01.png)
+![Telegraf - WhaTap integration structure](/img/blog_46_01.png)
 
 The guide is provided on how to install plug-ins or agents and the use cases are provides as follows.
 

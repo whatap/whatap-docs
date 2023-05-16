@@ -9,23 +9,23 @@ import UI from '@site/src/components/UItext';
 
 Release date: 2022-09-14
 
-## `공통`
+## `Common`
 
 **_Flex Board_**
 
 -   Added the function to export the dashboard data as a PDF file 
--   위젯 간 그룹화 기능 추가 (위젯 템플릿 > 기타 > 위젯 그룹화)
+-   Added the grouping function between widgets (Widget Template > ETC > Widget Grouping).
 -   Renewed the time inquiry range when navigating menus between favorite dashboards
 
-**_통합 대시보드_** - 트랜잭션 프로파일 연속 조회 불가 건 수정
+**_Integrated Dashboard_** - Fixed the error where continuous transaction profile inquiry is impossible.
 
-**_시간 선택자_** - 시간 이동 이상현상 수정
+**_Time Selector_** - Fixed the time shifting anomaly error.
 
 ## Integration
 
-**_인티그레이션 프로젝트_**
+**_Integration Project_**
 
--   클라우드 서비스를 비롯한 다양한 모니터링 대상을 단일 프로젝트에서 통합적으로 관리하기 위한 신규 상품 추가
+-   Added new products for integrated management of various monitoring targets including cloud services, in a single project.
 -   Provided the dashboards for each integration item, analysis menus with collected metrics, and event setting functions
 -   Integration Items
     -   Amazon CloudWatch
@@ -36,28 +36,28 @@ Release date: 2022-09-14
 
 ## Application
 
-**_멀티 트랜잭션 추적_** - 프로젝트 목록 계층화 표시 오류 수정
+**_Multiple Transaction Trace_** - Fixed the project list's layered display error.
 
-**_트랜잭션 프로파일_** - 다이어그램 폰트 사이즈 조절 문제 수정
+**_Transaction Profiles_** - Fixed the diagram font size adjustment issue.
 
 ## Container
 
-**_컨테이너 맵_**
+**_Container Map_**
 
 -   Enhanced the ActiveTX operation rules of the container screen
--   상세 화면 > 이벤트 Normal, Warning 타입 필터링 기능 추가
--   상세 화면 > 카드 상단 상태별 수량 부분 표시 스타일 개선
+-   Added the filtering functions in Details > Event Normal, Warning Types.
+-   Improved the styles in Details > Quantity displays by state at the top of the card.
 
-**_Out of Memory Killed 컨테이너_** - 조회 시간 범위 선택 옵션 제거, 테이블 정렬 기능 수정 
+**_Out of Memory Killed Container_** - Deleted the lookup time range selection option; modified the table sorting function. 
 
 ## Log
 
-**_로그 설정_** - 현재 사용량 조회 기능 추가 
+**_Log Setting_** - Added the current usage lookup function. 
 
 ## Site Admin
 
-**_결제 관리_** > **_프로젝트 유료 전환_** - 상품 종류, 플랫폼 컬럼 병합
+**_Billing Management_** > **_Project Subscription_** - Merged the product type and platform columns.
 
-**_결제 관리_** > **_청구 관리_**, **_계정 상태_** - 'open'에서 '정상'으로 컬럼 이름 변경
+**_Billing Management_** > **_Invoice Management_**, **_Account Status_** - Change the column name from `open` to `normal`.
 
-**_결제 관리_** > **_청구서_** - 'Sub Total'에서 '사용액'으로 컬럼 이름 변경, 고객 노출(설정), 고객 노출(상태), 할인 정보 미표시 컬럼 숨김/표시 문구 수정
+**_Billing Management_** > **_Invoice_** - Changed the column name from "Sub Total" to "Amount of Use"; modified the column visible/invisible text in Visible to Customer (CONFIG.), Visible to Customer (Status), and Hide Discount INFO.

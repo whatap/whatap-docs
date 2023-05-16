@@ -13,9 +13,9 @@ import UI from '@site/src/components/UItext';
 
 ### database/sqlライブラリに対応します。
 
-database/sqlパッケージの「sql.Open」関数の代わりに「whatapsql.OpenContext」関数を使用します。「PrepareContext」、「QueryContext」、「ExecContext」などcontextを伝える関数の使用をお勧めします。 
+database/sqlパッケージの`sql.Open`関数の代わりに`whatapsql.OpenContext`関数を使用します。`PrepareContext`、`QueryContext`、`ExecContext`などcontextを伝える関数の使用をお勧めします。 
 
-伝達するcontextは「trace.Start()」を通じる必要があり、whatap TraceCtx情報が必要です。
+伝達するcontextは`trace.Start()`を通じる必要があり、whatap TraceCtx情報が必要です。
 
 ```go title='설치 안내'
 
@@ -57,8 +57,8 @@ func main() {
 
 #### 設定
 
-`go.sql_profile_enabled`<br/>
-#Default : true#<br/>
+`go.sql_profile_enabled`\
+#Default : true#\
 #Type : boolean# 
 
 database/sql情報の収集有無を設定します。

@@ -4,19 +4,19 @@ title: Java Agent 2.2.3
 toc_max_heading_level: 2
 ---
 
-2023년 2월 14일
+2023年2月14日
 
-## <Status>New</Status> (신기능)
+## <Status>New</Status> (新機能)
 
--   **spring-webflux-6.x** 추적 추가
+-   **spring-webflux-6.x**追跡追加
 
     ```ini title='whatap.conf'
     weaving=webflux-6.0
     ```
 
--   database connection close를 step에 표시
+-   database connection closeをstepに表示
 
-    -   close 표시 클래스 정보 목록
+    -   close表示クラス情報一覧
 
         -   org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close()V
 
@@ -28,32 +28,32 @@ toc_max_heading_level: 2
 
         -   com.zaxxer.hikari.pool.ProxyConnection.close()V
 
-    -   patterns 설정을 통해서 database connection close를 표시할 클래스 추가 가능 (기본값 `true`)
+    -   patterns設定を通じてdatabase connection closeを表示するクラスを追加可能(デフォルト値 `true`)
 
         ```ini title='whatap.conf'
         hook_connection_close_default_enabled=true
         hook_connection_close_patterns=a.b.c.D
         ```
 
--   jdbc url 표시 설정 추가
+-   jdbc url表示設定の追加
 
-    -   `jdbc_url_enabled=false`로 설정 시 자바 에이전트가 추적하고 있는 database connection 정보를 url이 아닌 클래스로 표시 (기본값 `true`)
+    -   `jdbc_url_enabled=false`に設定すると、Javaエージェントが追跡しているdatabase connection情報をurlではなくクラスで表示(デフォルト値 `true`)
 
         ```ini title='whatap.conf'
         jdbc_url_enabled=true
         ```
 
--   database connection pool 클래스 표시 설정 추가
+-   database connection poolクラス表示設定の追加
 
-    -   database connection pool의 클래스 이름을 jdbc url 데이터 뒤에 표시하여 connection pool의 정보를 추가로 확인할 수 있도록 설정 추가 (기본값 `false`)
+    -   database connection poolのクラス名をjdbc urlデータの後に表示してconnection poolの情報を追加で確認できるよう設定を追加 (デフォルト値 `false`)
 
         ```ini title='whatap.conf'
         trace_dbc_append_classname_enabled=false
         ```
 
-    -   database connection 정보를 자세하게 표시하기 위한 예시
+    -   database connection情報を詳細に表示するための例
 
-        `jdbc_url` + "@클래스 정보"; connection close 정보; 표시
+        `jdbc_url` + "@クラス情報"; connection close情報; 表示
 
         ```ini title='whatap.conf'
         trace_dbc_append_classname_enabled=true
@@ -61,50 +61,50 @@ toc_max_heading_level: 2
         trace_dbc_wrap_enabled=true
         ```
 
--   kubernetes 마스터 에이전트 연결 여부 설정 추가 (기본값 `false`)
+-   kubernetesマスターエージェント接続可否の設定を追加(デフォルト値 `false`)
 
     ```ini title='whatap.conf'
     kube_agent_connect_enabled=false
     ```
 
--   (batch) 액티브 스택 수집 여부 설정 추가 (기본값 `false`)
+-   (batch) アクティブスタック収集可否の設定を追加(デフォルト値 `false`)
 
     ```ini title='whatap.conf'
     active_stack_enabled=false
     ```
 
--   (batch) batch job에 트랜잭션을 분리하여 추적 기능 추가 (기본값 `false`)
+-   (batch) batch jobにトランザクションを分離して追跡機能を追加(デフォルト値 `false`)
 
     ```ini title='whatap.conf'
     split_trace_enabled=false
     ```
 
--   (batch) batch job의 시작 트랜잭션의 최대 step 설정 추가 (기본값 `2000`)
+-   (batch) batch jobの開始トランザクションの最大step設定を追加(デフォルト値 `2000`)
 
     ```ini title='whatap.conf'
     trace_batch_main_step_max_count=2000
     ```
 
--   (batch) 실시간으로 분리된 트랜잭션 추적 예시
+-   (batch) リアルタイムで分離されたトランザクション追跡例
     ```ini title='whatap.conf'
     trace_batch_main_step_max_count=2000
     split_trace_enabled=true
     ```
 
-## <Status>Change</Status> (업데이트)
+## <Status>Change</Status>(アップデート)
 
--   자바에이전트 내장 오픈소스 플러그인의 **webflux-5.x** 업데이트
+-   Javaエージェント組み込みオープンソースプラグインの**webflux-5.x**アップデート
 
--   ResultSet의 fetch time을 system time에서 jvm의 nanotime으로 수정
+-   ResultSetのfetch timeをsystem timeからjvmのnanotimeに修正
 
--   `service_patterns`로 트랜잭션을 등록하는 경우 트랜잭션 이름을 "클래스#메서드" 방식으로 표시
+-   `service_patterns`でトランザクションを登録する場合、トランザクション名を"クラス#メソッド"方式で表示
 
--   SQL 모니터링 시 null sql이 전달되는 경우 step에 **sql is null** 표시
+-   SQLモニタリング時null sqlが伝達される場合、stepに**sql is null**を表示
 
--   (batch) DeadLock 제거
+-   (batch) DeadLock除去
 
-## <Status>Fixed</Status> (버그 수정)
+## <Status>Fixed</Status>(バグ修正)
 
--   ResultSet wrapper 이중 카운팅 버그 수정
+-   ResultSet wrapperのダブルカウンティングバグを修正
 
--   SQL parameter의 Big Decimal 수집 버그 수정
+-   SQL parameterのBig Decimal収集バグを修正

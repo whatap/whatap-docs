@@ -1,20 +1,20 @@
 -   **stat**<span class='type'>String</span><br/>
-    Oracleモニタリング情報のうち、収集処理するstat指標をコンマ(,)で区切って設定します。次のデフォルト値を使用します。
+    Oracleモニタリング情報の中で、収集するstat指標をコンマ(,)で区切って設定します。次のデフォルト値を使用します。
 
     ```ini title='whatap.conf'
     stat=logons current,user commits,session logical reads,CPU used by this session,DB time,enqueue waits,physical reads,physical writes,execute count,db block changes,opened cursors current,parse count (total),parse count (hard),sorts (memory)
     ```
 
 -   **event**<span class='type'>String</span><br/>
-    Oracleモニタリング情報のうち、収集処理するevent指標をコンマ(,)で区切って設定します。次のデフォルト値を使用します。
+    Oracleモニタリング情報の中で、収集するevent指標をコンマ(,)で区切って設定します。次のデフォルト値を使用します。
 
     ```ini title='whatap.conf'
     event=db file sequential read,db file scattered read,enq: TX - row lock contention
     ```
 
--   **exclude_background**<span class='type'>String</span><br/>デフォルト値「3」<br/>
-    Oracleモニタリング情報のうち、セッション数およびセッション一覧を収集する際に、backgroundセッションを除外するかどうかを設定します。
-    -   「0」：除外しない
-    -   「1」：セッション一覧を収集する時、backgroundセッションを除く
-    -   「2」：セッション個数を処理する時、backgroundセッションを除外
-    -   「3」：セッション一覧と個数を処理する時、backgroundセッションを除く
+-   **exclude_background**<span class='type'>String</span><br/>デフォルト値`3`<br/>
+    Oracleモニタリング情報からセッション数およびセッション一覧を収集する場合、backgroundセッションを除外するかどうかを設定します。
+    -   `0`：除外しない
+    -   `1`：セッション一覧の収集時、backgroundセッションを除外
+    -   `2`：セッション個数を処理時、backgroundセッションを除外
+    -   `3`：セッション一覧と個数を処理時、backgroundセッションを除外

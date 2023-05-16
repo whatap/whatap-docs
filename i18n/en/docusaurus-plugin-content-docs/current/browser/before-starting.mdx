@@ -13,7 +13,7 @@ Before using the browser monitoring dashboard, be familiar with the terms define
 This process loads the content and resources of the page when accessing the web application. The browser monitoring service defines the page load time as follows.
 
 -   When there is no DOM interaction, AJAX request, or resource response within 100 ms
--   `window onload` 이벤트가 발생한 경우
+-   When the `window onload` event occurs
 
 The combination of the above conditions determines the final load time.
 
@@ -21,7 +21,7 @@ The combination of the above conditions determines the final load time.
 
 If you configure your web application as a Single Page Application (SPA), the page load event does not occur whenever you navigate to any page. We use the browser's history API to collect the data related to the page switching. 
 
-라우터 변경 시간의 정의는 페이지 [로드에 대한 첫번째 정의](#load-page)와 같습니다.
+The router change time is defined as the page [First definition to the load](#load-page).
 
 The event ends when there is no DOM interaction, AJAX request, or resource response within 100 ms after page switching.
 
@@ -31,20 +31,20 @@ In the browser monitoring service, the **user session** is a unit of behavior by
 
 It defines the session between user's page entry to exit as one **user session**. The session has a maximum duration of 4 hours and it is reset if there is no interaction with the web application for 15 minutes.
 
-## 페이지 그룹{#page-group}
+## Page group{#page-group}
 
 To have a meaningful statistical group in the browser monitoring service, the URL path is normalized and provided under the name of **page group**. Numbers and dates that are judged to be meaningless in the URL path unit analysis are replaced with question marks (?) for provision.
 
-예를 들어, _/v2/project/sms**/`12`/**dashboard/resource_board_와 같은 URL Path를 _/v2/project/sms**/`?`/**dashboard/resource_board_와 같은 형태로 제공합니다.
+For example, the URL path such as _/v2/project/sms**/`12`/**dashboard/resource_board_ is provided in the form of _/v2/project/sms**/`?`/**dashboard/resource_board_.
 
 ## Browser Error
 
 The browser monitoring service classifies errors that occur in the browser as follows:
 
--   `console`: 개발자가 정의한 에러, 브라우저 콘솔에서 발생하는 에러입니다.
+-   `console`: This developer-defined error appears on the browser console.
 
--   `onError`: 특정 리소스를 로드하지 못하거나 스크립트에 오류가 있는 경우 발생하는 에러입니다.
+-   `onError`: This error occurs when a specific resource cannot be loaded or there is a problem in the script.
 
--   `fetch error`: fetch를 통한 HTTP 요청(HTTP Request)이 있을 경우 발생하는 에러입니다.
+-   `fetch error`: This error occurs when there is an HTTP request through a fetch.
 
--   `xhr error`: xhr를 통한 HTTP 요청(HTTP Request)이 있을 경우 발생하는 에러입니다.
+-   `xhr error`: This error occurs when there is an HTTP request through XHR.

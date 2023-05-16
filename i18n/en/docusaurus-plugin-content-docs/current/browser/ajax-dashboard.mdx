@@ -8,7 +8,7 @@ tags:
   - Dashboard
 ---
 
-홈 화면 > 프로젝트 선택 > **_대시보드_** > **_AJAX_**
+Home > Select Project > **_Dashboard_** > **_AJAX_**
 
 AJAX is short for Asynchronous JavaScript And XML. It refers to using the `XMLHttpRequest` object to communicate with the server. 
 
@@ -16,54 +16,54 @@ AJAX is an important data loading method to construct a dynamic screen among res
 
 {@include: _dashboard-note.mdx}
 
-## **_AJAX 건수_**
+## **_AJAX Count_**
 
-![AJAX 건수](/img/rum-ajax-count.png)
+![AJAX Count](/img/rum-ajax-count.png)
 
 You can check the number of AJAX loads in real time.
 
--   위젯 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택한 다음 시간대를 설정해 AJAX의 로드 수를 조회할 수 있습니다. 
--   데이터 조회 기준을 **_AJAX Host_** 또는 **_전체_** AJAX로 변경하려면 위젯 오른쪽 위에 **_AJAX Path_** 버튼을 선택하세요.
--   **_AJAX Path_**, **_AJAX Host_** 기준으로 AJAX 로드 수 조회 시 상위 10개에 해당하는 AJAX 건수를 제공합니다.
+-   On the upper right of the widget, select ![Display Detail icon](/img/ico-detail-mode.svg) and then set the time zone to see the AJAX load count. 
+-   To change the data query criteria to **_AJAX Host_** or **_All_** AJAX, select **_AJAX Path_** on the upper right of the widget.
+-   When retrieving the AJAX load count based on **_AJAX Path_** and **_AJAX Host_**, the top 10 AJAX cases are provided.
 -   If you hover your mouse over the widget chart, AJAX count is provided in the form of a tooltip.
 
-## **_평균 AJAX 응답시간_**
+## **_Average AJAX Response Time_**
 
-![평균 AJAX 응답시간](/img/rum-ajax-response-time.png)
+![Average AJAX Response Time](/img/rum-ajax-response-time.png)
 
 You can check the AJAX response time in real time. You can identify AJAX that takes a long average AJAX response time by specific paths and hosts.
 
--   위젯 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택한 다음 시간대를 설정해 AJAX 응답 시간을 조회할 수 있습니다. 
--   데이터 조회 기준을 **_AJAX Host_** 또는 **_전체_** AJAX로 변경하려면 위젯 오른쪽 위에 **_AJAX Path_** 버튼을 선택하세요.
--   **_AJAX Path_**, **_AJAX Host_** 기준으로 AJAX 로드 수 조회 시 상위 10개에 해당하는 AJAX 응답시간을 제공합니다.
+-   On the upper right of the widget, select ![Display Detail icon](/img/ico-detail-mode.svg) and then set the time zone to see the AJAX response time. 
+-   To change the data query criteria to **_AJAX Host_** or **_All_** AJAX, select **_AJAX Path_** on the upper right of the widget.
+-   When retrieving the AJAX load count based on **_AJAX Path_** and **_AJAX Host_**, the top 10 AJAX response times are provided.
 
-## **_상태별 AJAX_**
+## **_AJAX By Status_**
 
-![상태별 AJAX](/img/rum-ajax-status.png)
+![AJAX by Status](/img/rum-ajax-status.png)
 
 You can check HTTP status codes related to AJAX by time of the day.
 
-![상태별 AJAX](/img/rum-ajax-status-count.png)
+![AJAX by Status](/img/rum-ajax-status-count.png)
 
 You can check the cumulative number of time-based HTTP status codes related to AJAX.
 
 The statuses related to AJAX are as follows. Check that AJAX is running normally in your web application with the following criteria:
 
--   **2xx**(성공): 요청을 성공적으로 받았으며 인식했고 수용했습니다.
--   **3xx**(리다이렉션): 요청 완료를 위해 추가 작업 조치가 필요합니다.
--   **4xx**(클라이언트 오류): 요청의 문법이 잘못됐거나 요청을 처리할 수 없습니다.
--   **5xx**(서버 오류): 서버가 명백히 유효한 요청에 대한 충족을 실패했습니다.
+-   **2xx** (Success): The requests have been successfully received, recognized, and accepted.
+-   **3xx** (Redirection): Additional action is required to complete the request.
+-   **4xx** (Client Error): The syntax of the request is incorrect or the request cannot be processed.
+-   **5xx** (Server Error): The server failed to meet a valid request.
 
 :::note
-HTTP 상태 코드와 관련한 자세한 내용은 [다음 문서](https://www.whatap.io/ko/blog/40/)를 참조하세요.
+For more information about the HTTP status codes, see [the following](https://www.whatap.io/ko/blog/40).
 :::
 
-## **_AJAX 에러 건수_**
+## **_AJAX Error Count_**
 
-![AJAX 에러 건수](/img/rum-ajax-error-count.png)
+![AJAX Error Count](/img/rum-ajax-error-count.png)
 
 You can check the number of AJAX-related errors in real time.
 
--   위젯 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 선택한 다음 시간대를 설정해 AJAX 에러 건수를 조회할 수 있습니다. 
--   데이터 조회 기준을 **_AJAX Host_** 또는 **_페이지 그룹_**으로 변경하려면 위젯 오른쪽 위에 **_AJAX Path_** 버튼을 선택하세요.
--   **_페이지 그룹_** 기준으로 조회 시 위젯 차트에 마우스 오버하면 툴팁을 통해 특정 페이지 그룹에서 발생한 AJAX 에러에 대해 식별할 수 있습니다.
+-   On the upper right of the widget, select ![Display Detail icon](/img/ico-detail-mode.svg) and then set the time zone to see the AJAX error count. 
+-   To change the data query criteria to **_AJAX Host_** or **_Page Group_**, select **_AJAX Path_** on the upper right of the widget.
+-   If you hover your mouse over the widget chart when searching based on **_Page Group_**, tooltips allow you to identify AJAX errors on a specific group of pages.

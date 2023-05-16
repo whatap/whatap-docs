@@ -10,37 +10,61 @@ tags:
 ---
 
 -   **whatap.trace_user_enabled**<span class='type'>Boolean</span><br/>
-        デフォルト値「true」<br/>
-        リアルタイムのユーザー集計可否を指定します。この値を活性化する場合、IPまたはPHP基本クッキー（PHPSESSID）およびフレームワーククッキー（ci_session、Laravel_session）に基づいてユーザーを追跡します。PHPコンパイルインストールをして_php.ini_に「whatap」項目があれば_whatap.ini_ではなく_php.ini_に追加してください。 
-    {@include: ../common-items/_php-restart-apply.mdx}
+        デフォルト値`true`<br/>
+        リアルタイムのユーザー集計可否を指定します。この値を活性化する場合、IPまたはPHP基本クッキー（PHPSESSID）およびフレームワーククッキー（ci_session、Laravel_session）に基づいてユーザーを追跡します。PHPコンパイルインストールをして_php.ini_に`whatap`項目があれば_whatap.ini_ではなく_php.ini_に追加してください。 
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 -   **whatap.trace_user_using_ip**<span class='type'>Boolean</span><br/>
-        デフォルト値 「false」<br/>
-        IPでリアルタイムユーザ区分をするときに設定します。このデータはReal Time Userで確認できます。falseの場合、PHP基本クッキーとフレームワーククッキー（PHPSESSID、ci_session、Laravel_session）を基準にユーザーを区分します。PHPコンパイルインストールをして_php.ini_に「whatap」項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
-    {@include: ../common-items/_php-restart-apply.mdx}
+        デフォルト値 `false`<br/>
+        IPでリアルタイムユーザ区分をするときに設定します。このデータはReal Time Userで確認できます。falseの場合、PHP基本クッキーとフレームワーククッキー（PHPSESSID、ci_session、Laravel_session）を基準にユーザーを区分します。PHPコンパイルインストールをして_php.ini_に`whatap`項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 -   **whatap.trace_user_cookie_keys**<span class='type'>String</span><br/>
-        デフォルト値「PHPSESSID、ci_session、laravel_session」<br/>
-        PHP内部の「session.name 」値を指定してユーザーを識別することができます。デフォルトの「PHPSESSID」をクッキーのキー名として使用せず、別の名前で使用するときに設定します。コンマ（_,_）を区切り文字として複数の値を設定できます。
-    {@include: ../common-items/_php-restart-apply.mdx}
+        デフォルト値`PHPSESSID、ci_session、laravel_session`<br/>
+        PHP内部の`session.name`値を指定してユーザーを識別することができます。デフォルトの`PHPSESSID`をクッキーのキー名として使用せず、別の名前で使用するときに設定します。コンマ（_,_）を区切り文字として複数の値を設定できます。
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 -   **whatap.trace_user_header_ticket**<span class='type'>Boolean</span><br/>
-        デフォルト値「false」<br/>
-        ユーザーをHTTPヘッダーの特定の値として区分したいときに使用するHTTPキーを指定します。ただ、「trace_user_using_ip」とは排他的で、設定を同時に適用することはできません。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールとして_php.ini_に「whatap」項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
-    {@include: ../common-items/_php-restart-apply.mdx}
+        デフォルト値`false`<br/>
+        ユーザーをHTTPヘッダーの特定の値として区分したいときに使用するHTTPキーを指定します。ただ、`trace_user_using_ip`とは排他的で、設定を同時に適用することはできません。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールとして_php.ini_に`whatap`項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 <!-- 설명 문장 수정 필요 가독성 떨어지고 뜻이 모호함 -->
 
 -   **whatap.trace_user_set_cookie**<span class='type'>Boolean</span><br/>
-        デフォルト値「false」<br/>
-        ユーザーを区別するために、クッキーに「WHATAP」キー名でユーザー区分値を設定します。 「trace_user_using_ip」が設定されている場合は反映されません。「trace_user_header_ticket」が設定される場合、header keyが見つからない場合に設定されます。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールをして_php.ini_に「whatap」項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
-    {@include: ../common-items/_php-restart-apply.mdx}
+        デフォルト値`false`<br/>
+        ユーザーを区別するために、クッキーに`WHATAP`キー名でユーザー区分値を設定します。 `trace_user_using_ip`が設定されている場合は反映されません。`trace_user_header_ticket`が設定される場合、header keyが見つからない場合に設定されます。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールをして_php.ini_に`whatap`項目があれば_whatap.ini_ではなく_php.ini_に追加してください。
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 -   **whatap.trace_http_client_ip_header_key**<span class='type'>String</span><br/>
-        デフォルト値「X-Forwarded-For」<br/>
+        デフォルト値`X-Forwarded-For`<br/>
         Client IP（RemoteIP）の情報を特定のHTTPヘッダーの値に変更して設定する機能を追加しました。Proxy環境でX-Forwarded-Forヘッダー値をClient IPとして設定することができます。
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    ApacheおよびPHP-FPMの再起動後に適用されます。
+
+    :::
 
 -   **whatap.trace_http_client_ip_header_key_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
-      値が「false」であれば、HTTP Headerは無視して、Remote IP値でクライアントIPを設定します。
+      デフォルト値`true`<br/>
+      値が`false`であれば、HTTP Headerは無視して、Remote IP値でクライアントIPを設定します。

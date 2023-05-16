@@ -5,7 +5,7 @@
 
 ```bash title=SH
 echo "filecheck.enabled=true" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
-echo "モニタリングしたいファイルまたはディレクトリのフルパス" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
+echo "モニタリングしたいファイルまたはディレクトリの全体パス" |sudo tee -a /usr/whatap/infra/conf/filesystem.conf
 ```
 
 </TabItem>
@@ -13,7 +13,7 @@ echo "モニタリングしたいファイルまたはディレクトリのフ�
 
 ```bash title=SH
 Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "filecheck.enabled=true"
-Add-Content -Path "C:\Program Files\WhatapInfra\filesystem.conf" -Value "モニタリングしたいファイルまたはディレクトリのフルパス"
+Add-Content -Path "C:\Program Files\WhatapInfra\filesystem.conf" -Value "モニタリングするファイルまたはディレクトリの全体パス"
 ```
 
 </TabItem>

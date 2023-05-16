@@ -27,14 +27,15 @@ In **_Container Map_** for WhaTap Kubernetes, both **Per-container view**, **Per
 **Per-container view** and **Per-pod view** can be switched depending on the user settings of the **_Container Map_** menu.
 
 :::note
-구버전 쿠버네티스 에이전트를 사용한다면 Pod 기준 뷰를 확인할 수 없습니다. 에이전트 업그레이드를 수행하세요.
+
+If you are using an older version of the Kubernetes agent, you cannot see the per-pod view. Upgrade the agent.
 
 ```bash title='Master'
-kubectl set image deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:<agent version> -n whatap-monitoring
+kubectl set image deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:{agent version} -n whatap-monitoring
 ```
 
 ```bash title='Node'
-kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<agent version> -n whatap-monitoring
+kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent version} -n whatap-monitoring
 ```
 
 :::

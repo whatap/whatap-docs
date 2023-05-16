@@ -10,7 +10,7 @@ tags:
 
 {@include: ../common-items/_apm-name-description.mdx}
 
-{@include: ../common-items/_agent-name-warning.mdx}
+{@include: ../common-items/_agent-name-warning.mdx} 
 
 :::note
 
@@ -20,8 +20,8 @@ tags:
 <!-- 와탭은 애플리케이션 서버 식별을 위해 애플리케이션 서버 종류, 서버 IP, 서비스 포트를 조합하여 고유 식별자로 사용합니다. -->
 
 -   **object_name**<span class='type'>String</span><br/>
-      デフォルト値「{type}-{ip2}-{ip3}-{process}」<br/>
-      アプリケーションを識別するエージェント名（ONAME）体系です。 ONAMEに基づいてOIDが生成されます。 
+      デフォルト値`{type}-{ip2}-{ip3}-{process}`\
+      アプリケーションを識別するエージェント名(ONAME)システムです。ONAMEに基づいてOIDが生成されます。 
 
     | 名称         | 説明                                    |
     | ---------- | ------------------------------------- |
@@ -33,9 +33,9 @@ tags:
 <!-- 문의 -->
 
 -   **app_name**<span class='type'>String</span><br/>
-      アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名です。 「object_name」の「{type}」に該当する値です。
+      アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名です。`object_name`の`{type}`に該当する値です。
 
 -   **app_process_name**<span class='type'>String</span><br/> 
       アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーションプロセス名です。 
 
-      アプリケーションサーバのCPU、Heap Memoryなどを収集する対象プロセスを設定します。「object_name」の「{process}」に対応する値です。 
+      アプリケーションサーバのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に対応する値です。 

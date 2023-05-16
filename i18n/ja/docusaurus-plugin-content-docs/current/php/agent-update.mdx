@@ -12,7 +12,9 @@ tags:
 パッケージアップデートは、既存の設定を維持したままPHPモニタリングサービスをアップデートします。0.2.7以降のバージョンから正常なアップデートが提供されます。以前のバージョンは削除後、**再インストール**が必要です。
 
 :::caution
+
 Apache実行中にphp extensionの_shared library(.so)_ファイルが変更される場合、Apache Daemonが異常終了することがあります。必ずApacheサーバーを停止した状態でアップデートを進めてください。
+
 :::
 
 ## Redhat/CentOS
@@ -32,6 +34,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
     ```
 
     :::note
+
     特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
 
     ```bash
@@ -57,6 +60,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
     ```
 
     :::note
+
     特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
 
     ```bash
@@ -94,6 +98,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
         $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz
         $ pkg install whatap-php-{version}.txz
         ```
+
     -   ApacheまたはPHP-FPMのサービスを開始します。
 
     :::
