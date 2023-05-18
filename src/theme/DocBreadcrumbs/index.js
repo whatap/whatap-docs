@@ -26,9 +26,9 @@ function BreadcrumbsItemString({children, href, isLast, isXXY}) {
     )
   }
   return href ? (
-    <span itemProp="name">{children}&nbsp;&gt;&nbsp;</span>
+    <span itemProp="name">{children}&nbsp;>&nbsp;</span>
   ) : (
-    <span>{children}&nbsp;&gt;&nbsp;</span>
+    <span>{children}&nbsp;>&nbsp;</span>
   );
 }
 function BreadcrumbsItemLink({children, href, isLast}) {
