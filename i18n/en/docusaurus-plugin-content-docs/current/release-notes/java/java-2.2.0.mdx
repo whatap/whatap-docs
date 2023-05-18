@@ -35,25 +35,25 @@ Release date: 2022-11-01
 -   Added the function to send notifications based on the number of active transactions.
 
     ```ini title='whatap.conf'
-    # 엑티브 트랜잭션 알림 설정 여부
+    # Whether the active transaction alerts have been set
     too_many_actx_alert_enabled=false
 
-    # 엑티브 트랜잭션 알림 무시 시간 (ms)
+    # Ignorance time for active transaction alerts (ms)
     too_many_actx_alert_silent_time=30000
 
-    # 엑티브 트랜잭션 알림 기준 건수
+    # Number of active transaction alerts
     too_many_actx_alert_count=50
 
-    # 엑티브 트랜잭션 알림 메시지 표시 건수
+    # Number of displayed active transaction alert messages
     too_many_actx_alert_msg_url_count=5
 
-    # 엑티브 트랜잭션 알림 기준 시간
+    # Time for active transaction alerts
     too_many_actx_alert_over_time=30000
     ```
 
-    -   엑티브 트랜잭션 기준 건수는 `too_many_actx_alert_count >= (too_many_actx_alert_over_time / 5000)`으로 결정
+    -   The number of active transactions is determined by `too_many_actx_alert_count = (too_many_actx_alert_over_time / 5000)`.
 
-    -   엑티브 트랜잭션 기준 건수와 같거나 넘어가는 경우 `too_many_actx_alert_msg_url_count` 만큼의 url 정보를 알림 메시지에 추가해 알림 전송    
+    -   When the number of active transactions equals to or exceeds the threshold, notifications are sent by adding URL as many as `too_many_actx_alert_msg_url_count` to the alert message.    
 
 -   Profile Debug option: Added the function to check the stack in the profile and agent log when a debug target pattern is registered.
 
@@ -64,8 +64,8 @@ Release date: 2022-11-01
 
 -   Adding the plug-in using class
 
-    -   _{AGENT_HOME}/plugin/{...}.x_ 파일에서 활용할 수 있도록 `HashTable` 클래스를 추가하였습니다.
-    -   `whatap.agent.api.Ref.h`를 사용하면 `HashTable`을 활용할 수 있습니다.
+    -   Added the `HashTable` class to be used in the _{AGENT_HOME}/plugin/{...}.x_ file.
+    -   If `whatap.agent.api.Ref.h` is used, `HashTable` can be used.
 
         ```java title='예시'
         Class hashTable = (Class) whatap.agent.api.Ref.h;
@@ -97,27 +97,27 @@ Release date: 2022-11-01
     ```
 
     ```java title='추적'
-    // Connection Pool 추적
+    // Connection Pool tracing
     // ConnectionPoolASM
     target.put("bmt/ds/MyDataSource", MyDataSource.className);
 
-    // Connection Pool 추적
+    // Connection Pool tracing
     // DBConCountCollectorThread
     add(new MyDataSource());
 
-    // JDBC Connection 추적
+    // JDBC Connection tracing
     // JDBCConnectionOpenASM
     AsmUtil.add(reserved, "bmt/ds/MyDataSource", "getConnection()Ljava/sql/Connection;");
 
-    // JDBC Statement 추적
+    // JDBC Statement tracing
     // JDBCStatementASM
     target.add("bmt/jdbc/FakeStatement");
 
-    // JDBC PreparedStatement 추적
+    // JDBC PreparedStatement tracing
     // JDBCPreparedStatementASM 
     target.add("bmt/jdbc/FakePreparedStatement");
 
-    // JDBC ResultSet 추적
+    // JDBC ResultSet tracing
     // JDBCResultSetASM
     target.add("bmt/jdbc/FakeResultSet");
     ```
@@ -157,7 +157,7 @@ Release date: 2022-11-01
     oshi_proc_mem_enabled=false
     ```
 
--   `org.edb.jdbc.PgCallableStatement`를 jdbc statement 추적 기능 추가
+-   Added the JDBC statement tracing function in `org.edb.jdbc.PgCallableStatement`.
 
 -   Function to trace SQL parameters in the Oracle procedure
 
@@ -165,7 +165,7 @@ Release date: 2022-11-01
 
     -   Added the function to trace SQL parameters in CallableStatement.
 
--   Weblogic에서 `HttpURLConnection`으로 http 호출을 하는 경우 `weblogic.net.http.HttpURLConnection`을 사용하는 것을 추적하는 기능 추가
+-   In case of calling HTTP from Weblogic to `HttpURLConnection`, added the function to trace `weblogic.net.http.HttpURLConnection`.
     ```ini title='whatap.conf'
     HttpURLConnection_weblogic=true
     ```
@@ -180,44 +180,44 @@ Release date: 2022-11-01
 
 -   Added the compressed transfer function for the profile data.
 
-    -   프로파일 데이터가 `profile_zip_max_buffer_size` 크기를 넘는 경우 프로파일 데이터를 전송
+    -   Profile data is sent when the profile data exceeds the size of `profile_zip_max_buffer_size`.
 
-    -   큐에 데이터가 쌓인지 `profile_zip_max_wait_time` 값을 넘은 경우 프로파일 데이터를 전송
+    -   Profile data is sent when data is accumulated in the queue or the value of `profile_zip_max_wait_time` is exceeded.
 
-    -   프로파일 데이터를 전송할 때 큐에 있는 프로파일 데이터가 `profile_zip_min_size` 크기 미만인 경우를 제외하고는 프로파일 데이터를 압축 전송    
+    -   When the profile data is transmitted, the data is compressed except when the profile data in the queue is less than `profile_zip_min_size`.    
 
     ```ini title='whatap.conf 설정'
-    # 프로파일 데이터 압축 여부
-    profile_zip_enabled=true
+    # Whether the profile data is compressed
+     profile_zip_enabled=true
 
-    # 프로파일 데이터들을 가지고 있을 큐 사이즈
-    # ZipProfileThread.java가 사용하는 RequestQueue 사이즈를 결정
-    profile_zip_queue_size=1000
+     # Queue size that has the profile data
+     # ZipProfileThread.java determines the request queue size
+     profile_zip_queue_size=1000
 
-    # 프로파일 데이터를 보내는 대기 시간
-    # 1000ms 지난 경우 프로파일 데이터 전송
-    profile_zip_max_wait_time=1000
+     # Waiting time for profile data transfer
+     # If 1000 ms is exceeded, the profile data is sent.
+     profile_zip_max_wait_time=1000
 
-    # 프로파일 데이터 버퍼 사이즈
-    # 프로파일 데이터가 1MB가 넘는 경우 데이터를 전송
-    profile_zip_max_buffer_size=1024*1024
+     # Buffer size of the profile data
+     # If the profile data exceeds 1 MB, data is transferred.
+     profile_zip_max_buffer_size=1024*1024
 
-    # 프로파일 데이터 압축 여부 결정 최소 사이즈
-    # 프로파일 데이터가 100byte 미만인 경우 압축하지 않음
-    profile_zip_min_size=100
+     # Minimum size to determine whether or not to compress the profile data
+     # If the profile data is less than 100 bytes, compression is not followed.
+     profile_zip_min_size=100
 
-    # 프로파일 데이터 압축 디버그 여부
-    # 프로파일 데이터 전송 관련 정보(ZipPack의 status, recordCount, buffer 사이즈, 프로파일 데이터 큐 사이즈)를 에이전트 로그에 출력
-    debug_profile_zip_enabled=false
+     # Whether or not to debug the profile data compression
+     # Outputs the data related to profile data transmission (ZipPack status, recordCount, buffer size, profile data queue size) to the agent log
+     debug_profile_zip_enabled=false
 
-    # 프로파일 데이터 압축 디버그 로그 출력 간격
-    # 프로피알 데이터 압축 디버그 옵션이 켜져 있는 경우 5000ms 간격으로 프로파일 데이터 전송 관련 정보를 에이전트 로그에 출력 
-    debug_profile_zip_interval=5000
+     # Output interval for profile data compression debug log
+     # When the PROFIAL data compression debug option is turned on, the information about profile data transmission is output to the agent log at an interval of 5000 ms. 
+     debug_profile_zip_interval=5000
     ```
 
 ## Change (update)
 
--   logsink 데이터 전송 주기인 `max_wait_time`을 `logsink_max_wait_time`으로 옵션 이름 수정
+-   Modified the option name from `max_wait_time` that is the logsink data transfer cycle, to `logsink_max_wait_time`.
 
 -   Replaced the CustomCounter function collected by the plug-in with CustomTaskLoader instead of CustomCounterTask.
 
@@ -232,60 +232,60 @@ Release date: 2022-11-01
 
     -   Modified to use the JVM time rather than the system time when measuring the elapsed times for transactions and profiles.
 
-    -   경과시간을 측정하는 경우 기존 `System.currentTimeMillis()`에서 `System.nanoTime()`을 사용하도록 수정
+    -   When measuring the elapsed time, modified to use `System.nanoTime()` in `System.currentTimeMillis()`.
 
 -   Modified to display the time difference between servers seen in the agent log when there is a difference in the server time between the agent and proxy.
 
     ```bash title='에이전트 로그'
-    # 30초 이상 차이가 나는 경우 
-    "fatal warning time-reverse (시간 차이) ms"
+    # In case the time difference is 30 seconds or more 
+    "fatal warning time-reverse (time difference) ms"
 
-    # 30초 미만 차이가 나는 경우
-    "warning time-reverse (시간 차이) ms"
+    # In case the time difference is less than 30 seconds
+    "warning time-reverse (time difference) ms"
     ```
 
 -   Modified the options for user counting in the form of wclient_xxx. The previous option names can be used but new option names are recommended, starting from v2.2.0.
 
     ```ini title='whatap.conf 설정(교체/추가)'
-    # 교체
+    # Replacement
     trace_user_method=IP
     wclient_trace_type=IP
 
-    # 교체
+    # Replacement
     trace_user_jsession_key=JSESSIONID
     wclient_jsession_key=JSESSIONID
 
-    # 교체
+    # Replacement
     trace_user_header_key=token
     wclient_header_key=token
 
-    # 교체
+    # Replacement
     trace_user_cookie_limit=4000
     wclient_cookie_limit=4000
 
-    # 교체
+    # Replacement
     trace_user_cookie_domain=
     wclient_cookie_domain=
 
-    # 교체
+    # Replacement
     realtime_user_thinktime_max=300000
     wclient_thinktime_max=300000
 
-    # 교체
+    # Replacement
     trace_user_using_ip=true
     wclient_using_ip=true
 
-    # 교체
+    # Replacement
     user_header_ticket=
     wclient_header_ticket=
 
-    # 추가
+    # Replacement
     wclient_max_count=70000
     ```
 
 -   Recompiled the embedded weaving component by applying the count settings related to the number of users.
 
--   CounterPack 경과시간 계산에 `System.nanoTime()`을 사용하도록 수정
+-   Modified to use `System.nanoTime()` when calculating the CounterPack elapsed time.
 
 -   Included the release version in the log output logo.
     ```bash title='로고'
@@ -308,9 +308,9 @@ Release date: 2022-11-01
 
 -   Changed the library folder name of {AGENT_HOME} that collects performance metrics.
 
-    -   sigar 라이브러리 폴더 이름 변경 : lib -> lib3
+    -   Renamed the SIGAR library folder: lib -> lib3.
 
-    -   oshi 라이브러리 폴더 이름 변경 : lib2 -> lib4    
+    -   Renamed the OSHI library folder: lib2 -> lib4.    
 
 ## Fixed (bug fixing)
 
@@ -322,4 +322,4 @@ Release date: 2022-11-01
 
 -   Fixed the bug where the elapsed time is displayed as 0, when the elapsed time of transactions and steps is less than 0.
 
--   `blocking_detect_count` 건수 처리 버그를 수정
+-   Fixed the `blocking_detect_count` handling bug.

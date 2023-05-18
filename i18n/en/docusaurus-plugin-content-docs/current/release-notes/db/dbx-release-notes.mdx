@@ -11,15 +11,15 @@ import UI from '@site/src/components/UItext';
 
 ### PostgreSQL
 
--   <Status>Feature</Status> <code>oldest_cur_xid</code>, <code>per_to_wraparound</code>, <code>per_to_emergency_autovac</code> 지표 추가 (2023-2-2)
+-   <Status>Feature</Status> <code>oldest_cur_xid</code>, <code>per_to_wraparound</code>, and <code>per_to_emergency_autovac</code> metrics were added. (2023-2-2)
 
--   <Status>Feature</Status> <code>replication_lag</code> 지표 추가 (2023-3-13)
+-   <Status>Feature</Status> The <code>replication_lag</code> metric was added. (2023-3-13)
 
 ### Oracle
 
--   <Status>Feature</Status> <UI>SQL 통계</UI> 메뉴에서 <code>sql_id</code> 추가 (2023-2-3)
+-   <Status>Feature</Status> In <UI>SQL Statistics</UI>, <code>sql_id</code> was added. (2023-2-3)
 
--   <Status>Feature</Status> 락 세션(lock session) 수집 여부 옵션 추가 (2023-3-21)
+-   <Status>Feature</Status> Added the option whether or not to collect the lock sessions. (2023-3-21)
 
     ```ini title=whatap.conf
     lock=0 # off
@@ -28,25 +28,25 @@ import UI from '@site/src/components/UItext';
 
 ### MySQL
 
-<Status>Fixed</Status> <code>active session</code> 수집 시 발생 에러 수정 (2023-3-28)
+<Status>Fixed</Status> When collecting the <code>active sessions</code>, fixed the occurrence error. (2023-3-28)
 
 ### Redis
 
--   <Status>Fixed</Status> connection이 종료되지 않던 오류 수정 (2023-3-21)
+-   <Status>Fixed</Status> Fixed the error where the connection was not terminated. (2023-3-21)
 
--   <Status>Fixed</Status> 지표가 출력되지 않는 오류 수정 (2023-4-13)
+-   <Status>Fixed</Status> Fixed the error where the metrics were not output. (2023-4-13)
 
 ### Tibero
 
--   <Status>Feature</Status> 세션 지표(<code>sesstat</code>) 수집 시 tibero API를 사용하는 방식을 추가해 속도 및 부하 개선 (2023-1-31)
+-   <Status>Feature</Status> When collecting session metrics (<code>sesstat</code>), added the method to use the tibero API to improve the speed and load. (2023-1-31)
 
-    -   사용법: DB 서버에 dbx 설치 및 _libTbmonXX.so_ 셋업
+    -   Usage: Installation of DBX on the DB server and configuration of _libTbmonXX.so_
 
         ```ini title=whatap.conf
         use_tbstat=1
         ```
 
-    -   수집하는 세션 지표에 해당하는 컬럼 항목은 다음과 같습니다.
+    -   The column items for the session metrics to be collected are as follows.
 
         -   **_logical_reads_**
         -   **_physical_reads_**
@@ -54,62 +54,62 @@ import UI from '@site/src/components/UItext';
         -   **_parse_count_total_**
         -   **_parse_count_hard_**
 
-    -   다음 메뉴에서 확인할 수 있습니다.
+    -   You can check in the following menus.
 
-        -   **_대시보드_**의 **_Active Sessions_**
-        -   **_통계/보고서_** > **_SQL 통계_**
+        -   **_Active Sessions_** of **_Dashboard_**
+        -   **_STAT/REPORT_** > **_SQL Statistics_**
 
--   <Status>Feature</Status> SQL 통계 메뉴에 `sql_id` 추가 (2023-1-16)
+-   <Status>Feature</Status> Added `sql_id` in SQL Statistics. (2023-1-16)
 
 ## DBX 1.6.5
 
 ### Common
 
--   에이전트 업데이트 기능 추가: MySQL, PostgreSQL 상품의 `node_state` 지표 추가
+-   Addition of agent update: Added the `node_state` metric of MySQL and PostgreSQL.
 
--   _whatap.conf_ 파일의 `slow_query_log` 옵션값을 대소문자 구분하지 않도록 수정
+-   Modified the `slow_query_log` option value in _whatap.conf_ file to be case insensitive.
 
--   xos 에이전트의 tcp 통신 기능 추가
+-   Added the TCP communication function of the XOS agent.
 
     ```ini title=whatap.conf
     use_tcp=1
     ```
 
--   `cpu_cores` 지표 추가 및 rds cpu core 에러 수정
+-   Added the `cpu_cores` metric and fixed the RDS CPU core error.
 
--   cpu core 수 에러 수정
+-   Fixed the CPU core count error.
 
--   sql text literal 변수 '$' 문자 등 처리하도록 수정
+-   Modified to process the SQL text literal variable's `$` character, etc.
 
--   CloudWatch `assume-role` 추가
+-   Added the CloudWatch `assume-role`.
 
     ```ini title=whatap.conf
     aws_arn=''
     ```
 
--   autoscale assume-role 기능 추가
+-   Added the autoscale assume-role function.
 
--   DocumentDB, CloudWatch 정보 수집 기능 추가
+-   Added the function to collect the data for DocumentDB and CloudWatch.
 
 ### PostgreSQL
 
--   `slowoquery` 수집 기능 추가
+-   Added the `slowoquery` collection function.
 
--   `replay_lag`, `replication_broken`, `replication_count` 지표 추가
+-   Added the `replay_lag`, `replication_broken`, and `replication_count` metrics.
 
--   `session count` 수집을 위한 버전 처리 init 수정
+-   Modified the version handling init to collect `session count`.
 
--   `max_connection` 지표 추가
+-   Added the `max_connection` metric.
 
--   lock 쿼리 개선(9.6 버전 이상 지원)
+-   Improved the lock query (available in the version 9.6 or later).
 
     ```ini title=whatap.conf
     lock_update=true
     ```
 
--   `uptime` 지표 추가
+-   Added the `uptime` metric.
 
--   **Aurora PostgreSQL**: `instance_name` 지표를 가져오기 위해 추가하던 _whatap.conf_ 파일의 `rds_instance={instance_name}` 옵션을 `cloud_watch_instance`로 변경
+-   **Aurora PostgreSQL**: Changed the `rds_instance={instance_name}` option in _whatap.conf_ to get the `instance_name` metric to `cloud_watch_instance`.
 
     ```ini title=whatap.conf
     cloud_watch_instance={instance_name}
@@ -117,22 +117,22 @@ import UI from '@site/src/components/UItext';
 
 ### Oracle
 
-**_테이블스페이스 사이즈_** 메뉴에 temp 파일 사이즈 조회 기능 추가
+Added the temp file size inquiry function to the **_Tablespace Size_**menu.
 
 ### MySQL
 
--   Aurora MySQL: replication 정보 추가
+-   Aurora MySQL: Added the replication data.
 
--   `active session` 수집 시 `command`, `user` 별 필터링 기능 추가
+-   When collecting `active session`, added the filtering functions for each `command` and `user`.
 
     ```ini title=whatap.conf
     skip_command='{command name}'
     skip_user='{user name}'
     ```
 
--   `max_connection` 지표 추가
+-   Added the `max_connection` metric.
 
--   RDS MySQL driver 사용할 수 있도록 옵션 추가
+-   Added the option to use the RDS MySQL driver.
 
     ```ini title=whatap.conf
     rds_driver=true
@@ -140,39 +140,39 @@ import UI from '@site/src/components/UItext';
 
 ### Tibero
 
--   **_테이블스페이스 사이즈_** 메뉴에 temp 파일 사이즈 조회 기능 추가
+-   Added the temp file size inquiry function to the **_Tablespace Size_**menu.
 
--   `session stat` 수집 시 API 사용 기능 추가
+-   Added the function to use the API when collecting `session stat`.
 
 ### CUBRID
 
--   테이블 사이즈 증감 기능 추가(xcub 에이전트 0.9.6 버전 이상 필요)
+-   Added the table size increase function (Xcub agent 0.9.6 or later is required).
 
     ```ini title=whatap.conf
     tables=1
     ```
 
--   킬세션(kill session) 기능 추가
+-   Added the kill session function.
 
--   테이블사이즈 증감 버전별 내용 수정
+-   Modified the table size increase/decrease functions by version.
 
--   `pageSize` 데이터베이스 파라미터 내용 추가, CUBRID `tps`, `qps`, `psize`, `executions` 지표 추가, CUBRID `broker`가 broker1, query_editor, 이 두 가지가 아닐 경우 _whatap.conf_ 파일에 `broker=`에 기입
+-   Added the `pageSize` database parameter; added the CUBRID `tps`, `qps`, `psize`, and `executions` metrics; if the CUBRID `broker` is not broker1 or query_editor, put it in `broker=` of _whatap.conf_.
 
     ```ini title=whatap.conf
     broker=broker1,broker2,query_editor
     ```
 
--   `pagesize` 데이터베이스 파라미터 오류 수정
+-   Fixed the `pagesize` database parameter error.
 
--   테이블 사이즈 증감 로그 내용 수정
+-   Modified the table size increase/decrease log.
 
--   `tps`, `qps` 지표 뒤바뀌었던 내용 수정
+-   Fixed the `tps` and `qps` metrics reversed.
 
--   `broker_count` 지표 추가
+-   Added the `broker_count` metric.
 
 ### Redis
 
-`active session` 수집 on/off 기능 추가(_whatap.conf_ 파일에 `active_session=true/false` 추가)
+Added the `active session` collection on/off (`active_session=true/false` added in _whatap.conf_).
 
 ```ini title=whatap.conf
 active_session=true/false
@@ -180,4 +180,4 @@ active_session=true/false
 
 ### MongoDB
 
-cpu 개수 에러 수정
+Fixed the CPU count error.

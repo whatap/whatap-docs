@@ -11,22 +11,22 @@ tags:
 import DocCardList from '@theme/DocCardList';
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}  
+{@include: ../common-items/_agent-signup-guide.mdx}
 
 {@youtube: QXKweGBucjI}
 
-{@include: ../getting-started/_create-project-v2.mdx}    
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey-v2.mdx}
 
 {@include: ../common-items/_download-java-agent.mdx}  
 
-### 에이전트 설치 파일 구성{#agent-files}
+### Agent installation file configuration{#agent-files}
 
-에이전트 파일은 애플리케이션 모니터링에 필요한 정보를 추출해 와탭 수집 서버로 전달하는 트레이서와 트레이서가 데이터를 보낼 수 있도록 돕는 요소로 구성되어 있습니다.
+The agent file consists of a tracer that extracts data for application monitoring and passes to the WhaTap collection server, and the elements that help the tracer send the data.
 
 -   _whatap.conf_<br/>
-    모니터링 에이전트의 설정 정보, 액세스 키, 와탭 데이터 수집 서버의 IP 정보 등을 저장하는 설정 파일입니다. 자세한 내용은 [다음 문서](set-agent)를 참조하세요.
+    This configuration file stores monitoring agent settings, access key, and WhaTap data collection server IP. For more information, see [the following](set-agent).
 
 -   _security.conf_ `Java agent 2.2.2 or later`
 
@@ -59,7 +59,7 @@ import TR from '@site/src/components/TR';
     :::
 
 -   _ping.sh(bat)_<br/>
-    현재 설정한 액세스 키, 와탭 데이터 수집 서버로 통신을 시도해 설정이나 네트워크 이슈가 있는지 확인하기 위한 스크립트(배치) 파일입니다.
+    This script (batch) file checks whether there are any settings or network issues by attempting communication with the access key and WhaTap data collection server.
 
 -   _proxy.sh(bat)_<br/>
     Script (batch) file to start the _whatap.agent.proxy-`X.Y.Z`.jar_ file.

@@ -3,8 +3,8 @@ id: container-map-metrics
 title: Metrics
 description: Kubernetesのリソース使用量を確認し、使用量が適切に設定されているか確認できます。
 tags:
-  - クバネティス
-  - クバネティスモニタリング
+  - Kubernetes
+  - Kubernetesモニタリング
   - Metrics
   - メトリックス
 ---
@@ -82,12 +82,12 @@ CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです�
 | ^      | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | CPU Limit基準CPUの全体使用率       |
 | Memory | MemWs          | **_Container Memory Working Set (byte)_**         | コンテナメモリworking set         |
 | ^      | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | コンテナメモリの要請量基準workingset使用量 |
-| ^      | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | コンテナメモリ割当量基準workingset使用量  |
+| ^      | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | コンテナメモリ割当量基準working set使用量 |
 
 :::note
 Pod가 실행 중인 노드에 사용 가능한 리소스가 충분하면 컨테이너에 설정된 Request 이상의 리소스를 사용할 수 있습니다. 와탭 메트릭 중 **_Container CPU Usage by Request (%)_**, **_Container Memory Working Set by Request (%)_**의 값이 100%를 넘어설 수 있는 이유입니다.
 
-例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ（Pod）が実行中のノードの総メモリは4GiBであり、そのノードに他のPodがない場合、このコンテナは128MiB以上のメモリを使用できます。
+例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ（Pod）が実行中のNodeの総メモリは4GiBであり、そのNodeに他のPodがない場合、このコンテナは128MiB以上のメモリを使用できます。
 :::
 
 ## その他のメトリクス

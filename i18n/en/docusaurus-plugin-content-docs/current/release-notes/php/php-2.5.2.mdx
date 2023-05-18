@@ -13,22 +13,22 @@ Release date: 2022-07-06
 
 ### Log monitoring's compressed transmission; change to default settings
 
-`whatap.logsink_zip_enabled`의 기본값을 `true` 로 설정합니다. 압축 전송을 기본으로 합니다. 
+Set the default value of `whatap.logsink_zip_enabled` to `true`. Compressed transmission is the default. 
 
 ### Renaming the project license key to the access key
 
-에이전트 옵션 중 `whatap.license` 를 `whatap.accesskey` 로 변경합니다. 기존 `license`도 사용 가능합니다.
+Among the agent options, `whatap.license` has been changed to `whatap.accesskey`. The existing `license` can also be used.
 
 ### Change in the TCP queue size
 
-256, 512 에서 512, 1024 로 확장합니다. 로그모니터링 파일이 많이 설정되어 있는 경우 tcp 패킷 증가를 처리하기 위해 확장합니다. 
+The size has been expanded from 256, 512 to 512, 1024. If there are a lot of log monitoring files set up, they are scaled up to handle the increase of TCP packets. 
 
 ## Fixed (bug fixing)
 
 ### Fixing the segmentation fault
 
-멀티트랜잭션 추적 옵션(`whatap.mtrace_enabled`)이 설정된 상태에서 `curl_setopt_array` 함수 사용 중 segmentation fault가 발생하는 오류를 수정했습니다. 
+Fixed the error where a segmentation fault occurred while using the `curl_setopt_array` function while the multi-transaction tracing option (`whatap.mtrace_enabled`) was enabled. 
 
 ### biz_exceptions option
 
-`biz_exceptions` 옵션으로 제외한 오류는 히트맵에는 오류로 표기 되지 않고, 트랜잭션 프로파일과 통계정보에만 적용됩니다. 통계정보에 적용 안되는 오류를 수정했습니다. 
+Errors excluded by the `biz_exceptions` option are not marked as errors in the hitmap, but are applied only to the transaction profile and statistical data. We fixed the error that does not apply to the statistical data. 

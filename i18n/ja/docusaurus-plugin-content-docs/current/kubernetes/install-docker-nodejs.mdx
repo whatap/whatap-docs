@@ -1,10 +1,10 @@
 ---
 id: install-docker-nodejs
 title: Docker Node.jsインストール
-description: コンテナ内のNode.jsアプリケーションをモニタリングするためのエージェントのインストール段階です。
+description: コンテナ内のNode.jsアプリケーションをモニタリングするためのエージェントのインストール手順です。
 tags:
-  - クバネティス
-  - クバネティスモニタリング
+  - Kubernetes
+  - Kubernetesモニタリング
   - アプリケーションインストール
   - Node.js
 ---
@@ -12,17 +12,17 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Dockerコンテナベースで実行するNode.jsアプリケーションにWhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする過程です。
+Dockerコンテナベースで実行するNode.jsアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングするプロセスです。
 
 ## エージェントダウンロード
 
-次のコマンドを通じてWhaTapをインストールしてください。
+次のコマンドでWhaTapをインストールします。
 
 ```bash
 npm install --save whatap
 ```
 
-アップデートを進めるには、次のコマンドを実行してください。
+アップデートを継続するには、次のコマンドを実行します。
 
 ```bash
 npm update whatap
@@ -30,7 +30,7 @@ npm update whatap
 
 ## エージェント設定
 
-_node_modules/whatap_パスに位置する_whatap.conf_ファイルをNode.jsアプリケーションのルートディレクトリにコピーしてください。コピーした_whatap.conf_ファイルの内容を次を参考に修正してください。
+_node_modules/whatap_パスにある_whatap.conf_ファイルをNode.jsアプリケーションのルートディレクトリにコピーしてください。コピーした_whatap.conf_ファイルの内容は、次を参照して修正します。
 
 ```ini
 license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
@@ -40,7 +40,7 @@ whatap_micro_enabled=true
 
 ## 使い方
 
-アプリケーションのメインモジュールの最初の行に次のコードを追加してください。
+アプリケーションのメインモジュールの最初の行に、次のコードを追加します。
 
 ```javascript title='적용 예시' showLineNumbers {1}
 var WhatapAgent = require('whatap').NodeAgent;
@@ -52,7 +52,7 @@ let server = null;
 const port = normalizePort(process.env.PORT || '3000');
 ```
 
-ECMAScript（ES）を活用するなら、次のコードを追加してください。
+ECMAScript(ES)を使用している場合は、次のコードを追加します。
 
 ```javascript
 import WhatapAgent from 'whatap';
@@ -91,9 +91,9 @@ env:
     ...
     ```
 
-2.  ユーザーのKubernetes環境内のコンテナ環境変数を設定してください。アプリケーションエージェントに必要な環境変数情報を入力してください。
+2.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-  `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。
+  `OKIND`環境変数は、Pod(Pod)に該当するアプリケーションを同じグループとして設定する役割を果たします。
 
 ````
 ```ini showLineNumbers {8}
@@ -104,7 +104,7 @@ env:
     valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
   - name: POD_NAME
     valueFrom: {fieldRef: {fieldPath: metadata.name}}
-  # whatap.confファイルを使用しない場合は、設定を追加してください。
+  # whatap.confファイルを使用していない場合は、設定を追加してください。
   - name: license
     value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
   - name: whatap_server_host
@@ -114,7 +114,7 @@ env:
 ```
 ````
 
-1.  ユーザーPodリソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加してください。
+1.  ユーザーPod(Pod) リソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加します。
 
     ```ini
     ...

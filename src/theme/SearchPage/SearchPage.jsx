@@ -146,7 +146,6 @@ function SearchResultItem({ searchResult: { document, type, page, tokens, metada
     if (!isTitle) {
         pathItems.push(page.t);
     }
-    const outputTitle = concatDocumentPath(pathItems) + articleTitle;
     let search = "";
     if (Mark && tokens.length > 0) {
         const params = new URLSearchParams();
@@ -157,11 +156,14 @@ function SearchResultItem({ searchResult: { document, type, page, tokens, metada
     }
     return (<article className={styles.searchResultItem}>
       <h2>
-        <Link to={document.u + search + (document.h || "")} dangerouslySetInnerHTML={{
-            __html: isContent
-                ? highlight(outputTitle, tokens)
-                : highlightStemmed(outputTitle, getStemmedPositions(metadata, "t"), tokens, 100),
-        }}></Link>
+        <a href={document.u + search + (document.h || "")}>
+          {pathItems.length > 0 && (<span className={styles.searchResultItemPath}>{concatDocumentPath(pathItems)}</span>)}
+          <Link to={document.u + search + (document.h || "")} dangerouslySetInnerHTML={{
+              __html: isContent
+                  ? highlight(articleTitle, tokens)
+                  : highlightStemmed(articleTitle, getStemmedPositions(metadata, "t"), tokens, 100),
+          }}></Link>
+        </a>
       </h2>
       {isContent && (<p className={styles.searchResultItemSummary} dangerouslySetInnerHTML={{
           __html: highlightStemmed(document.t, getStemmedPositions(metadata, "t"), tokens, 400),

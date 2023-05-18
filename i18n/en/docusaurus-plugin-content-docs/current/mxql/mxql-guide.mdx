@@ -196,9 +196,9 @@ UPDATE {key:tps, value:avg}
 
 ## Predefined MXQL query statement{#custom-mxql}
 
-You can perform MXQL by setting the path of a predefined MXQL query file without directly writing the MXQL query. For example, the MXQL queries to obtain "Number of active transactions by agent," "Number of cases by \<section\>," and "Last 15 seconds" are as follows:
+You can perform MXQL by setting the path of a predefined MXQL query file without directly writing the MXQL query. For example, the MXQL queries to obtain "Number of active transactions by agent," "Number of cases by &lt;section&gt;," and "Last 15 seconds" are as follows:
 
-```sql title='Active TX count by agent, \<section\> count, recently 15 seconds'
+```sql title='에이전트별 액티브TX 건수, 구간별 건수, 최근 15초'
 HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 TIME-RANGE {duration:15s, etime:$etime}
 OIDSET {oid:$oid, okind:$okind, onode:$onode}
@@ -260,7 +260,7 @@ Bind variable names can only contain uppercase and lowercase characters. Numbers
 
 Data that can be searched in MXQL is divided into two types depending on the format of [Metrics](../metrics/common-metrics-intro).
 
--   Data in which the metric is divided into tags and fields to be loaded using the stored data ([TAGLOAD](mxql-loading#tagload).
+-   Data in which the metric is divided into tags and fields to be loaded using the stored data [TAGLOAD](mxql-loading#tagload).
 -   All metrics data stored in fields (data that can be loaded using [FLEXLOAD](mxql-loading#flexload))
 
 Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of categories included in [the following](mxql-loading#flexload-items).

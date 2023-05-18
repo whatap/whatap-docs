@@ -9,7 +9,7 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-와탭 모니터링 서비스를 사용하기 위해서는 [회원 가입](https://www.whatap.io/ko/signup/) 후 프로젝트를 생성하고 해당 URL을 추가해야 합니다. 회원 가입에 관한 자세한 내용은 [다음 문서](../account/account-manage)를 참조하세요.
+To use the WhaTap monitoring service, after signing up in [Sign up](https://www.whatap.io/en/signup/), create a project and then add the URL. For more information about registration, see [the following](../account/account-manage).
 
 See the following video guide.
 
@@ -17,50 +17,75 @@ See the following video guide.
 
 ## Project Creation
 
-URL을 추가하기 전에 먼저 프로젝트를 생성하세요.
+Create a project before adding the URL.
 
 1.  Log in [WhaTap monitoring service](https://service.whatap.io).
 
-2.  프로젝트를 생성하려면 화면 왼쪽 메뉴에서 **_+ <TR sid='project_add_btn'/>_** 버튼을 선택하세요.
+2.  To create a project, on the left of the screen, select **_+ <TR sid='project_add_btn'/>_**.
 
-3.  **_상품 카달로그 화면_**에서 URL 모니터링 프로젝트를 생성하세요.
+3.  In **_Product Catalog_**, create a URL monitoring project.
 
-    ![url 모니터링 프로젝트](/img/url-project.png)  
+    ![URL Monitoring Project](/img/url-project.png)  
 
-4.  **_프로젝트 이름_**, **_타임 존_** 등의 항목을 설정하세요.
+4.  Set the **_project name_**, **_time zone_**, etc.
 
-5.  **_데이터 서버 지역_**으로 WEB-Checker-Region을 선택하세요.
+5.  As **_Data Server Region_**, select WEB-Checker-Region.
 
-6.  모든 설정을 완료한 다음에는 **_프로젝트 생성하기_** 버튼을 선택하세요.
+6.  After all settings are finished, select **_Creating a project_**.
 
 7.  Check the new project in the project list.
 
 :::note
 
--   **_데이터 서버 지역_**은 리전(클라우드 서비스를 제공하기 위해 설치한 데이터 센터의 묶음)을 의미합니다. 특정 리전을 선택하면 해당 리전에 속한 데이터 센터에 사용자의 데이터를 저장합니다.
--   **_타임 존_**은 알림, 보고서를 생성하는 기준 시간입니다.
--   여러 개의 프로젝트를 그룹으로 묶어 관리하려면 **_프로젝트 그룹_**에서 그룹을 선택하거나 그룹을 추가하세요. 그룹에 대한 자세한 설명은 [다음 문서](../project/group)를 참조하세요.
+-   A **_data server region_** refers to a region (a bundle of data centers installed to provide cloud services). Selecting a specific region stores your data in the datacenter that belongs to that region.
+-   **_Time Zone_** is the reference time for generating alerts and reports.
+-   To group multiple projects for management, select a group from **_Project Groups_** or add a group. For more information about grouping, see [the following](../project/group).
 :::
+
+<!-- 
+
+확인 지역 선택
+
+접속 테스트 수행을 위한 에이전트의 위치는 Seoul과 Tokyo, Singapore, Mumbai, Frankfurt, California 총 6개를 제공합니다. 향후 접속 테스트를 위한 추가 리전을 제공할 수 있습니다. 추가 리전에 대해서는 support@whatap.io로 문의하세요.
+
+**폐쇄망 사이트의 접속 테스트를 수행**하고자 하는 경우 에이전트로부터의 호출이 허용되도록 방화벽을 오픈해야 할 수 있습니다. 각 에이전트의 **방화벽 오픈 대상 IP Address**는 다음과 같습니다.
+
+* AWS-Seoul-Agent - 54.180.11.176
+* AWS-Tokyo-Agent - 18.179.189.142
+* AWS-Singapore-Agent - 54.169.168.45
+* AWS-Mumbai-Agent - 3.6.243.66
+* AWS-Frankfurt-Agent - 18.197.22.141
+* AWS-California-Agent - 54.215.76.203
+
+**cloudflare**를 사용하는 경우 cloudflare **방화벽 규칙에 해당하는 리전 IP**를 허용해야 합니다.
+* AWS-Seoul-Agent - 54.180.11.176
+* AWS-Tokyo-Agent - 18.179.189.142
+* AWS-Singapore-Agent - 54.169.168.45
+* AWS-Mumbai-Agent - 3.6.243.66
+* AWS-Frankfurt-Agent - 18.197.22.141
+* AWS-California-Agent - 54.215.76.203 
+
+-->
 
 ## Adding a URL
 
-1.  생성된 URL 프로젝트를 선택하세요. URL이 설정되지 않은 화면이 표시됩니다.
-2.  화면 우측 상단의 **_+ URL 추가하기_** 버튼을 선택하세요. 
-3.  추가된 입력 필드에 URL 설정을 진행합니다.
-    ![url 입력 필드 화면](https://img.whatap.io/media/images/Screenshot_2021-01-15_ddd_15299_-_URL_Monitoring.png)
-    -   **_이름_**<br/>
-          URL 설정의 고유 식별 정보로 사용됩니다. 중복 불가하며, 재설정 시에 동일한 이름으로 등록할 경우 동일한 이름의 통계 데이터를 같은 URL의 데이터로 간주합니다.
-    -   **_URL_**<br/>
-          체크 대상 URL을 등록합니다. 호출 대상 URL의 전체 경로를 입력합니다. http/https 프로토콜을 지원합니다.
-    -   **_확인 지역_**<br/>
-          와탭이 제공하는 에이전트를 선택합니다. Seoul, Tokyo, Singapore, Mumbai, Frankfurt, Califonia 리전을 제공합니다. 다음의 확인 지역 선택 안내를 참조하세요.
-4.  편집이 완료되면 **_저장_** 버튼을 통해 설정 정보를 저장하세요. 그리고 **_모니터링_** 버튼을 선택해 모니터링 화면으로 전환하세요.
+1.  Select the generated URL project. A screen with no URL set appears.
+2.  On the upper right of the screen, select **_+ Add URL_**. 
+3.  Proceed to perform URL settings in the added input fields.
+    ![URL input field screen](https://img.whatap.io/media/images/Screenshot_2021-01-15_ddd_15299_-_URL_Monitoring.png)
+    -   **_Name_**
+        Used as a unique identification for URL settings. Duplicates are not allowed, and if you register with the same name when resetting, statistical data with the name will be considered as data from the same URL.
+    -   **_URL_**\
+          Register the URL to check. Enter the full path of URL to call. It supports the http/https protocol.
+    -   **_Check Location_**\
+          Select the agent provided by WhaTap. It provides the regions such as Seoul, Tokyo, Singapore, Mumbai, Frankfurt, and California. See the selection guide for the following check location.
+4.  After edition, select **_Save_** to save the settings. Select **_Monitoring_** to switch to the monitoring screen.
 
-### 확인 지역 선택
+### Selecting a region
 
-향후 접속 테스트를 위한 추가 지역(리전)을 제공할 수 있습니다. 추가 지역에 대해서는 support@whatap.io로 문의하세요.
+We can provide additional regions for future connectivity testing. For additional regions, contact us at support@whatap.io.
 
-**폐쇄망 사이트의 접속 테스트를 수행**하고자 하는 경우 에이전트로부터의 호출이 허용되도록 방화벽을 오픈해야 할 수 있습니다. 위치 IP 주소는 도움말로 표시됩니다. 각 에이전트의 **방화벽 오픈 대상 IP Address**는 다음과 같습니다.
+For **access testing to a closed network site**, you may need to open the firewall to allow calls from the agent. The location IP address is displayed as a help. The **Firewall open target IP addresses** of each agent are as follows.
 
 -   AWS-Seoul-Agent - 54.180.11.176
 -   AWS-Tokyo-Agent - 18.179.189.142
@@ -69,7 +94,7 @@ URL을 추가하기 전에 먼저 프로젝트를 생성하세요.
 -   AWS-Frankfurt-Agent - 18.197.22.141
 -   AWS-California-Agent - 54.215.76.203
 
-**cloudflare**를 사용하는 경우 cloudflare **방화벽 규칙에 해당하는 리전 IP**를 허용해야 합니다.
+If **cloudflare** is used, you must allow the **region IPs that are compatible with its firewall rules**.
 
 -   AWS-Seoul-Agent - 54.180.11.176
 -   AWS-Tokyo-Agent - 18.179.189.142
@@ -78,45 +103,86 @@ URL을 추가하기 전에 먼저 프로젝트를 생성하세요.
 -   AWS-Frankfurt-Agent - 18.197.22.141
 -   AWS-California-Agent - 54.215.76.203 
 
-## 모니터링 하기{#url-st}
+<!-- 
 
-![URL 모니터링 화면 sc](/img/url-monitoring.png)
+위치 IP 주소가 도움말로 표시됩니다. 폐쇄망에서 서비스 중인 URL을 등록하여 모니터링하고자 하는 경우 해당 IP에 대한 방화벽 설정이 열려있어야 합니다.
 
-### 조건 지정 옵션
+ ![url 프로젝트 확인](https://img.whatap.io/media/user_guide_url/2_CreatedProject.png)
 
-홈 화면에서 프로젝트를 선택하고 **_URL 목록_** 메뉴로 이동하세요. ![number-1](/img/number-01.png) 영역 상단 옵션을 통해 보기 형식 및 정렬 방식을 지정하거나 검색을 통해 목록을 조회할 수 있습니다.
+URL 목록 내보내기, 가져오기
 
--   ![리스트 뷰 아이콘](/img/ic-list.svg)**_리스트 뷰_**: **_URL 목록_**을 리스트 형식으로 볼 수 있습니다. 기본 설정은 **_리스트 뷰_**입니다. 
--   ![카드 뷰 아이콘](/img/ic-project.svg)**_카드 뷰_**: **_URL 목록_**을 카드 형식으로 볼 수 있습니다.
--   **_검색_**: 입력창을 통해 URL 혹은 지정한 URL의 이름을 기준으로 검색할 수 있습니다.
+현재 URL 목록을 엑셀 파일 형식으로 내보내거나 가져올 수 있습니다. 
 
-![number-2](/img/number-02.png) 영역에서 등록된 URL 목록의 최종 응답 스테이터스 별 건수 정보를 확인하고 필터링 할 수 있습니다. **_전체_** 보기, **_9XX_**, **_서버 오류_**, **_요청 오류_**, **_리다이렉션 완료_**, **_성공_** 등을 기준으로 조회할 수 있습니다. 기본 설정은 **_전체_** 보기 입니다. 
+1. 생성된 프로젝트를 선택해 ***URL 목록*** 메뉴로 이동하세요.
+1. 화면 우측 상단의 ![내보내기 아이콘](/img/ico-export.svg) ***내보내기*** 버튼을 선택하세요.
+1. 웹 브라우저에서 현재 URL 목록을 엑셀 파일로 다운로드합니다.
+1. 화면 우측 상단의 ![가져오기 아이콘](/img/ico-import.svg) ***가져오기*** 버튼을 선택하세요.
+1. 엑셀 파일을 선택하세요.
 
-### URL 목록 내보내기, 가져오기
+-->
 
-![number-3](/img/number-03.png) 영역에서 현재 **_URL 목록_**을 엑셀 파일 형식으로 내보내거나 가져올 수 있습니다. 
+<!-- 
+* 화면 우측 상단의 ![내보내기 아이콘](/img/ico-export.svg) ***내보내기*** 버튼을 선택하면 현재 URL 목록을 엑셀 파일 형식으로 내보낼 수 있습니다.
+* 화면 우측 상단의 ![가져오기 아이콘](/img/ico-import.svg) ***가져오기*** 버튼을 선택하면 엑셀 파일 형식의 URL 목록을 가져올 수 있습니다.
+1. 지원 리전 외의 환경에서 URL 체크를 수행하고자 하는 경우 support@whatap.io로 문의하세요. 
+California 총 6개의 리전 위치를 제공합니다.
+-->
 
--   ![내보내기 아이콘](/img/ico-export.svg) **_내보내기_**: 웹 브라우저에서 현재 URL 목록을 엑셀 파일로 다운로드합니다.
--   ![가져오기 아이콘](/img/ico-import.svg) **_가져오기_**: 엑셀 파일을 선택해 URL 목록을 불러옵니다. 
+## Running Monitoring{#url-st}
 
-### URL 모니터링 상세
+<!-- 모니터링 화면으로 전환 후 모니터링을 수행합니다. -->
 
-![number-4](/img/number-04.png) 영역 URL 목록 테이블에서 등록된 URL 단위의 모니터링 체크 결과를 확인할 수 있습니다. 각 컬럼 항목은 다음과 같습니다. URL의 등록 및 편집이 필요한 경우 ![편집 아이콘](/img/ic-edit.svg) **_URL 편집_** 아이콘을 선택해 편집 화면으로 전환하세요.
+![URL Monitoring screen sc](/img/url-monitoring.png)
 
--   **_현재 Status Code_**<br/>
-      최종 체크 응답 코드(Http Status Code)입니다. 각 상태 코드를 선택하면 HTTP 상태 코드 정리 문서로 이동합니다.
--   **_이름/URL_**<br/>
-      URL 등록 시에 지정한 고유 식별 정보와 URL 입니다.
--   **_지역_**<br/>
-      확인 지역입니다.
--   **_경과 시간_**<br/>
-      20분간의 체크 결과(응답 코드 및 응답 시간) 및 최종 응답 시간입니다. 차트 영역에서 드래그해 시간 범위 조회 시 다음과 같이 해당 시간대의 응답 코드 및 응답 시간을 확인할 수 있습니다.
-      ![상세 sc](/img/url-monitoring-dt.png)
+### Condition setting option
+
+Select a project at Home screen and go to **_URL List_**. Through the option at the top of ![number-1](/img/number-01.png), you can specify the view format and sorting method, or view the list through search.
+
+-   ![List View Icon](/img/ic-list.svg)**_List View_**: You can view the **_URL list_** in the list format. The default setting is **_List View_**. 
+-   ![Card View icon](/img/ic-project.svg)**_Card View_**: You can view the **_URL list_** in the card format.
+-   **_Search_**: You can search based on the URL or the name of the specified URL in the input field.
+
+In the ![number-2](/img/number-02.png) area, you can see and filter the counts for each final response status in the list of registered URLs. The view can be seen based on **_View All_**, **_9XX_**, **_Server Error_**, **_Request Error_**, **_Redirection_**, and **_Success_**. The default setting is **_All_** view. 
+
+### Exporting and importing URL List
+
+In the ![number-3](/img/number-03.png) area, you can export or import the current **_URL list_** in Excel format. 
+
+-   ![Export icon](/img/ico-export.svg) **_Export_**: The current URL list is downloaded in an Excel file through the web browser.
+-   ![Import icon](/img/ico-import.svg) **_Import_**: By selecting an Excel file, the URL list is imported. 
+
+<!-- ![URL 모니터링 화면](/img/url-added-feature.png) -->
+
+### URL Monitoring Detail
+
+In the URL list table of the ![number-4](/img/number-04.png) area, you can see the monitoring check results for each registered URL. The columns are as follows. To register or edit a URL, select ![Edit icon](/img/ic-edit.svg) **_Edit URL_** to switch to the editing screen.
+
+-   **_Current Status Code_**\
+      It is the final check response code (HTTP Status Code). If you select each status code, the HTTP status code cleanup document appears.
+-   **_Name/URL_**\
+      This is the unique ID and URL specified upon registration of the URL.
+-   **_Region_**\
+      Check location.
+-   **_Elapsed Time_**\
+      It has the 20-minute check result (response code and time) and final response time. When searching for a time range by dragging in the chart area, you can see the response codes and response times for the time period as follows.
+      ![Detail sc](/img/url-monitoring-dt.png)
 
 :::note 
 
-**와탭 URL Monitoring 서비스 사용**
+**Use of WhaTap URL Monitoring service**
 
-URL 모니터링은 별도의 정책 변경이 있기까지 무상 서비스로 제공합니다. 사용자는 별도의 에이전트를 설치할 필요가 없으며 와탭이 제공하는 에이전트 및 서버 저장소를 활용합니다.
+URL Monitoring is provided as a free service until there is any change of payment policy. You do not need to install separate agents and can use the WhaTap agents and server repository.
 
 :::
+
+<!-- 
+
+![](https://img.whatap.io/media/images/Screenshot_2021-01-15_URL_Testing_34_-_URL_Monitoring.png)
+
+* ***가용성 %***  
+    조회된 구간의 정보를 기준으로 전체 체크 결과 건수 대비 정상 응답(응답 코드 200~399) 건수의 비중을 %로 표시합니다.
+
+![가져오기 아이콘](/img/ico-import.svg) ***가져오기***
+![내보내기 아이콘](/img/ico-export.svg)
+
+-->

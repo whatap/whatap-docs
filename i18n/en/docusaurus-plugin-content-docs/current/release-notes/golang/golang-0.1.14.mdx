@@ -7,15 +7,15 @@ toc_max_heading_level: 2
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
-#### 2022년 12월 14일
+#### December 14, 2022
 
--   <Status>Fixed</Status> UDP 서버가 중지된 상태에서 CPU 사용량이 증가하는 현상 수정
+-   <Status>Fixed</Status> Fixed the problem where the CPU usage increases while the UDP server is stopped.
 
-    UDP 서버가 중지된 상태(whatap-agent 서비스가 중지)에서 Golang 모니터링을 적용한 애플리케이션의 CPU 부하가 증가합니다. UDP 서버 접속 및 종료 처리가 반복되면서 UDP 연결이 여러 개 유지되어 CPU 사용량이 증가하였습니다.
+    While the UDP server is stopped (whatap-agent service stopped), the CPU load of the application with the Golang monitoring applied increases. As the UDP server access and shutdown processes were repeated, multiple UDP connections were maintained, resulting in the increase of CPU usage.
 
--   <Status>New</Status> k8s.io/client-go/kubernetes 라이브러리 지원
+-   <Status>New</Status> The k8s.io/client-go/kubernetes library has been supported.
 
-    [참조 예제](https://github.com/whatap/go-api-example/tree/main/k8s.io/client-go/kubernetes)
+    [Reference example](https://github.com/whatap/go-api-example/tree/main/k8s.io/client-go/kubernetes)
 
     ```go title='golang'
     import (
@@ -35,7 +35,7 @@ import UI from '@site/src/components/UItext';
         return nil, err
       }
 
-      // whatap roundTripper 함수를 설정합니다. 
+      // Set the whatap roundTripper function. 
       config.WrapTransport = wRT.WrapRoundTripper()
 
       clientset, err := kubernetes.NewForConfig(config)
@@ -49,9 +49,9 @@ import UI from '@site/src/components/UItext';
     }
     ```
 
--   <Status>New</Status> github.com/gofiber/fiber/v2 라이브러리 지원
+-   <Status>New</Status> The github.com/gofiber/fiber/v2 library has been supported.
 
-    [참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/gofiber/fiber)
+    [Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/gofiber/fiber)
 
     ```go title='golang'
     import (
@@ -73,16 +73,16 @@ import UI from '@site/src/components/UItext';
 
       r.Use(recover.New())
 
-      // whatapfiber의 middleware를 등록합니다.
+      // Register the middleware of whatapfiber.
       r.Use(whatapfiber.Middleware())
       
       ...
     }
     ```
 
--   <Status>New</Status> github.com/valyala/fasthttp 라이브러리 지원
+-   <Status>New</Status> The github.com/valyala/fasthttp library has been supported.
 
-    [참조 예제](https://github.com/whatap/go-api-example/tree/main/github.com/valyala/fasthttp)
+    [Reference example](https://github.com/whatap/go-api-example/tree/main/github.com/valyala/fasthttp)
 
     ```go title='golang'
     import (
@@ -104,7 +104,7 @@ import UI from '@site/src/components/UItext';
 
       r.Use(recover.New())
 
-      // 래퍼 (Wrapper) 함수 whatapfasthttp.Func을 사용합니다. 
+      // Use the wrapper function, whatapfasthttp.Func. 
       r.GET("/", whatapfasthttp.Func(func(ctx *fasthttp.RequestCtx) {
         ...
       }))

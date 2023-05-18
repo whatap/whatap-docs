@@ -11,50 +11,49 @@ tags:
 
 Home > Select Project > **_REPORT_**
 
-와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 프로젝트 메뉴 하위에 **_보고서_**를 선택하세요. 보고서 화면에서 ![down-arrow](/img/down-arrow.svg) 버튼을 클릭하면 일간, 주간, 월간으로 분류된 각종 분석 보고서를 확인할 수 있습니다.
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_REPORT_** under Project Menu. If you click ![down-arrow](/img/down-arrow.svg) on the report screen, you can see various analysis reports categorized by daily, weekly, and monthly.
 
 ## **_Daily Server Report_**
 
-**_일간 서버 보고서_**는 하루 동안의 서버 자원 사용량을 확인할 수 있는 보고서입니다. 시작일, 시작 시간, 종료 시간을 직접 설정하여 조회할 수 있습니다.
+In **_Daily Server Report_**, you can see the usage of server resources for the day. You can search by setting the start date, start time, and end time.
 
 ### Summary
 
 ![](https://img.whatap.io/media/images/server_daily_report_01.png)
 
-프로젝트 이름과 호스트 수, 발생한 알림 건수를 요약해서 볼 수 있습니다. 호스트 건수와 알림 건수의 경우 전날과 비교하여 얼마나 변동이 있었는지를 함께 확인할 수 있습니다.
+You can see a summary of project names, number of hosts, and number of alerts. For the numbers of hosts and notifications, you can see how much has changed compared to the previous day.
 
--   **호스트 건수** : 조회 기간 동안의 총 서버 개수입니다.
--   **알림 건수** : 조회 기간 동안 발생한 알림의 전체 건수입니다.
+-   **Host Count**: Total number of servers during the query period
+-   **Alert Count**: Total number of alerts during the query period
 
 ### Server List
 
 ![](https://img.whatap.io/media/images/server_daily_report_02.png)
 
-서버별로 일간 주요 지표들을 확인할 수 있습니다. CPU 최댓값(CPU Max)과 메모리 최댓값(MEM Max)의 경우 해당 수치가 발생된 시간을 함께 표시합니다.
+You can check the daily key metrics for each server. In case of the maximum CPU (CPU Max) and maximum memory (MEM Max), the time at which the corresponding figures are displayed appears together.
 
 The numbers of alerts can be compared by retrieving data of 7 days ago, 1 day ago, and the day of inquiry.
 
-:::note
-CPU, 메모리의 평균, 최댓값이 90% 이상인 경우 <span class='loger'>빨간색</span>으로 표시됩니다.
+:::note<span class='loger'>Red</span> appears when the average and maximum values for CPU and memory are above 90%.
 :::
 
 ### Alert History
 
 ![](https://img.whatap.io/media/images/server_daily_report_03.png)
 
-조회한 시간 동안 발생한 알림 기록에 대해 발생 시간, 등급, 발생한 서버 이름, 해당 알림이 발생한 원인을 확인할 수 있습니다.
-각 알림에 대한 상세 정보는 **_경고 알림_** > **_이벤트 기록_** 메뉴에서 조회할 수 있습니다.
-해당 프로젝트에 대해 알림 기록이 없는 경우 '해당 기간에 데이터가 존재하지 않습니다'라는 안내 문구가 뜰 수 있습니다.
+You can check the occurrence time, rating, server name, and cause of the alert in the notification history during the query period.
+For more information about each alert, see **_Alert_** > **_Event History_**.
+If there is no alert record for the project, the message, "No data exists for that period," may appear.
 
 :::note
-알림의 레벨에 따라 <span class='loger'>Critical</span>은 <span class='loger'>빨간색</span>, <span class='wer'>Warning</span>은 <span class='wer'>주황색</span>, <span class='mstop'>Info</span>는 <span class='mstop'>회색</span>으로 표시됩니다.
+According to the notification level, <span class='loger'>Critical</span> notifications appear in <span class='loger'>red</span>, <span class='wer'>Warning</span> notifications <span class='wer'>orange</span>, and <span class='mstop'>Info</span> notifications <span class='mstop'>gray</span>.
 :::
 
 ## **_Weekly Server Report_**
 
-**_주간 서버 보고서_**는 일주일간 서버의 CPU, Memory 사용량을 확인할 수 있는 보고서입니다.
-시작일을 직접 설정할 수 있으며, 조회 당일 기준 7일 전부터 조회 가능합니다.
-시작일로부터 7일간의 데이터를 조회합니다.
+In **_Weekly Server Report_**, you can see the usage of server CPU and memory for the week.
+You can enter the start date and see from 7 days prior to the day of inquiry.
+It searches data for 7 days from the start date.
 
 ### Total resource usage list
 
@@ -62,14 +61,14 @@ CPU, 메모리의 평균, 최댓값이 90% 이상인 경우 <span class='loger'>
 
 ![](https://img.whatap.io/media/images/server_weekly_report_01.png)
 
-조회 기간 동안 각 서버의 CPU 사용률을 일별로 조회합니다.
-조회되는 항목으로는 CPU 평균, 최대 95%, 최댓값이 있으며, 각 수치는 백분율로 표시됩니다.
+It views the CPU utilization for each server by day during the query period.
+Queried items are CPU average, 95% of maximum, and maximum. Each value is represented as a percentage.
 
 :::note 
 
-**최대 95%**
+**95% of maximum**
 
-상위 5% 데이터를 제외한 최댓값을 의미합니다. 서버 재기동 등의 이유로 인해 순간적으로 높게 나온 수치를 제외하고 보기 위함입니다.
+It indicates the maximum value excluding the top 5% data. This is used to exclude the momentary high figures due to any reason such as server restart.
 
 :::
 
@@ -77,26 +76,26 @@ CPU, 메모리의 평균, 최댓값이 90% 이상인 경우 <span class='loger'>
 
 ![](https://img.whatap.io/media/images/server_weekly_report_02.png)
 
-조회 기간 동안 각 서버의 메모리 사용량을 일별로 조회합니다.
-조회되는 항목으로는 메모리 사용 평균값, 최댓값이 있으며, 각 수치는 백분율로 표시됩니다.
+It views the memory usage for each server by day during the query period.
+Queried items are memory average and maximum value. Each value is represented as a percentage.
 
 #### Disk
 
 ![](https://img.whatap.io/media/images/server_weekly_report_03.png)
 
-조회 기간 동안 각 서버에 마운트 된 파일 시스템별 지표입니다.
-마운트 위치와 전체 디스크, 사용률을 조회하며 각 수치는 백분율로 표시됩니다.
+Metrics per file system mounted on each server during the query period.
+It views the mount location, total disk size, and utilization. Each value is represented as a percentage.
 
 :::note
 
 -   If the value is 90% or more, it is displayed in <span class='loger'>red</span>. 
--   그룹명에는 `okindName`이 표시되며, `okindName`을 설정하지 않은 경우 빈칸으로 표시될 수 있습니다.
-    :::
+-   `okindName` appears in the group name, and may be blank if `okindName` is not set.
+:::
 
 ## **_Monthly Server Report_**
 
-**_월간 서버 보고서_**는 한 달 동안의 서버의 자원 사용량 및 정보를 확인할 수 있는 보고서입니다.
-시작일을 직접 설정할 수 있으며, 조회 당일 기준 30일 전부터 조회 가능합니다.
+In **_Monthly Server Report_**, you can see the usage and data of server resources for the month.
+You can enter the start date and see from 30 days prior to the day of inquiry.
 
 ### Summary
 
@@ -104,10 +103,10 @@ CPU, 메모리의 평균, 최댓값이 90% 이상인 경우 <span class='loger'>
 
 You can see the aggregate the usage of server resources for the month.
 
--   **전체 호스트** : 조회 기간 동안의 총 서버 개수입니다.
--   **전체 코어** : 조회 기간 동안 사용된 총 코어 개수입니다.
--   **전체 디스크** : 조회 기간 동안 마운트 된 총 파일 시스템 크기입니다.
--   **전체 알림** : 조회 기간 동안 발생한 알림의 전체 건수입니다.
+-   **All Hosts**: Total number of servers during the query period
+-   **All Cores**: Total number of cores during the query period
+-   **All Disks**: Size of the mounted file systems for the query period
+-   **All Alert**: Total number of alerts during the query period
 
 ### Server Info
 

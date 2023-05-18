@@ -23,13 +23,13 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 | ------ | --------------------------------------------------------------------------------- |
 | stime  | 開始時間UTC（UNIX epoch time、 millisecond）                                             |
 | etime  | 終了時間UTC（UNIX epoch time、 millisecond）                                             |
-| filter | 基本的に「m5」で自動設定されます。時間範囲内に5分の統計を取得する際に「m5」を使用します。<br/>5秒の統計は「s5」、1時間の統計は「h1」を使用します。 |
+| filter | 基本的に`m5`で自動設定されます。時間範囲内に5分の統計を取得する際に`m5`を使用します。<br/>5秒の統計は`s5`、1時間の統計は`h1`を使用します。 |
 | oid    | 特定のサーバーのみをモニタリングしたい場合は、次を追加してください。                                                |
 
 :::note
 
--   照会時間（「stime」、「etiem」）は1時間以内に制限し、ms（millisecond）単位です。
--   「oid」以外のパラメータは許可しません。
+-   照会時間(`stime`, `etiem`)は1時間以内に制限し、ms（millisecond）単位です。
+-   `oid` 以外のパラメータは許可しません。
 
 :::
 

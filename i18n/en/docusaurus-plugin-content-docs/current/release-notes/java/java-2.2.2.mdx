@@ -4,40 +4,40 @@ title: Java Agent 2.2.2
 toc_max_heading_level: 2
 ---
 
-2022년 12월 21일
+December 21, 2022
 
-## <Status>New</Status> (신기능)
+## <Status>New</Status> (new feature)
 
--   **aws-mysql-jdbc-1.1.1** 추적
+-   **aws-mysql-jdbc-1.1.1** tracing
 
--   **mariadb-java-client-3.0.3** 추적
+-   **mariadb-java-client-3.0.3** tracing
 
--   정규 분포를 활용해 resp90, resp95 응답 시간 메트릭 지표 생성
+-   Generated the resp90 and resp95 response time metrics using the normal distribution.
 
--   `hook_method_ignore_class_patterns` 옵션키 추가: hooking하려는 메서드들 중에서 무시할 class 추가
+-   Addition of the `hook_method_ignore_class_patterns` option key: Added a class to ignore among the methods to hook.
     ```ini title='whatap.conf'
     hook_method_ignore_class_patterns=a.b.c.D
     ```
 
-## <Status>Change</Status> (업데이트)
+## <Status>Change</Status> (update)
 
--   자바 에이전트 로고에 asm api 버전 표시 추가
+-   Added the ASM API version mark to the Java agent logo.
 
--   m**ariadb-java-client-3.0.9**의 ResultSet 추적
+-   Tracing ResultSet of m**ariadb-java-client-3.0.9**
 
--   자바 에이전트 로고에서 R2 제거
+-   Deleted R2 from the Java agent logo.
 
--   프로세스의 cputime 측정을 system time 기준에서 JVM의 nano time으로 수정
+-   Modified the process CPU time measurement from the system time basis to the JVM's nano time basis.
 
--   `hook_method_ignore` 항목에 access$ 메서드를 기본 hooking에서 제외
+-   Excluded the access$ method from the default hooking in the `hook_method_ignore` item.
 
     ```ini title='whatap.conf'
     hook_method_ignore=get,set,access$
     ```
 
--   매시간마다 text reset을 수행할 수 있도록 `text_zip_enabled`의 기본값을 `true`로 수정
+-   Modified the default value of `text_zip_enabled` to `true` to perform the text reset per hour.
     ```ini title='whatap.conf'
     text_zip_enabled=true
     ```
 
--   tps, 응답시간을 기존 30초 평균에서 5초 평균으로 계산하도록 수정
+-   Modified TPS, the response time to calculate from the 30 seconds' average to 5 seconds' average.

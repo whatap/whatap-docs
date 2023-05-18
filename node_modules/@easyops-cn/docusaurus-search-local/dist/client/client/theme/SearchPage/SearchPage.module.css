@@ -26,7 +26,7 @@
   margin: 0.5rem 0px 0px;
 }
 
-.searchResultItemPath::after {
+span.searchResultItemPath::after {
   content: " › ";
 }
 

@@ -1,22 +1,22 @@
 1.  ドッカー（Docker）ビルドディレクトリを作成してください。
 
-```bash
-mkdir -p {Docker build Dir}
-```
+    ```bash
+    mkdir -p {Docker build Dir}
+    ```
 
-1.  _whatap.conf_ファイルを作成してください。
+1.  _whatap.conf_ファイルを作成します。
 
-```bash
-cat >{Docker build Dir}/whatap.conf <<EOL
-whatap.server.host={収集サーバーのIP}
-EOL
-```
+    ```bash
+    cat >{Docker build Dir}/whatap.conf <<EOL
+    whatap.server.host={収集サーバーのIP}
+    EOL
+    ```
 
-  :::note
+    :::note
 
-  _whatap.conf_ファイルは、ユーザークKubernetes環境のConfigMap機能で管理できます。
+    _whatap.conf_ファイルは、ユーザークKubernetes環境のConfigMap機能で管理できます。
 
-  :::
+    :::
 
 1.  Dockerfileにエージェントインストール用のイメージをダウンロードするには、直接そのファイルをダウンロードしたり、エージェントファイルをイメージからコピーしてください。
 
@@ -72,27 +72,27 @@ EOL
 
     :::
 
-4.  Dockerをビルドしてください。
+4.  Dockerをビルドします。
 
-```docker
-cd docker
-docker build -t $Image_Name.
-```
+    ```docker
+    cd docker
+    docker build -t $Image_Name.
+    ```
 
-1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定してください。アプリケーションエージェントに必要な環境変数情報を入力してください。
+1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-  `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。もしデプロイメント名に設定すると、該当するPodをグループ化します。
+    `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。もしデプロイメント名に設定すると、該当するPodをグループ化します。
 
-```bash showLineNumbers {8-9}
-env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
-  - name: OKIND
-    value: {業務種類名またはDeployment名}
-  - name: license
-    value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
-```
+    ```bash showLineNumbers {8-9}
+    env:
+      - name: NODE_IP
+        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+      - name: NODE_NAME
+        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+      - name: POD_NAME
+        valueFrom: {fieldRef: {fieldPath: metadata.name}}
+      - name: OKIND
+        value: {業務種類名またはDeployment名}
+      - name: license
+        value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
+    ```

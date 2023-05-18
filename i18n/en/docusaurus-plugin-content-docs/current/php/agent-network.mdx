@@ -11,11 +11,11 @@ tags:
 
 The following provides the method how to set the communication for the PHP application server.
 
--   **whatap.server.host**<span class='type'>ip_address</span><br/>
+-   **whatap.server.host**<span class='type'>ip\_address</span><br/>
       Default `127.0.0.1,127.0.0.1`<br/>
       Set the server to transfer the data collected by the agent. If there are multiple IPs due to the collection server redundancy, they can be specified by separating with comma (,). The collection server's proxy daemon must be serviced in the listening state for the specified IP.
 
--   **whatap.server.port**<span class='type'>tcp_port</span><br/>
+-   **whatap.server.port**<span class='type'>tcp\_port</span><br/>
       Default `6600`<br/>
       Set the collection server's port. Because only one port can be specified, the collection servers specified in whatap_server_host must use the same port.
 
@@ -31,10 +31,11 @@ The following provides the method how to set the communication for the PHP appli
       Default `5242880`<br/>
       Set the maximum size of the data to send to the collection server at one time.
 
--   **whatap.net_udp_port** <span class='type'>tcp_port</span>
+-   **whatap.net_udp_port**<span class='type'>tcp\_port</span><br/>
+        Default `6600`<br/>
+        The WhaTap agent transfers the data collected from the tracer through UDP communication to the collection server. You can specify the port of the first UDP server. If the provided port 6600 is in use, you can use this option. If you have a whatap entry in _php.ini_ by a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+    :::note
 
-    Default `6600`
+    The setting is applied after Apache and PHP-FPM have been restarted.
 
-    The WhaTap agent transfers the data collected from the tracer through UDP communication to the collection server. You can specify the port of the first UDP server. If the provided port 6600 is in use, you can use this option. If you have a whatap entry in _php.ini_ by a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
-    
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::

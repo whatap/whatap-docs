@@ -1,6 +1,6 @@
 ## PHP拡張モジュールおよびwhatap-phpサービスの手動設定{#extension-modul-manual-setting}
 
-PHP拡張モジュールとwhatap-phpサービスのインストールおよび選択インストール(_install.sh_)が正常に行われない場合、手動で設定する方法を説明します。PHPコンパイルインストールなどの理由で環境情報が確認できない場合に使用してください。
+PHP拡張モジュールとwhatap-phpサービスのインストールおよびオプションのインストール(_install.sh_)が正しく動作しない場合の手動で設定する方法を説明します。PHPコンパイルのインストールなど、環境情報が確認できない場合に使用してください。
 
 ### whatap.ini作成
 
@@ -13,18 +13,18 @@ $ vi /usr/whatap/php/whatap.ini
 extension=whatap.so
 whatap.license=            # 発行されたアクセスキー
 whatap.server.host=        # #発行されたサーバーIP
-whatap.app_name=           # Webサーバー区分APHP、FPHP（apache : APHP, php-fpm : FPHP）
-whatap.app_process_name=   # apache, php-fpmのプロセス名（httpd,php-fpm）
+whatap.app_name=           # Webサーバー区分APHP、FPHP (apache : APHP, php-fpm : FPHP)
+whatap.app_process_name=   # apache, php-fpmのプロセス名(httpd,php-fpm)
 ```
 
-| 設定                      | 説明                                                                                                     |
-| ----------------------- | ------------------------------------------------------------------------------------------------------ |
-| whatap.license          | **_プロジェクトメニュー_** > **_管理_** > **_エージェントインストール_**ページで発行されたアクセスキーを確認できます。                                |
-| whatap.server.host      | **_プロジェクトメニュー_** > **_管理_** > **_エージェントインストール_**ページで発行されたサーバーのIPを確認できます。                               |
-| whatap.app_name         | Apacheサーバーは`APHP`、php-fpmは`FPHP`を使用します。                                                                |
-| whatap.app_process_name | Apacheまたはphp-fpmの実行プロセス名設定で正確なプロセス名を入力すると、そのプロセスの使用メモリを収集します。例として`httpd`、`apache2`、`php-fpm`などが挙げられます。 |
+| 設定                      | 説明                                                                                                               |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| whatap.license          | **_プロジェクトメニュー_** > **_管理_** > **_エージェントインストール_**ページで発行されたアクセスキーを確認できます。                                          |
+| whatap.server.host      | **_プロジェクトメニュー_** > **_管理_** > **_エージェントインストール_**ページで発行されたサーバーのIPを確認できます。                                         |
+| whatap.app_name         | Apacheサーバーは、`APHP`を使用し、php-fpmは、`FPHP`を使用します。                                                                    |
+| whatap.app_process_name | Apacheまたはphp-fpmで実行可能なプロセス名を設定して正しいプロセス名を入力すると、そのプロセスに使用されるメモリが収集されます。例として、`httpd`、`apache2`、`php-fpm`などが挙げられます。 |
 
-### PHPコマンド（CLI）パスの確認{#check-php-cli-path}
+### PHPコマンド(CLI) パスの確認{#check-php-cli-path}
 
 ```bash
 $ which php
@@ -32,9 +32,9 @@ $ which php
 /usr/bin/php
 ```
 
-### whatap-phpのサービス環境変数設定
+### whatap-phpのサービス環境変数の設定
 
-`$WHATAP_PHP_BIN`環境変数にPHP CLIコマンドパスを設定してください。
+`$WHATAP_PHP_BIN`環境変数にPHP CLIコマンドパスを設定します。
 
 ```bash
 $ sudo vi /etc/init.d/whatap-php
@@ -44,7 +44,7 @@ export WHATAP_PHP_BIN=    # PHP コマンドの位置(/usr/bin/php)
 
 ### PHP APIバージョンの確認
 
-`$WHATAP_PHP_BIN`環境変数にPHP CLIコマンドパスを設定してください。
+`$WHATAP_PHP_BIN`環境変数にPHP CLIコマンドパスを設定します。
 
 ```bash
 $ sudo php -i | grep 'PHP API'
@@ -52,7 +52,7 @@ $ sudo php -i | grep 'PHP API'
 PHP API => 20100412
 ```
 
-### PHP ZTS（Zend Thread Safe）サポート有無の確認
+### PHP ZTS(Zend Thread Safe) サポート有無の確認
 
 ```bash title=apache
 $ sudo apachectl -V | grep MPM
@@ -68,7 +68,7 @@ Thread Safety => disabled       # ZTS非対応
 Thread Safety => enabled       	# ZTS対応
 ```
 
-### PHP拡張モジュールパス確認および設定
+### PHP拡張モジュールのパスを確認して設定
 
 #### PHP拡張モジュールパスの確認{#check-php-extension-module}
 
@@ -80,15 +80,15 @@ extension_dir => /usr/lib64/php/modules => /usr/lib64/php/modules
 
 #### PHP拡張モジュールの設定
 
-PHP APIバージョン、PHP ZTSの対応有無を確認して、環境に適したライブラリを選択してください。PHP拡張モジュール（PHP Extension module）パスに_whatap.so_ファイル名をコピーしてください。
+PHP APIバージョン、PHP ZTSのサポートを確認して、環境に適したライブラリを選択してください。PHP拡張モジュール(PHP Extension module) パスに_whatap.so_ファイル名をコピーします。
 
--   PHP ZTSに対応している場合 - _whatap_zts\_[PHP APIバージョン].so_
--   PHP ZTSに対応していない場合 - _whatap\_[PHP APIバージョン].so_
+-   PHP ZTSにサポートされている場合 - _whatap_zts\_[PHP APIバージョン].so_
+-   PHP ZTSにサポートされていない場合 - _whatap\_[PHP APIバージョン].so_
     ```bash title='PHP ZTS 지원하지 않을 경우 예시'
     $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
     ```
 
-#### whatap-phpのサービス環境変数設定
+#### whatap-phpのサービス環境変数の設定
 
 ```bash
 $ sudo vi /etc/init.d/whatap-php
@@ -98,12 +98,12 @@ export WHATAP_PHP_EXT_SRC=    # WhaTapライブラリパスおよびファイル
                               # (/usr/whatap/php/modules/x64/whatap_20100412.so)]
 ```
 
-1.  `$WHATAP_PHP_EXT_HOME`環境変数にPHP拡張モジュールパスを設定してください。
-2.  `$WHATAP_PHP_EXT_SRC`環境変数にWhaTapライブラリ全体のファイルパスを設定してください。
+1.  `$WHATAP_PHP_EXT_HOME`環境変数にPHP拡張モジュールパスを設定します。
+2.  `$WHATAP_PHP_EXT_SRC`環境変数にWhaTapライブラリ全体のファイルパスを設定します。
 
 ### whatap.ini設定{#php-ini-path}
 
-1.  PHP追加のini設定パスを確認してください。
+1.  PHP追加のini設定パスを確認します。
 
     ```bash
     $ sudo php -i | grep '.ini files'
@@ -111,7 +111,7 @@ export WHATAP_PHP_EXT_SRC=    # WhaTapライブラリパスおよびファイル
     Scan this dir for additional .ini files => /etc/php.d
     ```
 
-2.  _whatap.ini_を該当パスにコピーしてください。
+2.  _whatap.ini_をそのパスにコピーします。
 
     ```bash
     $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini

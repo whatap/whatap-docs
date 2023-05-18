@@ -24,7 +24,11 @@ tags:
 -   **whatap.mtrace_spec** <span class='type'>String</span><br/>
        Default `v1`<br/>
        Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics.
-    {@include: ../common-items/_php-restart-apply.mdx}
+    :::note
+
+    The setting is applied after Apache and PHP-FPM have been restarted.
+
+    :::
 
 -   **whatap.stat_mtrace_max_count** <span class='type'>Int</span><br/>
       Default `7000`<br/>

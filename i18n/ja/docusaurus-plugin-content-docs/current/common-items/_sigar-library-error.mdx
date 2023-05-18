@@ -1,12 +1,12 @@
 ## Sigar libraryをロードできない場合
 
-<em>$WHATAP_HOME/lib1/*.so</em>ファイルに実行権限があるか確認してください。権限がない場合は、実行権限を付与してください。
+<em>$WHATAP_HOME/lib1/*.so</em>ファイルに実行権限があることを確認してください。アクセス権限がない場合は、実行するアクセス権限を付与してください。
 
 ```bash
 $ sudo chmod +x *.so
 ```
 
-AIX7で_$WHATAP_HOME/lib1_の下位に_libsigar-ppc64-aix-7.so_ファイルがなくてエラーが発生した場合は、ファイルをコピーしてください。
+AIX7で_$WHATAP_HOME/lib1_以下の階層に_libsigar-ppc64-aix-7.so_ファイルが存在しないエラーが発生した場合は、そのファイルをコピーしてください。
 
 ![Sigar library error on AIX 7](/img/troubleshooting-sigar-error.png)
 

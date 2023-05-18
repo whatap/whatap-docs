@@ -2,19 +2,17 @@
 id: support-env
 title: サポート環境
 displayed_sidebar: indexSidebar
-description: WhaTapモニタリングサービスの対応環境に関する説明です。
+description: WhaTapモニタリングサービスのサポート環境の説明です。
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<!-- 공통 문구 -->
-
 {@include: getting-started/_support-common.mdx}
 
 {@include: getting-started/_env-note.mdx}
 
----
+* * *
 
 ## アプリケーションモニタリング
 
@@ -27,7 +25,7 @@ import TabItem from '@theme/TabItem';
 | .NET    | .NET Framework 4.5以降      |
 | Golang  | Golang 1.14バージョン以降        |
 
----
+* * *
 
 ## サーバーモニタリング
 
@@ -47,11 +45,11 @@ import TabItem from '@theme/TabItem';
 | Windows | Windows 2008 R2以降     |
 | ^       | Windows 7 SP1バージョン以降  |
 
----
+* * *
 
 ## DBモニタリング
 
-### データベースの種類別対応バージョン
+### データベースの種類でサポートされているバージョン
 
 | 環境        | サポート環境            |
 | --------- | ----------------- |
@@ -67,7 +65,11 @@ import TabItem from '@theme/TabItem';
 | PostgeSQL | EBD 9.2以降         |
 
 :::note
-DBモニタリングを適用する際、DB Metadata（Dictionary、 performance_schema）の照会権限のあるモニタリング用アカウントが必要です。
+
+-   DBモニタリングを適用する場合、DB Metadata(Dictionary、 performance_schema) の参照権限のあるモニタリング用アカウントが必要です。
+
+-   XOS 에이전트는 x86 아키텍쳐 기반에서 동작하는 OS 환경에만 적용할 수 있습니다.
+
 :::
 
 ### 対応機能の比較{#compare-db}
@@ -126,9 +128,9 @@ DBモニタリングを適用する際、DB Metadata（Dictionary、 performance
 
 </div>
 
----
+* * *
 
-## クバネティスモニタリング
+## Kubernetesモニタリング
 
 | 環境        | サポート環境                                             |
 | --------- | -------------------------------------------------- |
@@ -142,14 +144,14 @@ DBモニタリングを適用する際、DB Metadata（Dictionary、 performance
 | PaaS-TA   | PaaS-TA 1.16 ~ 1.23                                |
 | plugins項目 | istio, GPU                                         |
 
----
+* * *
 
 ## クラウドモニタリング
 
-次のAWS対応Namespace一覧を確認してください。 
+次に、AWSでサポートされているNamespace一覧を確認してください。 
 
 <details>
-<summary>AWS対応Namespace一覧</summary>
+<summary>AWSサポートNamespace一覧</summary>
 
 -   AWS ACMPrivateCA
 -   AWS AmazonMQ
@@ -256,11 +258,11 @@ DBモニタリングを適用する際、DB Metadata（Dictionary、 performance
 
 </details>
 
----
+* * *
 
 ## ログモニタリング
 
-Java、PHP、Python、Serverアプリケーションでログ収集が可能です。エージェント対応バージョンについては、以下を確認してください。
+Java、PHP、Python、Serverアプリケーションでログを収集できます。 エージェントの対応バージョンについては、以下を確認してください。
 
 | 環境     | 対応バージョン                   |
 | ------ | ------------------------- |
@@ -269,7 +271,13 @@ Java、PHP、Python、Serverアプリケーションでログ収集が可能で�
 | Python | Python Agent 1.2.2バージョン以降 |
 | Server | Server Agent 2.1.2バージョン以降 |
 
----
+* * *
+
+## ブラウザー（Browser）モニタリング
+
+{@include: common-items/_browser-compatibility.mdx}
+
+* * *
 
 ## 拡張ツール
 
@@ -283,7 +291,7 @@ Java、PHP、Python、Serverアプリケーションでログ収集が可能で�
 | Telegraf | Telegraf 1.3以降     |
 
 :::note
-Telegrafは、socket_writer ouput pluginに対応するバージョンに限って可能です。
+Telegrafは、socket_writer ouput pluginをサポートするバージョンのみ使用できます。
 :::
 
 ### Focus
@@ -300,22 +308,22 @@ Telegrafは、socket_writer ouput pluginに対応するバージョンに限っ�
 | OSX             | Lion 10.7以降          |
 | Raspberry Pi OS | 8以降                  |
 
----
+* * *
 
 ## 対応ブラウザー
 
 {@include: getting-started/_supported-browser.mdx}  
 
----
+* * *
 
 ## ファイアウォール
 
 {@include: getting-started/_proxy.mdx} 
 
----
+* * *
 
 ## モバイルアプリ
 
 {@include: getting-started/_mobile-app.mdx}  
 
----
+* * *

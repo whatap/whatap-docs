@@ -8,10 +8,10 @@ To automatically install the PHP extension module and whatap-php service, apply 
 ```bash title=SH
 $ sudo /usr/whatap/php/install.sh
 Input license key
-xxxxxxxxxxxxxxxx                          # 발급된 액세스 키 입력
+xxxxxxxxxxxxxxxx                          # Enter the generated access key
 
 Input whatap.server.host
-192.x.x.x                                  # 발급된 서버 IP 입력
+192.x.x.x                                  # Enter the generated server IP
 ```
 
 If the PHP extension module and whatap-php service are not recognized automatically, proceed with optional installation as the following.
@@ -22,16 +22,16 @@ If Apache commands (`apachectl`, `httpd`, `apache2`) and PHP commands (CLI) have
 $ sudo /usr/whatap/php/install.sh manual
 
 Input license key
-xxxxxxxxxxxxxxxx                            # 발급된 액세스 키 입력
+xxxxxxxxxxxxxxxx                            # Enter the granted access key
 
 Input whatap.server.host
-192.x.x.x                                    # 발급된 서버 IP 입력
+192.x.x.x                                    # Enter the granted server IP
 
 Input : which apache or php-fpm ex)/usr/sbin/httpd, /usr/sbin/apache2, /usr/sbin/php-fpm ...
-/usr/sbin/httpd                             # apache 및 php-fpm 명령어 위치 입력
+/usr/sbin/httpd                             # Enter the locations for apache and php-fpm commands
 
 Input : which php ex) /usr/bin/php, /usr/bin/php5, /usr/bin/php70 ...
-/usr/bin/php5                                # php 명령어 위치 입력
+/usr/bin/php5                                # Enter the location of the php command
 ```
 
 #### Configuration script (install.sh)
@@ -67,49 +67,32 @@ Options
                            --php-zts
 ```
 
--   **license**<br/>
-      발급된 액세스 키 입니다.
+-   **license**\
+      Granted access key.
 
--   **server**<br/>
+-   **server**\
       Granted server IP.
 
--   **php version**<br/>
+-   **php version**\
       Server-installed PHP version(5.2. 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0).
 
--   **php config file**<br/>
-      Set the full path of php.ini installed on the server (*/etc/php.ini*). Proceed with the configuration of the PHP extension.
+-   **php config file**\
+      Set the full path of php.ini installed on the server (_/etc/php.ini_). Proceed with the configuration of the PHP extension.
 
--   **php cli**<br/>
-      Using the executable command on the command line in the PHP command's full path (*/usr/bin/php*), you can check the basic PHP environment.
+-   **php cli** 
+      Using the executable command on the command line in the PHP command's full path (_/usr/bin/php_), you can check the basic PHP environment.
 
--   **process name**<br/>
+-   **process name**\
       Apache running process name (`httpd`, `apache2`, `httpd.worker`…) or PHP-FPM running process name (`php-fpm`, `php5-fpm`). It collects the memory data running.
 
--   **zts**<br/>
+-   **zts**\
       It sets whether or not to support Zend Thread Safe. 
-
-<!-- 
-**PHP 버전 지정 설치**
-
-```javascript title=SH
-$ /usr/whatap/php/install.sh -l [발급된 라이센스 key] -s [발급된 서버 IP] -v [PHP 버전 x.x] -i [php.ini의 전체 경로] -p [프로세스명]
-$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
-```
-
-**PHP Cli 명령어 지정 설치**
-
-```javascript title=SH
-$ /usr/whatap/php/install.sh -l [발급된 라이센스 key] -s [발급된 서버 IP] -e [PHP Cli] -p [프로세스명]
-$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php -p apache2
-$ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php-fpm -p php-fpm
-```
--->
 
 <Tabs>
 <TabItem value="phpvs" label="PHP 버전 지정 설치" default>
 
 ```bash title=SH
-$ /usr/whatap/php/install.sh -l [발급된 액세스 키] -s [발급된 서버 IP] -v [PHP 버전 x.x] -i [php.ini의 전체 경로] -p [프로세스명]
+$ /usr/whatap/php/install.sh -l [granted access key] -s [granted server IP] -v [PHP version x.x] -i [full path of php.ini] -p [process name]
 $ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
 ```
 
@@ -117,7 +100,7 @@ $ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini 
 <TabItem value="phcli" label="PHP Cli 명령어 지정 설치">
 
 ```bash title=SH
-$ /usr/whatap/php/install.sh -l [발급된 액세스 키] -s [발급된 서버 IP] -e [PHP Cli] -p [프로세스명]
+$ /usr/whatap/php/install.sh -l [generated access key] -s [generated server IP] -e [PHP Cli] -p [process name]
 $ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php -p apache2
 $ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -e /opt/php/bin/php-fpm -p php-fpm
 ```

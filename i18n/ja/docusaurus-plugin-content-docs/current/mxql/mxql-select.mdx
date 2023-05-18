@@ -84,7 +84,7 @@ TAGLOAD
 :::
 
 :::note
-`OKIND`、`ONODE`コマンドの場合は、`CATEGORY`コマンドで設定したカテゴリに`okind`、`onode`関連フィールド（`okind`、`onode`、`okindName`、`onodeName`）を含める場合に使用できます。**_サイトマップ_**　> ***分析*** > **_メトリクス照会_**メニューでどのカテゴリにどのフィールドが含まれているか確認できます。 
+`OKIND`、`ONODE`コマンドの場合は、`CATEGORY`コマンドで設定したカテゴリに`okind`、`onode`関連フィールド（`okind`、`onode`、`okindName`、`onodeName`）を含める場合に使用できます。**_サイトマップ_**　> **_分析_** > **_メトリクス照会_**メニューでどのカテゴリにどのフィールドが含まれているか確認できます。 
 :::
 
 ## HEADER{#header}
@@ -121,7 +121,7 @@ Flexボードのウィジェットで使用する形式に合わせて渡す必�
     SELECT
     ```
 
--   `etime以前の15秒間のデータを照会(パラメータとして`etime\`を渡す)
+-   `etime`以前の15秒間のデータを照会(パラメータとして`etime`を渡す)
 
     ```sql
     TIME-RANGE {duration:15s, etime:$etime}
@@ -130,7 +130,7 @@ Flexボードのウィジェットで使用する形式に合わせて渡す必�
     SELECT
     ```
 
--   `stime以前の15秒間のデータを照会(パラメータとして`stime\`を渡す)
+-   `stime`以前の15秒間のデータを照会(パラメータとして`stime`を渡す)
 
     ```sql
     TIME-RANGE {duration:15s, stime:$stime}

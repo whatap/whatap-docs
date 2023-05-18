@@ -11,7 +11,7 @@ tags:
 
 {@include: ../common-items/_apm-name-description.mdx}
 
-{@include: ../common-items/_agent-name-warning.mdx}
+{@include: ../common-items/_agent-name-warning.mdx} 
 
 :::note
 
@@ -24,15 +24,8 @@ WhaTapエージェントがアプリケーションサーバーを識別する�
 {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
 ```
 
-<!-- * default: {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips} -->
-
 デフォルトパターンの変更は_whatap.ini_で設定できます。
 
-<!--
-```javascript title='whatap.object_name'
-{type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
-```
--->
 
 <!-- * object_name default: {type}-{ip2}-{ip3}-{process}-{dockerid}-{ips} -->
 
@@ -45,15 +38,29 @@ WhaTapエージェントがアプリケーションサーバーを識別する�
 | dockerid | DockerコンテナID                  |
 | ips      | 全体IPの情報 (ip4、ip6)             |
 
--   **whatap.object_name**<span class='type'>String</span><br/>
-      デフォルト値「{type}-{ip2}-{ip3}-{process}」<br/>
-      アプリケーションを識別するエージェント名（ONAME）体系です。 ONAMEに基づいてOIDが生成されます。<br/>
-    {@include: ../common-items/_php-restart-whatap-service.mdx}
+-   **whatap.object_name**<span class='type'>String</span>
 
--   **whatap.app_name**<span class='type'>String</span><br/>
-        アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名で、「object_name」の「{type}」に該当する値です。<br/>
-    {@include: ../common-items/_php-restart-whatap-service.mdx}
+    デフォルト値`{type}-{ip2}-{ip3}-{process}`
 
--   **whatap.app_process_name**<span class='type'>String</span><br/>
-        アプリケーションを識別するエージェント名（ONAME）システムに使用されるアプリケーションプロセス名で、アプリケーションサーバのCPU、Heap Memoryなどを収集する対象プロセスを設定します。 「object_name」の「{process}」に該当する値です。<br/>
-    {@include: ../common-items/_php-restart-whatap-service.mdx}
+    アプリケーションを識別するエージェント名（ONAME）体系です。 ONAMEに基づいてOIDが生成されます。
+
+  :::note
+  whatap serviceの再起動後に適用されます。`service whatap-php restart`
+  :::
+
+-   **whatap.app_name**<span class='type'>String</span>
+
+  アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名で、`object_name`の`{type}`に該当する値です。
+
+  :::note
+  whatap serviceの再起動後に適用されます。`service whatap-php restart`
+  :::
+
+-   **whatap.app_process_name**<span class='type'>String</span>
+
+  アプリケーションを識別するエージェント名（ONAME）システムに使用されるアプリケーションプロセス名で、アプリケーションサーバのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に該当する値です。
+
+  :::note
+  whatap serviceの再起動後に適用されます。`service whatap-php restart`
+  :::
+

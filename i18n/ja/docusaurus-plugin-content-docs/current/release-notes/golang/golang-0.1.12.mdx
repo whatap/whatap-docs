@@ -40,7 +40,7 @@ tar -xvzf whatap-agent.tar.gz -C /
 
 ### github.com/go-chi/chiライブラリに対応
 
-chiフレームワークのウェブトランザクションを追跡します。「Use」関数でミドルウェアを登録して追跡します。
+chiフレームワークのウェブトランザクションを追跡します。`Use`関数でミドルウェアを登録して追跡します。
 
 #### インストール方法
 
@@ -74,7 +74,7 @@ gorm v2フレームワークを通じて処理されるDB ConnectionおよびSQL
 
 #### whatapgormの使い方
 
-「gorm.Open」関数の代わりに「whatapgorm.OpenWithContext」関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージの「Start」関数を通じて生成することができます。
+`gorm.Open`関数の代わりに`whatapgorm.OpenWithContext`関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージの`Start`関数を通じて生成することができます。
 
 ```go title='설치 안내'
 import (
@@ -164,7 +164,7 @@ gorm v1フレームワークを通じて処理されるDB ConnectionおよびSQL
 
 #### whatapgormの使い方
 
-「gorm.Open」関数の代わりに「whatapgorm.OpenWithContext」関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージのStart関数を通じて生成することができます。
+`gorm.Open`関数の代わりに`whatapgorm.OpenWithContext`関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージのStart関数を通じて生成することができます。
 
 ```go title='설치 안내'
 import (
@@ -258,7 +258,7 @@ func main() {
 
 ### github.com/gomodule/redigoライブラリに対応
 
-redigoフレームワークを通じてredisに渡されるコマンドを追跡します。「redis.Dial」の代わりに「whatapredigo.DialContext」の関数を使用します。
+redigoフレームワークを通じてredisに渡されるコマンドを追跡します。`redis.Dial`の代わりに`whatapredigo.DialContext`の関数を使用します。
 
 ```go title='설치 안내'
 import (

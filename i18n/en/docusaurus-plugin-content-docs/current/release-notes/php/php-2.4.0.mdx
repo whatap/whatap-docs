@@ -19,30 +19,30 @@ PHP 8.1 is supported.
 
 ### cURL header setting data initialization error
 
-`curl_setopt`, `curl_setopt_array` 함수를 통해 HTTP Header 설정(CURLOPT_HTTPHEADER)을 하는 경우, 중복 설정이 되면 이전 정보는 초기화 되고 새로운 정보만 설정됩니다. 
+When setting the HTTP header (CURLOPT_HTTPHEADER) through the `curl_setopt` and `curl_setopt_array` functions, if duplicate settings are made, the previous data is initialized and the new data is set. 
 
-멀티 트랜잭션(`whatap.mtrace_enabled=true`) 설정이 활성화 되면, `curl_exec()` 함수 전에 WhaTap Header 정보를 설정해서 이전 사용자 Header 정보가 초기화 되는 오류가 있습니다. 
+When the multi-transaction (`whatap.mtrace_enabled=true`) setting is enabled, there is an error in which the previous user header data is initialized by setting the Whatap Header data before the `curl_exec()` function. 
 
-`curl_exec()` 함수 호출 전에 WhaTap Header를 설정하는 기능을 삭제 하고 `curl_init()` 함수 호출 후에 설정하도록 수정했습니다. 
+The function to set the WhaTap Header has been removed before calling the `curl_exec()` function and it has been modified to set it after calling the `curl_init()` function. 
 
-`curl_exec()` 함수 호출 전에 사용자 Header를 설정하는 경우 먼저 설정된 WhatTap Header 가 삭제 됩니다. 
+If the user header is set before the `curl_exec()` function is called, the WhatTap header set in advance is deleted. 
 
 To do multi-transaction, add the WhatTap header directly in the PHP source code according to the following guide. 
 
 Sample source code /usr/whatap/php/lib/Whatap/sample_mtrace.php
 
 ```php title='php'
-// Whatap 설치 디렉터리(/usr/whatap/php/lib/Whatap/Whatap.php)  
-// Whatap.php 를 로딩합니다. 
+// Whatap installation directory (/usr/whatap/php/lib/Whatap/Whatap.php)  
+// Load Whatap.php. 
 include_once './Whatap.php';
 
 ...
 
-// 사용자 헤더 정보
+// User header information
 $headers = array();
 array_push($headers, "aaaa:bbbb");
 
-// Whatap 헤더 추가 
+// Add the Whatap header 
 $whatap_mtrace = Whatap::whatap_get_mtrace();
 foreach ($whatap_mtrace as $key => $value){
 	//echo $key."=".$value."<br/>";
@@ -58,5 +58,5 @@ You can adjust the automatic setup function with the following settings:
 
 `whatap.mtrace_auto_inject_enabled=true`  
 
--   `curl_init()` 함수 호출 후 내부적으로 `curl_setopt()`를 호출하면서 whatap header를 설정합니다.
--   `false`: WhaTap Header 자동 설정기능을 중지합니다. 
+-   After calling the `curl_init()` function, the whatap header is set while internally calling `curl_setopt()`.
+-   `false`: The automatic setting for the WhaTap header is stopped. 

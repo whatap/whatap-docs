@@ -13,35 +13,35 @@ import TR from '@site/src/components/TR';
 
 The following guides you to the basic installation method for using the WhaTap Telegraf agent.
 
-Telegraf에서 수집하는 메트릭스를 와탭 수집서버로 전달할 수 있습니다. 수집된 데이터는 whatap의 프로젝트 내부에서 확인 가능합니다. 
-이 페이지에서는 whatap-telegraf 에이전트를 설치하여 Telegraf에서 전달받은 데이터를 수집 서버로 중계하는 방법을 설명합니다. 
+Metrics collected by Telegraf can be forwarded to the WhaTap collection server. The collected data can be checked in the WhaTap's project. 
+This page explains how to install the whatap-telegraf agent to relay the data from Telegraf to the collection server. 
 
-기존에 설치된 Telegraf의 `socket_writer output plugin`을 활성화하여 whatap-telegraf(Local TCP) 에이전트로 데이터를 전달합니다.
+Enable the `socket_writer output plugin` of the installed Telegraf to pass the data to the whatap-telegraf (Local TCP) agent.
 
-와탭 서비스를 사용하기 위해서는 [회원 가입](https://www.whatap.io/ko/signup/) 후 프로젝트를 생성하고 대상 서버에 에이전트를 설치해야 합니다. 회원 가입에 관한 자세한 내용은 [다음 문서](../account/account-manage)를 참조하세요.
+To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), you must create a project and install the agent to the target server. For more information about sign in, see [the following](../account/account-manage).
 
-{@include: ../getting-started/_create-project-v2.mdx}  
+{@include: ../getting-started/_create-project-v2.mdx}
 
 {@include: ../getting-started/_accesskey.mdx}
 
 ## Installation order and file configuration
 
-1.  와탭 **리포지토리**를 설치하세요.
-2.  whatap-telegraf **리눅스 패키지**(yum, apt-get)를 설치하세요.
-3.  **프로젝트 액세스 키** 및 **와탭 서버 정보**를 설정하세요.
-4.  Telegraf의 `socket_writer output plugin`을 설정하여 데이터를 연동하세요.
+1.  Install the WhaTap **repository**.
+2.  Install the whatap-telegraf **Linux package** (yum, apt-get).
+3.  Set the **project access key** and ** WhaTap server information** settings.
+4.  Set the Telegraf's `socket_writer output plugin` to link the data.
 
 <details>
-<summary>Telegraf 에이전트 파일 구성</summary>
+<summary>Configuring the Telegraf agent file</summary>
 
--   **whatap_telegraf**<br/>
-      서비스 실행 파일로 Telegraf에서 전달된 정보를 수집 서버로 전송하는 프로그램입니다.       
--   **/etc/init.d/whatap-telegraf**(FreeBSD /usr/local/etc/whatap_telegraf)<br/>
-      서비스 스크립트입니다.
--   **whatap.conf**<br/>
-      설정 파일입니다. 수집 서버의 주소와 서버의 프로젝트 액세스 키가 입력되는 파일입니다.
--   **whatap-telegraf-#.log**<br/>
-      에이전트 로그 파일입니다. (_/usr/whatap/telegraf/logs_)
+-   **whatap_telegraf** 
+      By using the service running file, this program sends the data from Telegraf to the collection server.       
+-   **/etc/init.d/whatap-telegraf**(FreeBSD /usr/local/etc/whatap_telegraf)\
+      Service script file.
+-   **whatap.conf**\
+      It is the configuration file. This is the file where the address of the collection server and the server's project access key are entered.
+-   **whatap-telegraf-#.log**\
+      Agent log file. (_/usr/whatap/telegraf/logs_)
 
 </details>
 
@@ -50,7 +50,7 @@ Telegraf에서 수집하는 메트릭스를 와탭 수집서버로 전달할 수
 <Tabs>
 <TabItem value="rc" label="Red Hat/CentOS">
 
-1.  와탭 **리포지토리**를 설치하세요.
+1.  Install the WhaTap **repository**.
     ```bash title=SH
     $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
     ```
@@ -60,15 +60,15 @@ Telegraf에서 수집하는 메트릭스를 와탭 수집서버로 전달할 수
     ```
 3.  Run the **configuration script** to start the service.
     ```bash title=SH
-    echo "license=[발급받은 프로젝트 액세스 키]" |sudo tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[와탭 서버 주소]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+    echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
     sudo service whatap-telegraf restart
     ```
 
 </TabItem>
 <TabItem value="du" label="Debian/Ubuntu">
 
-1.  와탭 **리포지토리**를 설치하세요.
+1.  Install the WhaTap **repository**.
     ```bash title=SH
     $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
     $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
@@ -81,15 +81,15 @@ Telegraf에서 수집하는 메트릭스를 와탭 수집서버로 전달할 수
     ```
 3.  Run the **configuration script** to start the service.
     ```bash title=SH
-    echo "license=[발급받은 프로젝트 액세스 키]" |sudo tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[와탭 서버 주소]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+    echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
     sudo service whatap-telegraf restart
     ```
 
 </TabItem>
 <TabItem value="al" label="Amazon Linux">
 
-1.  와탭 **리포지토리**를 설치하세요.
+1.  Install the WhaTap **repository**.
     ```bash title=SH
     $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
     $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
@@ -104,23 +104,23 @@ Telegraf에서 수집하는 메트릭스를 와탭 수집서버로 전달할 수
     ```
 3.  Run the **configuration script** to start the service.
     ```bash title=SH
-    echo "license=[발급받은 프로젝트 액세스 키]" |sudo tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[와탭 서버 주소]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
+    echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
     sudo service whatap-telegraf restart
     ```
 
 </TabItem>
 <TabItem value="fb" label="FreeBSD">
 
-1.  와탭 **리포지토리**를 설치하세요.
+1.  Install the WhaTap **repository**.
     ```bash title=SH
     $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
     $ pkg install whatap-telegraf-0.0.4.txz
     ```
 2.  Run the **configuration script** to start the service.
     ```bash title=SH
-    echo "license=[발급받은 프로젝트 액세스 키]" | tee /usr/whatap/telegraf/whatap.conf
-    echo "whatap.server.host=[와탭 서버 주소]" | tee -a /usr/whatap/telegraf/whatap.conf
+    echo "license=[granted project access key]" | tee /usr/whatap/telegraf/whatap.conf
+    echo "whatap.server.host=[WhaTap server address]" | tee -a /usr/whatap/telegraf/whatap.conf
     sudo service whatap_telegraf restart
     ```
 
@@ -129,7 +129,7 @@ Telegraf에서 수집하는 메트릭스를 와탭 수집서버로 전달할 수
 
 ## Telegraf integration
 
-_Telegraf.conf_에 `socket_writer output plugin` 설정을 하여 whatap-telegraf로 수집된 정보를 전달합니다.
+By setting `socket_writer output plugin` in _Telegraf.conf_, the data collected via whatap-telegraf is sent.
 
 ```toml title='TOML'
 # # Generic socket writer capable of handling multiple socket types.
@@ -142,8 +142,8 @@ _Telegraf.conf_에 `socket_writer output plugin` 설정을 하여 whatap-telegra
     data_format = "json"
 ```
 
--   `[[outputs.socket_writer]]` 주석을 해제합니다.
+-   `[[outputs.socket_writer]]` Uncomment the line
 -   Enter the TCP connection setting in the address field.
 -   Set the data type in json format.
 
-Telegraf 에이전트 설치를 완료했습니다. [다음 문서](agent-troubleshooting)에서 설치 문제 해결 방법을 확인하세요.
+You have finished installation of the Telegraf agent. In [the following](agent-troubleshooting) check the installation troubleshooting.

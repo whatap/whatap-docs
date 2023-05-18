@@ -4,25 +4,123 @@ title: Service 1.100.X
 toc_max_heading_level: 3
 ---
 
-## Service 1.100.7
+## Service 1.100.15
 
-2023년 5월 3일
+2023년 5월 12일
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> > <UI>로그 파서 설정</UI> > <UI>필터 입력</UI> > 필터키의 오타 수정(okineName → okindName)
+### 「Database」
 
--   <Status>Fixed</Status> <UI>로그</UI> > <UI>라이브 테일</UI> 메뉴에서 조회된 로그 데이터가 없는 경우 이전의 로그가 표시되는 현상 수정
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 목록</UI> 메뉴에서 설정한 인스턴스 <UI>별칭</UI>이 다음 메뉴에 적용되지 않는 오류 수정</p>
+
+-   **_대시보드_** > **_인스턴스 목록_**
+
+-   **_대시보드_** > **_멀티 인스턴스 모니터링_**
+
+-   **_분석_** > **_카운트 추이 비교_**
+
+</div>
+
+## Service 1.100.14
+
+2023년 5월 11일
+
+<div class='indentTab'>
+
+### 「共通」
+
+<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> 메뉴에서 탭 이동 시 선택한 조직의 파라미터가 유지되지 않는 현상 수정</p>
+
+* * *
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>노드 상세</UI> 메뉴에서 컨테이너 목록 일부 데이터가 보이지 않는 버그 수정</p>
+
+</div>
+
+## Service 1.100.12
+
+2023년 5월 10일
+
+<div class='indentTab'>
+
+### 「Container」
+
+<p><Status>Deprecate</Status> <UI>대시보드</UI> > <UI>애플리케이션 서비스 대시보드</UI> 메뉴에서 <UI>멀티 서비스 대시보드</UI> 탭 하위 각 그룹 패널의 <UI>서비스별 애플리케이션</UI> 버튼 제거</p>
+
+</div>
+
+## Service 1.100.11
+
+2023년 5월 10일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 슬로우 쿼리 위젯의 차트가 보이지 않는 버그 수정</p>
+
+</div>
+
+## Service 1.100.10
+
+2023년 5월 9일
+
+<div class='indentTab'>
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>컨테이너 맵</UI> 메뉴에서 <b>로그 조회</b> 권한이 없는 사용자가 <UI>컨테이너 Stdout/Stderr</UI> 데이터를 볼 수 없는 버그 수정</p>
+
+</div>
+
+## Service 1.100.9
+
+2023년 5월 9일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> > <UI>히트맵</UI> 위젯을 통해 <b>트랜잭션 상세</b> 화면을 진입할 경우 <b>로그 조회</b> 권한이 있는 멤버에게 <UI>트랜잭션 로그</UI> 탭이 노출되지 않는 현상 수정
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 브라우저 화면의 너비가 특정 크기일 때 가장 오른쪽의 아이콘 버튼이 가려지는 현상 수정
+
+</div>
+
+## Service 1.100.8
+
+2023년 5월 4일
+
+<div class='indentTab'>
+
+### 「Server」
+
+-   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 목록</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+
+-   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 환경 변수</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+
+</div>
+
+## Service 1.100.7
+
+2023년 5월 4일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI> > <UI>ログパーサー設定</UI> > <UI>フィルター入力</UI> > フィルターキーの誤字修正(okineName → okindName)
+
+-   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで照会されたログ データがない場合、以前ログが表示される現象を修正
+
+-   <Status>Change</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI>를 사이드 메뉴에서 제거, <UI>사이트 맵</UI>을 통해서만 접근 가능하도록 변경
 
 </div>
 
 ## Service 1.100.6
 
-2023년 5월 3일
+2023年5月3日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 관리</UI> 메뉴에서 사용자가 설정한 테마에 따라 패널 제목 색상이 변경되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクト管理</UI>メニューでユーザーが設定したテーマによってパネルタイトルの色が変更されないバグを修正</p>
 
 </div>
 
@@ -46,7 +144,7 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status>ログプロファイル照会時、断続的にログが照会されないバグを修正</p>
 
----
+* * *
 
 ### 「Application」
 
@@ -76,13 +174,13 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで<b>Brwoser</b>, <b>Log</b>、<b>Cloud</b>、<b>Amazon ECS</b>製品の場合、ホストカラムデータを表示しないように修正</p>
 
----
+* * *
 
 ### 「Application」
 
 <p><Status>Fixed</Status> <b>Java</b>プロジェクトの<UI>役人</UI> > <UI>エージェントインストール</UI> メニューでエージェントダウンロードコマンドの誤字を修正</p>
 
----
+* * *
 
 ### 「Database」
 
@@ -100,13 +198,13 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューで案内メッセージのリンクをクリックすると空のページに移動する問題を修正</p>
 
----
+* * *
 
 ### 「Container」
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
----
+* * *
 
 ### `ECS`
 
@@ -124,7 +222,7 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータの照会時にデータが出力されない問題を修正</p>
 
----
+* * *
 
 ### `Browser`
 
@@ -142,7 +240,7 @@ toc_max_heading_level: 3
 
 <p><Status>New</Status>Browserモニタリングサービスをオープンします。 たくさんのご利用をお待ちしております。 Browserモニタリングの詳細については、<a href='../../browser'>次の文書</a>を参考にしてください。</p>
 
----
+* * *
 
 ### 「共通」
 
@@ -214,7 +312,7 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> MXQLデータ照会後、CSVがダウンロードされない問題を修正</p>
 
----
+* * *
 
 ### 「Application」
 
@@ -236,7 +334,7 @@ toc_max_heading_level: 3
 
 -   <Status>Change</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>検索値の有効性チェックロジックを追加
 
----
+* * *
 
 ### 「Server」
 
@@ -244,13 +342,13 @@ toc_max_heading_level: 3
 
 -   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンパウンドアイ</UI>メニューの<UI>更新間隔（秒）</UI>に24桁以上の数字を入力すると、Topology Viewが描かれないバグを修正
 
----
+* * *
 
 ### 「Container」
 
 -   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI> > <img src='/img/ico-setting.svg' alt='설정 아이콘'/>ボタン > <UI>1分以内に生成されたコンテナを表示する</UI>オプションの追加：生成から1分以内のコンテナの場合、明るい色で表示
 
----
+* * *
 
 ### `CloudWatch`、`NCP`、`OCI`、`Azure`
 
@@ -262,7 +360,7 @@ toc_max_heading_level: 3
 
     -   `CloudWatch`インストール案内ページがスクロールに隠さずにすぐ表示されるように説明部分の高さを修正
 
----
+* * *
 
 ### `OCI`、`Cloud Monitoring`
 
@@ -270,7 +368,7 @@ toc_max_heading_level: 3
 
 -   <Status>Fixed</Status> <UI>管理</UI> > <UI>クラウドモニタリング</UI> > <UI>Oracle Cloud Monitor</UI>タブで<b>RSA Public Key</b>生成時、認証情報が登録されていない状態でも登録済みとして区分されるバグを修正
 
----
+* * *
 
 ### `ECS`
 

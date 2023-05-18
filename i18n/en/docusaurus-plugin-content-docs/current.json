@@ -395,10 +395,6 @@
     "message": "Learn about the main features",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar postgreSidebar"
   },
-  "sidebar.postgreSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "Checking the real-time DB performance metrics",
-    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar postgreSidebar"
-  },
   "sidebar.postgreSidebar.category.Flex 보드": {
     "message": "Flex Board",
     "description": "The label for category Flex 보드 in sidebar postgreSidebar"
@@ -406,10 +402,6 @@
   "sidebar.postgreSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar postgreSidebar"
-  },
-  "sidebar.postgreSidebar.category.분석과 통계": {
-    "message": "Analysis and statistics",
-    "description": "The label for category 분석과 통계 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
@@ -439,10 +431,6 @@
     "message": "Learn about the main features",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar dboracleSidebar"
   },
-  "sidebar.dboracleSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "Checking the real-time DB performance metrics",
-    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar dboracleSidebar"
-  },
   "sidebar.dboracleSidebar.category.Flex 보드": {
     "message": "Flex Board",
     "description": "The label for category Flex 보드 in sidebar dboracleSidebar"
@@ -450,10 +438,6 @@
   "sidebar.dboracleSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar dboracleSidebar"
-  },
-  "sidebar.dboracleSidebar.category.분석과 통계": {
-    "message": "Analysis and statistics",
-    "description": "The label for category 분석과 통계 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
@@ -659,10 +643,6 @@
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar cubridSidebar"
   },
-  "sidebar.cubridSidebar.category.분석과 통계": {
-    "message": "Analysis and statistics",
-    "description": "The label for category 분석과 통계 in sidebar cubridSidebar"
-  },
   "sidebar.cubridSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar cubridSidebar"
@@ -808,7 +788,7 @@
     "description": "The label for the doc item 지원 환경 in sidebar mongodbSidebar, linking to the doc mongodb/monitoring-support"
   },
   "sidebar.releaseSidebar.category.릴리스 노트": {
-    "message": "Release Notes",
+    "message": "リリースノート",
     "description": "The label for category 릴리스 노트 in sidebar releaseSidebar"
   },
   "sidebar.releaseSidebar.category.Service": {
@@ -893,115 +873,115 @@
   },
   "sidebar.indexSidebar.link.Java": {
     "message": "Java",
-    "description": "The label for link Java in sidebar indexSidebar, linking to ../java/introduction"
+    "description": "The label for link Java in sidebar indexSidebar, linking to java/introduction"
   },
   "sidebar.indexSidebar.link.PHP": {
     "message": "PHP",
-    "description": "The label for link PHP in sidebar indexSidebar, linking to ../php/introduction"
+    "description": "The label for link PHP in sidebar indexSidebar, linking to php/introduction"
   },
   "sidebar.indexSidebar.link.Node.js": {
     "message": "Node.js",
-    "description": "The label for link Node.js in sidebar indexSidebar, linking to ../nodejs/introduction"
+    "description": "The label for link Node.js in sidebar indexSidebar, linking to nodejs/introduction"
   },
   "sidebar.indexSidebar.link.Python": {
     "message": "Python",
-    "description": "The label for link Python in sidebar indexSidebar, linking to ../python/introduction"
+    "description": "The label for link Python in sidebar indexSidebar, linking to python/introduction"
   },
   "sidebar.indexSidebar.link..NET": {
     "message": ".NET",
-    "description": "The label for link .NET in sidebar indexSidebar, linking to ../dotnet/introduction"
+    "description": "The label for link .NET in sidebar indexSidebar, linking to dotnet/introduction"
   },
   "sidebar.indexSidebar.link.Golang": {
     "message": "Golang",
-    "description": "The label for link Golang in sidebar indexSidebar, linking to ../golang/introduction"
+    "description": "The label for link Golang in sidebar indexSidebar, linking to golang/introduction"
   },
   "sidebar.indexSidebar.link.Server": {
     "message": "Server",
-    "description": "The label for link Server in sidebar indexSidebar, linking to ../server/introduction"
+    "description": "The label for link Server in sidebar indexSidebar, linking to server/introduction"
   },
   "sidebar.indexSidebar.link.Kubernetes": {
     "message": "Kubernetes",
-    "description": "The label for link Kubernetes in sidebar indexSidebar, linking to ../kubernetes/introduction"
+    "description": "The label for link Kubernetes in sidebar indexSidebar, linking to kubernetes/introduction"
   },
   "sidebar.indexSidebar.link.PostgreSQL": {
     "message": "PostgreSQL",
-    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to ../postgresql/monitoring-intro"
+    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to postgresql/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Oracle": {
     "message": "Oracle",
-    "description": "The label for link Oracle in sidebar indexSidebar, linking to ../oracle/monitoring-intro"
+    "description": "The label for link Oracle in sidebar indexSidebar, linking to oracle/monitoring-intro"
   },
   "sidebar.indexSidebar.link.MySQL": {
     "message": "MySQL",
-    "description": "The label for link MySQL in sidebar indexSidebar, linking to ../mysql/monitoring-intro"
+    "description": "The label for link MySQL in sidebar indexSidebar, linking to mysql/monitoring-intro"
   },
   "sidebar.indexSidebar.link.MS SQL Server": {
     "message": "MS SQL Server",
-    "description": "The label for link MS SQL Server in sidebar indexSidebar, linking to ../mssql/monitoring-intro"
+    "description": "The label for link MS SQL Server in sidebar indexSidebar, linking to mssql/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Tibero": {
     "message": "Tibero",
-    "description": "The label for link Tibero in sidebar indexSidebar, linking to ../tibero/monitoring-intro"
+    "description": "The label for link Tibero in sidebar indexSidebar, linking to tibero/monitoring-intro"
   },
   "sidebar.indexSidebar.link.CUBRID": {
     "message": "CUBRID",
-    "description": "The label for link CUBRID in sidebar indexSidebar, linking to ../cubrid/monitoring-intro"
+    "description": "The label for link CUBRID in sidebar indexSidebar, linking to cubrid/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Altibase": {
     "message": "Altibase",
-    "description": "The label for link Altibase in sidebar indexSidebar, linking to ../altibase/monitoring-intro"
+    "description": "The label for link Altibase in sidebar indexSidebar, linking to altibase/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Redis": {
     "message": "Redis",
-    "description": "The label for link Redis in sidebar indexSidebar, linking to ../redis/monitoring-intro"
+    "description": "The label for link Redis in sidebar indexSidebar, linking to redis/monitoring-intro"
   },
   "sidebar.indexSidebar.link.MongoDB": {
     "message": "MongoDB",
-    "description": "The label for link MongoDB in sidebar indexSidebar, linking to ../mongodb/monitoring-intro"
+    "description": "The label for link MongoDB in sidebar indexSidebar, linking to mongodb/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Amazon CloudWatch": {
     "message": "Amazon CloudWatch",
-    "description": "The label for link Amazon CloudWatch in sidebar indexSidebar, linking to ../amazon-cloudwatch/install-agent"
+    "description": "The label for link Amazon CloudWatch in sidebar indexSidebar, linking to amazon-cloudwatch/install-agent"
   },
   "sidebar.indexSidebar.link.Amazon ECS": {
     "message": "Amazon ECS",
-    "description": "The label for link Amazon ECS in sidebar indexSidebar, linking to ../amazon-ecs/introduction"
+    "description": "The label for link Amazon ECS in sidebar indexSidebar, linking to amazon-ecs/introduction"
   },
   "sidebar.indexSidebar.link.Azure Monitor": {
     "message": "Azure Monitor",
-    "description": "The label for link Azure Monitor in sidebar indexSidebar, linking to ../azure/install-agent"
+    "description": "The label for link Azure Monitor in sidebar indexSidebar, linking to azure/install-agent"
   },
   "sidebar.indexSidebar.link.Naver Cloud Monitoring": {
     "message": "Naver Cloud Monitoring",
-    "description": "The label for link Naver Cloud Monitoring in sidebar indexSidebar, linking to ../ncloud/install-agent"
+    "description": "The label for link Naver Cloud Monitoring in sidebar indexSidebar, linking to ncloud/install-agent"
   },
   "sidebar.indexSidebar.link.Oracle Cloud Monitor": {
     "message": "Oracle Cloud Monitor",
-    "description": "The label for link Oracle Cloud Monitor in sidebar indexSidebar, linking to ../oracle-cloud/install-agent"
+    "description": "The label for link Oracle Cloud Monitor in sidebar indexSidebar, linking to oracle-cloud/install-agent"
   },
   "sidebar.indexSidebar.link.Log": {
     "message": "Log",
-    "description": "The label for link Log in sidebar indexSidebar, linking to ../log/introduction"
+    "description": "The label for link Log in sidebar indexSidebar, linking to log/introduction"
   },
   "sidebar.indexSidebar.link.URL": {
     "message": "URL",
-    "description": "The label for link URL in sidebar indexSidebar, linking to ../url/url-intro"
+    "description": "The label for link URL in sidebar indexSidebar, linking to url/url-intro"
   },
   "sidebar.indexSidebar.link.관리 기능": {
     "message": "Management",
-    "description": "The label for link 관리 기능 in sidebar indexSidebar, linking to ../manage"
+    "description": "The label for link 관리 기능 in sidebar indexSidebar, linking to manage"
   },
   "sidebar.indexSidebar.link.참조 문서": {
     "message": "Reference",
-    "description": "The label for link 참조 문서 in sidebar indexSidebar, linking to ../reference"
+    "description": "The label for link 참조 문서 in sidebar indexSidebar, linking to reference"
   },
   "sidebar.indexSidebar.link.릴리스 노트": {
     "message": "Release Notes",
-    "description": "The label for link 릴리스 노트 in sidebar indexSidebar, linking to ../release-notes"
+    "description": "The label for link 릴리스 노트 in sidebar indexSidebar, linking to release-notes"
   },
   "sidebar.indexSidebar.doc.와탭 기술 문서 안내": {
     "message": "Guide to WhaTap technical documentation",
-    "description": "The label for the doc item 와탭 기술 문서 안내 in sidebar indexSidebar, linking to the doc getting-started/welcome-to-whatapdocs"
+    "description": "The label for the doc item 와탭 기술 문서 안내 in sidebar indexSidebar, linking to the doc welcome-to-whatapdocs"
   },
   "sidebar.indexSidebar.doc.Extensions": {
     "message": "Extensions",
@@ -1437,11 +1417,7 @@
   },
   "sidebar.indexSidebar.link.Browser": {
     "message": "Browser",
-    "description": "The label for link Browser in sidebar indexSidebar, linking to ../browser"
-  },
-  "sidebar.rumsSidebar.category.Browser": {
-    "message": "Browser",
-    "description": "The label for category Browser in sidebar rumsSidebar"
+    "description": "The label for link Browser in sidebar indexSidebar, linking to browser"
   },
   "sidebar.releaseSidebar.link..NET Agent 지난 버전": {
     "message": "Previous .NET agent versions",
@@ -1450,5 +1426,9 @@
   "sidebar.rumsSidebar.category.Browser 모니터링": {
     "message": "Browser Monitoring",
     "description": "The label for category Browser 모니터링 in sidebar rumsSidebar"
+  },
+  "sidebar.nodejsSidebar.category.에이전트 설치": {
+    "message": "Agent Installation",
+    "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
   }
 }

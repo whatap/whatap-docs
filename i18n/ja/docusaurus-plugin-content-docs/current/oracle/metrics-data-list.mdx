@@ -19,7 +19,7 @@ tags:
 | ---------------------------------------- | --------------------------------------------------------------------------- |
 | `cpu_used_by_this_session`               | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間（10ミリ秒単位）                           |
 | `db_time`                                | データベースのユーザーレベルの呼び出しを実行するのにかかる経過時間（microseconds）                             |
-| `active_sessions`                        | クエリを実行中のセッション数                                                              |
+| `active_sessions`                        | クエリが実行されているセッション数                                                           |
 | `cpu`                                    | CPU使用率                                                                      |
 | `cpu_cores`                              | CPUコア数                                                                      |
 | `db_block_changes`                       | SGAのブロックで変更されたブロック数                                                         |
@@ -36,7 +36,7 @@ tags:
 | `lock_wait_sessions`                     | 現在rowlockを獲得するために待機中の数                                                      |
 | `logons_current`                         | 現在の総ログオン数                                                                   |
 | `long_running_sessions`                  | 長時間実行中のセッション数                                                               |
-| `メモリ`                                    | メモリ使用率                                                                      |
+| `memory`                                 | メモリ使用率                                                                      |
 | `opened_cursors_current`                 | 現在開いているcursorの数                                                             |
 | `parse_count_(hard)`                     | 構文分析呼出の総数（実際の構文分析）                                                          |
 | `parse_count_(total)`                    | 構文分析呼び出しの総数（hard、soft、describe）                                             |
@@ -44,10 +44,10 @@ tags:
 | `physical_writes`                        | データをディスクに記録したブロック数、`physical writes direct`と`physical writes from cache`の合計 |
 | `session_logical_reads`                  | メモリから読み込んだデータブロック数、`db block gets`と`consistent gets`の合計                     |
 | `sorts_(memory)`                         | メモリで実行されたsort作業の数                                                           |
-| `sys_cpu`                                | session에 의해 사용된 cpu time의 합                                                 |
+| `sys_cpu`                                | sessionによって使用されたcpu timeの合計                                                 |
 | `total_elapse_time`                      | データベースインスタンスが最後に再起動して以来、すべてのリクエストの累積合計経過時間です。                               |
 | `total_sessions`                         | すべてのセッション数                                                                  |
-| `txn_sessions`                           | transaction이 있는 세션 수                                                        |
+| `txn_sessions`                           | transactionがあるセッション数                                                        |
 | `user_commits`                           | トランザクションあたりに実行されたユーザーコミット数                                                  |
 | `user_cpu`                               | user cpu使用量(%)                                                              |
 | `wait_sessions`                          | イベントを待機しているセッション数                                                           |

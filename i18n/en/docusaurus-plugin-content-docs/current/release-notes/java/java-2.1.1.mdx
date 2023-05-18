@@ -153,7 +153,7 @@ Transaction URL has been added to the error notification messages.
 
 #### Bug that cannot trace the local date when tracing SQLs
 
-`java.time.LocalDate` 추적하지 못하는 문제 수정
+Fixed the bug where `java.time.LocalDate` is not traced.
 
 ## 2022-05-11
 
@@ -161,7 +161,7 @@ Transaction URL has been added to the error notification messages.
 
 #### Addition of the error notification message
 
-에러 알림 메세지에 status code 추가하였습니다. 에러 알림 메세지에 무시한 알림의 수를 추가하였습니다.
+The status code has been added to the error notification message. The number of ignored notifications has been added to the error notification message.
 
 ## 2022-04-25
 
@@ -193,9 +193,9 @@ httpc_event_detail_enable=false
 
 The function has been added to receive a notification when an error occurs upon HTTP call.
 
-`exception_alert_enabled` 옵션을 `true`로 설정하여 기능을 활성화 할 수 있고, `exception_alert_stack_size` 옵션으로 지정한 값에 맞게 에러 스택을 알림 메세지로 받을 수 있습니다.
+The function can be enabled by setting `exception_alert_enabled` to `true`. You can receive an error stack as a notification message according to the value specified in the `exception_alert_stack_size` option.
 
-한번 알림이 발생하게 되면 `exception_alert_silent_time` 옵션으로 지정한 기간만큼 에러 알림을 비활성화할 수 있습니다.
+Once the notification is triggered, you can disable the error notification for the period specified in the `exception_alert_silent_time` option.
 
 ```ini title='whatap.conf'
 # Default
@@ -225,13 +225,13 @@ Deleted the database call hash value from an error text.
 
 The linked service status tracing function has been added so that the target IP or service connection status can be checked in liveTail of log monitoring.
 
-`logsink_rt_enabled` 옵션을 `true`로 설정하여 기능을 활성화 할 수 있고 #RemoteTrace 카테고리로 로그를 수집합니다.
+You can enable the function by setting `logsink_rt_enabled` to `true`, which collects logs with the #RemoteTrace category.
 
 -   In case of a normal response, the level is ok. In case of error, the level is error.
 
--   정상 응답인 경우 `logsink_rt_ok_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 30초 입니다.
+-   In case of a normal response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 30 seconds.
 
--   에러 응답인 경우 `logsink_rt_error_interval` 설정 간격에 맞추어서 로그를 기록합니다. 기본값은 5초 입니다.
+-   In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
 
 ```ini title='whatap.conf'
 # Default
@@ -301,7 +301,7 @@ Added the function to apply timeout to HttpClient and handle errors upon timeout
 
 #### Adding the JMX pool setting
 
-jmx pool object의 기본값을 수정하였습니다. jmx pool의 데이터소스 이름 사용 여부를 결정할 수 있는 옵션을 추가하였습니다.
+The default value of the JMX pool object. An option to determine whether or not to use the data source name of the JMX pool has been added.
 
 If the data source name is registered, the JNDI method is executed. If the name is not registered, the default URL method is executed.
 
@@ -353,7 +353,7 @@ Added the function to automatically disable the hooking option when using logsin
 
 #### Adding the logsink collection data
 
-logsink에서 수집하는 데이터를 추가하였습니다. 설정에 따라서 transation id, login id, http host 데이터 수집 여부를 결정할 수 있습니다.
+The data collected in logsink has been added. According to the configuration, you can determine whether the transaction ID, login ID, and HTTP host data are to be collected.
 
 ```ini title='whatap.conf'
 # Default
@@ -371,7 +371,7 @@ logtag_httphost_enabled=false   # http host
 
 In the manner of hooking an existing collection class, it has been modified to retrieve the collection class data indirectly through CollectionHolder.
 
-Collection을 생성하는 클래스를 `collection_nonstatic_holders` 설정에 추가하여 Collection Map 항목에서 확인할 수 있습니다.
+By adding the class that creates the collection to the `collection_nonstatic_holders` setting, you can see it in the collection map.
 
 ```ini title='whatap.conf'
 collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
@@ -383,7 +383,7 @@ collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
 
 #### Adding the thread stop setting
 
-thread 동작 시간이 설정값을 초과하는 경우에 thread 중단 여부를 설정할 수 있도록 항목을 추가하였습니다. 기본 설정값은 `false` 입니다.
+An item has been added to set whether or not to stop the thread when the thread operation time exceeds the set value. The default values is `false`.
 
 ```ini title='whatap.conf'
 auto_thread_kill_enabled=false  # default value
@@ -404,7 +404,7 @@ Modified to exclude the item, "Cookie" from the HTTP header.
 
 #### Adding the weaving setting
 
-플러그인을 추적할 수 있도록 weaving 설정을 추가하였습니다. 기존의 `weaving_reserved` 설정과 동일한 기능으로 `weaving` 또는 `weaving_reserved` 설정 모두 동작합니다.
+The weaving setting has been added to trace plug-ins. As the `weaving_reserved` setting, the `weaving` or `weaving_reserved` setting works the same.
 
 ```ini title='whatap.conf'
 weaving=tomcat10
@@ -412,7 +412,7 @@ weaving=tomcat10
 
 #### Adding the exclusions for the agent environment variables
 
-환경 변수 조회 기능에서 특정 키값을 입력하면 조회 항목에서 제외할 수 있도록 기능을 추가하였습니다. 구분자는 ','로 대소문자를 구분하지 않습니다. `agent_env_system_enabled`, `agent_env_jvm_enabled` 설정과 연결하여 사용할 수 있습니다.
+The function has been added to exclude from the search items when a specific key value is entered in the environment variable search function. It can be used in connection with the `agent_env_system_enabled` and `agent_env_jvm_enabled` settings.
 
 ```ini title='whatap.conf'
 agent_env_system_enabled=false

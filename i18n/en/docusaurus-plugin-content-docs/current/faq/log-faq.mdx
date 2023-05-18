@@ -1,64 +1,70 @@
 ---
 id: log-faq
 title: Log FAQ
-description: 와탭 Log 모니터링 서비스 FAQ 문서입니다.
+description: This document has FAQs of the WhaTap log monitoring service.
 tags:
   - Log Monitoring
   - FAQ
-draft: true
 ---
 
-와탭 로그 모니터링 서비스 사용자들이 자주 묻는 질문을 확인해 보세요. 
+Check out frequently asked questions from users about the WhaTap log monitoring service. 
 
----
+* * *
 
 <div class ='faq'>
 
-### 로그 복원
+### Restoration of the original log
 
-| Q. 로그를 수집한 후 복구할 수 있나요? |
-| ----------------------- |
+| Q. Can I recover the original logs after collecting them? |
+| --------------------------------------------------------- |
 
-> A. 현재 로그 수집은 보안 용도가 아닌 분석 용도로 제공합니다. SaaS형의 경우 로그 복원 기능을 제공하지 않습니다. 
+> A. The function to restore the original logs is not provided. Currently, log collection is provided for analysis, not for security.
+>
 > :::note
-> 설치형의 경우 로그 원문 복원 기능을 제공합니다.
+> In case of **installation type**, it provides the log restoration function separately.
 > :::
 
 <br/>
 
-### 타사 로그 솔루션 연동
+### Log backup and restoration
 
-| Q. 다른 로그 솔루션과 연동할 수 있나요? |
-| ------------------------ |
+| Q. Can I back up and recover the logs? |
+| -------------------------------------- |
 
-> A. 현재 타사 로그 솔루션과의 연동 기능은 제공하지 않습니다.
-
-<br/>
-
-### 에이전트 로그 전송 주기
-
-| Q. 에이전트는 로그를 언제 전송하나요? |
-| ---------------------- |
-
-> A. 에이전트의 로그 버퍼 용량(64 KB)에 도달하거나 전송 주기(2초)에 도달한 경우 로그를 전송합니다.
+> A. Collected logs are saved by date. You can back up your old files and restore them back to the folder. 
 
 <br/>
 
-### 로그 백업 및 복구
+### Log data deletion cycle
 
-| Q. 로그를 백업하고 복구할 수 있나요? |
-| ---------------------- |
+| Q. What is the log data deletion cycle? |
+| --------------------------------------- |
 
-> A. 수집된 로그는 일자 단위로 저장됩니다. 과거 파일을 백업해 두고 해당 폴더에 다시 복구할 수 있습니다. 네트워크 전송 시 압축해 전송하며, 수집 서버에서 수신 시 압축을 해제해 저장합니다.
+> A. It is the same as **_Data Retention_** set in **_Log Setting_**. However, because the loaded log retention period is in hours, data may remain for 1 hour in addition to the setting in **_Data Retention_**.
+>
+> :::note
+>
+> If **_Data Retention_** has not been set, the default value is 1 day. For more information about the setting in **_Data Retention_**, see [the following](../log/log-setting#log-data-setting).
+>
+> :::
 
 <br/>
 
-### 데이터 삭제 주기
+### Agent logs transmission cycle
 
-| Q. 데이터 삭제 주기는 어떻게 되나요? |
-| ---------------------- |
+| Q. What is the log transmission cycle from the agent? |
+| ----------------------------------------------------- |
 
-> A. 시간 단위로 삭제합니다.
+> A. Logs are sent when the agent's log buffer capacity (64 KB) or transmission cycle (2 seconds) is reached. It is compressed in a _zip_ file and transmitted during network transmission, and is decompressed and stored when received from the collection server.
+
+<br/>
+
+### Integrating with third-party log solutions
+
+| Q. Can it integrate with other log solutions? |
+| --------------------------------------------- |
+
+> A. Currently, integration with third-party log solutions is not provided.
 
 <br/>
 

@@ -10,51 +10,181 @@ toc_max_heading_level: 3
 
 :::note
 
-[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と修正した内容を事前に体験することができます。 
+<https://preview.whatap.io>で、次の新機能と修正した内容を事前に体験することができます。 
 
-::: 
+:::
 
-## Preview 1.101.08
+## Preview 1.101.15
 
-2023년 5월 3일
+2023년 5월 11일
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> > <UI>로그 파서 설정</UI> > <UI>필터 입력</UI> > 필터키의 오타 수정(okineName → okindName)
+### 「共通」
 
--   <Status>Fixed</Status> <UI>로그</UI> > <UI>라이브 테일</UI> 메뉴에서 조회된 로그 데이터가 없는 경우 이전의 로그가 표시되는 현상 수정
+-   <Status>Fixed</Status> 사이드 바 메뉴에서 <img src='/img/ico-filter.svg' alt='필터 아이콘'/> 프로젝트 타입 필터에 <code>Browser</code> 타입 추가 및 사용자가 선택한 언어에 맞게 텍스트가 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> 메뉴에서 탭 이동 시 선택한 조직의 파라미터가 유지되지 않는 현상 수정
+
+* * *
+
+### 「Database」
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 목록</UI> 메뉴에서 설정한 인스턴스 <UI>별칭</UI>이 다음 메뉴에 적용되지 않는 오류 수정</p>
+
+-   **_대시보드_** > **_인스턴스 목록_**
+
+-   **_대시보드_** > **_멀티 인스턴스 모니터링_**
+
+-   **_분석_** > **_카운트 추이 비교_**
+
+* * *
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>노드 상세</UI> 메뉴에서 컨테이너 목록 일부 데이터가 보이지 않는 버그 수정</p>
+
+</div>
+
+## Preview 1.101.14
+
+2023년 5월 11일
+
+<div class='indentTab'>
+
+### 「共通」
+
+-   <Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 슬로우 쿼리 위젯의 차트가 보이지 않는 버그 수정
+
+-   <Status>Change</Status> <b>통합 서비스 대시보드</b> 템플릿에 사용되고 있는 위젯들의 MXQL path 버전 최신화
+
+### 「Container」
+
+-   <Status>Feature</Status>  <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 컨테이너 요소에 마우스 오버 시 나타나는 차트 툴팁 내용 중 단위가 퍼센트인 지표는 막대 그래프 차트 표시
+
+-   <Status>Change</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 <img src='/img/ico-setting.svg' alt='설정 아이콘'/> > <UI>라벨</UI> 옵션에 <UI>선택된 지표</UI> 항목 추가
+
+</div>
+
+## Preview 1.101.13
+
+2023년 5월 10일
+
+<div class='indentTab'>
+
+### 「Container」
+
+<p><Status>Deprecate</Status> <UI>대시보드</UI> > <UI>애플리케이션 서비스 대시보드</UI> 메뉴에서 <UI>멀티 서비스 대시보드</UI> 탭 하위 각 그룹 패널의 <UI>서비스별 애플리케이션</UI> 버튼 제거</p>
+
+</div>
+
+## Preview 1.101.12
+
+2023년 5월 9일
+
+<div class='indentTab'>
+
+### 「Container」
+
+<p><Status>Fixed</Status> <UI>컨테이너 맵</UI> 메뉴에서 <b>로그 조회</b> 권한이 없는 사용자가 <UI>컨테이너 Stdout/Stderr</UI> 데이터를 볼 수 없는 버그 수정</p>
+
+</div>
+
+## Preview 1.101.11
+
+2023년 5월 9일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> > <UI>히트맵</UI> 위젯을 통해 <b>트랜잭션 상세</b> 화면을 진입할 경우 <b>로그 조회</b> 권한이 있는 멤버에게 <UI>트랜잭션 로그</UI> 탭이 노출되지 않는 현상 수정
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 브라우저 화면의 너비가 특정 크기일 때 가장 오른쪽의 아이콘 버튼이 가려지는 현상 수정
+
+</div>
+
+## Preview 1.101.10
+
+2023年5月3日
+
+<div class='indentTab'>
+
+### 「Database」
+
+-   <Status>Change</Status> <UI>통계/보고서</UI> > <UI>테이블 사이즈 증감</UI> 메뉴에서 <UI>CSV 다운로드</UI> 버튼을 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼으로 변경
+
+-   <Status>Fixed</Status> 다음 메뉴 경로에서 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼을 선택하면 나타나는 드롭다운 메뉴 항목을 클릭한 영역에 따라 다운로드 기능이 작동하지 않는 문제 수정
+
+    -   <UI>통계/보고서</UI> > <UI>테이블 사이즈 증감</UI>
+
+    -   <UI>통계/보고서</UI> > <UI>SQL 통계</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI> 탭
+
+</div>
+
+## Preview 1.101.09
+
+2023년 5월 4일
+
+<div class='indentTab'>
+
+### 「Server」
+
+-   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 목록</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+
+-   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 환경 변수</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+
+</div>
+
+## Preview 1.101.08
+
+2023년 5월 4일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI> > <UI>ログパーサー設定</UI> > <UI>フィルター入力</UI> > フィルターキーの誤字修正(okineName → okindName)
+
+-   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで照会されたログ データがない場合、以前ログが表示される現象を修正
+
+-   <Status>Change</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI>를 사이드 메뉴에서 제거, <UI>사이트 맵</UI>을 통해서만 접근 가능하도록 변경
+
+-   <Status>Change</Status> 다음 위젯들에서 데이터 응답이 없을 경우 구체적인 사유를 표시하도록 수정
+
+    -   로그 4XX, 5XX 건수
+
+    -   ログリクエスト成功率
+
+    -   응답시간 by 로그
 
 </div>
 
 ## Preview 1.101.07
 
-2023년 5월 3일
+2023年5月3日
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 <b>로그 편집</b> 권한이 있음에도 <b>권한</b> 컬럼에 표시되지 않는 현상 수정
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューで<b>ログ編集</b>権限があるにもかかわらず<b>権限</b>カラムに表示されない現象を修正
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 관리</UI> 메뉴에서 사용자가 설정한 테마에 따라 패널 제목 색상이 변경되지 않는 버그 수정
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクト管理</UI>メニューでユーザーが設定したテーマによってパネルタイトルの色が変更されないバグを修正
 
 </div>
 
 ## Preview 1.101.06
 
-2023년 5월 2일
+2023年5月2日
 
 <div class='indentTab'>
 
-<p><Status>Feature</Status> <b>로그 편집</b> 권한 추가 및 관련 기능 <UI>로그 설정</UI> 메뉴에 적용</p>
+<p><Status>Feature</Status> <b>ログ編集</b>権限の追加及び関連機能<UI>ログ設定</UI>メニューに適用</p>
 
 </div>
 
 ## Preview 1.101.05
 
-2023년 5월 2일
+2023年5月2日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 브라우저 창 크기가 특정 크기일 때, <UI>Flex 보드</UI> 메뉴의 <UI>관리자</UI> 모드에서 위젯의 JSON 편집 창을 불러오면 텍스트 상자에 스크롤이 반복해서 나타났다가 사라지는 현상 수정</p>
+<p><Status>Fixed</Status>ブラウザーウィンドウのサイズが特定のサイズの場合、<UI>Flexボード</UI>メニューの<UI>管理者</UI>モードでウィジェットのJSON編集ウィンドウを読み込むと、テキストボックスにスクロールが繰り返し表示され、消える現象を修正</p>
 
 </div>
 
@@ -98,11 +228,17 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
----
+* * *
 
 ### `ECS`
 
 <p><Status>Fixed</Status> <UI>Flexボード</UI>、<UI>Amazon ECS</UI> > <UI>Service</UI>メニューで<UI>ecs_service</UI>ウィジェットに全体サービスのうち1つだけが表示される問題を修正</p>
+
+* * *
+
+### 「Application」
+
+<p><Status>Fixed</Status> Java 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 에이전트 다운로드 명령어 오타 수정</p>
 
 </div>
 
@@ -128,7 +264,7 @@ toc_max_heading_level: 3
 
 -   <Status>Fixed</Status>リッチテキストウィジェットの場合、修正後に保存した内容が反映されないバグを修正
 
----
+* * *
 
 ### `AWS Log`
 
@@ -136,7 +272,7 @@ toc_max_heading_level: 3
 
 -   <Status>Change</Status>ログ照会権限のないユーザーは、<UI>警告通知</UI> > <UI>イベント設定</UI>メニューに進入できるように修正(ただ、機能の追加・修正はできない)
 
----
+* * *
 
 ### 「Database」
 
@@ -154,13 +290,13 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>スロークエリ</UI>メニューで案内メッセージのリンクをクリックすると空のページに移動する問題を修正</p>
 
----
+* * *
 
 ### 「Container」
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
----
+* * *
 
 ### `ECS`
 
@@ -178,7 +314,7 @@ toc_max_heading_level: 3
 
 <p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータの照会時にデータが出力されない問題を修正</p>
 
----
+* * *
 
 ### `Browser`
 

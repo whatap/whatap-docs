@@ -7,13 +7,13 @@ tags:
   - 設定
 ---
 
-WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。 _whatap.conf_ファイルを通じて設定できるオプションは次のとおりです。
+WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルにに書き込みます。 エージェントは、環境変数を使用して設定ファイルを見つけて読み込みます。 _whatap.conf_ファイルを使用して設定できるオプションは次のとおりです。
 
 ## エージェント名の識別
 
 WhaTapは、モニタリング情報収集対象のインフラサーバーの識別のために、基本的にはサーバーから収集した情報を活用します。 
 
-{@include: ../common-items/_agent-name-warning.mdx}
+{@include: ../common-items/_agent-name-warning.mdx} 
 
 -   **object_name** <span class='type'>String</span><br/>
     デフォルト値 `{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`<br/>アプリケーションを識別するエージェント名（ONAME）体系です。 ONAMEに基づいてOIDが生成されます。
@@ -27,7 +27,7 @@ WhaTapは、モニタリング情報収集対象のインフラサーバーの�
 
 -   **app_name** <span class='type'>String</span><br/>
         アプリケーションを識別するエージェント名（ONAME）体系に使用されるアプリケーション名です。「object_name」の `{type}`に該当する値です。
-    {@include: ../common-items/_restart-w-tf.mdx}
+{@include: ../common-items/_restart-w-tf.mdx}
 
 ## エージェントの通信設定
 
@@ -56,11 +56,11 @@ WhaTapは、モニタリング情報収集対象のインフラサーバーの�
 
 -   **telegraf_tcp_port** <span class='type'>tcp_port</span><br/>
     デフォルト値 「6600」<br/>Telegraf socker_writer output pluginが接続するTCPのポート番号です。
-    {@include: ../common-items/_restart-w-tf.mdx}
+{@include: ../common-items/_restart-w-tf.mdx}
 
 -   **telegraf_delta_fields** <span class='type'>String</span><br/>
     デフォルト値 「1024」
-        累積値を持つフィールドの増加値を計算して、別のフィールドを追加します。 name.fields形式で指定し、複数はコンマ（,）で区切ります。<br/>
+        累積値を持つフィールドの増加値を計算して、別のフィールドを追加します。 name.fields形式で指定し、複数はコンマ（,）で区切ります。\
         e.g. nginx.accepts,nginx.requests nginxのaccepts, requests値の増加値をacceptsDelta, requestsDeltaフィールド名で追加して渡します。
 
 ## ログ

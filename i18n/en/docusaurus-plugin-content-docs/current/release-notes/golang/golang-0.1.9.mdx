@@ -19,7 +19,7 @@ Release date: 2022-04-27
 -   github.com/go-gonic/gin
 
 :::note
-`recover()`를 통해서 오류 정보를 수집하지만, 다시 동일한 panic를 발생시킵니다. 
+Error data is collected through `recover()`, but the same panic occurs again. 
 :::
 
 ```go title='Golang'
@@ -31,14 +31,14 @@ defer func() {
   if x != nil {
     err = fmt.Errorf("Panic: %v", x)
     
-    // panic 정보 수집
+    // Collect the panic data.
     trace.Error(ctx, err)
     err = nil
   }
 
   ...
 
-  // 다시 panic 발생
+  // Panic is generated again.
 
   if x != nil {
     panic(x)
@@ -71,9 +71,9 @@ import (
 
 Additional error data is collected through HTTPErrorHandler.
 
-`echo.Context.Error()` 함수가 호출될 때 오류 정보를 수집합니다.Recover 미들웨어가 처리한 panic 정보를 수집합니다. 
+The error data is collected when the `echo.Context.Error()` function is called. The panic data processed by the recover middleware is collected. 
 
-whatapecho 미들웨어가 마지막으로 실행 되면 HTTPErrorHandler 정보를 최대한 많이 수집할 수 있습니다. 미들웨어 등록을 최상단에서 설정하고, `Pre()` 함수를 통해 등록합니다.
+When the whatapecho middleware finally runs, it can collect as many data as possible from the HTTPErrorHandler. Set the middleware registration at the top, and the register it through the `Pre()` function.
 
 ```go title='Golang'
 func main() {
@@ -100,14 +100,14 @@ The logs for transactions, DB connections, SQL executions, and HTTP external cal
 
 ### Adding the setting to exclude collection by specifying the HTTP method
 
-지정한 uri 에 대해서 특정 HTTP Method로 요청되는 트랜잭션의 수집을 제외합니다. 콤마(,) 구분으로 여러개의 uri, Method를 등록할 수 있습니다. 대소문자 구분은 없습니다.
+It excludes the collection of transactions requested by specific HTTP methods for the set URIs. Multiple URIs and methods can be registered using comma (,) as the delimiter. The values are case-insensitive.
 
-`ignore_http_method_urls`<br/>
-#Default : ""#<br/>
+`ignore_http_method_urls`\
+#Default : ""#\
 #Type : String#
 
-`ignore_http_method`<br/>
-#Default : ""#<br/>
+`ignore_http_method`\
+#Default : ""#\
 #Type : String#
 
 ```ini

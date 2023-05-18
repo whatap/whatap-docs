@@ -16,8 +16,6 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 * _trs-profile.mdx 주석 삭제
 
-      * ** * -> ---
-
 :::note null -> :::note
 
 :::note\ -> :::note
@@ -25,6 +23,8 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 <Version> -> {Version} 또는 &lt;Version&gt;
 
 <version> -> {version}
+
+<section>
 
 server-list.mdx -> 주석 삭제
 
@@ -50,6 +50,14 @@ server-list.mdx -> 주석 삭제
 
 [次の記事] \(openapi-call-apm-stat-data)
 
-）로 끝나는 부분 확인
+）로 끝나는 부분 확인 => 정규식 \]\(([^>]+)）
 
-\(https://pypi.org/project/whatap-python/ #files)
+\(<https://pypi.org/project/whatap-python/> #files)
+
+```sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
+=> 한글로 들어간 부분 수정 필요
+
+[次の文書](..／billing) -> 슬래시 수정할 것
+
+
+_metrics-intro-v2.mdx -> 링크 경로 모두 수정 필요

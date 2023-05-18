@@ -3,8 +3,8 @@ id: analysis-msa
 title: MSA分析
 description: MSA分析機能は、WhaTapのMTRACE(マルチサーバー間追跡)機能を通じて収集されたトランザクション間の呼び出し比重を分析します。
 tags:
-  - クバネティス
-  - クバネティスモニタリング
+  - Kubernetes
+  - Kubernetesモニタリング
   - 分析
   - MSA
 ---
@@ -39,11 +39,11 @@ MTRACEの詳細については、[次の文書](../java/trs-multi-trace)を参�
 
 上記の統計データの中から特定URLを選択すると、該当URLに対する詳細データが確認できます。
 
--   呼び出し元、呼び出し先のサーマリ
--   呼び出し元、呼び出し先のデータ
--   呼び出し元、呼び出し先の推移
+-   Caller/Calleeサマリー
+-   Caller/Calleeデータ
+-   Caller/Callee推移
 
-## 呼び出し元、呼び出し先のサーマリ
+## Caller/Calleeサマリー
 
 次のように該当URLのcaller、callee間の依存性情報を表示します。この時、最大0.004、0.003など最大値が1である数字の情報が一緒に表示されますが、これは全体callerの中で占める割合を表示します。同様に、各calleeの割合が右側に一緒に表示されます。
 
@@ -55,13 +55,13 @@ MTRACEの詳細については、[次の文書](../java/trs-multi-trace)を参�
 
 ![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_4.png)
 
-## 呼び出し元 、呼び出し先のデータ
+## Caller & Calleeデータ
 
 基準URL(例：_/account/save/employee/seoul_)に対するcallerとcalleeの相関関係は、次のように表で表示できます。
 
 ![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_5.png)
 
-## 呼び出し元、呼び出し先の推移
+## Caller/Callee推移
 
 基準URL(_/account/save/employee/seoul_)と1つのcallerやcalleeとの呼び出し推移は、次のように時系列で分析できます。 
 

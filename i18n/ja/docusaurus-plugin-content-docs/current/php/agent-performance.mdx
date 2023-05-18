@@ -19,71 +19,71 @@ PHPアプリケーションサーバーのパフォーマンス関連設定の�
 :::
 
 -   **whatap.tx_max_count**<span class='type'>Int</span><br/>
-      デフォルト値 「5000」<br/>
+      デフォルト値`5000`<br/>
       トランザクションを最大で保存する数です。同時に処理されるトランザクションが多い場合は、そのサイズをさらに増やします。
 
 -   **whatap.tx_default_capacity**<span class='type'>Int</span><br/>
-      デフォルト値「101」<br/>
+      デフォルト値`101`<br/>
       トランザクションを保存するバッファのデフォルトサイズです。
 
 <!-- "0.75"?? -->
 
 -   **whatap.tx_load_factor**<span class='type'>String(Float)</span><br/>
-      デフォルト値「0.75」<br/>
+      デフォルト値`0.75`<br/>
       トランザクションを保存するバッファのサイズを徐々に増加させるための基準です。101個から75%以上保存されると、バッファのサイズを2倍に増やします。
 
 -   **whatap.queue_log_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       queue関連ログを出力します。
 
 -   **whatap.queue_tcp_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「true」<br/>
+      デフォルト値`true`<br/>
       Tcpデータの送信処理に使用するChannelに代わって別途のQueueを使用します。データの優先順位Queueを使用します。
 
 -   **whatap.queue_tcp_sender_thread_count**<span class='type'>Int</span><br/>
-      デフォルト値「2」<br/>
+      デフォルト値`2`<br/>
       Tcpデータ送信を処理するスレッド数を指定します。個数を増やすと、データ送信をより迅速に処理できます。
 
 -   **whatap.net_send_buffer_size**<span class='type'>Int</span><br/>
-      デフォルト値「1024」<br/>
+      デフォルト値`1024`<br/>
       Tcpデータ処理のためのチャネルバッファを設定します。
 
 -   **whatap.queue_udp_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       Udpデータの受信を処理する時、Channelに代わって別途のQueueを使用します。
 
 -   **whatap.queue_udp_size**<span class='type'>Int</span><br/>
-      デフォルト値「2048」<br/>
+      デフォルト値`2048`<br/>
       Udpデータの受信バッファを設定します。ChannelとQueueのバッファを設定します。
 
 -   **wwhatap.queue_udp_read_thread_count**<span class='type'>Int</span><br/>
-      デフォルト値「3」<br/>
+      デフォルト値`3`<br/>
       Udpデータの受信を処理するスレッドの数を指定します。個数を増やすと、UDPバッファからより速くデータを読み取ることができます。
 
 -   **whatap.queue_udp_overflowed_size**<span class='type'>Int</span><br/>
-      デフォルト値「4096」<br/>
+      デフォルト値`4096`<br/>
       Udpデータの受信にQueueを使用する場合、overflowed Queueのバッファサイズを設定します。
 
 -   **whatap.queue_udp_process_thread_count**<span class='type'>Int</span><br/>
-      デフォルト値「1」<br/>
+      デフォルト値`1`<br/>
       Udpデータを処理するスレッドの数を指定します。個数を増やすと、UDPで読み込んだデータをより速く処理できます。
 
 -   **whatap.queue_profile_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       Profileの情報を処理する時、Channelに代わって別途のQueueを使用します。
 
 -   **whatap.queue_profile_size**<span class='type'>Int</span><br/>
-      デフォルト値「512」<br/>
+      デフォルト値`512`<br/>
       Profile情報処理のためのバッファを設定します。
 
 -   **whatap.queue_profile_process_thread_count**<span class='type'>Int</span><br/>
-      デフォルト値「1」<br/>
+      デフォルト値`1`<br/>
       Profile情報を処理するスレッド数を指定します。個数を増やすと、より早く処理できます。
 
 -   **whatap.queue_text_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値「false」<br/>
+      デフォルト値`false`<br/>
       Textデータの処理のためにChannelの代わりにQueueを使用します。
 
 -   **whatap.queue_text_size**<span class='type'>Int</span><br/>
-      デフォルト値「512」<br/>
+      デフォルト値`512`<br/>
       Textデータの処理のためのバッファを設定します。

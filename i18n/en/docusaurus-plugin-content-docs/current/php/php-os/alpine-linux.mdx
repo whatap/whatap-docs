@@ -69,7 +69,7 @@ RUN apk add apache2 php7-apache2
 ADD whatap-php.tar.gz /
 RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
 RUN tar -xvzf whatap-php.tar.gz -C /
-RUN /usr/whatap/php/install.sh -l <액세스 키> -s <Whatap server Host> -e <php CLI 경로> -p <프로세스 이름>
+RUN /usr/whatap/php/install.sh -l <Access Key> -s <Whatap server Host> -e <php CLI 경로> -p <Process Name>
 ```
 
 Set to start the whatap-php daemon after running the container by adding the whatap-php execution command at the Docker's entry point.

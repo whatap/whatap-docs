@@ -21,7 +21,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ## ![](/img/number-01.png)固定メニュー
 
-{@include: ../common-items/\_dashboard-static-def.mdx} 
+{@include: ../common-items/_dashboard-static-def.mdx} 
 
 ## ![](/img/number-02.png)インフォパネル
 
@@ -34,28 +34,28 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 プロジェクトに登録されている全体のサーバーの要約メトリクスを提供します。 10秒単位で更新されます。
 
--   **Servers**<br/>
+-   **Servers**\
       全体サーバーの数とトラブルのあるサーバーの数を提供します。 領域を選択すると **_サーバー一覧_** ページに移動します。
     -   例外状態：<span class='vslow'>危険</span>、<span class='slow'>警告</span>
     -   正常サーバー：<span class='snormal'>普通</span>, <span class='k8s-normal'>非活性</span>
--   **Total Cores**<br/>
+-   **Total Cores**\
       全体のサーバーのコア（vCPU）の合計です。
--   **Avg CPU**<br/>
+-   **Avg CPU**\
       全体のサーバーのCPU平均使用量（%）です。 以下のゲージは、平均値、最大値、最小値を示します。
--   **Avg Memory**<br/>
+-   **Avg Memory**\
       サーバー全体のメモリ平均使用量（%）です。 以下のゲージは、平均値、最大値、最小値を示します。
--   **Avg Disk**<br/>
+-   **Avg Disk**\
       全体のサーバーのディスクデバイスの平均使用量（%）です。 以下のゲージは、平均値、最大値、最小値を示します。
--   **OS**<br/>
+-   **OS**\
       プロジェクト内のlinuxとWindowsオペレーティングシステムの数です。
 
 ## ![](/img/number-03.png) CPU Resource Map
 
 全体のサーバーのCPU使用量を示す分布図です。10分間のデータを表示し、10秒周期で更新されます。 セル色の濃さは、その領域にサーバーのリソース使用量が多く分布していることを意味します。
 
--   **詳細情報提供**<br/>
+-   **詳細情報提供**\
       セル領域をドラッグすると、詳細情報を提供します。
-      ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-\_Server_Monitoring18.png)
+      ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring18.png)
     -   サーバー一覧は、範囲内で収集されたデータの最大値に基づいてソートされます。
     -   基本5つのサーバーが選択されており、選択されたサーバーの使用量の推移をマルチラインチャートで提供します。
     -   **_更新_** ボタンを手動でクリックすると、現在のデータに更新できます。 
