@@ -985,7 +985,7 @@ main {
       border: none;
       padding: 0 5px 0 5px;
     }
-    > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])) {
+    > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])), &:has(> img:only-of-type:not([alt*='アイコン'])) {
       margin: 20px 0;
       padding: 0;
     }
