@@ -582,6 +582,11 @@ main {
   .breadcrumbsContainer_src-theme-DocBreadcrumbs-styles-module {
     margin-bottom: 16px;
   }
+  nav.theme-doc-breadcrumbs {
+    div.breadcrumbs-hidden {
+      display: none;
+    }
+  }
   ul.breadcrumbs {
     li.breadcrumbs__item {
       a.breadcrumbs__link {
