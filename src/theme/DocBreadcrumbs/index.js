@@ -11,14 +11,19 @@ import {translate} from '@docusaurus/Translate';
 import IconHome from '@theme/Icon/Home';
 import styles from './styles.module.css';
 // TODO move to design system folder
-function BreadcrumbsItemString({children, href, isLast}) {
+function BreadcrumbsItemString({children, href, isLast, isXXY}) {
   const className = 'breadcrumbs__link';
-  if (isLast) {
+  if (isXXY) {
     return (
       <span itemProp="name">
         {children}
       </span>
     );
+  }
+  if (isLast) {
+    return (
+      <></>
+    )
   }
   return href ? (
     <span itemProp="name">{children}&nbsp;&gt;&nbsp;</span>
@@ -126,9 +131,10 @@ export default function DocBreadcrumbs() {
       </ul>
       <div className="breadcrumbs-hidden">
       {breadcrumbs.map((item, idx) => {
-          const isLast = idx === breadcrumbs.length - 1;
+          const isXXX = idx === breadcrumbs.length - 1;
+          const isXXY = idx === breadcrumbs.length - 2;
           return (
-            <BreadcrumbsItemString href={item.href} isLast={isLast}>
+            <BreadcrumbsItemString href={item.href} isLast={isXXX} isXXY={isXXY}>
                 {item.label}
             </BreadcrumbsItemString>
           );
