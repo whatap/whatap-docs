@@ -61,3 +61,5 @@ server-list.mdx -> 주석 삭제
 
 
 _metrics-intro-v2.mdx -> 링크 경로 모두 수정 필요
+
+_db-instance-monitoring-basic-usage.mdx 파일에 코드 수정 필요

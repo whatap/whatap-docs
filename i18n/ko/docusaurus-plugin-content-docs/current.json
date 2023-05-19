@@ -191,10 +191,6 @@
     "message": "지원 환경",
     "description": "The label for the doc item 지원 환경 in sidebar nodejsSidebar, linking to the doc nodejs/supported-spec"
   },
-  "sidebar.nodejsSidebar.doc.에이전트 설치": {
-    "message": "에이전트 설치",
-    "description": "The label for the doc item 에이전트 설치 in sidebar nodejsSidebar, linking to the doc nodejs/install-agent"
-  },
   "sidebar.nodejsSidebar.doc.설치 점검": {
     "message": "설치 점검",
     "description": "The label for the doc item 설치 점검 in sidebar nodejsSidebar, linking to the doc nodejs/install-check"
@@ -322,10 +318,6 @@
   "sidebar.dotNetSidebar.doc.관리하기": {
     "message": "관리하기",
     "description": "The label for the doc item 관리하기 in sidebar dotNetSidebar, linking to the doc dotnet/agent-manage"
-  },
-  "sidebar.dotNetSidebar.doc.Log 모니터링": {
-    "message": "Log 모니터링",
-    "description": "The label for the doc item Log 모니터링 in sidebar dotNetSidebar, linking to the doc log/introduction"
   },
   "sidebar.goSidebar.category.Golang 모니터링": {
     "message": "Golang 모니터링",
@@ -1428,7 +1420,7 @@
     "description": "The label for category Browser 모니터링 in sidebar rumsSidebar"
   },
   "sidebar.nodejsSidebar.category.에이전트 설치": {
-    "message": "Agent Installation",
+    "message": "에이전트 설치",
     "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
   }
 }

@@ -1054,9 +1054,7 @@ const sidebars = {
                 'dotnet/trs-view',
                 'dotnet/trs-profile',
                 'dotnet/active-transactions',
-                'dotnet/trs-multi-trace',
                 'dotnet/collect-stacks',
-                // 'php/trs-endpoint-setting',
               ]
             },
             {
@@ -1124,11 +1122,6 @@ const sidebars = {
                 'dotnet/set-event-history',
                 'dotnet/set-event-format',
               ],
-            },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -2961,7 +2954,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2.0.6',
@@ -2970,7 +2963,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2.0.6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
