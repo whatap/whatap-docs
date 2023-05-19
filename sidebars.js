@@ -1054,9 +1054,7 @@ const sidebars = {
                 'dotnet/trs-view',
                 'dotnet/trs-profile',
                 'dotnet/active-transactions',
-                'dotnet/trs-multi-trace',
                 'dotnet/collect-stacks',
-                // 'php/trs-endpoint-setting',
               ]
             },
             {
@@ -1124,11 +1122,6 @@ const sidebars = {
                 'dotnet/set-event-history',
                 'dotnet/set-event-format',
               ],
-            },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
             },
             {
               type: 'link',
