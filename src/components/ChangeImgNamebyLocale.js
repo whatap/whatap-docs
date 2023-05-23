@@ -12,7 +12,7 @@ export default function ChangeImgName({img, desc}) {
     if (currentLocale == 'ko') {
         imgFilePath = '/img/' + fileName + '.' + fext;
     } else {
-        imgFilePath = '/img/' + currentLocale + '/' + fileName + '.' + fext;
+        imgFilePath = '/img/' + fileName + '-' + currentLocale + '.' + fext;
     }
     function onError(e) {
         e.target.src = '/img/' + img;

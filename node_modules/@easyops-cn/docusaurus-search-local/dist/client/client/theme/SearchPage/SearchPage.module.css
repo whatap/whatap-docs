@@ -1,4 +1,4 @@
-.searchVersionInput,
+.searchContextInput,
 .searchQueryInput {
   border-radius: var(--ifm-global-radius);
   border: var(--ifm-global-border-width) solid
@@ -21,16 +21,33 @@
 }
 
 .searchResultItemPath {
-  /* color: var(--ifm-color-content-secondary);
-  font-size: 0.8rem; */
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.8rem;
   margin: 0.5rem 0px 0px;
-}
-
-span.searchResultItemPath::after {
-  content: " › ";
 }
 
 .searchResultItemSummary {
   font-style: italic;
   margin: 0.5rem 0px 0px;
+}
+
+@media only screen and (max-width: 996px) {
+  .searchQueryColumn {
+    max-width: 60% !important;
+  }
+
+  .searchContextColumn {
+    max-width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .searchQueryColumn {
+    max-width: 100% !important;
+  }
+
+  .searchContextColumn {
+    max-width: 100% !important;
+    padding-left: var(--ifm-spacing-horizontal) !important;
+  }
 }
