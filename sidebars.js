@@ -4604,9 +4604,7 @@ const sidebars = {
           items: [
             'server/agent-name',
             'server/agent-network',
-            'server/agent-remote-file-viewer',
             'server/agent-pcounter',
-            'server/agent-win32-api'
           ],
         },
         'server/advanced-feature',
