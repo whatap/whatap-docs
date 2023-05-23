@@ -1,8 +1,11 @@
 import React from 'react';
 import MDXContent from '@theme-original/MDXContent';
 import {useLocation} from '@docusaurus/router';
-
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 export default function XcludeDoc ({children, product}) {
+    const {
+        i18n: {currentLocale},
+    } = useDocusaurusContext();
     let prodsx;
     if (typeof product.split(",") !== undefined) {
         prodsx = product.split(",");
@@ -10,8 +13,12 @@ export default function XcludeDoc ({children, product}) {
         prodsx.push(product);
     }
     let locationx = useLocation();
-    let myContent;
-    const cProdx = locationx.pathname.split("/")[1];
+    let myContent, cProdx;
+    if (currentLocale == 'ko') {
+        cProdx = locationx.pathname.split("/")[1];
+    } else {
+        cProdx = locationx.pathname.split("/")[2];
+    }
     let s, prodx;
     
     for (s =0; s < prodsx.length; s ++) {
