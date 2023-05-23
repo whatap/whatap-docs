@@ -28,6 +28,7 @@
     "@docusaurus/plugin-sitemap": "^2.4.0",
     "@docusaurus/preset-classic": "^2.4.0",
     "@eastuni/lunr-languages-ko": "^1.4.0",
+    "@easyops-cn/docusaurus-search-local": "^0.35.0",
     "@emailjs/browser": "^3.10.0",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
