@@ -2813,7 +2813,7 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1.100.x',
+              id: 'release-notes/service/service-1.102.x',
               className: 'new',
             },
             'release-notes/service/service-1.100.x',
