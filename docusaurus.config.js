@@ -137,7 +137,9 @@ module.exports = Promise.resolve({
           apiKey: 'o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi',
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-        typesenseSearchParameters: {},
+        typesenseSearchParameters: {
+          highlight_affix_num_tokens: 400,
+        },
         // Optional
         contextualSearch: true,
         searchPagePath: 'search',
