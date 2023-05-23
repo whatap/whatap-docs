@@ -22,6 +22,13 @@ module.exports = function () {
                             t.parentNode.insertBefore(a, t);
                           })(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');`
                     },
+                    {
+                        tagName: 'meta',
+                        attributes: {
+                            'http-equiv': 'Content-Security-Policy',
+                            content: 'upgrade-insecure-requests',
+                        }
+                    }
                 ],
             };
         },
