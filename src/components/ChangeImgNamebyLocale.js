@@ -10,9 +10,9 @@ export default function ChangeImgName({img, desc}) {
     let fileName = img.replace('.' + fext, '');
     let imgFilePath;
     if (currentLocale == 'ko') {
-        imgFilePath = '/img/' + fileName + product + '.' + fext;
+        imgFilePath = '/img/' + fileName + '.' + fext;
     } else {
-        imgFilePath = '/img/' + currentLocale + '/' + fileName + product + '.' + fext;
+        imgFilePath = '/img/' + fileName + '-' + currentLocale + '.' + fext;
     }
     function onError(e) {
         e.target.src = '/img/' + img;
