@@ -3790,7 +3790,11 @@ const sidebars = {
           label: '자원 삭제하기',
           id: 'aws-log/delete-aws-resource',
         },
-        'aws-log/aws-log-setting',
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'aws-log/aws-log-setting',
+        },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
