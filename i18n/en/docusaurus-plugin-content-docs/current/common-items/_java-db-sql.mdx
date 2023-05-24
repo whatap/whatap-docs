@@ -1,37 +1,55 @@
--   **dbcp_pool_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
+-   **dbcp_pool_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It is used to trace DB connection data of DBCP without using JMX.
 
--   **hikari_pool_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **hikari_pool_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It is used to trace DB connection data of the hikari pool without using JMX.
 
--   **tomcat_ds_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **tomcat_ds_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It enables the function to trace Tomcat DB connection pool data without using JMX.
 
--   **tomcat_pool_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
+-   **tomcat_pool_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It enables the function to trace Tomcat DB connection pool data without using JMX.
 
--   **weblogic_ds_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **weblogic_ds_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It enables the function to trace the Weblogic DB connection pool data by using JMX.
 
--   **weblogic_pool_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
-     It enables the function to trace the Weblogic DB connection pool data without using JMX.
+-   **weblogic_pool_enabled** <span class='type'>Boolean</span>
 
--   **jeus_pool_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
+    Default `true`
+
+    It enables the function to trace the Weblogic DB connection pool data without using JMX.
+
+-   **jeus_pool_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It enables the function to trace the JEUS DB connection pool data without using JMX.
 
--   **profile_connection_open_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
+-   **profile_connection_open_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It records DB connection open data in the trace details.
 
--   **profile_dbc_close** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **profile_dbc_close** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It works only when `profile_connection_open_enabled` is `true`. DB connection close-up data is recorded in the transaction trace details.
 
 -   **profile_sql_param_enabled** <span class='type'>Boolean</span>
@@ -50,103 +68,142 @@
 
     :::
 
--   **profile_sql_resource_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **profile_sql_resource_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It traces the CPU and memory usages during collection of SQLs in the transaction trace.
 
--   **profile_update_count** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **profile_update_count** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It collects the number of updates when SQL update statements have been executed through the `executeUpdate()` method.
 
--   **custom_pool_classes** <span class='type'>String</span><br/>
+-   **custom_pool_classes** <span class='type'>String</span>
+
     When using a separate connection pool that has not been defined previously, set the class name.
 
--   **ds_update_interval** <span class='type'>MiliSeconds</span><br/>
-    Default `5000`<br/>
+-   **ds_update_interval** <span class='type'>MiliSeconds</span>
+
+    Default `5000`
+
     Set the interval for counting DB connection data.
 
--   **profile_position_sql** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **profile_position_sql** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It records the stack traces when SQL statements are executed.
 
--   **profile_sql_param_length** <span class='type'>Int</span><br/>
-    Default `40`<br/>
+-   **profile_sql_param_length** <span class='type'>Int</span>
+
+    Default `40`
+
     Set the length of the SQL parameter.
+
     :::note
+
     The maximum value is 128. Even if you enter a number than this value, parameters are saved up to 128 bits.
+
     :::
 
--   **trace_dbc_leak_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **trace_dbc_leak_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It enables to trace DB connection leaks.
+
     :::caution
+
     Because leaks are traced using the connection wrapper, be sure to apply it after a test as it can affect the operation services.
+
     :::
 
--   **trace_dbc_leak_fullstack_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **trace_dbc_leak_fullstack_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     When any DB connection leak is detected, it collects stack traces at this time.
+
     :::caution
+
     Do not apply this at the peak time, if possible. If the option is applied, the CPU usage may increase slightly. It is recommended to apply it temporarily for troubleshooting purposes only.
+
     :::
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
+-   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement.
 
--   **profile_error_jdbc_fetch_max** <span class='type'>Int</span><br/>
-    Default `10000`<br/>
+-   **profile_error_jdbc_fetch_max** <span class='type'>Int</span>
+
+    Default `10000`
+
     When SQL Fetch Count(`ResultSet.next()` call count) exceeds the set value, it is treated as TOO MANY Fetch error. If it is set to `0`, it is not treated as an error.
 
--   **profile_error_httpc_time_max** <span class='type'>Int</span><br/>
-    Default `30000`<br/>
+-   **profile_error_sql_time_max** <span class='type'>Int</span>
+
+    Default `30000`
+
     If the SQL execution time exceeds the set value, it is treated as TOO SLOW error. If it is set to `0`, it is not treated as an error.
 
--   **hook_connection_open_patterns** <span class='type'>String</span><br/>
-       It registers the method to call upon DB connection open. It is common to register getConnection of any connection pool that has not been set.
+-   **hook_connection_open_patterns** <span class='type'>String</span>
 
-    ```ini title='예시'
+    It registers the method to call upon DB connection open. It is common to register getConnection of any connection pool that has not been set.
+
+    ```ini title='Example'
     hook_connection_open_patterns=mypool.ConPool.getConnection
     ```
 
--   **hook_jdbc_con_classes** <span class='type'>String</span><br/>
-      Set an unregistered JDBC connection class.
+-   **hook_jdbc_con_classes** <span class='type'>String</span>
 
-    ```ini title='예시'
+    Set an unregistered JDBC connection class.
+
+    ```ini title='Example'
     hook_jdbc_con_classes=mypool.ConPool
     ```
 
--   **hook_jdbc_pstmt_classes** <span class='type'>String</span><br/>
-       Set an unregistered JDBC PreparedStatement class. Note that it must be a structure where the SQL string is delivered to the creator parameter.
+-   **hook_jdbc_pstmt_classes** <span class='type'>String</span>
 
-    ```ini title='예시'
+    Set an unregistered JDBC PreparedStatement class. Note that it must be a structure where the SQL string is delivered to the creator parameter.
+
+    ```ini title='Example'
     hook_jdbc_pstmt_classes=org.apache.derby.impl.jdbc.EmbedPreparedStatement
     ```
 
--   **hook_jdbc_cstmt_classes** <span class='type'>String</span><br/>
-      Set an unregistered JDBC CallableStatement class.
+-   **hook_jdbc_cstmt_classes** <span class='type'>String</span>
 
-    ```ini title='예시'
+    Set an unregistered JDBC CallableStatement class.
+
+    ```ini title='Example'
     hook_jdbc_cstmt_classes=org.apache.derby.impl.jdbc.EmbedCallableStatement
     ```
 
--   **hook_jdbc_stmt_classes** <span class='type'>String</span><br/>
-      Set an unregistered JDBC statement class.
+-   **hook_jdbc_stmt_classes** <span class='type'>String</span>
 
-    ```ini title='예시'
+    Set an unregistered JDBC statement class.
+
+    ```ini title='Example'
     hook_jdbc_stmt_classes=org.apache.derby.impl.jdbc.EmbedStatement
     ```
 
--   **hook_jdbc_rs_classes** <span class='type'>String</span><br/>
-      Set an unregistered JDBC result set class.
+-   **hook_jdbc_rs_classes** <span class='type'>String</span>
 
-    ```ini title='예시'
+    Set an unregistered JDBC result set class.
+
+    ```ini title='Example'
     hook_jdbc_rs_classes=org.apache.derby.impl.jdbc.EmbedResultSet
     ```
 
--   **hook_jdbc_wrapping_driver_patterns** <span class='type'>String</span><br/>
+-   **hook_jdbc_wrapping_driver_patterns** <span class='type'>String</span>
+
     The obfuscated JDBC driver like the DB2 driver is difficult to directly perform BCI with the `hook_jdbc_xxx` option. In this case, SQLs can be traced with the wrapper method. At this time, set `Driver.connect` for tracing.
 
--   **debug_dbc_stack_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **debug_dbc_stack_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     StackTrace is saved in the transaction trace at the time of DB connection. It is used to obtain connection pool information that is used by applications.

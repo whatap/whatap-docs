@@ -21,6 +21,7 @@ For more information about basic elements in the fixed menu area, see [the follo
 You can filter by selecting agents linked with the current project. The metrics in the widget area differ depending on the selected agent.
 
 -   Active agents appear in blue, and inactive agents in gray.
+
 -   If you select ![down-arrow](/img/down-arrow.svg) on the upmost right, you can filter or search agents by server or type.
 
 ## ![](/img/number-03.png) widget area
@@ -28,10 +29,15 @@ You can filter by selecting agents linked with the current project. The metrics 
 The icons displayed on the widget function as follows:
 
 -   ![Data Merge icon](/img/ico-data-merge.svg) **_Merge Data_**: All merged data in the widget is displayed with a graph.
+
 -   ![Individual icon](/img/ico-each-data.svg) **_Each_**: The data divided by each agent appears with a graph. However, it is not effective if there are too many applications in the project.
+
 -   ![Detail icon](/img/ico-detail.svg) **_Detail_**: A modal window appears where you can view the data of the widget in detail. If **_More metrics_** is selected, **_Analysis_** > **_Metrics Chart_** appears. You can search the data for the desired time zone.
+
 -   ![Chart Settings icon](/img/ico-setting.svg) **_Chart Settings_**: You can change the settings of the elements displayed on the chart. To apply the changes to the chart, select **_Save_**.
+
     -   **_HorizontalLine Setting_**: In the chart, you can set any number as a threshold. You can set or add the labels, figures, and colors for thresholds.
+
     -   **_Y tick static max setting_**: You can set the maximum value displayed on the Y-axis. To enter the desired number, select **_Custom_** and then enter the number.
 
 :::note
@@ -61,9 +67,13 @@ Active transactions are classified by the execution section and displayed with a
 Equalizer's color means the importance. **_DBC_** and **_SOCKET_** are must be recognized as problem even it one or two appear continuously. Meanwhile, **_SQL_** and **_HTTPC_** require analysis when the number is relatively great. **_METHOD_** is in blue because it is normal. If you click ![right-arrow](/img/right-arrow.svg), **_Dashboard_** > **_Active Transaction_** appears.
 
 -   **_METHOD_**: Status in which the method is executing.
+
 -   **_SQL_**: SQL is running.
+
 -   **_HTTPC_**: It is calling any external API.
+
 -   **_DBC_**: The transaction is attempting to get a new connection from the connection pool.
+
 -   **_SOCKET_**: TCP socket is being connected from outside.
 
 :::note
@@ -79,17 +89,25 @@ If the **_DBC_** or **_SOCKET_** count persists above 1, suspect any problem.
 A transaction in progress is called **_active transaction_**. It is represented with an **_Arc Equalizer_** chart. The arc is divided by the number of agents. By representing the number of requests being processed by the server every 5 seconds, you can tell how long the request has been processed. Requests detected at an interval of 5 seconds are classified by color as follows to determine whether they are dangerous or not.
 
 -   Red (<span class='vslow'>Very Slow</span>): 8 seconds or more 
+
 -   Orange (<span class='slow'>Slow</span>): 3 to 8 seconds
+
 -   Blue (<span class='normal'>Normal</span>): 0 to 3 seconds
 
 The situation where lots of blue colors are represented is not a problem. You must watch the trend to see whether some of them turn to purple or red. In case of a failure, the number of active transactions increases and the percentage of red color increases. On the other hand, a very responsive system with a high number of process transactions (TPS) might have a low number of active transactions.
 
 -   On the upper left, the agent name with the most active transactions appears.
+
 -   You can toggle the views by selecting the icon on the upper right. If you click ![right-arrow](/img/right-arrow.svg), **_Dashboard_** > **_Active Transaction_** appears.
+
     -   ![Include inactive agents icon](/img/ico-disable-agent.svg) **_Include inactive agents_**: Inactive agents are included.
+
     -   ![Arc Equalizer icon](/img/ico-arc-equalizer.svg) **_Arc Equalizer_**: The graph is displayed with an arc equalizer.
+
     -   ![Vertical Equalizer icon](/img/ico-vertical-graph.svg) **_Vertical Equalizer_**: The graph is displayed with a vertical equalizer.
+
 -   The middle number is a sum of active transactions of the selected agent.
+
 -   Two bars around active transactions rotate around the chart at a three-step rate based on the throughput (TPS).
 
 :::note
@@ -105,7 +123,9 @@ The **_hitmap_** chart represents the distribution of response times of complete
 :::note
 
 -   The detailed information for the transactions with no error whose execution time is less than 500 ms is collected once every 5 minutes for each URL.
+
 -   It does not affect the statistics such as TPS and average response time.
+
 -   Policy can be adjusted through the agent settings. See the transaction-related information in the configurations for each agent.
 
 :::
@@ -113,13 +133,17 @@ The **_hitmap_** chart represents the distribution of response times of complete
 In **_HITMAP_**, the point color represents its density.
 
 -   Normal TR: Sky blue → Blue → Indigo
+
 -   Error TR: Yellow → Orange → Red
 
 ![Hitmap](/img/hitmap.png)
 
 -   The number on the upper right indicates the <span class='normal'>transaction count</span>/<span class='slow'>error count</span> in the chart.
+
 -   If **_Y-axis Auto_** is selected, the Y-axis (execution time) is automatically adjusted.
+
 -   If **_Error_** is selected, only the error transactions appear.
+
 -   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart from 5 seconds to 80 seconds.
 
 ### **_Apdex_**
@@ -163,7 +187,9 @@ The memory line chart usually ripples continuously. It increases when using memo
 :::note
 
 -   Java and Node.js display the total heap memory and usage.
+
 -   PHP, Python, and .Net display the process memory usage.
+
 :::
 
 ### **_Concurrent User_**
@@ -173,13 +199,11 @@ It displays the number of real-time browser users. Every 5 seconds, users who ha
 :::note
 
 -   In general, the connected user means a connected user who has access to the current network. However, web systems are different because they use connectionless networks. It does not mean that you are connected, but rather the user who sent the recent request can be measured.
+
 -   Real-time (concurrent access) users indicate the users who are using the system in the same time zone. There are various ways to count or measure real-time (concurrent access) users.
+
 -   The number of users is calculated by **HyperLog** rather than simply adding up. **HyperLog** is a probabilistic data structure that estimates the number of elements in a set with very little memory.
 
-:::
-
-:::note
-
-For more information about the method how to analyze **_Application Dashboard_**, see [the following](../best-practice-guides/about-apm-dashboard).
+-   For more information about the method how to analyze **_Application Dashboard_**, see [the following](../best-practice-guides/about-apm-dashboard).
 
 :::

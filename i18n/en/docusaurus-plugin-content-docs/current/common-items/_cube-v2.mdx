@@ -2,15 +2,11 @@ Home > Select Project > **_Analysis_** > **_CUBE_**
 
 Select a project on the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_Cube_** under the **_Project menu_**. It provides information for connections, hitmap, transactions, TOP transactions, TPS, response times, and resource usage for each country.
 
-<!-- It provides information for connections, hitmap, transactions, TOP transactions, TPS, response times, and resource usage for each country. -->
-
 ## What is Cube?
 
 We call the performance statistics generated every 5 minutes as **Cube**. Cube analysis uses each 5-minute performance data stored in cubes.
 
 ![Cube apm](/img/cube-apm.png)
-
-<!-- <ProdImg img='cube.png' desc='큐브' /> -->
 
 ## ![](/img/number-01.png) Cube selection panel
 
@@ -28,9 +24,8 @@ Select a cube based on the specific time in the cube selection panel in the left
 
     -   **_Concurrent User_**
 
-<!-- 이미지 및 패널 지표 안내는 재기술 필요해서 현재는 생략 상태 -->
+-   **Cube color**\<
 
--   **Cube color**<br/>
     The cubes are displayed in different colors depending on the number of the selected metrics.
 
     -   <span class='highfg'>Dark blue</span>: <span class='highfg'>high figure</span>
@@ -53,51 +48,60 @@ You can select data for a specific application through the application selection
 
 -   <font color='5B7DEC'>Number</font>/<font color='979797'>Number</font>: Displays the <font color='5B7DEC'>number of applications specified</font>/<font color='979797 '>number of all applications</font>.
 
-<!-- ![cube-select-apm-data](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring21.png) -->
-
 ## ![](/img/number-03.png) Cube data
-
-<!-- 상기와 같이 현재는 생략 상태 -->
 
 !In the area of [number3](/img/number-03.png), the cube data can be checked through the charts for **_Hitmap_**, **_Country_**, **_TPS_**, **_Response Time_**, **_CPU_**, **_Concurrent User_**, **_Top TX_**, and **_Heap Memory_**.
 
--   **_Hitmap_**<br/>
-      It displays the distribution of transactions over the cube time. Detailed trace analysis is possible. 
-      If you select ![right-arrow](/img/right-arrow.svg), you can view the **_top stack_** and **_unique stack_** during the cube time.
+-   **_HITMAP_**
+
+    It displays the distribution of transactions over the cube time. Detailed trace analysis is possible. 
+
+    If you select ![right-arrow](/img/right-arrow.svg), you can view the **_Top Stack_** and **_Unique Stack_** during the cube time.
+
     :::note
-    The applications for stack analysis are **Java** and **Python**. 
+
+    The application that can use the stack analysis function is **Java** and **Python**. 
+
     :::
 
--   **_Country_**<br/>
+-   **_Country/Region_**
+
     By mapping countries based on the client IP, it displays from which country the transactions are coming. The colors on the map display the relative amount of transactions.
 
--   **_TPS_**<br/>
+-   **_TPS_**
+
     Transaction Per Second (**_TPS_**) means the number of transactions processed per second.
 
--   **_Instance Response Time_**<br/>
+-   **_Instance Response Time_**
+
     Average response time for transactions
 
--   **_CPU_**<br/>
+-   **_CPU_**
+
     After sorting the project applications (agents) by the IP, it displays CPUs of the busy server with a bar chart.
 
--   **_Concurrent User_**<br/>
+-   **_Concurrent User_**
+
     It displays the number of real-time browser users. 
 
--   **_Top TX_**<br/>
+-   **_Top TX_**
+
     It displays 5 transactions of high invocation. Transaction statistics provide more detailed data.
 
--   **_Heap Memory_**<br/>
+-   **_Heap Memory_**
+
     Among the applications (instances), the instances are displayed in order of heap memory usage.
 
 :::note
 
 -   If you select the ![Individual icon](/img/ic-line.svg) icon on the upper right of the chart, merged line charts are provided.
 -   If you select the ![Individual icon](/img/ic-multiline-chart.svg) icon on the upper right of the chart, individual line charts are provided.
--   If you select the ![Bar chart icon](/img/ic-dashboard-bar-chart.svg) icon on the upper right of the chart, the bar-type chart appears.
+-   If you select the ![Bar chart icon](/img/ic-dashboard-bar-chart.svg) icon on the upper right of the chart, the bar-type chart appears. 
+
 :::
 
 :::note
-This product contains the data from **GeoLite2** of **MaxMind**. It complies with the license policy. **GeoLite2** can be checked from the MaxMind website (http://www.maxmind.com). (This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com)
-:::
 
-<!--   애플리케이션(인스턴스) 중 힙 메모리를 많이 사용한 상위 인스턴스 5개를 보여줍니다. -->
+This product contains the data from **GeoLite2** of **MaxMind**. It complies with the license policy. **GeoLite2** can be checked from the MaxMind website (http://www.maxmind.com). (This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com)
+
+:::

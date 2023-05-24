@@ -32,7 +32,8 @@ sudo service whatap-infra restart
 
 ### Windows Powershell
 
-```bash title='Windows Powershell (관리자 권한)' {6-11,13,14} showLineNumbers
+```bash title='Windows Powershell' {6-11,13,14} showLineNumbers
+# Require an Administarotr role
 New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
 
 $contentToAdd = @"
@@ -45,7 +46,7 @@ stats_category = "logsink_stats"
 ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
 excludeNames = [ ".gz",".zip" ] 
 [[inputs.logsink.file]]
-## When setting a log file, you can set the date pattern
+## When setting a log file, you can set the date pattern (strftime.org).
 path = "c:\\whatap\\logs%Y-%m-%d_.log"
 disabled = false
 encoding = "euc-kr"
@@ -76,7 +77,7 @@ Restart-Service "Whatap Infra"
 
 -   `excludeNames`: By including asterisks (\*) in the log file path, you can set the file name to exclude non log files. You can set multiple values using comma (,) as the delimiter.
 
-    ```ini title='예시'
+    ```ini title='Example'
     excludeNames = [ ".gz",".zip" ]
     ```
 

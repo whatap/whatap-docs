@@ -1,18 +1,27 @@
--   **whatap.trace_active_transaction_slow_time**<span class='type'>Millisecond</span><br/>
-      Default `3000`<br/>
-      In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+-   **whatap.trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
--   **whatap.trace_active_transaction_very_slow_time**<span class='type'>Millisecond</span><br/>
-      Default `8000`<br/>
+    Default `3000`
 
--   **whatap.trace_active_transaction_lost_time**<span class='type'>Millisecond</span><br/>
-      Default `30000`<br/>
-      If a transaction does not end within 5 minutes (waiting timeout), no further transaction data is collected. You can see "Lost Connection" in the transaction trace information.
+    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
 
--   **whatap.trace_useragent_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      If the value is `true`, the user agent data for transactions is collected. 
+-   **whatap.trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
--   **whatap.trace_referer_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      If the value is `true`, the referer data for transactions is collected.
+    Default `8000`
+
+-   **whatap.trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+    Default `30000`
+
+    If a transaction does not end within the timeout period (5 minutes), no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+
+-   **whatap.trace_useragent_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If the value is `true`, the user agent data for transactions is collected. 
+
+-   **whatap.trace_referer_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If the value is `true`, the referer data for transactions is collected.

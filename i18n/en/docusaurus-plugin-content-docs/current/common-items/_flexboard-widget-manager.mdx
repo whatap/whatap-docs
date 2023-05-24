@@ -26,10 +26,12 @@ On the right of the widget name to change, select ![Edit icon](/img/ico-edit.svg
 :::tip
 
 -   If the **_Add to the entire widget_** toggle button is enabled, the font size and color are applied to other widgets.
+
 -   To lock the widget title, select [Configuration icon](/img/ico-invisible.svg) and then click **_Save_**.
+
 :::
 
-### Setting the time
+### Time Setting
 
 On the upper right of the widget to set the time, select ![Time settin icon](/img/ico-time-set.svg). The **_Time Selector_** window appears.
 
@@ -40,7 +42,9 @@ On the upper right of the widget to set the time, select ![Time settin icon](/im
 After setting the time, select ![End icon](/img/ico-close.svg).
 
 :::note
+
 Depending on the data type of the widget, the time setting may not be available.
+
 :::
 
 ### Setting the output data options
@@ -54,15 +58,21 @@ By setting the output data options of the chart widget, you can select the desir
 -   Select ![More icon](/img/ico-more.svg) > ![Configuration icon](/img/ico-setting.svg). You can change the option details through the **_Chart Settings_** window. The options that can be set are as follows.
 
     -   **_Chart Type_**: This option allows you to display the current aggregated figures on the chart.
+
     -   **_Y axis Chart Max Value_**: The chart maximum value on the Y axis can be selected with one of **_Auto_** and **_Fix_**.
+
     -   **_Set Horizontal Line_**: Select **_+ Add_** to display the threshold or range as a horizontal line. You can apply multiple items added. After adding the horizontal line, select **_Apply_** to apply it to the chart.
+
     -   **_Show Chart Max Value_**: The maximum value of the graph is displayed on the chart.
+
     -   **_Sub-Chart_**: You can add a sub-chart to the main charts of the widget. Select a type of sub-chart and then select its layout, size, and whether or not to merge data. To apply to other widgets, select **_Apply to the entire widget_**. Sub-charts are useful to view data in various ways.
 
     After setting all options, on the left of the **_Chart Settings_** window, click ![Close icon](/img/ico-close.svg) or click the outside of the **_Chart Settings_** window.
 
 :::note
+
 Depending on the widget's data type, available options may differ.
+
 :::
 
 ### Changing the metrics widget data{#changedata-metric-widget}
@@ -71,19 +81,24 @@ You can change the data query conditions of the metrics widget.
 
 1.  In **_Flex Board_** > **_Edit Mode_**, on the upper right of the widget to change, select ![More icon](/img/ico-more.svg).
 
-  ![Changing the metrics widget data](/img/metric-widget-data.png)
+    ![Changing the metrics widget data](/img/metric-widget-data.png)
 
-1.  Select ![Edit icon](/img/ico-edit-metric.svg). The data setting edition window appears.
+2.  Select ![Edit icon](/img/ico-edit-metric.svg). The data setting edition window appears.
 
-  ![Metrics widget data editing](/img/metric-edit-window.png)
+    ![Metrics widget data editing](/img/metric-edit-window.png)
 
-1.  Change the settings referencing the following, and then select ![Apply icon](/img/left-arrow.svg) **_Apply to the Widget_**.
+3.  Change the settings referencing the following, and then select ![Apply icon](/img/left-arrow.svg) **_Apply to the Widget_**.
 
     -   Metrics options that are created by default when creating a widget appear on the tab.
+
     -   Metrics options are **_Category_**, **_Field_**, and **_Tag_**.
+
     -   The **_category_** currently restricts the editing function.
+
     -   In **_Field_** and **_Tag_**, multiple items can be selected. The chart data is grouped using the selected tag options.
+
     -   Select ![Search icon](/img/ico-btn-search.png) to query the original data.
+
     -   For mor information about **_Object Merge_** and **_Time Merge_**, see the [Data merge options](#datamerge-option).  
 
 ### Data merge options{#datamerge-option}
@@ -94,7 +109,7 @@ The metrics widget placed on the **_All Metrics_** list of the Flex board provid
 
 2.  Place the metrics widget on the layout.
 
-3.  메트릭스 위젯 오른쪽 위에 ![더보기 아이콘](/img/ico-more.svg) 버튼을 선택하세요.
+3.  On the upper right of the metrics widget, select ![더보기 아이콘](/img/ico-more.svg).
 
 4.  If a tag (e.g. agent name) option is selected, the data merge options appear. Depending on the widget size, the metrics option's location may differ.
 
@@ -102,13 +117,16 @@ The metrics widget placed on the **_All Metrics_** list of the Flex board provid
 
 Data merge provides the following methods: **_object merge_** and **_time merge_**.
 
--   **_Object Merge_**<br/>
+-   **_Object Merge_**
+
     It is used to group the chart data based on the tag (e.g. agent name) selected on the left. At this time, if the tags match among the data with different fields (e.g. CPU), the corresponding data is merged.
 
--   **_Time Merge_**<br/>
+-   **_Time Merge_**
+
     It is mainly used if the lookup time is too long. Data with the same fields in the original data are merged at regular time intervals (5 minutes or 1 hour) depending on the time range. This method is called "Time Merge."
 
--   **AWS CloudWatch 메트릭스**<br/>
+-   **AWS ColudWatch Metrics**
+
     In case of AWS monitoring metrics, the statistical method is added after the field name in the form of suffix. Data merging defaults reference this suffix.
 
     ![AWS ColudWatch Metrics](/img/blog_12.png)
@@ -123,7 +141,7 @@ Data merge provides the following methods: **_object merge_** and **_time merge_
 
 In **_Edit Mode_**, you can see the copied widget.
 
-## Deleting a widget
+## Delete Widget
 
 1.  Select ![More icon](/img/ico-more.svg) on the upper right of the widget. 
 2.  Select ![Delete icon](/img/ico-remove.svg).

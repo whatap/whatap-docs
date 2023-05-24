@@ -24,12 +24,14 @@ Set the proxy server address of the Whatap server in the Node agent (e.g. whatap
 
 WhaTap Proxy server listens on the port 6600. If there is no separate setting in the agent, the agent attempts to connect the port 6600.
 
-```ini title='whatap.conf 포트 설정'
+```ini title='whatap.conf'
 whatap.server.port=6600
 ```
 
 :::note
+
 wo proxy servers cannot use different ports. When using multiple proxy servers, the listening port must be the same.
+
 :::
 
 ### Communication connectivity and security
@@ -75,8 +77,14 @@ If the agent is disconnected from the server, it attempts to reconnect 3 times e
 
 {@include: ../common-items/_common-network.mdx}
 
--   **net_send_queue1_size** <span class='type'>Int</span><br/>
-    Default `512`<br/>It sets the size of the queue to be used for data transmission except for trace data.
+-   **net_send_queue1_size** <span class='type'>Int</span>
 
--   **net_send_queue2_size** <span class='type'>Int</span><br/>
-    Default `1024`<br/>It sets the size of the queue to be used for trace data transmission.
+    Default `512`
+
+    It sets the size of the queue to be used for data transmission except for trace data.
+
+-   **net_send_queue2_size** <span class='type'>Int</span>
+
+    Default `1024`
+
+    It sets the size of the queue to be used for trace data transmission.

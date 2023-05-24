@@ -9,43 +9,53 @@ tags:
   - Application
 ---
 
--   **whatap.stat_domain_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects transaction statistics for each domain.
+-   **whatap.stat_domain_enabled** <span class='type'>Boolean</span>
 
--   **whatap.stat_domain_max_count**<span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      Maximum number of records of transaction statistics for each domain that collects for 5 minutes.
+    Default `false`
 
--   **whatap.stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects the version-dependent statistics between callers and callees among multiple server transactions.
+    It collects transaction statistics for each domain.
 
--   **whatap.mtrace_spec** <span class='type'>String</span><br/>
-       Default `v1`<br/>
-       Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics.
-    :::note
+-   **whatap.stat_domain_max_count** <span class='type'>Int</span>
 
-    The setting is applied after Apache and PHP-FPM have been restarted.
+    Default `7000`
 
-    :::
+    Maximum number of records of transaction statistics for each domain that collects for 5 minutes.
 
--   **whatap.stat_mtrace_max_count** <span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      It collects the version-dependent statistics between callers and callees among multiple server transactions.
+-   **whatap.stat_mtrace_enabled** <span class='type'>Boolean</span>
 
--   **whatap.stat_referer_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects transaction statistics by referer.
+    Default `false`
 
--   **whatap.stat_referer_max_count**<span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      Maximum number of records of transaction statistics for each referer that collects by JVM for 5 minutes.
+    It collects the version-dependent statistics between callers and callees among multiple server transactions.
 
-<!-- 문의 남김 .. 해결-->
+-   **whatap.mtrace_spec** <span class='type'>String</span>
 
--   **whatap.stat_referer_format**<span class='type'>Int</span><br/>
-      Default `7000`<br/>
+    Default: `v1`
+
+    Set the application version of the current instance. You can arbitrarily set a string. This data is used for call statistics. 
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.stat_mtrace_max_count** <span class='type'>Int</span>
+
+    Default `7000`
+
+    It collects the version-dependent statistics between callers and callees among multiple server transactions.
+
+-   **whatap.stat_referer_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It collects transaction statistics by referer.
+
+-   **whatap.stat_referer_max_count** <span class='type'>Int</span>
+
+    Default `7000`
+
+    Maximum number of records of transaction statistics for each referer that collects by JVM for 5 minutes.
+
+-   **whatap.stat_referer_format** <span class='type'>Int</span>
+
+    Default `7000`
 
     | Value | Description                                |
     | ----- | ------------------------------------------ |
@@ -54,7 +64,6 @@ tags:
     | 2     | Domain and path (http://www.aa.com/aa.php) |
     | 3     | Path (_/aa.php_)                           |
 
-<!-- 기본값 "" none? .. 해결-->
+-   **whatap.okind** <span class='type'>String</span>
 
--   **whatap.okind**<span class='type'>String</span><br/>
-      It is arbitrarily assigned for the group topology. By setting multiple agents together, the topology can be checked by the group name.
+    It is arbitrarily assigned for the group topology. By setting multiple agents together, the topology can be checked by the group name.

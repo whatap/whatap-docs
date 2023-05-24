@@ -1,17 +1,31 @@
 To monitor the process usage of the database server, run a separate XOS agent process on the database server to collect data. You can also check the CPU usage of the active session.
 
 :::note
+
 For the method to set the database process monitoring using the XOS agent, see [the following](agent-manage#xos).
+
 :::
 
--   **xos** <span class='type'>String</span><br/>기본값 `0`<br/>
+-   **xos** <span class='type'>String</span>
+
+    Default `0`
+
     Set whether or not to use the XOS agent. If the value is `0`, the XOS agent is not used for collection. Enter the value as `1` or IP address of the XOS agent. If the IP address is specified, data is collected from only the XOS agent.
 
--   **xos_port** <span class='type'>String</span><br/>Default `3002`<br/>
+-   **xos_port** <span class='type'>String</span>
+
+    Default `3002`
+
     Set the port to communicate with the XOS agent. XOS agent can be communicated via UDP. If a firewall is set on that port, turn off it to allow UDP communication.
 
--   **xos_cpu_iowait** <span class='type'>Int</span><br/>Default `1`<br/>
+-   **xos_cpu_iowait** <span class='type'>Int</span>
+
+    Default `1`
+
     Set whether the CPU utilization collected from the XOS agent is to include the iowait value. If the value is set to `1`, the iowait value is included. If set to `0`, the value is not included.
 
--   **xos_mem_buffcache** <span class='type'>Int</span><br/>기본값 `0`<br/>
+-   **xos_mem_buffcache** <span class='type'>Int</span>
+
+    Default `0`
+
     Set whether the memory utilization collected from the XOS agent is to include the buffcache value. If the value is set to `1`, the buffcache value is included. If set to `0`, the value is not included.

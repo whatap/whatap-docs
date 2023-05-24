@@ -1,5 +1,8 @@
--   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>It enables the function to parse and normalize transaction URLs.
+-   **trace_normalize_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    It enables the function to parse and normalize transaction URLs.
 
     :::note
 
@@ -7,18 +10,28 @@
 
     :::
 
--   **trace_auto_normalize_enabled(\*)**<span class='type'>Boolean</span><br/>
-    Default `true`<br/>It enables automatic parsing of patterns by extracting them from annotations when normalizing transaction URLs.
+-   **trace_auto_normalize_enabled** <span class='type'>Boolean</span>
 
--   **trace_normalize_urls** <span class='type'>String</span><br/>
+    Default `true`
+
+    It enables automatic parsing of pattern values by extracting them from annotations when normalizing transaction URLs.
+
+-   **trace_normalize_urls** <span class='type'>String</span>
+
     Set transaction URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
 
     :::note
+
     For example, if declared as **/a/{v}/b**, **a/123/b** is replaced by **a/{v}/b**. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+
     :::
 
--   **web_static_content_extensions** <span class='type'>String</span><br/>
-    Default `js, htm, html, gif, png, jpg, css, swf, ico`<br/>Specify the extension to determine the static content. Transactions with extensions set here are excluded from transaction tracing and counting.
+-   **web_static_content_extensions** <span class='type'>String</span>
 
--   **trace_transaction_name_header_key** <span class='type'>String</span><br/>
+    Default `js, htm, html, gif, png, jpg, css, swf, ico`
+
+    Set the extension to determine the static content. Transactions with the set extensions are excluded from the transaction tracing and counting.
+
+-   **trace_transaction_name_header_key** <span class='type'>String</span>
+
     The value extracted from the set HTTP header key is added at the end of the transaction name.

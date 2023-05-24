@@ -1,0 +1,62 @@
+---
+id: analysis-function
+title: Analyzing the database
+description: It describes the database performance metrics that can be analyzed using the real-time monitoring.
+tags:
+  - Redis
+  - Database
+  - Statistics
+  - Analytics
+---
+
+Home > Select Project > **_Analysis_**
+
+It describes the database performance metrics that can be analyzed using the real-time monitoring.
+
+## Count trend
+
+Home > Select Project > **_Analysis_** > **_Counts Trend_**
+
+![Count Trend](/img/db-redis-count-trend.png)
+
+In **_Count Trend_**, you can check the following data.
+
+-   Database running trend during the day
+
+-   Key metrics for a specific time zone
+
+-   **_Active Sessions_**
+
+    Select the **_Active Sessions_** tab at the bottom of the screen. Check information of active sessions. For sessions running more than 10 seconds, they are displayed in <span class='slow'>yellow</span>. For sessions running more than 20 seconds, they are displayed in <span class='vslow'>red</span>.
+
+## Comparison between count trends
+
+Home > Select Project > **_Analysis_** > **_Counts Trend Comparison_**
+
+![Count Trend Comparison](/img/db-redis-compare-count-trend.png)
+
+You can compare the count trends for different dates. After setting the **_reference date_** and **_comparison date_**, select ![Search icon](/img/ico-btn-search.png).
+
+## Using the count trend chart
+
+In the count trend chart, you can use the following functions.
+
+![Count Trend 24 hours](/img/analysis-count-24.png)
+
+Select ![Layout icon](/img/ico-layout-set.svg) on the upper right of the screen. In the **_Layout Setting_** window, set it to **_1 x 3_** and then select **_Save_**. **_Time_** must be set to **_Last 24 hours_**. You can see the database key metrics in detail for the day, as follows:
+
+![Count trend checking by hour](/img/analysis-count-usage.png)
+
+-   If you click a specific time point of the metrics chart, the (![Leader line 1](/img/number-01.png)) area appears with red lines and the collected active sessions can be also displayed. 
+
+-   The active session data is collected every 5 seconds. You can search the data by selecting the ![Leader line 2](/img/number-02.png) 1-second cells at the bottom of the screen.
+
+-   To move the time by 1 minute, select ![Leader line 3](/img/number-03.png) ![Previous time icon](/img/ico-left-time.svg) or ![Next time icon](/img/ico-right-time.svg).
+
+-   To add or delete items in the detailed data cell, select ![Leader line 3](/img/number-03.png) ![Column icon](/img/ico-column-set.svg). If the **_Column Setting_** window appears, you can add or delete any item.
+
+-   Select the ![Leader line 3](/img/number-03.png) ![Filter icon](/img/ico-filter.svg) button and then apply a filter to the data cell header to sort only the desired data.
+
+-   You can download the data displayed at the bottom of the screen as a CSV file. Select ![Leader line 3](/img/number-03.png) ![Download icon](/img/ico-download.svg).
+
+{@include: ../common-items/_db-parameters.mdx} 

@@ -1,19 +1,25 @@
--   **stat** <span class='type'>String</span><br/>
+-   **stat** <span class='type'>String</span>
+
     Among Oracle monitoring data, set the stat metrics to be collected and processed by separating them with the comma. Use the following default values.
 
     ```ini title='whatap.conf'
     stat=logons current,user commits,session logical reads,CPU used by this session,DB time,enqueue waits,physical reads,physical writes,execute count,db block changes,opened cursors current,parse count (total),parse count (hard),sorts (memory)
     ```
 
--   **stat** <span class='type'>String</span><br/>
+-   **event** <span class='type'>String</span>
+
     Among Oracle monitoring data, set the event metrics to be collected and processed by separating them with the comma. Use the following default values.
 
     ```ini title='whatap.conf'
     event=db file sequential read,db file scattered read,enq: TX - row lock contention
     ```
 
--   **exclude_background** <span class='type'>String</span><br/>Default `3`<br/>
+-   **exclude_background** <span class='type'>String</span>
+
+    Default `3`
+
     Set whether or not to exclude the background session when collecting the number of sessions and session list among Oracle monitoring data.
+
     -   `0`: Not excluded
     -   `1`: Excludes the background session when collecting session lists.
     -   `2`: Excludes the background session when processing the session lists.

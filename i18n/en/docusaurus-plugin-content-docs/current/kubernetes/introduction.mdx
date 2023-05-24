@@ -60,9 +60,11 @@ Category is a name that identifies the metrics data collected from your project.
 Kubernetes monitoring targets are Kubernetes clusters and applications running on Kubernetes.
 
 -   Kubernetes Cluster Monitoring
+
     -   CPU, memory, disk (volume), and network for individual containers
     -   Kubernetes components that make up services such as namespace, deployment, ReplicaSet, and pod
     -   CPU, memory, disk, and network for individual nodes (host)
+
 -   Monitoring applications running on Kubernetes: Java, Node.js, Python, etc.
 
 The monitoring procedure to be explained later is also divided into a procedure for cluster monitoring and a procedure for application monitoring.
@@ -82,11 +84,15 @@ The monitoring procedure to be explained later is also divided into a procedure 
 1.  (Optional) When multiple namespaces exist in a cluster project, users can separate individual namespace projects from the WhaTap monitoring service. See [the following](create-name-space-project).
 
 :::tip
+
 A Kubernetes namespace is a mechanism for isolating resource groups within a single cluster in the environments with multiple teams and users. A list of namespaces within your Kubernetes cluster can be found through the `kubectl get namespace` command.
+
 :::
 
 :::note
+
 WhaTap Kubernetes Service's **cluster project** is a new name for the **master project**.
+
 :::
 
 ### Procedure for monitoring applications on Kubernetes

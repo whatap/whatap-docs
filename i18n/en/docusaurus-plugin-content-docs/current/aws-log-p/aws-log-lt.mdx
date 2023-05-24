@@ -1,0 +1,114 @@
+---
+id: aws-log-lt
+title: Live Tail
+description: It guides you to Live Tail of the AWS log monitoring.
+tags:
+  - AWS Log
+  - Log
+  - Live Tail
+  - UI
+draft: true
+---
+
+Home > Select Project > **_Dashboard_** > **_Live Tail_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Dashboard_** > **_Live Tail_** under Project Menu. In **_Live Tail_**, you can easily check the log data stream on the monitoring screen without accessing the server console. You can select necessary logs from numerous logs and quickly recognize the desired logs through the highlight function. 
+
+![Live Tail sc](/img/aws-log-p/log-live-tail.png)
+
+In **_Live Tail_**, complex logs can be easily accessed. You can search the logs in real time by using the functions such as **_Filter_** or **_Highlight_**, if necessary. The log data search cycle is 2 seconds. {@include: ../common-items/_log-ui-main-term.mdx}
+
+## ![](/img/number-01.png) filter area
+
+#### Apply Filter
+
+Applied filter filters to have the logs that match the entered conditions. Multiple filters can be entered. If the tags in the filters are the same, OR (`||`) is applied; otherwise, AND (`&&`) is applied. 
+
+You can directly enter a value in the input field or click the **_Filter_** input field to specify a filter. Separate keywords with spaces when entering values. If spaces are included in keywords, enclose them in _''_ or _""_ symbols. If _\\_ is included in a keyword surrounded by symbols, enter _\\\\_. ![Search icon](/img/ic-search-on-press.svg) If you select **_Search_**, the data with filters can be viewed in the ![number-s3](/img/number-03.png) area.
+
+![Applying filter](https://img.whatap.io/media/images/livetail_003_filter.png)
+
+#### Modifying the filter
+
+Enter a value in the filter and then click the specified value to modify it.\
+![](https://img.whatap.io/media/images/livetail_005_filter_input.png)
+
+#### Filter Expression
+
+The expression under the entered filter value is a preview of the filter expression for querying the log data. 
+![](https://img.whatap.io/media/images/livetail_006_filter_expression.png)
+
+#### Search Key
+
+In the following image, the blue boxed part is the search key for parsing. The search key can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log_** > **_Log Setting_**.
+![Search key](https://img.whatap.io/media/images/livetail_007_parsed_key.png)
+
+#### Filter input syntax
+
+It is a list of syntax rules that can be used upon entry of filter. **_Live Tail_** and **_Log Search_** use the same syntax rules.
+
+| Syntax rule   | Example       | Description                           |
+| ------------- | ------------- | ------------------------------------- |
+| include(+)    | \+ote-gateway | Filtering only with ote-gateway       |
+| exclude(-)    | \-ote-gateway | Filtering except ote-gateway          |
+| startWith(\*) | ERROR\*       | Filtering those that start with ERROR |
+| endWith(\*)   | \*ERROR       | Filtering those that end with ERROR   |
+
+## ![](/img/number-02.png) Content filter area
+
+#### Content Filter
+
+Only the logs containing the keyword in the content pieces are filtered. 
+
+![](https://img.whatap.io/media/images/livetail_008_contents_filter.png)
+
+-   Enter the filter in the input field and then click ![Icon](/img/ic-search.svg) **_Search_**. You can filter the log data on the client and then look it up in the ![number-s3](/img/number-03.png) area. 
+-   Content strings including the keyword are highlighted.
+-   You can filter by single or multiple keywords.
+
+<!-- whatap is good~whatap is the best -->
+
+#### Content filtering condition
+
+When filtering with multiple keywords, write as follows.
+
+| String to input     | Description                                                        | Result            |
+| ------------------- | ------------------------------------------------------------------ | ----------------- |
+| a b c               | Separate each keyword with a space.                                | a, b, c           |
+| "Whatap is good."   | To include spaces in keywords, wrap them in '' or "".              | Whatap is good.   |
+| "Whatap\\ is good." | If \\ is included in the keyword surrounded by "", enter it as \\. | Whatap\\ is good. |
+
+#### Highlight
+
+The highlight function is provided to easily identify the desired keywords.
+
+![Live Tail Highlight](/img/aws-log-p/lt-highlight.png)
+
+-   ![Icon](/img/ic-highlight.svg) Select **_Highlight_** to enter the keyword. 
+-   If you select **_Color_** on the left of the input field, available color menus appear. 
+-   Basically, different highlighting by the level (<span class='logwr'>WARN</span>, <span class='loger'>ERROR</span>, <span class='logft'>FATAL</span>) is applied.   
+-   The settings are saved in **Project Rules**.  
+
+#### Setting the table
+
+-   ![number-s](/img/number-02.png) The **_Table settings_** menu on the right of the area can be used in **_Live Tail_**, **_Log Search_**, and **_Log Trend_**. 
+-   ![Icon](/img/ic-setting.svg) If you select **_Table settings_**, the **_Add a Column_** and **_Table Content Setting_** options appear. 
+
+      ![](https://img.whatap.io/media/images/livetail_013_table_options.png)  
+
+    1.  **Column Settings** 
+
+    -   **_Add a Column_**: You can add a column to the table by selecting a tag.
+    -   **_Set column order_**: If a column is added, the column is added to the column sequence setting. Drag a desired column to change the column order.
+
+    2.  **Table settings**  
+
+      ![Log Table Content Setting](/img/aws-log-p/log-table-contents.png)
+
+    -   **_Content display or not_**
+        -   The checked items do not appear in the table. By default, both **_Log_** and **_Tag_** are all checked to display two items.
+        -   If you deselect the **_tag_** as follows, the log's **_tag_** does not appear in the table.
+            ![](https://img.whatap.io/media/images/livetail_017_table_column_visible.png)
+    -   **_Tag Management_**
+        -   When you add a tag in the tag management list, the log tags are listed in the added order. The sequences of tags can be changed by dragging.
+        -   If you disable an added tag, the disabled tag does not appear. 

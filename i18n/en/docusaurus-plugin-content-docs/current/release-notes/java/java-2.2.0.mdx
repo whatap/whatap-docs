@@ -17,7 +17,7 @@ Release date: 2022-11-01
 
 -   Added the data collection function for 2 seconds. 
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     fast_perf_enabled=false
     fast_perf_interval=2000
     fast_perf_gc_enabled=true
@@ -57,7 +57,7 @@ Release date: 2022-11-01
 
 -   Profile Debug option: Added the function to check the stack in the profile and agent log when a debug target pattern is registered.
 
-    ```ini title='whatap.conf 설정'
+    ```ini title='whatap.conf'
     hook_method_debug_enabled=true
     hook_method_debug_patterns=
     ```
@@ -67,13 +67,13 @@ Release date: 2022-11-01
     -   Added the `HashTable` class to be used in the _{AGENT_HOME}/plugin/{...}.x_ file.
     -   If `whatap.agent.api.Ref.h` is used, `HashTable` can be used.
 
-        ```java title='예시'
+        ```java title='Example'
         Class hashTable = (Class) whatap.agent.api.Ref.h;
         ```
 
 -   Adding the dedicated classes for TTA BMT: Can be used to demonstrate the Java agent.
 
-    ```java title='Java 클래스'
+    ```java title='Java Class'
     # map
     bmt.m.MyMap
 
@@ -96,7 +96,7 @@ Release date: 2022-11-01
     bmt.jdbc.Lock
     ```
 
-    ```java title='추적'
+    ```java title='Tracing'
     // Connection Pool tracing
     // ConnectionPoolASM
     target.put("bmt/ds/MyDataSource", MyDataSource.className);
@@ -128,13 +128,13 @@ Release date: 2022-11-01
 
     -   Added the step to display error-related data in the profile by adding settings.
 
-    ```ini title='whatap.conf 설정(기본값)'
+    ```ini title='whatap.conf'
     profile_error_step_enabled=false
     ```
 
 -   Adding the JMX setting: Added the function to additionally view the JMX data.
 
-    ```ini title='whatap.conf 설정'
+    ```ini title='whatap.conf'
     perfx_tomcat_enabled=false
     perfx_jmx_value_limit=100
     perfx_jmx_tag_from_objectname_enabled=false
@@ -174,7 +174,7 @@ Release date: 2022-11-01
 
 -   Added the function to collect TPS data collected with the 30-second average, in the 5-second average.
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     service_metrics_spike_enabled=false
     ```
 
@@ -186,7 +186,7 @@ Release date: 2022-11-01
 
     -   When the profile data is transmitted, the data is compressed except when the profile data in the queue is less than `profile_zip_min_size`.    
 
-    ```ini title='whatap.conf 설정'
+    ```ini title='whatap.conf'
     # Whether the profile data is compressed
      profile_zip_enabled=true
 
@@ -221,7 +221,7 @@ Release date: 2022-11-01
 
 -   Replaced the CustomCounter function collected by the plug-in with CustomTaskLoader instead of CustomCounterTask.
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     custom_task_enabled=true
     custom_task_jarfile={full_path}
     ```
@@ -236,7 +236,7 @@ Release date: 2022-11-01
 
 -   Modified to display the time difference between servers seen in the agent log when there is a difference in the server time between the agent and proxy.
 
-    ```bash title='에이전트 로그'
+    ```bash title='Agent log'
     # In case the time difference is 30 seconds or more 
     "fatal warning time-reverse (time difference) ms"
 
@@ -246,7 +246,7 @@ Release date: 2022-11-01
 
 -   Modified the options for user counting in the form of wclient_xxx. The previous option names can be used but new option names are recommended, starting from v2.2.0.
 
-    ```ini title='whatap.conf 설정(교체/추가)'
+    ```ini title='whatap.conf'
     # Replacement
     trace_user_method=IP
     wclient_trace_type=IP
@@ -288,7 +288,7 @@ Release date: 2022-11-01
 -   Modified to use `System.nanoTime()` when calculating the CounterPack elapsed time.
 
 -   Included the release version in the log output logo.
-    ```bash title='로고'
+    ```bash title='Logo'
       _       ____  ______           
     | |     / / /_/_  __/___ _____   ___  ___ 
     | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
@@ -300,7 +300,7 @@ Release date: 2022-11-01
 
 -   Modified the default value for the Java agent’s statistics collection from 5000 to 10000, checking every 2 seconds when sending statistics data.
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     stat_tx_max_count=10000
     ```
 

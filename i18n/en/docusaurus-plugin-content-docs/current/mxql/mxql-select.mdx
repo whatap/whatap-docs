@@ -25,9 +25,9 @@ Select which category to search the data from. This **command** and **operands**
 
 ### Operand
 
--   **String**: Searches data in a specific category.
+-   **String**: Searches data with a specific category. It always loads data with the `app_counter` category regardless of the lookup time.
 
-    ```sql title='조회시간에 상관없이 항상 app_counter 카테고리의 데이터를 로드합니다.''
+    ```sql
     CATEGORY app_counter
     TAGLOAD
     ```
@@ -57,19 +57,19 @@ Set to search the data extracted from specific `OID`, `OKIND`, and `ONODE`. It c
 
 You can set a single value as a string or set multiple values as an array of strings. 
 
-```sql title='예시 1'
+```sql title='Example 1'
 CATEGORY app_counter
 OID 1388369480
 TAGLOAD
 ```
 
-```sql title='예시 2'
+```sql title='Example 2'
 CATEGORY app_counter
 OID [1388369480, 1388369481] 
 TAGLOAD
 ```
 
-```sql title='예시 3'
+```sql title='Example 3'
 CATEGORY app_active_stat
 ONODE 1693789385
 TAGLOAD
@@ -99,7 +99,7 @@ The data searched by MXQL is used in the widget of the Flex Board. You can set i
 
 You can set only with JSON strings. 
 
-```sql title='예시'
+```sql title='Example'
 HEADER { apdex_satisfied$:I, apdex_tolerated$:I, apdex_total$:I,  apdex$:F, category: app_counter}
 OID $oid
 CATEGORY app_counter
@@ -107,7 +107,9 @@ TAGLOAD
 ```
 
 :::caution
+
 It must be passed depending on the format used by the widget of the Flex Board.
+
 :::
 
 ## TIME-RANGE{#time-range}

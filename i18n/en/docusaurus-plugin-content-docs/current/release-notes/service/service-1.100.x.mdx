@@ -4,9 +4,57 @@ title: Service 1.100.X
 toc_max_heading_level: 3
 ---
 
+## Service 1.100.19
+
+May 19, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, fixed the bug where the usage fee does not appear when there is no discount.</p>
+
+</div>
+
+## Service 1.100.18
+
+May 18, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> Added the missing `sql_param(query_param)` column in the lock tree table from the panel at the bottom of the following menus. </p>
+
+-   **_Dashboard_** > **_Instance Monitoring_**
+-   **_Dashboard_** > **_Multiple Instance Monitoring_**
+-   **_Analysis_** > **_Counts Trend_**
+
+</div>
+
+## Service 1.100.17
+
+May 17, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Project Subscription</UI>, fixed the bug where a whiteout occurs.</p>
+
+</div>
+
+## Service 1.100.16
+
+May 16, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Change</Status> In <UI>Dashboard</UI> > <UI>Transaction Map</UI>, as the <UI>TX Trace</UI> table columns, added the items for <UI>SQL Count</UI>, <UI>Login ID</UI>, and <UI>SQL Fetch Count</UI>.</p>
+
+</div>
+
 ## Service 1.100.15
 
-2023년 5월 12일
+May 12, 2023
 
 <div class='indentTab'>
 
@@ -30,7 +78,7 @@ May 11, 2023
 
 ### `Common`
 
-<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> 메뉴에서 탭 이동 시 선택한 조직의 파라미터가 유지되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> While moving the tab in <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, fixed the problem where the parameters in the selected organization are kept.</p>
 
 * * *
 
@@ -58,7 +106,7 @@ May 10, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 슬로우 쿼리 위젯의 차트가 보이지 않는 버그 수정</p>
+<p><Status>Fixed</Status> In Home > <UI>Flex Board</UI>, fixed the bug where the slow query widget does not appear.</p>
 
 </div>
 
@@ -88,29 +136,33 @@ May 9, 2023
 
 ## Service 1.100.8
 
-2023년 5월 4일
+May 4, 2023
 
 <div class='indentTab'>
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 목록</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+-   <Status>Fixed</Status> In <UI>Server Setting</UI> > <UI>Server List</UI>, deleted the inactive server deletion feature.
 
--   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 환경 변수</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+-   <Status>Fixed</Status> In <UI>Server Setting</UI> > <UI>Server Environment Variable</UI>, deleted the inactive server deletion feature.
 
 </div>
 
 ## Service 1.100.7
 
-2023년 5월 4일
+May 4, 2023
 
 <div class='indentTab'>
+
+### `Common`
+
+<p><Status>Change</Status> Removed the <UI>Integrated Dashboard</UI> and <UI>Integrated Metrics Board</UI> from the side menu and modified to access them only through <UI>Sitemap</UI>.</p>
+
+### `Log`
 
 -   <Status>Fixed</Status> Fixed the typo error in <UI>Log</UI> > <UI>Log Setting</UI> > <UI>Log Parser Setting</UI> > <UI>Input Filter</UI> > Filter Key (okineName → okindName).
 
 -   <Status>Fixed</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed the problem where the previous log appears when there is no log data searched.
-
--   <Status>Change</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI>를 사이드 메뉴에서 제거, <UI>사이트 맵</UI>을 통해서만 접근 가능하도록 변경
 
 </div>
 
@@ -130,6 +182,8 @@ April 28, 2023
 
 <div class='indentTab'>
 
+### `Log`
+
 <p><Status>Fixed</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed the bug where logs were searched for all categories rather than the selected category when initially searching for log data.</p>
 
 </div>
@@ -140,7 +194,7 @@ April 28, 2023
 
 <div class='indentTab'>
 
-### `Common`
+### `Log`
 
 <p><Status>Fixed</Status> Fixed the bug where logs are not queried intermittently when searching log profiles.</p>
 
@@ -372,6 +426,6 @@ April 26, 2023
 
 ### `ECS`
 
-<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Project Subscription</UI>, fixed the but where a whiteout occurs.</p>
+<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Project Subscription</UI>, fixed the bug where a whiteout occurs.</p>
 
 </div>

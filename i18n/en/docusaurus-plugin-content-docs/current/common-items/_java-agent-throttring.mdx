@@ -1,53 +1,77 @@
--   **throttle_enabled** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It activates the throttling function that limits the maximum concurrent processes for an application. All options that start with "throttle\_" work in `throttle_enabled=true`.
+-   **throttle_enabled** <span class='type'>Boolean</span>
 
-      The priorities of throttling control policies are as follows:
+    Default `false`
+
+    It activates the throttling function that limits the maximum concurrent processes for an application. All options that start with "throttle\_" work in `throttle_enabled=true`.
+
+    The priorities of throttling control policies are as follows:
 
     1.  Block: Services are blocked based on the URL and user IP address. It is applied first.
+
     2.  Passing: URLs applied to Passing take precedence over Reject policies.
+
     3.  Reject: Reject policies are applied after Block and Passing policies.
 
--   **throttle_limit** <span class='type'>Int</span><br/>
-    Default `10000`<br/>
+-   **throttle_limit** <span class='type'>Int</span>
+
+    Default `10000`
+
     If the number of concurrent requests (transactions) for each agent exceeds the set value, additional requests are rejected.
 
--   **throttle_rejected_message** <span class='type'>String</span><br/>
-    Default `too many request!!`<br/>
+-   **throttle_rejected_message** <span class='type'>String</span>
+
+    Default `too many request!!`
+
     Set the message to send to users when throttling is restricted.
 
--   **throttle_rejected_forward** <span class='type'>String</span><br/>
-        Set the guide page URL that is delivered to users when user requests are rejected due to over the limit. If multiple `throttle_rejected_message` settings have been set, `throttle_rejected_forward` is applied first.
+-   **throttle_rejected_forward** <span class='type'>String</span>
+
+    Set the guide page URL that is delivered to users when user requests are rejected due to over the limit. If multiple `throttle_rejected_message` settings have been set, `throttle_rejected_forward` is applied first.
+
     :::caution
-     If the guide pages are served in the same container, it can be an obstacle due to recursive calls because the pages are also considered as the number of concurrent processes. Thus, the guide page must be created as a static HTML page or must be outside.
+
+    If the guide pages are served in the same container, it can be an obstacle due to recursive calls because the pages are also considered as the number of concurrent processes. Thus, the guide page must be created as a static HTML page or must be outside.
+
     :::
 
--   **reject_event_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
+-   **reject_event_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     Set whether or not to issue an event notification when any user request is rejected.
 
--   **reject_event_interval** <span class='type'>MiliSecond</span><br/>
+-   **reject_event_interval** <span class='type'>MiliSecond</span>
+
     Default `30000`
+
     Alerts for duplicate events do not occur for the set time after an event notification for Reject has occurred.
 
--   **throttle_blocking_url** <span class='type'>String</span><br/>
+-   **throttle_blocking_url** <span class='type'>String</span>
+
     Set the URL to block (or reject) even when `throttle_limit` is not exceeded. It can urgently block URLs that cause system failures.
 
--   **throttle_blocking_ip** <span class='type'>ip_address</span><br/>
+-   **throttle_blocking_ip** <span class='type'>ip_address</span>
+
     Set to block users based on the IP address. It can be used to block DDoS attacks and users based on the IP address. Use comma (,) as the delimiter in case of multiple items.
 
--   **throttle_target_urls** <span class='type'>String</span><br/>
+-   **throttle_target_urls** <span class='type'>String</span>
+
     Apply the throttling function to the registered URLs. Use comma (,) as the delimiter in case of multiple items.
 
--   **throttle_passing_url** <span class='type'>String</span><br/>
+-   **throttle_passing_url** <span class='type'>String</span>
+
     Even when `throttle_limit` is exceeded, set the URL for processing. Use comma (,) as the delimiter in case of multiple items.
 
--   **throttle_passing_url_prefix** <span class='type'>String</span><br/>
+-   **throttle_passing_url_prefix** <span class='type'>String</span>
+
     Even when `throttle_limit` is exceeded, set the URLs for processing. Use comma (,) as the delimiter in case of multiple items.
 
--   **throttle_blocked_message** <span class='type'>String</span><br/>
-    Default `request blocked!!`<br/>
+-   **throttle_blocked_message** <span class='type'>String</span>
+
+    Default `request blocked!!`
+
     Set the message to be delivered to the users whose requests have been blocked.
 
--   **throttle_blocked_forward** <span class='type'>String</span><br/>
+-   **throttle_blocked_forward** <span class='type'>String</span>
+
     Set the URL to forward to the users whose requests have been blocked. If multiple `throttle_rejected_message` settings have been set, `throttle_rejected_forward` is applied first.

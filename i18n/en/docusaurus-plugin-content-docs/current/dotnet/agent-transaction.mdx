@@ -17,11 +17,20 @@ The agent traces the transaction performance and provides the following configur
 
 ### Transaction tracing
 
--   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span><br/> Default `3000`<br/>
+-   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+    Default `3000`
+
     In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
 
--   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span><br/> Default `8000`<br/>
+-   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+    Default `8000`
+
     In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a very slow section. If the transaction response time exceeds the set time, the number of very slow active transactions is included.
 
--   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span><br/>Default `30000`<br/>
+-   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+    Default `30000`
+
     Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.

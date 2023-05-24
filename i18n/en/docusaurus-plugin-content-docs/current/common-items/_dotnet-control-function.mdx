@@ -1,8 +1,8 @@
 -   **whatap.stat_enabled** <span class='type'>Boolean</span><br/>Default `true`<br/>
     It enables the statistical data tracing. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes. 
 
--   **whatap.license** <span class='type'>String</span><br/>기본값 `NONE`<br/>
-    에이전트 설치 시 서버로부터 부여받은 액세스 키를 입력합니다. 액세스 키에는 에이전트가 속한 프로젝트와 보안 통신을 위한 암호 키를 포함합니다.
+-   **license** <span class='type'>String</span><br/>Default `NONE`<br/>
+    To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
 
 -   **whatap.realtime_user_thinktime_max** <span class='type'>Milliseconds</span><br/>Default '300000'<br/>
     Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
@@ -16,38 +16,20 @@
     Transaction URLs and SQL strings correspond to text data.
     :::
 
--   **whatap.profile_method_enabled** <span class='type'>Boolean</span>
-    
-    Default `true`
-
-    The execution time in user function data that exceeds the value of the `whatap.profile_method_time` option can be seen in the transaction details.
-
+-   **whatap.profile_method_enabled** <span class='type'>Boolean</span><br/>Default `true`<br/>
+        The execution time in user function data that exceeds the value of the `whatap.profile_method_time` option can be seen in the transaction details.
     :::note
-    
-    To apply the set values, restart IIS.
-    
+    {@include: ../common-items/_donet-iis-restart.mdx}
     :::
 
--   **whatap.profile_method_time** <span class='type'>Milliseconds</span>
-    
-    Default `1000`<br/>
-    
-    The execution time that is collected in the `whatap.profile_method_enabled` option can be set.
-    
+-   **whatap.profile_method_time** <span class='type'>Milliseconds</span><br/>Default `1000`<br/>
+        The execution time that is collected in the `whatap.profile_method_enabled` option can be set.
     :::note
-    
-    To apply the set values, restart IIS.
-    
+    {@include: ../common-items/_donet-iis-restart.mdx}
     :::
 
--   **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
-    
-    Default `false`
-
-    The stack data of the user function can be seen in the transaction details.
-    
+-   **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/>
+        The stack data of the user function can be seen in the transaction details.
     :::note
-    
-    To apply the set values, restart IIS.
-    
+    {@include: ../common-items/_donet-iis-restart.mdx}
     :::

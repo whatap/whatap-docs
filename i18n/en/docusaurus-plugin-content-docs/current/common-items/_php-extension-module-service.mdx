@@ -84,7 +84,8 @@ After checking the PHP API version and PHP ZTS's availability, select a library 
 
 -   In case PHP ZTS is available - _whatap_zts\_[PHP API version].so_
 -   In case PHP ZTS is unavailable - _whatap\_[PHP API version].so_
-    ```bash title='PHP ZTS 지원하지 않을 경우 예시'
+    ```bash
+    # Example in case the PHP ZTS is not supported
     $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
     ```
 

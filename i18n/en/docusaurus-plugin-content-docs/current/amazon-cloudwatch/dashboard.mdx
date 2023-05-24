@@ -14,14 +14,20 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 ## Amazon CloudWatch
 
 -   **_EC2_**, **_EBS_**, **_ELB_**, **_AutoScaling_**, **_ElasticBeanstalk_**, and **_ElastiCache_** service dashboards are provided.
+
     ![cloudwatch ec2](/img/aws-cloudwatch-ec2.png)
+
 -   Namespaces are collected under the WhaTap metrics **category**. The notation format changes the Amazon CloudWatch namespace to **lowercase** and then changes "/" to "**\_**."
+
     > e.g. AWS/EC2 → **_aws_ec2_**
+
 -   Metrics are collected as the WhaTap **metrics**. The notation format is "CloudWatchMetric.Stat."
+
     > e.g. **_CPUUtilization.Average_**
 
 :::note
 
 -   For collected Amazon CloudWatch metrics, see [the following](https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html).
 -   In addition to the template dashboard provided by WhaTap, create a custom integrated dashboard, Flex board.
+
 :::

@@ -10,50 +10,74 @@ tags:
 
 The following options are related to the statistics collection for the data collected by the agent.
 
--   **stat_domain_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects transaction statistics for each domain.
+-   **stat_domain_enabled** <span class='type'>Boolean</span>
 
--   **stat_domain_max_count**<span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      Maximum number of records of transaction statistics for each domain that collects from applications for 5 minutes.
+    Default `false`
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects the version-dependent statistics between callers and callees among multiple server transactions.
+    It collects transaction statistics for each domain.
 
--   **stat_mtrace_max_count** <span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      It collects the version-dependent statistics between callers and callees among multiple server transactions.  
+-   **stat_domain_max_count** <span class='type'>Int</span>
 
--   **stat_login_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects transaction statistics for each login.
+    Default `7000`
 
--   **stat_login_max_count**<span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      Maximum number of records of transaction statistics for each login that collects from applications for 5 minutes.
+    Maximum number of records of transaction statistics for each domain that collects from applications for 5 minutes.
 
--   **stat_referer_enabled**<span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It collects transaction statistics by referer.
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
--   **stat_referer_max_count**<span class='type'>Int</span><br/>
-      Default `7000`<br/>
-      Maximum number of records of transaction statistics for each referer that collects by the application for 5 minutes.
+    Default `false`
 
--   **stat_tx_max_count**<span class='type'>Int</span><br/>
-      Default `5000`<br/>
-      The number of transaction statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+    It collects the version-dependent statistics between callers and callees among multiple server transactions.
 
--   **stat_httpc_max_count**<span class='type'>Int</span><br/>
-      Default `5000`<br/>
-      It limits the number of HTTP call statistics. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+-   **stat_mtrace_max_count** <span class='type'>Int</span>
 
--   **stat_error_max_count**<span class='type'>Int</span><br/>
-      Default `1000`<br/>
-      The number of error statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+    Default `7000`
 
--   **stat_useragent_max_count**<span class='type'>Int</span><br/>
-      Default `500`<br/>
-      The number of user agent statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.          
+    It collects the version-dependent statistics between callers and callees among multiple server transactions.
+
+-   **stat_login_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It collects transaction statistics for each log in.
+
+-   **stat_login_max_count** <span class='type'>Int</span>
+
+    Default `7000`
+
+    Maximum number of records of transaction statistics for each login that collects from applications for 5 minutes.
+
+-   **stat_referer_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It collects transaction statistics by referer.
+
+-   **stat_referer_max_count** <span class='type'>Int</span>
+
+    Default `7000`
+
+    Maximum number of records of transaction statistics for each referer that collects by the application for 5 minutes.
+
+-   **stat_tx_max_count** <span class='type'>Int</span>
+
+    Default `5000`
+
+    The number of transaction statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+
+-   **stat_httpc_max_count** <span class='type'>Int</span>
+
+    Default `5000`
+
+    It limits the number of HTTP call statistics. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+
+-   **stat_error_max_count** <span class='type'>Int</span>
+
+    Default `1000`
+
+    The number of error statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.
+
+-   **stat_useragent_max_count** <span class='type'>Int</span>
+
+    Default `500`
+
+    The number of user agent statistics are limited. It limits the maximum number of records for statistics collected for 5 minutes that are delivered to the server.          

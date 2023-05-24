@@ -8,37 +8,41 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 ### Summary
 
-<!-- ÷  개요, 피크타임 성능 요약, 지표별 평균 최댓값 안내 함께?-->
-
 ![](https://img.whatap.io/media/images/app_daily_report_01.png)
 
 **Summary** displays an overview of the application for the selected query period. **Peak Time Performance Summary** can display the time when the throughput was highest for the day and the metrics for the time period.
 
--   **Visitor**(**DAU**, Daily Active User)<br/>
+-   **Daily Active User** (**DAU**)
+
     Number of users who accessed during the selected query period.
 
--   **Request**<br/>
+-   **Request**
+
     Number of transactions that flowed in during the query period.
 
--   **Error Rate**<br/>
-    Rate of the number of errors divided by the number of transactions.
+-   **Error Rate**
 
--   **Fatal Event**<br/>
+    Rate of the error count divided by the transaction count.
+
+-   **Fatal Event**
+
     Number of metrics events in critical level that occurred during the query period.
 
--   **Application Server**<br/>
+-   **Application Server**
+
     Number of applications (agents) monitored during the query period.
 
--   **CPU Core**<br/>
+-   **CPU Core**
+
     Number of CPU cores during the query period.
 
--   **APDEX\*100** (Application Performance Index) <br/>
-    Customer performance satisfaction on the application during the query period.
+-   **APDEX\*100**(Application Performance Index) 
 
--   **Throughput**(TPS, Transactions Per Second)<br/>
-    It indicates the number of transactions processed per second and is the criterion for service performance metrics.
+    It indicates the customer performance satisfaction with the application for the query period.
 
-<!-- 지표별 평균 최댓값 안내 삽입? -->
+-   **Transaction Per Second** (**TPS**)
+
+    It indicates the number of transactions processed per second and is the reference for the service performance.
 
 ### Performance trend chart
 
@@ -98,16 +102,19 @@ It is a figure calculated by comparing the average value of the data for three d
 
 ![](https://img.whatap.io/media/images/app_weekly_report_01.png)
 
--   **Weekly Active User**<br/>
-    Number of users logged on for the week
+-   **Weekly Active User**
 
--   **Weekly Transaction Count**<br/>
-    Numbers of processed requests and responses returned for the week  
+    Number of users logged on for a week.
 
--   **APDEX\*100**<br/>
+-   **Weekly Transaction Count**
+
+    Number of responses returned for a week.  
+
+-   **APDEX\*100**
+
     It indicates the customer performance satisfaction with the application for the query period.    
 
-### Working rate
+### Working Rate
 
 ![](https://img.whatap.io/media/images/app_weekly_report_02.png)
 
@@ -145,22 +152,26 @@ For detailed information for each transaction, you can see in **_STAT/REPORT_** 
 
 This is the sorted result of the transactions received for the week in descending order based on the number of transactions.
 
--   **Transaction Count**<br/>
+-   **Transaction Count**
+
     It indicates the number of responses returned by the application after processing. It becomes a metric to see which service (URL) is most active during the week.
 
--   **Inc/Dec**<br/>
+-   **Inc/Dec**
+
     The figure is used to compare between the numbers of transactions for the week and the previous week of inquiry, and the rate is the figure as a percentage.
 
-#### Number of errors
+#### Error Count
 
 ![](https://img.whatap.io/media/images/app_weekly_report_05.png)
 
 This is the sorted result of transactions received during the week in descending order based on the number of errors. 
 
--   **Error Count**<br/>
+-   **Error Count**
+
     This statistical data allows you to check which services (URL) have many errors.
 
--   **Inc/Dec**<br/>
+-   **Inc/Dec**
+
     The figure is used to compare the error counts for the week and the previous week of inquiry, and the rate is the figure as a percentage.
 
 #### Average response time
@@ -171,8 +182,9 @@ This is the sorted result of transactions received during the week in descending
 
 {@include: ../common-items/_average-response-time.mdx} 
 
--   **Inc/Dec Time**<br/>
-    The figure is used to compare the response times between the week and the previous week of inquiry, and the rate is a percentage.
+-   **Inc/Dec Time**
+
+    The figure is used to compare the response times for the week and the previous week of inquiry, and the rate is the figure as a percentage.
 
 ### Top 10 top stacks
 
@@ -181,7 +193,8 @@ This is the sorted result of transactions received during the week in descending
 This is the rate of call frequency between steps based on the steps on the stack trace.
 You can compare data for the previous week and the data for the week of inquiry for that stack.
 
--   **Inc/Dec**<br/>
+-   **Inc/Dec**
+
     The figure is used to compare the stack call counts between the week and the previous week of inquiry, and the rate is a percentage.
 
 ### Top 10 SQL average response times
@@ -190,7 +203,8 @@ You can compare data for the previous week and the data for the week of inquiry 
 
 This is the sorted result of SQL queries by the average response time. You can compare the numbers of weekly cases and average times for each query statement.
 
--   **Inc/Dec Time**<br/>
+-   **Inc/Dec Time**
+
     The figure is used to compare the average SQL processing times between the week and the previous week of inquiry, and the rate is a percentage.
 
 ### Project errors
@@ -199,10 +213,12 @@ This is the sorted result of SQL queries by the average response time. You can c
 
 In the project error status, errors are compared for each week. You can see the classes and error messages of errors. 
 
--   **Error Count**<br/>
+-   **Error Count**
+
     This is the sorted result of errors in descending order after summing the same error classes and error messages.
 
--   **Inc/Dec**<br/>
+-   **Inc/Dec**
+
     The figure is used to compare the error counts between the week and the previous week of inquiry, and the rate is a percentage.
 
 {@include: ../common-items/_rate-of-change.mdx}  
@@ -217,23 +233,29 @@ In the project error status, errors are compared for each week. You can see the 
 
 In **Summary**, you can see the figures for **transaction count**, **user count**, **working rate**, **application count**, **core count**, and **Apdex\*100** for the month.
 
--   **Monthly Transaction Count**<br/>
-    Total number of transactions received for the month.
+-   **Monthly Transaction Count**
 
--   **Monthly User Count**(**MAU**, Monthly Active User)<br/>
-    Number of users who accessed during the selected query period.
+    Number of transactions that flowed in for a month.
 
--   **Working Rate**<br/>
+-   **Monthly Active User** (**MAU**)
+
+    Number of users logged on for a month.
+
+-   **Working Rate**
+
     Average value of working rates for each application for the month.
 
--   **Application Servers**<br/>
+-   **Application Count**
+
     Number of applications monitored during the month.
 
--   **All Cores**<br/>
+-   **All Cores**
+
     Number of CPU cores during the month.
 
--   **APDEX\*100** (Application Performance Index) <br/>
-    Customer performance satisfaction on the application during the query period.
+-   **APDEX\*100**(Application Performance Index)
+
+    It indicates the customer performance satisfaction with the application for the query period.
 
 ### Status for each application
 
@@ -247,40 +269,52 @@ For each monitoring target, you can see the data for **IP address**, **OS inform
 
 You can see the key metrics for a month with a chart. In the monthly application report, the metrics displayed on the chart are as follows:
 
--   **Customer Loyalty**<br/>
+-   **Customer Loyalty**
+
     This value quantifies how many users are using the service every day among week-based users.
 
--   **Daily Active User**<br/>
+-   **Daily Active User**
+
     This graph displays the number of users logged on for the day.
 
--   **Daily Transaction Count**<br/>
+-   **Daily Transaction Count**
+
     This graph displays the number of incoming transactions for the day.
 
--   **Transaction Count per Hour**<br/>
+-   **Transaction per Hour**
+
     This graph displays the numbers of incoming transactions for each hour.
 
--   **Error Count per Hour**<br/>
-    This graph displays the numbers of incoming transaction errors per hour by date.
+-   **Error Count per Hour**
 
--   **Active Transaction**<br/>
-    This graph displays the numbers of incoming active transactions per hour by date.
+    This graph displays the error counts of incoming transactions for each hour.
 
--   **Throughput**<br/>
+-   **Active Transaction**
+
+    This graph displays the numbers of active transactions for each hour.
+
+-   **Throughput**
+
     This graph displays the transaction throughput per second calculated every hour by date.
 
--   **Average Response Time per Hour**<br/>
-    This graph displays the average response times of incoming transactions per hour by date.
+-   **Average Response Time per Hour**
 
--   **Heap Use**<br/>
+    This graph displays the average response time of incoming transactions for each day.
+
+-   **Heap Use**
+
     This graph displays the used Java heap memory amount per hour by date.
 
--   **CPU SYS Utilization**<br/>
+-   **CPU SYS Utilization**
+
     This graph displays the CPU SYS usage % for the day by date.
 
--   **Process CPU Utilization**<br/>
+-   **CPU usage of process**
+
     This graph displays the utilization percentage of CPU used by the Java process for the day by date.
 
--   **APDEX\*100**<br/>
+-   **APDEX\*100**
+
     This graph displays the customer satisfactions for the day by date.
 
 :::note
@@ -303,22 +337,26 @@ According to the response speed, calculation is performed with 3-level classific
 
 This is the sorted result of transactions received for the month in descending order based on the number of transactions. 
 
--   **Transaction Count**<br/>
-    It indicates the number of responses returned by the application after processing. It becomes a metric to see which service (URL) was most active during the week.
+-   **Transaction Count**
 
--   **Inc/Dec**<br/>
+    It indicates the number of responses returned by the application after processing. It becomes a metric to see which service (URL) is most active during the month.
+
+-   **Inc/Dec**
+
     The figure is used to compare the transaction counts for the month and the previous month of inquiry, and the rate is a percentage.
 
-#### Number of errors
+#### Error Count
 
 ![](https://img.whatap.io/media/images/app_monthly_report_05.png)
 
 This is the sorted result of transactions received for the month in descending order based on the number of errors. 
 
--   **Error Count**<br/>
+-   **Error Count**
+
     This statistical data allows you to check which services (URL) have many errors.
 
--   **Inc/Dec**<br/>
+-   **Inc/Dec**
+
     The figure is used to compare transaction counts for the month and the previous month of inquiry, and the rate is a percentage.
 
 #### Average response time
@@ -329,7 +367,8 @@ This is the sorted result of transactions received for the month in descending o
 
 {@include: ../common-items/_average-response-time.mdx} 
 
--   **Inc/Dec Time**<br/>
+-   **Inc/Dec Time**
+
     The figure is used to compare the response times for the month and the previous month of inquiry, and the rate is a percentage.
 
 ### Top 10 top stacks
@@ -338,7 +377,8 @@ This is the sorted result of transactions received for the month in descending o
 
 This is the rate of call frequency between steps based on the steps on the stack trace. You can compare the data between the previous month and the month of inquiry for the stack.
 
--   **Inc/Dec**<br/>
+-   **Inc/Dec**
+
     The figure is used to compare the stack call counts between the month and the previous month of inquiry, and the rate is a percentage.
 
 ### Top 10 SQL average response times
@@ -347,7 +387,8 @@ This is the rate of call frequency between steps based on the steps on the stack
 
 This is the sorted result of SQL queries by the average response time. You can compare the numbers of monthly cases and average times for each query statement.
 
--   **Inc/Dec Time**<br/>
+-   **Inc/Dec Time**
+
     The figure is used to compare the average SQL processing times between the month and the previous month of inquiry, and the rate is a percentage.
 
 {@include: ../common-items/_rate-of-change.mdx}  

@@ -17,7 +17,9 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
 1.  Depending on the Linux installation environment, add the following Linux to the Elastic Beanstalk's **installation script**.
 
     :::note
-    Enter the `whatap.server.host` and `license` that is the **project access key** to your taste.
+
+    Enter the `whatap.server.host` and `license` that is the **Project access key** to your taste.
+
     :::
 
     <Tabs>
@@ -113,7 +115,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     </TabItem>
     </Tabs>
 
-2.  Modify the following **command**.  
+2.  Modify the following **command**.
 
     ```bash
     echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf

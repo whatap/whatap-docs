@@ -19,29 +19,29 @@ MXQL consists of **command** and **operands** on each line, separated by spaces.
 
 1.  In case there is no operand
 
-```sql
-TAGLOAD
-```
+    ```sql
+    TAGLOAD
+    ```
 
-1.  String (number or word)
+2.  String (number or word)
 
-```sql
-CATEGORY app_counter
-```
+    ```sql
+    CATEGORY app_counter
+    ```
 
-1.  String array
+3.  String array
 
-```sql
-SELECT [ time, pcode ]
-```
+    ```sql
+    SELECT [ time, pcode ]
+    ```
 
-1.  JSON string type
+4.  JSON string type
 
-```sql
-FILTER { key : tx_count, value : 5}
-```
+    ```sql
+    FILTER { key : tx_count, value : 5}
+    ```
 
-```sql title='샘플 MXQL 퀴리'
+```sql title='Sample MXQL query'
 CATEGORY app_counter
 TAGLOAD
 SELECT [ time, pcode ]
@@ -55,7 +55,9 @@ In Home > Select Project > **_Sitemap_** > **_Laboratory_** > **_MXQL Executor_*
 ![MXQL Executor](https://img.whatap.io/media/images/mxql-7.png)
 
 :::note
+
 In metrics, tags and fields are separated, but the **_MXQL Executor_** menu displays tags and fields without distinction.
+
 :::
 
 ## Step-by-step configuration
@@ -68,7 +70,7 @@ MXQL has can be configured step by step. The types of **commands** that can be u
 
 3.  **Metrics processing**: It is performed step by step for the metrics loaded in the previous step.
 
-```sql title='단계별 구성 예시'
+```sql title='Example'
 # Metrics selection step
 CATEGORY app_counter -- Category selection
 
@@ -90,7 +92,7 @@ The following is an example of the metrics returned after the metrics processing
 
 Sentences beginning with "#" or "--" are ignored.
 
-```sql title='주석 예시'
+```sql title='Example'
 # Data lookup setting
 CATEGORY app_counter
 
@@ -167,7 +169,7 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
     If the name of the category in which **_5 Minutes_** or **_1 Hour_** can be selected, is combined with `{m5}` or `{h1}`, instead of applying the merge option of the `GROUP` command, you can apply the `sum` option of the `UPDATE` command. 
 
-    ```sql title='모든 필드가 MetricValue타입으로 저장된 app_counter{m5} 카테고리를 사용'
+    ```sql
     CATEGORY app_counter{m5}
     TAGLOAD
     SELECT [time, pname, host_ip, pid, httpc_count]
@@ -179,26 +181,30 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
 The default output for MetricValue type fields is `avg`. `avg` is applied to MetricValue type fields unless a separate option has been set. The following two queries have the same result.
 
-```sql title='avg를 지정하지 않은 경우'
-CATEGORY app_counter
-TAGLOAD
-SELECT [time, pcode,pname, tps]
-GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-```
+-   **In case avg has not been set**
 
-```sql title='avg를 지정한 경우'
-CATEGORY app_counter
-TAGLOAD
-SELECT [time, pcode,pname, tps]
-GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-UPDATE {key:tps, value:avg}
-```
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode,pname, tps]
+    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+    ```
+
+-   **In case avg has been set**
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode,pname, tps]
+    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+    UPDATE {key:tps, value:avg}
+    ```
 
 ## Predefined MXQL query statement{#custom-mxql}
 
-You can perform MXQL by setting the path of a predefined MXQL query file without directly writing the MXQL query. For example, the MXQL queries to obtain "Number of active transactions by agent," "Number of cases by &lt;section&gt;," and "Last 15 seconds" are as follows:
+You can perform MXQL by setting the path of a predefined MXQL query file without directly writing the MXQL query. For example, the MXQL queries to obtain "Number of active transactions by agent," "Number of cases by \<section\>," and "Last 15 seconds" are as follows:
 
-```sql title='에이전트별 액티브TX 건수, 구간별 건수, 최근 15초'
+```sql
 HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 TIME-RANGE {duration:15s, etime:$etime}
 OIDSET {oid:$oid, okind:$okind, onode:$onode}
@@ -218,9 +224,9 @@ CREATE {key:_name_, from:oname}
 INJECT default
 ```
 
-If the above query has been registered in the collection server, you can search the same data just by entering the following. This method is used to read and call the content of the server file stored in the set path.
+If the above query has been registered in the collection server, you can search the same data just by entering the following. This method is used to read and call the content of the server file stored in the set path. Enter the pre-defined file path.
 
-```txt title='사전 정의한 파일의 경로를 입력합니다.''
+```txt
 /app/act_tx/act_tx_oid
 ```
 
@@ -244,7 +250,9 @@ SKIP [$skip_value]
 SKIP {value:$skip_value}
 ```
 
-```sql title='불가능한 경우 : key로 바인드 변수를 전달할 수 없습니다.'
+The bind variables cannot be passed with the key.
+
+```sql
 SKIP {$option:10}
 ```
 
@@ -253,7 +261,9 @@ Once you have used the bind variables in your query, the values to enter must be
 ![Bind variable setting example](https://img.whatap.io/media/images/mxql-1.png)
 
 :::note
+
 Bind variable names can only contain uppercase and lowercase characters. Numbers and special characters cannot be included in the bind variable names. 
+
 :::
 
 ### Data loading method
@@ -270,7 +280,9 @@ Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of 
 The main purpose of the function to set an MXQL query as a path without directly writing it is not to simply call a complex query, but to allow the administrator to write and use the query as intended. Therefore, rather than checking which queries are included in Yard, use them by registering queries by yourself. Because the case to use the `JOIN` command is a special case among the cases where MXQL queries are used, the administrator must register the query directly and use the path of the file.
 
 :::note
+
 You can save the query to register as a file in the path set in `mxql_root` of the _yard.conf_ file. (default ./mxql)
+
 :::
 
 ### Number of active transactions by agent, number of cases, last 15 seconds
