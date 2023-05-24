@@ -40,6 +40,8 @@ server-list.mdx -> 주석 삭제
 
 ../../project/ -> ../project/
 
+문장 끝 / 으로 끝나는 부분 확인해볼 것
+
 영문, 일본어에서 index(홈화면), reference 페이지의 pdf 다운로드 관련 내용 삭제할 것
 
 일본어 괄호 부분 수정
@@ -66,8 +68,13 @@ _db-instance-monitoring-basic-usage.mdx 파일에 코드 수정 필요
 
 _php-extension-whatap.mdx 문서 수정 필요
 
-redhat-centos.mdx 노트 원문 추가
+redhat-centos.mdx, freebsd.mdx, amazon-linux.mdx 노트 원문 추가
 
-redhat-centos.mdx
+php/agent-transaction.mdx 탭 공백 수정 필요
+
+
 
 aws-log-lt.mdx
+
+
+
