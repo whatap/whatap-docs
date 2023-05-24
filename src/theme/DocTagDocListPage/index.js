@@ -80,10 +80,12 @@ function DocItem({doc}) {
     parent = "Naver Cloud Monitor";
   } else if (hrefid.includes('oracle-cloud')) {
     parent = "Oracle Cloud Monitor";
+  } else if (hrefid.includes('aws-log')) {
+    parent = "AWS Log 모니터링";
   } else if (hrefid.includes('log')) {
     parent = "Log 모니터링";
-  } else if (hrefid.includes('rum')) {
-    parent = "브라우저 모니터링(RUM)";
+  } else if (hrefid.includes('browser')) {
+    parent = "브라우저 모니터링";
   } else if (hrefid.includes('telegraf')) {
     parent = "Telegraf";
   } else if (hrefid.includes('focus')) {
