@@ -836,7 +836,6 @@ const sidebars = {
                 'python/topology-basic',
                 'python/topology-type',
                 'python/topology-add-function',
-                // 'python/topology-settings'
               ],
             },
             {
