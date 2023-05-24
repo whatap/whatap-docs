@@ -1054,9 +1054,7 @@ const sidebars = {
                 'dotnet/trs-view',
                 'dotnet/trs-profile',
                 'dotnet/active-transactions',
-                'dotnet/trs-multi-trace',
                 'dotnet/collect-stacks',
-                // 'php/trs-endpoint-setting',
               ]
             },
             {
@@ -1124,11 +1122,6 @@ const sidebars = {
                 'dotnet/set-event-history',
                 'dotnet/set-event-format',
               ],
-            },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
             },
             {
               type: 'link',
@@ -1961,7 +1954,6 @@ const sidebars = {
             'mssql/agent-naming',
             'mssql/agent-aws',
             'mssql/agent-data',
-            // 'mssql/agent-xos-settings',
           ],
         },
         'mssql/agent-manage',
@@ -1984,7 +1976,6 @@ const sidebars = {
                 'mssql/instance-list',
                 'mssql/instance-monitoring',
                 'mssql/multi-instance-monitoring',
-                // 'mssql/slow-query',
               ],
             },
             {
@@ -2026,14 +2017,8 @@ const sidebars = {
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'mssql/analysis-function',
-                // 'mssql/metrics-intro',
-                // 'mssql/metrics-detect-anormal',
                 'mssql/log-viewer',
                 'mssql/stat',
                 'mssql/report-intro',
@@ -2058,11 +2043,6 @@ const sidebars = {
                 'mssql/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2114,7 +2094,6 @@ const sidebars = {
             'tibero/agent-naming',
             'tibero/agent-aws',
             'tibero/agent-data',
-            // 'tibero/agent-xos-settings', // Postgresql, Oracle
           ],
         },
         'tibero/agent-manage',
@@ -2137,7 +2116,6 @@ const sidebars = {
                 'tibero/instance-list',
                 'tibero/instance-monitoring',
                 'tibero/multi-instance-monitoring',
-                // 'tibero/slow-query',
               ],
             },
             {
@@ -2178,14 +2156,8 @@ const sidebars = {
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'tibero/analysis-function',
-                // 'tibero/metrics-intro',
-                // 'tibero/metrics-detect-anormal',
                 'tibero/log-viewer',
                 'tibero/stat',
                 'tibero/report-intro',
@@ -2415,7 +2387,6 @@ const sidebars = {
             'altibase/agent-naming',
             'altibase/agent-aws',
             'altibase/agent-data',
-            // 'altibase/agent-xos-settings', // Postgresql, Oracle
           ],
         },
         'altibase/agent-manage',
@@ -2437,8 +2408,6 @@ const sidebars = {
               items: [
                 'altibase/instance-list',
                 'altibase/instance-monitoring',
-                // 'altibase/multi-instance-monitoring',
-                // 'altibase/slow-query',
               ],
             },
             {
@@ -2479,14 +2448,8 @@ const sidebars = {
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'altibase/analysis-function',
-                // 'altibase/metrics-intro',
-                // 'altibase/metrics-detect-anormal',
                 'altibase/log-viewer',
                 'altibase/stat',
                 'altibase/report-intro',
@@ -2703,7 +2666,6 @@ const sidebars = {
             'mongodb/agent-naming',
             'mongodb/agent-aws',
             'mongodb/agent-data',
-            // 'mongodb/agent-xos-settings', // Postgresql, Oracle
           ],
         },
         'mongodb/agent-manage',
@@ -2726,7 +2688,6 @@ const sidebars = {
                 'mongodb/instance-list',
                 'mongodb/instance-monitoring',
                 'mongodb/multi-instance-monitoring',
-                // 'mongodb/slow-query',
               ],
             },
             {
@@ -2767,18 +2728,10 @@ const sidebars = {
               label: '분석과 통계',
               collapsible: true,
               collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'analysis/db-analysis-report-intro'
-              // },
               items: [
                 'mongodb/analysis-function',
-                // 'mongodb/metrics-intro',
-                // 'mongodb/metrics-detect-anormal',
                 'mongodb/log-viewer',
                 'mongodb/stat',
-                // 'mongodb/report-intro',
-                // 'mongodb/integrated-report',
               ]
             },
             {
@@ -2799,11 +2752,6 @@ const sidebars = {
                 'mongodb/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
             {
               type: 'link',
               label: 'Open API',
@@ -2961,7 +2909,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2.0.6',
@@ -2970,7 +2918,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2.0.6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
@@ -3041,7 +2989,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1.2.7',
@@ -3050,7 +2998,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1.2.7',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1.2.6',
                 'release-notes/k8s/k8s-1.2.5',
@@ -3847,7 +3795,11 @@ const sidebars = {
           label: '자원 삭제하기',
           id: 'aws-log/delete-aws-resource',
         },
-        'aws-log/aws-log-setting',
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'aws-log/aws-log-setting',
+        },
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
@@ -4616,9 +4568,7 @@ const sidebars = {
           items: [
             'server/agent-name',
             'server/agent-network',
-            'server/agent-remote-file-viewer',
             'server/agent-pcounter',
-            'server/agent-win32-api'
           ],
         },
         'server/advanced-feature',

@@ -494,12 +494,12 @@ a[class*='tagRegular'] {
     content: "";
   }
 }
-.searchResultItemPath {
+article[class*='searchResultItem'] > h2 > a > span {
   font-size: inherit;
   color: inherit;
-  // &::after {
-  //   content: " › ";
-  // }
+  &::after {
+    content: " › ";
+  }
 }
 .searchBarContainer_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module {
   margin-left: 2px !important;
@@ -581,6 +581,11 @@ code {
 main {
   .breadcrumbsContainer_src-theme-DocBreadcrumbs-styles-module {
     margin-bottom: 16px;
+  }
+  nav.theme-doc-breadcrumbs {
+    div.breadcrumbs-hidden {
+      display: none;
+    }
   }
   ul.breadcrumbs {
     li.breadcrumbs__item {
@@ -985,7 +990,7 @@ main {
       border: none;
       padding: 0 5px 0 5px;
     }
-    > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])) {
+    > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])), &:has(> img:only-of-type:not([alt*='アイコン'])) {
       margin: 20px 0;
       padding: 0;
     }
@@ -1009,7 +1014,7 @@ main {
     img[src*='k8s-download-yaml'] {
       width: 400px;
     }
-    img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'] {
+    img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'] {
       position: relative;
       top: 3px;
       max-height: 19px !important;
@@ -1191,6 +1196,9 @@ main {
         li:last-of-type {
           padding-bottom: 0;
         }
+      }
+      ul + ul {
+        margin-top: 4px;
       }
       p:first-of-type {
         padding: 0;

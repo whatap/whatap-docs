@@ -24,7 +24,7 @@ files: [
  {
   "source" : "/docs/**/*",
   "translation" : "/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%",
-  "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*"],
+  "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*", "/docs/weaving/**/*"],
   "escape_special_characters": 0,
  },
 ]

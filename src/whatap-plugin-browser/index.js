@@ -21,7 +21,7 @@ module.exports = function () {
                             t = h.getElementsByTagName(_a)[0];
                             t.parentNode.insertBefore(a, t);
                           })(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');`
-                    },
+                    }
                 ],
             };
         },
