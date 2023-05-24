@@ -34,7 +34,7 @@ Let's learn about the commands that process metrics with the MXQL syntax. The me
 
 Adds a line number field.
 
-```sql title='예시'
+```sql title='Example'
 CATEGORY agent_list
 FLEXLOAD
 ROWNUM
@@ -100,11 +100,14 @@ Select a field. Fields that are not selected are not passed to the next step.
 :::caution
 
 -   To select all fields, do not enter any operand. 
--   `like` and `notlike` cannot be set at a time. It needs to be divided in `SELECT` for setting.
+-   `like` and `notlike` cannot be set at a time. It needs to be divided in `SELECT` for setting. 
+
 :::
 
 :::note
+
 The `SELECT` command is also used when changing the field sequences. 
+
 :::
 
 ## CREATE{#create}
@@ -156,14 +159,16 @@ Adds a field.
 
 Deletes a field.
 
-```sql title='예시'
+```sql title='Example'
 CATEGORY app_counter
 TAGLOAD
 DELETE [pcode]
 ```
 
 :::caution
+
 Be sure to enter it as a string array. `DELETE` `pcode` does not work. (as of 2021-06-23)
+
 :::
 
 ## RENAME{#rename}
@@ -179,7 +184,9 @@ Changes the field name.
     ```
 
 :::caution
+
 `time` is the top priority sorting criterion in `ORDER`. Accordingly, if you change the name of `time`, [ORDER](#order) may not work.
+
 :::
 
 ## GROUP{#group}
@@ -207,15 +214,19 @@ The data is grouped.
     ```
 
 :::note
+
 The `merge` field must be set separately. However, if the `last`, `merge`, and `listup` properties are all specified, all `number` fields are selected as the `merge` field, and the fields other than `number` are selected as the `last` field.
+
 :::
 
 :::caution
-만약 레코드에 `time` 필드가 없으면 전체를 그룹핑합니다. 
+
+If the `time` field does not exist in the record, all data is grouped. 
 
 -   Before executing the `GROUP` command, the `time` field has not been set with the `SELECT` command.
 -   The name of the `time` field has been changed with the `RENAME` command.
--   The `time` field has been deleted with the `DELETE` command. 
+-   The `time` field has been deleted with the `DELETE` command.
+
 :::
 
 ## UPDATE{#update}
@@ -293,6 +304,7 @@ You can modify data values by setting the following options.
 -   `{datetime:'yyyyMMdd HH:mm:ss'}` contains colon (:), so it must be enclosed in single quotation marks ('') or double quotation marks ("").
 -   `pct: 90` indicates that the 90%th value is selected. However, the field must have been set as the `listup` field when executing the `GROUP` command. 
 -   Its format is [Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html).
+
 :::
 
 ## ORDER{#order}
@@ -325,7 +337,9 @@ The data is aligned.
     ```
 
 :::caution
+
 If the data contains the `time` field, `time` becomes the top priority for sorting, even if the key of `ORDER` does not include `time`.
+
 :::
 
 ## JOIN{#join}
@@ -358,13 +372,16 @@ The example of a sample query result is as follows:
 ![](https://img.whatap.io/media/images/mxql-14.png)
 
 :::note
+
 All data to be saved in Yard has the values for `time` and `oid`. This indicates the data has been collected at the time of (`time`) and from which agent (`oid`). These fields can be used as `pk`.
+
 :::
 
 :::caution
 
 -   The first query used in the `JOIN` command is a custom MXQL query, and the second query allows only the [query that can be set as path](mxql-guide#custom-mxql). 
 -   You can `JOIN` three or more categories by registering all MXQL queries using the `JOIN` command as a file in Yard. 
+
 :::
 
 ## LIMIT{#limit}
@@ -403,7 +420,9 @@ FILTERKEYS {keys: [oid], values: [497765289]}
 ```
 
 :::caution
+
 `keys` and `values`, not `key` and `value`. Be sure to note the plural form -s.
+
 :::
 
 ## FIRST-ONLY{#first-only}
@@ -431,7 +450,9 @@ SELECT [httpc_count, type]
 ```
 
 :::caution
+
 If `{backward : true}` is used in the data loading step, the result of this command may differ.
+
 :::
 
 ## TIME-FILTER{#time-filter}
@@ -473,11 +494,13 @@ ROWNUM
 ```
 
 :::caution
-프론트 단에서 `INJECT` 명령어의 오퍼랜드에 맵핑될 정보를 전달해주어야 합니다. 다음 예제는 키가 `default`로 설정된 값을 추가합니다.
+
+Data to be mapped to the operand of the `INJECT` command must be passed on from the front end. The following example shows how to add a value with the key set as `default`.
 
 Example of the passing INJECT value in **_Sitemap_** > **_MXQL Executor_**
 
 ![](https://img.whatap.io/media/images/mxql-example-5.png)
+
 :::
 
 ## ADJUST{#adjust}
@@ -583,4 +606,5 @@ Only the data with specific conditions is passed to the next step.
 
 -   A case where the data is 0 is also a case where the data exists. It is applied to `{exist: true}`.
 -   `{exist : false}` and `{notexist : false}` are impossible. Be sure to use `{notexist : true}` and `{exist : true}`.
+
 :::

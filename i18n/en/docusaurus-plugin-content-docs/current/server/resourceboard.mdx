@@ -21,41 +21,49 @@ It provides the **_CPU resource map_** to check the summary of all servers in th
 
 ## ![](/img/number-01.png) Fixed menu
 
-{@include: ../common-items/_dashboard-static-def.mdx}
+{@include: ../common-items/_dashboard-static-def.mdx} 
 
 ## ![](/img/number-02.png) Info panel
 
-<!-- 인포 패널 기존 안내
-
-예외: 심각 경고 unknown
-정상: normal, pause
-
- -->
-
 It provides the summary metrics for all servers registered in the project. They are updated every 10 seconds.
 
--   **Servers**\
-      It provides the total number of servers together with the number of servers with problems. If you select an area, the **_Server List_** page appears.
+-   **Servers**  
+
+    It provides the total number of servers together with the number of servers with problems. If you select an area, the **_Server List_** page appears.
+
     -   Exception status: <span class='vslow'>Danger</span>, <span class='slow'>Warning</span>
     -   Normal Server: <span class='snormal'>Medium</span>, <span class='k8s-normal'>Inactive</span>
--   **Total Cores**\
+
+-   **Total Cores**  
+
     Sum of cores for all servers.
--   **Avg CPU**\
-      Average CPU usage (%) for all servers. The gauges below are Average, Maximum, and Minimum.
--   **Avg Memory**\
-      Average memory usage (%) for all servers. The gauges below are Average, Maximum, and Minimum.
--   **Avg Disk**\
-      Average disk usage (%) for all servers. The gauges below are Average, Maximum, and Minimum.
--   **OS**\
-      Number of operating systems in the project such as Linux and Windows.
+
+-   **Avg CPU**  
+
+    Average CPU usage (%) for all servers. The gauges below are Average, Maximum, and Minimum.
+
+-   **Avg Memory**  
+
+    Average memory usage (%) for all servers. The gauges below are Average, Maximum, and Minimum.
+
+-   **Avg Disk**  
+
+    Average disk usage (%) for all servers. The gauges below are Average, Maximum, and Minimum.
+
+-   **OS**  
+
+    Number of operating systems in the project such as Linux and Windows
 
 ## ![](/img/number-03.png) CPU Resource Map
 
 This distribution chart displays the CPU usage of all servers. It displays data for 10 minutes and is updated every 10 seconds. The deepness of the cell color indicates that the server's resource usage is widely distributed in the area.
 
--   **Provision of detailed info**\
-      If you drag the cell area, the detailed information is provided.
-      ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring18.png)
+-   **Provision of detailed info**
+
+    If you drag the cell area, the detailed information is provided.
+
+    ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring18.png)
+
     -   The server list is sorted by the maximum value of the data collected in the range.
     -   Five servers are selected by default, and the usage trend of the selected servers are also provided in a multi-line chart.
     -   **_Click Refresh_** to refresh the current data. 

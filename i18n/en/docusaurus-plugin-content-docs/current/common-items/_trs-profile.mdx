@@ -13,38 +13,38 @@ If you select **_More_** on the upper right of the screen, you can see the trans
 
 **Transaction properties and their performances**
 
-| Properties       | Performance data                                                                                      |
-| ---------------- | ----------------------------------------------------------------------------------------------------- |
-| **Project Code** | WhaTap monitoring's project code                                                                      |
-| **OID**          | Application (agent) object ID                                                                         |
-| **Oname**        | Application object name                                                                               |
-| **Type**         | Application types - Java, Node.Js, PHP, Python, etc.                                                  |
-| **TID**          | Transaction ID                                                                                        |
-| **UrlHash**      | URL's hash value                                                                                      |
-| **UserToken**    | User token - User ID given by WhaTap                                                                  |
-| **Method**       | HTTP methods - GET, POST, PUT, HEAD, etc.                                                             |
-| **StartTime**    | Transaction start time                                                                                |
-| **EndTime**      | Transaction end time                                                                                  |
-| **Elapsed**      | Transaction execution time                                                                            |
-| **CpuTime**      | CPU occupied time                                                                                     |
-| **MemAlloc**     | Amount of memory used by transaction                                                                  |
-| **Ipaddr**       | Client IP                                                                                             |
-| **Country**      | Client's country                                                                                      |
-| **City**         | Client's city                                                                                         |
-| **SqlCount**     | SQL execution count                                                                                   |
-| **SqlTime**      | SQL Execution Time                                                                                    |
-| **FetchCount**   | Number of the records retrieved from SQL                                                              |
-| **FetchTime**    | Time taken to retrieve records (may overlap or involve other logics)                                  |
-| **HttpcCount**   | External HTTP call count                                                                              |
-| **HttpcTime**    | External HTTP call time                                                                               |
-| **ClientOs**     | Client OS                                                                                             |
-| **ClientOsPro**  | Client OS company                                                                                     |
-| **ClientType**   | Client type (e.g. browser)                                                                            |
-| **ClientName**   | Client browser name                                                                                   |
-| **UserAgent**    | Web client information. By parsing it, the information such as ClientOs and ClientOsPro is extracted. |
-| **MTID**         | Multi-server transaction ID                                                                           |
-| **Depth**        | It indicates what tier the multi-server transaction is in.                                            |
-| **Caller TID**   | TID of the transaction that called me                                                                 |
+| Properties                               | Performance data                                                                                      |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Project Code**                         | WhaTap monitoring's project code                                                                      |
+| **OID**                                  | Application (agent) object ID                                                                         |
+| **Oname**                                | Application object name                                                                               |
+| **Type**                                 | Application types - Java, Node.Js, PHP, Python, etc.                                                  |
+| **TID**                                  | Transaction ID                                                                                        |
+| **UrlHash**                              | URL's hash value                                                                                      |
+| **UserToken**                            | User token - User ID given by WhaTap                                                                  |
+| **Method**                               | HTTP methods - GET, POST, PUT, HEAD, etc.                                                             |
+| **StartTime**                            | Transaction start time                                                                                |
+| **EndTime**                              | Transaction end time                                                                                  |
+| **Elapsed**                              | Transaction execution time                                                                            |
+| **CpuTime**                              | CPU occupied time                                                                                     |
+| **MemAlloc**                             | Amount of memory used by transaction                                                                  |
+| **Ipaddr**                               | Client IP                                                                                             |
+| **Country**                              | Client's country                                                                                      |
+| **City**                                 | Client's city                                                                                         |
+| **SqlCount**                             | SQL execution count                                                                                   |
+| **SqlTime**                              | SQL Execution Time                                                                                    |
+| **FetchCount**                           | Number of the records retrieved from SQL                                                              |
+| **FetchTime**                            | Time taken to retrieve records (may overlap or involve other logics)                                  |
+| **HttpcCount**                           | External HTTP call count                                                                              |
+| **HttpcTime**                            | External HTTP call time                                                                               |
+| **ClientOs**                             | Client OS                                                                                             |
+| **ClientOsPro**                          | Client OS company                                                                                     |
+| **ClientType**                           | Client type (e.g. browser)                                                                            |
+| **ClientName**                           | Client browser name                                                                                   |
+| **UserAgent**                            | Web client information. By parsing it, the information such as ClientOs and ClientOsPro is extracted. |
+| **MTID** <span class='normal'>\*</span>  | Multi transaction ID                                                                                  |
+| **Depth** <span class='normal'>\*</span> | It indicates what tier the multi transaction is in.                                                   |
+| **Caller TID**                           | TID of the transaction that called me                                                                 |
 
 :::note
 
@@ -52,11 +52,33 @@ If you select **_More_** on the upper right of the screen, you can see the trans
 
 -   For more information about the **_Statistics_** menu, see [the following](analysis-apm-trs).
 
+<InDoc product='dotnet'>
+
+-   <span class='normal'>*</span>: The .Net monitoring does not support multi transactions.
+
+</InDoc>
+
+<Xclude product='dotnet'>
+
+-   For more information about Multi Transaction Trace, see [the following](trs-multi-trace).
+
+</Xclude>
+
 :::
 
 #### ![number2](/img/number-02.png) Transaction trace details
 
+<Xclude product='dotnet'>
+
 In ![number2](/img/number-02.png), the transaction execution records can be checked. The **_diagram_** chart displays the summay of the information details. The **_Multi TX Chart_** displays the associated data for each transaction. If you select **_Table View_** tab in the list, you can see the **_section time_**, **_elapsed time_**, **_step content_**, and such for each step and slowed sections can be also viewed. The transation trace details in the **_Table View_** tab are as follows.
+
+</Xclude>
+
+<InDoc product='dotnet'>
+
+In ![number2](/img/number-02.png), the transaction execution records can be checked. The **_diagram_** chart displays the summay of the information details. If you select **_Table View_** tab in the list, you can see the **_section time_**, **_elapsed time_**, **_step content_**, and such for each step and slowed sections can be also viewed. The transation trace details in the **_Table View_** tab are as follows.
+
+</InDoc>
 
 -   **_Step_**: Step occurrence sequence
 
@@ -92,7 +114,17 @@ If **_Tree View_** is selected, you can see the analysis in the form of tree vie
 
 ![Tree View](/img/tx-trace-tree.png)
 
-The **_Methods_** tab provides the analysis on the redundantly executed methods from the trace step information. The **_SQLs_** tab provides the analysis on the redundantly executed SQLs from the trace step information. The **_HTTP Calls_** tab provides the HTTP call count, time sum, average time, etc.The **_Multi TX Table_** tab provides multi-transaction details.
+-   The **_Methods_** tab provides the analysis of the duplicated methods that have been run in the trace step information. 
+
+-   The **_SQLs_** tab provides the analysis of the duplicated SQLs that have been run in the trace step information. 
+
+-   The **_HTTP Calls_** tab provides the call count, total time, and average time for HTTP calls. 
+
+<Xclude product='dotnet'>
+
+-   The **_Multi TX Table_** tab provides the information for multi transaction details.
+
+</Xclude>
 
 :::note
 

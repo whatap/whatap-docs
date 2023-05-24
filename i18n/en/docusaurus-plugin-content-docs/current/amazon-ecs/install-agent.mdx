@@ -15,17 +15,23 @@ WhaTap Amazon ECS Monitoring collects resource usage for each Docker container i
 
 ## Preliminary inspection
 
--   **AWS CLI**\
+-   **AWS CLI**
+
     For more information about installation, see [the following](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-configure.html).
--   **Amazon ECS CLI**\
+
+-   **Amazon ECS CLI**
+
     For more information about installation, see [the following](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/Welcome.html).
--   **Python 2.x / 3.x**<br/>
-    For analysis of the json document by the script, installation is required.
+
+-   **Python 2.x/3.x**
+
+    For analysis of the json documents by the script, installation is required.
 
 :::note
 
 -   After downloading the WhaTap image (_whatap/ecs_mon_) for installation, it is recommended to register it in the user registry.
 -   The **6600** port must be open to send data to the WhaTap server.
+
 :::
 
 ## Supported Platforms & Products
@@ -41,23 +47,27 @@ Items are distinguished depending on the launch type of Amazon ECS. Monitoring t
 The following monitoring procedures are also divided into the procedure for **_EC2 Launch Type_** monitoring and the procedure for **_Fargate Launch Type_** monitoring.
 
 :::note
+
 For more information about the Amazon ECS launch types, see [the following](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html).
+
 :::
 
 ## Monitoring procedure
 
 ![ecs install](/img/amazon-ecs-install.png)
 
-<!-- * ***상품 카탈로그*** 화면에서 Amazon ECS를 선택하고 프로젝트를 생성하세요. -->
-
 -   By referencing the installation guide section ![number-s](/img/number-01.png) tab, release the WhaTap Amazon ECS agent through the dedicated task or sidecar.
+
 -   By referencing the installation guide section ![number-s](/img/number-02.png) tab, start the WhaTap monitoring service by enabling the monitoring service.
 
 ### EC2 Launch Type
 
 1.  If you have created a project and then checked the **_Preliminary inspection_**, go to the installation guide section under **_Management_** > **_Agent Installation_**. 
+
 2.  ![number-s](/img/number-01.png) In the **_Create Task_** tab, select **_EC2 Launch Type_**.
+
 3.  Run the following script to create daemon type tasks. Add `CLUSTER` and `REGION` and then set `ACCESSKEY` and `WHATAP_HOST` to communicate with the collection server.
+
     ```bash title='Linux'
     #!/usr/bin/env bash
     export ACCESSKEY=
@@ -118,6 +128,7 @@ For more information about the Amazon ECS launch types, see [the following](http
     ```
 
 -   The following are the items required to run the script.
+
     -   `ACCESSKEY` (WhaTap project access key)
     -   `WHATAP_HOST` (WhaTap collection region IP)
     -   `REGION` (AWS Region)
@@ -126,70 +137,79 @@ For more information about the Amazon ECS launch types, see [the following](http
 ### Fargate Launch Type
 
 1.  If you have created a project and then checked the **_Preliminary inspection_**, go to the installation guide section under **_Management_** > **_Agent Installation_**. 
+
 2.  ![number-s](/img/number-01.png) In the **_Create Task_** tab, select **_Fargate Launch Type_**.
 
--   Run the script to create the AWS ECS API READONLY IAM ROLE. 
-    :::note
-    It is required for a WhaTap task to query the ECS service and collect service status in real time.
-    :::
--   The following are the items required to run the script.
-    -   `ACCESSKEY` (WhaTap project access key)
-    -   `WHATAP_HOST` (WhaTap collection region IP; multiple IPs are connected with `/`)
-    -   `REGION` (AWS Region)
-    -   `PROFILE` (ECS Profile)
-    -   `CLUSTER` (ECS Cluster)
-    -   `CLUSTER_CONFIG` (ECS Cluster Config)
-    -   `TASK_EXECUTION_ROLE` (Executing the WhaTap agent's ECS task)
-    -   `SUBNET_1` (WhaTap agent's Task SUBNET#1)
-    -   `SUBNET_2` (WhaTap agent's Task SUBNET#2)
-    -   \`SGGRP" (WhaTap agent's Task Security Group)
--   See the following example:
-    ```bash title='Linux'
-    #!/usr/bin/env bash
-    export REGION=xxxxx
-    export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
-    export WHATAP_ECS_POLICY_READONLY=WhatapEcsReadonly
-    cat >ecs_trust.json <<EOL
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "",
-                "Effect": "Allow",
-                "Principal": {
-                    "Service": "ecs-tasks.amazonaws.com"
-                },
-                "Action": "sts:AssumeRole"
-            }
-        ]
-    }
-    EOL
-    aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json
-    cat >ecs_readonly.json <<EOL
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "ecs:Describe*",
-                    "ecs:List*"
-                ],
-                "Resource": [
-                    "*"
-                ]
-            }
-        ]
-    }
-    EOL
-    aws iam --region $REGION create-policy --policy-name $WHATAP_ECS_POLICY_READONLY \
-        --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
-    export POLICY_ARN=$(cat policy_arn.txt)
-    aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
-        --policy-arn $POLICY_ARN | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
-    ```
+    -   Run the script to create the AWS ECS API Readonly IAM role. 
+
+        :::note
+
+        It is required for the WhaTap task to query the ECS service and collect service status in real time.
+
+        :::
+
+    -   The following are the items required to run the script.
+
+        -   `ACCESSKEY` (WhaTap project access key)
+        -   `WHATAP_HOST` (WhaTap collection region IP; multiple IPs are connected with `/`)
+        -   `REGION` (AWS Region)
+        -   `PROFILE` (ECS Profile)
+        -   `CLUSTER` (ECS Cluster)
+        -   `CLUSTER_CONFIG` (ECS Cluster Config)
+        -   `TASK_EXECUTION_ROLE` (Executing the WhaTap agent's ECS task)
+        -   `SUBNET_1` (WhaTap agent's Task SUBNET#1)
+        -   `SUBNET_2` (WhaTap agent's Task SUBNET#2)
+        -   \`SGGRP" (WhaTap agent's Task Security Group)
+
+    -   See the following example:
+
+        ```bash title='Linux'
+        #!/usr/bin/env bash
+        export REGION=xxxxx
+        export WHATAP_ECS_ROLE_READONLY=WhatapEcsReadonly
+        export WHATAP_ECS_POLICY_READONLY=WhatapEcsReadonly
+        cat >ecs_trust.json <<EOL
+        {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "",
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "ecs-tasks.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+        EOL
+        aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json
+        cat >ecs_readonly.json <<EOL
+        {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ecs:Describe*",
+                        "ecs:List*"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                }
+            ]
+        }
+        EOL
+        aws iam --region $REGION create-policy --policy-name $WHATAP_ECS_POLICY_READONLY \
+            --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
+        export POLICY_ARN=$(cat policy_arn.txt)
+        aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
+            --policy-arn $POLICY_ARN | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
+        ```
 
 3.  Start the whatap-single agent with the created IAM ROLE. Service status is collected in real time by using the ECS API. 
+
     ```bash title='Linux'
     #!/usr/bin/env bash
     export ACCESSKEY=
@@ -239,7 +259,9 @@ For more information about the Amazon ECS launch types, see [the following](http
         --cluster-config $CLUSTER_CONFIG \
         --ecs-profile $PROFILE --region $REGION
     ```
+
 4.  Release the WhaTap sidecar agent to the end user task as follows. Add `ACCESSKEY` and `WHATAP_HOST` as environment variables to allow communication with the collection server.
+
     ```bash title='Linux'
     version: '3'
     services:
@@ -259,8 +281,10 @@ For more information about the Amazon ECS launch types, see [the following](http
 
 ![number-s](/img/number-02.png) In the **_Start Monitoring_** tab, select **_Activate monitoring_** to start the monitoring service.
 
--   Monitoring service can be activated<br/>
-    ![Enabling monitoring](/img/amazon-ecs-monitoring-on.png)
+-   Enabling the monitoring service
 
--   Monitoring service cannot be activated<br/>
-    ![Disabling monitoring](/img/amazon-ecs-monitoring-off.png)
+    ![Monitoring Activation](/img/amazon-ecs-monitoring-on.png)
+
+-   Disabling the monitoring service
+
+    ![Monitoring Deactivation](/img/amazon-ecs-monitoring-off.png)

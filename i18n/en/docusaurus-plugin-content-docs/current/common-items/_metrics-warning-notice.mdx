@@ -8,7 +8,9 @@ Metrics events are used to set more specific and complex events than basic event
 -   Composite metrics event
 
 :::note
+
 For more information about the metrics, see [the following](metrics-intro).
+
 :::
 
 ## Metrics Event
@@ -30,6 +32,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
     ![Metrics Event - Category](/img/set-event-select-category.png)
 
     -   The **_category_** selection options display ![Leader line 1](/img/number-01.png) **_name_** and ![Leader line 2](/img/number-02.png) data collection interval, and ![Leader line 3](/img/number-03.png) **_key_**. When setting up an event, use the key value of the category.
+
     -   **_Category_** retrieves metrics data being collected from projects within the last 3 hours and displays them in a list. If the collection interval is not displayed in the **_category_** selection options, you can select **_Enter it yourself_** option to enter a category key.
 
 -   **_Level_**
@@ -44,12 +47,14 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
     -   If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
     -   **_Test alert_** triggers alerts based on the **_event name_**, **_category_**, **_level_**, and **_message_** to check messages.
 
--   **_Event Rule_**<br/>
+-   **_Event Rule_**
+
     ![Event Rule](/img/set-event-condition.png)
 
     By entering the ![Leader line 1](/img/number-01.png) field, ![Leader line 2](/img/number-02.png) operator selection, and ![Leader line 3](/img/number-03.png) threshold value, set the event rule.
 
--   **_Filtering event targets_**<br/>
+-   **_Filtering event targets_**
+
     ![Filtering event targets](/img/set-event-filtering.png)
 
     It filters the targets by entering the ![Leader line 1](/img/number-01.png) tag, ![Leader line 2](/img/number-02.png) operator selection, and ![Leader line 3](/img/number-03.png) filtering value. If no input, alerts are sent to all agents.
@@ -75,6 +80,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
     -   If the selected time is set to **_Not used_**, an alert is sent only when the events occur consecutively as many as the input.
     -   If the option, **_Notify when event status is resolved_** is activated, it is recommended to select **_Not used_** as the selected time.
     -   In the **_Category_** option, the collection cycle for the selected item is 5 seconds.
+
     :::
 
 -   **_Event pause_**: This option can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in **_Event History_**.
@@ -84,7 +90,9 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 -   **_Event Receiving Tag_**: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
 
     :::note
+
     In **_Alert_** > **_Notification Setting_**, you can set the tags in project members and 3rd-party plug-ins.
+
     :::
 
 ### **_Testing event rules_**
@@ -118,7 +126,9 @@ The Event Setting window appears.
 ![Composite Metrics Event Setting](/img/set-event-cmetric.png)
 
 :::note
+
 To set a composite metrics event, you have to have the **_event setting_** role.
+
 :::
 
 ### **_Query event data_**
@@ -135,7 +145,9 @@ Through the option to configure the time series charts, you can autocomplete **M
 
 ![Event data inquiry](/img/set-event-data-view.png)
 
--   **_Filter_**: Select an event condition target. Enter values for ![Leader line 1](/img/number-01.png) formula, ![Leader line 2](/img/number-02.png) tag, and ![Leader line 3](/img/number-03.png) filtering values to create filtering conditions.<br/>![Filter](/img/set-event-cmetric-filter.png)
+-   **_Filter_**: Select an event condition target. Enter values for ![Leader line 1](/img/number-01.png) formula, ![Leader line 2](/img/number-02.png) tag, and ![Leader line 3](/img/number-03.png) filtering values to create filtering conditions.
+
+    ![Filter](/img/set-event-cmetric-filter.png)
 
 -   **_Group by_**: Select the grouped metrics data. You can select multiple items.
 
@@ -159,7 +171,9 @@ Enter basic data for alert settings.
 
 -   **_Activate Events_**: You can select to enable or disable the events by clicking the toggle button.
 
--   **_Level_**: Select any level of <span class='vslow'>Critical</span>, <span class='slow'>Warning</span>, and <span style={{color: '#757575'}}>Info</span>. <br/>**_Notify when event status is resolved_**: You can select whether or not to send additional alerts when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
+-   **_Level_**: Select a level among <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>, and <span style={{color: '#757575'}}>Info</span>.
+
+    **_Notify when event status is resolved._**: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
 
 -   **_Title_**: Enter the title of the alert.
 
@@ -169,7 +183,8 @@ Enter basic data for alert settings.
 
 Enter the conditions to send alerts.
 
--   **_Time Range_**: Set the time range to view the **_MXQL_** real-time data for event conditions. You can use only the fields included for viewing the event data.<br/>
+-   **_Time Range_**: Set the time range to view the **MXQL** real-time data for event conditions. You can use only the fields included for viewing the event data.
+
     Composite metrics events retrieve metrics in DB for later use. Therefore, first specify the time range to query data. If you select 5 minutes for the data lookup time, the event generation conditions are checked by searching for the data collected for the last 5 minutes. You can set it short when you set any event for recent data, or long when you want to approach statistically for a wide period. For an actual use case, see [the following](#template).
 
 -   **_Condition_**: Enter the fields, calculation rules, and thresholds reflected in MXQL.
@@ -185,7 +200,9 @@ Set additional options that are related to receiving alerts.
 -   **_Event Receiving Tag_**: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
 
     :::note
+
     In **_Alert_** > **_Notification Setting_**, you can set the tags in project members and 3rd-party plug-ins.
+
     :::
 
 ### **_Testing event rules_**
@@ -220,7 +237,9 @@ For the event generation conditions and selection of event targets on metrics al
     3. "oid": text
     ```
 
-    ```java title='oname이 ott-1235일 경우'
+    ```java
+    // In case oname is ott-1235
+
     // Normal cases
     onname = 'ott-1235' or onname = "ott-1235"
 
@@ -236,7 +255,9 @@ For the event generation conditions and selection of event targets on metrics al
     3. 123: number
     ```
 
-    ```java title='oid가 123일 경우'
+    ```java
+    // In case oid is 123
+
     // Normal cases
     oid = 123
 

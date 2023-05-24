@@ -18,7 +18,7 @@ This process applies the WhaTap monitoring agent to the Python application runni
 
 Install the whatap-python package when building your Python application docker image.
 
-```docker title='python 3.7 버전'
+```docker title='python ver 3.7'
 RUN pip3 install --upgrade whatap-python
 ```
 
@@ -134,7 +134,7 @@ whatap-start-agent {application startup command}
 
 Modify the service execution file (_/etc/init/uwsgi.conf_) and then start the application with the agent startup command. Depending on the user environment, the path of the service executable file may differ.
 
-```python title='/etc/init.d/uwsgi 예시'
+```python title='/etc/init.d/uwsgi'
 description "uWSGI application server handling myapp"
 start on runlevel {2345}
 stop on runlevel {!2345}
@@ -145,7 +145,7 @@ exec whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 exec env WHATAP_HOME={PATH} {absolute path}/whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 ```
 
-```ini title='/etc/init/uwsgi.conf 예시'
+```ini title='/etc/init/uwsgi.conf'
 ...
 NAME="uwsgi"
 PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -181,7 +181,7 @@ whatap-start-agent {application startup command}
 
 Modify the service execution file (_/etc/init/gunicorn.conf_) and then start the application with the agent startup command. Depending on the user environment, the path of the service executable file may differ.
 
-```python title='/etc/init.d/gunicorn 예시'
+```python title='/etc/init.d/gunicorn'
 description "Gunicorn application server handling myapp"
 start on runlevel {2345}
 stop on runlevel {!2345}
@@ -192,7 +192,7 @@ exec whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 exec env WHATAP_HOME={PATH} {absolute path}/whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 ```
 
-```ini title='/etc/init/gunicorn.conf 예시'
+```ini title='/etc/init/gunicorn.conf'
 ...
 NAME="gunicorn"
 PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -218,7 +218,7 @@ do_start(){
 
 Modify the service execution file (_/etc/supervisor/conf.d/supervisor.conf_) and then start the application with the agent startup command. Depending on the user environment, the path of the service executable file may differ.
 
-```ini title='supervisor.conf 예시'
+```ini title='supervisor.conf'
 [program:app-uwsgi]
 environment = WHATAP_HOME={PATH}
 command = {absolute path}/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini

@@ -261,7 +261,9 @@ active_stack_thread_name_enabled=false
 ```
 
 :::note
+
 If the Yard version is low and the value is set to true, the agent connection is disconnected continually due to a protocol error.
+
 :::
 
 #### Adding the setting to display the asynchronous thread name
@@ -393,7 +395,7 @@ auto_thread_kill_enabled=false  # default value
 
 Modified to exclude the item, "Cookie" from the HTTP header.
 
-```ini title='whatap.conf - http header 기본 제외 항목'
+```ini title='whatap.conf'
 (Previous) cookie,accept,user-agent,referer
 (To-be) Cookie,cookie,accept,user-agent,referer
 ```

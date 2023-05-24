@@ -15,7 +15,7 @@ Check the method how to add JVM options in the application server environment us
 
 At the top of the _catalina.sh_ file, add the `JAVA_OPTS` environment variable.
 
-```bash title='{Tomcat 설치 경로}/bin/catalina.sh' showLineNumbers
+```bash title='{Tomcat_PATH}/bin/catalina.sh' showLineNumbers
 ########## WHATAP START ############
 WHATAP_HOME=/whatap
 WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
@@ -24,7 +24,9 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 ```
 
 :::note
+
 The `ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1` entry is used to apply the latest WhaTap agent for future update.
+
 :::
 
 ### **Windows**
@@ -33,7 +35,7 @@ The `ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1` entry is used to app
 
     At the top of the _catalina.bat_ file, add the `JAVA_OPT` environment variable.
 
-    ```batch title='{Tomcat 설치 경로}/bin/catalina.bat' {3} showLineNumbers
+    ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
     rem ########## WHATAP START ############
     set WHATAP_HOME=C:\whatap
     for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-*.jar"') do set last=%%f

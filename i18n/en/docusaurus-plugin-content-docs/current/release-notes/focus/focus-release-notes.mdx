@@ -45,7 +45,9 @@ A new version of the focus module has been released as shown below.
 -   Cause: Incorrect identification of metrics instances in notifications when collecting multiple instances
 -   Change: By adding the `-pk` option, the instance field for metrics has been assigned.
 
-```json title='k8s에서 pod의 재시작을 수집할때 데이터'
+**Data when collecting the restart of POD on K8S**
+
+```json
 { "Pod" : "whatap-master-agent-756d6f6567-hpvsc", "Restart" : 0 }
 { "Pod" : "whatap-virtual-david-oberg-754fd79f5f-9s5vd", "Restart" : 147 }
 { "Pod" : "whatap-virtual-david-oberg-754fd79f5f-j4pfw", "Restart" : 141 }
@@ -55,7 +57,7 @@ A new version of the focus module has been released as shown below.
 { "Pod" : "whatap-virtual-timothy-warren-79d4869b7c-65k2h", "Restart" : 145 }
 ```
 
-Setting the Pod field for instance identification
+**Setting the Pod field for instance identification**
 
 ```bash
 kubectl get pod -n virtual2 --no-headers |\

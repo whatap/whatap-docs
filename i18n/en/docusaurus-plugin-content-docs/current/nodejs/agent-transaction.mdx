@@ -17,29 +17,46 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_transaction-profile-active-color.mdx}
 
--   **hook_method_patterns** <span class='type'>String</span><br/>
-      It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
+-   **hook_method_patterns** <span class='type'>String</span>
 
-    ```ini title='예시'
+    It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
+
+    ```ini title='Example'
     hook_method_patterns=a.b.C1.*
     ```
 
--   **hook_method_access_public_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
+-   **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
--   **hook_method_access_protected_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
+    Default `true`
 
--   **hook_method_access_private_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
+    When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
 
--   **hook_method_access_none_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
+-   **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
--   **hook_method_ignore_prefixes** <span class='type'>String</span><br/>
-    Default `get,set`<br/>When setting a method trace, it sets the classes to exclude from the trace with a prefix.
+    Default `true`
 
--   **hook_method_ignore_classes** <span class='type'>String</span><br/>
+    When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
+
+-   **hook_method_access_private_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
+
+-   **hook_method_access_none_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
+
+-   **hook_method_ignore_prefixes** <span class='type'>String</span>
+
+    Default `get,set`
+
+    When setting a method trace, it sets the classes to exclude from the trace with a prefix.
+
+-   **hook_method_ignore_classes** <span class='type'>String</span>
+
     When setting a method trace, it sets the classes to exclude from the trace.
 
 ### HTTP transaction tracing
@@ -48,47 +65,80 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_transaction-profile-http.mdx}
 
--   **trace_ignore_url_set** <span class='type'>String</span><br/>
+-   **trace_ignore_url_set** <span class='type'>String</span>
+
     It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
--   **trace_ignore_url_set** <span class='type'>String</span><br/>
+-   **trace_ignore_url_prefix** <span class='type'>String</span>
+
     It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
 ### Non-HTTP transaction tracing
 
--   **hook_service_patterns** <span class='type'>String</span><br/>
+-   **hook_service_patterns** <span class='type'>String</span>
+
     It sets the start point pattern for non-HTTP transaction tracing.
 
--   **trace_background_socket_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
+-   **trace_background_socket_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
 
 ### Transaction tracing
 
--   **trace_service_port_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>Add the port number to the transaction name.
+-   **trace_service_port_enabled** <span class='type'>Boolean</span>
+
+    Default `fasle`
+
+    Add the port number to the transaction name.
 
 ### Multiple transaction trace
 
--   **mtrace_rate** <span class='type'>Int</span><br/>
-    Default `0`<br/>This option sets the rate of the MTID (Multi Transaction ID) issued when the first transaction occurs. It can be set from `0` to `100`. By tracing the MTID, you can check calls between all registered applications. For the applications belonging to the same project, you can check transaction traces immediately through the Caller & Callee function.
+-   **mtrace_rate** <span class='type'>Int</span>
 
--   **mtrace_spec** <span class='type'>String</span><br/>
-    Default `v1`<br/>Set the application version of the current instance. You can arbitrarily enter a string. This data is used for call statistics.
+    Default `0`
 
--   **mtrace_caller_key**<span class='type'>String</span><br/>
-    Default `x-wtap-mst`<br/>Set the caller key name to be used for MTID tracing.
+    This option sets the rate of the MTID (Multi Transaction ID) issued when the first transaction occurs. It can be set from `0` to `100`. By tracing the MTID, you can check calls between all registered applications. For the applications belonging to the same project, you can check transaction traces immediately through the Caller & Callee function.
 
--   **mtrace_callee_key**<span class='type'>String</span><br/>
-    Default `x-wtap-mst`<br/>Set the callee key name to be used for MTID tracing.
+-   **mtrace_spec** <span class='type'>String</span>
 
--   **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>Upon MTID tracing, the received callee ID is represented in the trace.
+    Default: `v1`
 
--   **mtrace_alltx_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>MTIDs of all transactions can be traced to link with the logging system like log4j.
+    Set the application version of the current instance. You can arbitrarily enter a string. This data is used for call statistics.
 
--   **mtrace_basetime** <span class='type'>Miliseconds</span><br/>
-    Default `100`<br/>If the value of `mtrace_alltx_enabled` is `true`, it may leave too many logs. In this case, it needs to reduce the amount of trace logging.
+-   **mtrace_caller_key** <span class='type'>String</span>
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>It collects correlation statistics between callers and callees. When applied to a caller, the caller details are sent. When applied to a callee, the caller-callee call statistics are sent to the collection server in URL units.
+    Default `x-wtap-mst`
+
+    Set the caller key name to be used for MTID tracing.
+
+-   **mtrace_callee_key** <span class='type'>String</span>
+
+    Default `x-wtap-tx`
+
+    Set the callee key name to be used for MTID tracing.
+
+-   **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    Upon MTID tracing, the received callee ID is represented in the trace.
+
+-   **mtrace_alltx_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    MTIDs of all transactions can be traced to link with the logging system like log4j.
+
+-   **mtrace_basetime** <span class='type'>Miliseconds</span>
+
+    Default `100`
+
+    If the value of `mtrace_alltx_enabled` is `true`, it may leave too many logs. In this case, it needs to reduce the amount of trace logging.
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It collects correlation statistics between callers and callees. When applied to a caller, the caller details are sent. When applied to a callee, the caller-callee call statistics are sent to the collection server in URL units.

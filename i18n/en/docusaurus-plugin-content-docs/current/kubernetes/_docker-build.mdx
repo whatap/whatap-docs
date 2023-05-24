@@ -1,10 +1,10 @@
 1.  Create a Docker build directory.
 
-```bash
-mkdir -p {Docker build Dir}
-```
+    ```bash
+    mkdir -p {Docker build Dir}
+    ```
 
-1.  Create the _whatap.conf_ file.
+2.  Create the _whatap.conf_ file.
 
     ```bash
     cat >{Docker build Dir}/whatap.conf <<EOL
@@ -18,7 +18,7 @@ mkdir -p {Docker build Dir}
 
     :::
 
-1.  To download the installation image for the dockerfile agent, download the file or copy the agent file to the image.
+3.  To download the installation image for the dockerfile agent, download the file or copy the agent file to the image.
 
     ```docker
     # Create the WhaTap agent directory in the user container
@@ -38,7 +38,7 @@ mkdir -p {Docker build Dir}
 
     :::
 
-2.  Before starting the application with a dockerfile command, check the agent version.
+4.  Before starting the application with a dockerfile command, check the agent version.
 
     ```docker
     docker run whatap/kube_mon ls /data/agent/micro/
@@ -47,7 +47,7 @@ mkdir -p {Docker build Dir}
     whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
     ```
 
-3.  Add the following to your Dockerfile application startup command: In the **X.Y.Z** part, enter the agent version you checked earlier.
+5.  Add the following to your Dockerfile application startup command: In the **X.Y.Z** part, enter the agent version you checked earlier.
 
     If the agent's file name is _whatap.agent-1.2.3.jar_, change the **X.Y.Z** part to **1.2.3**.
 
@@ -55,7 +55,7 @@ mkdir -p {Docker build Dir}
     -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
     ```
 
-    ```docker title='Dockerfile 예시' showLineNumbers {4,7}
+    ```docker title='Dockerfile' showLineNumbers {4,7}
     FROM openjdk:8-jdk-slim
     RUN mkdir -p /app && mkdir /whatap
     WORKDIR /app
@@ -72,12 +72,12 @@ mkdir -p {Docker build Dir}
 
     :::
 
-4.  Build the Docker.
+6.  Build the Docker.
 
-    ```docker
-    cd docker
-    docker build -t $Image_Name.
-    ```
+```docker
+cd docker
+docker build -t $Image_Name.
+```
 
 1.  Set container environment variables in your Kubernetes environment. Enter the environment variables for the application agent.
 

@@ -9,13 +9,13 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}
+{@include: ../common-items/_agent-signup-guide.mdx}  
 
 {@youtube: MWDFeegF6mQ}
 
 {@include: ../getting-started/_create-project-v2.mdx}  
 
-{@include: ../getting-started/_accesskey-v2.mdx} 
+{@include: ../getting-started/_accesskey-v2.mdx}
 
 ## Enabling the virtual environment
 
@@ -66,37 +66,49 @@ If installation is impossible with the pip command, download the installation fi
     ```
 
 :::note
+
 For more information about the agent file structure, see the Python agent file structure.
+
 :::
 
 <details>
 <summary>Python agent structure file</summary>
 The Python agent file consists of a tracer that extracts the data needed to monitor applications and passes it to the WhaTap collection server, and the elements that help the tracer send the data.
 
--   _whatap.conf_\
-      This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
+-   _whatap.conf_
 
--   _paramkey.txt_\
-      It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
-      The security key is stored in a file. To check the actual collected data through a browser, enter the security key in the file to retrieve the data. 
-      You can modify the security key by directly modifying the file. The related options are as follows: 
-    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
-          Default `false`
-    -   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>
-          Default `false`
+    This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
+
+-   _paramkey.txt_  
+
+    It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
+
+    The security key is stored in a file. To check the actual collected data through a browser, enter the security key in the file to retrieve the data. 
+
+    You can modify the security key by directly modifying the file. The related options are as follows: 
+
+    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+
+        Default `false`
+
+    -   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+
+        Default `false`
 
 </details>
 
 ## Agent CONFIG.
 
-1.  **WHATAP_HOME default path configuration**\
+1.  **WHATAP_HOME default path configuration**
+
     Specify the `$WHATAP_HOME` path for log and configuration files. It is recommended to create a new whatap directory.
 
     ```bash
     $ export WHATAP_HOME=[PATH]
     ```
 
-2.  **Configuration for the access key and collection server IP**\
+2.  **Configuring the access key and collection server IP**
+
     Execute the following command to generate _whatap.conf_ in the path specified in $WHATAP_HOME.
 
     ```bash
@@ -225,7 +237,8 @@ def simple_app(environ, start_response):
 
 ## Applying the agent and checking the service status
 
--   **Applying the WhaTap agent**<br/>
+-   **Application of the WhaTap Agent**
+
     Apply the WhaTap agent by adding the following code that directly calls the top API.
 
     ```bash
@@ -233,7 +246,8 @@ def simple_app(environ, start_response):
     whatap.agent
     ```
 
--   **Checking the service status**<br/>
+-   **Checking the service running**
+
     Execute the following command to check if the WhaTap Python service is running normally.
 
     ```bash

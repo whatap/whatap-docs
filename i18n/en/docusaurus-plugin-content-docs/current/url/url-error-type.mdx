@@ -26,9 +26,13 @@ In this case, the access for URL call is blocked.
 The path to reach the destination does not exist. Check whether the following items are entered correctly.
 
 -   Port assignment
+
 -   Protocol of the input URL
+
     :::note
-    Incorrect input of htts://, https://, etc.
+
+    Incorrect input of htts://, https://, etc.:::
+
     :::
 
 ## https
@@ -49,4 +53,5 @@ sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid
 It occurs when the agent cannot access the SSL certificate of the called site.
 
 -   It's an agent problem. Contact [support@whatap.io](mailto:support@whatap.io). Until now, several cases that are not compatible with the SSL certificate's algorithm have been identified.
+
 -   If it is possible to share a sample module that can call HTTPS protocol based on Java HttpClient, we will develop and deliver a similar agent.

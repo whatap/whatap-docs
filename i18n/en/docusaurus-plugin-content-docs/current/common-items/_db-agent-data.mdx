@@ -1,16 +1,31 @@
 The description of the settings to collect data from the database server
 
--   **multi_db_stat** <span class='type'>Int</span><br/>Default `1`<br/>
-    Set whether or not to collect the status of the multiple database. It is valid only for Oracle (in case of pluggable DB) and postgresql. Set whether or not to collect stats for each DB within the DB instance. To reduce the collection load, you can set it to `0`.
+-   **multi_db_stat** <span class='type'>Int</span>
 
--   **long_run_session_sec** <span class='type'>Second</span><br/>Default `10`<br/>
+    Default `1`
+
+    Set whether or not to collect the stat of the multiple database. It is valid only for Oracle (in case of pluggable DB) and postgresql. Set whether or not to collect stats for each DB within the DB instance. To reduce the collection load, you can set it to `0`.
+
+-   **long_run_session_sec** <span class='type'>Second</span>
+
+    Default `10`
+
     The session running longer than the set time is treated as the long run session (unit: second).
 
--   **tables_hour** <span class='type'>Int</span><br/>Default `5`<br/>
+-   **tables_hour** <span class='type'>Int</span>
+
+    Default `5`
+
     Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
 
--   **tables_min_row** <span class='type'>Int</span><br/>Default `10000`<br/>
+-   **tables_min_row** <span class='type'>Int</span>
+
+    Default `10000`
+
     When collecting the table information, table data with the number of rows smaller than the set value is not collected.
 
--   **tables_exclude_sys** <span class='type'>Boolean</span><br/>Default `false`<br/>
+-   **tables_exclude_sys** <span class='type'>Boolean</span>
+
+    Default `false`
+
     When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.

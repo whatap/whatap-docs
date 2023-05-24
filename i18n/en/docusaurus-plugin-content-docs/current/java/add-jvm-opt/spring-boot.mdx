@@ -35,7 +35,8 @@ java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
 
 -   Start the application by adding the JVM option related to reflection
 
-    ```bash title='Java 17 이상만 지원'
+    ```bash
+    # Only support Java 17 or later
     java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
     ```
 

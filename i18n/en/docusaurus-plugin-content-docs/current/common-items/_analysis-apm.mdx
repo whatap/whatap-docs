@@ -5,7 +5,9 @@ Home > Select Project > **_Analysis_** > **_Stack_**
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_Analysis_** > **_Stack_** under **_Project Menu_**. This feature allows you to check **_top stack_**, **_unique stack_**, and **_active stack_**. 
 
 :::note
+
 The application that can use the stack analysis function is **Java** and **Python**. 
+
 :::
 
 WhaTap can use the thread stacks collected every 10 seconds (default value) to analyze the performance delay sections in the method level.
@@ -94,8 +96,10 @@ By reviewing the call step details, you can determine whether there is any abnor
 Transactions in progress are called "active transactions." **The stacks regularly dumped by active transactions** are called "active stacks."
 
 :::note
+
 The WhaTap agent dumps **active stacks** for **active transactions** every 10 seconds (optional) and sends them to the server.\
 `active_stack_second=10`
+
 :::
 
 If **_Active Stack_** is selected, you can check the collected active stacks on the chart. With statistical data for every 5 minutes, the **_active transaction count_** is displayed with the bar chart and the **_TPS_** with the line chart. 
@@ -105,7 +109,9 @@ If you click the bar, the active transaction information for the clicked period 
 ![ast](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring29.png)
 
 :::note
+
 For more information about active transaction, see [the following](active-transactions).
+
 :::
 
 \#{@include: ../common-items/_compact-active-stacks.mdx}
@@ -120,16 +126,19 @@ The following is an example to view the details for a specific period in **_Stac
 
 1.  In **_Stack_** > **_Top Stack_**, check the top stack information.
 
-  ![tst-view](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring31.png)
+    ![tst-view](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring31.png)
 
-1.  Check the class and method from the top items in order of share.
+2.  Check the class and method from the top items in order of share.
 
-    -   Top stack with the **highest** 79.92% share<br/>
+    -   Top Stack with the **highest** proportion of 79.92%
+
         `org.apache.logging.log4j.core.layout.TextEncoderHelper.copyDataToDestination()`
-    -   Top stack with the **second highest** 8.01% share<br/>
+
+    -   Top Stack with the **second highest** proportion of 8.01%
+
         `sun.misc.Unsafe.park()` 
 
-2.  You can check the trends for each time period with the histogram.
+3.  You can check the trends for each time period with the histogram.
 
     ![history](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring30.png)
 
@@ -138,11 +147,11 @@ The following is an example to view the details for a specific period in **_Stac
 
     The first and second-highest top stacks are all related with logging. In other words, it can be seen that this system spends approximately 90% of the execution time for logging.    
 
-3.  Based on the confirmed market share, the expected effects of improvement are calculated.  
+4.  Based on the confirmed market share, the expected effects of improvement are calculated.  
 
     In the example, the rate of `copyDataToDestination()` 79.92% and the rate of `sun.misc.Unsafe.park()` 8.01% are percentages of time while running the service. If the `copyDataToDestination()` share is reduced by half, the performance can be improved by 44% based on the response rate.
 
-4.  Review the improvement plan based on the top stack information.
+5.  Review the improvement plan based on the top stack information.
 
     ```java title='org.apache.logging.log4j.core.layout.TextEncoderHelper.copyDataToDestination()'
     private static void copyDataToDestination(final ByteBuffer temp, final ByteBufferDestination destination) {

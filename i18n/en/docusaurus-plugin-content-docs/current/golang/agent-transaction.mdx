@@ -17,32 +17,55 @@ Through the configuration in _whatap.conf_, it collects HTTP parameters and HTTP
 
 ### whatap.conf configuration
 
--   **grpc_profile_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>Set whether or not to collect the gRPC (Google Remote Procedure Call) data.
+-   **grpc_profile_enabled** <span class='type'>Boolean</span>
 
--   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>Set whether or not to collect the client stream method.
+    Default `true`
 
--   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>Set whether or not to collect the server stream method.
+    Set whether or not to collect the Google Remote Call (gRPC) data.
 
--   **grpc_profile_ignore_method** <span class='type'>String</span><br/>
-    Default `agent`<br/>It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
+-   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
 
--   **grpc_profile_stream_method** <span class='type'>String</span><br/>
+    Default `true`
+
+    Set whether or not to collect the client stream methods.
+
+-   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    Set whether or not to collect the server stream methods.
+
+-   **grpc_profile_ignore_method** <span class='type'>String</span>
+
+    Default `agent`
+
+    It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
+
+-   **grpc_profile_stream_method** <span class='type'>String</span>
+
     Configure the set stream method as a separate transaction. For multiple values, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search.
 
--   **grpc_profile_stream_identify** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>Stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added.
-    ```ini title='예시'
+-   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added.
+
+    ```ini title='whatap.conf'
     grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
     ```
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>Set whether or not to collect HTTP parameters among gRPC data.
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>Set whether or not to collect HTTP headers among gRPC data.
+    Default `false`
+
+    Set whether or not to collect HTTP parameters among the gRPC data.
+
+-   **profile_http_header_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    Set whether or not to collect HTTP headers among the gRPC data.
 
 ## Web transaction trace
 

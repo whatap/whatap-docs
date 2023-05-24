@@ -14,6 +14,156 @@ toc_max_heading_level: 3
 
 :::
 
+## Preview 1.101.24
+
+May 19, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, fixed the bug where the usage fee does not appear when there is no discount.
+
+-   <Status>Fixed</Status> Fixed the problem where the previous page does not appear because <code>org=undefined</code> has been entered in the query parameter when user clicks the profile icon, goes to <UI>Manage Account INFO.</UI>, and then tries to go to the previous page (by clicking Back).
+
+* * *
+
+### `Application`
+
+<p><Status>Change</Status> In <UI>Dashboard</UI> > <UI>Transaction Map</UI>, as the <UI>TX Trace</UI> table columns, added the items for <UI>SQL Count</UI>, <UI>Login ID</UI>, and <UI>SQL Fetch Count</UI>.</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Change</Status> In <UI>Log</UI> > <UI>Log Search</UI>, modified to enter the value, `none` as the key when adding a category while only a key has been entered in the filter with no value assigned.
+
+-   <Status>Change</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed a typo error (for the term, `spacing`) among the terms in the content filter tooltips.
+
+-   <Status>Change</Status> In <UI>Log Search</UI>, modified not to automatically attach the prefix, `+` when `-` has been entered as the search value's prefix upon entry of a filter.
+
+</div>
+
+## Preview 1.101.23
+
+May 19, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Change</Status> In <UI>Log</UI> > <UI>Log Setting</UI>, unified the mixed terms.</p>
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI>, fixed the flickering symptom while loading charts in the <UI>error message table</UI>.</p>
+
+</div>
+
+## Preview 1.101.22
+
+May 18, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, fixed the bug where the app-related category logs cannot be viewed when using <UI>Log</UI> > <UI>Log Search</UI> after selecting a group.</p>
+
+</div>
+
+## Preview 1.101.21
+
+May 18, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Multiple Instance Monitoring</UI>, changed the selection option from <b>Database</b> to <UI>Instance</UI>.
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance List</UI>, added the function to align the table and adjust the column width to compensate for text truncation in the <UI>Event</UI> window that appears by selecting the <b>Fatal</b> or <b>Warning</b> icon in the <UI>Status</UI> column.
+
+</div>
+
+## Preview 1.101.20
+
+May 18, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Change</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, modified to search logs based on the <code>microOid</code> when using the <UI>Log</UI> > <UI>Log Search</UI> function on the summary view panel in case of the app-related category.</p>
+
+</div>
+
+## Preview 1.101.19
+
+May 18, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Fixed the widget MXQL in the <b>Server Resource Plus</b> dashboard.
+
+-   <Status>Change</Status> Added and reorganized the <UI>Log RPS Trend</UI> widget metric for the <b>Log RPS Board</b> dashboard template.
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> Added the missing `sql_param(query_param)` column in the lock tree table from the panel at the bottom of the following menus. </p>
+
+-   **_Dashboard_** > **_Instance Monitoring_**
+
+-   **_Dashboard_** > **_Multiple Instance Monitoring_**
+
+-   **_Analysis_** > **_Counts Trend_**
+
+</div>
+
+## Preview 1.101.18
+
+May 17, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Project Subscription</UI>, fixed the bug where a whiteout occurs.</p>
+
+</div>
+
+## Preview 1.101.17
+
+May 16, 2023
+
+<div class='indentTab'>
+
+<p><Status>Change</Status> In <UI>Sitemap</UI> > <UI>User Behavior</UI>, modified to search the user behaviors for all accounts with the member management role.</p>
+
+</div>
+
+## Preview 1.101.16
+
+May 16, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Change</Status> In <UI>My Usage</UI> > <UI>Usage</UI>, modified to provide the average usages for each time.</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> Fixed the symptom where part of the <UI>Log Search</UI> and <UI>Event</UI> tabs in the container map's summary view panel.</p>
+
+</div>
+
 ## Preview 1.101.15
 
 May 11, 2023
@@ -110,49 +260,53 @@ May 3, 2023
 
 ### `Database`
 
--   <Status>Change</Status> <UI>통계/보고서</UI> > <UI>테이블 사이즈 증감</UI> 메뉴에서 <UI>CSV 다운로드</UI> 버튼을 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼으로 변경
+-   <Status>Change</Status> In <UI>STAT/REPORT</UI> > <UI>Table Size Increase</UI>, changed the <UI>Download CSV</UI> button to <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' />.
 
--   <Status>Fixed</Status> 다음 메뉴 경로에서 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼을 선택하면 나타나는 드롭다운 메뉴 항목을 클릭한 영역에 따라 다운로드 기능이 작동하지 않는 문제 수정
+-   <Status>Fixed</Status> In the follow menu path, fixed the problem where the download feature does not work depending on the region clicked on the drop-down menu item when the <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> button is selected.
 
-    -   <UI>통계/보고서</UI> > <UI>테이블 사이즈 증감</UI>
+    -   <UI>STAT/REPORT</UI> > <UI>Table Size Increase</UI>
 
-    -   <UI>통계/보고서</UI> > <UI>SQL 통계</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI> 탭
+    -   <UI>STAT/REPORT</UI> > <UI>SQL Statistics</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI> tab
 
 </div>
 
 ## Preview 1.101.09
 
-2023년 5월 4일
+May 4, 2023
 
 <div class='indentTab'>
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 목록</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+-   <Status>Fixed</Status> In <UI>Server Setting</UI> > <UI>Server List</UI>, deleted the inactive server deletion feature.
 
--   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 환경 변수</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+-   <Status>Fixed</Status> In <UI>Server Setting</UI> > <UI>Server Environment Variable</UI>, deleted the inactive server deletion feature.
 
 </div>
 
 ## Preview 1.101.08
 
-2023년 5월 4일
+May 4, 2023
 
 <div class='indentTab'>
+
+### `Common`
+
+-   <Status>Change</Status> Removed the <UI>Integrated Dashboard</UI> and <UI>Integrated Metrics Board</UI> from the side menu and modified to access them only through <UI>Sitemap</UI>.
+
+-   <Status>Change</Status> Modified to display the specific reason when there is no data response in the following widgets.
+
+    -   Log 4XX, 5XX Count
+
+    -   Request Success Rate
+
+    -   Response Time by Log
+
+### `Log`
 
 -   <Status>Fixed</Status> Fixed the typo error in <UI>Log</UI> > <UI>Log Setting</UI> > <UI>Log Parser Setting</UI> > <UI>Input Filter</UI> > Filter Key (okineName → okindName).
 
 -   <Status>Fixed</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed the problem where the previous log appears when there is no log data searched.
-
--   <Status>Change</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI>를 사이드 메뉴에서 제거, <UI>사이트 맵</UI>을 통해서만 접근 가능하도록 변경
-
--   <Status>Change</Status> 다음 위젯들에서 데이터 응답이 없을 경우 구체적인 사유를 표시하도록 수정
-
-    -   로그 4XX, 5XX 건수
-
-    -   Request Success Rate
-
-    -   응답시간 by 로그
 
 </div>
 
@@ -173,6 +327,8 @@ May 3, 2023
 May 2, 2023
 
 <div class='indentTab'>
+
+### `Log`
 
 <p><Status>Feature</Status> The <b>Edit Log</b> role has been added and the related functions has been applied to <UI>Log Setting</UI>.</p>
 
@@ -238,7 +394,7 @@ April 27, 2023
 
 ### `Application`
 
-<p><Status>Fixed</Status> Java 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 에이전트 다운로드 명령어 오타 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI> of a Java project, fixed the typo error for the agent download command.</p>
 
 </div>
 

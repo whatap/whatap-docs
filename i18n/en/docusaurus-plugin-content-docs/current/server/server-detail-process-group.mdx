@@ -19,11 +19,7 @@ You can check at a glance the resource usages for each divided process. There is
 
 You can set to receive notifications when the usage sum of resources for the process group exceeds a specific threshold. For more information about the notification settings, see [the following](warning-notice#process-event).
 
-<!-- ***경고 알림*** > ***이벤트 설정*** > ***+ 이벤트 추가*** > ***프로세스*** 탭을 -->
-
 ## Adding the process group
-
-<!-- After logging in with the Admin account, proceed with the following steps in order. -->
 
 :::note
 
@@ -31,8 +27,10 @@ The project **Edit role** is required. For more information about roles, see [th
 
 :::
 
-1.  Go to Home > Select Project > **_Server List_** > **_Server Detail_** and then click **_Grouping_** in the process list.<br/>
+1.  Go to Home > Select Project > **_Server List_** > **_Server Detail_** and then click **_Grouping_** in the process list.
+
     ![Server Detail Process List](/img/server-detail-process.png)
+
 2.  If the process group setting window appears, in **_Pattern_**, enter the process name pattern to be included in the group including asterisks (\*) before and after.
 
     > e.g. \*whatap\*
@@ -40,23 +38,31 @@ The project **Edit role** is required. For more information about roles, see [th
     ![](https://img.whatap.io/media/images/process_group_details.png)
 
     After entry, select ![magnifier icon](/img/ic-search.svg) **_Magnifier_** on the right. You can view the list of processes that corresponds to the pattern. The process name is based on the process name displayed on the screen.
+
 3.  Enter the process group name in **_Pattern Alias_** and then select **_Apply_** on the right. Once the grouping has been set, grouping is performed for **all servers** of the **set project**.
 
 ## Process group example
 
--   **Application of process grouping**\
-      The following screen displays an example where \*tomcat\* is entered in **_Pattern_**, and test_group is set in **_Pattern Alias_**.
-      ![](https://img.whatap.io/media/images/process_group_example.png)
+-   ** Application of process grouping**
 
--   **Process list before process grouping**\
-      ![Process list before process grouping](/img/server-process-list.png)
-      The following is the list of processes to be grouped by **_Pattern_**:
+    The following screen displays an example where \*tomcat\* is entered in **_Pattern_**, and test_group is set in **_Pattern Alias_**.
+
+    ![](https://img.whatap.io/media/images/process_group_example.png)
+
+-   **Process list before process grouping**  
+
+    ![Process list before process grouping](/img/server-process-list.png)
+
+    The following lists the processes to be grouped by **_Pattern_**.
+
     > -   e.g. javatomcat_left/bin/test.jarcom.virtual.App 
     > -   e.g. javatomcat_right/bin/test.jarcom.virtual.App
 
--   **Checking the process group registration**\
-      You can check that a new process group, test_group has been registered in the process list as follows.
-      ![](https://img.whatap.io/media/images/test_group.png)
+-   **Checking the process group registration**
+
+    You can check that a new process group, test_group has been registered in the process list as follows.
+
+    ![](https://img.whatap.io/media/images/test_group.png)
 
 :::note
 

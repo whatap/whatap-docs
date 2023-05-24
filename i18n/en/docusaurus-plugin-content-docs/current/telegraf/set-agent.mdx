@@ -15,58 +15,97 @@ WhaTap basically uses the data collected from the server for identifying the inf
 
 {@include: ../common-items/_agent-name-warning.mdx}
 
--   **object_name** <span class='type'>String</span><br/>
-    Default `{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`<br/>The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME.
+-   **object_name** <span class='type'>String</span>
 
-| Name       | Description                                                     |
-| ---------- | --------------------------------------------------------------- |
-| {type}     | Use the value set in app_name. The default value is "Telegraf." |
-| {ip#}      | When IPs are divided, the #th digit is used.                    |
-| {hostname} | The server host name is used.                                   |
-| {docker}   | Use the IP of the Docker container.                             |
+    Default `{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`
 
--   **app_name**<span class='type'>String</span>
+    The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME.
+
+    | Name       | Description                                                        |
+    | ---------- | ------------------------------------------------------------------ |
+    | {type}     | Use the value set in app_name. The default value is "Telegraf."    |
+    | {ip#}      | When IPs are divided, the #th digit is used.                       |
+    | {hostname} | The server host name is used.                                      |
+    | {docker}   | Use the IP of the Docker container.                                |
+
+-   **app_name** <span class='type'>String</span>
 
     The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.
 
-{@include: ../common-items/_restart-w-tf.mdx} 
+    :::note
+
+    It is applied after restarting the `whatap-telegraf` service.
+
+    :::
 
 ## Agent communication settings
 
--   **license** <span class='type'>String</span><br/>
-      To install the agent, set the project access key granted from the server. The project access key includes the agent's project and the encryption key for secured communication.
+-   **license** <span class='type'>String</span>
 
--   **whatap.server.host** <span class='type'>ip_address</span><br/>
-    Default `127.0.0.1,127.0.0.1`<br/>Set the server to transfer the data collected by the agent. If there are multiple IPs due to the collection server redundancy, they can be specified by separating with comma (,). The collection server's proxy daemon must be serviced in the listening state for the specified IP.
+    To install the agent, set the project access key granted from the server. The project access key includes the agent's project and the encryption key for secured communication.
 
--   **whatap.server.port** <span class='type'>tcp_port</span><br/>
-    Default `6600`<br/>Set the collection server's port. Because only one port can be specified, the collection servers specified in `whatap_server_host` must use the same port.
+-   **whatap.server.host** <span class='type'>ip_address</span>
 
--   **tcp_so_timeout** <span class='type'> Millisecond </span><br/>
-    Default '60000'<br/>Set the socket time out of the TCP session that communicates with the collection server.
+    Default `127.0.0.1,127.0.0.1`
 
--   **tcp_connection_timeout** <span class='type'>Milisecond</span><br/>
-    Default '5000'<br/>Set the connection time out of the TCP session that communicates with the collection server.
+    Set the server to transfer the data collected by the agent. If there are multiple IPs due to the collection server redundancy, they can be specified by separating with comma (,). The collection server's proxy daemon must be serviced in the listening state for the specified IP.
 
--   **net_send_max_bytes** <span class='type'>Byte</span><br/>
-    Default `5242880`<br/>Set the maximum size of the data to send to the collection server at one time.
+-   **whatap.server.port** <span class='type'>tcp_port</span>
 
--   **net_send_buffer_size** <span class='type'>Byte</span><br/>
-    Default `1024`<br/>Maximum data in bytes to transfer data. 
+    Default `6600`
+
+    Set the collection server's port. Because only one port can be specified, the collection servers specified in `whatap_server_host` must use the same port.
+
+-   **tcp_so_timeout** <span class='type'>Millisecond</span>
+
+    Default `60000`
+
+    Set the socket timeout of the TCP session that communicates with the collection server.
+
+-   **tcp_connection_timeout** <span class='type'>Millisecond</span>
+
+    Default `5000`
+
+    Set the connection time out of the TCP session that communicates with the collection server.
+
+-   **net_send_max_bytes** <span class='type'>Byte</span>
+
+    Default `5242880`
+
+    Set the maximum size of the data to send to the collection server at one time.
+
+-   **net_send_buffer_size** <span class='type'>Byte</span>
+
+    Default `1024`
+
+    Maximum data in bytes to transfer data. 
 
 ## Telegraf
 
--   **telegraf_tcp_port** <span class='type'>tcp_port</span><br/>
-    Default `6600`<br/> TCP port to connect with Telegraf socker_writer output plugin.
+-   **telegraf_tcp_port** <span class='type'>tcp_port</span>
 
-{@include: ../common-items/_restart-w-tf.mdx} 
+    Default `6600`
 
--   **telegraf_delta_fields** <span class='type'>String</span><br/>
-    Default `1024`\
-        Add an extra field after calculating the increment value of the field with cumulative values. Set the value as the name.fields format. Multiple items can be separated with comma (,).
-        e.g. The increment values for accepts and requests in nginx.accepts,nginx.requests nginx are delivered with the names of acceptsDelta and requestsDelta fields.
+    TCP port to connect with Telegraf socker_writer output plugin.
+
+    :::note
+
+    It is applied after restarting the `whatap-telegraf` service.
+
+    :::
+
+-   **telegraf_delta_fields** <span class='type'>String</span>
+
+    Default `1024`
+
+    Add an extra field after calculating the increment value of the field with cumulative values. Set the value as the name.fields format. Multiple items can be separated with comma (,).
+
+    e.g. The increment values for accepts and requests in nginx.accepts,nginx.requests nginx are delivered with the names of acceptsDelta and requestsDelta fields.
 
 ## Log
 
--   **log_keep_days**<span class='type'>Day</span><br/>
-    Default `7`<br/>Set the retention period of log files.
+-   **log_keep_days** <span class='type'>Day</span>
+
+    Default `7`
+
+    Set the retention period of log files.

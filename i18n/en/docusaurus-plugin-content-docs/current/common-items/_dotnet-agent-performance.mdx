@@ -1,58 +1,108 @@
 :::note
 
 -   The agent performance option is applied only when the whatap .NET Windows service has been restarted after configuration.
-
 -   If the agent performance is expanded, the CPU and memory utilization can increase.
+
 :::
 
--   **tx_max_count** <span class='type'>Int</span><br/>
-    Default `5000`<br/>Maximum number of transactions to store. If there are numerous concurrent transactions, increase this size.
+-   **tx_max_count** <span class='type'>Int</span>
 
--   **tx_default_capacity** <span class='type'>Int</span><br/>
-    Default `101`<br/>Initial size of the buffer in which transactions are stored.
+    Default `5000`
 
--   **tx_load_factor** <span class='type'>String(Float)</span><br/>
-    Default `0.75`<br/>This criterion is needed to gradually increase the buffer size to store transactions. If more than 75% of 101 are stored, it doubles the buffer size.
-                              
+    Maximum number of transactions to store. If there are numerous concurrent transactions, increase this size.
 
--   **queue_log_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>It outputs the queue-related logs.
+-   **tx_default_capacity** <span class='type'>Int</span>
 
--   **queue_tcp_enabled** <span class='type'>Boolean</span><br/>Default `true`<br/> 
-    Instead of the channel that is used for TCP data transmission, a separate queue is used. The data priority queue is used.
+    Default `101`
 
--   **queue_tcp_sender_thread_count** <span class='type'>Int</span><br/>Default `2`<br/> 
+    Initial size of the buffer in which transactions are stored.
+
+-   **tx_load_factor** <span class='type'>String(Float)</span>
+
+    Default `0.75`
+
+    This criterion is used for gradually increasing the size of the buffer that stores transactions. If more than 75% of 101 are stored, it doubles the buffer size.
+                            
+
+-   **queue_log_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It outputs the queue-related logs.
+
+-   **queue_tcp_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    A separate queue is used instead of the channel for TCP data transmission. The data priority queue is used.
+
+-   **queue_tcp_sender_thread_count** <span class='type'>Int</span>
+
+    Default `2`
+
     Set the number of threads for TCP data transmission. If the number increases, data can be transferred a little faster. 
 
--   **net_send_buffer_size** <span class='type'>Int</span><br/>Default `1024`<br/>
+-   **net_send_buffer_size** <span class='type'>Int</span>
+
+    Default `1024`
+
     Set the channel buffer for TCP data processing.
 
--   **queue_udp_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/> 
+-   **queue_udp_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     Instead of the channel for receiving the TCP data, a separate queue is used.
 
--   **queue_udp_size** <span class='type'>Int</span><br/>Default `2048`<br/> 
-    Set the buffer for receiving data through UDP communication. The settings for channel and queue buffer are configured. 
+-   **queue_udp_size** <span class='type'>Int</span>
 
--   **queue_udp_read_thread_count** <span class='type'>Int</span><br/>Default `3`<br/> 
-    Set the number of threads for receiving data through UDP communication. If the number increases, data can be read more quickly from the UDP buffer. 
+    Default `2048`
 
--   **queue_udp_overflowed_size** <span class='type'>Int</span><br/>Default `4096`<br/>
-    If the queue is used for receiving the UDP data, set the size of the overflowed queue buffer.
+    Set the UDP data receiving buffer. The settings for channel and queue buffer are configured. 
 
--   **queue_udp_process_thread_count** <span class='type'>Int</span><br/>Default `1`<br/> 
+-   **queue_udp_read_thread_count** <span class='type'>Int</span>
+
+    Default `3`
+
+Set the number of threads for UDP data reception. If the number increases, data can be read more quickly from the UDP buffer. 
+
+-   **queue_udp_overflowed_size** <span class='type'>Int</span>
+    Default `4096`
+
+If the queue is used for receiving the UDP data, set the size of the overflowed queue buffer.
+
+-   **queue_udp_process_thread_count** <span class='type'>Int</span>
+
+    Default `1`
+
     Set the number of threads for UDP data processing. If the number increases, the data read through UDP communication can be processed a little faster.
 
--   **queue_profile_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/> 
+-   **queue_profile_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     Instead of the channel for processing the TCP data, a separate queue is used.
 
--   **queue_profile_size** <span class='type'>Int</span><br/>Default `512`<br/>
+-   **queue_profile_size** <span class='type'>Int</span>
+
+    Default `512`
+
     Set the buffer for trace data processing.
 
--   **queue_profile_process_thread_count** <span class='type'>Int</span><br/>Default `1`<br/> 
+-   **queue_profile_process_thread_count** <span class='type'>Int</span>
+
+    Default `1`
+
     Set the number of threads for trace data processing. If the number increases, data can be processed a little faster.
 
--   **queue_text_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/> 
+-   **queue_text_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     Instead of the channel for text data processing, a queue is used.
 
--   **queue_text_size** <span class='type'>Int</span><br/>Default `512`<br/>
+-   **queue_text_size** <span class='type'>Int</span>
+
+    Default `512`
+
     Set the buffer for text data processing.

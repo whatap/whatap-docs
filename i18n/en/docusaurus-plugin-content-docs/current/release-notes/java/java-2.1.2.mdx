@@ -15,11 +15,11 @@ The weaving setting has been added to track open source plug-ins. +
 
 The weaving setting that has the same functionality as the existing weaving_reserved setting has been added. +
 
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 weaving=tomcat10
 ```
 
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 weaving_reserved=tomcat10
 ```
 
@@ -29,7 +29,7 @@ An item has been added to set whether or not to stop the thread when the thread 
 
 The default values is false.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 auto_thread_kill_elapsed=0
 auto_thread_kill_enabled=false
 ```
@@ -40,7 +40,7 @@ The existing method of hooking the collection class has been modified so that th
 
 The class that creates the collection to the collection_nonstatic_holders setting has been added so you can see it in the collection map menu.
 
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
 ```
 
@@ -74,7 +74,7 @@ The data collected in logsink has been added.
 
 According to the configuration, you can determine whether the transaction ID, login ID, and HTTP host data are to be collected.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 _logtag_enabled = false         # tag 
 logtag_txid_enabled=false       # transation id
 logtag_login_enabled=false      # login id
@@ -89,7 +89,7 @@ Added the function to apply timeout to HttpClient and handle errors upon timeout
 
 The default value of the JMX pool object has been modified. An option to determine whether or not to use the data source name of the JMX pool has been added. If the data source name is registered, the JNDI method is executed. If the name is not registered, the default URL method is executed.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 jmx_pool_dsname_enabled=false
 jmx_pool_object="*:type=DataSource,class=*,name=*"
 ```
@@ -98,7 +98,7 @@ jmx_pool_object="*:type=DataSource,class=*,name=*"
 
 The log-root option has been added to set the heapdump file path.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 log_root=${WHATAP_HOME}/dump
 ```
 
@@ -110,19 +110,21 @@ Modified the batch agent to leave an active stack on the main thread of the batc
 
 The setting has been added to display the thread name of the active stack.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 active_stack_thread_name_enabled=false
 ```
 
 :::note
+
 If the Yard version is low and the value is set to true, the agent connection is disconnected continually due to a protocol error.
+
 :::
 
 ### Adding the setting to display the asynchronous thread name
 
 Added the setting to display the thread ID and name of the asynchronous thread.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 debug_async_thread_enabled=false
 ```
 
@@ -160,7 +162,7 @@ accesskey=
 
 Modified the name of the Java agent meta tag option.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 agent_meta_tags_enabled=true
 ```
 
@@ -172,7 +174,7 @@ The function has been added to exclude from the search items when a specific key
 
 The delimiter is "," and the value is not case sensitive. It can be used in connection with the `agent_env_system_enabled` and `agent_env_jvm_enabled` settings.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 agent_env_system_enabled=false
 agent_env_jvm_enabled=true
 
@@ -191,7 +193,7 @@ You can enable the function by setting `logsink_rt_enabled` to `true`, which col
 
 -   In case of an error response, logs are recorded according to `logsink_rt_ok_interval`. The default value is 5 seconds.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 logsink_rt_enabled=false
 
 logsink_rt_error_interval=5000
@@ -273,7 +275,7 @@ httpc_status_url_alert_ignore_set=/api/test/timeout:408
 
 The function to trace the Alibaba Druid connection pool has been added.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 druid_pool_enabled=false
 ```
 
@@ -281,7 +283,7 @@ druid_pool_enabled=false
 
 Added the function to collect netstat by using the OSHI library. Among network metrics, the packet, collision, drop, error, and bps are collected.
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 oshi_netstat_enabled=false
 debug_oshi_netstat_enabled=false
 ```

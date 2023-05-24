@@ -95,7 +95,9 @@ The open API for viewing the statistical data is called by setting a time range,
 -   `etime`: Lookup end time (UNIX epoch time, millisecond)
 
 :::note
+
 `etime` cannot exceed 1 day based on `stime`.
+
 :::
 
 -   oids: You can set multiple values using comma (,) as the delimiter.
@@ -108,7 +110,7 @@ Items that can be called with the open API for statistical data lookup are as fo
 -   Client IP
 -   Issuing SQL
 -   Transactions
--   Thread count
+-   Thread Count
 -   Thread daemon count
 -   Thread peak count
 -   Thread pool count
@@ -123,15 +125,21 @@ Items that can be called with the open API for statistical data lookup are as fo
 The open API for viewing the project statistics merges and views the data collected through multiple agents in a single project. You can call it by setting a time range.
 
 -   If no time range is set, the most recent data is retrieved.
+
 -   `stime`: Lookup start time (UNIX epoch time, millisecond)
--   `etime`: Lookup end time (UNIX epoch time, millisecond)<br/>
+
+-   `etime`: Lookup end time (UNIX epoch time, millisecond)
+
     If only the `etime` value is given, the data of 5 seconds before is retrieved based on the time.
+
 -   `timeMerge`: When setting the lookup start and end times, strategy for merging temporal data (Average: `avg`, Maximum value: `max`, Minimum value: `min`)
 
 :::note
 
 -   `etime` cannot exceed 1 day based on `stime`.
 -   If `etime` has been set, `stime` can add `timeMerge` (time merging strategy) as an option. If you do not add the time merge strategy, the default merge strategy is averaging.
+
+:::
 
 Items that can be called with the open API for project statistics lookup are as follows. For more information about the open API call usage, see [the following](openapi-call-project-stat).
 
@@ -148,17 +156,15 @@ The open API for viewing the long-term statistics has a time setting range depen
 -   `etime`: Lookup end time (UNIX epoch time, millisecond)
 
 :::note
-액티브 사용자는 1일 단위 그리고 1개월 단위로 집계됩니다. 
+
+Active users are aggregated per day and per month. 
 
 -   Active users (1-day increment): `etime` cannot exceed 31 days based on `stime`.
 -   Active users (1-month increment): `etime` cannot exceed 365 days based on `stime`.
 
-For more information about the open API call usage, see [the following](openapi-call-long-stat).
+:::
 
-<!--
-1. 상기 full gc 로그 내용 폐기 요청
-2. 장기 통계 정보 기술 오류 수정 요청
--->
+For more information about the open API call usage, see [the following](openapi-call-long-stat).
 
 ### Viewing the short-term information
 

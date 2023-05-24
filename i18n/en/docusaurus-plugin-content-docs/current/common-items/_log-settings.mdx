@@ -24,7 +24,7 @@ You can configure the log monitoring related settings in **_Log Setting_**. You 
 
 In the ![number-s](/img/number-01.png) area, if you select **_View guide_** and **_View plans_**, the related guide screen appears. 
 
-## ![](/img/number-02.png) Checking the log monitoring
+## ![](/img/number-02.png) Starting the log monitoring{#log-getting-started}
 
 In the ![number-s](/img/number-02.png) area, click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
 
@@ -43,14 +43,17 @@ In the ![number-s](/img/number-02.png) area, click the **_Activate log monitorin
 
 Check the agent version and settings to start the log monitoring. In the ![number-s](/img/number-02.png) area, select **_Check agent configuration_** and then proceed with the process according to the instructions.
 
--   **Application Monitoring**\
-       Under **_Apply_**, check the guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
+-   **Server Monitoring**
 
--   **Server Monitoring**\
-       Under **_Apply_**, check the guides for each application. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in _whatap.conf_.
+    Under **_Apply_**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
 
--   **Kubernetes Monitoring**\
-       Under **_Apply_**, check the guides for each application. See [the following](log-k8s). 
+-   **DB Monitoring**
+
+    Under **_Apply_**, check each individual application guide. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in _whatap.conf_.
+
+-   **Kubernetes Monitoring**
+
+    Under **_Apply_**, check each individual application guide. See [the following](log-k8s). 
 
 ### Enabling the log monitoring
 
@@ -77,12 +80,18 @@ You can specify the log data retention periods for each category. **Log Count** 
 
 You can specify the log data retention period as follows. You can free the space by deleting old data according to the specified period.
 
--   **Trial Project**
-      You can select one of 1 day, 2 days, and 3 days for the data retention period.
--   **Paid Project**
-      For the data retention period, you can select one of 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 10 days, 30 days, and 40 days.
--   **Data size-based billing**
-      The cost differs depending on the data retention period.
+-   **Trial Project**  
+
+    You can select 1, 2, or 3 days for the data retention period.
+
+-   **Paid Project**  
+
+    For the data retention period, you can select one of 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 10 days, 30 days, and 40 days.
+
+-   **Data size-based billing**   
+
+    The price differs depending on the data retention period.
+
     > For example, if an average of 2 million log lines per day accumulates and the data retention period is set to 3 days, an average of 6 million log lines is kept on the collection server and subject to billing.
 
 ### Log lookup password
@@ -109,7 +118,7 @@ If you have the **Edit Log** role, you can modify it with a new password in **_L
 
 :::
 
-## ![](/img/number-04.png) Log Parser Setting
+## ![](/img/number-04.png) Log Parser Setting{#log-setting-parser}
 
 You can register **parsing** logic to create a key to retrieve the collected logs. If the parsing logic is not registered, searching is possible only with the following keys.
 
@@ -161,10 +170,12 @@ You can register **parsing** logic to create a key to retrieve the collected log
 Four different types of parsers are provided as follows. In the parser selection window of ![number-s](/img/number-04.png), you can see the results.
 
 1.  **Grok Parser**
+
 2.  **JSON Format Parser**
+
 3.  **4xx** and **5xx Status Code Parser**
+
 4.  **Status Code Success Rate Parser** 
-    <!-- It provides 2 types of parsers: **Grok** and **JSON format parser**. In the parser selection window of ![number-s](/img/number-04.png), you can see the results. -->
 
 :::note
 
@@ -173,26 +184,30 @@ Four different types of parsers are provided as follows. In the parser selection
 
 :::
 
-### Registering the Grok pattern parser
+### Registering the Grok pattern parser{#log-pattern-grok}
 
-![Grok Pattern Parser](https://img.whatap.io/media/images/log_011_grok_syntax.png)
-The syntax rule is %{SYNTAX:SEMANTIC}.    
+![Grok 패턴 파서](https://img.whatap.io/media/images/log_011_grok_syntax.png)
 
--   **SYNTAX**\
-      It is the Grok definition pattern.      
+Its syntax is %{SYNTAX:SEMANTIC}.    
 
--   **SEMANTIC**\
-      It is the key to be assigned to the parsed data.
+-   **SYNTAX**
 
-:::note 
+    Grok definition pattern.
 
-It is recommended to use combination words in SEMANTIC so that reserved words are not used.
+-   **SEMANTIC**
 
-:::
+    It is the key allocated to the parsed data.
 
-### Registering the JSON format parser pattern
+    :::note 
 
-![JSON Format Parser Pattern Registration](https://img.whatap.io/media/images/log_012_json_format_parser_1101.png)\
+    It is recommended to use combination words in SEMANTIC so that reserved words are not used.
+
+    :::
+
+### Registering the JSON Format Parser Pattern{#log-pattern-json}
+
+![Registering the JSON Format Parser Pattern](https://img.whatap.io/media/images/log_012_json_format_parser_1101.png)  
+
 If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser.
 
 To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. 
@@ -205,41 +220,42 @@ To detect the JSON output of the log, the **_prefix_** and **_postfix_** options
 
 -   **Registration example**
 
-    ```bash title='로그 원문'
+    ```bash title='Log'
     [2022-10-25 10:15:34:145]...(line feed)
     Request : {"key1":"value1","key2":"value2",...}(line feed)
     Response : {"key3":"value3","key4":"value4",...}
     ```
 
-      As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
+    As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
 
     -   Pattern for request parsing  
 
         > String between "Request : " and "Response" {"key1":"value1","key2":"value2",...} Target
 
     -   Pattern for response parsing
+
         > String from "Response : " to the end of a log {"key3":"value3","key4":"value4",...} Target
 -   **JSON custom pattern registration**
 
-      If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
+    If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
 
     ```java
     io.whatap.logsink.parser.JsonFormatParser{}
     ```
 
-      To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
+    To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
 
-      Specify an option in `{}` of `JsonFormatParser{}`.
+    Specify an option in `{}` of `JsonFormatParser{}`.
 
     -   **Registration example**
 
-        ```bash title='로그 원문'
+        ```bash title='Log'
         [2022-10-25 10:15:34:145]...(line feed)
         Request : {"key1":"value1","key2":"value2",...}(line feed)
         Response : {"key3":"value3","key4":"value4",...}
         ```
 
-          As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
+        As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
 
         -   Pattern for request parsing  
             > String between "Request : " and "Response" {"key1":"value1","key2":"value2",...} Target
@@ -261,40 +277,44 @@ To detect the JSON output of the log, the **_prefix_** and **_postfix_** options
 
 You can enter or select 4xx, 5xx status codes in the pattern, and the entered status codes are excluded when parsing 4xx, 5xx status codes from the log. To use the 4xx, 5xx status code parser, the status must have been parsed first.
 
--   **status parser registration example**\
-      ![Grok parser - status parsing pattern registration](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)
-      If the incoming log is `{"msg":"message","status":404}` and the status is parsed by the Grok parser as in the example, parsing is performed like `status: 404`. If you confirm that the status has been normally parsed, register the 4XX, 5XX status code parser pattern.     
+-   **Registration example for the status parser**
 
--   **Widget Templates**\
-       If all parsers have been registered, go to **_Flex Board_** and then create the log 4XX, 5XX count widget.
+    ![Grok파서 - status 파싱 패턴 등록](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)
 
-      ![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png)  
+    If the incoming log is `{"msg":"message","status":404}` and its status is parsed by the Grok parser as shown in the example, it is parsed as `status: 404`. If you confirm that the status has been normally parsed, register the 4XX, 5XX status code parser pattern.     
 
-      If the widget is created, you can see the following data.
+-   **Widget Templates**
 
-      ![](https://img.whatap.io/22/11/28/111724log_status_03_widget.png)
+    If all parsers have been registered, go to **_Flex Board_** and then create the log 4XX, 5XX count widget.
+
+    ![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png)  
+
+    If the widget is created, you can see the following data.
+
+    ![](https://img.whatap.io/22/11/28/111724log_status_03_widget.png)
 
     -   **_avg_**: Average value of the data during the query period
     -   **_max_**: Maximum value of the data during the query period
     -   **_recently_**: Final value of the data during the query period
 
-### Registering the pattern of the status code success rate parser
+### Registering the Status Code Success Rate Parser's pattern{#log-pattern-status}
 
 ![Status Code Success Rate Parser](https://img.whatap.io/22/11/28/090004log_021_status_success_rate_parser.png)
 The status code success rate parser can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). 
 
 Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. You can enter or select 2xx, 3xx status codes in the pattern, and the entered status codes are excluded when parsing 2xx, 3xx status codes from the log. 
 
--   **Widget Templates**\
-       If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
+-   **Widget Templates**
 
-      ![Flex Board - Log Request Success Rate Widget Template](https://img.whatap.io/22/11/28/120046log_success_rate_01_widget_template.png)  
+    If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
 
-      If the widget is created, you can see the following data.
+    ![Flex Board - Log Request Success Rate Widget Template](https://img.whatap.io/22/11/28/120046log_success_rate_01_widget_template.png)  
 
-      ![Flex Board - Log Request Success Rate Widget](https://img.whatap.io/22/11/28/120046log_success_rate_02_widget.png)
+    If the widget is created, you can see the following data.
 
-      The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
+    ![Flex Board - Log Request Success Rate Widget](https://img.whatap.io/22/11/28/120046log_success_rate_02_widget.png)
+
+    The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
 
 ### Parser Simulation{#parser-simulation}
 
@@ -316,14 +336,17 @@ json 커스텀 파서 추가 문의
 
 <!--
 * **로그 파서 시뮬레이션 시작**
-    ![](https://img.whatap.io/media/images/log_013_simulation_1101.png)
+
+  ![](https://img.whatap.io/media/images/log_013_simulation_1101.png)
 -->
 
--   **Simulation success screen**
-      ![](https://img.whatap.io/media/images/log_014_simulation_success.png)
+-   **Simulation Success Screen**
 
--   **Simulation failure screen**
-      ![](https://img.whatap.io/media/images/log_015_simulation_fail.png)
+    ![](https://img.whatap.io/media/images/log_014_simulation_success.png)
+
+-   **Simulation Failure Screen**
+
+    ![](https://img.whatap.io/media/images/log_015_simulation_fail.png)
 
 ### Performance measurement
 
@@ -339,7 +362,7 @@ If the key has been generated by registering a parsing logic, the value parsed w
 
 The parsed key can be checked in **_Live Tail_**, **_Log Search_**, and **_Log Trend_**.
 
-## ![](/img/number-05.png) Quick index parser
+## ![](/img/number-05.png) Fast Index Setting{#log-setting-index}
 
 Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
 
@@ -351,7 +374,7 @@ Collecting a large number of logs can significantly decrease the log search perf
 | Rule             | Mandatory | `*` must be included at least one.           |
 | Enabled          | Mandatory | Active or inactive (default value is `true`) |
 
-## ![](/img/number-06.png) Log long-term archive statistics
+## ![](/img/number-06.png) Log long-term archive statistics{#log-long-term-archive}
 
 Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. 
 
@@ -361,7 +384,7 @@ Even if actual log data has been deleted for a long time, you can check the tren
 
 ### Setting items
 
-<!-- Excluded items to be added .. Add 1202 -->
+<!-- 제외 항목 내용 추가 예정 .. Add 1202 -->
 
 | Field          | Description                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -378,11 +401,16 @@ If a setting is added as follows, statistical data is generated with a key value
 
 ![](https://img.whatap.io/22/11/28/090932log_023_long_period_stat_config.png)
 
-### Widget template
+### Widget Templates{#log-widget-statistics}
 
-1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.\
+1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
+
     ![Long-term archive statistics widget template](https://img.whatap.io/22/11/28/090932log_024_long_period_widget_template.png)
-2.  Enter the **_category_** and **_key_** to view and then select **_Apply_**.\
+
+2.  Enter the **_category_** and **_key_** to view and then select **_Apply_**.
+
     ![Long-term archive statistics widget - category and key selection](https://img.whatap.io/22/11/28/090932log_025_long_period_widget_config.png)
-3.  With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.\
+
+3.  With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.
+
     ![Long-term archive statistics widget](https://img.whatap.io/22/11/28/090932log_026_long_period_widget_view.png)

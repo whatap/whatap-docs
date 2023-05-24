@@ -1,0 +1,111 @@
+---
+id: aws-log-search
+title: Log Search
+description: It guides you to the Log Search menu of the AWS log monitoring.
+tags:
+  - AWS Log
+  - Log
+  - Log Search
+  - UI
+draft: true
+---
+
+Home > Select Project > **_Dashboard_** > **_Log Search_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Dashboard_** > **_Log Search_** under Project Menu. 
+
+In **_Log Search_**, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted. 
+
+The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. {@include: ../common-items/_log-ui-main-term.mdx}
+
+![Log Search sc](/img/aws-log-p/log-search.png)
+
+## Request Data
+
+-   If the scroll reaches the bottom, the next data is retrieved. You can view 30,000 logs at a time.
+-   ![number-s](/img/number-03.png) Log data can be queried in chronological order or reverse order in the log table. Based on the **_Timestamp_** column, select **_Recent order_** or **_Past order_** search method.
+
+<!-- * ![number-s](/img/number-02.png) 로그 테이블의 ***Timestamp*** 컬럼을 선택하면 로그 데이터를 시간 역순으로 조회할 수 있습니다. -->
+
+## Checking the log content
+
+:::note 
+
+**What is content?**
+
+Content means the log messages.
+
+:::
+
+-   The first line of the log column is the log's parsed key and value, and the second line is the log's content.
+
+-   ![number-s](/img/number-03.png) For each row (log) of the **_table_**, the ![Icon](/img/ic-caret-right.svg)**_More_** button exists. If you select the button, you can check the entire content of the log like ![number-s](/img/number-04.png).
+
+-   If you select a tag in the log, a drop-down menu appears that allows you to perform **_Copy_**, **_Search_**, and **_Exclusion Search_**.
+
+## Filtering
+
+#### Apply Filter
+
+![number-s](/img/number-01.png) In the **_time selection_** window on the left, you can set the time range. If you apply the filter on the right filters the logs that match the entered conditions. Multiple filters can be entered. If the tags in the filters are the same, OR (`||`) is applied; otherwise, AND (`&&`) is applied. 
+
+You can directly enter a value in the input field or click the **_Filter_** input field to specify a filter. Separate keywords with spaces when entering values. If spaces are included in keywords, enclose them in _''_ or _""_ symbols. If _\\_ is included in a keyword surrounded by symbols, enter _\\\\_. ![Search icon](/img/ic-search-on-press.svg) If you select **_Search_**, the data with filters can be viewed in the ![number-s3](/img/number-03.png) area.
+
+![Applying filter](https://img.whatap.io/media/images/livetail_003_filter.png)
+
+#### Modifying the filter
+
+Enter a value in the filter and then click the specified value to modify it.\
+![](https://img.whatap.io/media/images/livetail_005_filter_input.png)
+
+#### Filter Expression
+
+The expression under the entered filter value is a preview of the filter expression for querying the log data. 
+![](https://img.whatap.io/media/images/livetail_006_filter_expression.png)
+
+#### Search Key
+
+The tags on the left ![number-s](/img/number-02.png) area are the search keys parsed for each category. You can enter filters by selecting tags. The <span class='logwr'>orange</span> tag is the category, and the <span class='lowfg'>blue</span> tag is the search key.
+
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log_** > **_Log Setting_**.
+
+#### Filter input syntax
+
+It is a list of syntax rules that can be used upon entry of filter. **_Live Tail_** and **_Log Search_** use the same syntax rules.
+
+| Syntax rule   | Example       | Description                           |
+| ------------- | ------------- | ------------------------------------- |
+| include(+)    | \+ote-gateway | Filtering only with ote-gateway       |
+| exclude(-)    | \-ote-gateway | Filtering except ote-gateway          |
+| startWith(\*) | ERROR\*       | Filtering those that start with ERROR |
+| endWith(\*)   | \*ERROR       | Filtering those that end with ERROR   |
+
+## Highlight
+
+-   The highlight function is provided to easily identify the desired keywords. 
+-   ![number-s](/img/number-03.png) In the **_input field_** on the right, enter the keyword to highlight. You can check the highlighted keywords like this:
+    ![](https://img.whatap.io/media/images/logsearch_012_highlight.png)
+
+## Setting the table
+
+-   ![number-s](/img/number-03.png) The **_Table settings_** menu on the right of the area can be used in **_Live Tail_**, **_Log Search_**, and **_Log Trend_**. 
+-   ![Icon](/img/ic-setting.svg) If you select **_Table settings_**, the **_Add a Column_** and **_Table Content Setting_** options appear. 
+
+      ![](https://img.whatap.io/media/images/livetail_013_table_options.png)  
+
+    1.  **Column Settings** 
+
+    -   **_Add a Column_**: You can add a column to the table by selecting a tag.
+    -   **_Set column order_**: If a column is added, the column is added to the column sequence setting. Drag a desired column to change the column order.
+
+    2.  **Table settings**  
+
+      ![Log Table Content Setting](/img/aws-log-p/log-table-contents.png)
+
+    -   **_Content display or not_**
+        -   The checked items do not appear in the table. By default, both **_Log_** and **_Tag_** are all checked to display two items.
+        -   If you deselect the **_tag_** as follows, the log's **_tag_** does not appear in the table.
+            ![](https://img.whatap.io/media/images/livetail_017_table_column_visible.png)
+    -   **_Tag Management_**
+        -   When you add a tag in the tag management list, the log tags are listed in the added order. The sequences of tags can be changed by dragging.
+        -   If you disable an added tag, the disabled tag does not appear. 
