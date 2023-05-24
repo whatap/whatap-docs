@@ -87,25 +87,11 @@ module.exports = Promise.resolve({
         ]
       }
     ],
-    [ 
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        language: [ 'ko', 'en', 'ja' ],
-        indexBlog: false,
-        docsRouteBasePath: '/',
-        // removeDefaultStemmer: true,
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
-        searchResultContextMaxLength: 50,
-        ignoreFiles: [/wip/, /on-prem/, /common-items/, /mysql-rds/, /release-notes\/preview/, /java\/install-agent-with-buildpack/],
-      }
-    ],
     [
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
-  // themes: ['docusaurus-theme-search-typesense'],
+  themes: ['docusaurus-theme-search-typesense'],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -136,28 +122,27 @@ module.exports = Promise.resolve({
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // typesense: {
-      //   // Replace this with the name of your index/collection.
-      //   // It should match the "index_name" entry in the scraper's "config.json" file.
-      //   typesenseCollectionName: 'WhaTapDocs',
-      //   typesenseServerConfig: {
-      //     nodes: [
-      //       {
-      //         host: 'ec2-13-209-29-189.ap-northeast-2.compute.amazonaws.com',
-      //         port: 8108,
-      //         protocol: 'http',
-      //       },
-      //     ],
-      //     apiKey: 'o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi',
-      //   },
-      //   // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-      //   typesenseSearchParameters: {
-      //     // highlight_affix_num_tokens: 150,
-      //   },
-      //   // Optional
-      //   contextualSearch: true,
-      //   searchPagePath: 'search',
-      // },
+      typesense: {
+        // Replace this with the name of your index/collection.
+        // It should match the "index_name" entry in the scraper's "config.json" file.
+        typesenseCollectionName: 'WhaTapDocs',
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'typesense.whatap.io',
+              protocol: 'https',
+            },
+          ],
+          apiKey: 'o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi',
+        },
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
+        typesenseSearchParameters: {
+          // highlight_affix_num_tokens: 150,
+        },
+        // Optional
+        contextualSearch: true,
+        searchPagePath: 'search',
+      },
       metadata: [
         {
           name: 'keywords',
