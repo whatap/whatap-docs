@@ -30,8 +30,8 @@ level={info|warn|fatal}
 title=Desired alert title
 #Alert body
 message=Desired alert body
-./focus -license $WHATAP_LICENSE \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+./focus -license $WHATAP_LICENSE 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
     -alert -level $level -title $title -message $message
 ```
 
@@ -69,10 +69,10 @@ driver={mysql|postgres}
 dburl="ID:password@tcp(IP:Port)/Database"
 #Sql Query
 sqlquery="select some, columns from sometable"
-./focus -license $WHATAP_LICENSE \
-    -category $category \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
-    -rdb $driver -rdb.connect $dburl \
+./focus -license $WHATAP_LICENSE 
+    -category $category 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
+    -rdb $driver -rdb.connect $dburl 
     -rdb.sql $sqlquery
 ```
 
@@ -115,11 +115,11 @@ LOG_FILE=Log file path
 LOG_KEYWORDS_SEPERATOR=,
 #Enter log keywords by using the delimiter (,).
 LOG_KEYWORDS=keyword1,keyword2
-./focus -license $WHATAP_LICENSE \
-    -category $category \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
-    -tail $LOG_FILE \
-    -tail.keys $LOG_KEYWORDS \
+./focus -license $WHATAP_LICENSE 
+    -category $category 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
+    -tail $LOG_FILE 
+    -tail.keys $LOG_KEYWORDS 
     -tail.seperator $LOG_KEYWORDS_SEPERATOR
 ```
 
@@ -159,9 +159,9 @@ When a log occurs in the specified text log file, it is uploaded in real time to
 category=my_category
 #Can include the log file wildcard (*) and date pattern (http://strftime.org)
 LOG_FILE=log file path
-./focus -license $WHATAP_LICENSE \
-    -category $category \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+./focus -license $WHATAP_LICENSE 
+    -category $category 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
     -logsink $LOG_FILE
 ```
 
@@ -198,13 +198,13 @@ nicenabled=true|false
 #NIC to monitor
 nic=eth0
 
-./focus -license $WHATAP_LICENSE \
-    -category $category \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
-    -sys \
-    -sys.disk.enabled $diskenabled \
-    -sys.disk $diskmount \
-    -sys.net.enabled $nicenabled \
+./focus -license $WHATAP_LICENSE 
+    -category $category 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
+    -sys 
+    -sys.disk.enabled $diskenabled 
+    -sys.disk $diskmount 
+    -sys.net.enabled $nicenabled 
     -sys.net $nic
 ```
 
@@ -224,10 +224,10 @@ It runs programs and scripts and continuously collects results to stdout. WhaTap
 CATEGORY="my_category"
 
 
-Program or script | \
-Reprocessing in the json format | \
-./focus -license $WHATAP_LICENSE \
-    -category $category \
+Program or script | 
+Reprocessing in the json format | 
+./focus -license $WHATAP_LICENSE 
+    -category $category 
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST
 ```
 

@@ -116,14 +116,14 @@ For more information about the Amazon ECS launch types, see [the following](http
         "name": "rootfs"}],
     "family": "whatap-agent-task"}
     EOL
-    aws ecs register-task-definition \
-    --cli-input-json file://$(pwd)/whatap_ecs.json \
+    aws ecs register-task-definition 
+    --cli-input-json file://$(pwd)/whatap_ecs.json 
     --region $REGION
-    aws ecs create-service --cluster $CLUSTER \
-    --service-name whatap-node-agent \
-    --task-definition whatap-agent-task \
-    --scheduling-strategy DAEMON \
-    --launch-type $LAUNCH_TYPE \
+    aws ecs create-service --cluster $CLUSTER 
+    --service-name whatap-node-agent 
+    --task-definition whatap-agent-task 
+    --scheduling-strategy DAEMON 
+    --launch-type $LAUNCH_TYPE 
     --region $REGION
     ```
 
@@ -201,10 +201,10 @@ For more information about the Amazon ECS launch types, see [the following](http
             ]
         }
         EOL
-        aws iam --region $REGION create-policy --policy-name $WHATAP_ECS_POLICY_READONLY \
+        aws iam --region $REGION create-policy --policy-name $WHATAP_ECS_POLICY_READONLY 
             --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
         export POLICY_ARN=$(cat policy_arn.txt)
-        aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
+        aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY 
             --policy-arn $POLICY_ARN | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
         ```
 
@@ -255,8 +255,8 @@ For more information about the Amazon ECS launch types, see [the following](http
             - "$SGGRP"
         assign_public_ip: ENABLED
     EOL
-    ecs-cli compose --project-name $PROJNAME service up \
-        --cluster-config $CLUSTER_CONFIG \
+    ecs-cli compose --project-name $PROJNAME service up 
+        --cluster-config $CLUSTER_CONFIG 
         --ecs-profile $PROFILE --region $REGION
     ```
 

@@ -28,9 +28,9 @@ The following example executes the netstat command to collect the number of TCP 
 #Metric category
 CATEGORY="my_category"
 
-netstat -nat| tail -n+3 |  awk '{print $6}' | sort | uniq -c | awk 'BEGIN { printf "{" } {if (NR!=1) {printf ", "}}{printf "\"%s\":%s",$2,$1} END { print "}" }' | \
-./focus -license $WHATAP_LICENSE \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+netstat -nat| tail -n+3 |  awk '{print $6}' | sort | uniq -c | awk 'BEGIN { printf "{" } {if (NR!=1) {printf ", "}}{printf "\"%s\":%s",$2,$1} END { print "}" }' | 
+./focus -license $WHATAP_LICENSE 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
     -category $CATEGORY -onetime
 ```
 
@@ -42,9 +42,9 @@ The following example executes the vmstat command to collect itemized metrics.
 #Metric category
 CATEGORY="my_category"
 
-vmstat -n 5 | awk ' NR>2 {printf "{ \"r\":%s,\"b\":%s, \"swpd\" :%s, \"free\" :%s, \"buff\" :%s, \"cache\" :%s, \"si\" :%s, \"so\":%s, \"bi\" :%s, \"bo\" :%s,  \"in\" :%s,  \"cs\":%s, \"us\":%s, \"sy\":%s, \"id\":%s, \"wa\":%s, \"st\" :%s }\n", $1,$2, $3,$4, $5,$6, $7,$8, $9,$10, $11,$12, $13,$14, $15,$16,$17}\n' | \
-./focus -license $WHATAP_LICENSE \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+vmstat -n 5 | awk ' NR>2 {printf "{ \"r\":%s,\"b\":%s, \"swpd\" :%s, \"free\" :%s, \"buff\" :%s, \"cache\" :%s, \"si\" :%s, \"so\":%s, \"bi\" :%s, \"bo\" :%s,  \"in\" :%s,  \"cs\":%s, \"us\":%s, \"sy\":%s, \"id\":%s, \"wa\":%s, \"st\" :%s }\n", $1,$2, $3,$4, $5,$6, $7,$8, $9,$10, $11,$12, $13,$14, $15,$16,$17}\n' | 
+./focus -license $WHATAP_LICENSE 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
     -category $CATEGORY
 ```
 
@@ -57,8 +57,8 @@ The following example executes the du command to collect the capacity of a direc
 CATEGORY="my_category"
 TARGET=Directory to collect capacity in
 
-du -sb $TARGET --max-depth=0 | awk 'BEGIN { printf "{" } {if (NR!=1) {printf ", "}}{printf "\"%s\":%s",$2,$1} END { print "}" }' | \
-./focus -license $WHATAP_LICENSE \
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
+du -sb $TARGET --max-depth=0 | awk 'BEGIN { printf "{" } {if (NR!=1) {printf ", "}}{printf "\"%s\":%s",$2,$1} END { print "}" }' | 
+./focus -license $WHATAP_LICENSE 
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
     -category $CATEGORY -onetime
 ```

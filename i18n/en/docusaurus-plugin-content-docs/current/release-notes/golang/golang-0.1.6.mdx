@@ -45,40 +45,53 @@ func main() {
 
 #### Configuration
 
-`grpc_profile_enabled`\
-#Default : true#\
+`grpc_profile_enabled`
+
+#Default : true#
+
 #Type : boolean# 
 
 It sets whether or not to collect the GRPC data. 
 
-`grpc_profile_stream_client_enabled`\
-#Default : true#\
+`grpc_profile_stream_client_enabled`
+
+#Default : true#
+
 #Type : boolean#  
 
 It sets whether or not to collect the client stream method data.
 `false`: The stream method data is not collected. 
 
-`grpc_profile_stream_server_enabled`\
-#Default : true#\
+`grpc_profile_stream_server_enabled`
+
+#Default : true#
+
 #Type : boolean#  
 
-It sets whether or not to collect the server stream method data.\
+It sets whether or not to collect the server stream method data.
+
 `false`: The stream method data is not collected. 
 
-`grpc_profile_ignore_method`\
-#Default : agent#\
+`grpc_profile_ignore_method`
+
+#Default : agent#
+
 #Type : String# 
 
 The specified methods are not collected. To set multiple items, use comma (,) as the delimiter.
 
-`grpc_profile_stream_method`\
-#Default : "" #\
+`grpc_profile_stream_method`
+
+#Default : "" #
+
 #Type : String# 
 
 It organizes the specified stream method as a separate transaction. To set multiple items, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search. 
 
-`grpc_profile_stream_identify`\
-#Default : false#\
+`grpc_profile_stream_identify`
+
+#Default : false#
+
 #Type : boolean#  
 
 The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added. (_/StreamClient/[full method]"_, _/StreamServer/[full method]_)
