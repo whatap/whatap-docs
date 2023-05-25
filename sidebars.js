@@ -2769,15 +2769,15 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-notes/preview/preview-1.101.x',
+        id: 'release-notes/preview/preview-1.103.x',
       },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1.101.x',
+          id: 'release-notes/preview/preview-1.103.x',
           className: 'new',
         },
-        //'release-notes/preview/preview-1.101.x',
+        'release-notes/preview/preview-1.101.x',
         'release-notes/preview/preview-1.99.x',
         'release-notes/preview/preview-1.97.x',
         'release-notes/preview/preview-1.95.2',
