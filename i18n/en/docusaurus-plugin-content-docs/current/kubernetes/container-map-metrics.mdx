@@ -85,9 +85,11 @@ The main WhaTap metrics related to CPU and memory are as follows:
 | ^               | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | Container memory working set usage by quota   |
 
 :::note
-Pod가 실행 중인 노드에 사용 가능한 리소스가 충분하면 컨테이너에 설정된 Request 이상의 리소스를 사용할 수 있습니다. 와탭 메트릭 중 **_Container CPU Usage by Request (%)_**, **_Container Memory Working Set by Request (%)_**의 값이 100%를 넘어설 수 있는 이유입니다.
+
+If the node on which the pod is running has sufficient resources, it can use more resources than the request set in the container. Accordingly, among WhaTap metrics, the values for **_Container CPU Usage by Request (%)_** and **_Container Memory Working Set by Request (%)_** cannot exceed 100%.
 
 For example, let's assume that the container's memory request has been set to 128 MiB. If the node of the active container (pod) has the total memory of 4 GiB and there has no pod on that node, this container can use more than 128 MiB of memory.
+
 :::
 
 ## Other metrics

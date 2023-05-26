@@ -20,7 +20,9 @@ You can search for the desired transaction based on the individual transaction's
 To query the result, click ![Column selection icon](/img/ico-column-set.svg) **_Select Column_** to check.
 
 :::note
+
 It is recommended to set the search time as short as possible because a response delay may occur depending on the search conditions.
+
 :::
 
 ## Elapsed Time
@@ -71,7 +73,7 @@ Transactions are searched based on the IP. However, IP strings are searched by p
 
 Transactions are retrieved based on the HTTP service domain (host:port). The search conditions must match the domain completely (full match).
 
-## User Agent
+## UserAgent
 
 ![User Agent](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_useragent.png)
 
@@ -84,31 +86,37 @@ Search transactions based on the user agent (partial match).
 Search transactions based on the referer string.
 
 :::note
-기본 설정 상태의 에이전트는 Referer 정보를 수집하지 않습니다. Referer 설정이 필요한 경우 다음 문서를 참조해 관련 설정을 추가하세요.
+
+Agents in their default settings do not collect referer data. If the referer configuration is required, see the following to add the related settings.
 
 -   [Java](../java/analysis-apm-trs#stat-referer)
 -   [Node.js](../nodejs/analysis-apm-trs#stat-referer)
 -   [Python](../python/analysis-apm-trs#stat-referer)
+
 :::
 
-## 트랜잭션 ID
+## Transaction ID
 
 ![Transaction ID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_tid.png)
 
 Search transactions based on their transaction ID (full match). For transaction IDs, the search indexes are created for searching at a high speed.
 
 :::note
+
 If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+
 :::
 
-## Multi-transaction ID
+## Multi Transaction ID
 
 ![Multi Transaction ID](https://img.whatap.io/media/images/whatap_application_analysis_tx_profile_mtid.png)
 
 Search transactions based on the multi-transaction ID (full match).
 
 :::note
+
 If you are not using the latest version of the agent, a full scan may occur rather than using indexes.
+
 :::
 
 ## Client ID
@@ -124,5 +132,7 @@ The client ID (`wClientId`) is an ID given by the WhaTap agent to identify users
 Search transactions based on the login ID.
 
 :::note
+
 Agents in their default settings do not collect login IDs. For more information about the login ID setting, see [the following](../java/script-plugin#common-plugin) to add settings.
+
 :::

@@ -78,9 +78,9 @@ environment["BP_WHATAP_OPTIONS"] = "accesskey={access key}\nwhatap.server.host={
 When running the container, you can set the access key and WhaTap collection server address as environment variables as follows.
 
 ```docker
-docker run --rm -p 8080:8080 \
-  -e accesskey={access key} \
-  -e whatap.server.host={collection server address} \
-  -e weaving=tomcat10,webflux-6.0 \
+docker run --rm -p 8080:8080 
+  -e accesskey={access key} 
+  -e whatap.server.host={collection server address} 
+  -e weaving=tomcat10,webflux-6.0 
   spring-boot-gradle-hello-world-pcketo-buildpack-whatap
 ```

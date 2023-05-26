@@ -24,9 +24,13 @@ The **_server list_** displays the overall status of the collection server and p
 It displays the current status of the collection server by status. The status is updated every 1 minute.
 
 -   ![Disable icon](/img/ico-disable-agent.svg)**Disabled**: The agent cannot collect data from the server.
+
 -   ![Danger icon](/img/ic-warning-critical.svg)**Danger** : Any fatal events occur in the collection server.
+
 -   ![Warning icon](/img/ic-warning-filled.svg)**Warning** : Any warning events occur in the collection server.
+
 -   ![Normal icon](/img/ic-check-circle-filled.svg)**Normal** : The agent is running normally in the collection server.
+
 -   ![Icon](/img/ic-s-pause.svg)**Pause** : The agent temporarily paused collecting data.
 
 ## ![](/img/number-02.png) Data update
@@ -53,18 +57,30 @@ It displays the status of all servers to which agents are assigned. If an agent 
 
 ### Columns
 
--   ![Column icon](/img/ic-column.svg) **_Column selection_**\
-        ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Select Column_**, you can select columns to displays in the table as follows.
-        ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring27.png)
+-   ![Columns Icon](/img/ic-column.svg) **_Select Column_**
+
+    ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Select Column_**, you can select columns to displays in the table as follows.
+
+    ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring27.png)
+
     :::note
-    The selected **_columns_** are stored as the browser cookie values so that the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the full selection state.
+
+    The selected **_Columns_** are stored as the browser cookie values so that the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the full selection state.
+
     :::
--   **Column Width Setting**\
-      You can set the column width by dragging the edge of the column title.
--   **Column sorting**\
-        By clicking the column title, you can sort in ascending or descending order.
+
+-   **Column Width Setting**
+
+    You can set the column width by dragging the edge of the column title.
+
+-   **Align Columns**
+
+    Sort Columns By clicking the column title, you can sort in ascending or descending order.
+
     :::note
-    The settings for **column width** and **column sorting** are stored in the browser cookies and the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the unset state.
+
+    The settings for **Columns Width** and **Columns Align** are stored in the browser cookies and the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the unset state.
+
     :::
 
 ### Filtering
@@ -76,6 +92,7 @@ Tags are automatically assigned when installing the agent. You can add input val
 ![](/img/server-list-filter.png)
 
 -   ![number-s](/img/number-04.png) By selecting a tag in the area, you can filter servers. 
+
 -   You can enable new tag features by entering tags for each agent. Check the input field at the bottom of the ![number-s](/img/number-05.png) area.
 
 ### Monitoring management
@@ -83,7 +100,9 @@ Tags are automatically assigned when installing the agent. You can add input val
 This function manages servers through agent commands. Click ![Server Management icon](/img/ico-setting.svg)**_Management_** and then select a server to apply the management features from the list. On the right, **_Pause_**, **_Restart_**, and **_Terminate_** buttons are activated.
 
 -   ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : Data collection for the agent is paused. It is displayed as the paused state in the server list.
+
 -   ![Restart icon](/img/ic-caret-right.svg)**_Restart_** : The agent is restarted.
+
 -   ![Terminate icon](/img/ic-delete-critical.svg)**_Terminate_** : The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.
 
 ### Agent transfer
@@ -93,8 +112,11 @@ By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can tra
 ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring34.png)
 
 1.  Select a project to transfer on the right screen.
+
 2.  Select an agent to transfer on the left screen.
+
 3.  By clicking ![right-arrow](/img/right-arrow.svg) **_Right arrow_**, you can transfer to the target project.
+
 4.  If you click **_Save_**, the transfer is completed.
 
 :::note
@@ -102,6 +124,7 @@ By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can tra
 -   If you move the same agent again within 10 minutes just after execution, it may cause a conflict. 
 -   The collected data is not transferred. Do not delete the existing projects for a while to retrieve the past data.
 
+:::
 
 ### Comparison between servers
 
@@ -110,11 +133,17 @@ The comparison chart between servers is provided as follows.
 ![](/img/server-list-compare.png)
 
 1.  Select ![Chart comparison icon](/img/ic-multiline-chart2.svg) **_Compare_**.
+
 2.  Like ![number-s](/img/number-06.png), check whether the **_Compare_** column has been added on the left of the server list.
+
 3.  If you select a desired server in the **_Compare_** column, the comparison function is enabled. 
-    :::note
-    The comparison servers can be selected up to 5.
-    :::
+
+:::note
+
+The comparison servers can be selected up to 5.
+
+:::
 
 -   Unique colors are assigned to each server. The unique colors are used to distinguish servers in ![number-s](/img/ic-number-07.svg) **_Comparison Chart_**.
+
 -   If you select **_Check period_**, the past data can be retrieved.

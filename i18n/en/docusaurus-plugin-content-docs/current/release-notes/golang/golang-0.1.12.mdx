@@ -76,7 +76,7 @@ It traces the DB connection and SQLs processed through the gorm v2 framework.
 
 Instead of the `gorm.Open` function, the `whatapgorm.OpenWithContext` function is used. The context to be passed must include whatap TraceCtx, and can be created through the `Start` function of the trace package.
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "net/http"
 
@@ -119,7 +119,7 @@ In addition to officially supported sqlite, mysql, postgres, and sqlserver, the 
 
 Related link: [gorm driver](https://gorm.io/docs/write_driver.html)
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "net/http"
   "github.com/whatap/go-api/instrumentation/database/sql/whatapsql"
@@ -166,7 +166,7 @@ It traces the DB connection and SQLs processed through the gorm v1 framework.
 
 Instead of the `gorm.Open` function, the `whatapgorm.OpenWithContext` function is used. The context to be passed must include whatap TraceCtx, and can be created through the Start function of the trace package.
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "net/http"
 
@@ -211,7 +211,7 @@ In addition to officially supported sqlite, mysql, postgres, and sqlserver, the 
 
 Related link: [gorm driver](https://v1.gorm.io/docs/dialects.html)
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "net/http"
   "github.com/whatap/go-api/instrumentation/database/sql/whatapsql"
@@ -260,7 +260,7 @@ func main() {
 
 It traces commands passed to Redis via the redigo framework. Instead of `redis.Dial`, the `whatapredigo.DialContext` function is used.
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "context"
   "net/http"
@@ -313,7 +313,7 @@ It traces the kafka produce and consume events processed through the sarama fram
 
 It traces the async producer data through the whatapsarama's interceptor. When generating the producer message, if CTX-related data is passed through metadata, it is connected to the multi-transaction.
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "context"
   "net/http"
@@ -369,7 +369,7 @@ func main() {
 
 It traces the consumer data through the whatapsarama's interceptor. Based on the message delivered from the producer, it is connected to the multi-transaction.
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "context"
   "flag"

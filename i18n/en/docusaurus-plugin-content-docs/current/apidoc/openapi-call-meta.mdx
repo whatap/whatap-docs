@@ -56,7 +56,9 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/project
 
 :::note
+
 This function is included in the application monitoring suite.
+
 :::
 
 ```bash title='command'
@@ -90,7 +92,9 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/projects
 
 :::note
+
 This function is included in the server monitoring suite.
+
 :::
 
 ```bash title='command'
@@ -170,7 +174,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 {
   "data": [ {
       "email": "honggildong@whatap.io",
-      "name": "홍길동",
+      "name": "John Doe",
       "typeKey": "super_admin",
       "typeName": "Super Admin"
     }, {
@@ -184,7 +188,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 | -------------- | :-----------------------------: | --------------------------------- |
 | email          | <span class='api'>string</span> | Email address of the user account |
 | name           | <span class='api'>string</span> | User account name                 |
-| typeKey        | <span class='api'>string</span> | User role                         |
+| typeKey        | <span class='api'>string</span> | User Role                         |
 | typeName       | <span class='api'>string</span> | Name of the user role             |
 | total          | <span class='api'>number</span> | Project member count              |
 
@@ -263,4 +267,4 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 | status          |      <span class='api'>string</span>     | Project status (`pending`, `trial`, `subscribe`, `close_pending`, `limited`, `closed`, `trial_limited`) |
 | productType     |      <span class='api'>string</span>     | Products used in the project                                                                            |
 | platform        |      <span class='api'>string</span>     | Platform of the product used in the project                                                             |
-| gatewayName     |      <span class='api'>string</span>     | Data server's region                                                                                    |
+| gatewayName     |      <span class='api'>string</span>     | Data Server Region                                                                                      |

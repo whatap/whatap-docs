@@ -10,7 +10,9 @@ tags:
 ---
 
 :::note
+
 Before learning MXQL, it is recommended to be familiar with the concept of metrics. For more information about metrics, see [the following](../metrics/common-metrics-intro).
+
 :::
 
 ## What is MXQL?
@@ -39,13 +41,13 @@ As above, the WhaTap database includes the product table. The product table cont
 
 It is a sample query in MXQL and SQL. See comments to the right of each line in MX.
 
-```sql title='간단한 SQL 쿼리'
+```sql title='SQL query'
 SELECT time, pcode  -- Column selection (Set to search only the time and pcode columns.)
 FROM app_counter    -- Table selection (Data is searched in the app_counter table.)
 WHERE tx_count = 1  -- Data filtering (Set to search only the data whose value of tx_count column is 1.)
 ```
 
-```sql title='간단한 mxql 쿼리'
+```sql title='MXQL query'
 CATEGORY app_counter                 -- Set to search data in the app_counter category.
 TAGLOAD                              -- Data is searched.
 SELECT [ time, pcode ]               -- Select only the time and pcode fields from all columns searched.
@@ -58,7 +60,7 @@ When you perform an MXQL query, it retrieves the metrics of the selected field i
 
 The query to search for the `tx_count` and `tx_error` metrics in the `app_counter` category is as follows:
 
-```sql title='MXQL 수행'
+```sql title='MXQL'
 CATEGORY app_counter                   -- Set to search data in the app_counter category.
 TAGLOAD                                -- Data is searched.
 SELECT [time, oid, tx_count, tx_error] -- Set the name of the field to search for.

@@ -24,7 +24,8 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     -   _whatap.agent-2.0_25.jar_
     -   _whatap.conf_
 
-    ```bash title='디렉터리 압축하기'
+    ```bash
+    # Compressing a directory
     zip -r whatap-agent.zip agent
     ```
 
@@ -37,7 +38,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
         S3 path
     ```
 
-    ```yaml title=예시
+    ```yaml title='Example'
     sources:
       /home/webapp:
         http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
@@ -45,11 +46,11 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
 
 4.  Enter the JVM command with the WhaTap agent option added to create a _Procfile_.
 
-    ```yaml title=Procfile
+    ```yaml title='Procfile'
     web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
     ```
 
-    ```yaml title=예시
+    ```yaml title='Example'
     web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
     ```
 
@@ -73,9 +74,13 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     ```
 
 :::note
+
 {@include: _java-17.mdx}
+
 :::
 
 :::note
+
 For more information, see [AWS Guide](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html).
+
 :::

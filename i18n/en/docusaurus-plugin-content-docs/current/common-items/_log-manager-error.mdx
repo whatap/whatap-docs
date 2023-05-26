@@ -5,7 +5,7 @@ If any Log Manager error occurs in JBoss AS 7.0 or later and JBoss EAP 6.0 or la
 -   Set the package name of Log Manager in `-Djava.util.logging.manager`.
 -   Set the JBoss Log Manager JAR file in `-Xbootclassloader`.
 
-```apacheconf title='(JBoss 설치 경로)/bin/standalone.conf(domain.conf)' {4,12,13} showLineNumbers
+```apacheconf title='(JBoss_Path)/bin/standalone.conf(domain.conf)' {4,12,13} showLineNumbers
 # Specify the exact Java VM executable to use.
 #
 if [ "x$JBOSS_MODULES_SYSTEM_PKGS" = "x" ]; then

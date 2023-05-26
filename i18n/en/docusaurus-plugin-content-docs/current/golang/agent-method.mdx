@@ -40,11 +40,11 @@ func Trace(ctx context.Context, name string, elapsed int, err error) error
 
 ## Whatap.conf configuration
 
-**ignore_http_method_urls** <span class='type'>String</span><br/>**ignore_http_method** <span class='type'>String</span>
+**ignore_http_method_urls** <span class='type'>String</span> / **ignore_http_method** <span class='type'>String</span>
 
 It excludes the collection of transactions requested by specific HTTP methods for the set URIs. Multiple URIs and methods can be registered using comma (,) as the delimiter. The values are case-insensitive.
 
-```ini title='예시'
+```ini title='whatap.conf'
 ignore_http_method_urls=/index, /sql/select
 ignore_http_method=options, connect
 ```

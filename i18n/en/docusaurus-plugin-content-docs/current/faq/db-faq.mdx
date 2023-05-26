@@ -25,10 +25,12 @@ Check out frequently asked questions from users about the WhaTap database monito
 > ```
 >
 > :::note
+>
 > See the following.
 >
 > -   2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
 > -   6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+>
 > :::
 
 <br/>
@@ -81,6 +83,36 @@ Check out frequently asked questions from users about the WhaTap database monito
 >
 > --Granting permissions
 > grant REPLICATION SLAVE, REPLICATION CLIENT on *.* to whatap;
+> ```
+
+### Metalock Monitoring
+
+| Q. Metalocks (locks obtained when changing the names or structures of database objects) cannot be viewed in the lock tree of MySQL. How can I monitor metalocks as well? |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+> A. DB and WhaTap agent configurations are required.
+>
+> **DB Configuration**
+>
+> ```sql
+> # 1. Enable the Performance_schema
+> performance_schema = on
+> # 2. Enabling setup_consumers: As a result of the query below, ENABLED must be `YES` (default value is `YES` from 8.0)
+> SELECT *
+> FROM performance_schema.setup_instruments
+> WHERE NAME = 'wait/lock/metadata/sql/mdl'; 
+>
+> -- If ENABLED is `NO`, update is required.
+> UPDATE setup_instruments 
+> SET ENABLED = 'YES',TIMED='YES' 
+> WHERE NAME = 'wait/lock/metadata/sql/mdl';
+> ```
+>
+> **WhaTap DB Agent Configuration**
+>
+> ```sql
+> # Add the following setting in whatap.conf
+> metalock=1
 > ```
 
 </div>

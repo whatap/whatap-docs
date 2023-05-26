@@ -19,23 +19,25 @@ In case of server monitoring, the alert template differs exceptionally.
 
 ### Event Title
 
-```log title='이벤트 제목 포맷'
+```log title='Event title format'
 [Level][INFRA] ProjectName ServerName EventTitle
 ```
 
-```log title='이벤트 제목 예시'
+```log title='Event title example'
 [Info][INFRA] Server Project TC-0-1-8081 CPU Used > 70%
 ```
 
 :::note
+
 If ServerName has not been specified, it is omitted from the event title.
+
 :::
 
 ### Event Message
 
 The data can be included in the event message. Always include it in the message if `optional` is `false`. If `optional` is `true`, the corresponding data appears if available.
 
-```log title='이벤트 메시지 예시'
+```log title='Event message example'
 Project Name: Application project
 Project Code: 3
 Server Name: TC-0-1-8081
@@ -65,7 +67,7 @@ The following lists the event message components.
 | Metric Name                                 | 메트릭스 이름                                      | `true`   | The metrics name used to judge the event condition.                                                                                                          |
 | Metric Value                                | 메트릭스 값                                       | `true`   | If the metric value exceeds the metric threshold, the event occurrence condition is met.                                                                     |
 | Metric Threshold                            | 메트릭스 임계치                                     | `true`   | If the metric value exceeds the metric threshold, the event occurrence condition is met.                                                                     |
-| Event Rule                                  | 이벤트 발생 조건                                    | `true`   | -                                                                                                                                                            |
+| Event Rule                                  | Event Rule                                   | `true`   | -                                                                                                                                                            |
 | Alert Type                                  | 이벤트 종류                                       | `true`   | Field to specify the event type.                                                                                                                             |
 | Event Target Filter                         | 이벤트 대상 선택                                    | `true`   | (Metrics Alert) Check the event conditions only for metrics collected in specific targets.                                                                   |
 | Stateful                                    | 해결된 이벤트 알림                                   | `true`   | If the resolved event alert is being used, the value is `true`. Otherwise, the value is `false`.                                                             |
@@ -98,7 +100,7 @@ The server alert provides only the event message with no event title.
 | Network IOPS                | Warning or Critical | NETWORK ${deviceId} pps > ${value} pps"      | -                             |
 | Network BPS                 | Warning or Critical | NETWORK ${deviceId} bps > ${value} ps"       | -                             |
 | Disk I/O                    | Warning or Critical | Disk ${mountPoint} IO Usage > ${value} %"    | -                             |
-| Disk usage                  | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
+| Disk Used                   | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
 | inode                       | Warning or Critical | Disk ${mountPoint} inode usage > ${value} %" | -                             |
 | CPU                         | Warning or Critical | CPU Used > ${value} %"                       | -                             |
 | Memory                      | Warning or Critical | Memory Used > ${value} %"                    | -                             |
@@ -112,7 +114,7 @@ The server alert provides only the event message with no event title.
 | Process count alert     | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count \< ${value}" |
 | Process count critical  | Warning or Critical | Process ${processName} Count \< ${value}" | "Process ${groupName} Count >= ${value}" |
 | Process CPU             | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
-| Process memory          | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
+| Process Memory          | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
 
 ### Log file and Windows events
 

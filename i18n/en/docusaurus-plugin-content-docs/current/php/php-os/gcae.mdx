@@ -38,13 +38,13 @@ Install the PHP monitoring agent.
     RUN apt-get install wget -y
     ```
 
-1.  Create the php-fpm execution command link.
+2.  Create the php-fpm execution command link.
 
     ```docker
     RUN ln -s /opt/php/sbin/php-fpm /usr/bin/php-fpm
     ```
 
-1.  Install the WhaTap repository and whatap-php package.
+3.  Install the WhaTap repository and whatap-php package.
 
     ```docker
     RUN wget http://repo.whatap.io/debian/release.gpg -O -| apt-key add -
@@ -54,7 +54,7 @@ Install the PHP monitoring agent.
     RUN apt-get install whatap-php
     ```
 
-1.  Configure the PHP extension module and whatap-php service.
+4.  Configure the PHP extension module and whatap-php service.
 
     ```docker
     #RUN (echo "[granted access key]"; echo "[granted server IP ]")|/usr/whatap/php/install.sh
@@ -67,7 +67,7 @@ Install the PHP monitoring agent.
 
     :::
 
-1.  Run the whatap-php service through `supervisor`.
+5.  Run the whatap-php service through `supervisor`.
 
     ```docker
     RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf

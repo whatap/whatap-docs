@@ -1,0 +1,190 @@
+Home > Select Project > **_Alert_** > **_Notification Setting_**
+
+You can set various functions related to reception of alerts by project members.
+
+![Alert Notification Reception Setting](/img/alert_receving_setting.png)
+
+## Selecting the reception method
+
+In addition to the email alert, you can select any of SMS and mobile notification. You can receive alerts if a desired reception method is checked. If you uncheck the alert reception method, alert notifications are not sent.
+
+:::note
+
+-   The email alert sends notifications to the email address entered for sign up as a member.
+-   All users except the project super admin can only change their own reception settings.
+
+:::
+
+### Adding to the SMS alert reception
+
+If SMS notification is required to be received, set the user phone number in **_Manage Account INFO._**. 
+
+1.  Select the profile icon on the upper right of the screen. 
+
+2.  If a pop-up menu appears, select **_Manage Account INFO._**. 
+
+3.  In **_Phone_** in the **_User Phone_** section, enter the phone number to receive SMS messages.
+
+### Adding to the mobile alert reception
+
+If you need to receive mobile notifications, install the WhaTap application on your mobile device and log in the application.
+
+-   [Android App](https://play.google.com/store/apps/details?id=io.whatap.app.WhaTap&hl=ko)
+-   [iOS App](https://apps.apple.com/kr/app/whatap/id1252504621)
+
+## Selecting the reception level
+
+Depending on the alert level, you can set whether or not to receive alerts. In the user list of the **_Event Notification Settings Per-User_** section, select **_All_** or **_Critical_** as the **_Level_**.
+
+-   **_All_**: All alerts can be received.
+-   **_Fatal_**: Alerts in critical level can be received.
+
+## Setting alarms by day of the week and time
+
+You can select whether or not to receive notifications by day of the week or time. In the user list of the **_Event Notification Settings Per-User_** section, select ![More icon](/img/ico-more-down.svg) at the utmost left. 
+
+![Receiving alerts by day of the week or time](/img/set-event-day-time.png)
+
+Select the desired day of the week or select the time to receive alerts. You can set for each alert reception method.
+
+## Setting notifications by team and user
+
+Set whether or not to receive notifications for specific members or teams among project members. For event settings of **_Metrics_**, **_Anomaly Detection_**, and **_Log_**, add tags in **_Event Receiving Tag_**. You can select members or teams to receive alerts for each event.
+
+On the contrary, if you do not set any event reception tag, you can send alerts to all members.
+
+<details>
+<summary>Event Receiving Tag Example</summary>
+
+Let's learn how to send the alerts for each team or user through the event reception tag example. Set different alerts to be sent by team as follows:
+
+| Notification types             | Whether or not to receive by the server team | Whether or not to receive by the DevOps team |
+| ------------------------------ | :------------------------------------------: | :------------------------------------------: |
+| Metrics alert                  |        <span class='emoji-ok'>✅</span>       |        <span class='emoji-no'>❌</span>       |
+| Anomaly detection alert        |        <span class='emoji-ok'>✅</span>       |        <span class='emoji-ok'>✅</span>       |
+| Log real-time alert            |        <span class='emoji-no'>❌</span>       |        <span class='emoji-ok'>✅</span>       |
+
+1.  **Setting up receiving events** (**_Alert_** > **_Notification Setting_**)
+
+  ![Event Notification Settings Per-User](/img/set-event-tag.png)
+
+  Among project members, for the members in the server team, set the event reception tag to `Sever Team`. For the members in the DevOps team, set to `DevOps Team`.
+
+1.  **Metrics Alert Settings** (**_Alert_** > **_Event Setting_** > **_Metrics_** > **_+ Add alert policy_** > **_Notification Setting_**)
+
+  ![Metrics Alert Settings](https://img.whatap.io/media/images/reception_tag_002_metric_event_with_tag.png)
+
+  Click **_+ Add Tag_** or **_+_**. Select a tag from the tag list or create a new tag. This is the case that the notification of metrics events has been set to `Server Team`.
+
+1.  **_Realtime Log Alert Settings_** (**_Alert_** > **_Event Setting_** > **_Log_** > **_+ Add alert policy_** > **_Event Receiving Tag_**)
+
+  ![Realtime Log Alert Settings](https://img.whatap.io/media/images/reception_tag_004_tag_devops.png)
+
+  Click **_+ Add Tag_** or **_+_**. Select a tag from the tag list or create a new tag. This is the case that the notification of log events has been set to `DevOps Team`.
+
+1.  Because the anomaly detection event sends alerts to all members, no tag is set to receive the event.
+
+</details>
+
+### Adding the event reception tag
+
+1.  In the user list of the **_Event Notification Settings Per-User_** section, select **_+ Add Tag_** or **_+_**.
+
+2.  If the **_Event Receiving Tag_** pop-up window appears, enter the tag name in the tag field and then press Enter or select **_+ Create New Tag_**.
+
+3.  Select the tag color.
+
+4.  Select **_Create Tag_**.
+
+In **_Tag List_**, you can see the created tags. To apply any created tag, select the tag.
+
+### Disabling the event reception tag
+
+1.  In the user list of the **_Event Notification Settings Per-User_** section, select **_+_**.
+
+2.  If the **_Event Receiving Tag_** pop-up window appears, select ![Close icon](/img/ico-close.svg) next to the applied tag.
+
+3.  If you close the **_Event Receiving Tag_** pop-up window, the tag is cleared.
+
+### Modifying and deleting the event reception tag
+
+1.  In the user list of the **_Event Notification Settings Per-User_** section, select **_+ Add Tag_** or **_+_**.
+
+2.  If the **_Event Receiving Tag_** pop-up window appears, select ![Edit icon](/img/ico-edit.svg) of the item to modify or delete in **_Tag List_**.
+
+3.  Modify the tag name or change the color and then select **_Apply_**.
+
+  To delete the tag, select ![Delete icon](/img/ico-trash-red.svg) **_Delete Tag_**.
+
+:::note
+
+You cannot delete the **_Event Receiving Tag_** item applied to the event.
+
+:::
+
+### Receiving notifications when event reception tags are not set
+
+![](/img/receive-untag-event.png)
+
+To receive alerts whose **_Event Receiving Tag_** has not been set, select the **_Receive notifications with no receive tag set_** option. Uncheck to receive alerts with the tag set. 
+
+:::note
+
+If you do not want to receive all alerts, uncheck the option and there must be no selected **_Event Receiving Tag_**.
+
+:::
+
+## Adding the 3rd party plug-in alert
+
+You can receive alerts through external applications such as Slack, Telegram, Teams, Jandi, and Webhooks.
+
+1.  In **_Alert_** > **_Notification Setting_**, select **_Add_** in the **_3rd Party Plugin_** section.
+
+2.  Select a desired service.
+
+  ![3rd Party Plugin Addition](/img/set-event-3rd-party-plugin.png)
+
+1.  Proceed with the configuration according to the on-screen instructions for the selected service.
+
+2.  After all steps are finished, select Add.
+
+:::note
+
+The in-house messengers that are not included in the support scope of WhaTap Labs can be linked through the standard webhook and webhook json.
+
+:::
+
+## Avoiding a large number of alerts
+
+When numerous alerts occur, it temporarily stops notifying alerts for a set period. In **_Alert_** > **_Notification Setting_**, go to the Avoids a large number of alerts section.
+
+![Avoids a large number of alerts](/img/set-event-huge-message.png)
+
+-   This function can be enabled or disabled by selecting the **_Enable_** toggle button.
+-   If the events occur more than **_Number of detections_** during **_Detection time_**, it stops alert notification for **_Pause time_**.
+
+For example, alert notification stops for 5 minutes when 20 events occur within 5 minutes. If the set **_pause time_** elapses, the Avoids a large number of alerts function is disabled.
+
+## Setting the alert in Manage Account INFO.
+
+**_In Manage Account INFO._**, you can configure the settings for user's individual notification level, reception method, day of the week, and time. 
+
+1.  Select the profile icon on the upper right of the screen.
+
+2.  If a pop-up menu appears, select **_Manage Account INFO._**.
+
+3.  Scroll down the screen, go to the **_Alert Notification Setting_** section.
+
+4.  Set the reception level, reception method, day of the week, and time, and then select **_Save_**.
+
+## Setting the alert language
+
+You can change the language for alert messages that occur in the project.
+
+1.  In Home screen, select a project to change the language for alert messages.
+
+2.  On the left of the screen, select **_Management_** > **_Project Management_**.
+
+3.  In the **_Managing Notification Language_**, select a desired language.
+
+4.  Select **_Save_** on the upper right of the screen.

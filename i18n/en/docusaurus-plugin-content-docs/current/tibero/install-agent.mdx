@@ -28,29 +28,29 @@ The following guides you to the basic installation method for using the WhaTap d
 
 1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
-```ini title='whatap.conf'
-license=Project access key
-whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap server information
+    ```ini title='whatap.conf'
+    license=Project access key
+    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap server information
 
-dbms=tibero
-db=Database name (sid)
-db_ip=Database IP
-db_port=Database port 
-```
+    dbms=tibero
+    db=Database name (sid)
+    db_ip=Database IP
+    db_port=Database port 
+    ```
 
-1.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+2.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
 
-  Download the JDBC driver for the OS and version of your database server.
+    Download the JDBC driver for the OS and version of your database server.
 
-**Tibero JDBC Drivers**: `{$TB_HOME}`/client/lib/jar/tibero{Version}-jdbc.jar
+    **Tibero JDBC Drivers**: `{$TB_HOME}`/client/lib/jar/tibero{Version}-jdbc.jar
 
-:::note
-In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installation paths for each database.
-:::
+    :::note
+
+    In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installation paths for each database.
+
+    :::
 
 {@include: ../common-items/_db-create-monitoring-account.mdx}
-
-<!-- Tibero -->
 
 ```bash showLineNumbers
 create user whatap identified by 'DB_PASSWORD'; ## Enter the desired password.

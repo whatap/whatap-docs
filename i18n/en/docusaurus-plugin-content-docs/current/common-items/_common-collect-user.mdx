@@ -1,21 +1,31 @@
--   **trace_user_cookie_limit** <span class='type'>Int</span><br/>
-    Default '2048'<br/>
+-   **trace_user_cookie_limit** <span class='type'>Int</span>
+
+    Default `2048`
+
     If cookies are issued for counting users, a cookie overflow may occur if there are too many cookies. To prevent this from happening, set the limit.
 
--   **trace_user_using_ip** <span class='type'>Boolean</span><br/>
-    Default `true`<br/>
+-   **trace_user_using_ip** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It aggregates real-time users based on the IP address. If you want to distinguish users based on the cookie rather than IP addresses, change the value to `false`.
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span><br/>
-    his function sets to change the client IP (remote IP) to a specific HTTP header's value. In the proxy environment, the `X-Forwarded-For` header can be set with the client IP.<br/>
+-   **trace_http_client_ip_header_key** <span class='type'>String</span>
+
+    This function sets the client IP (remote IP) with a specific HTTP header value. In the proxy environment, the `X-Forwarded-For` header can be set with the client IP.
+
     If the load balancer like L4 is located before WEB/WAS, in some cases, the IP address of L4 becomes the remote address instead of the IP address of the client. In this situation, if the actual client IP is recorded as a specific key value in the HTTP header, it can be replaced with the corresponding key value.
 
--   **user_header_ticket** <span class='type'>String</span><br/>
-      To aggregate the numbers of users with a specific value in the HTTP header, set the key value. If headers are used to distinguish users in case of mobile clients, the following options are available.
+-   **user_header_ticket** <span class='type'>String</span>
 
-    ```ini title='예시'
+    To aggregate the numbers of users with a specific value in the HTTP header, set the key value. If headers are used to distinguish users in case of mobile clients, the following options are available.
+
+    ```ini title='whatap.conf'
     user_header_ticket=login
     ```
 
--   **trace_user_using_jsession** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>It aggregates real-time users based on the session ID.
+-   **trace_user_using_jsession** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It aggregates real-time users based on SESSIONID.

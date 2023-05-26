@@ -1,14 +1,21 @@
--   **gclog_enabled** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-       It enables the GC log monitoring.
+-   **gclog_enabled** <span class='type'>Boolean</span>
 
--   **gclog_file** <span class='type'>String</span><br/>
-      Set the GC log file path.
+    Default `false`
 
--   **gclog_check_interval** <span class='type'>Int</span><br/>
-      Default `2000`<br/>
-      It is the log monitoring interval. You can check whether any records have been added in the log file at this interval.
+    It enables the GC log monitoring.
 
--   **gclog_word** <span class='type'>String</span><br/>
-      Default `Full GC`<br/>
-      Register the keyword to monitor. If `Full GC` occurs, data is transferred to the server and then is saved.
+-   **gclog_file** <span class='type'>String</span>
+
+    Set the GC log file path.
+
+-   **gclog_check_interval** <span class='type'>Int</span>
+
+    Default `2000`
+
+    It is the interval for monitoring the GC logs. At every interval, it checks whether any record has been added to the log file.
+
+-   **gclog_word** <span class='type'>String</span>
+
+    Default `Full GC`
+
+    Register the keyword to monitor. If `Full GC` occurs, data is transferred to the server and then is saved.

@@ -11,7 +11,9 @@ tags:
 The following explains how to view the MXQL data by using the open API.
 
 :::note
+
 For more information about MXQL, see [the following](../mxql/mxql-overview).
+
 :::
 
 ## MXQL open API types
@@ -65,7 +67,7 @@ The following image is an example of the MXQL execution result.
 | limit   | Maximum data query count                                                                                                                                      |
 | pageKey | The string MXQL's fixed value                                                                                                                                 |
 | inject  | <span class='api'>Optional</span> See [the following](../mxql/mxql-calculate#inject)<br/>e.g. `{ "default": "ORDER {key : [oid],  sort : [desc] }"}`          |
-| param   | <span class='api'>Optional</span> See [the following](../mxql/mxql-guide#bind-parameter)<br/> e.g.` { "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
+| param   | <span class='api'>Optional</span> See [the following](../mxql/mxql-guide#bind-parameter)<br/> e.g. `{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
 
 -   In case of no queried data
 
@@ -170,7 +172,8 @@ The following image is an example of the MXQL execution result.
 
 <span class='apitype'>POST</span> https://api.whatap.io/open/api/flush/mxql/path
 
-```json title='Request Body example (INJECT로 \_pk\_ 컬럼 추가, param은 사용하지 않음)'
+```json title='Request Body example'
+# As INJECT, add the _pk_ column; param is not used.
 {
   "stime": 1639016640000,
   "etime": 1639016940000,

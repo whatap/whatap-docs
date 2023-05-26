@@ -10,14 +10,26 @@ tags:
 
 It provides the DB and SQL related options of the .NET agent.
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span><br/>Default `true`<br/>
+-   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
     It enables the function to normalize any SQL statements by extracting the literal part from each SQL statement. The literal part is denoted with "#."
 
--   **profile_sql_resource_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/>
+-   **profile_sql_resource_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
     It traces the CPU and memory usages during collection of SQLs in the transaction trace.
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>Default `false`<br/>
-        It is used to record SQL parameters in the transaction trace details. The parameters can be viewed by entering a separate security key.
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It is used to record SQL parameters in the transaction trace details. The parameters can be viewed by entering a separate security key.
+
     :::note
+
     Specify the security key to a 6-letter value in the WAS server's _`%PROGRAMFILES%`/WhaTap .NET\\paramkey.txt_ file. If _paramkey.txt_ does not exist, it is automatically created as a random value.
+
     :::

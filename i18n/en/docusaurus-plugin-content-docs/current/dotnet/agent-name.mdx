@@ -13,7 +13,7 @@ tags:
 
 The default patterns used to identify the application server are as follows:
 
-```ini title='기본 패턴'
+```ini title='Default pattern'
 {type}-{ip2}-{ip3}-{process}
 ```
 
@@ -25,7 +25,8 @@ object_name={type}-{ip2}-{ip3}-{process}
 
 :::note
 
--   The agent name takes effect after the **Whatap .NET** service has been restarted.
+-   The agent name takes effect after the **Whatap .NET** service has been restarted. 
+
 :::
 
 ## Variable of the agent name
@@ -45,17 +46,23 @@ object_name={type}-{ip2}-{ip3}-{process}
 :::note
 
 -   The agent name takes effect after the **Whatap .NET** service has been restarted.
+
 :::
 
--   **object_name** <span class='type'>String</span><br/>
-    Default `{type}-{ip2}-{ip3}-{process}`<br/>
+-   **object_name** <span class='type'>String</span>
+
+    Default `{type}-{ip2}-{ip3}-{process}`
+
     The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME.
 
--   **app_name** <span class='type'>String</span><br/>
-    Application name that is used in the agent name (ONAME) scheme that identifies applications. It corresponds to `{type}` among `object_name` options.
+-   **app_name** <span class='type'>String</span>
 
--   **app_process_name** <span class='type'>String</span><br/>
+    The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` among the `object_name` options.
+
+-   **app_process_name** <span class='type'>String</span>
+
     It is the application process name used in the agent naming (ONAME) scheme to identify applications. Set the target process to collect CPU, heap memory, and such of the application server. It corresponds to `{process}` among `object_name` options.
 
--   **whatap.okind** <span class='type'>String</span><br/>
+-   **whatap.okind** <span class='type'>String</span>
+
     Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.

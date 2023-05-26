@@ -1,89 +1,133 @@
 The functions of the Java application server are controlled.
 
--   **shutdown** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      If it is `true`, all the agent actions are stopped and the server connection is terminated.
+-   **shutdown** <span class='type'>Boolean</span>
 
--   **enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      All the functions are enabled. Even when the value is `false`, the minimum data to maintain communication with the server is sent.
+    Default `false`
 
--   **transaction_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      It enables the transaction tracing. It corresponds to transaction data recorded in the hitmap. If the `enabled` option is `false`, this is disabled.
+    If it is `true`, all actions of the agent are stopped and the connection with the server is finished.
 
--   **counter_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      The performance counter tracing is enabled. It includes the number of active transactions and users, JVM usage, process CPU usage, and DB pool usage. If the `enabled` option is `false`, this is disabled.
+-   **enabled** <span class='type'>Boolean</span>
 
--   **stat_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      It enables the statistical data tracing. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes. If the `enabled` option is `false`, this is disabled.
+    Default `true`
 
--   **sigar_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      The OS data collection through the sigar library is enabled. The OS resource data includes CPU, memory, and disk that are collected every 5 minutes through the sigar library. If the `enabled` option is `false`, this is disabled.
+    All functions are enabled. Even when the value is `false`, the minimum data to maintain communication with the server is sent.
 
--   **active_stack_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      Active stack tracing is enabled. The tracing data includes Top Stack, Unique Stack, and Active Stack in the Stack menus. If the value of `enabled` or `counter_enabled` is `false`, this is disabled.
+-   **transaction_enabled** <span class='type'>Boolean</span>
 
--   **license** <span class='type'>String</span><br/>
-      To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
+    Default `true`
 
--   **cypher_level** <span class='type'>aes_bit [128, 256]</span><br/>
-      Default `128`<br/>
-      Set the cypher level for the AES security algorithm. It can be expanded up to 256 bits. For more information about the AES 256 encryption configuration, see [the following](aes-256-encryption).
+    It enables the transaction tracing. It corresponds to transaction data recorded in the hitmap. If the `enabled` option is `false`, this is disabled.
 
--   **encrypt_level** <span class='type'>encrypt_level [1, 2, 3]</span><br/>
-      Default `2`<br/>
-      The WhaTap agent encrypts data selectively depending on the attributes when transferring data to the server. It has performance benefits along with high security. To apply encryption policies in bulk regardless of the data type, see the following options:
+-   **counter_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    The performance counter tracing is enabled. It includes the number of active transactions and users, JVM usage, process CPU usage, and DB pool usage. If the `enabled` option is `false`, this is disabled.
+
+-   **stat_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    The statistical data tracing is enabled. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes. If the `enabled` option is `false`, this is disabled.
+
+-   **sigar_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    The OS data collection through the sigar library is enabled. The OS resource data includes CPU, memory, and disk that are collected every 5 minutes through the sigar library. If the `enabled` option is `false`, this is disabled.
+
+-   **active_stack_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    Active stack tracing is enabled. The tracing data includes Top Stack, Unique Stack, and Active Stack in the Stack menus. If the value of `enabled` or `counter_enabled` is `false`, this is disabled.
+
+-   **license** <span class='type'>String</span>
+
+    To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
+
+-   **cypher_level** <span class='type'>aes_bit [128, 256]</span>
+
+    Default `128`
+
+    Set the cypher level for the AES security algorithm. It can be expanded up to 256 bits. For more information about the AES 256 encryption configuration, see [the following](aes-256-encryption).
+
+-   **encrypt_level** <span class='type'>encrypt_level [1, 2, 3]</span>
+
+    Default `2`
+
+    The WhaTap agent encrypts data selectively depending on the attributes when transferring data to the server. It has performance benefits along with high security. To apply encryption policies in bulk regardless of the data type, see the following options.
+
     -   `1`: Encrypted transmission disabled
     -   `2`: Encrypted transmission for sensitive attributes such as SQL parameters and plain texts.
     -   `3`: Encrypted transmission for all items
 
--   **stat_ip_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      It enables using the IP statistics in **_STAT/REPORT_** > **_Statistics_** > **_Client IP_** under **_Project Menu_** of [WhaTap Monitoring Service](https://service.whatap.io).
+-   **stat_ip_enabled** <span class='type'>Boolean</span>
 
--   **realtime_user_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-      Set whether or not to collect the **_Concurrent User_** metric that can be seen in **_Dashboard_** > **_Application Dashboard_** of [WhaTap Monitoring Service](https://service.whatap.io).
+    Default `true`
 
--   **hook_direct_patch_classes** <span class='type'>ClassFile_FullPath</span><br/>
+    It enables using the IP statistics in **_STAT/REPORT_** > **_Statistics_** > **_Client IP_** under **_Project Menu_** of [WhaTap Monitoring Service](https://service.whatap.io).
+
+-   **realtime_user_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    Set whether or not to collect the **_Concurrent User_** metric that can be seen in **_Dashboard_** > **_Application Dashboard_** of [WhaTap Monitoring Service](https://service.whatap.io).
+
+-   **hook_direct_patch_classes** <span class='type'>ClassFile_FullPath</span>
+
       It is used to directly replace a specific class at the loading time. After compiling the class, it creates a separate file and sets the full path to that file.
 
--   **active_stack_second** <span class='type'>Seconds</span><br/>
-        Default `10`<br/>
-        Set the interval to trace active stacks.
+-   **active_stack_second** <span class='type'>Seconds</span>
+
+    Default `10`
+
+    Set the interval for tracing the active stacks.
+
     :::caution
+
     It is recommended not to change the given default value.
+
     :::
 
--   **boot_redefine_size** <span class='type'>Int</span><br/>
-      Default `100`<br/>
-      If the agent has been installed in the Attach or Watcher method, BCI is newly performed to trace the already loaded classes. At this time, it sets the number of classes to redefine at the same time.
+-   **boot_redefine_size** <span class='type'>Int</span>
 
-<!-- 담당자 확인 필요 -->
+    Default `100`
 
--   **trace_component_enabled** <span class='type'>Boolean</span><br/>
-      Default `true`<br/>
-       It enables the **_Library Version_** function in **_Application_** > **_Instance Performance Analysis_** under **_Project Menu_** of [WhaTap Monitoring Service](https://service.whatap.io).
+    If the agent has been installed in the Attach or Watcher method, BCI is newly performed to trace the already loaded classes. At this time, it sets the number of classes to redefine at the same time.
 
--   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span><br/>
-      Default `300000`<br/>
-      Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
+-   **trace_component_enabled** <span class='type'>Boolean</span>
 
--   **time_sync_interval_ms** <span class='type'>Milliseconds</span><br/>
-    Default `300000`<br/>Set the synchronization time interval between the agent and the server. For no synchronization, set it to `0`.
+    Default `true`
 
--   **detect_deadlock_enabled** <span class='type'>Boolean</span><br/>
-      Default `false`<br/>
-      It generates an event when the Java thread is deadlocked. The occurrence interval is 5 seconds. Events for the same deadlock occur once per hour.
+    Enable the **_Library Version_** function in **_Application_** > **_Instance Performance Analysis_** under **_Project Menu_** of [WhaTap Monitoring Service](https://service.whatap.io).
 
--   **text_reset** <span class='type'>Int</span><br/>
-        Default `0`<br/>
-        The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
+-   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
+
+    Default `300000`
+
+    Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
+
+-   **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
+
+    Default `300000`
+
+    Set the synchronization time interval between the agent and the server. For no synchronization, set it to `0`.
+
+-   **detect_deadlock_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It generates an event when any Java thread is deadlocked. The occurrence interval is 5 seconds. Events for the same deadlock occur once per hour.
+
+-   **text_reset** <span class='type'>Int</span>
+
+    Default `0`
+
+    The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
+
     :::note
+
     Transaction URLs and SQL strings correspond to text data.
+
     :::

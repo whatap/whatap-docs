@@ -18,11 +18,6 @@ To pause the PHP monitoring service, you must stop the PHP extension module and 
 
     Comment out the `extension=` syntax in _whatap.ini_. Set the comment by using a semicolon (_;_).
 
-    <!--
-    :::note
-    주석은 세미콜론(;)으로 설정하세요.
-    ::: -->
-
     ```bash
     $ sudo vi whatap.ini
 
@@ -35,7 +30,9 @@ To pause the PHP monitoring service, you must stop the PHP extension module and 
     Even if manual configuration is made in _php.ini_, comment out the `extension=` syntax. 
 
     :::note
-    {@include: ../common-items/_php-restart-apache.mdx} 
+
+    Apache or PHP-FPM service is started.
+
     :::
 
 2.  Stop the whatap-php service.
@@ -63,23 +60,3 @@ To pause the PHP monitoring service, you must stop the PHP extension module and 
 
     </TabItem>
     </Tabs>
-
-<!--
-**Redhat/CentOS**
-
-```bash
-$ sudo service whatap-php stop
-```
-
-**Debian/Ubuntu**
-
-```bash
-$ sudo service whatap-php stop
-```
-
-**FreeBSD**
-
-```bash
-$ service whatap_php stop
-```
--->

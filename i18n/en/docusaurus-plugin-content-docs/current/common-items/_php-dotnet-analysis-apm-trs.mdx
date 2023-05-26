@@ -28,7 +28,9 @@ It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specif
 | cpu_sum        | Sum of CPU usage amounts    | u8   |
 
 :::note
+
 `malloc_sum` is collected only when changed to `trace_malloc_enabled=true`. The default value is `false`.
+
 :::
 
 ## Transaction domain statistics
@@ -46,7 +48,7 @@ Through the collected data, you can identify the processing status of URLs for e
 | domain  | Service domain hash       | u4   |
 | url     | Transaction URL hash      | u4   |
 | count   | Number of execution cases | u4   |
-| error   | Number of errors          | u4   |
+| error   | Error Count               | u4   |
 | time    | Sum of response times     | u8   |
 
 ## Transaction caller statistics
@@ -87,7 +89,7 @@ The statistical data collected is as follows. The data must be viewed from the *
 | spec         | Version string hash of the callee   | u4   |
 | url          | Callee URL hash                     | u4   |
 | count        | Number of execution cases           | u4   |
-| error        | Number of errors                    | u4   |
+| error        | Error Count                         | u4   |
 | time         | Sum of response times               | u8   |
 
 ## Transaction referer statistics{#stat-referer}
@@ -105,16 +107,16 @@ Through the collected data, you can see the referer data on the statistics.
 | referer | Referer hash              | u4   |
 | url     | Transaction URL hash      | u4   |
 | count   | Number of execution cases | u4   |
-| error   | Number of errors          | u4   |
+| error   | Error Count               | u4   |
 | time    | Sum of response times     | u8   |
 
-## Error statistics
+## Error Statistics
 
 They are statistics on the service errors that occurred for 5 minutes. It collects different errors and transaction names with the keys. Statistics appear for up to 1,000 errors every 5 minutes.
 
 | Columns   | Description           | Type |
 | --------- | --------------------- | ---- |
-| classHash | Error class           | u4   |
+| classHash | Error Class           | u4   |
 | service   | Transaction hash      | u4   |
 | snapSeq   | Stack data            | u8   |
 | msg       | Message hash          | u4   |
@@ -129,15 +131,17 @@ The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL
 | dbc         | Hash of DB connection data             | u4   |
 | sql         | Hash of the SQL statement              | u4   |
 | count_total | Number of execution cases              | u4   |
-| count_error | Number of errors                       | u4   |
+| count_error | Error Count                            | u4   |
 | time_sum    | Sum of response times                  | u8   |
 | time_max    | Maximum response time                  | u4   |
-| fetch_count | Number of patches                      | u4   |
+| fetch_count | Fetch Count                            | u4   |
 | fetch_time  | Sum of patch times                     | u8   |
 | service     | One of the services that performed SQL | u4   |
 
 :::note
+
 The `service (URL)` hash collects one (the last URL called) of URLs that called the SQL for 5 minutes for analysis.
+
 :::
 
 ## HTTP call execution statistics
@@ -150,7 +154,7 @@ The HTTP call execution statistics for 5 minutes are collected. A maximum of 5,0
 | host        | Host or IP                | u4   |
 | port        | TCP port                  | u4   |
 | count_total | Number of execution cases | u4   |
-| count_error | Number of errors          | u4   |
+| count_error | Error Count               | u4   |
 | time_sum    | Sum of response times     | u8   |
 | time_max    | Maximum response time     | u4   |
 | service     | One of HTTP call services | u4   |

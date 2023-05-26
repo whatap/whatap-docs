@@ -14,12 +14,14 @@ Set the proxy server address of the Whatap server in the Node agent (e.g. whatap
 
 WhaTap Proxy server listens on the port 6600. If there is no separate setting in the agent, the agent attempts to connect the port 6600.
 
-```ini title='whatap.conf 포트 설정'
+```ini title='whatap.conf'
 whatap.server.port=6600
 ```
 
 :::note
+
 wo proxy servers cannot use different ports. When using multiple proxy servers, the listening port must be the same.
+
 :::
 
 ### Communication connectivity and security

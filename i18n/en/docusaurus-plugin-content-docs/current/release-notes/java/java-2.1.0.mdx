@@ -84,7 +84,9 @@ URL pattern configuration targets
 -   HttpClient URL
 
 :::note
+
 It is difficult to change in the Kubernetes environment with the agent setup method.
+
 :::
 
 #### ONAME output in the agent log
@@ -112,7 +114,9 @@ $pack.put("myrandom",(float)( whatap.util.KeyGen.next()%100));
 It has added the integrated monitoring function for application logs. Whatap.agent-2.1.0 or later is required to use this log monitoring function in Java applications.
 
 :::caution
+
 whatap.agent-2.1.0 or later
+
 :::
 
 The function name of WhaTap's application log monitoring is LogSink.
@@ -154,7 +158,9 @@ However, `logsink_enabled` is applied as the default value for `hooklog_enabled`
 If you change as `hooklog_enabled=true` during operation, log collection is possible after restart.
 
 :::note
+
 After changing as `logsink_enabled=true`, restart it.
+
 :::
 
 #### Collection of logs in the user method
@@ -213,7 +219,9 @@ logsink_zip_libpath=/whatap/whatap-logsink-lz4-1.7.0.jar
 ```
 
 :::note
+
 For selecting an algorithm, specify a jar file in `logsink_zip_libpath`.
+
 :::
 
 ### Fixing the bug where the agent does not work in the IBM Java6 Websphere environment
@@ -221,7 +229,9 @@ For selecting an algorithm, specify a jar file in `logsink_zip_libpath`.
 Fixed the bug where the Whatap agent could not initialize and collect data in the IBM Java6 Websphere environment.
 
 :::note
+
 Due to an internal error of the `ManagementFactory.getPlatformMBeanServer()` logic, the WhaTap agent could not be initialized.
+
 :::
 
 ### Adding the CounterPack debugging option
@@ -298,7 +308,9 @@ weaving=tomcat10
 ```
 
 :::note
+
 The weaving option has been added in v2.1.1 as an abbreviation of the `weaving_reserved` option.
+
 :::
 
 ### Tracing the HttpCall information details
@@ -306,7 +318,9 @@ The weaving option has been added in v2.1.1 as an abbreviation of the `weaving_r
 Added the tracing data for HttpCall while tracing transactions.
 
 :::caution
+
 In the collection server of an old version, the transaction step details cannot be checked.
+
 :::
 
 If you have to send data to the collection server of an old version, add the `trace_httpc_version` option in _whatap.conf_.

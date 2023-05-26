@@ -3,30 +3,39 @@ While the transaction performance means the summary metrics or attributes betwee
 The types of steps that WhaTap collects include SQL steps, HTTP call steps, message steps, socket open steps, DB connection steps, and method steps. 
 
 :::note
+
 WhaTap's step is used with the same meaning as Span.
+
 :::
 
 * * *
 
--   **DB connection step**<span class='type'>START-END</span><br/>
-      It includes the performance for connection to RDB. Step information includes the name, response time, and error.
+-   **DB connection step** <span class='type'>START-END</span>
 
--   **SQL step**<span class='type'>START-END</span><br/>
-      It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
+    It includes the performance for connection to RDB. Step information includes the name, response time, and error.
 
--   **HTTP call step**<span class='type'>START-END</span><br/>
-      It includes the performance for the external HTTP service call. Step information includes URL, host, port, response time, and errors.
+-   **SQL Step** <span class='type'>START-END</span>
 
--   **Message step** <span class='type'>ADD</span><br/>
-      While collecting transaction traces, the message steps are used to collect the records of all irregular sections.  
+    It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
 
--   **SOCKET step**<span class='type'>ADD</span><br/>
-      Step to represent the socket open.
+-   **HTTP Call step** <span class='type'>START-END</span>
 
--   **METHOD step**<span class='type'>START-END</span><br/>
-      The method response time is traced.
+    It includes the performance for the external HTTP service call. Step information includes URL, host, port, response time, and errors.
 
--   **ACTIVE STACK step**<span class='type'>START-END</span><br/>
-       It includes the active step information. It is created and collected by a separate thread and it is added to the transaction trace.
+-   **Message step** <span class='type'>ADD</span>
+
+    While collecting traces, the message steps are used to collect the records of all irregular sections.  
+
+-   **SOCKET Step** <span class='type'>ADD</span>
+
+    Step to represent the socket open.
+
+-   **METHOD Step** <span class='type'>START-END</span>
+
+    The method response time is traced.
+
+-   **ACTIVE STACK 스텝** <span class='type'>START-END</span>
+
+    It includes the active step information. It is created and collected by a separate thread and it is added to the transaction trace.
 
 * * *

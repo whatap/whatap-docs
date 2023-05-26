@@ -5,14 +5,19 @@ In the WhaTap monitoring service, the term, "object" is used for comprehensive m
 -   The object (agent) names must be unique on a project basis.
 -   Object ID = CRC32 (object name). If the object ID or name has been changed, the previous data is not connected.
 
+:::
+
 WhaTap basically uses the data collected from database servers to identify each server while collecting monitoring data. Basic information uses the database server as a unique identifier by a combination of database server type, IP address, service port, and such. If necessary, use the name set by the user or change the pattern to a unique value. The agent name must be unique.
 
 The reason why the data extracted from the application server is used, is like the following. When a communication loss of the collection server and agent caused by the stop of the database server, network disconnection, or agent problem is restored, the continuity of the data from the reconnected agent is maintained.
 
 The default pattern used to identify the database server is as follows:
 
--   **object_name** <span class='type'>String</span><br/>
-    Default `{type}`-`{ip2}`-`{ip3}`-`{port}`<br/>The agent name (ONAME) scheme that identifies the database server. An OID is created based on the ONAME.
+-   **object_name** <span class='type'>String</span>
+
+    Default `{type}`-`{ip2}`-`{ip3}`-`{port}`
+
+    The agent name (ONAME) scheme that identifies the database server. An OID is created based on the ONAME.
 
     | Configuration       | Description                                                                      |
     | ------------------- | -------------------------------------------------------------------------------- |
@@ -24,14 +29,20 @@ The default pattern used to identify the database server is as follows:
     | {port}              | Database server port                                                             |
     | {hostname}          | Host name                                                                        |
 
--   **auto_oname_enabled** <span class='type'>Boolean</span><br/>
-    Default `false`<br/>
-    The function to automatically obtain the agent name (oname) from the server is activated. Upon application, the options for `-Dwhatap.name` and `-Dwhatap.oname` are ignored. It obtains \`oname through communication with the collection server and then starts the agent's normal operation.
+-   **auto_oname_enabled** <span class='type'>Boolean</span>
 
--   **auto_oname_prefix** <span class='type'>String</span><br/>
-    Default `agent`<br/>
+    Default `false`
+
+    The function to automatically obtain the agent name (oname) from the server is activated. Upon application, the options for `-Dwhatap.name` and `-Dwhatap.oname` are ignored. It obtains `oname` through communication with the collection server and then starts the agent's normal operation.
+
+-   **auto_oname_prefix** <span class='type'>String</span>
+
+    Default `agent`
+
     When an agent name is automatically granted from the server, the prefix of the agent name (business name as usual) is used. The prefix + serial number (from 1) is assigned.
 
--   **auto_oname_reset** <span class='type'>Int</span><br/>
-    Default `0`<br/>
-    Modify it to obtain a new name from the server. If the agent name is automatically granted, the system environment variable, `whatap.oname` is set. Once set, the system environment variables are not changed until the Java instance is restarted. For a reset, modify the value of `auto_oname_reset`. If you change it to a value different from the current setting, it is to be applied.
+-   **auto_oname_reset** <span class='type'>Int</span>
+
+    Default `0`
+
+    Modify it to obtain a new agent name from the server. If the agent name is automatically granted, the system environment variable, `whatap.oname` is set. Once set, the system environment variables are not changed until the Java instance is restarted. For a reset, modify the value of `auto_oname_reset`. If you change it to a value different from the current setting, it is to be applied.

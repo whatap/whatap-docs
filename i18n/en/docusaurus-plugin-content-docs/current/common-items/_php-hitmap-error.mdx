@@ -7,7 +7,7 @@ The CPU and memory graphs appear but the response time distribution chart (hitma
 
 1.  Check whether the PHP extension module has been applied.
 
-    ```bash title='PHP 확장 모듈 확인'
+    ```bash
     $ sudo php -m
 
     [PHP Modules]
@@ -25,6 +25,8 @@ The CPU and memory graphs appear but the response time distribution chart (hitma
 
 2.  Restart Apache and PHP-FPM services.
 
-3.  If the PHP extension module has not been applied, it indicates abnormal installation. Check whether the path of _whatap.so_ or _whatap.ini_ meets the PHP environment.<br/>
-        With referring to the following guide, check the items like [PHP command (CLI) path](#check-php-cli-path), [PHP extension module path](#check-php-extension-module), and [Additional PHP ini configuration file path](#php-ini-path).
+3.  If the PHP extension module has not been applied, it indicates abnormal installation. Check whether the path of _whatap.so_ or _whatap.ini_ meets the PHP environment.
 
+    With referring to the following guide, check the items like [PHP command (CLI) path](#check-php-cli-path), [PHP extension module path](#check-php-extension-module), and [Additional PHP ini configuration file path](#php-ini-path).
+
+<!-- 위 항목의 포함관계 검토 필요-->

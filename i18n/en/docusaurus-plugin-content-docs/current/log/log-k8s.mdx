@@ -29,13 +29,11 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 3.  Enter the **_key_**, `logsink_enabled` and the **_value_**, `true` of the following agent configuration command in the ![number 3](/img/number-03.png) field.
 
-```bash
+    ```bash
+    logsink_enabled=true 
+    ```
 
-logsink_enabled=true 
-
-```
-
-1.  Select ![number4](/img/number-04.png) **_Apply_**. You can collect logs to the Kubernetes container.
+4.  Select ![number4](/img/number-04.png) **_Apply_**. You can collect logs to the Kubernetes container.
 
 ### Enabling application log collection in the container
 
@@ -49,13 +47,11 @@ It is available from Java 2.1.1 and Python 1.2.2. To collect logs of the applica
 
 3.  Enter the **_key_**, `logsink_enabled` and the **_value_**, `true` of the following agent configuration command in the ![number 3](/img/number-03.png) field.
 
-```bash
+    ```bash
+    logsink_enabled=true 
+    ```
 
-logsink_enabled=true 
-
-```
-
-1.  Select ![number4](/img/number-04.png) **_Apply_**. You can collect application logs in the Kubernetes containers.
+4.  Select ![number4](/img/number-04.png) **_Apply_**. You can collect application logs in the Kubernetes containers.
 
 :::note
 
@@ -87,9 +83,3 @@ You can check various logs related to Kubernetes. The monitoring categories prov
 | `#WhatapEvent`    | <ul><li>Logs that store the events that occur by WhaTap event settings</li><li>Generation by default regardless of user settings </li></ul>                           |
 | `containerStdout` | <ul><li>Container Standard Out logs</li><li>Generation by user settings</li><li>When `logsink_enabled=true` setting is added to the node agent</li></ul>              |
 | `AppLog`          | <ul><li>Application logs in the container</li><li>Generation by user settings</li><li>When `logsink_enabled=true` setting is added to the application agent</li></ul> |
-
-<!-- 
-
-After the above configuration to collect logs into the Kubernetes container, set to collect logs for applications running on the container. 
-
--->

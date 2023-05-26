@@ -1,4 +1,4 @@
-WhaTap's Application Monitoring can monitor application in real time without reproducing failures. With WhaTap's proprietary technology, called "**Active Stack**," it provides improvement points to locate the source of problems from hidden areas that were not found in other products.
+WhaTap's Application Monitoring can monitor application in real time without reproducing failures.
 
 {@video: https://www.whatap.io/video/main-product/monitoring_step_0.mp4}
 
@@ -10,33 +10,53 @@ WhaTap's Application Monitoring can monitor application in real time without rep
 
 -   **Transaction performance Deep Dive**
 
-    WhaTap can collect and analyze the performance history of all transactions. Transaction performance can be traced down to the method level as well as SQLs and HTTP calls. In particular, the **active stack** function enables you to analyze the method level without a cumbersome task of complicated method profile setting. 
+    WhaTap can collect and analyze the performance history of all transactions. Transaction performance can be traced down to the method level as well as SQLs and HTTP calls. 
+
+    <InDoc product='java,python'>
+
+    In particular, the **active stack** function enables you to analyze the method level without a cumbersome task of complicated method profile setting. With WhaTap's proprietary technology, called **Active Stack**, it provides improvement points to locate the source of problems from hidden areas that were not found in other products.
 
     :::note
-    The active stack function is available only in Java and Python.
+
+    Active Stack is supported only in Java and Python.
+
     :::
+
+    </InDoc>
+
+<Xclude product='dotnet'>
 
 -   **MSA call pattern analysis**
 
     WhaTap visualizes the ratio of calls based on the transaction URL for the relationships between complex applications that have the MSA structure. This enables you to view the call relations and change of call ratios.
 
+</Xclude>
+
 -   **Analysis of AI-based response distribution patterns**
 
     WhaTap automatically recognizes specific patterns through machine learning and sends alert notifications to operators. This can inform you of the issues that the operator did not recognize. (Please contact support for on-premise type)<br/> Application number: 10-2020-0037381
+
+<Xclude product='dotnet'>
 
 -   **Analysis of the multi-project transaction linkage**
 
     WhaTap provides the transaction-based tracing in the MSA environment. All transactions can be traced to determine which applications were delayed.
 
+</Xclude>
+
+<InDoc product='java,python'>
+
 -   **Stack statistics analysis**
 
     Statistical analysis can find tuning points that are difficult to find in real-time monitoring or profile data. You can also select improvement targets through graphs and tables, or check response delays in specific time periods.
+
+</InDoc>
 
 -   **Post analysis (Cube)**
 
     You can check various metrics at a time based on the time axis. Because it is possible to specify the time zone where the response time, error count, or throughput is high, you can identify problematic factors in the same time zone or accurately view the service status.
 
-<Xclude product='dotnet'>
+<InDoc product='java'>
 
 -   **Load control in service congestion**
 
@@ -46,4 +66,4 @@ WhaTap's Application Monitoring can monitor application in real time without rep
 
     WhaTap's unique BCI (Byte Code Instrumentation) technology effectively traces the performance of asynchronous transactions. It collects transaction profiles for applications that are using WebFlux, Reactor, Hystrix, etc.
 
-</Xclude>
+</InDoc>

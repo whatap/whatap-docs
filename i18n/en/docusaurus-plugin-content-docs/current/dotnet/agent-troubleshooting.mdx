@@ -16,14 +16,26 @@ Execute the `sysdm.cpl` command to open the **_System Properties_** window. Clic
 
 System environment variables are automatically registered during agent installation. Check that the following content has been registered.
 
--   **COR_ENABLE_PROFILING = 1**<br/>The CLR profiler is enabled.
+-   **COR_ENABLE_PROFILING = 1**
 
--   **COR_PROFILER = {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}**<br/>This GUID is used when registering the WhaTap CLR profiler to the API. It is the fixed value.
+    The CLR profiler is enabled.
 
--   **COR_PROFILER_PATH = C:\\Program Files\\WhaTap .NET\\WhaTap.ClrProfiler.dll**<br/>Path of the WhaTap CLR profiler DLL.
+-   **COR_PROFILER = {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}**
 
--   **WHATAP_APP_TYPE = 7**<br/>It is the type of the agent that communicates with the WhaTap server and it is the fixed value.
+    This GUID is used when registering the WhaTap CLR profiler to the API. It is the fixed value.
 
--   **WHATAP_DOTNET_HOME = C:\\Program Files\\WhaTap**<br/>Home path of the WhaTap programs.
+-   **COR_PROFILER_PATH = C:\\Program Files\\WhaTap .NET\\WhaTap.ClrProfiler.dll**
 
--   **WHATAP_DOTNET_TRACE = 1**<br/>The monitoring data collection function is enabled.
+    Path of the WhaTap CLR profiler DLL.
+
+-   **WHATAP_APP_TYPE = 7**
+
+    It is the type of the agent that communicates with the WhaTap server and it is the fixed value.
+
+-   **WHATAP_DOTNET_HOME = C:\\Program Files\\WhaTap .NET**
+
+    Home path of the WhaTap program.
+
+-   **WHATAP_DOTNET_TRACE = 1**
+
+    The monitoring data collection function is enabled.

@@ -14,9 +14,7 @@ For user convenience, [Whatap Monitoring Service](https://service.whatap.io) als
 
 ## Default settings
 
-<!-- 담당자 확인 필요 -->
-
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 whatap.home=.
 whatap.config=whatap.conf
 ```
@@ -27,7 +25,7 @@ whatap.config=whatap.conf
 
 In order for the agent to collect and transfer data to the server, the access key and server address must have been set.
 
-```ini title='whatap.conf 최소 설정 예시'
+```ini title='whatap.conf'
 license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
 whatap.server.host=10.10.0.1
 ```
@@ -53,16 +51,18 @@ whatap.server.port=6600 # default value
 
 When running multiple applications on one server, to separately control the configuration files for each application, change the name of _whatap.conf_ and then add the JVM options to your startup script.
 
-```bash title='A 서비스'
+```bash title='Service A'
 -Dwhatap.config=whatap_Aservice.conf
 ```
 
-```bash title='B 서비스'
+```bash title='Service B'
 -Dwhatap.config=whatap_Bservice.conf
 ```
 
 :::caution
+
 The _whatap.conf_ configuration file must be located in the `${WHATAP_HOME}` path.
+
 :::
 
 import ProdImg from '@site/src/components/ChangeImgName.js';

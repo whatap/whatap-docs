@@ -17,7 +17,7 @@ Check the OS and then complete the configuration.
 <Tabs>
 <TabItem value="windows" label="Windows" default>
 
-```batch title="{WebLogic 설치 경로}/user_projects/domains/{사용자도메인}/bin/startWebLogic.bat"
+```batch title="{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.bat"
 rem ########## WHATAP START ############
 set WHATAP_HOME=C:\whatap
 for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-X.Y.Z.jar"') do set last=%%f
@@ -39,7 +39,7 @@ rem ########## WHATAP END ############
 </TabItem>
 <TabItem value="mac" label="MAC">
 
-```bash title="{WebLogic 설치 경로}/user_projects/domains/{사용자도메인}/bin/startWebLogic.sh"
+```bash title="{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh"
 ########## WHATAP START ############
 WHATAP_HOME=/whatap
 WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
@@ -51,7 +51,9 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 </Tabs>
 
 :::note
+
 {@include: _java-17.mdx} 
+
 :::
 
 {@include: ../../common-items/_start-apm.mdx}  

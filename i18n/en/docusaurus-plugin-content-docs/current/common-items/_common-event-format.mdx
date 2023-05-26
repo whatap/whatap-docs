@@ -8,11 +8,11 @@ Common templates are applicable in most cases. You can receive alerts in the sam
 
 ### Event Title
 
-```log title='이벤트 제목 포맷'
+```log title='Event title format'
 [Level][Platform][ProjectName][ApplicationName][EventTitle]
 ```
 
-```log title='이벤트 제목 예시'
+```log title='Event title example'
 [Info][JAVA][Application Project][TC-0-1-8081][CRITICAL_HIGH_MEMORY]
 ```
 
@@ -44,13 +44,14 @@ Common templates are applicable in most cases. You can receive alerts in the sam
     -   MONGODB
     -   VR
     -   RUM
+
 :::
 
 ### Event Message
 
 The data can be included in the event message. Always include it in the message if `optional` is `false`. If `optional` is `true`, the corresponding data appears if available.
 
-```log title='이벤트 메시지 예시'
+```log title='Event message example'
 Project Name: Application project
 Project Code: 3
 Application Name: TC-0-1-8081
@@ -79,18 +80,18 @@ The following lists the event message components.
 | Metric Value                                      | 메트릭스 값              | All (optional)          | If the metric value exceeds the metric threshold, the event occurrence condition is met.                       |
 | Metric Threshold                                  | 메트릭스 임계치            | All (optional)          | If the metric value exceeds the metric threshold, the event occurrence condition is met.                       |
 | Stateful                                          | 해결된 이벤트 알림          | All (optional)          | If the resolved event alert is being used, the value is true. Otherwise, the value is false.                   |
-| Event Rule                                        | 이벤트 발생 조건           | Metrics Alert           | -                                                                                                              |
+| Event Rule                                        | Event Rule          | Metrics Alert           | -                                                                                                              |
 | Event Target Filter                               | 이벤트 대상 선택           | Metrics Alert           | Check the event conditions only for metrics collected in specific targets.                                     |
 | Repeat Count                                      | 이벤트 반복 횟수           | Metrics Alert           | An event occurs only when the event condition meets the event repetitions count for the event repetition time. |
 | Repeat Duration                                   | 이벤트 반복 시간           | Metrics Alert           | An event occurs only when the event condition meets the event repetitions count for the event repetition time. |
-| Receiver                                          | 수신자                 | Metrics Alert           | -                                                                                                              |
+| Receiver                                          | Recipients          | Metrics Alert           | -                                                                                                              |
 | Query                                             | MXQL 쿼리             | Composite metrics alert | -                                                                                                              |
-| Rule                                              | 이벤트 발생 조건           | Composite metrics alert | -                                                                                                              |
+| Rule                                              | Event Rule          | Composite metrics alert | -                                                                                                              |
 | Query Period                                      | 쿼리 기간               | Composite metrics alert | -                                                                                                              |
 | Query Interval                                    | 쿼리 간격               | Composite metrics alert | -                                                                                                              |
 | Silent Time                                       | 무음 시간               | Composite metrics alert | -                                                                                                              |
 | Query                                             | URL                 | Exception Alert         | URL of the request that caused the exception                                                                   |
-| TXID                                              | 트랜잭션 ID             | Exception Alert         | -                                                                                                              |
+| TXID                                              | Transaction ID      | Exception Alert         | -                                                                                                              |
 | Class                                             | 에러 클래스 이름           | Exception Alert         | -                                                                                                              |
 | Log Message                                       | 로그 메시지              | Server - File Log Alert | -                                                                                                              |
 | Log File                                          | 로그 파일 경로            | Server - File Log Alert | -                                                                                                              |
@@ -107,6 +108,7 @@ The following lists the event message components.
 :::note
 
 -   It displays as much information as the event can provide.
+
 -   AlertType is represented by one of the following:
 
 | AlertType                      | Description                            |

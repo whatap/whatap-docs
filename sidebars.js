@@ -836,7 +836,6 @@ const sidebars = {
                 'python/topology-basic',
                 'python/topology-type',
                 'python/topology-add-function',
-                // 'python/topology-settings'
               ],
             },
             {
@@ -2770,14 +2769,15 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-notes/preview/preview-1.101.x',
+        id: 'release-notes/preview/preview-1.103.x',
       },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1.101.x',
+          id: 'release-notes/preview/preview-1.103.x',
           className: 'new',
         },
+        'release-notes/preview/preview-1.101.x',
         'release-notes/preview/preview-1.99.x',
         'release-notes/preview/preview-1.97.x',
         'release-notes/preview/preview-1.95.2',
@@ -2808,14 +2808,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1.100.x',
+            id: 'release-notes/service/service-1.102.x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1.100.x',
+              id: 'release-notes/service/service-1.102.x',
               className: 'new',
             },
+            'release-notes/service/service-1.100.x',
             'release-notes/service/service-1.98.x',
             'release-notes/service/service-1.96.0',
             'release-notes/service/service-1.94.0',
@@ -2824,7 +2825,6 @@ const sidebars = {
             'release-notes/service/service-1.88.0',
             'release-notes/service/service-1.86.0',
             'release-notes/service/service-1.84.0',
-            'release-notes/service/service-1.82.0',
             'release-notes/service/service-previous',
           ]
         },

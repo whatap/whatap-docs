@@ -12,8 +12,6 @@ Home > Select Project > **_Dashboard_** > **_Container Map_**
 
 The container map in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
 
-<!-- ![쿠버네티스 컨테이너 맵](https://img.whatap.io/media/images/whatap_kubernetes_container_map_intro.png)-->
-
 ![Container Map](/img/kube-container-map-01.png)
 
 ## ![](/img/number-01.png) Container or Pod
@@ -21,7 +19,9 @@ The container map in WhaTap Kubernetes is the starting point for Kubernetes moni
 The shapes and designs for each object represent the characteristics and states of the container or pod.
 
 -   Color: Container or pod state. For more information, see [the following](container-status).
+
 -   Border
+
     -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
     -   If there are 2 containers in a pod and the microagents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have microagents installed, the borders are displayed.
 
@@ -35,6 +35,7 @@ If a namespace project is created under a cluster project, you can check the lis
 
 -   WhaTap Kubernetes Service's **cluster project** is a new name for the **master project**.
 -   For more information about the namespace project creation, see [the following](namespace).
+
 :::
 
 ## ![](/img/number-03.png) User configuration
