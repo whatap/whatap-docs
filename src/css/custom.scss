@@ -1141,6 +1141,7 @@ main {
       }
       ol {
         padding-left: calc(var(--ifm-list-left-padding) / 2);
+        margin-left: 10px;
         li::marker {
           content: counter(list-item) '. ';
         }
