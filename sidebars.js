@@ -2909,17 +2909,18 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2.0.6',
+                id: 'release-notes/dotnet/dotnet-2.0.7',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2.0.6',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2.0.7',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2.0.6',
                 'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
                 'release-notes/dotnet/dotnet-2.0.3',
