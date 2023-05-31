@@ -1327,7 +1327,7 @@ const sidebars = {
   postgreSidebar: [
     {
       type: 'category',
-      label: 'PostgreSQL 모니터링',
+      label: 'PostgreSQL 모니터링 V2',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1481,7 +1481,7 @@ const sidebars = {
   postgrev1Sidebar: [
     {
       type: 'category',
-      label: 'PostgreSQL 모니터링 V1',
+      label: 'PostgreSQL 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -3374,7 +3374,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'PostgreSQL',
-          href: 'postgresql/monitoring-intro',
+          href: 'postgresql-v1/monitoring-intro',
         },
         {
           type: 'link',

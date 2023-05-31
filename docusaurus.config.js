@@ -226,7 +226,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'postgresql/monitoring-intro',
+                docId: 'postgresql-v1/monitoring-intro',
                 label: 'PostgreSQL',
               },
               {
@@ -388,7 +388,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'postgresql/monitoring-intro',
+            docId: 'postgresql-v1/monitoring-intro',
             position: "left",
             label: 'PostgreSQL 모니터링',
             className: 'hidden',
