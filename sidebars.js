@@ -1463,11 +1463,11 @@ const sidebars = {
                 'postgresql/file-log-notice',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
+            {
+              type: 'doc',
+              label: 'Log 모니터링',
+              id: 'log/learn-main-menu'
+            },
             {
               type: 'link',
               label: 'Open API',
