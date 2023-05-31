@@ -21,7 +21,7 @@ module.exports = Promise.resolve({
     defaultLocale: 'ko',
     locales: [ 'ko', 'en', 'ja' ],
   },
-  // trailingSlash: false,
+  // trailingSlash: true,
   // clientModules: [
   //   require.resolve('./static/js/rum.js')
   // ],

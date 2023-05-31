@@ -14,6 +14,7 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 * \[ -> [
 
+* \: -> :
 * _trs-profile.mdx 주석 삭제
 
 :::note null -> :::note

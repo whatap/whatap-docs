@@ -3066,14 +3066,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2.0.7',
+                id: 'release-notes/dotnet/dotnet-2.0.8',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2.0.7',
+                  id: 'release-notes/dotnet/dotnet-2.0.8',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2.0.7',
                 'release-notes/dotnet/dotnet-2.0.6',
                 'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
