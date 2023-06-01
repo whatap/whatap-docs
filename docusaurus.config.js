@@ -21,7 +21,7 @@ module.exports = Promise.resolve({
     defaultLocale: 'ko',
     locales: [ 'ko', 'en', 'ja' ],
   },
-  // trailingSlash: true,
+  // trailingSlash: false,
   // clientModules: [
   //   require.resolve('./static/js/rum.js')
   // ],
@@ -51,7 +51,7 @@ module.exports = Promise.resolve({
           {
             to: '/server/introduction',
             from: '/server/server-intro'
-          }
+          },
         ],
       }
     ],
@@ -130,6 +130,7 @@ module.exports = Promise.resolve({
           nodes: [
             {
               host: 'typesense.whatap.io',
+              port: 443,
               protocol: 'https',
             },
           ],
@@ -137,7 +138,8 @@ module.exports = Promise.resolve({
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
         typesenseSearchParameters: {
-          highlight_affix_num_tokens: 40,
+          filter_by: 'anchor:!=shortcut-product',
+          highlight_affix_num_tokens: 200,
         },
         // Optional
         contextualSearch: true,

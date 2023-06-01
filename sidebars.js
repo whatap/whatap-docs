@@ -3144,17 +3144,18 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1.2.7',
+                id: 'release-notes/k8s/k8s-1.2.8',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1.2.7',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1.2.8',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1.2.7',
                 'release-notes/k8s/k8s-1.2.6',
                 'release-notes/k8s/k8s-1.2.5',
                 'release-notes/k8s/k8s-1.2.2',
@@ -3250,8 +3251,8 @@ const sidebars = {
         'project/integrated-manage',
         'report/integrated-report',
         'notification/rt-notification',
-        'billing/billing',
-        'maintenance/maintenance'
+        'management/billing',
+        'management/maintenance'
       ]
     }
   ],
