@@ -3258,7 +3258,7 @@ const sidebars = {
         'account/account-manage',
         'account/mfa',
         'project/project-structure',
-        'project/project',
+        'project/project-manage',
         'project/group',   
         'project/organization',
         'project/integrated-manage',
