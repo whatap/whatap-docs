@@ -210,5 +210,9 @@
   "item.label.Browser": {
     "message": "Browser",
     "description": "Navbar item with label Browser"
+  },
+  "item.label.라이선스": {
+    "message": "라이선스",
+    "description": "Navbar item with label 라이선스"
   }
 }

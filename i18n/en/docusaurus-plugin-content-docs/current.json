@@ -1422,5 +1422,13 @@
   "sidebar.nodejsSidebar.category.에이전트 설치": {
     "message": "Agent Installation",
     "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
+  },
+  "sidebar.indexSidebar.link.라이선스": {
+    "message": "Licenses",
+    "description": "The label for link 라이선스 in sidebar indexSidebar, linking to license/licenses"
+  },
+  "sidebar.lsSidebar.category.라이선스": {
+    "message": "Licenses",
+    "description": "The label for category 라이선스 in sidebar lsSidebar"
   }
 }
