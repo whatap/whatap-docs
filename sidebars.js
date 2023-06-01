@@ -3251,8 +3251,8 @@ const sidebars = {
         'project/integrated-manage',
         'report/integrated-report',
         'notification/rt-notification',
-        'billing/billing',
-        'maintenance/maintenance'
+        'management/billing',
+        'management/maintenance'
       ]
     }
   ],
