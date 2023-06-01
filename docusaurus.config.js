@@ -530,7 +530,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'license/license-open-sources',
+            docId: 'license/licenses',
             position: 'left',
             label: '라이선스',
           },

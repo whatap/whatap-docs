@@ -3514,7 +3514,7 @@ const sidebars = {
         {
           type: 'link',
           label: '라이선스',
-          href: 'license/license-open-sources' 
+          href: 'license/licenses' 
         },
         {
           type: 'link',
@@ -3535,10 +3535,10 @@ const sidebars = {
       label: '라이선스',
       collapsible: false,
       collapsed: false,
-      // link: {
-      //   type: 'doc',
-      //   id: 'license/license-open-sources'
-      // },
+      link: {
+        type: 'doc',
+        id: 'license/licenses'
+      },
       items: [
         'license/license-open-sources',
         'license/license-open-sources-lib',
