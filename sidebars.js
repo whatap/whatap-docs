@@ -3172,13 +3172,26 @@ const sidebars = {
               label: 'DB',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
               items: [
                 {
-                  type: 'doc',
+                  type: 'category',
                   label: 'DBX',
-                  id: 'release-notes/db/dbx-release-notes',
-                  // className: 'new',
+                  collapsible: true,
+                  collapsed: true,
+                  className: 'new',
+                  link: {
+                    type: 'doc',
+                    id: 'release-notes/db/dbx-1.6.7',
+                  },
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'release-notes/db/dbx-1.6.7',
+                      className: 'new',
+                    },
+                    'release-notes/db/dbx-1.6.6',
+                    'release-notes/db/dbx-1.6.5',
+                  ]
                 },
                 {
                   type: 'category',
@@ -3245,7 +3258,7 @@ const sidebars = {
         'account/account-manage',
         'account/mfa',
         'project/project-structure',
-        'project/project',
+        'project/project-manage',
         'project/group',   
         'project/organization',
         'project/integrated-manage',
