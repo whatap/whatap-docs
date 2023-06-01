@@ -3526,6 +3526,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: '라이선스',
+          href: 'license/licenses' 
+        },
+        {
+          type: 'link',
           label: '참조 문서',
           href: 'reference' 
         },
@@ -3535,6 +3540,22 @@ const sidebars = {
           href: 'release-notes',
         },
       ],
+    }
+  ],
+  lsSidebar: [
+    {
+      type: 'category',
+      label: '라이선스',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'license/licenses'
+      },
+      items: [
+        'license/license-open-sources',
+        'license/license-open-sources-lib',
+      ]
     }
   ],
   cloudSidebar: [

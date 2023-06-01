@@ -530,6 +530,12 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'license/licenses',
+            position: 'left',
+            label: '라이선스',
+          },
+          {
+            type: 'doc',
             docId: 'reference',
             position: 'left',
             label: '참조 문서',
