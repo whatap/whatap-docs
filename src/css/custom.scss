@@ -629,6 +629,14 @@ main {
     .tabs-container h4 {
       --ifm-h4-font-size: 1.25rem;
     }
+    .tabs-container {
+      ul[role=tablist] {
+        li[role=tab] {
+          border-right: 1px solid #757575;
+          padding: 4px 15px;
+        }
+      }
+    }
     hr + h2, hr + h3:not(:has(code)) {
       padding: 0;
     }
