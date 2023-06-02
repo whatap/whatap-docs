@@ -3039,14 +3039,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.4',
+                id: 'release-notes/python/python-1.3.6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1.3.4',
+                  id: 'release-notes/python/python-1.3.6',
                   // className: 'new',
                 },
+                'release-notes/python/python-1.3.4',
                 'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
                 'release-notes/python/python-1.3.1',
