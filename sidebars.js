@@ -3978,7 +3978,7 @@ const sidebars = {
         'aws-log/install-aws-log',
         {
           type: 'doc',
-          label: 'VPC 환경에서 설치하기',
+          label: 'VPC 설정하기',
           id: 'aws-log/install-aws-log-vpc',
         },
         {
