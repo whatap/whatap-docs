@@ -3985,6 +3985,11 @@ const sidebars = {
         'aws-log/install-aws-log',
         {
           type: 'doc',
+          label: 'VPC 환경에서 설치하기',
+          id: 'aws-log/install-aws-log-vpc',
+        },
+        {
+          type: 'doc',
           label: '자원 삭제하기',
           id: 'aws-log/delete-aws-resource',
         },
