@@ -138,7 +138,7 @@ module.exports = Promise.resolve({
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
         typesenseSearchParameters: {
-          filter_by: 'anchor:!=shortcut-product',
+          facet_by: 'language',
           highlight_affix_num_tokens: 200,
         },
         // Optional

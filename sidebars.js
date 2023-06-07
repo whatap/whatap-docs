@@ -2993,11 +2993,18 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2.2.3',
+                id: 'release-notes/java/java-2.2.5',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/java/java-2.2.5',
+                  className: 'new',
+                },
+                'release-notes/java/java-2.2.4',
                 'release-notes/java/java-2.2.3',
                 'release-notes/java/java-2.2.2',
                 'release-notes/java/java-2.2.0',
