@@ -37,7 +37,7 @@
     "docusaurus-plugin-pagemove": "github:usagrada/docusaurus-plugin-pagemove",
     "docusaurus-plugin-sass": "^0.2.3",
     "docusaurus-prince-pdf": "^1.1.1",
-    "docusaurus-theme-search-typesense": "^0.12.0",
+    "docusaurus-theme-search-typesense": "^0.12.0-0",
     "emailjs-com": "^3.2.0",
     "medium-zoom": "^1.0.6",
     "node-sass": "^8.0.0",

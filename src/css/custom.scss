@@ -884,6 +884,9 @@ main {
     }
     strong {
       font-weight: 600;
+      em {
+        color:#21af90;
+      }
     }
     strong em, span.uitext {
       font-style: normal;
@@ -995,6 +998,9 @@ main {
       color: #fff;
       border: none;
       padding: 0 5px 0 5px;
+    }
+    sup > code {
+      font-size: .6em;
     }
     code.Deprecate {
       background-color: #f9ebeb;

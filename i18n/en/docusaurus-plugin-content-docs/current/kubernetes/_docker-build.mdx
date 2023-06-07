@@ -62,7 +62,7 @@
     COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
     COPY whatap.conf /whatap
     COPY myApp.jar /app/
-    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true",”-jar”,"/app/myApp.jar"]
+    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
     EXPOSE 8080
     ```
 
