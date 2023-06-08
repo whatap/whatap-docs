@@ -1,4 +1,8 @@
-@import url(fonts.css);
+// @import url(fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Coptic&display=swap');
 
 :root {
   --doc-sidebar-width: 220px !important;
@@ -93,18 +97,18 @@ html {
 }
 html[lang='ko'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 html[lang='en'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 html[lang='ja'] {
   word-wrap: break-word;
   word-break: break-all;
-  font-family: 'Noto Sans Japanese', 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 * {
