@@ -140,6 +140,8 @@ module.exports = Promise.resolve({
         typesenseSearchParameters: {
           facet_by: 'language',
           highlight_affix_num_tokens: 200,
+          split_join_tokens: 'always',
+          sort_by: 'item_priority:desc',
         },
         // Optional
         contextualSearch: true,
