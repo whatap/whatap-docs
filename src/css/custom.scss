@@ -831,6 +831,9 @@ main {
     .faq blockquote {
       border: none;
     }
+    .vpcb strong {
+      font-weight: 480;
+    }
     pre {
       code {
         font-size: var(--ifm-code-font-size);
@@ -929,6 +932,7 @@ main {
     span.mstop {color: rgb(192, 192, 192)}
     span.k8s-normal {color: rgb(153, 153, 153)}
     span.snormal {color: #00b543}
+    span.vpcbold{font-weight: 500}
     .mark {
       width: 20px;
       vertical-align: text-top;
