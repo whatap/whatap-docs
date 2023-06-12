@@ -12,6 +12,12 @@ WhaTap basically uses the data collected from the server for identifying the inf
 
 {@include: ../common-items/_agent-name-warning.mdx}
 
+:::note
+
+사용자가 설정한 에이전트 이름을 [와탭 모니터링 서비스](https://service.whatap.io)에서 확인하려면 서버를 재시작하세요.
+
+:::
+
 For a user-friendly name, you can specify it in the configuration file as follows.
 
 -   **Linux Shell**
@@ -25,7 +31,7 @@ For a user-friendly name, you can specify it in the configuration file as follow
 -   **Windows Power Shell** 
 
     ```bash title=SH
-    // The admin role is required.
+    # The admin role is required.
     $WHATAP_SERVER_NAME="user-friendly name"
 
     Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"

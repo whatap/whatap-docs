@@ -1,21 +1,30 @@
--   **watchlog_enabled**<span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    値が`true`の場合、ログモニタリングをアクティブにします。
+-   **watchlog_enabled** <span class='type'>Boolean</span>
 
--   **watchlog_check_interval**<span class='type'>Int</span><br/>
-    デフォルト値`2000`<br/>
+    デフォルト値`false`
+
+    値が`true`であれば、ログモニタリングを有効にします。
+
+-   **watchlog_check_interval** <span class='type'>Int</span>
+
+    デフォルト値`2000`
+
     ログをモニタリングする間隔です。毎間隔でログファイルに記録を追加したことを確認します。
 
--   **watchlog_read_count**<span class='type'>Int</span><br/>
-    デフォルト値`8`<br/>
+-   **watchlog_read_count** <span class='type'>Int</span>
+
+    デフォルト値`8`
+
     ログを読み取る最大回数です。一度に`watchlog_buffer_size`の大きさだけ読みます。
 
--   **watchlog_buffer_size**<span class='type'>Int</span><br/>
-    デフォルト値`131072（128k）`<br/>
+-   **watchlog_buffer_size** <span class='type'>Int</span>
+
+    デフォルト値`131072(128k)`
+
     ログを一度に読み取るログのサイズです。
 
--   **watchlog。LOGKEY**<br/>
-    1つのログファイルをモニタリングするための設定です。`File`名を入力し、モニタリングした複数の`word`をコンマ（,）で区切って設定します。`check_interval`間隔でログをモニタリングし、キーワードを見つけたら警告します。一度警告が出れば`silent`ほど警告を止めます。
+-   **watchlog.LOGKEY**
+
+    1つのログファイルをモニタリングするための設定です。`file`名を入力し、モニタリングした複数の`word`をコンマ(,)で区切って設定します。`check_interval`間隔でログをモニタリングし、キーワードを見つけたら警告します。一度警告が出れば`silent`ほど警告を止めます。
 
     -   **watchlog.LOGKEY.enabled** <span class='type'>Boolean</span>デフォルト値`true`
     -   **watchlog.LOGKEY.file** <span class='type'>String</span>
@@ -23,23 +32,34 @@
     -   **watchlog.LOGKEY.silent** <span class='type'>Int</span>デフォルト値`10000`
     -   **watchlog.LOGKEY.check_interval** <span class='type'>Int</span>デフォルト値`1000`
 
--   **log_root** <span class='type'>String</span><br/>
-      デフォルト値`${WHATAP_HOME}`/logs<br/>
-      エージェントログのパスを設定します。
+-   **log_root** <span class='type'>String</span>
 
--   **log_datasource_lookup_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値 `true`<br/>
-      InitialContext Lookupの時、DataSourceの場合はログを記録する機能を活性化します。
+    デフォルト値 `${WHATAP_HOME}`/logs
 
--   **log_rotation_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`true`<br/>
-      エージェントログファイルを日付別に保存する機能をアクティブにします。ログファイル名は_whatap-`yyyymmd`.log_形式で保存します。値が`false`の場合、ログファイル名は_whatap.log_形式で保存します。
+    エージェントログのパスを設定します。
 
--   **log_keep_days** <span class='type'>Int</span><br/>
-      デフォルト値`7`<br/>
-      ログ ファイルの保存期間を設定します。 `log_rotation_enabled`の値が`true`の場合のみ動作します。
+-   **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
 
--   **log_oname_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      値がtrueの場合は、各ログごとにエージェント名を追加します。<br/>
-      ![](/img/java-agent-log-oname.png)
+    デフォルト値 `true`
+
+    InitialContext Lookup時DataSourceの場合、ログを記録する機能を活性化します。
+
+-   **log_rotation_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    エージェントログファイルを日付別に保存する機能を活性化します。ログファイル名は_whatap-`yyyymmdd`.log_形式で保存します。値が`false`であればログファイル名は_whatap.log_形式で保存します。
+
+-   **log_keep_days** <span class='type'>Int</span>
+
+    デフォルト値`7`
+
+    ログファイルの保存期間を設定します。`log_rotation_enabled`の値が`true`の場合にのみ動作します。
+
+-   **log_oname_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値がtrueの場合は、各ログごとにエージェント名を追加します。
+
+    ![](/img/java-agent-log-oname.png)

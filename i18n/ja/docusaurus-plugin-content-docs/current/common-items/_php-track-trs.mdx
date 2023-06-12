@@ -1,18 +1,27 @@
--   **whatap.trace_active_transaction_slow_time**<span class='type'>Millisecond</span><br/>
-      デフォルト値 `3000`<br/>
-      収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表記できるトランザクションのレスポンス時間の基準を指定します。トランザクションのレスポンス時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
+-   **whatap.trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
--   **whatap.trace_active_transaction_very_slow_time**<span class='type'>Millisecond</span><br/>
-      デフォルト値 `8000`<br/>
+    デフォルト値 `3000`
 
--   **whatap.trace_active_transaction_lost_time**<span class='type'>Millisecond</span><br/>
-      デフォルト値 `30000`<br/>
-      トランザクションの終了を待つ5分の制限時間以内にトランザクションが終了しない場合、トランザクションはもはや情報を収集しません。トランザクションのトレース情報で"Lost Connection"を確認できます。
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表記できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
 
--   **whatap.trace_useragent_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      値が`true`の場合、トランザクションのユーザー エージェント情報を収集します。 
+-   **whatap.trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
--   **whatap.trace_referer_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      値が`true`の場合、トランザクションのRefere情報を収集します。
+    デフォルト値 `8000`
+
+-   **whatap.trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+    デフォルト値`30000`
+
+    トランザクションの終了を待つ制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報をこの以上収集しません。トランザクションのトレース情報から"Lost Connection"を確認できます。
+
+-   **whatap.trace_useragent_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`の場合、トランザクションのユーザーエージェント情報を収集します。 
+
+-   **whatap.trace_referer_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`であれば、トランザクションのRefere情報を収集します。

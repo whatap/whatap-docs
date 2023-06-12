@@ -7,9 +7,7 @@ tags:
   - Configuration
 ---
 
-The Windows performance count can be arbitrarily collected. 
-
-Add the performance counter set name to the WhaTap server monitoring configuration file. 
+The Windows performance count can be arbitrarily collected. Add the performance counter set name to the WhaTap server monitoring configuration file. 
 
 -   The performance counter set name can be retrieved.
     ```bash title='Windows Powershell'
@@ -22,3 +20,9 @@ Add the performance counter set name to the WhaTap server monitoring configurati
     ```
 
 -   In **_Analysis_** > **_Metrics Search_**, the added performance counter can be searched by **_category_** `performance_counter_{performance counter set name}`.
+
+:::note
+
+To apply the changes, restart the server.
+
+:::

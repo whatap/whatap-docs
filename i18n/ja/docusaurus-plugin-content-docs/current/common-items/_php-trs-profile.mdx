@@ -1,141 +1,163 @@
--   **whatap.profile_step_normal_count**<span class='type'>Int</span><br/>
-      デフォルト値 `1000`<br/>
-      トランザクショントレースの最大ステップ数を指定します。
+-   **whatap.profile_step_normal_count** <span class='type'>Int</span>
 
--   **whatap.profile_step_max_count**<span class='type'>Int</span><br/>
-      デフォルト値`1024`<br/>
-      収集可能なトレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後収集されるステップはすべて捨てられます。
+  デフォルト値 `1000`
 
--   **whatap.profile_step_heavy_count**<span class='type'>Int</span><br/>
-      デフォルト値 `1000`<br/>
-      基本ステップの収集個数を超えると、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。デフォルト設定の場合、profile_step_normal_count\`が800なら最大200個のステップが収集されます。
+  トランザクショントレースの最大ステップ数を指定します。
 
-<!-- 문장 부자연스러움 -->
+-   **whatap.profile_step_max_count** <span class='type'>Int</span>
 
--   **whatap.profile_step_heavy_time**<span class='type'>Millisecond</span><br/>
-      デフォルト値 `100`<br/>
-      Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
+  デフォルト値 `1024`
 
--   **whatap.profile_basetime**<span class='type'>Millisecond</span><br/>
-      デフォルト値 `500`<br/>
-      トランザクションが設定された値以下の時間内に終了した場合、トレース情報を収集しません。ただ、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
+  収集可能なトレースステップの最大個数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
 
--   **whatap.query_string_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      トランザクションURLのクエリ文字列を一緒に収集する機能を活性化します。`whatap.query_string_urls`に登録されたURLのみ適用されます。
+-   **whatap.profile_step_heavy_count** <span class='type'>Int</span>
 
--   **whatap.query_string_urls**<span class='type'>String</span><br/>
-      トランザクションからクエリ文字列を収集するURLを登録します。
+  デフォルト値 `1000`
 
--   **whatap.whatap.profile_compile_file_enabled**<span class='type'>Boolean</span>
-    
-    デフォルト値 `false`
+  基本ステップの収集個数を超えると、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の場合、`profile_step_normal_count`が800であれば、最大200個のステップが収集されます。
 
-    `compile_file`、`compile_string`関数の追跡有無を設定します。PHPの内部関数である`compile_file`、 `compile_string`関数は、スクリプト実行前にコンパイルする関数で、Main、include、requireおよびautoload スクリプトのコンパイル時点およびスクリプトファイルのパスと実行時間を確認できます。
+-   **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
 
-    :::note
+  デフォルト値`100`
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+  Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
 
-    :::
+-   **whatap.profile_basetime** <span class='type'>Millisecond</span>
 
--   **whatap.profile_compile_file_basetime**<span class='type'>Millisecond</span><br/>
-        デフォルト値 `200`<br/>
-        実行時間の基準を設定します。設定した時間を超えて実行される場合のみ情報を収集します。
-    :::caution
-    `whatap.profile_compile_file_basetime`を小さく設定しすぎると、過剰な収集でサーバーに負荷をかける可能性があります。
-    :::
-    :::note
+  デフォルト値`500`
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+  トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただ、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
 
-    :::
+-   **whatap.query_string_enabled** <span class='type'>Boolean</span>
 
--   **whatap.profile_method_enabled**<span class='type'>Boolean</span><br/>
-        デフォルト値 `true`<br/>
-        実行時間が`whatap.profile_method_time`設定値（デフォルト値`1秒`）を超えるユーザー関数の情報をトランザクション詳細情報で確認できます。
-    :::note
+  デフォルト値`false`
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+  トランザクションURLのクエリ ストリングを一緒に収集する機能を活性化します。`whatap.query_string_urls`に登録されたURLのみ適用されます。
 
-    :::
+-   **whatap.query_string_urls** <span class='type'>String</span>
 
--   **whatap.profile_method_time**<span class='type'>Milliseconds</span><br/>
-        デフォルト値 `1000`<br/>
-        `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
-    :::note
+  トランザクションからクエリストリングを収集するURLを登録します。
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+-   **whatap.whatap.profile_compile_file_enabled** <span class='type'>Boolean</span>
 
-    :::
+  デフォルト値`false`
 
--   **whatap.profile_method_stack_enabled**<span class='type'>Boolean</span><br/>
-        デフォルト値 `false`<br/>
-        ユーザー関数のスタック情報をトランザクション詳細で確認できます。
-    :::note
+  `compile_file`、`compile_string` 関数が追跡されるかどうかを設定します。PHP内部関数である`compile_file`、`compile_string` 関数はスクリプト実行前にコンパイルする関数で、Main、include、requireおよびautoloadスクリプトのコンパイル時点およびスクリプトファイルのパスと実行時間を確認できます。
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+{@include: ../common-items/_php-restart-apply.mdx}
 
-    :::
+-   **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
--   **whatap.profile_internal_method_enabled**<span class='type'>Boolean</span><br/>
-        デフォルト値 `true`<br/>
-        PHP内部関数の追跡有無を設定します。`whatap.profile_internal_method_time`設定値（デフォルト値`1秒`）より長くかかる場合に限って追跡します。 
-    :::note
+  デフォルト値`200`
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+  実行時間の基準を設定します。設定した時間を超えて実行される場合のみ、情報を収集します。
 
-    :::
+  :::caution
 
-<!-- 두 개가 어떻게 다른지? 0309 수정완-->
+  `whatap.profile_compile_file_basetime`を小さく設定しすぎると、過剰な収集でサーバーに負荷をかける可能性があります。
 
--   **whatap.profile_internal_method_time**<span class='type'>Milliseconds</span><br/>
-        デフォルト値 `1000`<br/>
-        PHP内部関数を追跡する時に(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
-    :::note
+  :::
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+{@include: ../common-items/_php-restart-apply.mdx}
 
-    :::
+-   **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
--   **whatap.profile_internal_method_param_enabled**<span class='type'>Milliseconds</span><br/>
-        デフォルト値 `1000`<br/>
-        PHP内部関数を追跡する時に(`whatap.profile_internal_method_enabled`)付加的に関数パラメータ情報を収集します。
-    :::note
+  デフォルト値 `true`
 
-    ApacheおよびPHP-FPMの再起動後に適用されます。
+  実行時間が`whatap.profile_method_time`の設定値(デフォルト値`1秒`)を超えるユーザ関数の情報をトランザクション詳細情報から確認できます。
 
-    :::
+{@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.net_udp_flush_start**<span class='type'>Boolean</span><br/>
-        デフォルト値 `true`<br/>
-        値が`false`であればトランザクションの開始時点を収集しません。
-    :::note
-    開始時点を収集していないため、進行中のトランザクション数を計算するアクティブトランザクション情報に少し遅れて反映される可能性があります。アクティブステータスは正常に表記されます。
-    :::
+-   **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
--   **whatap.net_udp_profile_basetime_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      値が`true`であれば設定されたレスポンス時間より速いトランザクションのトレース情報は収集しません。
+  デフォルト値 `1000`
 
--   **whatap.net_udp_profile_basetime**<span class='type'>Miliseconds</span><br/>
-        デフォルト値 `false`<br/>
-        トレース情報収集を除くトランザクションのレスポンス時間を設定します。
-    :::note
-    トレース情報を収集していないため、SQL、HTTPCなどの統計には反映されません。
-    :::
+  `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
 
--   **whatap.net_udp_trace_ignoretime_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      値が`true`であれば設定されたレスポンス時間がかかるトランザクションおよびトレース情報は収集しません。
+{@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.net_udp_trace_ignoretime**<span class='type'>Miliseconds</span><br/>
-      デフォルト値 `30`<br/>
-      トランザクションおよびトレース情報収集を除くトランザクションのレスポンス時間を設定します。
+-   **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
--   **whatap.shm_tx_counter_enable**<span class='type'>Boolean</span><br/>
-        デフォルト値 `false`<br/>
-        値が`true`であれば`whatap.net_udp_trace_ignoretime_enabled`設定でトランザクションの情報収集が除外される場合、TPS、平均レスポンス時間、Apdex指標を共有メモリで収集すると、除外されたトランザクションの情報が統計に反映されます。
-    :::note
-    収集されていないトランザクションの場合、TPS、平均レスポンス時間、Apdexのメトリクスには正常に反映されますが、その他の統計データには反映されません。
-    :::
+  デフォルト値`false`
+
+  ユーザー関数のスタック情報をトランザクション詳細から確認できます。
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値 `true`
+
+  PHP内部関数が追跡されるかどうかを設定します。`whatap.profile_internal_method_time`の設定値(デフォルト値`1秒`)より長くかかる場合のみ追跡します。 
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
+
+  デフォルト値 `1000`
+
+  PHP内部関数を追跡する際、(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
+
+  デフォルト値 `1000`
+
+  PHP内部関数を追跡する際、(`whatap.profile_internal_method_enabled`)付加的に関数パラメータ情報を収集します。
+
+{@include: ../common-items/_php-restart-apply.mdx}
+
+-   **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
+
+  デフォルト値 `true`
+
+  値段が`false`であれば、トランザクションの開始時点を収集しません。
+
+  :::note
+
+  開始時点を収集していないため、進行中のトランザクション数を計算するアクティブトランザクション情報に少し遅れて反映される可能性があります。アクティブステータスは正常に表記されます。
+
+  :::
+
+-   **whatap.net_udp_profile_basetime_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  値が`true`であれば、設定された応答時間より早いトランザクションのトレース情報を収集しません。
+
+-   **whatap.net_udp_profile_basetime** <span class='type'>Miliseconds</span>
+
+  デフォルト値`false`
+
+  トレース情報の収集を除外するトランザクションの応答時間を設定します。
+
+  :::note
+
+  トレース情報を収集しないため、SQL、HTTPCなどの統計には反映されません。
+
+  :::
+
+-   **whatap.net_udp_trace_ignoretime_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  値が`true`であれば、設定された応答時間がかかるトランザクションおよびトレース情報を収集しません。
+
+-   **whatap.net_udp_trace_ignoretime** <span class='type'>Miliseconds</span>
+
+  デフォルト値`30`
+
+  トランザクションおよびトレース情報収集を除くトランザクションの応答時間を設定します。
+
+-   **whatap.shm_tx_counter_enable** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  値が`true`であれば、`whatap.net_udp_trace_ignoretime_enabled`設定でトランザクションの情報収集が除外される場合、TPS、平均応答時間、Apdex指標を共有メモリから収集すると、除外されたトランザクションの情報が統計に反映されます。
+
+  :::note
+
+  収集されていないトランザクションの場合、TPS、平均応答時間、Apdex指標には正常に反映されますが、その他の統計データには反映されません。
+
+  :::

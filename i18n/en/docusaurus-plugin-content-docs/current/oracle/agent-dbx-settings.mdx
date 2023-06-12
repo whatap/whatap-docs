@@ -8,8 +8,7 @@ tags:
   - DBX agent
 ---
 
-import InDoc from '@site/src/components/InDoc.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 import CurProd from '@site/src/components/GetProductName.js';
 
 Write the settings for the DBX agent in the _whatap.conf_ file. For the options that can be set, see the following.
@@ -24,7 +23,9 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
 ## Application of AWS RDS CloudWatch{#using-aws-rds}
 
-{@include: ../common-items/_db-agent-aws.mdx}
+<AWSRDSdesc name='db_oracle_counter' />
+
+{@include: ../common-items/_db-agent-aws.mdx} 
 
 <!-- AES 256 암호화 적용 -->
 

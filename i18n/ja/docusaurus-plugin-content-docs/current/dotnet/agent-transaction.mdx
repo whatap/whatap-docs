@@ -15,13 +15,58 @@ tags:
 
 {@include: ../common-items/_dotnet-transaction-profile.mdx}
 
-### トランザクションのトレース
+-   **transaction_status_error_enable** <span class='type'>Boolean</span>
 
--   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span><br/>デフォルト値 `3000`<br/>
-    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてslow区間として表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、slowアクティブトランザクション数に含まれます。
+    デフォルト値 `true`
 
--   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span><br/>デフォルト値 `8000`<br/>
-    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてvery slow区間として表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合は、very slowアクティブトランザクション数に含まれます。
+    HTTP401、403のように正常応答ではないHTTP状態コードを返す場合、エラーとして処理します。
 
--   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span><br/>デフォルト値 `30000`<br/>
-    トランザクションの終了を待つ制限時間です。5分以内にトランザクションが終了しない場合、トランザクションはこれ以上情報を収集しません。トランザクションのトレース情報で「Lost Connection」を確認できます。
+-   **status_ignore** <span class='type'>String</span>
+
+    無視する`STATUS_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+-   **status_ignore_set** <span class='type'>String</span>
+
+    `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+-   **httpc_status_error_enable** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    `HTTPC_ERROR`を返却するかどうかを決定します。
+
+-   **httpc_status_ignore** <span class='type'>String</span>
+
+    無視する`HTTPC_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+-   **httpc_status_ignore_set** <span class='type'>String</span>
+
+    `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+    :::note
+
+    `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 このとき、URLは統計/エラー分析で`HTPC_URL`の値を入力します。
+
+    :::
+
+-   **profile_http_parameter_keys** <span class='type'>String</span>
+
+    설정된 키에 해당하는 파라미터 정보만 기록합니다. 여러 개를 등록할 때는 쉼표(,)를 구분자로 이용하세요.
+
+-   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+    デフォルト値 `3000`
+
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてslow区間と表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、slowアクティブトランザクションの数に含まれます。
+
+-   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+    デフォルト値 `8000`
+
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてvery slow区間と表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、very slowアクティブトランザクションの数に含まれます。
+
+-   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+    デフォルト値`30000`
+
+    トランザクションの終了を待つ制限時間です。5分以内にトランザクションが終了しない場合、トランザクションはこれ以上情報を収集しません。トランザクションのトレース情報から「Lost Connection」を確認できます。

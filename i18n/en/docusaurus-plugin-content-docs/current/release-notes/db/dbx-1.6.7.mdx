@@ -1,0 +1,67 @@
+---
+id: dbx-1.6.7
+title: DBX 1.6.7
+toc_max_heading_level: 2
+---
+
+## Common
+
+-   <Status>Fixed</Status> <em>uid.sh</em> 파일 실행 실패 시 로그 수정
+
+-   <Status>Feature</Status> version.sh 추가
+
+-   <Status>Change</Status> IPV6 호스트를 읽을 수 있도록 수정
+
+-   <Status>Change</Status> README 파일 수정
+
+-   <Status>Feature</Status> db connection fail이 발생하면 <code>fatal_count</code> 추가
+
+* * *
+
+## PostgreSQL
+
+-   <Status>Feature</Status> cache 지표 추가
+
+-   <Status>Feature</Status> horizon_xid 추가
+
+-   <Status>Feature</Status> active session 컬럼 <code>backend_type</code>, <code>backend_xmin</code>, <code>backend_xid</code> 추가, V2에만 적용
+
+-   <Status>Feature</Status> conflict, tps 지표 추가
+
+-   <Status>Feature</Status> active session 컬럼으로 <code>backend_type</code>, <code>backend_xmin</code>, <code>backend_xid</code> 추가, V1 적용
+
+-   <Status>Feature</Status> max runtime 지표 추가
+
+-   <Status>Fixed</Status> DB 이름 중복 버그 수정
+
+-   <Status>Change</Status> xview 추가 및 pg statements 수정
+
+-   <Status>Fixed</Status> <code>replication_lag</code> 수정
+
+-   <Status>Fixed</Status> deadtuple 추가
+
+* * *
+
+## MySQL
+
+<p><Status>Feature</Status> Tablesize Filesize 추가</p>
+
+* * *
+
+## MS SQL Server
+
+<p><Status>Change</Status> dop 컬럼 추가, 13.x 버전 이상</p>
+
+* * *
+
+## Oracle
+
+-   <Status>Change</Status> object info 추가 (2023-05-15, 2023-05-22)
+
+-   <Status>Feature</Status> wait 내용 추가
+
+* * *
+
+## MongoDB
+
+<p><Status>Feature</Status> atlas 지원</p>

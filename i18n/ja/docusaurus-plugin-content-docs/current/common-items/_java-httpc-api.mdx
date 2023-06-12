@@ -1,23 +1,35 @@
--   **profile_error_httpc_time_max** <span class='type'>Int</span><br/>
-    デフォルト値`10000`<br/>
-    HTTPCの実行時間が指定した値を超えると、TOO SLOWエラーとして処理されます。 `0`に設定するとエラー処理しません。
+-   **profile_error_httpc_time_max** <span class='type'>Int</span>
 
--   **profile_httpc_resource_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    トレースからHTTP Call ステップを収集する時、そのステップで使用したCPUとメモリ使用量を追跡します。
+    デフォルト値`10000`
 
--   **profile_position_httpc** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
+    HTTPCの実行時間が指定した値を超えると、TOO SLOWエラーとして処理されます。`0`に設定するとエラーとして処理しません。
+
+-   **profile_httpc_resource_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トレースからHTTP Call ステップを収集する際に、そのステップで使用したCPUとメモリ使用量を追跡します。
+
+-   **profile_position_httpc** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
     HTTPCが実行する時点のStackTraceを記録します。
 
--   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`true`<br/>
-    トランザクション内のHTTPC URLをパーシングして正規化する機能をアクティブにします。
+-   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
--   **trace_httpc_normalize_urls** <span class='type'>String</span><br/>
-        正規化するHTTPC URLパターンを設定します。呼び出しURLパターンをパーシングしてパスパラメータを削除します。
+    デフォルト値 `true`
+
+    トランザクション内のHTTPC URLを解析および正規化する機能を有効にします。
+
+-   **trace_httpc_normalize_urls** <span class='type'>String</span>
+
+    正規化するHTTPC URLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
+
     :::note
-    例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。 複数を登録するときは、コンマ(,)を区切り文字として使用します。 置換パターンを整理した後、補完が必要です。
+
+    例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。複数登録するときは、コンマ（,）を区切り文字として使用します。 置換パターンの整理後、補完が必要です。
+
     :::
 
 -   **hook_httpc_patterns** <span class='type'>String</span>

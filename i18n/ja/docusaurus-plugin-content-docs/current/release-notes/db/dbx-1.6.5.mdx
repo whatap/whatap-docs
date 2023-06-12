@@ -1,0 +1,124 @@
+---
+id: dbx-1.6.5
+title: DBX 1.6.5
+toc_max_heading_level: 2
+---
+
+## 共通
+
+-   エージェントアップデート機能の追加：MySQL、PostgreSQL製品の`node_state`メトリクスを追加
+
+-   _whatap.conf_ファイルの`slow_query_log`オプション値に対し、大文字と小文字の区別しないように修正
+
+-   xosエージェントのtcp通信機能を追加
+
+    ```ini title=whatap.conf
+    use_tcp=1
+    ```
+
+-   `cpu_cores`メトリクスの追加及びrdscpu coreエラーの修正
+
+-   cpu core数エラーを修正
+
+-   sql text literal変数の'$'文字などを処理するよう修正
+
+-   CloudWatch `assume-role`追加
+
+    ```ini title=whatap.conf
+    aws_arn=''
+    ```
+
+-   autoscale assume-role機能を追加
+
+-   DocumentDB、CloudWatchの情報収集機能を追加
+
+## PostgreSQL
+
+-   `slowoquery`収集機能の追加
+
+-   `replay_lag`、`replication_broken`、`replication_count`メトリクスを追加
+
+-   `session count`収集のためのバージョン処理initを修正
+
+-   `max_connection`メトリクスを追加
+
+-   lockクエリの改善（9.6バージョン以降に対応）
+
+    ```ini title=whatap.conf
+    lock_update=true
+    ```
+
+-   `uptime`メトリクスを追加
+
+-   **Aurora PostgreSQL**：`instance_name`メトリクスを取得するために追加していた_whatap.conf_ファイルの`rds_instance={instance_name}`オプションを`cloud_watch_instance`に変更
+
+    ```ini title=whatap.conf
+    cloud_watch_instance={instance_name}
+    ```
+
+## Oracle
+
+**_テーブルスペースサイズ_**メニューにtempファイルサイズの照会機能を追加
+
+## MySQL
+
+-   Aurora MySQL：replication情報を追加
+
+-   `active session`収集時`command`、`user`別のフィルタリング機能を追加
+
+    ```ini title=whatap.conf
+    skip_command='{command name}'
+    skip_user='{user name}'
+    ```
+
+-   `max_connection`メトリクスを追加
+
+-   RDS MySQL driverが使用できるようにオプションを追加
+
+    ```ini title=whatap.conf
+    rds_driver=true
+    ```
+
+## Tibero
+
+-   **_テーブルスペースサイズ_**メニューにtempファイルサイズの照会機能を追加
+
+-   `session stat`収集時、API使用機能を追加
+
+## CUBRID
+
+-   テーブルサイズの増減機能を追加（xcubエージェント0.9.6バージョン以降が必要）
+
+    ```ini title=whatap.conf
+    tables=1
+    ```
+
+-   キルセッション（kill session）機能を追加
+
+-   テーブルサイズ増減のバージョン別の内容を修正
+
+-   `pageSize`データベースパラメータの内容を追加、CUBRID `tps`、`qps`、`psize`、`executions`メトリクス追加、CUBRID `broker`がbroker1またはｍquery_editorではない場合、_whatap.conf_ファイルの`broker=`に記入
+
+    ```ini title=whatap.conf
+    broker=broker1,broker2,query_editor
+    ```
+
+-   `pagesize`データベースパラメータエラーの修正
+
+-   テーブルサイズ増減のログ内容を修正
+
+-   `tps`、`qps`メトリクスが後先になった内容を修正
+
+-   `broker_count`メトリクスを追加
+
+## Redis
+
+`active session`収集のon/off機能を追加(_whatap.conf_ファイルに`active_session=true/false`を追加)
+
+```ini title=whatap.conf
+active_session=true/false
+```
+
+## MongoDB
+
+cpu個数のエラーを修正

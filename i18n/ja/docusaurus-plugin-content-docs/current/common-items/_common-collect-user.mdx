@@ -1,21 +1,31 @@
--   **trace_user_cookie_limit** <span class='type'>Int</span><br/>
-    デフォルト値`2048`<br/>
-    ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多すぎるとクッキーオーバーフロアが発生する可能性があります。 これを防止するためにlimitを設定します。
+-   **trace_user_cookie_limit** <span class='type'>Int</span>
 
--   **trace_user_using_ip** <span class='type'>Boolean</span><br/>
-    デフォルト値`true`<br/>
-    リアルタイムユーザーをIPアドレスによって集計します。IPアドレスではなくクッキーに基づいてユーザーを区分したい場合は、値を「false」に変更してください。
+    デフォルト値`2048`
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span><br/>
-    クライアントIP（RemoteIP）の情報を特定HTTPヘッダーの値に変更して設定する機能です。 プロキシ（Proxy）環境で`X-Forwarded-For`ヘッダー値をクライアントIPに設定できます。<br/>
-    WEB/WAS の前にL4のようなロードバランサーが位置している場合、クライアントのIPアドレスではなくL4 のIPアドレスがRemote Adressになる場合があります。 この状況で、実際のクライアントIP情報がHTTPヘッダーに特定のキー値として記録される場合は、そのキー値に置き換えることができます。
+    ユーザー集計のためにクッキーを発行する場合、既存のクッキーが多すぎるとクッキーオーバーフローが発生する可能性があります。これを防止するため、limitを設定します。
 
--   **user_header_ticket** <span class='type'>String</span><br/>
-      HTTP Headerの特定の値でユーザー数を集計したい場合は、そのKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションを利用できます。
+-   **trace_user_using_ip** <span class='type'>Boolean</span>
 
-    ```ini title='예시'
+    デフォルト値 `true`
+
+    リアルタイムユーザーをIPアドレスに基づいて集計します。IPアドレスではなくクッキーに基づいてユーザーを区分したい場合は、値を`false`に変更してください。
+
+-   **trace_http_client_ip_header_key** <span class='type'>String</span>
+
+    クライアントIP(Remote IP)情報を特定HTTPヘッダーの値に変更して設定する機能です。プロキシ(Proxy)環境で`X-Forwarded-For`ヘッダーの値をクライアントIPとして設定できます。
+
+    WEB/WAS の前にL4 のようなロードバランサーが位置している場合、クライアントのIPアドレスではなくL4 のIPアドレスがRemote Adressになる場合があります。この状況で、実際のクライアントIP情報がHTTPヘッダーに特定のキー値として記録される場合は、そのキー値に置き換えることができます。
+
+-   **user_header_ticket** <span class='type'>String</span>
+
+    HTTP Headerの特定の値でユーザー数を集計したい場合は、そのKey値を設定します。 モバイルクライアントの場合、ユーザ区分にheaderを使用する場合は、次のオプションを利用できます。
+
+    ```ini title='whatap.conf'
     user_header_ticket=login
     ```
 
--   **trace_user_using_jsession** <span class='type'>Boolean</span><br/>
-    デフォルトの`false`<br/>リアルタイムユーザーをSESSIONIDに基づいて集計します。
+-   **trace_user_using_jsession** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    リアルタイムユーザーをSESSIONIDベースで集計します。

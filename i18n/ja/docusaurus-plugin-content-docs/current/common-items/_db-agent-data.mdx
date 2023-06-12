@@ -1,16 +1,31 @@
 データベースサーバーの情報を収集する設定に関する説明です。
 
--   **multi_db_stat** <span class='type'>Int</span><br/>デフォルト値`1`<br/>
-    multi dbのstat情報収集処理の有無を設定します。 oracle（pluggable dbの場合）とpostgresqlでのみ有効です。 db instance内の各dbごとにstat収集の有無を設定し、収集負荷を減らすために`0`として設定することができます。
+-   **multi_db_stat** <span class='type'>Int</span>
 
--   **long_run_session_sec**<span class='type'>Second</span><br/>デフォルト値`10`<br/>
-    設定した時間より長く行われているセッションを long runセッションとして処理します。（単位：秒）
+    デフォルト値`1`
 
--   **tables_hour**<span class='type'>Int</span><br/>デフォルト値`5`<br/>
+    multi dbの情報収集処理の有無を設定します。 oracle（pluggable dbの場合）とpostgresqlでのみ有効です。 db instance内の各dbごとにstat収集の有無を設定し、収集負荷を減らすために`0`として設定することができます。
+
+-   **long_run_session_sec** <span class='type'>Second</span>
+
+    デフォルト値`10`
+
+    設定した時間より長く行われているセッションをlong runセッションとして処理します。（単位：秒）
+
+-   **tables_hour** <span class='type'>Int</span>
+
+    デフォルト値`5`
+
     テーブル情報を保存するために情報を収集する時刻を設定します。デフォルトでは`5`であり、午前5時に収集を開始します。
 
--   **tables_min_row**<span class='type'>Int</span><br/>デフォルト値`10000`<br/>
-    テーブル情報を収集する際は、設定した値より小さいrow数のテーブル情報は収集しません。
+-   **tables_min_row** <span class='type'>Int</span>
 
--   **tables_exclude_sys**<span class='type'>Boolean</span><br/>デフォルト値`false`<br/>
-    テーブル情報を収集する際に、sys所有のテーブル情報の収集有無を設定します。`true`として設定すると、sys所有のテーブル情報は収集されません。
+    デフォルト値`10000`
+
+    テーブル情報を収集する際に設定した値より小さいrow数のテーブル情報は収集しません。
+
+-   **tables_exclude_sys** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    テーブル情報を収集する際に、sys所有のテーブル情報の収集有無を設定します。 `true`に設定すると、sys所有のテーブル情報は収集されません。

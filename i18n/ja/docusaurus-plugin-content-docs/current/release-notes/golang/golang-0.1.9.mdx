@@ -19,7 +19,9 @@ import UI from '@site/src/components/UItext';
 -   github.com/go-gonic/gin
 
 :::note
+
 `recover()`を通じてエラー情報を収集しますが、再び同じpanicを発生させます。 
+
 :::
 
 ```go title='Golang'
@@ -102,15 +104,19 @@ debug=true
 
 指定したuriに対して特定のHTTP Methodでリクエストされるトランザクションの収集を除外します。 コンマ（,）を区切り文字として複数のuri、Methodを登録できます。 大文字と小文字の区分はありません。
 
-`ignore_http_method_urls`\
-#Default : ""#\
-#Type : String#
+-   `ignore_http_method_urls`
 
-`ignore_http_method`\
-#Default : ""#\
-#Type : String#
+    \#Default : ""#
 
-```ini
-ignore_http_method_urls=/index, /sql/select
-ignore_http_method=options, connect
-```
+    \#Type : String#
+
+-   `ignore_http_method`
+
+    \#Default : ""#
+
+    \#Type : String#
+
+    ```ini
+    ignore_http_method_urls=/index, /sql/select
+    ignore_http_method=options, connect
+    ```

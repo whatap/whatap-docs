@@ -19,29 +19,29 @@ MXQLは、各行ごとに**コマンド**と**オペランド**で構成され�
 
 1.  オペランドがない場合
 
-```sql
-TAGLOAD
-```
+    ```sql
+    TAGLOAD
+    ```
 
-1.  文字列（数字または単語）
+2.  文字列（数字または単語）
 
-```sql
-CATEGORY app_counter
-```
+    ```sql
+    CATEGORY app_counter
+    ```
 
-1.  文字列配列
+3.  文字列配列
 
-```sql
-SELECT [ time, pcode ]
-```
+    ```sql
+    SELECT [ time, pcode ]
+    ```
 
-1.  JSON文字列型
+4.  JSON文字列型
 
-```sql
-FILTER { key : tx_count, value : 5}
-```
+    ```sql
+    FILTER { key : tx_count, value : 5}
+    ```
 
-```sql title='샘플 MXQL 퀴리'
+```sql title='Sample MXQL query'
 CATEGORY app_counter
 TAGLOAD
 SELECT [ time, pcode ]
@@ -55,7 +55,9 @@ FILTER { key : tx_count, value : 5}
 ![MXQLデータ照会](https://img.whatap.io/media/images/mxql-7.png)
 
 :::note
+
 メトリクスにはタグとフィールドが区分されていますが、**_MXQLデータ照会_**メニューではタグとフィールドを区別せずに表現します。
+
 :::
 
 ## 段階別構成
@@ -68,7 +70,7 @@ MXQLは、段階別構成を持っています。各段階別に使用できる*
 
 3.  **メトリック加工**：前の段階で読み込んだメトリクスに対し、段階的に加工を行います。
 
-```sql title='단계별 구성 예시'
+```sql title='Example'
 # メトリクスの選択段階
 CATEGORY app_counter -- カテゴリ選択
 
@@ -90,7 +92,7 @@ FILTER {expr : "tx_error < 3"}        -- データ10件のうち3件が通過
 
 "#"または"--"で始まる文章は無視されます。
 
-```sql title='주석 예시'
+```sql title='Example'
 # データ照会設定
 CATEGORY app_counter
 
@@ -128,12 +130,12 @@ Metric Value(複合値)は、メトリクス加工段階でよく使われる演
 
 | オプション | 機能                                                      |
 | ----- | ------------------------------------------------------- |
-| sum   | MetricValueに含まれる値を追加します。                                |
-| min   | MetricValue値に含まれる最小値を検索します。                             |
-| max   | MetricValue値に含まれる最大値を検索します。                             |
-| last  | MetricValue値に含まれる、最後に追加された値を戻します。                       |
-| avg   | MetricValue値に含まれる値の平均を求めます。                             |
-| cnt   | MetricValue値に保存されている値の数を検索します。                          |
+| sum   | MetricValueに含まれる、値を追加します。                               |
+| min   | MetricValueに保存されている最小値を検索します。                           |
+| max   | MetricValueに含まれる、最大値を検索します。                             |
+| last  | MetricValueに含まれる、最後の値を取得します。                            |
+| avg   | MetricValueに含まれる値の平均を求めます。                              |
+| cnt   | MetricValueに含まれる値の数を検索します。                              |
 
 MetricValueオプションは、[UPDATE](mxql-calculate#update) コマンドを通じて利用できます。
 
@@ -167,7 +169,7 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
     **_5分_**または**_1時間_**を選択できるカテゴリの名前に`{m5}`または`{h1}`を組み合わせると`GROUP`コマンドのmergeオプションを適用せず、すぐに`UPDATE`コマンドの`sum`オプションを適用できます。 
 
-    ```sql title='모든 필드가 MetricValue타입으로 저장된 app_counter{m5} 카테고리를 사용'
+    ```sql
     CATEGORY app_counter{m5}
     TAGLOAD
     SELECT [time, pname, host_ip, pid, httpc_count]
@@ -179,26 +181,30 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
 MetricValue型フィールドの基本出力形態は`avg`です。つまりMetricValue型のフィールドは、別のオプションを設定しないと`avg`を適用します。次の2つのクエリは同じ結果を出します。
 
-```sql title='avg를 지정하지 않은 경우'
-CATEGORY app_counter
-TAGLOAD
-SELECT [time, pcode,pname, tps]
-GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-```
+-   **avgを指定していない場合**
 
-```sql title='avg를 지정한 경우'
-CATEGORY app_counter
-TAGLOAD
-SELECT [time, pcode,pname, tps]
-GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-UPDATE {key:tps, value:avg}
-```
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode,pname, tps]
+    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+    ```
+
+-   **avgを指定した場合**
+
+    ```sql
+    CATEGORY app_counter
+    TAGLOAD
+    SELECT [time, pcode,pname, tps]
+    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+    UPDATE {key:tps, value:avg}
+    ```
 
 ## 事前定義MXQLクエリ文{#custom-mxql}
 
-MXQLクエリを直接作成するのではなく、事前に定義されたMXQLクエリファイルのパスを設定してMXQLを実行することができます。例えば、「エージェント別アクティブTX件数」、「区間別件数」、「直近15秒」を求めるMXQLクエリは次のとおりです。
+MXQLクエリを直接作成するのではなく、事前に定義されたMXQLクエリファイルのパスを設定してMXQLを実行することができます。例えば、「エージェント別アクティブTX件数」、「&lt;区間別&gt;件数」、「直近15秒」を求めるMXQLクエリは次のとおりです。
 
-```sql title='에이전트별 액티브TX 건수, 구간별 건수, 최근 15초'
+```sql
 HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 TIME-RANGE {duration:15s, etime:$etime}
 OIDSET {oid:$oid, okind:$okind, onode:$onode}
@@ -218,9 +224,9 @@ CREATE {key:_name_, from:oname}
 INJECT default
 ```
 
-もし上記のクエリが収集サーバーに登録されている場合は、次のように入力するだけで同じデータを照会することができます。設定したパスに保存したサーバーのファイル内容を読み込んで呼び出す方式です。
+もし上記のクエリが収集サーバーに登録されている場合は、次のように入力するだけで同じデータを照会することができます。設定したパスに保存したサーバーのファイル内容を読み込んで呼び出す方式です。事前定義したファイルのパスを入力してください。
 
-```txt title='사전 정의한 파일의 경로를 입력합니다.''
+```txt
 /app/act_tx/act_tx_oid
 ```
 
@@ -244,7 +250,9 @@ SKIP [$skip_value]
 SKIP {value:$skip_value}
 ```
 
-```sql title='불가능한 경우 : key로 바인드 변수를 전달할 수 없습니다.'
+keyでバインド変数を渡すことはできません。
+
+```sql
 SKIP {$option:10}
 ```
 
@@ -253,7 +261,9 @@ SKIP {$option:10}
 ![バインド変数設定の例](https://img.whatap.io/media/images/mxql-1.png)
 
 :::note
+
 バインド変数の名前は、大文字と小文字のアルファベットのみ可能です。数字および特殊文字は、バインド変数の名前に含めることはできません。 
+
 :::
 
 ### データの読み込み方式
@@ -270,7 +280,9 @@ MXQLで照会できるデータは、[メトリクス](../metrics/common-metrics
 MXQLクエリを直接作成せずにパスに設定できる機能の主な目的は、複雑なクエリを簡単に呼び出すためではなく、管理者が直接自分の意図通りクエリを作成し、これを使用することです。したがって、すでにYardにどのようなクエリが含まれているかを確認して使用するよりは、直接クエリを登録する方向で活用する必要があります。`JOIN`コマンドを使用する場合は、MXQLクエリを使用する中でも特別な場合であるため、管理者が直接クエリを登録し、そのファイルのパスを使用することになっています。
 
 :::note
+
 _yard.conf_ファイルの`mxql_root`に設定したパスに登録したいクエリをファイルとして保存できます。(default ./mxql)
+
 :::
 
 ### エージェント別アクティブTX件数、件数、直近15秒

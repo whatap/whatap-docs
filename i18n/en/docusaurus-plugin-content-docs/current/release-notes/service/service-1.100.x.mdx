@@ -4,13 +4,43 @@ title: Service 1.100.X
 toc_max_heading_level: 3
 ---
 
+## Service 1.100.22
+
+2023년 5월 23일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>트랜잭션 검색</UI> 메뉴에서 <UI>경과 시간</UI> 필터 입력창에 최소 경과 시간 및 최대 경과 시간 텍스트가 표시되도록 수정</p>
+
+</div>
+
+## Service 1.100.21
+
+2023년 5월 23일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>에이전트 설치</UI> 페이지의 중국어 버전 누락 버그 수정</p>
+
+</div>
+
 ## Service 1.100.19
 
 May 19, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, fixed the bug where the usage fee does not appear when there is no discount.</p>
+### `Common`
+
+-   <Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, fixed the bug where the usage fee does not appear when there is no discount.
+
+-   <Status>Fixed</Status> Fixed the problem where the previous page does not appear because <code>org=undefined</code> has been entered in the query parameter when user clicks the profile icon, goes to <UI>Manage Account INFO.</UI>, and then tries to go to the previous page (by clicking Back).
+
+* * *
+
+### `Log`
+
+-   <Status>Change</Status> In <UI>Log</UI> > <UI>Log Search</UI>, modified to enter the value, `none` as the key when adding a category while only a key has been entered in the filter with no value assigned.
 
 </div>
 

@@ -8,9 +8,14 @@ tags:
   - DBXエージェント
 ---
 
-import InDoc from '@site/src/components/InDoc.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 import CurProd from '@site/src/components/GetProductName.js';
+
+:::note
+
+이 문서는 PostgreSQL 모니터링 V2를 기준으로 작성되었습니다. PostgreSQL 모니터링 V1 문서는 [다음 문서](../postgresql-v1/agent-dbx-settings)를 참조하세요.
+
+:::
 
 DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成します。 設定できるオプションについては、次を参照してください。
 
@@ -23,6 +28,8 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成�
 {@include: ../common-items/_db-agent-setting-data-collection.mdx}
 
 ## AWS RDS CloudWatch適用{#using-aws-rds}
+
+<AWSRDSdesc name='db_postgresql_counter' />
 
 {@include: ../common-items/_db-agent-aws.mdx}
 

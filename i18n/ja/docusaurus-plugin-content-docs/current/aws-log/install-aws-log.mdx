@@ -9,25 +9,13 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../getting-started/_how-to-start-intro.mdx} 
+{@include: ../getting-started/_how-to-start-intro.mdx}  
 
 ## 事前確認
 
 AWS Logを収集するには、追加のリソースが必要です。ユーザーのAWS環境で出力されるログ情報を受信した後、WhaTap収集サーバーに転送できるようにするため、WhaTapはAWS Lambda Functionを通じて**WhaTap Forwarder**を提供します。AWS Cloud Formationを活用して**WhaTap Forwarder**をユーザーのAWS環境に駆動します。
 
 **WhaTap Forwarder**はAWS Lambda FunctionのLifecycleに依存しています。 制御要素により、同時性の制約を克服できます。 ユーザー環境で発生するログ量に応じて、次の制御要素を調整します。
-
-<!-- 
-AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 로그 정보를 입수 후 와탭 수집 서버로 전송할 수 있도록 부가적인 자원이 필요합니다. 와탭은 로그를 감지하고 전송하기 위해 **WhaTap Forwarder**를 AWS Lambda Function을 통해 제공합니다. AWS CloudFormation을 활용해 **WhaTap Forwarder**를 사용자의 AWS 환경에 구동합니다.
-
-**WhaTap Forwarder**는 AWS Lambda Function의 Lifecycle에 의존적이기에 동시성 제약을 극복하기 위한 제어 요소를 가집니다. 사용자 환경에서 발생하는 로그량에 따라 다음과 같은 제어 요소를 조정해야 합니다.
-와탭은 로그를 감지하고 전송하기 위해 와탭 포워더를 제공합니다.
-
-와탭 포워더는 로그를 감지하고 전송합니다. 와탭 포워더가 로그를 감지하고 전송합니다.
-
-와탭 포워더는 람다 펑션의 라이프사이클에 의존적이기에 동시성 제약 극복을 
-
--->
 
 -   `ReservedConcurrency`： 同時実行数です。
 -   `Timeout`：Lambda Functionにログ流入がない場合の保持時間です。
@@ -57,7 +45,7 @@ AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 
 
 <!--  프로젝트 생성 -->
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -69,40 +57,62 @@ AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 
 
 :::
 
-## WhaTap Forwarderインストール
+## WhaTap Forwarder 설치{#install-whatap-forwarder}
 
 ログ転送用の**WhaTap Forwarder**をAWS Lambda Functionとしてインストールします。 AWS Cloud Formationでインストールを行います。 WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_WhaTap Forwarderインストール_**タブを参照してください。 次のインストール入力情報が必要です。 
 
--   **AWS Region** <br/>
-    WhaTap ForwarderをインストールするAWS Regionを選択してください。 収集対象リソースと同じRegionである必要があります。
--   **CloudFormation Stack Name**<br/>
-    WhaTap Forwarderのインストールおよび削除に活用されるCloud Formation Stack名を指定します。
--   **ConnectionTimeOut**<span class='type'>Second</span><br/>
-    デフォルト値`10`<br/>
-    WhaTap ForwarderがWhaTap収集サーバーに接続する際、タイムアウト時間（秒）を指定します.
--   **MemorySize**<span class='type'>Int</span><br/>
-    デフォルト値`1024`<br/>
-    WhaTap Forwarderのメモリ割り当てサイズ（MB）を指定します。
--   **Timeout**<span class='type'>Second</span><br/>
-    デフォルト値`150`<br/>
-    WhaTap Forwarderの休止期間（秒）を指定します。ログ転送リクエストがないときにLambda Functionが削除されるまでの時間を指定します。 
--   **UseReservedConcurrency**<span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    ログの安定的な転送のために、WhaTap Forwarderに割り当てる最大Function数の指定の可否を設定します。
--   **ReservedConcurrency**<span class='type'>Second</span><br/>
-    デフォルト値`10`<br/>
-    `UseReservedConcurrency`の値が`true`の場合、WhaTap Forwarderに割り当てるFunctionの個数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunction数は1,000個です。ユーザが使用できるFunctionの総数は、アカウントあたりの総割り当てFunction個数（1,000）から`ReservedConcurrency`設定値を引いたものに制限されます。
+-   **AWS Region**
+
+    WhaTap ForwarderをインストールするAWS Regionを選択してください。収集対象リソースと同じRegionである必要があります。
+
+-   **CloudFormation Stack Name**
+
+    WhaTap Forwarderのインストール及び除去に活用されるCloudFormation Stack名前を指定します。
+
+-   **ConnectionTimeOut** <span class='type'>Second</span>
+
+    デフォルト値`10`
+
+    WhaTap ForwarderがWhaTap収集サーバーに接続するときのタイムアウト時間(秒)を指定します。
+
+-   **MemorySize** <span class='type'>Int</span>
+
+    デフォルト値 `1024`
+
+    WhaTap Forwarderのメモリ割り当てサイズ(MB)を指定します。
+
+-   **Timeout** <span class='type'>Second</span>
+
+    デフォルト値`150`
+
+    WhaTap Forwarderの休止期間(秒)を指定します。ログの転送リクエストがないときにLambda Functionが削除されるまでの時間を指定します。 
+
+-   **UseReservedConcurrency** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    ログの安定的な転送のため、WhaTap Forwarderに割り当てる最大Functionの個数の指定可否を設定します。
+
+-   **ReservedConcurrency** <span class='type'>Second</span>
+
+    デフォルト値`10`
+
+    `UseReservedConcurrency`の値が`true`である場合、WhaTap Forwarderに割り当てるFunctionの個数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunctionの数は1,000個です。ユーザーが使用できるFunctionの総個数はアカウントあたりの総割り当てFunction個数(1,000)で`ReservedConcurrency`の設定値を引いたものに制限されます。
 
     <!-- 사용자는 AWS 계정 당 할당 가능한 총 Function 개수에서 `ReservedConcurrency` 설정 값을 뺀 만큼 Function을 사용할 수 있습니다. -->
 
 ### CloudFormation Stackインストール
 
 ![WhaTap Forwarder](/img/aws-log-whatap-forwarder-install.png)
+
 ![WhaTap Forwarder create stack](/img/aws-log-create-stack.png)
 
 1.  **_インストール案内_**セクションの![number 1](/img/number-01.png) **_WhaTap Forwarderインストール_**タブで![number 2](/img/number-02.png) **_AWS Region_**を選択してください。
+
 2.  ![number 3](/img/number-03.png) **_WhaTap Forwarderインストールページ_** ボタンを選択し、CloudFormation実行ページに移動してください。
+
 3.  CloudFormation実行ページでインストールオプションを指定してください。 デフォルトのパラメータは入力されています。
+
 4.  下段から![number 4](/img/number-04.png)承認を**_チェック_**した後、![number 5](/img/number-05.png) **_Create stack_**ボタンを選択してください。 インストールには約2分かかります。
 
 ### WhaTap ForwarderのARN確保{#whatapforwarder-arn}
@@ -110,15 +120,18 @@ AWS Log를 수집하기 위해서는 사용자의 AWS 환경에서 출력되는 
 ![WhaTap Forwarder arn1](/img/aws-log-whatap-forwarder-arn.png)
 
 1.  上段右側の![number 1](/img/number-01.png)**_更新_**ボタンをクリックしてスタックの作成進行状況を確認してください。 
+
     :::note
 
     スタックインストールの最終段階であるWhaTapAWSLogの作成が進行中であれば、**WhaTapForwarder**の**ARN**を確保することができます。 
 
     :::
 
-1.  Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)**_Pyhsical ID_**を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
-2.  詳細画面右側の**_Description_**領域で![number 3](/img/number-03.png)**_Function ARN_**(**WhaTap Forwarder ARN**)を確認することができます。
-3.  次のステップのためにコピーしてください。
+2.  Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)**_Pyhsical ID_**を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
+
+3.  詳細画面右側の**Description**領域で![number 3](/img/number-03.png)**Function ARN**(**_WhaTap Forwarder ARN_**)を確認することができます。
+
+4.  次のステップのためにコピーしてください。
 
 ### インストール失敗時のチェックリスト
 
@@ -137,7 +150,7 @@ User {user name} is not authorized to perform
     -   AWS Logを作成し、必要な権限を付与するためのポリシー
     -   AWS LogにPolicyを作成するためのポリシー
 
-    ```bash title='AWS Log 필요 권한'
+    ```bash title='AWS Log Required roles'
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -191,53 +204,57 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 ![IAMポリシー作成sc](/img/aws-log-create-policy.png)
 
 1.  AWS Management Consoleにログインしてから、IAMコンソールを開きてください。 
+
 2.  IAMコンソールで**_Policy_**タブを選択してください。
+
 3.  **_Create Policy_**ボタンを選択し、次のポリシーをコピーしてから、![number 1](/img/number-01.png) **_JSON_**タブに貼り付けてください。
 
-```bash title='IAM 정책'
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "s3:List*",
-                "s3:PutBucketNotification",
-                "s3:GetBucketNotification",
-                "logs:PutSubscriptionFilter",
-                "logs:DescribeLogGroups",
-                "lambda:ListFunctions",
-                "logs:DescribeSubscriptionFilters",
-                "s3:GetBucketNotification"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": "lambda:UpdateFunctionCode",
-            "Resource": "*",
-            "Condition": {
-                "ForAllValues:StringEquals": {
-                    "aws:TagKeys": "WhaTapForwarder"
+    ```json title='IAM policy'
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "VisualEditor0",
+                "Effect": "Allow",
+                "Action": [
+                    "s3:List*",
+                    "s3:PutBucketNotification",
+                    "s3:GetBucketNotification",
+                    "logs:PutSubscriptionFilter",
+                    "logs:DescribeLogGroups",
+                    "lambda:ListFunctions",
+                    "logs:DescribeSubscriptionFilters",
+                    "s3:GetBucketNotification"
+                ],
+                "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": "lambda:UpdateFunctionCode",
+                "Resource": "*",
+                "Condition": {
+                    "ForAllValues:StringEquals": {
+                        "aws:TagKeys": "WhaTapForwarder"
+                    }
                 }
+            },
+            {
+                "Effect": "Allow",
+                "Action": "s3:GetObject",
+                "Resource": [
+                    "arn:aws:s3:::whatapforwarder",
+                    "arn:aws:s3:::whatapforwarder/whatap.zip"
+                ]
             }
-        },
-        {
-            "Effect": "Allow",
-            "Action": "s3:GetObject",
-            "Resource": [
-                "arn:aws:s3:::whatapforwarder",
-                "arn:aws:s3:::whatapforwarder/whatap.zip"
-            ]
-        }
-    ]
-}
-```
+        ]
+    }
+    ```
 
-1.  下段の![number 2](/img/number-02.png) **_Review Policy_**ボタンをクリックしてください。
-2.  ![number 3](/img/number-03.png)ポリシー名を指定してください。
-3.  下段の![number 4](/img/number-04.png)**_Create Policy_**ボタンを選択してください。
+4.  下段の![number 2](/img/number-02.png) **_Review Policy_**ボタンをクリックしてください。
+
+5.  ![number 3](/img/number-03.png)ポリシー名を指定してください。
+
+6.  下段の![number 4](/img/number-04.png)**_Create Policy_**ボタンを選択してください。
 
 :::note
 
@@ -258,28 +275,35 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 作成されたリソースの権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS IAMロール作成_**タブを参照して進めてください。 
 
-<!-- 
-
-![IAM Role sc](/img/aws-log-iam-role-v.png) 
-1. ***Account ID***에 와탭 계정(**911937781722**)을 입력하세요.
-
--->
-
 1.  AWS Management Consoleにログインしてから、IAMコンソールを開きてください。
-2.  コンソール探索ウィンドウで**_Roles_**を選択してから、[number 1](/img/number-01.png)**Create role**ボタンを選択してください。 <br/>
+
+2.  コンソール探索ウィンドウで**_Roles_**を選択してから、[number 1](/img/number-01.png)**Create role**ボタンを選択してください。
+
     ![IAM Role 1](/img/aws-log-iam-role-create.png)
-3.  **_Select type of trusted entity_**から![number 2](/img/number-02.png) **_AWS account_**を選択し、![number 3](/img/number-03.png) **_Account ID_**にWhaTapアカウント(**911937781722**)を入力してください。<br/>
+
+3.  **_Select type of trusted entity_**から![number 2](/img/number-02.png) **_AWS account_**を選択し、![number 3](/img/number-03.png) **_Account ID_**にWhaTapアカウント(**911937781722**)を入力してください。
+
     ![IAM Role 2](/img/aws-log-iam-role-account.png)
+
 4.  下段の**_Next_**ボタンを選択してください。
-5.  [既存のステップ](#create-iam-policy)から作成した![number 4](/img/number-04.png) **IAMポリシー**を選択してください。<br/>
+
+5.  [既存のステップ](#create-iam-policy)から作成した![number 4](/img/number-04.png) **IAMポリシー**を選択してください。
+
     ![IAM Role 3](/img/aws-log-iam-role-policy.png)
+
 6.  下段の**_Next_**ボタンを選択してください。
-7.  IAMロールの![number 5](/img/number-05.png)名前を入力してください。<br/>
+
+7.  IAMロールの![number 5](/img/number-05.png)名前を入力してください。
+
     ![IAM Role 4](/img/aws-log-iam-role-name.png)
+
 8.  **_Create Role_**ボタンを選択してください。
-9.  情報タブで作成された![number 6](/img/number-06.png) **_IAM Role ARN_**が確認できます。<br/>
-    ![IAM Role 5](/img/aws-log-iam-role-arn-c.png)
-10. 次のステップのため、**_IAM Role ARN_**をコピーしてください。 
+
+9.  情報タブで作成された![number 6](/img/number-06.png) **_IAM Role ARN_**が確認できます。
+
+  ![IAM Role 5](/img/aws-log-iam-role-arn-c.png)
+
+1.  次のステップのため、**_IAM Role ARN_**をコピーしてください。 
 
 ## AWS Logのサブスクリプション
 
@@ -296,10 +320,14 @@ WhaTap**_エージェントのインストール_** > **_インストール案�
 ![AWS CloudWatch Logの照会およびサブスクリプションsc](/img/aws-log-cloudwatch-subs.png)
 
 1.  AWS Logがインストールされた![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
+
 2.  [既存のステップ](#whatapforwarder-arn)で獲得した**WhaTap Forwarder ARN**をコピー後![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
+
 3.  ![number 3](/img/number-03.png) **_照会_**ボタンを選択してから、サブスクリプションできるAWSリソースを照会してください。
+
 4.  照会されたリソースのうち![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
-5.  ![number 5](/img/number-05.png) **_登録_**ボタンを選択してください。
+
+5.  ![number 5](/img/number-05.png) **_登録_**ボタンをクリックしてください。
 
 :::note
 
@@ -317,10 +345,14 @@ WhaTap**_エージェントインストール_** > **_インストール案内_*
 ![AWS S3 Bucketの照会およびサブスクリプションsc](/img/aws-log-s3-subs.png)
 
 1.  AWS Logがインストールされた![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
+
 2.  [既存のステップ](#whatapforwarder-arn)で獲得した**WhaTap Forwarder ARN**をコピー後![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
+
 3.  ![number 3](/img/number-03.png) **_照会_**ボタンを選択してから、サブスクリプションできるAWSリソースを照会してください。
+
 4.  照会されたリソースのうち![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
-5.  ![number 5](/img/number-05.png) **_登録_**ボタンを選択してください。
+
+5.  ![number 5](/img/number-05.png) **_登録_**ボタンをクリックしてください。
 
 ## モニタリングの開始
 

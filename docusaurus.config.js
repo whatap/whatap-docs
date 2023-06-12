@@ -134,7 +134,7 @@ module.exports = Promise.resolve({
               protocol: 'https',
             },
           ],
-          apiKey: 'ANKs5qrSGOxYIJgh2z3uiUtJEJreEIsB',
+          apiKey: 'VXa4VAOWbU1Z911QbsNioXVGu1YXLuYW',
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
         typesenseSearchParameters: {

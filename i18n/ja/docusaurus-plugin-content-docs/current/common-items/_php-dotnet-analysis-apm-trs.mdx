@@ -28,7 +28,9 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 | cpu_sum        | CPU使用量SUM      | u8  |
 
 :::note
+
 `malloc_sum`は、`trace_malloc_enabled=true`に変更すると収集されます。デフォルト値は`false`です。
+
 :::
 
 ## トランザクションドメイン統計
@@ -115,7 +117,7 @@ whatap.stat_referer_enabled=true
 | カラム       | 説明           | タイプ |
 | --------- | ------------ | --- |
 | classHash | エラークラス       | u4  |
-| service   | トランザクションHASH | u4  |
+| サービス      | トランザクションHASH | u4  |
 | snapSeq   | スタック情報       | u8  |
 | msg       | メッセージhash    | u4  |
 | count     | 発生件数         | u4  |
@@ -132,12 +134,14 @@ whatap.stat_referer_enabled=true
 | count_error | エラー件数                 | u4  |
 | time_sum    | 応答時間の合計               | u8  |
 | time_max    | 最大応答時間                | u4  |
-| fetch_count | fetch件数               | u4  |
+| fetch_count | フェッチ数                 | u4  |
 | fetch_time  | fetch時間の合計            | u8  |
-| service     | SQLを実行したserviceのうちの1つ | u4  |
+| サービス        | SQLを実行したserviceのうちの1つ | u4  |
 
 :::note
+
 `service(URL)` hashは、5分間にSQLを呼び出したURLのうちの1つ(最後の呼び出しURL)を分析、活用のために収集されます。
+
 :::
 
 ## HTTP Call実行統計
@@ -153,7 +157,7 @@ whatap.stat_referer_enabled=true
 | count_error | エラー件数                  | u4  |
 | time_sum    | 応答時間の合計                | u8  |
 | time_max    | 最大応答時間                 | u4  |
-| service     | HTTP 呼び出しを行ったサービスの 1 つ | u4  |
+| サービス        | HTTP 呼び出しを行ったサービスの 1 つ | u4  |
 
 ## クライアントIP地域別の呼び出し件数
 

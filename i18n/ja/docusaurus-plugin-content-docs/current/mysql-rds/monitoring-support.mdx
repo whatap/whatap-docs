@@ -19,7 +19,7 @@ WaTab MySQL RDSモニタリングサービスは、データベース接続に�
 
 ## アーキテクチャ構成
 
-既存の[MySQLモニタリング](https://docs.whatap.io/mysql/monitoring-intro)製品の場合、収集エージェントを顧客ネットワーク内にインストールする必要があります。一方、**MySQL RDS**では、DBエージェント(DBX)は、WhaTapサーバー上にあります。DB接続のみ可能な場合、エージェントを自動的にインストールしてモニタリングを開始します。 このため、ファイアウォールの設定が必要です。
+既存の[MySQLモニタリング](https://docs.whatap.io/mysql/monitoring-intro)製品では、収集エージェントを顧客ネットワークにインストールする必要があります。一方、**MySQL RDS**では、DBエージェント(DBX)は、WhaTapサーバー上にあります。DB接続のみ可能な場合は、エージェントが自動的にインストールされ、モニタリングを開始されます。 これらの目的のために、ファイアウォールの設定が必要です。
 
 ![MySQL RDS](/img/mysql-rds-architecture.jpeg)
 

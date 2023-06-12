@@ -35,7 +35,8 @@ java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
 
 -   reflection関連JVMオプションの追加でアプリケーション起動
 
-    ```bash title='Java 17 이상만 지원'
+    ```bash
+    # Java 17以降のバージョンに対応
     java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
     ```
 

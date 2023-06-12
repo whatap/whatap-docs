@@ -212,7 +212,7 @@
     "description": "Navbar item with label Browser"
   },
   "item.label.라이선스": {
-    "message": "Licenses",
+    "message": "License",
     "description": "Navbar item with label 라이선스"
   }
 }

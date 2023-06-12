@@ -5,8 +5,8 @@ The following example executes the top command to continuously collect the CPU a
 CATEGORY="my_category"
 
 export PID=PID of the process to collect
-top -b -p $PID | awk '/'$PID'/{ printf "{\"pid\": %s, \"cpuPercent\": %s, \"memoryPercent\": %s, \"cmd\": \"%s\"}\n",$1, $9, $10, $12}; system("")' | 
-./focus -license $WHATAP_LICENSE 
-    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
+top -b -p $PID | awk '/'$PID'/{ printf "{\"pid\": %s, \"cpuPercent\": %s, \"memoryPercent\": %s, \"cmd\": \"%s\"}\n",$1, $9, $10, $12}; system("")' | \
+./focus -license $WHATAP_LICENSE \
+    -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
     -category $CATEGORY
 ```

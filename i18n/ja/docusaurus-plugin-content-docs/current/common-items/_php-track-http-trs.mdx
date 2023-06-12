@@ -1,51 +1,73 @@
--   **whatap.trace_normalize_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `true`<br/>
-      トランザクションURLを変換して一般化する機能を活性化します。
+-   **whatap.trace_normalize_enabled** <span class='type'>Boolean</span>
 
--   **whatap.trace_normalize_urls**<span class='type'>String</span><br/>
-        トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。\
+    デフォルト値 `true`
+
+    トランザクションURLを変換して一般化する機能を有効にします。
+
+-   **whatap.trace_normalize_urls** <span class='type'>String</span>
+
+    トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。      
+
     :::note
-    例）**/a/{v}/b**と設定すると、その形式で呼び出されるトランザクションURLは**/a/{v}/b**形式に変換されます。複数登録するときはコンマ（,）を使います。
+
+    例、**/a/{v}/b**と設定すると、その形式で呼び出されるトランザクションURLは**/a/{v}/b**形式として変換されます。複数登録するときはコンマ(,)を使います。
+
     :::
 
--   **whatap.trace_ignore_url_set**<span class='type'>String</span><br/>
-      デフォルト値 `0`<br/>
-      特定のURLを設定すると、トランザクション追跡の対象外になります。設定されたURLはトランザクション情報を収集しないため、トランザクション一覧では確認されていません。トランザクション追跡の対象から除外するURLを指定します。2つ以上の値を指定するには、コンマ（,）を区切り文字として利用してください。
+-   **whatap.trace_ignore_url_set** <span class='type'>String</span>
 
--   **whatap.trace_ignore_url_prefix**<span class='type'>String</span><br/>
-      デフォルト値 `0`<br/>
-      トランザクション追跡の対象から除外するURL prefixを指定します。
+    デフォルト値`0`
 
--   **whatap.profile_http_header_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      トレース履歴にhttpヘッダー情報を記録したいときに使用します。
+    特定のURLを設定すると、トランザクション追跡対象から除外されます。設定されたURLはトランザクション情報を収集しておらず、トランザクション 一覧で確認されていません。トランザクション追跡対象から除外するURLを指定します。2つ以上の値を指定するには、コンマ(,)を区切り文字として利用してください。
 
-<!-- 기본값 "host,accept,user-agent,referer, accept-language, connection" 타입 srting -->
+-   **whatap.trace_ignore_url_prefix** <span class='type'>String</span>
 
--   **whatap.profile_http_header_ignore_keys**<span class='type'>String</span><br/>
-      デフォルト値 `host,accept,user-agent,referer, accept-language, connection`<br/>
-      HTTP Header名を指定して収集情報から除外する機能を追加しました。指定されたHTTP Header名の値は、収集から除外され、"#"と表記されます。
+    デフォルト値`0`
 
--   **whatap.profile_http_parameter_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      トレース履歴にhttpパラメータ情報を記録したいときに使用します。パラメータは、別途のセキュリティキーを入力して照会できます。
+    トランザクション追跡対象から除外するURL prefixを指定します。
 
-      Get、Postパラメータのうち、textタイプの名前と値を収集します。最大40個（Get 20個、Post 20個）を収集し、パラメータ名と値は最大256 byteまで収集されます。
+-   **whatap.profile_http_header_enabled** <span class='type'>Boolean</span>
 
-      パラメータの情報は別途に暗号化されて送信されます。これはまた当該アプリケーションサーバーの_/usr/whatap/php/paramkey.txt_にあるキーを使って復号化および照会できます。
+    デフォルト値`false`
 
--   **whatap.profile_http_parameter_url_prefix**<span class='type'>String</span><br/>
-      デフォルト値 `/`<br/>
-      トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+    トレース履歴にHTTPヘッダーの情報を記録したいときに使用します。
 
--   **whatap.profile_http_host_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      トランザクションのHost情報を出力します。値が`false`の場合、トランザクションのURLにURIのみを表記し、`true`の場合は`/xxx.aaa.com/URL`形式で出力されます。
+-   **whatap.profile_http_header_ignore_keys** <span class='type'>String</span>
 
--   **whatap.biz_exceptions**<span class='type'>String</span><br/>
-      デフォルト値 `Empty`<br/>
-      特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒートマップではエラーと表記されず、統計情報にのみ収集されます。収集されたError Class名と同様に適用します。コンマを区切り文字として複数登録できます。
+    デフォルト値`host,accept,user-agent,referer, accept-language, connection`
 
--   **whatap.ignore_exceptions**<span class='type'>String</span><br/>
-      無視するExceptionを登録します。ここに登録されると、エラー自体が無視されます。 
-      Exceptionの場合、Custom Exception Classが定義されていなければ、基本的にはExceptionとして収集されます。特定のExceptionを区別するためには、Custom Exception Classを定義し、その名前を指定すると除外できます。
+    HTTP Header名前を指定して収集情報から除外する機能を追加しました。指定されたHTTP Header名の値は収集から除外され、"#"として表記されます。
+
+-   **whatap.profile_http_parameter_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トレース履歴にHTTPパラメータ情報を記録するときに使用します。パラメータは、別途のセキュリティ キーを入力しないと照会できません。
+
+    Get、Postパラメータのうち、textタイプの名前と値を収集します。最大40個（Get 20個、Post 20個）を収集し、パラメータ名と値は最大256 byteまで収集されます。
+
+    パラメータの情報は別途に暗号化されて送信されます。これはまた当該アプリケーションサーバーの_/usr/whatap/php/paramkey.txt_にあるキーを使って復号化および照会できます。
+
+-   **whatap.profile_http_parameter_url_prefix** <span class='type'>String</span>
+
+    デフォルト値 `/`
+
+    トレース履歴にHTTPパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+
+-   **whatap.profile_http_host_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トランザクションのHost情報を出力します。値が`false`の場合はトランザクションのURLにURIのみ表記し、`true`の場合は`/xxx.aaa.com/URL`形式として出力されます。
+
+-   **whatap.biz_exceptions** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒートマップではエラーと表記されず、統計情報にのみ収集されます。収集されたError Class名と同様に適用します。コンマを区切り文字として複数登録できます。
+
+-   **whatap.ignore_exceptions** <span class='type'>String</span>
+
+    無視するExceptionを登録します。ここに登録されると、エラー自体が無視されます。 
+
+    Exceptionの場合、Custom Exception Classが定義されていなければ、基本的にはExceptionとして収集されます。特定のExceptionを区別するためには、Custom Exception Classを定義し、その名前を指定すると除外できます。

@@ -1,0 +1,30 @@
+---
+id: analysis-lock-and-deadlock
+title: Lock tree
+description: You can analyze the lock trend during the day and check deadlocked queries.
+tags:
+  - PostgreSQL
+  - Database
+  - Lock
+  - Lock tree
+---
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+import Xclude from '@site/src/components/XcludeDoc.js';
+import InDoc from '@site/src/components/InDoc.js';
+
+<!-- 개요 -->
+
+{@include: ../common-items/_analysis-lock-desc.mdx}
+
+<!-- 락트리 -->
+
+{@include: ../common-items/_db-locktree-desc.mdx}
+
+## Basic screen guide
+
+{@include: ../common-items/_db-locktree-using-basic.mdx}  
+
+<!-- 락트리 컬럼 정보 -->
+
+{@include: ../common-items/_db_postgresql-column.mdx} 

@@ -10,11 +10,25 @@ tags:
 
 Home > Select Project > **_Dashboard_** > **_Container Map_**
 
-The container map in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
+The **_Container Map_** in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
+
+다음 동영상은 **_컨테이너 맵_** 메뉴에 대한 기본 안내입니다.
+
+{@youtube: GHOJW3Rk3jc}
+
+## Basic screen guide
 
 ![Container Map](/img/kube-container-map-01.png)
 
-## ![](/img/number-01.png) Container or Pod
+:::info
+
+**블록(Block)과 마이크로 블록(Micro block)**
+
+컨테이너 맵에서는 다각형 하나를 블록(Block)이라고 합니다. 이때 에이전트가 있는 블록(블록 안에 블록)은 마이크로 블록(Micro Block)이라고 한다.
+
+:::
+
+### ![](/img/number-01.png) Container or Pod
 
 The shapes and designs for each object represent the characteristics and states of the container or pod.
 
@@ -25,7 +39,7 @@ The shapes and designs for each object represent the characteristics and states 
     -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
     -   If there are 2 containers in a pod and the microagents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have microagents installed, the borders are displayed.
 
-## ![](/img/number-02.png) Go to Cluster Project - Namespace Project
+### ![](/img/number-02.png) Go to Cluster Project - Namespace Project
 
 ![Container map project list](https://img.whatap.io/media/images/whatap_kubernetes_container_map_namespace_project_list.png)
 
@@ -38,7 +52,7 @@ If a namespace project is created under a cluster project, you can check the lis
 
 :::
 
-## ![](/img/number-03.png) User configuration
+### ![](/img/number-03.png) User configuration
 
 ![User configuration](/img/container-map-custom-view.png)
 
@@ -54,7 +68,7 @@ A container map provides multiple user settings that allow you to create any des
 
     ![Option](/img/k8s-container-map-setting.png)
 
-    -   **_Show WhaTap Agent_**: You can display information of containers or pods. Select a desired **_label_** option.
+    -   **_와탭 에이전트 표시하기_**: 컨테이너 또는 Pod의 정보를 표시할 수 있습니다. 원하는 **_라벨_** 옵션을 선택하세요. 라벨 옵션에 대한 자세한 내용은 [다음 문서](#label)를 참조하세요.
 
     -   **_Show metrics at the bottom of the card_**: You can select whether or not to display the metrics information at the bottom.
 
@@ -64,7 +78,17 @@ A container map provides multiple user settings that allow you to create any des
 
 -   ![Reset icon](/img/ico-reset.svg) **_Reset_**: It initializes the screen view set by you.
 
-## Summary view and Detailed view
+#### 라벨 옵션{#label}
+
+-   **_없음_**: 블럭에 라벨을 표시하지 않습니다.
+
+-   **_이름_**: 컨테이너/POD의 이름을 표시합니다.
+
+-   **_애플리케이션_**: 컨테이너/POD 내의 애플리케이션을 표시합니다.
+
+-   **_선택된 지표_**: **_ConState(state)_** 항목에서 선택한 차트 지표를 표시합니다.
+
+### Summary view and Detailed view
 
 You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
 
@@ -75,19 +99,19 @@ You can select an interested container or pod to view the summary and detailed i
 
 Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
 
-### Summary view
+#### Summary view
 
 Click a specific object or a set of objects. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
 
 ![Summary view](https://img.whatap.io/media/images/whatap_kubernetes_container_map_right_summary.png)
 
-### Detailed view
+#### Display Detail
 
 On the upper right of the **Display Summary** screen, click ![Display Detail icon](/img/ico-detail-mode.svg). **Display Detail** appears.
 
 ![Detailed view](/img/container-map-detail-mode.png)
 
-## Real-time and historical inquiries
+### Real-time and historical inquiries
 
 Container maps are based on real-time lookups based on multiple viewpoints. Use the time selector at the top right of the screen to change the real-time inquiry.
 

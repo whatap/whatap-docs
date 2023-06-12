@@ -1,6 +1,6 @@
 ---
 id: analysis-count-trend
-title: カウント推移の活用
+title: 카운트 추이 비교하기
 description: データベース運用の推移を確認して比較することができます。
 tags:
   - PostgreSQL
@@ -9,20 +9,68 @@ tags:
   - カウント推移
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+:::note
 
-<!-- 카운트 추이 -->
+이 문서는 PostgreSQL 모니터링 V2를 기준으로 작성되었습니다. PostgreSQL 모니터링 V1 문서는 [다음 문서](../postgresql-v1/analysis-count-trend)를 참조하세요.
 
-{@include: ../common-items/_db-count-trend-desc.mdx}  
+:::
 
-<!-- 카운트 추이 비교 -->
+ホーム画面 > プロジェクト選択 > **_分析_** > **_カウント推移比較_**
 
-{@include: ../common-items/_db-compare-count-trend-v2.mdx}  
+데이터베이스의 핵심 지표들에 대한 운용 추이를 시간대별로 확인하고 성능을 추적할 수 있습니다. 또한 서로 다른 날짜의 카운트 추이 비교를 통해서 데이터베이스 운영 추이를 확인할 수 있습니다. **_액티브 세션_** 테이블을 통해서 현재 진행 중인 세션 정보를 확인하고 오랫동안 진행 중인 세션을 구분할 수 있습니다.
 
-<!-- 차트 및 액티브 세션 영역 활용하기 -->
+## 基本画面案内
 
-{@include: ../common-items/_db-using-chart-activesession-area.mdx}  
+<ProdImg img='db-compare-count-trend.png' desc='카운트 추이' />
 
-<!-- 컬럼 정보 안내 -->
+-   ![숫자 1](/img/number-01.png) **_기준 날짜_**, ![숫자 2](/img/number-02.png) **_비교 날짜_**, **_인스턴스_** 항목을 선택하면 모든 위젯에 선택한 항목을 기준으로 데이터가 자동으로 반영됩니다.
 
-{@include: ../common-items/_db_postgresql-column.mdx}
+-   위젯에 표시된 지표의 의미를 알고 싶다면 이름 옆에 <span class='mark'>i</span> 버튼을 선택하거나 [다음 문서](metrics-data-list)를 참조하세요.
+
+-   다른 위젯과 위치를 변경하려면 위젯의 윗 부분을 선택한 상태에서 드래그하세요. 단 위젯의 크기는 변경할 수 없습니다.
+
+-   ![숫자 3](/img/number-03.png) **_액티브 세션_** 테이블에서 왼쪽은 **_기준 날짜_**, 오른쪽은 **_비교 날짜_**에 해당하는 데이터를 표시합니다.
+
+-   ![숫자 3](/img/number-03.png) **_액티브 세션_** 테이블 목록에 글자 색상은 검정색 → <span class='slow'>주황색</span> → <span class='vslow'>빨강색</span> 순으로 세션의 수행 속도가 느린 것을 의미합니다.
+
+### 비교 대상 선택하기
+
+![숫자 1](/img/number-01.png) **_기준 날짜_**, **_인스턴스_**를 선택한 다음 ![숫자 2](/img/number-02.png) **_비교 날짜_**, **_인스턴스_**를 선택하세요. 차트 위로 마우스를 오버하면 나타나는 툴팁을 통해서 데이터를 비교할 수 있습니다.
+
+![Tooltip](/img/db-compare-count-trend-tootip.png)
+
+-   그래프 차트의 실선은 **_기준 날짜_**의 데이터, 점선은 **_비교 날짜_**의 데이터를 표시합니다.
+
+-   툴팁에서 **_(Comparison)_**이 표시된 항목이 **_비교 날짜_**의 데이터입니다.
+
+:::note
+
+-   **_데이터베이스_** 항목에서 비교하길 원하는 데이터베이스를 선택할 수도 있습니다.
+
+-   **_데이터베이스_** 항목의 각 색상은 그래프 차트에서 동일한 색상으로 표현됩니다.
+
+:::
+
+### 액티브 세션 정보 비교하기
+
+![액티브 세션](/img/db-compare-count-trend-activesession.png)
+
+-   데이터를 조회한 시간대는 ![숫자 4](/img/number-04.png)에서 확인할 수 있습니다.
+
+-   액티브 세션 데이터는 5초 단위로 수집하고 있으며, 테이블 위에 5초 단위로 이동할 수 있는 버튼을 선택해 해당 시간 동안의 데이터를 조회할 수 있습니다.
+
+-   오른쪽 위에 ![이전 시간 아이콘](/img/ico-left-time.svg) 또는 ![이후 시간 아이콘](/img/ico-right-time.svg)을 선택하면 1분 단위로 데이터를 조회할 수 있습니다. 5초 단위로 이동하려면 ![5초 이전 아이콘](/img/ic-caret-left.svg) 또는 ![5초 이후 아이콘](/img/ic-caret-right.svg) 버튼을 선택하세요.
+
+-   **_액티브 세션_** 테이블 목록에 글자 색상은 검정색 → <span class='slow'>주황색</span> → <span class='vslow'>빨강색</span> 순으로 세션의 수행 속도가 느린 것을 의미합니다.
+
+-   그래프 차트의 특정 시점을 클릭하면(![숫자 3](/img/number-03.png)) 해당 지점을 빨간 선으로 표시하며 당시에 수집된 액티브 세션을 확인할 수 있습니다.
+
+### 특정 시간 비교하기
+
+![액티브 세션](/img/db-count-trend-extend-time.png)
+
+특정 시간을 확대해 데이터를 비교할 수 있습니다. 화면에 배치된 위젯 중 아무곳에서나 원하는 시간대를 선택해 차트를 드래그하세요. 모든 위젯과 액티브 세션 테이블에 드래그한 특정 시간대의 데이터를 표시합니다.
+
+<!--컬럼 정보 안내-->
+
+{@include: ../common-items/_db_postgresql-column.mdx} 

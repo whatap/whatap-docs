@@ -10,7 +10,13 @@ tags:
 
 WhaTapは、モニタリング情報収集対象のインフラサーバーの識別のために、基本的にはサーバーから収集した情報を活用します。 デフォルト値は、サーバーのホスト名（hostname）です。
 
-{@include: ../common-items/_agent-name-warning.mdx} 
+{@include: ../common-items/_agent-name-warning.mdx}
+
+:::note
+
+사용자가 설정한 에이전트 이름을 [와탭 모니터링 서비스](https://service.whatap.io)에서 확인하려면 서버를 재시작하세요.
+
+:::
 
 ユーザーフレンドリーな名前を指定する場合、次のように設定ファイルに指定できます。
 
@@ -25,7 +31,7 @@ WhaTapは、モニタリング情報収集対象のインフラサーバーの�
 -   **Windows Power Shell** 
 
     ```bash title=SH
-    // 管理者権限が必要です。
+    # 管理者権限が必要です。
     $WHATAP_SERVER_NAME="ユーザーフレンドリーな名前"
 
     Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"

@@ -13,7 +13,7 @@ import UI from '@site/src/components/UItext';
 
 ### google.golang.org/grpcライブラリに対応
 
-```go title='설치 안내'
+```go title='Install guide'
 
 import (
   "github.com/whatap/go-api/instrumentation/google.golang.org/grpc/whatapgrpc"
@@ -45,40 +45,54 @@ func main() {
 
 #### 設定
 
-`grpc_profile_enabled`\
-#Default : true#\
-#Type : boolean# 
+-   `grpc_profile_enabled`
 
-grpc情報の収集有無を設定します。 
+    \#Default : true#
 
-`grpc_profile_stream_client_enabled`\
-#Default : true#\
-#Type : boolean#  
+    \#Type : boolean# 
 
-client stream method情報の収集有無を設定します。
-`false`：stream method情報を収集しません。 
+    grpc情報の収集有無を設定します。 
 
-`grpc_profile_stream_server_enabled`\
-#Default : true#\
-#Type : boolean#  
+-   `grpc_profile_stream_client_enabled`
 
-server stream method情報の収集有無を設定します。
-`false`：stream method情報を収集しません。 
+    \#Default : true#
 
-`grpc_profile_ignore_method`\
-#Default : agent#\
-#Type : String# 
+    \#Type : boolean#
 
-指定されたメソッドを収集しません。複数指定の場合はコンマ（,）で区切ります。
+    client stream method情報の収集有無を設定します。
 
-`grpc_profile_stream_method`\
-#Default : "" #\
-#Type : String# 
+    `false`：stream method情報を収集しません。 
 
-指定されたstream methodを別のトランザクションとして構成します。複数指定の場合はコンマ（,）で区切ります。長時間続くstream接続に対して、methodそれぞれの呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。 
+-   `grpc_profile_stream_server_enabled`
 
-`grpc_profile_stream_identify`\
-#Default : false#\
-#Type : boolean#  
+    \#Default : true#
 
-Stream full methodをトランザクション名で収集し、同じfull methodに対してclient、serverを区別できる接頭辞を追加します。（_/Stream Client/[full method]_、_/Stream Server/[full method]_）
+    \#Type : boolean#
+
+    server stream method情報の収集有無を設定します。
+
+    `false`：stream method情報を収集しません。 
+
+-   `grpc_profile_ignore_method`
+
+    \#Default : agent#
+
+    \#Type : String# 
+
+    指定されたメソッドを収集しません。複数指定の場合はコンマ（,）で区切ります。
+
+-   `grpc_profile_stream_method`
+
+    \#Default : "" #
+
+    \#Type : String# 
+
+    指定されたstream methodを別のトランザクションとして構成します。複数指定の場合はコンマ（,）で区切ります。長時間続くstream接続に対して、methodそれぞれの呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。 
+
+-   `grpc_profile_stream_identify`
+
+    \#Default : false#
+
+    \#Type : boolean#
+
+    Stream full methodをトランザクション名で収集し、同じfull methodに対してclient、serverを区別できる接頭辞を追加します。（_/Stream Client/[full method]_、_/Stream Server/[full method]_）

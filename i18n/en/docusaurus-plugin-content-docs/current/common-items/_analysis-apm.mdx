@@ -63,14 +63,14 @@ In the **_top stack_** statistics, the history of collection counts and rate cha
 
 ![tst3](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring27.png)
 
--   **_Percent_**  
+-   **_Percent_**
 
-    -   It displays changes in rate of the top stacks selected during the query period.  
+    -   It displays changes in rate of the top stacks selected during the query period.
     -   It is useful to identify the status of failure and to compare before and after the improvement.
 
--   **_Count_**  
+-   **_Count_**
 
-    -   The number of collected stacks is proportional to the number of active transactions.  
+    -   The number of collected stacks is proportional to the number of active transactions.
     -   If the collection amount increased in a specific section, it can be seen that there was a service delay or a sudden increase in inflow.
 
 This can also be seen in the following diagram:
@@ -97,8 +97,7 @@ Transactions in progress are called "active transactions." **The stacks regularl
 
 :::note
 
-The WhaTap agent dumps **active stacks** for **active transactions** every 10 seconds (optional) and sends them to the server.
-
+The WhaTap agent dumps **active stacks** for **active transactions** every 10 seconds (optional) and sends them to the server.<br/>
 `active_stack_second=10`
 
 :::
@@ -146,9 +145,9 @@ The following is an example to view the details for a specific period in **_Stac
     -   Around 6 am, we can see that the `TextEncoderHelper.copyDataToDestination()` rate has decreased.
     -   In the concurrent time zone, `sun.misc.Unsafe.park` has increased by the `TextEncoderHelper.copyDataToDestination()` rate decreased.
 
-    The first and second-highest top stacks are all related with logging. In other words, it can be seen that this system spends approximately 90% of the execution time for logging.    
+    The first and second-highest top stacks are all related with logging. In other words, it can be seen that this system spends approximately 90% of the execution time for logging.
 
-4.  Based on the confirmed market share, the expected effects of improvement are calculated.  
+4.  Based on the confirmed market share, the expected effects of improvement are calculated.
 
     In the example, the rate of `copyDataToDestination()` 79.92% and the rate of `sun.misc.Unsafe.park()` 8.01% are percentages of time while running the service. If the `copyDataToDestination()` share is reduced by half, the performance can be improved by 44% based on the response rate.
 

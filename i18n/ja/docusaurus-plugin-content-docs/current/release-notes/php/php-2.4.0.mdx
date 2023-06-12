@@ -15,17 +15,17 @@ import UI from '@site/src/components/UItext';
 
 PHP 8.1に対応します。
 
-## Fixed（バグ修正）
+## Fixed(バグ修正)
 
 ### cURL header設定情報の初期化エラー
 
-「curl_setopt」、「curl_setopt_array」関数を通じてHTTP Header設定（CURLOPT_HTTPHEADER）を行う場合、重複設定になると以前の情報は初期化され、新しい情報だけが設定されます。 
+`curl_setopt`、`curl_setopt_array`関数を通じてHTTP Header設定（CURLOPT_HTTPHEADER）を行う場合、重複設定になると以前の情報は初期化され、新しい情報だけが設定されます。 
 
-マルチトランザクション（「whatap.mtrace_enabled=true」）設定が活性化されると、「curl_exec()」関数の前にWhaTap Header情報を設定して、以前ユーザーのHeader情報が初期化されるエラーがあります。 
+マルチトランザクション（`whatap.mtrace_enabled=true`）設定が活性化されると、`curl_exec()`関数の前にWhaTap Header情報を設定して、以前ユーザーのHeader情報が初期化されるエラーがあります。 
 
-「curl_exec()」関数呼び出し前にWhaTap Headerを設定する機能を削除し、「curl_init()」関数呼び出し後に設定するよう修正しました。 
+`curl_exec()`関数呼び出し前にWhaTap Headerを設定する機能を削除し、`curl_init()`関数呼び出し後に設定するよう修正しました。 
 
-「curl_exec()」関数呼び出し前にユーザーHeaderを設定する場合、先に設定されていたWhaTap Headerは削除されます。 
+`curl_exec()`関数呼び出し前にユーザーHeaderを設定する場合、先に設定されていたWhaTap Headerは削除されます。 
 
 マルチトランザクションを行うためには、以下のガイドに従ってPHPソースコードで直接WhaTap Headerを追加する必要があります。 
 
@@ -58,5 +58,5 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 `whatap.mtrace_auto_inject_enabled=true`  
 
--   「curl_init()」関数呼び出し後、内部では「curl_setopt()」を呼び出してwhatap headerを設定します。
--   「false」：WhaTap Headerの自動設定機能を停止します。 
+-   `curl_init()`関数呼び出し後、内部では`curl_setopt()`を呼び出してwhatap headerを設定します。
+-   `false`：WhaTap Headerの自動設定機能を停止します。 

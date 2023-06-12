@@ -15,11 +15,11 @@ import UI from '@site/src/components/UItext';
 
 既存のweaving_reserved設定と同じ機能を持つweaving設定を追加しました。
 
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 weaving=tomcat10
 ```
 
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 weaving_reserved=tomcat10
 ```
 
@@ -29,7 +29,7 @@ weaving_reserved=tomcat10
 
 デフォルト設定は、falseです。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 auto_thread_kill_elapsed=0
 auto_thread_kill_enabled=false
 ```
@@ -40,7 +40,7 @@ auto_thread_kill_enabled=false
 
 コレクションを生成するクラスをcollection_nonstatic_holders設定に追加してCollection Mapメニューで確認することができます。
 
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
 ```
 
@@ -54,7 +54,7 @@ Http、データベース接続に対するリアルタイムログを追加し�
 
 ### エージェントログで指定したonameを表示
 
-「oname」を「-D」オプションとして指定した場合でも、エージェントログが、PIDの代わりにエージェント名を表示するよう修正しました。
+`oname`を`-D`オプションに指定した場合、エージェントログにPIDではなく、エージェント名を表示するよう修正しました。
 
 ### jdbc url抽出の区切り文字を追加
 
@@ -74,7 +74,7 @@ logsinkで収集するデータを追加しました。
 
 設定に応じて、トランザクションID、ログインID、および HTTPホストデータを収集するかどうかを決定できます。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 _logtag_enabled = false         # tag 
 logtag_txid_enabled=false       # transation id
 logtag_login_enabled=false      # login id
@@ -89,7 +89,7 @@ Httpクライアントにタイムアウトを適用し、タイムアウト発�
 
 jmx pool objectのデフォルト値を修正しました。jmx poolのデータソース名を使用するかどうかを決定できるオプションを追加しました。データソース名を登録すると、jndiメソッドが実行され、名前を登録していない場合は、デフォルトのURLメソッドで動作します。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 jmx_pool_dsname_enabled=false
 jmx_pool_object="*:type=DataSource,class=*,name=*"
 ```
@@ -98,7 +98,7 @@ jmx_pool_object="*:type=DataSource,class=*,name=*"
 
 heapdumpファイルパスを指定するlog_rootオプションを追加しました。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 log_root=${WHATAP_HOME}/dump
 ```
 
@@ -110,25 +110,27 @@ log_root=${WHATAP_HOME}/dump
 
 active stackのthread名を表示する設定を追加しました。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 active_stack_thread_name_enabled=false
 ```
 
 :::note
-yardバージョンが低い場合、trueに設定するとプロトコルエラーによりエージェント接続が継続的に切断されます。
+
+yardバージョンが低い場合、trueに設定するとプロトコルエラーによりエージェント接続は継続的に切断します。
+
 :::
 
 ### 非同期thread名の表示設定を追加する
 
 非同期スレッドの ID と名前を表示する設定を追加しました。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 debug_async_thread_enabled=false
 ```
 
 ### データベース呼び出しURLの保存
 
-データベース呼び出しURLを保存するように修正しました。
+データベース呼び出しのURLを保存するように修正しました。
 
 ### データベース呼び出しハッシュ値の削除
 
@@ -136,7 +138,7 @@ debug_async_thread_enabled=false
 
 ### エージェント実行ロゴの修正
 
-Javaエージェント実行時のロゴ内容を修正しました。
+Javaエージェント実行時のロゴ内容を修正
 
 ```bash
 The Best Observability in Java
@@ -148,7 +150,7 @@ The Best Observability in Java
 
 ### エージェント設定のlicenseキーオプションの修正
 
-whatap.confでlicenseとaccesskeyのオプションの両方を活用できるように修正しました。
+whatap.confで、licenseとaccesskeyのオプションの両方を利用できるように修正しました。
 
 ```ini title='whatap.conf'
 # 同一の機能
@@ -160,19 +162,19 @@ accesskey=
 
 Javaエージェントのメタタグのオプション名を修正しました。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 agent_meta_tags_enabled=true
 ```
 
-## New Feature（新機能）
+## New Feature(新機能)
 
 ### エージェント環境変数の除外値の追加
 
-環境変数の参照機能で特定のキー値を入力する場合、参照項目から除外できるように機能を追加しました。
+環境変数の検索機能で特定のキー値を入力する場合、検索項目から除外する機能を追加しました。
 
-区切り文字は「,」で大文字と小文字を区分しません。「agent_env_system_enabled」、「agent_env_jvm_enabled」の設定と関連付けて使用することができます。
+区切り文字は「,」で大文字と小文字を区別しません。`agent_env_system_enabled`、および、`agent_env_jvm_enabled`の設定と組み合わせて使用できます。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 agent_env_system_enabled=false
 agent_env_jvm_enabled=true
 
@@ -181,17 +183,17 @@ agent_env_ignore_keys=user.timezone,user.name,user.language
 
 ### フェデレーション サービスの状態追跡機能を追加
 
-target IPまたはサービスの接続状態をログモニタリングのliveTailで確認できるように、連携サービス状態の追跡機能を追加しました。
+target IPやサービスの接続状態をログモニタリングのliveTailで確認できるように、連携サービス状態の追跡機能を追加しました。
 
-「logsink_rt_enabled」オプションを「true」に設定し、「#RemoteTrace」カテゴリのログを収集することで、この機能を有効にできます。
+`logsink_rt_enabled`オプションを`true`に設定し、`#RemoteTrace`をカテゴリ別にログを収集することで、この機能を有効にします。
 
 -   正常なレスポンスの場合のレベルはOK、エラーの場合のレベルはエラーです。
 
--   正常なレスポンスの場合、「logsink_rt_ok_interval」設定間隔に合わせてログを記録します。デフォルト値は30秒です。
+-   通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログは記録されます。デフォルト値は30秒です。
 
--   エラーレスポンスの場合、「logsink_rt_error_interval」設定間隔に合わせてログを記録します。デフォルト値は5秒です。
+-   エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログは記録されます。デフォルト値は5秒です。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 logsink_rt_enabled=false
 
 logsink_rt_error_interval=5000
@@ -200,15 +202,15 @@ logsink_rt_ok_interval=30000
 
 ### 外部通話エラー通知機能の追加
 
-HttpやDatabaseの呼び出し時にエラーが発生したときやレスポンスが指定した時間より遅い場合に通知を受け取ることができる機能を追加しました。
+HttpやDatabaseの呼び出し時にエラーが発生したときに、レスポンスが指定した時間より遅い場合、通知を受け取る機能を追加しました。
 
--   「exception_alert_enabled」オプションをtrueに設定して機能を有効にすることができます。
+-   `exception_alert_enabled`オプションをtrueに設定して、この機能を有効にします。
 
--   「exception_alert_stack_size」オプションを使用すると、エラースタックの長さを指定し、通知メッセージとして受け取ることができます。
+-   `exception_alert_stack_size`オプションを使用すると、エラースタックの長さを指定して通知メッセージを受信することができます。
 
--   「exception_alert_silent_time」オプションで指定した期間はエラー通知を無効にすることができます。
+-   `exception_alert_silent_time`オプションで指定した期間は、エラー通知を無効にできます。
 
--   通知メッセージには、url、「status_code」、「error_message」、「error_stack」などが表示されます。
+-   通知メッセージは、url、`status_code`、`error_message`、`error_stack`などが表示されます。
 
 ```ini title='whatap.conf'
 # デフォルト値
@@ -227,7 +229,7 @@ exception_alert_jdbc_enabled=false
 # エラー通知メッセージに表示したスタックの長さ
 exception_alert_stack_size=50
 
-# エラー通知メッセージの非活性化時間 = 5分（30000ms）
+# エラー通知メッセージの非活性化時間 = 5分 (30000ms)
 exception_alert_silent_time=300000
 
 # トランザクションエラー通知で無視するstatus code
@@ -245,10 +247,10 @@ httpc_status_url_alert_ignore_set=/api/test/timeout:408
 
 ### トランザクション、http呼び出しのエラーレベルを調整する機能
 
-トランザクションやhttp呼び出しの状態を正常な呼び出しとして認識できるように機能を追加しました。 トランザクションやhttp呼び出しの状態をinfoとして設定する場合、Spring FrameworkのException Handlerで処理していないエラーを正常に認識できるようバージョン機能を追加しました。条件に該当する場合、ヒートマップのErrorLevelにINFOとして表示し、エラー統計には含めます。
+トランザクションやhttp呼び出しの状態を通常の呼び出しとして認識できるように機能を追加しました。 トランザクションやhttp呼び出しの状態をinfoとして設定した場合、Spring FrameworkのException Handlerで処理されないエラーを正常に認識できるようにバージョン関数を追加しました。条件に該当する場合、ヒートマップでErrorLevelのINFOとして表示し、エラー統計には含めます。
 
 ```ini title='whatap.conf'
-# デフォルト値（default）
+# デフォルト値 (default)
 transaction_status_mode=normal
 httpc_status_mode=normal
 
@@ -271,9 +273,9 @@ httpc_status_url_alert_ignore_set=/api/test/timeout:408
 
 ### Alibaba Druid ConnectionPool追跡機能の追加
 
-Alibaba Druid connection poolを追跡できるように機能を追加しました。
+Alibaba Druid connection poolを追跡する機能を追加しました。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 druid_pool_enabled=false
 ```
 
@@ -281,36 +283,36 @@ druid_pool_enabled=false
 
 oshiライブラリを使用してnetstatを収集する機能を追加しました。ネットワークメトリクスのうち、packet、collision、drop、error、bpsのデータを収集します。
 
-```ini title='whatap.conf 기본 설정'
+```ini title='whatap.conf'
 oshi_netstat_enabled=false
 debug_oshi_netstat_enabled=false
 ```
 
-## Fixed（バグ修正）
+## Fixed(バグ修正)
 
 ### .xプラグインのint型の認識エラーを修正
 
-x拡張子を使用するプラグインでint型が認識しないエラーを修正しました。
+x拡張子を使用するプラグインで、int型を認識しないエラーを修正しました。
 
 ### バッチエージェントのgetResultSetエラーの修正
 
-バッチエージェントの「TraceSQL.getResultSet」エラーを修正しました。 
+バッチエージェントの`TraceSQL.getResultSet`エラーを修正しました。 
 
 ### Http呼び出しエラーの時間設定のバグを修正
 
-Http呼び出し時、エラー時間の最大値を0に設定してもエラーを表示するバグを修正しました。
+Http呼び出し時、エラー時間の最大値を0に設定してもエラーが表示するバグを修正しました。
 
 ### sql追跡時、LocalDateを追跡できない問題
 
-sqlリクエスト時、「java.time.LocalDate」型が追跡できない問題を修正しました。
+sqlリクエスト時、`java.time.LocalDate`型を追跡できない問題を修正しました。
 
 ### エージェントログ出力時のエラーを修正
 
-「java.sql.Timestamp」タイプを使用してログを残す場合、エラーが発生する問題を修正しました。
+`java.sql.Timestamp`タイプを使用してログを残す場合、エラーが発生する問題を修正しました。
 
-### クラスシグネチャー確認時のバグを修正
+### クラスシグネチャー認証時のバグを修正
 
-エージェント設定メニューでクラスシグネチャー表示の要求時に「java.lang.NullPointerException」が発生する問題を修正しました。
+エージェント設定メニューでクラスシグネチャー表示の要求時に、`java.lang.NullPointerException`が発生する問題を修正しました。
 
 ### コンテナID抽出エラーを修正
 

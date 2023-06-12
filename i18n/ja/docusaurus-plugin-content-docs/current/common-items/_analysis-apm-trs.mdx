@@ -23,7 +23,9 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 | cpu_sum        | CPU使用量SUM      | u8  |
 
 :::note
+
 `malloc_sum`は、`trace_malloc_enabled=true`に変更すると収集されます。デフォルト値は`false`です。
+
 :::
 
 ## トランザクションドメイン統計
@@ -109,7 +111,7 @@ stat_referer_enabled=true
 | カラム       | 説明           | タイプ |
 | --------- | ------------ | --- |
 | classHash | エラークラス       | u4  |
-| service   | トランザクションHASH | u4  |
+| サービス      | トランザクションHASH | u4  |
 | snapSeq   | スタック情報       | u8  |
 | msg       | メッセージhash    | u4  |
 | count     | 発生件数         | u4  |
@@ -126,12 +128,14 @@ stat_referer_enabled=true
 | count_error | エラー件数                 | u4  |
 | time_sum    | 応答時間の合計               | u8  |
 | time_max    | 最大応答時間                | u4  |
-| fetch_count | fetch件数               | u4  |
+| fetch_count | フェッチ数                 | u4  |
 | fetch_time  | fetch時間の合計            | u8  |
-| service     | SQLを実行したserviceのうちの1つ | u4  |
+| サービス        | SQLを実行したserviceのうちの1つ | u4  |
 
 :::note
+
 `service(URL)` hashは、5分間にSQLを呼び出したURLのうちの1つ(最後の呼び出しURL)を分析、活用のために収集されます。
+
 :::
 
 ## HTTP Call実行統計
@@ -147,7 +151,7 @@ stat_referer_enabled=true
 | count_error | エラー件数                  | u4  |
 | time_sum    | 応答時間の合計                | u8  |
 | time_max    | 最大応答時間                 | u4  |
-| service     | HTTP 呼び出しを行ったサービスの 1 つ | u4  |
+| サービス        | HTTP 呼び出しを行ったサービスの 1 つ | u4  |
 
 ## クライアントIP地域別の呼び出し件数
 
@@ -168,19 +172,6 @@ stat_referer_enabled=true
 
 -   国の領域を選択すると、その国の都市と接続ユーザーのIPなどを確認できる詳細チャートに移動します。
 -   中心円を選択すると、既存の国の領域選択チャートに戻ります。
-
-<!-- 
-
-IP 별 호출 건수
-
-IP별로 호출한 트랜잭션 건수를 통계적으로 수집합니다. 5분당 수집할 수 있는 서로 다른 IP 수는 인스턴스 당 최대 70,000개입니다.
-
-
-**클라이언트 IP 의 지역을 확인하는 이유**
-
-**네트워크 성능 최적화**에 ‘클라이언트 IP’가 중요한 이유는 서버와 클라이언트의 물리적 거리가 네트워크 소요 시간에 영향을 주기 때문입니다. 서버와 클라이언트가 지리적 거리는 데이터의 전송 시간과 비례합니다. 클라이언트 IP의 지역 통계를 통해 유저 수가 많은 리전으로 서버를 이전, 증설하는 것을 고려 할 수 있습니다.
-
--->
 
 ## ユーザエージェント別の呼び出し件数
 
