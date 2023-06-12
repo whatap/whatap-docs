@@ -51,7 +51,7 @@ module.exports = Promise.resolve({
           {
             to: '/server/introduction',
             from: '/server/server-intro'
-          }
+          },
         ],
       }
     ],
@@ -129,15 +129,18 @@ module.exports = Promise.resolve({
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'typesense.whatap.io',
+              host: 't2dvabr5xq7wn91gp-1.a1.typesense.net',
+              port: 443,
               protocol: 'https',
             },
           ],
-          apiKey: 'o8PpsXaZdGLtEp2EAHVT4C9Nw9xK7SUi',
+          apiKey: 'ANKs5qrSGOxYIJgh2z3uiUtJEJreEIsB',
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
         typesenseSearchParameters: {
-          highlight_affix_num_tokens: 40,
+          facet_by: 'language',
+          highlight_affix_num_tokens: 200,
+          split_join_tokens: 'always',
         },
         // Optional
         contextualSearch: true,
@@ -226,7 +229,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'postgresql/monitoring-intro',
+                docId: 'postgresql-v1/monitoring-intro',
                 label: 'PostgreSQL',
               },
               {
@@ -388,7 +391,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'postgresql/monitoring-intro',
+            docId: 'postgresql-v1/monitoring-intro',
             position: "left",
             label: 'PostgreSQL 모니터링',
             className: 'hidden',
@@ -525,6 +528,12 @@ module.exports = Promise.resolve({
             docId: 'manage',
             position: 'left',
             label: '관리 기능',
+          },
+          {
+            type: 'doc',
+            docId: 'license/licenses',
+            position: 'left',
+            label: '라이선스',
           },
           {
             type: 'doc',

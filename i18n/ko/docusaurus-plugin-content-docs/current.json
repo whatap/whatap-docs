@@ -897,7 +897,7 @@
   },
   "sidebar.indexSidebar.link.PostgreSQL": {
     "message": "PostgreSQL",
-    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to postgresql/monitoring-intro"
+    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to postgresql-v1/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Oracle": {
     "message": "Oracle",
@@ -1422,5 +1422,77 @@
   "sidebar.nodejsSidebar.category.에이전트 설치": {
     "message": "에이전트 설치",
     "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
+  },
+  "sidebar.postgreSidebar.category.PostgreSQL 모니터링 V2": {
+    "message": "PostgreSQL 모니터링 V2",
+    "description": "The label for category PostgreSQL 모니터링 V2 in sidebar postgreSidebar"
+  },
+  "sidebar.postgreSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar postgreSidebar, linking to the doc log/learn-main-menu"
+  },
+  "sidebar.postgrev1Sidebar.category.PostgreSQL 모니터링": {
+    "message": "PostgreSQL 모니터링",
+    "description": "The label for category PostgreSQL 모니터링 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar postgrev1Sidebar"
+  },
+  "sidebar.postgrev1Sidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar postgrev1Sidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.postgrev1Sidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar postgrev1Sidebar, linking to the doc postgresql-v1/monitoring-support"
+  },
+  "sidebar.releaseSidebar.category.DBX": {
+    "message": "DBX",
+    "description": "The label for category DBX in sidebar releaseSidebar"
+  },
+  "sidebar.indexSidebar.link.라이선스": {
+    "message": "라이선스",
+    "description": "The label for link 라이선스 in sidebar indexSidebar, linking to license/licenses"
+  },
+  "sidebar.lsSidebar.category.라이선스": {
+    "message": "라이선스",
+    "description": "The label for category 라이선스 in sidebar lsSidebar"
+  },
+  "sidebar.awslogSidebar.doc.설정하기": {
+    "message": "설정하기",
+    "description": "The label for the doc item 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/aws-log-setting"
   }
 }

@@ -34,6 +34,8 @@ export default function CheckProduct() {
         product = '-server';
     } else if (cProdt === 'kubernetes') {
         product = '-k8s';
+    } else if (cProdt === 'postgresql-v1') {
+        product = '-postgresql-v1';
     } else if (cProdt === 'postgresql') {
         product = '-postgresql';
     } else if (cProdt === 'oracle-cloud') {

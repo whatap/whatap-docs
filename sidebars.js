@@ -1327,7 +1327,7 @@ const sidebars = {
   postgreSidebar: [
     {
       type: 'category',
-      label: 'PostgreSQL 모니터링',
+      label: 'PostgreSQL 모니터링 V2',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1461,6 +1461,160 @@ const sidebars = {
                 'postgresql/set-event-history',
                 'postgresql/set-event-format',
                 'postgresql/file-log-notice',
+              ],
+            },
+            {
+              type: 'doc',
+              label: 'Log 모니터링',
+              id: 'log/learn-main-menu'
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
+  postgrev1Sidebar: [
+    {
+      type: 'category',
+      label: 'PostgreSQL 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'postgresql-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'postgresql-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'postgresql-v1/install-agent',
+            'postgresql-v1/after-install-agent',
+            'postgresql-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql-v1/agent-settings'
+          },
+          items: [
+            'postgresql-v1/agent-dbx-settings',
+            'postgresql-v1/agent-xos-settings',
+          ],
+        },
+        'postgresql-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql-v1/dashboard-intro'
+              },
+              items: [
+                'postgresql-v1/instance-list',
+                'postgresql-v1/instance-monitoring',
+                'postgresql-v1/multi-instance-monitoring',
+                'postgresql-v1/slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql-v1/flex-board',
+              },
+              items: [
+                'postgresql-v1/flexboard-template',
+                'postgresql-v1/flexboard-create',
+                'postgresql-v1/flexboard-manage',
+                'postgresql-v1/flexboard-metric-widget',
+                'postgresql-v1/flexboard-widget-manage',
+                'postgresql-v1/flexboard-mode',
+                'postgresql-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'postgresql-v1/analysis-count-trend',
+                'postgresql-v1/analysis-lock-and-deadlock',
+                'postgresql-v1/analysis-databaseparameter',
+                'postgresql-v1/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql-v1/metrics-intro'
+              },
+              items: [
+                'postgresql-v1/metrics-data-list',
+                'postgresql-v1/metrics-chart',
+                'postgresql-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'postgresql-v1/stat',
+                'postgresql-v1/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql-v1/set-notice',
+              },
+              items: [
+                'postgresql-v1/warning-notice',
+                'postgresql-v1/metric-warning-notice',
+                'postgresql-v1/set-event-detect-anomal',
+                'postgresql-v1/set-receive-event',
+                'postgresql-v1/set-event-history',
+                'postgresql-v1/set-event-format',
+                'postgresql-v1/file-log-notice',
               ],
             },
             // {
@@ -2774,7 +2928,7 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1.103.x',
+          id: 'release-notes/preview/preview-1.103.x', 
           className: 'new',
         },
         'release-notes/preview/preview-1.101.x',
@@ -2839,11 +2993,18 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2.2.3',
+                id: 'release-notes/java/java-2.2.5',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/java/java-2.2.5',
+                  className: 'new',
+                },
+                'release-notes/java/java-2.2.4',
                 'release-notes/java/java-2.2.3',
                 'release-notes/java/java-2.2.2',
                 'release-notes/java/java-2.2.0',
@@ -2885,14 +3046,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1.3.4',
+                id: 'release-notes/python/python-1.3.6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1.3.4',
+                  id: 'release-notes/python/python-1.3.6',
                   // className: 'new',
                 },
+                'release-notes/python/python-1.3.4',
                 'release-notes/python/python-1.3.3',
                 'release-notes/python/python-1.3.2',
                 'release-notes/python/python-1.3.1',
@@ -2909,17 +3071,20 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2.0.6',
+                id: 'release-notes/dotnet/dotnet-2.0.9',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2.0.6',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2.0.9',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2.0.8',
+                'release-notes/dotnet/dotnet-2.0.7',
+                'release-notes/dotnet/dotnet-2.0.6',
                 'release-notes/dotnet/dotnet-2.0.5',
                 'release-notes/dotnet/dotnet-2.0.4',
                 'release-notes/dotnet/dotnet-2.0.3',
@@ -2960,17 +3125,19 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2.3.4',
+                id: 'release-notes/server/server-2.3.7',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2.3.4',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2.3.7',
+                  className: 'new',
                 },
+                'release-notes/server/server-2.3.6',
+                'release-notes/server/server-2.3.4',
                 'release-notes/server/server-2.3.3',
                 'release-notes/server/server-2.3.2',
                 'release-notes/server/server-2.3.1',
@@ -2978,9 +3145,6 @@ const sidebars = {
                 'release-notes/server/server-2.2.9',
                 'release-notes/server/server-2.2.8',
                 'release-notes/server/server-2.2.7',
-                'release-notes/server/server-2.2.6',
-                'release-notes/server/server-2.2.5',
-                'release-notes/server/server-2.2.4',
                 'release-notes/server/server-previous',
               ],
             },
@@ -2989,17 +3153,19 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1.2.7',
+                id: 'release-notes/k8s/k8s-1.2.9',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1.2.7',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1.2.9',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1.2.8',
+                'release-notes/k8s/k8s-1.2.7',
                 'release-notes/k8s/k8s-1.2.6',
                 'release-notes/k8s/k8s-1.2.5',
                 'release-notes/k8s/k8s-1.2.2',
@@ -3007,7 +3173,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1.2.0',
                 'release-notes/k8s/k8s-1.1.55',
                 'release-notes/k8s/k8s-1.1.54',
-                'release-notes/k8s/k8s-1.1.52',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3016,13 +3181,26 @@ const sidebars = {
               label: 'DB',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
               items: [
                 {
-                  type: 'doc',
+                  type: 'category',
                   label: 'DBX',
-                  id: 'release-notes/db/dbx-release-notes',
-                  // className: 'new',
+                  collapsible: true,
+                  collapsed: true,
+                  className: 'new',
+                  link: {
+                    type: 'doc',
+                    id: 'release-notes/db/dbx-1.6.7',
+                  },
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'release-notes/db/dbx-1.6.7',
+                      className: 'new',
+                    },
+                    'release-notes/db/dbx-1.6.6',
+                    'release-notes/db/dbx-1.6.5',
+                  ]
                 },
                 {
                   type: 'category',
@@ -3089,14 +3267,14 @@ const sidebars = {
         'account/account-manage',
         'account/mfa',
         'project/project-structure',
-        'project/project',
+        'project/project-manage',
         'project/group',   
         'project/organization',
         'project/integrated-manage',
         'report/integrated-report',
         'notification/rt-notification',
-        'billing/billing',
-        'maintenance/maintenance'
+        'management/billing',
+        'management/maintenance'
       ]
     }
   ],
@@ -3225,7 +3403,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'PostgreSQL',
-          href: 'postgresql/monitoring-intro',
+          href: 'postgresql-v1/monitoring-intro',
         },
         {
           type: 'link',
@@ -3362,6 +3540,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: '라이선스',
+          href: 'license/licenses' 
+        },
+        {
+          type: 'link',
           label: '참조 문서',
           href: 'reference' 
         },
@@ -3371,6 +3554,22 @@ const sidebars = {
           href: 'release-notes',
         },
       ],
+    }
+  ],
+  lsSidebar: [
+    {
+      type: 'category',
+      label: '라이선스',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'license/licenses'
+      },
+      items: [
+        'license/license-open-sources',
+        'license/license-open-sources-lib',
+      ]
     }
   ],
   cloudSidebar: [
@@ -3790,6 +3989,11 @@ const sidebars = {
       },
       items: [
         'aws-log/install-aws-log',
+        {
+          type: 'doc',
+          label: 'VPC 설정하기',
+          id: 'aws-log/install-aws-log-vpc',
+        },
         {
           type: 'doc',
           label: '자원 삭제하기',
