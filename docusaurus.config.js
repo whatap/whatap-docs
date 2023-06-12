@@ -129,12 +129,12 @@ module.exports = Promise.resolve({
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'typesense.whatap.io',
+              host: 't2dvabr5xq7wn91gp-1.a1.typesense.net',
               port: 443,
               protocol: 'https',
             },
           ],
-          apiKey: 'BP9kCFC5bN3GkU3IIQFRqNM7kbsSbWYaE74TyUP9jxuquARY',
+          apiKey: 'VXa4VAOWbU1Z911QbsNioXVGu1YXLuYW',
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
         typesenseSearchParameters: {
