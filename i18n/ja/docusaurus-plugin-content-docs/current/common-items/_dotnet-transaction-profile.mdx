@@ -8,43 +8,43 @@
 
     デフォルト値`false`
 
-    トレース履歴にHTTPパラメータ情報を記録するには、`true`として設定してください。パラメータは、別途のセキュリティ キーを入力してこそ照会できます。
+    トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
 
     :::note
 
-    セキュリティキーはWASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイルの中に6桁として設定します。 _paramkey.txt_ ファイルが存在しない場合、ランダム値で自動生成します。
+    セキュリティキーは、WASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイル内に6桁に設定します。 _paramkey.txt_ ファイルが存在しない場合、ランダムな値で自動的に生成されます。
 
     :::
 
 -   **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-    トレース履歴にHTTPパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+    トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
 
 -   **profile_http_host_enabled** <span class='type'>Boolean</span>
 
     デフォルト値`false`
 
-    トランザクションのホスト情報を出力します。値が`false`であればトランザクションのURLにURIのみを表記し、`true`の場合/xxx.aaa.com/URL形式で出力します。
+    トランザクションのホスト情報を出力します。値が`false`の場合、トランザクションのURLにURIのみが表示され、`true`の場合/xxx.aaa.com/URLの形式で出力します。
 
 -   **biz_exceptions** <span class='type'>String</span>
 
     デフォルト値`Empty`
 
-    特定のErrorrまたはExceptionをBusiness Exceptionとして設定します。 ヒートマップではエラーと表記されることなく、統計情報にのみ収集します。 収集するError Class名と同じように適用します。 コンマ（,）を区切り文字として利用して複数登録することができます。
+    特定のErrorrまたはExceptionをBusiness Exceptionに設定します。 ヒートマップでは、エラーと表示することなく、統計情報として収集します。 収集したError Class名と同じものを適用します。コンマ(,)を区切り文字として使用して、複数登録できます。
 
 -   **ignore_exceptions** <span class='type'>String</span>
 
     デフォルト値`NONE`
 
-    無視するExceptionを登録します。登録したExceptionのエラー自体を無視します。
+    無視するExceptionを登録します。登録されたExceptionエラー自体を無視します。
 
-    Exceptionの場合、Custom Exception Classを定義しないと、基本`Exception`として収集します。 特定のExceptionを区別するためには、Custom Exception Classを定義し、その名前を設定してください。
+    Exceptionの場合、Custom Exception Classを定義しない場合は、基本`Exception`として収集します。 特定のExceptionを区別するには、Custom Exception Classを定義し、その名前を設定することで、例外を除外します。
 
 -   **trace_normalize_enabled** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    トランザクションURLを構文解析して正規化する機能を活性化します。
+    トランザクションURLを解析および正規化する機能を有効にします。
 
     :::note
 
@@ -56,10 +56,10 @@
 
     デフォルト値`NONE`
 
-    正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを構文解析してパスパラメータを削除します。
+    正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析してpathパラメータを削除します。
 
     :::note
 
-    例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。複数登録するときは、コンマ（,）を区切り文字として使用します。置換パターンの整理後は、補完が必要です。
+    例）**/a/{v}/b**と宣言する場合は、**a/123/b** → **a/{v}/b**に置き換えます。複数登録するときは、コンマ(,)を区切り文字として使用します。置換パターンをクリンナップした後は、それを補足する必要があります。
 
     :::

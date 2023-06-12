@@ -25,9 +25,9 @@ MXQL文法を利用してメトリクスを選択するコマンドについて�
 
 ### オペランド
 
--   **文字列**：指定したカテゴリのデータを照会します。
+-   **文字列**：指定したカテゴリのデータを照会します。照会時間に関係なく、常に`app_counter`カテゴリのデータを読み込みます。
 
-    ```sql title='조회시간에 상관없이 항상 app_counter 카테고리의 데이터를 로드합니다.''
+    ```sql
     CATEGORY app_counter
     TAGLOAD
     ```
@@ -46,6 +46,7 @@ MXQL文法を利用してメトリクスを選択するコマンドについて�
 -   `CATEGORY`のオペランドとしてはで 1つの値だけを指定できます。複数の`CATEGORY`のデータを一度に確認したい場合は[JOIN](mxql-calculate#join)を使用する必要があります。
 -   読み込み方式([TAGLOAD](mxql-loading#tagload)または[FLEXLOAD](mxql-loading#flexload))によって設定可能なカテゴリが異なります。 
 -   `CATEGORY`の名前に`{m5}`または`{h1}`がついている場合、[MetricValue](mxql-guide#metric-value)を参考にしてください。
+
 :::
 
 ## OID, OKIND, ONODE{#oid}
@@ -56,19 +57,19 @@ MXQL文法を利用してメトリクスを選択するコマンドについて�
 
 文字列で1つの値を設定するか、文字列配列で複数の値を設定することができます。 
 
-```sql title='예시 1'
+```sql title='Example 1'
 CATEGORY app_counter
 OID 1388369480
 TAGLOAD
 ```
 
-```sql title='예시 2'
+```sql title='Example 2'
 CATEGORY app_counter
 OID [1388369480, 1388369481] 
 TAGLOAD
 ```
 
-```sql title='예시 3'
+```sql title='Example 3'
 CATEGORY app_active_stat
 ONODE 1693789385
 TAGLOAD
@@ -81,10 +82,13 @@ TAGLOAD
 -   `OID`、`OKIND`、`ONODE`を重複して使用する場合は、最後に入力したコマンドを適用します。
 -   `OIDSET`はdeprecatedされました。`OID`、`OKIND`、`ONODE`のいずれかのコマンドを使用することをお勧めします。
 -   データ読み込み段階から必要なデータを照会するという点で、データ加工段階の[FILTER](mxql-calculate#filter)を適用することと相違点があります。
+
 :::
 
 :::note
+
 `OKIND`、`ONODE`コマンドの場合は、`CATEGORY`コマンドで設定したカテゴリに`okind`、`onode`関連フィールド（`okind`、`onode`、`okindName`、`onodeName`）を含める場合に使用できます。**_サイトマップ_**　> **_分析_** > **_メトリクス照会_**メニューでどのカテゴリにどのフィールドが含まれているか確認できます。 
+
 :::
 
 ## HEADER{#header}
@@ -95,7 +99,7 @@ MXQLで照会したデータは、Flexボードのウィジェットで使用さ
 
 JSON文字列で設定できます。 
 
-```sql title='예시'
+```sql title='Example'
 HEADER { apdex_satisfied$:I, apdex_tolerated$:I, apdex_total$:I,  apdex$:F, category: app_counter}
 OID $oid
 CATEGORY app_counter
@@ -103,7 +107,9 @@ TAGLOAD
 ```
 
 :::caution
+
 Flexボードのウィジェットで使用する形式に合わせて渡す必要があります。
+
 :::
 
 ## TIME-RANGE{#time-range}

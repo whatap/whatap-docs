@@ -18,7 +18,7 @@ MySQL RDSは、DBのみ接続できる場合、個別のインストールプロ
 
 {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/log/db_guide_setting.mp4}
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -31,8 +31,6 @@ MySQL RDSは、DBのみ接続できる場合、個別のインストールプロ
 既に存在するアカウントを使用する場合は、[DB情報入力](#create-db-user)に進んでください。アクセス権限がない場合は、モニタリングを開始できません。
 
 :::
-
-<!-- MySQL -->
 
 ```bash showLineNumbers
 create user whatap identified by 'DB_PASSWORD'; ## passwordを入力してください。
@@ -56,9 +54,9 @@ grant super on *.* to whatap;
 
 ![DB情報入力](/img/mysql-rds-db-info.png)
 
-1.  モニタリング対象DBと接続するために必須な情報を入力します。<span class='vslow'>\*</span>は必須入力です。
+1.  モニタリング対象DBに接続するために必要な情報を入力します。<span class='vslow'>\*</span>は必須入力項目です。
 
-    -   **_インスタンス名_**：DBを識別するための名前を入力します。プロジェクト内で固有の名前である必要があり、英数の小文字、数字およびタグ（-）のみ入力できます。
+    -   **_インスタンス名_**：DBを識別する名前を入力します。プロジェクト内で固有の名前である必要があり、英数の小文字、数字およびタグ(-)のみを入力できます。
 
     -   **_DB IP_**：DBサーバーのIPアドレスを入力します。
 
@@ -70,11 +68,11 @@ grant super on *.* to whatap;
 
 2.  すべての項目に入力し、**_接続_**ボタンを選択します。
 
-3.  WhaTap収集サーバー(DBCTL)で接続を試みます。この過程では、内部でエージェントを作成した後、入力したアドレスとアカウント情報でアクセスを試みるため、時間がかかる場合があります。
+3.  WhaTap収集サーバー(DBCTL)で接続を試みます。このプロセスでは、内部でエージェントを作成した後、入力したアドレスとアカウント情報でアクセスを試みるため、時間がかかる場合があります。
 
 DB接続に成功すると、エージェントの作成が完了したというメッセージが表示されます。
 
--   プロジェクトにモニタリング対象のDBを追加するには、**_DB接続追加_**ボタンを選択しします。**3. DB情報入力**の追加手順で進みます。
+-   プロジェクトにモニタリング対象のDBを追加するには、**_DB接続追加_**ボタンを選択します。**3. DB情報入力**の追加手順で進みます。
 
     :::note
 

@@ -50,17 +50,21 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 -   ![詳細アイコン](/img/ic-zoom-in.svg)：**_詳細_**アイコンを選択すると、CPU使用率、メモリ使用率、ネットワーク、ディスクのI/Oなどの詳細チャートが表示されます。
 
-    -   CPU使用率<br/> 
-        **_CPU Usage_**、**_CPU Idle_**、**_CPU Nice_**、**_CPU I/O Wait_**、**_CPU Steal_**、**_CPU IRQ_**、**_CPU Soft IRQ_**、**_CPU Load_**
+    -   CPU使用率
 
-    -   メモリ使用率<br/> 
-        **_Memory Usage_**、**_Memory Available_**、**_Memory SReclaimable_**、**_Memory SUnreclaim_**、**_Memory Slab_**、**_Memory Swap Used_**、**_ Memory Page Faults_**
+        **_CPU Usage_**, **_CPU Idle_**, **_CPU Nice_**, **_CPU I/O Wait_**, **_CPU Steal_**, **_CPU IRQ_**, **_CPU Soft IRQ_**, **_CPU Load_**
 
-    -   ネットワーク<br/> 
-        **_Traffic In/Out_**、**_Packet In/Out_**、**_Error In/Out_**、**_Dropped In/Out_**
+    -   メモリ使用率
 
-    -   ディスクの入力・出力<br/> 
-        **_Disk I/O_**、**_IOPS Read/Write_**、**_Disk Bph Read/Write_**、**_Used Space_**、**_Queue Length_**、**_Inode Used_**、**_Free Space_**
+        **_Memory Usage_**, **_Memory Available_**, **_Memory SReclaimable_**, **_Memory SUnreclaim_**, **_Memory Slab_**, **_Memory Swap Used_**,**_ Memory Page Faults_**
+
+    -   ネットワーク
+
+        **_Traffic In/Out_**. **_Packet In/Out_**, **_Error In/Out_**, **_Dropped In/Out_**
+
+    -   ディスクI/O
+
+        **_Disk I/O_**, **_IOPS Read/Write_**, **_Disk Bph Read/Write_**, **_Used Space_**, **_Queue Length_**, **_Inode Used_**, **_Free Space_**
 
 ### プロセス一覧
 
@@ -78,11 +82,13 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 **_サーバー情報_**パネルで確認できる内容は次のとおりです。**_ディスプレイ名_**と**_メモ_**の場合**_サーバー情報_**パネルのみ編集が可能です。
 
--   ![通知アイコン](/img/ic-alert.svg)**_サーバー通知一覧_** <br/>
-    **_サーバー情報パネル_**上部の![通知アイコン](/img/ic-alert.svg)**_サーバー通知一覧_**ボタンを選択すると、現在、サーバーに割り当てられた通知を確認することができます。
+-   ![通知アイコン](/img/ic-alert.svg) **_サーバーアラートリスト_**
 
--   **_Display Name_**/**_ID_** <br/>
-    選択したサーバーの**_ディスプレイ名_**(ONAME別名)と**_サーバーID_**(OID)を確認できます。![編集アイコン](/img/ic-edit.svg)**_修正_**アイコンを選択すると**_ディスプレイ名_**を確認することができます。 
+    **_サーバー情報パネル_**上部の![通知アイコン](/img/ic-alert.svg)**_サーバー通知一覧_**ボタンを選択すると、現在のサーバーに割り当てられた通知を確認することができます。
+
+-   **_Display Name_**/**_ID_**
+
+    選択したサーバーの**_表示名_**(ONAME別名)と**_サーバーID_**(OID)を確認できます。![編集アイコン](/img/ic-edit.svg)**_修正_**アイコンを選択すると**_表示名_**を変更することができます。 
 
     :::note
 
@@ -90,27 +96,18 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
     :::
 
--   **_OS_**<br/>
+-   **_OS_**
+
     選択したサーバーの**_OS情報_**を確認することができます。
 
--   **_IP Address_**<br/>
+-   **_IP Address_**
+
     選択したサーバーの**_IPアドレス_**を確認することができます。
 
--   **_Agent_**<br/>
+-   **_Agent_**
+
     選択したサーバーの**_エージェントのバージョン_**を確認することができます。
 
--   **_Memo_**<br/>
-    作成した**_メモ_**を確認する![修正アイコン](/img/ic-edit.svg)**_編集_**アイコンを選択してメモを編集または追加できます。
+-   **_Memo_**
 
-<!-- 
-
-서버 정보 요약
-
-IP 주소, 운영체제, CPU 코어 개수, 메모리, OS 등을 확인할 수 있습니다.
-
-
-프로세스 목록
-
-프로세스 상세 정보를 확인할 수 있습니다.
-
--->
+    作成した**_メモ_**を確認する![修正アイコン](/img/ic-edit.svg)**_編集_**アイコンを選択してメモを編集および追加します。

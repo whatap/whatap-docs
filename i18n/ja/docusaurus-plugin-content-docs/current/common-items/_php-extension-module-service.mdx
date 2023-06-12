@@ -8,7 +8,7 @@ PHP拡張モジュールとwhatap-phpサービスのインストールおよび�
 $ cp /usr/whatap/php/template.ini /usr/whatap/php/whatap.ini
 $ vi /usr/whatap/php/whatap.ini
 
-# 上段に内容を追加
+# 上部に内容を追加
 ; Enable whatap extension module
 extension=whatap.so
 whatap.license=            # 発行されたアクセスキー
@@ -84,7 +84,8 @@ PHP APIバージョン、PHP ZTSのサポートを確認して、環境に適し
 
 -   PHP ZTSにサポートされている場合 - _whatap_zts\_[PHP APIバージョン].so_
 -   PHP ZTSにサポートされていない場合 - _whatap\_[PHP APIバージョン].so_
-    ```bash title='PHP ZTS 지원하지 않을 경우 예시'
+    ```bash
+    # PHP ZTSをサポートしていない場合の例
     $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
     ```
 

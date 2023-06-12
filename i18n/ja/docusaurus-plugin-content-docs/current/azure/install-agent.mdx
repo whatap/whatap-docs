@@ -13,13 +13,9 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Azure MonitorはAPI連動を通じてメトリックを周期的に収集します。収集を希望するサービスに該当するAzure Monitorネームスペースを5分周期で希望するスタットを炊事選択して収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリンを開始できます。WhaTapは安全で便利な使用のためにAzure Registard Appをサポートします。
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+{@include: ../getting-started/_create-project-cloud.mdx}  
 
 ## モニタリング手順
-
-<!-- 
-1. 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Azure Monitor 사용 상태로 생성하세요. 
--->
 
 1.  Azure Registered Appを追加してください。
 2.  Azure認証情報を入力してください。
@@ -27,17 +23,12 @@ WhaTap Azure MonitorはAPI連動を通じてメトリックを周期的に収集
 4.  リソース グループ、メトリックス、スタットなどを選択してください。
 
 :::note
+
 インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://azure.microsoft.com/ko-kr/pricing/details/monitor/)で確認してください。
+
 :::
 
 ### Azure Registered Appの追加
-
-<!--  
-와탭 모니터링용 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)을 추가할 수 있습니다. Secret을 생성하고 Application ID, Tenant Id 와 Secret을 와탭에 입력하세요.
- 
-Monitoring Reader 역할(Role)을 지정하고 설치하기 버튼을 선택해 다음 세 가지 접속 정보를 입력하세요. 
-
--->
 
 WhaTapモニタリング用 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)を追加してください。 Secretを作成し、アプリケーションID(ApplicationId), テナントID(TenantId)とシークレット(Secret)をWhaTapに入力してください。 
 
@@ -55,9 +46,9 @@ Azureの認証情報である**_アプリケーションID_**(ApplicationID), **
 
 {@include: ../common-items/_namespace-collect.mdx}  
 
-#### WhaTap収集サイクル
+#### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx} 
+{@include: ../common-items/_collecting-period.mdx}
 
 #### ネームスペース
 

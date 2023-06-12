@@ -11,6 +11,7 @@ tags:
 import InDoc from '@site/src/components/InDoc.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 import CurProd from '@site/src/components/GetProductName.js';
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 
 DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成します。設定できるオプションについては、次を参考にしてください。
 
@@ -56,7 +57,9 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成�
 
 ## AWS RDS CloudWatch適用{#using-aws-rds}
 
-{@include: ../common-items/_db-agent-aws.mdx}
+<AWSRDSdesc name='db_cubrid_counter' />
+
+{@include: ../common-items/_db-agent-aws.mdx} 
 
 <!-- AES 256 암호화 적용 -->
 

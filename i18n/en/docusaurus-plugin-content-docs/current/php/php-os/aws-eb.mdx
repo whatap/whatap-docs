@@ -17,40 +17,40 @@ Under the _.ebextensions_ directory, add the following _config_ file and then re
 
 3.  Configure the **PHP extension module** through the `install.sh` **configuration script**.
 
-    ```java title=SH
-    $ vi 01-WhaTap_install_repository_php.config
+```java title=SH
+$ vi 01-WhaTap_install_repository_php.config
 
-    commands:
-      01_Install_whatap_repository:
-        command: sudo rpm --import http://repo.whatap.io/centos/release.gpg
-        ignoreErrors: true
-      02_Install_whatap_repository:
-        command: echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-        ignoreErrors: true
-      03_Install_whatap_repository:
-        command: echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-        ignoreErrors: true
-      04_Install_whatap_repository:
-        command: echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-        ignoreErrors: true
-      05_Install_whatap_repository:
-        command: echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-        ignoreErrors: true
-      06_Install_whatap_repository:
-        command: echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-        ignoreErrors: true
-      07_Install_whatap_php:
-        command: sudo yum install -y whatap-php
-        ignoreErrors: true
-      08_Install_whatap_php_install.sh:
-        command: (echo "[Enter the access key]"; echo "[Enter the server IP (a.a.a.a/b.b.b.b)")| sudo /usr/whatap/php/install.sh
-        ignoreErrors: true
-    ```
+commands:
+  01_Install_whatap_repository:
+    command: sudo rpm --import http://repo.whatap.io/centos/release.gpg
+    ignoreErrors: true
+  02_Install_whatap_repository:
+    command: echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+    ignoreErrors: true
+  03_Install_whatap_repository:
+    command: echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ignoreErrors: true
+  04_Install_whatap_repository:
+    command: echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ignoreErrors: true
+  05_Install_whatap_repository:
+    command: echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ignoreErrors: true
+  06_Install_whatap_repository:
+    command: echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+    ignoreErrors: true
+  07_Install_whatap_php:
+    command: sudo yum install -y whatap-php
+    ignoreErrors: true
+  08_Install_whatap_php_install.sh:
+    command: (echo "[Enter the access key]"; echo "[Enter the server IP (a.a.a.a/b.b.b.b)")| sudo /usr/whatap/php/install.sh
+    ignoreErrors: true
+```
 
-    :::note
+  :::note
 
-    The **access key** and **server IP** can be issued and verified on the **_Project Management_** > **_Agent Installation_** page.
+  The **access key** and **server IP** can be issued and verified on the **_Project Management_** > **_Agent Installation_** page.
 
-    :::
+  :::
 
 1.  Deploy the new version in Beanstalk. The PHP monitoring agent is installed.

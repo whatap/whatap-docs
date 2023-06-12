@@ -1,12 +1,12 @@
 ---
 id: openapi-call-project-stat
-title: プロジェクト統計の表示
+title: プロジェクト統計照会
 description: プロジェクト統計照会のためのOpenAPIに関する説明を提供します。
 tags:
   - Open API
   - API
   - 統計
-  - プロジェクト統計の表示
+  - プロジェクト統計照会
 ---
 
 ## プロジェクト内のTPS
@@ -33,7 +33,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 1640
 ```
 
-## プロジェクト内の平均CPU使用率
+## プロジェクトの平均CPU使用率
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/raw/tag/app_host_resource/cpu?<code>stitme</code>=[stime]&<code>etime</code>=[etime]&<code>timeMerge</code>=[timeMerge]
 

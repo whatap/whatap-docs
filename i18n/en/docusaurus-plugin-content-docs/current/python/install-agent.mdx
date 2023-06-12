@@ -13,9 +13,9 @@ import TR from '@site/src/components/TR';
 
 {@youtube: MWDFeegF6mQ}
 
-{@include: ../getting-started/_create-project-v2.mdx}  
+{@include: ../getting-started/_create-project-v2.mdx}   
 
-{@include: ../getting-started/_accesskey-v2.mdx}
+{@include: ../getting-started/_accesskey-v2.mdx} 
 
 ## Enabling the virtual environment
 
@@ -79,7 +79,7 @@ The Python agent file consists of a tracer that extracts the data needed to moni
 
     This basic file is required to set an agent. The agent-related options can be set in _whatap.conf_.
 
--   _paramkey.txt_  
+-   _paramkey.txt_
 
     It is used to check the parameters of HTTP and SQL data collected as the trace information of the traced transactions. 
 
@@ -119,8 +119,9 @@ The Python agent file consists of a tracer that extracts the data needed to moni
     --app_process_name [Process name. e.g. uwsgi, gunicorn]
     ```
 
-3.  **Check configuration**
-    Check whether the configuration file has been created as follows.
+3.  **설정 확인**
+
+    다음과 같이 설정 파일이 잘 생성되었는지 확인하세요.
 
     ```bash
     $ cat $WHATAP_HOME/whatap.conf

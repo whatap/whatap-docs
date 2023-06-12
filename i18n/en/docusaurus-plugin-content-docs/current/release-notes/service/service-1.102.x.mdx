@@ -1,0 +1,226 @@
+---
+id: service-1.102.x
+title: Service 1.102.X
+toc_max_heading_level: 3
+---
+
+## Service 1.102.09
+
+2023년 6월 8일
+
+<div class='indentTab'>
+
+<p><Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 알림 설정에 대해 읽기 권한만을 가진 사용자가 <UI>메트릭스</UI>, <UI>복합 메트릭스</UI> 리스트 아이템의 내용을 확인할 수 있도록 툴팁 추가</p>
+
+</div>
+
+## Service 1.102.08
+
+2023년 6월 8일
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Change</Status> 파서 시뮬레이션 실패 시 노출되는 메시지 변경</p>
+
+</div>
+
+## Service 1.102.06
+
+2023년 5월 31일
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>로그</UI> > <UI>실시간 로그 이벤트</UI>/<UI>복합 로그 이벤트</UI> 추가 또는 수정 시 유효성 검증 로직의 오동작 수정</p>
+
+</div>
+
+## Service 1.102.05
+
+2023년 5월 30일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 라이센스 발급 후 다른 탭 메뉴로 전환할 경우 라이센스 발급 버튼이 다시 활성화되는 버그 수정</p>
+
+</div>
+
+## Service 1.102.04
+
+2023년 5월 26일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 애플리케이션 에이전트가 없는 컨테이너 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 오표기 현상 수정</p>
+
+</div>
+
+## Service 1.102.03
+
+May 25, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 추가</p>
+
+</div>
+
+## Service 1.102.02
+
+May 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 신규 프로젝트 생성 시 <UI>권한</UI> 목록에 FLEX_UPDATE 텍스트 노출 현상 수정</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 <UI>로그 파서</UI>, <UI>빠른 인덱스</UI>, <UI>장기 보관 통계</UI> 추가 또는 수정 시 직접 입력 항목에 공백을 허용하지 않도록 수정</p>
+
+</div>
+
+## Service 1.102.01
+
+May 25, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 사용자 계정이 보유한 프로젝트 제품군 대시보드 템플릿만 보이도록 로직 수정</p>
+
+</div>
+
+## Service 1.102.00
+
+May 24, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Among sidebar menus, modified to add <code>Browser</code> types in <img src='/img/ico-filter.svg' alt='필터 아이콘'/> project type filters and display the text according to the selected language.
+
+-   <Status>Change</Status> <UI>사이트맵</UI> > <UI>사용자 행위</UI> 메뉴에서 멤버 관리 권한을 가진 계정은 모든 계정의 사용자 행위를 조회할 수 있도록 변경
+
+-   <Status>Change</Status> 서비스 전체에 삭제 아이콘(<img src='/img/ico-trash-new.svg' alt='icon'/>) 변경, 채널 문의 아이콘(<img src='/img/ic-message-filled.svg' alt='icon'/>) 변경
+
+#### Flex Board
+
+-   <Status>Change</Status> Modified the widget's interaction button state not to be changed regardless of the side menu On/Off under Dashboard.
+
+-   <Status>Fixed</Status> In case of the rich text widgets, fixed the bug where the saved content are not applied after modification.
+
+-   <Status>Fixed</Status> 브라우저 창 크기가 특정 크기일 때, <UI>Flex 보드</UI> 메뉴의 <UI>관리자</UI> 모드에서 위젯의 JSON 편집 창을 불러오면 텍스트 상자에 스크롤이 반복해서 나타났다가 사라지는 현상 수정
+
+-   <Status>Change</Status> Modified to display the specific reason when there is no data response in the following widgets.
+
+    -   Log 4XX, 5XX Count
+    -   Request Success Rate
+    -   Response Time by Log
+
+-   <Status>Change</Status> Updated the MXQL path versions of the widgets used in the <b>Integrated Service Dashboard</b> template.
+
+-   <Status>Fixed</Status> Fixed the widget MXQL in the <b>Server Resource Plus</b> dashboard.
+
+-   <Status>Change</Status> Added and reorganized the <UI>Log RPS Trend</UI> widget metric for the <b>Log RPS Board</b> dashboard template.
+
+#### Management
+
+<p><Status>Fixed</Status> <UI>프로젝트 멤버</UI> 메뉴에서 <b>로그 편집</b> 권한이 있음에도 <b>권한</b> 컬럼에 표시되지 않는 현상 수정</p>
+
+#### My Usage
+
+-   <Status>Fixed</Status> <UI>청구서 미리보기</UI> 메뉴에서 클라우드 상품의 할인 금액이 <UI>할인 금액</UI> 컬럼에 표시되는 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>청구서 미리보기</UI> 메뉴에서 고정가, 할인 금액이 <UI>할인 정보</UI>에 표시되어 있을 경우 청구 통화 안내 메시지 추가
+
+-   <Status>Change</Status> In <UI>Usage</UI>, applied UI improvements for better user experiences.
+
+-   <Status>Feature</Status> In <UI>Usage</UI>, added the function to search the project name.
+
+-   <Status>Change</Status> <UI>사용량</UI> 메뉴에서 이용 시간에 따른 평균 사용량 정보를 제공하도록 수정
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> <b>로그 편집</b> 권한 추가 및 관련 기능 <UI>로그 설정</UI> 메뉴에 적용
+
+-   <Status>Change</Status> <UI>로그 설정</UI> 메뉴에서 사용자 경험 향상을 위해 UI/UX 개선
+
+-   <Status>Change</Status> <UI>로그 설정</UI> 메뉴에서 혼용된 용어 통일
+
+-   <Status>Change</Status> <UI>로그 검색</UI> 메뉴에서 필터에 키만 입력하고 값을 입력하지 않은 상태에서 카테고리 추가 시 키 값으로 none 값을 입력하도록 수정
+
+-   <Status>Change</Status> <UI>라이브 테일</UI> 메뉴의 content 필터 툴팁 용어 중 '띄워쓰기'를 '띄어쓰기'로 수정
+
+-   <Status>Change</Status> In <UI>Log Search</UI>, modified not to automatically attach the prefix, `+` when `-` has been entered as the search value's prefix upon entry of a filter.
+
+* * *
+
+### `Database`
+
+#### Dashboard
+
+-   <Status>Change</Status> <UI>멀티 인스턴스 모니터링</UI> 메뉴 화면 위에 <b>데이터베이스</b> 선택 옵션 이름을 <UI>인스턴스</UI>로 변경
+
+-   <Status>Fixed</Status> <UI>인스턴스 목록</UI> 메뉴에서 <UI>상태</UI> 컬럼의 <b>위험</b> 또는 <b>경고</b> 아이콘을 선택하면 나타나는 <UI>이벤트</UI> 창에서 텍스트가 잘리는 문제를 보완하기 위해 테이블 정렬 및 컬럼 너비 조절 기능 추가
+
+#### STAT/REPORT
+
+-   <Status>Change</Status> <UI>테이블 사이즈 증감</UI> 메뉴에서 <UI>CSV 다운로드</UI> 버튼을 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼으로 변경
+
+-   <Status>Fixed</Status> In the follow menu path, fixed the problem where the download feature does not work depending on the region clicked on the drop-down menu item when the <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> button is selected.
+
+    -   <UI>STAT/REPORT</UI> > <UI>Table Size Increase</UI>
+    -   <UI>STAT/REPORT</UI> > <UI>SQL Statistics</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI> tab
+
+* * *
+
+### `Container`
+
+#### Container Map
+
+-   <Status>Feature</Status> 컨테이너 요소에 마우스 오버 시 나타나는 차트 툴팁 내용 중 단위가 퍼센트인 지표는 막대 그래프 차트 표시
+
+-   <Status>Change</Status> <img src='/img/ico-setting.svg' alt='설정 아이콘'/> > <UI>라벨</UI> 옵션에 <UI>선택된 지표</UI> 항목 추가
+
+-   <Status>Fixed</Status> 요약 보기 패널에서 <UI>로그 검색</UI> 탭과 <UI>이벤트</UI> 탭의 옵션 일부가 가려지는 현상 수정
+
+-   <Status>Change</Status> 요약 보기 패널에서 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 App 관련 카테고리인 경우 <code>microOid</code> 기준으로 로그를 검색하도록 변경
+
+-   <Status>Fixed</Status> 그룹 선택 후 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 App 관련 카테고리 로그가 조회되지 않는 버그 수정
+
+* * *
+
+### `Browser`
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>브라우저 에러</UI> 메뉴에서 <UI>에러 메시지 테이블</UI>의 차트를 로딩하는 중 발생하는 깜빡임 현상 수정
+
+-   <Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 메트릭스, 복합 메트릭스 알림 템플릿 추가
+
+* * *
+
+### `CloudWatch`, `AZURE`, `OCI`, `NCP`
+
+#### Common
+
+<p><Status>Feature</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴에서 와탭 서비스 수집 주기 선택 옵션으로 <b>1분</b> 추가</p>
+
+#### CloudWatch
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴에서 인증 유효 기간의 기본값을 <b>1시간</b>으로 수정</p>
+
+</div>

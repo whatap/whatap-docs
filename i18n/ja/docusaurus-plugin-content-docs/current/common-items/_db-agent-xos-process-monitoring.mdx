@@ -4,32 +4,35 @@
 
 1.  エージェントサーバーにある_whatap.conf_ファイルに次のオプションを設定してください。
 
-```ini title='whatap.conf'
-xos=[DBX_DB_SERVER_IP]
-xos_port=[DBX_PORT] (default: 3002)
-```
+    ```ini title='whatap.conf'
+    xos=[DBX_DB_SERVER_IP]
+    xos_port=[DBX_PORT] (default: 3002)
+    ```
 
-  :::note
-DBサーバーのIPアドレスを特定できない場合は、`xos=1`に設定します。
-:::
+    :::note
 
-1.  xosパスをデータベースサーバーに移動してください。_圧縮を解除したフォルダ/whatap/xos/_
+    DBサーバーのIPアドレスを特定できない場合は、`xos=1`として設定します。 
 
-2.  データベースサーバー上の_xos.conf_ファイルにエージェントサーバー情報を入力してください。
+    :::
 
-```ini title='xos.conf'
-dbx_ip=[DBX_AGENT_SERVER_IP]
-dbx_port=[DBX_PORT] (default: 3002)
-cpu_limit=0
-mem_limit=10240
-```
+2.  xosパスをデータベースサーバーに移動してください。_圧縮を解除したフォルダ/whatap/xos/_
 
-1.  データベースサーバーで次のプロセスを実行してください。
+3.  データベースサーバー上の_xos.conf_ファイルにエージェントサーバー情報を入力してください。
 
-```bash title='start.sh'
-$ ./start.sh
-```
+    ```ini title='xos.conf'
+    dbx_ip=[DBX_AGENT_SERVER_IP]
+    dbx_port=[DBX_PORT] (default: 3002)
+    cpu_limit=0
+    mem_limit=10240
+    ```
 
-```bash title='백그라운드로 실행할 경우'
-$ ./startd.sh
-```
+4.  データベースサーバーで次のプロセスを実行してください。
+
+    ```bash title='start.sh'
+    $ ./start.sh
+    ```
+
+    ```bash
+    #バックグラウンドで実行する場合
+    $ ./startd.sh
+    ```

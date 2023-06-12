@@ -13,22 +13,22 @@ import UI from '@site/src/components/UItext';
 
 ### ログモニタリングの圧縮転送をデフォルト設定に変更
 
-「whatap.logsink_zip_enabled」のデフォルト値を「true」に設定します。 圧縮転送をデフォルトとします。 
+`whatap.logsink_zip_enabled`のデフォルト値を`true`に設定します。 圧縮転送をデフォルトとします。 
 
 ### プロジェクトライセンスキーの名前をアクセスキーに変更
 
-エージェントオプションのうち、「whatap.license」を「whatap.accesskey」に変更します。 既存の「license」も使用可能です。
+エージェントオプションで、`whatap.license`を`whatap.accesskey`に変更します。 既存の`license`も使用できます。
 
 ### TCP queueのサイズ変更
 
 256、512 から 512、1024に拡張します。 ログモニタリングファイルを多く設定されている場合は、tcpパケットの増加に対応するように拡張します。 
 
-## Fixed（バグ修正）
+## Fixed(バグ修正)
 
 ### segmentation faultの修正
 
-マルチトランザクション追跡オプション(「whatap.mtrace_enabled」)が設定された状態で 「curl_setopt_array」関数の使用中にsegmentation faultが発生するエラーを修正しました。 
+マルチトランザクション追跡オプション(`whatap.mtrace_enabled`)が設定された状態で `curl_setopt_array`関数の使用中にsegmentation faultが発生するエラーを修正しました。 
 
 ### biz_exceptionsオプション
 
-「biz_exceptions」オプションで除外されたエラーは、ヒートマップにはエラーとして表示されず、トランザクションプロファイルと統計情報にのみ適用されます。 統計情報に適用されないエラーを修正しました。 
+`biz_exceptions`オプションで除外されたエラーは、ヒートマップではエラーとして表示されず、トランザクションプロファイルと統計情報にのみ適用されます。 統計情報に適用されないエラーを修正しました。 

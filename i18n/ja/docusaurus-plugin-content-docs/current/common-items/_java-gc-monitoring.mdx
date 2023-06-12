@@ -1,14 +1,21 @@
--   **gclog_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      GCログのモニタリングをアクティブにします。
+-   **gclog_enabled** <span class='type'>Boolean</span>
 
--   **gclog_file** <span class='type'>String</span><br/>
-      GCログファイルのパスを設定します。
+    デフォルト値`false`
 
--   **gclog_check_interval** <span class='type'>Int</span><br/>
-      デフォルト値`2000`<br/>
-      GCログをモニタリングする間隔です。 毎間隔でログファイルに記録が追加されたことを確認します。
+    GCログモニタリングを有効にします。
 
--   **gclog_word** <span class='type'>String</span><br/>
-      デフォルト値`Full GC`<br/>
-      モニタリンするキーワードを登録します。`Full GC`が発生すると、情報をサーバーに転送して保存します。
+-   **gclog_file** <span class='type'>String</span>
+
+    GCログファイルのパスを設定します。
+
+-   **gclog_check_interval** <span class='type'>Int</span>
+
+    デフォルト値`2000`
+
+    GCログをモニタリングする間隔です。毎間隔でログファイルに記録が追加されたことを確認します。
+
+-   **gclog_word** <span class='type'>String</span>
+
+    デフォルト値`Full GC`
+
+    モニタリングするキーワードを登録します。「Full GC」が発生すると、情報をサーバーに転送して保存します。

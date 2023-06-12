@@ -1,107 +1,165 @@
--   **recursive_event_interval** <span class='type'>MiliSeconds</span><br/>
-    デフォルト値`300000`<br/>
-    トランザクションの再帰呼び出しに対し、イベント通知の発行間隔を設定します。
+-   **recursive_event_interval** <span class='type'>MiliSeconds</span>
 
--   **reject_event_enabled**<span class='type'>Boolean</span><br/>
-    デフォルト値 `false`<br/>
-    サービス拒否（呼び出し負荷制限／拒否）の時、イベント通知を発行する設定をします。
+    デフォルト値`300000`
 
--   **reject_event_interval**<span class='type'>MiliSeconds</span><br/>
-    デフォルト値`300000`<br/>
-    サービス拒否（呼び出し負荷制限／拒否）の時、イベント通知を発行する間隔を設定します。
+    トランザクションの再帰呼び出しのイベント通知発行間隔を設定します。
 
--   **httpc_event_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    HTTPCの接続エラーが発生した場合、イベント通知を発行するかどうかを設定します。
+-   **reject_event_enabled** <span class='type'>Boolean</span>
 
--   **httpc_event_interval** <span class='type'>MiliSeconds</span><br/>
-    デフォルト値`300000`<br/>
-    HTTPCの接続エラーが発生した場合、イベント通知を発行する間隔を設定します。
+    デフォルト値`false`
 
--   **heap_event_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    ヒープ使用量がしきい値に達したとき、イベント通知を発行するかどうかを設定します。
+    サービス拒否(呼び出し負荷制限/拒絶) 時、イベント通知発行可否を設定します。
 
--   **heap_event_percent**<span class='type'>Percentage</span><br/>
-    デフォルト値`90`<br/>
-    ヒープ使用量イベント通知のしきい値を設定します。
+-   **reject_event_interval** <span class='type'>MiliSeconds</span>
 
--   **heap_event_duration** <span class='type'>MiliSeconds</span><br/>
-    デフォルト値`30000`<br/>
-    ヒープ使用量イベント通知の発行持続時間を設定します。
+    デフォルト値`300000`
 
--   **heap_event_interval** <span class='type'>MiliSeconds</span><br/>
-    デフォルト値`300000`<br/>
+    サービス拒否(呼び出し負荷制限/拒絶) 時、イベント通知発行間隔を設定します。
+
+-   **httpc_event_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    HTTPC接続エラーが発生した場合、イベント通知を発行するかどうかを設定します。
+
+-   **httpc_event_interval** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`300000`
+
+    HTTPC接続エラーが発生した場合、イベント通知発行の間隔を設定します。
+
+-   **heap_event_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    ヒープ使用量のしきい値に達したとき、イベント通知を発行するかどうかを設定します。
+
+-   **heap_event_percent** <span class='type'>Percentage</span>
+
+    デフォルト値`90`
+
+    ヒープ使用量イベント通知の発行基準のしきい値を設定します。
+
+-   **heap_event_duration** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`30000`
+
+    ヒープ使用量イベント通知の発行基準の持続時間を設定します。
+
+-   **heap_event_interval** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`300000`
+
     ヒープ使用量イベント通知の発行間隔を設定します。
 
--   **heap_event_action** <span class='type'>String</span><br/>
-        デフォルト値`NONE`<br/>
-        ヒープ使用量イベント発生したとき、実行する動的ローディングコードを設定します。
+-   **heap_event_action** <span class='type'>String</span>
+
+    デフォルト値`NONE`
+
+    ヒープ使用量イベントが発生した場合、実行する動的ローディングコードを設定します。
+
     :::note
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ ファイルに作成したJavaコードに伝えるID (`$id`で伝送)
+
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+
     :::
 
--   **disk_event_enabled**<span class='type'>Boolean</span><br/>
-    デフォルト`false`<br/>
-    ディスク使用量がしきい値に達したとき、イベント通知を発行するかどうかを設定します。
+-   **disk_event_enabled** <span class='type'>Boolean</span>
 
--   **disk_event_percent**<span class='type'>Percentage</span><br/>
-    デフォルト値`90`<br/>
-    ディスク使用量イベント通知の基準しきい値を設定します。
+    デフォルト値`false`
 
--   **disk_event_interval** <span class='type'>MiliSeconds</span><br/>
-    デフォルト値`300000`<br/>
+    ディスク使用量がしきい値に達した場合、イベント通知を発行するかどうかを設定します。
+
+-   **disk_event_percent** <span class='type'>Percentage</span>
+
+    デフォルト値`90`
+
+    ディスク使用量イベント通知発行基準しきい値を設定します。
+
+-   **disk_event_interval** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`300000`
+
     ディスク使用量イベント通知の発行間隔を設定します。
 
--   **disk_event_action** <span class='type'>String</span><br/>
-        ディスク使用量イベントが発生したとき、実行する動的ローディングコードを設定します。
+-   **disk_event_action** <span class='type'>String</span>
+
+    ディスク使用量イベントが発生した場合、実行する動的ローディングコードを設定します。
+
     :::note
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ ファイルに作成したJavaコードに伝えるID (`$id`で伝送)
+
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+
     :::
 
--   **cpu_event_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
+-   **cpu_event_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
     CPU使用量がしきい値に達したとき、イベント通知を発行するかどうかを設定します。
 
--   **cpu_event_percent**<span class='type'>Percentage</span><br/>
-    デフォルト値`90`<br/>
-    CPU使用量イベント通知の基準しきい値を設定します。
+-   **cpu_event_percent** <span class='type'>Percentage</span>
 
--   **cpu_event_duration**<span class='type'>MiliSeconds</span><br/>
-    既定値`30000`<br/>
+    デフォルト値`90`
+
+    CPU使用量イベント通知発行基準しきい値を設定します。
+
+-   **cpu_event_duration** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`30000`
+
     CPU使用量イベント通知の発行基準の持続時間を設定します。
 
--   **cpu_event_interval**<span class='type'>MiliSeconds</span><br/>
-    デフォルト値`300000`<br/>
+-   **cpu_event_interval** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`300000`
+
     CPU使用量イベント通知の発行間隔を設定します。
 
--   **cpu_event_action**<span class='type'>String</span><br/>
-    CPU使用量イベント発生した時、実行する動的ローディングコードに転送するIDを設定します。
+-   **cpu_event_action** <span class='type'>String</span>
+
+    CPU使用量イベントが発生した場合、実行する動的ローディングコードを設定します。
+
     :::note
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに転送するID(\`$id'で転送)
+
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+
     :::
 
--   **dbc_dup_event_enabled**<span class='type'>Boolean</span><br/>
-    デフォルト`false`<br/>
-    DB Connectionが重複割り当てられる場合、イベント通知を発行するかどうかを設定します。
+-   **dbc_dup_event_enabled** <span class='type'>Boolean</span>
 
--   **dbc_dup_event_fullstack_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    DB Connectionが重複割り当てられるときに、Stackを確保するかどうかを設定します。
+    デフォルト値`false`
 
--   **exception_event_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    Exceptionが発生した場合、イベント通知を発行するかどうかを設定します。
+    DB Connectionが重複割り当てられる場合、イベント通知の発行可否を設定します。
 
--   **exception_event_interval** <span class='type'>MiliSeconds</span><br/>
-    デフォルト値`60000`<br/>
+-   **dbc_dup_event_fullstack_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    DB Connectionが重複割り当てられる場合、Stackを確保するかどうかを設定します。
+
+-   **exception_event_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Exceptionが発生した場合、イベント通知の発行可否を設定します。
+
+-   **exception_event_interval** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`60000`
+
     Exceptionが発生した場合、イベント通知の発行間隔を設定します。
 
--   **exception_event_set** <span class='type'>String</span><br/>
-    対象Exceptionを設定します。 複数の場合は、コンマ（,）を区切り文字として使用してください。
+-   **exception_event_set** <span class='type'>String</span>
 
--   **exception_event_action**<span class='type'>String</span><br/>
-        イベント発生時に実行する動的ローディングコードを設定します。
+    対象Exceptionを設定します。複数の場合は、コンマ(,)を区切り文字として使用してください。
+
+-   **exception_event_action** <span class='type'>String</span>
+
+    イベントが発生した場合、実行する動的ローディングコードを設定します。
+
     :::note
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに送信するID（`$id`で送信）
+
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+
     :::

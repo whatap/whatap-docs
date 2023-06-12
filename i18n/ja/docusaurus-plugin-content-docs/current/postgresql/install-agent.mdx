@@ -8,18 +8,21 @@ tags:
   - エージェント
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import TR from '@site/src/components/TR';
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+:::note
+
+이 문서는 PostgreSQL 모니터링 V2를 기준으로 작성되었습니다. PostgreSQL 모니터링 V1 문서는 [다음 문서](../postgresql-v1/install-agent)를 참조하세요.
+
+:::
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}
+{@include: ../common-items/_agent-signup-guide.mdx}  
 
 {@youtube: Y66Siequ2S0}
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -45,27 +48,35 @@ db_port={DBサーバーのポート番号}
 
   **Postgresql 9.2バージョン以降**：https://jdbc.postgresql.org/download
 
-<!-- 공통 Notes -->
+<!-- 공통 Notes-->
 
 {@include: ../common-items/_db-install-agent-common-notes.mdx}
 
-<!-- 모니터링용 계정 생성 -->
+<!-- 모니터링용 계정 생성-->
 
 {@include: ../common-items/_db-create-monitoring-account.mdx}
 
-<!-- PostgreSQL -->
+<!-- PostgreSQL-->
 
 ```bash showLineNumbers
-# 10バージョン以降
-create user whatap with password 'DB Password'; # ご希望のpasswordを入力してください。
+# 10 버전 이상
+create user whatap with password 'DB Password'; # 원하는 password를 입력하세요.
 grant pg_read_all_stats to whatap;
  
-# 10バージョン以前
-create user whatap with password 'DB Password'; # ご希望のpasswordを入力してください。
+# 10 버전 미만
+create user whatap with password 'DB Password'; # 원하는 password를 입력하세요.
 alter user whatap with superuser;
  
-# kill session使用時
+# kill session 사용 시
 alter user whatap with superuser;
+
+#wal_count 수집 시
+grant execute on function pg_ls_dir(text) to whatap;  #EDB 사용 시
+alter user whatap with superuser;
+
+#cache 수집 시
+grant select on pg_backend_memory_contexts to whatap;
+grant execute on function pg_get_backend_memory_contexts to whatap;
 ```
 
 ## DBユーザーファイルの作成{#create-db-user}

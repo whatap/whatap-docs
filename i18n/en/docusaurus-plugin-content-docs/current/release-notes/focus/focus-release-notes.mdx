@@ -60,14 +60,10 @@ A new version of the focus module has been released as shown below.
 **Setting the Pod field for instance identification**
 
 ```bash
-kubectl get pod -n virtual2 --no-headers |
-
-awk '{printf "{ \"Pod\" : \"%s\", \"Restart\" : %s }\n",$1,$4} ' |
-
-./focus -license $WHATAP_LICENSE 
-
--pcode $WHATAP_PCODE -server.host $WHATAP_HOST 
-
+kubectl get pod -n virtual2 --no-headers |\
+awk '{printf "{ \"Pod\" : \"%s\", \"Restart\" : %s }\n",$1,$4} ' |\
+./focus -license $WHATAP_LICENSE \
+-pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
 -category $CATEGORY -pk Pod
 
 $ ./focus -h

@@ -67,29 +67,36 @@ Options
                            --php-zts
 ```
 
--   **license**\
-      発行されたアクセスキーです。
+-   **license**
 
--   **server**\
-      発行されたサーバーIPです。
+    発行されたアクセスキーです。
 
--   **php version**\
-      サーバーにインストールされているphpバージョン情報（5.2、5.3、5.4、5.5、5.6、7.0、7.1、7.2、7.3、7.4、8.0）です。
+-   **server**
 
--   **php config file**\
-      サーバーにインストールされているphp.iniのフルパス(_/etc/php.ini_)PHP Extensionに対する設定を進めます。
+    発行されたサーバーIPです。
 
--   **php cli**\
-      コマンドラインで実行可能なphpコマンドのフルパス(_/usr/bin/php_) の該当コマンドでPHPの基本環境を確認します。
+-   **php version**
 
--   **process name**\
-      Apacheの実行プロセス名（`httpd`、`apache2`、`httpd.worker`…）またはPHP-FPMの実行プロセス名（`php-fpm`、`php5-fpm`）で使用メモリ情報を収集します。
+    サーバーにインストールされているphpバージョン情報（5.2、5.3、5.4、5.5、5.6、7.0、7.1、7.2、7.3、7.4、8.0）です。
 
--   **zts**\
-      Zend Thread Safeの対応有無を設定します。 
+-   **php config file**
+
+    サーバーにインストールされているphp.iniのフルパス(_/etc/php.ini_)PHP Extensionに対する設定を進めます。
+
+-   **php cli**
+
+    コマンドラインで実行可能なphpコマンドのフルパス(_/usr/bin/php_) の該当コマンドでPHPの基本環境を確認します。
+
+-   **process name**
+
+    Apacheの実行プロセス名（`httpd`、`apache2`、`httpd.worker`…）またはPHP-FPMの実行プロセス名（`php-fpm`、`php5-fpm`）で使用メモリ情報を収集します。
+
+-   **zts**
+
+    Zend Thread Safeの対応有無を設定します。 
 
 <Tabs>
-<TabItem value="phpvs" label="PHP 버전 지정 설치" default>
+<TabItem value="phpvs" label="Install PHP version" default>
 
 ```bash title=SH
 $ /usr/whatap/php/install.sh -l [発行されたアクセスキー] -s [発行されたサーバーIP] -v [PHPバージョンx.x] -i [php.iniのフルパス] -p [プロセス名]
@@ -97,7 +104,7 @@ $ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini 
 ```
 
 </TabItem>
-<TabItem value="phcli" label="PHP Cli 명령어 지정 설치">
+<TabItem value="phcli" label="Install PHP cli command">
 
 ```bash title=SH
 $ /usr/whatap/php/install.sh -l [発行されたアクセスキー] -s [発行されたサーバーIP] -e [PHP Cli] -p [プロセス名]

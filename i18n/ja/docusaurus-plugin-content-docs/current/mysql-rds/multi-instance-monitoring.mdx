@@ -64,7 +64,7 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 -   **_SQL Executed_**
 
-    選択したインスタンスの1秒当たりのSQL実行件数の合計です。5秒単位で収集した`Questions`（全体クエリのリクエスト回数）指標値に基づいています。
+    선택한 인스턴스들의 초당 SQL 수행건수 합계입니다. 5초단위로 수집한 `Questions`(전체 쿼리 요청 횟수) 지표 값을 기반으로 합니다.
 
 -   **_Lock waiting_**
 
@@ -96,13 +96,15 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 -   **_Acitive Sessions_** 
 
-    リアルタイムで実行中のセッションとクエリ内容を照会することができます。テーブルの一番右側の**_query_**カラムの項目を選択すると、**_SQLを見る_**ウィンドウが表示されます。選択したクエリ（Query）に対するFull TextおよびPlan情報を確認することができます。テーブルのカラムの詳細については、次の文書を参考にしてください。
+    リアルタイムで実行中のセッションとクエリ内容を照会することができます。テーブルの一番右側の**_query_**カラムの項目を選択すると、**_SQLを見る_**ウィンドウが表示されます。選択したクエリ（Query）に対するFull TextおよびPlan情報を確認することができます。テーブルのカラムの詳細については、[次の文書](#column-info)を参考にしてください。
 
 -   **_ロックツリー_**
 
-    リアルタイムでロックセッションに関する情報やHolder、Waiter情報を照会することができます。テーブルのカラムの詳細については、次の文書を参考にしてください。
+    リアルタイムでロックセッションに関する情報やHolder、Waiter情報を照会することができます。テーブルのカラムの詳細については、[次の文書](#column-info)を参考にしてください。
 
 {@include: ../common-items/_db-data-list-filter.mdx}
+
+## テーブルカラムの変更{#change-column}
 
 {@include: ../common-items/_db-data-edit-column.mdx}
 

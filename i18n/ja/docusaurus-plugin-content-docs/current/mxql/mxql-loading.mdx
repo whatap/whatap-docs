@@ -84,6 +84,7 @@ MXQL文法を利用してメトリクスを読み込むコマンドについて�
     CATEGORY app_counter
     TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
     ```
+
 :::
 
 ## FLEXLOAD{#flexload}
@@ -102,7 +103,9 @@ FLEXLOAD {backward : true}
 ```
 
 :::caution
+
 ほとんどのカテゴリは`TAGLOAD`を使います。[次の文書](#flexload-items)に含まれるカテゴリのデータを使用する場合に限って`FLEXLOAD`を使います。
+
 :::
 
 ## FLEXLOADを使用するカテゴリ一覧{#flexload-items}

@@ -21,7 +21,7 @@ import UI from '@site/src/components/UItext';
 
 2023年3月27日
 
-### 「共通」
+### `共通`
 
 <p><Status>Fixed</Status> MXQLデータ照会後、CSVがダウンロードされない問題を修正</p>
 
@@ -29,13 +29,13 @@ import UI from '@site/src/components/UItext';
 
 2023年3月24日
 
-### 「共通」
+### `共通`
 
 -   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント設定</UI> メニューでログイベントを追加する時の <UI>イベント発生一時中止</UI> 項目に対する説明文の修正
 
 -   <Status>Change</Status> 画面左サイドバーで <img src='/img/ico-search.svg' alt='검색 아이콘' /> 検索機能利用時のエージェント検索照会性能の改善件のロールバック
 
-### 「Server」
+### `Server`
 
 <p><Status>Fixed</Status> <UI>警告通知メニュー</UI>で通知をコピーするとき、<UI>通知ポリシーコピー</UI> ウィンドウで選択できるプロジェクト一覧の一部が欠落しているバグの修正</p>
 
@@ -43,7 +43,7 @@ import UI from '@site/src/components/UItext';
 
 2023年3月24日
 
-### 「Database」
+### `Database`
 
 <p><Status>Fixed</Status> <UI>警告通知</UI> &gt; <UI>ファイルログ通知</UI> メニューでログが発生していない時間帯を照会する場合、以前のログデータが残っている現象を修正</p>
 
@@ -51,7 +51,7 @@ import UI from '@site/src/components/UItext';
 
 2023年3月23日
 
-### 「共通」
+### `共通`
 
 #### 利用履歴
 
@@ -65,11 +65,11 @@ import UI from '@site/src/components/UItext';
 
 <p><Status>Change</Status> <UI>アカウント情報管理</UI> &gt; <UI>会員退会</UI> メニューを利用して会員退会する場合の注意事項の最新化及び退会関連事項（未納金、権限情報）などの確認手続きを追加</p>
 
-### 「Container」
+### `Container`
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> &gt; <UI>コンテナマップ</UI> メニューで <img src='/img/ico-reset.svg' alt='리셋 아이콘' /> <UI>リセット</UI> ボタンをクリックするとオプションが初期化されない現象を修正</p>
 
-### 「AWS」、「Azure」、「NCP」、「OCI」
+### `AWS`、`Azure`、`NCP`、`OCI`
 
 -   <Status>Change</Status> プロジェクト内のサービスごとに収集周期を設定できるように機能とUIを修正
 -   <Status>Feature</Status> 活性化されたサービスのみを表示するフィルターを追加
@@ -85,7 +85,7 @@ import UI from '@site/src/components/UItext';
 <p><Status>New</Status> <b>AWS Log</b> 신규 상품을 추가했습니다. 많은 이용 부탁드립니다! 자세한 내용은 <a href='../../aws-log/introduction' target='_blank'>다음 문서</a>를 참조하세요.</p>
 -->
 
-### 「共通」
+### `共通`
 
 -   <Status>Fixed</Status> 画面左サイドバーで <img src='/img/ico-search.svg' alt='검색 아이콘' /> 検索機能利用時のエージェント検索照会性能の改善
 
@@ -97,7 +97,7 @@ import UI from '@site/src/components/UItext';
 
 2023年3月20日
 
-### 「Container」
+### `Container`
 
 <p><Status>Fixed</Status> <UI>ダッシュボード</UI> &gt; <UI>コンテナマップ</UI>の <UI>フィルター</UI> オプションで <UI>含む</UI>を選択すると、部分一致するコンテナが表示されない現象を修正</p>
 
@@ -105,7 +105,7 @@ import UI from '@site/src/components/UItext';
 
 2023年3月17日
 
-### 「共通」
+### `共通`
 
 <!--
 #### 계정 정보 관리
@@ -147,11 +147,11 @@ import UI from '@site/src/components/UItext';
 
 2023年3月14日
 
-### 「共通」
+### `共通`
 
 <p><Status>Feature</Status> <UI>管理</UI> &gt; <UI>プロジェクト管理</UI> メニューで警告通知の言語選択オプションを追加</p>
 
-### 「Server」
+### `Server`
 
 -   <Status>Feature</Status> <UI>サーバー一覧</UI> &gt; <UI>サーバー詳細</UI> メニューで <UI>プロセス</UI> テーブルのソートオプションとして <UI>個数の降順</UI> を追加
 
@@ -187,7 +187,7 @@ import UI from '@site/src/components/UItext';
 
 2023年3月8日
 
-### 「共通」
+### `共通`
 
 #### User Interface（UI）
 
@@ -251,11 +251,11 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Change</Status> <code>Server</code> プロジェクトの <UI>ログ設定</UI> メニューでエージェント設定オプションを変更
 
-#### 警告通知
+#### アラート通知
 
 -   <Status>Feature</Status> <UI>イベント設定</UI> メニューで <UI>エージェント重複通知</UI> オプションを追加
 
-    > モニタリング中のエージェントのうち、同じIDを設定したエージェントが2つ以上ある場合、メトリクスを重複して収集することによって発生する警告通知です。 エージェント名が重複して設定されていないかエージェント設定で関連オプションを確認してください。ブルー/グリーンのようなデプロイ状況でエージェントが重複して警告通知が発生した場合、この機能を利用することをお勧めします。 同名のエージェントが同時に2つ以上起動した場合、選択した時間中は通知が発生しません。
+    > モニタリング中のエージェントのうち、同じIDを設定したエージェントが2つ以上ある場合、メトリクスを重複して収集することによって発生する警告通知です。エージェント名が重複して設定されていないかエージェント設定で関連オプションを確認してください。ブルー/グリーンのようなデプロイ状況でエージェントが重複して警告通知が発生した場合、この機能を利用することをお勧めします。同名のエージェントが同時に2つ以上起動した場合、選択した時間中は通知が発生しません。
 
 -   <Status>Feature</Status> <UI>イベント受信設定</UI> メニューで <UI>受信タグの未設定通知を受け取る</UI> オプションを追加
 
@@ -273,13 +273,13 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Change</Status> 組織を選択した状態でプロジェクトを追加する場合 <UI>プロジェクトグループ</UI> 項目を必須選択するように変更
 
-### 「Server」
+### `Server`
 
 -   <Status>Feature</Status> <UI>警告通知</UI> > <UI>イベント記録メニュー</UI>に <UI>最後の変更時刻表示</UI> オプションを追加
 
 -   <Status>Change</Status> <UI>サーバ設定</UI> > <b>リモートファイルビューアー</b> メニューの名称を <UI>エージェント対数ビューアー</UI>に変更
 
-### 「Application」
+### `Application`
 
 #### アプリケーションダッシュボード
 
@@ -291,11 +291,11 @@ import UI from '@site/src/components/UItext';
 
 <p><Status>Change</Status> <UI>統計</UI> メニューで照会時間の範囲を最大62日から <b>最大31日</b>に変更</p>
 
-### 「Container」
+### `Container`
 
 <p><Status>Change</Status> <UI>管理</UI> > <UI>エージェントインストール</UI> ページUIおよび内容改善</p>
 
-### 「Database」
+### `Database`
 
 #### データベース共通
 
@@ -315,11 +315,11 @@ import UI from '@site/src/components/UItext';
 
 <p><Status>Change</Status> <UI>統計/レポート</UI> > <UI>テーブルスペースサイズ</UI> メニューでテーブルスペースの使用量に応じたプログレスバーの色を変更</p>
 
-### 「AWS」
+### `AWS`
 
 <p><Status>Fixed</Status> AWSプロジェクトの <UI>イベント記録</UI> メニューを選択すると、関連のないスナップショットページに移動するバグ修正</p>
 
-### 「RUM」
+### `RUM`
 
 <p><Status>Feature</Status> <UI>分析</UI> > <UI>エラー追跡</UI> メニュー追加</p>
 

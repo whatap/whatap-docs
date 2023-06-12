@@ -281,30 +281,35 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 ## エージェントデータ照会
 
 -   **Thread Count**
+
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>/<code>oids</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>/avg
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_count/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
 
 -   **Thread Daemon Count**
+
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>/<code>oids</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>/avg
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_daemon/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
 
 -   **Thread Peak Count**
+
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>/<code>oids</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>/avg
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/thread_peak_count/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
 
 -   **Thread Pool Count**
+
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>/<code>oids</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>/avg
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_active/<code>stitme</code>/<code>etime</code>/avg/<code>oids</code>
 
 -   **Thread Pool Queue Count**
+
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>/<code>oids</code>
     -   <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/threadpool_queue/<code>stitme</code>/<code>etime</code>/avg
@@ -543,7 +548,8 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 :::note
 
 -   **filterkey**：照会条件キー（`caller_pcode`、`caller_spec` （バージョン）、`caller_url`、`spec`（バージョン）、 `url`）
--   **filterval**：照会条件（`filterkey`が`caller_url`または`url`の場合、base64としてエンコード）
+-   **filterval**: 照会条件(`filterkey`が`caller_url` または`url`の場合、base64としてエンコード)
+
 :::
 
 ## ドメイン呼び出し統計
@@ -556,5 +562,6 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 :::note
 
 -   **filterkey**：照会条件キー（`caller_pcode`、`caller_spec` （バージョン）、`caller_url`、`spec`（バージョン）、 `url`）
--   **filterval**：照会条件（`filterkey`が`caller_url`または`url`の場合、base64としてエンコード）
+-   **filterval**: 照会条件(`filterkey`が`caller_url` または`url`の場合、base64としてエンコード)
+
 :::

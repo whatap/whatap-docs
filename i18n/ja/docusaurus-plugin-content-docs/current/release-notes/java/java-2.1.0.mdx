@@ -84,7 +84,9 @@ URL パターン設定対象
 -   HttpClient URL
 
 :::note
+
 既存エージェント設定方式では、Kubernetes環境での変更が困難
+
 :::
 
 #### エージェントログにONAME出力
@@ -112,7 +114,9 @@ $pack.put("myrandom",(float)( whatap.util.KeyGen.next()%100));
 アプリケーションログを統合モニタリングする機能を追加しました。Javaアプリケーションでログモニタリング機能を使用するには、whatap.agent-2.1.0以降のバージョンが必要です。
 
 :::caution
+
 whatap.agent-2.1.0以降のバージョン
+
 :::
 
 WhaTapのアプリケーションログモニタリングの機能名称はログシンク（LogSink）です。
@@ -154,7 +158,9 @@ hooklog_custom_methods= （ユーザーメソッドでログ収集設定）
 運用中に`hooklog_enabled=true`に変更すると、再起動後にログ収集が可能です。
 
 :::note
+
 `logsink_enabled=true`変更後に再起動
+
 :::
 
 #### ユーザーメソッドにおけるログ収集
@@ -202,18 +208,20 @@ max_buffer_size=65536
 max_wait_time=2000
 ```
 
-エージェントは、データ収集サイズが「max_buffer_size」を超えるか、ログをまとめるための待ち時間が 「max_wait_time」を超えると、ログデータをサーバーに送信します。
+エージェントは、データ収集サイズが`max_buffer_size`を超えるか、ログをまとめるための待ち時間が `max_wait_time`を超えると、ログデータをサーバーに送信します。
 
 #### ログ圧縮アルゴリズムの選択
 
-ログを圧縮転送する際の圧縮アルゴリズムの変更が可能です。 基本アルゴリズムはGZipで、lz4も選択可能です。
+ログを圧縮転送する際の圧縮アルゴリズムの変更が可能です。 基本アルゴリズムはGZIPで、lz4も選択可能です。
 
 ```ini title='whatap.conf'
 logsink_zip_libpath=/whatap/whatap-logsink-lz4-1.7.0.jar
 ```
 
 :::note
-アルゴリズム選択は、「logsink_zip_libpath」にjarファイルを指定することで処理します。
+
+アルゴリズム選択は、`logsink_zip_libpath`にjarファイルを指定することで処理します。
+
 :::
 
 ### IBM Java6 Websphere環境でエージェントが動作しない問題を修正
@@ -221,7 +229,9 @@ logsink_zip_libpath=/whatap/whatap-logsink-lz4-1.7.0.jar
 IBM Java6 Websphere環境でWhaTap Agentが初期化されず、データを収集できない問題を修正しました。
 
 :::note
-「Management Factory.get PlatformMBean Server()」ロジックで内部的にエラーが発生し、WhaTap Agentが初期化されない問題
+
+`Management Factory.get PlatformMBean Server()`ロジックで内部的にエラーが発生し、WhaTap Agentが初期化されない問題
+
 :::
 
 ### CounterPackデバッグオプションの追加
@@ -251,7 +261,7 @@ text_zip_enabled=false（デフォルト値）
 
 OSHI（Operating System and Hardware Information）は、システムインフラメトリクスを収集するためのライブラリで、最近も活発にアップデートされており、システム性能指標を収集するためのライブラリとして選択しました。 ただし、Java8以降の環境で使用できます。
 
--   「oshi_enabled=false」（デフォルト値）
+-   `oshi_enabled=false`（デフォルト値）
 -   jdk8以降で使用可能
 -   disk="."に対する使用量測定及び警告機能が可能
 
@@ -262,7 +272,7 @@ OSHI（Operating System and Hardware Information）は、システムインフ�
 -   sigar_enabled=false（デフォルト値）
 -   lib1に対しaixのみを含む
 
-Sigar機能を使用するためには、明示的に「sigar_enabled=true」設定後に使用できます。
+Sigar機能を使用するためには、明示的に`sigar_enabled=true`設定後に使用できます。
 
 #### Linux memory収集エラーの修正
 
@@ -299,18 +309,22 @@ weaving=tomcat10
 ```
 
 :::note
-weavingオプションは「weaving_reserved」オプションを縮約してv2.1.1から追加
+
+weavingオプションは`weaving_reserved`オプションを縮約してv2.1.1から追加
+
 :::
 
-### Httpcallの詳細情報を追跡
+### HttpCallの詳細情報を追跡
 
 トランザクション追跡でHttpcallに関する追跡情報を追加しました。
 
 :::caution
+
 OLDバージョンの収集サーバーでは、トランザクション詳細ステップ情報の確認ができません。
+
 :::
 
-もしOLD収集サーバーにデータを送信する場合は、「trace_htpc_version」オプションを_whatap.conf_ファイルに追加する必要があります。
+もしOLD収集サーバーにデータを送信する場合は、`trace_htpc_version`オプションを_whatap.conf_ファイルに追加する必要があります。
 
 ```ini title='whatap.conf'
 trace_httpc_version=1

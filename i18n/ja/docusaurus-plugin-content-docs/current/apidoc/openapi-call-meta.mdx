@@ -56,7 +56,9 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/project
 
 :::note
-この機能は、アプリケーションモニタリングの商品群に相当します。
+
+この機能は、アプリケーションモニタリングの製品群に相当します。
+
 :::
 
 ```bash title='command'
@@ -90,7 +92,9 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/projects
 
 :::note
-この機能は、サーバーモニタリング商品群に該当します。
+
+この機能は、サーバーモニタリング製品群に該当します。
+
 :::
 
 ```bash title='command'
@@ -263,4 +267,4 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 | status          |      <span class='api'>string</span>     | プロジェクトステータス (`pending`, `trial`, `subscribe`, `close_pending`, `limited`, `closed`, `trial_limited`) |
 | productType     |      <span class='api'>string</span>     | プロジェクトに使用された製品                                                                                       |
 | platform        |      <span class='api'>string</span>     | プロジェクトに使用された製品のプラットフォーム                                                                              |
-| gatewayName     |      <span class='api'>string</span>     | データサーバーエリア                                                                                           |
+| gatewayName     |      <span class='api'>string</span>     | データサーバーリージョン                                                                                         |

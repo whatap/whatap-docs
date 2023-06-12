@@ -45,7 +45,9 @@ http://repo.whatap.io/index.html#focus/
 -   原因：インスタンスを2つ以上収集する際に、通知でメトリクスのインスタンスを誤って区分する問題が発生
 -   修正：「-pk」オプションを追加して、メトリクスのインスタンス フィールドを指定
 
-```json title='k8s에서 pod의 재시작을 수집할때 데이터'
+**K8SでPODの再起動を収集する際のデータ**
+
+```json
 { "Pod" : "whatap-master-agent-756d6f6567-hpvsc", "Restart" : 0 }
 { "Pod" : "whatap-virtual-david-oberg-754fd79f5f-9s5vd", "Restart" : 147 }
 { "Pod" : "whatap-virtual-david-oberg-754fd79f5f-j4pfw", "Restart" : 141 }

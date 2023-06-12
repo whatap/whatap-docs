@@ -15,7 +15,43 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_dotnet-transaction-profile.mdx}
 
-### Transaction tracing
+-   **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
+
+-   **status_ignore** <span class='type'>String</span>
+
+    Set the `STATUS_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+-   **status_ignore_set** <span class='type'>String</span>
+
+    `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+-   **httpc_status_error_enable** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    Determine whether or not to return `HTTPC_ERROR`.
+
+-   **httpc_status_ignore** <span class='type'>String</span>
+
+    Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+-   **httpc_status_ignore_set** <span class='type'>String</span>
+
+    `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+    :::note
+
+    Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+
+    :::
+
+-   **profile_http_parameter_keys** <span class='type'>String</span>
+
+    설정된 키에 해당하는 파라미터 정보만 기록합니다. 여러 개를 등록할 때는 쉼표(,)를 구분자로 이용하세요.
 
 -   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 

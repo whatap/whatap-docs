@@ -1,5 +1,3 @@
-AWS CloudWatchを使用するエージェント設定に関する説明です。
-
 -   **aws_region** <span class='type'>String</span>
 
     AWSリージョンを設定します。
@@ -14,19 +12,19 @@ AWS CloudWatchを使用するエージェント設定に関する説明です。
 
 -   **cloud_watch** <span class='type'>String</span>
 
-    cloud watchモニタリングの有無を設定します。 設定値は`on`または`off`です。
+    CloudWatchモニタリングの有無を設定します。 設定値は`on`または`off`です。
 
 -   **cloud_watch_instance** <span class='type'>String</span>
 
-    cloud watchインスタンス名を設定します。
+    CloudWatchインスタンス名を設定します。
 
 -   **cloud_watch_interval** <span class='type'>Second</span>
 
-    cloud watchでモニタリング値を取得する間隔を設定します。（単位：秒）
+    CloudWatchでモニタリング値を取得する間隔を設定します。（単位：秒）
 
 -   **cloud_watch_metrics** <span class='type'>String</span>
 
-    cloudwatchに読み込みするモニタリング指標名を設定します。次のように設定できます。
+    CloudWatchに読み込みするモニタリング指標名を設定します。次のように設定できます。
 
     ```ini
     cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
@@ -35,3 +33,45 @@ AWS CloudWatchを使用するエージェント設定に関する説明です。
 -   **aws_arn** <span class='type'>String</span>
 
     `aws_access_key`、`aws_secret_key`の代わりに適切な権限を持つIAM ROLEのARNを使用することができます。
+
+    <details>
+    <summary>필수 권한</summary>
+
+    ROLE은 다음의 권한(Policy)이 필요합니다.
+
+    | 権限                                | 권한 내용                            |
+    | --------------------------------- | -------------------------------- |
+    | rds:DescribeDBInstances           | 인스턴스 클래스 정보 수집                   |
+    | rds:DescribeDBClusters            | autoscale 사용 시 클러스터의 정보 수집       |
+    | rds:DescribeDBLogFiles            | CloudWatch 로그 수집                 |
+    | rds:DownloadDBLogFilePortion      | CloudWatch 로그 수집                 |
+    | ec2:DescribeInstanceTypes         | 인스턴스 클래스에 해당하는 cpu 개수 수집         |
+    | elasticache:DescribeCacheClusters | elasticache 이용 시 인스턴스 클래스 정보 수집  |
+    | cloudwatch:ListMetrics            | CloudWatch 지표 리스트 수집             |
+    | cloudwatch:GetMetricStatistics    | CloudWatch 지표의 값 수집              |
+    | logs:DescribeLogStreams           | CloudWatch 로그 수집(게시된 로그 기능 사용 시) |
+    | logs:GetLogEvents                 | CloudWatch 로그 수집(게시된 로그 기능 사용 시) |
+
+    </details>
+
+### RDS CloudWatch 수집을 위한 설정 예시
+
+다음과 같은 기본 설정을 작성해야 RDS CloudWatch를 모니터링하고 데이터를 수집합니다.
+
+```ini title='whatap.conf'
+cloud_watch=on
+aws_region=ap-northeast-2
+
+# AWS IAM에서 역할(Role)을 생성하고 역할 ARN(Role ARN) 값을 복사, 붙여넣기하세요.
+aws_arn=arn:aws:iam::999999999999:role/UpdateApp
+cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+
+#인스턴스 이름 예시
+cloud_watch_instance=pg-rds 
+```
+
+:::note
+
+**역할 ARN(Role ARN)**에 대한 자세한 내용은 [다음 링크](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)를 참조하세요.
+
+:::

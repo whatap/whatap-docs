@@ -10,7 +10,9 @@ tags:
 既存のDockerイメージに基づいて、WhaTapエージェント構成を追加したイメージをビルドします。
 
 :::note
-本文では、Javaエージェントをインストールする方法を支援します。WhaTap Kubernetesモニタリングで適用する場合は、別の手順を参考にしてください。
+
+本文では、Javaエージェントをインストールする方法を説明します。WhaTap Kubernetesモニタリングを適用する場合は、別の手順を参照してください。
+
 :::
 
 1.  Dockerのビルドディレクトリを作成します。
@@ -30,7 +32,8 @@ tags:
     EOL
     ```
 
-3.  Dockerfileを作成します。
+3.  Dockerfileを作成してください。
+
     イメージをビルドする場合、WhaTapイメージから`-javaagent`オプションに適用するjarファイルをコピーできます。
 
     ```docker
@@ -62,13 +65,18 @@ tags:
     ```
 
 :::note
+
 {@include: _java-17.mdx}
+
 :::
 
 :::note
-Java 에이전트 파일 이름은 `Rename` 기능을 활용해 수정할 수 있습니다. Java 에이전트의 이름을 수정했다면 `JAVA_OPTS`에 새로운 Java 에이전트 이름을 등록하세요.
 
-```bash title='Java 에이전트 이름 수정 방법 예시'
+Javaエージェントファイル名は、`Rename`機能を活用して変更することができます。Javaエージェント名を変更した場合は、`Java_OPTS`に新しいJavaエージェント名を登録してください。
+
+**Javaエージェント名の変更方法の例**
+
+```bash
 java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.Rename -from whatap.agent-X.Y.Z.jar -to whatap.agent.jar
 ```
 

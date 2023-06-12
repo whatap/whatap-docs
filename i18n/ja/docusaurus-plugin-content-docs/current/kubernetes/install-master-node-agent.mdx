@@ -60,7 +60,7 @@ EOF
 
 Google Kubernetes Engine（GKE）の場合、ユーザークラスターを作成した後、権限設定のために次のコマンドを実行してください。
 
-```bash title='GKE 권한 설정'
+```bash
 ACCOUNT=$(gcloud info --format='value(config.account)')
 kubectl create clusterrolebinding owner-cluster-admin-binding \
   --clusterrole cluster-admin \

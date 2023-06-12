@@ -1,0 +1,217 @@
+---
+id: preview-1.103.x
+title: Preview 1.103.X
+toc_max_heading_level: 3
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+<https://preview.whatap.io>で、次の新機能と修正した内容を事前に体験することができます。 
+
+:::
+
+## Preview 1.103.10
+
+2023년 6월 8일
+
+<div class='indentTab'>
+
+<p><Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 알림 설정에 대해 읽기 권한만을 가진 사용자가 <UI>메트릭스</UI>, <UI>복합 메트릭스</UI> 리스트 아이템의 내용을 확인할 수 있도록 툴팁 추가</p>
+
+</div>
+
+## Preview 1.103.09
+
+2023년 6월 8일
+
+<div class='indentTab'>
+
+### `共通`
+
+#### 管理
+
+-   <Status>Feature</Status> <UI>조직 생성</UI> 및 <UI>조직 관리</UI> 메뉴에서 로고 이미지 안내 문구 추가(이미지 권장 사이즈, 파일 용량, 확장자에 대한 안내)
+
+-   <Status>Feature</Status> <UI>멤버 목록</UI> 메뉴에서 멤버의 삭제 및 권한 수정 버튼 위치를 멤버 이름 컬럼으로 이동
+
+-   <Status>Feature</Status> <b>프로젝트 플렉스보드 편집</b> 권한 추가
+
+#### Flexボード
+
+<p><Status>Change</Status> <b>프로젝트 플렉스보드 편집</b> 권한에 따라 대시보드 수정을 제한하도록 UI 수정</p>
+
+* * *
+
+### `Database`
+
+-   <Status>Feature</Status> <b>PostgreSQL V2</b> 상품의 <UI>인스턴스 대시보드</UI> 메뉴에서 위젯 메트릭스 변경 창의 메트릭스 목록으로 마우스를 오버하면 해당 메트릭스 정보에 대한 툴팁 추가
+
+-   <Status>Change</Status> <b>PostgreSQL V2</b> 상품의 메뉴 중 다음 3가지 메뉴를 <UI>사이트맵</UI>을 통해서 접근하도록 변경
+
+    -   **_分析_** > **_ログファイルビューア_**
+    -   **_警告通知_** > **_ファイルログ通知_**
+    -   **_管理_** > **_クラウドモニタリング_**
+
+* * *
+
+### `Log`
+
+<p><Status>Change</Status> 파서 시뮬레이션 실패 시 노출되는 메시지 변경</p>
+
+</div>
+
+## Preview 1.103.08
+
+2023년 6월 5일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴에서 다중 적용 api 수정</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Change</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 ![검색 아이콘](/img/ico-search.svg) 버튼을 선택해야 목록이 출력된다는 안내하는 메시지 추가</p>
+
+* * *
+
+### `Database`
+
+<p><Status>Change</Status> PostgreSQL V2 사용자는 로그 모니터링 기능을 무료로 사용할 수 있도록 로그 설정 권한 수정</p>
+
+</div>
+
+## Preview 1.103.07
+
+2023년 6월 1일
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>New</Status> PostgreSQL 모니터링 V2 서비스를 오픈했습니다. 기존 대비 달라진 기능을 확인하려면 <a href='../../postgresql/monitoring-intro#new-feature'>다음 문서</a>를 참조하세요.</p>
+
+</div>
+
+## Preview 1.103.06
+
+2023년 6월 1일
+
+<div class='indentTab'>
+
+-   <Status>Change</Status> 시리즈 차트 디자인 수정
+
+    | 수정 전                                            | 수정 후                                          |
+    | ----------------------------------------------- | --------------------------------------------- |
+    | ![before](/img/release/series-chart-before.png) | ![after](/img/release/series-chart-after.png) |
+
+-   <Status>Change</Status> 히트맵 버튼 디자인 수정
+
+    | 수정 전                                             | 수정 후                                           |
+    | ------------------------------------------------ | ---------------------------------------------- |
+    | ![before](/img/release/hitmap-button-before.png) | ![after](/img/release/hitmap-button-after.png) |
+
+</div>
+
+## Preview 1.103.05
+
+2023년 5월 30일
+
+<div class='indentTab'>
+
+### `Container`
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 라이센스 발급 후 다른 탭 메뉴로 전환할 경우 라이센스 발급 버튼이 다시 활성화되는 버그 수정
+
+-   <Status>Fixed</Status> <UI>리소스</UI> > <UI>노드 상세</UI> 메뉴에서 하단 컨테이너 영역의 컨테이너 구성 정보 컬럼 순서 변경
+
+</div>
+
+## Preview 1.103.04
+
+2023년 5월 30일
+
+<div class='indentTab'>
+
+### `Container`
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>로그</UI> > <UI>로그 검색</UI> 탭에 로그 조회 권한 및 상태에 따라 메시지를 다르게 표시
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>이벤트</UI> 탭에 이벤트 개수를 표시하는 <UI>이벤트 수 추이</UI> 차트 추가
+
+</div>
+
+## Preview 1.103.03
+
+2023년 5월 30일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Feature</Status> 사이드 바에서 프로젝트 이름에 프로젝트 전체 이름을 표시하는 툴팁 추가</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status> <UI>로그</UI> 하위 메뉴에서 <img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>테이블 설정</UI> > <UI>컬럼 설정</UI>에 <UI>컬럼 추가</UI> 항목으로 <UI>timestamp</UI> 추가</p>
+
+</div>
+
+## Preview 1.103.02
+
+2023년 5월 26일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 애플리케이션 에이전트가 없는 컨테이너 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 오표기 현상 수정</p>
+
+</div>
+
+## Preview 1.103.01
+
+2023년 5월 25일
+
+<div class='indentTab'>
+
+### `実験室`
+
+<p><Status>Feature</Status> <code>Container</code>, <code>Java</code> 제품군에 <UI>사이트 맵</UI>  > <UI>실험실</UI> > <UI>Remote Access Status</UI> 메뉴 추가</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 추가</p>
+
+</div>
+
+## Preview 1.103.00
+
+2023년 5월 25일
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 사용자 계정이 보유한 프로젝트 제품군 대시보드 템플릿만 보이도록 로직 수정
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 신규 프로젝트 생성 시 <UI>권한</UI> 목록에 FLEX_UPDATE 텍스트 노출 현상 수정
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 <UI>로그 파서</UI>, <UI>빠른 인덱스</UI>, <UI>장기 보관 통계</UI> 추가 또는 수정 시 직접 입력 항목에 공백을 허용하지 않도록 수정</p>
+
+</div>

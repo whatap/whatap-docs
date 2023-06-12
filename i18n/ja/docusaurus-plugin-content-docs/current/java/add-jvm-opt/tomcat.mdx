@@ -15,7 +15,7 @@ Tomcatを使用するアプリケーションサーバ環境でJVMオプショ�
 
 _catalina.sh_ファイルの先頭に`JAVA_OPTS`環境変数を追加します。
 
-```bash title='{Tomcat 설치 경로}/bin/catalina.sh' showLineNumbers
+```bash title='{Tomcat_PATH}/bin/catalina.sh' showLineNumbers
 ########## WHATAP START ############
 WHATAP_HOME=/whatap
 WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
@@ -24,7 +24,9 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 ```
 
 :::note
+
 `ls ${WHATAP_HOME}/whatap.agent-*.jar|sort|tail-1`項目は、エージェントのアップデートで最新のWhaTapエージェントを適用します。
+
 :::
 
 ### **Windows**
@@ -33,7 +35,7 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
     _catalina.bat_ファイルの先頭に`JAVA_OPT`環境変数を追加します。
 
-    ```batch title='{Tomcat 설치 경로}/bin/catalina.bat' {3} showLineNumbers
+    ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
     rem ########## WHATAP START ############
     set WHATAP_HOME=C:\whatap
     for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-*.jar"') do set last=%%f

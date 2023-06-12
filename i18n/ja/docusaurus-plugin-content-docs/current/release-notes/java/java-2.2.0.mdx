@@ -9,7 +9,7 @@ import UI from '@site/src/components/UItext';
 
 リリーズ：2022-11-01
 
-## New Feature（新機能）
+## New Feature(新機能)
 
 -   virtualアプリケーションでlogsinkデータを生成するように機能を追加
 
@@ -17,7 +17,7 @@ import UI from '@site/src/components/UItext';
 
 -   2秒データ収集の機能を追加 
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     fast_perf_enabled=false
     fast_perf_interval=2000
     fast_perf_gc_enabled=true
@@ -51,29 +51,29 @@ import UI from '@site/src/components/UItext';
     too_many_actx_alert_over_time=30000
     ```
 
-    -   アクティブトランザクション基準件数は、「too_many_actx_alert_count >= (too_many_actx_alert_over_time / 5000)」として決定
+    -   アクティブトランザクション基準件数は、`too_many_actx_alert_count >= (too_many_actx_alert_over_time / 5000)`として決定
 
-    -   アクティブトランザクションの基準件数と同じかそれ以上の場合は、「too_many_actx_alert_msg_url_count」ほどのurl情報を通知メッセージに追加して通知を転送    
+    -   アクティブトランザクションの基準件数と同じかそれ以上の場合は、`too_many_actx_alert_msg_url_count`ほどのurl情報を通知メッセージに追加して通知を転送    
 
 -   プロファイルデバッグオプション：デバッグ対象パターンを登録した場合、プロファイルとエージェントログでスタックを確認できる機能を追加
 
-    ```ini title='whatap.conf 설정'
+    ```ini title='whatap.conf'
     hook_method_debug_enabled=true
     hook_method_debug_patterns=
     ```
 
 -   プラグイン活用クラスの追加
 
-    -   _{AGENT_HOME}/plugin/{...}.x_ファイルで活用できるように「HashTable」クラスを追加しました。
-    -   「whatap.agent.api.Ref.h」を使用すると「HashTable」を活用できます。
+    -   _{AGENT_HOME}/plugin/{...}.x_ファイルで活用できるように`HashTable`クラスを追加しました。
+    -   `whatap.agent.api.Ref.h`を使用すると`HashTable`を活用できます。
 
-        ```java title='예시'
+        ```java title='Example'
         Class hashTable = (Class) whatap.agent.api.Ref.h;
         ```
 
 -   TTA BMTのための専用クラスを追加：Javaエージェントの試演に活用可能
 
-    ```java title='Java 클래스'
+    ```java title='Java Class'
     # map
     bmt.m.MyMap
 
@@ -96,7 +96,7 @@ import UI from '@site/src/components/UItext';
     bmt.jdbc.Lock
     ```
 
-    ```java title='추적'
+    ```java title='Tracing'
     // Connection Poolの追跡
     // ConnectionPoolASM
     target.put("bmt/ds/MyDataSource", MyDataSource.className);
@@ -128,13 +128,13 @@ import UI from '@site/src/components/UItext';
 
     -   設定を追加してプロファイルにエラー関連情報を表示するステップを追加
 
-    ```ini title='whatap.conf 설정(기본값)'
+    ```ini title='whatap.conf'
     profile_error_step_enabled=false
     ```
 
 -   jmx設定を追加：任意のjmx情報を追加で照会できる機能を追加
 
-    ```ini title='whatap.conf 설정'
+    ```ini title='whatap.conf'
     perfx_tomcat_enabled=false
     perfx_jmx_value_limit=100
     perfx_jmx_tag_from_objectname_enabled=false
@@ -157,7 +157,7 @@ import UI from '@site/src/components/UItext';
     oshi_proc_mem_enabled=false
     ```
 
--   「org.edb.jdbc.PgCallableStatement」をjdbc statement追跡する機能を追加
+-   `org.edb.jdbc.PgCallableStatement`をjdbc statement追跡する機能を追加
 
 -   OracleプロシージャにおけるSQLパラメータの追跡機能
 
@@ -165,7 +165,7 @@ import UI from '@site/src/components/UItext';
 
     -   CallableStatementでSQLパラメータを追跡できるように機能を追加しました。
 
--   Weblogicにおいて「HttpURLConnection」でhttp呼び出しをする場合「weblogic.net.http.HttpURLConnection」の使用を追跡する機能を追加
+-   Weblogicにおいて`HttpURLConnection`でhttp呼び出しをする場合`weblogic.net.http.HttpURLConnection`の使用を追跡する機能を追加
     ```ini title='whatap.conf'
     HttpURLConnection_weblogic=true
     ```
@@ -174,24 +174,24 @@ import UI from '@site/src/components/UItext';
 
 -   既存の30秒平均で収集したtpsデータを5秒平均で収集する機能を追加
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     service_metrics_spike_enabled=false
     ```
 
 -   プロファイルデータの圧縮転送機能を追加
 
-    -   プロファイルデータが「profile_zip_max_buffer_size」サイズを超える場合、プロファイルデータを転送
+    -   プロファイルデータが`profile_zip_max_buffer_size`サイズを超える場合、プロファイルデータを転送
 
-    -   キューにデータが集まって「profile_zip_max_wait_time」の値を超えた場合、プロファイルデータを転送
+    -   キューにデータが集まって`profile_zip_max_wait_time`の値を超えた場合、プロファイルデータを転送
 
-    -   プロファイルデータを転送する際、キューのプロファイルデータが「profile_zip_min_size」サイズ未満の場合を除いて、プロファイルデータを圧縮転送    
+    -   プロファイルデータを転送する際、キューのプロファイルデータが`profile_zip_min_size`サイズ未満の場合を除いて、プロファイルデータを圧縮転送    
 
-    ```ini title='whatap.conf 설정'
+    ```ini title='whatap.conf'
     # プロファイルデータの圧縮有無
     profile_zip_enabled=true
 
     # プロファイルデータを持つキューのサイズ
-    # ZipProfileThread.java가 사용하는 RequestQueue 사이즈를 결정
+    # ZipProfileThread.javaが使用するRequestQueueサイズを決定
     profile_zip_queue_size=1000
 
     # プロファイルデータを送信する待ち時間
@@ -217,11 +217,11 @@ import UI from '@site/src/components/UItext';
 
 ## Change（アップデート）
 
--   logsinkデータ転送周期である「max_wait_time」のオプション名を「logsink_max_wait_time」に修正
+-   logsinkデータ転送周期である`max_wait_time`のオプション名を`logsink_max_wait_time`に修正
 
 -   プラグインで収集するCustomCounter機能を既存のCustomCounterTaskの代わりにCustomTaskLoaderに置き換えました。
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     custom_task_enabled=true
     custom_task_jarfile={full_path}
     ```
@@ -232,11 +232,11 @@ import UI from '@site/src/components/UItext';
 
     -   トランザクションとプロファイル経過時間の測定時、システム時間ではなくJVM時間を使用するように修正
 
-    -   経過時間を測定する場合、既存の「System.currentTimeMillis()」から「System.nanoTime()」を使用するように修正
+    -   経過時間を測定する場合、既存の`System.currentTimeMillis()`から`System.nanoTime()`を使用するように修正
 
 -   エージェント-proxyのサーバー時間に差がある場合、エージェントログにサーバー間の時間差を表示するように修正
 
-    ```bash title='에이전트 로그'
+    ```bash title='Agent log'
     # 30秒以上差がある場合 
     "fatal warning time-reverse（時間差）ms"
 
@@ -246,7 +246,7 @@ import UI from '@site/src/components/UItext';
 
 -   ユーザーカウントのためのオプションをwclient_xx形式に修正、以前のオプション名も使用できますが、v2.2.0からは新しいオプション名の使用をお勧めします。
 
-    ```ini title='whatap.conf 설정(교체/추가)'
+    ```ini title='whatap.conf'
     # 交替
     trace_user_method=IP
     wclient_trace_type=IP
@@ -285,10 +285,10 @@ import UI from '@site/src/components/UItext';
 
 -   ユーザー数に関するカウント設定を反映して、組み込みweavingコンポーネントを再コンパイル
 
--   CounterPackの経過時間計算に「System.nanoTime()」を使用するよう修正
+-   CounterPackの経過時間計算に`System.nanoTime()`を使用するよう修正
 
 -   ログ出力ロゴにリリースバージョンを含む
-    ```bash title='로고'
+    ```bash title='Logo'
       _       ____  ______           
     | |     / / /_/_  __/___ _____   ___  ___ 
     | | /| / / __ \/ / / __ `/ __ \ | _ \|_  ) 
@@ -300,7 +300,7 @@ import UI from '@site/src/components/UItext';
 
 -   Javaエージェントの統計収集のデフォルト値を従来の5000から10000に修正、統計データの送信時に2秒ごとにチェック
 
-    ```ini title='whatap.conf 기본 설정'
+    ```ini title='whatap.conf'
     stat_tx_max_count=10000
     ```
 
@@ -312,7 +312,7 @@ import UI from '@site/src/components/UItext';
 
     -   oshiライブラリフォルダ名を変更：lib2 -> lib4    
 
-## Fixed（バグ修正）
+## Fixed(バグ修正)
 
 -   ジャバエージェントの組み込みプラグインWebfluxウィービングプラグインのread-onlyであるHttpHeaders項目に対して、マルチトランザクション関連ヘッダーを追加する場合に発生するエラーを修正 
 
@@ -322,4 +322,4 @@ import UI from '@site/src/components/UItext';
 
 -   トランザクションとステップの経過時間が0より小さい場合、経過時間を0として表示するバグを修正。
 
--   「blocking_detect_count」件数処理のバグを修正
+-   `blocking_detect_count`件数処理のバグを修正

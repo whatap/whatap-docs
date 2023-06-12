@@ -14,11 +14,11 @@ import TR from '@site/src/components/TR';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}
+{@include: ../common-items/_agent-signup-guide.mdx}  
 
 {@youtube: Y66Siequ2S0}
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -28,19 +28,19 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 1.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-```ini title='whatap.conf'
-license=プロジェクトアクセスキー
-whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
+    ```ini title='whatap.conf'
+    license=プロジェクトアクセスキー
+    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
 
-db = {$CUBRID_HOME/databases/databases.txtのdb-name}
-db_ip = {DBサーバーのIPアドレス}
-db_port = {$CUBRID_HOME/conf/cubrid_broker.confのBROKER_PORT (default : 33000)}
-cms_port = {$CUBRID_HOME/conf/cm.confのcm_port (default : 8001)}
-```
+    db = {$CUBRID_HOME/databases/databases.txtのdb-name}
+    db_ip = {DBサーバーのIPアドレス}
+    db_port = {$CUBRID_HOME/conf/cubrid_broker.confのBROKER_PORT (default : 33000)}
+    cms_port = {$CUBRID_HOME/conf/cm.confのcm_port (default : 8001)}
+    ```
 
-1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+2.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-  データベースサーバーのオペレーティングシステムとバージョンに合うJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
 
 <!-- 공통 Notes -->
 
@@ -75,7 +75,7 @@ CUBRIDをモニタリングするためには、DBアカウントとCUBRID Manag
 -   Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameのような形式で入力する必要があります。
 -   `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character（\\）を一緒に入力してください。
 
-    ```bash title='예시'
+    ```bash title='Example'
     ./uid.sh whatap whatap\!pwd
     ```
 

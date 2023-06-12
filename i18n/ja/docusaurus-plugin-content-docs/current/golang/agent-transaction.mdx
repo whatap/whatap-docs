@@ -17,32 +17,55 @@ _whatap.conf_ファイル設定を通じてHTTP Parameter、HTTP Header情報を
 
 ### whatap.conf設定
 
--   **grpc_profile_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>gRPC（Google Remote Procedure Call, 以下gRPC）情報の収集有無を設定します。
+-   **grpc_profile_enabled** <span class='type'>Boolean</span>
 
--   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>client stream method情報の収集有無を設定します。
+    デフォルト値 `true`
 
--   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>server stream method情報の収集有無を設定します。
+    gRPC(Google Remote Procedure Call、以下gRPC) 情報の収集有無を設定します。
 
--   **grpc_profile_ignore_method** <span class='type'>String</span><br/>
-    デフォルト値 `agent`<br/>設定した値に対するメソッドを収集しません。複数登録するときは、コンマ（,）を区切り文字として利用してください。
+-   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
 
--   **grpc_profile_stream_method** <span class='type'>String</span><br/>
-    設定したstream methodを別途のトランザクションとして構成します。複数登録するときは、コンマ（,）を区切り文字として利用してください。長時間続くstream接続に対して、それぞれのmethod呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。
+    デフォルト値 `true`
 
--   **grpc_profile_stream_identify** <span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>Stream full methodをトランザクション名で収集し、同一のfull methodに対してclientとserverを区切る接頭辞を追加します。
-    ```ini title='예시'
+    client stream method情報の収集有無を設定します。
+
+-   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    server stream method情報の収集有無を設定します。
+
+-   **grpc_profile_ignore_method** <span class='type'>String</span>
+
+    デフォルト値`agent`
+
+    設定した値に対するmethodを収集しません。複数登録するときはコンマ(,)を区切り文字として利用してください。
+
+-   **grpc_profile_stream_method** <span class='type'>String</span>
+
+    設定したstream methodを別途のトランザクションとして構成します。複数登録するときは、コンマ(,)を区切り文字として利用してください。長時間続くstream接続に対して、それぞれのmethod呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。
+
+-   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Stream full methodをトランザクション名で収集し、同一のfull methodに対してclient、serverをｋ宇別できる接頭語を追加します。
+
+    ```ini title='whatap.conf'
     grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
     ```
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `false`<br/>gRPC情報の中でhttpパラメータ情報の収集有無を設定します。
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `false`<br/>gRPC情報の中でhttpヘッダー情報の収集有無を設定します。
+    デフォルト値`false`
+
+    gRPC情報の中でhttpパラメータ情報の収集有無を設定します。
+
+-   **profile_http_header_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    gRPC情報の中でhttpヘッダー情報の収集有無を設定します。
 
 ## Webトランザクション追跡
 

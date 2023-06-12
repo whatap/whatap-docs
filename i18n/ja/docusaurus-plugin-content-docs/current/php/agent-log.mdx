@@ -13,9 +13,11 @@ tags:
 
 ## ログの設定
 
--   **whatap.log_keep_days**<span class='type'>Day</span><br/>
-      デフォルト値`7`<br/>
-      ログファイルの保存期間を設定します。
+-   **whatap.log_keep_days** <span class='type'>Day</span>
+
+    デフォルト値`7`
+
+    ログファイルの保存期間を設定します。
 
 ## ログシンク(LogSink) の設定
 
@@ -23,38 +25,50 @@ tags:
 
 ### 基本設定
 
--   **whatap.logsink_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      値が`true`の場合、ログデータを収集します。
+-   **whatap.logsink_enabled** <span class='type'>Boolean</span>
 
--   **whatap.logsink_zip_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      値が`true`の場合、ログデータは圧縮されて送信されます。デフォルトはGzipです。
+    デフォルト値`false`
 
--   **whatap.watchlog_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      値が`true`の場合、ログファイルを指定してログデータを収集します。
+    値が`true`の場合、ログデータを収集します。
+
+-   **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`の場合、ログデータを圧縮して送信します。デフォルト値は、GZIPです。
+
+-   **whatap.watchlog_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`の場合、ログファイルを指定して、ログデータを収集します。
 
 ### ログファイル設定
 
--   **whatap.watchlog.[ログファイル固有ID指定].enabled**<span class='type'>Boolean</span><br/>
-      値が`true`の場合、ログファイルの固有IDをランダムに指定し、該当IDでログデータが収集されます。
+-   **whatap.watchlog.[ログファイル固有ID指定].enabled** <span class='type'>Boolean</span>
 
--   **whatap.watchlog.[ログファイル固有ID指定].file**<span class='type'>String</span><br/>
-      ログファイルの固有IDを任意に指定し、ファイルパスとファイル名を設定します。
+    値が`true`の場合、ログファイルの固有IDを任意に指定し、そのIDでログデータを収集します。
+
+-   **whatap.watchlog.[ログファイル固有ID指定].file** <span class='type'>String</span>
+
+    ログファイルの固有IDを任意に指定し、ファイルパスとファイル名を設定します。
 
 ### 例
 
-```ini title='기본 설정'
-whatap.logsink_enabled=true
-whatap.logsink_zip_enabled=true
-whatap.watchlog_enabled=true
-```
+-   **基本設定**
 
-```ini title='Apache error log 및 access log 설정'
-whatap.watchlog.apache_error_log.enabled=true
-whatap.watchlog.apache_error_log.file=/etc/httpd/logs/error_log
+    ```ini title='whatap.conf'
+    whatap.logsink_enabled=true
+    whatap.logsink_zip_enabled=true
+    whatap.watchlog_enabled=true
+    ```
 
-whatap.watchlog.apache_access_log.enabled=true
-whatap.watchlog.apache_access_log.file=/etc/httpd/logs/access_log
-```
+-   **Apache error logおよびaccess log設定**
+
+    ```ini title='whatap.conf'
+    whatap.watchlog.apache_error_log.enabled=true
+    whatap.watchlog.apache_error_log.file=/etc/httpd/logs/error_log
+
+    whatap.watchlog.apache_access_log.enabled=true
+    whatap.watchlog.apache_access_log.file=/etc/httpd/logs/access_log
+    ```

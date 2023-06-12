@@ -1,0 +1,44 @@
+---
+id: java-2.2.5
+title: Java Agent 2.2.5
+toc_max_heading_level: 2
+---
+
+2023년 5월 30일
+
+:::caution
+
+**Java 에이전트 2.2.5 버전부터는 이전의 _instrument_ 폴더 사용불가**
+
+-   _instrument_ 폴더는 2.2.4 버전까지 사용 가능합니다.
+
+-   _instrument_ 폴더는 이후 _weaving_ 폴더로 대체 예정입니다.
+
+-   _instrument_에서 사용하던 오픈 소스 추적 플러그인은 새로운 _weaving_ 폴더에서 정상 동작을 보장하지 않습니다.
+
+:::
+
+## New Feature <sup><Status>New</Status></sup>
+
+-   최신 spring-boot 비동기 추적 기능 추가
+
+    -   webflux + "tomcat9, tomcat10, undertow, netty" 추적 기능 추가
+
+    -   r2dbc-mysql + "jasync, dev.miku" 드라이버 추적 기능 추가
+
+    ```ini title='whatap.conf'
+    # spring-boot-2.7 이상인 경우
+    weaving=tomcat9,spring-boot-2.7.x
+
+    # spring-boot-3.0 이상인 경우
+    weaving=tomcat10,spring-boot-3.x
+    springboot_tomcat10_enabled=true
+    ```
+
+## Update <sup><Status>Change</Status></sup>
+
+-   **webflux**, **r2dbc** 오픈 소스 플러그인을 내부(embedded) 플러그인으로 전환
+
+## Bug Fixing <sup><Status>Fixed</Status></sup>
+
+-   비동기 tomcat(예시, **webflux** + **tomcat**) 사용 시 동일한 서비스가 두 번 호출되는 버그 수정

@@ -25,10 +25,12 @@ WhaTapデータベースモニタリングサービスのユーザーからの�
 > ```
 >
 > :::note
+>
 > 次の文書を参考にしてください。
 >
 > -   2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
 > -   6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+>
 > :::
 
 <br/>
@@ -81,6 +83,36 @@ WhaTapデータベースモニタリングサービスのユーザーからの�
 >
 > --権限の付与
 > grant REPLICATION SLAVE, REPLICATION CLIENT on *.* to whatap;
+> ```
+
+### メタロックモニタリング
+
+| Q. MySQLで、ロックツリーにメタロック(データベースオブジェクト名や構造を変更する場合に取得するロック)が照会されません。メタロックもモニタリングするにはどうすればいいですか？ |
+| ------------------------------------------------------------------------------------------- |
+
+> A. DB設定とWhaTapエージェント設定が必要です。
+>
+> **DB設定**
+>
+> ```sql
+> # 1. Performance_schema活性化
+> performance_schema = on
+> # 2. setup_consumers活性化：以下のクエリ結果、ENABLEDが「YES」でなければならない(8.0からはデフォルト値がYES)
+> SELECT *
+> FROM performance_schema.setup_instruments
+> WHERE NAME = 'wait/lock/metadata/sql/mdl'; 
+>
+> -- ENABLEDが「NO」の場合はアップデートが必要
+> UPDATE setup_instruments 
+> SET ENABLED = 'YES',TIMED='YES' 
+> WHERE NAME = 'wait/lock/metadata/sql/mdl';
+> ```
+>
+> **WhaTap DBエージェント設定**
+>
+> ```sql
+> # whatap.confに以下の設定を追加
+> metalock=1
 > ```
 
 </div>

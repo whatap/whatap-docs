@@ -371,10 +371,6 @@
     "message": "Log 모니터링",
     "description": "The label for the doc item Log 모니터링 in sidebar goSidebar, linking to the doc log/introduction"
   },
-  "sidebar.postgreSidebar.category.PostgreSQL 모니터링": {
-    "message": "PostgreSQL 모니터링",
-    "description": "The label for category PostgreSQL 모니터링 in sidebar postgreSidebar"
-  },
   "sidebar.postgreSidebar.category.설치하기": {
     "message": "설치하기",
     "description": "The label for category 설치하기 in sidebar postgreSidebar"
@@ -826,10 +822,6 @@
   "sidebar.releaseSidebar.category.XOS": {
     "message": "XOS",
     "description": "The label for category XOS in sidebar releaseSidebar"
-  },
-  "sidebar.releaseSidebar.doc.DBX": {
-    "message": "DBX",
-    "description": "The label for the doc item DBX in sidebar releaseSidebar, linking to the doc release-notes/db/dbx-release-notes"
   },
   "sidebar.releaseSidebar.doc.URL": {
     "message": "URL",
@@ -1494,5 +1486,9 @@
   "sidebar.awslogSidebar.doc.설정하기": {
     "message": "설정하기",
     "description": "The label for the doc item 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/aws-log-setting"
+  },
+  "sidebar.awslogSidebar.doc.VPC 설정하기": {
+    "message": "VPC 설정하기",
+    "description": "The label for the doc item VPC 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/install-aws-log-vpc"
   }
 }

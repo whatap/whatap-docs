@@ -4,25 +4,33 @@
 
 個々のトランザクショントレースは、無期限にステップを収集することができません。トランザクションごとに長さが制限されているバッファーにトレースステップを保存します。各トランザクションは、最大で収集できるステップの数がオプションとして指定されます。
 
--   **whatap.profile_step_max_count**\
-      デフォルト値 `1024`<br/>
-      最大で収集可能なステップ数です。
+-   **whatap.profile_step_max_count**
 
--   **whatap.profile_step_normal_count**\
-      デフォルト値 `800`<br />
-      これは通常、制限なしで収集されるステップの数です。
+    デフォルト値 `1024`
 
--   **whatap.profile_step_heavy_count**\
-      デフォルト値 `1000`<br/>
-      normal countを超過した場合、ステップは応答時間が遅いステップとアクティブスタックステップのみを収集します。
+    最大で収集可能なステップの数です。
 
--   **whatap.profile_step_heavy_time**\
-      デフォルト値 `100`<br/>
-      heavy count以内で収集されるステップの基準時間は、`whatap.profile_step_heavy_time`です。
+-   **whatap.profile_step_normal_count**
 
-      ![step_buffer](https://img.whatap.io/media/agent_java/data/step_buffer.png) 
+    デフォルト値`800`
 
-      収集されたトレースのステップ数がheavy countを超える場合は、アクティブスタックのみが収集されます。 この場合、最大ステップ数は 、`whatap.profile_step_max_count`を超えません。
+    通常、何の制限もなく収集されるステップの数です。
+
+-   **whatap.profile_step_heavy_count**
+
+    デフォルト値 `1000`
+
+    normal countを超えた場合、ステップは応答時間が遅いステップとアクティブスタックのステップのみを収集します。
+
+-   **whatap.profile_step_heavy_time**
+
+    デフォルト値`100`
+
+    heavy count以内で収集されるステップの基準時間は`whatap.profile_step_heavy_time`です。
+
+    ![step_buffer](https://img.whatap.io/media/agent_java/data/step_buffer.png) 
+
+    収集されるトレースのステップ数がheavy countを超えた場合は、アクティブスタックのみが収集されます。この場合、最大ステップ数は 、`whatap.profile_step_max_count`を超えません。
 
 ## 環状収集
 

@@ -26,9 +26,13 @@ URLを呼び出すための接続自体が遮断された場合です。
 目的地に到達するためのパスが存在しません。 次の項目を正確に入力したか確認してください。
 
 -   ポート指定
+
 -   入力URLのプロトコル
+
     :::note
+
     htts://とhttps://を間違って入力した場合など
+
     :::
 
 ## HTTPS
@@ -49,4 +53,5 @@ sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid
 エージェントが呼び出したサイトのSSL証明書にアクセスできない場合に発生します。
 
 -   エージェントの問題です。[support@whatap.io](mailto:support@whatap.io)まで問い合わせてください。 現在まではSSL認証書のアルゴリズムに対応していない事例が識別されました。
+
 -   自主的にJava HttpClientベースでHTTPSプロトコルベースの呼び出しが可能なサンプルモジュールを共有可能であれば、類似のエージェントを追加開発して提供します。

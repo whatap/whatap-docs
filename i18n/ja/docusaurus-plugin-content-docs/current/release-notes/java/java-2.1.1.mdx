@@ -54,7 +54,7 @@ agent_meta_tags_enabled=true
 
 #### エージェント設定のlicenseキーオプションの修正
 
-whatap.confでlicenseとaccesskeyのオプションの両方を活用できるように修正しました。
+whatap.confで、licenseとaccesskeyのオプションの両方を利用できるように修正しました。
 
 ```ini title='whatap.conf'
 # 同一の機能
@@ -68,7 +68,7 @@ accesskey=
 
 #### エージェント実行ロゴの修正
 
-Javaエージェント実行時のロゴ内容を修正しました。
+Javaエージェント実行時のロゴ内容を修正
 
 ```
 The Best Observability in Java
@@ -80,7 +80,7 @@ The Best Observability in Java
 
 ### バグ
 
-#### クラスシグネチャー確認時のバグを修正
+#### クラスシグネチャー認証時のバグを修正
 
 エージェント設定メニューのクラスシグネチャー表示の要請時にNullPointExceptionが発生する問題を修正しました。
 
@@ -153,7 +153,7 @@ Timestampログ記録時にエラーが発生する問題を修正しました�
 
 #### sql追跡時、LocalDateを追跡できない問題
 
-「java.time.LocalDate」を追跡できない問題を修正
+`java.time.LocalDate`を追跡できない問題を修正
 
 ## 2022-05-11
 
@@ -193,9 +193,9 @@ httpc_event_detail_enable=false
 
 Http呼び出し時にエラーが発生すると通知を受けられるように機能を追加しました。
 
-「exception_alert_enabled」オプションを「true」に設定して機能の活性化ができ、「exception_alert_stack_size」オプションで指定した値に合わせてエラースタックを通知メッセージとして受け取ることができます。
+`exception_alert_enabled`オプションを`true`に設定して機能の活性化ができ、`exception_alert_stack_size`オプションで指定した値に合わせてエラースタックを通知メッセージとして受け取ることができます。
 
-一度通知が発生すると「exception_alert_silent_time」オプションで指定した期間中にはエラー通知を非活性化することができます。
+一度通知が発生すると`exception_alert_silent_time`オプションで指定した期間中にはエラー通知を非活性化することができます。
 
 ```ini title='whatap.conf'
 # デフォルト値
@@ -213,7 +213,7 @@ exception_alert_silent_time=300000
 
 #### データベース呼び出しURLの保存
 
-データベース呼び出しURLを保存するように修正しました。
+データベース呼び出しのURLを保存するように修正しました。
 
 #### データベース呼び出しハッシュ値の削除
 
@@ -225,13 +225,13 @@ exception_alert_silent_time=300000
 
 target IPまたはサービスの接続状態をログモニタリングのliveTailで確認できるように、連携サービス状態の追跡機能を追加しました。
 
-「logsink_rt_enabled」オプションを「true」に設定して機能を活性化でき、#RemoteTraceカテゴリでログを収集します。
+`logsink_rt_enabled`オプションを`true`に設定して機能を活性化でき、#RemoteTraceカテゴリでログを収集します。
 
 -   正常なレスポンスの場合のレベルはOK、エラーの場合のレベルはエラーです。
 
--   正常なレスポンスの場合、「logsink_rt_ok_interval」設定間隔に合わせてログを記録します。デフォルト値は30秒です。
+-   通常のレスポンスの場合、`logsink_rt_ok_interval`設定の間隔でログは記録されます。デフォルト値は30秒です。
 
--   エラーレスポンスの場合、「logsink_rt_error_interval」設定間隔に合わせてログを記録します。デフォルト値は5秒です。
+-   エラーレスポンスの場合、`logsink_rt_error_interval`設定の間隔でログは記録されます。デフォルト値は5秒です。
 
 ```ini title='whatap.conf'
 # デフォルト値
@@ -261,7 +261,9 @@ active_stack_thread_name_enabled=false
 ```
 
 :::note
-yardバージョンが低い場合、trueに設定するとプロトコルエラーによりエージェント接続が継続的に切断されます。
+
+yardバージョンが低い場合、trueに設定するとプロトコルエラーによりエージェント接続は継続的に切断します。
+
 :::
 
 #### 非同期スレッド名を表示する設定を追加
@@ -371,7 +373,7 @@ logtag_httphost_enabled=false   # http host
 
 既存のCollectionクラスをhookingする方式から、CollectionHolderを通じて間接的にCollectionクラス情報を照会できるように修正しました。
 
-Collectionを生成するクラスを「collectionn_nonstatic_holders」設定に追加して、Collection Map項目で確認することができます。
+Collectionを生成するクラスを`collectionn_nonstatic_holders`設定に追加して、Collection Map項目で確認することができます。
 
 ```ini title='whatap.conf'
 collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
@@ -383,17 +385,17 @@ collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
 
 #### スレッド中断設定の追加
 
-thread動作時間が設定値を超える場合、thread中断可否を設定できるように項目を追加しました。デフォルト設定値は「false」です。
+thread動作時間が設定値を超える場合、thread中断可否を設定できるように項目を追加しました。デフォルト設定値は`false`です。
 
 ```ini title='whatap.conf'
 auto_thread_kill_enabled=false  # デフォルト値
 ```
 
-#### http headerから「Cookie」項目を除外
+#### http headerから'Cookie'項目を除外
 
-http headerから「Cookie」項目を除外するよう修正しました。
+http headerから'Cookie'項目を除外するよう修正しました。
 
-```ini title='whatap.conf - http header 기본 제외 항목'
+```ini title='whatap.conf'
 （既存）cookie、accept、user-agent、referer
 （修正）Cookie、cookie、accept、user-agent、referer
 ```
@@ -404,7 +406,7 @@ http headerから「Cookie」項目を除外するよう修正しました。
 
 #### weaving設定追加
 
-プラグインを追跡できるようにweaving設定を追加しました。 既存の「weaving_reserved」設定と同じ機能で、「weaving」または「weaving_reserved」設定がすべて動作します。
+プラグインを追跡できるようにweaving設定を追加しました。 既存の`weaving_reserved`設定と同じ機能で、`weaving`または`weaving_reserved`設定がすべて動作します。
 
 ```ini title='whatap.conf'
 weaving=tomcat10
@@ -412,7 +414,7 @@ weaving=tomcat10
 
 #### エージェント環境変数の除外値の追加
 
-環境変数の照会機能で特定のキー値を入力する場合、照会項目から除外できるように機能を追加しました。 区切り文字は「,」で大文字と小文字を区分しません。「agent_env_system_enabled」、「agent_env_jvm_enabled」の設定と関連付けて使用することができます。
+環境変数の照会機能で特定のキー値を入力する場合、照会項目から除外できるように機能を追加しました。 区切り文字は「,」で大文字と小文字を区分しません。`agent_env_system_enabled`、`agent_env_jvm_enabled`の設定と関連付けて使用することができます。
 
 ```ini title='whatap.conf'
 agent_env_system_enabled=false

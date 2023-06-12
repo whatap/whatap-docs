@@ -1,16 +1,25 @@
--   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    トレース履歴にHTTPヘッダー情報を記録するには、`true`として設定してください。
+-   **profile_http_header_enabled** <span class='type'>Boolean</span>
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      トレース履歴にhttpパラメータ情報を記録するには`true`に設定してください。パラメータは、別途のセキュリティキーを入力して照会できます。
+    デフォルト値`false`
+
+    トレース履歴にHTTPヘッダー情報を記録するには、`true`に設定します。
+
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
+
     :::note
-    セキュリティキーは、WASサーバー_`${WHATAP_AGENT_HOME}`/paramkey.txt_のファイル内に6桁として設定します。_paramkey.txt_ファイルが存在しない場合は、ランダム値で自動生成します。
+
+    セキュリティキーはWASサーバ_`${WHATAP_AGENT_HOME}`/paramkey.txt_ ファイル内に6桁で設定します。_paramkey.txt_ ファイルが存在しない場合は、ランダム値で自動生成します。
+
     :::
 
--   **profile_http_header_url_prefix** <span class='type'>String</span><br/>
+-   **profile_http_header_url_prefix** <span class='type'>String</span>
+
     トレース履歴にHTTPヘッダー情報を記録する対象URLのprefixを定義するときに使用します。
 
--   **profile_http_parameter_url_prefix** <span class='type'>String</span><br/>
-    トレース履歴にHTTPパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+-   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+
+    トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。

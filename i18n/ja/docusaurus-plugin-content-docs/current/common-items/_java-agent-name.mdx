@@ -1,23 +1,35 @@
--   **whatap.name** <span class='type'>String</span><br/>
-    デフォルト値`{type}-{ip2}-{ip3}-{port}`<br/>エージェント名をパターンとして設定します。
+-   **whatap.name** <span class='type'>String</span>
 
--   **whatap.oname** <span class='type'>String</span><br/>
+    デフォルト値`{type}-{ip2}-{ip3}-{port}`
+
+    エージェント名をパターンとして設定します。
+
+-   **whatap.oname** <span class='type'>String</span>
+
     エージェント名を文字列として設定します。
 
--   **whatap.okind** <span class='type'>String</span><br/>
-      エージェントが属するグループ単位を設定します。 複数のエージェントを一緒に設定して、そのグループ名でトポロジを確認できます。
+-   **whatap.okind** <span class='type'>String</span>
 
--   **whatap.onode** <span class='type'>String</span><br/>
-      エージェントが属するノード単位を設定します。
+    エージェントが属するグループ単位を設定します。複数のエージェントを一緒に設定して、そのグループ名でトポロジを確認できます。
 
--   **auto_oname_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      サーバーに登録するエージェント名（`whatap.oname`）をサーバーから自動付与される機能をアクティブにします。 該当オプションを適用する際、JVMオプションとして設定した`-Dwhatap.name `、`-Dwhatap.oname`の値は無視します。 収集サーバーとの通信により、`whatap.oname`値が付与され、エージェントの一般的な動作を開始します。  
+-   **whatap.onode** <span class='type'>String</span>
 
--   **auto_oname_prefix**<span class='type'>String</span><br/>
-      デフォルト値`agent`<br/>
-      エージェント名をサーバーから自動付与するとき、エージェント名のprefixや業務名を使用します。prefixにシリアル番号「1~)」を付与します。
+    エージェントが属するNode単位を設定します。
 
--   **auto_oname_reset**<span class='type'>Int</span><br/>
-    デフォルト値`0`<br/>
-    サーバーから新しいエージェント名を付与するために修正します。エージェント名を自動付与すると、`whatap.oname`というシステム環境変数に設定されます。一度定められたシステム環境変数は、JAVAインスタンスが再起動するまで維持します。リセットしたいときは、`auto_oname_reset`値を修正してください。現在の設定値と異なる値に変更すると適用されます。
+-   **auto_oname_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    サーバーに登録するエージェント名(`whatap.oname`)089700をサーバーから自動付与される機能をアクティブにします。 該当オプションを適用する際、JVMオプションとして設定した`-Dwhatap.name `、`-Dwhatap.oname`の値は無視します。 収集サーバーとの通信により、`whatap.oname`値が付与され、エージェントの一般的な動作を開始します。  
+
+-   **auto_oname_prefix** <span class='type'>String</span>
+
+    デフォルト値`agent`
+
+    エージェント名をサーバーから自動付与するとき、エージェント名のprefixや業務名を使用します。prefixにシリアル番号「1~)」を付与します。
+
+-   **auto_oname_reset** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    サーバーから新しいエージェント名を付与するために修正します。エージェント名を自動付与すると、`whatap.oname`というシステム環境変数に設定されます。一度定められたシステムの環境変数は、JAVAインスタンスが再起動するまで維持します。リセットしたいときは、`auto_oname_reset`値を修正してください。現在の設定値と異なる値に変更すると適用されます。

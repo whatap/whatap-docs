@@ -1,11 +1,17 @@
--   **mtrace_rate**<span class='type'>Percentage</span><br/>
-      デフォルト値 `0`<br/>
-      最初のトランザクションが発生したときに発行されるMTID(Multi Transaction ID)の発行比率を設定するオプションです。MTIDを追跡すると、登録されたすべてのアプリケーション間の呼び出しを確認できます。同じプロジェクトに属するアプリケーションは、CallerとCallee機能によりトランザクション トレースを直接確認することができます。
+-   **mtrace_rate** <span class='type'>Percentage</span>
 
--   **mtrace_spec**<span class='type'>String</span><br/>
-      デフォルト値 `v1`<br/>
-      現在のインスタンスのアプリケーションバージョンを指定します。任意の文字列を指定できます。このデータは、呼び出し統計に使用されます。
+    デフォルト値`0`
 
--   **mtrace_send_url_length**<span class='type'>Integer</span><br/>
-      デフォルト値 `80`<br/>
-      Http CallerはCalleeに自分のURLを渡します。この場合、URLの長さを制限していますが、その長さを指定します。
+    最初のトランザクションが発生したときに発行されるMTID(Multi Transaction ID)の発行率を設定するオプションです。MTIDを追跡することで、登録されているすべてのアプリケーション間の呼び出しを確認できます。同じプロジェクトに属するアプリケーションは、Caller&Callee機能によりトランザクショントレースを直接確認することができます。
+
+-   **mtrace_spec** <span class='type'>String</span>
+
+    デフォルト値`v1`
+
+    現在のインスタンスのアプリケーションバージョンを指定します。任意の文字列を指定できます。このデータは、呼び出し統計に使用されます。
+
+-   **mtrace_send_url_length** <span class='type'>Integer</span>
+
+    デフォルト値`80`
+
+    HTTP CallerはCalleeに自分のURLを渡します。この時、URLの長さを制限しています。この長さを指定します。

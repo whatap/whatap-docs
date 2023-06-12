@@ -374,6 +374,8 @@ isNotEmpty(Key)
 
 ## Template{#template}
 
+<Xclude product='browser'>
+
 ![Composite Metrics - Template](/img/set-event-cmetric-template.png)
 
 -   In case comprehensive event judgment is required for the data received from multiple agents
@@ -385,17 +387,73 @@ isNotEmpty(Key)
 
     **_TPS has changed by more than 30% compared to the previous week._**
 
-### **_Inactive agents has been found._**
+-   **_Inactive agents has been found._**
 
--   An alert is sent when an event occurs each time the number of normal agents among all agents in the project drops below 6.
--   Condition: `num_of_current_agents` \< 6
+    -   An alert is sent when an event occurs each time the number of normal agents among all agents in the project drops below 6.
+    -   Condition: `num_of_current_agents` \< 6
 
-### **_Very slow active transactions are detected._**
+-   **_Very slow active transactions are detected._**
 
--   An alert is sent when the sum of transactions that take more than 8 seconds in an agent belonging to a specific `okind` of the project exceeds 10.
--   Condition: `very_slow_tx_cnt_m5_avg` > 10
+    -   An alert is sent when the sum of transactions that take more than 8 seconds in an agent belonging to a specific `okind` of the project exceeds 10.
+    -   Condition: `very_slow_tx_cnt_m5_avg` > 10
 
-### **_TPS has changed by more than 30% compared to the previous week._**
+-   **_TPS has changed by more than 30% compared to the previous week._**
 
--   An alert is sent when the sum of TPS of the agents that belong to a specific `okind` of the project changes by more than 30% compared to 7 days ago.
--   Condition: `one_week_diff_abs` > `current_tps` \* 0.3
+    -   An alert is sent when the sum of TPS of the agents that belong to a specific `okind` of the project changes by more than 30% compared to 7 days ago.
+    -   Condition: `one_week_diff_abs` > `current_tps` \* 0.3
+
+</Xclude>
+
+<InDoc product='browser'>
+
+**Browser** 모니터링에서는 다음과 같이 경고 알림 템플릿을 제공합니다. 
+
+#### Metrics Event Templates
+
+**_경고 알림_** > **_이벤트 설정_** > **_메트릭스_** 섹션에서 **_+ 이벤트 추가_** 버튼을 선택하세요. **_템플릿_**에서 원하는 항목을 선택하세요.
+
+-   **_페이지 로드 시간 이상_**
+
+    페이지 그룹(`${page_group}`)의 페이지 로드 시간이 10초 이상 소요되면 경고 알림을 보냅니다.
+
+-   **_브라우저 에러 수 이상_**
+
+    10건 이상의 브라우저 에러가 발생하면 경고 알림을 보냅니다.
+
+-   **_AJAX 응답 시간 이상_**
+
+    AJAX Path(`${request_path}`)의 AJAX 응답 시간이 30초 이상 소요되면 경고 알림을 보냅니다.
+
+#### 복합 메트릭스 이벤트 템플릿
+
+**_경고 알림_** > **_이벤트 설정_** > **_복합 메트릭스_** 섹션에서 **_+ 이벤트 추가_** 버튼을 선택하세요. **_템플릿_**에서 원하는 항목을 선택하세요.
+
+-   **_분당 페이지 로드 시간 이상_**
+
+    페이지 그룹(`${page_group}`)의 분당 평균 페이지 로드 시간이 10초 이상 소요되면 경고 알림을 보냅니다.
+
+-   **_분당 페이지 로드 수 이상_**
+
+    페이지 그룹(`${page_group}`)의 분당 페이지 로드 수가 100건 이상 발생하면 경고 알림을 보냅니다.
+
+-   **_분당 라우터 변경 시간 이상_**
+
+    페이지 그룹(`${page_group}`)의 분당 평균 라우터 변경 시간이 10초 이상 소요되면 경고 알림을 보냅니다.
+
+-   **_분당 AJAX 응답 시간 이상_**
+
+    AJAX Path(`${request_path}`)의 분당 평균 AJAX 응답 시간이 30초 이상 소요되면 경고 알림을 보냅니다.
+
+-   **_분당 AJAX 요청 수 이상_**
+
+    호스트(`${request_host}`)의 분당 AJAX 요청 수가 1000건 이상 발생하면 경고 알림을 보냅니다.
+
+-   **_분당 AJAX 실패 건수 이상_**
+
+    AJAX Path(`${request_path}`)의 분당 AJAX 실패 건수가 100건 이상 발생하면 경고 알림을 보냅니다.
+
+-   **_분당 브라우저 에러 수 이상_**
+
+    페이지 그룹(`${page_group}`)의 분당 브라우저 에러 수가 10건 이상 발생하면 경고 알림을 보냅니다.
+
+</InDoc>
