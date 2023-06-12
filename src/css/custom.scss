@@ -1,4 +1,8 @@
-@import url(fonts.css);
+// @import url(fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Coptic&display=swap');
 
 :root {
   --doc-sidebar-width: 220px !important;
@@ -93,18 +97,18 @@ html {
 }
 html[lang='ko'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 html[lang='en'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 html[lang='ja'] {
   word-wrap: break-word;
   word-break: break-all;
-  font-family: 'Noto Sans Japanese', 'Noto Sans', 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
 * {
@@ -149,6 +153,7 @@ html[lang='ja'] {
       a.ext {
         display: inline-block;
         background: url('img/external-link.svg') no-repeat top 6px right 0;
+        padding-right: 5px;
       }
     }
   }
@@ -826,6 +831,9 @@ main {
     .faq blockquote {
       border: none;
     }
+    .vpcb strong {
+      font-weight: 480;
+    }
     pre {
       code {
         font-size: var(--ifm-code-font-size);
@@ -924,6 +932,7 @@ main {
     span.mstop {color: rgb(192, 192, 192)}
     span.k8s-normal {color: rgb(153, 153, 153)}
     span.snormal {color: #00b543}
+    span.vpcbold{font-weight: 500}
     .mark {
       width: 20px;
       vertical-align: text-top;
