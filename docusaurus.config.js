@@ -118,8 +118,6 @@ module.exports = Promise.resolve({
       },
     ],
   ],
-  // themes: ['docusaurus-theme-search-typesense'],
-  // themes: ['@docusaurus/theme-search-algolia'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -141,30 +139,6 @@ module.exports = Promise.resolve({
         searchPagePath: 'search',
         //... other Algolia params
       },
-      // typesense: {
-      //   // Replace this with the name of your index/collection.
-      //   // It should match the "index_name" entry in the scraper's "config.json" file.
-      //   typesenseCollectionName: 'WhaTapDocs',
-      //   typesenseServerConfig: {
-      //     nodes: [
-      //       {
-      //         host: 'typesense.whatap.io',
-      //         port: 443,
-      //         protocol: 'https',
-      //       },
-      //     ],
-      //     apiKey: 'BP9kCFC5bN3GkU3IIQFRqNM7kbsSbWYaE74TyUP9jxuquARY',
-      //   },
-      //   // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-      //   typesenseSearchParameters: {
-      //     facet_by: 'language',
-      //     highlight_affix_num_tokens: 200,
-      //     split_join_tokens: 'always',
-      //   },
-      //   // Optional
-      //   contextualSearch: true,
-      //   searchPagePath: 'search',
-      // },
       metadata: [
         {
           name: 'keywords',
