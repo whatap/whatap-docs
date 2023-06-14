@@ -91,6 +91,9 @@
 .DocSearch {
   --docsearch-modal-width: 760px;
 }
+article[class*=searchResultItem] > h2 > a > span::after {
+  content: none !important;
+}
 
 html {
   line-height: 1.5;
