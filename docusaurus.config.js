@@ -384,6 +384,13 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'postgresql/monitoring-intro',
+            position: "left",
+            label: 'PostgreSQL V2 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'postgresql-v1/monitoring-intro',
             position: "left",
             label: 'PostgreSQL 모니터링',
