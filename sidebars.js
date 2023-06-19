@@ -3072,7 +3072,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_0_9',
@@ -3081,7 +3081,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_0_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-2_0_7',
@@ -3154,7 +3154,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_2_9',
@@ -3163,7 +3163,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_2_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_2_8',
                 'release-notes/k8s/k8s-1_2_7',
