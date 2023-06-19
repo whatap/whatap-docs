@@ -4,61 +4,169 @@ title: Service 1.102.X
 toc_max_heading_level: 3
 ---
 
-## Service 1.102.09
+## Service 1.102.15
 
-2023년 6월 8일
+2023년 6월 15일
 
 <div class='indentTab'>
 
-<p><Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 알림 설정에 대해 읽기 권한만을 가진 사용자가 <UI>메트릭스</UI>, <UI>복합 메트릭스</UI> 리스트 아이템의 내용을 확인할 수 있도록 툴팁 추가</p>
+### `Application`
+
+-   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
+
+-   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
+      
+    - 각 데이터 제목 수정
+
+    -   함수 → 메소드
+
+    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
+
+    -   모달 제목 수정: 함수 → 메소드
+
+    -   경과시간 단위 텍스트 수정: (ms) → ms
+
+    -   일부 출력값 제거: 진입 CPU 시간, 메모리
+
+-   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
+
+</div>
+
+## Service 1.102.14
+
+2023년 6월 13일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
+
+</div>
+
+## Service 1.102.13
+
+2023년 6월 13일
+
+<div class='indentTab'>
+
+### `Server`
+
+#### Alert
+
+-   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
+
+-   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
+
+</div>
+
+## Service 1.102.12
+
+2023년 6월 12일
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+
+</div>
+
+## Service 1.102.11
+
+2023년 6월 12일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+
+* * *
+
+### `Server`
+
+-   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+
+</div>
+
+## Service 1.102.10
+
+June 9, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Feature</Status> <UI>계정 정보</UI> 메뉴에서 <UI>마케팅 수신 동의</UI> 항목 추가</p>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+
+</div>
+
+## Service 1.102.09
+
+June 8, 2023
+
+<div class='indentTab'>
+
+<p><Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Metrics</UI>, added the tooltip where the users with only the read role for alert settings can see the lists of <UI>metrics</UI> and <UI>composite metrics</UI>.</p>
 
 </div>
 
 ## Service 1.102.08
 
-2023년 6월 8일
+June 8, 2023
 
 <div class='indentTab'>
 
 ### `Log`
 
-<p><Status>Change</Status> 파서 시뮬레이션 실패 시 노출되는 메시지 변경</p>
+<p><Status>Change</Status> Modified the message that appears upon failure of parser simulation.</p>
 
 </div>
 
 ## Service 1.102.06
 
-2023년 5월 31일
+May 31, 2023
 
 <div class='indentTab'>
 
 ### `Log`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>로그</UI> > <UI>실시간 로그 이벤트</UI>/<UI>복합 로그 이벤트</UI> 추가 또는 수정 시 유효성 검증 로직의 오동작 수정</p>
+<p><Status>Fixed</Status> When adding or modifying <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Log</UI> > <UI>Real-time Log Event</UI>/<UI>Composite Log Event</UI>, fixed the error of validation logic.</p>
 
 </div>
 
 ## Service 1.102.05
 
-2023년 5월 30일
+May 30, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 라이센스 발급 후 다른 탭 메뉴로 전환할 경우 라이센스 발급 버튼이 다시 활성화되는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Install</UI>, fixed the bug where the Issue a license button is reactivated when switched to another tab menu after issuing a license.</p>
 
 </div>
 
 ## Service 1.102.04
 
-2023년 5월 26일
+May 26, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 애플리케이션 에이전트가 없는 컨테이너 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 오표기 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, fixed the display of wrong guidance message upon data inquiry failure when using <UI>Log</UI> > <UI>Log Search</UI> in the summary view of the container without any application agent.</p>
 
 </div>
 
@@ -70,7 +178,7 @@ May 25, 2023
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 추가</p>
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, added a guidance message upon data inquiry failure when using <UI>Log</UI> > <UI>Log Search</UI> in the summary view of the container.</p>
 
 </div>
 
@@ -82,13 +190,13 @@ May 25, 2023
 
 ### `Common`
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 신규 프로젝트 생성 시 <UI>권한</UI> 목록에 FLEX_UPDATE 텍스트 노출 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Project Member</UI>, fixed the FLEX_UPDATE text exposure issue in the <UI>Role</UI> list upon creation of a new project.</p>
 
 * * *
 
 ### `Log`
 
-<p><Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 <UI>로그 파서</UI>, <UI>빠른 인덱스</UI>, <UI>장기 보관 통계</UI> 추가 또는 수정 시 직접 입력 항목에 공백을 허용하지 않도록 수정</p>
+<p><Status>Fixed</Status> In <UI>Log</UI> > <UI>Log Setting</UI>, modified not to allow any space in the input field when adding or modifying <UI>Log Parser</UI>, <UI>Fast Index</UI>, and <UI>Long-term Archive Statistics</UI>.</p>
 
 </div>
 
@@ -98,7 +206,7 @@ May 25, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 사용자 계정이 보유한 프로젝트 제품군 대시보드 템플릿만 보이도록 로직 수정</p>
+<p><Status>Fixed</Status> In Home screen > <UI>Flex Board</UI>, modified the logic to display only the product suite dashboard templates owned by the user account.</p>
 
 </div>
 
@@ -112,9 +220,9 @@ May 24, 2023
 
 -   <Status>Fixed</Status> Among sidebar menus, modified to add <code>Browser</code> types in <img src='/img/ico-filter.svg' alt='필터 아이콘'/> project type filters and display the text according to the selected language.
 
--   <Status>Change</Status> <UI>사이트맵</UI> > <UI>사용자 행위</UI> 메뉴에서 멤버 관리 권한을 가진 계정은 모든 계정의 사용자 행위를 조회할 수 있도록 변경
+-   <Status>Change</Status> In <UI>Sitemap</UI> > <UI>User Behavior</UI>, modified to search the user behaviors for all accounts with the member management role.
 
--   <Status>Change</Status> 서비스 전체에 삭제 아이콘(<img src='/img/ico-trash-new.svg' alt='icon'/>) 변경, 채널 문의 아이콘(<img src='/img/ic-message-filled.svg' alt='icon'/>) 변경
+-   <Status>Change</Status> Modified the Delete icon (<img src='/img/ico-trash-new.svg' alt='icon'/>) and the Channel Inquiry icon (<img src='/img/ic-message-filled.svg' alt='icon'/>) in all services.
 
 #### Flex Board
 
@@ -122,7 +230,7 @@ May 24, 2023
 
 -   <Status>Fixed</Status> In case of the rich text widgets, fixed the bug where the saved content are not applied after modification.
 
--   <Status>Fixed</Status> 브라우저 창 크기가 특정 크기일 때, <UI>Flex 보드</UI> 메뉴의 <UI>관리자</UI> 모드에서 위젯의 JSON 편집 창을 불러오면 텍스트 상자에 스크롤이 반복해서 나타났다가 사라지는 현상 수정
+-   <Status>Fixed</Status> If the browser window has a specific size, when the JSON editing window of the widget is imported in <UI>Manager</UI> mode under <UI>Flex Board</UI>, a scroll appears and disappears repeatedly in the text box.
 
 -   <Status>Change</Status> Modified to display the specific reason when there is no data response in the following widgets.
 
@@ -138,33 +246,33 @@ May 24, 2023
 
 #### Management
 
-<p><Status>Fixed</Status> <UI>프로젝트 멤버</UI> 메뉴에서 <b>로그 편집</b> 권한이 있음에도 <b>권한</b> 컬럼에 표시되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Project Member</UI>, fixed the issue where the <b>Edit Log</b> role does not appear in the <b>Role</b> column.</p>
 
 #### My Usage
 
--   <Status>Fixed</Status> <UI>청구서 미리보기</UI> 메뉴에서 클라우드 상품의 할인 금액이 <UI>할인 금액</UI> 컬럼에 표시되는 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Preview Invoice</UI>, fixed the bug where the discount amount of a cloud product does not appear in the <UI>Discount</UI> column.
 
--   <Status>Fixed</Status> <UI>청구서 미리보기</UI> 메뉴에서 고정가, 할인 금액이 <UI>할인 정보</UI>에 표시되어 있을 경우 청구 통화 안내 메시지 추가
+-   <Status>Fixed</Status> In <UI>Preview Invoice</UI>, added the guidance message for billing currency when the fixed price and discount amount appear in <UI>Discount Information</UI>.
 
 -   <Status>Change</Status> In <UI>Usage</UI>, applied UI improvements for better user experiences.
 
 -   <Status>Feature</Status> In <UI>Usage</UI>, added the function to search the project name.
 
--   <Status>Change</Status> <UI>사용량</UI> 메뉴에서 이용 시간에 따른 평균 사용량 정보를 제공하도록 수정
+-   <Status>Change</Status> In <UI>Usage</UI>, modified to provide the average usages for each time.
 
 * * *
 
 ### `Log`
 
--   <Status>Feature</Status> <b>로그 편집</b> 권한 추가 및 관련 기능 <UI>로그 설정</UI> 메뉴에 적용
+-   <Status>Feature</Status> The <b>Edit Log</b> role has been added and the related functions has been applied to <UI>Log Setting</UI>.
 
--   <Status>Change</Status> <UI>로그 설정</UI> 메뉴에서 사용자 경험 향상을 위해 UI/UX 개선
+-   <Status>Change</Status> In <UI>Log Setting</UI>, improved UI/UX for better user experiences.
 
--   <Status>Change</Status> <UI>로그 설정</UI> 메뉴에서 혼용된 용어 통일
+-   <Status>Change</Status> In <UI>Log Setting</UI>, unified the mixed terms.
 
--   <Status>Change</Status> <UI>로그 검색</UI> 메뉴에서 필터에 키만 입력하고 값을 입력하지 않은 상태에서 카테고리 추가 시 키 값으로 none 값을 입력하도록 수정
+-   <Status>Change</Status> In <UI>Log Search</UI>, modified to enter the value, `none` as the key when adding a category while only a key has been entered in the filter with no value assigned.
 
--   <Status>Change</Status> <UI>라이브 테일</UI> 메뉴의 content 필터 툴팁 용어 중 '띄워쓰기'를 '띄어쓰기'로 수정
+-   <Status>Change</Status> In <UI>Live Tail</UI>, fixed a typo error (for the term, `spacing`) among the terms in the content filter tooltips.
 
 -   <Status>Change</Status> In <UI>Log Search</UI>, modified not to automatically attach the prefix, `+` when `-` has been entered as the search value's prefix upon entry of a filter.
 
@@ -174,13 +282,13 @@ May 24, 2023
 
 #### Dashboard
 
--   <Status>Change</Status> <UI>멀티 인스턴스 모니터링</UI> 메뉴 화면 위에 <b>데이터베이스</b> 선택 옵션 이름을 <UI>인스턴스</UI>로 변경
+-   <Status>Change</Status> In <UI>Multiple Instance Monitoring</UI>, changed the selection option from <b>Database</b> to <UI>Instance</UI>.
 
--   <Status>Fixed</Status> <UI>인스턴스 목록</UI> 메뉴에서 <UI>상태</UI> 컬럼의 <b>위험</b> 또는 <b>경고</b> 아이콘을 선택하면 나타나는 <UI>이벤트</UI> 창에서 텍스트가 잘리는 문제를 보완하기 위해 테이블 정렬 및 컬럼 너비 조절 기능 추가
+-   <Status>Fixed</Status> In <UI>Instance List</UI>, added the function to align the table and adjust the column width to compensate for text truncation in the <UI>Event</UI> window that appears by selecting the <b>Fatal</b> or <b>Warning</b> icon in the <UI>Status</UI> column.
 
 #### STAT/REPORT
 
--   <Status>Change</Status> <UI>테이블 사이즈 증감</UI> 메뉴에서 <UI>CSV 다운로드</UI> 버튼을 <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> 버튼으로 변경
+-   <Status>Change</Status> In <UI>Table Size Increase</UI>, changed the <UI>Download CSV</UI> button to <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' />.
 
 -   <Status>Fixed</Status> In the follow menu path, fixed the problem where the download feature does not work depending on the region clicked on the drop-down menu item when the <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> button is selected.
 
@@ -193,23 +301,23 @@ May 24, 2023
 
 #### Container Map
 
--   <Status>Feature</Status> 컨테이너 요소에 마우스 오버 시 나타나는 차트 툴팁 내용 중 단위가 퍼센트인 지표는 막대 그래프 차트 표시
+-   <Status>Feature</Status> The metrics whose unit is percentage among the chart tooltips that appear when user hovers the mouse over a container element, are displayed with the bar graph charts.
 
--   <Status>Change</Status> <img src='/img/ico-setting.svg' alt='설정 아이콘'/> > <UI>라벨</UI> 옵션에 <UI>선택된 지표</UI> 항목 추가
+-   <Status>Change</Status> Added the <UI>selected metrics</UI> item in the <img src='/img/ico-setting.svg' alt='설정 아이콘'/> > <UI>Label</UI> option.
 
--   <Status>Fixed</Status> 요약 보기 패널에서 <UI>로그 검색</UI> 탭과 <UI>이벤트</UI> 탭의 옵션 일부가 가려지는 현상 수정
+-   <Status>Fixed</Status> Fixed the symptom where part of the <UI>Log Search</UI> and <UI>Event</UI> tabs in the summary view panel.
 
--   <Status>Change</Status> 요약 보기 패널에서 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 App 관련 카테고리인 경우 <code>microOid</code> 기준으로 로그를 검색하도록 변경
+-   <Status>Change</Status> Modified to search logs based on the <code>microOid</code> when using the <UI>Log</UI> > <UI>Log Search</UI> function on the summary view panel in case of the app-related category.
 
--   <Status>Fixed</Status> 그룹 선택 후 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 App 관련 카테고리 로그가 조회되지 않는 버그 수정
+-   <Status>Fixed</Status> When using <UI>Log</UI> > <UI>Log Search</UI> after selecting a group, fixed the bug where the app-related category logs are not searched.
 
 * * *
 
 ### `Browser`
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>브라우저 에러</UI> 메뉴에서 <UI>에러 메시지 테이블</UI>의 차트를 로딩하는 중 발생하는 깜빡임 현상 수정
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI>, fixed the flickering symptom while loading charts in the <UI>error message table</UI>.
 
--   <Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 메트릭스, 복합 메트릭스 알림 템플릿 추가
+-   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Metrics</UI>, added the templates for metrics and composite metrics alert.
 
 * * *
 
@@ -217,10 +325,10 @@ May 24, 2023
 
 #### Common
 
-<p><Status>Feature</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴에서 와탭 서비스 수집 주기 선택 옵션으로 <b>1분</b> 추가</p>
+<p><Status>Feature</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, added <b>1 minute</b> as a collection cycle option.</p>
 
 #### CloudWatch
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴에서 인증 유효 기간의 기본값을 <b>1시간</b>으로 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, modified the default value for validity period to <b>1 Hour</b>.</p>
 
 </div>

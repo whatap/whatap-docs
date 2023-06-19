@@ -172,7 +172,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ### Grokパターンパーサー登録{#log-pattern-grok}
 
-![Grok 패턴 파서](https://img.whatap.io/media/images/log_011_grok_syntax.png)
+![Grokパターンパーサー](https://img.whatap.io/media/images/log_011_grok_syntax.png)
 
 文法は%{SYNTAX:SEMANTIC}です。    
 
@@ -259,15 +259,14 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ### 4xx, 5xxステータスコードのパーサーパターン登録{#4xx-5xx-status-parser}
 
-![4XX 5XXステータスコードパーサー](https://img.whatap.io/22/11/28/085706log_020_status_parser.png)
-
+![4XX 5XXステータスコードパーサー](https://img.whatap.io/22/11/28/085706log_020_status_parser.png)\
 statusが既に構文解析されている場合に使用できるパーサーです。 構文解析されたstatusを利用して追加で4xx、5xステータスコードを構文解析します。 構文解析したデータで4xx、5xx件数データを作成できます。 
 
 パターンには4xx、5xxステータスコードを入力または選択することができ、入力されたステータスコードはログから4xx、5xxステータスコードをパーシングするときに除外されます。 4xx、5xxステータスコードパーサーを使用するために、まずstatusが構文解析されている必要があります。
 
 -   **statusパーサーの登録例**
 
-    ![Grok파서 - status 파싱 패턴 등록](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)
+    ![Grokパーサー - status構文解析パターン登録](https://img.whatap.io/22/11/28/111724log_status_01_parser.png)
 
     流入されるログが`{"msg":"message","status":404}`で、例のようにGrokパサーでstatusをパーシングすると、`status: 404`のようにパーシングされます。 statusが正常に構文解析されることを確認した場合は、4XX、5XXステータスコードの構文解析パターンを登録してください。     
 

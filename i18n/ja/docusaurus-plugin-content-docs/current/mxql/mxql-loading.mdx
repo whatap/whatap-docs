@@ -1,29 +1,29 @@
 ---
 id: mxql-loading
 title: メトリクス読み込み
-description: MXQL文法を利用してメトリクスを読み込むコマンドについて案内します。
+description: MXQL構文を使用してメトリクスを取得する方法を学びます。
 toc_max_heading_level: 2
 tags:
   - MXQL
   - メトリクス読み込み
 ---
 
-MXQL文法を利用してメトリクスを読み込むコマンドについて案内します。
+MXQL構文を使用してメトリクスを取得する方法を学びます。
 
 | コマンド                  | 機能                                                                                |
 | --------------------- | --------------------------------------------------------------------------------- |
-| [TAGLOAD](#tagload)   | 収集したデータを`tag-field`形式で保存するカテゴリの情報を照会する際に使用します。                                    |
-| [FLEXLOAD](#flexload) | 収集したデータを`field`形式で保存するカテゴリの情報を照会する際に使用します。                                        |
+| [TAGLOAD](#tagload)   | 収集したデータを`tag-field`形式で保存するカテゴリの情報を表示するために使用します。                                   |
+| [FLEXLOAD](#flexload) | 収集したデータを`field`形式で保存するカテゴリの情報を表示するために使用します。                                       |
 
 ## TAGLOAD{#tagload}
 
-収集したデータを`tag-field`形式で保存するカテゴリの情報を照会する際に使用します。
+収集したデータを`tag-field`形式で保存するカテゴリの情報を表示するために使用します。
 
 | オプション                                           | 機能                                                  |
 | ----------------------------------------------- | --------------------------------------------------- |
-| {backward : true}                               | 時間の逆順にデータを読み込みます。                                   |
-| {filter : {key:fieldName, value :fieldValue}}   | fieldNameフィールドの値がfieldValueと同じデータを抽出します。            |
-| {filter : {key:fieldName, exclude :fieldValue}} | fieldNameフィールドの値がfieldValueと同じデータを除いて抽出します。         |
+| {backward : true}                               | 時系列の逆順にデータを読み込みます。                                  |
+| {filter : {key:fieldName, value :fieldValue}}   | fieldNameフィールドの値がfieldValueと同じデータのみを抽出します。          |
+| {filter : {key:fieldName, exclude :fieldValue}} | fieldNameフィールドの値がfieldValueと同じデータを除外して抽出します。        |
 | {filter : {key:fieldName, like :fieldValue}}    | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを抽出します。    |
 | {filter : {key:fieldName, notlike :fieldValue}} | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを除いて抽出します。 |
 
@@ -78,8 +78,8 @@ MXQL文法を利用してメトリクスを読み込むコマンドについて�
 
 :::caution
 
--   `TAGLOAD`と`FLEXLOAD`は、それぞれ設定できる`CATEGORY`の値が決まっています。
--   `fileter-like`または`filter-notlike`オプションを使用するとき、値として数字が来る場合、バッククォート(' ')またはダブルクォート(" ")で囲まないと動作しません。
+-   `TAGLOAD`と`FLEXLOAD`は、それぞれ設定可能な`CATEGORY`の値が決まっています。
+-   `fileter-like`または`filter-notlike`オプションを使用する場合、値に番号が付けられている場合、バッククォート(' ')またはダブルクォート(" ")で囲まないと動作しません。
     ```sql
     CATEGORY app_counter
     TAGLOAD { filter:[{key:'host_ip', exclude:'192.168.1.102'},{key:okindName, like:"1"}] }
@@ -89,11 +89,11 @@ MXQL文法を利用してメトリクスを読み込むコマンドについて�
 
 ## FLEXLOAD{#flexload}
 
-収集されたデータを`field`形式で保存するカテゴリの情報を照会する際に使用します。
+収集されたデータを`field`形式で保存するカテゴリの情報を照会するために使用します。
 
 | オプション              | 機能                               |
 | ------------------ | -------------------------------- |
-| {backward : true}  | 時間の逆順にデータを読み込みます。                |
+| {backward : true}  | 時系列の逆順にデータを読み込みます。               |
 
 データ検索条件の段階で設定した情報に従ってデータを読み込みます。
 
@@ -104,7 +104,7 @@ FLEXLOAD {backward : true}
 
 :::caution
 
-ほとんどのカテゴリは`TAGLOAD`を使います。[次の文書](#flexload-items)に含まれるカテゴリのデータを使用する場合に限って`FLEXLOAD`を使います。
+ほとんどのカテゴリは`TAGLOAD`を使います。[次の文書](#flexload-items)に含まれるカテゴリのデータを使用する場合のみ`FLEXLOAD`を使用します。
 
 :::
 

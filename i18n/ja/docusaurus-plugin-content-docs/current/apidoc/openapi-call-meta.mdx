@@ -1,7 +1,7 @@
 ---
 id: openapi-call-meta
 title: メタ情報照会
-description: メタ性情報照会のためのOpenAPIに関する説明を提供します。
+description: メタ情報照会のためのOpenAPIについて説明します。
 tags:
   - Open API
   - API
@@ -38,7 +38,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 
 | Response Field  |      Field Type                 | 説明                       |
 | --------------- | :-----------------------------: | ------------------------ |
-| gourpName       | <span class='api'>string</span> | プロジェクト上位グループ名            |
+| gourpName       | <span class='api'>string</span> | プロジェクト上の親グループ名           |
 | projectCode     | <span class='api'>number</span> | プロジェクトコード                |
 | projectName     | <span class='api'>string</span> | プロジェクト名                  |
 | createTime      | <span class='api'>string</span> | プロジェクト作成日                |
@@ -57,7 +57,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 
 :::note
 
-この機能は、アプリケーションモニタリングの製品群に相当します。
+この機能は、アプリケーションモニタリングの製品群に対応します。
 
 :::
 
@@ -87,7 +87,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 | lastUpdatedTime | <span class='api'>string</span> | プロジェクト編集日              |
 | productType     | <span class='api'>string</span> | アプリケーションサーバーのタイプ       |
 
-## プロジェクト情報および詳細サーバー照会
+## プロジェクト情報および詳細サーバー検索
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/projects
 
@@ -189,10 +189,10 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 | email          | <span class='api'>string</span> | ユーザーアカウントのメールアドレス     |
 | name           | <span class='api'>string</span> | ユーザーアカウント名            |
 | typeKey        | <span class='api'>string</span> | ユーザー権限                |
-| typeName       | <span class='api'>string</span> | ユーザー権限の名              |
-| total          | <span class='api'>number</span> | プロジェクトメンバーの数          |
+| typeName       | <span class='api'>string</span> | ユーザー権限の指定             |
+| total          | <span class='api'>number</span> | プロジェクトメンバー数           |
 
-## グループ一覧の照会
+## グループ一覧の表示
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/groups
 
@@ -204,7 +204,8 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 {
   "data": [ {
         "groupName": "WHATAP APM",
-        "groupKey": "grp****ab123kskd*****q",
+        "groupKey": "
+grp****ab123kskd*****q",
         "description": "APM Group"
     }, {
     }, (...)
@@ -238,7 +239,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 
 <span class='apitype'>GET</span> https://api.whatap.io//open/api/json/group/<code>groupKey</code>/projects
 
-グループに含まれたプロジェクトのメタ情報を照会するAPIです。 アカウントのAPI Tokenが必要であり、curlを使用した例のリクエストは以下を参照してください。
+グループに含まれるプロジェクトのメタ情報を参照するAPIです。アカウントのAPI Tokenが必要であり、curlを使用した例のリクエストの例を以下を参照してください。
 
 ```bash title='command'
 $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap.io/open/api/json/group/{{groupKey}}/projects" 

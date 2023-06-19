@@ -12,13 +12,13 @@ tags:
 
 :::note
 
-이 문서는 PostgreSQL 모니터링 V2를 기준으로 작성되었습니다. PostgreSQL 모니터링 V1 문서는 [다음 문서](../postgresql-v1/multi-instance-monitoring)를 참조하세요.
+This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/multi-instance-monitoring).
 
 :::
 
 Home > Select Project > **_Dashboard_** > **_Multiple Instance Monitoring_**
 
-**_[인스턴스 모니터링](instance-monitoring)_** 메뉴에서는 하나의 인스턴스만 모니터링한다면, **_멀티 인스턴스 모니터링_**은 여러 인스턴스들의 지표를 한 화면에서 확인하고 비교할 수 있습니다. 동작 중인 에이전트 수, 액티브 세션의 총합, 트랜잭션 정보 등의 인스턴스 지표를 그룹핑한 값을 통해 인스턴스들의 현황을 파악할 수 있습니다. 그래프 차트로 인스턴스의 지표 값 추이와 어떤 인스턴스의 지표 값이 높은지 쉽게 확인할 수 있습니다. 가장 오래 지속하는 액티브 세션 정보를 제공합니다.
+In **_[Instance Monitoring](instance-monitoring)_**, to monitor only one instance, **_Multiple Instance Monitoring_** allows you to check and compare metrics and active sessions of multiple instances on one screen. You can quickly see the status of instances through grouped values of instance metrics such as running agent count, total number of active sessions, and transaction information. Graph charts make it easy to see how instances' metric values are trending and which instances have higher metric values. It provides information on the longest active sessions.
 
 {@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
 
@@ -30,35 +30,35 @@ Home > Select Project > **_Dashboard_** > **_Multiple Instance Monitoring_**
 
 It is a list of instances to which the agent was connected through installation. The colors of instances match the ones on the graph chart in the middle of the screen. If the color changes to gray when an instance is selected, it is in the deselected state. The data of the instances that have been deselected from each metric and graph chart, are excluded.
 
-### ![](/img/number-02.png) 그래프 차트 영역
+### ![](/img/number-02.png) Graph chart area
 
-여러 인스턴스들의 중요 지표를 그래프 차트로 확인 및 비교할 수 있습니다. CPU 및 메모리 사용률, 액티브 세션, 슬로우 쿼리, 대기 중인 세션 정보 등을 실시간으로 확인할 수 있습니다. 그래프 차트의 색상은 ![숫자 1](/img/number-01.png) **_인스턴스_**의 색상과 일치합니다. 그래프 차트 위로 마우스를 오버하면 툴팁을 통해 수치를 확인할 수 있습니다.
+You can check and compare key metrics of multiple instances in a graph chart. You can see the CPU and memory utilization, active sessions, slow queries, and queued sessions in real time. The colors in the graph chart are the same as the ones in the ![number 1](/img/number-01.png) **_Instance_**. Hover your mouse over the graph chart to see the figure through a tooltip.
 
--   **_CPU Usage (%)_**: 인스턴스 별 CPU 사용률을 실시간으로 확인할 수 있습니다.
+-   **_CPU Usage (%)_**: You can see the CPU usages for each instance in real time.
 
--   **_Memory Usage (%)_**: 인스턴스 별 메모리 사용률을 실시간으로 확인할 수 있습니다.
+-   **_Memory Usage (%)_**: You can see the memory usages for each instance in real time.
 
--   **_XOS Disk Usage_**: 인스턴스 별 디스크 사용률과 사용 가능 크기와 전체 크기 정보를 표시합니다. 위젯의 오른쪽 위에 ![아이콘](/img/ico-expander.svg) 버튼을 선택하면 새창으로 확인할 수 있습니다.
+-   **_XOS Disk Usage_**: Displays the disk utilizations, free sizes, and total sizes for each instance. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a new window.
 
--   **_Active Sessions_**: 쿼리를 실행 중인 세션 수를 실시간 차트로 표시합니다.
+-   **_Active Sessions_**: Displays a real-time chart for the number of sessions running queries.
 
--   **_DML Count_**: DML(Data Manipulation Language) 문법(statement)이 수행된 횟수를 실시간 차트로 표시합니다.
+-   **_DML Count_**: Displays a real-time chart for the number of statements run for DML (Data Manipulation Language).
 
--   **_Elapsed time_**: 실행 중인 쿼리의 경과 시간을 실시간 차트로 표시합니다. 차트의 특정 영역을 드래그하면 **_Query List_** 목록을 확인할 수 있습니다. ![위 방향 아이콘](/img/up-arrow.svg) 또는 ![아래 방향 아이콘](/img/down-arrow.svg) 버튼을 선택해 위 아래로 차트를 이동할 수 있습니다.
+-   **_Elapsed time_**: Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
 
--   **_Logical Read_**: 데이터를 buffer cache 내에서 읽은 횟수를 실시간 차트로 표시합니다.
+-   **_Logical Read_**: Displays a real-time chart for the data read counts in the buffer cache.
 
--   **_Slow Query_**: 시간대별 슬로우 쿼리를 실시간 차트로 표시합니다. 차트의 특정 영역을 드래그하면 **_Slow Query List_** 목록을 확인할 수 있습니다. ![위 방향 아이콘](/img/up-arrow.svg) 또는 ![아래 방향 아이콘](/img/down-arrow.svg) 버튼을 선택해 위 아래로 차트를 이동할 수 있습니다.
+-   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
 
--   **_Lock Wait Sessions_**: row lock을 획득하기 위해 대기 중인 수를 실시간 차트로 표시합니다.
+-   **_Lock Wait Sessions_**: Displays a real-time chart for queued counts to acquire the row lock.
 
--   **_Commit Count_**: 커밋된 트랜잭션의 수를 실시간 차트로 표시합니다.
+-   **_Commit Count_**: Displays a real-time chart for the counts of committed transactions.
 
--   **_Replication Delay_**: Replication 구조일 경우 replication db에 반영되는 지연 시간을 실시간 차트로 표시합니다.
+-   **_Replication Delay_**: Displays a real-time chart for the delayed times that are reflected in the replication DB in case of the replication structure.
 
--   **_Physical Read_**: 데이터를 물리적인 disk에서 읽은 횟수를 실시간 차트로 표시합니다.
+-   **_Physical Read_**: Displays a real-time chart for the data read counts in the physical disks.
 
--   **_Wait Event_**: 해당 백엔드 프로세스가 현재 대기 중인 경우 대기 이벤트 이름과 수를 확인할 수 있습니다. 차트 위로 마우스를 오버하면 툴팁을 통해 정보를 표시합니다.
+-   **_Wait Event_**: If the backend process is currently queued, you can check the queued event names and counts. Hover your mouse over the chart to see the information through a tooltip.
 
 ### ![](/img/number-03.png) Active Sessions/Lock Tree
 
@@ -70,11 +70,11 @@ You can view the active sessions and lock trees in real time.
 
 :::note
 
-테이블 목록에 글자 색상은 검정색 → <span class='slow'>주황색</span> → <span class='vslow'>빨강색</span> 순으로 세션의 수행 속도가 느린 것을 의미합니다.
+In the table list, the text colors are changed black → <span class='slow'>orange</span> → <span class='vslow'>Red</span>, which means that the performance of the session is getting slower.
 
 :::
 
-## 테이블 데이터 필터링하기
+## Filtering the table data
 
 {@include: ../common-items/_db-table-data-filtering.mdx}
 

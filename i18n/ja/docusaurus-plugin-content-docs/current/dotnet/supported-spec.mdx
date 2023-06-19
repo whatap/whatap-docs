@@ -28,47 +28,47 @@ tags:
 
     -   ADO.NET（Database）
 
-## 서버 지원 환경 분석 방법
+## サーバ対応環境分析方法
 
-### 분석 도구 다운로드
+### 分析ツールダウンロード
 
-에이전트를 설치할 서버의 지원 환경을 잘 모른다면 다음 링크를 통해 분석 도구를 다운로드하세요.
+エージェントをインストールするサーバーの対応環境がよくわからない場合は、次のリンクを通じて分析ツールをダウンロードしてください。
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.exe>
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
 
-### 분석 도구 사용하기
+### 分析ツールの使用
 
-1.  다운로드한 분석 도구를 실행하세요.
+1.  ダウンロードした分析ツールを実行してください。
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
 
-2.  ![숫자 1](/img/number-01.png) **분석**(**Scan**) 버튼을 클릭하세요.
+2.  ![数字1](/img/number-01.png) **分析**(**Scan**)ボタンをクリックしてください。
 
-3.  ![숫자 2](/img/number-02.png) 영역에서 윈도우 서버의 버전이 2012 이상인지 확인하세요.
+3.  ![数字2](/img/number-02.png)領域でウィンドウサーバーのバージョンが2012以降であることを確認してください。
 
-4.  ![숫자 3](/img/number-03.png) 영역에서 **IIS 8.0** 버전 이상, **.NET Framework 4.5** 버전 이상인지 확인하세요.
+4.  ![数字3](/img/number-03.png)領域で**IIS 8.0**バージョン以降、**.NET Framework 4.5**バージョン以降であることを確認してください。
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
 :::note
 
--   **.NET Framework**는 4.8.1 버전까지 지원합니다.
+-   **.NET Framework**は、4.8.1バージョン以降に対応しています。
 
--   **.NET Core** 버전은 개발 진행 중입니다.
+-   **.NET Core**バージョンは、開発中です。
 
 :::
 
-### 사용자의 애플리케이션 버전 확인
+### ユーザーのアプリケーションバージョン確認
 
-서버의 환경이 지원 버전을 만족하더라도 사용자의 애플리케이션이 **.NET Framework**가 아닌 **.NET Core** 버전으로 개발되었다면 .NET 모니터링을 지원하지 않습니다.
+サーバーの環境が対応バージョンを満たしていても、ユーザーのアプリケーションが**.NET Framework**ではなく**.NET Core**バージョンで開発された場合、.NETモニタリングには対応しません。
 
-사용자의 애플리케이션 버전은 **IIS Manager**에서 다음과 같이 확인할 수 있습니다.
+ユーザーのアプリケーションバージョンは、**IIS Manager**で以下のように確認できます。
 
 ![IIS Manager](/img/apm-dotnet-application-pool.png)
 
-**IIS Manager**에서 **Application Pools**를 클릭하세요. **Application Pools** 목록에서 사용하는 애플리케이션에 해당하는 풀(Pool)의 **.NET Core**가 4.0 버전인지 확인하세요.
+**IIS Manager**で**Application Pools**をクリックしてください。**Application Pools**一覧で使用するアプリケーションに該当するプール(Pool)の**.NET Core**が4.0バージョンなのか確認してください。
 
 ## 共通サポート環境
 
@@ -82,4 +82,4 @@ tags:
 
 ### モバイルアプリ
 
-{@include: ../getting-started/_mobile-app.mdx}  
+{@include: ../getting-started/_mobile-app.mdx} 

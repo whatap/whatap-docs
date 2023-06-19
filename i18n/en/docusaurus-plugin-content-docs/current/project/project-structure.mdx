@@ -10,7 +10,7 @@ In the WhaTap monitoring service, you can easily manage multiple projects with t
 
 ## Hierarchical structure
 
-<ImgLang img='project-management-3depth.png' desc='Project hierarchical structure'/>
+<ImgLang img='project-management-3depth.png' desc='프로젝트 계층 구조'/>
 
 ### What is the project?
 
@@ -40,7 +40,7 @@ A professional maintenance service company can group multiple subgroups into a s
 
 If a parent group exists, the member roles of the parent group are inherited by default. For example, there are Organization A, Group B, and Project C. Without extra settings, Group B inherits Organization A's membership roles, and Project C inherits Group B's member roles.
 
-<ImgLang img='project-member-auth.png' desc='Member Role' />
+<ImgLang img='project-member-auth.png' desc='멤버 권한' />
 
 :::note
 
@@ -62,7 +62,7 @@ You can flexibly grant different roles to different members for each project or 
 | Alert Reception      | Alert Reception                                                    |
 | Alert Config         | Alert Notification Setting                                         |
 | View Log             | Log inquiry and access of log-related functions                    |
-| Log Edit             | 로그 설정 편집                                                           |
+| Log Edit             | Editing the log settings                                           |
 | Billing              | Charging the bill                                                  |
 
 </div>
@@ -109,11 +109,11 @@ In **_Alert_** > **_Notification Setting_**, the alerts can be added, deleted, o
 
 ### Log Edit
 
-**_로그_** > **_로그 설정_** 메뉴에서 설정을 편집할 수 있는 권한입니다. **로그 편집** 권한이 있는 경우 **_로그 설정_** 메뉴를 이용할 수 있습니다.
+It is the role to edit the settings in **_Log_** > **_Log Setting_**. If you have the **Log Edit** role, you can use the **_Log Setting_** menu.
 
 :::note
 
-**로그 편집** 권한을 가지고 있더라도 **액세스 키**를 발급받지 않았거나 로그 모니터링이 비활성화된 경우 **_로그 설정_** 메뉴를 이용할 수 없습니다.
+Even if you have the **Log Edit** role, you cannot use the **_Log Setting_** menu when an **access key** has not been issued or the log monitoring is disabled.
 
 :::
 
@@ -125,11 +125,11 @@ In **_Alert_** > **_Notification Setting_**, the alerts can be added, deleted, o
 
 -   If A has transferred the **billing** role to B, A no longer has the right to make **billing**.
 
--   **결제** 권한을 양도 받는 멤버는 결제 정보를 등록한 상태여야 합니다. 결제 정보는 **_이용 내역_** 메뉴에서 등록할 수 있습니다. 자세한 내용은 [다음 문서](../management/billing)을 참조하세요.
+-   The member to whom the **billing** role is transferred must have registered the billing information. The billing information can be registered in **_My Usage_**. For more information, see [the following](../management/billing).
 
 -   If there are billing staff for each organization, group, and project, the billing roles are granted in the order of project, group, and organization. If there is no billing staff for a group or project, billing is charged to the parent group or organization's staff with the billing role.
 
-  <ImgLang img='project-str-billing.png' desc=''/>
+    <ImgLang img='project-str-billing.png' desc=''/>
 
 ## Editing Member Role{#modify-auth}
 

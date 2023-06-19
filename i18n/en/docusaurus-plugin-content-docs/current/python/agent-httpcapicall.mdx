@@ -27,4 +27,4 @@ It provides the options for HTTPC and API calls of the Python agent.
 
     It normalizes the external HTTP call URLs after parsing them. The path parameters are deleted by parsing the call URL patterns. 
 
-    예를 들면, /a/{v}/b라고 선언하면 /a/123/b → /a/{v}/b로 치환합니다. 여러 개를 등록할 때는 콤마(_,_)를 사용합니다. /a/\*/b로 사용하여 특정 형식의 패스 파라미터를 제거하여 수집할 수 있습니다.      
+    For example, if declared as **/a/{v}/b**, **a/123/b** is replaced by **a/{v}/b**. To register multiple items, comma (,) is used as the delimiter. Using /a/\*/b, you can collect after deleting the path parameter with a specific format.      

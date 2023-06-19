@@ -14,39 +14,39 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 </InDoc>
 
-You can configure the log monitoring related settings in **_Log Setting_**. 상단의 탭을 통해 에이전트 설정 확인, 로그 모니터링의 활성화 여부 결정, 로그 데이터의 유지 기간 및 조회 비밀번호 설정, 로그 파서 등록, 빠른 인덱스 설정 등의 메뉴를 사용할 수 있습니다.
+You can configure the log monitoring related settings in **_Log Setting_**. Using the tab at the top, you can use menus for checking the agent settings, determining whether to enable log monitoring, setting the log data retention period and lookup password, registering the log parser, and setting the quick indexes.
 
 :::note
 
 -   To use the **_Activate log monitoring_** function, the **Edit Project** role is required. 
 
--   **로그 편집** 권한을 통해 **_로그 모니터링 활성화_** 기능 외 **_로그 설정_** 메뉴를 수정할 수 있습니다.
+-   The **Log Edit** role allows you to modify the **_Log Setting_** menu other than **_Activate log monitoring_**.
 
 :::
 
-## 로그 모니터링 시작하기{#log-getting-started}
+## Starting the log monitoring{#log-getting-started}
 
 <InDoc product='aws-log'>
 
-![로그 모니터링 시작하기 sc](/img/log-getting-started-aws.png)
+![Start Log Monitoring sc](/img/log-getting-started-aws.png)
 
 </InDoc>
 
 <InDoc product='log'>
 
-![로그 모니터링 시작하기 sc](/img/log-getting-started.png)
+![Start Log Monitoring sc](/img/log-getting-started.png)
 
 </InDoc>
 
-상단에서 **_로그 모니터링 시작하기_** 탭을 선택하세요. ![와탭 Docs 아이콘](/img/ic-guide.svg) **_가이드 보기_** 아이콘과 **_요금제 보기_** 버튼을 선택하면 관련 안내 화면으로 이동합니다. 
+At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) **_View guide_** icon and the **_View plans_** button, the corresponding guide screen appears. 
 
-### 에이전트 설정 및 로그 모니터링 활성화{#log-set-up}
+### Set up the agent and enable log monitoring{#log-set-up}
 
 <InDoc product='aws-log'>
 
-![number 1](/img/number-01.png) 영역에서 **_로그 모니터링 활성화_** 토글 버튼으로 로그 모니터링 활성화 및 비활성화 여부를 설정하세요.
+In the ![number 1](/img/number-01.png) area, click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
 
-![로그 모니터링 시작하기](/img/log-start-aws.png)
+![Start Log Monitoring](/img/log-start-aws.png)
 
 -   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
 -   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
@@ -55,11 +55,11 @@ You can configure the log monitoring related settings in **_Log Setting_**. 상�
 
 <InDoc product='log'>
 
-![number 1](/img/number-01.png) 영역에서 에이전트 설정을 확인하고 **_로그 모니터링 활성화_** 토글 버튼으로 로그 모니터링 활성화 및 비활성화 여부를 설정하세요.
+In the ![number 1](/img/number-01.png) area, check the agent settings, and then click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
 
-#### 에이전트 설정 확인{#log-check-agent-settings}
+#### Check Agent Configuration{#log-check-agent-settings}
 
-Check the agent version and settings to start the log monitoring. **_에이전트 설정 확인_** 메뉴를 선택하여 안내대로 과정을 진행하세요.
+Check the agent version and settings to start the log monitoring. Select **_Check Agent Configuration_** to follow the onscreen instructions.
 
 -   **Server Monitoring**
 
@@ -73,9 +73,9 @@ Check the agent version and settings to start the log monitoring. **_에이전�
 
     Under **_Apply_**, check each individual application guide. See [the following](log-k8s). 
 
-#### 로그 모니터링 활성화{#log-activate}
+#### Activate log monitoring{#log-activate}
 
-**_로그 모니터링 활성화_** 메뉴를 선택하여 로그 모니터링 활성화 및 비활성화 여부를 설정하세요.
+Select **_Activate log monitoring_** to set whether or not to enable the log monitoring.
 
 ![](/img/log-start.png)
 
@@ -84,15 +84,15 @@ Check the agent version and settings to start the log monitoring. **_에이전�
 
 </InDoc>
 
-### 로그 모니터링 데이터 설정{#log-data-setting}
+### Log Monitoring Data Setting{#log-data-setting}
 
-![number 2](/img/number-02.png) 영역에서 **_로그 사용량_**을 확인할 수 있습니다. Furthermore, you can change the settings for **_Data Retention_** and **_Log lookup password_**.
+In the ![number 2](/img/number-02.png) area, you can see the **_Log Usage_**. Furthermore, you can change the settings for **_Data Retention_** and **_Log lookup password_**.
 
 #### Data retention period{#data-retention}
 
-This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. 카테고리별 데이터 유지 기간을 설정하고 **_초기화_** 버튼을 선택하면 기본 데이터 유지 기간으로 초기화됩니다.
+This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select **_Reset_**, the default data retention period is reset.
 
-#### 카테고리별 데이터 유지 기간{#data-retention-per-category}
+#### Data Retention Per Category{#data-retention-per-category}
 
 You can specify the log data retention periods for each category. **Log Count** means the log lines stacked for the period. For example, **_Today Log Count_** is the number of log lines accumulated during the day, and **_Expected Log Count_** is the number of log lines of the today's log count multiplied by the days of data retention. 
 
@@ -112,7 +112,7 @@ You can specify the log data retention period as follows. You can free the space
 
     > For example, if an average of 2 million log lines per day accumulates and the data retention period is set to 3 days, an average of 6 million log lines is kept on the collection server and subject to billing.
 
-#### 로그 조회 비밀번호{#log-lookup-pw}
+#### Log lookup password{#log-lookup-pw}
 
 To enhance security, set the **_log lookup password_**. The log lookup password is optional. If you are using a log lookup password, enter the password to go to the log screen. 
 
@@ -124,13 +124,13 @@ If you have the **Edit Log** role, you can modify it with a new password in **_L
 
 :::
 
-## 로그 1차 파서 설정{#log-setting-parser-1st}
+## Log primary parser setting{#log-setting-parser-1st}
 
-**_로그 설정_** 메뉴 상단에서 **_로그 1차 파서 설정_** 탭을 선택해 로그 파서를 등록 및 수정할 수 있습니다. 로그 1차 파서는 **_GROK_**과 **_JSON_** 파서를 제공합니다. 수집된 로그를 대상으로 패턴의 조건과 일치하는 키 정보 즉 검색 키와 검색 값을 추출합니다. 파싱된 로그 키는 로그의 유형을 분류하기 위한 용도 및 특정 로그를 검색하기 위한 인덱싱 용도로 활용합니다. 유형별 로그 발생 수를 집계하거나 특정 로그를 빠르게 찾아내기 위해 등록하는 필수 파서입니다.
+At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The log primary parser provides the parsers for **_GROK_** and **_JSON_**. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
 
--   **_GROK_**: 기본은 정규 표현식 기반 파싱에 해당합니다. 예약 키워드 기반의 파싱을 제공합니다.
+-   **_GROK_**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
 
--   **_JSON_**: 로그 중 JSON으로 출력된 부분에 대해서 일괄 파싱을 제공합니다.
+-   **_JSON_**: Batch parsing is provided for the JSON output parts of the logs.
 
 :::note 
 
@@ -140,55 +140,55 @@ If you have the **Edit Log** role, you can modify it with a new password in **_L
 
 :::
 
-### 설정 항목{#log-parser-comp}
+### Setting item{#log-parser-comp}
 
-| Set value | Description                                                                                                                                     | ETC      |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| Category  | Category to apply the pattern to                                                                                                                | required |
-| 로그 검출 조건  | 필터로 적용할 검색 키, 검색 값을 입력합니다. 로그 검출 조건에 맞는 로그 데이터에만 패턴을 적용합니다. 로그 검출 조건을 입력하지 않으면 모든 로그를 대상으로 패턴을 적용합니다.                                           | optional |
-| Pattern   | It is the pattern to parse the log for. Parsing is performed according to the created pattern, and indexes are created. GROK, 정규 표현식 문법을 지원합니다. | required |
+| Set value               | Description                                                                                                                                                                                                                                  | ETC      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Category                | Category to apply the pattern to                                                                                                                                                                                                             | required |
+| Log detection condition | Enter the search key and search value to be applied as the filter. The pattern is applied only to the log data that meets the log detection conditions. If you do not enter any log detection condition, the pattern is applied to all logs. | optional |
+| Pattern                 | It is the pattern to parse the log for. Parsing is performed according to the created pattern, and indexes are created. It supports GROK, regular expression syntax.                                                                         | required |
 
-### 파서 목록{#log-parser-list-1st}
+### Parser List{#log-parser-list-1st}
 
-![로그 파서 목록](/img/log-1st-parser-list.png)
+![Log Parser List](/img/log-1st-parser-list.png)
 
-**_로그 설정_** 메뉴 상단에서 **_로그 1차 파서 설정_** 탭을 선택하면 등록한 파서를 조회하고 추가 및 편집이 가능한 **_파서 목록_** 화면을 확인할 수 있습니다. 
+If you select the **_Log primary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
 
--   상단 오른쪽 **_+ 추가하기_** 버튼을 선택하면 **_파서 추가_** 창이 나타납니다.
+-   If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
 
--   파서 목록 **_적용 순서_** 컬럼의 ![](/img/ic-drag-drop.svg) 아이콘을 드래그해 파서 설정 순서를 변경할 수 있습니다.
+-   You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
 
--   파서 목록 ![아이콘](/img/ic-toggle-on.svg) **_활성화_** 토글을 통해 파서 활성화 여부를 지정할 수 있습니다.
+-   Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
 
--   파서 목록 ![수정 아이콘](/img/ico-edit.svg) **_수정_** 및 ![삭제 아이콘](/img/ico-trash-red.svg) **_삭제_** 아이콘을 통해 등록한 파서를 수정 및 삭제할 수 있습니다.
+-   Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
 
-### 파서 등록 순서{#log-add-parser-1st}
+### Parser registration order{#log-add-parser-1st}
 
-**_로그 설정_** 메뉴 상단에서 **_로그 1차 파서 설정_** 탭을 선택해 로그 파서를 등록 및 수정할 수 있습니다. 다음은 파서 등록 시 공통 순서를 안내합니다.
+At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
 
   ![sc](/img/log-1st-parser-add.png)
 
-1.  **_+ 추가하기_** 버튼을 선택하면 **_파서 추가_** 창이 나타납니다.
+1.  Select **_+ Add_**. The **_Add Parser_** window appears.
 
-2.  **_파서_** 선택 창에서 파서를 선택하세요. 각 파서 및 패턴 등록에 관한 자세한 내용은 다음 문서를 참조하세요.
+2.  In the **_Parser_** selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
 
-    -   **_GROK_** [파서 및 패턴 등록](#log-pattern-grok)
+    -   **_GROK_** [Parser and Pattern Registration](#log-pattern-grok)
 
-    -   **_JSON_** [파서 및 패턴 등록](#log-pattern-json)
+    -   **_JSON_** [Parser and Pattern Registration](#log-pattern-json)
 
-3.  **_카테고리_** 선택 창에서 카테고리를 선택하거나 직접 입력하세요. 
+3.  In the **_Category_** selection window, select a category or enter it. 
 
-4.  **_로그 검출 조건_**으로 활용할 **_검색 키_**와 **_검색 값_**을 선택하거나 직접 입력하세요.
+4.  Select a **_search key_** and **_search value_** for the **_log detection condition_** or directly enter them.
 
-  The pattern is applied only to the log data that meets the filter conditions. **_로그 검출 조건_**을 지정하지 않으면 모든 로그를 대상으로 패턴을 적용합니다.
+  The pattern is applied only to the log data that meets the filter conditions. \*\*\*If you do not enter any log detection condition, the pattern is applied to all logs.
 
-1.  **_패턴_**을 입력하세요. 
+1.  Enter the **_pattern_**. 
 
 2.  To check whether the pattern is normal, click **_Simulation_** and then measure the performance of simulation and pattern.
 
   For more information about the simulation and performance measurement, see [the following](#parser-simulation).
 
-1.  시뮬레이션 결과가 정상적이라면 **_추가_** 버튼을 선택해 파서를 등록하세요.
+1.  If the simulation result is normal, select **_Add_** and then register the parser.
 
 :::note
 
@@ -196,11 +196,11 @@ When registering a parser, you cannot register the parser twice in the same **_C
 
 :::
 
-### GROK 파서 패턴 등록{#log-pattern-grok}
+### GROK Parser Pattern Registration{#log-pattern-grok}
 
-![GROK 패턴 파서](/img/log-1st-grok.png)
+![GROK Pattern Parser](/img/log-1st-grok.png)
 
-기본 문법은 `%{SYNTAX:SEMANTIC}` 입니다.  
+The default syntax is `%{SYNTAX:SEMANTIC}`.  
 
 -   **SYNTAX**
 
@@ -283,111 +283,111 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 ### Parser Simulation{#parser-simulation}
 
-1.  파서 추가 화면에서 패턴을 입력한 후 **_시뮬레이션_** 버튼을 선택하세요. **_파서 시뮬레이션_** 창이 나타납니다. 
+1.  Enter a pattern in the parser addition screen, and then select **_Simulation_**. The **_Parser Simulation_** window appears. 
 
-2.  **_파서 시뮬레이션_** 창에서 **_로그_**를 입력하세요. 
+2.  Enter the **_log_** in the **_Parser Simulation_** window. 
 
-3.  입력한 **_로그_**와 **_패턴_**을 확인하세요. 
+3.  Check the entered **_log_** and **_pattern_**. 
 
-  ![파서 시뮬레이션](/img/log-parser-simulation.png)
+  ![Parser Simulation](/img/log-parser-simulation.png)
 
-1.  **_패턴 적용_** 버튼을 누르면 선택한 파서에 입력한 패턴이 적용됩니다. Check whether parsing succeeds with the pattern to register. 
+1.  When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. Check whether parsing succeeds with the pattern to register. 
 
     -   **Simulation Success Screen**
 
-        ![시뮬레이션 성공](/img/log-simulation-success.png)
+        ![Simulation Success](/img/log-simulation-success.png)
 
     -   **Simulation Failure Screen**
 
-        ![시뮬레이션 실패](/img/log-simulation-fail.png)
+        ![Simulation Failure](/img/log-simulation-fail.png)
 
-### 퍼포먼스 측정{#log-performance}
+### Performance measurement{#log-performance}
 
 After successful simulation, click **_Performance measurement_** to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
 
-![퍼포먼스 측정](/img/log-performance.png)
+![Performance measurement](/img/log-performance.png)
 
-### 파싱 성공{#log-parsed}
+### Parsing success{#log-parsed}
 
-파싱 로직을 등록해 **키**(key)가 생성되면 로그 조회 시 해당 키로 파싱된 값이 추가됩니다. 다음 **_라이브 테일_** 메뉴 예시와 같이 파싱된 키와 값이 추가됩니다. 
+If a key is generated by registering a parsing logic, the value parsed with the key is added upon log inquiry. As in the following **_Live Tail_** menu's example, the parsed key and value are added. 
 
-![파싱 성공](/img/log-parsed.png)
+![Parsing Success](/img/log-parsed.png)
 
 The parsed key can be checked in **_Live Tail_**, **_Log Search_**, and **_Log Trend_**.
 
-## 로그 2차 파서 설정{#log-setting-parser-2nd}
+## Log secondary parser setting{#log-setting-parser-2nd}
 
-**_로그 설정_** 메뉴 상단에서 **_로그 2차 파서 설정_** 탭을 선택해 로그 파서를 등록 및 수정할 수 있습니다. **_4xx, 5xx 상태 코드 파서_**와 **_상태 코드 성공률 파서_**를 제공합니다. 로그 2차 파서는 GROK 또는 JSON과 같은 1차 파서가 파싱된 경우 사용할 수 있는 파서입니다. 1차 파서로 추출한 값을 가공해 통계 데이터를 생성합니다. 웹 혹은 API 응답 로그에 대해 Http Status Code를 기반으로 2차 통계를 추출합니다.
+At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The **_4xx, 5xx Status Code Parser_** and **_Status Code Success Rate Parser_** are provided. The log secondary parser can be used if a primary parser such as GROK or JSON has been parsed. By processing the values extracted by the primary parser, the statistics data is generated. Secondary statistics are extracted based on HTTP status codes for the web or API response logs.
 
--   **_4xx, 5xx 상태 코드 파서_**: 비정상 응답에 대한 건수 정보를 집계합니다.
+-   **_4xx, 5xx Status Code Parser_**: The counts are aggregated for abnormal responses.
 
--   **_상태 코드 성공률 파서_**: 전체 건수 대비 비정상 응답 비율을 추출합니다.
+-   **_Status Code Success Rate Parser_**: The percentage of abnormal responses to the total number of cases is extracted.
 
 :::note
 
-로그 2차 파서는 1차 파싱된 결과에 대하여 특수 목적의 2차 파싱 기능을 제공합니다. 2차 파서를 사용하기 위해서는 **1차 파서가 등록되어 있어야 합니다**.
+The log secondary parser provides the special purpose secondary parsing function for the primary parsed results. 2차 파서를 사용하기 위해서는 **1차 파서**가 **등록**되어 있어야 합니다.
 
 :::
 
-### 파서 목록{#log-parser-list-2nd}
+### Parser List{#log-parser-list-2nd}
 
-![로그 2차 파서 목록](/img/log-2nd-parser-list.png)
+![Log Secondary Parser List](/img/log-2nd-parser-list.png)
 
-**_로그 설정_** 메뉴 상단에서 **_로그 2차 파서 설정_** 탭을 선택하면 등록한 파서를 조회하고 추가 및 편집이 가능한 **_파서 목록_** 화면을 확인할 수 있습니다. 
+If you select the **_Log secondary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
 
--   상단 오른쪽 **_+ 추가하기_** 버튼을 선택하면 **_파서 추가_** 창이 나타납니다.
+-   If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
 
--   파서 목록 **_적용 순서_** 컬럼의 ![](/img/ic-drag-drop.svg) 아이콘을 드래그해 파서 설정 순서를 변경할 수 있습니다.
+-   You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
 
--   파서 목록 ![아이콘](/img/ic-toggle-on.svg) **_활성화_** 토글을 통해 파서 활성화 여부를 지정할 수 있습니다.
+-   Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
 
--   파서 목록 ![수정 아이콘](/img/ico-edit.svg) **_수정_** 및 ![삭제 아이콘](/img/ico-trash-red.svg) **_삭제_** 아이콘을 통해 등록한 파서를 수정 및 삭제할 수 있습니다.
+-   Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
 
-### 파서 등록 순서{#log-add-parser-2nd}
+### Parser registration order{#log-add-parser-2nd}
 
-**_로그 설정_** 메뉴 상단에서 **_로그 2차 파서 설정_** 탭을 선택해 로그 파서를 등록 및 수정할 수 있습니다. 다음은 파서 등록 시 공통 순서를 안내합니다.
+At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
 
   ![sc](/img/log-2nd-parser-add.png)
 
-1.  **_+ 추가하기_** 버튼을 선택하면 **_파서 추가_** 창이 나타납니다.
+1.  Select **_+ Add_**. The **_Add Parser_** window appears.
 
-2.  **_파서_** 선택 창에서 파서를 선택하세요. 각 파서 설정 항목 및 제외할 상태 코드 등록에 관한 자세한 내용은 다음 문서를 참조하세요.
+2.  In the **_Parser_** selection window, select a parser. For more information about the registration of each parser settings and status codes to exclude, see the following.
 
-    -   **_4xx, 5xx 상태 코드 파서_** [설정 항목 및 제외할 상태 코드 등록](#4xx-5xx-status-parser)
+    -   **_4xx, 5xx Status Code Parser_** [Registration of settings and status codes to exclude](#4xx-5xx-status-parser)
 
-    -   **_상태 코드 성공률 파서_** [설정 항목 및 제외할 상태 코드 등록](#log-pattern-status)
+    -   **_Status Code Success Rate Parser_** [Registration of settings and status codes to exclude](#log-pattern-status)
 
-3.  **_카테고리_** 선택 창에서 카테고리를 선택하거나 직접 입력하세요. 
+3.  In the **_Category_** selection window, select a category or enter it. 
 
-4.  **_로그 검출 조건_**을 선택하거나 직접 입력하세요.
+4.  Select **_Log detection condition_** or enter it.
 
-5.  **_제외할 상태 코드_**를 입력하세요. 
+5.  Enter the **_status codes to exclude_**. 
 
-6.  **_추가_** 버튼을 선택해 파서를 등록하세요.
+6.  Select **_Add_** to register a parser.
 
-### 4xx, 5xx 상태 코드 파서 제외할 상태 코드 등록{#4xx-5xx-status-parser}
+### Registration of status codes to exclude for the 4xx, 5xx status code parser{#4xx-5xx-status-parser}
 
-![4XX 5XX 상태 코드 파서](/img/log-2nd-4xx5xx.png)
+![4xx, 5xx Status Code Parser](/img/log-2nd-4xx5xx.png)
 
-**_4xx, 5xx 상태 코드 파서_**는 status가 이미 파싱된 경우 사용할 수 있는 파서입니다. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. 제외할 상태 코드로 4xx, 5xx 상태 코드를 입력 또는 선택할 수 있습니다. 입력된 상태 코드는 로그에서 4xx, 5xx 상태 코드를 파싱할 때 제외됩니다. 
+The **_4xx, 5xx Status Code Parser_** can be used when the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. For the status codes to exclude, you can enter or select the 4xx, 5xx status codes. The entered status code is excluded upon parsing the 4xx, 5xx status codes from the logs. 
 
-#### 설정 항목{#log-parser-comp-4xx5xx}
+#### Setting item{#log-parser-comp-4xx5xx}
 
-| Set value | Description                                                                                                            | ETC      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- | -------- |
-| Category  | 4xx, 5xx건수 데이터를 생성할 카테고리입니다.                                                                                           | required |
-| 로그 검출 조건  | 필터로 적용할 검색 키, 검색 값을 입력합니다. 로그 검출 조건에 맞는 로그 데이터에 대해서만 4xx, 5xx건수 데이터를 생성합니다. 로그 검출 조건을 입력하지 않으면 모든 로그를 대상으로 데이터를 생성합니다. | optional |
-| 제외할 상태 코드 | 통계 데이터 생성 시 제외할 상태 코드입니다. 입력하지 않으면 4xx~5xx에 해당하는 전체 오류 상태 코드를 대상으로 4xx, 5xx건수 데이터를 생성합니다.                              | optional |
+| Set value               | Description                                                                                                                                                                                                                                                | ETC      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Category                | It is the category to generate the 4xx, 5xx count data.                                                                                                                                                                                                    | required |
+| Log detection condition | Enter the search key and search value to be applied as the filter. The 4xx, %xx count data is generated only for the log data that meets the log detection condition. If you do not enter any log detection condition, the data is generated for all logs. | optional |
+| Status codes to exclude | The status codes to exclude upon generation of statistics data. If no entry, the 4xx, 5xx count data is generated for all error status codes that correspond between 4xx and 5xx.                                                                          | optional |
 
 #### Registration example for the status parser
 
-![GROK파서 - status 파싱 패턴 등록](/img/log-2nd-4xx5xx-status.png)
+![GROK Parser - Status parsing pattern registration](/img/log-2nd-4xx5xx-status.png)
 
-유입되는 로그가 `{"msg":"message","status":404}`이고 예시처럼 GROK 파서로 status를 파싱한다면, `status: 404`와 같이 파싱됩니다. status가 정상적으로 파싱되는 것을 확인헸다면 4XX,5XX 상태 코드 파서에서 제외할 상태 코드를 등록하세요.     
+If the incoming log is `{"msg":"message","status":404}` and its status is parsed by the GROK parser as shown in the example, it is parsed as `status: 404`. If you confirm that the status has been normally parsed, register the status codes to exclude by the 4xx, 5xx status code parser.     
 
-#### 데이터 조회
+#### Data Search
 
-파서를 모두 등록하면 **_Flex 보드_**로 이동해 **_로그 4XX, 5XX 건수_** 위젯을 생성하세요.
+If all parsers have been registered, go to **_Flex Board_** and then create the **_log 4XX, 5XX count_** widget.
 
 ![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png) 
 
@@ -401,21 +401,21 @@ If the widget is created, you can see the following data.
 
 -   **_recently_**: Final value of the data during the query period
 
-### 상태 코드 성공률 파서 제외할 상태 코드 등록{#log-pattern-status}
+### Registration of status codes to exclude by the status code success rate parser{#log-pattern-status}
 
-![상태 코드 성공률 파서](/img/log-2nd-status.png)
+![Status Code Success Rate Parser](/img/log-2nd-status.png)
 
-**_상태 코드 성공률 파서_**는 status가 이미 파싱된 경우 사용할 수 있는 파서입니다. For more information about status parsing, see [the following](#4xx-5xx-status-parser). 파싱된 status를 이용해 추가로 2xx, 3xx 상태 코드를 파싱합니다. HTTP request success rate data can be generated using the parsed data. 제외할 상태 코드에는 2xx, 3xx 상태 코드를 입력 또는 선택할 수 있습니다. 입력된 상태 코드는 로그에서 2xx, 3xx 상태 코드를 파싱할 때 제외됩니다. 
+The **_status code success rate parser_** can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. For the status codes to exclude, you can enter or select the 2xx, 3xx status codes. The entered status code is excluded upon parsing the 2xx, 3xx status codes from the logs. 
 
-#### 설정 항목{#log-parser-comp-status}
+#### Setting item{#log-parser-comp-status}
 
-| Set value | Description                                                                                                        | ETC      |
-| --------- | ------------------------------------------------------------------------------------------------------------------ | -------- |
-| Category  | 요청 성공률 데이터를 생성할 카테고리입니다.                                                                                           | required |
-| 로그 검출 조건  | 필터로 적용할 검색 키, 검색 값을 입력합니다. 로그 검출 조건에 맞는 로그 데이터에 대해서만 요청 성공률 데이터를 생성합니다. 로그 검출 조건을 입력하지 않으면 모든 로그를 대상으로 데이터를 생성합니다. | optional |
-| 제외할 상태 코드 | 요청 성공률 데이터 생성 시 제외할 상태 코드입니다. 입력하지 않으면 2xx~3xx에 해당하는 전체 성공 상태 코드를 대상으로 요청 성공률 데이터를 생성합니다.                          | optional |
+| Set value               | Description                                                                                                                                                                                                                                                      | ETC      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Category                | It is the category to generate the request success rate data.                                                                                                                                                                                                    | required |
+| Log detection condition | Enter the search key and search value to be applied as the filter. The request success rate data is generated only for the log data that meets the log detection condition. If you do not enter any log detection condition, the data is generated for all logs. | optional |
+| Status codes to exclude | The status codes to exclude upon generation of request success rate data. If no entry, the request success rate data is generated for all success rate status codes that correspond between 2xx and 3xx.                                                         | optional |
 
-#### 데이터 조회
+#### Data Search
 
 If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
 
@@ -427,62 +427,62 @@ If the widget is created, you can see the following data.
 
 The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
 
-## 빠른 인덱스 설정{#log-setting-index}
+## Fast Index Setting{#log-setting-index}
 
-**_로그 설정_** 메뉴 상단에서 **_빠른 인덱스 설정_** 탭을 선택하세요. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
+Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
 
-| Set value              | Required       | Description                                    |
-| ---------------------- | -------------- | ---------------------------------------------- |
-| Category               | Mandatory      | Category to be set as fast index               |
-| 검색 키                   | Mandatory      | 빠른 인덱스를 설정할 검색 키                               |
-| Case insensitive       | Option         | Whether to be case sensitive                   |
-| Rule                   | Mandatory      | `*` must be included at least one.             |
-| Enabled                | Mandatory      | Active or inactive (default value is `true`)   |
+| Set value                 | Required       | Description                                    |
+| ------------------------- | -------------- | ---------------------------------------------- |
+| Category                  | Mandatory      | Category to be set as fast index               |
+| Search Key                | Mandatory      | Search key for fast index setting              |
+| Case insensitive          | Option         | Whether to be case sensitive                   |
+| Rule                      | Mandatory      | `*` must be included at least one.             |
+| Enabled                   | Mandatory      | Active or inactive (default value is `true`)   |
 
-## 로그 장기 보관 통계 설정{#log-long-term-archive}
+## Log long-term archive statistics{#log-long-term-archive}
 
-**_로그 설정_** 메뉴 상단에서 **_로그 장기 보관 통계_** 탭을 선택하세요. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. 장기간 시 실제 로그 데이터는 삭제되어도 해당 조건을 만족하는 로그가 얼마나 수집되었는지 추이를 확인할 수 있습니다.
+Select the **_Log long-term archive statistics_** tab at the top of **_Log Setting_**. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
 
 <!-- 
 
 ![로그 장기 보관 통계](https://img.whatap.io/22/11/28/090932log_022_long_period_stat_config.png)
 
-1. ***로그 장기 보관 통계*** 탭에서 ***+ 추가하기*** 버튼을 선택하세요. ***로그 장기 보관 통계 추가*** 창이 나타납니다.
+1. In the ***Log long-term archive statistics*** tab, select ***+ Add***. The ***Log long-term archive statistics*** window appears.
 
-1. 규칙을 적용할 ***카테고리***를 선택하세요.
+1. Select a ***category*** to apply the rule.
 
-1. ***데이터 보관일***을 선택하세요.
+1. Select ***Data Period***.
 
-1. 규칙을 만족하는 로그 발생 시 저장할 ***통계 키***를 설정하세요. 동일한 키를 중복 설정할 수 없습니다.
+1. Set the ***statistic key*** to be saved with when a log that satisfies the rule occurs. You cannot set the same key twice.
 
-1. ***규칙 이름*** 입력창에 해당 규칙 이름을 입력하세요.
+1. In ***Rule Name***, enter the rule name.
 
-1. ***태그***를 추가하세요.
+1. Add ***tags***.
 
-1. ***제외***를 체크하면 입력한 조건에 해당하지 않는 값을 기반으로 통계 데이터를 생성합니다.
+1. If ***Exclude*** is checked, statistical data is generated with the values that do not meet the entered conditions.
 
-1. ***대소문자 구분***을 체크하면 입력한 규칙의 값에 대해 대소문자 구분 여부를 지정합니다.
+1. If ***Case Sensitive*** is checked, specify whether the value of the entered rule is case sensitive or not.
 
-1. 생성한 규칙은 ***-*** 아이콘을 통해 삭제하거나 ***+ 추가하기*** 버튼을 통해 추가할 수 있습니다.
+1. The generated rule can be deleted using the ***-*** icon or added using the ***+ Add*** button.
 
 -->
 
-### 로그 장기 보관 통계 추가{#log-long-term-archive-add}
+### Adding the log long-term archive statistics{#log-long-term-archive-add}
 
-![로그 장기 보관 통계](/img/log-long-term-archive.png)
+![Log long-term archive statistics](/img/log-long-term-archive.png)
 
-**_로그 장기 보관 통계_** 탭에서 **_+ 추가하기_** 버튼을 선택하면 **_로그 장기 보관 통계 추가_** 창이 나타납니다. **_+ 추가하기_** 버튼을 통해 규칙을 추가하거나  생성한 규칙을 **_-_** 아이콘을 통해 삭제할 수 있습니다.
+If you select **_+ Add_** under the **_Log long-term archive statistics_** tab, the **_Log long-term archive statistics_** window appears. You can add rules by using **_+ Add_** or delete the created rules by using the **_-_** icon.
 
-#### 설정 항목{#log-long-term-archive-comp}
+#### Setting item{#log-long-term-archive-comp}
 
-| Field            | Description                                                                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Category         | Category to apply the rule to                                                                                                                       |
-| 통계 키(key)        | The same key cannot be set twice to save when a log that meets the rule is generated.                                                               |
-| 로그 검출 조건         | Condition for generating log statistical data. Statistical data is generated based on how many logs that meet this condition are collected.         |
-| Exclude          | If checked, statistical data is generated with values that do not correspond to the entered conditions.                                             |
-| Case sensitive   | 입력한 로그 검출 조건의 값에 대해서 대소문자 구분 여부를 지정합니다.                                                                                                             |
-| Enabled          | Active or inactive (default value is `true`)                                                                                                        |
+| Field                        | Description                                                                                                                                         |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Category                     | Category to apply the rule to                                                                                                                       |
+| Statistic Key                | The same key cannot be set twice to save when a log that meets the rule is generated.                                                               |
+| Log detection condition      | Condition for generating log statistical data. Statistical data is generated based on how many logs that meet this condition are collected.         |
+| Exclude                      | If checked, statistical data is generated with values that do not correspond to the entered conditions.                                             |
+| Case sensitive               | Specify case sensitivity for the values of the entered log detection conditions.                                                                    |
+| Enabled                      | Active or inactive (default value is `true`)                                                                                                        |
 
 #### Example
 
@@ -490,7 +490,7 @@ If a setting is added as follows, statistical data is generated with a key value
 
 ![](/img/log-long-term-totalcount.png)
 
-### 데이터 조회{#log-widget-statistics}
+### Data Search{#log-widget-statistics}
 
 1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
 

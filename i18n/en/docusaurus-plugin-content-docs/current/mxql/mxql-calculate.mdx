@@ -114,14 +114,14 @@ The `SELECT` command is also used when changing the field sequences.
 
 Adds a field.
 
-| Option name | Option function                                                                                                                        |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| value       | Creates the field with a specific value.                                                                                               |
-| from        | Creates the field with the set field value.                                                                                            |
-| expr        | It creates a field whose value is the result of the expression entered. The field name can be used in the expression.                  |
-| oname       | By setting the name of the `oid` column, it creates a column with the value of `oname` that corresponds to the value of `oid`.         |
-| okind       | By setting the name of the `okid` column, it creates a column with the value of `okind name` that corresponds to the value of `okid`.  |
-| onode       | By setting the name of the `onode` column, it creates a column with the value of `onode name` that corresponds to the value of `onid`. |
+| Option name | Option function                                                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| value       | Creates the field with a specific value.                                                                                                |
+| from        | Creates the field with the set field value.                                                                                             |
+| expr        | It creates a field whose value is the result of the expression entered. The field name can be used in the expression.                   |
+| oname       | By setting the name of the `oid` column, it creates a column with the value of `oname` that corresponds to the value of `oid`.          |
+| okind       | By setting the name of the `okind` column, it creates a column with the value of `okind name` that corresponds to the value of `okind`. |
+| onode       | By setting the name of the `onode` column, it creates a column with the value of `onode name` that corresponds to the value of `onode`. |
 
 -   In case of setting the `value` property
 
@@ -584,7 +584,7 @@ Only the data with specific conditions is passed to the next step.
     FILTER { key : tx_count, exist : true}
     ```
 
--   In case of applying the `exist` option
+-   In case of applying the `notexist` option
 
     ```sql
     CATEGORY app_counter

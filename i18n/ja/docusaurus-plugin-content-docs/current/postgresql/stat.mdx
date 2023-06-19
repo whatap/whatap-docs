@@ -11,7 +11,7 @@ tags:
 
 :::note
 
-이 문서는 PostgreSQL 모니터링 V2를 기준으로 작성되었습니다. PostgreSQL 모니터링 V1 문서는 [다음 문서](../postgresql-v1/stat)를 참조하세요.
+この文書は、PostgreSQLモニタリングV2を基準に作成されました。PostgreSQLモニタリングV1文書については、[次の文書](../postgresql-v1/stat)を参考にしてください。
 
 :::
 
@@ -35,50 +35,50 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 ### カラム情報の案内
 
-| 項目                | 説明                                                       |
-| ----------------- | -------------------------------------------------------- |
-| execute count     | SQL을 수행한 횟수                                              |
-| elapse avg (sec)  | SQL을 수행한 평균 수행 시간(초)으로 `elapse sum / execute count`의 결과값 |
-| elapse sum (sec)  | SQL을 수행한 시간(초) 합계                                        |
-| elapse max (sec)  | SQL의 최대 수행 시간(초)                                         |
-| elapse wait (sec) | SQL의 대기 시간(초)                                            |
-| instance          | 인스턴스 이름                                                  |
+| 項目                | 説明                                                 |
+| ----------------- | -------------------------------------------------- |
+| execute count     | SQLを実行した回数                                         |
+| elapse avg (sec)  | SQLを実行した平均実行時間(秒)で`elapse sum / execute count`の結果値 |
+| elapse sum (sec)  | SQLを実行した時間(秒) の合計                                  |
+| elapse max (sec)  | SQLの最大実行時間(秒)                                      |
+| elapse wait (sec) | SQLの待機時間(秒)                                        |
+| instance          | インスタンス名                                            |
 
-## PG SQL 통계
+## PG SQL統計
 
 ホーム画面 > プロジェクト選択 > **_統計／レポート_** > **_PG SQL統計_**
 
-PostgreSQL에서 제공하는 SQL 통계(수행 횟수, 실행 시간, Row 수 등) 데이터로 `pg_state_statements` 뷰를 통해 수집합니다.
+PostgreSQLで提供するSQL統計(実行回数、実行時間、Row数など) データで、`pg_state_statements`ビューを通じて収集します。
 
 :::note
 
-`pg_stat_statements` 모듈에 대한 자세한 내용은 [다음 링크](https://www.postgresql.org/docs/current/pgstatstatements.html)를 참조하세요.
+`pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参考にしてください。
 
 :::
 
 ### 設定
 
-**_PG SQL 통계_** 메뉴를 사용하기 위해서는 모니터링 대상 DB에서 다음과 같은 설정이 필요합니다.
+**_PG SQL統計_**メニューを使用するためには、モニタリング対象DBで次のような設定が必要です。
 
-1.  PostgreSQL 확장팩을 설치하세요.
+1.  PostgreSQL拡張パックをインストールしてください。
 
     ```bash
     yum install postgresql-contrib
     ```
 
-2.  _postgresql.conf_ 파일에 파라미터 설정 후 DB를 재기동하세요.
+2.  _postgresql.conf_ファイルにパラメータを設定し、DBを再起動してください。
 
     ```ini title='postgresql.conf'
     shared_preload_libraries = 'pg_stat_statements'
     ```
 
-3.  사용하려는 DB에 접속해 확장 모듈을 설치하세요.
+3.  使用したいDBに接続して拡張モジュールをインストールしてください。
 
     ```bash
     create extension pg_stat_statements;
     ```
 
-4.  데이터를 조회하는지 확인하세요.
+4.  データを照会するか確認してください。
 
     ```bash
     select * from public.pg_stat_statements
@@ -88,87 +88,87 @@ PostgreSQL에서 제공하는 SQL 통계(수행 횟수, 실행 시간, Row 수 �
 
 ![PG SQL統計](/img/db-pg-sql-stat.png)
 
-1.  시간에서 데이터를 조회할 시간과 날짜를 선택하세요. 녹색 버튼을 선택해 조회 시간을 선택할 수도 있습니다.
+1.  時間でデータを照会する時間と日付を選択してください。緑のボタンを選択して照会時間を選択することもできます。
 
-2.  인스턴스에서 데이터를 조회할 대상을 선택하세요. 여러 개의 인스턴스를 선택할 수 있으며 모든 인스턴스를 선택하려면 **_전체 선택_**을 클릭하세요.
+2.  インスタンスでデータを照会する対象を選択してください。複数のインスタンスを選択でき、すべてのインスタンスを選択するには、**_全体選択_**をクリックしてください。
 
 3.  ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-상위 50건의 내용을 테이블에 표시합니다.
+上位50件の内容をテーブルに表示します。
 
 :::note
 
--   임의의 날짜와 시간을 조회하려면 시계 표시 부분을 선택하세요. 날짜와 시간 텍스트 영역을 클릭하면 날짜와 시간을 선택할 수 있는 옵션이 나타납니다.
+-   任意の日付と時刻を照会するには、時計の部分を選択してください。日付と時刻のテキスト領域をクリックすると、日付と時刻を選択するオプションが表示されます。
 
--   테이블 헤더의 각 컬럼을 클릭하면 선택한 컬럼을 기준으로 목록을 정렬할 수 있습니다.
+-   テーブルヘッダーの各カラムをクリックすると、選択したカラムに基づいて一覧をソートすることができます。
 
--   **_조회 기준_**에서 선택한 항목 따라 조회 결과를 정렬할 수 있습니다. 원하는 항목을 선택한 다음 ![검색 아이콘](/img/ico-btn-search.png) 버튼을 선택하세요. 
+-   **_照会基準_**で選択した項目によって照会結果をソートすることができます。ご希望の項目を選択した後![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。 
 
--   **_조회 건 수_**에서 테이블에 표시할 건 수를 설정할 수 있습니다. 설정을 완료한 다음 ![검색 아이콘](/img/ico-btn-search.png) 버튼을 선택하세요. 
+-   **_照会件数_**でテーブルに表示する件数を設定できます。設定を完了した後![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。 
 
--   조회한 내용을 csv 형식의 파일로 다운받으려면 ![Download icon](/img/ico-download.svg) 버튼을 선택하세요.
+-   照会した内容をcsv形式のファイルにダウンロードするには、![Download icon](/img/ico-download.svg)ボタンを選択してください。
 
--   조회된 결과 목록에서 **_query_** 항목을 선택하면 **_SQL 상세_** 창이 나타납니다. 자세한 내용은 [다음 문서](#query-details)를 참조하세요.
+-   照会された結果一覧で**_query_**項目を選択すると**_SQL詳細_**ウィンドウが表示されます。詳細については、[次の文書](#query-details)を参考にしてください。
 
 :::
 
 ### カラム情報の案内
 
-| 項目                  | 説明                                                           |
-| ------------------- | ------------------------------------------------------------ |
-| query               | 쿼리 문자열                                                       |
-| queryid             | 쿼리 해시코드                                                      |
-| ユーザー                | 사용자 oid                                                      |
-| db                  | データベース名                                                      |
-| rows                | 검색되거나 영향을 받는 총 ROW 수                                         |
-| total_exec_time     | 쿼리 실행에 소요 된 총 시간(밀리 초)                                       |
-| calls               | 실행 횟수                                                        |
-| shared_blks_hit     | 총 공유 블록 캐시 적중 수                                              |
-| shared_blks_read    | 디스크에서 읽은 총 공유 블록 수                                           |
-| blk_read_time       | 블록을 읽는데 걸린 총시간(밀리 초), `track_io_timing`이 활성화 된 경우, 그렇지 않으면 0 |
-| blk_write_time      | 블록을 쓰는데 걸린 총시간, `track_io_timing`이 활성화 된 경우, 그렇지 않으면 0       |
-| local_blks_dirtied  | 변경된 로컬 블록 수                                                  |
-| local_blks_hit      | 로컬 블록 캐시 히트 수                                                |
-| local_blks_written  | 디스크에 기록된 총 로컬 블록 수                                           |
-| local_blks_read     | 디스크에서 읽은 총 로컬 블록 수                                           |
-| shared_blks_written | 디스크에 기록된 총 공유 블록 수                                           |
-| shared_blks_dirtied | 변경된 총 공유 블록 수                                                |
-| temp_blks_read      | 디스크에서 읽은 총 임시 블록 수                                           |
-| temp_blks_written   | 디스크에 기록된 총 임시 블록 수                                           |
+| 項目                  | 説明                                                          |
+| ------------------- | ----------------------------------------------------------- |
+| query               | クエリ文字列                                                      |
+| queryid             | クエリハッシュコード                                                  |
+| ユーザー                | ユーザーoid                                                     |
+| db                  | データベース名                                                     |
+| rows                | 検索または影響を受けるROWの総数                                           |
+| total_exec_time     | クエリの実行に費やされた合計時間(ミリ秒)                                       |
+| calls               | 実行回数                                                        |
+| shared_blks_hit     | 共有ブロックキャッシュの合計的中数                                           |
+| shared_blks_read    | ディスクから読み込んだ共有ブロックの総数                                        |
+| blk_read_time       | ブロックを読み込むのにかかった総時間(ミリ秒)、`track_io_timing`が活性化された場合、そうでなければ0 |
+| blk_write_time      | ブロックを書き込むのにかかった総時間、`track_io_timing`が活性化された場合、そうでなければ0      |
+| local_blks_dirtied  | 変更されたローカルブロック数                                              |
+| local_blks_hit      | ローカルブロックキャッシュヒット数                                           |
+| local_blks_written  | ディスクに記録されたローカルブロックの総数                                       |
+| local_blks_read     | ディスクで読み込んだローカルブロックの総数                                       |
+| shared_blks_written | ディスクに記録された共有ブロックの総数                                         |
+| shared_blks_dirtied | 変更された共有ブロックの総数                                              |
+| temp_blks_read      | ディスクで読み込んだ臨時ブロックの総数                                         |
+| temp_blks_written   | ディスクに記録された臨時ブロックの総数                                         |
 
-## 통계 메뉴 옵션 이용하기
+## 統計メニューオプションの利用
 
-### 쿼리 자세히 보기{#query-details}
+### クエリの詳細を見る{#query-details}
 
-![SQL 상세](/img/db-pg-sql-stat-sql-details.png)
+![SQL詳細](/img/db-pg-sql-stat-sql-details.png)
 
-조회된 결과 목록에서 **_query_** 항목을 선택하면 **_SQL 상세_** 창이 나타납니다. 
+照会された結果一覧で**_query_**項目を選択すると**_SQL詳細_**ウィンドウが表示されます。 
 
--   **_플랜 보기_**: DB Name, User Name, Password를 입력하면 **_Plan_** 정보를 확인할 수 있습니다.
+-   **_プランを見る_**：DB Name、User Name、Passwordを入力すると**_Plan_**情報を確認できます。
 
--   **_파라미터_**: 쿼리 문장에서 변수로 설정된 부분을 **_default_** 값으로 바인딩할 수 있습니다. **_clear_** 버튼을 선택하면 바인딩된 값을 해제합니다.
+-   **_パラメータ_**：クエリ文で変数として設定された部分を**_default_**値でバインディングできます。**_clear_**ボタンを選択すると、バインディングされた値を解除します。
 
--   **_Formatting_**: 토글 버튼을 선택하면 SQL 문장을 들여쓰기 및 포맷팅하여 가독성을 높일 수 있습니다.
+-   **_Formatting_**：トグルボタンを選択し、SQL文をインデント、フォーマット化して可読性を高めることができます。
 
--   **_연관 애플리케이션_**: 해당 쿼리와 연관된 애플리케이션 프로젝트로 이동할 수 있습니다. 목록에서 프로젝트를 선택한 다음 ![arrow icon](/img/ic-arrow-right.svg) 버튼을 클릭하세요. 선택한 프로젝트의 **_통계/보고서_** > **_통계_** 메뉴로 이동합니다.
+-   **_関連アプリケーション_**：当該クエリに関連付けられたアプリケーションプロジェクトに移動できます。一覧でプロジェクトを選択し![arrow icon](/img/ic-arrow-right.svg)ボタンをクリックしてください。選択したプロジェクトの**_統計/レポート_** > **_統計_**メニューに移動します。
 
-### 조회 결과 필터링하기
+### 照会結果フィルタリング
 
 ![Filtering](/img/db-sql-stat-add-filter.png)
 
-조회된 결과를 SQL의 파라미터 값을 기준으로 필터링할 수 있습니다.
+照会された結果をSQLのパラメータ値に基づいてフィルタリングすることができます。
 
-1.  **_필터 추가_** 버튼을 선택하세요. 
+1.  **_フィルター追加_**ボタンを選択してください。 
 
-2.  **_조건 입력_** 텍스트 상자에 원하는 값을 입력한 다음 **_저장_**을 선택하세요. 
+2.  **_条件入力_**テキストボックスに希望の値を入力して**_保存_**を選択してください。 
 
 3.  ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-입력한 SQL 파라미터 값을 포함하는 결과만 목록에 표시됩니다.
+入力したSQLパラメータ値を含む結果が一覧に表示されます。
 
 :::note
 
-필터를 해제하려면 **_필터_**에서 ![삭제 아이콘](/img/ico-remove-white.svg) 버튼을 선택하세요.
+フィルターを解除するには、**_フィルター_**の![削除アイコン](/img/ico-remove-white.svg)ボタンを選択してください。
 
 ![Disable filter](/img/db-sql-stat-disable-filter.png)
 
