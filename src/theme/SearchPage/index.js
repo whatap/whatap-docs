@@ -186,6 +186,7 @@ function SearchPageContent() {
           _highlightResult: {hierarchy},
           _snippetResult: snippet = {},
         }) => {
+          console.log(hierarchy);
           const titles = Object.keys(hierarchy).map((key) =>
             sanitizeValue(hierarchy[key].value),
           );
@@ -383,9 +384,9 @@ function SearchPageContent() {
               ({title, url, summary, breadcrumbs}, i) => (
                 <article key={i} className={styles.searchResultItem}>
                   <h2 className={styles.searchResultItemHeading}>
-                    {/* <Link to={url} dangerouslySetInnerHTML={{__html: title}}> */}
+                    {/* <Link to={url} dangerouslySetInnerHTML={{__html: title}}/> */}
                     <Link to={url}>
-                    {breadcrumbs.length > 0 && (
+                    {breadcrumbs.length >= 0 && (
                       <nav aria-label="breadcrumbs">
                         <ul
                           className={clsx(
