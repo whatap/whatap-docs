@@ -21,9 +21,9 @@ function BreadcrumbsItemString({children, href, isLast}) {
     );
   }
   return href ? (
-    <span itemProp="name">{children}&nbsp;&gt;&nbsp;</span>
+    <span itemProp="name">{children}<cite>&gt;</cite></span>
   ) : (
-    <span>{children}&nbsp;&gt;&nbsp;</span>
+    <span>{children}<cite>&gt;</cite></span>
   );
 }
 function BreadcrumbsItemLink({children, href, isLast}) {
@@ -125,7 +125,6 @@ export default function DocBreadcrumbs() {
         })}
       </ul>
       <div className="breadcrumbs-hidden">
-      <span>Docs &gt; </span>
       {breadcrumbs.map((item, idx) => {
           const isXXX = idx === breadcrumbs.length - 1;
           return (
