@@ -1786,6 +1786,155 @@ const sidebars = {
       ],
     }
   ],
+  mysqlv1Sidebar: [
+    {
+      type: 'category',
+      label: 'MySQL 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mysql-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mysql-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql-v1/install-agent',
+            'mysql-v1/after-install-agent',
+            'mysql-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql-v1/agent-settings'
+          },
+          items: [
+            'mysql-v1/agent-dbx-settings',
+            'mysql-v1/agent-xos-settings',
+          ],
+        },
+        'mysql-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/dashboard-intro'
+              },
+              items: [
+                'mysql-v1/instance-list',
+                'mysql-v1/instance-monitoring',
+                'mysql-v1/multi-instance-monitoring',
+                'mysql-v1/slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/flex-board',
+              },
+              items: [
+                'mysql-v1/flexboard-template',
+                'mysql-v1/flexboard-create',
+                'mysql-v1/flexboard-manage',
+                'mysql-v1/flexboard-metric-widget',
+                'mysql-v1/flexboard-widget-manage',
+                'mysql-v1/flexboard-mode',
+                'mysql-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql-v1/analysis-count-trend',
+                'mysql-v1/analysis-databaseparameter',
+                'mysql-v1/analysis-lock-and-deadlock',
+                'mysql-v1/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/metrics-intro'
+              },
+              items: [
+                'mysql-v1/metrics-data-list',
+                'mysql-v1/metrics-chart',
+                'mysql-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql-v1/stat',
+                'mysql-v1/report-intro',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/set-notice',
+              },
+              items: [
+                'mysql-v1/warning-notice',
+                'mysql-v1/metric-warning-notice',
+                'mysql-v1/set-event-detect-anomal',
+                'mysql-v1/set-receive-event',
+                'mysql-v1/set-event-history',
+                'mysql-v1/set-event-format',
+                'mysql-v1/file-log-notice',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   mysqlSidebar: [
     {
       type: 'category',
@@ -3415,7 +3564,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'MySQL',
-          href: 'mysql/monitoring-intro',
+          href: 'mysql-v1/monitoring-intro',
         },
         // {
         //   type: 'link',
