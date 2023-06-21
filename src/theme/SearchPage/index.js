@@ -185,15 +185,13 @@ function SearchPageContent() {
           url,
           _highlightResult: {hierarchy},
           _snippetResult: snippet = {},
-          breadcrums,
-          product
+          breadcrums
         }) => {
           const titles = Object.keys(hierarchy).map((key) =>
             sanitizeValue(hierarchy[key].value),
           );
           console.log(titles[titles.length-1]);
           const docpath = breadcrums;
-          const curprod = product;
           return {
             title: titles[titles.length-1],
             url: processSearchResultUrl(url),
@@ -201,8 +199,7 @@ function SearchPageContent() {
               ? `${sanitizeValue(snippet.content.value)}...`
               : '',
             breadcrumbs: titles,
-            docpath,
-            curprod
+            docpath
           };
         },
       );
@@ -387,7 +384,7 @@ function SearchPageContent() {
         {searchResultState.items.length > 0 ? (
           <main>
             {searchResultState.items.map(
-              ({title, url, summary, breadcrumbs, docpath, product}, i) => (
+              ({title, url, summary, breadcrumbs, docpath}, i) => (
                 <article key={i} className={styles.searchResultItem}>
                   <h2 className={styles.searchResultItemHeading}>
                     {docpath == ""
