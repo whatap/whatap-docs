@@ -45,9 +45,10 @@
 }
 
 .searchResultItemPath {
-  font-size: 1.2rem;
-  /* color: var(--ifm-color-content-secondary); */
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
   --ifm-breadcrumb-separator-size-multiplier: 1;
+  margin: 10px 0 5px 0;
 }
 
 .searchResultItemSummary {
