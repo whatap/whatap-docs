@@ -776,7 +776,7 @@
     "description": "The label for the doc item 지원 환경 in sidebar mongodbSidebar, linking to the doc mongodb/monitoring-support"
   },
   "sidebar.releaseSidebar.category.릴리스 노트": {
-    "message": "リリースノート",
+    "message": "Release Notes",
     "description": "The label for category 릴리스 노트 in sidebar releaseSidebar"
   },
   "sidebar.releaseSidebar.category.Service": {
