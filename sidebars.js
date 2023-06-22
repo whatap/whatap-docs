@@ -4565,6 +4565,7 @@ const sidebars = {
             'browser/metrics-intro',
           ],
         },
+        'browser/report-intro',
         {
           type: 'category',
           label: '알림 설정하기',
