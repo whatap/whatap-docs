@@ -128,7 +128,7 @@
     "description": "The label for link Open API in sidebar phpSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.phpSidebar.doc.설치 점검": {
-    "message": "インストール点検",
+    "message": "インストールチェック",
     "description": "The label for the doc item 설치 점검 in sidebar phpSidebar, linking to the doc php/install-check"
   },
   "sidebar.phpSidebar.doc.설치 문제 해결": {
@@ -848,7 +848,7 @@
     "description": "The label for category 시작하기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.category.상품별 문서 바로가기": {
-    "message": "製品",
+    "message": "製品固有のドキュメントに移動",
     "description": "The label for category 상품별 문서 바로가기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.category.관리": {
@@ -1312,7 +1312,7 @@
     "description": "The label for category Log 모니터링 in sidebar logSidebar"
   },
   "sidebar.logSidebar.category.적용하기": {
-    "message": "適用",
+    "message": "応募方法",
     "description": "The label for category 적용하기 in sidebar logSidebar"
   },
   "sidebar.logSidebar.category.주요 메뉴 알아보기": {
@@ -1416,7 +1416,7 @@
     "description": "The label for category 에이전트 설치 in sidebar nodejsSidebar"
   },
   "sidebar.postgreSidebar.category.PostgreSQL 모니터링 V2": {
-    "message": "PostgreSQL 모니터링 V2",
+    "message": "PostgreSQLモニタリングV2",
     "description": "The label for category PostgreSQL 모니터링 V2 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.doc.Log 모니터링": {
@@ -1488,7 +1488,7 @@
     "description": "The label for the doc item 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/aws-log-setting"
   },
   "sidebar.awslogSidebar.doc.VPC 설정하기": {
-    "message": "VPC 설정하기",
+    "message": "VPC設定",
     "description": "The label for the doc item VPC 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/install-aws-log-vpc"
   }
 }

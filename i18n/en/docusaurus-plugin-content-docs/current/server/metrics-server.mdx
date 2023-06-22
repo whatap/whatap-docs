@@ -178,25 +178,20 @@ Network interface metrics for each server
 
 #### Fields
 
-| Field name       | Unit            | Description                                                             | Remarks |
-| ---------------- | --------------- | ----------------------------------------------------------------------- | ------- |
-| blksize          | Byte            | Block size                                                              | Linux   |
-| count            | Positive number | WhaTap only                                                             | Common  |
-| freePercent      | Percentage      | File system's free space rate                                           | Linux   |
-| freeSpace        | Byte            | File system's free space amount                                         | Linux   |
-| ioPercent        | Percentage      | IO utilization `In some disk types, inaccurate values can be measured.` | Linux   |
-| ioutilOrder      | Positive number | WhaTap only                                                             | Linux   |
-| queueLength      | Mistake         | Queue length                                                            | Common  |
-| totalInode       | Positive number | Total number of Inodes                                                  | Linux   |
-| totalSpace       | Byte            | Total size of the file system                                           | Linux   |
-| usedPercent      | Percentage      | File system utilization                                                 | Linux   |
-| usedInode        | Positive number | Number of used inodes                                                   | Linux   |
-| usedInodePercent | Percentage      | Inode utilization                                                       | Linux   |
-| userSpaceOrder   | Positive number | WhaTap only                                                             | Common  |
-| readBps          | Byte            | Bytes read per second                                                   | Common  |
-| writeBps         | Byte            | Bytes written per second                                                | Common  |
-| readIops         | Prime number    | Read count per second                                                   | Common  |
-| writeIops        | Prime number    | Written count per second                                                | Common  |
+| Field name     | Unit            | Description | Remarks |
+| -------------- | --------------- | ----------- | ------- |
+| bandwidthOrder | Positive number | WhaTap only | -       |
+| count          | Positive number | WhaTap only | Common  |
+| droppedIn      | Positive number | 인바운드 드랍     | -       |
+| droppedIn      | Positive number | 아웃바운드 드랍    | -       |
+| errorIn        | Positive number | 인바운드 에러     | -       |
+| errorOut       | Positive number | 아웃바운드 에러    | -       |
+| packetIn       | pps             | 인바운드 패킷     | -       |
+| packetOut      | pps             | 아웃바운드 패킷    | -       |
+| trafficIn      | bps             | 인바운드 트래픽    | -       |
+| trafficInAcct  | Positive number | WhaTap only | -       |
+| trafficOut     | bps             | 아웃바운드 트래픽   | -       |
+| trafficOutAcct | Positive number | WhaTap only | -       |
 
 ## server_netstat
 

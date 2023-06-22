@@ -178,25 +178,20 @@ tags:
 
 #### Fields
 
-| フィールド名           | 単位    | 説明                                     | 備考    |
-| ---------------- | ----- | -------------------------------------- | ----- |
-| blksize          | バイト   | ブロックサイズ                                | linux |
-| count            | 整数    | WhaTap専用                               | 共通    |
-| freePercent      | パーセント | ファイルシステム﻿残存率                           | linux |
-| freeSpace        | バイト   | ファイルシステム﻿残存量                           | linux |
-| ioPercent        | パーセント | IO使用率 「一部のディスクタイプでは不正確な値が測定されることがあります」 | linux |
-| ioutilOrder      | 整数    | WhaTap専用                               | linux |
-| queueLength      | 実数    | Queue Length                           | 共通    |
-| totalInode       | 整数    | Inode全体個数                              | linux |
-| totalSpace       | バイト   | ファイルシステム全体サイズ                          | linux |
-| usedPercent      | パーセント | ファイルシステム使用率                            | linux |
-| usedInode        | 整数    | Inode使用個数                              | linux |
-| usedInodePercent | パーセント | Inode使用率                               | linux |
-| userSpaceOrder   | 整数    | WhaTap専用                               | 共通    |
-| readBps          | バイト   | 毎秒読み込みバイト数                             | 共通    |
-| writeBps         | バイト   | 毎秒書き込みバイト数                             | 共通    |
-| readIops         | 少数    | 毎秒読み込み数                                | 共通    |
-| writeIops        | 少数    | 毎秒書き込み数                                | 共通    |
+| フィールド名         | 単位  | 説明        | 備考 |
+| -------------- | --- | --------- | -- |
+| bandwidthOrder | 整数  | WhaTap専用  | -  |
+| count          | 整数  | WhaTap専用  | 共通 |
+| droppedIn      | 整数  | 인바운드 드랍   | -  |
+| droppedIn      | 整数  | 아웃바운드 드랍  | -  |
+| errorIn        | 整数  | 인바운드 에러   | -  |
+| errorOut       | 整数  | 아웃바운드 에러  | -  |
+| packetIn       | pps | 인바운드 패킷   | -  |
+| packetOut      | pps | 아웃바운드 패킷  | -  |
+| trafficIn      | bps | 인바운드 트래픽  | -  |
+| trafficInAcct  | 整数  | WhaTap専用  | -  |
+| trafficOut     | bps | 아웃바운드 트래픽 | -  |
+| trafficOutAcct | 整数  | WhaTap専用  | -  |
 
 ## server_netstat
 

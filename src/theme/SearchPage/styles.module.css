@@ -42,12 +42,29 @@
 .searchResultItemHeading {
   font-weight: 400;
   margin-bottom: 0;
+  display: block;
+}
+
+.searchResultItemHeading span cite {
+  font-style: normal;
+  font-size: .8em;
+  color: var(--ifm-font-color-base);
+  text-align: center;
+  position: relative;
+  top: -2px;
+}
+.searchResultItemHeading span cite::before {
+  content: " ";
+}
+.searchResultItemHeading span cite::after {
+  content: " ";
 }
 
 .searchResultItemPath {
-  font-size: 1.2rem;
-  /* color: var(--ifm-color-content-secondary); */
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
   --ifm-breadcrumb-separator-size-multiplier: 1;
+  margin: 10px 0 5px 0;
 }
 
 .searchResultItemSummary {

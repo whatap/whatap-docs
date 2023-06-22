@@ -235,11 +235,6 @@ module.exports = Promise.resolve({
                 docId: 'mysql/monitoring-intro',
                 label: 'MySQL',
               },
-              // {
-              //   type: 'doc',
-              //   docId: 'mysql-rds/monitoring-intro',
-              //   label: 'MySQL RDS',
-              // },
               {
                 type: 'doc',
                 docId: 'mssql/monitoring-intro',
@@ -408,13 +403,6 @@ module.exports = Promise.resolve({
             docId: 'mysql/monitoring-intro',
             position: "left",
             label: 'MySQL 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'mysql-rds/monitoring-intro',
-            position: "left",
-            label: 'MySQL RDS 모니터링',
             className: 'hidden',
           },
           {

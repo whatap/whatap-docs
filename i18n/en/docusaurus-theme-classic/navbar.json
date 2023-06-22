@@ -214,5 +214,9 @@
   "item.label.라이선스": {
     "message": "License",
     "description": "Navbar item with label 라이선스"
+  },
+  "item.label.PostgreSQL V2 모니터링": {
+    "message": "PostgreSQL V2 Monitoring",
+    "description": "Navbar item with label PostgreSQL V2 모니터링"
   }
 }

@@ -458,7 +458,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 WhaTapで使用するCluster RoleにHPAが追加されると、指標収集が開始されます。
 
--   対象：クラスタープロジェクト、ネームスペースプロジェクト
+-   対象：クラスタープロジェクト
 -   収集間隔：5秒
 -   統計データ：5分、1時間
 
@@ -470,14 +470,10 @@ WhaTapで使用するCluster RoleにHPAが追加されると、指標収集が�
 
 #### Fields
 
-| フィールド名                | 単位       | 説明                                 | 備考 |
-| --------------------- | -------- | ---------------------------------- | -- |
-| currentReplicas       | 整数       | 現在のレプリカ数                           | -  |
-| desiredReplicas       | 整数       | Desiredレプリカ数                       | -  |
-| lastScaleTime         | 整数       | 最後にスケールが変更されたTimeStamp             | -  |
-| maxReplicas           | 整数       | 最大レプリカ数                            | -  |
-| minReplicas           | 整数       | 最小レプリカ数                            | -  |
-| metric_pod_cpu_avg    | ミリコア     | HPA CPU使用量                         | -  |
-| metric_pod_memory_avg | バイト      | HPA Memory使用量                      | -  |
-| resource_cpu          | パーセント    | HPA CPU平均使用率                       | -  |
-| resource_memory       | パーセント    | HPA Memory平均使用率                    | -  |
+| フィールド名                | 単位      | 説明                                 | 備考 |
+| --------------------- | ------- | ---------------------------------- | -- |
+| currentReplicas       | 整数      | 現在のレプリカ数                           | -  |
+| desiredReplicas       | 整数      | Desiredレプリカ数                       | -  |
+| lastScaleTime         | 整数      | 最後にスケールが変更されたTimeStamp             | -  |
+| maxReplicas           | 整数      | 最大レプリカ数                            | -  |
+| minReplicas           | 整数      | 最小レプリカ数                            | -  |

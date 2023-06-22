@@ -185,17 +185,21 @@ function SearchPageContent() {
           url,
           _highlightResult: {hierarchy},
           _snippetResult: snippet = {},
+          breadcrums
         }) => {
           const titles = Object.keys(hierarchy).map((key) =>
             sanitizeValue(hierarchy[key].value),
           );
+          console.log(titles[titles.length-1]);
+          const docpath = breadcrums;
           return {
-            title: titles.pop(),
+            title: titles[titles.length-1],
             url: processSearchResultUrl(url),
             summary: snippet.content
               ? `${sanitizeValue(snippet.content.value)}...`
               : '',
             breadcrumbs: titles,
+            docpath
           };
         },
       );
@@ -380,38 +384,32 @@ function SearchPageContent() {
         {searchResultState.items.length > 0 ? (
           <main>
             {searchResultState.items.map(
-              ({title, url, summary, breadcrumbs}, i) => (
+              ({title, url, summary, breadcrumbs, docpath}, i) => (
                 <article key={i} className={styles.searchResultItem}>
                   <h2 className={styles.searchResultItemHeading}>
-                    {/* <Link to={url} dangerouslySetInnerHTML={{__html: title}}> */}
-                    <Link to={url}>
-                    {breadcrumbs.length > 0 && (
-                      <nav aria-label="breadcrumbs">
-                        <ul
-                          className={clsx(
-                            'breadcrumbs',
-                            styles.searchResultItemPath,
-                          )}>
-                          {breadcrumbs.map((html, index) => (
-                            <li
-                              key={index}
-                              className="breadcrumbs__item"
-                              // Developer provided the HTML, so assume it's safe.
-                              // eslint-disable-next-line react/no-danger
-                              dangerouslySetInnerHTML={{__html: html}}
-                            />
-                          ))}
-                          <li
-                            className='breadcrumbs__item'
-                            dangerouslySetInnerHTML={{__html: title}}
-                          />
-                        </ul>
-                      </nav>
-                    )}
-                    </Link>
+                    {docpath == ""
+                      ? <Link to={url} dangerouslySetInnerHTML={{__html: title}} />
+                      : <Link to={url} dangerouslySetInnerHTML={{__html: docpath.replace("Docs > ", "")}} />
+                    }
                   </h2>
-
-
+                  {}
+                  {breadcrumbs.length > 1 && (
+                    <h3
+                      className={clsx(
+                        'breadcrumbs',
+                        styles.searchResultItemPath,
+                      )}>
+                      {breadcrumbs.slice(1).map((html, index) => (
+                        <span
+                          key={index}
+                          className="breadcrumbs__item"
+                          // Developer provided the HTML, so assume it's safe.
+                          // eslint-disable-next-line react/no-danger
+                          dangerouslySetInnerHTML={{__html: html}}
+                        />
+                      ))}
+                    </h3>
+                  )}
                   {summary && (
                     <p
                       className={styles.searchResultItemSummary}

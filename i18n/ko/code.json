@@ -47,9 +47,6 @@
     "message": "모든 태그 보기",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.SearchBar.searchInContext": {
-    "message": "{context}에서 모든 결과 보기"
-  },
   "theme.SearchBar.seeAll": {
     "message": "모든 결과 보기"
   },
@@ -64,9 +61,6 @@
   "theme.SearchPage.emptyResultsTitle": {
     "message": "문서 검색",
     "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "총 {count} 문서 발견",
@@ -402,22 +396,22 @@
   },
   "theme.SearchModal.placeholder": {
     "message": "문서 검색",
-    "description": "The placeholder of the input of the DocSearch pop-up modal: Search docs"
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.SearchPage.inputPlaceholder": {
     "message": "검색어를 입력하세요",
-    "description": "The placeholder for search page input: Type your search here"
+    "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
     "message": "검색",
-    "description": "The ARIA label for search page input: Search"
-  },
-  "theme.SearchPage.typesenseLabel": {
-    "message": "Search by Typesense",
-    "description": "The ARIA label for Typesense mention"
+    "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.fetchingNewResults": {
     "message": "새로운 검색 결과를 가져오는 중...",
-    "description": "The paragraph for fetching new search results: Fetching new results..."
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Algolia",
+    "description": "The ARIA label for Algolia mention"
   }
 }

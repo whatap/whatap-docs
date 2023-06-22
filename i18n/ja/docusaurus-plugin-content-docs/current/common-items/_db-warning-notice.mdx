@@ -4,9 +4,9 @@
 
 ![イベント設定 - データベース](/img/set-event-db.png)
 
-## 기본 알림: Connection Failed
+## 基本通知：Connection Failed
 
-경고 알림을 별도로 설정하지 않아도 에이전트에서 DB 접속에 15회 이상 실패할 경우 다음과 같이 알림을 보냅니다. DB 셧다운(shutdown) 및 네트워크 장애, 계정 또는 권한 문제로 연결이 안될 수 있습니다.
+警告通知を別途設定しなくても、エージェントがDB接続に15回以上失敗した場合、次のように通知を送信します。DBシャットダウン(shutdown) 及びネットワーク障害、アカウントまたは権限の問題により接続できないことがあります。
 
 <ImgLang img='db-default-alert-connection-failed.svg' desc='Connection Failed'/>
 
@@ -50,7 +50,7 @@
 
 :::note
 
-**_데이터베이스 비활성화 경고_** 옵션을 활성화하면 설정한 시간 동안 에이전트로부터 데이터를 수신하지 못하면 **_INACTIVE MONITORING AGENT_** 경고 알림이 발생합니다.
+**_データベース非活性化警告_**オプションを活性化すると、設定した時間にエージェントからデータを受信できない場合は、**_INACTIVE MONITORING AGENT_**警告通知が発生します。
 
 <ImgLang img='db-set-event-disable-alert.png' desc='INACTIVE MONITORING AGENT'/>
 

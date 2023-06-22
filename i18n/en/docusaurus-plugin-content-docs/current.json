@@ -776,7 +776,7 @@
     "description": "The label for the doc item 지원 환경 in sidebar mongodbSidebar, linking to the doc mongodb/monitoring-support"
   },
   "sidebar.releaseSidebar.category.릴리스 노트": {
-    "message": "リリースノート",
+    "message": "Release Notes",
     "description": "The label for category 릴리스 노트 in sidebar releaseSidebar"
   },
   "sidebar.releaseSidebar.category.Service": {
@@ -1488,7 +1488,7 @@
     "description": "The label for the doc item 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/aws-log-setting"
   },
   "sidebar.awslogSidebar.doc.VPC 설정하기": {
-    "message": "VPC 설정하기",
+    "message": "VPC configuration",
     "description": "The label for the doc item VPC 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/install-aws-log-vpc"
   }
 }

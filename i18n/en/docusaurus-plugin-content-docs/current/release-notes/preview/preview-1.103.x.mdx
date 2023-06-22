@@ -14,19 +14,180 @@ toc_max_heading_level: 3
 
 :::
 
-## Preview 1.103.10
+## Preview 1.103.19
 
-2023년 6월 8일
+2023년 6월 15일
 
 <div class='indentTab'>
 
-<p><Status>Feature</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 알림 설정에 대해 읽기 권한만을 가진 사용자가 <UI>메트릭스</UI>, <UI>복합 메트릭스</UI> 리스트 아이템의 내용을 확인할 수 있도록 툴팁 추가</p>
+### `Common`
+
+<p><Status>Feature</Status> <UI>통합 보고서</UI> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정</p>
+
+-   **기존**: 종료 시간을 전일 23시 59분까지 선택 가능
+
+-   **변경**: 종료 시간을 현재 시간 기준, 1시간 이전(현재 시간 - 1시간)까지 선택 가능
+
+### `Server`
+
+#### Alert
+
+-   <Status>Feature</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 설정 복사</UI>(구, <b>알림 정책 복사</b>) 기능에 <UI>현재 프로젝트에 복사</UI>할 수 있는 옵션 추가
+
+-   <Status>Change</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 설정 복사</UI> 기능을 다음과 같이 변경
+
+    -   **기존**: 복사한 이벤트의 제목을 동일하게 사용하여 복사 대상 프로젝트에 이벤트를 중복 복사하면 가장 마지막으로 복제한 이벤트로 덮어 씌워짐
+
+    -   **변경**
+
+        -   이벤트의 제목으로 `{복사한 이벤트 이름}(copy)` 사용
+        -   복사 대상 프로젝트에 이벤트를 중복 복사하면 복사한 횟수만큼 이벤트 생성
+
+</div>
+
+## Preview 1.103.18
+
+2023년 6월 15일
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
+
+-   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
+      
+    - 각 데이터 제목 수정
+
+    -   함수 → 메소드
+
+    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
+
+    -   모달 제목 수정: 함수 → 메소드
+
+    -   경과시간 단위 텍스트 수정: (ms) → ms
+
+    -   일부 출력값 제거: 진입 CPU 시간, 메모리
+
+-   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
+
+</div>
+
+## Preview 1.103.17
+
+2023년 6월 14일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 안내 문구 수정</p>
+
+</div>
+
+## Preview 1.103.16
+
+2023년 6월 13일
+
+<div class='indentTab'>
+
+### `Server`
+
+#### Alert
+
+-   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
+
+-   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
+
+### `Container`
+
+-   <Status>Feature</Status> <UI>리소스</UI> > <UI>퍼포먼스 요약</UI> 메뉴에 컨테이너 수, 파드 수 추이 차트 추가
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에 <UI>불일치</UI> 필터 옵션 추가
+
+</div>
+
+## Preview 1.103.15
+
+2023년 6월 13일
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 하단 액티브 세션 테이블의 5초 단위 시간 변경 시 테이블 내용이 변경되지 않는 문제 수정</p>
+
+</div>
+
+## Preview 1.103.14
+
+2023년 6월 12일
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+
+</div>
+
+## Preview 1.103.12
+
+2023년 6월 12일
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> 일본어 화면에서 일부 잘못된 번역 수정
+
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+
+* * *
+
+### `Server`
+
+-   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+
+</div>
+
+## Preview 1.103.11
+
+June 9, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+
+</div>
+
+## Preview 1.103.10
+
+June 8, 2023
+
+<div class='indentTab'>
+
+<p><Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Metrics</UI>, added the tooltip where the users with only the read role for alert settings can see the lists of <UI>metrics</UI> and <UI>composite metrics</UI>.</p>
 
 </div>
 
 ## Preview 1.103.09
 
-2023년 6월 8일
+June 8, 2023
 
 <div class='indentTab'>
 
@@ -34,23 +195,23 @@ toc_max_heading_level: 3
 
 #### Management
 
--   <Status>Feature</Status> <UI>조직 생성</UI> 및 <UI>조직 관리</UI> 메뉴에서 로고 이미지 안내 문구 추가(이미지 권장 사이즈, 파일 용량, 확장자에 대한 안내)
+-   <Status>Feature</Status> In <UI>Create Organization</UI> and <UI>Organization Management</UI>, added the logo image guide message (guide to the recommended image size, file capacity, and extension).
 
--   <Status>Feature</Status> <UI>멤버 목록</UI> 메뉴에서 멤버의 삭제 및 권한 수정 버튼 위치를 멤버 이름 컬럼으로 이동
+-   <Status>Feature</Status> In <UI>Member List</UI>, repositioned the member deletion and role modification buttons to the member name column.
 
--   <Status>Feature</Status> <b>프로젝트 플렉스보드 편집</b> 권한 추가
+-   <Status>Feature</Status> Added the <b>Project Flex Board Edit</b> role.
 
 #### Flex Board
 
-<p><Status>Change</Status> <b>프로젝트 플렉스보드 편집</b> 권한에 따라 대시보드 수정을 제한하도록 UI 수정</p>
+<p><Status>Change</Status> Modified UIs to restrict the dashboard editing based on the <b>Project Flex Board Edit</b> role.</p>
 
 * * *
 
 ### `Database`
 
--   <Status>Feature</Status> <b>PostgreSQL V2</b> 상품의 <UI>인스턴스 대시보드</UI> 메뉴에서 위젯 메트릭스 변경 창의 메트릭스 목록으로 마우스를 오버하면 해당 메트릭스 정보에 대한 툴팁 추가
+-   <Status>Feature</Status> In <UI>Instance Dashboard</UI> for <b>PostgreSQL V2</b> menus, added the tooltip on the metrics information if you hover your mouse over the metrics list in the widget metrics changing window.
 
--   <Status>Change</Status> <b>PostgreSQL V2</b> 상품의 메뉴 중 다음 3가지 메뉴를 <UI>사이트맵</UI>을 통해서 접근하도록 변경
+-   <Status>Change</Status> Modified to access the 3 following menus via <UI>Sitemap</UI> among <b>PostgreSQL V2</b> menus.
 
     -   **_Analysis_** > **_Log File Viewer_**
     -   **_Alert_** > **_File Log Alert_**
@@ -60,61 +221,61 @@ toc_max_heading_level: 3
 
 ### `Log`
 
-<p><Status>Change</Status> 파서 시뮬레이션 실패 시 노출되는 메시지 변경</p>
+<p><Status>Change</Status> Modified the message that appears upon failure of parser simulation.</p>
 
 </div>
 
 ## Preview 1.103.08
 
-2023년 6월 5일
+June 5, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴에서 다중 적용 api 수정</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, modified the multiple application API.</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Change</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 ![검색 아이콘](/img/ico-search.svg) 버튼을 선택해야 목록이 출력된다는 안내하는 메시지 추가</p>
+<p><Status>Change</Status> In <UI>Resource</UI> > <UI>Container Volume</UI>, added the message that guides you the list is output only when you select ![Search icon](/img/ico-search.svg).</p>
 
 * * *
 
 ### `Database`
 
-<p><Status>Change</Status> PostgreSQL V2 사용자는 로그 모니터링 기능을 무료로 사용할 수 있도록 로그 설정 권한 수정</p>
+<p><Status>Change</Status> Modified the log configuration role so that PostgreSQL V2 users can use the log monitoring function free of charge.</p>
 
 </div>
 
 ## Preview 1.103.07
 
-2023년 6월 1일
+June 1, 2023
 
 <div class='indentTab'>
 
 ### `Database`
 
-<p><Status>New</Status> PostgreSQL 모니터링 V2 서비스를 오픈했습니다. 기존 대비 달라진 기능을 확인하려면 <a href='../../postgresql/monitoring-intro#new-feature'>다음 문서</a>를 참조하세요.</p>
+<p><Status>New</Status> Opened the PostgreSQL Monitoring V2 service. To check the features changed compared to the previous, see <a href='../../postgresql/monitoring-intro#new-feature'>the following</a>.</p>
 
 </div>
 
 ## Preview 1.103.06
 
-2023년 6월 1일
+June 1, 2023
 
 <div class='indentTab'>
 
--   <Status>Change</Status> 시리즈 차트 디자인 수정
+-   <Status>Change</Status> Modified the series-chart design.
 
-    | 수정 전                                            | 수정 후                                          |
+    | Before modification                             | After modification                            |
     | ----------------------------------------------- | --------------------------------------------- |
     | ![before](/img/release/series-chart-before.png) | ![after](/img/release/series-chart-after.png) |
 
--   <Status>Change</Status> 히트맵 버튼 디자인 수정
+-   <Status>Change</Status> Modified the hitmap button design.
 
-    | 수정 전                                             | 수정 후                                           |
+    | Before modification                              | After modification                             |
     | ------------------------------------------------ | ---------------------------------------------- |
     | ![before](/img/release/hitmap-button-before.png) | ![after](/img/release/hitmap-button-after.png) |
 
@@ -122,59 +283,59 @@ toc_max_heading_level: 3
 
 ## Preview 1.103.05
 
-2023년 5월 30일
+May 30, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 라이센스 발급 후 다른 탭 메뉴로 전환할 경우 라이센스 발급 버튼이 다시 활성화되는 버그 수정
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Install</UI>, fixed the bug where the Issue a license button is reactivated when switched to another tab menu after issuing a license.
 
--   <Status>Fixed</Status> <UI>리소스</UI> > <UI>노드 상세</UI> 메뉴에서 하단 컨테이너 영역의 컨테이너 구성 정보 컬럼 순서 변경
+-   <Status>Fixed</Status> In <UI>Resource</UI> > <UI>Node details</UI>, modified the container configuration column order in the container area at the bottom.
 
 </div>
 
 ## Preview 1.103.04
 
-2023년 5월 30일
+May 30, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>로그</UI> > <UI>로그 검색</UI> 탭에 로그 조회 권한 및 상태에 따라 메시지를 다르게 표시
+-   <Status>Feature</Status> In the container summary view panel in <UI>Dashboard</UI> > <UI>Container Map</UI>, modified to change the messages depending on the log view role and status under the <UI>Log</UI> > <UI>Log Search</UI> tab.
 
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>이벤트</UI> 탭에 이벤트 개수를 표시하는 <UI>이벤트 수 추이</UI> 차트 추가
+-   <Status>Feature</Status> In the container summary view panel under <UI>Dashboard</UI> > <UI>Container Map</UI>, added the <UI>Event Count Trend</UI> chart that displays the event counts under the <UI>Event</UI> tab.
 
 </div>
 
 ## Preview 1.103.03
 
-2023년 5월 30일
+May 30, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Feature</Status> 사이드 바에서 프로젝트 이름에 프로젝트 전체 이름을 표시하는 툴팁 추가</p>
+<p><Status>Feature</Status> Added the tooltip that displays the full project name in the project name of the Sidebar.</p>
 
 * * *
 
 ### `Log`
 
-<p><Status>Feature</Status> <UI>로그</UI> 하위 메뉴에서 <img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>테이블 설정</UI> > <UI>컬럼 설정</UI>에 <UI>컬럼 추가</UI> 항목으로 <UI>timestamp</UI> 추가</p>
+<p><Status>Feature</Status> Under <UI>Log</UI>, added the <UI>timestamp</UI> as the <UI>Add a Column</UI> item in <img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>Table settings</UI> > <UI>Column Settings</UI>.</p>
 
 </div>
 
 ## Preview 1.103.02
 
-2023년 5월 26일
+May 26, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 애플리케이션 에이전트가 없는 컨테이너 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 오표기 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, fixed the display of wrong guidance message upon data inquiry failure when using <UI>Log</UI> > <UI>Log Search</UI> in the summary view of the container without any application agent.</p>
 
 </div>
 
@@ -186,13 +347,13 @@ May 25, 2023
 
 ### `Laboratory`
 
-<p><Status>Feature</Status> <code>Container</code>, <code>Java</code> 제품군에 <UI>사이트 맵</UI>  > <UI>실험실</UI> > <UI>Remote Access Status</UI> 메뉴 추가</p>
+<p><Status>Feature</Status> In <code>Container</code> and <code>Java</code> suites, added the menu: <UI>Sitemap</UI>  > <UI>Laboratory</UI> > <UI>Remote Access Status</UI>.</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 요약 보기 패널의 <UI>로그</UI> > <UI>로그 검색</UI> 기능 이용 시 데이터 조회를 실패한 경우 안내 문구 추가</p>
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, added a guidance message upon data inquiry failure when using <UI>Log</UI> > <UI>Log Search</UI> in the summary view of the container.</p>
 
 </div>
 
@@ -204,14 +365,14 @@ May 25, 2023
 
 ### `Common`
 
--   <Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 사용자 계정이 보유한 프로젝트 제품군 대시보드 템플릿만 보이도록 로직 수정
+-   <Status>Fixed</Status> In Home screen > <UI>Flex Board</UI>, modified the logic to display only the product suite dashboard templates owned by the user account.
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 신규 프로젝트 생성 시 <UI>권한</UI> 목록에 FLEX_UPDATE 텍스트 노출 현상 수정
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Project Member</UI>, fixed the FLEX_UPDATE text exposure issue in the <UI>Role</UI> list upon creation of a new project.
 
 * * *
 
 ### `Log`
 
-<p><Status>Fixed</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 <UI>로그 파서</UI>, <UI>빠른 인덱스</UI>, <UI>장기 보관 통계</UI> 추가 또는 수정 시 직접 입력 항목에 공백을 허용하지 않도록 수정</p>
+<p><Status>Fixed</Status> In <UI>Log</UI> > <UI>Log Setting</UI>, modified not to allow any space in the input field when adding or modifying <UI>Log Parser</UI>, <UI>Fast Index</UI>, and <UI>Long-term Archive Statistics</UI>.</p>
 
 </div>
