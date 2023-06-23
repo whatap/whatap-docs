@@ -138,6 +138,7 @@ module.exports = Promise.resolve({
         // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: 'search',
         //... other Algolia params
+        insights: true,
       },
       metadata: [
         {
