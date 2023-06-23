@@ -1789,7 +1789,7 @@ const sidebars = {
   mysqlv1Sidebar: [
     {
       type: 'category',
-      label: 'MySQL 모니터링',
+      label: 'MySQL 모니터링 V1',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1938,7 +1938,7 @@ const sidebars = {
   mysqlSidebar: [
     {
       type: 'category',
-      label: 'MySQL 모니터링',
+      label: 'MySQL 모니터링 V2',
       collapsible: false,
       collapsed: false,
       link: {

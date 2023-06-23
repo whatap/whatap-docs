@@ -46,8 +46,8 @@ export default function CheckProduct() {
         product = '-mysql-rds';
     } else if (cProdt === 'mysql-v1') {
         product = '-mysql-v1';
-    } else if (cProdt === 'mysql-v1') {
-        product = '-mysql-v1';
+    } else if (cProdt === 'mysql') {
+        product = '-mysql';
     } else if (cProdt === 'mssql') {
         product = '-mssql';
     } else if (cProdt === 'tibero') {

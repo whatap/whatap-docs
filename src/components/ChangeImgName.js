@@ -6,7 +6,6 @@ export default function ChangeImgName({img, desc}) {
     let fext = img.substr(img.lastIndexOf('.') + 1);
     let fileName = img.replace('.' + fext, '');
     let imgFilePath = '/img/' + fileName + product + '.' + fext;
-
     function onError(e) {
         e.target.src = '/img/' + img;
     }
