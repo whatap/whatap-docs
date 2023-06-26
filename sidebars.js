@@ -4895,8 +4895,8 @@ const sidebars = {
                 id: 'kubernetes/container-map-detail-mode'
               },
               items: [
-                'kubernetes/container-map-metrics',
                 'kubernetes/container-map-trace',
+                'kubernetes/container-map-metrics',
                 'kubernetes/container-map-log',
                 'kubernetes/container-map-event',
               ],
