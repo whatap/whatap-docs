@@ -1416,7 +1416,6 @@ const sidebars = {
                 'postgresql/analysis-count-trend',
                 'postgresql/analysis-lock-and-deadlock',
                 'postgresql/analysis-databaseparameter',
-                'postgresql/log-viewer',
               ]
             },
             {
