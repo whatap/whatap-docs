@@ -32,14 +32,14 @@ RUN pip3 install --upgrade whatap-python
     export WHATAP_HOME={로그 및 설정 파일 경로}
     ```
 
-2.  `WHATAP_HOME`으로 설정한 경로에 _whatap.conf_ 파일을 생성하고 설정하도록 다음 명령어를 실행하세요.
+2.  Execute the following command to create and configure the _whatap.conf_ file in the path set as `WHATAP_HOME`.
 
     ```bash
     whatap-setting-config \
-    --host {수집 서버 IP} \
-    --license {액세스 키} \
-    --app_name {사용자 지정 애플리케이션 이름} \
-    --app_process_name {프로세스 이름, 예시, uwsgi, gunicorn}
+    --host {Collection Server IP} \
+    --license {Access Key} \
+    --app_name {User-defined Application Name} \
+    --app_process_name {Process Name: e.g. uwsgi, gunicorn}
     ```
 
 :::caution

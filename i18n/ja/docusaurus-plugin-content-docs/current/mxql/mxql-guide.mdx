@@ -9,13 +9,13 @@ tags:
 
 ## 形式
 
-MXQLは、各行ごとに**コマンド**と**オペランド**で構成され、分かち書きで区分します。
+MXQLは、各行ごとに**コマンド**と**オペランド**で構成され、スペースで区切られています。
 
 ```sql
 <コマンド> <オペランド>
 ```
 
-`コマンド`は、一つの単語からなる予約語です。`コマンド`は大文字で入力し、`オペランド`は小文字で入力します。コマンドごとに入力可能な`オペランド`の形式は決まっています。`オペランド`には4つのタイプの値が来ることがあります。
+`コマンド`は、１つの単語からなる予約語です。`コマンド`は大文字で入力し、`オペランド`は小文字で入力します。コマンドごとに入力可能な`オペランド`の形式は決まっています。`オペランド`には4種類のタイプの値があります。
 
 1.  オペランドがない場合
 
@@ -23,7 +23,7 @@ MXQLは、各行ごとに**コマンド**と**オペランド**で構成され�
     TAGLOAD
     ```
 
-2.  文字列（数字または単語）
+2.  文字列(数字または単語)
 
     ```sql
     CATEGORY app_counter
@@ -50,41 +50,41 @@ FILTER { key : tx_count, value : 5}
 
 ## テスト環境{#test-env}
 
-ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_実験室_** > **_MXQLデータ照会_**メニューでMXQL クエリをテストできます。
+ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_実験室_** > **_MXQLデータの表示_**メニューからMXQLクエリをテストできます。
 
 ![MXQLデータ照会](https://img.whatap.io/media/images/mxql-7.png)
 
 :::note
 
-メトリクスにはタグとフィールドが区分されていますが、**_MXQLデータ照会_**メニューではタグとフィールドを区別せずに表現します。
+メトリクスにはタグとフィールドが区分されますが、**_MXQLデータ照会_**メニューでは、タグとフィールドを区別せずにメトリックが表示されます。
 
 :::
 
 ## 段階別構成
 
-MXQLは、段階別構成を持っています。各段階別に使用できる**コマンド**の種類は決まっており、各段階の名前と特徴は次のとおりです。 
+MXQLは、段階的な設定があります。各ステップで使用できる**コマンド**には特定の種類があり、各ステップの名前と特性はは次のとおりです。 
 
-1.  **メトリクスの選択**：どのエージェントから収集したどのメトリクスを使用するかを選択してください。
+1.  **メトリクスの選択**：使用するエージェントによって収集されるメトリクスを選択します。
 
-2.  **メトリクス読み込み**：前の段階で設定した値を使用してメトリクスを読み込みます。ほとんどの場合は`TAGLOAD`を利用しますが、特殊な場合は`FLEXLOAD`を利用してください。`FLEXLOAD`を使用する必要がある場合は、[次の文書](mxql-loading#flexload-items)を参考にしてください。
+2.  **メトリクス読み込み**：前の段階で設定した値を使用してメトリクスを読み込みます。ほとんどの場合は`TAGLOAD`を使用し、特別な場合は、`FLEXLOAD`を使用します。`FLEXLOAD`を使用する必要がある場合は、[次の文書](mxql-loading#flexload-items)を参照してください。
 
-3.  **メトリック加工**：前の段階で読み込んだメトリクスに対し、段階的に加工を行います。
+3.  **メトリック加工**：前の段階でインポートされたメトリクスに対して、段階的に処理を実行します。
 
 ```sql title='Example'
-# メトリクスの選択段階
+# メトリクスの選択する手順
 CATEGORY app_counter -- カテゴリ選択
 
-# メトリクスの読み込み段階
+# メトリクスの読み込みステップ
 TAGLOAD -- データ1000件照会
 
-# メトリクスの加工段階
+# メトリクスの処理ステップ
 SELECT [time, oid, active_tx_count, tx_count, tx_error] -- データ1000件のうち5フィールドのみ次の段階に伝達
 FILTER {expr : "tx_count > 40"}        -- データ1000件のうち100件が通過
 FILTER {expr : "active_tx_count > 10"} -- データ100件のうち10件が通過
 FILTER {expr : "tx_error < 3"}        -- データ10件のうち3件が通過
 ```
 
-以下は、メトリクス加工段階をすべて通過したメトリクスの例です。
+以下は、メトリクス処理ステップに通過したメトリクスの例です。
 
 ![例](https://img.whatap.io/media/images/mxql_metrics_calculate_example.png)
 
@@ -99,16 +99,16 @@ CATEGORY app_counter
 # データ照会
 TAGLOAD
 
-# データ加工
+# データ処理
 SELECT [ time, pcode ]
 FILTER { key : tx_count, value : 5}
 ```
 
 ## MetricValue(複合値) {#metric-value}
 
-Metric Value(複合値)は、メトリクス加工段階でよく使われる演算に対応するMXQLの資料構造です。メトリクス加工段階の[GROUP](mxql-calculate#group)、[UPDATE](mxql-calculate#update)コマンドは、メトリクスがMetricValue形式で保存されている場合に限って使用できます。
+Metric Value(複合値)は、メトリクス処理ステップで良く使用される操作を便利にサポートするMXQLのデータ構造です。メトリクス処理ステップの[GROUP](mxql-calculate#group)、[UPDATE](mxql-calculate#update)コマンドは、メトリクスがMetricValue形式で保存されている場合のみ使用できます。
 
-たとえば、次のようなデータがあるとします。 
+例えば、次のようなデータがあるとします。 
 
 | time                | tx_count |
 | ------------------- | -------- |
@@ -119,14 +119,14 @@ Metric Value(複合値)は、メトリクス加工段階でよく使われる演
 | 2021/06/24 13:40:40 | ５        |
 | 2021/06/24 13:40:50 | 6        |
 
-上のデータを30秒間隔で[GROUP](mxql-calculate#group)のmergeオプションを進めると、次のような形にデータを変形することができます。
+データを30秒間隔で[GROUP](mxql-calculate#group)のmergeオプションを継続すると、次の形式でデータを変換することができます。
 
 | time                                      | tx_count                 |
 | ----------------------------------------- | ------------------------ |
 | 2021/06/24 13:40:00 ~ 2021/06/24 13:40:20 | 1、2、3に対するMetric Value    |
 | 2021/06/24 13:40:30 ~ 2021/06/24 13:40:50 | 4、5、6に対するMetric Value    |
 
-データをMetricValueに変換すると、計6つのオプションが使用できます。
+データをMetricValueに変換する場合、合計6つのオプションが使用できます。
 
 | オプション | 機能                                                      |
 | ----- | ------------------------------------------------------- |
@@ -137,19 +137,19 @@ Metric Value(複合値)は、メトリクス加工段階でよく使われる演
 | avg   | MetricValueに含まれる値の平均を求めます。                              |
 | cnt   | MetricValueに含まれる値の数を検索します。                              |
 
-MetricValueオプションは、[UPDATE](mxql-calculate#update) コマンドを通じて利用できます。
+MetricValueオプションは、[UPDATE](mxql-calculate#update) コマンドで使用することができます。
 
 ```sql title='UPDATE'
 CATEGORY app_counter
 TAGLOAD
 SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
--- GROUPコマンドのmergeオプションを通じてMetric Valueに変換するfieldを設定
+-- GROUPコマンドのmergeオプションを使用してMetric Valueに変換するfieldを設定
 GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
--- UPDATEコマンドを通じてsumオプションを適用
+-- UPDATEコマンドでsumオプションを適用
 UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 ```
 
-## MetricValueタイプのデータ利用方法
+## MetricValueタイプのデータ使用方法
 
 -   `GROUP`コマンドのmergeオプションにフィールドを設定します。
 
@@ -157,31 +157,31 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
     CATEGORY app_counter
     TAGLOAD
     SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
-    -- GROUPコマンドのmergeオプションを通じてMetric Valueに変換するfieldを設定
+    -- GROUPコマンドのmergeオプションを使用してMetric Valueに変換するfieldを設定
     GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
-    -- UPDATEコマンドを通じてsumオプションを適用
+    -- UPDATEコマンドでsumオプションを適用
     UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
     ```
 
--   収集サーバーにデータを保存するとき、すべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス照会_** > **_カテゴリ_**オプションには、**_デフォルト_**、**_5分_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
+-   収集サーバーにデータを保存された時点からすべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス表示_** > **_カテゴリ_**オプションを使用すると、**_デフォルト_**、**_5分_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
 
-    ![MetricValue形式として設定できるカテゴリ一覧](https://img.whatap.io/media/images/mxql-3.png)
+    ![MetricValue形式で設定できるカテゴリ一覧](https://img.whatap.io/media/images/mxql-3.png)
 
-    **_5分_**または**_1時間_**を選択できるカテゴリの名前に`{m5}`または`{h1}`を組み合わせると`GROUP`コマンドのmergeオプションを適用せず、すぐに`UPDATE`コマンドの`sum`オプションを適用できます。 
+    **_5分_**または**_1時間_**を選択できるカテゴリの名前と`{m5}`または`{h1}`を組み合わせると`GROUP`コマンドのmergeオプションを適用せず、`UPDATE`コマンドの`sum`オプションを適用できます。 
 
     ```sql
     CATEGORY app_counter{m5}
     TAGLOAD
     SELECT [time, pname, host_ip, pid, httpc_count]
-    -- GROUPコマンドを適用しなくても、すでにデータがMetricValue型なのでUPDATEコマンドを適用できます。
+    -- GROUPコマンドを適用しない場合でも、すでにデータがMetricValue型のため、UPDATEコマンドを適用できます。
     UPDATE { key : httpc_count, value : avg }
     ```
 
 ## MetricValue型の基本演算`avg`
 
-MetricValue型フィールドの基本出力形態は`avg`です。つまりMetricValue型のフィールドは、別のオプションを設定しないと`avg`を適用します。次の2つのクエリは同じ結果を出します。
+MetricValue型フィールドの基本の出力フォームは`avg`です。MetricValue型のフィールドは、別のオプションが設定されていないと`avg`が適用します。次の2つのクエリの結果は同じです。
 
--   **avgを指定していない場合**
+-   **avgが指定されていない場合**
 
     ```sql
     CATEGORY app_counter
@@ -190,7 +190,7 @@ MetricValue型フィールドの基本出力形態は`avg`です。つまりMetr
     GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
     ```
 
--   **avgを指定した場合**
+-   **avgが指定されている場合**
 
     ```sql
     CATEGORY app_counter
@@ -200,9 +200,9 @@ MetricValue型フィールドの基本出力形態は`avg`です。つまりMetr
     UPDATE {key:tps, value:avg}
     ```
 
-## 事前定義MXQLクエリ文{#custom-mxql}
+## 定義済みのMXQLクエリ文{#custom-mxql}
 
-MXQLクエリを直接作成するのではなく、事前に定義されたMXQLクエリファイルのパスを設定してMXQLを実行することができます。例えば、「エージェント別アクティブTX件数」、「&lt;区間別&gt;件数」、「直近15秒」を求めるMXQLクエリは次のとおりです。
+MXQLクエリを自分で記述を行い、定義済みのMXQLクエリファイルのパスを設定することでMXQLを実行できます。例えば、「エージェントあたりのアクティブTX数」、「&lt;区間別&gt;件数」、「過去15秒」を検索するMXQLクエリは次のようになります。
 
 ```sql
 HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
@@ -232,11 +232,11 @@ INJECT default
 
 [次の文書](#custom-query-saas)で使用可能なクエリを確認できます。
 
-## 参考資料
+## 参照資料
 
 ### バインド変数(パラメータ){#bind-parameter}
 
-MXQLではバインド変数を使用できます。バインド変数は`$`で始まります。また、valueに該当する部分のみを使用することもできます。 
+MXQLではバインド変数を使用できます。バインド変数は`$`で始まります。また、valueに対応する部分のみを使用することもできます。 
 
 ```sql
 SKIP $skip_value
@@ -256,7 +256,7 @@ keyでバインド変数を渡すことはできません。
 SKIP {$option:10}
 ```
 
-クエリでバインド変数を使用した場合は、MXQLを実行する際に入力する値を伝える必要があります。
+クエリでバインド変数を使用した場合、MXQLを実行する際に入力する値を渡す必要があります。
 
 ![バインド変数設定の例](https://img.whatap.io/media/images/mxql-1.png)
 
@@ -268,16 +268,16 @@ SKIP {$option:10}
 
 ### データの読み込み方式
 
-MXQLで照会できるデータは、[メトリクス](../metrics/common-metrics-intro)の形式によって大きく2つに分けることができます。
+MXQLで照会できるデータは、[メトリクス](../metrics/common-metrics-intro)の形式に応じて、2つのタイプに分けることができます。
 
--   メトリクスのデータがタグとフィールドに分けて保存されたデータ([TAGLOAD](mxql-loading#tagload)を使って読み込みできるデータ)
+-   メトリクスのデータをタグとフィールドに分けて保存されたデータ([TAGLOAD](mxql-loading#tagload)を使って読み込みできるデータ)
 -   メトリクスにすべてのデータがフィールドに保存されているデータ([FLEXLOAD](mxql-loading#flexload)を使って読み込みできるデータ)
 
-ほとんどのカテゴリは`TAGLOAD`を使います。[次の文書](mxql-loading#flexload-items)に含まれるカテゴリのデータを使用する場合に限って`FLEXLOAD`を使います。
+ほとんどのカテゴリで`TAGLOAD`を使います。[次の文書](mxql-loading#flexload-items)に含まれるカテゴリのデータを使用する場合のみ`FLEXLOAD`を使用してください。
 
 ## SaaSサービスで提供する事前定義されたMXQLクエリの一覧{#custom-query-saas}
 
-MXQLクエリを直接作成せずにパスに設定できる機能の主な目的は、複雑なクエリを簡単に呼び出すためではなく、管理者が直接自分の意図通りクエリを作成し、これを使用することです。したがって、すでにYardにどのようなクエリが含まれているかを確認して使用するよりは、直接クエリを登録する方向で活用する必要があります。`JOIN`コマンドを使用する場合は、MXQLクエリを使用する中でも特別な場合であるため、管理者が直接クエリを登録し、そのファイルのパスを使用することになっています。
+MXQLクエリを書き込むのではなくパス(path)に設定する主な目的は、複雑なクエリを簡単に呼び出すためではなく、管理者が適切と思われるクエリを記述して使用できるようにすることです。したがって、Yardにクエリが含まれているかを確認し、クエリを使用するのではなく、直接登録する方法として使用する必要があります。`JOIN`コマンドを使用は、MXQLクエリを使用する場合の特殊なケースであるため、管理者はクエリを登録し、そのファイルのパス(path)を使用する必要があります。
 
 :::note
 
@@ -285,7 +285,7 @@ _yard.conf_ファイルの`mxql_root`に設定したパスに登録したいク�
 
 :::
 
-### エージェント別アクティブTX件数、件数、直近15秒
+### エージェント別アクティブTX数、件数、直前15秒間
 
 -   パス：_/app/act_tx/act_tx_oid_
 -   クエリ： 
@@ -312,7 +312,7 @@ _yard.conf_ファイルの`mxql_root`に設定したパスに登録したいク�
     CREATE {key:_name_, from:oname}
     ```
 
-### エージェント別詳細情報 & エージェント別アクティブTX件数、件数、直近15秒
+### エージェント別の詳細情報 & エージェント別アクティブTX数、件数、直前15秒間
 
 -   パス：_/app/act_tx/agent_with_tx_
 -   クエリ： 

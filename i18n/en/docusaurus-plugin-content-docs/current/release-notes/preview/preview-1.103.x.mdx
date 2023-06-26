@@ -14,152 +14,359 @@ toc_max_heading_level: 3
 
 :::
 
-## Preview 1.103.19
+## Preview 1.103.28
 
-2023년 6월 15일
-
-<div class='indentTab'>
-
-### `Common`
-
-<p><Status>Feature</Status> <UI>통합 보고서</UI> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정</p>
-
--   **기존**: 종료 시간을 전일 23시 59분까지 선택 가능
-
--   **변경**: 종료 시간을 현재 시간 기준, 1시간 이전(현재 시간 - 1시간)까지 선택 가능
-
-### `Server`
-
-#### Alert
-
--   <Status>Feature</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 설정 복사</UI>(구, <b>알림 정책 복사</b>) 기능에 <UI>현재 프로젝트에 복사</UI>할 수 있는 옵션 추가
-
--   <Status>Change</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 설정 복사</UI> 기능을 다음과 같이 변경
-
-    -   **기존**: 복사한 이벤트의 제목을 동일하게 사용하여 복사 대상 프로젝트에 이벤트를 중복 복사하면 가장 마지막으로 복제한 이벤트로 덮어 씌워짐
-
-    -   **변경**
-
-        -   이벤트의 제목으로 `{복사한 이벤트 이름}(copy)` 사용
-        -   복사 대상 프로젝트에 이벤트를 중복 복사하면 복사한 횟수만큼 이벤트 생성
-
-</div>
-
-## Preview 1.103.18
-
-2023년 6월 15일
-
-<div class='indentTab'>
-
-### `Application`
-
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
-
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
-
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
-      
-    - 각 데이터 제목 수정
-
-    -   함수 → 메소드
-
-    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
-
-    -   모달 제목 수정: 함수 → 메소드
-
-    -   경과시간 단위 텍스트 수정: (ms) → ms
-
-    -   일부 출력값 제거: 진입 CPU 시간, 메모리
-
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
-
-</div>
-
-## Preview 1.103.17
-
-2023년 6월 14일
-
-<div class='indentTab'>
-
-### `Common`
-
-<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
-
-### `Container`
-
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 안내 문구 수정</p>
-
-</div>
-
-## Preview 1.103.16
-
-2023년 6월 13일
-
-<div class='indentTab'>
-
-### `Server`
-
-#### Alert
-
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
-
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
-
-### `Container`
-
--   <Status>Feature</Status> <UI>리소스</UI> > <UI>퍼포먼스 요약</UI> 메뉴에 컨테이너 수, 파드 수 추이 차트 추가
-
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에 <UI>불일치</UI> 필터 옵션 추가
-
-</div>
-
-## Preview 1.103.15
-
-2023년 6월 13일
+2023년 6월 23일
 
 <div class='indentTab'>
 
 ### `Database`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 하단 액티브 세션 테이블의 5초 단위 시간 변경 시 테이블 내용이 변경되지 않는 문제 수정</p>
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 <UI>프리셋 저장</UI> 버튼의 <b>프리셋 저장</b> 문구 삭제</p>
 
 </div>
 
-## Preview 1.103.14
+## Preview 1.103.27
 
-2023년 6월 12일
+2023년 6월 23일
 
 <div class='indentTab'>
 
-### `Server`
+### `Application`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+<p><Status>Feature</Status> 대시보드 메뉴에서 히트맵 위젯의 차트 영역을 드래그 시 호출되는 트레이스 분석 팝업창 추가</p>
+
+-   분석 동선과 사용성 개선
+    -   트랜잭션 데이터 분석 Depth 개선
+    -   교차/비교 분석환경 개선
+    -   데이터 분석 환경의 직관성 개선
+    -   정보의 인지성과 가독성, 편의성 개선
+
+-   기능적 개선 및 기타
+    -   트랜잭션 리스트 내 컬럼 위치 변경 및 데이터 테이블 폭 조절 개선
+    -   다이어그램과 스택 구간의 연동
+    -   TXT, SQL 다운로드 파일의 데이터 정렬
 
 </div>
 
-## Preview 1.103.12
+## Preview 1.103.26
 
-2023년 6월 12일
+2023년 6월 22일
 
 <div class='indentTab'>
 
 ### `Common`
 
--   <Status>Fixed</Status> 일본어 화면에서 일부 잘못된 번역 수정
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 기능 실행 시 임계선이 차트의 범위를 넘어가는 현상 수정
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정
+-   <Status>Feature</Status> 다음 메뉴에서 <b>WhatsApp</b> 알림 설정 추가
 
-* * *
+    -   **_Manage account INFO._** > **_User phone_**, **_Alert notification settings_**
 
-### `Application`
+    -   **_Alert_** > **_Notification setting_** > **_Event notification settings per-user_**
 
--   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+-   <Status>Change</Status> <UI>계정 정보 관리</UI> 메뉴에서 사용자 비밀번호 설정 규칙을 9자리로 변경
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+<p><Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 목록</UI> 메뉴에서 비교를 위해 서버를 10개 초과 선택하면 표시되는 메시지 수정</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status> <UI>로그</UI> > <UI>로그 검색기</UI> 메뉴에서 선택한 로그와 인접한 시간대의 로그를 조회할 수 있는 기능 추가</p>
+
+* * *
+
+### `Browser`
+
+#### Dashboard
+
+<p><Status>Feature</Status> <UI>브라우저 에러</UI> 메뉴에서 에러에 관한 상세 화면 추가</p>
+
+#### Analytics
+
+-   <Status>Feature</Status> <UI>페이지로드 히트맵</UI> 메뉴에서 페이지 로드 상세 데이터에 운영체제 버전, 클라이언트 IP 정보 추가
+
+-   <Status>Change</Status> <UI>페이지로드 히트맵</UI> 메뉴에서 <UI>URL 그룹 목록 필터</UI> 기능을 <UI>페이지 URL 검색</UI> 기능으로 변경
+
+-   <Status>Change</Status> <UI>에러 추적</UI> 메뉴에서 에러 스택 조회 UI 변경
+
+</div>
+
+## Preview 1.103.25
+
+2023년 6월 21일
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Go
+
+**_관리_** > **_에이전트 설치_** 메뉴에서 다음의 내용을 수정합니다.
+
+-   <Status>Fixed</Status> 에이전트 설치를 위한 GO 지원 버전 변경 (1.14 → 1.17)
+
+-   <Status>Fixed</Status> Amazon linux 운영체제에서 <b>에이전트 다운로드</b> 섹션의 스크립트 코드에 역슬래쉬(\)가 누락된 부분 수정
+
+-   <Status>Fixed</Status> Alpine linux 운영체제에서 <b>Golang 라이브러리 사용</b> 섹션의 내용이 누락된 부분 수정
+
+-   <Status>Fixed</Status> <b>Golang 라이브러리 사용</b> 섹션의 스크립트 코드 내용을 모든 운영체제에 동일하게 적용
+
+-   <Status>Feature</Status> 모든 운영체제에서 <b>에이전트 설정</b> 섹션에 안내 문구 추가
+
+-   <Status>Feature</Status> Alpine linux 운영체제에서 <b>모니터링 시작하기</b> 섹션에 안내 문구 추가
+
+#### PHP
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>Amazon linux</UI> 탭 > <b>에이전트 다운로드</b> 섹션 내용 중 스크립트 코드에 역슬래쉬가 누락된 부분 수정
+
+</div>
+
+## Preview 1.103.24
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 목록 호출 시 조직 아이디가 반영되지 않는 오류 수정</p>
+
+</div>
+
+## Preview 1.103.23
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>Feature</Status> <UI>보고서</UI> > <UI>일간 브라우저 보고서</UI> 메뉴 추가</p>
+
+</div>
+
+## Preview 1.103.22
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>통합 보고서</UI> > <UI>일간 보고서</UI> 메뉴에서 <UI>종료 시간</UI>을 금일로 선택 시 선택 시간 자동 교정 로직 제거</p>
+
+</div>
+
+## Preview 1.103.21
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> 상단 고정 메뉴의 가이드 문서 링크 선택 시 서비스에서 선택한 언어와 일치하는 가이드 문서로 이동하도록 수정
+
+-   <Status>Deprecate</Status> 다국어 서비스 중 중국어 지원 중단으로 서비스 내 언어 선택지에서 중국어 제외
+
+-   <Status>Change</Status> 사이드 바에서 <code>AWS Log</code> 프로젝트 아이콘 변경
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>에이전트 설치</UI> 페이지에서 일본어 문구 수정</p>
+
+</div>
+
+## Preview 1.103.20
+
+2023년 6월 19일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴의 <UI>업무 디폴트</UI>, <UI>프로젝트 디폴트</UI> 탭에서 설정을 적용할 경우 요청을 성공해도 에러 메세지가 나오는 현상 수정</p>
+
+* * *
+
+### `Container`
+
+#### Resources
+
+-   <Status>Fixed</Status> <UI>컨테이너 목록</UI> 메뉴에서 다크 테마가 적용되지 않는 문제 수정
+
+-   <Status>Fixed</Status> <UI>컨테이너 목록</UI> 메뉴에서 설치된 에이전트가 없을 경우 로딩 애니메이션이 아닌 설치된 에이전트가 없다는 안내 문구가 나오도록 수정
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 에이전트를 설치하기 위한 Java 최소 버전 표기 및 xos 권한 설정 문구 변경</p>
+
+#### Oracle
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 <UI>액티브 세션</UI> 테이블의 <UI>SQL</UI> 항목을 선택하면 전달되는 해시값 수정</p>
+
+</div>
+
+## Preview 1.103.19
+
+June 15, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Feature</Status> In <UI>Integrated report</UI>, modified the time selection limit for daily reports.</p>
+
+-   **Previous**: The end time can be selected up to 23:59 for the previous day.
+
+-   **Change**: The end time can be selected up to 1 hour before the current time (current time - 1 hour).
+
+* * *
+
+### `Server`
+
+#### Alert
+
+-   <Status>Feature</Status> In <UI>Event setting</UI>, added the option to <UI>copy to the current project to into the </UI><UI>Copying Event Settings</UI> (<b>Copy policy</b> in the past) function.
+
+-   <Status>Change</Status> In <UI>Event setting</UI>, modified the <UI>Copying Event Settings</UI> function as follows.
+
+    -   **Previous**: If you duplicate an event in the target project using the same title of the copied event, it is overwritten with the last copied event.
+
+    -   **Change**
+
+        -   As the event title, `{Copied Event Name}(copy)` is used.
+        -   If the events are duplicated in the target project, events are created as many times as the copied count.
+
+</div>
+
+## Preview 1.103.18
+
+June 15, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>MSA analysis</UI>, the maximum range to query data has been modified to the limit of 1 day.
+
+-   <Status>Fixed</Status> In <UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Client IP</UI>, modified the maximum range for data query to 7 days.
+
+-   <Status>Fixed</Status> In <UI>HITMAP transaction</UI> > <UI>TX trace</UI>, to see the <UI>statistics</UI> data, modified the output data for trace step analysis and method popup as follows:
+       
+    - Modified the titles for each data.
+
+    -   Function → Method
+
+    -   Parameter/Return → Multiple languages
+
+    -   Modification of the modal title: Function → Method
+
+    -   Elapsed time unit modification: (ms) → ms
+
+    -   Deletion of part of outputs: Start point CPU time, memory
+
+-   <Status>Fixed</Status> In <UI>HITMAP transaction</UI> > <UI>TX trace</UI> list, to see the <UI>statistics</UI>, fixed the bug where specific keywords (content, long) of SQL statements are highlighted.
+
+</div>
+
+## Preview 1.103.17
+
+June 14, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> If <UI>Manage account INFO.</UI> > <UI>Multi-factor authentication</UI> > <UI>Send OTP key via email</UI> is selected, fixed the bug where the OTP key generation window appears.</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, modified the guidance messages.</p>
+
+</div>
+
+## Preview 1.103.16
+
+June 13, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+#### Alert
+
+-   <Status>Fixed</Status> In <UI>Event history</UI>, modified the name of the <b>Last change time</b> column to <UI>Event resolution time</UI>.
+
+-   <Status>Fixed</Status> In <UI>Event history</UI>, the <UI>event resolution time</UI> is not displayed for active events.
+
+### `Container`
+
+-   <Status>Feature</Status> In <UI>Resource</UI> > <UI>Performance summary</UI>, added the trend charts for container counts and pod counts.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the <UI>Unequal</UI> filter option.
+
+</div>
+
+## Preview 1.103.15
+
+June 13, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI>, fixed the bug where the active session table's content at the bottom is not changed every 5 seconds.</p>
+
+</div>
+
+## Preview 1.103.14
+
+June 12, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Server List</UI>, the loading image appears continuously when there is no installed agent.</p>
+
+</div>
+
+## Preview 1.103.12
+
+June 12, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Fixed some incorrect translations in Japanese screens.
+
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Notification setting</UI>, fixed the but where the unfolding function in the <UI>Event notification settings per-user</UI> table does not work.
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> In the <b>Transaction Detail</b> window, fixed the past data query bug in the tabs for <UI>SQLs</UI>, <UI>HTTP calls</UI>, and <UI>Methods</UI>.
+
+* * *
+
+### `Server`
+
+-   <Status>Feature</Status> Added the data query time selection function.
 
 </div>
 
@@ -171,7 +378,7 @@ June 9, 2023
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Metrics chart</UI>, fixed the bug where the data is not properly displayed in the CSV in case of a duplicated agent name.</p>
 
 </div>
 

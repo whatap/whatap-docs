@@ -48,32 +48,32 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Feature</Status> <UI>設定</UI> メニューの <UI>ログ構文解析設定</UI>で <UI>4xx、5xxステータスコードの構文解析</UI>、<UI>ステータスコード成功率の構文解析</UI> 追加
 
--   <Status>Fixed</Status> <UI>ライブTail</UI> メニューでコンテンツ表示機能の誤作動を修正
+-   <Status>Fixed</Status> <UI>ライブTail</UI> メニューでコンテンツ表示機能の不具合を修正
 
--   <Status>Fixed</Status> <UI>ライブTail</UI> メニューでコンテンツフィルタリング（ハイライト）機能の誤作動を修正
+-   <Status>Fixed</Status> <UI>ライブTail</UI> メニューでコンテンツフィルタリング(ハイライト) 機能の不具合を修正
 
 ### 日付別のアプリケーションの現状/性能推移
 
-<Status>Fixed</Status> Kubernetes製品群プロジェクトで下記メニューの照会ボタンの作動異常を修正
+<Status>Fixed</Status> Kubernetes製品群プロジェクトで下記メニューの照会ボタンの異常動作を修正
 
 -   <UI>アプリケーション</UI> > <UI>日付別のアプリケーションステータス</UI>
 -   <UI>アプリケーション</UI> > <UI>性能推移</UI>
 
 ### エージェントのインストール
 
-<Status>Fixed</Status> Kubernetes製品群プロジェクト > <UI>管理</UI> > <UI>エージェントインストール</UI> > <UI>Application Agent</UI> メニューでJavaエージェントインストールのjarファイル名を変更（whatap.agent-X.Y.Z.jar → whatap.agent.kube.jar）
+<Status>Fixed</Status> Kubernetes製品群プロジェクト > <UI>管理</UI> > <UI>エージェントインストール</UI> > <UI>Application Agent</UI> メニューからJavaエージェントインストールのjarファイル名を変更(whatap.agent-X.Y.Z.jar → whatap.agent.kube.jar)
 
 ### メンテナンス計画
 
-プロジェクト > <UI>管理</UI> > <UI>整備計画</UI> メニューで次の機能を追加・修正します。
+プロジェクト > <UI>管理</UI> > <UI>整備計画</UI> メニューで、次の機能を追加または変更します。
 
 -   <Status>Feature</Status> メンテナンス計画のお知らせを画面上部に表示する機能を追加
 -   <Status>Change</Status> メンテナンス計画UIの改善
     * 繰り返しオプションのUIテキスト変更：<UI>日間</UI>/<UI>週間</UI>/<UI>月間</UI>/<UI>年間</UI> → <UI>毎日</UI>/<UI>毎週</UI>/<UI>毎月</UI>/<UI>毎年</UI>
-    * メンテナンス計画テーブルカラムの順序変更
+    * メンテナンス計画テーブルカラムの順序を変更
     * メンテナンス計画の追加・修正モーダルUIの改善
     * メンテナンス計画の追加時 <UI>一度だけ</UI> デフォルトで選択されるように修正
-    * メンテナンス計画の案内メッセージ及び位置修正
+    * メンテナンス計画の通知メッセージ及び位置の修正
 -   <Status>Fixed</Status> サーバー製品メンテナンス計画の削除できない問題を修正
 
 ### メトリクスチャート

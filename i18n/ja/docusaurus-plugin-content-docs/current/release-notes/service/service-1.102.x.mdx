@@ -4,49 +4,157 @@ title: Service 1.102.X
 toc_max_heading_level: 3
 ---
 
-## Service 1.102.15
+## Service 1.102.21
 
-2023년 6월 15일
+2023년 6월 22일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 기능 실행 시 임계선이 차트의 범위를 넘어가는 현상 수정</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 목록</UI> 메뉴에서 비교를 위해 서버를 10개 초과 선택하면 표시되는 메시지 수정</p>
+
+</div>
+
+## Service 1.102.20
+
+2023년 6월 21일
 
 <div class='indentTab'>
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
+#### Go
 
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
+**_관리_** > **_에이전트 설치_** 메뉴에서 다음의 내용을 수정합니다.
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
+-   <Status>Fixed</Status> 에이전트 설치를 위한 GO 지원 버전 변경 (1.14 → 1.17)
+
+-   <Status>Fixed</Status> Amazon linux 운영체제에서 <b>에이전트 다운로드</b> 섹션의 스크립트 코드에 역슬래쉬(\)가 누락된 부분 수정
+
+-   <Status>Fixed</Status> Alpine linux 운영체제에서 <b>Golang 라이브러리 사용</b> 섹션의 내용이 누락된 부분 수정
+
+-   <Status>Fixed</Status> <b>Golang 라이브러리 사용</b> 섹션의 스크립트 코드 내용을 모든 운영체제에 동일하게 적용
+
+-   <Status>Feature</Status> 모든 운영체제에서 <b>에이전트 설정</b> 섹션에 안내 문구 추가
+
+-   <Status>Feature</Status> Alpine linux 운영체제에서 <b>모니터링 시작하기</b> 섹션에 안내 문구 추가
+
+#### PHP
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>Amazon linux</UI> 탭 > <b>에이전트 다운로드</b> 섹션 내용 중 스크립트 코드에 역슬래쉬가 누락된 부분 수정
+
+</div>
+
+## Service 1.102.19
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 목록 호출 시 조직 아이디가 반영되지 않는 오류 수정</p>
+
+* * *
+
+### `Application`, `Container`, `Server`
+
+#### 에이전트 설정 및 서버 설정
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴 또는 <UI>서버 설정</UI> > <UI>서버 설정</UI> 메뉴의 <UI>업무 디폴트</UI>, <UI>프로젝트 디폴트</UI> 탭에서 설정 적용 시 요청을 성공해도 에러 메세지가 나오는 현상 수정
+
+-   <Status>Fixed</Status> 설정이 적용된 대상의 아이디가 아닌 이름이 표시되도록 수정
+
+</div>
+
+## Service 1.102.18
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>프로젝트 목록</UI>에서 <code>Browser</code> 프로젝트 카드 뷰 내 차트 및 데이터 조회 쿼리 변경</p>
+
+</div>
+
+## Service 1.102.17
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> 상단 고정 메뉴의 가이드 문서 링크 선택 시 서비스에서 선택한 언어와 일치하는 가이드 문서로 이동하도록 수정</p>
+
+</div>
+
+## Service 1.102.16
+
+2023년 6월 19일
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Oracle
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 <UI>액티브 세션</UI> 테이블의 <UI>SQL</UI> 항목을 선택하면 전달되는 해시값 수정</p>
+
+</div>
+
+## Service 1.102.15
+
+2023年6月15日
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューでデータを照会する最大範囲を1日制限に修正
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューでデータを照会する最大範囲を7日制限に修正
+
+-   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、Traceステップ分析及びメソッドポップアップの出力データを次のように修正
       
-    - 각 데이터 제목 수정
+    - 各データタイトルを修正
 
-    -   함수 → 메소드
+    -   関数 → メソッド
 
-    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
+    -   Parameter/Return → パラメータ/リターン (多言語適用)
 
-    -   모달 제목 수정: 함수 → 메소드
+    -   モーダルタイトル修正：関数→メソッド
 
-    -   경과시간 단위 텍스트 수정: (ms) → ms
+    -   経過時間単位テキストの修正：(ms) → ms
 
-    -   일부 출력값 제거: 진입 CPU 시간, 메모리
+    -   一部の出力値を削除：進入CPU時間、メモリ
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
+-   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、SQL文の特定キーワード(content、long)が強調されるバグを修正
 
 </div>
 
 ## Service 1.102.14
 
-2023년 6월 13일
+2023年6月13日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
+<p><Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>マルチファクタ認証</UI> > <UI>メールでOTP キーを送信する</UI>ボタンを選択するとOTPキーを(再)生成するウィンドウが表示される現象を修正</p>
 
 </div>
 
 ## Service 1.102.13
 
-2023년 6월 13일
+2023年6月13日
 
 <div class='indentTab'>
 
@@ -54,45 +162,45 @@ toc_max_heading_level: 3
 
 #### アラート通知
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
+-   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで<b>最後の変更時間</b>カラム名を<UI>イベント解消時刻</UI>に修正
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
+-   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで進行中のイベントは<UI>イベント解消時刻</UI>データを表示しないように修正
 
 </div>
 
 ## Service 1.102.12
 
-2023년 6월 12일
+2023年6月12日
 
 <div class='indentTab'>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>サーバー一覧</UI>メニューにインストールされているエージェントがない場合、読み込み中画像が表示され続けるバグを修正</p>
 
 </div>
 
 ## Service 1.102.11
 
-2023년 6월 12일
+2023年6月12日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント受信設定</UI>メニューで<UI>ユーザー別イベント受信設定</UI>テーブルの展開機能が作動しないバグを修正</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+-   <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQL要約</UI>, <UI>HTTP呼び出し要約</UI>、<UI>メソッド要約</UI>タブの過去データ照会に関するバグを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+-   <Status>Feature</Status>データ照会時間選択の機能を追加
 
 </div>
 
@@ -104,11 +212,11 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Feature</Status> <UI>계정 정보</UI> 메뉴에서 <UI>마케팅 수신 동의</UI> 항목 추가</p>
+<p><Status>Feature</Status> <UI>アカウント情報</UI>メニューで<UI>マーケティング受信同意</UI>項目を追加</p>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>メトリクスチャート</UI>メニューでエージェント名が重複している場合、CSVファイルでデータが正しく表示されないバグを修正</p>
 
 </div>
 

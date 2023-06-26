@@ -115,34 +115,74 @@ It consists of a tracer to collect the monitoring data, an agent to transmit the
 
 </details>
 
-## Agent CONFIG.
+## 에이전트 설정{#set-agent}
 
-Execute the following commands in order to set the **access key** and **collection server IP** in _whatap.conf_.
+### 기본 설정하기
+
+다음 명령어를 차례로 실행해 _whatap.conf_ 파일에 **액세스 키**와 **수집 서버 IP 주소** 등을 설정하세요.
+
+-   Create the _whatap.conf_ file in the path of the application startup script. 
+
+-   If the `WHATAP_HOME` environment variable has not been set, the path of the application startup script is recognized as the one of the _whatap.conf_ file.
 
 ```bash title='SH'
-$ echo "license={Access Key}" >> /usr/whatap/agent/whatap.conf
-$ echo "whatap.server.host={Collection Server IP}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_name={Application Name}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_process_name={Application Process Name}" >> /usr/whatap/agent/whatap.conf
+# 스크립트 실행 경로에 whatap.conf 파일 생성
+$ echo "license={액세스 키}" >> ./whatap.conf
+$ echo "whatap.server.host={수집 서버 IP 주소}" >> ./whatap.conf
+$ echo "app_name={애플리케이션 이름}" >> ./whatap.conf
+
+# 애플리케이션 실행
+./app
 ```
 
--   **license**: Enter the **access key**.
--   **whatap.server.host**: Enter the **collection server IP**.
--   **app_name**: Enter the application name. Set the user as a string.
--   **app_process_name**: Enter the name of the application to be monitored. Measure the memory usage with the specified process name.
+-   `license`: Enter the **access key**.
 
-* * *
+-   `whatap.server.host`: Enter the **collection server IP address**.
 
-For Alpine Linux, run the script as follows according to the instructions to enter the **access key** and **collection server IP**.
+-   `app_name`: 애플리케이션 이름을 입력하세요. 문자열을 이용해 사용자 설정할 수 있습니다.
 
-```bash title='SH'
-$ sudo /usr/whatap/php/install.sh
+### `WHATAP_HOME` 환경 변수 설정하기
 
-Input project access key
-xxxxxxxxxxxxxxxx   # Enter the granted access key
+_whatap.conf_ 파일 경로를 `WHATAP_HOME` 환경 변수로 설정할 수 있습니다. `WHATAP_HOME` 경로를 우선 생성하세요.
 
-Input whatap.server.host
-192.x.x.x          # Enter the WhaTap collection server IP
+```bash
+# WHATAP_HOME 경로 우선 생성 후 whatap.conf 파일 경로 설정
+mkdir ./whatap_home
+echo "license={액세스 키}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={수집 서버 IP 주소}" >> ./whatap_home/whatap.conf
+echo "app_name={애플리케이션 이름}" >> ./whatap_home/whatap.conf
+
+# 애플리케이션 실행
+WHATAP_HOME=./whatap_home ./app
+```
+
+### 프로세스 별 에이전트 이름 설정{#duplicate_appname}
+
+2개 이상의 프로세스로 실행되는 애플리케이션에서 1개의 _whatap.conf_ 파일을 공유하면 사용자가 설정한 변경 사항이 정상 반영되지 않을 수 있습니다. 프로세스 별로 각각의 _whatap.conf_ 파일을 설정할 것을 권장합니다.
+
+에이전트 이름이 중복되지 않도록 사용자는 문자열을 에이전트 이름에 추가해 구분할 수 있습니다. `app_name` 옵션으로 설정한 값이 에이전트 이름의 가장 앞 부분에 추가됩니다.
+
+You can avoid duplicate names of agents run with the same command and the same instance. 
+
+```bash
+# WHATAP_HOME 경로 우선 생성 후 whatap.conf 파일 경로 설정
+mkdir ./whatap_home
+echo "license={액세스 키}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={수집 서버 IP 주소}" >> ./whatap_home/whatap.conf
+echo "app_name={애플리케이션 이름-1}" >> ./whatap_home/whatap.conf
+
+# 애플리케이션 실행
+WHATAP_HOME=./whatap_home ./app 
+
+# WHATAP_HOME 경로 우선 생성 후 whatap.conf 파일 경로 설정
+mkdir ./whatap_home1
+echo "license={액세스 키}" >> ./whatap_home1/whatap.conf
+echo "whatap.server.host={수집 서버 IP 주소}" >> ./whatap_home1/whatap.conf
+echo "app_name={애플리케이션 이름-2}" >> ./whatap_home1/whatap.conf
+
+# 애플리케이션 실행
+WHATAP_HOME=./whatap_home1 ./app
+
 ```
 
 ## Using the Golang library
@@ -152,14 +192,14 @@ Add whatap/go-api to the Golang application source code and release it.
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">
 
-```bash title='SH'
-$ go get -u github.com/whatap/go-api
+```bash
+$ go get github.com/whatap/go-api
 ```
 
 </TabItem>
 <TabItem value="debian-ubuntu" label="Debian/Ubuntu">
 
-```bash title='SH'
+```bash
 $ go get github.com/whatap/go-api/trace
 $ go get github.com/whatap/go-api/sql
 $ go get github.com/whatap/go-api/httpc
@@ -169,7 +209,7 @@ $ go get github.com/whatap/go-api/method
 </TabItem>
 <TabItem value="amazonlinux" label="Amazon Linux">
 
-```bash title='SH'
+```bash
 $ go get github.com/whatap/go-api/trace
 $ go get github.com/whatap/go-api/sql
 $ go get github.com/whatap/go-api/httpc
@@ -192,4 +232,32 @@ func main(){
 
 ## Starting the monitoring
 
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="Red Hat/CentOS">
+
 Once the application server has been restarted, the agent starts collecting data.
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+Once the application server has been restarted, the agent starts collecting data.
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+1.  Execute the following command to install the WhaTap agent daemon.
+
+    ```bash
+    /usr/whatap/php/whatap-agent start
+    ```
+
+2.  다음 명령어를 실행해 와탭 서비스가 정상 실행됐는지 확인하세요.
+
+    ```bash
+    ps -elf | grep whatap_agent_static
+    ```
+
+Once the application server has been restarted, the agent starts collecting data.
+
+</TabItem>
+</Tabs>
