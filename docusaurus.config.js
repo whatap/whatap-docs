@@ -532,7 +532,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'release-notes/release-notes',
+            docId: 'release-notes',
             position: 'left',
             label: '릴리스 노트',
           },

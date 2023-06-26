@@ -2820,7 +2820,7 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-notes/release-notes'
+        id: 'release-notes'
       },
       items: [
         {
