@@ -287,11 +287,11 @@ module.exports = Promise.resolve({
                 docId: 'amazon-ecs/introduction',
                 label: 'Amazon ECS',
               },
-              // {
-              //   type: 'doc',
-              //   docId: 'aws-log/introduction',
-              //   label: 'AWS Log',
-              // },
+              {
+                type: 'doc',
+                docId: 'aws-log/introduction',
+                label: 'AWS Log',
+              },
               {
                 type: 'doc',
                 docId: 'azure/install-agent',
@@ -467,6 +467,13 @@ module.exports = Promise.resolve({
             docId: 'amazon-ecs/introduction',
             position: "left",
             label: 'Amazon ECS',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'aws-log/introduction',
+            position: "left",
+            label: 'AWS Log',
             className: 'hidden',
           },
           {
