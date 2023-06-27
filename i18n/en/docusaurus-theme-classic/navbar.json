@@ -51,10 +51,6 @@
     "message": "MySQL Monitoring",
     "description": "Navbar item with label MySQL 모니터링"
   },
-  "item.label.MySQL RDS 모니터링": {
-    "message": "MySQL RDS Monitoring",
-    "description": "Navbar item with label MySQL RDS 모니터링"
-  },
   "item.label.MS SQL Server 모니터링": {
     "message": "MS SQL Server Monitoring",
     "description": "Navbar item with label MS SQL Server 모니터링"

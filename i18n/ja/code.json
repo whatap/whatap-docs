@@ -63,7 +63,7 @@
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "総 {count} 件の文書を発見",
+    "message": "総 {count} の文書を発見",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
@@ -335,7 +335,7 @@
     "description": "The title for favorite searches"
   },
   "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "즐겨찾기에서 이 검색 지우기",
+    "message": "お気に入りからこの検索を削除",
     "description": "The label for remove favorite search button"
   },
   "theme.SearchModal.errorScreen.titleText": {
@@ -411,7 +411,7 @@
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "Algolia로 검색",
+    "message": "Search by Algolia",
     "description": "The ARIA label for Algolia mention"
   }
 }

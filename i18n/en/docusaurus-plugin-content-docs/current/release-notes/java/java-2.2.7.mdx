@@ -8,9 +8,9 @@ June 5, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   spring-boot 추적
+-   Tracing the spring-boot
 
-    -   "@Async" 추적
+    -   Tracing "@Async"
 
         ```ini title='whatap.conf'
         # In case of spring-boot-2.7 or later
@@ -20,23 +20,23 @@ June 5, 2023
         weaving=tomcat10,spring-boot-3.x
         springboot_tomcat10_enabled=true
         ```
--   netflix-zuul 추적
+-   Tracing the netflix-zuul
 
-    -   zuul 연계 추적
+    -   Zuul-based tracing
         ```ini title='whatap.conf'
         # zuul
         weaving=zuul
         ```
--   redis 추적
+-   Tracing the redis
 
-    -   lettuce-core-5.1 추적
+    -   Tracing the lettuce-core-5.1
         ```ini title='whatap.conf'
         # redis: lettuce-core-5.1
         weaving=lettuce-5.1
         ```
--   reactor-kafka 추적
+-   Tracing the reactor-kafka
 
-    -   reactor-kafka-1.x 추적
+    -   Tracing the reactor-kafka-1.x
 
         ```ini title='whatap.conf'
         # kafka: reactor-kafka-1.x

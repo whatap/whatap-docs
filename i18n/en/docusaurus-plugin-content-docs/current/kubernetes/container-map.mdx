@@ -37,6 +37,7 @@ The shapes and designs for each object represent the characteristics and states 
 -   Border
 
     -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
+
     -   If there are 2 containers in a pod and the microagents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have microagents installed, the borders are displayed.
 
 ### ![](/img/number-02.png) Go to Cluster Project - Namespace Project
@@ -48,6 +49,7 @@ If a namespace project is created under a cluster project, you can check the lis
 :::note
 
 -   WhaTap Kubernetes Service's **cluster project** is a new name for the **master project**.
+
 -   For more information about the namespace project creation, see [the following](namespace).
 
 :::
@@ -92,10 +94,21 @@ A container map provides multiple user settings that allow you to create any des
 
 You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
 
--   Trace
--   Metrics
--   Log
--   Event
+-   **트레이스** (Trace)
+
+    컨테이너 상의 애플리케이션 추적을 위한 APM 도구를 의미합니다. 
+
+-   **메트릭스** (Metrics)
+
+    노드, 쿠버네티스의 다양한 지표 데이터를 의미합니다. 
+
+-   **로그** (Log)
+
+    컨테이너, 애플리케이션의 각종 로그를 의미합니다.
+
+-   **이벤트** (Event)
+
+    쿠버네티스 이벤트, 사용자 정의 이벤트를 의미합니다. 
 
 Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
 
@@ -105,9 +118,25 @@ Click a specific object or a set of objects. You can check the summary data of t
 
 ![Summary view](https://img.whatap.io/media/images/whatap_kubernetes_container_map_right_summary.png)
 
+-   **_트레이스_**
+
+    컨테이너 맵의 **_트레이스_** 탭을 통해 컨테이너 상에서 실행되는 애플리케이션의 개별 트랜잭션을 추적할 수 있습니다.
+
+-   **_Metrics_**
+
+    컨테이너 맵의 **_메트릭스_** 탭을 통해 각 컨테이너의 자원 할당량, 사용량 등의 각종 지표 데이터를 실시간으로 확인할 수 있습니다.
+
+-   **_Log_** 
+
+    컨테이너 맵의 **_로그_** 탭을 통해 각 컨테이너의 표준 출력 로그 및 컨테이너 상의 애플리케이션이 생성하는 로그를 통합 관리, 조회할 수 있습니다.
+
+-   **_Event_** 
+
+    컨테이너 맵의 **_이벤트_** 탭을 통해 쿠버네티스 클러스터에서 발생한 이벤트 및 와탭의 경고 기능을 이용한 사용자 임계치 기반 이벤트의 통합 조회가 가능합니다. 
+
 #### Display Detail
 
-On the upper right of the **Display Summary** screen, click ![Display Detail icon](/img/ico-detail-mode.svg). **Display Detail** appears.
+**요약 보기** 화면의 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 클릭하세요. **상세 보기** 화면으로 전환합니다. **상세 보기** 화면 구성에 대한 자세한 안내는 [다음 문서](container-map-detail-mode)를 참조하세요.
 
 ![Detailed view](/img/container-map-detail-mode.png)
 
@@ -117,8 +146,8 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 
 ![Time Selector](/img/kubernetes-time-seletor.png)
 
-| Lookup status            | Description                                                                 |
-| ------------------------ | --------------------------------------------------------------------------- |
-| Real-time inquiry (LIVE) | Default mode<br/>Real-time status changes every 10 seconds.                 |
-| Paused inquiry (PAUSE)   | Real-time status change OFF<br/>Used to check the current status in detail. |
-| Historical inquiry       | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute         |
+| Lookup status               | Description                                                                           |
+| --------------------------- | ------------------------------------------------------------------------------------- |
+| Real-time inquiry (LIVE)    | Default mode<br/>Real-time status changes every 10 seconds.                           |
+| Paused inquiry (PAUSE)      | Real-time status change OFF<br/>Used to check the current status in detail.           |
+| Historical inquiry          | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute                   |

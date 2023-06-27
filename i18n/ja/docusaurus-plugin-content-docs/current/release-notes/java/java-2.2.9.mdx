@@ -4,43 +4,43 @@ title: Java Agent 2.2.9
 toc_max_heading_level: 2
 ---
 
-2023년 6월 16일
+2023年6月16日
 
 ## 新機能 <sup><Status>New</Status></sup>
 
-### spring-boot-2.5.x 비동기 추적 기능 추가
+### spring-boot-2.5.x非同期追跡機能の追加
 
 ```ini title='whatap.conf'
 weaving=tomcat9,spring-boot-2.5
 ```
 
--   webflux + "netty, tomcat, undertow" 추적
+-   webflux + "netty, tomcat, undertow"追跡
 
--   spring-cloud-gateway 추적
+-   spring-cloud-gateway追跡
 
--   dev.miku:r2dbc-mysql-0.8.2.RELEASE 추적
+-   dev.miku:r2dbc-mysql-0.8.2.RELEASE追跡
 
--   spring-kafka-2.7 추적
+-   spring-kafka-2.7追跡
 
-### okhttp3-4.4 ~ okhttp3-4.9.3 추적 기능 추가
+### okhttp3-4.4 ~ okhttp3-4.9.3追跡機能の追加
 
 ```ini title='whatap.conf'
 weaving=okhttp3-4.4
 ```
 
-### Tibero 6 SQL 추적 기능 추가
+### Tibero 6 SQL追跡機能の追加
 
 ## アップデート <sup><Status>Change</Status></sup>
 
-### 비동기 설정 수정
+### 非同期設定の修正
 
--   weaving 설정에서 버전 표기 방식 수정: 기존 spring-boot-**2.7.x**에서 spring-boot-**2.7**로 수정
+-   weaving設定でバージョン表記方式の修正：既存spring-boot-**2.7.x**からspring-boot-**2.7**に修正
 
     ```ini title='whatap.conf'
     weaving=spring-boot-2.7
     ```
 
--   weaving 설정에서 버전 표기 방식 수정: spring-boot-**3.x**에서 spring-boot-**3.0**으로 수정
+-   weaving設定でバージョン表記方式の修正：spring-boot-**3.x**からspring-boot-**3.0**に修正
 
     ```ini title='whatap.conf'
     weaving=spring-boot-3.0

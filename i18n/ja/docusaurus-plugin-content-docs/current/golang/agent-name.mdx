@@ -14,7 +14,7 @@ tags:
 WhaTapエージェントがアプリケーションサーバーを識別するために使用するデフォルトパターンは次のとおりです。
 
 ```ini title='Default pattern'
-{type}-{ip2}-{ip3}-{process}
+{type}-{ip2}-{ip3}-{cmd}-{cmd_full}
 ```
 
 デフォルトパターン値を変更するには、_whatap.conf_ファイルを次のように修正してください。
@@ -36,12 +36,14 @@ object_name={type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
 | {hostname} | ホスト名です。                                                                 |
 | {dockerid} | DockerコンテナのIDです。                                                        |
 | {ips}      | 全体IPの情報です。（ip4、ip6）                                                     |
+| {cmd}      | 프로세스 이름입니다. 실행 args[0] 값입니다.                                            |
+| {cmd_full} | 실행 명령어의 모든 라인을 해시값으로 처리합니다. 실행 args 전체입니다.                              |
 
 ## エージェント名の設定{#agentname}
 
 -   **object_name** <span class='type'>String</span>
 
-    デフォルト値`{type}-{ip2}-{ip3}-{process}`
+    デフォルト値`{app_name}-{ip2}-{ip3}-{cmd}-{cmd_full}`
 
     アプリケーションを識別するエージェント名(ONAME) システムです。ONAMEに基づいてOIDが生成されます。
 
@@ -55,4 +57,4 @@ object_name={type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
 
 -   **whatap.okind** <span class='type'>String</span>
 
-    エージェントが属するグループ単位を設定します。複数のエージェントを一緒に設定して、そのグループ名でトポロジを確認できます。
+    エージェントが所属するグループ単位を設定します。複数のエージェントをまとめて設定し、そのグループ名でトポロジを確認できます。

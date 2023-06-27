@@ -121,7 +121,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
     ```
 
-    설치 후 서버 모니터링을 Beanstalk에 포함해 애플리케이션 배포 시 서버 모니터링 신규 목록이 반복적으로 생성될 수 있습니다. 
+    By including the server monitoring into the Beanstalk after installation, a new list for server monitoring may be generated repeatedly in every release of applications. 
 
     This is because the WhaTap agent's internal ID is newly issued each time the above command is executed. Modify as follows to prevent the new list from generating in a later release.
 
