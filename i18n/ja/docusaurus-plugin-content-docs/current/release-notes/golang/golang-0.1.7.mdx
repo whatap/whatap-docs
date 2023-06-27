@@ -1,5 +1,5 @@
 ---
-id: golang-0.1.7
+id: golang-0_1_7
 title: Golang Agent 0.1.7
 toc_max_heading_level: 2
 ---
@@ -9,7 +9,7 @@ import UI from '@site/src/components/UItext';
 
 リリーズ：2022-01-04
 
-## ベータ - アップデート
+## ベータ版 - アップデート
 
 ### database/sqlライブラリに対応します。
 
@@ -17,7 +17,7 @@ database/sqlパッケージの`sql.Open`関数の代わりに`whatapsql.OpenCont
 
 伝達するcontextは`trace.Start()`を通じる必要があり、whatap TraceCtx情報が必要です。
 
-```go title='설치 안내'
+```go title='Install guide'
 
 import (
   _ "github.com/go-sql-driver/mysql"
@@ -57,15 +57,15 @@ func main() {
 
 #### 設定
 
-`go.sql_profile_enabled`\
-#Default : true#\
-#Type : boolean# 
+`go.sql_profile_enabled`<br/>
+\#Default : true#<br/>
+\#Type : boolean#<br/>
 
 database/sql情報の収集有無を設定します。
 
 ### github.com/go-gonic/ginライブラリに対応
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "github.com/go-gonic/gin"
   
@@ -95,7 +95,7 @@ func main() {
 
 ### github.com/gorilla/muxライブラリに対応
 
-```go title='설치 안내'
+```go title='Install guide'
 
 import (
   "github.com/gorilla/mux"
@@ -127,7 +127,7 @@ func main() {
 
 ### github.com/labstack/echoライブラリに対応
 
-```go title='설치 안내'
+```go title='Install guide'
 import (
   "github.com/labstack/echo"
   

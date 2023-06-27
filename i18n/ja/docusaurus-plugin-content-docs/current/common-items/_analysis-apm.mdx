@@ -5,7 +5,9 @@
 WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、**_プロジェクトメニュー_**下位の**_分析_** > **_スタック_**を選択してください。**_トップスタック_**と**_ユニークスタック_**、**_アクティブスタック_**を確認することができます。 
 
 :::note
+
 スタック分析機能を使用できるアプリケーションは**Java**と**Python**です。 
+
 :::
 
 WhaTapでは10秒（デフォルト値）間隔で収集したThread Stackを活用して、メソッドレベルの性能遅延区間を分析します。
@@ -61,14 +63,14 @@ jdbc.Control.exec
 
 ![tst3](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring27.png)
 
--   **_パーセント_**  
+-   **_パーセント_**
 
-    -   照会期間の間、選択されたトップスタックの比率の変化を示します。  
-    -   障害時点の把握、障害改善前後の比較に有効です。
+    -   照会期間の間、選択されたトップスタックの比率の変化を示します。
+    -   トラブル時点の把握、改善前後の比較に有効です。
 
--   **_件数_**  
+-   **_件数_**
 
-    -   収集されるスタックの数は、アクティブトランザクションの数に比例します。  
+    -   収集されるスタックの数は、アクティブトランザクションの数に比例します。
     -   特定区間で収集量が増えたら、サービス遅延や急激な流入量増加があったことが分かります。
 
 次のようなダイヤグラムでも確認できます。
@@ -94,7 +96,10 @@ Stack Trace全体のHash値基準の算出結果として、全体Stepが同じ�
 進行中のトランザクションをアクティブトランザクションと呼びます。**アクティブトランザクションで定期的にダンプされるスタック**は**_アクティブスタック_**と呼ばれます。
 
 :::note
-WhaTapエージェントは、毎10秒（オプションで調整可能）ごとに**アクティブトランザクション**に対して**_アクティブスタック_**をダンプし、これをサーバーに転送します。`active_stack_second=10`
+
+WhaTapエージェントは、毎10秒（オプションで調整可能）ごとに**アクティブトランザクション**に対して**_アクティブスタック_**をダンプし、これをサーバーに転送します。<br/>
+`active_stack_second=10`
+
 :::
 
 **_アクティブスタック_**メニューを選択すると、収集されたActiveStackをチャートで確認できます。チャートは5分間の単位統計データを**_Active Transaction_**の数を棒グラフとして、**_TPS_**を折れ線で表示します。 
@@ -104,7 +109,9 @@ WhaTapエージェントは、毎10秒（オプションで調整可能）ごと
 ![ast](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring29.png)
 
 :::note
+
 アクティブトランザクションの詳細については、[次の文書](active-transactions)を参照してください。
+
 :::
 
 \#{@include: ../common-items/_compact-active-stacks.mdx}
@@ -119,29 +126,32 @@ WhaTapエージェントは、毎10秒（オプションで調整可能）ごと
 
 1.  **_スタック_** > **_トップスタック_**メニューからトップスタック情報を照会してください。
 
-  ![tst-view](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring31.png)
+    ![tst-view](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring31.png)
 
-1.  シェア順に上位項目からClass／Method情報を確認してください。
+2.  シェア順に上位項目からClass／Method情報を確認してください。
 
-    -   **最も高い**79.92%の割合を占めるトップスタック<br/>
+    -   **最も高い** 79.92%比率を占めるトップスタック
+
         `org.apache.logging.log4j.core.layout.TextEncoderHelper.copyDataToDestination()`
-    -   **二番目に高い**8.01%の割合を占めるトップスタック<br/>
+
+    -   **二番目に高い** 8.01%比率を占めるトップスタック
+
         `sun.misc.Unsafe.park()` 
 
-2.  ヒストリー機能で時間帯別の推移を確認できます。
+3.  ヒストリー機能で時間帯別の推移を確認できます。
 
     ![history](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring30.png)
 
     -   午前6時頃、`TextEncoderHelper.copyDataToDestination()`の比率が減少したことを確認できます。
     -   同時間帯`sun.misc.Unsafe.park`は`TextEncoderHelper.copyDataToDestination()`の減少した割合だけ増加しました。
 
-    上位1、2のトップスタックはすべてLoggingに関連しています。つまり、このシステムは全体の業務で90%に近い遂行時間をLoggingに費やしていることが確認できます。    
+    上位1、2のトップスタックはすべてLoggingに関連しています。つまり、このシステムは全体の業務で90%に近い遂行時間をLoggingに費やしていることが確認できます。
 
-3.  確認したシェアをもとに改善期待効果を算定します。  
+4.  確認したシェアをもとに改善期待効果を算定します。
 
     例の`copyDataToDestination()`79.92%、`sun.misc.Unsafe。park()`8.01%の割合はサービス遂行中に占有された時間比率です。つまり、`copyDataToDestination()`のシェアを半分に下げると、応答速度基準で44%ほどパフォーマンスが改善される可能性があります。
 
-4.  トップスタック情報に基づいて改善策を検討します。
+5.  トップスタック情報に基づいて改善策を検討します。
 
     ```java title='org.apache.logging.log4j.core.layout.TextEncoderHelper.copyDataToDestination()'
     private static void copyDataToDestination(final ByteBuffer temp, final ByteBufferDestination destination) {

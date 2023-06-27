@@ -11,15 +11,15 @@ tags:
 
 {@include: ../common-items/_apm-name-description.mdx}
 
-{@include: ../common-items/_agent-name-warning.mdx} 
+{@include: ../common-items/_agent-name-warning.mdx}
 
 WhaTapエージェントがアプリケーションサーバーを識別するために使用するデフォルトパターンは次のとおりです。
 
-```ini title='기본 환경'
+```ini title='Default pattern'
 NODE-{ip2}-{ip3}
 ```
 
-```ini title='클러스터(cluster) 환경'
+```ini title='Cluster environment'
 NODE{cluster}-{ip2}-{ip3}
 ```
 
@@ -55,7 +55,7 @@ auto_oname_enabled=true
 auto_oname_prefix=nodejs
 ```
 
-```javascript title='env에 설정(app.js)' {4,5} showLineNumbers
+```javascript title='Set the .env(app.js)' {4,5} showLineNumbers
 process.env.WHATAP_LICENSE='x46n3226be1ah-z2rsecfcvlq2ph-z11bc81gfhqpgg';
 process.env.WHATAP_SERVER_HOST='52.78.209.94/52.78.224.235';
 
@@ -70,6 +70,7 @@ var whatap=require('whatap').NodeAgent;
 
 -   envに設定するには、`require('whatap')`より先に宣言する必要があります。
 -   **Heroku**環境では、サーバを再起動するたびにIPアドレスを変更するため、新しい名前に変更されます。
+
 :::
 
 `auto_oname_prefix`オプションは、エージェント名のprefixです。WhaTapサーバは、`auto_oname_prefix`オプションに設定した名前とシリアル番号を組み合わせてエージェント名を付与します。
@@ -80,17 +81,24 @@ var whatap=require('whatap').NodeAgent;
 
 Node.jsエージェント名の設定の詳細については、 [次の文書](#agentname)を参考にしてください。
 
--   **whatap.okind** <span class='type'>String</span><br/>
-     エージェントが属するグループ単位を設定します。複数のエージェントを一緒に設定して、そのグループ名でトポロジーを確認できます。
+-   **whatap.okind** <span class='type'>String</span>
 
--   **auto_oname_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      サーバーに登録するエージェント名をサーバーから自動付与される機能を活性化します。
+エージェントが属するグループ単位を設定します。複数のエージェントを一緒に設定して、そのグループ名でトポロジを確認できます。
 
--   **auto_oname_prefix**<span class='type'>String</span><br/>
-      デフォルト値`agent`<br/>
-      エージェント名をサーバーから自動付与するとき、エージェント名のprefixや業務名を使用します。prefixにシリアル番号「1~)」を付与します。
+-   **auto_oname_enabled** <span class='type'>Boolean</span>
 
--   **auto_oname_reset** <span class='type'>Int</span><br/>
-      デフォルト値 `0`<br/>
-      サーバーから新しいエージェント名を付与するために修正します。一度決められたエージェント名は、Node.jsが再起動するまで保持されます。リセットしたいときは、'auto_oname_reset'値を修正してください。現在の設定値と異なる値に変更すると適用されます。
+    デフォルト値`false`
+
+    サーバーに登録するエージェント名をサーバーから自動付与される機能を活性化します。
+
+-   **auto_oname_prefix** <span class='type'>String</span>
+
+    デフォルト値`agent`
+
+    エージェント名をサーバーから自動付与するとき、エージェント名のprefixや業務名を使用します。prefixにシリアル番号「1~)」を付与します。
+
+-   **auto_oname_reset** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    サーバーから新しいエージェント名を付与するために修正します。一度決められたエージェント名は、Node.jsが再起動するまで保持されます。リセットしたいときは、`auto_oname_reset`値を修正してください。現在の設定値と異なる値に変更すると適用されます。

@@ -12,10 +12,14 @@ tags:
   - DBX
 ---
 
-import InDoc from '@site/src/components/InDoc.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
 import RdsCont from '../common-items/_import_db-specification-rds.mdx';
 import CommonCont from '../common-items/_import_db-specification-common.mdx';
+
+:::note
+
+This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/monitoring-intro).
+
+:::
 
 {@include: ../common-items/_db-introduction-desc.mdx} 
 
@@ -32,6 +36,56 @@ import CommonCont from '../common-items/_import_db-specification-common.mdx';
 </InDoc>
 
 {@include: ../common-items/_db-specification.mdx}
+
+* * *
+
+## New features in PostgreSQL Monitoring V2{#new-feature}
+
+The PostgreSQL Monitoring V2 with enhanced charting and collecting features has been updated. Update your agent to get the latest features. 
+
+:::note
+
+The minimum version of the DBX agent to use the PostgreSQL monitoring V2 is 1.6.7. For more information about the agent update, see [the following](agent-manage).
+
+:::
+
+-   **Provision of DB metrics data**
+
+    ![](/img/pgsql-new-feature-01.png)
+
+    Helps and tuning tips for metrics are added, and convenience is provided by categorizing and recommending the metrics so that users can easily understand numerous metrics.
+
+-   **Dashboard improvements**
+
+    ![](/img/pgsql-new-feature-02.png)
+
+    For dashboards, the function to add multiple metrics is provided to one chart. In addition, by adding presets, users can quickly check the desired metrics.
+
+-   **UI improvements**
+
+    Improvements in the instance monitoring filter
+
+    ![](/img/pgsql-new-feature-03.png)
+
+    Session Kill UI improvements
+
+    ![](/img/pgsql-new-feature-04.png)
+
+    The instance monitoring filter has been improved, and the user interfaces for Session Kill have been improved.
+
+-   **Addition of Flex Board templates and widgets**
+
+    ![](/img/pgsql-new-feature-05.png)
+
+    By converting many DB indicators into metrics, various templates and widgets have been provided.
+
+-   **Log**
+
+    ![](/img/pgsql-new-feature-06.png)
+
+    Through **_Live Tail_**, **_Log Trend_**, **_Log Search_**, and Log Alert, you can search **DB logs** and can see their trend as well as the log-related alerts.
+
+* * *
 
 ## Supported functions
 

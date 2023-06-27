@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 | 環境      | サポート環境                    |
 | ------- | ------------------------- |
-| Java    | Java 6以降~Java 17以下        |
+| Java    | Java 6以降~Java 17以前        |
 | Node.js | Node.js 7.10.0以降          |
 | PHP     | PHP 5.2以降、7.0以降、8.0 ~ 8.2 |
 | Python  | Python 2.7、3.3以降          |
@@ -68,11 +68,11 @@ import TabItem from '@theme/TabItem';
 
 -   DBモニタリングを適用する場合、DB Metadata(Dictionary、 performance_schema) の参照権限のあるモニタリング用アカウントが必要です。
 
--   XOS 에이전트는 x86 아키텍쳐 기반에서 동작하는 OS 환경에만 적용할 수 있습니다.
+-   XOSエージェントは、x86アーキテクチャベースで動作するOS環境にのみ適用できます。
 
 :::
 
-### 対応機能の比較{#compare-db}
+### サポート機能の比較{#compare-db}
 
 <div class='db-support-type'>
 
@@ -89,8 +89,8 @@ import TabItem from '@theme/TabItem';
 | ^          | Dead Lock                   |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-no'>❌</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
 | ^          | DB Parameter                |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Statistics | SQL Stat                    |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Table Size                  |                              対応予定                             |                               対応予定                               | <span class='emoji-ok'>✅</span> |               対応予定              |
-| ^          | Database(TableSpace) Size   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> |               対応予定              |
+| ^          | Table Size                  |                             サポート予定                            |                              サポート予定                              | <span class='emoji-ok'>✅</span> |              サポート予定             |
+| ^          | Database(TableSpace) Size   |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> |              サポート予定             |
 | ^          | SGA Size                    |                <span class='emoji-no'>❌</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
 | Report     | Daily/Weekly/Monthly Report |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Event      | Event List                  |                <span class='emoji-ok'>✅</span>                |                  <span class='emoji-ok'>✅</span>                 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
@@ -114,7 +114,7 @@ import TabItem from '@theme/TabItem';
 | ^          | Dead Lock                   | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
 | ^          | DB Parameter                | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | Statistics | SQL Stat                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Table Size                  |               対応予定              | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
+| ^          | Table Size                  |              サポート予定             | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
 | ^          | Database(TableSpace) Size   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 | ^          | SGA Size                    | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
 | Report     | Daily/Weekly/Monthly Report | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
@@ -291,7 +291,9 @@ Java、PHP、Python、Serverアプリケーションでログを収集できま�
 | Telegraf | Telegraf 1.3以降     |
 
 :::note
+
 Telegrafは、socket_writer ouput pluginをサポートするバージョンのみ使用できます。
+
 :::
 
 ### Focus
@@ -318,12 +320,12 @@ Telegrafは、socket_writer ouput pluginをサポートするバージョンの�
 
 ## ファイアウォール
 
-{@include: getting-started/_proxy.mdx} 
+{@include: getting-started/_proxy.mdx}
 
 * * *
 
 ## モバイルアプリ
 
-{@include: getting-started/_mobile-app.mdx}  
+{@include: getting-started/_mobile-app.mdx} 
 
 * * *

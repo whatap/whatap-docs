@@ -2,19 +2,50 @@
 
 <ProdImg img='db-database-sql-stat.png' desc='SQL 통계' />
 
+<Xclude product='postgresql'>
+
 1.  In the **_Instance_** list, select a target to query from the list. You can select duplicate items. To select all instances, select **_All_**.
 
 2.  Set values for **_Start Date_**, **_Start Time_**, and **_Period_**.
 
 3.  Select ![Search icon](/img/ico-btn-search.png).
 
+</Xclude>
+
+<InDoc product='postgresql'>
+
+1.  In ![number 1](/img/number-01.png) **_Time_**, select the time and date to view the data. You can select a lookup time after selecting the green button.
+
+2.  In ![number 1](/img/number-01.png) **_Instance_**, select a target to view the data. You can select multiple instances. To select all instances, click **_Select All_**.
+
+3.  Select ![Search icon](/img/ico-btn-search.png).
+
+</InDoc>
+
 The top 50 entries appear in the table.
 
 :::note
 
--   You can select a search period up to 3 months from the start date.
+<Xclude product='postgresql'>
+
 -   You can filter the desired content by entering a SQL parameter value in the **_Filter_** field.
+
 -   The default sort order is **_execute count_**. To change the sort order, select a desired criterion from the **_Sort Order_** list.
--   Select **_CSV_** to download the searched content as a csv file format.
+
+-   To download the viewed data as a CSV file, select ![csv Download icon](/img/ic-csv-download-ms.svg).
+
+</Xclude>
+
+<InDoc product='postgresql'>
+
+-   Select the clock display area to query a random date and time. If you click the date and time text area, the selectable options for the date and time appear.
+
+-   If you select each column in the table header, you can sort the list by the selected item.
+
+-   You can sort the searched results by the item selected in **_lookup criteria_**. Select a desired item and then select ![Search icon](/img/ico-btn-search.png). 
+
+-   To download the viewed data as a CSV file, select ![Download icon](/img/ico-download.svg).
+
+</InDoc>
 
 :::

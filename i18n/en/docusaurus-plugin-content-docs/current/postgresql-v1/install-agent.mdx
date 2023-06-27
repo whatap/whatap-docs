@@ -1,0 +1,79 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
+tags:
+  - PostgreSQL
+  - Database Monitoring
+  - Agent
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TR from '@site/src/components/TR';
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+The following guides you to the basic installation method for using the WhaTap database monitoring service.
+
+{@include: ../common-items/_agent-signup-guide.mdx}
+
+{@youtube: Y66Siequ2S0}
+
+{@include: ../getting-started/_create-project-v2.mdx}
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## Downloading the WhaTap database agent
+
+{@include: ../common-items/_db-install-agent-steps.mdx}
+
+1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+
+```ini title='whatap.conf'
+license=Project access key
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server info
+
+dbms=postgresql
+db=postgres
+db_ip={DB server IP address}
+db_port={DB server port number} 
+```
+
+1.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+
+  Download the JDBC driver for the OS and version of your database server. 
+
+  **Postgresql 9.2 or later**: https://jdbc.postgresql.org/download
+
+<!-- 공통 Notes -->
+
+{@include: ../common-items/_db-install-agent-common-notes.mdx}
+
+<!-- 모니터링용 계정 생성 -->
+
+{@include: ../common-items/_db-create-monitoring-account.mdx}
+
+<!-- PostgreSQL -->
+
+```bash showLineNumbers
+# Version 10 or later
+create user whatap with password 'DB Password'; # Enter the desired password.
+grant pg_read_all_stats to whatap;
+ 
+# Earlier than Version 10
+create user whatap with password 'DB Password'; # Enter the desired password.
+alter user whatap with superuser;
+ 
+# In case of using the kill session
+alter user whatap with superuser;
+```
+
+## DB user file creation {#create-db-user}
+
+<DBuserDesc name='default'/>
+
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
+
+<!--## 에이전트 실행-->
+
+{@include: ../common-items/_db-run-agent.mdx}

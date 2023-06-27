@@ -7,10 +7,6 @@ tags:
   - Server
 ---
 
-<!-- 안내 디테일 추가 필요 -->
-
-<!-- showLineNumbers {5-10} -->
-
 サーバーアプリケーションからログを収集するには、次のことを確認してください。
 
 ## エージェントのアップデート
@@ -29,11 +25,10 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 :::
 
-<!-- 의 ***에이전트 설정 확인*** 탭의 안내를 참조해 진행하세요. 임의의 로그를 수집할 수 있습니다.  -->
-
 ### Linux Shell
 
 -   **_基本インストール_**
+
     ```bash title='Linux Shell'
     export LOGFILES=/some/path/file1,/some/other/file2
     echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
@@ -72,27 +67,29 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 ### Windows Powershell
 
 -   **_基本インストール_**
+
     ```bash title='Windows Powershell'
     $LOGFILES="/some/path/file1,/some/other/file2"
     Add-Content "c:Program FilesWhatapInfrawhatap.conf" -Value "logsink.files=$LOGFILES"
     ```
 
--   **_カテゴリとともにインストール_**  
+-   **_カテゴリとともにインストール_**
 
-    ```bash title='Windows Powershell (관리자 권한)' {6-11,13,14} showLineNumbers
+    ```bash title='Windows Powershell' {6-11,13,14} showLineNumbers
+    # 管理者権限が必要
     New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
 
     $contentToAdd = @"
     [[inputs.logsink]]
     category = "serverlog"
-    ## ログ発生量統計の別途データとしての送信有無
+    ## ログ発生量統計の個別データとしての送信有無
     stats_enabled = true 
-    ## ログ発生量の統計カテゴリ
+    ## 対数発生量の統計カテゴリ
     stats_category = "logsink_stats"
-    ## ログファイルパス（path）にアスタリスク（*）が含まれ、除外するログ非対象のファイル名を設定 
+    ## ログファイルパス(path)にアスタリスク(*)が含まれ、除外するログ非対象ファイル名の設定 
     excludeNames = [ ".gz",".zip" ] 
     [[inputs.logsink.file]]
-    ## ログファイル指定時、日付パターン（strftime.org）指定可能
+    ## ログファイル指定時、日付パターン(strftime.org)指定可能
     path = "c:\\whatap\\logs%Y-%m-%d_.log"
     disabled = false
     encoding = "euc-kr"
@@ -109,6 +106,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 -   `stats_enabled`：収集状態データの収集有無を設定します。デフォルト値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
 
 -   `stats_category`：収集データを保存するメトリクスカテゴリを設定します。値を`logsink_stats`に設定してください。統計データのフィールドは次のとおりです。
+
     -   `file`
     -   `checkInterval`
     -   `encoding`
@@ -122,7 +120,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 -   `excludeNames`：ログのファイルパス（path）にアスタリスク（\*）が含まれた場合、ログの非対象ファイルを除外するようにファイル名を設定できます。コンマ（,）を区切り文字として複数回設定できます。
 
-    ```ini title='예시'
+    ```ini title='Example'
     excludeNames = [ ".gz",".zip" ]
     ```
 
@@ -135,41 +133,3 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 {@include: ../common-items/_log-java-start.mdx} 
 
 {@include: ../common-items/_log-active-note.mdx} 
-
-<!-- 
- 
-別途のログ収集統計データが発生有無を設定します。
-
-ログモニタリングを希望するファイルパスを次のように指定してください。コマンドを入力すると、ログモニタリングが開始されます。
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="linux" label="Linux" default>
-
-```shell
-export LOGFILES=/some/path/file1,/some/other/file2
-echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
-```
-
-</TabItem>
-<TabItem value="windows" label="Windows" default>
-
-```shell
-$LOGFILES="/some/path/file1,/some/other/file2"
-Add-Content "c:\\Program Files\\WhatapInfra\\whatap.conf" -Value "$LOGFILES"
-```
-
-</TabItem>
-</Tabs>
-
-## ログモニタリングの活性化
-
-ホーム画面 > プロジェクト選択 > ***対数*** > ***設定***
-
-***ログモニタリングを開始する***セクションの***ログモニタリング活性化***タブのトグルボタンで、WhaTapログモニタリングを活性化または非活性化できます。
-
-{@include: ../common-items/_log-java-start.mdx}
-
--->

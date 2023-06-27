@@ -1,5 +1,5 @@
 ---
-id: golang-0.1.9
+id: golang-0_1_9
 title: Golang Agent 0.1.9
 toc_max_heading_level: 2
 ---
@@ -7,11 +7,11 @@ toc_max_heading_level: 2
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
-リリーズ：2022-04-27
+リリース：2022-04-27
 
-## ベータ - バグの修正
+## ベータ版 - バグ修正
 
-### panic状況でウェブトランザクション情報が収集できないエラーを修正
+### panic状況でウェブトランザクション情報が収集できないエラーを修正しました。
 
 -   net/http
 -   github.com/labstack/echo
@@ -19,7 +19,9 @@ import UI from '@site/src/components/UItext';
 -   github.com/go-gonic/gin
 
 :::note
-`recover()`を通じてエラー情報を収集しますが、再び同じpanicを発生させます。 
+
+`recover()`はエラー情報を収集しますが、再度同じpanicを発生させます。 
+
 :::
 
 ```go title='Golang'
@@ -46,7 +48,7 @@ defer func() {
 }()
 ```
 
-## ベータ - アップデート
+## ベータ版 - アップデート
 
 ### http status code収集
 
@@ -69,11 +71,11 @@ import (
 
 #### echoのHTTPErrorHandler Wrapperを追加
 
-HTTPErrorHandlerを通じてエラー情報を追加で収集します。
+HTTPErrorHandlerは、エラー情報を追加して収集します。
 
-`echo.Context.Error()`関数が呼び出されるときにエラー情報を収集します。Recoverミドルウェアが処理したpanic情報を収集します。 
+`echo.Context.Error()`関数が呼び出され、エラー情報を収集します。Recoverミドルウェアが処理したpanic情報を収集します。 
 
-whatapechoミドルウェアが最後に実行されると、HTTPErrorHandler情報をできるだけ多く収集できます。ミドルウェアの登録を最上段で設定し、`Pre()`関数を通じて登録します。
+whatapechoミドルウェアが最後に実行されると、HTTPErrorHandler情報をできるだけ多く収集できます。ミドルウェアの登録を一番上で設定し、`Pre()`関数で登録します。
 
 ```go title='Golang'
 func main() {
@@ -98,19 +100,23 @@ debug=true
 
 トランザクション、DBコネクション、Sql実行、Http外部呼び出しのログを追加しました。 
 
-### Http Methodを指定して収集を除外できる設定を追加
+### Http Methodを指定して収集を除外できる設定を追加しました。
 
-指定したuriに対して特定のHTTP Methodでリクエストされるトランザクションの収集を除外します。 コンマ（,）を区切り文字として複数のuri、Methodを登録できます。 大文字と小文字の区分はありません。
+指定したuriに対して特定のHTTP Methodでリクエストされるトランザクションの収集を除外します。コンマ(,) を区切り文字として複数のuri、Methodを登録できます。大文字と小文字の区分はありません。
 
-`ignore_http_method_urls`\
-#Default : ""#\
-#Type : String#
+-   `ignore_http_method_urls`
 
-`ignore_http_method`\
-#Default : ""#\
-#Type : String#
+    \#Default : ""#
 
-```ini
-ignore_http_method_urls=/index, /sql/select
-ignore_http_method=options, connect
-```
+    \#Type : String#
+
+-   `ignore_http_method`
+
+    \#Default : ""#
+
+    \#Type : String#
+
+    ```ini
+    ignore_http_method_urls=/index, /sql/select
+    ignore_http_method=options, connect
+    ```

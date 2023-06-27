@@ -9,9 +9,11 @@ tags:
   - Database Monitoring
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import InDoc from '@site/src/components/InDoc.js';
+:::note
+
+This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/instance-monitoring).
+
+:::
 
 {@include: ../common-items/_db-instance-monitoring-desc.mdx}
 
@@ -19,24 +21,176 @@ import InDoc from '@site/src/components/InDoc.js';
 
 <ProdImg img='db-instance-monitoring.png' desc='인스턴스 모니터링' />
 
-{@include: ../common-items/_db-instance-monitoring-basic-usage.mdx}
+### ![](/img/number-01.png) Selecting the lookup time and target
 
-<!-- 지표 선택하기 -->
+By default, the collected data for the last 10 minutes is retrieved in real time. If you select values in **_Time_** and **_Instance_**, the collected data is automatically applied to the ![number2](/img/number-02.png) graph chart and ![number4](/img/number-04.png) **_active session_** table.
 
-{@include: ../common-items/_db-select-metric-data-widget.mdx}
+-   To view the past data, click the green button and then select the desired lookup time. You can search data up to the last 3 weeks. 
 
-<!-- 레이아웃 설정하기 -->
+-   Select the clock display area to query a random date and time. If you click the date and time text area, the selectable options for the date and time appear. To search data in real time again, select ![Real-time icon](/img/ico-play-time.svg).
 
-{@include: ../common-items/_db-set-layout.mdx}
+-   To search data from other instances, click **_Instance_** and then select a desired DB server name.
 
-<!-- 액티브 세션 영역 활용 -->
+### ![](/img/number-02.png) Graph chart widget area
 
-{@include: ../common-items/_db-using-area-active-session.mdx}
+![number3](/img/number-03.png) **_Default_** displays 16 metrics saved as presets as a graph chart widget. The horizontal axis of each widget is time, and the vertical axis is the metric number. To know the meaning of each metric, select <span class='mark'>i</span> next to the name or see [the following](metrics-data-list).
 
-<!-- 컬럼 변경하기 -->
+-   To change the position with another widget, select and drag the upper part of the widget. However, the size of the widget cannot be changed.
 
-{@include: ../common-items/_db-data-edit-column.mdx}
+-   When a specific time is selected in the widget, the **real-time inquiry** mode is stopped and the active sessions performed at the selected time zone appear in the ![number 4](/img/number-04.png) **_Active Sessions_** table. After that, a button that allows you to view the data every 5 seconds appears on the **_Active Sessions_** table.
 
-<!-- 컬럼 정보 안내 -->
+    ![](/img/db-instance-monitoring-seltime-postgresql.png)
 
-{@include: ../common-items/_db_postgresql-column.mdx}
+    :::note
+
+    -   The selected time can be seen on the upper right of the **_Active Sessions_** table.
+
+    -   In the **_Active Sessions_** table list, the text colors are changed black → <span class='slow'>orange</span> → <span class='vslow'>Red</span>, which means that the performance of the session is getting slower.
+
+    :::
+
+### ![](/img/number-04.png) Active Sessions / Lock Tree / Process Info
+
+You can search active sessions, lock trees, and processes in real time. If you select a specific time of the chart in the widget, the **real-time inquiry** mode is stopped and the session performed at the selected time appears in the table. A time selection button appears on the table to search data in 5-second increments.
+
+{@include: ../common-items/_db-dashboard-activesession-desc.mdx}
+
+{@include: ../common-items/_db-dashboard-locktree-desc.mdx}
+
+{@include: ../common-items/_db-dashborad-process-info-desc.mdx}
+
+:::note
+
+In the table list, the text colors are changed black → <span class='slow'>orange</span> → <span class='vslow'>Red</span>, which means that the performance of the session is getting slower.
+
+:::
+
+## Selecting a metric
+
+To add or replace the metric graph to the widget, select ![Configuration icon](/img/ico-setting.svg) on the upper right of the widget. The **_Metric Select_** window appears. After completing the desired settings, select **_Save_**.
+
+<ProdImg img='db-metrics-select.png' desc='지표 선택'/>
+
+-   ![number 5](/img/number-05.png) **_Preview_**: You can preview the graph for the selected metric.
+
+-   ![number 6](/img/number-06.png) **_Title_**: Enter the widget name.
+
+-   ![number 8](/img/number-08.png) **_Recommendation metrics_** / **_All Metrics_**: If you select **_Recommendation metrics_**, the list of frequently viewed metrics in Database Monitoring appears. The metrics displayed in the list can be changed or added in the widget.
+
+-   In the ![number 9](/img/ic-number-09.svg) area, you can see the trend of metrics in a graph and add or change any widget. By selecting a desired tab, you can narrow down the list of metrics according to the category.
+
+### Adding metrics
+
+Multiple metrics can be added in a widget. You can add up to five metrics.
+
+1.  Select ![Configuration icon](/img/ico-setting.svg) on the upper right of the widget to add the metrics in.
+
+2.  If the **_Metric Select_** window appears, in the ![number 8](/img/number-08.png) metrics list or [number 9](/img/ic-number-09.svg) graph list, select ![Add icon](/img/ico-add.svg) on the right of the metric to add.
+
+3.  To add more metrics, repeat the step **2**.
+
+4.  To easily identify the widget, change the ![number 6](/img/number-06.png) **_Title_**.
+
+5.  Select **_Save_** on the upper right of the screen.
+
+Charts are generated as many times added to the widget to which metrics are added. If you select <span class='mark'>i</span> next to the widget name, you can see the name and description of the added metric. You can also check the figure through a tooltip by hovering your mouse over the chart.
+
+### Changing a metric
+
+You can change a metric in the widget to another.
+
+1.  Select ![Configuration icon](/img/ico-setting.svg) on the upper right of the widget to change the metrics.
+
+2.  If the **_Metric Select_** window appears, select a metric to change in the ![number 7](/img/number-07.png) area.
+
+3.  In the ![number 8](/img/number-08.png) metrics list or ![number 9](/img/ic-number-09.svg) graph list, select a desired metric.
+
+4.  In the ![number 7](/img/number-07.png) area, check that the name of the selected metric has been changed.
+
+5.  Select **_Save_** on the upper right of the screen.
+
+### Deleting a metric
+
+You can delete unnecessary metrics while multiple metrics have been set in the widget.
+
+1.  On the upper right of the widget to delete metrics from, select ![Configuration icon](/img/ico-setting.svg).
+
+2.  If the **_Metric Select_** window appears, select ![Delete icon](/img/ico-trash.svg) on the right of the metric to delete from the ![number 7](/img/number-07.png) area.
+
+3.  Select **_Save_** on the upper right of the screen.
+
+:::note
+
+At least one metric must be selected for a widget. You cannot delete all metrics in a widget.
+
+:::
+
+## Preset
+
+Widget settings set by the user can be saved or called as presets. The following presets are provided by default, and the **_Default_** presets cannot be changed.
+
+![Preset](/img/db-preset-list.png)
+
+-   **_Default_**: It consists of key DB metrics and XOS metrics (CPU and memory utilization, memory SWAP usage, disk I/O, etc.).
+
+-   **_Default(rds)_**: It consists of key DB metrics and RDS CloudWatch metrics (CPU utilization, free memory space, free storage space, network, etc.).
+
+### Save Preset
+
+1.  Add or modify the widget metrics.
+
+2.  Select **_Save Preset_**. 
+
+3.  Change the name and then select **_Save_**.
+
+In the **_preset_** list, select a saved item to fetch the settings.
+
+:::note
+
+-   The **_default_** preset cannot be modified. 
+
+-   You can create user-defined presets up to 5. Including the modified metric graph, the column order, column width, and filter application content of the active sessions are also applied.
+
+:::
+
+### Deleting presets
+
+If you select **_Preset_** on the upper right of the screen, the preset list appears. Select ![Delete icon](/img/ico-remove.svg) on the right of the preset to delete.
+
+<!--## 액티브 세션 영역 활용-->
+
+{@include: ../common-items/_db-using-area-active-session.mdx} 
+
+### Changing the table columns{#change-column}
+
+{@include: ../common-items/_db-data-edit-column.mdx} 
+
+### Filtering the table data
+
+{@include: ../common-items/_db-table-data-filtering.mdx}
+
+### Stopping an active session
+
+1.  Select ![Session Kill icon](/img/ico-kill-session.svg) on the upper right of the table.
+
+2.  Select the session to stop from the table list. You can select multiple items.
+
+3.  Select **_Stop_**.
+
+4.  If the **_Session Kill_** window appears, enter the password (**_Parameter Key_**).
+
+    ![Session Kill](/img/db-kill-session-confirm.png)
+
+5.  Select **_Apply_**.
+
+The selected session is stopped.
+
+:::note
+
+Through the _paramkey.txt_ file in the DBX agent installation path, you can find the password.
+
+:::
+
+<!--컬럼 정보 안내-->
+
+{@include: ../common-items/_db_postgresql-column.mdx}  

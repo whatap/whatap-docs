@@ -21,38 +21,56 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 1.  プロジェクトメニュー下位の**_管理_** > **_エージェント設定_**メニューを選択してください。
 
-2.  **_オプション作成_**タブで**_直接入力_**を選択してください。入力ウィンドウに次のように`logsink_enabled=true`オプションを追加してください。<br/>
+2.  **_オプション作成_**タブから**_直接入力_**を選択してください。入力ウィンドウに次のように`logsink_enabled=true`オプションを追加してください。 
+
     ![](https://img.whatap.io/media/images/log_java_config1.png)
 
 3.  ログモニタリングを適用するためにアプリケーションを再起動してください。
 
 ### 主なオプション
 
--   **hooklog_enabled** <span class='type'>Boolean</span><br/>
-        デフォルト値 `false`<br/>
-        Logライブラリを横取りしてログモニタリングを活性化します。\
+-   **hooklog_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Logライブラリをhookingしてログモニタリングを活性化します。  
+
     :::caution
-    アプリケーション実行前に_whatap.conf_にこのオプションが活性化されていれば、その後のログモニタリングのOn/Offを`logsink_enabled`設定により動的に制御できます。
-    アプリケーション実行前に`logsink_enabled`オプションが`true`に設定されている場合、このオプションを別途設定しなくてもログモニタリングが可能です。
+
+    アプリケーション実行前に_whatap.conf_にこのオプションを活性化することで、その後ログモニタリングのOn/Offを`logsink_enabled`設定により動的に制御できます。
+    アプリケーション実行前に`logsink_enabled`オプションが`true`に設定された場合、このオプションを別途設定しなくてもログモニタリングが可能です。
+
     :::
+
     :::note
-    今後ログモニタリングを活用する可能性がある場合は、事前にこのオプションを必ず設定することをお勧めします。
+
+    今後ログモニタリングを活用する可能性がある場合は、事前にこのオプションを設定することをお勧めします。
+
     :::
 
--   **logsink_enabled** <span class='type'>Boolean</span><br/>
-        デフォルト値 `false`<br/>
-        Logモニタリング機能をOn/Offします。\
+-   **logsink_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Logモニタリング機能をOn/Offします。
+
     :::caution
-    アプリケーション実行前に_whatap.conf_に`hooklog_enabled`オプションが設定されていれば、このオプションを通じてログモニタリングのOn/Offを動的に制御することができます。
-    ::: 
 
--   **logsink_zip_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値 `true`<br/>
-      Logデータに対して転送データの圧縮有無を設定します。 
+    アプリケーション実行前に_whatap.conf_に`hooklog_enabled`オプションが設定されている場合、このオプションを通じてログモニタリングのOn/Offを動的に制御することができます。
 
--   **logsink_trace_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値 `false`<br/>
-      LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
+    :::
+
+-   **logsink_zip_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    Logデータ転送データの圧縮有無を設定します。 
+
+-   **logsink_trace_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
 
 ## ログモニタリングの活性化
 
@@ -63,16 +81,3 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 {@include: ../common-items/_log-java-start.mdx} 
 
 {@include: ../common-items/_log-active-note.mdx} 
-
-<!-- 最新内容の確認 -->
-
-<!-- 
-
-プロジェクト管理者のみがログモニタリング設定を修正できます。
-
-トグルボタンをオンにすると、ログモニタリングが活性化されます。
-活性化した日から15日間無料で体験できます。
-
-トグルボタンをオフにすると、ログモニタリングが非活性化されます。
-これ以上ログを保存しません。
--->

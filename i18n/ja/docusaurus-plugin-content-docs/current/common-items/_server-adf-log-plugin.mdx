@@ -32,20 +32,21 @@ sudo service whatap-infra restart
 
 ### Windows Powershell
 
-```bash title='Windows Powershell (관리자 권한)' {6-11,13,14} showLineNumbers
+```bash title='Windows Powershell' {6-11,13,14} showLineNumbers
+# 管理者権限が必要
 New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
 
 $contentToAdd = @"
 [[inputs.logsink]]
 category = "serverlog"
-## ログ発生量統計の別途データとしての送信有無
+## ログ発生量統計の個別データとしての送信有無
 stats_enabled = true 
-## ログ発生量の統計カテゴリ
+## 対数発生量の統計カテゴリ
 stats_category = "logsink_stats"
-## ログファイルパス（path）にアスタリスク（*）が含まれ、除外するログ非対象のファイル名を設定 
+## ログファイルパス(path)にアスタリスク(*)が含まれ、除外するログ非対象ファイル名の設定 
 excludeNames = [ ".gz",".zip" ] 
 [[inputs.logsink.file]]
-## ログファイル指定時、日付パターン（strftime.org）指定可能
+## ログファイル指定時、日付パターン(strftime.org)指定可能
 path = "c:\\whatap\\logs%Y-%m-%d_.log"
 disabled = false
 encoding = "euc-kr"
@@ -76,7 +77,7 @@ Restart-Service "Whatap Infra"
 
 -   `excludeNames`：ログのファイルパス（path）にアスタリスク（\*）が含まれた場合、ログの非対象ファイルを除外するようにファイル名を設定できます。コンマ（,）を区切り文字として複数回設定できます。
 
-    ```ini title='예시'
+    ```ini title='Example'
     excludeNames = [ ".gz",".zip" ]
     ```
 

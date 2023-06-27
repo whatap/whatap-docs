@@ -13,12 +13,13 @@ Auto Scale環境でエージェント名を自動付与すると、Scale Outが�
 **SILENT_SHUTDOWN**イベントをWhaTapサーバに転送します。その後、1分以内にエージェントがシャットダウンすると、WhaTapサーバはリストから該当Javaエージェントをすぐに削除します。inactiveイベントも発生させません。
 
 :::note
-Tomcat의 경우 _shutdown.sh_ 파일에 설정할 수 있습니다.
+
+Tomcatの場合、_shutdown.sh_ファイルに設定できます。
 
 ```bash title=$TOMCAT_HOME/bin/shutdown.sh
 touch $WHATAP_HOME/whatap_{java-process-pid}.shutdown
 ```
 
-<!-- 관련 https://desk.channel.io/#/channels/6280/user_chats/63bfcb1a3962bededb99 -->
-
 :::
+
+<!-- 관련 https://desk.channel.io/#/channels/6280/user_chats/63bfcb1a3962bededb99 -->

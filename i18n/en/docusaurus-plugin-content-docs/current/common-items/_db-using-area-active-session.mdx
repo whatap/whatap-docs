@@ -1,12 +1,26 @@
 ## Using the active session area
 
-Through **_Active Sessions_** at the bottom of the screen, you can see the real-time active sessions. 
+Through **_Active Sessions_** at the bottom of the screen, you can see the real-time active sessions. The following provides the guide for the button on the upper right of the table.
+
+<Xclude product='postgresql'>
 
 -   ![Stop icon](/img/ico-pause.svg): You can stop changing the data collected in real time. To restart it again, select ![Start icon](/img/ico-play-grey.svg).
+
+</Xclude>
 
 -   ![Refresh icon](/img/ico-refresh.svg): The list of tables is refreshed.
 
 -   ![Column icon](/img/ico-column.svg): The column header entries in the table can be displayed or hidden.
+
+<InDoc product='postgresql'>
+
+-   ![Filter icon](/img/ico-filter.svg): Using the column header entries in the table, the list can be filtered.
+
+-   ![Session Kill icon](/img/ico-kill-session.svg): The active session can be stopped.
+
+</InDoc>
+
+<Xclude product='postgresql'>
 
 -   ![Filter icon](/img/ico-filter.svg): You can filter the list based on the column header entries in the table. After selecting the button, you can set the conditions in each header column such as **_Includes_**, **_Excludes_**, **_Equal_**, and **_Unequal_**.
 
@@ -17,3 +31,5 @@ Through **_Active Sessions_** at the bottom of the screen, you can see the real-
     :::
 
 -   ![Download icon](/img/ico-download.svg): You can download the content of the table as a CSV file.
+
+</Xclude>

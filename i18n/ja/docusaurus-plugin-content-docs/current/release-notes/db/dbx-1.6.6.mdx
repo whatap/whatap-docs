@@ -1,0 +1,57 @@
+---
+id: dbx-1_6_6
+title: DBX 1.6.6
+toc_max_heading_level: 2
+---
+
+## PostgreSQL
+
+-   <Status>Feature</Status> <code>oldest_cur_xid</code>, <code>per_to_wraparound</code>, <code>per_to_emergency_autovac</code>メトリクス追加 (2023-2-2)
+
+-   <Status>Feature</Status> <code>replication_lag</code>メトリクス追加 (2023-3-13)
+
+## Oracle
+
+-   <Status>Feature</Status> <UI>SQL統計</UI>メニューで<code>sql_id</code>追加(2023-2-3)
+
+-   <Status>Feature</Status>ロックセッション（lock session）収集可否オプションを追加 (2023-3-21)
+
+    ```ini title=whatap.conf
+    lock=0 # off
+    lock=1 # on
+    ```
+
+## MySQL
+
+<Status>Fixed</Status> <code>active session</code>収集時に発生するエラーを修正 (2023-3-28)
+
+## Redis
+
+-   <Status>Fixed</Status>connectionが終了しないエラーを修正 (2023-3-21)
+
+-   <Status>Fixed</Status>メトリクスが出力されないエラーを修正 (2023-4-13)
+
+## Tibero
+
+-   <Status>Feature</Status>セッションメトリクス（<code>sesstat</code>）収集時tibero APIを使用する方式を追加して速度と負荷を改善 (2023-1-31)
+
+    -   使用方法：DBサーバーにdbxインストールし、_libTbmonXX.so _をセットアップ
+
+        ```ini title=whatap.conf
+        use_tbstat=1
+        ```
+
+    -   収集するセッションメトリクスに対応するカラム項目は次のとおりです。
+
+        -   **_logical_reads_**
+        -   **_physical_reads_**
+        -   **_block_updates_**
+        -   **_parse_count_total_**
+        -   **_parse_count_hard_**
+
+    -   次のメニューで確認できます。
+
+        -   **_ダッシュボード_**の**_Active Sessions_**
+        -   **_統計/レポート_** > **_SQL統計_**
+
+-   <Status>Feature</Status> SQL統計メニューで`sql_id`追加 (10216-2-3)

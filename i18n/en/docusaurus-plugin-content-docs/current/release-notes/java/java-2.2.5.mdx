@@ -1,0 +1,44 @@
+---
+id: java-2_2_5
+title: Java Agent 2.2.5
+toc_max_heading_level: 2
+---
+
+May 30, 2023
+
+:::caution
+
+**Starting with Java Agent 2.2.5, the previous _instrument_ folder cannot be used.**
+
+-   The _instrument_ folder is available up to the version 2.2.4.
+
+-   The _instrument_ folder is scheduled to be replaced with the _weaving_ folder.
+
+-   The open source tracing plugin used in _instrument_ does not guarantee normal operation in the new _weaving_ folder.
+
+:::
+
+## New Feature <sup><Status>New</Status></sup>
+
+-   Added the function to perform the latest spring-boot synchronous tracing.
+
+    -   Added the function to trace webflux + "tomcat9, tomcat10, undertow, netty."
+
+    -   Added the function to trace the r2dbc-mysql + "jasync, dev.miku" driver.
+
+    ```ini title='whatap.conf'
+    # In case of spring-boot-2.7 or later
+    weaving=tomcat9,spring-boot-2.7.x
+
+    # In case of spring-boot-3.0 or later
+    weaving=tomcat10,spring-boot-3.x
+    springboot_tomcat10_enabled=true
+    ```
+
+## Update <sup><Status>Change</Status></sup>
+
+-   Converted the **webflux** and **r2dbc** open source plugins to embedded plugins.
+
+## Bug Fixing <sup><Status>Fixed</Status></sup>
+
+-   Fixed the bug where the same service is called twice upon using the asynchronous tomcat (e.g. **webflux** + **tomcat**).

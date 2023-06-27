@@ -4,6 +4,12 @@ Alerts are sent through event condition settings per metric in the database. By 
 
 ![Event Setting - Database](/img/set-event-db.png)
 
+## Default notification: Connection Failed
+
+Even without configuring an alert, if there are 15 or more consecutive failures for database connection from the agent, the following notification is sent. Note that this could happen due to database shutdown, network issues, or account and role issues.
+
+<ImgLang img='db-default-alert-connection-failed.svg' desc='Connection Failed'/>
+
 ## Setting the alert
 
 Depending on the user-selected **_metrics_** item, if the events that meet the condition of the entered **_Fatal_** and **_Warning_** item count occur as many as **_Number of detections_**, you can set to send the alert.
@@ -41,3 +47,11 @@ If you use the **_Copy alert policy_** function in a state where there are alert
 This can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert is generated. In addition, they are not recorded in **_Event History_**.
 
 In **_Disabled Database Alert_**, select a desired time and then select the toggle button on the right to turn on or off the function.
+
+:::note
+
+When the **_Disabled Database Alert_** option is enabled, if the agent fails to receive data during the set time period, the **_INACTIVE MONITORING AGENT_** alert appears.
+
+<ImgLang img='db-set-event-disable-alert.png' desc='INACTIVE MONITORING AGENT'/>
+
+:::

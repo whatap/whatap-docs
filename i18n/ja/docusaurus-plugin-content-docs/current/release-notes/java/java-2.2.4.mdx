@@ -1,0 +1,91 @@
+---
+id: java-2_2_4
+title: Java Agent 2.2.4
+toc_max_heading_level: 2
+---
+
+2023年5月25日
+
+## 新機能 <sup><Status>New</Status></sup>
+
+-   トレースURL名の修正機能の追加
+
+    ```ini title='whatap.conf'
+    # 呼び出しメソッドのフルパス、ワイルドカード(*)使用可能
+    hook_tx_name_patterns=ab.cd.ef.GH.ij
+
+    # class, method, string, returnのうち1つを選択
+    hook_tx_name_mode=method
+    ```
+
+    例）特定URLの呼び出し + 特定methodを呼び出す方法
+
+    -   `io.home.test.TestController.test1`に登録したURLの呼び出し時、`test100000()`メソッドを呼び出す場合：`/api/100000+test1+test100000`
+
+-   トレースデータサンプリング機能の追加
+
+    ```ini title='whatap.conf'
+    # デフォルト値
+    # トレース データ サンプリングの収集有無
+    trace_sampling_enabled=false
+
+    # トレースデータサンプリング数
+    # 指定したサンプリング数を超えるデータは送信しない
+    # 5秒ごとに初期化
+    trace_sampling_tps=10000
+
+    # トレースデータの転送有無
+    trace_send_enabled=true
+
+    # トレースデータサンプリングデバッグオプション
+    debug_trace_samling=false
+    ```
+
+-   収集するSQLデータの無視機能の追加
+
+    ```ini title='whatap.conf'
+    # 登録したSQL hash値と一致するSQL文は無視
+    ignore_sql_hash_set=
+    ```
+
+-   特定サービスで特定のexceptionの無視機能を追加
+
+    ```ini title='whatap.conf'
+    # exception:service_url登録
+    # コンマ(,)を区切り文字として使用
+    # 例java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+    ignore_exception_tx_pattern=
+    ```
+
+## アップデート <sup><Status>Change</Status></sup>
+
+-   Javaエージェント組み込みオープンソースプラグインの**webflux-5.x**、**webflux-6.x**アップデート
+
+    **spring-r2dbc**と連携追跡するため**spring-webflux**プラグインを修正
+
+-   Remote Callにdriver情報を追加 例）RabbitMQ、AMQP、Kafka、···
+
+-   Http Callにdriver情報を追加 例）ApacheClient、UrlCon、Webflux、…
+
+-   LogSinkの`#RemoteTrace`カテゴリ名を`#RemoteAccessStatus`に修正
+
+-   logsink on/off機能を再起動せずに使用できるように修正
+    ```ini title='whatap.conf'
+    # デフォルト値
+    hooklog_enabled=true
+    ```
+
+-   HttpURLConnection、WebLogic URLConnectionを最初の呼び出し時にも追跡できるように機能を追加
+    ```ini title='whatap.conf'
+    # デフォルト値
+    hook_HttpURLConnection_startup_enabled=false
+    hook_HttpURLConnection_weblogic_startup_enabled=false
+    ```
+
+## バグ修正 <sup><Status>Fixed</Status></sup>
+
+-   SQLパラメータ**BigDecimal**収集問題を修正
+
+-   **ECS**環境で存在しないキー値の呼び出し時のエラーを修正
+
+-   **Webflux**使用時に**RemoteIP**ベースのユーザーカウントバグを修正

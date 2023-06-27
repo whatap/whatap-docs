@@ -8,35 +8,58 @@ tags:
 
 アプリケーション環境によっては、エージェントのデフォルト値だけでは目的のレベルの情報を取得できない場合があります。以下は、よく使用しているもののセキュリティなどの理由でエージェントの基本設定から除外したオプションです。必要に応じて、以下のオプションを追加して適用できます。
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>SQLパラメータを収集します。
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>HTTPパラメータを収集します。
+    デフォルト値 `true`
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>HTTP Header情報を収集します。
+    SQLパラメータを収集します。
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span><br/>
-    デフォルト値 `X-Forwarded-For`<br/>ユーザーのIP情報をHTTPヘッダーのキーから抽出します。
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
--   **trace_user_method** <span class='type'>Boolean</span><br/>
-    デフォルト値 `cookie`<br/>ユーザー数の追跡をクッキーベースにします。
+    デフォルト値 `true`
 
--   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>SAP JCOを使用する場合、SAP Functionを追跡します。
+    HTTPパラメータを収集します。
 
--   **weaving_reserved** = `jedis-3.2` & **jedis_show_parameter** = `true`<br/>
+-   **profile_http_header_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    HTTP Header情報を収集します。
+
+-   **trace_http_client_ip_header_key** <span class='type'>String</span>
+
+    デフォルト値 `X-Forwarded-For`
+
+    ユーザーIP情報をHTTPヘッダーのキーから抽出します。
+
+-   **trace_user_method** <span class='type'>Boolean</span>
+
+    デフォルト値 `cookie`
+
+    ユーザー数の追跡をクッキーベースに行います。
+
+-   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    SAP JCOを使用する場合は、SAP Functionを追跡します。
+
+-   **weaving_reserved** = `jedis-3.2` & **jedis_show_parameter** = `true`
+
     Jedisライブラリを使用する場合は、Redisレスポンス時間とパラメータを追跡します。
 
--   **weaving_reserved** = `spring-mongodb-2.2` & **mongo_show_parameter** = `true`<br/>
-    Spring MongoDBを使用する場合は、レスポンス時間とパラメータを追跡します。
+-   **weaving_reserved** = `spring-mongodb-2.2` & **mongo_show_parameter** = `true`
 
--   **weaving_reserved** = `webflux-5.2`<br/>
+    Spring MongoDBを使用する場合、レスポンス時間とパラメータを追跡します。
+
+-   **weaving_reserved** = `webflux-5.2`
+
     WebFlux環境をモニタリングします。
 
--   **weaving_reserved** = `okhttp-2.7` & **weaving_reserved** = `okhttp3`<br/>
-    OkHttpを使用した外部呼び出しを追跡します。
+-   **weaving_reserved** = `okhttp-2.7` & **weaving_reserved** = `okhttp3`
 
--   **weaving_reserved** = `reactor-rabbitmq-1.2` & **weaving_reserved** = `spring-rabbitmq-2.1`<br/>
+    OkHttp使用した外部呼び出しを追跡します。
+
+-   **weaving_reserved** = `reactor-rabbitmq-1.2` & **weaving_reserved** = `spring-rabbitmq-2.1`
+
     RabbitMQ呼び出しを追跡します。

@@ -14,9 +14,7 @@ WhaTapエージェントは、エージェントごとに必要な設定を_what
 
 ## 基本設定
 
-<!-- 담당자 확인 필요 -->
-
-```ini title='whatap.conf 설정'
+```ini title='whatap.conf'
 whatap.home=.
 whatap.config=whatap.conf
 ```
@@ -27,7 +25,7 @@ whatap.config=whatap.conf
 
 エージェントがデータを収集し、サーバーにデータを転送するためには、少なくともアクセスキーとサーバーアドレスが設定されている必要があります。
 
-```ini title='whatap.conf 최소 설정 예시'
+```ini title='whatap.conf'
 license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
 whatap.server.host=10.10.0.1
 ```
@@ -53,16 +51,18 @@ whatap.server.port=6600 # デフォルト値
 
 1つのサーバーの中で複数のアプリケーションを運営する場合、各アプリケーション別の設定ファイルを別途管理するには、_whatap.conf_ファイル名を変更し、開始スクリプトにJVMオプションを追加してください。
 
-```bash title='A 서비스'
+```bash title='Service A'
 -Dwhatap.config=whatap_Aservice.conf
 ```
 
-```bash title='B 서비스'
+```bash title='Service B'
 -Dwhatap.config=whatap_Bservice.conf
 ```
 
 :::caution
+
 _whatap.conf_設定ファイルは必ず`${WHATAP_HOME}`パスに位置する必要があります。
+
 :::
 
 import ProdImg from '@site/src/components/ChangeImgName.js';

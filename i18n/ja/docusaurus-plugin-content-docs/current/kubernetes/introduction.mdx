@@ -60,9 +60,11 @@ Kubernetesは、コンピューティングリソースを効率的に使用す�
 Kubernetesモニタリングの対象は、KubernetesクラスターとKubernetes上で実行中のアプリケーションです。
 
 -   Kubernetesクラスターモニタリング
+
     -   個別コンテナのCPU、Memory、Disk(Volume)、Network
     -   Namespace、Deployment、ReplicaSet、Podなどのサービスを構成するKubernetesの構成要素
     -   個別Node（ホスト）のCPU、Memory、Disk、Network
+
 -   Kubernetesで実行中のアプリケーションモニタリング：Java、Node.js、Pythonなど
 
 続いて、説明するモニタリング手順もクラスターモニタリングのための手順とアプリケーションモニタリングのための手順に分けて進めます。
@@ -82,11 +84,15 @@ Kubernetesモニタリングの対象は、KubernetesクラスターとKubernete
 1.  (選択事項)クラスタープロジェクト内に多数のNamespaceが存在する場合、ユーザーはWhaTapモニタリングサービスで各ネームスペース（Namespace）プロジェクトに分離できます。[次の文書](create-name-space-project)を参考にしてください。
 
 :::tip
+
 Kubernetes Namespaceは、多数のチームとユーザーが存在する環境で単一クラスター内のリソースグループ隔離のためのメカニズムです。ユーザーKubernetesクラスター内のNamespace一覧は、`kubectl get namespace`コマンドで確認できます。
+
 :::
 
 :::note
+
 WhaTap Kubernetesサービスの**クラスタープロジェクト**は、**マスタープロジェクト**の新しい名前です。
+
 :::
 
 ### Kubernetesのアプリケーションモニタリング手順

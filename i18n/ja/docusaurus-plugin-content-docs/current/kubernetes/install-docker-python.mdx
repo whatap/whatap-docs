@@ -18,7 +18,7 @@ Dockerコンテナベースで実行されているPythonアプリケーショ�
 
 PythonアプリケーションのDockerイメージをビルドする場合、whatap-pythonパッケージをインストールします。
 
-```docker title='python 3.7 버전'
+```docker title='python ver 3.7'
 RUN pip3 install --upgrade whatap-python
 ```
 
@@ -26,22 +26,20 @@ RUN pip3 install --upgrade whatap-python
 
 1.  Pythonアプリケーション起動時、WhaTapエージェントがInjectionできるように、アプリケーションの起動スクリプトを変更します。 
 
-  設定ファイルおよびログ出力パスを環境変数`WHATAP_HOME`に設定します。
+    ログおよび設定ファイルのパスを`WHATAP_HOME`環境変数として設定してください。
 
-````
-```python
-export WHATAP_HOME=/whatap_conf
-```
-````
+    ```python
+    export WHATAP_HOME={로그 및 설정 파일 경로}
+    ```
 
-1.  設定ファイルを作成します。
+2.  `WHATAP_HOME`で設定したパスに_whatap.conf_ファイルを作成および設定するように次のコマンドを実行してください。
 
     ```bash
-    whatap-setting-config\
-    --host {収集サーバーIP}\
-    --license XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-    --app_name {アプリケーション名}\
-    --app_process_name {アプリケーションプロセス名}
+    whatap-setting-config \
+    --host {수집 서버 IP} \
+    --license {액세스 키} \
+    --app_name {사용자 지정 애플리케이션 이름} \
+    --app_process_name {프로세스 이름, 예시, uwsgi, gunicorn}
     ```
 
 :::caution
@@ -57,7 +55,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 ## Kubernetes環境変数およびボリューム
 
 <Tabs>
-<TabItem value='basic' label='기본' default>
+<TabItem value='basic' label='デフォルト' default>
 
 トランザクションでNodeおよびPod情報を収集するために`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
 
@@ -114,7 +112,7 @@ env:
 
 ```python
 # whatap-start-agent python manage.py runserver
-whatap-start-agent {アプリケーション開始コマンド}
+whatap-start-agent {アプリケーション起動コマンド}
 ```
 
 </TabItem>
@@ -134,7 +132,7 @@ whatap-start-agent {アプリケーション開始コマンド}
 
 サービス実行ファイル(_/etc/init/uwsgi.conf_)を修正して、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
 
-```python title='/etc/init.d/uwsgi 예시'
+```python title='/etc/init.d/uwsgi'
 description "uWSGI application server handling myapp"
 start on runlevel {2345}
 stop on runlevel {!2345}
@@ -145,7 +143,7 @@ exec whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 exec env WHATAP_HOME={PATH} {絶対パス}/whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 ```
 
-```ini title='/etc/init/uwsgi.conf 예시'
+```ini title='/etc/init/uwsgi.conf'
 ...
 NAME="uwsgi"
 PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -181,7 +179,7 @@ whatap-start-agent {アプリケーション開始コマンド}
 
 サービス実行ファイル(_/etc/init/gunicorn.conf_)を修正し、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
 
-```python title='/etc/init.d/gunicorn 예시'
+```python title='/etc/init.d/gunicorn'
 description "Gunicorn application server handling myapp"
 start on runlevel {2345}
 stop on runlevel {!2345}
@@ -192,7 +190,7 @@ exec whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 exec env WHATAP_HOME={PATH} {絶対パス}/whatap-start-agent {YOUR_APPLICATION_START_COMMAND}
 ```
 
-```ini title='/etc/init/gunicorn.conf 예시'
+```ini title='/etc/init/gunicorn.conf'
 ...
 NAME="gunicorn"
 PATH=/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -218,7 +216,7 @@ do_start(){
 
 サービス実行ファイル(_/etc/supervisor/conf.d/supervisor.conf_)を修正し、エージェント開始コマンドとともにアプリケーションを開始してください。ユーザー環境によって、サービス実行ファイルのパスは異なる場合があります。
 
-```ini title='supervisor.conf 예시'
+```ini title='supervisor.conf'
 [program:app-uwsgi]
 environment = WHATAP_HOME={PATH}
 command = {絶対パス}/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blog/backend/config/uwsgi.ini

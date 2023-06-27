@@ -52,11 +52,11 @@ spec:
 | ------------- | ----------- | ----------- | ----- |
 | コンテナ1         | CPU         | Request     | 100m  |
 | ^             | ^           | Limit       | 200m  |
-| ^             | Memory      | Request     | 64Mi  |
+| ^             | メモリ         | Request     | 64Mi  |
 | ^             | ^           | Limit       | 128Mi |
 | コンテナ2         | CPU         | Request     | 250m  |
 | ^             | ^           | Limit       | 500m  |
-| ^             | Memory      | Request     | 128Mi |
+| ^             | メモリ         | Request     | 128Mi |
 | ^             | ^           | Limit       | 256Mi |
 
 様々なコンテナのリソース設定情報や現在の使用量を簡単に把握することは容易ではありません。それで、WhaTap Kubernetesモニタリングサービスは、特定の単一コンテナ、ユーザーが選択した複数のコンテナ、またはDeployment全体を対象にリソース設定および現在の使用量を簡単に確認できる機能を提供します。
@@ -80,14 +80,16 @@ CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです�
 | CPU    | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | コンテナCPU使用率                 |
 | ^      | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | コンテナCPU要請対比使用率             |
 | ^      | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | CPU Limit基準CPUの全体使用率       |
-| Memory | MemWs          | **_Container Memory Working Set (byte)_**         | コンテナメモリworking set         |
+| メモリ    | MemWs          | **_Container Memory Working Set (byte)_**         | コンテナメモリworking set         |
 | ^      | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | コンテナメモリの要請量基準workingset使用量 |
 | ^      | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | コンテナメモリ割当量基準working set使用量 |
 
 :::note
-Pod가 실행 중인 노드에 사용 가능한 리소스가 충분하면 컨테이너에 설정된 Request 이상의 리소스를 사용할 수 있습니다. 와탭 메트릭 중 **_Container CPU Usage by Request (%)_**, **_Container Memory Working Set by Request (%)_**의 값이 100%를 넘어설 수 있는 이유입니다.
 
-例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ（Pod）が実行中のNodeの総メモリは4GiBであり、そのNodeに他のPodがない場合、このコンテナは128MiB以上のメモリを使用できます。
+Podが実行中のノードに使用可能なリソースが十分であれば、コンテナに設定されたRequest以上のリソースを使用できます。WhaTapメトリックのうち、**_Container CPU Usage by Request (%)_**、**_Container Memory Working Set by Request (%)_**の値が100%を超える可能性がある理由です。
+
+例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ(Pod)が実行中のNodeの総メモリは4GiBであり、そのNodeに他のPodがない場合、このコンテナは128MiB以上のメモリを使用できます。
+
 :::
 
 ## その他のメトリクス

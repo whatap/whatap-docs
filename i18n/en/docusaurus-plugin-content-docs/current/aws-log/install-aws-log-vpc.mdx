@@ -1,0 +1,141 @@
+---
+id: install-aws-log-vpc
+title: Configuring VPC in WhaTap Forwarder
+description: It guides you to additional settings for WhaTap Forwarder to be available in the VPC environment.
+toc_max_heading_level: 2
+tags:
+  - AWS Log
+  - Installation
+---
+
+:::note
+
+This document guides you to additional settings required in the <span class='vpcbold'>VPC</span> environment to use **WhaTap Forwarder**. First install **WhaTap Forwarder**. For more information, see [the following](../aws-log/install-aws-log#install-whatap-forwarder).
+
+:::
+
+**WhaTap Forwarder** collects the AWS logs for AWS Cloudwatch LogGroup and S3. Use the AWS Lambda function for installation. AWS Lambda does not start from <span class='vpcbold'>VPC</span> (Virtual Private Cloud) by default. However, with the following additional settings, **WhaTap Forwarder** can be started in the <span class='vpcbold'>VPC</span> environment.
+
+## Modifying the Lambda execution role
+
+1.  On the AWS Lambda Function console, select **WhaTap Forwarder**.
+
+2.  On the **\*Configuration** tab, select **_Execution role_** in **_Permissions_** to go to the AWS IAM console.
+
+  ![Lambda Execution Role](/img/whatap-forwarder-vpc-lambda.png)
+
+1.  Go to **_Permissions policies_** under the IAM console's **_Permissions_** tab. 
+
+2.  Select **_forwarderpolicy_** in the policy list to go to the policy editing screen.
+
+  ![IAM Console](/img/whatap-forwarder-vpc-aws-iam.png)
+
+1.  Select **_JSON_** tab and then copy and paste the following policy. The policy creates, defines, and deletes _ENI_.
+
+```json title='IAM Policy'
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:{AWS REGION}:{AWS ACCOUNT ID}:log-group:/aws/lambda/*",
+            "Effect": "Allow"
+        },
+        
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3-object-lambda:Get*",
+                "s3-object-lambda:List*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ]
+}
+
+```
+
+## VPC configuration
+
+<div class ='vpcb'>
+
+1.  On the AWS Lambda Function console, select **WhaTap Forwarder**.
+
+2.  In **_VPC_** under the **_Configuration_** tab, select **_Edit_** to go to the VPC editing screen.
+
+  ![VPC Editing](/img/whatap-forwarder-vpc-edit.png)
+
+1.  Seeing the following, set **_VPC_**, **_Subnets_**, and **_Security groups_**, and then select **_Save_** to save the results.
+
+  ![Subnet and Security Group](/img/whatap-forwarder-vpc-sg.png)
+
+  :::note
+
+  **Subnets**
+
+```
+* Connect the Internet via **IGW** using the **Public IP** of **NAT Gateway**.
+
+* To connect the Internet via **IGW**, **Public IP** is required. Lambda's *ENI* can allocate the **Public IP**.
+
+* The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
+
+* **WhaTap Forwarder** for **Private Subnet** and **Public Subnet** 
+
+![Subnet sc](/img/whatap-forwarder-subnet.png)
+```
+
+  :::
+
+  :::note
+
+  **Security groups**
+
+```
+* A security group with the **outbound** open is required.
+```
+
+  :::
+
+</div>
+
+<!-- 
+
+#### Subnets
+
+* **NAT Gateway**의 **Public IP**로 **IGW**를 통해 인터넷에 접속하세요.
+
+* To connect the Internet via **IGW**, **Public IP** is required. *ENI* of Lambda cannot allocate **Public IP**.
+
+* The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
+
+* **WhaTap Forwarder** for **Private Subnet** and **Public Subnet** 
+
+  ![Subnet sc](/img/whatap-forwarder-subnet.png)
+
+#### Security groups
+
+* A security group with the **outbound** open is required.
+
+-->
+
+<!-- 
+
+  ![보안 그룹](/img/whatap-forwarder-vpc-sg-outbound.png)
+
+-->

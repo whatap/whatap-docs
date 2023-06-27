@@ -18,11 +18,6 @@ PHPモニタリングサービスを一時停止するには、PHP拡張モジ�
 
     _whatap.ini_ファイルの`extension=`構文をコメント処理してください。コメントはセミコロン（_;_）として設定してください。
 
-    <!--
-    :::note
-    주석은 세미콜론(;)으로 설정하세요.
-    ::: -->
-
     ```bash
     $ sudo vi whatap.ini
 
@@ -32,10 +27,12 @@ PHPモニタリングサービスを一時停止するには、PHP拡張モジ�
     ;extension=whatap.so
     ```
 
-    手動設定で_php.ini_ファイルに直接設定した場合も同様に「extension=」構文をコメント処理してください。 
+    手動設定で_php.ini_ファイルに直接設定した場合も同様に` extension=` 構文をコメント処理してください。 
 
     :::note
-    {@include: ../common-items/_php-restart-apache.mdx} 
+
+    ApacheまたはPHP-FPMのサービスを開始します。
+
     :::
 
 2.  whatap-phpサービス（サービス）を停止してください。
@@ -63,23 +60,3 @@ PHPモニタリングサービスを一時停止するには、PHP拡張モジ�
 
     </TabItem>
     </Tabs>
-
-<!--
-**Redhat/CentOS**
-
-```bash
-$ sudo service whatap-php stop
-```
-
-**Debian/Ubuntu**
-
-```bash
-$ sudo service whatap-php stop
-```
-
-**FreeBSD**
-
-```bash
-$ service whatap_php stop
-```
--->

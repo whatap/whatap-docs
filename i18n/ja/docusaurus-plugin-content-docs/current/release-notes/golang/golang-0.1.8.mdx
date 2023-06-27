@@ -1,5 +1,5 @@
 ---
-id: golang-0.1.8
+id: golang-0_1_8
 title: Golang Agent 0.1.8
 toc_max_heading_level: 2
 ---
@@ -9,7 +9,7 @@ import UI from '@site/src/components/UItext';
 
 リリーズ：2022-01-19
 
-## ベータ - アップデート
+## ベータ版 - アップデート
 
 ### 同時接続ユーザーの収集設定の追加
 
@@ -19,19 +19,23 @@ import UI from '@site/src/components/UItext';
 
 #### 設定
 
-`trace_user_header_ticket`\
-#Default : ""#\
-#Type : string#
+-   `trace_user_header_ticket`
 
-設定されたHTTP Headerの値を固有のユーザー情報として選択します。
+    \#Default : ""#
 
-`trace_user_cookie_keys`\
-#Default : ""#\
-#Type : string#
+    \#Type : string#
 
-設定されたCookieの値を固有のユーザー情報として選択します。コンマ（,）を区切り文字として複数の名前を設定できます。設定された順に検索します。
+    設定されたHTTP Headerの値を固有のユーザー情報として選択します。
 
-### アクティブステータス
+-   `trace_user_cookie_keys`
+
+    \#Default : ""#
+
+    \#Type : string#
+
+    設定されたCookieの値を固有のユーザー情報として選択します。コンマ（,）を区切り文字として複数の名前を設定できます。設定された順に検索します。
+
+### アクティブ状態
 
 アクティブステータス機能を追加します。 
 
@@ -87,7 +91,7 @@ http transportでのRoundTripper使用に対応します。パッケージの`sq
 
 伝達するcontextは`trace.Start()`を通じる必要があり、whatap TraceCtx情報が必要です。
 
-```go title='설치 안내 '
+```go title='Install guide '
 import (
   "github.com/whatap/go-api/instrumentation/net/http/whataphttp"
 )

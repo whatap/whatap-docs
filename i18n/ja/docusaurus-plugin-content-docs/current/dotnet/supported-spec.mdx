@@ -28,9 +28,47 @@ tags:
 
     -   ADO.NET（Database）
 
+## サーバ対応環境分析方法
+
+### 分析ツールダウンロード
+
+エージェントをインストールするサーバーの対応環境がよくわからない場合は、次のリンクを通じて分析ツールをダウンロードしてください。
+
+-   <https://repo.whatap.io/windows/WhaTapDotnetScan.exe>
+
+-   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
+
+### 分析ツールの使用
+
+1.  ダウンロードした分析ツールを実行してください。
+
+    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
+
+2.  ![数字1](/img/number-01.png) **分析**(**Scan**)ボタンをクリックしてください。
+
+3.  ![数字2](/img/number-02.png)領域でウィンドウサーバーのバージョンが2012以降であることを確認してください。
+
+4.  ![数字3](/img/number-03.png)領域で**IIS 8.0**バージョン以降、**.NET Framework 4.5**バージョン以降であることを確認してください。
+
+    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
+
 :::note
-エージェントをインストールするサーバーの対応環境がよくわからない場合は、分析ツールを[ダウンロード](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/windows/whatap_dotnet_scan.zip)して確認してください。
+
+-   **.NET Framework**は、4.8.1バージョン以降に対応しています。
+
+-   **.NET Core**バージョンは、開発中です。
+
 :::
+
+### ユーザーのアプリケーションバージョン確認
+
+サーバーの環境が対応バージョンを満たしていても、ユーザーのアプリケーションが**.NET Framework**ではなく**.NET Core**バージョンで開発された場合、.NETモニタリングには対応しません。
+
+ユーザーのアプリケーションバージョンは、**IIS Manager**で以下のように確認できます。
+
+![IIS Manager](/img/apm-dotnet-application-pool.png)
+
+**IIS Manager**で**Application Pools**をクリックしてください。**Application Pools**一覧で使用するアプリケーションに該当するプール(Pool)の**.NET Core**が4.0バージョンなのか確認してください。
 
 ## 共通サポート環境
 
@@ -40,8 +78,8 @@ tags:
 
 ### ファイアウォール
 
-{@include: ../getting-started/_proxy.mdx}  
+{@include: ../getting-started/_proxy.mdx}
 
 ### モバイルアプリ
 
-{@include: ../getting-started/_mobile-app.mdx}  
+{@include: ../getting-started/_mobile-app.mdx} 

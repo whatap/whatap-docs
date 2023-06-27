@@ -36,7 +36,7 @@
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count}個の文書が",
+    "message": "{count}個人の文書が",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
@@ -44,11 +44,8 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "すべてのタグ表示",
+    "message": "すべてのタグを表示",
     "description": "The label of the link targeting the tag list page"
-  },
-  "theme.SearchBar.searchInContext": {
-    "message": "{context}からすべての結果を見る"
   },
   "theme.SearchBar.seeAll": {
     "message": "すべての結果を見る"
@@ -65,9 +62,6 @@
     "message": "文書検索",
     "description": "The search page title for empty query"
   },
-  "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
-  },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "総 {count} 件の文書を発見",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -80,7 +74,7 @@
     "message": "WhaTap Docs"
   },
   "whatap_link_go": {
-    "message": "WhaTapホームページのショートカット"
+    "message": "WhaTapのホームページに移動します。"
   },
   "theme.ErrorPageContent.title": {
     "message": "ページエラーが発生しました。",
@@ -135,7 +129,7 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "{count}個の投稿",
+    "message": "{count}個人の投稿",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
@@ -190,7 +184,7 @@
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}への直リンク",
+    "message": "{heading}への直接リンク",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
@@ -230,7 +224,7 @@
     "description": "The copy button label on code blocks"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "最近のブログ文書を見る",
+    "message": "最近のブログ記事をを閲覧する",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.wordWrapToggle": {
@@ -246,11 +240,11 @@
     "description": "The ARIA label for the main navigation"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "このページで",
+    "message": "このページでは",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
-    "message": "詳細を見る",
+    "message": "詳細を確認",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
@@ -266,11 +260,11 @@
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "サイドバー非表示",
+    "message": "サイドバーを非表示にする",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "サイドバー非表示",
+    "message": "サイドバーを非表示にする",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
@@ -297,9 +291,6 @@
     "message": "サイドバー表示",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
-  "theme.SearchBar.noResultsText": {
-    "message": "結果が見つかりません。"
-  },
   "theme.ErrorPageContent.tryAgain": {
     "message": "もう一度、試してみてください。",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
@@ -314,5 +305,113 @@
   },
   "project_add_btn": {
     "message": "プロジェクト"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "検索ワードの消去",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "キャンセル",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "最近検索ページ",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "最近検索なし",
+    "description": "The text when no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "この検索を保存する",
+    "description": "The label for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "履歴からこの検索を削除",
+    "description": "The label for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "お気に入り",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "즐겨찾기에서 이 검색 지우기",
+    "description": "The label for remove favorite search button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "結果をもたらすことができません。",
+    "description": "The title for error screen of search modal"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "ネットワーク接続を確認してください。",
+    "description": "The help text for error screen of search modal"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "選択",
+    "description": "The explanatory text of the action for the enter key"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enterキー",
+    "description": "The ARIA label for the Enter key button that makes the selection"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "移動",
+    "description": "The explanatory text of the action for the Arrow up and Arrow down key"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "上向き矢印",
+    "description": "The ARIA label for the Arrow up key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "下向き矢印",
+    "description": "The ARIA label for the Arrow down key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "閉じる",
+    "description": "The explanatory text of the action for Escape key"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "ESCキー",
+    "description": "The ARIA label for the Escape key button that close the modal"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Search by",
+    "description": "The text explain that the search is making by Algolia"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "次の検索用語の結果はありません。",
+    "description": "The text explains that there are no results for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "次の内容を検索してみてください",
+    "description": "The text for the suggested query when no results are found for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Believe this query should return results?",
+    "description": "The text for the question where the user thinks there are missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Let us know.",
+    "description": "The text for the link to report missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "文書検索",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "検索ワードを入力してください",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "検索",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "新しい検索結果を読み込み中···",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Algolia로 검색",
+    "description": "The ARIA label for Algolia mention"
   }
 }

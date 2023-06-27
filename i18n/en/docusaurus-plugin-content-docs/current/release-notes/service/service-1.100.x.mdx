@@ -1,8 +1,28 @@
 ---
-id: service-1.100.x
+id: service-1_100_x
 title: Service 1.100.X
 toc_max_heading_level: 3
 ---
+
+## Service 1.100.22
+
+May 23, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Transaction Search</UI>, modified to display the minimum elapsed time and maximum elapsed time in the <UI>Elapsed Time</UI> field.</p>
+
+</div>
+
+## Service 1.100.21
+
+May 23, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In <UI>Agent Install</UI>, fixed the bug where the Chinese version is missing.</p>
+
+</div>
 
 ## Service 1.100.19
 
@@ -10,7 +30,17 @@ May 19, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, fixed the bug where the usage fee does not appear when there is no discount.</p>
+### `Common`
+
+-   <Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Preview Invoice</UI>, fixed the bug where the usage fee does not appear when there is no discount.
+
+-   <Status>Fixed</Status> Fixed the problem where the previous page does not appear because <code>org=undefined</code> has been entered in the query parameter when user clicks the profile icon, goes to <UI>Manage Account INFO.</UI>, and then tries to go to the previous page (by clicking Back).
+
+* * *
+
+### `Log`
+
+-   <Status>Change</Status> In <UI>Log</UI> > <UI>Log Search</UI>, modified to enter the value, `none` as the key when adding a category while only a key has been entered in the filter with no value assigned.
 
 </div>
 

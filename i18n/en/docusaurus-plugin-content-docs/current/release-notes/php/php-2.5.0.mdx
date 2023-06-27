@@ -1,5 +1,5 @@
 ---
-id: php-2.5.0
+id: php-2_5_0
 title: PHP Agent 2.5.0
 toc_max_heading_level: 2
 ---
@@ -51,17 +51,17 @@ Added the alias function that does the same as odbc_exec.
 
 ### Excluding the transaction collection for the set URI and HTTP method
 
-`ignore_http_method_urls`
+-   `ignore_http_method_urls`
+
+    Default : ""  
+
+    Type: string
+
+-   `ignore_http_method`
 
     Default : ""
 
-    Type : String
-
-`ignore_http_method`
-
-    Default : ""
-
-    Type : String  
+    Type: string
 
 ```
 whatap.ignore_http_method_urls=/index, /path
@@ -74,10 +74,11 @@ With `query_string_enabled`, you can add the Get parameter to the URI to display
 
 If only the specified parameters are collected, the service URL is simplified and more accurate information can be checked in the statistical data.
 
-`query_string_keys`
+-   `query_string_keys`
 
--   Default : ""  
--   Type: string
+    -   Default : ""
+
+    -   Type: string
 
 Specify multiple parameters by separating them with comma (,). The collected parameters appear in the same setting sequence. 
 

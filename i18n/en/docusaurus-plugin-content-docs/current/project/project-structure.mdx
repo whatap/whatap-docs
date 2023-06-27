@@ -10,7 +10,7 @@ In the WhaTap monitoring service, you can easily manage multiple projects with t
 
 ## Hierarchical structure
 
-![Project hierarchical structure](https://img.whatap.io/media/images/3depth.png)
+<ImgLang img='project-management-3depth.png' desc='프로젝트 계층 구조'/>
 
 ### What is the project?
 
@@ -40,7 +40,7 @@ A professional maintenance service company can group multiple subgroups into a s
 
 If a parent group exists, the member roles of the parent group are inherited by default. For example, there are Organization A, Group B, and Project C. Without extra settings, Group B inherits Organization A's membership roles, and Project C inherits Group B's member roles.
 
-![Member Role](/img/member-authority.png)
+<ImgLang img='project-member-auth.png' desc='멤버 권한' />
 
 :::note
 
@@ -54,15 +54,16 @@ You can flexibly grant different roles to different members for each project or 
 
 <div class='c5-3-5-avg'>
 
-| Role scheme              | Description                                                        |
-| ------------------------ | ------------------------------------------------------------------ |
-| Inquiry and analysis     | Viewing a project                                                  |
-| Edit                     | Moving, modifying, and deleting an organization, group, or project |
-| Member Management        | Modifying member roles and adding or excluding members             |
-| Alert Reception          | Alert Reception                                                    |
-| Alert Config             | Alert Notification Setting                                         |
-| Billing                  | Charging the bill                                                  |
-| View Log                 | Log inquiry and access of log-related functions                    |
+| Role scheme          | Description                                                        |
+| -------------------- | ------------------------------------------------------------------ |
+| Inquiry and analysis | Viewing a project                                                  |
+| Edit                 | Moving, modifying, and deleting an organization, group, or project |
+| Member Management    | Modifying member roles and adding or excluding members             |
+| Alert Reception      | Alert Reception                                                    |
+| Alert Config         | Alert Notification Setting                                         |
+| View Log             | Log inquiry and access of log-related functions                    |
+| Log Edit             | Editing the log settings                                           |
+| Billing              | Charging the bill                                                  |
 
 </div>
 
@@ -73,16 +74,19 @@ This role is granted to members by default when inviting them to an organization
 ### Edit
 
 -   You can modify the functions of the project. For example, you can add, modify, and delete **_dashboards_**. 
+
 -   You can move, modify, and delete settings of a group or project.
 
 ### Member Management
 
 -   You can add or delete members and modify roles for each organization, group, or project.
+
 -   There must be at least one member with the **Member Management** role.
 
 ### Alert Reception
 
 -   In **_Alert_** > **_Notification Setting_**, you can manage the alert reception settings. 
+
 -   If you do not set the **Alert Reception** role, you can handle only the reception settings for your own account.
 
 ### Alert Config
@@ -92,22 +96,40 @@ In **_Alert_** > **_Notification Setting_**, the alerts can be added, deleted, o
 ### View Log
 
 -   You can search the logs. This role is granted to members by default when inviting them to an organization, group, or project.
+
 -   Only members with the **Log Read** role can access the log-related functions. The log-related functions are as follows.
 
     -   **_Log_** menu and sub menus
+
     -   **_Alert_** > **_Event Setting_** > **_Log_** tab
+
     -   **_Transaction Log_** tab in the Transaction Detail window
+
     -   **_Log_** tab in **Summary Detail** or **Display Detail** under Container Map
+
+### Log Edit
+
+It is the role to edit the settings in **_Log_** > **_Log Setting_**. If you have the **Log Edit** role, you can use the **_Log Setting_** menu.
+
+:::note
+
+Even if you have the **Log Edit** role, you cannot use the **_Log Setting_** menu when an **access key** has not been issued or the log monitoring is disabled.
+
+:::
 
 ### Billing
 
 -   Each organization, group, or project provides the **billing** role to only one person. There must be only 1 member with the billing role.
+
 -   **_Billing_** appears next to the member with the **billing** role.
+
 -   If A has transferred the **billing** role to B, A no longer has the right to make **billing**.
+
 -   The member to whom the **billing** role is transferred must have registered the billing information. The billing information can be registered in **_My Usage_**. For more information, see [the following](../management/billing).
+
 -   If there are billing staff for each organization, group, and project, the billing roles are granted in the order of project, group, and organization. If there is no billing staff for a group or project, billing is charged to the parent group or organization's staff with the billing role.
 
-    ![](/img/project-str-billing.png)
+    <ImgLang img='project-str-billing.png' desc=''/>
 
 ## Editing Member Role{#modify-auth}
 
@@ -115,7 +137,7 @@ In **_Alert_** > **_Notification Setting_**, the alerts can be added, deleted, o
 
 You can modify the roles of members in the list of the selected organization, group, or project. 
 
-![Editing Member Role](/img/member-modify-basic-authority-new.png)
+![Editing Member Role](/img/member-modify-authority-0508.png)
 
 You can set roles by selecting the toggle button on the right. After configuration, select **_Apply_**.
 
@@ -123,12 +145,14 @@ You can set roles by selecting the toggle button on the right. After configurati
 
 You can set member roles for a group or project that belongs to an organization or subgroup.
 
-![Editing Member Role](/img/modify-member-authority-new.png)
+![Editing Member Role](/img/modify-organize-member-authority.png)
 
 Under the **_User role per group_** or **_User Role per project of a group_** section, select ![Edit icon](/img/ico-edit.svg) to modify the roles. The **_Edit Member Role_** window appears. The options that can be set for roles are as follows.
 
 -   **_Inheritance_**: Inherits the roles of the parent organization or group.
+
 -   **_Allow_**: Enables the roles of the selected group or project.
+
 -   **_Deny_**: Disables the roles of the selected group or project.
 
 :::note
@@ -136,8 +160,11 @@ Under the **_User role per group_** or **_User Role per project of a group_** se
 For more information about adding, deleting, or modifying members, see the following documentation.
 
 -   [Project Member Management](project-manage#member-list)
+
 -   [Group Member Management](group#add-member)
+
 -   [Organization Member Management](organization#member-list)
+
 -   [Integrated Member Management](integrated-manage#member)
 
 :::

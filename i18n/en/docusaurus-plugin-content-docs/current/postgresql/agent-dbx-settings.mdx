@@ -8,9 +8,14 @@ tags:
   - DBX agent
 ---
 
-import InDoc from '@site/src/components/InDoc.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 import CurProd from '@site/src/components/GetProductName.js';
+
+:::note
+
+This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/agent-dbx-settings).
+
+:::
 
 Write the settings for the DBX agent in the _whatap.conf_ file. For the options that can be set, see the following.
 
@@ -23,6 +28,8 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 {@include: ../common-items/_db-agent-setting-data-collection.mdx}
 
 ## Application of AWS RDS CloudWatch{#using-aws-rds}
+
+<AWSRDSdesc name='db_postgresql_counter' />
 
 {@include: ../common-items/_db-agent-aws.mdx}
 

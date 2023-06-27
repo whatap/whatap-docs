@@ -10,38 +10,78 @@ tags:
   - マルチインスタンスモニタリング
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import InDoc from '@site/src/components/InDoc.js';
+:::note
 
-<!-- 개요 -->
+この文書は、PostgreSQLモニタリングV2を基準に作成されました。PostgreSQLモニタリングV1文書については、[次の文書](../postgresql-v1/multi-instance-monitoring)を参考にしてください。
 
-{@include: ../common-items/_db-mulit-instance-monitoring-desc.mdx}
+:::
 
-<!-- Notes -->
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_マルチインスタンスモニタリング_**
+
+**_[インスタンスモニタリング](instance-monitoring)_**メニューが一つのインスタンスをモニタリングすることに対し、**_マルチインスタンスモニタリング_**は、複数のインスタンスの指標を一つの画面で確認し、比較することができます。 動作中のエージェント数、アクティブセッションの合計、トランザクション情報などのインスタンス指標をグループ化した値を通じて、インスタンスの現況を把握することができます。グラフチャートを通じて、インスタンスの指標値の推移はもちろん、どのインスタンスの指標値が高いかを簡単に確認できます。最も長持ちするアクティブセッションの情報を提供します。
 
 {@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
 
-<!-- 기본 화면 안내 -->
+## 基本画面案内
 
-{@include: ../common-items/_db-multi-instance-monitoring-basic.mdx}  
+<ProdImg img='db-multi-instance.png' desc='멀티 인스턴스 모니터링' />
 
-<!-- 지표 선택하기 -->
+### ![](/img/number-01.png)インスタンス
 
-{@include: ../common-items/_db-select-metric-data-widget.mdx}  
+エージェントインストールを通じて接続したインスタンスの一覧です。インスタンスの色は、画面の中央領域のグラフチャートの色と一致します。インスタンスを選択したときに色が灰色になると、選択が解除された状態です。各指標とグラフチャートから解除したインスタンスのデータを除きます。
 
-<!-- 레이아웃 설정하기 -->
+### ![](/img/number-02.png)グラフチャート領域
 
-{@include: ../common-items/_db-set-layout.mdx}  
+複数のインスタンスの重要指標をグラフチャートで確認および比較することができます。CPUおよびメモリ使用率、アクティブセッション、スロークエリ、待機中のセッション情報などをリアルタイムで確認できます。グラフチャートの色は、![数字1](/img/number-01.png) **_インスタンス_**の色と一致します。グラフチャートの上にマウスオーバーすると、ツールチップで数値を確認できます。
 
-<!-- 액티브 세션 영역 활용하기 -->
+-   **_CPU Usage (%)_**：インスタンス別のCPU使用率をリアルタイムで確認できます。
 
-{@include: ../common-items/_db-using-area-active-session.mdx}  
+-   **_Memory Usage (%)_**：インスタンス別のメモリ使用率をリアルタイムで確認できます。
 
-<!-- 컬럼 변경하기 -->
+-   **_XOS Disk Usage_**：インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。ウィジェットの右上の![アイコン](/img/ico-expander.svg)ボタンを選択すると、新しいウィンドウで確認できます。
+
+-   **_Active Sessions_**：クエリを実行中のセッション数をリアルタイムチャートで表示します。
+
+-   **_DML Count_**：DML(Data Manipulation Language)文法(statement)が実行された回数をリアルタイムチャートで表示します。
+
+-   **_Elapsed time_**：実行中のクエリの経過時間をリアルタイムチャートで表示します。チャートの特定領域をドラッグすると**_Query List_**一覧を確認できます。![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択してチャートを上下に移動できます。
+
+-   **_Logical Read_**：データをbuffer cache内で読み込んだ回数をリアルタイムチャートで表示します。
+
+-   **_Slow Query_**：時間帯別のスロークエリをリアルタイムチャートで表示します。チャートの特定領域をドラッグすると**_Slow Query List_**一覧を確認できます。![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択してチャートを上下に移動できます。
+
+-   **_Lock Wait Sessions_**：row lockを獲得するために待機中の数をリアルタイムチャートで表示します。
+
+-   **_Commit Count_**：コミットされたトランザクションの数をリアルタイムチャートで表示します。
+
+-   **_Replication Delay_**：Replication構造の場合、replication dbに反映される遅延時間をリアルタイムチャートで表示します。
+
+-   **_Physical Read_**：データを物理的なdiskで読み込んだ回数をリアルタイムチャートで表示します。
+
+-   **_Wait Event_**：当該バックエンドプロセスが現在待機中の場合、待機イベント名と数を確認できます。チャートの上にマウスオーバーすると、ツールチップを通じて情報を表示します。
+
+### ![](/img/number-03.png)アクティブセッション/ロックツリー
+
+リアルタイムで実行中のアクティブセッションとロックツリー情報を照会することができます。 
+
+{@include: ../common-items/_db-dashboard-activesession-desc.mdx}
+
+{@include: ../common-items/_db-dashboard-locktree-desc.mdx}
+
+:::note
+
+テーブル一覧に文字の色は黒 → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>順にセッションの実行速度が遅いことを意味します。
+
+:::
+
+## テーブルデータのフィルタリング
+
+{@include: ../common-items/_db-table-data-filtering.mdx}
+
+## テーブルカラムの変更{#change-column}
 
 {@include: ../common-items/_db-data-edit-column.mdx}
 
 <!-- 컬럼 정보 안내 -->
 
-{@include: ../common-items/_db_postgresql-column.mdx}
+{@include: ../common-items/_db_postgresql-column.mdx} 

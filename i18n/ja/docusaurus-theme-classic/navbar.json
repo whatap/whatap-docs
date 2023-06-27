@@ -212,7 +212,11 @@
     "description": "Navbar item with label Browser"
   },
   "item.label.라이선스": {
-    "message": "Licenses",
+    "message": "ラインセンス",
     "description": "Navbar item with label 라이선스"
+  },
+  "item.label.PostgreSQL V2 모니터링": {
+    "message": "PostgreSQL V2 モニタリング",
+    "description": "Navbar item with label PostgreSQL V2 모니터링"
   }
 }

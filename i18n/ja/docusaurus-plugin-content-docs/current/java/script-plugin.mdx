@@ -57,7 +57,8 @@ Javaエージェントプラグインは、メソッドの開始・終了部分�
 
 -   **Custom Poolを設定する場合**
 
-    Custom Poolは識別子@パッケージ名の形で設定します。\
+    Custom Poolは、識別子@パッケージ名の形に設定します。
+
     例）Class名の前に`whatap_plugin_guide`という識別子を設定します。識別子とクラスは@で区切ります。
 
     ```java
@@ -149,7 +150,7 @@ $ctx.profile(prefix + " End", sb.toString());
 | $point  | String class1                                                 | クラス名                                          |
 |  ^      | String method                                                 | メソッド名                                         |
 |  ^      | Object this1                                                  | Hooking対象クラス／メソッド                             |
-|  ^      | Object\[] args                                                | ファクター                                         |
+|  ^      | Object[] args                                                | ファクター                                         |
 |  ^      | Object return1                                                | リターン                                          |
 
 ### パラメータ未提供 - 共通プラグインファイル
@@ -336,7 +337,7 @@ $result.idle(avail);
 クッキーの値をトレースから確認できます。
 
 ```java title='${WHATAP_HOME}/plugin/HttpServiceStart.x' {2} showLineNumbers
-// $req.getCookie()パラメータで確認したいCookieを設定してください。
+// $req.getCookie() 파라미터로 확인하려는 쿠키를 설정하세요.
 String cookie = $req.getCookie("AWSALB");
 
 if ($ctx.ok()) {

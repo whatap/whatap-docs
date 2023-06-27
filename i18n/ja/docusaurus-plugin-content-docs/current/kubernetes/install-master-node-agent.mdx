@@ -27,7 +27,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
 
-<TabItem value='istio' label='Istio 환경' default>
+<TabItem value='istio' label='Istio環境' default>
 
 Istio環境であれば、次のコマンドを実行して必要なリソースを生成してください。
 
@@ -56,11 +56,11 @@ EOF
 
 </TabItem>
 
-<TabItem value='gke' label='GKE 환경'>
+<TabItem value='gke' label='GKE環境'>
 
 Google Kubernetes Engine（GKE）の場合、ユーザークラスターを作成した後、権限設定のために次のコマンドを実行してください。
 
-```bash title='GKE 권한 설정'
+```bash
 ACCOUNT=$(gcloud info --format='value(config.account)')
 kubectl create clusterrolebinding owner-cluster-admin-binding \
   --clusterrole cluster-admin \
@@ -75,7 +75,7 @@ gcloudコマンドのインストールの詳細については、[グーグル�
 
 </TabItem>
 
-<TabItem value='openshift' label='OpenShift 환경'>
+<TabItem value='openshift' label='OpenShift環境'>
 
 ![OpenShift](/img/kube-install-openshift.png)
 

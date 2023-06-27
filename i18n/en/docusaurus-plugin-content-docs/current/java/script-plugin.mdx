@@ -337,7 +337,7 @@ $result.idle(avail);
 You can see the cookie value in the transaction trace.
 
 ```java title='${WHATAP_HOME}/plugin/HttpServiceStart.x' {2} showLineNumbers
-// Set the cookie to check with the $req.getCookie() parrameter.
+// $req.getCookie() 파라미터로 확인하려는 쿠키를 설정하세요.
 String cookie = $req.getCookie("AWSALB");
 
 if ($ctx.ok()) {

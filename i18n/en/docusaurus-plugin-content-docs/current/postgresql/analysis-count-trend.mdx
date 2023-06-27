@@ -1,6 +1,6 @@
 ---
 id: analysis-count-trend
-title: Using the count trend
+title: Compare Counts Trend
 description: You can check and compare the database operation trends.
 tags:
   - PostgreSQL
@@ -9,20 +9,68 @@ tags:
   - Count trend
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+:::note
 
-<!-- 카운트 추이 -->
+This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/analysis-count-trend).
 
-{@include: ../common-items/_db-count-trend-desc.mdx}  
+:::
 
-<!-- 카운트 추이 비교 -->
+Home > Select Project > **_Analysis_** > **_Counts Trend Comparison_**
 
-{@include: ../common-items/_db-compare-count-trend-v2.mdx}  
+You can check the operation trend of the key metrics of the database over time and trace the performance. You can also check the database operation trend by comparing the count trends on different dates. Through the **_Active Sessions_** table, you can check active sessions and identify long-running sessions.
 
-<!-- 차트 및 액티브 세션 영역 활용하기 -->
+## Basic screen guide
 
-{@include: ../common-items/_db-using-chart-activesession-area.mdx}  
+<ProdImg img='db-compare-count-trend.png' desc='카운트 추이' />
 
-<!-- 컬럼 정보 안내 -->
+-   If you select ![number 1](/img/number-01.png) **_Reference Date_**, ![number 2](/img/number-02.png) **_Comparison Date_**, and **_Instance_**, the data is automatically applied to all widgets based on the selected items.
 
-{@include: ../common-items/_db_postgresql-column.mdx}
+-   To see the meaning of the metric displayed in the widget, select <span class='mark'>i</span> next to the name or see [the following](metrics-data-list).
+
+-   To change the position with another widget, select and drag the upper part of the widget. However, the size of the widget cannot be changed.
+
+-   The left of the ![number 3](/img/number-03.png) **_active sessions_** table displays the data for the **_reference date_**, and the right of the table displays the data for the **_comparison date_**.
+
+-   In the ![number 3](/img/number-03.png) **_active sessions_** table, the text colors are changed black → <span class='slow'>orange</span> → <span class='vslow'>Red</span>, which means that the performance of the session is getting slower.
+
+### Selecting a comparison target
+
+Select ![number 1](/img/number-01.png) **_Reference Date_** and **_Instance_**, and then select ![number 2](/img/number-02.png) **_Comparison Date_** and **_Instance_**. If you hover your mouse over the chart, you can compare the data through the tooltip that appears.
+
+![Tooltip](/img/db-compare-count-trend-tootip.png)
+
+-   The solid line in the graph chart displays the data for the **_Reference Date_**, and the dotted line displays the data for the **_comparison date_**.
+
+-   The items marked with **_(Comparison)_** in the tooltip are the data for the **_Comparison Date_**.
+
+:::note
+
+-   In **_Database_**, you can select a database for comparison.
+
+-   The colors in **_Database_** are the same in the graph chart.
+
+:::
+
+### Comparing the active session data
+
+![Active Sessions](/img/db-compare-count-trend-activesession.png)
+
+-   The time zone for data retrieval can be checked in ![number 4](/img/number-04.png).
+
+-   Active session data is collected every 5 seconds. You can search data for the desired time by selecting the button that moves in 5-second increments on the table.
+
+-   If you select ![Previous time icon](/img/ico-left-time.svg) or ![Next time icon](/img/ico-right-time.svg) on the upper right, you can see the data in 1-minute increments. To move in increments of 5 seconds, select ![5 seconds before icon](/img/ic-caret-left.svg) or ![5 seconds after icon](/img/ic-caret-right.svg).
+
+-   In the **_Active Sessions_** table list, the text colors are changed black → <span class='slow'>orange</span> → <span class='vslow'>Red</span>, which means that the performance of the session is getting slower.
+
+-   If you click a specific time point of the graph chart, the (![number 3](/img/number-03.png)) area appears with a red line and the collected active sessions can be also seen.
+
+### Comparing with a specific time
+
+![Active Sessions](/img/db-count-trend-extend-time.png)
+
+You can compare the data by zooming in on a specific time point. Select a desired time zone to anywhere on the widgets and then drag the chart. It displays the data for a specific time zone dragged to all widgets and active session tables.
+
+<!--컬럼 정보 안내-->
+
+{@include: ../common-items/_db_postgresql-column.mdx} 

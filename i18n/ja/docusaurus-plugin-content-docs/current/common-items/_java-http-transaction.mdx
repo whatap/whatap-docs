@@ -2,26 +2,38 @@
 
 {@include: ../common-items/_transaction-profile-http.mdx} 
 
--   **trace_transaction_name_key** <span class='type'>String</span><br/>
+-   **trace_transaction_name_key** <span class='type'>String</span>
+
     設定したhttp request parameterから抽出した値をトランザクション名の末尾に追加します。
 
-{@include: ../common-items/_transaction-trace-common.mdx} 
+{@include: ../common-items/_transaction-trace-common.mdx}
 
--   **recursive_max**<span class='type'>Int</span><br/>
-    デフォルト値`10000`<br/>トランザクションが再帰呼び出しの有無を検出するためのオプションです。単一のトランザクションから派生する再帰呼び出し回数をカウントすることによって、イベント通知を発行するための条件を設定します。
+-   **recursive_max** <span class='type'>Int</span>
+
+    デフォルト値`1000000`
+
+    トランザクションが再帰呼び出されているかどうかを検知するためのオプションです。１つのトランザクションから派生する再帰呼び出し回数をカウントすると、イベント通知を発行するための条件が設定されます。
 
     :::note
+
     HTTP URLの再帰呼び出しを対象とします。jsp:forwardを介して再呼び出しするケースもカウントに含まれます。
+
     :::
 
--   **hook_httpservlet_classes** <span class='type'>String</span><br/>
-    HTTPトランザクションのEND POINTを設定します。 メソッドの最初の2つのパラメータは、`HttpServletRequest`と`HttpServletResponse`のみ設定できます。
+-   **hook_httpservlet_classes** <span class='type'>String</span>
 
--   **hook_jsp_patterns**<span class='type'>String</span><br/>
-    デフォルト値`org.apache.jasper.servlet.JspServlet.serviceJspFile`<br/>JSPファイルをロードするメソッドを設定します。トランザクション呼び出しの結果として戻されたJSP情報をトレースに表示します。このオプションで追加した設定にデフォルト値が自動で追加されます。
+    HTTPトランザクションのEND POINTを設定します。メソッドの2つのパラメータは、`HttpServletRequest`と`HttpServletResponse`を設定することができます。
 
--   **trace_ignore_url_set** <span class='type'>String</span><br/>
-    トランザクション追跡から除外するURLを設定します。2つ以上の値を設定するには、コンマ（,）を区切り文字として使用します。
+-   **hook_jsp_patterns** <span class='type'>String</span>
 
--   **trace_ignore_url_prefix** <span class='type'>String</span><br/>
-    トランザクション追跡から除外するURL prefixを設定します。
+    デフォルト値`org.apache.jasper.servlet.JspServlet.serviceJspFile`
+
+    JSPファイルをロードするためのメソッドを設定します。トランザクションの呼び出しの結果として戻されたJSP情報をトレースに表示します。このオプションで追加された設定にデフォルト値が自動的に追加されます。
+
+-   **trace_ignore_url_set** <span class='type'>String</span>
+
+    トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
+
+-   **trace_ignore_url_prefix** <span class='type'>String</span>
+
+    トランザクションの追跡から除外するURL prefixを設定します。

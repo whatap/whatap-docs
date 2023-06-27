@@ -10,11 +10,25 @@ tags:
 
 Home > Select Project > **_Dashboard_** > **_Container Map_**
 
-The container map in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
+The **_Container Map_** in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
+
+The following video clip is the guide to the **_Container Map_** menu.
+
+{@youtube: GHOJW3Rk3jc}
+
+## Basic screen guide
 
 ![Container Map](/img/kube-container-map-01.png)
 
-## ![](/img/number-01.png) Container or Pod
+:::info
+
+**Blocks and Micro blocks**
+
+In the container map, the single polygon is called a block. At this time, the block with an agent (a block within a block) is called a micro block.
+
+:::
+
+### ![](/img/number-01.png) Container or Pod
 
 The shapes and designs for each object represent the characteristics and states of the container or pod.
 
@@ -25,7 +39,7 @@ The shapes and designs for each object represent the characteristics and states 
     -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
     -   If there are 2 containers in a pod and the microagents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have microagents installed, the borders are displayed.
 
-## ![](/img/number-02.png) Go to Cluster Project - Namespace Project
+### ![](/img/number-02.png) Go to Cluster Project - Namespace Project
 
 ![Container map project list](https://img.whatap.io/media/images/whatap_kubernetes_container_map_namespace_project_list.png)
 
@@ -38,7 +52,7 @@ If a namespace project is created under a cluster project, you can check the lis
 
 :::
 
-## ![](/img/number-03.png) User configuration
+### ![](/img/number-03.png) User configuration
 
 ![User configuration](/img/container-map-custom-view.png)
 
@@ -54,7 +68,7 @@ A container map provides multiple user settings that allow you to create any des
 
     ![Option](/img/k8s-container-map-setting.png)
 
-    -   **_Show WhaTap Agent_**: You can display information of containers or pods. Select a desired **_label_** option.
+    -   **_Show WhaTap Agent_**: The container or pod data can be displayed. Select a desired **_label_** option. For more information about the label option, see [the following](#label).
 
     -   **_Show metrics at the bottom of the card_**: You can select whether or not to display the metrics information at the bottom.
 
@@ -64,7 +78,17 @@ A container map provides multiple user settings that allow you to create any des
 
 -   ![Reset icon](/img/ico-reset.svg) **_Reset_**: It initializes the screen view set by you.
 
-## Summary view and Detailed view
+#### Label options{#label}
+
+-   **_None_**: Labels are not displayed in the block.
+
+-   **_Name_**: The container or pod name is displayed.
+
+-   **_Application_**: The application in the container or pod is displayed.
+
+-   **_Selected metrics_**: The chart metric selected in **_ConState(state)_** is displayed.
+
+### Summary view and Detailed view
 
 You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
 
@@ -75,19 +99,19 @@ You can select an interested container or pod to view the summary and detailed i
 
 Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
 
-### Summary view
+#### Summary view
 
 Click a specific object or a set of objects. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
 
 ![Summary view](https://img.whatap.io/media/images/whatap_kubernetes_container_map_right_summary.png)
 
-### Detailed view
+#### Display Detail
 
 On the upper right of the **Display Summary** screen, click ![Display Detail icon](/img/ico-detail-mode.svg). **Display Detail** appears.
 
 ![Detailed view](/img/container-map-detail-mode.png)
 
-## Real-time and historical inquiries
+### Real-time and historical inquiries
 
 Container maps are based on real-time lookups based on multiple viewpoints. Use the time selector at the top right of the screen to change the real-time inquiry.
 

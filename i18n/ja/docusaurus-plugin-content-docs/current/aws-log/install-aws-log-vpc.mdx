@@ -1,0 +1,140 @@
+---
+id: install-aws-log-vpc
+title: WhaTap ForwarderにVPCを設定する
+description: WhaTap ForwarderをVPC環境で使用できるように追加設定について案内します。
+toc_max_heading_level: 2
+tags:
+  - AWS Log
+  - インストール
+---
+
+:::note
+
+本文書は<span class='vpcbold'>VPC</span>環境で**WhaTap Forwarder**を使用するための追加設定について案内します。 まず、**WhaTap Forwarder**をインストールしてください。 詳しい内容は、[次の文書](../aws-log/install-aws-log#install-whatap-forwarder)を参考にしてください。
+
+:::
+
+**WhaTap Forwarder**は、AWS Cloudwatch LogGroupとS3に書き込まれたAWS Logを収集します。 インストールは、AWS Lambda Functionで行います。 AWS Lambdaは、基本的に<span class='vpcbold'>VPC</span>(Virtual Private Cloud)から始まりません。 しかし、次のような追加設定により**WhaTap Forwarder**を<span class='vpcbold'>VPC</span>環境から始めることができます。
+
+## Lambda実行権限の修正
+
+1.  AWS Lambda Functionコンソールで**WhaTap Forwarder**を選択してください。
+
+2.  **_Configuration_**タブの**_Permissions_**メニューで**_Execution role_**を確認・選択してAWS IAMコンソールに移動してください。
+
+  ![Lambda実行役割](/img/whatap-forwarder-vpc-lambda.png)
+
+1.  IAMコンソール**_Permissions_**タブの**_Permissions policies_**メニューに移動してください。 
+
+2.  ポリシー一覧で**_forwarderpolicy_**を選択してポリシー編集画面に移動してください。
+
+  ![IAMコンソール](/img/whatap-forwarder-vpc-aws-iam.png)
+
+1.  **_JSON_**タブを選択し、次のポリシーをコピーして貼り付けてください。 該当政策は、_ENI_を作成、定義、削除します。
+
+```json title='IAM Policy'
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:{AWS REGION}:{AWS ACCOUNT ID}:log-group:/aws/lambda/*",
+            "Effect": "Allow"
+        },
+        
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3-object-lambda:Get*",
+                "s3-object-lambda:List*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ]
+}
+
+```
+
+## VPC設定
+
+<div class ='vpcb'>
+
+1.  AWS Lambda Functionコンソールで**WhaTap Forwarder**を選択してください。
+
+2.  **_Configuration_**タブの**_VPC_**メニューで**_Edit_**ボタンを選択してVPC編集画面に移動してください。
+
+  ![VPC編集](/img/whatap-forwarder-vpc-edit.png)
+
+1.  次を参考にして**_VPC_**と**_Subnets_**及び**_Security groups_**指定後、**_Save_**ボタンを選択して保存してください。
+
+  ![サブネットとセキュリティグループ]](/img/whatap-forwarder-vpc-sg.png)
+
+  :::note
+
+  **Subnets**
+
+```
+* **NAT Gateway**の**Public IP**を使い、**IGW**を通じてインターネットに接続してください。
+
+* **IGW**を通じてインターネットに接続するためには、**Public IP**が必要です。Lambdaの*ENI*は、**Public IP**を割り当てることができません。
+
+* **Private Subnet**、つまりインターネットGatewayに要請がすぐ行かずに**NAT Gateway**でアウトバウンドトラフィックがルーティングされるサブネットを選択する必要があります。
+* **Private Subnet**及び**Public Subnet**の**WhaTap Forwarder**
+
+![サブネットsc](/img/whatap-forwarder-subnet.png)
+```
+
+  :::
+
+  :::note
+
+  **Security groups**
+
+```
+* **アウトバウンド**が開いているセキュリティグループが必要です。
+```
+
+  :::
+
+</div>
+
+<!-- 
+
+#### Subnets
+
+* **NAT Gateway**의 **Public IP**로 **IGW**를 통해 인터넷에 접속하세요.
+
+* **IGW**を通じてインターネットに接続するためには**Public IP**が必要です。 Lambdaの*ENI*は、**Public IP**を割り当てることができません。
+
+* **Private Subnet**つまりインターネットGatewayにリクエストがすぐ行かずに**NAT Gateway**にアウトバウンドトラフィックがルーティングされるサブネットを選択する必要があります。
+
+* **Private Subnet**及び**Public Subnet**の**WhaTap Forwarder**
+
+  ![サブネットsc](/img/whatap-forwarder-subnet.png)
+
+#### Security groups
+
+* **アウトバウンド**が開いているセキュリティグループが必要です。
+
+-->
+
+<!-- 
+
+  ![보안 그룹](/img/whatap-forwarder-vpc-sg-outbound.png)
+
+-->

@@ -8,11 +8,14 @@ tags:
 
 Javaウェブアプリケーションサーバーに接続したユーザーの数を集計します。
 
--   **trace_user_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `true`<br/>
-    リアルタイムのユーザー集計の可否を設定します。ユーザー追跡オプションが重複設定されている場合、動作の優先順位は次のとおりです。
+-   **trace_user_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    リアルタイムのユーザー集計有無を設定します。ユーザー追跡オプションが重複設定されている場合、動作の優先順位は次のとおりです。
+
     > 1.  **trace_user_using_ip**
     > 2.  **trace_user_using_jsession**
     > 3.  **user_header_ticket**
 
-{@include: ../common-items/_common-collect-user.mdx} 
+{@include: ../common-items/_common-collect-user.mdx}

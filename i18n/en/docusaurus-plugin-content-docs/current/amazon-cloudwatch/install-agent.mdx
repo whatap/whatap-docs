@@ -19,17 +19,17 @@ WhaTap Amazon CloudWatch monitoring collects metrics periodically through API in
 
 Check the required permissions and recommended policies.
 
-| Resouce           | Role |
-| ----------------- | ---- |
-| CloudWatch        | Read |
-| EC2               | Read |
-| ElasticCache      | Read |
-| CloudFront        | Read |
-| Dynammodb         | Read |
-| ElasticBeansTalk  | Read |
-| AutoScaling       | Read |
-| EFS               | Read |
-| RDS               | Read |
+| Resouce          | Role |
+| ---------------- | ---- |
+| CloudWatch       | Read |
+| EC2              | Read |
+| ElasticCache     | Read |
+| CloudFront       | Read |
+| Dynammodb        | Read |
+| ElasticBeansTalk | Read |
+| AutoScaling      | Read |
+| EFS              | Read |
+| RDS              | Read |
 
 -   **Recommended policy**
     -   arn:aws:iam::aws:policy/ReadOnlyAccess
@@ -58,7 +58,7 @@ Configuration using the role is recommended. The access key is available only to
 
 #### Create a role
 
-![Amazon Cloudwatch - role](https://img.whatap.io/media/images/amazon_cloudwatch_auth_role_dialog.png)
+![Amazon Cloudwatch - role](/img/cloudwatch-auth-role.png)
 
 1.  Log in to the AWS management console and open the IAM console.
 2.  In the console navigation pane, select roles and then select Create Role.
@@ -77,7 +77,7 @@ Configuration using the role is recommended. The access key is available only to
 
 #### Whatap Data Interval
 
-{@include: ../common-items/_collecting-period.mdx} 
+{@include: ../common-items/_collecting-period.mdx}
 
 #### Namespace
 

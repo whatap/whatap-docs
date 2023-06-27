@@ -91,7 +91,6 @@ module.exports = Promise.resolve({
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
-  themes: ['docusaurus-theme-search-typesense'],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -122,34 +121,29 @@ module.exports = Promise.resolve({
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      typesense: {
-        // Replace this with the name of your index/collection.
-        // It should match the "index_name" entry in the scraper's "config.json" file.
-        typesenseCollectionName: 'WhaTapDocs',
-        typesenseServerConfig: {
-          nodes: [
-            {
-              host: 't2dvabr5xq7wn91gp-1.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
-            },
-          ],
-          apiKey: 'ANKs5qrSGOxYIJgh2z3uiUtJEJreEIsB',
-        },
-        // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-        typesenseSearchParameters: {
-          facet_by: 'language',
-          highlight_affix_num_tokens: 200,
-          split_join_tokens: 'always',
-        },
-        // Optional
+      algolia: {
+        // The application ID provided by Algolia
+        appId: '38IOA0JIBS',
+        // Public API key: it is safe to commit it
+        apiKey: '38a630985eb8e5474430fd5de27aca59',
+        indexName: 'whatap',
+        // Optional: see doc section below
         contextualSearch: true,
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        // Optional: Algolia search parameters
+        searchParameters: {
+          
+        },
+        // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: 'search',
+        //... other Algolia params
+        insights: true,
       },
       metadata: [
         {
           name: 'keywords',
-          content: 'WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents',
+          content: 'WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, MS SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere',
         },
         {
           name: 'naver-site-verification',
@@ -242,11 +236,6 @@ module.exports = Promise.resolve({
                 docId: 'mysql/monitoring-intro',
                 label: 'MySQL',
               },
-              // {
-              //   type: 'doc',
-              //   docId: 'mysql-rds/monitoring-intro',
-              //   label: 'MySQL RDS',
-              // },
               {
                 type: 'doc',
                 docId: 'mssql/monitoring-intro',
@@ -391,6 +380,13 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'postgresql/monitoring-intro',
+            position: "left",
+            label: 'PostgreSQL V2 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'postgresql-v1/monitoring-intro',
             position: "left",
             label: 'PostgreSQL 모니터링',
@@ -408,13 +404,6 @@ module.exports = Promise.resolve({
             docId: 'mysql/monitoring-intro',
             position: "left",
             label: 'MySQL 모니터링',
-            className: 'hidden',
-          },
-          {
-            type: 'doc',
-            docId: 'mysql-rds/monitoring-intro',
-            position: "left",
-            label: 'MySQL RDS 모니터링',
             className: 'hidden',
           },
           {

@@ -9,11 +9,11 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}
+{@include: ../common-items/_agent-signup-guide.mdx}  
 
 {@youtube: MWDFeegF6mQ}
 
-{@include: ../getting-started/_create-project-v2.mdx}  
+{@include: ../getting-started/_create-project-v2.mdx}   
 
 {@include: ../getting-started/_accesskey-v2.mdx} 
 
@@ -66,37 +66,49 @@ pipコマンドでインストールできない場合は、[pypi WhaTapペー�
     ```
 
 :::note
+
 エージェントファイル構成の詳細については、Pythonファイル構成を参考にしてください。
+
 :::
 
 <details>
 <summary>Pythonエージェント構成ファイル</summary>
 Pythonエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、タブ収集サーバーに伝達するトレーサーと、トレーサーがデータを送信できるよう支援する要素で構成されています。
 
--   _whatap.conf_\
-      エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて_whatap.conf_ファイルで設定できます。
+-   _whatap.conf_
 
--   _paramkey.txt_\
-      追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するときに使用します。 
-      セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力してこそ照会できます。 
-      ファイルの内容を直接変更することで、セキュリティ キーの修正が可能です。関連オプションは次のとおりです。 
-    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span><br/>
-          デフォルト値`false`
-    -   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>
-          デフォルト値`false`
+    エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて_whatap.conf_ファイルで設定できます。
+
+-   _paramkey.txt_
+
+    追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するときに使用します。 
+
+    セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力してこそ照会できます。 
+
+    ファイルの内容を直接変更することで、セキュリティ キーの修正が可能です。関連オプションは次のとおりです。 
+
+    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+
+        デフォルト値`false`
+
+    -   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+
+        デフォルト値`false`
 
 </details>
 
 ## エージェント設定
 
-1.  **WHATAP_HOMEの基本パス設定**\
+1.  **WHATAP_HOMEの基本パス設定**
+
     ログと設定ファイルパスのための`$WHATAP_HOME`パスを指定してください。whatapディレクトリを新たに作成することをお勧めします。
 
     ```bash
     $ export WHATAP_HOME=[PATH]
     ```
 
-2.  **アクセスキーと収集サーバーIPの設定**\
+2.  **アクセスキーと収集サーバーIPの設定**
+
     次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルがすぐ生成・設定されます。
 
     ```bash
@@ -107,7 +119,8 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
     --app_process_name [プロセス名、ex. uwsgi, gunicorn]
     ```
 
-3.  **設定確認**\
+3.  **設定表示**
+
     次のように設定ファイルが正常に生成されているか確認してください。
 
     ```bash
@@ -225,7 +238,8 @@ def simple_app(environ, start_response):
 
 ## エージェントの適用およびサービス実行の確認
 
--   **WhaTapエージェントの適用**<br/>
+-   **WhaTapエージェントの適用**
+
     最上段にAPIを直接呼び出すコードを次のように追加し、WhaTapエージェントを適用してください。
 
     ```bash
@@ -233,7 +247,8 @@ def simple_app(environ, start_response):
     whatap.agent
     ```
 
--   **サービス実行の確認**<br/>
+-   **サービス実行の確認**
+
     次のコマンドを実行して、WhaTap Pythonサービスが正常に実行されたか確認してください。
 
     ```bash

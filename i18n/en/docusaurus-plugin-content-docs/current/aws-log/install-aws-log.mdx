@@ -45,7 +45,7 @@ To collect AWS logs, additional resources are required. WhaTap provides **WhatTa
 
 <!--  프로젝트 생성 -->
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -57,7 +57,7 @@ If you have already been granted a **project access key**, the key appears inste
 
 :::
 
-## Installing the WhaTap Forwarder
+## WhaTap Forwarder installation{#install-whatap-forwarder}
 
 Install the **WhatTap Forwarder** for log transmission by using the AWS Lambda function. Proceed with the installation in AWS CloudFormation. Be sure to see the **_WhatTap Forwarder Installation_** tab in the WhaTap **_Agent Installation_** > **_Install guide_** section. The following installation inputs are required. 
 
@@ -209,7 +209,7 @@ Specify whether or not to allow the access target resource. See the **_Create AW
 
 3.  Select **_Create Policy_** and copy the following policy and paste it into the ![number1](/img/number-01.png) **_JSON_** tab.
 
-    ```bash title='IAM policy'
+    ```json title='IAM policy'
     {
         "Version": "2012-10-17",
         "Statement": [

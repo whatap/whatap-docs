@@ -6,6 +6,7 @@ tags:
   - Alert
   - Event History
   - Server
+toc_max_heading_level: 2
 ---
 
 Home > Select Project > **_Alert_** > **_Event History_**
@@ -14,41 +15,63 @@ You can check the history of alerts. You can see a list of all events that have 
 
 ![Server Event History sc](/img/event-history-server.png)
 
-![number1](/img/number-01.png) **Options at the top**
+-   ![number1](/img/number-01.png) **Options at the top**
 
--   **_Input field_**: You can search by server name or event name in the input field.
+    -   **_Time Selector_**
 
--   **_View only events in progress_**: You can only see **_active events_** in the event history list.
+        -   오른쪽에 위치한 녹색 버튼을 선택해 조회 시간을 선택할 수 있습니다. 기본 설정은 12시간 입니다.
 
--   **_Last Change Time_**: You can add the **_Last Change Time_** column to the event history list.
+        -   By selecting ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can move by the selected inquiry time range.
 
--   **_CSV_**: You can save the viewed event records as a CSV file. Enter the **_maximum CSV lines_** and then select **_Download_**.
+        -   To select the time details, select the date or time area. Set the time details and then select **_OK_**.
 
-![number2](/img/number-02.png) **Event History List**
+    -   **_Input field_**  
 
--   **_Severity_**
+        You can search by server name or event name in the input field.
 
-    The severity is displayed in colors for <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>.
+    -   **_View only events in progress_**
 
--   **_Event title_**  
+        You can only see **_Progress events_** in the event history list.
 
-    The name of the event occurred based on the value set in the event policy.
+    -   **_Event resolution time_**
 
--   **_Event time_**  
+        이벤트 기록 목록에 **_이벤트 해소 시각_** 컬럼을 추가할 수 있습니다. 
 
-    Event occurrence time.
+        :::note
 
--   **_+ Acknowledge History_**  
+        진행 중인 이벤트는 **_이벤트 해소 시각_**을 조회하지 않습니다.
 
-    The event processing history can be added.
+        :::
 
--   **_Server_**  
+    -   **_CSV_**
 
-    Server name. 
+        You can save the viewed event records as a CSV file. Enter the **_Maximum CSV Lines_** and then select **_Download_**.
 
--   **_Snapshot_**  
+-   ![number2](/img/number-02.png) **Event History List**
 
-    Snapshot information of **_CPU_**, **_Memory Used_**, **_Disk_**, and **_Network_** for the occurred events. 
+    -   **_Severity_**
+
+        The severity is displayed in colors for <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>.
+
+    -   **_Event title_**  
+
+        The name of the event occurred based on the value set in the event policy.
+
+    -   **_Event time_**  
+
+        Event occurrence time.
+
+    -   **_+ Acknowledge History_**  
+
+        The event processing history can be added.
+
+    -   **_Server_**  
+
+        Server name. 
+
+    -   **_Snapshot_**  
+
+        Snapshot information of **_CPU_**, **_Memory Used_**, **_Disk_**, and **_Network_** for the occurred events. 
 
 ### Event Detail Info
 
@@ -56,14 +79,14 @@ If you select **_event name_** in the event history list, it goes to the **_deta
 
 ![Server Event Detail](/img/server-event-detail.png)
 
--   **_Chart Widget_**
+-   ![number1](/img/number-01.png) **Chart Widget**
 
     It displays the **_CPU_**, **_Memory Usage_**, **_Disk I/O_**, and **_Network_** charts before and after the alarm. The **_Severity_** of the event part appears.
 
--   **_Process_**
+-   ![number2](/img/number-02.png) **프로세스**
 
-    It displays top 10 processes for the event. 
+    이벤트에 해당하는 프로세스 상위 10개 정보를 조회할 수 있습니다. 
 
--   **_Acknowledge Detail Info_**
+-   ![number3](/img/number-03.png) **처리 내역 상세 정보**
 
-    It displays a list of event process records. If you select **_Add to Acknowledge History_**, you can write and save the history.
+    이벤트에 대한 처리 내역을 조회할 수 있습니다. **_처리 내역 추가_** 버튼을 선택하면 내역을 작성하고 저장할 수 있습니다.

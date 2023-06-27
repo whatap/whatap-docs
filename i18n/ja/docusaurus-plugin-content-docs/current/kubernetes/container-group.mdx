@@ -44,13 +44,11 @@ tags:
 
 グループ化を適用すると、基準属性でグループ化できない対象は基本的には表示されません。しかし、その対象も画面に表示できる方法があります。画面上段の![指示線1](/img/number-01.png)![設定アイコン](/img/ico-setting.svg)ボタンを選択してください。**_不明なグループを非表示_**のチェックボックスを解除すると、グループ化に該当しない対象だけを集めて別途のカードとして表現します。
 
-<!-- ![카드 설정 속성](https://img.whatap.io/media/images/whatap_kubernetes_container_map_card_metric_on.png)-->
-
 ## カード別メトリクスデータ
 
 各カードの下には、グループ化された対象に関するメトリクスデータを表示します。以下は、提供する指標の情報です。
 
-| 基準ビュー | リソース指標                                                                        | アプリケーション指標                                                  |
+| 基準ビュー | リソース指標                                                                        | アプリケーションメトリクス                                               |
 | ----- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | コンテナ  | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/> | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS |
 | Pod   | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes          | ^                                                           |

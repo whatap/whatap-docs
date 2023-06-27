@@ -1,116 +1,198 @@
 ---
-id: service-1.100.x
+id: service-1_100_x
 title: Service 1.100.X
 toc_max_heading_level: 3
 ---
 
-## Service 1.100.15
+## Service 1.100.22
 
-2023년 5월 12일
+2023年5月23日
 
 <div class='indentTab'>
 
-### 「Database」
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>トランザクション検索</UI>メニューで<UI>経過時間</UI>フィルター入力ウィンドウに最小経過時間および最大経過時間のテキストが表示されるように修正</p>
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 목록</UI> 메뉴에서 설정한 인스턴스 <UI>별칭</UI>이 다음 메뉴에 적용되지 않는 오류 수정</p>
+</div>
 
--   **_대시보드_** > **_인스턴스 목록_**
+## Service 1.100.21
 
--   **_대시보드_** > **_멀티 인스턴스 모니터링_**
+2023年5月23日
 
--   **_분석_** > **_카운트 추이 비교_**
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>エージェントインストール</UI>ページの中国語版が表示されていないバグを修正</p>
+
+</div>
+
+## Service 1.100.19
+
+2023年5月19日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで割引金額がない場合、利用金額が表示されないバグを修正
+
+-   <Status>Fixed</Status>プロフィールアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(後ろに行くボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されて前のページに移動しない問題を修正
+
+* * *
+
+### `Log`
+
+-   <Status>Change</Status> <UI>ログ</UI> > <UI>ログ検索</UI>メニューでフィルターにキーだけを入力し、値を入力しない状態でカテゴリを追加する場合、キー値としてnone値を入力するように修正
+
+</div>
+
+## Service 1.100.18
+
+2023年5月18日
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status>次のメニューの下段パネルのロックツリーテーブルに抜けている`sql_param(query_param)`カラムを追加</p>
+
+-   **_ダッシュボード_** > **_インスタンスモニタリング_**
+-   **_ダッシュボード_** > **_マルチインスタンスモニタリング_**
+-   **_分析_** > **_カウント推移_**
+
+</div>
+
+## Service 1.100.17
+
+2023年5月17日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>利用履歴</UI> > <UI>プロジェクト有料転換</UI>メニューで発生するホワイトアウト現象を修正</p>
+
+</div>
+
+## Service 1.100.16
+
+2023年5月16日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Change</Status> <UI>ダッシュボード</UI> > <UI>トランザクションマップ</UI>メニューで<UI>TXトレース</UI>テーブルのカラムとして<UI>SQL Count</UI>、<UI>Login ID</UI>、<UI>SQL Fetch Count</UI>項目を追加</p>
+
+</div>
+
+## Service 1.100.15
+
+2023年5月12日
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント一覧</UI>メニューから設定したインスタンス<UI>別称</UI>が次のメニューに適用されないエラーの修正</p>
+
+-   **_ダッシュボード_** > **_インスタンス一覧_**
+
+-   **_ダッシュボード_** > **_マルチインスタンスモニタリング_**
+
+-   **_分析_** > **_カウント推移の比較_**
 
 </div>
 
 ## Service 1.100.14
 
-2023년 5월 11일
+2023年5月11日
 
 <div class='indentTab'>
 
-### 「共通」
+### `共通`
 
-<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> 메뉴에서 탭 이동 시 선택한 조직의 파라미터가 유지되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI>メニューからタブ移動時、選択した組織のパラメータが維持されない現象の修正</p>
 
 * * *
 
-### 「Container」
+### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>노드 상세</UI> 메뉴에서 컨테이너 목록 일부 데이터가 보이지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>リソース</UI> > <UI>Node詳細</UI>メニューからコンテナ一覧の一部データが見えないバグ修正</p>
 
 </div>
 
 ## Service 1.100.12
 
-2023년 5월 10일
+2023年5月10日
 
 <div class='indentTab'>
 
-### 「Container」
+### `Container`
 
-<p><Status>Deprecate</Status> <UI>대시보드</UI> > <UI>애플리케이션 서비스 대시보드</UI> 메뉴에서 <UI>멀티 서비스 대시보드</UI> 탭 하위 각 그룹 패널의 <UI>서비스별 애플리케이션</UI> 버튼 제거</p>
+<p><Status>Deprecate</Status> <UI>ダッシュボード</UI> > <UI>アプリケーションサービスダッシュボード</UI>メニューで<UI>マルチサービスダッシュボード</UI>タブ下位にある各グループパネルの<UI>サービス別アプリケーション</UI>ボタン削除</p>
 
 </div>
 
 ## Service 1.100.11
 
-2023년 5월 10일
+2023年5月10日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> 메뉴에서 슬로우 쿼리 위젯의 차트가 보이지 않는 버그 수정</p>
+<p><Status>Fixed</Status>ホーム画面 > <UI>Flexボード</UI>メニューでスロークエリーウィジェットのチャートが見えないバグの修正</p>
 
 </div>
 
 ## Service 1.100.10
 
-2023년 5월 9일
+2023年5月9日
 
 <div class='indentTab'>
 
-### 「Container」
+### `Container`
 
-<p><Status>Fixed</Status> <UI>컨테이너 맵</UI> 메뉴에서 <b>로그 조회</b> 권한이 없는 사용자가 <UI>컨테이너 Stdout/Stderr</UI> 데이터를 볼 수 없는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>コンテナマップ</UI>メニューで<b>ログ照会</b>権限のないユーザーが<UI>コンテナStdout/Stderr</UI>データを照会できないバグ修正</p>
 
 </div>
 
 ## Service 1.100.9
 
-2023년 5월 9일
+2023年5月9日
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> 홈 화면 > <UI>Flex 보드</UI> > <UI>히트맵</UI> 위젯을 통해 <b>트랜잭션 상세</b> 화면을 진입할 경우 <b>로그 조회</b> 권한이 있는 멤버에게 <UI>트랜잭션 로그</UI> 탭이 노출되지 않는 현상 수정
+-   <Status>Fixed</Status>ホーム画面 > <UI>Flexボード</UI> > <UI>ヒートマップ</UI>ウィジェットを通じて<b>トランザクション詳細</b>画面に進入する場合<b>ログ照会</b>権限のあるメンバーに<UI>トランザクションログ</UI>タブが見えない現象修正
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>프로젝트 멤버</UI> 메뉴에서 브라우저 화면의 너비가 특정 크기일 때 가장 오른쪽의 아이콘 버튼이 가려지는 현상 수정
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューでブラウザ画面の幅が特定の大きさの時に一番右側のアイコンボタンが隠れる現象修正
 
 </div>
 
 ## Service 1.100.8
 
-2023년 5월 4일
+2023年5月4日
 
 <div class='indentTab'>
 
-### 「Server」
+### `Server`
 
--   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 목록</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+-   <Status>Fixed</Status> <UI>サーバー設定</UI> > <UI>サーバー一覧</UI>メニューから無効になったサーバー削除機能を削除
 
--   <Status>Fixed</Status> <UI>서버 설정</UI> > <UI>서버 환경 변수</UI> 메뉴에서 비활성화된 서버 삭제 기능 제거
+-   <Status>Fixed</Status> <UI>サーバー設定</UI> > <UI>サーバー環境変数</UI>メニューから無効になったサーバー削除機能を削除
 
 </div>
 
 ## Service 1.100.7
 
-2023년 5월 4일
+2023年5月4日
 
 <div class='indentTab'>
+
+### `共通`
+
+<p><Status>Change</Status> <UI>統合ダッシュボード</UI>, <UI>統合メトリックボード</UI>をサイドメニューから除去、<UI>サイトマップ</UI>を通じてのみアクセスできるように変更</p>
+
+### `Log`
 
 -   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI> > <UI>ログパーサー設定</UI> > <UI>フィルター入力</UI> > フィルターキーの誤字修正(okineName → okindName)
 
 -   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで照会されたログ データがない場合、以前ログが表示される現象を修正
-
--   <Status>Change</Status> <UI>통합 대시보드</UI>, <UI>통합 메트릭스 보드</UI>를 사이드 메뉴에서 제거, <UI>사이트 맵</UI>을 통해서만 접근 가능하도록 변경
 
 </div>
 
@@ -130,6 +212,8 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
+### `Log`
+
 <p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータ照会時に選択されたカテゴリではなく、全体カテゴリを対象にログを照会するバグを修正</p>
 
 </div>
@@ -140,13 +224,13 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
-### 「共通」
+### `Log`
 
 <p><Status>Fixed</Status>ログプロファイル照会時、断続的にログが照会されないバグを修正</p>
 
 * * *
 
-### 「Application」
+### `Application`
 
 <p><Status>Fixed</Status> <UI>統計・レポート</UI> > <UI>統計</UI>メニューで<UI>ドメイン</UI>タブにアクセスすると発生するホワイトアウト現象を修正</p>
 
@@ -158,7 +242,7 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
-### 「Application」
+### `Application`
 
 <p><Status>Fixed</Status> <UI>分析</UI> > <UI>トランザクション検索</UI>メニューでフィルターのうち数字だけを入力するオプションに対して数字タイプの検証ロジックを適用</p>
 
@@ -170,19 +254,19 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
-### 「共通」
+### `共通`
 
 <p><Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで<b>Brwoser</b>, <b>Log</b>、<b>Cloud</b>、<b>Amazon ECS</b>製品の場合、ホストカラムデータを表示しないように修正</p>
 
 * * *
 
-### 「Application」
+### `Application`
 
 <p><Status>Fixed</Status> <b>Java</b>プロジェクトの<UI>役人</UI> > <UI>エージェントインストール</UI> メニューでエージェントダウンロードコマンドの誤字を修正</p>
 
 * * *
 
-### 「Database」
+### `Database`
 
 #### DB共通
 
@@ -200,7 +284,7 @@ toc_max_heading_level: 3
 
 * * *
 
-### 「Container」
+### `Container`
 
 <p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで<UI>インストール前の注意事項</UI>で収集サーバーIPの表記エラーを修正</p>
 
@@ -218,7 +302,7 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
-### 「共通」
+### `共通`
 
 <p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで最初のログデータの照会時にデータが出力されない問題を修正</p>
 
@@ -242,7 +326,7 @@ toc_max_heading_level: 3
 
 * * *
 
-### 「共通」
+### `共通`
 
 #### 検索
 
@@ -280,7 +364,7 @@ toc_max_heading_level: 3
 
 -   <Status>Feature</Status> <UI>ログ設定</UI>メニューで<code>Go</code>エージェント設定案内を追加
 
-#### 警告通知
+#### アラート通知
 
 -   <Status>Change</Status> <UI>イベント受信設定</UI>メニューで<b>エスカレーション</b>のオプション名を<UI>繰り返し通知</UI>に変更
 
@@ -314,7 +398,7 @@ toc_max_heading_level: 3
 
 * * *
 
-### 「Application」
+### `Application`
 
 -   <Status>Change</Status> <UI>管理</UI> > <UI>エージェントインストール</UI> メニューでインストール案内セクションに対するデザインの改善
 
@@ -336,7 +420,7 @@ toc_max_heading_level: 3
 
 * * *
 
-### 「Server」
+### `Server`
 
 -   <Status>Fixed</Status> <UI>サーバー一覧</UI> > <UI>サーバー詳細</UI>メニューで<UI>プロセス</UI>ウィジェットの<UI>グループ化</UI>オプション権限のチェックロジックの欠落を修正
 
@@ -344,7 +428,7 @@ toc_max_heading_level: 3
 
 * * *
 
-### 「Container」
+### `Container`
 
 -   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI> > <img src='/img/ico-setting.svg' alt='설정 아이콘'/>ボタン > <UI>1分以内に生成されたコンテナを表示する</UI>オプションの追加：生成から1分以内のコンテナの場合、明るい色で表示
 

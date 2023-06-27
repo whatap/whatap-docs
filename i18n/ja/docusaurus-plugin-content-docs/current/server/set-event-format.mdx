@@ -3,7 +3,7 @@ id: set-event-format
 title: イベント受信フォーマット
 description: サーバーモニタリンが提供する警告通知のイベント受信のフォーマットについて案内します。
 tags:
-  - 警告通知
+  - アラート通知
   - イベント
   - サーバー
   - イベント受信フォーマット
@@ -19,23 +19,25 @@ tags:
 
 ### イベントタイトル
 
-```log title='이벤트 제목 포맷'
+```log title='Event title format'
 [Level][INFRA] ProjectName ServerName EventTitle
 ```
 
-```log title='이벤트 제목 예시'
+```log title='Event title example'
 [Info][INFRA] サーバープロジェクト TC-0-1-8081 CPU Used > 70%
 ```
 
 :::note
+
 ServerNameが指定されていない場合は、イベントのタイトルから省略されます。
+
 :::
 
 ### イベントメッセージ
 
-イベントメッセージに含まれる情報です。 「optional」が 「false」の場合は、常にメッセージに含まれます。 「optional」が「true」の場合、そのデータを確認できれば表示します。
+イベントメッセージに含まれる情報です。 `optional`が `false`の場合は、常にメッセージに含まれます。 `optional`が`true`の場合、そのデータを確認できれば表示します。
 
-```log title='이벤트 메시지 예시'
+```log title='Event message example'
 Project Name : アプリケーションプロジェクト
 Project Code : 3
 Server Name : TC-0-1-8081
@@ -68,16 +70,16 @@ Stateful : true
 | Event Rule                                        | イベント発生条件                                           | `true`   | -                                                                   |
 | Alert Type                                        | イベントタイプ                                            | `true`   | イベントの種類を特定するためのフィールドです。                                             |
 | Event Target Filter                               | イベント対象選択                                           | `true`   | （メトリクス通知）特定の対象から収集されたメトリクスに対してイベント条件を確認します。                         |
-| Stateful                                          | 解決されたイベント通知                                        | `true`   | 解決されたイベント通知機能を使用している場合は「true」、使用していない場合は「false」                     |
+| 状態ベースのアラート通知                                      | 解決されたイベント通知                                        | `true`   | 解決されたイベント通知機能を使用している場合は`true`、使用していない場合は`false`                     |
 | Repeat Count                                      | イベントの反復回数                                          | `true`   | （メトリクス通知）イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。               |
 | Repeat Duration                                   | イベント反復時間                                           | `true`   | （メトリクス通知）イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。解決されたイベント通知です。 |
-| IP                                                | IP                                                 | `true`   | -                                                                   |
+| IPアドレス                                            | IPアドレス                                             | `true`   | -                                                                   |
 | Log Content                                       | Log Content                                        | `true`   | -                                                                   |
 | Log Source                                        | Log Source                                         | `true`   | -                                                                   |
 | CPU                                               | CPU                                                | `true`   | -                                                                   |
 | CPU_load1                                         | CPU_load1                                          | `true`   | -                                                                   |
 | CPU_loadPerCore                                   | CPU_load1                                          | `true`   | -                                                                   |
-| Memory                                            | Memory                                             | `true`   | -                                                                   |
+| メモリ                                               | メモリ                                                | `true`   | -                                                                   |
 | Swap                                              | Swap                                               | `true`   | -                                                                   |
 | Disk Name / Used Percent / Free Size / IO Percent | Disk Name / Used Percent / Free Size / IO Percent  | `true`   | -                                                                   |
 | Traffic Name / Bps / Pps                          | Name / Bps / Pps                                   | `true`   | -                                                                   |
@@ -91,14 +93,14 @@ Stateful : true
 
 | Event Type      | Event Level         | Event Message                                | Event Off Message             |
 | --------------- | ------------------- | -------------------------------------------- | ----------------------------- |
-| 再起動             | Critical            | System Rebooted"                             | 非対応                           |
-| 非受信             | Warning             | Agent No Data"                               | 非対応                           |
+| 再起動             | Critical            | System Rebooted"                             | 対応しない                         |
+| 未受信             | Warning             | Agent No Data"                               | 対応しない                         |
 | ポート番号           | Warning             | Port ${port} is down"                        | "Port ${port} is up"          |
 | ポート番号（IPがわかる場合） | Warning             | IP ${ip} Port ${port} is down"               | "IP ${ip} Port ${port} is up" |
 | ネットワークIOPS      | Warning or Critical | NETWORK ${deviceId} pps > ${value} pps"      | -                             |
 | ネットワークBPS       | Warning or Critical | NETWORK ${deviceId} bps > ${value} ps"       | -                             |
 | ディスクI/O         | Warning or Critical | Disk ${mountPoint} IO Usage > ${value} %"    | -                             |
-| ディスク使用量         | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
+| ディスク使用          | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
 | inode           | Warning or Critical | Disk ${mountPoint} inode usage > ${value} %" | -                             |
 | CPU             | Warning or Critical | CPU Used > ${value} %"                       | -                             |
 | メモリ             | Warning or Critical | Memory Used > ${value} %"                    | -                             |
@@ -114,7 +116,7 @@ Stateful : true
 | プロセスCPU    | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
 | プロセスメモリ    | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
 
-### ログ ファイルとウィンドウイベント
+### ログファイルとウィンドウイベント
 
 | Event Type        | Event Level         | Event Message                                                       | Event Off Message |
 | ----------------- | ------------------- | ------------------------------------------------------------------- | ----------------- |

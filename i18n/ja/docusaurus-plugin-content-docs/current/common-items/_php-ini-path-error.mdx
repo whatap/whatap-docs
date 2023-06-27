@@ -1,6 +1,6 @@
 ## PHPの追加ini設定パスの確認不可
 
-PHPコンパイルインストールオプション--`--with-config-file-scan-dir=PATH`が設定されていない場合に発生します。
+PHPコンパイル(Compile) インストールオプション --`--with-config-file-scan-dir=PATH` が設定されていない場合に発生します。
 
 ```bash
 $ sudo php -i | grep '.ini files'
@@ -8,7 +8,7 @@ $ sudo php -i | grep '.ini files'
 Scan this dir for additional .ini files => (none)
 ```
 
-_whatap.ini_ファイルの内容を_php.ini_の末尾に追加してください。
+_whatap.ini_ファイルの内容を_php.ini_の末尾に追加します。
 
 ```bash
 $ php -i | grep 'php.ini'
@@ -29,11 +29,11 @@ whatap.trace_user_using_ip=false
 
 その他のオプションは、_/usr/whatap/php/whatap.ini_を使用してください。
 
-### whatap-phpのサービス環境変数設定
+### whatap-phpのサービス(Service) 環境変数設定
 
-`$WHATAP_CONFIG_HOME`環境変数に_whatap.ini_パスを選択してください。
+`$WHATAP_CONFIG_HOME`環境変数に_whatap.ini_パスを選択します。
 
-PHPの追加iniパスが確認できない場合は、_whatap.ini_を作成した_/usr/whatap/php_パスを設定してください。
+PHPの追加iniパスを確認できない場合は、_whatap.ini_で作成した_/usr/whatap/php_パスを設定してください。
 
 ```bash
 $ sudo vi /etc/init.d/whatap-php
@@ -43,8 +43,8 @@ export WHATAP_CONFIG_HOME=      # whatap.iniパス(/etc/php.d)
 
 ### サービスの再起動
 
--   ApacheおよびPHP-FRMサービスを再起動してください。 
--   whatap-phpサービスを再起動してください。
+-   ApacheおよびPHP-FRMサービスを再起動します。 
+-   whatap-phpサービスを再起動します。
 
 ### Error: Not found PHP API
 
@@ -52,16 +52,14 @@ export WHATAP_CONFIG_HOME=      # whatap.iniパス(/etc/php.d)
 
 <!-- 명령어 경로 확인 후 확장 모듈과 서비스 선택 설치가 진행되는 순서가 필요한지?-->
 
-PHP コマンド（CLI）が見つからない場合に発生します。 
+PHP コマンド(CLI)が見つからない場合に発生します。 
 
-[PHPコマンド（CLI）の位置](#check-php-cli-path)を正確に確認した上で、[PHP拡張モジュールおよびwhatap-phpサービス選択インストール](#extension-modul-manual-setting)項目を進めてください。
+[PHPコマンド(CLI)の位置](#check-php-cli-path)を確認した上で、[PHP拡張モジュールおよびwhatap-phpサービス選択インストール](#extension-modul-manual-setting)項目を進めてください。
 
-<!--
-* [PHP 명령어(CLI)의 위치](#php-명령어cli-경로-확인)를 정확히 확인하세요.
-* [PHP 확장 모듈 및 whatap-php 서비스 선택 설치](#php-확장-모듈-및-whatap-php-서비스-수동-설정) 항목을 진행하세요.
--->
+<!--* [PHP 명령어(CLI)의 위치](#php-명령어cli-경로-확인)를 정확히 확인하세요.
+* [PHP 확장 모듈 및 whatap-php 서비스 선택 설치](#php-확장-모듈-및-whatap-php-서비스-수동-설정) 항목을 진행하세요.-->
 
-```bash title='PHP API 버전 정보 확인'
+```bash title='Check PHP API version'
 $ sudo php -i | grep 'PHP API'
 
 PHP API => 20100412

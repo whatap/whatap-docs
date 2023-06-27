@@ -1,0 +1,505 @@
+<InDoc product='aws-log'>
+
+Home > Select Project > **_Management_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Management_** > **_Log Setting_** under Project Menu. 
+
+</InDoc>
+
+<InDoc product='log'>
+
+Home > Select Project > **_Log_** > **_Log Setting_**
+
+Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. 
+
+</InDoc>
+
+You can configure the log monitoring related settings in **_Log Setting_**. Using the tab at the top, you can use menus for checking the agent settings, determining whether to enable log monitoring, setting the log data retention period and lookup password, registering the log parser, and setting the quick indexes.
+
+:::note
+
+-   To use the **_Activate log monitoring_** function, the **Edit Project** role is required. 
+
+-   The **Log Edit** role allows you to modify the **_Log Setting_** menu other than **_Activate log monitoring_**.
+
+:::
+
+## Starting the log monitoring{#log-getting-started}
+
+<InDoc product='aws-log'>
+
+![Start Log Monitoring sc](/img/log-getting-started-aws.png)
+
+</InDoc>
+
+<InDoc product='log'>
+
+![Start Log Monitoring sc](/img/log-getting-started.png)
+
+</InDoc>
+
+At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) **_View guide_** icon and the **_View plans_** button, the corresponding guide screen appears. 
+
+### Set up the agent and enable log monitoring{#log-set-up}
+
+<InDoc product='aws-log'>
+
+In the ![number 1](/img/number-01.png) area, click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
+
+![Start Log Monitoring](/img/log-start-aws.png)
+
+-   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
+-   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
+
+</InDoc>
+
+<InDoc product='log'>
+
+In the ![number 1](/img/number-01.png) area, check the agent settings, and then click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
+
+#### Check Agent Configuration{#log-check-agent-settings}
+
+Check the agent version and settings to start the log monitoring. Select **_Check Agent Configuration_** to follow the onscreen instructions.
+
+-   **Server Monitoring**
+
+    Under **_Apply_**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
+
+-   **DB Monitoring**
+
+    Under **_Apply_**, check each individual application guide. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in _whatap.conf_.
+
+-   **Kubernetes Monitoring**
+
+    Under **_Apply_**, check each individual application guide. See [the following](log-k8s). 
+
+#### Activate log monitoring{#log-activate}
+
+Select **_Activate log monitoring_** to set whether or not to enable the log monitoring.
+
+![](/img/log-start.png)
+
+-   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date. 
+-   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
+
+</InDoc>
+
+### Log Monitoring Data Setting{#log-data-setting}
+
+In the ![number 2](/img/number-02.png) area, you can see the **_Log Usage_**. Furthermore, you can change the settings for **_Data Retention_** and **_Log lookup password_**.
+
+#### Data retention period{#data-retention}
+
+This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select **_Reset_**, the default data retention period is reset.
+
+#### Data Retention Per Category{#data-retention-per-category}
+
+You can specify the log data retention periods for each category. **Log Count** means the log lines stacked for the period. For example, **_Today Log Count_** is the number of log lines accumulated during the day, and **_Expected Log Count_** is the number of log lines of the today's log count multiplied by the days of data retention. 
+
+You can specify the log data retention period as follows. You can free the space by deleting old data according to the specified period.
+
+-   **Trial Project**  
+
+    You can select 1, 2, or 3 days for the data retention period.
+
+-   **Paid Project**  
+
+    For the data retention period, you can select one of 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 10 days, 30 days, and 40 days.
+
+-   **Data size-based billing**   
+
+    The price differs depending on the data retention period.
+
+    > For example, if an average of 2 million log lines per day accumulates and the data retention period is set to 3 days, an average of 6 million log lines is kept on the collection server and subject to billing.
+
+#### Log lookup password{#log-lookup-pw}
+
+To enhance security, set the **_log lookup password_**. The log lookup password is optional. If you are using a log lookup password, enter the password to go to the log screen. 
+
+:::note
+
+**In case you forgot the password**
+
+If you have the **Edit Log** role, you can modify it with a new password in **_Log Setting_**.
+
+:::
+
+## Log primary parser setting{#log-setting-parser-1st}
+
+At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The log primary parser provides the parsers for **_GROK_** and **_JSON_**. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
+
+-   **_GROK_**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
+
+-   **_JSON_**: Batch parsing is provided for the JSON output parts of the logs.
+
+:::note 
+
+**In case of no parsing logic registered, keys for search**
+
+`category`, `oid`, `oname`, `okind`, `okineName`, `@txid`, `@login`, `httphost` 
+
+:::
+
+### Setting item{#log-parser-comp}
+
+| Set value               | Description                                                                                                                                                                                                                                  | ETC      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Category                | Category to apply the pattern to                                                                                                                                                                                                             | required |
+| Log detection condition | Enter the search key and search value to be applied as the filter. The pattern is applied only to the log data that meets the log detection conditions. If you do not enter any log detection condition, the pattern is applied to all logs. | optional |
+| Pattern                 | It is the pattern to parse the log for. Parsing is performed according to the created pattern, and indexes are created. It supports GROK, regular expression syntax.                                                                         | required |
+
+### Parser List{#log-parser-list-1st}
+
+![Log Parser List](/img/log-1st-parser-list.png)
+
+If you select the **_Log primary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
+
+-   If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
+
+-   You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
+
+-   Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
+
+-   Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
+
+### Parser registration order{#log-add-parser-1st}
+
+At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
+
+  ![sc](/img/log-1st-parser-add.png)
+
+1.  Select **_+ Add_**. The **_Add Parser_** window appears.
+
+2.  In the **_Parser_** selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
+
+    -   **_GROK_** [Parser and Pattern Registration](#log-pattern-grok)
+
+    -   **_JSON_** [Parser and Pattern Registration](#log-pattern-json)
+
+3.  In the **_Category_** selection window, select a category or enter it. 
+
+4.  Select a **_search key_** and **_search value_** for the **_log detection condition_** or directly enter them.
+
+  The pattern is applied only to the log data that meets the filter conditions. \*\*\*If you do not enter any log detection condition, the pattern is applied to all logs.
+
+1.  Enter the **_pattern_**. 
+
+2.  To check whether the pattern is normal, click **_Simulation_** and then measure the performance of simulation and pattern.
+
+  For more information about the simulation and performance measurement, see [the following](#parser-simulation).
+
+1.  If the simulation result is normal, select **_Add_** and then register the parser.
+
+:::note
+
+When registering a parser, you cannot register the parser twice in the same **_Category_**.
+
+:::
+
+### GROK Parser Pattern Registration{#log-pattern-grok}
+
+![GROK Pattern Parser](/img/log-1st-grok.png)
+
+The default syntax is `%{SYNTAX:SEMANTIC}`.  
+
+-   **SYNTAX**
+
+    GROK definition pattern.
+
+-   **SEMANTIC**
+
+    It is the key allocated to the parsed data.
+
+    :::note 
+
+    It is recommended to use combination words in SEMANTIC so that reserved words are not used.
+
+    :::
+
+### Registering the JSON Format Parser Pattern{#log-pattern-json}
+
+![Registering the JSON Format Parser Pattern](/img/log-1st-json.png)  
+
+If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser. To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. 
+
+| Option    | Description                                                                                                                                          |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Prefix    | Specify the string before the beginning of JSON string. If not specified, it is identified as a JSON string from the beginning of the log output.    |
+| Postfix   | Specify the string after the end of JSON string. If not specified, it is identified as a JSON string up to the end of the log output.                |
+| Ignore    | Specify fields in the JSON output to exclude from key extraction.                                                                                    |
+
+-   **Registration example**
+
+    ```bash title='Log'
+    [2022-10-25 10:15:34:145]...(line feed)
+    Request : {"key1":"value1","key2":"value2",...}(line feed)
+    Response : {"key3":"value3","key4":"value4",...}
+    ```
+
+    As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
+
+    -   Pattern for request parsing  
+
+        > String between "Request : " and "Response" {"key1":"value1","key2":"value2",...} Target
+
+    -   Pattern for response parsing
+
+        > String from "Response : " to the end of a log {"key3":"value3","key4":"value4",...} Target
+-   **JSON custom pattern registration**
+
+    If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
+
+    ```java
+    io.whatap.logsink.parser.JsonFormatParser{}
+    ```
+
+    To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
+
+    Specify an option in `{}` of `JsonFormatParser{}`.
+
+    -   **Registration example**
+
+        ```bash title='Log'
+        [2022-10-25 10:15:34:145]...(line feed)
+        Request : {"key1":"value1","key2":"value2",...}(line feed)
+        Response : {"key3":"value3","key4":"value4",...}
+        ```
+
+        As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
+
+        -   Pattern for request parsing  
+            > String between "Request : " and "Response" {"key1":"value1","key2":"value2",...} Target
+
+        ```java
+        io.whatap.logsink.parser.JsonFormatParser {prefix:"Request : ",postfix:"Response"}
+        ```
+
+        -   Pattern for response parsing
+            > String from "Response : " to the end of a log {"key3":"value3","key4":"value4",...} Target
+
+        ```java
+        io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
+        ```
+
+### Parser Simulation{#parser-simulation}
+
+1.  Enter a pattern in the parser addition screen, and then select **_Simulation_**. The **_Parser Simulation_** window appears. 
+
+2.  Enter the **_log_** in the **_Parser Simulation_** window. 
+
+3.  Check the entered **_log_** and **_pattern_**. 
+
+  ![Parser Simulation](/img/log-parser-simulation.png)
+
+1.  When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. Check whether parsing succeeds with the pattern to register. 
+
+    -   **Simulation Success Screen**
+
+        ![Simulation Success](/img/log-simulation-success.png)
+
+    -   **Simulation Failure Screen**
+
+        ![Simulation Failure](/img/log-simulation-fail.png)
+
+### Performance measurement{#log-performance}
+
+After successful simulation, click **_Performance measurement_** to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
+
+![Performance measurement](/img/log-performance.png)
+
+### Parsing success{#log-parsed}
+
+If a key is generated by registering a parsing logic, the value parsed with the key is added upon log inquiry. As in the following **_Live Tail_** menu's example, the parsed key and value are added. 
+
+![Parsing Success](/img/log-parsed.png)
+
+The parsed key can be checked in **_Live Tail_**, **_Log Search_**, and **_Log Trend_**.
+
+## Log secondary parser setting{#log-setting-parser-2nd}
+
+At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The **_4xx, 5xx Status Code Parser_** and **_Status Code Success Rate Parser_** are provided. The log secondary parser can be used if a primary parser such as GROK or JSON has been parsed. By processing the values extracted by the primary parser, the statistics data is generated. Secondary statistics are extracted based on HTTP status codes for the web or API response logs.
+
+-   **_4xx, 5xx Status Code Parser_**: The counts are aggregated for abnormal responses.
+
+-   **_Status Code Success Rate Parser_**: The percentage of abnormal responses to the total number of cases is extracted.
+
+:::note
+
+The log secondary parser provides the special purpose secondary parsing function for the primary parsed results. 2차 파서를 사용하기 위해서는 **1차 파서**가 **등록**되어 있어야 합니다.
+
+:::
+
+### Parser List{#log-parser-list-2nd}
+
+![Log Secondary Parser List](/img/log-2nd-parser-list.png)
+
+If you select the **_Log secondary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
+
+-   If you select **_+ Add_** on the upper right, the **_Add Parser_** window appears.
+
+-   You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the **_Priority_** column of the parser list.
+
+-   Through the parser list's ![Icon](/img/ic-toggle-on.svg) **_Enable_** toggle button, you can set whether or not to enable the parser.
+
+-   Through the parser list's ![Edit icon](/img/ico-edit.svg) **_Edit_** and ![Delete icon](/img/ico-trash-red.svg) **_Delete_** icons, you can modify or delete the registered parser.
+
+### Parser registration order{#log-add-parser-2nd}
+
+At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
+
+  ![sc](/img/log-2nd-parser-add.png)
+
+1.  Select **_+ Add_**. The **_Add Parser_** window appears.
+
+2.  In the **_Parser_** selection window, select a parser. For more information about the registration of each parser settings and status codes to exclude, see the following.
+
+    -   **_4xx, 5xx Status Code Parser_** [Registration of settings and status codes to exclude](#4xx-5xx-status-parser)
+
+    -   **_Status Code Success Rate Parser_** [Registration of settings and status codes to exclude](#log-pattern-status)
+
+3.  In the **_Category_** selection window, select a category or enter it. 
+
+4.  Select **_Log detection condition_** or enter it.
+
+5.  Enter the **_status codes to exclude_**. 
+
+6.  Select **_Add_** to register a parser.
+
+### Registration of status codes to exclude for the 4xx, 5xx status code parser{#4xx-5xx-status-parser}
+
+![4xx, 5xx Status Code Parser](/img/log-2nd-4xx5xx.png)
+
+The **_4xx, 5xx Status Code Parser_** can be used when the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. For the status codes to exclude, you can enter or select the 4xx, 5xx status codes. The entered status code is excluded upon parsing the 4xx, 5xx status codes from the logs. 
+
+#### Setting item{#log-parser-comp-4xx5xx}
+
+| Set value               | Description                                                                                                                                                                                                                                                | ETC      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Category                | It is the category to generate the 4xx, 5xx count data.                                                                                                                                                                                                    | required |
+| Log detection condition | Enter the search key and search value to be applied as the filter. The 4xx, %xx count data is generated only for the log data that meets the log detection condition. If you do not enter any log detection condition, the data is generated for all logs. | optional |
+| Status codes to exclude | The status codes to exclude upon generation of statistics data. If no entry, the 4xx, 5xx count data is generated for all error status codes that correspond between 4xx and 5xx.                                                                          | optional |
+
+#### Registration example for the status parser
+
+![GROK Parser - Status parsing pattern registration](/img/log-2nd-4xx5xx-status.png)
+
+If the incoming log is `{"msg":"message","status":404}` and its status is parsed by the GROK parser as shown in the example, it is parsed as `status: 404`. If you confirm that the status has been normally parsed, register the status codes to exclude by the 4xx, 5xx status code parser.     
+
+#### Data Search
+
+If all parsers have been registered, go to **_Flex Board_** and then create the **_log 4XX, 5XX count_** widget.
+
+![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png) 
+
+If the widget is created, you can see the following data.
+
+![](https://img.whatap.io/22/11/28/111724log_status_03_widget.png)
+
+-   **_avg_**: Average value of the data during the query period
+
+-   **_max_**: Maximum value of the data during the query period
+
+-   **_recently_**: Final value of the data during the query period
+
+### Registration of status codes to exclude by the status code success rate parser{#log-pattern-status}
+
+![Status Code Success Rate Parser](/img/log-2nd-status.png)
+
+The **_status code success rate parser_** can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. For the status codes to exclude, you can enter or select the 2xx, 3xx status codes. The entered status code is excluded upon parsing the 2xx, 3xx status codes from the logs. 
+
+#### Setting item{#log-parser-comp-status}
+
+| Set value               | Description                                                                                                                                                                                                                                                      | ETC      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Category                | It is the category to generate the request success rate data.                                                                                                                                                                                                    | required |
+| Log detection condition | Enter the search key and search value to be applied as the filter. The request success rate data is generated only for the log data that meets the log detection condition. If you do not enter any log detection condition, the data is generated for all logs. | optional |
+| Status codes to exclude | The status codes to exclude upon generation of request success rate data. If no entry, the request success rate data is generated for all success rate status codes that correspond between 2xx and 3xx.                                                         | optional |
+
+#### Data Search
+
+If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
+
+![Flex Board - Log Request Success Rate Widget Template](https://img.whatap.io/22/11/28/120046log_success_rate_01_widget_template.png)  
+
+If the widget is created, you can see the following data.
+
+![Flex Board - Log Request Success Rate Widget](https://img.whatap.io/22/11/28/120046log_success_rate_02_widget.png)
+
+The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
+
+## Fast Index Setting{#log-setting-index}
+
+Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
+
+| Set value                 | Required       | Description                                    |
+| ------------------------- | -------------- | ---------------------------------------------- |
+| Category                  | Mandatory      | Category to be set as fast index               |
+| Search Key                | Mandatory      | Search key for fast index setting              |
+| Case insensitive          | Option         | Whether to be case sensitive                   |
+| Rule                      | Mandatory      | `*` must be included at least one.             |
+| Enabled                   | Mandatory      | Active or inactive (default value is `true`)   |
+
+## Log long-term archive statistics{#log-long-term-archive}
+
+Select the **_Log long-term archive statistics_** tab at the top of **_Log Setting_**. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
+
+<!-- 
+
+![로그 장기 보관 통계](https://img.whatap.io/22/11/28/090932log_022_long_period_stat_config.png)
+
+1. In the ***Log long-term archive statistics*** tab, select ***+ Add***. The ***Log long-term archive statistics*** window appears.
+
+1. Select a ***category*** to apply the rule.
+
+1. Select ***Data Period***.
+
+1. Set the ***statistic key*** to be saved with when a log that satisfies the rule occurs. You cannot set the same key twice.
+
+1. In ***Rule Name***, enter the rule name.
+
+1. Add ***tags***.
+
+1. If ***Exclude*** is checked, statistical data is generated with the values that do not meet the entered conditions.
+
+1. If ***Case Sensitive*** is checked, specify whether the value of the entered rule is case sensitive or not.
+
+1. The generated rule can be deleted using the ***-*** icon or added using the ***+ Add*** button.
+
+-->
+
+### Adding the log long-term archive statistics{#log-long-term-archive-add}
+
+![Log long-term archive statistics](/img/log-long-term-archive.png)
+
+If you select **_+ Add_** under the **_Log long-term archive statistics_** tab, the **_Log long-term archive statistics_** window appears. You can add rules by using **_+ Add_** or delete the created rules by using the **_-_** icon.
+
+#### Setting item{#log-long-term-archive-comp}
+
+| Field                        | Description                                                                                                                                         |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Category                     | Category to apply the rule to                                                                                                                       |
+| Statistic Key                | The same key cannot be set twice to save when a log that meets the rule is generated.                                                               |
+| Log detection condition      | Condition for generating log statistical data. Statistical data is generated based on how many logs that meet this condition are collected.         |
+| Exclude                      | If checked, statistical data is generated with values that do not correspond to the entered conditions.                                             |
+| Case sensitive               | Specify case sensitivity for the values of the entered log detection conditions.                                                                    |
+| Enabled                      | Active or inactive (default value is `true`)                                                                                                        |
+
+#### Example
+
+If a setting is added as follows, statistical data is generated with a key value of **_TotalCount_** for the logs whose status is `200` or `300`. 
+
+![](/img/log-long-term-totalcount.png)
+
+### Data Search{#log-widget-statistics}
+
+1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
+
+    ![Long-term archive statistics widget template](https://img.whatap.io/22/11/28/090932log_024_long_period_widget_template.png)
+
+2.  Enter the **_category_** and **_key_** to view and then select **_Apply_**.
+
+    ![Long-term archive statistics widget - category and key selection](https://img.whatap.io/22/11/28/090932log_025_long_period_widget_config.png)
+
+3.  With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.
+
+    ![Long-term archive statistics widget](https://img.whatap.io/22/11/28/090932log_026_long_period_widget_view.png)

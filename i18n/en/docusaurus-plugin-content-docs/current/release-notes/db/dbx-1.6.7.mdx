@@ -1,0 +1,67 @@
+---
+id: dbx-1_6_7
+title: DBX 1.6.7
+toc_max_heading_level: 2
+---
+
+## Common
+
+-   <Status>Fixed</Status> Fixed the log when the <em>uid.sh</em> file execution fails.
+
+-   <Status>Feature</Status> Added version.sh.
+
+-   <Status>Change</Status> Modified to read the IPV6 host.
+
+-   <Status>Change</Status> Modified the README file.
+
+-   <Status>Feature</Status> If the DB connection fails, <code>fatal_count</code> has been added.
+
+* * *
+
+## PostgreSQL
+
+-   <Status>Feature</Status> Added the cache metric.
+
+-   <Status>Feature</Status> Added horizon_xid.
+
+-   <Status>Feature</Status> Added the active session columns: <code>backend_type</code>, <code>backend_xmin</code>, and <code>backend_xid</code>. It is applied only in V2.
+
+-   <Status>Feature</Status> Added the conflict and tips metrics.
+
+-   <Status>Feature</Status> Added the active session columns: <code>backend_type</code>, <code>backend_xmin</code>, and <code>backend_xid</code>. It is applied only in V1.
+
+-   <Status>Feature</Status> Added the max runtime metric.
+
+-   <Status>Fixed</Status> Fixed the DB name duplication bug.
+
+-   <Status>Change</Status> Added xview and modified the pg statements.
+
+-   <Status>Fixed</Status> Modified <code>replication_lag</code>.
+
+-   <Status>Fixed</Status> Added deadtuple.
+
+* * *
+
+## MySQL
+
+<p><Status>Feature</Status> Added Tablesize and Filesize.</p>
+
+* * *
+
+## MS SQL Server
+
+<p><Status>Change</Status> Added the dop column in 13.x or later</p>
+
+* * *
+
+## Oracle
+
+-   <Status>Change</Status> Added the object info (2023-05-15, 2023-05-22).
+
+-   <Status>Feature</Status> Added the wait's content.
+
+* * *
+
+## MongoDB
+
+<p><Status>Feature</Status> Supported atlas.</p>

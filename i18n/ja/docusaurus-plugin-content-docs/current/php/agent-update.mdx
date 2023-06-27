@@ -9,11 +9,11 @@ tags:
   - アプリケーション
 ---
 
-パッケージアップデートは、既存の設定を維持したままPHPモニタリングサービスをアップデートします。0.2.7以降のバージョンから正常なアップデートが提供されます。以前のバージョンは削除後、**再インストール**が必要です。
+パッケージアップデートは、既存の設定を保持しながらPHPモニタリングサービスがアップデートされます。0.2.7以降のバージョンから通常のアップデートが提供されます。以前のバージョンは削除後、**再インストール**が必要です。
 
 :::caution
 
-Apache実行中にphp extensionの_shared library(.so)_ファイルが変更される場合、Apache Daemonが異常終了することがあります。必ずApacheサーバーを停止した状態でアップデートを進めてください。
+Apacheの実行中にphp extensionの_shared library(.so)_ファイルを変更する場合、Apache Daemonが異常終了することがあります。安全のために、Apacheサーバーを停止した状態でアップデートを進めてください。
 
 :::
 
@@ -25,7 +25,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
     $ yum clean all
     ```
 
-2.  ApacheまたはPHP-FPMのサービスを停止してください。
+2.  ApacheまたはPHP-FPMのサービス(Service)を停止します。
 
 3.  whatap-phpのパッケージをアップデートしてください。
 
@@ -35,7 +35,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
 
     :::note
 
-    特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
+    特定のバージョンをダウンロードしたい場合は、次のようにバージョンを指定します。
 
     ```bash
     $ yum update whatap-php-{version}
@@ -51,7 +51,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
     $ sudo apt-get update
     ```
 
-2.  ApacheまたはPHP-FPMのサービスを停止してください。
+2.  ApacheまたはPHP-FPMのサービス(Service)を停止します。
 
 3.  whatap-phpのパッケージをアップデートしてください。
 
@@ -61,7 +61,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
 
     :::note
 
-    特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
+    特定のバージョンをダウンロードしたい場合は、次のようにバージョンを指定します。
 
     ```bash
     $ sudo apt-get install whatap-php={version}
@@ -71,11 +71,11 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
 
 ## FreeBSD
 
-エージェントを削除した後、再インストールしてください。次の項目を参考にして進めてください。
+エージェントを削除して再インストールします。続行するには、次の項目を参照してください。
 
-1.  ApacheまたはPHP-FPMのサービスを停止
+1.  ApacheまたはPHP-FPMのサービス(Service)を停止
 
-2.  エージェントを削除した後、再インストール
+2.  エージェントを削除して再インストール
 
     ```bash
     $ /usr/whatap/php/install.sh remove
@@ -92,7 +92,7 @@ Apache実行中にphp extensionの_shared library(.so)_ファイルが変更さ�
 
     :::note
 
-    -   特定のバージョンにダウンロードしたい場合は、次のようにバージョンを明示してください。
+    -   特定のバージョンをダウンロードしたい場合は、次のようにバージョンを指定します。
 
         ```bash
         $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-php-{version}.txz

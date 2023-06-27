@@ -91,6 +91,9 @@
 .DocSearch {
   --docsearch-modal-width: 760px;
 }
+article[class*=searchResultItem] > h2 > a > span::after {
+  content: none !important;
+}
 
 html {
   line-height: 1.5;
@@ -607,6 +610,12 @@ main {
         }
       }
       &:not(:last-child):after {
+        content: " > ";
+        background: none;
+        font-size: .8em;
+        position: relative;
+        top: -1px;
+        color: var(--ifm-font-color-base);
         margin-left: 8px;
         margin-right: 8px;
         padding: 1px;
@@ -665,6 +674,7 @@ main {
     }
     .indentTab h3 code {
       font-size: 24px;
+      border: none;
     }
     h3 sup, .indentTab h3 sup {
       vertical-align: middle;

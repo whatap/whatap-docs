@@ -1,36 +1,52 @@
 :::caution
+
 LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
+
 :::
 
 ### ログモニタリング機能の活性化
 
--   **logsink_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      ログモニタリング機能をアクティブにします。
+-   **logsink_enabled** <span class='type'>Boolean</span>
 
--   **logsink_stdout_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      Javaアプリケーションで発生するSystem.outログを収集するかどうかを設定します。
+    デフォルト値`false`
 
--   **logsink_stderr_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      Javaアプリケーションで発生するSystem.errログを収集するかどうかを設定します。
+    ログモニタリング機能を有効にします。
 
--   **logsink_logback_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      logbackフレームワークログを収集するかどうかを設定します。
+-   **logsink_stdout_enabled** <span class='type'>Boolean</span>
 
--   **logsink_log4j_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      log4jフレームワークログを収集するかどうかを設定します。
+    デフォルト値`logsink_enabled`
 
--   **logsink_tomcat_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      Tomcatログを収集するかどうかを設定します。
+    Javaアプリケーションで発生するSystem.outログを収集するかどうかを設定します。
 
--   **logsink_custom_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      ユーザーカスタムログを収集するかどうかを設定します。
+-   **logsink_stderr_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`logsink_enabled`
+
+    Javaアプリケーションで発生するSystem.errログを収集するかどうかを設定します。
+
+-   **logsink_logback_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`logsink_enabled`
+
+    logbackフレームワークログを収集するかどうかを設定します。
+
+-   **logsink_log4j_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`logsink_enabled`
+
+    log4jフレームワークログを収集するかどうかを設定します。
+
+-   **logsink_tomcat_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`logsink_enabled`
+
+    Tomcatログを収集するかどうかを設定します。
+
+-   **logsink_custom_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`logsink_enabled`
+
+    ユーザー定義ログを収集するかどうかを設定します。
 
 ### フレームワークログ内容の収集
 
@@ -38,62 +54,88 @@ LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
 
 `hooklog_enabled`値を変更すると、再起動が必要です。`hooklog_enabled` のデフォルト値は`logsink_enabled`です。従って`logsink_enabled=true`として設定してJavaアプリケーションを再起動すると、`hooklog_enabled`は`true`として設定され`hooklog_logback_enabled`も`true`に設定されます。
 
--   **hooklog_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`logsink_enabled`<br/>
-      ログ追跡をアクティブにするかどうかを設定します。
+-   **hooklog_enabled** <span class='type'>Boolean</span>
 
--   **hooklog_logback_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`hooklog_enabled`<br/>
-      logbackフレームワークでのログ収集を追跡する機能をアクティブにするかどうかを設定します
+    デフォルト値`logsink_enabled`
 
--   **hooklog_log4j_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`hooklog_enabled`<br/>
-      log4jフレームワークでのログ収集を追跡する機能をアクティブにするかどうかを設定します
+    ログ追跡を有効にするかどうかを設定します。
 
--   **hooklog_tomcat_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`hooklog_enabled`<br/>
-      Tomcatログ追跡をアクティブにするかどうかを設定します。
+-   **hooklog_logback_enabled** <span class='type'>Boolean</span>
 
--   **hooklog_custom_methods**<br/>
-      ユーザーカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用してください。
-    ```ini title='예시'
+    デフォルト値`hooklog_enabled`
+
+    logbackフレームワーク収集ログ追跡を有効にするかどうかを設定します。
+
+-   **hooklog_log4j_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`hooklog_enabled`
+
+    log4jフレームワーク収集ログ追跡を有効にするかどうかを設定します。
+
+-   **hooklog_tomcat_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`hooklog_enabled`
+
+    Tomcatログ追跡を有効にするかどうかを設定します。
+
+-   **hooklog_custom_methods**
+
+    ユーザーカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用してください。
+
+    ```ini title='whatap.conf'
     hooklog_custom_methods=com.greatshop.common.Log.print
     ```
 
 ### ログ転送の設定
 
--   **logsink_queue_size** <span class='type'>Int</span><br/>
-      デフォルト値`1000`<br/>
-      ログ転送時のキューサイズ設定です。
+-   **logsink_queue_size** <span class='type'>Int</span>
 
--   **logsink_line_size** <span class='type'>Int</span><br/>
-      デフォルト値`512`<br/>
-      ログ転送時の単一ラインの最大サイズ設定です。
+    デフォルト値 `1000`
+
+    ログ転送時のキューサイズに対する設定です。
+
+-   **logsink_line_size** <span class='type'>Int</span>
+
+    デフォルト値 `512`
+
+    ログ送信時の単一ラインの最大サイズ設定です。
 
 ### ログの圧縮伝送
 
--   **logsink_zip_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`true`<br/>
-      収集したログデータを圧縮転送できます。
+-   **logsink_zip_enabled** <span class='type'>Boolean</span>
 
--   **debug_logsink_zip_enabled** <span class='type'>Boolean</span><br/>
-      デフォルト値`false`<br/>
-      ログデータを圧縮して転送するときにデバッグするかどうかを設定します。関連情報をエージェントログに表示します。
+    デフォルト値 `true`
 
--   **logsink_zip_min_size** <span class='type'>Int</span><br/>
-      デフォルト値`100`<br/>
-      ログを圧縮する時、転送する最小サイズを設定します。転送データが100bytes以下の場合、データを圧縮しません。
+    収集したログデータを圧縮転送できます。
 
--   **logsink_max_buffer_size** <span class='type'>Int</span><br/>
-      デフォルト値`65536`<br/>
-      収集したログデータのサイズが設定した値を超えると、データをサーバーに転送します。
+-   **debug_logsink_zip_enabled** <span class='type'>Boolean</span>
 
--   **logsink_max_wait_time** <span class='type'>Int</span><br/>
-      デフォルト値`2000`<br/>
-      収集したログデータをまとめて転送するために待機する最大時間を設定します。 設定した値を超えると、データがサーバーに転送されます。
+    デフォルト値`false`
 
--   **logsink_zip_libpath** <span class='type'>String</span><br/>
-      ログデータを圧縮転送する時、圧縮アルゴリズムの変更が可能です。 基本アルゴリズムはGZIPです。
-    ```ini title='예시'
+    ログデータを圧縮して送信するときにデバッグするかどうかを設定します。関連情報をエージェントログに表示します。
+
+-   **logsink_zip_min_size** <span class='type'>Int</span>
+
+    デフォルト値`100`
+
+    ログ圧縮転送の最小サイズを設定します。転送データが100 bytes 以下の場合、データを圧縮しません。
+
+-   **logsink_max_buffer_size** <span class='type'>Int</span>
+
+    デフォルト値`65536`
+
+    収集したログデータのサイズが設定した値を超えると、データをサーバーに送信します。
+
+-   **logsink_max_wait_time** <span class='type'>Int</span>
+
+    デフォルト値`2000`
+
+    収集したログデータをまとめて送信するために待機する最大時間を設定します。設定した値を超えると、データがサーバーに送信されます。
+
+-   **logsink_zip_libpath** <span class='type'>String</span>
+
+    ログデータを圧縮転送する際に圧縮アルゴリズムの変更が可能です。基本アルゴリズムはGZIPです。
+
+    ```ini title='whatap.conf'
     logsink_zip_libpath=/whatap/whatap-logsink-lz4-1.7.0.jar
     ```

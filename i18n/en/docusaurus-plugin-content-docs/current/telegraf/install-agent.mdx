@@ -20,7 +20,7 @@ Enable the `socket_writer output plugin` of the installed Telegraf to pass the d
 
 To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), you must create a project and install the agent to the target server. For more information about sign in, see [the following](../account/account-manage).
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -34,14 +34,21 @@ To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), yo
 <details>
 <summary>Configuring the Telegraf agent file</summary>
 
--   **whatap_telegraf** 
-      By using the service running file, this program sends the data from Telegraf to the collection server.       
--   **/etc/init.d/whatap-telegraf**(FreeBSD /usr/local/etc/whatap_telegraf)
-      Service script file.
+-   **whatap_telegraf**
+
+    By using the service running file, this program sends the data from Telegraf to the collection server.
+
+-   **/etc/init.d/whatap-telegraf** (FreeBSD /usr/local/etc/whatap_telegraf)
+
+    Service script file.
+
 -   **whatap.conf**
-      It is the configuration file. This is the file where the address of the collection server and the server's project access key are entered.
+
+    It is the configuration file. This is the file where the address of the collection server and the server's project access key are entered.
+
 -   **whatap-telegraf-#.log**
-      Agent log file. (_/usr/whatap/telegraf/logs_)
+
+    Agent log file. (_/usr/whatap/telegraf/logs_)
 
 </details>
 
@@ -51,14 +58,19 @@ To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), yo
 <TabItem value="rc" label="Red Hat/CentOS">
 
 1.  Install the WhaTap **repository**.
+
     ```bash title=SH
     $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
     ```
+
 2.  Install the **package** with the following command.
+
     ```bash title=SH
     $ sudo yum install whatap-telegraf
     ```
+
 3.  Run the **configuration script** to start the service.
+
     ```bash title=SH
     echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
     echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
@@ -69,16 +81,19 @@ To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), yo
 <TabItem value="du" label="Debian/Ubuntu">
 
 1.  Install the WhaTap **repository**.
+
     ```bash title=SH
     $ wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
     $ wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
     $ sudo dpkg -i whatap-repo_1.0_all.deb
     $ sudo apt-get update
     ```
+
 2.  Install the **package** with the following command.
     ```bash title=SH
     $ sudo apt-get install whatap-telegraf
     ```
+
 3.  Run the **configuration script** to start the service.
     ```bash title=SH
     echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
@@ -90,6 +105,7 @@ To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), yo
 <TabItem value="al" label="Amazon Linux">
 
 1.  Install the WhaTap **repository**.
+
     ```bash title=SH
     $ sudo rpm --import http://repo.whatap.io/centos/release.gpg
     $ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
@@ -98,11 +114,15 @@ To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), yo
     $ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
     $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
     ```
+
 2.  Install the **package** with the following command.
+
     ```bash title=SH
     $ sudo yum install whatap-telegraf
     ```
+
 3.  Run the **configuration script** to start the service.
+
     ```bash title=SH
     echo "license=[granted project access key]" |sudo tee /usr/whatap/telegraf/whatap.conf
     echo "whatap.server.host=[WhaTap server address]" |sudo tee -a /usr/whatap/telegraf/whatap.conf
@@ -113,11 +133,14 @@ To use the WhaTap service, after [sign in](https://www.whatap.io/en/signup/), yo
 <TabItem value="fb" label="FreeBSD">
 
 1.  Install the WhaTap **repository**.
+
     ```bash title=SH
     $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/freebsd/10/whatap-telegraf-0.0.4.txz
     $ pkg install whatap-telegraf-0.0.4.txz
     ```
+
 2.  Run the **configuration script** to start the service.
+
     ```bash title=SH
     echo "license=[granted project access key]" | tee /usr/whatap/telegraf/whatap.conf
     echo "whatap.server.host=[WhaTap server address]" | tee -a /usr/whatap/telegraf/whatap.conf
