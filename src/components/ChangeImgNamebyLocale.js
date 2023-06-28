@@ -1,6 +1,7 @@
 import React from 'react';
 import checkProduct from '@site/src/components/CheckProduct';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 export default function ChangeImgName({img, desc, className}) {
     const {
         i18n: {currentLocale},
@@ -10,9 +11,9 @@ export default function ChangeImgName({img, desc, className}) {
     let fileName = img.replace('.' + fext, '');
     let imgFilePath;
     if (currentLocale == 'ko') {
-        imgFilePath = '/img/' + fileName + '.' + fext;
+        imgFilePath = useBaseUrl('/img/' + fileName + '.' + fext);
     } else {
-        imgFilePath = '/img/' + fileName + '-' + currentLocale + '.' + fext;
+        imgFilePath = useBaseUrl('/img/' + fileName + '-' + currentLocale + '.' + fext);
     }
     function onError(e) {
         e.target.src = '/img/' + img;
