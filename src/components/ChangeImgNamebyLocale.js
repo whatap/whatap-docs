@@ -1,7 +1,7 @@
 import React from 'react';
 import checkProduct from '@site/src/components/CheckProduct';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-export default function ChangeImgName({img, desc}) {
+export default function ChangeImgName({img, desc, className}) {
     const {
         i18n: {currentLocale},
     } = useDocusaurusContext();
@@ -21,6 +21,7 @@ export default function ChangeImgName({img, desc}) {
         <p>
             <img src={imgFilePath} 
                 alt={desc} 
+                class={className}
                 onError={(e) => onError(e)}
             />
         </p>
