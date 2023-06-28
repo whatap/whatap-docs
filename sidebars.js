@@ -3274,7 +3274,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'PostgreSQL',
-          href: 'postgresql-v1/monitoring-intro',
+          href: 'postgresql/monitoring-intro',
         },
         {
           type: 'link',

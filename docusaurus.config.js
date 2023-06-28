@@ -223,7 +223,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'postgresql-v1/monitoring-intro',
+                docId: 'postgresql/monitoring-intro',
                 label: 'PostgreSQL',
               },
               {
