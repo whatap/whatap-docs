@@ -12,6 +12,7 @@ import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 import ImgLang from '@site/src/components/ChangeImgNamebyLocale.js'
 import Link from '@docusaurus/Link';
+import LinkImage from '@site/src/components/LinkImage.js';
 
 export default {
   // 기본 mapping 재사용
@@ -26,5 +27,6 @@ export default {
   TabItem,
   DocCardList,
   ImgLang,
-  Link
+  Link,
+  LinkImage
 };
