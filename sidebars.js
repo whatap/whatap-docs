@@ -2935,12 +2935,12 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_3_8',
+                id: 'release-notes/python/python-1_3_9',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_3_8',
+                  id: 'release-notes/python/python-1_3_9',
                   className: 'new',
                 },
                 'release-notes/python/python-1_3_6',
