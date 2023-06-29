@@ -346,11 +346,30 @@ If the data contains the `time` field, `time` becomes the top priority for sorti
 
 Before introducing the `JOIN` command, let's understand the concept of the command. The command, join is used to check the merged results of two query statements. At this time, the data to merge the results of the two queries based on which field must be passed, and this field is called `pk` or `primaryKey`.  
 
-![](https://img.whatap.io/media/images/mxql-11.png)
+| Time | Oid | \> | \> | \> | Fields |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| 2021-06-30 15:30:00 | 2031382584 | field_name_1 | field_name_2 | field_name_3 | field_name_4 |
+| ^ | ^ | sampleData | 123 | 2.543 | testData |
 
-![](https://img.whatap.io/media/images/mxql-12.png)
+<div class='table-desc'>Table 1. JOIN command sample data - first query result (pk = field_name_4)</div>
 
-![](https://img.whatap.io/media/images/mxql-13.png)
+| Time | Oid | > | > | > | Fields |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| 2021-06-30 15:30:00 | 2031382584 | field_name_4 | field_name_5 | field_name_6 | field_name_7 |
+| ^ | ^ | testData | myData | testData | myData |
+
+<div class='table-desc'>Table 2. JOIN command sample data - second query result (pk = field_name_4)</div>
+
+<div class='db-support-type'>
+
+| Time | Oid | \> | \> | \> | \> | \> | \> | Fields |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 2021-06-30 15:30:00 | 2031382584 | field_name_1 | field_name_2 | field_name_3 | field_name_4 | field_name_5 | field_name_6 | field_name_4 |
+| ^ | ^ | sampleData | 123 | 2.543 | testData | myData | testData | myData |
+
+<div class='table-desc'>Table 3. JOIN command sample data - results of joining two queries based on pk</div>
+
+</div>
 
 **Table 1** and **Table 2** display the query results. The `file_name_4` field set as `pk` appears in blue. **Table 3** displays the results of the two queries merged based on `file_name_4` that has been set as `pk`.  
 
@@ -369,7 +388,22 @@ INJECT default
 
 The example of a sample query result is as follows:
 
-![](https://img.whatap.io/media/images/mxql-14.png)
+<div class='db-support-type'>
+
+| Time | Oid | \> | \> | \> | \> | \> | \> | \> | Fields |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 2021-06-30 15:30:00 | 2031382584 | pcode | pname | ... | type | act0 | act3 | act8 | act |
+| ^ | ^ | sampleData | 123 | ... | testData | 0 | 1 | 0 | 1 |
+
+<div class='table-desc'>Table 4. Sample query result</div>
+
+</div>
+
+```sql
+CATEGORY agent_list
+FLEXLOAD
+JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8,act] }
+```
 
 :::note
 

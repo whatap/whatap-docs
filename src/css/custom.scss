@@ -1028,6 +1028,10 @@ main {
       margin: 20px 0;
       padding: 0;
     }
+    .table-desc {
+      font-size: .9em;
+      margin-top: -15px;
+    }
     p {
       margin: 0;
       padding: 8px 0;
@@ -1534,6 +1538,10 @@ main {
       }
     }
     .db-support-type {
+      margin-bottom: 24px;
+      .table-desc {
+        font-size: .9em;
+      }
       table {
         font-size: .75em;
         tr {
