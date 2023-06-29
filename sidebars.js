@@ -3082,7 +3082,7 @@ const sidebars = {
                   label: 'DBX',
                   collapsible: true,
                   collapsed: true,
-                  className: 'new',
+                  // className: 'new',
                   link: {
                     type: 'doc',
                     id: 'release-notes/db/dbx-1_6_7',
@@ -3091,7 +3091,7 @@ const sidebars = {
                     {
                       type: 'doc',
                       id: 'release-notes/db/dbx-1_6_7',
-                      className: 'new',
+                      // className: 'new',
                     },
                     'release-notes/db/dbx-1_6_6',
                     'release-notes/db/dbx-1_6_5',
