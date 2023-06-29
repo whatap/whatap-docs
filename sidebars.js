@@ -2863,7 +2863,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_9',
@@ -2872,7 +2872,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_8',
                 'release-notes/java/java-2_2_7',
@@ -2911,20 +2911,39 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Python',
+              label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_3_6',
+                id: 'release-notes/nodejs/nodejs-0_4_77',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_3_6',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_77',
+                  className: 'new',
                 },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Python',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/python/python-1_3_8',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/python/python-1_3_8',
+                  className: 'new',
+                },
+                'release-notes/python/python-1_3_6',
                 'release-notes/python/python-1_3_4',
                 'release-notes/python/python-1_3_3',
                 'release-notes/python/python-1_3_2',
@@ -2933,7 +2952,6 @@ const sidebars = {
                 'release-notes/python/python-1_2_4',
                 'release-notes/python/python-1_2_1',
                 'release-notes/python/python-1_2_0',
-                'release-notes/python/python-1_1_6',
                 'release-notes/python/python-previous',
               ],
             },
