@@ -13,10 +13,14 @@ export default function ChangeImgName({img, desc, className}) {
     if (currentLocale == 'ko') {
         imgFilePath = useBaseUrl('/img/' + fileName + '.' + fext);
     } else {
-        imgFilePath = useBaseUrl('/img/' + fileName + '-' + currentLocale + '.' + fext);
+        imgFilePath = useBaseUrl('/' + currentLocale + '/img/' + fileName + '-' + currentLocale + '.' + fext);
     }
     function onError(e) {
-        e.target.src = '/img/' + img;
+        if (currentLocale != 'ko') {
+            e.target.src = '/' + currentLocale + '/img/' + img;
+        } else {
+            e.target.src = '/img/' + img;
+        }
     }
     return (
         <p>
