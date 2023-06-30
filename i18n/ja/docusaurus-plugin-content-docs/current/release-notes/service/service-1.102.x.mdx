@@ -4,27 +4,51 @@ title: Service 1.102.X
 toc_max_heading_level: 3
 ---
 
+## Service 1.102.23
+
+2023년 6월 27일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>에러</UI> 탭에서 통계 데이터를 3일 이상 조건으로 조회하면 건수, 애플리케이션 비교 데이터가 조회되지 않는 현상 수정</p>
+
+</div>
+
+## Service 1.102.22
+
+2023년 6월 26일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>히트맵</UI> > <UI>히트맵 트랜잭션</UI> 위젯에서 <UI>DB 추적</UI> 버튼을 선택 시 나타나는 <UI>DB 추적</UI> 창의 <UI>DB 추이</UI> 버튼에 다국어 적용</p>
+
+</div>
+
 ## Service 1.102.21
 
-2023년 6월 22일
+2023年6月22日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 기능 실행 시 임계선이 차트의 범위를 넘어가는 현상 수정</p>
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリックス</UI>メニューで<UI>イベントルールテスト</UI>機能実行時、臨界線がチャートの範囲を超える現象の修正</p>
 
 * * *
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 목록</UI> 메뉴에서 비교를 위해 서버를 10개 초과 선택하면 표시되는 메시지 수정</p>
+<p><Status>Fixed</Status><UI>サーバー一覧</UI>><UI>サーバー一覧</UI>メニューで比較する際に、10個を超過するサーバーを選択したら表示されるメッセージの修正</p>
 
 </div>
 
 ## Service 1.102.20
 
-2023년 6월 21일
+2023年6月21日
 
 <div class='indentTab'>
 
@@ -32,75 +56,75 @@ toc_max_heading_level: 3
 
 #### Go
 
-**_관리_** > **_에이전트 설치_** 메뉴에서 다음의 내용을 수정합니다.
+**_管理_**>**_エージェント設定_**メニューに次の内容を追加します。
 
--   <Status>Fixed</Status> 에이전트 설치를 위한 GO 지원 버전 변경 (1.14 → 1.17)
+-   <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
 
--   <Status>Fixed</Status> Amazon linux 운영체제에서 <b>에이전트 다운로드</b> 섹션의 스크립트 코드에 역슬래쉬(\)가 누락된 부분 수정
+-   <Status>Fixed</Status>Amazon linuxオペレーティングシステムで<b>エージェントダウンロド</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
 
--   <Status>Fixed</Status> Alpine linux 운영체제에서 <b>Golang 라이브러리 사용</b> 섹션의 내용이 누락된 부분 수정
+-   <Status>Fixed</Status>Alpine linuxオペレーティングシステムで<b>Golangライブラリー使用</b>セクションの内容が表示されない部分の修正
 
--   <Status>Fixed</Status> <b>Golang 라이브러리 사용</b> 섹션의 스크립트 코드 내용을 모든 운영체제에 동일하게 적용
+-   <Status>Fixed</Status><b>Golangライブラリー使用</b>セクションのスクリプトコード内容がすべてのオペレーティングシステムに同じく適用されます
 
--   <Status>Feature</Status> 모든 운영체제에서 <b>에이전트 설정</b> 섹션에 안내 문구 추가
+-   <Status>Feature</Status>すべてのオペレーティングシステムで<b>エージェント設定</b>セクションに案内メッセージを追加
 
--   <Status>Feature</Status> Alpine linux 운영체제에서 <b>모니터링 시작하기</b> 섹션에 안내 문구 추가
+-   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに案内メッセージを追加
 
 #### PHP
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>Amazon linux</UI> 탭 > <b>에이전트 다운로드</b> 섹션 내용 중 스크립트 코드에 역슬래쉬가 누락된 부분 수정
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>Amazon linux</UI>タブ><b>エージェントダウンロード</b>セクション内容のうち、スクリプトコードにバックスラッシュが表示されない部分の修正
 
 </div>
 
 ## Service 1.102.19
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 목록 호출 시 조직 아이디가 반영되지 않는 오류 수정</p>
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボード一覧の呼び出す時、組織IDが反映されないエラーの修正</p>
 
 * * *
 
 ### `Application`, `Container`, `Server`
 
-#### 에이전트 설정 및 서버 설정
+#### エージェント設定 / サーバー設定
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴 또는 <UI>서버 설정</UI> > <UI>서버 설정</UI> 메뉴의 <UI>업무 디폴트</UI>, <UI>프로젝트 디폴트</UI> 탭에서 설정 적용 시 요청을 성공해도 에러 메세지가 나오는 현상 수정
+-   <Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューor<UI>サーバー設定</UI>><UI>サーバー設定</UI>メニューの<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブで設定を適用する時、 リクエストに成功してもエラーメッセージが表示される現象の修正
 
--   <Status>Fixed</Status> 설정이 적용된 대상의 아이디가 아닌 이름이 표시되도록 수정
+-   <Status>Fixed</Status>設定を適用する対象がIDではなく、名前で表示されるように修正
 
 </div>
 
 ## Service 1.102.18
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
 ### `Browser`
 
-<p><Status>Change</Status> <UI>프로젝트 목록</UI>에서 <code>Browser</code> 프로젝트 카드 뷰 내 차트 및 데이터 조회 쿼리 변경</p>
+<p><Status>Change</Status><UI>プロジェクトリスト</UI>にて <code>Browser</code>プロジェクトカードビュー内のチャート及び、データ照会クエリの変更</p>
 
 </div>
 
 ## Service 1.102.17
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> 상단 고정 메뉴의 가이드 문서 링크 선택 시 서비스에서 선택한 언어와 일치하는 가이드 문서로 이동하도록 수정</p>
+<p><Status>Fixed</Status>上段の固定メニューのガイド文書のリンクを選択する時、サービスで選択した言語と一致するガイド文書に移動するように修正</p>
 
 </div>
 
 ## Service 1.102.16
 
-2023년 6월 19일
+2023年6月19日
 
 <div class='indentTab'>
 
@@ -108,7 +132,7 @@ toc_max_heading_level: 3
 
 #### Oracle
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 <UI>액티브 세션</UI> 테이블의 <UI>SQL</UI> 항목을 선택하면 전달되는 해시값 수정</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下<UI>アクティブセッション</UI>テーブルの<UI>SQL</UI>項目を選択したら渡されるハッシュ値の修正</p>
 
 </div>
 

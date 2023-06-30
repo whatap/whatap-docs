@@ -39,12 +39,12 @@ WhaTap AmazonECSモニタリングはMETA APIおよびCgroupディレクトリ�
 Amazon ECS의 Launch Typeによって項目が区分されます。 モニタリング対象はTask, Service, Deployment, Container Instanceです。
 
 -   **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
-    
-  ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
+
+    ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
 
 -   **_Fargate Launch Type_**: Task, Service, Deployment
 
-  ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
+    ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
 
 次のモニタリング手順も**_EC2 Launch Type_**モニタリングのための手続きと**_Fargate Launch Type_**モニタリングのための手続きに区分されて行われます。
 
@@ -185,7 +185,7 @@ Amazon ECS launch typesについての詳しい説明は[次の文書](https://d
             ]
         }
         EOL
-        aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json
+        aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
         cat >ecs_readonly.json <<EOL
         {
             "Version": "2012-10-17",
@@ -207,7 +207,7 @@ Amazon ECS launch typesについての詳しい説明は[次の文書](https://d
             --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
         export POLICY_ARN=$(cat policy_arn.txt)
         aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
-            --policy-arn $POLICY_ARN | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
+          --policy-arn $POLICY_ARN
         ```
 
 3.  作成したIAM ROLEを搭載したWhatap-Singleエージェントを開始してください。 ECS APIを使用してサービス状態をリアルタイムで収集します。 

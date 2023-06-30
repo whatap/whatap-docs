@@ -1,4 +1,4 @@
-<Xclude product ='cubrid,redis'>
+<InDoc product ='mysql,mysql-v1'>
 
 -   **deadlock_interval** <span class='type'>Int</span>
 
@@ -6,7 +6,7 @@
 
     deadlock情報を読み込む間隔（単位: 分）を設定します。deadlock情報は、設定した間隔の間に発生した最後のdeadlock情報のみを読み込みます。
 
-</Xclude>
+</InDoc>
 
 <Xclude product ='redis'>
 
@@ -21,6 +21,12 @@
     デフォルト値`5`
 
     テーブル情報を保存するために情報を収集する時刻を設定します。デフォルトでは`5`であり、午前5時に収集を開始します。
+
+-   **tables_min_size** <span class='type'>Int</span>
+
+    デフォルト値`10`
+
+    테이블 정보를 수집할 때 설정한 값보다 작은 크기의 테이블 정보는 수집하지 않습니다. 테이블 데이터를 수집하는 최소 단위로 기본값은 10MB 입니다.
 
 -   **tables_min_row** <span class='type'>Int</span>
 
@@ -40,11 +46,31 @@
 
 </InDoc>
 
-<Xclude product ='cubrid,redis'>
+<Xclude product='cubrid,redis'>
 
 -   **replication_name** <span class='type'>String</span>
 
-    replication名を設定すると、同じ`replication_name`を持つDBの間にMaster/Slave関係があるものとみなされます。
+    리플리케이션 이름을 설정하면 동일한 `replication_name`을 갖는 DB 사이에 Master/Slave 관계가 있는 것으로 간주합니다.
+
+    리플리케이션 세트를 정의하는 옵션으로 마스터, 슬레이브 노드에 모두 동일한 값의 `replication_name` 옵션을 설정하면 **_인스턴스 모니터링_**에서 트리 구조로 표시됩니다. 또한 이 옵션 값을 기준으로 **_Flex 보드_**에서 리플리케이션 상태를 모니터링하는 위젯을 제공합니다.
+
+</Xclude>
+
+<InDoc product='postgresql'>
+
+-   **slave_ip** <span class='type'>string</span>
+
+    IP 주소 확인은 `select inet_server_addr();`로 합니다. 마스터 노드에서 `pg_stat_replication.client_addr`를 조회했을 때 나오는 IP 주소 중 하나여야 합니다. `replication_name` 옵션값이 동일하면서 Slave DB인 경우라면 `slave_ip`를 명시해야 합니다.
+
+    :::note
+
+    RDS의 경우 IP 주소 대신 `pg_replication_slots.slot_name`으로 Master/Slave 관계가 셋팅되므로 `slave_ip` 옵션을 설정하지 않아도 됩니다.
+
+    :::
+
+</InDoc>
+
+<Xclude product='cubrid,redis'>
 
 -   **skip_whatap_session** <span class='type'>Int</span>
 

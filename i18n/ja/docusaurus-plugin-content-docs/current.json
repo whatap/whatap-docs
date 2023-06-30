@@ -808,7 +808,7 @@
     "description": "The label for category 시작하기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.category.상품별 문서 바로가기": {
-    "message": "製品固有のドキュメントに移動",
+    "message": "製品",
     "description": "The label for category 상품별 문서 바로가기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.category.관리": {
@@ -849,7 +849,7 @@
   },
   "sidebar.indexSidebar.link.PostgreSQL": {
     "message": "PostgreSQL",
-    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to postgresql-v1/monitoring-intro"
+    "description": "The label for link PostgreSQL in sidebar indexSidebar, linking to postgresql/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Oracle": {
     "message": "Oracle",
@@ -1446,5 +1446,13 @@
   "sidebar.awslogSidebar.doc.VPC 설정하기": {
     "message": "VPC設定",
     "description": "The label for the doc item VPC 설정하기 in sidebar awslogSidebar, linking to the doc aws-log/install-aws-log-vpc"
+  },
+  "sidebar.releaseSidebar.category.Node.js": {
+    "message": "Node.js",
+    "description": "The label for category Node.js in sidebar releaseSidebar"
+  },
+  "sidebar.indexSidebar.link.AWS Log": {
+    "message": "AWS Log",
+    "description": "The label for link AWS Log in sidebar indexSidebar, linking to aws-log/introduction"
   }
 }

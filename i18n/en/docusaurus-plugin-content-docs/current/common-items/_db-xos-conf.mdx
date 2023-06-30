@@ -25,7 +25,11 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
 -   **file** <span class='type'>String</span>
 
-    To use the **_Log_** menus (**_Live Tail_**, **_Log Trend_**, **_Log Search_**, **_Log Setting_**), enter the absolute path in the `file` option for the log files to be monitored. 
+    To use the **_Log_** menus (**_Live Tail_**, **_Log Trend_**, **_Log Search_**, **_Log Setting_**), enter the absolute path in the `file` option for the log files to be monitored.
+
+    ```ini title='xos.conf'
+    file = /opt/postgresql/logs/postgresql.log
+    ```
 
     :::note
 

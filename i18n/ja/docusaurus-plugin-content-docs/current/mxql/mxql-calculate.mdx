@@ -346,28 +346,28 @@ DELETE [pcode]
 
 `JOIN`コマンドを説明する前に、joinの概念を見てみましょう。 joinは、２つのクエリの結果を結合するために使用します。このとき、2つのクエリの結果に基づいてどのフィールドに基準を合わせるかの情報を伝える必要があります。このフィールドを`pk`または`primaryKey`といいます。  
 
-| Time | Oid | \> | \> | \> | Fields |
-| :--: | :--: | :--: | :--: | :--: | :--: |
+|         Time        |     Oid    |      \>      |      \>      |      \>      |    Fields    |
+| :-----------------: | :--------: | :----------: | :----------: | :----------: | :----------: |
 | 2021-06-30 15:30:00 | 2031382584 | field_name_1 | field_name_2 | field_name_3 | field_name_4 |
-| ^ | ^ | sampleData | 123 | 2.543 | testData |
+|          ^          |      ^     |  sampleData  |      123     |     2.543    |   testData   |
 
-<div class='table-desc'>Table 1. JOIN command sample data - first query result (pk = field_name_4)</div>
+<div class='table-desc'>표1. JOIN 명령어 샘플 데이터 - 첫 번째 쿼리 결과(pk = field_name_4)</div>
 
-| Time | Oid | > | > | > | Fields |
-| :--: | :--: | :--: | :--: | :--: | :--: |
+|         Time        |     Oid    |       >      |       >      |       >      |    Fields    |
+| :-----------------: | :--------: | :----------: | :----------: | :----------: | :----------: |
 | 2021-06-30 15:30:00 | 2031382584 | field_name_4 | field_name_5 | field_name_6 | field_name_7 |
-| ^ | ^ | testData | myData | testData | myData |
+|          ^          |      ^     |   testData   |    myData    |   testData   |    myData    |
 
-<div class='table-desc'>Table 2. JOIN command sample data - second query result (pk = field_name_4)</div>
+<div class='table-desc'>표2. JOIN 명령어 샘플 데이터 - 두 번째 쿼리 결과(pk = field_name_4)</div>
 
 <div class='db-support-type'>
 
-| Time | Oid | \> | \> | \> | \> | \> | \> | Fields |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|         Time        |     Oid    |      \>      |      \>      |      \>      |      \>      |      \>      |      \>      |    Fields    |
+| :-----------------: | :--------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
 | 2021-06-30 15:30:00 | 2031382584 | field_name_1 | field_name_2 | field_name_3 | field_name_4 | field_name_5 | field_name_6 | field_name_4 |
-| ^ | ^ | sampleData | 123 | 2.543 | testData | myData | testData | myData |
+|          ^          |      ^     |  sampleData  |      123     |     2.543    |   testData   |    myData    |   testData   |    myData    |
 
-<div class='table-desc'>Table 3. JOIN command sample data - results of joining two queries based on pk</div>
+<div class='table-desc'>표3. JOIN 명령어 샘플 데이터 - 두 쿼리 결과를 pk를 기준으로 join한 결과</div>
 
 </div>
 
@@ -390,12 +390,12 @@ INJECT default
 
 <div class='db-support-type'>
 
-| Time | Oid | \> | \> | \> | \> | \> | \> | \> | Fields |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| 2021-06-30 15:30:00 | 2031382584 | pcode | pname | ... | type | act0 | act3 | act8 | act |
-| ^ | ^ | sampleData | 123 | ... | testData | 0 | 1 | 0 | 1 |
+|         Time        |     Oid    |     \>     |   \>  |  \> |    \>    |  \>  |  \>  |  \>  | Fields |
+| :-----------------: | :--------: | :--------: | :---: | :-: | :------: | :--: | :--: | :--: | :----: |
+| 2021-06-30 15:30:00 | 2031382584 |    pcode   | pname | ... |   type   | act0 | act3 | act8 |   act  |
+|          ^          |      ^     | sampleData |  123  | ... | testData |   0  |   1  |   0  |    1   |
 
-<div class='table-desc'>Table 4. Sample query result</div>
+<div class='table-desc'>표4. 샘플 쿼리 결과</div>
 
 </div>
 

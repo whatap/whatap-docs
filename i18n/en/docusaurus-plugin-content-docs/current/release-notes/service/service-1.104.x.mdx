@@ -1,0 +1,244 @@
+---
+id: service-1_104_x
+title: Service 1.104.X
+toc_max_heading_level: 3
+---
+
+## Service 1.104.02
+
+2023년 6월 29일
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> 프로젝트 내에서 조직이 변경되지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>조직 관리</UI> 메뉴에서 <UI>가이드 문서 보기</UI> 버튼 클릭 시 사용자가 선택한 언어의 가이드 문서로 이동하도록 수정
+
+-   <Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴의 대시보드에서 테이블 위젯의 경우 boolean 값을 확인할 수 있도록 수정
+
+</div>
+
+## Service 1.104.01
+
+2023년 6월 29일
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> 무료 프로젝트 10개 초과 생성 시 표시되는 에러 메시지 수정
+
+-   <Status>Fixed</Status> 시간 선택 UI에서 캘린더로 선택한 시간이 <UI>최근 검색 시간</UI> 목록에 저장되지 않는 버그 수정
+
+* * *
+
+### `Server`
+
+#### Alert
+
+-   <Status>Fixed</Status> <UI>이벤트 설정</UI> 메뉴에서 비활성화된 서버의 알림 설정 여부가 표시되지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>로그 파일 / 윈도우 이벤트</UI>의 이벤트를 현재 프로젝트에 복사 시 정상 처리됐음에도 에러 메시지가 표시되는 버그 수정
+
+* * *
+
+## `Database`
+
+### PostgreSQL V2
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>SQL 통계</UI> 메뉴에서 <UI>결과 내 검색</UI> 기능이 동작하지 않는 문제 수정
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 테이블의 정렬이 초기화되는 현상 수정
+
+-   <Status>Fixed</Status> <UI>분석</UI> > <UI>카운트 추이 비교</UI> 메뉴에서 화면 아래 테이블의 스크롤을 가장 아래까지 이동해야 좌우 스크롤바가 보이는 현상 수정
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI>, <UI>멀티 인스턴스 모니터링</UI> 메뉴에서 <UI>세션 상세</UI> 창의 <UI>Session Info</UI> 데이터가 위치한 요소의 너비보다 텍스트가 길어지는 경우를 대비한 CSS 수정
+
+</div>
+
+## Service 1.104.00
+
+2023년 6월 28일
+
+<div class='indentTab'>
+
+### `AWS Log`
+
+<p><Status>New</Status> <b>AWS Log</b> 모니터링 서비스를 오픈했습니다. Thanks for your use! 상품에 대한 자세한 내용은 <a href='../../aws-log/introduction'>다음 문서</a>를 참조하세요.</p>
+
+* * *
+
+### `Common`
+
+-   <Status>Fixed</Status> Fixed some incorrect translations in Japanese screens.
+
+-   <Status>Deprecate</Status> 다국어 서비스 중 중국어 지원 중단
+
+#### 사이드 바
+
+-   <Status>Feature</Status> 사이드 바에서 프로젝트 이름에 프로젝트 전체 이름을 표시하는 툴팁 추가
+
+-   <Status>Change</Status> Changed the <code>AWS Log</code> project icon in the sidebar.
+
+#### Dashboard
+
+-   <Status>Change</Status> Modified the series-chart design.
+
+    | Before modification                             | After modification                            |
+    | ----------------------------------------------- | --------------------------------------------- |
+    | ![before](/img/release/series-chart-before.png) | ![after](/img/release/series-chart-after.png) |
+
+-   <Status>Change</Status> Modified the hitmap button design.
+
+    | Before modification                              | After modification                             |
+    | ------------------------------------------------ | ---------------------------------------------- |
+    | ![before](/img/release/hitmap-button-before.png) | ![after](/img/release/hitmap-button-after.png) |
+
+#### Flex Board
+
+<p><Status>Change</Status> Modified UIs to restrict the dashboard editing based on the <b>Project Flex Board Edit</b> role.</p>
+
+#### Report
+
+-   <Status>Feature</Status> <UI>통합 보고서</UI> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정
+
+    -   **Previous**: The end time can be selected up to 23:59 for the previous day.
+
+    -   **Change**: The end time can be selected up to 1 hour before the current time (current time - 1 hour).
+
+-   <Status>Fixed</Status> <UI>통합 보고서</UI> > <UI>일간 보고서</UI> 메뉴에서 <UI>종료 시간</UI>을 금일로 선택 시 선택 시간 자동 교정 로직 제거
+
+#### Alert
+
+-   <Status>Feature</Status> <UI>이벤트 수신 설정</UI> > <UI>사용자별 이벤트 수신 설정</UI> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가
+
+-   <Status>Fixed</Status> <UI>이벤트 수신 설정</UI> 메뉴에서 이메일, SMS, WhatsApp, 모바일 알림 컬럼의 최소 너비 설정
+
+-   <Status>Fixed</Status> <UI>이벤트 수신 설정</UI> 메뉴에서 각 사용자의 수신 설정에 대한 상세 내용을 확인할 때(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/> 버튼 선택 시) 설정 내용이 수직으로 위(Top) 정렬되도록 스타일 수정
+
+#### Management
+
+-   <Status>Feature</Status> Added the <b>Project Flex Board Edit</b> role.
+
+-   <Status>Fixed</Status> <UI>에이전트 설정</UI> 메뉴에서 다중 적용 api 수정
+
+-   <Status>Feature</Status> In <UI>Create Organization</UI> and <UI>Organization Management</UI>, added the logo image guide message (guide to the recommended image size, file capacity, and extension).
+
+-   <Status>Feature</Status> In <UI>Member List</UI>, repositioned the member deletion and role modification buttons to the member name column.
+
+-   <Status>Change</Status> In <UI>Manage account INFO.</UI>, modified the user's password setting rule to 9 characters.
+
+-   <Status>Feature</Status> <UI>계정 정보 관리</UI> > <UI>사용자 전화번호</UI>, <UI>알림 수신 설정</UI> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> 서비스 화면의 언어가 영어로 설정된 상태에서 Python 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Virtual Environment 활성화</UI> 섹션에서 오타 수정</p>
+
+* * *
+
+### `Server`
+
+#### Alert
+
+-   <Status>Feature</Status> In <UI>Event setting</UI>, added the option to <UI>copy to the current project to into the </UI><UI>Copying Event Settings</UI> (<b>Copy policy</b> in the past) function.
+
+-   <Status>Change</Status> In <UI>Event setting</UI>, modified the <UI>Copying Event Settings</UI> function as follows.
+
+    -   **Previous**: If you duplicate an event in the target project using the same title of the copied event, it is overwritten with the last copied event.
+
+    -   **Change**
+
+        -   As the event title, `{Copied Event Name}(copy)` is used.
+        -   If the events are duplicated in the target project, events are created as many times as the copied count.
+
+* * *
+
+### `Database`
+
+#### PostgreSQL
+
+-   <Status>New</Status> <b>PostgreSQL V2</b> 모니터링 서비스를 오픈했습니다. To check the features changed compared to the previous, see <a href='../../postgresql/monitoring-intro#new-feature'>the following</a>.
+
+-   <Status>Change</Status> Modified to access the 3 following menus via <UI>Sitemap</UI> among <b>PostgreSQL V2</b> menus.
+
+    -   **_Analysis_** > **_Log File Viewer_**
+
+    -   **_Alert_** > **_File Log Alert_**
+
+    -   **_Management_** > **_Cloud Monitoring_**
+
+* * *
+
+### `Container`
+
+#### Dashboard
+
+-   <Status>Feature</Status> <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>로그</UI> > <UI>로그 검색</UI> 탭에 로그 조회 권한 및 상태에 따라 메시지를 다르게 표시
+
+-   <Status>Feature</Status> <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>이벤트</UI> 탭에 이벤트 개수를 표시하는 <UI>이벤트 수 추이</UI> 차트 추가
+
+-   <Status>Feature</Status> <UI>컨테이너 맵</UI> 메뉴에 <UI>불일치</UI> 필터 옵션 추가
+
+#### Resources
+
+-   <Status>Fixed</Status> <UI>노드 상세</UI> 메뉴에서 하단 컨테이너 영역의 컨테이너 구성 정보 컬럼 순서 변경
+
+-   <Status>Change</Status> <UI>컨테이너 볼륨</UI> 메뉴에서 <img src='/img/ico-search.svg' alt='검색 아이콘'/> 버튼을 선택해야 목록이 출력된다는 안내 메시지 추가
+
+-   <Status>Feature</Status> <UI>퍼포먼스 요약</UI> 메뉴에 컨테이너 수, 파드 수 추이 차트 추가
+
+<!---->
+
+-   <Status>Fixed</Status> In <UI>Container list</UI>, fixed the bug where the dark theme is not applied.
+
+-   <Status>Fixed</Status> <UI>컨테이너 목록</UI> 메뉴에서 설치된 에이전트가 없을 경우 로딩 애니메이션이 아닌 설치된 에이전트가 없다는 안내 메시지가 나오도록 수정
+
+#### Management
+
+-   <Status>Fixed</Status> <UI>에이전트 설치</UI> 메뉴에서 안내 문구 수정
+
+-   <Status>Fixed</Status> 서비스 화면의 언어가 일본어로 설정된 상태에서 <UI>에이전트 설치</UI> 메뉴의 일본어 문구 수정
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> <UI>로그</UI> 하위 메뉴에서 <img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>테이블 설정</UI> > <UI>컬럼 설정</UI>에 <UI>컬럼 추가</UI> 항목으로 <UI>timestamp</UI> 추가
+
+-   <Status>Change</Status> 파서 시뮬레이션 실패 시 노출되는 메시지 변경
+
+-   <Status>Feature</Status> <UI>로그 검색기</UI> 메뉴에서 선택한 로그와 인접한 시간대의 로그를 조회할 수 있는 기능 추가
+
+-   <Status>Feature</Status> <UI>로그 검색기</UI>, <UI>로그 트렌드</UI>, <UI>트랜잭션 로그</UI> 메뉴에서 키워드 하이라이팅 기능 추가
+
+-   <Status>Fixed</Status> <UI>로그 설정</UI> > <UI>로그 장기 보관 통계</UI> 메뉴에서 로그 검출 조건 추가 시 <UI>로그 검출 조건</UI> 검색 키를 입력하지 않으면 출력되는 안내 메시지 수정
+
+* * *
+
+### `Browser`
+
+#### Report
+
+<p><Status>Feature</Status> Added the <UI>Report</UI> > <UI>Daily Browser Report</UI> menu.</p>
+
+#### Dashboard
+
+<p><Status>Feature</Status> In <UI>Browser Error</UI>, added the error details screen.</p>
+
+#### Analytics
+
+-   <Status>Feature</Status> In <UI>Pageload Hitmap</UI>, added the OS version and client IP in the pageload details.
+
+-   <Status>Change</Status> In <UI>Pageload Hitmap</UI>, changed the <UI>Filter URL Group List</UI> function to <UI>Page URL Search</UI>.
+
+-   <Status>Change</Status> In <UI>Error Trace</UI>, modified the error stack view UI.
+
+* * *
+
+### `Laboratory`
+
+<p><Status>Feature</Status> <code>Container</code>, <code>Java</code> 상품에 <UI>사이트 맵</UI>  > <UI>실험실</UI> > <UI>Remote Access Status</UI> 메뉴 추가</p>
+
+</div>

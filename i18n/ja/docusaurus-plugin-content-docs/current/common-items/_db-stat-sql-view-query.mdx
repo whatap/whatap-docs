@@ -1,6 +1,6 @@
 ### クエリ別の実行推移を確認
 
-<Xclude product='postgresql,postgresql-v1'>
+<Xclude product='postgresql'>
 
 テーブル各項目別の一番左の![数字1](/img/number-01.png)►ボタンを選択してください。該当クエリ文の5分当たりの実行回数と平均実行時間を確認できるチャートが出ます。各棒グラフにマウスをオーバーすると、その時間の数値を確認できます。
 
@@ -8,17 +8,23 @@
 
 </Xclude>
 
-<InDoc product='postgresql,postgresql-v1'>
+<InDoc product='postgresql'>
 
 テーブル各項目別の一番左の![数字3](/img/number-03.png)►ボタンを選択してください。該当クエリ文の5分当たりの実行回数と平均実行時間を確認できるチャートが出ます。各棒グラフにマウスをオーバーすると、その時間の数値を確認できます。
 
-使用区分別にデータを分類して照会するには![数字4](/img/number-02.png)で希望するタブを選択してください。
+:::note
+
+그래프 차트에서 원하는 시간의 막대 그래프를 선택하면 **_인스턴스 모니터링_** 메뉴로 이동합니다. 선택한 시간의 지표를 확인할 수 있습니다. 인스턴스 모니터링에 대한 자세한 내용은 [다음 문서](instance-monitoring)를 참조하세요.
+
+:::
+
+使用区分別にデータを分類して照会するには![数字2](/img/number-02.png)で希望するタブを選択してください。
 
 </InDoc>
 
 ### クエリの詳細
 
-<Xclude product='postgresql,postgresql-v1'>
+<Xclude product='postgresql'>
 
 ![数字3](/img/number-03.png)クエリ文を選択してください。クエリ文とSQL Planを詳しく確認できる**_SQLを見る_**ウィンドウが表示されます。
 
@@ -26,7 +32,7 @@
 
 </Xclude>
 
-<InDoc product='postgresql,postgresql-v1'>
+<InDoc product='postgresql'>
 
 ![数字2](/img/number-02.png)クエリ文を選択してください。クエリ文とSQL Planを詳しく確認できる**_SQL 詳細_**ウィンドウが表示されます。詳細については、[次の文書](#query-details)を参考にしてください。
 

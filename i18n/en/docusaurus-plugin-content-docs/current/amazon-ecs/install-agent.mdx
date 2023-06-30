@@ -40,11 +40,11 @@ Items are distinguished depending on the launch type of Amazon ECS. Monitoring t
 
 -   **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
 
-  ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
+    ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
 
 -   **_Fargate Launch Type_**: Task, Service, Deployment
 
-  ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
+    ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
 
 The following monitoring procedures are also divided into the procedure for **_EC2 Launch Type_** monitoring and the procedure for **_Fargate Launch Type_** monitoring.
 
@@ -185,7 +185,7 @@ For more information about the Amazon ECS launch types, see [the following](http
             ]
         }
         EOL
-        aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json
+        aws iam create-role --role-name $WHATAP_ECS_ROLE_READONLY --assume-role-policy-document file://ecs_trust.json | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
         cat >ecs_readonly.json <<EOL
         {
             "Version": "2012-10-17",
@@ -207,7 +207,7 @@ For more information about the Amazon ECS launch types, see [the following](http
             --policy-document file://ecs_readonly.json | python -c 'import json,sys;print(json.load(sys.stdin)["Policy"]["Arn"])' > policy_arn.txt
         export POLICY_ARN=$(cat policy_arn.txt)
         aws iam --region $REGION attach-role-policy --role-name $WHATAP_ECS_ROLE_READONLY \
-            --policy-arn $POLICY_ARN | python -c 'import json,sys;print(json.load(sys.stdin)["Role"]["Arn"])' > role_arn.txt
+          --policy-arn $POLICY_ARN
         ```
 
 3.  Start the whatap-single agent with the created IAM ROLE. Service status is collected in real time by using the ECS API. 
