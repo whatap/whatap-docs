@@ -2941,14 +2941,15 @@ const sidebars = {
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'release-notes/preview/preview-1_103_x',
+        id: 'release-notes/preview/preview-1_105_x',
       },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1_103_x', 
+          id: 'release-notes/preview/preview-1_105_x', 
           className: 'new',
         },
+        'release-notes/preview/preview-1_103_x',
         'release-notes/preview/preview-1_101_x',
         'release-notes/preview/preview-1_99_x',
         'release-notes/preview/preview-1_97_x',
