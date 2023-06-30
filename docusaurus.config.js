@@ -233,7 +233,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'mysql/monitoring-intro',
+                docId: 'mysql-v1/monitoring-intro',
                 label: 'MySQL',
               },
               {
@@ -401,9 +401,16 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'mysql-v1/monitoring-intro',
+            position: "left",
+            label: 'MySQL 모니터링 V1',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'mysql/monitoring-intro',
             position: "left",
-            label: 'MySQL 모니터링',
+            label: 'MySQL 모니터링 V2',
             className: 'hidden',
           },
           {
