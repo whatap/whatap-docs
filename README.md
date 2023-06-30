@@ -81,3 +81,5 @@ aws-log-lt.mdx
 라이선스 페이지 국문과 맞출 것
 
 i18n/ja/docusaurus-plugin-content-docs/current/telegraf/introduction.mdx 국문 파일 인덴트 수정
+
+license-open-sources -> ``` 삭제할 것
