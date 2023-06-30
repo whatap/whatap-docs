@@ -10,7 +10,13 @@ tags:
 
 Home > Select Project > **_Dashboard_** > **_Container Map_**
 
-The **_Container Map_** in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod.
+The **_Container Map_** in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod. 
+
+-   컨테이너 맵을 통해 분석 대상을 선택하고 그룹을 구성할 수 있습니다. 
+
+-   상태 지표 및 임계치를 설정해 개별 컨테이너 또는 Pod의 상태를 한 눈에 볼 수 있습니다.
+
+-   개별 컨테이너 또는 Pod를 선택해 상세 정보를 확인할 수 있습니다. **_트레이스_**, **_메트릭스_**, **_로그_**, **_이벤트_**와 같은 핵심 모니터링 데이터를 제공합니다.
 
 The following video clip is the guide to the **_Container Map_** menu.
 
@@ -18,7 +24,7 @@ The following video clip is the guide to the **_Container Map_** menu.
 
 ## Basic screen guide
 
-![Container Map](/img/kube-container-map-01.png)
+![Container Map](/img/k8s-container-map.png)
 
 :::info
 
@@ -28,41 +34,27 @@ In the container map, the single polygon is called a block. At this time, the bl
 
 :::
 
-### ![](/img/number-01.png) Container or Pod
+### ![](/img/number-01.png) Go to Cluster Project - Namespace Project
 
-The shapes and designs for each object represent the characteristics and states of the container or pod.
+![Container map project list](/img/k8s-namespace-project-list.png)
 
--   Color: Container or pod state. For more information, see [the following](container-status).
-
--   Border
-
-    -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
-
-    -   If there are 2 containers in a pod and the microagents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have microagents installed, the borders are displayed.
-
-### ![](/img/number-02.png) Go to Cluster Project - Namespace Project
-
-![Container map project list](https://img.whatap.io/media/images/whatap_kubernetes_container_map_namespace_project_list.png)
-
-If a namespace project is created under a cluster project, you can check the list of projects including cluster projects and move between projects through the project list box on the container map screen.
+클러스터 프로젝트 ![클러스터 프로젝트 아이콘](/img/ic-cluster-project.svg) 하위에 네임스페이스 프로젝트를 생성한 경우 컨테이너 맵 화면 위의 ![아래 화살표 아이콘](/img/ico-more-down.svg) **_더보기_** 아이콘 선택 시 프로젝트 리스트 박스가 나타납니다. 프로젝트 리스트 박스를 통해 클러스터 프로젝트를 포함한 프로젝트 목록을 확인하고 프로젝트 간 이동할 수 있습니다. 
 
 :::note
 
--   WhaTap Kubernetes Service's **cluster project** is a new name for the **master project**.
-
--   For more information about the namespace project creation, see [the following](namespace).
+네임스페이스 프로젝트 생성 및 관리에 관한 자세한 내용은 [다음 문서](namespace)를 참조하세요.
 
 :::
 
-### ![](/img/number-03.png) User configuration
+### ![](/img/number-02.png) User configuration
 
 ![User configuration](/img/container-map-custom-view.png)
 
 A container map provides multiple user settings that allow you to create any desired screen view. The functions available in the screen are as follows in order.
 
--   Category: You can select **_Container_** or **_Pod_**.
+-   카테고리: 분석 대상을 선택할 수 있습니다. **_Container_** 또는 **_Pod_**를 지정할 수 있습니다.
 
--   **_Grouping_** (clustering): You can select conditions for grouping. The containers or pods are classified into cards based on the selected conditions. For more information, see [the following](container-group).
+-   **_그룹화_**: **_그룹화_**(클러스터링) 옵션을 통해 클러스터 구성 요소 간의 계층관계를 총 2단계까지 표현할 수 있습니다. 자세한 내용은 [다음 문서](container-group)를 참조하세요.
 
 -   **_ConState(state)_**: You can select any chart metric.
 
@@ -90,57 +82,7 @@ A container map provides multiple user settings that allow you to create any des
 
 -   **_Selected metrics_**: The chart metric selected in **_ConState(state)_** is displayed.
 
-### Summary view and Detailed view
-
-You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
-
--   **트레이스** (Trace)
-
-    컨테이너 상의 애플리케이션 추적을 위한 APM 도구를 의미합니다. 
-
--   **메트릭스** (Metrics)
-
-    노드, 쿠버네티스의 다양한 지표 데이터를 의미합니다. 
-
--   **로그** (Log)
-
-    컨테이너, 애플리케이션의 각종 로그를 의미합니다.
-
--   **이벤트** (Event)
-
-    쿠버네티스 이벤트, 사용자 정의 이벤트를 의미합니다. 
-
-Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
-
-#### Summary view
-
-Click a specific object or a set of objects. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
-
-![Summary view](https://img.whatap.io/media/images/whatap_kubernetes_container_map_right_summary.png)
-
--   **_트레이스_**
-
-    컨테이너 맵의 **_트레이스_** 탭을 통해 컨테이너 상에서 실행되는 애플리케이션의 개별 트랜잭션을 추적할 수 있습니다.
-
--   **_Metrics_**
-
-    컨테이너 맵의 **_메트릭스_** 탭을 통해 각 컨테이너의 자원 할당량, 사용량 등의 각종 지표 데이터를 실시간으로 확인할 수 있습니다.
-
--   **_Log_** 
-
-    컨테이너 맵의 **_로그_** 탭을 통해 각 컨테이너의 표준 출력 로그 및 컨테이너 상의 애플리케이션이 생성하는 로그를 통합 관리, 조회할 수 있습니다.
-
--   **_Event_** 
-
-    컨테이너 맵의 **_이벤트_** 탭을 통해 쿠버네티스 클러스터에서 발생한 이벤트 및 와탭의 경고 기능을 이용한 사용자 임계치 기반 이벤트의 통합 조회가 가능합니다. 
-
-#### Display Detail
-
-**요약 보기** 화면의 오른쪽 위에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) 버튼을 클릭하세요. **상세 보기** 화면으로 전환합니다. **상세 보기** 화면 구성에 대한 자세한 안내는 [다음 문서](container-map-detail-mode)를 참조하세요.
-
-![Detailed view](/img/container-map-detail-mode.png)
-
-### Real-time and historical inquiries
+#### Real-time and historical inquiries
 
 Container maps are based on real-time lookups based on multiple viewpoints. Use the time selector at the top right of the screen to change the real-time inquiry.
 
@@ -151,3 +93,80 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 | Real-time inquiry (LIVE)    | Default mode<br/>Real-time status changes every 10 seconds.                           |
 | Paused inquiry (PAUSE)      | Real-time status change OFF<br/>Used to check the current status in detail.           |
 | Historical inquiry          | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute                   |
+
+### ![](/img/number-03.png) 컨테이너 맵 차트
+
+![컨테이너 맵 차트](/img/k8s-container-map-chart.png)
+
+-   ![number 1](/img/char-a.svg) 그룹화된 대상 전체 개수 및 주요 리소스 개수를 나타냅니다.
+
+-   ![number 2](/img/char-b.svg) 각 개체의 모양과 색상은 컨테이너 또는 Pod의 특성과 상태를 나타냅니다.
+
+    -   색상 : 컨테이너 또는 Pod의 상태를 의미합니다. <span class='normal'>Normal</span>, <span class='slow'>Warning</span>, <span class='vslow'>Critical</span> 외 상태에 대한 자세한 내용은 [다음 문서](container-status)를 참조하세요.
+
+    -   Border
+
+        -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
+
+        -   If there are 2 containers in a pod and the micro agents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have micro agents installed, the borders are displayed.
+
+-   ![number 3](/img/char-c.svg) 그룹화된 대상의 CPU 및 Memory 관련 지표를 나타냅니다.
+
+-   ![number 4](/img/char-d.svg) 그룹화된 대상 내부 애플리케이션의 트랜잭션 정보를 나타냅니다.
+
+## Summary view and Detailed view
+
+You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
+
+-   **Trace**
+
+    It is the APM tool to trace applications on the container. 
+
+-   **Metrics**
+
+    They are various metrics data for nodes and Kubernetes. 
+
+-   **Log**
+
+    Various logs for containers and applications.
+
+-   **Event**
+
+    컨테이너와 애플리케이션 실행 과정에서 발생하는 이벤트를 기록한 것을 의미합니다. 
+
+Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
+
+### Summary view
+
+Click a specific object or a set of objects. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
+
+![Summary view](https://img.whatap.io/media/images/whatap_kubernetes_container_map_right_summary.png)
+
+-   **_Trace_**
+
+    Under the **_Trace_** tab in the container map, you can trace each individual transactions of the applications running on the container.
+
+-   **_Metrics_**
+
+    Under the **_Metrics_** tab in the container map, you can see various metrics data such as resource quotas and usages for each container in real time.
+
+-   **_Log_** 
+
+    Under the **_Log_** tab in the container map, you can manage and view standard logs for each container and application logs on the container.
+
+-   **_Event_** 
+
+    Under the **_Event_** tab in the container map, you can see integrated views for the events that occurred in the Kubernetes cluster and user threshold events based on the WhaTap's alert function. 
+
+### Display Detail
+
+On the upper right of **View Summarized**, click ![View Detailed icon](/img/ico-detail-mode.svg). The **View Detailed** screen appears. For more information about **View Detailed** screen layout, see [the following](container-map-detail-mode).
+
+![Detailed view](/img/container-map-detail-mode.png)
+
+<!-- 
+
+그룹화 옵션
+그룹화할 수 있는 조건을 선택할 수 있습니다. 컨테이너 또는 Pod를 선택한 조건에 따라 카드로 구분해 표시합니다.
+
+-->

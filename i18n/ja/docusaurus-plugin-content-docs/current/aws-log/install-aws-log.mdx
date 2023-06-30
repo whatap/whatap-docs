@@ -43,7 +43,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 </details>
 
-<!--  프로젝트 생성 -->
+<!--  プロジェクト作成 -->
 
 {@include: ../getting-started/_create-project-v2.mdx}  
 
@@ -99,7 +99,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
     `UseReservedConcurrency`の値が`true`である場合、WhaTap Forwarderに割り当てるFunctionの個数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunctionの数は1,000個です。ユーザーが使用できるFunctionの総個数はアカウントあたりの総割り当てFunction個数(1,000)で`ReservedConcurrency`の設定値を引いたものに制限されます。
 
-    <!-- 사용자는 AWS 계정 당 할당 가능한 총 Function 개수에서 `ReservedConcurrency` 설정 값을 뺀 만큼 Function을 사용할 수 있습니다. -->
+    <!-- ユーザは、AWSアカウントあたりの割り当て可能なFunction数から`ReservedConcurrency`設定値を引いた分だけFunctionを使用することができます。-->
 
 ### CloudFormation Stackインストール
 
@@ -271,7 +271,7 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 ### IAMロールの作成{#create-iam-role}
 
-<!-- 어떤 AWS 계정 ID로 생성된 자원에 대해 권한을 허용할지를 지정하고 직전에 생성한 IAM 정책을 매핑합니다. -->
+<!-- どのAWSアカウントIDで生成されたリソースに対して権限を許可するかを指定し、直前に生成したIAMポリシーをマッピングします。 -->
 
 作成されたリソースの権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS IAMロール作成_**タブを参照して進めてください。 
 

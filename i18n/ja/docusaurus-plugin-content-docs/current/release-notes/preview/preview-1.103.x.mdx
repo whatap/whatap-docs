@@ -14,70 +14,106 @@ toc_max_heading_level: 3
 
 :::
 
-## Preview 1.103.28
+## Preview 1.103.29
 
-2023년 6월 23일
-
-<div class='indentTab'>
-
-### `Database`
-
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 <UI>프리셋 저장</UI> 버튼의 <b>프리셋 저장</b> 문구 삭제</p>
-
-</div>
-
-## Preview 1.103.27
-
-2023년 6월 23일
-
-<div class='indentTab'>
-
-### `Application`
-
-<p><Status>Feature</Status> 대시보드 메뉴에서 히트맵 위젯의 차트 영역을 드래그 시 호출되는 트레이스 분석 팝업창 추가</p>
-
--   분석 동선과 사용성 개선
-    -   트랜잭션 데이터 분석 Depth 개선
-    -   교차/비교 분석환경 개선
-    -   데이터 분석 환경의 직관성 개선
-    -   정보의 인지성과 가독성, 편의성 개선
-
--   기능적 개선 및 기타
-    -   트랜잭션 리스트 내 컬럼 위치 변경 및 데이터 테이블 폭 조절 개선
-    -   다이어그램과 스택 구간의 연동
-    -   TXT, SQL 다운로드 파일의 데이터 정렬
-
-</div>
-
-## Preview 1.103.26
-
-2023년 6월 22일
+2023년 6월 26일
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 기능 실행 시 임계선이 차트의 범위를 넘어가는 현상 수정
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 각 사용자의 수신 설정에 대한 상세 내용을 확인할 때(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/> 버튼 선택 시) 설정 내용이 수직으로 위(Top) 정렬되도록 스타일 수정
 
--   <Status>Feature</Status> 다음 메뉴에서 <b>WhatsApp</b> 알림 설정 추가
-
-    -   **_アカウント情報管理_** > **_ユーザー電話番号_**, **_アラート受信設定_**
-
-    -   **_アラート通知_** > **_イベント受信設定_** > **_ユーザー別アラート受信設定_**
-
--   <Status>Change</Status> <UI>계정 정보 관리</UI> 메뉴에서 사용자 비밀번호 설정 규칙을 9자리로 변경
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 이메일, SMS, WhatsApp, 모바일 알림 컬럼의 최소 너비 설정
 
 * * *
 
-### `Server`
+### `Application`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 목록</UI> 메뉴에서 비교를 위해 서버를 10개 초과 선택하면 표시되는 메시지 수정</p>
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>히트맵</UI> > <UI>히트맵 트랜잭션</UI> 위젯에서 <UI>DB 추적</UI> 버튼을 선택 시 나타나는 <UI>DB 추적</UI> 창의 <UI>DB 추이</UI> 버튼에 다국어 적용</p>
 
 * * *
 
 ### `Log`
 
-<p><Status>Feature</Status> <UI>로그</UI> > <UI>로그 검색기</UI> 메뉴에서 선택한 로그와 인접한 시간대의 로그를 조회할 수 있는 기능 추가</p>
+<p><Status>Feature</Status> <UI>로그 검색기</UI>, <UI>로그 트렌드</UI>, <UI>트랜잭션 로그</UI> 메뉴에서 키워드 하이라이팅 기능 추가</p>
+
+* * *
+
+### `AWS Log`
+
+-   <Status>Change</Status> <b>프로젝트 생성</b> 페이지의 <UI>AWS Log</UI> 아이템에서 `beta` 태그 제거
+
+-   <Status>Change</Status> <UI>에이전트 설치</UI> > <UI>WhaTap Forwarder 설치</UI> 차례에서 <UI>VPC 옵션</UI>은 설치형인 경우에만 노출하도록 변경
+
+-   <Status>Fixed</Status> <UI>프로젝트 액세스 키 발급받기</UI> 링크를 선택하면 이동하는 페이지 URL의 <code>productType</code> 파라미터 값을 <code>sms</code>에서 <code>VR</code>로 수정
+
+</div>
+
+## Preview 1.103.28
+
+2023年6月23日
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで<UI>プリセット保存</UI>ボタンの<b>プリセット保存</b>メッセージ削除</p>
+
+</div>
+
+## Preview 1.103.27
+
+2023年6月23日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Feature</Status>ダッシュボードメニューでヒートマップウィジェットのチャート領域をドラッグする時、呼び出されるトレース分析のポップアップウィンドウ追加</p>
+
+-   動線分析とユーザビリティの改善
+    -   トランザクションデータ分析のDepth改善
+    -   交差/比較分析環境の改善
+    -   データ分析環境の視認性の改善
+    -   情報の認知性と可読性、利便性の改善
+
+-   機能性の改善及びその他
+    -   トランザクション一覧内のカラム位置変更及びデータ表幅の調整の改善
+    -   ダイヤグラムとスタック区間の連携
+    -   TXT、SQLダウンロードファイルのデータをソート
+
+</div>
+
+## Preview 1.103.26
+
+2023年6月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューで<UI>通知ルールテスト</UI>機能実行時、臨界線がチャートの範囲を超える現象の修正
+
+-   <Status>Feature</Status>次のメニューで<b>WhatsApp</b>通知設定追加
+
+    -   **_アカウント情報管理_** > **_ユーザー電話番号_**, **_アラート受信設定_**
+
+    -   **_アラート通知_** > **_イベント受信設定_** > **_ユーザー別アラート受信設定_**
+
+-   <Status>Change</Status><UI>アカウント情報管理</UI>メニューでユーザーパスワード設定規則を９桁に変更
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status><UI>サーバー一覧</UI>><UI>サーバー一覧</UI>メニューで比較する際に、10個を超過するサーバーを選択したら表示されるメッセージの修正</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status><UI>ログ</UI>><UI>ログ検索エンジン</UI>メニューで選択したログと隣接する時間帯のログを照会できる機能の追加</p>
 
 * * *
 
@@ -85,21 +121,21 @@ toc_max_heading_level: 3
 
 #### ダッシュボード
 
-<p><Status>Feature</Status> <UI>브라우저 에러</UI> 메뉴에서 에러에 관한 상세 화면 추가</p>
+<p><Status>Feature</Status><UI>WEBブラウサエラー</UI>メニューでエラーに関する詳細画面の追加</p>
 
 #### 分析
 
--   <Status>Feature</Status> <UI>페이지로드 히트맵</UI> 메뉴에서 페이지 로드 상세 데이터에 운영체제 버전, 클라이언트 IP 정보 추가
+-   <Status>Feature</Status><UI>ページロードヒートマップ</UI>メニューでページロード詳細データにOSバージョン、クライアントIP情報追加
 
--   <Status>Change</Status> <UI>페이지로드 히트맵</UI> 메뉴에서 <UI>URL 그룹 목록 필터</UI> 기능을 <UI>페이지 URL 검색</UI> 기능으로 변경
+-   <Status>Change</Status><UI>ページロードヒートマップ</UI>メニューで<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
 
--   <Status>Change</Status> <UI>에러 추적</UI> 메뉴에서 에러 스택 조회 UI 변경
+-   <Status>Change</Status><UI>エラー追跡</UI>メニューでエラースタック照会UIの変更
 
 </div>
 
 ## Preview 1.103.25
 
-2023년 6월 21일
+2023年6月21日
 
 <div class='indentTab'>
 
@@ -107,91 +143,91 @@ toc_max_heading_level: 3
 
 #### Go
 
-**_관리_** > **_에이전트 설치_** 메뉴에서 다음의 내용을 수정합니다.
+**_管理_**>**_エージェント設定_**メニューに次の内容を追加します。
 
--   <Status>Fixed</Status> 에이전트 설치를 위한 GO 지원 버전 변경 (1.14 → 1.17)
+-   <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
 
--   <Status>Fixed</Status> Amazon linux 운영체제에서 <b>에이전트 다운로드</b> 섹션의 스크립트 코드에 역슬래쉬(\)가 누락된 부분 수정
+-   <Status>Fixed</Status>Amazon linuxオペレーティングシステムで<b>エージェントダウンロド</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
 
--   <Status>Fixed</Status> Alpine linux 운영체제에서 <b>Golang 라이브러리 사용</b> 섹션의 내용이 누락된 부분 수정
+-   <Status>Fixed</Status>Alpine linuxオペレーティングシステムで<b>Golangライブラリー使用</b>セクションの内容が表示されない部分の修正
 
--   <Status>Fixed</Status> <b>Golang 라이브러리 사용</b> 섹션의 스크립트 코드 내용을 모든 운영체제에 동일하게 적용
+-   <Status>Fixed</Status><b>Golangライブラリー使用</b>セクションのスクリプトコード内容がすべてのオペレーティングシステムに同じく適用されます
 
--   <Status>Feature</Status> 모든 운영체제에서 <b>에이전트 설정</b> 섹션에 안내 문구 추가
+-   <Status>Feature</Status>すべてのオペレーティングシステムで<b>エージェント設定</b>セクションに案内メッセージを追加
 
--   <Status>Feature</Status> Alpine linux 운영체제에서 <b>모니터링 시작하기</b> 섹션에 안내 문구 추가
+-   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに案内メッセージを追加
 
 #### PHP
 
--   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>Amazon linux</UI> 탭 > <b>에이전트 다운로드</b> 섹션 내용 중 스크립트 코드에 역슬래쉬가 누락된 부분 수정
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>Amazon linux</UI>タブ><b>エージェントダウンロード</b>セクション内容のうち、スクリプトコードにバックスラッシュが表示されない部分の修正
 
 </div>
 
 ## Preview 1.103.24
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 목록 호출 시 조직 아이디가 반영되지 않는 오류 수정</p>
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボード一覧の呼び出す時、組織IDが反映されないエラーの修正</p>
 
 </div>
 
 ## Preview 1.103.23
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
 ### `Browser`
 
-<p><Status>Feature</Status> <UI>보고서</UI> > <UI>일간 브라우저 보고서</UI> 메뉴 추가</p>
+<p><Status>Feature</Status><UI>レポート</UI>><UI>日間WEBブラウサレポート</UI>メニューの追加</p>
 
 </div>
 
 ## Preview 1.103.22
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>통합 보고서</UI> > <UI>일간 보고서</UI> 메뉴에서 <UI>종료 시간</UI>을 금일로 선택 시 선택 시간 자동 교정 로직 제거</p>
+<p><Status>Fixed</Status><UI>統合レポート</UI>><UI>日間レポート</UI>メニューで<UI>終了時間</UI>を本日と選択する時、選択した時間が自動矯正されるロジックの削除</p>
 
 </div>
 
 ## Preview 1.103.21
 
-2023년 6월 20일
+2023年6月20日
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Fixed</Status> 상단 고정 메뉴의 가이드 문서 링크 선택 시 서비스에서 선택한 언어와 일치하는 가이드 문서로 이동하도록 수정
+-   <Status>Fixed</Status>上段の固定メニューのガイド文書のリンクを選択する時、サービスで選択した言語と一致するガイド文書に移動するように修正
 
--   <Status>Deprecate</Status> 다국어 서비스 중 중국어 지원 중단으로 서비스 내 언어 선택지에서 중국어 제외
+-   <Status>Deprecate</Status>多国語サービスのうち中国語対応の中断により、サービス内の言語選択肢から中国語の除外
 
--   <Status>Change</Status> 사이드 바에서 <code>AWS Log</code> 프로젝트 아이콘 변경
+-   <Status>Change</Status>サイドバーで<code>AWS Log</code>プロジェクトアイコン変更
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>에이전트 설치</UI> 페이지에서 일본어 문구 수정</p>
+<p><Status>Fixed</Status><UI>エージェントのインストール</UI>ページで日本語メッセージの修正</p>
 
 </div>
 
 ## Preview 1.103.20
 
-2023년 6월 19일
+2023年6月19日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴의 <UI>업무 디폴트</UI>, <UI>프로젝트 디폴트</UI> 탭에서 설정을 적용할 경우 요청을 성공해도 에러 메세지가 나오는 현상 수정</p>
+<p><Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューで<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブで設定を適用する時、リクエストに成功してもエラーメッセージが表示される現象の修正</p>
 
 * * *
 
@@ -199,9 +235,9 @@ toc_max_heading_level: 3
 
 #### リソース
 
--   <Status>Fixed</Status> <UI>컨테이너 목록</UI> 메뉴에서 다크 테마가 적용되지 않는 문제 수정
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題の修正
 
--   <Status>Fixed</Status> <UI>컨테이너 목록</UI> 메뉴에서 설치된 에이전트가 없을 경우 로딩 애니메이션이 아닌 설치된 에이전트가 없다는 안내 문구가 나오도록 수정
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでインストールされたエージェントがない場合、ローディングアニメーションでなく、インストールされたエージェントがないという案内メッセージが表示されるように修正
 
 * * *
 
@@ -209,11 +245,11 @@ toc_max_heading_level: 3
 
 #### Common
 
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 에이전트를 설치하기 위한 Java 최소 버전 표기 및 xos 권한 설정 문구 변경</p>
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューでエージェントをインストールするための、Java最低バージョンの表示及びxos権限設定メッセージの変更</p>
 
 #### Oracle
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 <UI>액티브 세션</UI> 테이블의 <UI>SQL</UI> 항목을 선택하면 전달되는 해시값 수정</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下<UI>アクティブセッション</UI>テーブルの<UI>SQL</UI>項目を選択したら渡されるハッシュ値の修正</p>
 
 </div>
 

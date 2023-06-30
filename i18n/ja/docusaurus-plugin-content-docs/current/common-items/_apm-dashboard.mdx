@@ -2,7 +2,7 @@
 
 WhaTapモニタリングサービスのホーム画面でプロジェクトを選択し、**_プロジェクトメニューの_**下部の**_ダッシュボード_** > **_アプリケーションダッシュボード_**を選択します。
 
-![アプリケーションダッシュボード](/img/apm-dashboard.png)
+<ImgLang img='apm-dashboard.png' desc='애플리케이션 대시보드'/>
 
 エージェントから収集した情報は、**_ダッシュボード_**でリアルタイムで確認できます。CPU、Memoryを除く一般的なチャートの場合、安定したデータは青色の系列で表現され、問題として識別される要素は赤色の系列で表示されるため、現状を簡単に認識できます。
 
@@ -54,13 +54,13 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 ### エージェント要約
 
-![エージェント要約](/img/agent-dashboard-summary.png)
+<ImgLang img='agent-dashboard-summary.png' desc='에이전트 요약' />
 
 登録したエージェントの実行状態と個数を表示します。
 
 ### **_アクティブステータス_**{#active-status}
 
-![アクティブステータス](/img/apm-dashboard-active-status.png)
+<ImgLang img='apm-dashboard-active-status.png' desc='액티브 스테이터스' />
 
 進行中のトランザクションは実行間隔で分類され、イコライザーとして表示されます。プロジェクト内のすべてのエージェントは、5秒ごとにアクティブなトランザクション数を収集すると同時に進捗状況を収集します。アクティブなステータスを**_METHOD_**、**_SQL_**、**_HTPC_**、**_DBC_**、**_SOCKET_**に分類します。
 
@@ -84,7 +84,7 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 ### **_アクティブトランザクション_**
 
-![アクティトランザクション](/img/apm-dashboard-active-tx.png)
+<ImgLang img='apm-dashboard-active-tx.png' desc='액티브 트랜잭션' />
 
 **_アクティブトランザクション_**は、進行中のトランザクションを意味します。**_アークイコライザー_**チャートとして表現されます。エージェント数でアークが分割されます。5秒ごとにサーバによって処理されているリクエストの数を表現して、各リクエストが処理されている時間を確認できます。5秒間隔で検知されたリクエストは、リスクがあるかどうかを識別するために、次のように色で分類します。
 
@@ -136,7 +136,7 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 -   エラーTR：黄色 → 橙色 → 赤色
 
-![ヒートマップ](/img/hitmap.png)
+<ImgLang img='hitmap.png' desc='히트맵' />
 
 -   画面の右上に位置する数字はチャート内の<span class='normal'>トランザクション数と</span>/<span class='slow'>エラー数</span>を意味します。
 
@@ -147,6 +147,8 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 -   ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択して、5秒~80秒でチャートを拡大／縮小することができます。
 
 ### **_Apdex_**
+
+![Apdex](/img/apm-dashboard-apdex.png)
 
 {@include: ../common-items/_java-apdex-desc.mdx}
 
@@ -160,7 +162,7 @@ WhaTapモニタリングサービスのホーム画面でプロジェクトを�
 
 Tansaction Per Second(TPS)は、毎秒処理されたトランザクション数を意味し、サービス性能指標の基準となります。5秒ごとに処理されたトランザクション数を1秒あたりの数に換算してチャートで表現します。直近10分間のTPSを表示します。
 
-![TPS](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring.png)
+![TPS](/img/apm-dashboard-tps.png)
 
 ### **_本日TPS_**
 

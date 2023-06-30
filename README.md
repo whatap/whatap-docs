@@ -32,6 +32,7 @@ server-list.mdx -> 주석 삭제
 < > -> 부호 앞에 &lt;, &gt; 적용할 것
 
 \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
+\<section> ->> &lt;section&gt;
 
   ::: 탭 공백 확인해볼 것
 
@@ -71,7 +72,7 @@ _php-extension-whatap.mdx 문서 수정 필요
 
 redhat-centos.mdx, freebsd.mdx, amazon-linux.mdx 노트 원문 추가
 
-php/agent-transaction.mdx 탭 공백 수정 필요
+php/agent-transaction.mdx(_php-trs-profile.mdx) 탭 공백 수정 필요
 
 
 

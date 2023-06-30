@@ -91,7 +91,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成
 
-ユーザーのKubernetesバージョンとContainer RuntimeのYAMLファイルをダウンロードしてエージェントをインストールする手順です。
+ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントをインストールする手順です。
 
 1.  マスターNodeで次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
@@ -101,13 +101,19 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-check-version.svg)
 
-2.  **_エージェントインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**のYAMLファイルを選択し**_ダウンロード_**ボタンを選択してください。
+2.  **_エージェントインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンを選択してください。
 
     ![](/img/k8s-download-yaml.png)
 
-3.  ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
+  :::note
 
-4.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
+  마스터 에이전트 자원 사용은 컨테이너 수 증가에 따라 영향을 받을 수 있습니다. 기본값으로 설정된 메모리 limit(350MB) 이상으로 자원을 사용할 경우 OOM(Out Of Meomory)이 발생할 수 있습니다. 사용자가 _YAML_ 파일을 통해 해당 설정을 변경할 수 있습니다.
+
+  :::
+
+1.  ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
+
+2.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
 
     ```bash
     # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように修正してください。
@@ -162,7 +168,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 1.  Kubernetesモニタリングのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択します。
 
-2.  ダウンロードしたYAMLファイルを使用してエージェントを作成してください。
+2.  ダウンロードした_YAML_ファイルを使用してエージェントを作成してください。
 
     ```bash
     kubectl -f whatap_kube_fargate.yaml apply
