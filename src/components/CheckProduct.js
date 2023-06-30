@@ -44,6 +44,8 @@ export default function CheckProduct() {
         product = '-oracle';
     } else if (cProdt === 'mysql-rds') {
         product = '-mysql-rds';
+    } else if (cProdt === 'mysql-v1') {
+        product = '-mysql-v1';
     } else if (cProdt === 'mysql') {
         product = '-mysql';
     } else if (cProdt === 'mssql') {

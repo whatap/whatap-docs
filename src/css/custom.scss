@@ -960,7 +960,8 @@ main {
       white-space: normal;
       border-width: 1px;
       border-style: solid;
-      padding-bottom: 21px;
+      position: relative;
+      top: 2px;
     }
     .active {
       background-color: rgb(108, 108, 119);
