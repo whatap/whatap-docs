@@ -1,5 +1,3 @@
-The description of the agent configuration using the AWS CloudWatch
-
 -   **aws_region** <span class='type'>String</span>
 
     Set the AWS region.
@@ -14,19 +12,19 @@ The description of the agent configuration using the AWS CloudWatch
 
 -   **cloud_watch** <span class='type'>String</span>
 
-    Set whether or not to use the Cloud Watch Monitoring. The value is `on` or `off`.
+    Set whether or not to use the CloudWatch Monitoring. The value is `on` or `off`.
 
 -   **cloud_watch_instance** <span class='type'>String</span>
 
-    Set the instance name of the cloud watch.
+    Set the instance name of the CloudWatch.
 
 -   **cloud_watch_interval** <span class='type'>Second</span>
 
-    Set the interval to get monitoring values by Cloud Watch (unit: second).
+    Set the interval to get monitoring values by CloudWatch (unit: second).
 
 -   **cloud_watch_metrics** <span class='type'>String</span>
 
-    Set the monitoring metric name to be imported into the cloud watch. You can set it as follows:
+    Set the monitoring metric name to be imported into the CloudWatch. You can set it as follows:
 
     ```ini
     cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
@@ -35,3 +33,45 @@ The description of the agent configuration using the AWS CloudWatch
 -   **aws_arn** <span class='type'>String</span>
 
     Instead of `aws_access_key` and `aws_secret_key`, you can use the ARN of the IAM ROLE with appropriate roles.
+
+    <details>
+    <summary>Required role</summary>
+
+    For the roles, the following policies are required.
+
+    | Role                              | Role details                                                     |
+    | --------------------------------- | ---------------------------------------------------------------- |
+    | rds:DescribeDBInstances           | Collection of the instance class data                            |
+    | rds:DescribeDBClusters            | Collection of cluster data when using the autoscale              |
+    | rds:DescribeDBLogFiles            | Collection of CloudWatch logs                                    |
+    | rds:DownloadDBLogFilePortion      | Collection of CloudWatch logs                                    |
+    | ec2:DescribeInstanceTypes         | Collection of CPU counts for each instance class                 |
+    | elasticache:DescribeCacheClusters | Collection of instance class data when using the elasticache     |
+    | cloudwatch:ListMetrics            | Collection of the list of CloudWatch metrics                     |
+    | cloudwatch:GetMetricStatistics    | Collection of the values of the CloudWatch metrics               |
+    | logs:DescribeLogStreams           | Collection of CloudWatch logs (in case of using the posted logs) |
+    | logs:GetLogEvents                 | Collection of CloudWatch logs (in case of using the posted logs) |
+
+    </details>
+
+### Example of configuration for RDS CloudWatch collection
+
+You must create the following default settings to monitor the RDS CloudWatch and collect the related data.
+
+```ini title='whatap.conf'
+cloud_watch=on
+aws_region=ap-northeast-2
+
+# Create roles in AWS IAM and then copy and paste the role ARN value.
+aws_arn=arn:aws:iam::999999999999:role/UpdateApp
+cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+
+#Example of the instance name
+cloud_watch_instance=pg-rds 
+```
+
+:::note
+
+For more information about the **role ARN**, see the [following link](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html).
+
+:::

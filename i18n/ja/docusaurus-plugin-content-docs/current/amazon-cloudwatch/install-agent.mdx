@@ -13,76 +13,52 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Role方式認証で安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx}
+{@include: ../getting-started/_create-project-cloud.mdx}  
 
 ## チェックリスト
 
 必要な権限と推奨されるポリシーを確認してください。
 
-| Resouce           | 権限   |
-| ----------------- | ---- |
-| CloudWatch        | Read |
-| EC2               | Read |
-| ElasticCache      | Read |
-| CloudFront        | Read |
-| Dynammodb         | Read |
-| ElasticBeansTalk  | Read |
-| AutoScaling       | Read |
-| EFS               | Read |
-| RDS               | Read |
+| Resouce          | 権限   |
+| ---------------- | ---- |
+| CloudWatch       | Read |
+| EC2              | Read |
+| ElasticCache     | Read |
+| CloudFront       | Read |
+| Dynammodb        | Read |
+| ElasticBeansTalk | Read |
+| AutoScaling      | Read |
+| EFS              | Read |
+| RDS              | Read |
 
 -   **推奨ポリシ**
     -   arn:aws:iam::aws:policy/ReadOnlyAccess
 
 ## モニタリング手順
 
-<!-- 사용자 와탭 콘솔에서 인티그레이션 프로젝트를 Amazon CloudWatch 사용 상태로 생성하세요. -->
-
 1.  Amazon認証情報を入力してください。
-2.  CloudWatchネームスペースおよび収集周期を選択してください。
+2.  CloudWatchネームスペースおよび収集サイクルを選択してください。
 3.  リージョン、メトリクス、スタットなどを選択してください。
 
 :::note
+
 インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
+
 :::
-
-<!-- 
-
-1. CloudWatch 네임스페이스 및 ***수집 주기***를 선택하세요.
-1. ***리전***, ***메트릭스***, 스탯(***Average***, ***Maximum***, ***Medium***, ***Sum***) 등을 선택하세요.
-
-## 인증 정보 입력
-
-Role ARN을 이용한 설치 방법을 지원합니다. 
-
-Amazon CloudWatch 인증 방법은 다음 두 가지 방법 중 하나를 선택할 수 있습니다.
-
-* Accesskey
-* Role ARN
-
--->
-
-<!-- 
-
-### Access / Secret 정보 입력
-
-![Amazon Cloudwatch](https://img.whatap.io/media/images/amazon_cloudwatch_auth_dialog.png)
-
-와탭 모니터링 용 Identity and Access Management(IAM) 사용자를 생성, 선정 하고 필요한 권한을 추가할 수 있습니다. 액세스 키를 생성하고 Access Key ID와 Secret을 와탭에 입력하세요. 
-
--->
 
 ### 認証情報入力
 
 Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)が直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。Role Assumeはアクセスキーの発行が不要なため、安全で便利です。
 
 :::note
+
 Roleを利用した設定をお勧めします。 Access Keyの活用は、既存のAccess Keyユーザーのみ可能です。
+
 :::
 
-#### ロールの作成
+#### ロール生成
 
-![Amazon Cloudwatch - role](https://img.whatap.io/media/images/amazon_cloudwatch_auth_role_dialog.png)
+![Amazon Cloudwatch - role](/img/cloudwatch-auth-role.png)
 
 1.  AWS Management Consoleにログインしてから、IAMコンソールを開きます。
 2.  コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。
@@ -99,9 +75,9 @@ Roleを利用した設定をお勧めします。 Access Keyの活用は、既�
 
 <!-- ![Amazon Cloudwatch - Namespace](https://img.whatap.io/media/images/amazon_cloudwatch_setup_dialog_1st.png) -->
 
-#### WhaTap収集サイクル
+#### WhaTapの収集周期
 
-{@include: ../common-items/_collecting-period.mdx} 
+{@include: ../common-items/_collecting-period.mdx}
 
 #### ネームスペース
 

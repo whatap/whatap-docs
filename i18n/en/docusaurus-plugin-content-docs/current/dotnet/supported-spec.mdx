@@ -28,11 +28,47 @@ Before installing the agent, check the support environment for .NET framework ap
 
     -   ADO.NET (Database)
 
+## How to analyze the server support environment
+
+### Downloading the analysis tools
+
+If you are not familiar with the supported environment of the server to install the agent on, download the analysis tools through the following links.
+
+-   <https://repo.whatap.io/windows/WhaTapDotnetScan.exe>
+
+-   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
+
+### Using the analysis tools
+
+1.  Run the downloaded analysis tools.
+
+    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
+
+2.  Click ![number 1](/img/number-01.png) **Analysis** (**Scan**).
+
+3.  In the ![number 2](/img/number-02.png) area, check whether the Windows server version is 2012 or later.
+
+4.  In the ![number 3](/img/number-03.png) area, check whether the versions are **IIS 8.0** or later, and **.NET Framework 4.5** or later.
+
+    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
+
 :::note
 
-If you are not familiar with the server support environment to install the agent to, check the analyzing tools after [downloading](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/windows/whatap_dotnet_scan.zip).
+-   **.NET Framework** supports up to the version 4.8.1.
+
+-   The **.NET Core** version is in development.
 
 :::
+
+### Checking the user's application version
+
+Even if the server environment satisfies the supported version, the .NET monitoring is not supported when the user's application has been developed as a **.NET Core** version instead of **.NET Framework**.
+
+The user's application version can be seen in the **IIS Manager** as follows.
+
+![IIS Manager](/img/apm-dotnet-application-pool.png)
+
+In **IIS Manager**, click **Application Pools**. In the **Application Pools** list, check that **.NET Core** of the pool for your available application is the version 4.0.
 
 ## Common supported environment
 
@@ -42,8 +78,8 @@ If you are not familiar with the server support environment to install the agent
 
 ### Firewall
 
-{@include: ../getting-started/_proxy.mdx}  
+{@include: ../getting-started/_proxy.mdx}
 
 ### Mobile app
 
-{@include: ../getting-started/_mobile-app.mdx}  
+{@include: ../getting-started/_mobile-app.mdx} 

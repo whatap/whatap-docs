@@ -1,32 +1,61 @@
 ## カラム情報の案内{#column-info}
 
-| 項目               | 説明                                                                                                           |
-| ---------------- | ------------------------------------------------------------------------------------------------------------ |
-| pid              | プロセスID                                                                                                       |
-| cpuusage         | CPU使用率                                                                                                       |
-| cpu(xos)         | XOSをインストールした場合、収集されるCPUの使用率                                                                                  |
-| dataname         | データベース名                                                                                                      |
-| application_name | クライアントアプリケーション名                                                                                              |
-| wait_event_type  | バックエンド待ちのイベントtype                                                                                            |
-| wait_event       | バックエンドが現在待機中の場合、待機イベント名                                                                                      |
-| runtime          | 現在COMMANDの遂行時間（秒）                                                                                            |
-| query            | 実行されているstatement、リテラル文字列を除外したSQL文                                                                            |
-| query_param      | `query`から分離したリテラル値                                                                                           |
-| state            | スレッドの現在の状態（executing/updating/sending dataなど）                                                                |
-| bind_query       | クエリで使用するBind変数                                                                                               |
-| xact_start       | 当該プロセスの現在のトランザクションが開始された時間(活性トランザクションがない場合はnull)                                                             |
-| backend_start    | このプロセスが開始された時間、つまりクライアントが該当WAL(Write-Ahead Logging) 発信者に接続された時間                                              |
-| client_addr      | 当該WAL発信者に接続されたクライアントのIPアドレス                                                                                  |
-| client_hostname  | 接続されたクライアントのホスト名(`client_addr`の逆方向DNS照会で報告される)                                                               |
-| client_port      | クライアントが該当WAL発信者との通信に使用するTCPポート番号(UNIXソケットを使用する場合は-1)                                                         |
-| query_hash       | クエリのハッシュ値（WhaTap内部管理値）                                                                                       |
-| query_start      | 現在活性状態のクエリが開始された時間(活性状態ではない場合、最後のクエリが開始された時間)                                                                |
-| query_pre        | `PREPARE`コマンドを用いてセッションプロセスに保存したSQL文とPLAN                                                                     |
-| rss(xos)         | Resident Set Size(RSS)、プロセスに関連する物理的ページ数                                                                      |
-| pss(xos)         | Proportional Set Size(PSS)、USS(Unique Set Size) + (共有ページ / 共有するプロセス数) <br/>プロセス固有メモリ使用量 + 1つのプロセスが占める共有メモリ比率 |
-| ioread(xos)      | ブロックの読み取りに費やされた実際時間(milliseconds)                                                                            |
-| iowrite(xos)     | ブロックの書き込みに費やされた実際時間(milliseconds)                                                                            |
-| holder type      | holderセッションのtype                                                                                             |
-| lock mode        | holder_mode                                                                                                  |
-| waiter type      | waiterセッションのtype                                                                                             |
-| lock request     | waiter_mode                                                                                                  |
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active Session">
+
+| 項目                | 説明                                                                                                    |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| `pid`             | プロセスID                                                                                                |
+| `db`              | データベース名                                                                                               |
+| `user`            | SQL実行アカウント                                                                                            |
+| `application`     | クライアントアプリケーション名                                                                                       |
+| `client_host`     | 接続されたクライアントのホスト名(`client_addr`の逆方向DNS照会で報告される)                                                        |
+| `client_addr`     | クライアントのIPアドレス                                                                                         |
+| `client_port`     | クライアントのポート番号(Unixソケットを使用する場合は-1)                                                                      |
+| `query_hash`      | クエリのハッシュ値（WhaTap内部管理値）                                                                                |
+| `query_start`     | 現在活性状態のクエリが開始された時間(活性状態ではない場合、最後のクエリが開始された時間)                                                         |
+| `state`           | バックエンドプロセスの現在の状態(active/idleなど)                                                                       |
+| `state_change`    | stateが変更された最近の時間                                                                                      |
+| `xact_start`      | 当該プロセスの現在のトランザクションが開始された時間(活性トランザクションがない場合は`null`)                                                    |
+| `backend_start`   | 該当バックエンドプロセスが開始された時間                                                                                  |
+| `backend_xmin`    | 当該バックエンドプロセスが処理中の`xid`の最小値                                                                            |
+| `backend_type`    | 当該バックエンドプロセスのタイプ、`autovacuum worker`、`logical replication launcher`、`client backend`、`checkpointer`など |
+| `backend_xid`     | 当該バックエンドが使用中の`xid`                                                                                    |
+| `wait_event_type` | 当該バックエンドプロセスが待機中のイベント`type`                                                                           |
+| `wait_event`      | 当該バックエンドプロセスが現在待機中の場合は、待機イベント名                                                                        |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| 項目             | 説明                                            |
+| -------------- | --------------------------------------------- |
+| `holder type`  | `holder`セッションの`type` (transaction id、tupleなど) |
+| `lock mode`    | `holder_mode` (exclusive lock、shared lockなど)  |
+| `waiter type`  | `waiter`セッションの`type` (transaction id、tupleなど) |
+| `lock request` | `waiter_mode` (exclusive lock、shared lockなど)  |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process Information">
+
+次の項目は、XOSエージェントをインストールした場合に収集される指標です。
+
+| 項目         | 説明                                      |
+| ---------- | --------------------------------------- |
+| `cputime`  | CPU使用時間                                 |
+| `cpuusage` | CPU使用率                                  |
+| `elapse`   | CPU使用経過時間                               |
+| `vsize`    | 仮想メモリサイズ(Kb)                            |
+| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理的ページ数 |
+| `state`    | プロセス状態                                  |
+| `ioread`   | ブロックの読み取りに費やされた実際時間(milliseconds)       |
+| `iowrite`  | ブロックの書き込みに費やされた実際時間(milliseconds)       |
+| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが占める共有メモリの比率     |
+| `uid`      | user id                                 |
+| `cmd`      | 実行中のコマンド                                |
+| `longcmd`  | cmdのフルパス                                |
+
+</TabItem>
+</Tabs>

@@ -9,11 +9,20 @@ tags:
 
 アプリケーションサーバーの稼働中は、モニタリング情報を収集します。収集された情報はログファイルに保存されます。
 
--   **log_rotation_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`true`<br/>エージェントログファイルを日付別に保存する機能を活性化します。ログファイル名は_whatap-`yyyymmdd`.log_形式で保存します。値が`false`であればログファイル名は_whatap.log_形式で保存します。
+-   **log_rotation_enabled** <span class='type'>Boolean</span>
 
--   **log_keep_days** <span class='type'>Int</span><br/>
-    デフォルト値`7`<br/>ログファイルの保存期間を設定します。`log_rotation_enabled`オプションの値が`true`の場合に限って動作します。
+    デフォルト値 `true`
 
--   **log_datasource_lookup_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値`true`<br/>InitialContext Lookupの時、DataSourceの場合はログを記録する機能を活性化します。
+    エージェントログファイルを日付別に保存する機能を活性化します。ログファイル名は_whatap-`yyyymmdd`.log_形式で保存します。値が`false`であればログファイル名は_whatap.log_形式で保存します。
+
+-   **log_keep_days** <span class='type'>Int</span>
+
+    デフォルト値`7`
+
+    ログファイルの保存期間を設定します。`log_rotation_enabled`のオプション値が`true`の場合にのみ動作します。
+
+-   **log_datasource_lookup_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    InitialContext Lookup時DataSourceの場合、ログを記録する機能を活性化します。

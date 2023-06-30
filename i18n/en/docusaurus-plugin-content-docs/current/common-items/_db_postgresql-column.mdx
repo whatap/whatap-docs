@@ -1,32 +1,61 @@
 ## Column information guide{#column-info}
 
-| Item             | Description                                                                                                                                                                                          |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| pid              | Process ID                                                                                                                                                                                           |
-| cpuusage         | CPU Utilization                                                                                                                                                                                      |
-| cpu(xos)         | CPU utilization collected by the installed XOS                                                                                                                                                       |
-| dataname         | Database name                                                                                                                                                                                        |
-| application_name | Client application name                                                                                                                                                                              |
-| wait_event_type  | Type of the event where the backend is waiting                                                                                                                                                       |
-| wait_event       | Waiting event name where the backend is waiting                                                                                                                                                      |
-| runtime          | Execution time of the current command (sec)                                                                                                                                                          |
-| query            | Statement being executed or the SQL statement that separates literal strings                                                                                                                         |
-| query_param      | Literal value separated from `query`                                                                                                                                                                 |
-| state            | Current thread status (executing, updating, sending data, etc.)                                                                                                                                      |
-| bind_query       | Bind variable used in query                                                                                                                                                                          |
-| xact_start       | Time when the current transaction for the process started (null if no transaction is active)                                                                                                         |
-| backend_start    | Time when this process started, that is, the time when the client connected to its write-ahead logging (WAL) sender.                                                                                 |
-| client_addr      | IP address of the client connected to the WAL sender                                                                                                                                                 |
-| client_hostname  | Host name of the connected client (reported by reverse DNS lookup of `client_addr`)                                                                                                                  |
-| client_port      | TCP port number that the client uses to communicate with the WAL sender (-1 if using Unix sockets)                                                                                                   |
-| query_hash       | Hash value of query (internal WhaTap control value)                                                                                                                                                  |
-| query_start      | Time when the active query started (if the state is not active, it is the last query started time)                                                                                                   |
-| query_pre        | SQL statement and PLAN saved in the session process using the `PREPARE` command.                                                                                                                     |
-| rss(xos)         | Resident Set Size (RSS) that is the number of physical pages associated with the process.                                                                                                            |
-| pss(xos)         | Proportional Set Size (PSS) that is USS (Unique Set Size) + (shared page count/number of shared processes). <br/>Process specific memory usage + Percentage of shared memory occupied by one process |
-| ioread(xos)      | Actual time spent reading the block (milliseconds)                                                                                                                                                   |
-| iowrite(xos)     | Actual time spent writing the block (milliseconds)                                                                                                                                                   |
-| holder type      | Type of the holder session                                                                                                                                                                           |
-| lock mode        | holder_mode                                                                                                                                                                                          |
-| waiter type      | Type of the waiter session                                                                                                                                                                           |
-| lock request     | waiter_mode                                                                                                                                                                                          |
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active Session">
+
+| Item              | Description                                                                                                              |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `pid`             | Process ID                                                                                                               |
+| `db`              | Database name                                                                                                            |
+| `user`            | SQL execution account                                                                                                    |
+| `application`     | Client application name                                                                                                  |
+| `client_host`     | Host name of the connected client (reported by reverse DNS lookup of `client_addr`)                                      |
+| `client_addr`     | Client IP address                                                                                                        |
+| `client_port`     | Client port number (in case of using the UNIX socket -1)                                                                 |
+| `query_hash`      | Hash value of query (internal WhaTap control value)                                                                      |
+| `query_start`     | Time when the active query started (if the state is not active, it is the last query started time)                       |
+| `state`           | Current status of the backend process (active, idle, etc.)                                                               |
+| `state_change`    | Last time when the state was changed                                                                                     |
+| `xact_start`      | Time when the current transaction for the process started (`null` if no transaction is active)                           |
+| `backend_start`   | Time when the backend process started                                                                                    |
+| `backend_xmin`    | Minimum value of `xid` whose backend process is being processed                                                          |
+| `backend_type`    | Type of the backend process (e.g. `autovacuum worker`, `logical replication launcher`, `client backend`, `checkpointer`) |
+| `backend_xid`     | `xid` whose backend is being processed                                                                                   |
+| `wait_event_type` | `Type` of the event whose backend process is in standby                                                                  |
+| `wait_event`      | Waiting event name where the backend process is in standby                                                               |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| Item           | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| `holder type`  | `Type` of the `holder` session (transaction ID, tuple, etc.) |
+| `lock mode`    | `holder_mode` (exclusive lock, shared lock, etc.)            |
+| `waiter type`  | `Type` of the `waiter` session (transaction ID, tuple, etc.) |
+| `lock request` | `waiter_mode` (exclusive lock, shared lock, etc.)            |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process Information">
+
+The following items are the metrics collected if the XOS agent has been installed.
+
+| Item       | Description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| `cputime`  | CPU usage time                                                                            |
+| `cpuusage` | CPU Utilization                                                                           |
+| `elapse`   | Elapsed time of CPU usage                                                                 |
+| `vsize`    | Virtual memory size (Kb)                                                                  |
+| `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
+| `state`    | Process status                                                                            |
+| `ioread`   | Actual time spent reading the block (milliseconds)                                        |
+| `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
+| `uid`      | user id                                                                                   |
+| `cmd`      | Executing command                                                                         |
+| `longcmd`  | Full path of cmd                                                                          |
+
+</TabItem>
+</Tabs>

@@ -62,8 +62,8 @@ In case of Google Kubernetes Engine (GKE), create a user cluster and then execut
 
 ```bash
 ACCOUNT=$(gcloud info --format='value(config.account)')
-kubectl create clusterrolebinding owner-cluster-admin-binding 
-  --clusterrole cluster-admin 
+kubectl create clusterrolebinding owner-cluster-admin-binding \
+  --clusterrole cluster-admin \
   --user $ACCOUNT
 ```
 

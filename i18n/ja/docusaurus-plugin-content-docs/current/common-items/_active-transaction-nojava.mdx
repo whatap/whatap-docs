@@ -1,14 +1,16 @@
 進行中のトランザクションをアクティブトランザクションと呼びます。**アクティブトランザクションで定期的にダンプされるスタックはアクティブスタック**と呼ばれます。
 
 :::note
+
 WhaTapエージェントは、10秒(オプションで調整可能)ごとにアクティブトランザクションに対して、アクティブスタックをダンプし、サーバーに送信します。`active_stack_second=10`
+
 :::
 
-{@include: ../common-items/_compact-active-stacks-nojava.mdx}
+{@include: ../common-items/_compact-active-stacks-nojava.mdx} 
 
 {@include: ../common-items/_background-thread.mdx} 
 
 ## 参考資料
 
 -   [アクティブトランザクション](https://brunch.co.kr/@leedongins/152)  
--   [障害を最も早く特定するアクティブトランザクション](https://brunch.co.kr/@leedongins/31)
+-   [トラブルを最も早く特定するアクティブトランザクション](https://brunch.co.kr/@leedongins/31)

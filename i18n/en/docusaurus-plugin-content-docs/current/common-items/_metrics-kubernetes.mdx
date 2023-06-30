@@ -458,7 +458,7 @@ The `kube_pod_stat` category cluster project collects data for all clusters, and
 
 Metric collection starts only when HPA is added to the ClusterRole used by WhaTap.
 
--   Target: Cluster project, Namespace project
+-   Target: Cluster project
 -   Collection interval: 5 seconds
 -   Statistical data: 5 minutes, 1 hour
 
@@ -470,14 +470,10 @@ Metric collection starts only when HPA is added to the ClusterRole used by WhaTa
 
 #### Fields
 
-| Field name                | Unit                 | Description                                  | Remarks |
-| ------------------------- | -------------------- | -------------------------------------------- | ------- |
-| currentReplicas           | Positive number      | Current Replica Count                        | -       |
-| desiredReplicas           | Positive number      | Desired Replica Count                        | -       |
-| lastScaleTime             | Positive number      | Last scaled TimeStamp                        | -       |
-| maxReplicas               | Positive number      | Maximum Replica Count                        | -       |
-| minReplicas               | Positive number      | Minimum Replica Count                        | -       |
-| metric_pod_cpu_avg        | Millicore            | HPA CPU Usage                                | -       |
-| metric_pod_memory_avg     | Byte                 | HPA Memory Usage                             | -       |
-| resource_cpu              | Percentage           | HPA CPU Average Utilization                  | -       |
-| resource_memory           | Percentage           | HPA Memory Average Utilization               | -       |
+| Field name                | Unit                 | Description                                 | Remarks |
+| ------------------------- | -------------------- | ------------------------------------------- | ------- |
+| currentReplicas           | Positive number      | Current Replica Count                       | -       |
+| desiredReplicas           | Positive number      | Desired Replica Count                       | -       |
+| lastScaleTime             | Positive number      | Last scaled TimeStamp                       | -       |
+| maxReplicas               | Positive number      | Maximum Replica Count                       | -       |
+| minReplicas               | Positive number      | Minimum Replica Count                       | -       |

@@ -1,7 +1,7 @@
 ---
 id: agent-troubleshooting
 title: Golangインストールの問題解決
-description: Golangエージェントのインストール時、発生しうる問題を確認することができます。
+description: Golangエージェントのインストール時に発生する可能性のある問題を確認することができます。
 tags:
   - Golang
   - 問題解決
@@ -10,7 +10,7 @@ tags:
 
 ## サービス動作の確認
 
-**_WhaTap.NET_**サービスが正常登録されており、動作(**_実行中_**)状態であることを確認してください。
+**_WhaTap.NET_**サービスが正常に登録されて、稼働(**_実行中_**)状態であることを確認します。
 
 管理者権限で`services.msc`コマンドを実行するか、コントロールパネルでサービスアイコンをダブルクリックしてServices管理者を開きます。
 
@@ -26,14 +26,26 @@ tags:
 
 システム環境変数は、エージェントのインストール時に自動登録されます。次のコンテンツが登録されていることを確認してください。
 
--   **COR_ENABLE_PROFILING = 1**<br/>CLRプロファイラーを有効にします。
+-   **COR_ENABLE_PROFILING = 1**
 
--   **COR_PROFILER = {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}**<br/>WhaTap CLRプロファイラーをAPIに登録する際に使用するGUIDで、固定値です。
+    CLRプロファイラーを有効にします。
 
--   **COR_PROFILER_PATH = C:\\Program Files\\WhaTap .NET\\WhaTap.ClrProfiler.dll**<br/>WhaTap CLRプロファイラーDLLのパスです。
+-   **COR_PROFILER = {D76F1D76-A9E0-4C87-874F-C0AD93D4229B}**
 
--   **WHATAP_APP_TYPE = 7**<br/>WhaTapサーバーと通信するエージェントの種類で固定値です。
+    WhaTap CLRプロファイラーをAPIに登録する場合に使用するGUIDで、固定値です。
 
--   **WHATAP_DOTNET_HOME = C:\\Program Files\\WhaTap .NET**<br/>WhaTapプログラムのホームパスを指定します。
+-   **COR_PROFILER_PATH = C:\\Program Files\\WhaTap .NET\\WhaTap.ClrProfiler.dll**
 
--   **WHATAP_DOTNET_TRACE = 1**<br/>モニタリングデータ収集機能を有効にします。
+    WhaTap CLRプロファイラーDLLのパスです。
+
+-   **WHATAP_APP_TYPE = 7**
+
+    WhaTapサーバーと通信するエージェントの種類と固定値です。
+
+-   **WHATAP_DOTNET_HOME = C:\\Program Files\\WhaTap .NET**
+
+    WhaTapプログラムのホームパスを指定します。
+
+-   **WHATAP_DOTNET_TRACE = 1**
+
+    モニタリングデータ収集機能を有効にします。

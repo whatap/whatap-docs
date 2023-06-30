@@ -4,7 +4,7 @@
     mkdir -p {Docker build Dir}
     ```
 
-1.  _whatap.conf_ファイルを作成します。
+2.  _whatap.conf_ファイルを作成します。
 
     ```bash
     cat >{Docker build Dir}/whatap.conf <<EOL
@@ -18,7 +18,7 @@
 
     :::
 
-1.  Dockerfileにエージェントインストール用のイメージをダウンロードするには、直接そのファイルをダウンロードしたり、エージェントファイルをイメージからコピーしてください。
+3.  Dockerfileにエージェントインストール用のイメージをダウンロードするには、直接そのファイルをダウンロードしたり、エージェントファイルをイメージからコピーしてください。
 
     ```docker
     # WhaTapエージェント用ディレクトリをユーザーコンテナーに作成
@@ -38,7 +38,7 @@
 
     :::
 
-2.  Dockerfileコマンドでアプリケーションを開始する前に、エージェントのバージョンを確認してください。
+4.  Dockerfileコマンドでアプリケーションを開始する前に、エージェントのバージョンを確認してください。
 
     ```docker
     docker run whatap/kube_mon ls /data/agent/micro/
@@ -47,7 +47,7 @@
     whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
     ```
 
-3.  Dockerfileアプリケーションの開始コマンドに次の内容を追加してください。前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
+5.  Dockerfileアプリケーションの開始コマンドに次の内容を追加してください。前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
 
     エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
@@ -55,7 +55,7 @@
     -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
     ```
 
-    ```docker title='Dockerfile 예시' showLineNumbers {4,7}
+    ```docker title='Dockerfile' showLineNumbers {4,7}
     FROM openjdk:8-jdk-slim
     RUN mkdir -p /app && mkdir /whatap
     WORKDIR /app
@@ -72,27 +72,27 @@
 
     :::
 
-4.  Dockerをビルドします。
+6.  Dockerをビルドします。
 
-    ```docker
-    cd docker
-    docker build -t $Image_Name.
-    ```
+```docker
+cd docker
+docker build -t $Image_Name.
+```
 
 1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-    `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。もしデプロイメント名に設定すると、該当するPodをグループ化します。
+  `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。もしデプロイメント名に設定すると、該当するPodをグループ化します。
 
-    ```bash showLineNumbers {8-9}
-    env:
-      - name: NODE_IP
-        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-      - name: NODE_NAME
-        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-      - name: POD_NAME
-        valueFrom: {fieldRef: {fieldPath: metadata.name}}
-      - name: OKIND
-        value: {業務種類名またはDeployment名}
-      - name: license
-        value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
-    ```
+```bash showLineNumbers {8-9}
+env:
+  - name: NODE_IP
+    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+  - name: NODE_NAME
+    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+  - name: POD_NAME
+    valueFrom: {fieldRef: {fieldPath: metadata.name}}
+  - name: OKIND
+    value: {業務種類名またはDeployment名}
+  - name: license
+    value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
+```

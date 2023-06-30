@@ -10,14 +10,26 @@ tags:
 
 .NETエージェントのDB、SQL関連オプションを提供します。
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span><br/>デフォルト値 `true`<br/>
-    SQL文のリテラル部分を抽出して、SQL文を正規化する機能を有効にします。リテラル部分は"#"と表記します。
+-   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
--   **profile_sql_resource_enabled** <span class='type'>Boolean</span><br/>デフォルト値`false`<br/>
-    トレースからSQLを収集する場合、そのステップで使用されるCPUとメモリの使用量を追跡します。
+    デフォルト値 `true`
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><br/>デフォルト値 `false`<br/>
-        トレース履歴にSQLパラメータ情報を記録するために使用します。パラメータは、別のセキュリティキーを入力することで表示します。
+    SQL文からリテラル部分を抽出し、SQL文を正規化する機能をアクティブにします。リテラル部分は"#"として表記します。
+
+-   **profile_sql_resource_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トレースからSQLを収集する場合、そのステップで使用したCPUとメモリ使用量を追跡します。
+
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トレース履歴にSQLパラメータ情報を記録するときに使用します。パラメータは、別途のセキュリティ キーを入力しないと照会できません。
+
     :::note
-    セキュリティキーは、WASサーバー_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ファイル内に6桁で書き込まれます。_paramkey.txt_ファイルが存在しない場合は、ランダム値で自動的に生成されます。
+
+    セキュリティキーは、WASサーバ_`%PROGRAMFILES%`\\WhaTap .NET\\paramkey.txt_ ファイル内に6桁で作成します。_paramkey.txt_ ファイルが存在しない場合、ランダムな値で自動的に生成されます。
+
     :::

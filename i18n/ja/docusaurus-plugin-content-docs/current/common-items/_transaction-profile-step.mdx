@@ -3,30 +3,39 @@
 WhaTapが収集するステップの種類は、大きく分けてSQLステップ、HTTP CALLステップ、メッセージステップ、SOCKETオープンステップ、DB接続ステップ、メソッドステップなどがあります。 
 
 :::note
+
 WhaTapのステップ(Step)は、スパン(Span)と同じ意味で使用します。
+
 :::
 
 * * *
 
--   **DB接続ステップ**<span class='type'>START-END</span><br/>
-      RDBへの接続に対する性能が含まれます。ステップ情報には、名前、レスポンス時間、エラーが含まれます。
+-   **DB接続ステップ** <span class='type'>START-END</span>
 
--   **SQLステップ**<span class='type'>START-END</span><br/>
-      JDBC SQLに対する性能が含まれます。ステップ情報には、接続情報、SQL文、エラーが含まれています。
+    RDBへの接続のパフォーマンスが含まれます。ステップ情報には、名前、応答時間、エラーが含まれます。
 
--   **HTTP Callステップ**<span class='type'>START-END</span><br/>
-      外部httpサービス呼び出しに対する性能が含まれます。ステップ情報には、url、host、port、レスポンス時間、エラーが含まれています。
+-   **SQLステップ** <span class='type'>START-END</span>
 
--   **Messageステップ**<span class='type'>ADD</span><br/>
-      トレースを収集する過程で非定型的なすべてのセグメントの履歴を収集する場合、メッセージステップを使用します。  
+    JDBC SQLのパフォーマンスが含まれます。ステップ情報には接続情報、SQL文、エラーが含まれています。
 
--   **SOCKETステップ**<span class='type'>ADD</span><br/>
-      Socketオープンを表現するステップです。
+-   **HTTP Callステップ** <span class='type'>START-END</span>
 
--   **METHODステップ**<span class='type'>START-END</span><br/>
-      メソッドのレスポンス時間を追跡します。
+    外部HTTPサービス呼び出しのパフォーマンスが含まれます。ステップ情報にはurl、host、port、応答時間、エラーが含まれます。
 
--   **ACTIVE STACKステップ**<span class='type'>START-END</span><br/>
-      アクティブステップに関する情報が含まれます。 別のスレッドで生成し、トレースに追加して収集します。
+-   **Messageステップ** <span class='type'>ADD</span>
+
+    トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
+
+-   **SOCKETステップ** <span class='type'>ADD</span>
+
+    Socketオープンを表現するステップです。
+
+-   **METHODステップ** <span class='type'>START-END</span>
+
+    メソッド応答時間を追跡します。
+
+-   **ACTIVE STACK 스텝** <span class='type'>START-END</span>
+
+    アクティブステップに関する情報が含まれます。別のスレッドが作成し、トレースに追加する方法で収集します。
 
 * * *

@@ -15,11 +15,11 @@ import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
-{@include: ../common-items/_agent-signup-guide.mdx}
+{@include: ../common-items/_agent-signup-guide.mdx}  
 
 {@youtube: Y66Siequ2S0}
 
-{@include: ../getting-started/_create-project-v2.mdx} 
+{@include: ../getting-started/_create-project-v2.mdx}  
 
 {@include: ../getting-started/_accesskey.mdx}
 
@@ -29,18 +29,18 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 1.  圧縮して解凍したフォルダに入り、_whatap.conf_ファイルを確認してください。_whatap.conf_ファイルにプロジェクトのアクセスキー情報とWhaTapサーバー情報、DB接続情報を入力します。
 
-```ini title='whatap.conf'
-license=プロジェクトアクセスキー
-whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
+    ```ini title='whatap.conf'
+    license=プロジェクトアクセスキー
+    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
 
-dbms=redis
-db_ip={DBサーバーのIPアドレス}
-db_port={DBサーバーのポート番号}
-```
+    dbms=redis
+    db_ip={DBサーバーのIPアドレス}
+    db_port={DBサーバーのポート番号}
+    ```
 
-1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+2.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cdata.com/drivers/redis/jdbc/
+  データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードします。https://www.cdata.com/drivers/redis/jdbc/
 
 <!-- 공통 Notes -->
 
@@ -50,7 +50,7 @@ db_port={DBサーバーのポート番号}
 
 :::tip
 
-userとpasswordを使用しない場合（認証なしでRedisに接続可能な場合）**_DBユーザーファイル作成_**手順をスキップできます。
+userとpasswordを使用しない場合 (認証なしでRedisに接続可能な場合) **_DBユーザーファイル作成_**する手順をスキップできます。
 
 :::
 

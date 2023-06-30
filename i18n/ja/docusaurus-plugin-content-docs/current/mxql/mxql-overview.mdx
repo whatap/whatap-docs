@@ -10,7 +10,9 @@ tags:
 ---
 
 :::note
+
 MXQLの内容を確認する前に、まずメトリクスの概念について確認することをお勧めします。メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参考にしてください。
+
 :::
 
 ## MXQLとは
@@ -39,13 +41,13 @@ MXQLは、WhaTapの性能データ（メトリクス）を柔軟に照会する�
 
 MXQLとSQLのサンプルクエリです。各行の右側のコメントを参考にしてください。
 
-```sql title='간단한 SQL 쿼리'
+```sql title='SQL query'
 SELECT time, pcode  -- Column選択（time、 pcodeカラムを照会するように設定します。）
 FROM app_counter    -- Table選択（app_counterテーブルでデータを照会します。）
 WHERE tx_count = 1  -- データフィルタリング（tx_count columnの値が1のデータを照会するように設定します。
 ```
 
-```sql title='간단한 mxql 쿼리'
+```sql title='MXQL query'
 CATEGORY app_counter                 -- app_counterカテゴリでデータを照会するように設定します。
 TAGLOAD                              -- データを照会します。
 SELECT [ time, pcode ]               -- 照会された全体カラムのうちtime、pcodeフィールドを選択します。
@@ -58,7 +60,7 @@ MXQLクエリを実行すると、選択したカテゴリで選択したフィ�
 
 `app_counter`カテゴリで`tx_count`、`tx_error`指標を照会するクエリは次のとおりです。
 
-```sql title='MXQL 수행'
+```sql title='MXQL'
 CATEGORY app_counter                   -- app_counterカテゴリでデータを照会するように設定します。
 TAGLOAD                                -- データを照会します。
 SELECT [time, oid, tx_count, tx_error] -- 照会したいフィールドの名前を設定します。

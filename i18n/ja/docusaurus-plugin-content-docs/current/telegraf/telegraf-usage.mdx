@@ -19,7 +19,7 @@ Telegrafに関する詳細は、influxdataの[Telegraf documentation](https://do
 
 ## SNMP
 
-SNMP input pluginを使用してSNMP性能データをリアルタイムで収集し、チャートとして表示できます。 収集されたデータは「telegraf_snmp」、「telegraf_interface」カテゴリで検索できます。
+SNMP input pluginを使用してSNMP性能データをリアルタイムで収集し、チャートとして表示できます。 収集されたデータは`telegraf_snmp`、`telegraf_interface`カテゴリで検索できます。
 
 ```batch title='Linux Shell'
 cat >/etc/telegraf/telegraf.d/snmp_device.conf <<EOL
@@ -121,7 +121,7 @@ service telegraf restart
 
 ## SNMP Trap
 
-SNMP Trap input pluginを使用してSNMP Trapイベントをリアルタイムで収集し、メール、SMSメッセージ、メッセンジャーなどで送信できます。 収集されたデータは「telegraf_snmp_trap」カテゴリで検索することができます。
+SNMP Trap input pluginを使用してSNMP Trapイベントをリアルタイムで収集し、メール、SMSメッセージ、メッセンジャーなどで送信できます。 収集されたデータは`telegraf_snmp_trap`カテゴリで検索することができます。
 
 ```batch title='Linux Shell'
 cat >/etc/telegraf/telegraf.d/snmp_trap.conf <<EOL

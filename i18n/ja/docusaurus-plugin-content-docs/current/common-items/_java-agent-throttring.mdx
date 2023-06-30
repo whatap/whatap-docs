@@ -1,53 +1,77 @@
--   **throttle_enabled**<span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    アプリケーションの最大同時処理数を制限するスロットリング機能をアクティブにします。throttle\_で始まるすべてのオプションは、`throttle_enabled=true`状態でのみ動作します。
+-   **throttle_enabled** <span class='type'>Boolean</span>
 
-      スロットリング制御に関連するポリシーには、次の優先順位があります。
+    デフォルト値`false`
+
+    アプリケーションの最大同時処理数を制限するスロットリング機能をアクティブにします。throttle\_で始まるすべてのオプションは、`throttle_enabled=true`状態でのみ機能します。
+
+    スロットリング制御に関するポリシーには、次の優先順位があります。
 
     1.  Block：URLとユーザーIPアドレスに基づいてサービスをブロックし、優先します。
+
     2.  Passing：通過として適用されたURLは、拒否ポリシーよりも優先されます。
+
     3.  拒否: 通過ポリシーの後に拒否ポリシーをブロックして適用します。
 
--   **throttle_limit**<span class='type'>Int</span><br/>
-    デフォルト値`10000`<br/>
-    エージェントごとに同時処理するリクエスト(トランザクション)数が設定した値を超えると、追加のリクエストはrejectします。
+-   **throttle_limit** <span class='type'>Int</span>
 
--   **throttle_rejected_message** <span class='type'>String</span><br/>
-    デフォルト値`too many request!!`<br/>
-    スロットリングを制限する場合、ユーザーに配信メッセージを設定します。
+    デフォルト値`10000`
 
--   **throttle_rejected_forward**<span class='type'>String</span><br/>
-    ユーザーのリクエストがlimit値を超えてrejectされた場合、ユーザーに配信案内ページURLを設定します。`throttle_rejected_message`を同時設定した場合、`throttle_rejected_forward`を優先的に適用します。
+    エージェントごとに同時処理するリクエスト(トランザクション) の数が設定値を超えると、追加で到達するリクエストはrejectされます。
+
+-   **throttle_rejected_message** <span class='type'>String</span>
+
+    デフォルト値`too many request!!`
+
+    スロットリングを制限する場合は、ユーザーに配信するメッセージを設定します。
+
+-   **throttle_rejected_forward** <span class='type'>String</span>
+
+    ユーザーのリクエストがlimit値を超えてrejectされた場合、ユーザーに送信される案内ページのURLを設定します。`throttle_rejected_message`を同時設定した場合、`throttle_rejected_forward`が優先されます。
+
     :::caution
-    案内ページを同じコンテナでサービスする場合、これも同時処理数として算定するため、再帰呼び出しによるトラブル要素になる可能性があります。したがって、案内ページはstatic htmlページにするか、外部にある必要があります。
+
+    案内ページを同じコンテナでサービスする場合、これも同時処理数としてカウントされ、再帰呼び出しによる障害になる可能性があります。したがって、案内ページはstatic htmlページにするか、外部にある必要があります。
+
     :::
 
--   **reject_event_enabled**<span class='type'>Boolean</span><br/>
-    デフォルト値`false`<br/>
-    ユーザーリクエストをRejectする場合、イベント通知が発生するかどうかを設定します。
+-   **reject_event_enabled** <span class='type'>Boolean</span>
 
--   **reject_event_interval**<span class='type'>MiliSecond</span><br/>
+    デフォルト値`false`
+
+    ユーザーリクエストがRejectされた場合、イベント通知を発生させるかどうかを設定します。
+
+-   **reject_event_interval** <span class='type'>MiliSecond</span>
+
     デフォルト値`30000`
-    Rejectに対するイベント通知が発生した後、設定した時間内に発生した重複イベントに対する通知は発生しません。
 
--   **throttle_blocking_url**<span class='type'>String</span><br/>
-    `throttle_limit`を超えない場合でも、ブロック（処理拒否）するURLを設定します。システムトラブルを引き起こすURLを緊急にブロックするために使用できます。
+    Rejectのイベント通知が発生した後に設定した時間に重複イベントの通知は発生しません。
 
--   **throttle_blocking_ip**<span class='type'>ip_address</span><br/>
-    ユーザーIPアドレスを基準にブロックしたいときに設定します。DDoS攻撃や悪意のあるユーザーをIPアドレスベースでブロックするときに使用できます。複数の場合は、コンマ（,）を区切り文字として使用してください。
+-   **throttle_blocking_url** <span class='type'>String</span>
 
--   **throttle_target_urls**<span class='type'>String</span><br/>
-    登録したURLを対象にスロットリング機能を適用します。複数の場合は、コンマ（,）を区切り文字として使用してください。
+    `throttle_limit`を超えない場合でも、ブロッキング(処理拒否)するURLを設定します。システム障害の原因となるURLを強制的にブロックするために使用します。
 
--   **throttle_passing_url**<span class='type'>String</span><br/>
-    `throttle_limit`を超える場合でも処理すべきURLを設定します。複数の場合は、コンマ（,）を区切り文字として使用してください。
+-   **throttle_blocking_ip** <span class='type'>ip_address</span>
 
--   **throttle_passing_url_prefix**<span class='type'>String</span><br/>
-    `throttle_limit`を超過した場合でも、処理するURLをprefixとして設定します。複数の場合は、コンマ（,）を区切り文字として使用してください。
+    ユーザーのIPアドレスを基準にブロックする場合に設定します。DDoS攻撃や悪意のあるユーザーをIPアドレスベースでブロックするときに使用します。複数の場合は、コンマ(,)を区切り文字として使用します。
 
--   **throttle_blocked_message** <span class='type'>String</span><br/>
-    デフォルト値 `request blocked!!`<br/>
-    リクエストをブロックしたユーザーに配信メッセージを設定します。
+-   **throttle_target_urls** <span class='type'>String</span>
 
--   **throttle_blocked_forward**<span class='type'>String</span><br/>
-    リクエストをブロックしたユーザーに配信するURLを設定します。`throttle_blocked_message`を同時設定した場合、`throttle_blocked_forward`が優先的されます。
+    登録したURLを対象にスロットリング機能を適用します。複数の場合は、コンマ(,)を区切り文字として使用します。
+
+-   **throttle_passing_url** <span class='type'>String</span>
+
+    `throttle_limit`を超える場合でも処理するURLを設定します。複数の場合は、コンマ(,)を区切り文字として使用します。
+
+-   **throttle_passing_url_prefix** <span class='type'>String</span>
+
+    `throttle_limit`を超える場合でも処理するURLを設定します。複数の場合は、コンマ(,)を区切り文字として使用します。
+
+-   **throttle_blocked_message** <span class='type'>String</span>
+
+    デフォルト値`request blocked!!`
+
+    リクエストをブロックしたユーザーに配信するメッセージを設定します。
+
+-   **throttle_blocked_forward** <span class='type'>String</span>
+
+    リクエストをブロックしたユーザーに配信するURLを設定します。`throttle_blocked_message`を同時設定した場合、`throttle_blocked_forward`を優先します。

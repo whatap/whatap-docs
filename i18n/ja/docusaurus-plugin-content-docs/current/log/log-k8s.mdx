@@ -29,13 +29,11 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 3.  次のエージェント設定コマンドの**_キー_**`logsink_enabled`と**_値_**\`trueを![number 3](/img/number-03.png)入力ウィンドウに入力してください。
 
-```bash
+    ```bash
+    logsink_enabled=true 
+    ```
 
-logsink_enabled=true 
-
-```
-
-1.  ![number 4](/img/number-04.png) **_適用_**ボタンを選択してください。Kubernetesコンテナにログを収集できます。
+4.  ![number 4](/img/number-04.png) **_適用_**ボタンを選択してください。Kubernetesコンテナにログを収集できます。
 
 ### コンテナ内部アプリケーションログ収集の活性化
 
@@ -49,13 +47,11 @@ Java 2.1.1、Python 1.2.2バージョンから可能です。Kubernetesコンテ
 
 3.  次のエージェント設定コマンドの**_キー_**`logsink_enabled`と**_値_**\`trueを![number 3](/img/number-03.png)入力ウィンドウに入力してください。
 
-```bash
+    ```bash
+    logsink_enabled=true 
+    ```
 
-logsink_enabled=true 
-
-```
-
-1.  ![number 4](/img/number-04.png) **_適用_**ボタンを選択してください。Kubernetesコンテナ内アプリケーションのログを収集できます。
+4.  ![number 4](/img/number-04.png) **_適用_**ボタンを選択してください。Kubernetesコンテナ内アプリケーションのログを収集できます。
 
 :::note
 
@@ -87,9 +83,3 @@ Kubernetesに関する様々なログを確認できます。WhaTap Kubernetes�
 | `#WhatapEvent`    | <ul><li>WhaTapイベント設定によって発生したイベントが格納されるログ</li><li>ユーザー設定に関係なく、デフォルトで作成されます</li></ul>                      |
 | `containerStdout` | <ul><li>コンテナ標準出力ログ</li><li>ユーザー設定時に作成</li><li>ノードエージェントに`logsink_enabled=true`設定を追加したした場合</li></ul>      |
 | `AppLog`          | <ul><li>コンテナ内アプリケーションログ</li><li>ユーザー設定時に作成</li><li>アプリケーションエージェントに`logsink_enabled=true`設定の追加時</li></ul> |
-
-<!-- 
-
-Kubernetesコンテナにログを収集できるように上記の設定プロセスを終えたら、次にコンテナ上で実行されるアプリケーションのログを収集できるように設定してください。 
-
--->

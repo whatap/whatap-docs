@@ -18,7 +18,7 @@ tags:
 $ curl -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://service.whatap.io/open/json/act_agent"
 ```
 
-```json title='서버 모니터링 상품군 response'
+```json title='Sever monitoring response'
 {
   "pname": "LOCAL_INFRA",
   "values": "57.0"
@@ -75,7 +75,7 @@ $ curl -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{
 <span class='apitype'>GET</span> https://service.whatap.io/open/json/infra_cpu
 
 ```bash title='command'
-$ curl -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/infra_cpu"
+$ curl -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/json/infra_cpu"
 ```
 
 ```json title='response'

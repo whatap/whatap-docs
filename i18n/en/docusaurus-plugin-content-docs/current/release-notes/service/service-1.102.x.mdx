@@ -1,0 +1,442 @@
+---
+id: service-1_102_x
+title: Service 1.102.X
+toc_max_heading_level: 3
+---
+
+## Service 1.102.21
+
+2023년 6월 22일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 기능 실행 시 임계선이 차트의 범위를 넘어가는 현상 수정</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 목록</UI> 메뉴에서 비교를 위해 서버를 10개 초과 선택하면 표시되는 메시지 수정</p>
+
+</div>
+
+## Service 1.102.20
+
+2023년 6월 21일
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Go
+
+**_관리_** > **_에이전트 설치_** 메뉴에서 다음의 내용을 수정합니다.
+
+-   <Status>Fixed</Status> 에이전트 설치를 위한 GO 지원 버전 변경 (1.14 → 1.17)
+
+-   <Status>Fixed</Status> Amazon linux 운영체제에서 <b>에이전트 다운로드</b> 섹션의 스크립트 코드에 역슬래쉬(\)가 누락된 부분 수정
+
+-   <Status>Fixed</Status> Alpine linux 운영체제에서 <b>Golang 라이브러리 사용</b> 섹션의 내용이 누락된 부분 수정
+
+-   <Status>Fixed</Status> <b>Golang 라이브러리 사용</b> 섹션의 스크립트 코드 내용을 모든 운영체제에 동일하게 적용
+
+-   <Status>Feature</Status> 모든 운영체제에서 <b>에이전트 설정</b> 섹션에 안내 문구 추가
+
+-   <Status>Feature</Status> Alpine linux 운영체제에서 <b>모니터링 시작하기</b> 섹션에 안내 문구 추가
+
+#### PHP
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>Amazon linux</UI> 탭 > <b>에이전트 다운로드</b> 섹션 내용 중 스크립트 코드에 역슬래쉬가 누락된 부분 수정
+
+</div>
+
+## Service 1.102.19
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 목록 호출 시 조직 아이디가 반영되지 않는 오류 수정</p>
+
+* * *
+
+### `Application`, `Container`, `Server`
+
+#### 에이전트 설정 및 서버 설정
+
+-   <Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설정</UI> 메뉴 또는 <UI>서버 설정</UI> > <UI>서버 설정</UI> 메뉴의 <UI>업무 디폴트</UI>, <UI>프로젝트 디폴트</UI> 탭에서 설정 적용 시 요청을 성공해도 에러 메세지가 나오는 현상 수정
+
+-   <Status>Fixed</Status> 설정이 적용된 대상의 아이디가 아닌 이름이 표시되도록 수정
+
+</div>
+
+## Service 1.102.18
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>프로젝트 목록</UI>에서 <code>Browser</code> 프로젝트 카드 뷰 내 차트 및 데이터 조회 쿼리 변경</p>
+
+</div>
+
+## Service 1.102.17
+
+2023년 6월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> 상단 고정 메뉴의 가이드 문서 링크 선택 시 서비스에서 선택한 언어와 일치하는 가이드 문서로 이동하도록 수정</p>
+
+</div>
+
+## Service 1.102.16
+
+2023년 6월 19일
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Oracle
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 <UI>액티브 세션</UI> 테이블의 <UI>SQL</UI> 항목을 선택하면 전달되는 해시값 수정</p>
+
+</div>
+
+## Service 1.102.15
+
+June 15, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>MSA analysis</UI>, the maximum range to query data has been modified to the limit of 1 day.
+
+-   <Status>Fixed</Status> In <UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Client IP</UI>, modified the maximum range for data query to 7 days.
+
+-   <Status>Fixed</Status> In <UI>HITMAP transaction</UI> > <UI>TX trace</UI>, to see the <UI>statistics</UI> data, modified the output data for trace step analysis and method popup as follows:
+       
+    - Modified the titles for each data.
+
+    -   Function → Method
+
+    -   Parameter/Return → Multiple languages
+
+    -   Modification of the modal title: Function → Method
+
+    -   Elapsed time unit modification: (ms) → ms
+
+    -   Deletion of part of outputs: Start point CPU time, memory
+
+-   <Status>Fixed</Status> In <UI>HITMAP transaction</UI> > <UI>TX trace</UI> list, to see the <UI>statistics</UI>, fixed the bug where specific keywords (content, long) of SQL statements are highlighted.
+
+</div>
+
+## Service 1.102.14
+
+June 13, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> If <UI>Manage account INFO.</UI> > <UI>Multi-factor authentication</UI> > <UI>Send OTP key via email</UI> is selected, fixed the bug where the OTP key generation window appears.</p>
+
+</div>
+
+## Service 1.102.13
+
+June 13, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+#### Alert
+
+-   <Status>Fixed</Status> In <UI>Event history</UI>, modified the name of the <b>Last change time</b> column to <UI>Event resolution time</UI>.
+
+-   <Status>Fixed</Status> In <UI>Event history</UI>, the <UI>event resolution time</UI> is not displayed for active events.
+
+</div>
+
+## Service 1.102.12
+
+June 12, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Server List</UI>, the loading image appears continuously when there is no installed agent.</p>
+
+</div>
+
+## Service 1.102.11
+
+June 12, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Notification setting</UI>, fixed the but where the unfolding function in the <UI>Event notification settings per-user</UI> table does not work.</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> In the <b>Transaction Detail</b> window, fixed the past data query bug in the tabs for <UI>SQLs</UI>, <UI>HTTP calls</UI>, and <UI>Methods</UI>.
+
+* * *
+
+### `Server`
+
+-   <Status>Feature</Status> Added the data query time selection function.
+
+</div>
+
+## Service 1.102.10
+
+June 9, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Feature</Status> In <UI>My profile</UI>, added the <UI>Marketing Consent</UI> item.</p>
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Metrics chart</UI>, fixed the bug where the data is not properly displayed in the CSV in case of a duplicated agent name.</p>
+
+</div>
+
+## Service 1.102.09
+
+June 8, 2023
+
+<div class='indentTab'>
+
+<p><Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Metrics</UI>, added the tooltip where the users with only the read role for alert settings can see the lists of <UI>metrics</UI> and <UI>composite metrics</UI>.</p>
+
+</div>
+
+## Service 1.102.08
+
+June 8, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Change</Status> Modified the message that appears upon failure of parser simulation.</p>
+
+</div>
+
+## Service 1.102.06
+
+May 31, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Fixed</Status> When adding or modifying <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Log</UI> > <UI>Real-time Log Event</UI>/<UI>Composite Log Event</UI>, fixed the error of validation logic.</p>
+
+</div>
+
+## Service 1.102.05
+
+May 30, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Install</UI>, fixed the bug where the Issue a license button is reactivated when switched to another tab menu after issuing a license.</p>
+
+</div>
+
+## Service 1.102.04
+
+May 26, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, fixed the display of wrong guidance message upon data inquiry failure when using <UI>Log</UI> > <UI>Log Search</UI> in the summary view of the container without any application agent.</p>
+
+</div>
+
+## Service 1.102.03
+
+May 25, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container Map</UI>, added a guidance message upon data inquiry failure when using <UI>Log</UI> > <UI>Log Search</UI> in the summary view of the container.</p>
+
+</div>
+
+## Service 1.102.02
+
+May 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Project Member</UI>, fixed the FLEX_UPDATE text exposure issue in the <UI>Role</UI> list upon creation of a new project.</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> In <UI>Log</UI> > <UI>Log Setting</UI>, modified not to allow any space in the input field when adding or modifying <UI>Log Parser</UI>, <UI>Fast Index</UI>, and <UI>Long-term Archive Statistics</UI>.</p>
+
+</div>
+
+## Service 1.102.01
+
+May 25, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In Home screen > <UI>Flex Board</UI>, modified the logic to display only the product suite dashboard templates owned by the user account.</p>
+
+</div>
+
+## Service 1.102.00
+
+May 24, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Among sidebar menus, modified to add <code>Browser</code> types in <img src='/img/ico-filter.svg' alt='필터 아이콘'/> project type filters and display the text according to the selected language.
+
+-   <Status>Change</Status> In <UI>Sitemap</UI> > <UI>User Behavior</UI>, modified to search the user behaviors for all accounts with the member management role.
+
+-   <Status>Change</Status> Modified the Delete icon (<img src='/img/ico-trash-new.svg' alt='icon'/>) and the Channel Inquiry icon (<img src='/img/ic-message-filled.svg' alt='icon'/>) in all services.
+
+#### Flex Board
+
+-   <Status>Change</Status> Modified the widget's interaction button state not to be changed regardless of the side menu On/Off under Dashboard.
+
+-   <Status>Fixed</Status> In case of the rich text widgets, fixed the bug where the saved content are not applied after modification.
+
+-   <Status>Fixed</Status> If the browser window has a specific size, when the JSON editing window of the widget is imported in <UI>Manager</UI> mode under <UI>Flex Board</UI>, a scroll appears and disappears repeatedly in the text box.
+
+-   <Status>Change</Status> Modified to display the specific reason when there is no data response in the following widgets.
+
+    -   Log 4XX, 5XX Count
+    -   Request Success Rate
+    -   Response Time by Log
+
+-   <Status>Change</Status> Updated the MXQL path versions of the widgets used in the <b>Integrated Service Dashboard</b> template.
+
+-   <Status>Fixed</Status> Fixed the widget MXQL in the <b>Server Resource Plus</b> dashboard.
+
+-   <Status>Change</Status> Added and reorganized the <UI>Log RPS Trend</UI> widget metric for the <b>Log RPS Board</b> dashboard template.
+
+#### Management
+
+<p><Status>Fixed</Status> In <UI>Project Member</UI>, fixed the issue where the <b>Edit Log</b> role does not appear in the <b>Role</b> column.</p>
+
+#### My Usage
+
+-   <Status>Fixed</Status> In <UI>Preview Invoice</UI>, fixed the bug where the discount amount of a cloud product does not appear in the <UI>Discount</UI> column.
+
+-   <Status>Fixed</Status> In <UI>Preview Invoice</UI>, added the guidance message for billing currency when the fixed price and discount amount appear in <UI>Discount Information</UI>.
+
+-   <Status>Change</Status> In <UI>Usage</UI>, applied UI improvements for better user experiences.
+
+-   <Status>Feature</Status> In <UI>Usage</UI>, added the function to search the project name.
+
+-   <Status>Change</Status> In <UI>Usage</UI>, modified to provide the average usages for each time.
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> The <b>Edit Log</b> role has been added and the related functions has been applied to <UI>Log Setting</UI>.
+
+-   <Status>Change</Status> In <UI>Log Setting</UI>, improved UI/UX for better user experiences.
+
+-   <Status>Change</Status> In <UI>Log Setting</UI>, unified the mixed terms.
+
+-   <Status>Change</Status> In <UI>Log Search</UI>, modified to enter the value, `none` as the key when adding a category while only a key has been entered in the filter with no value assigned.
+
+-   <Status>Change</Status> In <UI>Live Tail</UI>, fixed a typo error (for the term, `spacing`) among the terms in the content filter tooltips.
+
+-   <Status>Change</Status> In <UI>Log Search</UI>, modified not to automatically attach the prefix, `+` when `-` has been entered as the search value's prefix upon entry of a filter.
+
+* * *
+
+### `Database`
+
+#### Dashboard
+
+-   <Status>Change</Status> In <UI>Multiple Instance Monitoring</UI>, changed the selection option from <b>Database</b> to <UI>Instance</UI>.
+
+-   <Status>Fixed</Status> In <UI>Instance List</UI>, added the function to align the table and adjust the column width to compensate for text truncation in the <UI>Event</UI> window that appears by selecting the <b>Fatal</b> or <b>Warning</b> icon in the <UI>Status</UI> column.
+
+#### STAT/REPORT
+
+-   <Status>Change</Status> In <UI>Table Size Increase</UI>, changed the <UI>Download CSV</UI> button to <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' />.
+
+-   <Status>Fixed</Status> In the follow menu path, fixed the problem where the download feature does not work depending on the region clicked on the drop-down menu item when the <img src='/img/ic-csv-download-ms.svg' alt='CSV 다운로드 아이콘' /> button is selected.
+
+    -   <UI>STAT/REPORT</UI> > <UI>Table Size Increase</UI>
+    -   <UI>STAT/REPORT</UI> > <UI>SQL Statistics</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI> tab
+
+* * *
+
+### `Container`
+
+#### Container Map
+
+-   <Status>Feature</Status> The metrics whose unit is percentage among the chart tooltips that appear when user hovers the mouse over a container element, are displayed with the bar graph charts.
+
+-   <Status>Change</Status> Added the <UI>selected metrics</UI> item in the <img src='/img/ico-setting.svg' alt='설정 아이콘'/> > <UI>Label</UI> option.
+
+-   <Status>Fixed</Status> Fixed the symptom where part of the <UI>Log Search</UI> and <UI>Event</UI> tabs in the summary view panel.
+
+-   <Status>Change</Status> Modified to search logs based on the <code>microOid</code> when using the <UI>Log</UI> > <UI>Log Search</UI> function on the summary view panel in case of the app-related category.
+
+-   <Status>Fixed</Status> When using <UI>Log</UI> > <UI>Log Search</UI> after selecting a group, fixed the bug where the app-related category logs are not searched.
+
+* * *
+
+### `Browser`
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI>, fixed the flickering symptom while loading charts in the <UI>error message table</UI>.
+
+-   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Metrics</UI>, added the templates for metrics and composite metrics alert.
+
+* * *
+
+### `CloudWatch`, `AZURE`, `OCI`, `NCP`
+
+#### Common
+
+<p><Status>Feature</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, added <b>1 minute</b> as a collection cycle option.</p>
+
+#### CloudWatch
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, modified the default value for validity period to <b>1 Hour</b>.</p>
+
+</div>

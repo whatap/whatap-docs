@@ -26,22 +26,20 @@ RUN pip3 install --upgrade whatap-python
 
 1.  If the Python application starts, change the application startup script to allow the agent to be injected. 
 
-  Set the configuration file and log output directory to the environment variable `WHATAP_HOME`.
+    Set the log and configuration file paths as the `WHATAP_HOME` environment variables.
 
-````
-```python
-export WHATAP_HOME=/whatap_conf
-```
-````
+    ```python
+    export WHATAP_HOME={로그 및 설정 파일 경로}
+    ```
 
-1.  Create the configuration file.
+2.  Execute the following command to create and configure the _whatap.conf_ file in the path set as `WHATAP_HOME`.
 
     ```bash
-    whatap-setting-config
-    --host {collection server IP}
-    --license XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-    --app_name {application name}
-    --app_process_name {application process name}
+    whatap-setting-config \
+    --host {Collection Server IP} \
+    --license {Access Key} \
+    --app_name {User-defined Application Name} \
+    --app_process_name {Process Name: e.g. uwsgi, gunicorn}
     ```
 
 :::caution
@@ -57,7 +55,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 ## Kubernetes's environment variables and volumes
 
 <Tabs>
-<TabItem value='basic' label='기본' default>
+<TabItem value='basic' label='Default' default>
 
 Set the following environment variables: `NODE_IP`, `NODE_NAME`, and `POD_NAME` to collect nodes and pods in transactions. Mount volatile volumes for WhaTap configuration files and log files.
 

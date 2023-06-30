@@ -8,7 +8,6 @@ tags:
   - PHP
 ---
 
-
 ### 標準インストールのプロセス
 
 1.  _whatap-php.tar.gz_をダウンロードして、_/_ディレクトリに基づいて解凍します。_/usr/whatap/php_ ディレクトリにモニタリングインストールファイルが作成されます。
@@ -19,10 +18,7 @@ tags:
     ```
 2.  {@include: ../../common-items/_php-install-script.mdx}
 
-:::note
-ApacheおよびPHP-FPMの再起動後に適用されます。
-:::
-
+{@include: ../../common-items/_php-extension-whatap.mdx}  
 
 #### whatap-php実行
 
@@ -48,7 +44,7 @@ ApacheおよびPHP-FPMの再起動後に適用されます。
 
 1.  _whatap-php.targ.gz_を_/usr/whatap/php_ディレクトリに解凍します。 
 
-2.  `install.sh`スクリプトを通じてインストールしてください。
+2.  `install.sh`スクリプトを通じてインストールします。
 
 ```docker title=SH
 FROM alpine

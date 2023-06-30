@@ -11,7 +11,9 @@ tags:
 Open APIを利用してMXQLデータを照会する方法について説明します。
 
 :::note
+
 MXQLについての詳細は [次の文書](../mxql/mxql-overview)を参考にしてください。
+
 :::
 
 ## MXQL Open APIの種類
@@ -63,8 +65,8 @@ MXQLを使用する方法は次のとおりです。
 | etime   | データ照会の終了時間                                                                                                                                     |
 | mql     | 直接作成したMXQLクエリ                                                                                                                                  |
 | limit   | 最大データ照会数                                                                                                                                       |
-| pageKey | 文字列 「mxql」の固定値                                                                                                                                 |
-| inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）'{ "default": "ORDER {key : [oid],  sort : [desc] }"}'       |
+| pageKey | 文字列 `mxql`の固定値                                                                                                                                 |
+| inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }"}`       |
 | param   | <span class='api'>Optional</span> [次の文書](../mxql/mxql-guide#bind-parameter)参照<br/>例）`{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
 
 -   照会されたデータがない場合
@@ -170,7 +172,8 @@ MXQLを使用する方法は次のとおりです。
 
 <span class='apitype'>POST</span> https://api.whatap.io/open/api/flush/mxql/path
 
-```json title='Request Body example (INJECT로 \_pk\_ 컬럼 추가, param은 사용하지 않음)'
+```json title='Request Body example'
+#INJECTで_pk_カラム追加、paramは使用しない
 {
   "stime": 1639016640000,
   "etime": 1639016940000,
@@ -191,7 +194,7 @@ MXQLを使用する方法は次のとおりです。
 | etime   | データ照会の終了時間                                                                                                                                     |
 | mql     | [次の文書](../mxql/mxql-guide#custom-query-saas)を参照                                                                                                |
 | limit   | 最大データ照会数                                                                                                                                       |
-| pageKey | 文字列 「mxql」の固定値                                                                                                                                 |
+| pageKey | 文字列 `mxql`の固定値                                                                                                                                 |
 | inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject)参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }" }`       |
 | param   | <span class='api'>Optional</span> [次の文書](../mxql/mxql-guide#bind-parameter)参照<br/>例）`{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
 

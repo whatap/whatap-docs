@@ -1,17 +1,31 @@
 データベースサーバーのプロセス使用量をモニタリングするには、データベースサーバーに別のXOSエージェントプロセスを表示してデータを収集できます。進行中のセッションのcpu usage値を一緒に確認することができます。
 
 :::note
+
 XOSエージェントを利用してデータベースプロセスモニタリング設定方法については、[次の文書](agent-manage#xos)を参照してください。
+
 :::
 
--   **xos**<span class='type'>String</span><br/>デフォルト値`0`<br/>
+-   **xos** <span class='type'>String</span>
+
+    デフォルト値`0`
+
     XOSエージェントを使用するかどうかを設定します。値が`0`の場合、XOSエージェントの収集処理を行いません。値が`1`またはXOSエージェントのIPアドレスを入力してください。IPアドレスを設定すると、そのXOSエージェントからのみデータを収集します。
 
--   **xos_port**<span class='type'>String</span><br/>デフォルト値`3002`<br/>
+-   **xos_port** <span class='type'>String</span>
+
+    デフォルト値`3002`
+
     XOSエージェントと通信するポートを設定します。XOSエージェントとはUDPで通信します。そのポートにファイアウォールが設定されている場合は、UDP通信ができるようにファイアウォールを解除してください。
 
--   **xos_cpu_iowait**<span class='type'>Int</span><br/>デフォルト値`1`<br/>
+-   **xos_cpu_iowait** <span class='type'>Int</span>
+
+    デフォルト値`1`
+
     XOSエージェントから収集したCPU使用率にiowaitの値を含めるかどうかを設定します。値を`1`に設定する場合はiowaitを含み`0`に設定するとiowaitを含みません。
 
--   **xos_mem_buffcache**<span class='type'>Int</span><br/>デフォルト値`0`<br/>
-    XOSエージェントから収集したメモリ使用率にbuffcacheの値を含めるかどうかを設定します。値を`1`に設定する場合はbuffcacheを含み`0`に設定するとbuffcacheを含みません。
+-   **xos_mem_buffcache** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    XOSエージェントから収集したメモリ使用率にbuffcacheの値を含めるかどうかを設定します。値を `1`として設定する場合、buffcacheを含み`0`に設定するとbuffcacheを含みません。

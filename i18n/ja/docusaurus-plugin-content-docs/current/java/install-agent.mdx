@@ -11,11 +11,11 @@ tags:
 import DocCardList from '@theme/DocCardList';
 import TR from '@site/src/components/TR';
 
-{@include: ../common-items/_agent-signup-guide.mdx}
+{@include: ../common-items/_agent-signup-guide.mdx}  
 
 {@youtube: QXKweGBucjI}
 
-{@include: ../getting-started/_create-project-v2.mdx}   
+{@include: ../getting-started/_create-project-v2.mdx}    
 
 {@include: ../getting-started/_accesskey-v2.mdx} 
 
@@ -25,8 +25,9 @@ import TR from '@site/src/components/TR';
 
 エージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、WhaTap収集サーバーに送信するトレーサーとトレーサーがデータを送信するのに役立つ要素で構成されています。
 
--   _whatap.conf_<br/>
-    モニタリングエージェントの設定情報、アクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。詳細については、[次の文書](set-agent)を参照してください。
+-   _whatap.conf_
+
+    モニタリングエージェントの構成情報、アクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。詳細については、[次の文書](set-agent)を参照してください。
 
 -   _security.conf_ `Javaエージェント2.2.2バージョン以降`
 
@@ -37,7 +38,7 @@ import TR from '@site/src/components/TR';
     threadkill=ABCDEF # Thread停止機能
     ```
 
--   _paramkey.txt_ `Javaエージェント2.2.2バージョン以前`
+-   _paramkey.txt_ `Javaエージェント2.2.2バージョン以下`
 
     画面上で各種変数を確認するためのパスワード（6桁の英語、数字で構成）を入力します。
 
@@ -47,37 +48,44 @@ import TR from '@site/src/components/TR';
 
     :::note
 
-    Javaエージェント2.2.2バージョン以前から2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が_seuciry.conf_ファイルのキー値として自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用している場合、2.2.2バージョンにアップデートすると、_security.conf_ファイルには次のように適用されます。
+    Javaエージェント2.2.2バージョン以前から2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が_seuciry.conf_ファイルのキー値として自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用し、2.2.2バージョンにアップデートした場合、_security.conf_ファイルは次のように適用されます。
 
     ```ini
     paramkey=FEDCBA
     threadkill=FEDCBA
     ```
 
-    _paramkey.txt_ファイルが存在しない場合、_security.conf_ファイルのキー値は、**WHATAP**というキー値で自動生成されます。
+    _paramkey.txt_ファイルが存在しない場合、_security.conf_ファイルのキー値は、**WHATAP**というキー値で自動的に生成されます。
 
     :::
 
--   _ping.sh(bat)_<br/>
-    現在設定しているアクセスキー、WhaTapデータ収集サーバーと通信を行い、設定やネットワークの問題がないか確認するためのスクリプト（バッチ）ファイルです。
+-   _ping.sh(bat)_
 
--   _proxy.sh(bat)_<br/>
-    _whatap.agent.proxy-`X.Y.Z`.jar_ファイルを開始するためのスクリプト（バッチ）ファイルです。
+    現在設定しているアクセスキーで、WhaTapデータ収集サーバーと通信を行い、設定やネットワークに問題がないか確認するためのスクリプト(バッチ)ファイルです。
 
--   _resmon.sh(bat)_<br/>
-    CPU、Memory、Disk情報を正常に収集しているかを確認するためのスクリプト（バッチ）ファイルです。
+-   _proxy.sh(bat)_
 
--   _whatap-logsink-lz4-`X.Y.Z`.jar_<br/>
-    アプリケーションサーバからログ情報を収集するためのplugin形式のファイルです。
+    _whatap.agent.proxy-`X.Y.Z`.jar_ファイルを開始するためのスクリプト(バッチ) ファイルです。
 
--   _whatap.agent-`X.Y.Z`.jar_<br/>
+-   _resmon.sh(bat)_
+
+    CPU、Memory、Disk情報が正しく収集しているかを確認するためのスクリプト(バッチ) ファイルです。
+
+-   _whatap-logsink-lz4-`X.Y.Z`.jar_
+
+    アプリケーションサーバのログ情報を収集するためのplugin形式のファイルです。
+
+-   _whatap.agent-`X.Y.Z`.jar_
+
     アプリケーションサーバーの各種モニタリング情報を収集および収集サーバーに送信するモニタリングエージェントのファイルです。
 
--   _whatap.agent.proxy-`X.Y.Z`.jar_<br/>
-    アプリケーションサーバが動作するサーバーからWhaTapの収集サーバーに直接接続ができない場合、Proxyサーバー（経由サーバー）経由の役割を果たすアプリケーションです。
+-   _whatap.agent.proxy-`X.Y.Z`.jar_
 
--   _logs/whatap-`yyyymmdd`.log_<br/>
-    モニタリングエージェントで出力するログファイルです。
+    アプリケーションサーバーが稼働しているサーバーからWhaTap収集サーバーに直接接続ができない場合、その間のProxyサーバー(経由サーバー)で経由する役割を果たすアプリケーションです。
+
+-   _logs/whatap-`yyyymmdd`.log_
+
+    モニタリングエージェントによって出力されるログファイルです。
 
 {@include: ../common-items/_whatap_conf.mdx}
 

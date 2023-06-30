@@ -9,22 +9,30 @@ tags:
   - アプリケーション
 ---
 
--   **whatap.shm_enabled**<span class='type'>String</span><br/>
-      共有メモリの使用有無を設定します。ApacheまたはPHP-FPMの再起動後に適用されます。
-    -   PHP extension（_whatap.so_）とwhatap-phpservice間で共有メモリを利用したIPC機能を追加しました。  
-    -   `shm_key`の値として設定されたキーで生成します。すでにキーが使用されている場合は、別のキーを設定できます。  
-    -   whatap-php serviceで共有メモリの生成・削除を管理します。PHP extensionでは、照会機能のみを実行します。  
+-   **whatap.shm_enabled** <span class='type'>String</span>
 
--   **whatap.shm_key**<span class='type'>String</span><br/>
-      共有メモリを生成する際に必要なキー情報です。ApacheまたはPHP-FPM、そしてwhatap-phpサービスを再起動する必要があります。
+    共有メモリの使用有無を設定します。ApacheまたはPHP-FPMの再起動後に適用されます。
 
--   **whatap.active_stat_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`true`<br/>
-      アクティブステータスの使用有無を設定します。  
+    -   PHP extension（_whatap.so_）とwhatap-phpservice間で共有メモリを利用したIPC機能を追加しました。
 
-      共有メモリを通じて進行中のリクエストの現在のステータスを5秒間隔で収集します。ダッシュボード画面にアクティブステータスグラフが表示されます。ステータスは、一般関数、SQL、DB connection、外部HTTP接続、ソケット接続があり、各ステータス別に進行中のリクエスト数を表示します。
+    -   `shm_key`の値として設定されたキーで生成します。すでにキーが使用されている場合は、別のキーを設定できます。
 
-      ApacheまたはPHP-FPMを再起動してから、進行中のプロセスが処理中に終了すると、正常にアクティブステータス完了処理ができず、誤差が生じる可能性があります。
+    -   whatap-php serviceで共有メモリの生成・削除を管理します。PHP extensionでは、照会機能のみを実行します。
+
+-   **whatap.shm_key** <span class='type'>String</span>
+
+    共有メモリを生成する際に必要なキー情報です。ApacheまたはPHP-FPM、そしてwhatap-phpサービスを再起動する必要があります。
+
+-   **whatap.active_stat_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    アクティブステータスの使用有無を設定します。  
+
+    共有メモリを通じて進行中のリクエストの現在のステータスを5秒間隔で収集します。ダッシュボード画面にアクティブステータスグラフが表示されます。ステータスは、一般関数、SQL、DB connection、外部HTTP接続、ソケット接続があり、各ステータス別に進行中のリクエスト数を表示します。
+
+    ApacheまたはPHP-FPMを再起動してから、進行中のプロセスが処理中に終了すると、正常にアクティブステータス完了処理ができず、誤差が生じる可能性があります。
 
     1.  アクティブトランザクション数と多くの差が生じる場合は、設定で`whatap.active_stat_enabled`を`false`として設定します。 
+
     2.  ダッシュボードで`0件`に初期化されたら、再び`true`として設定します。

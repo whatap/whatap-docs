@@ -1,7 +1,7 @@
 ---
 id: install-check
 title: インストールチェックリスト
-description: PHPエージェントのインストールチェックの説明です。
+description: PHPエージェントのインストールチェックについての説明です。
 tags:
   - PHP
   - PHPモニタリング
@@ -14,9 +14,9 @@ tags:
 
 ## 再起動
 
-インストールが完了した後、ApacheまたはPHP-FPMサービス（Service）を再起動すると、設定されたPHP拡張モジュール（PHP Extension module）_whatap.so _ファイルがロードされます。
+インストールが完了した後、ApacheまたはPHP-FPMサービス(Service)を再起動すると、設定されたPHP拡張モジュール(PHP Extension module) _whatap.so _ファイルがロードされます。
 
-もしwhatap-phpサービスが実行中でない場合やエラーが発生した場合は、再起動してください。
+whatap-phpサービス(Service)が実行されていない場合やエラーが発生した場合は、再起動を行ってください。
 
 ### Redhat/CentOS
 
@@ -44,19 +44,19 @@ $ service whatap_php restart
 
 PHP 확장 모듈이 잘 설치됐는지 다음의 방법으로 확인할 수 있습니다. -->
 
-1.  PHPの追加INIパスに_whatap.ini_ファイルが作成されたかを確認してください。
+1.  PHPの追加INIパスに_whatap.ini_ファイルが作成されていることを確認します。
 
     ```bash title=SH
     $ find / | grep whatap.ini
     ```
 
-2.  PHPの拡張モジュールパスに_whatap.so_ファイルが作成されたかを確認してください。
+2.  PHPの拡張モジュールパスに_whatap.so_ファイルが作成されていることを確認してください。
 
     ```bash title=SH
     $ find / | grep whatap.so
     ```
 
-3.  PHP拡張モジュールが実行されているかを確認してください。
+3.  PHP拡張モジュールが実行されていることを確認してください。
 
     ```bash title=SH
     $ sudo php -m

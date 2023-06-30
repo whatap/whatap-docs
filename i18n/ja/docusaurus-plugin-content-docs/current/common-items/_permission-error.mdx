@@ -1,8 +1,8 @@
 ## Permissionエラーが発生した場合
 
-Java Security Policy関連エラー発生すると、_$JAVA_HOME/jre/lib/security/java.policy_ファイルに権限設定を追加してください。
+Java Security Policyに関連するエラーが発生すると、_$JAVA_HOME/jre/lib/security/java.policy_ファイルに権限設定を追加してください。
 
-すべての権限を一括適用するには、次のように_java.policy_ファイルに設定を追加してください。
+すべての権限を一括で適用するには、次のように_java.policy_ファイルに設定を追加します。
 
 ```java title='$JAVA_HOME/jre/lib/security/java.policy'
 grant {
@@ -14,7 +14,7 @@ grant {
 
 ![java.io.FilePermision error](/img/troubleshooting-permission-error.png)
 
-次のように_java.policy_ファイルに設定を追加してください。
+次のように_java.policy_ファイルに設定を追加します。
 
 ```java title='$JAVA_HOME/jre/lib/security/java.policy'
 grant {
@@ -25,7 +25,7 @@ grant {
 
 ### java.util.PropertyPermissionエラーが発生した場合
 
-次のように_java.policy_ファイルに設定を追加してください。
+次のように_java.policy_ファイルに設定を追加します。
 
 ```java title='$JAVA_HOME/jre/lib/security/java.policy'
 grant {

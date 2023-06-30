@@ -47,9 +47,6 @@
     "message": "모든 태그 보기",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.SearchBar.searchInContext": {
-    "message": "{context}에서 모든 결과 보기"
-  },
   "theme.SearchBar.seeAll": {
     "message": "모든 결과 보기"
   },
@@ -64,9 +61,6 @@
   "theme.SearchPage.emptyResultsTitle": {
     "message": "문서 검색",
     "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "총 {count} 문서 발견",
@@ -297,9 +291,6 @@
     "message": "사이드바 열기",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
-  "theme.SearchBar.noResultsText": {
-    "message": "결과가 없습니다"
-  },
   "theme.ErrorPageContent.tryAgain": {
     "message": "다시 시도해 보세요",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
@@ -316,71 +307,71 @@
     "message": "프로젝트"
   },
   "theme.SearchModal.searchBox.resetButtonTitle": {
-    "message": "Clear the query",
+    "message": "검색어 지우기",
     "description": "The label and ARIA label for search box reset button"
   },
   "theme.SearchModal.searchBox.cancelButtonText": {
-    "message": "Cancel",
+    "message": "취소",
     "description": "The label and ARIA label for search box cancel button"
   },
   "theme.SearchModal.startScreen.recentSearchesTitle": {
-    "message": "Recent",
+    "message": "최근 검색 페이지",
     "description": "The title for recent searches"
   },
   "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "No recent searches",
+    "message": "최근 검색 없음",
     "description": "The text when no recent searches"
   },
   "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
-    "message": "Save this search",
+    "message": "이 검색 저장하기",
     "description": "The label for save recent search button"
   },
   "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
-    "message": "Remove this search from history",
+    "message": "기록에서 이 검색 지우기",
     "description": "The label for remove recent search button"
   },
   "theme.SearchModal.startScreen.favoriteSearchesTitle": {
-    "message": "Favorite",
+    "message": "즐겨찾기",
     "description": "The title for favorite searches"
   },
   "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "Remove this search from favorites",
+    "message": "즐겨찾기에서 이 검색 지우기",
     "description": "The label for remove favorite search button"
   },
   "theme.SearchModal.errorScreen.titleText": {
-    "message": "Unable to fetch results",
+    "message": "결과를 가져올 수 없습니다.",
     "description": "The title for error screen of search modal"
   },
   "theme.SearchModal.errorScreen.helpText": {
-    "message": "You might want to check your network connection.",
+    "message": "네트워크 연결을 확인해 보세요.",
     "description": "The help text for error screen of search modal"
   },
   "theme.SearchModal.footer.selectText": {
-    "message": "to select",
+    "message": "선택하기",
     "description": "The explanatory text of the action for the enter key"
   },
   "theme.SearchModal.footer.selectKeyAriaLabel": {
-    "message": "Enter key",
+    "message": "엔터 키",
     "description": "The ARIA label for the Enter key button that makes the selection"
   },
   "theme.SearchModal.footer.navigateText": {
-    "message": "to navigate",
+    "message": "이동하기",
     "description": "The explanatory text of the action for the Arrow up and Arrow down key"
   },
   "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
-    "message": "Arrow up",
+    "message": "위 화살표",
     "description": "The ARIA label for the Arrow up key button that makes the navigation"
   },
   "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
-    "message": "Arrow down",
+    "message": "아래 화살표",
     "description": "The ARIA label for the Arrow down key button that makes the navigation"
   },
   "theme.SearchModal.footer.closeText": {
-    "message": "to close",
+    "message": "닫기",
     "description": "The explanatory text of the action for Escape key"
   },
   "theme.SearchModal.footer.closeKeyAriaLabel": {
-    "message": "Escape key",
+    "message": "ESC 키",
     "description": "The ARIA label for the Escape key button that close the modal"
   },
   "theme.SearchModal.footer.searchByText": {
@@ -388,11 +379,11 @@
     "description": "The text explain that the search is making by Algolia"
   },
   "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "No results for",
+    "message": "다음 검색어의 결과 없음",
     "description": "The text explains that there are no results for the following search"
   },
   "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "Try searching for",
+    "message": "다음 내용을 검색해 보세요",
     "description": "The text for the suggested query when no results are found for the following search"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
@@ -404,23 +395,23 @@
     "description": "The text for the link to report missing results"
   },
   "theme.SearchModal.placeholder": {
-    "message": "Search docs",
+    "message": "문서 검색",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "Type your search here",
+    "message": "검색어를 입력하세요",
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
-    "message": "Search",
+    "message": "검색",
     "description": "The ARIA label for search page input"
   },
-  "theme.SearchPage.typesenseLabel": {
-    "message": "Search by Typesense",
-    "description": "The ARIA label for Typesense mention"
-  },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "Fetching new results...",
+    "message": "새로운 검색 결과를 가져오는 중...",
     "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Algolia",
+    "description": "The ARIA label for Algolia mention"
   }
 }

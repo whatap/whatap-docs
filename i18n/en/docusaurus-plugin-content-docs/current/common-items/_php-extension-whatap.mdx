@@ -69,36 +69,34 @@ Options
 
 -   **license**
 
-      Granted access key.
+    Granted access key.
 
 -   **server**
 
-      Granted server IP.
+    Granted server IP.
 
 -   **php version**
 
-      Server-installed PHP version(5.2. 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0).
+    Server-installed PHP version(5.2. 5.3, 5.4, 5.5, 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, 8.0).
 
 -   **php config file**
 
-      Set the full path of php.ini installed on the server (_/etc/php.ini_). Proceed with the configuration of the PHP extension.
+    Set the full path of php.ini installed on the server (_/etc/php.ini_). Proceed with the configuration of the PHP extension.
 
--   **php cli** 
+-   **php cli**
 
-      Using the executable command on the command line in the PHP command's full path (_/usr/bin/php_), you can check the basic PHP environment.
+    Using the executable command on the command line in the PHP command's full path (_/usr/bin/php_), you can check the basic PHP environment.
 
 -   **process name**
 
-      Apache running process name (`httpd`, `apache2`, `httpd.worker`…) or PHP-FPM running process name (`php-fpm`, `php5-fpm`). It collects the memory data running.
+    Apache running process name (`httpd`, `apache2`, `httpd.worker`…) or PHP-FPM running process name (`php-fpm`, `php5-fpm`). It collects the memory data running.
 
 -   **zts**
 
-      It sets whether or not to support Zend Thread Safe. 
-
-
+    It sets whether or not to support Zend Thread Safe. 
 
 <Tabs>
-<TabItem value="phpvs" label="PHP" default>
+<TabItem value="phpvs" label="Install PHP version" default>
 
 ```bash title=SH
 $ /usr/whatap/php/install.sh -l [granted access key] -s [granted server IP] -v [PHP version x.x] -i [full path of php.ini] -p [process name]
@@ -106,7 +104,7 @@ $ /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini 
 ```
 
 </TabItem>
-<TabItem value="phcli" label="PHP Cli">
+<TabItem value="phcli" label="Install PHP cli command">
 
 ```bash title=SH
 $ /usr/whatap/php/install.sh -l [generated access key] -s [generated server IP] -e [PHP Cli] -p [process name]

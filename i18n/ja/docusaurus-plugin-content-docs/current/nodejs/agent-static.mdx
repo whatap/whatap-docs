@@ -9,13 +9,20 @@ tags:
 
 エージェントによって収集されたデータから統計を収集する機能に関連するオプションです。
 
--   **mtrace_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `false`<br/>マルチトランザクション追跡機能（Multi Transaction ID、以下MTID）の使用有無を設定します。MTIDを追跡すると、登録したすべてのアプリケーション間の呼び出しを確認できます。
+-   **mtrace_enabled** <span class='type'>Boolean</span>
 
--   **stat_domain_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `false`<br/>
-    クライアントの接続ドメイン別のトランザクション統計収集機能を活性化します。
+    デフォルト値`false`
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span><br/>
-    デフォルト値 `false`<br/>
-    MSAアーキテクチャにおいてサービス間の呼び出し統計を活性化します。値が`true`の場合、外部呼び出しをするときに自分の情報を転送します。
+    マルチトランザクション追跡機能(Multi Transaction ID、以下MTID) の使用有無を設定します。MTIDを追跡することで、登録したすべてのアプリケーション間の呼び出しを確認できます。
+
+-   **stat_domain_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    クライアントに接続中のドメインによるトランザクション統計の収集機能を有効にします。
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    MSAアーキテクチャのサービス間の呼び出し統計を有効にします。値が`true`の場合、外部呼び出しを行うときに独自の情報を送信します。

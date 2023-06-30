@@ -1,0 +1,47 @@
+---
+id: java-2_2_9
+title: Java Agent v2.2.9
+toc_max_heading_level: 2
+---
+
+June 16, 2023
+
+## New Feature <sup><Status>New</Status></sup>
+
+### Addition of the spring-boot-2.5x async tracing
+
+```ini title='whatap.conf'
+weaving=tomcat9,spring-boot-2.5
+```
+
+-   Tracing webflux + "netty, tomcat, undertow"
+
+-   Tracing the spring-cloud-gateway
+
+-   Tracing the dev.miku:r2dbc-mysql-0.8.2.RELEASE
+
+-   Tracing the spring-kafka-2.7
+
+### Addition of the tracing function for okhttp3-4.4 to okhttp3-4.9.3.
+
+```ini title='whatap.conf'
+weaving=okhttp3-4.4
+```
+
+### Addition of the Tibero 6 SQL tracing function
+
+## Update <sup><Status>Change</Status></sup>
+
+### Modification of the asynchronous configuration
+
+-   Modification of the version display method in the weaving configuration: Change from spring-boot-**2.7.x** to spring-boot-**2.7**
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.7
+    ```
+
+-   Modification of the version display method in the weaving configuration: Change from spring-boot-**3.x** to spring-boot-**3.0**
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-3.0
+    ```

@@ -91,6 +91,9 @@
 .DocSearch {
   --docsearch-modal-width: 760px;
 }
+article[class*=searchResultItem] > h2 > a > span::after {
+  content: none !important;
+}
 
 html {
   line-height: 1.5;
@@ -607,6 +610,12 @@ main {
         }
       }
       &:not(:last-child):after {
+        content: " > ";
+        background: none;
+        font-size: .8em;
+        position: relative;
+        top: -1px;
+        color: var(--ifm-font-color-base);
         margin-left: 8px;
         margin-right: 8px;
         padding: 1px;
@@ -653,6 +662,9 @@ main {
       > * {
         margin-left: 50px;
       }
+      > details {
+        margin-left: 50px;
+      }
     }
     h2, h3 {
       margin-top: 0;
@@ -665,6 +677,7 @@ main {
     }
     .indentTab h3 code {
       font-size: 24px;
+      border: none;
     }
     h3 sup, .indentTab h3 sup {
       vertical-align: middle;
@@ -1018,6 +1031,10 @@ main {
       margin: 20px 0;
       padding: 0;
     }
+    .table-desc {
+      font-size: .9em;
+      margin-top: -15px;
+    }
     p {
       margin: 0;
       padding: 8px 0;
@@ -1032,13 +1049,16 @@ main {
       max-width: 100%;
       border: 0.5px solid #333;
     }
+    img.noneborder {
+      border: none;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
     img[src*='k8s-download-yaml'] {
       width: 400px;
     }
-    img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'] {
+    img[alt*='number'], img[alt*='icon'], img[alt*='Icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'] {
       position: relative;
       top: 3px;
       max-height: 19px !important;
@@ -1466,6 +1486,15 @@ main {
         }
       }
     }
+    .db-agent {
+      table {
+        tr {
+          td {
+            width: 33.3%;
+          }
+        }
+      }
+    }
     .db-metric-cubrid {
       table {
         tr {
@@ -1512,6 +1541,10 @@ main {
       }
     }
     .db-support-type {
+      margin-bottom: 24px;
+      .table-desc {
+        font-size: .9em;
+      }
       table {
         font-size: .75em;
         tr {

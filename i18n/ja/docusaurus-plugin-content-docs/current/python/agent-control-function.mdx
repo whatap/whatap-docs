@@ -10,45 +10,68 @@ tags:
 
 Pythonアプリケーションサーバーの機能を制御します。
 
--   **enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`true`<br/>
-      全機能を活性化します。値が`false`の場合でも、サーバーと最小限の通信を維持するための情報は送信されます。
+-   **enabled** <span class='type'>Boolean</span>
 
-<!-- 명시된 enable이 어디 enable인지 문의 -->
+    デフォルト値 `true`
 
--   **counter_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`true`<br/>
-      性能カウンターの追跡を活性化します。性能カウンタには、アクティブトランザクション、ユーザー、CPU、メモリ、SQL、外部HTTP呼び出しなどのデータが含まれます。`enabled`の値が`false`であれば無視されます。
+    全機能を活性化します。値が`false`の場合でも、サーバーと最小限の通信を維持するための情報は送信されます。
 
--   **stat_enabled**<span class='type'>Boolean</span><br/>
-      デフォルト値`true`<br/>
-      統計情報の追跡を活性化します。5分ごとにトランザクション、SQL Query、外部HTTP呼び出し、User Agent、Client IPなどの統計データが収集されることになっていますが、これらの情報の収集が中断されます。 `enabled`の値が`false`であれば無視されます。 
+-   **counter_enabled** <span class='type'>Boolean</span>
 
--   **active_stack_enabled**<span class='type'>Boolean</span><br/>
-        デフォルト値`true`<br/>
-        アクティブスタック追跡を活性化します。\
+    デフォルト値 `true`
+
+    性能カウンターの追跡を活性化します。性能カウンタには、アクティブトランザクション、ユーザー、CPU、メモリ、SQL、外部HTTP呼び出しなどのデータが含まれます。`enabled`の値が`false`であれば無視されます。
+
+-   **stat_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    統計情報の追跡を活性化します。5分ごとにトランザクション、SQL Query、外部HTTP呼び出し、User Agent、Client IPなどの統計データが収集されることになっていますが、これらの情報の収集が中断されます。 `enabled`の値が`false`であれば無視されます。 
+
+-   **active_stack_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    アクティブスタックの追跡をアクティブにします。
+
     :::note
+
     `counter_enabled`値が無効になった場合、アクティブトランザクションデータが収集されないため、アクティブスタックも収集されません。
+
     :::
 
--   **eactive_stack_second**<span class='type'>Seconds</span><br/>
-        デフォルト値`10`<br/>
-        アクティブスタックを追跡する間隔を設定します。
+-   **eactive_stack_second** <span class='type'>Seconds</span>
+
+    デフォルト値`10`
+
+    アクティブスタックを追跡する間隔を設定します。
+
     :::caution
-    値を変えることはお勧めしません。
+
+    値を変えないことをお勧めします。
+
     :::
 
--   **realtime_user_thinktime_max**<span class='type'>MiliSeconds</span><br/>
-      デフォルト値`300000`<br/>
-      リアルタイムユーザーを測定するときに、同一ユーザーとして認められる最大の呼び出し間隔を指定します。
+-   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
 
--   **time_sync_interval_ms**<span class='type'>MiliSeconds</span><br/>
-      デフォルト値`300000`<br/>
-      エージェントとサーバー間の時間の同期化サイクルを指定します。同期化しない場合は0と指定します。  
+    デフォルト値`300000`
 
--   **realtime_user_thinktime_max**<span class='type'>Int</span><br/>
-        デフォルト値`0`<br/>
-        WhaTapエージェントは、一度送ったテキストタイプのデータはhash処理されるため、翌日まで再送信しません。以前の設定値と異なる値を設定する場合は、再送信します。
+    リアルタイムユーザーを測定するときに、同一ユーザーとして認められる最大の呼び出し間隔を指定します。
+
+-   **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
+
+    デフォルト値`300000`
+
+    エージェントとサーバー間の時間の同期化サイクルを指定します。同期化しない場合は0と指定します。  
+
+-   **realtime_user_thinktime_max** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    WhaTapエージェントは、一度送ったテキストタイプのデータはhash処理されるため、翌日まで再送信しません。以前の設定値と異なる値を設定する場合は、再送信します。
+
     :::note
+
     トランザクションURL、SQL Stringなどがテキストタイプデータに該当します。
+
     :::
