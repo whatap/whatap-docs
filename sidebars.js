@@ -2025,8 +2025,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/analysis-count-trend',
-                'mysql/analysis-databaseparameter',
                 'mysql/analysis-lock-and-deadlock',
+                'mysql/analysis-databaseparameter',
                 'mysql/log-viewer',
               ]
             },
@@ -2073,6 +2073,11 @@ const sidebars = {
                 'mysql/set-event-format',
                 'mysql/file-log-notice',
               ],
+            },
+            {
+              type: 'doc',
+              label: 'Log 모니터링',
+              id: 'log/learn-main-menu'
             },
             {
               type: 'link',
