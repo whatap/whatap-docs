@@ -4,49 +4,181 @@ title: Service 1.102.X
 toc_max_heading_level: 3
 ---
 
-## Service 1.102.15
+## Service 1.102.23
 
-2023년 6월 15일
+2023년 6월 27일
 
 <div class='indentTab'>
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
+<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>에러</UI> 탭에서 통계 데이터를 3일 이상 조건으로 조회하면 건수, 애플리케이션 비교 데이터가 조회되지 않는 현상 수정</p>
 
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
+</div>
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
+## Service 1.102.22
+
+2023년 6월 26일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>히트맵</UI> > <UI>히트맵 트랜잭션</UI> 위젯에서 <UI>DB 추적</UI> 버튼을 선택 시 나타나는 <UI>DB 추적</UI> 창의 <UI>DB 추이</UI> 버튼에 다국어 적용</p>
+
+</div>
+
+## Service 1.102.21
+
+2023年6月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリックス</UI>メニューで<UI>イベントルールテスト</UI>機能実行時、臨界線がチャートの範囲を超える現象の修正</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status><UI>サーバー一覧</UI>><UI>サーバー一覧</UI>メニューで比較する際に、10個を超過するサーバーを選択したら表示されるメッセージの修正</p>
+
+</div>
+
+## Service 1.102.20
+
+2023年6月21日
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Go
+
+**_管理_**>**_エージェント設定_**メニューに次の内容を追加します。
+
+-   <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
+
+-   <Status>Fixed</Status>Amazon linuxオペレーティングシステムで<b>エージェントダウンロド</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
+
+-   <Status>Fixed</Status>Alpine linuxオペレーティングシステムで<b>Golangライブラリー使用</b>セクションの内容が表示されない部分の修正
+
+-   <Status>Fixed</Status><b>Golangライブラリー使用</b>セクションのスクリプトコード内容がすべてのオペレーティングシステムに同じく適用されます
+
+-   <Status>Feature</Status>すべてのオペレーティングシステムで<b>エージェント設定</b>セクションに案内メッセージを追加
+
+-   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに案内メッセージを追加
+
+#### PHP
+
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>Amazon linux</UI>タブ><b>エージェントダウンロード</b>セクション内容のうち、スクリプトコードにバックスラッシュが表示されない部分の修正
+
+</div>
+
+## Service 1.102.19
+
+2023年6月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボード一覧の呼び出す時、組織IDが反映されないエラーの修正</p>
+
+* * *
+
+### `Application`, `Container`, `Server`
+
+#### エージェント設定 / サーバー設定
+
+-   <Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューor<UI>サーバー設定</UI>><UI>サーバー設定</UI>メニューの<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブで設定を適用する時、 リクエストに成功してもエラーメッセージが表示される現象の修正
+
+-   <Status>Fixed</Status>設定を適用する対象がIDではなく、名前で表示されるように修正
+
+</div>
+
+## Service 1.102.18
+
+2023年6月20日
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>Change</Status><UI>プロジェクトリスト</UI>にて <code>Browser</code>プロジェクトカードビュー内のチャート及び、データ照会クエリの変更</p>
+
+</div>
+
+## Service 1.102.17
+
+2023年6月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>上段の固定メニューのガイド文書のリンクを選択する時、サービスで選択した言語と一致するガイド文書に移動するように修正</p>
+
+</div>
+
+## Service 1.102.16
+
+2023年6月19日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Oracle
+
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下<UI>アクティブセッション</UI>テーブルの<UI>SQL</UI>項目を選択したら渡されるハッシュ値の修正</p>
+
+</div>
+
+## Service 1.102.15
+
+2023年6月15日
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューでデータを照会する最大範囲を1日制限に修正
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューでデータを照会する最大範囲を7日制限に修正
+
+-   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、Traceステップ分析及びメソッドポップアップの出力データを次のように修正
       
-    - 각 데이터 제목 수정
+    - 各データタイトルを修正
 
-    -   함수 → 메소드
+    -   関数 → メソッド
 
-    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
+    -   Parameter/Return → パラメータ/リターン (多言語適用)
 
-    -   모달 제목 수정: 함수 → 메소드
+    -   モーダルタイトル修正：関数→メソッド
 
-    -   경과시간 단위 텍스트 수정: (ms) → ms
+    -   経過時間単位テキストの修正：(ms) → ms
 
-    -   일부 출력값 제거: 진입 CPU 시간, 메모리
+    -   一部の出力値を削除：進入CPU時間、メモリ
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
+-   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、SQL文の特定キーワード(content、long)が強調されるバグを修正
 
 </div>
 
 ## Service 1.102.14
 
-2023년 6월 13일
+2023年6月13日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
+<p><Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>マルチファクタ認証</UI> > <UI>メールでOTP キーを送信する</UI>ボタンを選択するとOTPキーを(再)生成するウィンドウが表示される現象を修正</p>
 
 </div>
 
 ## Service 1.102.13
 
-2023년 6월 13일
+2023年6月13日
 
 <div class='indentTab'>
 
@@ -54,45 +186,45 @@ toc_max_heading_level: 3
 
 #### アラート通知
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
+-   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで<b>最後の変更時間</b>カラム名を<UI>イベント解消時刻</UI>に修正
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
+-   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで進行中のイベントは<UI>イベント解消時刻</UI>データを表示しないように修正
 
 </div>
 
 ## Service 1.102.12
 
-2023년 6월 12일
+2023年6月12日
 
 <div class='indentTab'>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>サーバー一覧</UI>メニューにインストールされているエージェントがない場合、読み込み中画像が表示され続けるバグを修正</p>
 
 </div>
 
 ## Service 1.102.11
 
-2023년 6월 12일
+2023年6月12日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント受信設定</UI>メニューで<UI>ユーザー別イベント受信設定</UI>テーブルの展開機能が作動しないバグを修正</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+-   <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQL要約</UI>, <UI>HTTP呼び出し要約</UI>、<UI>メソッド要約</UI>タブの過去データ照会に関するバグを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+-   <Status>Feature</Status>データ照会時間選択の機能を追加
 
 </div>
 
@@ -104,11 +236,11 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Feature</Status> <UI>계정 정보</UI> 메뉴에서 <UI>마케팅 수신 동의</UI> 항목 추가</p>
+<p><Status>Feature</Status> <UI>アカウント情報</UI>メニューで<UI>マーケティング受信同意</UI>項目を追加</p>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>メトリクスチャート</UI>メニューでエージェント名が重複している場合、CSVファイルでデータが正しく表示されないバグを修正</p>
 
 </div>
 

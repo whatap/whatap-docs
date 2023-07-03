@@ -13,7 +13,7 @@ Home > Select Project > **_Analysis_** > **_Stack_**
 
 ![Stack](https://img.whatap.io/media/images/whatap_kubernetes_analysis_stack.png)
 
-WhaTap can use the thread stacks collected every 10 seconds (default value) to analyze the performance delay sections in the method level. This feature allows you to check the **_top stack_**, **_unique stack_**, and **_active stack_** of each container.
+WhaTap can use the thread stacks collected every 10 seconds (default value) to analyze the performance delay sections in the method level. This feature allows you to check the **_Top stack_**, **_Unique stack_**, and **_Active Stack_** of each container.
 
 :::note
 
@@ -23,3 +23,16 @@ For more information about **_top stack_**, **_unique stack_**, and **_active st
 -   [Python](../python/analysis-apm)
 
 :::
+
+<!--
+
+탑스택
+스택 트레이스 상의 각 Step 기준으로, Step과 Step 간의 호출 비율을 백분율로 분석한 정보
+
+유니크 스택
+Stack Trace 전체의 Hash 값 기준의 산출 결과로 전체 Step이 동일한 호출 비율을 백분율로 분석한 정보
+
+액티브 스택
+진행 중인 트랜잭션을 액티브 트랜잭션. 액티브 트랜잭션에서 정기적으로 덤프한 스택이 액티브 스택
+
+-->

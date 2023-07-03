@@ -27,7 +27,7 @@ If these three patterns have been performed once, MSA analysis can check the ass
 
 ## MSA Transaction Statistics
 
-The following lists all the transaction statistics that have callers or callees.
+다음은 Caller 또는 Callee를 가지고 있는 모든 트랜잭션 통계입니다.
 
 ![MSA analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
 
@@ -39,19 +39,21 @@ For more information about MTRACE, see [the following](../java/trs-multi-trace).
 
 ![MSA analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
 
-If you select a URL from the statistical data above, you can check the data details for the URL.
+위 통계 데이터 중 조회를 원하는 URL의 ![상세 아이콘](/img/ic-pageview.svg) **_상세_** 아이콘을 선택하면 상세 보기 창이 나타납니다. 상세 보기 창에서 해당 URL에 대한 **_Caller Callee 요약_**, **_Caller Callee 데이터_**, **_Caller Callee 추이_** 등의 상세 데이터 조회가 가능합니다. 
 
--   Caller Callee Summary
--   Caller Callee Data
--   Caller Callee Trend
+:::note 
+
+![전체 화면 보기 아이콘](/img/ico-detail-mode.svg) 아이콘을 선택하면 상세 보기 창을 전체 화면으로 볼 수 있습니다.
+
+:::
 
 ## Caller Callee Summary
 
-Dependency data between the caller and callee of the URL appears as follows. At this time, numerical data whose maximum is 1 such as 0.004 and 0.003, appears together, which indicates the proportion of all callers. Likewise, the gravities for each callee appear on the right.
+**_Caller Callee 요약 _**탭은 다음과 같이 해당 URL의 Caller, Callee 사이의 의존성 정보를 표시합니다. 이때 최대 0.004, 0.003 등 최대 1인 숫자 정보가 함께 표시되는데, 이것은 전체 Caller들 가운데 차지하는 비중을 표시합니다. 마찬가지로 각 Callee들의 비중이 오른쪽에 함께 표시됩니다.
 
 ![MSA Analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_3.png)
 
-Through the above screen, you can analyze the dependencies between callers and callees based on the _/account/save/employee/seoul_ transaction.
+위 화면을 통해 _/account/save/employee/seoul_ 이라는 트랜잭션을 기준으로 Caller와 Callee들 사이의 의존성을 분석할 수 있습니다.
 
 Caller or callee nodes can be developed in detail to sub-nodes.
 

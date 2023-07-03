@@ -1,7 +1,7 @@
 ---
 id: resource-node-list
 title: Node一覧および詳細
-description: 現在のプロジェクトのNodeの現況情報と詳細情報を確認できます。
+description: 現在のプロジェクトのNodeステータス情報と詳細情報を確認できます。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
@@ -11,7 +11,7 @@ tags:
 
 :::note
 
-特定のカラムのデータが表示されないのは、Kubernetes Nodeエージェントが旧バージョンである可能性があります。この場合、十分なデータが収集されるようにKubernetesエージェントバージョンをアップデートしてください。 
+特定のカラムのデータが表示されない場合は、Kubernetes Nodeエージェントが古いバージョンである可能性があります。この場合、十分なデータが収集されるようにKubernetesエージェントバージョンを更新してください。 
 
 :::
 
@@ -19,13 +19,13 @@ tags:
 
 ホーム画面 > プロジェクト選択 > **_リソース_** > **_Node一覧_**
 
-現在のプロジェクトのNodeの現況情報をテーブル形で確認できます。
+現在のプロジェクトのNodeのスタータス情報をテーブル形で確認できます。
 
 ![Node一覧](https://img.whatap.io/media/images/whatap_kubernetes_resource_node_list.png)
 
 提供する主な情報は次のとおりです。
 
-| 分類     | 主要情報                                                  |
+| 分類     | 重要情報                                                  |
 | ------ | ----------------------------------------------------- |
 | CPU    | コア数<br/>使用率<br/>Sys/User使用率                           |
 | メモリ    | 容量<br/>使用率<br/>Swap使用率                                |
@@ -37,7 +37,7 @@ tags:
 -   ![比較するアイコン](/img/ico-compare.svg) **_比較する_**：複数のNodeを選択し、チャートベースで使用量を比較できます。
 -   ![CSVダウンロードアイコン](/img/ico-csv.svg) **_CSVダウンロード_**：画面に表示された一覧データをCSVファイルとしてダウンロードできます。
 
-サーバー一覧ページのデータは、60秒ごとに自動更新されます。ユーザーは、![一時停止アイコン](/img/ico-pause.svg)ボタンをクリックしてデータの自動更新を中止したり![再開アイコン](/img/ico-play-time.svg)ボタンをクリックして自動更新を再起動できます。
+サーバー一覧ページのデータは、60秒ごとに自動更新されます。ユーザーは、![一時停止アイコン](/img/ico-pause.svg)ボタンをクリックして、データの自動更新を中止します。![再開アイコン](/img/ico-play-time.svg)ボタンをクリックして自動更新を再開できます。
 
 ## Node詳細情報
 
@@ -47,9 +47,9 @@ tags:
 
 ![Node詳細](https://img.whatap.io/media/images/whatap_kubernetes_resource_node_detail.png)
 
-Node詳細画面は、上段の4つのチャートとNode内のコンテナ詳細情報で構成されています。
+Node詳細画面は、上部の4つのチャートとNode内のコンテナ詳細情報で構成されています。
 
--   上段チャート
+-   トップチャート
 
     -   **_CPU Usage_**
     -   **_Memory Usage_**
@@ -66,20 +66,20 @@ Node詳細画面は、上段の4つのチャートとNode内のコンテナ詳�
     | コマンド             | コンテナ実行コマンド                                        |
     | CpuByLimit       | CPU Limit基準CPUの全体使用率                              |
     | MemoryWsByLimit  | コンテナメモリのLimit基準working set使用量                     |
-    | CpuThrottledCnt  | コンテナCPU Throttled件数                               |
+    | CpuThrottledCnt  | コンテナCPU Throttled数                                |
     | CpuThrottledTime | コンテナCPU Throttled時間                               |
-    | MemLimit         | コンテナメモリLimitサイズ                                   |
-    | MemRequest       | コンテナメモリRequestサイズ                                 |
-    | MemWs            | コンテナメモリworking set                                |
+    | MemLimit         | コンテナのメモリLimitサイズ                                  |
+    | MemRequest       | コンテナのメモリRequestサイズ                                |
+    | MemWs            | コンテナのメモリworking set                               |
     | IoReadBytes      | コンテナ全体ブロックデバイスの1秒当たり読み込んだバイトの合計                   |
-    | IoReadIops       | コンテナ全体ブロックデバイスの1秒当たり読み込んだ件数の合計                    |
+    | IoReadIops       | コンテナ全体ブロックデバイスの1秒当たり読み込んだ数の合計                     |
     | IoWriteBytes     | コンテナ全体ブロックデバイスの1秒当たり書き込んだバイトの合計                   |
-    | IoWriteIops      | コンテナ全体ブロックデバイスの1秒当たり書き込んだ件数の合計                    |
+    | IoWriteIops      | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                     |
     | NetRxBytes       | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |
-    | NetRxDropped     | コンテナネットワーク受信dropped件数                             |
-    | NetRxError       | コンテナネットワーク受信エラー件数                                 |
-    | NetRxIops        | コンテナネットワーク受信件数                                    |
-    | NetTxByes        | コンテナネットワーク送信データサイズ                                |
-    | NetTxDropped     | コンテナネットワーク送信dropped件数                             |
-    | NetTxError       | コンテナネットワーク送信エラー件数                                 |
-    | NetTxIops        | コンテナネットワーク送信件数                                    |
+    | NetRxDropped     | コンテナネットワーク受信dropped数                              |
+    | NetRxError       | コンテナのネットワーク受信エラー数                                 |
+    | NetRxIops        | コンテナのネットワーク受信数                                    |
+    | NetTxByes        | コンテナのネットワーク送信データサイズ                               |
+    | NetTxDropped     | コンテナのネットワーク送信dropped数                             |
+    | NetTxError       | コンテナのネットワーク送信エラー数                                 |
+    | NetTxIops        | コンテナのネットワーク送信数                                    |

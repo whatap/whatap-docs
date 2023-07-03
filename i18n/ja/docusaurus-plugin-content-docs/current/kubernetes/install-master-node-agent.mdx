@@ -1,7 +1,7 @@
 ---
 id: install-master-node-agent
 title: マスターおよびNodeエージェントのインストール
-description: インストール案内ページに従って、マスターおよびNodeエージェントのインストールプロセスを進めてください。
+description: インストール手順のページに従って、マスターおよびNodeエージェントのインストールプロセスを進めてください。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
@@ -15,21 +15,21 @@ hide_table_of_contents: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**_インストール案内_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびNodeエージェントのインストールプロセスを進めてください。 
+**_インストール手順_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびNodeエージェントのインストールプロセスを進めてください。 
 
 <Tabs groupId='k8stype'>
 
 <TabItem value='kubernetes' label='KUBERNETES' default>
 
-## 環境設定
+## 環境を事前に確認して設定
 
-ユーザーのKubernetes環境によっては、事前の環境設定が必要な場合があります。Istio、GKE、OpenShift環境に該当しない場合は、次のステップに進んでください。
+ユーザーのKubernetes環境によっては、事前に環境設定が必要な場合があります。Istio、GKE、OpenShift環境に当てはまらない場合は、次のステップに進んでください。
 
 <Tabs>
 
 <TabItem value='istio' label='Istio環境' default>
 
-Istio環境であれば、次のコマンドを実行して必要なリソースを生成してください。
+Istio環境の場合は、次のコマンドを実行して必要なリソースを生成してください。
 
 ```bash title='SH'
 kubectl create namespace whatap-monitoring
@@ -58,7 +58,7 @@ EOF
 
 <TabItem value='gke' label='GKE環境'>
 
-Google Kubernetes Engine（GKE）の場合、ユーザークラスターを作成した後、権限設定のために次のコマンドを実行してください。
+Google Kubernetes Engine(GKE)の場合、ユーザークラスターを作成した後に権限設定をするために、次のコマンドを実行してください。
 
 ```bash
 ACCOUNT=$(gcloud info --format='value(config.account)')
@@ -69,7 +69,7 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \
 
 :::note
 
-gcloudコマンドのインストールの詳細については、[グーグルクラウド文書](https://cloud.google.com/sdk/docs/install)を参考にしてください。
+gcloudコマンドのインストールの詳細については、[グーグルクラウド文書](https://cloud.google.com/sdk/docs/install)を参照してください。
 
 :::
 
@@ -79,7 +79,7 @@ gcloudコマンドのインストールの詳細については、[グーグル�
 
 ![OpenShift](/img/kube-install-openshift.png)
 
-**_インストール案内_**画面で**_OpenShift環境の場合は追加設定_**セクションを開いて**_openshift_scc_**ボタンを選択してください。ファイルをダウンロードした後、次のコマンドを実行してください。
+**_インストール手順_**画面で**_OpenShift環境の場合は、追加設定_**セクションを開いて**_openshift_scc_**ボタンを選択してください。ファイルをダウンロードした後、次のコマンドを実行してください。
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -91,7 +91,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成
 
-ユーザーのKubernetesバージョンとContainer Runtimeに合うYAMLファイルをダウンロードしてエージェントをインストールする段階です。
+ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントをインストールする手順です。
 
 1.  マスターNodeで次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
@@ -101,13 +101,19 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-check-version.svg)
 
-2.  **_エージェントインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**に合うYAMLファイルを選択し**_ダウンロード_**ボタンを選択してください。
+2.  **_エージェントインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンを選択してください。
 
     ![](/img/k8s-download-yaml.png)
 
-3.  ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
+  :::note
 
-4.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
+  마스터 에이전트 자원 사용은 컨테이너 수 증가에 따라 영향을 받을 수 있습니다. 기본값으로 설정된 메모리 limit(350MB) 이상으로 자원을 사용할 경우 OOM(Out Of Meomory)이 발생할 수 있습니다. 사용자가 _YAML_ 파일을 통해 해당 설정을 변경할 수 있습니다.
+
+  :::
+
+1.  ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
+
+2.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
 
     ```bash
     # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように修正してください。
@@ -116,15 +122,15 @@ oc create -f whatap_openshift_scc.yaml
 
     :::note
 
-    **WhaTapエージェントは、プロジェクト情報を記憶するために少量のPersistent Volume（PV）が必要です。**パブリッククラウド環境のK8Sでは、Persistent Volume Claim（PVC）リクエストだけでPVが自動的に作成できます。しかし、プライベート環境の場合は、WhaTapのPVCリクエストを受けられるPVが作成されてから、コマンドを実行してください。
+    **WhaTapエージェントは、プロジェクト情報を記憶するために少量のPersistent Volume(PV)が必要です。**パブリッククラウド環境のK8Sでは、Persistent Volume Claim(PVC) リクエストだけでPVが自動的に作成できますが、プライベート環境の場合は、WhaTapのPVCリクエストを受信できるPVが作成されて後に、コマンドを実行してください。
 
     :::
 
-Kubernetes APIを利用して、エージェントが作成（create）されたかが確認できます。
+Kubernetes APIを利用して、エージェントが作成(create)されたのか確認できます。
 
 ![](/img/k8s-install-agent-check.svg)
 
-## Kubernetesエージェントのインストール確認
+## Kubernetesエージェントのインストールを確認
 
 次のコマンドを実行して、マスターエージェントとNodeエージェントの状態を確認してください。
 
@@ -134,13 +140,13 @@ kubectl get pod -n whatap-monitoring
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
-**STATUS**項目が**Running**の場合は、インストール済みです。マスターおよびNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューでパフォーマンス情報を収集することを確認してください。
+**STATUS**項目が**Running**の場合は、インストール済みです。マスターおよびNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューからパフォーマンス情報を収集することを確認してください。
 
 #### Running状態でない場合
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-マスターNodeで次のコマンドを実行して、Pod生成の失敗原因を把握してください。実行結果の下段の**Events:**項目を確認してください。
+マスターNodeで次のコマンドを実行して、Pod(pod) 生成の失敗原因を特定してください。実行結果の下部の**Events:**項目を確認してください。
 
 ```bash
 kubectl describe pod {POD_NAME} -n whatap-monitoring
@@ -150,7 +156,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::tip
 
-`kubectl`コマンド使用時`-n {ネームスペース}`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるので`-n whatap-monitoring`というオプションを追加します。
+`kubectl`コマンド使用時`-n {ネームスペース}`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
 
 :::
 
@@ -160,9 +166,9 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 ## Kubernetesエージェント作成
 
-1.  Kubernetesモニタリングのためのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択してください。
+1.  Kubernetesモニタリングのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択します。
 
-2.  ダウンロードしたYAMLファイルを使用してエージェントを作成してください。
+2.  ダウンロードした_YAML_ファイルを使用してエージェントを作成してください。
 
     ```bash
     kubectl -f whatap_kube_fargate.yaml apply
@@ -170,9 +176,9 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 {@include: _check-k8s-agent.mdx}
 
-## クラスターネームスペースの確認
+## クラスターのネームスペースの確認
 
-エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)画面左側のメニューでプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
+エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)の画面左側のメニューからプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
 
 </TabItem>
 
@@ -180,7 +186,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::note
 
--   アプリケーションエージェントのインストールを進めるには、画面右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参考にしてください。
--   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参考にしてください。
+-   アプリケーションエージェントのインストールを進めるには、画面右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参照してください。
+-   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

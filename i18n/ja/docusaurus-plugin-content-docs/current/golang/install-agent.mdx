@@ -115,34 +115,74 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 </details>
 
-## エージェント設定
+## エージェント設定{#set-agent}
 
-次のコマンドを順番に実行して、_whatap.conf_ファイルに**アクセスキー**と**収集サーバーIP**などを設定してください。
+### 基本設定
+
+次のコマンドを順番に実行して、_whatap.conf_ファイルに**アクセスキー**と**収集サーバーIPアドレス**などを設定してください。
+
+-   アプリケーションの開始スクリプトパスに_whatap.conf_ファイルを作成してください。 
+
+-   `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション開始スクリプトのパスを_whatap.conf_ファイルパスとして認識します。
 
 ```bash title='SH'
-$ echo "license={アクセスキー}" >> /usr/whatap/agent/whatap.conf
-$ echo "whatap.server.host={収集サーバーIP}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_name={アプリケーション名}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_process_name={アプリケーションプロセス名}" >> /usr/whatap/agent/whatap.conf
+# スクリプト実行パスにwhatap.confファイルを作成
+$ echo "license={アクセスキー}" >> ./whatap.conf
+$ echo "whatap.server.host={収集サーバーのIPアドレス}" >> ./whatap.conf
+$ echo "app_name={アプリケーション名}" >> ./whatap.conf
+
+# アプリケーション実行
+./app
 ```
 
--   **license**：**アクセスキー**を入力してください。
--   **whatap.server.host**：**収集サーバーIP**を入力してください。
--   **app_name**：アプリケーション名を入力してください。文字列でユーザー設定します。
--   **app_process_name**：モニタリング対象アプリケーションのプロセス名を入力してください。入力したプロセス名でメモリ使用量を測定します。
+-   `license`：**アクセスキー**を入力してください。
 
-* * *
+-   `whatap.server.host`：**収集サーバーのIPアドレス**を入力してください。
 
-Alpine Linuxの場合、次のようにスクリプトを実行し、案内に従って**アクセスキー**と**収集サーバーIP**を入力してください。
+-   `app_name`：アプリケーション名を入力してください。文字列を利用してユーザー設定することができます。
 
-```bash title='SH'
-$ sudo /usr/whatap/php/install.sh
+### `WHATAP_HOME`環境変数の設定
 
-Input project access key
-xxxxxxxxxxxxxxxx   # 発行したアクセスキーを入力
+_whatap.conf_ファイルパスを`WHATAP_HOME`環境変数として設定できます。`WHATAP_HOME`パスをまず作成してください。
 
-Input whatap.server.host
-192.x.x.x          # WhaTap収集サーバーのIPを入力
+```bash
+# WHATAP_HOMEパスを先に作成した後、whatap.confファイルパスを設定
+mkdir ./whatap_home
+echo "license={アクセスキー}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={収集サーバーのIPアドレス}" >> ./whatap_home/whatap.conf
+echo "app_name={アプリケーション名}" >> ./whatap_home/whatap.conf
+
+# アプリケーション実行
+WHATAP_HOME=./whatap_home ./app
+```
+
+### プロセス別エージェント名の設定{#duplicate_appname}
+
+2つ以上のプロセスで実行されるアプリケーションで 1つの_whatap.conf_ファイルを共有すると、ユーザーが設定した変更が正常に反映されない場合があります。 プロセスごとにそれぞれの_whatap.conf_ファイルを設定することをお勧めします。
+
+エージェント名が重複しないように、ユーザーは文字列をエージェント名に追加して区別できます。`app_name`オプションで設定した値がエージェント名の最前列に追加されます。
+
+同一インスタンス、同一コマンドで実行されるエージェント名が重複する現象を回避できます。 
+
+```bash
+# WHATAP_HOMEパスを先に作成した後、whatap.confファイルパス設定
+mkdir ./whatap_home
+echo "license={アクセスキー}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={収集サーバーのIPアドレス}" >> ./whatap_home/whatap.conf
+echo "app_name={アプリケーション名-1}" >> ./whatap_home/whatap.conf
+
+# アプリケーション実行
+WHATAP_HOME=./whatap_home ./app 
+
+# WHATAP_HOMEパスを先に作成した後、whatap.confファイルパス設定
+mkdir ./whatap_home1
+echo "license={アクセスキー}" >> ./whatap_home1/whatap.conf
+echo "whatap.server.host={収集サーバーのIPアドレス}" >> ./whatap_home1/whatap.conf
+echo "app_name={アプリケーション名-2}" >> ./whatap_home1/whatap.conf
+
+# アプリケーション実行
+WHATAP_HOME=./whatap_home1 ./app
+
 ```
 
 ## Golangライブラリの使用
@@ -152,14 +192,14 @@ Golangのソースコードにwhatap/go-apiを追加して配布します。
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">
 
-```bash title='SH'
-$ go get -u github.com/whatap/go-api
+```bash
+$ go get github.com/whatap/go-api
 ```
 
 </TabItem>
 <TabItem value="debian-ubuntu" label="Debian/Ubuntu">
 
-```bash title='SH'
+```bash
 $ go get github.com/whatap/go-api/trace
 $ go get github.com/whatap/go-api/sql
 $ go get github.com/whatap/go-api/httpc
@@ -169,7 +209,7 @@ $ go get github.com/whatap/go-api/method
 </TabItem>
 <TabItem value="amazonlinux" label="Amazon Linux">
 
-```bash title='SH'
+```bash
 $ go get github.com/whatap/go-api/trace
 $ go get github.com/whatap/go-api/sql
 $ go get github.com/whatap/go-api/httpc
@@ -192,4 +232,32 @@ func main(){
 
 ## モニタリングの開始
 
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="Red Hat/CentOS">
+
 アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+1.  次のコマンドを実行して、WhaTapエージェントデーモンを実行してください。
+
+    ```bash
+    /usr/whatap/php/whatap-agent start
+    ```
+
+2.  次のコマンドを実行して、WhaTapサービスが正常に実行されていることを確認してください。
+
+    ```bash
+    ps -elf | grep whatap_agent_static
+    ```
+
+アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。
+
+</TabItem>
+</Tabs>

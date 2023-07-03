@@ -346,11 +346,30 @@ DELETE [pcode]
 
 `JOIN`コマンドを説明する前に、joinの概念を見てみましょう。 joinは、２つのクエリの結果を結合するために使用します。このとき、2つのクエリの結果に基づいてどのフィールドに基準を合わせるかの情報を伝える必要があります。このフィールドを`pk`または`primaryKey`といいます。  
 
-![](https://img.whatap.io/media/images/mxql-11.png)
+|         Time        |     Oid    |      \>      |      \>      |      \>      |    Fields    |
+| :-----------------: | :--------: | :----------: | :----------: | :----------: | :----------: |
+| 2021-06-30 15:30:00 | 2031382584 | field_name_1 | field_name_2 | field_name_3 | field_name_4 |
+|          ^          |      ^     |  sampleData  |      123     |     2.543    |   testData   |
 
-![](https://img.whatap.io/media/images/mxql-12.png)
+<div class='table-desc'>표1. JOIN 명령어 샘플 데이터 - 첫 번째 쿼리 결과(pk = field_name_4)</div>
 
-![](https://img.whatap.io/media/images/mxql-13.png)
+|         Time        |     Oid    |       >      |       >      |       >      |    Fields    |
+| :-----------------: | :--------: | :----------: | :----------: | :----------: | :----------: |
+| 2021-06-30 15:30:00 | 2031382584 | field_name_4 | field_name_5 | field_name_6 | field_name_7 |
+|          ^          |      ^     |   testData   |    myData    |   testData   |    myData    |
+
+<div class='table-desc'>표2. JOIN 명령어 샘플 데이터 - 두 번째 쿼리 결과(pk = field_name_4)</div>
+
+<div class='db-support-type'>
+
+|         Time        |     Oid    |      \>      |      \>      |      \>      |      \>      |      \>      |      \>      |    Fields    |
+| :-----------------: | :--------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
+| 2021-06-30 15:30:00 | 2031382584 | field_name_1 | field_name_2 | field_name_3 | field_name_4 | field_name_5 | field_name_6 | field_name_4 |
+|          ^          |      ^     |  sampleData  |      123     |     2.543    |   testData   |    myData    |   testData   |    myData    |
+
+<div class='table-desc'>표3. JOIN 명령어 샘플 데이터 - 두 쿼리 결과를 pk를 기준으로 join한 결과</div>
+
+</div>
 
 **表1**と**表2**はクエリの結果を表わし、`pk`として設定した`file_name_4`フィールドは青で表示します。**表3**は`pk`に設定した`file_name_4`を基準に2つのクエリの組み合わせ結果を示します。  
 
@@ -369,7 +388,22 @@ INJECT default
 
 サンプルクエリの結果の例は次のとおりです。
 
-![](https://img.whatap.io/media/images/mxql-14.png)
+<div class='db-support-type'>
+
+|         Time        |     Oid    |     \>     |   \>  |  \> |    \>    |  \>  |  \>  |  \>  | Fields |
+| :-----------------: | :--------: | :--------: | :---: | :-: | :------: | :--: | :--: | :--: | :----: |
+| 2021-06-30 15:30:00 | 2031382584 |    pcode   | pname | ... |   type   | act0 | act3 | act8 |   act  |
+|          ^          |      ^     | sampleData |  123  | ... | testData |   0  |   1  |   0  |    1   |
+
+<div class='table-desc'>표4. 샘플 쿼리 결과</div>
+
+</div>
+
+```sql
+CATEGORY agent_list
+FLEXLOAD
+JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8,act] }
+```
 
 :::note
 

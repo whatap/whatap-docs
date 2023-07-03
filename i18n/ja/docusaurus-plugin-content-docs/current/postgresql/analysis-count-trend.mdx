@@ -1,7 +1,7 @@
 ---
 id: analysis-count-trend
 title: カウント推移比較
-description: データベース運用の推移を確認して比較することができます。
+description: データベースの稼働傾向を確認して比較することができます。
 tags:
   - PostgreSQL
   - データベース
@@ -19,7 +19,7 @@ tags:
 
 データベースのコア指標に対する運用推移を時間帯別に確認し、性能を追跡することができます。 また、異なる日付のカウント推移比較により、データベース運用推移を確認することができます。 **_アクティブセッション_**テーブルを通じて、現在進行中のセッション情報を確認し、長期間進行中のセッションを区分することができます。
 
-## 基本画面案内
+## 基本画面ガイド
 
 <ProdImg img='db-compare-count-trend.png' desc='카운트 추이' />
 
@@ -61,7 +61,7 @@ tags:
 
 -   右上の![以前時間アイコン](/img/ico-left-time.svg)または![以降時間アイコン](/img/ico-right-time.svg)を選択すると、1分単位でデータを照会できます。 5秒単位で移動するには、![5秒以前アイコン](/img/ic-caret-left.svg)または![5秒以降アイコン](/img/ic-caret-right.svg)ボタンを選択してください。
 
--   **_アクティブセッション_**テーブル一覧に文字の色は黒 → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>順にセッションの実行速度が遅いことを意味します。
+-   **_アクティブセッション_**テーブル一覧の文字の色は黒 → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>の順にセッションの実行速度が遅いことを意味します。
 
 -   グラフチャートの特定時点をクリックすると(![数字3](/img/number-03.png))当該地点を赤い線で表示し、当時収集されたアクティブセッションを確認できます。
 
@@ -73,4 +73,4 @@ tags:
 
 <!--컬럼 정보 안내-->
 
-{@include: ../common-items/_db_postgresql-column.mdx} 
+{@include: ../common-items/_db_postgresql-column.mdx}

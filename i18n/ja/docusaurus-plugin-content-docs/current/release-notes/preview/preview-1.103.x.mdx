@@ -14,152 +14,395 @@ toc_max_heading_level: 3
 
 :::
 
-## Preview 1.103.19
+## Preview 1.103.29
 
-2023년 6월 15일
+2023년 6월 26일
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Feature</Status> <UI>통합 보고서</UI> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정</p>
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 각 사용자의 수신 설정에 대한 상세 내용을 확인할 때(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/> 버튼 선택 시) 설정 내용이 수직으로 위(Top) 정렬되도록 스타일 수정
 
--   **기존**: 종료 시간을 전일 23시 59분까지 선택 가능
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 이메일, SMS, WhatsApp, 모바일 알림 컬럼의 최소 너비 설정
 
--   **변경**: 종료 시간을 현재 시간 기준, 1시간 이전(현재 시간 - 1시간)까지 선택 가능
-
-### `Server`
-
-#### アラート通知
-
--   <Status>Feature</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 설정 복사</UI>(구, <b>알림 정책 복사</b>) 기능에 <UI>현재 프로젝트에 복사</UI>할 수 있는 옵션 추가
-
--   <Status>Change</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>이벤트 설정 복사</UI> 기능을 다음과 같이 변경
-
-    -   **기존**: 복사한 이벤트의 제목을 동일하게 사용하여 복사 대상 프로젝트에 이벤트를 중복 복사하면 가장 마지막으로 복제한 이벤트로 덮어 씌워짐
-
-    -   **변경**
-
-        -   이벤트의 제목으로 `{복사한 이벤트 이름}(copy)` 사용
-        -   복사 대상 프로젝트에 이벤트를 중복 복사하면 복사한 횟수만큼 이벤트 생성
-
-</div>
-
-## Preview 1.103.18
-
-2023년 6월 15일
-
-<div class='indentTab'>
+* * *
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>히트맵</UI> > <UI>히트맵 트랜잭션</UI> 위젯에서 <UI>DB 추적</UI> 버튼을 선택 시 나타나는 <UI>DB 추적</UI> 창의 <UI>DB 추이</UI> 버튼에 다국어 적용</p>
 
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
+* * *
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
-      
-    - 각 데이터 제목 수정
+### `Log`
 
-    -   함수 → 메소드
+<p><Status>Feature</Status> <UI>로그 검색기</UI>, <UI>로그 트렌드</UI>, <UI>트랜잭션 로그</UI> 메뉴에서 키워드 하이라이팅 기능 추가</p>
 
-    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
+* * *
 
-    -   모달 제목 수정: 함수 → 메소드
+### `AWS Log`
 
-    -   경과시간 단위 텍스트 수정: (ms) → ms
+-   <Status>Change</Status> <b>프로젝트 생성</b> 페이지의 <UI>AWS Log</UI> 아이템에서 `beta` 태그 제거
 
-    -   일부 출력값 제거: 진입 CPU 시간, 메모리
+-   <Status>Change</Status> <UI>에이전트 설치</UI> > <UI>WhaTap Forwarder 설치</UI> 차례에서 <UI>VPC 옵션</UI>은 설치형인 경우에만 노출하도록 변경
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
+-   <Status>Fixed</Status> <UI>프로젝트 액세스 키 발급받기</UI> 링크를 선택하면 이동하는 페이지 URL의 <code>productType</code> 파라미터 값을 <code>sms</code>에서 <code>VR</code>로 수정
 
 </div>
 
-## Preview 1.103.17
+## Preview 1.103.28
 
-2023년 6월 14일
-
-<div class='indentTab'>
-
-### `共通`
-
-<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
-
-### `Container`
-
-<p><Status>Fixed</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 안내 문구 수정</p>
-
-</div>
-
-## Preview 1.103.16
-
-2023년 6월 13일
-
-<div class='indentTab'>
-
-### `Server`
-
-#### アラート通知
-
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
-
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
-
-### `Container`
-
--   <Status>Feature</Status> <UI>리소스</UI> > <UI>퍼포먼스 요약</UI> 메뉴에 컨테이너 수, 파드 수 추이 차트 추가
-
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에 <UI>불일치</UI> 필터 옵션 추가
-
-</div>
-
-## Preview 1.103.15
-
-2023년 6월 13일
+2023年6月23日
 
 <div class='indentTab'>
 
 ### `Database`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 하단 액티브 세션 테이블의 5초 단위 시간 변경 시 테이블 내용이 변경되지 않는 문제 수정</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで<UI>プリセット保存</UI>ボタンの<b>プリセット保存</b>メッセージ削除</p>
 
 </div>
 
-## Preview 1.103.14
+## Preview 1.103.27
 
-2023년 6월 12일
+2023年6月23日
 
 <div class='indentTab'>
 
-### `Server`
+### `Application`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+<p><Status>Feature</Status>ダッシュボードメニューでヒートマップウィジェットのチャート領域をドラッグする時、呼び出されるトレース分析のポップアップウィンドウ追加</p>
+
+-   動線分析とユーザビリティの改善
+    -   トランザクションデータ分析のDepth改善
+    -   交差/比較分析環境の改善
+    -   データ分析環境の視認性の改善
+    -   情報の認知性と可読性、利便性の改善
+
+-   機能性の改善及びその他
+    -   トランザクション一覧内のカラム位置変更及びデータ表幅の調整の改善
+    -   ダイヤグラムとスタック区間の連携
+    -   TXT、SQLダウンロードファイルのデータをソート
 
 </div>
 
-## Preview 1.103.12
+## Preview 1.103.26
 
-2023년 6월 12일
+2023年6月22日
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Fixed</Status> 일본어 화면에서 일부 잘못된 번역 수정
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューで<UI>通知ルールテスト</UI>機能実行時、臨界線がチャートの範囲を超える現象の修正
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정
+-   <Status>Feature</Status>次のメニューで<b>WhatsApp</b>通知設定追加
 
-* * *
+    -   **_アカウント情報管理_** > **_ユーザー電話番号_**, **_アラート受信設定_**
 
-### `Application`
+    -   **_アラート通知_** > **_イベント受信設定_** > **_ユーザー別アラート受信設定_**
 
--   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+-   <Status>Change</Status><UI>アカウント情報管理</UI>メニューでユーザーパスワード設定規則を９桁に変更
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+<p><Status>Fixed</Status><UI>サーバー一覧</UI>><UI>サーバー一覧</UI>メニューで比較する際に、10個を超過するサーバーを選択したら表示されるメッセージの修正</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status><UI>ログ</UI>><UI>ログ検索エンジン</UI>メニューで選択したログと隣接する時間帯のログを照会できる機能の追加</p>
+
+* * *
+
+### `Browser`
+
+#### ダッシュボード
+
+<p><Status>Feature</Status><UI>WEBブラウサエラー</UI>メニューでエラーに関する詳細画面の追加</p>
+
+#### 分析
+
+-   <Status>Feature</Status><UI>ページロードヒートマップ</UI>メニューでページロード詳細データにOSバージョン、クライアントIP情報追加
+
+-   <Status>Change</Status><UI>ページロードヒートマップ</UI>メニューで<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
+
+-   <Status>Change</Status><UI>エラー追跡</UI>メニューでエラースタック照会UIの変更
+
+</div>
+
+## Preview 1.103.25
+
+2023年6月21日
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Go
+
+**_管理_**>**_エージェント設定_**メニューに次の内容を追加します。
+
+-   <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
+
+-   <Status>Fixed</Status>Amazon linuxオペレーティングシステムで<b>エージェントダウンロド</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
+
+-   <Status>Fixed</Status>Alpine linuxオペレーティングシステムで<b>Golangライブラリー使用</b>セクションの内容が表示されない部分の修正
+
+-   <Status>Fixed</Status><b>Golangライブラリー使用</b>セクションのスクリプトコード内容がすべてのオペレーティングシステムに同じく適用されます
+
+-   <Status>Feature</Status>すべてのオペレーティングシステムで<b>エージェント設定</b>セクションに案内メッセージを追加
+
+-   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに案内メッセージを追加
+
+#### PHP
+
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>Amazon linux</UI>タブ><b>エージェントダウンロード</b>セクション内容のうち、スクリプトコードにバックスラッシュが表示されない部分の修正
+
+</div>
+
+## Preview 1.103.24
+
+2023年6月20日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボード一覧の呼び出す時、組織IDが反映されないエラーの修正</p>
+
+</div>
+
+## Preview 1.103.23
+
+2023年6月20日
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>Feature</Status><UI>レポート</UI>><UI>日間WEBブラウサレポート</UI>メニューの追加</p>
+
+</div>
+
+## Preview 1.103.22
+
+2023年6月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>統合レポート</UI>><UI>日間レポート</UI>メニューで<UI>終了時間</UI>を本日と選択する時、選択した時間が自動矯正されるロジックの削除</p>
+
+</div>
+
+## Preview 1.103.21
+
+2023年6月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>上段の固定メニューのガイド文書のリンクを選択する時、サービスで選択した言語と一致するガイド文書に移動するように修正
+
+-   <Status>Deprecate</Status>多国語サービスのうち中国語対応の中断により、サービス内の言語選択肢から中国語の除外
+
+-   <Status>Change</Status>サイドバーで<code>AWS Log</code>プロジェクトアイコン変更
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>エージェントのインストール</UI>ページで日本語メッセージの修正</p>
+
+</div>
+
+## Preview 1.103.20
+
+2023年6月19日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューで<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブで設定を適用する時、リクエストに成功してもエラーメッセージが表示される現象の修正</p>
+
+* * *
+
+### `Container`
+
+#### リソース
+
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題の修正
+
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでインストールされたエージェントがない場合、ローディングアニメーションでなく、インストールされたエージェントがないという案内メッセージが表示されるように修正
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューでエージェントをインストールするための、Java最低バージョンの表示及びxos権限設定メッセージの変更</p>
+
+#### Oracle
+
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下<UI>アクティブセッション</UI>テーブルの<UI>SQL</UI>項目を選択したら渡されるハッシュ値の修正</p>
+
+</div>
+
+## Preview 1.103.19
+
+2023年6月15日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Feature</Status> <UI>統合レポート</UI>メニューで日間タイプレポートの時間選択の制限を修正</p>
+
+-   **既存**：終了時間を前日23時59分まで選択可能
+
+-   **変更**：終了時間を現在の時間基準、1時間前(現在の時間 - 1時間)まで選択可能
+
+* * *
+
+### `Server`
+
+#### アラート通知
+
+-   <Status>Feature</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>(旧：<b>通知ポリシーコピー</b>) 機能に<UI>現在のプロジェクトにコピー</UI>できるオプションを追加
+
+-   <Status>Change</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>機能を次のように変更
+
+    -   **既存**：コピーしたイベントのタイトルを同じように使用してコピー対象プロジェクトにイベントを重複コピーすると、最後にコピーしたイベントに上書きされます。
+
+    -   **変更**
+
+        -   イベントのタイトルとして`{コピーしたイベント名}(copy)`を使用
+        -   コピー対象プロジェクトにイベントを重複コピーすると、コピーした回数だけイベントを作成
+
+</div>
+
+## Preview 1.103.18
+
+2023年6月15日
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューでデータを照会する最大範囲を1日制限に修正
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューでデータを照会する最大範囲を7日制限に修正
+
+-   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、Traceステップ分析及びメソッドポップアップの出力データを次のように修正
+      
+    - 各データタイトルを修正
+
+    -   関数 → メソッド
+
+    -   Parameter/Return → パラメータ/リターン (多言語適用)
+
+    -   モーダルタイトル修正：関数→メソッド
+
+    -   経過時間単位テキストの修正：(ms) → ms
+
+    -   一部の出力値を削除：進入CPU時間、メモリ
+
+-   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、SQL文の特定キーワード(content、long)が強調されるバグを修正
+
+</div>
+
+## Preview 1.103.17
+
+2023年6月14日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>マルチファクタ認証</UI> > <UI>メールでOTP キーを送信する</UI>ボタンを選択するとOTPキーを(再)生成するウィンドウが表示される現象を修正</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで案内文を修正</p>
+
+</div>
+
+## Preview 1.103.16
+
+2023年6月13日
+
+<div class='indentTab'>
+
+### `Server`
+
+#### アラート通知
+
+-   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで<b>最後の変更時間</b>カラム名を<UI>イベント解消時刻</UI>に修正
+
+-   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで進行中のイベントは<UI>イベント解消時刻</UI>データを表示しないように修正
+
+### `Container`
+
+-   <Status>Feature</Status> <UI>リソース</UI> > <UI>パフォーマンス要約</UI>メニューにコンテナ数、パッド数の推移チャートを追加
+
+-   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューに<UI>不一致</UI>フィルターオプションを追加
+
+</div>
+
+## Preview 1.103.15
+
+2023年6月13日
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>インスタンスモニタリング</UI>メニューで下段アクティブセッションテーブルの5秒単位の時間変更時にテーブル内容が変更されない問題を修正</p>
+
+</div>
+
+## Preview 1.103.14
+
+2023年6月12日
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> <UI>サーバー一覧</UI>メニューにインストールされているエージェントがない場合、読み込み中画像が表示され続けるバグを修正</p>
+
+</div>
+
+## Preview 1.103.12
+
+2023年6月12日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>日本語画面で一部間違った翻訳を修正
+
+-   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント受信設定</UI>メニューで<UI>ユーザー別イベント受信設定</UI>テーブルの展開機能が作動しないバグを修正
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQL要約</UI>, <UI>HTTP呼び出し要約</UI>、<UI>メソッド要約</UI>タブの過去データ照会に関するバグを修正
+
+* * *
+
+### `Server`
+
+-   <Status>Feature</Status>データ照会時間選択の機能を追加
 
 </div>
 
@@ -171,7 +414,7 @@ toc_max_heading_level: 3
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>メトリクスチャート</UI>メニューでエージェント名が重複している場合、CSVファイルでデータが正しく表示されないバグを修正</p>
 
 </div>
 

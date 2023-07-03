@@ -1,16 +1,23 @@
 The WhaTap database monitoring service consists of an agent and a collection server, and the data is encrypted for security between the agent and the collection server. It is made without an external library so there is no need to restart the system for installation and update.
 
-![Agent structure map](/img/agent_xos_architecture.png)
+-   와탭 데이터베이스 모니터링 서비스는 데이터베이스 서버에 에이전트 설치 없이 별도의 에이전트 서버에서도 모니터링이 가능합니다. 사용자의 환경에 맞춰 유연하게 적용할 수 있습니다.
 
--   Monitoring is possible without installing agents directly on the database server to be monitored.
+    <div class='db-agent'>
 
--   The XOS agent is an optional add-on agent that can monitor the process usage of the database server. To monitor the process usage of the database server, run a separate agent on the database server to collect data.
+    |                별도 에이전트 서버에 설치 가능                |                 DB 서버에 설치 가능                 |    DB 자원 모니터링(XOS) 가능   |
+    | :---------------------------------------------: | :------------------------------------------: | :---------------------: |
+    | ![](/img/dbx-install-agent-on-agent-server.png) | ![](/img/dbx-install-agent-on-db-server.png) | ![](/img/xos-agent.png) |
+
+    </div>
+
+-   XOS 에이전트는 데이터베이스 서버의 프로세스 사용량을 모니터링할 수 있는 부가 옵션 에이전트입니다. 데이터베이스 서버의 프로세스 사용량을 모니터링하고 싶은 경우 데이터베이스 서버에 별도의 에이전트를 실행해 데이터를 수집할 수 있습니다.
 
 -   The agent and server use the binary communication protocol. In addition, data is selectively encrypted to ensure data security while reducing the burden of encryption.
 
 :::note
 
 -   The WhaTap agent must be installed on a server that can communicate over the network with the database server to be monitored.
--   **JDK** of **Java 6** or later must be installed on the WhaTap DBX agent server.
+
+-   와탭 DBX 에이전트 서버에는 **Java 8 버전** 이상 **JDK**를 설치해야 합니다.
 
 :::

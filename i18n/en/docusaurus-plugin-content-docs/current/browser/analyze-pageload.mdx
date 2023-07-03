@@ -19,17 +19,20 @@ The **[Page Load](before-starting#load-page)** event occurs when an end user vis
 
 You can analyze load events on a single page basis. It provides the hitmap and various metrics to analyze the page load performance.
 
-![Page Load Hitmap](/img/rum-pageload-event-01.png)
+![페이지 로드 히트맵](/img/browser-analysis-pageload-hitmap.png)
 
-Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) **_Page List_** at the bottom of the screen, and the events are classified by **[Page Group](before-starting#page-group)** and then fetched as ![Leader line 3](/img/number-03.png) **_Page Group List_** on the right of the screen.
+Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. 드래그한 영역의 페이지 로드 이벤트 목록을 화면 아래에 ![지시선 2](/img/number-02.png) **_페이지 목록_**으로 불러옵니다. ![지시선 3](/img/number-03.png) **_페이지 URL 검색_**에서 원하는 페이지 목록을 검색할 수 있습니다.
 
 ### ![](/img/number-01.png) Page Load Hitmap
 
 **_Page Load Hitmap_** widget is a distribution chart of response times for **page loads** over time. 
 
 -   The horizontal axis is the end time of the **page load** event.
+
 -   The vertical axis is the elapsed time of the **page load** event.
+
 -   The normal **page load** events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
+
 -   The error occurrence **page load** events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. The error **page load** event occurs when a browser error is encountered while loading pages.
 
 ### ![](/img/number-02.png) Page list
@@ -39,19 +42,22 @@ The **page load** events in the area dragged from the **_page load hitmap_** wid
 The table of the **_Page List_** widget includes the following data.
 
 -   **_Start Time_**: Start time of the **page load** event.
+
 -   **_Elapsed Time_**: Elapsed time up to the **page load** event completion.
+
 -   **_Page URL_**: Path of the page URL accessed by the end user.
+
 -   **_City_**: Name of the city of the end user.
+
 -   **_Browser_**: Type of the browser of the end user.
+
 -   **_Device_**: Type of the device of the end user.
 
 You can add other data columns to the table, or you can hide the added columns. Select ![Column icon](/img/ico-column.svg) on the upper right of the **_page list_** widget.
 
-### ![](/img/number-03.png) Page group list
+### ![](/img/number-03.png) 페이지 URL 검색
 
-In the **_page load hitmap_** widget, you can check the **page load** events of the dragged area by **[Page Group](before-starting#page-group)**. If you select the checkbox of the desired item in the list, the **page load** events corresponding to the selected **page group** appear on the **_Page List_** widget.
-
-To select all **page groups**, select the checkbox of the table header.
+**_페이지 URL 항목_**을 기준으로 원하는 페이지 로드 목록을 검색할 수 있습니다.
 
 ## Page Load Event Detail{#pageload-details}
 

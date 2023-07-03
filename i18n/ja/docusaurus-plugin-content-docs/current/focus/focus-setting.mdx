@@ -1,7 +1,7 @@
 ---
 id: focus-setting
 title: 設定
-description: Focusの設定方法について案内します。
+description: Focusの設定方法について説明します。
 tags:
   - Focus
   - 設定
@@ -10,15 +10,15 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-WhaTapプロジェクトで任意の収集データをアップロードできます。Focusは、そのプロジェクトの基本エージェントがインストールされていなくても使用できます。
+WhaTapプロジェクトから任意の収集データをアップロードできます。Focusは、プロジェクトの基本エージェントがインストールされていなくても使用できます。
 
 ## プロジェクトアクセスキーと収集サーバーのIP確認
 
 {@include: ../common-items/_check-pak-ip.mdx}
 
-## 通知送信
+## 通知を送信する
 
-カスタム通知をすぐに送信できます。通知を送信した後、Focusは終了します。
+ユーザーのカスタム通知を直ぐに送信できます。通知を送信すると、Focusは終了します。
 
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
@@ -26,10 +26,10 @@ WhaTapプロジェクトで任意の収集データをアップロードでき�
 ```bash title=SH
 #通知の重大度を選択します。
 level={info|warn|fatal}
-#通知の題名
-title=希望する通知の題名
+#通知のタイトル
+title=必要な通知のタイトル
 #通知の本文
-message=希望する通知の本文
+message=目的の通知の本文
 ./focus -license $WHATAP_LICENSE \
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST \
     -alert -level $level -title $title -message $message
@@ -55,7 +55,7 @@ $message="希望する通知の本文"
 
 ## SQL Query結果の収集
 
-ユーザー定義SQL Queryの実行結果を時系列で無期限収集します。
+ユーザー定義SQL Queryの実行結果を時系列で無期限に収集します。
 
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
@@ -101,7 +101,7 @@ $sqlquery="select some, columns from sometable"
 
 ## ログファイルキーワードマッチングログの収集
 
-指定したテキストログファイルでログが発生した場合、キーワードを含めると、そのログラインが収集されます。
+指定したテキストログファイルでログが発生する場合、キーワードを含めると、対応するログラインが収集されます。
 
 <Tabs groupId="operating-systems">
 <TabItem value="lx" label="Linux Shell">
@@ -182,18 +182,18 @@ $LOG_FILE=ログファイルパス
 </TabItem>
 </Tabs>
 
-## OSリソース使用量の収集
+## OSリソースの使用量の収集
 
-Focusが動作しているサーバーのリソース使用量を収集します。
+Focusが実行しているサーバーのリソース使用量を収集します。
 
 ```bash title='Linux Shell'
 #メトリクスカテゴリ
 category=my_category
-#ディスクモニタリングの活性化有無
+#ディスクモニタリングが有効かどうか
 diskenabled=true|false
 #モニタリングするディスクマウント
 diskmount=/mypartition
-#NICモニタリングの活性化有無
+#NICモニタリングが有効かどうか
 nicenabled=true|false
 #モニタリングするNIC
 nic=eth0
@@ -208,14 +208,14 @@ nic=eth0
     -sys.net $nic
 ```
 
-## 任意のプログラムおよびスクリプト実行結果の収集
+## ランダムなプログラムとスクリプトの実行結果の収集
 
-任意のプログラムおよびスクリプトを実行し、stdoutで出力される結果を継続的に収集します。WhaTap Focusはjson dictionary形式で、stdinとして入力されると当該dictionaryのkey、valueを収集します。入力手段としてパイプを使用するので、バッファリングを使わないように設定する必要があります。
+任意のプログラムおよびスクリプトを実行し、stdoutで出力される結果を継続的に収集します。WhaTap Focusはjson dictionary形式で、stdinとして入力されると、dictionaryのkey、valueを収集します。入力手段としてパイプを使用するので、バッファリングを無効にする必要があります。
 
 :::note
 
--   継続的に収集するのではなく、一回限りの収集を希望する場合は、次のオプションを適用できます。`-onetime`
--   収集時間を指定したい場合は、次のオプションで指定できます。`-now {unix epoch time(second)}`
+-   継続的に収集するのではなく、１回限り収集する場合は、次のオプションを適用できます。`-onetime`
+-   収集時間を指定する場合は、次のオプションで指定できます。`-now {unix epoch time(second)}`
 
 :::
 
@@ -225,7 +225,7 @@ CATEGORY="my_category"
 
 
 プログラムまたはスクリプト | \
-json dictionary形に再加工 | \
+json dictionary形に再処理 | \
 ./focus -license $WHATAP_LICENSE \
     -category $category \
     -pcode $WHATAP_PCODE -server.host $WHATAP_HOST

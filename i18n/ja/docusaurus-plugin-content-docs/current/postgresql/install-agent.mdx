@@ -59,24 +59,27 @@ db_port={DBサーバーのポート番号}
 <!-- PostgreSQL-->
 
 ```bash showLineNumbers
-# 10バージョン以降
+# 10 버전 이상
 create user whatap with password 'DB Password'; # 원하는 password를 입력하세요.
 grant pg_read_all_stats to whatap;
  
-# 10バージョン以前
+# 10 버전 미만
 create user whatap with password 'DB Password'; # 원하는 password를 입력하세요.
 alter user whatap with superuser;
  
-# kill session使用時
+# kill session 사용 시
 alter user whatap with superuser;
 
-#wal_count収集時
+# wal_count 수집 시
 grant execute on function pg_ls_dir(text) to whatap;  #EDB 사용 시
 alter user whatap with superuser;
 
-#cache収集時
+# cache 수집 시
 grant select on pg_backend_memory_contexts to whatap;
 grant execute on function pg_get_backend_memory_contexts to whatap;
+
+# 테이블 사이즈 수집 시
+grant usage on schema {schema_name} to whatap;
 ```
 
 ## DBユーザーファイルの作成{#create-db-user}

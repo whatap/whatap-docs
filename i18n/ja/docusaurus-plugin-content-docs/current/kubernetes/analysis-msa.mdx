@@ -27,7 +27,7 @@ MSA分析機能は、WhaTapのMTRACE（マルチサーバー間追跡）機能�
 
 ## MSAトランザクションの統計
 
-次は、callerまたはcalleeを持っているすべてのトランザクションの統計です。
+다음은 Caller 또는 Callee를 가지고 있는 모든 트랜잭션 통계입니다.
 
 ![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
 
@@ -39,19 +39,21 @@ MTRACEの詳細については、[次の文書](../java/trs-multi-trace)を参�
 
 ![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
 
-上記の統計データの中から特定URLを選択すると、該当URLに対する詳細データが確認できます。
+위 통계 데이터 중 조회를 원하는 URL의 ![상세 아이콘](/img/ic-pageview.svg) **_상세_** 아이콘을 선택하면 상세 보기 창이 나타납니다. 상세 보기 창에서 해당 URL에 대한 **_Caller Callee 요약_**, **_Caller Callee 데이터_**, **_Caller Callee 추이_** 등의 상세 데이터 조회가 가능합니다. 
 
--   Caller/Calleeサマリー
--   Caller/Calleeデータ
--   Caller/Callee推移
+:::note 
+
+![전체 화면 보기 아이콘](/img/ico-detail-mode.svg) 아이콘을 선택하면 상세 보기 창을 전체 화면으로 볼 수 있습니다.
+
+:::
 
 ## Caller/Calleeサマリー
 
-次のように該当URLのcaller、callee間の依存性情報を表示します。この時、最大0.004、0.003など最大値が1である数字の情報が一緒に表示されますが、これは全体callerの中で占める割合を表示します。同様に、各calleeの割合が右側に一緒に表示されます。
+**_Caller Callee 요약 _**탭은 다음과 같이 해당 URL의 Caller, Callee 사이의 의존성 정보를 표시합니다. 이때 최대 0.004, 0.003 등 최대 1인 숫자 정보가 함께 표시되는데, 이것은 전체 Caller들 가운데 차지하는 비중을 표시합니다. 마찬가지로 각 Callee들의 비중이 오른쪽에 함께 표시됩니다.
 
 ![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_3.png)
 
-上の画面から、callerとcalleeの依存性を_/account/save/employee/seoul_というトランザクションを通じて分析できます。
+위 화면을 통해 _/account/save/employee/seoul_ 이라는 트랜잭션을 기준으로 Caller와 Callee들 사이의 의존성을 분석할 수 있습니다.
 
 呼び出し元Nodeと呼び出し先ノードは子ノードとして詳細化することができます。
 

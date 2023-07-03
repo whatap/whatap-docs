@@ -45,13 +45,13 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり読み込んだバイトの合計                                                                                                       |
 | blkio_riops             | 件数    | IoReadIops                                                                                                                            |
 | ^                       | ^     | Container Block I/O Read IOPS                                                                                                         |
-| ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり読み込んだ件数の合計                                                                                                        |
+| ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり読み込んだ数の合計                                                                                                         |
 | blkio_wbps              | バイト   | IoWriteBytes                                                                                                                          |
 | ^                       | ^     | Container Block I/O Write Byte                                                                                                        |
 | ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり書き込んだバイトの合計                                                                                                       |
 | blkio_wiops             | 件数    | IoWriteIops                                                                                                                           |
 | ^                       | ^     | Container Block I/O Write IOPS                                                                                                        |
-| ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり書き込んだ件数の合計                                                                                                        |
+| ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                                                                                                         |
 | cpu_per_quota           | パーセント | CpuByLimit                                                                                                                            |
 | ^                       | ^     | Container CPU Usage by Limit (%)                                                                                                      |
 | ^                       | ^     | CPU Limit基準CPUの全体使用率                                                                                                                  |
@@ -66,7 +66,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | ノードCPU対比コンテナCPU System使用率                                                                                                             |
 | cpu_throttledperiods    | 件数    | CpuThrottledCnt                                                                                                                       |
 | ^                       | ^     | Container CPU Throttling Count                                                                                                        |
-| ^                       | ^     | コンテナCPU Throttled件数                                                                                                                   |
+| ^                       | ^     | コンテナCPU Throttled数                                                                                                                    |
 | cpu_throttledtime       | ナノ秒   | CpuThrottledTime                                                                                                                      |
 | ^                       | ^     | Container CPU Throttling Time                                                                                                         |
 | ^                       | ^     | コンテナCPU Throttled時間                                                                                                                   |
@@ -90,7 +90,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | コンテナメモリLimit到達件数                                                                                                                      |
 | mem_limit               | バイト   | MemLimit                                                                                                                              |
 | ^                       | ^     | Container Memory Limit (byte)                                                                                                         |
-| ^                       | ^     | コンテナメモリLimitサイズ                                                                                                                       |
+| ^                       | ^     | コンテナのメモリLimitサイズ                                                                                                                      |
 | mem_maxusage            | バイト   | MemMaxUsage                                                                                                                           |
 | ^                       | ^     | Container Memory Max Usage (byte)                                                                                                     |
 | ^                       | ^     | コンテナメモリの最大使用量の記録値                                                                                                                     |
@@ -123,7 +123,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | コンテナメモリLimit基準working set使用量<br/>= mem_working_set / mem_limit \* 100                                                                 |
 | mem_request             | バイト   | MemRequest                                                                                                                            |
 | ^                       | ^     | Container Memory Request (byte)                                                                                                       |
-| ^                       | ^     | コンテナメモリRequestサイズ                                                                                                                     |
+| ^                       | ^     | コンテナのメモリRequestサイズ                                                                                                                    |
 | mem_per_request         | パーセント | MemWsByRequest                                                                                                                        |
 | ^                       | ^     | Container Memory Working Set by Request (%)                                                                                           |
 | ^                       | ^     | コンテナメモリRequest基準working set使用量<br/>= mem_working_set / mem_request \* 100                                                             |
@@ -132,25 +132,25 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                                                                                                        |
 | network_rdropped        | バイト   | NetRxDropped                                                                                                                          |
 | ^                       | ^     | Container Network Receive Dropped                                                                                                     |
-| ^                       | ^     | コンテナネットワーク受信dropped件数                                                                                                                 |
+| ^                       | ^     | コンテナネットワーク受信dropped数                                                                                                                  |
 | network_rerror          | バイト   | NetRxError                                                                                                                            |
 | ^                       | ^     | Container Network Receive Error                                                                                                       |
-| ^                       | ^     | コンテナネットワーク受信エラー件数                                                                                                                     |
+| ^                       | ^     | コンテナのネットワーク受信エラー数                                                                                                                     |
 | network_riops           | バイト   | NetRxIops                                                                                                                             |
 | ^                       | ^     | Container Network Receive IOPS                                                                                                        |
-| ^                       | ^     | コンテナネットワーク受信件数                                                                                                                        |
+| ^                       | ^     | コンテナのネットワーク受信数                                                                                                                        |
 | network_wbps            | バイト   | NetTxByes                                                                                                                             |
 | ^                       | ^     | Container Network Transmit Byte                                                                                                       |
-| ^                       | ^     | コンテナネットワーク送信データサイズ                                                                                                                    |
+| ^                       | ^     | コンテナのネットワーク送信データサイズ                                                                                                                   |
 | network_wdropped        | 件数    | NetTxDropped                                                                                                                          |
 | ^                       | ^     | Container Network Transmit Dropped                                                                                                    |
-| ^                       | ^     | コンテナネットワーク送信dropped件数                                                                                                                 |
+| ^                       | ^     | コンテナのネットワーク送信dropped数                                                                                                                 |
 | network_werror          | 件数    | NetTxError                                                                                                                            |
 | ^                       | ^     | Container Network Transmit Error                                                                                                      |
-| ^                       | ^     | コンテナネットワーク送信エラー件数                                                                                                                     |
+| ^                       | ^     | コンテナのネットワーク送信エラー数                                                                                                                     |
 | network_wiops           | 件数    | NetTxIops                                                                                                                             |
 | ^                       | ^     | Container Network Transmit IOPS                                                                                                       |
-| ^                       | ^     | コンテナネットワーク送信件数                                                                                                                        |
+| ^                       | ^     | コンテナのネットワーク送信数                                                                                                                        |
 | node_cpu                | パーセント | ConNodeCpu                                                                                                                            |
 | ^                       | ^     | Container Work Node CPU Usage (%)                                                                                                     |
 | ^                       | ^     | コンテナ実行中のノードのCPU使用量                                                                                                                    |

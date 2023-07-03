@@ -51,10 +51,6 @@
     "message": "MySQLモニタリング",
     "description": "Navbar item with label MySQL 모니터링"
   },
-  "item.label.MySQL RDS 모니터링": {
-    "message": "MySQL RDSモニタリング",
-    "description": "Navbar item with label MySQL RDS 모니터링"
-  },
   "item.label.MS SQL Server 모니터링": {
     "message": "MS SQL Serverモニタリング",
     "description": "Navbar item with label MS SQL Server 모니터링"
@@ -212,11 +208,15 @@
     "description": "Navbar item with label Browser"
   },
   "item.label.라이선스": {
-    "message": "ラインセンス",
+    "message": "ライセンス",
     "description": "Navbar item with label 라이선스"
   },
   "item.label.PostgreSQL V2 모니터링": {
     "message": "PostgreSQL V2 モニタリング",
     "description": "Navbar item with label PostgreSQL V2 모니터링"
+  },
+  "item.label.AWS Log": {
+    "message": "AWS Log",
+    "description": "Navbar item with label AWS Log"
   }
 }

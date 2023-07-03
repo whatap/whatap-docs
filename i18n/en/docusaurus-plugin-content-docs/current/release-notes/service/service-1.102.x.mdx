@@ -4,49 +4,181 @@ title: Service 1.102.X
 toc_max_heading_level: 3
 ---
 
-## Service 1.102.15
+## Service 1.102.23
 
-2023년 6월 15일
+2023년 6월 27일
 
 <div class='indentTab'>
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>MSA 분석</UI> 메뉴에서 데이터를 조회하는 최대 범위를 1일 제한으로 수정
+<p><Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>에러</UI> 탭에서 통계 데이터를 3일 이상 조건으로 조회하면 건수, 애플리케이션 비교 데이터가 조회되지 않는 현상 수정</p>
 
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>클라이언트 IP</UI> 메뉴에서 데이터를 조회하는 최대 범위를 7일 제한으로 수정
+</div>
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 Trace 스텝 분석 및 메소드 팝업의 출력 데이터를 다음과 같이 수정
-      
-    - 각 데이터 제목 수정
+## Service 1.102.22
 
-    -   함수 → 메소드
+2023년 6월 26일
 
-    -   Parameter/Return → 파라미터/리턴 (다국어 적용)
+<div class='indentTab'>
 
-    -   모달 제목 수정: 함수 → 메소드
+### `Application`
 
-    -   경과시간 단위 텍스트 수정: (ms) → ms
+<p><Status>Fixed</Status> <UI>분석</UI> > <UI>히트맵</UI> > <UI>히트맵 트랜잭션</UI> 위젯에서 <UI>DB 추적</UI> 버튼을 선택 시 나타나는 <UI>DB 추적</UI> 창의 <UI>DB 추이</UI> 버튼에 다국어 적용</p>
 
-    -   일부 출력값 제거: 진입 CPU 시간, 메모리
+</div>
 
--   <Status>Fixed</Status> <UI>히트맵 트랜잭션</UI> > <UI>TX 트레이스</UI> 목록에서 <UI>통계</UI> 정보를 확인하는 경우 SQL 문의 특정 키워드(content, long)가 강조되는 버그 수정
+## Service 1.102.21
+
+June 22, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI>, fixed the issue where the threshold line exceeds the chart range when running the <UI>Testing event rules</UI> function.</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Server List</UI> > <UI>Server list</UI>, modified the message that appears when the servers for comparison exceed 10.</p>
+
+</div>
+
+## Service 1.102.20
+
+June 21, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Go
+
+**_Management_** > **_Agent Installation_**, the following items have been modified.
+
+-   <Status>Fixed</Status> Changed the GO support version (1.14 → 1.17) for agent installation.
+
+-   <Status>Fixed</Status> Fixed to include the missing backslash (\) in the script code of the <b>Download Agent</b> section in the Amazon Linux operating system.
+
+-   <Status>Fixed</Status> Modified the <b>Use Golang Library</b> section to include missing items in the Alpine Linux operating system.
+
+-   <Status>Fixed</Status> In the <b>Use Golang Library</b> section, applied the script code to all operating systems.
+
+-   <Status>Feature</Status> Added the guidance message in the <b>Agent CONF.</b> section for all operating systems.
+
+-   <Status>Feature</Status> Added the guidance message in the <b>Start Monitoring</b> section for the Alpine Linux operating system.
+
+#### PHP
+
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, modified to include the missing backslash in the script code in the <UI>Amazon linux</UI> tab > <b>Download agent</b> section.
+
+</div>
+
+## Service 1.102.19
+
+June 20, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, fixed the bug where the organization ID is not applied when calling the dashboard list.</p>
+
+* * *
+
+### `Application`, `Container`, `Server`
+
+#### Agent/Server Configuration
+
+-   <Status>Fixed</Status> Under <UI>Management</UI> > <UI>Agent CONFIG.</UI> or <UI>Server setting</UI> > <UI>Server setting</UI>, modified the bug where an error message appears even when the request for application of configuration is a success in the <UI>Object kind default</UI> and <UI>Project default</UI> tabs.
+
+-   <Status>Fixed</Status> Modified to display the name instead of the ID of the target with the configuration applied.
+
+</div>
+
+## Service 1.102.18
+
+June 20, 2023
+
+<div class='indentTab'>
+
+### `Browser`
+
+<p><Status>Change</Status> In <UI>Project list</UI>, modified the charts and data search queries in the <code>browser</code> project card view.</p>
+
+</div>
+
+## Service 1.102.17
+
+June 20, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Modified to go to the guidance document that matches the language selected in the service when the guidance document link of the fixed menu is selected at the top.</p>
+
+</div>
+
+## Service 1.102.16
+
+June 19, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Oracle
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance Monitoring</UI>, modified the hash values delivered when <UI>SQL</UI> is selected in the <UI>Active sessions</UI> table at the bottom of the screen.</p>
+
+</div>
+
+## Service 1.102.15
+
+June 15, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>MSA analysis</UI>, the maximum range to query data has been modified to the limit of 1 day.
+
+-   <Status>Fixed</Status> In <UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Client IP</UI>, modified the maximum range for data query to 7 days.
+
+-   <Status>Fixed</Status> In <UI>HITMAP transaction</UI> > <UI>TX trace</UI>, to see the <UI>statistics</UI> data, modified the output data for trace step analysis and method popup as follows:
+       
+    - Modified the titles for each data.
+
+    -   Function → Method
+
+    -   Parameter/Return → Multiple languages
+
+    -   Modification of the modal title: Function → Method
+
+    -   Elapsed time unit modification: (ms) → ms
+
+    -   Deletion of part of outputs: Start point CPU time, memory
+
+-   <Status>Fixed</Status> In <UI>HITMAP transaction</UI> > <UI>TX trace</UI> list, to see the <UI>statistics</UI>, fixed the bug where specific keywords (content, long) of SQL statements are highlighted.
 
 </div>
 
 ## Service 1.102.14
 
-2023년 6월 13일
+June 13, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>계정 정보 관리</UI> > <UI>멀티팩터 인증</UI> > <UI>이메일로 OTP 키 보내기</UI> 버튼을 선택하면 OTP 키를 (재)생성 창이 뜨는 현상 수정</p>
+<p><Status>Fixed</Status> If <UI>Manage account INFO.</UI> > <UI>Multi-factor authentication</UI> > <UI>Send OTP key via email</UI> is selected, fixed the bug where the OTP key generation window appears.</p>
 
 </div>
 
 ## Service 1.102.13
 
-2023년 6월 13일
+June 13, 2023
 
 <div class='indentTab'>
 
@@ -54,45 +186,45 @@ toc_max_heading_level: 3
 
 #### Alert
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 <b>마지막 변경 시간</b> 컬럼 이름을 <UI>이벤트 해소 시각</UI> 으로 수정
+-   <Status>Fixed</Status> In <UI>Event history</UI>, modified the name of the <b>Last change time</b> column to <UI>Event resolution time</UI>.
 
--   <Status>Fixed</Status> <UI>이벤트 기록</UI> 메뉴에서 진행 중인 이벤트는 <UI>이벤트 해소 시각</UI> 데이터를 표시하지 않도록 수정
+-   <Status>Fixed</Status> In <UI>Event history</UI>, the <UI>event resolution time</UI> is not displayed for active events.
 
 </div>
 
 ## Service 1.102.12
 
-2023년 6월 12일
+June 12, 2023
 
 <div class='indentTab'>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 설치된 에이전트가 없는 경우 로딩 이미지가 계속 표시되는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Server List</UI>, the loading image appears continuously when there is no installed agent.</p>
 
 </div>
 
 ## Service 1.102.11
 
-2023년 6월 12일
+June 12, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 수신 설정</UI> 메뉴에서 <UI>사용자별 이벤트 수신 설정</UI> 테이블의 펼침 기능이 작동하지 않는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Notification setting</UI>, fixed the but where the unfolding function in the <UI>Event notification settings per-user</UI> table does not work.</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> <b>트랜잭션 상세 정보</b> 창에서 <UI>SQL 요약</UI>, <UI>HTTP 호출 요약</UI>, <UI>메소드 요약</UI> 탭의 과거 데이터 조회 버그 수정
+-   <Status>Fixed</Status> In the <b>Transaction Detail</b> window, fixed the past data query bug in the tabs for <UI>SQLs</UI>, <UI>HTTP calls</UI>, and <UI>Methods</UI>.
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status> 데이터 조회 시간 선택 기능 추가
+-   <Status>Feature</Status> Added the data query time selection function.
 
 </div>
 
@@ -104,11 +236,11 @@ June 9, 2023
 
 ### `Common`
 
-<p><Status>Feature</Status> <UI>계정 정보</UI> 메뉴에서 <UI>마케팅 수신 동의</UI> 항목 추가</p>
+<p><Status>Feature</Status> In <UI>My profile</UI>, added the <UI>Marketing Consent</UI> item.</p>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>분석</UI> > <UI>메트릭스 차트</UI> 메뉴에서 에이전트 이름이 중복된 경우 CSV 파일에서 데이터가 제대로 표시되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Metrics chart</UI>, fixed the bug where the data is not properly displayed in the CSV in case of a duplicated agent name.</p>
 
 </div>
 

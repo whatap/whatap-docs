@@ -43,7 +43,7 @@ To collect AWS logs, additional resources are required. WhaTap provides **WhatTa
 
 </details>
 
-<!--  프로젝트 생성 -->
+<!--  Create Project -->
 
 {@include: ../getting-started/_create-project-v2.mdx}  
 
@@ -99,7 +99,7 @@ Install the **WhatTap Forwarder** for log transmission by using the AWS Lambda f
 
     If the value of `UseReservedConcurrency` is `true`, specify the number of functions to be assigned to the WhaTap Forwarder. The number of assignable functions per AWS account is 1,000. The total number of functions that a user can use is limited to the value obtained by subtracting the `ReservedConcurrency` value from the total number of assignable functions per account (1,000000).
 
-    <!-- 사용자는 AWS 계정 당 할당 가능한 총 Function 개수에서 `ReservedConcurrency` 설정 값을 뺀 만큼 Function을 사용할 수 있습니다. -->
+    <!-- You can use the function as many as (number of functions that can be allocated for each AWS account - `ReservedConcurrency` setting). -->
 
 ### Installing the CloudFormation stack
 
@@ -271,7 +271,7 @@ The IAM policy specifies the following roles:
 
 ### Creating the IAM role{#create-iam-role}
 
-<!-- 어떤 AWS 계정 ID로 생성된 자원에 대해 권한을 허용할지를 지정하고 직전에 생성한 IAM 정책을 매핑합니다. -->
+<!-- Specify the roles for the resources created with a specific AWS account ID and map them to the IAM policy created immediately before. -->
 
 Specify which AWS accounts are granted roles for the created resources and map the IAM policy you just created. See the **_Create AWS IAM Role_** tab in the WhaTap **_Agent Installation_** > **_Install guide_** section to proceed on. 
 

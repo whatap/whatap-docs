@@ -1,6 +1,6 @@
 ---
 id: java-2_2_6
-title: Java Agent 2.2.6
+title: Java Agent v2.2.6
 toc_max_heading_level: 2
 ---
 
@@ -8,17 +8,17 @@ June 1, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   spring-boot 추적 기능 추가
+-   Added the function to trace the spring-boot.
 
-    -   resttemplate 추적
+    -   Tracing the resttemplate
 
-        spring-boot에서 RestTemplate을 사용하는 경우 Http Client 드라이버와 상관 없이 Http Call을 추적할 수 있도록 기능 추가
+        Added the function to trace HTTP calls regardless of HTTP client driver when using the RestTemplate in the spring-boot.
 
-    -   spring-cloud-gateway 추적
+    -   Tracing the spring-cloud-gateway
 
-        spring-cloud-gateway에서 filter를 사용하는 경우 추적
+        Tracing is applied when the filters are used in spring-cloud-gateway.
 
-    -   spring-kafka 추적
+    -   Tracing the spring-kafka
 
         ```ini title='whatap.conf'
         # In case of spring-boot-2.7 or later
@@ -28,11 +28,11 @@ June 1, 2023
         weaving=tomcat10,spring-boot-3.x
         springboot_tomcat10_enabled=true
         ```
--   open-feign 추적
+-   Tracing the open-feign
 
-    -   feign-client-11 추적
+    -   Tracing the feign-client-11
 
-        OpenFeign Client 사용하는 경우 Http Client 드라이버와 상관없이 Http Call을 추적할 수 있도록 기능 추가
+        Added the function to trace HTTP calls regardless of HTTP client driver when using the OpenFeign client.
 
         ```ini title='whatap.conf'
         # feign-client

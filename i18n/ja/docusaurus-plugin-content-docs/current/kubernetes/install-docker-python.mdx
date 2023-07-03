@@ -26,20 +26,20 @@ RUN pip3 install --upgrade whatap-python
 
 1.  Pythonアプリケーション起動時、WhaTapエージェントがInjectionできるように、アプリケーションの起動スクリプトを変更します。 
 
-    ログおよび設定ファイルのパスを`WHATAP_HOME`環境変数として設定してください。
+    ログおよび設定ファイルのパスを`WHATAP_HOME`環境変数に設定します。
 
     ```python
-    export WHATAP_HOME={로그 및 설정 파일 경로}
+    export WHATAP_HOME={ログと構成ファイルのパス}
     ```
 
 2.  `WHATAP_HOME`で設定したパスに_whatap.conf_ファイルを作成および設定するように次のコマンドを実行してください。
 
     ```bash
     whatap-setting-config \
-    --host {수집 서버 IP} \
-    --license {액세스 키} \
-    --app_name {사용자 지정 애플리케이션 이름} \
-    --app_process_name {프로세스 이름, 예시, uwsgi, gunicorn}
+    --host {収集サーバーIP} \
+    --license {アクセスキー} \
+    --app_name {ユーザー指定アプリケーション名} \
+    --app_process_name {プロセス名, 例, uwsgi, gunicorn}
     ```
 
 :::caution
@@ -72,7 +72,7 @@ env:
 </TabItem>
 <TabItem value='eksfragate' label='EKS Fargate'>
 
-1.  デプロイメント（Deployment）またはレプリカセット（ReplicaSet）の_.spec_のフィールドにユーザーポッド（Pod）リソースをモニタリングするための`shareProcessNamespace`、`serviceAccount`を追加してください。
+1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`、`serviceAccount`を追加します。
 
     ```ini
     apiVersion: apps/v1
@@ -127,7 +127,7 @@ whatap-start-agent {アプリケーション開始コマンド}
 
 #### ServiceにuWSGIを登録してアプリケーションを起動する場合
 
--   ユーザ（User）を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
+-   ユーザ(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
 -   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加する必要があります。
 
 サービス実行ファイル(_/etc/init/uwsgi.conf_)を修正して、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
@@ -153,7 +153,7 @@ INI_PATH=/etc/$NAME/$NAME.ini
 
 ########## WHATAP_AGENT_CONF ##########
 WHATAP_HOME={PATH}
-WHATAP_AGENT={절대 경로}/whatap-start-agent
+WHATAP_AGENT={絶対パス}/whatap-start-agent
 
 ...
 do_start(){
@@ -174,7 +174,7 @@ whatap-start-agent {アプリケーション開始コマンド}
 
 #### ServiceにGunicornを登録してアプリケーションを実行する場合
 
--   ユーザ（User）を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
+-   ユーザ(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
 -   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加する必要があります。
 
 サービス実行ファイル(_/etc/init/gunicorn.conf_)を修正し、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
@@ -211,10 +211,10 @@ do_start(){
 </TabItem>
 <TabItem value='supervisor' label='Supervisor'>
 
--   ユーザ（User）を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
+-   ユーザ(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
 -   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加する必要があります。
 
-サービス実行ファイル(_/etc/supervisor/conf.d/supervisor.conf_)を修正し、エージェント開始コマンドとともにアプリケーションを開始してください。ユーザー環境によって、サービス実行ファイルのパスは異なる場合があります。
+サービス実行ファイル(_/etc/supervisor/conf.d/supervisor.conf_)を修正し、エージェント開始コマンドでアプリケーションを開始してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
 
 ```ini title='supervisor.conf'
 [program:app-uwsgi]

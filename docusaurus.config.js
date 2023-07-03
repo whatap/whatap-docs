@@ -223,7 +223,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'postgresql-v1/monitoring-intro',
+                docId: 'postgresql/monitoring-intro',
                 label: 'PostgreSQL',
               },
               {
@@ -233,7 +233,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'mysql/monitoring-intro',
+                docId: 'mysql-v1/monitoring-intro',
                 label: 'MySQL',
               },
               {
@@ -287,11 +287,11 @@ module.exports = Promise.resolve({
                 docId: 'amazon-ecs/introduction',
                 label: 'Amazon ECS',
               },
-              // {
-              //   type: 'doc',
-              //   docId: 'aws-log/introduction',
-              //   label: 'AWS Log',
-              // },
+              {
+                type: 'doc',
+                docId: 'aws-log/introduction',
+                label: 'AWS Log',
+              },
               {
                 type: 'doc',
                 docId: 'azure/install-agent',
@@ -401,9 +401,16 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'mysql-v1/monitoring-intro',
+            position: "left",
+            label: 'MySQL 모니터링 V1',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'mysql/monitoring-intro',
             position: "left",
-            label: 'MySQL 모니터링',
+            label: 'MySQL 모니터링 V2',
             className: 'hidden',
           },
           {
@@ -471,6 +478,13 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'aws-log/introduction',
+            position: "left",
+            label: 'AWS Log',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'azure/install-agent',
             position: "left",
             label: 'Azure Monitor',
@@ -532,7 +546,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'release-notes/release-notes',
+            docId: 'release-notes',
             position: 'left',
             label: '릴리스 노트',
           },

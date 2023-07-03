@@ -662,6 +662,9 @@ main {
       > * {
         margin-left: 50px;
       }
+      > details {
+        margin-left: 50px;
+      }
     }
     h2, h3 {
       margin-top: 0;
@@ -957,7 +960,8 @@ main {
       white-space: normal;
       border-width: 1px;
       border-style: solid;
-      padding-bottom: 21px;
+      position: relative;
+      top: 2px;
     }
     .active {
       background-color: rgb(108, 108, 119);
@@ -1028,6 +1032,10 @@ main {
       margin: 20px 0;
       padding: 0;
     }
+    .table-desc {
+      font-size: .9em;
+      margin-top: -15px;
+    }
     p {
       margin: 0;
       padding: 8px 0;
@@ -1042,13 +1050,16 @@ main {
       max-width: 100%;
       border: 0.5px solid #333;
     }
+    img.noneborder {
+      border: none;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
     img[src*='k8s-download-yaml'] {
       width: 400px;
     }
-    img[alt*='number'], img[alt*='icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'] {
+    img[alt*='number'], img[alt*='icon'], img[alt*='Icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'] {
       position: relative;
       top: 3px;
       max-height: 19px !important;
@@ -1476,6 +1487,15 @@ main {
         }
       }
     }
+    .db-agent {
+      table {
+        tr {
+          td {
+            width: 33.3%;
+          }
+        }
+      }
+    }
     .db-metric-cubrid {
       table {
         tr {
@@ -1522,6 +1542,10 @@ main {
       }
     }
     .db-support-type {
+      margin-bottom: 24px;
+      .table-desc {
+        font-size: .9em;
+      }
       table {
         font-size: .75em;
         tr {

@@ -115,34 +115,74 @@ It consists of a tracer to collect the monitoring data, an agent to transmit the
 
 </details>
 
-## Agent CONFIG.
+## Agent setting{#set-agent}
+
+### Default settings
 
 Execute the following commands in order to set the **access key** and **collection server IP** in _whatap.conf_.
 
+-   Create the _whatap.conf_ file in the path of the application startup script. 
+
+-   If the `WHATAP_HOME` environment variable has not been set, the path of the application startup script is recognized as the one of the _whatap.conf_ file.
+
 ```bash title='SH'
-$ echo "license={Access Key}" >> /usr/whatap/agent/whatap.conf
-$ echo "whatap.server.host={Collection Server IP}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_name={Application Name}" >> /usr/whatap/agent/whatap.conf
-$ echo "app_process_name={Application Process Name}" >> /usr/whatap/agent/whatap.conf
+# Creation of whatap.conf in the script running path
+$ echo "license={Access Key}" >> ./whatap.conf
+$ echo "whatap.server.host={Collection Server IP}" >> ./whatap.conf
+$ echo "app_name={Application Name}" >> ./whatap.conf
+
+# 애플리케이션 실행
+./app
 ```
 
--   **license**: Enter the **access key**.
--   **whatap.server.host**: Enter the **collection server IP**.
--   **app_name**: Enter the application name. Set the user as a string.
--   **app_process_name**: Enter the name of the application to be monitored. Measure the memory usage with the specified process name.
+-   `license`: Enter the **access key**.
 
-* * *
+-   `whatap.server.host`: Enter the **collection server IP address**.
 
-For Alpine Linux, run the script as follows according to the instructions to enter the **access key** and **collection server IP**.
+-   `app_name`: Enter the application name. Set the user as a string.
 
-```bash title='SH'
-$ sudo /usr/whatap/php/install.sh
+### Setting the `WHATAP_HOME` variable
 
-Input project access key
-xxxxxxxxxxxxxxxx   # Enter the granted access key
+You can set the _whatap.conf_ path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first.
 
-Input whatap.server.host
-192.x.x.x          # Enter the WhaTap collection server IP
+```bash
+# Set the whatap.conf path after setting the WHATAP_HOME path.
+mkdir ./whatap_home
+echo "license={Access Key}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={Collection Server IP}" >> ./whatap_home/whatap.conf
+echo "app_name={Application Name}" >> ./whatap_home/whatap.conf
+
+# Run the application.
+WHATAP_HOME=./whatap_home ./app
+```
+
+### Setting the agent names for each process{#duplicate_appname}
+
+If one _whatap.conf_ file is shared by the applications running in multiple processes, any changes may not be reflected. It is recommended to set a _whatap.conf_ for each process.
+
+To avoid duplicate agent names, you can add a string to each agent name for identification. The value set with the `app_name` option is added to the beginning of the agent name.
+
+You can avoid duplicate names of agents run with the same command and the same instance. 
+
+```bash
+# Set the whatap.conf path after setting the WHATAP_HOME path.
+mkdir ./whatap_home
+echo "license={Access Key}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={Collection Server IP}" >> ./whatap_home/whatap.conf
+echo "app_name={Application Name-1}" >> ./whatap_home/whatap.conf
+
+# Run the application.
+WHATAP_HOME=./whatap_home ./app 
+
+# Set the whatap.conf path after setting the WHATAP_HOME path.
+mkdir ./whatap_home1
+echo "license={Access Key}" >> ./whatap_home1/whatap.conf
+echo "whatap.server.host={Collection Server IP}" >> ./whatap_home1/whatap.conf
+echo "app_name={Application Name-2}" >> ./whatap_home1/whatap.conf
+
+# Run the application
+WHATAP_HOME=./whatap_home1 ./app
+
 ```
 
 ## Using the Golang library
@@ -152,14 +192,14 @@ Add whatap/go-api to the Golang application source code and release it.
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">
 
-```bash title='SH'
-$ go get -u github.com/whatap/go-api
+```bash
+$ go get github.com/whatap/go-api
 ```
 
 </TabItem>
 <TabItem value="debian-ubuntu" label="Debian/Ubuntu">
 
-```bash title='SH'
+```bash
 $ go get github.com/whatap/go-api/trace
 $ go get github.com/whatap/go-api/sql
 $ go get github.com/whatap/go-api/httpc
@@ -169,7 +209,7 @@ $ go get github.com/whatap/go-api/method
 </TabItem>
 <TabItem value="amazonlinux" label="Amazon Linux">
 
-```bash title='SH'
+```bash
 $ go get github.com/whatap/go-api/trace
 $ go get github.com/whatap/go-api/sql
 $ go get github.com/whatap/go-api/httpc
@@ -192,4 +232,32 @@ func main(){
 
 ## Starting the monitoring
 
+<Tabs groupId="golang">
+<TabItem value="redhat-centos" label="Red Hat/CentOS">
+
 Once the application server has been restarted, the agent starts collecting data.
+
+</TabItem>
+<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+
+Once the application server has been restarted, the agent starts collecting data.
+
+</TabItem>
+<TabItem value="amazonlinux" label="Amazon Linux">
+
+1.  Execute the following command to install the WhaTap agent daemon.
+
+    ```bash
+    /usr/whatap/php/whatap-agent start
+    ```
+
+2.  Execute the following command to check whether the WhaTap service has been run normally.
+
+    ```bash
+    ps -elf | grep whatap_agent_static
+    ```
+
+Once the application server has been restarted, the agent starts collecting data.
+
+</TabItem>
+</Tabs>
