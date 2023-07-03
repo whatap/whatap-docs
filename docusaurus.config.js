@@ -140,6 +140,7 @@ module.exports = Promise.resolve({
         //... other Algolia params
         insights: true,
       },
+      image: 'https://www.whatap.io/img/og/whatap.png',
       metadata: [
         {
           name: 'keywords',
