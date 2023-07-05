@@ -18,9 +18,9 @@ export default function ChangeImgName({img, desc, className}) {
     
     function onError(e) {
         if (currentLocale != 'ko') {
-            e.target.src = '/' + currentLocale + '/img/' + fileName + product + '.' + fext;
+            e.target.src = '/' + currentLocale + '/img/' + fileName + '.' + fext;
         } else {
-            e.target.src = '/img/' + fileName + product + '.' + fext;
+            e.target.src = '/img/' + fileName + '.' + fext;
         }
     }
     return (
