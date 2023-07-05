@@ -973,6 +973,7 @@ const sidebars = {
             'dotnet/agent-number-of-user',
             'dotnet/agent-static',
             'dotnet/agent-topology',
+            'dotnet/agent-webservice'
           ]
         },
         {
@@ -3115,17 +3116,18 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_0_9',
+                id: 'release-notes/dotnet/dotnet-2_1_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_0_9',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_1_0',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-2_0_7',
                 'release-notes/dotnet/dotnet-2_0_6',
@@ -3134,12 +3136,7 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_0_3',
                 'release-notes/dotnet/dotnet-2_0_2',
                 'release-notes/dotnet/dotnet-2_0_1',
-                'release-notes/dotnet/dotnet-2_0_0',
-                {
-                  type: 'link',
-                  label: '.NET Agent 지난 버전',
-                  href: 'https://deprecated-docs.whatap.io/kr/releasenotes/#net-agent-release-notes'
-                }
+                'release-notes/dotnet/dotnet-previous',
               ],
             },
             {
