@@ -2,7 +2,7 @@ import React from 'react';
 import checkProduct from '@site/src/components/CheckProduct';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import isExistingFile from '@docusaurus/brokenLinks.js';
+
 export default function ChangeImgName({img, desc, className}) {
     const {
         i18n: {currentLocale},
