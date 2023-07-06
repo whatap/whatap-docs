@@ -3172,7 +3172,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_3_8',
@@ -3181,7 +3181,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_3_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_3_7',
                 'release-notes/server/server-2_3_6',
