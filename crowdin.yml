@@ -2,7 +2,7 @@
 # Your Crowdin credentials
 #
 "project_id" : "4"
-"api_token" : "035c00cf0d9c2ed40659d0a5315bd51b6cb8f46abc24f04c4e76ad1719c4f2f9b0af2d4fac63d21c"
+"api_token" : "7bf5b1886a970c82005381a0659144a83e90057736282017ab8128281152f8acac40ed513ea60ba5"
 "base_path" : "."
 "base_url" : "https://whatap.crowdin.com"
 
@@ -15,7 +15,7 @@
 #
 # Files configuration
 #
-files: [
+"files": [
  {
   "source" : "/i18n/ko/**/*",
   "translation" : "/i18n/%two_letters_code%/**/%original_file_name%",
