@@ -5011,6 +5011,7 @@ const sidebars = {
                 'kubernetes/install-docker-java',
                 'kubernetes/install-docker-nodejs',
                 'kubernetes/install-docker-python',
+                'kubernetes/install-docker-php',
               ],
             },
             'kubernetes/create-name-space-project'
