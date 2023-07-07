@@ -1136,7 +1136,7 @@ const sidebars = {
   goSidebar: [
     {
       type: 'category',
-      label: 'Golang 모니터링',
+      label: 'Go 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -3141,7 +3141,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Golang',
+              label: 'Go',
               collapsible: true,
               collapsed: true,
               className: 'new',
@@ -3417,7 +3417,7 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Golang',
+          label: 'Go',
           href: 'golang/introduction',
         },
         {

@@ -210,7 +210,7 @@ module.exports = Promise.resolve({
               {
                 type: 'doc',
                 docId: 'golang/introduction',
-                label: 'Golang',
+                label: 'Go',
               },
               {
                 type: 'doc',
@@ -362,7 +362,7 @@ module.exports = Promise.resolve({
             type: 'doc',
             docId: 'golang/introduction',
             position: "left",
-            label: 'Golang 모니터링',
+            label: 'Go 모니터링',
             className: 'hidden',
           },
           {
