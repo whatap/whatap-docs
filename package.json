@@ -17,7 +17,7 @@
     "postgen": "docusaurus-post-generator"
   },
   "dependencies": {
-    "@crowdin/cli": "^3.9.1",
+    "@crowdin/cli": "^3.13.0",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/module-type-aliases": "^2.4.1",
     "@docusaurus/plugin-client-redirects": "^2.4.1",
