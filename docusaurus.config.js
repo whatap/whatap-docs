@@ -521,6 +521,13 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'npm',
+            position: "left",
+            label: 'NPM',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'extensions',
             position: 'left',
             label: '확장 도구',

@@ -2939,6 +2939,22 @@ const sidebars = {
       ],
     }
   ],
+  npmsidebar: [
+    {
+      type: 'category',
+      label: 'NPM 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'npm',
+      },
+      items: [
+        'npm/compatibility',
+        'npm/install-agent',
+      ],
+    }
+  ],
   previewSidebar: [
     {
       type: 'category',
