@@ -1,6 +1,6 @@
 ---
 id: supported-spec
-title: Java support environment
+title: Support Environment
 description: The following lists basic specifications of the JVM application server on which the WhaTap monitoring service operates.
 tags:
   - Java
@@ -8,41 +8,102 @@ tags:
   - MySQL
 ---
 
+## Java agent support environment
+
 Before installing the agent, make sure that the JVM application server meets the following specifications.
 
-It can be applied not only to Web Application Server (WAS) but also to all applications running on JVM, such as daemons and batch applications. For Java 1.5 or earlier, contact [support@whatap.io](mailto:support@whatap.io) or see [the following](add-jvm-opt/java-under-ver).
+It can be applied not only to Web Application Server (WAS) but also to all applications running on JVM, such as daemons and batch applications. For Java 1.5 or earlier, contact support@whatap.io or see [the following](add-jvm-opt/java-under-ver).
 
-## JVM
+-   **Support versions**
 
-| Scope of support | Environment | OS                               | JVM version                         |
-| ---------------- | ----------- | -------------------------------- | ----------------------------------- |
-| Fully support    | Java        | Operating systems running on JVM | Java 6 or later, Java 17 or earlier |
-| Limited support  | Java        | Operating systems running on JVM | Java 1.5 or earlier                 |
+    | Scope of support        | Environment | OS Name                          | JVM version                         |
+    | ----------------------- | ----------- | -------------------------------- | ----------------------------------- |
+    | Fully support           | Java        | Operating systems running on JVM | Java 6 or later, Java 17 or earlier |
+    | Limited support         | Java        | Operating systems running on JVM | Java 1.5 or earlier                 |
 
-## Web Application Server (WAS)
+-   **OS**
 
-For all application servers that comply with Java EE Spec, such as Tomcat, JBoss, JEUS, WebLogic, and WebSphere, see [the following link](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html).
+    -   HP-UX 11.x 32bit, 64bit
 
-## Framework/Library
+    -   Itanium 64-bit
 
--   Spring Boot Project
--   Asynchronous frameworks such as Netty, Akka HTTP, and Play Framework
--   All other libraries operating in application servers conforming to Java EE Spec
+    -   Oracle Solaris 2.8, 2.9, 10, 11 32-bit, 64-bit
 
-## DataSource
+    -   x86 Intel Linux 32-bit
 
--   Generic JDBC (any JDBC compliant driver)
--   DB2 JDBC
--   Derby JDBC
--   H2 JDBC
--   jTDS JDBC
--   MariaDB JDBC
--   Microsoft SQL Server JDBC
--   MySQL mysql-connector-java
--   Oracle ojdbc14, ojdbc5, ojdbc6, ojdbc7, ojdbc8
--   Postgres JDBC
--   Tibero
--   Jedis Redis driver
+    -   Redhat Itanium 64-bit
+
+    -   Microsoft Windows 2000, XP, 2003, 2008, 7, 8
+
+    :::note
+
+    JDK 6를 설치할 수 있는 모든 운영체제를 지원합니다.
+
+    :::
+
+-   **Application Server**
+
+    -   BEA WebLogic 9.x, 10.x, 11.x, 12.x
+
+    -   Tmaxsoft JEUS 6.x, 7.x
+
+    -   SUN Application Server 8.x, 9.x
+
+    -   Fujitsu Interstage 5.x, 6.x, 7.x
+
+    -   Hitachi Cosminexus 7.x, 8.x, 9.x
+
+    -   Apache Jakarta Tomcat 6.x, 7.x, 8.x
+
+    -   Caucho Technology Resin 3.x, 4.x
+
+    -   RedHat JBoss Application Server 6.x, 7.x
+
+    -   GlassFish 3.x, 4.x, 5.x
+
+    :::note
+
+    이외 Java EE Spec을 준수하는 모든 애플리케이션 서버를 지원합니다. [다음 링크](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html)를 참조하세요.
+
+    :::
+
+-   **Framework** / **Library**
+
+    -   Spring Boot Project
+
+    -   Asynchronous frameworks such as Netty, Akka HTTP, and Play Framework
+
+    :::note
+
+    이외 Java EE Spec을 준수하는 Application Server에서 동작하는 모든 라이브러리를 지원합니다.
+
+    :::
+
+-   **Database**
+
+    -   Generic JDBC (any JDBC compliant driver)
+
+    -   DB2 JDBC
+
+    -   Derby JDBC
+
+    -   H2 JDBC
+
+    -   jTDS JDBC
+
+    -   MariaDB JDBC
+
+    -   Microsoft SQL Server JDBC
+
+    -   MySQL mysql-connector-java
+
+    -   Oracle ojdbc14, ojdbc5, ojdbc6, ojdbc7, ojdbc8
+
+    -   Postgres JDBC
+
+    -   Tibero
+
+    -   Jedis Redis driver
 
 ## Common supported environment
 

@@ -1,6 +1,6 @@
 ---
 id: golang-0_1_9
-title: Golang Agent v0.1.9
+title: Go Agent v0.1.9
 toc_max_heading_level: 2
 ---
 
@@ -24,7 +24,7 @@ import UI from '@site/src/components/UItext';
 
 :::
 
-```go title='Golang'
+```go title='Go'
 defer func() {
   // panic 
   
@@ -60,7 +60,7 @@ defer func() {
 
 既存のecho/whatapechoパッケージの代わりにecho/v4/whatapechoを使用します。 
 
-```go title='Golang'
+```go title='Go'
 import (
   "github.com/labstack/echo"
   
@@ -77,7 +77,7 @@ HTTPErrorHandlerは、エラー情報を追加して収集します。
 
 whatapechoミドルウェアが最後に実行されると、HTTPErrorHandler情報をできるだけ多く収集できます。ミドルウェアの登録を一番上で設定し、`Pre()`関数で登録します。
 
-```go title='Golang'
+```go title='Go'
 func main() {
   ...
 

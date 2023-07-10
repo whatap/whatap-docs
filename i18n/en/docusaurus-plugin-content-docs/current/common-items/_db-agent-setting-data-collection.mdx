@@ -26,7 +26,7 @@
 
     Default `10`
 
-    테이블 정보를 수집할 때 설정한 값보다 작은 크기의 테이블 정보는 수집하지 않습니다. 테이블 데이터를 수집하는 최소 단위로 기본값은 10MB 입니다.
+    When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
 
 -   **tables_min_row** <span class='type'>Int</span>
 
@@ -50,9 +50,9 @@
 
 -   **replication_name** <span class='type'>String</span>
 
-    리플리케이션 이름을 설정하면 동일한 `replication_name`을 갖는 DB 사이에 Master/Slave 관계가 있는 것으로 간주합니다.
+    If you set the replication name, it is considered that there is a Master/Slave relationship between DBs with the same `replication_name`.
 
-    리플리케이션 세트를 정의하는 옵션으로 마스터, 슬레이브 노드에 모두 동일한 값의 `replication_name` 옵션을 설정하면 **_인스턴스 모니터링_**에서 트리 구조로 표시됩니다. 또한 이 옵션 값을 기준으로 **_Flex 보드_**에서 리플리케이션 상태를 모니터링하는 위젯을 제공합니다.
+    As an option to define the replication set, if you set the `replication_name` option that has the same value for both master and slave nodes, the **_Instance Monitoring_** displays a tree structure. It also provides a widget to monitor the replication status in **_Flex Board_** based on the option value.
 
 </Xclude>
 
@@ -60,11 +60,11 @@
 
 -   **slave_ip** <span class='type'>string</span>
 
-    IP 주소 확인은 `select inet_server_addr();`로 합니다. 마스터 노드에서 `pg_stat_replication.client_addr`를 조회했을 때 나오는 IP 주소 중 하나여야 합니다. `replication_name` 옵션값이 동일하면서 Slave DB인 경우라면 `slave_ip`를 명시해야 합니다.
+    Check the IP address with `select inet_server_addr();`. It must be one of the IP addresses found when searching `pg_stat_replication.client_addr` on the master node. If the `replication_name` option value is the same and it is a slave DB, specify `slave_ip`.
 
     :::note
 
-    RDS의 경우 IP 주소 대신 `pg_replication_slots.slot_name`으로 Master/Slave 관계가 셋팅되므로 `slave_ip` 옵션을 설정하지 않아도 됩니다.
+    In case of RDS, because the master/slave relationship is set with `pg_replication_slots.slot_name` instead of the IP address, the `slave_ip` option does not need to be set.
 
     :::
 
@@ -80,7 +80,7 @@
 
 </Xclude>
 
-<InDoc product='mysql'>
+<InDoc product='mysql,mysql-v1'>
 
 -   **skip_sys_session** <span class='type'>Int</span>
 

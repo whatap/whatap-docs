@@ -10,38 +10,48 @@ tags:
   - Multiple Instance Monitoring
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import InDoc from '@site/src/components/InDoc.js';
+import Note from '../common-items/_import_v2-note.mdx';
 
-<!-- Overview -->
+<Note product='MySQL' link='../mysql-v1/multi-instance-monitoring' />
 
-{@include: ../common-items/_db-mulit-instance-monitoring-desc.mdx}
+<!-- Overview-->
 
-<!-- Notes -->
+{@include: ../common-items/_db-v2-mulit-instance-monitoring-desc.mdx}
+
+<!-- Notes-->
 
 {@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
 
-<!-- 기본 화면 안내 -->
+## Basic screen guide
 
-{@include: ../common-items/_db-multi-instance-monitoring-basic.mdx}
+<ProdImg img='db-multi-instance.png' desc='Multi-instance Monitoring' />
 
-<!-- 지표 선택하기 -->
+<!-- 인스턴스 선택-->
 
-{@include: ../common-items/_db-select-metric-data-widget.mdx}  
+{@include: ../common-items/_db-v2-mim-select-instance.mdx}
 
-<!-- 레이아웃 설정하기 -->
+<!-- 차트영역-->
 
-{@include: ../common-items/_db-set-layout.mdx}  
+{@include: ../common-items/_db-v2-mim-chart-area.mdx} 
 
-<!-- 액티브 세션 영역 활용하기 -->
+<!-- 액티브 세션 영역-->
 
-{@include: ../common-items/_db-using-area-active-session.mdx}  
+{@include: ../common-items/_db-v2-mim-activesession-desc.mdx}
+
+{@include: ../common-items/_db-dashboard-activesession-desc.mdx}
+
+{@include: ../common-items/_db-dashboard-locktree-desc.mdx}
+
+{@include: ../common-items/_db-v2-mim-activesession-note.mdx}
+
+## Filtering the table data
+
+{@include: ../common-items/_db-table-data-filtering.mdx}
 
 ## Changing the table columns{#change-column}
 
 {@include: ../common-items/_db-data-edit-column.mdx}
 
-<!-- 컬럼 정보 안내 -->
+<!-- 컬럼 정보 안내-->
 
-{@include: ../common-items/_db_ats-lock-column.mdx}
+{@include: ../common-items/_db_mysql-column.mdx}

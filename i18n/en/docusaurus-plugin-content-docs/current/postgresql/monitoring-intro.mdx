@@ -14,12 +14,10 @@ tags:
 
 import RdsCont from '../common-items/_import_db-specification-rds.mdx';
 import CommonCont from '../common-items/_import_db-specification-common.mdx';
+import NewFeature from '../common-items/_import_db-v2-new-feature.mdx';
+import Note from '../common-items/_import_v2-note.mdx';
 
-:::note
-
-This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/monitoring-intro).
-
-:::
+<Note product='PostgreSQL' link='../postgresql-v1/monitoring-intro' />
 
 {@include: ../common-items/_db-introduction-desc.mdx} 
 
@@ -27,13 +25,7 @@ This document has been created based on the PostgreSQL Monitoring V2. For the Po
 
 ## PostgreSQL Monitoring features
 
-<Xclude product='mysql-rds'>
-  <CommonCont />
-</Xclude>
-
-<InDoc product='mysql-rds'>
-  <RdsCont/>
-</InDoc>
+<CommonCont />
 
 {@include: ../common-items/_db-specification.mdx}
 
@@ -41,51 +33,7 @@ This document has been created based on the PostgreSQL Monitoring V2. For the Po
 
 ## New features in PostgreSQL Monitoring V2{#new-feature}
 
-The PostgreSQL Monitoring V2 with enhanced charting and collecting features has been updated. Update your agent to get the latest features. 
-
-:::note
-
-The minimum version of the DBX agent to use the PostgreSQL monitoring V2 is 1.6.7. For more information about the agent update, see [the following](agent-manage).
-
-:::
-
--   **Provision of DB metrics data**
-
-    ![](/img/new-feature-01.png)
-
-    Helps and tuning tips for metrics are added, and convenience is provided by categorizing and recommending the metrics so that users can easily understand numerous metrics.
-
--   **Dashboard improvements**
-
-    ![](/img/new-feature-02.png)
-
-    For dashboards, the function to add multiple metrics is provided to one chart. In addition, by adding presets, users can quickly check the desired metrics.
-
--   **UI improvements**
-
-    Improvements in the instance monitoring filter
-
-    ![](/img/new-feature-03.png)
-
-    Session Kill UI improvements
-
-    ![](/img/new-feature-04.png)
-
-    The instance monitoring filter has been improved, and the user interfaces for Session Kill have been improved.
-
--   **Addition of Flex Board templates and widgets**
-
-    <ProdImg img='new-feature-05-postgresql.png' desc=''/>
-
-    By converting many DB indicators into metrics, various templates and widgets have been provided.
-
--   **Log**
-
-    ![](/img/new-feature-06.png)
-
-    -   Through **_Live Tail_**, **_Log Trend_**, **_Log Search_**, and Log Alert, you can search **DB logs** and can see their trend as well as the log-related alerts.
-
-    -   리눅스의 설치형 DB 서버의 로그 및 **AWS RDS**의 **CloudWatch** 로그, 이벤트를 한 메뉴에서 모니터링할 수 있습니다.
+<NewFeature product='PostgreSQL' ver='1.6.7' />
 
 * * *
 

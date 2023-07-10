@@ -6,32 +6,34 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 In **_Log Trend_**, you can check the occurrence pattern of a specific error type through the number of logs classified by type, and check detailed log data by hour. A highlight feature allows you to quickly identify the desired logs. You can search the trend of logs collected by category. {@include: ../common-items/_log-ui-main-term.mdx}
 
-![Log Trend](/img/log-exp.png) 
-
-<!-- Need to change the image when fixing the display of the number of logs viewed 0410 -->
+![Log trends sc](/img/log-trend.png) 
 
 ## Request Data
 
 -   If the scroll reaches the bottom, the next data is retrieved.
 -   In ![number-s](/img/number-01.png), specify the **_time_** and collection unit, **_category_**, of the log data to be searched.
--   If the **_category_** is changed, the logs that correspond to the selected category are searched. You can see the logs in ![number-s](/img/number-02.png) **_bar chart_** and ![number-s](/img/number-03.png) **_table_**.
--   If you click a bar in ![number-s](/img/number-02.png) **_bar chart_**, the logs are viewed that correspond to the time range of the bar. 
--   ![number-s](/img/number-03.png) You can see the total number of logs viewed. 
--   ![number-s](/img/number-04.png) In **_Side_**, you can see the logs filtered by tags. Up to two search keys can be selected, and multiple search values can be selected.
+-   If the **_category_** is changed, the logs that correspond to the selected category are searched. You can see the logs in ![number-s](/img/number-02.png) bar chart and ![number-s](/img/number-03.png) log table.
+-   If you click a bar in ![number-s](/img/number-02.png) bar chart, the logs are viewed that correspond to the time range of the bar. 
+-   ![number-s](/img/number-03.png) 로그 테이블 상단 왼쪽에서 조회한 총 로그 개수를 확인할 수 있습니다.
+-   ![number-s](/img/number-04.png) In Side menu, you can see the logs filtered by tags. Up to two search keys can be selected, and multiple search values can be selected.
 
 ## Checking the log content
 
 {@include: ../common-items/_log-ui-log-content.mdx} 
 
--   ![number-s](/img/number-03.png) For each row (log) of the **_table_**, the [Icon](/img/ic-caret-right.svg)**_More_** button exists. If you select the button, you can check the entire content of the log like ![number-s](/img/number-05.png).
+-   ![number-s](/img/number-03.png) For each row (log) of the log table, the ![Icon](/img/ic-caret-right.svg) **_More_** button exists. If you select the ![Icon](/img/ic-caret-right.svg) **_More_** button, you can check the entire content of the log like ![number-s](/img/number-05.png).
 
 ## Viewing the logs with a chart
 
--   You can click a desired time in ![number-s](/img/number-02.png) **_bar chart_** to see the log of the time.
--   Under ![number-s](/img/number-02.png), use **_Time Selector Option_** on the left of ![number-s](/img/number-03.png) to search more granular logs in the selected time zone.
+![Log trends bar chart sc](/img/log-trend-bar.png)
+
+-   You can click a ![icon](/img/char-a.svg) desired time on the bar chart to view the logs in the period of time.
+
+-   바 차트 아래 로그 테이블 상단 왼쪽의 ![b 아이콘](/img/char-b.svg) 시간 선택 옵션을 이용해 다음과 같이 선택한 시간대에서 더 세분화해 로그를 검색할 수 있습니다.
+
     -   1min: interval (spacing between bars on the chart)
-    -   Time Selector Option: Time zone that divides the selected time range into 6 segments
-        ![](https://img.whatap.io/media/images/logexplorer_007_select_seconds.png)
+
+    -   Select a time option: Time zone whose time range is divided into 6 segments
 
 ## Highlight
 
@@ -40,27 +42,3 @@ In **_Log Trend_**, you can check the occurrence pattern of a specific error typ
 ## Setting the table
 
 -   Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx} 
-
-<!-- The ***Table settings*** menu can be used in ***Live Tail***, ***Log Search***, and ***Log Trend***. 
-
-### Add the column 
-
-### Set the table content 
-
-Highlight
-![](https://img.whatap.io/media/images/logexplorer_009_highlight.png)
-
--->
-
-<!-- Screen restructuring with the function after holding
-## ![](/img/number-01.png) Time and Category
-
-It specifies a specific time period and collection unit for the log data to be explored. When the scroll reaches the bottom, the data is viewed.
-
-## ![](/img/number-02.png) View Bar Chart
-
-## ![](/img/number-03.png) View Table
-
-## ![](/img/number-04.png) Search key navigation
-
--->

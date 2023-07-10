@@ -10,56 +10,56 @@ tags:
 
 You can check detailed information about the target selected in the **_container map_** menu on the **_Display Detail_** screen.
 
-1.  **_컨테이너 맵_** 메뉴 화면에서 조회를 원하는 특정 블록(컨테이너 또는 Pod)을 선택하세요. 
+1.  In the **_Container map_** menu, select a block (container or pod) to view. 
 
-2.  화면 오른쪽에 다음과 같이 **요약 보기** 패널이 나타납니다. 
+2.  On the right of the screen, the **View summarized** panel appears as follows. 
 
   ![Container Map - Display Summary](/img/k8s-container-sum.png)
 
-1.  **요약 보기** 패널 오른쪽 상단에 ![상세 보기 아이콘](/img/ico-detail-mode.svg) **_상세 보기_** 아이콘을 선택하면 더욱 자세한 정보를 확인할 수 있습니다.
+1.  If you select the ![View detailed icon](/img/ico-detail-mode.svg) **_View Detailed_** at the upper right of the **View Summarized** panel, the furthermore detailed information appears.
 
 ## Basic screen guide
 
-컨테이너 맵 **상세 보기** 화면은 다음과 같이 구성되어 있습니다. 기본 정보는 카드와 목록 형식으로 확인할 수 있습니다. 핵심 모니터링 데이터를 조회할 수 있도록 **_트레이스_**, **_메트릭스_**, **_로그_**, **_이벤트_** 탭을 제공합니다. 
+The **Display Detail** screen of the container map consists of the following. Basic information is available in the card and list formats. It provides **_trace_**, **_metrics_**, **_log_**, and **_event_** tabs for key monitoring data. 
 
 ![Display Detail screen](/img/k8s-container-detail.png)
 
--   ![number 1](/img/number-01.png) **요약 정보 카드** (컨테이너 또는 Pod)
+-   ![number 1](/img/number-01.png) **Summary info card** (container or pod)
 
-    선택 대상의 그룹 정보를 확인할 수 있습니다. 대상 추가 선택 시 ![number 4](/img/number-04.png) 영역에서 선택한 대상에 대한 지표를 확인할 수 있습니다. 컨테이너 맵에서 선택한 카드와 동일한 뷰를 가지고 있습니다. 자세한 내용은 [다음 문서](container-map)를 참조하세요.
+    You can see the group of the selected target. When selecting a target additionally, you can check the metrics for the selected target in the ![number 4](/img/number-04.png) area. It has the same view as the card selected in the container map. For more information, see [the following](container-map).
 
--   ![지시선 2](/img/number-02.png) **요약 정보 목록**
+-   ![Leader line 2](/img/number-02.png) **\*Summary Info List**
 
-    선택 대상의 그룹 정보를 목록 형식으로 확인할 수 있습니다. 대상 추가 선택 시 ![number 4](/img/number-04.png) 영역에서 선택한 대상에 대한 지표를 확인할 수 있습니다. 
+    You can see the group information of the selected target in a list format. When selecting a target additionally, you can see the metrics for the selected target in the ![number 4](/img/number-04.png) area. 
 
-    -   ![더보기 아이콘](/img/right-arrow.svg) **_더보기_**: 더보기 아이콘을 선택하면 **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, **_Agent_** 등의 지표 정보를 조회할 수 있습니다.
+    -   ![More icon](/img/right-arrow.svg) **_More_**: If you select the More icon, you can see the metrics such as **_Node_**, **_Namespace_**, **\*Deployment** \*, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_**.
 
-        -   **_Node_**: 노드 상세, 마스터 메타 정보
+        -   **_Node_**: Node details and master meta data
 
-        -   **_Deployment_**: 마스터 메타 정보
+        -   **_Deployment_**: Master meta data
 
-        -   **_ReplicaSet_**: 마스터 메타 정보
+        -   **_ReplicaSet_**: Master meta data
 
-        -   **_Pod_**: 마스터 메타 정보
+        -   **_Pod_**: Master meta data
 
-        -   **_ContainerId_**: 컨테이너 정보
+        -   **_ContainerId_**: Container data
 
-    -   ![더보기 아이콘](/img/ico-more.svg) **_상세 조회_**: 각 지표 안내 오른쪽의 상세 조회 아이콘을 선택하면 상세 또는 마스터 메타 정보를 조회할 수 있습니다.
+    -   ![More icon](/img/ico-more.svg) **_Cube detail_**: You can search the detailed or master meta data by selecting the Cube detail icon on the right of each metric guide.
 
--   ![지시선 4](/img/number-04.png) **_트레이스_**, **_메트릭스_**, **_로그_**, **_이벤트_** 
+-   ![Leader line 4](/img/number-04.png) **_Trace_**, **_Metrics_**, **_Log_**, **_Event_** 
 
     -   **_Trace_** 
 
-        **_트레이스_** 탭에서 컨테이너에서 서비스 중인 애플리케이션 정보를 불러와 해당 애플리케이션의 트랜잭션 현황을 모니터링할 수 있습니다. **_대시보드_** 뷰와 **_트랜잭션 목록_** 뷰를 제공합니다. 자세한 내용은 [다음 문서](container-map-trace)를 참조하세요.
+        In the **_Trace_** tab, you can fetch the active application data from the container and monitor the transaction status of the application. It provides the views for **_Dashboard_** and **_Transaction List_**. For more information, see [the following](container-map-trace).
 
     -   **_Metrics_**
 
-        **_메트릭스_** 탭에서 모니터링에 유용한 지표들을 선별해 차트에 표시합니다. 선택한 컨테이너 또는 Pod의 자원이 적절하게 설정되었는지 파악할 수 있습니다. 자세한 내용은 [다음 문서](container-map-metrics)를 참조하세요.
+        In the **_Metrics_** tab, the metrics useful for monitoring are selected and displayed on the chart. You can check if the resources of the selected container or pod have been properly set. For more information, see [the following](container-map-metrics).
 
     -   **_Log_** 
 
-        **_로그_** 텝에서 쿠버네티스에서 발생하는 로그를 조회할 수 있습니다. 컨테이너를 종료하면 관련 로그까지 모두 사라집니다. 과거에 발생한 로그는 **_로그 검색_** 옵션을 통해 확인하세요. 자세한 내용은 [다음 문서](container-map-log)를 참조하세요.
+        In the **_Logs_** tab, you can search the logs from Kubernetes. When you stop the container, all the related logs disappear. Check the logs that occurred through the **_Log Search_** option. For more information, see [the following](container-map-log).
 
     -   **_Event_** 
 
-        **_이벤트_** 탭에서 쿠버네티스에서 발생하는 **_Kubernates_** 이벤트와 사용자가 설정한 이벤트 발생 조건에 의해 생성된 **_WhaTap_** 이벤트를 조회할 수 있습니다. 자세한 내용은 [다음 문서](container-map-event)를 참조하세요.
+        In the **_Event_** tab, you can search **_Kubernates_** events that occurred in Kubernetes and **_WhatTap_** events generated by user-defined event trigger. For more information, see [the following](container-map-event).

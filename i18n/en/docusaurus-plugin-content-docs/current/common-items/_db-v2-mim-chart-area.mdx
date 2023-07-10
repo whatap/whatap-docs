@@ -1,0 +1,67 @@
+### ![](/img/number-02.png) Graph chart area
+
+You can check and compare key metrics of multiple instances in a graph chart. You can see the CPU and memory utilization, active sessions, slow queries, and queued sessions in real time. The colors in the graph chart are the same as the ones in the ![number 1](/img/number-01.png) **_Instance_**. Hover your mouse over the graph chart to see the figure through a tooltip.
+
+-   **_CPU usage (%)_**: You can see the CPU usages for each instance in real time.
+
+-   **_Memory usage (%)_**: You can see the memory usages for each instance in real time.
+
+-   **_XOS Disk Usage_**: Displays the disk utilizations, free sizes, and total sizes for each instance. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a new window.
+
+-   **_Active Sessions_**: Displays a real-time chart for the number of sessions running queries.
+
+<InDoc product='postgresql'>
+
+-   **_DML Count_**: Displays a real-time chart for the number of statements run for DML (Data Manipulation Language).
+
+-   **_Elapsed time_**: Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+
+-   **_Logical Read_**: Displays a real-time chart for the data read counts in the buffer cache.
+
+-   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+-   **_SQL Executed_**: 인스턴스별 초당 SQL 수행 건수 합계입니다. It is based on the value of the `Questions` (total number of query requests) metric collected every 5 seconds.
+
+-   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+
+-   **_Logical Read_**: Displays a real-time chart for the data read counts in the buffer cache.
+
+-   **_SQL Elapse Map_**: Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+
+</InDoc>
+
+-   **_Lock Wait Sessions_**: Displays a real-time chart for queued counts to acquire the row lock.
+
+<InDoc product='postgresql'>
+
+-   **_Commit Count_**: Displays a real-time chart for the counts of committed transactions.
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+-   **_Commit_**: Displays a real-time chart for the counts of committed transactions.
+
+</InDoc>
+
+-   **_Replication Delay_**: Displays a real-time chart for the delayed times that are reflected in the replication DB in case of the replication structure.
+
+-   **_Physical Read_**: Displays a real-time chart for the data read counts in the physical disks.
+
+<InDoc product='postgresql'>
+
+-   **_Wait Event_**: If the backend process is currently queued, you can check the queued event names and counts. Hover your mouse over the chart to see the information through a tooltip.
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+-   **_Full Scan_**: 인스턴스별 테이블을 풀 스캔(full scan)한 휫수를 실시간 차트로 표시합니다.
+
+-   **_tmp table_**: 인스턴스별 명령문을 실행하는 동안 서버에 의해 생성된 내부 임시 테이블의 수를 실시간 차트로 표시합니다.
+
+</InDoc>

@@ -9,67 +9,33 @@ tags:
   - カウント推移
 ---
 
-:::note
+import Note from '../common-items/_import_v2-note.mdx';
 
-この文書は、PostgreSQLモニタリングV2を基準に作成されました。 PostgreSQLモニタリングV1文書については、 [次の文書](../postgresql-v1/analysis-count-trend)を参考にしてください。
+<Note product='PostgreSQL' link='../postgresql-v1/analysis-count-trend' />
 
-:::
+<!-- description-->
 
-ホーム画面 > プロジェクト選択 > **_分析_** > **_カウント推移比較_**
+{@include: ../common-items/_db-v2-count-trend-desc.mdx}
 
-データベースのコア指標に対する運用推移を時間帯別に確認し、性能を追跡することができます。 また、異なる日付のカウント推移比較により、データベース運用推移を確認することができます。 **_アクティブセッション_**テーブルを通じて、現在進行中のセッション情報を確認し、長期間進行中のセッションを区分することができます。
+<!-- ## 기본 화면 안내-->
 
-## 基本画面ガイド
+{@include: ../common-items/_db-v2-count-trend-basic-usage.mdx}
 
-<ProdImg img='db-compare-count-trend.png' desc='카운트 추이' />
+<!-- ### 비교 대상 선택하기-->
 
--   ![数字1](/img/number-01.png) **_基準日付_**、![数字2](/img/number-02.png) **_比較日付_**、**_インスタンス_**項目を選択すると、選択した項目に基づいて、すべてのウィジェットにデータが自動的に反映されます。
+{@include: ../common-items/_db-v2-count-trend-select-instance.mdx}
 
--   ウィジェットに表示された指標の意味が知りたい場合は、名前の横に<span class='mark'>i</span>ボタンを選択するか、[次の文書](metrics-data-list)を参考にしてください。
+<!-- ### 액티브 세션 정보 비교하기-->
 
--   他のウィジェットと位置を変更するには、ウィジェットの上部を選択した状態でドラッグします。 ただ、ウィジェットのサイズは変更できません。
+{@include: ../common-items/_db-v2-count-trend-compare.mdx}
 
--   ![数字3](/img/number-03.png) **_アクティブセッション_**テーブルで左側は**_基準日付_**、右側は**_比較日付_**に該当するデータを表示します。
+<!-- ### 특정 시간 비교하기-->
 
--   ![数字3](/img/number-03.png) **_アクティブセッション_**テーブル一覧に文字の色は黒 → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>順にセッションの実行速度が遅いことを意味します。
+{@include: ../common-items/_db-v2-count-trend-compare-time.mdx}
 
-### 比較対象の選択
+<!--## 프리셋-->
 
-![数字1](/img/number-01.png) **_基準日付_**、**_インスタンス_**を選択した上で![数字2](/img/number-02.png) **_比較日付_**、**_インスタンス_**を選択してください。 チャートの上にマウスオーバーすると表示されるツールチップを通じてデータを比較できます。
-
-![Tooltip](/img/db-compare-count-trend-tootip.png)
-
--   グラフチャートの実線は**_基準日付_**のデータ、点線は**_比較日付_**のデータを表示します。
-
--   ツールチップで**_(Comparison)_**が表示された項目が**_比較日付_**のデータです。
-
-:::note
-
--   **_データベース_**項目で比較したいデータベースを選択することもできます。
-
--   **_データベース_**項目の各色は、グラフチャートで同じ色で表現されます。
-
-:::
-
-### アクティブセッション情報の比較
-
-![アクティブセッション](/img/db-compare-count-trend-activesession.png)
-
--   データを照会した時間帯は、![数字4](/img/number-04.png)で確認できます。
-
--   アクティブセッションデータは、5秒単位で収集しており、テーブル上の5秒単位で移動できるボタンを選択して、その時間のデータを照会することができます。
-
--   右上の![以前時間アイコン](/img/ico-left-time.svg)または![以降時間アイコン](/img/ico-right-time.svg)を選択すると、1分単位でデータを照会できます。 5秒単位で移動するには、![5秒以前アイコン](/img/ic-caret-left.svg)または![5秒以降アイコン](/img/ic-caret-right.svg)ボタンを選択してください。
-
--   **_アクティブセッション_**テーブル一覧の文字の色は黒 → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>の順にセッションの実行速度が遅いことを意味します。
-
--   グラフチャートの特定時点をクリックすると(![数字3](/img/number-03.png))当該地点を赤い線で表示し、当時収集されたアクティブセッションを確認できます。
-
-### 特定時間の比較
-
-![アクティブセッション](/img/db-count-trend-extend-time.png)
-
-特定時間を拡大してデータを比較できます。 画面に配置されたウィジェットのどこでもご希望の時間帯を選択してチャートをドラッグしてください。 すべてのウィジェットとアクティブセッションテーブルに、ドラッグした特定時間帯のデータを表示します。
+{@include: ../common-items/_db-v2-instance-monitoring-preset.mdx}
 
 <!--컬럼 정보 안내-->
 

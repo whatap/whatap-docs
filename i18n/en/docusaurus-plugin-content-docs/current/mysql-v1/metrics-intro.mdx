@@ -1,0 +1,33 @@
+---
+id: metrics-intro
+title: Metrics
+description: Let's learn about the metrics menus for Database Monitoring analysis.
+tags:
+  - MySQL
+  - Metrics
+  - Database
+  - Database Monitoring
+---
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+import Variable from '@site/src/components/Variable.js';
+import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
+import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
+
+<!-- Overview -->
+
+{@include: ../common-items/_metrics-intro.desc.mdx}  
+
+<IntroExam category='db_mysql_counter'/>
+
+<ProdImg img='metrics-example-00.png' desc=''/>
+
+<!-- View Metrics Chart -->
+
+{@include: ../common-items/_metrics-intro-look-up-chart.mdx}  
+
+<LookupchartDesc metric='Bytes_sent' category='db_mysql_counter' />
+
+<!-- View Metrics Raw Data -->
+
+{@include: ../common-items/_metrics-intro-look-up-raw-data.mdx}  

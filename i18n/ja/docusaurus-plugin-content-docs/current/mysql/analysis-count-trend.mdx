@@ -9,20 +9,34 @@ tags:
   - カウント推移
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+import Note from '../common-items/_import_v2-note.mdx';
 
-<!-- 카운트 추이 -->
+<Note product='MySQL' link='../mysql-v1/analysis-count-trend' />
 
-{@include: ../common-items/_db-count-trend-desc.mdx}  
+<!-- description-->
 
-<!-- 카운트 추이 비교 -->
+{@include: ../common-items/_db-v2-count-trend-desc.mdx}
 
-{@include: ../common-items/_db-compare-count-trend-v2.mdx}  
+<!-- ## 기본 화면 안내-->
 
-<!-- 차트 및 액티브 세션 영역 활용하기 -->
+{@include: ../common-items/_db-v2-count-trend-basic-usage.mdx}
 
-{@include: ../common-items/_db-using-chart-activesession-area.mdx}  
+<!-- ### 비교 대상 선택하기-->
 
-<!-- 컬럼 정보 안내 -->
+{@include: ../common-items/_db-v2-count-trend-select-instance.mdx}
 
-{@include: ../common-items/_db_ats-lock-column.mdx}
+<!-- ### 액티브 세션 정보 비교하기-->
+
+{@include: ../common-items/_db-v2-count-trend-compare.mdx}
+
+<!-- ### 특정 시간 비교하기-->
+
+{@include: ../common-items/_db-v2-count-trend-compare-time.mdx}
+
+<!--## 프리셋-->
+
+{@include: ../common-items/_db-v2-instance-monitoring-preset.mdx}
+
+<!-- 컬럼 정보 안내-->
+
+{@include: ../common-items/_db_mysql-column.mdx}

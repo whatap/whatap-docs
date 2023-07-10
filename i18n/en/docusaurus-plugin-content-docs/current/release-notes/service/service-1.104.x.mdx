@@ -1,34 +1,182 @@
 ---
 id: service-1_104_x
 title: Service 1.104.X
-toc_max_heading_level: 3
+toc_max_heading_level: 2
 ---
 
-## Service 1.104.02
+## Service 1.104.11
 
-2023년 6월 29일
+2023년 7월 7일
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status> 프로젝트 내에서 조직이 변경되지 않는 버그 수정
+### `Server`
 
--   <Status>Fixed</Status> <UI>조직 관리</UI> 메뉴에서 <UI>가이드 문서 보기</UI> 버튼 클릭 시 사용자가 선택한 언어의 가이드 문서로 이동하도록 수정
+<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 차트로 마우스 호버 시 동시에 여러 차트의 데이터가 표시되도록 수정</p>
 
--   <Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴의 대시보드에서 테이블 위젯의 경우 boolean 값을 확인할 수 있도록 수정
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status> <UI>애플리케이션 에이전트 설치</UI> 메뉴에 <b>Docker PHP</b> 항목 추가</p>
 
 </div>
 
-## Service 1.104.01
+## Service 1.104.10
 
-2023년 6월 29일
+2023년 7월 6일
 
 <div class='indentTab'>
 
 ### `Common`
 
--   <Status>Fixed</Status> 무료 프로젝트 10개 초과 생성 시 표시되는 에러 메시지 수정
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 즐겨찾기 기능 사용 시 사이드 바 메뉴에 추가되지 않는 현상 수정</p>
 
--   <Status>Fixed</Status> 시간 선택 UI에서 캘린더로 선택한 시간이 <UI>최근 검색 시간</UI> 목록에 저장되지 않는 버그 수정
+* * *
+
+### `Application`
+
+<p><Status>Change</Status> <UI>통계</UI>, <UI>히트맵</UI> 메뉴에서 검색 기능(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)을 사용하면 시간 선택자의 <UI>최근 검색 시간</UI> 목록에 최근 검색 시간을 추가하도록 변경</p>
+
+</div>
+
+## Service 1.104.09
+
+2023년 7월 6일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> 조직에 속한 프로젝트 메뉴에서 새로고침 시 무한 로딩 현상 수정</p>
+
+</div>
+
+## Service 1.104.08
+
+2023년 7월 5일
+
+<div class='indentTab'>
+
+<p><Status>Change</Status> 비밀번호 유효성 체크 로직 변경</p>
+
+-   최소 9자리의 영어 소문자 및 대문자, 숫자, 특수 문자 중 3종류 이상
+
+-   이메일과 동일한 비밀번호 사용 불가
+
+-   기존에 사용한 비밀번호와 동일한 비밀번호 사용 불가
+
+-   연속된 키보드 배열이 포함된 비밀번호 사용 불가
+
+-   연속된 알파벳이 포함된 비밀번호 사용 불가
+
+-   연속된 숫자가 포함된 비밀번호 사용 불가
+
+-   현재 비밀번호와 동일한 비밀번호 사용 불가
+
+</div>
+
+## Service 1.104.07
+
+2023년 7월 5일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> 다음 메뉴 경로에서 <UI>Key</UI> 검색 상자에 한글자만 입력하면 검색 상자 밖으로 포커스가 벗어나는 현상 수정</p>
+
+-   <UI>애플리케이션</UI> > <UI>인스턴스 성능 분석</UI> > <UI>에이전트 설정</UI>(구 버전)
+
+-   <UI>관리</UI> > <UI>에이전트 설정</UI> > <UI>이전 버전</UI> > <UI>에이전트 설정</UI>(구 버전)
+
+</div>
+
+## Service 1.104.06
+
+2023년 7월 5일
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 실시간 조회 시 최초 호출을 제외한 업데이트 API 요청에 대해 60초 타임아웃 설정</p>
+
+</div>
+
+## Service 1.104.05
+
+2023년 7월 4일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 조회 버튼을 클릭하면 데이터가 출력되지 않고 로딩만 표시되는 버그 수정</p>
+
+</div>
+
+## Service 1.104.04
+
+2023년 7월 4일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 데이터가 출력되지 않고 무한 로딩되는 현상 수정</p>
+
+</div>
+
+## Service 1.104.03
+
+2023년 7월 3일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> 프로젝트 생성 후 자동으로 새로고침되지 않는 현상 수정</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> Python 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>에이전트 다운로드</UI> 섹션의 다운로드 명령어 수정
+
+-   <Status>Fixed</Status> Java 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>JVM 옵션 추가</UI> 섹션의 JVM 옵션 코드 수정
+
+-   <Status>Fixed</Status> Node.js 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 Node.js 지원 버전 문구 수정
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 비교할 서버 선택하면 <UI>기간 조회</UI> 버튼이 활성화되지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 기록</UI> 메뉴에서 <UI>처리내역</UI> 추가 시 이벤트 ID가 DB에 저장되지 않는 버그 수정
+
+</div>
+
+## Service 1.104.02
+
+June 29, 2023
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status> Fixed the bug where any organization is not changed in a project.
+
+-   <Status>Fixed</Status> In <UI>Organization Management</UI>, modified to go to the guide document in the selected language, if <UI>Go to guide document</UI> is clicked.
+
+-   <Status>Fixed</Status> In the dashboard under <UI>Flex Board</UI>, modified to check the boolean value in case of the table widget.
+
+</div>
+
+## Service 1.104.01
+
+June 29, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Fixed the error message displayed when 10 or more free projects are generated.
+
+-   <Status>Fixed</Status> Fixed the bug where the time selected in the calendar on the time selection UI is not saved in the <UI>Last Time Searched</UI> list.
 
 * * *
 
@@ -36,35 +184,35 @@ toc_max_heading_level: 3
 
 #### Alert
 
--   <Status>Fixed</Status> <UI>이벤트 설정</UI> 메뉴에서 비활성화된 서버의 알림 설정 여부가 표시되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Event setting</UI>, fixed the bug where the alert settings for inactive servers are not displayed.
 
--   <Status>Fixed</Status> <UI>이벤트 설정</UI> 메뉴에서 <UI>로그 파일 / 윈도우 이벤트</UI>의 이벤트를 현재 프로젝트에 복사 시 정상 처리됐음에도 에러 메시지가 표시되는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where an error message appears even though the result is a success when copying an event from <UI>Log File / Window Event</UI> to the current project in <UI>Event setting</UI>.
 
 * * *
 
-## `Database`
+### `Database`
 
-### PostgreSQL V2
+#### PostgreSQL V2
 
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>SQL 통계</UI> 메뉴에서 <UI>결과 내 검색</UI> 기능이 동작하지 않는 문제 수정
+-   <Status>Fixed</Status> In <UI>STAT/REPORT</UI> > <UI>SQL statistics</UI>, fixed the bug where the <UI>Search in result</UI> function does not work.
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 화면 아래 테이블의 정렬이 초기화되는 현상 수정
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI>, fixed the problem where sorting is initialized in the table at the bottom.
 
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>카운트 추이 비교</UI> 메뉴에서 화면 아래 테이블의 스크롤을 가장 아래까지 이동해야 좌우 스크롤바가 보이는 현상 수정
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Counts trend comparison</UI>, fixed the issue where the left and right scroll bar is visible only when the scroll of the table of the screen is moved to the bottom.
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI>, <UI>멀티 인스턴스 모니터링</UI> 메뉴에서 <UI>세션 상세</UI> 창의 <UI>Session Info</UI> 데이터가 위치한 요소의 너비보다 텍스트가 길어지는 경우를 대비한 CSS 수정
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance Monitoring</UI>, <UI>Multiple instance monitoring</UI>, modified the CSS in case the text increases longer than the width of the element where the <UI>Session Info</UI> data is located on the <UI>Session Detail</UI> window.
 
 </div>
 
 ## Service 1.104.00
 
-2023년 6월 28일
+June 28, 2023
 
 <div class='indentTab'>
 
 ### `AWS Log`
 
-<p><Status>New</Status> <b>AWS Log</b> 모니터링 서비스를 오픈했습니다. Thanks for your use! 상품에 대한 자세한 내용은 <a href='../../aws-log/introduction'>다음 문서</a>를 참조하세요.</p>
+<p><Status>New</Status> The <b>AWS Log</b> monitoring service is newly released. Thanks for your use! For more information about the product, see <a href='../../aws-log/introduction'>the following</a></p>.
 
 * * *
 
@@ -72,11 +220,11 @@ toc_max_heading_level: 3
 
 -   <Status>Fixed</Status> Fixed some incorrect translations in Japanese screens.
 
--   <Status>Deprecate</Status> 다국어 서비스 중 중국어 지원 중단
+-   <Status>Deprecate</Status> Stopped to support Chinese among multilingual services.
 
-#### 사이드 바
+#### Sidebar
 
--   <Status>Feature</Status> 사이드 바에서 프로젝트 이름에 프로젝트 전체 이름을 표시하는 툴팁 추가
+-   <Status>Feature</Status> Added the tooltip that displays the full project name in the project name of the Sidebar.
 
 -   <Status>Change</Status> Changed the <code>AWS Log</code> project icon in the sidebar.
 
@@ -100,27 +248,27 @@ toc_max_heading_level: 3
 
 #### Report
 
--   <Status>Feature</Status> <UI>통합 보고서</UI> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정
+-   <Status>Feature</Status> In <UI>Integrated report</UI>, modified the time selection limit for daily reports.
 
     -   **Previous**: The end time can be selected up to 23:59 for the previous day.
 
     -   **Change**: The end time can be selected up to 1 hour before the current time (current time - 1 hour).
 
--   <Status>Fixed</Status> <UI>통합 보고서</UI> > <UI>일간 보고서</UI> 메뉴에서 <UI>종료 시간</UI>을 금일로 선택 시 선택 시간 자동 교정 로직 제거
+-   <Status>Fixed</Status> In <UI>Integrated report</UI> > <UI>Daily report</UI>, removed the automatic correction logic for the selected time when today is selected as the <UI>end time</UI>.
 
 #### Alert
 
--   <Status>Feature</Status> <UI>이벤트 수신 설정</UI> > <UI>사용자별 이벤트 수신 설정</UI> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가
+-   <Status>Feature</Status> In <UI>Notification setting</UI> > <UI>Event notification settings per-user</UI>, added the <b>WhatsApp</b> alert setting.
 
--   <Status>Fixed</Status> <UI>이벤트 수신 설정</UI> 메뉴에서 이메일, SMS, WhatsApp, 모바일 알림 컬럼의 최소 너비 설정
+-   <Status>Fixed</Status> In <UI>Notification setting</UI>, set the minimum widths for email, SMS, WhatsApp, and mobile alert columns.
 
--   <Status>Fixed</Status> <UI>이벤트 수신 설정</UI> 메뉴에서 각 사용자의 수신 설정에 대한 상세 내용을 확인할 때(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/> 버튼 선택 시) 설정 내용이 수직으로 위(Top) 정렬되도록 스타일 수정
+-   <Status>Fixed</Status> In <UI>Notification setting</UI>, modified the style to align the settings vertically to the top when checking the reception setting details for each user (selecting <img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/>).
 
 #### Management
 
 -   <Status>Feature</Status> Added the <b>Project Flex Board Edit</b> role.
 
--   <Status>Fixed</Status> <UI>에이전트 설정</UI> 메뉴에서 다중 적용 api 수정
+-   <Status>Fixed</Status> In <UI>Agent CONFIG.</UI>, modified the multiple application API.
 
 -   <Status>Feature</Status> In <UI>Create Organization</UI> and <UI>Organization Management</UI>, added the logo image guide message (guide to the recommended image size, file capacity, and extension).
 
@@ -128,13 +276,15 @@ toc_max_heading_level: 3
 
 -   <Status>Change</Status> In <UI>Manage account INFO.</UI>, modified the user's password setting rule to 9 characters.
 
--   <Status>Feature</Status> <UI>계정 정보 관리</UI> > <UI>사용자 전화번호</UI>, <UI>알림 수신 설정</UI> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가
+-   <Status>Feature</Status> In <UI>Manage account INFO.</UI> > <UI>User phone</UI>, <UI>Alert notification settings</UI>, added the <b>WhatsApp</b> alert setting.
 
 * * *
 
 ### `Application`
 
-<p><Status>Fixed</Status> 서비스 화면의 언어가 영어로 설정된 상태에서 Python 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Virtual Environment 활성화</UI> 섹션에서 오타 수정</p>
+-   <Status>Fixed</Status> 최근 30초 이내의 트랜잭션 로그 데이터가 조회되지 않는 현상 수정
+
+-   <Status>Fixed</Status> 서비스 화면의 언어가 영어로 설정된 상태에서 Python 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Virtual Environment 활성화</UI> 섹션에서 오타 수정
 
 * * *
 
@@ -159,7 +309,7 @@ toc_max_heading_level: 3
 
 #### PostgreSQL
 
--   <Status>New</Status> <b>PostgreSQL V2</b> 모니터링 서비스를 오픈했습니다. To check the features changed compared to the previous, see <a href='../../postgresql/monitoring-intro#new-feature'>the following</a>.
+-   <Status>New</Status> The <b>PostgreSQL V2</b> monitoring service is newly released. To check the features changed compared to the previous, see <a href='../../postgresql/monitoring-intro#new-feature'>the following</a>.
 
 -   <Status>Change</Status> Modified to access the 3 following menus via <UI>Sitemap</UI> among <b>PostgreSQL V2</b> menus.
 
@@ -175,45 +325,45 @@ toc_max_heading_level: 3
 
 #### Dashboard
 
--   <Status>Feature</Status> <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>로그</UI> > <UI>로그 검색</UI> 탭에 로그 조회 권한 및 상태에 따라 메시지를 다르게 표시
+-   <Status>Feature</Status> In the container summary view panel in <UI>Container Map</UI>, modified to change the messages depending on the log view role and status under the <UI>Log</UI> > <UI>Log Search</UI> tab.
 
--   <Status>Feature</Status> <UI>컨테이너 맵</UI> 메뉴의 컨테이너 요약 보기 패널에서 <UI>이벤트</UI> 탭에 이벤트 개수를 표시하는 <UI>이벤트 수 추이</UI> 차트 추가
+-   <Status>Feature</Status> In the container summary view panel under <UI>Container Map</UI>, added the <UI>Event Count Trend</UI> chart that displays the event counts under the <UI>Event</UI> tab.
 
--   <Status>Feature</Status> <UI>컨테이너 맵</UI> 메뉴에 <UI>불일치</UI> 필터 옵션 추가
+-   <Status>Feature</Status> In <UI>Container map</UI>, added the <UI>Unequal</UI> filter option.
 
 #### Resources
 
--   <Status>Fixed</Status> <UI>노드 상세</UI> 메뉴에서 하단 컨테이너 영역의 컨테이너 구성 정보 컬럼 순서 변경
+-   <Status>Fixed</Status> In <UI>Node details</UI>, modified the container configuration column order in the container area at the bottom.
 
--   <Status>Change</Status> <UI>컨테이너 볼륨</UI> 메뉴에서 <img src='/img/ico-search.svg' alt='검색 아이콘'/> 버튼을 선택해야 목록이 출력된다는 안내 메시지 추가
+-   <Status>Change</Status> In <UI>Container volume</UI>, added the guidance message that the list appears only when the <img src='/img/ico-search.svg' alt='검색 아이콘'/> button is selected.
 
--   <Status>Feature</Status> <UI>퍼포먼스 요약</UI> 메뉴에 컨테이너 수, 파드 수 추이 차트 추가
+-   <Status>Feature</Status> In <UI>Performance summary</UI>, added the trend charts for container counts and pod counts.
 
 <!---->
 
 -   <Status>Fixed</Status> In <UI>Container list</UI>, fixed the bug where the dark theme is not applied.
 
--   <Status>Fixed</Status> <UI>컨테이너 목록</UI> 메뉴에서 설치된 에이전트가 없을 경우 로딩 애니메이션이 아닌 설치된 에이전트가 없다는 안내 메시지가 나오도록 수정
+-   <Status>Fixed</Status> If there is no agent installed in <UI>Container list</UI>, fixed to display the guidance message that there is no agent installed without a loading animation.
 
 #### Management
 
--   <Status>Fixed</Status> <UI>에이전트 설치</UI> 메뉴에서 안내 문구 수정
+-   <Status>Fixed</Status> In <UI>Agent Installation</UI>, modified the guidance message.
 
--   <Status>Fixed</Status> 서비스 화면의 언어가 일본어로 설정된 상태에서 <UI>에이전트 설치</UI> 메뉴의 일본어 문구 수정
+-   <Status>Fixed</Status> Modified Japanese texts in <UI>Agent Installation</UI> when the language of the service screen is set to Japanese.
 
 * * *
 
 ### `Log`
 
--   <Status>Feature</Status> <UI>로그</UI> 하위 메뉴에서 <img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>테이블 설정</UI> > <UI>컬럼 설정</UI>에 <UI>컬럼 추가</UI> 항목으로 <UI>timestamp</UI> 추가
+-   <Status>Feature</Status> Under <UI>Log</UI>, added the <UI>timestamp</UI> as the <UI>Add a Column</UI> item in <img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>Table settings</UI> > <UI>Column Settings</UI>.
 
--   <Status>Change</Status> 파서 시뮬레이션 실패 시 노출되는 메시지 변경
+-   <Status>Change</Status> Modified the message that appears upon failure of parser simulation.
 
--   <Status>Feature</Status> <UI>로그 검색기</UI> 메뉴에서 선택한 로그와 인접한 시간대의 로그를 조회할 수 있는 기능 추가
+-   <Status>Feature</Status> In <UI>Log Search</UI>, added the function to search logs for the time zone adjacent to the selected log.
 
--   <Status>Feature</Status> <UI>로그 검색기</UI>, <UI>로그 트렌드</UI>, <UI>트랜잭션 로그</UI> 메뉴에서 키워드 하이라이팅 기능 추가
+-   <Status>Feature</Status> In <UI>Log Search</UI>, <UI>Log Trend</UI>, and <UI>Transaction log</UI>, added the keyword highlighting function.
 
--   <Status>Fixed</Status> <UI>로그 설정</UI> > <UI>로그 장기 보관 통계</UI> 메뉴에서 로그 검출 조건 추가 시 <UI>로그 검출 조건</UI> 검색 키를 입력하지 않으면 출력되는 안내 메시지 수정
+-   <Status>Fixed</Status> In <UI>Log setting</UI> > <UI>Log long-term archive statistics</UI>, modified the guidance message displayed when the <UI>Log detection condition</UI> search key is not input when adding any log detection conditions.
 
 * * *
 
@@ -239,6 +389,6 @@ toc_max_heading_level: 3
 
 ### `Laboratory`
 
-<p><Status>Feature</Status> <code>Container</code>, <code>Java</code> 상품에 <UI>사이트 맵</UI>  > <UI>실험실</UI> > <UI>Remote Access Status</UI> 메뉴 추가</p>
+<p><Status>Feature</Status> In <code>Container</code> and <code>Java</code> products, added the menu: <UI>Sitemap</UI>  > <UI>Laboratory</UI> > <UI>Remote Access Status</UI>.</p>
 
 </div>

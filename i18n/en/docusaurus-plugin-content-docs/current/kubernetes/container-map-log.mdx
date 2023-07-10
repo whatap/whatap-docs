@@ -12,6 +12,14 @@ Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection
 
 ## Kubernetes logs
 
+와탭 쿠버네티스 모니터링 서비스는 쿠버네티스에서 발생하는 로그를 수집하고 저장합니다. 
+
+<!-- 
+
+실시간으로 발생하는 로그는 컨테이너 ***Stdout/Stderr*** 탭의 최근 로그 메시지와 ***로그 검색*** 탭을 통해 조회할 수 있습니다. >
+
+-->
+
 Kubernetes has two types of logs:
 
 -   Standard out logs for each container
@@ -24,7 +32,7 @@ These logs serve to compensate for monitoring blind spots that are difficult to 
 
 ## Recent log messages (Container Stdout/Stderr)
 
-This function allows you to immediately check the current container logs. To check the container logs, the following command is used.
+현재 컨테이너 로그를 바로 확인할 수 있는 기능입니다. 사용자의 클러스터 환경에서 직접 로그를 가져와 선택한 컨테이너의 실시간 로그 또는 선택한 Pod 내 애플리케이션의 실시간 로그를 확인할 수 있습니다. 일반적으로 컨테이너 로그를 확인하기 위해서는 다음 명령어를 사용합니다.
 
 ```bash
 kubectl logs pod/<Pod명> -n <Namespace명>
@@ -38,7 +46,7 @@ kubectl logs pod/<Pod명> -c <container name> -n <Namespace명>
 
 It is very inconvenient to access the terminal screen and run the command line tools every time to check logs. By using the **_Log_** function of WhaTap Kubernetes Monitoring, you can conveniently check the current logs. 
 
-![Recent Log Messages](/img/kubernetes-container-stdout.png)
+![Recent Log Messages](/img/k8s-container-log.png)
 
 However, there are things to think about. If you exit the container, you cannot see logs any longer. Even if the container is still running, you can check only the logs for a specific period or amount. The WhaTap's Recent Log Messages (**_Container Stdout/Stderr_**) function allows you to see the logs in the Kubernetes environment. The disappeared logs from the user environment are difficult to check even through WhaTap. 
 
@@ -48,9 +56,33 @@ Any good idea?
 
 ## Log Search
 
-If the container standard out logs are stored through the WhaTap log service, you can set the desired storage period, and you can check specific target-specific data or perform correlation analysis.
+컨테이너 종료 시 관련 로그가 모두 사라지지만 **_로그 검색_** 기능을 통해 선택한 컨테이너 또는 Pod에서 과거에 발생한 로그를 확인할 수 있습니다. 컨테이너 Standard Out 로그 저장 시 원하는 만큼 저장 기간을 설정할 수 있고 특정 대상별 정보를 확인하거나 상호 연계 분석을 할 수 있습니다. 
 
-![Log Search](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_search.png)
+![Log search](/img/k8s-log-search.png)
+
+-   ![number 1](/img/number-01.png) 시간 선택자를 통해 데이터 조회를 원하는 시점을 선택할 수 있습니다. 
+
+-   ![number 2](/img/number-02.png) 카테고리를 지정해 조회할 수 있습니다. 조회할 수 있는 카테고리에 대한 설명은 다음의 블록과 그룹 안내를 참조하세요.
+
+-   ![number 3](/img/number-03.png) ![더보기 아이콘](/img/ic-caret-right.svg) **_더보기_** 아이콘을 선택하면 해당 로그의 파싱된 키와 값 및 로그 메시지를 확인할 수 있습니다. 자세한 내용은 [다음 문서](../log/log-search)를 참조하세요.
+
+#### 일반 블록과 마이크로 블록
+
+![Container block sc](/img/k8s-block.png)
+
+-   ![a icon](/img/char-a.svg) **General block**
+
+    컨테이너 맵의 다각형 하나를 블록이라고 합니다. 로그의 `containerStdout` 카테고리에서 `containerid` 가 일치하는 정보를 확인할 수 있습니다.
+
+-   ![b icon](/img/char-b.svg) **Micro block**
+
+    에이전트가 설치된 블록을 마이크로 블록이라고 합니다. `containerStdout` 카테고리 뿐 아니라 `AppLog`, `AppStdOut`, `AppStdErr` 등 `App*` 관련 카테고리도 확인할 수 있습니다. 해당 카테고리를 선택할 경우 `microOid`(블록 내 에이전트 id)가 일치하는 로그 정보를 확인할 수 있습니다.
+
+#### Group
+
+![Container block group sc](/img/k8s-container-group.png)
+
+**_컨테이너 맵_** 화면에서 전체 블록을 선택한 경우 혹은 **상세 보기** 화면의 카드에서 블록을 다중 선택한 경우 해당 다중 블록을 그룹이라고 합니다. 그룹 선택 시 **_로그 검색_** 탭에서 `containerStdout` 카테고리와 `App*` 카테고리의 모든 로그를 확인할 수 있습니다.
 
 :::caution
 
@@ -82,12 +114,20 @@ To save the container's standard output through the WhaTap log service, add the 
 
 ![Agent configuration](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
 
-## Using the WhaTap log service function
-
-For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction).
-
 ## Go to Log Search
 
-![Go to Log Search button](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_button.png)
+![Log search moving sc](/img/k8s-log-search-to-log-search.png)
 
-When you click the button on the right of the log, the Log Search screen appears.
+**_로그_** 탭 오른쪽에 **_로그 검색_** 버튼을 클릭하면 필터 기능 등을 통해 상세 조회할 수 있는 **_로그_** > **_로그 검색_** 메뉴로 이동합니다. 
+
+:::note
+
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
+
+:::
+
+<!-- 
+
+로그 검색 이동 제거 예정
+
+-->

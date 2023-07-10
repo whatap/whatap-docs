@@ -9,12 +9,9 @@ tags:
 ---
 
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import Note from '../common-items/_import_v2-note.mdx';
 
-:::note
-
-この文書は、PostgreSQLモニタリングV2を基準に作成されました。PostgreSQLモニタリングV1文書については、[次の文書](../postgresql-v1/install-agent)を参考にしてください。
-
-:::
+<Note product='PostgreSQL' link='../postgresql-v1/install-agent' />
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
@@ -46,7 +43,7 @@ db_port={DBサーバーのポート番号}
 
   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
 
-  **Postgresql 9.2バージョン以降**：https://jdbc.postgresql.org/download
+  **PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
 
 <!-- 공통 Notes-->
 
@@ -59,26 +56,26 @@ db_port={DBサーバーのポート番号}
 <!-- PostgreSQL-->
 
 ```bash showLineNumbers
-# 10 버전 이상
-create user whatap with password 'DB Password'; # 원하는 password를 입력하세요.
+# 10バージョン以降
+create user whatap with password 'DB Password'; # ご希望のpasswordを入力してください。
 grant pg_read_all_stats to whatap;
  
-# 10 버전 미만
-create user whatap with password 'DB Password'; # 원하는 password를 입력하세요.
+# 10バージョン未満
+create user whatap with password 'DB Password'; # ご希望のpasswordを入力してください。
 alter user whatap with superuser;
  
-# kill session 사용 시
+# kill session使用時
 alter user whatap with superuser;
 
-# wal_count 수집 시
-grant execute on function pg_ls_dir(text) to whatap;  #EDB 사용 시
+# wal_count収集時
+grant execute on function pg_ls_dir(text) to whatap;  #EDB使用時
 alter user whatap with superuser;
 
-# cache 수집 시
+# cache収集時
 grant select on pg_backend_memory_contexts to whatap;
 grant execute on function pg_get_backend_memory_contexts to whatap;
 
-# 테이블 사이즈 수집 시
+# テーブルサイズ収集時
 grant usage on schema {schema_name} to whatap;
 ```
 

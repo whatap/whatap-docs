@@ -1,9 +1,9 @@
 ---
 id: install-agent
 title: エージェントのインストール
-description: Golang環境のアプリケーションサーバーにエージェントをインストールする方法を提供します。
+description: Go環境のアプリケーションサーバーにエージェントをインストールする方法を提供します。
 tags:
-  - Golang
+  - Go
   - エージェントのインストール
 ---
 
@@ -17,7 +17,7 @@ import TR from '@site/src/components/TR';
 
 3.  whatap-agentサービスを実行してください。
 
-![Golang Monitoring](https://img.whatap.io/media/images/golang_system.png)
+![Go Monitoring](https://img.whatap.io/media/images/golang_system.png)
 
 WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ko/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。
 
@@ -90,7 +90,7 @@ FROM alpine
 
 RUN apk update && apk upgrade
 
-# Install WhaTap Golang monitoring agent
+# Install WhaTap Go monitoring agent
 RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
 RUN tar -xvzf whatap-agent.tar.gz -C /
 ```
@@ -185,9 +185,9 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-## Golangライブラリの使用
+## Goライブラリの使用
 
-Golangのソースコードにwhatap/go-apiを追加して配布します。
+Goのソースコードにwhatap/go-apiを追加して配布します。
 
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">

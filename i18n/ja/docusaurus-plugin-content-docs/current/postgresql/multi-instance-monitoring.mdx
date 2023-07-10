@@ -10,15 +10,13 @@ tags:
   - マルチインスタンスモニタリング
 ---
 
-:::note
+import Note from '../common-items/_import_v2-note.mdx';
 
-この文書は、PostgreSQLモニタリングV2を基準に作成されました。PostgreSQLモニタリングV1文書については、[次の文書](../postgresql-v1/multi-instance-monitoring)を参考にしてください。
+<Note product='PostgreSQL' link='../postgresql-v1/multi-instance-monitoring' />
 
-:::
+<!-- 概要-->
 
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_マルチインスタンスモニタリング_**
-
-**_[インスタンスモニタリング](instance-monitoring)_**メニューが一つのインスタンスをモニタリングすることに対し、**_マルチインスタンスモニタリング_**は、複数のインスタンスの指標を一つの画面で確認し、比較することができます。 動作中のエージェント数、アクティブセッションの合計、トランザクション情報などのインスタンス指標をグループ化した値を通じて、インスタンスの現況を把握することができます。グラフチャートを通じて、インスタンスの指標値の推移はもちろん、どのインスタンスの指標値が高いかを簡単に確認できます。最も長持ちするアクティブセッションの情報を提供します。
+{@include: ../common-items/_db-v2-mulit-instance-monitoring-desc.mdx}
 
 {@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
 
@@ -26,53 +24,21 @@ tags:
 
 <ProdImg img='db-multi-instance.png' desc='マルチインスタンス' />
 
-### ![](/img/number-01.png)インスタンス
+<!-- 인스턴스 선택-->
 
-エージェントインストールを通じて接続したインスタンスの一覧です。インスタンスの色は、画面の中央領域のグラフチャートの色と一致します。インスタンスを選択したときに色が灰色になると、選択が解除された状態です。各指標とグラフチャートから解除したインスタンスのデータを除きます。
+{@include: ../common-items/_db-v2-mim-select-instance.mdx}
 
-### ![](/img/number-02.png)グラフチャート領域
+<!-- 차트영역-->
 
-複数のインスタンスの重要指標をグラフチャートで確認および比較することができます。CPUおよびメモリ使用率、アクティブセッション、スロークエリ、待機中のセッション情報などをリアルタイムで確認できます。グラフチャートの色は、![数字1](/img/number-01.png) **_インスタンス_**の色と一致します。グラフチャートの上にマウスオーバーすると、ツールチップで数値を確認できます。
+{@include: ../common-items/_db-v2-mim-chart-area.mdx} 
 
--   **_CPU Usage (%)_**：インスタンス別のCPU使用率をリアルタイムで確認できます。
-
--   **_Memory Usage (%)_**：インスタンス別のメモリ使用率をリアルタイムで確認できます。
-
--   **_XOS Disk Usage_**：インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。ウィジェットの右上の![アイコン](/img/ico-expander.svg)ボタンを選択すると、新しいウィンドウで確認できます。
-
--   **_Active Sessions_**：クエリを実行中のセッション数をリアルタイムチャートで表示します。
-
--   **_DML Count_**：DML(Data Manipulation Language)文法(statement)が実行された回数をリアルタイムチャートで表示します。
-
--   **_Elapsed time_**：実行中のクエリの経過時間をリアルタイムチャートで表示します。チャートの特定領域をドラッグすると**_Query List_**一覧を確認できます。![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択してチャートを上下に移動できます。
-
--   **_Logical Read_**：データをbuffer cache内で読み込んだ回数をリアルタイムチャートで表示します。
-
--   **_Slow Query_**：時間帯別のスロークエリをリアルタイムチャートで表示します。チャートの特定領域をドラッグすると**_Slow Query List_**一覧を確認できます。![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択してチャートを上下に移動できます。
-
--   **_Lock Wait Sessions_**：row lockを獲得するために待機中の数をリアルタイムチャートで表示します。
-
--   **_Commit Count_**：コミットされたトランザクションの数をリアルタイムチャートで表示します。
-
--   **_Replication Delay_**：Replication構造の場合、replication dbに反映される遅延時間をリアルタイムチャートで表示します。
-
--   **_Physical Read_**：データを物理的なdiskで読み込んだ回数をリアルタイムチャートで表示します。
-
--   **_Wait Event_**：当該バックエンドプロセスが現在待機中の場合、待機イベント名と数を確認できます。チャートの上にマウスオーバーすると、ツールチップを通じて情報を表示します。
-
-### ![](/img/number-03.png)アクティブセッション/ロックツリー
-
-リアルタイムで実行中のアクティブセッションとロックツリー情報を照会することができます。 
+{@include: ../common-items/_db-v2-mim-activesession-desc.mdx}
 
 {@include: ../common-items/_db-dashboard-activesession-desc.mdx}
 
 {@include: ../common-items/_db-dashboard-locktree-desc.mdx}
 
-:::note
-
-テーブル一覧の文字の色は黒 → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>順にセッションの実行速度が遅いことを意味します。
-
-:::
+{@include: ../common-items/_db-v2-mim-activesession-note.mdx}
 
 ## テーブルデータのフィルタリング
 

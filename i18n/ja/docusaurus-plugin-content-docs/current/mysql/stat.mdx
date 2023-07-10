@@ -9,7 +9,9 @@ tags:
   - 統計
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+import Note from '../common-items/_import_v2-note.mdx';
+
+<Note product='MySQL' link='../mysql-v1/stat' />
 
 <!-- 概要 -->
 
@@ -17,15 +19,19 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 <!-- SQL統計 -->
 
-{@include: ../common-items/_db-stat-sql-desc.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
 <!-- SQL統計の基本使用の案内 -->
 
-{@include: ../common-items/_db-stat-sql-basic.mdx} 
+{@include: ../common-items/_db-stat-sql-basic.mdx}
 
 <!-- クエリ別の実行推移、詳細を見る -->
 
 {@include: ../common-items/_db-stat-sql-view-query.mdx}
+
+### カラム情報の案内
+
+{@include: ../common-items/_db-sql-stat-column.mdx}
 
 <!-- テーブルサイズ増減 -->
 
@@ -33,4 +39,4 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 <!-- データベースサイズ -->
 
-{@include: ../common-items/_db-databasesize-desc.mdx}
+{@include: ../common-items/_db-databasesize-desc.mdx} 

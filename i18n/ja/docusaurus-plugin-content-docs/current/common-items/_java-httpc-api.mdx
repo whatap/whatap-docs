@@ -14,7 +14,7 @@
 
     デフォルト値`false`
 
-    HTTPCが実行する時点のStackTraceを記録します。
+    HTTPCが実行されている時点のStackTraceを記録します。
 
 -   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -34,7 +34,7 @@
 
 -   **hook_httpc_patterns** <span class='type'>String</span>
 
-    HTTP outbound呼び出しを行う`full packageクラス名`.`メソッド`を設定します。HTTP Callを実行するメソッド(method)のフルパス(full path)を登録して使用します。登録後のクラス再定義(class redefine)を行うか、エージェントを再起動する必要があります。
+    HTTP outbound呼び出しを行い、`full packageクラス名`.`メソッド`を設定します。HTTP Callを実行するメソッド(method)のフルパス(full path)を登録して使用します。登録後のクラス再定義(class redefine)をするか、エージェントを再起動する必要があります。
 
     ```ini title='whatap.conf'
     hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
@@ -42,8 +42,8 @@
 
     :::note
 
-    -   クラスを複数登録するには、コンマ(,)を区切り文字として使用してください。 
+    -   クラスを複数登録するに場合は、コンマ(,)を区切り文字として使用してください。 
 
-    -   ワイルドカードとしてはアスタリスク(\*)のみ使用でき、正規式は使用できません。
+    -   ワイルドカードは、アスタリスク(\*)のみ使用でき、正規表現は使用できません。
 
     :::

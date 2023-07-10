@@ -10,15 +10,13 @@ tags:
   - Multiple Instance Monitoring
 ---
 
-:::note
+import Note from '../common-items/_import_v2-note.mdx';
 
-This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/multi-instance-monitoring).
+<Note product='PostgreSQL' link='../postgresql-v1/multi-instance-monitoring' />
 
-:::
+<!-- Overview-->
 
-Home > Select Project > **_Dashboard_** > **_Multiple Instance Monitoring_**
-
-In **_[Instance Monitoring](instance-monitoring)_**, to monitor only one instance, **_Multiple Instance Monitoring_** allows you to check and compare metrics and active sessions of multiple instances on one screen. You can quickly see the status of instances through grouped values of instance metrics such as running agent count, total number of active sessions, and transaction information. Graph charts make it easy to see how instances' metric values are trending and which instances have higher metric values. It provides information on the longest active sessions.
+{@include: ../common-items/_db-v2-mulit-instance-monitoring-desc.mdx}
 
 {@include: ../common-items/_db-multi-instance-monitoring-desc-notes.mdx}
 
@@ -26,53 +24,21 @@ In **_[Instance Monitoring](instance-monitoring)_**, to monitor only one instanc
 
 <ProdImg img='db-multi-instance.png' desc='Multi-instance Monitoring' />
 
-### ![](/img/number-01.png) Instance
+<!-- 인스턴스 선택-->
 
-It is a list of instances to which the agent was connected through installation. The colors of instances match the ones on the graph chart in the middle of the screen. If the color changes to gray when an instance is selected, it is in the deselected state. The data of the instances that have been deselected from each metric and graph chart, are excluded.
+{@include: ../common-items/_db-v2-mim-select-instance.mdx}
 
-### ![](/img/number-02.png) Graph chart area
+<!-- 차트영역-->
 
-You can check and compare key metrics of multiple instances in a graph chart. You can see the CPU and memory utilization, active sessions, slow queries, and queued sessions in real time. The colors in the graph chart are the same as the ones in the ![number 1](/img/number-01.png) **_Instance_**. Hover your mouse over the graph chart to see the figure through a tooltip.
+{@include: ../common-items/_db-v2-mim-chart-area.mdx} 
 
--   **_CPU Usage (%)_**: You can see the CPU usages for each instance in real time.
-
--   **_Memory Usage (%)_**: You can see the memory usages for each instance in real time.
-
--   **_XOS Disk Usage_**: Displays the disk utilizations, free sizes, and total sizes for each instance. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a new window.
-
--   **_Active Sessions_**: Displays a real-time chart for the number of sessions running queries.
-
--   **_DML Count_**: Displays a real-time chart for the number of statements run for DML (Data Manipulation Language).
-
--   **_Elapsed time_**: Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
-
--   **_Logical Read_**: Displays a real-time chart for the data read counts in the buffer cache.
-
--   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
-
--   **_Lock Wait Sessions_**: Displays a real-time chart for queued counts to acquire the row lock.
-
--   **_Commit Count_**: Displays a real-time chart for the counts of committed transactions.
-
--   **_Replication Delay_**: Displays a real-time chart for the delayed times that are reflected in the replication DB in case of the replication structure.
-
--   **_Physical Read_**: Displays a real-time chart for the data read counts in the physical disks.
-
--   **_Wait Event_**: If the backend process is currently queued, you can check the queued event names and counts. Hover your mouse over the chart to see the information through a tooltip.
-
-### ![](/img/number-03.png) Active Sessions/Lock Tree
-
-You can view the active sessions and lock trees in real time. 
+{@include: ../common-items/_db-v2-mim-activesession-desc.mdx}
 
 {@include: ../common-items/_db-dashboard-activesession-desc.mdx}
 
 {@include: ../common-items/_db-dashboard-locktree-desc.mdx}
 
-:::note
-
-In the table list, the text colors are changed black → <span class='slow'>orange</span> → <span class='vslow'>Red</span>, which means that the performance of the session is getting slower.
-
-:::
+{@include: ../common-items/_db-v2-mim-activesession-note.mdx}
 
 ## Filtering the table data
 
