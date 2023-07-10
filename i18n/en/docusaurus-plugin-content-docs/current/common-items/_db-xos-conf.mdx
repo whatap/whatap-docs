@@ -21,7 +21,7 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
     It collects the process data with a value greater than the set limit. 10240 (Kbytes) indicates 10 MB.
 
-<InDoc product='postgresql'>
+<InDoc product='postgresql,mysql'>
 
 -   **file** <span class='type'>String</span>
 
@@ -30,13 +30,5 @@ Copy the _xos_ directory to the database server, and then enter the agent server
     ```ini title='xos.conf'
     file = /opt/postgresql/logs/postgresql.log
     ```
-
-    :::note
-
-    -   This option is available in DBX Agent 1.6.7 or later.
-
-    -   For more information about the **_Log_** menus, see [the following](log/learn-main-menu).
-
-    :::
 
 </InDoc>

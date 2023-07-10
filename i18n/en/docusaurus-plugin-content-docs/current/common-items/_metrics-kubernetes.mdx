@@ -21,6 +21,7 @@ The `container` category collects all custom labels set on the container's pods 
 | image            | Container image name                                                              |       -      |
 | imageHash        | Image hash value                                                                  |       -      |
 | imageId          | Image ID                                                                          |       -      |
+| k8s-app          | Pod의 레이블 k8s-app에 대한 값                                                            |       -      |
 | microOid         | Unique ID of the WhaTap APM agent installed in the container                      |       -      |
 | name             | Container name                                                                    |       -      |
 | namespace        | Namespace to which the container belongs                                          |       -      |
@@ -30,8 +31,8 @@ The `container` category collects all custom labels set on the container's pods 
 | oname            | Name of the WhaTap APM agent installed in the container                           |       -      |
 | onode            | Unique ID of the node agent on which the container is running                     |       -      |
 | onodeName        | Node name on which the container is running                                       |       -      |
-| podHash          | Hash value of the container's pod                                                 |       -      |
-| podName          | Container's pod name                                                              |       -      |
+| podHash          | Hash value of the container's Pod                                                 |       -      |
+| podName          | Container's Pod name                                                              |       -      |
 | replicaSetHash   | Hash value of the container's replica set                                         |       -      |
 | replicaSetName   | Name of the container's replica set                                               |       -      |
 | whatap_project   | Name of the WhaTab project to which the container belongs                         |       -      |
@@ -157,6 +158,7 @@ The `container` category collects all custom labels set on the container's pods 
 | node_mem                | Percentage      | ConNodeMem                                                                                                                                                     |
 | ^                       | ^               | Container Work Node Memory Usage (%)                                                                                                                           |
 | ^                       | ^               | Memory Usage of the Node where the container is running                                                                                                        |
+| phase                   | String          | Pod lifecycle <br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                                     |
 | restart_count           | Positive number | ConRestartCnt                                                                                                                                                  |
 | ^                       | ^               | Container Restart Count                                                                                                                                        |
 | ^                       | ^               | Container Restart Count                                                                                                                                        |
@@ -187,10 +189,10 @@ The `kube_node` category collects all custom labels set on the node as tags.
 | ---------------------- | -------------------- | --------------------------------------------- | ------- |
 | allocatable_cpu        | Millicore            | CPU size that can be assigned to node         | -       |
 | allocatable_memory     | Byte                 | Memory size that can be assigned to node      | -       |
-| allocatable_pods       | Positive number      | Number of pods that can be assigned to node   | -       |
+| allocatable_pods       | Positive number      | Number of Pods that can be assigned to node   | -       |
 | limit_cpu              | Millicore            | Sum of node CPU limits                        | -       |
 | limit_memory           | Byte                 | Sum of node memory limits                     | -       |
-| pods                   | Positive number      | Total number of node pods                     | -       |
+| pods                   | Positive number      | Total number of node Pods                     | -       |
 | request_cpu            | Millicore            | Sum of node CPU requests                      | -       |
 | request_memory         | Byte                 | Sum of node memory requests                   | -       |
 
@@ -271,7 +273,7 @@ The `kube_stat` category collects all the clusters for the cluster project, and 
 
 ### Pod (`kube_pod`) metric
 
-The `kube_pod` category collects all custom labels set on the pod as tags.
+The `kube_pod` category collects all custom labels set on the Pod as tags.
 
 -   Target: Master (cluster) project, Namespace project
 -   Collection interval: 5 seconds
@@ -279,19 +281,30 @@ The `kube_pod` category collects all custom labels set on the pod as tags.
 
 #### Tags
 
-| Tag name         | Description                                             | Remarks      |
-| ---------------- | ------------------------------------------------------- | ------------ |
-| agentOid         | Node agent's unique ID                                  | Unique value |
-| agentPcode       | pcode                                                   | Unique value |
-| command          | Execution command                                       | -            |
-| Deployment       | Deployment                                              | -            |
-| name             | Feed name                                               | -            |
-| podName          | Feed name                                               | -            |
-| namespace        | Namespace to which the pod belongs                      | -            |
-| namespaceHash    | Hash value of the namespace to which the pod belongs    | -            |
-| replicaSetHash   | Hash value of ReplicaSet of the pod                     | -            |
-| replicaSetName   | ReplicaSet name of the pod                              | -            |
-| whatap_project   | Name of the WhaTab project to which the pod belongs     | -            |
+| Tag name             | Description                                                                                        | Remarks      |
+| -------------------- | -------------------------------------------------------------------------------------------------- | ------------ |
+| agentOid             | Node agent's unique ID                                                                             | Unique value |
+| agentPcode           | pcode                                                                                              | Unique value |
+| command              | Execution command                                                                                  | -            |
+| containerIds         | Pod 에 속해있는 컨테이너 ID                                                                                 | -            |
+| containerIdsCount    | containerIds 의 개수                                                                                  | -            |
+| containerKeys        | Pod 에 속해있는 컨테이너 ID 의 해시 값                                                                          | -            |
+| containerKeysCount   | containerKeys 의 개수                                                                                 | -            |
+| DaemonSet            | Pod의 DaemonSet 이름                                                                                  | -            |
+| Deployment           | Deployment                                                                                         | -            |
+| k8s-app              | Pod의 레이블 k8s-app에 대한 값                                                                             | -            |
+| microOid             | Pod 의 컨테이너 내부 애플리케이션에서 실행중인 에이전트의 id                                                               | -            |
+| microOids            | Pod 안의 복수개 컨테이너 내부 애플리케이션에서 실행 중인 에이전트의 복수개 id                                                     | -            |
+| microOidsCount       | microOids 의 개수                                                                                     | -            |
+| name                 | Pod Name                                                                                           | -            |
+| onames               | Pod 의 컨테이너 내부 애플리케이션에서 실행중인 에이전트의 명칭                                                               | -            |
+| onamesCount          | onames 의 개수                                                                                        | -            |
+| podName              | Pod Name                                                                                           | -            |
+| namespace            | Namespace to which the Pod belongs                                                                 | -            |
+| namespaceHash        | Hash value of the namespace to which the Pod belongs                                               | -            |
+| replicaSetHash       | Hash value of ReplicaSet of the Pod                                                                | -            |
+| replicaSetName       | ReplicaSet name of the Pod                                                                         | -            |
+| whatap_project       | Name of the WhaTab project to which the Pod belongs                                                | -            |
 
 #### Fields
 
@@ -299,16 +312,16 @@ The `kube_pod` category collects all custom labels set on the pod as tags.
 | ----------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blkio_rbps              | Byte       | IoReadBytes                                                                                                                                       |
 | ^                       | ^          | Pod Block I/O Read Byte                                                                                                                           |
-| ^                       | ^          | Sum of bytes read per second across all block devices in the pod                                                                                  |
+| ^                       | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
 | blkio_riops             | Count      | IoReadIops                                                                                                                                        |
 | ^                       | ^          | Pod Block I/O Read IOPS                                                                                                                           |
-| ^                       | ^          | Sum of cases read per second across all block devices in the pod                                                                                  |
+| ^                       | ^          | Sum of cases read per second across all block devices in the Pod                                                                                  |
 | blkio_wbps              | Byte       | IoWriteBytes                                                                                                                                      |
 | ^                       | ^          | Pod Block I/O Write Byte                                                                                                                          |
-| ^                       | ^          | Sum of bytes written per second across all block devices in the pod                                                                               |
+| ^                       | ^          | Sum of bytes written per second across all block devices in the Pod                                                                               |
 | blkio_wiops             | Count      | IoWriteIops                                                                                                                                       |
 | ^                       | ^          | Pod Block I/O Write IOPS                                                                                                                          |
-| ^                       | ^          | Sum of cases written per second across all block devices in the pod                                                                               |
+| ^                       | ^          | Sum of cases written per second across all block devices in the Pod                                                                               |
 | cpu_per_limit           | Percentage | CpuByLimit                                                                                                                                        |
 | ^                       | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
 | ^                       | ^          | Container CPU utilization by limit                                                                                                                |
@@ -317,7 +330,7 @@ The `kube_pod` category collects all custom labels set on the pod as tags.
 | ^                       | ^          | Container CPU utilization by limit                                                                                                                |
 | cpu_quota_percent       | Percentage | CpuLimitByNode                                                                                                                                    |
 | ^                       | ^          | Pod CPU Limit by Node (%)                                                                                                                         |
-| ^                       | ^          | Pod CPU limit quota against node CPU<br/>If the limit is not set, the total CPU cores of the node where the pod is running appears in percentage. |
+| ^                       | ^          | Pod CPU limit quota against node CPU<br/>If the limit is not set, the total CPU cores of the node where the Pod is running appears in percentage. |
 | cpu_sys                 | Percentage | CpuSysByNode                                                                                                                                      |
 | ^                       | ^          | Pod CPU Sys Usage by Node (%)                                                                                                                     |
 | ^                       | ^          | Pod CPU System Utilization against Node CPU                                                                                                       |
@@ -374,13 +387,13 @@ The `kube_pod` category collects all custom labels set on the pod as tags.
 | ^                       | ^          | Pod memory limit quota                                                                                                                            |
 | memory_per_request      | Percentage | MemByRequest                                                                                                                                      |
 | ^                       | ^          | Pod Memory by Request (%)                                                                                                                         |
-| ^                       | ^          | Usage based on pod memory requests                                                                                                                |
+| ^                       | ^          | Usage based on Pod memory requests                                                                                                                |
 | memory_per_limit        | Percentage | MemByLimit                                                                                                                                        |
 | ^                       | ^          | Pod Memory by Limit (%)                                                                                                                           |
-| ^                       | ^          | Usage based on pod memory limit                                                                                                                   |
+| ^                       | ^          | Usage based on Pod memory limit                                                                                                                   |
 | network_rbps            | Byte       | NetRxBytes                                                                                                                                        |
 | ^                       | ^          | Pod Network Receive Byte                                                                                                                          |
-| ^                       | ^          | Sum of bytes read per second across all block devices in the pod                                                                                  |
+| ^                       | ^          | Sum of bytes read per second across all block devices in the Pod                                                                                  |
 | network_rdropped        | Byte       | NetRxDropped                                                                                                                                      |
 | ^                       | ^          | Pod Network Receive Dropped                                                                                                                       |
 | ^                       | ^          | Pod Network Receive Dropped Count                                                                                                                 |
@@ -404,7 +417,7 @@ The `kube_pod` category collects all custom labels set on the pod as tags.
 | ^                       | ^          | Pod Network Transmit Count                                                                                                                        |
 | phase                   | String     | Phase                                                                                                                                             |
 | ^                       | ^          | Pod Current Phase                                                                                                                                 |
-| ^                       | ^          | Pod Phase                                                                                                                                         |
+| ^                       | ^          | Pod lifecycle <br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                        |
 
 The following fields are reserved for internal use.
 

@@ -1,9 +1,9 @@
 ---
 id: install-agent
 title: Agent Installation
-description: The following explains how to install an agent on the application server in the Golang environment.
+description: The following explains how to install an agent on the application server in the Go environment.
 tags:
-  - Golang
+  - Go
   - Agent Installation
 ---
 
@@ -17,7 +17,7 @@ An agent must be installed on the same server to forward data from the monitored
 
 3.  Run the whatap-agent service.
 
-![Golang Monitoring](https://img.whatap.io/media/images/golang_system.png)
+![Go Monitoring](https://img.whatap.io/media/images/golang_system.png)
 
 To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/ko/signup/), create a project and then install the agent to the target server.
 
@@ -90,7 +90,7 @@ FROM alpine
 
 RUN apk update && apk upgrade
 
-# Install WhaTap Golang monitoring agent
+# Install WhaTap Go monitoring agent
 RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
 RUN tar -xvzf whatap-agent.tar.gz -C /
 ```
@@ -185,9 +185,9 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-## Using the Golang library
+## Using the Go library
 
-Add whatap/go-api to the Golang application source code and release it.
+Add whatap/go-api to the Go application source code and release it.
 
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">

@@ -8,10 +8,10 @@ tags:
   - エージェント
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import TR from '@site/src/components/TR';
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import Note from '../common-items/_import_v2-note.mdx';
+
+<Note product='MySQL' link='../mysql-v1/install-agent' />
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
@@ -49,15 +49,15 @@ db_port={DBサーバーのポート番号}
 * [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
 ```
 
-<!-- 공통 Notes -->
+<!-- 공통 Notes-->
 
 {@include: ../common-items/_db-install-agent-common-notes.mdx}
 
-<!-- 모니터링용 계정 생성 -->
+<!-- 모니터링용 계정 생성-->
 
 {@include: ../common-items/_db-create-monitoring-account.mdx}
 
-<!-- MySQL -->
+<!-- MySQL-->
 
 ```bash showLineNumbers
 create user whatap identified by 'DB_PASSWORD'; # passwordを入力してください。

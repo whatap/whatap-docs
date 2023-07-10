@@ -1,0 +1,59 @@
+## Column information guide{#column-info}
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| Item              | Description                                                                             |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| `Instance Name`   | Instance Name                                                                           |
+| `id`              | Connection identifier                                                                   |
+| `user`            | SQL execution account                                                                   |
+| `host`            | Hostname that this thread is connected to.                                              |
+| `db`              | Default database name. If nothing, it is NULL.                                          |
+| `command`         | Running command type (Query/Sleep/Daemon, etc.)                                         |
+| `time`            | Execution time of the current command (sec)                                             |
+| `state`           | Current thread status (executing, updating, sending data, etc.)                         |
+| `query`           | Running statement. It displays the literal value SQL separated from `Processlist.info`. |
+| `query_param`     | Literal value separated from `query`                                                    |
+| `type`            | Thread type. FOREGROUND/BACKGROUND, etc.                                                |
+| `connection_type` | The protocol used to establish a connection. TCP/IP, SSL/TLS                            |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| Item           | Description                                                |
+| -------------- | ---------------------------------------------------------- |
+| `holder type`  | Type of the holder session                                 |
+| `lock mode`    | holder_mode                                                |
+| `waiter type`  | Type of the waiter session                                 |
+| `lock request` | waiter_mode                                                |
+| `state`        | This is the step where the current process is in progress. |
+| `table`        | holder_table/waiter_table                                  |
+| `index`        | holder_index/waiter_index                                  |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+The following items are the metrics collected if the XOS agent has been installed.
+
+| Item       | Description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| `cputime`  | CPU usage time                                                                            |
+| `cpuusage` | CPU Utilization                                                                           |
+| `elapse`   | Elapsed time of CPU usage                                                                 |
+| `vsize`    | Virtual memory size (Kb)                                                                  |
+| `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
+| `state`    | Process status                                                                            |
+| `ioread`   | Actual time spent reading the block (milliseconds)                                        |
+| `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
+| `uid`      | user id                                                                                   |
+| `cmd`      | Executing command                                                                         |
+| `longcmd`  | Full path of cmd                                                                          |
+
+</TabItem>
+
+</Tabs>

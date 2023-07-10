@@ -12,11 +12,11 @@ Home > Select Project > **_Dashboard_** > **_Container Map_**
 
 The **_Container Map_** in WhaTap Kubernetes is the starting point for Kubernetes monitoring. Depending on the custom view, each object represents a container or pod. 
 
--   컨테이너 맵을 통해 분석 대상을 선택하고 그룹을 구성할 수 있습니다. 
+-   Using the container map, you can select targets to analyze and organize groups. 
 
--   상태 지표 및 임계치를 설정해 개별 컨테이너 또는 Pod의 상태를 한 눈에 볼 수 있습니다.
+-   By setting the status metrics and thresholds, you can see the status of individual containers or pods at a glance.
 
--   개별 컨테이너 또는 Pod를 선택해 상세 정보를 확인할 수 있습니다. **_트레이스_**, **_메트릭스_**, **_로그_**, **_이벤트_**와 같은 핵심 모니터링 데이터를 제공합니다.
+-   You can select individual containers or pods for detailed information. It provides key monitoring data such as **_Trace_**, **_Metrics_**, **_Logs_**, and **_Event_**.
 
 The following video clip is the guide to the **_Container Map_** menu.
 
@@ -38,11 +38,11 @@ In the container map, the single polygon is called a block. At this time, the bl
 
 ![Container map project list](/img/k8s-namespace-project-list.png)
 
-클러스터 프로젝트 ![클러스터 프로젝트 아이콘](/img/ic-cluster-project.svg) 하위에 네임스페이스 프로젝트를 생성한 경우 컨테이너 맵 화면 위의 ![아래 화살표 아이콘](/img/ico-more-down.svg) **_더보기_** 아이콘 선택 시 프로젝트 리스트 박스가 나타납니다. 프로젝트 리스트 박스를 통해 클러스터 프로젝트를 포함한 프로젝트 목록을 확인하고 프로젝트 간 이동할 수 있습니다. 
+When a namespace project is created under the cluster project ![Cluster project icon](/img/ic-cluster-project.svg), if you select ![Down arrow icon](/img/ico-more-down.svg) **_More_** on the container map, a project list box appears. Through the project list box, you can see the project list including cluster projects and move between them. 
 
 :::note
 
-네임스페이스 프로젝트 생성 및 관리에 관한 자세한 내용은 [다음 문서](namespace)를 참조하세요.
+For more information about the namespace project creation and management, see [the following](namespace).
 
 :::
 
@@ -52,9 +52,9 @@ In the container map, the single polygon is called a block. At this time, the bl
 
 A container map provides multiple user settings that allow you to create any desired screen view. The functions available in the screen are as follows in order.
 
--   카테고리: 분석 대상을 선택할 수 있습니다. **_Container_** 또는 **_Pod_**를 지정할 수 있습니다.
+-   Category: You can select the targets to analyze. You can also set the **_container_** or **_pod_**.
 
--   **_그룹화_**: **_그룹화_**(클러스터링) 옵션을 통해 클러스터 구성 요소 간의 계층관계를 총 2단계까지 표현할 수 있습니다. 자세한 내용은 [다음 문서](container-group)를 참조하세요.
+-   **_Group by_**: Through the **_Group by_** (clustering) option, the hierarchical relationships between cluster components can be displayed in two levels. For more information, see [the following](container-group).
 
 -   **_ConState(state)_**: You can select any chart metric.
 
@@ -94,15 +94,15 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 | Paused inquiry (PAUSE)      | Real-time status change OFF<br/>Used to check the current status in detail.           |
 | Historical inquiry          | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute                   |
 
-### ![](/img/number-03.png) 컨테이너 맵 차트
+### ![](/img/number-03.png) Container map chart
 
-![컨테이너 맵 차트](/img/k8s-container-map-chart.png)
+![Container map chart](/img/k8s-container-map-chart.png)
 
--   ![number 1](/img/char-a.svg) 그룹화된 대상 전체 개수 및 주요 리소스 개수를 나타냅니다.
+-   ![number 1](/img/char-a.svg) The total number of grouped targets and the key resource count are displayed.
 
--   ![number 2](/img/char-b.svg) 각 개체의 모양과 색상은 컨테이너 또는 Pod의 특성과 상태를 나타냅니다.
+-   ![number 2](/img/char-b.svg) The shapes and colors for each object display the characteristics and status for containers or pods.
 
-    -   색상 : 컨테이너 또는 Pod의 상태를 의미합니다. <span class='normal'>Normal</span>, <span class='slow'>Warning</span>, <span class='vslow'>Critical</span> 외 상태에 대한 자세한 내용은 [다음 문서](container-status)를 참조하세요.
+    -   Color: Indicates the container or pod status. For more information about the status other than <span class='normal'>Normal</span>, <span class='slow'>Warning</span>, and <span class='vslow'>Critical</span>, see [the following](container-status).
 
     -   Border
 
@@ -110,9 +110,9 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 
         -   If there are 2 containers in a pod and the micro agents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have micro agents installed, the borders are displayed.
 
--   ![number 3](/img/char-c.svg) 그룹화된 대상의 CPU 및 Memory 관련 지표를 나타냅니다.
+-   ![number 3](/img/char-c.svg) It displays the metrics related to the CPU and memories for the grouped targets.
 
--   ![number 4](/img/char-d.svg) 그룹화된 대상 내부 애플리케이션의 트랜잭션 정보를 나타냅니다.
+-   ![number 4](/img/char-d.svg) It displays the transaction information for the applications in the grouped targets.
 
 ## Summary view and Detailed view
 
@@ -132,7 +132,7 @@ You can select an interested container or pod to view the summary and detailed i
 
 -   **Event**
 
-    컨테이너와 애플리케이션 실행 과정에서 발생하는 이벤트를 기록한 것을 의미합니다. 
+    It indicates recording the events that occur while running the containers and applications. 
 
 Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
 

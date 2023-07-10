@@ -9,14 +9,14 @@ sudo mkdir extension
 cat >extension/logsink.conf<<EOL
 [[inputs.logsink]]
   category = "serverlog"
-  ## 로그 발생량 통계 별도 데이터로 전송 여부
+  ## Whether or not to send the data with separate log generation statistics
   stats_enabled = true 
-  ## 로그 발생량 통계 카테고리
+  ## Category for log generation statistics
   stats_category = "logsink_stats"
-  ## 로그 파일 경로(path)에 별표(*)가 포함되어 제외할 로그 비대상 파일명 설정 
+  ## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
   excludeNames = [ ".gz",".zip" ] 
   [[inputs.logsink.file]]
-    ## 로그 파일 지정 시, 날짜 패턴(strftime.org) 지정 가능
+    ## When setting a log file, you can set the date pattern (strftime.org).
     path = "/some/path/%Y-%m-%d/.log" 
     disabled = false
     encoding = "euc-kr"
@@ -27,9 +27,8 @@ cat >extension/logsink.conf<<EOL
     encoding = "utf-8"
 
   [[inputs.logsink.file]]
-    ## 줄 단위 로그에서 해당 키워드 검색 시, 이전 로그에 병합
-    nowrap_keywords = ["Caused by:", "Test"]
-EOL
+    ## When searching for the keyword in the line-by-line log, merge it with the previous log.
+    nowrap_keywords = ["Caused by:", "Test"]EOL
 
 sudo service whatap-infra restart
 ```
@@ -37,25 +36,26 @@ sudo service whatap-infra restart
 ### Windows Powershell
 
 ```bash title='Windows Powershell' {7-11,14,15,19,20} showLineNumbers
-# 관리자 권한 필요
+# Require an Administarotr role
 New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
 
 $contentToAdd = @"
 [[inputs.logsink]]
 category = "serverlog"
-## 로그 발생량 통계 별도 데이터로 전송 여부
+## Whether or not to send the data with separate log generation statistics
 stats_enabled = true 
-## 로그 발생량 통계 카테고리
+## Category for log generation statistics
 stats_category = "logsink_stats"
-## 로그 파일 경로(path)에 별표()가 포함되어 제외할 로그 비대상 파일명 설정 
+## Set the log non-target file names to be excluded with asterisk (*) in the log file path 
 excludeNames = [ ".gz",".zip" ] 
 [[inputs.logsink.file]]
-## 로그 파일 지정 시, 날짜 패턴(strftime.org) 지정 가능
+## When setting a log file, you can set the date pattern (strftime.org).
 path = "c:\\whatap\\logs%Y-%m-%d_.log"
 disabled = false
 encoding = "euc-kr"
+
 [[inputs.logsink.file]]
-## 줄 단위 로그에서 해당 키워드 검색 시, 이전 로그에 병합
+## When searching for the keyword in the line-by-line log, merge it with the previous log. 
 nowrap_keywords = ["Caused by:", "Test"]
 "@
 

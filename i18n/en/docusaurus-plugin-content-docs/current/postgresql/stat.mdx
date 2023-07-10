@@ -9,40 +9,29 @@ tags:
   - Statistics
 ---
 
-:::note
+import Note from '../common-items/_import_v2-note.mdx';
 
-This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/stat).
+<Note product='PostgreSQL' link='../postgresql-v1/stat' />
 
-:::
-
-import ProdImg from '@site/src/components/ChangeImgName.js';
-
-<!-- 개요-->
+<!-- Overview-->
 
 {@include: ../common-items/_db-stat-desc.mdx}
 
-<!-- SQL 통계-->
+<!-- SQL statistics-->
 
 {@include: ../common-items/_db-stat-sql-desc.mdx}
 
 <!-- Basic usage guide for SQL statistics -->
 
-{@include: ../common-items/_db-stat-sql-basic.mdx}  
+{@include: ../common-items/_db-stat-sql-basic.mdx}
 
-<!-- 쿼리별 수행 추이, 자세히 보기-->
+<!-- Execution trends for each query, See details-->
 
 {@include: ../common-items/_db-stat-sql-view-query.mdx}  
 
 ### Column information guide
 
-| Item              | Description                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------- |
-| execute count     | SQL execution count                                                                      |
-| elapse avg (sec)  | Average SQL execution time (sec) that is the result value of `elapse sum/execute count`. |
-| elapse sum (sec)  | Sum of SQL execution times (sec)                                                         |
-| elapse max (sec)  | Maximum SQL execution time (sec)                                                         |
-| elapse wait (sec) | SQL queued time (sec)                                                                    |
-| instance          | Instance Name                                                                            |
+{@include: ../common-items/_db-sql-stat-column.mdx}
 
 ## PG SQL Statistics
 
@@ -178,6 +167,6 @@ If the filter is released, select ![Delete icon](/img/ico-remove-white.svg) in *
 
 {@include: ../common-items/_db-data-edit-column.mdx} 
 
-<!-- 데이터베이스 사이즈-->
+<!-- Database size-->
 
-{@include: ../common-items/_db-databasesize-desc.mdx} 
+{@include: ../common-items/_db-databasesize-desc.mdx}

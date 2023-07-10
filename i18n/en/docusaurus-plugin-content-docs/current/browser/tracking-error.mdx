@@ -58,19 +58,19 @@ The browser error has the following information:
 
 -   **_stack_**: Error stack information. The error stack basically contains obfuscated file names, lines, and columns.
 
-## 소스맵 업로드 및 에러 코드 제공{#check-errorcode}
+## Source map uploading and error code provision{#check-errorcode}
 
 If the released frontend code is obfuscated or compressed, it is difficult to provide the collected browser error's stack information at an actual code level. You can access the file or code line that caused the browser error through the source-map built at the time of releasing the frontend code.
 
-1.  **_에러 스택_** 컬럼의 **_분석_** 버튼을 선택하세요.
+1.  In the **_error stack_** column, select **_Analysis_**.
 
-    ![에러 로그](/img/browser-error-stack-btn-analysis.png)
+    ![Error log](/img/browser-error-stack-btn-analysis.png)
 
-2.  선택한 에로 로그의 에러 스택 정보를 확인할 수 있는 창이 나타나면 **_Upload_** 버튼을 선택하세요.
+2.  If the window in which the error stack information for the selected error log is displayed appears, select **_Upload_**.
 
-    ![에러 스택](/img/browser-error-stack-upload.png)
+    ![Error stack](/img/browser-error-stack-upload.png)
 
-3.  해당 코드 스택에 대한 소스맵을 로드하세요.
+3.  Load the source map for the code stack.
 
 4.  By comparing obfuscated stack information with JavaScript source map, you can see the code where the actual error occurred.
 

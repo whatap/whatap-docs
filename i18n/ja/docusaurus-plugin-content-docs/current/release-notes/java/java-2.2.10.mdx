@@ -4,47 +4,47 @@ title: Java Agent v2.2.10
 toc_max_heading_level: 2
 ---
 
-2023년 6월 29일
+2023년6月29日
 
 ## 新機能 <sup><Status>New</Status></sup>
 
--   Apache HttpClient5 추적
+-   Apache HttpClient5追跡
 
--   logback-1.2.8 추적
+-   logback-1.2.8追跡
 
     ```ini title='whatap.conf'
-    # 기본값 
-    # 적용방법
+    # デフォルト値 
+    # 適用方法
     weaving=logback-1.2.8
 
-    # logback에서 수집할 error_stack 길이
+    # logbackで収集するerror_stack長さ
     logback_stack_depth=50
 
-    # 콘솔 로그 수집 여부
+    # コンソールログの収集有無
     logback_save_console_enabled=true
 
-    # appender 로그 수집 여부
+    # appenderログの収集有無
     logback_save_appender_enabled=false
 
-    # 특정 appneder 로그만 수집하고 싶은 경우, 구분자는 쉼표(,)
+    # 特定appnederログのみを収集したい場合、区切り文字はコンマ(,)
     logback_save_appender_set=fileLogback,errorLogback,consoleLogback
     ```
 
     :::note
 
-    전체 appender를 수집하는 경우라면 `logback_save_appender_set` 설정은 불필요합니다.
+    全体のappenderを収集する場合、`logback_save_appender_set`設定は不要です。
 
     :::
 
--   Ribbon 추적
+-   Ribbon追跡
 
     ```ini title='whatap.conf'
-    # 적용
+    #適用
     weaving=ribbon
     ```
 
 ## バグ修正 <sup><Status>Fixed</Status></sup>
 
--   weblogic-10.3, tomcat 6 트랜잭션 추적 시 에러를 발생하지 않도록 수정
+-   weblogic-10.3、tomcat 6トランザクション追跡時にエラーが発生しないように修正
 
--   애플리케이션의 TPS가 500을 넘는 경우 연계추적 아이디 발급 비율이 높아지지 않도록 수정
+-   アプリケーションのTPSが500を超える場合、連携追跡IDの発行比率が高くならないように修正

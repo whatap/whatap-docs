@@ -1,6 +1,6 @@
 ---
 id: supported-spec
-title: Javaサポート環境
+title: サポート環境
 description: WhaTapモニタリングサービスが動作するJVMアプリケーションサーバーの基本仕様について説明します。
 tags:
   - Java
@@ -8,41 +8,102 @@ tags:
   - MySQL
 ---
 
+## Javaエージェント動作環境
+
 エージェントをインストールする前に、JVMアプリケーションサーバーが次の仕様を満たしていることを確認してください。
 
-Web Application Server（WAS）だけでなく、デーモンやバッチ アプリケーションなど、JVMで動作するすべてのアプリケーションに適用できます。Java 1.5以下は[support@whatap.io](mailto:support@whatap.io)に問い合わせるか[次の文書]](add-jvm-opt/java-under-ver)を参照してください。
+Web Application Server（WAS）だけでなく、デーモンやバッチ アプリケーションなど、JVMで動作するすべてのアプリケーションに適用できます。Java 1.5以下はsupport@whatap.ioに問い合わせるか[次の文書]](add-jvm-opt/java-under-ver)を参照してください。
 
-## JVM
+-   **対応バージョン**
 
-| サポート範囲          | 環境   | OS             | JVMバージョン          |
-| --------------- | ---- | -------------- | ----------------- |
-| Fully support   | Java | JVMで起動するすべてのOS | Java6以降, Java17以下 |
-| Limited support | Java | JVMで起動するすべてのOS | Java1.5以下         |
+    | サポート範囲          | 環境   | OS名                       | JVMバージョン                  |
+    | --------------- | ---- | ------------------------- | ------------------------- |
+    | Fully support   | Java | JVMで起動するすべてのOS            | Java6以降, Java17以下         |
+    | Limited support | Java | JVMで起動するすべてのOS            | Java1.5以下                 |
 
-## Web Application Server (WAS)
+-   **OS**
 
-Tomcat、JBoss、JEUS、WebLogic、WebSphereなどJava EE Specを準拠するすべてのApplication Server、[次のリンク](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html)を参照ください。
+    -   HP-UX 11.x 32ビット、64ビット
 
-## Framework / Library
+    -   Itanium 64ビット
 
--   Spring Boot Project
--   Netty, Akka HTTPおよびPlay Frameworkなどの非同期Framework
--   その他、Java EE Specに準拠するApplication Serverで動作するすべてのライブラリ
+    -   Oracle Solaris 2.8、2.9、10、11 32ビット、64ビット
 
-## DataSource
+    -   x86 Intel Linux 32ビット
 
--   Generic JDBC (any JDBC compliant driver)
--   DB2 JDBC
--   Derby JDBC
--   H2 JDBC
--   jTDS JDBC
--   MariaDB JDBC
--   Microsoft SQL Server JDBC
--   MySQL mysql-connector-java
--   Oracle ojdbc14, ojdbc5, ojdbc6, ojdbc7, ojdbc8
--   Postgres JDBC
--   Tibero
--   Jedis Redis driver
+    -   Red Hat Itanium 64ビット
+
+    -   Microsoft Windows 2000、XP、2003、2008、7、8
+
+    :::note
+
+    JDK 6를 설치할 수 있는 모든 운영체제를 지원합니다.
+
+    :::
+
+-   **アプリケーションサーバー**
+
+    -   BEA WebLogic 9.x、10.x、11.x、12.x
+
+    -   Tmaxsoft JEUS 6.x、7.x
+
+    -   SUN Application Server 8.x、9.x
+
+    -   Fujitsu Interstage 5.x、6.x、7.x
+
+    -   Hitachi Cosminexus 7.x、8.x、9.x
+
+    -   Apache Jakarta Tomcat 6.x、7.x、8.x
+
+    -   Caucho Technology Resin 3.x、4.x
+
+    -   Red Hat JBoss Application Server 6.x、7.x
+
+    -   GlassFish 3.x、4.x、5.x
+
+    :::note
+
+    이외 Java EE Spec을 준수하는 모든 애플리케이션 서버를 지원합니다. [다음 링크](https://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html)를 참조하세요.
+
+    :::
+
+-   **프레임워크** / **라이브러리**
+
+    -   Spring Boot Project
+
+    -   Netty, Akka HTTPおよびPlay Frameworkなどの非同期Framework
+
+    :::note
+
+    이외 Java EE Spec을 준수하는 Application Server에서 동작하는 모든 라이브러리를 지원합니다.
+
+    :::
+
+-   **データベース**
+
+    -   Generic JDBC (any JDBC compliant driver)
+
+    -   DB2 JDBC
+
+    -   Derby JDBC
+
+    -   H2 JDBC
+
+    -   jTDS JDBC
+
+    -   MariaDB JDBC
+
+    -   Microsoft SQL Server JDBC
+
+    -   MySQL mysql-connector-java
+
+    -   Oracle ojdbc14, ojdbc5, ojdbc6, ojdbc7, ojdbc8
+
+    -   Postgres JDBC
+
+    -   Tibero
+
+    -   Jedis Redis driver
 
 ## 共通サポート環境
 

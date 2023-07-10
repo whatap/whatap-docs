@@ -9,16 +9,12 @@ tags:
   - Database Monitoring
 ---
 
-:::note
-
-This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/metrics-intro).
-
-:::
-
-import ProdImg from '@site/src/components/ChangeImgName.js';
 import Variable from '@site/src/components/Variable.js';
 import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
 import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
+import Note from '../common-items/_import_v2-note.mdx';
+
+<Note product='PostgreSQL' link='../postgresql-v1/metrics-intro' />
 
 <!-- Overview -->
 
@@ -28,12 +24,12 @@ import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.
 
 <ProdImg img='metrics-example-00.png' desc=''/>
 
-<!-- View Metrics Chart -->
+<!-- View Metrics Chart-->
 
 {@include: ../common-items/_metrics-intro-look-up-chart.mdx}  
 
 <LookupchartDesc metric='Checkpoint_write_time' category='db_postgresql_counter' />
 
-<!-- View Metrics Raw Data -->
+<!-- View Metrics Raw Data-->
 
 {@include: ../common-items/_metrics-intro-look-up-raw-data.mdx}  

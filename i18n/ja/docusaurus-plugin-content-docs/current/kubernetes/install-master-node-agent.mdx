@@ -101,13 +101,13 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-check-version.svg)
 
-2.  **_エージェントインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンを選択してください。
+2.  **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンを選択してください。
 
     ![](/img/k8s-download-yaml.png)
 
   :::note
 
-  마스터 에이전트 자원 사용은 컨테이너 수 증가에 따라 영향을 받을 수 있습니다. 기본값으로 설정된 메모리 limit(350MB) 이상으로 자원을 사용할 경우 OOM(Out Of Meomory)이 발생할 수 있습니다. 사용자가 _YAML_ 파일을 통해 해당 설정을 변경할 수 있습니다.
+  マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。デフォルト値で設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
 
   :::
 
@@ -116,17 +116,17 @@ oc create -f whatap_openshift_scc.yaml
 2.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
 
     ```bash
-    # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように修正してください。
+    # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように変更してください。
     kubectl apply -f {whatap_kube_X.YZ.yaml}
     ```
 
     :::note
 
-    **WhaTapエージェントは、プロジェクト情報を記憶するために少量のPersistent Volume(PV)が必要です。**パブリッククラウド環境のK8Sでは、Persistent Volume Claim(PVC) リクエストだけでPVが自動的に作成できますが、プライベート環境の場合は、WhaTapのPVCリクエストを受信できるPVが作成されて後に、コマンドを実行してください。
+    **WhaTapエージェントは、プロジェクト情報を記憶するために少量のPersistent Volume(PV)が必要です。**パブリッククラウド環境のK8Sでは、Persistent Volume Claim(PVC) リクエストのみでPVが自動的に作成できますが、プライベート環境の場合は、WhaTapのPVCリクエストを受信できるPVが作成された後に、コマンドを実行してください。
 
     :::
 
-Kubernetes APIを利用して、エージェントが作成(create)されたのか確認できます。
+Kubernetes APIを利用して、エージェントが作成(create)されたことが確認できます。
 
 ![](/img/k8s-install-agent-check.svg)
 
@@ -140,13 +140,13 @@ kubectl get pod -n whatap-monitoring
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
-**STATUS**項目が**Running**の場合は、インストール済みです。マスターおよびNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューからパフォーマンス情報を収集することを確認してください。
+**STATUS**項目が**Running**の場合は、インストールは完了です。マスターとNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューからパフォーマンス情報を収集することを確認してください。
 
 #### Running状態でない場合
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-マスターNodeで次のコマンドを実行して、Pod(pod) 生成の失敗原因を特定してください。実行結果の下部の**Events:**項目を確認してください。
+マスターNodeで次のコマンドを実行して、Pod(pod) 生成の失敗した原因を特定します。実行結果の下部の**Events:**項目を確認してください。
 
 ```bash
 kubectl describe pod {POD_NAME} -n whatap-monitoring
@@ -156,7 +156,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::tip
 
-`kubectl`コマンド使用時`-n {ネームスペース}`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
+`kubectl`コマンドの使用時`-n {ネームスペース}`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
 
 :::
 
@@ -168,7 +168,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 1.  Kubernetesモニタリングのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択します。
 
-2.  ダウンロードした_YAML_ファイルを使用してエージェントを作成してください。
+2.  ダウンロードした_YAML_ファイルを使用して、エージェントを作成してください。
 
     ```bash
     kubectl -f whatap_kube_fargate.yaml apply
@@ -178,7 +178,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 ## クラスターのネームスペースの確認
 
-エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)の画面左側のメニューからプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
+エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)の画面の左側のメニューからプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
 
 </TabItem>
 
@@ -186,7 +186,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::note
 
--   アプリケーションエージェントのインストールを進めるには、画面右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参照してください。
+-   アプリケーションエージェントのインストールを進めるには、画面の右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参照してください。
 -   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

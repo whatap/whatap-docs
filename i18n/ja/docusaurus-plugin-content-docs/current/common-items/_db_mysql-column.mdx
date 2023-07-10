@@ -1,0 +1,59 @@
+## カラム情報の案内{#column-info}
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| 項目                | 説明                                                          |
+| ----------------- | ----------------------------------------------------------- |
+| `Instance Name`   | インスタンス名                                                     |
+| `id`              | connection識別子                                               |
+| `user`            | SQL実行アカウント                                                  |
+| `host`            | このスレッドが接続されたhostname                                        |
+| `db`              | default database名、 ない場合はNULL                                |
+| `command`         | 実行中のコマンドtype（Query/Sleep/Daemonなど）                          |
+| `time`            | 現在COMMANDの遂行時間（秒）                                           |
+| `state`           | スレッドの現在の状態（executing/updating/sending dataなど）               |
+| `query`           | 実行されているstatementです。`Processlist.info`からリテラル値を除外したSQLを表示します。 |
+| `query_param`     | `query`から分離したリテラル値                                          |
+| `type`            | Threadのタイプ。 FOREGROUND/BACKGROUNDなど                         |
+| `connection_type` | Connectionをする時に使用されるprotocol。 TCP/IP, SSL/TLS               |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| 項目             | 説明                        |
+| -------------- | ------------------------- |
+| `holder type`  | holderセッションのtype          |
+| `lock mode`    | holder_mode               |
+| `waiter type`  | waiterセッションのtype          |
+| `lock request` | waiter_mode               |
+| `state`        | 現在プロセスが進行中の状態です。          |
+| `table`        | holder_table/waiter_table |
+| `index`        | holder_index/waiter_index |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+次の項目は、XOSエージェントをインストールした場合に収集される指標です。
+
+| 項目         | 説明                                      |
+| ---------- | --------------------------------------- |
+| `cputime`  | CPU使用時間                                 |
+| `cpuusage` | CPU使用率                                  |
+| `elapse`   | CPU使用経過時間                               |
+| `vsize`    | 仮想メモリサイズ(Kb)                            |
+| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理的ページ数 |
+| `state`    | プロセス状態                                  |
+| `ioread`   | ブロックの読み取りに費やされた実際時間(milliseconds)       |
+| `iowrite`  | ブロックの書き込みに費やされた実際時間(milliseconds)       |
+| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが占める共有メモリの比率     |
+| `uid`      | user id                                 |
+| `cmd`      | 実行中のコマンド                                |
+| `longcmd`  | cmdのフルパス                                |
+
+</TabItem>
+
+</Tabs>

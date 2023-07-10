@@ -319,10 +319,6 @@
     "message": "Management",
     "description": "The label for the doc item 관리하기 in sidebar dotNetSidebar, linking to the doc dotnet/agent-manage"
   },
-  "sidebar.goSidebar.category.Golang 모니터링": {
-    "message": "Golang Monitoring",
-    "description": "The label for category Golang 모니터링 in sidebar goSidebar"
-  },
   "sidebar.goSidebar.category.설정하기": {
     "message": "Configuration",
     "description": "The label for category 설정하기 in sidebar goSidebar"
@@ -438,10 +434,6 @@
   "sidebar.dboracleSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar dboracleSidebar, linking to the doc oracle/monitoring-support"
-  },
-  "sidebar.mysqlSidebar.category.MySQL 모니터링": {
-    "message": "MySQL Monitoring",
-    "description": "The label for category MySQL 모니터링 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.설치하기": {
     "message": "Installation",
@@ -763,10 +755,6 @@
     "message": ".NET",
     "description": "The label for category .NET in sidebar releaseSidebar"
   },
-  "sidebar.releaseSidebar.category.Golang": {
-    "message": "Golang",
-    "description": "The label for category Golang in sidebar releaseSidebar"
-  },
   "sidebar.releaseSidebar.category.Server": {
     "message": "Server",
     "description": "The label for category Server in sidebar releaseSidebar"
@@ -835,10 +823,6 @@
     "message": ".NET",
     "description": "The label for link .NET in sidebar indexSidebar, linking to dotnet/introduction"
   },
-  "sidebar.indexSidebar.link.Golang": {
-    "message": "Golang",
-    "description": "The label for link Golang in sidebar indexSidebar, linking to golang/introduction"
-  },
   "sidebar.indexSidebar.link.Server": {
     "message": "Server",
     "description": "The label for link Server in sidebar indexSidebar, linking to server/introduction"
@@ -857,7 +841,7 @@
   },
   "sidebar.indexSidebar.link.MySQL": {
     "message": "MySQL",
-    "description": "The label for link MySQL in sidebar indexSidebar, linking to mysql/monitoring-intro"
+    "description": "The label for link MySQL in sidebar indexSidebar, linking to mysql-v1/monitoring-intro"
   },
   "sidebar.indexSidebar.link.MS SQL Server": {
     "message": "MS SQL Server",
@@ -1359,10 +1343,6 @@
     "message": "Browser",
     "description": "The label for link Browser in sidebar indexSidebar, linking to browser"
   },
-  "sidebar.releaseSidebar.link..NET Agent 지난 버전": {
-    "message": "Previous .NET agent versions",
-    "description": "The label for link .NET Agent 지난 버전 in sidebar releaseSidebar, linking to https://deprecated-docs.whatap.io/kr/releasenotes/#net-agent-release-notes"
-  },
   "sidebar.rumsSidebar.category.Browser 모니터링": {
     "message": "Browser Monitoring",
     "description": "The label for category Browser 모니터링 in sidebar rumsSidebar"
@@ -1454,5 +1434,73 @@
   "sidebar.indexSidebar.link.AWS Log": {
     "message": "AWS Log",
     "description": "The label for link AWS Log in sidebar indexSidebar, linking to aws-log/introduction"
+  },
+  "sidebar.goSidebar.category.Go 모니터링": {
+    "message": "Go Monitoring",
+    "description": "The label for category Go 모니터링 in sidebar goSidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.MySQL 모니터링 V1": {
+    "message": "MySQL Monitoring V1",
+    "description": "The label for category MySQL 모니터링 V1 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.설치하기": {
+    "message": "Installation",
+    "description": "The label for category 설치하기 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.설정하기": {
+    "message": "Configuration",
+    "description": "The label for category 설정하기 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.주요 메뉴 알아보기": {
+    "message": "Learn about the main features",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.대시보드": {
+    "message": "Dashboard",
+    "description": "The label for category 대시보드 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.Flex 보드": {
+    "message": "Flex Board",
+    "description": "The label for category Flex 보드 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.분석": {
+    "message": "Analytics",
+    "description": "The label for category 분석 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.메트릭스": {
+    "message": "Metrics",
+    "description": "The label for category 메트릭스 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.통계/보고서": {
+    "message": "STAT/REPORT",
+    "description": "The label for category 통계/보고서 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.category.알림 설정하기": {
+    "message": "Alert Settings",
+    "description": "The label for category 알림 설정하기 in sidebar mysqlv1Sidebar"
+  },
+  "sidebar.mysqlv1Sidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar mysqlv1Sidebar, linking to /apidoc/openapi-intro"
+  },
+  "sidebar.mysqlv1Sidebar.doc.지원 환경": {
+    "message": "Support Environment",
+    "description": "The label for the doc item 지원 환경 in sidebar mysqlv1Sidebar, linking to the doc mysql-v1/monitoring-support"
+  },
+  "sidebar.mysqlSidebar.category.MySQL 모니터링 V2": {
+    "message": "MySQL Monitoring V2",
+    "description": "The label for category MySQL 모니터링 V2 in sidebar mysqlSidebar"
+  },
+  "sidebar.mysqlSidebar.doc.Log 모니터링": {
+    "message": "Log Monitoring",
+    "description": "The label for the doc item Log 모니터링 in sidebar mysqlSidebar, linking to the doc log/learn-main-menu"
+  },
+  "sidebar.releaseSidebar.category.Go": {
+    "message": "Go",
+    "description": "The label for category Go in sidebar releaseSidebar"
+  },
+  "sidebar.indexSidebar.link.Go": {
+    "message": "Go",
+    "description": "The label for link Go in sidebar indexSidebar, linking to golang/introduction"
   }
 }

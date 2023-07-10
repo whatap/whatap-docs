@@ -27,10 +27,6 @@
     "message": ".NET Monitoring",
     "description": "Navbar item with label .NET 모니터링"
   },
-  "item.label.Golang 모니터링": {
-    "message": "Golang Monitoring",
-    "description": "Navbar item with label Golang 모니터링"
-  },
   "item.label.Server 모니터링": {
     "message": "Server Monitoring",
     "description": "Navbar item with label Server 모니터링"
@@ -46,10 +42,6 @@
   "item.label.Oracle 모니터링": {
     "message": "Oracle Monitoring",
     "description": "Navbar item with label Oracle 모니터링"
-  },
-  "item.label.MySQL 모니터링": {
-    "message": "MySQL Monitoring",
-    "description": "Navbar item with label MySQL 모니터링"
   },
   "item.label.MS SQL Server 모니터링": {
     "message": "MS SQL Server Monitoring",
@@ -139,10 +131,6 @@
     "message": ".NET",
     "description": "Navbar item with label .NET"
   },
-  "item.label.Golang": {
-    "message": "Golang",
-    "description": "Navbar item with label Golang"
-  },
   "item.label.Server": {
     "message": "Server",
     "description": "Navbar item with label Server"
@@ -218,5 +206,21 @@
   "item.label.AWS Log": {
     "message": "AWS Log",
     "description": "Navbar item with label AWS Log"
+  },
+  "item.label.Go 모니터링": {
+    "message": "Go Monitoring",
+    "description": "Navbar item with label Go 모니터링"
+  },
+  "item.label.MySQL 모니터링 V1": {
+    "message": "MySQL Monitoring V1",
+    "description": "Navbar item with label MySQL 모니터링 V1"
+  },
+  "item.label.MySQL 모니터링 V2": {
+    "message": "MySQL Monitoring V2",
+    "description": "Navbar item with label MySQL 모니터링 V2"
+  },
+  "item.label.Go": {
+    "message": "Go",
+    "description": "Navbar item with label Go"
   }
 }

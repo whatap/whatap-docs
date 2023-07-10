@@ -21,7 +21,7 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
 
     limitの設定値より大きい値を持つプロセス情報を収集します。K bytes単位で10240は10M bytesです。
 
-<InDoc product='postgresql'>
+<InDoc product='postgresql,mysql'>
 
 -   **file** <span class='type'>String</span>
 
@@ -30,13 +30,5 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
     ```ini title='xos.conf'
     file = /opt/postgresql/logs/postgresql.log
     ```
-
-    :::note
-
-    -   このオプションはDBXエージェント1.6.7バージョン以降に対応しています。
-
-    -   **_ログ_**メニューの詳細については、[次の文書]](log/learn-main-menu)を参照してください。
-
-    :::
 
 </InDoc>
