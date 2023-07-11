@@ -1,28 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import checkProduct from '@site/src/components/CheckProduct';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate, { translate } from "@docusaurus/Translate";
+// import ImageError from "@site/src/components/imageError.js"
 
-const ImageChecker = ({ imageUrl }) => {
+function checkImage(imgURL) {
+  // console.log('check: ' + imgURL)
   const [imageExists, setImageExists] = React.useState(false);
-
-  const {
-    i18n: {currentLocale},
-  } = useDocusaurusContext();
-
-  const product = checkProduct();
-  let fext = imageUrl.substr(imageUrl.lastIndexOf('.') + 1);
-  let fileName = imageUrl.replace('.' + fext, '');
-  let imgFilePath;
-  if (currentLocale != 'ko') {
-      imgFilePath = useBaseUrl('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
-  } else {
-      imgFilePath = useBaseUrl('/img/' + fileName + product + '.' + fext);
-  }
-
-  React.useEffect(() => {
+  useEffect(() => {
     const img = new Image();
-    img.src = imgFilePath;
+    img.src = imgURL;
 
     const handleImageLoad = () => {
       setImageExists(true);
@@ -39,29 +27,73 @@ const ImageChecker = ({ imageUrl }) => {
       img.removeEventListener('load', handleImageLoad);
       img.removeEventListener('error', handleImageError);
     };
-  }, [imgFilePath]);
+  }, [imgURL]);
 
-  console.log(imageExists);
-  console.log("last: " + imgFilePath);
+  return imageExists;
+}
 
-  const productImg = useBaseUrl('/img/' + fileName + product + '.' + fext);
-  const defaultImg = useBaseUrl('/img/' + imageUrl);
+const ImageChecker = ({ img, desc, className }) => {
+  const {
+    i18n: {currentLocale},
+  } = useDocusaurusContext();
 
-  function onError(e) {
-    if (currentLocale != 'ko') {
-      e.target.src = '/' + currentLocale + '/img/' + fileName + product + '.' + fext;
-    } else {
-      e.target.src = '/img/' + fileName + product + '.' + fext;
-    }
+  const product = checkProduct();
+  let fext = img.substr(img.lastIndexOf('.') + 1);
+  let fileName = img.replace('.' + fext, '');
+  let imgFilePath, curChk;
+  if (currentLocale != 'ko') {
+      imgFilePath = useBaseUrl('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
+      curChk = true; // 다국어일 경우
+  } else {
+      imgFilePath = useBaseUrl('/img/' + fileName + product + '.' + fext);
+      curChk = false; // 베이직 언어일 경우
   }
+  let imageExists = checkImage(imgFilePath);
+  
+  let prodImage = useBaseUrl('/img/' + fileName + product + '.' + fext);
+  let basicImage = useBaseUrl('/img/' + fileName + '.' + fext);
+
+  let prodExists = checkImage(prodImage);
+  let basicExists = checkImage(basicImage);
+
+  // console.log(imageExists);
+  // console.log("last: " + imgFilePath);
+  
   return (
-    <div>
+    <p>
       {imageExists ? (
-        <img src={imgFilePath} alt="이미지" onError={(e) => onError1(e)}/>
+        <img 
+          src={imgFilePath} 
+          alt={desc} 
+          className={className} 
+        />
+      ) : ( prodExists ? (
+        <img 
+          src={prodImage} 
+          alt={desc} 
+          className={className} 
+        />
+      ) : ( basicExists ? (
+        <img 
+          src={basicImage} 
+          alt={desc} 
+          className={className}
+        />
       ) : (
-        <p>이미지를 찾을 수 없습니다.</p>
-      )}
-    </div>
+        <span class='imgError'>
+          {
+            translate({
+              id: "component.imageErrorMessage",
+              message: "!!이미지가 없습니다. 사이트 관리자에게 문의하세요!!",
+              description: "No images. Contact site manager.",
+            })
+          }
+        </span>
+        // <ImageError/>
+      )
+      ))
+      }
+    </p>
   );
 };
 
