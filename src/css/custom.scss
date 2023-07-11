@@ -946,6 +946,13 @@ main {
     span.k8s-normal {color: rgb(153, 153, 153)}
     span.snormal {color: #00b543}
     span.vpcbold{font-weight: 500}
+    span.imgError {
+      background-color: #f7c5c5;
+      display: block;
+      text-align: center;
+      padding: 9px 0;
+      font-weight: bold;
+    }
     .mark {
       width: 20px;
       vertical-align: text-top;

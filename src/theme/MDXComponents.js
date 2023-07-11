@@ -4,7 +4,7 @@ import MDXComponents from '@theme-original/MDXComponents';
 import InDoc from '@site/src/components/InDoc.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 import TR from '@site/src/components/TR';
-import ProdImg from '@site/src/components/ChangeImgName.js';
+import ProdImg from '@site/src/components/ImagepathbyProduct.js';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DocCardList from '@theme/DocCardList';
@@ -13,7 +13,6 @@ import UI from '@site/src/components/UItext';
 import ImgLang from '@site/src/components/ChangeImgNamebyLocale.js'
 import Link from '@docusaurus/Link';
 import LinkImage from '@site/src/components/LinkImage.js';
-import ProdImgtest from '@site/src/components/ImagepathbyProduct.js';
 
 export default {
   // 기본 mapping 재사용
@@ -30,5 +29,4 @@ export default {
   ImgLang,
   Link,
   LinkImage,
-  ProdImgtest,
 };
