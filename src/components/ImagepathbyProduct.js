@@ -13,11 +13,13 @@ const ImageChecker = ({ imageUrl }) => {
   const product = checkProduct();
   let fext = imageUrl.substr(imageUrl.lastIndexOf('.') + 1);
   let fileName = imageUrl.replace('.' + fext, '');
-  let imgFilePath;
+  let imgFilePath, curChk;
   if (currentLocale != 'ko') {
       imgFilePath = useBaseUrl('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
+      curChk = true; // 다국어일 경우
   } else {
       imgFilePath = useBaseUrl('/img/' + fileName + product + '.' + fext);
+      curChk = false; // 베이직 언어일 경우
   }
 
   React.useEffect(() => {
@@ -45,10 +47,9 @@ const ImageChecker = ({ imageUrl }) => {
   console.log("last: " + imgFilePath);
 
   if (imageExists == false) {
-    console.log("1111111")
+    let productImg = useBaseUrl('/img/' + fileName + product + '.' + fext);
   }
 
-  const productImg = useBaseUrl('/img/' + fileName + product + '.' + fext);
   const defaultImg = useBaseUrl('/img/' + imageUrl);
 
   function onError(e) {
@@ -61,7 +62,7 @@ const ImageChecker = ({ imageUrl }) => {
   return (
     <div>
       {imageExists ? (
-        <img src={imgFilePath} alt="이미지" onError={(e) => onError1(e)}/>
+        <img src={imgFilePath} alt="이미지" onError={(e) => onError1(e, imgFilePath)}/>
       ) : (
         <p>이미지를 찾을 수 없습니다.</p>
       )}
