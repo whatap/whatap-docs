@@ -44,6 +44,10 @@ const ImageChecker = ({ imageUrl }) => {
   console.log(imageExists);
   console.log("last: " + imgFilePath);
 
+  if (imageExists == false) {
+    console.log("1111111")
+  }
+
   const productImg = useBaseUrl('/img/' + fileName + product + '.' + fext);
   const defaultImg = useBaseUrl('/img/' + imageUrl);
 
