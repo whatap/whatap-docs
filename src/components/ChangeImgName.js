@@ -34,3 +34,7 @@ export default function ChangeImgName({img, desc, className}) {
         </p>
     );
 }
+
+// agent-setting.png
+// 국문일 경우 agent-setting-java.png (e) => agent-setting.png
+// 다국어일 경우 agent-setting-java-en.png (e) => agent-setting-java.png (e) => agent-setting.png

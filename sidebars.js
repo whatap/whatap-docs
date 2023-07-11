@@ -3022,14 +3022,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_10',
+                id: 'release-notes/java/java-2_2_11',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_10',
+                  id: 'release-notes/java/java-2_2_11',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_10',
                 'release-notes/java/java-2_2_9',
                 'release-notes/java/java-2_2_8',
                 'release-notes/java/java-2_2_7',
@@ -3038,7 +3039,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_4',
                 'release-notes/java/java-2_2_3',
                 'release-notes/java/java-2_2_2',
-                'release-notes/java/java-2_2_0',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3070,7 +3070,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_77',
@@ -3079,7 +3079,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_77',
-                  className: 'new',
+                  // className: 'new',
                 },
               ]
             },
@@ -3091,14 +3091,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_4_0',
+                id: 'release-notes/python/python-1_4_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_4_0',
+                  id: 'release-notes/python/python-1_4_1',
                   className: 'new',
                 },
+                'release-notes/python/python-1_4_0',
                 'release-notes/python/python-1_3_9',
                 'release-notes/python/python-1_3_6',
                 'release-notes/python/python-1_3_4',
@@ -3107,7 +3108,6 @@ const sidebars = {
                 'release-notes/python/python-1_3_1',
                 'release-notes/python/python-1_3_0',
                 'release-notes/python/python-1_2_4',
-                'release-notes/python/python-1_2_1',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3144,7 +3144,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_2_2',
@@ -3153,7 +3153,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_2_2',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_1_14',
                 'release-notes/golang/golang-0_1_13',
