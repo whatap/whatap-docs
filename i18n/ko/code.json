@@ -417,5 +417,9 @@
   "component.imageErrorMessage": {
     "message": "!!이미지가 없습니다. 사이트 관리자에게 문의하세요!!",
     "description": "No images. Contact site manager."
+  },
+  "whatap_plugin.sharefacebook": {
+    "message": "이 페이지 공유하기",
+    "description": "Sharing this page"
   }
 }

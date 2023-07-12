@@ -587,6 +587,23 @@ code {
 .medium-zoom-image--opened {
   z-index: 999;
 }
+.fb-share-button {
+  height: 100%;
+}
+.fb-xfbml-parse-ignore {
+  line-height: 100%;
+  padding-left: 24px;
+}
+.fb-xfbml-parse-ignore::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background: url('img/share-fb.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: -3px;
+  margin-left: -27px;
+} 
 // UI
 
 // document

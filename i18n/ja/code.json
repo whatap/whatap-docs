@@ -417,5 +417,9 @@
   "component.imageErrorMessage": {
     "message": "!!No images. Contact site manager!!",
     "description": "No images. Contact site manager."
+  },
+  "whatap_plugin.sharefacebook": {
+    "message": "Sharing this page",
+    "description": "Sharing this page"
   }
 }
