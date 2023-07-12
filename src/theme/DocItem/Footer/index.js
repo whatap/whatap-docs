@@ -15,7 +15,9 @@ function TagsRow(props) {
   const faceURL = "https://www.facebook.com/sharer/sharer.php?u=" + curLocation + "&src=sdkpreparse";
   const {metadata} = useDoc();
   const {editUrl, lastUpdatedAt, formattedLastUpdatedAt, lastUpdatedBy, tags} = metadata;
-
+  const onPopup = () => {
+    window.open(faceURL, '', 'width=430, height=500, location=no, status=no, scrollbars=yes');
+  }
   return (
     <div
       className={clsx(
@@ -28,7 +30,8 @@ function TagsRow(props) {
           )
         }
       </div>
-      <div class="fb-share-button" data-href={curLocation} data-layout="" data-size=""><a target="_blank" href={faceURL} class="fb-xfbml-parse-ignore">
+      <div class="fb-share-button" data-href={curLocation} data-layout="" data-size="">
+        <button type="button" className="fb-xfbml-parse-ignore" onClick={onPopup}>
           {
             translate({
               id: "whatap_plugin.sharefacebook",
@@ -36,7 +39,8 @@ function TagsRow(props) {
               description: "Sharing this page",
             })
           }
-      </a></div>
+        </button>
+      </div>
     </div>
     
   );

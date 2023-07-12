@@ -593,17 +593,13 @@ code {
 .fb-xfbml-parse-ignore {
   line-height: 100%;
   padding-left: 24px;
-}
-.fb-xfbml-parse-ignore::before {
-  content: " ";
-  display: inline-block;
-  position: absolute;
+  font-size: .9rem;
+  border: none;
+  padding: 5px 5px;
+  padding-left: 30px;
   background: url('img/share-fb.svg') no-repeat;
-  width: 24px;
-  height: 24px;
-  margin-top: -3px;
-  margin-left: -27px;
-} 
+  color: var(--ifm-link-color);
+}
 // UI
 
 // document
