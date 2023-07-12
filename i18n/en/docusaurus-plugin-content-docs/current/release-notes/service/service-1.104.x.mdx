@@ -6,149 +6,149 @@ toc_max_heading_level: 2
 
 ## Service 1.104.11
 
-2023년 7월 7일
+July 7, 2023
 
 <div class='indentTab'>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 차트로 마우스 호버 시 동시에 여러 차트의 데이터가 표시되도록 수정</p>
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, modified to display data from multiple charts at the same time when hovering your mouse on the <UI>Testing event rules</UI> chart.</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Feature</Status> <UI>애플리케이션 에이전트 설치</UI> 메뉴에 <b>Docker PHP</b> 항목 추가</p>
+<p><Status>Feature</Status> In <UI>Application Agent Installation</UI>, added the <b>Docker PHP</b> item.</p>
 
 </div>
 
 ## Service 1.104.10
 
-2023년 7월 6일
+July 6, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 즐겨찾기 기능 사용 시 사이드 바 메뉴에 추가되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, fixed the issue where it is not added to the sidebar menu when using the Dashboard Favorite function.</p>
 
 * * *
 
 ### `Application`
 
-<p><Status>Change</Status> <UI>통계</UI>, <UI>히트맵</UI> 메뉴에서 검색 기능(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)을 사용하면 시간 선택자의 <UI>최근 검색 시간</UI> 목록에 최근 검색 시간을 추가하도록 변경</p>
+<p><Status>Change</Status> In <UI>Statistics</UI> and <UI>HITMAP</UI>, if you use the search function (<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>), modified to add the recent search time in the <UI>Last Time Searched</UI> list of the time selector.</p>
 
 </div>
 
 ## Service 1.104.09
 
-2023년 7월 6일
+July 6, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 조직에 속한 프로젝트 메뉴에서 새로고침 시 무한 로딩 현상 수정</p>
+<p><Status>Fixed</Status> Fixed the infinite loading problem when refreshing in the project menu within the organization.</p>
 
 </div>
 
 ## Service 1.104.08
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Change</Status> 비밀번호 유효성 체크 로직 변경</p>
+<p><Status>Change</Status> Modified the password validation logic.</p>
 
--   최소 9자리의 영어 소문자 및 대문자, 숫자, 특수 문자 중 3종류 이상
+-   Use at least 9 characters with 3 combinations among English lowercase and uppercase letters, numbers, and special characters.
 
--   이메일과 동일한 비밀번호 사용 불가
+-   The same password as your email cannot be used.
 
--   기존에 사용한 비밀번호와 동일한 비밀번호 사용 불가
+-   The same password as the one you used cannot be used.
 
--   연속된 키보드 배열이 포함된 비밀번호 사용 불가
+-   A password containing consecutive keyboard arrangements is not allowed.
 
--   연속된 알파벳이 포함된 비밀번호 사용 불가
+-   A password containing consecutive alphabets is not allowed.
 
--   연속된 숫자가 포함된 비밀번호 사용 불가
+-   A password containing consecutive numbers is not allowed.
 
--   현재 비밀번호와 동일한 비밀번호 사용 불가
+-   The same password as the current one cannot be used.
 
 </div>
 
 ## Service 1.104.07
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 다음 메뉴 경로에서 <UI>Key</UI> 검색 상자에 한글자만 입력하면 검색 상자 밖으로 포커스가 벗어나는 현상 수정</p>
+<p><Status>Fixed</Status> In the following menu path, fixed the problem where the focus goes out of the search box if you enter a single character in the <UI>Key</UI> search box.</p>
 
--   <UI>애플리케이션</UI> > <UI>인스턴스 성능 분석</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>Application</UI> > <UI>Instance performance analysis</UI> > <UI>Agent CONFIG.</UI> (Old versions)
 
--   <UI>관리</UI> > <UI>에이전트 설정</UI> > <UI>이전 버전</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>Management</UI> > <UI>Agent CONFIG.</UI> > <UI>Previous version</UI> > <UI>Agent CONFIG.</UI> (Old versions)
 
 </div>
 
 ## Service 1.104.06
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 실시간 조회 시 최초 호출을 제외한 업데이트 API 요청에 대해 60초 타임아웃 설정</p>
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, set the timeout of 60 seconds for API update requests except for the initial call during real-time query.</p>
 
 </div>
 
 ## Service 1.104.05
 
-2023년 7월 4일
+July 4, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 조회 버튼을 클릭하면 데이터가 출력되지 않고 로딩만 표시되는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Resource</UI> > <UI>Container volume</UI>, fixed the bug where no data is output and only loading is displayed if you click the Show button.</p>
 
 </div>
 
 ## Service 1.104.04
 
-2023년 7월 4일
+July 4, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 데이터가 출력되지 않고 무한 로딩되는 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Resource</UI> > <UI>Container volume</UI>, fixed the bug where no data is output and infinite loading happens.</p>
 
 </div>
 
 ## Service 1.104.03
 
-2023년 7월 3일
+July 3, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> 프로젝트 생성 후 자동으로 새로고침되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> Fixed the bug where automatic refreshing is not performed after creation of a project.</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> Python 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>에이전트 다운로드</UI> 섹션의 다운로드 명령어 수정
+-   <Status>Fixed</Status> In Python Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the download command in the <UI>Download agent</UI> section.
 
--   <Status>Fixed</Status> Java 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>JVM 옵션 추가</UI> 섹션의 JVM 옵션 코드 수정
+-   <Status>Fixed</Status> In Java Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the JVM option code in the <UI>Add JVM options</UI> section.
 
--   <Status>Fixed</Status> Node.js 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 Node.js 지원 버전 문구 수정
+-   <Status>Fixed</Status> In Node.js Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the Node.js support version message.
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 비교할 서버 선택하면 <UI>기간 조회</UI> 버튼이 활성화되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the <UI>Check period</UI> button is not activated if you select a server to compare in the <UI>Server list</UI> menu.
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 기록</UI> 메뉴에서 <UI>처리내역</UI> 추가 시 이벤트 ID가 DB에 저장되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event history</UI>, fixed the bug where the event ID is not stored in the database once <UI>Acknowledge</UI> has been added.
 
 </div>
 
@@ -282,9 +282,9 @@ June 28, 2023
 
 ### `Application`
 
--   <Status>Fixed</Status> 최근 30초 이내의 트랜잭션 로그 데이터가 조회되지 않는 현상 수정
+-   <Status>Fixed</Status> Fixed the issue where transaction log data within the last 30 seconds cannot be searched.
 
--   <Status>Fixed</Status> 서비스 화면의 언어가 영어로 설정된 상태에서 Python 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Virtual Environment 활성화</UI> 섹션에서 오타 수정
+-   <Status>Fixed</Status> Fixed the typo error in the <UI>Management</UI> > <UI>Agent Installation</UI> > <UI>Activate Virtual Environment</UI> section of the Python project with the language of the service screen set to English.
 
 * * *
 

@@ -1,18 +1,18 @@
 ---
 id: agent-webservice
-title: Web Service 추적
-description: .NET 애플리케이션 서버의 Web Service를 추적할 수 있습니다.
+title: Web service tracing
+description: You can trace web services in the .NET application servers.
 tags:
   - .NET
 ---
 
-.NET 애플리케이션 서버의 Web Service를 추적할 수 있습니다.
+You can trace web services in the .NET application servers.
 
 -   **webservice_method_enabled** <span class='type'>Boolean</span>
 
     Default `false`
 
-    값을 `true`로 설정하면 Web Service를 추적할 수 있습니다. 
+    If the value has been set to `true`, web services can be traced. 
 
     :::note
 
@@ -22,7 +22,7 @@ tags:
 
 -   **webservice_method_prefix** <span class='type'>String</span>
 
-    추적 대상이 되는 메소드의 이름을 네임스페이스와 함께 입력하세요. Web Service는 직접 추적할 수 없기 때문에 Web Service를 사용한 메소드를 직접 추적 대상으로 입력해야 합니다.
+    Enter the name of the method to be traced along with the namespace. Because web services cannot be directly traced, directly enter the method that has used the web services as a trace target.
 
     See the following example:
 
@@ -32,9 +32,9 @@ tags:
 
     :::caution
 
-    -   조건에 맞는 메소드가 Web Service를 사용하지 않아도 추적 대상이 됩니다. 다만 Web Service를 사용하는 메소드가 아니면 에러가 발생해도 에러는 검출되지 않고 트랜잭션이 끝나지 않은 상태로 유지될 수 있습니다.
+    -   The methods that meet the conditions are traced even if they do not use web services. However, if any methods do not use web services, when an error occurs, the error may not be detected and the transaction can remain unfinished.
 
-    -   메소드가 소속된 클래스까지만 입력하면 해당 클래스 내의 모든 메소드가 추적 대상이 됩니다.
+    -   If you enter just the class to which the method belongs, all methods within that class are to be traced.
 
     :::
 

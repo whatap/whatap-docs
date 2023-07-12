@@ -12,7 +12,7 @@ Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection
 
 ## Kubernetes logs
 
-와탭 쿠버네티스 모니터링 서비스는 쿠버네티스에서 발생하는 로그를 수집하고 저장합니다. 
+The WhaTap Kubernetes monitoring service collects and stores the logs that occur in Kubernetes. 
 
 <!-- 
 
@@ -32,7 +32,7 @@ These logs serve to compensate for monitoring blind spots that are difficult to 
 
 ## Recent log messages (Container Stdout/Stderr)
 
-현재 컨테이너 로그를 바로 확인할 수 있는 기능입니다. 사용자의 클러스터 환경에서 직접 로그를 가져와 선택한 컨테이너의 실시간 로그 또는 선택한 Pod 내 애플리케이션의 실시간 로그를 확인할 수 있습니다. 일반적으로 컨테이너 로그를 확인하기 위해서는 다음 명령어를 사용합니다.
+This function allows you to immediately check the current container logs. You can fetch logs directly from your cluster environment to view real-time logs for the selected containers or applications within the selected pods. To check the container logs, the following command is used.
 
 ```bash
 kubectl logs pod/<Pod명> -n <Namespace명>
@@ -56,33 +56,33 @@ Any good idea?
 
 ## Log Search
 
-컨테이너 종료 시 관련 로그가 모두 사라지지만 **_로그 검색_** 기능을 통해 선택한 컨테이너 또는 Pod에서 과거에 발생한 로그를 확인할 수 있습니다. 컨테이너 Standard Out 로그 저장 시 원하는 만큼 저장 기간을 설정할 수 있고 특정 대상별 정보를 확인하거나 상호 연계 분석을 할 수 있습니다. 
+All the related logs disappear when the container is shut down, but you can check the logs that have occurred on the selected container or pod through **_Log search_**. When storing the container Standard Out logs, you can set the storage period and check information for specific targets or perform correlation analysis. 
 
 ![Log search](/img/k8s-log-search.png)
 
--   ![number 1](/img/number-01.png) 시간 선택자를 통해 데이터 조회를 원하는 시점을 선택할 수 있습니다. 
+-   Through the ![number 1](/img/number-01.png) time selector, you can select a desired time for searching data. 
 
--   ![number 2](/img/number-02.png) 카테고리를 지정해 조회할 수 있습니다. 조회할 수 있는 카테고리에 대한 설명은 다음의 블록과 그룹 안내를 참조하세요.
+-   By defining the ![number 2](/img/number-02.png) category, you can search data. For more information about the categories that can be searched, see the following guide for blocks and groups.
 
--   ![number 3](/img/number-03.png) ![더보기 아이콘](/img/ic-caret-right.svg) **_더보기_** 아이콘을 선택하면 해당 로그의 파싱된 키와 값 및 로그 메시지를 확인할 수 있습니다. 자세한 내용은 [다음 문서](../log/log-search)를 참조하세요.
+-   If you select ![number 3](/img/number-03.png) ![More icon](/img/ic-caret-right.svg) **_More_**, the parsed key values and log messages can be displayed. For more information, see [the following](../log/log-search).
 
-#### 일반 블록과 마이크로 블록
+#### General blocks and micro blocks
 
 ![Container block sc](/img/k8s-block.png)
 
 -   ![a icon](/img/char-a.svg) **General block**
 
-    컨테이너 맵의 다각형 하나를 블록이라고 합니다. 로그의 `containerStdout` 카테고리에서 `containerid` 가 일치하는 정보를 확인할 수 있습니다.
+    A single polygon in the container map is called a block. In the `containerStdout` category of the log, you can see the information whose `containerid` matches.
 
 -   ![b icon](/img/char-b.svg) **Micro block**
 
-    에이전트가 설치된 블록을 마이크로 블록이라고 합니다. `containerStdout` 카테고리 뿐 아니라 `AppLog`, `AppStdOut`, `AppStdErr` 등 `App*` 관련 카테고리도 확인할 수 있습니다. 해당 카테고리를 선택할 경우 `microOid`(블록 내 에이전트 id)가 일치하는 로그 정보를 확인할 수 있습니다.
+    Blocks with agents installed are called microblocks. In addition to the `containerStdout` category, you can also see `App*` related categories such as `AppLog`, `AppStdOut`, and `AppStdErr`. If you select the category, you can see the logs that match `microOid` (agent ID in the block).
 
 #### Group
 
 ![Container block group sc](/img/k8s-container-group.png)
 
-**_컨테이너 맵_** 화면에서 전체 블록을 선택한 경우 혹은 **상세 보기** 화면의 카드에서 블록을 다중 선택한 경우 해당 다중 블록을 그룹이라고 합니다. 그룹 선택 시 **_로그 검색_** 탭에서 `containerStdout` 카테고리와 `App*` 카테고리의 모든 로그를 확인할 수 있습니다.
+When all blocks are selected on the **_Container map_** screen or multiple blocks are selected from the card on the **View Detailed** screen, the multiple blocks are called a group. When selecting a group, you can see all the logs in the `containerStdout` and `App*` categories in the **_Log search_** tab.
 
 :::caution
 
@@ -118,7 +118,7 @@ To save the container's standard output through the WhaTap log service, add the 
 
 ![Log search moving sc](/img/k8s-log-search-to-log-search.png)
 
-**_로그_** 탭 오른쪽에 **_로그 검색_** 버튼을 클릭하면 필터 기능 등을 통해 상세 조회할 수 있는 **_로그_** > **_로그 검색_** 메뉴로 이동합니다. 
+Click **_Log search_** on the right of the **_Log_** tab. **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
 
 :::note
 
