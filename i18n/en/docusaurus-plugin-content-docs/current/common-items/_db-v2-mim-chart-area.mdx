@@ -24,7 +24,7 @@ You can check and compare key metrics of multiple instances in a graph chart. Yo
 
 <InDoc product='mysql'>
 
--   **_SQL Executed_**: 인스턴스별 초당 SQL 수행 건수 합계입니다. It is based on the value of the `Questions` (total number of query requests) metric collected every 5 seconds.
+-   **_SQL Executed_**: Sum of SQL executions per second for each instance. It is based on the value of the `Questions` (total number of query requests) metric collected every 5 seconds.
 
 -   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
 
@@ -60,8 +60,8 @@ You can check and compare key metrics of multiple instances in a graph chart. Yo
 
 <InDoc product='mysql'>
 
--   **_Full Scan_**: 인스턴스별 테이블을 풀 스캔(full scan)한 휫수를 실시간 차트로 표시합니다.
+-   **_Full Scan_**: Displays the number of full scans for the tables per instance in a real-time chart.
 
--   **_tmp table_**: 인스턴스별 명령문을 실행하는 동안 서버에 의해 생성된 내부 임시 테이블의 수를 실시간 차트로 표시합니다.
+-   **_tmp table_**: Displays a real-time chart for internal temporary table counts created by the server during command execution for each instance.
 
 </InDoc>

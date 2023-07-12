@@ -21,7 +21,7 @@ The `container` category collects all custom labels set on the container's pods 
 | image            | Container image name                                                              |       -      |
 | imageHash        | Image hash value                                                                  |       -      |
 | imageId          | Image ID                                                                          |       -      |
-| k8s-app          | Pod의 레이블 k8s-app에 대한 값                                                            |       -      |
+| k8s-app          | Value for the pod's label k8s-app                                                 |       -      |
 | microOid         | Unique ID of the WhaTap APM agent installed in the container                      |       -      |
 | name             | Container name                                                                    |       -      |
 | namespace        | Namespace to which the container belongs                                          |       -      |
@@ -286,19 +286,19 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | agentOid             | Node agent's unique ID                                                                             | Unique value |
 | agentPcode           | pcode                                                                                              | Unique value |
 | command              | Execution command                                                                                  | -            |
-| containerIds         | Pod 에 속해있는 컨테이너 ID                                                                                 | -            |
-| containerIdsCount    | containerIds 의 개수                                                                                  | -            |
-| containerKeys        | Pod 에 속해있는 컨테이너 ID 의 해시 값                                                                          | -            |
-| containerKeysCount   | containerKeys 의 개수                                                                                 | -            |
-| DaemonSet            | Pod의 DaemonSet 이름                                                                                  | -            |
+| containerIds         | Container ID that belongs to the pod                                                               | -            |
+| containerIdsCount    | Number of containerIds                                                                             | -            |
+| containerKeys        | Hash value for the container ID that belongs to the pod                                            | -            |
+| containerKeysCount   | Number of containerKeys                                                                            | -            |
+| DaemonSet            | DaemonSet name of the pod                                                                          | -            |
 | Deployment           | Deployment                                                                                         | -            |
-| k8s-app              | Pod의 레이블 k8s-app에 대한 값                                                                             | -            |
-| microOid             | Pod 의 컨테이너 내부 애플리케이션에서 실행중인 에이전트의 id                                                               | -            |
-| microOids            | Pod 안의 복수개 컨테이너 내부 애플리케이션에서 실행 중인 에이전트의 복수개 id                                                     | -            |
-| microOidsCount       | microOids 의 개수                                                                                     | -            |
+| k8s-app              | Value for the pod's label k8s-app                                                                  | -            |
+| microOid             | ID of the agent running on the applications inside the pod's container.                            | -            |
+| microOids            | Multiple IDs of the agents running on applications inside multiple containers in the pod           | -            |
+| microOidsCount       | Number of microOids                                                                                | -            |
 | name                 | Pod Name                                                                                           | -            |
-| onames               | Pod 의 컨테이너 내부 애플리케이션에서 실행중인 에이전트의 명칭                                                               | -            |
-| onamesCount          | onames 의 개수                                                                                        | -            |
+| onames               | Name of the agent running on the applications inside the pod's container.                          | -            |
+| onamesCount          | Number of onames                                                                                   | -            |
 | podName              | Pod Name                                                                                           | -            |
 | namespace            | Namespace to which the Pod belongs                                                                 | -            |
 | namespaceHash        | Hash value of the namespace to which the Pod belongs                                               | -            |

@@ -16,177 +16,177 @@ toc_max_heading_level: 2
 
 ## Preview 1.105.07
 
-2023년 7월 7일
+July 7, 2023
 
 <div class='indentTab'>
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 차트로 마우스 호버 시 동시에 여러 차트의 데이터가 표시되도록 수정</p>
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, modified to display data from multiple charts at the same time when hovering your mouse on the <UI>Testing event rules</UI> chart.</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Feature</Status> <UI>애플리케이션 에이전트 설치</UI> 메뉴에 <b>Docker PHP</b> 항목 추가</p>
+<p><Status>Feature</Status> In <UI>Application Agent Installation</UI>, added the <b>Docker PHP</b> item.</p>
 
 </div>
 
 ## Preview 1.105.06
 
-2023년 7월 6일
+July 6, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
--   <Status>Fixed</Status> 조직에 속한 프로젝트 메뉴에서 새로고침 시 무한 로딩 현상 수정
+-   <Status>Fixed</Status> Fixed the infinite loading problem when refreshing in the project menu within the organization.
 
--   <Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 즐겨찾기 기능 사용 시 사이드 바 메뉴에 추가되지 않는 현상 수정
+-   <Status>Fixed</Status> In <UI>Flex Board</UI>, fixed the issue where it is not added to the sidebar menu when using the Dashboard Favorite function.
 
--   <Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 실시간 조회 시 최초 호출을 제외한 업데이트 API 요청에 대해 60초 타임아웃 설정
+-   <Status>Fixed</Status> In <UI>Flex Board</UI>, set the timeout of 60 seconds for API update requests except for the initial call during real-time query.
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 유효하지 않은 멀티 트랜잭션 ID가 노출되는 현상 수정
+-   <Status>Fixed</Status> Fixed the issue where invalid multi-transaction IDs are exposed in the <UI>Transaction Analysis</UI> window.
 
 * * *
 
 ### `Application`
 
-<p><Status>Change</Status> <UI>통계</UI>, <UI>히트맵</UI> 메뉴에서 검색 기능(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)을 사용하면 시간 선택자의 <UI>최근 검색 시간</UI> 목록에 최근 검색 시간을 추가하도록 변경</p>
+<p><Status>Change</Status> In <UI>Statistics</UI> and <UI>HITMAP</UI>, if you use the search function (<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>), modified to add the recent search time in the <UI>Last Time Searched</UI> list of the time selector.</p>
 
 </div>
 
 ## Preview 1.105.05
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Change</Status> 비밀번호 유효성 체크 로직 변경</p>
+<p><Status>Change</Status> Modified the password validation logic.</p>
 
--   최소 9자리의 영어 소문자 및 대문자, 숫자, 특수 문자 중 3종류 이상
+-   Use at least 9 characters with 3 combinations among English lowercase and uppercase letters, numbers, and special characters.
 
--   이메일과 동일한 비밀번호 사용 불가
+-   The same password as your email cannot be used.
 
--   기존에 사용한 비밀번호와 동일한 비밀번호 사용 불가
+-   The same password as the one you used cannot be used.
 
--   연속된 키보드 배열이 포함된 비밀번호 사용 불가
+-   A password containing consecutive keyboard arrangements is not allowed.
 
--   연속된 알파벳이 포함된 비밀번호 사용 불가
+-   A password containing consecutive alphabets is not allowed.
 
--   연속된 숫자가 포함된 비밀번호 사용 불가
+-   A password containing consecutive numbers is not allowed.
 
--   현재 비밀번호와 동일한 비밀번호 사용 불가
+-   The same password as the current one cannot be used.
 
 * * *
 
 ### `Container`
 
-<p><Status>Change</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 노드 에이전트 로그 설정을 사용자 편의성을 위해 옵션을 직접 입력하지 않고 버튼 클릭만으로 적용되도록 변경</p>
+<p><Status>Change</Status> In <UI>Log</UI> > <UI>Log setting</UI>, modified the node agent log setting so that it can be applied with a click instead of directly entering options for user convenience.</p>
 
 * * *
 
 ### `URL`
 
-<p><Status>Fixed</Status> <UI>URL 목록</UI> 메뉴의 <UI>URL 추가하기</UI> 기능 이용 시 <UI>확인 지역</UI> 섹션의 중복된 항목 제거</p>
+<p><Status>Fixed</Status> When using the <UI>Add URL</UI> function in <UI>URL list</UI>, deleted the duplicates in the <UI>Check location</UI> section.</p>
 
 </div>
 
 ## Preview 1.105.04
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 다음 메뉴 경로에서 <UI>Key</UI> 검색 상자에 한글자만 입력하면 검색 상자 밖으로 포커스가 벗어나는 현상 수정</p>
+<p><Status>Fixed</Status> In the following menu path, fixed the problem where the focus goes out of the search box if you enter a single character in the <UI>Key</UI> search box.</p>
 
--   <UI>애플리케이션</UI> > <UI>인스턴스 성능 분석</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>Application</UI> > <UI>Instance performance analysis</UI> > <UI>Agent CONFIG.</UI> (Old versions)
 
--   <UI>관리</UI> > <UI>에이전트 설정</UI> > <UI>이전 버전</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>Management</UI> > <UI>Agent CONFIG.</UI> > <UI>Previous version</UI> > <UI>Agent CONFIG.</UI> (Old versions)
 
 </div>
 
 ## Preview 1.105.03
 
-2023년 7월 4일
+July 4, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 조회 버튼을 클릭하면 데이터가 출력되지 않고 로딩만 표시되는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Resource</UI> > <UI>Container volume</UI>, fixed the bug where no data is output and only loading is displayed if you click the Show button.</p>
 
 </div>
 
 ## Preview 1.105.02
 
-2023년 7월 4일
+July 4, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
--   <Status>Change</Status> 시간 선택자의 에러 메시지 텍스트 스타일 수정
+-   <Status>Change</Status> Modified the error message text style in the time selector.
 
 #### Dashboard
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 SQL 바인드 암호화 해제 후 바인드 텍스트가 일부만 표시되는 버그 수정
+-   <Status>Fixed</Status> In the <UI>Transaction Analysis</UI> window, fixed the bug where the bind text is partially displayed after decrypting the SQL bind.
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 멀티 트랜잭션의 트랜잭션 분석 창을 재진입하면 <UI>레코드</UI> 탭에서 화이트 아웃 발생 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where a whiteout occurs in the <UI>Record</UI> tab when re-entering the <UI>Transaction Analysis</UI> window for multiple transactions.
 
 * * *
 
 #### Management
 
-<p><Status>Fixed</Status> <UI>조직 생성</UI> 메뉴에서 일본어 문구 수정</p>
+<p><Status>Fixed</Status> In <UI>Create organization</UI>, modified the Japanese texts.</p>
 
 ### `Log`
 
--   <Status>Fixed</Status> <UI>로그 설정</UI> 메뉴에서 로그 모니터링 메시지, 일본어 수정
+-   <Status>Fixed</Status> In <UI>Log setting</UI>, modified the log messages and Japanese texts.
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>로그</UI> > <UI>이벤트 추가</UI> 창에서 <UI>이벤트 대상 필터링</UI> 항목을 <UI>선택 입력</UI>으로 선택하면 나타나는 UI 버그 수정
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI> > <UI>Add Alert Policy</UI>, fixed the UI bug that appears when the <UI>Filtering event targets</UI> item is selected with <UI>Selector</UI>.
 
 </div>
 
 ## Preview 1.105.01
 
-2023년 7월 3일
+July 3, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> 프로젝트 생성 후 자동으로 새로고침되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> Fixed the bug where automatic refreshing is not performed after creation of a project.</p>
 
 #### Dashboard
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 트랜잭션 목록 조회 시 에이전트 필터가 적용되지 않는 버그 수정
+-   <Status>Fixed</Status> In the <UI>Transaction Analysis</UI> window, fixed the bug where the agent filter is not applied when the transaction list is searched.
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 로그 미 설정 프로젝트의 경우 트랜잭션 로그 탭이 노출되는 버그 수정
+-   <Status>Fixed</Status> In the <UI>Transaction Analysis</UI> window, fixed the bug where the transaction log tab is exposed for non-log projects.
 
 #### Flex Board
 
-<p><Status>Change</Status> 통합 Flex 보드 메뉴에서 대시보드의 모든 프로젝트에 대한 수정 권한이 없어도 공유 버튼을 노출하도록 수정</p>
+<p><Status>Change</Status> In Integrated Flex Board, modified to expose the Share button even if you have no Edit role for all projects in the dashboard.</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> Python 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>에이전트 다운로드</UI> 섹션의 다운로드 명령어 수정
+-   <Status>Fixed</Status> In Python Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the download command in the <UI>Download agent</UI> section.
 
--   <Status>Fixed</Status> Java 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>JVM 옵션 추가</UI> 섹션의 JVM 옵션 코드 수정
+-   <Status>Fixed</Status> In Java Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the JVM option code in the <UI>Add JVM options</UI> section.
 
--   <Status>Fixed</Status> Node.js 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 Node.js 지원 버전 문구 수정
+-   <Status>Fixed</Status> In Node.js Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the Node.js support version message.
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 비교할 서버 선택하면 <UI>기간 조회</UI> 버튼이 활성화되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the <UI>Check period</UI> button is not activated if you select a server to compare in the <UI>Server list</UI> menu.
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 기록</UI> 메뉴에서 <UI>처리내역</UI> 추가 시 이벤트 ID가 DB에 저장되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event history</UI>, fixed the bug where the event ID is not stored in the database once <UI>Acknowledge</UI> has been added.
 
 </div>
 
@@ -210,7 +210,7 @@ June 30, 2023
 
 ### `Application`
 
-<p><Status>Fixed</Status> 트랜잭션 모달의 <UI>로그</UI> 탭 스타일 수정</p>
+<p><Status>Fixed</Status> Modified the <UI>Log</UI> tab style in the transaction modal.</p>
 
 * * *
 
@@ -226,7 +226,7 @@ June 30, 2023
 
 ### `Database`
 
-<p><Status>New</Status> MySQL 모니터링 V2 서비스를 오픈했습니다. To check the features changed compared to the previous, see <a href='../../mysql/monitoring-intro#new-feature'>the following</a>.</p>
+<p><Status>New</Status> Opened the MySQL Monitoring V2 service. To check the features changed compared to the previous, see <a href='../../mysql/monitoring-intro#new-feature'>the following</a>.</p>
 
 * * *
 
