@@ -966,6 +966,19 @@ main {
       padding: 9px 0;
       font-weight: bold;
     }
+    span.set-noti {
+      padding: 1px 5px;
+      border-radius: 5px;
+      font-size: .85rem;
+      color: #fff;
+      font-weight: bold;
+    }
+    span.occur {
+      background-color: rgb(0, 181, 67);
+    }
+    span.resolve {
+      background-color: rgb(117, 117, 117);
+    }
     .mark {
       width: 20px;
       vertical-align: text-top;

@@ -247,6 +247,7 @@ const sidebars = {
               items: [
                 'java/warning-notice',
                 'java/metric-warning-notice',
+                'java/set-notification-message',
                 'java/hitmap-notice',
                 'java/set-event-detect-anomal',
                 'java/set-event-log',
@@ -480,6 +481,8 @@ const sidebars = {
               items: [
                 'php/warning-notice',
                 'php/metric-warning-notice',
+                'php/set-notification-message',
+                'php/set-notification-message',
                 'php/hitmap-notice',
                 'php/set-event-detect-anomal',
                 'php/set-event-log',
@@ -697,6 +700,7 @@ const sidebars = {
               items: [
                 'nodejs/warning-notice',
                 'nodejs/metric-warning-notice',
+                'nodejs/set-notification-message',
                 'nodejs/hitmap-notice',
                 'nodejs/set-event-detect-anomal',
                 'nodejs/set-event-log',
@@ -914,6 +918,7 @@ const sidebars = {
               items: [
                 'python/warning-notice',
                 'python/metric-warning-notice',
+                'python/set-notification-message',
                 'python/hitmap-notice',
                 'python/set-event-detect-anomal',
                 'python/set-event-log',
@@ -1115,6 +1120,7 @@ const sidebars = {
               items: [
                 'dotnet/warning-notice',
                 'dotnet/metric-warning-notice',
+                'dotnet/set-notification-message',
                 'dotnet/hitmap-notice',
                 'dotnet/set-event-detect-anomal',
                 'dotnet/set-event-log',
@@ -1302,6 +1308,7 @@ const sidebars = {
               items: [
                 'golang/warning-notice',
                 'golang/metric-warning-notice',
+                'golang/set-notification-message',
                 'golang/hitmap-notice',
                 'golang/set-event-detect-anomal',
                 'golang/set-event-log',
@@ -1457,6 +1464,7 @@ const sidebars = {
               items: [
                 'postgresql/warning-notice',
                 'postgresql/metric-warning-notice',
+                'postgresql/set-notification-message',
                 'postgresql/set-event-detect-anomal',
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
@@ -1611,6 +1619,7 @@ const sidebars = {
               items: [
                 'postgresql-v1/warning-notice',
                 'postgresql-v1/metric-warning-notice',
+                'postgresql-v1/set-notification-message',
                 'postgresql-v1/set-event-detect-anomal',
                 'postgresql-v1/set-receive-event',
                 'postgresql-v1/set-event-history',
@@ -1765,6 +1774,7 @@ const sidebars = {
               items: [
                 'oracle/warning-notice',
                 'oracle/metric-warning-notice',
+                'oracle/set-notification-message',
                 'oracle/set-event-detect-anomal',
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
@@ -1919,6 +1929,7 @@ const sidebars = {
               items: [
                 'mysql-v1/warning-notice',
                 'mysql-v1/metric-warning-notice',
+                'mysql-v1/set-notification-message',
                 'mysql-v1/set-event-detect-anomal',
                 'mysql-v1/set-receive-event',
                 'mysql-v1/set-event-history',
@@ -2068,6 +2079,7 @@ const sidebars = {
               items: [
                 'mysql/warning-notice',
                 'mysql/metric-warning-notice',
+                'mysql/set-notification-message',
                 'mysql/set-event-detect-anomal',
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
@@ -2214,6 +2226,7 @@ const sidebars = {
               items: [
                 'mssql/warning-notice',
                 'mssql/metric-warning-notice',
+                'mssql/set-notification-message',
                 'mssql/set-event-detect-anomal',
                 'mssql/set-receive-event',
                 'mssql/set-event-history',
@@ -2353,6 +2366,7 @@ const sidebars = {
               items: [
                 'tibero/warning-notice',
                 'tibero/metric-warning-notice',
+                'tibero/set-notification-message',
                 'tibero/set-event-detect-anomal',
                 'tibero/set-receive-event',
                 'tibero/set-event-history',
@@ -2506,6 +2520,7 @@ const sidebars = {
               items: [
                 'cubrid/warning-notice',
                 'cubrid/metric-warning-notice',
+                'cubrid/set-notification-message',
                 'cubrid/set-event-detect-anomal',
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
@@ -2645,6 +2660,7 @@ const sidebars = {
               items: [
                 'altibase/warning-notice',
                 'altibase/metric-warning-notice',
+                'altibase/set-notification-message',
                 'altibase/set-event-detect-anomal',
                 'altibase/set-receive-event',
                 'altibase/set-event-history',
@@ -2785,6 +2801,7 @@ const sidebars = {
               },
               items: [
                 'redis/metric-warning-notice',
+                'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
                 'redis/set-event-history',
@@ -2923,6 +2940,7 @@ const sidebars = {
               items: [
                 'mongodb/warning-notice',
                 'mongodb/metric-warning-notice',
+                'mongodb/set-notification-message',
                 'mongodb/set-event-detect-anomal',
                 'mongodb/set-receive-event',
                 'mongodb/set-event-history',
@@ -4948,6 +4966,7 @@ const sidebars = {
               items: [
                 'server/warning-notice',
                 'server/metric-warning-notice',
+                'server/set-notification-message',
                 'server/set-event-detect-anomal',
                 'server/set-event-log',
                 'server/set-receive-event',
@@ -5162,6 +5181,7 @@ const sidebars = {
               items: [
                 'kubernetes/container-warning-notice',
                 'kubernetes/metric-warning-notice',
+                'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
                 'kubernetes/set-event-log',
