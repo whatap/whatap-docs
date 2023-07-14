@@ -2953,6 +2953,15 @@ const sidebars = {
         'npm/compatibility',
         'npm/install-agent',
         'npm/set-tagrule',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/network-topology'
+          ],
+        }
       ],
     }
   ],
