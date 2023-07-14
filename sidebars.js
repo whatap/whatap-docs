@@ -1152,6 +1152,7 @@ const sidebars = {
       items: [
         'golang/supported-spec',
         'golang/install-agent',
+        'golang/api-guide',
         'golang/install-check',
         {
           type: 'category',
@@ -1164,11 +1165,16 @@ const sidebars = {
           },
           items: [
             'golang/agent-name',
+            'golang/agent-control-function',
+            'golang/agent-network',
+            'golang/agent-log',
             'golang/agent-transaction',
             'golang/agent-dbsql',
             'golang/agent-httpcall',
-            'golang/agent-method',
-            'golang/agent-number-of-user'
+            'golang/agent-number-of-user',
+            'golang/agent-apdex',
+            'golang/agent-static',
+            'golang/agent-library',
           ]
         },
         'golang/agent-manage',
