@@ -218,6 +218,7 @@ const sidebars = {
               items: [
                 'java/cube',
                 'java/analysis-apm',
+                'java/performance-trend',
                 'java/analysis-apm-trs',
                 {
                   type: 'category',
