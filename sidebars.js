@@ -2952,6 +2952,7 @@ const sidebars = {
       items: [
         'npm/compatibility',
         'npm/install-agent',
+        'npm/set-tagrule',
       ],
     }
   ],
