@@ -82,34 +82,30 @@ tags:
 
 1.  次を参考にして**_VPC_**と**_Subnets_**及び**_Security groups_**指定後、**_Save_**ボタンを選択して保存してください。
 
-  ![サブネットとセキュリティグループ]](/img/whatap-forwarder-vpc-sg.png)
+    ![サブネットとセキュリティグループ]](/img/whatap-forwarder-vpc-sg.png)
 
-  :::note
+    :::note
 
-  **Subnets**
+    **Subnets**
 
-```
-* **NAT Gateway**の**Public IP**を使い、**IGW**を通じてインターネットに接続してください。
+    * **NAT Gateway**の**Public IP**を使い、**IGW**を通じてインターネットに接続してください。
 
-* **IGW**を通じてインターネットに接続するためには、**Public IP**が必要です。Lambdaの*ENI*は、**Public IP**を割り当てることができません。
+    * **IGW**を通じてインターネットに接続するためには、**Public IP**が必要です。Lambdaの*ENI*は、**Public IP**を割り当てることができません。
 
-* **Private Subnet**、つまりインターネットGatewayに要請がすぐ行かずに**NAT Gateway**でアウトバウンドトラフィックがルーティングされるサブネットを選択する必要があります。
-* **Private Subnet**及び**Public Subnet**の**WhaTap Forwarder**
+    * **Private Subnet**、つまりインターネットGatewayに要請がすぐ行かずに**NAT Gateway**でアウトバウンドトラフィックがルーティングされるサブネットを選択する必要があります。
+    * **Private Subnet**及び**Public Subnet**の**WhaTap Forwarder**
 
-![サブネットsc](/img/whatap-forwarder-subnet.png)
-```
+    ![サブネットsc](/img/whatap-forwarder-subnet.png)
 
-  :::
+    :::
 
-  :::note
+    :::note
 
-  **Security groups**
+    **Security groups**
 
-```
-* **アウトバウンド**が開いているセキュリティグループが必要です。
-```
+    * **アウトバウンド**が開いているセキュリティグループが必要です。
 
-  :::
+    :::
 
 </div>
 
