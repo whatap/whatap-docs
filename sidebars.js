@@ -1090,8 +1090,8 @@ const sidebars = {
               },
               items: [
                 'dotnet/cube',
+                'dotnet/analysis-apm',
                 'dotnet/analysis-apm-trs',
-                // 'php/analysis-apm',
                 {
                   type: 'category',
                   label: '보고서',
@@ -3143,14 +3143,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_0',
+                id: 'release-notes/dotnet/dotnet-2_1_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_0',
+                  id: 'release-notes/dotnet/dotnet-2_1_1',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_0',
                 'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-2_0_7',
@@ -3159,7 +3160,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_0_4',
                 'release-notes/dotnet/dotnet-2_0_3',
                 'release-notes/dotnet/dotnet-2_0_2',
-                'release-notes/dotnet/dotnet-2_0_1',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3224,7 +3224,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_3_1',
@@ -3233,7 +3233,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_3_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_2_9',
                 'release-notes/k8s/k8s-1_2_8',
