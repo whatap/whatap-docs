@@ -2959,7 +2959,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'npm/network-topology'
+            'npm/network-topology',
+            'npm/network-trend-tcp'
           ],
         }
       ],

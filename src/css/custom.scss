@@ -1100,6 +1100,12 @@ main {
     img[alt*='light'], img[alt*='dark'] {
       background-color: #fff;
     }
+    img[src*='flexboard-time-set'] {
+      width: 306px;
+    }
+    img[src*='flexboard-time-set-pause.png'] {
+      width: 600px;
+    }
     ol {
       margin: 0;
       padding-top: 8px;
