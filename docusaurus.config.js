@@ -92,6 +92,10 @@ module.exports = Promise.resolve({
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -142,6 +146,9 @@ module.exports = Promise.resolve({
         insights: true,
       },
       image: 'https://www.whatap.io/img/og/whatap.png',
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
+      },
       metadata: [
         {
           name: 'keywords',
@@ -522,6 +529,13 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'npm',
+            position: "left",
+            label: 'NPM',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'extensions',
             position: 'left',
             label: '확장 도구',
@@ -569,7 +583,8 @@ module.exports = Promise.resolve({
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json' ],
+        // reference: https://prismjs.com/#supported-languages
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml' ],
         // 
       },
       zoom: {

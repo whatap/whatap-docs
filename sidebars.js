@@ -2963,6 +2963,57 @@ const sidebars = {
       ],
     }
   ],
+  npmsidebar: [
+    {
+      type: 'category',
+      label: 'NPM 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'npm',
+      },
+      items: [
+        'npm/compatibility',
+        'npm/install-agent',
+        'npm/set-tagrule',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/network-topology',
+            'npm/network-trend-tcp'
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/analysis-tcp-udp-sessions',
+          ],
+        },
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'npm/set-notice'
+          },
+          items: [
+            'npm/metric-warning-notice',
+            'npm/set-receive-event',
+            'npm/set-event-history',
+          ],
+        }
+      ],
+    }
+  ],
   previewSidebar: [
     {
       type: 'category',
