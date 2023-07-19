@@ -2962,6 +2962,30 @@ const sidebars = {
             'npm/network-topology',
             'npm/network-trend-tcp'
           ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/analysis-tcp-udp-sessions',
+          ],
+        },
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'npm/set-notice'
+          },
+          items: [
+            'npm/metric-warning-notice',
+            'npm/set-receive-event',
+            'npm/set-event-history',
+          ],
         }
       ],
     }
