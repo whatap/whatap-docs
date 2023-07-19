@@ -4764,7 +4764,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'browser/set-notics',
+            id: 'browser/set-notice',
           },
           items: [
             'browser/metric-warning-notice',
