@@ -587,19 +587,6 @@ code {
 .medium-zoom-image--opened {
   z-index: 999;
 }
-.fb-share-button {
-  height: 100%;
-}
-.fb-xfbml-parse-ignore {
-  line-height: 100%;
-  padding-left: 24px;
-  font-size: .9rem;
-  border: none;
-  padding: 5px 5px;
-  padding-left: 30px;
-  background: url('img/share-fb.svg') no-repeat;
-  color: var(--ifm-link-color);
-}
 // UI
 
 // document
@@ -638,6 +625,9 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
+    header + div[class*='fbsharebutton'] {
+      display: none;
+    }
     h1 {
       padding-top: 8px;
       &:first-child {
@@ -1693,6 +1683,16 @@ main {
     }
   }
 }
+@media (max-width: 996px) {
+  main {
+    .markdown > header + div[class*='fbsharebutton'] {
+      display: block;
+      margin-top: -15px;
+      margin-bottom: 9px;
+      position: relative;
+    }
+  }
+}
 @media all and (max-width: 1600px) {
   main {
     .markdown {
@@ -1760,7 +1760,6 @@ main {
   .flex-container-s {
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  
 }
 
 @media (max-width: 799px) and (max-width: 560px) {

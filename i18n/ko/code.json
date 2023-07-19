@@ -419,7 +419,7 @@
     "description": "No images. Contact site manager."
   },
   "whatap_plugin.sharefacebook": {
-    "message": "이 페이지 공유하기",
+    "message": "공유",
     "description": "Sharing this page"
   }
 }
