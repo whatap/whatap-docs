@@ -3194,14 +3194,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_1',
+                id: 'release-notes/dotnet/dotnet-2_1_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_1',
+                  id: 'release-notes/dotnet/dotnet-2_1_2',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-2_1_0',
                 'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-2_0_8',
