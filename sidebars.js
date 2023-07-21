@@ -78,7 +78,7 @@ const sidebars = {
             'java/agent-network',
             'java/agent-performance',
             'java/agent-log',
-            'java/agent-gc-log',
+            // 'java/agent-gc-log',
             'java/agent-transaction',
             'java/agent-dbsql',
             'java/agent-httpcapicall',
