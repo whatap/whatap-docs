@@ -2,6 +2,21 @@
 
 To use the **_Slow Query_** menu, set parameters and roles as follows.
 
+<InDoc product='mysql,mysql-v1'>
+
+### Configuring the whatap.conf file
+
+```ini title='whatap.conf'
+slow_query_log=ON
+```
+
+:::note
+
+-   If you have set `log_output=FILE` in DB server, you need to install XOS. For more information, see [the following](agent-xos-settings).
+-   RDS requires configuration to use CloudWatch instead of installing XOS. For more information, see [the following](agent-dbx-settings#using-aws-rds).
+
+:::
+
 ### Configuration of DB, parameters, and roles
 
 ```ini
@@ -20,15 +35,36 @@ grant select on mysql.slow_log to whatap;
 
 :::
 
-### Configuring the whatap.conf file
+</InDoc>
+
+<InDoc product='postgresql,postgresql-v1'>
+
+### Configuration of the DBX agent file
 
 ```ini title='whatap.conf'
 slow_query_log=ON
 ```
 
+### Configuration of the DB parameters
+
+```ini title='postgresql.conf'
+log_min_duration_statement = 500 # e.g. SQL logs that take more than 500 ms
+```
+
+### XOS agent configuration of the DB server
+
+Set as follows to adjust the collection cycle for slow queries.
+
+```ini title='xos.conf'
+slow_query_interval = 30 # Default 30 seconds
+```
+
 :::note
 
--   If you have set `log_output=FILE` in DB server, you need to install XOS. For more information, see [the following](agent-xos-settings).
--   RDS requires configuration to use CloudWatch instead of installing XOS. For more information, see [the following](agent-dbx-settings#using-aws-rds).
+-   The slow queries for RDS postgreSQL are not supported.
+
+-   To monitor slow queries, be sure to install the XOS agent on the DB server. For more information about the XOS agent installation, see [the following](agent-xos-settings).
 
 :::
+
+</InDoc>

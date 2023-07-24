@@ -9,110 +9,213 @@ tags:
 
 {@include: ../common-items/_transaction.mdx}
 
-## Transaction tracing
+:::note
 
-It traces all transactions from web requests to responses, and traces transactions for normal work units. It consists of the start and end functions. It is recognized as a single transaction, and you can check detailed views on the hitmap and statistical metrics such as TPS, response time, and average response time. 
+For more information about transactions, see [the following](track-transactions-intro). For guidance on the transaction analysis using the **_hitmap_**, see [the following](trs-view).
 
-Through the configuration in _whatap.conf_, it collects HTTP parameters and HTTP header data. The keys and values are collected up to 20 cases, and up to 256 bytes for each case.
+:::
 
-### whatap.conf configuration
+## Transaction Tracing
 
--   **grpc_profile_enabled** <span class='type'>Boolean</span>
+-   **profile_step_normal_count** <span class='type'>Int</span>
 
-    Default `true`
+    Default `1000`
 
-    Set whether or not to collect the Google Remote Call (gRPC) data.
+    Set the maximum step count for tracing transactions.
 
--   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
+-   **profile_step_max_count** <span class='type'>Int</span>
 
-    Default `true`
+    Default `1024`
 
-    Set whether or not to collect the client stream methods.
+    Set the maximum number of trace steps. If the number of collected trace steps exceeds this value, all steps collected later are ignored.
 
--   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
+    :::caution
 
-    Default `true`
+    If you increase the setting too high, the memory usage increases. We recommend that you do not change the default values. 
 
-    Set whether or not to collect the server stream methods.
+    :::
 
--   **grpc_profile_ignore_method** <span class='type'>String</span>
+-   **profile_step_heavy_count** <span class='type'>Int</span>
 
-    Default `agent`
+    Default `1000`
 
-    It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
+    If the collection number of basic steps is exceeded, only the steps whose execution time exceeds profile_step_heavy_time are collected. Set the count of the step that can be collected. In case of default settings, if `profile_step_normal_count` is 800, up to 200 steps are collected.
 
--   **grpc_profile_stream_method** <span class='type'>String</span>
+-   **profile_step_heavy_time** <span class='type'>Millisecond</span>
 
-    Configure the set stream method as a separate transaction. For multiple values, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search.
+    Default `100`
 
--   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
+    Set the criterion of heavy steps. If the execution time is greater than the set value and `profile_step_normal_count` is exceeded, recording is made within `profile_step_heavy_count`.
 
-    Default `false`
+-   **profile_basetime** <span class='type'>Millisecond</span>
 
-    The stream full method is collected as a transaction name, and a prefix that can distinguish the client and server for the same full method is added.
+    Default `500`
 
-    ```ini title='whatap.conf'
-    grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
-    ```
+    Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+-   **query_string_enabled** <span class='type'>Boolean</span>
 
     Default `false`
 
-    Set whether or not to collect HTTP parameters among the gRPC data.
+    It enables the function to collect query strings of the transaction URL together. It is applied to only the URLs registered in `whatap.query_string_urls`.
+
+-   **query_string_urls** <span class='type'>String</span>
+
+    Register URLs to collect query strings from every transaction.
+
+## HTTP transaction tracing
+
+-   **trace_normalize_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    It enables the function to convert and normalize transaction URLs.
+
+-   **trace_normalize_urls** <span class='type'>String</span>
+
+    Set the target URL to transform and normalize. It deletes the path parameter by transforming the call URL patterns.      
+
+    :::note
+
+    For example, if it is set as **/a/{v}/b**, the called transaction URLs are transformed to the **/a/{v}/b** format. To register multiple items, comma (,) is used as the delimiter.
+
+    :::
+
+-   **trace_ignore_url_set** <span class='type'>String</span>
+
+    Default `0`
+
+    If a specific URL is set, the corresponding transactions are excluded from tracing. The set URLs are not displayed in the transaction list because they do not collect transaction data. Set URLs to exclude from transaction tracing. To set multiple items, use comma (,) as the delimiter.
+
+-   **trace_ignore_url_prefix** <span class='type'>String</span>
+
+    Default `0`
+
+    It sets URL prefixes to exclude from the transaction tracing.
 
 -   **profile_http_header_enabled** <span class='type'>Boolean</span>
 
     Default `false`
 
-    Set whether or not to collect HTTP headers among the gRPC data.
+    It is used to record the HTTP headers in the trace history.
 
-## Web transaction trace
+-   **profile_http_header_ignore_keys** <span class='type'>String</span>
 
-```go title='GO'
-http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
-    ctx, _ := trace.StartWithRequest(r)
-    defer trace.End(ctx, nil)
-}
-```
+    Default `host,accept,user-agent,referer, accept-language, connection`
 
-Through the `trace.Func()` and `trace.HandlerFunc()` functions, requests are traced.
+    It is used to record HTTP headers in the profile details. The set HTTP header names are excluded from collection, and they are marked with "#."
 
-```go title='GO : trace.Func()'
-http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
-    ...
-}))
-```
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-```go title='GO : trace.HandlerFunc()'
-http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    ...
-}))
-```
+    Default `false`
 
-## General transaction trace
+    It is used to record HTTP parameters in the trace history. The parameters can be viewed by entering a separate security key. The name and value of the text type are collected among Get and Post parameters. Up to 40 items (20 Gets, 20 Posts) are collected, and parameter names and values are collected up to 256 bytes.
 
-```go title='GO'
-func main() {
-    ctx := context.Background()
-    ctx, _ := trace.Start(ctx, "Custom Transaction")
-    defer trace.End(ctx, nil)
-    ...
-}
-```
+    :::note
 
-## API
+    The security key is set to 6 characters within the `WHATAP_HOME`_/paramkey.txt_ file where the _whatap.conf_ file is located. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
 
-```go title='GO'
-func Start(ctx context.Context, name string) (context.Context, error)
+    :::
 
-func End(ctx context.Context, err error) error
+-   **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-func StartWithRequest(r *http.Request) (context.Context, error)
+    Default `/`
 
-func Step(ctx context.Context, title, message string, elapsed, value int) error
+    It is used to define the prefix of URL to record HTTP parameters in the trace details.
 
-func HandlerFunc(handler func(http.ResponseWriter, *http.Request)) http.HandlerFunc
+-   **profile_http_host_enabled** <span class='type'>Boolean</span>
 
-func Func(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request)
-```
+    Default `false`
+
+    The transation host is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, the output has the format of `/xxx.aaa.com/URL`.
+
+-   **biz_exceptions** <span class='type'>String</span>
+
+    Default `Empty`
+
+    Set a specific error or exception as business exception. It is not recorded as an error in the hitmap but collected in the statistics. It is applied the same as the error class name that is collected. Multiple items can be registered using comma (,) as the delimiter.
+
+-   **ignore_exceptions** <span class='type'>String</span>
+
+    Register any exceptions to ignore. The errors of the registered exceptions are ignored. The strings to be excluded are the strings for class items related to error types or error statistics in the profile.
+
+    The type of error that occurs in Go is displayed as a string.
+
+    ```go
+    thr.ErrorClassName = fmt.Sprintf("%T", err)
+    thr.ErrorMessage = err.Error()
+
+    # Output the error type
+
+    *errors.errorString
+    *echo.HTTPError
+    *url.Error
+    ```
+
+## Transaction tracing
+
+-   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+    Default `3000`
+
+    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+
+-   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+    Default `8000`
+
+-   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+    Default `30000`
+
+    If a transaction does not end within the timeout period (5 minutes), no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+
+-   **trace_useragent_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If the value is `true`, the user agent data for transactions is collected. 
+
+-   **trace_referer_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If the value is `true`, the referer data for transactions is collected.
+
+## Multiple transaction trace
+
+-   **mtrace_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It sets whether or not to use the multi-transaction tracing (MTID). By tracing the MTID, you can check the calls between all the registered applications.
+
+-   **mtrace_rate** <span class='type'>Percentage</span>
+
+    Default `10`
+
+    This option sets the issuance rate of the MTID (Multi Transaction ID) issued when the first transaction occurs.
+
+-   **mtrace_poid_key** <span class='type'>String</span>
+
+    Default `x-wtap-po`
+
+    Set the key name to deliver the caller project information to for MTID tracing.
+
+-   **mtrace_caller_key** <span class='type'>String</span>
+
+    Default `x-wtap-mst`
+
+    Set the caller key name to be used for MTID tracing.
+
+-   **mtrace_callee_key** <span class='type'>String</span>
+
+    Default `x-wtap-tx`
+
+    Set the callee key name to be used for MTID tracing.
+
+-   **mtrace_send_url_length** <span class='type'>Int</span>
+
+    Default `80`
+
+    The HTTP caller passes its URL to callees. At this time, the URL length is restricted. This sets the length value.

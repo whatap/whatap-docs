@@ -9,110 +9,213 @@ tags:
 
 {@include: ../common-items/_transaction.mdx}
 
-## トランザクションのトレース
+:::note
 
-ウェブリクエストとレスポンスまでのトランザクションと一般的なタスク単位のトランザクションの両方を追跡します。開始関数と終了関数で構成します。一つのトランザクションとして認識され、ヒートマップで詳細表示やTPS、レスポンス時間、平均レスポンス時間などの統計指標を確認することができます。 
+トランザクションの詳細については、[次の文書](track-transactions-intro)を参照してください。**_ヒートマップ_**を活用したトランザクション分析の案内については、[次の文書](trs-view)を参照してください。
 
-_whatap.conf_ファイル設定を通じてHTTP Parameter、HTTP Header情報を収集します。key, valueは最大20個、それぞれ256 byteまで収集します。
+:::
 
-### whatap.conf設定
+## トランザクショントレーシング
 
--   **grpc_profile_enabled** <span class='type'>Boolean</span>
+-   **profile_step_normal_count** <span class='type'>Int</span>
 
-    デフォルト値 `true`
+    デフォルト値 `1000`
 
-    gRPC(Google Remote Procedure Call、以下gRPC) 情報の収集有無を設定します。
+    トランザクショントレースの最大ステップ数を指定します。
 
--   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
+-   **profile_step_max_count** <span class='type'>Int</span>
 
-    デフォルト値 `true`
+    デフォルト値 `1024`
 
-    client stream method情報の収集有無を設定します。
+    収集可能なトレースステップの最大個数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
 
--   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
+    :::caution
 
-    デフォルト値 `true`
+    設定値を上げすぎると、メモリ使用量が増加します。デフォルト値を変更しないことをお勧めします。 
 
-    server stream method情報の収集有無を設定します。
+    :::
 
--   **grpc_profile_ignore_method** <span class='type'>String</span>
+-   **profile_step_heavy_count** <span class='type'>Int</span>
 
-    デフォルト値`agent`
+    デフォルト値 `1000`
 
-    設定した値に対するmethodを収集しません。複数登録するときはコンマ(,)を区切り文字として利用してください。
+    基本ステップの収集個数を超えると、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の場合、`profile_step_normal_count`が800であれば、最大200個のステップが収集されます。
 
--   **grpc_profile_stream_method** <span class='type'>String</span>
+-   **profile_step_heavy_time** <span class='type'>Millisecond</span>
 
-    設定したstream methodを別途のトランザクションとして構成します。複数登録するときは、コンマ(,)を区切り文字として利用してください。長時間続くstream接続に対して、それぞれのmethod呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。
+    デフォルト値`100`
 
--   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
+    Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
 
-    デフォルト値`false`
+-   **profile_basetime** <span class='type'>Millisecond</span>
 
-    Stream full methodをトランザクション名で収集し、同一のfull methodに対してclient、serverをｋ宇別できる接頭語を追加します。
+    デフォルト値`500`
 
-    ```ini title='whatap.conf'
-    grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
-    ```
+    トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただ、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+-   **query_string_enabled** <span class='type'>Boolean</span>
 
     デフォルト値`false`
 
-    gRPC情報の中でhttpパラメータ情報の収集有無を設定します。
+    トランザクションURLのクエリ ストリングを一緒に収集する機能を活性化します。`whatap.query_string_urls`に登録されたURLのみ適用されます。
+
+-   **query_string_urls** <span class='type'>String</span>
+
+    トランザクションからクエリストリングを収集するURLを登録します。
+
+## HTTPトランザクションの追跡
+
+-   **trace_normalize_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    トランザクションURLを変換して一般化する機能を有効にします。
+
+-   **trace_normalize_urls** <span class='type'>String</span>
+
+    トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。      
+
+    :::note
+
+    例、**/a/{v}/b**と設定すると、その形式で呼び出されたトランザクションURLは、**/a/{v}/b**形式として変換されます。複数登録するときはコンマ(,)を使います。
+
+    :::
+
+-   **trace_ignore_url_set** <span class='type'>String</span>
+
+    デフォルト値`0`
+
+    特定のURLを設定すると、トランザクション追跡対象から除外されます。設定されたURLはトランザクション情報を収集せず、トランザクション 一覧で確認できません。トランザクション追跡対象から除外するURLを指定します。2つ以上の値を指定する場合は、コンマ(,)を区切り文字として使用します。
+
+-   **trace_ignore_url_prefix** <span class='type'>String</span>
+
+    デフォルト値`0`
+
+    トランザクション追跡対象から除外するURL prefixを指定します。
 
 -   **profile_http_header_enabled** <span class='type'>Boolean</span>
 
     デフォルト値`false`
 
-    gRPC情報の中でhttpヘッダー情報の収集有無を設定します。
+    トレース履歴にHTTPヘッダーの情報を記録する場合に使用します。
 
-## Webトランザクション追跡
+-   **profile_http_header_ignore_keys** <span class='type'>String</span>
 
-```go title='GO'
-http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
-    ctx, _ := trace.StartWithRequest(r)
-    defer trace.End(ctx, nil)
-}
-```
+    デフォルト値`host,accept,user-agent,referer, accept-language, connection`
 
-`trace.Func()`、`trace.HandlerFunc()`関数を通じてRequestを追跡します。
+    HTTP Header名を指定して、収集する情報から除外する機能を追加しました。指定されたHTTP Header名の値は収集から除外され、"#"として表示されます。
 
-```go title='GO : trace.Func()'
-http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
-    ...
-}))
-```
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-```go title='GO : trace.HandlerFunc()'
-http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    ...
-}))
-```
+    デフォルト値`false`
 
-## ノーマルトランザクション追跡
+    トレース内訳にhtpパラメータ情報を記録したいときに使用します。パラメータは、別途のセキュリティ キーを入力しないと照会できません。Get、Postパラメータのうち、textタイプの名前と値を収集します。最大40個(Get 20個、Post 20個)を収集し、パラメータ名と値は最大256byteまで収集されます。
 
-```go title='GO'
-func main() {
-    ctx := context.Background()
-    ctx, _ := trace.Start(ctx, "Custom Transaction")
-    defer trace.End(ctx, nil)
-    ...
-}
-```
+    :::note
 
-## API
+    セキュリティキーは_whatap.conf_ファイルが位置した`WHATAP_HOME`_/paramkey.txt_ファイル内に６ケタで設定します。_paramkey.txt_ファイルが存在しない場合はランダムに自動生成されます。
 
-```go title='GO'
-func Start(ctx context.Context, name string) (context.Context, error)
+    :::
 
-func End(ctx context.Context, err error) error
+-   **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-func StartWithRequest(r *http.Request) (context.Context, error)
+    デフォルト値 `/`
 
-func Step(ctx context.Context, title, message string, elapsed, value int) error
+    トレース履歴にHTTPパラメータ情報を記録するために、対象URLのprefixを定義する場合に使用します。
 
-func HandlerFunc(handler func(http.ResponseWriter, *http.Request)) http.HandlerFunc
+-   **profile_http_host_enabled** <span class='type'>Boolean</span>
 
-func Func(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request)
-```
+    デフォルト値`false`
+
+    トランザクションのHost情報を出力します。値が`false`の場合、トランザクションのURLはURIのみ表示され、`true`の場合は、`/xxx.aaa.com/URL`形式で出力されます。
+
+-   **biz_exceptions** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒートマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
+
+-   **ignore_exceptions** <span class='type'>String</span>
+
+    無視するExceptionを登録します。ここに登録されると、エラー自体が無視されます。例外にする文字列は、プロファイルのエラーの種類またはエラー統計に関連するクラス項目の文字列です。
+
+    Goでは発生するerrorのTypeを文字列で表記します。
+
+    ```go
+    thr.ErrorClassName = fmt.Sprintf("%T", err)
+    thr.ErrorMessage = err.Error()
+
+    # error Type 出力
+
+    *errors.errorString
+    *echo.HTTPError
+    *url.Error
+    ```
+
+## トランザクションのトレース
+
+-   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+
+    デフォルト値 `3000`
+
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表記できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
+
+-   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+
+    デフォルト値 `8000`
+
+-   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+
+    デフォルト値`30000`
+
+    トランザクションの終了を待つ制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報をこの以上収集しません。トランザクションのトレース情報から"Lost Connection"を確認できます。
+
+-   **trace_useragent_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`の場合、トランザクションのユーザーエージェント情報を収集します。 
+
+-   **trace_referer_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`であれば、トランザクションのRefere情報を収集します。
+
+## マルチトランザクショントレース
+
+-   **mtrace_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    マルチトランザクション追跡機能(MTID)を使用するかどうかを設定します。MTIDを追跡すると、登録されたすべてのアプリケーション間の呼び出しを確認できます。
+
+-   **mtrace_rate** <span class='type'>Percentage</span>
+
+    デフォルト値`10`
+
+    最初のトランザクションが発生したときに発行されるMTID(Multi Transaction ID)の発行比率を設定するオプションです。
+
+-   **mtrace_poid_key** <span class='type'>String</span>
+
+    デフォルト値`x-wtap-po`
+
+    MTID追跡に使用するCallerプロジェクトの情報を伝達するKey Nameを設定します。
+
+-   **mtrace_caller_key** <span class='type'>String</span>
+
+    デフォルト値`x-wtap-mst`
+
+    MTID追跡に使用するCaller Key Nameを設定します。
+
+-   **mtrace_callee_key** <span class='type'>String</span>
+
+    デフォルト値`x-wtap-tx`
+
+    MTID追跡に使用するCallee Key Nameを定義します。
+
+-   **mtrace_send_url_length** <span class='type'>Int</span>
+
+    デフォルト値`80`
+
+    HTTP CallerはCalleeに自分のURLを渡します。この時、URLの長さを制限しています。この長さを指定します。

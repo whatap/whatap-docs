@@ -4,14 +4,61 @@ title: ユーザー数
 description: WASに接続したリアルタイムユーザー数を集計します。
 tags:
   - Go
+  - ユーザー
 ---
 
 Goウェブアプリケーションサーバーに接続したユーザーの数を集計します。
 
--   **trace_user_header_ticket** <span class='type'>String</span>
+-   **trace_user_enabled** <span class='type'>Boolean</span>
 
-    HTTP Headerの特定の値でユーザー数を集計する場合は、対応するキー値を設定します。
+    デフォルト値 `true`
+
+    リアルタイムユーザー集計の可否を設定します。値が 'true' に設定されている場合、IPアドレスまたはクッキーのいずれかでユーザーを追跡します。 
+
+-   **trace_user_using_ip** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    IPアドレスでリアルタイム ユーザーを判別する場合に設定します。 このデータは、Real Time Userで確認できます。 値が 'false' の場合、'trace_user_cookie_keys'オプションにあるクッキー名でユーザーを判別します。
 
 -   **trace_user_cookie_keys** <span class='type'>String</span>
 
-    設定したクッキーの値を固有のユーザー情報として選択します。複数登録するときは、コンマ(,)を区切り文字として利用してください。設定した順に検索します。
+    デフォルト値`empty`
+
+    cookie keyに対応する値をユーザー識別値として使用します。コンマ(_,_)を区切り文字として、複数の値を設定できます。
+
+-   **trace_user_header_ticket** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    ユーザーをHTTPヘッダーの特定の値で判別したい場合に使用するHTTP キーを設定します。HTTPキーが見つからない場合は、クッキーでユーザーを判別します。
+
+    :::note
+
+    `trace_user_using_ip`オプションと同時に適用することはできません。 
+
+    :::
+
+-   **trace_user_set_cookie** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    ユーザーを判別するには、クッキーに`WHATAP`キー名でユーザー判別値を設定します。`trace_user_header_ticket`オプションが設定された状態でヘッダーキーが見つからない場合に設定されます。HTTPキーが見つからない場合は、クッキーでユーザーを判別します。 
+
+    :::note
+
+    `trace_user_using_ip`オプションと同時に適用することはできません。 
+
+    :::
+
+-   **trace_http_client_ip_header_key** <span class='type'>String</span>
+
+    デフォルト値 `X-Forwarded-For`
+
+    クライアントIP(Remote IP)情報を特定HTTPヘッダーの値に変更して設定する機能です。プロキシ(Proxy)環境で`X-Forwarded-For`ヘッダーの値をクライアントIPとして設定できます。
+
+-   **trace_http_client_ip_header_key_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    値が`false`の場合、HTTP Headerは無視され、Remote IP値でクライアントIPを設定します。

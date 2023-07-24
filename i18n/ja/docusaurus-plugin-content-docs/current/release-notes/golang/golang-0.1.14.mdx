@@ -11,7 +11,7 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Fixed</Status> UDPサーバーが停止した状態でCPU使用率が増加する現象を修正
 
-    UDPサーバーが停止した状態（whatap-agentサービスが停止）で、Goモニタリングを適用したアプリケーションのCPU負荷が増加します。UDPサーバーへの接続と終了の処理が繰り返されることで、UDP接続が複数維持され、CPU使用量が増加します。
+    UDPサーバーが停止した状態(whatap-agentサービスが停止)で、Goモニタリングを適用するとアプリケーションのCPU負荷が増加します。UDPサーバーへの接続と終了の処理が繰り返されることで、UDP接続が複数維持され、CPU使用量が増加します。
 
 -   <Status>New</Status> k8s.io/client-go/kubernetesライブラリに対応
 

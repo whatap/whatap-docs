@@ -9,8 +9,40 @@ tags:
 
 アプリケーションサーバーの稼働中は、モニタリング情報を収集します。収集された情報はログファイルに保存されます。
 
-**log_keep_days** <span class='type'>Int</span>
+## ログの設定
+
+**log_keep_days** <span class='type'>Day</span>
 
   デフォルト値`7`
 
   ログファイルの保存期間を設定します。
+
+## ログシンク(LogSink) の設定
+
+ログデータを収集します。次の例を参照してください。
+
+```ini title='whatap.conf'
+logsink_enabled=true
+logsink_zip_enabled=true
+logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
+```
+
+### 基本設定
+
+-   **logsink_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値が`true`の場合、ログデータを収集します。
+
+-   **logsink_zip_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    値が`true`の場合、ログデータを圧縮して送信します。デフォルト値は、GZIPです。
+
+### ログファイル設定
+
+-   **logsink.files** <span class='type'>String</span>
+
+    収集するログファイルのすべての経路およびファイル名を設定できます。多数のファイルを設定するにはコンマ（、）を区切り文字として使ってください。

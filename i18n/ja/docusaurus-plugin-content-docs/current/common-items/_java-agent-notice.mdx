@@ -8,13 +8,13 @@
 
     デフォルト値`false`
 
-    サービス拒否(呼び出し負荷制限/拒絶) 時、イベント通知発行可否を設定します。
+    サービス拒否(呼び出し負荷制限/拒否) 時、イベント通知発行の可否を設定します。
 
 -   **reject_event_interval** <span class='type'>MiliSeconds</span>
 
     デフォルト値`300000`
 
-    サービス拒否(呼び出し負荷制限/拒絶) 時、イベント通知発行間隔を設定します。
+    サービス拒否(呼び出し負荷制限/拒絶) 時、イベント通知発行の間隔を設定します。
 
 -   **httpc_event_enabled** <span class='type'>Boolean</span>
 
@@ -32,7 +32,7 @@
 
     デフォルト値`false`
 
-    ヒープ使用量のしきい値に達したとき、イベント通知を発行するかどうかを設定します。
+    ヒープ使用量のしきい値に達した場合、イベント通知を発行するかどうかを設定します。
 
 -   **heap_event_percent** <span class='type'>Percentage</span>
 
@@ -60,7 +60,7 @@
 
     :::note
 
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
 
     :::
 
@@ -74,7 +74,7 @@
 
     デフォルト値`90`
 
-    ディスク使用量イベント通知発行基準しきい値を設定します。
+    ディスク使用量イベント通知発行基準のしきい値を設定します。
 
 -   **disk_event_interval** <span class='type'>MiliSeconds</span>
 
@@ -88,7 +88,7 @@
 
     :::note
 
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
 
     :::
 
@@ -102,27 +102,27 @@
 
     デフォルト値`90`
 
-    CPU使用量イベント通知発行基準しきい値を設定します。
+    CPU使用量のイベント通知を発行するしきい値を設定します。
 
 -   **cpu_event_duration** <span class='type'>MiliSeconds</span>
 
     デフォルト値`30000`
 
-    CPU使用量イベント通知の発行基準の持続時間を設定します。
+    CPU使用量のイベント通知を発行する持続時間を設定します。
 
 -   **cpu_event_interval** <span class='type'>MiliSeconds</span>
 
     デフォルト値`300000`
 
-    CPU使用量イベント通知の発行間隔を設定します。
+    CPU使用量のイベント通知を発行する間隔を設定します。
 
 -   **cpu_event_action** <span class='type'>String</span>
 
-    CPU使用量イベントが発生した場合、実行する動的ローディングコードを設定します。
+    CPU使用量のイベントが発生した場合、実行する動的ローディングコードを設定します。
 
     :::note
 
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
 
     :::
 
@@ -130,13 +130,13 @@
 
     デフォルト値`false`
 
-    DB Connectionが重複割り当てられる場合、イベント通知の発行可否を設定します。
+    DB Connectionが冗長に割り当てられる場合、イベント通知の発行可否を設定します。
 
 -   **dbc_dup_event_fullstack_enabled** <span class='type'>Boolean</span>
 
     デフォルト値`false`
 
-    DB Connectionが重複割り当てられる場合、Stackを確保するかどうかを設定します。
+    DB Connectionが重複して割り当てられる場合、Stackを確保するかどうかを設定します。
 
 -   **exception_event_enabled** <span class='type'>Boolean</span>
 
@@ -152,7 +152,7 @@
 
 -   **exception_event_set** <span class='type'>String</span>
 
-    対象Exceptionを設定します。複数の場合は、コンマ(,)を区切り文字として使用してください。
+    対象Exceptionを設定します。複数の場合は、コンマ(,)を区切り文字として使用します。
 
 -   **exception_event_action** <span class='type'>String</span>
 
@@ -160,6 +160,6 @@
 
     :::note
 
-    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに作成したJavaコードに伝えるID(`$id`で渡す)
+    _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)
 
     :::

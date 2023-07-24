@@ -7,11 +7,25 @@
 -   メトリクスイベント
 -   複合メトリクスイベント
 
+<Xclude product='npm'>
+
 :::note
 
 メトリクスの詳細については、[次の文書](metrics-intro)を参照してください。
 
 :::
+
+</Xclude>
+
+<InDoc product='npm'>
+
+:::note
+
+メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参照ください。
+
+:::
+
+</InDoc>
 
 ## メトリクスイベント
 
@@ -105,7 +119,18 @@
 
 **_複合メトリクスイベント_**を利用するには、次の概念を理解する必要があります。
 
+<Xclude product='npm'>
+
 -   [メトリクスとは](metrics-intro)
+
+</Xclude>
+
+<InDoc product='npm'>
+
+-   [メトリクスとは](../metrics/common-metrics-intro)
+
+</InDoc>
+
 -   [MXQL](../mxql/mxql-overview)
 
 **_複合メトリクスイベント_**は、メトリクスデータに対して、より複雑なルールを使用してイベントを作成し、アラート通知を送信できます。複合メトリクスは、次のような状況で効果的に使用できます。
@@ -374,7 +399,7 @@ isNotEmpty(Key)
 
 ## テンプレート{#template}
 
-<Xclude product='browser'>
+<Xclude product='browser,npm'>
 
 ![複合メトリクス - テンプレート](/img/set-event-cmetric-template.png)
 
@@ -455,5 +480,35 @@ isNotEmpty(Key)
 -   **_毎分ブラウザーエラー数の異常_**
 
     ページグループ(`${page_group}`)の1分あたりのブラウザーエラー数が10件以上発生するとアラート通知を送信します。
+
+</InDoc>
+
+<InDoc product='npm'>
+
+다음과 같이 경고 알림 템플릿을 제공합니다. 
+
+#### メトリクスイベントテンプレート
+
+**_アラート通知_** > **_イベント設定_** > **_メトリクス_**セクションで**_+イベント追加_**ボタンを選択してください。**_テンプレート_**から目的の項目を選択してください。
+
+-   **_Jitter > 30ms_**
+
+    **jitter**가 30/ms를 초과하면 경고 알림을 보냅니다.
+
+-   **_Latency > 200ms_**
+
+    **latency**가 200/ms를 초과하면 경고 알림을 보냅니다.
+
+-   **_Bps > 128 Mib/s_**
+
+    **bps**가 128Mib/s를 초과하면 경고 알림을 보냅니다.
+
+-   **_Pps > 50k/s_**
+
+    **pps**가 50k/s를 초과하면 경고 알림을 보냅니다.
+
+-   **_Sessions > 100_**
+
+    고유 세션 수가 100을 넘어가면 경고 알림을 보냅니다.
 
 </InDoc>

@@ -1,0 +1,55 @@
+---
+id: java-2_2_11
+title: Java Agent v2.2.11
+toc_max_heading_level: 2
+---
+
+July 10, 2023
+
+-   <Status>New</Status> Tracing the mongodb-reactive
+
+    Tracing the mongodb-3.8.2, mongodb-4.0.3, mongodb-4.4, and mongodb-4.8
+
+    ```ini title='whatap.conf'
+    # Application example (duplicate application not allowed)
+    weaving=mongodb-3.8.2
+    ```
+
+-   <Status>Change</Status> Modified to register multiple prefixes with comma (,) as the delimiter for the <code>trace_ignore_url_prefix</code> setting.
+
+    ```ini title='whatap.conf'
+    # Applied example
+    trace_ignore_url_prefix=/api,/sample
+    ```
+
+-   <Status>Change</Status> Automated the weaving sub options (restart option).
+
+    -   `weaving=spring-boot-2.5`
+
+        Automatic tracing for tomcat9 and mongodb-4.0.3
+
+        ```ini title='whatap.conf'
+        # Untracing (restarting required)
+        weaving_mongodb4_0_3_enabled=false
+        weaving_tomcat9_enabled=false
+        ```
+
+    -   `weaving=spring-boot-2.7`
+
+        Automatic tracing for tomcat9 and mongodb-4.4.
+
+        ```ini title='whatap.conf'
+        # Untracing (restarting required)
+        weaving_mongodb4_4_enabled=false
+        weaving_tomcat9_enabled=false
+        ```
+
+    -   `weaving=spring-boot-3.0`
+
+        Automatic tracing for tomcat10 and mongodb-4.8.
+
+        ```ini title='whatap.conf'
+        # Untracing (restarting required)
+        weaving_mongodb4_4_enabled=false
+        weaving_tomcat10_enabled=false
+        ```

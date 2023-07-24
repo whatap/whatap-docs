@@ -7,9 +7,13 @@ tags:
   - エージェントのインストール
 ---
 
-import TR from '@site/src/components/TR';
+モニタリング対象アプリケーションサーバーからTCP通信にデータを配信します。また、WhaTap収集サーバーにデータを送信するには、同じサーバにエージェントをインストールする必要があります。インストール方式は、パッケージインストールで可能です。
 
-モニタリング対象アプリケーションサーバーからUDP通信にデータを配信します。また、WhaTap収集サーバーにデータを送信するには、同じサーバにエージェントをインストールする必要があります。インストール方式は、パッケージインストールで可能です。
+:::note
+
+エージェントは基本**127.0.0.1:6600**TCPサーバーで動作します。Goアプリケーションでデータを受信し、WhaTap収集サーバーにOutbound 6600ポートに転送します。
+
+:::
 
 1.  WhaTapリポジトリ（Repository）をインストールしてください。
 
@@ -17,7 +21,7 @@ import TR from '@site/src/components/TR';
 
 3.  whatap-agentサービスを実行してください。
 
-![Go Monitoring](https://img.whatap.io/media/images/golang_system.png)
+![Go Monitoring](/img/golang_system.png)
 
 WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ko/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。
 
@@ -185,50 +189,37 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-## Goライブラリの使用
+## Goライブラリーの設定
 
-Goのソースコードにwhatap/go-apiを追加して配布します。
-
-<Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+Goアプリケーションソースコードに[github.com/whatap/go-api](https://github.com/whatap/go-api)パッケージを追加してください。
 
 ```bash
-$ go get github.com/whatap/go-api
+go get github.com/whatap/go-api
 ```
 
-</TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+`trace.Init()`, `trace.Shutdown()`関数で初期化および終了を設定してください。`trace.Start()」`,`trace.End()`関数でトランザクションの開始終了を設定してください。
 
-```bash
-$ go get github.com/whatap/go-api/trace
-$ go get github.com/whatap/go-api/sql
-$ go get github.com/whatap/go-api/httpc
-$ go get github.com/whatap/go-api/method
-```
-
-</TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
-
-```bash
-$ go get github.com/whatap/go-api/trace
-$ go get github.com/whatap/go-api/sql
-$ go get github.com/whatap/go-api/httpc
-$ go get github.com/whatap/go-api/method
-```
-
-</TabItem>
-</Tabs>
-
-```go title='GO'
+```go title='Go'
 import "github.com/whatap/go-api/trace"
 
 func main(){
     trace.Init(nil)
-    //It must be executed before closing the app.
-    defer trace.Shutdown()
+    //It must be executed before closing the app.    
+    defer trace.Shutdown()    
+
+    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+
     ...
+
+    trace.End(ctx, err)
 }
 ```
+
+:::note
+
+ライブラリー設定の詳細については、[次の文書](api-guide)を参照してください。
+
+:::
 
 ## モニタリングの開始
 

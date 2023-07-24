@@ -14,6 +14,434 @@ toc_max_heading_level: 2
 
 :::
 
+<!-- 
+
+>
+
+<p><Status>Change</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스 이벤트</UI> 탭에서 관련 카테고리 항목 제거</p>
+
+-->
+
+## Preview 1.105.20
+
+2023년 7월 21일
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> <UI>보고서</UI> 메뉴에서 타임아웃 발생 시 보고서 생성이 정상적으로 완료되지 않는 버그 수정
+
+-   <Status>Change</Status> <UI>보고서</UI> 메뉴에서 보고서 생성 시 UI 로딩 표시 형식 변경
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 이벤트 탭에서 알림 규칙 테스트 차트에 id 대신 name 관련 데이터 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 시간 범위 조작 후 새로 고침 시 시간 초기화 버그 수정
+
+</div>
+
+## Preview 1.105.19
+
+2023년 7월 21일
+
+<div class='indentTab'>
+
+### `Database`
+
+#### V2 공통
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 액티브 세션 테이블 정렬 변경 상태 프리셋 저장 추가
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 데이터 갱신 시 정렬 해제 버그 수정
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 액티브 세션 테이블 새창으로 보기 추가
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>Flex 보드</UI> 메뉴에서 액티브 세션 테이블 위젯 정렬 변경 상태 저장 추가
+
+-   <Status>Change</Status> 프로젝트 버전 선택 기능 제공 마감일자 변경
+
+    -   <code>PostgreSQL</code>: 2023년 9월 30일 → 2023년 10월 31일
+
+    -   <code>MySQL</code>: 2023년 10월 30일 → 2023년 11월 30일
+
+-   <Status>Fixed</Status> <UI>분석</UI> > <UI>카운트 추이 비교</UI> 메뉴에서 데이터 호출 및 로딩 속도 차이로 차트가 부자연스럽게 출력되는 현상 개선
+
+#### PostgreSQL
+
+<p><Status>Feature</Status> V2 제품의 <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴 내 액티브 세션 테이블에서 세션 상세 정보에 Plan 조회 추가</p>
+
+#### MySQL
+
+<p><Status>Feature</Status> V2 제품의 <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴 내 액티브 세션 테이블의 초기 정렬 상태 설정</p>
+
+</div>
+
+## Preview 1.105.18
+
+2023년 7월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> 에이전트에서 throttle이 설정되어 API 요청 제한 시 안내 메시지 추가
+
+-   <Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정
+
+</div>
+
+## Preview 1.105.17
+
+2023년 7월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정</p>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>트랜잭션</UI> 탭의 목록에서 <UI>T</UI> 및 <UI>U</UI> 버튼 선택 시 동작하지 않던 버그 수정
+
+-   <Status>Change</Status> <UI>대시보드</UI> > <UI>액티브 트랜잭션</UI> 메뉴에서 테이블 내 느린 트랜잭션 및 매우 느린 트랜잭션 표시 색상 수정
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 간헐적으로 화이트 아웃 발생하는 버그 수정</p>
+
+</div>
+
+## Preview 1.105.16
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Flex Board
+
+<p><Status>Fixed</Status> 화면의 너비가 작아지면서 <UI>히트맵</UI> 위젯의 폭이 좁아지면 버튼 레이아웃이 메뉴 밖으로 벗어나는 현상 수정</p>
+
+#### My Usage
+
+-   <Status>Feature</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국가 선택에 따라 결제 진행 과정 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국내 '역발행 계좌 이체 등록' 미노출 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 프로모션 배너 변경
+
+-   <Status>Fixed</Status> <UI>결제 정보</UI> 메뉴에서 '해외 카드 등록'의 placeholder를 로케일 언어에 맞게 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>청구 및 납부 내역</UI> 메뉴에서 페이지 번호 개수 설정 버그 수정
+
+#### Report
+
+<p><Status>Fixed</Status> 일간 애플리케이션 사용자 정의 보고서의 <b>방문자</b> 항목 제거</p>
+
+* * *
+
+### `Application`
+
+#### GO, PHP
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   **Heap 크기** → **_시스템 메모리_**, **Heap 사용량** → **_프로세스 메모리_**로 문구 변경
+
+    -   시스템 GC 버튼 제거
+
+#### Dashboard
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   이름 컬럼의 크기가 줄어들면 말줄임표와 함께 마우스 오버 시 툴팁이 활성화되도록 수정
+
+    -   <UI>상세</UI> 버튼의 툴팁이 버튼 클릭 후에도 사라지지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI> > <UI>히트맵</UI> 위젯 드래그 > <UI>히트맵 트랜잭션</UI> > TX 트레이스 항목 선택 > <UI>통계</UI> 창에서 <UI>트랜잭션 로그</UI> 탭의 트랜잭션 로그가 미설정되었을 경우:
+
+    -   언어 설정이 일본어인 상태: 출력되는 안내 메시지의 줄바꿈 버그 수정
+
+    -   언어 설정이 한국어인 상태:  출력되는 안내 메시지의 스타일이 제대로 적용되도록 수정
+
+    -   출력되는 안내 메시지의 링크를 클릭할때 설정된 언어에 맞는 Docs 페이지로 이동하도록 수정
+
+#### Analytics
+
+-   <Status>Fixed</Status> MSA 분석 메뉴에서 데이터를 조회했을 때 결과가 없으면 '데이터 없음' 안내 메시지가 나오도록 수정
+
+* * *
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 브라우저 에이전트 스크립트의 <code>config</code> 옵션으로 <code>proxyBaseUrl</code> 추가</p>
+
+</div>
+
+## Preview 1.105.15
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Change</Status> 클러스터 프로젝트일 때 <UI>퍼포먼스 요약</UI> 메뉴의 지표별 그룹 타이틀 표기 추가</p>
+
+![sample](/img/release/r-1_105_14-k8s-summary-cluster.png)
+
+</div>
+
+## Preview 1.105.14
+
+2023년 7월 17일
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 애플리케이션 모니터링 상품의 <code>app_user</code> 카테고리 내 <code>logbits</code> 필드 사용 시 MXQL 생성 로직에서 예외 처리 추가</p>
+
+* * *
+
+### `Application`
+
+#### Dashboard
+
+-   <Status>Fixed</Status> 쿠버네티스 애플리케이션 프로젝트에서 <UI>트랜잭션 분석</UI> 창의 <UI>레코드 요약</UI> 탭 내용 중 <b>onode</b>를 표기를 <UI>에이전트 노드</UI>로 수정
+
+-   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 통계 모달의 차트가 보이지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 <UI>SQL 요약</UI>, <UI>메소드 요약</UI>, <UI>HTTP Call 요약</UI> 탭의 조회된 데이터가 없을 경우 안내 메시지 추가
+
+#### Analytics
+
+<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 숫자 외 문자가 입력되지 않는 버그 수정</p>
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> <b>PostgreSQL V2</b>, <b>Mysql V2</b> 프로젝트에서 <UI>슬로우 쿼리</UI>, <UI>데이터베이스 사이즈</UI> 메뉴의 영어, 일본어 안내 지원</p>
+
+* * *
+
+### `Container`
+
+#### Dashboard
+
+-   <Status>Fixed</Status> <UI>멀티 컨테이너 맵</UI> 메뉴에서 <UI>네임스페이스</UI> 메뉴로 이동할 수 없도록 수정
+
+    ![sample](/img/release/r-1_105_14-k8s-multi-container-map.png)
+
+-   <Status>Change</Status> <UI>컨테이너 맵</UI> 메뉴의 상세 보기 패널에서 블록의 개수가 많은 경우 표기 방식 변경
+
+    ![sample](/img/release/r-1_105_14-k8s-container-map-details.png)
+
+</div>
+
+## Preview 1.105.13
+
+July 13, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In the project creation menu, modified the product names (<b>Node.js</b>, <b>Altibase</b>).
+
+-   <Status>Fixed</Status> In the Japanese version, modified the sidebar texts for <UI>Create group</UI> and <UI>Create project</UI> buttons to be displayed in English.
+
+* * *
+
+### `Application`
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Transaction map</UI>, modified the chart design.
+
+    |                  Before modification                 |                 After modification                 |
+    | :--------------------------------------------------: | :------------------------------------------------: |
+    | ![before](/img/release/before-transaction-chart.png) | ![after](/img/release/after-transaction-chart.png) |
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Transaction map</UI>, improved to first display the error when a normal transaction and an error transaction overlap.
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status> In <UI>Analysis</UI> > <UI>Page load hitmap</UI>, added the page group filter and search filter.
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI> > <UI>Error Detail</UI>, modified the background style.
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, modified as follows.</p>
+
+-   **_Application Agent Installation_** > **_Docker PHP_**
+
+    -   **_1. Deleted the subtitle at the top of the access key copying area in the _**Verify Access Key\*\*\* section.
+
+    -   **_4. Deleted the subtitle from the _**Kubernetes environment variables and volumes\*\*\* section.
+
+-   **_Application agent installation_** > all installation types: **_1. Unified the wording in the _**Verify Access Key**\* section and added an icon to the left of the **Chat contact\*\* text.
+
+-   In the **_Install guide_** section, unified the icon on the **_Chat contact_** button with the channel talk icon.
+
+-   **_Kubernetes agent installation_** > **_KUBERNETES_** > **_3. Added a guide message regarding the OOM issues in the _**Kubernetes agent creation\*\*\* section.
+
+* * *
+
+### `Laboratory`
+
+<p><Status>Change</Status> (Only for <b>Container</b> and <b>Java</b> products) In <UI>Remote Access Status</UI>, modified to use the function even by the members without the <b>View log</b> role.</p>
+
+</div>
+
+## Preview 1.105.12
+
+July 12, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Alert
+
+-   <Status>Feature</Status> In <UI>Notification setting</UI>, added the <b>User-Header</b> function in the Webhook JSON addition form for the 3rd party plugin.
+
+    **User Header**: The key and value pair can be checked in the header when receiving a webhook. The following is an example of the received webhook when the user header key and value are entered as `User-Header-Key` and `TestValue`.
+
+    ```http {8} title='example'
+    POST /test HTTP/1.1
+    Host: whatap.requestcatcher.com
+    Accept: text/plain, application/json, application/*+json, */*
+    Connection: keep-alive
+    Content-Length: 234
+    Content-Type: application/json
+    User-Agent: Java/17.0.7
+    User-Header-Key: Test-Value
+    ```
+
+-   <Status>Fixed</Status> Fixed the issue where the window closes after adding a 3rd party plugin.
+
+#### Dashboard
+
+-   <Status>Fixed</Status> In the <UI>Transaction analysis</UI> window, modified to display as normal when the transaction name under the <UI>Record summary</UI> tab is longer than the screen.
+
+-   <Status>Change</Status> In the <UI>Transaction analysis</UI> window, modified the layout width of the <UI>Tree view</UI> tab.
+
+#### Flex Board
+
+-   <Status>Fixed</Status> Fixed the issue where the menu does not appear upon clicking the dashboard copy button.
+
+-   <Status>Fixed</Status> Added missing multilingual (English) texts in the dashboard copy window.
+
+-   <Status>Change</Status> 대시보드 <UI>다른 사람에게 복사</UI> 기능 이용 시 대시보드 제목에 <b>copied_</b> prefix 추가
+
+</div>
+
+## Preview 1.105.11
+
+July 11, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Modified the problem where the error message appears when the organization creation works normally.
+
+-   <Status>Fixed</Status> In <UI>Project list</UI>, fixed the bug where the size cannot be adjusted.
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> In <UI>Server list</UI>, fixed the string by truncating the column header text that appears when clicking the <LinkImage img='ico-compare.svg' desc='비교하기 아이콘'/> (<UI>Compare</UI>) option.
+
+    -   Korean: 비교하기 → 비교
+    -   Japanese: ステータス → 状態
+
+-   <Status>Fixed</Status> In <UI>Server list</UI>, modified not to simultaneously enable the option buttons at the top.
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status> In <UI>Log</UI> > <UI>Live Tail</UI>, fixed the problem where the table row unfolding does not return to the original row height.
+
+-   <Status>Change</Status> In <UI>Log</UI> > <UI>Log search</UI>, modified the <UI>Time selector</UI> option when searching the tag's <UI>adjacent logs</UI>.
+
+* * *
+
+### `Laboratory`
+
+<p><Status>New</Status> In <UI>Laboratory</UI>, added <UI>Integrated log search</UI>.</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI> > <UI>Application agent installation</UI>, modified the issue where a Korean dashboard image is output for the <UI>Start monitoring</UI> image in the <UI>Docker PHP</UI> tab without following the multilingual setting.</p>
+
+</div>
+
+## Preview 1.105.10
+
+July 11, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status>Fixed</Status> Fixed the bug where the screen does not appear when entering the server project.
+
+</div>
+
+## Preview 1.105.09
+
+July 10, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+-   <Status>Feature</Status> Added the <UI>Multi container map</UI> menu.
+
+### `Log`
+
+#### Log Search
+
+-   <Status>Fixed</Status> Fixed the issue where <code>category==+none</code> is entered when you enter a <code>category</code> in the <UI>Filter</UI> field or select a value in the side menu on the left.
+
+-   <Status>Fixed</Status> Fixed the issue where a <code>category</code> cannot be entered additionally while a <code>category</code> is entered in the <UI>Filter</UI> field.
+
+-   <Status>Fixed</Status> Fixed to prevent duplicate values from being entered in the <UI>Filter</UI> field.
+
+</div>
+
+## Preview 1.105.08
+
+July 10, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, deleted the log role checking logic.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the option to hide the tags in the event log.
+
+</div>
+
 ## Preview 1.105.07
 
 July 7, 2023
