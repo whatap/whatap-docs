@@ -20,7 +20,7 @@ go get github.com/whatap/go-api
 
 ## Getting started
 
-### ini, shutdown
+### init, shutdown
 
 Start the monitoring module by using the `trace.Init()` function. `defer trace.Shutdown()` makes sure that the monitoring ends.
 
@@ -39,9 +39,9 @@ func main(){
 func Init(m map[string]string)
 ```
 
-This can be set in the initial stage of the application by declaring it in the form of `map[string]string`. Otherwise, more settings can be added in *whatap.conf*. The performance information can be sent to the WhaTap collection server only when TCP connection to the agent is established normally. It performs TCP communication via **127.0.0.1:6600** using the basic connection information. 
+This can be set in the initial stage of the application by declaring it in the form of `map[string]string`. Otherwise, more settings can be added in _whatap.conf_. The performance information can be sent to the WhaTap collection server only when TCP connection to the agent is established normally. It performs TCP communication via **127.0.0.1:6600** using the basic connection information. 
 
-To change the connection information, pass the settings to the `Init` function, or set them in the *whatap.conf* file and then restart the application.
+To change the connection information, pass the settings to the `Init` function, or set them in the _whatap.conf_ file and then restart the application.
 
 ```go title='Go'
 m := make(map[string]string)
@@ -104,13 +104,13 @@ http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
     ```go title='Go'
     http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
     ...
-}))
+    }))
     ```
 
     ```go title='Go'
     http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     ...
-}))
+    }))
     ```
 
 ### General transaction trace

@@ -10,6 +10,19 @@ _uid.sh_シェルスクリプトファイル（または_uid.bat_バッチファ
 ./uid.sh DB_USER DB_PASSWORD
 ```
 
+:::note
+
+-   最初に設定すると、暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
+-   DBユーザー ファイルを生成するには、プロジェクトアクセスキーが_whatap.conf_ファイルに入力されている必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
+-   Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameのような形式で入力する必要があります。
+-   `DB_USER`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character（\\）を一緒に入力してください。
+
+```bash title='Example'
+./uid.sh whatap whatap\!pwd
+```
+
+:::
+
 </TabItem>
 <TabItem value="windows" label="Windows">
 
@@ -17,18 +30,17 @@ _uid.sh_シェルスクリプトファイル（または_uid.bat_バッチファ
 ./uid.bat "DB_USER" "DB_PASSWORD"
 ```
 
-</TabItem>
-</Tabs>
-
 :::note
 
--   最初の一度だけ設定すると、それ以降は暗号化されたUIDでモニタリング対象データベースサーバーからデータ収集を進めます。
+-   最初に設定すると、暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
 -   DBユーザー ファイルを生成するには、プロジェクトアクセスキーが_whatap.conf_ファイルに入力されている必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
 -   Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameのような形式で入力する必要があります。
--   `DB_USER`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character（\\）を一緒に入力してください。
 
-    ```bash title='Example'
-    ./uid.sh whatap whatap\!pwd
-    ```
+```bash title='Example'
+uid.bat whatap whatap!pwd
+```
 
 :::
+
+</TabItem>
+</Tabs>

@@ -222,5 +222,9 @@
   "item.label.Go": {
     "message": "Go",
     "description": "Navbar item with label Go"
+  },
+  "item.label.NPM": {
+    "message": "NPM",
+    "description": "Navbar item with label NPM"
   }
 }

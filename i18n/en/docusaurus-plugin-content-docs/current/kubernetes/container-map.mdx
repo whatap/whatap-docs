@@ -26,14 +26,6 @@ The following video clip is the guide to the **_Container Map_** menu.
 
 ![Container Map](/img/k8s-container-map.png)
 
-:::info
-
-**Blocks and Micro blocks**
-
-In the container map, the single polygon is called a block. At this time, the block with an agent (a block within a block) is called a micro block.
-
-:::
-
 ### ![](/img/number-01.png) Go to Cluster Project - Namespace Project
 
 ![Container map project list](/img/k8s-namespace-project-list.png)
@@ -94,7 +86,7 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 | Paused inquiry (PAUSE)      | Real-time status change OFF<br/>Used to check the current status in detail.           |
 | Historical inquiry          | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute                   |
 
-### ![](/img/number-03.png) Container map chart
+### ![](/img/number-03.png) Container map chart{#container-map-chart}
 
 ![Container map chart](/img/k8s-container-map-chart.png)
 
@@ -109,6 +101,26 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
         -   Some objects have borders. The targets are what have installed microagents like Java, Node.js, Python, and such in the container. 
 
         -   If there are 2 containers in a pod and the micro agents are installed on only 1 of 2 containers, the borders are displayed. In other words, if any of the containers in the pod have micro agents installed, the borders are displayed.
+
+    :::note 
+
+    **Block and micro block**
+
+    ![Block and micro block sc](/img/k8s-block-container.png)
+
+    In the **_Container map_**, the single polygon is called a **block**. At this time, the block with an agent (a block within a block) is called a **micro block**.
+
+    :::
+
+    :::note 
+
+    **Group**
+
+    ![Container block group sc](/img/k8s-container-map-group.png)
+
+    When the entire block is selected on the **_Container Map_** screen, the multiple block is called a group. 
+
+    :::
 
 -   ![number 3](/img/char-c.svg) It displays the metrics related to the CPU and memories for the grouped targets.
 

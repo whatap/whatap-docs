@@ -1,37 +1,25 @@
 ---
 id: agent-httpcall
-title: HTTP Callトラッキング
-description: GoエージェントのHTTP Call関連オプションを提供します。
+title: HTTPC, API Call
+description: PHPエージェントのHTTPC、API Call関連のオプションを提供します。
 tags:
   - Go
-  - HTTPトラッキング
+  - HTTPC
+  - API Call
 ---
 
-```go title='GO'
-func main(){
-    trace.Init(nil)
-    //It must be executed before closing the app.
-    defer trace.Shutdown()
+-   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
-    ctx, _ := trace.Start(context.Background(), "Trace Http Call")
-    defer trace.End(ctx, nil)
+    デフォルト値 `true`
 
-	httpcCtx, _ := httpc.Start(ctx, callUrl)
-    resp, err := http.Get(callUrl)
-    if err == nil {
-    	httpc.End(httpcCtx, resp.StatusCode, "", nil)
-    } else {
-    	httpc.End(httpcCtx, 0, "", err)
-    }
-}
-```
+    トランザクション内のHTTPC URLを構文解析して正規化する機能を活性化します。
 
-**API**
+-   **trace_httpc_normalize_urls** <span class='type'>String</span>
 
-```go title='GO'
-func Start(ctx context.Context, url string) (*HttpcCtx, error)
+    正規化するHTTPC URLパターンを定義します。呼び出しURLパターンを構文解析して、パスパラメータを削除します。
 
-func End(httpcCtx *HttpcCtx, status int, reason string, err error) error
+    :::note
 
-func Trace(ctx context.Context, host string, port int, url string, elapsed int, status int, reason string, err error) error
-```
+    例）**/a/{v}/b**と宣言すると、**a/123/b** → **a/{v}/b**に置き換えます。複数登録するときは、コンマ（,）を区切り文字として使用します。 置換パターンの整理後、補完が必要です。
+
+    :::

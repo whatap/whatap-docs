@@ -1502,5 +1502,21 @@
   "sidebar.indexSidebar.link.Go": {
     "message": "Go",
     "description": "The label for link Go in sidebar indexSidebar, linking to golang/introduction"
+  },
+  "sidebar.npmsidebar.category.NPM 모니터링": {
+    "message": "NPM 모니터링",
+    "description": "The label for category NPM 모니터링 in sidebar npmsidebar"
+  },
+  "sidebar.npmsidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar npmsidebar"
+  },
+  "sidebar.npmsidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar npmsidebar"
+  },
+  "sidebar.npmsidebar.category.알림 설정하기": {
+    "message": "알림 설정하기",
+    "description": "The label for category 알림 설정하기 in sidebar npmsidebar"
   }
 }

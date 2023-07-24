@@ -247,29 +247,29 @@ The `kube_stat` category collects all the clusters for the cluster project, and 
 
 #### Fields
 
-| Field name                       | Unit                 | Description                                                   | Remarks                 |
-| -------------------------------- | -------------------- | ------------------------------------------------------------- | ----------------------- |
-| alloctable_cpu                   | Millicore            | Number of cluster cores                                       | Cluster project only    |
-| alloctable_ephemeral-storage     | Byte                 | Ephemeral storage that can be allocated to all clusters       | Cluster project only    |
-| alloctable_hugepages-1gi         | Byte                 | Hugepages-1Gi that can be allocated to all clusters           | Cluster project only    |
-| alloctable_hugepages-2mi         | Byte                 | Hugepages-2Gi that can be allocated to all clusters           | Cluster project only    |
-| alloctable_memory                | Byte                 | Memory that can be allocated to all clusters                  | Cluster project only    |
-| alloctable_pods                  | Positive number      | Number of pods that can be allocated                          | -                       |
-| available_pod                    | Positive number      | Number of available pods                                      | -                       |
-| desired_pod                      | Positive number      | Number of desired pods                                        | -                       |
-| nodes                            | Positive number      | Number of nodes                                               | -                       |
-| pod_phase_Pending                | Positive number      | Number of pending pods                                        | -                       |
-| pod_phase_Running                | Positive number      | Number of running pods                                        | -                       |
-| running_containers               | Positive number      | Number of running containers                                  | -                       |
-| stopped_containers               | Positive number      | Number of stopped containers                                  | -                       |
-| total_available_cpu              | Positive number      | Total allocatable CPU                                         | -                       |
-| total_available_memory           | Positive number      | Total sum of allocatable memory                               | -                       |
-| total_limit_cpu                  | Millicore            | Total sum of limit CPU                                        | -                       |
-| total_limit_memory               | Byte                 | Total sum of limit memory                                     | -                       |
-| total_request_cpu                | Millicore            | Total sum of request CPU                                      | -                       |
-| total_request_memory             | Byte                 | Total sum of request memory                                   | -                       |
-| unavailable_pod                  | Positive number      | Unavailable pod count                                         | -                       |
-| waiting_containers               | Positive number      | Waiting container count                                       | -                       |
+| Field name                       | Unit                 | Description                                                       | Remarks                 |
+| -------------------------------- | -------------------- | ----------------------------------------------------------------- | ----------------------- |
+| alloctable_cpu                   | Millicore            | Number of cluster cores                                           | Cluster project only    |
+| alloctable_ephemeral-storage     | Byte                 | Ephemeral storage that can be allocated to all clusters           | Cluster project only    |
+| alloctable_hugepages-1gi         | Byte                 | Hugepages-1Gi that can be allocated to all clusters               | Cluster project only    |
+| alloctable_hugepages-2mi         | Byte                 | Hugepages-2Gi that can be allocated to all clusters               | Cluster project only    |
+| alloctable_memory                | Byte                 | Memory that can be allocated to all clusters                      | Cluster project only    |
+| alloctable_pods                  | Positive number      | Number of pods that can be allocated                              | -                       |
+| available_pod                    | Positive number      | Number of available pods                                          | -                       |
+| desired_pod                      | Positive number      | Deployment, ReplicaSet, StatefulSet 및 Single Pod 에 대한 포드 수 설정의 합계 | -                       |
+| nodes                            | Positive number      | Number of nodes                                                   | -                       |
+| pod_phase_Pending                | Positive number      | Number of pending pods                                            | -                       |
+| pod_phase_Running                | Positive number      | Number of running pods                                            | -                       |
+| running_containers               | Positive number      | Number of running containers                                      | -                       |
+| stopped_containers               | Positive number      | Number of stopped containers                                      | -                       |
+| total_available_cpu              | Positive number      | Total allocatable CPU                                             | -                       |
+| total_available_memory           | Positive number      | Total sum of allocatable memory                                   | -                       |
+| total_limit_cpu                  | Millicore            | Total sum of limit CPU                                            | -                       |
+| total_limit_memory               | Byte                 | Total sum of limit memory                                         | -                       |
+| total_request_cpu                | Millicore            | Total sum of request CPU                                          | -                       |
+| total_request_memory             | Byte                 | Total sum of request memory                                       | -                       |
+| unavailable_pod                  | Positive number      | Unavailable pod count                                             | -                       |
+| waiting_containers               | Positive number      | Waiting container count                                           | -                       |
 
 ### Pod (`kube_pod`) metric
 

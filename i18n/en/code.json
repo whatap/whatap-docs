@@ -415,11 +415,11 @@
     "description": "The ARIA label for Algolia mention"
   },
   "component.imageErrorMessage": {
-    "message": "!!No images. Contact site manager!!",
+    "message": "!!No images. Contact the site administrator!!",
     "description": "No images. Contact site manager."
   },
   "whatap_plugin.sharefacebook": {
-    "message": "Share",
+    "message": "Shared",
     "description": "Sharing this page"
   }
 }

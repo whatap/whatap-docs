@@ -7,11 +7,11 @@ tags:
   - AES256
 ---
 
-WhaTapアプリケーション エージェントは、収集したデータを暗号化してサーバーに転送します。このため、XOR（Exclusive-OR）演算と高度暗号化標準（Advanced Encryption Standard、以下AES）暗号化を使用し、平文を128bit単位に分けて暗復号化を行います。256ビットまで拡張してセキュリティを強化できます。
+WhaTapアプリケーション エージェントは、収集したデータを暗号化してサーバーに送信します。このために、XOR(Exclusive-OR) 演算と高度暗号化標準 (Advanced Encryption Standard,以下AES) 暗号化を使用し、平文を128bit単位に分割して暗号化と複合化を行います。256ビットに拡張してセキュリティを強化します。
 
-基本的にJava Cryptography Extension（以下JCE）は128ビットに対応してします。AES256ビットを適用するには、JCEをアップデートする必要があります。
+基本的にJava Cryptography Extension(以下JCE)は、128ビットに対応してします。AES256ビットを適用するには、JCEをアップデートする必要があります。
 
-基本環境でAES256を適用すると、次のようにエラーが発生します。
+基本環境でAES256を適用すると、次のようなエラーが発生します。
 
 ```bash
 Unsupported keysize or algorithm parameters.
@@ -19,11 +19,11 @@ Unsupported keysize or algorithm parameters.
 Illegal key size or default parameters.
 ```
 
-1.  次のリンクからバージョンに合ったファイルをダウンロードしてください。
+1.  次のリンクから、バージョンに適合するファイルをダウンロードしてください。
 
     :::note
 
-    **Javaバージョン別のJCEダウンロードリンク**
+    **JavaバージョンのJCEダウンロードリンク**
 
     -   [JAVA 8](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
     -   [JAVA 7](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
@@ -35,7 +35,7 @@ Illegal key size or default parameters.
 
 2.  _`$JAVA_HOME`/jre/lib/security_パスにファイルを上書きしてください。
 
-3.  CEを適用した場合は、_`${WHATAP_HOME}`/whatap.conf_ファイルに次の設定を追加してください。
+3.  JCEを適用した場合は、_`${WHATAP_HOME}`/whatap.conf_ファイルに次の設定を追加してください。
 
     ```ini title='whatap.conf'
     cypher_level=256

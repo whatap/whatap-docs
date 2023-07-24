@@ -1,7 +1,7 @@
 ---
 id: telegraf-plugin-install
 title: プラグインインストール
-description: Telegrafのwhatap output plugin(tcp)の使い方を案内します。
+description: Telegrafのwhatap output plugin(tcp)の使用方法をを説明します。
 tags:
   - Telegraf
   - プラグイン
@@ -13,17 +13,17 @@ import TabItem from '@theme/TabItem';
 
 ## whatap output plugin
 
-Telegrafのwhatap output plugin(tcp)を活用して、Telegrafで収集したメトリクスをWhaTap収集サーバーに送信することができます。 収集されたデータは、WhaTapのプロジェクト内部で確認できます。
+Telegrafのwhatap output plugin(tcp)を使用して、Telegrafで収集したメトリクスをWhaTap収集サーバーに送信することができます。 収集されたデータは、WhaTapのプロジェクトで確認できます。
 
 :::note
 
-Telegrafオープンソース内でwhatap pluginのレビューが進行中です。 正式リリース前は、whatap pluginを含むTelegrafを交換して使用してください。
+Telegrafオープンソース内でwhatap pluginのレビューで進行中です。 公式リリースの前に、whatap pluginをTelegrafを置き換えて使用ください。
 
 :::
 
 ## サポート環境
 
-次の一覧にあるオペレーティングシステムは、ダウンロードをインストールできます。 他のオペレーティングシステムは、[コンパイルインストール](#コンパイル-インストール)で進めてください。
+次の一覧からオペレーティングシステムをダウンロードしてインストールできます。 その他のオペレーティングシステムについては、[コンパイルインストール](#コンパイル-インストール)で進んでください。
 
 -   macOS
 -   Red Hat & CentOS
@@ -172,37 +172,37 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **macOS**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf （実行ファイル）
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf(実行ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf-1.12.0~842282d_darwin_amd64.tar.gz
 
 -   **Red Hat & CentOS**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf （実行ファイル）
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf (実行ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf-1.12.0~842282d-0.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf-1.12.0~842282d_linux_amd64.tar.gz
 
 -   **Ubuntu & Debian**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf （実行ファイル）
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf (実行ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf_1.12.0~842282d-0_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/linux/amd64/telegraf-1.12.0~842282d_linux_amd64.tar.gz
 
 -   **FreeBSD**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/freebsd/amd64/telegraf （実行ファイル）
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/freebsd/amd64/telegraf(実行ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/freebsd/amd64/telegraf-1.12.0~842282d_freebsd_amd64.tar.gz
 
 -   **windows**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/windows/amd64/telegraf.exe （実行ファイル）
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/windows/amd64/telegraf.exe (実行ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/windows/amd64/telegraf-1.12.0~842282d_windows_amd64.zip
 
 </TabItem>
 </Tabs>
 
-## コンパイルインストール
+## コンパイルのインストール
 
-### 事前準備事項
+### 事前準備条件
 
 -   **Go SDK構成**
 
@@ -210,7 +210,7 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **ソースファイル**
 
-    _${GOPATH}/src/github.com/influxdata/telegraf/_ ディレクトリの下に圧縮ファイルを解凍してください。
+    _${GOPATH}/src/github.com/influxdata/telegraf/_ ディレクトリの下に圧縮ファイルを解凍します。
 
     :::note
 

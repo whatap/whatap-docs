@@ -1,0 +1,46 @@
+---
+id: agent-control-function
+title: エージェント機能の制御
+description: アプリケーションサーバーの機能を制御する方法を提供します。
+tags:
+  - Go
+  - エージェント設定
+---
+
+Goエージェントの機能を制御できます。
+
+-   **enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    すべての機能を活性化します。
+
+-   **accesskey** / **license** <span class='type'>String</span>
+
+    エージェントを設置する時、付与されたアクセスキーを設定します。 アクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
+
+-   **stat_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    統計情報追跡機能を活性化します。 5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当します。
+
+-   **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
+
+    デフォルト値`300000`
+
+    リアルタイムユーザーを測定するときに、同一ユーザーとして認められる最大の呼び出し間隔を指定します。
+
+-   **time_sync_interval_ms** <span class='type'>Milliseconds</span>
+
+    デフォルト値`300000`
+
+    エージェントとサーバー間の時間同期化の周期を指定します。 同期しない場合は、0として設定します。
+
+-   **text_reset** <span class='type'>Int</span>
+
+    デフォルト値`0`
+
+    WhaTapエージェントは一度送ったテキスト類のデータはhash処理されるため、次の日まで再度転送を致しません。 以前の設定値と異なる値を設定する場合は、再送信します。
+
+    トランザクションURL、SQL Stringなどがテキストタイプデータに該当します。

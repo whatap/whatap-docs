@@ -1,7 +1,7 @@
 ---
 id: metrics-data-list
 title: Redisメトリクス
-description: WhaTap Redisで使用する重要メトリクスについて案内します。
+description: WhaTap Redisで使用する重要メトリクスについて説明します。
 tags:
   - Redis
   - メトリックス
@@ -11,37 +11,37 @@ tags:
 
 データベースメトリクスは、データベースの作業量とリソース使用量を包括的に収集します。WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
 
-メトリクスに関する詳細については、[次の文書](https://redis.io/commands/info)を参考にしてください。
+メトリクスに関する詳細については、[次の文書](https://redis.io/commands/info)を参照してください。
 
 | Metric                        | 説明                                                                                                                                               | Category     |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
 | `BLOCKED_CLIENTS`             | BLPOP、BRPOP、BRPOPLPUSHのコマンドで待機中のクライアント数                                                                                                          | CLIENTS      |
-| `CONNECTED_CLIENTS`           | 現在接続しているクライアント数（スレーブノード接続は除く）                                                                                                                    | CLIENTS      |
+| `CONNECTED_CLIENTS`           | 現在接続しているクライアント数(スレーブノード接続は除く)                                                                                                                    | CLIENTS      |
 | `TRACKING_CLIENTS`            | Number of clients being tracked                                                                                                                  | CLIENTS      |
 | `CMDSTAT_XXX_CALLS`           | Redisコマンドの統計情報を表示します。<br/>call：XXX Commandの実行回数                                                                                                  | COMMANDSTATS |
-| `CMDSTAT_XXX_USEC`            | Redisコマンドの統計情報を表示します。<br/>usec：XXX Commandの実行時間（microsecond）                                                                                     | COMMANDSTATS |
-| `CMDSTAT_XXX_USEC_PER_CALL`   | Redisコマンドの統計情報を表示します。<br/>`usec_per_call`：XXX Commandを一回実行するのにかかった平均時間（microsecond）                                                              | COMMANDSTATS |
+| `CMDSTAT_XXX_USEC`            | Redisコマンドの統計情報を表示します。<br/>usec：XXX Commandの実行時間(microsecond)                                                                                     | COMMANDSTATS |
+| `CMDSTAT_XXX_USEC_PER_CALL`   | Redisコマンドの統計情報を表示します。<br/>`usec_per_call`：XXX Commandの実行にかかった平均時間 (microsecond)                                                                  | COMMANDSTATS |
 | `USED_CPU`                    | `used_cpu_sys` + `used_cpu_user`                                                                                                                 | CPU          |
 | `USED_CPU_SYS`                | システムモードで使用したCPU                                                                                                                                  | CPU          |
-| `USED_CPU_SYS_CHILDREN`       | RDB/AOFファイル保存時に子プロセスがシステムモードで使用したCPU                                                                                                             | CPU          |
+| `USED_CPU_SYS_CHILDREN`       | RDB/AOFファイル保存時に子プロセスによってシステムモードで使用したCPU                                                                                                          | CPU          |
 | `USED_CPU_USER`               | ユーザーモードで使用したCPU                                                                                                                                  | CPU          |
-| `USED_CPU_USER_CHILDREN`      | RDB/AOFファイル保存時に子プロセスがユーザーモードで使用したCPU                                                                                                             | CPU          |
-| `AVG_TTL_DB0`                 | DB0にKeyが残っている時間（millisecond）                                                                                                                     | KEYSPACE     |
-| `AVG_TTL_DB1`                 | DB1にKeyが残っている時間（millisecond）                                                                                                                     | KEYSPACE     |
-| `EXPIRES_DB0`                 | DB0のexpireされるKey数                                                                                                                                | KEYSPACE     |
-| `EXPIRES_DB1`                 | DB1のexpireされるKey数                                                                                                                                | KEYSPACE     |
+| `USED_CPU_USER_CHILDREN`      | RDB/AOFファイル保存時に子プロセスによってユーザーモードで使用したCPU                                                                                                          | CPU          |
+| `AVG_TTL_DB0`                 | DB0にKeyが保持されている時間(millisecond)                                                                                                                   | KEYSPACE     |
+| `AVG_TTL_DB1`                 | DB1にKeyが保持されている時間(millisecond)                                                                                                                   | KEYSPACE     |
+| `EXPIRES_DB0`                 | DB0でexpireになるKeyの数                                                                                                                               | KEYSPACE     |
+| `EXPIRES_DB1`                 | DB1でexpireになるKeyの数                                                                                                                               | KEYSPACE     |
 | `KEYS_DB0`                    | DB0のキーの個数                                                                                                                                        | KEYSPACE     |
 | `KEYS_DB1`                    | DB1のキーの個数                                                                                                                                        | KEYSPACE     |
 | `KEYS_TOTAL`                  | KEYS_DBnの合計                                                                                                                                      | KEYSPACE     |
 | `MEM_FRAGMENTATION_RATIO`     | `used_memory`と`used_memory_rss`の比率                                                                                                               | MEMORY       |
 | `USED_MEMORY`                 | Bytes                                                                                                                                            | MEMORY       |
-| `USED_MEMORY_PEAK`            | 最大に使用したメモリ（bytes）                                                                                                                                | MEMORY       |
-| `USED_MEMORY_RSS`             | Resident Set Size。プロセスが占める実際のメモリ（RAM）サイズ                                                                                                         | MEMORY       |
-| `AOF_ENABLED`                 | _redis.conf_のappendonlyモードがyesなら1、noなら0です。yesのときはRedisサーバーの起動時に_appendonly.aof_を読み込み、noなら_dump.rdb_ファイルを読み込みます。                                  | PERSISTENCE  |
-| `AOF_LAST_REWRITE_TIME_SEC`   | 最後のAOF rewrite所要時間（秒）                                                                                                                            | PERSISTENCE  |
-| `AOF_REWRITE_IN_PROGRESS`     | 現在AOFファイルをバックグラウンドで保存中であれば、1と表示されます。                                                                                                             | PERSISTENCE  |
-| `AOF_REWRITE_SCHEDULED`       | AOF rewriteをする予定がある場合は1です。RDBファイルを保存中であれば、同時にAOFファイルを保存できないので予定（scheduled：1）に入れておき、保存が完了したらAOF rewriteを開始します。                                    | PERSISTENCE  |
-| `RDB_BGSAVE_IN_PROGRESS`      | RDBファイルのbackground saveが進行中の時に1と表示されます。                                                                                                          | PERSISTENCE  |
+| `USED_MEMORY_PEAK`            | 最大に使用したメモリ(bytes)                                                                                                                                | MEMORY       |
+| `USED_MEMORY_RSS`             | Resident Set Size。プロセスが占有する物理メモリ(RAM)                                                                                                            | MEMORY       |
+| `AOF_ENABLED`                 | _redis.conf_のappendonlyモードがyesなら1、noなら0です。yesの場合は、Redisサーバーの起動の場合は、_appendonly.aof_を読み込み、noなら_dump.rdb_ファイルを読み込みます。                              | PERSISTENCE  |
+| `AOF_LAST_REWRITE_TIME_SEC`   | 最終AOF rewrite時間(秒)                                                                                                                               | PERSISTENCE  |
+| `AOF_REWRITE_IN_PROGRESS`     | 現在、AOFファイルをバックグラウンドで保存している場合は、1と表示されます。                                                                                                          | PERSISTENCE  |
+| `AOF_REWRITE_SCHEDULED`       | AOF rewriteを実行する予定がある場合は1です。RDBファイルを保存中の場合は、同時にAOFファイルが保存できないため、スケジュール(scheduled：1)を設定し、保存が完了すると、AOF rewriteが開始します。                              | PERSISTENCE  |
+| `RDB_BGSAVE_IN_PROGRESS`      | RDBファイルのbackground saveが進行中の場合は、1と表示されます。                                                                                                        | PERSISTENCE  |
 | `RDB_CHANGES_SINCE_LAST_SAVE` | RDBファイルを最後に保存して以来、入力されたデータ件数                                                                                                                     | PERSISTENCE  |
 | `RDB_CURRENT_BGSAVE_TIME_SEC` | 現在バックグラウンドでRDBファイルを保存している場合は、保存開始から現在までの所要時間                                                                                                     | PERSISTENCE  |
 | `RDB_LAST_BGSAVE_TIME_SEC`    | 最後のバックグラウンドRDBファイルの保存所要時間（秒）                                                                                                                     | PERSISTENCE  |

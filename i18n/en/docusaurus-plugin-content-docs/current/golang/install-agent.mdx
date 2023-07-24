@@ -7,9 +7,13 @@ tags:
   - Agent Installation
 ---
 
-import TR from '@site/src/components/TR';
+An agent must be installed on the same server to forward data from the monitored application server through TCP communication and to transfer the data to the WhaTap collection server. The agent can be installed using the package.
 
-An agent must be installed on the same server to forward data from the monitored application server through UDP communication and to transfer the data to the WhaTap collection server. The agent can be installed using the package.
+:::note
+
+The agent works as the default **127.0.0.1:6600** TCP server. It receives data from the Go application and forwards the data to the WhaTap collection server via the outbound 6600 port.
+
+:::
 
 1.  Install the WhaTap repository.
 
@@ -17,7 +21,7 @@ An agent must be installed on the same server to forward data from the monitored
 
 3.  Run the whatap-agent service.
 
-![Go Monitoring](https://img.whatap.io/media/images/golang_system.png)
+![Go Monitoring](/img/golang_system.png)
 
 To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/ko/signup/), create a project and then install the agent to the target server.
 
@@ -185,50 +189,37 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-## Using the Go library
+## Configuring the Go library
 
-Add whatap/go-api to the Go application source code and release it.
-
-<Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+Add the [github.com/whatap/go-api](https://github.com/whatap/go-api) package to the Go application source code.
 
 ```bash
-$ go get github.com/whatap/go-api
+go get github.com/whatap/go-api
 ```
 
-</TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+Configure for initialization and shutdown with the `trace.Init()` and `trace.Shutdown()` functions. Set the startup and end for transactions with the `trace.Start()` and `trace.End()` functions.
 
-```bash
-$ go get github.com/whatap/go-api/trace
-$ go get github.com/whatap/go-api/sql
-$ go get github.com/whatap/go-api/httpc
-$ go get github.com/whatap/go-api/method
-```
-
-</TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
-
-```bash
-$ go get github.com/whatap/go-api/trace
-$ go get github.com/whatap/go-api/sql
-$ go get github.com/whatap/go-api/httpc
-$ go get github.com/whatap/go-api/method
-```
-
-</TabItem>
-</Tabs>
-
-```go title='GO'
+```go title='Go'
 import "github.com/whatap/go-api/trace"
 
 func main(){
     trace.Init(nil)
-    //It must be executed before closing the app.
-    defer trace.Shutdown()
+    //It must be executed before closing the app.    
+    defer trace.Shutdown()    
+
+    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+
     ...
+
+    trace.End(ctx, err)
 }
 ```
+
+:::note
+
+For more information about the library configuration, see [the following](api-guide).
+
+:::
 
 ## Starting the monitoring
 

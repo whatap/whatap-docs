@@ -33,42 +33,29 @@ It is used to log data.
 
 -   **whatap.logsink_zip_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+    Default `true`
 
     If the value is `true`, the zipped log data is transmitted. The default value is GZIP.
 
--   **whatap.watchlog_enabled** <span class='type'>Boolean</span>
-
-    Default `false`
-
-    If the value is `true`, the log data is collected into the specified log file.
-
 ### Setting the log file
 
--   **whatap.watchlog.[Log file unique ID].enabled** <span class='type'>Boolean</span>
+-   **whatap.logsink.files** <span class='type'>String</span>
 
-    If the value is `true`, a unique ID for the log file is arbitrarily assigned, and then log data is collected with that ID.
-
--   **whatap.watchlog.[Log file unique ID].file** <span class='type'>String</span>
-
-    It arbitrarily assigns a unique log file ID and then sets the file path and file name.
+    Set the full file path and file name. You can specify multiple files with comma (,). 
 
 ### Example
 
 -   **Default Settings**
 
-    ```ini title='whatap.conf'
+    ```ini title='whatap.ini'
     whatap.logsink_enabled=true
     whatap.logsink_zip_enabled=true
-    whatap.watchlog_enabled=true
     ```
 
 -   **Configuration for Apache error log and access log**
 
-    ```ini title='whatap.conf'
-    whatap.watchlog.apache_error_log.enabled=true
-    whatap.watchlog.apache_error_log.file=/etc/httpd/logs/error_log
-
-    whatap.watchlog.apache_access_log.enabled=true
-    whatap.watchlog.apache_access_log.file=/etc/httpd/logs/access_log
+    ```ini title='whatap.ini'
+    whatap.logsink_enabled=true
+    whatap.logsink_zip_enabled=true
+    whatap.logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
     ```

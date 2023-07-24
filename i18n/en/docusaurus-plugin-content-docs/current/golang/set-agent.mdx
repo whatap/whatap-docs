@@ -7,53 +7,11 @@ tags:
   - Configuration
 ---
 
-The application server in the Go environment uses libraries to configure the environment.
+The Whatap agent writes the necessary settings for each agent in _whatap.conf_. The agent locates and loads the configuration file through the environment variables.
 
-```go title='Download library'
-$ go get github.com/whatap/go-api
-```
+If any separate setting, the agent has been implemented to find _whatap.conf_ in the path where it is located. It checks whether _whatap.conf_ has been changed every 5 seconds and then reloads the file.
 
-## Initial configuration
-
--   Start the monitoring module by using the `trace.Init` function at the beginning of the main function.
-
--   `defer trace.Shutdown()` makes sure that the monitoring ends.
-
-```go title='GO'
-import "github.com/whatap/go-api/trace"
-
-func main(){
-    trace.Init(nil)
-    //It must be executed before closing the app.
-    defer trace.Shutdown()
-	...
-}
-```
-
-This can be set in the initial stage of the application by declaring it in the form of `map[string]string`.
-
-```go title='GO'
-func Init(m map[string]string)
-```
-
-The agent is connected based on UDP 127.0.0.1:6600. If the UDP port 6600 is being used internally, change it to another port.
-
-```go title='GO'
-m := make(map[string]string)
-m["net_udp_port"] = "6601"
-
-trace.Init(m)
-```
-
-Settings can be changed while the application is running by directly modifying the _whatap.conf_ file, or in the Whatap Monitoring Service's Project menu.
-
-When the application ends, all collected data is delivered and the UDP connection is closed.
-
-```go title='GO'
-func Shutdown()
-```
-
-import ProdImg from '@site/src/components/ChangeImgName.js';
+For user convenience, [Whatap Monitoring Service](https://service.whatap.io/) also provides the agent configuration function.
 
 <!--서비스 화면에서 에이전트 설정하기 start-->
 
