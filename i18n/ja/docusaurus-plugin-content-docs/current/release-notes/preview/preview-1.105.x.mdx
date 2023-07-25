@@ -10,183 +10,611 @@ toc_max_heading_level: 2
 
 :::note
 
-[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+<https://preview.whatap.io>で、次の新機能と変更した内容を事前に体験することができます。 
 
 :::
 
-## Preview 1.105.07
+<!-- 
 
-2023년 7월 7일
+>
+
+<p><Status>Change</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스 이벤트</UI> 탭에서 관련 카테고리 항목 제거</p>
+
+-->
+
+## Preview 1.105.20
+
+2023년 7월 21일
 
 <div class='indentTab'>
 
+### `共通`
+
+-   <Status>Fixed</Status> <UI>보고서</UI> 메뉴에서 타임아웃 발생 시 보고서 생성이 정상적으로 완료되지 않는 버그 수정
+
+-   <Status>Change</Status> <UI>보고서</UI> 메뉴에서 보고서 생성 시 UI 로딩 표시 형식 변경
+
+* * *
+
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 차트로 마우스 호버 시 동시에 여러 차트의 데이터가 표시되도록 수정</p>
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 이벤트 탭에서 알림 규칙 테스트 차트에 id 대신 name 관련 데이터 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 시간 범위 조작 후 새로 고침 시 시간 초기화 버그 수정
+
+</div>
+
+## Preview 1.105.19
+
+2023년 7월 21일
+
+<div class='indentTab'>
+
+### `Database`
+
+#### V2 공통
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 액티브 세션 테이블 정렬 변경 상태 프리셋 저장 추가
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 데이터 갱신 시 정렬 해제 버그 수정
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 액티브 세션 테이블 새창으로 보기 추가
+
+-   <Status>Feature</Status> <UI>대시보드</UI> > <UI>Flex 보드</UI> 메뉴에서 액티브 세션 테이블 위젯 정렬 변경 상태 저장 추가
+
+-   <Status>Change</Status> 프로젝트 버전 선택 기능 제공 마감일자 변경
+
+    -   <code>PostgreSQL</code>: 2023년 9월 30일 → 2023년 10월 31일
+
+    -   <code>MySQL</code>: 2023년 10월 30일 → 2023년 11월 30일
+
+-   <Status>Fixed</Status> <UI>분석</UI> > <UI>카운트 추이 비교</UI> 메뉴에서 데이터 호출 및 로딩 속도 차이로 차트가 부자연스럽게 출력되는 현상 개선
+
+#### PostgreSQL
+
+<p><Status>Feature</Status> V2 제품의 <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴 내 액티브 세션 테이블에서 세션 상세 정보에 Plan 조회 추가</p>
+
+#### MySQL
+
+<p><Status>Feature</Status> V2 제품의 <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴 내 액티브 세션 테이블의 초기 정렬 상태 설정</p>
+
+</div>
+
+## Preview 1.105.18
+
+2023년 7월 20일
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status> 에이전트에서 throttle이 설정되어 API 요청 제한 시 안내 메시지 추가
+
+-   <Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정
+
+</div>
+
+## Preview 1.105.17
+
+2023년 7월 20일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정</p>
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>트랜잭션</UI> 탭의 목록에서 <UI>T</UI> 및 <UI>U</UI> 버튼 선택 시 동작하지 않던 버그 수정
+
+-   <Status>Change</Status> <UI>대시보드</UI> > <UI>액티브 트랜잭션</UI> 메뉴에서 테이블 내 느린 트랜잭션 및 매우 느린 트랜잭션 표시 색상 수정
+
+### `Container`
+
+<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 간헐적으로 화이트 아웃 발생하는 버그 수정</p>
+
+</div>
+
+## Preview 1.105.16
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `共通`
+
+#### Flexボード
+
+<p><Status>Fixed</Status> 화면의 너비가 작아지면서 <UI>히트맵</UI> 위젯의 폭이 좁아지면 버튼 레이아웃이 메뉴 밖으로 벗어나는 현상 수정</p>
+
+#### 利用履歴
+
+-   <Status>Feature</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국가 선택에 따라 결제 진행 과정 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국내 '역발행 계좌 이체 등록' 미노출 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 프로모션 배너 변경
+
+-   <Status>Fixed</Status> <UI>결제 정보</UI> 메뉴에서 '해외 카드 등록'의 placeholder를 로케일 언어에 맞게 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>청구 및 납부 내역</UI> 메뉴에서 페이지 번호 개수 설정 버그 수정
+
+#### レポート
+
+<p><Status>Fixed</Status> 일간 애플리케이션 사용자 정의 보고서의 <b>방문자</b> 항목 제거</p>
+
+* * *
+
+### `Application`
+
+#### GO, PHP
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   **Heap 크기** → **_시스템 메모리_**, **Heap 사용량** → **_프로세스 메모리_**로 문구 변경
+
+    -   시스템 GC 버튼 제거
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   이름 컬럼의 크기가 줄어들면 말줄임표와 함께 마우스 오버 시 툴팁이 활성화되도록 수정
+
+    -   <UI>상세</UI> 버튼의 툴팁이 버튼 클릭 후에도 사라지지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI> > <UI>히트맵</UI> 위젯 드래그 > <UI>히트맵 트랜잭션</UI> > TX 트레이스 항목 선택 > <UI>통계</UI> 창에서 <UI>트랜잭션 로그</UI> 탭의 트랜잭션 로그가 미설정되었을 경우:
+
+    -   언어 설정이 일본어인 상태: 출력되는 안내 메시지의 줄바꿈 버그 수정
+
+    -   언어 설정이 한국어인 상태:  출력되는 안내 메시지의 스타일이 제대로 적용되도록 수정
+
+    -   출력되는 안내 메시지의 링크를 클릭할때 설정된 언어에 맞는 Docs 페이지로 이동하도록 수정
+
+#### 分析
+
+-   <Status>Fixed</Status> MSA 분석 메뉴에서 데이터를 조회했을 때 결과가 없으면 '데이터 없음' 안내 메시지가 나오도록 수정
+
+* * *
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 브라우저 에이전트 스크립트의 <code>config</code> 옵션으로 <code>proxyBaseUrl</code> 추가</p>
+
+</div>
+
+## Preview 1.105.15
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Change</Status> 클러스터 프로젝트일 때 <UI>퍼포먼스 요약</UI> 메뉴의 지표별 그룹 타이틀 표기 추가</p>
+
+![sample](/img/release/r-1_105_14-k8s-summary-cluster.png)
+
+</div>
+
+## Preview 1.105.14
+
+2023년 7월 17일
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 애플리케이션 모니터링 상품의 <code>app_user</code> 카테고리 내 <code>logbits</code> 필드 사용 시 MXQL 생성 로직에서 예외 처리 추가</p>
+
+* * *
+
+### `Application`
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status> 쿠버네티스 애플리케이션 프로젝트에서 <UI>트랜잭션 분석</UI> 창의 <UI>레코드 요약</UI> 탭 내용 중 <b>onode</b>를 표기를 <UI>에이전트 노드</UI>로 수정
+
+-   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 통계 모달의 차트가 보이지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 <UI>SQL 요약</UI>, <UI>메소드 요약</UI>, <UI>HTTP Call 요약</UI> 탭의 조회된 데이터가 없을 경우 안내 메시지 추가
+
+#### 分析
+
+<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 숫자 외 문자가 입력되지 않는 버그 수정</p>
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> <b>PostgreSQL V2</b>, <b>Mysql V2</b> 프로젝트에서 <UI>슬로우 쿼리</UI>, <UI>데이터베이스 사이즈</UI> 메뉴의 영어, 일본어 안내 지원</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Feature</Status> <UI>애플리케이션 에이전트 설치</UI> 메뉴에 <b>Docker PHP</b> 항목 추가</p>
+#### ダッシュボード
+
+-   <Status>Fixed</Status> <UI>멀티 컨테이너 맵</UI> 메뉴에서 <UI>네임스페이스</UI> 메뉴로 이동할 수 없도록 수정
+
+    ![sample](/img/release/r-1_105_14-k8s-multi-container-map.png)
+
+-   <Status>Change</Status> <UI>컨테이너 맵</UI> 메뉴의 상세 보기 패널에서 블록의 개수가 많은 경우 표기 방식 변경
+
+    ![sample](/img/release/r-1_105_14-k8s-container-map-details.png)
+
+</div>
+
+## Preview 1.105.13
+
+2023年7月13日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>プロジェクト作成メニューで<b>Node.js</b>,<b>Altibase</b>商品名の修正
+
+-   <Status>Fixed</Status>言語設定が日本の場合、サイドバーの<UI>グループ作成</UI>, <UI>プロジェクトの作成</UI>ボタンのテキストを英語で出力されるように修正
+
+* * *
+
+### `Application`
+
+-   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューでチャートのデザイン変更
+
+    |                          修正前                         |                         修正後                        |
+    | :--------------------------------------------------: | :------------------------------------------------: |
+    | ![before](/img/release/before-transaction-chart.png) | ![after](/img/release/after-transaction-chart.png) |
+
+-   <Status>Change</Status><UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューで一般トランザクションとエラートランザクションが重なる場合、エラーが先に表示されるように改善
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status> <UI>分析</UI>><UI>ページロードヒートマップ</UI>メニューでページグループフィルターと検索フィルターの追加
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ブラウザエラー</UI>><UI>エラー詳細</UI>メニューで背景スタイルを修正
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>メニューで次のように修正します。</p>
+
+-   **_アプリケーションエージェントの設定_** > **_Docker PHP_**
+
+    -   **_1. アクセスキーの確認_**セクションでアクセスキーのコピー領域の上段の小題目を削除
+
+    -   **_4. Kubernetes環境変数およびボリューム_**セクションの小題目のメッセージを削除
+
+-   **_アプリケーションエージェントの設定_**>すべてのインストールタイプ: **_1. アクセスキー確認_**セクションのメッセージの統一および**チャットでのお問い合わせ**テキストの左にアイコンを追加
+
+-   **_インストールの案内_**セクションで**_チャットでのお問い合わせ_**ボタンのアイコンをチャットトークのアイコンと統一
+
+-   ***クバネティスエージェントの設定***>**_KUBERNETES_**>**_3. クバネティスエージェントの作成_**セクションでOOM発生問題に関する案内メッセージを追加
+
+* * *
+
+### `実験室`
+
+<p><Status>Change</Status>(<b>Container</b>,<b>Java</b>商品のみ該当)<UI>Remote Access Status</UI>メニューで<b>ログ照会</b>権限のないメンバーも使用できるように変更</p>
+
+</div>
+
+## Preview 1.105.12
+
+2023年7月12日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### アラート通知
+
+-   <Status>Feature</Status><UI>イベント受信設定</UI>メニューで3rdパーティープラグインのWebhook JSON追加フォームに<b>ユーザーヘッダー</b>(<code>User-Heaer</code>)機能の追加
+
+    **ユーザーヘッダー**:key,valueペアで入力した情報をウェブフックで受信すると、ヘッダーで確認できます。 次はユーザーヘッダーのkey,valueを`User-Header-Key`,`TestValue`で入力した場合、ウェブフック受信情報に関する例です。
+
+    ```http {8} title='example'
+    POST /test HTTP/1.1
+    Host: whatap.requestcatcher.com
+    Accept: text/plain, application/json, application/*+json, */*
+    Connection: keep-alive
+    Content-Length: 234
+    Content-Type: application/json
+    User-Agent: Java/17.0.7
+    User-Header-Key: Test-Value
+    ```
+
+-   <Status>Fixed</Status>3rdパーティープラグイン追加を完了した後、ウィンドウが閉じれない問題を修正
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status><UI>トランザクション分析</UI>ウィンドウで<UI>レコード要約</UI>タブでトランザクション名が画面より長い場合、正常に表示されるように修正
+
+-   <Status>Change</Status><UI>トランザクション分析</UI>ウィンドウで<UI>ツリービュー</UI>タブででレイアウト幅を修正
+
+#### Flexボード
+
+-   <Status>Fixed</Status>ダッシュボードコピーボタンをクリックすると、メニューが表示されない現象の修正
+
+-   <Status>Fixed</Status>ダッシュボードコピーウィンドウに漏れ落ちた多国語（英語）の修正
+
+-   <Status>Change</Status> 대시보드 <UI>다른 사람에게 복사</UI> 기능 이용 시 대시보드 제목에 <b>copied_</b> prefix 추가
+
+</div>
+
+## Preview 1.105.11
+
+2023年7月11日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>グループ作成機能が正常動作しているにもかかわらず、エラーメッセージが出力される現象の修正
+
+-   <Status>Fixed</Status><UI>プロジェクト一覧</UI>メニューでサイズ調節されないバグの修正
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで<LinkImage img='ico-compare.svg' desc='비교하기 아이콘'/>(<UI>比較する</UI>)オプションをクリックすると、表示されるカラムヘッダーのテキストが途切れる現象を文字列に修正
+
+    -   韓国語:　比較する→比較
+    -   日本語:　ステータス → 状態
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで上段のオプションボタンが同時に活性化されないように修正
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status><UI>ログ</UI>><UI>ライブテール</UI>メニューでテーブルrowを開いてから閉じるとrowの高さが開かれる前に戻らない現象の修正
+
+-   <Status>Change</Status><UI>ログ</UI>><UI>ログ検索</UI>メニューでタグ<UI>隣接ログ</UI>検索時<UI>時間選択</UI>オプションを変更
+
+* * *
+
+### `実験室`
+
+<p><Status>New</Status><UI>実験室</UI>メニューで<UI>統合ログファインダー</UI>追加</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>><UI>アプリケーションエージェントの設定</UI>メニューで<UI>Docker PHP</UI>タブ<UI>モニタリングを開始する</UI>項目のイメージが多国語の設定に従わず、韓国語のダッシュボードイメージを出力する現象を修正</p>
+
+</div>
+
+## Preview 1.105.10
+
+2023年7月11日
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status>Fixed</Status>サーバープロジェクトに入ると、画面が表示されないバグの修正
+
+</div>
+
+## Preview 1.105.09
+
+2023年7月10日
+
+<div class='indentTab'>
+
+### `Container`
+
+-   <Status>Feature</Status><UI>マルチコンテナマップ</UI>メニューの追加
+
+### `Log`
+
+#### ログ検索
+
+-   <Status>Fixed</Status><UI>フィルター</UI>入力欄に<code>category</code>を入力するか、左のサイドメニューで選択すると<code>category==+none</code>が入力される現象の修正
+
+-   <Status>Fixed</Status> <UI>フィルター</UI>入力欄に<code>category</code>が入力された状態では追加<code>category</code>が入力されない現象の修正
+
+-   <Status>Fixed</Status><UI>フィルター</UI>入力欄で重複値が入力されないように修正
+
+</div>
+
+## Preview 1.105.08
+
+2023年7月10日
+
+<div class='indentTab'>
+
+### `Container`
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューでログ権限チェックロジックを削除
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューでイベントログのTagを隠せるオプションを追加
+
+</div>
+
+## Preview 1.105.07
+
+2023年7月7日
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューで<UI>アラートルールテスト</UI>チャートでマウスホバーすると、同時に複数のチャートのデータが表示されるように修正</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status><UI>アプリケーションエージェントのインストール</UI>メニューで<b>Docker PHP</b>項目を追加</p>
 
 </div>
 
 ## Preview 1.105.06
 
-2023년 7월 6일
+2023年7月6日
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Fixed</Status> 조직에 속한 프로젝트 메뉴에서 새로고침 시 무한 로딩 현상 수정
+-   <Status>Fixed</Status>グループに属したプロジェクトメニューで更新すると、ローディングが無限に続く現象の修正
 
--   <Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 즐겨찾기 기능 사용 시 사이드 바 메뉴에 추가되지 않는 현상 수정
+-   <Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボードお気に入り機能を使うと、サイドバーがメニューに追加されない現象の修正
 
--   <Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 실시간 조회 시 최초 호출을 제외한 업데이트 API 요청에 대해 60초 타임아웃 설정
+-   <Status>Fixed</Status> <UI>Flexボード</UI>メニューでリアルタイムで照会すると、最初の呼び出しを除くアップデートAPIリクエストに関して60秒のタイムアウトの設定
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 유효하지 않은 멀티 트랜잭션 ID가 노출되는 현상 수정
+-   <Status>Fixed</Status> <UI>トランザクション分析</UI>ウィンドウで有効でないマルチトランザクションIDが表示される現象を修正
 
 * * *
 
 ### `Application`
 
-<p><Status>Change</Status> <UI>통계</UI>, <UI>히트맵</UI> 메뉴에서 검색 기능(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)을 사용하면 시간 선택자의 <UI>최근 검색 시간</UI> 목록에 최근 검색 시간을 추가하도록 변경</p>
+<p><Status>Change</Status><UI>統計</UI>,<UI>ヒートマップ</UI>メニューで検索機能(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)を使うと時間セレクタの<UI>最近検索時間</UI>一覧に最近の検索時間を追加するように変更</p>
 
 </div>
 
 ## Preview 1.105.05
 
-2023년 7월 5일
+2023年7月5日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Change</Status> 비밀번호 유효성 체크 로직 변경</p>
+<p><Status>Change</Status>パスワード有効性チェックのロジックを変更</p>
 
--   최소 9자리의 영어 소문자 및 대문자, 숫자, 특수 문자 중 3종류 이상
+-   最低９桁のアルファベットの小文字および大文字、数字、特殊記号で３種以上の組み合わせ
 
--   이메일과 동일한 비밀번호 사용 불가
+-   Eメールと同じパスワードの使用不可
 
--   기존에 사용한 비밀번호와 동일한 비밀번호 사용 불가
+-   既存に使用したパスワードと同一のパスワード使用不可
 
--   연속된 키보드 배열이 포함된 비밀번호 사용 불가
+-   連続するキーボード配列に含まれたパスワード使用不可
 
--   연속된 알파벳이 포함된 비밀번호 사용 불가
+-   連続するアルファベットを含むパスワード使用不可
 
--   연속된 숫자가 포함된 비밀번호 사용 불가
+-   連続する数字を含むパスワード使用不可
 
--   현재 비밀번호와 동일한 비밀번호 사용 불가
+-   現在使用しているパスワードと同一のパスワード使用不可
 
 * * *
 
 ### `Container`
 
-<p><Status>Change</Status> <UI>로그</UI> > <UI>로그 설정</UI> 메뉴에서 노드 에이전트 로그 설정을 사용자 편의성을 위해 옵션을 직접 입력하지 않고 버튼 클릭만으로 적용되도록 변경</p>
+<p><Status>Change</Status> <UI>ログ</UI> > <UI>ログ設定</UI>メニューでのノードエージェントログ設定に対し、ユーザーの利便性のためにオプションを直接入力せず、ボタンクリックだけで適用されるように変更</p>
 
 * * *
 
 ### `URL`
 
-<p><Status>Fixed</Status> <UI>URL 목록</UI> 메뉴의 <UI>URL 추가하기</UI> 기능 이용 시 <UI>확인 지역</UI> 섹션의 중복된 항목 제거</p>
+<p><Status>Fixed</Status> <UI>URL一覧</UI>メニューの<UI>URLを追加する</UI>機能利用時<UI>確認地域</UI>セクションの重複項目を削除</p>
 
 </div>
 
 ## Preview 1.105.04
 
-2023년 7월 5일
+2023年7月5日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 다음 메뉴 경로에서 <UI>Key</UI> 검색 상자에 한글자만 입력하면 검색 상자 밖으로 포커스가 벗어나는 현상 수정</p>
+<p><Status>Fixed</Status>次のメニューのパスで<UI>Key</UI>検索ボックスに一文字だけ入力すると検索ボックス外にフォーカスが外れる現象の修正</p>
 
--   <UI>애플리케이션</UI> > <UI>인스턴스 성능 분석</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>アプリケーション</UI>><UI>インスタンスパフォーマンス分析</UI>><UI>エージェント設定</UI>(旧バージョン)
 
--   <UI>관리</UI> > <UI>에이전트 설정</UI> > <UI>이전 버전</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>管理</UI>><UI>エージェント設定</UI>><UI>旧バージョン</UI>><UI>エージェント設定</UI>(旧バージョン)
 
 </div>
 
 ## Preview 1.105.03
 
-2023년 7월 4일
+2023年7月4日
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 조회 버튼을 클릭하면 데이터가 출력되지 않고 로딩만 표시되는 버그 수정</p>
+<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューで照会ボタンをクリックすると、データが出力されずローディングのみ表示されるバグの修正</p>
 
 </div>
 
 ## Preview 1.105.02
 
-2023년 7월 4일
+2023年7月4日
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Change</Status> 시간 선택자의 에러 메시지 텍스트 스타일 수정
+-   <Status>Change</Status>時間セレクターのエラーメッセージ テキストのスタイルを修正
 
 #### ダッシュボード
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 SQL 바인드 암호화 해제 후 바인드 텍스트가 일부만 표시되는 버그 수정
+-   <Status>Fixed</Status> <UI>トランザクション分析</UI>ウィンドウでSQLバインド暗号化を解除した後、バインドテキストが一部だけ表示されるバグを修正
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 멀티 트랜잭션의 트랜잭션 분석 창을 재진입하면 <UI>레코드</UI> 탭에서 화이트 아웃 발생 버그 수정
+-   <Status>Fixed</Status> <UI>トランザクション分析</UI>ウィンドウでマルチトランザクションのトランザクション分析ウィンドウに再進入すると<UI>レコード</UI>タブでホワイトアウト現象が発生するバグを修正
 
 * * *
 
 #### 管理
 
-<p><Status>Fixed</Status> <UI>조직 생성</UI> 메뉴에서 일본어 문구 수정</p>
+<p><Status>Fixed</Status> <UI>組織作成</UI>メニューで日本語テキストを修正</p>
 
 ### `Log`
 
--   <Status>Fixed</Status> <UI>로그 설정</UI> 메뉴에서 로그 모니터링 메시지, 일본어 수정
+-   <Status>Fixed</Status> <UI>ログ設定</UI>メニューでログモニタリングメッセージと日本語を修正
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>로그</UI> > <UI>이벤트 추가</UI> 창에서 <UI>이벤트 대상 필터링</UI> 항목을 <UI>선택 입력</UI>으로 선택하면 나타나는 UI 버그 수정
+-   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント設定</UI> > <UI>ログ</UI> > <UI>イベント追加</UI> ウィンドウで<UI>イベント対象フィルタリング</UI>項目を<UI>選択入力</UI>で選択すると現れるUIバグを修正
 
 </div>
 
 ## Preview 1.105.01
 
-2023년 7월 3일
+2023年7月3日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> 프로젝트 생성 후 자동으로 새로고침되지 않는 현상 수정</p>
+<p><Status>Fixed</Status>プロジェクトを生成した後、自動で更新されない現象の修正</p>
 
 #### ダッシュボード
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 트랜잭션 목록 조회 시 에이전트 필터가 적용되지 않는 버그 수정
+-   <Status>Fixed</Status> <UI>トランザクション分析</UI>ウィンドウでトランザクション一覧を照会する時にエージェントフィルターが適用されないバグを修正
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 로그 미 설정 프로젝트의 경우 트랜잭션 로그 탭이 노출되는 버그 수정
+-   <Status>Fixed</Status> <UI>トランザクション分析</UI>ウィンドウでログ未設定プロジェクトの場合、トランザクションログタブが表示されるバグを修正
 
 #### Flexボード
 
-<p><Status>Change</Status> 통합 Flex 보드 메뉴에서 대시보드의 모든 프로젝트에 대한 수정 권한이 없어도 공유 버튼을 노출하도록 수정</p>
+<p><Status>Change</Status>統合Flexボードメニューでダッシュボードのすべてのプロジェクトに対する修正権限がなくても共有ボタンを表示するように修正</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> Python 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>에이전트 다운로드</UI> 섹션의 다운로드 명령어 수정
+-   <Status>Fixed</Status>Pythonプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>エージェントのダウンロード</UI>セクションのダウンロードコマンドの修正
 
--   <Status>Fixed</Status> Java 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>JVM 옵션 추가</UI> 섹션의 JVM 옵션 코드 수정
+-   <Status>Fixed</Status>Javaプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>JVMオプション追加</UI>セクションのJVMオプションコードの修正
 
--   <Status>Fixed</Status> Node.js 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 Node.js 지원 버전 문구 수정
+-   <Status>Fixed</Status>Node.jsプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューでNode.jsサポートバージョンのメッセージを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 비교할 서버 선택하면 <UI>기간 조회</UI> 버튼이 활성화되지 않는 버그 수정
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで比較するサーバーを選択すると<UI>期間照会</UI>ボタンがアクティブ化されないバグの修正
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 기록</UI> 메뉴에서 <UI>처리내역</UI> 추가 시 이벤트 ID가 DB에 저장되지 않는 버그 수정
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント履歴</UI>メニューで<UI>処理内容</UI>追加するとイベントIDがDBに保存されないバグの修正
 
 </div>
 
@@ -210,7 +638,7 @@ toc_max_heading_level: 2
 
 ### `Application`
 
-<p><Status>Fixed</Status> 트랜잭션 모달의 <UI>로그</UI> 탭 스타일 수정</p>
+<p><Status>Fixed</Status>トランザクションモーダルの<UI>ログ</UI>タブスタイルを修正</p>
 
 * * *
 
@@ -226,7 +654,7 @@ toc_max_heading_level: 2
 
 ### `Database`
 
-<p><Status>New</Status> MySQL 모니터링 V2 서비스를 오픈했습니다. 従来に比べて変更された機能を確認するには<a href='../../mysql/monitoring-intro#new-feature'>次の文書</a>を参考にしてください。</p>
+<p><Status>New</Status> MySQLモニタリングV2サービスをオープンしました。 従来に比べて変更された機能を確認するには<a href='../../mysql/monitoring-intro#new-feature'>次の文書</a>を参考にしてください。</p>
 
 * * *
 

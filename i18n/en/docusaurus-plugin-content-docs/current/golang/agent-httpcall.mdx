@@ -1,37 +1,25 @@
 ---
 id: agent-httpcall
-title: Tracing the HTTP calls
-description: It provides the options related to the Go agent's HTTP calls.
+title: HTTPC, API Call
+description: It provides the options regarding the PHP agent's HTTPC and API call.
 tags:
   - Go
-  - Tracing HTTPs
+  - HTTPC
+  - API Call
 ---
 
-```go title='GO'
-func main(){
-    trace.Init(nil)
-    //It must be executed before closing the app.
-    defer trace.Shutdown()
+-   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
-    ctx, _ := trace.Start(context.Background(), "Trace Http Call")
-    defer trace.End(ctx, nil)
+    Default `true`
 
-	httpcCtx, _ := httpc.Start(ctx, callUrl)
-    resp, err := http.Get(callUrl)
-    if err == nil {
-    	httpc.End(httpcCtx, resp.StatusCode, "", nil)
-    } else {
-    	httpc.End(httpcCtx, 0, "", err)
-    }
-}
-```
+    It enables the function to parse and normalize HTTPC URLs for transactions.
 
-**API**
+-   **trace_httpc_normalize_urls** <span class='type'>String</span>
 
-```go title='GO'
-func Start(ctx context.Context, url string) (*HttpcCtx, error)
+    Define the HTTPC URL patterns to normalize. It deletes the path parameter after parsing the call URL patterns.
 
-func End(httpcCtx *HttpcCtx, status int, reason string, err error) error
+    :::note
 
-func Trace(ctx context.Context, host string, port int, url string, elapsed int, status int, reason string, err error) error
-```
+    For example, if declared as **/a/{v}/b**, **a/123/b** is replaced by **a/{v}/b**. For multiple values, use comma (,) as the delimiter. A complement is required after arranging substitution patterns.
+
+    :::

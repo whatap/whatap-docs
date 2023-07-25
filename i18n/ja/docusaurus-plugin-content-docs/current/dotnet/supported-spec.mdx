@@ -30,11 +30,11 @@ tags:
 
     -   ADO.NET（Database）
 
--   **데이터베이스**: MS SQL, Oracle, MySQL 등 ADO.NET을 지원하는 모든 데이터 베이스 및 Radis
+-   **データベース**：MS SQL、Oracle、MySQLなどADO.NETに対応するすべてのデータベースおよびRadis
 
 ## サーバ対応環境分析方法
 
-### 分析ツールダウンロード
+### 分析ツールダウンロード{#download-tools}
 
 エージェントをインストールするサーバーの対応環境がよくわからない場合は、次のリンクを通じて分析ツールをダウンロードしてください。
 
@@ -42,7 +42,7 @@ tags:
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
 
-### 分析ツールの使用
+### 分析ツールの使用{#use-tools}
 
 1.  ダウンロードした分析ツールを実行してください。
 
@@ -56,11 +56,17 @@ tags:
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
+5.  IIS에 설치된 사이트마다 **.NET Framework** 버전이 v4.0으로 표시되는지 확인하세요.
+
+    ![](/img/apm-dotnet-analystic-env-03.png)
+
+    ![숫자 5](/img/number-05.png)의 경우 지원 범위이지만 _web.config_ 파일이 없습니다. 이러한 경우 대부분은 **.NET**을 사용하지 않는 ASP, PHP 등의 사이트로 에이전트가 동작하지 않습니다.
+
 :::note
 
 -   **.NET Framework**は、4.8.1バージョン以降に対応しています。
 
--   **.NET Core**バージョンは、開発中です。
+-   **Core** 또는 **.NET 5** 버전 이상이면 지원하지 않습니다. **.NET Core** 버전은 개발 중입니다
 
 :::
 

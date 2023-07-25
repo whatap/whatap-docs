@@ -9,8 +9,40 @@ tags:
 
 When the application server runs, it starts collecting the monitoring data. The collected data is stored in the log file.
 
-**log_keep_days** <span class='type'>Int</span>
+## Log setting
+
+**log_keep_days** <span class='type'>Day</span>
 
   Default `7`
 
   Set the retention period of log files.
+
+## Setting the LogSink
+
+It is used to log data. See the following example.
+
+```ini title='whatap.conf'
+logsink_enabled=true
+logsink_zip_enabled=true
+logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
+```
+
+### Default settings
+
+-   **logsink_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If the value is `true`, the log data is collected.
+
+-   **logsink_zip_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    If the value is `true`, the zipped log data is transmitted. The default value is GZIP.
+
+### Setting the log file
+
+-   **logsink.files** <span class='type'>String</span>
+
+    You can set the full path and file name of the log file to be collected. To set multiple files, use comma (,) as the delimiter.

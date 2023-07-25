@@ -7,11 +7,25 @@ Metrics events are used to set more specific and complex events than basic event
 -   Metrics Event
 -   Composite metrics event
 
+<Xclude product='npm'>
+
 :::note
 
 For more information about the metrics, see [the following](metrics-intro).
 
 :::
+
+</Xclude>
+
+<InDoc product='npm'>
+
+:::note
+
+For more information about metrics, see [the following](../metrics/common-metrics-intro).
+
+:::
+
+</InDoc>
 
 ## Metrics Event
 
@@ -105,7 +119,18 @@ You can check how many alerts have occurred by enabling the event conditions you
 
 To use the **_composite metrics events_**, you have to understand the following concepts:
 
+<Xclude product='npm'>
+
 -   [What is the metrics?](metrics-intro)
+
+</Xclude>
+
+<InDoc product='npm'>
+
+-   [What is the metrics?](../metrics/common-metrics-intro)
+
+</InDoc>
+
 -   [MXQL](../mxql/mxql-overview)
 
 The **_composite metrics event_** can generate events by using more complex rules along with the metrics data and send alerts. Composite metrics can be used effectively in the following situations:
@@ -374,7 +399,7 @@ isNotEmpty(Key)
 
 ## Template{#template}
 
-<Xclude product='browser'>
+<Xclude product='browser,npm'>
 
 ![Composite Metrics - Template](/img/set-event-cmetric-template.png)
 
@@ -455,5 +480,35 @@ In **_Alert_** > **_Event Setting_** > **_Composite Metrics_**, select **_+ Add 
 -   **_Browser Error Count or more per minute_**
 
     If the browser error count per minute of the page group (`${page_group}`) is 10 or more, the corresponding alert is sent.
+
+</InDoc>
+
+<InDoc product='npm'>
+
+The alert templates are provided as follows. 
+
+#### Metrics Event Templates
+
+In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add alert policy_**. Select a desired item in **_Templates_**.
+
+-   **_Jitter > 30ms_**
+
+    **jitter**가 30/ms를 초과하면 경고 알림을 보냅니다.
+
+-   **_Latency > 200ms_**
+
+    **latency**가 200/ms를 초과하면 경고 알림을 보냅니다.
+
+-   **_Bps > 128 Mib/s_**
+
+    **bps**가 128Mib/s를 초과하면 경고 알림을 보냅니다.
+
+-   **_Pps > 50k/s_**
+
+    **pps**가 50k/s를 초과하면 경고 알림을 보냅니다.
+
+-   **_Sessions > 100_**
+
+    고유 세션 수가 100을 넘어가면 경고 알림을 보냅니다.
 
 </InDoc>

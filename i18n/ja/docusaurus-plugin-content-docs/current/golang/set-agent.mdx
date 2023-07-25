@@ -7,53 +7,11 @@ tags:
   - 設定
 ---
 
-Go環境のアプリケーションサーバーは、ライブラリを利用して設定します。
+WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
 
-```go title='Download library'
-$ go get github.com/whatap/go-api
-```
+別途の設定がない場合、エージェントは自分自身が位置するパスで_whatap.conf_ファイルを探すように実装しました。5秒に1回_whatap.conf_ファイルの変更有無をチェックしてリロードします。
 
-## 初期設定
-
--   main関数の最初で`trace.Init`関数を利用してモニタリングモジュールを開始してください。
-
--   `defer trace.Shutdown()`でモニタリング終了を保証します。
-
-```go title='GO'
-import "github.com/whatap/go-api/trace"
-
-func main(){
-    trace.Init(nil)
-    //It must be executed before closing the app.
-    defer trace.Shutdown()
-	...
-}
-```
-
-`map[string]string`形式として宣言して、アプリケーションの初期設定ができます。
-
-```go title='GO'
-func Init(m map[string]string)
-```
-
-エージェントの接続情報は、UDP 127.0.0.1:6600です。内部でUDP 6600番ポートが使用中の場合は、別のポート番号に変更する必要があります。
-
-```go title='GO'
-m := make(map[string]string)
-m["net_udp_port"] = "6601"
-
-trace.Init(m)
-```
-
-アプリケーション実行中の設定変更は、_whatap.conf_ファイルを直接修正したり、WhaTapモニタリングサービスのプロジェクトメニューから変更することができます。
-
-アプリケーションを終了する時、収集したデータを最後にすべて転送し、UDP Connectionを終了します。
-
-```go title='GO'
-func Shutdown()
-```
-
-import ProdImg from '@site/src/components/ChangeImgName.js';
+ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io/)でもエージェント設定機能を提供しています。
 
 <!--서비스 화면에서 에이전트 설정하기 start-->
 

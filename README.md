@@ -83,3 +83,6 @@ aws-log-lt.mdx
 i18n/ja/docusaurus-plugin-content-docs/current/telegraf/introduction.mdx 국문 파일 인덴트 수정
 
 license-open-sources -> ``` 삭제할 것
+
+
+install-aws-log-vpc.mdx -> 인덴트 확인 필요

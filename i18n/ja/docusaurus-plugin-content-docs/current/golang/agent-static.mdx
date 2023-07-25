@@ -1,0 +1,56 @@
+---
+id: agent-static
+title: 統計
+description: Goエージェント統計に関する説明です。
+tags:
+  - 統計
+  - Go
+  - 設定
+  - アプリケーション
+---
+
+-   **stat_domain_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    ドメインごとにトランザクション統計を収集します。
+
+-   **stat_domain_max_count** <span class='type'>Int</span>
+
+    デフォルト値`7000`
+
+    5分間に収集するドメインごとのトランザクション統計の最大レコード数です。
+
+-   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    マルチサーバートランザクションで、Caller&Callee間のバージョンごとの依存関係の統計を収集します。
+
+-   **mtrace_spec** <span class='type'>String</span>
+
+    デフォルト値`v1`
+
+    現インスタンスのアプリケーションバージョンを指定します。 ランダムの文字列を指定できます。 このデータは、呼び出し統計に使用されます。 
+
+-   **stat_mtrace_max_count** <span class='type'>Int</span>
+
+    デフォルト値`7000`
+
+    マルチサーバートランザクションにおけるCaller&Callee間のバージョンごとの依存関係の統計の最大レコード数です。
+
+-   **stat_referer_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Referer別のトランザクション統計を収集します。
+
+-   **stat_referer_max_count** <span class='type'>Int</span>
+
+    デフォルト値`7000`
+
+    5分間に１つのJVMで収集されるRefererごとのトランザクション統計の最大レコード数です。
+
+-   **whatap.okind** <span class='type'>String</span>
+
+    グループトポロジーのためにランダムに付与します。 複数のエージェントを一緒に指定して、そのグループ名でトポロジを確認できます。

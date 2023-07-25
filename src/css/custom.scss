@@ -625,6 +625,9 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
+    header + div[class*='fbsharebutton'] {
+      display: none;
+    }
     h1 {
       padding-top: 8px;
       &:first-child {
@@ -664,6 +667,9 @@ main {
       }
       > details {
         margin-left: 50px;
+      }
+      li p img {
+        margin-top: 8px;
       }
     }
     h2, h3 {
@@ -953,6 +959,19 @@ main {
       padding: 9px 0;
       font-weight: bold;
     }
+    span.set-noti {
+      padding: 1px 5px;
+      border-radius: 5px;
+      font-size: .85rem;
+      color: #fff;
+      font-weight: bold;
+    }
+    span.occur {
+      background-color: rgb(0, 181, 67);
+    }
+    span.resolve {
+      background-color: rgb(117, 117, 117);
+    }
     .mark {
       width: 20px;
       vertical-align: text-top;
@@ -1106,6 +1125,12 @@ main {
     }
     img[alt*='light'], img[alt*='dark'] {
       background-color: #fff;
+    }
+    img[src*='flexboard-time-set'] {
+      width: 306px;
+    }
+    img[src*='flexboard-time-set-pause.png'], img[src*='flexboard-time-set-select.png'] {
+      width: 600px;
     }
     ol {
       margin: 0;
@@ -1667,6 +1692,16 @@ main {
     }
   }
 }
+@media (max-width: 996px) {
+  main {
+    .markdown > header + div[class*='fbsharebutton'] {
+      display: block;
+      margin-top: -15px;
+      margin-bottom: 9px;
+      position: relative;
+    }
+  }
+}
 @media all and (max-width: 1600px) {
   main {
     .markdown {
@@ -1734,7 +1769,6 @@ main {
   .flex-container-s {
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  
 }
 
 @media (max-width: 799px) and (max-width: 560px) {

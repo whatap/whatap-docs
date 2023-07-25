@@ -4,151 +4,362 @@ title: Service 1.104.X
 toc_max_heading_level: 2
 ---
 
-## Service 1.104.11
+## Service 1.104.19
 
-2023년 7월 7일
+2023년 7월 21일
 
 <div class='indentTab'>
 
+### `Common`
+
+-   <Status>Fixed</Status> <UI>보고서</UI> 메뉴에서 타임아웃 발생 시 보고서 생성이 정상적으로 완료되지 않는 버그 수정
+
+-   <Status>Change</Status> <UI>보고서</UI> 메뉴에서 보고서 생성 시 UI 로딩 표시 형식 변경
+
+* * *
+
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 차트로 마우스 호버 시 동시에 여러 차트의 데이터가 표시되도록 수정</p>
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 이벤트 탭에서 알림 규칙 테스트 차트에 id 대신 name 관련 데이터 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 시간 범위 조작 후 새로 고침 시 시간 초기화 버그 수정
+
+</div>
+
+## Service 1.104.18
+
+2023년 7월 20일
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> 에이전트에서 throttle이 설정되어 API 요청 제한 시 안내 메시지 추가
+
+-   <Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정
+
+</div>
+
+## Service 1.104.17
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `Common`
+
+#### My Usage
+
+-   <Status>Feature</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국가 선택에 따라 결제 진행 과정 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국내 '역발행 계좌 이체 등록' 미노출 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 프로모션 배너 변경
+
+-   <Status>Fixed</Status> <UI>결제 정보</UI> 메뉴에서 '해외 카드 등록'의 placeholder를 로케일 언어에 맞게 표시되도록 수정
+
+#### Report
+
+<p><Status>Fixed</Status> 일간 애플리케이션 사용자 정의 보고서의 <b>방문자</b> 항목 제거</p>
+
+* * *
+
+### `Application`
+
+#### GO, PHP
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   **Heap 크기** → **_시스템 메모리_**, **Heap 사용량** → **_프로세스 메모리_**로 문구 변경
+
+    -   시스템 GC 버튼 제거
+
+#### Dashboard
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   이름 컬럼의 크기가 줄어들면 말줄임표와 함께 마우스 오버 시 툴팁이 활성화되도록 수정
+
+    -   <UI>상세</UI> 버튼의 툴팁이 버튼 클릭 후에도 사라지지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI> > <UI>히트맵</UI> 위젯 드래그 > <UI>히트맵 트랜잭션</UI> > TX 트레이스 항목 선택 > <UI>통계</UI> 창에서 <UI>트랜잭션 로그</UI> 탭의 트랜잭션 로그가 미설정되었을 경우:
+
+    -   언어 설정이 일본어인 상태: 출력되는 안내 메시지의 줄바꿈 버그 수정
+
+    -   언어 설정이 한국어인 상태:  출력되는 안내 메시지의 스타일이 제대로 적용되도록 수정
+
+    -   출력되는 안내 메시지의 링크를 클릭할때 설정된 언어에 맞는 Docs 페이지로 이동하도록 수정
+
+#### Analytics
+
+-   <Status>Fixed</Status> MSA 분석 메뉴에서 데이터를 조회했을 때 결과가 없으면 '데이터 없음' 안내 메시지가 나오도록 수정
+
+* * *
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 브라우저 에이전트 스크립트의 `config` 옵션으로 `proxyBaseUrl` 추가</p>
+
+</div>
+
+## Service 1.104.16
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Analytics
+
+<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 입력 길이 제한 로직 제거</p>
+
+</div>
+
+## Service 1.104.15
+
+2023년 7월 17일
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Analytics
+
+<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 숫자 외 문자가 입력되지 않는 버그 수정</p>
+
+</div>
+
+## Service 1.104.14
+
+July 13, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In the Japanese version, modified the sidebar texts for <UI>Create group</UI> and <UI>Create project</UI> buttons to be displayed in English.</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Feature</Status> <UI>애플리케이션 에이전트 설치</UI> 메뉴에 <b>Docker PHP</b> 항목 추가</p>
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, modified as follows.</p>
+
+-   **_Application Agent Installation_** > **_Docker PHP_**
+
+    -   Deleted the subtitle at the top of the access key copying area in the _**Verify Access Key**_ section.
+
+    -   Deleted the subtitle from the _**Kubernetes environment variables and volumes**_ section.
+
+-   **_Application agent installation_** > all installation types: Unified the wording in the _**Verify Access Key**_ section and added an icon to the left of the **Chat contact** text.
+
+-   In the **_Install guide_** section, unified the icon on the **_Chat contact_** button with the channel talk icon.
+
+-   **_Kubernetes agent installation_** > **_KUBERNETES_** > Added a guide message regarding the OOM issues in the _**Kubernetes agent creation**_ section.
+
+</div>
+
+## Service 1.104.13
+
+July 12, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Flex Board
+
+-   <Status>Fixed</Status> Fixed the issue where the menu does not appear upon clicking the dashboard copy button.
+
+-   <Status>Fixed</Status> Added missing multilingual (English) texts in the dashboard copy window.
+
+-   <Status>Change</Status> When using the <UI>Copy to others</UI> function, added the **copied_** prefix in the dashboard title.
+
+</div>
+
+## Service 1.104.12
+
+July 11, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Modified the problem where the error message appears when the organization creation works normally.</p>
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> In <UI>Server list</UI>, fixed the string by truncating the column header text that appears when clicking the <LinkImage img='ico-compare.svg' desc='비교하기 아이콘'/> (<UI>Compare</UI>) option.
+
+    -   Korean: 비교하기 → 비교
+    -   Japanese: ステータス → 状態
+
+-   <Status>Fixed</Status> In <UI>Server list</UI>, modified not to simultaneously enable the option buttons at the top.
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI> > <UI>Application agent installation</UI>, modified the issue where a Korean dashboard image is output for the <UI>Start monitoring</UI> image in the <UI>Docker PHP</UI> tab without following the multilingual setting.</p>
+
+* * *
+
+### `Laboratory`
+
+<p><Status>New</Status> In <UI>Laboratory</UI>, added <UI>Integrated log search</UI>.</p>
+
+</div>
+
+## Service 1.104.11
+
+July 7, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, modified to display data from multiple charts at the same time when hovering your mouse on the <UI>Testing event rules</UI> chart.</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status> In <UI>Application Agent Installation</UI>, added the <b>Docker PHP</b> item.</p>
 
 </div>
 
 ## Service 1.104.10
 
-2023년 7월 6일
+July 6, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 즐겨찾기 기능 사용 시 사이드 바 메뉴에 추가되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, fixed the issue where it is not added to the sidebar menu when using the Dashboard Favorite function.</p>
 
 * * *
 
 ### `Application`
 
-<p><Status>Change</Status> <UI>통계</UI>, <UI>히트맵</UI> 메뉴에서 검색 기능(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)을 사용하면 시간 선택자의 <UI>최근 검색 시간</UI> 목록에 최근 검색 시간을 추가하도록 변경</p>
+<p><Status>Change</Status> In <UI>Statistics</UI> and <UI>HITMAP</UI>, if you use the search function (<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>), modified to add the recent search time in the <UI>Last Time Searched</UI> list of the time selector.</p>
 
 </div>
 
 ## Service 1.104.09
 
-2023년 7월 6일
+July 6, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 조직에 속한 프로젝트 메뉴에서 새로고침 시 무한 로딩 현상 수정</p>
+<p><Status>Fixed</Status> Fixed the infinite loading problem when refreshing in the project menu within the organization.</p>
 
 </div>
 
 ## Service 1.104.08
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Change</Status> 비밀번호 유효성 체크 로직 변경</p>
+<p><Status>Change</Status> Modified the password validation logic.</p>
 
--   최소 9자리의 영어 소문자 및 대문자, 숫자, 특수 문자 중 3종류 이상
+-   Use at least 9 characters with 3 combinations among English lowercase and uppercase letters, numbers, and special characters.
 
--   이메일과 동일한 비밀번호 사용 불가
+-   The same password as your email cannot be used.
 
--   기존에 사용한 비밀번호와 동일한 비밀번호 사용 불가
+-   The same password as the one you used cannot be used.
 
--   연속된 키보드 배열이 포함된 비밀번호 사용 불가
+-   A password containing consecutive keyboard arrangements is not allowed.
 
--   연속된 알파벳이 포함된 비밀번호 사용 불가
+-   A password containing consecutive alphabets is not allowed.
 
--   연속된 숫자가 포함된 비밀번호 사용 불가
+-   A password containing consecutive numbers is not allowed.
 
--   현재 비밀번호와 동일한 비밀번호 사용 불가
+-   The same password as the current one cannot be used.
 
 </div>
 
 ## Service 1.104.07
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 다음 메뉴 경로에서 <UI>Key</UI> 검색 상자에 한글자만 입력하면 검색 상자 밖으로 포커스가 벗어나는 현상 수정</p>
+<p><Status>Fixed</Status> In the following menu path, fixed the problem where the focus goes out of the search box if you enter a single character in the <UI>Key</UI> search box.</p>
 
--   <UI>애플리케이션</UI> > <UI>인스턴스 성능 분석</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>Application</UI> > <UI>Instance performance analysis</UI> > <UI>Agent CONFIG.</UI> (Old versions)
 
--   <UI>관리</UI> > <UI>에이전트 설정</UI> > <UI>이전 버전</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>Management</UI> > <UI>Agent CONFIG.</UI> > <UI>Previous version</UI> > <UI>Agent CONFIG.</UI> (Old versions)
 
 </div>
 
 ## Service 1.104.06
 
-2023년 7월 5일
+July 5, 2023
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 실시간 조회 시 최초 호출을 제외한 업데이트 API 요청에 대해 60초 타임아웃 설정</p>
+<p><Status>Fixed</Status> In <UI>Flex Board</UI>, set the timeout of 60 seconds for API update requests except for the initial call during real-time query.</p>
 
 </div>
 
 ## Service 1.104.05
 
-2023년 7월 4일
+July 4, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 조회 버튼을 클릭하면 데이터가 출력되지 않고 로딩만 표시되는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Resource</UI> > <UI>Container volume</UI>, fixed the bug where no data is output and only loading is displayed if you click the Show button.</p>
 
 </div>
 
 ## Service 1.104.04
 
-2023년 7월 4일
+July 4, 2023
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 데이터가 출력되지 않고 무한 로딩되는 현상 수정</p>
+<p><Status>Fixed</Status> In <UI>Resource</UI> > <UI>Container volume</UI>, fixed the bug where no data is output and infinite loading happens.</p>
 
 </div>
 
 ## Service 1.104.03
 
-2023년 7월 3일
+July 3, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
-<p><Status>Fixed</Status> 프로젝트 생성 후 자동으로 새로고침되지 않는 현상 수정</p>
+<p><Status>Fixed</Status> Fixed the bug where automatic refreshing is not performed after creation of a project.</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> Python 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>에이전트 다운로드</UI> 섹션의 다운로드 명령어 수정
+-   <Status>Fixed</Status> In Python Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the download command in the <UI>Download agent</UI> section.
 
--   <Status>Fixed</Status> Java 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>JVM 옵션 추가</UI> 섹션의 JVM 옵션 코드 수정
+-   <Status>Fixed</Status> In Java Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the JVM option code in the <UI>Add JVM options</UI> section.
 
--   <Status>Fixed</Status> Node.js 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 Node.js 지원 버전 문구 수정
+-   <Status>Fixed</Status> In Node.js Project > <UI>Management</UI> > <UI>Agent installation</UI>, fixed the Node.js support version message.
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 비교할 서버 선택하면 <UI>기간 조회</UI> 버튼이 활성화되지 않는 버그 수정
+-   <Status>Fixed</Status> Fixed the bug where the <UI>Check period</UI> button is not activated if you select a server to compare in the <UI>Server list</UI> menu.
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 기록</UI> 메뉴에서 <UI>처리내역</UI> 추가 시 이벤트 ID가 DB에 저장되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event history</UI>, fixed the bug where the event ID is not stored in the database once <UI>Acknowledge</UI> has been added.
 
 </div>
 
@@ -282,9 +493,9 @@ June 28, 2023
 
 ### `Application`
 
--   <Status>Fixed</Status> 최근 30초 이내의 트랜잭션 로그 데이터가 조회되지 않는 현상 수정
+-   <Status>Fixed</Status> Fixed the issue where transaction log data within the last 30 seconds cannot be searched.
 
--   <Status>Fixed</Status> 서비스 화면의 언어가 영어로 설정된 상태에서 Python 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Virtual Environment 활성화</UI> 섹션에서 오타 수정
+-   <Status>Fixed</Status> Fixed the typo error in the <UI>Management</UI> > <UI>Agent Installation</UI> > <UI>Activate Virtual Environment</UI> section of the Python project with the language of the service screen set to English.
 
 * * *
 

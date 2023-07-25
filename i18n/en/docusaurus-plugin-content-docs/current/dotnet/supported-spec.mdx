@@ -30,11 +30,11 @@ Before installing the agent, check the support environment for .NET framework ap
 
     -   ADO.NET (Database)
 
--   **데이터베이스**: MS SQL, Oracle, MySQL 등 ADO.NET을 지원하는 모든 데이터 베이스 및 Radis
+-   **Database**: All databases and Radis that support ADO.NET such as MS SQL, Oracle, MySQL, etc.
 
 ## How to analyze the server support environment
 
-### Downloading the analysis tools
+### Downloading the analysis tools{#download-tools}
 
 If you are not familiar with the supported environment of the server to install the agent on, download the analysis tools through the following links.
 
@@ -42,7 +42,7 @@ If you are not familiar with the supported environment of the server to install 
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
 
-### Using the analysis tools
+### Using the analysis tools{#use-tools}
 
 1.  Run the downloaded analysis tools.
 
@@ -56,11 +56,17 @@ If you are not familiar with the supported environment of the server to install 
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
+5.  IIS에 설치된 사이트마다 **.NET Framework** 버전이 v4.0으로 표시되는지 확인하세요.
+
+    ![](/img/apm-dotnet-analystic-env-03.png)
+
+    ![숫자 5](/img/number-05.png)의 경우 지원 범위이지만 _web.config_ 파일이 없습니다. 이러한 경우 대부분은 **.NET**을 사용하지 않는 ASP, PHP 등의 사이트로 에이전트가 동작하지 않습니다.
+
 :::note
 
 -   **.NET Framework** supports up to the version 4.8.1.
 
--   The **.NET Core** version is in development.
+-   **Core** 또는 **.NET 5** 버전 이상이면 지원하지 않습니다. **.NET Core** 버전은 개발 중입니다
 
 :::
 

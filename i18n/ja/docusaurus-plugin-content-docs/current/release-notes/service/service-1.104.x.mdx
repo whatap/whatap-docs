@@ -4,151 +4,362 @@ title: Service 1.104.X
 toc_max_heading_level: 2
 ---
 
-## Service 1.104.11
+## Service 1.104.19
 
-2023년 7월 7일
+2023년 7월 21일
 
 <div class='indentTab'>
 
+### `共通`
+
+-   <Status>Fixed</Status> <UI>보고서</UI> 메뉴에서 타임아웃 발생 시 보고서 생성이 정상적으로 완료되지 않는 버그 수정
+
+-   <Status>Change</Status> <UI>보고서</UI> 메뉴에서 보고서 생성 시 UI 로딩 표시 형식 변경
+
+* * *
+
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> 메뉴에서 <UI>알림 규칙 테스트</UI> 차트로 마우스 호버 시 동시에 여러 차트의 데이터가 표시되도록 수정</p>
+-   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 이벤트 탭에서 알림 규칙 테스트 차트에 id 대신 name 관련 데이터 표시되도록 수정
+
+-   <Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 시간 범위 조작 후 새로 고침 시 시간 초기화 버그 수정
+
+</div>
+
+## Service 1.104.18
+
+2023년 7월 20일
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status> 에이전트에서 throttle이 설정되어 API 요청 제한 시 안내 메시지 추가
+
+-   <Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정
+
+</div>
+
+## Service 1.104.17
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `共通`
+
+#### 利用履歴
+
+-   <Status>Feature</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국가 선택에 따라 결제 진행 과정 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국내 '역발행 계좌 이체 등록' 미노출 변경
+
+-   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 프로모션 배너 변경
+
+-   <Status>Fixed</Status> <UI>결제 정보</UI> 메뉴에서 '해외 카드 등록'의 placeholder를 로케일 언어에 맞게 표시되도록 수정
+
+#### レポート
+
+<p><Status>Fixed</Status> 일간 애플리케이션 사용자 정의 보고서의 <b>방문자</b> 항목 제거</p>
+
+* * *
+
+### `Application`
+
+#### GO, PHP
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   **Heap 크기** → **_시스템 메모리_**, **Heap 사용량** → **_프로세스 메모리_**로 문구 변경
+
+    -   시스템 GC 버튼 제거
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+
+    -   이름 컬럼의 크기가 줄어들면 말줄임표와 함께 마우스 오버 시 툴팁이 활성화되도록 수정
+
+    -   <UI>상세</UI> 버튼의 툴팁이 버튼 클릭 후에도 사라지지 않는 버그 수정
+
+-   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI> > <UI>히트맵</UI> 위젯 드래그 > <UI>히트맵 트랜잭션</UI> > TX 트레이스 항목 선택 > <UI>통계</UI> 창에서 <UI>트랜잭션 로그</UI> 탭의 트랜잭션 로그가 미설정되었을 경우:
+
+    -   언어 설정이 일본어인 상태: 출력되는 안내 메시지의 줄바꿈 버그 수정
+
+    -   언어 설정이 한국어인 상태:  출력되는 안내 메시지의 스타일이 제대로 적용되도록 수정
+
+    -   출력되는 안내 메시지의 링크를 클릭할때 설정된 언어에 맞는 Docs 페이지로 이동하도록 수정
+
+#### 分析
+
+-   <Status>Fixed</Status> MSA 분석 메뉴에서 데이터를 조회했을 때 결과가 없으면 '데이터 없음' 안내 메시지가 나오도록 수정
+
+* * *
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 브라우저 에이전트 스크립트의 `config` 옵션으로 `proxyBaseUrl` 추가</p>
+
+</div>
+
+## Service 1.104.16
+
+2023년 7월 18일
+
+<div class='indentTab'>
+
+### `Application`
+
+#### 分析
+
+<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 입력 길이 제한 로직 제거</p>
+
+</div>
+
+## Service 1.104.15
+
+2023년 7월 17일
+
+<div class='indentTab'>
+
+### `Application`
+
+#### 分析
+
+<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 숫자 외 문자가 입력되지 않는 버그 수정</p>
+
+</div>
+
+## Service 1.104.14
+
+2023年7月13日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>言語設定が日本の場合、サイドバーの<UI>グループ作成</UI>, <UI>プロジェクトの作成</UI>ボタンのテキストを英語で出力されるように修正</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Feature</Status> <UI>애플리케이션 에이전트 설치</UI> 메뉴에 <b>Docker PHP</b> 항목 추가</p>
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>メニューで次のように修正します。</p>
+
+-   **_アプリケーションエージェントの設定_** > **_Docker PHP_**
+
+    -   **_1. アクセスキーの確認_**セクションでアクセスキーのコピー領域の上段の小題目を削除
+
+    -   **_4. Kubernetes環境変数およびボリューム_**セクションの小題目のメッセージを削除
+
+-   **_アプリケーションエージェントの設定_**>すべてのインストールタイプ: **_1. アクセスキー確認_**セクションのメッセージの統一および**チャットでのお問い合わせ**テキストの左にアイコンを追加
+
+-   **_インストールの案内_**セクションで**_チャットでのお問い合わせ_**ボタンのアイコンをチャットトークのアイコンと統一
+
+-   ***クバネティスエージェントの設定***>**_KUBERNETES_**>**_3. クバネティスエージェントの作成_**セクションでOOM発生問題に関する案内メッセージを追加
+
+</div>
+
+## Service 1.104.13
+
+2023年7月12日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### Flexボード
+
+-   <Status>Fixed</Status>ダッシュボードコピーボタンをクリックすると、メニューが表示されない現象の修正
+
+-   <Status>Fixed</Status>ダッシュボードコピーウィンドウに漏れ落ちた多国語（英語）の修正
+
+-   <Status>Change</Status>ダッシュボード<UI>ほかの人にコピー</UI>機能を使うと、ダッシュボードタイトルに**copied_** prefixを追加
+
+</div>
+
+## Service 1.104.12
+
+2023年7月11日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>グループ作成機能が正常動作しているにもかかわらず、エラーメッセージが出力される現象の修正</p>
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで<LinkImage img='ico-compare.svg' desc='비교하기 아이콘'/>(<UI>比較する</UI>)オプションをクリックすると、表示されるカラムヘッダーのテキストが途切れる現象を文字列に修正
+
+    -   韓国語:　比較する→比較
+    -   日本語:　ステータス → 状態
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで上段のオプションボタンが同時に活性化されないように修正
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>><UI>アプリケーションエージェントの設定</UI>メニューで<UI>Docker PHP</UI>タブ<UI>モニタリングを開始する</UI>項目のイメージが多国語の設定に従わず、韓国語のダッシュボードイメージを出力する現象を修正</p>
+
+* * *
+
+### `実験室`
+
+<p><Status>New</Status><UI>実験室</UI>メニューで<UI>統合ログファインダー</UI>追加</p>
+
+</div>
+
+## Service 1.104.11
+
+2023年7月7日
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューで<UI>アラートルールテスト</UI>チャートでマウスホバーすると、同時に複数のチャートのデータが表示されるように修正</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status><UI>アプリケーションエージェントのインストール</UI>メニューで<b>Docker PHP</b>項目を追加</p>
 
 </div>
 
 ## Service 1.104.10
 
-2023년 7월 6일
+2023年7月6日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 대시보드 즐겨찾기 기능 사용 시 사이드 바 메뉴에 추가되지 않는 현상 수정</p>
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボードお気に入り機能を使うと、サイドバーがメニューに追加されない現象の修正</p>
 
 * * *
 
 ### `Application`
 
-<p><Status>Change</Status> <UI>통계</UI>, <UI>히트맵</UI> 메뉴에서 검색 기능(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)을 사용하면 시간 선택자의 <UI>최근 검색 시간</UI> 목록에 최근 검색 시간을 추가하도록 변경</p>
+<p><Status>Change</Status><UI>統計</UI>,<UI>ヒートマップ</UI>メニューで検索機能(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)を使うと時間セレクタの<UI>最近検索時間</UI>一覧に最近の検索時間を追加するように変更</p>
 
 </div>
 
 ## Service 1.104.09
 
-2023년 7월 6일
+2023年7月6日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 조직에 속한 프로젝트 메뉴에서 새로고침 시 무한 로딩 현상 수정</p>
+<p><Status>Fixed</Status>グループに属したプロジェクトメニューで更新すると、ローディングが無限に続く現象の修正</p>
 
 </div>
 
 ## Service 1.104.08
 
-2023년 7월 5일
+2023年7月5日
 
 <div class='indentTab'>
 
-<p><Status>Change</Status> 비밀번호 유효성 체크 로직 변경</p>
+<p><Status>Change</Status>パスワード有効性チェックのロジックを変更</p>
 
--   최소 9자리의 영어 소문자 및 대문자, 숫자, 특수 문자 중 3종류 이상
+-   最低９桁のアルファベットの小文字および大文字、数字、特殊記号で３種以上の組み合わせ
 
--   이메일과 동일한 비밀번호 사용 불가
+-   Eメールと同じパスワードの使用不可
 
--   기존에 사용한 비밀번호와 동일한 비밀번호 사용 불가
+-   既存に使用したパスワードと同一のパスワード使用不可
 
--   연속된 키보드 배열이 포함된 비밀번호 사용 불가
+-   連続するキーボード配列に含まれたパスワード使用不可
 
--   연속된 알파벳이 포함된 비밀번호 사용 불가
+-   連続するアルファベットを含むパスワード使用不可
 
--   연속된 숫자가 포함된 비밀번호 사용 불가
+-   連続する数字を含むパスワード使用不可
 
--   현재 비밀번호와 동일한 비밀번호 사용 불가
+-   現在使用しているパスワードと同一のパスワード使用不可
 
 </div>
 
 ## Service 1.104.07
 
-2023년 7월 5일
+2023年7月5日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> 다음 메뉴 경로에서 <UI>Key</UI> 검색 상자에 한글자만 입력하면 검색 상자 밖으로 포커스가 벗어나는 현상 수정</p>
+<p><Status>Fixed</Status>次のメニューのパスで<UI>Key</UI>検索ボックスに一文字だけ入力すると検索ボックス外にフォーカスが外れる現象の修正</p>
 
--   <UI>애플리케이션</UI> > <UI>인스턴스 성능 분석</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>アプリケーション</UI>><UI>インスタンスパフォーマンス分析</UI>><UI>エージェント設定</UI>(旧バージョン)
 
--   <UI>관리</UI> > <UI>에이전트 설정</UI> > <UI>이전 버전</UI> > <UI>에이전트 설정</UI>(구 버전)
+-   <UI>管理</UI>><UI>エージェント設定</UI>><UI>旧バージョン</UI>><UI>エージェント設定</UI>(旧バージョン)
 
 </div>
 
 ## Service 1.104.06
 
-2023년 7월 5일
+2023年7月5日
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 실시간 조회 시 최초 호출을 제외한 업데이트 API 요청에 대해 60초 타임아웃 설정</p>
+<p><Status>Fixed</Status> <UI>Flexボード</UI>メニューでリアルタイムで照会すると、最初の呼び出しを除くアップデートAPIリクエストに関して60秒のタイムアウトの設定</p>
 
 </div>
 
 ## Service 1.104.05
 
-2023년 7월 4일
+2023年7月4日
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 조회 버튼을 클릭하면 데이터가 출력되지 않고 로딩만 표시되는 버그 수정</p>
+<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューで照会ボタンをクリックすると、データが出力されずローディングのみ表示されるバグの修正</p>
 
 </div>
 
 ## Service 1.104.04
 
-2023년 7월 4일
+2023年7月4日
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>리소스</UI> > <UI>컨테이너 볼륨</UI> 메뉴에서 데이터가 출력되지 않고 무한 로딩되는 현상 수정</p>
+<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューでデータが出力されず、ローディングのみ繰り返される現象の修正</p>
 
 </div>
 
 ## Service 1.104.03
 
-2023년 7월 3일
+2023年7月3日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> 프로젝트 생성 후 자동으로 새로고침되지 않는 현상 수정</p>
+<p><Status>Fixed</Status>プロジェクトを生成した後、自動で更新されない現象の修正</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> Python 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>에이전트 다운로드</UI> 섹션의 다운로드 명령어 수정
+-   <Status>Fixed</Status>Pythonプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>エージェントのダウンロード</UI>セクションのダウンロードコマンドの修正
 
--   <Status>Fixed</Status> Java 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 <UI>JVM 옵션 추가</UI> 섹션의 JVM 옵션 코드 수정
+-   <Status>Fixed</Status>Javaプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>JVMオプション追加</UI>セクションのJVMオプションコードの修正
 
--   <Status>Fixed</Status> Node.js 프로젝트 > <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 Node.js 지원 버전 문구 수정
+-   <Status>Fixed</Status>Node.jsプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューでNode.jsサポートバージョンのメッセージを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> 메뉴에서 비교할 서버 선택하면 <UI>기간 조회</UI> 버튼이 활성화되지 않는 버그 수정
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで比較するサーバーを選択すると<UI>期間照会</UI>ボタンがアクティブ化されないバグの修正
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 기록</UI> 메뉴에서 <UI>처리내역</UI> 추가 시 이벤트 ID가 DB에 저장되지 않는 버그 수정
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント履歴</UI>メニューで<UI>処理内容</UI>追加するとイベントIDがDBに保存されないバグの修正
 
 </div>
 
@@ -282,9 +493,9 @@ toc_max_heading_level: 2
 
 ### `Application`
 
--   <Status>Fixed</Status> 최근 30초 이내의 트랜잭션 로그 데이터가 조회되지 않는 현상 수정
+-   <Status>Fixed</Status>最近の30秒以内のトランザクションログデータが照会されない現象の修正
 
--   <Status>Fixed</Status> 서비스 화면의 언어가 영어로 설정된 상태에서 Python 프로젝트의 <UI>관리</UI> > <UI>에이전트 설치</UI> > <UI>Virtual Environment 활성화</UI> 섹션에서 오타 수정
+-   <Status>Fixed</Status>サービス画面の言語が英語に設定された状態で、Pythonプロジェクトの<UI>管理</UI> > <UI>エージェントインストール</UI> > <UI>Virtual Environment活性化</UI>セクションで誤字を修正
 
 * * *
 

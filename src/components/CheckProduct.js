@@ -76,6 +76,8 @@ export default function CheckProduct() {
         product = '-log';
     } else if (cProdt === 'browser') {
         product = '-browser';
+    } else if (cProdt === 'npm') {
+        product = '-npm';
     } else {
         product = '';
     }

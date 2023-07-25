@@ -78,7 +78,7 @@ const sidebars = {
             'java/agent-network',
             'java/agent-performance',
             'java/agent-log',
-            'java/agent-gc-log',
+            // 'java/agent-gc-log',
             'java/agent-transaction',
             'java/agent-dbsql',
             'java/agent-httpcapicall',
@@ -247,6 +247,7 @@ const sidebars = {
               items: [
                 'java/warning-notice',
                 'java/metric-warning-notice',
+                'java/set-notification-message',
                 'java/hitmap-notice',
                 'java/set-event-detect-anomal',
                 'java/set-event-log',
@@ -480,6 +481,8 @@ const sidebars = {
               items: [
                 'php/warning-notice',
                 'php/metric-warning-notice',
+                'php/set-notification-message',
+                'php/set-notification-message',
                 'php/hitmap-notice',
                 'php/set-event-detect-anomal',
                 'php/set-event-log',
@@ -697,6 +700,7 @@ const sidebars = {
               items: [
                 'nodejs/warning-notice',
                 'nodejs/metric-warning-notice',
+                'nodejs/set-notification-message',
                 'nodejs/hitmap-notice',
                 'nodejs/set-event-detect-anomal',
                 'nodejs/set-event-log',
@@ -914,6 +918,7 @@ const sidebars = {
               items: [
                 'python/warning-notice',
                 'python/metric-warning-notice',
+                'python/set-notification-message',
                 'python/hitmap-notice',
                 'python/set-event-detect-anomal',
                 'python/set-event-log',
@@ -1085,8 +1090,8 @@ const sidebars = {
               },
               items: [
                 'dotnet/cube',
+                'dotnet/analysis-apm',
                 'dotnet/analysis-apm-trs',
-                // 'php/analysis-apm',
                 {
                   type: 'category',
                   label: '보고서',
@@ -1115,6 +1120,7 @@ const sidebars = {
               items: [
                 'dotnet/warning-notice',
                 'dotnet/metric-warning-notice',
+                'dotnet/set-notification-message',
                 'dotnet/hitmap-notice',
                 'dotnet/set-event-detect-anomal',
                 'dotnet/set-event-log',
@@ -1146,6 +1152,7 @@ const sidebars = {
       items: [
         'golang/supported-spec',
         'golang/install-agent',
+        'golang/api-guide',
         'golang/install-check',
         {
           type: 'category',
@@ -1158,11 +1165,16 @@ const sidebars = {
           },
           items: [
             'golang/agent-name',
+            'golang/agent-control-function',
+            'golang/agent-network',
+            'golang/agent-log',
             'golang/agent-transaction',
             'golang/agent-dbsql',
             'golang/agent-httpcall',
-            'golang/agent-method',
-            'golang/agent-number-of-user'
+            'golang/agent-number-of-user',
+            'golang/agent-apdex',
+            'golang/agent-static',
+            'golang/agent-library',
           ]
         },
         'golang/agent-manage',
@@ -1302,6 +1314,7 @@ const sidebars = {
               items: [
                 'golang/warning-notice',
                 'golang/metric-warning-notice',
+                'golang/set-notification-message',
                 'golang/hitmap-notice',
                 'golang/set-event-detect-anomal',
                 'golang/set-event-log',
@@ -1457,6 +1470,7 @@ const sidebars = {
               items: [
                 'postgresql/warning-notice',
                 'postgresql/metric-warning-notice',
+                'postgresql/set-notification-message',
                 'postgresql/set-event-detect-anomal',
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
@@ -1611,6 +1625,7 @@ const sidebars = {
               items: [
                 'postgresql-v1/warning-notice',
                 'postgresql-v1/metric-warning-notice',
+                'postgresql-v1/set-notification-message',
                 'postgresql-v1/set-event-detect-anomal',
                 'postgresql-v1/set-receive-event',
                 'postgresql-v1/set-event-history',
@@ -1765,6 +1780,7 @@ const sidebars = {
               items: [
                 'oracle/warning-notice',
                 'oracle/metric-warning-notice',
+                'oracle/set-notification-message',
                 'oracle/set-event-detect-anomal',
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
@@ -1919,6 +1935,7 @@ const sidebars = {
               items: [
                 'mysql-v1/warning-notice',
                 'mysql-v1/metric-warning-notice',
+                'mysql-v1/set-notification-message',
                 'mysql-v1/set-event-detect-anomal',
                 'mysql-v1/set-receive-event',
                 'mysql-v1/set-event-history',
@@ -2068,6 +2085,7 @@ const sidebars = {
               items: [
                 'mysql/warning-notice',
                 'mysql/metric-warning-notice',
+                'mysql/set-notification-message',
                 'mysql/set-event-detect-anomal',
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
@@ -2214,6 +2232,7 @@ const sidebars = {
               items: [
                 'mssql/warning-notice',
                 'mssql/metric-warning-notice',
+                'mssql/set-notification-message',
                 'mssql/set-event-detect-anomal',
                 'mssql/set-receive-event',
                 'mssql/set-event-history',
@@ -2353,6 +2372,7 @@ const sidebars = {
               items: [
                 'tibero/warning-notice',
                 'tibero/metric-warning-notice',
+                'tibero/set-notification-message',
                 'tibero/set-event-detect-anomal',
                 'tibero/set-receive-event',
                 'tibero/set-event-history',
@@ -2506,6 +2526,7 @@ const sidebars = {
               items: [
                 'cubrid/warning-notice',
                 'cubrid/metric-warning-notice',
+                'cubrid/set-notification-message',
                 'cubrid/set-event-detect-anomal',
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
@@ -2645,6 +2666,7 @@ const sidebars = {
               items: [
                 'altibase/warning-notice',
                 'altibase/metric-warning-notice',
+                'altibase/set-notification-message',
                 'altibase/set-event-detect-anomal',
                 'altibase/set-receive-event',
                 'altibase/set-event-history',
@@ -2785,6 +2807,7 @@ const sidebars = {
               },
               items: [
                 'redis/metric-warning-notice',
+                'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
                 'redis/set-event-history',
@@ -2923,6 +2946,7 @@ const sidebars = {
               items: [
                 'mongodb/warning-notice',
                 'mongodb/metric-warning-notice',
+                'mongodb/set-notification-message',
                 'mongodb/set-event-detect-anomal',
                 'mongodb/set-receive-event',
                 'mongodb/set-event-history',
@@ -2935,6 +2959,57 @@ const sidebars = {
               href: '/apidoc/openapi-intro'
             }
           ]
+        }
+      ],
+    }
+  ],
+  npmsidebar: [
+    {
+      type: 'category',
+      label: 'NPM 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'npm',
+      },
+      items: [
+        'npm/compatibility',
+        'npm/install-agent',
+        'npm/set-tagrule',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/network-topology',
+            'npm/network-trend-tcp'
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/analysis-tcp-udp-sessions',
+          ],
+        },
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'npm/set-notice'
+          },
+          items: [
+            'npm/metric-warning-notice',
+            'npm/set-receive-event',
+            'npm/set-event-history',
+          ],
         }
       ],
     }
@@ -3022,14 +3097,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_11',
+                id: 'release-notes/java/java-2_2_12',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_11',
+                  id: 'release-notes/java/java-2_2_12',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_11',
                 'release-notes/java/java-2_2_10',
                 'release-notes/java/java-2_2_9',
                 'release-notes/java/java-2_2_8',
@@ -3038,7 +3114,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_5',
                 'release-notes/java/java-2_2_4',
                 'release-notes/java/java-2_2_3',
-                'release-notes/java/java-2_2_2',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3119,14 +3194,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_0',
+                id: 'release-notes/dotnet/dotnet-2_1_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_0',
+                  id: 'release-notes/dotnet/dotnet-2_1_2',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_1',
+                'release-notes/dotnet/dotnet-2_1_0',
                 'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-2_0_7',
@@ -3135,7 +3212,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_0_4',
                 'release-notes/dotnet/dotnet-2_0_3',
                 'release-notes/dotnet/dotnet-2_0_2',
-                'release-notes/dotnet/dotnet-2_0_1',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3175,14 +3251,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_3_9',
+                id: 'release-notes/server/server-2_4_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_3_9',
+                  id: 'release-notes/server/server-2_4_0',
                   className: 'new',
                 },
+                'release-notes/server/server-2_3_9',
                 'release-notes/server/server-2_3_8',
                 'release-notes/server/server-2_3_7',
                 'release-notes/server/server-2_3_6',
@@ -3200,7 +3277,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_3_1',
@@ -3209,7 +3286,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_3_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_2_9',
                 'release-notes/k8s/k8s-1_2_8',
@@ -4740,7 +4817,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'browser/set-notics',
+            id: 'browser/set-notice',
           },
           items: [
             'browser/metric-warning-notice',
@@ -4948,6 +5025,7 @@ const sidebars = {
               items: [
                 'server/warning-notice',
                 'server/metric-warning-notice',
+                'server/set-notification-message',
                 'server/set-event-detect-anomal',
                 'server/set-event-log',
                 'server/set-receive-event',
@@ -5162,6 +5240,7 @@ const sidebars = {
               items: [
                 'kubernetes/container-warning-notice',
                 'kubernetes/metric-warning-notice',
+                'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
                 'kubernetes/set-event-log',

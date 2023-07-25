@@ -3,7 +3,7 @@ id: agent-name
 title: Agent name identification
 description: The following explains how to set the agent name in order to identify the monitoring target.
 tags:
-  - golang
+  - Go
   - Agent name
 ---
 
@@ -50,11 +50,3 @@ object_name={type}-{ip2}-{ip3}-{process}-{dockerid}-{ips}
 -   **app_name** <span class='type'>String</span>
 
     The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` among the `object_name` options.
-
--   **app_process_name** <span class='type'>String</span>
-
-    It is the application process name used in the agent naming (ONAME) scheme to identify applications. Set the target process to collect CPU, heap memory, and such of the application server. It corresponds to `{process}` among `object_name` options.
-
--   **whatap.okind** <span class='type'>String</span>
-
-    Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.
