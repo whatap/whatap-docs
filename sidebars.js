@@ -4805,7 +4805,21 @@ const sidebars = {
           items: [
             'browser/analyze-pageload',
             'browser/tracking-error',
-            'browser/metrics-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'browser/metrics-intro',
+          },
+          items: [
+            'browser/metrics-browser',
+            'browser/metrics-chart',
+            'browser/metrics-search',
           ],
         },
         'browser/report-intro',
