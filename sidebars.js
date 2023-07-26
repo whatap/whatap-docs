@@ -3532,7 +3532,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'MySQL',
-          href: 'mysql-v1/monitoring-intro',
+          href: 'mysql/monitoring-intro',
         },
         {
           type: 'link',

@@ -242,7 +242,7 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
-                docId: 'mysql-v1/monitoring-intro',
+                docId: 'mysql/monitoring-intro',
                 label: 'MySQL',
               },
               {
