@@ -3062,14 +3062,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1_104_x',
+            id: 'release-notes/service/service-1_106_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1_104_x',
+              id: 'release-notes/service/service-1_106_x',
               className: 'new',
             },
+            'release-notes/service/service-1_104_x',
             'release-notes/service/service-1_102_x',
             'release-notes/service/service-1_100_x',
             'release-notes/service/service-1_98_x',
