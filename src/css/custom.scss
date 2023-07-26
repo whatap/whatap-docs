@@ -929,7 +929,8 @@ main {
       background-color: var(--ifm-safe-color);
       color: #fff;
       font-weight: 600;
-      padding: 2px;
+      padding: 2px 7px;
+      border-radius: 5px;
     }
     span.normal {color: rgb(89, 129, 255)}
     .comment {
