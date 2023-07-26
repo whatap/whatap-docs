@@ -1548,6 +1548,18 @@ main {
         }
       }
     }
+    .browser-metric {
+      table {
+        tr {
+          td {
+            &:first-of-type { width: 20%; }
+            &:nth-of-type(2) { width: 15%;}
+            &:nth-of-type(3) { width: 32%;}
+            &:nth-of-type(4) { width: 28%;}
+          }
+        }
+      }
+    }
     .metric {
       table {
         tr {
