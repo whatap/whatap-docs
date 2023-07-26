@@ -3079,8 +3079,6 @@ const sidebars = {
             'release-notes/service/service-1_92_0',
             'release-notes/service/service-1_90_0',
             'release-notes/service/service-1_88_0',
-            'release-notes/service/service-1_86_0',
-            'release-notes/service/service-1_84_0',
             'release-notes/service/service-previous',
           ]
         },
