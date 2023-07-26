@@ -1,41 +1,41 @@
 ---
 id: set-tagrule
-title: tagRule 설정하기
-description: 불규칙하고 다양한 정보를 수집하고 토포롤지 또는 차트로 표현할 수 있는 tagRule 설정에 대한 설명입니다.
+title: Setting the tagRule
+description: This describes the tagRule settings that can collect irregular and diverse data and express them on a topography or charts.
 tags:
-  - 네트워크 성능 모니터링
+  - Network performance monitoring
   - tagRule
 ---
 
-**태그**(Tag)는 모니터링 대상 서버로부터 수집한 데이터를 그룹 단위로 표현하는 기준입니다. **NPM**에서 가장 중요한 요소는 가시성입니다. 그룹화는 네트워크라는 불규칙하고 다양한 정보가 쏟아지는 환경에서 가시성을 확보하기 위한 필수 요소입니다.
+**Tag** is a criterion for expressing the data collected from the monitored servers in group units. The most important factor in **NPM** is visibility. Grouping is essential to secure visibility in an environment where irregular and diverse data is pouring into the network.
 
-에이전트는 Raw Data에 IP 주소 및 Port(Source, Target), Host Name, Process Name 정보를 키로 수집합니다. 수집한 정보를 기반으로 토폴로지 또는 차트에 표현할 노드의 그룹 단위를 설정할 수 있습니다.
+The agent collects the IP addresses, ports (Source, Target), host names, and process names in raw data with keys. Based on the collected data, you can set the group units for the nodes to be displayed in a topology or charts.
 
-에이전트에서 수집하는 기본 태그와 더불어 사용자가 쉽게 변경하고 적용할 수 있는 룰을 만들었습니다. 에이전트 설치 경로(_/usr/whatap/whtap-npmd_)에 _tagRule.yaml_ 파일을 수정해 옵션을 적용할 수 있습니다.
+Along with the tags collected by agents, the rules have been created to be easily changed and applied. The options can be applied by modifying the _tagRule.yaml_ file in the agent installation path (_/usr/whatap/whtap-npmd_).
 
-## tagRule 옵션
+## tagRule option
 
-**tagRule** 옵션이 적용된 결과는 **_대시보드_** > **_네트워크 토폴로지_** 메뉴에서 확인할 수 있습니다. 그룹화를 통해 복잡하고 불규칙한 네트워크 간의 연관성을 단순화하고 추상화된 네트워크의 성능을 가시화해 모니터링할 수 있습니다.
+The result of the **tagRule** option appears in **_Dashboard_** > **_Network Topology_**. Grouping simplifies the correlation between complex and irregular networks and allows you to visualize the performance of abstracted networks for monitoring.
 
 ![Topology Chart](/img/npm-tagrule-sample.png)
 
--   **tagRule** 옵션이 적용된 ![숫자 1](/img/number-01.png) 노드입니다. 길고 복잡한 프로세스 이름을 간소화하여 노드에 표시합니다.
+-   It is the ![number 1](/img/number-01.png) node with the **tagRule** option applied. It simplifies long and complex process names to display on nodes.
 
--   **tagRule** 옵션이 적용되지 않은 ![숫자 2](/img/number-02.png) 노드입니다. 어떤 프로세스인지 파악하기 어렵기 때문에 ![숫자 1](/img/number-01.png) 노드와 같이 **tagRule** 옵션을 적용해 프로세스 이름을 간소화해야 합니다.
+-   It is the ![number 2](/img/number-02.png) node to which the **tagRule** option is not applied. Because it is hard to identify the process, be sure to apply the **tagRule** option to simplify the process name, such as ![number 1](/img/number-01.png) node.
 
--   ![숫자 3](/img/number-03.png) 노드는 해당 호스트 및 프로세스 정보를 획득할 수 없는 경우입니다. 자세한 내용은 [다음 문서](#untagged)를 참조하세요.
+-   The ![number 3](/img/number-03.png) node cannot acquire its host and process data. For more information, see [the following](#untagged).
 
-### 프로세스 이름 간소화
+### Simplifying the process name
 
-옵션: `processRegex`
+Option: `processRegex`
 
-이름이 불분명하게 긴 프로세스 명칭을 간소화합니다. 예를 들어 Java Process의 경우 다음과 같이 jvm 실행 옵션 등을 포함합니다.
+It simplifies long process names that are obscure. For example, Java processes include JVM launch options and the like as follows.
 
 ```bash title='zookeeper process name'
 java -Dzookeeper.log.dir=/data/wpm/zookeeper/bin/../logs -Dzookeeper.log.file=zookeeper-whatap-server-Dev-Modules.log -XX:+HeapDumpOnOutOfMemoryError -XX:OnOutOfMemoryError=kill -9 %p -cp /data/wpm/zookeeper/bin/../zookeeper-server/target/classes:/data/wpm/zookeeper/bin/../build/classes:/data/wpm/zookeeper/bin/../zookeeper-server/target/lib/*.jar:/data/wpm/zookeeper/bin/../build/lib/*.jar:/data/wpm/zookeeper/bin/../lib/zookeeper-prometheus-metrics-3.8.0.jar:/data/wpm/zookeeper/bin/../lib/zookeeper-jute-3.8.0.jar:/data/wpm/zookeeper/bin/../lib/zookeeper-3.8.0.jar:/data/wpm/zookeeper/bin/../lib/snappy-java-1.1.7.7.jar:/data/wpm/zookeeper/bin/../lib/slf4j-api-1.7.30.jar:/data/wpm/zookeeper/bin/../lib/simpleclient_servlet-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/simpleclient_hotspot-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/simpleclient_common-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/simpleclient-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-native-unix-common-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-native-epoll-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-classes-epoll-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-tcnative-classes-2.0.48.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-tcnative-2.0.48.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-resolver-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-handler-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-common-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-codec-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-buffer-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/metrics-core-4.1.12.1.jar:/data/wpm/zookeeper/bin/../lib/logback-core-1.2.10.jar:/data/wpm/zookeeper/bin/../lib/logback-classic-1.2.10.jar:/data/wpm/zookeeper/bin/../lib/jline-2.14.6.jar:/data/wpm/zookeeper/bin/../lib/jetty-util-ajax-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-util-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-servlet-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-server-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-security-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-io-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-http-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/javax.servlet-api-3.1.0.jar:/data/wpm/zookeeper/bin/../lib/jackson-databind-2.13.1.jar:/data/wpm/zookeeper/bin/../lib/jackson-core-2.13.1.jar:/data/wpm/zookeeper/bin/../lib/jackson-annotations-2.13.1.jar:/data/wpm/zookeeper/bin/../lib/commons-io-2.11.0.jar:/data/wpm/zookeeper/bin/../lib/commons-cli-1.4.jar:/data/wpm/zookeeper/bin/../lib/audience-annotations-0.12.0.jar:/data/wpm/zookeeper/bin/../zookeeper-*.jar:/data/wpm/zookeeper/bin/../zookeeper-server/src/main/resources/lib/*.jar:/data/wpm/zookeeper/bin/../conf: -Xmx1000m -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.local.only=false org.apache.zookeeper.server.quorum.QuorumPeerMain /data/wpm/zookeeper/bin/../conf/zoo.cfg
 ```
 
-위 경우 토폴로지나 차트상에 이름을 표현하더라도 인지하기 어렵기 때문에 에이전트에서 최대한 필요한 부분들만 추출해서 사용합니다. 다음 예시를 참조해 옵션을 적용하세요.
+In the above case, even if the name is displayed on a topology or chart,, it is difficult to recognize. Only the required parts are extracted from agents as much as possible. Apply the options by referring to the following example.
 
 ```yaml title='tagRule.yaml'
 processRegEx:
@@ -43,25 +43,25 @@ processRegEx:
   - whatap_[a-zA-Z]*
 ```
 
-`processRegex` 옵션은 다음 규칙을 통해 이름을 추출합니다.
+The `processRegex` option extracts names via the following rules.
 
--   **Java**는 실행 jar 파일 이름 또는 메소드 이름
+-   **Java** is the executable JAR file name or method name.
 
--   **Python**은 실행 스크립트 이름
+-   **Python** is the name of the executable script.
 
-다만 추출 이후에도 프로세스 이름이 길면 옵션을 통해 줄일 수 있습니다. 정규 표현식 형태로 입력이 가능하며 룰이 여러 개인 경우 가장 길게 매칭된 문자열로 선택됩니다.
+However, if the process name is long enough even after extraction, it can be shortened through the option. It can be input in the form of regular expression. If there are multiple rules, the longest matched string is selected.
 
 :::caution
 
-짧은 규칙을 다수 사용하는 경우 의도하지 않은 프로세스를 태깅할 수 있습니다. 고유한 이름 규칙을 사용하세요.
+If you use numerous short rules, you can tag wrong processes unintentionally. Use a unique naming rule.
 
 :::
 
-### 프로세스 화이트 리스트(White List)
+### Process white list
 
-옵션: `processWhiteList`
+Option: `processWhiteList`
 
-수집 대상 프로세스 목록을 설정합니다. 해당 옵션을 통해 지정된 프로세스 외에 데이터들은 모두 무시합니다.
+Set the list of processes to be collected. All data other data than the process specified through the option are ignored.
 
 ```yaml title='tagRule.yaml'
 processWhiteList:
@@ -71,17 +71,17 @@ processWhiteList:
 
 :::caution
 
-`processRegEx` 옵션을 이용한다면 운영체제(OS)의 이름보다 정규 표현식에 매칭된 이름이 우선됩니다.
+If you use the `processRegEx` option, the name matching the regular expression takes precedence over the OS name.
 
 :::
 
-### 프로세스 블랙 리스트(Black List)
+### Process black list
 
-옵션: `processBlackList`
+Option: `processBlackList`
 
-수집 제외 프로세스 목록을 설정합니다. 해당 옵션을 통해 지정된 프로세스 데이터를 무시합니다. `processWhiteList`와 `processBlackList`가 모두 이용 중인 경우 `processWhiteList`의 목록들 중에서 processBlackList\`에 해당하는 목록을 제외하고 데이터를 수집합니다.
+It sets the list of processes to exclude from collection. The process data specified through the option is ignored. If both `processWhiteList` and `processBlackList` are in use, data is collected except for the list corresponding to `processBlackList` among the `processWhiteList`.
 
-예를 들어 zookeeper, whatap_npmd, whatap_infrad 3개의 프로세스가 운영 중일 때 다음 옵션을 적용하면 zookeeper와 whatap_infrad 2개의 프로세스 정보를 수집합니다.
+For example, when three processes (zookeeper, whatap_npmd, and whatap_infrad) are running, the following option is applied to collect data for two processes: zookeeper and whatap_infrad.
 
 ```yaml title='tagRule.yaml'
 processWhiteList:
@@ -94,17 +94,17 @@ processBlackList:
 
 :::caution
 
-`processRegEx` 옵션을 이용한다면 운영체제(OS)의 이름보다 정규 표현식에 매칭된 이름이 우선됩니다.
+If you use the `processRegEx` option, the name matching the regular expression takes precedence over the OS name.
 
 :::
 
-### 프로세스 타입(Type) 지정
+### Setting the process type
 
-옵션: `processType`
+Option: `processType`
 
-`processType` 옵션은 토폴로지와 차트에 표현되는 가장 기본 그룹인 태그입니다. 주요 목적은 동일한 프로세스가 버전이나 OS 환경에 따라 조금씩 다르게 표현되는 경우 동일한 역할을 하는 프로세스들을 하나의 노드로 표현할 수 있습니다.
+The `processType` option is a tag for the most basic group represented in topologies and charts. The main purpose is to express processes that play the same role as a single node when the same process is expressed slightly differently depending on the version or OS.
 
-프로세스 이름(Process name)을 키로 사용하며 매칭되는 타입을 지정하는 형태로 사용합니다. 해당 옵션으로 정의되지 않은 프로세스는 프로세스 이름(Process name)이 프로세스 타입(Process type)으로 자동 적용됩니다.
+The process name is used as a key and the matching type is specified. For the processes that are not defined with the option, the process name is automatically applied as the process type.
 
 ```yaml titile='tagRule.yaml'
 processType:
@@ -118,19 +118,19 @@ processType:
 
 :::caution
 
-`processRegEx` 옵션을 이용한다면 운영체제(OS)의 이름보다 정규 표현식에 매칭된 이름이 우선됩니다.
+If you use the `processRegEx` option, the name matching the regular expression takes precedence over the OS name.
 
 :::
 
-### 앱 이름(App Name) 지정
+### Setting the App name
 
-옵션: `appName`
+Option: `appName`
 
-`appName`은 토폴로지 또는 차트를 사용자가 이해하기 좋은 형태로 표현하기 위한 옵션입니다. 위의 `processType` 옵션의 경우는 사용자의 의도와 상관없이 동일한 프로세스는 하나의 노드로 병합(Merge)되어 표현됩니다. `appName`은 키 조합을 통해 분리해서 표현하고 싶은 노드와 합치고 싶은 노드를 지정하여 사용자가 원하는 형태의 노드를 표현할 수 있습니다.
+The `appName` option expresses the topology or chart in a form that is easy to understand. In case of the `processType` option above, the same process is merged into a single node regardless of your intention. For `appName`, you can express the node in your desired form by specifying the node to express separately and the node to merge through a key combination.
 
-proxy → msa_process → msa_process2 → db로 이어지는 네트워크 구성이 **운영기**/**개발기**/**시험기** 세가지 목적으로 나눠져 있는 경우를 가시화하는 케이스를 가정해 보겠습니다. 
+Let's assume the case in which the network configuration of proxy → msa_process → msa_process2 → db is divided into three purposes: **operation stage**, **development stage**, and **testing stage**. 
 
--   `processType` 옵션으로 가시화하는 경우
+-   In case of visualization with the `processType` option
 
     ```mermaid
     flowchart LR
@@ -139,28 +139,28 @@ proxy → msa_process → msa_process2 → db로 이어지는 네트워크 구�
       C --> D(DB);
     ```
 
--   `appName` 옵션으로 동일한 명칭의 프로세스들을 **운영기**/**개발기**/**시험기**로 분리하는 경우
+-   In case the processes with the same name are divided into **operation stage**, **development stage**, and **testing stage** with the `appName` option
 
     ```yaml title='tagRule.yaml'
     appName:
-        prod_proxy: # 운영기
+        prod_proxy: # Operation stage
             - host_tag: prod_proxy
               process_type: proxy
-        prod_msa1: # 운영기
+        prod_msa1: # Operation stage
             - host_tag: prod_msa
               process_type: msa_process1
-        prod_msa2: # 운영기
+        prod_msa2: # Operation stage
             - host_tag: prod_msa
               process_type: msa_process2
-        dev_proxy: # 개발기
+        dev_proxy: # Development stage
             - host_tag: dev_proxy
               process_type: proxy
-        dev_msa: # 개발기
+        dev_msa: # Development stage
             - host_tag: dev_msa
               process_type: msa_process1
             - host_tag: dev_msa
               process_type: msa_process2
-        test: # 시험기
+        test: # Testing stage
             - host_tag: test
         db:
             - process_type: mysql
@@ -178,33 +178,33 @@ proxy → msa_process → msa_process2 → db로 이어지는 네트워크 구�
 
 :::note
 
--   `appName` 구분으로 사용 가능한 key는 `host_tag`, `process_type`, `ip`, `port`입니다.
+-   The keys available by `appName` are `host_tag`, `process_type`, `ip`, and `port`.
 
--   입력되지 않은 Key는 와일드 카드로 적용됩니다.
+-   The keys that have not been entered are applied as wild cards.
 
 :::
 
-`appName` 옵션으로 매칭되지 않은 경우 `appNameDefault` 옵션에 정의된 필드 혹은 값이 적용됩니다.
+If the `appName` option is not met, the field or value specified in the `appNameDefault` option is applied.
 
--   `appNameDefault`에는 기본값으로 사용할 key를 입력하세요.
+-   In `appNameDefault`, enter the key to be used by default.
 
--   `host_tag`, `process_type` 중 하나를 입력하면 해당 필드 정보가 `appName`에 자동 부여되며 만약 그 외의 String 값을 입력하면 해당 값으로 고정됩니다.
+-   If you enter any of `host_tag` and `process_type`, the field data is automatically assigned to `appName`. If you enter a string other than that, it is fixed to the value.
 
 ```yaml title='tagRule.yaml'
 appNameDefault: host_tag # host_tag, process_type, custom string
 ```
 
-### 불분명한 대상 구분{#untagged}
+### Identification of unclear targets{#untagged}
 
-옵션: `untagOption`
+Option: `untagOption`
 
-CSP(클라우드 서비스 제공업체)에서 제공하는 ELB, 외부에 요청하는 API 등 에이전트가 설치되지 않은 대상과 통신하는 경우, 해당 호스트 및 프로세스의 정보를 획득할 수 없습니다. 운영자가 알고 있는(혹은 관리 대상) IP, Port 정보를 기반으로 태그를 설정할 수 있습니다.
+When communicating with a target that does not have an agent installed, such as ELB provided by a Cloud Service Provider (CSP) or external API, the host and process data cannot be acquired. Tags can be set based on the IP and port that you know (or the target to be managed).
 
-만약 에이전트도 설치되지 않고 해당 옵션에도 정의되지 않은 IP, Port와 통신하는 경우 토폴로지에서는 **untagged**라는 노드로 표현됩니다.
+If the agent has not been installed and communication is made with the IP or port that has not been defined with the option, it is displayed as an **untagged** node on the topology.
 
 ![Untagged](/img/npm-untagged.png)
 
-IP와 Port를 키로 태그를 설정하며 Inbound 트래픽의 경우 외부 Port가 Client 포트로 고정된 서비스 포트가 아니기 때문에 `0`으로 설정해 입력하세요.
+Set the tag with the IP and port as keys. In case of inbound traffic, set it to `0` because the external port is the client port and is not the fixed service port.
 
 ```yaml title='tagRule.yaml'
 untagOption:

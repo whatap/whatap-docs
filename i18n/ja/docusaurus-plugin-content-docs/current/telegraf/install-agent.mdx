@@ -1,7 +1,7 @@
 ---
 id: install-agent
 title: エージェントのインストール
-description: WhaTapのTelegrafエージェント利用のための基本インストール方法を案内します。
+description: WhaTapのTelegrafエージェントを使用するための基本的なインストール手順について説明します。
 tags:
   - Telegraf
   - インストール
@@ -11,14 +11,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TR from '@site/src/components/TR';
 
-WhaTapのTelegrafエージェント利用のための基本インストール方法を案内します。
+WhaTapのTelegrafエージェントを使用するための基本的なインストール手順について説明します。
 
-Telegrafから収集するメトリクスをWhaTap収集サーバーに渡すことができます。収集されたデータはWhaTapのプロジェクト内部で確認できます。
-このページでは、whatap-telegrafエージェントをインストールし、Telegrafから受け取ったデータを収集サーバーに中継する方法について説明します。 
+Telegrafから収集するメトリクスをWhaTap収集サーバーに送信することができます。収集されたデータはWhaTapのプロジェクト内で確認できます。
+このページでは、whatap-telegrafエージェントをインストールし、Telegrafから受け取ったデータを収集サーバーに送信する方法について説明します。 
 
-既にインストールされているTelegrafの`socket_writer output plugin`を活性化し、whatap-telegraf（Local TCP）エージェントにデータを渡します。
+既にインストールされているTelegrafの`socket_writer output plugin`を有効化し、whatap-telegraf(Local TCP) エージェントにデータを渡します。
 
-WhaTapサービスを使用するには、[会員登録](https://www.whatap.io/ko/signup/)後にプロジェクトを作成し、対象サーバーにエージェントをインストールする必要があります。 会員登録に関する詳細については [次の文書](../account/account-manage)を参考にしてください。
+WhaTapサービスを使用するには、[会員登録](https://www.whatap.io/ko/signup/)後にプロジェクトを作成し、対象サーバーにエージェントをインストールする必要があります。 会員登録に関する詳細については [次の文書](../account/account-manage)を参照してください。
 
 {@include: ../getting-started/_create-project-v2.mdx}  
 
@@ -27,7 +27,7 @@ WhaTapサービスを使用するには、[会員登録](https://www.whatap.io/k
 ## インストール手順とファイル構成
 
 1.  WhaTap **リポジトリ**をインストールしてください。
-2.  whatap-telegraf **Linuxパッケージ**（yum, apt-get）を設置してください。
+2.  whatap-telegraf **Linuxパッケージ**(yum, apt-get)を設置してください。
 3.  **プロジェクトアクセスキー** および **WhaTapサーバー情報**を設定してください。
 4.  Telegrafの`socket_writer output plugin`を設定し、データを連動させてください。
 
@@ -36,7 +36,7 @@ WhaTapサービスを使用するには、[会員登録](https://www.whatap.io/k
 
 -   **whatap_telegraf**
 
-    サービス実行ファイルです。Telegrafから渡された情報を収集サーバーに転送するプログラムです。
+    サービス実行ファイルです。Telegrafから渡された情報を収集サーバーに送信するプログラムです。
 
 -   **/etc/init.d/whatap-telegraf** (FreeBSD /usr/local/etc/whatap_telegraf)
 
@@ -169,4 +169,4 @@ _Telegraf.conf_に`socket_writer output plugin`設定を行い、収集された
 -   address項目にtcp接続を設定します。
 -   データタイプは、json形式として設定します。
 
-Telegrafエージェントのインストールを完了しました。[次の文書](agent-troubleshooting)で、インストール時のトラブルを解決する方法を確認してください。
+Telegrafエージェントのインストールを完了しました。[次の文書](agent-troubleshooting)でインストール時のトラブルを解決する方法を確認してください。

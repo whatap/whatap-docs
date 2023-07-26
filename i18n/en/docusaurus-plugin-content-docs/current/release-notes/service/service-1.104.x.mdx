@@ -6,43 +6,43 @@ toc_max_heading_level: 2
 
 ## Service 1.104.19
 
-2023년 7월 21일
+July 21, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
--   <Status>Fixed</Status> <UI>보고서</UI> 메뉴에서 타임아웃 발생 시 보고서 생성이 정상적으로 완료되지 않는 버그 수정
+-   <Status>Fixed</Status> In <UI>Report</UI>, fixed the bug where report creation is not made when timeout occurs.
 
--   <Status>Change</Status> <UI>보고서</UI> 메뉴에서 보고서 생성 시 UI 로딩 표시 형식 변경
+-   <Status>Change</Status> In <UI>Report</UI>, modified the UI loading display format when creating reports.
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 이벤트 탭에서 알림 규칙 테스트 차트에 id 대신 name 관련 데이터 표시되도록 수정
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI> event tab, modified to display the name-related data instead of ID on the Testing event rules chart.
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 시간 범위 조작 후 새로 고침 시 시간 초기화 버그 수정
+-   <Status>Fixed</Status> In <UI>Server list</UI> > <UI>Server detail</UI>, fixed the time reset bug upon refreshing after the time range has been changed.
 
 </div>
 
 ## Service 1.104.18
 
-2023년 7월 20일
+July 20, 2023
 
 <div class='indentTab'>
 
 ### `Common`
 
--   <Status>Feature</Status> 에이전트에서 throttle이 설정되어 API 요청 제한 시 안내 메시지 추가
+-   <Status>Feature</Status> Added the guidance message when throttle has been set for the agent to limit API requests.
 
--   <Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정
+-   <Status>Fixed</Status> When inviting members for the <UI>project</UI>, <UI>group</UI>, and <UI>organization</UI>, the guidance message has been changed for non-existent accounts.
 
 </div>
 
 ## Service 1.104.17
 
-2023년 7월 18일
+July 18, 2023
 
 <div class='indentTab'>
 
@@ -50,19 +50,19 @@ toc_max_heading_level: 2
 
 #### My Usage
 
--   <Status>Feature</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가
+-   <Status>Feature</Status> In <UI>Payment information</UI>, added `Overseas bank transfer customer registration` when registering the payment data.
 
--   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국가 선택에 따라 결제 진행 과정 변경
+-   <Status>Change</Status> In <UI>Payment information</UI>, modified the payment process based on the country selection when registering the payment data.
 
--   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국내 '역발행 계좌 이체 등록' 미노출 변경
+-   <Status>Change</Status> In <UI>Payment information</UI>, modified not to display `Register reverse issuance account transfer` in Korea when registering the payment data.
 
--   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 프로모션 배너 변경
+-   <Status>Change</Status> In <UI>Payment information</UI>, changed the promotion banner.
 
--   <Status>Fixed</Status> <UI>결제 정보</UI> 메뉴에서 '해외 카드 등록'의 placeholder를 로케일 언어에 맞게 표시되도록 수정
+-   <Status>Fixed</Status> In <UI>Payment information</UI>, modified the placeholder of `Register overseas card` to be displayed according to the locale language.
 
 #### Report
 
-<p><Status>Fixed</Status> 일간 애플리케이션 사용자 정의 보고서의 <b>방문자</b> 항목 제거</p>
+<p><Status>Fixed</Status> Deleted the <b>Visitor</b> column from the Daily applications custom report.</p>
 
 * * *
 
@@ -70,43 +70,43 @@ toc_max_heading_level: 2
 
 #### GO, PHP
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Application dashboard</UI> > Memory detail window, modified the following.
 
-    -   **Heap 크기** → **_시스템 메모리_**, **Heap 사용량** → **_프로세스 메모리_**로 문구 변경
+    -   Text change: **Heap total** → **_System memory_**, **Heap use** → **_Process memory_**
 
-    -   시스템 GC 버튼 제거
+    -   Deleting the system GC button
 
 #### Dashboard
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Application dashboard</UI> > Memory detail window, modified the following.
 
-    -   이름 컬럼의 크기가 줄어들면 말줄임표와 함께 마우스 오버 시 툴팁이 활성화되도록 수정
+    -   When the size of the name column decreases, modified so that the tooltip is enabled by hovering the mouse over the ellipsis.
 
-    -   <UI>상세</UI> 버튼의 툴팁이 버튼 클릭 후에도 사라지지 않는 버그 수정
+    -   Fixed the bug where the tooltip of the <UI>Detail</UI> button does not disappear after the button is clicked.
 
--   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI> > <UI>히트맵</UI> 위젯 드래그 > <UI>히트맵 트랜잭션</UI> > TX 트레이스 항목 선택 > <UI>통계</UI> 창에서 <UI>트랜잭션 로그</UI> 탭의 트랜잭션 로그가 미설정되었을 경우:
+-   <Status>Fixed</Status> In <UI>Application dashboard</UI> > dragging <UI>HITMAP</UI> widget > <UI>HITMAP transaction</UI> > selecting TX trace > <UI>Statistics</UI> window, in case the transaction log is not set under the <UI>Transaction log</UI> tab:
 
-    -   언어 설정이 일본어인 상태: 출력되는 안내 메시지의 줄바꿈 버그 수정
+    -   Language setting is Japanese: Fixed the line break bug in the displayed guidance message.
 
-    -   언어 설정이 한국어인 상태:  출력되는 안내 메시지의 스타일이 제대로 적용되도록 수정
+    -   Language setting is Korean: Modified to apply the style in the displayed guidance message.
 
-    -   출력되는 안내 메시지의 링크를 클릭할때 설정된 언어에 맞는 Docs 페이지로 이동하도록 수정
+    -   Modified to go to the Docs page for the set language when clicking the link in the displayed guide message.
 
 #### Analytics
 
--   <Status>Fixed</Status> MSA 분석 메뉴에서 데이터를 조회했을 때 결과가 없으면 '데이터 없음' 안내 메시지가 나오도록 수정
+-   <Status>Fixed</Status> If there is no result when searching for data in the MSA analysis menu, modified to display the `No data` guidance message.
 
 * * *
 
 ### `Browser`
 
-<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 브라우저 에이전트 스크립트의 `config` 옵션으로 `proxyBaseUrl` 추가</p>
+<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, added `proxyBaseUrl` as the </p>`config` option of the browser agent script.
 
 </div>
 
 ## Service 1.104.16
 
-2023년 7월 18일
+July 18, 2023
 
 <div class='indentTab'>
 
@@ -114,13 +114,13 @@ toc_max_heading_level: 2
 
 #### Analytics
 
-<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 입력 길이 제한 로직 제거</p>
+<p><Status>Fixed</Status> In <UI>Multi transaction trace</UI>, removed the input length limitation logic in <UI>Search by MTID / CUSTID</UI>.</p>
 
 </div>
 
 ## Service 1.104.15
 
-2023년 7월 17일
+July 17, 2023
 
 <div class='indentTab'>
 
@@ -128,7 +128,7 @@ toc_max_heading_level: 2
 
 #### Analytics
 
-<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 숫자 외 문자가 입력되지 않는 버그 수정</p>
+<p><Status>Fixed</Status> In <UI>Multi transaction trace</UI>, fixed the bug where characters other than number cannot be entered in <UI>Search by MTID / CUSTID</UI>.</p>
 
 </div>
 
@@ -150,15 +150,15 @@ July 13, 2023
 
 -   **_Application Agent Installation_** > **_Docker PHP_**
 
-    -   Deleted the subtitle at the top of the access key copying area in the _**Verify Access Key**_ section.
+    -   **_1. Deleted the subtitle at the top of the access key copying area in the _**Verify Access Key\*\*\* section.
 
-    -   Deleted the subtitle from the _**Kubernetes environment variables and volumes**_ section.
+    -   **_4. Deleted the subtitle from the _**Kubernetes environment variables and volumes\*\*\* section.
 
--   **_Application agent installation_** > all installation types: Unified the wording in the _**Verify Access Key**_ section and added an icon to the left of the **Chat contact** text.
+-   **_Application agent installation_** > all installation types: **_1. Unified the wording in the _**Verify Access Key**\* section and added an icon to the left of the **Chat contact\*\* text.
 
 -   In the **_Install guide_** section, unified the icon on the **_Chat contact_** button with the channel talk icon.
 
--   **_Kubernetes agent installation_** > **_KUBERNETES_** > Added a guide message regarding the OOM issues in the _**Kubernetes agent creation**_ section.
+-   **_Kubernetes agent installation_** > **_KUBERNETES_** > **_3. Added a guide message regarding the OOM issues in the _**Kubernetes agent creation\*\*\* section.
 
 </div>
 

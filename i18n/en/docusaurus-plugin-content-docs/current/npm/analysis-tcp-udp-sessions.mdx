@@ -1,97 +1,97 @@
 ---
 id: analysis-tcp-udp-sessions
-title: TCP 세션 / UDP 세션
-description: 에이전트를 통해 수집한 세션 데이터를 이용해 장애 포인트를 자세하게 식별할 수 있습니다.
+title: TCP session/UDP session
+description: The session data collected by agents can be used to identify failure points in detail.
 tags:
-  - 네트워크 성능 모니터링
+  - Network performance monitoring
   - Analytics
   - TCP
   - UDP
-  - 세션
+  - Session
 ---
 
-홈 화면 > 프로젝트 선택 > **_분석_** > **_TCP 세션_** 또는 **_UDP 세션_**
+Home > Select Project > **_Analysis_** > **_TCP session_** or **_UDP session_**
 
-에이전트를 통해 수집한 세션 데이터를 이용해 장애 포인트를 자세하게 식별할 수 있습니다. 데이터를 효율적으로 식별할 수 있도록 다중 조건을 설정할 수 있는 필터 기능을 제공합니다. 식별한 데이터를 별도의 자료로 활용할 수 있도록 csv 파일 형식으로 다운로드할 수 있습니다.
+The session data collected by agents can be used to identify failure points in detail. It provides the filters that allow you to set multiple conditions to efficiently identify data. The identified data can be downloaded in CSV format for other purposes.
 
-![세션 검색](/img/npm-analaysis-tcp-udp.png)
+![Session Search](/img/npm-analaysis-tcp-udp.png)
 
-![숫자 1](/img/number-01.png) 원하는 시간을 설정한 다음 ![숫자 2](/img/number-02.png) ![검색 아이콘](/img/ico-btn-search.png) 버튼을 선택하세요. 테이블에 사용자가 설정한 조건과 일치하는 조건의 데이터가 표시됩니다.
+Set a desired ![Number 1](/img/number-01.png) time, and then select ![Number 2](/img/number-02.png) ![Search icon](/img/ico-btn-search.png). The table displays the data that meets the set conditions.
 
 :::note
 
-데이터 조회 조건을 새로 설정한 다음에는 ![검색 아이콘](/img/ico-btn-search.png) 버튼을 선택해야 매칭되는 데이터를 출력합니다.
+After setting new data search conditions, select ![Search icon](/img/ico-btn-search.png) to output the target data.
 
 :::
 
-## 조회 시간 설정하기
+## Setting the lookup time
 
-사용자가 원하는 시간을 설정해 데이터를 조회할 수 있습니다.
+You can see the data by setting a desired time.
 
 <ImgLang img='flexboard-time-set-select.png' desc='시간 선택 모드' className='noneborder' />
 
--   녹색 버튼을 선택해 시간 설정을 선택할 수 있습니다. 최대 1시간까지 선택할 수 있습니다.
+-   You can click the green button to select a desired time. It can be set up to 1 hour.
 
--   ![왼쪽 아이콘](/img/left-arrow.svg) 또는 ![오른쪽 아이콘](/img/right-arrow.svg) 버튼을 선택하면 녹색 버튼에 설정된 값만큼 시간을 이동할 수 있습니다.
+-   By selecting ![Left Arrow icon](/img/left-arrow.svg) or ![Right Arrow icon](/img/right-arrow.svg), you can move by the time set on the green button.
 
--   날짜와 시간 텍스트 영역을 선택하면 날짜와 시간을 선택할 수 있는 옵션이 나타납니다.
+-   If you click the text range for date and time, the option appears to select the date and time.
 
-## 세션 데이터 조회 설정하기
+## Setting for the session data search
 
-### 인바운드 / 아웃바운드 조건 설정
+### Configuring the inbound/outbound conditions
 
 ![](/img/npm-analysis-select-in-out.png)
 
-검색 조건을 설정하기 전에 다음 트래픽 종류를 선택하세요.
+Before setting the search conditions, select the following traffic types.
 
--   **_IN_**: 인바운드 트래픽
+-   **_IN_**: Inbound traffic
 
--   **_OUT_**: 아웃바운드 트래픽
+-   **_OUT_**: Outbound traffic
 
-### 필터 조건 설정하기
+### Setting the filter conditions
 
-태그 값과 필드 값에 대한 다중 필터 조건을 설정하여 데이터를 조회할 수 있습니다. 추가되는 조건들은 `&&`(and) 조건으로 설정됩니다.
+You can see the data by setting multiple filter conditions for tag and field values. Conditions are added by the `&&` (and) condition.
 
-예를 들어 `ProcessType` 태그 값이 'agencyrun' 이고 `Session` 필드 값이 2보다 큰 세션 데이터를 조회하려면 다음과 같이 설정하세요.
+For example, to search the session data with the `ProcessType` tag value of "agencyrun" and the `Session` field value greater than 2, set as follows.
 
-![태그 필터링](/img/npm-analysis-filtering.png)
+![Tag filtering](/img/npm-analysis-filtering.png)
 
 ## Additional options
 
-### 테이블 컬럼 설정하기
+### Setting the table columns
 
-테이블 헤더 컬럼을 감추거나 원하는 항목을 추가할 수 있습니다. 컬럼 순서를 변경할 수도 있습니다. **_컬럼 설정_** 버튼을 선택하세요.
+You can hide the table header columns or add any of them. You can also change the column order. Select **_Column settings_**.
 
-![컬럼 설정](/img/npm-analysis-column-settings.png)
-
-:::note
-
-설정을 완료한 다음에는 **_확인_** 버튼을 선택해야 설정 사항이 테이블에 반영됩니다.
-
-:::
-
-#### 컬럼 추가하기
-
-![숫자 1](/img/number-01.png) 목록에서 테이블 헤더 컬럼으로 추가할 항목을 선택하세요. 모든 항목을 추가하려면 **_전체 선택_**을 선택하세요.
+![Column Setting](/img/npm-analysis-column-settings.png)
 
 :::note
 
-![숫자 3](/img/number-03.png) 검색란에 텍스트를 입력해 원하는 컬럼 항목을 검색할 수 있습니다. 입력한 텍스트와 매칭되는 컬럼 항목만 표시됩니다.
+After configuration, select **_OK_** to apply the settings in the table.
 
 :::
 
-#### 컬럼 삭제하기
+#### Adding columns
 
-![숫자 1](/img/number-01.png) 목록에서 삭제할 컬럼 항목의 체크 박스를 선택 해제하세요. 또는 ![숫자 2](/img/number-02.png) 목록에서 삭제할 항목의 오른쪽에 ![삭제 아이콘](/img/ico-remove-white.svg) 버튼을 선택하세요.
+From the ![Number 1](/img/number-01.png) list, select the items to add as table header columns. To select all items, select **_Select All_**.
 
-#### 컬럼 순서 변경하기
+:::note
 
-![숫자 2](/img/number-02.png) 목록에 순서를 변경할 항목을 드래그해서 원하는 위치로 이동할 수 있습니다. 
+In the ![number 3](/img/number-03.png) search bar, enter text to search the desired columns. Only the columns that meet the entered text are displayed.
 
-#### 설정 사항 초기화하기
+:::
 
-변경 사항은 모두 취소하고 초기화하려면 ![초기화 아이콘](/img/ico-reset.svg) **_초기화_** 버튼을 선택하세요.
+#### Deleting columns
 
-### 조회 데이터 다운로드
+From the ![number 1](/img/number-01.png) list, unselect the columns to delete. Alternatively, select ![Delete icon](/img/ico-remove-white.svg) on the right of the item to delete from the ![number 2](/img/number-02.png) list.
 
-테이블에 출력된 데이터를 csv 파일 형식으로 다운로드하려면 ![다운로드 아이콘](/img/ic-csv-download-ms.svg) 버튼을 선택하세요.
+#### Changing the column order
+
+Drag an item to reposition from the ![number 2](/img/number-02.png) list, and then move it to the desired position. 
+
+#### Initializing the configuration
+
+To cancel all changes and reset them, select ![Reset icon](/img/ico-reset.svg) **_Reset_**.
+
+### Downloading the viewed data
+
+To download the data output in the table in CSV format, select ![Download icon](/img/ic-csv-download-ms.svg).

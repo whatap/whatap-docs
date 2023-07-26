@@ -7,12 +7,12 @@ toc_max_heading_level: 2
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
-リリーズ：2022-05-12
+リリース：2022-05-12
 
 ## ベータ版 - アップデート
 
 ### ウェブトランザクションに含まれないSQL、HTTP Call情報の収集
 
-既存のウェブトランザクションの場合、contextにWhaTap情報を含み（`race.Start()`呼び出しが必要）固有トランザクションID（`Txid`）が発行された場合に限ってSQL、HTTP Call情報を収集しました。 
+既存のウェブトランザクションの場合、contextにWhaTap情報を含めることができます(`trace.Start()` 呼び出しが必要) 固有トランザクションID(`Txid`)が発行された場合のみSQL、HTTP Call情報を収集しました。 
 
 固有のトランザクションIDがない場合、収集された情報は統計情報のみで表示できます。

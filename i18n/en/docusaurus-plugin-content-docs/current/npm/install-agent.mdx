@@ -1,13 +1,13 @@
 ---
 id: install-agent
 title: Agent Installation
-description: 와탭 모니터링 서비스에서 프로젝트를 생성하고 에이전트를 설치하는 과정에 대해 알아봅니다.
+description: Let's learn how to create a project and install the agent in the WhaTap monitoring service.
 tags:
-  - 네트워크 성능 모니터링
+  - Network performance monitoring
   - Agent
 ---
 
-와탭 NPM 서비스를 사용하기 위해서는 [회원 가입](https://www.whatap.io/ko/signup/) 후 프로젝트를 생성하고 운영 중인 서버에 NPM 에이전트를 설치해야 합니다.
+To use the WhaTap NPM service, perform [Sign up](https://www.whatap.io/ko/signup/), create a project, and then install the agent to the running server.
 
 {@include: ../getting-started/_create-project-v2.mdx}    
 
@@ -15,7 +15,7 @@ tags:
 
 ## Downloading the agent
 
-모니터링 대상 서버에 에이전트 파일을 다운로드하세요.
+Download the agent file to a target monitoring server.
 
 <Tabs groupId="os">
 <TabItem value="ubuntu" label="Ubuntu">
@@ -39,15 +39,15 @@ sudo yum install whatap-npmd
 </TabItem>
 </Tabs>
 
-## 호환성 체크 및 설정
+## Compatibility checking and configuration
 
-에이전트를 다운로드한 서버의 호환성을 체크하고 설정 정보를 입력하세요.
+Check the compatibility of the server in which the agent has been downloaded, and then enter the required settings.
 
 ```bash
-sudo /usr/whatap/whatap-npmd/install.sh {프로젝트 액세스 키} {수집 서버 IP 주소}
+sudo /usr/whatap/whatap-npmd/install.sh {Project access key} {Collection server IP}
 ```
 
-다음과 같이 호환성 체크 결과와 구동 메시지를 확인할 수 있습니다.
+You can see the compatibility result and incoming messages as follows.
 
 ```bash
 Supported kernel version : 5.15. OK.
@@ -62,6 +62,6 @@ Installation complete!
 
 ## Starting the monitoring
 
--   에이전트가 정상 작동하면 모니터링 정보를 수집하기 시작합니다. 수집된 정보를 서비스 화면에서 확인하려면 화면 오른쪽 아래에 **_NPM 대시보드_** 버튼을 선택하세요.
+-   When the agent works, it starts collecting the monitoring data. To check the collected data on the service screen, select **_NPM Dashboard_** at the lower right of the screen.
 
--   **NPM**에서는 **tagRule** 설정을 통해 불규칙하고 다양한 정보를 수집하고 토포롤지 또는 차트로 표현할 수 있습니다. 자세한 내용은 [다음 문서](set-tagrule)를 참조하세요.
+-   **NPM** can collect irregular and diverse data through the **tagRule** settings and display the data in a topography or chart. For more details, see [the following](set-tagrule).

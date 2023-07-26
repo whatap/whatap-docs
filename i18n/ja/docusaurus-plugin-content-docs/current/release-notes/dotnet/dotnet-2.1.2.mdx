@@ -4,24 +4,24 @@ title: .NET Agent v2.1.2
 toc_max_heading_level: 2
 ---
 
-#### 2023년 7월 20일
+#### 2023年7月20日
 
--   <Status>New</Status> WCF 지원
+-   <Status>New</Status>WCFサポート
 
-    -   WCF는 웹서비스와 동일하게 사용자 지정 메서드를 통해서 추적합니다. 따라서 설정한 옵션의 값을 공유합니다.
+    -   WCFは、ウェブサービスと同様にユーザー指定メソッドを介して追跡します。 したがって、設定したオプションの値を共有します。
 
-        -   `webservice_method_enabled` 옵션의 값이 `true`가 되면 WCF도 함께 추적 대상이 됩니다.
+        -   'webservice_method_enabled'オプションの値が'true'になると、WCFも一緒に追跡対象となります。
 
-        -   추적 대상이 되는 메서드의 이름을 네임스페이스와 함께 `webservice_method_prefix` 설정에 입력하세요.
+        -   追跡対象となるメソッドの名前をネームスペースとともに、'webservice_method_prefix'設定に入力してください。
 
--   <Status>Change</Status>  Active Stack 실행 환경 자동 감지
+-   <Status>Change</Status>Active Stack実行環境を自動感知
 
-    -   OS의 .NET framework 버전이 4.6.1 이상에서만 Active Stack이 동작합니다.
+    -   OSの.NET frameworkバージョンが4.6.1以降でのみActive Stackが動作します。
 
-    -   `active_stack_enabled` 옵션의 값이 `true`로 설정이 되어있어도 OS의 .NET framework 버전이 4.6.1 미만이면 Active Stack 수집을 중단합니다.
+    -   `active_stack_enabled`オプションの値が `true`に設定されていてもOSの.NET frameworkバージョンが4.6.1以前ならば、Active Stack収集を中断します。
 
     :::note
 
-    사용자의 웹 어플리케이션은 4.5 버전 이상에서 Active Stack을 지원합니다. OS의 .NET framework 버전 확인은 [다음 문서](https://docs.whatap.io/dotnet/supported-spec#use-tools)의 4번 항목을 참고하세요.
+    ユーザーのウェブアプリケーションは、4.5バージョン以降でActiveStackをサポートします。 OSの.NET frameworkバージョン確認は[次の文書](https://docs.whatap.io/dotnet/supported-spec#use-tools)の4番項目を参考にしてください。
 
     :::

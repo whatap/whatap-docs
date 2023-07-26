@@ -14,9 +14,9 @@ Input whatap.server.host
 192.x.x.x                                  # 発行されたサーバーIPを入力
 ```
 
-PHP拡張モジュールおよびwhatap-phpサービスを自動的に認識できない場合は、以下のように選択インストールを進める必要があります。
+PHP拡張モジュールおよびwhatap-phpサービスが自動的に認識できない場合は、以下のように選択してインストールを進める必要があります。
 
-主にApacheコマンド（`apachectl`、`httpd`、`apache2`）およびPHPコマンド（CLI）がデフォルトパス(_$PATH_)に設定されていないか、複数のPHPがインストールされてPHPコマンド（CLI）が複数ある場合（`php5`、`php70`、`php-zts`、`zts-php`…）は、実際に適用しているバージョンを選択して進めてください。
+主にApacheコマンド(`apachectl`、`httpd`、`apache2`) およびPHPコマンド(CLI)がデフォルトパス(_$PATH_)に設定されていない場合、または複数のPHPがインストールされてPHPコマンド(CLI)が複数ある場合(`php5`、`php70`、`php-zts`、`zts-php`…)は、実際に適用しているバージョンを選択して進めてください。
 
 ```bash title=SH
 $ sudo /usr/whatap/php/install.sh manual
@@ -81,15 +81,15 @@ Options
 
 -   **php config file**
 
-    サーバーにインストールされているphp.iniのフルパス(_/etc/php.ini_)PHP Extensionに対する設定を進めます。
+    サーバーにインストールされているphp.iniのフルパス(_/etc/php.ini_)PHP Extensionの設定を進めます。
 
 -   **php cli**
 
-    コマンドラインで実行可能なphpコマンドのフルパス(_/usr/bin/php_) の該当コマンドでPHPの基本環境を確認します。
+    コマンドラインから実行可能なphpコマンドのフルパス(_/usr/bin/php_) とコマンドでPHPの基本環境を確認します。
 
 -   **process name**
 
-    Apacheの実行プロセス名（`httpd`、`apache2`、`httpd.worker`…）またはPHP-FPMの実行プロセス名（`php-fpm`、`php5-fpm`）で使用メモリ情報を収集します。
+    Apacheの実行プロセス名(`httpd`、`apache2`、`httpd.worker`…) またはPHP-FPMの実行プロセス名(`php-fpm`、`php5-fpm`)で使用メモリ情報を収集します。
 
 -   **zts**
 

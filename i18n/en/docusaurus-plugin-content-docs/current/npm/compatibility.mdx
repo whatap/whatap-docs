@@ -1,24 +1,24 @@
 ---
 id: compatibility
 title: Support Environment
-description: NPM 모니터링의 호환성을 확인해보세요.
+description: Check the compatibility of the NPM monitoring.
 tags:
-  - 네트워크 성능 모니터링
+  - Network performance monitoring
   - Compatibility
 ---
 
-와탭의 **NPM**을 사용하기 위해서는 운영 중인 서버들에 **NPM Agent**를 설치해야 합니다. **NPM**은 OS 커널에서 제공하는 eBPF 기술을 사용하고 있기 때문에 OS 버전 확인이 필요합니다.
+To use WhaTap's **NPM**, install **NPM Agent** on the running servers. Because **NPM** uses the eBPF technology provided by the OS kernel, be sure to check the OS version.
 
--   Linux 커널 5.4 버전 이상을 지원합니다.
+-   It supports the Linux kernel version 5.4 or later.
 
--   Linux 배포판 기준 Ubuntu 20.04, CentOS Stream 9 이상을 권장합니다.
+-   Based on the Linux release version, we recommend Ubuntu 20.04 and CentOS Stream 9 or later.
 
 :::note
 
--   Ubuntu, CentOS의 과거 버전에서도 커널 업데이트를 통해 사용 가능합니다.
+-   It is also available through kernel update in case of an older version of Ubuntu and CentOS.
 
--   그 외의 다른 배포판에서도 커널 버전이 맞으면 사용 가능하지만 현재 공식적으로 테스트된 배포판은 Ubuntu와 CentOS입니다.
+-   Other releases may work with the kernel version matched, but the officially tested releases are for Ubuntu and CentOS.
 
--   현재 Windows, macOS는 지원하지 않습니다.
+-   Currently, Windows and mac OS are not supported.
 
 :::

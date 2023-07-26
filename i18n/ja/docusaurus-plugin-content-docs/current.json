@@ -1504,7 +1504,7 @@
     "description": "The label for link Go in sidebar indexSidebar, linking to golang/introduction"
   },
   "sidebar.npmsidebar.category.NPM 모니터링": {
-    "message": "NPM 모니터링",
+    "message": "NPMモニタリング",
     "description": "The label for category NPM 모니터링 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.대시보드": {

@@ -24,101 +24,101 @@ toc_max_heading_level: 2
 
 ## Preview 1.105.20
 
-2023년 7월 21일
+2023年7月21日
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Fixed</Status> <UI>보고서</UI> 메뉴에서 타임아웃 발생 시 보고서 생성이 정상적으로 완료되지 않는 버그 수정
+-   <Status>Fixed</Status><UI>レポート</UI>メニューからタイムアウトが発生した場合、レポート作成が正常に完了しないバグを修正
 
--   <Status>Change</Status> <UI>보고서</UI> 메뉴에서 보고서 생성 시 UI 로딩 표시 형식 변경
+-   <Status>Change</Status><UI>レポート</UI>メニューからレポート作成すると、UIローディング表示形式を変更
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스</UI> 이벤트 탭에서 알림 규칙 테스트 차트에 id 대신 name 관련 데이터 표시되도록 수정
+-   <Status>Fixed</Status> <UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリックス</UI>イベントタブで通知規則テストチャートにidの代わりにname関連データが表示されるよう修正
 
--   <Status>Fixed</Status> <UI>서버 목록</UI> > <UI>서버 상세</UI> 메뉴에서 시간 범위 조작 후 새로 고침 시 시간 초기화 버그 수정
+-   <Status>Fixed</Status> <UI>サーバー一覧</UI>><UI>サーバー詳細</UI>メニューから時間範囲を操作すると、更新時に時間初期化されるバグを修正
 
 </div>
 
 ## Preview 1.105.19
 
-2023년 7월 21일
+2023年7月21日
 
 <div class='indentTab'>
 
 ### `Database`
 
-#### V2 공통
+#### V2共通
 
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 액티브 세션 테이블 정렬 변경 상태 프리셋 저장 추가
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューからアクティブセッションテーブル整列変更ステータスプリセット保存の追加
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 데이터 갱신 시 정렬 해제 버그 수정
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでデータ更新時、配置解除バグを修正
 
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴에서 액티브 세션 테이블 새창으로 보기 추가
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでアクティブセッションテーブルの新しいウィンドウで表示を追加
 
--   <Status>Feature</Status> <UI>대시보드</UI> > <UI>Flex 보드</UI> 메뉴에서 액티브 세션 테이블 위젯 정렬 변경 상태 저장 추가
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>Flexボード</UI>メニューでアクティブセッションテーブルウィジェット整列変更ステータス保存の追加
 
--   <Status>Change</Status> 프로젝트 버전 선택 기능 제공 마감일자 변경
+-   <Status>Change</Status>プロジェクトバージョン選択機能提供の締切日変更
 
-    -   <code>PostgreSQL</code>: 2023년 9월 30일 → 2023년 10월 31일
+    -   <code>PostgreSQL</code>:2023年9月30日→2023年10月31日
 
-    -   <code>MySQL</code>: 2023년 10월 30일 → 2023년 11월 30일
+    -   <code>MySQL</code>:2023年10月30日→2023年11月30日
 
--   <Status>Fixed</Status> <UI>분석</UI> > <UI>카운트 추이 비교</UI> 메뉴에서 데이터 호출 및 로딩 속도 차이로 차트가 부자연스럽게 출력되는 현상 개선
+-   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューでデータ呼び出しおよびローディング速度の差で、チャートが不自然に出力される現象を改善
 
 #### PostgreSQL
 
-<p><Status>Feature</Status> V2 제품의 <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴 내 액티브 세션 테이블에서 세션 상세 정보에 Plan 조회 추가</p>
+<p><Status>Feature</Status>V2製品の<UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニュー内のアクティブセッションテーブルでセッション詳細情報にPlan照会を追加</p>
 
 #### MySQL
 
-<p><Status>Feature</Status> V2 제품의 <UI>대시보드</UI> > <UI>인스턴스 모니터링</UI> 메뉴 내 액티브 세션 테이블의 초기 정렬 상태 설정</p>
+<p><Status>Feature</Status>V2製品の<UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニュー内のアクティブセッションテーブルの初期配置ステータス設定</p>
 
 </div>
 
 ## Preview 1.105.18
 
-2023년 7월 20일
+2023年7月20日
 
 <div class='indentTab'>
 
 ### `共通`
 
--   <Status>Feature</Status> 에이전트에서 throttle이 설정되어 API 요청 제한 시 안내 메시지 추가
+-   <Status>Feature</Status>エージェントでthrottleが設定され、APIリクエスト制限時に案内メッセージを追加
 
--   <Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정
+-   <Status>Fixed</Status>インストールされた環境で<UI>プロジェクト</UI>、<UI>グループ</UI>、<UI>組織</UI>メンバー招待時に存在しないアカウントの場合の案内メッセージを修正
 
 </div>
 
 ## Preview 1.105.17
 
-2023년 7월 20일
+2023年7月20日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> 설치형 환경에서 <UI>프로젝트</UI>, <UI>그룹</UI>, <UI>조직</UI> 멤버 초대 시 존재하지 않는 계정인 경우 안내 메시지 수정</p>
+<p><Status>Fixed</Status>インストール型環境で<UI>プロジェクト</UI>、<UI>グループ</UI>、<UI>組織</UI>メンバー招待時に存在しないアカウントの場合は、案内メッセージを修正</p>
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>통계/보고서</UI> > <UI>통계</UI> > <UI>트랜잭션</UI> 탭의 목록에서 <UI>T</UI> 및 <UI>U</UI> 버튼 선택 시 동작하지 않던 버그 수정
+-   <Status>Fixed</Status> <UI>統計/レポート</UI>><UI>統計</UI>><UI>トランザクション</UI>タブの一覧で<UI>T</UI>および<UI>U</UI>ボタン選択時に動作しなかったバグを修正
 
--   <Status>Change</Status> <UI>대시보드</UI> > <UI>액티브 트랜잭션</UI> 메뉴에서 테이블 내 느린 트랜잭션 및 매우 느린 트랜잭션 표시 색상 수정
+-   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>アクティブトランザクション</UI>メニューでテーブル内の遅いトランザクションおよび非常に遅いトランザクション表示の色を修正
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>대시보드</UI> > <UI>컨테이너 맵</UI> 메뉴에서 간헐적으로 화이트 아웃 발생하는 버그 수정</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューから断続的にホワイトアウトが発生するバグを修正</p>
 
 </div>
 
 ## Preview 1.105.16
 
-2023년 7월 18일
+2023年7月18日
 
 <div class='indentTab'>
 
@@ -126,75 +126,75 @@ toc_max_heading_level: 2
 
 #### Flexボード
 
-<p><Status>Fixed</Status> 화면의 너비가 작아지면서 <UI>히트맵</UI> 위젯의 폭이 좁아지면 버튼 레이아웃이 메뉴 밖으로 벗어나는 현상 수정</p>
+<p><Status>Fixed</Status>画面の幅が小さくなり<UI>ヒートマップ</UI>ウィジェットの幅が狭くなると、ボタンレイアウトがメニューから外れる現象を修正</p>
 
 #### 利用履歴
 
--   <Status>Feature</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 '해외 계좌 이체 고객 등록' 추가
+-   <Status>Feature</Status><UI>決済情報</UI>メニューから決済情報を登録する際に、「海外口座振替顧客登録」を追加
 
--   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국가 선택에 따라 결제 진행 과정 변경
+-   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国の選択に応じて決済プロセスを変更
 
--   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 결제 정보를 등록할 때 국내 '역발행 계좌 이체 등록' 미노출 변경
+-   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国内の「逆発行口座振替登録」未露出される部分を変更
 
--   <Status>Change</Status> <UI>결제 정보</UI> 메뉴에서 프로모션 배너 변경
+-   <Status>Change</Status><UI>決済情報</UI>メニューからプロモーションバナーの変更
 
--   <Status>Fixed</Status> <UI>결제 정보</UI> 메뉴에서 '해외 카드 등록'의 placeholder를 로케일 언어에 맞게 표시되도록 수정
+-   <Status>Fixed</Status><UI>決済情報</UI>メニューから「海外カード登録」のplaceholderをロカール言語に合わせて表示するよう修正
 
--   <Status>Fixed</Status> <UI>청구 및 납부 내역</UI> 메뉴에서 페이지 번호 개수 설정 버그 수정
+-   <Status>Fixed</Status> <UI>請求及び納付内訳</UI>メニューからページ番号個数設定バグを修正
 
 #### レポート
 
-<p><Status>Fixed</Status> 일간 애플리케이션 사용자 정의 보고서의 <b>방문자</b> 항목 제거</p>
+<p><Status>Fixed</Status>日間アプリケーション ユーザー定義レポートの<b>訪問者</b>項目削除</p>
 
 * * *
 
 ### `Application`
 
-#### GO, PHP
+#### GO、PHP
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>>メモリ詳細ウィンドウで次の内容を修正します。
 
-    -   **Heap 크기** → **_시스템 메모리_**, **Heap 사용량** → **_프로세스 메모리_**로 문구 변경
+    -   **Heapサイズ**→**_システムメモリ_**、**Heap使用量**→**_プロセスメモリ_**にメッセージ変更
 
-    -   시스템 GC 버튼 제거
+    -   システムGCボタンを除去
 
 #### ダッシュボード
 
--   <Status>Fixed</Status> <UI>대시보드</UI> > <UI>애플리케이션 대시보드</UI> > 메모리 상세 창에서 다음의 내용을 수정합니다.
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>>メモリ詳細ウィンドウで次の内容を修正します。
 
-    -   이름 컬럼의 크기가 줄어들면 말줄임표와 함께 마우스 오버 시 툴팁이 활성화되도록 수정
+    -   名前のカラムサイズが小さくなると、三点リーダーと一緒にマウスオーバー時に、ツールチップが有効になるよう修正
 
-    -   <UI>상세</UI> 버튼의 툴팁이 버튼 클릭 후에도 사라지지 않는 버그 수정
+    -   <UI>詳細</UI>ボタンのツールチップがボタンクリック後も消えないバグを修正
 
--   <Status>Fixed</Status> <UI>애플리케이션 대시보드</UI> > <UI>히트맵</UI> 위젯 드래그 > <UI>히트맵 트랜잭션</UI> > TX 트레이스 항목 선택 > <UI>통계</UI> 창에서 <UI>트랜잭션 로그</UI> 탭의 트랜잭션 로그가 미설정되었을 경우:
+-   <Status>Fixed</Status><UI>アプリケーションダッシュボード</UI>><UI>ヒートマップ</UI>ウィジェットドラッグ><UI>ヒートマップトランザクション</UI>>TXトレース項目選択><UI>統計</UI>ウィンドウで<UI>トランザクションログ</UI>タブのトランザクションログが未設定の場合:
 
-    -   언어 설정이 일본어인 상태: 출력되는 안내 메시지의 줄바꿈 버그 수정
+    -   言語設定が日本語の状態:出力される案内メッセージの改行バグを修正
 
-    -   언어 설정이 한국어인 상태:  출력되는 안내 메시지의 스타일이 제대로 적용되도록 수정
+    -   言語設定が韓国語の状態:出力される案内メッセージのスタイルが正しく適用されるように修正
 
-    -   출력되는 안내 메시지의 링크를 클릭할때 설정된 언어에 맞는 Docs 페이지로 이동하도록 수정
+    -   出力される案内メッセージのリンクをクリックすると、設定された言語に応じたDocsページに移動するよう修正
 
 #### 分析
 
--   <Status>Fixed</Status> MSA 분석 메뉴에서 데이터를 조회했을 때 결과가 없으면 '데이터 없음' 안내 메시지가 나오도록 수정
+-   <Status>Fixed</Status>MSA分析メニューでデータを照会した際、結果がなければ「データなし」の案内メッセージが出るように修正
 
 * * *
 
 ### `Browser`
 
-<p><Status>Change</Status> <UI>관리</UI> > <UI>에이전트 설치</UI> 메뉴에서 브라우저 에이전트 스크립트의 <code>config</code> 옵션으로 <code>proxyBaseUrl</code> 추가</p>
+<p><Status>Change</Status> <UI>管理</UI>><UI>エージェントのインストール</UI>メニューからブラウザ エージェントスクリプトの<code>config</code>オプションで<code>proxyBaseUrl</code>追加</p>
 
 </div>
 
 ## Preview 1.105.15
 
-2023년 7월 18일
+2023年7月18日
 
 <div class='indentTab'>
 
 ### `Container`
 
-<p><Status>Change</Status> 클러스터 프로젝트일 때 <UI>퍼포먼스 요약</UI> 메뉴의 지표별 그룹 타이틀 표기 추가</p>
+<p><Status>Change</Status>クラスタープロジェクトの場合<UI>パフォーマンス要約</UI>メニューの指標別グループタイトル表記の追加</p>
 
 ![sample](/img/release/r-1_105_14-k8s-summary-cluster.png)
 
@@ -202,13 +202,13 @@ toc_max_heading_level: 2
 
 ## Preview 1.105.14
 
-2023년 7월 17일
+2023年7月17日
 
 <div class='indentTab'>
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>Flex 보드</UI> 메뉴에서 애플리케이션 모니터링 상품의 <code>app_user</code> 카테고리 내 <code>logbits</code> 필드 사용 시 MXQL 생성 로직에서 예외 처리 추가</p>
+<p><Status>Fixed</Status> <UI>Flexボード</UI>メニューからアプリケーションモニタリング商品の <code>app_user</code>カテゴリー内<code>logbits</code>フィールド使用時、MXQL生成ロジックから例外処理を追加</p>
 
 * * *
 
@@ -216,21 +216,21 @@ toc_max_heading_level: 2
 
 #### ダッシュボード
 
--   <Status>Fixed</Status> 쿠버네티스 애플리케이션 프로젝트에서 <UI>트랜잭션 분석</UI> 창의 <UI>레코드 요약</UI> 탭 내용 중 <b>onode</b>를 표기를 <UI>에이전트 노드</UI>로 수정
+-   <Status>Fixed</Status>クバネティスアプリケーションプロジェクトで<UI>トランザクション分析</UI>ウィンドウの<UI>レコード要約</UI>タブの内容で<b>onode</b>を表記を<UI>エージェントノード</UI>に修正
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 통계 모달의 차트가 보이지 않는 버그 수정
+-   <Status>Fixed</Status><UI>トランザクション分析</UI>ウィンドウで統計のモーダルのチャートが見えないバグを修正
 
--   <Status>Fixed</Status> <UI>트랜잭션 분석</UI> 창에서 <UI>SQL 요약</UI>, <UI>메소드 요약</UI>, <UI>HTTP Call 요약</UI> 탭의 조회된 데이터가 없을 경우 안내 메시지 추가
+-   <Status>Fixed</Status><UI>トランザクション分析</UI>ウィンドウで<UI>SQL要約</UI>、<UI>メソッド要約</UI>、<UI>HTTP Call要約</UI>タブで照会されたデータがない場合は、案内メッセージを追加
 
 #### 分析
 
-<p><Status>Fixed</Status> <UI>멀티 트랜잭션 추적</UI> 메뉴에서 <UI>MTID / CUSTID 조회</UI> 입력란에 숫자 외 문자가 입력되지 않는 버그 수정</p>
+<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューで<UI>MTID/CUSTID照会</UI>入力欄に数字以外の文字が入力されないバグを修正</p>
 
 * * *
 
 ### `Database`
 
-<p><Status>Fixed</Status> <b>PostgreSQL V2</b>, <b>Mysql V2</b> 프로젝트에서 <UI>슬로우 쿼리</UI>, <UI>데이터베이스 사이즈</UI> 메뉴의 영어, 일본어 안내 지원</p>
+<p><Status>Fixed</Status><b>PostgreSQL V2</b>、<b>Mysql V2</b>プロジェクトで<UI>スロークエリ</UI>、<UI>データベースサイズ</UI>メニューの英語、日本語案内対応</p>
 
 * * *
 
@@ -238,11 +238,11 @@ toc_max_heading_level: 2
 
 #### ダッシュボード
 
--   <Status>Fixed</Status> <UI>멀티 컨테이너 맵</UI> 메뉴에서 <UI>네임스페이스</UI> 메뉴로 이동할 수 없도록 수정
+-   <Status>Fixed</Status><UI>マルチコンテナマップ</UI>メニューで<UI>ネームスペース</UI>メニューに移動できないように修正
 
     ![sample](/img/release/r-1_105_14-k8s-multi-container-map.png)
 
--   <Status>Change</Status> <UI>컨테이너 맵</UI> 메뉴의 상세 보기 패널에서 블록의 개수가 많은 경우 표기 방식 변경
+-   <Status>Change</Status><UI>コンテナマップ</UI>メニューの詳細表示パネルでブロック数が多い場合、表記方式を変更
 
     ![sample](/img/release/r-1_105_14-k8s-container-map-details.png)
 
@@ -296,7 +296,7 @@ toc_max_heading_level: 2
 
 -   **_インストールの案内_**セクションで**_チャットでのお問い合わせ_**ボタンのアイコンをチャットトークのアイコンと統一
 
--   ***クバネティスエージェントの設定***>**_KUBERNETES_**>**_3. クバネティスエージェントの作成_**セクションでOOM発生問題に関する案内メッセージを追加
+-   **\*クバネティスエージェントの設定**>**_KUBERNETES_**>**_3. クバネティスエージェントの作成_**セクションでOOM発生問題に関する案内メッセージを追加
 
 * * *
 
@@ -345,7 +345,7 @@ toc_max_heading_level: 2
 
 -   <Status>Fixed</Status>ダッシュボードコピーウィンドウに漏れ落ちた多国語（英語）の修正
 
--   <Status>Change</Status> 대시보드 <UI>다른 사람에게 복사</UI> 기능 이용 시 대시보드 제목에 <b>copied_</b> prefix 추가
+-   <Status>Change</Status>ダッシュボード<UI>他の人にコピー</UI>機能利用時、ダッシュボードタイトルに<b>copied_</b>prefix追加
 
 </div>
 

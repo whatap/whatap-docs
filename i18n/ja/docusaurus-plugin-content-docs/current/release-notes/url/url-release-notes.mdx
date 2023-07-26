@@ -10,28 +10,28 @@ toc_max_heading_level: 2
 
 ### Minor Change
 
-URLモニタリングUser-Agent名をJava/1.8からWhaTap URL Monitoring Agentに修正しました。 
+URLモニタリングUser-Agent名を、Java/1.8からWhaTap URL Monitoring Agentに変更しました。 
 
 ## URL Monitoring Agent v2.0.1
 
-リリーズ：2021-10-07
+リリース：2021-10-07
 
 ### バグフィックス
 
--   FullChain証明書を使用しない一部のURLから`sun.security.validator.ValidatorException`が発生する現象を改善しました。
+-   FullChain証明書を使用していない一部のURLから`sun.security.validator.ValidatorException`が発生する現象を改善しました。
 
--   旧バージョンでは対応できなかったSHA-256 ECDSAアルゴリズム証明書に対するURLチェックができるように修正しました。
+-   旧バージョンでは対応できなかったSHA-256 ECDSAアルゴリズム証明書のURLチェックを有効にするように修正しました。
 
 ## URL Monitoring Agent v0.0.3
 
-リリーズ：2019-04-25
+リリース：2019-04-25
 
 ### バグフィックス
 
-httpsプロトコルのURLモニタリングができなかったため下記のエラーが発生した件を改善しました。
+httpsプロトコルのURLモニタリングができないため、以下のエラーを改善しました。
 
 ```java title='Java'
 sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 ```
 
-SSLベースで通信する場合、認証書を受け入れて正常通信を可能にするメカニズムが必要なため、クライアントモジュールが登録されたURLにアクセスする際に受け入れる認証書を許可するよう改善しました。
+SSLベースで通信する場合、証明書を受け取って通常の通信を可能にする仕組みが必要なため、クライアントモジュールが登録したURLにアクセスする際に証明書を許可するよう改善しました。

@@ -4,15 +4,15 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 ## Basic screen guide
 
-![APM 통계 sc](/img/analysis-apm-trs.png) 
+![APM Statistics sc](/img/analysis-apm-trs.png) 
 
--   각 **_통계_** 탭은 **_합계_**, **_최대_** 및 **_평균 시간_** 및 **_건수_** 기준의 정렬 옵션을 제공해 원하는 관점으로 상위 목록을 조회할 수 있습니다. 
+-   Each **_Statistics_** tab provides sorting options by **_Sum_**, **_Max_**, **_Time avg_**, and **_Count_** for viewing the list from your desired perspective. 
 
--   **_컬럼 선택_** 버튼을 통해 기본값 외에 목록 내 조회할 컬럼을 추가하거나 제외할 수 있습니다. 
+-   You can add or exclude columns to view from the list as well as the default values by using the **_Select Column_** button. 
 
--   **_통계_** 목록에서 ![오른쪽 화살표 아이콘](/img/ic-caret-right.svg) **_화살표_** 아이콘을 선택하면 건수와 평균 시간 차트를 확인할 수 있습니다. 해당 차트에서 조회를 원하는 시점을 선택하면 **_트랜잭션_** 검색 메뉴로 이동합니다.
+-   Select the ![Right Arrow icon](/img/ic-caret-right.svg) **_Arrow_** icon in the **_Statistics_** list to view the counts and average time charts. If you select a desired time point to search from the chart, the **_transaction_** search menu appears.
 
--   **_애플리케이션 비교_** 버튼 선택 시 각 애플리케이션 간의 **_호출 건수_**, **_응답 시간_**, **_에러 건수_**를 비교해 밸런싱을 확인할 수 있습니다.
+-   When you select **_Application comparison_**, you can see the balancing by comparing the **_call count_**, **_response time_**, and **_error count_** between applications.
 
 ## Transaction statistics
 
@@ -118,7 +118,7 @@ Through the collected data, you can see the referer data on the statistics.
 
 ## Error Statistics
 
-5분 동안 발생한 서비스 에러에 대한 통계입니다. 서로 다른 에러와 트랜잭션 이름을 키로 발생 건수를 수집합니다. 에러 발생 시점의 스택을 제공합니다. 5분 당 최대 1,000 가지 서로 다른 에러를 통계화합니다.
+They are statistics on the service errors that occurred for 5 minutes. They collect different errors and transaction names with the keys. They provide the stacks upon error occurrence. The statistics appear for up to 1,000 errors every 5 minutes.
 
 | Columns      | Description               | Type |
 | ------------ | ------------------------- | ---- |
@@ -152,7 +152,7 @@ The `service (URL)` hash collects one (the last URL called) of URLs that called 
 
 ## HTTP call execution statistics
 
-HTTP 및 HTTPS 프로토콜을 통해 5분 동안의 애플리케이션 외부 호출 통계를 수집합니다. 5분 동안 서로 다른 Http Call 문장이 최대 5,000까지만 허용됩니다. 만약 하나의 node.js 프로세스에서 한계를 넘는 외부 Http Call이 발생하면 통계 데이터에서는 버려집니다.
+They collect the statistics of calls outside the applications for 5 minutes via the HTTP and HTTPS protocols. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single node.js process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
 
 | Columns        | Description                                        | Type |
 | -------------- | -------------------------------------------------- | ---- |

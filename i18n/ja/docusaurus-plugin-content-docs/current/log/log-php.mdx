@@ -1,7 +1,7 @@
 ---
 id: log-php
 title: PHP
-description: PHPアプリケーションでログを収集する方法について案内します。
+description: PHPアプリケーションからログを収集する方法について説明します。
 tags:
   - ログモニタリング
   - PHP
@@ -11,7 +11,7 @@ PHPアプリケーションでログを収集するには、次のことを確�
 
 ## エージェントのアップデート
 
-PHPエージェント2.3.2バージョンから可能です。アップデート方法は[次の文書](../php/agent-update)を参考にしてください。
+PHPエージェント2.3.2バージョンから可能です。アップデート方法は[次の文書](../php/agent-update)を参照してください。
 
 ## エージェント設定の確認
 
@@ -21,7 +21,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ### 設定ファイルパスの確認
 
-ログモニタリングをしようとするファイルの**設定ファイルパス**を確認してください。CLI環境で確認したり、ウェブで確認することができます。
+ログモニタリングするファイルの**設定ファイルパス**を確認してください。CLI環境または、ウェブで確認することができます。
 
 #### CLI環境で確認する
 
@@ -32,13 +32,13 @@ Scan this dir for additional .ini files => /etc/php8.0.d
 
 :::note
 
-該当パスが"(None)"の場合、設定ファイルのパスは_/usr/whatap/php_です。
+パスが"(None)"の場合、設定ファイルのパスは_/usr/whatap/php_です。
 
 :::
 
 #### ウェブで確認する
 
-CLI環境とApache環境のPHP設定が異なる場合は、ウェブで`phpinfo()`関数の結果の内容を確認してください。![](https://img.whatap.io/media/images/check_phpinfo.png)
+CLI環境とApache環境のPHP設定が異なる場合は、ウェブ上の`phpinfo()`関数の結果を確認してください。![](https://img.whatap.io/media/images/check_phpinfo.png)
 
 ### コマンド入力
 
