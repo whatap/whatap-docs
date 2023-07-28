@@ -3020,16 +3020,13 @@ const sidebars = {
       label: '릴리스 노트 - Preview',
       collapsible: false,
       collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'release-notes/preview/preview-1_105_x',
-      },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1_105_x', 
+          id: 'release-notes/preview/preview-1_107_x', 
           className: 'new',
         },
+        'release-notes/preview/preview-1_105_x',
         'release-notes/preview/preview-1_103_x',
         'release-notes/preview/preview-1_101_x',
         'release-notes/preview/preview-1_99_x',
