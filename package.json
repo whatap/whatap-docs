@@ -41,6 +41,8 @@
     "docusaurus-prince-pdf": "^1.1.1",
     "docusaurus-theme-search-typesense": "^0.12.0-0",
     "emailjs-com": "^3.2.0",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
     "medium-zoom": "^1.0.6",
     "node-sass": "^8.0.0",
     "npm-check-updates": "^16.10.12",
