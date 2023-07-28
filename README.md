@@ -58,7 +58,7 @@ server-list.mdx -> 주석 삭제
 
 \(<https://pypi.org/project/whatap-python/> #files)
 
-```sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
+code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
 => 한글로 들어간 부분 수정 필요
 
 [次の文書](..／billing) -> 슬래시 수정할 것
