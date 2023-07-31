@@ -218,6 +218,7 @@ const sidebars = {
               items: [
                 'java/cube',
                 'java/analysis-apm',
+                'java/performance-trend',
                 'java/analysis-apm-trs',
                 {
                   type: 'category',
@@ -451,6 +452,7 @@ const sidebars = {
               },
               items: [
                 'php/cube',
+                'php/performance-trend',
                 'php/analysis-apm-trs',
                 // 'php/analysis-apm',
                 {
@@ -670,6 +672,7 @@ const sidebars = {
               },
               items: [
                 'nodejs/cube',
+                'nodejs/performance-trend',
                 // 'nodejs/analysis-apm',
                 'nodejs/analysis-apm-trs',
                 {
@@ -889,6 +892,7 @@ const sidebars = {
               items: [
                 'python/cube',
                 'python/analysis-apm',
+                'python/performance-trend',
                 'python/analysis-apm-trs',
                 {
                   type: 'category',
@@ -1091,6 +1095,7 @@ const sidebars = {
               items: [
                 'dotnet/cube',
                 'dotnet/analysis-apm',
+                'dotnet/performance-trend',
                 'dotnet/analysis-apm-trs',
                 {
                   type: 'category',
@@ -1284,6 +1289,7 @@ const sidebars = {
               },
               items: [
                 'golang/cube',
+                'golang/performance-trend',
                 'golang/analysis-apm-trs',
                 // 'analysis/php-analysis-apm',
                 {
