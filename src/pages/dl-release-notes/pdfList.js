@@ -1,4 +1,4 @@
-const SvpdfList = [
+const svList = [
     {
         name: 'service-1.104.x',
         url: '/pdf/release-notes/service-1.104.x.pdf',
@@ -77,4 +77,4 @@ const javaList = [
     },
 ];
 
-export {SvpdfList, javaList}
+export {svList, javaList}

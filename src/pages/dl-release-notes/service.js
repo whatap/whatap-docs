@@ -60,8 +60,8 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
             <div>
                 <input
                     type='checkbox'
-                    id='select-all'
-                    name='select-all'
+                    id={`select-all-${typeName}`}
+                    name={`select-all-${typeName}`}
                     className={styles.inputBox}
                     onChange={handleSelectAll}
                     checked={selectedFiles.length === pdfList.length}
