@@ -61,6 +61,14 @@ const ImageChecker = ({ img, desc, className }) => {
   
   return (
     <p>
+      {/* pdf 출력 시 사용 코드 */}
+      {/* <img 
+        src={imgFilePath} 
+        alt={desc} 
+        className={className} 
+      /> */}
+      {/* ^ pdf 출력 시 사용 코드 */}
+
       {imageExists ? (
         <img 
           src={imgFilePath} 
