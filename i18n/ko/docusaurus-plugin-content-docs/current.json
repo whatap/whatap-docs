@@ -841,7 +841,7 @@
   },
   "sidebar.indexSidebar.link.MySQL": {
     "message": "MySQL",
-    "description": "The label for link MySQL in sidebar indexSidebar, linking to mysql-v1/monitoring-intro"
+    "description": "The label for link MySQL in sidebar indexSidebar, linking to mysql/monitoring-intro"
   },
   "sidebar.indexSidebar.link.MS SQL Server": {
     "message": "MS SQL Server",
@@ -1518,5 +1518,9 @@
   "sidebar.npmsidebar.category.알림 설정하기": {
     "message": "알림 설정하기",
     "description": "The label for category 알림 설정하기 in sidebar npmsidebar"
+  },
+  "sidebar.rumsSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar rumsSidebar"
   }
 }
