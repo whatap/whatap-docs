@@ -484,7 +484,6 @@ const sidebars = {
                 'php/warning-notice',
                 'php/metric-warning-notice',
                 'php/set-notification-message',
-                'php/set-notification-message',
                 'php/hitmap-notice',
                 'php/set-event-detect-anomal',
                 'php/set-event-log',
