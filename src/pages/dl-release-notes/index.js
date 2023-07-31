@@ -10,7 +10,7 @@ export default function Dlreleasenotes() {
 
             <PdfDownload h2title='Service' typeName='service' pdfList={svList} />
 
-            <PdfDownload h2title='Java Agent' typeName='java' pdfList={javaList} />
+            <PdfDownload h2title='Java agent' typeName='java' pdfList={javaList} />
             
         </Layout>
     );
