@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { saveAs } from 'file-saver';
-import JSZip from 'jszip';
+import { PDFDocument } from 'pdf-lib';
 import styles from './styles.module.css';
 
 const downloadFilesAsZip = (selectedFiles) => {
@@ -44,13 +44,31 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
         }
     };
 
-    const handleDownload = () => {
+    const handleDownload = async () => {
         if (selectedFiles.length === 1) {
             // 선택한 파일이 1개일 경우 개별 파일 다운로드
             saveAs(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
         } else if (selectedFiles.length > 1) {
             // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
-            downloadFilesAsZip(selectedFiles);
+            // downloadFilesAsZip(selectedFiles);
+            const mergedPdf = await PDFDocument.create();
+            const pdfPromises = selectedFiles.map((file) => fetch(file.url).then((response) => response.arrayBuffer()));
+            const pdfArrayBuffers = await Promise.all(pdfPromises);
+
+            for (const pdfBuffer of pdfArrayBuffers) {
+                const pdfDoc = await PDFDocument.load(pdfBuffer);
+                const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
+                pages.forEach((page) => mergedPdf.addPage(page));
+            }
+
+            const mergedPdfBytes = await mergedPdf.save();
+            const mergedPdfBlob = new Blob([mergedPdfBytes], {type: 'application/pdf'});
+            const downloadLink = URL.createObjectURL(mergedPdfBlob);
+            const a = document.createElement('a');
+            a.href = downloadLink;
+            a.download = 'merged.pdf';
+            a.click();
+            URL.revokeObjectURL(downloadLink);
         }
     };
 
