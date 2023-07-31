@@ -1,0 +1,33 @@
+.dlList {
+  max-height: 300px;
+  position: relative;
+  overflow: auto;
+  padding: 8px;
+  background-color: #dddddd;
+  border-radius: 5px;
+}
+.dlListItem {
+  font-size: 1.2rem;
+  margin-top: .3rem;
+  margin-bottom: .5rem;
+}
+.inputBox {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  position: relative;
+  margin-right: 8px;
+  top: 2px;
+}
+.inputBox:checked {
+  background-color: aqua;
+}
+.dlBtn {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+}
+.dlButton {
+  font-size: 1.2rem;
+  padding: 8px 8px;
+}
