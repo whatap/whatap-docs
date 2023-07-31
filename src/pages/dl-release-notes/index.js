@@ -1,6 +1,6 @@
 import React from 'react';
-import Service from './service';
-import { svList, javaList } from './pdfList.js';
+import PdfDownload from '@site/src/components/dl-release-notes/PdfDownload';
+import { svList, javaList } from '@site/src/components/dl-release-notes/pdfList.js';
 import Layout from '@theme/Layout';
 
 export default function Dlreleasenotes() {
@@ -8,10 +8,10 @@ export default function Dlreleasenotes() {
         <Layout>
             <h1>Release Notes</h1>
 
-            <Service h2title='Service' typeName='service' pdfList={svList} />
+            <PdfDownload h2title='Service' typeName='service' pdfList={svList} />
 
-            <Service h2title='Java Agent' typeName='java' pdfList={javaList} />
-        
+            <PdfDownload h2title='Java Agent' typeName='java' pdfList={javaList} />
+            
         </Layout>
     );
 }

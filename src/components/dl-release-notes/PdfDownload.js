@@ -88,3 +88,12 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
         </>
     );
 };
+
+export async function getStaticProps() {
+    // 여기서는 간단히 pdfList 데이터를 props로 전달합니다.
+    return {
+      props: {
+        pdfList,
+      },
+    };
+}
