@@ -64,15 +64,15 @@ const javaList = [
         url: '/pdf/release-notes/java-agent-v2.2.10.pdf',
     },
     {
-        name: 'java-agent-v2.2.9',
+        name: 'java-agent-v2.2.09',
         url: '/pdf/release-notes/java-agent-v2.2.9.pdf',
     },
     {
-        name: 'java-agent-v2.2.8',
+        name: 'java-agent-v2.2.08',
         url: '/pdf/release-notes/java-agent-v2.2.8.pdf',
     },
     {
-        name: 'java-agent-v2.2.7',
+        name: 'java-agent-v2.2.07',
         url: '/pdf/release-notes/java-agent-v2.2.7.pdf',
     },
 ];

@@ -49,10 +49,12 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
             // 선택한 파일이 1개일 경우 개별 파일 다운로드
             saveAs(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
         } else if (selectedFiles.length > 1) {
+            // 파일명을 역순으로 정렬
+            const sortedFiles = selectedFiles.slice().sort((a, b) => b.name.localeCompare(a.name));
+            
             // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
-            // downloadFilesAsZip(selectedFiles);
             const mergedPdf = await PDFDocument.create();
-            const pdfPromises = selectedFiles.map((file) => fetch(file.url).then((response) => response.arrayBuffer()));
+            const pdfPromises = sortedFiles.map((file) => fetch(file.url).then((response) => response.arrayBuffer()));
             const pdfArrayBuffers = await Promise.all(pdfPromises);
 
             for (const pdfBuffer of pdfArrayBuffers) {
