@@ -132,6 +132,7 @@ const sidebars = {
               },
               items: [
                 'java/dashboard',
+                'java/dashboard-hitmap-trace',
                 'java/dashboard-transactionmap',
                 'java/dashboard-active-transaction',
               ],
