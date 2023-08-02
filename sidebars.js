@@ -3167,12 +3167,12 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_4_2',
+                id: 'release-notes/python/python-1_4_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_4_2',
+                  id: 'release-notes/python/python-1_4_3',
                   className: 'new',
                 },
                 'release-notes/python/python-1_4_1',
