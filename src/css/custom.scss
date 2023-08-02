@@ -1080,6 +1080,16 @@ main {
     img.noneborder {
       border: none;
     }
+    img._drag {
+      width: 30px;
+      border: none;
+      position: relative;
+      top: 8px;
+    }
+    img._txDrag {
+      border: none;
+      width: 12px;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
