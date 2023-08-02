@@ -5169,6 +5169,7 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
+                'kubernetes/container-list',
                 'kubernetes/performance-summary',
                 'kubernetes/resource-node-list',
                 'kubernetes/resource-container-list',
