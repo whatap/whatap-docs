@@ -1,0 +1,21 @@
+.fbsharebutton {
+  height: 100%;
+  margin-top: 50px;
+  position: fixed;
+}
+.fb_xfbml_parse_ignore {
+  cursor: pointer;
+  width: fit-content;
+  width: -moz-fit-content;
+  min-width: 64px;
+  height: 26px;
+  line-height: 100%;
+  border: none;
+  padding: 7px 7px 7px 26px;
+  padding-left: 30px;
+  background: url('ic-fb-white.svg') no-repeat #1877F2 7px 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}

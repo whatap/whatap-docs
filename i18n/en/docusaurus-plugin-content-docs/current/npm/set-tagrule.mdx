@@ -1,0 +1,215 @@
+---
+id: set-tagrule
+title: Setting the tagRule
+description: This describes the tagRule settings that can collect irregular and diverse data and express them on a topography or charts.
+tags:
+  - Network performance monitoring
+  - tagRule
+---
+
+**Tag** is a criterion for expressing the data collected from the monitored servers in group units. The most important factor in **NPM** is visibility. Grouping is essential to secure visibility in an environment where irregular and diverse data is pouring into the network.
+
+The agent collects the IP addresses, ports (Source, Target), host names, and process names in raw data with keys. Based on the collected data, you can set the group units for the nodes to be displayed in a topology or charts.
+
+Along with the tags collected by agents, the rules have been created to be easily changed and applied. The options can be applied by modifying the _tagRule.yaml_ file in the agent installation path (_/usr/whatap/whtap-npmd_).
+
+## tagRule option
+
+The result of the **tagRule** option appears in **_Dashboard_** > **_Network Topology_**. Grouping simplifies the correlation between complex and irregular networks and allows you to visualize the performance of abstracted networks for monitoring.
+
+![Topology Chart](/img/npm-tagrule-sample.png)
+
+-   It is the ![number 1](/img/number-01.png) node with the **tagRule** option applied. It simplifies long and complex process names to display on nodes.
+
+-   It is the ![number 2](/img/number-02.png) node to which the **tagRule** option is not applied. Because it is hard to identify the process, be sure to apply the **tagRule** option to simplify the process name, such as ![number 1](/img/number-01.png) node.
+
+-   The ![number 3](/img/number-03.png) node cannot acquire its host and process data. For more information, see [the following](#untagged).
+
+### Simplifying the process name
+
+Option: `processRegex`
+
+It simplifies long process names that are obscure. For example, Java processes include JVM launch options and the like as follows.
+
+```bash title='zookeeper process name'
+java -Dzookeeper.log.dir=/data/wpm/zookeeper/bin/../logs -Dzookeeper.log.file=zookeeper-whatap-server-Dev-Modules.log -XX:+HeapDumpOnOutOfMemoryError -XX:OnOutOfMemoryError=kill -9 %p -cp /data/wpm/zookeeper/bin/../zookeeper-server/target/classes:/data/wpm/zookeeper/bin/../build/classes:/data/wpm/zookeeper/bin/../zookeeper-server/target/lib/*.jar:/data/wpm/zookeeper/bin/../build/lib/*.jar:/data/wpm/zookeeper/bin/../lib/zookeeper-prometheus-metrics-3.8.0.jar:/data/wpm/zookeeper/bin/../lib/zookeeper-jute-3.8.0.jar:/data/wpm/zookeeper/bin/../lib/zookeeper-3.8.0.jar:/data/wpm/zookeeper/bin/../lib/snappy-java-1.1.7.7.jar:/data/wpm/zookeeper/bin/../lib/slf4j-api-1.7.30.jar:/data/wpm/zookeeper/bin/../lib/simpleclient_servlet-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/simpleclient_hotspot-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/simpleclient_common-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/simpleclient-0.9.0.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-native-unix-common-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-native-epoll-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-classes-epoll-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-transport-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-tcnative-classes-2.0.48.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-tcnative-2.0.48.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-resolver-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-handler-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-common-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-codec-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/netty-buffer-4.1.73.Final.jar:/data/wpm/zookeeper/bin/../lib/metrics-core-4.1.12.1.jar:/data/wpm/zookeeper/bin/../lib/logback-core-1.2.10.jar:/data/wpm/zookeeper/bin/../lib/logback-classic-1.2.10.jar:/data/wpm/zookeeper/bin/../lib/jline-2.14.6.jar:/data/wpm/zookeeper/bin/../lib/jetty-util-ajax-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-util-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-servlet-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-server-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-security-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-io-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/jetty-http-9.4.43.v20210629.jar:/data/wpm/zookeeper/bin/../lib/javax.servlet-api-3.1.0.jar:/data/wpm/zookeeper/bin/../lib/jackson-databind-2.13.1.jar:/data/wpm/zookeeper/bin/../lib/jackson-core-2.13.1.jar:/data/wpm/zookeeper/bin/../lib/jackson-annotations-2.13.1.jar:/data/wpm/zookeeper/bin/../lib/commons-io-2.11.0.jar:/data/wpm/zookeeper/bin/../lib/commons-cli-1.4.jar:/data/wpm/zookeeper/bin/../lib/audience-annotations-0.12.0.jar:/data/wpm/zookeeper/bin/../zookeeper-*.jar:/data/wpm/zookeeper/bin/../zookeeper-server/src/main/resources/lib/*.jar:/data/wpm/zookeeper/bin/../conf: -Xmx1000m -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.local.only=false org.apache.zookeeper.server.quorum.QuorumPeerMain /data/wpm/zookeeper/bin/../conf/zoo.cfg
+```
+
+In the above case, even if the name is displayed on a topology or chart,, it is difficult to recognize. Only the required parts are extracted from agents as much as possible. Apply the options by referring to the following example.
+
+```yaml title='tagRule.yaml'
+processRegEx:
+  - zookeeper
+  - whatap_[a-zA-Z]*
+```
+
+The `processRegex` option extracts names via the following rules.
+
+-   **Java** is the executable JAR file name or method name.
+
+-   **Python** is the name of the executable script.
+
+However, if the process name is long enough even after extraction, it can be shortened through the option. It can be input in the form of regular expression. If there are multiple rules, the longest matched string is selected.
+
+:::caution
+
+If you use numerous short rules, you can tag wrong processes unintentionally. Use a unique naming rule.
+
+:::
+
+### Process white list
+
+Option: `processWhiteList`
+
+Set the list of processes to be collected. All data other data than the process specified through the option are ignored.
+
+```yaml title='tagRule.yaml'
+processWhiteList:
+  - zookeeper
+  - whatap_[a-zA-Z]*
+```
+
+:::caution
+
+If you use the `processRegEx` option, the name matching the regular expression takes precedence over the OS name.
+
+:::
+
+### Process black list
+
+Option: `processBlackList`
+
+It sets the list of processes to exclude from collection. The process data specified through the option is ignored. If both `processWhiteList` and `processBlackList` are in use, data is collected except for the list corresponding to `processBlackList` among the `processWhiteList`.
+
+For example, when three processes (zookeeper, whatap_npmd, and whatap_infrad) are running, the following option is applied to collect data for two processes: zookeeper and whatap_infrad.
+
+```yaml title='tagRule.yaml'
+processWhiteList:
+  - zookeeper
+  - whatap_[a-zA-Z]*
+
+processBlackList:
+  - whatap_npmd
+```
+
+:::caution
+
+If you use the `processRegEx` option, the name matching the regular expression takes precedence over the OS name.
+
+:::
+
+### Setting the process type
+
+Option: `processType`
+
+The `processType` option is a tag for the most basic group represented in topologies and charts. The main purpose is to express processes that play the same role as a single node when the same process is expressed slightly differently depending on the version or OS.
+
+The process name is used as a key and the matching type is specified. For the processes that are not defined with the option, the process name is automatically applied as the process type.
+
+```yaml titile='tagRule.yaml'
+processType:
+  apache:
+    - httpd
+    - apache2
+  mysql:
+    - mysqld
+    - mysqld_safe
+```
+
+:::caution
+
+If you use the `processRegEx` option, the name matching the regular expression takes precedence over the OS name.
+
+:::
+
+### Setting the App name
+
+Option: `appName`
+
+The `appName` option expresses the topology or chart in a form that is easy to understand. In case of the `processType` option above, the same process is merged into a single node regardless of your intention. For `appName`, you can express the node in your desired form by specifying the node to express separately and the node to merge through a key combination.
+
+Let's assume the case in which the network configuration of proxy → msa_process → msa_process2 → db is divided into three purposes: **operation stage**, **development stage**, and **testing stage**. 
+
+-   In case of visualization with the `processType` option
+
+    ```mermaid
+    flowchart LR
+      A[Proxy] --> B(msa_process1);
+      B --> C(msa_process2);
+      C --> D(DB);
+    ```
+
+-   In case the processes with the same name are divided into **operation stage**, **development stage**, and **testing stage** with the `appName` option
+
+    ```yaml title='tagRule.yaml'
+    appName:
+        prod_proxy: # Operation stage
+            - host_tag: prod_proxy
+              process_type: proxy
+        prod_msa1: # Operation stage
+            - host_tag: prod_msa
+              process_type: msa_process1
+        prod_msa2: # Operation stage
+            - host_tag: prod_msa
+              process_type: msa_process2
+        dev_proxy: # Development stage
+            - host_tag: dev_proxy
+              process_type: proxy
+        dev_msa: # Development stage
+            - host_tag: dev_msa
+              process_type: msa_process1
+            - host_tag: dev_msa
+              process_type: msa_process2
+        test: # Testing stage
+            - host_tag: test
+        db:
+            - process_type: mysql
+    ```
+
+    ```mermaid
+    flowchart LR
+      A(prod_proxy) --> B(prod_msa1);
+      B[prod_msa1] --> C(prod_msa2);
+      C[prod_msa2] --> D(DB);
+      E[dev_proxy] --> F(dev_msa);
+      F[dev_msa] --> D(DB);
+      G[test] --> D(DB);
+    ```
+
+:::note
+
+-   The keys available by `appName` are `host_tag`, `process_type`, `ip`, and `port`.
+
+-   The keys that have not been entered are applied as wild cards.
+
+:::
+
+If the `appName` option is not met, the field or value specified in the `appNameDefault` option is applied.
+
+-   In `appNameDefault`, enter the key to be used by default.
+
+-   If you enter any of `host_tag` and `process_type`, the field data is automatically assigned to `appName`. If you enter a string other than that, it is fixed to the value.
+
+```yaml title='tagRule.yaml'
+appNameDefault: host_tag # host_tag, process_type, custom string
+```
+
+### Identification of unclear targets{#untagged}
+
+Option: `untagOption`
+
+When communicating with a target that does not have an agent installed, such as ELB provided by a Cloud Service Provider (CSP) or external API, the host and process data cannot be acquired. Tags can be set based on the IP and port that you know (or the target to be managed).
+
+If the agent has not been installed and communication is made with the IP or port that has not been defined with the option, it is displayed as an **untagged** node on the topology.
+
+![Untagged](/img/npm-untagged.png)
+
+Set the tag with the IP and port as keys. In case of inbound traffic, set it to `0` because the external port is the client port and is not the fixed service port.
+
+```yaml title='tagRule.yaml'
+untagOption:
+    15.165.146.117:
+        6600: "whatap-proxy"
+    172.31.24.16:
+        0: "ELB app/New-gitlab/5fe1a93082df3495"
+```

@@ -2,7 +2,7 @@ You can arbitrarily collect the logs. The following configuration requires resta
 
 ### Linux Shell
 
-```bash title='Linux Shell' {7-12,14,15} showLineNumbers
+```bash title='Linux Shell' {7-12,14,15,25,26} showLineNumbers
 cd /usr/whatap/infra
 sudo mkdir extension
 
@@ -25,14 +25,17 @@ cat >extension/logsink.conf<<EOL
     path = "/some/other/log"
     disabled = false
     encoding = "utf-8"
-EOL
+
+  [[inputs.logsink.file]]
+    ## When searching for the keyword in the line-by-line log, merge it with the previous log.
+    nowrap_keywords = ["Caused by:", "Test"]EOL
 
 sudo service whatap-infra restart
 ```
 
 ### Windows Powershell
 
-```bash title='Windows Powershell' {6-11,13,14} showLineNumbers
+```bash title='Windows Powershell' {7-11,14,15,19,20} showLineNumbers
 # Require an Administarotr role
 New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
 
@@ -51,6 +54,9 @@ path = "c:\\whatap\\logs%Y-%m-%d_.log"
 disabled = false
 encoding = "euc-kr"
 
+[[inputs.logsink.file]]
+## When searching for the keyword in the line-by-line log, merge it with the previous log. 
+nowrap_keywords = ["Caused by:", "Test"]
 "@
 
 New-Item -path "C:\Program Files\WhatapInfra\extension" -name "logsink.conf" -type "file" -value $contentToAdd -Force
@@ -80,6 +86,8 @@ Restart-Service "Whatap Infra"
     ```ini title='Example'
     excludeNames = [ ".gz",".zip" ]
     ```
+
+-   `nowrap_keywords`: While searching logs by line, if any keyword is detected by a specified option value, it is merged with the previous log.
 
 <!-- 
 

@@ -10,16 +10,6 @@ The _uid.sh_ shell script file (or _uid.bat_ batch file) can be found in the pat
 ./uid.sh DB_USER DB_PASSWORD
 ```
 
-</TabItem>
-<TabItem value="windows" label="Windows">
-
-```bash
-./uid.bat "DB_USER" "DB_PASSWORD"
-```
-
-</TabItem>
-</Tabs>
-
 :::note
 
 -   After setting it once, it collects data from the database server to be monitored through the encrypted UID.
@@ -27,8 +17,30 @@ The _uid.sh_ shell script file (or _uid.bat_ batch file) can be found in the pat
 -   In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
 -   If special characters are included in `DB_USER` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
 
-    ```bash title='Example'
-    ./uid.sh whatap whatap\!pwd
-    ```
+```bash title='Example'
+./uid.sh whatap whatap\!pwd
+```
 
 :::
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```bash
+./uid.bat "DB_USER" "DB_PASSWORD"
+```
+
+:::note
+
+-   After setting it once, it collects data from the database server to be monitored through the encrypted UID.
+-   To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the project access key](#check-accesskey)
+-   In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
+
+```bash title='Example'
+uid.bat whatap whatap!pwd
+```
+
+:::
+
+</TabItem>
+</Tabs>

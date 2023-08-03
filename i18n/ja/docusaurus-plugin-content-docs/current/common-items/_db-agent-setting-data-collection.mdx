@@ -1,4 +1,4 @@
-<Xclude product ='cubrid,redis'>
+<InDoc product ='mysql,mysql-v1'>
 
 -   **deadlock_interval** <span class='type'>Int</span>
 
@@ -6,7 +6,7 @@
 
     deadlock情報を読み込む間隔（単位: 分）を設定します。deadlock情報は、設定した間隔の間に発生した最後のdeadlock情報のみを読み込みます。
 
-</Xclude>
+</InDoc>
 
 <Xclude product ='redis'>
 
@@ -21,6 +21,12 @@
     デフォルト値`5`
 
     テーブル情報を保存するために情報を収集する時刻を設定します。デフォルトでは`5`であり、午前5時に収集を開始します。
+
+-   **tables_min_size** <span class='type'>Int</span>
+
+    デフォルト値`10`
+
+    テーブル情報を収集する際に設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位で、デフォルト値は10MBです。
 
 -   **tables_min_row** <span class='type'>Int</span>
 
@@ -40,11 +46,31 @@
 
 </InDoc>
 
-<Xclude product ='cubrid,redis'>
+<Xclude product='cubrid,redis'>
 
 -   **replication_name** <span class='type'>String</span>
 
-    replication名を設定すると、同じ`replication_name`を持つDBの間にMaster/Slave関係があるものとみなされます。
+    レプリケーション名を設定すると、同じ`replication_name`を持つDBの間にMaster/Slave関係があるものとみなします。
+
+    レプリケーションセットを定義するオプションとしてマスター、スレーブノードの両方に同じ値の`replication_name`オプションを設定すると**_インスタンスモニタリング_**でツリー構造で表示されます。また、このオプション値を基準に**_Flexボード_**でレプリケーション状態をモニタリングするウィジェットを提供します。
+
+</Xclude>
+
+<InDoc product='postgresql'>
+
+-   **slave_ip** <span class='type'>string</span>
+
+    IPアドレスの確認は、`select inet_server_addr();`とします。マスターノードから`pg_stat_replication.client_addr`を照会したときに出てくるIPアドレスのいずれか1つでなければなりません。`replication_name`オプション値が同じでSlave DBである場合は、`slave_ip`を明示する必要があります。
+
+    :::note
+
+    RDSの場合、IPアドレスの代わりに`pg_replication_slots.slot_name`でMaster/Slave関係が設定されるので`slave_ip`オプションを設定する必要はありません。
+
+    :::
+
+</InDoc>
+
+<Xclude product='cubrid,redis'>
 
 -   **skip_whatap_session** <span class='type'>Int</span>
 
@@ -54,7 +80,7 @@
 
 </Xclude>
 
-<InDoc product='mysql'>
+<InDoc product='mysql,mysql-v1'>
 
 -   **skip_sys_session** <span class='type'>Int</span>
 

@@ -10,22 +10,19 @@ tags:
 
 import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 import CurProd from '@site/src/components/GetProductName.js';
+import Note from '../common-items/_import_v2-note.mdx';
 
-:::note
-
-この文書は、PostgreSQLモニタリングV2を基準に作成されました。 PostgreSQLモニタリングV1文書については、 [次の文書](../postgresql-v1/agent-dbx-settings)を参考にしてください。
-
-:::
+<Note product='PostgreSQL' link='../postgresql-v1/agent-dbx-settings' />
 
 DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成します。 設定できるオプションについては、次を参照してください。
 
 ## 基本オプション
 
-{@include: ../common-items/_db-agent-dbx-basic-option.mdx}
+{@include: ../common-items/_db-agent-dbx-basic-option.mdx}    
 
 ## データ収集
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx}
+{@include: ../common-items/_db-agent-setting-data-collection.mdx}  
 
 ## AWS RDS CloudWatch適用{#using-aws-rds}
 

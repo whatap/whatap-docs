@@ -1,0 +1,25 @@
+---
+id: python-1_3_9
+title: Python Agent v1.3.9
+toc_max_heading_level: 2
+---
+
+#### June 28, 2023
+
+:::note
+
+Agent download: [whatap-python · PyPI](https://pypi.org/project/whatap-python/1.3.9/)
+
+:::
+
+-   <Status>Fixed</Status> Fixed the issue where any log occurs only in <UI>Log Search</UI> and the log does not occur in a transaction.
+
+    If the following option is added in the _whatap.conf_ file, the log tracing is possible.
+
+    ```ini title='whtap.conf'
+    trace_logging_enabled=true
+    ```
+
+-   <Status>Fixed</Status> Fixed the <code>method_profiling</code> bug.
+
+    Fixed an issue where profiling does not work on an asynchronous method.

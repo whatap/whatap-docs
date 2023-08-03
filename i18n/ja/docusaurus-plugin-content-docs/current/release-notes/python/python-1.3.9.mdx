@@ -1,0 +1,25 @@
+---
+id: python-1_3_9
+title: Python Agent v1.3.9
+toc_max_heading_level: 2
+---
+
+#### 2023年6月28日
+
+:::note
+
+Agent download: [whatap-python · PyPI](https://pypi.org/project/whatap-python/1.3.9/)
+
+:::
+
+-   <Status>Fixed</Status> <UI>ログ検索機</UI>でのみログが出て、トランザクションではログが出ない現象を修正
+
+    _whatap.conf_ファイルに次のオプションを追加すると、ログトレーシングが可能です。
+
+    ```ini title='whtap.conf'
+    trace_logging_enabled=true
+    ```
+
+-   <Status>Fixed</Status> <code>method_profiling</code>バグを修正
+
+    非同期メソッドでプロファイリングされない現象を修正しました。

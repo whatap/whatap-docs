@@ -1,0 +1,105 @@
+---
+id: report-intro
+title: Report
+description: Using the daily browser report, you can see the web page usage of the day.
+tags:
+  - Browser
+  - Browser
+  - Report
+  - Analysis
+  - UI
+---
+
+{@include: ../common-items/_report-intro-desc.mdx}
+
+## Daily browser report
+
+Using the daily browser report, you can see the web page usage of the day. Set the **_start date_**, **_start time_**, and **_end time_**, and then select ![Search icon](/img/ico-btn-search.png). A report is divided into the following.
+
+### Summary
+
+The web page access performance during the inquiry period can be checked briefly through the figures and charts.
+
+![Summary](/img/browser-report-summary.png)
+
+-   **_Unique user sessions_**: Number of user sessions during the inquiry period.
+
+-   **_Page load count_**: Number of page loads during the inquiry period.
+
+-   **_Average page load response time_**: Average of all the page load times during the inquiry period.
+
+-   **_AJAX request count_**: Number of AJAX requests during the inquiry period.
+
+-   **_AJAX average response time_**: Average of all AJAX response times during the inquiry period.
+
+-   **_AJAX error rate_**: Ratio of the total AJAX request count divided by the AJAX error count.
+
+-   **Chart**: **_unique user sessions_**,  **_Page load count_**, **_Page load average response time_**
+
+    You can see the changes of key metrics over time through the graph and quickly find the time and figure at which each metric was the highest. On the upper right of the chart, select **_CSV_** to download the data in a CSV file format.
+
+### Top 10 page loads for each browser
+
+You can see the top 10 most used browsers of the day. The page load count and average response time appear.
+
+### Top 10 page loads for each region
+
+You can see the top 10 most accessed regions of the day. The page load count and average response time appear.
+
+:::note
+
+Currently, only the regions accessed from South Korea are displayed.
+
+:::
+
+### Top 10 page loads
+
+You can see the top 10 page groups that generated the highest page loads during the day. The page load count for each page and average response time appear.
+
+### Top 10 router changes
+
+The router change event occurs when web pages are switched in the form of Client Side Rendering (CSR). You can see the top 10 page page groups that generated the page loads frequently during the day. The page switching count to the page and average response time appear.
+
+### Top 10 AJAX calls
+
+You can see the top 10 AJAX calls during the day based on the AJAX path. The AJAX call count and average response time appear.
+
+### Top 10 1st resource call counts
+
+Among the resources called by hosts such as web pages, you can see the top 10 resource calls during the day based on the resource path. Excluding AJAX calls, it displays the resource call count together with the average response time.
+
+### Top 10 3rd resource call counts
+
+Among the resources called from the hosts other than web pages, you can see the top 10 resource calls during the day based on the resource path. Excluding AJAX calls, it displays the resource call count together with the average response time.
+
+### Top 10 error counts by page
+
+For the number of errors during the day, you can see the top 10 page groups classified by the page group.
+
+### Top 10 error counts by error message
+
+The error messages are values that can identify errors in the browser. For the number of errors during the day, you can see the top 10 error messages classified by the error message.
+
+### Top 10 AJAX errors
+
+For the AJAX error count during the day, you can see the top 10 AJAX paths classified by the AJAX path.
+
+## Recreating a report
+
+Select **_Reset_** to refresh the data in the report. To search the data for a different date or time, set the **_start date_**, **_start time_**, and **_end time_** and then select **_Reset_** or ![Search icon](/img/ico-btn-search.png).
+
+## Downloading or printing the report
+
+-   **_Download_**: You can download the report as an HTML file. The file name is saved in the format of _DailyBrowserReport\_`yyyymmdd`.html_.
+
+-   **_Print_**: You can save or print the report as a PDF file. To save as a PDF file, select **Save as PDF** for the target to print.
+
+    :::note
+
+    The function to save as a PDF file may not be supported depending on the web browser.
+
+    :::
+
+<!-- ## 메일 발송 예약-->
+
+{@include: ../common-items/_report-intro-mail-schedule.mdx}

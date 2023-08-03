@@ -1,0 +1,67 @@
+---
+id: install-agent
+title: Agent Installation
+description: Let's learn how to create a project and install the agent in the WhaTap monitoring service.
+tags:
+  - Network performance monitoring
+  - Agent
+---
+
+To use the WhaTap NPM service, perform [Sign up](https://www.whatap.io/ko/signup/), create a project, and then install the agent to the running server.
+
+{@include: ../getting-started/_create-project-v2.mdx}    
+
+{@include: ../getting-started/_accesskey.mdx}
+
+## Downloading the agent
+
+Download the agent file to a target monitoring server.
+
+<Tabs groupId="os">
+<TabItem value="ubuntu" label="Ubuntu">
+
+```bash
+wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+sudo dpkg -i whatap-repo_1.0_all.deb
+sudo apt-get update
+sudo apt-get install whatap-npmd
+```
+
+</TabItem>
+<TabItem value="centos" label="CentOS">
+
+```bash
+sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+sudo yum install whatap-npmd
+```
+
+</TabItem>
+</Tabs>
+
+## Compatibility checking and configuration
+
+Check the compatibility of the server in which the agent has been downloaded, and then enter the required settings.
+
+```bash
+sudo /usr/whatap/whatap-npmd/install.sh {Project access key} {Collection server IP}
+```
+
+You can see the compatibility result and incoming messages as follows.
+
+```bash
+Supported kernel version : 5.15. OK.
+Supported CPU Arch : aarch64, OK.
+Move package files
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                                        Dload  Upload     Total   Spent    Left     Speed
+100    14  100    14        0      0            65            0       --:--:-- --:--:-- --:--:--        65
+Start service
+Installation complete!
+```
+
+## Starting the monitoring
+
+-   When the agent works, it starts collecting the monitoring data. To check the collected data on the service screen, select **_NPM Dashboard_** at the lower right of the screen.
+
+-   **NPM** can collect irregular and diverse data through the **tagRule** settings and display the data in a topography or chart. For more details, see [the following](set-tagrule).

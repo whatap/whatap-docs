@@ -2,7 +2,7 @@ Home > Select Project > **_Dashboard_** > **_Application Dashboard_**
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_Dashboard_** > **_Application Dashboard_** under **_Project Menu_**.
 
-![Application Dashboard](/img/apm-dashboard.png)
+<ImgLang img='apm-dashboard.png' desc='애플리케이션 대시보드'/>
 
 The data collected from the agent can be checked in **_Dashboard_** in real time. In case of general charts excluding CPU and memory, the stable data appears in blue and the elements identified as problems appear in red, making it easy to recognize the current status.
 
@@ -54,13 +54,13 @@ A water-drop icon running from left to right on the speedometer indicates a tran
 
 ### Agent Summary
 
-![Agent Summary](/img/agent-dashboard-summary.png)
+<ImgLang img='agent-dashboard-summary.png' desc='Agent Summary' />
 
 It displays the status and number of the registered agents.
 
 ### **_Active Status_**{#active-status}
 
-![Active Status](/img/apm-dashboard-active-status.png)
+<ImgLang img='apm-dashboard-active-status.png' desc='액티브 스테이터스' />
 
 Active transactions are classified by the execution section and displayed with an equalizer. All agents in the project collect the active transaction count every 5 seconds, along with the progress status. The active status is classified into  **_METHOD_**,  **_SQL_**,  **_HTTPC_**,  **_DBC_**, and  **_SOCKET_**.
 
@@ -84,7 +84,7 @@ If the **_DBC_** or **_SOCKET_** count persists above 1, suspect any problem.
 
 ### **_Active Transaction_**
 
-![Active Transaction](/img/apm-dashboard-active-tx.png)
+<ImgLang img='apm-dashboard-active-tx.png' desc='액티브 트랜잭션' />
 
 A transaction in progress is called **_active transaction_**. It is represented with an **_Arc Equalizer_** chart. The arc is divided by the number of agents. By representing the number of requests being processed by the server every 5 seconds, you can tell how long the request has been processed. Requests detected at an interval of 5 seconds are classified by color as follows to determine whether they are dangerous or not.
 
@@ -136,7 +136,7 @@ In **_HITMAP_**, the point color represents its density.
 
 -   Error TR: Yellow → Orange → Red
 
-![Hitmap](/img/hitmap.png)
+<ImgLang img='hitmap.png' desc='히트맵' />
 
 -   The number on the upper right indicates the <span class='normal'>transaction count</span>/<span class='slow'>error count</span> in the chart.
 
@@ -147,6 +147,8 @@ In **_HITMAP_**, the point color represents its density.
 -   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart from 5 seconds to 80 seconds.
 
 ### **_Apdex_**
+
+![Apdex](/img/apm-dashboard-apdex.png)
 
 {@include: ../common-items/_java-apdex-desc.mdx}
 
@@ -160,7 +162,7 @@ The default value of S (Satisfied) can be changed in **_Management_** > **_Agent
 
 Transaction Per Second (TPS) indicates the number of transactions processed per second and is the reference among service performance metrics. The number of transactions processed every 5 seconds is converted to the number of transactions per second and is expressed with a chart.
 
-![TPS](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring.png)
+![TPS](/img/apm-dashboard-tps.png)
 
 ### **_Today's TPS_**
 

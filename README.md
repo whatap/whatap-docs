@@ -32,6 +32,7 @@ server-list.mdx -> 주석 삭제
 < > -> 부호 앞에 &lt;, &gt; 적용할 것
 
 \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
+\<section> ->> &lt;section&gt;
 
   ::: 탭 공백 확인해볼 것
 
@@ -57,7 +58,7 @@ server-list.mdx -> 주석 삭제
 
 \(<https://pypi.org/project/whatap-python/> #files)
 
-```sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
+code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최근 15초'
 => 한글로 들어간 부분 수정 필요
 
 [次の文書](..／billing) -> 슬래시 수정할 것
@@ -71,7 +72,7 @@ _php-extension-whatap.mdx 문서 수정 필요
 
 redhat-centos.mdx, freebsd.mdx, amazon-linux.mdx 노트 원문 추가
 
-php/agent-transaction.mdx 탭 공백 수정 필요
+php/agent-transaction.mdx(_php-trs-profile.mdx) 탭 공백 수정 필요
 
 
 
@@ -80,3 +81,8 @@ aws-log-lt.mdx
 라이선스 페이지 국문과 맞출 것
 
 i18n/ja/docusaurus-plugin-content-docs/current/telegraf/introduction.mdx 국문 파일 인덴트 수정
+
+license-open-sources -> ``` 삭제할 것
+
+
+install-aws-log-vpc.mdx -> 인덴트 확인 필요

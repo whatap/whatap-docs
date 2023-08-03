@@ -4,7 +4,7 @@ import MDXComponents from '@theme-original/MDXComponents';
 import InDoc from '@site/src/components/InDoc.js';
 import Xclude from '@site/src/components/XcludeDoc.js';
 import TR from '@site/src/components/TR';
-import ProdImg from '@site/src/components/ChangeImgName.js';
+import ProdImg from '@site/src/components/ImagepathbyProduct.js';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import DocCardList from '@theme/DocCardList';
@@ -28,5 +28,5 @@ export default {
   DocCardList,
   ImgLang,
   Link,
-  LinkImage
+  LinkImage,
 };

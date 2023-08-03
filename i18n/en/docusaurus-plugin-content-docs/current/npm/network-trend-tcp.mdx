@@ -1,0 +1,66 @@
+---
+id: network-trend-tcp
+title: Network trend (TCP)
+description: The network performance data can be displayed numerically and can be seen densely through the graph charts.
+tags:
+  - Network performance monitoring
+  - Dashboard
+  - Network trend
+  - TCP
+---
+
+Home > Select Project > **_Dashboard_** > **_Network Trend (TCP)_**
+
+![Network Trend (TCP)](/img/npm-dashboard-network-trend.png)
+
+While the **_Network Topology_** menu mainly visualizes the network configuration, the **_Network Trend (TCP)_** menu allows you to see the performances in a dense manner on a single screen. The performances over time can be displayed in real time, and the performances in the past can be displayed and used as the data to analyze problems.
+
+## Configuring the chart options
+
+<!-- 조회 시간 설정하기-->
+
+{@include: ../common-items/_setting-look-up-time.mdx}
+
+<!-- 노드 선택하기-->
+
+{@include: ../common-items/_select-node.mdx}
+
+### Searching the node
+
+The search bar on the upper right of the screen allows you to filter the nodes displayed on the chart. The items that do not meet the search word do not appear on the chart.
+
+:::note
+
+This is useful when checking only the communication related to specific tags.
+
+:::
+
+## Top 5 Charts{#topn}
+
+![Top 5 Charts](/img/npm-network-trend-top5.png)
+
+It charts **jitter** and **latency**, which are key metrics for communication failures on the network, in the top-five order.
+
+## Packet retransmission and loss metrics
+
+![Packet retransmission and loss metrics](/img/npm-network-rc-lc-chart.png)
+
+It displays the number of retransmissions in a specific communication section as a chart. In connection with the packet loss count that can cause retransmission, you can check the retransmissions for packet loss.
+
+## Latency metric
+
+![Latency metric](/img/npm-network-trend-jitter-latency.png)
+
+Network reliability can be evaluated based on the latency and changes in latency.
+
+## Data throughput metric
+
+![Data throughput metric](/img/npm-network-trend-data-process.png)
+
+It charts the data throughput (bps or pps) metrics broken down from the send/receive perspective. 
+
+## Session information
+
+![Session information table](/img/npm-network-trend-sessions.png)
+
+It displays the session data collected by agents in tabular format. Through the charts merged by section, you can identify macroscopic problems and use them to analyze the problems microscopically.

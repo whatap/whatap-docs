@@ -22,15 +22,15 @@ This document guides you to additional settings required in the <span class='vpc
 
 2.  On the **\*Configuration** tab, select **_Execution role_** in **_Permissions_** to go to the AWS IAM console.
 
-  ![Lambda Execution Role](/img/whatap-forwarder-vpc-lambda.png)
+    ![Lambda Execution Role](/img/whatap-forwarder-vpc-lambda.png)
 
-1.  Go to **_Permissions policies_** under the IAM console's **_Permissions_** tab. 
+3.  Go to **_Permissions policies_** under the IAM console's **_Permissions_** tab. 
 
-2.  Select **_forwarderpolicy_** in the policy list to go to the policy editing screen.
+4.  Select **_forwarderpolicy_** in the policy list to go to the policy editing screen.
 
-  ![IAM Console](/img/whatap-forwarder-vpc-aws-iam.png)
+    ![IAM Console](/img/whatap-forwarder-vpc-aws-iam.png)
 
-1.  Select **_JSON_** tab and then copy and paste the following policy. The policy creates, defines, and deletes _ENI_.
+5.  Select **_JSON_** tab and then copy and paste the following policy. The policy creates, defines, and deletes _ENI_.
 
 ```json title='IAM Policy'
 
@@ -78,39 +78,35 @@ This document guides you to additional settings required in the <span class='vpc
 
 2.  In **_VPC_** under the **_Configuration_** tab, select **_Edit_** to go to the VPC editing screen.
 
-  ![VPC Editing](/img/whatap-forwarder-vpc-edit.png)
+    ![VPC Editing](/img/whatap-forwarder-vpc-edit.png)
 
-1.  Seeing the following, set **_VPC_**, **_Subnets_**, and **_Security groups_**, and then select **_Save_** to save the results.
+3.  Seeing the following, set **_VPC_**, **_Subnets_**, and **_Security groups_**, and then select **_Save_** to save the results.
 
-  ![Subnet and Security Group](/img/whatap-forwarder-vpc-sg.png)
+    ![Subnet and Security Group](/img/whatap-forwarder-vpc-sg.png)
 
-  :::note
+    :::note
 
-  **Subnets**
+    **Subnets**
 
-```
-* Connect the Internet via **IGW** using the **Public IP** of **NAT Gateway**.
+    -   Access the Internet through **IGW** with **Public IP** of the **NAT Gateway**.
 
-* To connect the Internet via **IGW**, **Public IP** is required. Lambda's *ENI* can allocate the **Public IP**.
+    -   To connect the Internet via **IGW**, **Public IP** is required. _ENI_ of Lambda cannot allocate **Public IP**.
 
-* The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
+    -   The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
 
-* **WhaTap Forwarder** for **Private Subnet** and **Public Subnet** 
+    -   **WhatTap Forwarder** in **Private Subnet** and **Public Subnet**
 
-![Subnet sc](/img/whatap-forwarder-subnet.png)
-```
+    ![Subnet sc](/img/whatap-forwarder-subnet.png)
 
-  :::
+    :::
 
-  :::note
+    :::note
 
-  **Security groups**
+    **Security groups**
 
-```
-* A security group with the **outbound** open is required.
-```
+    -   A security group with the **outbound** open is required.
 
-  :::
+    :::
 
 </div>
 

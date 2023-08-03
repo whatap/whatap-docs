@@ -1,4 +1,4 @@
-1.  ドッカー（Docker）ビルドディレクトリを作成してください。
+1.  ドッカー(Docker) ビルドディレクトリを作成します。
 
     ```bash
     mkdir -p {Docker build Dir}
@@ -14,11 +14,11 @@
 
     :::note
 
-    _whatap.conf_ファイルは、ユーザークKubernetes環境のConfigMap機能で管理できます。
+    _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
 
     :::
 
-3.  Dockerfileにエージェントインストール用のイメージをダウンロードするには、直接そのファイルをダウンロードしたり、エージェントファイルをイメージからコピーしてください。
+3.  Dockerfileにエージェントをインストールするためのイメージをダウンロードするには、直接そのファイルをダウンロードするか、エージェントファイルをイメージにコピーしてください。
 
     ```docker
     # WhaTapエージェント用ディレクトリをユーザーコンテナーに作成
@@ -28,7 +28,7 @@
     # エージェントのファイル名がwhatap.agent-1.2.3.jarの場合、X.Y.Z部分を1.2.3に変更してください。
     COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
 
-    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
+    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピーします。
     COPY ./whatap.conf /whatap/    
     ```
 
@@ -38,7 +38,7 @@
 
     :::
 
-4.  Dockerfileコマンドでアプリケーションを開始する前に、エージェントのバージョンを確認してください。
+4.  Dockerfileコマンドを使用して、アプリケーションを起動する前に、エージェントのバージョンを確認してください。
 
     ```docker
     docker run whatap/kube_mon ls /data/agent/micro/
@@ -47,7 +47,7 @@
     whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
     ```
 
-5.  Dockerfileアプリケーションの開始コマンドに次の内容を追加してください。前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
+5.  Dockerfileアプリケーションの起動コマンドに、以下を追加してください。その前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
 
     エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
@@ -68,7 +68,7 @@
 
     :::tip
 
-    Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加する必要があります。
+    Java 17バージョン以降の場合、reflection用の`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加する必要があります。
 
     :::
 
@@ -81,7 +81,7 @@ docker build -t $Image_Name.
 
 1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-  `OKIND`環境変数は、Podに該当するアプリケーションを同じグループとして設定する役割を果たします。もしデプロイメント名に設定すると、該当するPodをグループ化します。
+  `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割です。デプロイメント(Deployment)を設定すると、対応するPod(Pod)がグループ化されます。
 
 ```bash showLineNumbers {8-9}
 env:

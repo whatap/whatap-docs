@@ -2,6 +2,21 @@
 
 **_スロークエリ_**メニューを使用するには、次のようにパラメータと権限を設定する必要があります。
 
+<InDoc product='mysql,mysql-v1'>
+
+### whatap.confファイルの設定
+
+```ini title='whatap.conf'
+slow_query_log=ON
+```
+
+:::note
+
+-   DBサーバーに`log_output=FILE`として設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
+-   RDSはxosをインストールする代わりに、CloudWatch使用のための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
+
+:::
+
 ### DB、パラメータおよび権限設定
 
 ```ini
@@ -20,15 +35,36 @@ grant select on mysql.slow_log to whatap;
 
 :::
 
-### whatap.confファイルの設定
+</InDoc>
+
+<InDoc product='postgresql,postgresql-v1'>
+
+### DBXエージェントファイルの設定
 
 ```ini title='whatap.conf'
 slow_query_log=ON
 ```
 
+### DBパラメータの設定
+
+```ini title='postgresql.conf'
+log_min_duration_statement=500#例: 500ms以上に所要されるSQL記録
+```
+
+### DBサーバーのXOSエージェントの設定
+
+Slow queryの収集周期を調整するには、以下のように設定してください。
+
+```ini title='xos.conf'
+slow_query_interval=30#デフォルト値30秒
+```
+
 :::note
 
--   DBサーバーに`log_output=FILE`として設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
--   RDSはxosをインストールする代わりに、CloudWatch使用のための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
+-   RDS postgreSQLのslow queryはサポートしません。
+
+-   モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
 
 :::
+
+</InDoc>

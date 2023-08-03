@@ -86,9 +86,6 @@ Install the PHP monitoring agent.
 
 Add firewall rules for the network that is used by the Google App engine. TCP transmission must be allowed through the port 6600 for the issued server IP.
 
-![gae_firewall](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall.png)
-![gae_firewall_detail](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall_detail.png)
-
 ## Checking the deployment and instance
 
 Deploy _app.yaml_ and _Dockerfile_ that have been set through the Google Cloud SDK.
@@ -99,4 +96,15 @@ $ gcloud app deploy
 
 Check the App engine instance generated in the Google Cloud Console.
 
+<!-- 
+
+방화벽 규칙 추가 
+
+![gae_firewall](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall.png)
+![gae_firewall_detail](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall_detail.png)
+
+앱 엔진 생성 인스턴스 확인
+
 ![gae_instance](https://img.whatap.io/media/agent_php/install/tinified/gae_instance.png)
+
+-->

@@ -22,23 +22,6 @@ module.exports = function () {
                             t.parentNode.insertBefore(a, t);
                           })(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');`
                     },
-                    // {
-                    //     tagName: 'script',
-                    //     innerHTML: `(function (w) {
-                    //         var url_view = w.location.href;
-                    //         var url_path = w.location.pathname;
-                    //         var url_hash = w.location.hash;
-                    //         if (url_path.endsWith("en/") || url_path.endsWith("ja/")) {
-                    //             //Skip
-                    //         } else if (url_path.endsWith("/") || url_hash.endsWith("/")) {
-                    //             //Skip Home Page
-                    //             if(url_path !== "/"){
-                    //                 url_view = url_view.slice(0,-1);
-                    //                 w.location.replace(url_view);
-                    //             }
-                    //         }
-                    //     })(window);`
-                    // }
                 ],
             };
         },

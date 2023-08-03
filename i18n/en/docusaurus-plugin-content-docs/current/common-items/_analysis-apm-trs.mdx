@@ -2,25 +2,37 @@ Home > Select Project > **_STAT/REPORT_** > **_Statistics_**
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_STAT/REPORT_** > **_Statistics_** under **_Project Menu_**. The WhaTap agent collects statistical data for the key trace information such as transaction information and SQL. A list is created every 5 minutes and is sent to the server.
 
+## Basic screen guide
+
+![APM Statistics sc](/img/analysis-apm-trs.png) 
+
+-   Each **_Statistics_** tab provides sorting options by **_Sum_**, **_Max_**, **_Time avg_**, and **_Count_** for viewing the list from your desired perspective. 
+
+-   You can add or exclude columns to view from the list as well as the default values by using the **_Select Column_** button. 
+
+-   Select the ![Right Arrow icon](/img/ic-caret-right.svg) **_Arrow_** icon in the **_Statistics_** list to view the counts and average time charts. If you select a desired time point to search from the chart, the **_transaction_** search menu appears.
+
+-   When you select **_Application comparison_**, you can see the balancing by comparing the **_call count_**, **_response time_**, and **_error count_** between applications.
+
 ## Transaction statistics
 
 It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specific performance statistics are collected and sent to the server. If the number of URLs for 5 minutes exceeds 5,000, this is ignored.
 
-| Columns        | Description                 | Type |
-| -------------- | --------------------------- | ---- |
-| hash           | URL Hash                    | u4   |
-| count          | Count                       | u4   |
-| error          | Number of errors            | u4   |
-| time_sum       | Sum of response times       | u8   |
-| time_max       | Maximum response time       | u4   |
-| sql_count      | SQL execution count         | u4   |
-| sql_time       | Sum of SQL execution times  | u8   |
-| sql_fetch      | SQL Fetch Count             | u4   |
-| sql_fetch_time | Sum of SQL patch times      | u8   |
-| httpc_count    | Number of HTTP calls        | u4   |
-| httpc_time     | Sum of HTTP call times      | u8   |
-| malloc_sum     | Sum of memory usage amounts | u8   |
-| cpu_sum        | Sum of CPU usage amounts    | u8   |
+| Columns           | Description                    | Type |
+| ----------------- | ------------------------------ | ---- |
+| hash              | URL Hash                       | u4   |
+| count             | Count                          | u4   |
+| error             | Number of errors               | u4   |
+| time_sum          | Sum of response times          | u8   |
+| time_max          | Maximum response time          | u4   |
+| sql_count         | SQL execution count            | u4   |
+| sql_time          | Sum of SQL execution times     | u8   |
+| sql_fetch         | SQL Fetch Count                | u4   |
+| sql_fetch_time    | Sum of SQL patch times         | u8   |
+| httpc_count       | Number of HTTP calls           | u4   |
+| httpc_time        | Sum of HTTP call times         | u8   |
+| malloc_sum        | Sum of memory usage amounts    | u8   |
+| cpu_sum           | Sum of CPU usage amounts       | u8   |
 
 :::note
 
@@ -38,13 +50,13 @@ stat_domain_enabled=true
 
 Through the collected data, you can identify the processing status of URLs for each domain.
 
-| Columns | Description               | Type |
-| ------- | ------------------------- | ---- |
-| domain  | Service domain hash       | u4   |
-| url     | Transaction URL hash      | u4   |
-| count   | Number of execution cases | u4   |
-| error   | Error Count               | u4   |
-| time    | Sum of response times     | u8   |
+| Columns   | Description                        | Type |
+| --------- | ---------------------------------- | ---- |
+| domain    | Service domain hash                | u4   |
+| url       | Transaction URL hash               | u4   |
+| count     | Number of execution cases          | u4   |
+| error     | Error Count                        | u4   |
+| time      | Sum of response times              | u8   |
 
 ## Transaction caller statistics
 
@@ -75,16 +87,16 @@ stat_mtrace_enabled=true
 
 The statistical data collected is as follows. The data must be viewed from the **callee** side.
 
-| Columns      | Description                         | Type |
-| ------------ | ----------------------------------- | ---- |
-| caller_pcode | Project (whatap) code of the caller | u8   |
-| caller_spec  | Version string hash of the caller   | u4   |
-| caller_url   | URL hash of the caller              | u4   |
-| spec         | Version string hash of the callee   | u4   |
-| url          | Callee URL hash                     | u4   |
-| count        | Number of execution cases           | u4   |
-| error        | Error Count                         | u4   |
-| time         | Sum of response times               | u8   |
+| Columns         | Description                                  | Type |
+| --------------- | -------------------------------------------- | ---- |
+| caller_pcode    | Project (whatap) code of the caller          | u8   |
+| caller_spec     | Version string hash of the caller            | u4   |
+| caller_url      | URL hash of the caller                       | u4   |
+| spec            | Version string hash of the callee            | u4   |
+| url             | Callee URL hash                              | u4   |
+| count           | Number of execution cases                    | u4   |
+| error           | Error Count                                  | u4   |
+| time            | Sum of response times                        | u8   |
 
 ## Transaction referer statistics{#stat-referer}
 
@@ -96,41 +108,41 @@ stat_referer_enabled=true
 
 Through the collected data, you can see the referer data on the statistics.
 
-| Columns | Description               | Type |
-| ------- | ------------------------- | ---- |
-| referer | Referer hash              | u4   |
-| url     | Transaction URL hash      | u4   |
-| count   | Number of execution cases | u4   |
-| error   | Error Count               | u4   |
-| time    | Sum of response times     | u8   |
+| Columns    | Description                       | Type |
+| ---------- | --------------------------------- | ---- |
+| referer    | Referer hash                      | u4   |
+| url        | Transaction URL hash              | u4   |
+| count      | Number of execution cases         | u4   |
+| error      | Error Count                       | u4   |
+| time       | Sum of response times             | u8   |
 
 ## Error Statistics
 
-They are statistics on the service errors that occurred for 5 minutes. It collects different errors and transaction names with the keys. Statistics appear for up to 1,000 errors every 5 minutes.
+They are statistics on the service errors that occurred for 5 minutes. They collect different errors and transaction names with the keys. They provide the stacks upon error occurrence. The statistics appear for up to 1,000 errors every 5 minutes.
 
-| Columns   | Description           | Type |
-| --------- | --------------------- | ---- |
-| classHash | Error Class           | u4   |
-| service   | Transaction hash      | u4   |
-| snapSeq   | Stack data            | u8   |
-| msg       | Message hash          | u4   |
-| count     | Number of occurrences | u4   |
+| Columns      | Description               | Type |
+| ------------ | ------------------------- | ---- |
+| classHash    | Error Class               | u4   |
+| service      | Transaction hash          | u4   |
+| snapSeq      | Stack data                | u8   |
+| msg          | Message hash              | u4   |
+| count        | Number of occurrences     | u4   |
 
 ## SQL execution statistics
 
 The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL statements are allowed in 5 minutes. If a single Java process generates SQL statements that exceed the limit, they are discarded from statistical data.
 
-| Columns     | Description                            | Type |
-| ----------- | -------------------------------------- | ---- |
-| dbc         | Hash of DB connection data             | u4   |
-| sql         | Hash of the SQL statement              | u4   |
-| count_total | Number of execution cases              | u4   |
-| count_error | Error Count                            | u4   |
-| time_sum    | Sum of response times                  | u8   |
-| time_max    | Maximum response time                  | u4   |
-| fetch_count | Fetch Count                            | u4   |
-| fetch_time  | Sum of patch times                     | u8   |
-| service     | One of the services that performed SQL | u4   |
+| Columns        | Description                                  | Type |
+| -------------- | -------------------------------------------- | ---- |
+| dbc            | Hash of DB connection data                   | u4   |
+| sql            | Hash of the SQL statement                    | u4   |
+| count_total    | Number of execution cases                    | u4   |
+| count_error    | Error Count                                  | u4   |
+| time_sum       | Sum of response times                        | u8   |
+| time_max       | Maximum response time                        | u4   |
+| fetch_count    | Fetch Count                                  | u4   |
+| fetch_time     | Sum of patch times                           | u8   |
+| service        | One of the services that performed SQL       | u4   |
 
 :::note
 
@@ -140,31 +152,31 @@ The `service (URL)` hash collects one (the last URL called) of URLs that called 
 
 ## HTTP call execution statistics
 
-The HTTP call execution statistics for 5 minutes are collected. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single node.js process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
+They collect the statistics of calls outside the applications for 5 minutes via the HTTP and HTTPS protocols. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single node.js process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
 
-| Columns     | Description               | Type |
-| ----------- | ------------------------- | ---- |
-| url         | Target URL hash           | u4   |
-| host        | Host or IP                | u4   |
-| port        | TCP port                  | u4   |
-| count_total | Number of execution cases | u4   |
-| count_error | Error Count               | u4   |
-| time_sum    | Sum of response times     | u8   |
-| time_max    | Maximum response time     | u4   |
-| service     | One of HTTP call services | u4   |
+| Columns        | Description                                        | Type |
+| -------------- | -------------------------------------------------- | ---- |
+| url            | Target URL hash                                    | u4   |
+| host           | Host or IP                                         | u4   |
+| port           | TCP port                                           | u4   |
+| count_total    | Number of execution cases                          | u4   |
+| count_error    | Error Count                                        | u4   |
+| time_sum       | Sum of response times                              | u8   |
+| time_max       | Maximum response time                              | u4   |
+| service        | One of HTTP call services                          | u4   |
 
 ## Number of calls for each client IP region
 
-<!-- 정은님 수정 예정? -->
+<!-- 정은님 수정 예정? > -->
 
 The physical distance between the server and the client is proportional to the data transfer time. It statistically collects call counts for each region of the client IP. The number of different IPs that can be collected per 5 minutes is up to 70,000 per instance.
 
-| Columns | Description         | Type |
-| ------- | ------------------- | ---- |
-| ip      | IP address          | u4   |
-| country | User access country | -    |
-| city    | User access city    | -    |
-| count   | Count               | u4   |
+| Columns    | Description             | Type |
+| ---------- | ----------------------- | ---- |
+| ip         | IP address              | u4   |
+| country    | User access country     | -    |
+| city       | User access city        | -    |
+| count      | Count                   | u4   |
 
 ### Share chart by region
 
@@ -177,7 +189,7 @@ The share chart collects user access locations and presents them for each countr
 
 The numbers of calls for each hash of the user agent string are collected. There is a maximum of 500 different user agent hashes for each instance that can be collected every 5 minutes.
 
-| Columns | Description | Type |
-| ------- | ----------- | ---- |
-| hash    | hash        | u4   |
-| count   | Count       | u4   |
+| Columns  | Description | Type |
+| -------- | ----------- | ---- |
+| hash     | hash        | u4   |
+| count    | Count       | u4   |

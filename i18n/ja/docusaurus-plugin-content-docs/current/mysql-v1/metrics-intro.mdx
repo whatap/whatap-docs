@@ -1,0 +1,33 @@
+---
+id: metrics-intro
+title: メトリックス
+description: データベースモニタリング分析のメトリクスメニューについて学習します。
+tags:
+  - MySQL
+  - メトリックス
+  - データベース
+  - データベースモニタリング
+---
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+import Variable from '@site/src/components/Variable.js';
+import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
+import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
+
+<!-- 概要 -->
+
+{@include: ../common-items/_metrics-intro.desc.mdx}  
+
+<IntroExam category='db_mysql_counter'/>
+
+<ProdImg img='metrics-example-00.png' desc=''/>
+
+<!-- メトリクスチャートを照会する -->
+
+{@include: ../common-items/_metrics-intro-look-up-chart.mdx}  
+
+<LookupchartDesc metric='Bytes_sent' category='db_mysql_counter' />
+
+<!-- メトリクスRaw Dataを照会する -->
+
+{@include: ../common-items/_metrics-intro-look-up-raw-data.mdx}  

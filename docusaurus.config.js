@@ -32,6 +32,7 @@ module.exports = Promise.resolve({
     },
   ],
   plugins: [
+    [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
     [ 'docusaurus-plugin-pagemove', {} ],
@@ -91,6 +92,10 @@ module.exports = Promise.resolve({
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -139,6 +144,10 @@ module.exports = Promise.resolve({
         searchPagePath: 'search',
         //... other Algolia params
         insights: true,
+      },
+      image: 'https://www.whatap.io/img/og/whatap.png',
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
       },
       metadata: [
         {
@@ -209,7 +218,7 @@ module.exports = Promise.resolve({
               {
                 type: 'doc',
                 docId: 'golang/introduction',
-                label: 'Golang',
+                label: 'Go',
               },
               {
                 type: 'doc',
@@ -361,7 +370,7 @@ module.exports = Promise.resolve({
             type: 'doc',
             docId: 'golang/introduction',
             position: "left",
-            label: 'Golang 모니터링',
+            label: 'Go 모니터링',
             className: 'hidden',
           },
           {
@@ -401,9 +410,16 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'mysql-v1/monitoring-intro',
+            position: "left",
+            label: 'MySQL 모니터링 V1',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'mysql/monitoring-intro',
             position: "left",
-            label: 'MySQL 모니터링',
+            label: 'MySQL 모니터링 V2',
             className: 'hidden',
           },
           {
@@ -513,6 +529,13 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'npm',
+            position: "left",
+            label: 'NPM',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
             docId: 'extensions',
             position: 'left',
             label: '확장 도구',
@@ -560,7 +583,8 @@ module.exports = Promise.resolve({
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json' ],
+        // reference: https://prismjs.com/#supported-languages
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml' ],
         // 
       },
       zoom: {

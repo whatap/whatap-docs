@@ -1,0 +1,45 @@
+---
+id: agent-webservice
+title: Web Service追跡
+description: .NETアプリケーションサーバーのWeb Serviceを追跡できます。
+tags:
+  - .NET
+---
+
+.NETアプリケーションサーバーのWeb Serviceを追跡できます。
+
+-   **webservice_method_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    値を`true`に設定するとWeb Serviceを追跡できます。 
+
+    :::note
+
+    設定した値を有効にするには、IISを再起動してください。
+
+    :::
+
+-   **webservice_method_prefix** <span class='type'>String</span>
+
+    追跡対象となるメソッド名をネームスペースと一緒に入力してください。 Web Serviceは直接追跡できないため、Web Serviceを使用したメソッドを直接追跡対象として入力する必要があります。
+
+    次の例を参照してください。
+
+    ```ini title='whatap.conf'
+    webservice_method_prefix=Test.Demo, WebServiceDemo.WebService.
+    ```
+
+    :::caution
+
+    -   条件に合ったメソッドがWeb Serviceを使用しなくても追跡対象となります。 ただ、Web Serviceを使用するメソッドでなければ、エラーが発生してもエラーは検出されず、トランザクションが終わっていない状態に維持される可能性があります。
+
+    -   メソッドが所属するクラスまで入力すると、当該クラス内のすべてのメソッドが追跡対象になります。
+
+    :::
+
+    :::note
+
+    設定した値を有効にするには、IISを再起動してください。
+
+    :::

@@ -9,12 +9,9 @@ tags:
 ---
 
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import Note from '../common-items/_import_v2-note.mdx';
 
-:::note
-
-This document has been created based on the PostgreSQL Monitoring V2. For the PostgreSQL monitoring V1 document, see [the following](../postgresql-v1/install-agent).
-
-:::
+<Note product='PostgreSQL' link='../postgresql-v1/install-agent' />
 
 The following guides you to the basic installation method for using the WhaTap database monitoring service.
 
@@ -28,7 +25,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 ## Downloading the WhaTap database agent
 
-{@include: ../common-items/_db-install-agent-steps.mdx}
+{@include: ../common-items/_db-install-agent-steps.mdx} 
 
 1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
@@ -46,7 +43,7 @@ db_port={DB server port number}
 
   Download the JDBC driver for the OS and version of your database server. 
 
-  **Postgresql 9.2 or later**: https://jdbc.postgresql.org/download
+  **PostgreSQL 9.2 or later**: https://jdbc.postgresql.org/download
 
 <!-- 공통 Notes-->
 
@@ -74,16 +71,19 @@ alter user whatap with superuser;
 grant execute on function pg_ls_dir(text) to whatap;  # In case of using EDB
 alter user whatap with superuser;
 
-# In case of collecting the cache
+#  In case of collecting the cache
 grant select on pg_backend_memory_contexts to whatap;
 grant execute on function pg_get_backend_memory_contexts to whatap;
+
+#  In case of collecting the table size
+grant usage on schema {schema_name} to whatap;
 ```
 
 ## DB user file creation {#create-db-user}
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+{@include: ../common-items/_db-create-db-user-file-body.mdx} 
 
 <!--## 에이전트 실행-->
 

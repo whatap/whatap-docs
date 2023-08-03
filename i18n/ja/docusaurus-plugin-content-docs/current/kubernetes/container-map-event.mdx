@@ -8,18 +8,57 @@ tags:
   - Event
 ---
 
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後**詳細を見る**画面に進入 > **_イベント_**
+ホーム画面>プロジェクト選択>**_ダッシュボード_**>**_コンテナマップ_**>対象選択後**詳細を見る**画面に進入>**_イベント_**タブの選択
 
-WhaTap Kubernetesモニタリングで提供するイベント情報は次のとおりです。
+リソース寿命周期が発生するすべてのイベントに対する履歴を提供します。WhaTapクバネティスモニタリングで提供するイベント情報は以下の通りです。
 
--   Kubernetesイベント(**_kubernetes_**)
+-   Kubernetesイベント(**_Kubernetes_**)
 -   WhaTapイベント(**_WhaTap_**)
 
-## Kubernetes
+## 基本画面ガイド
 
-Kubernetesイベントは、Kubernetesが自主的に提供するイベント情報です。ユーザーKubernetes環境で`kubectl get events`コマンドを使用すると、ユーザーKubernetesクラスターのイベント情報が確認できます。
+![クバネティス詳細イベントタブ](/img/k8s-event-default2.png)
+
+-   ![number 1](/img/number-01.png)クバネティスイベントまたはWhaTapイベントを選択して照会できます。 
+
+    -   全体または多重ブロック選択
+
+        **_コンテナマップ_**および左のカードから全体または多重ブロック選択すると、**_Kubernetes全体イベント_**または**_WhaTap全体イベント_**を照会することができます。
+
+    -   クラスタリングまたは個別ブロック選択
+
+        **_コンテナマップ_**上段の**_２段階_**グループ化選択または個別ブロックを選択すると、該当イベントを照会できます。**グループ化**(クラスタリング)に関する詳細は[次の文書](container-group)を参照してください。
+
+        :::note
+
+        **詳細**画面に進入する前**_コンテナマップ_**上段で選択したビューおよび対象グループ化によって照会できるイベントが異なります。
+
+        :::
+
+-   ![number 2](/img/number-02.png)時間選択者を通じて、照会したい時間帯を指定できます。デフォルト設定は**_１日_**です。
+
+-   ![number 3](/img/number-03.png)棒チャートを通じて、選択した時間帯の**_イベント数の推移_**を確認できます。
+
+-   ![number 4](/img/number-04.png)イベント一覧を通じて、イベント情報を確認できます。 
+
+    -   **_Kubernetes_**イベント
+
+        -   <span class='k8s-normal'>Normal</span>または<span class='slow'>Warning</span>の中で、照会をしたいイベントタイプを選択して確認できます。このイベントタイプはクバネティスが提供するイベントタイプと同一です。
+
+        -   各イベントの左帯もまた、イベントタイプを示してます。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>状態を意味します。
+
+    -   **_WhaTap_**イベント
+
+        -   <span class='vslow'>Critical</span>,<span class='k8s-normal'>Info</span>,<span class='slow'>Warning</span>の中で、照会をしたいイベントレベルを選択して確認できます。
+
+        -   各イベントの左帯もまた、イベントレベルを表します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>、赤色は<span class='vslow'>Critical</span>の状態を意味します。
+
+## クバネティスイベント
+
+**_Kubernetes_**イベントは、Kubernetesが自主的に提供するイベント情報です。ユーザーKubernetes環境で`kubectl get events`コマンドを使用すると、ユーザーKubernetesクラスターのイベント情報が確認できます。
 
 ```bash
+
 $ kubectl get events -A
  NAMESPACE   LAST SEEN   TYPE      REASON                   OBJECT                            MESSAGE
  community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5`
@@ -40,6 +79,7 @@ $ kubectl get events -A
  community   7m10s       Normal    Started                  pod/suraksan-66fc4bf889-mjbsj     Started container suraksan
  community   2m10s       Warning   BackOff                  pod/suraksan-66fc4bf889-mjbsj     Back-off restarting failed container
  community   5m18s       Warning   FailedToUpdateEndpoint   endpoints/baekdusan-svc           Failed to update endpoint community/baekdusan-svc: Operation cannot be fulfilled on endpoints "baekdusan-svc": the object has been modified; please apply your changes to the latest version and try again
+
 ```
 
 ただ、これらのイベント情報は継続的に保存されません。したがって、一定時間が経過したイベントは、もう情報を確認できません。 
@@ -48,25 +88,35 @@ WhaTap Kubernetesは、ユーザークラスター環境で発生したKubernete
 
 ![Kubernetesイベント](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_k8s.png)
 
-各イベントの左帯は、イベントタイプを示します。灰色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>を意味します。このイベントタイプは、Kubernetesが提供するEvent Typeの情報と同じです。
+各イベントの左帯はイベントタイプを示します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>状態を意味します。ユーザーの選択対象による提供、クバネティスイベントは以下の通りです。
 
-ユーザー選択対象によって提供されるKubernetesイベントは次のとおりです。
+| 選択対象           | 提供イベント                                                        | 提供関連イベント                                                         |
+| -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 全体（All）        | >                                                             | プロジェクト全体イベント                                                     |
+| Namespace      | >                                                             | Namespace下位の全体イベント                                               |
+| Node           | >                                                             | 当該Nodeイベントまたはノード内のPod （コンテナ） 全体イベント                              |
+| Deployment     | ① `kind`がDeployment<br/>② `name`がユーザーのDeployment名と一致          | `name`がユーザーDeployment名でスタート                                      |
+| ReplicaSet     | ① `kind`がReplicaSet<br/>② `name`がユーザーのReplicaSet名と一致          | `name`がユーザーReplicaSet名でスタート                                      |
+| Pod（コンテナ）      | ① `kind`がPod<br/>② `name`がユーザーのPod名と一致                        | 当該Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                    |
 
-| 選択対象       | 提供イベント                                               | 提供関連イベント                                      |
-| ---------- | ---------------------------------------------------- | --------------------------------------------- |
-| 全体（All）    | >                                                    | プロジェクト全体イベント                                  |
-| Namespace  | >                                                    | Namespace下位の全体イベント                            |
-| Node       | >                                                    | 当該Nodeイベントまたはノード内のPod （コンテナ） 全体イベント           |
-| Deployment | ① `kind`がDeployment<br/>② `name`がユーザーのDeployment名と一致 | `name`がユーザーDeployment名でスタート                   |
-| ReplicaSet | ① `kind`がReplicaSet<br/>② `name`がユーザーのReplicaSet名と一致 | `name`がユーザーReplicaSet名でスタート                   |
-| Pod（コンテナ）  | ① `kind`がPod<br/>② `name`がユーザーのPod名と一致               | 当該Podが所属するDeployment名でスタートまたはReplicaSet名でスタート |
+WhaTapに保存されているKubernetesイベントは、`message`、`namespace`、`kind`、`name`、`reason`, `type`などの項目で構成されています。
 
-WhaTapに保存されているKubernetesイベントは、`message`、`namespace`、`kind`、`name`、`reason`などの項目で構成されています。
+## WhaTapイベント
 
-## WhaTap
-
-コンテナマップでは、ユーザーのWhaTap警告設定によるイベント一覧を確認できます。
+**_WhaTap_**イベントはWhaTapイベント設定を通じて、登録したイベント条件によって発生するすべてのイベントです。**_コンテナマップ_**詳細画面の**_イベント_**タブでユーザーのWhaTapアラート設定によるイベント一覧を確認できます。 
 
 ![WhaTapイベント](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_whatap.png)
 
-各イベントの左帯はイベントレベルを表します。灰色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>、赤は<span class='vslow'>Critical</span>の状態を意味します。
+各イベントの左帯はイベントレベルを示します。グレー色は<span class='k8s-normal'>Info</span>、オレンジ色は<span class='slow'>Warning</span>、赤色は<span class='vslow'>Critical</span>状態を意味します。ユーザーの選択対象によって提供、WhaTapイベントは以下の通りです。
+
+| 選択対象       | 提供イベント                                      |
+| ---------- | ------------------------------------------- |
+| 全体（All）    | プロジェクト全体イベント                                |
+| Namespace  | Namespace下位の全体イベント                          |
+| Node       | `onodeName`がユーザーNode名と一致                    |
+| Deployment | `deployment`가 Deployment名と一致                |
+| ReplicaSet | `replicaSetName`がユーザーReplicaSet名と一致         |
+| Pod        | `podName`がユーザーPod名と一致                       |
+| Container  | `containerId`がユーザーContainer IDと一致           |
+
+WhaTapイベントは`message`, `status`, `title`, `level`などの項目で構成されています。

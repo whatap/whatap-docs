@@ -38,8 +38,7 @@ Let's look at how to determine which type of failure has occurred depending on t
 The horizontal axis is the transaction end time, and the vertical axis is the response time. The response times to the user requests appear as rectangles on the chart for each time the transactions end. This allows you to determine whether the user request has been properly responded to. The colors of the square boxes on the hitmap transaction chart have the following meanings.
 
 -   <span class='normal'>Blue</span>: Normal transaction
--   <span class='slow'>Orange</span>: Transactions with the response times as slow as 8 seconds
--   <span class='vslow'>Red</span>: Transaction with the response time of more than twice as slow or transactions rejected
+-   <span class='slow'>Orange</span>, <span class='vslow'>Red</span>: An error occurred or the request was denied. The displayed color gets closer to red, depending on the frequency of errors.
 
 The most important part to look at in this chart is where the transaction boxes are lined up horizontally or vertically. See the following hitmap pattern.
 

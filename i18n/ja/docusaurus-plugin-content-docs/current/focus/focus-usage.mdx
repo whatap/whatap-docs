@@ -1,7 +1,7 @@
 ---
 id: focus-usage
 title: 使用例
-description: WhaTap Focusの使用例について案内します。
+description: WhaTap Focusの使用方法の例について案内します。
 tags:
   - Focus
   - 使用例
@@ -10,7 +10,7 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Focusを活用してよく使用するコマンドやその他の活用例について案内します。これを通じて開発・運用時にデータを時系列で確認できるようにしています。開発・運用に役立てればと思います。
+Focusを使用して、繫栄に使用されるコマンドやその他の活用例について案内します。これにより、開発や運用時にデータを時系列で確認できるようになり、開発や運用に役立ちます。
 
 ## プロジェクトアクセスキーと収集サーバーのIP確認
 
@@ -22,7 +22,7 @@ Focusを活用してよく使用するコマンドやその他の活用例につ
 
 ## NETSTAT活用
 
-次の例は、netstatコマンドを実行してTCP Connectionステータス別の個数を収集します。
+次の例は、netstatコマンドを実行して、TCP Connectionステータス別の番号を収集します。
 
 ```bash title='Linux Shell'
 #メトリクスカテゴリ
@@ -36,7 +36,7 @@ netstat -nat| tail -n+3 |  awk '{print $6}' | sort | uniq -c | awk 'BEGIN { prin
 
 ## VMSTAT活用
 
-次の例は、ststatコマンドを実行して項目別指数を収集します。
+次の例は、vmstatコマンドを実行して、項目された指数を収集します。
 
 ```bash title='Linux Shell'
 #メトリクスカテゴリ
@@ -50,7 +50,7 @@ vmstat -n 5 | awk ' NR>2 {printf "{ \"r\":%s,\"b\":%s, \"swpd\" :%s, \"free\" :%
 
 ## DU活用
 
-次の例は、duコマンドを実行して任意のディレクトリ容量を収集します。
+次の例は、duコマンドを実行して、任意のディレクトリ容量を収集します。
 
 ```bash title='Linux Shell'
 #メトリクスカテゴリ

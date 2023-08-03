@@ -10,11 +10,13 @@ tags:
 
 エージェントをインストールする前に、.NET Frameworkアプリケーションのサポート環境を確認してください。
 
--   **オペレーティングシステム**：Windows Server2012以降（IIS 8.0以降）
+-   **対応バージョン**：.NET Framework 4.5（4.61以降を推奨）
 
--   **.NETバージョン**：.NET Framework 4.5（4.61以降を推奨）
+-   **オペレーティングシステム**：Windows Server2012以降
 
--   **対応ライブラリ**
+-   **アプリケーションサーバー**：IIS 8.0 以降
+
+-   **ライブラリ**
 
     -   WebClient/WebRequest
 
@@ -28,9 +30,11 @@ tags:
 
     -   ADO.NET（Database）
 
+-   **データベース**：MS SQL、Oracle、MySQLなどADO.NETに対応するすべてのデータベースおよびRadis
+
 ## サーバ対応環境分析方法
 
-### 分析ツールダウンロード
+### 分析ツールダウンロード{#download-tools}
 
 エージェントをインストールするサーバーの対応環境がよくわからない場合は、次のリンクを通じて分析ツールをダウンロードしてください。
 
@@ -38,7 +42,7 @@ tags:
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
 
-### 分析ツールの使用
+### 分析ツールの使用{#use-tools}
 
 1.  ダウンロードした分析ツールを実行してください。
 
@@ -52,11 +56,17 @@ tags:
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
+5.  IISに設置されたサイトごとに**.NET Framework**バージョンがv4.0と表示されるか確認してください。
+
+    ![](/img/apm-dotnet-analystic-env-03.png)
+
+    ![数字5](/img/number-05.png)の場合、対応範囲ですが_web.config_ファイルがありません。このような場合、ほとんどは**.NET**を使わないASP、PHPなどのサイトでエージェントが動作しません。
+
 :::note
 
 -   **.NET Framework**は、4.8.1バージョン以降に対応しています。
 
--   **.NET Core**バージョンは、開発中です。
+-   **Core**または**.NET 5**以降のバージョンは対応していません。**.NET Core**バージョンは開発中です。
 
 :::
 
@@ -68,7 +78,7 @@ tags:
 
 ![IIS Manager](/img/apm-dotnet-application-pool.png)
 
-**IIS Manager**で**Application Pools**をクリックしてください。**Application Pools**一覧で使用するアプリケーションに該当するプール(Pool)の**.NET Core**が4.0バージョンなのか確認してください。
+**IIS Manager**で**Application Pools**をクリックしてください。**Application Pools**一覧で使用するアプリケーションに該当するプール(Pool)の**.NET**が4.0バージョンなのか確認してください。
 
 ## 共通サポート環境
 

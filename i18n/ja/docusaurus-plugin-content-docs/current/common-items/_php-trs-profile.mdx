@@ -1,44 +1,44 @@
--   **whatap.profile_step_normal_count** <span class='type'>Int</span>
+- **whatap.profile_step_normal_count** <span class='type'>Int</span>
 
   デフォルト値 `1000`
 
   トランザクショントレースの最大ステップ数を指定します。
 
--   **whatap.profile_step_max_count** <span class='type'>Int</span>
+- **whatap.profile_step_max_count** <span class='type'>Int</span>
 
   デフォルト値 `1024`
 
   収集可能なトレースステップの最大個数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
 
--   **whatap.profile_step_heavy_count** <span class='type'>Int</span>
+- **whatap.profile_step_heavy_count** <span class='type'>Int</span>
 
   デフォルト値 `1000`
 
   基本ステップの収集個数を超えると、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の場合、`profile_step_normal_count`が800であれば、最大200個のステップが収集されます。
 
--   **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
+- **whatap.profile_step_heavy_time** <span class='type'>Millisecond</span> <!-- 문장 부자연스러움 -->
 
   デフォルト値`100`
 
   Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
 
--   **whatap.profile_basetime** <span class='type'>Millisecond</span>
+- **whatap.profile_basetime** <span class='type'>Millisecond</span>
 
   デフォルト値`500`
 
   トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただ、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
 
--   **whatap.query_string_enabled** <span class='type'>Boolean</span>
+- **whatap.query_string_enabled** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 
   トランザクションURLのクエリ ストリングを一緒に収集する機能を活性化します。`whatap.query_string_urls`に登録されたURLのみ適用されます。
 
--   **whatap.query_string_urls** <span class='type'>String</span>
+- **whatap.query_string_urls** <span class='type'>String</span>
 
   トランザクションからクエリストリングを収集するURLを登録します。
 
--   **whatap.whatap.profile_compile_file_enabled** <span class='type'>Boolean</span>
+- **whatap.whatap.profile_compile_file_enabled** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 
@@ -46,7 +46,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
+- **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
   デフォルト値`200`
 
@@ -60,7 +60,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_method_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
   デフォルト値 `true`
 
@@ -68,7 +68,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_method_time** <span class='type'>Milliseconds</span>
+- **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
   デフォルト値 `1000`
 
@@ -76,7 +76,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 
@@ -84,7 +84,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
+- **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
   デフォルト値 `true`
 
@@ -92,7 +92,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
+- **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
 
   デフォルト値 `1000`
 
@@ -100,7 +100,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
+- **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
 
   デフォルト値 `1000`
 
@@ -108,7 +108,7 @@
 
 {@include: ../common-items/_php-restart-apply.mdx}
 
--   **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
+- **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
 
   デフォルト値 `true`
 
@@ -120,13 +120,13 @@
 
   :::
 
--   **whatap.net_udp_profile_basetime_enabled** <span class='type'>Boolean</span>
+- **whatap.net_udp_profile_basetime_enabled** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 
   値が`true`であれば、設定された応答時間より早いトランザクションのトレース情報を収集しません。
 
--   **whatap.net_udp_profile_basetime** <span class='type'>Miliseconds</span>
+- **whatap.net_udp_profile_basetime** <span class='type'>Miliseconds</span>
 
   デフォルト値`false`
 
@@ -138,19 +138,19 @@
 
   :::
 
--   **whatap.net_udp_trace_ignoretime_enabled** <span class='type'>Boolean</span>
+- **whatap.net_udp_trace_ignoretime_enabled** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 
   値が`true`であれば、設定された応答時間がかかるトランザクションおよびトレース情報を収集しません。
 
--   **whatap.net_udp_trace_ignoretime** <span class='type'>Miliseconds</span>
+- **whatap.net_udp_trace_ignoretime** <span class='type'>Miliseconds</span>
 
   デフォルト値`30`
 
   トランザクションおよびトレース情報収集を除くトランザクションの応答時間を設定します。
 
--   **whatap.shm_tx_counter_enable** <span class='type'>Boolean</span>
+- **whatap.shm_tx_counter_enable** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 

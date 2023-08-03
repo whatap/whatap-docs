@@ -10,11 +10,13 @@ tags:
 
 Before installing the agent, check the support environment for .NET framework applications.
 
--   **OS**: Windows Server 2012 or later (IIS 8.0 or later)
+-   **Supported version**: .NET Framework 4.5 (version 4.61 or later recommended)
 
--   **.NET version**: .NET Framework 4.5 (version 4.61 or later recommended)
+-   **OS**: Windows Server 2012 or later
 
--   **Support libraries**
+-   **Application Server**: IIS 8.0 or later
+
+-   **Library**
 
     -   WebClient/WebRequest
 
@@ -28,9 +30,11 @@ Before installing the agent, check the support environment for .NET framework ap
 
     -   ADO.NET (Database)
 
+-   **Database**: All databases and Radis that support ADO.NET such as MS SQL, Oracle, MySQL, etc.
+
 ## How to analyze the server support environment
 
-### Downloading the analysis tools
+### Downloading the analysis tools{#download-tools}
 
 If you are not familiar with the supported environment of the server to install the agent on, download the analysis tools through the following links.
 
@@ -38,7 +42,7 @@ If you are not familiar with the supported environment of the server to install 
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
 
-### Using the analysis tools
+### Using the analysis tools{#use-tools}
 
 1.  Run the downloaded analysis tools.
 
@@ -52,11 +56,17 @@ If you are not familiar with the supported environment of the server to install 
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
+5.  Check that the **.NET Framework** version appears as v4.0 for each site installed in IIS.
+
+    ![](/img/apm-dotnet-analystic-env-03.png)
+
+    ![Number 5](/img/number-05.png) is the supported range, but there is no _web.config_ file. In this case, the agent does not work because they are the sites for ASP, PHP, and such that do not use **.NET**.
+
 :::note
 
 -   **.NET Framework** supports up to the version 4.8.1.
 
--   The **.NET Core** version is in development.
+-   **Core**, **.NET 5**, or later is not supported. The **.NET Core** versions are under development.
 
 :::
 
@@ -68,7 +78,7 @@ The user's application version can be seen in the **IIS Manager** as follows.
 
 ![IIS Manager](/img/apm-dotnet-application-pool.png)
 
-In **IIS Manager**, click **Application Pools**. In the **Application Pools** list, check that **.NET Core** of the pool for your available application is the version 4.0.
+In **IIS Manager**, click **Application Pools**. In the **Application Pools** list, check that **.NET** of the pool for your available application is the version 4.0.
 
 ## Common supported environment
 

@@ -36,6 +36,10 @@
         {
             "filePath": "README.md",
             "group": "Default"
+        },
+        {
+            "filePath": "src/theme/MDXComponents.js",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"

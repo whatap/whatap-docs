@@ -1,0 +1,164 @@
+---
+id: container-map-event-temp
+title: Event
+description: WhaTap Kubernetes Monitoring provides Kubernetes events and WhaTap events.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Event
+draft: true
+---
+
+Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > Select **_Event_** tab
+
+It provides records for all events that occur during the resource lifecycle. The events provided in WhaTap Kubernetes Monitoring are as follows:
+
+-   Kubernetes Event (**_Kubernetes_**)
+-   WhaTap event (**_WhaTap_**)
+
+## Basic screen guide
+
+![Kubernetes Display Detail Event tab](/img/k8s-event-default3.png)
+
+-   You can select a ![number 1](/img/number-01.png) Kubernetes event (**_Kubernetes_**) or WhaTap event (**_WhatTap_**) for query. 
+
+    -   Selecting all or multiple blocks
+
+        You can search **_All Kubernetes events_** or **_All WhatTap events_** when all or multiple blocks are selected from **_Container Map_** and the card on the left.
+
+    -   Selecting clustering or individual block
+
+        When selecting **_Step 2_** grouping or individual block at the top of **_Container Map_**, you can view the event. For more information about the **grouping** (clustering), see [the following](container-group).
+
+        :::note
+
+        Before entering the **Display Detail** screen, depending on the view or grouping selected at the top of **_Container Map_**, the events that can be viewed may differ.
+
+        :::
+
+-   Using the ![number 2](/img/number-02.png) time selector, you can set the time zone to view event records in. The default value is **_1 day_**.
+
+-   The **_event number trend_** in the ![number 3](/img/number-03.png) selected time zone can be viewed with a bar chart. 
+
+-   In the ![number 4](/img/number-04.png) list format, you can see the event records. 
+
+    -   If you select **_Hide Tag_** on the upper right of the event record list, you can see the **_timestamp_** and **_message_** excluding the tags while recording events.
+
+    -   **_Kubernetes_** events
+
+        -   You can see the data by selecting a desired event type: <span class='k8s-normal'>Normal</span> or <span class='slow'>Warning</span>. These event types are identical to the event types provided by Kubernetes.
+
+        -   The bars on the left for each event indicate the event types. Gray indicates <span class='k8s-normal'>Normal</span> and orange <span class='slow'>Warning</span>.
+
+    -   **_WhaTap_** events
+
+        -   Select a desired event level to search among <span class='vslow'>Critical</span>, <span class='k8s-normal'>Info</span>, and <span class='slow'>Warning</span>.
+
+        -   The bars on the left for each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>.
+
+## Kubernetes event
+
+**_Kubernetes_** event is the event data provided by Kubernetes. In the Kubernetes environment, you can use the `kubectl get events` command to get the event data of the Kubernetes cluster.
+
+```bash
+
+$ kubectl get events -A
+ NAMESPACE   LAST SEEN   TYPE      REASON                   OBJECT                            MESSAGE
+ community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5`
+ community   12m         Normal    ScalingReplicaSet        deployment/suraksan               Scaled down replica set suraksan-66fc4bf889 to 3
+ community   5m18s       Normal    ScalingReplicaSet        deployment/baekdusan              Scaled down replica set baekdusan-59554d4859 to 3
+ community   7m10s       Normal    Created                  pod/suraksan-66fc4bf889-h2cw8     Created container suraksan
+ community   6m56s       Normal    Pulled                   pod/suraksan-66fc4bf889-h2cw8     Container image "123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/suraksan:0.48" already present on machine
+ community   7m9s        Normal    Started                  pod/suraksan-66fc4bf889-h2cw8     Started container suraksan
+ community   2m7s        Warning   BackOff                  pod/suraksan-66fc4bf889-h2cw8     Back-off restarting failed container
+ community   7m12s       Normal    Started                  pod/suraksan-66fc4bf889-t27rp     Started container suraksan
+ community   6m54s       Normal    Pulled                   pod/suraksan-66fc4bf889-t27rp     Container image "123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/suraksan:0.48" already present on machine
+ community   7m12s       Normal    Created                  pod/suraksan-66fc4bf889-t27rp     Created container suraksan
+ community   2m46s       Warning   BackOff                  pod/suraksan-66fc4bf889-t27rp     Back-off restarting failed container
+ community   7m19s       Normal    ScalingReplicaSet        deployment/mountain               Scaled up replica set mountain-6795bfbc54 to 5
+ community   27m         Normal    ScalingReplicaSet        deployment/mountain               Scaled down replica set mountain-6795bfbc54 to 4
+ community   6m53s       Normal    Pulled                   pod/suraksan-66fc4bf889-mjbsj     Container image "123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/suraksan:0.48" already present on machine
+ community   7m10s       Normal    Created                  pod/suraksan-66fc4bf889-mjbsj     Created container suraksan
+ community   7m10s       Normal    Started                  pod/suraksan-66fc4bf889-mjbsj     Started container suraksan
+ community   2m10s       Warning   BackOff                  pod/suraksan-66fc4bf889-mjbsj     Back-off restarting failed container
+ community   5m18s       Warning   FailedToUpdateEndpoint   endpoints/baekdusan-svc           Failed to update endpoint community/baekdusan-svc: Operation cannot be fulfilled on endpoints "baekdusan-svc": the object has been modified; please apply your changes to the latest version and try again
+
+```
+
+However, the event data is not stored continuously. The events that occurred after a specified time are no longer available. 
+
+WhaTap Kubernetes collects and stores all Kubernetes events that occurred in the user cluster environment. Event data such as pod, ReplicaSet, deployment, and namespace is provided according to the target to check.
+
+![Kubernetes event](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_k8s.png)
+
+The bars on the left of each event indicate the event types. Gray indicates <span class='k8s-normal'>Normal</span> and orange <span class='slow'>Warning</span>. Available Kubernetes events according to the selected target are as follows:
+
+| Selected target      | Provided event                                                                  | Provision-related event                                                                              |
+| -------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| All                  | >                                                                               | All project events                                                                                   |
+| Namespace            | >                                                                               | All events under the namespace                                                                       |
+| Node                 | >                                                                               | Node events or all pod (container) events in the node                                                |
+| Deployment           | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
+| ReplicaSet           | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
+| Pod (container)      | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
+
+Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `name`, `reason` and `type`.
+
+## WhaTap event
+
+**_WhaTap_** events occur depending on the event conditions registered by the event configuration. Under the **_Event_** tab on the detailed view screen of **_Container Map_**, you can see the list of events based on the WhaTap alert settings.
+
+![WhaTap event](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_whatap.png)
+
+The bars on the left of each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>. Available WhaTap events according to the selected target are as follows:
+
+| Selected target | Provided event                                            |
+| --------------- | --------------------------------------------------------- |
+| All             | All project events                                        |
+| Namespace       | All events under the namespace                            |
+| Node            | `onodeName` is identical to the user node name            |
+| Deployment      | `deployment` is identical to the Deployment name          |
+| ReplicaSet      | `replicaSetName` is identical to the user ReplicaSet name |
+| Pod             | `podName` is identical to the user pod name               |
+| Container       | `containerId` is identical to the user Container ID       |
+
+WhaTap events consist of the items such as `message`, `status`, `title`, and `level`. The following example screen displays the **_WhatTap Container Event_** records.
+
+![Kubernetes WhaTap Event sc](/img/k8s-container-event-wt.png)
+
+-   From the summary information card on the left of ![number 1](/img/number-01.png) **Display Detail**, select a target to view.
+
+-   From the ![number 2](/img/number-02.png) summary information list, check the information of the selected one.
+
+-   In the ![number 3](/img/number-03.png) **_Event_** tab, select a **_WhaTap_** event. 
+
+    > Before entering the **Display Detail** screen, you can view **_container events_** by setting the option at the top of **_Container map_** to Container view.
+
+-   Through the ![number 4](/img/number-04.png) time selector, select a time to view. The default value is **_1 day_**.
+
+-   Through the ![number 5](/img/number-05.png) bar chart, see the **_Trend of number of events_** in the specified time zone.
+
+    > If you look at the trend of event counts on a daily basis from 8:57 on July 10th to 8:57 on July 11th, you can see that two events were counted at 8:48 on the 11th. 
+
+-   From the ![number 6](/img/number-06.png) event history, check the information of event records. You can see the levels for each event through the bars on the left of the list. To check all event messages and tags, select the ![Down arrow icon](/img/ic-caret-down.svg) icon.
+
+    > In the event record list, you can view for two <span class='slow'>Warning</span> level events: `CPU utilization of 85% or more by the container limit` and `GC count or more`. 
+
+<!-- 
+
+1 그룹 선택 시 각 전체 이벤트
+
+2 블록/마이크로 블록 선택 시
+  k8s 이벤트: 파드 이벤트/연관 이벤트
+  와탭 이벤트: 컨테이너 이벤트
+
+3 k9s 이벤트/와탭 이벤트 비교 안내 필요
+  e.g. 파드 이벤트/연관 이벤트(k8s 이벤트) 및 컨테이너 이벤트(와탭 이벤트) 요소 기술 필요
+
+4 로그와 마찬가지로 로그 검색 이동 기능 추후 제거 예정
+
+5 디폴트 조회 기준 1일?
+
+6 이벤트 수 추이 차트(로그 트렌드 바 차트랑 다르게 바 선택 시 구간 확인 안됨?)
+
+-->

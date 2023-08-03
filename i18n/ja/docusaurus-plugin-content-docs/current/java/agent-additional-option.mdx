@@ -1,12 +1,12 @@
 ---
 id: agent-additional-option
 title: 付加機能
-description: よく使用しますが、セキュリティなどの理由でエージェントのデフォルト設定から除外されたオプションです。
+description: これは頻繁に使用される、セキュリティなどの理由でエージェントのデフォルト設定から除外されたオプションです。
 tags:
   - Java
 ---
 
-アプリケーション環境によっては、エージェントのデフォルト値だけでは目的のレベルの情報を取得できない場合があります。以下は、よく使用しているもののセキュリティなどの理由でエージェントの基本設定から除外したオプションです。必要に応じて、以下のオプションを追加して適用できます。
+アプリケーション環境によっては、エージェントのデフォルト値だけでは目的のレベルの情報が取得できない場合があります。以下は、頻繁に使用されているセキュリティなどの理由でエージェントの基本設定から除外したオプションです。必要に応じて、以下のオプションを追加して適用できます。
 
 -   **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
@@ -46,7 +46,7 @@ tags:
 
 -   **weaving_reserved** = `jedis-3.2` & **jedis_show_parameter** = `true`
 
-    Jedisライブラリを使用する場合は、Redisレスポンス時間とパラメータを追跡します。
+    Jedisライブラリを使用する場合は、Redisのレスポンス時間とパラメータを追跡します。
 
 -   **weaving_reserved** = `spring-mongodb-2.2` & **mongo_show_parameter** = `true`
 
@@ -58,7 +58,7 @@ tags:
 
 -   **weaving_reserved** = `okhttp-2.7` & **weaving_reserved** = `okhttp3`
 
-    OkHttp使用した外部呼び出しを追跡します。
+    OkHttpを使用した外部呼び出しを追跡します。
 
 -   **weaving_reserved** = `reactor-rabbitmq-1.2` & **weaving_reserved** = `spring-rabbitmq-2.1`
 

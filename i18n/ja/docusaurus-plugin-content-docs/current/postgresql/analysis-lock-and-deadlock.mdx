@@ -9,17 +9,15 @@ tags:
   - ロックツリー
 ---
 
-:::note
+import Note from '../common-items/_import_v2-note.mdx';
 
-この文書は、PostgreSQLモニタリングV2を基準に作成されました。 PostgreSQLモニタリングV1文書については、 [次の文書](../postgresql-v1/analysis-lock-and-deadlock)を参考にしてください。
+<Note product='PostgreSQL' link='../postgresql-v1/analysis-lock-and-deadlock' />
 
-:::
-
-<!-- 개요 -->
+<!-- 概要 -->
 
 {@include: ../common-items/_analysis-lock-desc.mdx}
 
-<!-- 락트리 -->
+<!-- ロックツリー -->
 
 {@include: ../common-items/_db-locktree-desc.mdx}
 
@@ -27,6 +25,6 @@ tags:
 
 {@include: ../common-items/_db-locktree-using-basic.mdx}
 
-<!-- 락트리 컬럼 정보 -->
+<!-- ロックツリーカラム情報 -->
 
 {@include: ../common-items/_db_postgresql-column.mdx}

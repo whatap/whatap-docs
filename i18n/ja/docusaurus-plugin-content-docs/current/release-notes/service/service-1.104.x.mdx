@@ -1,0 +1,605 @@
+---
+id: service-1_104_x
+title: Service 1.104.X
+toc_max_heading_level: 2
+---
+
+## Service 1.104.19
+
+2023年7月21日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status><UI>レポート</UI>メニューからタイムアウトが発生した場合、レポート作成が正常に完了しないバグを修正
+
+-   <Status>Change</Status><UI>レポート</UI>メニューからレポート作成すると、UIローディング表示形式を変更
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> <UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリックス</UI>イベントタブで通知規則テストチャートにidの代わりにname関連データが表示されるよう修正
+
+-   <Status>Fixed</Status> <UI>サーバー一覧</UI>><UI>サーバー詳細</UI>メニューから時間範囲を操作すると、更新時に時間初期化されるバグを修正
+
+</div>
+
+## Service 1.104.18
+
+2023年7月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status>エージェントでthrottleが設定され、APIリクエスト制限時に案内メッセージを追加
+
+-   <Status>Fixed</Status>インストールされた環境で<UI>プロジェクト</UI>、<UI>グループ</UI>、<UI>組織</UI>メンバー招待時に存在しないアカウントの場合の案内メッセージを修正
+
+</div>
+
+## Service 1.104.17
+
+2023年7月18日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### 利用履歴
+
+-   <Status>Feature</Status><UI>決済情報</UI>メニューから決済情報を登録する際に、「海外口座振替顧客登録」を追加
+
+-   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国の選択に応じて決済プロセスを変更
+
+-   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国内の「逆発行口座振替登録」未露出される部分を変更
+
+-   <Status>Change</Status><UI>決済情報</UI>メニューからプロモーションバナーの変更
+
+-   <Status>Fixed</Status><UI>決済情報</UI>メニューから「海外カード登録」のplaceholderをロカール言語に合わせて表示するよう修正
+
+#### レポート
+
+<p><Status>Fixed</Status>日間アプリケーション ユーザー定義レポートの<b>訪問者</b>項目削除</p>
+
+* * *
+
+### `Application`
+
+#### GO、PHP
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>>メモリ詳細ウィンドウで次の内容を修正します。
+
+    -   **Heapサイズ**→**_システムメモリ_**、**Heap使用量**→**_プロセスメモリ_**にメッセージ変更
+
+    -   システムGCボタンを除去
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>>メモリ詳細ウィンドウで次の内容を修正します。
+
+    -   名前のカラムサイズが小さくなると、三点リーダーと一緒にマウスオーバー時に、ツールチップが有効になるよう修正
+
+    -   <UI>詳細</UI>ボタンのツールチップがボタンクリック後も消えないバグを修正
+
+-   <Status>Fixed</Status><UI>アプリケーションダッシュボード</UI>><UI>ヒートマップ</UI>ウィジェットドラッグ><UI>ヒートマップトランザクション</UI>>TXトレース項目選択><UI>統計</UI>ウィンドウで<UI>トランザクションログ</UI>タブのトランザクションログが未設定の場合:
+
+    -   言語設定が日本語の状態:出力される案内メッセージの改行バグを修正
+
+    -   言語設定が韓国語の状態:出力される案内メッセージのスタイルが正しく適用されるように修正
+
+    -   出力される案内メッセージのリンクをクリックすると、設定された言語に応じたDocsページに移動するよう修正
+
+#### 分析
+
+-   <Status>Fixed</Status>MSA分析メニューでデータを照会した際、結果がなければ「データなし」の案内メッセージが出るように修正
+
+* * *
+
+### `Browser`
+
+<p><Status>Change</Status> <UI>管理</UI>><UI>エージェントのインストール</UI>メニューからブラウザ エージェントスクリプトの 'config' オプションで 'proxyBaseUrl'を追加</p>
+
+</div>
+
+## Service 1.104.16
+
+2023年7月18日
+
+<div class='indentTab'>
+
+### `Application`
+
+#### 分析
+
+<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューで<UI>MTID/CUSTID照会</UI>入力欄に入力サイズ制限ロジックを削除</p>
+
+</div>
+
+## Service 1.104.15
+
+2023年7月17日
+
+<div class='indentTab'>
+
+### `Application`
+
+#### 分析
+
+<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューで<UI>MTID/CUSTID照会</UI>入力欄に数字以外の文字が入力されないバグを修正</p>
+
+</div>
+
+## Service 1.104.14
+
+2023年7月13日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>言語設定が日本の場合、サイドバーの<UI>グループ作成</UI>, <UI>プロジェクトの作成</UI>ボタンのテキストを英語で出力されるように修正</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>メニューで次のように修正します。</p>
+
+-   **_アプリケーションエージェントの設定_** > **_Docker PHP_**
+
+    -   **_1. アクセスキーの確認_**セクションでアクセスキーのコピー領域の上段の小題目を削除
+
+    -   **_4. Kubernetes環境変数およびボリューム_**セクションの小題目のメッセージを削除
+
+-   **_アプリケーションエージェントの設定_**>すべてのインストールタイプ: **_1. アクセスキー確認_**セクションのメッセージの統一および**チャットでのお問い合わせ**テキストの左にアイコンを追加
+
+-   **_インストールの案内_**セクションで**_チャットでのお問い合わせ_**ボタンのアイコンをチャットトークのアイコンと統一
+
+-   **\*クバネティスエージェントの設定**>**_KUBERNETES_**>**_3. クバネティスエージェントの作成_**セクションでOOM発生問題に関する案内メッセージを追加
+
+</div>
+
+## Service 1.104.13
+
+2023年7月12日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### Flexボード
+
+-   <Status>Fixed</Status>ダッシュボードコピーボタンをクリックすると、メニューが表示されない現象の修正
+
+-   <Status>Fixed</Status>ダッシュボードコピーウィンドウに漏れ落ちた多国語（英語）の修正
+
+-   <Status>Change</Status>ダッシュボード<UI>ほかの人にコピー</UI>機能を使うと、ダッシュボードタイトルに**copied_** prefixを追加
+
+</div>
+
+## Service 1.104.12
+
+2023年7月11日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>グループ作成機能が正常動作しているにもかかわらず、エラーメッセージが出力される現象の修正</p>
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで<LinkImage img='ico-compare.svg' desc='비교하기 아이콘'/>(<UI>比較する</UI>)オプションをクリックすると、表示されるカラムヘッダーのテキストが途切れる現象を文字列に修正
+
+    -   韓国語:　比較する→比較
+    -   日本語:　ステータス → 状態
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで上段のオプションボタンが同時に活性化されないように修正
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>><UI>アプリケーションエージェントの設定</UI>メニューで<UI>Docker PHP</UI>タブ<UI>モニタリングを開始する</UI>項目のイメージが多国語の設定に従わず、韓国語のダッシュボードイメージを出力する現象を修正</p>
+
+* * *
+
+### `実験室`
+
+<p><Status>New</Status><UI>実験室</UI>メニューで<UI>統合ログファインダー</UI>追加</p>
+
+</div>
+
+## Service 1.104.11
+
+2023年7月7日
+
+<div class='indentTab'>
+
+### `Server`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューで<UI>アラートルールテスト</UI>チャートでマウスホバーすると、同時に複数のチャートのデータが表示されるように修正</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status><UI>アプリケーションエージェントのインストール</UI>メニューで<b>Docker PHP</b>項目を追加</p>
+
+</div>
+
+## Service 1.104.10
+
+2023年7月6日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボードお気に入り機能を使うと、サイドバーがメニューに追加されない現象の修正</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Change</Status><UI>統計</UI>,<UI>ヒートマップ</UI>メニューで検索機能(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)を使うと時間セレクタの<UI>最近検索時間</UI>一覧に最近の検索時間を追加するように変更</p>
+
+</div>
+
+## Service 1.104.09
+
+2023年7月6日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status>グループに属したプロジェクトメニューで更新すると、ローディングが無限に続く現象の修正</p>
+
+</div>
+
+## Service 1.104.08
+
+2023年7月5日
+
+<div class='indentTab'>
+
+<p><Status>Change</Status>パスワード有効性チェックのロジックを変更</p>
+
+-   最低９桁のアルファベットの小文字および大文字、数字、特殊記号で３種以上の組み合わせ
+
+-   Eメールと同じパスワードの使用不可
+
+-   既存に使用したパスワードと同一のパスワード使用不可
+
+-   連続するキーボード配列に含まれたパスワード使用不可
+
+-   連続するアルファベットを含むパスワード使用不可
+
+-   連続する数字を含むパスワード使用不可
+
+-   現在使用しているパスワードと同一のパスワード使用不可
+
+</div>
+
+## Service 1.104.07
+
+2023年7月5日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status>次のメニューのパスで<UI>Key</UI>検索ボックスに一文字だけ入力すると検索ボックス外にフォーカスが外れる現象の修正</p>
+
+-   <UI>アプリケーション</UI>><UI>インスタンスパフォーマンス分析</UI>><UI>エージェント設定</UI>(旧バージョン)
+
+-   <UI>管理</UI>><UI>エージェント設定</UI>><UI>旧バージョン</UI>><UI>エージェント設定</UI>(旧バージョン)
+
+</div>
+
+## Service 1.104.06
+
+2023年7月5日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> <UI>Flexボード</UI>メニューでリアルタイムで照会すると、最初の呼び出しを除くアップデートAPIリクエストに関して60秒のタイムアウトの設定</p>
+
+</div>
+
+## Service 1.104.05
+
+2023年7月4日
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューで照会ボタンをクリックすると、データが出力されずローディングのみ表示されるバグの修正</p>
+
+</div>
+
+## Service 1.104.04
+
+2023年7月4日
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューでデータが出力されず、ローディングのみ繰り返される現象の修正</p>
+
+</div>
+
+## Service 1.104.03
+
+2023年7月3日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>プロジェクトを生成した後、自動で更新されない現象の修正</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status>Pythonプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>エージェントのダウンロード</UI>セクションのダウンロードコマンドの修正
+
+-   <Status>Fixed</Status>Javaプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>JVMオプション追加</UI>セクションのJVMオプションコードの修正
+
+-   <Status>Fixed</Status>Node.jsプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューでNode.jsサポートバージョンのメッセージを修正
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューで比較するサーバーを選択すると<UI>期間照会</UI>ボタンがアクティブ化されないバグの修正
+
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント履歴</UI>メニューで<UI>処理内容</UI>追加するとイベントIDがDBに保存されないバグの修正
+
+</div>
+
+## Service 1.104.02
+
+2023년6月29日
+
+<div class='indentTab'>
+
+-   <Status>Fixed</Status>プロジェクト内で組織が変更されないバグの修正
+
+-   <Status>Fixed</Status><UI>組織管理</UI>メニューで<UI>ガイド文書表示</UI>ボタンをクリックすると、ユーザーが選択した言語のガイド文書へ移動するように修正
+
+-   <Status>Fixed</Status><UI>Flexボード</UI>メニューでのダッシュボードで、テーブルウィジェットの場合、boolean値を確認できるように修正
+
+</div>
+
+## Service 1.104.01
+
+2023년6月29日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>無料プロジェクトを10件超過生成すると、表示されるエラーメッセージの修正
+
+-   <Status>Fixed</Status>時間選択UIでカレンダーで選択した時間が<UI>最近検索時間</UI>一覧で保存されないバグの修正
+
+* * *
+
+### `Server`
+
+#### アラート通知
+
+-   <Status>Fixed</Status><UI>イベント設定</UI>メニューで非活性化されたサーバーのアラート設定の有無が表示されないバグの修正
+
+-   <Status>Fixed</Status><UI>イベント設定</UI>メニューで<UI>ログファイル/ウィンドウイベント</UI>のイベントを現在のプロジェクトにコピーすると、正常処理されたのにもかかわらず、エラーメッセージが表示されるバグの修正
+
+* * *
+
+### `Database`
+
+#### PostgreSQL V2
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI>><UI>SQL統計</UI>メニューで<UI>結果内の検索</UI>機能が動作しない問題の修正
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下のテーブルの配置が初期化される現象の修正
+
+-   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューで画面下のテーブルのスクロールを最下段まで移動しないと、左右のスクロールバーが見えない現象の修正
+
+-   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>インスタンスモニタリング</UI>、<UI>マルチインスタンスモニタリング</UI>メニューで<UI>セッション詳細</UI>ウインドウの<UI>Session Info</UI>データが位置する要素の幅よりテキストが長くなる場合に備えてCSSを修正
+
+</div>
+
+## Service 1.104.00
+
+2023年6月28日
+
+<div class='indentTab'>
+
+### `AWS Log`
+
+<p><Status>New</Status><b>AWS Log</b>モニタリングサービスをオープンします。 たくさんのご利用をお待ちしております！ 商品の詳細については、<a href='../../aws-log/introduction'>次のドキュメント</a>を参考にしてください。</p>
+
+* * *
+
+### `共通`
+
+-   <Status>Fixed</Status>日本語画面で一部間違った翻訳を修正
+
+-   <Status>Deprecate</Status>多国語サービスの内、中国語サポートの中断
+
+#### サイドバー
+
+-   <Status>Feature</Status>サイドバーでプロジェクト名にプロジェクト全体の名前を表示するツールチップを追加
+
+-   <Status>Change</Status>サイドバーで<code>AWS Log</code>プロジェクトアイコン変更
+
+#### ダッシュボード
+
+-   <Status>Change</Status>シリーズチャートデザイン修正
+
+    | 修正前                                             | 修正後                                           |
+    | ----------------------------------------------- | --------------------------------------------- |
+    | ![before](/img/release/series-chart-before.png) | ![after](/img/release/series-chart-after.png) |
+
+-   <Status>Change</Status>ヒートマップボタンデザインを修正
+
+    | 修正前                                              | 修正後                                            |
+    | ------------------------------------------------ | ---------------------------------------------- |
+    | ![before](/img/release/hitmap-button-before.png) | ![after](/img/release/hitmap-button-after.png) |
+
+#### Flexボード
+
+<p><Status>Change</Status> <b>プロジェクトフレックスボード編集</b>権限に応じてダッシュボードの修正を制限するようUIを修正</p>
+
+#### レポート
+
+-   <Status>Feature</Status><UI>統合レポート</UI>メニューで日間タイプレポートの時間選択の制限を修正
+
+    -   **既存**：終了時間を前日23時59分まで選択可能
+
+    -   **変更**：終了時間を現在の時間基準、1時間前(現在の時間 - 1時間)まで選択可能
+
+-   <Status>Fixed</Status><UI>統合レポート</UI>><UI>日間レポート</UI>メニューで<UI>終了時間</UI>を本日と選択する時、選択した時間が自動矯正されるロジックの削除
+
+#### アラート通知
+
+-   <Status>Feature</Status><UI>イベント受信設定</UI>><UI>ユーザー別アラート受信設定</UI>メニューで<b>WhatsApp</b>アラート設定の追加
+
+-   <Status>Fixed</Status><UI>イベント受信設定</UI>メニューでEメール, SMS, WhatsApp, モバイルアラートカラムの最小幅の設定
+
+-   <Status>Fixed</Status><UI>イベント受信設定</UI>メニューで各ユーザーの受信設定に関する詳細内容を確認する時(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/>ボタン選択する時)設定内容が垂直に上(Top)に配置されるスタイルに修正
+
+#### 管理
+
+-   <Status>Feature</Status> <b>プロジェクトフレックスボード編集</b>権限を追加
+
+-   <Status>Fixed</Status><UI>エージェント設定</UI>メニューから多重適用api修正
+
+-   <Status>Feature</Status> <UI>組織作成</UI>及び<UI>組織管理</UI>メニューでロゴ画像の案内文を追加(画像の推奨サイズ、ファイル容量、拡張子に関する案内)
+
+-   <Status>Feature</Status> <UI>メンバー一覧</UI>メニューでメンバーの削除及び権限修正ボタンの位置をメンバー名カラムに移動
+
+-   <Status>Change</Status><UI>アカウント情報管理</UI>メニューでユーザーパスワード設定規則を９桁に変更
+
+-   <Status>Feature</Status><UI>アカウント情報管理</UI>><UI>ユーザー電話番号</UI>,<UI>アラート受信設定</UI>メニューで<b>WhatsApp</b>アラート設定の追加
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status>最近の30秒以内のトランザクションログデータが照会されない現象の修正
+
+-   <Status>Fixed</Status>サービス画面の言語が英語に設定された状態で、Pythonプロジェクトの<UI>管理</UI> > <UI>エージェントインストール</UI> > <UI>Virtual Environment活性化</UI>セクションで誤字を修正
+
+* * *
+
+### `Server`
+
+#### アラート通知
+
+-   <Status>Feature</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>(旧：<b>通知ポリシーコピー</b>) 機能に<UI>現在のプロジェクトにコピー</UI>できるオプションを追加
+
+-   <Status>Change</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>機能を次のように変更
+
+    -   **既存**：コピーしたイベントのタイトルを同じように使用してコピー対象プロジェクトにイベントを重複コピーすると、最後にコピーしたイベントに上書きされます。
+
+    -   **変更**
+
+        -   イベントのタイトルとして`{コピーしたイベント名}(copy)`を使用
+        -   コピー対象プロジェクトにイベントを重複コピーすると、コピーした回数だけイベントを作成
+
+* * *
+
+### `Database`
+
+#### PostgreSQL
+
+-   <Status>New</Status> <b>PostgreSQL V2</b>モニタリングサービスをオープンしました。 従来に比べて変更された機能を確認するには<a href='../../postgresql/monitoring-intro#new-feature'>次の文書</a>を参考にしてください。
+
+-   <Status>Change</Status> <b>PostgreSQL V2</b>製品のメニューのうち以下の3つを<UI>サイトマップ</UI>を通じて接近するように変更
+
+    -   **_分析_** > **_ログファイルビューア_**
+
+    -   **_警告通知_** > **_ファイルログ通知_**
+
+    -   **_管理_** > **_クラウドモニタリング_**
+
+* * *
+
+### `Container`
+
+#### ダッシュボード
+
+-   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューのコンテナ要約表示パネルで<UI>ログ</UI> > <UI>ログ検索</UI>タブにログ照会権限と状態によってメッセージを異なるように表示
+
+-   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューのコンテナ要約表示パネルで<UI>イベント</UI>タブにイベント数を表示する<UI>イベント数推移</UI>チャートを追加
+
+-   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューに<UI>不一致</UI>フィルターオプションを追加
+
+#### リソース
+
+-   <Status>Fixed</Status> <UI>ノード詳細</UI>メニューで下段コンテナ領域のコンテナ構成情報のカラム順序を変更
+
+-   <Status>Change</Status> <UI>コンテナボリューム</UI>メニューで<img src='/img/ico-search.svg' alt='검색 아이콘'/>ボタンを選択すると一覧が出力されるという案内メッセージを追加
+
+-   <Status>Feature</Status> <UI>パフォーマンス要約</UI>メニューにコンテナ数、パッド数の推移チャートを追加
+
+<!---->
+
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題の修正
+
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでインストールされたエージェントがない場合、ローディングアニメーションでなく、インストールされたエージェントがないという案内メッセージが表示されるように修正
+
+#### 管理
+
+-   <Status>Fixed</Status> <UI>エージェントインストール</UI>メニューで案内メッセージを修正
+
+-   <Status>Fixed</Status>サービス画面の言語が日本語に設定された状態で<UI>エージェントインストール</UI> メニューの日本語メッセージを修正
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> <UI>ログ</UI>下位メニューで<img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>テーブル設定</UI> > <UI>カラム設定</UI>に <UI>カラム追加</UI>項目として<UI>timestamp</UI>を追加
+
+-   <Status>Change</Status>パーサーシミュレーション失敗時に表示されるメッセージを変更
+
+-   <Status>Feature</Status> <UI>ログ検索エンジン</UI>メニューで選択したログと隣接する時間帯のログを照会できる機能の追加
+
+-   <Status>Feature</Status> <UI>ログ検索機</UI>、<UI>ログトレンド</UI>、<UI>トランザクションログ</UI>メニューでキーワードのハイライト機能を追加
+
+-   <Status>Fixed</Status> <UI>ログ設定</UI> > <UI>ログ長期保管統計</UI>メニューでログ検出条件を追加すると<UI>ログ検出条件</UI>検索キーを入力しないと出力される案内メッセージを修正
+
+* * *
+
+### `Browser`
+
+#### レポート
+
+<p><Status>Feature</Status><UI>レポート</UI>><UI>日間WEBブラウサレポート</UI>メニューの追加</p>
+
+#### ダッシュボード
+
+<p><Status>Feature</Status><UI>WEBブラウサエラー</UI>メニューでエラーに関する詳細画面の追加</p>
+
+#### 分析
+
+-   <Status>Feature</Status><UI>ページロードヒートマップ</UI>メニューでページロード詳細データにOSバージョン、クライアントIP情報追加
+
+-   <Status>Change</Status><UI>ページロードヒートマップ</UI>メニューで<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
+
+-   <Status>Change</Status><UI>エラー追跡</UI>メニューでエラースタック照会UIの変更
+
+* * *
+
+### `実験室`
+
+<p><Status>Feature</Status> <code>Container</code>, <code>Java</code>製品に<UI>サイトマップ</UI>  > <UI>実験室</UI> > <UI>Remote Access Status</UI>メニューを追加</p>
+
+</div>

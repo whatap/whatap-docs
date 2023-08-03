@@ -18,8 +18,8 @@
 
 :::note
 
--   Application Nameを設定していない場合は、イベントのタイトルから除外されます。
--   Platformは次のいずれかで表示します。
+-   Application Nameが設定されていない場合は、イベントタイトルから除外します。
+-   Platformは、次のいずれかで表示します。
     -   JAVA
     -   NODEJS 
     -   PYTHON
@@ -49,7 +49,7 @@
 
 ### イベントメッセージ
 
-イベントメッセージに含まれる情報です。 `optional`が`false`の場合は、常にメッセージに含まれます。 `optional`が`true`の場合、そのデータを確認できれば表示します。
+イベントメッセージに含まれる情報です。 `optional`が`false`の場合は、常時メッセージに含まれます。`optional`が`true`の場合、そのデータを表示します。
 
 ```log title='Event message example'
 Project Name : アプリケーションプロジェクト
@@ -65,45 +65,45 @@ Metric Threshold : 10
 Stateful : true
 ```
 
-以下は、イベントメッセージのコンポーネントです。
+次は、イベントメッセージのコンポーネントです。
 
-| En                                                | Ko              | サポートされている通知タイプ   | 説明                                           |
-| ------------------------------------------------- | --------------- | ---------------- | -------------------------------------------- |
-| Project Name                                      | プロジェクト名         | 合計               | -                                            |
-| Project Code                                      | プロジェクトCode      | 合計               | -                                            |
-| Application Name                                  | アプリケーション名       | 全体（optional）     | oname                                        |
-| Event Message                                     | イベントメッセージ       | 合計               | -                                            |
-| Alert Type                                        | イベントタイプ         | 合計               | 下記のAlertTypeの種類表を参考                          |
-| Event ON Time                                     | イベント発生時間        | 合計               | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。   |
-| Event OFF Time                                    | イベント解除時間        | 全体（optional）     | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。   |
-| Metric Name                                       | メトリクス名          | 全体（optional）     | イベント条件判断で使用するメトリクスの名前。                       |
-| Metric Value                                      | メトリック値          | 全体（optional）     | メトリック値がメトリックしきい値を超えると、イベント発生条件が満たされている場合です。  |
-| Metric Threshold                                  | メトリックしきい値       | 全体（optional）     | メトリック値がメトリックしきい値を超えると、イベント発生条件が満たされている場合です。  |
-| 状態ベースのアラート通知                                      | 解決されたイベント通知     | 全体（optional）     | 解決されたイベント通知機能を使用している場合はtrue、使用していない場合はfalse  |
-| Event Rule                                        | イベント発生条件        | メトリックスアラート       | -                                            |
-| Event Target Filter                               | イベント対象選択        | メトリックスアラート       | 特定の対象から収集されたメトリクスに対してイベント条件を確認します。           |
-| Repeat Count                                      | イベントの反復回数       | メトリックスアラート       | イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。 |
-| Repeat Duration                                   | イベント反復時間        | メトリックスアラート       | イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。 |
-| Receiver                                          | 受信者             | メトリックスアラート       | -                                            |
-| Query                                             | MXQLクエリ         | 複合メトリックの通知       | -                                            |
-| Rule                                              | イベント発生条件        | 複合メトリックの通知       | -                                            |
-| Query Period                                      | クエリ期間           | 複合メトリックの通知       | -                                            |
-| Query Interval                                    | クエリ間隔           | 複合メトリックの通知       | -                                            |
-| Silent Time                                       | 無音時間            | 複合メトリックの通知       | -                                            |
-| Query                                             | URL             | Exception通知      | Exceptionを発生させたリクエストのURL                     |
-| TXID                                              | TXID            | Exception通知      | -                                            |
-| Class                                             | エラークラス名         | Exception通知      | -                                            |
-| Log Message                                       | ログメッセージ         | サーバー - ファイルログの通知 | -                                            |
-| Log File                                          | ログファイルのパス       | サーバー - ファイルログの通知 | -                                            |
-| IPアドレス                                            | IPアドレス          | サーバー通知の全体        | -                                            |
-| CPU                                               | CPU             | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| CPU_load1                                         | CPU_load1       | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| CPU_loadPerCore                                   | CPU_loadPerCore | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| メモリ                                               | メモリ             | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| Swap                                              | Swap            | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| Disk Name | Used Percent | Free Size | IO Percent | ディスクパフォーマンス     | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| Name | Bps | Pps                                  | トラフィックパフォーマンス   | サーバー通知の全体        | イベント発生当時のSnapshot                            |
-| Message | Time | Name                             | 処理履歴のメッセージ      | サーバー通知の全体        | -                                            |
+| En                                                | Ko              | サポートされている通知タイプ   | 説明                                                    |
+| ------------------------------------------------- | --------------- | ---------------- | ----------------------------------------------------- |
+| Project Name                                      | プロジェクト名         | 合計               | -                                                     |
+| Project Code                                      | プロジェクトCode      | 合計               | -                                                     |
+| Application Name                                  | アプリケーション名       | 全体(optional)     | oname                                                 |
+| Event Message                                     | イベントメッセージ       | 合計               | -                                                     |
+| Alert Type                                        | イベントタイプ         | 合計               | 下記のAlertTypeの種類の表を参照                                  |
+| Event ON Time                                     | イベント発生時間        | 合計               | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。            |
+| Event OFF Time                                    | イベント解除時間        | 全体(optional)     | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。            |
+| Metric Name                                       | メトリクス名          | 全体(optional)     | イベント条件の判断で使用するメトリクスの名前                                |
+| Metric Value                                      | メトリック値          | 全体(optional)     | メトリック値がメトリックしきい値を超えると、イベントが発生する条件が満たされている場合です。        |
+| Metric Threshold                                  | メトリックしきい値       | 全体(optional)     | メトリック値がメトリックしきい値を超えると、イベントが発生する条件が満たされている場合です。        |
+| 状態ベースのアラート通知                                      | 解決されたイベント通知     | 全体(optional)     | 解決されたイベント通知機能を使用している場合はtrue、使用していない場合はfalse           |
+| Event Rule                                        | イベント発生条件        | メトリックスアラート       | -                                                     |
+| Event Target Filter                               | イベント対象選択        | メトリックスアラート       | 特定の対象から収集されたメトリクスのイベント条件のみを確認します。                     |
+| Repeat Count                                      | イベントの繰り返し回数     | メトリックスアラート       | イベント条件がイベント繰り返し時間によってイベントの繰り返し回数を満たされたん場合、イベントが発生します。 |
+| Repeat Duration                                   | イベント繰り返し時間      | メトリックスアラート       | イベント条件がイベント繰り返し時間によってイベントの繰り返し回数を満たされたん場合、イベントが発生します。 |
+| Receiver                                          | 受信者             | メトリックスアラート       | -                                                     |
+| Query                                             | MXQLクエリ         | 複合メトリックの通知       | -                                                     |
+| Rule                                              | イベント発生条件        | 複合メトリックの通知       | -                                                     |
+| Query Period                                      | クエリ期間           | 複合メトリックの通知       | -                                                     |
+| Query Interval                                    | クエリ間隔           | 複合メトリックの通知       | -                                                     |
+| Silent Time                                       | ミュート時間          | 複合メトリックの通知       | -                                                     |
+| Query                                             | URL             | Exception通知      | Exceptionを発生させたリクエストのURL                              |
+| TXID                                              | TXID            | Exception通知      | -                                                     |
+| Class                                             | エラークラス名         | Exception通知      | -                                                     |
+| Log Message                                       | ログメッセージ         | サーバー - ファイルログの通知 | -                                                     |
+| Log File                                          | ログファイルのパス       | サーバー - ファイルログの通知 | -                                                     |
+| IPアドレス                                            | IPアドレス          | サーバー通知の全体        | -                                                     |
+| CPU                                               | CPU             | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| CPU_load1                                         | CPU_load1       | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| CPU_loadPerCore                                   | CPU_loadPerCore | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| メモリ                                               | メモリ             | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| Swap                                              | Swap            | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| Disk Name | Used Percent | Free Size | IO Percent | ディスクパフォーマンス     | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| Name | Bps | Pps                                  | トラフィックパフォーマンス   | サーバー通知の全体        | イベント発生当時のSnapshot                                     |
+| Message | Time | Name                             | 処理履歴のメッセージ      | サーバー通知の全体        | -                                                     |
 
 :::note
 
@@ -121,7 +121,7 @@ Stateful : true
 | APPLICATION_SLOW_TRANSACTION   | アプリケーションのトランザクション応答時間の通知 |
 | METRICS                        | メトリックスアラート               |
 | COMPOSITE_METRICS              | 複合メトリックの通知               |
-| ANOMALY                        | 異常検知通知                   |
+| ANOMALY                        | 異常検知アラート                 |
 | LOG_REALTIME                   | ログリアルタイムの通知              |
 | COMPOSITE_LOG                  | 複合ログの通知                  |
 | SERVER_REBOOT                  | サーバー - 再起動通知             |

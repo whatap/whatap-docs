@@ -8,18 +8,57 @@ tags:
   - Event
 ---
 
-Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > **_Event_**
+Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > Select **_Event_** tab
 
-The events provided in WhaTap Kubernetes Monitoring are as follows:
+It provides records for all events that occur during the resource lifecycle. The events provided in WhaTap Kubernetes Monitoring are as follows.
 
--   Kubernetes event (**_kubernetes_**)
+-   Kubernetes Event (**_Kubernetes_**)
 -   WhaTap event (**_WhaTap_**)
 
-## Kubernetes
+## Basic screen guide
 
-Kubernetes events are provided by Kubernetes itself. In the Kubernetes environment, you can use the `kubectl get events` command to get the event data of the Kubernetes cluster.
+![Kubernetes Display Detail Event tab](/img/k8s-event-default2.png)
+
+-   By selecting a ![number 1](/img/number-01.png) Kubernetes event or WhaTap event, you can see the event details. 
+
+    -   Selecting all or multiple blocks
+
+        You can search **_All Kubernetes events_** or **_All WhatTap events_** when all or multiple blocks are selected from **_Container Map_** and the card on the left.
+
+    -   Selecting clustering or individual block
+
+        When selecting **_Step 2_** grouping or individual block at the top of **_Container Map_**, you can view the event. For more information about **grouping** (clustering), see [the following](container-group).
+
+        :::note
+
+        Before entering the **Display Detail** screen, depending on the view or grouping selected at the top of **_Container Map_**, the events that can be viewed may differ.
+
+        :::
+
+-   Through the ![number 2](/img/number-02.png) time selector, you can set the time zone to view. The default value is **_1 day_**.
+
+-   Through the ![number 3](/img/number-03.png) bar chart, you can see the **_Trend of number of events_** in the selected time zone.
+
+-   Through the ![number 4](/img/number-04.png) event list, you can see the event records. 
+
+    -   **_Kubernetes_** events
+
+        -   You can see the data by selecting a desired event type: <span class='k8s-normal'>Normal</span> or <span class='slow'>Warning</span>. These event types are identical to the event types provided by Kubernetes.
+
+        -   The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>.
+
+    -   **_WhaTap_** events
+
+        -   Select a desired event level to search among <span class='vslow'>Critical</span>, <span class='k8s-normal'>Info</span>, and <span class='slow'>Warning</span>.
+
+        -   The bars on the left of each event indicate the event levels. Gray indicates <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>.
+
+## Kubernetes event
+
+**_Kubernetes_** events are provided by Kubernetes itself. In the Kubernetes environment, you can use the `kubectl get events` command to get the event data of the Kubernetes cluster.
 
 ```bash
+
 $ kubectl get events -A
  NAMESPACE   LAST SEEN   TYPE      REASON                   OBJECT                            MESSAGE
  community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5`
@@ -40,6 +79,7 @@ $ kubectl get events -A
  community   7m10s       Normal    Started                  pod/suraksan-66fc4bf889-mjbsj     Started container suraksan
  community   2m10s       Warning   BackOff                  pod/suraksan-66fc4bf889-mjbsj     Back-off restarting failed container
  community   5m18s       Warning   FailedToUpdateEndpoint   endpoints/baekdusan-svc           Failed to update endpoint community/baekdusan-svc: Operation cannot be fulfilled on endpoints "baekdusan-svc": the object has been modified; please apply your changes to the latest version and try again
+
 ```
 
 However, the event data is not stored continuously. The events that occurred after a specified time are no longer available. 
@@ -48,25 +88,35 @@ WhaTap Kubernetes collects and stores all Kubernetes events that occurred in the
 
 ![Kubernetes event](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_k8s.png)
 
-The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>. These event types are identical to the event types provided by Kubernetes.
+The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>. The Kubernetes events provided by user selection are as follows.
 
-Available Kubernetes events according to the selected target are as follows:
+| Selected target      | Provided event                                                                  | Provision-related event                                                                              |
+| -------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| All                  | >                                                                               | All project events                                                                                   |
+| Namespace            | >                                                                               | All events under the namespace                                                                       |
+| Node                 | >                                                                               | Node events or all pod (container) events in the node                                                |
+| Deployment           | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
+| ReplicaSet           | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
+| Pod (container)      | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
 
-| Selected target | Provided event                                                                  | Provision-related event                                                                              |
-| --------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| All             | >                                                                               | All project events                                                                                   |
-| Namespace       | >                                                                               | All events under the namespace                                                                       |
-| Node            | >                                                                               | Node events or all pod (container) events in the node                                                |
-| Deployment      | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
-| ReplicaSet      | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
-| Pod (container) | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
+Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `name`, `reason` and `type`.
 
-Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `name`, and `reason`.
+## WhaTap event
 
-## WhaTap
-
-In the container map, you can check a list of events based on the WhaTap alert settings.
+**_WhaTap_** events occur depending on the event conditions registered by the event configuration. Under the **_Event_** tab on the detailed view screen of **_Container Map_**, you can see the list of events based on the WhaTap alert settings. 
 
 ![WhaTap event](https://img.whatap.io/media/images/whatap_kubernetes_container_map_event_whatap.png)
 
-The bars on the left of each event indicate the event levels. Gray indicates <span class='k8s-normal'>Normal</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>.
+The bars on the left of each event indicate the event levels. Gray means <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>. Available WhaTap events according to the selected target are as follows.
+
+| Selected target  | Provided event                                              |
+| ---------------- | ----------------------------------------------------------- |
+| All              | All project events                                          |
+| Namespace        | All events under the namespace                              |
+| Node             | `onodeName` is identical to the user node name              |
+| Deployment       | `deployment` is identical to the Deployment name            |
+| ReplicaSet       | `replicaSetName` is identical to the user ReplicaSet name   |
+| Pod              | `podName` is identical to the user pod name                 |
+| Container        | `containerId` is identical to the user Container ID         |
+
+WhaTap events consist of the items such as `message`, `status`, `title`, and `level`.

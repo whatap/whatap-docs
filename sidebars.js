@@ -78,7 +78,7 @@ const sidebars = {
             'java/agent-network',
             'java/agent-performance',
             'java/agent-log',
-            'java/agent-gc-log',
+            // 'java/agent-gc-log',
             'java/agent-transaction',
             'java/agent-dbsql',
             'java/agent-httpcapicall',
@@ -218,6 +218,7 @@ const sidebars = {
               items: [
                 'java/cube',
                 'java/analysis-apm',
+                'java/performance-trend',
                 'java/analysis-apm-trs',
                 {
                   type: 'category',
@@ -247,6 +248,7 @@ const sidebars = {
               items: [
                 'java/warning-notice',
                 'java/metric-warning-notice',
+                'java/set-notification-message',
                 'java/hitmap-notice',
                 'java/set-event-detect-anomal',
                 'java/set-event-log',
@@ -450,6 +452,7 @@ const sidebars = {
               },
               items: [
                 'php/cube',
+                'php/performance-trend',
                 'php/analysis-apm-trs',
                 // 'php/analysis-apm',
                 {
@@ -480,6 +483,7 @@ const sidebars = {
               items: [
                 'php/warning-notice',
                 'php/metric-warning-notice',
+                'php/set-notification-message',
                 'php/hitmap-notice',
                 'php/set-event-detect-anomal',
                 'php/set-event-log',
@@ -667,6 +671,7 @@ const sidebars = {
               },
               items: [
                 'nodejs/cube',
+                'nodejs/performance-trend',
                 // 'nodejs/analysis-apm',
                 'nodejs/analysis-apm-trs',
                 {
@@ -697,6 +702,7 @@ const sidebars = {
               items: [
                 'nodejs/warning-notice',
                 'nodejs/metric-warning-notice',
+                'nodejs/set-notification-message',
                 'nodejs/hitmap-notice',
                 'nodejs/set-event-detect-anomal',
                 'nodejs/set-event-log',
@@ -885,6 +891,7 @@ const sidebars = {
               items: [
                 'python/cube',
                 'python/analysis-apm',
+                'python/performance-trend',
                 'python/analysis-apm-trs',
                 {
                   type: 'category',
@@ -914,6 +921,7 @@ const sidebars = {
               items: [
                 'python/warning-notice',
                 'python/metric-warning-notice',
+                'python/set-notification-message',
                 'python/hitmap-notice',
                 'python/set-event-detect-anomal',
                 'python/set-event-log',
@@ -973,6 +981,7 @@ const sidebars = {
             'dotnet/agent-number-of-user',
             'dotnet/agent-static',
             'dotnet/agent-topology',
+            'dotnet/agent-webservice'
           ]
         },
         {
@@ -1084,8 +1093,9 @@ const sidebars = {
               },
               items: [
                 'dotnet/cube',
+                'dotnet/analysis-apm',
+                'dotnet/performance-trend',
                 'dotnet/analysis-apm-trs',
-                // 'php/analysis-apm',
                 {
                   type: 'category',
                   label: '보고서',
@@ -1114,6 +1124,7 @@ const sidebars = {
               items: [
                 'dotnet/warning-notice',
                 'dotnet/metric-warning-notice',
+                'dotnet/set-notification-message',
                 'dotnet/hitmap-notice',
                 'dotnet/set-event-detect-anomal',
                 'dotnet/set-event-log',
@@ -1135,7 +1146,7 @@ const sidebars = {
   goSidebar: [
     {
       type: 'category',
-      label: 'Golang 모니터링',
+      label: 'Go 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1145,6 +1156,7 @@ const sidebars = {
       items: [
         'golang/supported-spec',
         'golang/install-agent',
+        'golang/api-guide',
         'golang/install-check',
         {
           type: 'category',
@@ -1157,11 +1169,16 @@ const sidebars = {
           },
           items: [
             'golang/agent-name',
+            'golang/agent-control-function',
+            'golang/agent-network',
+            'golang/agent-log',
             'golang/agent-transaction',
             'golang/agent-dbsql',
             'golang/agent-httpcall',
-            'golang/agent-method',
-            'golang/agent-number-of-user'
+            'golang/agent-number-of-user',
+            'golang/agent-apdex',
+            'golang/agent-static',
+            'golang/agent-library',
           ]
         },
         'golang/agent-manage',
@@ -1271,6 +1288,7 @@ const sidebars = {
               },
               items: [
                 'golang/cube',
+                'golang/performance-trend',
                 'golang/analysis-apm-trs',
                 // 'analysis/php-analysis-apm',
                 {
@@ -1301,6 +1319,7 @@ const sidebars = {
               items: [
                 'golang/warning-notice',
                 'golang/metric-warning-notice',
+                'golang/set-notification-message',
                 'golang/hitmap-notice',
                 'golang/set-event-detect-anomal',
                 'golang/set-event-log',
@@ -1456,6 +1475,7 @@ const sidebars = {
               items: [
                 'postgresql/warning-notice',
                 'postgresql/metric-warning-notice',
+                'postgresql/set-notification-message',
                 'postgresql/set-event-detect-anomal',
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
@@ -1610,6 +1630,7 @@ const sidebars = {
               items: [
                 'postgresql-v1/warning-notice',
                 'postgresql-v1/metric-warning-notice',
+                'postgresql-v1/set-notification-message',
                 'postgresql-v1/set-event-detect-anomal',
                 'postgresql-v1/set-receive-event',
                 'postgresql-v1/set-event-history',
@@ -1764,6 +1785,7 @@ const sidebars = {
               items: [
                 'oracle/warning-notice',
                 'oracle/metric-warning-notice',
+                'oracle/set-notification-message',
                 'oracle/set-event-detect-anomal',
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
@@ -1786,10 +1808,160 @@ const sidebars = {
       ],
     }
   ],
+  mysqlv1Sidebar: [
+    {
+      type: 'category',
+      label: 'MySQL 모니터링 V1',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mysql-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mysql-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql-v1/install-agent',
+            'mysql-v1/after-install-agent',
+            'mysql-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql-v1/agent-settings'
+          },
+          items: [
+            'mysql-v1/agent-dbx-settings',
+            'mysql-v1/agent-xos-settings',
+          ],
+        },
+        'mysql-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/dashboard-intro'
+              },
+              items: [
+                'mysql-v1/instance-list',
+                'mysql-v1/instance-monitoring',
+                'mysql-v1/multi-instance-monitoring',
+                'mysql-v1/slow-query',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/flex-board',
+              },
+              items: [
+                'mysql-v1/flexboard-template',
+                'mysql-v1/flexboard-create',
+                'mysql-v1/flexboard-manage',
+                'mysql-v1/flexboard-metric-widget',
+                'mysql-v1/flexboard-widget-manage',
+                'mysql-v1/flexboard-mode',
+                'mysql-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql-v1/analysis-count-trend',
+                'mysql-v1/analysis-databaseparameter',
+                'mysql-v1/analysis-lock-and-deadlock',
+                'mysql-v1/log-viewer',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/metrics-intro'
+              },
+              items: [
+                'mysql-v1/metrics-data-list',
+                'mysql-v1/metrics-chart',
+                'mysql-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql-v1/stat',
+                'mysql-v1/report-intro',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql-v1/set-notice',
+              },
+              items: [
+                'mysql-v1/warning-notice',
+                'mysql-v1/metric-warning-notice',
+                'mysql-v1/set-notification-message',
+                'mysql-v1/set-event-detect-anomal',
+                'mysql-v1/set-receive-event',
+                'mysql-v1/set-event-history',
+                'mysql-v1/set-event-format',
+                'mysql-v1/file-log-notice',
+              ],
+            },
+            {
+              type: 'link',
+              label: 'Open API',
+              href: '/apidoc/openapi-intro'
+            }
+          ]
+        }
+      ],
+    }
+  ],
   mysqlSidebar: [
     {
       type: 'category',
-      label: 'MySQL 모니터링',
+      label: 'MySQL 모니터링 V2',
       collapsible: false,
       collapsed: false,
       link: {
@@ -1876,8 +2048,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/analysis-count-trend',
-                'mysql/analysis-databaseparameter',
                 'mysql/analysis-lock-and-deadlock',
+                'mysql/analysis-databaseparameter',
                 'mysql/log-viewer',
               ]
             },
@@ -1918,12 +2090,18 @@ const sidebars = {
               items: [
                 'mysql/warning-notice',
                 'mysql/metric-warning-notice',
+                'mysql/set-notification-message',
                 'mysql/set-event-detect-anomal',
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
                 'mysql/set-event-format',
                 'mysql/file-log-notice',
               ],
+            },
+            {
+              type: 'doc',
+              label: 'Log 모니터링',
+              id: 'log/learn-main-menu'
             },
             {
               type: 'link',
@@ -2059,6 +2237,7 @@ const sidebars = {
               items: [
                 'mssql/warning-notice',
                 'mssql/metric-warning-notice',
+                'mssql/set-notification-message',
                 'mssql/set-event-detect-anomal',
                 'mssql/set-receive-event',
                 'mssql/set-event-history',
@@ -2198,6 +2377,7 @@ const sidebars = {
               items: [
                 'tibero/warning-notice',
                 'tibero/metric-warning-notice',
+                'tibero/set-notification-message',
                 'tibero/set-event-detect-anomal',
                 'tibero/set-receive-event',
                 'tibero/set-event-history',
@@ -2351,6 +2531,7 @@ const sidebars = {
               items: [
                 'cubrid/warning-notice',
                 'cubrid/metric-warning-notice',
+                'cubrid/set-notification-message',
                 'cubrid/set-event-detect-anomal',
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
@@ -2490,6 +2671,7 @@ const sidebars = {
               items: [
                 'altibase/warning-notice',
                 'altibase/metric-warning-notice',
+                'altibase/set-notification-message',
                 'altibase/set-event-detect-anomal',
                 'altibase/set-receive-event',
                 'altibase/set-event-history',
@@ -2630,6 +2812,7 @@ const sidebars = {
               },
               items: [
                 'redis/metric-warning-notice',
+                'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
                 'redis/set-event-history',
@@ -2768,6 +2951,7 @@ const sidebars = {
               items: [
                 'mongodb/warning-notice',
                 'mongodb/metric-warning-notice',
+                'mongodb/set-notification-message',
                 'mongodb/set-event-detect-anomal',
                 'mongodb/set-receive-event',
                 'mongodb/set-event-history',
@@ -2784,22 +2968,71 @@ const sidebars = {
       ],
     }
   ],
+  npmsidebar: [
+    {
+      type: 'category',
+      label: 'NPM 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'npm',
+      },
+      items: [
+        'npm/compatibility',
+        'npm/install-agent',
+        'npm/set-tagrule',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/network-topology',
+            'npm/network-trend-tcp'
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'npm/analysis-tcp-udp-sessions',
+          ],
+        },
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'npm/set-notice'
+          },
+          items: [
+            'npm/metric-warning-notice',
+            'npm/set-receive-event',
+            'npm/set-event-history',
+          ],
+        }
+      ],
+    }
+  ],
   previewSidebar: [
     {
       type: 'category',
       label: '릴리스 노트 - Preview',
       collapsible: false,
       collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'release-notes/preview/preview-1_103_x',
-      },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1_103_x', 
+          id: 'release-notes/preview/preview-1_107_x', 
           className: 'new',
         },
+        'release-notes/preview/preview-1_105_x',
+        'release-notes/preview/preview-1_103_x',
         'release-notes/preview/preview-1_101_x',
         'release-notes/preview/preview-1_99_x',
         'release-notes/preview/preview-1_97_x',
@@ -2831,14 +3064,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1_104_x',
+            id: 'release-notes/service/service-1_106_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1_104_x',
+              id: 'release-notes/service/service-1_106_x',
               className: 'new',
             },
+            'release-notes/service/service-1_104_x',
             'release-notes/service/service-1_102_x',
             'release-notes/service/service-1_100_x',
             'release-notes/service/service-1_98_x',
@@ -2847,8 +3081,6 @@ const sidebars = {
             'release-notes/service/service-1_92_0',
             'release-notes/service/service-1_90_0',
             'release-notes/service/service-1_88_0',
-            'release-notes/service/service-1_86_0',
-            'release-notes/service/service-1_84_0',
             'release-notes/service/service-previous',
           ]
         },
@@ -2866,14 +3098,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_10',
+                id: 'release-notes/java/java-2_2_12',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_10',
+                  id: 'release-notes/java/java-2_2_12',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_11',
+                'release-notes/java/java-2_2_10',
                 'release-notes/java/java-2_2_9',
                 'release-notes/java/java-2_2_8',
                 'release-notes/java/java-2_2_7',
@@ -2881,8 +3115,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_5',
                 'release-notes/java/java-2_2_4',
                 'release-notes/java/java-2_2_3',
-                'release-notes/java/java-2_2_2',
-                'release-notes/java/java-2_2_0',
                 'release-notes/java/java-previous',
               ],
             },
@@ -2914,7 +3146,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_77',
@@ -2923,7 +3155,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_77',
-                  className: 'new',
+                  // className: 'new',
                 },
               ]
             },
@@ -2935,23 +3167,23 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_3_9',
+                id: 'release-notes/python/python-1_4_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_3_9',
+                  id: 'release-notes/python/python-1_4_3',
                   className: 'new',
                 },
+                'release-notes/python/python-1_4_2',
+                'release-notes/python/python-1_4_1',
+                'release-notes/python/python-1_4_0',
+                'release-notes/python/python-1_3_9',
                 'release-notes/python/python-1_3_6',
                 'release-notes/python/python-1_3_4',
                 'release-notes/python/python-1_3_3',
                 'release-notes/python/python-1_3_2',
                 'release-notes/python/python-1_3_1',
-                'release-notes/python/python-1_3_0',
-                'release-notes/python/python-1_2_4',
-                'release-notes/python/python-1_2_1',
-                'release-notes/python/python-1_2_0',
                 'release-notes/python/python-previous',
               ],
             },
@@ -2960,17 +3192,20 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_0_9',
+                id: 'release-notes/dotnet/dotnet-2_1_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_0_9',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_1_2',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_1',
+                'release-notes/dotnet/dotnet-2_1_0',
+                'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-2_0_7',
                 'release-notes/dotnet/dotnet-2_0_6',
@@ -2978,21 +3213,15 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_0_4',
                 'release-notes/dotnet/dotnet-2_0_3',
                 'release-notes/dotnet/dotnet-2_0_2',
-                'release-notes/dotnet/dotnet-2_0_1',
-                'release-notes/dotnet/dotnet-2_0_0',
-                {
-                  type: 'link',
-                  label: '.NET Agent 지난 버전',
-                  href: 'https://deprecated-docs.whatap.io/kr/releasenotes/#net-agent-release-notes'
-                }
+                'release-notes/dotnet/dotnet-previous',
               ],
             },
             {
               type: 'category',
-              label: 'Golang',
+              label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_2_2',
@@ -3001,7 +3230,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_2_2',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_1_14',
                 'release-notes/golang/golang-0_1_13',
@@ -3023,14 +3252,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_3_8',
+                id: 'release-notes/server/server-2_4_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_3_8',
+                  id: 'release-notes/server/server-2_4_0',
                   className: 'new',
                 },
+                'release-notes/server/server-2_3_9',
+                'release-notes/server/server-2_3_8',
                 'release-notes/server/server-2_3_7',
                 'release-notes/server/server-2_3_6',
                 'release-notes/server/server-2_3_4',
@@ -3039,7 +3270,6 @@ const sidebars = {
                 'release-notes/server/server-2_3_1',
                 'release-notes/server/server-2_3_0',
                 'release-notes/server/server-2_2_9',
-                'release-notes/server/server-2_2_8',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3051,14 +3281,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_3_1',
+                id: 'release-notes/k8s/k8s-1_3_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_3_1',
+                  id: 'release-notes/k8s/k8s-1_3_2',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_3_1',
                 'release-notes/k8s/k8s-1_2_9',
                 'release-notes/k8s/k8s-1_2_8',
                 'release-notes/k8s/k8s-1_2_7',
@@ -3067,7 +3298,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_2_2',
                 'release-notes/k8s/k8s-1_2_1',
                 'release-notes/k8s/k8s-1_2_0',
-                'release-notes/k8s/k8s-1_1_55',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3270,7 +3500,7 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Golang',
+          label: 'Go',
           href: 'golang/introduction',
         },
         {
@@ -4582,7 +4812,21 @@ const sidebars = {
           items: [
             'browser/analyze-pageload',
             'browser/tracking-error',
-            'browser/metrics-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'browser/metrics-intro',
+          },
+          items: [
+            'browser/metrics-browser',
+            'browser/metrics-chart',
+            'browser/metrics-search',
           ],
         },
         'browser/report-intro',
@@ -4593,7 +4837,7 @@ const sidebars = {
           collapsed: true,
           link: {
             type: 'doc',
-            id: 'browser/set-notics',
+            id: 'browser/set-notice',
           },
           items: [
             'browser/metric-warning-notice',
@@ -4801,6 +5045,7 @@ const sidebars = {
               items: [
                 'server/warning-notice',
                 'server/metric-warning-notice',
+                'server/set-notification-message',
                 'server/set-event-detect-anomal',
                 'server/set-event-log',
                 'server/set-receive-event',
@@ -4864,6 +5109,7 @@ const sidebars = {
                 'kubernetes/install-docker-java',
                 'kubernetes/install-docker-nodejs',
                 'kubernetes/install-docker-python',
+                'kubernetes/install-docker-php',
               ],
             },
             'kubernetes/create-name-space-project'
@@ -5014,6 +5260,7 @@ const sidebars = {
               items: [
                 'kubernetes/container-warning-notice',
                 'kubernetes/metric-warning-notice',
+                'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
                 'kubernetes/set-event-log',

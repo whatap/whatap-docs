@@ -45,7 +45,7 @@ You can create, modify, and delete event policies such as **_Server_**, **_Proce
 
 :::
 
-## Adding the alert settings
+## Adding a server event{#add-server-event}
 
 Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Server_** tab, and then select **_+ Add alert policy_**.
 
@@ -282,7 +282,7 @@ You can adjust the excess per 2 seconds with the following option.
 
     > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _C:\\Program Files\\WhatapInfra\\whatap.conf_ file
 
-## Event modification
+## Modifying an event{#event-edit}
 
 1.  On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
 
@@ -298,8 +298,31 @@ You can adjust the excess per 2 seconds with the following option.
 
 :::
 
-## Deleting event
+## Deleting an event{#event-delete}
 
 1.  On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
 
 2.  On the upper right of the modification screen, select ![Delete icon](/img/ic-delete-critical.svg)**_Delete_**.
+
+## Copying an event{#event-copy}
+
+1.  On the right of the event list, select ![Copy icon](/img/ico-copy.svg)**_Copy_**.
+
+2.  If the **_Copying event settings_** window appears, select a desired project or **_Copy to current project_**.
+
+3.  If a project to copy the event settings to has been set, select **_Copy_**.
+
+:::note
+
+-   When duplicate events are copied within the same project, as many events as the number of copies are created.
+
+-   The copied event name is added with the suffix **_(copy)_**. 
+    > e.g. Previous event name **_Default_** → Copied event name **_Default(copy)_**
+
+:::
+
+<!-- 
+
+* 프로젝트 간 또는 동일 프로젝트 내 이벤트 설정을 복사할 수 있습니다.
+
+-->

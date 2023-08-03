@@ -12,6 +12,14 @@ Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection
 
 ## Kubernetes logs
 
+The WhaTap Kubernetes monitoring service collects and stores the logs that occur in Kubernetes. 
+
+<!-- 
+
+실시간으로 발생하는 로그는 컨테이너 ***Stdout/Stderr*** 탭의 최근 로그 메시지와 ***로그 검색*** 탭을 통해 조회할 수 있습니다. >
+
+-->
+
 Kubernetes has two types of logs:
 
 -   Standard out logs for each container
@@ -24,7 +32,7 @@ These logs serve to compensate for monitoring blind spots that are difficult to 
 
 ## Recent log messages (Container Stdout/Stderr)
 
-This function allows you to immediately check the current container logs. To check the container logs, the following command is used.
+This function allows you to immediately check the current container logs. You can fetch logs directly from your cluster environment to view real-time logs for the selected containers or applications within the selected pods. To check the container logs, the following command is used.
 
 ```bash
 kubectl logs pod/<Pod명> -n <Namespace명>
@@ -38,7 +46,7 @@ kubectl logs pod/<Pod명> -c <container name> -n <Namespace명>
 
 It is very inconvenient to access the terminal screen and run the command line tools every time to check logs. By using the **_Log_** function of WhaTap Kubernetes Monitoring, you can conveniently check the current logs. 
 
-![Recent Log Messages](/img/kubernetes-container-stdout.png)
+![Recent Log Messages](/img/k8s-container-log.png)
 
 However, there are things to think about. If you exit the container, you cannot see logs any longer. Even if the container is still running, you can check only the logs for a specific period or amount. The WhaTap's Recent Log Messages (**_Container Stdout/Stderr_**) function allows you to see the logs in the Kubernetes environment. The disappeared logs from the user environment are difficult to check even through WhaTap. 
 
@@ -48,9 +56,33 @@ Any good idea?
 
 ## Log Search
 
-If the container standard out logs are stored through the WhaTap log service, you can set the desired storage period, and you can check specific target-specific data or perform correlation analysis.
+All the related logs disappear when the container is shut down, but you can check the logs that have occurred on the selected container or pod through **_Log search_**. When storing the container Standard Out logs, you can set the storage period and check information for specific targets or perform correlation analysis. 
 
-![Log Search](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_search.png)
+![Log search](/img/k8s-log-search.png)
+
+-   Through the ![number 1](/img/number-01.png) time selector, you can select a desired time for searching data. 
+
+-   By defining the ![number 2](/img/number-02.png) category, you can search data. For more information about the categories that can be searched, see the following guide for blocks and groups.
+
+-   If you select ![number 3](/img/number-03.png) ![More icon](/img/ic-caret-right.svg) **_More_**, the parsed key values and log messages can be displayed. For more information, see [the following](../log/log-search).
+
+#### General blocks and micro blocks
+
+![Container block sc](/img/k8s-block.png)
+
+-   ![a icon](/img/char-a.svg) **General block**
+
+    A single polygon in the container map is called a block. In the `containerStdout` category of the log, you can see the information whose `containerid` matches.
+
+-   ![b icon](/img/char-b.svg) **Micro block**
+
+    Blocks with agents installed are called microblocks. In addition to the `containerStdout` category, you can also see `App*` related categories such as `AppLog`, `AppStdOut`, and `AppStdErr`. If you select the category, you can see the logs that match `microOid` (agent ID in the block).
+
+#### Group
+
+![Container block group sc](/img/k8s-container-group.png)
+
+When all blocks are selected on the **_Container map_** screen or multiple blocks are selected from the card on the **View Detailed** screen, the multiple blocks are called a group. When selecting a group, you can see all the logs in the `containerStdout` and `App*` categories in the **_Log search_** tab.
 
 :::caution
 
@@ -82,12 +114,20 @@ To save the container's standard output through the WhaTap log service, add the 
 
 ![Agent configuration](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
 
-## Using the WhaTap log service function
-
-For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction).
-
 ## Go to Log Search
 
-![Go to Log Search button](https://img.whatap.io/media/images/whatap_kubernetes_container_map_log_button.png)
+![Log search moving sc](/img/k8s-log-search-to-log-search.png)
 
-When you click the button on the right of the log, the Log Search screen appears.
+Click **_Log search_** on the right of the **_Log_** tab. **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
+
+:::note
+
+For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
+
+:::
+
+<!-- 
+
+로그 검색 이동 제거 예정
+
+-->
