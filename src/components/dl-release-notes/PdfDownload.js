@@ -88,9 +88,9 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
                 />
                 <label htmlFor='select-all'>Select All</label>
             </div>
-            <div className={styles.dlList}>
+            <ul className={styles.dlList}>
                 {pdfList.map((pdf, index) => (
-                    <div key={index} className={styles.dlListItem}>
+                    <li key={index} className={styles.dlListItem}>
                     <input
                         type="checkbox"
                         id={`${typeName}-${index}`}
@@ -99,9 +99,9 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
                         onChange={(event) => handleCheckboxChange(event, pdf)} checked={selectedFiles.includes(pdf)}
                     />
                     <label htmlFor={`${typeName}-${index}`}>{pdf.name}</label>
-                    </div>
+                    </li>
                 ))}
-            </div>
+            </ul>
             <div className={styles.dlBtn}>
                 <button className={styles.dlButton} onClick={handleDownload}>Download</button>
             </div>

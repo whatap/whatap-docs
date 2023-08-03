@@ -38,4 +38,4 @@ npx docusaurus-prince-pdf -u http://localhost:4000/npm --prince-args="--page-siz
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/best-practice-guides/about-apm-hitmap-class --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-best-practice-guides-about-apm-hitmap-class.pdf --dest ./static/pdf --include-index
 
-# npx docusaurus-prince-pdf -u http://localhost:4000/release-notes/service/service-1_62_0 --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/service-1.62.0.pdf --dest ./static/pdf/release-notes --include-index
+# npx docusaurus-prince-pdf -u http://docs.whatap.io/release-notes/service/service-1_54_0 --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/service-1.54.0.pdf --dest ./static/pdf/release-notes --include-index
