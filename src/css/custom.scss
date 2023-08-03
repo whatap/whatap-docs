@@ -1690,7 +1690,7 @@ main {
 // 다크모드 문서 내 css
 [data-theme='dark'] main {
   .markdown {
-    img[alt*='Windows'] {
+    img[alt*='Windows'], img._txDrag {
       filter: invert(100%);
     }
     .margin-bottom--lg {
