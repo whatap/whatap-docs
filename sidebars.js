@@ -132,6 +132,7 @@ const sidebars = {
               },
               items: [
                 'java/dashboard',
+                'java/dashboard-hitmap-trace',
                 'java/dashboard-transactionmap',
                 'java/dashboard-active-transaction',
               ],
@@ -367,6 +368,7 @@ const sidebars = {
               },
               items: [
                 'php/dashboard',
+                'php/dashboard-hitmap-trace',
                 'php/dashboard-transactionmap',
                 'php/dashboard-active-transaction',
               ],
@@ -585,6 +587,7 @@ const sidebars = {
               },
               items: [
                 'nodejs/dashboard',
+                'nodejs/dashboard-hitmap-trace',
                 'nodejs/dashboard-transactionmap',
                 'nodejs/dashboard-active-transaction',
               ],
@@ -806,6 +809,7 @@ const sidebars = {
               },
               items: [
                 'python/dashboard',
+                'python/dashboard-hitmap-trace',
                 'python/dashboard-transactionmap',
                 'python/dashboard-active-transaction',
               ],
@@ -1010,6 +1014,7 @@ const sidebars = {
               },
               items: [
                 'dotnet/dashboard',
+                'dotnet/dashboard-hitmap-trace',
                 'dotnet/dashboard-transactionmap',
                 'dotnet/dashboard-active-transaction',
               ],
@@ -1203,6 +1208,7 @@ const sidebars = {
               },
               items: [
                 'golang/dashboard',
+                'golang/dashboard-hitmap-trace',
                 'golang/dashboard-transactionmap',
                 'golang/dashboard-active-transaction',
               ],
