@@ -61,6 +61,14 @@ const ImageChecker = ({ img, desc, className }) => {
   
   return (
     <p>
+      {/* pdf 출력 시 사용 코드 */}
+      {/* <img 
+        src={imgFilePath} 
+        alt={desc} 
+        className={className} 
+      /> */}
+      {/* ^ pdf 출력 시 사용 코드 */}
+
       {imageExists ? (
         <img 
           src={imgFilePath} 
@@ -73,24 +81,11 @@ const ImageChecker = ({ img, desc, className }) => {
           alt={desc} 
           className={className} 
         />
-      ) : ( basicExists ? (
-        <img 
+      ) : ( <img 
           src={basicImage} 
           alt={desc} 
           className={className}
         />
-      ) : (
-        <span class='imgError'>
-          {
-            translate({
-              id: "component.imageErrorMessage",
-              message: "!!이미지가 없습니다. 사이트 관리자에게 문의하세요!!",
-              description: "No images. Contact site manager.",
-            })
-          }
-        </span>
-        // <ImageError/>
-      )
       ))
       }
     </p>
