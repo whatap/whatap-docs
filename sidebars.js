@@ -132,6 +132,7 @@ const sidebars = {
               },
               items: [
                 'java/dashboard',
+                'java/dashboard-hitmap-trace',
                 'java/dashboard-transactionmap',
                 'java/dashboard-active-transaction',
               ],
@@ -367,6 +368,7 @@ const sidebars = {
               },
               items: [
                 'php/dashboard',
+                'php/dashboard-hitmap-trace',
                 'php/dashboard-transactionmap',
                 'php/dashboard-active-transaction',
               ],
@@ -585,6 +587,7 @@ const sidebars = {
               },
               items: [
                 'nodejs/dashboard',
+                'nodejs/dashboard-hitmap-trace',
                 'nodejs/dashboard-transactionmap',
                 'nodejs/dashboard-active-transaction',
               ],
@@ -806,6 +809,7 @@ const sidebars = {
               },
               items: [
                 'python/dashboard',
+                'python/dashboard-hitmap-trace',
                 'python/dashboard-transactionmap',
                 'python/dashboard-active-transaction',
               ],
@@ -1010,6 +1014,7 @@ const sidebars = {
               },
               items: [
                 'dotnet/dashboard',
+                'dotnet/dashboard-hitmap-trace',
                 'dotnet/dashboard-transactionmap',
                 'dotnet/dashboard-active-transaction',
               ],
@@ -1203,6 +1208,7 @@ const sidebars = {
               },
               items: [
                 'golang/dashboard',
+                'golang/dashboard-hitmap-trace',
                 'golang/dashboard-transactionmap',
                 'golang/dashboard-active-transaction',
               ],
@@ -1435,7 +1441,6 @@ const sidebars = {
                 'postgresql/analysis-count-trend',
                 'postgresql/analysis-lock-and-deadlock',
                 'postgresql/analysis-databaseparameter',
-                'postgresql/log-viewer',
               ]
             },
             {
@@ -1480,7 +1485,6 @@ const sidebars = {
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
                 'postgresql/set-event-format',
-                'postgresql/file-log-notice',
               ],
             },
             {
@@ -1590,7 +1594,6 @@ const sidebars = {
                 'postgresql-v1/analysis-count-trend',
                 'postgresql-v1/analysis-lock-and-deadlock',
                 'postgresql-v1/analysis-databaseparameter',
-                'postgresql-v1/log-viewer',
               ]
             },
             {
@@ -1635,7 +1638,6 @@ const sidebars = {
                 'postgresql-v1/set-receive-event',
                 'postgresql-v1/set-event-history',
                 'postgresql-v1/set-event-format',
-                'postgresql-v1/file-log-notice',
               ],
             },
             // {
@@ -1745,7 +1747,6 @@ const sidebars = {
                 'oracle/analysis-lock-and-deadlock',
                 'oracle/analysis-pq-tree',
                 'oracle/analysis-databaseparameter',
-                'oracle/log-viewer',
               ]
             },
             {
@@ -1790,7 +1791,6 @@ const sidebars = {
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
                 'oracle/set-event-format',
-                'oracle/file-log-notice',
               ],
             },
             // {
@@ -1900,7 +1900,6 @@ const sidebars = {
                 'mysql-v1/analysis-count-trend',
                 'mysql-v1/analysis-databaseparameter',
                 'mysql-v1/analysis-lock-and-deadlock',
-                'mysql-v1/log-viewer',
               ]
             },
             {
@@ -1945,7 +1944,6 @@ const sidebars = {
                 'mysql-v1/set-receive-event',
                 'mysql-v1/set-event-history',
                 'mysql-v1/set-event-format',
-                'mysql-v1/file-log-notice',
               ],
             },
             {
@@ -2050,7 +2048,6 @@ const sidebars = {
                 'mysql/analysis-count-trend',
                 'mysql/analysis-lock-and-deadlock',
                 'mysql/analysis-databaseparameter',
-                'mysql/log-viewer',
               ]
             },
             {
@@ -2095,7 +2092,6 @@ const sidebars = {
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
                 'mysql/set-event-format',
-                'mysql/file-log-notice',
               ],
             },
             {
@@ -2219,7 +2215,6 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/analysis-function',
-                'mssql/log-viewer',
                 'mssql/stat',
                 'mssql/report-intro',
                 'mssql/integrated-report',
@@ -2359,7 +2354,6 @@ const sidebars = {
               collapsed: true,
               items: [
                 'tibero/analysis-function',
-                'tibero/log-viewer',
                 'tibero/stat',
                 'tibero/report-intro',
                 'tibero/integrated-report',
@@ -2491,7 +2485,6 @@ const sidebars = {
                 'cubrid/analysis-count-trend',
                 'cubrid/analysis-databaseparameter',
                 'cubrid/analysis-lock-and-deadlock',
-                'cubrid/log-viewer',
               ]
             },
             {
@@ -2536,7 +2529,6 @@ const sidebars = {
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
                 'cubrid/set-event-format',
-                'cubrid/file-log-notice',
               ],
             },
             {
@@ -2653,7 +2645,6 @@ const sidebars = {
               collapsed: true,
               items: [
                 'altibase/analysis-function',
-                'altibase/log-viewer',
                 'altibase/stat',
                 'altibase/report-intro',
                 'altibase/integrated-report',
@@ -2783,7 +2774,6 @@ const sidebars = {
               items: [
                 'redis/analysis-count-trend',
                 'redis/analysis-databaseparameter',
-                'redis/log-viewer',
               ]
             },
             {
@@ -2817,7 +2807,6 @@ const sidebars = {
                 'redis/set-receive-event',
                 'redis/set-event-history',
                 'redis/set-event-format',
-                'redis/file-log-notice',
               ],
             },
             {
@@ -2935,7 +2924,6 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mongodb/analysis-function',
-                'mongodb/log-viewer',
                 'mongodb/stat',
               ]
             },
