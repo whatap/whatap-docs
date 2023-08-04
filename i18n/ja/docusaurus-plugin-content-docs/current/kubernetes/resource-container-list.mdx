@@ -1,7 +1,7 @@
 ---
 id: resource-container-list
 title: コンテナ一覧および詳細
-description: 現在のプロジェクトのコンテナ現況情報と詳細情報を確認できます。
+description: 現在のプロジェクトのコンテナ情報と詳細情報を確認できます。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
@@ -19,17 +19,17 @@ tags:
 
 ホーム画面 > プロジェクト選択 > **_リソース_** > **_コンテナ一覧_**
 
-現在のプロジェクトのコンテナ現況情報をテーブル形で確認できます。
+現在のプロジェクトのコンテナ情報をテーブル形式で確認できます。
 
 ![コンテナ一覧](https://img.whatap.io/media/images/whatap_kubernetes_resource_container_list.png)
 
 主な機能は次のとおりです。
 
--   コンテナ一覧情報の自動更新（基本60秒、強制更新可能、自動更新中止可能）
--   Node（エージェント）別コンテナ一覧を照会可能
+-   コンテナ一覧情報の自動更新(基本60秒、強制更新可能、自動更新停止可能)
+-   Node(エージェント)別にコンテナ一覧を表示可能
 -   コンテナ、Podベースの検索可能
 
-次は表示される情報です。
+次の情報が公開されます。
 
 | 項目            | 説明                                                |
 | ------------- | ------------------------------------------------- |
@@ -38,8 +38,8 @@ tags:
 | Namespace     | コンテナが属するネームスペース                                   |
 | ReplicaSet    | コンテナが属するレプリカセット                                   |
 | CpuTotUsage   | コンテナCPU使用量                                        |
-| CpuByRequest  | コンテナCPU要請対比使用率                                    |
-| CpuRequest    | コンテナCPU要請                                         |
+| CpuByRequest  | コンテナCPUの要求比較の使用率                                  |
+| CpuRequest    | コンテナCPU要求                                         |
 | CpuByLimit    | CPU Limit基準CPUの全体使用率                              |
 | CpuLimit      | コンテナCPU Limit割当量                                  |
 | NetRxBytes    | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |
@@ -47,6 +47,6 @@ tags:
 
 ## コンテナ詳細
 
-特定のコンテナの詳細を確認できます。また、複数選択を通じてコンテナの状態を互いに比較できます。
+特定のコンテナの詳細を確認できます。また、複数選択により、コンテナの状態を相互に比較できます。
 
 ![コンテナ詳細](https://img.whatap.io/media/images/whatap_kubernetes_resource_container_detail.png)

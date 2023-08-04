@@ -27,19 +27,19 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-1.  圧縮して解凍したフォルダに入り、_whatap.conf_ファイルを確認してください。 _whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3.  圧縮して解凍したフォルダに入り、_whatap.conf_ファイルを確認してください。 _whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-```ini title='whatap.conf'
-license=プロジェクトアクセスキー
-whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+    ```ini title='whatap.conf'
+    license=プロジェクトアクセスキー
+    whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
 
-dbms=postgresql
-db=postgres
-db_ip={DBサーバーのIPアドレス}
-db_port={DBサーバーのポート番号} 
-```
+    dbms=postgresql
+    db=postgres
+    db_ip={DBサーバーのIPアドレス}
+    db_port={DBサーバーのポート番号} 
+    ```
 
-1.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
 
@@ -72,7 +72,7 @@ alter user whatap with superuser;
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx} 
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
 
 <!--## 에이전트 실행-->
 

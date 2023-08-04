@@ -58,15 +58,19 @@ kubectl logs pod/<Pod名> -c <コンテナ名> -n <Namespace名>
 
 コンテナを終了すると、関連するログはすべて消えますが、**_ログ検索_**機能を使用して、選択したコンテナまたはPodで過去に発生したログを確認できます。コンテナStandardOutログを保存する場合、希望する保存期間が設定でき、特定の対象固有の情報の確認や相関分析をができます。 
 
-![ログ検索](/img/k8s-log-search.png)
+![ログ検索](/img/k8s-log-search-106.png)
 
 -   ![number 1](/img/number-01.png)時間セレクターを使用すると、データを表示するタイミングを選択できます。 
 
--   ![number 2](/img/number-02.png)カテゴリを指定して参照することができます。表示できるカテゴリの説明については、次のブロックとグループガイドを参照してください。
+-   ![number 2](/img/number-02.png)左側のカテゴリオプションでカテゴリを指定して表示することができます。表示できるカテゴリの説明については、次の[ブロック](#block)と[グループ](#group)の手順を参照してください。
 
--   ![number 3](/img/number-03.png) ![もっと見るアイコン](/img/ic-caret-right.svg) **_もっと見る_**アイコンを選択すると、解析されたキーと値のログとログメッセージを確認できます。詳しい内容は、[次の文書](../log/log-search)を参照してください。
+-   ![number 2](/img/number-02.png)右側の**_タグを非表示_**を選択すると、ログ収集時のタグ情報を除く**_タイムスタンプ_**と**_メッセージ_**を確認できます。
 
-#### 一般ブロックとマイクロブロック
+-   ![number 2](/img/number-02.png)右側の**_ログ検索_**ボタンをクリックすると、フィルター機能で詳細を確認でき、**\*ログ**>**_ログ検索_**メニューが表示されます。 
+
+-   ![number 3](/img/number-03.png) ![詳細アイコン](/img/ic-caret-right.svg) **_詳細_**アイコンを選択すると、解析されたキーと値のログとログメッセージを確認できます。詳細については、[次の文書](../log/log-search)を参照してください。
+
+#### 一般ブロックとマイクロブロック{#block}
 
 ![コンテナブロックsc](/img/k8s-block.png)
 
@@ -78,11 +82,19 @@ kubectl logs pod/<Pod名> -c <コンテナ名> -n <Namespace名>
 
     エージェントがインストールされているブロックをマイクロブロックと呼びます。`containerStdout`カテゴリーだけでなく、`AppLog`、`AppStdOut`、`AppStdErr`などの`App*`関連カテゴリも確認できます。カテゴリを選択する場合、`microOid`(ブロック内のエージェントid)が一致するログ情報を確認できます。
 
-#### グループ
+#### グループ{#group}
 
 ![コンテナブロックグループsc](/img/k8s-container-group.png)
 
 **_コンテナマップ_**画面で全体ブロックを選択した場合、または**詳細を見る**画面のカードでブロックを複数選択した場合、そのマルチブロックをグループと呼びます。グループを選択すると、**_ログ検索_**タブで`containerStdout`カテゴリと`App*`カテゴリのすべてのログを確認できます。
+
+#### Standard OutのNodeエージェント設定の追加
+
+WhaTapログサービスを通じてコンテナのStandard Outputを保存するためには、WhaTapクバネティスノードエージェントに `logsink_enabled=true`オプションを設定する必要があります。設定およびWhaTapログモニタリングサービスの詳細については、[次の文書](../log/log-k8s#k8s-log-node)を参照してください。
+
+#### コンテナ内部アプリケーションログ収集のためのアプリケーションエージェント設定の追加
+
+WhaTapログサービスを通じて、コンテナ上で実行されるアプリケーションのログを収集するには[次の文書](../log/log-k8s#k8s-log-app)を参照してください。Java、Python、Goをサポートします。 
 
 :::caution
 
@@ -92,42 +104,43 @@ WhaTapログサービスを有効にして、コンテナのStandard Outputロ�
 
 :::note
 
-一部の古いバージョンのエージェントは、コンテナStandard Outputログ保存機能を提供しません。エージェントのアップグレード方法は次のとおりです。
+一部の古いバージョンのエージェントは、コンテナStandard Outputログ保存機能を提供しません。エージェントのアップグレード方法は、次のとおりです。
 
 ```bahs title='Agent update'
-kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<エージェントバージョン> -n whatap-monitoring
+kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<에이전트버전> -n whatap-monitoring
 ```
 
 WhaTap Kubernetesエージェントバージョンについては、 [次の文書](https://hub.docker.com/r/whatap/kube_mon/tags)で確認できます。
 
 :::
 
-### Standard Out保存のNodeエージェント設定の追加
+<!-- >
 
-WhaTapログサービスをコンテナのStandard Outputを保存するには、WhaTap Kubernetes Nodeエージェントに`logsink_enabled=true`設定を追加する必要があります。WhaTap Kubernetes Nodeエージェントは、DaemonSetの形式です。
+* 와탭 모니터링 서비스 페이지에서 ***관리*** > ***에이전트 설정***을 통해 `logsink_enabled=true` 설정 추가
+* 클러스터 프로젝트 전체 노드를 대상으로 설정을 추가하려면 ***프로젝트 디폴트*** > ***노드*** 대상으로 설정 추가
+* 일부 노드를 대상으로 설정을 추가하려면 단일 또는 복수 노드 선택 후 설정 추가
 
--   WhaTapモニタリングサービスページで、**_管理_** > **_エージェント設定_**を使用して、`logsink_enabled=true`設定を追加
--   クラスタープロジェクト全体のノードを対象に設定を追加するには、**_プロジェクトのデフォルト_** > **_Node_**を対象に設定を追加
--   一部のNodeを対象に設定を追加するには、単一または複数のNodeを選択して設定を追加
+***관리*** > ***에이전트 설정*** > 노드 에이전트 선택 > ***+ 옵션 추가*** > 모든 에이전트에 적용할 옵션 선택 > 적용 대상 노드 선택 
 
-**_管理_** > **_エージェント設定_** > Nodeエージェント選択 > **_+ オプション追加_** > すべてのエージェントに適用するオプションを選択 > 適用対象Node選択 
-
-![エージェント設定](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
-
-## ログ検索移動
-
-![ログ検索移動sc](/img/k8s-log-search-to-log-search.png)
-
-**_ログ_**タブの右側にある**_ログ検索_**ボタンをクリックすると、フィルター機能を使用して詳細を表示できる**_ログ_** > **_ログ検索_**メニューに移動します。 
+![에이전트 설정](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
 
 :::note
 
-WhaTapログモニタリングサービスの詳細については、[次の文書](../log/introduction)を参照してください。 
+와탭 로그 모니터링 서비스에 대한 자세한 내용은 [다음 문서](../log/introduction)를 참조하세요. 
 
 :::
 
-<!-- 
+### 로그 검색 이동
 
-로그 검색 이동 제거 예정
+![로그 검색 이동 sc](/img/k8s-log-search-to-log-search.png)
+
+***로그*** 탭 오른쪽에 ***로그 검색*** 버튼을 클릭하면 필터 기능 등을 통해 상세 조회할 수 있는 ***로그*** > ***로그 검색*** 메뉴로 이동합니다. 
+
+
+:::note
+
+와탭 로그 모니터링 서비스에 대한 자세한 내용은 [다음 문서](../log/introduction)를 참조하세요. 
+
+:::
 
 -->

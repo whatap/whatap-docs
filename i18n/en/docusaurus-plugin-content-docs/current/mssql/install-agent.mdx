@@ -26,7 +26,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+3.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
     ```ini title='whatap.conf'
     license=Project Access Key
@@ -38,16 +38,27 @@ The following guides you to the basic installation method for using the WhaTap d
     db_port=Database port 
     ```
 
-2.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+    :::note
 
-  Download the JDBC driver for the OS and version of your database server.
+    **In case the MS SQL server and agents are installed in localhost (default 1433 port)**
 
-  **MS SQL 2005 or later**
+    ```ini title='whatap.conf'
+    dbms=mssql
+    db=master
+    db_ip=127.0.0.1
+    db_port=1433
+    ```
 
-```
-* [Microsoft JDBC Driver 6.4 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=56615)
-* [Microsoft JDBC Driver 6.2 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=55539)
-```
+    :::
+
+4.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+
+    Download the JDBC driver for the OS and version of your database server.
+
+    **MS SQL 2005 or later**
+
+    -   [Microsoft JDBC Driver 6.4 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=56615)
+    -   [Microsoft JDBC Driver 6.2 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=55539)
 
 :::note
 

@@ -4,6 +4,16 @@ title: Service 1.104.X
 toc_max_heading_level: 2
 ---
 
+## Service 1.104.20
+
+July 20, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, fixed the bug where whiteout occurs when the notification rule test time is set to 1 day or more in the metrics event.</p>
+
+</div>
+
 ## Service 1.104.19
 
 July 21, 2023
@@ -12,9 +22,15 @@ July 21, 2023
 
 ### `Common`
 
+#### Report
+
 -   <Status>Fixed</Status> In <UI>Report</UI>, fixed the bug where report creation is not made when timeout occurs.
 
 -   <Status>Change</Status> In <UI>Report</UI>, modified the UI loading display format when creating reports.
+
+#### My Usage
+
+<p><Status>Fixed</Status> If the language is set to English, modified to search countries with lowercase characters in <UI>Payment information</UI>.</p>
 
 * * *
 
@@ -100,7 +116,7 @@ July 18, 2023
 
 ### `Browser`
 
-<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, added `proxyBaseUrl` as the </p>`config` option of the browser agent script.
+<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent Installation</UI>, added <code>proxyBaseUrl</code> as the <code>config</code> option of the browser agent script.</p>
 
 </div>
 
@@ -150,15 +166,15 @@ July 13, 2023
 
 -   **_Application Agent Installation_** > **_Docker PHP_**
 
-    -   **_1. Deleted the subtitle at the top of the access key copying area in the _**Verify Access Key\*\*\* section.
+    -   Deleted the subtitle at the top of the access key copying area in the **_Verify Access Key_** section.
 
-    -   **_4. Deleted the subtitle from the _**Kubernetes environment variables and volumes\*\*\* section.
+    -   Deleted the subtitle from the **_Kubernetes environment variables and volumes_** section.
 
--   **_Application agent installation_** > all installation types: **_1. Unified the wording in the _**Verify Access Key**\* section and added an icon to the left of the **Chat contact\*\* text.
+-   **_Application agent installation_** > all installation types: Unified wording in the **_Verify Access Key_** section and added an icon to the left of the **Chat contact**.
 
 -   In the **_Install guide_** section, unified the icon on the **_Chat contact_** button with the channel talk icon.
 
--   **_Kubernetes agent installation_** > **_KUBERNETES_** > **_3. Added a guide message regarding the OOM issues in the _**Kubernetes agent creation\*\*\* section.
+-   In **_Kubernetes agent installation_** > **_KUBERNETES_** > **_Kubernetes agent creation_** section, added notices related to OOM issues.
 
 </div>
 
@@ -176,7 +192,7 @@ July 12, 2023
 
 -   <Status>Fixed</Status> Added missing multilingual (English) texts in the dashboard copy window.
 
--   <Status>Change</Status> When using the <UI>Copy to others</UI> function, added the **copied_** prefix in the dashboard title.
+-   <Status>Change</Status> When using the <UI>Copy to others</UI> function on a dashboard, added the <b>_copied</b> suffix in the dashboard title.
 
 </div>
 

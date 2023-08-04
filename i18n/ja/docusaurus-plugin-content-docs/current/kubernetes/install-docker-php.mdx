@@ -19,9 +19,9 @@ Dockerコンテナベースで実行されているPHPアプリケーション�
 PHPアプリケーションドッカーイメージビルド時whatap-phpパッケージをインストールしてください。
 
 <Tabs>
-<TabItem value="rc" label="Redhat/CentOS" default>
+<TabItem value="rc" label="Red Hat/CentOS" default>
 
-```docker title='Redhat/CentOS'
+```docker title='Red Hat/CentOS'
 
 RUN rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
 RUN yum install -y whatap-php
@@ -199,7 +199,7 @@ env:
 
 アプリケーション開始コマンドの前にwhatap-phpサービス開始コマンドを追加してください。 
 
-```docker title='Redhat/CentOS, Debian/Ubuntu, Amazon Linux'
+```docker title='Red Hat/CentOS, Debian/Ubuntu, Amazon Linux'
 
 sh -c "/etc/init.d/whatap-php start && [アプリケーション開始コマンド]"
 

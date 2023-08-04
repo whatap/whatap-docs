@@ -1,0 +1,280 @@
+---
+id: metrics-browser
+title: Browser metrics
+description: It guides you to the browser metrics.
+tags:
+  - Browser
+  - Metrics
+  - UI
+toc_max_heading_level: 2
+---
+
+It describes the metrics that are collected by Browser Monitoring. They can be searched in **_Metrics search_**.
+
+## rum_page_load_each_page
+
+For the page load time metric, **Navigation Timing** value is queried in the **Performance API**. The page load searching proceeds as shown in the following figure.
+
+![](https://w3c.github.io/navigation-timing/timestamp-diagram.svg)
+
+The page load's response time covers up to the **loadEventEnd** point.
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name     | Description        | Remarks |
+| ------------ | ------------------ | ------- |
+| `page_group` | Page Group         | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name                        | Unit        | Description                                                                                                                        | Remarks                                                                                                                  |
+| --------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `page_load_backend_time`          | millisecond | Average processing time in the backend area during page load                                                                       | Time elapsed from **startTime** to **responseEnd**                                                                       |
+| `page_load_frontend_time`         | millisecond | Average processing time in the frontend area during page load                                                                      | Time elapsed from **domInteractive** to **loadEventEnd**                                                                 |
+| `page_load_redirect_time`         | millisecond | Average amount of redirection time spent by the browser when loading web pages                                                     | Time elapsed from **redirectStart** to **redirectEnd**                                                                   |
+| `page_load_cache_time`            | millisecond | Average time spent by a browser to search cached resources while loading web pages                                                 | Time elapsed from **fetchStart** to **domainLookupStart**                                                                |
+| `page_load_dns_time`              | millisecond | Average time spent by a browser to look up website domains while loading web pages                                                 | Time elapsed from **domainLookupStart** to **domainLookupEnd**                                                           |
+| `page_load_connect_time`          | millisecond | Average amount of network connection time to the server spent by the browser                                                       | Time elapsed from **connectStart** to **connectEnd**                                                                     |
+| `page_load_ssl_time`              | millisecond | Average TCP handshake time spent by a browser when loading web pages                                                               | Time elapsed from **secureConnectionStart** to **connectEnd**                                                            |
+| `page_load_firstbyte_time`        | millisecond | Average time spent from the browser sending network requests while fetching web pages to the first byte receptions from the server | Time elapsed from **requestStart** to **responseStart**                                                                  |
+| `page_load_download_time`         | millisecond | Average time spent for a browser to download resources from the server while loading web pages                                     | Time elapsed from **responseStart** to **responseEnd**                                                                   |
+| `page_load_domcontentloaded_time` | millisecond | Average time for a web page to render its initial content and become interactive                                                   | Time elapsed from **domContentLoadedEventStart** to **domContentLoadedEventEnd**                                         |
+| `page_load_domload_time`          | millisecond | Average time for a web page to load all resources, finish rendering, and become interactive                                        | Time elapsed from **loadEventStart** to **loadEventEnd**                                                                 |
+| `page_load_render_time`           | millisecond | Average time spent rendering resources downloaded from the server to the screen and completing page load events                    | Time elapsed from **domInteractive** to **loadEventEnd**                                                                 |
+| `page_load_event_time`            | millisecond | Average time for the load event to complete as measured by the browser                                                             | Time elapsed from the start to **loadEventEnd**                                                                          |
+| `page_load_duration`              | millisecond | Average time taken by the browser to fully load a web page                                                                         | Time to complete additional interactions after **loadEventEnd**, page load completion time measured by the browser agent |
+| `page_load_count`                 | Count       | Page Load Count                                                                                                                    | -                                                                                                                        |
+
+</div>
+
+## rum_page_load_browser_each_page
+
+Metric related to page loads for each browser
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name       | Description  | Remarks |
+| -------------- | ------------ | ------- |
+| `page_group`   | Page Group   | -       |
+| `browser_name` | Browser name | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name           | Unit        | Description                                                | Remarks |
+| -------------------- | ----------- | ---------------------------------------------------------- | ------- |
+| `page_load_count`    | Count       | Page Load Count                                            | -       |
+| `page_load_duration` | millisecond | Average time taken by the browser to fully load a web page | -       |
+
+</div>
+
+## rum_page_load_device_each_page
+
+Metric related to page loads for each device
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name      | Description | Remarks |
+| ------------- | ----------- | ------- |
+| `page_group`  | Page Group  | -       |
+| `device_name` | Device name | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name           | Unit        | Description                                                | Remarks |
+| -------------------- | ----------- | ---------------------------------------------------------- | ------- |
+| `page_load_count`    | Count       | Page Load Count                                            | -       |
+| `page_load_duration` | millisecond | Average time taken by the browser to fully load a web page | -       |
+
+</div>
+
+## rum_page_load_os_each_page
+
+Metric related to page loads for each OS
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name      | Description | Remarks |
+| ------------- | ----------- | ------- |
+| `page_group`  | Page Group  | -       |
+| `device_name` | Device name | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name           | Unit        | Description                                                | Remarks |
+| -------------------- | ----------- | ---------------------------------------------------------- | ------- |
+| `page_load_count`    | Count       | Page Load Count                                            | -       |
+| `page_load_duration` | millisecond | Average time taken by the browser to fully load a web page | -       |
+
+</div>
+
+## rum_router_change_each_page
+
+Metric related to the events that occur when pages change in a single-page application
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name            | Description                            | Remarks                                                                           |
+| ------------------- | -------------------------------------- | --------------------------------------------------------------------------------- |
+| `page_group`        | Page Group                             | -                                                                                 |
+| `completed_loading` | Whether a page change completes or not | Page change is not complete and appears as `false` when switching to another page |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name            | Unit        | Description                              | Remarks |
+| --------------------- | ----------- | ---------------------------------------- | ------- |
+| `router_change_count` | Count       | SPA page change count                    | -       |
+| `router_change_time`  | millisecond | Average time taken to fully change pages | -       |
+
+</div>
+
+## rum_resource_each_page
+
+Metric related to the response time of a resource called from a web page
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name       | Description                                       | Remarks                                                                                              |
+| -------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `page_group`   | Page Group                                        | -                                                                                                    |
+| `is3rdParty`   | Whether the resource is called from a third party | If the domain of the web page is different from the domain of the called resource, `true` is passed. |
+| `request_host` | URL host of the resource                          | -                                                                                                    |
+| `request_path` | URL path of the resource                          | -                                                                                                    |
+| `type`         | Resource type                                     | css, image, script, etc.                                                                             |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name               | Unit        | Description                                                                                                                        | Remarks                                                                                                                |
+| ------------------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `resource_dns_time`      | millisecond | Average time spent by a browser to look up website domains while loading web pages                                                 | Time elapsed from **domainLookupStart** to **domainLookupEnd**                                                         |
+| `resource_connect_time`  | millisecond | Average amount of network connection time to the server spent by the browser                                                       | Time elapsed from **connectStart** to **connectEnd**                                                                   |
+| `resource_ttfb_time`     | millisecond | Average time spent from the browser sending network requests while fetching web pages to the first byte receptions from the server | Time elapsed from **requestStart** to **responseStart**                                                                |
+| `resource_download_time` | millisecond | Average time spent for a browser to download resources from the server while loading web pages                                     | Time elapsed from **responseStart** to **responseEnd**                                                                 |
+| `resource_duration`      | millisecond | Average time taken by the browser to fully load a web page                                                                         | Time to complete additional interactions after _loadEventEnd_, page load completion time measured by the browser agent |
+| `page_load_count`        | Count       | Page Load Count                                                                                                                    | -                                                                                                                      |
+| `resource_size`          | Byte        | Resource size                                                                                                                      | -                                                                                                                      |
+
+</div>
+
+## rum_ajax_each_page
+
+Metric related to the AJAX response time and response status code
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name       | Description                  | Remarks |
+| -------------- | ---------------------------- | ------- |
+| `page_group`   | Page Group                   | -       |
+| `request_host` | Host of the AJAX request URL | -       |
+| `request_path` | Path of the AJAX request URL | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name        | Unit        | Description                                                            | Remarks |
+| ----------------- | ----------- | ---------------------------------------------------------------------- | ------- |
+| `ajax_1xx_count`  | Count       | Number of AJAX cases with the response status code between 100 and 200 | -       |
+| `ajax_2xx_count`  | Count       | Number of AJAX cases with the response status code between 200 and 300 | -       |
+| `ajax_3xx_count`  | Count       | Number of AJAX cases with the response status code between 300 and 400 | -       |
+| `ajax_4xx_count`  | Count       | Number of AJAX cases with the response status code between 400 and 500 | -       |
+| `ajax_5xx_count`  | Count       | Number of AJAX cases with the response status code of 500 or higher    | -       |
+| `ajax_count`      | Count       | AJAX Count                                                             | -       |
+| `ajax_duration`   | millisecond | Average response time for AJAX requests                                | -       |
+| `ajax_fail_count` | Count       | Number of failed AJAX requests                                         | -       |
+
+</div>
+
+## rum_error_total_each_page
+
+This is the metric related to errors from the browser.
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name        | Description   | Remarks |
+| --------------- | ------------- | ------- |
+| `page_group`    | Page Group    | -       |
+| `browser`       | Browser name  | -       |
+| `device`        | Device name   | -       |
+| `os`            | OS name       | -       |
+| `error_message` | Error Message | -       |
+| `error_type`    | Error Type    | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name    | Unit  | Description | Remarks |
+| ------------- | ----- | ----------- | ------- |
+| `error_count` | Count | Error Count | -       |
+
+</div>
+
+## rum_web_vitals_each_page
+
+Metric related to the core web vitals
+
+-   Collection interval: 5 seconds
+
+-   Statistical data: 5 minutes, 1 hour
+
+### Tags
+
+| Tag name     | Description | Remarks |
+| ------------ | ----------- | ------- |
+| `page_group` | Page Group  | -       |
+
+### Fields
+
+<div class='browser-metric'>
+
+| Field name       | Unit            | Description                                                                                | Remarks |
+| ---------------- | --------------- | ------------------------------------------------------------------------------------------ | ------- |
+| `web_vitals_cls` | millisecond     | Average time for the largest content on the website to load                                | -       |
+| `web_vitals_fid` | millisecond     | Average time for a website to be loaded and for the browser to respond after a first input | -       |
+| `web_vitals_lcp` | Positive number | Score that indicates how often the layout changes while the website is being loaded        | -       |
+
+</div>

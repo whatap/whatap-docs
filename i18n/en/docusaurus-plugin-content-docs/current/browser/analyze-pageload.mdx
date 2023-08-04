@@ -21,7 +21,7 @@ You can analyze load events on a single page basis. It provides the hitmap and v
 
 ![Page load Hitmap](/img/browser-analysis-pageload-hitmap.png)
 
-Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. The page load event list of the dragged area is loaded to ![Leader line 2](/img/number-02.png) **_Page List_** at the bottom of the screen. In ![Leader line 3](/img/number-03.png) **_Page URL Search_**, the desired page list can be searched.
+Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) **_Page List_** at the bottom of the screen, and the events are classified by **[Page Group](before-starting#page-group)** and then fetched as ![Leader line 4](/img/number-04.png) **_Page Group List_** on the right of the screen. In ![Leader line 3](/img/number-03.png) **_Page URL Search_**, the desired page list can be searched.
 
 ### ![](/img/number-01.png) Page Load Hitmap
 
@@ -47,17 +47,35 @@ The table of the **_Page List_** widget includes the following data.
 
 -   **_Page URL_**: Path of the page URL accessed by the end user.
 
--   **_City_**: Name of the city of the end user.
-
 -   **_Browser_**: Type of the browser of the end user.
 
 -   **_Device_**: Type of the device of the end user.
 
+-   **_OS_**: OS type of the device of the end user
+
+-   **_Client IP_**: IP address of the device of the end user
+
 You can add other data columns to the table, or you can hide the added columns. Select ![Column icon](/img/ico-column.svg) on the upper right of the **_page list_** widget.
 
-### ![](/img/number-03.png) Page URL Search
+### ![](/img/number-03.png) Filtering the page list
 
-You can search the desired page load list based on the **_page URL item_**.
+You can enter a search word for the page list and then filter for matches. The search criteria are as follows. Select a desired item, enter a search word and then press Enter, or select ![Search icon](/img/ico-search.svg).
+
+-   **_Page URL_**
+
+-   **_Browser_**
+
+-   **_Device_**
+
+-   **_OS_**
+
+-   **_Client IP_**
+
+### ![](/img/number-04.png) Page group list
+
+![Page Group list](/img/browser-analysis-pageload-hitmap-pagegroup.png)
+
+In the **_page load hitmap_** widget, you can check the **page load** events of the dragged area by **[Page Group](before-starting#page-group)**. If you select a desired item in the list, the selected **page load** events corresponding to the selected **page group** appear in the **_Page List_**.
 
 ## Page Load Event Detail{#pageload-details}
 

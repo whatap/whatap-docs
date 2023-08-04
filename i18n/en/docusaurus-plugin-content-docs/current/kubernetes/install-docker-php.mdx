@@ -19,9 +19,9 @@ This process applies the WhaTap monitoring agent to the PHP application running 
 Install the whatap-php package when building your PHP application docker image.
 
 <Tabs>
-<TabItem value="rc" label="Redhat/CentOS" default>
+<TabItem value="rc" label="Red Hat/CentOS" default>
 
-```docker title='Redhat/CentOS'
+```docker title='Red Hat/CentOS'
 
 RUN rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
 RUN yum install -y whatap-php
@@ -198,7 +198,7 @@ env:
 
 Add the whatap-php service startup command before the application startup command. 
 
-```docker title='Redhat/CentOS, Debian/Ubuntu, Amazon Linux'
+```docker title='Red Hat/CentOS, Debian/Ubuntu, Amazon Linux'
 
 sh -c "/etc/init.d/whatap-php start && [Application Startup Command]"
 

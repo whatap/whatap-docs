@@ -14,13 +14,37 @@ toc_max_heading_level: 2
 
 :::
 
-<!-- 
+## Preview 1.105.21
 
->
+July 24, 2023
 
-<p><Status>Change</Status> <UI>경고 알림</UI> > <UI>이벤트 설정</UI> > <UI>메트릭스 이벤트</UI> 탭에서 관련 카테고리 항목 제거</p>
+<div class='indentTab'>
 
--->
+### `Common`
+
+#### Alert
+
+-   <Status>Feature</Status> In <UI>Notification setting</UI>, added the fold/unfold function in the <UI>Event notification settings per-user</UI> section.
+
+-   <Status>Change</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics event</UI> tab, the <b>Related category</b> item has been deleted upon addition of any event.
+
+* * *
+
+### `Application`
+
+#### .NET
+
+<p><Status>New</Status> Added the <UI>Analysis</UI> > <UI>Stack</UI> menu. See <Link to='../../dotnet/analysis-apm'>the following</Link>.</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status> In <UI>Resource</UI> > <UI>Node list</UI>, fixed the bug where a loading event appears even when there is no container data to display.
+
+-   <Status>Deprecate</Status> <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics event</UI> tab, the <b>Related project</b> function has been discarded upon addition of any event.
+
+</div>
 
 ## Preview 1.105.20
 
@@ -30,9 +54,15 @@ July 21, 2023
 
 ### `Common`
 
+#### Report
+
 -   <Status>Fixed</Status> In <UI>Report</UI>, fixed the bug where report creation is not made when timeout occurs.
 
 -   <Status>Change</Status> In <UI>Report</UI>, modified the UI loading display format when creating reports.
+
+#### My Usage
+
+<p><Status>Fixed</Status> If the language is set to English, modified to search countries with lowercase characters in <UI>Payment information</UI>.</p>
 
 * * *
 
@@ -99,10 +129,6 @@ July 20, 2023
 July 20, 2023
 
 <div class='indentTab'>
-
-### `Common`
-
-<p><Status>Fixed</Status> When inviting members for the <UI>project</UI>, <UI>group</UI>, and <UI>organization</UI>, the guidance message has been changed for non-existent accounts.</p>
 
 ### `Application`
 
@@ -288,15 +314,15 @@ July 13, 2023
 
 -   **_Application Agent Installation_** > **_Docker PHP_**
 
-    -   **_1. Deleted the subtitle at the top of the access key copying area in the _**Verify Access Key\*\*\* section.
+    -   Deleted the subtitle at the top of the access key copying area in the **_Verify Access Key_** section.
 
-    -   **_4. Deleted the subtitle from the _**Kubernetes environment variables and volumes\*\*\* section.
+    -   Deleted the subtitle from the **_Kubernetes environment variables and volumes_** section.
 
--   **_Application agent installation_** > all installation types: **_1. Unified the wording in the _**Verify Access Key**\* section and added an icon to the left of the **Chat contact\*\* text.
+-   **_Application agent installation_** > all installation types: Unified wording in the **_Verify Access Key_** section and added an icon to the left of the **Chat contact**.
 
 -   In the **_Install guide_** section, unified the icon on the **_Chat contact_** button with the channel talk icon.
 
--   **_Kubernetes agent installation_** > **_KUBERNETES_** > **_3. Added a guide message regarding the OOM issues in the _**Kubernetes agent creation\*\*\* section.
+-   In **_Kubernetes agent installation_** > **_KUBERNETES_** > **_Kubernetes agent creation_** section, added notices related to OOM issues.
 
 * * *
 
@@ -345,7 +371,7 @@ July 12, 2023
 
 -   <Status>Fixed</Status> Added missing multilingual (English) texts in the dashboard copy window.
 
--   <Status>Change</Status> When using the <UI>Copy to others</UI> function, added the <b>copied_</b> prefix in the dashboard title.
+-   <Status>Change</Status> When using the <UI>Copy to others</UI> function on a dashboard, added the <b>_copied</b> suffix in the dashboard title.
 
 </div>
 
@@ -402,7 +428,7 @@ July 11, 2023
 
 ### `Server`
 
-<Status>Fixed</Status> Fixed the bug where the screen does not appear when entering the server project.
+<p><Status>Fixed</Status> Fixed the bug where the screen does not appear when entering the server project.</p>
 
 </div>
 
@@ -569,6 +595,8 @@ July 4, 2023
 #### Management
 
 <p><Status>Fixed</Status> In <UI>Create organization</UI>, modified the Japanese texts.</p>
+
+* * *
 
 ### `Log`
 
