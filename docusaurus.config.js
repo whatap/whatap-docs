@@ -550,6 +550,12 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'openapi',
+            position: 'left',
+            label: 'Open API',
+          },
+          {
+            type: 'doc',
             docId: 'license/licenses',
             position: 'left',
             label: '라이선스',
@@ -568,7 +574,11 @@ module.exports = Promise.resolve({
           },
           {
             type: 'localeDropdown',
-            className: 'oneColumn',
+            className: 'oneColumn localeDropdown',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],
