@@ -3083,7 +3083,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_12',
@@ -3092,7 +3092,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_12',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_11',
                 'release-notes/java/java-2_2_10',
@@ -3180,7 +3180,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_1_2',
@@ -3189,7 +3189,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_1_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-2_1_0',
@@ -3237,7 +3237,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_4_0',
@@ -3246,7 +3246,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_4_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_3_9',
                 'release-notes/server/server-2_3_8',
