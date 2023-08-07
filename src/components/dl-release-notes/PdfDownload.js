@@ -2,28 +2,7 @@ import React, { useState } from 'react';
 import { saveAs } from 'file-saver';
 import { PDFDocument } from 'pdf-lib';
 import styles from './styles.module.css';
-
-const downloadFilesAsZip = (selectedFiles) => {
-    // JSZip을 사용하여 zip 파일 생성
-    const zip = new JSZip();
-    const promises = [];
-
-    // 선택한 파일들을 zip에 추가
-    selectedFiles.forEach((file) => {
-        const promise = fetch(file.url)
-        .then((response) => response.blob())
-        .then((blob) => {
-            zip.file(file.name + '.pdf', blob, { binary: true });
-        });
-        promises.push(promise);
-    });
-    // 모든 파일을 로드한 후에 zip으로 압축하고 다운로드
-    Promise.all(promises).then(() => {
-        zip.generateAsync({ type: 'blob'}).then((content) => {
-            saveAs(content, 'download.zip')
-        })
-    });
-};
+import Link from '@docusaurus/Link';
 
 export default function PDFDownloads({h2title, typeName, pdfList}) {
     const [selectedFiles, setSelectedFiles] = useState([]);
@@ -47,6 +26,7 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
     const handleDownload = async () => {
         if (selectedFiles.length === 1) {
             // 선택한 파일이 1개일 경우 개별 파일 다운로드
+            console.log(selectedFiles[0].url);
             saveAs(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
         } else if (selectedFiles.length > 1) {
             // 파일명을 역순으로 정렬
@@ -76,32 +56,58 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
 
     return (
         <>
-            <h2>{h2title}</h2>
-            <div>
-                <input
-                    type='checkbox'
-                    id={`select-all-${typeName}`}
-                    name={`select-all-${typeName}`}
-                    className={styles.inputBox}
-                    onChange={handleSelectAll}
-                    checked={selectedFiles.length === pdfList.length}
-                />
-                <label htmlFor='select-all'>Select All</label>
+            <h2 className={styles._dlHeading2}>{h2title}</h2>
+            <div className={styles.dlList}>
+                <table className={styles.dlTable}>
+                    <thead>
+                        <tr>
+                            <th>
+                            <input
+                                type='checkbox'
+                                id={`select-all-${typeName}`}
+                                name={`select-all-${typeName}`}
+                                className={styles.inputBox}
+                                onChange={handleSelectAll}
+                                checked={selectedFiles.length === pdfList.length}
+                            />
+                            <label className={styles._dlLabel} htmlFor='select-all'>Select All</label>
+                            </th>
+                            <th><p>Release Notes</p></th>
+                            <th><p>Release Date</p></th>
+                            <th><p>Download PDF</p></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {pdfList.map((pdf, index) => (
+                        <tr>
+                            <td key={index} className={styles.dlListItem}>
+                            <p>
+                                <input
+                                    type="checkbox"
+                                    id={`${typeName}-${index}`}
+                                    className={styles.inputBox}
+                                    name={pdf.name}
+                                    onChange={(event) => handleCheckboxChange(event, pdf)} checked={selectedFiles.includes(pdf)}
+                                />
+                                <label className={styles._dlLabel} htmlFor={`${typeName}-${index}`}>
+                                    <Link to={pdf.docs} target='_blank'>{pdf.name}</Link>
+                                </label>
+                            </p>
+                            </td>
+                            <td>
+                                <p><Link to={pdf.docs} target='_blank'>{pdf.name}</Link></p>
+                            </td>
+                            <td>
+                                <p>{pdf.date}</p>
+                            </td>
+                            <td>
+                                <p><img src='/img/ico-download.svg' className={styles.dlIcon}/> <a href={pdf.url}>Download</a></p>
+                            </td>
+                        </tr>
+                    ))}
+                    </tbody>
+                </table>
             </div>
-            <ul className={styles.dlList}>
-                {pdfList.map((pdf, index) => (
-                    <li key={index} className={styles.dlListItem}>
-                    <input
-                        type="checkbox"
-                        id={`${typeName}-${index}`}
-                        className={styles.inputBox}
-                        name={pdf.name}
-                        onChange={(event) => handleCheckboxChange(event, pdf)} checked={selectedFiles.includes(pdf)}
-                    />
-                    <label htmlFor={`${typeName}-${index}`}>{pdf.name}</label>
-                    </li>
-                ))}
-            </ul>
             <div className={styles.dlBtn}>
                 <button className={styles.dlButton} onClick={handleDownload}>Download</button>
             </div>

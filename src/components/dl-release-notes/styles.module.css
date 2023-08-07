@@ -1,22 +1,79 @@
-.dlList {
+._dlLabel {
+  display: none;
+}
+._dlHeading2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+div.dlList {
+  width: 100%;
   max-height: 300px;
-  position: relative;
   overflow: auto;
-  padding: 8px;
-  background-color: #dddddd;
-  border-radius: 5px;
+  padding: 0px;
+  position: relative;
+  border: 1px solid #eee;
+}
+div.dlList > table.dlTable {
+  display: table;
+  border: none;
+  table-layout: auto;
+  width: 100%;
+  empty-cells:show;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+.dlTable thead {
+  border: none;
+  background: none;
+}
+.dlTable thead tr {
+  border: none;
+}
+.dlTable thead th {
+  border: none;
+  position: sticky;
+  top: 0px;
+  background-color: var(--ifm-alert-background);
+  z-index: 99;
+}
+.dlTable thead td {
+  font-weight: bold;
+  font-size: .9rem;
+}
+.dlTable tbody {
+  border: 1px solid #eee;
+}
+.dlTable tbody td:first-of-type {
+  width: 50px;
+}
+.dlTable tbody td:nth-of-type(2) {
+  width: 40%;
+}
+.dlTable tbody td:nth-of-type(3), .dlTable tbody td:nth-of-type(4) {
+  width: 30%;
+}
+.dlTable tr, .dlTable td {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dlList p {
+  margin-bottom: 0;
+  text-align: center;
+}
+.dlIcon {
+  height: 18px;
+  position: relative;
+  top: 3px;
 }
 .dlListItem {
   font-size: 1.2rem;
-  margin-top: .3rem;
-  margin-bottom: .5rem;
 }
 .inputBox {
   width: 20px;
   height: 20px;
   display: inline;
   position: relative;
-  margin-right: 8px;
   top: 2px;
 }
 .inputBox:checked {
