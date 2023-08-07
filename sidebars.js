@@ -1465,6 +1465,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'postgresql/stat',
+                'postgresql/database-size',
                 'postgresql/report-intro',
               ],
             },
@@ -2072,6 +2073,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/stat',
+                'mysql/database-size',
                 'mysql/report-intro',
               ]
             },
