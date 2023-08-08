@@ -226,5 +226,9 @@
   "item.label.NPM": {
     "message": "NPM",
     "description": "Navbar item with label NPM"
+  },
+  "item.label.Open API": {
+    "message": "Open API",
+    "description": "Navbar item with label Open API"
   }
 }

@@ -263,11 +263,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         }
       ]
@@ -499,11 +494,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -719,11 +709,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         }
       ]
@@ -939,11 +924,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -1138,11 +1118,6 @@ const sidebars = {
                 'dotnet/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -1339,11 +1314,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -1493,11 +1463,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/learn-main-menu'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -1641,16 +1606,6 @@ const sidebars = {
                 'postgresql-v1/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -1794,16 +1749,6 @@ const sidebars = {
                 'oracle/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -1947,11 +1892,6 @@ const sidebars = {
                 'mysql-v1/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2101,11 +2041,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/learn-main-menu'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2241,11 +2176,6 @@ const sidebars = {
                 'mssql/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2380,16 +2310,6 @@ const sidebars = {
                 'tibero/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2533,11 +2453,6 @@ const sidebars = {
                 'cubrid/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2671,16 +2586,6 @@ const sidebars = {
                 'altibase/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2811,11 +2716,6 @@ const sidebars = {
                 'redis/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2948,11 +2848,6 @@ const sidebars = {
                 'mongodb/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -3640,6 +3535,11 @@ const sidebars = {
         },
         {
           type: 'link',
+          label: 'Open API',
+          href: 'openapi' 
+        },
+        {
+          type: 'link',
           label: '라이선스',
           href: 'license/licenses' 
         },
@@ -4030,42 +3930,6 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Open API',
-          collapsible: true,
-          collapsed: true,
-          // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
-          link: {
-            type: 'doc',
-            id: 'apidoc/openapi-intro',
-          },
-          items: [
-            'apidoc/openapi-spec',
-            {
-              type: 'category',
-              label: 'Open API 호출',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apidoc/openapi-call',
-              },
-              items: [
-                'apidoc/openapi-call-meta',
-                'apidoc/openapi-call-apm-spot',
-                'apidoc/openapi-call-server-spot',
-                'apidoc/openapi-call-apm-stat-data',
-                'apidoc/openapi-call-server-stat-data',
-                'apidoc/openapi-call-project-stat',
-                'apidoc/openapi-call-long-stat',
-                // 'apidoc/openapi-call-log',
-                'apidoc/openapi-call-short-stat',
-              ]
-            },
-            'apidoc/openapi-mxql'
-,          ]
-        },
-        {
-          type: 'category',
           label: '자주 묻는 질문',
           // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
           items: [
@@ -4076,6 +3940,44 @@ const sidebars = {
         'glossary/glossary',
       ]
     }
+  ],
+  openapiSidebar: [
+    {
+      type: 'category',
+      label: 'Open API',
+      collapsible: true,
+      collapsed: true,
+      // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
+      link: {
+        type: 'doc',
+        id: 'openapi',
+      },
+      items: [
+        'apidoc/openapi-spec',
+        {
+          type: 'category',
+          label: 'Open API 호출',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apidoc/openapi-call',
+          },
+          items: [
+            'apidoc/openapi-call-meta',
+            'apidoc/openapi-call-apm-spot',
+            'apidoc/openapi-call-server-spot',
+            'apidoc/openapi-call-apm-stat-data',
+            'apidoc/openapi-call-server-stat-data',
+            'apidoc/openapi-call-project-stat',
+            'apidoc/openapi-call-long-stat',
+            // 'apidoc/openapi-call-log',
+            'apidoc/openapi-call-short-stat',
+          ]
+        },
+        'apidoc/openapi-mxql'
+,          ]
+    },
   ],
   awslogSidebar: [
     {
@@ -5043,11 +4945,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro',
-            }
           ],
         },
       ]  
@@ -5253,11 +5150,6 @@ const sidebars = {
                 'kubernetes/set-event-history',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         }
       ]

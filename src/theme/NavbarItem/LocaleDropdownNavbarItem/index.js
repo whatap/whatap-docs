@@ -4,7 +4,8 @@ import {useAlternatePageUtils} from '@docusaurus/theme-common/internal';
 import {translate} from '@docusaurus/Translate';
 import {useLocation} from '@docusaurus/router';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
-import IconLanguage from '@theme/Icon/Language';
+// import IconLanguage from '@theme/Icon/Language';
+import IconLanguage from './language';
 import styles from './styles.module.css';
 export default function LocaleDropdownNavbarItem({
   mobile,

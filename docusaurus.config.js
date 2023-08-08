@@ -20,6 +20,26 @@ module.exports = Promise.resolve({
   i18n: {
     defaultLocale: 'ko',
     locales: [ 'ko', 'en', 'ja' ],
+    localeConfigs: {
+      ko: {
+        label: 'KOR',
+        direction: 'ltr',
+        htmlLang: 'ko-KR',
+      },
+      en: {
+        label: 'ENG',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      ja: {
+        label: 'JAP',
+        direction: 'ltr',
+        htmlLang: 'ja-JP',
+        path: 'ja',
+      },
+    }
   },
   // trailingSlash: false,
   // clientModules: [
@@ -550,6 +570,12 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
+            docId: 'openapi',
+            position: 'left',
+            label: 'Open API',
+          },
+          {
+            type: 'doc',
             docId: 'license/licenses',
             position: 'left',
             label: '라이선스',
@@ -568,7 +594,11 @@ module.exports = Promise.resolve({
           },
           {
             type: 'localeDropdown',
-            className: 'oneColumn',
+            className: 'oneColumn localeDropdown',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],

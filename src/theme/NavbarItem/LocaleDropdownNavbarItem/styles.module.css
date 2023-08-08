@@ -1,4 +1,6 @@
 .iconLanguage {
   vertical-align: text-bottom;
   margin-right: 5px;
+  top: 1px;
+  position: relative;
 }
