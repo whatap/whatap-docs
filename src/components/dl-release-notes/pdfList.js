@@ -1,156 +1,156 @@
 const svList = [
     {
-        name: 'service-1.104.x',
+        name: 'Service-1.104.x',
         date: '2023-06-28',
         url: '/pdf/release-notes/service-1.104.x.pdf',
         docs: '/release-notes/service/service-1_104_x'
     },
     {
-        name: 'service-1.102.x',
+        name: 'Service-1.102.x',
         date: '2023-05-24',
         url: '/pdf/release-notes/service-1.102.x.pdf',
         docs: '/release-notes/service/service-1_102_x'
     },
     {
-        name: 'service-1.100.x',
+        name: 'Service-1.100.x',
         date: '2023-04-26',
         url: '/pdf/release-notes/service-1.100.x.pdf',
         docs: '/release-notes/service/service-1_100_x'
     },
     {
-        name: 'service-1.98.x',
+        name: 'Service-1.98.x',
         date: '2023-03-29',
         url: '/pdf/release-notes/service-1.98.x.pdf',
         docs: '/release-notes/service/service-1_98_x'
     },
     {
-        name: 'service-1.96.0',
+        name: 'Service-1.96.0',
         date: '2023-02-22',
         url: '/pdf/release-notes/service-1.96.0.pdf',
         docs: '/release-notes/service/service-1_96_0'
     },
     {
-        name: 'service-1.94.0',
+        name: 'Service-1.94.0',
         date: '2023-01-11',
         url: '/pdf/release-notes/service-1.94.0.pdf',
         docs: '/release-notes/service/service-1_94_0'
     },
     {
-        name: 'service-1.92.0',
+        name: 'Service-1.92.0',
         date: '2022-11-24',
         url: '/pdf/release-notes/service-1.92.0.pdf',
         docs: '/release-notes/service/service-1_92_0'
     },
     {
-        name: 'service-1.90.0',
+        name: 'Service-1.90.0',
         date: '2022-10-18',
         url: '/pdf/release-notes/service-1.90.0.pdf',
         docs: '/release-notes/service/service-1_90_0'
     },
     {
-        name: 'service-1.88.0',
+        name: 'Service-1.88.0',
         date: '2022-09-28',
         url: '/pdf/release-notes/service-1.88.0.pdf',
         docs: '/release-notes/service/service-1_88_0'
     },
     {
-        name: 'service-1.86.0',
+        name: 'Service-1.86.0',
         date: '2022-09-14',
         url: '/pdf/release-notes/service-1.86.0.pdf',
         docs: '/release-notes/service/service-1_86_0'
     },
     {
-        name: 'service-1.84.0',
+        name: 'Service-1.84.0',
         date: '2022-08-24',
         url: '/pdf/release-notes/service-1.84.0.pdf',
         docs: '/release-notes/service/service-1_84_0'
     },
     {
-        name: 'service-1.82.0',
+        name: 'Service-1.82.0',
         date: '2022-07-27',
         url: '/pdf/release-notes/service-1.82.0.pdf',
         docs: '/release-notes/service/service-1_82_0'
     },
     {
-        name: 'service-1.80.0',
+        name: 'Service-1.80.0',
         date: '2022-07-13',
         url: '/pdf/release-notes/service-1.80.0.pdf',
         docs: '/release-notes/service/service-1_80_0'
     },
     {
-        name: 'service-1.78.0',
+        name: 'Service-1.78.0',
         date: '2022-06-22',
         url: '/pdf/release-notes/service-1.78.0.pdf',
         docs: '/release-notes/service/service-1_78_0'
     },
     {
-        name: 'service-1.76.0',
+        name: 'Service-1.76.0',
         date: '2022-06-08',
         url: '/pdf/release-notes/service-1.76.0.pdf',
         docs: '/release-notes/service/service-1_76_0'
     },
     {
-        name: 'service-1.74.0',
+        name: 'Service-1.74.0',
         date: '2022-05-25',
         url: '/pdf/release-notes/service-1.74.0.pdf',
         docs: '/release-notes/service/service-1_74_0'
     },
     {
-        name: 'service-1.72.0',
+        name: 'Service-1.72.0',
         date: '2022-05-11',
         url: '/pdf/release-notes/service-1.72.0.pdf',
         docs: '/release-notes/service/service-1_72_0'
     },
     {
-        name: 'service-1.70.0',
+        name: 'Service-1.70.0',
         date: '2022-04-20',
         url: '/pdf/release-notes/service-1.70.0.pdf',
         docs: '/release-notes/service/service-1_70_0'
     },
     {
-        name: 'service-1.68.0',
+        name: 'Service-1.68.0',
         date: '2022-04-06',
         url: '/pdf/release-notes/service-1.68.0.pdf',
         docs: '/release-notes/service/service-1_68_0'
     },
     {
-        name: 'service-1.66.0',
+        name: 'Service-1.66.0',
         date: '2022-03-23',
         url: '/pdf/release-notes/service-1.66.0.pdf',
         docs: '/release-notes/service/service-1_66_0'
     },
     {
-        name: 'service-1.64.0',
+        name: 'Service-1.64.0',
         date: '2022-03-09',
         url: '/pdf/release-notes/service-1.64.0.pdf',
         docs: '/release-notes/service/service-1_64_0'
     },
     {
-        name: 'service-1.62.0',
+        name: 'Service-1.62.0',
         date: '2022-02-20',
         url: '/pdf/release-notes/service-1.62.0.pdf',
         docs: '/release-notes/service/service-1_62_0'
     },
     {
-        name: 'service-1.60.0',
+        name: 'Service-1.60.0',
         date: '2022-02-09',
         url: '/pdf/release-notes/service-1.60.0.pdf',
         docs: '/release-notes/service/service-1_60_0'
     },
     {
-        name: 'service-1.58.0',
+        name: 'Service-1.58.0',
         date: '2022-01-19',
         url: '/pdf/release-notes/service-1.58.0.pdf',
         docs: '/release-notes/service/service-1_58_0'
     },
     {
-        name: 'service-1.56.0',
+        name: 'Service-1.56.0',
         date: '2022-01-05',
         url: '/pdf/release-notes/service-1.56.0.pdf',
         docs: '/release-notes/service/service-1_56_0'
     },
     {
-        name: 'service-1.54.0',
+        name: 'Service-1.54.0',
         date: '2021-12-28',
         url: '/pdf/release-notes/service-1.54.0.pdf',
         docs: '/release-notes/service/service-1_54_0'
@@ -160,83 +160,266 @@ const svList = [
 
 const javaList = [
     {
-        name: 'java-agent-v2.2.12',
+        name: 'Java-agent-v2.2.12',
         date: '2023-07-21',
         url: '/pdf/release-notes/java-agent-v2.2.12.pdf',
         docs: '/release-notes/java/java-2_2_12',
     },
     {
-        name: 'java-agent-v2.2.11',
+        name: 'Java-agent-v2.2.11',
         date: '2023-07-10',
         url: '/pdf/release-notes/java-agent-v2.2.11.pdf',
         docs: '/release-notes/java/java-2_2_11',
     },
     {
-        name: 'java-agent-v2.2.10',
+        name: 'Java-agent-v2.2.10',
         date: '2023-06-29',
         url: '/pdf/release-notes/java-agent-v2.2.10.pdf',
         docs: '/release-notes/java/java-2_2_10',
     },
     {
-        name: 'java-agent-v2.2.09',
+        name: 'Java-agent-v2.2.09',
         date: '2023-06-16',
         url: '/pdf/release-notes/java-agent-v2.2.9.pdf',
         docs: '/release-notes/java/java-2_2_9',
     },
     {
-        name: 'java-agent-v2.2.08',
+        name: 'Java-agent-v2.2.08',
         date: '2023-06-09',
         url: '/pdf/release-notes/java-agent-v2.2.8.pdf',
         docs: '/release-notes/java/java-2_2_8',
     },
     {
-        name: 'java-agent-v2.2.07',
+        name: 'Java-agent-v2.2.07',
         date: '2023-06-05',
         url: '/pdf/release-notes/java-agent-v2.2.7.pdf',
         docs: '/release-notes/java/java-2_2_7',
     },
     {
-        name: 'java-agent-v2.2.06',
+        name: 'Java-agent-v2.2.06',
         date: '2023-06-01',
         url: '/pdf/release-notes/java-agent-v2.2.6.pdf',
         docs: '/release-notes/java/java-2_2_6',
     },
     {
-        name: 'java-agent-v2.2.05',
+        name: 'Java-agent-v2.2.05',
         date: '2023-05-30',
         url: '/pdf/release-notes/java-agent-v2.2.5.pdf',
         docs: '/release-notes/java/java-2_2_5',
     },
     {
-        name: 'java-agent-v2.2.04',
+        name: 'Java-agent-v2.2.04',
         date: '2023-05-25',
         url: '/pdf/release-notes/java-agent-v2.2.4.pdf',
         docs: '/release-notes/java/java-2_2_4',
     },
     {
-        name: 'java-agent-v2.2.03',
+        name: 'Java-agent-v2.2.03',
         date: '2023-02-14',
         url: '/pdf/release-notes/java-agent-v2.2.3.pdf',
         docs: '/release-notes/java/java-2_2_3',
     },
     {
-        name: 'java-agent-v2.2.02',
+        name: 'Java-agent-v2.2.02',
         date: '2022-12-21',
         url: '/pdf/release-notes/java-agent-v2.2.2.pdf',
         docs: '/release-notes/java/java-2_2_2',
     },
     {
-        name: 'java-agent-v2.2.0',
+        name: 'Java-agent-v2.2.0',
         date: '2022-11-01',
         url: '/pdf/release-notes/java-agent-v2.2.0.pdf',
         docs: '/release-notes/java/java-2_2_0',
     },
     {
-        name: 'java-agent-v2.1.3',
+        name: 'Java-agent-v2.1.3',
         date: '2022-09-01',
-        url: '/pdf/release-notes/java-agent-v2.2.0.pdf',
-        docs: '/release-notes/java/java-2_2_0',
+        url: '/pdf/release-notes/java-agent-v2.1.3.pdf',
+        docs: '/release-notes/java/java-2_1_3',
+    },
+    {
+        name: 'Java-agent-v2.1.2',
+        date: '2022-08-01',
+        url: '/pdf/release-notes/java-agent-v2.1.2.pdf',
+        docs: '/release-notes/java/java-2_1_2',
+    },
+    {
+        name: 'Java-agent-v2.1.1',
+        date: '2022-07-12',
+        url: '/pdf/release-notes/java-agent-v2.1.1.pdf',
+        docs: '/release-notes/java/java-2_1_1',
+    },
+    {
+        name: 'Java-agent-v2.1.0',
+        date: '2022-12-15',
+        url: '/pdf/release-notes/java-agent-v2.1.0.pdf',
+        docs: '/release-notes/java/java-2_1_0',
     },
 ];
 
-export {svList, javaList}
+const phpList = [
+    {
+        name: 'php-agent-v2.6.1',
+        date: '2023-02-15',
+        url: '/pdf/release-notes/php-agent-v2.6.1.pdf',
+        docs: '/release-notes/php/php-2_6_1',
+    },
+    {
+        name: 'php-agent-v2.6.0',
+        date: '2023-01-04',
+        url: '/pdf/release-notes/php-agent-v2.6.0.pdf',
+        docs: '/release-notes/php/php-2_6_0',
+    },
+    {
+        name: 'php-agent-v2.5.4',
+        date: '2022-11-16',
+        url: '/pdf/release-notes/php-agent-v2.5.4.pdf',
+        docs: '/release-notes/php/php-2_5_4',
+    },
+    {
+        name: 'php-agent-v2.5.3',
+        date: '2022-08-31',
+        url: '/pdf/release-notes/php-agent-v2.5.3.pdf',
+        docs: '/release-notes/php/php-2_5_3',
+    },
+    {
+        name: 'php-agent-v2.5.2',
+        date: '2022-07-06',
+        url: '/pdf/release-notes/php-agent-v2.5.2.pdf',
+        docs: '/release-notes/php/php-2_5_2',
+    },
+    {
+        name: 'php-agent-v2.5.1',
+        date: '2022-05-18',
+        url: '/pdf/release-notes/php-agent-v2.5.1.pdf',
+        docs: '/release-notes/php/php-2_5_1',
+    },
+    {
+        name: 'php-agent-v2.5.0',
+        date: '2022-05-18',
+        url: '/pdf/release-notes/php-agent-v2.5.0.pdf',
+        docs: '/release-notes/php/php-2_5_0',
+    },
+    {
+        name: 'php-agent-v2.4.1',
+        date: '2022-02-16',
+        url: '/pdf/release-notes/php-agent-v2.4.1.pdf',
+        docs: '/release-notes/php/php-2_4_1',
+    },
+    {
+        name: 'php-agent-v2.4.0',
+        date: '2021-12-16',
+        url: '/pdf/release-notes/php-agent-v2.4.0.pdf',
+        docs: '/release-notes/php/php-2_4_0',
+    },
+    {
+        name: 'php-agent-v2.3.3',
+        date: '2021-11-10',
+        url: '/pdf/release-notes/php-agent-v2.3.3.pdf',
+        docs: '/release-notes/php/php-2_3_3',
+    },
+]
+
+const nodejsList = [
+    {
+        name: 'Node.js-agent-v0.4.77',
+        date: '2023-06-23',
+        url: '/pdf/release-notes/nodejs-agent-v0.4.77.pdf',
+        docs: '/release-notes/nodejs/nodejs-0_4_77',
+    }
+]
+
+const pyList = [
+    {
+        name: 'Python-agent-v1.4.3',
+        date: '2023-08-02',
+        url: '/pdf/release-notes/python-agent-v1.4.3.pdf',
+        docs: '/release-notes/python/python-1_4_3',
+    },
+    {
+        name: 'Python-agent-v1.4.2',
+        date: '2023-07-12',
+        url: '/pdf/release-notes/python-agent-v1.4.2.pdf',
+        docs: '/release-notes/python/python-1_4_2',
+    },
+    {
+        name: 'Python-agent-v1.4.1',
+        date: '2023-07-10',
+        url: '/pdf/release-notes/python-agent-v1.4.1.pdf',
+        docs: '/release-notes/python/python-1_4_1',
+    },
+    {
+        name: 'Python-agent-v1.4.0',
+        date: '2023-07-04',
+        url: '/pdf/release-notes/python-agent-v1.4.0.pdf',
+        docs: '/release-notes/python/python-1_4_0',
+    },
+    {
+        name: 'Python-agent-v1.3.9',
+        date: '2023-06-28',
+        url: '/pdf/release-notes/python-agent-v1.3.9.pdf',
+        docs: '/release-notes/python/python-1_3_9',
+    },
+    {
+        name: 'Python-agent-v1.3.6',
+        date: '2023-05-18',
+        url: '/pdf/release-notes/python-agent-v1.3.6.pdf',
+        docs: '/release-notes/python/python-1_3_6',
+    },
+    {
+        name: 'Python-agent-v1.3.4',
+        date: '2023-04-26',
+        url: '/pdf/release-notes/python-agent-v1.3.4.pdf',
+        docs: '/release-notes/python/python-1_3_4',
+    },
+    {
+        name: 'Python-agent-v1.3.3',
+        date: '2023-04-10',
+        url: '/pdf/release-notes/python-agent-v1.3.4.pdf',
+        docs: '/release-notes/python/python-1_3_4',
+    },
+    {
+        name: 'Python-agent-v1.3.2',
+        date: '2023-03-29',
+        url: '/pdf/release-notes/python-agent-v1.3.2.pdf',
+        docs: '/release-notes/python/python-1_3_2',
+    },
+    {
+        name: 'Python-agent-v1.3.1',
+        date: '2023-03-15',
+        url: '/pdf/release-notes/python-agent-v1.3.1.pdf',
+        docs: '/release-notes/python/python-1_3_1',
+    },
+    {
+        name: 'Python-agent-v1.3.0',
+        date: '2023-01-19',
+        url: '/pdf/release-notes/python-agent-v1.3.0.pdf',
+        docs: '/release-notes/python/python-1_3_0',
+    },
+    {
+        name: 'Python-agent-v1.2.4',
+        date: '2022-09-26',
+        url: '/pdf/release-notes/python-agent-v1.2.4.pdf',
+        docs: '/release-notes/python/python-1_2_4',
+    },
+    {
+        name: 'Python-agent-v1.2.1',
+        date: '2022-07-18',
+        url: '/pdf/release-notes/python-agent-v1.2.1.pdf',
+        docs: '/release-notes/python/python-1_2_1',
+    },
+    {
+        name: 'Python-agent-v1.2.0',
+        date: '2022-02-07',
+        url: '/pdf/release-notes/python-agent-v1.2.0.pdf',
+        docs: '/release-notes/python/python-1_2_0',
+    },
+    {
+        name: 'Python-agent-v1.1.6',
+        date: '2022-01-25',
+        url: '/pdf/release-notes/python-agent-v1.1.6.pdf',
+        docs: '/release-notes/python/python-1_1_6',
+    },
+]
+
+export {svList, javaList, phpList, nodejsList, pyList}
