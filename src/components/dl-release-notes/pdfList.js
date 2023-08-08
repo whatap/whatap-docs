@@ -420,6 +420,156 @@ const pyList = [
         url: '/pdf/release-notes/python-agent-v1.1.6.pdf',
         docs: '/release-notes/python/python-1_1_6',
     },
-]
+];
 
-export {svList, javaList, phpList, nodejsList, pyList}
+const dotnetList = [
+    {
+        name: 'dotNet-agent-v2.1.2',
+        date: '2023-07-20',
+        url: '/pdf/release-notes/dotnet-agent-v2.1.2.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_1_2',
+    },
+    {
+        name: 'dotNet-agent-v2.1.1',
+        date: '2023-07-17',
+        url: '/pdf/release-notes/dotnet-agent-v2.1.1.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_1_1',
+    },
+    {
+        name: 'dotNet-agent-v2.1.0',
+        date: '2023-07-06',
+        url: '/pdf/release-notes/dotnet-agent-v2.1.0.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_1_0',
+    },
+    {
+        name: 'dotNet-agent-v2.0.9',
+        date: '2023-06-09',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.9.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_9',
+    },
+    {
+        name: 'dotNet-agent-v2.0.8',
+        date: '2023-05-31',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.8.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_8',
+    },
+    {
+        name: 'dotNet-agent-v2.0.7',
+        date: '2023-05-30',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.7.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_7',
+    },
+    {
+        name: 'dotNet-agent-v2.0.6',
+        date: '2023-05-02',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.6.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_6',
+    },
+    {
+        name: 'dotNet-agent-v2.0.5',
+        date: '2022-01-10',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.5.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_5',
+    },
+    {
+        name: 'dotNet-agent-v2.0.4',
+        date: '2021-05-10',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.4.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_4',
+    },
+    {
+        name: 'dotNet-agent-v2.0.3',
+        date: '2021-04-23',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.3.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_3',
+    },
+    {
+        name: 'dotNet-agent-v2.0.2',
+        date: '2021-04-02',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.2.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_2',
+    },
+    {
+        name: 'dotNet-agent-v2.0.1',
+        date: '2021-02-09',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.1.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_1',
+    },
+    {
+        name: 'dotNet-agent-v2.0.0',
+        date: '2020-12-16',
+        url: '/pdf/release-notes/dotnet-agent-v2.0.0.pdf',
+        docs: '/release-notes/dotnet/dotnet-2_0_0',
+    },
+];
+
+const goList = [
+    {
+        name: 'Go-agent-v0.2.2',
+        date: '2023-06-21',
+        url: '/pdf/release-notes/Go-agent-v0.2.2.pdf',
+        docs: '/release-notes/golang/golang-0_2_2',
+    },
+    {
+        name: 'Go-agent-v0.1.14',
+        date: '2022-12-14',
+        url: '/pdf/release-notes/Go-agent-v0.1.14.pdf',
+        docs: '/release-notes/golang/golang-0_1_14',
+    },
+    {
+        name: 'Go-agent-v0.1.13',
+        date: '2022-08-31',
+        url: '/pdf/release-notes/Go-agent-v0.1.13.pdf',
+        docs: '/release-notes/golang/golang-0_1_13',
+    },
+    {
+        name: 'Go-agent-v0.1.12',
+        date: '2022-08-02',
+        url: '/pdf/release-notes/Go-agent-v0.1.12.pdf',
+        docs: '/release-notes/golang/golang-0_1_12',
+    },
+    {
+        name: 'Go-agent-v0.1.11',
+        date: '2022-05-26',
+        url: '/pdf/release-notes/Go-agent-v0.1.11.pdf',
+        docs: '/release-notes/golang/golang-0_1_11',
+    },
+    {
+        name: 'Go-agent-v0.1.10',
+        date: '2022-05-12',
+        url: '/pdf/release-notes/Go-agent-v0.1.10.pdf',
+        docs: '/release-notes/golang/golang-0_1_10',
+    },
+    {
+        name: 'Go-agent-v0.1.09',
+        date: '2022-04-27',
+        url: '/pdf/release-notes/Go-agent-v0.1.9.pdf',
+        docs: '/release-notes/golang/golang-0_1_9',
+    },
+    {
+        name: 'Go-agent-v0.1.08',
+        date: '2022-01-19',
+        url: '/pdf/release-notes/Go-agent-v0.1.8.pdf',
+        docs: '/release-notes/golang/golang-0_1_8',
+    },
+    {
+        name: 'Go-agent-v0.1.07',
+        date: '2022-01-04',
+        url: '/pdf/release-notes/Go-agent-v0.1.7.pdf',
+        docs: '/release-notes/golang/golang-0_1_7',
+    },
+    {
+        name: 'Go-agent-v0.1.06',
+        date: '2021-11-23',
+        url: '/pdf/release-notes/Go-agent-v0.1.6.pdf',
+        docs: '/release-notes/golang/golang-0_1_6',
+    },
+    {
+        name: 'Go-agent-v0.1.05',
+        date: '2021-09-01',
+        url: '/pdf/release-notes/Go-agent-v0.1.5.pdf',
+        docs: '/release-notes/golang/golang-0_1_5',
+    },
+];
+
+export {svList, javaList, phpList, nodejsList, pyList, dotnetList, goList}
