@@ -25,29 +25,56 @@ The following guides you to the basic installation method for using the WhaTap d
 
 ## Downloading the WhaTap database agent
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+{@include: ../common-items/_db-install-agent-steps.mdx}  
 
-1.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+3.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
-```ini title='whatap.conf'
-license=Project access key
-whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server Info
+    ```ini title='whatap.conf'
+    license=Project access key
+    whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server Info
 
-dbms=mysql
-db_ip={DB server IP}
-db_port={DB server port number}
-```
+    dbms=mysql
+    db_ip={DB server IP}
+    db_port={DB server port number}
+    ```
 
-1.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+    :::info
 
-  Download the JDBC driver for the OS and version of your database server.
+    **In case the MySQL server and agents are installed in localhost (default 3306 port)**
 
-  **Mysql & MariaDB 5.5 or later**
+    ```ini title='whatap.conf'
+    dbms=mysql
+    db_ip=127.0.0.1
+    db_port=3306
+    ```
 
-```
-* [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
-* [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
-```
+    :::
+
+4.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+
+    Download the JDBC driver for the OS and version of your database server.
+
+    **Mysql & MariaDB 5.5 or later**
+
+    -   [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
+    -   [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
+
+:::tip
+
+-   When using the JDBC driver version 8.x or later, if the `serverTimezone` setting is required in the URL to connect, set the options as follows.
+
+    ```ini title='whatap.conf'
+    connect_option=?serverTimezone={SERVER_TIMEZONE}
+    # ex) connect_option=?serverTimezone=UTC
+    ```
+
+-   To use SSL, set the options as follows.
+
+    ```ini title='whatap.conf'
+    connect_option=?useSSL=true&verifyServerCertificate=false
+    ```
+
+:::
 
 <!-- 공통 Notes-->
 
@@ -66,8 +93,9 @@ grant select on performance_schema.* to whatap;
 grant show databases on *.* to whatap;
  
 # In case of collecting the table data
-# By specifying the DBname.* to fetch the table list or *.*, table information can be collected.
-grant select on DBname.* or *.* to whatap;
+grant select on *.* to whatap;
+# In case of monitoring tables only in a specific DB
+# grant select on {DB_NAME}.* to whatap;
  
 # In case of using replication
 grant replication client on *.* to whatap;

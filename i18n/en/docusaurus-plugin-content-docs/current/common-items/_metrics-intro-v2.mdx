@@ -1,16 +1,16 @@
-<!-- 메트릭스 정의 -->
+<!-- 메트릭스 정의-->
 
 ## What is the metrics?
 
 WhaTap collects data from the monitoring targets and provides them to users. The data collected by the agent is marked with **metrics**. 
 
-<!-- 메트릭스 효용성 안내 -->
+<!-- 메트릭스 효용성 안내-->
 
 **Metrics** provides a baseline for viewing the user environment at a glance. For example, you can easily check the average memory utilization by server and average DB connection time through the list of source data or a visualized chart view. After finding any problem factor, you can see the detailed analysis through logs or traces. 
 
 **Metrics** also helps you scale the user environment. Determining the required amount of resources through the resource usage statistics is important in terms of performance improvement and cost effectiveness.
 
-<!-- 메트릭스 수집 방식 -->
+<!-- 메트릭스 수집 방식-->
 
 ## WhaTap's metrics collection
 
@@ -121,24 +121,16 @@ WhaTap's **metric** consists of the following components:
 
 ## Viewing and visualizing the metrics data
 
+<Xclude product='browser'>
+
 WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as **_Metrics Search_** that can look up the original data of metrics, **_Metrics Chart_** that can look up metrics data through visualized charts, and **_Metrics Anomaly Detection_** that can detect out-of-pattern anomalies by comparing with the patterns of metrics learned by AI.
 
 ![Metrics View sc](/img/metrics-views.png)
 
-<!-- 사용자는 와탭의 메트릭스 메뉴를 통해 사용자 지정 조건에 따라 원본 데이터 목록을 조회하거나 다양하게 시각화한 차트를 확인할 수 있습니다. -->
+</Xclude>
 
-<!-- 
+<InDoc product='browser'>
 
- 
-* ***Category***: 관련된 지표들을 묶는 단위입니다.
-* ***Tags***: Data containing unique identifiers to find the targets to collect.
-* ***Fields***: Metrics collected from the agent.
-* ***Time***: Time when the metric has been collected.
-* ***Oid***: Unique number of the agent that has collected metrics.
-* ***Oname***: Unique name of the agent that has collected metrics.
+WhaTap provides a list of original data collected according to the conditions specified by user and various charts visualized for convenience as follows. See the menus such as **_Metrics Search_** that can look up the original data of metrics and **_Metrics Chart_** that can look up metrics data through visualized charts.
 
-Metrics can be sent to the WhaTap collection server from various monitoring targets. 
-WhaTap's collection server collects metrics with various methods.
-Metrics indicator information is also provided for each product. 
-
--->
+</InDoc>

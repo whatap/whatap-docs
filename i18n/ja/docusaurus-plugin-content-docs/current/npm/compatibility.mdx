@@ -9,16 +9,62 @@ tags:
 
 WhaTapの**NPM**を使用するためには、運用中のサーバーに**NPM Agent**をインストールする必要があります。 **NPM**は、OSカーネルが提供するeBPF技術を使用しているため、OSバージョンの確認が必要です。
 
--   Linuxカーネル5.4バージョン以降に対応します。
-
--   Linuxリリーズ基準でUbuntu 20.04、CentOS Stream 9以降をお勧めします。
-
 :::note
 
--   Ubuntu、CentOSの過去のバージョンでもカーネルアップデートを通じて使用できます。
-
--   その他のリリーズでもカーネルバージョンが合っていれば使用できますが、現在公式にテストされているリリーズはUbuntuとCentOSです。
+-   次の一覧以外のバージョンはテストが必要です。
 
 -   現在Windows、macOSには対応していません。
 
 :::
+
+## Linux
+
+OS配布版ごとに適用できる最低バージョン
+
+### Red Hat
+
+<div class='db-agent'>
+
+|   REHL   |             サポートの有無             | 基本カーネルバージョン |
+| :------: | :-----------------------------: | :---------: |
+|  旧バージョン  | <span class='emoji-no'>❌</span> |      -      |
+| REHL 7.x | <span class='emoji-no'>❌</span> |     3.10    |
+| REHL 8.x | <span class='emoji-ok'>✅</span> |     4.18    |
+| REHL 9.x | <span class='emoji-ok'>✅</span> |     5.14    |
+
+|         CentOS        |             サポートの有無             | 基本カーネルバージョン |
+| :-------------------: | :-----------------------------: | :---------: |
+|         旧バージョン        | <span class='emoji-no'>❌</span> |      -      |
+|       CentOS 7.x      | <span class='emoji-no'>❌</span> |     3.10    |
+|       CentOS 8.x      | <span class='emoji-no'>❌</span> |     4.18    |
+| **CentOS Stream 8.x** | <span class='emoji-ok'>✅</span> |     4.18    |
+|   CentOS Stream 9.x   | <span class='emoji-ok'>✅</span> |     5.14    |
+
+|           Amzon Linux           |             サポートの有無             | 基本カーネルバージョン |
+| :-----------------------------: | :-----------------------------: | :---------: |
+|              旧バージョン             | <span class='emoji-no'>❌</span> |      -      |
+|   Amazon Linux 2.0.20220121.0   | <span class='emoji-no'>❌</span> |     4.14    |
+| **Amazon Linux 2.0.20220207.0** | <span class='emoji-ok'>✅</span> |     5.10    |
+
+</div>
+
+### Debian
+
+<div class='db-agent'>
+
+|        Debian        |             サポートの有無             | 基本カーネルバージョン |
+| :------------------: | :-----------------------------: | :---------: |
+|        旧バージョン        | <span class='emoji-no'>❌</span> |      -      |
+|  Debian 10 (buster)  | <span class='emoji-no'>❌</span> |     4.19    |
+| Debian 11 (bullseye) | <span class='emoji-ok'>✅</span> |     5.10    |
+| Debian 12 (bookworm) | <span class='emoji-ok'>✅</span> |     6.1     |
+
+|    Ubuntu    |             サポートの有無             | 基本カーネルバージョン |
+| :----------: | :-----------------------------: | :---------: |
+|    旧バージョン    | <span class='emoji-no'>❌</span> |      -      |
+| Ubuntu 16.04 | <span class='emoji-no'>❌</span> |    4.4.0    |
+| Ubuntu 18.04 | <span class='emoji-no'>❌</span> |    4.15.0   |
+| Ubuntu 20.04 | <span class='emoji-ok'>✅</span> |     5.4     |
+| Ubuntu 22.04 | <span class='emoji-ok'>✅</span> |     5.15    |
+
+</div>

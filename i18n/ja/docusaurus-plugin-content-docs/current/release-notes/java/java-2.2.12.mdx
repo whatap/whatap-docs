@@ -1,0 +1,28 @@
+---
+id: java-2_2_12
+title: Java Agent v2.2.12
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_11
+---
+
+2023年7月21日
+
+-   <Status>New</Status><b>ignore_http_method</b>オプション追加
+
+    -   `ignore_http_method`オプションに登録した`http_method`リクエストトランザクションを無視
+
+    -   別途の値を設定しない場合、デフォルト値として{PATCH、OPTIONS、HEAD、TRACE}リクエストトランザクションを無視
+
+    ```ini title='whatap.conf'
+    #例。http_methodがOPTIONS, HEADであるトランザクション"追跡"
+    ignore_http_method=PATCH,TRACE
+
+    #例。http_methodがOPTIONS, HEADであるトランザクション"無視"
+    ignore_http_method=OPTIONS,HEAD
+    ```
+
+-   <Status>Fixed</Status><code>http_method</code>オプションがGET、PUT、POST、DELETEでない場合はGETで表示する問題を修正
+
+-   <Status>Fixed</Status>method追跡時に発生するASM apiバージョンエラーを修正
+
+-   <Status>Fixed</Status>AppServiceStart.xプラグイン使用時に重複呼び出しされる問題を修正

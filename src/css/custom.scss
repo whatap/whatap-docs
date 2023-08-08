@@ -587,6 +587,26 @@ code {
 .medium-zoom-image--opened {
   z-index: 999;
 }
+button.DocSearch-Button {
+  background: none;
+}
+.DocSearch-Button-Placeholder {
+  display: none !important;
+}
+.DocSearch-Button-Keys {
+  display: none !important;
+}
+.localeDropdown {
+  margin-right: 0px;
+  &:after{
+    display: none !important;
+  }
+}
+.navbar__item:has(.localeDropdown) {
+  border-right: 1px solid #e8e8e8;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 // UI
 
 // document

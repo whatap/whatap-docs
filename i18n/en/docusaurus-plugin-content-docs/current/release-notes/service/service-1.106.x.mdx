@@ -1,0 +1,223 @@
+---
+id: service-1_106_x
+title: Service 1.106.X
+toc_max_heading_level: 3
+pagination_next: release-notes/service/service-1_104_x
+---
+
+## Service 1.106.02
+
+July 31, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> If an organization is selected, fixed the issue where it is deselected when the <UI>Agent Installation</UI> menu moves to the project list.</p>
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Stack</UI>, modified the maximum lookup period for top stacks and unique stacks from 62 days to 3 days.
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Perf. trend</UI>, modified the maximum lookup period from 62 days to 31 days.
+
+### `Log`
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Log</UI> tab, modified not to display <UI>Composite log event</UI>.</p>
+
+</div>
+
+## Service 1.106.00
+
+July 26, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### User Interface (UI)
+
+-   <Status>Change</Status> Modified the error message text style in the time selector.
+
+-   <Status>Fixed</Status> In <UI>Project list</UI>, fixed the bug where the size cannot be adjusted.
+
+#### Dashboard
+
+<p><Status>Change</Status> The <UI>Transaction analysis</UI> function has been renewed.</p>
+
+#### Flex Board
+
+-   <Status>Change</Status> In <UI>Integrated Flex Board</UI>, modified to expose the Share button even if you have no Edit role for all projects in the dashboard.
+
+-   <Status>Fixed</Status> Fixed the issue where the button layout goes out of the menu when the width of the <UI>Hitmap</UI> widget becomes narrower as the screen width decreases.
+
+#### Alert
+
+-   <Status>Feature</Status> In <UI>Notification setting</UI>, added the fold/unfold function in the <UI>Event notification settings per-user</UI> section.
+
+-   <Status>Feature</Status> In <UI>Notification setting</UI>, added the <b>User-Header</b> function in the Webhook JSON addition form for the 3rd party plugin.
+
+    **User Header**: The key and value pair can be checked in the header when receiving a webhook. The following is an example of the received webhook when the user header key and value are entered as `User-Header-Key` and `TestValue`.
+
+    ```http {8} title='example'
+    POST /test HTTP/1.1
+    Host: whatap.requestcatcher.com
+    Accept: text/plain, application/json, application/*+json, */*
+    Connection: keep-alive
+    Content-Length: 234
+    Content-Type: application/json
+    User-Agent: Java/17.0.7
+    User-Header-Key: Test-Value
+    ```
+
+-   <Status>Fixed</Status> Fixed the issue where the window closes after adding a 3rd party plugin.
+
+-   <Status>Change</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics event</UI> tab, the <b>Related category</b> item has been deleted upon addition of any event.
+
+#### Management
+
+-   <Status>Fixed</Status> In <UI>Create organization</UI>, modified the Japanese texts.
+
+-   <Status>Fixed</Status> In the project creation menu, modified the product names (<b>Node.js</b>, <b>Altibase</b>).
+
+* * *
+
+### `Application`
+
+#### Common
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Transaction map</UI>, modified the chart design.
+
+    |                  Before modification                 |                 After modification                 |
+    | :--------------------------------------------------: | :------------------------------------------------: |
+    | ![before](/img/release/before-transaction-chart.png) | ![after](/img/release/after-transaction-chart.png) |
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Transaction map</UI>, improved to first display the error when a normal transaction and an error transaction overlap.
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Active transaction</UI>, changed the display colors for slow transactions and very slow transactions in the table.
+
+-   <Status>Fixed</Status> In <UI>Flex Board</UI> for application projects, added exception handling in the MXQL creation logic when using the <code>logbits</code> field in the <code>app_user</code> category.
+
+-   <Status>Fixed</Status> In the list under <UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Transaction</UI> tab, fixed the bug where operation is not made after clicking the <UI>T</UI> or <UI>U</UI> button.
+
+#### .NET
+
+<p><Status>New</Status> Added the <UI>Analysis</UI> > <UI>Stack</UI> menu. See <Link to='../../dotnet/analysis-apm'>the following</Link>.</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> Fixed the bug where the screen does not appear when entering the server project.</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, deleted the log role checking logic under the <UI>Event</UI> tab.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the option to hide the tags in the event log.
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, fixed the bug that causes intermittent whiteouts.
+
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI> > <UI>Application agent installation</UI>, modified the issue where a Korean dashboard image is output for the <UI>Start monitoring</UI> image in the <UI>Docker PHP</UI> tab without following the multilingual setting.
+
+-   <Status>Feature</Status> Added the <UI>Integrated container map</UI> menu.
+
+-   <Status>Change</Status> In the Display detail panel under <UI>Container map</UI>, changed the notation method when the block count is very large.
+
+    ![sample](/img/release/r-1_105_14-k8s-container-map-details.png)
+
+-   <Status>Change</Status> Added the group title notations for each metric in <UI>Performance summary</UI> in case of a cluster project.
+
+    ![sample](/img/release/k8s-performance-sum-rn.jpg)
+
+-   <Status>Fixed</Status> In <UI>Resource</UI> > <UI>Node list</UI>, fixed the bug where a loading event appears even when there is no container data to display.
+
+-   <Status>Change</Status> In <UI>Log</UI> > <UI>Log setting</UI>, modified the node agent log setting so that it can be applied with a click instead of directly entering options for user convenience.
+
+-   <Status>Deprecate</Status> <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics event</UI> tab, the <b>Related project</b> function has been discarded upon addition of any event.
+
+* * *
+
+### `Database`
+
+#### V2 commons
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI>, the sorting changes in the Active Session table can be saved in presets.
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI>, fixed the bug where sorting is canceled after refreshing data.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI>, added the view for the Active Session table on a new window.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Flex Board</UI>, the sorting changes in the Active Session table can be saved.
+
+-   <Status>Change</Status> Changed the deadline date of the project version selection.
+
+    -   <code>PostgreSQL</code>: September 30, 2023 → October 31, 2023
+
+    -   <code>MySQL</code>: October 30, 2023 → November 30, 2023
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Counts trend comparison</UI>, improved the issue where charts appear unnaturally due to differences in data calling and loading speed.
+
+-   <Status>Change</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI>, limited the maximum lookup time to 1 hour.
+
+#### PostgreSQL
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI> for V2 products, added the plan lookup to the session details in the active session table.
+
+-   <Status>Fixed</Status> In <UI>Slow query</UI> and <UI>Database size</UI>, the guidance in English and Japanese is supported.
+
+#### MySQL
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance monitoring</UI> for V2 products, the initial sorting in the Active Session table can be set.
+
+-   <Status>Fixed</Status> In <UI>Slow query</UI> and <UI>Database size</UI>, the guidance in English and Japanese is supported.
+
+* * *
+
+### `URL`
+
+<p><Status>Fixed</Status> When using the <UI>Add URL</UI> function in <UI>URL list</UI>, deleted the duplicates in the <UI>Check location</UI> section.</p>
+
+* * *
+
+### `Log`
+
+#### Live Tail
+
+<p><Status>Fixed</Status> Fixed the problem where the height of a table row does not return to its original size when a table row is expanded and then collapsed.</p>
+
+#### Log Search
+
+-   <Status>Fixed</Status> Fixed the issue where <code>category==+none</code> is entered when you enter a <code>category</code> in the <UI>Filter</UI> field or select a value in the side menu on the left.
+
+-   <Status>Fixed</Status> Fixed the issue where a <code>category</code> cannot be entered additionally while a <code>category</code> is entered in the <UI>Filter</UI> field.
+
+-   <Status>Fixed</Status> Fixed to prevent duplicate values from being entered in the <UI>Filter</UI> field.
+
+-   <Status>Change</Status> When searching a tag's <UI>adjacent logs</UI>, modified the <UI>time selection</UI> option.
+
+#### Log event
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI> > <UI>Add Alert Policy</UI>, fixed the UI bug that appears when the <UI>Filtering event targets</UI> item is selected with <UI>Selector</UI>.</p>
+
+#### Log setting
+
+<p><Status>Fixed</Status> The Japanese log monitoring messages have been fixed.</p>
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status> In <UI>Analysis</UI> > <UI>Page load hitmap</UI>, added the page group filter and search filter.
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI> > <UI>Error Detail</UI>, modified the background style.
+
+* * *
+
+### `Laboratory`
+
+<p><Status>Change</Status> (Only for <b>Container</b> and <b>Java</b> products) In <UI>Remote Access Status</UI>, modified to use the function even by the members without the <b>View log</b> role.</p>
+
+</div>

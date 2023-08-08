@@ -1,0 +1,223 @@
+---
+id: service-1_106_x
+title: Service 1.106.X
+toc_max_heading_level: 3
+pagination_next: release-notes/service/service-1_104_x
+---
+
+## Service 1.106.02
+
+2023年7月31日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>組織を選択した場合<UI>エージェントのインストール</UI>メニューからプロジェクト一覧に移動する際に選択した組織が解除される現象を修正</p>
+
+### `Application`
+
+-   <Status>Fixed</Status><UI>分析</UI><UI>スタック</UI>メニューでトップスタックとユニークスタックの最大照会期間を62日から3日に修正
+
+-   <Status>Fixed</Status><UI>分析</UI><UI>性能推移</UI>の最大照会期間を62日から31日に修正
+
+### `Log`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI><UI>イベント設定</UI>メニューの<UI>ログ</UI>タブで<UI>複合ログイベント</UI>を露出しないように修正</p>
+
+</div>
+
+## Service 1.106.00
+
+2023年7月26日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### User Interface (UI)
+
+-   <Status>Change</Status>時間セレクターのエラーメッセージ テキストのスタイルを修正
+
+-   <Status>Fixed</Status><UI>プロジェクト一覧</UI>メニューでサイズ調節されないバグの修正
+
+#### ダッシュボード
+
+<p><Status>Change</Status><UI>トランザクション分析</UI>機能リニューアル</p>
+
+#### Flexボード
+
+-   <Status>Change</Status>統合<UI>Flexボード</UI>メニューでダッシュボードのすべてのプロジェクトに対する修正権限がなくても、共有ボタンを露出するように修正
+
+-   <Status>Fixed</Status>画面の幅が小さくなり<UI>ヒートマップ</UI>ウィジェットの幅が狭くなると、ボタンレイアウトがメニューから外れる現象を修正
+
+#### アラート通知
+
+-   <Status>Feature</Status><UI>イベント受信設定</UI>メニューの<UI>ユーザー別イベント受信設定</UI>セクションに折りたたみ/展開機能を追加
+
+-   <Status>Feature</Status><UI>イベント受信設定</UI>メニューで3rdパーティープラグインのWebhook JSON追加フォームに<b>ユーザーヘッダー</b>(<code>User-Heaer</code>)機能の追加
+
+    **ユーザーヘッダー**:key,valueペアで入力した情報をウェブフックで受信すると、ヘッダーで確認できます。 次はユーザーヘッダーのkey,valueを`User-Header-Key`,`TestValue`で入力した場合、ウェブフック受信情報に関する例です。
+
+    ```http {8} title='example'
+    POST /test HTTP/1.1
+    Host: whatap.requestcatcher.com
+    Accept: text/plain, application/json, application/*+json, */*
+    Connection: keep-alive
+    Content-Length: 234
+    Content-Type: application/json
+    User-Agent: Java/17.0.7
+    User-Header-Key: Test-Value
+    ```
+
+-   <Status>Fixed</Status>3rdパーティープラグイン追加を完了した後、ウィンドウが閉じれない問題を修正
+
+-   <Status>Change</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクスイベント</UI>タブでイベント追加時に<b>関連カテゴリ</b>項目を削除
+
+#### 管理
+
+-   <Status>Fixed</Status><UI>組織作成</UI>メニューから日本語メッセージを修正
+
+-   <Status>Fixed</Status>プロジェクト作成メニューで<b>Node.js</b>,<b>Altibase</b>商品名の修正
+
+* * *
+
+### `Application`
+
+#### 共通
+
+-   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューでチャートのデザイン変更
+
+    |                          修正前                         |                         修正後                        |
+    | :--------------------------------------------------: | :------------------------------------------------: |
+    | ![before](/img/release/before-transaction-chart.png) | ![after](/img/release/after-transaction-chart.png) |
+
+-   <Status>Change</Status><UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューで一般トランザクションとエラートランザクションが重なる場合、エラーが先に表示されるように改善
+
+-   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>アクティブトランザクション</UI>メニューでテーブル内の遅いトランザクションおよび非常に遅いトランザクション表示の色を修正
+
+-   <Status>Fixed</Status>アプリケーションプロジェクトの<UI>Flexボード</UI>メニューから<code>app_user</code>カテゴリー内<code>logbits</code>フィールドを使用する場合、MXQL作成ロジックから例外処理を追加
+
+-   <Status>Fixed</Status> <UI>統計/レポート</UI>><UI>統計</UI>><UI>トランザクション</UI>タブの一覧で<UI>T</UI>および<UI>U</UI>ボタン選択時に動作しなかったバグを修正
+
+#### .NET
+
+<p><Status>New</Status><UI>分析</UI>><UI>スタック</UI>メニュー追加、<Link to='../../dotnet/analysis-apm'>次の文書</Link>を参照してください。</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status>サーバープロジェクトに進入する際に、画面が表示されないバグを修正</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Change</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューの<UI>イベント</UI>タブからログ権限チェックロジックを削除
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューでイベントログのTagを隠せるオプションを追加
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューで断続的にホワイトアウトが発生するバグを修正
+
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>><UI>アプリケーションエージェントの設定</UI>メニューで<UI>Docker PHP</UI>タブ<UI>モニタリングを開始する</UI>項目のイメージが多国語の設定に従わず、韓国語のダッシュボードイメージを出力する現象を修正
+
+-   <Status>Feature</Status><UI>統合コンテナマップ</UI>メニューを追加
+
+-   <Status>Change</Status><UI>コンテナマップ</UI>メニューの詳細表示パネルでブロック数が多い場合、表記方式を変更
+
+    ![sample](/img/release/r-1_105_14-k8s-container-map-details.png)
+
+-   <Status>Change</Status>クラスタープロジェクトの場合<UI>パフォーマンス要約</UI>メニューの指標別グループタイトル表記の追加
+
+    ![sample](/img/release/k8s-performance-sum-rn.jpg)
+
+-   <Status>Fixed</Status><UI>リソース</UI>><UI>ノード一覧</UI>メニューで表示するコンテナ情報がない場合でもロード中のように見えるバグを修正
+
+-   <Status>Change</Status><UI>ログ</UI>><UI>ログ設定</UI>メニューでのノードエージェントログ設定に対し、ユーザーの利便性のためにオプションを直接入力せず、ボタンクリックだけで適用されるように変更
+
+-   <Status>Deprecate</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクスイベント</UI>タブでイベントを追加すると<b>関連プロジェクト</b>機能を削除
+
+* * *
+
+### `Database`
+
+#### V2共通
+
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューからアクティブセッションテーブル整列変更ステータスプリセット保存の追加
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでデータ更新時、配置解除バグを修正
+
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでアクティブセッションテーブルの新しいウィンドウで表示を追加
+
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>Flexボード</UI>メニューでアクティブセッションテーブルウィジェット整列変更ステータス保存の追加
+
+-   <Status>Change</Status>プロジェクトバージョン選択機能提供の締切日変更
+
+    -   <code>PostgreSQL</code>:2023年9月30日→2023年10月31日
+
+    -   <code>MySQL</code>:2023年10月30日→2023年11月30日
+
+-   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューでデータ呼び出しおよびローディング速度の差で、チャートが不自然に出力される現象を改善
+
+-   <Status>Change</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューで照会できる最大時間を1時間に制限
+
+#### PostgreSQL
+
+-   <Status>Feature</Status>V2製品の<UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニュー内のアクティブセッションテーブルでセッション詳細情報にPlan照会を追加
+
+-   <Status>Fixed</Status><UI>スロークエリー</UI>、<UI>データベースサイズ</UI>メニューの英語、日本語案内に対応
+
+#### MySQL
+
+-   <Status>Feature</Status>V2製品の<UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニュー内のアクティブセッションテーブルの初期配置ステータス設定
+
+-   <Status>Fixed</Status><UI>スロークエリー</UI>、<UI>データベースサイズ</UI>メニューの英語、日本語案内に対応
+
+* * *
+
+### `URL`
+
+<p><Status>Fixed</Status> <UI>URL一覧</UI>メニューの<UI>URLを追加する</UI>機能利用時<UI>確認地域</UI>セクションの重複項目を削除</p>
+
+* * *
+
+### `Log`
+
+#### ライブテール
+
+<p><Status>Fixed</Status>テーブルrowを広げて折りたたむと、rowの高さが広がる前に戻らない現象を修正</p>
+
+#### ログ検索
+
+-   <Status>Fixed</Status><UI>フィルター</UI>入力欄に<code>category</code>を入力するか、左のサイドメニューで選択すると<code>category==+none</code>が入力される現象の修正
+
+-   <Status>Fixed</Status> <UI>フィルター</UI>入力欄に<code>category</code>が入力された状態では追加<code>category</code>が入力されない現象の修正
+
+-   <Status>Fixed</Status><UI>フィルター</UI>入力欄で重複値が入力されないように修正
+
+-   <Status>Change</Status>タグ<UI>隣接ログ</UI>を検索すると<UI>時間選択</UI>オプションを変更
+
+#### ログイベント
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>><UI>イベント追加</UI>ウィンドウで<UI>イベント対象フィルタリング</UI>項目を<UI>選択入力</UI>で選択すると現れるUIバグを修正</p>
+
+#### ログの設定
+
+<p><Status>Fixed</Status>ログモニタリングメッセージ、日本語を修正</p>
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status><UI>分析</UI>><UI>ページロードヒートマップ</UI>メニューにページグループフィルターと検索フィルターを追加
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ブラウザエラー</UI>><UI>エラー詳細</UI>メニューで背景スタイルを修正
+
+* * *
+
+### `実験室`
+
+<p><Status>Change</Status>(<b>Container</b>,<b>Java</b>商品のみ該当)<UI>Remote Access Status</UI>メニューで<b>ログ照会</b>権限のないメンバーも使用できるように変更</p>
+
+</div>

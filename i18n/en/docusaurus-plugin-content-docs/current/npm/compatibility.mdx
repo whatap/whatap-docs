@@ -9,16 +9,62 @@ tags:
 
 To use WhaTap's **NPM**, install **NPM Agent** on the running servers. Because **NPM** uses the eBPF technology provided by the OS kernel, be sure to check the OS version.
 
--   It supports the Linux kernel version 5.4 or later.
-
--   Based on the Linux release version, we recommend Ubuntu 20.04 and CentOS Stream 9 or later.
-
 :::note
 
--   It is also available through kernel update in case of an older version of Ubuntu and CentOS.
-
--   Other releases may work with the kernel version matched, but the officially tested releases are for Ubuntu and CentOS.
+-   The versions other than the following list require testing.
 
 -   Currently, Windows and mac OS are not supported.
 
 :::
+
+## Linux
+
+Minimum version applicable for each OS distribution
+
+### Red Hat
+
+<div class='db-agent'>
+
+|       REHL       |        Supportable or not       | Default kernel version |
+| :--------------: | :-----------------------------: | :--------------------: |
+| Previous Version | <span class='emoji-no'>❌</span> |            -           |
+|     REHL 7.x     | <span class='emoji-no'>❌</span> |          3.10          |
+|     REHL 8.x     | <span class='emoji-ok'>✅</span> |          4.18          |
+|     REHL 9.x     | <span class='emoji-ok'>✅</span> |          5.14          |
+
+|         CentOS        |        Supportable or not       | Default kernel version |
+| :-------------------: | :-----------------------------: | :--------------------: |
+|    Previous Version   | <span class='emoji-no'>❌</span> |            -           |
+|       CentOS 7.x      | <span class='emoji-no'>❌</span> |          3.10          |
+|       CentOS 8.x      | <span class='emoji-no'>❌</span> |          4.18          |
+| **CentOS Stream 8.x** | <span class='emoji-ok'>✅</span> |          4.18          |
+|   CentOS Stream 9.x   | <span class='emoji-ok'>✅</span> |          5.14          |
+
+|           Amzon Linux           |        Supportable or not       | Default kernel version |
+| :-----------------------------: | :-----------------------------: | :--------------------: |
+|         Previous Version        | <span class='emoji-no'>❌</span> |            -           |
+|   Amazon Linux 2.0.20220121.0   | <span class='emoji-no'>❌</span> |          4.14          |
+| **Amazon Linux 2.0.20220207.0** | <span class='emoji-ok'>✅</span> |          5.10          |
+
+</div>
+
+### Debian
+
+<div class='db-agent'>
+
+|        Debian        |        Supportable or not       | Default kernel version |
+| :------------------: | :-----------------------------: | :--------------------: |
+|   Previous Version   | <span class='emoji-no'>❌</span> |            -           |
+|  Debian 10 (buster)  | <span class='emoji-no'>❌</span> |          4.19          |
+| Debian 11 (bullseye) | <span class='emoji-ok'>✅</span> |          5.10          |
+| Debian 12 (bookworm) | <span class='emoji-ok'>✅</span> |           6.1          |
+
+|      Ubuntu      |        Supportable or not       | Default kernel version |
+| :--------------: | :-----------------------------: | :--------------------: |
+| Previous Version | <span class='emoji-no'>❌</span> |            -           |
+|   Ubuntu 16.04   | <span class='emoji-no'>❌</span> |          4.4.0         |
+|   Ubuntu 18.04   | <span class='emoji-no'>❌</span> |         4.15.0         |
+|   Ubuntu 20.04   | <span class='emoji-ok'>✅</span> |           5.4          |
+|   Ubuntu 22.04   | <span class='emoji-ok'>✅</span> |          5.15          |
+
+</div>

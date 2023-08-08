@@ -58,15 +58,19 @@ Any good idea?
 
 All the related logs disappear when the container is shut down, but you can check the logs that have occurred on the selected container or pod through **_Log search_**. When storing the container Standard Out logs, you can set the storage period and check information for specific targets or perform correlation analysis. 
 
-![Log search](/img/k8s-log-search.png)
+![Log search](/img/k8s-log-search-106.png)
 
 -   Through the ![number 1](/img/number-01.png) time selector, you can select a desired time for searching data. 
 
--   By defining the ![number 2](/img/number-02.png) category, you can search data. For more information about the categories that can be searched, see the following guide for blocks and groups.
+-   By specifying the ![number 2](/img/number-02.png) category through the options on the left, you can search data. For more information about the categories to view, see the following guide to [Bock](#block) and [Group](#group).
+
+-   If you select ![number 2](/img/number-02.png) **_Hide tag_** on the right, the **_timestamp_** and **_message_** can be seen excluding tags during log recording.
+
+-   Click ![number 2](/img/number-02.png) **_Log search_** on the right. Then **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
 
 -   If you select ![number 3](/img/number-03.png) ![More icon](/img/ic-caret-right.svg) **_More_**, the parsed key values and log messages can be displayed. For more information, see [the following](../log/log-search).
 
-#### General blocks and micro blocks
+#### General blocks and micro blocks{#block}
 
 ![Container block sc](/img/k8s-block.png)
 
@@ -78,15 +82,23 @@ All the related logs disappear when the container is shut down, but you can chec
 
     Blocks with agents installed are called microblocks. In addition to the `containerStdout` category, you can also see `App*` related categories such as `AppLog`, `AppStdOut`, and `AppStdErr`. If you select the category, you can see the logs that match `microOid` (agent ID in the block).
 
-#### Group
+#### Group{#group}
 
 ![Container block group sc](/img/k8s-container-group.png)
 
 When all blocks are selected on the **_Container map_** screen or multiple blocks are selected from the card on the **View Detailed** screen, the multiple blocks are called a group. When selecting a group, you can see all the logs in the `containerStdout` and `App*` categories in the **_Log search_** tab.
 
+#### Adding the node agent settings to save Standard Out
+
+To save the container's standard outputs through the WhaTap log service, set the `logsink_enabled=true` option in the WhaTap Kubernetes node agent. For more information about the settings and the WhaTap log monitoring service, see [the following](../log/log-k8s#k8s-log-node).
+
+#### Adding the application agent settings for collecting application logs inside containers
+
+To collect the logs of applications running on containers through the WhaTap log service, see [the following](../log/log-k8s#k8s-log-app). Java, Python, and Go are supported. 
+
 :::caution
 
-If you enable the WhaTap log service and use the container's standard output log storage function, an additional fee is incurred. For more information about pricing, see [the following](https://www.whatap.io/ko/pricing/).
+If you enable the WhaTap log service and use the container's standard output log storage function, an additional fee is incurred. For more information about pricing, see [the following](https://www.whatap.io/en/pricing/).
 
 :::
 
@@ -95,39 +107,9 @@ If you enable the WhaTap log service and use the container's standard output log
 Some older versions of the agent do not provide the function to save container standard output logs. The agent upgrade method is as follows:
 
 ```bahs title='Agent update'
-kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<agent version> -n whatap-monitoring
+kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:<에이전트버전> -n whatap-monitoring
 ```
 
 The latest version of the WhaTap Kubernetes agent can be checked in [the following](https://hub.docker.com/r/whatap/kube_mon/tags).
 
 :::
-
-### Adding the node agent settings to save Standard Out
-
-To save the container's standard output through the WhaTap log service, add the `logsink_enabled=true` setting to the WhaTap Kubernetes node agent. The WhaTap Kubernetes node agent is in the DaemonSet format.
-
--   Add the `logsink_enabled=true` setting in **_Management_** > **_Agent CONFIG._** on the WhaTap monitoring service page.
--   To add the settings for all nodes in the cluster project, go to **_Project Default_** > **_Nodes_**.
--   To add settings for some nodes, first select one or more nodes.
-
-**_Management_** > **_Agent CONFIG._** > Select Node Agent > **_+ Add Option_** > Select options for all agents > Select node to apply 
-
-![Agent configuration](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
-
-## Go to Log Search
-
-![Log search moving sc](/img/k8s-log-search-to-log-search.png)
-
-Click **_Log search_** on the right of the **_Log_** tab. **_Log_** > **_Log search_** appears where you can search in detail through the functions such as Filtering. 
-
-:::note
-
-For more information about the WhaTap Log Monitoring service, see [the following](../log/introduction). 
-
-:::
-
-<!-- 
-
-로그 검색 이동 제거 예정
-
--->

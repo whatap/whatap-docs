@@ -15,7 +15,7 @@ import UI from '@site/src/components/UItext';
 
 #### インストール方法
 
-[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)をダウンロードして「/」ディレクトリを基準に圧縮を解凍します。_/usr/whatap/agent_ディレクトリにモニタリングインストールファイルが生成されます。
+[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)をダウンロードして「/」ディレクトリに圧縮を解凍します。_/usr/whatap/agent_ディレクトリにモニタリングインストールファイルが生成されます。
 
 ```bash
 wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
@@ -70,11 +70,11 @@ func main() {
 
 ### github.com/go-gorm/gormライブラリに対応
 
-gorm v2フレームワークを通じて処理されるDB ConnectionおよびSQLを追跡します。
+gorm v2フレームワークを使用して処理されるDB ConnectionおよびSQLを追跡します。
 
-#### whatapgormの使い方
+#### whatapgormの使用方法
 
-`gorm.Open`関数の代わりに`whatapgorm.OpenWithContext`関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージの`Start`関数を通じて生成することができます。
+`gorm.Open`関数の代わりに`whatapgorm.OpenWithContext`関数を使用します。受け渡すcontextは、内部にwhatap TraceCtxを含まれている必要があり、traceパッケージの`Start`関数を使用して生成することができます。
 
 ```go title='Install guide'
 import (
@@ -113,9 +113,9 @@ func main() {
 }
 ```
 
-#### whatapsqlの使い方
+#### whatapsqlの使用方法
 
-gormは正式対応するsqlite、mysql、postgres、sqlserverの他にもdialect interfaceベースで作成されたdirverに対して互換性があります。 
+gormは公式対応するsqlite、mysql、postgres、sqlserverのdialect interfaceベースで作成されたdirverと互換性があります。 
 
 関連リンク：[gorm driver](https://gorm.io/docs/write_driver.html)
 
@@ -160,11 +160,11 @@ func main() {
 
 ### github.com/jinzhu/gormライブラリに対応
 
-gorm v1フレームワークを通じて処理されるDB ConnectionおよびSQLを追跡します。
+gorm v1フレームワークを使用して処理されるDB ConnectionおよびSQLを追跡します。
 
-#### whatapgormの使い方
+#### whatapgormの使用方法
 
-`gorm.Open`関数の代わりに`whatapgorm.OpenWithContext`関数を使用します。伝達するcontextは、内部にwhatap TraceCtxを含めなければならず、traceパッケージのStart関数を通じて生成することができます。
+`gorm.Open`関数の代わりに`whatapgorm.OpenWithContext`関数を使用します。受け渡すcontextは、内部にwhatap TraceCtxを含める必要があり、traceパッケージのStart関数を使用して生成することができます。
 
 ```go title='Install guide'
 import (
@@ -205,9 +205,9 @@ func main() {
 }
 ```
 
-#### whatapsqlの使い方
+#### whatapsqlの使用方法
 
-gormは正式対応するsqlite、mysql、postgres、sqlserverの他にもdialect interfaceベースで作成されたdirverに対して互換性があります。 
+gormは公式対応するsqlite、mysql、postgres、sqlserverのdialect interfaceベースで作成されたdirverと互換性があります。 
 
 関連リンク：[gorm driver](https://v1.gorm.io/docs/dialects.html)
 
@@ -239,7 +239,7 @@ func main() {
       panic("Whatapsql Open Fail")
     }
     
-    // 既に生成されたconnectionを通じてgormに接続します。
+    // 既に生成されたconnectionを使用してgormに接続します。
     db, err := gorm.Open("mysql", conn)
     if err != nil {
       trace.Error(ctx, err)
@@ -258,7 +258,7 @@ func main() {
 
 ### github.com/gomodule/redigoライブラリに対応
 
-redigoフレームワークを通じてredisに渡されるコマンドを追跡します。`redis.Dial`の代わりに`whatapredigo.DialContext`の関数を使用します。
+redigoフレームワークを使用してredisに受け渡されるコマンドを追跡します。`redis.Dial`の代わりに`whatapredigo.DialContext`の関数を使用します。
 
 ```go title='Install guide'
 import (
@@ -280,7 +280,7 @@ func main() {
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
 
-    // whtapredigoを通じてredis connectionを生成します。
+    // whtapredigoを使用してredis connectionを生成します。
     conn, err := whatapredigo.DialContext(ctx, "tcp", "127.0.0.1:6379")
     if err != nil {
       trace.Error(ctx, err)
@@ -307,11 +307,11 @@ func main() {
 
 ### github.com/shopify/saramaライブラリに対応
 
-saramaフレームワークを通じて処理されるkafka produce、consumeイベントを追跡します。
+saramaフレームワークを使用して処理されるkafka produce、consumeイベントを追跡します。
 
 #### async producer追跡
 
-whatapsaramaのInterceptorを通じてasync producer情報を追跡します。Producer Message作成時にCtx関連情報をMetadataを通じて伝達すると、Multi Transactionにつながります。
+whatapsaramaのInterceptorを使用してasync producer情報を追跡します。Producer Messageの作成時に、Ctx関連情報をMetadataを使用して受け渡すと、Multi Transactionに接続されます。
 
 ```go title='Install guide'
 import (
@@ -334,7 +334,7 @@ func main() {
   trace.Init(whatapConfig)
   defer trace.Shutdown()
 
-  // Prdoducer生成時にconfigを伝達します。
+  // Prdoducer生成時にconfigを受け渡します。
   producer, err := sarama.NewAsyncProducer(brokers, config)
   consumerOffset := sarama.OffsetOldest
   if err != nil {
@@ -367,7 +367,7 @@ func main() {
 
 #### consumer追跡
 
-whatapsaramaのInterceptorを通じてconsumer情報を追跡します。Produceから渡されたMessageを基準にMulti Transactionに接続されます。
+whatapsaramaのInterceptorを使用してconsumer情報を追跡します。Produceから渡されたMessageを基準にMulti Transactionに接続されます。
 
 ```go title='Install guide'
 import (
@@ -391,7 +391,7 @@ func main() {
   config.Consumer.Interceptors = []sarama.ConsumerInterceptor{&interceptor}
 
   // consume 1回あたり1tx
-  // Consumer生成時にconfigを伝達します。
+  // Consumer生成時にconfigを伝達受け渡します。
   consumer, err := sarama.NewConsumer(brokers, config)
   topic := "tmp-topic"
 

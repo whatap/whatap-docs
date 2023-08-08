@@ -263,11 +263,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         }
       ]
@@ -499,11 +494,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -719,11 +709,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         }
       ]
@@ -939,11 +924,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -1138,11 +1118,6 @@ const sidebars = {
                 'dotnet/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -1339,11 +1314,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         },
       ]
@@ -1465,6 +1435,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'postgresql/stat',
+                'postgresql/database-size',
                 'postgresql/report-intro',
               ],
             },
@@ -1492,11 +1463,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/learn-main-menu'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -1640,16 +1606,6 @@ const sidebars = {
                 'postgresql-v1/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -1793,16 +1749,6 @@ const sidebars = {
                 'oracle/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -1946,11 +1892,6 @@ const sidebars = {
                 'mysql-v1/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2072,6 +2013,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/stat',
+                'mysql/database-size',
                 'mysql/report-intro',
               ]
             },
@@ -2099,11 +2041,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/learn-main-menu'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2239,11 +2176,6 @@ const sidebars = {
                 'mssql/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2378,16 +2310,6 @@ const sidebars = {
                 'tibero/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2531,11 +2453,6 @@ const sidebars = {
                 'cubrid/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2669,16 +2586,6 @@ const sidebars = {
                 'altibase/set-event-format',
               ],
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Log 모니터링',
-            //   id: 'log/introduction'
-            // },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2809,11 +2716,6 @@ const sidebars = {
                 'redis/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -2946,11 +2848,6 @@ const sidebars = {
                 'mongodb/set-event-format',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ]
         }
       ],
@@ -3083,7 +2980,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_12',
@@ -3092,7 +2989,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_12',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_11',
                 'release-notes/java/java-2_2_10',
@@ -3180,7 +3077,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_1_2',
@@ -3189,7 +3086,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_1_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-2_1_0',
@@ -3237,7 +3134,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_4_0',
@@ -3246,7 +3143,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_4_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_3_9',
                 'release-notes/server/server-2_3_8',
@@ -3269,14 +3166,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_3_2',
+                id: 'release-notes/k8s/k8s-1_3_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_3_2',
+                  id: 'release-notes/k8s/k8s-1_3_3',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_3_2',
                 'release-notes/k8s/k8s-1_3_1',
                 'release-notes/k8s/k8s-1_2_9',
                 'release-notes/k8s/k8s-1_2_8',
@@ -3285,7 +3183,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_2_5',
                 'release-notes/k8s/k8s-1_2_2',
                 'release-notes/k8s/k8s-1_2_1',
-                'release-notes/k8s/k8s-1_2_0',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3635,6 +3532,11 @@ const sidebars = {
           type: 'link',
           label: '관리 기능',
           href: 'manage' 
+        },
+        {
+          type: 'link',
+          label: 'Open API',
+          href: 'openapi' 
         },
         {
           type: 'link',
@@ -4028,42 +3930,6 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Open API',
-          collapsible: true,
-          collapsed: true,
-          // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
-          link: {
-            type: 'doc',
-            id: 'apidoc/openapi-intro',
-          },
-          items: [
-            'apidoc/openapi-spec',
-            {
-              type: 'category',
-              label: 'Open API 호출',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'apidoc/openapi-call',
-              },
-              items: [
-                'apidoc/openapi-call-meta',
-                'apidoc/openapi-call-apm-spot',
-                'apidoc/openapi-call-server-spot',
-                'apidoc/openapi-call-apm-stat-data',
-                'apidoc/openapi-call-server-stat-data',
-                'apidoc/openapi-call-project-stat',
-                'apidoc/openapi-call-long-stat',
-                // 'apidoc/openapi-call-log',
-                'apidoc/openapi-call-short-stat',
-              ]
-            },
-            'apidoc/openapi-mxql'
-,          ]
-        },
-        {
-          type: 'category',
           label: '자주 묻는 질문',
           // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
           items: [
@@ -4074,6 +3940,44 @@ const sidebars = {
         'glossary/glossary',
       ]
     }
+  ],
+  openapiSidebar: [
+    {
+      type: 'category',
+      label: 'Open API',
+      collapsible: true,
+      collapsed: true,
+      // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
+      link: {
+        type: 'doc',
+        id: 'openapi',
+      },
+      items: [
+        'apidoc/openapi-spec',
+        {
+          type: 'category',
+          label: 'Open API 호출',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'apidoc/openapi-call',
+          },
+          items: [
+            'apidoc/openapi-call-meta',
+            'apidoc/openapi-call-apm-spot',
+            'apidoc/openapi-call-server-spot',
+            'apidoc/openapi-call-apm-stat-data',
+            'apidoc/openapi-call-server-stat-data',
+            'apidoc/openapi-call-project-stat',
+            'apidoc/openapi-call-long-stat',
+            // 'apidoc/openapi-call-log',
+            'apidoc/openapi-call-short-stat',
+          ]
+        },
+        'apidoc/openapi-mxql'
+,          ]
+    },
   ],
   awslogSidebar: [
     {
@@ -5041,11 +4945,6 @@ const sidebars = {
               label: 'Log 모니터링',
               id: 'log/introduction'
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro',
-            }
           ],
         },
       ]  
@@ -5251,11 +5150,6 @@ const sidebars = {
                 'kubernetes/set-event-history',
               ],
             },
-            {
-              type: 'link',
-              label: 'Open API',
-              href: '/apidoc/openapi-intro'
-            }
           ],
         }
       ]

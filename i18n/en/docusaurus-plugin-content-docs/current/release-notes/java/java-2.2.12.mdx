@@ -1,0 +1,28 @@
+---
+id: java-2_2_12
+title: Java Agent v2.2.12
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_11
+---
+
+July 21, 2023
+
+-   <Status>New</Status> The <b>ignore_http_method</b> option has been added.
+
+    -   The `http_method` request transaction registered in `ignore_http_method` option is ignored.
+
+    -   The {PATCH, OPTIONS, HEAD, TRACE} request transactions are ignored by default if no additional values are set.
+
+    ```ini title='whatap.conf'
+    # e.g. tracing the transactions whose http_method is OPTIONS or HEAD
+    ignore_http_method=PATCH,TRACE
+
+    # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
+    ignore_http_method=OPTIONS,HEAD
+    ```
+
+-   <Status>Fixed</Status> Fixed the issue where GET appears when the <code>http_method</code> option is not GET, PUT, POST, or DELETE.
+
+-   <Status>Fixed</Status> Fixed the ASM API version error that occurs upon method tracing.
+
+-   <Status>Fixed</Status> Fixed the problem where the AppServiceStart.x plugin is called repeatedly.
