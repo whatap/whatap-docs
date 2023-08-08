@@ -20,6 +20,26 @@ module.exports = Promise.resolve({
   i18n: {
     defaultLocale: 'ko',
     locales: [ 'ko', 'en', 'ja' ],
+    localeConfigs: {
+      ko: {
+        label: 'KOR',
+        direction: 'ltr',
+        htmlLang: 'ko-KR',
+      },
+      en: {
+        label: 'ENG',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      ja: {
+        label: 'JAP',
+        direction: 'ltr',
+        htmlLang: 'ja-JP',
+        path: 'ja',
+      },
+    }
   },
   // trailingSlash: false,
   // clientModules: [

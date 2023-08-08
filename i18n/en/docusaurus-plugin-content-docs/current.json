@@ -59,10 +59,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar javaSidebar"
   },
-  "sidebar.javaSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar javaSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.javaSidebar.doc.지원 환경": {
     "message": "Support Environment",
     "description": "The label for the doc item 지원 환경 in sidebar javaSidebar, linking to the doc java/supported-spec"
@@ -123,10 +119,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar phpSidebar"
   },
-  "sidebar.phpSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar phpSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.phpSidebar.doc.설치 점검": {
     "message": "Installation checking",
     "description": "The label for the doc item 설치 점검 in sidebar phpSidebar, linking to the doc php/install-check"
@@ -182,10 +174,6 @@
   "sidebar.nodejsSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar nodejsSidebar"
-  },
-  "sidebar.nodejsSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar nodejsSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.nodejsSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -247,10 +235,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar pySidebar"
   },
-  "sidebar.pySidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar pySidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.pySidebar.doc.고급 기능": {
     "message": "Advanced functions",
     "description": "The label for the doc item 고급 기능 in sidebar pySidebar, linking to the doc python/advanced-feature"
@@ -311,10 +295,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar dotNetSidebar"
   },
-  "sidebar.dotNetSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar dotNetSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.dotNetSidebar.doc.관리하기": {
     "message": "Management",
     "description": "The label for the doc item 관리하기 in sidebar dotNetSidebar, linking to the doc dotnet/agent-manage"
@@ -359,10 +339,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar goSidebar"
   },
-  "sidebar.goSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar goSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.goSidebar.doc.Log 모니터링": {
     "message": "Log Monitoring",
     "description": "The label for the doc item Log 모니터링 in sidebar goSidebar, linking to the doc log/introduction"
@@ -390,10 +366,6 @@
   "sidebar.postgreSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar postgreSidebar"
-  },
-  "sidebar.postgreSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar postgreSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.postgreSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -427,10 +399,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar dboracleSidebar"
   },
-  "sidebar.dboracleSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar dboracleSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.dboracleSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar dboracleSidebar, linking to the doc oracle/monitoring-support"
@@ -458,10 +426,6 @@
   "sidebar.mysqlSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar mysqlSidebar"
-  },
-  "sidebar.mysqlSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar mysqlSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.mysqlSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -503,10 +467,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar mssqlSidebar"
   },
-  "sidebar.mssqlSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar mssqlSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.mssqlSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar mssqlSidebar, linking to the doc mssql/monitoring-support"
@@ -547,10 +507,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar tiberoSidebar"
   },
-  "sidebar.tiberoSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar tiberoSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.tiberoSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar tiberoSidebar, linking to the doc tibero/monitoring-support"
@@ -586,10 +542,6 @@
   "sidebar.cubridSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar cubridSidebar"
-  },
-  "sidebar.cubridSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar cubridSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.cubridSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -631,10 +583,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar altibaseSidebar"
   },
-  "sidebar.altibaseSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar altibaseSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.altibaseSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar altibaseSidebar, linking to the doc altibase/monitoring-support"
@@ -675,10 +623,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar redisSidebar"
   },
-  "sidebar.redisSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar redisSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.redisSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar redisSidebar, linking to the doc redis/monitoring-support"
@@ -718,10 +662,6 @@
   "sidebar.mongodbSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar mongodbSidebar"
-  },
-  "sidebar.mongodbSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar mongodbSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.mongodbSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -1179,10 +1119,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar serverSidebar"
   },
-  "sidebar.serverSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar serverSidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.serverSidebar.doc.지원 환경": {
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar serverSidebar, linking to the doc server/supported-spec"
@@ -1242,10 +1178,6 @@
   "sidebar.kubeSidebar.category.알림 설정하기": {
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar kubeSidebar"
-  },
-  "sidebar.kubeSidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar kubeSidebar, linking to /apidoc/openapi-intro"
   },
   "sidebar.kubeSidebar.doc.지원 환경": {
     "message": "Supported Environment",
@@ -1399,10 +1331,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar postgrev1Sidebar"
   },
-  "sidebar.postgrev1Sidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar postgrev1Sidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.postgrev1Sidebar.doc.지원 환경": {
     "message": "Support Environment",
     "description": "The label for the doc item 지원 환경 in sidebar postgrev1Sidebar, linking to the doc postgresql-v1/monitoring-support"
@@ -1479,10 +1407,6 @@
     "message": "Alert Settings",
     "description": "The label for category 알림 설정하기 in sidebar mysqlv1Sidebar"
   },
-  "sidebar.mysqlv1Sidebar.link.Open API": {
-    "message": "Open API",
-    "description": "The label for link Open API in sidebar mysqlv1Sidebar, linking to /apidoc/openapi-intro"
-  },
   "sidebar.mysqlv1Sidebar.doc.지원 환경": {
     "message": "Support Environment",
     "description": "The label for the doc item 지원 환경 in sidebar mysqlv1Sidebar, linking to the doc mysql-v1/monitoring-support"
@@ -1522,5 +1446,17 @@
   "sidebar.rumsSidebar.category.메트릭스": {
     "message": "Metrics",
     "description": "The label for category 메트릭스 in sidebar rumsSidebar"
+  },
+  "sidebar.indexSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar indexSidebar, linking to openapi"
+  },
+  "sidebar.openapiSidebar.category.Open API": {
+    "message": "Open API",
+    "description": "The label for category Open API in sidebar openapiSidebar"
+  },
+  "sidebar.openapiSidebar.category.Open API 호출": {
+    "message": "Open API call",
+    "description": "The label for category Open API 호출 in sidebar openapiSidebar"
   }
 }
