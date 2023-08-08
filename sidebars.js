@@ -3155,7 +3155,6 @@ const sidebars = {
                 'release-notes/server/server-2_3_2',
                 'release-notes/server/server-2_3_1',
                 'release-notes/server/server-2_3_0',
-                'release-notes/server/server-2_2_9',
                 'release-notes/server/server-previous',
               ],
             },
