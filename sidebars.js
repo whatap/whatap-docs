@@ -97,7 +97,8 @@ const sidebars = {
             'java/agent-apdex',
             'java/agent-static',
             'java/agent-toplogy',
-            'java/agent-additional-option'
+            'java/agent-additional-option',
+            'java/async-tracking',
           ]
         },
         {
@@ -2980,17 +2981,18 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_12',
+                id: 'release-notes/java/java-2_2_13',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_12',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_13',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_12',
                 'release-notes/java/java-2_2_11',
                 'release-notes/java/java-2_2_10',
                 'release-notes/java/java-2_2_9',
@@ -2999,7 +3001,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_6',
                 'release-notes/java/java-2_2_5',
                 'release-notes/java/java-2_2_4',
-                'release-notes/java/java-2_2_3',
                 'release-notes/java/java-previous',
               ],
             },
