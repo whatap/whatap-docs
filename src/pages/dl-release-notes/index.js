@@ -1,6 +1,6 @@
 import React from 'react';
 import PdfDownload from '@site/src/components/dl-release-notes/PdfDownload';
-import { svList, javaList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList } from '@site/src/components/dl-release-notes/pdfList.js';
+import { svList, javaList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList, dbxList, xosList, etcList } from '@site/src/components/dl-release-notes/pdfList.js';
 import Layout from '@theme/Layout';
 import styles from './styles.module.css';
 
@@ -42,6 +42,18 @@ export default function Dlreleasenotes() {
             <hr/>
 
             <PdfDownload h2title='Kubernetes Agent' typeName='k8s' pdfList={k8sList} />
+
+            <hr/>
+
+            <PdfDownload h2title='DBX Agent' typeName='dbx' pdfList={dbxList} />
+
+            <hr/>
+
+            <PdfDownload h2title='XOS Agent' typeName='xos' pdfList={xosList} />
+
+            <hr/>
+
+            <PdfDownload h2title='ETC' typeName='etc' pdfList={etcList} />
             
             <div class={styles.lastdiv}></div>
         </Layout>
