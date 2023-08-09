@@ -705,11 +705,6 @@ const sidebars = {
                 'nodejs/set-event-format',
               ],
             },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
           ],
         }
       ]
