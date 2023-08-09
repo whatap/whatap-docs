@@ -572,4 +572,145 @@ const goList = [
     },
 ];
 
-export {svList, javaList, phpList, nodejsList, pyList, dotnetList, goList}
+const serverList = [
+    {
+        "name": "Server-agent-v2.4.0",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.4.0.pdf",
+        "docs": "/release-notes/server/server-2_4_0"
+    },
+    {
+        "name": "Server-agent-v2.3.9",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.9.pdf",
+        "docs": "/release-notes/server/server-2_3_9"
+    },
+    {
+        "name": "Server-agent-v2.3.8",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.8.pdf",
+        "docs": "/release-notes/server/server-2_3_8"
+    },
+    {
+        "name": "Server-agent-v2.3.7",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.7.pdf",
+        "docs": "/release-notes/server/server-2_3_7"
+    },
+    {
+        "name": "Server-agent-v2.3.6",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.6.pdf",
+        "docs": "/release-notes/server/server-2_3_6"
+    },
+    {
+        "name": "Server-agent-v2.3.4",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.4.pdf",
+        "docs": "/release-notes/server/server-2_3_4"
+    },
+    {
+        "name": "Server-agent-v2.3.3",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.3.pdf",
+        "docs": "/release-notes/server/server-2_3_3"
+    },
+    {
+        "name": "Server-agent-v2.3.2",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.2.pdf",
+        "docs": "/release-notes/server/server-2_3_2"
+    },
+    {
+        "name": "Server-agent-v2.3.1",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.1.pdf",
+        "docs": "/release-notes/server/server-2_3_1"
+    },
+    {
+        "name": "Server-agent-v2.3.0",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.3.0.pdf",
+        "docs": "/release-notes/server/server-2_3_0"
+    },
+    {
+        "name": "Server-agent-v2.2.9",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.9.pdf",
+        "docs": "/release-notes/server/server-2_2_9"
+    },
+    {
+        "name": "Server-agent-v2.2.8",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.8.pdf",
+        "docs": "/release-notes/server/server-2_2_8"
+    },
+    {
+        "name": "Server-agent-v2.2.7",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.7.pdf",
+        "docs": "/release-notes/server/server-2_2_7"
+    },
+    {
+        "name": "Server-agent-v2.2.6",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.6.pdf",
+        "docs": "/release-notes/server/server-2_2_6"
+    },
+    {
+        "name": "Server-agent-v2.2.5",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.5.pdf",
+        "docs": "/release-notes/server/server-2_2_5"
+    },
+    {
+        "name": "Server-agent-v2.2.4",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.4.pdf",
+        "docs": "/release-notes/server/server-2_2_4"
+    },
+    {
+        "name": "Server-agent-v2.2.3",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.3.pdf",
+        "docs": "/release-notes/server/server-2_2_3"
+    },
+    {
+        "name": "Server-agent-v2.2.2",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.2.pdf",
+        "docs": "/release-notes/server/server-2_2_2"
+    },
+    {
+        "name": "Server-agent-v2.2.1",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.1.pdf",
+        "docs": "/release-notes/server/server-2_2_1"
+    },
+    {
+        "name": "Server-agent-v2.2.0",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.2.0.pdf",
+        "docs": "/release-notes/server/server-2_2_0"
+    },
+    {
+        "name": "Server-agent-v2.1.9",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.1.9.pdf",
+        "docs": "/release-notes/server/server-2_1_9"
+    },
+    {
+        "name": "Server-agent-v2.1.8",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.1.8.pdf",
+        "docs": "/release-notes/server/server-2_1_8"
+    },
+    {
+        "name": "Server-agent-v2.1.7",
+        "date": "2023-00-00",
+        "url": "/pdf/release-notes/Server-agent-v2.1.7.pdf",
+        "docs": "/release-notes/server/server-2_1_7"
+    }
+];
+
+export {svList, javaList, phpList, nodejsList, pyList, dotnetList, goList, serverList}
