@@ -247,29 +247,30 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 #### Fields
 
-| フィールド名                       | 単位      | 説明                                                          | 備考                 |
-| ---------------------------- | ------- | ----------------------------------------------------------- | ------------------ |
-| alloctable_cpu               | ミリコア    | クラスター全体のコア数                                                 | クラスタープロジェクトOnly    |
-| alloctable_ephemeral-storage | バイト     | クラスター全体の割り当て可能なephemeral storage                            | クラスタープロジェクトOnly    |
-| alloctable_hugepages-1gi     | バイト     | クラスター全体の割り当て可能なhugepages-1Gi                                | クラスタープロジェクトOnly    |
-| alloctable_hugepages-2mi     | バイト     | クラスター全体の割り当て可能なhugepages-2Mi                                | クラスタープロジェクトOnly    |
-| alloctable_memory            | バイト     | クラスタ全体割り当て可能なメモリ                                            | クラスタープロジェクトOnly    |
-| alloctable_pods              | 整数      | 割り当て可能なPod数                                                 | -                  |
-| available_pod                | 整数      | Available Pod数                                              | -                  |
-| desired_pod                  | 整数      | Deployment、ReplicaSet、StatefulSetおよびSingle Podに対するポッド数設定の合計 | -                  |
-| nodes                        | 整数      | ノード数                                                        | -                  |
-| pod_phase_Pending            | 整数      | PendingステータスPod数                                            | -                  |
-| pod_phase_Running            | 整数      | Running状態Pod数                                               | -                  |
-| running_containers           | 整数      | Runningコンテナ数                                                | -                  |
-| stopped_containers           | 整数      | Stoppedコンテナ数                                                | -                  |
-| total_available_cpu          | 整数      | 割り当て可能なCPUの合計                                               | -                  |
-| total_available_memory       | 整数      | 割り当て可能なMemory合計                                             | -                  |
-| total_limit_cpu              | ミリコア    | Limit CPU合計                                                 | -                  |
-| total_limit_memory           | バイト     | Limit Memory合計                                              | -                  |
-| total_request_cpu            | ミリコア    | Request CPU合計                                               | -                  |
-| total_request_memory         | バイト     | Request Memory合計                                            | -                  |
-| unavailable_pod              | 整数      | Unavailable Pod 수                                           | -                  |
-| waiting_containers           | 整数      | Waiting Container数                                          | -                  |
+| フィールド名                       | 単位        | 説明                                                                                                          | 備考                   |
+| ---------------------------- | --------- | ----------------------------------------------------------------------------------------------------------- | -------------------- |
+| alloctable_cpu               | ミリコア      | クラスター全体のコア数                                                                                                 | クラスタープロジェクトOnly      |
+| alloctable_ephemeral-storage | バイト       | クラスター全体の割り当て可能なephemeral storage                                                                            | クラスタープロジェクトOnly      |
+| alloctable_hugepages-1gi     | バイト       | クラスター全体の割り当て可能なhugepages-1Gi                                                                                | クラスタープロジェクトOnly      |
+| alloctable_hugepages-2mi     | バイト       | クラスター全体の割り当て可能なhugepages-2Mi                                                                                | クラスタープロジェクトOnly      |
+| alloctable_memory            | バイト       | クラスタ全体割り当て可能なメモリ                                                                                            | クラスタープロジェクトOnly      |
+| alloctable_pods              | 整数        | 割り当て可能なPod数                                                                                                 | -                    |
+| available_pod                | 整数        | PhaseがRunning状態のPodの数                                                                                       | -                    |
+| desired_pod                  | 整数        | `metadata.ownerReferences`なしで配布されたPod数とクバネティスオブジェクト(ReplicaSet, Daemonset, StatefulSet)に定義されたDesired Pod数の和 | -                    |
+| ^                            | ^         | `kubectl get pods -A`で照会したPod数と同じ                                                                           | -                    |
+| nodes                        | 整数        | ノード数                                                                                                        | -                    |
+| pod_phase_Pending            | 整数        | PendingステータスPod数                                                                                            | -                    |
+| pod_phase_Running            | 整数        | Running状態Pod数                                                                                               | -                    |
+| running_containers           | 整数        | Runningコンテナ数                                                                                                | -                    |
+| stopped_containers           | 整数        | Stoppedコンテナ数                                                                                                | -                    |
+| total_available_cpu          | 整数        | 割り当て可能なCPUの合計                                                                                               | -                    |
+| total_available_memory       | 整数        | 割り当て可能なMemory合計                                                                                             | -                    |
+| total_limit_cpu              | ミリコア      | Limit CPU合計                                                                                                 | -                    |
+| total_limit_memory           | バイト       | Limit Memory合計                                                                                              | -                    |
+| total_request_cpu            | ミリコア      | Request CPU合計                                                                                               | -                    |
+| total_request_memory         | バイト       | Request Memory合計                                                                                            | -                    |
+| unavailable_pod              | 整数        | PhaseがRunning状態ではない(Pending, Failed, Succedded)Pod数                                                         | -                    |
+| waiting_containers           | 整数        | Waiting Container数                                                                                          | -                    |
 
 ### Pod(`kube_pod`) 指標
 
@@ -455,17 +456,18 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 #### Fields
 
-| フィールド名            | 単位      | 説明                  | 備考 |
-| ----------------- | ------- | ------------------- | -- |
-| available_pod     | 整数      | Available Pod数      | -  |
-| desired_pod       | 整数      | Desired Pod数        | -  |
-| limit_cpu         | ミリコア    | CPU Limit使用量        | -  |
-| limit_memory      | バイト     | Memory Limit使用量     | -  |
-| request_cpu       | ミリコア    | CPU Request使用量      | -  |
-| request_memory    | バイト     | Memory Request使用量   | -  |
-| running_container | 整数      | Running Container数  | -  |
-| stopped_container | 整数      | Stopped Container数  | -  |
-| waiting_container | 整数      | Waiting Container数  | -  |
+| フィールド名            | 単位        | 説明                                                                                                          | 備考 |
+| ----------------- | --------- | ----------------------------------------------------------------------------------------------------------- | -- |
+| available_pod     | 整数        | PhaseがRunning状態のPodの数                                                                                       | -  |
+| desired_pod       | 整数        | `metadata.ownerReferences`なしで配布されたPod数とクバネティスオブジェクト(ReplicaSet, Daemonset, StatefulSet)に定義されたDesired Pod数の和 | -  |
+| ^                 | ^         | `kubectl get pods -A`で照会したPod数と同じ                                                                           | -  |
+| limit_cpu         | ミリコア      | CPU Limit使用量                                                                                                | -  |
+| limit_memory      | バイト       | Memory Limit使用量                                                                                             | -  |
+| request_cpu       | ミリコア      | CPU Request使用量                                                                                              | -  |
+| request_memory    | バイト       | Memory Request使用量                                                                                           | -  |
+| running_container | 整数        | Running Container数                                                                                          | -  |
+| stopped_container | 整数        | Stopped Container数                                                                                          | -  |
+| waiting_container | 整数        | Waiting Container数                                                                                          | -  |
 
 ### Kubernetes Horizontal Pod Autoscaler(HPA)(`kube_hpa_stat`) 指標
 

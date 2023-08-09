@@ -1,0 +1,29 @@
+### Multi-transaction
+
+Multi-transaction indicates the transaction involving other agents or projects. In the **_Multi-transaction_** tab, you can see the call relationships between applications registered in the WhaTap monitoring service.
+
+:::tip
+
+To trace multi-transactions, set the `mtrace_enabled` option to `true` in **_Management_** > **_Agent Settings_**. For more information about the agent configuration, see [the following](set-agent#set-agent-service).
+
+:::
+
+![Multi-transaction](/img/analysis-tx-multi.png)
+
+-   **_Chart_**: Provides the call relationships for each transaction in a flowchart. Select a transaction node to see the trace analysis for the transaction node. In **_Chart_** mode, you can use the mouse to go to a desired position or zoom in or out by scrolling.
+
+    -   ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
+
+    -   ![Configuration icon](/img/ico-setting.svg) **_Chart view settings_**: You can select or deselect the elements to be displayed on the chart.
+
+-   **_Table_**: In the form of table, you can check the data for each transaction included in the multi-transaction. You can select the ![Column icon](/img/ico-column.svg) column selection icon to edit the table header columns. You can see the trace analysis data by selecting each transaction item.
+
+-   **_Tree_**: You can see the call relationships between transactions in a tree format. The related additional functions are the same as those of the **_Tree View_** tab.
+
+:::note
+
+-   You can see them in the transaction list marked with the ![Multi-transaction icon](/img/ic-s-mult-transation.svg) icon.
+
+-   For more information about the multi-transaction, see [the following](trs-multi-trace).
+
+:::

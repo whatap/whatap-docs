@@ -1,3 +1,9 @@
 Home > Select Project > **_Dashboard_** > **_Slow Query_**
 
-It provides the response time distribution by SQL. Through the response distribution, you can intuitively check the status of delayed SQL and identify the cause of failure by specifying the target. 
+It reads the slow query logs from the database and display them as a visual chart. The reference time for a slow query is set in a DB parameter, and the SQL in the slow query log is displayed.
+
+:::info
+
+Even for the same SQL, in case of the **SQL Elapse Map** metric in **_Multiple instance monitoring_**, an error may occur because the time is calculated based on active sessions.
+
+:::

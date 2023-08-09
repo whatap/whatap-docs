@@ -19,7 +19,7 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成�
 
 {@include: ../common-items/_db-agent-dbx-basic-option.mdx}
 
-## CUBRID専用オプション
+## CUBRID専用オプション{#cubrid}
 
 -   **db_port** <span class='type'>Int</span>
 
@@ -50,6 +50,12 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルに作成�
     デフォルト値 `broker1`、`query_editor`
 
     CUBRIDをインストールするとデフォルトで`broker1`、`query_editor`でブローカーが実行されます。ユーザーが任意にブローカーの名前を変更したり、追加で起動したりした場合は、変更を入力してください。
+
+    :::note
+
+    `broker`オプションで設定する名前は、`cubrid broker status`コマンドで確認できます。
+
+    :::
 
 ## データ収集
 

@@ -90,11 +90,11 @@ kubectl logs pod/<Pod名> -c <コンテナ名> -n <Namespace名>
 
 #### Standard OutのNodeエージェント設定の追加
 
-WhaTapログサービスを通じてコンテナのStandard Outputを保存するためには、WhaTapクバネティスノードエージェントに `logsink_enabled=true`オプションを設定する必要があります。設定およびWhaTapログモニタリングサービスの詳細については、[次の文書](../log/log-k8s#k8s-log-node)を参照してください。
+WhaTapログサービスをコンテナのStandard Outputを保存するには、WhaTapクバネティスノードエージェントで `logsink_enabled=true`オプションを設定する必要があります。設定およびWhaTapログモニタリングサービスの詳細については、[次の文書](../log/log-k8s#k8s-log-node)を参照してください。
 
-#### コンテナ内部アプリケーションログ収集のためのアプリケーションエージェント設定の追加
+#### コンテナ内部のアプリケーションログ収集用のアプリケーションエージェント設定の追加
 
-WhaTapログサービスを通じて、コンテナ上で実行されるアプリケーションのログを収集するには[次の文書](../log/log-k8s#k8s-log-app)を参照してください。Java、Python、Goをサポートします。 
+WhaTapログサービスをコンテナ上で実行されるアプリケーションのログを収集するには[次の文書](../log/log-k8s#k8s-log-app)を参照してください。Java、Python、Goをサポートしています。 
 
 :::caution
 

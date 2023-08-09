@@ -14,6 +14,161 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.107.05
+
+August 4, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+-   <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the filter operator from <code>=</code> to <code>!=</code>.
+
+-   <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the search value that appears by entering the numeric keyword, <code>.n</code> to be displayed from <code>+>= 123</code> to <code>>= 123</code> as the <code>comparison operator</code> <code>search value</code>.
+
+* * *
+
+### `Database`
+
+#### MongoDB
+
+<p><Status>Fixed</Status> Under the table in <UI>Instance list</UI>, fixed the problem where any database item is missing.</p>
+
+</div>
+
+## Preview 1.107.04
+
+August 3, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+In the **_Transaction analysis_** window, modify the following.
+
+-   <Status>Fixed</Status> Fixed the bug where multi-transaction information does not appear when entering from the <code>Container</code> platform's master project.
+
+-   <Status>Fixed</Status> Fixed the project filtering's malfunction in <UI>Multi-transaction</UI> tab > <UI>Show chart</UI>.
+
+-   <Status>Fixed</Status> Fixed the malfunction while sorting by the transaction ID and multi-transaction ID columns in the transaction list.
+
+-   <Status>Fixed</Status> Fixed missing translation tooltips for button descriptions in the <UI>Tree View</UI> tab.
+
+    -   **Display Time** → **_시간 표시_**
+
+    -   **Hide Time** → **_시간 숨기기_**
+
+    -   **Display Time Bar** → **_시간바 표시_**
+
+-   <Status>Change</Status> Modified the targets to search in the transaction list.
+
+    -   Before: Need to specify the target columns to search
+
+    -   After: Columns displayed on the screen
+
+* * *
+
+### `Application`
+
+#### Application Dashboard
+
+<p><Status>Change</Status> Added the guide on organization of the <UI>Transaction analysis</UI> function.</p>
+
+* * *
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status> In <UI>Instance monitoring</UI>, changed the metrics for the memory free (Cloudwatch) widget included in the <UI>Default(rds)</UI> preset (<code>FreeStorageSpace</code> → <code>FreeableMemory</code>).</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Log</UI>, the filtering is disabled when no category is selected in case of adding the template events with <UI>Composite log event</UI>.
+-   <Status>Change</Status> In the highlight function under <UI>Log</UI>, changed the colors that can be selected and the log's body font.
+
+</div>
+
+## Preview 1.107.03
+
+August 2, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In Management > Project member, deleted the <b>Member role scheme reorganization notice</b> message window.
+
+-   <Status>Fixed</Status> In <UI>Flex Board</UI>, hided the blog content when creating a Flex Board if the language is not set to Korean.
+
+* * *
+
+### `Application`
+
+In <p><UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Transaction</UI> > <UI>T</UI> / <UI>U</UI> selection > <UI>Top stack of URL</UI> / <UI>Unique stack URL</UI>, the following functions have been modified.</p>
+
+-   <Status>Fixed</Status> Modified the <UI>Time selector</UI> option to the latest version.
+
+-   <Status>Fixed</Status> Changed the data lookup period from 62 days to 3 days.
+
+* * *
+
+### `Database`
+
+#### MS SQL Server
+
+<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the configuration command example in <em>whatap.conf</em> under the <UI>Download database agent</UI> section.</p>
+
+</div>
+
+## Preview 1.107.02
+
+August 1, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Common
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI>, fixed the whiteout phenomenon during slow queries.</p>
+
+#### MySQL
+
+<p><Status>Change</Status> Under <UI>Management</UI> > <UI>Agent installation</UI>, modified the `grant` command for collection the table data in the <UI>Create the monitoring account</UI> section.</p>
+
+</div>
+
+## Preview 1.107.01
+
+August 1, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> If an organization is selected, fixed the issue where it is deselected when the <UI>Agent Installation</UI> menu moves to the project list.</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Stack</UI>, modified the maximum lookup period for top stacks and unique stacks from 62 days to 3 days.
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Perf. trend</UI>, modified the maximum lookup period from 62 days to 31 days.
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, replaced the filter to enhance the function.</p>
+
+</div>
+
 ## Preview 1.107.00
 
 July 31, 2023

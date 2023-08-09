@@ -1,0 +1,75 @@
+Select an item to view details from the transaction list. On the right of the screen, the detailed analysis of the selected transaction appears. In this state, if another transaction item is selected, the detailed analysis of the selected transaction item is changed.
+
+To analyze the transaction performance, WhaTap collects and displays the properties such as name and client data, transaction performance, and detailed execution records for each section.
+
+<Xclude product='php,nodejs,golang'>
+
+![Trace analysis](/img/analysis-tx-table-view.png)
+
+</Xclude>
+
+<InDoc product='php,nodejs,golang'>
+
+![Trace analysis](/img/analysis-tx-table-view-none-actx.png)
+
+</InDoc>
+
+-   In the ![Number 5](/img/number-05.png) area, the step data can be seen in various formats. Select a desired type of tab.
+
+-   In the ![number 6](/img/number-06.png) area, you can see the basic information for transactions. The information matches the columns in the list on the left.
+
+-   ![Number 7](/img/number-07.png) ![Statistics icon](/img/ic-static.svg): The statistical data window for the corresponding URL or each execution section appears. If you select **_Detail >_** in the statistical data window, **_STAT/REPORT_** > **_Statistics_** appears.
+
+    :::note
+
+    For more information about **_Statistics_**, see [the following](analysis-apm-trs).
+
+    :::
+
+-   By dragging ![Number 8](/img/number-08.png) <LinkImage img='hitmap-lr-drag.svg' alt='좌우 드래그 아이콘' className='_drag' /> to the left or right, you can adjust the screen size. This is useful when you want to see more information.
+
+    :::note
+
+    If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
+
+    :::
+
+The collected types of **Step** are as follows. The diagrams and texts are color coded.
+
+-   **_DB Connection_** step <span class='type'>START-END</span>
+
+    It includes the performance for connection to RDB. Step information includes the name, response time, and error.
+
+-   **_SQL_** step <span class='type'>START-END</span>
+
+    It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
+
+-   **_HTTP Call_** step <span class='type'>START-END</span>
+
+    It includes the performance for the external HTTP service call. Step information includes URL, host, port, response time, and errors.
+
+-   **_Message_** step <span class='type'>ADD</span>
+
+    While collecting traces, the message steps are used to collect the records of all irregular sections.  
+
+-   **_Socket_** step <span class='type'>ADD</span>
+
+    Step to represent the socket open.
+
+-   **_Method_** step <span class='type'>START-END</span>
+
+    The method response time is traced.
+
+<Xclude product='php,nodejs,golang'>
+
+-   **_Active Stack_** step <span class='type'>START-END</span>
+
+    It includes the active step information. It is created and collected by a separate thread and it is added to the transaction trace.
+
+</Xclude>
+
+:::note
+
+In the WhaTap monitoring service, **Step** is used as the same meaning as **Span**.
+
+:::

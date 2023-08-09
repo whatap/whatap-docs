@@ -2,66 +2,113 @@
 
 You can check and compare key metrics of multiple instances in a graph chart. You can see the CPU and memory utilization, active sessions, slow queries, and queued sessions in real time. The colors in the graph chart are the same as the ones in the ![number 1](/img/number-01.png) **_Instance_**. Hover your mouse over the graph chart to see the figure through a tooltip.
 
--   **_CPU usage (%)_**: You can see the CPU usages for each instance in real time.
+-   **_CPU Usage (%)_**
 
--   **_Memory usage (%)_**: You can see the memory usages for each instance in real time.
+    You can see the CPU usages for each instance in real time.
 
--   **_XOS Disk Usage_**: Displays the disk utilizations, free sizes, and total sizes for each instance. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a new window.
+-   **_Memory Usage (%)_**
 
--   **_Active Sessions_**: Displays a real-time chart for the number of sessions running queries.
+    You can see the memory usages for each instance in real time.
+
+-   **_XOS Disk Usage_**
+
+    Displays the disk utilizations, free sizes, and total sizes for each instance. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a new window.
+
+    :::tip
+
+    If there is no data displayed, add the following settings to the _xos.conf_ file.
+
+    ```ini title='xos.conf'
+    # Off if the disk usage is 0; unit: second
+    disk_usage_interval=60
+    ```
+
+    :::
+
+-   **_Active Sessions_**
+
+    Displays a real-time chart for the number of sessions running queries.
 
 <InDoc product='postgresql'>
 
--   **_DML Count_**: Displays a real-time chart for the number of statements run for DML (Data Manipulation Language).
+-   **_DML Count_**
 
--   **_Elapsed time_**: Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
-
--   **_Logical Read_**: Displays a real-time chart for the data read counts in the buffer cache.
-
--   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+    Displays a real-time chart for the number of statements run for DML (Data Manipulation Language).
 
 </InDoc>
 
 <InDoc product='mysql'>
 
--   **_SQL Executed_**: Sum of SQL executions per second for each instance. It is based on the value of the `Questions` (total number of query requests) metric collected every 5 seconds.
+-   **_SQL Executed_**
 
--   **_Slow Query_**: Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
-
--   **_Logical Read_**: Displays a real-time chart for the data read counts in the buffer cache.
-
--   **_SQL Elapse Map_**: Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+    Sum of SQL executions per second for each instance. It is based on the value of the `Questions` (total number of query requests) metric collected every 5 seconds.
 
 </InDoc>
 
--   **_Lock Wait Sessions_**: Displays a real-time chart for queued counts to acquire the row lock.
+-   **_Slow Query_**
+
+    Displays a real-time chart for slow queries for each time zone. If you drag a specific part of the chart, the **_Slow Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+
+-   **_Logical Read_**
+
+    Displays a real-time chart for the data read counts in the buffer cache.
+
+-   **_SQL Elapse Map_**
+
+    Displays a real-time chart for the elapsed times of running queries. If you drag a specific part of the chart, the **_Query List_** appears. You can move the chart up or down by selecting ![Up Arrow icon](/img/up-arrow.svg) or ![Down Arrow icon](/img/down-arrow.svg).
+
+    :::note
+
+    The execution times of queries are calculated after collecting active sessions. Therefore, depending on the active session collection cycle, there may be a margin of error. See the following figure. The execution times of SQL queries that have ended within the collection cycle are not calculated. A shorter collection cycle may decrease the margin of error, but considering the database load, it is typically set to 5 seconds. It is useful for monitoring long-running queries. The same is true for the data in **_SQL statistics_**.
+
+    ![](/img/db-sql-elapse-map-example.png)
+
+    :::
+
+-   **_Lock Wait Sessions_**
+
+    Displays a real-time chart for queued counts to acquire the row lock.
 
 <InDoc product='postgresql'>
 
--   **_Commit Count_**: Displays a real-time chart for the counts of committed transactions.
+-   **_Commit Count_**
+
+    Displays a real-time chart for the counts of committed transactions.
 
 </InDoc>
 
 <InDoc product='mysql'>
 
--   **_Commit_**: Displays a real-time chart for the counts of committed transactions.
+-   **_Commit_**
+
+    Displays a real-time chart for the counts of committed transactions.
 
 </InDoc>
 
--   **_Replication Delay_**: Displays a real-time chart for the delayed times that are reflected in the replication DB in case of the replication structure.
+-   **_Replication Delay_**
 
--   **_Physical Read_**: Displays a real-time chart for the data read counts in the physical disks.
+    Displays a real-time chart for the delayed times that are reflected in the replication DB in case of the replication structure.
+
+-   **_Physical Read_**
+
+    Displays a real-time chart for the data read counts in the physical disks.
 
 <InDoc product='postgresql'>
 
--   **_Wait Event_**: If the backend process is currently queued, you can check the queued event names and counts. Hover your mouse over the chart to see the information through a tooltip.
+-   **_Wait Event_**
+
+    If the backend process is currently queued, you can check the queued event names and counts. Hover your mouse over the chart to see the information through a tooltip.
 
 </InDoc>
 
 <InDoc product='mysql'>
 
--   **_Full Scan_**: Displays the number of full scans for the tables per instance in a real-time chart.
+-   **_Full Scan_**
 
--   **_tmp table_**: Displays a real-time chart for internal temporary table counts created by the server during command execution for each instance.
+    Displays the number of full scans for the tables per instance in a real-time chart.
+
+-   **_tmp table_**
+
+    Displays a real-time chart for internal temporary table counts created by the server during command execution for each instance.
 
 </InDoc>

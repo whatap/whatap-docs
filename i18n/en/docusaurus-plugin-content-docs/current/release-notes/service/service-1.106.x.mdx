@@ -1,9 +1,141 @@
 ---
 id: service-1_106_x
 title: Service 1.106.X
-toc_max_heading_level: 3
+toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_104_x
 ---
+
+## Service 1.106.08
+
+August 7, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+-   <Status>Change</Status> In the <UI>Table view</UI> tab of the <UI>Transaction analysis</UI> window, modified the expression for trace information that corresponds to the <UI>Contents</UI> column.
+
+    -   Before: The description is displayed in a row.
+
+    -   After:
+        -   The description can be displayed up to 4 rows.
+        -   When the information is clicked, the entire content of the step appears in modal mode.
+
+</div>
+
+## Service 1.106.07
+
+August 4, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### MongoDB
+
+<p><Status>Fixed</Status> Under the table in <UI>Instance list</UI>, fixed the problem where any database item is missing.</p>
+
+</div>
+
+## Service 1.106.06
+
+August 3, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+In the **_Transaction analysis_** window, modify the following.
+
+-   <Status>Fixed</Status> Fixed the bug where multi-transaction information does not appear when entering from the <code>Container</code> platform's master project.
+
+-   <Status>Fixed</Status> Fixed the project filtering's malfunction in <UI>Multi-transaction</UI> tab > <UI>Show chart</UI>.
+
+-   <Status>Fixed</Status> Fixed the malfunction while sorting by the transaction ID and multi-transaction ID columns in the transaction list.
+
+-   <Status>Fixed</Status> Fixed missing translation tooltips for button descriptions in the <UI>Tree View</UI> tab.
+
+    -   **Display Time** → **_시간 표시_**
+
+    -   **Hide Time** → **_시간 숨기기_**
+
+    -   **Display Time Bar** → **_시간바 표시_**
+
+-   <Status>Change</Status> Modified the targets to search in the transaction list.
+
+    -   Before: Need to specify the target columns to search
+
+    -   After: Columns displayed on the screen
+
+* * *
+
+### `Application`
+
+#### Application Dashboard
+
+<p><Status>Change</Status> Added the guide on organization of the <UI>Transaction analysis</UI> function.</p>
+
+* * *
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status> In <UI>Instance monitoring</UI>, changed the metrics for the memory free (Cloudwatch) widget included in the <UI>Default(rds)</UI> preset (<code>FreeStorageSpace</code> → <code>FreeableMemory</code>).</p>
+
+</div>
+
+## Service 1.106.05
+
+August 2, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In Management > Project member, deleted the <b>Member role scheme reorganization notice</b> message window.
+
+* * *
+
+### `Application`
+
+In <p><UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Transaction</UI> > <UI>T</UI> / <UI>U</UI> selection > <UI>Top stack of URL</UI> / <UI>Unique stack URL</UI>, the following functions have been modified.</p>
+
+-   <Status>Fixed</Status> Modified the <UI>Time selector</UI> option to the latest version.
+
+-   <Status>Fixed</Status> Changed the data lookup period from 62 days to 3 days.
+
+</div>
+
+## Service 1.106.04
+
+August 2, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### MySQL
+
+<p><Status>Change</Status> Under <UI>Management</UI> > <UI>Agent installation</UI>, modified the <code>grant</code> command to collect table data in the <UI>Create the monitoring account</UI> section.</p>
+
+</div>
+
+## Service 1.106.03
+
+August 1, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI>, fixed the whiteout phenomenon during slow queries.</p>
+
+</div>
 
 ## Service 1.106.02
 
@@ -15,11 +147,15 @@ July 31, 2023
 
 <p><Status>Fixed</Status> If an organization is selected, fixed the issue where it is deselected when the <UI>Agent Installation</UI> menu moves to the project list.</p>
 
+* * *
+
 ### `Application`
 
 -   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Stack</UI>, modified the maximum lookup period for top stacks and unique stacks from 62 days to 3 days.
 
 -   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Perf. trend</UI>, modified the maximum lookup period from 62 days to 31 days.
+
+* * *
 
 ### `Log`
 
@@ -44,6 +180,8 @@ July 26, 2023
 #### Dashboard
 
 <p><Status>Change</Status> The <UI>Transaction analysis</UI> function has been renewed.</p>
+
+<LinkImage img='release/release-note-tx-new-feature.png' desc='' className='noneborder' />
 
 #### Flex Board
 

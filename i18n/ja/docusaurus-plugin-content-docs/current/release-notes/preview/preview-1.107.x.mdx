@@ -14,6 +14,161 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.107.05
+
+2023年8月4日
+
+<div class='indentTab'>
+
+### `Log`
+
+-   <Status>Fixed</Status><UI>ログ検索機</UI>、<UI>ライブテール</UI>メニューからフィルターオペレーターの値を<code>=</code>から<code>!=</code>に修正
+
+-   <Status>Fixed</Status><UI>ログ検索機</UI>、<UI>ライブテール</UI>メニューから数字キーワード<code>.n</code>を入力した後に現れる検索値が<code>+>=123</code>から<code>>=123</code>のように<code>比較オペレーター</code><code>検索値</code>で出るように修正
+
+* * *
+
+### `Database`
+
+#### MongoDB
+
+<p><Status>Fixed</Status><UI>インスタンス一覧</UI>メニューのテーブルからデータベース項目が漏れる現象を修正</p>
+
+</div>
+
+## Preview 1.107.04
+
+2023年8月3日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+**_トランザクション分析_**ウィンドウで次の内容を修正します。
+
+-   <Status>Fixed</Status><code>Container</code>プラットフォームのマスタープロジェクトから進入する際に、マルチトランザクション情報が表示されないバグの修正
+
+-   <Status>Fixed</Status><UI>マルチトランザクション</UI>タブ><UI>チャート表示</UI>のプロジェクトフィルター機能の誤作動を修正
+
+-   <Status>Fixed</Status>ランザクション一覧のトランザクションID、マルチトランザクションIDカラム整列誤作動を修正
+
+-   <Status>Fixed</Status><UI>ツリービュー</UI>タブのボタン説明ツールチップ翻訳漏れの修正
+
+    -   **Display Time** → **_시간 표시_**
+
+    -   **Hide Time** → **_시간 숨기기_**
+
+    -   **Display Time Bar** → **_시간바 표시_**
+
+-   <Status>Change</Status>トランザクション一覧の検索機能の対象を変更
+
+    -   変更前:検索対象カラムの指定が必要
+
+    -   変更後:画面に表示されるカラム
+
+* * *
+
+### `Application`
+
+#### アプリケーションダッシュボード
+
+<p><Status>Change</Status><UI>トランザクション分析</UI>機能改編に対するガイドを追加</p>
+
+* * *
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status><UI>インスタンスモニタリング</UI>メニューの<UI>Default(rds)</UI>プリセットに含まれているメモリ余分(Cloudwatch)ウィジェットのメトリック変更(<code>FreeStorageSpace</code> → <code>FreeableMemory</code>)</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status><UI>アラート通知</UI>><UI>ログ</UI>メニューから<UI>複合ログイベント</UI>でテンプレートイベントを追加する場合、カテゴリが選択されていない状態ではフィルター項目を無効にするように処理
+-   <Status>Change</Status><UI>ログ</UI>下位メニューのハイライト機能から選択可能なカラー変更およびログ本文フォントの変更
+
+</div>
+
+## Preview 1.107.03
+
+2023年8月2日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>管理>プロジェクトメンバーメニューから<b>メンバー権限体系の改編を通知</b>メッセージウィンドウの削除
+
+-   <Status>Fixed</Status><UI>Flexボード</UI>メニューから言語設定が韓国語でない場合は、Flexボード作成時にブログコンテンツを非表示にする
+
+* * *
+
+### `Application`
+
+<p><UI>統計/レポート</UI>><UI>統計</UI>><UI>トランザクション</UI>><UI>T</UI>/<UI>U</UI>ボタン選択> <UI>トップスタックURL</UI>/<UI>ユニークスタックURL</UI>メニューから次の機能を修正します。</p>
+
+-   <Status>Fixed</Status><UI>時間選択</UI>オプション機能を最新バージョンに修正
+
+-   <Status>Fixed</Status>データ照会期間を62日から3日に修正
+
+* * *
+
+### `Database`
+
+#### MS SQL Server
+
+<p><Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューのWhaTap<UI>データベースエージェントダウンロード</UI>セクションで<em>whatap.conf</em>設定コマンドの例を追加</p>
+
+</div>
+
+## Preview 1.107.02
+
+2023年8月1日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### 共通
+
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューからスロークエリ照会時に現れるホワイトアウト現象の修正</p>
+
+#### MySQL
+
+<p><Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>モニタリング用アカウントの作成</UI>セクションでテーブル情報を収集するための`grant`コマンド修正</p>
+
+</div>
+
+## Preview 1.107.01
+
+2023年8月1日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>組織を選択した場合<UI>エージェントのインストール</UI>メニューからプロジェクト一覧に移動する際に選択した組織が解除される現象を修正</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status><UI>分析</UI><UI>スタック</UI>メニューでトップスタックとユニークスタックの最大照会期間を62日から3日に修正
+
+-   <Status>Fixed</Status><UI>分析</UI><UI>性能推移</UI>の最大照会期間を62日から31日に修正
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューにフィルター機能を強化するためのフィルター交換</p>
+
+</div>
+
 ## Preview 1.107.00
 
 2023年7月31日

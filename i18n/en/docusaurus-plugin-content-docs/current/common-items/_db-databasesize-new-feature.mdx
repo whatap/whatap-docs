@@ -1,0 +1,94 @@
+Home > Select Project > **_STAT/REPORT_** > **_Database Size_**
+
+It aggregates the sizes of tables for each database and provides trend data in a chart. 
+
+<InDoc product='mysql'>
+
+MySQL database size can be seen in `information_schema.tables`, and the monitoring account must have the table search role for aggregation. Role settings are required as follows.
+
+```sql
+grant select on {DB_NAME}.* to whatap;
+```
+
+:::note
+
+-   The sizes for `information_schema` and `performance_schema` are not collected. 
+
+-   The collection cycle is collected once every hour.
+
+:::
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
+The total database size is queried with the `pg_database_size` function, and the monitoring account must have the connect or `pg_read_all_stats` role. `template database` is excluded from collection.
+
+Individual table sizes can be queried with the `pg_relation_size`, `pg_indexes_size`, and `pg_total_relation_size` functions, and the query role for the corresponding schema is required.
+
+```sql
+grant pg_read_all_stats to whatap;
+grant usage on schema {schema_name} to whatap;
+```
+
+:::note
+
+-   The sizes for the `pg_catalog`, `sys`, `information_schema`, and `pg_toast` schemata are not collected.
+
+-   The collection cycle is collected once every hour.
+
+:::
+
+</InDoc>
+
+## Basic screen guide
+
+<ProdImg img='db-database-size.png' desc='데이터베이스 사이즈'/>
+
+1.  Set the time to search in **_Time_**. You can also select a lookup time by clicking the green button.
+
+2.  Select a target to view in **_Instance_**.
+
+3.  Select ![Search icon](/img/ico-btn-search.png).
+
+:::note
+
+-   The lookup time can be set up to 62 days. In case of a view for 3 days or more, the graph displays the daily average.
+
+-   Select the clock display area to query a random date and time. If you click the text range for date and time, the option appears to select the date and time.
+
+:::
+
+## Checking the changes over time
+
+If you select the graph bar at a specific time in **_Size trend_**, you can see the database size trend and change amounts from the start time to the selected time in a list.
+
+<ProdImg img='db-database-size-select-db.png' desc='데이터베이스 사이즈'/>
+
+## Checking the sizes for each table
+
+If you select a database in **_Size details_**, you can see the list of sizes for each table in the top 50.
+
+<ProdImg img='db-database-size-top50.png' desc='데이터베이스 사이즈'/>
+
+<InDoc product='mysql'>
+
+It displays **DATA SIZE**, **INDEX SIZE**, **ROWS** for each table by default. This is the information for `information_schema.tables` and may differ from the actual size. To see the **FILE SIZE** of `information_schema.innodb_tablespaces`, set the following option in the DBX agent. This size is close to the actual size.
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
+It displays **DATA SIZE** and **INDEX SIZE** for each table. PostgreSQL requires to set the following option in the DBX agent to collect table sizes.
+
+</InDoc>
+
+```ini title='whatap.conf'
+table_filesize=true
+```
+
+:::note
+
+It targets the tables for which the monitoring account has the query role. For more information about the monitoring account creation, see [the following](install-agent#uid).
+
+:::

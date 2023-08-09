@@ -4,22 +4,15 @@
 
 <InDoc product='mysql,mysql-v1'>
 
-### whatap.confファイルの設定
+### DBXエージェントファイルの設定
 
 ```ini title='whatap.conf'
 slow_query_log=ON
 ```
 
-:::note
+### DBパラメータおよび権限設定
 
--   DBサーバーに`log_output=FILE`として設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
--   RDSはxosをインストールする代わりに、CloudWatch使用のための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
-
-:::
-
-### DB、パラメータおよび権限設定
-
-```ini
+```ini title='my.cnf'
 slow_query_log = 1
 long_query_time = 3 # 例）3秒以上SQL記録S
 log_output=FILE # または TABLE
@@ -27,11 +20,15 @@ log_output=FILE # または TABLE
 
 :::note
 
-`log_output=TABLE`として設定した場合、`mysql.slow_log`の権限と容量を管理する必要があります。 次のコマンドを実行してください。
+-   DBサーバーに`log_output=FILE`として設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
-```bash
-grant select on mysql.slow_log to whatap;
-```
+-   RDSはxosをインストールする代わりに、CloudWatch使用のための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
+
+-   `log_output=TABLE`として設定した場合、`mysql.slow_log`の権限と容量を管理する必要があります。 次のコマンドを実行してください。
+
+    ```bash
+    grant select on mysql.slow_log to whatap;
+    ```
 
 :::
 
@@ -51,6 +48,8 @@ slow_query_log=ON
 log_min_duration_statement=500#例: 500ms以上に所要されるSQL記録
 ```
 
+</InDoc>
+
 ### DBサーバーのXOSエージェントの設定
 
 Slow queryの収集周期を調整するには、以下のように設定してください。
@@ -66,5 +65,3 @@ slow_query_interval=30#デフォルト値30秒
 -   モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
 
 :::
-
-</InDoc>

@@ -1,0 +1,94 @@
+ホーム画面 > プロジェクト選択 > **_統計/レポート_** > **_データベースサイズ_**
+
+データベースごとのテーブルのサイズを集計し、推移情報をチャートで提供します。 
+
+<InDoc product='mysql'>
+
+MySQLのデータベースサイズ情報は、`information_schema.tables`で照会し、モニタリングアカウントにテーブル照会権限がないと集計されません。 次のように権限設定が必要です。
+
+```sql
+grant select on {DB_NAME}.* to whatap;
+```
+
+:::note
+
+-   `information_schema`、`performance_schema`のサイズは収集されません。 
+
+-   収集サイクルは1時間に1回収集します。
+
+:::
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
+全体データベースサイズは、`pg_database_size`関数として照会し、モニタリングアカウントにconnect権限または`pg_read_all_stats`権限がなければなりません。 `template database`は収集から除外されます。
+
+個別テーブルのサイズは、`pg_relation_size`, `pg_indexes_size`, `pg_total_relation_size`関数として照会し、そのスキーマの照会権限が必要です。
+
+```sql
+grant pg_read_all_stats to whatap;
+grant usage on schema {schema_name} to whatap;
+```
+
+:::note
+
+-   `pg_catalog`、`sys`、`information_schema`、`pg_toast`スキーマのサイズは収集しません。
+
+-   収集サイクルは1時間に1回収集します。
+
+:::
+
+</InDoc>
+
+## 基本画面ガイド
+
+<ProdImg img='db-database-size.png' desc='데이터베이스 사이즈'/>
+
+1.  **_時間_**で照会したい時間を設定してください。 緑のボタンを選択して照会時間を選択することもできます。
+
+2.  **_インスタンス_**で照会したい対象を選択してください。
+
+3.  ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+:::note
+
+-   照会時間は最大62日まで設定できます。 3日以上照会する場合、グラフには1日平均で表示されます。
+
+-   日付と時間を検索するには、時計の表示を選択してください。 日付と時間テキスト領域をクリックして、日付と時間を選択するオプションを表示します。
+
+:::
+
+## 時間別変化量を確認する
+
+**_サイズ推移_**から特定時間のグラフバーを選択すると、開始時間から選択した時間までのデータベースサイズ推移と変化量を一覧形式で確認できます。
+
+<ProdImg img='db-database-size-select-db.png' desc='데이터베이스 사이즈'/>
+
+## テーブル別のサイズを確認する
+
+**_サイズ詳細_**でデータベースを選択すると、そのデータベース内のサイズTOP50に該当するテーブル別サイズを一覧で確認できます。
+
+<ProdImg img='db-database-size-top50.png' desc='데이터베이스 사이즈'/>
+
+<InDoc product='mysql'>
+
+基本的にテーブル別**DATA SIZE**、**INDEX SIZE**、**ROWS**を表示します。 これは`information_schema.tables`の情報で実際のサイズと異なる場合があります。 `information_schema.innodb_tablespaces`の**FILE SIZE**を一緒に確認するには、DBXエージェントに次のオプションを設定してください。 このサイズは実際のサイズに似ています。
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
+テーブル別**DATA SIZE**、**INDEX SIZE**を表示します。 PostgreSQLは、テーブルサイズ情報収集のためにDBXエージェントに次のオプションを設定する必要があります。
+
+</InDoc>
+
+```ini title='whatap.conf'
+table_filesize=true
+```
+
+:::note
+
+モニタリングアカウントに照会権限があるテーブルを対象とします。 モニタリング用アカウント作成の詳細については、[次の文書](install-agent#uid)を参照してください。
+
+:::

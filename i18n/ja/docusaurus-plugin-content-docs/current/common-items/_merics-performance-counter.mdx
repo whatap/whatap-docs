@@ -42,11 +42,11 @@ WhaTapエージェントのユーザーを区別するためのさまざまな�
 
 -   **リアルタイムユーザー**  
 
-    最近5分間のユーザー数をカウントします。 5秒ごとにshiftingすると、ユーザーをカウントします。 各サーバーでカウントされた数字は、HyperLogLogアルゴリズムによってマージされます。
+    過去5分間のユーザー数をカウントします。 5秒ごとにshiftingすると、ユーザーをカウントします。 各サーバーでカウントされた数は、HyperLogLogアルゴリズムによってマージされます。
 
--   **一日訪問者**(**DAU**, Daily Active User)
+-   **毎日の訪問者**(**DAU**, Daily Active User)
 
-    1日間システムに接続したユーザーをカウントします。24時間接続したユーザーをHyperLogLogで計算します。
+    1日にシステムに接続したユーザーをカウントします。24時間接続したユーザーをHyperLogLogで計算します。
 
 :::tip
 
@@ -56,11 +56,11 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 ## Service Counter
 
-トランザクションとトランザクションが使用するSQLまたは外部呼び出しなどの件数、応答時間エラー件数などに対するパフォーマンス指標が含まれます。
+トランザクションによって使用されたSQLまたは外部呼び出しの件数、応答時間、エラー件数などのパフォーマンス指標が含まれます。
 
 -   **Transaction Counter**
 
-    トランザクションを実行すると測定するカウンターです。
+    トランザクションを実行すると、測定するのはカウンターです。
 
     -   **件数**
     -   **応答時間**
@@ -74,12 +74,12 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
     -   **Active Status**
 
-        進行状態はMETHOD, SQL, HTTPC, DBC, SOCKET5つの状態で固定されています。
+        進行状況は、METHOD, SQL, HTTPC, DBC, SOCKETの5つの状態で固定されます。
 
         -   METHOD - 一般関数を呼び出す状態
-        -   SQL - DB SQL実行中の状態
-        -   HTTPC - 外部HTTP API(サービス)を呼び出し中の状態
-        -   DBC - DB接続を要求した状態、一般的にPoolから取得
+        -   SQL - DB SQLの実行中の状態
+        -   HTTPC - 外部HTTP API(サービス)を呼び出しの状態
+        -   DBC - DB接続を要求された状態、通常はPoolから取得
         -   SOCKET - TCPセッションに接続を要求している状態
 
 -   **SQL**
@@ -93,7 +93,7 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 -   **HTTP Call**
 
-    外部HTTPリクエストに対する現況をカウントします。
+    外部HTTPリクエストの状況をカウントします。
 
     -   **件数**
     -   **応答時間**
@@ -107,7 +107,7 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 -   **CPU** (sys, usr, wait, steal, irq, cores)
 
-    CPU使用量%です。各種類別に収集されます。仮想環境だけでStealが意味を持ちます。Cpu Coreの個数を一緒に収集しています。
+    CPU使用率%です。各種類別に収集されます。仮想環境のみ、Stealが意味を持ちます。Cpu Coreの数も収集されます。
 
 -   **Process CPU**
 
@@ -123,7 +123,7 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 -   **Disk**
 
-    Diskは Java ProcessのCurrentディレクトリの使用率(%)です。
+    Diskは、Java ProcessのCurrentディレクトリの使用率(%)です。
 
 -   **Heap** (Total, Used, Perm)
 
@@ -131,15 +131,15 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 -   **GC** (Count, Time)
 
-    5秒間に発生したGC件数と時間の合計です。
+    5秒間に発生したGCインシデント件数と時間の合計です。
 
 -   **ObjectPendingFinalizationCount**
 
-    GCが呼び出される途中にfinalize()を実行するために待機中のオブジェクトの数です。この値が大きくなると、GCtimeが遅れる可能性があります。
+    GC呼び出し中にfinalize() を実行するために待機しているオブジェクトの数です。この値が大きくなると、GCtimeが遅れる可能性があります。
 
 -   **Thread** (start Count, Count, Daemon, Peak Count)
 
-    JVMが実行されてから開始されたスレッド数、現在実行中のスレッド、デーモン、最大スレッド数を収集します。これを通じて、スレッドプールが必要かどうかの判断ができます。
+    JVMが実行されてから開始されたスレッド数、現在実行中のスレッド、デーモン、最大スレッド数を収集します。例えば、スレッドプールが必要かどうかを判断できます。
 
 -   **DB Connection Count** (active,idle)
 
@@ -147,7 +147,7 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 -   **Tomcat Thread Pool** (active, queueSize)
 
-    トムキャットのExecutorスレッドプールが設定されたときのパフォーマンス情報を収集します。
+    トムキャットのExecutorは、スレッドプールの設定時にパフォーマンス情報を収集します。
 
     ```xml title='XML'
         <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"
@@ -158,11 +158,11 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 ### DB Connection Poolカウンター
 
-DB Connection PoolはDataSourceと呼ばれます。WASが提供する場合が一般的ですが、一部ではオープンソースPoolを使用することもあります。使用量情報がJMXで露出する可能性が多少あります。
+DB Connection Poolは、DataSourceと呼ばれます。WASによって提供される場合が一般的ですが、オープンソースPoolを使用することもあります。使用量の情報がJMXに公開されることがありますが、多くの場合は公開されません。
 
-WhaTapは2つの方式を提供しています。一つのBCIによる直接照会方式とJMXを利用した方式です。デフォルトはBCI方式を使用し、サブとしてJMXを使用できるように提供しています。
+WhaTapは2つの方式を提供しています。１つのBCIによる直接問い合わせ方法とJMXを利用した方法です。デフォルトは、BCI方法を使用し、サブとしてJMXを使用します。
 
-以下は、個別オプションがデフォルト値に関連してByteCodeがInjectionされるクラスです。
+次の個別のオプションがデフォルト値に関連してByteCodeがInjectionされるクラスです。
 
 ```java title='hikari_pool_enabled=false'
 com.zaxxer.hikari.pool.HikariPool
@@ -193,11 +193,11 @@ org.jboss.jca.core.connectionmanager.pool.PoolStatisticsImpl
 
 :::caution
 
-BCI関連オプションですので、変更する場合**再起動**する必要があります。クラスがinstrumentされた後も追跡テーブルに登録される過程が必要です。したがって、実行中にredefineをしても動作しません。
+BCI関連のオプションで変更する場合、**再起動**する必要があります。クラスがinstrumentされた後も、追跡テーブルに登録する必要があります。したがって、実行中のredefineは機能しません。
 
 :::
 
-#### DataSourceの現状をJMXに読み込む
+#### DataSourceの状態をJMXに読み込む
 
 ```bash
 dbcp_pool_enabled==trueの場合、tomcat_ds_enabled=false
@@ -206,7 +206,7 @@ weblogic_pool_enabled== trueの場合、weblogic_ds_enabled=false
 
 1.  **オプション自動決定**の内容を確認してください。
 
-2.  関連poolのオプション値を`false`として宣言してください。 
+2.  関連付けられたpoolのオプション値を`false`として宣言します。 
 
 3.  DataSource関連オプション値を`true`に変更してください。デフォルト値は `false` です。
 
@@ -215,22 +215,22 @@ weblogic_pool_enabled== trueの場合、weblogic_ds_enabled=false
     weblogic_ds_enabled=false
     ```
 
-### ThreadPoolのカウンター
+### ThreadPoolカウンター
 
-ThreadPoolカウンターはJMX Mbean情報を通じて収集されます。Tomcatのように使用事例が多い場合は問題ありませんが、特定の環境ではこの指標が収集されない可能性があります。 
+ThreadPoolカウンターは、JMX Mbean情報から収集されます。Tomcatなどの使用事例が多数ある場合は問題ありませんが、特定の環境では、この指標が収集されない可能性があります。 
 
-収集のために追加設定が必要です。関連設定は次のとおりです。
+収集には追加設定が必要です。関連する設定は次のとおりです。
 
 ```ini title='whatap.conf' {1,3,5} showLineNumbers
 jmx_threadpool_objectname=Catalina:type=ThreadPool,name="http-bio-8080"
 // JMX ThreadPool MBean名前を設定します。
 jmx_threadpool_atter_activecount=connectionCount
-// activecount数値を表すattributeを設定します。
+// activecount数を表すattributeを設定します。
 jmx_threadpool_atter_queuesize=maxThreads
-// maxThreads数値を表すattributeを設定します。
+// maxThreads数を表すattributeを設定します。
 ```
 
-JMX ThreadPool ObjectNameやAttributeNameのようなMbean名はJMXモニタリングツールで確認したり、各WAS別Mbean文書を参考にします。
+JMX ThreadPool ObjectNameやAttributeNameなどのMbean名は、JMXモニタリングツールを使用して確認または、各WASのMbean文書を参照してください。
 
 :::note
 
@@ -272,7 +272,7 @@ Apdexはユーザー満足度の指標として活用でき、0~1の間の値を
 
 | 状態                    | 説明                                     |
 | --------------------- | -------------------------------------- |
-| 満足(Satisfied, **S**)  | 業務処理に全く問題なし≤ 1.2秒(満足**S**デフォルト値)       |
+| 満足(Satisfied, **S**)  | 業務処理に全く問題なし≤ 1.2秒 (満足**S**デフォルト値)      |
 | 許容(Tolerating, **T**) | 使用者が遅延を感じるが業務処理は可能≤ 4.8秒(満足**S** \* 4) |
 | 不満(Frustrated, **F**) | 業務処理が不可能> 4.8秒(許容**T**超過及びエラー)         |
 
@@ -280,4 +280,4 @@ Apdexはユーザー満足度の指標として活用でき、0~1の間の値を
 
     デフォルト値`1200`
 
-    満足**S**デフォルト値はエージェント設定メニューから変更できます。
+    満足 **S** デフォルト値は、エージェント設定メニューから変更できます。

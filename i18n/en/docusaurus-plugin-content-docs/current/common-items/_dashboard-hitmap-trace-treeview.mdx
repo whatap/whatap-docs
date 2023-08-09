@@ -1,0 +1,29 @@
+### Tree view
+
+To see the transaction execution steps in a tree format, select the **_Tree View_** tab. You can see the details of each transaction and its trace details, trace start time, step time, and call relationship. If you select each section of the diagram, the tree view of the step appears.
+
+<Xclude product='php,nodejs,golang'>
+
+![트리뷰](/img/analysis-tx-tree-view.png)
+
+</Xclude>
+
+<InDoc product='php,nodejs,golang'>
+
+![트리뷰](/img/analysis-tx-tree-view-none-actx.png)
+
+</InDoc>
+
+-   **_View one line_**: You can arrange the tree format at intervals by displaying the texts displayed in the execution data for each section in a single line.
+
+-   **_View multiple lines_**: All the texts displayed in the execution data for each section, appear by wrapping words.
+
+-   **_Longest Route_**: The longest route can appear.
+
+-   ![Chart icon](/img/ic-bar-chart.svg) **_Display Time Bar_**: The elapsed times are displayed in a bar chart.
+
+-   ![Time icon](/img/ic-custom-time.svg) **_Display Time_**: The timestamps, gaps, and elapsed times for each segment are displayed in text.
+
+-   ![Hide icon](/img/ic-eye-invisible.svg) **_Hide Time_**: The time is hidden.
+
+-   ![Zoon in icon](/img/ic-outside.svg): You can see only the tree view that hides transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when the tree view list is long.

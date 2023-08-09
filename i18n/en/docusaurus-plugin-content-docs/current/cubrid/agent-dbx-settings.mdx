@@ -19,7 +19,7 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
 {@include: ../common-items/_db-agent-dbx-basic-option.mdx}
 
-## CUBRID-dedicated options
+## CUBRID-dedicated options{#cubrid}
 
 -   **db_port** <span class='type'>Int</span>
 
@@ -37,7 +37,7 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
     If there are multiple DBs created by the user, WhaTap agents must have been installed and set as many as the number of DBs. In this case, the `cms_token_file` path is required to share tokens between agents. Set to _`{Agent installation path}`/cms_token_. 
 
-    For example, if agent2 has been installed, set as follows to share the `cms_token_file` path of agent1.
+    For example) If agent2 has been installed, set as follows to share the `cms_token_file` path of agent1.
 
     ```ini title='whtap.conf'
 
@@ -50,6 +50,12 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
     Default `broker1`, `query_editor`
 
     Once CUBRID has been installed, the broker runs as `broker1` and `query_editor` by default. If you arbitrarily changed the name of the broker or started it additionally, enter the changes.
+
+    :::note
+
+    The name to set with the `broker` option can be viewed by the `cubrid broker status` command.
+
+    :::
 
 ## Data collection
 

@@ -4,22 +4,15 @@ To use the **_Slow Query_** menu, set parameters and roles as follows.
 
 <InDoc product='mysql,mysql-v1'>
 
-### Configuring the whatap.conf file
+### Configuration of the DBX agent file
 
 ```ini title='whatap.conf'
 slow_query_log=ON
 ```
 
-:::note
+### Configuring the DB parameters and roles
 
--   If you have set `log_output=FILE` in DB server, you need to install XOS. For more information, see [the following](agent-xos-settings).
--   RDS requires configuration to use CloudWatch instead of installing XOS. For more information, see [the following](agent-dbx-settings#using-aws-rds).
-
-:::
-
-### Configuration of DB, parameters, and roles
-
-```ini
+```ini title='my.cnf'
 slow_query_log = 1
 long_query_time = 3 # e.g. Recording for SQLs taking 3 seconds or more
 log_output=FILE # or TABLE
@@ -27,11 +20,15 @@ log_output=FILE # or TABLE
 
 :::note
 
-If you set as `log_output=TABLE`, the role and capacity management are required for `mysql.slow_log`. Execute the following command.
+-   If you have set `log_output=FILE` in DB server, you need to install XOS. For more information, see [the following](agent-xos-settings).
 
-```bash
-grant select on mysql.slow_log to whatap;
-```
+-   RDS requires configuration to use CloudWatch instead of installing XOS. For more information, see [the following](agent-dbx-settings#using-aws-rds).
+
+-   If you set as `log_output=TABLE`, the role and capacity management are required for `mysql.slow_log`. Execute the following command.
+
+    ```bash
+    grant select on mysql.slow_log to whatap;
+    ```
 
 :::
 
@@ -51,6 +48,8 @@ slow_query_log=ON
 log_min_duration_statement = 500 # e.g. SQL logs that take more than 500 ms
 ```
 
+</InDoc>
+
 ### XOS agent configuration of the DB server
 
 Set as follows to adjust the collection cycle for slow queries.
@@ -66,5 +65,3 @@ slow_query_interval = 30 # Default 30 seconds
 -   To monitor slow queries, be sure to install the XOS agent on the DB server. For more information about the XOS agent installation, see [the following](agent-xos-settings).
 
 :::
-
-</InDoc>

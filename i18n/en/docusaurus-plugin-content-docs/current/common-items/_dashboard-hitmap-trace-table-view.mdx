@@ -1,0 +1,70 @@
+### Table View
+
+In the **_Table view_** tab, you can see the transaction execution steps in chronological order.
+
+<Xclude product='php,nodejs,golang'>
+
+![Table view](/img/analysis-tx-table-view-mode.png)
+
+</Xclude>
+
+<InDoc product='php,nodejs,golang'>
+
+![Table view](/img/analysis-tx-table-view-mode-none-actx.png)
+
+</InDoc>
+
+-   You can classify transactions by each execution section and see them in a diagram. Out of all elapsed times, you can quickly find the times spent for each section and the section that took the longest.
+
+<Xclude product='php,nodejs,golang'>
+
+-   If you select each section in the diagram, the corresponding table list appears where the step is located.
+
+    ![Step selection](/img/analysis-tx-table-view-select-stack.png)
+
+</Xclude>
+
+<InDoc product='php,nodejs,golang'>
+
+-   If you select each section in the diagram, the corresponding table list appears where the step is located.
+
+    ![Step selection](/img/analysis-tx-table-view-select-stack-none-actx.png)
+
+</InDoc>
+
+<Xclude product='php,nodejs,golang'>
+
+-   The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the **_Active stacks_** button is located. If you click **_Active stack_**, you can check the step performed during the section.
+
+    :::note
+
+    -   In the transaction list, you can see them from the items marked with the ![Active Stack icon](/img/ic-s-active-stack.svg) icon.
+
+    -   For more information about active stacks, see [the following](analysis-apm#active-stack).
+
+    :::
+
+</Xclude>
+
+-   ![Column icon](/img/ico-column.svg) **_Select Column_**: You can add or hide the memory accumulation and CPU accumulation data as columns in the table list.
+
+-   ![Download icon](/img/ico-download.svg) **_TXT_**: You can download basic transaction data and execution data for each section in a text file.
+
+-   ![Download icon](/img/ico-download.svg) **_SQL_**: The basic transaction information and SQL execution data can be downloaded as a text file.
+
+-   ![Zoom in icon](/img/ic-outside.svg): You can see only the table list, with hiding the transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when you have a long list of tables.
+
+<details>
+<summary> Column information guide</summary>
+
+-   **_No_**: Step occurrence sequence
+
+-   **_Time_**: Start time of each step
+
+-   **_Gap_**: There may be a difference between the waiting time from the step start to the next step and the elapsed time if delayed due to external issues.
+
+-   **_Elapsed_**: Total elapsed time from the start to the end of each method
+
+-   **_Contents_**: Execution details of the step
+
+</details>

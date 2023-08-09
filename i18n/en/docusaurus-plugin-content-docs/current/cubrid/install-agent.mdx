@@ -24,7 +24,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 ## Downloading the agent
 
-{@include: ../common-items/_db-install-agent-steps.mdx}  
+{@include: ../common-items/_db-install-agent-steps.mdx} 
 
 3.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
@@ -32,11 +32,21 @@ The following guides you to the basic installation method for using the WhaTap d
     license=project access key
     whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap Server info
 
-    db = {$CUBRID_HOME/databases/databases.txt 의 db-name}
+    db = {$CUBRID_HOME/databases/databases.txt's db-name}
     db_ip = {DB server IP address}
-    db_port = {$CUBRID_HOME/conf/cubrid_broker.conf 의 BROKER_PORT (default : 33000)}
+    db_port = {$CUBRID_HOME/conf/cubrid_broker.conf's BROKER_PORT (default : 33000)}
     cms_port = {$CUBRID_HOME/conf/cm.conf 의 cm_port (default : 8001)}
+    cms_token_file = {agent installation path}/cms_token
+    broker = query_editor,broker1
     ```
+
+    :::note
+
+    -   For more information about `cms_token_file` and `broker` options, see [the following](agent-dbx-settings#cubrid).
+
+    -   The name to set with the `broker` option can be viewed by the `cubrid broker status` command.
+
+    :::
 
 4.  Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
 

@@ -1,7 +1,7 @@
 ---
 id: install-agent
 title: エージェントのインストール
-description: Go環境のアプリケーションサーバーにエージェントをインストールする方法を提供します。
+description: Go環境のアプリケーションサーバーにエージェントをインストールする方法について説明します。
 tags:
   - Go
   - エージェントのインストール
@@ -15,9 +15,9 @@ tags:
 
 :::
 
-1.  WhaTapリポジトリ（Repository）をインストールしてください。
+1.  WhaTapリポジトリ(Repository)をインストールします。
 
-2.  whatap-agent Linuxパッケージ（yum, apt-get）をインストールしてください。
+2.  whatap-agent Linuxパッケージ(yum, apt-get)をインストールします。
 
 3.  whatap-agentサービスを実行してください。
 
@@ -31,7 +31,7 @@ WhaTapモニタリングサービスを使用するには、[会員登録](https
 
 ## エージェントダウンロード
 
-**アクセスキー**を発行されたら、次のコマンドを使用してエージェントをダウンロードしてください。
+**アクセスキー**が発行されたら、次のコマンドを使用してエージェントをダウンロードしてください。
 
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">
@@ -77,7 +77,7 @@ $ sudo yum install whatap-agent
 </TabItem>
 <TabItem value="alpinelinux" label="Alpine Linux">
 
-[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリ基準で圧縮を解凍してください。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
+[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリを基準に圧縮して解凍します。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
 
 ```bash title='SH'
 $ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
@@ -87,7 +87,7 @@ $ tar -xvzf whatap-agent.tar.gz -C /
 </TabItem>
 <TabItem value="al-docker" label="Alpine Linux Docker">
 
-[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードしてから、 _/usr/whatap/agent_ パスに圧縮を解凍してください。
+[whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、 _/usr/whatap/agent_ パスに解凍します。
 
 ```bash title='SH'
 FROM alpine

@@ -19,7 +19,7 @@ $ npm update whatap
 
 :::note
 
-特定のバージョンにダウンロードしたい場合には、次のようにバージョンを示します。
+特定のバージョンをダウンロードする場合は、次のようにバージョンを指定します。
 
 ```bash title='SH'
 $ npm install whatap@{version}
@@ -27,15 +27,15 @@ $ npm install whatap@{version}
 
 :::
 
-## エージェント削除（中止）
+## エージェント削除(中止)
 
-1.  ソース（例、app.js）に挿入したエージェントコードを削除してください。
+1.  ソース(例、app.js)に挿入したエージェントコードを削除してください。
 
     ```javascript title='app.js'
     var whatap=require('whatap').NodeAgent; // 削除
     ```
 
-2.  アプリケーションを中断し、`npm`を利用してモジュールを削除してください。
+2.  アプリケーションを停止し、`npm`を使用してモジュールを削除してください。
 
     ```bash title='SH'
     $ npm uninstall whatap

@@ -2,13 +2,20 @@ Home > Select Project > **_Alert_** > **_Event Setting_** > **_Log_** tab
 
 You can set alerts by filtering the collected log data according to the conditions. Select **_+ Add alert policy_** to set the log event alert. After all settings are finished, select **_Save_**.
 
-![Log Alert](/img/set-event-log-main.png)
+![Log Alert Setting](/img/log-alert-event-setting-remove-ce.png)
 
-The log events that can be added are as follows:
+The **_Real-time log event_** can be added. It sends the corresponding alert when the keyword appears from the logs collected in real time.
 
--   **_Real-time Log Event_**: Alerts are sent when the keyword is found in the logs collected in real time.
+<!-- >
+![로그 경고 알림](/img/set-event-log-main.png)
 
--   **_Composite Log Event_**: An alert is sent when more than a specific number of logs that meet conditions, are collected among recently collected logs.
+추가할 수 있는 로그 이벤트 다음과 같습니다.
+
+* ***실시간 로그 이벤트***: 실시간으로 수집한 로그에서 키워드가 등장하면 경고 알림을 보냅니다.
+
+* ***복합 로그 이벤트***: 최근에 수집한 로그 중 일정 조건을 만족하는 로그가 일정 개수 이상 수집한 경우에 경고 알림을 보냅니다.
+
+-->
 
 :::note
 
@@ -18,7 +25,7 @@ To add or set an event, you must have the alert settings permission. For more in
 
 ## Common options for event addition
 
-The following lists common options that can be set to add an event in **_Real-time Log Event_** or **_Composite Log Event_**.
+Below are common options that can be set when adding log events.
 
 -   **_Activate Events_**: You can set to enable or disable the alerts by clicking the toggle button.
 
@@ -60,22 +67,26 @@ The following lists common options that can be set to add an event in **_Real-ti
 
 > For example, among the logs in the `AppLog` category, it searches for the logs whose `level` is `ERROR`. Alerts are sent if **_oid_** is **12345678** among matching logs.
 
-## Adding the composite log event
+<!-- >
 
-![Composite Log Event Alert Setting](/img/set-event-complex-log.png)
+## 복합 로그 이벤트 추가
 
--   **_Event rule condition_**
+![복합 로그 이벤트 경고 알림 설정](/img/set-event-complex-log.png)
 
-    -   In **_Keyword search scope_**, you can select any event rule. You can select a keyword that is within the selected **_keyword search scope_**.
-    -   If you add an item whose **_keyword search scope_** is the same, the OR condition works. Otherwise, the AND condition works. 
-    -   You can select **_Exclude_** to exclude the selected keyword from the event rules.
-    -   You can select **_+ Add_** to add or exclude multiple event rule conditions.
+* ***이벤트 발행 조건***
 
--   **_Time Range_**: You can view the logs collected during the selected period. If you select 5 minutes for the data lookup time, the event generation conditions are checked by searching for the data collected for the last 5 minutes.
+  * ***키워드 검색 범위***에서 이벤트 발생 조건 대상을 선택할 수 있습니다. 선택한 ***키워드 검색 범위***에 해당하는 키워드를 선택할 수 있습니다.
+  * ***키워드 검색 범위***가 동일한 항목을 추가할 경우 'OR' 조건으로, 다른 항목을 추가할 경우 'AND' 조건으로 동작합니다. 
+  * ***제외*** 체크 박스를 선택해 선택한 키워드를 이벤트 발행 조건에서 제외할 수 있습니다.
+  * ***+ 추가***를 선택해 여러개의 이벤트 발행 조건을 추가 또는 제외 설정할 수 있습니다.
 
--   **_Event rule condition_**: Alerts are sent when events occur as many as the entered number and they occur by meeting the selected operator's condition.
+* ***데이터 조회 범위***: 선택한 시간동안 수집한 로그를 조회합니다. 데이터 조회 시간을 5분으로 선택하면 최근 5분 동안 수집한 데이터를 조회해서 이벤트 발생 조건을 확인합니다.
 
-> For example, among the logs in the `AppLog` category, the logs that meet `Enter conditions` are filtered. If `Exclude` is checked for condition, it indicates that the logs found under that condition are excluded. Thus, the logs whose `level` is `ERROR` are excluded. Alerts are sent when the event is less than `5` among the logs collected in the last 10 minutes.
+* ***이벤트 발행 조건***: 이벤트가 입력한 횟수와 선택한 연산자의 조건과 같이 발생할 때 경고 알림을 보냅니다.
+
+> 예시, `AppLog` 카테고리의 로그 중 `조건 입력`에 해당하는 로그를 필터링 합니다. 조건 입력에서 `제외`를 체크한 경우 해당 조건으로 찾은 로그를 제외하겠다는 의미입니다. 따라서 `level`이 `ERROR`인 로그는 제외합니다. 최근 10분 동안 수집한 로그 중 이벤트가 `5`보다 작을 경우 경고 알림을 보냅니다.
+
+-->
 
 ## Modifying the log event settings
 
@@ -101,7 +112,7 @@ If you select the toggle button again, the alert is enabled.
 
 ## Exporting and importing the log event
 
-The settings in **_Real-time Log Event_** and **_Composite Log Event_** are saved as json files and then loaded for reuse.
+After saving the log event settings in a json file, you can load them for reuse.
 
 1.  Go to **_Alert_** > **_Event Setting_**.
 
