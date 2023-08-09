@@ -575,142 +575,295 @@ const goList = [
 const serverList = [
     {
         "name": "Server-agent-v2.4.0",
-        "date": "2023-00-00",
+        "date": "2023-07-24",
         "url": "/pdf/release-notes/Server-agent-v2.4.0.pdf",
         "docs": "/release-notes/server/server-2_4_0"
     },
     {
         "name": "Server-agent-v2.3.9",
-        "date": "2023-00-00",
+        "date": "2023-07-06",
         "url": "/pdf/release-notes/Server-agent-v2.3.9.pdf",
         "docs": "/release-notes/server/server-2_3_9"
     },
     {
         "name": "Server-agent-v2.3.8",
-        "date": "2023-00-00",
+        "date": "2023-06-19",
         "url": "/pdf/release-notes/Server-agent-v2.3.8.pdf",
         "docs": "/release-notes/server/server-2_3_8"
     },
     {
         "name": "Server-agent-v2.3.7",
-        "date": "2023-00-00",
+        "date": "2023-06-08",
         "url": "/pdf/release-notes/Server-agent-v2.3.7.pdf",
         "docs": "/release-notes/server/server-2_3_7"
     },
     {
         "name": "Server-agent-v2.3.6",
-        "date": "2023-00-00",
+        "date": "2023-05-30",
         "url": "/pdf/release-notes/Server-agent-v2.3.6.pdf",
         "docs": "/release-notes/server/server-2_3_6"
     },
     {
         "name": "Server-agent-v2.3.4",
-        "date": "2023-00-00",
+        "date": "2023-04-18",
         "url": "/pdf/release-notes/Server-agent-v2.3.4.pdf",
         "docs": "/release-notes/server/server-2_3_4"
     },
     {
         "name": "Server-agent-v2.3.3",
-        "date": "2023-00-00",
+        "date": "2023-02-28",
         "url": "/pdf/release-notes/Server-agent-v2.3.3.pdf",
         "docs": "/release-notes/server/server-2_3_3"
     },
     {
         "name": "Server-agent-v2.3.2",
-        "date": "2023-00-00",
+        "date": "2023-02-21",
         "url": "/pdf/release-notes/Server-agent-v2.3.2.pdf",
         "docs": "/release-notes/server/server-2_3_2"
     },
     {
         "name": "Server-agent-v2.3.1",
-        "date": "2023-00-00",
+        "date": "2023-01-25",
         "url": "/pdf/release-notes/Server-agent-v2.3.1.pdf",
         "docs": "/release-notes/server/server-2_3_1"
     },
     {
         "name": "Server-agent-v2.3.0",
-        "date": "2023-00-00",
+        "date": "2023-01-11",
         "url": "/pdf/release-notes/Server-agent-v2.3.0.pdf",
         "docs": "/release-notes/server/server-2_3_0"
     },
     {
         "name": "Server-agent-v2.2.9",
-        "date": "2023-00-00",
+        "date": "2022-12-14",
         "url": "/pdf/release-notes/Server-agent-v2.2.9.pdf",
         "docs": "/release-notes/server/server-2_2_9"
     },
     {
         "name": "Server-agent-v2.2.8",
-        "date": "2023-00-00",
+        "date": "2022-11-29",
         "url": "/pdf/release-notes/Server-agent-v2.2.8.pdf",
         "docs": "/release-notes/server/server-2_2_8"
     },
     {
         "name": "Server-agent-v2.2.7",
-        "date": "2023-00-00",
+        "date": "2022-10-04",
         "url": "/pdf/release-notes/Server-agent-v2.2.7.pdf",
         "docs": "/release-notes/server/server-2_2_7"
     },
     {
         "name": "Server-agent-v2.2.6",
-        "date": "2023-00-00",
+        "date": "2022-08-24",
         "url": "/pdf/release-notes/Server-agent-v2.2.6.pdf",
         "docs": "/release-notes/server/server-2_2_6"
     },
     {
         "name": "Server-agent-v2.2.5",
-        "date": "2023-00-00",
+        "date": "2022-08-16",
         "url": "/pdf/release-notes/Server-agent-v2.2.5.pdf",
         "docs": "/release-notes/server/server-2_2_5"
     },
     {
         "name": "Server-agent-v2.2.4",
-        "date": "2023-00-00",
+        "date": "2022-07-29",
         "url": "/pdf/release-notes/Server-agent-v2.2.4.pdf",
         "docs": "/release-notes/server/server-2_2_4"
     },
     {
         "name": "Server-agent-v2.2.3",
-        "date": "2023-00-00",
+        "date": "2022-06-16",
         "url": "/pdf/release-notes/Server-agent-v2.2.3.pdf",
         "docs": "/release-notes/server/server-2_2_3"
     },
     {
         "name": "Server-agent-v2.2.2",
-        "date": "2023-00-00",
+        "date": "2022-06-08",
         "url": "/pdf/release-notes/Server-agent-v2.2.2.pdf",
         "docs": "/release-notes/server/server-2_2_2"
     },
     {
         "name": "Server-agent-v2.2.1",
-        "date": "2023-00-00",
+        "date": "2022-05-29",
         "url": "/pdf/release-notes/Server-agent-v2.2.1.pdf",
         "docs": "/release-notes/server/server-2_2_1"
     },
     {
         "name": "Server-agent-v2.2.0",
-        "date": "2023-00-00",
+        "date": "2022-05-24",
         "url": "/pdf/release-notes/Server-agent-v2.2.0.pdf",
         "docs": "/release-notes/server/server-2_2_0"
     },
     {
         "name": "Server-agent-v2.1.9",
-        "date": "2023-00-00",
+        "date": "2022-05-14",
         "url": "/pdf/release-notes/Server-agent-v2.1.9.pdf",
         "docs": "/release-notes/server/server-2_1_9"
     },
     {
         "name": "Server-agent-v2.1.8",
-        "date": "2023-00-00",
+        "date": "2022-04-22",
         "url": "/pdf/release-notes/Server-agent-v2.1.8.pdf",
         "docs": "/release-notes/server/server-2_1_8"
     },
     {
         "name": "Server-agent-v2.1.7",
-        "date": "2023-00-00",
+        "date": "2023-03-17",
         "url": "/pdf/release-notes/Server-agent-v2.1.7.pdf",
         "docs": "/release-notes/server/server-2_1_7"
     }
 ];
 
-export {svList, javaList, phpList, nodejsList, pyList, dotnetList, goList, serverList}
+const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.3.3",
+        "date": "2023-08-04",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.3.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_3"
+    },
+    {
+        "name": "Kubernetes-agent-v1.3.2",
+        "date": "2023-07-28",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.2.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_2"
+    },
+    {
+        "name": "Kubernetes-agent-v1.3.1",
+        "date": "2023-06-28",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.1.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_1"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.9",
+        "date": "2023-06-07",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.9.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_9"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.8",
+        "date": "2023-06-01",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.8.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_8"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.7",
+        "date": "2023-05-11",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.7.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_7"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.6",
+        "date": "2023-05-02",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.6.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_6"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.5",
+        "date": "2023-04-03",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.5.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_5"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.2",
+        "date": "2023-01-26",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.2.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_2"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.1",
+        "date": "2023-01-11",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.1.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_1"
+    },
+    {
+        "name": "Kubernetes-agent-v1.2.0",
+        "date": "2022-11-21",
+        "url": "/pdf/release-notes/k8s-agent-v1.2.0.pdf",
+        "docs": "/release-notes/k8s/k8s-1_2_0"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.55",
+        "date": "2022-10-28",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.55.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_55"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.54",
+        "date": "2022-09-01",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.54.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_54"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.52",
+        "date": "2022-08-03",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.52.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_52"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.51",
+        "date": "2022-08-02",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.51.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_51"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.50",
+        "date": "2022-07-20",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.50.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_50"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.49",
+        "date": "2022-07-14",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.49.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_49"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.48",
+        "date": "2022-06-09",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.48.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_48"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.46",
+        "date": "2022-05-31",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.46.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_46"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.45",
+        "date": "2022-05-19",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.45.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_45"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.44",
+        "date": "2022-05-17",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.44.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_44"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.43",
+        "date": "2022-05-11",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.43.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_43"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.42",
+        "date": "2022-02-07",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.42.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_42"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.41",
+        "date": "2022-01-28",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.41.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_41"
+    },
+    {
+        "name": "Kubernetes-agent-v1.1.40",
+        "date": "2022-01-25",
+        "url": "/pdf/release-notes/k8s-agent-v1.1.40.pdf",
+        "docs": "/release-notes/k8s/k8s-1_1_40"
+    }
+];
+
+export {svList, javaList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList}
