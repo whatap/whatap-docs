@@ -4,3 +4,8 @@
   top: 1px;
   position: relative;
 }
+.langLabel {
+  display: inline;
+  position: relative;
+  top: -2px;
+}

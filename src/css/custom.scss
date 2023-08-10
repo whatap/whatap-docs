@@ -589,6 +589,11 @@ code {
 }
 button.DocSearch-Button {
   background: none;
+  height: 32px;
+}
+button.DocSearch-Button:hover {
+  background: var(--ifm-color-emphasis-200);
+  box-shadow: none;
 }
 .DocSearch-Button-Placeholder {
   display: none !important;
@@ -598,6 +603,8 @@ button.DocSearch-Button {
 }
 .localeDropdown {
   margin-right: 0px;
+  display: inline;
+  position: relative;
   &:after{
     display: none !important;
   }
