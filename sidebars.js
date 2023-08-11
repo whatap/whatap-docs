@@ -3236,6 +3236,31 @@ const sidebars = {
               id: 'release-notes/url/url-release-notes',
             },
             {
+              type: 'category',
+              label: 'Browser',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/browser/browser-v1_2_2',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/browser/browser-v1_2_2',
+                  className: 'new',
+                },
+                'release-notes/browser/browser-v1_2_1',
+                'release-notes/browser/browser-v1_2_0',
+                'release-notes/browser/browser-v1_1_4',
+                'release-notes/browser/browser-v1_1_3',
+                'release-notes/browser/browser-v1_1_2',
+                'release-notes/browser/browser-v1_1_1',
+                'release-notes/browser/browser-v1_1_0',
+              ],
+            },
+            {
               type: 'doc',
               label: 'Amazon ECS',
               // className: 'new',
