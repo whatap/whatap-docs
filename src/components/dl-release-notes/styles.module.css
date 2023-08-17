@@ -20,6 +20,7 @@ div.dlList > table.dlTable {
   width: 100%;
   empty-cells:show;
   border-collapse: collapse;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .dlTable thead {
@@ -57,6 +58,9 @@ div.dlList > table.dlTable {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.dlList {
+  margin: 10px auto;
+}
 .dlList p {
   margin-bottom: 0;
   text-align: center;
@@ -64,7 +68,8 @@ div.dlList > table.dlTable {
 .dlIcon {
   height: 18px;
   position: relative;
-  top: 3px;
+  top: 5px;
+  border: none !important;
 }
 .dlListItem {
   font-size: 1.2rem;

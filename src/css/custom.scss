@@ -715,7 +715,7 @@ main {
     h3 sup, .indentTab h3 sup {
       vertical-align: middle;
     }
-    h3[id*='pdf-download'] img {
+    h3[id*='pdf-download'] img, h2[id*='pdf-download'] img {
       filter: invert(.5);
     }
     h4, .indentTab h4 {
