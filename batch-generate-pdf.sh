@@ -29,6 +29,7 @@ npx docusaurus-prince-pdf -u http://localhost:4000/oracle-cloud/install-agent --
 npx docusaurus-prince-pdf -u http://localhost:4000/aws-log/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-aws-log-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/browser --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-browser-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u http://localhost:4000/npm --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-network-performance-monitoring.pdf --dest ./static/pdf --include-index
+npx docusaurus-prince-pdf -u https://localhost:4000/openapi --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-open-api.pdf --dest ./static/pdf --include-index
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/best-practice-guides/using-browser-monitoring --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-best-practice-guides-using-browser-monitoring.pdf --dest ./static/pdf --include-index
 
