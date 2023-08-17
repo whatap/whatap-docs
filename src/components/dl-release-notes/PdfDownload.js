@@ -4,7 +4,7 @@ import { PDFDocument } from 'pdf-lib';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
 
-export default function PDFDownloads({h2title, typeName, pdfList}) {
+export default function PDFDownloads({typeName, pdfList}) {
     const [selectedFiles, setSelectedFiles] = useState([]);
 
     const handleCheckboxChange = (event, file) => {
@@ -56,7 +56,6 @@ export default function PDFDownloads({h2title, typeName, pdfList}) {
 
     return (
         <>
-            <h2 className={styles._dlHeading2} id={typeName}>{h2title}</h2>
             <div className={styles.dlList}>
                 <table className={styles.dlTable}>
                     <thead>
