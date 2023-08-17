@@ -3194,14 +3194,15 @@ const sidebars = {
                   // className: 'new',
                   link: {
                     type: 'doc',
-                    id: 'release-notes/db/dbx-1_6_7',
+                    id: 'release-notes/db/dbx-1_6_8',
                   },
                   items: [
                     {
                       type: 'doc',
-                      id: 'release-notes/db/dbx-1_6_7',
+                      id: 'release-notes/db/dbx-1_6_8',
                       // className: 'new',
                     },
+                    'release-notes/db/dbx-1_6_7',
                     'release-notes/db/dbx-1_6_6',
                     'release-notes/db/dbx-1_6_5',
                   ]
