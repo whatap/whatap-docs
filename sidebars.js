@@ -2979,14 +2979,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_13',
+                id: 'release-notes/java/java-2_2_14',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_13',
+                  id: 'release-notes/java/java-2_2_14',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_13',
                 'release-notes/java/java-2_2_12',
                 'release-notes/java/java-2_2_11',
                 'release-notes/java/java-2_2_10',
@@ -2995,7 +2996,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_7',
                 'release-notes/java/java-2_2_6',
                 'release-notes/java/java-2_2_5',
-                'release-notes/java/java-2_2_4',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3045,7 +3045,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1_4_3',
@@ -3054,7 +3054,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_4_3',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_4_2',
                 'release-notes/python/python-1_4_1',
