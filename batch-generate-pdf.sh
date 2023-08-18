@@ -39,4 +39,4 @@ npx docusaurus-prince-pdf -u https://localhost:4000/openapi --prince-args="--pag
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/best-practice-guides/about-apm-hitmap-class --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-best-practice-guides-about-apm-hitmap-class.pdf --dest ./static/pdf --include-index
 
-npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/browser/browser-v1_1_0 --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/browser-agent-v1.1.0.pdf --dest ./static/pdf/release-notes --include-index --selector 'none'
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/db/dbx-1_6_7 --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/dbx-agent-v1.6.7.pdf --dest ./static/pdf/release-notes --include-index --selector 'none'
