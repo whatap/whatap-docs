@@ -614,7 +614,7 @@ module.exports = Promise.resolve({
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
         // reference: https://prismjs.com/#supported-languages
-        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml' ],
+        additionalLanguages: ['batch', 'apacheconf', 'docker', 'properties', 'java', 'ini', 'scala', 'sql', 'go', 'python', 'json', 'yaml', 'c' ],
         // 
       },
       zoom: {

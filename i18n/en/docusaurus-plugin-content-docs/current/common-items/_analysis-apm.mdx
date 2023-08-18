@@ -22,31 +22,31 @@ java.net.SocketInputStream.socketRead0(Native Method)
 
 **Top line** indicates that the thread to be dumped is executing that method. It may be caught momentarily, but it appears on the stack as a percentage of the sum of the module processing times. By calculating the frequency of this **top line** method, you can determine the method-level performance. WhaTap calls the **top line frequency statistics** as **_top stack_**.
 
-![tline1](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring23.png)
+<ImgLang img='apm-analysis-apm-top-stack-01.png' desc='Top stack' />
 
 You can analyze the frequencies of the methods that called the methods derived through the **_top stack_** analysis.
 
-![tst1](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring24.png)
+<ImgLang img='apm-analysis-apm-top-stack-02.png' desc='Top stack' />
 
 The original active stack was difficult to identify in the top stack hierarchy analysis. Thus, WhaTap provides the **_Unique Stack_** function to view **_Active Stacks_** after collecting the same stacks.
 
-## **_Top Stack_**{#top-stack}
+## **_Top stack_**{#top-stack}
 
 Based on each step on the stack trace, it provides the call rates between steps as percentage. The backlog frequencies of the top step are calculated as a percentage and the results are sorted in descending order.
 
 If each step is clicked, the upper step that calls the step is calculated and provided as percentage based on the call frequency.
 
-The **_Top Stack_** statistics are good to make decision with enough data. If the number of collected stacks is a prime number of less than 10, it is insufficient to have a statistical significance.
+The **_Top stack_** statistics are good to make decision with enough data. If the number of collected stacks is a prime number of less than 10, it is insufficient to have a statistical significance.
 
 **_Top stack_** is useful to find tuning points that were difficult to recognize while tuning. The most frequent stacks can be determined to cause the most response delays in the application server. The rate that appears on the utmost left is how much it affects the application server's performance.
 
 Even on a stable application server, frequently appearing stacks have the potential to cause performance degradation, so keep an eye on those classes.
 
-If you click **_Top Stack_**, the frequency of calls on the top stack can be checked. Because the call relationship of the **_top stack_** is one-to-one, the data accuracy may decrease as the depth of the **_top stack_** goes down. Use the information on the sub-depths for reference purposes and proceed with tuning.
+If you click **_Top stack_**, the frequency of calls on the top stack can be checked. Because the call relationship of the **_Top stack_** is one-to-one, the data accuracy may decrease as the depth of the **_Top stack_** goes down. Use the information on the sub-depths for reference purposes and proceed with tuning.
 
 To improve the application performance, the module with a high backlog rate in the top-level step must be checked for bottleneck. For modules with high backlog rates, even a small performance improvement can lead to significant enhancement throughout all applications.
 
-![tst2](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring25.png)
+<ImgLang img='apm-analysis-apm-top-stack-03.png' desc='Top stack' />
 
 ```java {1,3}
 whatap.util.ThreadUtil.sleep
@@ -57,11 +57,11 @@ jdbc.Control.exec
 
 The call rate of `whatap.util.ThreadUtil.sleep` ← `jdbc.Control.exec` ← `jdbc.FakePreparedStatement.executeQuery` does not indicate 87.10% \* 61.18%. It is because the possibility of calling other modules exist in `jdbc.Control.exec`.
 
-When determining the call rate through **_Top Stack_**, do not multiply the call rates between steps to calculate the overall call relationship. Because the call rate of the top stack is the result of the call rates between steps of the data exposed on the stack trace, the total call rate derived with the call rates between steps can lead to a distorted result.
+When determining the call rate through **_Top stack_**, do not multiply the call rates between steps to calculate the overall call relationship. Because the call rate of the top stack is the result of the call rates between steps of the data exposed on the stack trace, the total call rate derived with the call rates between steps can lead to a distorted result.
 
-In the **_top stack_** statistics, the history of collection counts and rate changes over time based on a specific period of time are provided.
+In the **_Top stack_** statistics, the history of collection counts and rate changes over time based on a specific period of time are provided.
 
-![tst3](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring27.png)
+<ImgLang img='apm-analysis-apm-top-stack-04.png' desc='Top stack' />
 
 -   **_Percent_**
 
@@ -75,23 +75,23 @@ In the **_top stack_** statistics, the history of collection counts and rate cha
 
 This can also be seen in the following diagram:
 
-![tst-dg](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring26.png)
+<ImgLang img='apm-analysis-apm-top-stack-05.png' desc='Top stack' />
 
 -   **_Stack Chart_**
 
     The rates of individual top stacks appear on the chart.
 
-## **_Unique Stack_**{#unique-stack}
+## **_Unique stack_**{#unique-stack}
 
-As a result of calculation based on the hash value of the entire stack trace, the analysis information is provided with the percentage of the same call rates in all steps. **_Top Stack_** provides the call rates between steps. 
+As a result of calculation based on the hash value of the entire stack trace, the analysis information is provided with the percentage of the same call rates in all steps. **_Top stack_** provides the call rates between steps. 
 
-**_Unique Stack_** provides the data based on accurate calls in the entire stack trace. Useful data for call relationship details is provided. For example, you can identify stack traces with higher backlog rates.
+**_Unique stack_** provides the data based on accurate calls in the entire stack trace. Useful data for call relationship details is provided. For example, you can identify stack traces with higher backlog rates.
 
-![ust](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring27_Y8LaYJq.png)
+<ImgLang img='apm-analysis-apm-unique-stack.png' desc='Unique stack' />
 
 By reviewing the call step details, you can determine whether there is any abnormal module on the call path.
 
-## **_Active Stack_**{#active-stack}
+## **_Active stack_**{#active-stack}
 
 Transactions in progress are called "active transactions." **The stacks regularly dumped by active transactions** are called "active stacks."
 
@@ -106,7 +106,7 @@ If **_Active Stack_** is selected, you can check the collected active stacks on 
 
 If you click the bar, the active transaction information for the clicked period appears, and if you click the information, you can see the active stack of the transaction.
 
-![ast](https://img.whatap.io/media/images/Screenshot_2020-12-15_W_JAVA_DEMO_5490_-_Application_Monitoring29.png)
+<ImgLang img='apm-analysis-apm-active-stack.png' desc='Active stack' />
 
 :::note
 
@@ -114,9 +114,9 @@ For more information about active transaction, see [the following](active-transa
 
 :::
 
-\#{@include: ../common-items/_compact-active-stacks.mdx} 
+{@include: ../common-items/_compact-active-stacks.mdx} 
 
-\#{@include: ../common-items/_background-thread.mdx} 
+{@include: ../common-items/_background-thread.mdx} 
 
 ## Usage example
 
