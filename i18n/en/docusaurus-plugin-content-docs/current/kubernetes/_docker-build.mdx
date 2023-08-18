@@ -74,25 +74,25 @@
 
 6.  Build the Docker.
 
-```docker
-cd docker
-docker build -t $Image_Name.
-```
+    ```docker
+    cd docker
+    docker build -t $Image_Name.
+    ```
 
 1.  Set container environment variables in your Kubernetes environment. Enter the environment variables for the application agent.
 
-  The `OKIND` environment variable groups applications in Pods. If set to a Deployment name, the corresponding pods are grouped into one.
+    The `OKIND` environment variable groups applications in Pods. If set to a Deployment name, the corresponding pods are grouped into one.
 
-```bash showLineNumbers {8-9}
-env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
-  - name: OKIND
-    value: {busine type name or deployment name}
-  - name: license
-    value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
-```
+    ```bash showLineNumbers {8-9}
+    env:
+      - name: NODE_IP
+        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+      - name: NODE_NAME
+        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+      - name: POD_NAME
+        valueFrom: {fieldRef: {fieldPath: metadata.name}}
+      - name: OKIND
+        value: {busine type name or deployment name}
+      - name: license
+        value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
+    ```

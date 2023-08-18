@@ -152,6 +152,12 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 1007//5分間のリアルタイムユーザー数
 ```
 
+:::note 
+
+WhaTapは最近5分以内にトランザクションを起こしたユーザをカウントし、**同時接続ユーザ**を測定します。
+
+:::
+
 ## アクティブトランザクション{#active-transaction}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/actx

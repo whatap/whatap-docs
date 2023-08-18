@@ -21,7 +21,7 @@ import TR from '@site/src/components/TR';
 
 While the applications are using [virtualenv](https://docs.python.org/ko/3.7/library/venv.html), enable the virtual environment. Run the _bin/activate_ file.
 
-## Downloading the agent
+## Download agent
 
 Get the **access key** and then go to the **Download agent** section. Copy the following command to install the agent.
 
@@ -52,10 +52,10 @@ If installation is impossible with the pip command, download the installation fi
 
         ```docker title='Dockerfile'
         RUN touch /whatap/whatap.conf
-        RUN echo "license=[Granted Access Key]" > /whatap/whatap.conf
-        RUN echo "whatap.server.host=[Collection Server IP]" >> /whatap/whatap.conf
-        RUN echo "app_name=[Application Name]" >> /whatap/whatap.conf
-        RUN echo "app_process_name=[Application Process Name Example)uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
+        RUN echo "license=[ Granted access key ]" > /whatap/whatap.conf
+        RUN echo "whatap.server.host=[ Collection server IP ]" >> /whatap/whatap.conf
+        RUN echo "app_name=[ Agent name ]" >> /whatap/whatap.conf
+        RUN echo "app_process_name=[ Application process name example)uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
         ```
 
 2.  Before the previous command, `python manage.py runserver`, add `whatap-start-agent`.
@@ -113,10 +113,10 @@ The Python agent file consists of a tracer that extracts the data needed to moni
 
     ```bash
     whatap-setting-config \
-    --host [Collection Server IP] \
-    --license [Access Key] \
-    --app_name [Enter the user-defined application's name] \
-    --app_process_name [Process name. e.g. uwsgi, gunicorn]
+    --host [Collection server IP] \
+    --license [Access key] \
+    --app_name [Entry of user-defined agent name] \
+    --app_process_name [Process name, ex. uwsgi, gunicorn]
     ```
 
 3.  **Checking the configuration**

@@ -14,6 +14,12 @@ import TabItem from '@theme/TabItem';
 
 Dockerコンテナベースで実行されているPythonアプリケーションにWhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングするプロセスです。
 
+:::note 
+
+Pythonアプリケーションの統合プロセスを理解しやすくするために、Git のサンプルコードを提供します。[次の文書](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi)を参照してください。
+
+:::
+
 ## エージェントダウンロード
 
 PythonアプリケーションのDockerイメージをビルドする場合、whatap-pythonパッケージをインストールします。
@@ -29,17 +35,17 @@ RUN pip3 install --upgrade whatap-python
     ログおよび設定ファイルのパスを`WHATAP_HOME`環境変数に設定します。
 
     ```python
-    export WHATAP_HOME={ログと構成ファイルのパス}
+    export WHATAP_HOME={ログと設定ファイルのパス}
     ```
 
-2.  `WHATAP_HOME`で設定したパスに_whatap.conf_ファイルを作成および設定するように次のコマンドを実行してください。
+2.  `WHATAP_HOME`で設定したパスに_whatap.conf_ファイルを作成するように、次のコマンドを実行してください。
 
     ```bash
     whatap-setting-config \
-    --host {収集サーバーIP} \
+    --host {収集サーバIP} \
     --license {アクセスキー} \
-    --app_name {ユーザー指定アプリケーション名} \
-    --app_process_name {プロセス名, 例, uwsgi, gunicorn}
+    --app_name {ユーザー指定のエージェント名} \
+    --app_process_name {プロセス名、例、uwsgi, gunicorn}
     ```
 
 :::caution
@@ -57,7 +63,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 <Tabs>
 <TabItem value='basic' label='デフォルト' default>
 
-トランザクションでNodeおよびPod情報を収集するために`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
+トランザクションでNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
 
 ```ini
 env:
@@ -72,7 +78,7 @@ env:
 </TabItem>
 <TabItem value='eksfragate' label='EKS Fargate'>
 
-1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`、`serviceAccount`を追加します。
+1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`と`serviceAccount`を追加します。
 
     ```ini
     apiVersion: apps/v1
@@ -86,7 +92,7 @@ env:
     ...
     ```
 
-2.  トランザクションでNodeおよびPod情報を収集するために`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
+2.  トランザクションでNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
 
     ```ini
     env:
@@ -128,7 +134,7 @@ whatap-start-agent {アプリケーション開始コマンド}
 #### ServiceにuWSGIを登録してアプリケーションを起動する場合
 
 -   ユーザ(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
--   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加する必要があります。
+-   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加します。
 
 サービス実行ファイル(_/etc/init/uwsgi.conf_)を修正して、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
 
@@ -175,9 +181,9 @@ whatap-start-agent {アプリケーション開始コマンド}
 #### ServiceにGunicornを登録してアプリケーションを実行する場合
 
 -   ユーザ(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
--   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加する必要があります。
+-   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加します。
 
-サービス実行ファイル(_/etc/init/gunicorn.conf_)を修正し、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
+サービス実行ファイル(_/etc/init/gunicorn.conf_)を修正し、エージェント開始コマンドを使用してアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
 
 ```python title='/etc/init.d/gunicorn'
 description "Gunicorn application server handling myapp"
@@ -212,9 +218,9 @@ do_start(){
 <TabItem value='supervisor' label='Supervisor'>
 
 -   ユーザ(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
--   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加する必要があります。
+-   仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加します。
 
-サービス実行ファイル(_/etc/supervisor/conf.d/supervisor.conf_)を修正し、エージェント開始コマンドでアプリケーションを開始してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
+サービス実行ファイル(_/etc/supervisor/conf.d/supervisor.conf_)を修正し、エージェント開始コマンドでアプリケーションを起動してください。ユーザー環境によって、サービス実行ファイルのパスが異なる場合があります。
 
 ```ini title='supervisor.conf'
 [program:app-uwsgi]

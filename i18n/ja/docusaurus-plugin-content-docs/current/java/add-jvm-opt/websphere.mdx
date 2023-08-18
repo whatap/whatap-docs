@@ -9,7 +9,7 @@ tags:
 
 ## JVMオプションの追加
 
-WebSphereアプリケーションサーバ環境でJVMオプションを追加するには、管理コンソール（Admin console）にアクセスしてください。
+WebSphereアプリケーションサーバ環境でJVMオプションを追加するには、管理コンソール(Admin console)にアクセスしてください。
 
 1.  ウェブブラウザで管理コンソールにログインしてください。
 
@@ -21,17 +21,17 @@ WebSphereアプリケーションサーバ環境でJVMオプションを追加�
 
     ![WebSpherer application servers](https://img.whatap.io/media/agent_java/install/300.png)
 
-4.  選択したサーバー画面で**_Configuration_**タブを選択し、**_Server Infrastructure_**セクションの**_Java and Process Management_** > **_Process definition_**メニューを選択してください。
+4.  選択したサーバー画面から**_Configuration_**タブを選択し、**_Server Infrastructure_**セクションの**_Java and Process Management_** > **_Process definition_**メニューを選択してください。
 
     ![WebSphere Configuration](https://img.whatap.io/media/agent_java/install/310.png)
 
-5.  右側メニューの**_Additional Properties_** > **_Java Virtual Machine_**メニューを選択してください。
+5.  右側のメニューから**_Additional Properties_** > **_Java Virtual Machine_**メニューを選択してください。
 
-6.  **_Configuration_**タブの**_Generic JVM arguments_**テキストボックスに`-javaagent`と`-Dwhatap.port`を追加してください。
+6.  **_Configuration_**タブから**_Generic JVM arguments_**テキストボックスに`-javaagent`と`-Dwhatap.port`を追加してください。
 
     ```bash
     -javaagent:/whatap/whatap.agent-X.Y.Z.jar
-    -Dwhatap.port={ポート番号} ## 2番項目ポート番号 ##
+    -Dwhatap.port={ポート番号} ## 2番 項目 ポート番号 ##
     ```
 
     ![Add JVM arguments](https://img.whatap.io/media/agent_java/install/340.png)

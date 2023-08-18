@@ -514,6 +514,12 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 }
 ```
 
+:::note 
+
+WhaTap measures **concurrent users** by counting them who issued transactions within the last 5 minutes.
+
+:::
+
 ## Active users (1-hour increment)
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/visitor_h/<code>stitme</code>/<code>etime</code>

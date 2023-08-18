@@ -1,0 +1,22 @@
+---
+id: java-2_2_13
+title: Java Agent v2.2.13
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_12
+---
+
+August 8, 2023
+
+-   <Status>New</Status> Added the hooking option for <b>CompletableFuture</b> tracing.
+
+    :::note
+
+    For more information about the **CompletableFuture** option, see [the following](../../java/async-tracking).
+
+    :::
+
+-   <Status>Change</Status> Modified the time display in LogSink compressed transfer.
+
+-   <Status>Fixed</Status> Fixed the problem where the transaction does not end when tracing some methods.
+
+    Fixed the problem where the transaction does not end when the methods registered in the `hook_method_patterns` option are traced with new transactions through the `trace_auto_transaction_enabled=true` option.

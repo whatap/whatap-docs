@@ -53,9 +53,9 @@ pipコマンドでインストールできない場合は、[pypi WhaTapペー�
         ```docker title='Dockerfile'
         RUN touch /whatap/whatap.conf
         RUN echo "license=[発行されたアクセスキー]" > /whatap/whatap.conf
-        RUN echo "whatap.server.host=[収集サーバーIP]" >> /whatap/whatap.conf
-        RUN echo "app_name=[アプリケーション名]" >> /whatap/whatap.conf
-        RUN echo "app_process_name=[アプリケーションプロセス名 例）uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
+        RUN echo "whatap.server.host=[収集サーバIP]" >> /whatap/whatap.conf
+        RUN echo "app_name=[エージェント名]" >> /whatap/whatap.conf
+        RUN echo "app_process_name=[アプリケーションプロセス名の例）uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
         ```
 
 2.  既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
@@ -115,7 +115,7 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
     whatap-setting-config \
     --host [収集サーバIP] \
     --license [アクセスキー] \
-    --app_name [ユーザー指定アプリケーション名入力] \
+    --app_name [ユーザー指定エージェント名入力] \
     --app_process_name [プロセス名、ex. uwsgi, gunicorn]
     ```
 

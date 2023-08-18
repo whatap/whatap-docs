@@ -18,7 +18,7 @@ tags:
     -   _Procfile_：JVM command lineオプションを設定するためのファイル
     -   _{application}.jar_：実行するapplicaion.jarのファイル
 
-2.  Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3（またはダウンロードできるpublicパス）にアップロードしてください。
+2.  Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
     -   _paramkey.txt_
     -   _whatap.agent-2.0_25.jar_
@@ -29,8 +29,9 @@ tags:
     zip -r whatap-agent.zip agent
     ```
 
-3.  _.ebextension/{config_name}.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。\
-    ダウンロードできるように圧縮ファイルの形にしておいた場合、ebを実行して自動的にダウンロードして圧縮を解凍します。
+3.  _.ebextension/{config_name}.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
+
+    ダウンロード用の圧縮ファイルがある場合は、ebは自動的にダウンロードして解凍します。
 
     ```yaml title=ebextension/{config_name}.config
     sources:
@@ -60,7 +61,7 @@ tags:
     zip -r {application}.zip Procfile .ebextensions/{application}.jar
     ```
 
-6.  _.elasticbeanstalk/config.yml_ファイルに配布するzipファイルパスを追加してください。
+6.  _.elasticbeanstalk/config.yml_ファイルにデプロイする zipファイルのパスを追加してください。
 
     ```yaml
     deploy:

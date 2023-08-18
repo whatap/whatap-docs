@@ -7,7 +7,7 @@ toc_max_heading_level: 2
 import Status from '@site/src/components/Highlight';
 import UI from '@site/src/components/UItext';
 
-リリーズ：2021-11-23
+リリース：2021-11-23
 
 ## ベータ版 - アップデート
 
@@ -79,7 +79,7 @@ func main() {
 
     \#Type : String# 
 
-    指定されたメソッドを収集しません。複数指定の場合はコンマ（,）で区切ります。
+    指定されたメソッドを収集しません。複数指定の場合はコンマ(,)で区切ります。
 
 -   `grpc_profile_stream_method`
 
@@ -87,7 +87,7 @@ func main() {
 
     \#Type : String# 
 
-    指定されたstream methodを別のトランザクションとして構成します。複数指定の場合はコンマ（,）で区切ります。長時間続くstream接続に対して、methodそれぞれの呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。 
+    指定されたstream methodを別のトランザクションとして構成します。複数指定の場合は、コンマ(,)で区切ります。長時間続くstream接続の場合は、methodそれぞれの呼び出しを単独トランザクションとして処理します。ヒートマップ、トランザクション検索でfull methodで検索できます。 
 
 -   `grpc_profile_stream_identify`
 
@@ -95,4 +95,4 @@ func main() {
 
     \#Type : boolean#
 
-    Stream full methodをトランザクション名で収集し、同じfull methodに対してclient、serverを区別できる接頭辞を追加します。（_/Stream Client/[full method]_、_/Stream Server/[full method]_）
+    Stream full methodをトランザクション名で収集し、同じfull methodのclientとserverを区別できるプレフィックスを追加します。(_/Stream Client/[full method]_、_/Stream Server/[full method]_)

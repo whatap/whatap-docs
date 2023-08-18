@@ -14,6 +14,158 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.107.13
+
+August 11, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> In case of merging the series widget objects in <UI>Flex Board</UI>, fixed the problem where the maximum and minimum values do not work.</p>
+
+</div>
+
+## Preview 1.107.12
+
+August 10, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Organization
+
+<p><Status>Fixed</Status> Fixed the issue where the selected organization is disabled in the following menu path.</p>
+
+-   In case of going to the project list in MySQL Project > <UI>Management</UI> > <UI>Agent installation</UI>
+
+-   In case of clicking a group in the side menu in MySQL Project > <UI>Management</UI> > <UI>Agent installation</UI>
+
+#### Dashboard
+
+<p><Status>Fixed</Status> Under the <UI>Table</UI> tab in the <UI>Transaction analysis</UI> window, fixed the bug where the variable decryption password input is invisible in the SQL step details view modal.</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> In <UI>Statistics</UI> > <UI>Transaction</UI>, fixed the issue where the selected organization is disabled when clicking Transaction search or Transaction trace.</p>
+
+</div>
+
+## Preview 1.107.11
+
+August 10, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Container map</UI>, fixed the bug where separation of tag items in the summary view into the <UI>Summary</UI> tab is missing in case of the pod category.</p>
+
+</div>
+
+## Preview 1.107.10
+
+August 9, 2023
+
+<div class='indentTab'>
+
+### `Browser`
+
+#### Analytics
+
+<p>In <UI>Page Load Hitmap</UI>, the following have been modified.</p>
+
+-   <Status>Feature</Status> In <UI>Page Load Details</UI>, added the browser error data and step column.
+
+-   <Status>Feature</Status> In <UI>Page List</UI>, the red font color appears for page load events that include the browser error data.
+
+-   <Status>Feature</Status> It has been set to limit the search time to the maximum of 15 days and to make it impossible to search for data older than 30 days in the past.
+
+</div>
+
+## Preview 1.107.09
+
+August 8, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Change</Status> Separated the tag items in the summary view of <UI>Container map</UI> into the <UI>Summary</UI> tab.</p>
+
+</div>
+
+## Preview 1.107.08
+
+August 8, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Cubrid
+
+<p><Status>Change</Status> Under the <UI>Download Database Agent</UI> section in <UI>Management</UI> > <UI>Agent installation</UI>, the following have been modified.</p>
+
+-   Agent file download command
+
+-   Installation command in whatap.conf
+
+-   Addition of the link to the guide
+
+</div>
+
+## Preview 1.107.07
+
+August 8, 2023
+
+<div class='indentTab'>
+
+#### Project list
+
+<p><Status>Fixed</Status> In <UI>Project list</UI>, modified the Japanese term for <UI>Application</UI> (アプリケーション → アプリ) to fix the issue where the text is cut off when displayed in an extended card view.</p>
+
+#### Dashboard
+
+In the **_Transaction analysis_** window, modify the following.
+
+-   <Status>Fixed</Status> To enable the filtering in <UI>Flex Board</UI>, fixed the bug where the <UI>Transaction analysis</UI> screen does not appear.
+
+-   <Status>Fixed</Status> In the <UI>SQL Step details</UI> modal under the <b>Table</b> tab, fixed the bug where SQL variable decryption does not work.
+
+-   <Status>Change</Status> Modified the setting of the <UI>No</UI> column in the transaction list to be unmodifieable.
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> Added the scroll position movement and highlighting functions to the base log from the adjacent logs.
+
+-   <Status>Change</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, deleted <UI>All</UI> from <UI>Search key</UI> when newly creating a <UI>real-time log event</UI>.
+
+</div>
+
+## Preview 1.107.06
+
+August 7, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+-   <Status>Change</Status> In the <UI>Table view</UI> tab of the <UI>Transaction analysis</UI> window, modified the expression for trace information that corresponds to the <UI>Contents</UI> column.
+
+    -   Before: The description is displayed in a row.
+
+    -   After:
+        -   The description can be displayed up to 4 rows.
+        -   When the information is clicked, the entire content of the step appears in modal mode.
+
+</div>
+
 ## Preview 1.107.05
 
 August 4, 2023
@@ -89,6 +241,7 @@ In the **_Transaction analysis_** window, modify the following.
 ### `Log`
 
 -   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Log</UI>, the filtering is disabled when no category is selected in case of adding the template events with <UI>Composite log event</UI>.
+
 -   <Status>Change</Status> In the highlight function under <UI>Log</UI>, changed the colors that can be selected and the log's body font.
 
 </div>

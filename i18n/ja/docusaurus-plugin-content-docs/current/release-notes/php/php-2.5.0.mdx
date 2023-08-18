@@ -11,45 +11,45 @@ import UI from '@site/src/components/UItext';
 
 ## Fixed(バグ修正)
 
-### アクティブトランザクションのトランザクション一覧でcpu、memoryがマイナスの値で表記される問題を修正
+### アクティブトランザクションのトランザクション一覧で、cpuとmemoryがマイナスの数値で表示される問題を修正
 
-PHPモニタリングは、トランザクションが完了する時点でcpuとmemoryが計算されます。 進行中に照会するトランザクションのcpuとmemoryのマイナスの値を0に調整しました。
+PHPモニタリングは、トランザクションの完了時に、cpuとmemoryを計算します。 処理中に参照するトランザクションのcpuとmemoryのマイナスの値を0に調整しました。
 
-### php 8.0以降のresourceタイプがobjectタイプに変更された事項を適用
+### php 8.0以降のresourceタイプからobjectタイプへの変更を適用
 
-php8.0バージョン以降から一部ライブラリのResourceタイプのハンドルがObjectタイプのハンドルに変更されました。 既存のResourceタイプのハンドルで詳細情報を収集できない問題を修正しました。 
+php8.0バージョン以降、一部のライブラリのResourceタイプのハンドルをObjectタイプのハンドルに変更することで、既存のResourceタイプのハンドルで詳細情報を収集できない問題を修正しました。 
 
-curlライブラリを例にとると、`curl_init`関数の場合、php7.4バージョンまではresourceidを返しますが、php8.0以降からCurlHandleObjectタイプを返します。 
+curlライブラリを例にして、`curl_init`関数は、php7.4バージョンまでの resource id と php8.0以降のCurlHandleObjectタイプを変更します。 
 
-### トランザクションURI正規化中「/」で終わるURIの場合でも正規化される問題を修正
+### トランザクションURIの正規化中に「/」で終わる URI が正規化される問題を修正
 
-トランザクションURI正規化中、設定上に `/{AAA}`として登録すると、 `/aaa.php`と「/」の２つURIが `/{AAA}`に正規化される問題を修正しました。これからは`/aa.php`のみが`/{AAA}`に正規化されます。
+トランザクションURI正規化中に設定を`/{AAA}`として登録すると、 `/aaa.php`と「/」の２つURIが `/{AAA}`に正規化される問題を修正しました。その後、`/aa.php`のみが`/{AAA}`に正規化されます。
 
-### user_agent、referer収集問題を修正
+### user_agent、referer収集の問題を修正
 
-PHP Extension内部の収集制限オプションを削除しました。 whatap-phpサービスデーモンで収集データの処理有無を決定します。
+PHP Extension内部の収集制限オプションを削除しました。 whatap-phpサービスデーモンが収集データの処理の有無を決定します。
 
 ## Change（アップデート）
 
 ### bind parameter収集
 
-DB関連ライブラリのbind parameterを収集します。`whatap.profile_sql_param_enabled`オプションを活性化すると収集されます。 最大収集数は20個です。 
+DB関連ライブラリのbind parameterを収集します。`whatap.profile_sql_param_enabled`オプションを有効にすると収集されます。 最大収集数は20個です。 
 
 **パラメータ名**
 
--   256 bytesまで収集します。 
+-   最大256 bytesを収集します。 
 
 **パラメータ値**
 
--   Stringタイプの場合、256 bytesまで収集します。
--   Arrayタイプの場合、"ARRAY"文字列として表記します。 
--   数字型、文字型データ以外は収集しません。 
+-   Stringタイプの場合、最大256 bytesまで収集します。
+-   Arrayタイプの場合、"ARRAY"文字列として表示されます。 
+-   数字型および文字型データ以外は収集しません。 
 
 ### odbc_do関数の追加
 
-odbc_execと同じ機能を持つ別名関数を追加しました。 
+odbc_execと同じ機能を持つエイリアス関数を追加しました。 
 
-### 指定したUriとHTTP Methodを対象にトランザクション収集を除外
+### 指定したUriとHTTP Methodのトランザクション収集を除外
 
 -   `ignore_http_method_urls`
 
@@ -70,9 +70,9 @@ whatap.ignore_http_method=options, connect
 
 ### `query_string_keys`オプション追加
 
-`query_string_enabled`でURIにGetパラメータを追加してサービスURLとして表記することができます。Getパラメータが多い場合、パラメータの順序が毎回変わる可能性があり、長すぎる場合があるため、表記するパラメータ名を指定できるように修正しました。
+`query_string_enabled`で URI に Getパラメータを追加して、サービスURLとして表示することができます。Getパラメータが多い場合、パラメータの順序が毎回異なる可能性があり、長すぎる場合があるため、表示するパラメータ名を指定できるように修正しました。
 
-指定したパラメータだけを収集すると、サービスURLが単純化され、統計情報からより正確な情報を確認できます。
+指定したパラメータのみを収集すると、サービスURLが簡略化され、統計情報からより正確な情報を確認できます。
 
 -   `query_string_keys`
 
@@ -80,7 +80,7 @@ whatap.ignore_http_method=options, connect
 
     -   Type : String
 
-コンマ（,）で区切って複数のパラメータを指定します。 設定手順と同様に収集されたパラメータ情報が表示されます。 
+コンマ(,)で区切って複数のパラメータを指定します。 設定手順と同じ順序で収集されたパラメータ情報が表示されます。 
 
 :::note
 
@@ -106,10 +106,10 @@ whatap.query_string_keys=cccc
 
 ### cURL header自動設定変更
 
-2.4.0でマルチトランザクション追跡のためのWhaTap Headerを手動で設定するように変更された機能に対して、再び自動追加方式に修正しました。 
+2.4.0では、マルチトランザクション追跡のWhaTap Headerを手動で設定するように変更された機能を自動追加方式に修正しました。 
 
-`curl_setopt`、`curl_setopt_array`関数を通じてHTTP Header設定（CURLOPT_HTTPHEADER）を行う場合、重複設定になると以前の情報は初期化され、新しい情報だけが設定されます。
+`curl_setopt`または、`curl_setopt_array`関数でHTTP Header設定(CURLOPT_HTTPHEADER)をした場合、重複設定を行うと、以前の情報は初期化され、新しい情報のみが設定されます。
 
-ユーザーのcURL Header設定後にWhatap Headerがない場合は追加します。 
+ユーザーのcURL Header設定後にWhatap Headerがない場合は、それを追加します。 
 
-マルチトランザクション(`whatap.mtrace_enabled=true`)設定が活性化されたら、`curl_init()`関数呼び出し後にWhaTap Headerを設定します。 (`x-wtap-mst`、`x-wtap-sp1`、`x-wtap-po`)`curl_exec()`関数呼び出し前にHeaderを確認し、WhaTap Headerがない場合は追加します。
+マルチトランザクション(`whatap.mtrace_enabled=true`) 設定が有効になっている場合は、`curl_init()`関数呼び出し後にWhaTap Headerを設定します。(`x-wtap-mst`、`x-wtap-sp1`、`x-wtap-po`)`curl_exec()`関数呼び出す前に Headerを確認し、WhaTap Headerがない場合は、それを追加します。

@@ -15,7 +15,7 @@ PHPアプリケーションサーバーの機能を制御できます。
 
     デフォルト値 `true`
 
-    統計情報の追跡機能をアクティブにします。 5分単位で収集されるトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが該当されます。
+    統計情報の追跡機能をアクティブにします。 5分単位で収集されるトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが含まれます。
 
 -   **whatap.license** <span class='type'>String</span>
 
@@ -49,20 +49,20 @@ PHPアプリケーションサーバーの機能を制御できます。
 
     デフォルト値 `true`
 
-    PHP拡張モジュール(PHP Extension module)でエラー(Error)情報を収集する機能を活性化します。PHPコンパイルインストールにより_php.ini_にwhatap項目がある場合は、_whatap.ini_ではなく_php.ini_に追加してください。
+    PHP拡張モジュール(PHP Extension module)からエラー(Error)情報を収集する機能を有効にします。PHPコンパイルインストールの場合は、_php.ini_にwhatap項目がある場合は、_whatap.ini_の代わりに_php.ini_に追加してください。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+{@include: ../common-items/_php-restart-apply.mdx} 
 
 -   **whatap.ext.exception_enabled** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    PHP拡張モジュール(PHP Extension module)で例外処理(Exception)情報を収集する機能を活性化します。PHPコンパイルインストールにより_php.ini_にwhatap項目がある場合は、_whatap.ini_ではなく_php.ini_に追加してください。
+    PHP拡張モジュール(PHP Extension module)から例外情報(Exception)を収集する機能を有効にします。PHPコンパイルインストールの場合は、_php.ini_にwhatap項目がある場合は、_whatap.ini_の代わりに_php.ini_に追加してください。
 
-{@include: ../common-items/_php-restart-apply.mdx}
+{@include: ../common-items/_php-restart-apply.mdx} 
 
 -   **whatap.debug_gc_percent** <span class='type'>Int</span>
 
     デフォルト値`200`
 
-    whatap-phpサービスデーモンのgc呼び出し間隔を増やすことでCPU負荷を減らすことができます。CPU負荷が減る代わりにメモリ使用量が増えます。最大1000まで適用されます。
+    whatap-phpサービスデーモンのgc呼び出し間隔を増やすことで、CPU負荷を減らすことができます。CPU負荷を減らす代わりに、メモリ使用量が増加します。最大1000まで適用されます。

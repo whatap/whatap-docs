@@ -1,0 +1,88 @@
+---
+id: async-tracking
+title: 非同期追跡
+description: Javaエージェントを介して非同期活動を追跡する方法についてご案内します。
+tags:
+  - Java
+  - アプリケーション
+  - エージェント設定
+  - 非同期追跡
+---
+
+Javaエージェントを介して非同期アプリケーションを追跡する方法についてご案内します。
+
+## CompletableFuture
+
+Javaエージェント設定を通じてCompletableFutureメソッドを収集する方法をご案内します。 
+
+### CompletableFutureメソッドの追加
+
+ユーザーのJavaアプリケーションプロジェクトにエージェントとしてhookingするCompletableFutureメソッドを追加してください。
+
+-   メソッド名:'trace'で統一
+
+-   ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
+
+```java
+package io.home.test.util;
+
+import java.util.concurrent.Future;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
+public class W {
+    public static <T> Supplier<T> trace(Supplier<T> f) {
+        return f;
+    }
+    public static <T> Consumer<T> trace(Consumer<T> f) {
+        return f;
+    }
+    public static <T> Runnable trace(Runnable f) {
+        return f;
+    }
+    public static <T> Future<T> trace(Future<T> f) {
+        return f;
+    }
+}
+```
+
+### エージェント設定の追加
+
+エージェント設定のために_whatap.conf_ファイルに次のオプションを追加してください。
+
+```ini title='whatap.conf'
+hook_completablefuture_patterns=io.home.test.util.W.*
+```
+
+:::note
+
+-   Contextがある場合は、`trace`メソッドを追加してトランザクションを接続してください。
+
+-   Contextがない場合は、`hook_service_patterns`オプションでサービスを開始する必要があります。
+
+:::
+
+### 使用例
+
+-   **イベントソース**
+
+    ```java showLineNumbers
+    public CompletableFuture<String> serviceATimeout() {
+        return CompletableFuture.supplyAsync(() -> {
+            RestTemplate restTemplate = new RestTemplate();
+            return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
+        });
+    }
+    ```
+
+-   `io.home.test.util.W.trace()`適用
+
+    ```java showLineNumbers {3}
+    // io.home.test.util.W.trace()適用
+    public CompletableFuture<String> serviceATimeout() {
+        return CompletableFuture.supplyAsync(W.trace(() -> {
+            RestTemplate restTemplate = new RestTemplate();
+            return restTemplate.getForObject("http://localhost:8081/api/serviceB/timeout", String.class);
+        }));
+    }
+    ```

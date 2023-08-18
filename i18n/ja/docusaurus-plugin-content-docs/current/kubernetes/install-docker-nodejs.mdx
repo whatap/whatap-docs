@@ -14,9 +14,15 @@ import TabItem from '@theme/TabItem';
 
 Dockerコンテナベースで実行するNode.jsアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングするプロセスです。
 
+:::note 
+
+Node.jsアプリケーションの統合プロセスを理解しやすくするために、Git サンプルコードを提供します。[次の文書](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express)を参照してください。
+
+:::
+
 ## エージェントダウンロード
 
-次のコマンドでWhaTapをインストールします。
+次のコマンドを使用して、WhaTapをインストールします。
 
 ```bash
 npm install --save whatap
@@ -30,11 +36,11 @@ npm update whatap
 
 ## エージェント設定
 
-_node_modules/whatap_パスにある_whatap.conf_ファイルをNode.jsアプリケーションのルートディレクトリにコピーしてください。コピーした_whatap.conf_ファイルの内容は、次を参照して修正します。
+_node_modules/whatap_パスから、_whatap.conf_ファイルをNode.jsアプリケーションのルートディレクトリにコピーしてください。コピーした_whatap.conf_ファイルの内容を次のように変更します。
 
 ```ini
 license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-whatap.server.host={収集サーバーのIP}
+whatap.server.host={収集サーバーIP}
 whatap_micro_enabled=true
 ```
 
@@ -52,7 +58,7 @@ let server = null;
 const port = normalizePort(process.env.PORT || '3000');
 ```
 
-ECMAScript(ES)を使用している場合は、次のコードを追加します。
+ECMAScript(ES)を使用する場合は、次のコードを追加します。
 
 ```javascript
 import WhatapAgent from 'whatap';
@@ -77,7 +83,7 @@ env:
 </TabItem>
 <TabItem value='eksfragate' label='EKS Fargate'>
 
-1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`、`serviceAccount`を追加します。
+1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`と`serviceAccount`を追加します。
 
     ```ini
     apiVersion: apps/v1
@@ -91,30 +97,30 @@ env:
     ...
     ```
 
-2.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
+2.  ユーザーのKubernetes環境のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-  `OKIND`環境変数は、Pod(Pod)に該当するアプリケーションを同じグループとして設定する役割を果たします。
+    `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割を担います。
 
-````
-```ini showLineNumbers {8}
-env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
-  # whatap.confファイルを使用していない場合は、設定を追加してください。
-  - name: license
-    value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
-  - name: whatap_server_host
-    value: "15.165.146.117"
-  - name: whatap_micro_enabled
-    value: "true"
-```
-````
+    ````
+    ```ini showLineNumbers {8}
+    env:
+      - name: NODE_IP
+        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+      - name: NODE_NAME
+        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+      - name: POD_NAME
+        valueFrom: {fieldRef: {fieldPath: metadata.name}}
+      # whatap.confファイルを使用しない場合は、設定を追加してください。
+      - name: license
+        value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
+      - name: whatap_server_host
+        value: "15.165.146.117"
+      - name: whatap_micro_enabled
+        value: "true"
+    ```
+    ````
 
-1.  ユーザーPod(Pod) リソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加します。
+3.  ユーザーPod(Pod) リソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加します。
 
     ```ini
     ...

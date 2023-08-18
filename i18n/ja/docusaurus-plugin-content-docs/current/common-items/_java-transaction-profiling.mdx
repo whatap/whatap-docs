@@ -14,13 +14,13 @@
 
     デフォルト値 `1024`
 
-    トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後収集されるステップはすべて捨てられます。`profile_step_heavy_count`を最大1000として設定すると、`profile_step_max_count`ほどのアクティブスタックが収集されます。
+    トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後に収集されるステップはすべて破棄されます。`profile_step_heavy_count`を最大1000に設定すると、`profile_step_max_count`までアクティブスタックが収集されます。
 
 -   **profile_step_heavy_time** <span class='type'>MiliSecond</span>
 
     デフォルト値`100`
 
-    Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`値を超えても`profile_step_heavy_count`の設定値だけ記録します。
+    Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`の値を超えても、`profile_step_heavy_count`の設定値のみ記録します。
 
 -   **active_stack_count** <span class='type'>Int</span>
 
@@ -32,23 +32,23 @@
 
     デフォルト値`false`
 
-    トレースからmethodステップを収集する際に、そのステップで使用したCPUとメモリ使用量を追跡します。
+    トレースからmethodステップを収集する場合は、そのステップで使用したCPUとメモリ使用量を追跡します。
 
 -   **profile_position_method** <span class='type'>String</span>
 
-    設定したメソッドを実行する時点のStackTraceを記録します。
+    設定したメソッド実行時のStackTraceを記録します。
 
 -   **profile_position_depth** <span class='type'>Int</span>
 
     デフォルト値`50`
 
-    position追跡のためにStackTraceを記録するとき、最大ライン数を設定します。
+    position追跡のStackTraceを記録する場合、最大ライン数を設定します。
 
 -   **trace_error_callstack_depth** <span class='type'>Int</span>
 
     デフォルト値`50`
 
-    Errorが発生した時に収集するStackTraceの最大ライン数を設定します。
+    Error発生時に収集するStackTraceの最大ライン数を設定します。
 
 -   **trace_active_callstack_depth** <span class='type'>Int</span>
 
@@ -68,7 +68,7 @@
 
 -   **hook_method_supers** <span class='type'>String</span>
 
-     特定のクラスを継承したメソッドの応答時間を測定したい時、Super Classを設定します。 クラスFullNameを設定し、対象が複数ある場合はコンマ(,)で区切ります。
+     特定のクラスを継承するメソッドの応答時間を測定する場合は、Super Classを設定します。 クラスFullNameを設定し、対象が複数ある場合は、コンマ(,)で区切ります。
 
     ```ini title='whatap.conf'
     hook_method_supers=a.b.C1
@@ -76,7 +76,7 @@
 
 -   **hook_method_interfaces** <span class='type'>String</span>
 
-    特定のインターフェイスを実装したメソッドの応答時間を測定したいときにInterfaceを設定します。インターフェイスのFullNameを設定し、対象が複数ある場合はコンマ(,)で区切ります。
+    特定のインターフェイスを実装するメソッドの応答時間を測定する場合は、Interfaceを設定します。インターフェイスのFullNameを設定し、対象が複数ある場合は、コンマ(,)で区切ります。
 
 -   **hook_method_ignore_classes** <span class='type'>String</span>
 
@@ -110,11 +110,11 @@
 
     デフォルト値`0`
 
-    目的地のTCPポートを設定すると、Socket.connect()時点のStackTraceをエージェントログとして記録します。基本設定で確認されていないDB接続、HTTPC接続などを追跡する際に使用できます。
+    宛先のTCPポートを設定すると、Socket.connect()は、特定の時点でStackTraceをエージェントログとして記録します。基本設定で確認されていないDB接続、HTTPC接続などを追跡する場合に使用できます。
 
     :::caution
 
-    設定した目的地に接続するたびに毎回StackTraceを記録します。パフォーマンスの低下を引き起こす可能性があります。デバッグ用に選別したエージェントに一時的に使用する必要があります。
+    設定した宛先への接続は、毎回StackTraceを記録します。これらを行うと、パフォーマンスが低下する可能性があります。デバッグ用に選択したエージェントに一時的に使用する必要があります。
 
     DB接続状態追跡の例）`stacklog_socket_port=1521`
 
@@ -122,7 +122,7 @@
 
 -   **biz_exceptions** <span class='type'>String</span>
 
-    ビジネスExceptionを登録します。 登録したビジネスExceptionはエラー統計から除外します。トレース詳細から照会できます。
+    ビジネスExceptionを登録します。 登録したビジネスExceptionはエラー統計から除外します。トレース詳細で確認できます。
 
 -   **ignore_exceptions** <span class='type'>String</span>
 
@@ -132,7 +132,7 @@
 
     デフォルト値 `true`
 
-    HTTP401、403のように正常応答ではないHTTP状態コードを返す場合、エラーとして処理します。
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
 
 -   **status_ignore** <span class='type'>String</span>
 
@@ -140,13 +140,13 @@
 
 -   **status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    `whatap.error.STATUS_ERROR`を無視してください。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
 
 -   **httpc_status_error_enable** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    `HTTPC_ERROR`を返却するかどうかを決定します。
+    `HTTPC_ERROR`を返ってくるかどうかを確認します。
 
 -   **httpc_status_ignore** <span class='type'>String</span>
 
@@ -154,6 +154,6 @@
 
 -   **httpc_status_url_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    `whatap.error.HTTPC_ERROR`を無視してください。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 このとき、URLは統計/エラー分析で`HTPC_URL`の値を入力します。
+    `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 このとき、URLは統計/エラー分析に`HTPC_URL`の値を入力します。

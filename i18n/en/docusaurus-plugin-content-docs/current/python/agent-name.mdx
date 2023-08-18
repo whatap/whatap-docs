@@ -22,7 +22,7 @@ tags:
 
     Default `{type}-{ip2}-{ip3}-{process}`
 
-    The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME. 
+    It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME. 
 
     | Name       | Description                                   |
     | ---------- | --------------------------------------------- |
@@ -33,10 +33,8 @@ tags:
 
 -   **app_name** <span class='type'>String</span>
 
-    The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.
+    It is a component used in the agent naming (ONAME) scheme to identify applications. It corresponds to the `{type}` among the `object_name` options.
 
 -   **app_process_name** <span class='type'>String</span>
 
-    It is the application process name used in the agent naming (ONAME) scheme to identify applications. 
-
-    Set the target process to collect CPU, heap memory, and such of the application server. It is a value corresponding to `{process}` in `object_name`. 
+    It is a component used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. The value corresponds to the `{process}` of the `object_name`.  

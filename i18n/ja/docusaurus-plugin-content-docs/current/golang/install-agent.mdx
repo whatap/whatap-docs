@@ -127,10 +127,10 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 -   アプリケーションの開始スクリプトパスに_whatap.conf_ファイルを作成してください。 
 
--   `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション開始スクリプトのパスを_whatap.conf_ファイルパスとして認識します。
+-   `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション起動スクリプトのパスを_whatap.conf_ファイルパスとして認識します。
 
 ```bash title='SH'
-# スクリプト実行パスにwhatap.confファイルを作成
+# スクリプトの実行パスにwhatap.confファイルを作成
 $ echo "license={アクセスキー}" >> ./whatap.conf
 $ echo "whatap.server.host={収集サーバーのIPアドレス}" >> ./whatap.conf
 $ echo "app_name={アプリケーション名}" >> ./whatap.conf
@@ -143,14 +143,20 @@ $ echo "app_name={アプリケーション名}" >> ./whatap.conf
 
 -   `whatap.server.host`：**収集サーバーのIPアドレス**を入力してください。
 
--   `app_name`：アプリケーション名を入力してください。文字列を利用してユーザー設定することができます。
+-   `app_name`：アプリケーション名を入力してください。文字列を使用してユーザー設定することができます。
+
+    :::note
+
+    `app_name`はエージェント名を決定するための構成要素です。詳細については、[次の文書](agent-name)を参照してください。
+
+    :::
 
 ### `WHATAP_HOME`環境変数の設定
 
-_whatap.conf_ファイルパスを`WHATAP_HOME`環境変数として設定できます。`WHATAP_HOME`パスをまず作成してください。
+_whatap.conf_ファイルパスを`WHATAP_HOME`環境変数に設定できます。`WHATAP_HOME`パスを最初に作成してください。
 
 ```bash
-# WHATAP_HOMEパスを先に作成した後、whatap.confファイルパスを設定
+# WHATAP_HOMEパスを作成した後、whatap.confファイルパスを設定
 mkdir ./whatap_home
 echo "license={アクセスキー}" >> ./whatap_home/whatap.conf
 echo "whatap.server.host={収集サーバーのIPアドレス}" >> ./whatap_home/whatap.conf
@@ -162,11 +168,11 @@ WHATAP_HOME=./whatap_home ./app
 
 ### プロセス別エージェント名の設定{#duplicate_appname}
 
-2つ以上のプロセスで実行されるアプリケーションで 1つの_whatap.conf_ファイルを共有すると、ユーザーが設定した変更が正常に反映されない場合があります。 プロセスごとにそれぞれの_whatap.conf_ファイルを設定することをお勧めします。
+2つ以上のプロセスで実行されるアプリケーションは、1つの_whatap.conf_ファイルを共有しても、ユーザーが設定した変更が反映されない場合があります。 プロセスごとにそれぞれの_whatap.conf_ファイルを設定することをお勧めします。
 
-エージェント名が重複しないように、ユーザーは文字列をエージェント名に追加して区別できます。`app_name`オプションで設定した値がエージェント名の最前列に追加されます。
+エージェント名が重複しないように、ユーザーは文字列にエージェント名を追加して区別ができます。`app_name`オプションで設定した値は、エージェント名の最前列に追加されます。
 
-同一インスタンス、同一コマンドで実行されるエージェント名が重複する現象を回避できます。 
+同じインスタンスで、同じコマンドで実行されるエージェント名が重複する現象を回避できます。 
 
 ```bash
 # WHATAP_HOMEパスを先に作成した後、whatap.confファイルパス設定
@@ -191,7 +197,7 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ## Goライブラリーの設定
 
-Goアプリケーションソースコードに[github.com/whatap/go-api](https://github.com/whatap/go-api)パッケージを追加してください。
+Goアプリケーションのソースコードに[github.com/whatap/go-api](https://github.com/whatap/go-api)パッケージを追加してください。
 
 ```bash
 go get github.com/whatap/go-api
@@ -217,7 +223,7 @@ func main(){
 
 :::note
 
-ライブラリー設定の詳細については、[次の文書](api-guide)を参照してください。
+ライブラリ設定の詳細については、[次の文書](api-guide)を参照してください。
 
 :::
 
@@ -226,12 +232,12 @@ func main(){
 <Tabs groupId="golang">
 <TabItem value="redhat-centos" label="Red Hat/CentOS">
 
-アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。
+アプリケーションサーバーを再起動すると、エージェントが情報収集を開始します。
 
 </TabItem>
 <TabItem value="debian-ubuntu" label="Debian/Ubuntu">
 
-アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。
+アプリケーションサーバーを再起動すると、エージェントが情報収集を開始します。
 
 </TabItem>
 <TabItem value="amazonlinux" label="Amazon Linux">
@@ -248,7 +254,7 @@ func main(){
     ps -elf | grep whatap_agent_static
     ```
 
-アプリケーションサーバーを再起動すると、エージェントが情報収集を始めます。
+アプリケーションサーバーを再起動すると、エージェントが情報収集を開始します。
 
 </TabItem>
 </Tabs>

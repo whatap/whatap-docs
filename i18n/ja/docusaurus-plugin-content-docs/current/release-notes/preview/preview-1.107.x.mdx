@@ -14,6 +14,158 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.107.13
+
+2023年8月11日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューのSeriesウィジェットオブジェクトの結合で最大、最小値が作動しない現象を修正</p>
+
+</div>
+
+## Preview 1.107.12
+
+2023年8月10日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### 組織
+
+<p><Status>Fixed</Status>次のメニューパスで選択した組織が非活性化される現象の修正</p>
+
+-   MySQLプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからプロジェクト一覧に移動する時
+
+-   MySQLプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューでサイドメニューのグループをクリックする時
+
+#### ダッシュボード
+
+<p><Status>Fixed</Status><UI>トランザクション分析</UI>ウィンドウから<UI>テーブル</UI>タブのSQLステップ詳細表示モダルで変数復号化パスワード入力が見えないバグを修正</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status><UI>統計</UI>><UI>トランザクション</UI> メニューからトランザクション検索またはトランザクショントレース項目をクリックすると、選択した組織が非活性化する現象を修正</p>
+
+</div>
+
+## Preview 1.107.11
+
+2023年8月10日
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>コンテナマップ</UI>メニューでポッドカテゴリーの時、要約表示のタグ項目を<UI>概要</UI>タブでの分離が抜けているバグの修正</p>
+
+</div>
+
+## Preview 1.107.10
+
+2023年8月9日
+
+<div class='indentTab'>
+
+### `Browser`
+
+#### 分析
+
+<p><UI>ページロードヒートマップ</UI>メニューから次の内容を修正します。</p>
+
+-   <Status>Feature</Status><UI>ページロード詳細</UI>にWebブラウザエラーデータとステップカラムを追加
+
+-   <Status>Feature</Status><UI>ページ一覧</UI>にWebブラウザエラーデータを含んでいるページロードイベントの場合、赤色フォントカラーで表示
+
+-   <Status>Feature</Status>照会時間を最大15日に制限し、過去30日以前のデータは照会できないように設定
+
+</div>
+
+## Preview 1.107.09
+
+2023年8月8日
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Change</Status><UI>コンテナマップ</UI>メニューの要約表示のタグ項目を<UI>概要</UI>タブで分離</p>
+
+</div>
+
+## Preview 1.107.08
+
+2023年8月8日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Cubrid
+
+<p><Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>WhaTapデータベースエージェントのダウンロード</UI>セクションで次の内容を変更します。<p>
+
+-   エージェントファイルダウンロードコマンド
+
+-   whatap.confファイル内のインストールコマンド
+
+-   ガイド文書リンクの追加
+
+</div>
+
+## Preview 1.107.07
+
+2023年8月8日
+
+<div class='indentTab'>
+
+#### プロジェクト一覧
+
+<p><Status>Fixed</Status><UI>プロジェクト一覧</UI>で拡張カードビューのときに表示される<UI>アプリケーション</UI>テキストの日本語が短くなる現象を修正するために用語修正(アプリケーション → アプリ)</p>
+
+#### ダッシュボード
+
+**_トランザクション分析_**ウィンドウで次の内容を修正します。
+
+-   <Status>Fixed</Status><UI>Flexボード</UI>のフィルター機能を活性化すると<UI>トランザクション分析</UI>画面が表示されないバグを修正
+
+-   <Status>Fixed</Status><UI>テーブル</UI>タブの<b>SQLステップ詳細を見る</b>モダルでSQL変数復号化が作動しないバグを修正
+
+-   <Status>Change</Status>トランザクション一覧の<UI>No</UI>カラム項目の設定を修正できないように変更
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status>隣接ログで基準となるログにスクロール位置移動およびハイライト機能を追加
+
+-   <Status>Change</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>メニューから<UI>リアルタイムログイベント</UI> 追加生成時<UI>検索キー</UI>から<UI>すべて</UI>(all)項目を除去
+
+</div>
+
+## Preview 1.107.06
+
+2023年8月7日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+-   <Status>Change</Status><UI>トランザクション分析</UI>ウィンドウの<UI>テーブルビュー</UI>タブで<UI>内容</UI>カラムに該当するトレース情報タイプの表現法を修正
+
+    -   変更前:description情報を一行で表示
+
+    -   変更後:
+        -   description情報を最大4行まで表示
+        -   該当情報をクリックすると、ステップの全体情報モーダルで表示
+
+</div>
+
 ## Preview 1.107.05
 
 2023年8月4日
@@ -89,6 +241,7 @@ toc_max_heading_level: 2
 ### `Log`
 
 -   <Status>Feature</Status><UI>アラート通知</UI>><UI>ログ</UI>メニューから<UI>複合ログイベント</UI>でテンプレートイベントを追加する場合、カテゴリが選択されていない状態ではフィルター項目を無効にするように処理
+
 -   <Status>Change</Status><UI>ログ</UI>下位メニューのハイライト機能から選択可能なカラー変更およびログ本文フォントの変更
 
 </div>

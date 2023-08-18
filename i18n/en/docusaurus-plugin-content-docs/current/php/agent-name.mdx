@@ -40,18 +40,18 @@ The default pattern can be modified in _whatap.ini_.
 
     Default `{type}-{ip2}-{ip3}-{process}`
 
-    The agent name (ONAME) scheme that identifies applications. An OID is created based on the ONAME.  
+    It is an agent naming (ONAME) scheme to identify applications. An OID is created based on the ONAME.  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}
 
 -   **whatap.app_name** <span class='type'>String</span>
 
-    The application name used in the agent name (ONAME) scheme to identify applications, which corresponds to the `{type}` of `object_name`.  
+    It is a component of the agent name (ONAME) to identify applications. The value corresponds to `{type}` of `object_name`.  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}
 
 -   **whatap.app_process_name** <span class='type'>String</span>
 
-    It is the application process name used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. The value corresponds to the `{process}` of the `object_name`.  
+    It is a component used in the agent naming (ONAME) scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory by using application process names. The value corresponds to the `{process}` of the `object_name`.  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}

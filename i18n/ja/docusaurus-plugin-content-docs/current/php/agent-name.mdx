@@ -40,18 +40,18 @@ WhaTapエージェントがアプリケーションサーバーを識別する�
 
     デフォルト値`{type}-{ip2}-{ip3}-{process}`
 
-    アプリケーションを識別するエージェント名(ONAME) システムです。ONAMEに基づいてOIDが生成されます。  
+    アプリケーションを識別するためのエージェント名(ONAME)構成方式です。ONAMEに基づいてOIDが生成されます。  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}
 
 -   **whatap.app_name** <span class='type'>String</span>
 
-    アプリケーションを識別するエージェント名(ONAME) 体系に使用されるアプリケーション名で、`object_name`の`{type}`に対応する値です。  
+    アプリケーションを識別するためのエージェント名（ONAME）の構成要素として`object_name`の`{type}`に該当する値です。  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}
 
 -   **whatap.app_process_name** <span class='type'>String</span>
 
-    アプリケーションを識別するエージェント名(ONAME) システムに使用されるアプリケーションプロセス名です。これを通じて、アプリケーションサーバのCPU、HeapMemoryなどを収集する対象プロセスを設定することができます。`object_name`の`{process}`に該当する値です。  
+    アプリケーションを識別するためのエージェント名 (ONAME) の構成要素です。アプリケーションプロセス名でアプリケーションサーバーのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に該当する値です。  
 
 {@include: ../common-items/_php-restart-whatap-service.mdx}

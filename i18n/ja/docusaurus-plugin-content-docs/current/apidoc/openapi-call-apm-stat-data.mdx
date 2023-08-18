@@ -482,7 +482,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 }
 ```
 
-## アクティブユーザー（5分単位）
+## アクティブユーザー(5分単位)
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/json/visitor_5m/<code>stitme</code>/<code>etime</code>
 
@@ -509,6 +509,12 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   "total": 59
 }
 ```
+
+:::note 
+
+WhaTapは最近5分以内にトランザクションを起こしたユーザをカウントし、**同時接続ユーザ**を測定します。
+
+:::
 
 ## アクティブユーザー（1時間単位）
 

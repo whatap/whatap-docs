@@ -183,10 +183,6 @@
     "message": "Installation checking",
     "description": "The label for the doc item 설치 점검 in sidebar nodejsSidebar, linking to the doc nodejs/install-check"
   },
-  "sidebar.nodejsSidebar.doc.Log 모니터링": {
-    "message": "Log Monitoring",
-    "description": "The label for the doc item Log 모니터링 in sidebar nodejsSidebar, linking to the doc log/introduction"
-  },
   "sidebar.pySidebar.category.Python 모니터링": {
     "message": "Python Monitoring",
     "description": "The label for category Python 모니터링 in sidebar pySidebar"
@@ -903,14 +899,6 @@
     "message": "Step-by-step command guide",
     "description": "The label for category 단계별 명령어 가이드 in sidebar referSidebar"
   },
-  "sidebar.referSidebar.category.Open API": {
-    "message": "Open API",
-    "description": "The label for category Open API in sidebar referSidebar"
-  },
-  "sidebar.referSidebar.category.Open API 호출": {
-    "message": "Open API call",
-    "description": "The label for category Open API 호출 in sidebar referSidebar"
-  },
   "sidebar.referSidebar.category.자주 묻는 질문": {
     "message": "FAQ",
     "description": "The label for category 자주 묻는 질문 in sidebar referSidebar"
@@ -1458,5 +1446,9 @@
   "sidebar.openapiSidebar.category.Open API 호출": {
     "message": "Open API call",
     "description": "The label for category Open API 호출 in sidebar openapiSidebar"
+  },
+  "sidebar.releaseSidebar.category.Browser": {
+    "message": "Browser",
+    "description": "The label for category Browser in sidebar releaseSidebar"
   }
 }

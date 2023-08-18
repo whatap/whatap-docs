@@ -14,7 +14,13 @@ import TabItem from '@theme/TabItem';
 
 This process applies the WhaTap monitoring agent to the Python application running on the Docker container and packages the container image.
 
-## Downloading the agent
+:::note 
+
+To help you understand the Python application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
+
+:::
+
+## Download agent
 
 Install the whatap-python package when building your Python application docker image.
 
@@ -36,10 +42,10 @@ RUN pip3 install --upgrade whatap-python
 
     ```bash
     whatap-setting-config \
-    --host {Collection Server IP} \
-    --license {Access Key} \
-    --app_name {User-defined Application Name} \
-    --app_process_name {Process Name: e.g. uwsgi, gunicorn}
+    --host {Collection server IP} \
+    --license {Access key} \
+    --app_name {User-defined agent name} \
+    --app_process_name {Process name, example, uwsgi, gunicorn}
     ```
 
 :::caution

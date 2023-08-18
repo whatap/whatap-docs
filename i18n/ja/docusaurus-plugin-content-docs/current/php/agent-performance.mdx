@@ -1,7 +1,7 @@
 ---
 id: agent-performance
 title: エージェントの性能設定
-description: アプリケーションサーバーのパフォーマンス関連設定の方法を提供します。
+description: アプリケーションサーバーのパフォーマンスの設定方法を提供します。
 tags:
   - PHP
   - パフォーマンス
@@ -9,7 +9,7 @@ tags:
   - アプリケーション
 ---
 
-PHPアプリケーションサーバーのパフォーマンス関連設定の方法を提供します。
+PHPアプリケーションサーバーのパフォーマンスの設定方法を提供します。
 
 :::caution
 
@@ -34,7 +34,7 @@ PHPアプリケーションサーバーのパフォーマンス関連設定の�
 
     デフォルト値`0.75`
 
-    トランザクションを保存するバッファのサイズを徐々に増やすための基準です。101個から75%以上保存されると、バッファのサイズが2倍になります。
+    トランザクションを保存するバッファのサイズを徐々に増やすための基準です。101個の75%以上保存されると、バッファサイズが2倍になります。
 
 -   **whatap.queue_log_enabled** <span class='type'>Boolean</span>
 
@@ -46,13 +46,13 @@ PHPアプリケーションサーバーのパフォーマンス関連設定の�
 
     デフォルト値 `true`
 
-    Tcpデータ送信処理に使用するChannelに代わりに別のQueueを利用します。データ優先度Queueを使用します。
+    Tcpデータ送信処理に使用するChannelの代わりに別なQueueを使用します。データ優先度Queueを使用します。
 
 -   **whatap.queue_tcp_sender_thread_count** <span class='type'>Int</span>
 
     デフォルト値`2`
 
-    Tcpデータ送信を処理するスレッドの数を指定します。数を増やすと、データ送信が高速に処理できます。
+    Tcpデータ送信を処理するスレッドの数を指定します。数を増やすと、データ送信が高速にできます。
 
 -   **whatap.net_send_buffer_size** <span class='type'>Int</span>
 
@@ -64,25 +64,25 @@ PHPアプリケーションサーバーのパフォーマンス関連設定の�
 
     デフォルト値`false`
 
-    Udpデータ受信処理にChannelに代わり、他のQueueを使用します。
+    Udpデータ受信処理のChannelに代わりに別のQueueを使用します。
 
 -   **whatap.queue_udp_size** <span class='type'>Int</span>
 
     デフォルト値`2048`
 
-    Udpデータ受信バッファを設定します。Channel、Queueバッファを設定します。
+    Udpデータの受信バッファを設定します。Channel、Queueバッファを設定します。
 
 -   **wwhatap.queue_udp_read_thread_count** <span class='type'>Int</span>
 
     デフォルト値`3`
 
-    Udpデータ受信を処理するスレッドの数を指定します。数を増やすことで、UDPバッファから高速にデータを読み込むことができます。
+    Udpデータの受信を処理するスレッドの数を指定します。数を増やすことで、UDPバッファから高速にデータを読みこむことができます。
 
 -   **whatap.queue_udp_overflowed_size** <span class='type'>Int</span>
 
     デフォルト値`4096`
 
-    Udpデータ受信にQueueを使用する場合は、overflowed Queueバッファサイズを設定します。
+    Udpデータの受信にQueueを使用する場合は、overflowed Queueのバッファサイズを設定します。
 
 -   **whatap.queue_udp_process_thread_count** <span class='type'>Int</span>
 
@@ -94,7 +94,7 @@ PHPアプリケーションサーバーのパフォーマンス関連設定の�
 
     デフォルト値`false`
 
-    Profile情報処理にChannelの代わりに別途のQueueを使用します。
+    Profile情報は、処理をChannelの代わりに別のQueueを使用します。
 
 -   **whatap.queue_profile_size** <span class='type'>Int</span>
 
@@ -106,16 +106,16 @@ PHPアプリケーションサーバーのパフォーマンス関連設定の�
 
     デフォルト値`1`
 
-    Profile情報を処理するためのスレッドの数を指定します。数を増やすと高速に処理できます。
+    Profile情報を処理するスレッドの数を指定します。スレッド数を増やすことで高速に処理ができます。
 
 -   **whatap.queue_text_enabled** <span class='type'>Boolean</span>
 
     デフォルト値`false`
 
-    Textデータ処理をするためにChannelの変わりにQueueを使用します。
+    Textデータ処理をするChannelの変わりにQueueを使用します。
 
 -   **whatap.queue_text_size** <span class='type'>Int</span>
 
     デフォルト値 `512`
 
-    Textデータを処理するためのバッファを設定します。
+    Textデータを処理するバッファを設定します。

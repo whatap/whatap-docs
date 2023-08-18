@@ -74,25 +74,25 @@
 
 6.  Dockerをビルドします。
 
-```docker
-cd docker
-docker build -t $Image_Name.
-```
+    ```docker
+    cd docker
+    docker build -t $Image_Name.
+    ```
 
-1.  ユーザーのKubernetes環境内のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
+7.  ユーザーのKubernetes環境のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
 
-  `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割です。デプロイメント(Deployment)を設定すると、対応するPod(Pod)がグループ化されます。
+    `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割です。デプロイメント(Deployment)を設定すると、対応するPod(Pod)がグループ化されます。
 
-```bash showLineNumbers {8-9}
-env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
-  - name: OKIND
-    value: {業務種類名またはDeployment名}
-  - name: license
-    value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
-```
+    ```bash showLineNumbers {8-9}
+    env:
+      - name: NODE_IP
+        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+      - name: NODE_NAME
+        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+      - name: POD_NAME
+        valueFrom: {fieldRef: {fieldPath: metadata.name}}
+      - name: OKIND
+        value: {業務種類名またはDeployment名}
+      - name: license
+        value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX  
+    ```

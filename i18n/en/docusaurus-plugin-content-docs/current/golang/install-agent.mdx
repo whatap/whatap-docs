@@ -29,7 +29,7 @@ To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/ko/s
 
 {@include: ../getting-started/_accesskey-v2.mdx} 
 
-## Downloading the agent
+## Download agent
 
 Once you have received the **access key**, download the agent with the following command.
 
@@ -144,6 +144,12 @@ $ echo "app_name={Application Name}" >> ./whatap.conf
 -   `whatap.server.host`: Enter the **collection server IP address**.
 
 -   `app_name`: Enter the application name. Set the user as a string.
+
+    :::note
+
+    `app_name` is a component to determine the agent name. For more information, see [the following](agent-name).
+
+    :::
 
 ### Setting the `WHATAP_HOME` variable
 

@@ -14,7 +14,13 @@ import TabItem from '@theme/TabItem';
 
 This process applies the WhaTap monitoring agent to the Node.js application running on the Docker container and packages the container image.
 
-## Downloading the agent
+:::note 
+
+To help you understand the Node.js application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express).
+
+:::
+
+## Download agent
 
 Execute the following command to install WhaTap.
 
@@ -93,28 +99,28 @@ env:
 
 2.  Set container environment variables in your Kubernetes environment. Enter the environment variables for the application agent.
 
-  The `OKIND` environment variable plays a role to set the applications for the pod as the same group.
+    The `OKIND` environment variable plays a role to set the applications for the pod as the same group.
 
-````
-```ini showLineNumbers {8}
-env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
-  # If whatap.conf is not to be used, add the settings.
-  - name: license
-    value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
-  - name: whatap_server_host
-    value: "15.165.146.117"
-  - name: whatap_micro_enabled
-    value: "true"
-```
-````
+    ````
+    ```ini showLineNumbers {8}
+    env:
+      - name: NODE_IP
+        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+      - name: NODE_NAME
+        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+      - name: POD_NAME
+        valueFrom: {fieldRef: {fieldPath: metadata.name}}
+      # If whatap.conf is not to be used, add the settings.
+      - name: license
+        value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
+      - name: whatap_server_host
+        value: "15.165.146.117"
+      - name: whatap_micro_enabled
+        value: "true"
+    ```
+    ````
 
-1.  Add the whatap-node-agent sidecar container to collect the user Pod resource usage.
+3.  Add the whatap-node-agent sidecar container to collect the user Pod resource usage.
 
     ```ini
     ...
