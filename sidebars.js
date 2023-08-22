@@ -740,7 +740,7 @@ const sidebars = {
             'python/agent-network',
             'python/agent-log',
             'python/agent-transaction',
-            'python/agent-db-sql',
+            'python/agent-dbsql',
             'python/agent-httpcapicall',
             'python/agent-number-of-user',
             'python/agent-static',
