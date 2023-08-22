@@ -5209,6 +5209,7 @@ const sidebars = {
           label: '설정하기',
           id: 'log/log-setting',
         },
+        'log/log-parser',
         {
           type: 'category',
           label: '주요 메뉴 알아보기',
