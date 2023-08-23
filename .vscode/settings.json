@@ -40,6 +40,10 @@
         {
             "filePath": "src/theme/MDXComponents.js",
             "group": "Default"
+        },
+        {
+            "filePath": "static/img",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"
