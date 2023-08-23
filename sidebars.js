@@ -2945,14 +2945,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1_106_x',
+            id: 'release-notes/service/service-1_108_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1_106_x',
+              id: 'release-notes/service/service-1_108_x',
               className: 'new',
             },
+            'release-notes/service/service-1_106_x',
             'release-notes/service/service-1_104_x',
             'release-notes/service/service-1_102_x',
             'release-notes/service/service-1_100_x',
@@ -2961,7 +2962,6 @@ const sidebars = {
             'release-notes/service/service-1_94_0',
             'release-notes/service/service-1_92_0',
             'release-notes/service/service-1_90_0',
-            'release-notes/service/service-1_88_0',
             'release-notes/service/service-previous',
           ]
         },
@@ -3157,7 +3157,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_3_4',
@@ -3166,7 +3166,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_3_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_3_3',
                 'release-notes/k8s/k8s-1_3_2',
@@ -3240,7 +3240,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_2_2',
@@ -3249,7 +3249,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_2_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_2_1',
                 'release-notes/browser/browser-v1_2_0',
