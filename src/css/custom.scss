@@ -1055,7 +1055,7 @@ main {
       border: none;
       padding: 0 5px 0 5px;
     }
-    code.Change {
+    code.Change, code.Changed {
       background-color: #fdf3e7;
       color: #ff8200;
       border: none;
@@ -1076,7 +1076,7 @@ main {
     sup > code {
       font-size: .6em;
     }
-    code.Deprecate {
+    code.Deprecate, code.Deprecated {
       background-color: #f9ebeb;
       color: #df3737;
       border: none;

@@ -2909,9 +2909,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1_107_x', 
+          id: 'release-notes/preview/preview-1_109_x', 
           className: 'new',
         },
+        'release-notes/preview/preview-1_107_x',
         'release-notes/preview/preview-1_105_x',
         'release-notes/preview/preview-1_103_x',
         'release-notes/preview/preview-1_101_x',
@@ -5109,6 +5110,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/application-service-dashboard',
+                'kubernetes/dashboard-hitmap-trace',
                 'kubernetes/trs-view',
                 'kubernetes/multiservice-hitmap',
                 'kubernetes/tx-profile',
