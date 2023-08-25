@@ -1437,6 +1437,19 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'postgresql/log-db',
+                'postgresql/log-lt',
+                'postgresql/log-exp',
+                'postgresql/log-search',
+                'postgresql/log-setting'
+              ]
+            },
+            {
+              type: 'category',
               label: '알림 설정하기',
               collapsible: true,
               collapsed: true,
@@ -1449,15 +1462,11 @@ const sidebars = {
                 'postgresql/metric-warning-notice',
                 'postgresql/set-notification-message',
                 'postgresql/set-event-detect-anomal',
+                'postgresql/set-event-log',
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
                 'postgresql/set-event-format',
               ],
-            },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/learn-main-menu'
             },
           ]
         }
@@ -2015,6 +2024,19 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mysql/log-db',
+                'mysql/log-lt',
+                'mysql/log-exp',
+                'mysql/log-search',
+                'mysql/log-setting'
+              ]
+            },
+            {
+              type: 'category',
               label: '알림 설정하기',
               collapsible: true,
               collapsed: true,
@@ -2027,16 +2049,12 @@ const sidebars = {
                 'mysql/metric-warning-notice',
                 'mysql/set-notification-message',
                 'mysql/set-event-detect-anomal',
+                'mysql/set-event-log',
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
                 'mysql/set-event-format',
               ],
-            },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/learn-main-menu'
-            },
+            }
           ]
         }
       ],
