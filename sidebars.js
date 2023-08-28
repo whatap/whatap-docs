@@ -3358,6 +3358,19 @@ const sidebars = {
           label: '브라우저 모니터링',
           id: 'best-practice-guides/using-browser-monitoring'
         },
+        {
+          type: 'category',
+          label: '성능 장애 유형',
+          collapsible: false,
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              label: 'DB 연결 지연과 커넥션 풀',
+              id: 'best-practice-guides/about-apm-dbc'
+            },
+          ]
+        },
       ]
     }
   ],
