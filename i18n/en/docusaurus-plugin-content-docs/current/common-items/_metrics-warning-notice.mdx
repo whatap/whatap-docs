@@ -31,7 +31,7 @@ For more information about metrics, see [the following](../metrics/common-metric
 
 Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select **_+ Add alert policy_** on the upper right of the screen. The **_Metrics Events_** window appears.
 
-![Metrics Event](/img/set-events-metrics.png)
+<ImgLang img='set-events-metrics.png' desc='Metrics Event' />
 
 ### Entry of basic information
 
@@ -43,7 +43,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 -   **_Category_**: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
 
-    ![Metrics Event - Category](/img/set-event-select-category.png)
+    <ImgLang img='set-event-select-category.png' desc='Metrics Event - Category' />
 
     -   The **_category_** selection options display ![Leader line 1](/img/number-01.png) **_name_** and ![Leader line 2](/img/number-02.png) data collection interval, and ![Leader line 3](/img/number-03.png) **_key_**. When setting up an event, use the key value of the category.
 
@@ -63,15 +63,15 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 -   **_Event Rule_**
 
-    ![Event Rule](/img/set-event-condition.png)
+    <ImgLang img='set-event-condition.png' desc='Event Rule' />
 
-    By entering the ![Leader line 1](/img/number-01.png) field, ![Leader line 2](/img/number-02.png) operator selection, and ![Leader line 3](/img/number-03.png) threshold value, set the event rule.
+    By entering the ![Leader line 4](/img/number-04.png) field, ![Leader line 5](/img/number-05.png) operator selection, and ![Leader line 6](/img/number-06.png) threshold value, set the event rule.
 
 -   **_Filtering event targets_**
 
-    ![Filtering event targets](/img/set-event-filtering.png)
+    <ImgLang img='set-event-filtering.png' desc='Filtering event targets' />
 
-    It filters the targets by entering the ![Leader line 1](/img/number-01.png) tag, ![Leader line 2](/img/number-02.png) operator selection, and ![Leader line 3](/img/number-03.png) filtering value. If no input, alerts are sent to all agents.
+    It filters the targets by entering the ![Leader line 7](/img/number-07.png) tag, ![Leader line 8](/img/number-08.png) operator selection, and ![Leader line 9](/img/number-09.png) filtering value. If no input, alerts are sent to all agents.
 
 :::note
 
@@ -85,7 +85,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 ### **_Notification Setting_**
 
-![Notification Setting](/img/set-event-receive.png)
+<ImgLang img='set-event-receive.png' desc='Notification Setting' />
 
 -   **_Number of event_**: For the selected period, if the events set in **_Event Rule_** occur as many as the input, an alert is sent.
 
@@ -111,7 +111,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 ### **_Testing event rules_**
 
-![Alert Test](/img/set-event-test.png)
+<ImgLang img='set-event-test.png' desc='Alert Test' />
 
 You can check how many alerts have occurred by enabling the event conditions you set for the selected time period. If you select Run, you can see the number of notifications, and the selected fields and thresholds are displayed on the chart when the event conditions are met.
 
@@ -148,7 +148,7 @@ Metrics events make judgment whenever metrics are received from the agents. On t
 
 The Event Setting window appears. 
 
-![Composite Metrics Event Setting](/img/set-event-cmetric.png)
+<ImgLang img='set-event-cmetric.png' desc='Composite Metrics Event Setting' />
 
 :::note
 
@@ -168,11 +168,11 @@ import TabItem from '@theme/TabItem';
 
 Through the option to configure the time series charts, you can autocomplete **MXQL** for using when setting events.
 
-![Event data inquiry](/img/set-event-data-view.png)
+<ImgLang img='set-event-data-view.png' desc='Event data inquiry' />
 
 -   **_Filter_**: Select an event condition target. Enter values for ![Leader line 1](/img/number-01.png) formula, ![Leader line 2](/img/number-02.png) tag, and ![Leader line 3](/img/number-03.png) filtering values to create filtering conditions.
 
-    ![Filter](/img/set-event-cmetric-filter.png)
+    <ImgLang img='set-event-cmetric-filter.png' desc='Filter' />
 
 -   **_Group by_**: Select the grouped metrics data. You can select multiple items.
 
@@ -185,7 +185,7 @@ Through the option to configure the time series charts, you can autocomplete **M
 
 The editing window appears where you can modify **MXQL** in plain text.
 
-![Metrics Event - Text](/img/set-event-metrics-text.png)
+<ImgLang img='set-event-metrics-text.png' desc='Metrics Event - Text' />
 
 </TabItem>
 </Tabs>
@@ -232,7 +232,7 @@ Set additional options that are related to receiving alerts.
 
 ### **_Testing event rules_**
 
-![Test Event Rules](/img/set-event-cmetric-test.png)
+<ImgLang img='set-event-cmetric-test.png' desc='Test Event Rules' />
 
 You can check how many alerts have occurred by enabling the event conditions you set for the selected time period. If you select Run, you can see the number of notifications, and the selected fields and thresholds are displayed on the chart when the event conditions are met.
 
@@ -400,8 +400,6 @@ isNotEmpty(Key)
 ## Template{#template}
 
 <Xclude product='browser,npm'>
-
-![Composite Metrics - Template](/img/set-event-cmetric-template.png)
 
 -   In case comprehensive event judgment is required for the data received from multiple agents
 

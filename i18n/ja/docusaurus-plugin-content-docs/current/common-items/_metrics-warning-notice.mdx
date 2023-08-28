@@ -1,4 +1,4 @@
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** >**メトリクス**タブ選択
+ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** >**_メトリクス_**タブ選択
 
 ## メトリクスイベントとは
 
@@ -31,7 +31,7 @@
 
 **_アラート通知_** > **_イベント設定_**メニューから画面の上にある**_メトリクス_**を選択します。画面の右上にある **_+イベント追加_**を選択します。**_メトリクスイベント_**ウィンドウが表示されます。
 
-![メトリクスイベント](/img/set-events-metrics.png)
+<ImgLang img='set-events-metrics.png' desc='メトリクスイベント' />
 
 ### 基本情報を入力
 
@@ -43,7 +43,7 @@
 
 -   **_カテゴリ_**：メトリクス データを区切る単位です。メトリクスイベント設定時の必須のオプションの値です。
 
-    ![メトリクスイベント - カテゴリ](/img/set-event-select-category.png)
+    <ImgLang img='set-event-select-category.png' desc='メトリクスイベント - カテゴリ' />
 
     -   **_カテゴリ_**選択オプションには、![指示線1](/img/number-01.png) **_名前_**と![指示線2](/img/number-02.png)データ収集間隔、![指示線3](/img/number-03.png) **_キー_**情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
 
@@ -63,15 +63,15 @@
 
 -   **_イベント発生条件_**
 
-    ![イベント発生条件](/img/set-event-condition.png)
+    <ImgLang img='set-event-condition.png' desc='イベント発生条件' />
 
-    ![指示線1](/img/number-01.png)フィールド、![指示線2](/img/number-02.png)演算子の選択、![指示線3](/img/number-03.png)しきい値を入力して、イベントが発生する条件を設定します。
+    ![指示線4](/img/number-04.png)フィールド、![指示線5](/img/number-05.png)演算子の選択、![指示線6](/img/number-06.png)しきい値を入力して、イベントが発生する条件を設定します。
 
 -   **_イベント対象フィルタリング_**
 
-    ![イベント対象フィルタリング](/img/set-event-filtering.png)
+    <ImgLang img='set-event-filtering.png' desc='イベント対象フィルタリング' />
 
-    ![指示線1](/img/number-01.png)タグ、![指示線2](/img/number-02.png)演算子の選択、![指示線3](/img/number-03.png)フィルタリング値を入力して、ターゲットをフィルタリングします。入力値が見つからない場合は、全体エージェントにアラート通知を送信します。
+    ![指示線7](/img/number-07.png)タグ、![指示線8](/img/number-08.png)演算子の選択、![指示線9](/img/number-09.png)フィルタリング値を入力して、ターゲットをフィルタリングします。入力値が見つからない場合は、全体エージェントにアラート通知を送信します。
 
 :::note
 
@@ -85,7 +85,7 @@
 
 ### **_イベント受信設定_**
 
-![イベント受信設定](/img/set-event-receive.png)
+<ImgLang img='set-event-receive.png' desc='イベント受信設定' />
 
 -   **_発生回数_**：選択した時間内に**_イベント発生条件_**で設定したイベントが入力回数と同じ回数が発生した場合、アラート通知が送信されます。
 
@@ -111,7 +111,7 @@
 
 ### **_通知ルールテスト_**
 
-![アラート通知テスト](/img/set-event-test.png)
+<ImgLang img='set-event-test.png' desc='アラート通知テスト' />
 
 選択した時間に設定したイベント条件を実行し、アラート通知の件数を確認できます。実行ボタンを選択すると、通知発生の件数情報が表示され、イベント発生条件で選択したフィールドとしきい値がチャートに表示します。
 
@@ -148,7 +148,7 @@
 
 イベント設定ウィンドウが表示されます。 
 
-![複合メトリクスイベント設定](/img/set-event-cmetric.png)
+<ImgLang img='set-event-cmetric.png' desc='複合メトリクスイベント設定' />
 
 :::note
 
@@ -168,11 +168,11 @@ import TabItem from '@theme/TabItem';
 
 時系列チャートを設定するオプションにより、イベント設定時に使用する**MXQL**をオートコンプリートさせることができます。
 
-![イベントデータ参照](/img/set-event-data-view.png)
+<ImgLang img='set-event-data-view.png' desc='イベントデータ参照' />
 
 -   **_フィルター_**：イベント条件の対象を選択します。![指示線1](/img/number-01.png)演算式、![指示線2](/img/number-02.png)タグ、![指示線3](/img/number-03.png)フィルタリング値を入力して、フィルタリング条件を作成します。
 
-    ![フィルター](/img/set-event-cmetric-filter.png)
+    <ImgLang img='set-event-cmetric-filter.png' desc='フィルター' />
 
 -   **_グループ化_**：グループ化されたメトリクスデータを選択します。複数を選択できます。
 
@@ -185,7 +185,7 @@ import TabItem from '@theme/TabItem';
 
 **MXQL**を平文のまま修正できる編集ウィンドウが表示されます。
 
-![メトリクスイベント - テキスト](/img/set-event-metrics-text.png)
+<ImgLang img='set-event-metrics-text.png' desc='メトリクスイベント - テキスト' />
 
 </TabItem>
 </Tabs>
@@ -232,7 +232,7 @@ import TabItem from '@theme/TabItem';
 
 ### **_イベントルールテスト_**
 
-![イベントルールテスト](/img/set-event-cmetric-test.png)
+<ImgLang img='set-event-cmetric-test.png' desc='イベントルールテスト' />
 
 選択した時間に設定したイベント条件を実行し、アラート通知の件数を確認できます。実行ボタンを選択すると、通知発生の件数情報が表示され、イベント発生条件で選択したフィールドとしきい値がチャートに表示します。
 
@@ -400,8 +400,6 @@ isNotEmpty(Key)
 ## テンプレート{#template}
 
 <Xclude product='browser,npm'>
-
-![複合メトリクス - テンプレート](/img/set-event-cmetric-template.png)
 
 -   複数のエージェントから受信したデータについて総合的にイベント判定を行う必要がある場合
 
