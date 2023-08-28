@@ -1275,10 +1275,6 @@
     "message": "PostgreSQL 모니터링 V2",
     "description": "The label for category PostgreSQL 모니터링 V2 in sidebar postgreSidebar"
   },
-  "sidebar.postgreSidebar.doc.Log 모니터링": {
-    "message": "Log 모니터링",
-    "description": "The label for the doc item Log 모니터링 in sidebar postgreSidebar, linking to the doc log/learn-main-menu"
-  },
   "sidebar.postgrev1Sidebar.category.PostgreSQL 모니터링": {
     "message": "PostgreSQL 모니터링",
     "description": "The label for category PostgreSQL 모니터링 in sidebar postgrev1Sidebar"
@@ -1403,10 +1399,6 @@
     "message": "MySQL 모니터링 V2",
     "description": "The label for category MySQL 모니터링 V2 in sidebar mysqlSidebar"
   },
-  "sidebar.mysqlSidebar.doc.Log 모니터링": {
-    "message": "Log 모니터링",
-    "description": "The label for the doc item Log 모니터링 in sidebar mysqlSidebar, linking to the doc log/learn-main-menu"
-  },
   "sidebar.releaseSidebar.category.Go": {
     "message": "Go",
     "description": "The label for category Go in sidebar releaseSidebar"
@@ -1450,5 +1442,13 @@
   "sidebar.releaseSidebar.category.Browser": {
     "message": "Browser",
     "description": "The label for category Browser in sidebar releaseSidebar"
+  },
+  "sidebar.postgreSidebar.category.로그": {
+    "message": "로그",
+    "description": "The label for category 로그 in sidebar postgreSidebar"
+  },
+  "sidebar.mysqlSidebar.category.로그": {
+    "message": "로그",
+    "description": "The label for category 로그 in sidebar mysqlSidebar"
   }
 }
