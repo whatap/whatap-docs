@@ -1076,6 +1076,15 @@ main {
     sup > code {
       font-size: .6em;
     }
+    a.ext-link {
+      display: inline-block;
+      padding: 8px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      border: 1px solid #296CF2;
+      border-radius: 3px;
+      text-decoration: none;
+    }
     code.Deprecate, code.Deprecated {
       background-color: #f9ebeb;
       color: #df3737;
@@ -1552,6 +1561,27 @@ main {
             }
             code {
               word-break: break-all;
+            }
+          }
+        }
+      }
+    }
+    .db-metric-4 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 30%;
+            }
+            code { word-break: break-all;}
+            &:nth-of-type(2) {
+              width: 5%;
+            }
+            &:nth-of-type(3) {
+              width: 30%;
+            }
+            &:nth-of-type(4) {
+              width: 15%;
             }
           }
         }
