@@ -3348,6 +3348,11 @@ const sidebars = {
           label: '히트맵 트랜잭션',
           id: 'best-practice-guides/about-apm-hitmap-class'
         },
+        // {
+        //   type: 'doc',
+        //   label: 'DB 연결 지연과 커넥션 풀',
+        //   id: 'best-practice-guides/about-apm-dbc' 
+        // },
         {
           type: 'doc',
           label: '리소스 보드',
