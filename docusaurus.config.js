@@ -34,7 +34,7 @@ module.exports = Promise.resolve({
         path: 'en',
       },
       ja: {
-        label: 'JAP',
+        label: 'JPN',
         direction: 'ltr',
         htmlLang: 'ja-JP',
         path: 'ja',
