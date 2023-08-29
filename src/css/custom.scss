@@ -98,22 +98,21 @@ article[class*=searchResultItem] > h2 > a > span::after {
 html {
   line-height: 1.5;
 }
-html[lang='ko'] {
+html[lang='ko-KR'] {
   word-wrap: keep-all;
   font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
-html[lang='en'] {
+html[lang='en-US'] {
   word-wrap: keep-all;
   font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
 
-html[lang='ja'] {
+html[lang='ja-JP'] {
   word-wrap: break-word;
   word-break: break-all;
   font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
 }
-
 * {
   margin: 0;
   padding: 0;
