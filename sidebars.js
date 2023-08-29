@@ -3202,6 +3202,7 @@ const sidebars = {
               label: 'DB',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               items: [
                 {
                   type: 'category',
