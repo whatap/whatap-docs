@@ -44,6 +44,14 @@
         {
             "filePath": "static/img",
             "group": "Default"
+        },
+        {
+            "filePath": "docs/best-practice-guides/about-apm-dbc.mdx",
+            "group": "Default"
+        },
+        {
+            "filePath": "docs/common-items/_log-settings-102.mdx",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"
