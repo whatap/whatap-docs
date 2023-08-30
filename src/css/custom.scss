@@ -100,18 +100,27 @@ html {
 }
 html[lang='ko-KR'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans KR', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  }
 }
 
 html[lang='en-US'] {
   word-wrap: keep-all;
-  font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  }
 }
 
 html[lang='ja-JP'] {
   word-wrap: break-word;
   word-break: break-all;
-  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo'; //'Noto Emoji'
+  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  }
 }
 * {
   margin: 0;
@@ -247,7 +256,7 @@ html[lang='ja-JP'] {
   background: #f2f2f2;
   border-radius: 2px;
   padding-left: 8px;
-  font-family: "Noto Sans KR", "Noto Sans";
+  font-family: "Noto Sans KR", "Noto Sans", "Noto Sans JP";
   &:focus {
     outline: 2px solid var(--main-osd-color);
   }
