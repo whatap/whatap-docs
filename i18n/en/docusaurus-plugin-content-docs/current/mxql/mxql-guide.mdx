@@ -50,13 +50,13 @@ FILTER { key : tx_count, value : 5}
 
 ## Test environment{#test-env}
 
-In Home > Select Project > **_Sitemap_** > **_Laboratory_** > **_MXQL Executor_**, you can test the MXQL query.
+In Home > Select Project > **_Sitemap_** > **_Laboratory_** > **_MXQL Data_**, you can test the MXQL query.
 
-![MXQL Executor](https://img.whatap.io/media/images/mxql-7.png)
+<ImgLang img='mxql-7.png' desc='MXQL Executor' />
 
 :::note
 
-In metrics, tags and fields are separated, but the **_MXQL Executor_** menu displays tags and fields without distinction.
+In metrics, tags and fields are separated, but the **_MXQL Data_** menu displays tags and fields without distinction.
 
 :::
 
@@ -86,7 +86,7 @@ FILTER {expr : "tx_error < 3"}        -- Pass only 3 items of 10 data
 
 The following is an example of the metrics returned after the metrics processing step.
 
-![Example](https://img.whatap.io/media/images/mxql_metrics_calculate_example.png)
+<ImgLang img='mxql_metrics_calculate_example.png' desc='Example' />
 
 ## Comment
 
@@ -165,7 +165,7 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
 -   Since the data has been saved to the collection server, all fields have the categories stored in MetricValue format. In **_Sitemap_** > **_Analysis_** > **_Metrics Search_** > **_Category_** option, you can see the categories that can be set in **_Basic_**, **_5 Minutes_**, and **_1 Hour_** units. Here, the category where you can select **_5 Minutes_** or **_1 Hour_** is the one saved in MetricValue format.
 
-    ![List of categories that can be set in MetricValue format](https://img.whatap.io/media/images/mxql-3.png)
+    <ImgLang img='mxql-3.png' desc='List of categories that can be set in MetricValue format' />
 
     If the name of the category in which **_5 Minutes_** or **_1 Hour_** can be selected, is combined with `{m5}` or `{h1}`, instead of applying the merge option of the `GROUP` command, you can apply the `sum` option of the `UPDATE` command. 
 
@@ -258,7 +258,7 @@ SKIP {$option:10}
 
 Once you have used the bind variables in your query, the values to enter must be passed when running MXQL.
 
-![Bind variable setting example](https://img.whatap.io/media/images/mxql-1.png)
+<ImgLang img='mxql-1.png' desc='Bind variable setting example' />
 
 :::note
 

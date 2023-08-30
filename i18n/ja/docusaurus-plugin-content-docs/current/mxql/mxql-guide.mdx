@@ -52,7 +52,7 @@ FILTER { key : tx_count, value : 5}
 
 ホーム画面 > プロジェクト選択 > **_サイトマップ_** > **_実験室_** > **_MXQLデータの表示_**メニューからMXQLクエリをテストできます。
 
-![MXQLデータ照会](https://img.whatap.io/media/images/mxql-7.png)
+<ImgLang img='mxql-7.png' desc='MXQLデータ照会' />
 
 :::note
 
@@ -86,7 +86,7 @@ FILTER {expr : "tx_error < 3"}        -- データ10件のうち3件が通過
 
 以下は、メトリクス処理ステップに通過したメトリクスの例です。
 
-![例](https://img.whatap.io/media/images/mxql_metrics_calculate_example.png)
+<ImgLang img='mxql_metrics_calculate_example.png' desc='例' />
 
 ## コメント
 
@@ -165,7 +165,7 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
 -   収集サーバーにデータを保存された時点からすべてのフィールドにはMetricValue形式で保存されたカテゴリがあります。**_サイトマップ_** > **_分析_** > **_メトリクス表示_** > **_カテゴリ_**オプションを使用すると、**_デフォルト_**、**_5分_**、**_1時間_**単位で選択できるカテゴリを確認できます。ここで、**5分**または**1時間**を選択できるカテゴリは、MetricValue形式で保存されたカテゴリです。
 
-    ![MetricValue形式で設定できるカテゴリ一覧](https://img.whatap.io/media/images/mxql-3.png)
+    <ImgLang img='mxql-3.png' desc='MetricValue形式で設定できるカテゴリ一覧' />
 
     **_5分_**または**_1時間_**を選択できるカテゴリの名前と`{m5}`または`{h1}`を組み合わせると`GROUP`コマンドのmergeオプションを適用せず、`UPDATE`コマンドの`sum`オプションを適用できます。 
 
@@ -258,7 +258,7 @@ SKIP {$option:10}
 
 クエリでバインド変数を使用した場合、MXQLを実行する際に入力する値を渡す必要があります。
 
-![バインド変数設定の例](https://img.whatap.io/media/images/mxql-1.png)
+<ImgLang img='mxql-1.png' desc='バインド変数設定の例' />
 
 :::note
 
