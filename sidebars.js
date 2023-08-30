@@ -4064,6 +4064,11 @@ const sidebars = {
           id: 'aws-log/aws-log-setting',
         },
         {
+          type: 'doc',
+          label: '로그 파싱하기',
+          id: 'aws-log/log-parser',
+        },
+        {
           type: 'category',
           label: '주요 메뉴 알아보기',
           collapsible: true,
