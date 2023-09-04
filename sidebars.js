@@ -2870,12 +2870,12 @@ const sidebars = {
   npmsidebar: [
     {
       type: 'category',
-      label: 'NPM 모니터링',
+      label: 'Network 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'npm',
+        id: 'npm/introduction',
       },
       items: [
         'npm/compatibility',
@@ -3554,6 +3554,15 @@ const sidebars = {
           type: 'link',
           label: 'Oracle Cloud Monitor',
           href: 'oracle-cloud/install-agent',
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'link',
+          label: 'Network Performance Monitoring',
+          href: 'npm/introduction',
         },
         {
           type: 'html',
