@@ -1443,7 +1443,8 @@ const sidebars = {
                 'postgresql/log-lt',
                 'postgresql/log-exp',
                 'postgresql/log-search',
-                'postgresql/log-setting'
+                'postgresql/log-setting',
+                'postgresql/log-parser',
               ]
             },
             {
@@ -2030,7 +2031,8 @@ const sidebars = {
                 'mysql/log-lt',
                 'mysql/log-exp',
                 'mysql/log-search',
-                'mysql/log-setting'
+                'mysql/log-setting',
+                'mysql/log-parser',
               ]
             },
             {
