@@ -13,7 +13,7 @@
   --ifm-color-primary-light: #3574f0;
   --ifm-color-primary-lighter: #4a7fe9;
   --ifm-color-primary-lightest: #618ce4;
-  --ifm-code-font-size: 12px;
+  --ifm-code-font-size: 14px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.8);
   --ifm-code-padding-vertical: 0.01rem;
   /* --ifm-code-padding-horizontal: 0.01rem; */
@@ -957,6 +957,7 @@ main {
     span.api {
       color: var(--ifm-safe-color);
     }
+    span.require {color: #df3737;}
     span.options {
       font-weight: 500;
     }
