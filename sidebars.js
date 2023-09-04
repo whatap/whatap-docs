@@ -2870,7 +2870,7 @@ const sidebars = {
   npmsidebar: [
     {
       type: 'category',
-      label: 'Network 성능 모니터링',
+      label: 'Network 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
