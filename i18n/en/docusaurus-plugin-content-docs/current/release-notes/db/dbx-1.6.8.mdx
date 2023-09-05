@@ -1,0 +1,52 @@
+---
+id: dbx-1_6_8
+title: DBX v1.6.8
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_7
+---
+
+August 18, 2023
+
+## Common
+
+-   <Status>Feature</Status> Modified the agent configuration file.
+
+    -   XOS agent update: _whatap.agent.xos-1.1.6g_
+
+        Added app, user, db, client, and pid to the slow query collection data of the PostgreSQL.
+
+    -   Included the xcub module in tar file for convenience of CUBRID installation.
+
+-   <Status>Fixed</Status> Modified the autoscale notification function.
+
+    -   Added the alarm generation and agent operation checking functions upon Scale In/Out.
+
+    -   Deleted the stat category of the Autoscale agent.
+
+* * *
+
+## PostgreSQL V2
+
+-   <Status>Feature</Status> Added the <code>db_postgresql_used_dm</code> category.
+
+-   <Status>Feature</Status> Divided the <code>pg_dml</code> option of the <em>whatap.conf</em> file into <code>pg_dml_interval</code> and <code>pg_dml_limit</code>.
+
+-   <Status>Fixed</Status> Modified the replication collection query (slot addition) and separated the queries depending on the version.
+
+-   <Status>Fixed</Status> Added app, user, db, client, and pid to the slow query collection data (XOS agent update is required).
+
+-   <Status>Fixed</Status> Changed the <code>backend_xid</code> and <code>backend_xmin</code> types for active sessions from <span class='api'>int</span> to <span class='api'>long</span>.
+
+-   <Status>Fixed</Status> Changed the formulas for <code>blks_hit_ratio</code>, <code>index_hit_ratio</code>, and <code>table_hit_ratio</code>.
+
+* * *
+
+## MySQL V2
+
+-   <Status>Feature</Status> Added categories for <code>db_mysql_active_session</code>, <code>db_mysql_deadlock</code>, and <code>db_mysql_tables</code>.
+
+-   <Status>Feature</Status> Sent agentinfo to the tag count.
+
+-   <Status>Fixed</Status> Modified the default value of the <code>filesize</code> collection option in the <code>db_mysql_tables</code> category to <code>true</code>.
+
+-   <Status>Fixed</Status> Fixed the typo error for active session state.

@@ -1,16 +1,34 @@
 {@include: ../common-items/_log-role-view.mdx}
 
-ホーム画面 > プロジェクト選択 > {@include:\_search-path.mdx}
+<Xclude product='aws-log'>
 
-WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、プロジェクトメニューの下の{@include:\_search-path.mdx}メニューを選択してください。 
+ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ検索_**
+
+</Xclude>
+
+<InDoc product='aws-log'>
+
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_ログ検索_**
+
+</InDoc>
 
 **_ログ検索_**メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータを抽出します。 
 
-動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下までくると自動的に次のデータが取得されて表示されます{@include:../common-items/_log-ui-main-term.mdx}
+動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。{@include:../common-items/_log-ui-main-term.mdx}
+
+<Xclude product='postgresql,mysql'>
 
 ![ログ検索sc](/img/log-search.png)
 
-## データ照会
+</Xclude>
+
+<InDoc product='postgresql,mysql'>
+
+<ImgLang img='db-log-search.png' desc='' />
+
+</InDoc>
+
+## データ参照
 
 -   画面の下までスクロールすると、次のデータを検索します。一度に、30,000個のログを参照できます。
 
@@ -24,7 +42,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 -   ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体contentを確認することができます。
 
--   ログのタグを選択すると、**_コピー_**、**_検索_**、**_除外検索_**、**_隣接ログ検索_**でドロップダウンメニューが表示されます。
+-   ログのタグを選択すると、**_コピー_**、**_検索_**、**_除外検索_**、**_隣接ログ検索_**のドロップダウンメニューが表示されます。
 
 ## フィルター
 
@@ -44,7 +62,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 左側の![number-s](/img/number-02.png)領域のタグはカテゴリ別にパーシング(parsing) された検索キーです。タグを選択してフィルターを入力します。<span class='logwr'>オレンジ色</span> タグはカテゴリーで、<span class='lowfg'>青色</span>タグは検索キーです。
 
-<InDoc product='log'>
+<InDoc product='log,postgresql,mysql'>
 
 例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグ(parsing) は、パーシングされた検索キーです。検索キーは**_ログ_** > **_ログ設定_**の**_ログParser 設定_**からパーシングロジックを登録することで設定できます。 
 

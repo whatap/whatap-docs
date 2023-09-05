@@ -14,6 +14,146 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.107.17
+
+August 21, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+In the **_Transaction analysis_** window, modify the following.
+
+-   <Status>Change</Status> Added the <UI>original URL</UI> and <UI>URL/TX</UI> to display data in the <UI>Record Summary</UI> tab.
+
+-   <Status>Change</Status> Added the <UI>original URL</UI> and <UI>URL/TX</UI> to the column settings in the transaction list.
+
+-   <Status>Change</Status> Added the <UI>client IP</UI> to the transaction information in <UI>Table view</UI> and <UI>Tree view</UI> tabs.
+
+-   <Status>Change</Status> When <UI>Agent name</UI> is clicked in the <UI>Record summary</UI> tab, modified to display the agent information in the <UI>Boot environment</UI> menu.
+
+-   <Status>Change</Status> Modified the English texts of the <UI>Table View</UI> tab.
+
+    -   Memory Accumulation (byte) → MemAllocAcc (byte)
+
+    -   CPU Accumulation (ms) → CpuTimeAcc (ms)
+
+-   <Status>Change</Status> Modified the UI styles for the <UI>Select column</UI> function.
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Transaction</UI>, modified the data search range from 5 seconds to 5 minutes, if the range is less than 5 minutes.
+
+-   <Status>Fixed</Status> In <UI>Application</UI> > <UI>Instance performance analysis</UI>, added the exceptional handling for empty data in the <UI>Agent status</UI> tab.
+
+</div>
+
+## Preview 1.107.16
+
+August 21, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+<p><Status>Fixed</Status> Fixed the bug where the <UI>agent name</UI> does not appear in the transaction list of the <UI>Transaction analysis</UI> window.</p>
+
+* * *
+
+### `Network`
+
+<p><Status>Fixed</Status> Modified to display the BETA tags in the headers of NPM products on the project creation and project pages.</p>
+
+</div>
+
+## Preview 1.107.15
+
+August 17, 2023
+
+<div class='indentTab'>
+
+### `Server`
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Resource board</UI>, modified the agent status widget to display fatal and warning states separately.
+
+-   <Status>Fixed</Status> In <UI>Server list</UI>, fixed the screen flickering issue when you enter texts in the disk and network filters.
+
+-   <Status>Fixed</Status> In <UI>Server list</UI>, fixed the bug where the filters are not applied upon refreshing after the values for disk and network filters have been entered.
+
+* * *
+
+### `Database`
+
+#### MySQL
+
+<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the configuration example in <em>whatap.conf</em> under the <UI>Download database agent</UI> section.</p>
+
+* * *
+
+### `Network`
+
+<p><Status>Fixed</Status> In <UI>Analysis</UI> > <UI>TCP session</UI>/<UI>UDP session</UI>, fixed the issue where some values for <UI>ForeignProcessType</UI> and <UI>ForeginAppName</UI> columns appear with 0 in the session information table.</p>
+
+</div>
+
+## Preview 1.107.14
+
+August 17, 2023
+
+<div class='indentTab'>
+
+### `Network`
+
+<p><Status>New</Status> The <b>Network Performance Monitoring</b> service is released. Thanks for your use! The service can be used in <Link to='https://preview.whatap.io' target='_blank'>https://preview.whatap.io</Link>. For more information, see <Link to='../../npm' target='_blank'>the following</Link>.</p>
+
+* * *
+
+### `Database`
+
+#### Instance Monitoring V1
+
+<p><Status>Fixed</Status> Fixed the issue where the widget chart size appears abnormally in the widget <UI>count selector</UI> modal.</p>
+
+#### V2 commons
+
+-   <Status>Change</Status> Modified the modal UI for the table column selector.
+
+-   <Status>Change</Status> Modified the <UI>Session Kill</UI> button to be exposed only to the members with <b>Edit</b> role among project members.
+
+-   <Status>Feature</Status> Applied to display maximum data values on the line chart.
+
+#### Multiple instance monitoring V2
+
+-   <Status>Feature</Status> Added the Info icon to display metrics for each widget.
+
+-   <Status>Feature</Status> Separated the tabs for each product environment (RDS, XOS).
+
+-   <Status>Change</Status> In the <UI>XOS Disk Usage</UI> widget, modified as <code>Mount Source</code> → <code>Mount Point</code> among the table columns (requires an update to the latest version of agent).
+
+#### Database Size V2
+
+<p><Status>Feature</Status> Added the Download CSV feature.</p>
+
+#### PG SQL Statistics
+
+<p><Status>Feature</Status> Added the option to select lookup criteria (temp blocks read, temp blocks written).</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status> In <UI>Log Search</UI>, modified not to display the drop-down menu when the <code>pcode</code> tag is clicked.
+
+-   <Status>Feature</Status> In <UI>Log setting</UI>, improved the selection UI for detection of categories and logs.
+
+</div>
+
 ## Preview 1.107.13
 
 August 11, 2023
@@ -312,7 +452,7 @@ August 1, 2023
 
 -   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Stack</UI>, modified the maximum lookup period for top stacks and unique stacks from 62 days to 3 days.
 
--   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Perf. trend</UI>, modified the maximum lookup period from 62 days to 31 days.
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>Performance Trend</UI>, modified the maximum lookup period from 62 days to 31 days.
 
 * * *
 

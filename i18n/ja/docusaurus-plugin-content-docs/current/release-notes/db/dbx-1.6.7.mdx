@@ -5,6 +5,8 @@ toc_max_heading_level: 2
 pagination_next: release-notes/db/dbx-1_6_6
 ---
 
+2023年6月23日
+
 ## 共通
 
 -   <Status>Fixed</Status> <em>uid.sh</em>ファイル実行が失敗した場合、ログの修正
@@ -16,6 +18,18 @@ pagination_next: release-notes/db/dbx-1_6_6
 -   <Status>Change</Status>READMEファイルを修正
 
 -   <Status>Feature</Status>db connection failが発生したら、<code>fatal_count</code>追加
+
+* * *
+
+## PostgreSQL V2
+
+-   <Status>Feature</Status><code>db_postgresql_tables</code>カテゴリー追加
+
+-   <Status>Feature</Status><code>index scan</code>、<code>seq scan</code>メトリクス追加
+
+-   <Status>Fixed</Status><code>blk_read_time</code>、<code>blk_write_time</code>バグ修正
+
+-   <Status>Fixed</Status><code>db_postgresql_deadtuple</code>カテゴリフィールド修正
 
 * * *
 
@@ -45,7 +59,9 @@ pagination_next: release-notes/db/dbx-1_6_6
 
 ## MySQL
 
-<p><Status>Feature</Status>Tablesize Filesize追加</p>
+-   <Status>Fixed</Status>MySQL 5.0バージョンの場合、active session収集のためのロジック分離
+
+-   <Status>Feature</Status>Tablesize Filesize追加
 
 * * *
 

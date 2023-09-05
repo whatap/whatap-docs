@@ -11,7 +11,7 @@ tags:
 import TR from '@site/src/components/TR';
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-WhaTap Azure MonitorはAPI連動を通じてメトリックを周期的に収集します。収集を希望するサービスに該当するAzure Monitorネームスペースを5分周期で希望するスタットを炊事選択して収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリンを開始できます。WhaTapは安全で便利な使用のためにAzure Registard Appをサポートします。
+WhaTap Azure Monitorは、API連携を使用してメトリックを定期的に収集します。収集するサービスに対応するAzure Monitorネームスペースを5分ごとに収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングが開始できます。WhaTapは、安全で便利な使用のためにAzure Registard Appをサポートします。
 
 {@include: ../getting-started/_create-project-cloud.mdx}  
 
@@ -19,12 +19,12 @@ WhaTap Azure MonitorはAPI連動を通じてメトリックを周期的に収集
 
 1.  Azure Registered Appを追加してください。
 2.  Azure認証情報を入力してください。
-3.  Azure Monitorネームスペースおよび収集サイクルを選択してください。
-4.  リソース グループ、メトリックス、スタットなどを選択してください。
+3.  Azure Monitorのネームスペースおよび収集サイクルを選択してください。
+4.  リソースグループ、メトリックス、統計などを選択してください。
 
 :::note
 
-インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://azure.microsoft.com/ko-kr/pricing/details/monitor/)で確認してください。
+インストール後の使用量によっては、WhaTap料金とは別にクラウドで追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://azure.microsoft.com/ko-kr/pricing/details/monitor/)で確認してください。
 
 :::
 
@@ -32,13 +32,13 @@ WhaTap Azure MonitorはAPI連動を通じてメトリックを周期的に収集
 
 WhaTapモニタリング用 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)を追加してください。 Secretを作成し、アプリケーションID(ApplicationId), テナントID(TenantId)とシークレット(Secret)をWhaTapに入力してください。 
 
-WhaTapモニタリングのためにはMonitor Reader、読者、API Managementサービスの独自権限が必要です。 Azure PortalでSubscript > アクセス制御（IAM）メニューから「追加」ボタンを押して権限を追加することができます。
+WhaTapモニタリングは、Monitor Reader、閲覧者、API Managementサービスのアクセス権限が必要です。 Azure PortalでSubscript > アクセス制御(IAM) メニューから「追加」ボタンを押してアクセス権限を追加することができます。
 
-![Azure Active Directory](/img/registeredapps.png)
+![Azure Active Directory](https://img.whatap.io/media/images/registeredapps.png)
 
 ### 認証情報入力
 
-Azureの認証情報である**_アプリケーションID_**(ApplicationID), **_テナントID_**（TenantID）と**_Azureシークレットキー_**（Secret）をWhaTapに入力してください。
+Azureの認証情報の**_アプリケーションID_**(ApplicationID), **_テナントID_**(TenantID)と**_Azureシークレットキー_**(Secret)をWhaTapに入力してください。
 
 <ImgLang img='whatap_azure_auth_dialog.png' desc='Azure Monitor - Authentification' />
 
@@ -200,8 +200,8 @@ Azureの認証情報である**_アプリケーションID_**(ApplicationID), **
 -   Microsoft.Web sites slots
 -   Microsoft.Web staticSites
 
-### リソース グループ、メトリックス、スタット選択
+### リソース グループ、メトリックス、統計を選択
 
-![number 2](/img/number-02.png)収集チェックされたネームスペースの右側![修正アイコン](/img/ico-edit.svg)**修正**ボタンをクリックすると、収集する**_リソースグループ_**、**_メトリクス_**、**_スタット_**を選択できます。
+![number 2](/img/number-02.png)収集されたネームスペースの右側をチェック![修正アイコン](/img/ico-edit.svg)**修正**ボタンをクリックすると、収集する**_リソースグループ_**、**_メトリクス_**、**_スタット_**を選択できます。
 
 <ImgLang img='whatap_azure_resourcegroup_dialog.png' desc='Azure Monitor - ResourceGroup, Metric, Stats' />

@@ -1,4 +1,4 @@
-### Table View
+### Table view{#anlaysis-trace-table-view}
 
 In the **_Table view_** tab, you can see the transaction execution steps in chronological order.
 
@@ -32,7 +32,7 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 
 </InDoc>
 
-<Xclude product='php,nodejs,golang'>
+<Xclude product='php,nodejs,golang,kubernetes'>
 
 -   The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the **_Active stacks_** button is located. If you click **_Active stack_**, you can check the step performed during the section.
 
@@ -46,6 +46,20 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 
 </Xclude>
 
+<InDoc product='kubernetes'>
+
+-   The area where the red circle (![Active stack icon](/img/ic-c-tx-active-stack.svg)) is located, is the moment when the active stack has been collected. If you select the red circle, the table list appears where the **_Active stacks_** button is located. If you click **_Active stack_**, you can check the step performed during the section.
+
+    :::note
+
+    -   In the transaction list, you can see them from the items marked with the ![Active Stack icon](/img/ic-s-active-stack.svg) icon.
+
+    -   For more information about active stacks, see [the following](../java/analysis-apm#active-stack).
+
+    :::
+
+</InDoc>
+
 -   ![Column icon](/img/ico-column.svg) **_Select Column_**: You can add or hide the memory accumulation and CPU accumulation data as columns in the table list.
 
 -   ![Download icon](/img/ico-download.svg) **_TXT_**: You can download basic transaction data and execution data for each section in a text file.
@@ -53,6 +67,8 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 -   ![Download icon](/img/ico-download.svg) **_SQL_**: The basic transaction information and SQL execution data can be downloaded as a text file.
 
 -   ![Zoom in icon](/img/ic-outside.svg): You can see only the table list, with hiding the transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when you have a long list of tables.
+
+-   If you select the SQL step, the **_SQL_** window appears to display parameters. For more information, see [the following](#transaction-parameter).
 
 <details>
 <summary> Column information guide</summary>

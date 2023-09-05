@@ -12,6 +12,8 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 WhaTapでは10秒（デフォルト値）間隔で収集したThread Stackを活用して、メソッドレベルの性能遅延区間を分析します。
 
+<InDoc product='java,python'>
+
 ![st1](https://img.whatap.io/media/user_guide_application/stack/st1.png)
 
 例）スタックで**トップライン**は`socketRead0`です。 
@@ -19,6 +21,20 @@ WhaTapでは10秒（デフォルト値）間隔で収集したThread Stackを活
 ```java
 java.net.SocketInputStream.socketRead0(Native Method)
 ```
+
+</InDoc>
+
+<InDoc product='dotnet'>
+
+![dotnet active stack](/img/apm-analysis-stack-example-dotnet.png)
+
+例）スタックで**トップライン**は`IL_STUB_ReversePInvoke `です。 
+
+```c
+DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)
+```
+
+</InDoc>
 
 **トップライン**は、ダンプを実行するスレッドがそのメソッドを実行中であることを意味します。瞬間的に捕捉される可能性もありますが、確率的にそのモジュール処理時間の合意比率だけスタックに現れます。この**トップライン**メソッドの頻度を計算してメソッドレベルのパフォーマンスを判断することができます。WhaTapは、**トップライン頻度統計**を**_トップスタック_**(Top Stack)といいます。
 
@@ -50,12 +66,12 @@ StackTrace上の各Stepを基準に、StepとStep間の呼び出し比率をパ�
 
 ```java {1,3}
 whatap.util.ThreadUtil.sleep
-// jdbc.Control.execの呼び出し比率は87.10%
+// jdbc.Control.execの呼び出し比率は40.02%
 jdbc.Control.exec
-// // jdbc.FakePreparedStatement.executeQuery呼び出し比率は61.18%
+// // jdbc.FakePreparedStatement.executeQuery呼び出し比率は68.06%
 ```
 
-`whatap.util.ThreadUtil.sleep` ← `jdbc.Control.exec` ← `jdbc.FakePreparedStatement.executeQuery`の呼び出し比率が 87.10% \* 61.18% を意味するものではありません。`jdbc.Control.exec`で他モジュールの呼び出し可能性が存在するからです。
+`whatap.util.ThreadUtil.sleep` ← `jdbc.Control.exec` ← `jdbc.FakePreparedStatement.executeQuery`の呼び出し比率が 40.02% \* 68.06% を意味するものではありません。`jdbc.Control.exec`で他モジュールの呼び出し可能性が存在するからです。
 
 **_トップスタック_**を使って呼び出し比率を判断する場合、各Step間の呼び出し比率を掛け合わせて全体の呼び出し関係比率を算出してはいけません。Top Stackの呼び出し比率は、Stack Trace上に表示される情報のStep間の呼び出し比率の算出結果であるため、Step間の呼び出し比率で全体の呼び出し比率を算出すると、歪んだ結果が得られる可能性があります。
 
@@ -114,7 +130,7 @@ WhaTapエージェントは、毎10秒（オプションで調整可能）ごと
 
 :::
 
-{@include: ../common-items/_compact-active-stacks.mdx} 
+{@include: ../common-items/_compact-active-stacks.mdx}  
 
 {@include: ../common-items/_background-thread.mdx} 
 

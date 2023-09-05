@@ -1,0 +1,136 @@
+---
+id: changes-analysis-trace
+title: Changes in trace analysis
+description: It guides you to changes to Trace Analysis.
+tags:
+  - Application
+  - Trace
+  - Transactions
+---
+
+The following introduces the changes to the trace analysis feature released on July 25, 2023. For more information about the trace analysis, see [the following](../java/dashboard-hitmap-trace).
+
+## Transaction List
+
+-   Column titles have been changed to clear names so that users can recognize them intuitively.
+
+-   The sequences of columns have been changed based on the importance and checking priority.
+
+-   Deleted columns that are not frequently checked or are unnecessary.
+
+|                            Before                           |
+| :---------------------------------------------------------: |
+| ![before](/img/changes/changes-transaction-list-before.png) |
+|                          **After**                          |
+|  ![after](/img/changes/changes-transaction-list-after.png)  |
+
+### Column changes
+
+| Before                  | After                      |
+| ----------------------- | -------------------------- |
+| Client OS Pro           | Operating system           |
+| CPU Time                | CPU usage time             |
+| IP                      | Client IP                  |
+| referer                 | Referer                    |
+| URL                     | Transaction name           |
+| Allocatable Memory      | Memory allocation usage   |
+| Agent Group             | Agent group name           |
+| Agent Node              | Agent server name          |
+| Agent Node ID           | Agent server ID            |
+| Agent name              | Agent name (oname)         |
+| Agent ID                | Agent ID (oid)             |
+| Client ID               | WClientID                  |
+| Fetch Time              | SQL Fetch Time             |
+| Call Depth              | ❌ (Delete)                 |
+| Multi Caller            | ❌ (Delete)                 |
+| UserAgent Hash          | ❌ (Delete)                 |
+| User Type               | ❌ (Delete)                 |
+| Error Class             | ❌ (Delete)                 |
+
+## Record Summary
+
+-   **_Record summary_** information has been separated in a tab.
+
+-   Grouped data is required for easy understanding.
+
+-   Deleted items that are not frequently checked or are unnecessary.
+
+|                             Before                             |
+| :------------------------------------------------------------: |
+| ![before](/img/changes/changes-transaction-summary-before.png) |
+|                            **After**                           |
+|  ![after](/img/changes/changes-transaction-summary-after.png)  |
+
+### Summary data name changes
+
+| Before                     | After                    |
+| -------------------------- | ------------------------ |
+| clientType                 | Client type              |
+| CPU Time                   | CPU usage time           |
+| Average DBC Time           | DB connect time          |
+| Domain                     | Domain                   |
+| HTTP Call Response Time    | HTTP Call Time           |
+| IP Address                 | Client IP                |
+| Method                     | HTTP Method              |
+| OID                        | Agent ID (oid)           |
+| URL Hash                   | URL Hash                 |
+| userAgent                  | UserAgent                |
+| Multi-transaction          | Multi Transaction ID     |
+| Allocatable Memory         | Memory allocation usage |
+| Agent Group                | Agent group name         |
+| Agent Node                 | Agent server name        |
+| Agent Node ID              | Agent server ID          |
+| Type                       | Client type              |
+| Client ID                  | WClientID                |
+| Fetch Time                 | SQL Fetch Time           |
+| Fetch Count                | SQL Fetch Count          |
+| Caller TID                 | ❌ (Delete)               |
+| Depth                      | ❌ (Delete)               |
+| userAgentHash              | ❌ (Delete)               |
+| Application                | ❌ (Delete)               |
+
+## Table View
+
+-   Column titles have been changed to clear names so that users can recognize them intuitively.
+
+-   Important data such as start, end, progress, and agent name (onname) has been placed at the top.
+
+-   **Cumulative Time** has been deleted and **_Time_** has been added.
+
+|                               Before                              |
+| :---------------------------------------------------------------: |
+| ![before](/img/changes/changes-transaction-table-view-before.png) |
+|                             **After**                             |
+|  ![after](/img/changes/changes-transaction-table-view-after.png)  |
+
+| Before         | After       |
+| -------------- | ----------- |
+| Step           | No          |
+| Cumulative     | hours       |
+| Gap            | Gap         |
+| Step Time      | Elapsed     |
+| Step Contents  | Contents    |
+
+## Tree View
+
+-   The tree view function has been applied in **_Analysis_** >**_ Multi-transaction trace_**.
+
+-   The **_Longest Route_** button has been added.
+
+|                              Before                              |
+| :--------------------------------------------------------------: |
+| ![before](/img/changes/changes-transaction-tree-view-before.png) |
+|                             **After**                            |
+|  ![after](/img/changes/changes-transaction-tree-view-after.png)  |
+
+## Multi-transaction
+
+-   The **_Multi-transaction_** tab has been separated to make the chart easy to see.
+
+-   Changed the time bar to be displayed by default so that users can easily see the progress status.
+
+|                              Before                             |
+| :-------------------------------------------------------------: |
+| ![before](/img/changes/changes-transaction-multi-tx-before.png) |
+|                            **After**                            |
+|  ![after](/img/changes/changes-transaction-multi-tx-after.png)  |

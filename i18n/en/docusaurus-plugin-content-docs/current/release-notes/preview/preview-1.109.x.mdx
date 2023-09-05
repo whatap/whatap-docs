@@ -1,0 +1,141 @@
+---
+id: preview-1_109_x
+title: Preview 1.109.X
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[In https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 1.109.3
+
+August 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+<p><Status>Changed</Status> Added the link to technical documentation to the new hitmap modal guide.</p>
+
+#### My Usage
+
+-   <Status>Fixed</Status> Modified to output the promotion end period based on the UTC time
+
+-   <Status>Changed</Status> Modified to enter the department name, phone number, and invoice language in the payment information input fields.
+
+* * *
+
+### `Network`
+
+-   <Status>Changed</Status> Modified the style of the tag selector in the following menu path.
+
+    -   **_Dashboard_** > **_Network Topology_**
+
+    -   **_Dashboard_** > **_Network Trend_**
+
+-   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, fixed the proxy server address notation errors depending on the situation.
+
+* * *
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status> In <UI>Database size</UI>, improved not to include unnecessary sums in the <b>Table size</b> table.</p>
+
+</div>
+
+## Preview 1.109.2
+
+August 24, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Changed</Status> Modified the page header's beta tag UI.</p>
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Fixed</Status> Fixed the abnormal operation of the parameter bind when some special characters are included in SQL parameters.</p>
+
+#### DB V2 commons
+
+<p><Status>Fixed</Status> Modified the guide modal content for the projects that finished agent update.</p>
+
+* * *
+
+### `Log`
+
+In **_Log Search_**/**_Live Tail_**, the following functions have been modified.
+
+-   <Status>Fixed</Status> Displayed a guide message when there is no search value in the log filter or there is no search entry.
+
+-   <Status>Fixed</Status> Once a value has been modified after clicking a tag in the log filter, a guide message appears if there is any duplicate value.
+
+-   <Status>Fixed</Status> Fixed the issue where all duplicate values are modified when multiple duplicate values have been entered in the log filter and then any value is modified.
+
+-   <Status>Fixed</Status> Fixed the problem where <b>+</b> and <b>-</b> are attached in front, when the .n key is entered in the log filter and the <code>comparison operator</code> like <b>==100</b> is entered without clicking the comparison operator.
+
+</div>
+
+## Preview 1.109.1
+
+August 24, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+#### Resources
+
+In **_Container list_**, added and modified the following functions.
+
+-   <Status>Changed</Status> Modified the container list search cycle from 1 minute to 10 seconds.
+
+-   <Status>Feature</Status> Added the filter search function.
+
+-   <Status>Change</Status> Improved UIs for user convenience.
+
+-   <Status>Deprecated</Status> Removed the node agent selector (replaced by filter search).
+
+-   <Status>Deprecated</Status> Removed the text search (replaced by filter search).
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, fixed the issue where the translation is not output when adding or modifying the <UI>real-time log event</UI> or <UI>composite log event</UI>.
+
+-   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, modified to display the log event settings even if there is no granted <b>alert configuration</b> role or the log monitoring is disabled.
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI>, fixed the problem where a whiteout occurs in the <UI>Error log analysis</UI> tab when the <UI>Error details</UI> window is opened.</p>
+
+</div>
+
+## Preview 1.109.0
+
+August 24, 2023
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status> Fixed and improved minor bugs that users might not notice. 😉</p>
+
+</div>

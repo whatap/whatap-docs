@@ -14,6 +14,146 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.107.17
+
+2023年8月21日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+**_トランザクション分析_**ウィンドウで次の内容を修正します。
+
+-   <Status>Change</Status><UI>レコード要約</UI>タブの表示データに<UI>原本URL</UI>、<UI>URL/TX</UI>追加
+
+-   <Status>Change</Status>トランザクション一覧のカラム設定に<UI>原本URL</UI>、<UI>URL/TX</UI>追加
+
+-   <Status>Change</Status><UI>テーブルビュー</UI>、<UI>ツリービュー</UI>タブのトランザクション要約情報に<UI>クライアントIP</UI>追加
+
+-   <Status>Change</Status><UI>レコード要約</UI>タブで<UI>エージェント名</UI>クリックすると<UI>環境変数</UI>メニューの該当エージェント情報の表示
+
+-   <Status>Change</Status><UI>テーブルビュー</UI>タブのカラムの英訳を修正
+
+    -   Memory Accumulation (byte) → MemAllocAcc (byte)
+
+    -   CPU Accumulation (ms) → CpuTimeAcc (ms)
+
+-   <Status>Change</Status><UI>カラム選択</UI>機能のUI のスタイルを修正
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status><UI>統計/レポート</UI>><UI>統計</UI>><UI>トランザクション</UI>メニューでデータ照会範囲が5分以下の場合、照会されるデータの検索範囲を5秒から5分に修正
+
+-   <Status>Fixed</Status><UI>アプリケーション</UI>><UI>インスタンスパフォーマンス分析</UI>メニューの<UI>エージェント状態</UI>タブで空のデータに対する例外処理を追加
+
+</div>
+
+## Preview 1.107.16
+
+2023年8月21日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+<p><Status>Fixed</Status><UI>トランザクション分析</UI>ウィンドウのトランザクション 一覧から<UI>エージェント名</UI>カラムが表示されないバグを修正</p>
+
+* * *
+
+### `ネットワーク`
+
+<p><Status>Fixed</Status>プロジェクト作成およびプロジェクトページでNPM商品のヘッダーにBETAタグを露出するよう修正</p>
+
+</div>
+
+## Preview 1.107.15
+
+2023年8月17日
+
+<div class='indentTab'>
+
+### `Server`
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>リソースボード</UI>メニューからエージェントステータスウィジェットに危険、アラートステータスが区分されて表示されるよう修正
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューからディスク、ネットワークフィルタで文字入力時に画面点滅現象の改善
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューからディスク、ネットワークフィルタ値を入力した後、リフレッシュ時にフィルタが適用されないバグを修正
+
+* * *
+
+### `Database`
+
+#### MySQL
+
+<p><Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>WhaTapデータベースエージェントのダウンロード</UI>セクションで<em>whatap.conf</em>ファイルの作成例を追加</p>
+
+* * *
+
+### `ネットワーク`
+
+<p><Status>Fixed</Status><UI>分析</UI>><UI>TCPセッション</UI>/<UI>UDPセッション</UI>のセッション情報テーブルで<UI>ForeignProcessType</UI>、<UI>ForeginAppName</UI>カラムの一部の値が0で表示される問題の修正</p>
+
+</div>
+
+## Preview 1.107.14
+
+2023年8月17日
+
+<div class='indentTab'>
+
+### `ネットワーク`
+
+<p><Status>New</Status><b>ネットワークパフォーマンスモニタリング(Network Performance Monitoring)</b>サービスをオープンします。 たくさんのご利用をお待ちしております！ 該当サービスは<Link to='https://preview.whatap.io' target='_blank'>https://preview.whatap.io</Link>で利用できます。 詳細については、<Link to='../../npm' target='_blank'>次の文書</Link>を参照してください。</p>
+
+* * *
+
+### `Database`
+
+#### インスタンスV1
+
+<p><Status>Fixed</Status>ウィジェット<UI>カウントの選択</UI>モーダルのチャートサイズが異常に現れる現象を修正</p>
+
+#### V2共通
+
+-   <Status>Change</Status>テーブルカラム選択モーダルUI変更
+
+-   <Status>Change</Status>プロジェクトメンバーの中で<b>修正</b>権限のあるメンバーだけ<UI>セッション中止</UI>ボタンが露出するように変更
+
+-   <Status>Feature</Status>ラインチャートにデータ最大値を表示を適用
+
+#### マルチインスタンスV2
+
+-   <Status>Feature</Status>ウィジェット別のメトリクス情報を示すインフォアイコンの追加
+
+-   <Status>Feature</Status>製品環境別(RDS、XOS)タブ分離
+
+-   <Status>Change</Status><UI>XOS Disk Usage</UI>ウィジェット内のテーブルのカラムのうち<code>Mount Source</code>→<code>Mount Point</code>に変更(最新エージェントのアップデートが必要)
+
+#### データベースサイズV2
+
+<p><Status>Feature</Status>CSVダウンロード追加</p>
+
+#### PG SQL統計
+
+<p><Status>Feature</Status>照会基準選択オプションの追加(temp blocks read、temp blocks written)</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status><UI>対数検索機</UI>メニューから<code>pcode</code>タグをクリックするとドロップダウンメニューが露出しないように修正
+
+-   <Status>Feature</Status><UI>ログ設定</UI>メニューからカテゴリおよびログ検出条件の選択UIの改善
+
+</div>
+
 ## Preview 1.107.13
 
 2023年8月11日

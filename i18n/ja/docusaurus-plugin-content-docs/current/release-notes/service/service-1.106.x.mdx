@@ -5,6 +5,112 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_104_x
 ---
 
+## Service 1.106.18
+
+2023年8月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### 利用履歴
+
+<p><Status>Fixed</Status>決済手段が国内クレジットカードに設定された場合<UI>ダッシュボード</UI>から<UI>有料に転換</UI>ボタンをクリックすると、モーダルの内容が見えないエラーを修正</p>
+
+* * *
+
+### `Database`
+
+#### MySQL V1
+
+<p><Status>Fixed</Status><UI>スロークエリ</UI>メニューからチャートドラッグすると、下段のテーブルに重複したデータが表示される現象を修正</p>
+
+</div>
+
+## Service 1.106.17
+
+2023年8月22日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status><UI>アプリケーション</UI>><UI>インスタンスパフォーマンス分析</UI>メニューの<UI>エージェント状態</UI>タブで空のデータに対する例外処理を追加</p>
+
+</div>
+
+## Service 1.106.16
+
+2023年8月21日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+**_トランザクション分析_**ウィンドウで次の内容を修正します。
+
+-   <Status>Change</Status><UI>レコード要約</UI>タブの表示データに<UI>原本URL</UI>、<UI>URL/TX</UI>追加
+
+-   <Status>Change</Status>トランザクション一覧のカラム設定に<UI>原本URL</UI>、<UI>URL/TX</UI>追加
+
+-   <Status>Change</Status><UI>テーブルビュー</UI>、<UI>ツリービュー</UI>タブのトランザクション要約情報に<UI>クライアントIP</UI>追加
+
+-   <Status>Change</Status><UI>レコード要約</UI>タブで<UI>エージェント名</UI>クリックすると<UI>環境変数</UI>メニューの該当エージェント情報の表示
+
+-   <Status>Change</Status><UI>テーブルビュー</UI>タブのカラムの英訳を修正
+
+    -   Memory Accumulation (byte) → MemAllocAcc (byte)
+
+    -   CPU Accumulation (ms) → CpuTimeAcc (ms)
+
+-   <Status>Change</Status><UI>カラム選択</UI>機能のUI のスタイルを修正
+
+</div>
+
+## Service 1.106.15
+
+2023年8月18日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>ヘッダーを含むスクロールが発生する問題の修正</p>
+
+</div>
+
+## Service 1.106.14
+
+2023年8月18日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+<p><Status>Fixed</Status><UI>トランザクション分析</UI>ウィンドウのトランザクション 一覧から<UI>エージェント名</UI>カラムが表示されないバグを修正</p>
+
+</div>
+
+## Service 1.106.13
+
+2023年8月17日
+
+<div class='indentTab'>
+
+### `Server`
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>リソースボード</UI>メニューからエージェントステータスウィジェットに危険、アラートステータスが区分されて表示されるよう修正
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューからディスク、ネットワークフィルタで文字入力時に画面点滅現象の改善
+
+-   <Status>Fixed</Status><UI>サーバー一覧</UI>メニューからディスク、ネットワークフィルタ値を入力した後、リフレッシュ時にフィルタが適用されないバグを修正
+
+</div>
+
 ## Service 1.106.12
 
 2023年8月10日

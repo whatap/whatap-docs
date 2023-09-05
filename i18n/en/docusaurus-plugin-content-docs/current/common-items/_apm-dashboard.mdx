@@ -2,7 +2,7 @@ Home > Select Project > **_Dashboard_** > **_Application Dashboard_**
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_Dashboard_** > **_Application Dashboard_** under **_Project Menu_**.
 
-<ImgLang img='apm-dashboard.png' desc='애플리케이션 대시보드'/>
+<ImgLang img='apm-dashboard.png' desc='Application dashboard'/>
 
 The data collected from the agent can be checked in **_Dashboard_** in real time. In case of general charts excluding CPU and memory, the stable data appears in blue and the elements identified as problems appear in red, making it easy to recognize the current status.
 
@@ -60,7 +60,7 @@ It displays the status and number of the registered agents.
 
 ### **_Active Status_**{#active-status}
 
-<ImgLang img='apm-dashboard-active-status.png' desc='액티브 스테이터스' />
+<ImgLang img='apm-dashboard-active-status.png' desc='Active status' />
 
 Active transactions are classified by the execution section and displayed with an equalizer. All agents in the project collect the active transaction count every 5 seconds, along with the progress status. The active status is classified into  **_METHOD_**,  **_SQL_**,  **_HTTPC_**,  **_DBC_**, and  **_SOCKET_**.
 
@@ -84,7 +84,7 @@ If the **_DBC_** or **_SOCKET_** count persists above 1, suspect any problem.
 
 ### **_Active transaction_**{#active-trs}
 
-<ImgLang img='apm-dashboard-active-tx.png' desc='액티브 트랜잭션' />
+<ImgLang img='apm-dashboard-active-tx.png' desc='Active transaction' />
 
 A transaction in progress is called **_active transaction_**. It is represented with an **_Arc Equalizer_** chart. The arc is divided by the number of agents. By representing the number of requests being processed by the server every 5 seconds, you can tell how long the request has been processed. Requests detected at an interval of 5 seconds are classified by color as follows to determine whether they are dangerous or not.
 
@@ -136,7 +136,7 @@ In **_HITMAP_**, the point color represents its density.
 
 -   Error TR: Yellow → Orange → Red
 
-<ImgLang img='hitmap.png' desc='히트맵' />
+<ImgLang img='hitmap.png' desc='Hitmap' />
 
 -   The number on the upper right indicates the <span class='normal'>transaction count</span>/<span class='slow'>error count</span> in the chart.
 

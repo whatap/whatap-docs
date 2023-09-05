@@ -42,7 +42,7 @@ rem ########## WHATAP END ############
 ```bash title="{WebLogic_Path}/user_projects/domains/{User_Domain}/bin/startWebLogic.sh"
 ########## WHATAP START ############
 WHATAP_HOME=/whatap
-WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`
 JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 ########## WHATAP END ############
 ```

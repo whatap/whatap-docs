@@ -10,7 +10,9 @@ In **_Sitemap_** > **_Thread List/Dump_**, from the thread list, the overhead ca
 
 **Active Stack Example**
 
-```javascript title='JAVA'
+<InDoc product='java,python'>
+
+```java title='JAVA'
 java.lang.StringBuffer.append(StringBuffer.java:309)
 java.util.regex.Matcher.appendReplacement(Matcher.java:839)
 java.util.regex.Matcher.replaceAll(Matcher.java:906)
@@ -34,6 +36,26 @@ org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(I
 org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
 ```
+
+</InDoc>
+
+<InDoc product='dotnet'>
+
+```c title='.NET'
+DomainNeutralILStubClass.IL_STUB_ReversePInvoke(Int64,Int64,Int64,Int32)
+System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr,IntPtr,IntPtr,Int32)
+System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr,IntPtr,IntPtr,Int32)
+DomainNeutralILStubClass.IL_STUB_PInvoke(IntPtr,System.Web.RequestNotificationStatus ByRef)
+System.Threading.ThreadHelper.ThreadStart()
+System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object)
+System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object,Boolean)
+System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext,System.Threading.ContextCallback,System.Object,Boolean)
+System.Net.TimerThread.ThreadProc()
+System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],Int32,Boolean)
+System.Threading.Thread.Sleep(Int32)
+```
+
+</InDoc>
 
 **Optimized data collection**
 

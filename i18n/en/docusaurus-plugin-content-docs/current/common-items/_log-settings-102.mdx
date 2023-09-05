@@ -2,15 +2,11 @@
 
 Home > Select Project > **_Management_** > **_Log Setting_**
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_Management_** > **_Log Setting_** under Project Menu. 
-
 </InDoc>
 
-<InDoc product='log'>
+<InDoc product='log,postgresql,mysql'>
 
 Home > Select Project > **_Log_** > **_Log Setting_**
-
-Select a project in the initial screen of the WhaTap monitoring service, and then select **_Log_** > **_Log Setting_** under Project Menu. 
 
 </InDoc>
 
@@ -32,9 +28,9 @@ You can configure the log monitoring related settings in **_Log Setting_**. Usin
 
 </InDoc>
 
-<InDoc product='log'>
+<InDoc product='log,postgresql,mysql'>
 
-![Start Log Monitoring sc](/img/log-getting-started.png)
+<ImgLang img='log-getting-started.png' desc='Start Log Monitoring'/>
 
 </InDoc>
 
@@ -53,11 +49,13 @@ In the ![number 1](/img/number-01.png) area, click the **_Activate log monitorin
 
 </InDoc>
 
-<InDoc product='log'>
+<InDoc product='log,postgresql,mysql'>
 
 In the ![number 1](/img/number-01.png) area, check the agent settings, and then click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
 
 #### Check Agent Configuration{#log-check-agent-settings}
+
+<Xclude product='postgresql,mysql'>
 
 Check the agent version and settings to start the log monitoring. Select **_Check Agent Configuration_** to follow the onscreen instructions.
 
@@ -73,11 +71,19 @@ Check the agent version and settings to start the log monitoring. Select **_Chec
 
     Under **_Apply_**, check each individual application guide. See [the following](log-k8s). 
 
+</Xclude>
+
+<InDoc product='postgresql,mysql'>
+
+Check the agent version and settings to start the log monitoring. For more information about the agent settings, see [the following](log-db).
+
+</InDoc>
+
 #### Activate log monitoring{#log-activate}
 
 Select **_Activate log monitoring_** to set whether or not to enable the log monitoring.
 
-![](/img/log-start.png)
+<ImgLang img='log-start.png' desc='Starting the log monitoring'/>
 
 -   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date. 
 -   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
@@ -150,7 +156,7 @@ At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab
 
 ### Parser List{#log-parser-list-1st}
 
-![Log Parser List](/img/log-1st-parser-list.png)
+<ImgLang img='log-1st-parser-list.png' desc='Log Parser List'/>
 
 If you select the **_Log primary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
 
@@ -166,7 +172,7 @@ If you select the **_Log primary parser setting_** tab at the top of **_Log Sett
 
 At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
 
-  ![sc](/img/log-1st-parser-add.png)
+<ImgLang img='log-1st-parser-add.png' desc='Add Log Parser'/>
 
 1.  Select **_+ Add_**. The **_Add Parser_** window appears.
 
@@ -198,7 +204,7 @@ When registering a parser, you cannot register the parser twice in the same **_C
 
 ### GROK Parser Pattern Registration{#log-pattern-grok}
 
-![GROK Pattern Parser](/img/log-1st-grok.png)
+<ImgLang img='log-1st-grok.png' desc='GROK Pattern Parser'/>
 
 The default syntax is `%{SYNTAX:SEMANTIC}`.  
 
@@ -222,7 +228,7 @@ See the following video guide for more information about the GROK parser pattern
 
 ### Registering the JSON Format Parser Pattern{#log-pattern-json}
 
-![Registering the JSON Format Parser Pattern](/img/log-1st-json.png)  
+<ImgLang img='log-1st-json.png' desc='Registering the JSON Format Parser Pattern'/>
 
 If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser. To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. 
 
@@ -291,11 +297,11 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 2.  Enter the **_log_** in the **_Parser Simulation_** window. 
 
-3.  Check the entered **_log_** and **_pattern_**. 
+3.  Check the entered **_log_** and **_pattern_**.
 
   ![Parser Simulation](/img/log-parser-simulation.png)
 
-1.  When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. Check whether parsing succeeds with the pattern to register. 
+1.  Select **_Simulation_** and then check whether parsing is successful with the pattern to register. 
 
     -   **Simulation Success Screen**
 
@@ -303,7 +309,9 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
     -   **Simulation Failure Screen**
 
-        ![Simulation Failure](/img/log-simulation-fail.png)
+        <ImgLang img='log-simulation-fail.png' desc='Simulation Failure Screen'/>
+
+2.  When you click **_Apply Pattern_**, the pattern that has been entered for the selected parser is applied. 
 
 ### Performance measurement{#log-performance}
 
@@ -335,7 +343,7 @@ The log secondary parser provides the special purpose secondary parsing function
 
 ### Parser List{#log-parser-list-2nd}
 
-![Log Secondary Parser List](/img/log-2nd-parser-list.png)
+<ImgLang img='log-2nd-parser-list.png' desc='Log Secondary Parser List'/>
 
 If you select the **_Log secondary parser setting_** tab at the top of **_Log Setting_**, you can see the **_Parser List_** screen where you can search for registered parsers and add or edit them. 
 
@@ -351,7 +359,7 @@ If you select the **_Log secondary parser setting_** tab at the top of **_Log Se
 
 At the top of **_Log Setting_**, select the **_Log secondary parser setting_** tab to register and modify the log parser. The following shows the common parser registration procedure.
 
-  ![sc](/img/log-2nd-parser-add.png)
+<ImgLang img='log-2nd-parser-add.png' desc='Parser registration order'/>
 
 1.  Select **_+ Add_**. The **_Add Parser_** window appears.
 
@@ -371,7 +379,7 @@ At the top of **_Log Setting_**, select the **_Log secondary parser setting_** t
 
 ### Registration of status codes to exclude for the 4xx, 5xx status code parser{#4xx-5xx-status-parser}
 
-![4xx, 5xx Status Code Parser](/img/log-2nd-4xx5xx.png)
+<ImgLang img='log-2nd-4xx5xx.png' desc='4xx, 5xx status code parser'/>
 
 The **_4xx, 5xx Status Code Parser_** can be used when the status has already been parsed. Additional 4xx and 5xx status codes are parsed using the parsed status. You can create 4xx and 5xx counts with the parsed data. For the status codes to exclude, you can enter or select the 4xx, 5xx status codes. The entered status code is excluded upon parsing the 4xx, 5xx status codes from the logs. 
 
@@ -385,7 +393,7 @@ The **_4xx, 5xx Status Code Parser_** can be used when the status has already be
 
 #### Registration example for the status parser
 
-![GROK Parser - Status parsing pattern registration](/img/log-2nd-4xx5xx-status.png)
+<ImgLang img='log-2nd-4xx5xx-status.png' desc='GROK Parser - Status parsing pattern registration'/>
 
 If the incoming log is `{"msg":"message","status":404}` and its status is parsed by the GROK parser as shown in the example, it is parsed as `status: 404`. If you confirm that the status has been normally parsed, register the status codes to exclude by the 4xx, 5xx status code parser.     
 
@@ -393,7 +401,7 @@ If the incoming log is `{"msg":"message","status":404}` and its status is parsed
 
 If all parsers have been registered, go to **_Flex Board_** and then create the **_log 4XX, 5XX count_** widget.
 
-![](https://img.whatap.io/22/11/28/111724log_status_02_widget_template.png) 
+<ImgLang img='log-flexboard-widget.png' desc='Log flex board widget - 4xx5xx'/>
 
 If the widget is created, you can see the following data.
 
@@ -407,7 +415,7 @@ If the widget is created, you can see the following data.
 
 ### Registration of status codes to exclude by the status code success rate parser{#log-pattern-status}
 
-![Status Code Success Rate Parser](/img/log-2nd-status.png)
+<ImgLang img='log-2nd-status.png' desc='Status Code Success Rate Parser'/>
 
 The **_status code success rate parser_** can be used when the status has already been parsed. For more information about status parsing, see [the following](#4xx-5xx-status-parser). Additional 2xx and 3xx status codes are parsed using the parsed status. HTTP request success rate data can be generated using the parsed data. For the status codes to exclude, you can enter or select the 2xx, 3xx status codes. The entered status code is excluded upon parsing the 2xx, 3xx status codes from the logs. 
 
@@ -423,7 +431,7 @@ The **_status code success rate parser_** can be used when the status has alread
 
 If all parsers have been registered, go to **_Flex Board_** and then create the log request success rate widget.  
 
-![Flex Board - Log Request Success Rate Widget Template](https://img.whatap.io/22/11/28/120046log_success_rate_01_widget_template.png)  
+<ImgLang img='log-flexboard-widget-scs.png' desc='Flex Board - Log Request Success Rate Widget Template'/>
 
 If the widget is created, you can see the following data.
 
@@ -448,6 +456,8 @@ Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collect
 Select the **_Log long-term archive statistics_** tab at the top of **_Log Setting_**. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
 
 <!-- 
+
+>
 
 ![로그 장기 보관 통계](https://img.whatap.io/22/11/28/090932log_022_long_period_stat_config.png)
 

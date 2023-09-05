@@ -1,0 +1,52 @@
+---
+id: dbx-1_6_8
+title: DBX v1.6.8
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_7
+---
+
+2023年8月18日
+
+## 共通
+
+-   <Status>Feature</Status>エージェントインストールファイルの修正
+
+    -   XOSエージェント·アップデート: _whatap.agent.xos-1.1.6g_
+
+        PostgreSQLのスロークエリ収集情報にapp、user、db、client、pid情報を追加
+
+    -   CUBRIDインストールの利便性のため、tarファイルにxcubモジュールを含む
+
+-   <Status>Fixed</Status>autoscale通知機能の修正
+
+    -   Scale in/outのとき、アラーム発生およびエージェント動作check機能追加
+
+    -   Autoscaleエージェントのstatカテゴリの削除
+
+* * *
+
+## PostgreSQL V2
+
+-   <Status>Feature</Status><code>db_postgresql_used_dml</code>カテゴリの追加
+
+-   <Status>Feature</Status><em>whatap.conf</em>ファイルの<code>pg_dml</code>オプションを<code>pg_dml_interval</code>と<code>pg_dml_limit</code>に分離
+
+-   <Status>Fixed</Status>replication収集クエリの修正(slot追加)及びversionによるクエリ分離
+
+-   <Status>Fixed</Status>スロークエリ収集情報にapp、user、db、client、pid情報を追加(XOSエージェントアップデートが必要)
+
+-   <Status>Fixed</Status>active sessionの<code>backend_xid</code>、<code>backend_xmin</code>タイプを<span class='api'>int</span>で<span class='api'>long</span>に変更
+
+-   <Status>Fixed</Status><code>blks_hit_ratio</code>、<code>index_hit_ratio</code>、<code>table_hit_ratio</code>数式の変更
+
+* * *
+
+## MySQL V2
+
+-   <Status>Feature</Status><code>db_mysql_active_session</code>、<code>db_mysql_deadlock</code>、<code>db_mysql_tables</code>カテゴリ追加
+
+-   <Status>Feature</Status>agentinfoをタグカウントで転送
+
+-   <Status>Fixed</Status><code>db_mysql_tables</code>カテゴリの<code>filesize</code>収集オプションの基本値を<code>true</code>に修正
+
+-   <Status>Fixed</Status>active session state誤字修正

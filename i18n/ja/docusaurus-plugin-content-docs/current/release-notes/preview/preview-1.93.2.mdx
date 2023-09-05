@@ -21,15 +21,15 @@ import UI from '@site/src/components/UItext';
 
 #### Flexボード
 
--   <Status>Fixed</Status> ダッシュボードの作成・修正時にダッシュボードのタイトルを最大100文字まで制限
+-   <Status>Fixed</Status> ダッシュボードの作成および、修正時にダッシュボードのタイトルを最大100文字に制限
 
--   <Status>Fixed</Status> ダッシュボード選択後 <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>フィルター</UI> 機能利用時、<UI>保存されたフィルター</UI>の項目を修正する際に表示されるウィンドウの重複する <img src='/img/ico-close.svg' alt='닫기 아이콘'/>閉じるボタンを除去
+-   <Status>Fixed</Status> ダッシュボードを選択後、 <img src='/img/ico-filter.svg' alt='필터 아이콘'/> <UI>フィルター</UI> 機能を使用する場合、<UI>フィルター</UI>の項目が表示された重複する <img src='/img/ico-close.svg' alt='닫기 아이콘'/>閉じるボタンを削除
 
--   <Status>Fixed</Status> イコライザーチャートをのクリック時に、アクティブトランザクション機能に対応する製品でのみ詳細情報ウィンドウが開くように修正
+-   <Status>Fixed</Status> イコライザーチャートをクリックすると、アクティブトランザクション機能を対応する製品のみ詳細情報ウィンドウが開くように修正
 
--   <Status>Fixed</Status> アクティブトランザクションウィジェットをクリックすると表示される詳細情報ウィンドウのロードレイアウトを改善
+-   <Status>Fixed</Status> アクティブトランザクションウィジェットをクリックすると表示される詳細情報ウィンドウの読み込みレイアウトを改善
 
--   <Status>Fixed</Status> 時間選択UIオプションのアニメーションが更新されない現象を修正
+-   <Status>Fixed</Status> 時間選択UIオプションのアニメーションが更新されない不具合を修正
 
 #### メトリクスチャート
 
@@ -65,7 +65,7 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Fixed</Status> 一部のプロジェクトで検索フィルターが作動しない問題を修正
 
--   <Status>Fixed</Status> エージェント一覧が拡張された状態で既存に選択したエージェントがクリックされないためエージェント一覧を折りたたむことができない問題を修正
+-   <Status>Fixed</Status> エージェント一覧が固定された状態で既存の選択したエージェントがクリックされないためエージェント一覧を折りたたむことができない問題を修正
 
 -   <Status>Deprecate</Status> サーバープロジェクト、Kubernetes環境のプロジェクトにおいて <b>同時適用</b> 機能を削除
 
@@ -73,15 +73,15 @@ import UI from '@site/src/components/UItext';
 
 #### トポロジー
 
-<Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>統計/レポート</UI> > <UI>トポロジー</UI> > <UI>アプリケーション統計トポロジー</UI> メニューでエージェントを選択するとエラーが発生する現象を修正
+<Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>統計/レポート</UI> > <UI>トポロジー</UI> > <UI>アプリケーション統計トポロジー</UI> メニューからエージェントを選択するとエラーが発生する不具合を修正
 
 ### `Server`
 
 #### サーバー一覧
 
--   <Status>Fixed</Status> <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>エージェント移転</UI> ウィンドウで非活性化されていたエージェントを選択できるバグを修正
+-   <Status>Fixed</Status> <img src='/img/ico-agent-move.svg' alt='에이전트 이전 아이콘'/> <UI>エージェント移動</UI> ウィンドウで無効化されていたエージェントを選択できる不具合を修正
 
--   <Status>Fixed</Status> CSVダウンロード時に空きデータのあるセルに「undefined」と表示されるものを空白として処理するよう修正
+-   <Status>Fixed</Status> CSVをダウンロード時に、空白データを含むセルに「undefined」と表示されるのを空白として処理するよう修正
 
 #### 分析
 
@@ -125,7 +125,7 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Change</Status> メニュー名を <UI>プロジェクト一覧</UI>から <UI>製品カタログ</UI>に変更
 
--   <Status>Change</Status>プロジェクト作成URLパスの変更（<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>）
+-   <Status>Change</Status>プロジェクト作成URLパスの変更(<em>/v2/account/project/list?add=project</em> → <em>/v2/account/project/create</em>)
 
 -   <Status>Change</Status> プロジェクト作成画面のUI変更
 
@@ -137,7 +137,7 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Fixed</Status> お気に入り機能が誤作動する現象を修正
 
--   <Status>Change</Status> リストビューでプロジェクト項目を選択する時に、新しいウィンドウではなくページに移動するように修正
+-   <Status>Change</Status> リストビューからプロジェクト項目を選択する場合、新しいウィンドウではないページに移動するように修正
 
 #### サーバー詳細、Node詳細
 
@@ -155,21 +155,21 @@ import UI from '@site/src/components/UItext';
 
 #### 分析 > メトリクスチャート
 
--   <Status>Change</Status> ウィジェットでエージェントを複数選択できるように機能を修正
+-   <Status>Change</Status> ウィジェットからエージェントを複数選択できるように機能を修正
 
--   <Status>Feature</Status> ウィジェットチャートのY軸の最大値を固定できるようにオプションを追加
+-   <Status>Feature</Status> ウィジェットチャートのY軸を最大値で固定できるようにオプションを追加
 
--   <Status>Fixed</Status> ウィジェット「詳細を見る」でチャートのドラッグ範囲が1分以上の場合に限って照会期間を変更するよう修正
+-   <Status>Fixed</Status> ウィジェット「詳細を見る」からチャートのドラッグ範囲が1分以上の場合のみ表示期間を変更するよう修正
 
 -   <Status>Fixed</Status> ウィジェット「詳細を見る」でデータリクエストをロード中の場合、ウィジェットの照会期間が変更できないように照会ボタンを非活性化
 
 #### Flexボード
 
--   <Status>Fixed</Status> クラスタープロジェクトをヒートマップウィジェットで確認できない問題を修正
+-   <Status>Fixed</Status> クラスタープロジェクトをヒートマップウィジェットで表示できない問題を修正
 
 -   <Status>Feature</Status> ログカウント数のウィジェットカテゴリ選択オプションに全体カテゴリオプションを追加
 
--   <Status>Change</Status> ダッシュボードテンプレート一覧で、各項目ごとに対応可能な製品カテゴリはアイコンを表示するように修正
+-   <Status>Change</Status> ダッシュボードのテンプレート一覧で、各項目ごとにサポートされている製品カテゴリのアイコンを表示するように修正
 
 #### エージェント / サーバー設定
 
@@ -222,11 +222,11 @@ import UI from '@site/src/components/UItext';
 
 #### ダッシュボード > アプリケーションダッシュボード
 
--   <Status>Feature</Status> ヒープメモリウィジェットに使用量をパーセンテージ（USED/TOTAL * 100）として表示するボタンを追加
+-   <Status>Feature</Status> ヒープメモリウィジェットに使用量をパーセンテージ(USED/TOTAL * 100)として表示するボタンを追加
 
 -   <Status>Fixed</Status> ウィジェット「詳細を見る表示」でチャートデータの間隔を1時間から5分に修正
 
--   <Status>Fixed</Status> 終了したアクティブトランザクションの 「プロファイルを表示」をクリックする時に画面が表示されないバグの修正
+-   <Status>Fixed</Status> 終了したアクティブトランザクションの 「プロファイルの表示」をクリックしても表示されない不具合を修正
 
 #### 分析 > キューブ
 

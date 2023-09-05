@@ -17,3 +17,25 @@ You can set the following events.
 -   **_Transaction Response Time_**
 
     Check with the transaction end time. For example, if the **_count_** of transactions that are above the **_response time_** threshold (**10** seconds) exceeds **10**, and this state **continues** for **5** seconds, the corresponding alert is sent.
+
+-   **_Hitmap Horizontal Line_**
+
+    If in the hitmap response time distribution, the transactions whose response time is **5** seconds or more, continuously occur <sup>\*</sup> **5** times in the same response time section, the corresponding alert is sent.
+
+    :::note
+
+    -   If the \* X-axis (interval of 5 seconds) distribution appears as a continuous line (it is not applied if there is a break in the middle),
+    -   This is a deprecated alert setting feature. Use of the **_hitmap pattern_** alert is recommended.
+
+    :::
+
+-   **_Hitmap Vertical Line_**
+
+    If in the hitmap response time distribution, any vertical line <sup>\*</sup> **continues** to appear in the X-axis zone (interval of 5 seconds) for 5 seconds during the period (1 time), the corresponding alert is sent.
+
+    :::note
+
+    -   \* vertical line occurrence: If among 100 sections whose **_Time Min (sec)_** is between 2.5 and 80 seconds, **30 to 50** sections are marked, the <span class='slow'>alert</span> is sent. If ![Leader line 2](/img/number-02.png) **50** sections are marked with same rule, the <span class='vslow'>fatal alert</span> is sent.
+    -   This is a deprecated alert setting feature. Use of the **_hitmap pattern_** alert is recommended.
+
+    :::

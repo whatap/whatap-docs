@@ -5,6 +5,8 @@ toc_max_heading_level: 2
 pagination_next: release-notes/db/dbx-1_6_6
 ---
 
+June 23, 2023
+
 ## Common
 
 -   <Status>Fixed</Status> Fixed the log when the <em>uid.sh</em> file execution fails.
@@ -16,6 +18,18 @@ pagination_next: release-notes/db/dbx-1_6_6
 -   <Status>Change</Status> Modified the README file.
 
 -   <Status>Feature</Status> If the DB connection fails, <code>fatal_count</code> has been added.
+
+* * *
+
+## PostgreSQL V2
+
+-   <Status>Feature</Status> Added the <code>db_postgresql_tables</code> category.
+
+-   <Status>Feature</Status> Added the <code>index scan</code> and <code>seq scan</code> metrics.
+
+-   <Status>Fixed</Status> Fixed the <code>blk_read_time</code> and <code>blk_write_time</code> bugs.
+
+-   <Status>Fixed</Status> Modified the <code>db_postgresql_deadtuple</code> category field.
 
 * * *
 
@@ -45,7 +59,9 @@ pagination_next: release-notes/db/dbx-1_6_6
 
 ## MySQL
 
-<p><Status>Feature</Status> Added Tablesize and Filesize.</p>
+-   <Status>Fixed</Status> In case of MySQL 5.0, separated the logic to collect active sessions.
+
+-   <Status>Feature</Status> Added Tablesize and Filesize.
 
 * * *
 

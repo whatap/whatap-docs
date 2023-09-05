@@ -1,0 +1,198 @@
+---
+id: service-1_108_x
+title: Service 1.108.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-1_106_x
+---
+
+## Service 1.108.5
+
+August 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Fixed the problem where some project data is cut off in the project list.</p>
+
+</div>
+
+## Service 1.108.4
+
+August 25, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status> In <UI>Database size</UI>, improved not to include unnecessary sums in the <b>Table size</b> table.</p>
+
+</div>
+
+## Service 1.108.3
+
+August 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+<p><Status>Changed</Status> Added the link to technical documentation to the new hitmap modal guide.</p>
+
+</div>
+
+## Service 1.108.2
+
+August 24, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Common
+
+<p><Status>Fixed</Status> Fixed the abnormal operation of the parameter bind when some special characters are included in SQL parameters.</p>
+
+#### DB V2 commons
+
+<p><Status>Fixed</Status> Modified the guide modal content for the projects that finished agent update.</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, modified to display the log event settings even if there is no granted <b>alert configuration</b> role or the log monitoring is disabled.</p>
+
+</div>
+
+## Service 1.108.1
+
+August 23, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Fixed the problem where unreleased product types are exposed in the project list in some menu paths.</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, fixed the issue where the translation is not output when adding or modifying the <UI>real-time log event</UI> or <UI>composite log event</UI>.</p>
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Browser Error</UI>, fixed the problem where a whiteout occurs in the <UI>Error log analysis</UI> tab when the <UI>Error details</UI> window is opened.</p>
+
+</div>
+
+## Service 1.108.0
+
+August 23, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Flex Board
+
+-   <Status>Fixed</Status> In <UI>Flex Board</UI>, hided the blog content when creating a Flex Board if the language is not set to Korean.
+
+-   <Status>Fixed</Status> In case of merging the series widget objects in <UI>Flex Board</UI>, fixed the problem where the maximum and minimum values do not work.
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> In <UI>STAT/REPORT</UI> > <UI>Statistics</UI> > <UI>Transaction</UI>, modified the data search range from 5 seconds to 5 minutes, if the range is less than 5 minutes.</p>
+
+* * *
+
+### `Database`
+
+#### Instance Monitoring V1
+
+<p><Status>Fixed</Status> Fixed the issue where the widget chart size appears abnormally in the widget <UI>count selector</UI> modal.</p>
+
+#### V2 commons
+
+-   <Status>Change</Status> Modified the modal UI for the table column selector.
+
+-   <Status>Change</Status> Modified the <UI>Session Kill</UI> button to be exposed only to the members with <b>Edit</b> role among project members.
+
+-   <Status>Feature</Status> Applied to display maximum data values on the line chart.
+
+-   In <UI>Dashboard</UI> > <UI>Multiple instance monitoring</UI>, the following functions have been added or modified.
+
+    -   <Status>Feature</Status> Added the Info icon to display metrics for each widget.
+
+    -   <Status>Feature</Status> Separated the tabs for each product environment (RDS, XOS).
+
+    -   <Status>Change</Status> In the <UI>XOS Disk Usage</UI> widget, modified as <code>Mount Source</code> → <code>Mount Point</code> among the table columns (requires an update to the latest version of agent).
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Database Size</UI>, Download CSV has been added.
+
+#### PostgresSQL
+
+<p><Status>Feature</Status> In <UI>PG SQL statistics</UI>, added options to select lookup criteria (temp blocks read, temp blocks written).</p>
+
+#### MySQL
+
+<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the configuration example in <em>whatap.conf</em> under the <UI>Download database agent</UI> section.</p>
+
+#### MS SQL Server
+
+-   <Status>Change</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the configuration command example in <em>whatap.conf</em> under the <UI>Download database agent</UI> section.
+
+* * *
+
+### `Container`
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, replaced the filter to enhance the function.
+
+-   <Status>Change</Status> Separated the tags in the summary view of <UI>Container map</UI> into the <UI>Target Information</UI> tab.
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Log</UI> > <UI>Composite log event</UI>, added the templates for function update and addition of the log event template.
+
+-   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Log</UI>, the filtering is disabled when no category is selected in case of adding the template events with <UI>Composite log event</UI>.
+
+-   <Status>Change</Status> In the highlight function under <UI>Log</UI>, changed the colors that can be selected and the log's body font.
+
+-   <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the filter operator from <code>=</code> to <code>!=</code>.
+
+-   <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the search value that appears by entering the numeric keyword, <code>.n</code> to be displayed from <code>+>= 123</code> to <code>>= 123</code> as the <code>comparison operator</code> <code>search value</code>.
+
+-   <Status>Feature</Status> Added the scroll position movement and highlighting functions to the base log from the adjacent logs.
+
+-   <Status>Change</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, deleted <UI>All</UI> from <UI>Search key</UI> when newly creating a <UI>real-time log event</UI>.
+
+-   <Status>Fixed</Status> In <UI>Log Search</UI>, modified not to display the drop-down menu when the <code>pcode</code> tag is clicked.
+
+-   <Status>Feature</Status> In <UI>Log setting</UI>, improved the selection UI for detection of categories and logs.
+
+* * *
+
+### `Browser`
+
+#### Analytics
+
+<p>In <UI>Page Load Hitmap</UI>, the following have been modified.</p>
+
+-   <Status>Feature</Status> In <UI>Page Load Details</UI>, added the browser error data and step column.
+
+-   <Status>Feature</Status> In <UI>Page List</UI>, the red font color appears for page load events that include the browser error data.
+
+-   <Status>Feature</Status> It has been set to limit the search time to the maximum of 15 days and to make it impossible to search for data older than 30 days in the past.
+
+</div>

@@ -1,4 +1,4 @@
-### Tree view
+### Tree view{#anlaysis-trace-tree-view}
 
 To see the transaction execution steps in a tree format, select the **_Tree View_** tab. You can see the details of each transaction and its trace details, trace start time, step time, and call relationship. If you select each section of the diagram, the tree view of the step appears.
 
@@ -24,6 +24,20 @@ To see the transaction execution steps in a tree format, select the **_Tree View
 
 -   ![Time icon](/img/ic-custom-time.svg) **_Display Time_**: The timestamps, gaps, and elapsed times for each segment are displayed in text.
 
+    -   8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
+
+    -   Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
+
+    -   Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
+
 -   ![Hide icon](/img/ic-eye-invisible.svg) **_Hide Time_**: The time is hidden.
 
 -   ![Zoon in icon](/img/ic-outside.svg): You can see only the tree view that hides transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when the tree view list is long.
+
+-   ![Popup icon](/img/ic-popup.svg): A window appears where you can view SQL variables and HTTP queries. For more information, see [the following](#transaction-parameter).
+
+:::note
+
+In case of start and step times, the time differences caused by the transaction call environment are corrected on the screen through traces and mappings in the parent transactions. Accordingly, there may be differences from the actual time data.
+
+:::

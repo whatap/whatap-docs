@@ -18,14 +18,14 @@ _catalina.sh_ファイルの先頭に`JAVA_OPTS`環境変数を追加します�
 ```bash title='{Tomcat_PATH}/bin/catalina.sh' showLineNumbers
 ########## WHATAP START ############
 WHATAP_HOME=/whatap
-WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`
 JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 ########## WHATAP END ############
 ```
 
 :::note
 
-`ls ${WHATAP_HOME}/whatap.agent-*.jar|sort|tail-1`項目は、エージェントのアップデートで最新のWhaTapエージェントを適用します。
+`ls ${WHATAP_HOME}/whatap.agent-*.jar|sort -V|tail-1`項目は、エージェントのアップデートで最新のWhaTapエージェントを適用します。
 
 :::
 

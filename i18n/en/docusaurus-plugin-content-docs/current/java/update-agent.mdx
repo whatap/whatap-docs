@@ -24,7 +24,7 @@ To easily process the above steps, the agent jar file name is to include the ver
 ```bash {3} showLineNumbers
 ########## WHATAP ############
 WHATAP_HOME=/whatap
-WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`
 JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 ########## WHATAP ############
 ```

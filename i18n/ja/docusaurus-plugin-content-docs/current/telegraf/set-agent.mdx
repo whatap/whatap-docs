@@ -1,7 +1,7 @@
 ---
 id: set-agent
 title: 設定
-description: Telegrafエージェントサーバーのwhatap.confファイルを通じて設定できるオプションについて案内します。
+description: Telegrafエージェントサーバーのwhatap.confファイルを使用して設定できるオプションについて説明します。
 tags:
   - Telegraf
   - 設定
@@ -11,7 +11,7 @@ WhaTapエージェントは、エージェントごとに必要な設定を_what
 
 ## エージェント名の識別
 
-WhaTapは、モニタリング情報収集対象のインフラサーバーの識別のために、基本的にはサーバーから収集した情報を活用します。 
+WhaTapは、モニタリング情報の収集対象のインフラサーバーの識別のために、基本的にサーバーから収集した情報を使用します。 
 
 {@include: ../common-items/_agent-name-warning.mdx}
 
@@ -19,18 +19,18 @@ WhaTapは、モニタリング情報収集対象のインフラサーバーの�
 
     デフォルト値`{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`
 
-    アプリケーションを識別するためのエージェント名(ONAME)構成方式です。ONAMEに基づいてOIDが生成されます。
+    アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。
 
     | 名称         | 説明                                                        |
     | ---------- | --------------------------------------------------------- |
-    | {type}     | app_nameに設定された値を使用します。 デフォルト値はTelegrafです。                 |
+    | {type}     | app_nameに設定された値を使用します。 デフォルト値は、Telegrafです。                |
     | {ip#}      | IPを分割するときは、#番目の桁を使用します。                                   |
     | {hostname} | サーバーのホスト名を使用します。                                          |
     | {docker}   | DockerコンテナIDを使用します。                                       |
 
 -   **app_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。`object_name`の`{type}`に該当する値です。
+    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。`object_name`の`{type}`に対応する値です。
 
     :::note
 
@@ -42,7 +42,7 @@ WhaTapは、モニタリング情報収集対象のインフラサーバーの�
 
 -   **license** <span class='type'>String</span>
 
-    エージェントのインストール時にサーバーから割り当てられたプロジェクトアクセスキーを設定します。 プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。
+    エージェントのインストール時にサーバーから受け取ったプロジェクトアクセスキーを設定します。 プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のための暗号化キーが含まれています。
 
 -   **whatap.server.host** <span class='type'>ip_address</span>
 
@@ -98,9 +98,9 @@ WhaTapは、モニタリング情報収集対象のインフラサーバーの�
 
     デフォルト値 `1024`
 
-    累積値を持つフィールドの増加値を計算し、別のフィールドを追加します。 name.fields形式として指定し、複数はコンマ（,）で区切ります。
+    累積値を持つフィールドの増加値を計算し、別のフィールドを追加します。 name.fields形式として指定し、複数はコンマ(,)で区切ります。
 
-    e.g. nginx.accepts,nginx.requests nginxのaccepts, requests値の増加値をacceptsDelta, requestsDeltaフィールド名で追加して渡します。
+    e.g. nginx.accepts,nginx.requests nginxは、accepts, requests値の増加値をacceptsDelta, requestsDeltaフィールド名に追加します。
 
 ## ログ
 

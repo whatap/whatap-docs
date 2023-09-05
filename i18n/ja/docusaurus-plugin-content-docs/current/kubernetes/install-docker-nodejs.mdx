@@ -101,7 +101,6 @@ env:
 
     `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割を担います。
 
-    ````
     ```ini showLineNumbers {8}
     env:
       - name: NODE_IP
@@ -118,7 +117,6 @@ env:
       - name: whatap_micro_enabled
         value: "true"
     ```
-    ````
 
 3.  ユーザーPod(Pod) リソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加します。
 

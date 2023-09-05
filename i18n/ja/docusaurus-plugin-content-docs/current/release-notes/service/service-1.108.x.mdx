@@ -1,0 +1,198 @@
+---
+id: service-1_108_x
+title: Service 1.108.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-1_106_x
+---
+
+## Service 1.108.5
+
+2023年8月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>プロジェクト一覧からプロジェクト関連情報の一部がカットされて表示される現象の修正</p>
+
+</div>
+
+## Service 1.108.4
+
+2023年8月25日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status><UI>データベースサイズ</UI>メニューから<b>テーブルサイズ</b>テーブル内の不要な合計値が含まれないように改善</p>
+
+</div>
+
+## Service 1.108.3
+
+2023年8月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+<p><Status>Changed</Status>ヒートマップの新規モーダル説明案内に技術文書リンクを追加</p>
+
+</div>
+
+## Service 1.108.2
+
+2023年8月24日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### 共通
+
+<p><Status>Fixed</Status>一部の特殊文字がSQLパラメータに含まれる場合、パラメータバインドが異常に作動する現象の修正</p>
+
+#### DB V2共通
+
+<p><Status>Fixed</Status>エージェントアップデートを完了したプロジェクトの案内モーダル内容の修正</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>メニューから<b>通知設定</b>権限がないか、ログモニタリングが活性化されていなくても、ログイベント設定内容を表示できるように修正</p>
+
+</div>
+
+## Service 1.108.1
+
+2023年8月23日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>一部のメニューパスでプロジェクト一覧に未発売の商品タイプが露出する問題を修正</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>メニューから<UI>リアルタイムログイベント</UI>または<UI>複合対数イベント</UI>を追加または修正する場合、翻訳値が正常に出力されない現象の修正<p>
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ブラウザエラー</UI>メニューから<UI>エラー詳細</UI>ウィンドウを開いた時<UI>エラーログ分析</UI>タブ画面の白化現象の修正</p>
+
+</div>
+
+## Service 1.108.0
+
+2023年8月23日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### Flexボード
+
+-   <Status>Fixed</Status><UI>Flexボード</UI>メニューから言語設定が韓国語でない場合は、Flexボード作成時にブログコンテンツを非表示にする
+
+-   <Status>Fixed</Status><UI>Flexボード</UI>メニューのSeriesウィジェットオブジェクトの結合で最大、最小値が作動しない現象を修正
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status><UI>統計/レポート</UI>><UI>統計</UI>><UI>トランザクション</UI>メニューでデータ照会範囲が5分以下の場合、照会されるデータの検索範囲を5秒から5分に修正<p>
+
+* * *
+
+### `Database`
+
+#### インスタンスV1
+
+<p><Status>Fixed</Status>ウィジェット<UI>カウントの選択</UI>モーダルのチャートサイズが異常に現れる現象を修正</p>
+
+#### V2共通
+
+-   <Status>Change</Status>テーブルカラム選択モーダルUI変更
+
+-   <Status>Change</Status>プロジェクトメンバーの中で<b>修正</b>権限のあるメンバーだけ<UI>セッション中止</UI>ボタンが露出するように変更
+
+-   <Status>Feature</Status>ラインチャートにデータ最大値を表示を適用
+
+-   <UI>ダッシュボード</UI>><UI>マルチインスタンスモニタリング</UI>メニューから次の機能を追加および修正します。
+
+    -   <Status>Feature</Status>ウィジェット別のメトリクス情報を示すインフォアイコンの追加
+
+    -   <Status>Feature</Status>製品環境別(RDS、XOS)タブ分離
+
+    -   <Status>Change</Status><UI>XOS Disk Usage</UI>ウィジェット内のテーブルのカラムのうち<code>Mount Source</code>→<code>Mount Point</code>に変更(最新エージェントのアップデートが必要)
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>データベースサイズ</UI>メニューからCSVダウンロードを追加
+
+#### PostgresSQL
+
+<p><Status>Feature</Status><UI>PG SQL統計</UI>メニューから照会基準選択オプションを追加(temp blocks read、temp blocks written)</p>
+
+#### MySQL
+
+<p><Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューの<UI>WhaTapデータベースエージェントのダウンロード</UI>セクションで<em>whatap.conf</em>ファイルの作成例を追加</p>
+
+#### MS SQL Server
+
+-   <Status>Change</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューのWhaTap<UI>データベースエージェントダウンロード</UI>セクションで<em>whatap.conf</em>設定コマンドの例を追加
+
+* * *
+
+### `Container`
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューにフィルター機能を強化するためのフィルター交換
+
+-   <Status>Change</Status><UI>コンテナマップ</UI>メニューの要約表示のタグ項目を<UI>対象情報</UI>タブで分離
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>><UI>複合ログイベント</UI>機能改善およびログイベントテンプレートの追加
+
+-   <Status>Feature</Status><UI>アラート通知</UI>><UI>ログ</UI>メニューから<UI>複合ログイベント</UI>でテンプレートイベントを追加する場合、カテゴリが選択されていない状態ではフィルター項目を無効にするように処理
+
+-   <Status>Change</Status><UI>ログ</UI>下位メニューのハイライト機能から選択可能なカラー変更およびログ本文フォントの変更
+
+-   <Status>Fixed</Status><UI>ログ検索機</UI>、<UI>ライブテール</UI>メニューからフィルターオペレーターの値を<code>=</code>から<code>!=</code>に修正
+
+-   <Status>Fixed</Status><UI>ログ検索機</UI>、<UI>ライブテール</UI>メニューから数字キーワード<code>.n</code>を入力した後に現れる検索値が<code>+>=123</code>から<code>>=123</code>のように<code>比較オペレーター</code><code>検索値</code>で出るように修正
+
+-   <Status>Feature</Status>隣接ログで基準となるログにスクロール位置移動およびハイライト機能を追加
+
+-   <Status>Change</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI>メニューから<UI>リアルタイムログイベント</UI> 追加生成時<UI>検索キー</UI>から<UI>すべて</UI>(all)項目を除去
+
+-   <Status>Fixed</Status><UI>対数検索機</UI>メニューから<code>pcode</code>タグをクリックするとドロップダウンメニューが露出しないように修正
+
+-   <Status>Feature</Status><UI>ログ設定</UI>メニューからカテゴリおよびログ検出条件の選択UIの改善
+
+* * *
+
+### `Browser`
+
+#### 分析
+
+<p><UI>ページロードヒートマップ</UI>メニューから次の内容を修正します。</p>
+
+-   <Status>Feature</Status><UI>ページロード詳細</UI>にWebブラウザエラーデータとステップカラムを追加
+
+-   <Status>Feature</Status><UI>ページ一覧</UI>にWebブラウザエラーデータを含んでいるページロードイベントの場合、赤色フォントカラーで表示
+
+-   <Status>Feature</Status>照会時間を最大15日に制限し、過去30日以前のデータは照会できないように設定
+
+</div>

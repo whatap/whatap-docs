@@ -53,7 +53,7 @@ tags:
 
     ```bash
     WHATAP_HOME=/whatap
-    WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1
+    WHATAP_JAR=ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1
     export JAVA_OPTS="-javaagent:${WHATAP_JAR} "
     ```
 

@@ -7,10 +7,10 @@
 | id           | connection識別子                                               |
 | ユーザー         | SQL実行アカウント                                                  |
 | db           | default database名、 ない場合はNULL                                |
-| host         | このスレッドが接続されたhostname                                        |
-| command      | 実行中のコマンドtype（Query/Sleep/Daemonなど）                          |
-| time         | 現在COMMANDの遂行時間（秒）                                           |
-| state        | スレッドの現在の状態（executing/updating/sending dataなど）               |
+| host         | このスレッドが関連付けられたhostname                                      |
+| command      | 実行中のコマンドtype(Query/Sleep/Daemonなど)                          |
+| time         | 現在のCOMMANDの実行時間(秒)                                          |
+| state        | スレッドの状態(executing/updating/sending dataなど)                  |
 | query        | 実行されているstatementです。`Processlist.info`からリテラル値を除外したSQLを表示します。 |
 | query_param  | `query`から分離したリテラル値                                          |
 | holder type  | holderセッションのtype                                            |
