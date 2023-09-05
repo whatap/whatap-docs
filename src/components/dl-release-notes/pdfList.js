@@ -1,5 +1,11 @@
 const svList = [
     {
+        "name": 'Service-1.106.x',
+        "date": '2023-07-26',
+        "url": '/pdf/release-notes/service-1.106.x.pdf',
+        "docs": '/release-notes/service/service-1_106_x'
+    },
+    {
         "name": 'Service-1.104.x',
         "date": '2023-06-28',
         "url": '/pdf/release-notes/service-1.104.x.pdf',
@@ -441,6 +447,12 @@ const pyList = [
 ];
 
 const dotnetList = [
+    {
+        "name": 'dotNet-agent-v2.1.4',
+        "date": '2023-08-29',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.4.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_4',
+    },
     {
         "name": 'dotNet-agent-v2.1.3',
         "date": '2023-08-16',
@@ -898,14 +910,20 @@ const k8sList = [
 
 const dbxList = [
     {
+        "name": "DBX-agent-v1.6.9",
+        "date": "2023-08-25",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.9.pdf",
+        "docs": "release-notes/db/dbx-1_6_9"
+    },
+    {
         "name": "DBX-agent-v1.6.8",
-        "date": "",
+        "date": "2023-08-18",
         "url": "/pdf/release-notes/dbx-agent-v1.6.8.pdf",
         "docs": "release-notes/db/dbx-1_6_8"
     },
     {
         "name": "DBX-agent-v1.6.7",
-        "date": "",
+        "date": "2023-06-23",
         "url": "/pdf/release-notes/dbx-agent-v1.6.7.pdf",
         "docs": "release-notes/db/dbx-1_6_7"
     },
