@@ -166,6 +166,12 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.15',
+        "date": '2023-08-31',
+        "url": '/pdf/release-notes/java-agent-v2.2.15.pdf',
+        "docs": '/release-notes/java/java-2_2_15',
+    },
+    {
         "name": 'Java-agent-v2.2.14',
         "date": '2023-08-17',
         "url": '/pdf/release-notes/java-agent-v2.2.14.pdf',
