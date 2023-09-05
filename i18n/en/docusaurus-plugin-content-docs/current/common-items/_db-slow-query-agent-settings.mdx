@@ -58,6 +58,8 @@ Set as follows to adjust the collection cycle for slow queries.
 slow_query_interval = 30 # Default 30 seconds
 ```
 
+<InDoc product='postgresql,postgresql-v1'>
+
 :::note
 
 -   The slow queries for RDS postgreSQL are not supported.
@@ -65,3 +67,15 @@ slow_query_interval = 30 # Default 30 seconds
 -   To monitor slow queries, be sure to install the XOS agent on the DB server. For more information about the XOS agent installation, see [the following](agent-xos-settings).
 
 :::
+
+</InDoc>
+
+<InDoc product='mysql,mysql-v1'>
+
+:::note
+
+To monitor slow queries, be sure to install the XOS agent on the DB server. For more information about the XOS agent installation, see [the following](agent-xos-settings).
+
+:::
+
+</Indoc>

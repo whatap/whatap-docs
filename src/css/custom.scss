@@ -1493,6 +1493,14 @@ main {
           p.narrow {
             letter-spacing: -1.4px;
           }
+          p.npm {
+            max-height: 60px;
+            height: 60px;
+            font-size: .9rem;
+            padding: 0;
+            -webkit-line-clamp: 3; /* 라인수 */
+            -webkit-box-orient: vertical;
+          }
           code {
             display: block;
             font-size: var(ifm-body-breacrums-size);
@@ -1508,6 +1516,9 @@ main {
       p {
         letter-spacing: -0.5px;
       }
+    }
+    .apm-agent.npm {
+      padding-right: 0;
     }
     .apm-agent.new {
       background: url('img/ic-release-up.svg') no-repeat right 6px top 6px;

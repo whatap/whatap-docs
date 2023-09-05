@@ -58,6 +58,8 @@ Slow queryの収集周期を調整するには、以下のように設定して�
 slow_query_interval=30#デフォルト値30秒
 ```
 
+<InDoc product='postgresql,postgresql-v1'>
+
 :::note
 
 -   RDS postgreSQLのslow queryはサポートしません。
@@ -65,3 +67,15 @@ slow_query_interval=30#デフォルト値30秒
 -   モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
 
 :::
+
+</InDoc>
+
+<InDoc product='mysql,mysql-v1'>
+
+:::note
+
+モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
+
+:::
+
+</InDoc>

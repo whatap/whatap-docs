@@ -1450,5 +1450,37 @@
   "sidebar.mysqlSidebar.category.로그": {
     "message": "Log",
     "description": "The label for category 로그 in sidebar mysqlSidebar"
+  },
+  "sidebar.npmsidebar.category.Network 모니터링": {
+    "message": "Network Monitoring",
+    "description": "The label for category Network 모니터링 in sidebar npmsidebar"
+  },
+  "sidebar.learningSidebar.category.성능 장애 유형": {
+    "message": "성능 장애 유형",
+    "description": "The label for category 성능 장애 유형 in sidebar learningSidebar"
+  },
+  "sidebar.learningSidebar.doc.DB 연결 지연과 커넥션 풀": {
+    "message": "DB 연결 지연과 커넥션 풀",
+    "description": "The label for the doc item DB 연결 지연과 커넥션 풀 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-dbc"
+  },
+  "sidebar.indexSidebar.link.Network Performance Monitoring": {
+    "message": "Network Performance Monitoring",
+    "description": "The label for link Network Performance Monitoring in sidebar indexSidebar, linking to npm/introduction"
+  },
+  "sidebar.openapiSidebar.category.Application": {
+    "message": "Application",
+    "description": "The label for category Application in sidebar openapiSidebar"
+  },
+  "sidebar.openapiSidebar.category.Server": {
+    "message": "Server",
+    "description": "The label for category Server in sidebar openapiSidebar"
+  },
+  "sidebar.awslogSidebar.doc.로그 파싱하기": {
+    "message": "로그 파싱하기",
+    "description": "The label for the doc item 로그 파싱하기 in sidebar awslogSidebar, linking to the doc aws-log/log-parser"
+  },
+  "sidebar.logSidebar.doc.로그 파싱하기": {
+    "message": "로그 파싱하기",
+    "description": "The label for the doc item 로그 파싱하기 in sidebar logSidebar, linking to the doc log/log-parser"
   }
 }
