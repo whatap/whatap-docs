@@ -555,7 +555,7 @@ module.exports = Promise.resolve({
           },
           {
             type: 'doc',
-            docId: 'npm',
+            docId: 'npm/introduction',
             position: "left",
             label: 'NPM',
             className: 'hidden',
