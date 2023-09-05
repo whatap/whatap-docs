@@ -97,6 +97,7 @@ const sidebars = {
             'java/agent-apdex',
             'java/agent-static',
             'java/agent-toplogy',
+            'java/agent-transaction-error-stack',
             'java/agent-additional-option',
             'java/async-tracking',
           ]
@@ -1443,7 +1444,8 @@ const sidebars = {
                 'postgresql/log-lt',
                 'postgresql/log-exp',
                 'postgresql/log-search',
-                'postgresql/log-setting'
+                'postgresql/log-setting',
+                'postgresql/log-parser',
               ]
             },
             {
@@ -2030,7 +2032,8 @@ const sidebars = {
                 'mysql/log-lt',
                 'mysql/log-exp',
                 'mysql/log-search',
-                'mysql/log-setting'
+                'mysql/log-setting',
+                'mysql/log-parser',
               ]
             },
             {
@@ -2868,12 +2871,12 @@ const sidebars = {
   npmsidebar: [
     {
       type: 'category',
-      label: 'NPM 모니터링',
+      label: 'Network 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
         type: 'doc',
-        id: 'npm',
+        id: 'npm/introduction',
       },
       items: [
         'npm/compatibility',
@@ -2996,14 +2999,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_14',
+                id: 'release-notes/java/java-2_2_15',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_14',
+                  id: 'release-notes/java/java-2_2_15',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_14',
                 'release-notes/java/java-2_2_13',
                 'release-notes/java/java-2_2_12',
                 'release-notes/java/java-2_2_11',
@@ -3012,7 +3016,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_8',
                 'release-notes/java/java-2_2_7',
                 'release-notes/java/java-2_2_6',
-                'release-notes/java/java-2_2_5',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3062,7 +3065,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1_4_4',
@@ -3071,7 +3074,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_4_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_4_3',
                 'release-notes/python/python-1_4_2',
@@ -3552,6 +3555,15 @@ const sidebars = {
           type: 'link',
           label: 'Oracle Cloud Monitor',
           href: 'oracle-cloud/install-agent',
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'link',
+          label: 'Network Performance Monitoring',
+          href: 'npm/introduction',
         },
         {
           type: 'html',

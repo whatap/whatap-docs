@@ -52,6 +52,14 @@
         {
             "filePath": "docs/common-items/_log-settings-102.mdx",
             "group": "Default"
+        },
+        {
+            "filePath": "docs/release-notes/preview/preview-1.109.x.mdx",
+            "group": "Default"
+        },
+        {
+            "filePath": "docs/release-notes/service/service-1.108.x.mdx",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"

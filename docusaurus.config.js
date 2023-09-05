@@ -340,6 +340,12 @@ module.exports = Promise.resolve({
               },
               {
                 type: 'doc',
+                docId: 'npm/introduction',
+                label: 'Network Performance Monitoring',
+                className: 'narrow',
+              },
+              {
+                type: 'doc',
                 docId: 'log/introduction',
                 label: 'Log',
               },
