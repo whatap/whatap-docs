@@ -1,0 +1,141 @@
+---
+id: preview-1_109_x
+title: Preview 1.109.X
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+<https://preview.whatap.io>で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 1.109.3
+
+2023年8月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+<p><Status>Changed</Status>ヒートマップの新規モーダル説明案内に技術文書リンクを追加</p>
+
+#### 利用履歴
+
+-   <Status>Fixed</Status>プロモーション終了期間をUTC時間基準で出力するよう修正
+
+-   <Status>Changed</Status>決済情報入力欄に部署名、電話番号、請求書言語を入力できるように修正
+
+* * *
+
+### `ネットワーク`
+
+-   <Status>Changed</Status>次のメニュー パスでタグ選択者のスタイル変更
+
+    -   **_ダッシュボード_**>**_ネットワークトポロジー_**
+
+    -   **_ダッシュボード_**>**_ネットワーク推移_**
+
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから状況に応じてプロキシサーバー アドレスの表記に発生するエラーを修正
+
+* * *
+
+### `Database`
+
+#### MySQL V2
+
+<p><Status>Fixed</Status><UI>データベースサイズ</UI>メニューから<b>テーブルサイズ</b>テーブル内の不要な合計値が含まれないように改善</p>
+
+</div>
+
+## Preview 1.109.2
+
+2023年8月24日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Changed</Status>ページヘッダーBetaタグUIを修正</p>
+
+* * *
+
+### `Database`
+
+#### 共通
+
+<p><Status>Fixed</Status>一部の特殊文字がSQLパラメータに含まれる場合、パラメータバインドが異常に作動する現象の修正</p>
+
+#### DB V2共通
+
+<p><Status>Fixed</Status>エージェントアップデートを完了したプロジェクトの案内モーダル内容の修正</p>
+
+* * *
+
+### `Log`
+
+**_ログ検索機_**/**_ライブテール_**メニューから次の機能を修正します。
+
+-   <Status>Fixed</Status>ログ フィルタに検索値がないか、検索値を入力していない場合は、案内メッセージを出力
+
+-   <Status>Fixed</Status>ログ フィルタでタグをクリックして値を修正する場合、重複した値が存在する場合は案内メッセージを出力
+
+-   <Status>Fixed</Status>ログフィルタで重複した値を複数入力し、1つを修正する場合、重複した値すべてが修正される現象修正
+
+-   <Status>Fixed</Status>ログ フィルタで.n キーを入力し、比較オペレーターをクリックせずに<b>==100</b>のように<code>比較オペレーターの値</code>をすぐ入力すると <b>+</b>、<b>-</b>が前につく現象を修正
+
+</div>
+
+## Preview 1.109.1
+
+2023年8月24日
+
+<div class='indentTab'>
+
+### `Container`
+
+#### リソース
+
+**_コンテナ一覧_**メニューから次の機能を追加および修正します。
+
+-   <Status>Changed</Status>コンテナ一覧の照会周期を1分から10秒に変更
+
+-   <Status>Feature</Status>フィルタ検索機能の追加
+
+-   <Status>Changed</Status>ユーザビリティのためのUI改善
+
+-   <Status>Deprecated</Status>ノードエージェントセレクタの削除(フィルタ検索に置き換え)
+
+-   <Status>Deprecated</Status>テキスト検索の削除(フィルター検索に置き換え)
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI> メニューから<UI>リアルタイムログイベント</UI>または<UI>複合対数イベント</UI>を追加または修正する場合、翻訳値が正常に出力されない現象の修正
+
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI> メニューから<b>通知設定</b>権限がないか、ログモニタリングがアクティブ化されていなくても、ログイベント設定内容を表示できるように修正
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ブラウザエラー</UI>メニューから<UI>エラー詳細</UI>ウィンドウを開いた時<UI>エラーログ分析</UI>タブ画面の白化現象の修正</p>
+
+</div>
+
+## Preview 1.109.0
+
+2023年8月24日
+
+<div class='indentTab'>
+
+<p><Status>Fixed</Status>ユーザーが気づかない些細なバグを修正し、改善しました。 😉</p>
+
+</div>

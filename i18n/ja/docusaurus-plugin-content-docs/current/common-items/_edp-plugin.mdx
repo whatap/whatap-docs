@@ -4,13 +4,13 @@
 
 :::
 
-_WHATAP_HOME_パスの下に_plugin_フォルダを作成してください。 そしてviを通じて_AppServiceStart.x_ファイルを作成してください。
+_WHATAP_HOME_パスの下に_plugin_フォルダを作成してください。 次に、viを使用して、_AppServiceStart.x_ファイルを作成してください。
 
 ![プラグインの使用例](https://img.whatap.io/media/agent_python/data/app_start_plug.png)
 
-`println("test");`とタイプして保存すると、画面に"test"という文字列が出力されることが確認できます。 確認した後、パラメータから情報を抽出してください。 
+`println("test");`と入力して保存すると、画面に、"test"という文字列が出力されます。確認後、パラメータから情報を抽出してください。 
 
-この例題では、パラメータがHashMapに伝われ、そこにurlパラメータが伝われています。
+この例では、パラメータはHashMapに渡され、その後に、urlパラメータに渡されます。
 
 ```javascript title=JAVA
 Object url =((java.util.HashMap)$point.getArgs()[0]).get("url");
@@ -18,4 +18,4 @@ $ctx.service((String)url);
 //println("url="+url);
 ```
 
-このようにプラグインを作成すると、トランザクション名が変更されます。
+このようなプラグインを作成すると、トランザクション名が変わります。

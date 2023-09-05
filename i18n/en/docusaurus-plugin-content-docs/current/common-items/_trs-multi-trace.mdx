@@ -11,55 +11,83 @@ To trace multi-transactions, set the activation option.
 
 :::
 
-## Multiple transaction trace
+## Multiple transaction trace{#trace-multi-tx}
 
 Drag the chart area in Home > Select Project > **_Analysis_** > **_Hitmap_**. The transaction information of the dragged chart area appears in the **_TX Trace_** list at the bottom. Transactions including multi-transactions in the list are marked with the ![Icon](/img/ic-s-mult-transation.svg) icon.
 
 ![mtrace_M](/img/tx-trace-table.png)
 
-If you select the trace, the **_Statistics_** information window appears. If multi-transactions are traced, you can see the **_MTID_** value in **_Multi-transaction_** under the Summary information tab at the top. The same **_MTID_** is generated even if you issue an external call in a transaction. Even if the projects are separated by service, all transactions between applications can be checked through the initially issued **_MTID_**. For more information about the detailed analysis of TX traces through the **_Statistics_** window, see [the following](trs-profile#details).
+When you select the trace, the **_Transaction unformation_** window appears. If multi-transactions are being traced, you can see the **_Multi-transaction ID_** in the **_Record summary_** tab. Even if you make an outbound call in transaction, the same **_multi-transaction ID_** is generated. If projects are separated by service, all transactions between applications can be verified through the first issued **_multi-transaction ID_**. For more information about the detailed analysis of TX traces using the **_Transaction information_** window, see [the following](trs-profile#details).
 
-![mtrace_apm](/img/tx-trace-dt-up.png)
+![Record summary](/img/tx-trace-dt-up.png)
 
-If you select the ![Right arrow icon](/img/ic-arrow-right.svg) icon next to **_MTID_**, **_Analysis_** > **_Multiple Transaction Trace_** appears. **_Multiple Transaction Trace_** provides transactions and trace data so that you can see various call relationships at a glance that occur within the system or between systems and you can identify where problems have occurred for improvements. 
+If you select **_Multi-transaction ID_**, the **_Multi-Transaction_** tab appears. The transactions and trace data are provided so that you can see various call relationships at a glance within or between systems, and identify where problems occurred for improvement.
 
-![Multi-transaction chart sc](/img/multi-tx-cht.png)
+### Chart{#trace-multi-tx-chart}
 
-The ![number1](/img/number-01.png) area is the **_Filter panel_**. You can filter data by editing a specific key value (**_MTID_**/**_CUSTID_**) or project list for search. The applied filter is applied in tabs for **_Chart View_**, **_Table View_**, and **_Tree View_** displayed on the right ![number2](/img/number-02.png).
+![차트](/img/multi-tx-cht.png)
 
-### Chart View
+The default screen for **_Multi-transaction trace_** is **_Chart_**. **_Chart_** clearly provides you with call relationships for each transaction. You can check individual execution times for transaction services with the same **_multi-transaction ID_**. You can see the call relationships between transactions through the step times (![number 1](/img/number-01.png) **_time bar_**) expressed in background colors for transaction nodes. In the **_chart_**, you can use the mouse to move to a desired position or zoom in or out by scrolling.
 
-The main screen of **_Multiple Transaction Trace_** is **_Chart View_**. The **_Chart View_** tab quickly and clearly provides users with the call relationship between transactions. You can see individual execution times of transaction services with the same **_MTID_**. You can see the call relationship between transactions through the elapsed time (**_Time Bar_**) represented with the background color of the transaction node. 
+-   ![Filter icon](/img/ico-filter.svg) **_Select project_**: You can select or deselect projects to be displayed on the chart.
 
-Through the option at the top of **_Chart View_** ![number3](/img/number-03.png), you can see additional information including **_Time Bar_**. If you select **_Font Size_**, you can adjust the size of the font displayed on the chart. If you select **_Time Bar_**, **_Application Name_**, or **_Project_**, you can control the information displayed in the node. If you select **_Database_**, **_External_**, or **_Internal_**, you can see the information of other database connection requests or HTTP calls in transactions on a chart.
+-   ![Configuration icon](/img/ico-setting.svg) **_Chart view settings_**: You can display or hide the elements on the chart.
 
-If you select a transaction node, the **_Statistics_** window appears as follows. The transaction trace allows you to see the transaction details. For more information about the transaction trace through the **_statistics_** window, see [the following](trs-profile#details).
+    -   **_Time Bar_**: You can display or hide the step times (**_time bar_**) for each node.
 
-![Display Detail of Multi-transaction](/img/multi-tx-stat.png)
+    -   **_Application Name_**: You can display or hide the agent names (oname) for each node.
 
-### Table View
+    -   **_Project_**: You can display or hide the project names for each node.
 
-If you select the **_Table View_** tab, you can see the data for each transaction included in multi-transactions in a table. Select the ![Select Column Icon](/img/ic-column.svg) **_Select Column_** icon to edit the column in the table. 
+    -   **_Database_**/**_External_**/**_Internal_**: Connection requests for other databases or HTTP calls that occurred in the transaction can also be viewed through the nodes of the chart.
 
-![Multi-transaction Table View](/img/multi-tx-tb.png)
+If you select a transaction node, an additional **_Transaction information_** window appears as follows. The transaction trace allows you to see the transaction details. For more information about the detailed analysis of transaction trace through the **_Transation information_** window, see [the following](trs-profile#details).
 
-If you select ![Detail icon](/img/ic-pageview.svg) **_Detail_** icon, the **_Statistics_** window appears as selection of a **_chart view_** node. The transaction trace allows you to see the transaction details. For more information about the transaction trace through the **_Statistics_** window, see [the following](trs-profile#details).
+![Display Detail of Multi-transaction](/img/multi-tx-additional-info.png)
 
-### Tree View
+### Table{#trace-multi-tx-table}
 
-If you select the **_Tree View_** tab, you can see the detailed information of each transaction and their traces. The transactions within the overall transaction time or start times and step times of each trace to provide transaction call relationships in a tree format. 
+If you select the **_Table_** button, you can see the data for each transaction included in multi-transactions in a table. Select the ![Column Icon](/img/ic-column.svg) **_Column settings_** icon to edit the column in the table. 
 
-![Multi-transaction Tree View](/img/multi-tx-tr.png)
+![Multi-transaction table mode](/img/multi-tx-table-mode.png)
 
-The ![number4](/img/number-04.png) area is a detailed information display option in a tree structure. **_View one line_** and **_View multiple lines_** are provided. **_View one line_** is the default setting. It can be collectively controlled through the top button, and individual expression methods can be switched by selecting each row.
+When you select each transaction, the **_Transaction information_** window for the selected transaction appears, as in selection of a **_chart_** node. The transaction trace allows you to see the transaction details. For more information about the detailed transaction trace analysis using the **_Transaction Information_** window, see [the following](trs-profile#transaction-info).
 
-The ![number5](/img/number-05.png) area is the elapsed time option. ![Time Bar icon](/img/ic-dashbaord-bar-chart-h.svg) **_Time Bar_**, ![Time Set icon](/img/ic-custom-time.svg) **_Time Set_**, and ![Invisible icon](/img/ic-eye-invisible.svg) **_Invisible_** are provided. In the case of start time and elapsed time, the time difference caused by the transaction call environment is corrected through traces and mappings in the parent transaction, so there may be differences from the actual collected times. The elapsed time is represented in color depending on the value as follows.
+### Tree{#trace-multi-tx-tree}
 
--   8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
--   Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
--   Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
+If you select **_Tree_**, you can see the detailed information for each transaction and their traces. The transactions within the overall transaction time or start times and step times of each trace to provide transaction call relationships in a tree format. 
 
-The ![number6](/img/number-06.png) area provides dedicated options for viewing statistics or query information for each trace type. If you select ![Statistics icon](/img/ic-static.svg) icon or ![Pop-up icon](/img/ic-popup.svg) icon, you can see the summary window such as **HTTP Call Statistics\*** and **Active Stack\***.
+![Multi-transaction tree mode](/img/multi-tx-tree-mode.png)
+
+-   **_View one line_**: You can arrange the tree format at intervals by displaying the texts displayed in the execution data for each section in a single line.
+
+-   **_View multiple lines_**: All the texts displayed in the execution data for each section, appear by wrapping words.
+
+-   **_Longest Route_**: The longest route can appear.
+
+-   ![Chart icon](/img/ic-bar-chart.svg) **_Display Time Bar_**: The elapsed times are displayed in a bar chart.
+
+-   ![Time icon](/img/ic-custom-time.svg) **_Display Time_**: The timestamps, gaps, and elapsed times for each segment are displayed in text.
+
+    -   8 seconds or more: <span class='etrs'>Excessive delay</span> state is distinguished in <span class='etrs'>red</span>.
+
+    -   Between 3 and 8 seconds: <span class='ov5ud10'>Delay</span> state is distinguished in <span class='ov5ud10'>orange</span>.
+
+    -   Less than 3 seconds: <span class='woer'>Normal</span> state is distinguished in <span class='woer'>blue</span>.
+
+    :::note
+
+    In case of start and step times, the time differences caused by the transaction call environment are corrected on the screen through traces and mappings in the parent transactions. Accordingly, there may be differences from the actual time data.
+
+    :::
+
+-   ![Hide icon](/img/ic-eye-invisible.svg) **_Hide Time_**: The time is hidden.
+
+:::note
+
+If you select ![Statistics icon](/img/ic-static.svg) button or ![Pop-up icon](/img/ic-popup.svg) button, you can see the summary window such as **_HTTP Call Statistics_** and **_Active Stack_**.
+
+:::
 
 ## References
 

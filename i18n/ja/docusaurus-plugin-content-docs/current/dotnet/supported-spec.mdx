@@ -1,7 +1,7 @@
 ---
 id: supported-spec
 title: サポート環境
-description: WhaTapモニタリングサービスが動作する.NETアプリケーションサーバーの基本スペックを調べてください。
+description: WhaTapモニタリングサービスが動作する.NETアプリケーションサーバーの基本仕様について説明します。
 tags:
   - .NET
 ---
@@ -10,7 +10,7 @@ tags:
 
 エージェントをインストールする前に、.NET Frameworkアプリケーションのサポート環境を確認してください。
 
--   **対応バージョン**：.NET Framework 4.5（4.61以降を推奨）
+-   **対応バージョン**：.NET Framework 4.5(4.61以降を推奨)
 
 -   **オペレーティングシステム**：Windows Server2012以降
 
@@ -22,21 +22,21 @@ tags:
 
     -   HttpClient/HttpClientHandler
 
-    -   ASP.NET MVC 5（IIS）
+    -   ASP.NET MVC 5 (IIS)
 
-    -   ASP.NET Web API 2（IIS）
+    -   ASP.NET Web API 2 (IIS)
 
-    -   ASP.NET Web Forms（IIS）
+    -   ASP.NET Web Forms (IIS)
 
-    -   ADO.NET（Database）
+    -   ADO.NET (Database)
 
--   **データベース**：MS SQL、Oracle、MySQLなどADO.NETに対応するすべてのデータベースおよびRadis
+-   **データベース**：MS SQL、Oracle、MySQLなど、ADO.NETに対応するすべてのデータベースおよびRadis
 
-## サーバ対応環境分析方法
+## サーバ対応環境を分析する方法
 
 ### 分析ツールダウンロード{#download-tools}
 
-エージェントをインストールするサーバーの対応環境がよくわからない場合は、次のリンクを通じて分析ツールをダウンロードしてください。
+エージェントをインストールするサーバーの対応環境が不明な場合は、次のリンクから分析ツールをダウンロードしてください。
 
 -   <https://repo.whatap.io/windows/WhaTapDotnetScan.exe>
 
@@ -56,35 +56,35 @@ tags:
 
     ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
-5.  IISに設置されたサイトごとに**.NET Framework**バージョンがv4.0と表示されるか確認してください。
+5.  IISに設置されたサイトごとに**.NET Framework**バージョンがv4.0と表示されていることを確認してください。
 
     ![](/img/apm-dotnet-analystic-env-03.png)
 
-    ![数字5](/img/number-05.png)の場合、対応範囲ですが_web.config_ファイルがありません。このような場合、ほとんどは**.NET**を使わないASP、PHPなどのサイトでエージェントが動作しません。
+    ![数字5](/img/number-05.png)の場合、_web.config_ファイルが見つかりません。ほとんどの場合、**.NET**を使用しないASP、PHPなどのサイトでは、エージェントが動作しません。
 
 :::note
 
--   **.NET Framework**は、4.8.1バージョン以降に対応しています。
+-   **.NET Framework**は、4.8.1バージョン以降で対応しています。
 
 -   **Core**または**.NET 5**以降のバージョンは対応していません。**.NET Core**バージョンは開発中です。
 
 :::
 
-### ユーザーのアプリケーションバージョン確認
+### ユーザーのアプリケーションのバージョンを確認
 
-サーバーの環境が対応バージョンを満たしていても、ユーザーのアプリケーションが**.NET Framework**ではなく**.NET Core**バージョンで開発された場合、.NETモニタリングには対応しません。
+サーバーの環境が対応しているバージョンでも、ユーザーのアプリケーションが**.NET Framework**ではなく**.NET Core**バージョンで開発されている場合は、.NETモニタリングは対応しません。
 
 ユーザーのアプリケーションバージョンは、**IIS Manager**で以下のように確認できます。
 
 ![IIS Manager](/img/apm-dotnet-application-pool.png)
 
-**IIS Manager**で**Application Pools**をクリックしてください。**Application Pools**一覧で使用するアプリケーションに該当するプール(Pool)の**.NET**が4.0バージョンなのか確認してください。
+**IIS Manager**から**Application Pools**をクリックしてください。**Application Pools**の一覧で使用するアプリケーションに対応するプール(Pool)の**.NET**が4.0バージョンであることを確認してください。
 
 ## 共通サポート環境
 
 ### 対応ブラウザー
 
-{@include: ../getting-started/_supported-browser.mdx}
+{@include: ../getting-started/_supported-browser.mdx}  
 
 ### ファイアウォール
 

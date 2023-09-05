@@ -9,15 +9,15 @@ tags:
 
 {@include: ../common-items/_apm-name-description.mdx}
 
-## エージェント名の決定方式
+## エージェント名の決定方法
 
-WhaTapエージェントがアプリケーションサーバーを識別するために使用するデフォルトパターンは次のとおりです。
+WhaTapエージェントがアプリケーションサーバーを識別するために使用するデフォルトパターンは、次のとおりです。
 
 ```ini title='Default pattern'
 {type}-{ip2}-{ip3}-{process}
 ```
 
-デフォルトパターン値を変更するには、_whatap.conf_ファイルを次のように修正してください。
+デフォルトのパターン値を変更するには、_whatap.conf_ファイルを次のように修正してください。
 
 ```ini title='whatap.conf'
 object_name={type}-{ip2}-{ip3}-{process}
@@ -25,7 +25,7 @@ object_name={type}-{ip2}-{ip3}-{process}
 
 :::note
 
--   エージェント名は、**Whatap .NET**サービスを再起動する必要があります。 
+-   エージェント名は、**Whatap .NET**サービスが再起動するまで有効になりません。 
 
 :::
 
@@ -33,19 +33,19 @@ object_name={type}-{ip2}-{ip3}-{process}
 
 | 変数         | 説明                                                                      |
 | ---------- | ----------------------------------------------------------------------- |
-| {type}     | アプリケーションサーバーの名前（app_name）です。                                            |
+| {type}     | アプリケーションサーバーの名前(app_name)です。                                            |
 | {ip0}      | IPv4アドレスのうち、1番目の単位を使用します。(例：**10**.11.12.13のうち**10**)                   |
 | {ip1}      | IPv4アドレスのうち、2番目の単位を使用します。(例：10.**11**.12.13のうち**11**)                   |
 | {ip2}      | IPv4アドレスのうち、3番目の単位を使用します。(例：10.11.**12**.13のうち**12**)                   |
 | {ip3}      | IPv4アドレスのうち、4番目の単位を使用します。(例：10.11.12.**13**のうち**13**)                   |
-| {process}  | アプリケーションサーバーのプロセス名（app_process_name）です。                                 |
+| {process}  | アプリケーションサーバーのプロセス名(app_process_name)です。                                 |
 | {hostname} | ホスト名です。                                                                 |
 
 ## エージェント名の設定{#agentname}
 
 :::note
 
--   エージェント名は、**Whatap .NET**サービスを再起動する必要があります。
+-   エージェント名は、**Whatap .NET**サービスが再起動するまで有効になりません。
 
 :::
 
@@ -53,15 +53,15 @@ object_name={type}-{ip2}-{ip3}-{process}
 
     デフォルト値`{type}-{ip2}-{ip3}-{process}`
 
-    アプリケーションを識別するためのエージェント名(ONAME)構成方式です。ONAMEに基づいてOIDが生成されます。
+    アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。
 
 -   **app_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。 `object_name`オプションで`{type}`に該当します。
+    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。 `object_name`オプションで`{type}`に対応します。
 
 -   **app_process_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。アプリケーション プロセス名でアプリケーションサーバーのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`オプションで`{process}`に該当します。
+    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。アプリケーションのプロセス名でアプリケーションサーバーのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`オプション`{process}`に対応します。
 
 -   **whatap.okind** <span class='type'>String</span>
 

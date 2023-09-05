@@ -4,13 +4,13 @@ To analyze the transaction performance, WhaTap collects and displays the propert
 
 <Xclude product='php,nodejs,golang'>
 
-<ImgLang img="analysis-tx-table-view.png" desc="Trace analysis" />
+<ImgLang img="analysis-tx-table-view.png" desc="Trace Analysis" />
 
 </Xclude>
 
 <InDoc product='php,nodejs,golang'>
 
-<ImgLang img="analysis-tx-table-view-none-actx.png" desc="Trace analysis" />
+<ImgLang img="analysis-tx-table-view-none-actx.png" desc="Trace Analysis" />
 
 </InDoc>
 
@@ -18,21 +18,29 @@ To analyze the transaction performance, WhaTap collects and displays the propert
 
 -   In the ![number 6](/img/number-06.png) area, you can see the basic information for transactions. The information matches the columns in the list on the left.
 
--   ![Number 7](/img/number-07.png) ![Statistics icon](/img/ic-static.svg): The statistical data window for the corresponding URL or each execution section appears. If you select **_Detail >_** in the statistical data window, **_STAT/REPORT_** > **_Statistics_** appears.
-
-    :::note
-
-    For more information about **_Statistics_**, see [the following](analysis-apm-trs).
-
-    :::
+-   ![Number 7](/img/number-07.png) ![Statistics icon](/img/ic-static.svg): The statistical data window for the corresponding URL or each execution section appears. If you select **_Detail >_** in the statistical data window, **_STAT/REPORT_** > **_Statistics_** appears. 
 
 -   By dragging ![Number 8](/img/number-08.png) <LinkImage img='hitmap-lr-drag.svg' alt='좌우 드래그 아이콘' className='_drag' /> to the left or right, you can adjust the screen size. This is useful when you want to see more information.
 
-    :::note
+:::note
 
-    If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
+<InDoc product='kubernetes'>
 
-    :::
+-   For more information about **_Statistics_**, see [the following](../java/analysis-apm-trs).
+
+-   If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
+
+</InDoc>
+
+<InDoc product='java,python,php,nodejs,golang'>
+
+-   For more information about **_Statistics_**, see [the following](analysis-apm-trs).
+
+-   If you click <LinkImage img='ic-s-tx-left.svg' alt='왼쪽 화살표 아이콘' className='_txDrag' /> or <LinkImage img='ic-s-tx-right.svg' alt='오른쪽 화살표 아이콘' className='_txDrag' />, you can change the transaction list or analysis details to full screen.
+
+</InDoc>
+
+:::
 
 The collected types of **Step** are as follows. The diagrams and texts are color coded.
 
@@ -70,6 +78,8 @@ The collected types of **Step** are as follows. The diagrams and texts are color
 
 :::note
 
-In the WhaTap monitoring service, **Step** is used as the same meaning as **Span**.
+-   In the WhaTap monitoring service, **Step** is used as the same meaning as **Span**.
+
+-   To see the updates in the <UI>Trace analysis</UI> function released on July 25, 2023, see <Link to='../reference/changes-analysis-trace' target='_blank'>the following</Link>.
 
 :::

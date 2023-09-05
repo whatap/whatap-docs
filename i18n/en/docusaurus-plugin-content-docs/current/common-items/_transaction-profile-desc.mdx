@@ -1,0 +1,39 @@
+## What is Transaction Tracing?
+
+While the transaction performance means the summary metrics or attributes between the start and end of transaction, the transaction profile traces the steps during transactions. If any transaction is slow or erroneous, the execution records must be traced step by step to find the cause. This is called **transaction tracing**.
+
+The types of steps collected for transaction performance tracing are as follows.
+
+-   **DB connection step** <span class='type'>START-END</span>
+
+    It includes the performance for connection to RDB. Step information includes the name, response time, and error.
+
+-   **SQL Step** <span class='type'>START-END</span>
+
+    It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
+
+-   **HTTP Call step** <span class='type'>START-END</span>
+
+    It includes the performance for the external HTTP service call. Step information includes URL, host, port, response time, and errors.
+
+-   **Message step** <span class='type'>ADD</span>
+
+    While collecting traces, the message steps are used to collect the records of all irregular sections.  
+
+-   **SOCKET Step** <span class='type'>ADD</span>
+
+    Step to represent the socket open.
+
+-   **METHOD Step** <span class='type'>START-END</span>
+
+    The method response time is traced.
+
+-   **ACTIVE STACK 스텝** <span class='type'>START-END</span>
+
+    It includes the active stack information. It is created and collected by a separate thread and it is added to the transaction trace.
+
+:::note
+
+In the WhaTap monitoring service, **Step** is used as the same meaning as **Span**.
+
+:::

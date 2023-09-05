@@ -1,7 +1,7 @@
 ---
 id: telegraf-usage
 title: 使用例
-description: 使用例を案内します。
+description: 使用例を紹介します。
 tags:
   - Telegraf
   - 使用例
@@ -15,11 +15,11 @@ Telegraf는 데이터베이스, 시스템 및 IoT 센서에서 메트릭 및 이
 * **IoT 센서** : IoT 센서 및 장치에서 중요한 상태 저장 데이터 (압력 수준, 온도 수준 등)를 수집합니다.
 -->
 
-Telegrafに関する詳細は、influxdataの[Telegraf documentation](https://docs.influxdata.com/telegraf/v1.24/)を参考にしてください。
+Telegrafの詳細については、influxdataの[Telegraf documentation](https://docs.influxdata.com/telegraf/v1.24/)を参照してください。
 
 ## SNMP
 
-SNMP input pluginを使用してSNMP性能データをリアルタイムで収集し、チャートとして表示できます。 収集されたデータは`telegraf_snmp`、`telegraf_interface`カテゴリで検索できます。
+SNMP input pluginを使用して、SNMP性能データをリアルタイムで収集および、チャート化します。収集されたデータは、`telegraf_snmp および、`telegraf_interface\`のカテゴリで検索できます。
 
 ```batch title='Linux Shell'
 cat >/etc/telegraf/telegraf.d/snmp_device.conf <<EOL
@@ -121,7 +121,7 @@ service telegraf restart
 
 ## SNMP Trap
 
-SNMP Trap input pluginを使用してSNMP Trapイベントをリアルタイムで収集し、メール、SMSメッセージ、メッセンジャーなどで送信できます。 収集されたデータは`telegraf_snmp_trap`カテゴリで検索することができます。
+SNMP Trap input pluginを使用して、SNMP Trapイベントをリアルタイムで収集し、メール、SMSメッセージ、メッセンジャーなどで送信できます。収集されたデータは`telegraf_snmp_trap`カテゴリで検索することができます。
 
 ```batch title='Linux Shell'
 cat >/etc/telegraf/telegraf.d/snmp_trap.conf <<EOL

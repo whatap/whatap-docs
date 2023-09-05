@@ -4,15 +4,15 @@
 
 PHPモニタリングを適用した後、サービスにエラーが発生した場合、ApacheまたはPHP-FPMのerror logを確認してください。
 
-error log内容の中に`segmentation fault`、`sig bus`などのエラー文があるか確認してください。`kill child process`、`exit child`、`exit process`などのメッセージとして発生します。 
+error log に`segmentation fault`、`sig bus`などのエラー文があるか確認してください。`kill child process`、`exit child`、`exit process`などのメッセージが発生します。 
 
 当該エラーが発生する場合は、PHP Extensionモジュールである_whatap.so_モジュールで衝突が発生すると考えられます。PHP Extensionモジュールである_whatap.so_を中止した上でApacheまたはPHP-FPMを再起動してください。
 
-サービスに影響を与えない環境でApacheおよびPHP-FPMに`Core dump`設定を追加した後_whatap.so_を再読み込みしてください。その後、エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルをgdbで分析して原因を解決してください。 
+サービスに影響しない環境でApacheおよびPHP-FPMに`Core dump`設定を追加した後に _whatap.so_を再読み込みしてください。その後、エラーが発生すると、_dump_ファイルが作成されます。_dump_ファイルをgdbで分析して原因を解決してください。 
 
 ### Core Dump設定
 
-1.  _dump_ファイルを作成するディレクトリの権限を与えてください。
+1.  _dump_ファイルを作成するディレクトリのアクセス権限を付与します。
 
     ```java
     chmod 0777 /home/httpd-core
@@ -39,7 +39,7 @@ error log内容の中に`segmentation fault`、`sig bus`などのエラー文が
 
 2.  Apacheを再起動すると、設定は完了です。 
 
-3.  エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルが生成されると、gdbを通じてエラーの原因を確認します。`bt full`コマンドで全体スタックの情報を確認してください。
+3.  エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルが生成されると、gdbを使用してエラーの原因を確認します。`bt full`コマンドを使用して、全体スタックの情報を確認してください。
 
     ```java
     # gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
@@ -51,7 +51,7 @@ error log内容の中に`segmentation fault`、`sig bus`などのエラー文が
 
 ### PHP-FPM
 
-1.  FPM設定ファイルで`rlimit_core`を設定してください。 
+1.  FPM設定ファイルに`rlimit_core`を設定してください。 
 
     ```java
     rlimit_core = unlimited

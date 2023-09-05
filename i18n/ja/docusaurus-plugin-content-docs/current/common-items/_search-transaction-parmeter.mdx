@@ -1,0 +1,55 @@
+### トランザクションパラメータ照会{#transaction-parameter}
+
+**_テーブルビュー_**タブでSQLステップを選択したり**_ツリービュー_**タブで![ポップアップアイコン](/img/ic-popup.svg)ボタンを選択してください。 パラメータを照会できる**\*SQL**ウィンドウが表示されます。
+
+<ImgLang img='sql-parameter-query.png' desc='SQL' />
+
+-   **_パスワード_**:復号化されたパラメータ値を確認できます。 パスワードは_`WHATAP_HOME`/paramkey.txt_ファイル内の6桁の文字列です。 別の文字列に変更できます。
+
+    :::note
+
+    _paramkey.txt_内のキーは、SQL変数の照会、HTTPクエリの照会、Threadの中止などに必要です。
+
+    :::
+
+-   **_SQL Formatting_**：SQL文をインデント、フォーマット化して可読性を高めることができます。
+
+-   ![コピーアイコン](/img/ico-copy.svg):SQL文章をクリップボードにコピーできます。
+
+-   **_統計_**:**_統計/報告書_**>**_統計_**メニューの**_SQL_**タブに移動します。
+
+<Xclude product='kubernetes'>
+
+:::tip
+
+SQL変数とHTTPクエリを照会するには、次のオプションをエージェント設定に追加してください。 DB、SQLに関するエージェント設定の詳細については、[次の文書](agent-dbsql)を参照してください。
+
+```ini title='whatap.conf'
+# SQLパラメータ照会オプション:オプションが適用されるとSQLパラメータを暗号化して収集します。
+profile_sql_param_enabled=true 
+
+# HTTPパラメータ照会オプション: オプションが適用されると、HTTPクエリパラメータを暗号化して収集します。
+profile_http_parameter_enabled=true 
+```
+
+:::
+
+</Xclude>
+
+<InDoc product='kubernetes'>
+
+:::tip
+
+SQL変数とHTTPクエリを照会するには、次のオプションをエージェント設定に追加してください。 DB、SQLに関するエージェント設定の詳細は[次の文書](../java/agent-dbsql)を参照してください。
+
+```ini title='whatap.conf'
+# SQLパラメータ照会オプション:オプションが適用されるとSQLパラメータを暗号化して収集します。
+profile_sql_param_enabled=true 
+
+# HTTPパラメータ照会オプション: オプションが適用されると、HTTPクエリパラメータを暗号化して収集します。
+profile_http_parameter_enabled=true 
+```
+
+:::
+
+</InDoc>

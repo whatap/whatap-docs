@@ -1,7 +1,7 @@
 ---
 id: elastic-beanstalk
 title: Elastic Beanstalk
-description: Elastic Beanstalkの環境でWhaTapエージェントの適用を完了してください。
+description: Elastic Beanstalkの環境で、WhaTapエージェントの適用を完了してください。
 tags:
   - Java
   - Elastic Beanstalk
@@ -11,7 +11,7 @@ tags:
 
 {@include: _pass-note.mdx}
 
-1.  Spring Bootの結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮してzip形式でデプロイしてください。
+1.  Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
     -   _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
     -   _.ebextensions/{config_name}.config_：ebの設定ファイル
@@ -31,7 +31,7 @@ tags:
 
 3.  _.ebextension/{config_name}.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
 
-    ダウンロード用の圧縮ファイルがある場合は、ebは自動的にダウンロードして解凍します。
+    ダウンロード用の圧縮ファイルがある場合、ebを実行して自動的にダウンロードして解凍します。
 
     ```yaml title=ebextension/{config_name}.config
     sources:

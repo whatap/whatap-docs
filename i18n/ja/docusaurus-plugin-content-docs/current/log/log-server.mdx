@@ -1,27 +1,27 @@
 ---
 id: log-server
 title: Server
-description: サーバーアプリケーションでログを収集する方法について案内します。
+description: サーバーアプリケーションからログを収集する方法について説明します。
 tags:
   - ログモニタリング
   - Server
 ---
 
-サーバーアプリケーションからログを収集するには、次のことを確認してください。
+サーバーアプリケーションからログを収集するには、次の点を確認してください。
 
 ## エージェントのアップデート
 
-サーバーエージェント2.1.2バージョンから可能です。アップデート方法は[次の文書](../server/agent-update)を参考にしてください。
+サーバーエージェントの2.1.2バージョン以降から可能です。アップデート方法は[次の文書](../server/agent-update)を参照してください。
 
 ## エージェント設定の確認
 
 ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログ設定_**
 
-WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、プロジェクトメニュー下位の**_ログ_** > **_ログ設定_**メニューを選択してください。**_エージェント設定の確認_**タブ上段のOS選択タブでサーバーOS(**_Linux(shell)_**、**_Windows(Powersehll)_**)を選択してください。**_基本インストール_**または**_カテゴリとともにインストール_**を参考にして進めてください。 
+WhaTapモニタリングサービスのホーム画面からプロジェクトを選択し、プロジェクトメニューの**_ログ_** > **_ログ設定_**メニューを選択してください。**_エージェント設定の確認_**タブの上にあるOS選択タブでサーバーOS(**_Linux(shell)_**、**_Windows(Powersehll)_**)を選択してください。**_基本インストール_**または**_カテゴリでのインストール_**を参照して進めてください。 
 
 :::note
 
-次の設定は、エージェントの再起動が必要です。
+次の設定は、エージェントを再起動する必要があります。
 
 :::
 
@@ -34,7 +34,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
     echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
     ```
 
--   **_カテゴリとともにインストール_**
+-   **_カテゴリでインストール_**
 
     ```bash title='Linux Shell' {7-12,14,15,25,26} showLineNumbers
     cd /usr/whatap/infra
@@ -77,7 +77,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
     Add-Content "c:\Program Files\WhatapInfra\whatap.conf" -Value "logsink.files=$LOGFILES"
     ```
 
--   **_カテゴリとともにインストール_**
+-   **_カテゴリでインストール_**
 
     ```bash title='Windows Powershell' {7-11,14,15,20,21} showLineNumbers
     # 管理者権限が必要
@@ -86,20 +86,20 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
     $contentToAdd = @"
     [[inputs.logsink]]
     category = "serverlog"
-    ## ログ発生量統計の別途データとしての送信有無
+    ## ログ発生量統計の個別データの送信有無
     stats_enabled = true 
-    ## 対数発生量の統計カテゴリ
+    ## ログ発生量の統計カテゴリ
     stats_category = "logsink_stats"
-    ## ログファイルパス(path)にアスタリスク(*)が含まれ、除外するログ非対象ファイル名設定
+    ## ログファイルパス(path)にアスタリスク(*)が含まれ、除外するログの非対象ファイル名の設定
     excludeNames = [ ".gz",".zip" ] 
     [[inputs.logsink.file]]
-    ## ログファイル指定時、日付パターン(strftime.org)指定可能
+    ## ログファイル指定時、日付パターン(strftime.org)を指定可能
     path = "c:\\whatap\\logs%Y-%m-%d_.log"
     disabled = false
     encoding = "euc-kr"
 
     [[inputs.logsink.file]]
-    ## 行単位ログでそのキーワードを検索する時、以前のログにマージ
+    ## 行単位のログでキーワードを検索する場合は、以前のログにマージ
     nowrap_keywords = ["Caused by:", "Test"]
 
     "@
@@ -132,7 +132,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
     excludeNames = [ ".gz",".zip" ]
     ```
 
--   `nowrap_keywords`：行単位のログ検索時にそのオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
+-   `nowrap_keywords`：行単位のログ検索時に、対応するオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
 
 ## ログモニタリングの活性化
 
@@ -140,6 +140,6 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 **_ログモニタリングを開始する_**セクションの**_ログモニタリングを有効にする_**タブのトグルボタンで、WhaTapログモニタリングの有効または無効にできます。 
 
-{@include: ../common-items/_log-java-start.mdx} 
+{@include: ../common-items/_log-java-start.mdx}
 
 {@include: ../common-items/_log-active-note.mdx} 

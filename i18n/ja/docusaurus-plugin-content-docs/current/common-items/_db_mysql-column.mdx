@@ -1,4 +1,4 @@
-## カラム情報の案内{#column-info}
+## カラム情報ガイド{#column-info}
 
 <Tabs groupId="db-columns">
 
@@ -9,11 +9,11 @@
 | `Instance Name`   | インスタンス名                                                     |
 | `id`              | connection識別子                                               |
 | `user`            | SQL実行アカウント                                                  |
-| `host`            | このスレッドが接続されたhostname                                        |
+| `host`            | このスレッドが関連付けられたhostname                                      |
 | `db`              | default database名、 ない場合はNULL                                |
 | `command`         | 実行中のコマンドtype（Query/Sleep/Daemonなど）                          |
-| `time`            | 現在COMMANDの遂行時間（秒）                                           |
-| `state`           | スレッドの現在の状態（executing/updating/sending dataなど）               |
+| `time`            | 現在のCOMMANDの実行時間(秒)                                          |
+| `state`           | スレッドの状態(executing/updating/sending dataなど)                  |
 | `query`           | 実行されているstatementです。`Processlist.info`からリテラル値を除外したSQLを表示します。 |
 | `query_param`     | `query`から分離したリテラル値                                          |
 | `type`            | Threadのタイプ。 FOREGROUND/BACKGROUNDなど                         |

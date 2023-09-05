@@ -1,0 +1,111 @@
+---
+id: cloudwatch-metric-guide
+title: Configuring the RDS CloudWatch metric collection roles
+description: It guides you to the preparation steps for monitoring RDS CloudWatch and collecting data.
+tags:
+  - Database
+  - CloudWatch
+---
+
+This guide explains how to collect data by granting RDS CloudWatch metric collection roles to EC2 without using the ARN value of the IAM ROLE in database monitoring.
+
+## Configuration through AWS CloudFormation
+
+Through the AWS CloudFormation template provided by WhaTap, AWS IAM policy, roles, and AWS EC2 instance profile are automatically installed.
+
+1.  Click the following link. Then the instance profile is generated through stack creation.
+
+    <Link to='https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRdsMetricInstaceProfile&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/whatapCloudMonitoring.yaml' target='_blank' className='ext-link'>RDS roles installation page</Link>
+
+2.  In **EC2** > **Instances**, select an instance in which the DB agent has been installed, and then select **Actions** > **Security** > **Modify IAM role**.
+
+    ![](/img/ec2-instances.png)
+
+3.  In **EC2** > **Instances** > **Modify IAM role**, enter the created **IAM Role** or **Instance Profile Name**.
+
+    ![](/img/ec2-instances-modify-iam-role.png)
+
+    Default value: Role (WhaTapRDSCloudWatchMetricRole), InstanceProfile(WhaTapRDSCloudWatchMetricProfile)
+
+## Configuration through the AWS console
+
+The following explains how to create an AWS IAM policy and roles through the AWS console.
+
+### Creation of AWS IAM policy
+
+1.  Go to **IAM** > **Polices** and then select **Create Policy**.
+
+    ![](/img/iam-polices-create-policy.png)
+
+2.  Select JSON as the configuration method, enter the following, and then select **Next**.
+
+    ```json
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ec2:DescribeInstanceTypes",
+                    "elasticache:DescribeCacheClusters",
+                    "cloudwatch:GetMetricStatistics",
+                    "cloudwatch:ListMetrics"
+                ],
+                "Resource": "*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "rds:DownloadDBLogFilePortion",
+                    "rds:DescribeDBInstances",
+                    "rds:DescribeDBLogFiles",
+                    "rds:DescribeDBClusters"
+                ],
+                "Resource": [
+                    "arn:aws:rds:*:{AWS::ACCOUNT}:db:*",
+                    "arn:aws:rds:*:{AWS::ACCOUNT}:cluster:*"
+                ]
+            }
+        ]
+    }
+    ```
+
+3.  Enter the **policy name** and then select **Create Policy**.
+
+    ![](/img/policy-name.png)
+
+### Creation of AWS IAM roles
+
+1.  Go to **IAM** > **Roles** and then select **Create Role**.
+
+    ![](/img/iam-roles-create-role.png)
+
+2.  In the **Select trusted entity** step, select **AWS Service** and **EC2** as trusted entity types.
+
+    ![](/img/select-trusted-entity.png)
+
+3.  In the **Add permissions** step, select the created policy.
+
+4.  In **Name, review, and create** steps, enter the name and description and then select Create role.
+
+### Modification of the AWS IAM role
+
+1.  In **EC2** > **Instances**, select an instance in which the DB agent has been installed, and then select **Actions** > **Security** > **Modify IAM role**.
+
+    ![](/img/ec2-instances.png)
+
+2.  In **EC2** > **Instances** > **Modify IAM role**, enter the created **IAM Role**.
+
+    ![](/img/ec2-instances-modify-iam-role.png)
+
+## Agent CONFIG.
+
+Set the options for which metrics to be searched in the _whatap.conf_ file. `arn` is optional.
+
+```ini title='whatap.conf'
+cloud_watch=on
+#aws_region=ap-northeast-2
+#aws_arn=arn:aws:iam::649024405358:role/rds-monitoring-role
+cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+cloud_watch_instance=mysql-rds
+```

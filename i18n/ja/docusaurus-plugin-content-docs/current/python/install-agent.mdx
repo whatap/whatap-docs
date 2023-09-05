@@ -19,7 +19,7 @@ import TR from '@site/src/components/TR';
 
 ## Virtual Environmentの活性化
 
-アプリケーションが[virtualenv](https://docs.python.org/ko/3.7/library/venv.html)を使用中の場合は、仮想環境を活性化してください。_bin/activate_ファイルを実行します。
+アプリケーションが[virtualenv](https://docs.python.org/ko/3.7/library/venv.html)を使用している場合は、仮想環境を有効にしてください。_bin/activate_ファイルを実行します。
 
 ## エージェントダウンロード
 
@@ -31,7 +31,7 @@ pip install whatap-python
 
 :::note
 
-pipコマンドでインストールできない場合は、[pypi WhaTapページ](https://pypi.org/project/whatap-python/#files)でインストールファイルをダウンロードしてください。ダウンロードしたファイルを解凍してインストールを進めてください。
+pipコマンドでインストールできない場合は、[pypi WhaTapページ](https://pypi.org/project/whatap-python/#files)からインストールファイルをダウンロードしてください。ダウンロードしたファイルを解凍してインストールを進めてください。
 
 :::
 
@@ -55,7 +55,7 @@ pipコマンドでインストールできない場合は、[pypi WhaTapペー�
         RUN echo "license=[発行されたアクセスキー]" > /whatap/whatap.conf
         RUN echo "whatap.server.host=[収集サーバIP]" >> /whatap/whatap.conf
         RUN echo "app_name=[エージェント名]" >> /whatap/whatap.conf
-        RUN echo "app_process_name=[アプリケーションプロセス名の例）uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
+        RUN echo "app_process_name=[アプリケーションプロセス名の例)uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
         ```
 
 2.  既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
@@ -81,9 +81,9 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
 
 -   _paramkey.txt_
 
-    追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するときに使用します。 
+    追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。 
 
-    セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力してこそ照会できます。 
+    セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力して表示できます。 
 
     ファイルの内容を直接変更することで、セキュリティ キーの修正が可能です。関連オプションは次のとおりです。 
 
@@ -107,21 +107,21 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
     $ export WHATAP_HOME=[PATH]
     ```
 
-2.  **アクセスキーと収集サーバーIPの設定**
+2.  **アクセスキーと収集サーバーのIP設定**
 
-    次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルがすぐ生成・設定されます。
+    次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルが設定されます。
 
     ```bash
     whatap-setting-config \
     --host [収集サーバIP] \
     --license [アクセスキー] \
-    --app_name [ユーザー指定エージェント名入力] \
+    --app_name [ユーザー指定のエージェント名を入力] \
     --app_process_name [プロセス名、ex. uwsgi, gunicorn]
     ```
 
 3.  **設定表示**
 
-    次のように設定ファイルが正常に生成されているか確認してください。
+    次のように設定ファイル作成されていることを確認してください。
 
     ```bash
     $ cat $WHATAP_HOME/whatap.conf
@@ -222,7 +222,7 @@ command = [絶対パス]/whatap-start-agent /usr/local/bin/uwsgi --ini /home/blo
 command = /usr/sbin/nginx
 ```
 
-### WSGIアプリケーションの直接実装
+### WSGIアプリケーションの実装
 
 ```python title=PYTHON
 import whatap
@@ -240,7 +240,7 @@ def simple_app(environ, start_response):
 
 -   **WhaTapエージェントの適用**
 
-    最上段にAPIを直接呼び出すコードを次のように追加し、WhaTapエージェントを適用してください。
+    最上部にAPIを直接呼び出すコードを次のように追加し、WhaTapエージェントを適用してください。
 
     ```bash
     import whatap

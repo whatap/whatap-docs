@@ -16,7 +16,7 @@ _$PLAY_HOME/framework/build_ファイルにエージェントオプションを�
 
 ########## WHATAP START ############
 WHATAP_HOME=/apps/whatap
-WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`
 JAVA_OPTS="${JAVA_OPTS} -Dwhatap.play2=2.2.6 -javaagent:${WHATAP_JAR}"
 ########## WHATAP END ############
 

@@ -1,0 +1,42 @@
+---
+id: agent-dbsql
+title: DB, SQL
+description: PythonエージェントDBとSQL設定を提供します。
+tags:
+  - Python
+  - DB
+  - SQL
+  - 設定
+---
+
+PythonエージェントのDB、SQL関連オプションを提供します。
+
+-   **profile_dbc_close(\*)** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    `profile_connection_open_enabled`が活性化されている場合、トレースにDB Connectionがcloseされるときの情報を出力します。
+
+-   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    SQL文からリテラル部分を抽出し、SQL文を正規化する機能をアクティブにします。
+
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    SQLパラメータの収集をアクティブにします。 パラメータは、別途のセキュリティキーを入力しないと照会できません。 セキュリティキーは、エージェントインストールパスの_paramkey.txt_ファイルに6桁で指定します。 _paramkey.txt_が存在しない場合は自動生成され、randomキーが設定されます。
+
+-   **profile_sql_resource_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トレースからSQLが収集される時、そのステップで使用したCPUとメモリ使用量を追跡します。 区間に分けたため、トランザクションでリソースの使用量を確認する際に追跡が容易です。
+
+-   **stat_sql_max_count** <span class='type'>Int</span>
+
+    デフォルト値`5000`
+
+    SQL統計情報の個数を制限します。 収集およびサーバーに5分間送信される統計のレコードの最大数を制限します。

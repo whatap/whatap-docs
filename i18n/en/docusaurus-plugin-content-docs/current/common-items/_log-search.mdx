@@ -1,14 +1,32 @@
 {@include: ../common-items/_log-role-view.mdx}
 
-Home > Select Project > {@include: _search-path.mdx}
+<Xclude product='aws-log'>
 
-Select a project in the initial screen of the WhaTap monitoring service, and then select {@include: _search-path.mdx} under Project Menu. 
+Home > Select Project > **_Log_** > **_Log Search_**
+
+</Xclude>
+
+<InDoc product='aws-log'>
+
+Home > Select Project > **_Dashboard_** > **_Log Search_**
+
+</InDoc>
 
 In **_Log Search_**, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted. 
 
 The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. {@include: ../common-items/_log-ui-main-term.mdx}
 
+<Xclude product='postgresql,mysql'>
+
 ![Log Search sc](/img/log-search.png)
+
+</Xclude>
+
+<InDoc product='postgresql,mysql'>
+
+<ImgLang img='db-log-search.png' desc='' />
+
+</InDoc>
 
 ## Request Data
 
@@ -44,7 +62,7 @@ In **_Time Selector_** on the left of ![number-s](/img/number-01.png), you can s
 
 The tags on the left ![number-s](/img/number-02.png) area are the search keys parsed for each category. You can enter filters by selecting tags. The <span class='logwr'>orange</span> tag is the category, and the <span class='lowfg'>blue</span> tag is the search key.
 
-<InDoc product='log'>
+<InDoc product='log,postgresql,mysql'>
 
 For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log_** > **_Log Setting_**. 
 

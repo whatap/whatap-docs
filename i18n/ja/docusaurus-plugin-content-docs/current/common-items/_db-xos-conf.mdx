@@ -30,14 +30,31 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
 
     インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。値が'0'の場合、ディスク使用率は収集しません。
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql'>
 
 -   **file** <span class='type'>String</span>
 
     **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
 
     ```ini title='xos.conf'
-    file = /opt/postgresql/logs/postgresql.log
+    file=/opt/postgresql/logs/postgresql.log
+    file1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log
+    file2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log
+    file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
+    ```
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+-   **file** <span class='type'>String</span>
+
+    **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+
+    ```ini title='xos.conf'
+    file=/var/log/mysqld.log
+    file1=/var/log/mysql_history.log
+    file2=/var/lib/mysql/dbx-database-slow.log
     ```
 
 </InDoc>

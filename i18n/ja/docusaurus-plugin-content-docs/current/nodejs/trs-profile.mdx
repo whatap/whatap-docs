@@ -8,18 +8,58 @@ tags:
   - Node.js
 ---
 
-## トランザクショントレーシングとは？
+<!--## 트랜잭션 트레이싱이란?-->
 
-{@include: ../common-items/_transaction-profile-step.mdx} 
+{@include: ../common-items/_transaction-profile-desc.mdx}
 
-## 詳細分析
+<!--## 상세 분석-->
 
-**_分析_** > \***_ヒートマップ_**メニューを選択してリアルタイムヒートマップをドラッグすると、下に**_TXトレース_**一覧が表示されます。選択領域のトランザクション情報を**_TXトレース_**一覧で確認することができます。一覧で項目を選択すると、当該トランザクションの**_統計_**情報ウィンドウが確認できます。 WhaTapは、トランザクションの性能を分析するために、名前やクライアント情報などの属性、トランザクションの処理性能、そして各区間別の詳細な実行履歴を収集して表示します。 **_統計_**ウィンドウを通じて詳細な分析要素を次のように見ましょう。 
+{@include: ../common-items/_transaction-profile-details.mdx}
 
-:::note
+<!--### 트랜잭션 정보 창 안내-->
 
-ヒートマップの詳細については、[次の文書](trs-view#details)を参照してください。
+{@include: ../common-items/_transaction-profile-info-window.mdx}
 
-:::
+<!--### 테이블 뷰-->
 
-{@include: ../common-items/_trs-profile.mdx} 
+{@include: ../common-items/_dashboard-hitmap-trace-table-view.mdx}  
+
+<!--### 레코드 요약-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-record-summary.mdx}  
+
+{@include: ../common-items/_dashboard-hitmap-trace-record-summary-attribute.mdx} 
+
+<!--### 트리뷰-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-treeview.mdx}  
+
+<!--### 멀티 트랜잭션-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-multi-tx.mdx} 
+
+<!--### 메소드 요약-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-method.mdx}
+
+<!--### SQL 요약-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-sql.mdx}
+
+<!--### HTTP Call 요약-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-http-call.mdx}
+
+<!--### 트랜잭션 로그-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-tracsaction-log.mdx}  
+
+<!--#### 키워드 하이라이트 설정하기, 삭제-->
+
+{@include: ../common-items/_dashboard-hitmap-trace-tx-log-keyword.mdx}
+
+## 付加機能
+
+<!--### 트랜잭션 파라미터 조회-->
+
+{@include: ../common-items/_search-transaction-parmeter.mdx} 

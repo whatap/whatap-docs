@@ -30,14 +30,31 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
     It displays the disk utilization, free sizes, and total sizes for each instance. If the value is `0`, the disk utilization is not collected.
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql'>
 
 -   **file** <span class='type'>String</span>
 
     To use the **_Log_** menus (**_Live Tail_**, **_Log Trend_**, **_Log Search_**, **_Log Setting_**), enter the absolute path in the `file` option for the log files to be monitored.
 
     ```ini title='xos.conf'
-    file = /opt/postgresql/logs/postgresql.log
+    file=/opt/postgresql/logs/postgresql.log
+    file1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log
+    file2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log
+    file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
+    ```
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+-   **file** <span class='type'>String</span>
+
+    To use the **_Log_** menus (**_Live Tail_**, **_Log Trend_**, **_Log Search_**, **_Log Setting_**), enter the absolute path in the `file` option for the log files to be monitored.
+
+    ```ini title='xos.conf'
+    file=/var/log/mysqld.log
+    file1=/var/log/mysql_history.log
+    file2=/var/lib/mysql/dbx-database-slow.log
     ```
 
 </InDoc>

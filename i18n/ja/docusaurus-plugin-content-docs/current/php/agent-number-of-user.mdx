@@ -15,7 +15,7 @@ tags:
 
     リアルタイムのユーザー集計有無を指定します。この値を活性化する場合、IPまたはPHPの基本クッキー(PHPSESSID)およびフレームワーククッキー(ci_session、Laravel_session)に基づいてユーザーを追跡します。PHPコンパイルインストールにより_php.ini_に`whatap`項目がある場合は、_whatap.ini_ではなく_php.ini_に追加してください。 
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.trace_user_using_ip** <span class='type'>Boolean</span>
 
@@ -23,7 +23,7 @@ tags:
 
     IPでリアルタイムユーザ区分をするときに設定します。このデータはReal Time Userで確認できます。`false`の場合、PHPの基本クッキーとフレームワーククッキー(PHPSESSID、ci_session、Laravel_session)に基づいてユーザーを区分します。PHPコンパイルインストールにより_php.ini_に`whatap`項目がある場合は、_whatap.ini_ではなく_php.ini_に追加してください。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.trace_user_cookie_keys** <span class='type'>String</span>
 
@@ -31,7 +31,7 @@ tags:
 
     PHP内部の`session.name`値を指定してユーザーを識別することができます。基本の`PHPSESSID`をクッキーのキー名として使用せず、別の名前で使用するときに設定します。コンマ(_,_)を区切り文字として複数の値を設定できます。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.trace_user_header_ticket** <span class='type'>Boolean</span>
 
@@ -39,7 +39,7 @@ tags:
 
     ユーザーをHTTPヘッダーの特定値として区分したいときに使用するHTTPキーを指定します。ただ、`trace_user_using_ip`排他的であるため、設定を同時に適用することはできません。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールにより_php.ini_に`whatap`項目がある場合は、_whatap.ini_ではなく_php.ini_に追加してください。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.trace_user_set_cookie** <span class='type'>Boolean</span>
 
@@ -47,7 +47,7 @@ tags:
 
     ユーザーを区別するために、クッキーに`WHATAP`キー名としてユーザー区分値を設定します。`trace_user_using_ip`が設定されている場合は反映されません。`trace_user_header_ticket`が設定される場合、header keyが見つからない場合に設定されます。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールにより_php.ini_に`whatap`項目がある場合は、_whatap.ini_ではなく_php.ini_に追加してください。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.trace_http_client_ip_header_key** <span class='type'>String</span>
 
@@ -55,7 +55,7 @@ tags:
 
     Client IP(Remote IP)の情報を特定HTTPヘッダーの値に変更して設定する機能を追加しました。Proxy環境でX-Forwarded-Forヘッダー値をClient IPに設定できます。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 -   **whatap.trace_http_client_ip_header_key_enabled** <span class='type'>Boolean</span>
 

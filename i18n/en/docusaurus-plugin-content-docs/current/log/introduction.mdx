@@ -4,13 +4,15 @@ title: Log Monitoring
 description: It guides you to the log monitoring service.
 tags:
   - Log Monitoring
+  - log Monitoring
+toc_max_heading_level: 2
 ---
 
-Logs are stored in files that record events and messages that occur during application execution. You have to look at the log files to understand the application behaviors and root cause of the issue occurred.
+Logs are the files that have recorded the events and messages that occurred in applications and systems. It is important to check the logs to find anomalies for preventing system deterioration or detecting the failure causes. 
 
-General log monitoring can be checked through the `tail` command or editor after accessing the server. However, it is difficult to use such a simple method in case of an MSA where many applications are distributed or a large number of logs are generated.
+Modern IT service building environments are changing to MSA or Kubernetes. As a result, the targets to be managed are increasing. In typical log monitorings, the `tail` command or editor is used for checking after connecting the servers. However, in this case, it is difficult to use simple methods such as accessing individual servers one by one. How can you view the logs from hundreds or thousands of servers in severe cases? 
 
-Through the WhaTap log monitoring service, you can easily manage or use various and numerous logs.
+Through the WhaTap log monitoring service, you can easily manage numerous logs.
 
 :::note
 
@@ -18,20 +20,71 @@ The Linux `tail` command is mainly used to check the logs whose content is added
 
 :::
 
-## Integrating logs
+## Key features
 
-You have to endure the inconvenience of accessing individual servers through a terminal to check logs displayed on the server. However, if you build the log integration system, you can check the content of logs centrally without accessing individual servers to ensure convenience. By checking the logs on the screen, you can early detect failures by increasing the accessibility to errors and issues. 
+-   **Central integrated management**
 
-Especially in the MSA or Kubernetes environment, log integration can minimize the hassle of accessing individual servers or containers separately. That is why log integration is becoming essential.
+    WhaTap can manage a large number of logs from the center. It is very convenient because you can check the log details without accessing individual servers. 
 
-Stacking logs on individual servers can excessively increase the file system capacity with the logs. It is required to take measures such as limiting the maximum load capacity so that it does not exceed a specific size. 
+-   **Collection of all logs**
 
-If logs are collected centrally, there is no need to keep log files on individual servers. Accordingly, you just need to manage the retention period of central log data.
+    While collecting the logs selectively, important data may be missing. In general, WhaTap collects all logs. The collected logs can be checked in real time through the **_Live Tail_** menu.
+
+-   **Visibility**
+
+    You can check the logs through various charts provided by WhaTab. Through this visibility, you can increase access to errors and issues and detect failures as soon as possible.
+
+-   **Flexible capacity management**
+
+    While loading logs on individual servers, the logs may cause an excessive file system capacity being occupied. However, if the logs are collected through WhaTap, there is no need to maintain log files that occur on individual servers, and only the log maintenance period can be managed centrally. 
+
+-   **Various analysis perspectives**
+
+    To find and predict failures, you have to analyze logs from various perspectives. WhaTap can check the log count trends with specific tags or the logs filtered by specific tags. For frequently used patterns, you can save them as charts so that you can search them at any time.
+
+-   **Pattern notification**
+
+    Once you have found a pattern of failures, you can set this as an alert to recognize or prevent problems as soon as possible. WhaTap provides **_Real-time Log Alert_** to receive notifications when specific keywords are included on an individual log basis and **_Composite Log Alert_** to receive notifications based on the count trend of logs containing specific tags. 
 
 ## Analyzing logs
 
-The logs collected in real time can be viewed on the screen like using the `tail` command. 
+### Live Tail
 
-For statistical purposes, you can classify logs to see the trend of log counts in specific intervals. If the number of logs occurred is closely related to the failure occurrence time and resolution, this can be checked through the log occurrence trend. 
+Through **_Live Tail_**, the logs collected in real time can be viewed as they flow through the screen, just like using the `tail` command. For more information about **_Live Tail_**, see [the following](log-lt).
 
-By registering a log parser, you can quickly search a large number of logs with keywords under specific conditions and search the desired logs.
+### Log Trend
+
+Through **_Log Trend_**, you can see all the collected logs or the log count trend with specific tags. If the log counts are closely related to the times of failure occurrence and resolution, the failure cause analysis and response can be accelerated through the log occurrence trend. For more information about the **_log trend_**, see [the following](log-exp).
+
+### Log Search
+
+Through **_Log Search_**, you can view all the collected logs or the logs with specific tags. The logs generated in a specific time period or specific server can be viewed based on tags. The Adjacent Log function that checks the logs that occurred before and after a selected log, can be used to see the situation in which a specific error or exception occurred. For more information about **_Log Search_**, see [the following](log-search).
+
+<!-- 
+
+로그는 애플리케이션 실행 중 발생하는 이벤트와 메시지 등을 기록한 파일입니다. 애플리케이션 활동과 발생한 이슈의 원인을 이해하려면 로그 파일을 살펴봐야 합니다.
+
+일반적인 로그 모니터링은 서버에 접속해 `tail` 명령어나 편집기를 통해 확인합니다. 하지만 다수의 애플리케이션이 분산되어 구성된 MSA 혹은 대량의 로그가 발생한 경우는 그런 단순한 방법을 사용하기 어렵습니다.
+
+와탭 로그 모니터링 서비스를 통해 다양하고 수많은 로그들을 보다 편리하게 통합 관리하고 활용할 수 있습니다.
+
+로그 통합
+
+서버에 출력되는 로그를 확인하기 위해 터미널을 통해 개별 서버에 접근하는 불편함을 감수해야 합니다. 그러나 로그 통합 시스템을 구축하면 개별 서버에 접근하지 않고 중앙에서 로그의 내용을 확인할 수 있어 편의성이 확보됩니다. 또한 화면을 통해 로그 확인이 가능해지는 것만으로 에러 및 이슈 정보에 대한 접근성을 높여 장애 조기 감지 효과를 얻을 수 있습니다. 
+
+특히 다수의 분산된 애플리케이션으로 구성된 MSA 환경 혹은 Kubernetes 환경의 경우 로그 통합으로 개별 서버나 컨테이너에 일일이 접속해야 하는 번거로움을 최소화할 수 있습니다. 그렇기에 로그 통합이 필수적인 요소가 되고 있습니다.
+
+개별 서버에 로그를 적재할 경우 로그로 인해 파일 시스템 용량이 과도하게 점유될 수 있습니다. 최대 적재 용량 제한 등을 통해 일정 크기를 초과하지 않도록 하는 등의 조치가 필요합니다. 
+
+하지만 로그를 중앙에 모은다면 개별 서버에 로그 파일을 유지하지 않아도 되므로 중앙에 적재된 로그 데이터의 유지 기간만을 관리하면 됩니다.
+
+
+로그 분석
+
+실시간으로 수집된 로그는 `tail` 명령어를 사용한 것과 마찬가지로 화면을 통해 흘러가는 로그를 조회할 수 있습니다. 
+
+통계 목적으로 로그를 분류하여 특정 단위로 발생하는 로그 발생 건수 추이를 확인할 수 있습니다. 로그 발생 건수가 장애 발생 및 해소 시점과 밀접한 연관을 가진 경우 로그 발생 건수 추이를 통해 이를 확인할 수 있습니다. 
+
+로그 파서를 등록해 특정 조건의 키워드로 대량의 로그를 빠르게 탐색하고 원하는 로그를 조회할 수 있습니다.
+
+-->

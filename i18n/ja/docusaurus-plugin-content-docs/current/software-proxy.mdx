@@ -69,7 +69,7 @@ java -jar whatap.agent.proxy-X.Y.Z.jar &
 
 ```bash title='proxy.sh (Windows: proxy.bat)'
 #!/usr/bin/env bash 
-EXE_JAR=`ls *.proxy* | sort | tail -1` 
+EXE_JAR=`ls *.proxy* | sort -V | tail -1` 
 ${JAVA_HOME}/bin/java ${JAVA_OPTS} -jar $EXE_JAR
 ```
 

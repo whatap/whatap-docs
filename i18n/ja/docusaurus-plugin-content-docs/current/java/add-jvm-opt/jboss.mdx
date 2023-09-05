@@ -21,7 +21,7 @@ JVMオプションに`-javaagent`および`-Djboss.modules.system.pkgs`オプシ
 #!/bin/sh
 ########## WHATAP ############
 WHATAP_HOME=/home/ec2-user/whatap
-WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort | tail -1`
+WHATAP_JAR=`ls ${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1`
 JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} -Djboss.modules.system.pkgs=whatap"
 ########## WHATAP ############
 ```
