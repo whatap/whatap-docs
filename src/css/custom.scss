@@ -1449,6 +1449,12 @@ main {
       a {
         text-decoration: none;
       }
+      code.beta {
+        border: none;
+        position: absolute;
+        font-style: italic;
+        font-weight: bold;
+      }
       .apm-agent {
         display: table;
         padding: 12px 8px;
