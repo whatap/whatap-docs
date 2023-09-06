@@ -626,6 +626,18 @@ button.DocSearch-Button:hover {
 
 // document
 main {
+  .imgError {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    font-size: 1.5rem;
+  }
   .breadcrumbsContainer_src-theme-DocBreadcrumbs-styles-module {
     margin-bottom: 16px;
   }
