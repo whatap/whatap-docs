@@ -1,0 +1,93 @@
+---
+id: agent-transaction-error-stack
+title: Transaction error stack
+description: The following guides you to the options for detecting transaction errors and displaying error stacks through the agent settings.
+tags:
+  - Java
+  - Agent CONFIG.
+  - Transactions
+  - Exception Stack
+---
+
+The following guides you to the options for detecting transaction errors and displaying error stacks through the agent settings. Depending on the agent settings, errors can be displayed in transactions, methods, SQL calls, HTTP calls, and SOCKET calls. It is not related to the `status_code` of the calling service. When multiple errors occur, the error stack displays only the first error stack.
+
+:::note
+
+The agent configuration in this document is supported by **Java Agent 2.2.15** or later.
+
+:::
+
+## Agent CONFIG.
+
+### Total configuration
+
+```ini title='whatap.conf'
+# Whether or not to display error stacks
+trace_exception_stack=false
+
+# Default value for the error stack size
+trace_exception_depth=50
+
+# Title size of the error stack message
+trace_exception_title_len=128
+```
+
+### Method
+
+```ini title='whatap.conf'
+# Whether or not to display the method error stack
+# You can turn the feature on or off with true/false values, following the trace_exception_stack value.
+trace_method_error_stack=trace_exception_stack
+
+# Method error stack size
+# You can follow the trace_exception_depth value and set it separately.
+trace_method_error_depth=trace_exception_depth
+```
+
+### SQL
+
+```ini title='whatap.conf'
+# Whether or not to display the SQL error stack
+# You can turn the feature on or off with true/false values, following the trace_exception_stack value.
+trace_sql_error_stack=trace_exception_stack
+
+# SQL error stack size
+# You can follow the trace_exception_depth value and set it separately.
+trace_sql_error_depth=trace_exception_depth
+```
+
+### HTTP Call
+
+```ini title='whatap.conf'
+# Whether or not to display the HTTP call error stack
+# You can turn the feature on or off with true/false values, following the trace_exception_stack value.
+trace_httpc_error_stack=trace_exception_stack
+
+# HTTP call error stack size
+# You can follow the trace_exception_depth value and set it separately.
+trace_httpc_error_depth=trace_exception_depth
+```
+
+### SOCKET
+
+```ini title='whatap.conf'
+# Whether or not to display the socket error stack
+# You can turn the feature on or off with true/false values, following the trace_exception_stack value.
+trace_socket_error_stack=trace_exception_stack
+
+# Socket error stack size
+# You can follow the trace_exception_depth value and set it separately.
+trace_socket_error_depth=trace_exception_depth
+```
+
+### Transactions
+
+```ini title='whatap.conf'
+# Whether or not to display the transaction error stack
+# You can turn the feature on or off with true/false values, following the trace_exception_stack value.
+trace_endtx_error_stack=trace_exception_stack
+
+# Transaction error stack size
+# You can follow the trace_exception_depth value and set it separately.
+trace_endtx_error_depth=trace_exception_depth
+```

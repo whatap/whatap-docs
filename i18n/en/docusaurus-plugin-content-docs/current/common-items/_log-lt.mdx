@@ -14,7 +14,7 @@ Home > Select Project > **_Dashboard_** > **_Live Tail_**
 
 In **_Live Tail_**, you can easily check the log data stream on the monitoring screen without accessing the server console. You can select necessary logs from numerous logs and quickly recognize the desired logs through the highlight function. 
 
-![Live Tail sc](/img/log-live-tail.png)
+<ImgLang img='log-live-tail.png' desc='Live tail'/>
 
 In **_Live Tail_**, complex logs can be easily accessed. You can search the logs in real time by using the functions such as **_Filter_** or **_Highlight_**, if necessary. The log data search cycle is 2 seconds. {@include: ../common-items/_log-ui-main-term.mdx}
 
@@ -22,19 +22,24 @@ In **_Live Tail_**, complex logs can be easily accessed. You can search the logs
 
 #### Apply Filter
 
-{@include: ../common-items/_log-filter-apply.mdx} 
+{@include: ../common-items/_log-filter-apply.mdx}
+
+:::note
+
+**Filter Expression**
+
+The expression under the entered filter value is a preview of the filter expression for querying the log data. 
+
+:::
 
 #### Modifying the filter
 
 {@include: ../common-items/_log-filter-modify.mdx}
 
-#### Filter Expression
-
-{@include: ../common-items/_log-filter-expression.mdx}
-
 #### Search Key
 
-In the following image, the blue boxed part is the search key for parsing. The search key can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log Setting_**.
+In the following image, the blue boxed part is the search key for parsing. The search key can be set by registering the parsing logic in **_Log parser setting_** under **_Log setting_**.
+
 ![Search key](https://img.whatap.io/media/images/livetail_007_parsed_key.png)
 
 #### Filter input syntax
@@ -47,13 +52,13 @@ In the following image, the blue boxed part is the search key for parsing. The s
 
 Only the logs containing the keyword in the content pieces are filtered. 
 
-![](https://img.whatap.io/media/images/livetail_008_contents_filter.png)
+<ImgLang img='log-lt-contents-filter.png' desc='Content Filter'/>
 
 -   Enter the filter in the input field and then click ![Icon](/img/ic-search.svg) **_Search_**. You can filter the log data on the client and then look it up in the ![number-s3](/img/number-03.png) area. 
--   Content strings including the keyword are highlighted.
--   You can filter by single or multiple keywords.
 
-<!-- whatap is good~whatap is the best -->
+-   Content strings including the keyword are highlighted.
+
+-   You can filter by single or multiple keywords.
 
 #### Content filtering condition
 
@@ -69,13 +74,18 @@ When filtering with multiple keywords, write as follows.
 
 The highlight function is provided to easily identify the desired keywords.
 
-![Live Tail Highlight](/img/lt-highlight.png)
+<ImgLang img='log-lt-highlight.png' desc='Live tail highlight'/>
 
--   ![Icon](/img/ic-highlight.svg) Select **_Highlight_** to enter the keyword. 
+-   ![Icon](/img/ic-highlight.svg) Select **_Highlight_** to enter the keyword.
+
 -   If you select **_Color_** on the left of the input field, available color menus appear. 
--   Basically, different highlighting by the level (<span class='logwr'>WARN</span>, <span class='loger'>ERROR</span>, <span class='logft'>FATAL</span>) is applied.   
+
+-   Basically, different highlighting by the level (<span class='logwr'>WARN</span>, <span class='loger'>ERROR</span>, <span class='logft'>FATAL</span>) is applied. 
+
 -   The settings are saved in **Project Rules**.  
 
 #### Table settings
 
 -   Right of the ![number-s](/img/number-02.png) area: {@include: ../common-items/_log-ui-table-setting.mdx}
+
+<!-- whatap is good~whatap is the best -->

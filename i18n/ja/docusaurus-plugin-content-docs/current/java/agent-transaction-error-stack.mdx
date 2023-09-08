@@ -1,0 +1,89 @@
+---
+id: agent-transaction-error-stack
+title: トランザクションエラースタック
+description: エージェント設定により、トランザクションエラーを検出し、エラースタックを表示できるオプションを案内します。
+tags:
+  - Java
+  - エージェント設定
+  - トランザクション
+  - エラースタック
+---
+
+エージェント設定により、トランザクションエラーを検出し、エラースタックを表示できるオプションを案内します。 エージェント設定によってエラーをトランザクション、メソッド、SQL呼び出し、HTTPコール、SOCKET呼び出しで表示できます。 呼び出しサービスの、`status_code`とは無関係であり、複数のエラーが発生した場合、エラースタックは最初のエラースタックのみを表示します。
+
+:::note
+
+この文書で案内するエージェント設定は、**Javaエージェント2.2.15**バージョン以降で対応しています。
+
+:::
+
+## エージェント設定
+
+### 全体設定
+
+```ini title='whatap.conf'
+#エラースタック表示の有無
+trace_exception_stack=false
+
+#エラースタック長さのデフォルト値
+trace_exception_depth=50
+
+#エラースタックメッセージタイトルの長さ
+trace_exception_title_len=128
+```
+
+### メソッド
+
+```ini title='whatap.conf'
+#メソッドエラースタック表示の有無
+# trace_exception_stack値に従って、別途にtrue/false値で機能をオンまたはオフにすることができます。
+trace_method_error_stack=trace_exception_stack
+
+#メソッドエラースタック長さ
+# trace_exception_depth値に従って、別途に設定できます。
+trace_method_error_depth=trace_exception_depth
+```
+
+### SQL
+
+```ini title='whatap.conf'
+# SQLエラースタック表示の有無
+# trace_exception_stack値に従って、別途にtrue/false値で機能をオンまたはオフにすることができます。
+trace_sql_error_stack=trace_exception_stack
+
+#sqlエラースタック長さ
+# trace_exception_depth値に従って、別途に設定できます。trace_sql_error_depth=trace_exception_depth
+```
+
+### HTTP Call
+
+```ini title='whatap.conf'
+# http callエラースタック表示の有無
+# trace_exception_stack値に従って、別途にtrue/false値で機能をオンまたはオフにすることができます。
+trace_httpc_error_stack=trace_exception_stack
+
+# http callエラースタック長さ
+# trace_exception_depth値に従って、別途に設定できます。trace_httpc_error_depth=trace_exception_depth
+```
+
+### SOCKET
+
+```ini title='whatap.conf'
+# socketエラースタック表示の有無
+# trace_exception_stack値に従って、別途にtrue/false値で機能をオンまたはオフにすることができます。
+trace_socket_error_stack=trace_exception_stack
+
+# socketエラースタック長さ
+# trace_exception_depth値に従って、別途に設定できます。trace_socket_error_depth=trace_exception_depth
+```
+
+### トランザクション
+
+```ini title='whatap.conf'
+# トランザクションエラースタック表示の有無
+# trace_exception_stack値に従って、別途にtrue/false値で機能をオンまたはオフにすることができます。
+trace_endtx_error_stack=trace_exception_stack
+
+# トランザクションエラースタック長さ
+# trace_exception_depth値に従って、別途に設定できます。trace_endtx_error_depth=trace_exception_depth
+```

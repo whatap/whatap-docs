@@ -46,7 +46,7 @@ spec:
         cpu: "500m"
 ```
 
-上記の設定により、該当するPod内には2つのコンテナが存在します。各コンテナのリソース設定は次のとおりです。
+上記の設定により、Pod内には2つのコンテナが存在します。各コンテナのリソース設定は次のとおりです。
 
 | 対象コンテナ        | リソース区分      | リソース設定      | 値     |
 | ------------- | ----------- | ----------- | ----- |
@@ -59,7 +59,7 @@ spec:
 | ^             | メモリ         | Request     | 128Mi |
 | ^             | ^           | Limit       | 256Mi |
 
-様々なコンテナのリソース設定情報や現在の使用量を簡単に把握することは容易ではありません。それで、WhaTap Kubernetesモニタリングサービスは、特定の単一コンテナ、ユーザーが選択した複数のコンテナ、またはDeployment全体を対象にリソース設定および現在の使用量を簡単に確認できる機能を提供します。
+様々なコンテナのリソース設定情報や現在の使用量を簡単に把握することは容易ではありません。そのため、WhaTap Kubernetesモニタリングサービスは、特定の単一コンテナ、ユーザーが選択した複数のコンテナ、またはDeployment全体を対象にリソース設定および現在の使用量を簡単に確認できる機能を提供します。
 
 -   **詳細を見る** 画面 > **_メトリクス_** - リソース使用量のモニタリングと分析
 
@@ -69,7 +69,7 @@ spec:
 
     ![リソース使用量のモニタリングと分析](https://img.whatap.io/media/images/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
 
-上記のデータを見ると、CPUはRequest 0.2colores(200m)、Limit 0.4colores(400m)に設定されています。現在のCPU使用量は0.02cores(20m)(5秒平均)です。右側のCPU関連推移グラフを確認すると、全体的には余裕がありますが、断続的にCPU使用量が増加する現象が確認できます。
+上記のデータを見ると、CPUはRequest 0.2colores(200m)、Limit 0.4colores(400m)に設定されています。現在のCPU使用量は0.02cores(20m)(5秒平均)です。右側のCPU関連の推移グラフを確認すると、全体的には余裕があるものの、断続的にCPU使用量が増加する現象が確認できます。
 
 Memoryは、Request 128MiB、Limit 256MiBに設定されています。ところで現在のMemory使用量は184MiBです。右側のMemory関連推移グラフを見てもRequest基準で100%を超過し、Limit基準でも70%以上を使用しています。
 
@@ -94,11 +94,11 @@ Podが実行中のノードに使用可能なリソースが十分であれば�
 
 ## その他のメトリクス
 
-WhaTapはCPU、Memoryの他にも様々なメトリクスを提供します。
+WhaTapはCPU、Memoryの他に様々なメトリクスを提供します。
 
 -   **_Container Block I/O Read Byte_** (IoReadBytes)
 -   **_Container Block I/O Write Byte_** (IoWriteBytes)
 -   **_Container Network Receive Byte_** (NetRxBytes)
 -   **_Container Network Transmit Byte_** (NetTxByes) 
 
-WhaTap Kubernetesメトリクスの詳細については、[次の文書](metrics-intro)を参考にしてください。
+WhaTap Kubernetesメトリクスの詳細については、[次の文書](metrics-intro)を参照してください。

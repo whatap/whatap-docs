@@ -30,11 +30,24 @@ Therefore, the API path used in each case differs.
 | In case of writing the MXQL queries                                                                                                          | [MXQL text API](#text-api) |
 | In case of using the **predefined MXQL query list provided by the SaaS service** (see [the following](../mxql/mxql-guide#custom-query-saas)) | [MXQL path API](#path-api) |
 
-## Constraints of the MXQL open API
+## Calling the MXQL open API
+
+The content included in the header upon open API call is as follows:
+
+| Type   | Key            | Set value                         | Remarks                                                                                             |
+| ------ | -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Header | x-whatap-token | API Token `{{PROJECT API TOKEN}}` | Project API Token: Select a project > **_Management_** > **_Project Management_** > **_Api Token_** |
+| ^      | x-whatap-pcode | Project code `{{projectCode}}`    | Project code: Select Project > **_Management_** > **_Project management_** > **_Project code_**     |
+
+:::caution
+
+**Constraints of the MXQL open API**
 
 You can search up to 31 days in a single request.
 
-## MXQL text API{#text-api}
+:::
+
+### MXQL text API{#text-api}
 
 The following image is an example of the MXQL execution result.
 
@@ -42,8 +55,12 @@ The following image is an example of the MXQL execution result.
 
 <span class='apitype'>POST</span> https://api.whatap.io/open/api/flush/mxql/text
 
-```json title='RequestBody example'
-{
+```bash title='Request'
+curl --location 'https://api.whatap.io/open/api/flush/mxql/text' \
+-H 'x-whatap-token: {{PROJECT API TOKEN}}' \
+-H 'x-whatap-pcode: {{projectCode}}' \
+-H 'Content-Type: application/json' \
+-d '{
   "stime": 1639016640000,
   "etime": 1639016940000,
   "mql": "CATEGORY app_counter\nOID [ $oidFirst, $oidSecond ]\nTAGLOAD\nSELECT\nINJECT sortByOidDesc",
@@ -56,7 +73,7 @@ The following image is an example of the MXQL execution result.
     "$oidFirst": "1499132250",
     "$oidSecond": "1670734023"
   }
-}
+}'
 ```
 
 | Key     | Value                                                                                                                                                         |
@@ -68,6 +85,12 @@ The following image is an example of the MXQL execution result.
 | pageKey | The string MXQL's fixed value                                                                                                                                 |
 | inject  | <span class='api'>Optional</span> See [the following](../mxql/mxql-calculate#inject)<br/>e.g. `{ "default": "ORDER {key : [oid],  sort : [desc] }"}`          |
 | param   | <span class='api'>Optional</span> See [the following](../mxql/mxql-guide#bind-parameter)<br/> e.g. `{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
+
+:::note
+
+`stime`, `etime`, `$oidFirst`, and `$oidSecond` in the request statements must be applied as the time and oid values for the user environment.
+
+:::
 
 -   In case of no queried data
 
@@ -168,13 +191,17 @@ The following image is an example of the MXQL execution result.
     ]
     ```
 
-## MXQL path API{#path-api}
+### MXQL path API{#path-api}
 
 <span class='apitype'>POST</span> https://api.whatap.io/open/api/flush/mxql/path
 
-```json title='Request Body example'
-# As INJECT, add the _pk_ column; param is not used.
-{
+```bash title='Request'
+# Add the _pk_ column with INJECT; param is unavailable. 
+curl --location 'https://api.whatap.io/open/api/flush/mxql/path' \
+-H 'x-whatap-token: {{PROJECT API TOKEN}}' \
+-H 'x-whatap-pcode: {{projectCode}}' \
+-H 'Content-Type: application/json' \
+-d '{
   "stime": 1639016640000,
   "etime": 1639016940000,
   "mql": "/app/act_tx/agent_with_tx",
@@ -185,18 +212,23 @@ The following image is an example of the MXQL execution result.
   },
   "param": {
   }
-}
+}'
 ```
 
-| Key     | Value                                                                                                                                                         |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stime   | Data lookup start time                                                                                                                                        |
-| etime   | Data lookup end time                                                                                                                                          |
-| mql     | See [the following](../mxql/mxql-guide#custom-query-saas).                                                                                                    |
-| limit   | Maximum data query count                                                                                                                                      |
-| pageKey | The string MXQL's fixed value                                                                                                                                 |
-| inject  | <span class='api'>Optional</span> See [the following](../mxql/mxql-calculate#inject)<br/>e.g. `{ "default": "ORDER {key : [oid],  sort : [desc] }"}`          |
-| param   | <span class='api'>Optional</span> See [the following](../mxql/mxql-guide#bind-parameter)<br/> e.g. `{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
+| Key     | Value                                                                                                                                                |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| stime   | Data lookup start time                                                                                                                               |
+| etime   | Data lookup end time                                                                                                                                 |
+| mql     | See [the following](../mxql/mxql-guide#custom-query-saas).                                                                                           |
+| limit   | Maximum data query count                                                                                                                             |
+| pageKey | The string MXQL's fixed value                                                                                                                        |
+| inject  | <span class='api'>Optional</span> See [the following](../mxql/mxql-calculate#inject)<br/>e.g. `{ "default": "ORDER {key : [oid],  sort : [desc] }"}` |
+
+:::note
+
+`stime` and `etime` in the request statement must be applied as the time for the user environment.
+
+:::
 
 -   In case of no queried data
 

@@ -300,7 +300,7 @@ For the event generation conditions and selection of event targets on metrics al
 |    > =         | operand1 >= operand2          | Checks whether the operand1 value is greater than or equal to the operand2 value.                                     |
 |    \<          | operand1 \< operand2          | Check whether the operand1 value is less than the operand2 value.                                                     |
 |    \<=         | operand1 \<= operand2         | Check whether the operand1 value is less than or equal to the operand2 value.                                         |
-|    like        | operand1 like operand2        | Checks whether the value whose key is operand1 starts or ends with operand2.                                          |
+|    like        | operand1 like operand2        | Search with patterns whether operand1 includes operand2.                                                              |
 |    &&          | expression1 && expression2    | Check whether expression1 and expression2 are all `true.`                                                             |
 |    and         | expression1 and expression2   | Check whether expression1 and expression2 are all `true.`<br/>The operator plays the same role as **&&**.             |
 |     ||         | expression1 || expression2    | Check whether expression1 and expression2 are all `true.`                                                             |
@@ -308,46 +308,49 @@ For the event generation conditions and selection of event targets on metrics al
 
 #### Usage of like
 
-To easily use the `startsWith` and `endsWith` functions, the `like` operator has been added.
+You can conveniently search for embedded strings via the wildcard (`*`).
 
--   Use of the `like` operator instead of `startsWith`
+-   Searching for strings that start with a specific keyword
 
     ```java
-    startsWith(Key, "Value")
 
-    // like operator
     Key like "Value*"
+
     ```
 
--   Use of the `like` operator instead of `endsWith`
+-   Searching for strings that end with a specific keyword
 
     ```java
-    endsWith(Key, "Value")
 
-    // like operator
     Key like "*Value"
+
     ```
 
--   `startsWith` and `endsWith` are supported at the same time.
+-   Searching for strings that include a specific keyword
 
     ```java
+
     Key like "*Value*"
+
     ```
 
--   The value, \* cannot be used in the middle of a string.
+-   The wildcard (`*`) cannot be used in the middle of keywords.
 
     ```java
-    // Supported grammar
-    Key like "tag*lue"
+
+    // Unsupported syntax
+    Key like "Va*lue"
+
     ```
 
--   If \* is omitted in the `like` operator, it works as ==.
+-   If you omit the wildcard (`*`) in the `like` operator, it operates as equals (`==`).
 
     ```java
-    // The following two sentences have exactly the same result.
+
+    // The following two statements have the same result.
     Key like "Value"
-
     Key == "Value"
+
     ```
 
 ### Available functions
@@ -400,6 +403,8 @@ isNotEmpty(Key)
 ## Template{#template}
 
 <Xclude product='browser,npm'>
+
+The alert templates are provided as follows.
 
 -   In case comprehensive event judgment is required for the data received from multiple agents
 

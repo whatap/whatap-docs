@@ -13,7 +13,7 @@ tags:
 
 WhaTapモニタリングサービスの初期画面でプロジェクトを選択し **_プロジェクトメニュー_** の下にある **_ダッシュボード_** > **_リソースボード_**を選択してください。
 
-![](/img/server-resourceboard.png)
+<ImgLang img='server-resourceboard.png' desc='リソースボード'/>
 
 **_リソースボード_**から1つのプロジェクトに登録されているすべてのサーバーをモニタリングできます。 
 
@@ -32,6 +32,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
     全体のサーバー数とトラブルのあるサーバーの数を提供します。 領域を選択すると **_サーバー一覧_** ページに移動します。
 
     -   例外状態：<span class='vslow'>危険</span>、<span class='slow'>警告</span>
+
     -   正常なサーバー：<span class='snormal'>正常</span>, <span class='k8s-normal'>非アクティブ</span>
 
 -   **Total Cores**  
@@ -62,10 +63,12 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
     セル領域をドラッグすると、詳細情報が表示されます。
 
-    ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring18.png)
+    <ImgLang img='server-resourcemap.png' desc='リソースマップ'/>
 
     -   サーバー一覧は、範囲内で収集されたデータの最大値でソートされます。
+
     -   基本の5つのサーバーが選択され、選択されたサーバーの使用状況の傾向をマルチラインチャートで表示します。
+
     -   **_更新_** ボタンを手動でクリックすると、現在のデータに更新できます。 
 
 :::note
@@ -83,10 +86,11 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 例えば、Disk I/O(%) メトリクスは、5秒間のディスク使用率を示します。 Disk I/O(%)が80%を超えると、システムの性能に影響を与える可能性があります。警告となるデフォルト値は 90%です。 Disk I/O(%)が100%の場合、ディスクが常時動作していることを意味します。
 
 -   イコライザーチャート領域を選択すると、対象**_サーバー詳細_**ページに移動します。 
+
 -   ![right-arrow](/img/right-arrow.svg)ボタンを選択すると **_リソースイコライザー_** ページに移動します。 サーバー全体のリアルタイムの使用量が確認できます。
 
 ## ![](/img/number-05.png)Process Top 5
 
 CPU、メモリの最大占有率による上位5つのプロセス一覧を提供します。 ![right-arrow](/img/right-arrow.svg)ボタンを選択すると、次のようにサーバー全体の **_プロセス一覧_**が確認できます。 
 
-![](https://img.whatap.io/media/images/processlist_detail.png)
+<ImgLang img='server-process-list-dt.png' desc='サーバープロセス一覧'/>

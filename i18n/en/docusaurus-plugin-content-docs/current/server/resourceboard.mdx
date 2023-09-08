@@ -13,7 +13,7 @@ Home > Select Project > **_Dashboard_** > **_Resource Board_**
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select **_Dashboard_** > **_Resource Board_** under **_Project Menu_**.
 
-![](/img/server-resourceboard.png)
+<ImgLang img='server-resourceboard.png' desc='Resource Board'/>
 
 **_Resource Board_** allows you to monitor all servers registered in a project. 
 
@@ -32,6 +32,7 @@ It provides the summary metrics for all servers registered in the project. They 
     It provides the total number of servers together with the number of servers with problems. If you select an area, the **_Server List_** page appears.
 
     -   Exception status: <span class='vslow'>Danger</span>, <span class='slow'>Warning</span>
+
     -   Normal Server: <span class='snormal'>Medium</span>, <span class='k8s-normal'>Inactive</span>
 
 -   **Total Cores**  
@@ -62,10 +63,12 @@ This distribution chart displays the CPU usage of all servers. It displays data 
 
     If you drag the cell area, the detailed information is provided.
 
-    ![](https://img.whatap.io/media/images/Screenshot_2021-03-17_server_14861_-_Server_Monitoring18.png)
+    <ImgLang img='server-resourcemap.png' desc='Resource map'/>
 
     -   The server list is sorted by the maximum value of the data collected in the range.
+
     -   Five servers are selected by default, and the usage trend of the selected servers are also provided in a multi-line chart.
+
     -   **_Click Refresh_** to refresh the current data. 
 
 :::note
@@ -83,10 +86,11 @@ It displays a list of the top 5 servers in real time for **_CPU_**, **_memory_**
 For example, the disk I/O (%) metric displays the disk usage for 5 seconds. If the disk I/O usage (%) exceeds 80%, the system performance can be affected. The default alert value is 90%. If the disk I/O (%) is 100%, it means that the disk is working non-stop.
 
 -   If you select the equalizer chart area, the target **_Server Details_** page appears. 
+
 -   If you select ![right-arrow](/img/right-arrow.svg), the **_Resource Equalizer_** page appears. You can see the real-time usage for all servers.
 
 ## ![](/img/number-05.png) Process Top 5
 
 The list of top 5 processes is provided based on the maximum occupancy of CPU and memory. If you select ![right-arrow](/img/right-arrow.svg), the **_process list_** for all servers appears. 
 
-![](https://img.whatap.io/media/images/processlist_detail.png)
+<ImgLang img='server-process-list-dt.png' desc='Server process list'/>

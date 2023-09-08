@@ -24,7 +24,7 @@ You can configure the log monitoring related settings in **_Log Setting_**. Usin
 
 <InDoc product='aws-log'>
 
-![Start Log Monitoring sc](/img/log-getting-started-aws.png)
+<ImgLang img='log-getting-started-aws.png' desc='Start Log Monitoring'/>
 
 </InDoc>
 
@@ -42,7 +42,7 @@ At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTa
 
 In the ![number 1](/img/number-01.png) area, click the **_Activate log monitoring_** toggle button to set whether or not to enable the log monitoring.
 
-![Start Log Monitoring](/img/log-start-aws.png)
+<ImgLang img='log-start-aws.png' desc='Starting the log monitoring'/>
 
 -   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
 -   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
@@ -146,6 +146,12 @@ At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab
 
 :::
 
+:::note 
+
+For more information about the log parser, see [the following](log-parser).
+
+:::
+
 ### Setting item{#log-parser-comp}
 
 | Set value               | Description                                                                                                                                                                                                                                  | ETC      |
@@ -198,7 +204,7 @@ At the top of **_Log Setting_**, select the **_Log primary parser setting_** tab
 
 :::note
 
-When registering a parser, you cannot register the parser twice in the same **_Category_**.
+When registering the log parser, parsers cannot be registered repeatedly in the same **_category_**.
 
 :::
 
@@ -206,7 +212,7 @@ When registering a parser, you cannot register the parser twice in the same **_C
 
 <ImgLang img='log-1st-grok.png' desc='GROK Pattern Parser'/>
 
-The default syntax is `%{SYNTAX:SEMANTIC}`.  
+The default syntax is `%{SYNTAX:SEMANTIC}`. For more information about the GROK parser, see [the following](log-parser#grok-parser-detail).
 
 -   **SYNTAX**
 
@@ -222,15 +228,11 @@ The default syntax is `%{SYNTAX:SEMANTIC}`.
 
     :::
 
-See the following video guide for more information about the GROK parser pattern registration.
-
-{@youtube: skgg5KOFGpI}
-
 ### Registering the JSON Format Parser Pattern{#log-pattern-json}
 
 <ImgLang img='log-1st-json.png' desc='Registering the JSON Format Parser Pattern'/>
 
-If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser. To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. 
+If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser. To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. For more information about the JSON parser, see [the following](log-parser#json-parser-detail).
 
 | Option    | Description                                                                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -299,13 +301,13 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 3.  Check the entered **_log_** and **_pattern_**.
 
-  ![Parser Simulation](/img/log-parser-simulation.png)
+<ImgLang img='log-parser-simulation.png' desc='Parser Simulation'/>
 
 1.  Select **_Simulation_** and then check whether parsing is successful with the pattern to register. 
 
     -   **Simulation Success Screen**
 
-        ![Simulation Success](/img/log-simulation-success.png)
+        <ImgLang img='log-simulation-success.png' desc='Simulation Success'/>
 
     -   **Simulation Failure Screen**
 
@@ -317,7 +319,7 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 After successful simulation, click **_Performance measurement_** to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
 
-![Performance measurement](/img/log-performance.png)
+<ImgLang img='log-performance.png' desc='Performance measurement'/>
 
 ### Parsing success{#log-parsed}
 
@@ -405,7 +407,7 @@ If all parsers have been registered, go to **_Flex Board_** and then create the 
 
 If the widget is created, you can see the following data.
 
-![](https://img.whatap.io/22/11/28/111724log_status_03_widget.png)
+<ImgLang img='log-flexboard-widget-chart-4xx5xx.png' desc='Log flex board widget chart - 4xx5xx'/>
 
 -   **_avg_**: Average value of the data during the query period
 
@@ -435,7 +437,7 @@ If all parsers have been registered, go to **_Flex Board_** and then create the 
 
 If the widget is created, you can see the following data.
 
-![Flex Board - Log Request Success Rate Widget](https://img.whatap.io/22/11/28/120046log_success_rate_02_widget.png)
+<ImgLang img='log-flexboard-widget-chart-scs.png' desc='Log flex board request success rate widget chart-4xx5xx'/>
 
 The data above the chart represents statistics for the lookup period. You can select the statistical method with the latest value, maximum value, or average value. The latest value is selected by default.
 
@@ -483,7 +485,7 @@ Select the **_Log long-term archive statistics_** tab at the top of **_Log Setti
 
 ### Adding the log long-term archive statistics{#log-long-term-archive-add}
 
-![Log long-term archive statistics](/img/log-long-term-archive.png)
+<ImgLang img='log-long-term-archive.png' desc='Log long-term archive statistics'/>
 
 If you select **_+ Add_** under the **_Log long-term archive statistics_** tab, the **_Log long-term archive statistics_** window appears. You can add rules by using **_+ Add_** or delete the created rules by using the **_-_** icon.
 
@@ -502,18 +504,18 @@ If you select **_+ Add_** under the **_Log long-term archive statistics_** tab, 
 
 If a setting is added as follows, statistical data is generated with a key value of **_TotalCount_** for the logs whose status is `200` or `300`. 
 
-![](/img/log-long-term-totalcount.png)
+<ImgLang img='log-long-term-totalcount.png' desc='Log long-term archive statistics example'/>
 
 ### Data Search{#log-widget-statistics}
 
 1.  Create a widget by searching **_Log long-term archive statistics_** in **_Widget Templates_** of **_Flex Board_**.
 
-    ![Long-term archive statistics widget template](https://img.whatap.io/22/11/28/090932log_024_long_period_widget_template.png)
+    <ImgLang img='log-flexboard-widget-long-term.png' desc='Log long-term archive statistics widget template'/>
 
 2.  Enter the **_category_** and **_key_** to view and then select **_Apply_**.
 
-    ![Long-term archive statistics widget - category and key selection](https://img.whatap.io/22/11/28/090932log_025_long_period_widget_config.png)
+    <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='Log long-term archive statistics widget category and key selection'/>
 
 3.  With the added settings, you can check the **_ Log long-term archive statistics_** data as follows.
 
-    ![Long-term archive statistics widget](https://img.whatap.io/22/11/28/090932log_026_long_period_widget_view.png)
+    <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='Log long-term archive statistics chart widget'/>

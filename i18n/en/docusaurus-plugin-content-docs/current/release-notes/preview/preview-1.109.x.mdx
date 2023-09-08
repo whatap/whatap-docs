@@ -14,6 +14,276 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.109.14
+
+September 5, 2023
+
+<div class='indentTab'>
+
+### `Network`
+
+#### Dashboard
+
+-   <Status>Changed</Status> In <UI>Network topology</UI>, modified to keep the settings upon refreshing when the preset is in <UI>Default</UI> status.
+
+-   <Status>Fixed</Status> In <UI>Network topology</UI>, modified to display the unit on the label of the edge for the topology.
+
+-   <Status>Fixed</Status> In <UI>Network topology</UI>, fixed the issue where some tooltips obscure the button and make the button unclickable.
+
+-   <Status>Changed</Status> In <UI>Network trend (TCP)</UI>, modified to display data based on the node (not communication between nodes) on the charts for <UI>Retransmission Count</UI> and <UI>Lost Count</UI>.
+
+#### Analytics
+
+<p><Status>Changed</Status> In <UI>TCP session</UI> and <UI>UDP session</UI>, modified to keep the adjusted table width even after refreshing.</p>
+
+</div>
+
+## Preview 1.109.13
+
+September 4, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> Fixed the bug where the <code>mem_working_set</code> series chart does not appear in <UI>Out of memory killed container</UI> in case of the namespace project.</p>
+
+</div>
+
+## Preview 1.109.12
+
+September 4, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Transaction search
+
+-   <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> column.
+
+-   <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> metric into the downloaded CSV data file.
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status> In <UI>Container map</UI>, fixed the issue where the chart block is partially hidden in case of no <UI>grouping</UI>.
+
+-   <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Flex Board</UI> and <UI>Analysis</UI> > <UI>Metrics chart</UI>, modified the filter name that is displayed on the agent filter.
+
+</div>
+
+## Preview 1.109.11
+
+September 1, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+<p><Status>Changed</Status> Modified the following in the <UI>Transaction analysis</UI> window.</p>
+
+-   Modified only the <UI>No</UI> column cannot be deleted in <UI>Column settings</UI> for the transaction list.
+
+-   Changed the minimum number of selected columns in the transaction list to 5.
+
+-   Added <UI>error</UI> options in Filter for the transaction list.
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> In <UI>Log search</UI>, fixed the issue where search is not allowed after any <UI>filter</UI> has been changed or all <UI>filters</UI> have been deleted.</p>
+
+</div>
+
+## Preview 1.109.10
+
+August 31, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Flex Board
+
+<p><Status>Changed</Status> Modified to reload the page if the API timeout (60 seconds) occurs twice in a row during real-time inquiry.</p>
+
+</div>
+
+## Preview 1.109.9
+
+August 31, 2023
+
+<div class='indentTab'>
+
+### `Application`, `Container`
+
+<p><Status>Fixed</Status> Fixed the whiteout bug when entering the <UI>Daily application status</UI> menu.</p>
+
+</div>
+
+## Preview 1.109.8
+
+August 31, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### Dashboard
+
+<p><Status>Changed</Status> In the <UI>Transaction analysis</UI> window, added information on the transaction selection status to the URL for list transaction analysis.</p>
+
+This change can be useful when sharing the URL of the selected transaction with other users. 
+
+1.  Select a specific transaction from the transaction list, and then copy the URL of the web browser.
+
+2.  Go to the URL in the web browser through a new tab or window.
+
+3.  You can see that the transaction has been selected in the transaction list.
+
+#### Flex Board
+
+<p><Status>Fixed</Status> Fixed the issue where some widgets are not updated when a copied dashboard is accessed through the Favorites.</p>
+
+#### Alert
+
+<p><Status>Fixed</Status> If the language has been set to Japanese, fixed the line break problem in <b>Filtering event targets</b> when any events are added in <UI>Event setting</UI> > <UI>Metrics</UI>.</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Change</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, disabled the collapsible function so that you can check all options at a time.</p>
+
+* * *
+
+### `Container`
+
+#### Dashboard
+
+-   <Status>Changed</Status> In <UI>Container map</UI>, modified the line spacing in a block when the category is set to <UI>Container</UI>.
+
+-   <Status>Changed</Status> In <UI>Container map</UI>, modified to display the group name when setting the step 2 grouping.
+
+</div>
+
+## Preview 1.109.7
+
+August 30, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### My Usage
+
+-   <Status>Changed</Status> In <UI>Billing history details</UI> of <UI>Billing and payment history</UI>, modified to display <UI>Metered units</UI> instead of <UI>CPU core</UI>.
+
+-   <Status>Fixed</Status> In the sub menus under <UI>My Usage</UI>, modified to expose the <code>Network</code> project icon.
+
+-   <Status>Fixed</Status> Modified to display the aggregated billing of the <code>Network</code> project by the agent.
+
+-   <Status>Feature</Status> Displayed the updated date for the cost and exchange rate according to the exchange rates for JPY and USD based on KRW in the following menu path.
+
+    -   **_Project subscription_**
+
+    -   **_Billing History_**
+
+    -   **_Invoice Preview_**
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> In <UI>Log search</UI>, fixed the issue where operators are missing after clicking the number (.n) tag in the log and selecting the next item from the drop-down menu.</p>
+
+-   Fixed the issue where the <code>==</code> operator is missing when <UI>Search</UI> is selected.
+
+-   Fixed the issue where the <code>!=</code> operator is missing if <UI>Exclusion search</UI> has been selected.
+
+* * *
+
+### `Network`
+
+<p><Status>Feature</Status> Supported English and Japanese based on the language setting.</p>
+
+</div>
+
+## Preview 1.109.6
+
+August 29, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <UI>My Usage</UI> > <UI>Payment information</UI>, fixed the error that occurs if the department name has been applied as a mandatory when entering the payment data.</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status> Improved the filtering logic.
+
+-   <Status>Fixed</Status> Fixed the bug where <UI>Resource</UI> > <UI>Performance summary</UI> does not appear when you have no <b>View</b> role for the namespace project.
+
+</div>
+
+## Preview 1.109.5
+
+August 28, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Fixed the problem where some project data is cut off in the <UI>project list</UI>.</p>
+
+* * *
+
+### `Container`
+
+#### Management
+
+-   <Status>Feature</Status> In <UI>Agent installation</UI>, added the links to Document guide and Video tutorials.
+
+-   <Status>Changed</Status> In <UI>Agent installation</UI>, modified the download button for the yaml file.
+
+</div>
+
+## Preview 1.109.4
+
+August 28, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In the <UI>TOO_SLOW_SQL</UI> template in <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI>, deleted the duplicate and unused values for <UI>Event rule</UI>.
+
+-   <Status>Fixed</Status> If the language has been set to English, modified the unnatural spacing in notification messages displayed in the following cases for the <UI>Manage account INFO.</UI> menu.
+
+    -   In case the multi-factor authentication is disabled
+
+    -   In case the OTP authentication key is created
+
+    -   In case the OTP authentication is canceled
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>HITMAP</UI>, changed the default value in the application selection box into <UI>Select all</UI>.
+
+-   <Status>Feature</Status> In the <UI>Client IP</UI> tab under <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, added to display <b>(Whatap)</b> when it corresponds to the WhaTap IP address in the IP list.
+
+</div>
+
 ## Preview 1.109.3
 
 August 25, 2023

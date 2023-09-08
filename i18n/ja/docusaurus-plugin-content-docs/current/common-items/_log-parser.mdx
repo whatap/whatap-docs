@@ -1,0 +1,350 @@
+ログパーサを使用すると、不規則な形のログをクエリが可能な構造化された形に変更できます。 WhaTapログモニタリングは、次の2つのタイプのパーサを提供します。
+
+-   **GROKパーサ**: 任意の形で収集されるログを正規表現式とGROK文法を活用してパーシングします。
+
+-   **JSONパーサ**: JSON形式で収集されるログをパーシングします。
+
+:::note
+
+**共通の注意事項**
+
+-   同じカテゴリに複数のパーサが登録されている場合、最初にマッチングされるパーサのみが適用されます。
+
+-   **WhaTapはWhaTapサービスの安定性に影響を与えるパーサを非活性化にする権限を持ちます。**
+
+:::
+
+## GROKパーサ{#grok-parser-detail}
+
+ログが不規則な形で収集される場合、GROKパーサを使用してログをパーシングできます。 GROK文法は、named regular expressionsを提供し、正規表現式をより簡単かつ便利に使用できます。 
+
+GROKパーサーパターンの登録については、次の動画ガイドを参考にしてください。
+
+{@youtube: skgg5KOFGpI}
+
+### GROKを開始する
+
+GROKは2種類の文法を提供します。
+
+1.  `%{SYNTAX:SEMANTIC}`: GROKライブラリーが提供する文法です。 **named regular expressions**を活用してタグを抽出することができます。 活用例は [次へ](#syntax-semantic-usage)を参照してください。
+
+    -   **SYNTAX**: GROKが提供するnamed regular expressionsを指定します。
+
+    -   **SEMANTIC**:  マッチングされる値に付ける名前を指定します。
+
+    :::note
+
+    **named regular expressions**
+
+    GROKが提供する文法です。 複雑な正規表現式に名前を付けて使用できるよう、GROKが提供する機能です。
+
+    | name     | regular expression                                     |
+    | -------- | ------------------------------------------------------ |
+    | WORD     | `\b\w+\b`                                              |
+    | SPACE    | `\s*`                                                  |
+    | NOTSPACE | `\S+`                                                  |
+    | UUID     | `[A-Fa-f0-9]{8}-(?:[A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}` |
+
+    :::
+
+2.  `(?<SEMANTIC>REGX)`: 正規表現式の**named capturing group**文法です。 正規表現式を活用して、ユーザーの意図に合わせてタグを抽出できます。 活用例は[次へ](#semantic-regx)を参照してください。
+
+    -   **SEMANTIC**: マッチングされる値に付ける名前を指定します。
+
+    -   **REGX**: マッチングに使用する正規表現式を入力します。
+
+    :::note
+
+    **named capturing group**
+
+    正規表現式で提供する文法です。 
+
+    -   capturing group: 複数のトークンを1つにまとめて1つのマッチング単位で使用する機能を意味します。
+
+    -   named capturing group: capturing groupに名前を付けたものです。  
+
+    -   文字列マッチングの例を見てみましょう。 dev@whatap.io
+
+        > -   例1`(\w+)@(\w+\.\w+)`
+        > -   例2 Eメールすべてのマッチング及びusernameとdomain追加マッチングすると`(?<username>\w+)@(?<domain>\w+\.\w+)`
+
+    :::
+
+#### `%{SYNTAX:SEMANTIC}`活用例{#syntax-semantic-usage}
+
+次は`%{SYNTAX:SEMANTIC}`文法を活用する例です。
+
+```text title='Sample log'
+[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms
+```
+
+サンプルログを見て、各単語が意味する内容を推測できます。 各部分をsemanticな単語に置き換えると、次のように表現できます。 
+
+```text title='semantic replace'
+[date][logLevel][caller] projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuildElapsed
+```
+
+semanticな単語すべて、正規表現式に置き換えることができます。 GROKパーサを使用すると、事前に定義されたnamed regular expressionsを活用できます。 ここで使われた`TIMESTAMP_ISO8601`,`LOGLEVEL`,`DATA`は、GROKが提供するnamed regular expressionsです。 これらの値は、それぞれ次の正規表現式に置き換えられてマッチングされます。 
+
+-   name: `TIMESTAMP_ISO8601` 
+
+    -   regular expression: `%{YEAR}-%{MONTHNUM}-%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}(?::?%{SECOND})?%{ISO8601_TIMEZONE}?`
+
+-   name: `LOGLEVEL`
+
+    -   regular expression: `LOGLEVEL ([Aa]lert|ALERT|[Tt]race|TRACE|[Dd]ebug|DEBUG|[Nn]otice|NOTICE|[Ii]nfo|INFO|[Ww]arn?(?:ing)?|WARN?(?:ING)?|[Ee]rr?(?:or)?|ERR?(?:OR)?|[Cc]rit?(?:ical)?|CRIT?(?:ICAL)?|[Ff]atal|FATAL|[Ss]evere|SEVERE|EMERG(?:ENCY)?|[Ee]merg(?:ency)?)`
+
+-   name: `DATA`
+
+    -   regular expression: `.*?`
+
+```text title='GROK parsing pattern'
+[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]
+```
+
+上記の文法でパーシングすると、次のようにタグを抽出できます。 こうしてGROKの`%{SYNTAX:SEMANTIC}`文法は複雑で長い正規表現式を簡単かつ簡潔に適用できるように役立つ役割を果たします。
+
+```text title='Tag extraction'
+- date : 2023-08-08 02:02:30,101
+- caller : i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)
+- level : LEVEL
+```
+
+#### `(?<SEMANTIC>REGX)`活用例{#semantic-regx}
+
+named regular expressionsでマッチングされない部分は`(?<SEMANTIC>REGX)`パターンを使ってパーシングできます。 上記の[サンプルログ](#syntax-semantic-usage)から`%{SYNTAX:SEMANTIC}`文法だけでパーシングされない領域は次の通りです。
+
+```text title='Unparsed area'
+8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms
+```
+
+該当ログの各部分をsemanticな単語に置き換えると、次のように表現できます。
+
+```text title='semantic replace'
+projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuildElapsed
+```
+
+このように不規則な形の文字列は、次のような`(?<SEMANTIC>REGX)`文法を使ってパーシングできます。 
+
+##### サンプルログパーシングキーワード別にマッチングされる正規表現式
+
+| パーシングキーワード            | `(?<SEMANTIC>REGX)`                                     |
+| --------------------- | ------------------------------------------------------- |
+| 8                     | `(?<projectCode>\d)`                                    |
+| VirtualLog            | `(?<logCategory>\w*)`                                   |
+| 20230808 02:01:00.000 | `(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})` |
+| area=4                | `area=(?<areaEnum>\d)`                                  |
+| city=5                | `city=(?<cityEnum>\d)`                                  |
+| 56 ms                 | `(?<dexBuildElapsed>\d{2})ms`                           |
+
+<details>
+<summary><b>基本正規表現式文法</b></summary>
+
+| 文法               | 意味                                              | 別名             |
+| ---------------- | ----------------------------------------------- | -------------- |
+| `?`              | 0 or 1                                          | -              |
+| `+`              | 1 or more                                       | -              |
+| `*`              | 0 or more                                       | -              |
+| `a{5}`           | exactly 5                                       | -              |
+| `\w`             | word character                                  | `[a-zA-Z_0-9]` |
+| `\s`             | white space                                     | -              |
+| `.`              | any character except newline                    |                |
+| `[abc]`          | any of                                          | -              |
+| `[^abc]`         | not a,b, or c                                   | -              |
+| `[a-z]`          | character between a and z                       | -              |
+| `[1-3[7-9]]`     | union (combining two or more character classes) | -              |
+| `[1-6&&[3-9]]`   | intersection (共通集合)                             | -              |
+| `[0-9&&[^2468]]` | subtraction (差集合)                               | -              |
+| `a{2,}`          | 2 or more                                       | -              |
+| `a{1,3}`         | between 1 and 3                                 | -              |
+| `a+?`            | match as few as possible                        | -              |
+| `{2,3}?`         | match as few as possible                        | -              |
+| `(abc)`          | capturing group (複数の文字列をsingle unitで処理する)       | -              |
+| `\d`             | digit                                           | `[0-9]`        |
+| `\D`             | non-digit                                       | `[^0-9]`       |
+| `\W`             | non-word character                              | -              |
+| `\S`             | non-white space                                 | -              |
+
+</details>
+
+このようにパーシングされたキーワードをスペース(`\s`)と、特殊文字escape(`\{`, `\,`, `\}`)で接続すると、次のようにパターンを適用できます。
+
+```text title='GROK parsing pattern'
+(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms
+```
+
+上記の文法でパーシングすると、次のようにタグを抽出できます。
+
+```text title='Tag extraction'
+- projectCode : 8
+- logCategory : VirtualLog
+- dexBuildStartTime : 20230808 02:01:00.000
+- areaEnum : 4
+- cityEnum : 5 
+- dexBuildElapsed : 56
+```
+
+### GROKを適用する
+
+**_ログ設定_**>**_ログ一次パーサ設定_**
+
+1.  GROKパターンパーサを適用するには、**_ログ設定_**メニューの**_ログ1次パーサー設定_**タブに移動してください。
+
+    <ImgLang img='log-1st-parser-list.png' desc='ログパーサー一覧'/>
+
+2.  **_+追加する_**を選択した後**_パーサ_**入力欄で**_GROK_**パーサーを選択してください。
+
+    <ImgLang img='log-1st-grok.png' desc='GROKパターンパーサー'/>
+
+3.  **_カテゴリ_**および**_ログ検出条件_**、**_パターン_**を入力してください。 **_パーサ追加_**ウィンドウのコンポーネントは次の通りです。 
+
+    -   **_カテゴリ_** 
+
+        ログカテゴリを選択してください。 **_カテゴリ_**は必須で入力する必要があります。
+
+    -   **_ログ検出条件_** 
+
+        -   条件を満たすログのみパーサが適用されます。
+
+        -   **_検索キー_**と**_検索値_**を選択するか、直接入力してください。
+
+        -   **_ログ検出条件_**は、すべてのパーサーが実行される前に適用されます。 つまり、パーサの結果として追加される**_タグ_**を使用することはできません。
+
+    -   **_パターン_**
+
+        GROKパターンを指定してください。 必須入力です。
+
+4.  **_追加_**ボタンを選択してパーサーを登録してください。 
+
+:::note
+
+-   ログパーサー一覧から該当パーサの**_適用順番_**を変更したり**_活性化_**および**_修正_**、**_削除_**できます。 
+
+-   パーサを登録する前に**_シミュレーション_**を通じて登録しようとするパターンが正常であるか確認できます。 
+
+:::
+
+:::note
+
+**GROKパーサ注意事項**
+
+-   GROKパーサは`%{SYNTAX:SEMANTIC}`、`%{SYNTAX:SEMANTIC}`二つのパターンをサポートします。
+
+-   `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`を必ず入力してください。
+
+-   `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`は一つのパーサーの中でuniqueしなければなりません。
+
+-   `(?<SEMANTIC>REGX)`パターンを使用する時、`SEMANTIC`は文字(a-z, A-Z)と数字(0-9)そして、指定された特殊文字(`.`, `_`, `-`)のみが使えます。
+
+-   `SEMANTIC`は文字(a-z, A-Z)で始めなければなりません。
+
+-   `SEMANTIC`は文字(a-z, A-Z)または数字(0-9)で終わる必要があります。
+
+:::
+
+### シミュレーション{#grok-simulation}
+
+**_パーサシミュレーション_**ウィンドウから**_ログ_**と**_パターン_**を入力してパーシング結果を事前に確認することができます。
+
+> **_ログ_**例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
+> **_パターン_**例: `[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
+
+1.  **_パーサ追加_**ウィンドウで**_シミュレーション_**ボタンを選択してください。 
+
+2.  **_パーサシミュレーション_**ウィンドウから**_ログ_**と**_パターン_**を入力してください。 
+
+3.  **_ログ_**と**_パターン_**入力後**_シミュレーション_**ボタンを選択してください。 次のように**_シミュレーション結果_**を確認することができます。
+
+    <ImgLang img='log-grok-parser-simulation.png' desc='GROKパーサーシミュレーション'/>
+
+## JSONパーサ{#json-parser-detail}
+
+ログがJSONフォーマットで収集される場合、JSONパーサを使用して簡単かつ便利にパーシングできます。
+
+### JSONを適用する
+
+**_ログ設定_**>**_ログ一次パーサ設定_**
+
+1.  JSONパターンパーサを適用するには**_ログ設定_**メニューの**_ログ一次パーサ設定_**タブに移動してください。
+
+    <ImgLang img='log-1st-parser-list.png' desc='ログパーサー一覧'/>
+
+2.  **_+追加する_**を選択した後**_パーサ_**入力欄で**_JSON_**パーサを選択してください。
+
+    <ImgLang img='log-1st-json.png' desc='JSONットのパーサーパターンの登録'/>
+
+3.  **_カテゴリ_**および**_ログ検出条件_**、**_パターン_**を入力してください。 **_パーサ追加_**ウィンドウのコンポーネントは次の通りです。 
+
+    -   **_カテゴリ_**
+
+        ログカテゴリを選択してください。 **_カテゴリ_**は必須で入力する必要があります。
+
+    -   **_ログ検出条件_**
+
+        -   条件を満たすログのみパーサが適用されます。
+
+        -   **_検索キー_**と**_検索値_**を選択するか、直接入力してください。
+
+        -   **_ログ検出条件_**は、すべてのパーサーが実行される前に適用されます。 つまり、パーサの結果として追加される**_タグ_**を使用することはできません。
+
+    -   **_パターン_**
+
+        -   **_プレフィックス_**
+
+            ログからJSONフォーマットが開始する位置を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
+
+        -   **_ポストフィックス_**
+
+            ログでJSONフォーマットが終了する位置を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
+
+        -   **_無視する_**
+
+            JSONフォーマット中にタグを生成しないキーを指定します。
+
+        -   JSONパターン例
+
+            ```javascript title='Example'
+            2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
+            ```
+
+            例のログで**_プレフィックス_**と**_ポストフィックス_**を`--`に指定し**_無視する_**に`--`を指定し、`host`、`method`、`status`３つの**_タグ_**のみ生成します。
+
+4.  **_追加_**ボタンを選択してパーサーを登録してください。 
+
+:::note
+
+-   ログパーサー一覧から該当パーサの**_適用順番_**を変更したり**_活性化_**および**_修正_**、**_削除_**できます。 
+
+-   パーサを登録する前に**_シミュレーション_**を通じて登録しようとするパターンが正常であるか確認できます。 GROKパーサ登録シミュレーションプロセスと同じです。 [次の文書](#grok-simulation)を参考にしてください。
+
+:::
+
+### JSONフォーマット活用例
+
+```javascript title='Sample log'
+{"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"}
+```
+
+上記のようなサンプルログが収集された場合**_パーサ追加_**ウィンドウで**_JSON_**パーサを選択してください。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な**_タグ_**を次のように抽出することができます。
+
+```javascript title='Tag extraction'
+- host : 10.21.3.24
+- method : POST
+- status : 200
+- url : http://dev.whatap.io/yard/api/flush
+```
+
+### JSONフォーマットを一部構成する時の活用例
+
+```javascript title='일부 JSON 포맷 샘플 로그'
+2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
+```
+
+もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は**_プレフィックス_**と**_ポストフィックス_**を指定してください。 WhaTapログモニタリングは**_プレフィックス_**と**_ポストフィックス_**間の領域をJSONフォーマットで認識してからパーシングします。
+
+```javascript title='Tag extraction'
+- host : 10.21.3.24
+- method : POST
+- status : 200
+- url : http://dev.whatap.io/yard/api/flush
+```

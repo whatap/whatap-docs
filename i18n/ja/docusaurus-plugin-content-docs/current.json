@@ -1448,15 +1448,15 @@
     "description": "The label for category 로그 in sidebar mysqlSidebar"
   },
   "sidebar.npmsidebar.category.Network 모니터링": {
-    "message": "Network 모니터링",
+    "message": "Networkモニタリング",
     "description": "The label for category Network 모니터링 in sidebar npmsidebar"
   },
   "sidebar.learningSidebar.category.성능 장애 유형": {
-    "message": "성능 장애 유형",
+    "message": "パフォーマンストラブルタイプ",
     "description": "The label for category 성능 장애 유형 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.DB 연결 지연과 커넥션 풀": {
-    "message": "DB 연결 지연과 커넥션 풀",
+    "message": "DB接続遅延とコネクションプール",
     "description": "The label for the doc item DB 연결 지연과 커넥션 풀 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-dbc"
   },
   "sidebar.indexSidebar.link.Network Performance Monitoring": {
@@ -1472,11 +1472,11 @@
     "description": "The label for category Server in sidebar openapiSidebar"
   },
   "sidebar.awslogSidebar.doc.로그 파싱하기": {
-    "message": "로그 파싱하기",
+    "message": "ログパーシング",
     "description": "The label for the doc item 로그 파싱하기 in sidebar awslogSidebar, linking to the doc aws-log/log-parser"
   },
   "sidebar.logSidebar.doc.로그 파싱하기": {
-    "message": "로그 파싱하기",
+    "message": "ログパーシング",
     "description": "The label for the doc item 로그 파싱하기 in sidebar logSidebar, linking to the doc log/log-parser"
   }
 }

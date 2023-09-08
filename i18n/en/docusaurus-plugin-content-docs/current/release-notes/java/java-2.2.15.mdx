@@ -1,0 +1,45 @@
+---
+id: java-2_2_15
+title: Java Agent v2.2.15
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_14
+---
+
+August 31, 2023
+
+-   <Status>Feature</Status> kafka-clients-2.4.0 tracing
+
+    ```ini title='whatap.conf'
+    weaving=kafka-clients-2.4.0
+    ```
+
+-   <Status>Feature</Status> Added the function to ignore <code>java.sql.SQLException</code> with specific error codes.
+
+    ```ini title='whatap.conf'
+    # example
+    ignore_sql_error_code_set=22001,2009
+    ```
+
+-   <Status>Feature</Status> Added the error stack display function in transactions: The first error stack is displayed when multiple errors occur in transactions.
+
+    For more information about transaction error stacks, see the following.
+
+    <Link to='../../java/agent-transaction-error-stack' target='_blank' className='ext-link'>Transaction error stack</Link>
+
+-   <Status>Changed</Status> Upon occurrence of <code>java.sql.SQLException</code>, modified the default value for display of error codes to <code>true</code>.
+
+    ```ini title='whatap.conf'
+    # default
+    trace_sql_errorcode_enabled=true
+    ```
+
+-   <Status>Changed</Status> To prioritize the custom exception, modified the default value of <code>trace_exception_overwrite_enabled</code> to <code>true</code>.
+
+    ```ini title='whatap.conf'
+    # default
+    trace_exception_overwrite_enabled=true
+    ```
+
+-   <Status>Changed</Status> Collected SQL parameters for the <code>java.util.Date</code> type.
+
+-   <Status>Fixed</Status> Added handling for the cases where the log is <code>null</code> when using the Java agent's logsink function.

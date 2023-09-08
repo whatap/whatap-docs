@@ -151,31 +151,31 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Fixed</Status> ウィジェット「詳細を見る」からチャートのドラッグ範囲が1分以上の場合のみ表示期間を変更するよう修正
 
--   <Status>Fixed</Status> ウィジェット「詳細を見る」でデータリクエストをロード中の場合、ウィジェットの照会期間が変更できないように照会ボタンを非活性化
+-   <Status>Fixed</Status> ウィジェットの「詳細を見る」からデータリクエストをロード中の場合、ウィジェットの検索期間が変更できないように検索ボタンを無効にします。
 
--   <Status>Fixed</Status> ウィジェットで時間変更時にエージェントを全体選択するバグを修正
+-   <Status>Fixed</Status> ウィジェットの時間変更時にエージェントがすべて選択されてしまう不具合を修正
 
--   <Status>Fixed</Status> <UI>アプリケーションダッシュボード</UI>から <UI>メトリクスチャート</UI> メニューへの移動時にエージェントを重複選択するバグを修正
+-   <Status>Fixed</Status> <UI>アプリケーションダッシュボード</UI>から <UI>メトリクスチャート</UI> のメニューへの移動時にエージェントが重複選択する不具合を修正
 
 #### アラート通知
 
--   <Status>Feature</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI> メニューで実験室の <UI>通知メッセージ設定</UI> メニュー移動ができるようボタンを追加
+-   <Status>Feature</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI> メニューからラボの <UI>通知メッセージ設定</UI> メニューを移動できるようボタンを追加
 
--   <Status>Feature</Status> <UI>イベント設定</UI> > <UI>ヒートマップパターン</UI> メニューの各項目の下段に<UI>イベント受信タグ</UI>を追加できる機能を追加
+-   <Status>Feature</Status> <UI>イベント設定</UI> > <UI>ヒートマップパターン</UI> メニューから各項目の下に<UI>イベント受信タグ</UI>を追加する機能を追加
 
--   <Status>Change</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI> タブで通知一覧をタイトルを基準にソートするように変更
+-   <Status>Change</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI> タブで通知一覧をタイトルを並べ替えるように変更
 
--   <Status>Fixed</Status> プロジェクト修正権限のないユーザーが <UI>イベント設定</UI> メニューで通知を修正できないバグを修正
+-   <Status>Fixed</Status> プロジェクト修正権限のないユーザーが <UI>イベント設定</UI> メニューの通知を修正できない不具合を修正
 
--   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>複合メトリクス</UI> > <UI>イベント追加</UI> 機能でタイトルとメッセージを入力しないと保存できないように修正
+-   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>複合メトリクス</UI> > <UI>イベント追加</UI> 機能でタイトルとメッセージが入力されないと保存されないように修正
 
--   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>複合メトリクス</UI> > <UI>イベント追加</UI> > <UI>チャートで生成する</UI> > <UI>イベント照会</UI> > <UI>テキスト</UI> モードでウィジェットのタイプをチャートまたはテーブルに変更するとローディングが続くバグを修正
+-   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>統合メトリクス</UI> > <UI>イベント追加</UI> > <UI>チャートを生成する</UI> > <UI>イベントの表示</UI> > <UI>テキスト</UI> モードでウィジェットのタイプをチャートまたはテーブルに変更すると読み込みが継続される不具合を修正
 
--   <Status>Fixed</Status> <UI>イベント設定</UI> メニューの <UI>イベント追加</UI> ウィンドウで <UI>プロジェクトイベント受信設定メニュー</UI> または <UI>プロジェクトイベント受信設定メニューのショートカット</UI> ボタンをクリックするとURLパスがアプリケーションタイプ（<code>apm</code>）に変更されるバグを修正
+-   <Status>Fixed</Status> <UI>イベント設定</UI> メニューから <UI>イベント追加</UI> ウィンドウで <UI>プロジェクトイベントの受信設定メニュー</UI> または <UI>プロジェクトイベントの受信設定メニューのショートカット</UI> ボタンをクリックするとURLパスがアプリケーションタイプ(<code>apm</code>)に変更される不具合を修正
 
--   <Status>Fixed</Status> <UI>イベント受信設定</UI> > <UI>ユーザー別イベント受信設定</UI>で受信時間選択オプションの <img src='/img/ico-close.svg' alt='닫기 아이콘'/> ボタンをクリックすると、有効ではない時間値として保存されるバグを修正および <img src='/img/ico-close.svg' alt='닫기 아이콘'/> ボタンを削除
+-   <Status>Fixed</Status> <UI>イベント受信設定</UI> > <UI>ユーザーごとのイベント受信設定</UI>で受信時間選択オプションの <img src='/img/ico-close.svg' alt='닫기 아이콘'/> ボタンをクリックすると無効な時間値として保存される不具合を修正および <img src='/img/ico-close.svg' alt='닫기 아이콘'/> ボタンを削除
 
--   <Status>Fixed</Status> <UI>イベント記録</UI> メニューに初めて進入する場合、設定されたフィルターによってデータがテーブル一覧に反映されないバグを修正
+-   <Status>Fixed</Status> <UI>イベント履歴</UI> メニューを初めて起動する場合、設定されたフィルターによってデータがテーブル一覧に反映されない不具合を修正
 
 #### ログ
 
@@ -183,61 +183,62 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Feature</Status> <UI>設定</UI> メニューの <UI>ログ構文解析設定</UI>で <UI>4xx、5xxステータスコードの構文解析</UI>、<UI>ステータスコード成功率の構文解析</UI> 追加
 
--   <Status>Feature</Status> <UI>設定</UI> メニューの <UI>ログモニタリングデータ設定</UI> > <UI>カテゴリ別ログデータ保持期間</UI> 設定を追加
+-   <Status>Feature</Status> <UI>設定</UI> メニューから <UI>ログモニタリングデータ設定</UI> > <UI>のカテゴリ別のログデータ保持期間</UI> 設定を追加
 
 -   <Status>Fixed</Status> <UI>ライブTail</UI> メニューでコンテンツ表示機能の不具合を修正
 
 -   <Status>Fixed</Status> <UI>ライブTail</UI> メニューでコンテンツフィルタリング(ハイライト) 機能の不具合を修正
 
--   <Status>Fixed</Status> <UI>ライブTail</UI> メニューで3秒周期のTailデータ呼び出しが遅延する現象を修正
+-   <Status>Fixed</Status> <UI>ライブTail</UI> メニューから3秒サイクルのTailデータ呼び出し遅延を修正
 
 #### ユーザー行為
 
-<Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>管理</UI> > <UI>ユーザー行為</UI>メニューでテーブルのテキストがテーブル領域外にはみ出す現象を修正
+<Status>Fixed</Status> <UI>サイトマップ</UI> > <UI>管理</UI> > <UI>をユーザー行為</UI>のメニューからテーブルのテキストがテーブル領域外にはみ出す不具合
+を修正
 
 #### 統計/レポート
 
-<Status>Fixed</Status> <UI>レポート</UI> メニューでレポートメールを送信する予約時のメールアドレスの有効性チェックの追加 - 漢字、絵文字を除く特殊記号はピリオド（.）、ハイフン（-）、アンダーライン（_）のみを許可するように修正
+<Status>Fixed</Status> <UI>レポート</UI> メニューからレポートをメール送信する予約時のメールアドレスの有効性チェックの追加 - 漢字、絵文字を除く特殊記号はピリオド(.)、ハイフン(-)、アンダーライン(_)のみを許可するように修正
 
 #### 管理
 
--   <UI>メンテナンス計画</UI> メニューで次の機能を追加・修正します。
+-   <UI>メンテナンス計画</UI> メニューから次の機能を追加または修正します。
 
     -   <Status>Feature</Status> メンテナンス計画のお知らせを画面上部に表示する機能を追加
 
-    -   <Status>Change</Status> メンテナンス計画UIの改善
+    -   <Status>Change</Status> メンテナンス計画とUIの修正
 
         -   繰り返しオプションUIテキストの変更：<UI>日間</UI>/<UI>週間</UI>/<UI>月間</UI>/<UI>年間</UI> → <UI>毎日</UI>/<UI>毎週</UI>/<UI>毎月</UI>/<UI>毎年</UI>
         -   メンテナンス計画 テーブルカラムの順序変更
-        -   メンテナンス計画の追加・修正モーダルUIの改善
-        -   メンテナンス計画を追加する時に、<UI>一度だけ</UI>基本選択するように修正
-        -   メンテナンス計画の案内メッセージ及び位置を修正
+        -   メンテナンス計画の追加 / 修正モーダルUIの改善
+        -   メンテナンス計画を追加する場合、<UI>一度だけ</UI>基本選択するように修正
+        -   メンテナンス計画の案内メッセージ及び場所を修正
 
     -   <Status>Fixed</Status> サーバー製品メンテナンス計画の削除できない問題を修正
 
--   <Status>Change</Status> <b>インテグレーション·アイテム</b> メニューの削除、その機能を <UI>管理</UI> > <UI>エージェントインストール</UI> メニューで提供
+-   <Status>Change</Status> <b>インテグレーションアイテム</b> メニューを削除し、機能を <UI>管理</UI> > <UI>するエージェントのインストール</UI> メニューで提供
 
--   <Status>Change</Status> アイテムがECSの場合 <UI>管理</UI> > <UI>エージェントインストール</UI> メニューで インストール案内 ページの下部に固定されていた <UI>モニタリングサービスの活性化</UI> ボタンの位置をインストール過程中に移動
+-   <Status>Change</Status>] 項目が [ECS] の場合は、[<UI>インストール</UI> ガイド] ページの下にある [管理><UI>エージェントのインストール</UI>] メニューの下にある [<UI>監視サービスのアクティブ化</UI>] ボタンの場所をインストールプロセス内に移動します。
 
 -   <Status>Change</Status> 画面上部のメンテナンス計画ガイダンスのテキストのスタイルの変更及びボタン位置を修正
 
 #### エージェント/サーバー設定
 
--   <Status>Feature</Status> 次のメニューパスのエージェント一覧で非活性化されていたエージェントを削除できるアイコンボタンを追加
+-   <Status>Feature</Status> 次のメニューパスのエージェント一覧から無効なエージェントを削除するアイコンボタンを追加
 
     -   アプリケーション、クラスタープロジェクト：**_管理_** > **_エージェント設定_**
     -   サーバープロジェクト：**_サーバー設定_** > **_サーバー設定_**
 
--   <Status>Feature</Status> 次のメニュー経路で <UI>非活性化されたすべてのエージェントを削除</UI> ボタンを追加
+-   <Status>Feature</Status> 次のメニューパスより <UI>無効なすべてのエージェントを削除</UI> ボタンを追加
 
     -   アプリケーション、クラスタープロジェクト：**_管理_** > **_エージェント設定_**
     -   サーバープロジェクト：**_サーバー設定_** > **_サーバー設定_**
 
--   <Status>Feature</Status> エージェント別名の編集機能を追加
+-   <Status>Feature</Status> エージェントのエイリアス編集機能を追加
 
--   <Status>Change</Status> クラスタープロジェクトでエージェントの一覧をマスター、ノード、アプリケーション単位に区分
+-   <Status>Change</Status> クラスタープロジェクトでエージェントの一覧をマスター、ノード、アプリケーション単位に分割します。
 
--   <Status>Fixed</Status> 一部のプロジェクトで検索フィルターが作動しない問題を修正
+-   <Status>Fixed</Status> 一部のプロジェクトで検索フィルターが機能しない不具合を修正
 
 -   <Status>Fixed</Status> エージェント一覧が固定された状態で既存の選択したエージェントがクリックされないためエージェント一覧を折りたたむことができない問題を修正
 
@@ -288,33 +289,33 @@ import UI from '@site/src/components/UItext';
 
 #### 分析
 
-<Status>Fixed</Status> <UI>キューブ</UI> メニューからエージェント選択フィルターがチャートに適用されないバグを修正
+<Status>Fixed</Status> <UI>キューブ</UI> メニューからエージェント選択フィルターがチャートに適用されない不具合を修正
 
 #### サーバー設定
 
-<Status>Fixed</Status> <UI>リモートファイルビューアー</UI> メニューで画面左側のメニュー名と一致するように画面上のメニュー名を修正
+<Status>Fixed</Status> <UI>リモートファイルビューア</UI> メニューから画面の左側のメニュー名と一致するように画面の上のメニュー名を修正
 
 ### `Database`
 
 #### ダッシュボード
 
--   <Status>Feature</Status> PostgreSQL、MySQL製品の <UI>インスタンス一覧</UI> メニューの <UI>M</UI>（Master）、 <UI>S</UI>（Slave）、 <UI>C</UI>（Cluster）の表示を <UI>サーバー名</UI> カラムに追加
+-   <Status>Feature</Status> PostgreSQL、MySQL製品の <UI>インスタンス一覧</UI> メニューから <UI>M</UI>(Master)、 <UI>S</UI>(Slave)、 <UI>C</UI>(Cluster) の表示を <UI>サーバー名</UI> のカラムに追加
 
 #### 分析
 
 -   <Status>Feature</Status> <UI>データベースパラメータ</UI> メニューで <UI>基準日</UI>、<UI>比較日</UI> の選択オプションを追加
 
--   <Status>Change</Status> <UI>ロックツリー</UI> メニューで <UI>日付</UI> 選択オプションを左に移動
+-   <Status>Change</Status> <UI>ロックツリー</UI> メニューから <UI>日付</UI> 選択オプションを左に移動
 
--   <Status>Change</Status> <UI>デッドロック</UI> メニューで <UI>時間</UI> 選択オプションのUI変更
+-   <Status>Change</Status> <UI>デッドロック</UI> メニューから <UI>時間</UI> 選択オプションのUI変更
 
 #### 統計/レポート
 
--   <Status>Feature</Status> <UI>テーブルサイズ増減</UI> メニューで <UI>基準日</UI>、<UI>比較日</UI> 選択オプションを追加
+-   <Status>Feature</Status> <UI>テーブルサイズの増減</UI> メニューから <UI>基準日</UI>、<UI>比較日</UI> 選択オプションを追加
 
--   <Status>Change</Status> <UI>テーブルスペースサイズ</UI>、<UI>SGAサイズ</UI>、<UI>データベースサイズ</UI> メニューで <UI>時間</UI> 選択オプションのUI変更
+-   <Status>Change</Status> <UI>テーブルスペースサイズ</UI>、<UI>SGAサイズ</UI>、<UI>データベースサイズ</UI> メニューから <UI>時間</UI> 選択オプションのUI変更
 
--   <Status>Change</Status> <UI>テーブルサイズ増減</UI> メニューで詳細情報のデータ単位（MiB）表示を追加、テーブルヘッダークリック時のソート機能を追加
+-   <Status>Change</Status> <UI>テーブルサイズの増減</UI> メニューから詳細情報のデータ単位(MiB) 表示を追加し、テーブルヘッダーのクリック時のソート機能を追加
 
 ### `Container`
 
@@ -324,11 +325,11 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Feature</Status> JobタイプのPodに追加ログ情報を提供するため、関連イベントにCronジョブを追加
 
--   <Status>Feature</Status> 詳細を見る画面で <code>ContainerId</code> タグにコンテナリストに移動するリンク（<UI>コンテナ性能情報</UI>）を追加
+-   <Status>Feature</Status> 詳細を見る画面で <code>ContainerId</code> タグにコンテナリストへのリンク(<UI>コンテナ性能情報</UI>) を追加
 
 -   <Status>Feature</Status> PodStatusがPending状態の時に <UI>イベント</UI> タブを優先して表示するように機能を追加
 
--   <Status>Change</Status> 1 つのPod内に1つ以上のコンテナが存在する場合、Podごとのツールチップに追加のコンテナ数を表示するよう修正
+-   <Status>Change</Status> Pod内に複数のコンテナが存在する場合、Podごとのツールチップに追加のコンテナ数を表示するよう修正
 
 -   <Status>Change</Status> 1つのPod内に1つ以上のコンテナが存在する場合、右側の要約画面にPodに属するコンテナ一覧を表示するよう修正
 
@@ -336,29 +337,29 @@ import UI from '@site/src/components/UItext';
 
 -   <Status>Fixed</Status> <UI>Critical</UI> 入力ウインドウと <UI>Warning</UI> 入力ウィンドウに同じ値を入力すると、入力ウィンドウが増加するバグを修正
 
--   <Status>Fixed</Status> <UI>ログ</UI> タブに入るとコンテンツが点滅する現象を修正
+-   <Status>Fixed</Status> <UI>ログ</UI> タブに入るとコンテンツがちらつく不具合をを修正
 
--   <Status>Fixed</Status> チャートメトリクス（<UI>ConState (state)</UI>）の一覧で一部のメトリクスが「undefined」と表示されるバグを修正
+-   <Status>Fixed</Status> チャートメトリクス(<UI>ConState (state)</UI>) の一覧で一部のメトリクスが「undefined」と表示されるバグを修正
 
--   <Status>Fixed</Status> 画面下の情報セクションで <img src='/img/ico-info.svg' alt='정보 아이콘'/> アイコンにマウスオーバー時に現れるツールチップテキストが表示されないバグを修正
+-   <Status>Fixed</Status> 画面の下の情報セクションで <img src='/img/ico-info.svg' alt='정보 아이콘'/> アイコンにカーソルを合わせた時に表示されるツールチップテキストが表示されない不具合を修正
 
--   <Status>Fixed</Status> <UI>フィルター</UI> 機能の利用時に <UI>除外</UI> または <UI>含む</UI> オプションを選択した後、キーワード入力フィールドで選択できる値と選択した値の名前に相違があるバグを修正
+-   <Status>Fixed</Status> <UI>フィルター</UI> 機能の使用時に <UI>除外</UI> または <UI>含む</UI> オプションを選択した後、キーワード入力フィールドで選択できる値と選択した値の表示が異なる不具合を修正
 
 #### リソース
 
--   <Status>Feature</Status> <UI>コンテナ一覧</UI> メニューでコンテナ選択時に表示される <UI>Memory</UI> タブに <UI>Container Memory Total RSS By Limit (%)</UI> メトリクスを追加
+-   <Status>Feature</Status> <UI>コンテナ一覧</UI> メニューからコンテナ選択時に表示される <UI>Memory</UI> タブに <UI>Container Memory Total RSS By Limit (%)</UI> メトリクスを追加
 
--   <Status>Fixed</Status> <UI>ノード詳細</UI> メニューパスで「リソース情報の詳細を見る」をクリックする時に、照会に使用された時間値と詳細を見るウィンドウの時間が一致しないバグを修正
+-   <Status>Fixed</Status> <UI>ノード詳細</UI> メニューパスで「リソース情報の詳細を見る」をクリック時に、参照に使用された時間値と詳細を見るウィンドウの時間が一致しないバグを修正
 
--   <Status>Fixed</Status> <UI>コンテナ一覧</UI> メニューでコンテナ一覧の個数が1200個の場合のフリーズ現象を修正
+-   <Status>Fixed</Status> <UI>コンテナ一覧</UI> メニューからコンテナ一覧の個数が1200個の場合のフリーズ現象を修正
 
 #### 分析
 
-<Status>Change</Status> <UI>メトリクスチャート</UI> メニューで一定サイズ以上のタグ一覧の照会時にレスポンスが来ない問題を修正：タグ一覧の照会APIを変更 <code>search</code> → <code>tags</code>
+<Status>Change</Status> <UI>メトリクスチャート</UI> メニューから一定サイズ以上のタグ一覧の参照時にレスポンスがない問題を修正：タグ一覧の参照APIを変更 <code>search</code> → <code>tags</code>
 
 #### アプリケーション
 
--   <Status>Change</Status> <UI>ヒートマップ</UI> メニューで <UI>コンテナID</UI>, <UI>Pod名</UI> カラムを追加できるように修正
+-   <Status>Change</Status> <UI>ヒートマップ</UI> メニューから <UI>コンテナID</UI>, <UI>Pod名</UI> カラムを追加できるように修正
 
 -   <Status>Fixed</Status> Kubernetes製品群プロジェクトで下記メニューの照会ボタンの異常動作を修正
 
@@ -367,21 +368,21 @@ import UI from '@site/src/components/UItext';
 
 #### 管理
 
-<Status>Fixed</Status> <UI>エージェントインストール</UI> > <UI>Application Agent</UI> メニューでJavaエージェントインストールのjarファイル名を変更（<em>whatap.agent-X.Y.Z.jar</em> → <em>whatap.agent.kube.jar</em>）
+<Status>Fixed</Status> <UI>エージェントインストール</UI> > <UI>Application Agent</UI> メニューからJavaエージェントのインストールのjarファイル名を変更(<em>whatap.agent-X.Y.Z.jar</em> → <em>whatap.agent.kube.jar</em>)
 
 ### `AWS` / `AZURE`
 
 #### プロジェクト生成
 
--   <Status>Change</Status> Azureプロジェクト作成時のインストール案内メッセージを追加
+-   <Status>Change</Status> Azureプロジェクト作成時のインストール手順を追加
 
--   <Status>Change</Status> Amazon CloudWatch プロジェクト作成時に <UI>認証有効期間（時）</UI>を必須入力するように変更
+-   <Status>Change</Status> Amazon CloudWatch プロジェクト作成時に <UI>認証の有効期(時)</UI>を必須で入力するように変更
 
 ### `URL`
 
 -   <Status>Fixed</Status> <UI>URLを追加する</UI> 機能の利用時に <UI>ガイドショートカット</UI>のリンクエラーを修正
 
--   <Status>Fixed</Status> <UI>URL一覧</UI>でチャートをクリックすると表示されるウィンドウでリアルタイム照会（<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>）ボタンを削除
+-   <Status>Fixed</Status> <UI>URL一覧</UI>のチャートをクリックすると表示されるウィンドウでリアルタイム参照(<img src='/img/ico-play-time.svg' alt='실시간 조회 아이콘'/>) ボタンを削除
 
 -   <Status>Fixed</Status> <UI>URL一覧</UI>でチャートをクリックすると表示されるウィンドウで「1分」単位の照会時にチャートに表示されないバグを修正
 

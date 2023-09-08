@@ -269,3 +269,55 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 | productType     |      <span class='api'>string</span>     | プロジェクトに使用された製品                                                                                       |
 | platform        |      <span class='api'>string</span>     | プロジェクトに使用された製品のプラットフォーム                                                                              |
 | gatewayName     |      <span class='api'>string</span>     | データサーバーリージョン                                                                                         |
+
+## oid一覧呼び出し
+
+ユーザーが表示したい時間帯を有効になっているエージェント情報を確認できます。
+
+<span class='apitype'>POST</span> https://api.whatap.io/open/api/v2/agent/list
+
+```bash title='request'
+curl --location 'https://api.whatap.io/open/api/v2/agent/list' -H 'x-whatap-token: {{PROJECT API TOKEN}}
+' -H 'x-whatap-pcode: {{projectCode}}' -d '{"stime":1690850183000,"etime":1693321200000}'
+```
+
+```json title='response'
+{
+    "stime": 1690850183000,
+    "etime": 1693321200000,
+    "timestamp": 1693388196965,
+    "data": [
+        {
+            "oid": 757639646,
+            "oname": "DBX-0-107-3306",
+            "alias": "",
+            "initial": "",
+            "otype": "database",
+            "subtype": "0",
+            "active": false,
+            "okind": 0,
+            "okindName": "",
+            "onode": 0,
+            "onodeName": "",
+            "ip": "",
+            "agent.version": "",
+            "cpuCores": 0
+        },
+      ...
+    ]
+}
+```
+
+:::note
+
+-   この文書で作成されたサンプルコードのうち、`stime`、`etime`、`oid`などのパラメータ値は、ユーザ環境に合わせて変更して利用してください。 パラメータ値は、様々なフォーマットでリクエストできます。
+
+    -   1693475430087 (unix timestamp)
+    -   `yyyyMMddHHmmss`
+    -   `yyyyMMddHHmm`
+    -   `MMddHHmmss`
+    -   `MMddHHmm`
+
+-   照会時間(`stime`、`etime`)は一日に制限し、ms(millisecond)単位です。
+
+:::

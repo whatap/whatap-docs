@@ -25,7 +25,7 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 ## WhaTapデータベースエージェントのダウンロード
 
-{@include: ../common-items/_db-install-agent-steps.mdx}  
+{@include: ../common-items/_db-install-agent-steps.mdx} 
 
 3.  抽出したフォルダに入って_whatap.conf_ファイルを確認してくださ_whatap.conf_ プロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
@@ -40,7 +40,7 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
     :::info
 
-    **MySQLサーバとエージェントがlocalhostにインストールされる場合(default 3306 port)**
+    **MySQLサーバとエージェントが localhostにインストールする場合(default 3306 port)**
 
     ```ini title='whatap.conf'
     dbms=mysql
@@ -61,14 +61,14 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 :::tip
 
--   JDBCドライバー8.xバージョン以降を利用する場合は、接続URLに`serverTimezone`設定が必要な場合は、次のようにオプションを設定してください。
+-   JDBCドライバー8.xバージョン以降を使用する場合は、接続URLに`serverTimezone`設定が必要な場合は、次のようにオプションを設定してください。
 
     ```ini title='whatap.conf'
     connect_option=?serverTimezone={SERVER_TIMEZONE}
     # ex) connect_option=?serverTimezone=UTC
     ```
 
--   SSLを利用する場合は、次のようにオプションを設定してください。
+-   SSLを使用する場合は、次のようにオプションを設定してください。
 
     ```ini title='whatap.conf'
     connect_option=?useSSL=true&verifyServerCertificate=false
@@ -87,14 +87,14 @@ WhaTapデータベースモニタリングサービスを使用するための�
 <!-- MySQL-->
 
 ```bash showLineNumbers
-create user whatap identified by 'DB_PASSWORD';#希望するpasswordを入力してください。
+create user whatap identified by 'DB_PASSWORD';#必要なpasswordを入力してください。
 grant process on *.* to whatap;
 grant select on performance_schema.*to whatap;
 grant show databases on *.* to whatap;
 
 #テーブル情報を収集する場合
 grant select on *.* to whatap;
-#特定のDBのテーブルだけをモニタリングする場合
+#特定のDBのテーブルのみモニタリングする場合
 #grant select on {DB_NAME}.* to whatap;
 
 #replicationを使用する場合
@@ -109,7 +109,7 @@ grant super on *.* to whatap;
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx}
+{@include: ../common-items/_db-create-db-user-file-body.mdx} 
 
 <!--## 에이전트 실행-->
 

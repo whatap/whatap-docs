@@ -5,6 +5,8 @@ description: We provide learning materials for quick understanding and efficient
 tags:
   - Monitoring
   - Learning
+toc_max_heading_level: 2
+displayed_sidebar: learningSidebar
 ---
 
 :::note
@@ -17,9 +19,9 @@ We provide learning materials for quick understanding and efficient use of the W
 
 ![](/img/learning-cover.png)
 
-### Application Monitoring
+## Application Monitoring
 
-#### [Exploring the Application Dashboard](best-practice-guides/about-apm-dashboard)
+### [Exploring the Application Dashboard](best-practice-guides/about-apm-dashboard)
 
 The analysis method for the chart-type widget in WhaTap **_Application Dashboard_** is guided in the following order.
 
@@ -29,7 +31,7 @@ The analysis method for the chart-type widget in WhaTap **_Application Dashboard
 
 -   Analysis of users, services, and resources
 
-#### [Exploring Hitmap Transaction](best-practice-guides/about-apm-hitmap-class)
+### [Exploring Hitmap Transaction](best-practice-guides/about-apm-hitmap-class)
 
 Using the WhaTap **_Hitmap Transaction_** menu, the following steps are guided to determine the failure status of the service.
 
@@ -41,9 +43,9 @@ Using the WhaTap **_Hitmap Transaction_** menu, the following steps are guided t
 
 -   Analysis of transaction logs
 
-### Server Monitoring
+## Server Monitoring
 
-#### [Exploring Resource Board](best-practice-guides/about-server-dashboard)
+### [Exploring Resource Board](best-practice-guides/about-server-dashboard)
 
 The analysis method for the chart-type widget in WhaTap **_Resource Board_** is guided in the following order.
 
@@ -55,9 +57,9 @@ The analysis method for the chart-type widget in WhaTap **_Resource Board_** is 
 
 -   Early alarm and alert
 
-### Browser Monitoring
+## Browser Monitoring
 
-#### [Using Browser Monitoring](best-practice-guides/using-browser-monitoring)
+### [Using Browser Monitoring](best-practice-guides/using-browser-monitoring)
 
 It guides you how to use the WhaTap Browser Monitoring in the following order.
 
@@ -68,3 +70,15 @@ It guides you how to use the WhaTap Browser Monitoring in the following order.
 -   User access environment analysis
 
 -   Error analysis
+
+## Performance failure type{#about-issues}
+
+### [DB connection delay and connection pool](best-practice-guides/about-apm-dbc){#about-apm-dbc}
+
+From the monitoring perspective, the correlations between the DB connection delay that is a type of application performance failure, and the connection pool in the following order.
+
+-   Detecting the hitmap anomaly pattern
+
+-   Analysis on the transaction trace
+
+-   Checking the DB connection pool

@@ -18,7 +18,7 @@
 
 <Xclude product='postgresql,mysql'>
 
-![ログ検索sc](/img/log-search.png)
+<ImgLang img='log-search.png' desc='ログ検索' />
 
 </Xclude>
 
@@ -40,7 +40,7 @@
 
 {@include: ../common-items/_log-ui-log-content.mdx}
 
--   ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体contentを確認することができます。
+-   ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体Contentを確認することができます。
 
 -   ログのタグを選択すると、**_コピー_**、**_検索_**、**_除外検索_**、**_隣接ログ検索_**のドロップダウンメニューが表示されます。
 
@@ -50,13 +50,17 @@
 
 ![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。右側から、{@include: ../common-items/_log-filter-apply.mdx} 
 
+:::note
+
+**フィルター数式**
+
+入力されたフィルター値の下にある数式(expression)は、ログデータを表示するときに適用されるフィルター数式のプレビューです。 
+
+:::
+
 #### フィルター修正
 
 {@include: ../common-items/_log-filter-modify.mdx}
-
-#### フィルター数式
-
-{@include: ../common-items/_log-filter-expression.mdx}
 
 #### 検索キー(Search Key)
 

@@ -1,7 +1,7 @@
 ---
 id: set-event-format
 title: イベント受信フォーマット
-description: サーバーモニタリンが提供する警告通知のイベント受信のフォーマットについて案内します。
+description: サーバーモニタリンが提供するアラート通知からイベント受信のフォーマットについて説明します。
 tags:
   - アラート通知
   - イベント
@@ -53,37 +53,37 @@ Stateful : true
 
 次は、イベントメッセージのコンポーネントです。
 
-| English                                           | Japanese                                           | Optional | 説明                                                                  |
-| ------------------------------------------------- | -------------------------------------------------- | -------- | ------------------------------------------------------------------- |
-| Project Name                                      | プロジェクト名                                            | `false`  | -                                                                   |
-| Project Code                                      | プロジェクトCode                                         | `false`  | -                                                                   |
-| Server Name                                       | エージェント名                                            | `true`   | oname                                                               |
-| Event Message                                     | イベントメッセージ                                          | `false`  | -                                                                   |
-| Event ON Time                                     | イベント発生時間                                           | `false`  | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。                          |
-| Event OFF Time                                    | イベント解除時間                                           | `true`   | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。                          |
-| Elapsed Time                                      | イベント発生持続時間                                         | `true`   | -                                                                   |
-| Alert Type                                        | イベントタイプ                                            | `true`   | -                                                                   |
-| Policy Name                                       | 通知ポリシー名                                            | `true`   | -                                                                   |
-| Metric Name                                       | メトリクス名                                             | `true`   | イベント条件判断で使用するメトリクスの名前です。                                            |
-| Metric Value                                      | メトリック値                                             | `true`   | メトリック値がメトリックしきい値を超えると、イベントが発生する条件が満たされている場合です。                      |
-| Metric Threshold                                  | メトリックしきい値                                          | `true`   | メトリック値がメトリックしきい値を超えると、イベントが発生する条件が満たされている場合です。                      |
-| Event Rule                                        | イベント発生条件                                           | `true`   | -                                                                   |
-| Alert Type                                        | イベントタイプ                                            | `true`   | イベントの種類を特定するためのフィールドです。                                             |
-| Event Target Filter                               | イベント対象選択                                           | `true`   | （メトリクス通知）特定の対象から収集されたメトリクスに対してイベント条件を確認します。                         |
-| 状態ベースのアラート通知                                      | 解決されたイベント通知                                        | `true`   | 解決されたイベント通知機能を使用している場合は`true`、使用していない場合は`false`                     |
-| Repeat Count                                      | イベントの繰り返し回数                                        | `true`   | （メトリクス通知）イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。               |
-| Repeat Duration                                   | イベント繰り返し時間                                         | `true`   | （メトリクス通知）イベント条件がイベント反復時間のうちイベント反復回数を満足すると、イベントが発生します。解決されたイベント通知です。 |
-| IPアドレス                                            | IPアドレス                                             | `true`   | -                                                                   |
-| Log Content                                       | Log Content                                        | `true`   | -                                                                   |
-| Log Source                                        | Log Source                                         | `true`   | -                                                                   |
-| CPU                                               | CPU                                                | `true`   | -                                                                   |
-| CPU_load1                                         | CPU_load1                                          | `true`   | -                                                                   |
-| CPU_loadPerCore                                   | CPU_load1                                          | `true`   | -                                                                   |
-| メモリ                                               | メモリ                                                | `true`   | -                                                                   |
-| Swap                                              | Swap                                               | `true`   | -                                                                   |
-| Disk Name / Used Percent / Free Size / IO Percent | Disk Name / Used Percent / Free Size / IO Percent  | `true`   | -                                                                   |
-| Traffic Name / Bps / Pps                          | Name / Bps / Pps                                   | `true`   | -                                                                   |
-| Acknowledge Message / Time / Name                 | Acknowledge Message / Time / Name                  | `true`   | -                                                                   |
+| English                                           | Japanese                                           | Optional | 説明                                                                         |
+| ------------------------------------------------- | -------------------------------------------------- | -------- | -------------------------------------------------------------------------- |
+| Project Name                                      | プロジェクト名                                            | `false`  | -                                                                          |
+| Project Code                                      | プロジェクトCode                                         | `false`  | -                                                                          |
+| Server Name                                       | エージェント名                                            | `true`   | oname                                                                      |
+| Event Message                                     | イベントメッセージ                                          | `false`  | -                                                                          |
+| Event ON Time                                     | イベント発生時間                                           | `false`  | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。                                 |
+| Event OFF Time                                    | イベント解除時間                                           | `true`   | 2022-04-13 10:40:49 +0900で+0900はGMTを意味します。                                 |
+| Elapsed Time                                      | イベント発生持続時間                                         | `true`   | -                                                                          |
+| Alert Type                                        | イベントタイプ                                            | `true`   | -                                                                          |
+| Policy Name                                       | 通知ポリシー名                                            | `true`   | -                                                                          |
+| Metric Name                                       | メトリクス名                                             | `true`   | イベント条件判断で使用するメトリクスの名前です。                                                   |
+| Metric Value                                      | メトリック値                                             | `true`   | メトリック値がメトリックしきい値を超えると、イベントが発生する条件が満たされている場合です。                             |
+| Metric Threshold                                  | メトリックしきい値                                          | `true`   | メトリック値がメトリックしきい値を超えると、イベントが発生する条件が満たされている場合です。                             |
+| Event Rule                                        | イベント発生条件                                           | `true`   | -                                                                          |
+| Alert Type                                        | イベントタイプ                                            | `true`   | イベントの種類を特定するためのフィールドです。                                                    |
+| Event Target Filter                               | イベント対象選択                                           | `true`   | (メトリクス通知) 特定の対象から収集されたメトリクスのイベント条件を確認します。                                  |
+| 状態ベースのアラート通知                                      | 解決されたイベント通知                                        | `true`   | 解決されたイベント通知機能を使用している場合は`true`、使用していない場合は`false`                            |
+| Repeat Count                                      | イベントの繰り返し回数                                        | `true`   | (メトリクス通知) イベント条件がイベント繰り返し時間のうちイベント繰り返し回数を満たされた場合にイベントが発生します。               |
+| Repeat Duration                                   | イベント繰り返し時間                                         | `true`   | (メトリクス通知) イベント条件がイベント繰り返し時間のうちイベント繰り返し回数が満たされた場合にイベントが発生します。解決されたイベント通知です。 |
+| IPアドレス                                            | IPアドレス                                             | `true`   | -                                                                          |
+| Log Content                                       | Log Content                                        | `true`   | -                                                                          |
+| Log Source                                        | Log Source                                         | `true`   | -                                                                          |
+| CPU                                               | CPU                                                | `true`   | -                                                                          |
+| CPU_load1                                         | CPU_load1                                          | `true`   | -                                                                          |
+| CPU_loadPerCore                                   | CPU_load1                                          | `true`   | -                                                                          |
+| メモリ                                               | メモリ                                                | `true`   | -                                                                          |
+| Swap                                              | Swap                                               | `true`   | -                                                                          |
+| Disk Name / Used Percent / Free Size / IO Percent | Disk Name / Used Percent / Free Size / IO Percent  | `true`   | -                                                                          |
+| Traffic Name / Bps / Pps                          | Name / Bps / Pps                                   | `true`   | -                                                                          |
+| Acknowledge Message / Time / Name                 | Acknowledge Message / Time / Name                  | `true`   | -                                                                          |
 
 ## サーバー通知タイトルとメッセージ
 
@@ -91,21 +91,21 @@ Stateful : true
 
 ### サーバー通知
 
-| Event Type      | Event Level         | Event Message                                | Event Off Message             |
-| --------------- | ------------------- | -------------------------------------------- | ----------------------------- |
-| 再起動             | Critical            | System Rebooted"                             | 対応しない                         |
-| 未受信             | Warning             | Agent No Data"                               | 対応しない                         |
-| ポート番号           | Warning             | Port ${port} is down"                        | "Port ${port} is up"          |
-| ポート番号（IPがわかる場合） | Warning             | IP ${ip} Port ${port} is down"               | "IP ${ip} Port ${port} is up" |
-| ネットワークIOPS      | Warning or Critical | NETWORK ${deviceId} pps > ${value} pps"      | -                             |
-| ネットワークBPS       | Warning or Critical | NETWORK ${deviceId} bps > ${value} ps"       | -                             |
-| ディスクI/O         | Warning or Critical | Disk ${mountPoint} IO Usage > ${value} %"    | -                             |
-| ディスク使用          | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
-| inode           | Warning or Critical | Disk ${mountPoint} inode usage > ${value} %" | -                             |
-| CPU             | Warning or Critical | CPU Used > ${value} %"                       | -                             |
-| メモリ             | Warning or Critical | Memory Used > ${value} %"                    | -                             |
-| steal           | Warning or Critical | CPU Steal > ${value} %"                      | -                             |
-| スワップ            | Warning or Critical | Swap Used > ${value} %"                      | -                             |
+| Event Type         | Event Level         | Event Message                                | Event Off Message             |
+| ------------------ | ------------------- | -------------------------------------------- | ----------------------------- |
+| 再起動                | Critical            | System Rebooted"                             | 対応しない                         |
+| 未受信                | Warning             | Agent No Data"                               | 対応しない                         |
+| ポート番号              | Warning             | Port ${port} is down"                        | "Port ${port} is up"          |
+| ポート番号(IPが分かっている場合) | Warning             | IP ${ip} Port ${port} is down"               | "IP ${ip} Port ${port} is up" |
+| ネットワークIOPS         | Warning or Critical | NETWORK ${deviceId} pps > ${value} pps"      | -                             |
+| ネットワークBPS          | Warning or Critical | NETWORK ${deviceId} bps > ${value} ps"       | -                             |
+| ディスクI/O            | Warning or Critical | Disk ${mountPoint} IO Usage > ${value} %"    | -                             |
+| ディスク使用             | Warning or Critical | Disk ${mountPoint} Used > ${value} %"        | -                             |
+| inode              | Warning or Critical | Disk ${mountPoint} inode usage > ${value} %" | -                             |
+| CPU                | Warning or Critical | CPU Used > ${value} %"                       | -                             |
+| メモリ                | Warning or Critical | Memory Used > ${value} %"                    | -                             |
+| steal              | Warning or Critical | CPU Steal > ${value} %"                      | -                             |
+| スワップ               | Warning or Critical | Swap Used > ${value} %"                      | -                             |
 
 ### プロセス通知
 

@@ -14,6 +14,276 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.109.14
+
+2023年9月5日
+
+<div class='indentTab'>
+
+### `ネットワーク`
+
+#### ダッシュボード
+
+-   <Status>Changed</Status><UI>ネットワークトポロジー</UI>メニューからプリセットが<UI>デフォルト</UI>状態の場合は、更新時に設定状態を維持するように変更
+
+-   <Status>Fixed</Status><UI>ネットワークトポロジー</UI>メニューでトポロジーに表示されるエッジのラベル値に単位も表示されるよう修正
+
+-   <Status>Fixed</Status><UI>ネットワークトポロジー</UI>メニューから一部のツールチップが、ボタンを隠れてクリックできない問題を修正
+
+-   <Status>Changed</Status><UI>ネットワーク推移(TCP)</UI>メニューの<UI>Retransmission Count</UI>、<UI>Lost Count</UI>チャートがノード間の通信基準ではなく、ノード基準で値を表示するように変更
+
+#### 分析
+
+<p><Status>Changed</Status><UI>TCPセッション</UI>/<UI>UDPセッション</UI>メニューからテーブルの幅を調整した事項が、更新時にも維持されるように変更</p>
+
+</div>
+
+## Preview 1.109.13
+
+2023年9月4日
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status>ネームスペースプロジェクトの時<UI>Out Of Memory Killedコンテナ</UI>メニューから<code>mem_working_set</code> シリーズチャートが表示されないバグを修正</p>
+
+</div>
+
+## Preview 1.109.12
+
+2023年9月4日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### トランザクション検索
+
+-   <Status>Changed</Status><UI>分析</UI>><UI>トランザクション検索</UI>メニューから<UI>原本URL</UI>カラム追加
+
+-   <Status>Changed</Status><UI>分析</UI>><UI>トランザクション検索</UI>メニューからダウンロードしたCSVデータファイルに<UI>原本URL</UI>メトリクス追加
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status><UI>コンテナマップ</UI>メニューから<UI>グループ化</UI>しない場合、チャートブロックが一部隠れる現象の修正
+
+-   <Status>Changed</Status><UI>ダッシュボード</UI>><UI>Flexボード</UI>および<UI>分析</UI>><UI>メトリクスチャート</UI>メニューからエージェントフィルターに表示されるフィルター名の修正
+
+</div>
+
+## Preview 1.109.11
+
+2023年9月1日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+<p><Status>Changed</Status><UI>トランザクション分析</UI>ウィンドウで次の内容を変更</p>
+
+-   トランザクション一覧の<UI>カラム設定</UI>にて<UI>No</UI>カラムのみを削除できないように変更
+
+-   トランザクション一覧の最低選択カラム数を5つに変更
+
+-   トランザクション一覧のフィルターから<UI>エラー</UI>オプション追加
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status><UI>ログ検索</UI>メニューから<UI>フィルター</UI>変更後に検索して<UI>フィルター</UI>すべて削除した後、再検索時に照会されない現象を修正</p>
+
+</div>
+
+## Preview 1.109.10
+
+2023年8月31日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### Flexボード
+
+<p><Status>Changed</Status>リアルタイム照会時にAPIタイムアウト(60秒)が2回連続で発生した場合、ページリロードするよう修正</p>
+
+</div>
+
+## Preview 1.109.9
+
+2023年8月31日
+
+<div class='indentTab'>
+
+### `Application`, `Container`
+
+<p><Status>Fixed</Status> <UI>日別アプリケーション状態</UI>メニュー進入時ホワイトアウトバグを修正</p>
+
+</div>
+
+## Preview 1.109.8
+
+2023年8月31日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### ダッシュボード
+
+<p><Status>Changed</Status><UI>トランザクション分析</UI>ウィンドウで一覧型トランザクション分析のURLにトランザクション選択ステータスに関する情報を追加</p>
+
+この変更は、他のユーザーに選択したトランザクション項目のURLを共有する際に役立ちます。 
+
+1.  トランザクション一覧から特定のトランザクション項目を選択し、ウェブブラウザのURLをコピーしてください。
+
+2.  ウェブブラウザで、新しいタブまたは新しいウィンドウを介してそのURLに移動してください。
+
+3.  トランザクション一覧から、該当トランザクションが選択されていることを確認できます。
+
+#### Flexボード
+
+<p><Status>Fixed</Status>コピーしたダッシュボードをお気に入りメニューから進入すると、一部のウィジェットが更新されない問題を修正</p>
+
+#### アラート通知
+
+<p><Status>Fixed</Status>言語が日本語に設定されている場合<UI>イベント設定</UI>><UI>メトリクス</UI>メニューからイベント設定追加時<b>イベント対象フィルタリング</b>項目の改行エラーの修正</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Change</Status><UI>管理</UI>><UI>エージェント設定</UI>メニューからすべてのオプション項目を一度に確認できるようにcollapsible機能を解除</p>
+
+* * *
+
+### `Container`
+
+#### ダッシュボード
+
+-   <Status>Changed</Status><UI>コンテナマップ</UI>メニューからカテゴリーを<UI>Container</UI>に設定した場合、ブロックの行の間隔を修正
+
+-   <Status>Changed</Status><UI>コンテナマップ</UI>メニューから2段階グループ化設定時に、グループ名が表示されるように修正
+
+</div>
+
+## Preview 1.109.7
+
+2023年8月30日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### 利用履歴
+
+-   <Status>Changed</Status><UI>請求及び納付内訳</UI>メニューの<UI>請求内容の詳細を見る</UI>から<UI>CPUコア</UI>の代わりに<UI>課金集計量</UI>を表示
+
+-   <Status>Fixed</Status><UI>利用内訳</UI>下位メニューから<code>Network</code>プロジェクトアイコンが正常に露出するように修正
+
+-   <Status>Fixed</Status><code>Network</code>プロジェクトの課金集計がエージェント基準で表示されるように修正
+
+-   <Status>Feature</Status>以下のメニュー経路でKRWを基準にJPY、USD為替レートに応じて金額及び為替レートアップデート日付を表示
+
+    -   **_プロジェクト有償転換_**
+
+    -   **_請求及び支払履歴_**
+
+    -   **_請求書プレビュー_**
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status><UI>ログ検索</UI>メニューからログの数字(.n)タグをクリックし、ドロップダウンメニューから次の項目を選択すると演算子が抜ける現象を修正</p>
+
+-   <UI>検索</UI>を選択するとき<code>==</code>演算子が抜ける現象を修正
+
+-   <UI>除外検索</UI>を選択するとき<code>!=</code>演算子が抜ける現象を修正
+
+* * *
+
+### `ネットワーク`
+
+<p><Status>Feature</Status>ユーザー言語設定により英語および日本語対応</p>
+
+</div>
+
+## Preview 1.109.6
+
+2023年8月29日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>利用内訳</UI>><UI>決済情報</UI>メニューで決済情報を入力する際、部署名が必須値として適用されて発生するエラーの修正</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status>フィルター適用ロジックの改善
+
+-   <Status>Fixed</Status>ネームスペースプロジェクトに対する<b>照会</b>権限がない場合<UI>リソース</UI>><UI>パフォーマンス要約</UI>メニューが表示されないバグを修正
+
+</div>
+
+## Preview 1.109.5
+
+2023年8月28日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>プロジェクト一覧<UI>からプロジェクト関連情報の一部がカットされて表示される現象の修正</p>
+
+* * *
+
+### `Container`
+
+#### 管理
+
+-   <Status>Feature</Status><UI>エージェントのインストール</UI> メニューから文書ガイド、動画チュートリアルリンクを追加
+
+-   <Status>Changed</Status><UI>エージェントのインストール</UI> メニューからyamlファイルダウンロードボタンのスタイル修正
+
+</div>
+
+## Preview 1.109.4
+
+2023年8月28日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューの<UI>TOO_SLOW_SQL</UI>テンプレートから<UI>イベント発生条件</UI>項目の重複値、未使用値の除去
+
+-   <Status>Fixed</Status>言語が英語に設定されている場合、<UI>アカウント情報管理</UI>メニューから次の事例に出力される通知メッセージの不自然なスペースを修正
+
+    -   マルチファクター認証を解除するとき
+
+    -   OTP認証キーを作成する際
+
+    -   OTP認証を取り消す際
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> <UI>分析</UI>><UI>ヒートマップ</UI>メニューからアプリケーション選択ボックスのデフォルト値を<UI>すべて選択</UI>に修正
+
+-   <Status>Feature</Status><UI>統計/レポート</UI>><UI>統計</UI>メニューの<UI>クライアントIP</UI>タブでIP一覧のうち、WhaTapIPアドレスに該当する場合<b>(Whatap)</b>表示の追加
+
+</div>
+
 ## Preview 1.109.3
 
 2023年8月25日

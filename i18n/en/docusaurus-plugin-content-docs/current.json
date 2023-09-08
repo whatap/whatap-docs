@@ -1407,10 +1407,6 @@
     "message": "Go",
     "description": "The label for link Go in sidebar indexSidebar, linking to golang/introduction"
   },
-  "sidebar.npmsidebar.category.NPM 모니터링": {
-    "message": "NPM Monitoring",
-    "description": "The label for category NPM 모니터링 in sidebar npmsidebar"
-  },
   "sidebar.npmsidebar.category.대시보드": {
     "message": "Dashboard",
     "description": "The label for category 대시보드 in sidebar npmsidebar"
@@ -1456,11 +1452,11 @@
     "description": "The label for category Network 모니터링 in sidebar npmsidebar"
   },
   "sidebar.learningSidebar.category.성능 장애 유형": {
-    "message": "성능 장애 유형",
+    "message": "Performance failure type",
     "description": "The label for category 성능 장애 유형 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.DB 연결 지연과 커넥션 풀": {
-    "message": "DB 연결 지연과 커넥션 풀",
+    "message": "DB connection delay and connection pool",
     "description": "The label for the doc item DB 연결 지연과 커넥션 풀 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-dbc"
   },
   "sidebar.indexSidebar.link.Network Performance Monitoring": {
@@ -1476,11 +1472,11 @@
     "description": "The label for category Server in sidebar openapiSidebar"
   },
   "sidebar.awslogSidebar.doc.로그 파싱하기": {
-    "message": "로그 파싱하기",
+    "message": "Parsing the logs",
     "description": "The label for the doc item 로그 파싱하기 in sidebar awslogSidebar, linking to the doc aws-log/log-parser"
   },
   "sidebar.logSidebar.doc.로그 파싱하기": {
-    "message": "로그 파싱하기",
+    "message": "Parsing the logs",
     "description": "The label for the doc item 로그 파싱하기 in sidebar logSidebar, linking to the doc log/log-parser"
   }
 }
