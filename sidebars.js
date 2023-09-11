@@ -3026,9 +3026,14 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_6_1',
+                id: 'release-notes/php/php-2_6_2',
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/php/php-2_6_2',
+                  className: 'new',
+                },
                 'release-notes/php/php-2_6_1',
                 'release-notes/php/php-2_6_0',
                 'release-notes/php/php-2_5_4',
