@@ -3024,6 +3024,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/php-2_6_2',
