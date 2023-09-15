@@ -289,6 +289,12 @@ const javaList = [
 
 const phpList = [
     {
+        "name": 'php-agent-v2.6.2',
+        "date": '2023-09-13',
+        "url": '/pdf/release-notes/php-agent-v2.6.2.pdf',
+        "docs": '/release-notes/php/php-2_6_2',
+    },
+    {
         "name": 'php-agent-v2.6.1',
         "date": '2023-02-15',
         "url": '/pdf/release-notes/php-agent-v2.6.1.pdf',
@@ -460,6 +466,12 @@ const pyList = [
 
 const dotnetList = [
     {
+        "name": 'dotNet-agent-v2.1.5',
+        "date": '2023-09-13',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.5.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_5',
+    },
+    {
         "name": 'dotNet-agent-v2.1.4',
         "date": '2023-08-29',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.4.pdf',
@@ -552,6 +564,12 @@ const dotnetList = [
 ];
 
 const goList = [
+    {
+        "name": 'Go-agent-v0.2.3',
+        "date": '2023-09-13',
+        "url": '/pdf/release-notes/Go-agent-v0.2.3.pdf',
+        "docs": '/release-notes/golang/golang-0_2_3',
+    },
     {
         "name": 'Go-agent-v0.2.2',
         "date": '2023-06-21',
@@ -762,6 +780,12 @@ const serverList = [
 ];
 
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.3.5",
+        "date": "2023-09-12",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.5.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_5"
+    },
     {
         "name": "Kubernetes-agent-v1.3.4",
         "date": "2023-08-11",
@@ -1011,6 +1035,12 @@ const xosList = [
 ];
 
 const browserList = [
+    {
+        "name": "Browser-agent-v1.3.0",
+        "date": "2022-09-06",
+        "url": "/pdf/release-notes/browser-agent-v1.3.0.pdf",
+        "docs": "release-notes/browser/browser-v1_3_0"
+    },
     {
         "name": "Browser-agent-v1.2.2",
         "date": "2022-08-08",
