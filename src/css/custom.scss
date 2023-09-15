@@ -1821,7 +1821,7 @@ main {
 // media query
 @media (min-width: 997px) {
   @supports (scrollbar-gutter: stable) {
-    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+    nav.thin-scrollbar {
       padding: 0px 8px !important;
     }
   }
