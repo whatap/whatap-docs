@@ -16,9 +16,9 @@ AJAX is an important data loading method to construct a dynamic screen among res
 
 {@include: _dashboard-note.mdx}
 
-## **_AJAX Count_**
+## AJAX Count
 
-<ImgLang img='rum-ajax-count.png' desc='AJAX Count' />
+<ImgLang img='rum-ajax-count.png' desc='AJAX count' />
 
 You can check the number of AJAX loads in real time.
 
@@ -27,7 +27,7 @@ You can check the number of AJAX loads in real time.
 -   When retrieving the AJAX load count based on **_AJAX Path_** and **_AJAX Host_**, the top 10 AJAX cases are provided.
 -   If you hover your mouse over the widget chart, AJAX count is provided in the form of a tooltip.
 
-## **_Average AJAX Response Time_**
+## Average AJAX Response Time
 
 <ImgLang img='rum-ajax-response-time.png' desc='Average AJAX Response Time' />
 
@@ -37,22 +37,29 @@ You can check the AJAX response time in real time. You can identify AJAX that ta
 -   To change the data query criteria to **_AJAX Host_** or **_All_** AJAX, select **_AJAX Path_** on the upper right of the widget.
 -   When retrieving the AJAX load count based on **_AJAX Path_** and **_AJAX Host_**, the top 10 AJAX response times are provided.
 
-## **_AJAX By Status_**
+## AJAX By Status
 
-<ImgLang img='rum-ajax-status.png' desc='AJAX by Status' />
+<ImgLang img='rum-ajax-status.png' desc='AJAX By Status' />
 
 You can check HTTP status codes related to AJAX by time of the day.
 
-<ImgLang img='rum-ajax-status-count.png' desc='AJAX by Status' />
+<ImgLang img='rum-ajax-status-count.png' desc='AJAX By Status' />
 
 You can check the cumulative number of time-based HTTP status codes related to AJAX.
 
 The statuses related to AJAX are as follows. Check that AJAX is running normally in your web application with the following criteria:
 
+-   **1xx** (response): This indicates that the server received any requests and the client connected to the server must proceed with the work.
+
 -   **2xx** (Success): The requests have been successfully received, recognized, and accepted.
+
 -   **3xx** (Redirection): Additional action is required to complete the request.
+
 -   **4xx** (Client Error): The syntax of the request is incorrect or the request cannot be processed.
+
 -   **5xx** (Server Error): The server failed to meet a valid request.
+
+-   **Request Fail** (request failure): It indicates that no response was received from the server and the request failed. For example, the requests are canceled from the front due to a timeout, or the requests are made incorrectly.
 
 :::note
 
@@ -60,7 +67,7 @@ For more information about the HTTP status codes, see [the following](https://ww
 
 :::
 
-## **_AJAX Error Count_**
+## AJAX Error Count
 
 <ImgLang img='rum-ajax-error-count.png' desc='AJAX Error Count' />
 

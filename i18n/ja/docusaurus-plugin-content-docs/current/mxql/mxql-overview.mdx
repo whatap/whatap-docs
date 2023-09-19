@@ -1,7 +1,7 @@
 ---
 id: mxql-overview
 title: MXQL
-description: MXQLは、WhaTapの性能データ（メトリクス）を柔軟に照会するためのクエリ言語です。
+description: MXQLは、WhaTapの性能データ(メトリクス)を柔軟に参照するためのクエリ言語です。
 displayed_sidebar: referSidebar
 tags:
   - MXQL
@@ -11,17 +11,17 @@ tags:
 
 :::note
 
-MXQLの内容を確認する前に、まずメトリクスの概念について確認することをお勧めします。メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参考にしてください。
+MXQLの内容を確認する前に、まずメトリクスの概念について確認することをお勧めします。メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を確認してください。
 
 :::
 
 ## MXQLとは
 
-MXQLは、WhaTapの性能データ（メトリクス）を柔軟に照会するためのクエリ言語です。一つのプロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会・活用するために使用します。
+MXQLは、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に表示および利用するために使用します。
 
 ## MXQLとSQLの違い
 
-よく知られているSQLとの比較を通じて、MXQLの概念について見てみましょう。
+よく知られているSQLと比較することで、MXQLの概念を学びます。
 
 ### 用語
 
@@ -29,28 +29,28 @@ MXQLは、WhaTapの性能データ（メトリクス）を柔軟に照会する�
 
 ![SQLのデータ格納構造](https://img.whatap.io/media/images/mxql-6.png)
 
-上記のように、WhaTapのデータベースにproductテーブル(Table)が含まれています。productテーブル(Table)にはid、descriptionの2つのカラム(Column)が含まれています。SQLのDatabase、Table、Columnに対応するMXQLの用語はそれぞれdatabase、category、fieldです。
+上記のように、WhaTapのデータベース(Database)にproductテーブル(Table)が含まれています。productテーブル(Table)にはid、descriptionの2つのカラム(Column)が含まれています。SQLのDatabase、Table、Columnに対応するMXQLの用語はそれぞれdatabase、category、fieldです。
 
-| 格納方式  | MXQL     | SQL      |
+| 保存方式  | MXQL     | SQL      |
 | ----- | -------- | -------- |
 | 大分類   | Database | Database |
 | 中分類   | Category | Table    |
 | 小分類   | Field    | Column   |
 
-### クエリー（Query）
+### クエリー(Query)
 
-MXQLとSQLのサンプルクエリです。各行の右側のコメントを参考にしてください。
+MXQLとSQLのサンプルクエリです。各行の右側のコメントを確認してください。
 
 ```sql title='SQL query'
-SELECT time, pcode  -- Column選択（time、 pcodeカラムを照会するように設定します。）
-FROM app_counter    -- Table選択（app_counterテーブルでデータを照会します。）
-WHERE tx_count = 1  -- データフィルタリング（tx_count columnの値が1のデータを照会するように設定します。
+SELECT time, pcode  -- Column選択(time、 pcodeカラムを表示するように設定します。)
+FROM app_counter    -- Table選択(app_counterテーブルからデータを検索します。)
+WHERE tx_count = 1  -- データフィルタリング(tx_count columnの値が1のデータを表示するように設定します。)
 ```
 
 ```sql title='MXQL query'
-CATEGORY app_counter                 -- app_counterカテゴリでデータを照会するように設定します。
-TAGLOAD                              -- データを照会します。
-SELECT [ time, pcode ]               -- 照会された全体カラムのうちtime、pcodeフィールドを選択します。
+CATEGORY app_counter                 -- app_counterカテゴリでデータを表示するように設定します。
+TAGLOAD                              -- データを検索します。
+SELECT [ time, pcode ] -- 参照された全体カラムのうちtime、pcodeフィールドを選択します。
 FILTER { key : tx_count, value : 5}  -- tx_countフィールドの値が5のデータを残します。
 ```
 
@@ -58,16 +58,16 @@ FILTER { key : tx_count, value : 5}  -- tx_countフィールドの値が5のデ�
 
 MXQLクエリを実行すると、選択したカテゴリで選択したフィールドのメトリクスを照会します。
 
-`app_counter`カテゴリで`tx_count`、`tx_error`指標を照会するクエリは次のとおりです。
+`app_counter`カテゴリの`tx_count`、`tx_error`指標を検索するクエリは次のとおりです。
 
 ```sql title='MXQL'
-CATEGORY app_counter                   -- app_counterカテゴリでデータを照会するように設定します。
-TAGLOAD                                -- データを照会します。
-SELECT [time, oid, tx_count, tx_error] -- 照会したいフィールドの名前を設定します。
+CATEGORY app_counter -- app_counterカテゴリでデータを照会するように設定します。
+TAGLOAD -- データを検索します。
+SELECT [time, oid, tx_count, tx_error] -- 表示するフィールドの名前を設定します。
 ```
 
 クエリを実行すると、次のようにメトリクスを照会します。
 
 <ImgLang img='mxql_overview.png' desc='MXQL実行結果の例' />
 
-メトリクスには常に`time`、`oid`値が含まれるため、MXQLクエリでも`time`、`oid`フィールドを常に含めて照会することをお勧めします。最終的に照会したデータがいつ(`time`)、どのエージェント(`oid`)から収集したメトリクスなのかを確認できます。
+メトリクスには常に`time`、`oid`値が含まれるため、MXQLクエリも`time`、`oid`フィールドを含めることをお勧めします。最後に表示したデータがいつ(`time`)、どのエージェント(`oid`)から収集したメトリクスなのかを確認できます。

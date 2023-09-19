@@ -1,0 +1,26 @@
+---
+id: dbx-1_6_10
+title: DBX v1.6.10
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_9
+---
+
+2023年9月15日
+
+## 共通
+
+-   <Status>Fixed</Status>DB connection failが発生してもエージェント情報(agent info)を転送するように修正(<UI>ダッシュボード</UI>><UI>インスタンス一覧</UI>メニューからエージェントが保持されるようにする）
+
+## PostgreSQL
+
+-   <Status>Fixed</Status> <code>db_postgresql_master</code>, <code>db_postgresql_slave</code>情報バグの修正
+
+-   <Status>Fixed</Status><code>db_postgresql_wait_event</code>のstateがidleの場合は除外処理
+
+-   <Status>Fixed</Status><code>db_postgresql_statements</code>のユーザ別グループ処理及びqueryid修正
+
+-   <Status>Fixed</Status><code>db_postgresql_slowquery</code>のtimestamp修正およびカラム名の変更
+
+## MySQL
+
+<p><Status>Fixed</Status><code>db_mysql_statements</code>の<code>timer_wait</code>と<code>lock_time</code>単位を<b>ピコ秒</b>から<b>秒</b>単位に変更、schema名が<code>null</code>の場合は空欄列に修正</p>

@@ -1,0 +1,26 @@
+---
+id: dbx-1_6_10
+title: DBX v1.6.10
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_9
+---
+
+September 15, 2023
+
+## Common
+
+-   <Status>Fixed</Status> Modified to transmit the agent information even when the DB connection failure occurs (ensured that the agent is maintained in <UI>Dashboard</UI> > <UI>Instance list</UI>).
+
+## PostgreSQL
+
+-   <Status>Fixed</Status> Fixed the <code>db_postgresql_master</code> and <code>db_postgresql_slave</code> information bugs.
+
+-   <Status>Fixed</Status> Processed the exception handling when the state of <code>db_postgresql_wait_event</code>is idle.
+
+-   <Status>Fixed</Status> Processed the groups for each <code>db_postgresql_statements</code> user and modified the queryid.
+
+-   <Status>Fixed</Status> Modified the timestamp of <code>db_postgresql_slowquery</code> and column name.
+
+## MySQL
+
+<p><Status>Fixed</Status> Modified the units for <code>timer_wait</code> and <code>lock_time</code> in <code>db_mysql_statements</code> from <b>picosecond</b> to <b>second</b>. If the schema name is <code>null</code>, modified it to an empty string.</p>

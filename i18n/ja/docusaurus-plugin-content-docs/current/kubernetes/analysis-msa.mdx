@@ -1,7 +1,7 @@
 ---
 id: analysis-msa
 title: MSA分析
-description: MSA分析機能は、WhaTapのMTRACE(マルチサーバー間追跡)機能を通じて収集されたトランザクション間の呼び出し比重を分析します。
+description: MSA分析機能は、WhaTapのMTRACE(マルチサーバー追跡)機能を使用して収集されたトランザクション間の呼び出しの割合を分析します。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
@@ -11,7 +11,7 @@ tags:
 
 ホーム画面 > プロジェクト選択 > **_分析_** > **_MSA分析_**
 
-MSA分析機能は、WhaTapのMTRACE（マルチサーバー間追跡）機能を通じて収集されたトランザクション間の呼び出しのウエイトがどのようなものかを分析します。これに基づいて、マイクロサービス間の依存性をインスタンス中心ではなくURLレベルで確認できます。
+MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集されたトランザクション間の呼び出しの割合を分析します。これに基づいて、マイクロサービス間の依存関係をインスタンス中心ではなくURLレベルで確認できます。
 
 ![Microservice Architecture Pattern](https://img.whatap.io/media/images/whatap_application_analysis_msa_pattern.png)
 
@@ -25,50 +25,54 @@ MSA分析機能は、WhaTapのMTRACE（マルチサーバー間追跡）機能�
 
 ![Microservice Architecture Caller & Callee](https://img.whatap.io/media/images/whatap_application_analysis_msa_caller_callee.png)
 
-## MSAトランザクションの統計
-
-次は、CallerまたはCalleeを持っているすべてのトランザクションの統計です。
-
-![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
-
 :::note
 
-MTRACEの詳細については、[次の文書](../java/trs-multi-trace)を参考にしてください。
+**マルチトランザクション追跡**に関する詳細は、[次の文書](../java/trs-multi-trace)を参照してください。
 
 :::
 
-![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
+## MSAトランザクションの統計
+
+次は、CallerまたはCalleeを持つすべてのトランザクションの統計です。
+
+<ImgLang img='whatap_application_analysis_msa_2.png' desc='MSA分析' />
 
 上記統計データのうち、照会を希望するURLの![詳細を見るアイコン](/img/ic-pageview.svg) **_詳細を見る_** アイコンを選択すると、詳細を見るウィンドウが表示されます。詳細を見るウィンドウで該当URLに対する**_Caller Callee要約_**、**_Caller Calleeデータ_**、**_Caller Callee推移_**などの詳細データ照会が可能です。 
 
 :::note 
 
-![フルスクリーンビューアイコン](/img/ico-detail-mode.svg)アイコンを選択すると、詳細を見るウィンドウが全画面で表示されます。
+![全画面表示アイコン](/img/ico-detail-mode.svg)アイコンを選択すると、詳細を見るウィンドウが全画面で表示されます。
 
 :::
 
 ## Caller/Calleeサマリー
 
-**_Caller Callee要約_**タブは、以下のように当該URLのCaller、Callee間の依存性情報を表示します。この時、最大0.004、0.003など最大値が1の数字情報が一緒に表示されますが、これは全体のCallerの中で占める割合を表示します。同様に各Calleeの割合が右側に一緒に表示されます。
+**_Caller Callee概要_**タブは、次のようにURLのCaller、Callee間の依存関係情報を表示します。この時、最大0.004、0.003など最大値が1の数字情報を表示しますが、これは全体のCallerの中で占める割合を表示します。同様に各Calleeの割合が右側にまとめて表示されます。
 
-![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_3.png)
+<ImgLang img='whatap_application_analysis_msa_3.png' desc='Caller/Calleeサマリー' />
 
-上の画面を通して_/account/save/employee/seoul_というトランザクションを基準に、CallerとCallee同士の依存性を分析することができます。
+上の画面から_/account/save/employee/seoul_というトランザクションを基準に、CallerとCallee同士の依存関係を分析することができます。
 
-呼び出し元Nodeと呼び出し先ノードは子ノードとして詳細化することができます。
+呼び出し元ノードと呼び出し先ノードは、次のように子ノードとして詳細化することができます。
 
-![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_4.png)
+<ImgLang img='whatap_application_analysis_msa_4.png' desc='Caller Callee 하위 노드 상세 전개' />
 
 ## Caller & Calleeデータ
 
 基準URL(例：_/account/save/employee/seoul_)に対するcallerとcalleeの相関関係は、次のように表で表示できます。
 
-![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_5.png)
+<ImgLang img='whatap_application_analysis_msa_5.png' desc='Caller와 Callee들의 상관관계' />
 
 ## Caller/Callee推移
 
 基準URL(_/account/save/employee/seoul_)と1つのcallerやcalleeとの呼び出し推移は、次のように時系列で分析できます。 
 
-![MSA分析](https://img.whatap.io/media/images/whatap_application_analysis_msa_6.png)
+<ImgLang img='whatap_application_analysis_msa_6.png' desc='Caller/Callee推移' />
 
-上の画面は、_/account/save/employee/seoul_、_/account/delete/division/daejun_というURLを呼び出した推移を示します。
+<!-- 
+
+>
+
+위 화면은 /account/save/employee/seoul, /account/delete/division/daejun이라는 URL을 호출하는 추이가 어떠했는지 표현한 것입니다.
+
+-->

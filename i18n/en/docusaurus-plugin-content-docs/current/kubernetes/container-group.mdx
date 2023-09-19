@@ -17,47 +17,45 @@ Therefore, **grouping** is provided to meet these diverse user needs.
 
 -   **Per-container view** + **Node grouping**
 
-    ![Per-container view + Node grouping]
-    (https://img.whatap.io/media/images/whatap_kubernetes_container_map_group_node.png)
+    <ImgLang img='whatap_kubernetes_container_map_group_node.png' desc='Container reference view + Node grouping' />
 
 -   **Pod-based view** + **Deployment grouping**
 
-    ![Pod-based view + Deployment grouping]
-    (https://img.whatap.io/media/images/whatap_kubernetes_container_map_group_deployment.png)
+    <ImgLang img='whatap_kubernetes_container_map_group_deployment.png' desc='Pod reference view + Deployment grouping' />
 
 ### Key grouping properties
 
 The grouping properties supported depending on the container map view are as follows:
 
-| Reference view | Grouping property                                                                                                                   |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Container      | Not set (All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet<br/>Pod<br/>ContainerName<br/>Image<br/>DemonSet<br/>StatefulSet |
-| Pod            | Not set (All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet                                                                  |
+| Reference view  | Grouping property                                                                                                                        |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Container       | Not set (All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet<br/>Pod<br/>ContainerName<br/>Image<br/>DemonSet<br/>StatefulSet      |
+| Pod             | Not set (All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet                                                                       |
 
-{@include: ../common-items/_container-note-reset.mdx} 
+{@include: ../common-items/_container-note-reset.mdx}
 
 ## Grouping & Card
 
 A container map consists of one or more cards. If grouping is not applied, all containers/pods in the project are represented in a single large card. Grouping organizes the cards into individual groups.
 
-![Listing cards by group](/img/kubernetes-group-card.png)
+<ImgLang img='kubernetes-group-card.png' desc='Listing cards by group' />
 
 The above screen displays grouping based on the deployment as the reference property. You can see that the cards are listed for each deployment.
 
-When grouping is applied, the objects that cannot be grouped by the reference property do not appear by default. However, there is a way to make those objects visible on the screen as well. On the screen select the ![Leader line 1](/img/number-01.png) ![Configuration icon](/img/ico-setting.svg) button. If **_Hide unknown groups_** is unchecked, only the objects that do not fall under grouping are collected and represented as separate cards.
+When grouping is applied, the objects that cannot be grouped by the reference property do not appear by default. However, there is a way to make those objects visible on the screen as well. On the screen select the ![Configuration icon](/img/ico-setting.svg) setting button. If **_Hide unknown groups_** is unchecked, only the objects that do not fall under grouping are collected and represented as separate cards.
 
 ## Metrics data by card
 
 Metrics data for grouped targets appears under each card. The following lists the provided metrics:
 
-| Reference view | Resource metric                                                               | Application metrics                                         |
-| -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Container      | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/> | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS |
-| Pod            | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes          | ^                                                           |
+| Reference view  | Resource metric                                                                   | Application metrics                                           |
+| --------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Container       | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/>     | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS   |
+| Pod             | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes              | ^                                                             |
 
 If the cursor is over the **_container_** (or **_pod_**) or **_ActiveTX_**, you can check descriptions for each metric in a pop-up.
 
-![Metric description](https://img.whatap.io/media/images/whatap_kubernetes_container_map_cards_metri_description.png)
+![Metric description](/img/whatap_kubernetes_container_map_cards_metri_description.png)
 
 -   Among the metrics displayed in the pop-up, the items with Avg mean that the metrics values of the same names under the card are the average values of individual targets within the group.
 
@@ -65,8 +63,8 @@ If the cursor is over the **_container_** (or **_pod_**) or **_ActiveTX_**, you 
 
 ### Hiding the metrics data of the card
 
-You can hide metrics data under the card and focus only on the chart. On the screen select the ![Leader line 1](/img/number-01.png) ![Configuration icon](/img/ico-setting.svg) button. Uncheck **_Show Metrics Below Card_**. This function is useful when you have a large number of cards.
+You can hide metrics data under the card and focus only on the chart. On the screen select the ![Configuration icon](/img/ico-setting.svg) setting button. Uncheck **_Show Metrics Below Card_**. This function is useful when you have a large number of cards.
 
 You can hide metrics data as follows:
 
-![Hiding the metric data display at the bottom of card](https://img.whatap.io/media/images/whatap_kubernetes_container_map_cards_metric_off.png)
+<ImgLang img='whatap_kubernetes_container_map_cards_metric_off.png' desc='Hiding the metric data display at the bottom of card' />

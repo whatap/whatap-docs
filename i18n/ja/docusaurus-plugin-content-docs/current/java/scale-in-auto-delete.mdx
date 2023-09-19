@@ -8,13 +8,13 @@ tags:
 
 Auto Scale環境でエージェント名を自動付与すると、Scale Outが発生した場合、オペレータの介入は必要ありません。システムを自動的に拡張します。一方、Scale Inが発生すると、システムが正常なShut downとして認識する必要があります。
 
-エージェントの自動削除のために、WhaTapサーバーは、Javaエージェントからメッセージを受け取る必要があります。エージェントは、`${WHATAP_HOME}`にJavaプロセスの_whatap\_{java-process-pid>}.shutdown_ファイルが生成されたら**SILENT_SHUTDOWN**イベントをWhaTapサーバーに転送します。転送は5秒以内に完了します。
+エージェントの自動削除の場合、WhaTapサーバーは、Javaエージェントからメッセージを受信する必要があります。エージェントは、`${WHATAP_HOME}`にJavaプロセスの_whatap\_{java-process-pid>}.shutdown_ファイルが生成されたら**SILENT_SHUTDOWN**イベントをWhaTapサーバーに送信します。送信は5秒以内に完了します。
 
-**SILENT_SHUTDOWN**イベントをWhaTapサーバに転送します。その後、1分以内にエージェントがシャットダウンすると、WhaTapサーバはリストから該当Javaエージェントをすぐに削除します。inactiveイベントも発生させません。
+**SILENT_SHUTDOWN**イベントをWhaTapサーバに送信してから1分以内にエージェントがシャットダウンされた場合、WhaTapサーバはリストからJavaエージェントを削除します。inactiveイベントは発生しません。
 
 :::note
 
-Tomcatの場合、_shutdown.sh_ファイルに設定できます。
+Tomcatの場合、_shutdown.sh_ファイルで設定できます。
 
 ```bash title=$TOMCAT_HOME/bin/shutdown.sh
 touch $WHATAP_HOME/whatap_{java-process-pid}.shutdown

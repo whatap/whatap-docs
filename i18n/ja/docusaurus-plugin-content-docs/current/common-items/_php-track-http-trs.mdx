@@ -6,11 +6,11 @@
 
 -   **whatap.trace_normalize_urls** <span class='type'>String</span>
 
-    トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。      
+    トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。 
 
     :::note
 
-    例、**/a/{v}/b**と設定すると、その形式で呼び出されたトランザクションURLは、**/a/{v}/b**形式として変換されます。複数登録するときはコンマ(,)を使います。
+    例えば、`/a/{v}/b`と設定すると、その形式で呼び出されたトランザクションURLは、`/a/{v}/b`形式として変換されます。複数の登録するときはコンマ(,)を使います。
 
     :::
 
@@ -59,6 +59,22 @@
     デフォルト値`false`
 
     トランザクションのHost情報を出力します。値が`false`の場合、トランザクションのURLはURIのみ表示され、`true`の場合は、`/xxx.aaa.com/URL`形式で出力されます。
+
+-   **whatap.ignore_http_method** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    指定されたHTTP Methodでリクエストされたトランザクション情報は収集しません。複数を指定するときはコンマ(,)で区切ります。
+
+    :::note 
+
+    次のように、`OPTIONS`と`HEAD`2つの値を指定する場合は、コンマ(,)で区切ります。
+
+    ```ini title='whatap.ini'
+    whatap.ignore_http_method=OPTIONS, HEAD
+    ```
+
+    :::
 
 -   **whatap.biz_exceptions** <span class='type'>String</span>
 

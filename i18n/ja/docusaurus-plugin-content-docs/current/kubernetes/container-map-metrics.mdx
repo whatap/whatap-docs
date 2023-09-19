@@ -63,30 +63,35 @@ spec:
 
 -   **詳細を見る** 画面 > **_メトリクス_** - リソース使用量のモニタリングと分析
 
-    ![リソース使用量のモニタリングと分析](https://img.whatap.io/media/images/whatap_kubernetes_container_map_resource_example.png)
+    <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='リソース使用量のモニタリングと分析' />
 
 -   特定のコンテナを選択して状態を確認できます。
 
-    ![リソース使用量のモニタリングと分析](https://img.whatap.io/media/images/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
+    ![リソース使用量のモニタリングと分析](/img/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
 
 上記のデータを見ると、CPUはRequest 0.2colores(200m)、Limit 0.4colores(400m)に設定されています。現在のCPU使用量は0.02cores(20m)(5秒平均)です。右側のCPU関連の推移グラフを確認すると、全体的には余裕があるものの、断続的にCPU使用量が増加する現象が確認できます。
 
 Memoryは、Request 128MiB、Limit 256MiBに設定されています。ところで現在のMemory使用量は184MiBです。右側のMemory関連推移グラフを見てもRequest基準で100%を超過し、Limit基準でも70%以上を使用しています。
 
+<!-- 
+>
+컨테이너 예시가 특정적이라 기존 화면 잘라서 사용
+-->
+
 CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです。 
 
-| 対象リソース | Shortname      | Name                                              | 説明                         |
-| ------ | -------------- | ------------------------------------------------- | -------------------------- |
-| CPU    | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | コンテナCPU使用率                 |
-| ^      | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | コンテナCPUの要求比較の使用率           |
-| ^      | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | CPU Limit基準CPUの全体使用率       |
-| メモリ    | MemWs          | **_Container Memory Working Set (byte)_**         | コンテナのメモリworking set        |
-| ^      | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | コンテナメモリの要請量基準workingset使用量 |
-| ^      | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | コンテナメモリ割当量基準working set使用量 |
+| 対象リソース      | Shortname      | Name                                              | 説明                                           |
+| ----------- | -------------- | ------------------------------------------------- | -------------------------------------------- |
+| CPU         | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | コンテナCPU使用率                                   |
+| ^           | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | コンテナCPUの要求比較の使用率                             |
+| ^           | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | CPU Limit基準CPUの全体使用率                         |
+| メモリ         | MemWs          | **_Container Memory Working Set (byte)_**         | コンテナのメモリworking set                          |
+| ^           | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | コンテナメモリの要求基準workingset使用量                    |
+| ^           | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | コンテナメモリ割当量基準working set使用量                   |
 
 :::note
 
-Podが実行中のノードに使用可能なリソースが十分であれば、コンテナに設定されたRequest以上のリソースを使用できます。WhaTapメトリックのうち、**_Container CPU Usage by Request (%)_**、**_Container Memory Working Set by Request (%)_**の値が100%を超える可能性がある理由です。
+Podが実行中のノードに使用可能なリソースが十分である場合、コンテナに設定されたRequest以上のリソースを使用できます。WhaTapメトリックのうち、**_Container CPU Usage by Request (%)_**、**_Container Memory Working Set by Request (%)_**の値が100%を超える可能性がある理由です。
 
 例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ(Pod)が実行中のNodeの総メモリは4GiBであり、そのNodeに他のPodがない場合、このコンテナは128MiB以上のメモリを使用できます。
 
@@ -97,8 +102,11 @@ Podが実行中のノードに使用可能なリソースが十分であれば�
 WhaTapはCPU、Memoryの他に様々なメトリクスを提供します。
 
 -   **_Container Block I/O Read Byte_** (IoReadBytes)
+
 -   **_Container Block I/O Write Byte_** (IoWriteBytes)
+
 -   **_Container Network Receive Byte_** (NetRxBytes)
--   **_Container Network Transmit Byte_** (NetTxByes) 
+
+-   **_Container Network Transmit Byte_** (NetTxByes)
 
 WhaTap Kubernetesメトリクスの詳細については、[次の文書](metrics-intro)を参照してください。

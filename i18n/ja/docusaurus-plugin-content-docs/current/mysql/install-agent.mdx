@@ -103,6 +103,7 @@ grant replication slave on *.* to whatap;
 
 #kill sessionを使用する場合
 grant super on *.* to whatap;
+grant execute on procedure mysql.rds_kill to whatap;  # AWS RDSを使用する場合
 ```
 
 ## DBユーザーファイルの作成{#create-db-user}

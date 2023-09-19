@@ -15,7 +15,7 @@ For more information about transactions, see [the following](track-transactions-
 
 :::
 
-## Transaction Tracing
+## Transaction tracing{#trs-trc}
 
 -   **profile_step_normal_count** <span class='type'>Int</span>
 
@@ -57,13 +57,75 @@ For more information about transactions, see [the following](track-transactions-
 
     Default `false`
 
-    It enables the function to collect query strings of the transaction URL together. It is applied to only the URLs registered in `whatap.query_string_urls`.
+    It enables the function to collect query strings of the transaction URL together. It is applied to only the URLs registered in `query_string_urls`.
 
 -   **query_string_urls** <span class='type'>String</span>
 
     Register URLs to collect query strings from every transaction.
 
-## HTTP transaction tracing
+-   **split_profile_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    More profiles are collected by separating a certain amount of profiles into virtual transactions. They are divided into multiple transaction lists.
+
+    :::note
+
+    If set at the same time, the priorities are as follows: 
+
+    1.  split
+
+    2.  large
+
+    3.  circular
+
+    :::
+
+-   **large_profile_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    By sending split and compressed profiles, you can collect more profiles without increasing memory usage.
+
+    :::note
+
+    -   We can collect up to 10,000 profiles (steps). For more data, it is recommended to use the `split_profile_enabled` option.
+
+    -   If set at the same time, the priorities are as follows: 
+
+        1.  split
+
+        2.  large
+
+        3.  circular
+
+    :::
+
+-   **circular_profile_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    The last 1024 profiling data is collected. 
+
+    :::note
+
+    If set at the same time, the priorities are as follows: 
+
+    1.  split
+
+    2.  large
+
+    3.  circular
+
+    :::
+
+-   **profile_zip_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    Compressed profiles are transmitted. The default value is `true`.
+
+## HTTP transaction tracing{#track-http-trs}
 
 -   **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -128,6 +190,22 @@ For more information about transactions, see [the following](track-transactions-
     Default `false`
 
     The transation host is output. If the value is `false`, only the URI is recorded in the URL of a transaction. If the value is `true`, the output has the format of `/xxx.aaa.com/URL`.
+
+-   **ignore_http_method** <span class='type'>String</span>
+
+    Default `Empty`
+
+    Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
+
+    :::note 
+
+    When entering two values for `OPTIONS` and `HEAD`, separate them with comma (,).
+
+    ```ini title='whatap.conf'
+    ignore_http_method=OPTIONS, HEAD
+    ```
+
+    :::
 
 -   **biz_exceptions** <span class='type'>String</span>
 

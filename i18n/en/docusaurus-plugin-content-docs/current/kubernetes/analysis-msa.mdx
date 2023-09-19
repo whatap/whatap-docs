@@ -11,7 +11,7 @@ tags:
 
 Home > Select Project > **_Analysis_** > **_MSA Analysis_**
 
-The MSA analysis function analyzes the proportion of calls between transactions collected through the WhaTap's MTRACE (multi-server tracing) function. Based on this, dependencies between microservices can be checked at the URL level rather than instance-centric basis.
+The MSA analysis function analyzes the proportion of calls between transactions collected through the WhaTap's **Multiple transaction trace** function. Based on this, dependencies between microservices can be checked at the URL level rather than instance-centric basis.
 
 ![Microservice Architecture Pattern](https://img.whatap.io/media/images/whatap_application_analysis_msa_pattern.png)
 
@@ -25,19 +25,17 @@ If these three patterns have been performed once, MSA analysis can check the ass
 
 ![Microservice Architecture Caller & Callee](https://img.whatap.io/media/images/whatap_application_analysis_msa_caller_callee.png)
 
+:::note
+
+For more information about **multiple transaction trace**, see [the following](../java/trs-multi-trace).
+
+:::
+
 ## MSA Transaction Statistics
 
 The following lists all the transaction statistics that have callers or callees.
 
-![MSA analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
-
-:::note
-
-For more information about MTRACE, see [the following](../java/trs-multi-trace).
-
-:::
-
-![MSA analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_2.png)
+<ImgLang img='whatap_application_analysis_msa_2.png' desc='MSA Analysis' />
 
 If you select the ![Detail icon](/img/ic-pageview.svg) **_Detail_** icon of the URL to see among the statistical data above, the detailed view window appears. In the detailed view window, you can see the detailed data such as **_Caller callee summary_**, **_Caller callee data_**, and **_Caller callee trend_** for the URL. 
 
@@ -51,24 +49,30 @@ If you select ![Total view icon](/img/ico-detail-mode.svg), the detailed view wi
 
 The **_Caller callee summary_** tab displays the dependency data between the caller and callee of the URL. At this time, numerical data whose maximum is 1 such as 0.004 and 0.003, appears together, which indicates the proportion of all callers. Likewise, the gravities for each callee appear on the right.
 
-![MSA Analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_3.png)
+<ImgLang img='whatap_application_analysis_msa_3.png' desc='Caller Callee Summary' />
 
 Through the above screen, you can analyze the dependencies between callers and callees based on the _/account/save/employee/seoul_ transaction.
 
-Caller or callee nodes can be developed in detail to sub-nodes.
+The caller or callee nodes can be expanded into sub-nodes as follows:
 
-![MSA Analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_4.png)
+<ImgLang img='whatap_application_analysis_msa_4.png' desc='Caller Callee 하위 노드 상세 전개' />
 
 ## Caller & Callee Data
 
 The correlations between callers and callees for the reference URL (e.g. _/account/save/employee/seoul_) can be displayed in a table as follows.
 
-![MSA Analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_5.png)
+<ImgLang img='whatap_application_analysis_msa_5.png' desc='Caller와 Callee들의 상관관계' />
 
 ## Caller Callee Trend
 
 The reference URL (_/account/save/employee/seoul_) and the trend of calls between a caller or a callee can be analyzed in time series as follows. 
 
-![MSA Analysis](https://img.whatap.io/media/images/whatap_application_analysis_msa_6.png)
+<ImgLang img='whatap_application_analysis_msa_6.png' desc='Caller Callee Trend' />
 
-The above screen represents the trend of calls of the _/account/save/employee/seoul_ and /account/delete/division/daejun URLs.
+<!-- 
+
+>
+
+위 화면은 /account/save/employee/seoul, /account/delete/division/daejun이라는 URL을 호출하는 추이가 어떠했는지 표현한 것입니다.
+
+-->

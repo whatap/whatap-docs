@@ -16,7 +16,7 @@ AJAXは、リソース データのうち動的な画面を構成する上で重
 
 {@include: _dashboard-note.mdx}
 
-## **_AJAX件数_**
+## AJAX件数
 
 <ImgLang img='rum-ajax-count.png' desc='AJAX件数' />
 
@@ -27,9 +27,9 @@ AJAXは、リソース データのうち動的な画面を構成する上で重
 -   **_AJAX Path_**、**_AJAX Host_** を基準にAJAXロード数の照会時、上位10個に該当するAJAX件数を提供します。
 -   ウィジェットチャートにマウスオーバーすると、ツールチップの形でAJAX件数情報を提供します。
 
-## **_平均AJAXレスポンス時間_**
+## 平均AJAXのレスポンス時間
 
-<ImgLang img='rum-ajax-response-time.png' desc='平均AJAXレスポンス時間' />
+<ImgLang img='rum-ajax-response-time.png' desc='平均AJAXのレスポンス時間' />
 
 リアルタイムでAJAXレスポンス時間を確認することができます。 特定のPath、Host単位で平均AJAXレスポンス時間が長くかかるAJAXを識別できます。
 
@@ -37,22 +37,29 @@ AJAXは、リソース データのうち動的な画面を構成する上で重
 -   データ照会基準を **_AJAX Host_** または **_全体_** AJAXに変更するにはウィジェット右上の **_AJAX Path_** ボタンを選択してください。
 -   **_AJAX Path_**、**_AJAX Host_** を基準にAJAXロード数の照会時、上位10個に該当するAJAXレスポンス時間を提供します。
 
-## **_ステータス別のAJAX_**
+## 状態別Ajax
 
-<ImgLang img='rum-ajax-status.png' desc='ステータス別のAJAX' />
+<ImgLang img='rum-ajax-status.png' desc='状態別Ajax' />
 
 時間帯のAJAXに関連したHTTPステータスコードを確認することができます。
 
-<ImgLang img='rum-ajax-status-count.png' desc='ステータス別のAJAX' />
+<ImgLang img='rum-ajax-status-count.png' desc='状態別Ajax' />
 
 AJAXと関連したHTTPステータスコードを照会した、時間基準の累積件数を確認することができます。
 
 AJAXに関するステータスは次のとおりです。 次の基準で、WebアプリケーションでAJAXが正常に動作するか確認してください。
 
+-   **1xx**(情報レスポンス): サーバーがリクエストを受信し、サーバーに接続されているクライアントは、タスクを続行するようにという意味です。
+
 -   **2xx**（成功）: リクエストの受け取りに成功・認識し、受け入れました。
+
 -   **3xx**（リダイレクション）：リクエスト完了のために追加の措置が必要です。
+
 -   **4xx**（クライアントエラー）: リクエストの文法が間違っているか、リクエストを処理できません。
+
 -   **5xx**（サーバーエラー）: サーバーが明らかに有効なリクエストを満たすことに失敗しました。
+
+-   **Request Fail**(リクエスト失敗): サーバーからレスポンス値を受信できず、キャンセルされた場合です。 例えば、タイムアウトでフロントからのリクエストをキャンセルする場合、間違った方法でリクエストをする場合などがあります。
 
 :::note
 
@@ -60,7 +67,7 @@ HTTPステータスコードの詳細については、[次の文書](https://ww
 
 :::
 
-## **_AJAXエラー件数_**
+## AJAXエラー件数
 
 <ImgLang img='rum-ajax-error-count.png' desc='AJAXエラー件数' />
 

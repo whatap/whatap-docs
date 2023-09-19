@@ -10,14 +10,15 @@ tags:
 
 ホーム画面>プロジェクト選択>**_ダッシュボード_**>**_コンテナマップ_**>対象選択後**詳細を見る**画面に進入>**_イベント_**タブの選択
 
-リソース寿命周期が発生するすべてのイベントに対する履歴を提供します。WhaTapクバネティスモニタリングで提供するイベント情報は以下の通りです。
+リソースのライフサイクルが発生するすべてのイベントの履歴を提供します。WhaTapクバネティスモニタリングで提供するイベント情報は、次の通りです。
 
 -   Kubernetesイベント(**_Kubernetes_**)
+
 -   WhaTapイベント(**_WhaTap_**)
 
 ## 基本画面ガイド
 
-![クバネティス詳細を見るイベントタブ](/img/k8s-event-default3.png)
+<ImgLang img='k8s-event-default3.png' desc='クバネティス詳細イベントタブ' />
 
 -   ![number 1](/img/number-01.png)クバネティスイベント(**_Kubernetes_**)または、WhaTapイベント(**_WhaTap_**)を選択して、照会することができます。 
 
@@ -35,13 +36,13 @@ tags:
 
         :::
 
--   ![number 2](/img/number-02.png)時間選択者を通じて、イベント履歴を照会したい時間帯を指定できます。基本設定は**_1日_**です。
+-   ![number 2](/img/number-02.png)時間セレクターを使用して、イベント履歴を表示したいタイムゾーンを指定できます。基本設定は**_1日_**です。
 
 -   ![number 3](/img/number-03.png)選択した時間帯の**_イベント数推移_**を棒チャートを通じて確認できます。 
 
 -   ![number 4](/img/number-04.png)一覧形式でイベント履歴情報を確認できます。 
 
-    -   イベント履歴一覧の右の上段で**_タグ隠す_**を選択するとイベント履歴でタグ情報以外の**_タイムスタンプ_**と**_メッセージ_**を確認できます。
+    -   イベント履歴一覧の右上の**_タグを非表示_**を選択すると、イベント履歴からタグ情報以外の**_タイムスタンプ_**と**_メッセージ_**が確認できます。
 
     -   **_Kubernetes_**イベント
 
@@ -53,17 +54,17 @@ tags:
 
         -   <span class='vslow'>Critical</span>,<span class='k8s-normal'>Info</span>,<span class='slow'>Warning</span>の中で、照会をしたいイベントレベルを選択して確認できます。
 
-        -   各イベントの左帯もまた、イベントレベルを表します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>、赤色は<span class='vslow'>Critical</span>の状態を意味します。
+        -   各イベントの左帯もまた、イベントレベルを指します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>、赤色は<span class='vslow'>Critical</span>の状態を意味します。
 
 ## クバネティスイベント
 
-**_Kubernetes_**イベントは、Kubernetesが自主的に提供するイベント情報です。ユーザーKubernetes環境で`kubectl get events`コマンドを使用すると、ユーザーKubernetesクラスターのイベント情報が確認できます。
+**_Kubernetes_**イベントは、Kubernetes自体によって提供されるイベント情報です。Kubernetes環境では、`kubectl get events`コマンドを使用して、Kubernetesクラスターのイベント情報が確認できます。
 
 ```bash
 
 $ kubectl get events -A
  NAMESPACE   LAST SEEN   TYPE      REASON                   OBJECT                            MESSAGE
- community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5`
+ community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5
  community   12m         Normal    ScalingReplicaSet        deployment/suraksan               Scaled down replica set suraksan-66fc4bf889 to 3
  community   5m18s       Normal    ScalingReplicaSet        deployment/baekdusan              Scaled down replica set baekdusan-59554d4859 to 3
  community   7m10s       Normal    Created                  pod/suraksan-66fc4bf889-h2cw8     Created container suraksan
@@ -86,40 +87,40 @@ $ kubectl get events -A
 
 ただ、これらのイベント情報は継続的に保存されません。したがって、一定時間が経過したイベントは、もう情報を確認できません。 
 
-WhaTap Kubernetesは、ユーザークラスター環境で発生したKubernetesイベント情報をすべて収集して保存します。そして、ユーザーが確認したい対象によってPod、ReplicaSet、Deployment、Namespaceなどのイベント情報を提供します。
+WhaTap Kubernetesは、クラスター環境で発生したKubernetesイベント情報をすべて収集して保存します。次に、ユーザーが確認したい内容に応じて、Pod、ReplicaSet、Deployment、Namespaceなどのイベント情報を提供します。
 
-![Kubernetesイベント](/img/k8s-container-event-k8s-all.png)
+<ImgLang img='k8s-container-event-k8s-all.png' desc='Kubernetesイベント' />
 
-各イベントの左帯はイベントタイプを示します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>状態を意味します。ユーザーの選択対象による提供、クバネティスイベントは以下の通りです。
+各イベントの左帯はイベントタイプを示します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>状態を意味します。ユーザーの選択できるクバネティスイベントは、次の通りです。
 
 | 選択対象           | 提供イベント                                                        | 提供関連イベント                                                         |
 | -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------- |
-| 全体（All）        | >                                                             | プロジェクト全体イベント                                                     |
+| 全体(All)        | >                                                             | プロジェクト全体イベント                                                     |
 | Namespace      | >                                                             | Namespace下位の全体イベント                                               |
-| Node           | >                                                             | 当該Nodeイベントまたはノード内のPod （コンテナ） 全体イベント                              |
-| Deployment     | ① `kind`がDeployment<br/>② `name`がユーザーのDeployment名と一致          | `name`がユーザーDeployment名でスタート                                      |
-| ReplicaSet     | ① `kind`がReplicaSet<br/>② `name`がユーザーのReplicaSet名と一致          | `name`がユーザーReplicaSet名でスタート                                      |
-| Pod（コンテナ）      | ① `kind`がPod<br/>② `name`がユーザーのPod名と一致                        | 当該Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                    |
+| Node           | >                                                             | Nodeイベントまたはノード内のPod (コンテナ) 全体イベント                                |
+| Deployment     | ① `kind`は Deployment<br/>② `name`は ユーザーの Deployment 名と一致      | `name`がユーザーDeployment名でスタート                                      |
+| ReplicaSet     | ① `kind`は ReplicaSet<br/>② `name`は ユーザーの ReplicaSet 名と一致      | `name`はユーザーReplicaSet名でスタート                                      |
+| Pod(コンテナ)      | ① `kind`はPod<br/>② `name`はユーザーのPod名と一致                        | Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                      |
 
 WhaTapに保存されているKubernetesイベントは、`message`、`namespace`、`kind`、`name`、`reason`, `type`などの項目で構成されています。
 
 ## WhaTapイベント
 
-**_WhaTap_**イベントはWhaTapイベント設定を通じて、登録したイベント条件によって発生するすべてのイベントです。**_コンテナマップ_**詳細画面の**_イベント_**タブでユーザーのWhaTapアラート設定によるイベント一覧を確認できます。
+**_WhaTap_**イベントは、WhaTapイベント設定で登録したイベント条件によって発生するすべてのイベントです。**_コンテナマップ_**詳細画面の**_イベント_**タブでユーザーのWhaTapアラート設定によるイベント一覧を確認できます。
 
-![WhaTapイベント](/img/k8s-container-event-wt-all.png)
+<ImgLang img='k8s-container-event-wt-all.png' desc='WhaTapイベント' />
 
 各イベントの左側の帯はイベントレベルを示します。グレー色は<span class='k8s-normal'>Info</span>、オレンジ色は<span class='slow'>Warning</span>、赤色は<span class='vslow'>Critical</span>状態を意味します。ユーザーの選択によって使用可能なWhaTapイベントは以下の通りです。
 
-| 選択対象       | 提供イベント                              |
-| ---------- | ----------------------------------- |
-| 全体（All）    | プロジェクト全体イベント                        |
-| Namespace  | Namespace下位の全体イベント                  |
-| Node       | `onodeName`がユーザーNode名と一致            |
-| Deployment | `deployment`가 Deployment名と一致        |
-| ReplicaSet | `replicaSetName`がユーザーReplicaSet名と一致 |
-| Pod        | `podName`がユーザーPod名と一致               |
-| Container  | `containerId`がユーザーContainer IDと一致   |
+| 選択対象       | 提供イベント                                      |
+| ---------- | ------------------------------------------- |
+| 全体（All）    | プロジェクト全体イベント                                |
+| Namespace  | Namespace下位の全体イベント                          |
+| Node       | `onodeName`がユーザーNode名と一致                    |
+| Deployment | `deployment`가 Deployment名と一致                |
+| ReplicaSet | `replicaSetName`がユーザーReplicaSet名と一致         |
+| Pod        | `podName`がユーザーPod名と一致                       |
+| Container  | `containerId`がユーザーContainer IDと一致           |
 
 WhaTapイベントは`message`、`status`、`title`、`level`などの項目で構成されています。次の例の画面は**_WhaTap Containterイベント_**履歴を検索しています。
 
@@ -137,27 +138,8 @@ WhaTapイベントは`message`、`status`、`title`、`level`などの項目で�
 
 -   ![number 5](/img/number-05.png)棒チャートを使用して指定した時間帯の**_イベント数の推移_**を確認してください。
 
-    > ７月10日８時57分から７月11日８時 57分まで１日分のイベント数の推移をみると、11日８時48分にイベントの２つがカウントされたことを確認できます。 
+    > 指定時間帯を基準にイベント数の推移を見ると、イベントの２つがカウントされていることが確認できます。 
 
 -   ![number 6](/img/number-06.png)イベント履歴一覧でイベント履歴情報を確認してください。リストの左側の帯からイベントのレベルを確認できます。イベントメッセージおよびタグ全体を確認するには ![下向き矢印アイコン](/img/ic-caret-down.svg)アイコンを選択してください。
 
     > イベント履歴一覧で、`コンテナLimitの標準CPU使用量が85%以上`, `GC回数以上`<span class='slow'>Warning</span>レベルのイベントを２つを表示できます。 
-
-<!-- 
-
-1 그룹 선택 시 각 전체 이벤트
-
-2 블록/마이크로 블록 선택 시
-  k8s 이벤트: 파드 이벤트/연관 이벤트
-  와탭 이벤트: 컨테이너 이벤트
-
-3 k9s 이벤트/와탭 이벤트 비교 안내 필요
-  e.g. 파드 이벤트/연관 이벤트(k8s 이벤트) 및 컨테이너 이벤트(와탭 이벤트) 요소 기술 필요
-
-4 로그와 마찬가지로 로그 검색 이동 기능 추후 제거 예정
-
-5 디폴트 조회 기준 1일?
-
-6 이벤트 수 추이 차트(로그 트렌드 바 차트랑 다르게 바 선택 시 구간 확인 안됨?)
-
--->
