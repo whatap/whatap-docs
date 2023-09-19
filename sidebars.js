@@ -1405,6 +1405,8 @@ const sidebars = {
               items: [
                 'postgresql/analysis-count-trend',
                 'postgresql/analysis-lock-and-deadlock',
+                'postgresql/analysis-session-history',
+                'postgresql/analysis-wait-events',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -2018,6 +2020,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/stat',
+                'mysql/mysql-sql-stat',
                 'mysql/database-size',
                 'mysql/report-intro',
               ]
