@@ -1147,6 +1147,10 @@ main {
       border: none;
       width: 12px;
     }
+    img.fl-left {
+      float: left;
+      margin: 5px 20px 5px 0;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
