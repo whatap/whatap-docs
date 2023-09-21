@@ -1147,6 +1147,11 @@ main {
       border: none;
       width: 12px;
     }
+    img.shortcutIcon {
+      display: inline-block;
+      border: none;
+      position: relative;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
