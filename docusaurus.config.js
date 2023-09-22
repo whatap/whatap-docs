@@ -567,6 +567,13 @@ module.exports = Promise.resolve({
             label: '확장 도구',
             className: 'hidden'
           },
+          {
+            type: 'doc',
+            docId: 'telegraf/introduction',
+            position: 'left',
+            label: 'Telegraf',
+            className: 'hidden'
+          },
           // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
           {
             type: 'doc',
