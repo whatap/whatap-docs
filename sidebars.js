@@ -1439,6 +1439,10 @@ const sidebars = {
               label: '로그',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/log-main'
+              },
               items: [
                 'postgresql/log-db',
                 'postgresql/log-lt',
@@ -2027,6 +2031,10 @@ const sidebars = {
               label: '로그',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/log-main'
+              },
               items: [
                 'mysql/log-db',
                 'mysql/log-lt',
