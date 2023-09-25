@@ -1,5 +1,11 @@
 const svList = [
     {
+        "name": 'Service-1.108.x',
+        "date": '2023-09-21',
+        "url": '/pdf/release-notes/service-1.108.x.pdf',
+        "docs": '/release-notes/service/service-1_108_x'
+    },
+    {
         "name": 'Service-1.106.x',
         "date": '2023-07-26',
         "url": '/pdf/release-notes/service-1.106.x.pdf',
@@ -166,8 +172,14 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.17',
+        "date": '2023-09-18',
+        "url": '/pdf/release-notes/java-agent-v2.2.16.pdf',
+        "docs": '/release-notes/java/java-2_2_16',
+    },
+    {
         "name": 'Java-agent-v2.2.16',
-        "date": '2023-08-08',
+        "date": '2023-09-08',
         "url": '/pdf/release-notes/java-agent-v2.2.16.pdf',
         "docs": '/release-notes/java/java-2_2_16',
     },
@@ -945,6 +957,12 @@ const k8sList = [
 ];
 
 const dbxList = [
+    {
+        "name": "DBX-agent-v1.6.10",
+        "date": "2023-09-15",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.10.pdf",
+        "docs": "release-notes/db/dbx-1_6_10"
+    },
     {
         "name": "DBX-agent-v1.6.9",
         "date": "2023-08-25",
