@@ -18,7 +18,7 @@ In the **_Page Load_** dashboard, you can monitor Core Web Vitals (CWV) related 
 
 Core Web Vitals (CWV) means three metrics that Google considers important among various measures that affect the end-user experience.
 
-![Core Web Vitals](/img/rum-core-web-vitals.png)
+<ImgLang img='rum-core-web-vitals.png' desc='Core Web Vitals' />
 
 :::note
 
@@ -26,33 +26,33 @@ Through the Google [Core Web Vitals Report](https://support.google.com/webmaster
 
 :::
 
-### **_Average Largest Content Rendering Time_**
+### Average Largest contentful paint
 
 **Largest Contentful Paint (LCP)\*** reports the rendering time of the largest image or text block in the browser viewport based on the first page load. It is an important user-centric metric that allows you to measure page load times as perceived by end users. A fast LCP helps end users perceive that the page is available.
 
-![Average Largest Content Rendering Time](/img/rum-lcp.png)
+<ImgLang img='rum-lcp.png' desc='Avg Largest contentfull paint TopN' />
 
-To provide an optimized user experience, your web application must have an LCP of **2.5 seconds** or less. The **_Average Largest Content Rendering Time_** widget allows you to see the average LCP based on the page group or all pages. If you see the chart by page group, it provides you the average LCP for the top 5 page groups.
+To provide an optimized user experience, your web application must have an LCP of **2.5 seconds** or less. The **_Avg Largest contentful paint TopN_** widget allows you to see the average LCP based on the page group or all pages. If you see the chart by page group, it provides you the average LCP for the top 5 page groups.
 
-### **_Average Largest Input Response Time_**
+### Average First input delay
 
 **First Input Delay (FID)** measures from when an end user first interacts with a web application page (click a link, tap a button, or use the custom Javascript-based controls) to the time until the browser starts processing the event handler in response to the interaction. It is a metric of the user's experience when interacting with an unresponsive page. When the FID is low, users consider that the page can be used normally.
 
-![Average Largest Input Response Time](/img/rum-pageload-fid.png)
+<ImgLang img='rum-pageload-fid.png' desc='Avg First input delay TopN' />
 
-To provide an optimized user experience, your web application must have an FID of 100 ms or less. The **_Average Largest Input Response Time_** widget allows you to see the average FID based on the page group or all pages. If you see the chart by page group, it provides you the average FID for the top 5 page groups.
+To provide an optimized user experience, your web application must have an FID of 100 ms or less. The **_Avg First input delay TopN_** widget allows you to see the average FID based on the page group or all pages. If you see the chart by page group, it provides you the average FID for the top 5 page groups.
 
-### **_Average Cumulative Layout Shift_**
+### Average Cumulative layout shift
 
-Cumulative Layout Shift (CLS) is an important user-driven metric for measuring visual stability by quantifying the frequency with which end users experience unexpected layout shifts. A low CLS helps ensure a good user experience.
+**Cumulative Layout Shift (CLS)** is an important user-driven metric for measuring visual stability by quantifying the frequency with which end users experience unexpected layout shifts. A low CLS helps ensure a good user experience.
 
-![Average Cumulative Layout Shift](/img/rum-pageload-cls.png)
+<ImgLang img='rum-pageload-cls.png' desc='Avg Largest contentfull paint TopN' />
 
-CLS must be kept below 0.1 to provide an optimized user experience. The **_Average Cumulative Layout Shift_** widget allows you to see the average CLS based on the page group or all pages. If you see the chart by page group, it provides you the average CLS for the top 5 page groups.
+CLS must be kept below 0.1 to provide an optimized user experience. The **_Avg Cumulative layout shift TopN_** widget allows you to see the average CLS based on the page group or all pages. If you see the chart by page group, it provides you the average CLS for the top 5 page groups.
 
-### **_Core Web Vitals Table_**
+### Core Web Vitals Table
 
-![Core Web Vitals Table](/img/rum-pageload-cwv-table.png)
+<ImgLang img='rum-pageload-cwv-table.png' desc='Core Web Vitals Table' />
 
 Based on the lookup time, for each **_page group_**, the average LCP (**_Avg. LCP_**), average FID (**_Avg. FID_**), average CLS (**_Avg. CLS_**) can be checked in the table. You can click the table header column to sort by column.
 
@@ -60,29 +60,29 @@ Based on the lookup time, for each **_page group_**, the average LCP (**_Avg. LC
 
 When an end user accesses a web application, the page load time and load count allow you to determine when loading a page takes so long and which pages are causing load.
 
-### **_Avg Page Load Time_** / **_Page Load Count_**
+### Average Page Load Time / Page Load Count
 
-![Avg Page Load Time, Page Load Count](/img/rum-pageload-timing.png)
+<ImgLang img='rum-pageload-timing.png' desc='Average Page Load Time TopN, Page Load Count TopN' />
 
-If an end user accesses the page of the web application, you can see the **_average page load time_** and **_page load count_** based on the real time or selected time. The load times and load counts are provided for each page group by default.
+If an end user accesses the page of the web application, you can see the **_Avg Page load time TopN_** and **_Page load count TopN_** based on the real time or selected time. The load times and load counts are provided for each page group by default.
 
 -   When viewed by the page group, it provides the average page load time and page load count for the top 10 page groups.
 
 -   If you hover your mouse over the widget chart, you can see the page groups, average page load times, and page load counts in the form of tooltip.
 
-### **\*Avg Router Change Time** / **_Router Change Count_**
+### Average Router Change Time / Router Change Count
 
-![Avg Router Change Time, Router Change Count](/img/rum-pageload-router.png)
+<ImgLang img='rum-pageload-router.png' desc='Avg Router Change Time TopN, Router Change Count TopN' />
 
-When the end users switch to a web application page that consists of single page applications (SPA), you can see values for **_Average Router Change Time_** and **_Router Change Count_** based on the real time or the selected time. The router change times and change counts are provided for each page group by default.
+When the end users switch to a web application page that consists of single page applications (SPA), you can see values for **_Avg Router change time TopN_** and **_Router Change Count TopN_** based on the real time or the selected time. The router change times and change counts are provided for each page group by default.
 
 -   When viewed by the page group, it provides the average router change time and change count for the top 10 page groups.
 
 -   If you hover your mouse over the widget chart, the page group, average router change time, and change count are provided in the form of tooltip.
 
-### **_Page Load Timing Table_**
+### Page load table
 
-![Page Load Timing Table](/img/rum-pageload-timing-table.png)
+<ImgLang img='rum-pageload-timing-table.png' desc='Page Load - Resource Table' />
 
 For each page group (**_Page Group_**), the page load count (**_Load count_**), average load time (**_Avg. Load Time_**), average back-end process time (**_Avg. Backend Time_**), average frontend process time (**_Avg. Frontend Time_**) can be checked in the table. You can click the table header column to sort by column.
 
@@ -90,9 +90,9 @@ For each page group (**_Page Group_**), the page load count (**_Load count_**), 
 
 You can identify resources that affect the page load. It is recommended that the load time of the resource not exceed 800 ms.
 
-### Average Resource Response Time/Resource Count
+### Average Resource Response Time / Resource Count
 
-![Avg Resource Response Time, Resource Count](/img/rum-pageload-resource.png)
+<ImgLang img='rum-pageload-resource.png' desc='Avg Resource Response Time, Resource Count' />
 
 It provides a chart for the average resource response time and resource count that occurred during loading pages. Select **_Resource Path_** on the upper right of the widget to check the data based on **_Resource Host_** and **_All_** resources.
 
@@ -102,7 +102,7 @@ It provides a chart for the average resource response time and resource count th
 
 ### Resource Table
 
-![Resource Table](/img/rum-pageload-resource-table.png)
+<ImgLang img='rum-pageload-resource-table.png' desc='Resource Table' />
 
 In the **_Page Load - Resource Table_** widget, you can see a chart for the path reference of the resource URL and the requested page. You can search data by selecting **_Resource Path_** on the upper right of the widget and switching based on the **_page group_**.
 
@@ -110,9 +110,9 @@ In the **_Page Load - Resource Table_** widget, you can see a chart for the path
 
 You can identify AJAXs that affect the page load. When the rendering data is provided through AJAX, the screen rendering may take long if the response is slow.
 
-### Avg AJAX Response Time/AJAX Count
+### Avg AJAX Response Time / AJAX Count
 
-![AJAX Response Time, AJAX Count](/img/rum-pageload-ajax.png)
+<ImgLang img='rum-pageload-ajax.png' desc='AJAX Response Time, AJAX Count' />
 
 It provides a chart for the average AJAX response time and AJAX count that occurred during loading pages. Select **_AHAX Path_** on the upper right of the widget to check the data based on **_AJAX Host_** and **_All_** AJAX.
 
@@ -122,6 +122,6 @@ It provides a chart for the average AJAX response time and AJAX count that occur
 
 ### AJAX Table
 
-![AJAX Table](/img/rum-pageload-ajax-table.png)
+<ImgLang img='rum-pageload-ajax-table.png' desc='AJAX Table' />
 
 In the **_Page Load - AJAX Table_** widget, you can see a chart for the path reference of the AJAX URL and the requested page. You can search data by selecting **_AJAX Path_** on the upper right of the widget and switching based on the **_page group_**.

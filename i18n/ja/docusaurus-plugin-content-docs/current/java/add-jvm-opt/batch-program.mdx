@@ -13,9 +13,15 @@ tags:
 
 ![Batch Application](/img/batch-app-intro.png)
 
+## エージェントダウンロード
+
+次のリンクから、バッチアプリケーションモニタリングのエージェントをダウンロードできます。
+
+<Link to='https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/whatap.agent.batch-2.2.3.jar' class='ext-link'>エージェントダウンロード</Link>
+
 ## バッチジョブ(Batch Job) のインストール
 
-バッチジョブ(Batch Job)を1つのトランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、Jobプロセス用のJob Agentと、この情報をサーバーに中継するためのHost Agentに分離した2つのエージェントをインストールする必要があります。
+バッチジョブ(Batch Job)を1つのトランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、Jobプロセス用のJob Agentと、この情報をサーバーに中継するためのHost Agentに分けて2つのエージェントをインストールする必要があります。
 
 ```bash title='Batch Job Agent'
 java -javaagent:/full/path/to/whatap.agent.batch-X.Y.Z.jar -jar {batch job jar}

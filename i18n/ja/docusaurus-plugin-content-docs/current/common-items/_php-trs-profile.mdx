@@ -44,7 +44,7 @@
 
   `compile_file`、`compile_string` 関数が追跡されるかどうかを設定します。PHP内部関数である`compile_file`、`compile_string` 関数はスクリプト実行前にコンパイルする関数で、Main、include、requireおよびautoloadスクリプトのコンパイル時点およびスクリプトファイルのパスと実行時間を確認できます。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_compile_file_basetime** <span class='type'>Millisecond</span>
 
@@ -58,7 +58,7 @@
 
   :::
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_method_enabled** <span class='type'>Boolean</span>
 
@@ -66,7 +66,7 @@
 
   実行時間が`whatap.profile_method_time`の設定値(デフォルト値`1秒`)を超えるユーザ関数の情報をトランザクション詳細情報から確認できます。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_method_time** <span class='type'>Milliseconds</span>
 
@@ -74,15 +74,15 @@
 
   `whatap.profile_method_enabled`設定で収集される関数の実行時間を設定します。 
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_method_stack_enabled** <span class='type'>Boolean</span>
 
   デフォルト値`false`
 
-  ユーザー関数のスタック情報をトランザクション詳細から確認できます。
+  ユーザー関数のスタック情報をトランザクションの詳細から確認できます。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_internal_method_enabled** <span class='type'>Boolean</span>
 
@@ -90,7 +90,7 @@
 
   PHP内部関数が追跡されるかどうかを設定します。`whatap.profile_internal_method_time`の設定値(デフォルト値`1秒`)より長くかかる場合のみ追跡します。 
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_internal_method_time** <span class='type'>Milliseconds</span> <!-- 두 개가 어떻게 다른지? 0309 수정완-->
 
@@ -98,7 +98,7 @@
 
   PHP内部関数を追跡する際、(`whatap.profile_internal_method_enabled`)関数の実行時間を設定します。 
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.profile_internal_method_param_enabled** <span class='type'>Milliseconds</span>
 
@@ -106,7 +106,7 @@
 
   PHP内部関数を追跡する際、(`whatap.profile_internal_method_enabled`)付加的に関数パラメータ情報を収集します。
 
-{@include: ../common-items/_php-restart-apply.mdx} 
+{@include: ../common-items/_php-restart-apply.mdx}
 
 - **whatap.net_udp_flush_start** <span class='type'>Boolean</span>
 
@@ -161,3 +161,65 @@
   収集されていないトランザクションの場合、TPS、平均応答時間、Apdex指標には正常に反映されますが、その他の統計データには反映されません。
 
   :::
+
+- **whatap.split_profile_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  一定量のプロファイルを仮想トランザクションに分離して、より多くのプロファイル情報を収集します。複数のトランザクション一覧に分割表記されます。
+
+  :::note
+
+  同時に設定された場合、優先順位は次の通りです。 
+
+  1.  split
+
+  2.  large
+
+  3.  circular
+
+  :::
+
+- **whatap.large_profile_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  一定量のプロファイルを圧縮および分割転送することで、メモリの増加なしにより多くのプロファイル情報を収集できます。
+
+  :::note
+
+  - 約1万件以下のプロファイル（ステップ）情報を収集できます。より多くの量は、`whatap.split_profile_enabled`オプションの使用をお勧めします。
+
+  - 同時に設定された場合、優先順位は次の通りです。 
+
+    1.  split
+
+    2.  large
+
+    3.  circular
+
+  :::
+
+- **whatap.circular_profile_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値`false`
+
+  最後の1024個のプロファイリング情報を収集します。 
+
+  :::note
+
+  同時に設定された場合、優先順位は次の通りです。 
+
+  1.  split
+
+  2.  large
+
+  3.  circular
+
+  :::
+
+- **whatap.profile_zip_enabled** <span class='type'>Boolean</span>
+
+  デフォルト値 `true`
+
+  プロファイル情報を圧縮転送します。デフォルト値は、`true`と設定されています。 

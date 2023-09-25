@@ -1,12 +1,12 @@
 ---
 id: openapi-call-server-stat-data
-title: 統計データの照会
+title: 統計データの参照
 description: 統計データ照会（Server）のためのOpenAPIに関する説明を提供します。
 tags:
   - Open API
   - API
   - 統計
-  - 統計データの照会
+  - 統計データの参照
   - Server
   - Serverモニタリング
 ---
@@ -19,12 +19,12 @@ tags:
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://service.whatap.io/open/json/stat/sm_stat?stime=시작UTC&etime=종료UTC&filter=m5&oid=0"
 ```
 
-| パラメータ  | 説明                                                                                |
-| ------ | --------------------------------------------------------------------------------- |
-| stime  | 開始時間UTC（UNIX epoch time、 millisecond）                                             |
-| etime  | 終了時間UTC（UNIX epoch time、 millisecond）                                             |
-| filter | 基本的に`m5`で自動設定されます。時間範囲内に5分の統計を取得する際に`m5`を使用します。<br/>5秒の統計は`s5`、1時間の統計は`h1`を使用します。 |
-| oid    | 特定のサーバーのみをモニタリングしたい場合は、次を追加してください。                                                |
+| パラメータ  | 説明                                                                                     |
+| ------ | -------------------------------------------------------------------------------------- |
+| stime  | 開始時間UTC（UNIX epoch time、 millisecond）                                                  |
+| etime  | 終了時間UTC（UNIX epoch time、 millisecond）                                                  |
+| filter | 基本的に`m5`で自動設定されます。時間範囲内に5分の統計を取得するために`m5`を使用します。<br/>5秒の統計は`s5`を使用し、1時間の統計は`h1`を使用します。 |
+| oid    | 特定のサーバーのみをモニタリングする場合は、次を追加してください。                                                      |
 
 :::note
 

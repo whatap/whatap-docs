@@ -17,45 +17,45 @@ tags:
 
 -   **コンテナ基準ビュー** **Nodeグループ化**
 
-    ![コンテナ基準ビュー + Nodeグループ化](https://img.whatap.io/media/images/whatap_kubernetes_container_map_group_node.png)
+    <ImgLang img='whatap_kubernetes_container_map_group_node.png' desc='コンテナ基準ビュー + Nodeグループ化' />
 
 -   **Pod基準ビュー** + **Deploymentグループ化**
 
-    ![Pod 基準ビュー + Deploymentグループ化](https://img.whatap.io/media/images/whatap_kubernetes_container_map_group_deployment.png)
+    <ImgLang img='whatap_kubernetes_container_map_group_deployment.png' desc='Pod 基準ビュー + Deploymentグループ化' />
 
 ### 主なグループ化の属性
 
 コンテナマップのビューによって対応するグループ化の属性は次のとおりです。
 
-| 標準ビュー | グループ化属性                                                                                                                        |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------ |
-| コンテナ  | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet<br/>Pod<br/>ContainerName<br/>Image<br/>DemonSet<br/>StatefulSet |
-| Pod   | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet                                                                  |
+| 標準ビュー    | グループ化属性                                                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| コンテナ     | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet<br/>Pod<br/>ContainerName<br/>Image<br/>DemonSet<br/>StatefulSet |
+| Pod      | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet                                                                  |
 
-{@include: ../common-items/_container-note-reset.mdx} 
+{@include: ../common-items/_container-note-reset.mdx}
 
 ## グループ化 & カード
 
 コンテナマップは、1つ以上のカードで構成されています。グループ化を適用されていない場合、プロジェクト内の全体コンテナ/Podが1つの大きなカードに表示されます。グループ化を適用する場合は、グループごとにカードを構成します。
 
-![グループ単位でカード一覧表示](/img/kubernetes-group-card.png)
+<ImgLang img='kubernetes-group-card.png' desc='グループ単位でカード一覧表示' />
 
 上の画面は、Deploymentを基本属性としてグループ化を適用したものです。各Deployment単位でカードが一覧されていることがわかります。
 
-グループ化を適用する場合、基本属性でグループ化できない対象は基本的に表示されません。ただし、画面に表示できる方法があります。画面上部の![指示線1](/img/number-01.png)![設定アイコン](/img/ico-setting.svg)ボタンをクリックしてください。**_不明なグループを非表示_**のチェックボックスを解除するとグループ化に対応しない対象のみを集めて個別のカードとして表示されます。
+グループ化を適用する場合、基本属性でグループ化できない対象は基本的に表示されません。ただし、画面に表示できる方法があります。画面上部の![設定アイコン](/img/ico-setting.svg)設定ボタンをクリックしてください。**_不明なグループを非表示_**のチェックボックスを解除するとグループ化に対応しない対象のみを集めて個別のカードとして表示されます。
 
 ## カード別メトリクスデータ
 
 各カードの下には、グループ化された対象に関するメトリクスデータを表示します。以下は、提供する指標の情報です。
 
-| 標準ビュー | リソース指標                                                                        | アプリケーションメトリクス                                               |
-| ----- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| コンテナ  | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/> | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS |
-| Pod   | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes          | ^                                                           |
+| 標準ビュー    | リソース指標                                                                        | アプリケーションメトリクス                                               |
+| -------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| コンテナ     | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/> | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS |
+| Pod      | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes          | ^                                                           |
 
 ユーザーのカーソルが**_Container_**(または**_Pod_**)、**_ActiveTX_**の上に置かれている場合は、各メトリクスに関する説明をポップアップで確認することができます。
 
-![メトリクスの説明](https://img.whatap.io/media/images/whatap_kubernetes_container_map_cards_metri_description.png)
+![メトリクスの説明](/img/whatap_kubernetes_container_map_cards_metri_description.png)
 
 -   ポップアップに表示された指標のうち(Avg)が付いている項目は、カードの下に表示された同じ名前の指標の数値がグループ内の個々の対象が持つ値の平均値であることを意味します。
 
@@ -63,8 +63,8 @@ tags:
 
 ### カードのメトリクスデータ非表示
 
-カードの下にメトリクスデータを非表示にしてチャートのみ焦点を当てることができます。画面上部の![指示線1](/img/number-01.png)![設定アイコン](/img/ico-setting.svg)ボタンをクリックしてください。**_カードの下部にあるメトリクスを表示_**チェックボックスを解除してください。この機能は、カード数が多い場合に便利です。
+カードの下にメトリクスデータを非表示にしてチャートのみ焦点を当てることができます。画面上部の![設定アイコン](/img/ico-setting.svg)設定ボタンをクリックしてください。**_カードの下部にあるメトリクスを表示_**チェックボックスを解除してください。この機能は、カード数が多い場合に便利です。
 
 次のように、メトリクス データを非表示にすることができます。
 
-![カード下部のメトリクスデータの表示を解除](https://img.whatap.io/media/images/whatap_kubernetes_container_map_cards_metric_off.png)
+<ImgLang img='whatap_kubernetes_container_map_cards_metric_off.png' desc='カード下段のメトリクスデータの表示を解除' />

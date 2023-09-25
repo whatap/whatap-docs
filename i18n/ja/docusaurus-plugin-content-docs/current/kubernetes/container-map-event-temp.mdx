@@ -93,12 +93,12 @@ WhaTap Kubernetesは、ユーザークラスター環境で発生したKubernete
 
 | 選択対象           | 提供イベント                                                        | 提供関連イベント                                                         |
 | -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------- |
-| 全体（All）        | >                                                             | プロジェクト全体イベント                                                     |
+| 全体(All)        | >                                                             | プロジェクト全体イベント                                                     |
 | Namespace      | >                                                             | Namespace下位の全体イベント                                               |
-| Node           | >                                                             | 当該Nodeイベントまたはノード内のPod （コンテナ） 全体イベント                              |
-| Deployment     | ① `kind`がDeployment<br/>② `name`がユーザーのDeployment名と一致          | `name`がユーザーDeployment名でスタート                                      |
-| ReplicaSet     | ① `kind`がReplicaSet<br/>② `name`がユーザーのReplicaSet名と一致          | `name`がユーザーReplicaSet名でスタート                                      |
-| Pod（コンテナ）      | ① `kind`がPod<br/>② `name`がユーザーのPod名と一致                        | 当該Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                    |
+| Node           | >                                                             | Nodeイベントまたはノード内のPod (コンテナ) 全体イベント                                |
+| Deployment     | ① `kind`は Deployment<br/>② `name`は ユーザーの Deployment 名と一致      | `name`がユーザーDeployment名でスタート                                      |
+| ReplicaSet     | ① `kind`は ReplicaSet<br/>② `name`は ユーザーの ReplicaSet 名と一致      | `name`はユーザーReplicaSet名でスタート                                      |
+| Pod(コンテナ)      | ① `kind`はPod<br/>② `name`はユーザーのPod名と一致                        | Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                      |
 
 WhaTapに保存されているKubernetesイベントは、`message`、`namespace`、`kind`、`name`、`reason`, `type`などの項目で構成されています。
 

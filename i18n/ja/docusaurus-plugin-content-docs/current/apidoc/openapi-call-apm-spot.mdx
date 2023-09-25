@@ -46,7 +46,7 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 
 | Response Field    |            Field Type           | 説明                                      |
 | ----------------- | :-----------------------------: | --------------------------------------- |
-| pcode             | <span class='api'>number</span> | 照会したプロジェクトコード                           |
+| pcode             | <span class='api'>number</span> | 取得したプロジェクトコード                           |
 | act_agent         | <span class='api'>string</span> | [アクティベーション状態のエージェント数](#active-agent)    |
 | inact_agent       | <span class='api'>string</span> | [非アクティブ状態のエージェント数](#deactive-agent)     |
 | host              | <span class='api'>string</span> | [ホスト（HOST）数](#host-count)               |
@@ -154,7 +154,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 :::note 
 
-WhaTapは最近5分以内にトランザクションを起こしたユーザをカウントし、**同時接続ユーザ**を測定します。
+WhaTapは、直前5分以内にトランザクションを行ったユーザをカウントし、**同時ユーザ**を測定します。
 
 :::
 

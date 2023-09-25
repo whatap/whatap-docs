@@ -23,11 +23,13 @@ The WhaTap Kubernetes monitoring service collects and stores the logs that occur
 Kubernetes has two types of logs:
 
 -   Standard out logs for each container
+
 -   Logs output by applications running inside each container
 
 These logs serve to compensate for monitoring blind spots that are difficult to check with the container status or metrics data. You can check these logs as follows:
 
 -   Standard Out logs of each container can be checked through the `kubectl logs` command provided by Kubernetes without entering into the container.
+
 -   Application logs in each container must be checked in the container or for that purpose, a separate log collection method must be devised.
 
 ## Recent log messages (Container Stdout/Stderr)
@@ -46,7 +48,7 @@ kubectl logs pod/<Pod명> -c <container name> -n <Namespace명>
 
 It is very inconvenient to access the terminal screen and run the command line tools every time to check logs. By using the **_Log_** function of WhaTap Kubernetes Monitoring, you can conveniently check the current logs. 
 
-![Recent Log Messages](/img/k8s-container-log.png)
+<ImgLang img='k8s-container-log.png' desc='Recent log messages' />
 
 However, there are things to think about. If you exit the container, you cannot see logs any longer. Even if the container is still running, you can check only the logs for a specific period or amount. The WhaTap's Recent Log Messages (**_Container Stdout/Stderr_**) function allows you to see the logs in the Kubernetes environment. The disappeared logs from the user environment are difficult to check even through WhaTap. 
 
@@ -58,7 +60,7 @@ Any good idea?
 
 All the related logs disappear when the container is shut down, but you can check the logs that have occurred on the selected container or pod through **_Log search_**. When storing the container Standard Out logs, you can set the storage period and check information for specific targets or perform correlation analysis. 
 
-![Log search](/img/k8s-log-search-106.png)
+<ImgLang img='k8s-log-search.png' desc='Log Search' />
 
 -   Through the ![number 1](/img/number-01.png) time selector, you can select a desired time for searching data. 
 

@@ -63,26 +63,31 @@ It is not easy to understand the resource configuration data and the current usa
 
 -   **Display Detail** screen > **_Metrics_** - Resource usage monitoring and analysis
 
-    ![Resource usage monitoring and analysis](https://img.whatap.io/media/images/whatap_kubernetes_container_map_resource_example.png)
+    <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='Resource usage monitoring and analysis' />
 
 -   You can select a specific container to check its status.
 
-    ![Resource usage monitoring and analysis](https://img.whatap.io/media/images/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
+    ![Resource usage monitoring and analysis](/img/whatap_kubernetes_container_map_metrics_cpu_mem_example.png)
 
 According to the above data, the CPU is set to Request 0.2 cores (200 m) and Limit 0.4 cores (400 m). The current CPU usage is 0.02 cores (20 m) (average for 5 seconds). If you check the CPU-related trend graph on the right, you can see that the CPU usage increases intermittently, although there is enough space.
 
 The memory is set to Request 128 MiB and Limit 256 MiB. By the way, the current memory usage is 184 MiB. According to the memory-related trend graph on the right, it exceeded 100% on a request basis and is using more than 70% on a limit basis.
 
+<!-- 
+>
+컨테이너 예시가 특정적이라 기존 화면 잘라서 사용
+-->
+
 The main WhaTap metrics related to CPU and memory are as follows: 
 
-| Target resource | Shortname      | Name                                              | Description                                   |
-| --------------- | -------------- | ------------------------------------------------- | --------------------------------------------- |
-| CPU             | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | Container CPU utilization                     |
-| ^               | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | Container CPU utilization by request          |
-| ^               | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | Container CPU utilization by limit            |
-| Memory          | MemWs          | **_Container Memory Working Set (byte)_**         | Container memory working set                  |
-| ^               | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | Container memory working set usage by request |
-| ^               | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | Container memory working set usage by quota   |
+| Target resource | Shortname      | Name                                              | Description                                           |
+| --------------- | -------------- | ------------------------------------------------- | ----------------------------------------------------- |
+| CPU             | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | Container CPU utilization                             |
+| ^               | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | Container CPU utilization by request                  |
+| ^               | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | Container CPU utilization by limit                    |
+| Memory          | MemWs          | **_Container Memory Working Set (byte)_**         | Container memory working set                          |
+| ^               | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | Container memory working set usage by request         |
+| ^               | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | Container memory working set usage by quota           |
 
 :::note
 
@@ -97,8 +102,11 @@ For example, let's assume that the container's memory request has been set to 12
 WhaTap provides various metrics other than CPU and memory.
 
 -   **_Container Block I/O Read Byte_** (IoReadBytes)
+
 -   **_Container Block I/O Write Byte_** (IoWriteBytes)
+
 -   **_Container Network Receive Byte_** (NetRxBytes)
--   **_Container Network Transmit Byte_** (NetTxByes) 
+
+-   **_Container Network Transmit Byte_** (NetTxByes)
 
 For more information about the WhaTap Kubernetes metrics, see [the following](metrics-intro).

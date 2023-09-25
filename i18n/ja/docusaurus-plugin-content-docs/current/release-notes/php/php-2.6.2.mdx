@@ -1,0 +1,69 @@
+---
+id: php-2_6_2
+title: PHP Agent v2.6.2
+toc_max_heading_level: 2
+pagination_next: release-notes/php/php-2_6_1
+---
+
+2023年9月13日
+
+:::info
+
+**ダウンロード**
+
+| OS名                             | アーキテクチャ |  ファイル形式  |                                    ダウンロード                                   |
+| ------------------------------- | :-----: | :------: | :-------------------------------------------------------------------------: |
+| Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-php-2.6-2.x86_64.rpm) |
+| Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-php_2.6.2_amd64.deb) |
+| Freebsd 10以降                    | x86 x64 |    TXZ   |       [ダウンロード](http://repo.whatap.io/freebsd/10/whatap-php-2.6.2.txz)       |
+| Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-php-2.6.2.tar.gz)    |
+
+:::
+
+-   <Status>Feature</Status>大容量プロファイル処理オプションの追加
+
+    -   既存のプロファイルは、最大1024個のプロファイル情報を収集しました。 設定で最大値を増やすことができますが、メモリの増加は必然的に発生しました。
+
+    -   一定量のプロファイルを圧縮および分割転送して、メモリの増加なしにより多くのプロファイル情報を収集できるように改善しました。
+
+    -   **whatap.large_profile_enabled** <span class='type'>Boolean</span>
+
+        デフォルト値`false`
+
+        約1万件以下のプロファイル（ステップ）情報を収集できます。 より多くの量を収集する場合、`split_profile_enabled`オプションとして使用することをお勧めします。
+
+    -   **whatap.split_profile_enabled** <span class='type'>Boolean</span>
+
+        デフォルト値`false`
+
+        一定量のプロファイルを仮想トランザクションに分離して、より多くのプロファイル情報を収集します。 複数のトランザクション一覧に分割表記します。
+
+    :::note
+
+    -   二つのオプションを設定した場合、`whatap.split_profile_enabled`オプションが優先的に適用されます。
+
+    -   上記のオプションに関連するエージェント設定の詳細は、[次の文書](../../php/agent-transaction#php-trs-trc)を参照してください。
+
+    :::
+
+-   <Status>Feature</Status>プロファイル データ圧縮転送オプションの追加
+
+    -   **whatap.profile_zip_enabled** <span class='type'>Boolean</span> デフォルト値`true`
+
+    :::note 
+
+    -   上記のオプションに関連するエージェント設定の詳細は、[次の文書](../../php/agent-transaction#php-trs-trc)を参照してください。
+
+    :::
+
+-   <Status>Changed</Status>特定のHTTP Method収集を除く機能を、すべてのトランザクション対象に変更
+
+    -   `whatap.ignore_http_method`オプションはすべてのトランザクション対象に変更します。
+
+    -   既存の除外機能は、`whatap.http_method_urls`オプションで設定されたトランザクションのみを除外しました。 `whatap.http_method_urls`オプションを削除し、すべてのトランザクション対象に変更します。
+
+    :::note
+
+    -   上記のオプションに関連するエージェント設定の詳細は、[次の文書](../../php/agent-transaction#php-track-http-trs)を参照してください。
+
+    :::

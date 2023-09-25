@@ -7,15 +7,15 @@ tags:
   - MSA
 ---
 
-Auto Scale Out環境で自動登録されたエージェントのIP／Port／PID情報だけで業務単位の情報を認知することが難しい場合があります。この場合、`okind`属性をJVMオプションとして付与することで簡単に識別できます。
+Auto Scale Out環境で自動登録されたエージェントのIP／Port／PID情報だけでは業務単位の情報を認識することが難しい場合があります。この場合、`okind`属性をJVMオプションを指定することで簡単に識別できます。
 
 次は典型的なDocker環境の説明です。
 
 * * *
 
--   各エージェントは、細かく分けたMSA（Micro Service Architecture）コンポーネントです。
+-   各エージェントは、細かく分けたMSA(Micro Service Architecture) コンポーネントです。
 
--   エージェントは自動的にScale In／Outされます。
+-   エージェントは、自動的にScale In/Outされます。
 
 -   どのIPを持つサーバーからどのPIDでアプリケーションが起動するか予測できません。
 

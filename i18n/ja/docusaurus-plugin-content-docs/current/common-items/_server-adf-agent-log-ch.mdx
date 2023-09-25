@@ -1,17 +1,17 @@
-WhaTapエージェントログ(`whatap_infrad.log`、`whatap_infra.log`、`whatap_infrad.fork.stdout.log`)のパスを変更します。指定パスがない場合は、WhaTapエージェントが作成を試みます。エージェント2.0.6バージョン以降に対応されています。
+WhaTapエージェントログ(`whatap_infrad.log`、`whatap_infra.log`、`whatap_infrad.fork.stdout.log`)のパスを変更します。指定パスがない場合は、WhaTapエージェントは指定パスの作成を試みます。エージェント2.0.6バージョン以降に対応されています。
 
 <Tabs>
 <TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
-echo "agent.log.prefix=変更したいディレクトリ" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+echo "agent.log.prefix=変更するディレクトリ" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
 ```
 
 </TabItem>
 <TabItem value="wps" label="Windows Powershell">
 
 ```bash title=SH
-Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "agent.log.prefix=変更したいディレクトリ"
+Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "agent.log.prefix=変更するディレクトリ"
 ```
 
 </TabItem>

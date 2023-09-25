@@ -24,7 +24,7 @@ To trace applications running on Kubernetes, the WhaTap monitoring agent must ha
 
 :::
 
-![Trace](https://img.whatap.io/media/images/whatap_kubernetes_container_map_trace_example.png)
+<ImgLang img='whatap_kubernetes_container_map_trace_example.png' desc='Trace' />
 
 The **_Trace_** function has the following sub menus: **_Dashboard_** and **Transaction List**.
 
@@ -34,9 +34,9 @@ Dashboard provides key data for the following applications:
 
 -   **_Active Transaction_**: Current running transactions that are distinguished by color.
 
-    -   Red (Very slow): 8 seconds or more
-    -   Orange (Slow): 3 to 8 seconds
-    -   Blue (Normal): 0 to 3 seconds
+    -   <span class='vslow'>Red</span> (<span class='vslow'>Very slow</span>): 8 seconds or more
+    -   <span class='slow'> Orange</span> (<span class='slow'>Slow</span>): 3 to 8 seconds
+    -   <span class='normal'>Blue</span> (<span class='normal'>Normal</span>): 0 to 3 seconds
 
 -   **_Active Transaction Count_**(Active Transaction Trend)
 
@@ -82,4 +82,4 @@ Dashboard provides key data for the following applications:
 
 **_Transaction list_** screen provides the transaction list for a specified time period. To check the transaction distribution chart and check only the transactions in a specific section, select (drag) a target from the hitmap chart of the above trace **_Dashboard_**.
 
-![Transaction list](/img/k8s-tx-list.png)
+<ImgLang img='k8s-tx-list.png' desc='Transaction List' />

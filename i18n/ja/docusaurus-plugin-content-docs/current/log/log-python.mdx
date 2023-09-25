@@ -1,17 +1,17 @@
 ---
 id: log-python
 title: Python
-description: Pythonアプリケーションでログを収集する方法について案内します。
+description: Pythonアプリケーションからログを収集する方法について説明します。
 tags:
   - ログモニタリング
   - Python
 ---
 
-Pythonアプリケーションでログを収集するには、次のことを確認してください。
+Pythonアプリケーションからログを収集するには、次の点を確認してください。
 
 ## エージェントのアップデート
 
-Pythonエージェント1.2.2バージョンから可能です。アップデート方法は[次の文書](../python/manage-pkg#update-pkg)を参考にしてください。
+Pythonエージェント1.2.2バージョン以降で可能です。アップデート方法は[次の文書](../python/manage-pkg#update-pkg)を参照してください。
 
 ## エージェント設定の確認
 
@@ -31,7 +31,7 @@ echo "logsink.files=$LOGFILES" | sudo tee -a {設定ファイルパス}/whatap.c
 
 ### ログとウェブトランザクションの連動
 
-トランザクションごとに発生したログを別途照会できるように、トランザクションID`{txid}`をログに出力します。WhaTapモニタリングでは、Python LogRecordに`{txid}`を自動注入してフォーマターの設定時、ログファイルに`{txid}`を出力できるようにします。
+トランザクションごとに発生したログを個別で表示できるようにトランザクションID`{txid}`をログに出力します。WhaTapモニタリングは、Python LogRecordに`{txid}`を自動的に挿入し、フォーマッタの設定時にログファイルに`{txid}`が出力できるようにします。
 
 ```shell
 settings.py

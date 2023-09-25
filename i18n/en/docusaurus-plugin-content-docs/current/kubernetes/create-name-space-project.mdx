@@ -11,11 +11,12 @@ tags:
 Consider separating the namespace projects from the cluster project in the following situations:
 
 -   A large number of resources exist in a single cluster (master) project and can be separated based on the Kubernetes namespace.
+
 -   You have to monitor only specific namespaces because each Kubernetes namespace has a different department or person in charge. 
 
 To separate each Kubernetes Namespace in your cluster project into a separate WhaTab namespace, create a project through **_Management_** > **_Namespace Management_**.
 
-![Namespace Management](https://img.whatap.io/media/images/whatap_kubernetes_namespace_project_mgt.png)
+<ImgLang img='whatap_kubernetes_namespace_project_mgt.png' desc='Namespace Management' />
 
 :::note
 
@@ -25,14 +26,14 @@ To separate each Kubernetes Namespace in your cluster project into a separate Wh
 
 If **_+ Add Project_** appears in **_Namespace List_**, click it to create a WhaTap namespace project. Enter the namespace name and then select **_OK_**.
 
-![Namespace project creation](https://img.whatap.io/media/images/whatap_kubernetes_create_namespace_project_popup.png)
+<ImgLang img='whatap_kubernetes_create_namespace_project_popup.png' desc='Creating a namespace project' />
 
 Because an extra project is separated if a namespace project is created, you cannot see it from the cluster (master) project in **_Namespace List_**.
 
 The namespace added by being separated from the cluster (master) project into a namespace project displays the status information as follows:
 
-![Namespace project](https://img.whatap.io/media/images/whatap_kubernetes_namespace_project_mgt_complete.png)
+<ImgLang img='whatap_kubernetes_namespace_project_mgt_complete.png' desc='Complete creating Namespace project' />
 
 If a namespace project is created under a cluster project, you can check the list of projects including cluster projects and move between projects. In **_Dashboard_** > **_Container Map_**, select the project list box.
 
-![Container map menu's project list](https://img.whatap.io/media/images/whatap_kubernetes_container_map_namespace_project_list.png)
+<ImgLang img='whatap_kubernetes_container_map_namespace_project_list.png' desc="Container map menu's project list" />

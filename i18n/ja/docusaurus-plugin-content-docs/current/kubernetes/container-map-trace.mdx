@@ -24,7 +24,7 @@ Kubernetes上で実行中のアプリケーションを追跡するためには�
 
 :::
 
-![트레이스](https://img.whatap.io/media/images/whatap_kubernetes_container_map_trace_example.png)
+<ImgLang img='whatap_kubernetes_container_map_trace_example.png' desc='トレース' />
 
 **_トレース_**機能の下位メニューは、**_ダッシュボード_**、**_TXリスト_**で構成されています。
 
@@ -34,9 +34,9 @@ Kubernetes上で実行中のアプリケーションを追跡するためには�
 
 -   **_Active Transaction_**：現在実行中のトランザクションで、トランザクション実行時間に応じて色分け
 
-    -   赤（Very slow）：8秒以上
-    -   オレンジ色（Slow） ：3秒～8秒
-    -   青（Normal） ：0秒～3秒
+    -   <span class='vslow'>赤色</span>(<span class='vslow'>Very slow</span>): 8秒以上
+    -   <span class='slow'>橙色</span>(<span class='slow'>Slow</span>): 3秒~8秒
+    -   <span class='normal'>青色</span>(<span class='normal'>Normal</span>): 0秒~3秒
 
 -   **_Active Transaction Count_**(アクティブトランザクションの推移)
 
@@ -82,4 +82,4 @@ Kubernetes上で実行中のアプリケーションを追跡するためには�
 
 **_トランザクション一覧_**画面は、指定された時間帯のトランザクション一覧情報を提供します。もしトランザクション分布図を確認して特定区間のトランザクションだけを確認したい場合は、上記トレース**_ダッシュボード_**のヒートマップチャートで対象を選択(ドラッグ)してください。
 
-![TXリスト](/img/k8s-tx-list.png)
+<ImgLang img='k8s-tx-list.png' desc='TXリスト' />

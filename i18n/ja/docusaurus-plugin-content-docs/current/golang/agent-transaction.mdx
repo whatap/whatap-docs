@@ -15,7 +15,7 @@ tags:
 
 :::
 
-## トランザクショントレーシング
+## トランザクショントレーシング{#trs-trc}
 
 -   **profile_step_normal_count** <span class='type'>Int</span>
 
@@ -57,13 +57,75 @@ tags:
 
     デフォルト値`false`
 
-    トランザクションURLのクエリ ストリングを一緒に収集する機能を活性化します。`whatap.query_string_urls`に登録されたURLのみ適用されます。
+    トランザクションURLのクエリ ストリングを一緒に収集する機能を活性化します。`query_string_urls`に登録されたURLのみ適用されます。
 
 -   **query_string_urls** <span class='type'>String</span>
 
     トランザクションからクエリストリングを収集するURLを登録します。
 
-## HTTPトランザクションの追跡
+-   **split_profile_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    一定量のプロファイルを仮想トランザクションに分離して、より多くのプロファイル情報を収集します。複数のトランザクション一覧に分割表記されます。
+
+    :::note
+
+    同時に設定された場合、優先順位は次の通りです。 
+
+    1.  split
+
+    2.  large
+
+    3.  circular
+
+    :::
+
+-   **large_profile_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    一定量のプロファイルを圧縮および分割転送することで、メモリの増加なしにより多くのプロファイル情報を収集できます。
+
+    :::note
+
+    -   約1万件以下のプロファイル（ステップ）情報を収集できます。より多くの量は、`split_profile_enabled`オプションの使用をお勧めします。
+
+    -   同時に設定された場合、優先順位は次の通りです。 
+
+        1.  split
+
+        2.  large
+
+        3.  circular
+
+    :::
+
+-   **circular_profile_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    最後の1024個のプロファイリング情報を収集します。 
+
+    :::note
+
+    同時に設定された場合、優先順位は次の通りです。 
+
+    1.  split
+
+    2.  large
+
+    3.  circular
+
+    :::
+
+-   **profile_zip_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    プロファイル情報を圧縮転送します。デフォルト値は、`true`と設定されています。
+
+## HTTPトランザクションの追跡{#track-http-trs}
 
 -   **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -129,6 +191,22 @@ tags:
 
     トランザクションのHost情報を出力します。値が`false`の場合、トランザクションのURLはURIのみ表示され、`true`の場合は、`/xxx.aaa.com/URL`形式で出力されます。
 
+-   **ignore_http_method** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    指定されたHTTP Methodでリクエストされたトランザクション情報は収集しません。複数を指定するときはコンマ(,)で区切ります。
+
+    :::note 
+
+    次のように、`OPTIONS`と`HEAD`2つの値を指定する場合は、コンマ(,)で区切ります。
+
+    ```ini title='whatap.conf'
+    ignore_http_method=OPTIONS, HEAD
+    ```
+
+    :::
+
 -   **biz_exceptions** <span class='type'>String</span>
 
     デフォルト値`Empty`
@@ -158,7 +236,7 @@ tags:
 
     デフォルト値 `3000`
 
-    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表記できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
+    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表示できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
 
 -   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
@@ -168,7 +246,7 @@ tags:
 
     デフォルト値`30000`
 
-    トランザクションの終了を待つ制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報をこの以上収集しません。トランザクションのトレース情報から"Lost Connection"を確認できます。
+    トランザクションが終了する制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報はそれ以上収集されません。トランザクションのトレース情報から"Lost Connection"を確認できます。
 
 -   **trace_useragent_enabled** <span class='type'>Boolean</span>
 

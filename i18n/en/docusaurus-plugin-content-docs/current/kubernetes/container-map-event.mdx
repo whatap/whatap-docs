@@ -13,11 +13,12 @@ Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection
 It provides records for all events that occur during the resource lifecycle. The events provided in WhaTap Kubernetes Monitoring are as follows.
 
 -   Kubernetes Event (**_Kubernetes_**)
+
 -   WhaTap event (**_WhaTap_**)
 
 ## Basic screen guide
 
-![Kubernetes Display Detail Event tab](/img/k8s-event-default3.png)
+<ImgLang img='k8s-event-default3.png' desc='Kubernetes Display Detail Event tab' />
 
 -   You can select a ![number 1](/img/number-01.png) Kubernetes event (**_Kubernetes_**) or WhaTap event (**_WhatTap_**) for query. 
 
@@ -63,7 +64,7 @@ It provides records for all events that occur during the resource lifecycle. The
 
 $ kubectl get events -A
  NAMESPACE   LAST SEEN   TYPE      REASON                   OBJECT                            MESSAGE
- community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5`
+ community   15m         Normal    ScalingReplicaSet        deployment/baekdusan              Scaled up replica set baekdusan-59554d4859 to 5
  community   12m         Normal    ScalingReplicaSet        deployment/suraksan               Scaled down replica set suraksan-66fc4bf889 to 3
  community   5m18s       Normal    ScalingReplicaSet        deployment/baekdusan              Scaled down replica set baekdusan-59554d4859 to 3
  community   7m10s       Normal    Created                  pod/suraksan-66fc4bf889-h2cw8     Created container suraksan
@@ -88,7 +89,7 @@ However, the event data is not stored continuously. The events that occurred aft
 
 WhaTap Kubernetes collects and stores all Kubernetes events that occurred in the user cluster environment. Event data such as pod, ReplicaSet, deployment, and namespace is provided according to the target to check.
 
-![Kubernetes events](/img/k8s-container-event-k8s-all.png)
+<ImgLang img='k8s-container-event-k8s-all.png' desc='Kubernetes Events' />
 
 The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>. The Kubernetes events provided by user selection are as follows.
 
@@ -107,19 +108,19 @@ Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `n
 
 **_WhaTap_** events occur depending on the event conditions registered by the event configuration. Under the **_Event_** tab on the detailed view screen of **_Container Map_**, you can see the list of events based on the WhaTap alert settings.
 
-![WhaTap events](/img/k8s-container-event-wt-all.png)
+<ImgLang img='k8s-container-event-wt-all.png' desc='WhaTap Events' />
 
 The bars on the left of each event indicate the event levels. Gray means <span class='k8s-normal'>Info</span>, orange <span class='slow'>Warning</span>, and red <span class='vslow'>Critical</span>. Available WhaTap events according to the selected target are as follows.
 
-| Selected target | Provided event                                            |
-| --------------- | --------------------------------------------------------- |
-| All             | All project events                                        |
-| Namespace       | All events under the namespace                            |
-| Node            | `onodeName` is identical to the user node name            |
-| Deployment      | `deployment` is identical to the Deployment name          |
-| ReplicaSet      | `replicaSetName` is identical to the user ReplicaSet name |
-| Pod             | `podName` is identical to the user pod name               |
-| Container       | `containerId` is identical to the user Container ID       |
+| Selected target  | Provided event                                              |
+| ---------------- | ----------------------------------------------------------- |
+| All              | All project events                                          |
+| Namespace        | All events under the namespace                              |
+| Node             | `onodeName` is identical to the user node name              |
+| Deployment       | `deployment` is identical to the Deployment name            |
+| ReplicaSet       | `replicaSetName` is identical to the user ReplicaSet name   |
+| Pod              | `podName` is identical to the user pod name                 |
+| Container        | `containerId` is identical to the user Container ID         |
 
 WhaTap events consist of the items such as `message`, `status`, `title`, and `level`. The following example screen displays the **_WhatTap Container Event_** records.
 
@@ -137,27 +138,8 @@ WhaTap events consist of the items such as `message`, `status`, `title`, and `le
 
 -   Through the ![number 5](/img/number-05.png) bar chart, see the **_Trend of number of events_** in the specified time zone.
 
-    > If you look at the trend of event counts on a daily basis from 8:57 on July 10th to 8:57 on July 11th, you can see that two events were counted at 8:48 on the 11th. 
+    > If you look at the trend for event counts for the specified time ranges, you can see that two events have been counted. 
 
 -   From the ![number 6](/img/number-06.png) event history, check the information of event records. You can see the levels for each event through the bars on the left of the list. To check all event messages and tags, select the ![Down arrow icon](/img/ic-caret-down.svg) icon.
 
     > In the event record list, you can view for two <span class='slow'>Warning</span> level events: `CPU utilization of 85% or more by the container limit` and `GC count or more`. 
-
-<!-- 
-
-1 그룹 선택 시 각 전체 이벤트
-
-2 블록/마이크로 블록 선택 시
-  k8s 이벤트: 파드 이벤트/연관 이벤트
-  와탭 이벤트: 컨테이너 이벤트
-
-3 k9s 이벤트/와탭 이벤트 비교 안내 필요
-  e.g. 파드 이벤트/연관 이벤트(k8s 이벤트) 및 컨테이너 이벤트(와탭 이벤트) 요소 기술 필요
-
-4 로그와 마찬가지로 로그 검색 이동 기능 추후 제거 예정
-
-5 디폴트 조회 기준 1일?
-
-6 이벤트 수 추이 차트(로그 트렌드 바 차트랑 다르게 바 선택 시 구간 확인 안됨?)
-
--->

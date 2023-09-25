@@ -1147,6 +1147,9 @@ main {
       border: none;
       width: 12px;
     }
+    img.rl-img-top8 {
+      margin-top: 8px;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
@@ -1194,11 +1197,22 @@ main {
     img[alt*='light'], img[alt*='dark'] {
       background-color: #fff;
     }
-    img[src*='flexboard-time-set'] {
+    img[src*='flexboard-time-set.png'], img[src*='flexboard-time-set-en.png'], img[src*='flexboard-time-set-ja.png'] {
       width: 306px;
     }
-    img[src*='flexboard-time-set-pause.png'], img[src*='flexboard-time-set-select.png'] {
+    img[src*='flexboard-time-set-pause.png'], 
+    img[src*='flexboard-time-set-pause-en.png'],
+    img[src*='flexboard-time-set-pause-ja.png'],
+    img[src*='flexboard-time-set-select.png'],
+    img[src*='flexboard-time-set-select-en.png'],
+    img[src*='flexboard-time-set-select-ja.png'] {
       width: 600px;
+    }
+    img[src*='db-sql-stat-disable-filter'] {
+      width: 200px;
+    }
+    img[src*='db-sql-stat-add-filter'] {
+      width: 450px;
     }
     ol {
       margin: 0;
@@ -1816,7 +1830,7 @@ main {
 // media query
 @media (min-width: 997px) {
   @supports (scrollbar-gutter: stable) {
-    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+    nav.thin-scrollbar {
       padding: 0px 8px !important;
     }
   }

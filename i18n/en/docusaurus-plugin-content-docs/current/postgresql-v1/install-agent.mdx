@@ -25,7 +25,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 ## Downloading the WhaTap database agent
 
-{@include: ../common-items/_db-install-agent-steps.mdx} 
+{@include: ../common-items/_db-install-agent-steps.mdx}
 
 3.  Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
@@ -53,7 +53,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 {@include: ../common-items/_db-create-monitoring-account.mdx}
 
-<!-- PostgreSQL -->
+<!-- PostgreSQL-->
 
 ```bash showLineNumbers
 # Version 10 or later
@@ -66,6 +66,7 @@ alter user whatap with superuser;
  
 # In case of using the kill session
 alter user whatap with superuser;
+grant rds_superuser to whatap; # Incase of using AWS RDS
 ```
 
 ## DB user file creation {#create-db-user}

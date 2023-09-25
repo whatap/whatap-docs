@@ -25,10 +25,10 @@ MXQLを使用する方法は次のとおりです。
 
 したがって、それぞれの場合に使用されるAPIのパスが異なります。 
 
-| MXQL活用方法                                                                                         | API                        |
-| ------------------------------------------------------------------------------------------------ | -------------------------- |
-| 直接MXQLクエリを作成する場合                                                                                 | [MXQL text API](#text-api) |
-| 「**SaaS サービスで提供する事前に定義されたMXQLクエリの一覧**」を使用する場合、（[次の文書]）（../mxql/mxql-guide#custom-query-saas）を参照） | [MXQL path API](#path-api) |
+| MXQL活用方法                                                                                        | API                        |
+| ----------------------------------------------------------------------------------------------- | -------------------------- |
+| 直接MXQLクエリを作成する場合                                                                                | [MXQL text API](#text-api) |
+| 「**SaaS サービスで提供する事前に定義されたMXQLクエリの一覧**」を使用する場合、([次の文書](../mxql/mxql-guide#custom-query-saas) 参照) | [MXQL path API](#path-api) |
 
 ## MXQLOpenAPIを呼び出す
 
@@ -49,7 +49,7 @@ OpenAPIの呼び出し時、ヘッダーに含まれる内容は次のとおり�
 
 ### MXQL text API{#text-api}
 
-次のイマージは、MXQL実行結果の例です。
+次の図は、MXQL実行結果の例です。
 
 ![MXQL実行結果の例](https://img.whatap.io/media/images/open_api_mxql_text_example.png)
 
@@ -76,29 +76,29 @@ curl --location 'https://api.whatap.io/open/api/flush/mxql/text' \
 }'
 ```
 
-| Key     | Value                                                                                                                                          |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| stime   | データ照会の開始時間                                                                                                                                     |
-| etime   | データ照会の終了時間                                                                                                                                     |
-| mql     | 直接作成したMXQLクエリ                                                                                                                                  |
-| limit   | 最大データ照会数                                                                                                                                       |
-| pageKey | 文字列 `mxql`の固定値                                                                                                                                 |
-| inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }"}`       |
-| param   | <span class='api'>Optional</span> [次の文書](../mxql/mxql-guide#bind-parameter)参照<br/>例）`{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
+| Key     | Value                                                                                                                                            |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| stime   | データ参照の開始時間                                                                                                                                       |
+| etime   | データ参照の終了時間                                                                                                                                       |
+| mql     | 作成したMXQLクエリ                                                                                                                                      |
+| limit   | 最大データ参照数                                                                                                                                         |
+| pageKey | 文字列 `mxql`の固定値                                                                                                                                   |
+| inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }"}`         |
+| param   | <span class='api'>Optional</span> [次の文書](../mxql/mxql-guide#bind-parameter) 参照<br/> 例）`{ "$oidFirst": "520111224", "$oidSecond": "1031483086" }` |
 
 :::note
 
-リクエストのボディに`stime`、`etime`、`$oidFirst`、`$oidSecond`項目は、ユーザー環境に合った時間、oid値で適用する必要があります。
+リクエストの本文に`stime`、`etime`、`$oidFirst`、`$oidSecond`項目は、ユーザー環境に適した時間、oid値で適用する必要があります。
 
 :::
 
--   照会されたデータがない場合
+-   参照されたデータがない場合
 
     ```json title='ResponseBody Example 1'
     []
     ```
 
--   照会されたデータがある場合
+-   参照されたデータがある場合
 
     ```json title='ResponseBody Example 2'
     [
@@ -215,28 +215,28 @@ curl --location 'https://api.whatap.io/open/api/flush/mxql/path' \
 }'
 ```
 
-| Key     | Value                                                                                                                                    |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| stime   | データ照会の開始時間                                                                                                                               |
-| etime   | データ照会の終了時間                                                                                                                               |
-| mql     | [次の文書](../mxql/mxql-guide#custom-query-saas)を参照                                                                                          |
-| limit   | 最大データ照会数                                                                                                                                 |
-| pageKey | 文字列 `mxql`の固定値                                                                                                                           |
-| inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject)参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }" }` |
+| Key     | Value                                                                                                                                     |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| stime   | データ参照の開始時間                                                                                                                                |
+| etime   | データ参照の終了時間                                                                                                                                |
+| mql     | [次の文書](../mxql/mxql-guide#custom-query-saas) を参照                                                                                          |
+| limit   | 最大データ参照数                                                                                                                                  |
+| pageKey | 文字列 `mxql`の固定値                                                                                                                            |
+| inject  | <span class='api'>Optional</span> [次の文書](../mxql/mxql-calculate#inject) 参照<br/> 例）`{ "default": "ORDER {key : [oid],  sort : [desc] }" }` |
 
 :::note
 
-リクエストのボディに`stime`、`etime`項目は、ユーザー環境に合った時間で適用する必要があります。
+リクエストの本文に`stime`、`etime`項目は、ユーザー環境に適した時間で適用する必要があります。
 
 :::
 
--   照会されたデータがない場合
+-   参照されたデータがない場合
 
     ```json title='ResponseBody Example 1'
     []
     ```
 
--   照会されたデータがある場合
+-   参照されたデータがある場合
 
     ```json title='ResponseBody Example 1'
     [
