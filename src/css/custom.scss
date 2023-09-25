@@ -1147,6 +1147,15 @@ main {
       border: none;
       width: 12px;
     }
+    img.fl-left {
+      float: left;
+      margin: 5px 20px 5px 0;
+    }
+    img.shortcutIcon {
+      display: inline-block;
+      border: none;
+      position: relative;
+    }
     img.rl-img-top8 {
       margin-top: 8px;
     }
@@ -1207,6 +1216,12 @@ main {
     img[src*='flexboard-time-set-select-en.png'],
     img[src*='flexboard-time-set-select-ja.png'] {
       width: 600px;
+    }
+    img[src*='db-sql-stat-disable-filter'] {
+      width: 200px;
+    }
+    img[src*='db-sql-stat-add-filter'] {
+      width: 450px;
     }
     ol {
       margin: 0;
