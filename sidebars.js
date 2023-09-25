@@ -1405,6 +1405,8 @@ const sidebars = {
               items: [
                 'postgresql/analysis-count-trend',
                 'postgresql/analysis-lock-and-deadlock',
+                'postgresql/analysis-session-history',
+                'postgresql/analysis-wait-events',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -1430,6 +1432,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'postgresql/stat',
+                'postgresql/pg-sql-stat',
                 'postgresql/database-size',
                 'postgresql/report-intro',
               ],
@@ -1439,6 +1442,10 @@ const sidebars = {
               label: '로그',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'postgresql/log-main'
+              },
               items: [
                 'postgresql/log-db',
                 'postgresql/log-lt',
@@ -1589,6 +1596,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'postgresql-v1/stat',
+                'postgresql-v1/database-size',
                 'postgresql-v1/report-intro',
               ],
             },
@@ -1732,6 +1740,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'oracle/stat',
+                'oracle/table-space-size',
+                'oracle/sga-size',
                 'oracle/report-intro',
               ],
             },
@@ -1875,6 +1885,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql-v1/stat',
+                'mysql-v1/table-size',
+                'mysql-v1/database-size',
                 'mysql-v1/report-intro',
               ]
             },
@@ -2018,6 +2030,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/stat',
+                'mysql/mysql-sql-stat',
+                'mysql/table-size',
                 'mysql/database-size',
                 'mysql/report-intro',
               ]
@@ -2027,6 +2041,10 @@ const sidebars = {
               label: '로그',
               collapsible: true,
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/log-main'
+              },
               items: [
                 'mysql/log-db',
                 'mysql/log-lt',
@@ -2446,6 +2464,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'cubrid/stat',
+                'cubrid/table-size',
+                'cubrid/table-space-size',
                 'cubrid/report-intro',
               ],
             },
@@ -3296,12 +3316,11 @@ const sidebars = {
               // className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
-            {
-              type: 'doc',
-              label: 'Telegraf',
-              id: 'release-notes/telegraf/telegraf-release-notes',
-            },
-            
+            // {
+            //   type: 'doc',
+            //   label: 'Telegraf',
+            //   id: 'release-notes/telegraf/telegraf-release-notes',
+            // },
             {
               type: 'doc',
               label: 'Focus',
@@ -4144,6 +4163,45 @@ const sidebars = {
       ]
     }
   ],
+  telegrafSidebar: [
+    {
+      type: 'category',
+      label: 'Telegraf',
+      collapsible: true,
+      collapsed: true,
+      // description: 'Telegraf에 대해 안내합니다.',
+      link: {
+        type: 'doc',
+        id: 'telegraf/introduction'
+      },
+      items: [
+        {
+          type: 'category',
+          label: '플러그인 설치와 활용',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'telegraf/telegraf-plugin-install',
+            'telegraf/telegraf-plugin-settings',
+          ]
+        },
+        {
+          type: 'category',
+          label: '에이전트 설치와 활용',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'telegraf/supported-spec',
+            'telegraf/install-agent',
+            'telegraf/agent-troubleshooting',
+            'telegraf/set-agent',
+            'telegraf/manage',
+          ]
+        },
+        'telegraf/telegraf-usage',
+      ]
+    }
+  ],
   pluginSidebar: [
     {
       type: 'category',
@@ -4155,43 +4213,6 @@ const sidebars = {
         id: 'extensions'
       },
       items: [
-        {
-          type: 'category',
-          label: 'Telegraf',
-          collapsible: true,
-          collapsed: true,
-          // description: 'Telegraf에 대해 안내합니다.',
-          link: {
-            type: 'doc',
-            id: 'telegraf/introduction'
-          },
-          items: [
-            {
-              type: 'category',
-              label: '플러그인 설치와 활용',
-              collapsible: true,
-              collapsed: false,
-              items: [
-                'telegraf/telegraf-plugin-install',
-                'telegraf/telegraf-plugin-settings',
-              ]
-            },
-            {
-              type: 'category',
-              label: '에이전트 설치와 활용',
-              collapsible: true,
-              collapsed: false,
-              items: [
-                'telegraf/supported-spec',
-                'telegraf/install-agent',
-                'telegraf/agent-troubleshooting',
-                'telegraf/set-agent',
-                'telegraf/manage',
-              ]
-            },
-            'telegraf/telegraf-usage',
-          ]
-        },
         {
           type: 'category',
           label: 'Focus',
