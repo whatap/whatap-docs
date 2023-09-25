@@ -1405,6 +1405,8 @@ const sidebars = {
               items: [
                 'postgresql/analysis-count-trend',
                 'postgresql/analysis-lock-and-deadlock',
+                'postgresql/analysis-session-history',
+                'postgresql/analysis-wait-events',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -1430,6 +1432,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'postgresql/stat',
+                'postgresql/pg-sql-stat',
                 'postgresql/database-size',
                 'postgresql/report-intro',
               ],
@@ -1593,6 +1596,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'postgresql-v1/stat',
+                'postgresql-v1/database-size',
                 'postgresql-v1/report-intro',
               ],
             },
@@ -1736,6 +1740,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'oracle/stat',
+                'oracle/table-space-size',
+                'oracle/sga-size',
                 'oracle/report-intro',
               ],
             },
@@ -1879,6 +1885,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql-v1/stat',
+                'mysql-v1/table-size',
+                'mysql-v1/database-size',
                 'mysql-v1/report-intro',
               ]
             },
@@ -2022,6 +2030,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mysql/stat',
+                'mysql/mysql-sql-stat',
+                'mysql/table-size',
                 'mysql/database-size',
                 'mysql/report-intro',
               ]
@@ -2454,6 +2464,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'cubrid/stat',
+                'cubrid/table-size',
+                'cubrid/table-space-size',
                 'cubrid/report-intro',
               ],
             },
