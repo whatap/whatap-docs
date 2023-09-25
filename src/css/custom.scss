@@ -1147,7 +1147,10 @@ main {
       border: none;
       width: 12px;
     }
-
+    img.fl-left {
+      float: left;
+      margin: 5px 20px 5px 0;
+    }
     img.shortcutIcon {
       display: inline-block;
       border: none;
