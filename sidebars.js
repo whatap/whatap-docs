@@ -2985,14 +2985,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1_108_x',
+            id: 'release-notes/service/service-1_110_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1_108_x',
+              id: 'release-notes/service/service-1_110_x',
               className: 'new',
             },
+            'release-notes/service/service-1_108_x',
             'release-notes/service/service-1_106_x',
             'release-notes/service/service-1_104_x',
             'release-notes/service/service-1_102_x',
@@ -3001,7 +3002,6 @@ const sidebars = {
             'release-notes/service/service-1_96_0',
             'release-notes/service/service-1_94_0',
             'release-notes/service/service-1_92_0',
-            'release-notes/service/service-1_90_0',
             'release-notes/service/service-previous',
           ]
         },
@@ -3289,7 +3289,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_0',
@@ -3298,7 +3298,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_2_1',
                 'release-notes/browser/browser-v1_2_1',
@@ -3316,11 +3316,11 @@ const sidebars = {
               // className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
-            // {
-            //   type: 'doc',
-            //   label: 'Telegraf',
-            //   id: 'release-notes/telegraf/telegraf-release-notes',
-            // },
+            {
+              type: 'doc',
+              label: 'Telegraf',
+              id: 'release-notes/telegraf/telegraf-release-notes',
+            },
             {
               type: 'doc',
               label: 'Focus',
@@ -4163,45 +4163,6 @@ const sidebars = {
       ]
     }
   ],
-  telegrafSidebar: [
-    {
-      type: 'category',
-      label: 'Telegraf',
-      collapsible: true,
-      collapsed: true,
-      // description: 'Telegraf에 대해 안내합니다.',
-      link: {
-        type: 'doc',
-        id: 'telegraf/introduction'
-      },
-      items: [
-        {
-          type: 'category',
-          label: '플러그인 설치와 활용',
-          collapsible: true,
-          collapsed: false,
-          items: [
-            'telegraf/telegraf-plugin-install',
-            'telegraf/telegraf-plugin-settings',
-          ]
-        },
-        {
-          type: 'category',
-          label: '에이전트 설치와 활용',
-          collapsible: true,
-          collapsed: false,
-          items: [
-            'telegraf/supported-spec',
-            'telegraf/install-agent',
-            'telegraf/agent-troubleshooting',
-            'telegraf/set-agent',
-            'telegraf/manage',
-          ]
-        },
-        'telegraf/telegraf-usage',
-      ]
-    }
-  ],
   pluginSidebar: [
     {
       type: 'category',
@@ -4230,6 +4191,43 @@ const sidebars = {
             'focus/focus-usage',
           ]
         },
+        {
+          type: 'category',
+          label: 'Telegraf',
+          collapsible: true,
+          collapsed: true,
+          // description: 'Telegraf에 대해 안내합니다.',
+          link: {
+            type: 'doc',
+            id: 'telegraf/introduction'
+          },
+          items: [
+            {
+              type: 'category',
+              label: '플러그인 설치와 활용',
+              collapsible: true,
+              collapsed: false,
+              items: [
+                'telegraf/telegraf-plugin-install',
+                'telegraf/telegraf-plugin-settings',
+              ]
+            },
+            {
+              type: 'category',
+              label: '에이전트 설치와 활용',
+              collapsible: true,
+              collapsed: false,
+              items: [
+                'telegraf/supported-spec',
+                'telegraf/install-agent',
+                'telegraf/agent-troubleshooting',
+                'telegraf/set-agent',
+                'telegraf/manage',
+              ]
+            },
+            'telegraf/telegraf-usage',
+          ]
+        }
       ]
     }
   ],
