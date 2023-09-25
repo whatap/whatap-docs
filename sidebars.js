@@ -5165,6 +5165,7 @@ const sidebars = {
                 'kubernetes/container-map-metrics',
                 'kubernetes/container-map-log',
                 'kubernetes/container-map-event',
+                'kubernetes/container-map-call-information',
               ],
             },
             {
