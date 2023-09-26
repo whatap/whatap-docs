@@ -1,6 +1,7 @@
 /build
 /backup
 /.vscode
+/node_modules
 
 # Generated files
 .docusaurus
