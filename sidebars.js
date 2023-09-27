@@ -4732,6 +4732,7 @@ const sidebars = {
           collapsed: false,
           items: [
             'url/url-event',
+            'url/set-receive-event',
             'url/url-event-history',
           ],
         },
