@@ -3050,7 +3050,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/php-2_6_2',
@@ -3059,7 +3059,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_6_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_6_1',
                 'release-notes/php/php-2_6_0',
@@ -3153,7 +3153,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_2_3',
@@ -3162,7 +3162,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_2_3',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_2_2',
                 'release-notes/golang/golang-0_1_14',
