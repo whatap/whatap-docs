@@ -2087,7 +2087,7 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'MS SQL Server 모니터링',
+      label: 'SQL Server 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -3516,7 +3516,7 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'MS SQL Server',
+          label: 'SQL Server',
           href: 'mssql/monitoring-intro',
         },
         {
