@@ -47,6 +47,22 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
     :::
 
+-   **hooklog_custom_methods**
+
+    ユーザーカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用してください。
+
+    ```java title='Java'
+    package io.home.test;
+
+    public class MyLog {  
+        public void customLog(String log) { ... }
+    }
+    ```
+
+    ```ini title='whatap.conf'
+    hooklog_custom_methods=io.home.test.MyLog.customLog
+    ```
+
 -   **logsink_enabled** <span class='type'>Boolean</span>
 
     デフォルト値`false`
@@ -58,12 +74,6 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
     アプリケーションが起動する前に_whatap.conf_に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
 
     :::
-
--   **logsink_zip_enabled** <span class='type'>Boolean</span>
-
-    デフォルト値 `true`
-
-    Logデータ転送データの圧縮有無を設定します。 
 
 -   **logsink_trace_enabled** <span class='type'>Boolean</span>
 

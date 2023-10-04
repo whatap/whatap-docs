@@ -48,6 +48,22 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
     :::
 
+-   **hooklog_custom_methods**
+
+    Register a user-defined log. An arbitrary log framework content is delivered. Use this to trace logs of the log module created on the website.
+
+    ```java title='Java'
+    package io.home.test;
+
+    public class MyLog {  
+        public void customLog(String log) { ... }
+    }
+    ```
+
+    ```ini title='whatap.conf'
+    hooklog_custom_methods=io.home.test.MyLog.customLog
+    ```
+
 -   **logsink_enabled** <span class='type'>Boolean</span>
 
     Default `false`
@@ -59,12 +75,6 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
     Before running the application, if in _whatap.conf_, the `hooklog_enabled` option is set, this option can dynamically turn on or off the log monitoring.
 
     :::
-
--   **logsink_zip_enabled** <span class='type'>Boolean</span>
-
-    Default `true`
-
-    It sets whether or not to compress the log data to transfer. 
 
 -   **logsink_trace_enabled** <span class='type'>Boolean</span>
 
