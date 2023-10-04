@@ -19,7 +19,7 @@ cat >extension/logsink.conf<<EOL
     ## ログファイル指定時、日付パターン(strftime.org)指定可能
     path = "/some/path/%Y-%m-%d/.log" 
     disabled = false
-    encoding = "euc-kr"
+    encoding = "shift-jis"
 
   [[inputs.logsink.file]]
     path = "/some/other/log"
@@ -53,7 +53,7 @@ excludeNames = [ ".gz",".zip" ]
 ## ログファイル指定時、日付パターン(strftime.org)指定可能
 path = "c:\\whatap\\logs%Y-%m-%d_.log"
 disabled = false
-encoding = "euc-kr"
+encoding = "shift-jis"
 [[inputs.logsink.file]]
 ## 行単位ログでそのキーワードを検索する時、以前のログにマージ
 nowrap_keywords = ["Caused by:", "Test"]

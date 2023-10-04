@@ -19,7 +19,7 @@ cat >extension/logsink.conf<<EOL
     ## When setting a log file, you can set the date pattern (strftime.org).
     path = "/some/path/%Y-%m-%d/.log" 
     disabled = false
-    encoding = "euc-kr"
+    encoding = "utf-8”"
 
   [[inputs.logsink.file]]
     path = "/some/other/log"
@@ -52,7 +52,7 @@ excludeNames = [ ".gz",".zip" ]
 ## When setting a log file, you can set the date pattern (strftime.org).
 path = "c:\\whatap\\logs%Y-%m-%d_.log"
 disabled = false
-encoding = "euc-kr"
+encoding = "utf-8"
 
 [[inputs.logsink.file]]
 ## When searching for the keyword in the line-by-line log, merge it with the previous log. 
