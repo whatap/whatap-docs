@@ -4,7 +4,7 @@ npx docusaurus-prince-pdf -u https://docs.whatap.io/php/introduction --prince-ar
 npx docusaurus-prince-pdf -u https://docs.whatap.io/nodejs/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-apm-nodejs-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u https://docs.whatap.io/python/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-apm-python-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u https://docs.whatap.io/dotnet/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-apm-dotnet-monitoring.pdf --dest ./static/pdf --include-index
-npx docusaurus-prince-pdf -u https://docs.whatap.io/golang/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-apm-golang-monitoring.pdf --dest ./static/pdf --include-index
+npx docusaurus-prince-pdf -u https://docs.whatap.io/golang/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-apm-go-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u https://docs.whatap.io/server/introduction --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-server-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u https://docs.whatap.io/postgresql/monitoring-intro --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-db-postgresql-monitoring.pdf --dest ./static/pdf --include-index
 npx docusaurus-prince-pdf -u https://docs.whatap.io/oracle/monitoring-intro --prince-args="--page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-db-oracle-monitoring.pdf --dest ./static/pdf --include-index
