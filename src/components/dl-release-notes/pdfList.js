@@ -172,10 +172,16 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.18',
+        "date": '2023-09-26',
+        "url": '/pdf/release-notes/java-agent-v2.2.18.pdf',
+        "docs": '/release-notes/java/java-2_2_18',
+    },
+    {
         "name": 'Java-agent-v2.2.17',
         "date": '2023-09-18',
-        "url": '/pdf/release-notes/java-agent-v2.2.16.pdf',
-        "docs": '/release-notes/java/java-2_2_16',
+        "url": '/pdf/release-notes/java-agent-v2.2.17.pdf',
+        "docs": '/release-notes/java/java-2_2_17',
     },
     {
         "name": 'Java-agent-v2.2.16',
@@ -1053,6 +1059,12 @@ const xosList = [
 ];
 
 const browserList = [
+    {
+        "name": "Browser-agent-v1.3.1",
+        "date": "2022-09-25",
+        "url": "/pdf/release-notes/browser-agent-v1.3.1.pdf",
+        "docs": "release-notes/browser/browser-v1_3_1"
+    },
     {
         "name": "Browser-agent-v1.3.0",
         "date": "2022-09-06",
