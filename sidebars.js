@@ -966,6 +966,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          label: '부가기능',
+          id: 'dotnet/additional-function'
+        },
+        {
+          type: 'doc',
           label: '관리하기',
           id: 'dotnet/agent-manage'
         },
@@ -3123,14 +3128,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_5',
+                id: 'release-notes/dotnet/dotnet-2_1_6',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_5',
+                  id: 'release-notes/dotnet/dotnet-2_1_6',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_5',
                 'release-notes/dotnet/dotnet-2_1_4',
                 'release-notes/dotnet/dotnet-2_1_3',
                 'release-notes/dotnet/dotnet-2_1_2',
@@ -3139,7 +3145,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-2_0_7',
-                'release-notes/dotnet/dotnet-2_0_6',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3207,14 +3212,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_3_7',
+                id: 'release-notes/k8s/k8s-1_3_8',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_3_7',
+                  id: 'release-notes/k8s/k8s-1_3_8',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_3_7',
                 'release-notes/k8s/k8s-1_3_6',
                 'release-notes/k8s/k8s-1_3_5',
                 'release-notes/k8s/k8s-1_3_4',
@@ -3223,7 +3229,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_3_1',
                 'release-notes/k8s/k8s-1_2_9',
                 'release-notes/k8s/k8s-1_2_8',
-                'release-notes/k8s/k8s-1_2_7',
                 'release-notes/k8s/k8s-previous',
               ],
             },
