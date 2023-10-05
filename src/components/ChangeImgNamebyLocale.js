@@ -8,20 +8,20 @@ export default function ChangeImgName({img, desc, className}) {
     } = useDocusaurusContext();
     const [isValid, setIsValid] = useState(null);
     
-    // const imageValidator = (path) => {
-    //     useEffect(() => {
-    //         if (isValid === null) {
-    //             const img = new Image();
-    //             img.src = path;
-    //             img.onload = () => {
-    //                 setIsValid(true);
-    //             }
-    //             img.onerror = () => {
-    //                 setIsValid(false);
-    //             };
-    //         }
-    //     }, [path, isValid]);
-    // }
+    const imageValidator = (path) => {
+        useEffect(() => {
+            if (isValid === null) {
+                const img = new Image();
+                img.src = path;
+                img.onload = () => {
+                    setIsValid(true);
+                }
+                img.onerror = () => {
+                    setIsValid(false);
+                };
+            }
+        }, [path, isValid]);
+    }
 
     let fext = img.substr(img.lastIndexOf('.') + 1);
     let fileName = img.replace('.' + fext, '');
@@ -31,28 +31,28 @@ export default function ChangeImgName({img, desc, className}) {
     } else {
         imgFilePath = useBaseUrl('/' + currentLocale + '/img/' + fileName + '-' + currentLocale + '.' + fext);
     }
-    // imageValidator(imgFilePath);
-    // if (isValid === false) {
-    //     return (
-    //         <div class='imgError'>
-    //             Image not found at path: {imgFilePath}
-    //         </div>
-    //     );
-    // }
-
-    function onError(e) {
+    imageValidator(imgFilePath);
+    if (isValid === false) {
+        var errTarget;
         if (currentLocale != 'ko') {
-            e.target.src = '/' + currentLocale + '/img/' + img;
+            errTarget = '/' + currentLocale + '/img/' + img;
         } else {
-            e.target.src = '/img/' + img;
+            errTarget = '/img/' + img;
         }
+        return (
+            <p>
+                <img src={errTarget} 
+                    alt={desc} 
+                    class={className}
+                />
+            </p>
+        );
     }
     return (
         <p>
             <img src={imgFilePath} 
                 alt={desc} 
                 class={className}
-                onError={(e) => onError(e)}
             />
         </p>
     );
