@@ -1,79 +1,93 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import checkProduct from '@site/src/components/CheckProduct';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Translate, { translate } from "@docusaurus/Translate";
 // import ImageError from "@site/src/components/imageError.js"
 
+function checkImage(imgURL) {
+  // console.log('check: ' + imgURL)
+  const [imageExists, setImageExists] = React.useState(false);
+  useEffect(() => {
+    const img = new Image();
+    img.src = imgURL;
+
+    const handleImageLoad = () => {
+      setImageExists(true);
+    };
+
+    const handleImageError = () => {
+      setImageExists(false);
+    };
+
+    img.addEventListener('load', handleImageLoad);
+    img.addEventListener('error', handleImageError);
+
+    return () => {
+      img.removeEventListener('load', handleImageLoad);
+      img.removeEventListener('error', handleImageError);
+    };
+  }, [imgURL]);
+
+  return imageExists;
+}
+
 const ImageChecker = ({ img, desc, className }) => {
   const {
     i18n: {currentLocale},
   } = useDocusaurusContext();
-
-  const [isValid, setIsValid] = useState(null);
-    
-  const imageValidator = (path) => {
-      useEffect(() => {
-          if (isValid === null) {
-              const img = new Image();
-              img.src = path;
-              img.onload = () => {
-                  setIsValid(true);
-              }
-              img.onerror = () => {
-                  setIsValid(false);
-              };
-          }
-      }, [ ]);
-
-      if (isValid === false) {
-        return false
-      }
-      return true
-  }
 
   const product = checkProduct();
   let fext = img.substr(img.lastIndexOf('.') + 1);
   let fileName = img.replace('.' + fext, '');
   let imgFilePath, curChk;
   if (currentLocale != 'ko') {
-    imgFilePath = useBaseUrl('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
+      imgFilePath = useBaseUrl('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
+      curChk = true; // 다국어일 경우
   } else {
-    imgFilePath = useBaseUrl('/img/' + fileName + product + '.' + fext);
+      imgFilePath = useBaseUrl('/img/' + fileName + product + '.' + fext);
+      curChk = false; // 베이직 언어일 경우
   }
-
+  let imageExists = checkImage(imgFilePath);
+  
   let prodImage = useBaseUrl('/img/' + fileName + product + '.' + fext);
-  let imageExists = imageValidator(imgFilePath);
+  let basicImage = useBaseUrl('/img/' + fileName + '.' + fext);
 
-  function onError(e) {
-    if (currentLocale != 'ko') {
-        e.target.src = '/' + currentLocale + '/img/' + img;
-    } else {
-        e.target.src = '/img/' + img;
-    }
-  }
+  let prodExists = checkImage(prodImage);
+  let basicExists = checkImage(basicImage);
 
-  if (imageExists === false) {
-    console.log(imgFilePath, imageValidator(imgFilePath));
-    return (
-      <p>
+  // console.log(imageExists);
+  // console.log("last: " + imgFilePath);
+  
+  return (
+    <p>
+      {/* pdf 출력 시 사용 코드 */}
+      {/* <img 
+        src={imgFilePath} 
+        alt={desc} 
+        className={className} 
+      /> */}
+      {/* ^ pdf 출력 시 사용 코드 */}
+
+      {imageExists ? (
+        <img 
+          src={imgFilePath} 
+          alt={desc} 
+          className={className} 
+        />
+      ) : ( prodExists ? (
         <img 
           src={prodImage} 
           alt={desc} 
           className={className} 
-          onError={(e) => onError(e)}
         />
-      </p>
-    )
-  }
-
-  return (
-    <p>
-      <img 
-        src={imgFilePath} 
-        alt={desc} 
-        className={className} 
-      />
+      ) : ( <img 
+          src={basicImage} 
+          alt={desc} 
+          className={className}
+        />
+      ))
+      }
     </p>
   );
 };
