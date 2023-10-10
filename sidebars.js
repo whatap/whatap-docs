@@ -3025,14 +3025,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_18',
+                id: 'release-notes/java/java-2_2_19',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_18',
+                  id: 'release-notes/java/java-2_2_19',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_18',
                 'release-notes/java/java-2_2_17',
                 'release-notes/java/java-2_2_16',
                 'release-notes/java/java-2_2_15',
@@ -3041,7 +3042,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_12',
                 'release-notes/java/java-2_2_11',
                 'release-notes/java/java-2_2_10',
-                'release-notes/java/java-2_2_9',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3295,7 +3295,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_1',
@@ -3304,7 +3304,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_3_0',
                 'release-notes/browser/browser-v1_2_2',
