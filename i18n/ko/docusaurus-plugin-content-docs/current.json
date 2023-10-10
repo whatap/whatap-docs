@@ -1478,5 +1478,9 @@
   "sidebar.logSidebar.doc.로그 파싱하기": {
     "message": "로그 파싱하기",
     "description": "The label for the doc item 로그 파싱하기 in sidebar logSidebar, linking to the doc log/log-parser"
+  },
+  "sidebar.dotNetSidebar.doc.부가기능": {
+    "message": "부가 기능",
+    "description": "The label for the doc item 부가기능 in sidebar dotNetSidebar, linking to the doc dotnet/additional-function"
   }
 }

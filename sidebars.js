@@ -966,7 +966,7 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: '부가기능',
+          label: '부가 기능',
           id: 'dotnet/additional-function'
         },
         {
