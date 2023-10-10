@@ -112,6 +112,9 @@ html[lang='en-US'] {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   }
+  div[class*='announcementBar'] {
+    display: none;
+  }
 }
 
 html[lang='ja-JP'] {
@@ -120,6 +123,9 @@ html[lang='ja-JP'] {
   font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  }
+  div[class*='announcementBar'] {
+    display: none;
   }
 }
 * {
