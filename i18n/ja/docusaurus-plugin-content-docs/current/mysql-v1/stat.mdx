@@ -1,36 +1,25 @@
 ---
 id: stat
-title: 統計データの参照
+title: SQL統計
 description: データベースごとの統計データを提供します。
 tags:
   - MySQL
   - データベース
-  - データベースモニタリング
   - 統計
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+<!-- SQL 통계 -->
 
-<!-- 概要 -->
+{@include: ../common-items/_db-stat-sql-desc.mdx}  
 
-{@include: ../common-items/_db-stat-desc.mdx}
-
-<!-- SQL統計 -->
-
-{@include: ../common-items/_db-stat-sql-desc.mdx}
-
-<!-- SQL統計の基本使用の案内 -->
+<!-- SQL 통계 기본 사용 안내 -->
 
 {@include: ../common-items/_db-stat-sql-basic.mdx} 
 
-<!-- クエリ別の実行推移、詳細を見る -->
+<!-- 쿼리별 수행 추이, 자세히 보기 -->
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
+{@include: ../common-items/_db-stat-sql-view-query.mdx}  
 
-<!-- テーブルサイズ増減 -->
+## カラム情報ガイド
 
-{@include: ../common-items/_db-stat-sql-tablesize.mdx}
-
-<!-- データベースサイズ -->
-
-{@include: ../common-items/_db-databasesize-desc.mdx}
+{@include: ../common-items/_db-sql-stat-column.mdx}

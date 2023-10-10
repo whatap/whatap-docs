@@ -1,0 +1,99 @@
+---
+id: mysql-sql-stat
+title: Mysql SQL Statistics
+description: The events_statements_summary_by_digest data in the performance_schema is collected once an hour to provide statistical data. Use it for SQL analysis along with the existing `SQL statistics` menu based on active sessions.
+tags:
+  - MySQL
+  - Database
+  - Database Monitoring
+  - Statistics
+---
+
+Home > Select Project > **_STAT/REPORT_** > **_Mysql SQL Statistics_**
+
+SQL statistical data (execution count, execution time, number of rows, etc.) provided by MySQL's `performance_schema` is collected through the `performance_schema.events_statements_summary_by_digest` view. 
+
+:::note
+
+-   This function is supported in DBX agent 1.6.10 or later.
+
+-   For more information about the `events_statements_summary_by_digest` view, see [the following link](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-statement-summary-tables.html).
+
+:::
+
+## Configuration
+
+The following settings are required in the monitoring target DB to use the **_Mysql SQL Statistics_** menu.
+
+1.  Enable **Performance Schema** in the database configuration (_my.cnf_).
+
+    ```ini title='my.cnf'
+    performance_schema = on
+    ```
+
+2.  Set the view role to allow the monitoring account to read the data.
+
+    ```bash
+    grant select on performance_schema.* to whatap;
+    ```
+
+3.  Set the options in the DBX agent.
+
+    ```ini title='whatap.conf'
+    statements=true
+    ```
+
+:::note
+
+Delta values are calculated and collected from `events_statements_summary_by_digest` at 1-hour intervals. Therefore, collection begins one hour after configuration.
+
+:::
+
+## Basic screen guide
+
+<ImgLang img='db-mysql-sql-stat.png' desc='MYSQL SQL Statistics' />
+
+{@include: ../common-items/_db-product-sql-stat-basic-usage.mdx}
+
+## Column information guide
+
+| Field name                | Description                                                                                                                               |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `digest_text`             | SQL statement                                                                                                                             |
+| `digest`                  | Hash value of `digest_text`                                                                                                               |
+| `schema_name`             | Schema name                                                                                                                               |
+| `count_star`              | Execution count                                                                                                                           |
+| `timer_wait`              | Total execution time (sec)                                                                                                                |
+| `lock_time`               | Waited time caused by table lock (sec)                                                                                                    |
+| `rows_affected`           | Number of affected rows (insert, update, replace)                                                                                         |
+| `rows_sent`               | Number of returned rows                                                                                                                   |
+| `rows_examined`           | Number of rows reviewed in the server layer                                                                                               |
+| `created_tmp_disk_tables` | If the sum of disk temporary tables created by the server while executing commands is too high, consider increasing the sort memory size. |
+| `created_tmp_tables`      | Sum of internal temporary tables created by the server while executing commands.                                                          |
+| `select_full_join`        | Number of table scans without using indexes. If it is not 0, index checking is required.                                                  |
+| `select_full_range_join`  | Number of joins using the range search on reference tables                                                                                |
+| `select_range`            | Number of joins using the range in the first table                                                                                        |
+| `select_range_check`      | Number of joins with no key. If it is not 0, checking is required.                                                                        |
+| `select_scan`             | Number of full scans to the driving table                                                                                                 |
+| `sort_merge_passes`       | Count sorted by sort merge                                                                                                                |
+| `sort_range`              | Count sorted by range                                                                                                                     |
+| `sort_rows`               | Number of sorted rows                                                                                                                     |
+| `sort_scan`               | Count sorted by scan                                                                                                                      |
+| `no_index_used`           | Number of queries without using any index. Indexing is required.                                                                          |
+| `no_good_index_used`      | Number of times that no index is found for use among the indexes on the server. If the count increases, index checking is required.       |
+
+## See query details{#query-details}
+
+<ImgLang img='db-mysql-sql-stat-details.png' desc='SQL details' />
+
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
+
+## Filtering the searched results
+
+<ImgLang img='db-sql-stat-add-filter-mysql.png' desc='Filtering' />
+
+{@include: ../common-items/_db-product-sql-stat-filtering-result.mdx}
+
+## Configuring the table columns{#change-column}
+
+{@include: ../common-items/_db-v2-data-edit-column.mdx} 

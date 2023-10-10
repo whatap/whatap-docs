@@ -10,15 +10,26 @@ tags:
 
 whatap-telegrafサービス(Service)が実行されていない場合、または、エラーが発生した場合は、サービスを再起動します。
 
--   **Red Hat/CentOS**  
+:::note
+
+Telegrafプラグインおよびエージェントは、ユーザーが該当サービスに直接インストールおよび設定する必要があります。
+
+:::
+
+-   **Red Hat/CentOS**
+
     ```bash title=SH
     $ service whatap-telegraf restart
     ```
--   **Debian/Ubuntu**  
+
+-   **Debian/Ubuntu**
+
     ```bash title=SH
     $ sudo service whatap-telegraf restart
     ```
--   **FreeBSD**  
+
+-   **FreeBSD**
+
     ```bash title=SH
     $ service whatap_telegraf restart
     ```

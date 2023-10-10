@@ -125,9 +125,9 @@ Because we are intended to find common factors of failures, first check whether 
 
 ## Analysis of sections and stacks
 
-How can we check if the cause of failure is an internal issue rather than an external one? WhaTap uses the technology called **Active Stack** to collect stack data of active transactions. Stack data is collected every 10 seconds, and the collected data can be checked in the statistics. It also includes the data of each method, SQL, and external call that perform the service logic. 
+How can we check if the cause of failure is an internal issue rather than an external one? WhaTap uses the technology called **Active Stack** to collect stack data of active transactions. Stack data is collected every 10 seconds, and the collected data can be checked in the statistics. It also includes the data of each method, SQL, and outbound call that perform the service logic. 
 
-If it is an internal problem, you can find and solve any problem by checking the execution history of transactions over time and identifying the slowdown section. If it is an external problem, you can check the SQL and external call data.
+If it is an internal problem, you can find and solve any problem by checking the execution history of transactions over time and identifying the slowdown section. If it is an external problem, you can check the SQL and outbound call data.
 
 For example, to find any factor that causes a lock in a vertical line pattern, check the contact points between the slowest transaction and the fastest transaction in the same pattern. Drag the area where the pattern occurs on the hitmap chart. The **_TX Trace_** list displays the transactions of the area dragged to the list. Sort the **_TX traces_** by the elapsed time, and then select the transaction that took the longest. The **_Statistics_** window displays information details of the selected transaction.
 

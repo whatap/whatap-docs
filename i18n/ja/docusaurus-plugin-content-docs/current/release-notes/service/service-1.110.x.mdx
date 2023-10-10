@@ -1,0 +1,240 @@
+---
+id: service-1_110_x
+title: Service 1.110.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-1_108_x
+---
+
+## Service 1.110.2
+
+2023年9月27日
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>メニューから<UI>ヒートマップ</UI>ウィジェットの右上に<UI>分析</UI>><UI>ヒートマップ</UI>メニューに移動するリンクボタンの追加
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>メニューのエージェント選択オプションにエージェント別称が表示されなかった現象の修正
+
+-   <Status>Fixed</Status><UI>分析</UI>><UI>ヒートマップ</UI>メニューから時間移動(<LinkImage img='left-arrow.svg' desc='왼쪽 이동 아이콘' />/<LinkImage img='right-arrow.svg' desc='오른쪽 이동 아이콘' />)ボタンクリック時にデータが更新されないエラーを修正
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからXOSインストールディレクトリ設定に関連するメッセージの多言語翻訳の修正</p>
+
+</div>
+
+## Service 1.110.1
+
+2023年9月25日
+
+<div class='indentTab'>
+
+### `Application`
+
+#### ダッシュボード
+
+<p><Status>Fixed</Status>アプリケーションダッシュボードのアクティブウィジェットで断続的にチャートツールチップに表示される値とチャートで描かれる値が異なる現象を修正</p>
+
+</div>
+
+## Service 1.110.0
+
+2023年9月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status>サービスのお知らせ機能の追加、画面右上に<LinkImage img='ic-notice.svg' desc='공지 아이콘' />を確認してください。
+
+-   <Status>Feature</Status>左側のサイドバーのサービス紹介ページにアクセスできるアイコンメニューを追加
+
+    <LinkImage img='release/release-notes-add-sidebar-product.png' className='rl-img-top8' />
+
+-   <Status>Fixed</Status><UI>時間選択</UI>オプションで時間を1つだけ選択した後、外部の検索ボタンを押しても選択した時間が適用されるように修正
+
+#### ダッシュボード
+
+<p><Status>Changed</Status>ヒートマップの新規モーダル説明案内に技術文書リンクを追加</p>
+
+#### Flexボード
+
+<p><Status>Fixed</Status>コピーしたダッシュボードをお気に入りメニューから進入すると、一部のウィジェットが更新されない問題を修正</p>
+
+#### 分析
+
+<p><Status>Feature</Status><UI>分析</UI>><UI>メトリクスチャート</UI>メニューからアクティブなすべてのウィジェットを閉じることができるボタンを追加</p>
+
+#### 管理
+
+<p><Status>Changed</Status><UI>エージェント設定</UI>メニューからユーザーの利便性を高めるため、オプション一覧の簡素化、<UI>オプション作成</UI>セクションの左一覧から適用されたオプションの上位カテゴリ分類を削除し、最終オプション項目だけが見えるように修正</p>
+
+#### 利用内訳
+
+-   <Status>Fixed</Status>プロモーション終了期間をUTC時間基準で出力するよう修正
+
+-   <Status>Changed</Status><UI>決済情報</UI>メニューで決済情報入力欄に部署名、電話番号、請求書言語を入力できるように修正
+
+-   <Status>Changed</Status><UI>請求及び納付内訳</UI>メニューの<UI>請求内容の詳細を見る</UI>から<UI>CPUコア</UI>の代わりに<UI>課金集計量</UI>を表示
+
+-   <Status>Feature</Status>以下のメニューでKRWを基準にJPY、USD為替レートに応じて金額及び為替レートアップデート日付を表示
+
+    -   **_プロジェクト有償転換_**
+
+    -   **_請求及び支払履歴_**
+
+    -   **_請求書プレビュー_**
+
+* * *
+
+### `Application`
+
+-   <Status>Feature</Status><UI>アプリケーションダッシュボード</UI>メニューを次のように改編しました。
+
+    -   時間選択者オプションを追加し、過去のデータを照会できるように改善しました。
+
+        |                 リアルタイムモード                |
+        | :--------------------------------------: |
+        |    ![](/img/release/realtime-mode.png)   |
+        |              **非リアルタイムモード**              |
+        | ![](/img/release/none-realtime-mode.png) |
+
+    -   ユーザーが希望する場所にウィジェットを追加または削除できます。 また希望するサイズに調整することも可能です。
+
+        ![](/img/release/apm-dashboad-editable-widget.png)
+
+    -   ユーザーが編集したウィジェットの位置とサイズ、レイアウトを保存して読み込めるプリセット機能を追加しました。
+
+        ![](/img/release/apm-dashboard-preset-feature.png)
+
+-   ダッシュボードの<UI>トレース分析</UI>ウィンドウで次の機能を追加および修正しました。
+
+    -   <Status>Feature</Status><UI>マルチトランザクション</UI>タブの<UI>テーブル</UI>ビュー、<UI>ツリー</UI>ビューモードでプロジェクトフィルター機能を追加
+
+    -   <Status>Fixed</Status><UI>マルチトランザクション</UI>タブの<UI>チャート</UI>ビューモードでトランザクションノードをクリックすると<UI>テーブル</UI>ビューに切り替わるエラーの修正
+
+    -   <Status>Feature</Status><UI>トランザクションログ</UI>タブからデータがない場合は、次の状況に応じたメッセージを出力するように機能を追加
+
+        -   実際のログデータがない場合
+        -   エージェント未設定でログを収集できない場合
+        -   ログが活性化されていない場合
+
+-   <Status>Fixed</Status><UI>サイトマップ</UI>><UI>日付別アプリケーション状態</UI> メニューにアクセスするとき、ホワイトアウトバグの修正
+
+* * *
+
+### `Database`
+
+#### 共通
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンス一覧</UI>メニューからチャートデータの間隔を修正
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>インスタンス一覧</UI>メニューからレプリケーション状態異常アラート表示を追加
+
+-   <Status>Changed</Status><b>PostgreSQL</b>プロジェクトの<UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューからチャートをDBログの時間に合わせて描くように変更
+
+-   <Status>Changed</Status><UI>統計/レポート</UI>><UI>SQL統計</UI>メニューからタブメニューを選択したときにテーブルの最初の行を選択するように変更
+
+-   <Status>Changed</Status>yard APIパラメータ変更
+
+    -   通知設定/照会API
+
+    -   Kill session API
+
+#### Database V2
+
+-   <Status>Changed</Status><UI>マルチインスタンスモニタリング</UI>メニューからクエリ一覧テーブルの並べ替えと幅の調整
+
+-   <Status>Feature</Status><UI>インスタンスモニタリング</UI>メニューからメトリクス選択画面にLazyLoad属性を適用
+
+-   <Status>Feature</Status><b>PostgreSQL</b>プロジェクトで次のメニューを追加
+
+    -   <UI>分析</UI>><UI>セッション履歴</UI>
+
+    -   <UI>分析</UI>><UI>Wait分析</UI>
+
+-   <Status>Feature</Status><b>MySQL</b>プロジェクトで<UI>統計/レポート</UI>><UI>MySQL SQL統計</UI>メニュー追加
+
+* * *
+
+### `Container`
+
+#### ダッシュボード
+
+-   <Status>Changed</Status><UI>コンテナマップ</UI>メニューからカテゴリーを<UI>Container</UI>に設定した場合、ブロックの行の間隔を修正
+
+-   <Status>Changed</Status><UI>コンテナマップ</UI>メニューから2段階グループ化設定時に、グループ名が表示されるように修正
+
+-   <Status>Changed</Status><UI>Flexボード</UI>および<UI>分析</UI>><UI>メトリクスチャート</UI>メニューからエージェントフィルターに表示されるフィルター名の修正
+
+-   <Status>Fixed</Status><UI>コンテナマップ</UI>メニューでフィルターに無効な値を入力すると適用されないように修正
+
+-   <Status>Feature</Status><UI>コンテナマップ</UI>メニューの<b>詳細を見る</b>から<UI>外部呼び出し状態</UI>と<UI>呼び出しフローチャート</UI>タブを追加
+
+-   <Status>Feature</Status><UI>コンテナマップ</UI>メニューからコンテナ情報照会テーブルにデータ項目を追加
+
+#### リソース
+
+**_コンテナ一覧_**メニューから次の機能を追加および修正します。
+
+-   <Status>Changed</Status>コンテナ一覧の照会周期を1分から10秒に変更
+
+-   <Status>Feature</Status>フィルタ検索機能の追加
+
+-   <Status>Changed</Status>ユーザビリティのためのUI改善
+
+-   <Status>Deprecated</Status>ノードエージェントセレクタの削除(フィルタ検索に置き換え)
+
+-   <Status>Deprecated</Status>テキスト検索の削除(フィルター検索に置き換え)
+
+#### 分析
+
+<p><Status>Fixed</Status><UI>POD初期化性能</UI>メニューからデータ呼び出し時にローディング表示を追加</p>
+
+#### 管理
+
+-   <Status>Feature</Status><UI>エージェントのインストール</UI> メニューから文書ガイド、動画チュートリアルリンクを追加
+
+-   <Status>Changed</Status><UI>エージェントのインストール</UI> メニューからyamlファイルダウンロードボタンのスタイル修正
+
+-   <Status>Fixed</Status><UI>ネームスペース管理</UI>メニューから制限されたプロジェクト数を超えるとメッセージの修正
+
+-   <Status>Feature</Status><UI>エージェントのインストール</UI>メニューからクバネティスエージェントのインストールが正常かどうかを確認するメッセージ表示機能を追加
+
+* * *
+
+### `Log`
+
+-   **_ログ検索機_**/**_ライブテール_**メニューから次の機能を修正します。
+
+    -   <Status>Fixed</Status>ログ フィルタに検索値がないか、検索値を入力していない場合は、案内メッセージを出力
+
+    -   <Status>Fixed</Status>ログ フィルタでタグをクリックして値を修正する場合、重複した値が存在する場合は案内メッセージを出力
+
+    -   <Status>Fixed</Status>ログフィルタで重複した値を複数入力し、1つを修正する場合、重複した値すべてが修正される現象修正
+
+    -   <Status>Fixed</Status>ログ フィルタで.n キーを入力し、比較オペレーターをクリックせずに<b>==100</b>のように<code>比較オペレーターの値</code>をすぐ入力すると <b>+</b>、<b>-</b>が前につく現象を修正
+
+-   <Status>Fixed</Status><UI>ログ検索</UI>メニューから<UI>フィルター</UI>変更後に検索して<UI>フィルター</UI>すべて削除した後、再検索時に照会されない現象を修正
+
+-   <Status>Feature</Status><UI>ログ検索</UI>、<UI>ログトレンド</UI>、<UI>ライブテール</UI>メニューから<UI>タイムスタンプ</UI>、<UI>ログ</UI>のみを確認できる全体画面切替機能の追加、画面右上に<LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/>ボタンを選択してください。
+
+-   <Status>Feature</Status><UI>ログ検索</UI>メニューからログ検索フィルター文法ガイドUIを追加
+
+* * *
+
+### `Browser`
+
+<p><Status>Feature</Status><UI>ブラウザダッシュボード</UI>、<UI>Flexボード</UI> メニューから国や地域別一覧、国別地域地図を確認できる地図ウィジェットを追加</p>
+
+* * *
+
+### `実験室`
+
+<p><Status>Change</Status><UI>実験室</UI>><UI>統合ログ検索機</UI>メニューからプロジェクト選択UIの交換</p>
+
+</div>

@@ -1,32 +1,27 @@
 ---
 id: stat
-title: Checking the statistical data
+title: SQL statistics
 description: It provides the statistical data for each DB.
 tags:
   - PostgreSQL
   - Database
-  - Database Monitoring
   - Statistics
 ---
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-<!-- Overview -->
+<!-- SQL 통계 -->
 
-{@include: ../common-items/_db-stat-desc.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
-<!-- SQL statistics -->
-
-{@include: ../common-items/_db-stat-sql-desc.mdx}
-
-<!-- Basic usage guide for SQL statistics -->
+<!-- SQL 통계 기본 사용 안내 -->
 
 {@include: ../common-items/_db-stat-sql-basic.mdx} 
 
-<!-- Execution trends for each query, See details -->
+<!-- 쿼리별 수행 추이, 자세히 보기 -->
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx} 
+{@include: ../common-items/_db-stat-sql-view-query.mdx}  
 
-<!-- Database size -->
+## Column information guide
 
-{@include: ../common-items/_db-databasesize-desc.mdx}
+{@include: ../common-items/_db-sql-stat-column.mdx}

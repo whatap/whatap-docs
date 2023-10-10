@@ -21,7 +21,7 @@ tags:
 | `blk_read_time`          | 当該データベースのバックエンドからデータファイルブロックを読み込むのにかかる時間（milliseconds）、 `track_io_timing`が活性化した場合、そうでなければ`0`                 |
 | `blk_write_tiem`         | 当該データベースのバックエンドからデータファイルブロックを作成するのにかかる時間（milliseconds）、 `track_io_timing`が活性化した場合、そうでなければ`0`                 |
 | `blks_hit`               | ディスクブロックがバッファキャッシュで既に発見され、読み込みが必要ない回数（オペレーティングシステムのファイルシステムキャッシュではなく、PostgreSQLバッファキャッシュのヒットのみ含む）            |
-| `blks_hit_ratio`         | バッファキャッシュヒット率<br/>sum(blks_hit)\*100/sum(`blks_hit` + `blks_read`)                                           |
+| `blks_hit_ratio`         | バッファキャッシュヒット率<br/>sum(`blks_hit`)\*100/sum(`blks_hit` + `blks_read`)                                         |
 | `blks_read`              | 該当データベースで読み込んだディスクブロックの数                                                                                     |
 | `buffers_checkpoint`     | チェックポイント(`check_point`) 間に記録されたバッファ数                                                                         |
 | `check_point`            | `check_point`は、すべてのデータファイルが順次的なトランザクションログのうち、特定の時点を基準にすべてのデータファイルが物理的に書き込まれた特定時点を意味します。 `check_point`が発生した回数 |

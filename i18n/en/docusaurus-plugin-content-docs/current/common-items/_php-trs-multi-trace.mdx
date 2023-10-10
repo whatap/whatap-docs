@@ -18,7 +18,7 @@ Calls between application services that are separated for each service can be tr
 
     ![mtrace_apm](/img/mtr-java-mtid.png)
 
-    -   The same **MTID** is generated even if the transaction makes an external call.
+    -   The same **MTID** is generated even if the transaction makes an outbound call.
     -   Even if projects are separated by task, all transactions between applications can be identified through the initially issued **MTID**.
 
 3.  If you click **MTID**, the execution times for each individual transaction service with the same **MTID** can be viewed.

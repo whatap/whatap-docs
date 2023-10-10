@@ -33,11 +33,11 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 ## MSAトランザクションの統計
 
-次は、CallerまたはCalleeを持つすべてのトランザクションの統計です。
+CallerまたはCalleeを持つすべてのトランザクションの統計は次のとおりです。
 
 <ImgLang img='whatap_application_analysis_msa_2.png' desc='MSA分析' />
 
-上記統計データのうち、照会を希望するURLの![詳細を見るアイコン](/img/ic-pageview.svg) **_詳細を見る_** アイコンを選択すると、詳細を見るウィンドウが表示されます。詳細を見るウィンドウで該当URLに対する**_Caller Callee要約_**、**_Caller Calleeデータ_**、**_Caller Callee推移_**などの詳細データ照会が可能です。 
+上記の統計データのうち、見たいURLの![詳細を見るアイコン](/img/ic-pageview.svg) **_詳細を見る_** アイコンを選択すると、詳細を見るウィンドウが表示されます。詳細を見るウィンドウで該当URLに対する**_Caller Callee概要_**、**_Caller Calleeデータ_**、**_Caller Callee推移_**などの詳細データの表示が可能です。 
 
 :::note 
 
@@ -47,7 +47,7 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 ## Caller/Calleeサマリー
 
-**_Caller Callee概要_**タブは、次のようにURLのCaller、Callee間の依存関係情報を表示します。この時、最大0.004、0.003など最大値が1の数字情報を表示しますが、これは全体のCallerの中で占める割合を表示します。同様に各Calleeの割合が右側にまとめて表示されます。
+**_Caller Callee概要_**タブは、次のようにURLのCaller、Callee間の依存関係の情報を表示します。この時、最大0.004、0.003など最大値が1の数字情報を表示しますが、これは全体のCallerの中で占める割合を表示します。同様に各Calleeの割合が右側にまとめて表示されます。
 
 <ImgLang img='whatap_application_analysis_msa_3.png' desc='Caller/Calleeサマリー' />
 
@@ -55,13 +55,13 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 呼び出し元ノードと呼び出し先ノードは、次のように子ノードとして詳細化することができます。
 
-<ImgLang img='whatap_application_analysis_msa_4.png' desc='Caller Callee 하위 노드 상세 전개' />
+<ImgLang img='whatap_application_analysis_msa_4.png' desc='Caller Callee 子ノードの詳細な展開' />
 
 ## Caller & Calleeデータ
 
-基準URL(例：_/account/save/employee/seoul_)に対するcallerとcalleeの相関関係は、次のように表で表示できます。
+基準URL(例：_/account/save/employee/seoul_)のcallerとcalleeの相関関係は、次のように表で表示できます。
 
-<ImgLang img='whatap_application_analysis_msa_5.png' desc='Caller와 Callee들의 상관관계' />
+<ImgLang img='whatap_application_analysis_msa_5.png' desc='CallerとCalleeの相関関係' />
 
 ## Caller/Callee推移
 

@@ -13,7 +13,7 @@ import UI from '@site/src/components/UItext';
 
 ### ファイル関連関数の追加
 
-従来収集中の`fopen()`関数に、`file()`、`file_get_contest()`関数の実行時間とファイル名を追加で収集します。
+収集される既存の`fopen()`関数に、`file()`、`file_get_contest()`関数の実行時間とファイル名を追加で収集します。
 
 ファイル関連の収集対象関数
 
@@ -27,7 +27,7 @@ file_get_contents()
 
 ### GETパラメータ収集エラーの修正
 
-コードイグナイターフレームワークでURLがrewrite moduleに変更された場合GETパラメータを収集できないエラーを修正、URIの`Query_string`からパラメータを分離して重複なく追加しました。 
+codeigniterフレームワークからURLをrewrite moduleに変更された場合にGETパラメータの収集ができないエラーを修正し、URIの`Query_string`からパラメータを分離して重複しない機能を追加しました。 
 
 ### PHP 8.0でJIT disabled警告
 

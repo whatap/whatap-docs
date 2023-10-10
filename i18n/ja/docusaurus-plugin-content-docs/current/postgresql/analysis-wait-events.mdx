@@ -1,0 +1,40 @@
+---
+id: analysis-wait-events
+title: Wait分析
+description: 遂行中のセッションがどのような待機イベントで待機中なのか、頻繁に発生する待機イベントは何なのかを確認することができます。
+tags:
+  - PostgreSQL
+  - データベース
+  - 分析
+  - Wait分析
+---
+
+ホーム画面>プロジェクト選択>**_分析_**>**_Wait分析_**
+
+遂行中のセッションがどのような待機イベントで待機中なのか、頻繁に発生する待機(Wait)イベントらは何なのかを確認することができます。 5秒ごとに収集したアクティブセッションをwaitの観点から分析することができます。 
+
+:::info
+
+-   この機能は、DBXエージェント1.6.10バージョン以降に対応しています。
+
+-   収集したwait情報は`pg_stat_activity`ビューの`wait_event`と`wait_event_type`です。 該当指標の説明は、[次の文書](https://www.postgresql.org/docs/current/monitoring-stats.html#WAIT-EVENT-TABLE)を参考にしてください。
+
+:::
+
+## 基本画面ガイド
+
+<ImgLang img='db-analysis-wait.png' desc='Wait分析' />
+
+照会を希望する**_時間_**と**_インスタンス_**を選択してください。 設定した時間とインスタンスに該当するWait情報を確認することができます。 照会期間中に待機(遅延)が頻繁に発生したアクティブセッションがあれば、どのような種類のWaitイベントが発生したのかを分析するのに活用できます。
+
+![Wait Event Top 5](/img/db-analysis-wait-top5.png)
+
+**_WaitEvent Top5_**で最も多く発生した待機イベントを確認することができます。 上記のイメージを例に、最も多く発生する待機イベントの種類は**Lock**です。 グラフチャートから![数字1](/img/number-01.png)詳細時間を選択すると、その時間のアクティブセッションを照会することができ、Waitイベントが発生したSQL文を確認することができます。
+
+## テーブルデータのフィルタリング
+
+{@include: ../common-items/_db-table-data-filtering.mdx} 
+
+## テーブルカラムの設定{#change-column}
+
+{@include: ../common-items/_db-v2-data-edit-column.mdx}

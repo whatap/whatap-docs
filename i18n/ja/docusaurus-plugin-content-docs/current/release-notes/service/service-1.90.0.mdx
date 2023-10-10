@@ -11,30 +11,30 @@ import UI from '@site/src/components/UItext';
 
 ### コンテナマップ
 
-<Status>Fixed</Status> ContainerカテゴリとPodカテゴリのヒートマップチャートに描かれた情報が異なる現像を修正
+<Status>Fixed</Status> ContainerカテゴリとPodカテゴリのヒートマップチャート表示される情報が異なる現象を修正
 
 ### `共通`
 
-<Status>Fixed</Status> <UI>アカウント情報</UI> - 既存のパスワードが9文字以下の場合、新規パスワードに変更されない現象を修正
+<Status>Fixed</Status> <UI>アカウント情報</UI> - 既存のパスワードが9文字以下の場合、新しいパスワードを変更できない問題を修正
 
 ## 2022-10-20
 
 ### ログ
 
--   <Status>Fixed</Status> 無料体験期間が画面に「NaN」として表示される現象を修正（NaN→0）
--   <Status>Fixed</Status> ログモニタリング非活性化プロジェクトに入ると、「ログモニタリング活性化案内モーダル」の内容のない現象を修正
--   <Status>Fixed</Status> <UI>ライブTail</UI> メニューで構文解析されたキーを照会するAPIを呼び出さない現象を修正
+-   <Status>Fixed</Status> 無料試用期間が画面に表示される現象を修正(NaN → 0)
+-   <Status>Fixed</Status> ログモニタリングの非アクティブ化されたプロジェクトに入力する場合、コンテンツのない「ログ監視のアクティベーションガイダンスモーダル」の問題を修正
+-   <Status>Fixed</Status> <UI>ライブTail</UI> メニューで構文解析されたキーを検索するAPIを呼び出さない現象を修正
 
 ### URL
 
-<Status>Fixed</Status> URL一覧 - 名前変更ボタンの誤字（cancle → cancel）を修正
+<Status>Fixed</Status> URL一覧 - 名前変更ボタンの誤字(cancle → cancel) を修正
 
 ## 2022-10-18
 
 ### チャート
 
--   <Status>Feature</Status> Out of Memory メトリクスチャートへの移動ロジックを追加 - 分析動線の生成のため、行をクリックするとメトリクスチャートに移動するよう修正
--   <Status>Fixed</Status> ヒートマップのダークテーマ適用時の画面処理を改善するよう修正
+-   <Status>Feature</Status> Out of Memory メトリクスチャートの移動ロジックを追加 - 分析フローを生成のため、行をクリックするとメトリクスチャートに移動するよう修正
+-   <Status>Fixed</Status> ヒートマップのダークテーマを修正し、画面処理を改善するよう修正
 
 ### リソース
 
@@ -42,9 +42,9 @@ import UI from '@site/src/components/UItext';
 
 ### コンテナマップ
 
--   <Status>Change</Status> 要約を見るウィンドウが開いた状態でステータス別の個数テキストがカットする現象を修正
--   <Status>Change</Status> ログ検索タブで（ログカテゴリが存在する場合）ログ対象のカテゴリを修正
--   <Status>Fixed</Status> カテゴリがPodのときコンテナが複数ある場合、一部コンテナ情報のみを表示するバグを修正
+-   <Status>Change</Status> 概要ビューウィンドウが開いた状態でステータス別のテキスト数が修正されます。
+-   <Status>Change</Status> ログ検索タブで(ログカテゴリが存在する場合) ログ対象のカテゴリを修正
+-   <Status>Fixed</Status> カテゴリがPodの場合にコンテナが複数あると、一部のコンテナ情報のみが表示されるバグを修正
 
 ### アプリケーションの現状/性能推移
 
@@ -55,31 +55,31 @@ import UI from '@site/src/components/UItext';
 -   <Status>Feature</Status> <UI>ライブTail</UI>, <UI>検索機</UI>、<UI>エクスプローラー</UI>にテーブルカラムの順序変更機能を追加
 -   <Status>Change</Status> ログ設定のデータ保持期間オプションを修正
 
-    -   トライアルプロジェクト：最大3日までデータを維持
-    -   有料プラン転換プロジェクト：最大40日までデータを維持
-    -   _front.conf_ ファイルに`ui_log_retention_limit`オプションを追加すると、その値までデータを維持するように修正
+    -   トライアルプロジェクト：最大3日までデータを保持
+    -   有料プラン変更プロジェクト：最大40日のデータを保持
+    -   _front.conf_ ファイルに`ui_log_retention_limit`オプションを追加すると、その値までデータを保持するように修正
 
 ### Kubernetes
 
--   <Status>Change</Status> クラスタープロジェクトでヘッダーメニューを通じてネームスペース移動時に、既存メニューを維持した状態で移動できるように修正
--   <Status>Change</Status> 性能要約ページウィジェットデータを修正
+-   <Status>Change</Status> クラスタープロジェクトでヘッダーメニューをネームスペース移動時に、既存メニューを維持した状態で移動できるように修正
+-   <Status>Change</Status> 性能サマリーのページウィジェットデータを修正
 
 ### `共通`
 
--   <Status>Change</Status> 照会および分析権限をオフできないように非活性化処理を修正
--   <Status>Fixed</Status>通知受信設定 - サードパーティーSlackのredirect urlが正常に接続されないバグを修正
--   <Status>Fixed</Status> <UI>統合レポート</UI> メニューの最初進入時、時間選択値が正常に初期化されないバグを修正
+-   <Status>Change</Status> 照会および分析権限をオフできないように非アクティブ処理を修正
+-   <Status>Fixed</Status>通知受信設定 - サードパーティーのSlackにredirect urlが正常に接続されないバグを修正
+-   <Status>Fixed</Status> <UI>統合レポート</UI> メニューから初期入力時、時間選択の値が正常に初期化されないバグを修正
 
-### ユーザーインターフェース（UI）
+### ユーザーインターフェース(UI)
 
-<Status>Change</Status> 次のメニューのデータ照会 「<UI>時間選択</UI>」のUI要素を新規バージョンに修正
+<Status>Change</Status> 次のメニューのデータ参照 「<UI>時間選択</UI>」のUI要素を新しいバージョンに修正
 
 -   **_統合レポート_**
 -   **_Flexボード_** - ウィジェット
 -   **_イベント設定_** > **_メトリクスイベント_** - イベントシミュレーション
--   **_複合メトリクス通知_** - データ照会
--   **_警告通知_** > **_ファイルログ通知_**
--   **_警告通知_** > **_イベント記録_**
+-   **_複合メトリクス通知_** - データ参照
+-   **_アラート通知_** > **_ファイルログ通知_**
+-   **_アラート通知_** > **_イベント記録_**
 -   **_管理_** > **_ユーザー行為_**
--   **_実験室_** > **_メトリクス異常検出_**
+-   **_実験室_** > **_メトリクス異常検知_**
 -   **_実験室_** > **_MXQL Data_**

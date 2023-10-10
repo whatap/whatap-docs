@@ -1,35 +1,26 @@
 ---
 id: stat
-title: 統計データの確認
+title: SQL統計
 description: データベースごとの統計データを提供します。
 tags:
   - CUBRID
   - データベース
-  - データベースモニタリング
   - 統計
 ---
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-<!-- 概要 -->
+<!-- SQL 통계 -->
 
-{@include: ../common-items/_db-stat-desc.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
-<!-- SQL統計 -->
-
-{@include: ../common-items/_db-stat-sql-desc.mdx}
-
-<!-- SQL統計の基本使用の案内 -->
+<!-- SQL 통계 기본 사용 안내 -->
 
 {@include: ../common-items/_db-stat-sql-basic.mdx} 
 
-<!-- クエリ別の実行推移、詳細を見る -->
+<!-- 쿼리별 수행 추이, 자세히 보기 -->
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
-
-<!-- テーブルサイズ増減 -->
-
-{@include: ../common-items/_db-stat-sql-tablesize.mdx}
+{@include: ../common-items/_db-stat-sql-view-query.mdx} 
 
 <!-- 테이블스페이스 사이즈 -->
 

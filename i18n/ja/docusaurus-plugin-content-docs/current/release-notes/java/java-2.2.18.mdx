@@ -1,0 +1,37 @@
+---
+id: java-2_2_18
+title: Java Agent v2.2.18
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_17
+---
+
+2023年9月26日
+
+-   <Status>Feature</Status>HttpServletのsuperを設定して、該当クラスを継承したクラスでhttpサービスを開始できる機能の追加、コンマ(,)を区切り文字として利用できます。
+
+    ```ini title='whatap.conf'
+    # example, separator ','
+    hook_httpservlet_supers=javax.servlet.http.HttpServlet
+    ```
+
+-   <Status>Feature</Status>db2-11.5追跡
+
+    ```ini title='whatap.conf'
+    weaving=db2-11.5
+    ```
+
+-   <Status>Feature</Status>Oracleデータベース追跡設定の追加、オプション適用後の再起動が必要であり、デフォルト値は`true`となります。
+
+    ```ini title='whatap.conf'
+    # Default: true
+    # Will require a restart of the agent to take effect.
+    hook_oracle_enabled=true
+    ```
+
+-   <Status>Changed</Status>lettuce-5.1追跡時に収集SQLのキー値を表示するように変更
+
+-   <Status>Fixed</Status>container-id収集時に発生するログを削除するように修正
+
+-   <Status>Fixed</Status>Redisのlettuceドライバー(<b>lettuce-5.1</b>, <b>lettuce-6.2</b>)追跡時、以降のSQLが表示されない現象の修正
+
+-   <Status>Deprecated</Status>HTTPサービス追跡時<code>org.apache.catalina.filters.FilterBase</code>クラスをデフォルト追跡から除外

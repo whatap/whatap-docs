@@ -132,15 +132,19 @@ You can see that the agent has been successfully created using the Kubernetes AP
 
 ## Checking the Kubernetes agent installation
 
-Execute the following commands to check the status of the master agent and node agents.
+-   If the Kubernetes agent has been installed successfully, the installation completion message appears as follows:
 
-```bash
-kubectl get pod -n whatap-monitoring
-```
+    <ImgLang img='k8s-agent-install-check.png' desc='Checking the Kubernetes agent installation' />
 
-![](/img/k8s-check-running-agent-monitoring.svg)
+-   You can check the status of the master agent and node agents by executing the following command:
 
-If **STATUS** is **Running**, it indicates the installation is complete. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in **_Project list_** and **_Dashboard_** > **_Container Map_**.
+    ```bash
+    kubectl get pod -n whatap-monitoring
+    ```
+
+    ![](/img/k8s-check-running-agent-monitoring.svg)
+
+    If **STATUS** is **Running**, it indicates the installation is complete. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in **_Project list_** and **_Dashboard_** > **_Container Map_**. 
 
 #### In case the status is not Running
 

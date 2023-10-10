@@ -1,0 +1,40 @@
+---
+id: analysis-wait-events
+title: Wait analysis
+description: You can check in which wait event the active session is waiting and which wait events occur frequently.
+tags:
+  - PostgreSQL
+  - Database
+  - Analytics
+  - Wait analysis
+---
+
+Home screen > Select Project > **_Analysis_** > **_Wait analysis_**
+
+You can check in which wait event the active session is waiting and which wait events occur frequently. Active sessions collected every 5 seconds can be analyzed from the wait perspective. 
+
+:::info
+
+-   This function is supported in DBX agent 1.6.10 or later.
+
+-   The collected wait data includes `wait_event` and `wait_event_type` in the `pg_stat_activity` view. For more information about the metric, see [the following](https://www.postgresql.org/docs/current/monitoring-stats.html#WAIT-EVENT-TABLE).
+
+:::
+
+## Basic screen guide
+
+<ImgLang img='db-analysis-wait.png' desc='Wait analysis' />
+
+Select the **_time_** and **_instance_** to view. You can see the wait data corresponding to the set time and instance. If there are active sessions that frequently wait (delay) during the query period, it can be used to analyze what types of wait events occurred.
+
+![Wait Event Top 5](/img/db-analysis-wait-top5.png)
+
+In **_Wait Event Top 5_**, you can see which wait events occurred most frequently. Using the above image as an example, the most frequently occurred type of wait event is **Lock**. If you select the ![number1](/img/number-01.png) detailed time in the graph chart, you can view the active sessions in the time and check the SQL statements in which the wait events occurred.
+
+## Filtering the table data
+
+{@include: ../common-items/_db-table-data-filtering.mdx} 
+
+## Configuring the table columns{#change-column}
+
+{@include: ../common-items/_db-v2-data-edit-column.mdx}

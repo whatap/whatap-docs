@@ -1,36 +1,19 @@
 ---
 id: stat
-title: 統計データの確認
+title: SQL統計
 description: データベースごとの統計データを提供します。
 tags:
   - Oracle
   - データベース
-  - データベースモニタリング
   - 統計
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
-<!-- 概要 -->
-
-{@include: ../common-items/_db-stat-desc.mdx}
-
-<!-- SQL統計 -->
-
-{@include: ../common-items/_db-stat-sql-desc.mdx}
-
-<!-- SQL統計の基本使用の案内 -->
+<!-- SQL 통계 기본 사용 안내 -->
 
 {@include: ../common-items/_db-stat-sql-basic.mdx} 
 
-<!-- クエリ別の実行推移、詳細を見る -->
+<!-- 쿼리별 수행 추이, 자세히 보기 -->
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
-
-<!-- 테이블 스페이스 사이즈 oracle, tibero -->
-
-{@include: ../common-items/_db-tablespace-size.mdx}
-
-<!-- oracle, tibero -->
-
-{@include: ../common-items/_db-sga-size.mdx}
+{@include: ../common-items/_db-stat-sql-view-query.mdx} 

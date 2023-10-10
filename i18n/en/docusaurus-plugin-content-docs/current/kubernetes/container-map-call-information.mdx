@@ -1,0 +1,164 @@
+---
+id: container-map-call-information
+title: Call Information
+description: You can see the call flow of the applications running on the container and the status of the outbound call targets.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Call information
+---
+
+:::note 
+
+The **_Remote Access Status_** inquiry function is provided only when the application is for Java.
+
+:::
+
+Home screen > Select Project > **_Dashboard_** > **_Container map_** > target selection > **Display Detail** screen > **_Call Information_** tab
+
+You can see the call flow of applications running on the Kubernetes container and the status of outbound call targets. The call information provided by WhaTap Kubernetes Monitoring is as follows: 
+
+-   **_App Call Flow_**
+
+-   **_Remote Access Status_**
+
+## App Call Flow{#app-call-flow}
+
+<ImgLang img='k8s-container-map-call-info-app.png' desc='App Call Flow' />
+
+It provides a chart representing the call flow of container applications running inside Pod. You can check the connection relationship between three nodes: custom group (Okind), Pod, and DB connection (DBC) and outbound call (HTTPC). Each node provides the following data. 
+
+#### ![Leader line 1](/img/number-01.png) Custom group (okind)
+
+It is the name of the group specified by a user. If a group (okind) is not specified, the node does not appear.
+
+#### ![Leader line 2](/img/number-02.png) Pod
+
+It indicates the name of the pod to which the container belongs. You can see the total number of active transactions and processing speed within the container application. After selection is made, **_Active transaction_** appears.
+
+-   **_Active Tx_**: Indicates an active transaction withing the container application. 
+
+    -   **_Total_**: Indicates the number of all active transactions withing the container application.
+
+    -   <span class='normal'>Normal</span>: Indicates the number of transactions processed within 0 to 3 seconds.
+
+    -   <span class='slow'>Slow</span>: Indicates the number of transaction processed within 3 to 8 seconds.
+
+    -   <span class='vslow'>Very Slow</span>: Indicates the number of transactions processed for over 8 seconds.
+
+-   **_Application_**: Indicates the name of the application within the Pod. 
+
+-   **_Node_**: Indicates the name of the node that the Pod belongs to. 
+
+-   **_Namespace_**: Indicates the name of the namespace that the Pod belongs to. 
+
+-   **_ReplicaSet_**: Indicates the name of the ReplicaSet that the Pod belongs to. 
+
+-   **_Deployment_**: Indicates the name of the deployment that the Pod belongs to.  
+
+#### ![Leader line 3](/img/number-03.png) DB connection and outbound call
+
+-   **_DB connection (dbc)_**: Indicates the DB connection called by the container application within the Pod. When selected, it goes to the **_Remote Access Status_** view tab.
+
+    -   **_Active Tx_**: Indicates an active transaction within a container application that is being connected to the database. 
+
+    -   **_Total_**: Indicates the number of all active transactions withing the container application.
+
+    -   <span class='normal'>Normal</span>: Indicates the number of transactions processed within 0 to 3 seconds.
+
+    -   <span class='slow'>Slow</span>: Indicates the number of transaction processed within 3 to 8 seconds.
+
+    -   <span class='vslow'>Very Slow</span>: Indicates the number of transactions processed for over 8 seconds.
+
+-   **_Outbound call (httpc)_**: Indicates an external API called by the container application within the Pod. When selected, it goes to the **_Remote Access Status_** view tab. 
+
+    -   **_Active Tx_**: Indicates an active transaction within the container application that is calling an external API. 
+
+    -   **_Total_**: Indicates the number of all active transactions withing the container application.
+
+    -   <span class='normal'>Normal</span>: Indicates the number of transactions processed within 0 to 3 seconds.
+
+    -   <span class='slow'>Slow</span>: Indicates the number of transaction processed within 3 to 8 seconds.
+
+    -   <span class='vslow'>Very Slow</span>: Indicates the number of transactions processed for over 8 seconds.
+
+## Remote Access Status{#remote-access-status}
+
+Using the outbound call logs, the information on whether the outbound call target is normal is provided based on the connection status of the destination called by the monitored target. Through the **_Remote Access Status_** view function, the visibility to inaccessible targets is provided. Through this, you can easily identify the problem point when a service issue occurs. Additionally, any resource encroachment such as increased threads and connections due to continuous connection failures can be detected and responded in advance.
+
+:::note
+
+**Remote Access Logs**
+
+This log records the success or failure events for outbound calls by monitoring target through the application agent configuration. 
+
+-   Outbound call types are as follows.
+
+    `httpcall`, `db`, `socket` 
+
+-   To collect remote access logs, add the following options in **_Agent CONFIG._**.
+
+    ```ini
+    logsink_rt_enabled=true
+    logsink_enabled=true
+    ```
+
+::: 
+
+<ImgLang img='k8s-container-map-call-info-remote.png' desc='Remote Access Logs' />
+
+In the **_Remote Access Logs_** tab, remote access logs can be viewed in a list format. Up to 500 logs are loaded and displayed for the last 24 hours. When viewing in real time, data is updated every 3 seconds. 
+
+#### ![Leader line 1](/img/number-01.png) Options at the top bar
+
+-   You can determine whether to display the **_Agent_** or **_BIZ._** column.
+
+-   Through the search term input field, you can filter columns containing agents, tasks, and logs to which the search term belongs.
+
+-   ![Play icon](/img/ic-caret-right.svg) **_Play_**: If the logs have been updated, you can go to the bottom to check the most recent logs.
+
+-   ![Pause icon](/img/ico-pause.svg) **_Pause_**: Automatic scrolling is stopped temporarily.
+
+-   ![Top icon](/img/ic-caret-up.svg) ![Bottom icon](/img/ic-caret-down.svg): Moves to the top or bottom.
+
+#### ![Leader line 2](/img/number-02.png) Remote Access Logs
+
+You can easily see the key content of the remote access logs through icons and tags. In case of an error log, it is displayed in <span class='vslow'>red</span>.
+
+-   Outbound call types are guided through the icon ![dbc icon](/img/ic-db.svg)(**_db_**), ![httpc icon](/img/ic-network-filled.svg)(**_httpcall_**), and ![socket icon](/img/ic-branches.svg)(**_socket_**).
+
+-   `target`: Indicates an outbound call and connection target. 
+
+-   `content`: Indicates the log content. 
+
+-   `exception`: Indicates the content of the log recorded when an error occurs.
+
+#### ![Leader line 3](/img/number-03.png) Destination status
+
+Check the list of outbound call targets for all viewed logs. Depending on the last connection status, <span class='vslow'>Success</span> or <span class='mstop'>Fail</span> appears. 
+
+-   View mode
+
+    -   **_List_**: Default list view. Scrolling occurs when the entire list exceeds the screen height.
+
+    -   **_Map_**: If the list goes beyond the screen height, the length of the list is shortened and outbound call targets are listed horizontally.
+
+-   Filtering
+
+    When you select an outbound call target, you can see the list of remote access logs by filtering only the logs for the call targets. It is released when selected again.
+
+:::note
+
+**In case there is no data**
+
+Check whether remote access logs have been collected for the last 24 hours for real-time view. If no remote access log has been collected for the last 24 hours, the following guide message is provided.
+
+<ImgLang img='k8s-container-map-call-info-remote-none.png' desc='no monitoring data collection' />
+
+:::
+
+<!-- 
+
+* ![일시 정지 아이콘](/img/ic-s-pause.svg) 일시 정지
+
+-->

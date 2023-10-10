@@ -7,37 +7,99 @@ tags:
   - Spring Boot
 ---
 
-Spring Bootを使用するアプリケーションサーバー環境でJVMオプションを追加する方法を確認してください。 
+Spring Bootを使用するアプリケーションサーバー環境でJVMオプションを追加する方法を確認してください。
 
-## Spring Boot 2.X.X以下
+## JVMオプションの追加
 
-起動スクリプトにJVMオプションとして、`-javaagent`を追加してください。
-
-```bash
-java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
-```
-
-{@include: ../../common-items/_start-apm.mdx}
-
-## Spring Boot 3.0.X
-
--   jakarta.servlet.http.HttpServlet追跡(同期方式)
-
-    ```ini title='whatap.conf'
-    weaving=tomcat10
-    ```
-
--   WebClient追跡(非同期方式)
-
-    ```ini title='whatap.conf'
-    weaving=webflux-6.0
-    ```
-
--   reflection関連JVMオプションの追加でアプリケーション起動
+-   Java 17バージョン以降の場合、reflection関連のJVMオプションを追加でアプリケーションを起動できます。
 
     ```bash
     # Java 17以降のバージョンに対応
     java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
     ```
 
-{@include: ../../common-items/_start-apm.mdx}
+-   起動スクリプトにJVMオプションとして、`-javaagent`を追加してください。
+
+    ```bash
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
+    ```
+
+JVMオプションを追加した後、使用するSpring Bootのバージョンとエージェントのバージョンに合わせて適切なエージェント設定を進めてください。
+
+## Spring Boot 3.X.X
+
+-   Javaエージェントv2.2.9バージョン以降(_whatap.agent-2.2.9.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-3.0
+    ```
+
+-   Javaエージェントv2.2.5バージョン以降(_whatap.agent-2.2.5.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-3.0,tomcat10
+    ```
+
+-   Javaエージェントv2.2.4バージョン以降(_whatap.agent-2.2.4.jar_)
+
+    -   `jakarta.servlet.http.HttpServlet`追跡(同期方式)
+
+        ```ini title='whatap.conf'
+        weaving=tomcat10
+        ```
+
+    -   WebClient追跡(非同期方式)
+
+        ```ini title='whatap.conf'
+        weaving=webflux-6.0
+        ```
+
+## Spring Boot 2.X.X以下
+
+### Spring Boot 2.7.X
+
+-   Javaエージェントv2.2.9バージョン以降(_whatap.agent-2.2.9.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.7
+    ```
+
+-   Javaエージェントv2.2.5バージョン以降(_whatap.agent-2.2.5.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.7,tomcat9
+    ```
+
+-   Javaエージェントv2.2.4バージョン以降(_whatap.agent-2.2.4.jar_)
+
+    WebClient追跡(非同期方式)
+
+    ```ini title='whatap.conf'
+    weaving=webflux-5.3
+    ```
+
+### Spring Boot 2.5.X
+
+-   -   Javaエージェントv2.2.9バージョン以降(_whatap.agent-2.2.9.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.5
+    ```
+
+-   Javaエージェントv2.2.5バージョン以降(_whatap.agent-2.2.5.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.5,tomcat9
+    ```
+
+-   Javaエージェントv2.2.4バージョン以降(_whatap.agent-2.2.4.jar_)
+
+    WebClient追跡(非同期方式)
+
+    ```ini title='whatap.conf'
+    weaving=webflux-5.3
+    ```
+
+## モニタリングの開始
+
+{@include: ../../common-items/_start-apm.mdx} 

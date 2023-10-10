@@ -1,6 +1,6 @@
 ---
 id: stat
-title: Viewing the statistical data
+title: SQL statistics
 description: It provides the statistical data for each DB.
 tags:
   - MySQL
@@ -13,30 +13,18 @@ import Note from '../common-items/_import_v2-note.mdx';
 
 <Note product='MySQL' link='../mysql-v1/stat' />
 
-<!-- Overview -->
+<!-- SQL 통계 -->
 
-{@include: ../common-items/_db-stat-desc.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx}  
 
-<!-- SQL statistics -->
+<!-- SQL 통계 기본 사용 안내 -->
 
-{@include: ../common-items/_db-stat-sql-desc.mdx} 
+{@include: ../common-items/_db-stat-sql-basic.mdx} 
 
-<!-- Basic usage guide for SQL statistics -->
+<!-- 쿼리별 수행 추이, 자세히 보기 -->
 
-{@include: ../common-items/_db-stat-sql-basic.mdx}
+{@include: ../common-items/_db-stat-sql-view-query.mdx}  
 
-<!-- Execution trends for each query, See details -->
-
-{@include: ../common-items/_db-stat-sql-view-query.mdx}
-
-### Column information guide
+## Column information guide
 
 {@include: ../common-items/_db-sql-stat-column.mdx}
-
-<!-- Table size increase -->
-
-{@include: ../common-items/_db-stat-sql-tablesize.mdx}
-
-<!-- Database size -->
-
-<!-- {@include: ../common-items/_db-databasesize-desc.mdx}-->

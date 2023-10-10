@@ -1,0 +1,48 @@
+---
+id: analysis-session-history
+title: Session History
+description: For a long-running session, you can check how much resource has been used for SQL and analyze the causes.
+tags:
+  - PostgreSQL
+  - Database
+  - Analytics
+  - Session History
+---
+
+Home screen > Select Project > **_Analysis_** > **_Session History_**
+
+In **_Session History_**, you can see what has been performed in a specific session during the query period. It provides information that allows you to check how much resource has been used for SQL for a long-running session and analyze the causes.
+
+## Basic usage guide
+
+You must enter the session number (**_Process ID_**) to monitor as a required value, but it is more efficient to enter through the **_Instance monitoring_** menu.
+
+1.  Go to **_Dashboard_** > **_Instance monitoring_**.
+
+2.  Select a session that is running and not ended for a long time.
+
+    <ImgLang img='db-session-history-01.png' desc='Instance monitoring' />
+
+3.  If the **_Session detail_** window appears, select **_Session History_**.
+
+    <ImgLang img='db-session-history-02.png' desc='Session History' />
+
+The **_Session History_** menu appears that has searched the process ID (PID) of the selected session.
+
+<ImgLang img='db-session-history-03.png' desc='Session History' />
+
+Active session data collected every 5 seconds from the selected session is used to construct a chart and its list and provide information that can be used for analysis. 
+
+-   **_Wait_**: You can see the percentage of waiting events through a chart.
+
+-   **_Cpu_**: You can see the change trend in CPU usage through the chart.
+
+-   **_Memory_**: You can see the change trend in memory usage through the chart.
+
+-   **_Disk I/O_**: You can see the change trend in disk usage through the chart.
+
+-   If you select the **_query_** column on the utmost right of the list, the **_SQL details_** window appears where you can see the SQL statement. It contains full texts and plan information for the selected query.
+
+## Configuring the table columns{#change-column}
+
+{@include: ../common-items/_db-v2-data-edit-column.mdx}

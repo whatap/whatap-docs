@@ -49,11 +49,11 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 | pcode             | <span class='api'>number</span> | 取得したプロジェクトコード                           |
 | act_agent         | <span class='api'>string</span> | [アクティベーション状態のエージェント数](#active-agent)    |
 | inact_agent       | <span class='api'>string</span> | [非アクティブ状態のエージェント数](#deactive-agent)     |
-| host              | <span class='api'>string</span> | [ホスト（HOST）数](#host-count)               |
+| host              | <span class='api'>string</span> | [ホスト(HOST) 数](#host-count)              |
 | cpucore           | <span class='api'>string</span> | [ホストCPUコアの合計数](#sum-cpu)                |
 | txcount           | <span class='api'>string</span> | [トランザクション数](#count-transaction)         |
 | tps               | <span class='api'>string</span> | [TPS](#tps)                             |
-| ユーザー              | <span class='api'>string</span> | [アクティブユーザー（5分）](#active-user-5m)        |
+| ユーザー              | <span class='api'>string</span> | [アクティブユーザー(5分)](#active-user-5m)        |
 | actx              | <span class='api'>string</span> | [アクティブトランザクション](#active-transaction)    |
 | rtime             | <span class='api'>string</span> | [平均応答時間](#response-time)                |
 | cpu               | <span class='api'>string</span> | [平均CPU使用率](#usage-cpu)                  |
@@ -92,7 +92,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 1//非アクティブなエージェント数
 ```
 
-## ホスト（HOST）数{#host-count}
+## ホスト(HOST) 数{#host-count}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/host
 
@@ -137,10 +137,10 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 ```
 
 ```json title='response'
-92.03//毎秒処理されたトランザクション数（TPS）
+92.03//毎秒処理されたトランザクション数(TPS)
 ```
 
-## アクティブユーザ（5分）{#active-user-5m}
+## アクティブユーザ(5分){#active-user-5m}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/user
 
@@ -221,6 +221,6 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 | Response Field |       Field Type                 | 説明                                                       |
 | -------------- | :------------------------------: | -------------------------------------------------------- |
-| host_ip        |  <span class='api'>string</span> | エージェントが位置するホストのIPアドレス                                    |
+| host_ip        |  <span class='api'>string</span> | エージェントが配置されているホストのIPアドレス                                 |
 | oname          |  <span class='api'>string</span> | エージェント名                                                  |
-| active         | <span class='api'>boolean</span> | エージェントアクティブ化の有無（アクティブ：`true`、非アクティブ：`false`）             |
+| active         | <span class='api'>boolean</span> | エージェントのアクティブ化の有無 (アクティブ：`true`、非アクティブ：`false`)           |

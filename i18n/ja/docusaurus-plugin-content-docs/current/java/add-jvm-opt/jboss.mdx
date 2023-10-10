@@ -15,7 +15,7 @@ JVMオプションに`-javaagent`および`-Djboss.modules.system.pkgs`オプシ
 
 ### JBoss7.0以降、EAP6.0以降
 
-設定位置：（JBossインストールパス）/bin/standalone.conf(domain.conf)
+設定場所：(JBossインストールパス)/bin/standalone.conf(domain.conf)
 
 ```bash title=standalone.sh
 #!/bin/sh
@@ -28,7 +28,7 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} -Djboss.modules.system.pkgs=wha
 
 :::note
 
-JBoss5.0バージョン以下は_(JBossインストールパス)/bin/run.conf_パスで設定してください。エラーが発生すると`-Djboss.platform.mbeanserver=true`オプションを追加してください。
+JBoss5.0バージョン以下の場合は_(JBossインストールパス)/bin/run.conf_パスで設定してください。エラーが発生した場合は、`-Djboss.platform.mbeanserver=true`オプションを追加してください。
 
 :::
 
@@ -38,39 +38,39 @@ JBoss5.0バージョン以下は_(JBossインストールパス)/bin/run.conf_�
 
 ## モニタリングの開始
 
-{@include: ../../common-items/_start-apm.mdx}  
+{@include: ../../common-items/_start-apm.mdx} 
 
 ## JBoss互換性
 
 | WAS Ver.                     |    Java SE 6 (jdk1.6.0)         |   Java SE 7 (jdk1.7.0_80)       |   Java SE 8 (jdk1.8.0_91)       |
 | ---------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| JBoss EAP7.0（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.1.1（standalone）   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| JBoss EAP6.2（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.3（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.4（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP7.0（domain）         | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| JBoss AS5.1.0（default）       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP7.0 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.1.1 (standalone)  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBoss EAP6.2 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.3 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.4 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP7.0 (domain)        | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss AS5.1.0 (default)      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
 | WAS Ver.                     |    OpenJDK6 (1.6.0_45)          |    OpenJDK7 (1.7.0_80)          |    OpenJDK8 (1.8.0_91)          |
 | ---------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| JBoss EAP7.0（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.1.1（standalone）   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| JBoss EAP6.2（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.3（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.4（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP7.0（domain）         | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| JBoss AS5.1.0（default）       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP7.0 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.1.1 (standalone)  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBoss EAP6.2 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.3 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.4 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP7.0 (domain)        | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss AS5.1.0 (default)      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
 | WAS Ver.                     |    ibm-java-x86_64-60           |    ibm-java-x86_64-71           |    ibm-java-x86_64-80           |
 | ---------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| JBoss EAP7.0（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.1.1（standalone）   | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| JBoss EAP6.2（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.3（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP6.4（standalone）     | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| JBoss EAP7.0（domain）         |                -                |                -                |                -                |
-| JBoss AS5.1.0（default）       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP7.0 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.1.1 (standalone)  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
+| JBoss EAP6.2 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.3 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP6.4 (standalone)    | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| JBoss EAP7.0 (domain)        |                -                |                -                |                -                |
+| JBoss AS5.1.0 (default)      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
 ## JBoss DataSource追跡テスト
 

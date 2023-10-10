@@ -17,7 +17,7 @@ WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリッ�
 
 ## チェックリスト
 
-必要な権限と推奨されるポリシーを確認してください。
+必要なアクセス権限と推奨されるポリシーを確認してください。
 
 | Resouce          | 権限   |
 | ---------------- | ---- |
@@ -31,38 +31,38 @@ WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリッ�
 | EFS              | Read |
 | RDS              | Read |
 
--   **推奨ポリシ**
+-   **推奨ポリシー**
     -   arn:aws:iam::aws:policy/ReadOnlyAccess
 
 ## モニタリング手順
 
 1.  Amazon認証情報を入力してください。
 2.  CloudWatchネームスペースおよび収集サイクルを選択してください。
-3.  リージョン、メトリクス、スタットなどを選択してください。
+3.  リージョン、メトリクス、統計などを選択してください。
 
 :::note
 
-インストール後の使用量によっては、WhaTap料金とは別にクラウド上で追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
+インストール後の使用状況によっては、WhaTap料金とは別にクラウドで追加費用が発生する場合があります。インストール前に使用しているクラウドサービスの価格ポリシーを[次の文書](https://aws.amazon.com/ko/cloudwatch/pricing/)で確認してください。
 
 :::
 
 ### 認証情報入力
 
-Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)が直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。Role Assumeはアクセスキーの発行が不要なため、安全で便利です。
+Role ARNを利用したインストール方法をサポートします。 WhaTap AWSアカウント(**911937781722**)は、直接ユーザーRoleをAssumeしてCloudwatch情報を収集します。Role Assumeはアクセスキーの発行を必要としないため、安全で便利です。
 
 :::note
 
-Roleを利用した設定をお勧めします。 Access Keyの活用は、既存のAccess Keyユーザーのみ可能です。
+Roleを使用して設定をお勧めします。 Access Keyの使用は、既存のAccess Keyのユーザーのみ可能です。
 
 :::
 
-#### ロール生成
+#### ロール(Role) 生成
 
 <ImgLang img='cloudwatch-auth-role.png' desc='Amazon Cloudwatch - role' />
 
-1.  AWS Management Consoleにログインしてから、IAMコンソールを開きます。
+1.  AWS Management Consoleにログインし、IAMコンソールを開きます。
 2.  コンソールナビゲーションウィンドウでロールを選択し、ロールの作成を選択してください。
-3.  Select type of trusted entity(信頼されたエンティティタイプ選択)から Another AWS accountを選択してください。
+3.  Select type of trusted entity(信頼されたエンティティタイプを選択)から Another AWS accountを選択してください。
 4.  Account IDにWhaTapアカウントID**911937781722**を入力してください。ReadOnly Accessを選択して適用してください。
 5.  Roleの名前と説明を入力します。「Create Role」ボタンをクリックしてSummary画面に切り替えてください。
 6.  Maximum session duration項目の「Edit」ボタンをクリックして12時間に変更して保存してください。 

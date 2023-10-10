@@ -17,7 +17,7 @@ You can use the Telegraf's WhaTap output plug-in (TCP) to forward metrics collec
 
 :::note
 
-The WhaTap plug-in is being reviewed for the Telegraf open source. Be sure to replace Telegraf with the WhaTap plug-in before official distribution.
+Telegraf plug-ins must have been installed and configured directly on the service.
 
 :::
 
@@ -35,19 +35,23 @@ The following operating systems are available for installation via download. For
 
 This installation file has been created in advance by adding the WhaTap plug-in based on the Telegraf release version. If Telegraf has been already installed, you can enable the WhaTap plug-in by replacing only the executable.
 
-<!-- 
-다운로드 설치는 다음 목록에 있는 운영체제에서 가능합니다. 다른 운영체제는 [컴파일 설치](#컴파일-설치)로 진행해 주세요.
-
-* macOS
-* Red Hat & CentOS
-* Ubuntu & Debian
-* FreeBSD
-* windows
--->
-
 ### Telegraf release version
 
 <Tabs>
+<TabItem value="1211" label="1.21.1" default>
+
+-   **Red Hat & CentOS**  
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf (executable file)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf-1.21.1-1.amd64.rpm
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf-1.21.1_linux_amd64.tar.gz
+
+-   **Ubuntu & Debian**  
+
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf (executable file)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf_1.21.1-1_amd64.deb
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.21.1_linux_amd64.tar.gz
+
+</TabItem>
 <TabItem value="1160" label="1.16.0">
 
 -   **macOS**

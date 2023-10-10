@@ -107,7 +107,7 @@ oc create -f whatap_openshift_scc.yaml
 
     :::note
 
-    マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。デフォルト値で設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
+    マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
 
     :::
 
@@ -132,21 +132,25 @@ Kubernetes APIを利用して、エージェントが作成(create)されたこ�
 
 ## Kubernetesエージェントのインストールを確認
 
-次のコマンドを実行して、マスターエージェントとNodeエージェントの状態を確認してください。
+-   クバネティスエージェントのインストールが正常に完了した場合、次のようにインストール完了メッセージを確認できます。
 
-```bash
-kubectl get pod -n whatap-monitoring
-```
+    <ImgLang img='k8s-agent-install-check.png' desc='Kubernetesエージェントのインストール確認' />
 
-![](/img/k8s-check-running-agent-monitoring.svg)
+-   次のコマンドを実行して、マスターエージェントとノードエージェントの状態を確認することができます。
 
-**STATUS**項目が**Running**の場合は、インストールは完了です。マスターとNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューからパフォーマンス情報を収集することを確認してください。
+    ```bash
+    kubectl get pod -n whatap-monitoring
+    ```
+
+    ![](/img/k8s-check-running-agent-monitoring.svg)
+
+    **STATUS**項目が**Running**の場合は、インストールは完了です。マスターエージェントとNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクト一覧**_とダッシュボード_** >**_コンテナマップ_**メニューからパフォーマンス情報を収集することを確認してください。 
 
 #### Running状態でない場合
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-マスターNodeで次のコマンドを実行して、Pod(pod) 生成の失敗した原因を特定します。実行結果の下部の**Events:**項目を確認してください。
+マスターNodeで次のコマンドを実行して、Pod(pod) の生成に失敗した原因を特定します。実行結果の下部の**Events:**項目を確認してください。
 
 ```bash
 kubectl describe pod {POD_NAME} -n whatap-monitoring

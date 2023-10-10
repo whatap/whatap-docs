@@ -1,12 +1,12 @@
 ---
 id: resource-container-list
-title: Container List and Detail
+title: Container List
 description: You can check the container status and detailed information of the current project.
 tags:
   - Kubernetes
   - Kubernetes Monitoring
   - Resources
-  - Container
+  - Container List
 ---
 
 :::note
@@ -15,40 +15,84 @@ If the data for specific columns does not appear, your Kubernetes node agent may
 
 :::
 
-## Container List
-
 Home > Select Project > **_Resource_** > **_Container List_**
 
-You can check the container status of the current project in a table.
+You can check the container information details of the current project in a list format. 
 
-<ImgLang img='whatap_kubernetes_resource_container_list.png' desc='Container List' />
+-   Real-time data is updated every 10 seconds. 
 
-Key features are as follows:
+-   It provides the functions for container status summary, comparisons, filters, and CSV file download.
 
--   Automatic refresh of the container list (default 60 seconds, forced refresh, automatic refresh)
+    > CSV file name, _kubernetes_contianer_list\_{pcode}\_{timestamp}.csv_
 
--   Searching the container list for each node (agent)
+## Basic screen guide
 
--   Container or pod-based search
+<ImgLang img='k8s-resource-container-list-m.png' desc='Container List - basic screen' />
 
-The following are the exposed data.
+By selecting desired options in the ![number 01](/img/number-01.png) area, you can view the data in ![number 02](/img/number-02.png). 
 
-| Item          | Description                                                            |
-| ------------- | ---------------------------------------------------------------------- |
-| ContainerId   | Container ID                                                           |
-| ContainerName | Container Name                                                         |
-| Namespace     | Namespace to which the container belongs                               |
-| ReplicaSet    | ReplicaSet to which the container belongs                              |
-| CpuTotUsage   | Container CPU Usage                                                    |
-| CpuByRequest  | Container CPU utilization by request                                   |
-| CpuRequest    | Container CPU Request                                                  |
-| CpuByLimit    | Container CPU utilization by limit                                     |
-| CpuLimit      | Container's CPU Limit Quota                                            |
-| NetRxBytes    | Sum of bytes read per second across all block devices in the container |
-| NetTxByes     | Container Network Transmit Data Size                                   |
+-   On the upper left of the ![number 01](/img/number-01.png) area, you can see the total container count and the container counts for each status.
 
-## Container Detail
+-   When selecting a desired column in the ![number 02](/img/number-02.png) area, you can sort the containers based on the corresponding column. 
 
-You can see the detailed information of a container. Multiple selection also allows container states to be compared to each other.
+## Metric information
 
-<ImgLang img='whatap_kubernetes_resource_container_detail.png' desc='Container List Detail' />
+-   If you place your mouse cursor over the desired column, the metrics provided by the column are shown as follows: 
+
+    ![Metric information](/img/k8s-resource-container-list-metric-info.png)
+
+-   You can see the metrics for each column in the colum list on the **_Select column_** option. If you place your mouse cursor over the desired column, the ![Info icon](/img/ico-info.svg) **_Info icon_** appears to the right of the column name. If you place your mouse curson over ![Info icon](/img/ico-info.svg) **_info icon_**, the metric data appears as follows:
+
+    ![Metric data in the column list](/img/k8s-resource-container-list-metric-info-cl.png)
+
+## Filtering
+
+By using the **_Filter_** option, you can select a desired container list for view. Through the `and` condition, multiple filters can be applied.
+
+1.  If you select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the ![Filter icon](/img/ico-filter.svg) **_Filter_** field of the ![number 01](/img/number-01.png) area, the **_Add filter_** window appears as follows:
+
+    <ImgLang img='k8s-resource-container-list-add-filter.png' desc='Add Filter' />
+
+    -   Select **_Filter Key_** and **_Condition_**.
+
+    -   Select a container.
+
+2.  Configure a filter and then select **_Apply_** to apply the filter.
+
+3.  To add multiple filters, select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the **_Filter_** field or **_Add filter_** window.
+
+    <ImgLang img='k8s-resource-container-list-add-filter-ex.png' desc='Add Filter' />
+
+## Comparing
+
+By using the **_Compare_** option, you can see the comparison chart for key metrics of multiple containers. 
+
+<ImgLang img='k8s-resource-container-list-compare.png' desc='Compare' />
+
+1.  If you select the ![number a](/img/char-a.svg) **_Compare_** option, the comparison column is added in the container list.
+
+2.  Through the ![number b](/img/char-b.svg) comparison column on the left of the container list, select a container to compare. 
+
+    -   You can select up to 10 containers. 
+
+    -   Selected containers are given different colors.
+
+3.  You can see the comparison chart for the selected containers in the ![number c](/img/char-c.svg) area. 
+
+    -   You can see the containers selected in the ![number b](/img/char-b.svg) comparison column at the top of the ![number c](/img/char-c.svg) area.
+
+    -   By dragging the top of ![number c](/img/char-c.svg), you can adjust the height of the comparison chart area.
+
+4.  If you select ![number d](/img/char-d.svg) **_Check period_**, the comparison chart appears withing the period to view as follows:
+
+    <ImgLang img='k8s-resource-container-list-compare-time.png' desc='Check period' />
+
+## Select Column
+
+When using the **_Select column_** option, you can select the desired container data to view the container list as follows: 
+
+<ImgLang img='k8s-resource-container-list-cl.png' desc='Add Filter' />
+
+-   The selected column list is kept even if you re-enter the menu.
+
+-   If you select **_Reset_**, the predefined default key metric columns are selected. In this case, the column selection history is deleted.

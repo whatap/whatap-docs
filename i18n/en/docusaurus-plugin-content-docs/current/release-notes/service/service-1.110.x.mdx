@@ -1,0 +1,240 @@
+---
+id: service-1_110_x
+title: Service 1.110.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-1_108_x
+---
+
+## Service 1.110.2
+
+September 27, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Application dashboard</UI>, added the link button to <UI>Analysis</UI> > <UI>HITMAP</UI> on the upper right of the <UI>HITMAP</UI> widget.
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Application dashboard</UI>, fixed the bug where the agent alias does not appear in the agent selection option.
+
+-   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>HITMAP</UI>, fixed the bug where the data is not updated when the time shift (<LinkImage img='left-arrow.svg' desc='왼쪽 이동 아이콘' /> / <LinkImage img='right-arrow.svg' desc='오른쪽 이동 아이콘' />) button is clicked.
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, fixed the multilingual translation bug for phrases of the XOS installation directory setting.</p>
+
+</div>
+
+## Service 1.110.1
+
+September 25, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+#### Dashboard
+
+<p><Status>Fixed</Status> Fixed the issue where the values displayed in the chart tooltip and the values drawn on the chart intermittently differ in the active widget of the application dashboard.</p>
+
+</div>
+
+## Service 1.110.0
+
+September 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> Added the service notification function. Check <LinkImage img='ic-notice.svg' desc='공지 아이콘' /> on the upper right of the screen.
+
+-   <Status>Feature</Status> Added the icon menu to the left sidebar to enter the product introduction page.
+
+    <LinkImage img='release/release-notes-add-sidebar-product.png' className='rl-img-top8' />
+
+-   <Status>Fixed</Status> Modified to apply the selected time even if you select a single time in the <UI>Time selector</UI> option and click the search button outside.
+
+#### Dashboard
+
+<p><Status>Changed</Status> Added the link to technical documentation to the new hitmap modal guide.</p>
+
+#### Flex Board
+
+<p><Status>Fixed</Status> Fixed the issue where some widgets are not updated when a copied dashboard is accessed through the Favorites.</p>
+
+#### Analytics
+
+<p><Status>Feature</Status> In <UI>Analysis</UI> > <UI>Metrics chart</UI>, added a button to close all active widgets.</p>
+
+#### Management
+
+<p><Status>Changed</Status> In <UI>Agent CONFIG.</UI>, simplified the option list for user convenience and modified to display the final options after deleting the parent category classification for the options applied in the list to the left of the <UI>Write options</UI> section.</p>
+
+#### My Usage
+
+-   <Status>Fixed</Status> Modified to output the promotion end period based on the UTC time
+
+-   <Status>Changed</Status> In <UI>Payment information</UI>, modified to allow entering the department name, phone number, and invoice language in the payment information input field.
+
+-   <Status>Changed</Status> In <UI>Billing history details</UI> of <UI>Billing and payment history</UI>, modified to display <UI>Metered units</UI> instead of <UI>CPU core</UI>.
+
+-   <Status>Feature</Status> In the following menus, the amount and exchange rate update date are displayed according to the JPY and USD exchange rates based on KRW.
+
+    -   **_Project subscription_**
+
+    -   **_Billing History_**
+
+    -   **_Invoice Preview_**
+
+* * *
+
+### `Application`
+
+-   <Status>Feature</Status> The <UI>Application dashboard</UI> menu has been reorganized as follows:
+
+    -   Added the time selector option and improved the function to view the past data.
+
+        |              Real-time mode              |
+        | :--------------------------------------: |
+        |    ![](/img/release/realtime-mode.png)   |
+        |          **Non-real-time mode**          |
+        | ![](/img/release/none-realtime-mode.png) |
+
+    -   Any widget can be added to the desired position or deleted. The widget can be adjusted to the desired size.
+
+        ![](/img/release/apm-dashboad-editable-widget.png)
+
+    -   The preset function has been added that allows saving and loading the positions, sizes, and layouts of the edited widgets.
+
+        ![](/img/release/apm-dashboard-preset-feature.png)
+
+-   In the <UI>Trace analysis</UI> window on the dashboard, the following functions have been added and modified.
+
+    -   <Status>Feature</Status> Added the project filtering function in <UI>table</UI> view and <UI>tree</UI> view modes under the <UI>Multi-transaction</UI> tab.
+
+    -   <Status>Fixed</Status> In <UI>chart</UI> view mode under the <UI>Multi-transaction</UI> tab, fixed the bug where the mode is switched to the <UI>table</UI> view if the transaction node is clicked.
+
+    -   <Status>Feature</Status> Added the function to display appropriate messages if there is no data in the <UI>Transaction log</UI> tab.
+
+        -   In case there is no actual log data
+        -   In case logs cannot be collected without agent configuration
+        -   In case logs are disabled
+
+-   <Status>Fixed</Status> Fixed the whiteout bug in <UI>Sitemap</UI> > <UI>Daily application status</UI>.
+
+* * *
+
+### `Database`
+
+#### Common
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, modified the chart data interval.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, added the warning sign for replication status anomaly.
+
+-   <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI> of the <b>PostgreSQL</b> project, modified the chart to be drawn based on the DB log time.
+
+-   <Status>Changed</Status> Modified to select the first row of the table if the tab menu is selected in <UI>STAT/REPORT</UI> > <UI>SQL statistics</UI>.
+
+-   <Status>Changed</Status> Modified the yard API parameters.
+
+    -   Alert settings/View API
+
+    -   Kill session API
+
+#### Database V2
+
+-   <Status>Changed</Status> In <UI>Multiple instance monitoring</UI>, modified the query list alignment and adjusted the table width.
+
+-   <Status>Feature</Status> In <UI>Instance monitoring</UI>, applied the LazyLoad property to the metrics selection screen.
+
+-   <Status>Feature</Status> Added the following menus in the <b>PostgreSQL</b> project.
+
+    -   <UI>Analysis</UI> > <UI>Session History</UI>
+
+    -   <UI>Analysis</UI> > <UI>Wait analysis</UI>
+
+-   <Status>Feature</Status> Added the <UI>STAT/REPORT</UI> > <UI>Mysql SQL Statistics</UI> menu in the <b>MySQL</b> project.
+
+* * *
+
+### `Container`
+
+#### Dashboard
+
+-   <Status>Changed</Status> In <UI>Container map</UI>, modified the line spacing in a block when the category is set to <UI>Container</UI>.
+
+-   <Status>Changed</Status> In <UI>Container map</UI>, modified to display the group name when setting the step 2 grouping.
+
+-   <Status>Changed</Status> In <UI>Flex board</UI> and <UI>Analysis</UI> > <UI>Metrics chart</UI>, modified the filter name displayed in the agent filter.
+
+-   <Status>Fixed</Status> In <UI>Container map</UI>, modified not to apply the input if an invalid value is entered in the filter.
+
+-   <Status>Feature</Status> In <b>Display Detail</b> under <UI>Container map</UI>, added the tabs for <UI>Remote Access Status</UI> and <UI>Call Flow</UI>.
+
+-   <Status>Feature</Status> In <UI>Container map</UI>, added the data items in the container information view table.
+
+#### Resources
+
+In **_Container list_**, added and modified the following functions.
+
+-   <Status>Changed</Status> Modified the container list search cycle from 1 minute to 10 seconds.
+
+-   <Status>Feature</Status> Added the filter search function.
+
+-   <Status>Change</Status> Improved UIs for user convenience.
+
+-   <Status>Deprecated</Status> Removed the node agent selector (replaced by filter search).
+
+-   <Status>Deprecated</Status> Removed the text search (replaced by filter search).
+
+#### Analytics
+
+<p><Status>Fixed</Status> Added the loading indicator while invoking data in <UI>POD initialization performance</UI>.</p>
+
+#### Management
+
+-   <Status>Feature</Status> In <UI>Agent installation</UI>, added the links to Document guide and Video tutorials.
+
+-   <Status>Changed</Status> In <UI>Agent installation</UI>, modified the download button for the yaml file.
+
+-   <Status>Fixed</Status> In <UI>Namespace management</UI>, modified the message if the limited project count has exceeded.
+
+-   <Status>Feature</Status> In <UI>Agent Installation</UI>, added the function to display the confirmation message whether the Kubernetes agent has been installed successfully.
+
+* * *
+
+### `Log`
+
+-   In **_Log Search_**/**_Live Tail_**, the following functions have been modified.
+
+    -   <Status>Fixed</Status> Displayed a guide message when there is no search value in the log filter or there is no search entry.
+
+    -   <Status>Fixed</Status> Once a value has been modified after clicking a tag in the log filter, a guide message appears if there is any duplicate value.
+
+    -   <Status>Fixed</Status> Fixed the issue where all duplicate values are modified when multiple duplicate values have been entered in the log filter and then any value is modified.
+
+    -   <Status>Fixed</Status> Fixed the problem where <b>+</b> and <b>-</b> are attached in front, when the .n key is entered in the log filter and the <code>comparison operator</code> like <b>==100</b> is entered without clicking the comparison operator.
+
+-   <Status>Fixed</Status> In <UI>Log search</UI>, fixed the bug where search cannot be made after changing any <UI>filters</UI> and deleting all <UI>filters</UI>.
+
+-   <Status>Feature</Status> In <UI>Log search</UI>, <UI>Log trend</UI>, and <UI>Live Tail</UI>, added the full screen switching function that can view only the <UI>timestamps</UI> and <UI>logs</UI>. Select <LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/> on the upper right of the screen.
+
+-   <Status>Feature</Status> In <UI>Log search</UI>, added the syntax guide UI for log search filters.
+
+* * *
+
+### `Browser`
+
+<p><Status>Feature</Status> In <UI>Browser dashboard</UI> and <UI>Flex board</UI>, added the map widget to display the lists for countries and regions and the regional maps for each country.</p>
+
+* * *
+
+### `Laboratory`
+
+<p><Status>Change</Status> In <UI>Laboratory</UI> > <UI>Integrated log search</UI>, replaced the project selection UI.</p>
+
+</div>

@@ -9,11 +9,11 @@ tags:
 
 ## Custom Docker
 
-GoogleAppエンジン（Google Cloud App Engine）にPHPモニタリングエージェントをインストールするには、Custom dockerを使用する必要があります。 
+GoogleAppエンジン(Google Cloud App Engine)にPHPモニタリングエージェントをインストールするには、Custom dockerを使用する必要があります。 
 
-GoogleAppエンジンPHPの**基本型は、PHP拡張型モジュールおよびサービスデーモンを実行できません**。Docker Containerを通じてインストールしてください。 
+GoogleAppエンジンPHPの**基本型は、PHP拡張型モジュールおよびサービスデーモンを実行できません**。Docker Container経由でインストールしてください。 
 
-GoogleAppエンジンの設定ファイルである_app.yaml_ファイルに`flex`環境、`custom`ランタイムとして設定してください。
+GoogleAppエンジンの設定ファイルである_app.yaml_ファイルに`flex`環境、`custom`ランタイムを設定してください。
 
 ```yaml title=SH
 $ vi app.yaml
@@ -21,7 +21,7 @@ env: flex
 runtime: custom
 ```
 
-Custom Dockerで実行するには、`flex`環境と`custom`ランタイムとして設定された_app.yaml_ファイルと同じ位置に_Dockerfile_を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参考にしてください。
+Custom Dockerで実行するには、`flex`環境と`custom`ランタイムで設定された_app.yaml_ファイルと同じ場所に_Dockerfile_を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参照してください。
 
 ```docker title=Docker
 # google-appengine php php56, php70, php71
@@ -32,7 +32,7 @@ FROM gcr.io/google-appengine/php56
 
 PHPモニタリングエージェントをインストールしてください。
 
-1.  ライブラリー（wget）をインストールしてください。
+1.  ライブラリー(wget)をインストールしてください。
 
     ```docker
     RUN apt-get install wget -y
@@ -67,7 +67,7 @@ PHPモニタリングエージェントをインストールしてください�
 
     :::
 
-5.  `supervisor`を通じてwhatap-phpサービスを実行してくたさい。
+5.  `supervisor`を使用してwhatap-phpサービスを実行してくたさい。
 
     ```docker
     RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
@@ -84,27 +84,14 @@ PHPモニタリングエージェントをインストールしてください�
 
 ## ファイアウォールルールの追加
 
-GoogleAppエンジンで使用するネットワークに対してファイアウォールルールを追加してください。発行されたサーバーIPに対して6600番ポートを介したTCP送信を許可する必要があります。
+GoogleAppエンジンで使用するネットワークのファイアウォールルールを追加してください。発行されたサーバーIPに対して6600番ポートを経由してTCP送信を許可する必要があります。
 
 ## 配布およびインスタンスの確認
 
-Google Cloud SDKを通じて設定された_app.yaml_ファイルと_Dockerfile_をデプロイしてください。
+Google Cloud SDKを使用して設定された_app.yaml_ファイルと_Dockerfile_をデプロイしてください。
 
 ```bash title=SH
 $ gcloud app deploy
 ```
 
 Googleクラウドコンソールからアプリエンジンのインスタンスを確認してください。
-
-<!-- 
-
-방화벽 규칙 추가 
-
-![gae_firewall](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall.png)
-![gae_firewall_detail](https://img.whatap.io/media/agent_php/install/tinified/gae_firewall_detail.png)
-
-앱 엔진 생성 인스턴스 확인
-
-![gae_instance](https://img.whatap.io/media/agent_php/install/tinified/gae_instance.png)
-
--->

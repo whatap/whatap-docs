@@ -14,6 +14,153 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.109.22
+
+2023年9月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Feature</Status>左側のサイドバーの商品紹介ページにアクセスできるアイコンメニューを追加</p>
+
+![](/img/release/release-notes-add-sidebar-product.png)
+
+### `Application`
+
+-   <Status>Feature</Status><UI>アプリケーションダッシュボード</UI>メニューを次のように改編しました。
+
+    -   時間選択者オプションを追加し、過去のデータを照会できるように改善しました。
+
+        |                 リアルタイムモード                |
+        | :--------------------------------------: |
+        |    ![](/img/release/realtime-mode.png)   |
+        |              **非リアルタイムモード**              |
+        | ![](/img/release/none-realtime-mode.png) |
+
+    -   ユーザーが希望する場所にウィジェットを追加または削除できます。 また希望するサイズに調整することも可能です。
+
+        ![](/img/release/apm-dashboad-editable-widget.png)
+
+    -   ユーザーが編集したウィジェットの位置とサイズ、レイアウトを保存して読み込めるプリセット機能を追加しました。
+
+        ![](/img/release/apm-dashboard-preset-feature.png)
+
+-   ダッシュボードの<UI>トレース分析</UI>ウィンドウで次の機能を追加および修正しました。
+
+    -   <Status>Feature</Status><UI>マルチトランザクション</UI>タブの<UI>テーブル</UI>ビュー、<UI>ツリー</UI>ビューモードでプロジェクトフィルター機能を追加
+
+    -   <Status>Fixed</Status><UI>マルチトランザクション</UI>タブの<UI>チャート</UI>ビューモードでトランザクションノードをクリックすると<UI>テーブル</UI>ビューに切り替わるエラーの修正
+
+    -   <Status>Feature</Status><UI>トランザクションログ</UI>タブからデータがない場合は、次の状況に応じたメッセージを出力するように機能を追加
+
+        -   実際のログデータがない場合
+        -   エージェント未設定でログを収集できない場合
+        -   ログが活性化されていない場合
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからクバネティスエージェントのインストールが正常かどうかを確認するメッセージ表示機能を追加</p>
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status>リソース テーブルウィジェットの全画面モードでカラム設定ができない問題を修正</p>
+
+</div>
+
+## Preview 1.109.21
+
+2023年9月19日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### 共通
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンス一覧</UI>メニューからチャートデータの間隔を修正
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>インスタンス一覧</UI>メニューからレプリケーション状態異常アラート表示を追加
+
+-   <Status>Changed</Status><b>PostgreSQL</b>プロジェクトの<UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューからチャートをDBログの時間に合わせて描くように変更
+
+-   <Status>Changed</Status><UI>統計/レポート</UI>><UI>SQL統計</UI>メニューからタブメニューを選択したときにテーブルの最初の行を選択するように変更
+
+-   <Status>Changed</Status>yard APIパラメータ変更
+
+    -   通知設定/照会API
+
+    -   Kill session API
+
+#### Database V2
+
+-   <Status>Changed</Status><UI>マルチインスタンスモニタリング</UI>メニューからクエリ一覧テーブルの並べ替えと幅の調整
+
+-   <Status>Feature</Status><UI>インスタンスモニタリング</UI>メニューからメトリクス選択画面にLazyLoad属性を適用
+
+-   <Status>Feature</Status><b>PostgreSQL</b>プロジェクトで次のメニューを追加
+
+    -   <UI>分析</UI>><UI>セッション履歴</UI>
+
+    -   <UI>分析</UI>><UI>Wait分析</UI>
+
+-   <Status>Feature</Status><b>MySQL</b>プロジェクトで<UI>統計/レポート</UI>><UI>MySQL SQL統計</UI>メニュー追加
+
+* * *
+
+### `Container`
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューの<b>詳細を見る</b>から<UI>外部呼び出し状態</UI>と<UI>呼び出しフローチャート</UI>タブを追加
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューからコンテナ情報照会テーブルにデータ項目を追加
+
+* * *
+
+### `Browser`
+
+<p><Status>Feature</Status><UI>ブラウザダッシュボード</UI>、<UI>Flexボード</UI> メニューから国や地域別一覧、国別地域地図を確認できる地図ウィジェットを追加</p>
+
+</div>
+
+## Preview 1.109.20
+
+2023年9月18日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><UI>時間選択</UI>オプションで時間を1つだけ選択した後、外部の検索ボタンを押しても選択した時間が適用されるように修正</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status><UI>管理</UI>><UI>ネームスペース管理</UI>メニューから制限されたプロジェクト数を超えるとメッセージの修正</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status><UI>ログ検索</UI>メニューからログ検索フィルター文法ガイドUIを追加</p>
+
+* * *
+
+### `ネットワーク`
+
+-   <Status>Fixed</Status>次のメニューで表示する各指標の計算方式エラーの修正
+
+    -   **_ダッシュボード_**>**_ネットワークトポロジー_**
+    -   **_ダッシュボード_**>**_ネットワーク推移(TCP)_**
+
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ネットワークトポロジ</UI>メニューでトポロジチャートに表示されるラベルの小数点表記の修正
+
+</div>
+
 ## Preview 1.109.19
 
 2023年9月14日

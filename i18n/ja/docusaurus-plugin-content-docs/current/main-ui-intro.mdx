@@ -18,6 +18,8 @@ tags:
 
 -   **メニュー**：左側には、ユーザーが入力したメニューパスが表示します。
 
+-   ![お知らせアイコン](/img/ic-notice.svg)**お知らせ**: WhaTapモニタリングサービスのお知らせを確認できます。
+
 -   ![現在のページのテーマアイコン](/img/ico-theme.svg) **テーマ**：現在のページのテーマを変更できます。 デフォルト値は**_Light_**モードです。
 
     -   **_Light_**：基本的に適用されたテーマです。
@@ -40,6 +42,12 @@ tags:
 ## ![](/img/number-02.png)プロジェクト検索領域
 
 -   **_プロジェクト名 / PCODE_**(テキスト入力欄)：プロジェクト名またはプロジェクトコードを入力して、目的のプロジェクトを検索できます。
+
+    :::note
+
+    プロジェクトコード(**_PCODE_**)は当該プロジェクトの**_管理_**>**_プロジェクト管理_**メニューの**_プロジェクトコード_** 項目で確認できます。
+
+    :::
 
 -   ![お気に入りアイコン](/img/ico-favorite.svg) **_お気に入り_**：お気に入り設定したプロジェクトが一覧として表示されます。 プロジェクトのお気に入り設定をするには、プロジェクト一覧に表示されたプロジェクトカードビューの左上の![お気に入りアイコン](/img/ico-favorite.svg)を選択してください。 お気に入り設定を解除するには、もう一度![お気に入りアイコン](/img/ico-favorite-set.svg)を選択してください。
 
@@ -102,10 +110,6 @@ tags:
 
     </details>
 
--   **_統合ダッシュボード_**：ユーザーが権限を保有しているすべてのプロジェクトのデータを照会できるダッシュボードを作成できます。 詳細については、[次の文書](navigation/int-dashboard)を参考にしてください。
-
--   **_統合メトリクスボード_**：ユーザーが権限を保有しているすべてのプロジェクトのメトリクスデータを照会できるダッシュボードを作成できます。 詳細については、[次の文書](navigation/int-metrics-board)を参考にしてください。
-
 -   **_統合レポート_**：複数のプロジェクトに関するレポートを簡単に作成できます。 詳細については、[次の文書](report/integrated-report)を参考にしてください。
 
 -   **_統合APPグループトポロジー_**：**_トポロジー_**機能に対応する複数のプロジェクトを一括選択し、単一トポロジーとして確認することができます。 詳細については、[次の文書](java/topology-type#int-topology)を参考にしてください。
@@ -114,7 +118,7 @@ tags:
 
 -   **_管理_**：全体グループとメンバーを管理できます。 詳細については、[次の文書](project/integrated-manage)を参考にしてください。
 
-## プロジェクト検索{#search-project}
+### プロジェクト検索{#search-project}
 
 1.  画面左上の![検索アイコン](/img/ico-search.svg)ボタンをクリックすると、プロジェクト**_検索_**ウィンドウが表示されます。
 
@@ -131,3 +135,30 @@ tags:
 **_検索_**ウィンドウでエージェントを基準にプロジェクトを検索するには、**_Group/Project_**をクリックし、ドロップダウン一覧から**_Agent_**を選択します。
 
 :::
+
+## ![](/img/number-05.png) プロジェクトリスト
+
+ユーザーがメンバーとして登録されているプロジェクトの一覧を確認できます。
+
+## ![](/img/number-06.png)下段のメニュー領域
+
+-   **_利用内訳_**: 決済情報、利用料金などに関するメニューをご利用いただけます。 詳細については[次の文書](management/billing)を参照してください。
+
+-   ![メニューFoldアイコン](/img/ic-menu-fold.svg): サイドメニューを非表示または表示できます。 サイドメニューが隠された状態で![メニューExpandアイコン](/img/ic-menu-expand.svg)ボタンをクリックするとサイドメニューを表示します。
+
+-   ![全画面アイコン](/img/ic-fullscreen.svg): WhaTapモニタリングサービス画面を全画面サイズでご利用いただけます。 全画面を終了するにはESCキーを選択してください。
+
+## ![](/img/number-07.png)サービス紹介メニュー
+
+サイドメニューの一番左のアイコンボタンを選択すると、サービス紹介ページに移動できます。 サービス別カテゴリに分類されており、紹介ページに移動し、ご希望のサービスから**_開始する_**ボタンを選択してください。 プロジェクト作成メニューに移動します。
+
+|                                  製品分類                                 | 説明                                                                                                                                                                                                                                                                                                                                                                                    |
+| :-------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <LinkImage img='shortcut-application.svg' className='shortcutIcon' /> | [Java](/java/introduction), [Node.js](/nodejs/introduction), [PHP](/php/introduction), [Python](/python/introduction), [.NET](/dotnet/introduction), [Go](/golang/introduction)サービスのアプリケーションモニタリングのためのプロジェクトを作成できます。                                                                                                                                                                  |
+|    <LinkImage img='shortcut-server.svg' className='shortcutIcon' />   | [Serverモニタリング](/server/introduction)のためのプロジェクトを作成できます。                                                                                                                                                                                                                                                                                                                                |
+|    <LinkImage img='shortcut-kuber.svg' className='shortcutIcon' />    | [Kubernetesモニタリング](/kubernetes/introduction)のためのプロジェクトを作成できます。                                                                                                                                                                                                                                                                                                                        |
+|   <LinkImage img='shortcut-database.svg' className='shortcutIcon' />  | [MySQL](/mysql/monitoring-intro), [MS SQL Server](/mssql/monitoring-intro), [Oracle](/oracle/monitoring-intro), [PostgreSQL](/postgresql/monitoring-intro), [Redis](/redis/monitoring-intro), [MongoDB](/mongodb/monitoring-intro), [CUBRID](/cubrid/monitoring-intro), [Tibero](/tibero/monitoring-intro), [Altibase](/altibase/monitoring-intro)サービスのデータベースモニタリングのためのプロジェクトを作成できます。 |
+|     <LinkImage img='shortcut-url.svg' className='shortcutIcon' />     | [URLモニタリング](/url/url-intro)のためのプロジェクトを作成できます。                                                                                                                                                                                                                                                                                                                                         |
+|    <LinkImage img='shortcut-cloud.svg' className='shortcutIcon' />    | [Amazon CloudWatch](/amazon-cloudwatch/install-agent), [Amazon ECS](/amazon-ecs/introduction), [Azure Monitor](/azure/install-agent), [Oracle Cloud Monitor](/oracle-cloud/install-agent), [Naver Cloud Monitoring](/ncloud/install-agent)サービスのクラウドモニタリングのためのプロジェクトを作成できます。                                                                                                           |
+|     <LinkImage img='shortcut-log.svg' className='shortcutIcon' />     | [Logモニタリング](/log/introduction)のためのプロジェクトを作成できます。                                                                                                                                                                                                                                                                                                                                      |
+|   <LinkImage img='shortcut-browser.svg' className='shortcutIcon' />   | [Browserモニタリング](/log/introduction)のためのプロジェクトを作成できます。                                                                                                                                                                                                                                                                                                                                  |

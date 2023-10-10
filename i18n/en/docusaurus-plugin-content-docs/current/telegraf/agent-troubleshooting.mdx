@@ -10,15 +10,26 @@ tags:
 
 Restart the whatap-telegraf service if it is not running or encounters an error.
 
--   **Red Hat/CentOS**  
+:::note
+
+Telegraf plug-ins and agents must have been installed and configured directly on the service.
+
+:::
+
+-   **Red Hat/CentOS**
+
     ```bash title=SH
     $ service whatap-telegraf restart
     ```
--   **Debian/Ubuntu**  
+
+-   **Debian/Ubuntu**
+
     ```bash title=SH
     $ sudo service whatap-telegraf restart
     ```
--   **FreeBSD**  
+
+-   **FreeBSD**
+
     ```bash title=SH
     $ service whatap_telegraf restart
     ```

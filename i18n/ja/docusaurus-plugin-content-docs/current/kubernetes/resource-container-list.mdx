@@ -1,12 +1,12 @@
 ---
 id: resource-container-list
-title: コンテナ一覧および詳細
+title: コンテナリスト
 description: 現在のプロジェクトのコンテナ情報と詳細情報を確認できます。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
   - リソース
-  - コンテナ
+  - コンテナリスト
 ---
 
 :::note
@@ -15,40 +15,84 @@ tags:
 
 :::
 
-## コンテナリスト
-
 ホーム画面 > プロジェクト選択 > **_リソース_** > **_コンテナ一覧_**
 
-現在のプロジェクトのコンテナ情報をテーブル形式で確認できます。
+現在のプロジェクトのコンテナの詳細を一覧形式で確認できます。 
 
-<ImgLang img='whatap_kubernetes_resource_container_list.png' desc='コンテナリスト' />
+-   10秒サイクルでリアルタイムのデータを更新します。 
 
-主な機能は次のとおりです。
+-   コンテナのステータス要約、比較、フィルター、およびCSVファイルダウンロード機能を提供します。
 
--   コンテナ一覧情報の自動更新(基本60秒、強制更新可能、自動更新停止可能)
+    > CSV ファイル名、_kubernetes_contianer_list\_{pcode}\_{timestamp}.csv_
 
--   Node(エージェント)別にコンテナ一覧を表示可能
+## 基本画面ガイド
 
--   コンテナ、Podベースの検索可能
+<ImgLang img='k8s-resource-container-list-m.png' desc='컨테이너 목록 기본 화면' />
 
-次の情報が公開されます。
+![number 01](/img/number-01.png)領域から希望するオプションを選択し![number 02](/img/number-02.png)領域でデータを照会できます。 
 
-| 項目            | 説明                                                |
-| ------------- | ------------------------------------------------- |
-| ContainerId   | Container ID                                      |
-| ContainerName | Container Name                                    |
-| Namespace     | コンテナが属するネームスペース                                   |
-| ReplicaSet    | コンテナが属するレプリカセット                                   |
-| CpuTotUsage   | コンテナCPU使用量                                        |
-| CpuByRequest  | コンテナCPUの要求比較の使用率                                  |
-| CpuRequest    | コンテナCPU要求                                         |
-| CpuByLimit    | CPU Limit基準CPUの全体使用率                              |
-| CpuLimit      | コンテナCPU Limit割当量                                  |
-| NetRxBytes    | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |
-| NetTxByes     | コンテナのネットワーク送信データサイズ                               |
+-   ![number 01](/img/number-01.png)領域の左上で、コンテナ全体の個数とステータス別コンテナの個数を確認できます。
 
-## コンテナ詳細
+-   ![number 02](/img/number-02.png)領域で希望するカラムを選択すると、そのカラムを基準にコンテナ一覧を並べ替えて照会することができます。 
 
-特定のコンテナの詳細を確認できます。また、複数選択により、コンテナの状態を相互に比較できます。
+## メトリック情報
 
-<ImgLang img='whatap_kubernetes_resource_container_detail.png' desc='コンテナ一覧および詳細' />
+-   目的のカラムの上にマウスカーソルを置くと、次のように該当カラムが提供するメトリック情報を確認できます。 
+
+    ![メトリック情報](/img/k8s-resource-container-list-metric-info.png)
+
+-   **_カラム選択_**オプション画面内のカラム一覧からカラム別メトリック情報を確認できます。目的のカラムの上にマウスカーソルを置くと、カラム名の右側に![インフォアイコン](/img/ico-info.svg)**_インフォアイコン_**が現れます。![インフォアイコン](/img/ico-info.svg)**_インフォアイコン_**上にマウス カーソルを置くと、次のようにメトリック情報を確認できます。
+
+    ![カラム一覧内のメトリック情報](/img/k8s-resource-container-list-metric-info-cl.png)
+
+## フィルター
+
+**_フィルター_**オプションを活用する際、希望するコンテナ一覧を選択して照会することができます。`and`条件により、複数のフィルターを適用できます。
+
+1.  ![number 01](/img/number-01.png)領域![フィルターアイコン](/img/ico-filter.svg)**_フィルター_**入力欄で![フィルター追加アイコン](/img/ico-add.svg)**_追加アイコン_**選択すると、次のように**_フィルターを追加する_**ウィンドウが表示されます。
+
+    <ImgLang img='k8s-resource-container-list-add-filter.png' desc='フィルター追加' />
+
+    -   **_フィルターキー_**と**_条件_**を選択してください。
+
+    -   コンテナを選択してください。
+
+2.  フィルター設定後、**_適用_**ボタンをクリックし、該当フィルターを適用してください。
+
+3.  複数のフィルターを追加するには、**_フィルター_**入力欄または**_フィルターを追加する_**ウィンドウで![フィルター追加アイコン](/img/ico-add.svg)**_追加アイコン_**を選択してください。
+
+    <ImgLang img='k8s-resource-container-list-add-filter-ex.png' desc='フィルター追加' />
+
+## 比較する
+
+**_比較する_**オプションを活用すると、複数のコンテナの主要指標に対する比較チャートが確認できます。 
+
+<ImgLang img='k8s-resource-container-list-compare.png' desc='比較する' />
+
+1.  ![number a](/img/char-a.svg)**_比較する_**オプションを選択すると、コンテナ一覧に比較カラムが追加されます。
+
+2.  コンテナ一覧左側![number b](/img/char-b.svg)比較カラムを介して比較したいコンテナを選択してください。 
+
+    -   コンテナは最大10個まで選択できます。 
+
+    -   選択したコンテナ別に異なる色が付与されます。
+
+3.  ![number c](/img/char-c.svg)領域で選択したコンテナの比較チャートを確認できます。 
+
+    -   ![number b](/img/char-b.svg)比較カラムで選択したコンテナを![number c](/img/char-c.svg)領域の上部で確認できます。
+
+    -   ![number c](/img/char-c.svg)上段をドラッグして比較チャート領域の高さを調整できます。
+
+4.  ![number d](/img/char-d.svg)**_期間照会_**ボタンを選択すると、次のように照会を希望する期間内の比較チャートを確認できます。
+
+    <ImgLang img='k8s-resource-container-list-compare-time.png' desc='期間照会' />
+
+## カラム選択
+
+**_カラム選択_**オプションを活用する際、希望するコンテナ情報を選択し、次のようにコンテナ一覧を照会することができます。 
+
+<ImgLang img='k8s-resource-container-list-cl.png' desc='フィルター追加' />
+
+-   選択したカラム一覧は、メニューの再進入すると維持されます。
+
+-   **_初期化_**ボタンを選択すると、事前定義された基本的な主要指標カラムが選択されます。この場合、既存のカラム選択履歴は削除されます。

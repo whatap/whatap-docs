@@ -7,37 +7,99 @@ tags:
   - Spring Boot
 ---
 
-Check the method how to add JVM options in the application server environment using Spring Boot. 
+Check the method how to add JVM options in the application server environment using Spring Boot.
 
-## Spring Boot 2.X.X or earlier
+## Adding JVM options
 
-For the JVM options in the startup script, add `-javaagent`.
-
-```bash
-java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
-```
-
-{@include: ../../common-items/_start-apm.mdx}
-
-## Spring Boot 3.0.X
-
--   jakarta.servlet.http.HttpServlet tracing (synchronization method)
-
-    ```ini title='whatap.conf'
-    weaving=tomcat10
-    ```
-
--   WebClient tracing (Asynchronization method)
-
-    ```ini title='whatap.conf'
-    weaving=webflux-6.0
-    ```
-
--   Start the application by adding the JVM option related to reflection
+-   In case of Java 17 or later, the application can be started by adding JVM options related to the reflection.
 
     ```bash
     # Only support Java 17 or later
     java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
     ```
 
-{@include: ../../common-items/_start-apm.mdx}
+-   For the JVM options in the startup script, add `-javaagent`.
+
+    ```bash
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
+    ```
+
+Add the JVM options and then proceed with the appropriate agent configuration according to the versions of Spring Boot and agents.
+
+## Spring Boot 3.X.X
+
+-   Java agent v2.2.9 or later (_whatap.agent-2.2.9.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-3.0
+    ```
+
+-   Java agent v2.2.5 or later (_whatap.agent-2.2.5.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-3.0,tomcat10
+    ```
+
+-   Java agent v2.2.4 or later (_whatap.agent-2.2.4.jar_)
+
+    -   `jakarta.servlet.http.HttpServlet` tracing (synchronization method)
+
+        ```ini title='whatap.conf'
+        weaving=tomcat10
+        ```
+
+    -   WebClient tracing (Asynchronization method)
+
+        ```ini title='whatap.conf'
+        weaving=webflux-6.0
+        ```
+
+## Spring Boot 2.X.X or earlier
+
+### Spring Boot 2.7.X
+
+-   Java agent v2.2.9 or later (_whatap.agent-2.2.9.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.7
+    ```
+
+-   Java agent v2.2.5 or later (_whatap.agent-2.2.5.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.7,tomcat9
+    ```
+
+-   Java agent v2.2.4 or later (_whatap.agent-2.2.4.jar_)
+
+    WebClient tracing (Asynchronization method)
+
+    ```ini title='whatap.conf'
+    weaving=webflux-5.3
+    ```
+
+### Spring Boot 2.5.X
+
+-   -   Java agent v2.2.9 or later (_whatap.agent-2.2.9.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.5
+    ```
+
+-   Java agent v2.2.5 or later (_whatap.agent-2.2.5.jar_)
+
+    ```ini title='whatap.conf'
+    weaving=spring-boot-2.5,tomcat9
+    ```
+
+-   Java agent v2.2.4 or later (_whatap.agent-2.2.4.jar_)
+
+    WebClient tracing (Asynchronization method)
+
+    ```ini title='whatap.conf'
+    weaving=webflux-5.3
+    ```
+
+## Starting the monitoring
+
+{@include: ../../common-items/_start-apm.mdx} 

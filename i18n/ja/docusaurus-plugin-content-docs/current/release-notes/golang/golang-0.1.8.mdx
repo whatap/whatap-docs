@@ -13,9 +13,9 @@ import UI from '@site/src/components/UItext';
 
 ### 同時接続ユーザーの収集設定の追加
 
-同時接続ユーザーメトリクスは、5分前から現在までの固有のユーザー数を表示します。5分間の合計ユーザー数が表示されます。固有のユーザー情報をHyperLogLogアルゴリズムで処理します。
+同時接続ユーザーメトリクスは、5分前から現在までのユーザー数を表示します。5分間の合計ユーザー数が表示されます。固有のユーザー情報は、HyperLogLogアルゴリズムで処理します。
 
-固有のユーザー情報は、初期にIPとして設定されます。さらに、HTTP Header、Cookie項目の値でユーザーの識別情報を設定することができます。 
+固有のユーザー情報は、初期をIPとして設定されます。また、HTTP Header、Cookie項目の値でユーザーの識別情報を設定することができます。 
 
 #### 設定
 
@@ -25,7 +25,7 @@ import UI from '@site/src/components/UItext';
 
     \#Type : string#
 
-    設定されたHTTP Headerの値を固有のユーザー情報として選択します。
+    設定されたHTTP Headerの値を独自のユーザー情報として選択します。
 
 -   `trace_user_cookie_keys`
 
@@ -33,19 +33,19 @@ import UI from '@site/src/components/UItext';
 
     \#Type : string#
 
-    設定されたCookieの値を固有のユーザー情報として選択します。コンマ（,）を区切り文字として複数の名前を設定できます。設定された順に検索します。
+    設定されたCookieの値を固有のユーザー情報として選択します。コンマ(,) を区切り文字として複数の名前を設定できます。設定された順に検索します。
 
 ### アクティブ状態
 
-アクティブステータス機能を追加します。 
+アクティブなステータス機能を追加します。 
 
-ダッシュボード画面にアクティブステータスグラフが表示されます。ステータスは、一般関数、SQL、DB connection、外部HTTP接続、ソケット接続があり、各ステータス別に進行中のリクエスト数を表示します。
+ダッシュボード画面にアクティブなステータスグラフが表示されます。ステータスは、一般的な関数、SQL、DB connection、外部HTTP接続、ソケット接続があり、各ステータスごとに進行中のリクエスト数を表示します。
 
 ![](https://img.whatap.io/media/agent_php/rease/tinified/active_status.png)
 
 ### 内部メトリクスの収集
 
-別途のgoroutineを実行して、5秒間隔で指標を収集します。 
+別なgoroutineを実行して、5秒間隔で指標を収集します。 
 
 ### runtimeメトリクスの収集
 
@@ -68,26 +68,26 @@ import UI from '@site/src/components/UItext';
 | HeapSys      | OSから取得したヒープメモリのバイト数                                   |
 | HeapIdel     | 使用されていないバイト数                                          |
 | HeapInuse    | 使用中のバイト数                                              |
-| HeapReleased | OSに返却された物理メモリのバイト数                                    |
+| HeapReleased | OSに返される物理メモリのバイト数                                     |
 | HeapObjects  | 割り当てられたヒープオブジェクト数                                     |
 | StackInuse   | 使用中のスタックバイト数                                          |
 | StackSys     | OSから取得したスタックメモリのバイト数                                  |
 | MSpanInuse   | 割り当てられたmspanバイト数                                      |
-| MSpanSys     | mspanに対してOSから取得したメモリバイト数                              |
+| MSpanSys     | mspan用にOSから取得したメモリバイト数                                |
 | MCacheInuse  | 割り当てられたmcacheバイト数                                     |
 | MCacheSys    | OSから取得したメモリのmcacheバイト数                                |
 | BuckHashSys  | バケットハッシュテーブルをプロファイリングするメモリのバイト数                       |
 | GCSys        | ガベージコレクションメタデータのメモリバイト数                               |
-| OtherSys     | その他off-heapメモリバイト数（ランタイム時に割り当て）                       |
+| OtherSys     | その他のoff-heapメモリバイト数 (ランタイム時に割り当て)                     |
 | NextGC       | 次のGCサイクルの対象ヒープサイズ                                     |
-| LastGC       | 最後のガベージ収集が完了した時間（unixstamp nanosecond）                |
+| LastGC       | 最後のガベージ収集が完了した時間 (unixstamp nanosecond)               |
 | PauseTotalNs | GCの累積ナノ秒                                              |
 | NumGC        | 完了したGCサイクル数                                           |
 | NumForcedGC  | 強制されたGCサイクル数                                          |
 
 ### net/htpライブラリのRoundTripper対応
 
-http transportでのRoundTripper使用に対応します。パッケージの`sql.Open`関数の代わりに`whatapsql.OpenContext`関数を使用します。`PrepareContext`、`QueryContext`、`ExecContext`などのcontextを伝える関数の使用をお勧めします。 
+http transportでのRoundTripperの使用に対応します。パッケージの`sql.Open`関数の代わりに`whatapsql.OpenContext`関数を使用します。`PrepareContext`、`QueryContext`、`ExecContext`などのcontextを渡す関数の使用をお勧めします。 
 
 伝達するcontextは`trace.Start()`を使用する必要があり、whatap TraceCtx情報が必要です。
 
@@ -107,7 +107,7 @@ func main() {
   callUrl := "http://aaa.com/xxx"
   client := http.DefaultClient
       
-  // Use WhaTap RoundTripper. whatapのTraceCtxがあるcontextを伝達します。 
+  // Use WhaTap RoundTripper. whatapのTraceCtxがあるcontextを渡します。 
   client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)
       
   resp, err := client.Get(callUrl)

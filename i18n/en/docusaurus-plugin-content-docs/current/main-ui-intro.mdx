@@ -18,6 +18,8 @@ It guides you to the elements displayed on the initial screen, after you log in 
 
 -   **Menu**: The menu path appears on the left.
 
+-   ![Notice icon](/img/ic-notice.svg) **Notice**: You can see the notices of the WhaTap monitoring service.
+
 -   ![This page theme icon](/img/ico-theme.svg) **Theme**: You can change the theme of the current page. The default value is **_Light_** mode.
 
     -   **_Light_**: Theme that is applied by default.
@@ -40,6 +42,12 @@ It guides you to the elements displayed on the initial screen, after you log in 
 ## ![](/img/number-02.png) Project search area
 
 -   **_Project Name/PCODE_** (input field): You can enter the project name or code to search for the desired project.
+
+    :::note
+
+    The project code (**_PCODE_**) can be seen in **_Project code_** under the **_Management_** > **_Project management_** menu of the project.
+
+    :::
 
 -   ![Favorite icon](/img/ico-favorite.svg) **_Favorite_**: Only the projects set as favorite appear in the list. To set the project as favorite, select ![Favorite icon](/img/ico-favorite.svg) at the upper left of the project card view in the project list. To cancel the favorite setting, select ![Favorite icon](/img/ico-favorite-set.svg) again.
 
@@ -102,10 +110,6 @@ It guides you to the elements displayed on the initial screen, after you log in 
 
     </details>
 
--   **_Integrated Dashboard_**: You can create a dashboard that allows you to view data from all projects with permission. For more information, see [the following](navigation/int-dashboard).
-
--   **_Integrated Metrics Board_**: You can create a dashboard that allows you to view metrics data for all projects with permission. For more information, see [the following](navigation/int-metrics-board).
-
 -   **_Integrated Report_**: You can easily create reports for multiple projects. For more information, see [the following](report/integrated-report).
 
 -   **_Integrated Topology_**: You can collectively select the projects that support the **_Topology_** to see in a single topology. For more information, see [the following](java/topology-type#int-topology).
@@ -114,7 +118,7 @@ It guides you to the elements displayed on the initial screen, after you log in 
 
 -   **_Management_**: You can manage all groups and members. For more information, see [the following](project/integrated-manage).
 
-## Searching for a project{#search-project}
+### Searching for a project{#search-project}
 
 1.  If you select ![Search icon](/img/ico-search.svg) on the upper left of the screen, the project **_search_** window appears.
 
@@ -131,3 +135,30 @@ The corresponding project screen appears.
 To search for a project based on the agent in the **_Search_** window, click **_Group/Project_** and then select **_Agent_** from the drop-down list.
 
 :::
+
+## ![](/img/number-05.png) Project list
+
+You can check the list of projects in which the user has been registered as a member.
+
+## ![](/img/number-06.png) Menu area at the bottom
+
+-   **_My Usage_**: You can use the menus related to the payment information, usage pricing, etc. For more information, see [the following](management/billing).
+
+-   ![Menu Fold icon](/img/ic-menu-fold.svg): You can hide or display the side menu. When the side menu is hidden, select ![Menu Expand icon](/img/ic-menu-expand.svg) to display the side menu.
+
+-   ![Full screen icon](/img/ic-fullscreen.svg): You can use the WhaTap monitoring service in full screen. To end the full screen, select the ESC key.
+
+## ![](/img/number-07.png) Product introduction menu
+
+You can go to the product introduction page by selecting the icon button on the utmost left of the side menu. They are classified by product. Go to the introduction page and then select **_Getting started_** on the desired product. Go to the project creation menu.
+
+|                            Product category                           | Description                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :-------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <LinkImage img='shortcut-application.svg' className='shortcutIcon' /> | [Java](/java/introduction), [Node.js](/nodejs/introduction), [PHP](/php/introduction), [Python](/python/introduction), [.NET](/dotnet/introduction), [Go](/golang/introduction) A project can be created to monitor the application of the product.                                                                                                                                                                 |
+|    <LinkImage img='shortcut-server.svg' className='shortcutIcon' />   | A project can be created for [Server monitoring](/server/introduction).                                                                                                                                                                                                                                                                                                                                             |
+|    <LinkImage img='shortcut-kuber.svg' className='shortcutIcon' />    | A project can be created for [Kubernetes monitoring](/kubernetes/introduction).                                                                                                                                                                                                                                                                                                                                     |
+|   <LinkImage img='shortcut-database.svg' className='shortcutIcon' />  | [MySQL](/mysql/monitoring-intro), [MS SQL Server](/mssql/monitoring-intro), [Oracle](/oracle/monitoring-intro), [PostgreSQL](/postgresql/monitoring-intro), [Redis](/redis/monitoring-intro), [MongoDB](/mongodb/monitoring-intro), [CUBRID](/cubrid/monitoring-intro), [Tibero](/tibero/monitoring-intro), [Altibase](/altibase/monitoring-intro) A project can be created to monitor the database of the product. |
+|     <LinkImage img='shortcut-url.svg' className='shortcutIcon' />     | A project can be created for [URL monitoring](/url/url-intro).                                                                                                                                                                                                                                                                                                                                                      |
+|    <LinkImage img='shortcut-cloud.svg' className='shortcutIcon' />    | [Amazon CloudWatch](/amazon-cloudwatch/install-agent), [Amazon ECS](/amazon-ecs/introduction), [Azure Monitor](/azure/install-agent), [Oracle Cloud Monitor](/oracle-cloud/install-agent), [Naver Cloud Monitoring](/ncloud/install-agent) A project can be created for product cloud monitoring.                                                                                                                   |
+|     <LinkImage img='shortcut-log.svg' className='shortcutIcon' />     | A project can be created for [Log monitoring](/log/introduction).                                                                                                                                                                                                                                                                                                                                                   |
+|   <LinkImage img='shortcut-browser.svg' className='shortcutIcon' />   | A project can be created for [Browser monitoring](/log/introduction).                                                                                                                                                                                                                                                                                                                                               |

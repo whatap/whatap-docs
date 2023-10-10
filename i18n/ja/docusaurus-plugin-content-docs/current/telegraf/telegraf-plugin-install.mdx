@@ -17,7 +17,7 @@ Telegrafのwhatap output plugin(tcp)を使用して、Telegrafで収集したメ
 
 :::note
 
-Telegrafオープンソース内でwhatap pluginのレビューで進行中です。 公式リリースの前に、whatap pluginをTelegrafを置き換えて使用ください。
+Telegrafプラグインは、ユーザーがサービスに直接インストールして設定する必要があります。
 
 :::
 
@@ -35,46 +35,50 @@ Telegrafオープンソース内でwhatap pluginのレビューで進行中で�
 
 Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前に作成したインストールファイルです。Telegrafが既にインストールされている場合は、実行ファイルを置き換えるだけでwhatap pluginを有効にすることができます。
 
-<!-- 
-다운로드 설치는 다음 목록에 있는 운영체제에서 가능합니다. 다른 운영체제는 [컴파일 설치](#컴파일-설치)로 진행해 주세요.
-
-* macOS
-* Red Hat & CentOS
-* Ubuntu & Debian
-* FreeBSD
-* windows
--->
-
 ### Telegraf releaseバージョン
 
 <Tabs>
+<TabItem value="1211" label="1.21.1" default>
+
+-   **Red Hat & CentOS**  
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf-1.21.1-1.amd64.rpm
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf-1.21.1_linux_amd64.tar.gz
+
+-   **Ubuntu & Debian**  
+
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.21.1/linux/amd64/telegraf_1.21.1-1_amd64.deb
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.21.1_linux_amd64.tar.gz
+
+</TabItem>
 <TabItem value="1160" label="1.16.0">
 
 -   **macOS**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/darwin/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/darwin/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/darwin/amd64/telegraf-1.16.0_darwin_amd64.tar.gz
 
 -   **Red Hat & CentOS**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.16.0-1.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.16.0_linux_amd64.tar.gz
 
 -   **Ubuntu & Debian**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf_1.16.0-1_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/linux/amd64/telegraf-1.16.0_linux_amd64.tar.gz
 
 -   **FreeBSD**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/freebsd/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/freebsd/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/freebsd/amd64/telegraf-1.16.0_freebsd_amd64.tar.gz
 
 -   **windows**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/windows/amd64/telegraf.exe (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/windows/amd64/telegraf.exe (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.16.0/windows/amd64/telegraf-1.16.0_windows_amd64.zip
 
 </TabItem>
@@ -82,29 +86,29 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **macOS**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/darwin/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/darwin/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/darwin/amd64/telegraf-1.15.4_darwin_amd64.tar.gz
 
 -   **Red Hat & CentOS**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf-1.15.4-1.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf-1.15.4_linux_amd64.tar.gz
 
 -   **Ubuntu & Debian**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf_1.15.4-1_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/linux/amd64/telegraf-1.15.4_linux_amd64.tar.gz
 
 -   **FreeBSD**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/freebsd/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/freebsd/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/freebsd/amd64/telegraf-1.15.4_freebsd_amd64.tar.gz
 
 -   **windows**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/windows/amd64/telegraf.exe (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/windows/amd64/telegraf.exe (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.15.4/windows/amd64/telegraf-1.15.4_windows_amd64.zip
 
 </TabItem>
@@ -112,29 +116,29 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **macOS**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/darwin/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/darwin/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/darwin/amd64/telegraf-1.14.5_darwin_amd64.tar.gz
 
 -   **Red Hat & CentOS**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf-1.14.5-1.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf-1.14.5_linux_amd64.tar.gz
 
 -   **Ubuntu & Debian**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf_1.14.5-1_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/linux/amd64/telegraf-1.14.5_linux_amd64.tar.gz
 
 -   **FreeBSD**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/freebsd/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/freebsd/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/freebsd/amd64/telegraf-1.14.5_freebsd_amd64.tar.gz
 
 -   **windows**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/windows/amd64/telegraf.exe (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/windows/amd64/telegraf.exe (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.14.5/windows/amd64/telegraf-1.14.5_windows_amd64.zip
 
 </TabItem>
@@ -142,29 +146,29 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **macOS**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/darwin/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/darwin/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/darwin/amd64/telegraf-1.13.0~842282d_darwin_amd64.tar.gz
 
 -   **Red Hat & CentOS**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf-1.13.0~842282d-0.x86_64.rpm
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf-1.13.0~842282d_linux_amd64.tar.gz
 
 -   **Ubuntu & Debian**  
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf_1.13.0~842282d-0_amd64.deb
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/linux/amd64/telegraf-1.13.0~842282d_linux_amd64.tar.gz
 
 -   **FreeBSD**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/freebsd/amd64/telegraf (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/freebsd/amd64/telegraf (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/freebsd/amd64/telegraf-1.13.0~842282d_freebsd_amd64.tar.gz
 
 -   **windows**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/windows/amd64/telegraf.exe (実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/windows/amd64/telegraf.exe (実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.13.2/windows/amd64/telegraf-1.13.0~842282d_windows_amd64.zip
 
 </TabItem>
@@ -172,7 +176,7 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **macOS**
 
-    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf(実行ファイル)
+    -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf(実行可能ファイル)
     -   https://repo.whatap.io/telegraf/telegraf-release-1.12/darwin/amd64/telegraf-1.12.0~842282d_darwin_amd64.tar.gz
 
 -   **Red Hat & CentOS**  

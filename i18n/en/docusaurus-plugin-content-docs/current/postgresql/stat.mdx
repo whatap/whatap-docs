@@ -1,11 +1,10 @@
 ---
 id: stat
-title: Checking the statistical data
+title: SQL statistics
 description: It provides the statistical data for each DB.
 tags:
   - PostgreSQL
   - Database
-  - Database Monitoring
   - Statistics
 ---
 
@@ -13,160 +12,18 @@ import Note from '../common-items/_import_v2-note.mdx';
 
 <Note product='PostgreSQL' link='../postgresql-v1/stat' />
 
-<!-- Overview-->
+<!-- SQL 통계-->
 
-{@include: ../common-items/_db-stat-desc.mdx}
+{@include: ../common-items/_db-stat-sql-desc.mdx} 
 
-<!-- SQL statistics-->
-
-{@include: ../common-items/_db-stat-sql-desc.mdx}
-
-<!-- Basic usage guide for SQL statistics -->
+<!-- SQL 통계 기본 사용 안내 -->
 
 {@include: ../common-items/_db-stat-sql-basic.mdx}
 
-<!-- Execution trends for each query, See details-->
+<!-- 쿼리별 수행 추이, 자세히 보기-->
 
-{@include: ../common-items/_db-stat-sql-view-query.mdx}  
+{@include: ../common-items/_db-stat-sql-view-query.mdx}   
 
-### Column information guide
+## Column information guide
 
 {@include: ../common-items/_db-sql-stat-column.mdx}
-
-## PG SQL Statistics
-
-Home > Select Project > **_STAT/REPORT_** > **_PG SQL Statistics_**
-
-SQL statistics (execution count, execution time, row count, etc.) provided by PostgreSQL that can be collected through the `pg_state_statements` view.
-
-:::note
-
-For more information about the `pg_stat_statements` module, see [the following link](https://www.postgresql.org/docs/current/pgstatstatements.html).
-
-:::
-
-### Configuration
-
-To use **_PG SQL Statistics_**, the following settings are required in the target monitoring DB.
-
-1.  Install the PostgreSQL extension pack.
-
-    ```bash
-    yum install postgresql-contrib
-    ```
-
-2.  Configure the parameters in _postgresql.conf_ and then restart the DB.
-
-    ```ini title='postgresql.conf'
-    shared_preload_libraries = 'pg_stat_statements'
-    ```
-
-3.  Install the extension module after connecting the DB to use.
-
-    ```bash
-    create extension pg_stat_statements;
-    ```
-
-4.  Check that the data query is possible.
-
-    ```bash
-    select * from public.pg_stat_statements
-    ```
-
-### Basic screen guide
-
-<ImgLang img='db-pg-sql-stat.png' desc='PG SQL Statistics' />
-
-1.  In Time, select the time and date to retrieve data. You can also select a lookup time after selecting the green button.
-
-2.  In Instance, select a target to view the data. You can select multiple instances. To select all instances, click **_Select All_**.
-
-3.  Select ![Search icon](/img/ico-btn-search.png).
-
-The top 50 entries appear in the table.
-
-:::note
-
--   Select the clock display area to query a random date and time. If you click the date and time text area, the selectable options for the date and time appear.
-
--   If you select each column in the table header, you can sort the list by the selected item.
-
--   You can sort the searched results by the item selected in **_lookup criteria_**. Select a desired item and then select ![Search icon](/img/ico-btn-search.png). 
-
--   In **_number of hits_**, you can set the number of entries to display in the table. Finish the settings and then select ![Search icon](/img/ico-btn-search.png). 
-
--   To download the viewed data as a CSV file, select ![Download icon](/img/ico-download.svg).
-
--   If you select **_query_** from the searched result list, the **_SQL details_** window appears. For more information, see [the following](#query-details).
-
-:::
-
-### Column information guide
-
-| Item                | Description                                                                                        |
-| ------------------- | -------------------------------------------------------------------------------------------------- |
-| query               | Query string                                                                                       |
-| queryid             | Query hash code                                                                                    |
-| user                | User oid                                                                                           |
-| db                  | Database name                                                                                      |
-| rows                | Total number of rows retrieved or affected                                                         |
-| total_exec_time     | Total query execution time (milliseconds)                                                          |
-| calls               | Execution count                                                                                    |
-| shared_blks_hit     | Total shared block cache hit count                                                                 |
-| shared_blks_read    | Total number of shared blocks read from disk                                                       |
-| blk_read_time       | Total block read time (milliseconds) while `track_io_timing` is active. Otherwise, the value is 0. |
-| blk_write_time      | Total block write time while `track_io_timing` is active. Otherwise, the value is 0.               |
-| local_blks_dirtied  | Number of changed local blocks                                                                     |
-| local_blks_hit      | Local block cache hit count                                                                        |
-| local_blks_written  | Total number of local blocks written in disk                                                       |
-| local_blks_read     | Total number of local blocks read from disk                                                        |
-| shared_blks_written | Total number of shared blocks written in disk                                                      |
-| shared_blks_dirtied | Total number of changed shared blocks                                                              |
-| temp_blks_read      | Total number of temporary blocks read from disk                                                    |
-| temp_blks_written   | Total number of temporary blocks written in disk                                                   |
-
-## Using the Statistics menu options
-
-### See query details{#query-details}
-
-<ImgLang img='db-pg-sql-stat-sql-details.png' desc='SQL details' />
-
-If you select **_query_** from the searched result list, the **_SQL details_** window appears. 
-
--   **_View plans_**: If you enter the DB name, user name, and password, you can see the **_plan_** information.
-
--   **_Parameters_**: You can bind the parts set as variables in the query statement with the **_default_** values. If you select **_clear_**, the bound value is released.
-
--   **_Formatting_**: If you select the toggle button, the SQL statement can be indented and reformatted to improve readability.
-
--   **_Associated applications_**: You can move to the application project associated with the query. Select a project in the list and then click ![Arrow icon](/img/ic-arrow-right.svg). The **_STAT/REPORT_** > **_Statistics_** appears for the selected project.
-
-### Filtering the searched results
-
-<ImgLang img='db-sql-stat-add-filter.png' desc='Filtering' />
-
-Searched results can be filtered based on the parameter values in SQL.
-
-1.  Select **_Add Filter_**. 
-
-2.  Enter a desired value in the **_Enter conditions_** field, and then select **_Save_**. 
-
-3.  Select ![Search icon](/img/ico-btn-search.png).
-
-Only the results that contain the entered SQL parameter values appear in the list.
-
-:::note
-
-If the filter is released, select ![Delete icon](/img/ico-remove-white.svg) in **_Filter_**.
-
-<ImgLang img='db-sql-stat-disable-filter.png' desc='Disable filter' />
-
-:::
-
-### Configuring the table columns{#change-column}
-
-{@include: ../common-items/_db-v2-data-edit-column.mdx} 
-
-<!-- Database size-->
-
-<!-- {@include: ../common-items/_db-databasesize-desc.mdx}-->

@@ -14,6 +14,153 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.109.22
+
+September 20, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Feature</Status> Added an icon menu to the left sidebar to access the product introduction page.</p>
+
+![](/img/release/release-notes-add-sidebar-product.png)
+
+### `Application`
+
+-   <Status>Feature</Status> The <UI>Application dashboard</UI> menu has been reorganized as follows:
+
+    -   Added the time selector option and improved the function to view the past data.
+
+        |              Real-time mode              |
+        | :--------------------------------------: |
+        |    ![](/img/release/realtime-mode.png)   |
+        |          **Non-real-time mode**          |
+        | ![](/img/release/none-realtime-mode.png) |
+
+    -   Any widget can be added to the desired position or deleted. The widget can be adjusted to the desired size.
+
+        ![](/img/release/apm-dashboad-editable-widget.png)
+
+    -   The preset function has been added that allows saving and loading the positions, sizes, and layouts of the edited widgets.
+
+        ![](/img/release/apm-dashboard-preset-feature.png)
+
+-   In the <UI>Trace analysis</UI> window on the dashboard, the following functions have been added and modified.
+
+    -   <Status>Feature</Status> Added the project filtering function in <UI>table</UI> view and <UI>tree</UI> view modes under the <UI>Multi-transaction</UI> tab.
+
+    -   <Status>Fixed</Status> In <UI>chart</UI> view mode under the <UI>Multi-transaction</UI> tab, fixed the bug where the mode is switched to the <UI>table</UI> view if the transaction node is clicked.
+
+    -   <Status>Feature</Status> Added the function to display appropriate messages if there is no data in the <UI>Transaction log</UI> tab.
+
+        -   In case there is no actual log data
+        -   In case logs cannot be collected without agent configuration
+        -   In case logs are disabled
+
+* * *
+
+### `Container`
+
+<p><Status>Feature</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the function to display the confirmation message whether the Kubernetes agent has been installed successfully.</p>
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status> Fixed the issue where columns cannot be set in full screen mode of the resource table widget.</p>
+
+</div>
+
+## Preview 1.109.21
+
+September 19, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Common
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, modified the chart data interval.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, added the warning sign for replication status anomaly.
+
+-   <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI> of the <b>PostgreSQL</b> project, modified the chart to be drawn based on the DB log time.
+
+-   <Status>Changed</Status> Modified to select the first row of the table if the tab menu is selected in <UI>STAT/REPORT</UI> > <UI>SQL statistics</UI>.
+
+-   <Status>Changed</Status> Modified the yard API parameters.
+
+    -   Alert settings/View API
+
+    -   Kill session API
+
+#### Database V2
+
+-   <Status>Changed</Status> In <UI>Multiple instance monitoring</UI>, modified the query list alignment and adjusted the table width.
+
+-   <Status>Feature</Status> In <UI>Instance monitoring</UI>, applied the LazyLoad property to the metrics selection screen.
+
+-   <Status>Feature</Status> Added the following menus in the <b>PostgreSQL</b> project.
+
+    -   <UI>Analysis</UI> > <UI>Session History</UI>
+
+    -   <UI>Analysis</UI> > <UI>Wait analysis</UI>
+
+-   <Status>Feature</Status> Added the <UI>STAT/REPORT</UI> > <UI>Mysql SQL Statistics</UI> menu in the <b>MySQL</b> project.
+
+* * *
+
+### `Container`
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the tabs for <UI>Remote Access Status</UI> and <UI>Call Flow</UI> under <b>Display Detail</b>.
+
+-   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the data items in the container information inquiry table.
+
+* * *
+
+### `Browser`
+
+<p><Status>Feature</Status> In <UI>Browser dashboard</UI> and <UI>Flex board</UI>, added the map widget to display the lists for countries and regions and the regional maps for each country.</p>
+
+</div>
+
+## Preview 1.109.20
+
+September 18, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Modified to apply the selected time even if you select a single time in the <UI>Time selector</UI> option and click the search button outside.</p>
+
+* * *
+
+### `Container`
+
+<p><Status>Fixed</Status> In <UI>Management</UI> > <UI>Namespace management</UI>, modified the message displayed if the limited project count has been exceeded.</p>
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status> In <UI>Log search</UI>, added the syntax guide UI for log search filters.</p>
+
+* * *
+
+### `Network`
+
+-   <Status>Fixed</Status> Fixed the calculation errors for each metric displayed in the following menus:
+
+    -   **_Dashboard_** > **_Network Topology_**
+    -   **_Dashboard_** > **_Network Trend (TCP)_**
+
+-   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Network Topology</UI>, fixed the decimal notation for labels displayed on the topology chart.
+
+</div>
+
 ## Preview 1.109.19
 
 September 14, 2023

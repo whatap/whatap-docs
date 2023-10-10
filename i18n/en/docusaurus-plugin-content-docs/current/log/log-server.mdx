@@ -72,7 +72,7 @@ The following configuration requires restart of the agent.
 -   **_Basic installation_**
 
     ```bash title='Windows Powershell'
-    $LOGFILES="/some/path/file1,/some/other/file2"
+    $LOGFILES="c:\\whatap\\logs\\%Y-%m-%d\\*.log,c:\\whatap\\logs\\*.log"
     Add-Content "c:\Program Files\WhatapInfra\whatap.conf" -Value "logsink.files=$LOGFILES"
     ```
 
