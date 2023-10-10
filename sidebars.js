@@ -3431,6 +3431,7 @@ const sidebars = {
         },
         'support-env',
         'quick-guide',
+        'about-billing',
         'learning-guides',
         'software-proxy',
         'main-ui-intro',
