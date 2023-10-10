@@ -622,6 +622,34 @@ button.DocSearch-Button:hover {
   padding-top: 0;
   padding-bottom: 0;
 }
+div[class*='announcementBar'] {
+  background: linear-gradient(155.02deg, #3868F6 1.78%, #5F88FF 84.11%);
+  div[class*='announcementBarContent'] {
+    background: none;
+    #moniday-banner {
+      font-size: 15px;
+      font-weight: 500;
+      background: none;
+      span#bar {
+        background-color: #fff;
+        display: inline-block;
+        width: 1px;
+        font-size: 0px;
+        height: 15px;
+        vertical-align: middle;
+        margin: 0 6px;
+      }
+      a {
+        background-color: #fff;
+        color: #3868F6;
+        display: inline-block;
+        padding: 0px 12px;
+        border-radius: 40px;
+        text-decoration: none;
+      }
+    }
+  }
+}
 // UI
 
 // document
@@ -1136,6 +1164,9 @@ main {
     }
     img.noneborder {
       border: none;
+    }
+    img.banner {
+      cursor: pointer;
     }
     img.width-200 {
       width: 200px;
