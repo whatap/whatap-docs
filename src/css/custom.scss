@@ -706,6 +706,10 @@ main {
   }
   .markdown {
     // 마크다운 문서 내 css
+    .docusaurus-mermaid-container {
+      background-color: #fff;
+      margin: 8px 0;
+    }
     header + div[class*='fbsharebutton'] {
       display: none;
     }

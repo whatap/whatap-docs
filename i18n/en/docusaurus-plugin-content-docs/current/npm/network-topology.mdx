@@ -15,7 +15,7 @@ In Network Topology, you can see the relationship between nodes at a glance thro
 
 ## Basic screen guide
 
-![Network topology](/img/npm-dashboad-network-topology.png)
+<ImgLang img="npm-dashboad-network-topology.png" desc="Network topology" />
 
 On the ![number 1](/img/number-01.png) menu bar, set the options to display on the ![number 3](/img/number-03.png) topology chart. Topology shapes the network with nodes and edges. In parallel with the ![number 2](/img/number-02.png) time series charts for each performance metric, the network bottlenecks or failure sections can be identified more easily.
 
@@ -29,7 +29,7 @@ On the ![number 1](/img/number-01.png) menu bar, set the options to display on t
 
 -   Just above the topology chart, you can see the summary information such as the total node count, number of tag-filtered nodes, and threshold settings. To hide the time series chart and enlarge the topology screen, select the ![Fold icon](/img/ic-menu-fold.svg) button.
 
-    ![Summary information](/img/npm-dashboad-network-topology-status-summary.png)
+    <ImgLang img="npm-dashboad-network-topology-status-summary.png" desc="Summary information" />
 
 :::note
 
@@ -41,7 +41,7 @@ For more information about the basic components in the fixed area at the top, se
 
 You can view and analyze data by setting what to display on the topology chart.
 
-![](/img/npm-dashboard-topology-menubar.png)
+<ImgLang img="npm-dashboard-topology-menubar.png" desc="" />
 
 <!-- 조회 시간 설정하기-->
 
@@ -49,11 +49,11 @@ You can view and analyze data by setting what to display on the topology chart.
 
 <!-- 노드 선택하기-->
 
-{@include: ../common-items/_select-node.mdx}
+{@include: ../common-items/_select-node.mdx} 
 
 ### Edge
 
-![Edge](/img/npm-dashboard-topology-edge.png)
+<ImgLang img="npm-dashboard-topology-edge.png" desc="Edge" />
 
 **_Edge_** means the node-to-node communication and the labels for each edge display the selected performance metrics. You can select a type of the value to display on the edge of the topology chart. The types of performance metrics that can be displayed on the edge are as follows.
 
@@ -93,7 +93,7 @@ The **_threshold_** and **_unit_** can be set for the metrics set to edges. The 
 
 If the network configuration is too vast and complicated, you can configure a sub network view by selecting some nodes. Select ![Filter icon](/img/ico-filter.svg) on the upper right of the screen. When the tag list set through the **tagRule** option appears, select the nodes to display on the screen.
 
-![](/img/npm-dashboard-topology-tag-filtering.png)
+<ImgLang img="npm-dashboard-topology-tag-filtering.png" desc="" />
 
 Only the communication performance data between the selected tag nodes and the target node appears on the topology chart. If you exclude the nodes merged by **untagged** from the topology and time series charts, or there are no nodes for analysis, uncheck them.
 
@@ -120,7 +120,7 @@ The information configured in this way can be saved through the **_preset_** fun
 
 3.  Select the nodes to display on the topology chart. You can easily find the desired node by searching for the tag name or using the sorting function (![Sort icon](/img/ic-sort-up.svg)).
 
-![Usage example 1](/img/npm-dashboard-topology-tag-filtering-01.png)
+<ImgLang img="npm-dashboard-topology-tag-filtering-01.png" desc="Usage example 1" />
 
 **To exclude specific nodes out of all nodes, follow the steps below.**
 
@@ -130,7 +130,7 @@ The information configured in this way can be saved through the **_preset_** fun
 
 3.  Use the search and sorting functions to unselect the nodes.
 
-![Usage example 2](/img/npm-dashboard-topology-tag-filtering-02.png)
+<ImgLang img="npm-dashboard-topology-tag-filtering-02.png" desc="Usage example 2" />
 
 :::note
 
@@ -144,7 +144,7 @@ If you select the **_Select All_** option and then unselect some nodes, **_Selec
 
 Through the **_preset_** function, you can save the sub network topology view by relating the tag filter function. If there are too many nodes and edges in the topology view, it is recommended to divide and filter the network part and save it as a preset for analysis.
 
-![Preset](/img/npm-dashboard-topology-preset.png)
+<ImgLang img="npm-dashboard-topology-preset.png" desc="Preset" />
 
 The data saved in the preset is as follows.
 
@@ -168,7 +168,7 @@ The data saved in the preset is as follows.
 
 ### Modifying a preset
 
-![Preset update](/img/npm-dashboard-topology-preset-update.png)
+<ImgLang img="npm-dashboard-topology-preset-update.png" desc="Preset update" />
 
 If you change some options of the topology chart with a preset selected, the **_Update_** button is exposed in the **_preset_** list. Select **_Update_** to apply the changed options to the selected preset.
 
@@ -186,10 +186,9 @@ To delete unused presets, select ![Delete icon](/img/ico-trash.svg) in the **_Pr
 
 Among the data displayed on the edge, only the required data can be visually exposed. Select ![Configuration icon](/img/ico-setting.svg) on the upper right of the screen.
 
-![Edge setting](/img/npm-dashboard-topology-edge-setting.png)
+<ImgLang img="npm-dashboard-topology-edge-setting.png" desc="Edge setting" />
 
 -   **_Animation_**: Set whether or not to display the animation when the threshold is exceeded.
 
 -   **_Display number_**: Set whether or not to display the edge labels.
 
--   **_Display arrow_**: Set whether or not to display the arrows for edge directions.
