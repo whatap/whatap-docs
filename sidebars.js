@@ -3235,56 +3235,56 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'DB',
+              label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/db/dbx-1_6_12',
+              },
               items: [
                 {
-                  type: 'category',
-                  label: 'DBX',
-                  collapsible: true,
-                  collapsed: true,
+                  type: 'doc',
+                  id: 'release-notes/db/dbx-1_6_12',
                   className: 'new',
-                  link: {
-                    type: 'doc',
-                    id: 'release-notes/db/dbx-1_6_10',
-                  },
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'release-notes/db/dbx-1_6_10',
-                      className: 'new',
-                    },
-                    'release-notes/db/dbx-1_6_9',
-                    'release-notes/db/dbx-1_6_8',
-                    'release-notes/db/dbx-1_6_7',
-                    'release-notes/db/dbx-1_6_6',
-                    'release-notes/db/dbx-1_6_5',
-                  ]
                 },
+                'release-notes/db/dbx-1_6_11',
+                'release-notes/db/dbx-1_6_10',
+                'release-notes/db/dbx-1_6_9',
+                'release-notes/db/dbx-1_6_8',
+                'release-notes/db/dbx-1_6_7',
+                'release-notes/db/dbx-1_6_6',
+                'release-notes/db/dbx-1_6_5',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'XOS',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/db/xos-1_1_6j',
+              },
+              items: [
                 {
-                  type: 'category',
-                  label: 'XOS',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'release-notes/db/xos-1_1_3',
-                  },
-                  items: [
-                    'release-notes/db/xos-1_1_3',
-                    'release-notes/db/xos-1_1_2',
-                    'release-notes/db/xos-1_1_1b',
-                    'release-notes/db/xos-1_1_1a',
-                    'release-notes/db/xos-1_1_1',
-                    'release-notes/db/xos-1_1_0b',
-                    'release-notes/db/xos-1_1_0a',
-                    'release-notes/db/xos-1_1_0',
-                    'release-notes/db/xos-previous',
-                  ]
+                  type: 'doc',
+                  id: 'release-notes/db/xos-1_1_6j',
+                  className: 'new',
                 },
-              ],
+                'release-notes/db/xos-1_1_6g',
+                'release-notes/db/xos-1_1_4',
+                'release-notes/db/xos-1_1_3b',
+                'release-notes/db/xos-1_1_3',
+                'release-notes/db/xos-1_1_2',
+                'release-notes/db/xos-1_1_1b',
+                'release-notes/db/xos-1_1_1a',
+                'release-notes/db/xos-1_1_1',
+                'release-notes/db/xos-1_1_0b',
+                'release-notes/db/xos-previous',
+              ]
             },
             {
               type: 'doc',
