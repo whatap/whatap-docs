@@ -2560,6 +2560,7 @@ const sidebars = {
               items: [
                 'altibase/instance-list',
                 'altibase/instance-monitoring',
+                'altibase/multi-instance-monitoring',
               ],
             },
             {
