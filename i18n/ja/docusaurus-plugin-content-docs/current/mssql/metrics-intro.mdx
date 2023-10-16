@@ -9,4 +9,22 @@ tags:
   - データベースモニタリング
 ---
 
-{@include: ../common-items/_metrics-intro.mdx} 
+import ProdImg from '@site/src/components/ChangeImgName.js';
+import Variable from '@site/src/components/Variable.js';
+import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
+import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
+
+<!-- 개요-->
+{@include: ../common-items/_metrics-intro.desc.mdx}
+
+<IntroExam category='db_mssql_counter'/>
+
+<ProdImg img='metrics-example-00.png' desc=''/>
+
+<!-- 메트릭스 차트 조회하기-->
+{@include: ../common-items/_metrics-intro-look-up-chart.mdx}  
+
+<LookupchartDesc metric='active sessions' category='' />
+
+<!-- 메트릭스 Raw Data 조회화기-->
+{@include: ../common-items/_metrics-intro-look-up-raw-data.mdx}  
