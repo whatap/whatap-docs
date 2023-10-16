@@ -172,6 +172,12 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.19',
+        "date": '2023-10-10',
+        "url": '/pdf/release-notes/java-agent-v2.2.19.pdf',
+        "docs": '/release-notes/java/java-2_2_19',
+    },
+    {
         "name": 'Java-agent-v2.2.18',
         "date": '2023-09-26',
         "url": '/pdf/release-notes/java-agent-v2.2.18.pdf',
@@ -385,6 +391,12 @@ const nodejsList = [
 
 const pyList = [
     {
+        "name": 'Python-agent-v1.4.6',
+        "date": '2023-10-12',
+        "url": '/pdf/release-notes/python-agent-v1.4.6.pdf',
+        "docs": '/release-notes/python/python-1_4_6',
+    },
+    {
         "name": 'Python-agent-v1.4.4',
         "date": '2023-08-17',
         "url": '/pdf/release-notes/python-agent-v1.4.4.pdf',
@@ -483,6 +495,12 @@ const pyList = [
 ];
 
 const dotnetList = [
+    {
+        "name": 'dotNet-agent-v2.1.6',
+        "date": '2023-10-05',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.6.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_6',
+    },
     {
         "name": 'dotNet-agent-v2.1.5',
         "date": '2023-09-13',
@@ -658,6 +676,18 @@ const goList = [
 
 const serverList = [
     {
+        "name": "Server-agent-v2.4.2",
+        "date": "2023-10-06",
+        "url": "/pdf/release-notes/Server-agent-v2.4.2.pdf",
+        "docs": "/release-notes/server/server-2_4_2"
+    },
+    {
+        "name": "Server-agent-v2.4.1",
+        "date": "2023-10-04",
+        "url": "/pdf/release-notes/Server-agent-v2.4.1.pdf",
+        "docs": "/release-notes/server/server-2_4_1"
+    },
+    {
         "name": "Server-agent-v2.4.0",
         "date": "2023-07-24",
         "url": "/pdf/release-notes/Server-agent-v2.4.0.pdf",
@@ -798,6 +828,24 @@ const serverList = [
 ];
 
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.3.8",
+        "date": "2023-10-04",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.8.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_8"
+    },
+    {
+        "name": "Kubernetes-agent-v1.3.7",
+        "date": "2023-09-27",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.7.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_7"
+    },
+    {
+        "name": "Kubernetes-agent-v1.3.6",
+        "date": "2023-09-25",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.6.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_6"
+    },
     {
         "name": "Kubernetes-agent-v1.3.5",
         "date": "2023-09-12",
@@ -964,6 +1012,18 @@ const k8sList = [
 
 const dbxList = [
     {
+        "name": "DBX-agent-v1.6.12",
+        "date": "2023-10-13",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.12.pdf",
+        "docs": "release-notes/db/dbx-1_6_12"
+    },
+    {
+        "name": "DBX-agent-v1.6.11",
+        "date": "2023-10-04",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.11.pdf",
+        "docs": "release-notes/db/dbx-1_6_11"
+    },
+    {
         "name": "DBX-agent-v1.6.10",
         "date": "2023-09-15",
         "url": "/pdf/release-notes/dbx-agent-v1.6.10.pdf",
@@ -1002,6 +1062,30 @@ const dbxList = [
 ];
 
 const xosList = [
+    {
+        "name": "XOS-agent-v1.1.6j",
+        "date": "2023-10-13",
+        "url": "/pdf/release-notes/xos-agent-v1.1.6j.pdf",
+        "docs": "release-notes/db/xos-1_1_6j"
+    },
+    {
+        "name": "XOS-agent-v1.1.6g",
+        "date": "2023-07-11",
+        "url": "/pdf/release-notes/xos-agent-v1.1.6g.pdf",
+        "docs": "release-notes/db/xos-1_1_6g"
+    },
+    {
+        "name": "XOS-agent-v1.1.4",
+        "date": "2022-07-13",
+        "url": "/pdf/release-notes/xos-agent-v1.1.4.pdf",
+        "docs": "release-notes/db/xos-1_1_4"
+    },
+    {
+        "name": "XOS-agent-v1.1.3b",
+        "date": "2022-06-07",
+        "url": "/pdf/release-notes/xos-agent-v1.1.3b.pdf",
+        "docs": "release-notes/db/xos-1_1_3b"
+    },
     {
         "name": "XOS-agent-v1.1.3",
         "date": "2022-01-10",
