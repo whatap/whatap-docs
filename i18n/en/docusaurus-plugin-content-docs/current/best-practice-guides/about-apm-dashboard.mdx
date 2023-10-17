@@ -30,17 +30,13 @@ A single web service consists of numerous applications and platforms, so the per
 
 On **_Application Dashboard_**, you can check the status of the application server connected to the WhaTap monitoring service. If the connected agent is inactive or disconnected from the application server, the agent becomes grayed out. This makes it easy to see the status of agents.
 
-![](/img/best-p/apm-dashboard-agent-01.png)
-
-Because there are many connected agents, in order to check the status of all agents, click ![Down arrow icon](/img/down-arrow.svg) on the utmost right. You can see the full list of connected agents by expanding it as shown in the following screen.
-
-![](/img/best-p/apm-dashboard-agent-02.png)
+<ImgLang img='apm-dashboard-select-agent.png' />
 
 To efficiently use the screen by listing the connected agents in a line, you can try shortening the agent names. For more information of the method how to set the agent name, see [the following](https://docs.whatap.io/java/agent-name).
 
 ## Analyzing the transactions
 
-![](/img/best-p/apm-dashboard-service.png)
+<ImgLang img='best-p/apm-dashboard-service.png' />
 
 In case of using the web application server (WAS), the service (AP) requested through the browser needs to have normal results. The service (AP) uses the server's resources for operation. The resources include AP processes, OS/HW resources (CPU, memory, disk, etc.), and external systems (Databases and other servers).
 
@@ -54,7 +50,7 @@ How fast and error-free the transactions are processed can be interpreted as **T
 
 Transactions in progress allow you to identify the issues that cause delays of 8 seconds or more or that are not widespread and only occur in part of transactions. In the **_Speed Meter_** widget located at the top of the next screen, you can check the status of current transactions (center) and completed transactions (right). The **_active transaction_** widget displays the transactions in progress by agent out of the entire status. The **_active status_** widget expresses the status of the transactions in progress.
 
-![](/img/best-p/apm-dashboard-tx-01.png)
+<ImgLang img='best-p/apm-dashboard-tx-01.png' />
 
 The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. Blue color means transactions within the specified response time, orange color means slow transactions with the response time of around 8 seconds, and red color means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
 
@@ -68,7 +64,7 @@ One of the most representative failures in the application servers is the issue 
 
 If transactions in progress have any issues, you can see the stack by clicking the chart in the **_Active Transactions_** widget. In the **_Active Transactions_** widget, click an agent in the failed area to display the **_Active Transactions_** window for the agent. This window lists the transactions in progress. In this list, check whether the **_Transaction(URL)_** or **_SQL/HTTPC(ms)_** is output identically. You can check whether the cause of the primary failure is the same or something else.
 
-![](/img/best-p/apm-dashboard-activetx.png)
+<ImgLang img='apm-dashboard-active-tx-popup.png' />
 
 Click an item in the list of transactions in progress to check the stack of the transaction. Using this stack data, the failure cause can be analyzed.
 
@@ -76,23 +72,23 @@ Click an item in the list of transactions in progress to check the stack of the 
 
 The **_Hitmap_** widget allows you to check individual completed transactions on the distribution chart. In the **_Hitmap_** widget, if a transaction that should have taken 1 second takes 2 seconds unexpectedly, a transaction that takes more than twice the response time needs to be found to analyze the cause of failure.
 
-![](/img/best-p/apm-dashboard-hitmap.png)
+<ImgLang img='hitmap.png' />
 
 You can zoom in or out of the chart by clicking ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) on the upper right of the widget. Drag the chart area with the mouse to go to the **_Hitmap Transaction_** page. 
 
-![](/img/best-p/apm-dashbard-hitmap-tx.png)
+<ImgLang img='best-p/analysis-tx-main.png' />
 
 On the **_Hitmap Transaction_** page, the transaction information of the dragged chart area is listed in the **_TX Trace_** table. If you click each item, the **_Statistics_** information window appears for the transaction. Through the **_Statistics_** window, you can see which processes have slowed down for each step.
 
-![](/img/best-p/apm-dashboard-tx-stats.png)
+<ImgLang img='best-p/analysis-tx-table-view.png' />
 
 A number of methods are executed until a user request comes to the server, performs logic on the server, and displays the result. Which method should be traced to see where it has slowed down? WhaTap stores multiple user requests as snapshots at default intervals of 10 seconds. Include the stack data stored in snapshots in transactions. At this time, the stack data is defined as **_Active Stack_**.
 
-![](/img/best-p/apm-dashboard-active-stack.png)
+<ImgLang img='best-p/analysis-tx-table-view-mode.png' />
 
 **_Analysis_** > **_Stack_** is the function that allows you to collect stacks and list them based on the accumulated amount. You can statistically detect the delayed method sections for the internal logic that is not related to resources. 
 
-![](/img/best-p/apm-dashboard-top-stack.png)
+<ImgLang img='best-p/apm-dashboard-top-stack.png' />
 
 ## Analyses for users, services, and resources{#analysis-user-service-resource}
 
@@ -134,13 +130,13 @@ In addition to this, you can check the **_Apdex_** and **_Heap Memory_** widgets
 
 **Application Performance Index (Apedx)** is the indicator of the application performance. 
 
-![](/img/best-p/apm-dashbard-apdex.png)
+![Apdex](/img/apm-dashboard-apdex.png)
 
 It can be used as a metirc of user satisfaction and it has a value between 0 and 1, 0 to 0.7 is **_Poor_** (<span class='vslow'>red</span>), 0.7 to 0.85 is **_Fair_** (<span class='slow'>orange</span>), 0.85 to 0.95 is **_Good_** (<span class='api'>green</span>), and 0.95 to 1 is **_Excellent_** (<span class='normal'>blue</span>). Apdex metrics and color areas help you determine whether your application is responsive enough for your users. For more information about the Apdex metric, see [the following](https://docs.whatap.io/java/agent-apdex).
 
 The **_Heap Memory_** widget displays the maximum available memories for each server and the currently used memory.
 
-![](/img/best-p/apm-dashbard-heap-memory.png)
+<ImgLang img='apm-dashboard-heap-memory.png' />
 
 If the heap usage is insufficient, GC occurs frequently and occupies excessive CPU. Normal heap usage patterns go up and down due to GC. For more information about analysis of the heap memory chart, see the following link.
 
