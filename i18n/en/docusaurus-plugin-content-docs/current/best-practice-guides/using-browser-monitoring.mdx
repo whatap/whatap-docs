@@ -28,19 +28,19 @@ For more information about **_Browser Monitoring Dashboard_**, see [the followin
 
 1.  **Checking the timeline widget**
 
-    ![Page load timeline](/img/browser-pageload-timeline.png)
+    <ImgLang img="browser-pageload-timeline.png" desc="Page load timeline" />
 
     Through the **_Page Load Timeline_** widget, monitor the overall page load performance. You can see the overall performance of your browser applications in real time. You can see in which section the pages are loaded slowly.
 
 2.  **Checking the page loading time and load count**
 
-    ![Page load widget](/img/browser-pageload-time-num.png)
+    <ImgLang img="browser-pageload-time-num.png" desc="Page load widget" />
 
     If a page accessed by many users takes long time to load, you can focus on improving the performance of the page. On the contrary, if a page shows a slow loading speed but its page traffic is not high, it can be more efficient to invest more development resources in other pages rather than improving the page.
 
 3.  **Checking the page load hitmap**
 
-    ![Page load hitmap](/img/browser-pageload-hitmap.png)
+    <ImgLang img="browser-pageload-hitmap.png" desc="Page load hitmap" />
 
     The page load events are provided with a hitmap chart. The page load events are displayed in real time. Slower page loads appear at the top of the chart.
 
@@ -50,7 +50,7 @@ If you have identified any pages that are slow to load, you should find out the 
 
 #### Checking the page load hitmap
 
-![](/img/learn-browser-analyze-pageload-hitmap.png)
+<ImgLang img="learn-browser-analyze-pageload-hitmap.png" desc="" />
 
 1.  Through **_Page Load Hitmap_**, check the browser application status.
 
@@ -66,7 +66,7 @@ If you have identified any pages that are slow to load, you should find out the 
 
 If you select ![Display Detail icon](/img/ico-detail-view.svg) on the utmost left of **_Page List_**, the **_Page Load Detail_** window appears. You can identify various metrics to analyze the page loading performance and the factors that affect the performance.
 
-![Page load details](/img/browser-pageload-details.png)
+<ImgLang img="browser-pageload-details.png" desc="Page load details" />
 
 It provides the times spent for each section as a graph chart during the page load process. The chart helps you identify slow page load sections and optimize them.
 
@@ -128,7 +128,7 @@ It provides the times spent for each section as a graph chart during the page lo
 
 #### Checking the resource list
 
-![Resource List](/img/rum-pageload-event-04.png)
+<ImgLang img="rum-pageload-event-04.png" desc="Resource List" />
 
 The resources downloaded from the server by the browser can significantly affect the page loading performance. The **_resource list_** in the **_Page Load Detail_** window lets you quickly identify the resources that are slow to load or have large file sizes.
 
@@ -152,19 +152,19 @@ AJAX-related widgets in **_Browser Monitoring Dashboard_** provide a simple feat
 
 1.  **Checking the AJAX response time**
 
-    ![AJAX response time](/img/browser-ajax-response-time.png)
+    <ImgLang img="browser-ajax-response-time.png" desc="AJAX response time" />
 
     You can check the average load time of AJAX events from your browser applications. It is easy to identify the hosts or paths that take long time to load.
 
 2.  **Checking the AJAX failure count**
 
-    ![AJAX fail count](/img/browser-ajax-fail-count.png)
+    <ImgLang img="browser-ajax-fail-count.png" desc="AJAX fail count" />
 
     It is the number of AJAX requests not being made properly in the browser applications. You can get the real-time visibility into the number of AJAX failures occurring across the browser applications.
 
 3.  **Checking the AJAX hitmap**
 
-    ![AJAX hitmap](/img/rum-ajax-hitmap.png)
+    <ImgLang img="browser-ajax-hitmap.png" desc="AJAX hitmap" />
 
     The AJAX requests are provided in a hitmap chart. It displays the AJAX requests occurred in real time. Slower AJAX events are located at the top of the chart, with problematic AJAX events highlighted in yellow.
 
@@ -174,7 +174,7 @@ If any AJAX requests are slow or problematic, you need to check the status of ea
 
 #### Errors upon specific AJAX requests
 
-![AJAX request error](/img/learn-browser-ajax-request-error.png)
+<ImgLang img="learn-browser-ajax-request-error.png" desc="AJAX request error" />
 
 Upon AJAX requests, if any response value is 400 or higher, or the request itself fails, it appears in yellow on the hitmap chart. When this color appears, you can guess that any of the following has occurred.
 
@@ -188,7 +188,7 @@ Upon AJAX requests, if any response value is 400 or higher, or the request itsel
 
 #### Bottleneck
 
-![AJAX slow status](/img/learn-browser-ajax-slow-error.png)
+<ImgLang img="learn-browser-ajax-slow-error.png" desc="AJAX slow status" />
 
 If you are experiencing bottlenecks in AJAX requests across browser applications, check the following situations.
 
@@ -206,7 +206,7 @@ If you are experiencing bottlenecks in AJAX requests across browser applications
 
 #### Timeout
 
-![AJAX time out](/img/learn-browser-ajax-timeout.png)
+<ImgLang img="learn-browser-ajax-timeout.png" desc="AJAX time out" />
 
 If you are experiencing a timeout in AJAX requests across browser applications, check the following situations.
 
@@ -228,7 +228,7 @@ If you are experiencing a timeout in AJAX requests across browser applications, 
 
 If you find that AJAX is slowing down the performance, check which AJAX request is causing problems on which page. If you drag a specific area of the chart in **AJAX Hitmap**, you can see the detailed information about AJAX of the selected area.
 
-![AJAX details](/img/rum-ajax-details.png)
+<ImgLang img="rum-ajax-details.png" desc="AJAX details" />
 
 You can check the elapsed time of the AJAX request where a problem occurred, AJAX URL, page URL, browser, status code, and error message. The AJAX URL allows us to check which AJAX call caused the problem, and the browser information to determine in which environment users are experiencing the problem. Status codes and error messages are important because they can help determine the cause of any problem. Quick identification of the cause is a shortcut to problem resolution and service improvement.
 
@@ -246,19 +246,19 @@ To reliably provide browser applications to users, the following issues must be 
 
 -   **Checking the page loading time and load count by browser**
 
-    ![Pageload by browsers](/img/learn-browser-page-load.png)
+    <ImgLang img="browser-pageload-by-browser.png" desc="Pageload by browsers" />
 
     It provides the page load times and page load counts per browser for browser applications. This makes it easy to compare the page load performances for each browser.
 
 -   **Checking the error count per browser**
 
-    ![Error count by browsers](/img/learn-browser-error-count.png)
+    <ImgLang img="browser-erorr-by-browsers.png" desc="Error count by browsers" />
 
     It displays the error counts for each browser in a pie chart. You can easily figure out which errors your browser is experiencing most often. If a specific browser has more errors than other browsers, the developer can proceed with optimization for the browser.
 
 -   **Checking the page load times and load counts by region**
 
-    ![Pageload map](/img/browser-pageload-map.png)
+    <ImgLang img="browser-pageload-map.png" desc="Pageload map" />
 
     It provides the page load times and page load counts per region in a chart for browser applications. Users can easily compare the browser application performances by region. You can also find the way to improve your website's performance in areas where the page loading time is slow. For example, you can add servers in the areas where the loading time is slow or find the way to make cache more efficient. This allows users to enjoy the faster and more stable browser applications.
 
@@ -298,25 +298,25 @@ For more information about **_Browser Errors_**, see [the following](../browser/
 
 -   **Checking the error count per page**
 
-    ![Error count by pages](/img/browser-error-by-page.png)
+    <ImgLang img="browser-error-by-page.png" desc="Pageload by browsers" />
 
     You can check the error counts for each page in real time. You can quickly identify and respond to problematic pages.
 
 -   **Checking the error count by type and AJAX error count**
 
-    ![Error count by types](/img/browser-error-by-types.png)
+    <ImgLang img="browser-error-by-types.png" desc="Error count by types" />
 
     You can check the number of errors occurring across the browser applications by error type.
 
 -   **Checking the error count per browser**
 
-    ![Error count by browsers](/img/learn-browser-error-count.png)
+    <ImgLang img="browser-erorr-by-browsers.png" desc="Error count by browsers" />
 
     It displays the error counts for each browser in a pie chart. You can easily figure out which errors your browser is experiencing most often. If a specific browser has more errors than other browsers, the developer can proceed with optimization for the browser.
 
 -   **Checking the error message table**
 
-    ![Error message table](/img/browser-error-table.png)
+    <ImgLang img="browser-error-table.png" desc="Error message table" />
 
     It displays the error counts by error message and the error counts by browser in a table. You can find which browsers are causing most errors and use them to troubleshoot. It is also useful for identifying the root causes of errors. If a new error occurs, you can quickly respond by seeing this table.
 
@@ -324,7 +324,7 @@ For more information about **_Browser Errors_**, see [the following](../browser/
 
 If you find an error message and the caused page, check its details in **_Analysis_** > **_Track Error_**.
 
-![Tracking error](/img/learn-browser-tracking-error.png)
+<ImgLang img="browser-error-stack-upload-code.png" desc="Tracking error" />
 
 In **_Track Error_**, you can see the error details generated from browsers. You can also search by applying filters to pages or error messages. Errors generated by users include the user environment information (browser, OS, device), error stack information, and page information.
 
