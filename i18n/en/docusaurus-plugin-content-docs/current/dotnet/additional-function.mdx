@@ -25,8 +25,8 @@ This function allows user to leave a log message directly in the trace history. 
         {
             public static void Trace(string message)
             {
-                // Prevent method calls from being canceled due to compiler optimization
-                // The code inside following method is ignored by the WhaTap agent and will not be executed.
+                // Prevents the method call from being canceled by compiler optimization.
+                // The code inside this method is ignored by the WhaTap agent and is not executed.
                 Console.WriteLine(message);
             }
         }
