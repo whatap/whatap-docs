@@ -32,11 +32,17 @@ tags:
 
     ユーザーIP情報をHTTPヘッダーのキーから抽出します。
 
--   **trace_user_method** <span class='type'>Boolean</span>
+-   **trace_user_method** / **wclient_cookie_limit** <span class='type'>Boolean</span>
 
     デフォルト値 `cookie`
 
     ユーザー数の追跡をクッキーベースに行います。
+
+    :::note
+
+    Javaエージェント 2.2.0バージョン以降の場合、`wclient_trace_type`オプションをご利用ください。
+
+    :::
 
 -   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
 

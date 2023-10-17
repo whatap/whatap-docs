@@ -1,0 +1,44 @@
+---
+id: additional-function
+title: Additional options
+description: It guides you to the function to additionally collect data through agents.
+tags:
+  - .NET
+  - Application
+  - Additional options
+---
+
+It guides you to the function to collect additional data through agents.
+
+## User's log tracing function
+
+This function allows user to leave a log message directly in the trace history. To leave logs, proceed with the following step.
+
+-   Add a CS file to the project to log in and then write your code.
+
+    ```csharp
+    using System;
+
+    namespace Whatap.UserLog
+    {
+        public static class Tracer
+        {
+            public static void Trace(string message)
+            {
+                // Prevent method calls from being canceled due to compiler optimization
+                // The code inside following method is ignored by the WhaTap agent and will not be executed.
+                Console.WriteLine(message);
+            }
+        }
+    }
+    ```
+
+-   At the location to log, add code in `Tracer.Trace("Log string")` format.
+
+    ```csharp
+    public string UserFunction(int value)
+    {
+        Tracer.Trace($"started... {value}");
+        ...
+    }
+    ```

@@ -61,7 +61,7 @@ create user whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力�
 grant create session to whatap;
 grant select any dictionary to whatap;
  
-# 12c以降でマルチテナントの場合（接頭語はc##）
+# 12c以降でマルチテナントの場合 (接頭語はc##)
 create user c##whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
 grant create session to c##whatap;
 grant select any dictionary to c##whatap;

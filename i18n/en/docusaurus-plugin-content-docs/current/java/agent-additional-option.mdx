@@ -32,11 +32,17 @@ Depending on your application environment, the agent defaults alone may not prov
 
     It extracts the user IPs from the HTTP header keys.
 
--   **trace_user_method** <span class='type'>Boolean</span>
+-   **trace_user_method** / **wclient_cookie_limit** <span class='type'>Boolean</span>
 
     Default `cookie`
 
     It traces user counts based on the cookie.
+
+    :::note
+
+    In case of Java Agent 2.2.0 or later, use the `wclient_trace_type` option.
+
+    :::
 
 -   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
 

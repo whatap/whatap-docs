@@ -14,8 +14,14 @@ Javaウェブアプリケーションサーバーに接続したユーザーの�
 
     リアルタイムのユーザー集計の有無を設定します。ユーザー追跡オプションが重複設定されている場合、動作の優先順位は次のとおりです。
 
-    > 1.  **trace_user_using_ip**
+    > 1.  **trace_user_using_ip** / **wclient_using_ip**
     > 2.  **trace_user_using_jsession**
-    > 3.  **user_header_ticket**
+    > 3.  **user_header_ticket** / **wclient_header_ticket**
 
-{@include: ../common-items/_common-collect-user.mdx}
+    :::note
+
+    Javaエージェント 2.2.0バージョン以降の場合、`wclient_using_ip`、`wclient_header_ticket`オプションをご利用ください。
+
+    :::
+
+{@include: ../common-items/_common-collect-user.mdx}  

@@ -1,0 +1,44 @@
+---
+id: additional-function
+title: 付加機能
+description: エージェントを通じて追加で収集できる機能をご案内します。
+tags:
+  - .NET
+  - アプリケーション
+  - 付加機能
+---
+
+エージェントを通じてデータを追加で収集できる機能をご案内します。
+
+## ユーザーログ追跡機能
+
+トレース履歴にユーザーが直接ログメッセージを残すことができる機能です。 ログを残すには、次のステップを進めてください。
+
+-   ログを残そうとするプロジェクトにCSファイルを追加し、コードを作成してください。
+
+    ```csharp
+    using System;
+
+    namespace Whatap.UserLog
+    {
+        public static class Tracer
+        {
+            public static void Trace(string message)
+            {
+                // コンパイラー最適化によりメソッド呼び出しが取り消されるのを防止
+                // このメソッド内のコードはWhatapエージェントによって無視されるため、実行されません。
+                Console.WriteLine(message);
+            }
+        }
+    }
+    ```
+
+-   ログを残したい位置で`Tracer.Trace("ログ文字列")`と同じ形式でコードを追加してください。
+
+    ```csharp
+    public string UserFunction(int value)
+    {
+        Tracer.Trace($"started... {value}");
+        ...
+    }
+    ```

@@ -132,7 +132,7 @@ Kubernetes APIを利用して、エージェントが作成(create)されたこ�
 
 ## Kubernetesエージェントのインストールを確認
 
--   クバネティスエージェントのインストールが正常に完了した場合、次のようにインストール完了メッセージを確認できます。
+-   クバネティスエージェントのインストールが正常に完了した場合、次のようにインストール完了メッセージが確認できます。
 
     <ImgLang img='k8s-agent-install-check.png' desc='Kubernetesエージェントのインストール確認' />
 
@@ -160,7 +160,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::tip
 
-`kubectl`コマンドの使用時`-n {ネームスペース}`オプションを使用すると、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
+`kubectl`コマンドを使用する場合、`-n {ネームスペース}`オプションを使用して、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
 
 :::
 
@@ -190,7 +190,7 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 
 :::note
 
--   アプリケーションエージェントのインストールを進めるには、画面の右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参照してください。
+-   アプリケーションエージェントのインストールを継続するには、画面の右下の**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書]](install-application-agent)を参照してください。
 -   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

@@ -99,3 +99,22 @@
     セッションが最後のactive状態だった後、idle状態を維持した時間（秒）が設定値より小さいセッションをactive sessionとしてみなすオプションです。たとえば、設定値が1の場合、1秒以内にactiveだったセッションがアクティブセッションウィンドウに表示されます。
 
 </InDoc>
+
+<InDoc product='oracle'>
+
+-   **ora_ratio** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    各種ratio指標を追加で収集することができます。収集する指標は次のとおりです。
+
+    -   `buffer cache hit ratio`
+    -   `soft parse ratio`
+    -   `hard parse ratio`
+    -   `library cache hit ratio`
+    -   `library cache pin hit ratio`
+    -   `library cache get hit ratio`
+    -   `latch hit ratio`
+    -   `shared pool free mem ratio`
+
+</InDoc>

@@ -14,8 +14,14 @@ It collects the number of users who connect to the Java web application server.
 
     Set whether or not to aggregate real-time users. If the user tracing option setting is duplicated, the action priority is as follows.
 
-    > 1.  **trace_user_using_ip**
+    > 1.  **trace_user_using_ip** / **wclient_using_ip**
     > 2.  **trace_user_using_jsession**
-    > 3.  **user_header_ticket**
+    > 3.  **user_header_ticket** / **wclient_header_ticket**
 
-{@include: ../common-items/_common-collect-user.mdx}
+    :::note
+
+    In case of Java Agent 2.2.0 or later, use the `wclient_using_ip` and `wclient_header_ticket` options.
+
+    :::
+
+{@include: ../common-items/_common-collect-user.mdx}  

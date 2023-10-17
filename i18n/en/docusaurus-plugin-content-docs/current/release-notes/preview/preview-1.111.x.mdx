@@ -14,6 +14,112 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.111.5
+
+October 13, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Changed</Status> In <UI>Log setting</UI> > <UI>Log primary parser setting</UI> tab, repositioned the descriptions for reserved words that cannot be indexed.</p>
+
+</div>
+
+## Preview 1.111.4
+
+October 12, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <UI>Event configuration</UI> > <UI>Metrics</UI> tab, fixed the problem where the content does not appear when repeatedly importing the same json file.</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Server list</UI> > <UI>Server details</UI>, fixed the issue where the previous metric values of the server before change appear when changing the server list with the real-time interval gauge full.</p>
+
+* * *
+
+### `DataBase`
+
+#### DB V2
+
+<p><Status>Changed</Status> In <UI>Log</UI> > <UI>Log setting</UI>, added the explanation of how to configure logs for the installed DB and AWS RDS respectively.</p>
+
+* * *
+
+### `Cloud Monitoring`
+
+<p><Status>Feature</Status> In <UI>Sitemap</UI>, added the <UI>User Behavior</UI> menu.</p>
+
+</div>
+
+## Preview 1.111.3
+
+October 6, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### User Interface
+
+<p><Status>Fixed</Status> Deleted the function to display the interval for the default items in the interval selection option.</p>
+
+In specific categories, the default interval value appears as **(0 second)**, but the interval value applied to the chart is sometimes not 0 second. Accordingly, the time value has been deleted.
+
+#### Notice
+
+<p><Status>Fixed</Status> In <UI>Notice</UI>, fixed the bug where the scroll does not appear when viewing content by clicking any post.</p>
+
+#### Dashboard
+
+<p><Status>Changed</Status> Under the record tab in the <UI>Transaction analysis</UI> window, added the description for the mCaller data.</p>
+
+#### Project list
+
+<p><Status>Fixed</Status> In case of the list view in <UI>Project list</UI>, fixed the issue where the CPM project has not been deleted.</p>
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> In the <UI>Heap memory</UI> widget under <UI>Dashboard</UI> > <UI>Application dashboard</UI>, fixed the typo in the title of the detailed view window.</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> In <UI>Server list</UI> > <UI>Server list</UI>, fixed the problem where the background color of the agent list does not match the actual status when searching for agents.</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> In case of adding the parser in <UI>Log</UI> > <UI>Log setting</UI> > <UI>Log primary parser setting</UI> tab, added validation for reserved words when entering the search value for <UI>Log detection condition</UI>.
+
+-   <Status>Fixed</Status> If <UI>Search</UI> or <UI>Exclusion search</UI> is selected in the dropdown menu that appears when a tag is clicked in the log list in <UI>Log</UI> > <UI>Log search</UI>, fixed the issue where any duplicate value is included in the <UI>Filter</UI> field.
+
+</div>
+
+## Preview 1.111.2
+
+October 4, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Instance monitoring V2
+
+<p><Status>Changed</Status> Modified to enter the string auto-completed with changed metrics by leaving the widget title blank when changing, adding, or deleting the metrics of the selected widget.</p>
+
+</div>
+
 ## Preview 1.111.1
 
 September 27, 2023

@@ -45,7 +45,7 @@ grant usage on schema {schema_name} to whatap;
 
 <ProdImg img='db-database-size.png' desc='データベースのサイズ'/>
 
-1.  **_時間_**で照会したい時間を設定してください。 緑のボタンを選択して照会時間を選択することもできます。
+1.  **_時間_**表示する時間を設定してください。 緑のボタンを選択して照会時間を選択することもできます。
 
 2.  **_インスタンス_**で表示する対象を選択してください。
 
@@ -75,14 +75,6 @@ grant usage on schema {schema_name} to whatap;
 
 基本的にテーブル別**DATA SIZE**、**INDEX SIZE**、**ROWS**を表示します。 これは`information_schema.tables`の情報で実際のサイズと異なる場合があります。 `information_schema.innodb_tablespaces`の**FILE SIZE**を一緒に確認するには、DBXエージェントに次のオプションを設定してください。 このサイズは実際のサイズに似ています。
 
-</InDoc>
-
-<InDoc product='postgresql'>
-
-テーブル別**DATA SIZE**、**INDEX SIZE**を表示します。 PostgreSQLは、テーブルサイズ情報収集のためにDBXエージェントに次のオプションを設定する必要があります。
-
-</InDoc>
-
 ```ini title='whatap.conf'
 table_filesize=true
 ```
@@ -92,6 +84,14 @@ table_filesize=true
 モニタリングアカウントに照会権限があるテーブルを対象とします。 モニタリング用アカウント作成の詳細については、[次の文書](install-agent#uid)を参照してください。
 
 :::
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
+テーブル別**DATA SIZE**、**INDEX SIZE**を表示します。
+
+</InDoc>
 
 ## 照会データのダウンロード
 

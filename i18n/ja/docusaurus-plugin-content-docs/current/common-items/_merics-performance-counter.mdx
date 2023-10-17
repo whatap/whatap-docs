@@ -26,6 +26,9 @@ WhaTapエージェントのユーザーを区別するためのさまざまな�
 
     ```ini title='whatap.conf'
     trace_user_using_ip=false
+
+    # Java agent v2.2.0 or later
+    wclient_using_ip=false
     ```
 
 -   **Header Key**
@@ -34,6 +37,9 @@ WhaTapエージェントのユーザーを区別するためのさまざまな�
 
     ```ini title='whatap.conf'
     user_header_ticket=USER
+
+    # Java agent v2.2.0 or later
+    wclient_header_ticket=USER
     ```
 
 ### ユーザーカウント
@@ -50,7 +56,7 @@ WhaTapエージェントのユーザーを区別するためのさまざまな�
 
 :::tip
 
-WhaTapでは、長期間ユーザーをカウントするために、ユーザーデータに対するbyte blockをサーバーで収集します。このデータをHyperLogLogでマージすると、理論的には1ヶ月以上の訪問ユーザーを計算できます。
+WhaTapでは、長期間ユーザーをカウントするために、ユーザーデータに対するbyte blockをサーバーで収集します。このデータをHyperloglogでマージすると、理論的には1ヶ月以上の訪問ユーザーを計算できます。
 
 :::
 

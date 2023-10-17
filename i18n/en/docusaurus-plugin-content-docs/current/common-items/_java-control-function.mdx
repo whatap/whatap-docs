@@ -102,11 +102,17 @@ The functions of the Java application server are controlled.
 
     Enable the **_Library Version_** function in **_Application_** > **_Instance Performance Analysis_** under **_Project Menu_** of [WhaTap Monitoring Service](https://service.whatap.io).
 
--   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
+-   **realtime_user_thinktime_max** / **wclient_thinktime_max** <span class='type'>MiliSeconds</span>
 
     Default `300000`
 
     Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
+
+    :::note
+
+    In case of Java Agent 2.2.0 or later, use the `wclient_thinktime_max` option.
+
+    :::
 
 -   **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
 

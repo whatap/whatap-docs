@@ -53,7 +53,7 @@ echo "logsink.files=$LOGFILES" | sudo tee -a {設定ファイルパス}/whatap.c
 
 #### 1.3.6以前バージョン
 
-トランザクションごとに発生したログを個別で表示できるようにトランザクションID`{txid}`をログに出力します。WhaTapモニタリングは、Python LogRecordに`{txid}`を自動的に挿入し、フォーマッタの設定時にログファイルに`{txid}`が出力できるようにします。
+トランザクションごとに発生したログを個別で表示できるようにトランザクションID`{txid}`をログに表示します。WhaTapモニタリングは、Python LogRecordに`{txid}`を自動的に挿入し、フォーマッタの設定時にログファイルに`{txid}`を出力できるようにします。
 
 ```shell
 settings.py

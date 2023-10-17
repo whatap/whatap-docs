@@ -102,11 +102,17 @@ Javaアプリケーションサーバーの機能を制御します。
 
     [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で**_アプリケーション_** > **_インスタンスパフォーマンス分析_**メニューで**_ライブラリバージョン_**機能をアクティブにします。
 
--   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
+-   **realtime_user_thinktime_max** / **wclient_thinktime_max** <span class='type'>MiliSeconds</span>
 
     デフォルト値`300000`
 
     リアルタイムにブラウザのユーザー数を測定する場合、同じユーザーとして認識される呼び出し間隔の最大値を設定します。
+
+    :::note
+
+    Javaエージェント 2.2.0 バージョン以降の場合は、 `wclient_thinktime_max` オプションを使用します。
+
+    :::
 
 -   **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
 

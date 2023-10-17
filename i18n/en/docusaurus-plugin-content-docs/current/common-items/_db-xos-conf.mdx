@@ -30,6 +30,24 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
     It displays the disk utilization, free sizes, and total sizes for each instance. If the value is `0`, the disk utilization is not collected.
 
+-   **process** <span class='type'>String</span>
+
+    You can monitor the running status of processes. Enter the process name as an option. You can register multiple items using comma (,) as the delimiter.
+
+    ```ini title='xos.conf'
+    process={process_name}
+    ```
+
+    For example, to set the top and lock.sh processes to be monitored, set the options as follows:
+
+    ```ini title='xos.conf'
+    process=top,lock.sh
+    ```
+
+-   **iplist_interval** <span class='type'>Second</span>
+
+    You can collect a list of IPs for your database servers. Set the time interval in seconds (at least 3 seconds) for collection.
+
 <InDoc product='postgresql'>
 
 -   **file** <span class='type'>String</span>

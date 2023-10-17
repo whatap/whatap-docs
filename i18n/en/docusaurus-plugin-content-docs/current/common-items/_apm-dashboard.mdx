@@ -238,7 +238,7 @@ All agents in the project collect the active transaction counts every 5 seconds,
 
 -   **_SQL_**: SQL is running. If the **_SQL_** number increases, check for problems connecting to the database server.
 
--   **_HTTPC_**: It is calling any external API. If the **HTTPC\*** number increases, it means that the server connected to outside is not responding normally.
+-   **_HTTPC_**: It is calling any external API. If the **_HTTPC_** number increases, it means that the server connected to outside is not responding normally.
 
 -   **_DBC_**: The transaction is attempting to get a new connection from the connection pool. If DB connection pools are insufficient, a delay occurs whenever a new connection request occurs, causing the performance failure. In this case, the **_DBC_** number increases.
 
@@ -368,15 +368,21 @@ For more information about the heap memory chart analysis, see the following lin
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='Concurrent User' />
 
-It displays the number of real-time browser users. Every 5 seconds, users who have generated transactions within the last 5 minutes are counted and displayed. Users are counted based on their browser's IP. In the agent settings, the IP or cookies can be used to distinguish users.
+It displays the number of real-time browser users. Every 5 seconds, users who made transactions within the last 5 minutes are counted and displayed without duplicates. Users are counted based on their browser's IP.
 
 :::note
+
+<InDoc product='java'>
+
+-   In the agent configuration, the IP or cookies can be used to identify users. For more information, see [the following](agent-additional-option).
+
+</InDoc>
 
 -   In general, the connected user means a connected user who has access to the current network. However, web systems are different because they use connectionless networks. It does not mean that you are connected, but rather the user who sent the recent request can be measured.
 
 -   Real-time (concurrent access) users indicate the users who are using the system in the same time zone. There are various ways to count or measure real-time (concurrent access) users.
 
--   The number of users is calculated by **HyperLogLog** rather than simply adding up. **HyperLogLog** is a probabilistic data structure that estimates the number of elements in a set with very little memory.
+-   The number of users is calculated by ** HyperLogLog** rather than simply adding up. ** HyperLogLog** is a probabilistic data structure that estimates the number of elements in a set with very little memory.
 
 :::
 
@@ -388,11 +394,11 @@ It displays the number of real-time browser users. Every 5 seconds, users who ha
 
 It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily Application Status_** appears.
 
-#### Today's Visits
+#### Today's visits
 
 <ImgLang img="apm-dashboard-today-users.png" desc="Today's Visits" />
 
-It displays the user count for today by hour. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily Application Status_** appears.
+This metric shows the number of **_concurrent users_** for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. Click ![right-arrow](/img/right-arrow.svg). Then **_STAT/REPORT_** > **_Daily application status_** appears.
 
 ## Checking the real-time alert
 

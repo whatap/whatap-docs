@@ -90,10 +90,10 @@ WhaTapモニタリングサービスのホーム画面からプロジェクト�
     stats_enabled = true 
     ## ログ発生量の統計カテゴリ
     stats_category = "logsink_stats"
-    ## ログファイルパス(path)にアスタリスク(*)が含まれ、除外するログの非対象ファイル名の設定
+    ## ログファイルのパス(path)にアスタリスク(*)が含まれ、除外するログの非対象ファイル名の設定
     excludeNames = [ ".gz",".zip" ] 
     [[inputs.logsink.file]]
-    ## ログファイル指定時、日付パターン(strftime.org)を指定可能
+    ## ログファイルを指定する場合、日付パターン(strftime.org)を指定できます
     path = "c:\\whatap\\logs%Y-%m-%d_.log"
     disabled = false
     encoding = "shift-jis"

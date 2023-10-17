@@ -1,0 +1,43 @@
+---
+id: dbx-1_6_11
+title: DBX v1.6.11
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_10
+---
+
+2023年10月4日
+
+## 共通
+
+<p><Status>Fixed</Status>セッション中止機能が正常に作動しても、「無効なパラメータキー」メッセージが表示されるバグを修正</p>
+
+## PostgreSQL
+
+-   <Status>Fixed</Status> deadtuple収集クエリの修正
+
+-   <Status>Fixed</Status>収集間隔が 1 日のカテゴリは 5 分統計データを作成しないように修正
+
+## MySQL
+
+-   <Status>Fixed</Status> Maria DBでtableサイズが収集できないバグを修正
+
+-   <Status>Fixed</Status>アクティブセッションstate値を<code>S</code>から<code>Sending data</code>に修正
+
+## Oracle
+
+<p><Status>New</Status>各種ratio指標の追加、次のようにオプションを設定してください。</p>
+
+```ini title='whatap.conf'
+ora_ratio=true
+```
+
+収集する指標は次のとおりです。
+
+-   `buffer cache hit ratio`
+-   `soft parse ratio`
+-   `hard parse ratio`
+-   `library cache hit ratio`
+-   `library cache pin hit ratio`
+-   `library cache get hit ratio`
+-   `latch hit ratio`
+-   `shared pool free mem ratio`

@@ -1,0 +1,36 @@
+---
+id: dbx-1_6_12
+title: DBX v1.6.12
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_11
+---
+
+2023年10月13日
+
+## 共通
+
+<p><Status>Changed</Status>エージェントインストールファイルの案内文書の英訳</p>
+
+-   _xos.conf_
+-   _install_WindowsService.txt_
+-   _README.md_
+-   _wahtap.conf.sample_
+
+## PostgreSQL
+
+-   <Status>New</Status>Topオブジェクト情報収集カテゴリの追加
+
+    -   `db_postgresql_index[table]_bloating`
+    -   `db_postgresql_indexes[tables]_stats`
+    -   `db_postgresql_deadtuple`
+    -   `db_postgresql_vacuum_candidate`
+
+-   <Status>New</Status>プラン(Plan)リアルタイム照会時、json形式で照会する機能を追加
+
+-   <Status>New</Status>テーブルレイアウトリアルタイム照会
+
+-   <Status>Fixed</Status> deadtuple収集クエリの修正
+
+## MySQL
+
+<p><Status>Fixed</Status>ロック(lock)データを重複して収集する問題の修正</p>

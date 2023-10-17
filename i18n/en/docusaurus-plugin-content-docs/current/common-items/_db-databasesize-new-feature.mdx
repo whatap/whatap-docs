@@ -75,14 +75,6 @@ If you select a database in **_Size details_**, you can see the list of sizes fo
 
 It displays **DATA SIZE**, **INDEX SIZE**, **ROWS** for each table by default. This is the information for `information_schema.tables` and may differ from the actual size. To see the **FILE SIZE** of `information_schema.innodb_tablespaces`, set the following option in the DBX agent. This size is close to the actual size.
 
-</InDoc>
-
-<InDoc product='postgresql'>
-
-It displays **DATA SIZE** and **INDEX SIZE** for each table. PostgreSQL requires to set the following option in the DBX agent to collect table sizes.
-
-</InDoc>
-
 ```ini title='whatap.conf'
 table_filesize=true
 ```
@@ -92,6 +84,14 @@ table_filesize=true
 It targets the tables for which the monitoring account has the query role. For more information about the monitoring account creation, see [the following](install-agent#uid).
 
 :::
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
+It displays **DATA SIZE** and **INDEX SIZE** for each table.
+
+</InDoc>
 
 ## Downloading the viewed data
 

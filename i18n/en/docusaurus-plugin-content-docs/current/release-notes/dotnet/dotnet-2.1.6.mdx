@@ -1,0 +1,57 @@
+---
+id: dotnet-2_1_6
+title: .NET Agent v2.1.6
+toc_max_heading_level: 2
+pagination_next: release-notes/dotnet/dotnet-2_1_5
+---
+
+October 5, 2023
+
+-   <Status>Feature</Status> Added the HTTP request body tracing function.
+
+    -   **profile_http_body_enabled** <span class='type'>Boolean</span>
+
+        Default `false`
+
+        The body of the HTTP request is recorded in the trace history.
+
+    -   **profile_http_body_url_prefix** <span class='type'>String</span>
+
+        It is used to define the prefix of the target URL to record the HTTP body information in the trace history.
+
+-   <Status>Feature</Status> Added the user log tracing function.
+
+    This function allows user to leave a log message directly in the trace history. To leave logs, proceed with the following step.
+
+    -   Add a CS file to the project to log in and then write your code.
+
+        ```csharp
+        using System;
+
+        namespace Whatap.UserLog
+        {
+            public static class Tracer
+            {
+                public static void Trace(string message)
+                {
+                    // Prevent method calls from being canceled due to compiler optimization
+                    // The code inside following method is ignored by the WhaTap agent and will not be executed.
+                    Console.WriteLine(message);
+                }
+            }
+        }
+        ```
+
+    -   At the location to log, add code in `Tracer.Trace("Log string")` format.
+
+        ```csharp
+        public string UserFunction(int value)
+        {
+            Tracer.Trace($"started... {value}");
+            ...
+        }
+        ```
+
+-   <Status>Fixed</Status> Fixed the Windows Communication Foundation (WCF, web service)-related error.
+
+    Fixed the bug where the tracing target is expanded to all methods including WCF and the targets that cannot be monitored are included, if the `webservice_method_prefix` option is set to `null` and `webservice_method_enabled=true` is set.

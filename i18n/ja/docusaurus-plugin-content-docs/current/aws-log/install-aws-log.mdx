@@ -13,9 +13,9 @@ import TR from '@site/src/components/TR';
 
 ## 事前確認
 
-AWS Logを収集するには、追加のリソースが必要です。ユーザーのAWS環境で出力されるログ情報を受信した後、WhaTap収集サーバーに転送できるようにするため、WhaTapはAWS Lambda Functionを通じて**WhaTap Forwarder**を提供します。AWS Cloud Formationを活用して**WhaTap Forwarder**をユーザーのAWS環境に駆動します。
+AWS Logを収集するには、追加のリソースが必要です。ユーザーのAWS環境で出力されるログ情報を受信した後、WhaTap収集サーバーに送信するため、WhaTapはAWS Lambda Functionを使用して**WhaTap Forwarder**を提供します。AWS Cloud Formationを使用して**WhaTap Forwarder**をユーザーのAWS環境で実行します。
 
-**WhaTap Forwarder**はAWS Lambda FunctionのLifecycleに依存しています。 制御要素により、同時性の制約を克服できます。 ユーザー環境で発生するログ量に応じて、次の制御要素を調整します。
+**WhaTap Forwarder**は、AWS Lambda FunctionのLifecycleに依存します。 制御要素を使用すると、同時実行の制約を克服できます。 ユーザー環境で生成されるログ量に応じて、次の制御要素を調整します。
 
 -   `ReservedConcurrency`： 同時実行数です。
 -   `Timeout`：Lambda Functionにログ流入がない場合の保持時間です。
@@ -28,7 +28,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 #### CloudWatch Log Group
 
 -   WAF
--   API Gateway：ロググループ名を**_api-gateway/gateway resource_**として設定してこそ、正常な収集が可能です。
+-   API Gateway：ロググループ名を**_api-gateway/gateway resource_**に設定することで、正常なログ収集が可能です。
 -   RDS
 -   DocumentDB
 -   REDIS
@@ -37,8 +37,8 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 #### S3
 
--   VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定してこそ、正常な収集が可能です。
--   CloudFront：Log設定時に接頭辞を**cloudfront**として設定してこそ、正常な収集が可能です。
+-   VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定することで正常な収集が可能です。
+-   CloudFront：Log設定時に接頭辞を**cloudfront**として設定することで正常な収集が可能です。
 -   ELB
 
 </details>
@@ -59,7 +59,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 ## WhaTap Forwarderインストール{#install-whatap-forwarder}
 
-ログ転送用の**WhaTap Forwarder**をAWS Lambda Functionとしてインストールします。 AWS Cloud Formationでインストールを行います。 WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_WhaTap Forwarderインストール_**タブを参照してください。 次のインストール入力情報が必要です。 
+ログ送信用の**WhaTap Forwarder**をAWS Lambda Functionとしてインストールします。 AWS Cloud Formationでインストールを行います。 WhaTap**_エージェントのインストール_** > **_インストール手順_**セクションの**_WhaTap Forwarderインストール_**タブを参照してください。 次のインストール入力情報が必要です。 
 
 -   **AWS Region**
 
@@ -67,7 +67,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 -   **CloudFormation Stack Name**
 
-    WhaTap Forwarderのインストール及び除去に活用されるCloudFormation Stack名前を指定します。
+    WhaTap Forwarderのインストール及び削除に使用されるCloudFormation Stack名前を指定します。
 
 -   **ConnectionTimeOut** <span class='type'>Second</span>
 
@@ -85,19 +85,19 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
     デフォルト値`150`
 
-    WhaTap Forwarderの休止期間(秒)を指定します。ログの転送リクエストがないときにLambda Functionが削除されるまでの時間を指定します。 
+    WhaTap Forwarderの休止期間(秒)を指定します。ログの送信リクエストがない場合に、Lambda Functionが削除されるまでの時間を指定します。 
 
 -   **UseReservedConcurrency** <span class='type'>Boolean</span>
 
     デフォルト値`false`
 
-    ログの安定的な転送のため、WhaTap Forwarderに割り当てる最大Functionの個数の指定可否を設定します。
+    ログを安定して送信するために、WhaTap Forwarderに割り当てる最大Functionの数の指定可否を設定します。
 
 -   **ReservedConcurrency** <span class='type'>Second</span>
 
     デフォルト値`10`
 
-    `UseReservedConcurrency`の値が`true`である場合、WhaTap Forwarderに割り当てるFunctionの個数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunctionの数は1,000個です。ユーザーが使用できるFunctionの総個数はアカウントあたりの総割り当てFunction個数(1,000)で`ReservedConcurrency`の設定値を引いたものに制限されます。
+    `UseReservedConcurrency`の値が`true`である場合、WhaTap Forwarderに割り当てるFunctionの数を指定します。AWSアカウントごとにデフォルトで割り当てられるFunctionの数は1,000です。ユーザーが使用できるFunctionの総数はアカウントあたりの総割り当てFunction数(1,000)で`ReservedConcurrency`の設定の値を引いたものに制限されます。
 
     <!-- ユーザは、AWSアカウントあたりの割り当て可能なFunction数から`ReservedConcurrency`設定値を引いた分だけFunctionを使用することができます。-->
 
@@ -107,7 +107,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 ![WhaTap Forwarder create stack](/img/aws-log-create-stack.png)
 
-1.  **_インストール案内_**セクションの![number 1](/img/number-01.png) **_WhaTap Forwarderインストール_**タブで![number 2](/img/number-02.png) **_AWS Region_**を選択してください。
+1.  **_インストール手順_**セクションの![number 1](/img/number-01.png) **_WhaTap Forwarderインストール_**タブで![number 2](/img/number-02.png) **_AWS Region_**を選択してください。
 
 2.  ![number 3](/img/number-03.png) **_WhaTap Forwarderインストールページ_** ボタンを選択し、CloudFormation実行ページに移動してください。
 
@@ -115,23 +115,23 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 4.  下段から![number 4](/img/number-04.png)承認を**_チェック_**した後、![number 5](/img/number-05.png) **_Create stack_**ボタンを選択してください。 インストールには約2分かかります。
 
-### WhaTap ForwarderのARN確保{#whatapforwarder-arn}
+### WhaTap ForwarderのARN取得{#whatapforwarder-arn}
 
 ![WhaTap Forwarder arn1](/img/aws-log-whatap-forwarder-arn.png)
 
-1.  上段右側の![number 1](/img/number-01.png)**_更新_**ボタンをクリックしてスタックの作成進行状況を確認してください。 
+1.  上段右側の![number 1](/img/number-01.png)**_更新_**ボタンをクリックしてスタック作成の進行状況を確認してください。 
 
     :::note
 
-    スタックインストールの最終段階であるWhaTapAWSLogの作成が進行中であれば、**WhaTapForwarder**の**ARN**を確保することができます。 
+    スタックをインストールする最後のステップであるWhaTapAWSLogの作成が進行中の場合、**WhaTapForwarder**の**ARN**を取得することができます。 
 
     :::
 
 2.  Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)**_Pyhsical ID_**を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
 
-3.  詳細画面右側の**Description**領域で![number 3](/img/number-03.png)**Function ARN**(**_WhaTap Forwarder ARN_**)を確認することができます。
+3.  詳細画面の右側にある**Description**領域で![number 3](/img/number-03.png)**Function ARN**(**_WhaTap Forwarder ARN_**)を確認することができます。
 
-4.  次のステップのためにコピーしてください。
+4.  次のステップのためにコピーします。
 
 ### インストール失敗時のチェックリスト
 
@@ -145,7 +145,7 @@ User {user name} is not authorized to perform
 
 -   **必要権限**
 
-    -   CloudFormationインストールのためのポリシー
+    -   CloudFormationインストールに関するポリシー
     -   AWS Logコードをインポートするためのポリシー
     -   AWS Logを作成し、必要な権限を付与するためのポリシー
     -   AWS LogにPolicyを作成するためのポリシー
@@ -187,7 +187,7 @@ User {user name} is not authorized to perform
 
 #### スタック名
 
-次のようなエラーメッセージが発生した場合、Cloud Formationスタック名を変更してください。
+次のエラーメッセージが表示された場合は、Cloud Formationスタック名を変更してください。
 
 ```bash
 Stack {stack name} already exists
@@ -195,7 +195,7 @@ Stack {stack name} already exists
 
 ## AWS IAMポリシーとロール作成
 
-WhaTap ForwarderがユーザーのAWS環境リソースログを送信するには、**_IAMポリシー_**と**_IAMロール_**が必要です。 以前にWhaTap Forwarder設定用のIAMポリシーとIAMロールを作成したことがない場合は、新規作成してください。 
+WhaTap ForwarderがユーザーのAWS環境リソースログを受信するには、**_IAMポリシー_**と**_IAMロール_**が必要です。WhaTap Forwarderを設定するためのIAMポリシーとIAMロールを作成したことがない場合は、新規作成してください。 
 
 ### IAMポリシーの作成{#create-iam-policy}
 
@@ -260,12 +260,12 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 **IAMポリシー内の権限**
 
-当該IAMポリシーには、次のような権限が指定されています。
+IAMポリシーは、次の権限を割り当てます。
 
 -   S3保存リストの照会権限
--   S3バケットにオブジェクトを搭載する際、通知取得に関する権限
--   CloudWatch Logサブスクリプションフィルタ権限
--   CloudWatch Logグループの照会権限
+-   S3バケットにオブジェクトをマウントする時に通知を取得するアクセス権限
+-   CloudWatch Logサブスクリプションフィルターのアクセス権限
+-   CloudWatch Logグループの参照権限
 
 :::
 
@@ -273,11 +273,11 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 <!-- どのAWSアカウントIDで生成されたリソースに対して権限を許可するかを指定し、直前に生成したIAMポリシーをマッピングします。 -->
 
-作成されたリソースの権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS IAMロール作成_**タブを参照して進めてください。 
+作成したリソースのアクセス権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストールガイド_**セクションの**_AWS IAMロールの作成_**タブを参照してください。 
 
 1.  AWS Management Consoleにログインしてから、IAMコンソールを開きてください。
 
-2.  コンソール探索ウィンドウで**_Roles_**を選択してから、[number 1](/img/number-01.png)**Create role**ボタンを選択してください。
+2.  コンソールのナナビゲーションウィンドウで**_Roles_**を選択し、[number 1](/img/number-01.png)**Create role**ボタンを選択してください。
 
     ![IAM Role 1](/img/aws-log-iam-role-create.png)
 
@@ -309,48 +309,48 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを送信するに�
 
 :::note
 
-CloudWatch LogとS3に搭載されるArchive Logを購読することができます。
+CloudWatch LogとS3にマウントされたArchive Logを購読することができます。
 
 :::
 
-### AWS CloudWatch Logの照会およびサブスクリプション
+### AWS CloudWatch Logの参照およびサブスクリプション
 
-WhaTap**_エージェント設定_**>**_インストール案内_**セクションの**_AWS Resource Log照会およびサブスクリプション_**タブで上段の**_AWS CloudWatch Log Group_**を選択して進行してください。 
+WhaTap**_エージェント設定_**>**_インストール手順_**セクションの**_AWS Resource Log表示およびサブスクリプション_**タブで上部の**_AWS CloudWatch Log Group_**を選択してください。 
 
-<ImgLang img='aws-log-cloudwatch-subs.png' desc='AWS CloudWatch Logの照会およびサブスクリプション'/>
+<ImgLang img='aws-log-cloudwatch-subs.png' desc='AWS CloudWatch Logの参照およびサブスクリプション'/>
 
-1.  AWS Logがインストールされた![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
+1.  AWS Logがインストールされ![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
 
-2.  [既存のステップ](#whatapforwarder-arn)で獲得した**WhaTap Forwarder ARN**をコピー後![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
+2.  [既存のステップ](#whatapforwarder-arn)から入手した**WhaTap Forwarder ARN**をコピーして![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
 
-3.  ![number 3](/img/number-03.png) **_照会_**ボタンを選択してから、サブスクリプションできるAWSリソースを照会してください。
+3.  ![number 3](/img/number-03.png) **_参照_**ボタンを選択して、サブスククリプション可能なAWSリソースを表示します。
 
-4.  照会されたリソースのうち![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
+4.  表示されたリソースの中で![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
 
 5.  ![number 5](/img/number-05.png) **_登録_**ボタンをクリックしてください。
 
 :::note
 
-**照会およびサブスクリプションに失敗した場合**
+**検索およびサブスクリプションに失敗した場合**
 
--   **_IAM Role Policy_**に欠けたポリシーがないかを確認してください。
--   **_IAM Role_**作成過程で信頼ポリシーを正確に設定したことを確認してください。
+-   **_IAM Role Policy_**に不足しているポリシーがないことを確認してください。
+-   **_IAM Role_**作成過程で信頼ポリシーを正しく設定したことを確認してください。
 
 :::
 
 ### AWS S3 Bucketのサブスクリプション
 
-WhaTap**_エージェント設定_**>**_インストール案内_**セクションの**_AWS Resource Log照会およびサブスクリプション_**タブで上段の**_AWS S3 Bucket_**を選択して進行してください。 
+WhaTap**_エージェント設定_**>**_インストール手順_**セクションの**_AWS Resource Log検索およびサブスクリプション_**タブで上部の**_AWS S3 Bucket_**を選択してください。 
 
-<ImgLang img='aws-log-s3-subs.png' desc='AWS S3 Bucketの照会およびサブスクリプション'/>
+<ImgLang img='aws-log-s3-subs.png' desc='AWS S3 Bucketの参照およびサブスクリプション'/>
 
-1.  AWS Logがインストールされた![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
+1.  AWS Logがインストールされ![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
 
-2.  [既存のステップ](#whatapforwarder-arn)で獲得した**WhaTap Forwarder ARN**をコピー後![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
+2.  [既存のステップ](#whatapforwarder-arn)から取得した**WhaTap Forwarder ARN**をコピーし![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
 
-3.  ![number 3](/img/number-03.png) **_照会_**ボタンを選択してから、サブスクリプションできるAWSリソースを照会してください。
+3.  ![number 3](/img/number-03.png) **_参照_**ボタンを選択して、サブスククリプション可能なAWSリソースを表示します。
 
-4.  照会されたリソースのうち![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
+4.  表示されたリソースの中で![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
 
 5.  ![number 5](/img/number-05.png) **_登録_**ボタンをクリックしてください。
 
@@ -363,10 +363,10 @@ WhaTap**_エージェント設定_**>**_インストール案内_**セクショ�
 -   ![アイコン](/img/ic-toggle-on.svg)トグルボタンをオンにすると、ログモニタリンがアクティブになります。
 -   ![アイコン](/img/ic-toggle-off.svg)トグル ボタンをオフにするとログモニタリンが無効になります。ログは保存されなくなります。
 
-モニタリングが活性化されたら**_ダッシュボード_**>**_ライブテール_**メニューで流入されるログの出力を確認することができます。
+モニタリングを有効にすると、**_ダッシュボード_**>**_ライブテール_**メニューからログの出力を確認することができます。
 
 :::note
 
-プロジェクトに対する**修正権限**がある場合に限ってログモニタリングをアクティブにすることができます。権限の詳細については、[次の文書](../project/project-structure)を参考にしてください。
+プロジェクトの**修正権限**がある場合に限り、ログモニタリングをアクティブにすることができます。権限の詳細については、[次の文書](../project/project-structure)を参照してください。
 
 :::

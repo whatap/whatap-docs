@@ -30,6 +30,24 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
 
     インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。値が'0'の場合、ディスク使用率は収集しません。
 
+-   **process** <span class='type'>String</span>
+
+    プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力してください。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
+
+    ```ini title='xos.conf'
+    process={process_name}
+    ```
+
+    例えば、topとlock.shプロセスをモニタリング対象に設定するには、次のようにオプションを設定してください。
+
+    ```ini title='xos.conf'
+    process=top,lock.sh
+    ```
+
+-   **iplist_interval** <span class='type'>Second</span>
+
+    データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
+
 <InDoc product='postgresql'>
 
 -   **file** <span class='type'>String</span>

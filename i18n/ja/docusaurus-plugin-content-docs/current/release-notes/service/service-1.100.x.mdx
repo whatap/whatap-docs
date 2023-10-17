@@ -330,7 +330,7 @@ toc_max_heading_level: 2
 
 #### 検索
 
--   <Status>Change</Status> <UI>サイドバー</UI> > <UI>検索</UI>キーワード入力後、Enterキー入力で照会
+-   <Status>Change</Status> <UI>サイドバー</UI> > <UI>検索</UI>キーワード入力後、Enterキー入力で検索
 
 -   <Status>Fixed</Status> <UI>サイドバー</UI> > <UI>検索</UI> > <UI>エージェント検索</UI>実行時、画面が途切れる現象を修正
 
@@ -338,7 +338,7 @@ toc_max_heading_level: 2
 
 -   <Status>Feature</Status> <UI>Flexボード</UI>メニューでシリーズウィジェットのチャート設定オプションとして補助チャートのデータ併合・合算機能を追加
 
--   <Status>Fixed</Status>Seriesウィジェットで3日以上のデータを照会する場合、X軸に日付を表記するよう修正
+-   <Status>Fixed</Status>Seriesウィジェットで3日以上のデータを表示する場合、X軸に日付を表示するよう修正
 
 #### 分析
 
@@ -346,15 +346,15 @@ toc_max_heading_level: 2
 
 #### 統計/レポート
 
--   <Status>Feature</Status> <UI>統合レポート</UI>メニューで<UI>日間Http Call遅延レポート</UI>作成時、終了時間を翌日に選択できる機能を追加
+-   <Status>Feature</Status> <UI>統合レポート</UI>メニューから<UI>毎日のHttp Call遅延レポート</UI>作成時、終了時間を翌日までに選択できる機能を追加
 
--   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>レポート</UI>メニューで、ユーザーが選択した開始日基準ではなく、現在の基準だけでエージェント一覧を<UI>フィルター</UI>オプションとして取得するバグを修正
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>レポート</UI>メニューから、ユーザーが選択した開始日ではなく、現在の日付によってエージェント一覧を<UI>フィルター</UI>オプションとして取得するバグを修正
 
 #### ログ
 
--   <Status>Change</Status> <UI>ログ設定</UI>メニューで製品別のエージェントの対応バージョン情報を修正
+-   <Status>Change</Status> <UI>ログ設定</UI>メニューから製品別のエージェントの対応バージョン情報を修正
 
--   <Status>Fixed</Status> <UI>ライブテール</UI>メニューで最初のデータのロード時にロードアニメーションを画面に表示するよう修正
+-   <Status>Fixed</Status> <UI>ライブテール</UI>メニューから最初のデータのロード時にロードアニメーションを画面に表示するよう修正
 
 -   <Status>Change</Status> <UI>ログ設定</UI>メニューでトライアルの実際残日数を表現するように変更
 
@@ -366,9 +366,9 @@ toc_max_heading_level: 2
 
 #### アラート通知
 
--   <Status>Change</Status> <UI>イベント受信設定</UI>メニューで<b>エスカレーション</b>のオプション名を<UI>繰り返し通知</UI>に変更
+-   <Status>Change</Status> <UI>イベント受信設定</UI>メニューから<b>エスカレーション</b>のオプション名を<UI>繰り返し通知</UI>に変更
 
--   <Status>Feature</Status> <UI>イベント受信設定</UI>メニューの<UI>ユーザー別のイベント受信設定</UI>と <UI>3rd partyプラグイン</UI>セクションに<UI>繰り返し通知</UI>オプションを追加
+-   <Status>Feature</Status> <UI>イベント受信設定</UI>メニューから<UI>ユーザー別のイベント受信設定</UI>と <UI>3rd partyプラグイン</UI>セクションに<UI>定期的な通知</UI>オプションを追加
 
 -   <Status>Fixed</Status> <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューでプロジェクトの初期作成時に白化現象が出る問題を修正
 
@@ -394,7 +394,7 @@ toc_max_heading_level: 2
 
 #### MXQL
 
-<p><Status>Fixed</Status> MXQLデータ照会後、CSVがダウンロードされない問題を修正</p>
+<p><Status>Fixed</Status> MXQLデータ検索後、CSVがダウンロードされない問題を修正</p>
 
 * * *
 
@@ -406,17 +406,17 @@ toc_max_heading_level: 2
 
 -   <Status>Feature</Status> <UI>分析</UI> > <UI>ヒートマップ</UI>メニューでトランザクション一覧をクリックすると表示される<UI>統計</UI>ポップアップウィンドウに次の情報を追加
 
-    -   `HttpCall`タイプのトレースの場合、収集されたdriver情報があれば**Http Call**テキストの代わりに**driver情報**を表示
+    -   `HttpCall`タイプのトレースの場合、収集されたdriver情報があると**Http Call**テキストの代わりに**driver情報**を表示
 
-    -   `SQL`、`DBC`タイプのトレースをクリックすると表示される詳細を見るウィンドウにSID値を追加表示
+    -   `SQL`、`DBC`タイプのトレースをクリックすると、表示される詳細ウィンドウにSID値の追加が表示されます
 
 -   <Status>Change</Status> <UI>分析</UI> > <UI>ヒートマップ</UI> > <UI>Txトレース一覧</UI>でトランザクションを選択し<UI>統計</UI>ウィンドウでSQLステップを照会する時、下段に「SQLクエリコピー」ボタンを追加
 
--   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI>メニューで<UI>Caller</UI>照会時<UI>Callerエージェント種類</UI>および<UI>Caller URL</UI>カラムのデータ抜けが発生するバグを修正
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI>メニューから<UI>Caller</UI>参照時<UI>Callerエージェント種類</UI>および<UI>Caller URL</UI>カラムのデータ抜けが発生するバグを修正
 
--   <Status>Fixed</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>値を入力しない場合、データが検索されないバグを修正
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューから<UI>MTID / CUSTID</UI>値を入力しない場合、データが収集されないバグを修正
 
--   <Status>Change</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューで<UI>MTID / CUSTID</UI>検索値の有効性チェックロジックを追加
+-   <Status>Change</Status> <UI>分析</UI> > <UI>マルチトランザクション追跡</UI>メニューから<UI>MTID / CUSTID</UI>検索値の有効性チェックロジックを追加
 
 * * *
 
@@ -438,17 +438,17 @@ toc_max_heading_level: 2
 
 -   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで説明追加及びUI修正
 
-    -   プロジェクト作成直後、エージェントインストールページに入ると表示される読み込み画像の下段に説明を追加
+    -   プロジェクト作成直後にエージェントのインストールページに入った時に表示される読み込みイメージを下部に説明を追加
 
-    -   サービス一覧の照会・保存時に表示される読み込み画像の下段に説明を追加
+    -   サービス一覧を表示し、保存時に表示される読み込み画像の下部に説明を追加
 
-    -   `CloudWatch`インストール案内ページがスクロールに隠さずにすぐ表示されるように説明部分の高さを修正
+    -   `CloudWatch`インストール手順ページがスクロールで隠れることなく、直接表示されるように説明部分の高さを修正
 
 * * *
 
 ### `OCI`、`Cloud Monitoring`
 
--   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで該当OCIプロジェクトの修正権限がない場合<b>RSA Public Key</b>生成ボタンを非活性化
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューからOCIプロジェクトの修正権限がない場合<b>RSA Public Key</b>生成ボタンを無効にします。
 
 -   <Status>Fixed</Status> <UI>管理</UI> > <UI>クラウドモニタリング</UI> > <UI>Oracle Cloud Monitor</UI>タブで<b>RSA Public Key</b>生成時、認証情報が登録されていない状態でも登録済みとして区分されるバグを修正
 

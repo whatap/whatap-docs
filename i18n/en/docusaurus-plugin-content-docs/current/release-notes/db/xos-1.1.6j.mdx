@@ -1,0 +1,20 @@
+---
+id: xos-1_1_6j
+title: xos v1.1.6j
+toc_max_heading_level: 2
+pagination_next: release-notes/db/xos-1_1_6g
+---
+
+October 13, 2023
+
+-   <Status>New</Status> Added the process monitoring function. The execution status of processes can be monitored.
+
+    ```ini title='xos.conf'
+    process={process_name}
+    ```
+
+-   <Status>New</Status> Added the function to collect the list of DB server IPs. Data collection is possible only when the time interval is set in seconds (at least 3 seconds).
+
+    ```ini title='xos.conf'
+    iplist_interval={second}
+    ```

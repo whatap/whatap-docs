@@ -26,19 +26,29 @@
 
     トランザクションのホスト情報を出力します。値が`false`の場合、トランザクションのURLにURIのみが表示され、`true`の場合/xxx.aaa.com/URLの形式で出力します。
 
+-   **profile_http_body_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    HTTP requestのbodyをトレース履歴に記録します。
+
+-   **profile_http_body_url_prefix** <span class='type'>String</span>
+
+    トレース履歴にhttp body情報を記録する対象URLのprefixを定義するときに使用します。
+
 -   **biz_exceptions** <span class='type'>String</span>
 
     デフォルト値`Empty`
 
-    特定のErrorrまたはExceptionをBusiness Exceptionに設定します。 ヒートマップでは、エラーと表示することなく、統計情報として収集します。 収集したError Class名と同じものを適用します。コンマ(,)を区切り文字として使用して、複数登録できます。
+    特定のErrorrまたはExceptionをBusiness Exceptionに設定します。 ヒートマップでは、エラーと表示されず、統計情報として収集します。 収集したError Class名と同じ名前を適用します。コンマ(,)を区切り文字として使用して、複数登録できます。
 
 -   **ignore_exceptions** <span class='type'>String</span>
 
     デフォルト値`NONE`
 
-    無視するExceptionを登録します。登録されたExceptionエラー自体を無視します。
+    無視するExceptionを登録します。登録されたExceptionエラーを無視します。
 
-    Exceptionの場合、Custom Exception Classを定義しない場合は、基本`Exception`として収集します。 特定のExceptionを区別するには、Custom Exception Classを定義し、その名前を設定することで、例外を除外します。
+    Exceptionの場合、Custom Exception Classを定義しない場合は、既定の`Exception`として収集します。 特定のExceptionを区別するには、Custom Exception Classを定義し、その名前を設定することで、例外を除外します。
 
 -   **trace_normalize_enabled** <span class='type'>Boolean</span>
 
@@ -56,10 +66,10 @@
 
     デフォルト値`NONE`
 
-    正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析してpathパラメータを削除します。
+    正規化するトランザクションURLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
 
     :::note
 
-    例）**/a/{v}/b**と宣言する場合は、**a/123/b** → **a/{v}/b**に置き換えます。複数登録するときは、コンマ(,)を区切り文字として使用します。置換パターンをクリンナップした後は、それを補足する必要があります。
+    例）**/a/{v}/b**と宣言する場合は、**a/123/b** → **a/{v}/b**に置き換えます。複数登録する場合は、コンマ(,)を区切り文字として使用します。置換パターンをクリーンアップした後は、補足する必要があります。
 
     :::
