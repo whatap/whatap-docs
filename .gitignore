@@ -1,6 +1,7 @@
 /build
 /backup
 /.vscode
+/.credentials
 # /node_modules
 
 # Generated files
