@@ -3,6 +3,7 @@
 /.vscode
 /.credentials
 # /node_modules
+sheets.googleapis.com-whatap-locale.json
 
 # Generated files
 .docusaurus
