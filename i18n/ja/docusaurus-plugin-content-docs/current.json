@@ -1176,7 +1176,7 @@
     "description": "The label for category Log 모니터링 in sidebar logSidebar"
   },
   "sidebar.logSidebar.category.적용하기": {
-    "message": "応募方法",
+    "message": "適用方法",
     "description": "The label for category 적용하기 in sidebar logSidebar"
   },
   "sidebar.logSidebar.category.주요 메뉴 알아보기": {
