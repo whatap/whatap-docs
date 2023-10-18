@@ -10,8 +10,7 @@ var UTILS = require('./utils');
 var SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 // var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
 //     process.env.USERPROFILE) + '/.credentials/';
-var TOKEN_DIR = '.credentials/';
-var TOKEN_PATH = TOKEN_DIR + 'sheets.googleapis.com-whatap-locale.json';
+var TOKEN_PATH = 'sheets.googleapis.com-whatap-locale.json';
 
 var Promise = require('promise');
 
