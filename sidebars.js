@@ -3414,6 +3414,19 @@ const sidebars = {
             },
           ]
         },
+        {
+          type: 'category',
+          label: '메트릭스 경고 알림 설정',
+          collapsible: false,
+          collapsed: false,
+          items: [
+            {
+              type: 'doc',
+              label: '데이터베이스',
+              id: 'best-practice-guides/set-db-metric-warning-notice'
+            }
+          ]
+        }
       ]
     }
   ],
