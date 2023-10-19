@@ -32,7 +32,6 @@ function colsToJson(data){
   const defaultCol = 1;
   const rd = {}; // resultData
   if (!data || data.length < 1) return undefined;
-
   const header = data[0];
   if (header[0] && header[0].toUpperCase() != 'ID') return undefined;
 
@@ -54,6 +53,10 @@ function colsToJson(data){
       }
     }
   }
+  rd['freetrial'] = {};
+  rd['freetrial']['en'] = 'Start a free trial';
+  rd['freetrial']['ja'] = 'Start a free trial';
+  rd['freetrial']['ko'] = '무료로 시작하기';
   return rd;
 }
 

@@ -123,7 +123,7 @@ function getFileData(auth, fileId) {
           reject(err);
           return;
         }
-
+        // fs.writeFileSync('./src/components/ui-text/data.json', JSON.stringify(response.values, null, 2), 'utf-8');
         var json = UTILS.colsToJson(response.values);
         resolve(json);
       },

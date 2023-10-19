@@ -48869,5 +48869,10 @@
   "": {
     "": "",
     "service_id": "#N/A"
+  },
+  "freetrial": {
+    "en": "Start a free trial",
+    "ja": "Start a free trial",
+    "ko": "무료로 시작하기"
   }
 }
