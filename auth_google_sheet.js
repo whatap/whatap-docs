@@ -124,7 +124,7 @@ function getFileData(auth, fileId) {
           return;
         }
 
-        var json = UTILS.rowsToJson(response.values);
+        var json = UTILS.colsToJson(response.values);
         resolve(json);
       },
     );

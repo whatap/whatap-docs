@@ -6,7 +6,7 @@ const ReplacementLocaleText = ({sid, className}) => {
     const {
         i18n: {currentLocale},
     } = useDocusaurusContext();
-    const uiText = whatapLocale[`${currentLocale}`][sid];
+    const uiText = whatapLocale[sid][`${currentLocale}`];
 
     return (
         <span class={className}>{uiText}</span>

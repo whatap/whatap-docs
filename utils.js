@@ -28,6 +28,35 @@ function rowsToJson(data) {
   return rd;
 }
 
+function colsToJson(data){
+  const defaultCol = 1;
+  const rd = {}; // resultData
+  if (!data || data.length < 1) return undefined;
+
+  const header = data[0];
+  if (header[0] && header[0].toUpperCase() != 'ID') return undefined;
+
+  const colCount = header.length;
+
+  for (let i=1;i<data.length;i++) {
+    const row = data[i];
+    const headerName = row[0].trim();
+    if (!rd[headerName]) rd[headerName] = {};
+    for (let j=1;j<colCount;j++) {
+      if (['id', 'en', 'ko', 'ja', 'zh', 'service_id'].includes(data[0][j])) {
+        let lang = data[0][j];
+        const value = row[j];
+        if (!value || value.length < 1) {
+          rd[headerName][row[j]] = row[defaultCol];
+        } else {
+          rd[headerName][lang] = value;
+        }
+      }
+    }
+  }
+  return rd;
+}
+
 function jsonToKeyValue(json) {
   var str = '';
   for (var k in json) {
@@ -95,5 +124,6 @@ module.exports = {
   keyValueToJson: keyValueToJson,
   jsonToKeyValue: jsonToKeyValue,
   rowsToJson: rowsToJson,
+  colsToJson: colsToJson,
   jsonToArray: jsonToArray,
 };
