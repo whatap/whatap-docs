@@ -68,6 +68,10 @@
         {
             "filePath": "docs/common-items",
             "group": "Default"
+        },
+        {
+            "filePath": "src/components/ui-text/whatap-locale.json",
+            "group": "Default"
         }
     ],
     "favorites.sortOrder": "ASC"
