@@ -169,13 +169,13 @@ module.exports = Promise.resolve({
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
       },
-      announcementBar: {
-        id: 'moniday-banner',
-        content: '<div id="moniday-banner">🎙️ 10월 19일, IT 현대화에 적합한 모니터링 플랫폼이 궁금하다면? <span id="bar"></span> <a class="btn-white-file" href="https://www.whatap.io/ko/moniDay" target="_blank">WhaTap Moni Day 신청하기</a></div>',
-        backgroundColor: 'none',
-        textColor: '#ffffff',
-        isCloseable: true,
-      },
+      // announcementBar: {
+      //   id: 'moniday-banner',
+      //   content: '<div id="moniday-banner">🎙️ 10월 19일, IT 현대화에 적합한 모니터링 플랫폼이 궁금하다면? <span id="bar"></span> <a class="btn-white-file" href="https://www.whatap.io/ko/moniDay" target="_blank">WhaTap Moni Day 신청하기</a></div>',
+      //   backgroundColor: 'none',
+      //   textColor: '#ffffff',
+      //   isCloseable: true,
+      // },
       metadata: [
         {
           name: 'keywords',
