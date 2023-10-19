@@ -3026,14 +3026,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_19',
+                id: 'release-notes/java/java-2_2_20',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_19',
+                  id: 'release-notes/java/java-2_2_20',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_19',
                 'release-notes/java/java-2_2_18',
                 'release-notes/java/java-2_2_17',
                 'release-notes/java/java-2_2_16',
@@ -3042,8 +3043,26 @@ const sidebars = {
                 'release-notes/java/java-2_2_13',
                 'release-notes/java/java-2_2_12',
                 'release-notes/java/java-2_2_11',
-                'release-notes/java/java-2_2_10',
                 'release-notes/java/java-previous',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Java Batch',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/java-batch/java-batch-2_2_20',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/java-batch/java-batch-2_2_20',
+                  className: 'new',
+                },
+                'release-notes/java-batch/java-batch-2_2_19'
               ],
             },
             {
