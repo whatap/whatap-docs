@@ -49040,5 +49040,10 @@
     "en": "AJAX Hitmap",
     "ja": "AJAX Hitmap",
     "ko": "AJAX 히트맵"
+  },
+  "rumDashboard": {
+    "en": "Browser Monitoring Dashboard",
+    "ja": "ブラウザ監視ダッシュボード",
+    "ko": "브라우저 모니터링 대시보드"
   }
 }

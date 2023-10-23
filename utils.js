@@ -62,6 +62,12 @@ function colsToJson(data){
   rd['ajaxAnalytics']['en'] = 'AJAX Hitmap';
   rd['ajaxAnalytics']['ja'] = 'AJAX Hitmap';
   rd['ajaxAnalytics']['ko'] = 'AJAX 히트맵';
+
+  rd['rumDashboard'] = {};
+  rd['rumDashboard']['en'] = 'Browser Monitoring Dashboard';
+  rd['rumDashboard']['ja'] = 'ブラウザ監視ダッシュボード';
+  rd['rumDashboard']['ko'] = '브라우저 모니터링 대시보드';
+
   return rd;
 }
 
