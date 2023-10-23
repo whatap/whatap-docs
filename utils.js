@@ -57,6 +57,11 @@ function colsToJson(data){
   rd['freetrial']['en'] = 'Start a free trial';
   rd['freetrial']['ja'] = 'Start a free trial';
   rd['freetrial']['ko'] = '무료로 시작하기';
+
+  rd['ajaxAnalytics'] = {};
+  rd['ajaxAnalytics']['en'] = 'AJAX Hitmap';
+  rd['ajaxAnalytics']['ja'] = 'AJAX Hitmap';
+  rd['ajaxAnalytics']['ko'] = 'AJAX 히트맵';
   return rd;
 }
 
