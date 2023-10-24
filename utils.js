@@ -74,6 +74,12 @@ function colsToJson(data){
     "ko": "통계/보고서"
   };
 
+  rd["containerMap"] = {
+    "en": "Container Map",
+    "ja": "コンテナマップ",
+    "ko": "컨테이너 맵"
+  }
+
   return rd;
 }
 

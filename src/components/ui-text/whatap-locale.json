@@ -49027,6 +49027,62 @@
     "zh": "The maintenance history value can be entered up to {max_length} characters. ({length}/{max_length})",
     "service_id": "NTC07119"
   },
+  "BTN07120": {
+    "en": "Chart",
+    "ja": "チャート",
+    "ko": "차트",
+    "zh": "Chart",
+    "service_id": "BTN07120"
+  },
+  "BTN07121": {
+    "en": "Table",
+    "ja": "表",
+    "ko": "테이블",
+    "zh": "Table",
+    "service_id": "BTN07121"
+  },
+  "DSC07122": {
+    "en": "Select linked project",
+    "ja": "連携プロジェクトの選択",
+    "ko": "연계 프로젝트 선택",
+    "zh": "Select linked project",
+    "service_id": "DSC07122"
+  },
+  "TTL07123": {
+    "en": "Delete linked project",
+    "ja": "連携プロジェクトの削除",
+    "ko": "연계 프로젝트 삭제",
+    "zh": "Delete linked project",
+    "service_id": "TTL07123"
+  },
+  "DSC07124": {
+    "en": "Are you sure you want to delete project {projectName} from linked projects?",
+    "ja": "{projectName}プロジェクトを連携プロジェクトから削除しますか？",
+    "ko": "{projectName} 프로젝트를 연계 프로젝트에서 삭제하시겠습니까?",
+    "zh": "Are you sure you want to delete project {projectName} from linked projects?",
+    "service_id": "DSC07124"
+  },
+  "DSC07125": {
+    "en": "Link project registration has been completed.",
+    "ja": "連携プロジェクト登録が完了しました。",
+    "ko": "연계 프로젝트 등록이 완료되었습니다.",
+    "zh": "Link project registration has been completed.",
+    "service_id": "DSC07125"
+  },
+  "DSC07126": {
+    "en": "Deletion of the linked project has been completed.",
+    "ja": "連携プロジェクトの削除が完了しました。",
+    "ko": "연계 프로젝트 삭제가 완료되었습니다.",
+    "zh": "Deletion of the linked project has been completed.",
+    "service_id": "DSC07126"
+  },
+  "DSC07127": {
+    "en": "Please click on the values ​​in the guide below.",
+    "ja": "以下のガイドの値をクリックしてください。",
+    "ko": "아래 가이드에 있는 값을 클릭해 주세요.",
+    "zh": "Please click on the values ​​in the guide below.",
+    "service_id": "DSC07127"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -49050,5 +49106,10 @@
     "en": "Stat/Report",
     "ja": "統計/レポート",
     "ko": "통계/보고서"
+  },
+  "containerMap": {
+    "en": "Container Map",
+    "ja": "コンテナマップ",
+    "ko": "컨테이너 맵"
   }
 }
