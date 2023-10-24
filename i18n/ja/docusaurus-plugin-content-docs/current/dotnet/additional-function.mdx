@@ -25,9 +25,8 @@ tags:
         {
             public static void Trace(string message)
             {
-                // コンパイラー最適化によりメソッド呼び出しが取り消されるのを防止
+                // No need to write any code.
                 // このメソッド内のコードはWhatapエージェントによって無視されるため、実行されません。
-                Console.WriteLine(message);
             }
         }
     }
