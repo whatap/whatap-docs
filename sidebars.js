@@ -2087,7 +2087,7 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'MS SQL Server 모니터링',
+      label: 'SQL Server 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -3148,14 +3148,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_7',
+                id: 'release-notes/dotnet/dotnet-2_1_8',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_7',
+                  id: 'release-notes/dotnet/dotnet-2_1_8',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-2_1_6',
                 'release-notes/dotnet/dotnet-2_1_5',
                 'release-notes/dotnet/dotnet-2_1_4',
@@ -3164,7 +3165,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-2_1_0',
                 'release-notes/dotnet/dotnet-2_0_9',
-                'release-notes/dotnet/dotnet-2_0_8',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3201,7 +3201,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_4_2',
@@ -3210,7 +3210,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_4_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_4_1',
                 'release-notes/server/server-2_4_0',
@@ -3315,17 +3315,18 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/browser/browser-v1_3_1',
+                id: 'release-notes/browser/browser-v1_3_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/browser/browser-v1_3_1',
-                  // className: 'new',
+                  id: 'release-notes/browser/browser-v1_3_2',
+                  className: 'new',
                 },
+                'release-notes/browser/browser-v1_3_1',
                 'release-notes/browser/browser-v1_3_0',
                 'release-notes/browser/browser-v1_2_2',
                 'release-notes/browser/browser-v1_2_1',
@@ -3334,7 +3335,7 @@ const sidebars = {
                 'release-notes/browser/browser-v1_1_3',
                 'release-notes/browser/browser-v1_1_2',
                 'release-notes/browser/browser-v1_1_1',
-                'release-notes/browser/browser-v1_1_0',
+                'release-notes/browser/browser-previous',
               ],
             },
             {
@@ -3550,7 +3551,7 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'MS SQL Server',
+          label: 'SQL Server',
           href: 'mssql/monitoring-intro',
         },
         {
@@ -4857,6 +4858,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'browser/analyze-pageload',
+            'browser/analyze-ajax-hitmap',
             'browser/tracking-error',
           ],
         },

@@ -57,6 +57,29 @@ function colsToJson(data){
   rd['freetrial']['en'] = 'Start a free trial';
   rd['freetrial']['ja'] = 'Start a free trial';
   rd['freetrial']['ko'] = '무료로 시작하기';
+
+  rd['ajaxAnalytics'] = {};
+  rd['ajaxAnalytics']['en'] = 'AJAX Hitmap';
+  rd['ajaxAnalytics']['ja'] = 'AJAX Hitmap';
+  rd['ajaxAnalytics']['ko'] = 'AJAX 히트맵';
+
+  rd['rumDashboard'] = {};
+  rd['rumDashboard']['en'] = 'Browser Monitoring Dashboard';
+  rd['rumDashboard']['ja'] = 'ブラウザ監視ダッシュボード';
+  rd['rumDashboard']['ko'] = '브라우저 모니터링 대시보드';
+
+  rd['reportStat'] = {
+    "en": "Stat/Report",
+    "ja": "統計/レポート",
+    "ko": "통계/보고서"
+  };
+
+  rd["containerMap"] = {
+    "en": "Container Map",
+    "ja": "コンテナマップ",
+    "ko": "컨테이너 맵"
+  }
+
   return rd;
 }
 

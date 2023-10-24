@@ -46628,7 +46628,7 @@
   },
   "ITM06772": {
     "en": "Registration Date",
-    "ja": "登録日です\n",
+    "ja": "登録日\n",
     "ko": "등록일",
     "zh": "Registration Date",
     "service_id": "ITM06772"
@@ -46712,7 +46712,7 @@
   },
   "DSC06784": {
     "en": "There is no container state information.",
-    "ja": "コンテナの状態情報はありません。",
+    "ja": "コンテナの状態情報がありません。",
     "ko": "컨테이너 상태 정보가 없습니다.",
     "zh": "There is no container state information.",
     "service_id": "DSC06784"
@@ -46733,14 +46733,14 @@
   },
   "TTL06787": {
     "en": "Exposed",
-    "ja": "露出",
+    "ja": "掲載",
     "ko": "노출",
     "zh": "Exposed",
     "service_id": "TTL06787"
   },
   "TTL06788": {
     "en": "Unexposed",
-    "ja": "未露光\n",
+    "ja": "未掲載",
     "ko": "미노출",
     "zh": "Unexposed",
     "service_id": "TTL06788"
@@ -46768,14 +46768,14 @@
   },
   "TTL06792": {
     "en": "List",
-    "ja": "目録",
+    "ja": "リスト",
     "ko": "목록",
     "zh": "List",
     "service_id": "TTL06792"
   },
   "BTN06793": {
     "en": "Write Notice",
-    "ja": "お知らせを書く\n",
+    "ja": "お知らせの作成\n",
     "ko": "공지 작성",
     "zh": "Write Notice\n",
     "service_id": "BTN06793"
@@ -46796,14 +46796,14 @@
   },
   "TTL06796": {
     "en": "Notice Reservation",
-    "ja": "お知らせ予約\n",
+    "ja": "お知らせの予約\n",
     "ko": "공지 예약",
     "zh": "Notice reservation",
     "service_id": "TTL06796"
   },
   "TTL06797": {
     "en": "Notice Exposure",
-    "ja": "お知らせ露出\n",
+    "ja": "お知らせの掲載\n",
     "ko": "공지 노출",
     "zh": "Notice Exposure",
     "service_id": "TTL06797"
@@ -46852,14 +46852,14 @@
   },
   "DSC06804": {
     "en": "Please enter the subject.\n",
-    "ja": "件名を入力してください。",
+    "ja": "題名を入力してください。",
     "ko": "제목을 입력해 주세요.",
     "zh": "Please enter the subject.\n",
     "service_id": "DSC06804"
   },
   "DSC06805": {
     "en": "Please enter the content.",
-    "ja": "内容をご入力ください。",
+    "ja": "内容を入力してください。",
     "ko": "내용을 입력해 주세요.",
     "zh": "Please enter the content.",
     "service_id": "DSC06805"
@@ -46873,14 +46873,14 @@
   },
   "ITM06807": {
     "en": "HTTP call count AVG",
-    "ja": "HTTPコール件数平均",
+    "ja": "HTTP呼出し件数の平均",
     "ko": "HTTP 호출 건수 평균",
     "zh": "HTTP call AVG",
     "service_id": "ITM06807"
   },
   "ITM06808": {
     "en": "HTTP call time AVG",
-    "ja": "HTTPコール時間平均",
+    "ja": "HTTP呼出し時間の平均",
     "ko": "HTTP 호출 시간 평균",
     "zh": "HTTP time AVG",
     "service_id": "#N/A"
@@ -46908,7 +46908,7 @@
   },
   "NTC06812": {
     "en": "At least one item must be selected.",
-    "ja": "少なくとも 1 つの項目を選択する必要があります。",
+    "ja": "一つ以上の項目を選択する必要があります。",
     "ko": "하나 이상의 항목을 선택해야합니다.",
     "": "At least one item must be selected.",
     "service_id": "NTC06812"
@@ -46999,28 +46999,28 @@
   },
   "ITM06825": {
     "en": "Ascending",
-    "ja": "昇順ソート",
+    "ja": "昇順",
     "ko": "오름차순",
     "": "Ascending",
     "service_id": "ITM06825"
   },
   "ITM06826": {
     "en": "Descending",
-    "ja": "降順ソート",
+    "ja": "降順",
     "ko": "내림차순",
     "": "Descending",
     "service_id": "ITM06826"
   },
   "ITM06827": {
     "en": "Newest",
-    "ja": "最新のソート",
+    "ja": "最新順",
     "ko": "최신순",
     "": "Newest",
     "service_id": "ITM06827"
   },
   "DSC06828": {
     "en": "Enter the tag (process type or application name).",
-    "ja": "タグ（プロセスの種類またはアプリケーション名）を入力してください。",
+    "ja": "タグ（プロセス種類、またはアプリケーション名）を入力してください。",
     "ko": "태그(프로세스 종류 혹은 애플리케이션명)을 입력하세요.",
     "": "Enter the tag (process type or application name).",
     "service_id": "DSC06828"
@@ -47034,42 +47034,42 @@
   },
   "CNT06830": {
     "en": "Network Jitter Alert",
-    "ja": "ネットワーク Jitter 警告",
+    "ja": "ネットワークジッター(Jitter)の警告",
     "ko": "네트워크 Jitter 경고",
     "": "Network Jitter Alert",
     "service_id": "CNT06830"
   },
   "CNT06831": {
     "en": "Network Latency Warning",
-    "ja": "ネットワーク遅延率警告",
+    "ja": "ネットワーク遅延率の警告",
     "ko": "네트워크 지연율 경고",
     "": "Network Latency Warning",
     "service_id": "CNT06831"
   },
   "CNT06832": {
     "en": "Data transfer warning",
-    "ja": "データ転送量警告",
+    "ja": "データ転送量の警告",
     "ko": "데이터 전송량 경고",
     "": "Data transfer warning",
     "service_id": "CNT06832"
   },
   "CNT06833": {
     "en": "Packet traffic warning",
-    "ja": "パケット転送量警告",
+    "ja": "パケット転送量の警告",
     "ko": "패킷 전송량 경고",
     "": "Packet traffic warning",
     "service_id": "CNT06833"
   },
   "CNT06834": {
     "en": "Session aggregate warning",
-    "ja": "セッション集計量警告",
+    "ja": "セッション集計量の警告",
     "ko": "세션 집계량 경고",
     "": "Session aggregate warning",
     "service_id": "CNT06834"
   },
   "CNT06835": {
     "en": "Network jitter between \"${local_ip}\":\"${local_port}\" and \"${foreign_ip}\":\"${foreign_port}\" is more than 30 ms.",
-    "ja": "\"${local_ip}\":\"${local_port}\" と \"${foreign_ip}\":\"${foreign_port}\" の通信 jitter が 30ms 以上です",
+    "ja": "\"${local_ip}\":\"${local_port}\" と \"${foreign_ip}\":\"${foreign_port}\" の通信 jitter が 30ms 以上です。",
     "ko": "\"${local_ip}\":\"${local_port}\"와 \"${foreign_ip}\":\"${foreign_port}\" 의 통신 jitter가 30ms 이상입니다.",
     "": "Network jitter between \"${local_ip}\":\"${local_port}\" and \"${foreign_ip}\":\"${foreign_port}\" is more than 30 ms.",
     "service_id": "CNT06835"
@@ -47132,7 +47132,7 @@
   },
   "ITM06844": {
     "en": "fold",
-    "ja": "折りたたみ",
+    "ja": "折りたたむ",
     "ko": "접기",
     "": "fold",
     "service_id": "ITM06844"
@@ -47146,7 +47146,7 @@
   },
   "ITM06846": {
     "en": "Select All",
-    "ja": "全選択",
+    "ja": "すべて選択",
     "ko": "전체 선택",
     "": "Select All",
     "service_id": "ITM06846"
@@ -47188,35 +47188,35 @@
   },
   "NTC06852": {
     "en": "Lookup failed. Please correct your search conditions or try again later.",
-    "ja": "照会に失敗しました。検索条件を編集するか、しばらくしてからもう一度お試しください。",
+    "ja": "照会に失敗しました。検索条件を変更するか、しばらくしてからもう一度試してください。",
     "ko": "조회에 실패하였습니다. 조회 조건을 수정하거나 잠시 후 다시 시도해주세요.",
     "": "Lookup failed. Please correct your search conditions or try again later.",
     "service_id": "NTC06852"
   },
   "BTN06853": {
     "en": "About WhaTap Monitoring",
-    "ja": "WhaTap Monitoring情報",
+    "ja": "WhaTap Monitoringの情報",
     "ko": "와탭 모니터링 정보",
     "": "About WhaTap Monitoring",
     "service_id": "BTN06853"
   },
   "DSC06854": {
     "en": "Are you sure you want to delete this notice?\n",
-    "ja": "そのお知らせを本当に削除しますか？\n",
+    "ja": "該当のお知らせを本当に削除しますか？\n",
     "ko": "해당 공지를 정말 삭제하시겠습니까?",
     "zh": "Are you sure you want to delete this notice?\n",
     "service_id": "DSC06854"
   },
   "DSC06855": {
     "en": "Deleted notice cannot be recovered.\n",
-    "ja": "削除したお知らせは復旧できません。",
+    "ja": "一度削除したお知らせは復旧できません。",
     "ko": "삭제한 공지는 복구 할 수 없습니다.",
     "zh": "Deleted notice cannot be recovered.\n",
     "service_id": "DSC06855"
   },
   "DSC06856": {
     "en": "Are you sure you want to cancel the creation?\n",
-    "ja": "作成を取り消しますか？\n",
+    "ja": "作成をキャンセルしますか？\n",
     "ko": "작성을 취소하시겠습니까?",
     "zh": "Are you sure you want to cancel the creation?\n",
     "service_id": "DSC06856"
@@ -47237,7 +47237,7 @@
   },
   "LNK06859": {
     "en": "Check the <span class='guide_link'>WhaTap Guide document</span> for details of each WhaTap monitoring product.",
-    "ja": "WhaTapモニタリング製品別詳細については、<span class='guide_link'>WhaTapガイド文書</span>でご確認ください。",
+    "ja": "WhaTap Monitoringの製品別詳細については、<span class='guide_link'>WhaTapガイド</span>を確認してください。",
     "ko": "와탭 모니터링 제품별 상세 내용은 <span class='guide_link'>와탭 가이드 문서</span>에서 확인하세요. ",
     "zh": "Check the <span class='guide_link'>WhaTap Guide document</span> for details of each WhaTap monitoring product.",
     "service_id": "LNK06859"
@@ -47251,7 +47251,7 @@
   },
   "NTC06861": {
     "en": "The notice has been deleted.",
-    "ja": "お知らせが削除されました。\n",
+    "ja": "お知らせを削除しました。\n",
     "ko": "공지사항이 삭제되었습니다.",
     "zh": "The notice has been deleted",
     "service_id": "NTC06861"
@@ -47265,21 +47265,21 @@
   },
   "NTC06863": {
     "en": "Failed to load notice list.\n",
-    "ja": "通知リストを取得していました。\n",
+    "ja": "お知らせリストの取得に失敗しました。",
     "ko": "공지사항 목록 불러오기에 실패했습니다.",
     "zh": "Failed to load notice list.\n",
     "service_id": "NTC06863"
   },
   "NTC06864": {
     "en": "Failed to load notice content.\n",
-    "ja": "通知コンテンツのロードに失敗しました。\n",
+    "ja": "お知らせ内容の取得に失敗しました。\n",
     "ko": "공지사항 내용 불러오기에 실패했습니다.",
     "zh": "Failed to load notice content.\n",
     "service_id": "NTC06864"
   },
   "TTL06865": {
     "en": "Mysql SQL Statistics",
-    "ja": "Mysql SQL統計",
+    "ja": "MySQLのSQL統計",
     "ko": "Mysql SQL 통계",
     "zh": "Mysql SQL Statistics",
     "service_id": "TTL06865"
@@ -47293,28 +47293,28 @@
   },
   "DSC06867": {
     "en": "If you don't see any data, check the settings below.",
-    "ja": "データが出ない場合は、以下の設定をご確認ください。",
+    "ja": "データが表示されない場合は、以下の設定を確認してください。",
     "ko": "데이터가 나오지 않는 경우, 아래 설정을 확인해주세요.",
     "zh": "If you don't see any data, check the settings below.",
     "service_id": "DSC06867"
   },
   "NTC06868": {
     "en": "You must select at least {value} columns.",
-    "ja": "最小{value}個のカラムを選択する必要があります。",
+    "ja": "{value}件以上のカラムを選択する必要があります。",
     "ko": "최소 {value}개의 컬럼을 선택해야 합니다.",
     "zh": "You must select at least {value} columns.",
     "service_id": "NTC06868"
   },
   "TLT06869": {
     "en": "Log expanded view",
-    "ja": "ログの拡大表示",
+    "ja": "拡大表示",
     "ko": "로그 전체 화면",
     "zh": "Log expanded view",
     "service_id": "TLT06869"
   },
   "TLT06870": {
     "en": "Default view",
-    "ja": "デフォルト表示",
+    "ja": "基本表示",
     "ko": "기본 화면",
     "zh": "Default view",
     "service_id": "TLT06870"
@@ -47342,28 +47342,28 @@
   },
   "NTC06874": {
     "en": "Please enter the date and time of reservation issuance.",
-    "ja": "予約発行日時を入力してください。\n",
+    "ja": "予約掲載日を入力してください。\n",
     "ko": "예약 발행일시를 입력해주세요.",
     "zh": "Please enter the date and time of reservation issuance.",
     "service_id": "NTC06874"
   },
   "NTC06875": {
     "en": "The date and time of issue of the reservation cannot be before the current point.",
-    "ja": "予約発行日時は現在の時点以前ではありません。\n",
+    "ja": "予約掲載の日時は現在の時点以降で設定してください。\n",
     "ko": "예약 발행일시는 현재 시점 이전 일 수 없습니다.",
     "zh": "The date and time of issue of the reservation cannot be before the current point.",
     "service_id": "NTC06875"
   },
   "NTC06876": {
     "en": "Title can be up to {max_length} characters. ({length}/{max_length})",
-    "ja": "タイトルは最大{max_length}の文字まで入力できます。 ({length}/{max_length})",
+    "ja": "タイトルは最大{max_length}文字まで入力できます。 ({length}/{max_length})",
     "ko": "제목은 최대 {max_length}자 까지 입력할 수 있습니다. ({length}/{max_length})",
     "zh": "Title can be up to {max_length} characters. ({length}/{max_length})",
     "service_id": "NTC06876"
   },
   "NTC06877": {
     "en": "The content can be up to {max_length} characters.",
-    "ja": "内容は最大{max_length}の文字まで入力できます。 ",
+    "ja": "内容は最大{max_length}文字まで入力できます。 ",
     "ko": "내용은 최대 {max_length}자 까지 입력할 수 있습니다.",
     "zh": "The content can be up to {max_length} characters.",
     "service_id": "NTC06877"
@@ -47391,14 +47391,14 @@
   },
   "NTC06881": {
     "en": "There are no events.",
-    "ja": "イベントはありません。",
+    "ja": "イベントがありません。",
     "ko": "이벤트가 존재하지 않습니다.",
     "zh": "There are no events.",
     "service_id": "NTC06881"
   },
   "DSC06882": {
     "en": "You can enter up to {max_length} characters.",
-    "ja": "最大{max_length}の文字まで入力できます。",
+    "ja": "最大{max_length}文字まで入力できます。",
     "ko": "최대 {max_length}자 까지 입력할 수 있습니다.",
     "zh": "You can enter up to {max_length} characters.",
     "service_id": "DSC06882"
@@ -47412,42 +47412,42 @@
   },
   "BTN06884": {
     "en": "Delete entire widget",
-    "ja": "完全なウィジェットを削除",
+    "ja": "全体ウィジェットの削除",
     "ko": "전체 위젯 삭제",
     "zh": "Delete entire widget",
     "service_id": "BTN06884"
   },
   "TLT06885": {
     "en": "Scroll to top",
-    "ja": "トップにスクロールします",
+    "ja": "一番上までスクロールします。",
     "ko": "맨 위로 스크롤",
     "zh": "Scroll to top",
     "service_id": "TLT06885"
   },
   "TLT06886": {
     "en": "Scroll to the bottom",
-    "ja": "一番下までスクロールします",
+    "ja": "一番下までスクロールします。",
     "ko": "맨 아래로 스크롤",
     "zh": "Scroll to the bottom",
     "service_id": "TLT06886"
   },
   "TLT06887": {
     "en": "Automatic scrolling to latest data",
-    "ja": "最新データまで自動スクロール",
+    "ja": "最新データまで自動スクロールします。",
     "ko": "최신 데이터로 자동 스크롤",
     "zh": "Automatic scrolling to latest data",
     "service_id": "TLT06887"
   },
   "DSC06888": {
     "en": "There is no node status information that matches the conditions.",
-    "ja": "条件に合うノード状態情報がありません。",
+    "ja": "条件に一致したノード状態情報がありません。",
     "ko": "조건에 맞는 노드 상태 정보가 없습니다.",
     "zh": "There is no node status information that matches the conditions.",
     "service_id": "DSC06888"
   },
   "DSC06889": {
     "en": "There is no node state information.",
-    "ja": "ノードの状態情報はありません。",
+    "ja": "ノードの状態情報がありません。",
     "ko": "노드 상태 정보가 없습니다.",
     "zh": "There is no node state information.",
     "service_id": "DSC06889"
@@ -47475,14 +47475,14 @@
   },
   "TTL06893": {
     "en": "Remote Access Status",
-    "ja": "外部コールステータス",
+    "ja": "外部呼出し状態",
     "ko": "외부 호출 상태",
     "zh": "Remote Access Status",
     "service_id": "TTL06893"
   },
   "NTC06894": {
     "en": "You can create up to {count} namespace projects.",
-    "ja": "名前空間プロジェクトは最大{count}つまで作成できます。",
+    "ja": "ネームスペースのプロジェクトは最大{count}件まで作成できます。",
     "ko": "네임스페이스 프로젝트는 최대 {count}개까지 생성할 수 있습니다.",
     "zh": "You can create up to {count} namespace projects.",
     "service_id": "NTC06894"
@@ -47496,7 +47496,7 @@
   },
   "TTL06896": {
     "en": "Remote Access Status",
-    "ja": "外部コールステータス",
+    "ja": "外部呼出し状態",
     "ko": "외부 호출 상태",
     "zh": "Remote Access Status",
     "service_id": "TTL06896"
@@ -47510,7 +47510,7 @@
   },
   "TTL06898": {
     "en": "Remote Access Logs",
-    "ja": "外部コールログ",
+    "ja": "外部呼出しログ",
     "ko": "외부 호출 로그",
     "zh": "Remote Access Logs",
     "service_id": "TTL06898"
@@ -47531,7 +47531,7 @@
   },
   "TLT06901": {
     "en": "Failed to retrieve replication information. Check the DB server.",
-    "ja": "レプリケーション情報を照会できませんでした。DBサーバーを点検してください。",
+    "ja": "レプリケーション情報が照会できません。DBサーバーを確認してください。",
     "ko": "리플리케이션 정보를 조회하지 못했습니다. DB서버를 점검하세요.",
     "zh": "Failed to retrieve replication information. Check the DB server.",
     "service_id": "TLT06901"
@@ -47545,63 +47545,63 @@
   },
   "payment_type_banktransfer_abroad": {
     "en": "Sending invoice",
-    "ja": "請求書の発送",
+    "ja": "請求書の発行",
     "ko": "청구서 발송",
     "zh": "Sending invoice",
     "service_id": "_06903"
   },
   "TTL06904": {
     "en": "Caller",
-    "ja": "コーラー",
+    "ja": "Caller",
     "ko": "Caller",
     "zh": "Caller",
     "service_id": "TTL06904"
   },
   "TTL06905": {
     "en": "CallerUrl",
-    "ja": "CallerUrl",
+    "ja": "Caller URL",
     "ko": "CallerUrl",
     "zh": "CallerUrl",
     "service_id": "TTL06905"
   },
   "TTL06906": {
     "en": "CallerPcode",
-    "ja": "CallerPcode",
+    "ja": "Caller Pcode",
     "ko": "CallerPcode",
     "zh": "CallerPcode",
     "service_id": "TTL06906"
   },
   "TTL06907": {
     "en": "CallerOid",
-    "ja": "CallerOid",
+    "ja": "Caller Oid",
     "ko": "CallerOid",
     "zh": "CallerOid",
     "service_id": "TTL06907"
   },
   "TTL06908": {
     "en": "CallerOName",
-    "ja": "CallerOName",
+    "ja": "Caller OName",
     "ko": "CallerOName",
     "zh": "CallerOName",
     "service_id": "TTL06908"
   },
   "TTL06909": {
     "en": "CallerOkind",
-    "ja": "CallerOkind",
+    "ja": "Caller Okind",
     "ko": "CallerOkind",
     "zh": "CallerOkind",
     "service_id": "TTL06909"
   },
   "TTL06910": {
     "en": "CallerOkindName",
-    "ja": "CallerOkindName",
+    "ja": "Caller Okind Name",
     "ko": "CallerOkindName",
     "zh": "CallerOkindName",
     "service_id": "TTL06910"
   },
   "NTC06909": {
     "en": "No logs were collected.",
-    "ja": "ログは収集されていない。",
+    "ja": "ログが収集されていません。",
     "ko": "수집된 로그가 없습니다.",
     "zh": "No logs were collected.",
     "service_id": "NTC06912"
@@ -47636,7 +47636,7 @@
   },
   "TTL06917": {
     "en": "Active Stack Status",
-    "ja": "アクティブスタックの有無",
+    "ja": "アクティブスタック状況",
     "ko": "액티브 스택 여부",
     "zh": "Active Stack Status",
     "service_id": "TTL06917"
@@ -47650,70 +47650,70 @@
   },
   "TTL06919": {
     "en": "Introduction to URL Monitoring",
-    "ja": "URLモニタリングの紹介",
+    "ja": "URL Monitoring",
     "ko": "URL 모니터링 소개",
     "": "Introduction to URL Monitoring",
     "service_id": "TTL06919"
   },
   "TTL06920": {
     "en": "Introduction to Network Performance Monitoring",
-    "ja": "ネットワークパフォーマンスモニタリングの紹介",
+    "ja": "Network Performance Monitoring",
     "ko": "네트워크 성능 모니터링 소개",
     "": "Introduction to Network Performance Monitoring",
     "service_id": "TTL06920"
   },
   "TTL06921": {
     "en": "Introduction to Browser Monitoring",
-    "ja": "ブラウザ監視の紹介",
+    "ja": "Brower Monitoring",
     "ko": "브라우저 모니터링 소개",
     "": "Introduction to Browser Monitoring",
     "service_id": "TTL06921"
   },
   "TTL06922": {
     "en": "Introduction to Application Monitoring",
-    "ja": "アプリケーションモニタリングの紹介",
+    "ja": "Application Monitoring",
     "ko": "애플리케이션 모니터링 소개",
     "": "Introduction to Application Monitoring",
     "service_id": "TTL06922"
   },
   "TTL06923": {
     "en": "Introduction to Server Monitoring",
-    "ja": "サーバー監視の紹介",
+    "ja": "Server Monitoring",
     "ko": "서버 모니터링 소개",
     "": "Introduction to Server Monitoring",
     "service_id": "TTL06923"
   },
   "TTL06924": {
     "en": "Introduction to Kubernetes Monitoring",
-    "ja": "キューバネティスモニタリングの紹介",
+    "ja": "Kubernetes Monitoring",
     "ko": "쿠버네티스 모니터링 소개",
     "": "Introduction to Kubernetes Monitoring",
     "service_id": "TTL06924"
   },
   "TTL06925": {
     "en": "Introduction to Database Monitoring",
-    "ja": "データベース監視の紹介",
+    "ja": "Database Monitoring",
     "ko": "데이터베이스 모니터링 소개",
     "": "Introduction to Database Monitoring",
     "service_id": "TTL06925"
   },
   "TTL06926": {
     "en": "Introduction to Log monitoring",
-    "ja": "ログ監視の紹介",
+    "ja": "Log Monitoring",
     "ko": "로그 모니터링 소개",
     "": "Introduction to Log monitoring",
     "service_id": "TTL06926"
   },
   "TTL06927": {
     "en": "Introduction to Cloud Monitoring",
-    "ja": "クラウドモニタリングの紹介",
+    "ja": "Cloud Monitoring",
     "ko": "클라우드 모니터링 소개",
     "": "Introduction to Cloud Monitoring",
     "service_id": "TTL06927"
   },
   "TTL06928": {
     "en": "DB connection",
-    "ja": "DB接続",
+    "ja": "DBコネクション",
     "ko": "DB 연결 ",
     "zh": "DB connection",
     "service_id": "TTL06928"
@@ -47734,49 +47734,49 @@
   },
   "TTL06931": {
     "en": "Page Load Count",
-    "ja": "ページ読み込み数",
+    "ja": "ページロード数",
     "ko": "페이지 로드 수",
     "zh": "Page Load Count",
     "service_id": "TTL06931"
   },
   "TTL06932": {
     "en": "Page Load Time",
-    "ja": "ページの読み込み時間",
+    "ja": "ページロード時間",
     "ko": "페이지 로드 시간",
     "zh": "Page Load Time",
     "service_id": "TTL06932"
   },
   "DSC06933": {
     "en": "Processing {key}.",
-    "ja": "{key}処理中",
+    "ja": "{key}を処理しています。",
     "ko": "{key}를(을) 처리하는 중입니다.",
     "zh": "Processing {key}.",
     "service_id": "DSC06933"
   },
   "DSC06934": {
     "en": "Click the Refresh button below if {time} or higher processing is not finished.",
-    "ja": "{time}以上の処理が完了していない場合は、下の更新ボタンをクリックします。",
+    "ja": "{time}以上でも処理が完了しない場合は、下の更新ボタンをクリックしてください。",
     "ko": "{time} 이상 처리가 끝나지 않는다면 아래 새로고침 버튼을 클릭하세요.",
     "zh": "Click the Refresh button below if {time} or higher processing is not finished.",
     "service_id": "DSC06934"
   },
   "DSC06935": {
     "en": "Search value match/exclude syntax",
-    "ja": "検索値一致/除外文法",
+    "ja": "検索値と一致/除外の構文です。",
     "ko": "검색 값 일치/제외 문법",
     "zh": "Search value match/exclude syntax",
     "service_id": "DSC06935"
   },
   "DSC06936": {
     "en": "Search value contain/regular expression syntax",
-    "ja": "検索値を含む/正規表現文法",
+    "ja": "検索値を含む/正規表現の構文です。",
     "ko": "검색 값 포함/정규표현식 문법",
     "zh": "Search value contain/regular expression syntax",
     "service_id": "DSC06936"
   },
   "DSC06937": {
     "en": "Search keys ending in .n accept only numeric search values.",
-    "ja": ".nで終わる検索キーには、数値検索値のみを入力できます。",
+    "ja": ".nで終わる検索キーには、数字のみが入力できます。",
     "ko": ".n으로 끝나는 검색 키에는 숫자 검색 값만 입력할 수 있습니다.",
     "zh": "Search keys ending in .n accept only numeric search values.",
     "service_id": "DSC06937"
@@ -47811,7 +47811,7 @@
   },
   "DSC06942": {
     "en": "Search logs containing your search values.",
-    "ja": "検索値を含む検索ログ。",
+    "ja": "検索値を含むログを検索します。",
     "ko": "검색 값이 포함된 로그를 검색합니다.",
     "zh": "Search logs containing your search values.",
     "service_id": "DSC06942"
@@ -47846,28 +47846,28 @@
   },
   "DSC06947": {
     "en": "The following settings are required to use MYSQL SQL statistics.",
-    "ja": "MYSQL SQL統計を使用するためには以下の設定が必要です。",
+    "ja": "MySQLのSQL統計を使用するためには以下の設定が必要です。",
     "ko": "MYSQL SQL 통계를 사용하기 위해서는 아래 설정이 필요합니다.",
     "zh": "The following settings are required to use MYSQL SQL statistics.",
     "service_id": "DSC06947"
   },
   "DSC06948": {
     "en": "Set database parameters (my.cnf)",
-    "ja": "データベースパラメータ設定 (my.cnf)",
+    "ja": "データベースパラメータを設定します。 (my.cnf)",
     "ko": "데이터베이스 파라미터 설정 (my.cnf)\n",
     "zh": "Set database parameters (my.cnf)",
     "service_id": "DSC06948"
   },
   "DSC06949": {
     "en": "Grant view permissions to a monitoring account",
-    "ja": "モニタリングアカウントに照会権限を付与",
+    "ja": "モニタリングアカウントに照会権限を付与します。",
     "ko": "모니터링 계정에 조회권한 부여",
     "zh": "Grant view permissions to a monitoring account",
     "service_id": "DSC06949"
   },
   "DSC06950": {
     "en": "Set agent collection options (whatap.conf)",
-    "ja": "エージェント収集オプション設定 (whatap.conf)",
+    "ja": "エージェント収集オプションを設定します。 (whatap.conf)",
     "ko": "에이전트 수집옵션 설정 (whatap.conf)",
     "zh": "Set agent collection options (whatap.conf)",
     "service_id": "DSC06950"
@@ -47881,28 +47881,28 @@
   },
   "TTL06953": {
     "en": "SQL fetch time avg",
-    "ja": "SQLフェッチ時間平均",
+    "ja": "平均SQLフェッチ時間",
     "ko": "평균 SQL 패치 시간",
     "zh": "SQL读取时间平均",
     "service_id": "TTL06953"
   },
   "TTL06954": {
     "en": "SQL fetch avg",
-    "ja": "SQLフェッチ平均",
+    "ja": "平均SQLフェッチ件数",
     "ko": "평균 SQL 패치 건수",
     "zh": "sql语句平均",
     "service_id": "TTL06954"
   },
   "TTL06955": {
     "en": "SQL count avg",
-    "ja": "SQL数平均",
+    "ja": "平均SQL件数",
     "ko": "평균 SQL 건수",
     "zh": "SQL计数平均",
     "service_id": "TTL06955"
   },
   "TTL06956": {
     "en": "SQL time avg",
-    "ja": "SQL時間平均",
+    "ja": "平均SQL時間",
     "ko": "평균 SQL 시간",
     "zh": "SQL时间平均",
     "service_id": "TTL06956"
@@ -47916,14 +47916,14 @@
   },
   "TTL06958": {
     "en": "HTTPC count AVG",
-    "ja": "HTTPコール平均時間",
+    "ja": "平均HTTP呼出し時間",
     "ko": "평균 HTTP 호출 건수",
     "zh": "HTTPC计数平均",
     "service_id": "TTL06958"
   },
   "TTL06959": {
     "en": "HTTP call time avg",
-    "ja": "HTTPコール時間平均",
+    "ja": "平均HTTP呼出し時間",
     "ko": "평균 HTTP 호출 시간",
     "zh": "HTTP 时间平均",
     "service_id": "TTL06959"
@@ -47951,7 +47951,7 @@
   },
   "TTL06963": {
     "en": "Time sum",
-    "ja": "時間合計",
+    "ja": "合計時間",
     "ko": "합계 시간",
     "zh": "Time sum",
     "service_id": "TTL06963"
@@ -47972,42 +47972,42 @@
   },
   "TTL06966": {
     "en": "Fetch avg",
-    "ja": "フェッチ平均",
+    "ja": "平均フェッチ件数",
     "ko": "평균 패치 건수",
     "zh": "语句平均",
     "service_id": "TTL06966"
   },
   "TTL06967": {
     "en": "HTTPC elapsed(ms)",
-    "ja": "HTTPコール経過時間(ミリ秒)",
+    "ja": "HTTP呼出し経過時間(ミリ秒)",
     "ko": "HTTP 호출 경과 시간(ms)",
     "zh": "HTTPC Elapsed(ms)",
     "service_id": "TTL06967"
   },
   "ITM06968": {
     "en": "Active Targets Only",
-    "ja": "アクティブなターゲットのみ表示",
+    "ja": "アクティブ状態のみ表示",
     "ko": "활성 대상만 보기",
     "zh": "Active Targets Only",
     "service_id": "ITM06968"
   },
   "TTL06969": {
     "en": "CallerSpec",
-    "ja": "CallerSpec",
+    "ja": "Caller Spec",
     "ko": "CallerSpec",
     "zh": "CallerSpec",
     "service_id": "TTL06969"
   },
   "TTL06970": {
     "en": "CallerTxId",
-    "ja": "CallerTxId",
+    "ja": "Caller TxId",
     "ko": "CallerTxId",
     "zh": "CallerTxId",
     "service_id": "TTL06970"
   },
   "TTL06971": {
     "en": "Original URL/Transaction",
-    "ja": "原本URL/事务",
+    "ja": "原本URL/TX",
     "ko": "원본 URL/트랜잭션",
     "zh": "原本URL/事务",
     "service_id": "TTL06971"
@@ -48021,7 +48021,7 @@
   },
   "TTL06973": {
     "en": "Transaction Hash",
-    "ja": "時間ハッシュ",
+    "ja": "TXハッシュ",
     "ko": "트랜잭션 해시",
     "zh": "Transaction Hash",
     "service_id": "TTL06973"
@@ -48056,35 +48056,35 @@
   },
   "DSC06978": {
     "en": "This is a reserved word that cannot be indexed. Please enter a different value.",
-    "ja": "これはインデックスできない予約語です。別の値を入力してください。",
+    "ja": "インデックスが生成できない予約語です。別の値を入力してください。",
     "ko": "인덱스를 생성할 수 없는 예약어입니다. 다른 값을 입력해주세요.",
     "zh": "This is a reserved word that cannot be indexed. Please enter a different value.",
     "service_id": "DSC06978"
   },
   "DSC06979": {
     "en": "This key is designated as a reserved word and cannot be used.",
-    "ja": "このキーは予約語として指定されており、使用することはできない。",
+    "ja": "予約語として指定されたキーです。使用できません。",
     "ko": "이 키는 예약어로 지정되어 있으며 사용할 수 없습니다.",
     "zh": "This key is designated as a reserved word and cannot be used.",
     "service_id": "DSC06979"
   },
   "TTL06980": {
     "en": "If the session takes a long time, analyze it by <br/> {menu_title}.",
-    "ja": "セッションの実行時間が長くかかる場合は、<br/>{menu_title}で分析してください。",
+    "ja": "セッションの実行時間が長い場合は、<br/>{menu_title}で分析してください。",
     "ko": "세션 수행시간이 오래걸린다면<br/>{menu_title}를 통해 분석해보세요.",
     "zh": "If the session takes a long time, analyze it by <br/> {menu_title}.",
     "service_id": "TTL06980"
   },
   "DSC06981": {
     "en": "The <b>{menu_title}</b> feature has been opened.",
-    "ja": "<b>{menu_title}</b>機能がオープンしました。",
+    "ja": "<b>{menu_title}</b>機能をオープンしました。",
     "ko": "<b>{menu_title}</b> 기능이 오픈했습니다.",
     "zh": "The {menu_title} feature has been opened.",
     "service_id": "DSC06981"
   },
   "DSC06982": {
     "en": "menu, select the session you want to analyze, and you can do the association analysis with {menu_title}. If you want to know what SQLs you've performed on a long-running session, how much resources you've consumed, and why it's taking so long, analyze it with the <b>{menu_title}</b> menu.",
-    "ja": "メニューから分析したいセッションを選択した後、{menu_title}に連携分析することができます。 長時間実行されたセッションに対してどのSQLを実行し、リソースをどれだけ消費したのか、実行時間が長くかかった理由を知りたい場合は、<b>{menu_title}</b>メニューで分析してください。",
+    "ja": "分析したいセッションをメニューから選択した後、{menu_title}に連携分析できます。 長時間実行されたセッションに対して、何のSQLを実行し、リソースをどれだけ消費したのかなどの実行時間が長くかかった理由を知りたい場合は、<b>{menu_title}</b>メニューで分析してみてください。",
     "ko": "메뉴에서 분석하고자 하는 세션을 선택한 후 {menu_title}로 연계분석을 할 수 있습니다. 장시간 수행된 세션에 대해 어떤 SQL들을 수행했고 자원을 얼마나 소모했는지, 수행시간이 오래 걸린 이유를 알고 싶다면 <b>{menu_title}</b> 메뉴로 분석해 보세요.",
     "zh": "menu, select the session you want to analyze, and you can do the association analysis with {menu_title}. If you want to know what SQLs you've performed on a long-running session, how much resources you've consumed, and why it's taking so long, analyze it with the <b>{menu_title}</b> menu.",
     "service_id": "DSC06982"
@@ -48105,7 +48105,7 @@
   },
   "TTL06985": {
     "en": "Transaction",
-    "ja": "取引",
+    "ja": "TX",
     "ko": "트랜잭션",
     "zh": "Transaction",
     "service_id": "TTL06985"
@@ -48126,21 +48126,21 @@
   },
   "BTN06988": {
     "en": "Learn more",
-    "ja": "詳しく調べる",
+    "ja": "詳細",
     "ko": "자세히 알아보기",
     "zh": "Learn more",
     "service_id": "BTN06988"
   },
   "TTL06989": {
     "en": "If {active_session} is frequently delayed,<br/>analyze it from a wait perspective.",
-    "ja": "{active_session}の遅延が頻繁に発生する場合は、<br/>Waitの観点から分析してください。",
+    "ja": "{active_session}の遅延が頻繁に発生する場合は、<br/>Wait(待機)の観点から分析してください。",
     "ko": "{active_session}의 지연이 자주 발생하면<br/>Wait 관점에서 분석해보세요.",
     "zh": "If {active_session} is frequently delayed,<br/>analyze it from a wait perspective.",
     "service_id": "TTL06989"
   },
   "DSC06990": {
     "en": "{menu_title} can see what wait events are waiting for the sessions you're running and what are the frequently occurring wait events over a certain period of time.",
-    "ja": "{menu_title}は、実行中のセッションがどのようなWaitEventで待機中であり、特定の期間に頻繁に発生するWaitが何かを確認することができます。",
+    "ja": "{menu_title}は、実行中のセッションがどの何のWaitEventで待機していて、特定期間に頻繁に発生したWaitは何なのかを確認することができます。",
     "ko": "{menu_title}은 수행 중인 세션들이 어떤 Wait 이벤트로 대기 중이었고, 특정 기간 자주 발생하는 Wait들은 무엇인지 확인할 수 있습니다.",
     "zh": "{menu_title} can see what wait events are waiting for the sessions you're running and what are the frequently occurring wait events over a certain period of time.",
     "service_id": "DSC06990"
@@ -48189,35 +48189,35 @@
   },
   "DSC06997": {
     "en": "Using {menu_title} requires <span style='font-weight:bold; color: #296CF2;'>Updates the latest version of the agent and settings for the monitored DB and WhaTap agent options</span>.",
-    "ja": "{menu_title}を使用するには、<span style='font-weight:bold;color: #296CF2;'>エージェント最新バージョンのアップデートと監視対象DBとワタブエージェントオプションの設定</span>が必要です。",
+    "ja": "{menu_title}を使用するには、<span style='font-weight:bold;color: #296CF2;'>エージェント最新バージョンのアップデートと監視対象DBとWhaTapエージェントオプションの設定</span>が必要です。",
     "ko": "{menu_title}을(를) 사용하려면 <span style='font-weight: bold; color: #296CF2;'>에이전트 최신 버전 업데이트와 모니터링 대상 DB와 와탭 에이전트 옵션의 설정</span>이 필요합니다.",
     "zh": "Using {menu_title} requires <span style='font-weight:bold; color: #296CF2;'>Updates the latest version of the agent and settings for the monitored DB and WhaTap agent options</span>.",
     "service_id": "DSC06997"
   },
   "DSC06998": {
     "en": "Please refer to the guide link below for more information on setting up.",
-    "ja": "詳細な設定方法については、以下のガイド リンクを参照してください。",
+    "ja": "詳しい設定方法については、以下のガイド リンクを参照してください。",
     "ko": "자세한 설정 방법은 아래의 가이드 링크를 참고하세요.",
     "zh": "Please refer to the guide link below for more information on setting up.",
     "service_id": "DSC06998"
   },
   "DSC06999": {
     "en": "The following settings are required in the <br/>monitor destination DB to use the {menu_title} menu.",
-    "ja": "{menu_title}メニューを使用するには、<br/>モニター対象DBで次の設定が必要です。",
+    "ja": "{menu_title}メニューを使用するには、<br/>モニタリング対象DBから次の設定を行ってください。",
     "ko": "{menu_title} 메뉴를 사용하기 위해서는<br/>모니터링 대상 DB에서 다음과 같은 설정이 필요합니다.",
     "zh": "The following settings are required in the <br/>monitor destination DB to use the {menu_title} menu.",
     "service_id": "DSC06999"
   },
   "DSC07000": {
     "en": "Enable the Performance Schema in Database Settings ({confName}).",
-    "ja": "Database設定で({confName})Performance Schemaを有効にしてください。",
+    "ja": "Database設定から({confName})Performance Schemaを有効にしてください。",
     "ko": "Database 설정에서({confName}) Performance Schema를 활성화하세요.",
     "zh": "Enable the Performance Schema in Database Settings (my.cnf).",
     "service_id": "DSC07000"
   },
   "DSC07001": {
     "en": "Give the monitoring account permission to look up the data to read it.",
-    "ja": "監視アカウントからそのデータを読み取ることができるように照会権限をください。",
+    "ja": "モニタリングアカウントからデータの読み取りができるよう、照会権限を付与してください。",
     "ko": "모니터링 계정에서 해당 데이터를 읽을 수 있도록 조회 권한을 주세요.",
     "zh": "Give the monitoring account permission to look up the data to read it.",
     "service_id": "DSC07001"
@@ -48231,7 +48231,7 @@
   },
   "DSC07003": {
     "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(従ってセット後1時間後から収集が始まります。)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
     "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
@@ -48245,14 +48245,14 @@
   },
   "DSC07005": {
     "en": "A new node list is provided in WhaTap Node Agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
-    "ja": "ワタップノードエージェントバージョン<strong> {minVersion} </strong>以降で新しいノードのリストを提供しています。 新しいメニューを使用するには、エージェントを更新してください（現在のバージョン：{currVersion}）",
+    "ja": "WhaTapノードエージェントバージョン<strong> {minVersion} </strong>以降で新しいノードのリストを提供しています。 新しいメニューを使用するには、エージェントをアップデートしてください。（現在のバージョン：{currVersion}）",
     "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 노드 목록을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "A new node list is provided in WhaTap Node Agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "service_id": "DSC07005"
   },
   "TTL07006": {
     "en": "Number of Target Agents",
-    "ja": "ターゲットエージェントの数",
+    "ja": "対象エージェントの数",
     "ko": "대상 에이전트 수",
     "zh": "Number of Target Agents",
     "service_id": "TTL07006"
@@ -48266,7 +48266,7 @@
   },
   "DSC07008": {
     "en": "The logs of the DB installed on the Linux file system are collected by the XOS agent on the and tabs.<br/>Please proceed with the installation through the guide link below.",
-    "ja": "LinuxファイルシステムにインストールされたDBのログは、WaタブのXOSエージェントで収集します。<br/>下記のガイドリンクからインストールを進めてください。",
+    "ja": "LinuxファイルシステムにインストールされたDBのログは、WhaTapのXOSエージェントを使って収集します。<br/>下記のガイドリンクからインストールを進めてください。",
     "ko": "리눅스 파일시스템에 설치된 DB의 로그는 와탭의 XOS 에이전트로 수집합니다.<br/>아래의 가이드 링크를 통해 설치를 진행해주세요.",
     "zh": "The logs of the DB installed on the Linux file system are collected by the XOS agent on the and tabs.<br/>Please proceed with the installation through the guide link below.",
     "service_id": "DSC07008"
@@ -48280,7 +48280,7 @@
   },
   "TTL07010": {
     "en": "Apply Options to xos.conf File",
-    "ja": "xos.confファイルにオプション適用",
+    "ja": "xos.confファイルへのオプション適用",
     "ko": "xos.conf 파일에 옵션 적용",
     "zh": "Apply Options to xos.conf File",
     "service_id": "TTL07010"
@@ -48294,77 +48294,77 @@
   },
   "DSC07012": {
     "en": "Click the toggle button to activate log monitoring after setting is complete.",
-    "ja": "設定完了後、ログ監視を有効にするトグルボタンをクリックしてください。",
+    "ja": "設定を完了してから、ログ監視を有効にするトグルボタンをクリックしてください。",
     "ko": "설정 완료 후 로그 모니터링 활성화 토글 버튼을 클릭해주세요.",
     "zh": "Click the toggle button to activate log monitoring after setting is complete.",
     "service_id": "DSC07012"
   },
   "TTL07013": {
     "en": "Installing and Setting Up WhaTab AWS RDS Log",
-    "ja": "ワッタブAWS RDS Logのインストールと設定",
+    "ja": "AWS RDS Logのインストールと設定",
     "ko": "와탭 AWS RDS Log 설치 및 설정하기",
     "zh": "Installing and Setting Up WhaTab AWS RDS Log",
     "service_id": "TTL07013"
   },
   "DSC07014": {
     "en": "Install the AWS CloudFormation template provided by WhaTab to collect CloudWatch Logs and Events from RDS.Please refer to the guide link below to install and set up AWS CloudFormation for AWS RDS Log collection.",
-    "ja": "WhaTabが提供するAWS Cloud Formationテンプレートをインストールし、RDSのCloud Watch LogsとEventを収集します。<br/>以下のガイドリンクを参照して、AWS RDS Log収集のためのAWS Cloud Formationのインストールおよび設定を進めてください。",
+    "ja": "WhaTabが提供するAWS Cloud Formationテンプレートをインストールし、RDSのCloudWatch LogsとEventを収集します。<br/>以下のガイドリンクを参照して、AWS RDS Log収集のためのAWS Cloud Formationのインストールおよび設定を進めてください。",
     "ko": "와탭이 제공하는 AWS CloudFormation 템플릿을 설치하여 RDS의 CloudWatch Logs와 Event를 수집합니다.<br/>아래 가이드 링크를 참조하여 AWS RDS Log 수집을 위한 AWS CloudFormation 설치 및 설정을 진행하세요.",
     "zh": "Install the AWS CloudFormation template provided by WATAB to collect CloudWatch Logs and Events from RDS.Please refer to the guide link below to install and set up AWS CloudFormation for AWS RDS Log collection.",
     "service_id": "DSC07014"
   },
   "TTL07015": {
     "en": "Linkage project registration",
-    "ja": "連携プロジェクト登録",
+    "ja": "連携プロジェクトの登録",
     "ko": "연계 프로젝트 등록",
     "zh": "Linkage project registration",
     "service_id": "TTL07015"
   },
   "TTL07016": {
     "en": "Linkage project list",
-    "ja": "連携プロジェクト一覧",
+    "ja": "連携プロジェクトのリスト",
     "ko": "연계 프로젝트 목록",
     "zh": "Linkage project list",
     "service_id": "TTL07016"
   },
   "DSC07017": {
     "en": "Select the project you want to link to and click the registration button.",
-    "ja": "連携登録するプロジェクトを選択したら、登録ボタンを押してください。",
+    "ja": "連携登録するプロジェクトを選択してから、登録ボタンを押してください。",
     "ko": "연계 등록할 프로젝트를 선택한 후, 등록 버튼을 눌러주세요.",
     "zh": "Select the project you want to link to and click the registration button.",
     "service_id": "DSC07017"
   },
   "DSC07018": {
     "en": "The project has been linked.",
-    "ja": "プロジェクトが連携登録されました。",
+    "ja": "プロジェクトを連携登録しました。",
     "ko": "프로젝트가 연계 등록되었습니다.",
     "zh": "The project has been linked.",
     "service_id": "DSC07018"
   },
   "DSC07019": {
     "en": "プロジェクト連携の登録に失敗しました。",
-    "ja": "Project link registration failed.",
+    "ja": "プロジェクトの連携登録に失敗しました。",
     "ko": "프로젝트 연계 등록을 실패했습니다.",
     "zh": "Project link registration failed.",
     "service_id": "DSC07019"
   },
   "BTN07020": {
     "en": "WhaTab AWS RDS Log Installation Guide",
-    "ja": "ワッタブ AWS RDS Logインストールガイド",
+    "ja": "AWS RDS Logインストールガイド",
     "ko": "와탭 AWS RDS Log 설치 가이드",
     "zh": "WhaTab AWS RDS Log Installation Guide",
     "service_id": "BTN07020"
   },
   "TTL07021": {
     "en": "You can now view historical data in your dashboard!",
-    "ja": "ダッシュボードで過去のデータ照会が可能になりました!",
+    "ja": "ダッシュボードから過去のデータが照会できるようになりました。",
     "ko": "대시보드에서 과거시점 조회가 가능해졌어요!",
     "zh": "You can now view historical data in your dashboard!",
     "service_id": "TTL07021"
   },
   "CNT07022": {
     "en": "We've implemented a feature that many of you have been asking for, \"View historical data in the dashboard.\" If you set the Time selector in the top left corner to Historical, you can view historical data by reverting all charts in the dashboard to that point in time, and by linking with the Agent selector, you can also sort by type and node.",
-    "ja": "多くの方のご要望の一つであった「ダッシュボードでの過去データ照会」機能が適用されました。 これにより、左上のTime selectorを過去に設定すると、ダッシュボードのすべてのチャートをその時点に戻して過去データを確認することができ、Agent Selectorとの連携により、種類別、ノード別に分類して確認することもできます。",
+    "ja": "多くの方からご要望があった「ダッシュボードからの過去データ照会」機能が実現されました。 左上のTime selectorを過去に設定すると、ダッシュボードのすべてのチャートが当時のデータを確認表示し、確認できます。Agent Selectorとの連携により、種類別、ノード別に分類して確認することもできます。",
     "ko": "많은 분들의 요청 사항 중 하나였던 “대시보드에서의 과거 데이터 조회” 기능이 적용되었습니다. 이에 따라 좌측 상단의 Time selector를 과거로 설정할 경우, 대시보드의 모든 차트를 해당 시점으로 되돌려 과거 데이터를 확인하실 수 있으며, Agent Selector와의 연계를 통해 종류 별, 노드 별로 분류해서 확인할 수도 있습니다.",
     "zh": "We've implemented a feature that many of you have been asking for, \"View historical data in the dashboard.\" If you set the Time selector in the top left corner to Historical, you can view historical data by reverting all charts in the dashboard to that point in time, and by linking with the Agent selector, you can also sort by type and node.",
     "service_id": "CNT07022"
@@ -48385,91 +48385,91 @@
   },
   "DSC07025": {
     "en": "If you change your country or payment method, your previously selected billing currency will change.",
-    "ja": "国またはお支払い方法を変更すると、以前に選択した請求通貨が変更されます。",
+    "ja": "国、またはお支払い方法を変更すると、以前に選択した請求通貨が変更されます。",
     "ko": "국가 혹은 결제 수단 변경 시 이전에 선택한 청구 통화가 변경됩니다.",
     "zh": "If you change your country or payment method, your previously selected billing currency will change.",
     "service_id": "DSC07025"
   },
   "DSC07026": {
     "en": "Billing currency will change when you change country or payment method.",
-    "ja": "請求通貨は国または支払い方法の変更時に変更されます。",
+    "ja": "請求通貨は国、またはお支払い方法の変更時に変更されます。",
     "ko": "청구 통화는 국가 혹은 결제 수단 변경시 변경됩니다.",
     "zh": "Billing currency will change when you change country or payment method.",
     "service_id": "DSC07026"
   },
   "LNK07027": {
     "en": "Setting up a log parser",
-    "ja": "ログ・パーサーのセットアップ",
+    "ja": "ログパーサーの設定",
     "ko": "로그 파서 설정하기",
     "zh": "Setting up a log parser",
     "service_id": "LNK07027"
   },
   "DSC07028": {
     "en": "Adding a log parser enables search without additional lookups.",
-    "ja": "ログ・パーサーを追加することで、追加のルックアップなしで検索が可能になる。",
+    "ja": "ログパーサーを追加することで、追加の照会なしで検索ができます。",
     "ko": "로그 파서 추가시 추가 조회없이 검색이 가능합니다.",
     "zh": "Adding a log parser enables search without additional lookups.",
     "service_id": "DSC07028"
   },
   "DSC07029": {
     "en": "No results found within your recent searches, would you like to search more?",
-    "ja": "最近の検索で結果が見つかりませんでした。",
+    "ja": "最近の検索範囲内には検索された結果が見つかりません。追加で照会しますか？",
     "ko": "최근 조회 범위 내에 검색된 결과가 없습니다. 추가로 조회하시겠습니까?",
     "zh": "No results found within your recent searches, would you like to search more?",
     "service_id": "DSC07029"
   },
   "BTN07030": {
     "en": "Get more logs",
-    "ja": "ログをもっと見る",
+    "ja": "追加照会",
     "ko": "추가 조회하기",
     "zh": "Get more logs",
     "service_id": "BTN07030"
   },
   "DSC07031": {
     "en": "Do you want to get more logs?",
-    "ja": "もっとログを取りたい？",
+    "ja": "ログをもっと照会しますか？",
     "ko": "로그를 더 조회하시겠습니까?",
     "zh": "Do you want to get more logs?",
     "service_id": "DSC07031"
   },
   "DSC07032": {
     "en": "There are no more logs to look up.",
-    "ja": "もう調べるべきログはない。",
+    "ja": "これ以上照会できるログがありません。",
     "ko": "더 이상 조회할 로그가 없습니다.",
     "zh": "There are no more logs to look up.",
     "service_id": "DSC07032"
   },
   "CNT07033": {
     "en": "Out of all {x} cases, <span style=\"color: #296CF2;\">{y}</span> has been searched for <span style=\"color: #296CF2;\">{z} cases</span>.",
-    "ja": "すべての{x}ケースのうち、<span style=\"color: #296CF2;>{y}</span>が<span style=\"color: #296CF2;>{z}ケース</span>を検索しました。",
+    "ja": "全体の{x}件の内、<span style=\"color: #296CF2;\">{y}件を</span>照会し、検索された結果は<span style=\"color: #296CF2;\">{z}件</span>です。",
     "ko": "전체 {x}건 중 <span style=\"color: #296CF2;\">{y}건</span> 조회했으며 검색된 결과는 <span style=\"color: #296CF2;\">{z}건</span>입니다.",
     "zh": "Out of all {x} cases, <span style=\"color: #296CF2;\">{y}</span> has been searched for <span style=\"color: #296CF2;\">{z} cases</span>.",
     "service_id": "CNT07033"
   },
   "DSC07034": {
     "en": "You can only select up to {agent_selection_limit} agents.",
-    "ja": "エージェントは最大{agent_selection_limit}個まで選択できます。",
+    "ja": "エージェントは最大{agent_selection_limit}件まで選択できます。",
     "ko": "에이전트는 최대 {agent_selection_limit}개 까지만 선택됩니다.",
     "zh": "You can only select up to {agent_selection_limit} agents.",
     "service_id": "DSC07034"
   },
   "ITM07035": {
     "en": "Select All",
-    "ja": "全選択",
+    "ja": "全体選択",
     "ko": "전체 선택",
     "zh": "Select All",
     "service_id": "ITM07035"
   },
   "CNT07036": {
     "en": "Permanent",
-    "ja": "正社員",
+    "ja": "永久",
     "ko": "영구",
     "zh": "Permanent",
     "service_id": "CNT07036"
   },
   "TTL07037": {
     "en": "Target Agent",
-    "ja": "ターゲットエージェント",
+    "ja": "対象エージェント",
     "ko": "대상 에이전트",
     "zh": "Target Agent",
     "service_id": "TTL07037"
@@ -48497,7 +48497,7 @@
   },
   "DSC07041": {
     "en": "Auto-select all agents",
-    "ja": "フルエージェントの自動選択",
+    "ja": "全体のエージェントの自動選択",
     "ko": "전체 에이전트 자동 선택",
     "zh": "Auto-select all agents",
     "service_id": "DSC07041"
@@ -48518,14 +48518,14 @@
   },
   "TTL07044": {
     "en": "All Event",
-    "ja": "すべてのイベント",
+    "ja": "全体イベント",
     "ko": "전체 이벤트",
     "zh": "All Event",
     "service_id": "TTL07044"
   },
   "DSC07045": {
     "en": "Automatically select updated agent list<br/>and apply entire list",
-    "ja": "自動的に更新されたエージェントのリストを<br/>完全に選択して適用します。",
+    "ja": "自動で更新したエージェントのリストを<br/>全体選択して適用します。",
     "ko": "자동으로 업데이트한 에이전트 목록을<br/>전체 선택하여 적용합니다.",
     "zh": "Automatically select updated agent list<br/>and apply entire list.",
     "service_id": "DSC07045"
@@ -48539,49 +48539,49 @@
   },
   "TTL07047": {
     "en": "Monthly usage AP-Core",
-    "ja": "月間使用 AP-Core",
+    "ja": "月間使用AP-Core",
     "ko": "월간 사용 AP-Core",
     "zh": "Monthly usage AP-Core",
     "service_id": "TTL07047"
   },
   "TTL07048": {
     "en": "Monthly usage K8s-APP.Container",
-    "ja": "月間使用 K8s-APP.Container",
+    "ja": "月間使用K8s-APP.Container",
     "ko": "월간 사용 K8s-APP.Container",
     "zh": "Monthly usage K8s-APP.Container",
     "service_id": "TTL07048"
   },
   "TTL07049": {
     "en": "Monthly usage Cloud-Dimension",
-    "ja": "月間使用 Cloud-Dimension",
+    "ja": "月間使用Cloud-Dimension",
     "ko": "월간 사용 Cloud-Dimension",
     "zh": "Monthly usage Cloud-Dimension",
     "service_id": "TTL07049"
   },
   "TTL07050": {
     "en": "Monthly usage ECS-Container",
-    "ja": "月間使用 ECS-Container",
+    "ja": "月間使用ECS-Container",
     "ko": "월간 사용 ECS-Container",
     "zh": "Monthly usage ECS-Container",
     "service_id": "TTL07050"
   },
   "TTL07051": {
     "en": "Monthly usage Browser-Session",
-    "ja": "月間使用 Browser-Session",
+    "ja": "月間使用Browser-Session",
     "ko": "월간 사용 Browser-Session",
     "zh": "Monthly usage Browser-Session",
     "service_id": "TTL07051"
   },
   "TTL07052": {
     "en": "Monthly usage NPM-Agent",
-    "ja": "月間使用 NPM-Agent",
+    "ja": "月間使用NPM-Agent",
     "ko": "월간 사용 NPM-Agent",
     "zh": "Monthly usage NPM-Agent",
     "service_id": "TTL07052"
   },
   "DSC07053": {
     "en": "There are no linked projects that meet the conditions.",
-    "ja": "条件に合った連携プロジェクトはありません。",
+    "ja": "条件に合った連携プロジェクトがありません。",
     "ko": "조건에 맞는 연계 프로젝트가 없습니다.",
     "zh": "There are no linked projects that meet the conditions.",
     "service_id": "DSC07053"
@@ -48609,14 +48609,14 @@
   },
   "TTL07057": {
     "en": "Heatmap Vertical Line",
-    "ja": "ヒートマップ縦線",
+    "ja": "ヒットマップ縦線",
     "ko": "히트맵 세로 라인",
     "zh": "Heatmap Vertical Line",
     "service_id": "TTL07057"
   },
   "TTL07058": {
     "en": "Heatmap Horizontal Line",
-    "ja": "ヒートマップ横線",
+    "ja": "ヒットマップ横線",
     "ko": "히트맵 가로 라인",
     "zh": "Heatmap Horizontal Line",
     "service_id": "TTL07058"
@@ -48637,58 +48637,58 @@
   },
   "TTL07061": {
     "en": "Check out the products recommended by WhaTap right away",
-    "ja": "ワタップがオススメの商品にすぐに会いましょう",
+    "ja": "WhaTapオススメの商品にすぐ会ってみましょう。",
     "ko": "와탭이 추천하는 상품을 바로 만나보세요",
     "zh": "Check out the products recommended by WhaTap right away",
     "service_id": "TTL07061"
   },
   "CNT07062": {
     "en": "Provides fast and accurate Kubernetes Obseverbility through container maps.",
-    "ja": "コンテナマップを使用して、迅速かつ正確なキューバネティス Obseverbility を提供します。",
+    "ja": "コンテナマップを通じて迅速、かつ正確なKubernetesオブザーバービリティを実現します。",
     "ko": "컨테이너 맵을 통해 빠르고 정확한 쿠버네티스 Obseverbility를 제공합니다.",
     "zh": "Provides fast and accurate Kubernetes Obseverbility through container maps.",
     "service_id": "CNT07062"
   },
   "CNT07063": {
     "en": "Monitor user interaction with the browser to optimize performance and resolve issues quickly.",
-    "ja": "ブラウザとユーザーの対話を監視してパフォーマンスを最適化し、問題をすばやく解決します。",
+    "ja": "ブラウザとユーザーのインタラクティブを監視し、性能を最適化しながら、問題をすばやく解決します。",
     "ko": "브라우저와 사용자의 상호작용을 모니터링하여 성능을 최적화하고 문제를 빠르게 해결합니다.",
     "zh": "Monitor and analyze the performance of end-user interactions with browser applications.",
     "service_id": "CNT07063"
   },
   "CNT07064": {
     "en": "Analyze performance and identify failures by visually visualizing the network communication information of the process.",
-    "ja": "プロセスのネットワーク通信情報を視覚的に可視化し、パフォーマンス分析と障害を特定します。",
+    "ja": "プロセスのネットワーク通信状態を可視化し、性能を分析して障害を把握します。",
     "ko": "프로세스의 네트워크 통신 정보를 시각적으로 가시화하여 성능 분석 및 장애를 파악합니다.",
     "zh": "Collect resource usage by Docker container in real time through the META API and cgroup directory.",
     "service_id": "CNT07064"
   },
   "CNT07065": {
     "en": "DB performance is monitored in real time and problems are diagnosed using collected data.",
-    "ja": "DBパフォーマンスをリアルタイムで統合監視し、収集したデータで問題を診断します。",
+    "ja": "DBの性能をリアルタイムで統合監視し、収集したデータで問題を診断します。",
     "ko": "DB 성능을 실시간으로 통합 감시하고 수집된 데이터로 문제점을 진단합니다.",
     "zh": "DB performance is monitored in real time and problems are diagnosed using collected data.",
     "service_id": "CNT07065"
   },
   "CNT07066": {
     "en": "You can easily and conveniently manage servers with fewer operating resources.",
-    "ja": "少ない運用リソースで簡単かつ快適にサーバーを管理できます。",
+    "ja": "限られた運用リソースで簡単、かつ快適にサーバーを管理できます。",
     "ko": "적은 운영 리소스로 쉽고 편하게 서버를 관리할 수 있습니다.",
     "zh": "You can easily and conveniently manage servers with fewer operating resources.",
     "service_id": "CNT07066"
   },
   "BTN07067": {
     "en": "Getting started with Kubernetes",
-    "ja": "クーバーネティスを始めよう",
+    "ja": "Kubernetes Monitoringを始めよう",
     "ko": "쿠버네티스 시작하기",
     "zh": "Getting started with Kubernetes",
     "service_id": "BTN07067"
   },
   "BTN07068": {
-    "en": "Getting started with \u001dBrowser",
-    "ja": "ブラウザを起動する",
+    "en": "Getting started with Browser",
+    "ja": "Brower Monitoringを始めよう",
     "ko": "브라우저 시작하기",
-    "zh": "Getting started with Browser Monitoring",
+    "zh": "Getting started with Browser",
     "service_id": "BTN07068"
   },
   "BTN07069": {
@@ -48700,14 +48700,14 @@
   },
   "BTN07070": {
     "en": "Getting started with Database",
-    "ja": "データベースを起動する",
+    "ja": "Database Monitoringを始めよう",
     "ko": "데이터베이스 시작하기",
     "zh": "Getting started with Database",
     "service_id": "BTN07070"
   },
   "BTN07071": {
     "en": "Getting started with Server Monitoring",
-    "ja": "サーバーモニタリングを始める",
+    "ja": "Server Monitoringを始めよう",
     "ko": "서버모니터링 시작하기",
     "zh": "Getting started with Server Monitoring",
     "service_id": "BTN07071"
@@ -48728,35 +48728,35 @@
   },
   "TTL07074": {
     "en": "Create project",
-    "ja": "プロジェクトの作成",
+    "ja": "プロジェクト作成",
     "ko": "프로젝트 생성",
     "zh": "Create project",
     "service_id": "TTL07074"
   },
   "TTL07075": {
     "en": "Agent Installation Guide",
-    "ja": "エージェントのインストール",
+    "ja": "エージェントインストール",
     "ko": "에이전트 설치",
     "zh": "Agent Installation Guide",
     "service_id": "TTL07075"
   },
   "TTL07076": {
-    "en": "Add a \bProject",
-    "ja": "プロジェクトを追加する",
+    "en": "Add a Project",
+    "ja": "プロジェクト追加",
     "ko": "프로젝트 추가하기",
     "zh": "Add a \bProject",
     "service_id": "TTL07076"
   },
   "NTC07077": {
     "en": "The account with which you've already shared this dashboard.",
-    "ja": "そのダッシュボードを既に共有しているアカウントです。",
+    "ja": "該当ダッシュボードを既に共有しているアカウントです。",
     "ko": "해당 대시보드를 이미 공유한 계정입니다.",
     "zh": "The account with which you've already shared this dashboard.",
     "service_id": "NTC07077"
   },
   "NTC07078": {
     "en": "You can't add your own accounts.",
-    "ja": "ユーザー自身のアカウントを追加することはできません。",
+    "ja": "ユーザー自身のアカウントは追加できません。",
     "ko": "사용자 자신의 계정을 추가할 수 없습니다.",
     "zh": "You can't add your own accounts.",
     "service_id": "NTC07078"
@@ -48770,7 +48770,7 @@
   },
   "NTC07080": {
     "en": "One of the emails you want to share has an invalid account. Check the message on the screen.",
-    "ja": "共有するメールの中に無効なアカウントがあります。画面のメッセージをご確認ください。",
+    "ja": "共有するメールの中に無効なアカウントが存在します。画面のメッセージを確認してください。",
     "ko": "공유할 이메일 중 유효하지 않은 계정이 있습니다. 화면의 메시지를 확인하세요.",
     "zh": "One of the emails you want to share has an invalid account. Check the message on the screen.",
     "service_id": "NTC07080"
@@ -48784,49 +48784,49 @@
   },
   "NTC07083": {
     "en": "The mail address is not in the correct format.",
-    "ja": "形式に合わないメールアドレスです。",
+    "ja": "無効な形式のメールアドレスです。",
     "ko": "형식에 맞지 않는 메일 주소입니다.",
     "zh": "The mail address is not in the correct format.",
     "service_id": "NTC07083"
   },
   "NTC07084": {
     "en": "There are duplicate email addresses.",
-    "ja": "メールアドレスが重複しています。",
+    "ja": "重複したメールアドレスです。",
     "ko": "중복된 이메일 주소가 있습니다.",
     "zh": "There are duplicate email addresses.",
     "service_id": "NTC07084"
   },
   "NTC07085": {
     "en": "Select a valid time range (You can select up to 1 day)",
-    "ja": "動画チュートリアル (最大1日まで選択できます)",
+    "ja": "時間範囲を有効に選択してください。(最大1日まで選択)",
     "ko": "유효한 시간 범위를 선택하세요 (최대 1일까지 선택할 수 있습니다)",
     "zh": "Select a valid time range (You can select up to 1 day)",
     "service_id": "NTC07085"
   },
   "NTC07086": {
     "en": "Select a valid time range (You can select up to 7 days)",
-    "ja": "動画チュートリアル (最大7日間まで選択できます)",
+    "ja": "時間範囲を有効に選択してください。(最大7日間まで選択)",
     "ko": "유효한 시간 범위를 선택하세요 (최대 7일까지 선택할 수 있습니다)",
     "zh": "Select a valid time range (You can select up to 7 days)",
     "service_id": "NTC07086"
   },
   "NTC07087": {
     "en": "Select a valid time range (You can select up to 31 days)",
-    "ja": "動画チュートリアル (最大31日まで選択できます)",
+    "ja": "時間範囲を有効に選択してください。(最大31日まで選択)",
     "ko": "유효한 시간 범위를 선택하세요 (최대 31일까지 선택할 수 있습니다)",
     "zh": "Select a valid time range (You can select up to 31 days)",
     "service_id": "NTC07087"
   },
   "DSC07088": {
     "en": "There are no registered agents for the project.",
-    "ja": "プロジェクトに登録されたエージェントはありません。",
+    "ja": "プロジェクトに登録されたエージェントがありません。",
     "ko": "프로젝트에 등록된 에이전트가 없습니다.",
     "zh": "There are no registered agents for the project.",
     "service_id": "DSC07088"
   },
   "TLT07089": {
     "en": "Node details view",
-    "ja": "ノードの詳細を見る",
+    "ja": "ノードの詳細を表示します。",
     "ko": "노드 상세 보기",
     "zh": "Node details view",
     "service_id": "TLT07089"
@@ -48866,6 +48866,223 @@
     "zh": "e.g.",
     "service_id": "TTL07094"
   },
+  "TTL07095": {
+    "en": "Date range",
+    "ja": "日付",
+    "ko": "일자 범위",
+    "zh": "Date range",
+    "service_id": "TTL07095"
+  },
+  "TTL07096": {
+    "en": "Time Range",
+    "ja": "時間",
+    "ko": "시간 범위",
+    "zh": "Time Range",
+    "service_id": "TTL07096"
+  },
+  "DSC07097": {
+    "en": "You can select up to 20.",
+    "ja": "最大{num}件まで選択できます。",
+    "ko": "최대 {num}개까지 선택할 수 있습니다.",
+    "zh": "You can select up to 20.",
+    "service_id": "DSC07097"
+  },
+  "TTL07098": {
+    "en": "Avg AJAX Response Time Top N",
+    "ja": "Ajax平均応答時間のTop N",
+    "ko": "평균 AJAX 응답 시간 Top N",
+    "zh": "Avg AJAX Response Time Top N",
+    "service_id": "TTL07098"
+  },
+  "TTL07099": {
+    "en": "AJAX Fail Count",
+    "ja": "Ajax失敗件数",
+    "ko": "AJAX 실패 건수",
+    "zh": "AJAX Fail Count",
+    "service_id": "TTL07099"
+  },
+  "TTL07100": {
+    "en": "Largest Contentful Paint Top N",
+    "ja": "最大コンテンツプールペイント(LCP)のTop N",
+    "ko": "최대 콘텐츠풀 페인트 Top N",
+    "zh": "Largest Contentful Paint Top N",
+    "service_id": "TTL07100"
+  },
+  "TTL07101": {
+    "en": "Cumulative Layout Shift Top N",
+    "ja": "累積レイアウトシフト数(CLS)のTop N",
+    "ko": "누적 레이아웃 이동 Top N",
+    "zh": "Cumulative Layout Shift Top N",
+    "service_id": "TTL07101"
+  },
+  "TTL07102": {
+    "en": "First Input Delay Top N",
+    "ja": "初回入力までの遅延時間のTop N",
+    "ko": "최초 입력 지연 Top N",
+    "zh": "First Input Delay Top N",
+    "service_id": "TTL07102"
+  },
+  "TTL07103": {
+    "en": "AJAX URL",
+    "ja": "AJAX URL",
+    "ko": "AJAX URL",
+    "zh": "AJAX URL",
+    "service_id": "TTL07103"
+  },
+  "TTL07104": {
+    "en": "AJAX Abort",
+    "ja": "AJAX中止",
+    "ko": "AJAX 중단",
+    "zh": "AJAX Abort",
+    "service_id": "TTL07104"
+  },
+  "TTL07105": {
+    "en": "Request Info",
+    "ja": "リクエスト情報",
+    "ko": "요청 정보",
+    "zh": "Request Info",
+    "service_id": "TTL07105"
+  },
+  "TTL07106": {
+    "en": "AJAX Timing",
+    "ja": "AJAXタイミング",
+    "ko": "AJAX 타이밍",
+    "zh": "AJAX Timing",
+    "service_id": "TTL07106"
+  },
+  "NTC07107": {
+    "en": "Please enter the writer.",
+    "ja": "作成者を入力してください。",
+    "ko": "작성자를 입력해주세요.",
+    "zh": "Please enter the writer.",
+    "service_id": "NTC07107"
+  },
+  "NTC07115": {
+    "en": "Please specify the date and time.",
+    "ja": "日付と時刻を指定してください。",
+    "ko": "일자 및 시간을 지정해주세요.",
+    "zh": "Please specify the date and time.",
+    "service_id": "NTC07115"
+  },
+  "NTC07111": {
+    "en": "Please specify a time.",
+    "ja": "時間を指定してください。",
+    "ko": "시간을 지정해주세요.",
+    "zh": "Please specify a time.",
+    "service_id": "NTC07111"
+  },
+  "NTC07113": {
+    "en": "Please specify the day of the week.",
+    "ja": "曜日を指定してください。",
+    "ko": "요일을 지정해주세요.",
+    "zh": "Please specify the day of the week.",
+    "service_id": "NTC07113"
+  },
+  "NTC07114": {
+    "en": "Please specify a date.",
+    "ja": "日付を指定してください。",
+    "ko": "일자를 지정해주세요.",
+    "zh": "Please specify a date.",
+    "service_id": "NTC07114"
+  },
+  "NTC07110": {
+    "en": "Please specify a date.\n",
+    "ja": "日付を指定してください。",
+    "ko": "날짜를 지정해주세요.",
+    "zh": "Please specify a date.",
+    "service_id": "NTC07110"
+  },
+  "NTC07112": {
+    "en": "Please select the target agent.",
+    "ja": "対象のエージェントを選択してください。",
+    "ko": "대상 에이전트를 선택해주세요.",
+    "zh": "Please select the target agent.",
+    "service_id": "NTC07112"
+  },
+  "NTC07116": {
+    "en": "The start time and end time cannot be the same.",
+    "ja": "開始時刻と終了時刻が異なるよう指定してください。",
+    "ko": "시작 시간과 종료 시간은 같을 수 없습니다.",
+    "zh": "The start time and end time cannot be the same.",
+    "service_id": "NTC07116"
+  },
+  "BTN07117": {
+    "en": "Apply",
+    "ja": "適用",
+    "ko": "적용",
+    "zh": "应用",
+    "service_id": "BTN07117"
+  },
+  "NTC07118": {
+    "en": "The writer value can be up to {max_length} characters. ({length}/{max_length})",
+    "ja": "作成者の値は、{max_length}文字まで入力できます。 ({length}/{max_length})",
+    "ko": "작성자 값은 최대 {max_length}자 까지 입력할 수 있습니다. ({length}/{max_length})",
+    "zh": "The writer value can be up to {max_length} characters. ({length}/{max_length})",
+    "service_id": "NTC07118"
+  },
+  "NTC07119": {
+    "en": "The maintenance history value can be entered up to {max_length} characters. ({length}/{max_length})",
+    "ja": "メンテナンス履歴の値は、最大{max_length}文字まで入力できます。 ({length}/{max_length})",
+    "ko": "정비내역 값은 최대 {max_length}자 까지 입력할 수 있습니다. ({length}/{max_length})",
+    "zh": "The maintenance history value can be entered up to {max_length} characters. ({length}/{max_length})",
+    "service_id": "NTC07119"
+  },
+  "BTN07120": {
+    "en": "Chart",
+    "ja": "チャート",
+    "ko": "차트",
+    "zh": "Chart",
+    "service_id": "BTN07120"
+  },
+  "BTN07121": {
+    "en": "Table",
+    "ja": "表",
+    "ko": "테이블",
+    "zh": "Table",
+    "service_id": "BTN07121"
+  },
+  "DSC07122": {
+    "en": "Select linked project",
+    "ja": "連携プロジェクトの選択",
+    "ko": "연계 프로젝트 선택",
+    "zh": "Select linked project",
+    "service_id": "DSC07122"
+  },
+  "TTL07123": {
+    "en": "Delete linked project",
+    "ja": "連携プロジェクトの削除",
+    "ko": "연계 프로젝트 삭제",
+    "zh": "Delete linked project",
+    "service_id": "TTL07123"
+  },
+  "DSC07124": {
+    "en": "Are you sure you want to delete project {projectName} from linked projects?",
+    "ja": "{projectName}プロジェクトを連携プロジェクトから削除しますか？",
+    "ko": "{projectName} 프로젝트를 연계 프로젝트에서 삭제하시겠습니까?",
+    "zh": "Are you sure you want to delete project {projectName} from linked projects?",
+    "service_id": "DSC07124"
+  },
+  "DSC07125": {
+    "en": "Link project registration has been completed.",
+    "ja": "連携プロジェクト登録が完了しました。",
+    "ko": "연계 프로젝트 등록이 완료되었습니다.",
+    "zh": "Link project registration has been completed.",
+    "service_id": "DSC07125"
+  },
+  "DSC07126": {
+    "en": "Deletion of the linked project has been completed.",
+    "ja": "連携プロジェクトの削除が完了しました。",
+    "ko": "연계 프로젝트 삭제가 완료되었습니다.",
+    "zh": "Deletion of the linked project has been completed.",
+    "service_id": "DSC07126"
+  },
+  "DSC07127": {
+    "en": "Please click on the values ​​in the guide below.",
+    "ja": "以下のガイドの値をクリックしてください。",
+    "ko": "아래 가이드에 있는 값을 클릭해 주세요.",
+    "zh": "Please click on the values ​​in the guide below.",
+    "service_id": "DSC07127"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -48874,5 +49091,25 @@
     "en": "Start a free trial",
     "ja": "Start a free trial",
     "ko": "무료로 시작하기"
+  },
+  "ajaxAnalytics": {
+    "en": "AJAX Hitmap",
+    "ja": "AJAX Hitmap",
+    "ko": "AJAX 히트맵"
+  },
+  "rumDashboard": {
+    "en": "Browser Monitoring Dashboard",
+    "ja": "ブラウザ監視ダッシュボード",
+    "ko": "브라우저 모니터링 대시보드"
+  },
+  "reportStat": {
+    "en": "Stat/Report",
+    "ja": "統計/レポート",
+    "ko": "통계/보고서"
+  },
+  "containerMap": {
+    "en": "Container Map",
+    "ja": "コンテナマップ",
+    "ko": "컨테이너 맵"
   }
 }

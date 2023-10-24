@@ -43,9 +43,9 @@
     "message": "Oracleモニタリング",
     "description": "Navbar item with label Oracle 모니터링"
   },
-  "item.label.MS SQL Server 모니터링": {
-    "message": "MS SQL Serverモニタリング",
-    "description": "Navbar item with label MS SQL Server 모니터링"
+  "item.label.SQL Server 모니터링": {
+    "message": "SQL Serverモニタリング",
+    "description": "Navbar item with label SQL Server 모니터링"
   },
   "item.label.Tibero 모니터링": {
     "message": "Tiberoモニタリング",
@@ -151,9 +151,9 @@
     "message": "MySQL",
     "description": "Navbar item with label MySQL"
   },
-  "item.label.MS SQL Server": {
-    "message": "MS SQL Server",
-    "description": "Navbar item with label MS SQL Server"
+  "item.label.SQL Server": {
+    "message": "SQL Server",
+    "description": "Navbar item with label SQL Server"
   },
   "item.label.Tibero": {
     "message": "Tibero",

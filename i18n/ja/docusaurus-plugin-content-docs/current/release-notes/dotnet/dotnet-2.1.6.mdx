@@ -34,9 +34,8 @@ pagination_next: release-notes/dotnet/dotnet-2_1_5
             {
                 public static void Trace(string message)
                 {
-                    // コンパイラー最適化によりメソッド呼び出しが取り消されるのを防止
-                    // このメソッド内のコードはWhatapエージェントによって無視されるため、実行されません。
-                    Console.WriteLine(message);
+                    // No need to write any code.
+                    // The code inside this method is ignored by the WhaTap agent and is not executed.
                 }
             }
         }
