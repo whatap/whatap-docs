@@ -4858,6 +4858,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'browser/analyze-pageload',
+            'browser/analyze-ajax-hitmap',
             'browser/tracking-error',
           ],
         },
