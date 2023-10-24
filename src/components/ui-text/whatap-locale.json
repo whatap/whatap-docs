@@ -49045,5 +49045,10 @@
     "en": "Browser Monitoring Dashboard",
     "ja": "ブラウザ監視ダッシュボード",
     "ko": "브라우저 모니터링 대시보드"
+  },
+  "reportStat": {
+    "en": "Stat/Report",
+    "ja": "統計/レポート",
+    "ko": "통계/보고서"
   }
 }

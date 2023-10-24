@@ -68,6 +68,12 @@ function colsToJson(data){
   rd['rumDashboard']['ja'] = 'ブラウザ監視ダッシュボード';
   rd['rumDashboard']['ko'] = '브라우저 모니터링 대시보드';
 
+  rd['reportStat'] = {
+    "en": "Stat/Report",
+    "ja": "統計/レポート",
+    "ko": "통계/보고서"
+  };
+
   return rd;
 }
 
