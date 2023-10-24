@@ -3335,7 +3335,7 @@ const sidebars = {
                 'release-notes/browser/browser-v1_1_3',
                 'release-notes/browser/browser-v1_1_2',
                 'release-notes/browser/browser-v1_1_1',
-                'release-notes/browser/browser-v1_1_0',
+                'release-notes/browser/browser-previous',
               ],
             },
             {
