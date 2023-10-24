@@ -3315,17 +3315,18 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/browser/browser-v1_3_1',
+                id: 'release-notes/browser/browser-v1_3_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/browser/browser-v1_3_1',
-                  // className: 'new',
+                  id: 'release-notes/browser/browser-v1_3_2',
+                  className: 'new',
                 },
+                'release-notes/browser/browser-v1_3_1',
                 'release-notes/browser/browser-v1_3_0',
                 'release-notes/browser/browser-v1_2_2',
                 'release-notes/browser/browser-v1_2_1',
