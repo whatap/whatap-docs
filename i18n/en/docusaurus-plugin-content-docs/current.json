@@ -427,9 +427,9 @@
     "message": "Supported Environment",
     "description": "The label for the doc item 지원 환경 in sidebar mysqlSidebar, linking to the doc mysql/monitoring-support"
   },
-  "sidebar.mssqlSidebar.category.MS SQL Server 모니터링": {
-    "message": "MS SQL Server Monitoring",
-    "description": "The label for category MS SQL Server 모니터링 in sidebar mssqlSidebar"
+  "sidebar.mssqlSidebar.category.SQL Server 모니터링": {
+    "message": "SQL Server Monitoring",
+    "description": "The label for category SQL Server 모니터링 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.category.설치하기": {
     "message": "Installation",
@@ -779,9 +779,9 @@
     "message": "MySQL",
     "description": "The label for link MySQL in sidebar indexSidebar, linking to mysql/monitoring-intro"
   },
-  "sidebar.indexSidebar.link.MS SQL Server": {
-    "message": "MS SQL Server",
-    "description": "The label for link MS SQL Server in sidebar indexSidebar, linking to mssql/monitoring-intro"
+  "sidebar.indexSidebar.link.SQL Server": {
+    "message": "SQL Server",
+    "description": "The label for link SQL Server in sidebar indexSidebar, linking to mssql/monitoring-intro"
   },
   "sidebar.indexSidebar.link.Tibero": {
     "message": "Tibero",
