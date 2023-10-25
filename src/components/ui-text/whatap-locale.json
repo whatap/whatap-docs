@@ -49118,6 +49118,76 @@
     "zh": "The memory usage for ${oname} is ${mem(xos)}.",
     "service_id": "DSC07132"
   },
+  "DSC07133": {
+    "en": "The number of active sessions for ${oname} is ${active_sessions}.",
+    "ja": "${oname}のActive Session数が${active_sessions}です。",
+    "ko": "${oname}의 Active Session수가 ${active_sessions}입니다.",
+    "zh": "The number of active sessions for ${oname} is ${active_sessions}.",
+    "service_id": "DSC07133"
+  },
+  "DSC07134": {
+    "en": "Lock wait for ${oname} is ${lock_wait_sessions}",
+    "ja": "${oname}のLock wait数が${lock_wait_sessions}です。",
+    "ko": "${oname}의 Lock wait수가  ${lock_wait_sessions}입니다",
+    "zh": "Lock wait for ${oname} is ${lock_wait_sessions}",
+    "service_id": "DSC07134"
+  },
+  "DSC07135": {
+    "en": "The number of Long Queries for ${oname} is {long_running_sessions}",
+    "ja": "${oname}のLong Query数が{long_running_sessions}です。",
+    "ko": "${oname}의 Long Query수가 {long_running_sessions}입니다",
+    "zh": "The number of Long Queries for ${oname} is {long_running_sessions}",
+    "service_id": "DSC07135"
+  },
+  "TTL07136": {
+    "en": "Connection utilization",
+    "ja": "Connection 使用率",
+    "ko": "Connection 사용률",
+    "zh": "Connection utilization",
+    "service_id": "TTL07136"
+  },
+  "TTL07137": {
+    "en": "Memory Block Hit Ratio",
+    "ja": "Memory Block Hit率",
+    "ko": "Memory Block Hit율",
+    "zh": "Memory Block Hit Ratio",
+    "service_id": "TTL07137"
+  },
+  "TTL07138": {
+    "en": "Replication latency",
+    "ja": "Replication 遅延時間",
+    "ko": "Replication 지연 시간",
+    "zh": "Replication latency",
+    "service_id": "TTL07138"
+  },
+  "DSC07139": {
+    "en": "The replication delay for ${oname} is ${replication_delay}.",
+    "ja": "${oname} の replication 遅延時間は ${replication_delay} です。'",
+    "ko": "${oname}의 replication 지연시간은  ${replication_delay}입니다.",
+    "zh": "The replication delay for ${oname} is ${replication_delay}.",
+    "service_id": "DSC07139"
+  },
+  "DSC07140": {
+    "en": "The memory block hit rate for ${oname} is ${blks_hit_ratio}.",
+    "ja": "${oname} の Memory Block Hit率は ${blks_hit_ratio} です。",
+    "ko": "${oname}의 Memory Block Hit율은 ${blks_hit_ratio}입니다.",
+    "zh": "The memory block hit rate for ${oname} is ${blks_hit_ratio}.",
+    "service_id": "DSC07140"
+  },
+  "TTL07141": {
+    "en": "Long uncommitted sessions",
+    "ja": "長時間Commitしていないセッション",
+    "ko": "장시간 Commit하지 않은 세션",
+    "zh": "Long uncommitted sessions",
+    "service_id": "TTL07141"
+  },
+  "DSC07142": {
+    "en": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
+    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count} 個あります。",
+    "ko": "${runtime}초 이상 커밋되지 않은 세션이 ${state_count}개 있습니다.",
+    "zh": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
+    "service_id": "DSC07142"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
