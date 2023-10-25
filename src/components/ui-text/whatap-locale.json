@@ -49083,6 +49083,41 @@
     "zh": "Please click on the values ​​in the guide below.",
     "service_id": "DSC07127"
   },
+  "CNT07128": {
+    "en": "Even if you do not have to reproduce the failure situation, you can use your stack to determine the cause of the problem.",
+    "ja": "障害状況を再現しなくても、保持しているスタックを活用して問題の原因を特定します。",
+    "ko": "장애 상황을 재현하지 않아도 보유한 스택을 활용하여 문제의 원인을 파악합니다.",
+    "zh": "Even if you do not have to reproduce the failure situation, you can use your stack to determine the cause of the problem.",
+    "service_id": "CNT07128"
+  },
+  "DSC07129": {
+    "en": "category cannot be entered.",
+    "ja": "categoryは入力できません。",
+    "ko": "category는 입력할 수 없습니다.",
+    "zh": "category cannot be entered.",
+    "service_id": "DSC07129"
+  },
+  "DSC07130": {
+    "en": "Replication status of ${oname} is Broken or Failover.",
+    "ja": "${oname}のReplication状態がBrokenまたはFailoverされました。",
+    "ko": "${oname}의 Replication 상태가 Broken 또는 Failover 되었습니다.",
+    "zh": "Replication status of ${oname} is Broken or Failover.",
+    "service_id": "DSC07130"
+  },
+  "DSC07131": {
+    "en": "The CPU utilization of ${oname} is ${cpu(xos2)}.",
+    "ja": "${oname}のCPU使用率が${cpu(xos2)}となります。",
+    "ko": "${oname}의 CPU 사용률이 ${cpu(xos2)}입니다.",
+    "zh": "The CPU utilization of ${oname} is ${cpu(xos2)}.",
+    "service_id": "DSC07131"
+  },
+  "DSC07132": {
+    "en": "The memory usage for ${oname} is ${mem(xos)}.",
+    "ja": "${oname}のメモリ使用量が${mem(xos)}となります。",
+    "ko": "${oname}의 메모리 사용량이 ${mem(xos)}입니다.",
+    "zh": "The memory usage for ${oname} is ${mem(xos)}.",
+    "service_id": "DSC07132"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -49111,5 +49146,15 @@
     "en": "Container Map",
     "ja": "コンテナマップ",
     "ko": "컨테이너 맵"
+  },
+  "paymentHistory": {
+    "en": "Billing History",
+    "ja": "請求及び支払履歴",
+    "ko": "청구 및 납부 내역"
+  },
+  "billingPreview": {
+    "en": "Invoice Preview History",
+    "ja": "請求書プレビュー",
+    "ko": "청구서 미리보기"
   }
 }

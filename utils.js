@@ -78,7 +78,19 @@ function colsToJson(data){
     "en": "Container Map",
     "ja": "コンテナマップ",
     "ko": "컨테이너 맵"
-  }
+  };
+
+  rd["paymentHistory"] = {
+    "en": "Billing History",
+    "ja": "請求及び支払履歴",
+    "ko": "청구 및 납부 내역"
+  };
+
+  rd["billingPreview"] = {
+    "en": "Invoice Preview History",
+    "ja": "請求書プレビュー",
+    "ko": "청구서 미리보기"
+  };
 
   return rd;
 }
