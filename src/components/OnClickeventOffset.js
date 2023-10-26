@@ -6,7 +6,6 @@ const ScrollToHashComponent = ({anchor}) => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(location.hash);
     if (location.hash.replace('#','') === anchor) {
       const yOffset = 97; // 이동하고 싶은 offset 값 (픽셀)
       const targetElement = targetRef.current;
