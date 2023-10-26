@@ -41,7 +41,7 @@ export default function ChangeImgName({img, desc, className}) {
         }
         return (
             <p>
-                <img src={errTarget} 
+                <img loading="lazy" src={errTarget} 
                     alt={desc} 
                     class={className}
                 />
@@ -50,7 +50,7 @@ export default function ChangeImgName({img, desc, className}) {
     }
     return (
         <p>
-            <img src={imgFilePath} 
+            <img loading="lazy" src={imgFilePath} 
                 alt={desc} 
                 class={className}
             />

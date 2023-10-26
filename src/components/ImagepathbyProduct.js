@@ -71,17 +71,20 @@ const ImageChecker = ({ img, desc, className }) => {
 
       {imageExists ? (
         <img 
+          loading="lazy" 
           src={imgFilePath} 
           alt={desc} 
           className={className} 
         />
       ) : ( prodExists ? (
         <img 
+          loading="lazy" 
           src={prodImage} 
           alt={desc} 
           className={className} 
         />
       ) : ( <img 
+          loading="lazy" 
           src={basicImage} 
           alt={desc} 
           className={className}
