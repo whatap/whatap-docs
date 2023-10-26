@@ -2954,9 +2954,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-1_111_x', 
+          id: 'release-notes/preview/preview-1_113_x', 
           className: 'new',
         },
+        'release-notes/preview/preview-1_111_x',
         'release-notes/preview/preview-1_109_x',
         'release-notes/preview/preview-1_107_x',
         'release-notes/preview/preview-1_105_x',
