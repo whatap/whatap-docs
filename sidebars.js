@@ -3443,6 +3443,11 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              label: '힙 메모리 메트릭스',
+              id: 'best-practice-guides/about-apm-heap-memory'
+            },
+            {
+              type: 'doc',
               label: '데이터베이스',
               id: 'best-practice-guides/set-db-metric-warning-notice'
             }
