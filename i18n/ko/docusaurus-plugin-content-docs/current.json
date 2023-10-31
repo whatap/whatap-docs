@@ -1490,5 +1490,9 @@
   "sidebar.learningSidebar.doc.데이터베이스": {
     "message": "데이터베이스",
     "description": "The label for the doc item 데이터베이스 in sidebar learningSidebar, linking to the doc best-practice-guides/set-db-metric-warning-notice"
+  },
+  "sidebar.learningSidebar.doc.힙 메모리 메트릭스": {
+    "message": "힙 메모리 메트릭스",
+    "description": "The label for the doc item 힙 메모리 메트릭스 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-heap-memory"
   }
 }
