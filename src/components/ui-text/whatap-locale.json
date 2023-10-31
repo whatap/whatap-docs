@@ -16741,7 +16741,7 @@
     "ja": "ポッド",
     "ko": "파드",
     "zh": "Pod",
-    "service_id": "_02460"
+    "service_id": "TTL02460"
   },
   "container_map": {
     "en": "Container map",
@@ -29554,9 +29554,9 @@
     "service_id": "_04297"
   },
   "namespace_alert_template_1_detail": {
-    "en": "The CPU utilization of container ${oname} in ${okindName} is high, ${cpu_per_quota}% >= 80%.",
-    "ja": "${okindName}の${oname}コンテナのCPU使用率が「${cpu_per_quota}% >= 80%」で、高いです。",
-    "ko": "${okindName}의 ${oname} 컨테이너의 CPU 사용률이 ${cpu_per_quota}% >= 80%로 높습니다.",
+    "en": "The CPU utilization of container ${oname} in ${okindName} is high, ${cpu_per_quota}% >= 70%.",
+    "ja": "${okindName}の${oname}コンテナのCPU使用率が「${cpu_per_quota}% >= 70%」で、高いです。",
+    "ko": "${okindName}의 ${oname} 컨테이너의 CPU 사용률이 ${cpu_per_quota}% >= 70%로 높습니다.",
     "zh": "${okindName}의 ${oname} 컨테이너의 CPU 사용률이 ${cpu_per_quota}% >= 80%로 높습니다.",
     "service_id": "_04298"
   },
@@ -32328,7 +32328,7 @@
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
     "ja": "15日間無料体験できます。{br}以降、自動的に有償転換されます。",
-    "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
+    "ko": "15일간 무료 체험이 가능합니다. {br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
   },
@@ -35182,10 +35182,10 @@
     "service_id": "_05105"
   },
   "maintenance_repeat_info": {
-    "en": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">Once</span>: Maintenance plans operate at a specified time.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Daily</span>: Maintenance plans operate at a specified time everyday.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a specified day of the week.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a day of each month.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a specified date every year.</span>",
+    "en": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">Once</span>: Maintenance plans operate at a specified time.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Daily</span>: Maintenance plans operate at a specified time everyday.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a specified day of the week.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Monthly</span>: Maintenance plans operate on a day of each month.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Yearly</span>: Maintenance plans operate on a specified date every year.</span>",
     "ja": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">一回</span>: 指定した特定時点に一回のメンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">日間</span>: 指定した特定時点に毎日メンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">週間</span>: 指定した曜日に毎週メンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">月間</span>: 指定した日に毎月メンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">年間</span>: 指定した日に毎年メンテナンスを実行します。</span>",
-    "ko": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">한번만</span>: 지정 시간에 1회 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">일간(매일)</span>: 매일 지정 시간에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">주간</span>: 매주 지정 요일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">월간</span>: 매월 지정 일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">년간</span>: 매년 지정된 날자에 정비 계획 동작</span>",
-    "zh": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">Once</span>: Maintenance plans operate at a specified time.</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">Daily</span>: Maintenance plans operate at a specified time everyday.</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a specified day of the week.</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a day of each month.</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a specified date every year.</span>",
+    "ko": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">한번만</span>: 지정 시간에 1회 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매일</span>: 매일 지정 시간에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매주</span>: 매주 지정 요일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매월</span>: 매월 지정 일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매년</span>: 매년 지정된 날자에 정비 계획 동작</span>",
+    "zh": "\"<span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Once</span>: Maintenance plans operate at a specified time.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Daily</span>: Maintenance plans operate at a specified time everyday.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Weekly</span>: Maintenance plans operate on a specified day of the week.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Monthly</span>: Maintenance plans operate on a day of each month.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Yearly</span>: Maintenance plans operate on a specified date every year.</span>\"",
     "service_id": "_05106"
   },
   "key_is_added": {
@@ -48230,10 +48230,10 @@
     "service_id": "DSC07002"
   },
   "DSC07003": {
-    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
+    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。 <br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
-    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
+    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
   },
   "BTN07004": {
@@ -49187,6 +49187,286 @@
     "ko": "${runtime}초 이상 커밋되지 않은 세션이 ${state_count}개 있습니다.",
     "zh": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
     "service_id": "DSC07142"
+  },
+  "NTC07144": {
+    "en": "You must enter 1 category.",
+    "ja": "必ず1部門にエントリーすること。",
+    "ko": "카테고리를 1개 입력해야합니다.",
+    "zh": "You must enter 1 category.",
+    "service_id": "NTC07144"
+  },
+  "NTC07145": {
+    "en": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
+    "ja": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
+    "ko": "전체 {x}건 중 <span style=\"color: #296CF2;\">전체</span>를 조회했으며 검색된 결과는 <span style=\"color: #296CF2;\">{y}건</span>입니다.",
+    "zh": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
+    "service_id": "NTC07145"
+  },
+  "TLT07146": {
+    "en": "View related key indicators",
+    "ja": "関連キーインジケータを見る",
+    "ko": "연관 주요 지표 보기",
+    "zh": "View related key indicators",
+    "service_id": "TLT07146"
+  },
+  "TLT07147": {
+    "en": "View associated process metrics",
+    "ja": "関連プロセス指標の表示",
+    "ko": "연관 프로세스 지표 보기",
+    "zh": "View associated process metrics",
+    "service_id": "TLT07147"
+  },
+  "TTL07148": {
+    "en": "Active transaction section",
+    "ja": "アクティブトランザクション区間",
+    "ko": "액티브 트랜잭션 구간",
+    "zh": "Active transaction section",
+    "service_id": "TTL07148"
+  },
+  "DSC07149": {
+    "en": "If the event type is server or process, you can use the event reception tag. <br>\nWhen setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag. <br>\n You can tag project members and 3rd-party plugins in the notification settings menu.",
+    "ja": "イベントタイプがサーバー、プロセスの場合は、イベント受信タグを使用できます。 <br>\nイベント設定時にイベント受信タグを選択して、そのタグを持つプロジェクトメンバーとサードパーティプラグインに通知を送信できます。<br>\nアラート通知設定メニューからプロジェクトメンバーとサードパーティプラグインにそれぞれのタグを指定することができます。",
+    "ko": "이벤트 타입이 서버, 프로세스일 경우 이벤트 수신 태그를 사용할 수 있습니다. <br>\n이벤트 설정 시 이벤트 수신 태그를 선택하여 해당 태그를 가진 프로젝트 멤버와 3rd-party 플러그인에 알림을 전송할 수 있습니다. <br>\n이벤트 수신 설정 메뉴에서 프로젝트 멤버와 3rd-party 플러그인에 각각 태그를 지정할 수 있습니다",
+    "zh": "If the event type is server or process, you can use the event reception tag. <br>\nWhen setting up an event, you can select an event reception tag to send notifications to project members and 3rd-party plugins with that tag. <br>\n You can tag project members and 3rd-party plugins in the notification settings menu.",
+    "service_id": "DSC07149"
+  },
+  "CNT07150": {
+    "en": "All within the project",
+    "ja": "プロジェクト内全体",
+    "ko": "프로젝트내 전체",
+    "zh": "All within the project",
+    "service_id": "CNT07150"
+  },
+  "TTL07151": {
+    "en": "Linked project",
+    "ja": "連携プロジェクト",
+    "ko": "연계 프로젝트",
+    "zh": "Linked project",
+    "service_id": "TTL07151"
+  },
+  "NTC07152": {
+    "en": "You don't have a license.",
+    "ja": "あなたはライセンスを持っていない。",
+    "ko": "라이선스가 없습니다.",
+    "zh": "You don't have a license.",
+    "service_id": "NTC07152"
+  },
+  "NTC07153": {
+    "en": "You have exceeded your usage.",
+    "ja": "使用量を超えています。",
+    "ko": "사용량을 초과 하였습니다.",
+    "zh": "You have exceeded your usage.",
+    "service_id": "NTC07153"
+  },
+  "NTC07154": {
+    "en": "There is an error with your license.",
+    "ja": "ライセンスにエラーがあります。",
+    "ko": "라이선스에 오류가 있습니다.",
+    "zh": "There is an error with your license.",
+    "service_id": "NTC07154"
+  },
+  "NTC07155": {
+    "en": "The IP address is invalid or not specified.",
+    "ja": "IPアドレスが無効であるか、指定されていない。",
+    "ko": "IP 주소가 잘못되었거나 지정되지 않았습니다.",
+    "zh": "The IP address is invalid or not specified.",
+    "service_id": "NTC07155"
+  },
+  "NTC07156": {
+    "en": "This is invalid license.",
+    "ja": "これは無効なライセンスだ。",
+    "ko": "유효하지 않은 라이선스 입니다.",
+    "zh": "This is invalid license.",
+    "service_id": "NTC07156"
+  },
+  "NTC07157": {
+    "en": "Your license term has expired.",
+    "ja": "ライセンスの有効期限が切れています。",
+    "ko": "라이선스 기간이 만료 되었습니다.",
+    "zh": "Your license term has expired.",
+    "service_id": "NTC07157"
+  },
+  "NTC07158": {
+    "en": "The CPU quantity has been exceeded.",
+    "ja": "CPUの数量が超過した。",
+    "ko": "CPU 수량이 초과 되었습니다.",
+    "zh": "The CPU quantity has been exceeded.",
+    "service_id": "NTC07158"
+  },
+  "NTC07159": {
+    "en": "The number of agents has been exceeded.",
+    "ja": "エージェントの数を超えました。",
+    "ko": "에이전트 수량이 초과 되었습니다.",
+    "zh": "The number of agents has been exceeded.",
+    "service_id": "NTC07159"
+  },
+  "NTC07160": {
+    "en": "You're out of licenses.",
+    "ja": "ライセンスが切れている",
+    "ko": "라이선스가 부족합니다.",
+    "zh": "You're out of licenses.",
+    "service_id": "NTC07160"
+  },
+  "NTC07161": {
+    "en": "License is not applied.",
+    "ja": "ライセンスは適用されない。",
+    "ko": "라이선스 적용이 되지않았습니다.",
+    "zh": "License is not applied.",
+    "service_id": "NTC07161"
+  },
+  "ITM07162": {
+    "en": "Average CpuByLimit during initialization",
+    "ja": "初期化中の平均CpuByLimit",
+    "ko": "초기화 중 평균 CpuByLimit",
+    "zh": "Average CpuByLimit during initialization",
+    "service_id": "ITM07162"
+  },
+  "ITM07163": {
+    "en": "Maximum memory during initialization",
+    "ja": "初期化中の最大メモリ",
+    "ko": "초기화 중 최대 메모리",
+    "zh": "Maximum memory during initialization",
+    "service_id": "ITM07163"
+  },
+  "ITM07164": {
+    "en": "Time taken for initialization (seconds)",
+    "ja": "初期化にかかる時間（秒）",
+    "ko": "초기화가 소요된 시간(초)",
+    "zh": "Time taken for initialization (seconds)",
+    "service_id": "ITM07164"
+  },
+  "ITM07165": {
+    "en": "Average CpuByLimit after initialization is complete",
+    "ja": "初期化完了後の平均CpuByLimit",
+    "ko": "초기화 완료 후 평균 CpuByLimit",
+    "zh": "Average CpuByLimit after initialization is complete",
+    "service_id": "ITM07165"
+  },
+  "ITM07166": {
+    "en": "Maximum memory after initialization complete",
+    "ja": "初期化完了後の最大メモリ",
+    "ko": "초기화 완료 후 최대 메모리",
+    "zh": "Maximum memory after initialization complete",
+    "service_id": "ITM07166"
+  },
+  "ITM07167": {
+    "en": "After initialization is complete (milliseconds) (up to 5 minutes)",
+    "ja": "初期化完了後（ミリ秒）（5分まで）",
+    "ko": "초기화 완료 후 (밀리초)(5분까지)",
+    "zh": "After initialization is complete (milliseconds) (up to 5 minutes)",
+    "service_id": "ITM07167"
+  },
+  "ITM07168": {
+    "en": "Number of restarts (5 minutes)",
+    "ja": "再起動数（5分間）",
+    "ko": "재시작 수(5분간)",
+    "zh": "Number of restarts (5 minutes)",
+    "service_id": "ITM07168"
+  },
+  "ITM07169": {
+    "en": "CPU Request at initialization start",
+    "ja": "初期化開始時のCPU要求",
+    "ko": "초기화 시작시 CPU Request",
+    "zh": "CPU Request at initialization start",
+    "service_id": "ITM07169"
+  },
+  "ITM07170": {
+    "en": "CPU Limit at initialization start",
+    "ja": "初期化開始時のCPU Limit",
+    "ko": "초기화 시작시 CPU Limit",
+    "zh": "CPU Limit at initialization start",
+    "service_id": "ITM07170"
+  },
+  "ITM07171": {
+    "en": "CPU Throttle at initialization start",
+    "ja": "初期化開始時のCPU Throttle",
+    "ko": "초기화 시작시 CPU Throttle",
+    "zh": "CPU Throttle at initialization start",
+    "service_id": "ITM07171"
+  },
+  "ITM07172": {
+    "en": "Memory Request at initialization start",
+    "ja": "初期化開始時のメモリー要求",
+    "ko": "초기화 시작시 Memory Request",
+    "zh": "Memory Request at initialization start",
+    "service_id": "ITM07172"
+  },
+  "ITM07173": {
+    "en": "Memory Limit when initialization starts",
+    "ja": "初期化開始時のメモリ制限",
+    "ko": "초기화 시작 시 Memory Limit",
+    "zh": "Memory Limit when initialization starts",
+    "service_id": "ITM07173"
+  },
+  "ITM07174": {
+    "en": "Memory Throttle at initialization start",
+    "ja": "初期化開始時のメモリ Throttle",
+    "ko": "초기화 시작 시 Memory Throttle",
+    "zh": "Memory Throttle at initialization start",
+    "service_id": "ITM07174"
+  },
+  "ITM07175": {
+    "en": "Initialization start time",
+    "ja": "初期化開始時間",
+    "ko": "초기화 시작 시간",
+    "zh": "Initialization start time",
+    "service_id": "ITM07175"
+  },
+  "ITM07176": {
+    "en": "Initialization completion time",
+    "ja": "初期化完了時間",
+    "ko": "초기화 완료 시간",
+    "zh": "Initialization completion time",
+    "service_id": "ITM07176"
+  },
+  "ITM07177": {
+    "en": "After initialization is complete",
+    "ja": "初期化完了後",
+    "ko": "초기화 완료 이후",
+    "zh": "After initialization is complete",
+    "service_id": "ITM07177"
+  },
+  "ITM07178": {
+    "en": "Initializing",
+    "ja": "初期化中",
+    "ko": "초기화 중",
+    "zh": "Initializing",
+    "service_id": "ITM07178"
+  },
+  "ITM07179": {
+    "en": "Initialization begins",
+    "ja": "初期化開始",
+    "ko": "초기화 시작",
+    "zh": "Initialization begins",
+    "service_id": "ITM07179"
+  },
+  "ITM07180": {
+    "en": "{time} minute{suffix}",
+    "ja": "{time}分",
+    "ko": "{time}분",
+    "zh": "{time}分",
+    "service_id": "ITM07180"
+  },
+  "DSC07181": {
+    "en": "List of corresponding SQL executions in {time}.",
+    "ja": "{time}の対応するSQL実行リストです。",
+    "ko": "{time}의 해당 SQL 실행 리스트입니다.",
+    "zh": "List of corresponding SQL executions in {time}.",
+    "service_id": "DSC07181"
+  },
+  "DSC07182": {
+    "en": "Click to go to the instance monitoring screen for that time.",
+    "ja": "クリックすると、その時間のインスタンス監視画面に移動します。",
+    "ko": "클릭하면 해당시간의 인스턴스 모니터링 화면으로 이동합니다.",
+    "zh": "Click to go to the instance monitoring screen for that time.",
+    "service_id": "DSC07182"
+  },
+  "DSC07183": {
+    "en": "There are no associated containers. Please check your project access key.",
+    "ja": "リンクされたコンテナはありません。 プロジェクトアクセスキーを確認してください。",
+    "ko": "연결된 컨테이너가 없습니다. 프로젝트 액세스 키를 확인하세요.",
+    "zh": "There are no associated containers. Please check your project access key.",
+    "service_id": "DSC07183"
   },
   "": {
     "": "",
