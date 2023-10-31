@@ -5,8 +5,6 @@ displayed_sidebar: indexSidebar
 description: WhaTapモニタリングサービス機能をすばやく使用できるように簡単な案内を提供します。
 ---
 
-import TR from '@site/src/components/TR';
-
 WhaTapモニタリングサービスの概括的な案内ページです。 WhaTapモニタリングサービスに初めて利用する新規ユーザーに有用です。
 
 :::note
@@ -21,39 +19,35 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 ### ![](/img/number-01.png)WhaTap会員登録{#account}
 
-{@include: account/_create-account.mdx}  
+{@include: account/_create-account.mdx}
 
 * * *
 
 ### ![](/img/number-02.png)プロジェクト作成{#cproject}
 
-{@include: getting-started/_create-project-intro-v2.mdx}
+{@include: getting-started/_create-project-intro-v2.mdx}  
 
 * * *
 
 ### ![](/img/number-03.png)プロジェクトアクセスキー確認{#accesskey}
 
-{@include: getting-started/_accesskey-intro.mdx}
+{@include: getting-started/_accesskey-intro.mdx} 
 
 * * *
 
 ### ![](/img/number-04.png)エージェントインストール{#install}
 
-<!-- 공통 안내로 적용되지 않는 경우가 많아서 상품군 링크 제공? -->
-
-**プロジェクトアクセスキー**を発行された場合は、インストール手順セクションでWhaTapエージェントのインストールを続けることができます。 
-
-**_管理_** > **_エージェントインストール_**メニューからインストール手順セクションにアクセスすることもできます。
+**プロジェクトアクセスキー**を発行された場合は、インストール手順セクションでWhaTapエージェントのインストールを続けることができます。 <cmdname sid="management" className="uitext" /> > <cmdname sid="agent_installation" className="uitext" />メニューからインストール手順セクションにアクセスすることもできます。
 
 1.  サポート環境を確認してください。 
 
-2.  **_管理_** > **_エージェントインストール_**メニューの**_WhaTapエージェントダウンロード_**タブを選択してください。 案内に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
+2.  <cmdname sid="management" className="uitext" /> > <cmdname sid="agent_installation" className="uitext" />メニューの<cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />タブを選択してください。 案内に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
 
     :::note 
 
     **エージェントのダウンロード**
 
-    -   環境に応じて**_Download_**ボタンを選択するか、コマンドを使用してサーバーから直接ダウンロードします。
+    -   環境に応じて<cmdname sid="download" className="uitext" />ボタンを選択するか、コマンドを使用してサーバーから直接ダウンロードします。
     -   環境に応じて、リポジトリを登録し、パッケージをインストールします。
 
     :::
@@ -141,21 +135,21 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 ### ![](/img/number-05.png)ダッシュボード照会{#dashboard}
 
-エージェントインストール後、データがWhaTapサーバーに送信されると、**_ダッシュボード_**メニューでプロジェクトの全体現況をリアルタイムで照会することができます。 WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズダッシュボードを提供します。
+エージェントインストール後、データがWhaTapサーバーに送信されると、<cmdname sid="dashboard" className="uitext" />メニューでプロジェクトの全体現況をリアルタイムで照会することができます。 WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズダッシュボードを提供します。
 
--   アプリケーションは、**_アプリケーションダッシュボード_**と**_トランザクションマップ_**、**_アクティブトランザクション_**、**_アプリケーショントポロジー_**そして**_Flexボード_**の各ウィジェットで収集された性能指標を確認できます。
+-   アプリケーションは、<cmdname sid="app_dashboard" className="uitext" />と<cmdname sid="transaction_map" className="uitext" />、<cmdname sid="active_transaction" className="uitext" />、<cmdname sid="application_topology" className="uitext" />そして<cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
 
--   サーバは、**_リソースボード_**と**_コンパウンドアイ_**そして**_Flexボード_**の各ウィジェットで収集された性能指標を確認できます。
+-   サーバは、<cmdname sid="sms_resource_board" className="uitext" />と<cmdname sid="sms_compound_eye" className="uitext" />そして<cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
 
--   データベースは、**_インスタンス一覧_**と**_インスタンスモニタリング_**、**_マルチインスタンスモニタリング_**、**_スロークエリ_**そして**_Flexボード_**の各ウィジェットで収集された性能指標を確認できます。
+-   データベースは、<cmdname sid="instance_list" className="uitext" />と<cmdname sid="instance_monitoring" className="uitext" />、<cmdname sid="multi_instance_monitoring" className="uitext" />、<cmdname sid="slow_query" className="uitext" />そして<cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/db-realtimeMonitoring.mp4}
 
--   Kubernetesは、**_コンテナマップ_**の各ウィジェットを使用して、ノード、コンテナ、アプリケーション、ログ、イベント情報を動的に確認できます。
+-   Kubernetesは、<cmdname sid="containerMap" className="uitext" />の各ウィジェットを使用して、ノード、コンテナ、アプリケーション、ログ、イベント情報を動的に確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/k8s-targetgroup.mp4}
 
@@ -169,8 +163,6 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 ### ![](/img/number-06.png)外部データ収集{#collect}
 
-<!-- 텔레그라프, 포커스 -->
-
 TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張できます。 詳細については、次の文書[Telegraf](telegraf/introduction.mdx)、[Focus](focus/introduction.mdx)を参考にしてください。
 
 -   WhaTapプラグインをインストールしてTelegrafで収集したデータをWhaTap収集サーバーに転送することができます。
@@ -180,7 +172,7 @@ TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張�
 
 ### ![](/img/ic-number-07.svg)通知設定{#notification}
 
-WhaTapモニタリングサービスは、収集されるすべての指標に対してしきい値ベースの通知設定が可能です。 **_警告通知_**メニューでイベントと受信設定及び過去の記録を確認することができます。 個人別に通知受信の設定が可能なだけでなく、メール、SMS、メッセンジャーなど多様な通知受信チャンネルを提供します。 
+WhaTapモニタリングサービスは、収集されるすべての指標に対してしきい値ベースの通知設定が可能です。 <cmdname sid="event_statistic" className="uitext" />メニューでイベントと受信設定及び過去の記録を確認することができます。 個人別に通知受信の設定が可能なだけでなく、メール、SMS、メッセンジャーなど多様な通知受信チャンネルを提供します。 
 
 {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_04_evnetAlert.mp4}
 
@@ -220,7 +212,7 @@ WhaTapモニタリングサービスは、収集されるすべての指標に�
 
 ### ![](/img/ic-number-08.svg)レポート照会{#report}
 
-レポートは、サービス利用状況とトラブルの発生記録を報告する文書で、モニタリングデータ分析はサービスの改善方向を決める指標になります。 WhaTapは、**_レポート_**メニューでレポートを作成し、業務自動化をサポートします。 個々のプロジェクト単位のレポートとマルチプロジェクト単位の統合レポートを提供します。
+レポートは、サービス利用状況とトラブルの発生記録を報告する文書で、モニタリングデータ分析はサービスの改善方向を決める指標になります。 WhaTapは、<cmdname sid="report" className="uitext" />メニューでレポートを作成し、業務自動化をサポートします。 個々のプロジェクト単位のレポートとマルチプロジェクト単位の統合レポートを提供します。
 
 {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_05_report.mp4}
 
@@ -234,7 +226,7 @@ WhaTapモニタリングサービスは、収集されるすべての指標に�
 
 ### ![](/img/ic-number-09.svg)メンバー管理{#member}
 
-ユーザーは、**_管理_** > **_プロジェクトメンバー_**メニューでプロジェクトメンバーを追加することができます。 プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
+ユーザーは、<cmdname sid="management" className="uitext" /> > <cmdname sid="project_member" className="uitext" />メニューでプロジェクトメンバーを追加することができます。 プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
 
 :::note
 

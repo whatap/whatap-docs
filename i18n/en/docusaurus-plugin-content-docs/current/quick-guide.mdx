@@ -5,8 +5,6 @@ displayed_sidebar: indexSidebar
 description: The following provides a brief guide to quickly use the functions of WhaTap Monitoring.
 ---
 
-import TR from '@site/src/components/TR';
-
 This page is the WhaTap Monitoring overview. This is useful for the users who are new to WhaTap Monitoring.
 
 :::note
@@ -21,39 +19,35 @@ For more information about installation and utilization of WhaTap Monitoring age
 
 ### ![](/img/number-01.png) WhaTap sign up{#account}
 
-{@include: account/_create-account.mdx}  
+{@include: account/_create-account.mdx}
 
 * * *
 
 ### ![](/img/number-02.png) Project creation{#cproject}
 
-{@include: getting-started/_create-project-intro-v2.mdx}
+{@include: getting-started/_create-project-intro-v2.mdx}  
 
 * * *
 
 ### ![](/img/number-03.png) Checking the project access key{#accesskey}
 
-{@include: getting-started/_accesskey-intro.mdx}
+{@include: getting-started/_accesskey-intro.mdx} 
 
 * * *
 
 ### ![](/img/number-04.png) Agent installation{#install}
 
-<!-- 공통 안내로 적용되지 않는 경우가 많아서 상품군 링크 제공? -->
-
-Once you have been granted a **project access key**, you can install any WhaTap agent according to the Install Guide section. 
-
-Through **_Management_** > **_Agent Installation_**, you can access the installation guide section.
+Once you have been granted a **project access key**, you can install any WhaTap agent according to the Install Guide section. In <cmdname sid="management" className="uitext" /> > <cmdname sid="agent_installation" className="uitext" />, you can also access the Install Guide section.
 
 1.  Check the support environment. 
 
-2.  In **_Management_** > **_Agent Installation_**, select the **_Download WhaTap agent_** tab. Follow the instructions to download the agent or install the package.
+2.  In <cmdname sid="management" className="uitext" /> > <cmdname sid="agent_installation" className="uitext" />, select the <cmdname sid="JAVA-agent-setup-1-subject" className="uitext" /> tab. Follow the instructions to download the agent or install the package.
 
     :::note 
 
     **Download agent**
 
-    -   Depending on the environment, select **_Download_** or use the command to download from the server.
+    -   Depending on the environment, select the <cmdname sid="download" className="uitext" /> or use the command to download from the server.
     -   Depending on the environment, register the repository and install the package.
 
     :::
@@ -141,21 +135,21 @@ If you encounter any problem during installation, see the product-specific **ins
 
 ### ![](/img/number-05.png) Viewing the dashboard{#dashboard}
 
-When data is transferred to the WhaTap server after agent installation, you can view the overall project status in real time through **_Dashboard_**. WhaTap Monitoring can show all collected data on the integrated dashboard, which can be freely personalized by user.
+When data is transferred to the WhaTap server after agent installation, you can view the overall project status in real time through <cmdname sid="dashboard" className="uitext" />. WhaTap Monitoring can show all collected data on the integrated dashboard, which can be freely personalized by user.
 
--   The displayed performance metrics of applications are collected from the widgets of **_Application Dashboard_**, **_Transaction Map_**, **_Active Transaction_**, **_Application Topology_**, and **_Flex Board_**.
+-   The displayed performance metrics of applications are collected from the widgets of <cmdname sid="app_dashboard" className="uitext" />, <cmdname sid="transaction_map" className="uitext" />, <cmdname sid="active_transaction" className="uitext" />, <cmdname sid="application_topology" className="uitext" />, and <cmdname sid="flexboard" className="uitext" />.
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
 
--   The server performance metrics collected from each widget of **_Resource Board_**, **_Compound Eye_**, and **_Flex Board_** can be viewed.
+-   The server performance metrics collected from each widget of <cmdname sid="sms_resource_board" className="uitext" />, <cmdname sid="sms_compound_eye" className="uitext" />, and <cmdname sid="flexboard" className="uitext" /> can be viewed.
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
 
--   The database performance metrics collected from each widget of **_Instance List_**, **_Instance Monitoring_**, **_Multiple Instance Monitoring_**, **_Slow Query_**, and **_Flex Board_** can be viewed.
+-   The database performance metrics collected from each widget of <cmdname sid="instance_list" className="uitext" />, <cmdname sid="instance_monitoring" className="uitext" />, <cmdname sid="multi_instance_monitoring" className="uitext" />, <cmdname sid="slow_query" className="uitext" />, and <cmdname sid="flexboard" className="uitext" /> can be viewed.
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/db-realtimeMonitoring.mp4}
 
--   For Kubernetes, the nodes, containers, applications, logs, and events are dynamically displayed through the widgets of **_Container Map_**.
+-   For Kubernetes, the nodes, containers, applications, logs, and events are dynamically displayed through the widgets of <cmdname sid="containerMap" className="uitext" />.
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/k8s-targetgroup.mp4}
 
@@ -169,8 +163,6 @@ For more information about the creation and configuration of Flex Dashboard, the
 
 ### ![](/img/number-06.png) External data collection{#collect}
 
-<!-- 텔레그라프, 포커스 -->
-
 You can expand the WhaTap service collection data by using Telegraf and Focus. For more information, see the [Telegraf](telegraf/introduction.mdx) and [Focus](focus/introduction.mdx).
 
 -   You can install a WhaTap plugin to forward the data collected by Telegraf to the WhaTap collection server.
@@ -180,7 +172,7 @@ You can expand the WhaTap service collection data by using Telegraf and Focus. F
 
 ### ![](/img/ic-number-07.svg) Alert Settings{#notification}
 
-WhaTap Monitoring allows you to set threshold-based alerts for all metrics collected. In **_Alert_**, you can check events, notification settings, and previous records. The alert reception can be set for each individual and it provides various alert reception channels such as Email, SMS, Messenger, etc. 
+WhaTap Monitoring allows you to set threshold-based alerts for all metrics collected. In <cmdname sid="event_statistic" className="uitext" />, you can check events, notification settings, and previous records. The alert reception can be set for each individual and it provides various alert reception channels such as Email, SMS, Messenger, etc. 
 
 {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_04_evnetAlert.mp4}
 
@@ -220,7 +212,7 @@ For more information about alert settings, see the following for each product.
 
 ### ![](/img/ic-number-08.svg) Viewing reports{#report}
 
-Reports are the documents that report the service usage and failure records. For example, the monitoring data analysis becomes a metric to determine the direction of service improvement. WhaTap supports task automation by allowing you to create reports through the **_Report_** menu. It provides unit reports for each project and the integrated reports for multiple projects.
+Reports are the documents that report the service usage and failure records. For example, the monitoring data analysis becomes a metric to determine the direction of service improvement. WhaTap supports task automation by allowing you to create reports through the <cmdname sid="report" className="uitext" /> menu. It provides unit reports for each project and the integrated reports for multiple projects.
 
 {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/prd/server/server_05_report.mp4}
 
@@ -234,7 +226,7 @@ For more information about reporting, see [the following](java/report-intro). Fo
 
 ### ![](/img/ic-number-09.svg) Member Management{#member}
 
-You can add project members in **_Management_** > **_Project Member_**. You can set the permissions for each project and member group, and delete members.  
+You can add project members in <cmdname sid="management" className="uitext" /> > <cmdname sid="project_member" className="uitext" />. You can set the permissions for each project and member group, and delete members.  
 
 :::note
 

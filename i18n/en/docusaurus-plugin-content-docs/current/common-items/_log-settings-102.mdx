@@ -28,13 +28,29 @@ You can configure the log monitoring related settings in **_Log Setting_**. Usin
 
 </InDoc>
 
-<InDoc product='log,postgresql,mysql'>
+<InDoc product='log'>
 
 <ImgLang img='log-getting-started.png' desc='Start Log Monitoring'/>
 
 </InDoc>
 
+<InDoc product='postgresql,mysql'>
+
+<ImgLang img='log-getting-started-db.png' desc='Start Log Monitoring'/>
+
+</InDoc>
+
+<Xclude product='postgresql,mysql'>
+
 At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) **_View guide_** icon and the **_View plans_** button, the corresponding guide screen appears. 
+
+</Xclude>
+
+<InDoc product='postgresql,mysql'>
+
+At the top, select the **_Start Log Monitoring_** tab. If you select the ![WhaTap Docs icon](/img/ic-guide.svg) **_View guide_** icon, the corresponding guide screen appears. 
+
+</InDoc>
 
 ### Set up the agent and enable log monitoring{#log-set-up}
 
@@ -83,7 +99,17 @@ Check the agent version and settings to start the log monitoring. For more infor
 
 Select **_Activate log monitoring_** to set whether or not to enable the log monitoring.
 
+<Xclude product="postgresql,mysql">
+
 <ImgLang img='log-start.png' desc='Starting the log monitoring'/>
+
+</Xclude>
+
+<InDoc product='postgresql,mysql'>
+
+<ImgLang img='log-start-db.png' desc='Start Log Monitoring'/>
+
+</InDoc>
 
 -   If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date. 
 -   If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 

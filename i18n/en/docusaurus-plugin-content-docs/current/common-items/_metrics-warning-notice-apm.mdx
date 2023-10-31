@@ -1,0 +1,50 @@
+## Template{#template}
+
+### Metrics Event
+
+In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add Alert Policy_**. Select a desired item in **_Templates_**.
+
+-   **_WARNING_OLD_GENARATION_GC_**
+
+    An alert is sent when GC occurs in the Old Generation area of the heap memory.
+
+-   **_TOO_SLOW_SQL_**
+
+    An alert is sent when a query has been issued too slow (more than 5 seconds).
+
+-   **_TOO_MANY_ACTX_**
+
+    An alert is sent when the number of active transactions in the area exceeding 8 seconds is too high.
+
+-   **_APDEX_**
+
+    An alert is sent when the **APDEX** figure is less than 0.7.
+
+### Composite metrics event
+
+-   **_Inactive agents has been found._**
+
+    Condition: `num_of_current_agents` \< 6
+
+    An alert is sent when an event occurs each time the number of normal agents among all agents in the project drops below 6.
+
+-   **_Very slow active transactions are detected._**
+
+    Condition: `very_slow_tx_cnt_m5_avg` > 10
+
+    An alert is sent when the sum of transactions that take more than 8 seconds in an agent belonging to a specific `okind` of the project exceeds 10.
+
+-   **_TPS has changed by more than 30% compared to the previous week._**
+
+    Condition: `one_week_diff_abs` > `current_tps` \* 0.3
+
+    An alert is sent when the sum of TPS of the agents that belong to a specific `okind` of the project changes by more than 30% compared to 7 days ago.
+
+When you have to make a comprehensive decision on the data received from multiple agents, configure the following composite metrics templates.
+
+-   **_Inactive agents has been found._**
+-   **_Very slow active transactions are detected._**
+
+When you have to determine an event by comparing the past data with the current data, configure the following composite metrics templates.
+
+-   **_TPS has changed by more than 30% compared to the previous week._**

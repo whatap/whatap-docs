@@ -1,14 +1,16 @@
 ## Alert Repetition Setting{#escalation}
 
-If the symptom is not resolved since the alert occurrence time, you can set the notification repetition interval from the initial alert occurrence time. For example, to repeat an alert after 0 minutes (immediately), 1 hour, and 1 day from the alert occurrence time, enter `0,1H,1D` in the **_Repeat Alert (Escalation)_** column.
+If the symptom is not resolved since the alert occurrence time, you can set the notification repetition interval from the initial alert occurrence time. For example, to repeat an alert after 0 minutes (immediately), 1 hour, and 1 day from the alert occurrence time, enter `0,1H,1D` in the <cmdname sid="TTL06149" className="uitext" /> column.
 
 <ImgLang img='server-notice-escalation.png' desc='Escalation' />
 
 :::note
 
+-   This function targets all events for the <span class='vslow'>Critical</span> or <cmdname sid="fatal" className="vslow" /> class. See the <cmdname sid="level" className="uitext" /> item set for adding an event.
+
 -   If you omit the unit such as **M**: Minute, **H**: Hour, **D**: Day, you can set the time in minutes.
 
--   If **_Save_** is not selected, configuration cannot be finished.
+-   If <cmdname sid="save" className="uitext" /> is not selected, configuration cannot be finished.
 
 -   Enter the value in the following format: number or number + unit (**M**, **H**, **D**). If the input is wrong, the corresponding message appears.
 

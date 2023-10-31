@@ -1,7 +1,7 @@
 ---
 id: install-agent-with-buildpack
 title: ビルドパックを使用したJavaエージェントのインストール
-description: ビルドパックを使用してJavaエージェントをインストールする方法を案内します。
+description: ビルドパックを使用してJavaエージェントをインストールする方法を説明します。
 tags:
   - Java
   - エージェント
@@ -9,7 +9,7 @@ tags:
   - アプリケーション
 ---
 
-Gradleを使用するJavaアプリケーションで実行可能なドッカーイメージをビルドする場合、ビルドパックを利用してエージェントをインストールできます。 
+Gradleを使用するJavaアプリケーションで実行可能なドッカーイメージをビルドする場合は、ビルドパックを使用してエージェントをインストールできます。 
 
 ## WhaTap buildpack基本設定
 
@@ -22,7 +22,7 @@ tasks.named("bootBuildImage") {
 
 ## オプション設定
 
-WhaTap収集サーバーに接続されていないとデータを収集できません。 アクセスキー(`accesskey`)、WhaTap収集サーバーアドレス(`whatap.server.host`)情報は必須です。 その他、環境や機能の必要に応じてオプションを追加設定できます。
+WhaTap収集サーバーに接続されていないとデータは収集されません。 アクセスキー(`accesskey`)、WhaTap収集サーバーアドレス(`whatap.server.host`)情報は必須です。 その他、環境や機能の必要に応じてオプションを追加設定できます。
 
 ```java title='build.gradle'
 tasks.named("bootBuildImage") {
@@ -39,11 +39,11 @@ tasks.named("bootBuildImage") {
 
 -   `BP_WHATAP_ENABLED`
 
-    WhaTapエージェントの活性化有無を設定します。 値が`false`の場合、インストールは進められますが、モニタリングが中止された状態で開始します。 後で、[WhaTapモニタリングサービス](https://service.whatap.io)の**_管理_** > **_エージェント設定_**メニューを通じて`true`に変更できます。
+    WhaTapエージェントの有効の有無を設定します。 値が`false`の場合、インストールは続行されますが、モニタリングが停止した状態で開始されます。 後で、[WhaTapモニタリングサービス](https://service.whatap.io)の**_管理_** > **_エージェント設定_**メニューから`true`に変更できます。
 
 -   `BPE_APPEND_JAVA_TOOL_OPTIONS`
 
-    Java17バージョン以降を使用する場合は、必ずjvmオプションを追加してください。
+    Java17バージョン以降を使用する場合は、必要に応じてjvmオプションを追加してください。
 
     ```java
     environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
@@ -75,7 +75,7 @@ environment["BP_WHATAP_OPTIONS"] = "accesskey={アクセスキー}\nwhatap.serve
 
 ## Container実行オプション
 
-コンテナ（Container）の実行時、環境変数としてアクセスキーとWhaTap収集サーバーアドレスを次のように設定できます。
+コンテナ(Container) の実行時、環境変数としてアクセスキーとWhaTap収集サーバーアドレスを次のように設定できます。
 
 ```docker
 docker run --rm -p 8080:8080 \

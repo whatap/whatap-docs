@@ -124,6 +124,15 @@
 
     It registers the business exceptions. The registered business exceptions are excluded from error statistics. It appears in the transaction trace details.
 
+-   **biz_exceptions_status** <span class='type'>string</span>
+
+    Set the business exceptiona and status to restrict event notifications when any exception occurs. For **Business Exception:Status** set by this option, the event level is changed to **INFO**. Business exceptions and status are separated by colon (:). If multiple statuses are used for a business exception, they are separated by ampersand (&). You can set multiple values using comma (,) as the delimiter.
+
+    ```ini title='whatap.conf'
+    # example
+    biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
+    ```
+
 -   **ignore_exceptions** <span class='type'>String</span>
 
     It registers any exceptions to ignore. The errors of the registered exceptions are ignored.

@@ -699,10 +699,6 @@
     "message": "Kubernetes",
     "description": "The label for category Kubernetes in sidebar releaseSidebar"
   },
-  "sidebar.releaseSidebar.category.DB": {
-    "message": "DB",
-    "description": "The label for category DB in sidebar releaseSidebar"
-  },
   "sidebar.releaseSidebar.category.XOS": {
     "message": "XOS",
     "description": "The label for category XOS in sidebar releaseSidebar"
@@ -1482,5 +1478,17 @@
   "sidebar.dotNetSidebar.doc.부가 기능": {
     "message": "付加機能",
     "description": "The label for the doc item 부가 기능 in sidebar dotNetSidebar, linking to the doc dotnet/additional-function"
+  },
+  "sidebar.releaseSidebar.category.Java Batch": {
+    "message": "Java Batch",
+    "description": "The label for category Java Batch in sidebar releaseSidebar"
+  },
+  "sidebar.learningSidebar.category.메트릭스 경고 알림 설정": {
+    "message": "メトリクスアラート通知設定",
+    "description": "The label for category 메트릭스 경고 알림 설정 in sidebar learningSidebar"
+  },
+  "sidebar.learningSidebar.doc.데이터베이스": {
+    "message": "データベース",
+    "description": "The label for the doc item 데이터베이스 in sidebar learningSidebar, linking to the doc best-practice-guides/set-db-metric-warning-notice"
   }
 }

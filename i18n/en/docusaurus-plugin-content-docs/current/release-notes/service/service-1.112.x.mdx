@@ -1,0 +1,157 @@
+---
+id: service-1_112_x
+title: Service 1.112.0
+toc_max_heading_level: 3
+pagination_next: release-notes/service/service-1_110_x
+---
+
+October 25, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### User Interface
+
+-   <Status>Feature</Status> On the <cmdname sid="platform_catalog" className="uitext" /> page, the design has been reorganized for a better user experience.
+
+-   <Status>Feature</Status> Added the sidebar width adjustment function.
+
+-   <Status>Fixed</Status> In case the user language is Japanese, modified the product title to English on the introduction of the sidebar.
+
+#### Flex Board
+
+<p><Status>Fixed</Status> Deleted the Edit buttons that cannot be used in the text editor for rich text widgets.</p>
+
+#### Alert
+
+<p><Status>Fixed</Status> In <cmdname sid="event_setting" className="uitext" /> > <cmdname sid="metrics" className="uitext" /> tab, fixed the problem where the content does not appear when repeatedly importing the same json file.</p>
+
+#### User Behavior
+
+<p><Status>Changed</Status> In the table of <cmdname sid="sitemap" className="uitext" /> > <cmdname sid="user_behavior" className="uitext" />, deleted the <cmdname sid="request_uri" className="uitext" /> and <cmdname sid="active_stat_method" className="uitext" /> columns.</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Changed</Status> Unified and standardized the names of metrics used repeatedly.
+
+    -   URL, Transaction, Transaction name → Transaction
+    -   Domain, 도메인 → Domain
+    -   DBC Time, DB CONN. time, DB connect time → DB CONN. time
+    -   URL hash → Transaction Hash
+    -   CPU time, CPU usage time → CPU usage time
+    -   Memory allocation, Memory allocation usage → Memory Allocation
+    -   HTTPC, HTTP call, HTTPC count → HTTP call count
+    -   Performed standardization by establishing writing rules for multiple overlapping terms.
+
+-   <Status>Changed</Status> In <cmdname sid="stat_report_upper" className="uitext" /> > <cmdname sid="statistics" className="uitext" />, modified to maintain the search time set for tab switching.
+
+* * *
+
+### `Server`
+
+#### Server List
+
+-   <Status>Fixed</Status> In <cmdname sid="TTL06548" className="uitext" />, fixed the issue where the background color of the agent list does not match the actual status when searching for agents.
+
+-   <Status>Fixed</Status> In <cmdname sid="server" className="uitext" /> <cmdname sid="detail" className="uitext" />, fixed the issue where when changing the server list while the real-time interval gauge is full, the previous metric value of the server appears.
+
+* * *
+
+### `Database`
+
+#### Common
+
+-   <Status>Feature</Status> In <cmdname sid="dashboard" className="uitext" /> > <cmdname sid="instance_monitoring" className="uitext" />, added the button to switch to the <cmdname sid="TTL06468" className="uitext" /> menu of the corresponding time in non-real-time mode.
+
+-   <Status>Changed</Status> In <cmdname sid="dashboard" className="uitext" /> > <cmdname sid="instance_list" className="uitext" />, modified the table to be filled according to the browser size.
+
+-   <Status>Changed</Status> In <cmdname sid="reportStat" className="uitext" /> > <cmdname sid="TTL06468" className="uitext" />, improved the UI design for user convenience.
+
+    -   Added the progress bar.
+
+    -   Added the panel in the table area.
+
+    -   Added ChartIndex in the table sub chart.
+
+-   <Status>Changed</Status> In <cmdname sid="analysis" className="uitext" /> > <cmdname sid="db_parameter" className="uitext" />, modified to add a scroll feature inside the table.
+
+#### DB V2
+
+-   <Status>Changed</Status> In <cmdname sid="log" className="uitext" /> > <cmdname sid="log_setting" className="uitext" />, added the explanation of how to configure logs for the installed DB and AWS RDS respectively.
+
+-   <Status>Changed</Status> In <cmdname sid="instance_monitoring" className="uitext" />, modified to enter the string auto-completed with changed metrics by leaving the widget title blank when changing, adding, or deleting the metrics of the selected widget.
+
+-   <Status>Fixed</Status> In <cmdname sid="multi_instance_monitoring" className="uitext" />, fixed the issue where any active session is missing.
+
+-   <Status>Fixed</Status> In <cmdname sid="multi_instance_monitoring" className="uitext" />, modified the search range in the <UI>SQL Elapse Map</UI> widget chart.
+
+#### PostgreSQL
+
+<p><Status>Fixed</Status> In <cmdname sid="analysis" className="uitext" /> > <cmdname sid="TTL06993" className="uitext" />, modified to search the session history by the time in <cmdname sid="TTL06993" className="uitext" /> when switching to the <cmdname sid="TTL06721" className="uitext" /> menu through the detailed information window of the active session.</p>
+
+#### SQL Server
+
+<p><Status>Changed</Status> Modified the <b>MS SQL Server</b> product name to <b>SQL Server</b>.</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> In <cmdname sid="dashboard" className="uitext" /> > <cmdname sid="containerMap" className="uitext" />, added the function for users to select application-related fields for the block color display metric.
+
+    :::info
+
+    Added the list of fields for the `app_counter` metric category to the list of fields for the `container` and `kube_pod` metric categories.
+
+    :::
+
+-   <Status>Fixed</Status> In <b>Summary</b> or <b>Display Detail</b> of <cmdname sid="dashboard" className="uitext" /> > <cmdname sid="containerMap" className="uitext" />, modified the guide messages according to the viewability of the <cmdname sid="logs" className="uitext" /> / <cmdname sid="event" className="uitext" /> tab.
+
+-   <Status>Fixed</Status> In <cmdname sid="management" className="uitext" /> > <cmdname sid="namespace_management" className="uitext" />, a message that indicates unavailability appears if more than 10 namespace projects are created during the trial period.
+
+-   <Status>Changed</Status> In the following menus, the <cmdname sid="TTL06209" className="uitext" /> feature has been replaced with an enhanced version. For the changes, see <Link to='../../reference/changes-analysis-trace' target='_blank'>the following</Link>.
+
+    -   <cmdname sid="app_upper" className="uitext" /> > <cmdname sid="multi_hitmap" className="uitext" />
+
+    -   <cmdname sid="dashboard" className="uitext" /> > <cmdname sid="containerMap" className="uitext" />
+
+* * *
+
+### `Cloud`
+
+<p><Status>Feature</Status> Added a menu: <cmdname sid="sitemap" className="uitext" /> > <cmdname sid="user_behavior" className="uitext" /></p>
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> In case of adding the parser in <cmdname sid="log" className="uitext" /> > <cmdname sid="log_setting" className="uitext" /> > <cmdname sid="log_parser_setting_primary" className="uitext" /> tab, added validation for reserved words when entering the search value for <cmdname sid="ITM06439" className="uitext" />.
+
+-   <Status>Changed</Status> In <cmdname sid="log_setting" className="uitext" /> > <cmdname sid="log_parser_setting_primary" className="uitext" /> tab, repositioned the descriptions for reserved words that cannot be indexed.
+
+-   <Status>Fixed</Status> If <cmdname sid="search" className="uitext" /> or <cmdname sid="exclusion_search" className="uitext" /> is selected in the dropdown menu that appears when a tag is clicked in the log list in <cmdname sid="log" className="uitext" /> > <cmdname sid="log_search" className="uitext" />, fixed the issue where any duplicate value is included in the <cmdname sid="filter" className="uitext" /> field.
+
+-   <Status>Fixed</Status> Fixed the issue where the <cmdname sid="case_sensitive" className="uitext" /> option is not applied when modifying the value upon entry of log filter.
+
+-   <Status>Fixed</Status> In <cmdname sid="log_setting" className="uitext" />, modified to link the log configuration guide depending on the user language.
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status> Added the <cmdname sid="sitemap" className="uitext" /> > <cmdname sid="user_behavior" className="uitext" /> menu.
+
+-   <Status>Feature</Status> Added the <cmdname sid="analysis" className="uitext" /> > <cmdname sid="ajaxAnalytics" className="uitext" /> menu.
+
+    :::note
+
+    For more information about <cmdname sid="ajaxAnalytics" className="uitext" />, see <Link to="../../browser/analyze-ajax-hitmap">the following</Link>.
+
+    :::
+
+-   <Status>Fixed</Status> In case the user language is Japanese, modified the Japanese widget title in <cmdname sid="dashboard" className="uitext" /> > <cmdname sid="rumDashboard" className="uitext" />.
+
+</div>

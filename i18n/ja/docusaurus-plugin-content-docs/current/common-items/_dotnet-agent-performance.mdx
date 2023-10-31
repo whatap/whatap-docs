@@ -21,7 +21,7 @@
 
     デフォルト値`0.75`
 
-    トランザクションを保存するバッファのサイズを徐々に増加させるための基準です。 101個から75％以上保存すると、バッファのサイズを2倍にします。
+    トランザクションを保存するバッファのサイズを徐々に増加させるための基準です。 101個から75％以上保存すると、バッファのサイズが2倍になります。
                             
 
 -   **queue_log_enabled** <span class='type'>Boolean</span>
@@ -34,13 +34,13 @@
 
     デフォルト値 `true`
 
-    TCPデータ送信処理に使用するChannelに代わって別途のQueueを利用します。 データ優先度付きキューを使用します。
+    TCPデータ送信処理に使用するChannelの代わりに別のQueueを使用します。 データ優先順位キューを使用します。
 
 -   **queue_tcp_sender_thread_count** <span class='type'>Int</span>
 
     デフォルト値`2`
 
-    TCPデータ送信を処理するスレッドの個数を設定します。 スレッド数を増やすと、データ送信をより迅速に処理できます。 
+    TCPデータ送信を処理するスレッドの数を設定します。 スレッド数を増やすと、データ送信をより迅速に処理できます。 
 
 -   **net_send_buffer_size** <span class='type'>Int</span>
 
@@ -64,18 +64,18 @@
 
     デフォルト値`3`
 
-UDPデータ受信を処理するスレッドの数を設定します。 スレッド数を増やすと、UDPバッファからより迅速にデータを読むことができます。 
+    UDPデータ受信を処理するスレッドの数を設定します。 スレッド数を増やすと、UDPバッファからより早くデータを読むことができます。 
 
 -   **queue_udp_overflowed_size** <span class='type'>Int</span>
     デフォルト値`4096`
 
-UDPデータ受信にQueueを使用する場合は、overflowed Queueバッファサイズを設定します。
+    UDPデータ受信にQueueを使用する場合は、overflowed Queueバッファサイズを設定します。
 
 -   **queue_udp_process_thread_count** <span class='type'>Int</span>
 
     デフォルト値`1`
 
-    UDPデータを処理するスレッドの数を設定します。 スレッド数を増やすと、UDPで読んだデータをより迅速に処理できます。
+    UDPデータを処理するスレッドの数を設定します。 スレッド数を増やすと、UDPから読み取ったデータより迅速に処理できます。
 
 -   **queue_profile_enabled** <span class='type'>Boolean</span>
 

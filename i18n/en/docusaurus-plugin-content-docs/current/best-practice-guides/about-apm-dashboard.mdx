@@ -28,7 +28,7 @@ A single web service consists of numerous applications and platforms, so the per
 
 ## Checking the application connection status
 
-On **_Application Dashboard_**, you can check the status of the application server connected to the WhaTap monitoring service. If the connected agent is inactive or disconnected from the application server, the agent becomes grayed out. This makes it easy to see the status of agents.
+On **_Application Dashboard_**, you can check the status of the application server connected to the WhaTap monitoring service. If the connected agent is inactive or disconnected from the application server, check **_inactive_** items. This makes it easy to see the status of agents.
 
 <ImgLang img='apm-dashboard-select-agent.png' />
 
@@ -74,17 +74,23 @@ The **_Hitmap_** widget allows you to check individual completed transactions on
 
 <ImgLang img='hitmap.png' />
 
-You can zoom in or out of the chart by clicking ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) on the upper right of the widget. Drag the chart area with the mouse to go to the **_Hitmap Transaction_** page. 
+You can zoom in or out of the chart by clicking ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) on the upper right of the widget. Drag the chart area with the mouse to go to the **_Trace analysis_** window.
 
 <ImgLang img='best-p/analysis-tx-main.png' />
 
-On the **_Hitmap Transaction_** page, the transaction information of the dragged chart area is listed in the **_TX Trace_** table. If you click each item, the **_Statistics_** information window appears for the transaction. Through the **_Statistics_** window, you can see which processes have slowed down for each step.
+The **_Trace analysis_** window displays transactions in the chart area dragged by the user as a list. When you click each item, the transaction details appear on the right. Through the **_Table view_** tab on the right of the screen, you can see in which process the transaction has been slowed down step by step.
 
 <ImgLang img='best-p/analysis-tx-table-view.png' />
 
 A number of methods are executed until a user request comes to the server, performs logic on the server, and displays the result. Which method should be traced to see where it has slowed down? WhaTap stores multiple user requests as snapshots at default intervals of 10 seconds. Include the stack data stored in snapshots in transactions. At this time, the stack data is defined as **_Active Stack_**.
 
 <ImgLang img='best-p/analysis-tx-table-view-mode.png' />
+
+:::note
+
+For more information about **_Trace analysis_**, see [the following](../java/dashboard-hitmap-trace).
+
+:::
 
 **_Analysis_** > **_Stack_** is the function that allows you to collect stacks and list them based on the accumulated amount. You can statistically detect the delayed method sections for the internal logic that is not related to resources. 
 

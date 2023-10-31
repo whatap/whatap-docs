@@ -1,4 +1,4 @@
-## 使用設定の案内
+## 使用設定の手順
 
 **_スロークエリ_**メニューを使用するには、次のようにパラメータと権限を設定する必要があります。
 
@@ -14,7 +14,7 @@ slow_query_log=ON
 
 ```ini title='my.cnf'
 slow_query_log = 1
-long_query_time = 3 # 例）3秒以上SQL記録S
+long_query_time = 3 # 例）3秒以上のSQLレコード
 log_output=FILE # または TABLE
 ```
 
@@ -22,11 +22,11 @@ log_output=FILE # または TABLE
 
 -   DBサーバーに`log_output=FILE`オプションを設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
--   AWS RDS を使用し、`log_output=FILE`オプションを設定したユーザーは、xosをインストールする代わりにCloudWatchを使用するための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
+-   AWS RDS を使用して、`log_output=FILE`オプションを設定したユーザーは、xosをインストールする代わりにCloudWatchを使用するための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
 
--   他のクラウドを使用するユーザーの場合は、**_スロークエリ_**メニューを利用するには、`log_output=TABLE`オプションを設定してください。 ただし、スロークエリが頻繫に発生する環境であれば、mysql.slow_log照会時にDBの性能が低下する可能性があるため、注意が必要です。
+-   他のクラウドを使用しているユーザーの場合、**_スロークエリ_**メニューを使用するには、`log_output=TABLE`オプションを設定してください。 ただし、スロークエリが頻繫に発生する環境、mysql.slow_log検索時にDBの性能が低下する可能性があるため注意が必要です。
 
--   `log_output=TABLE`オプションを設定した場合は、モニタリングアカウントに照会権限を付与する必要があります。 次のコマンドを実行してください。
+-   `log_output=TABLE`オプションを設定する場合は、モニタリングアカウントに参照権限を付与する必要があります。 次のコマンドを実行してください。
 
     ```bash
     grant select on mysql.slow_log to whatap;
@@ -47,7 +47,7 @@ slow_query_log=ON
 ### DBパラメータの設定
 
 ```ini title='postgresql.conf'
-log_min_duration_statement=500#例: 500ms以上に所要されるSQL記録
+log_min_duration_statement=500#例: 500ms以上かかるSQL履歴
 ```
 
 </InDoc>
@@ -64,7 +64,7 @@ slow_query_interval=30#デフォルト値30秒
 
 :::note
 
--   RDS postgreSQLのslow queryはサポートしません。
+-   RDS postgreSQLのslow queryはサポートされていません。
 
 -   モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
 

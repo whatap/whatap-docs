@@ -1,0 +1,157 @@
+---
+id: service-1_112_x
+title: Service 1.112.0
+toc_max_heading_level: 3
+pagination_next: release-notes/service/service-1_110_x
+---
+
+2023年10月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### User Interface
+
+-   <Status>Feature</Status> <cmdname sid="platform_catalog" className="uitext" />ページでより良いユーザーエクスペリエンスのためのデザインの再編成
+
+-   <Status>Feature</Status>サイドバー幅の調整機能の追加
+
+-   <Status>Fixed</Status>ユーザー言語が日本語の場合、サイドバーのサービス紹介ページでサービスタイトルを英語に修正
+
+#### Flexボード
+
+<p><Status>Fixed</Status>リッチテキストウィジェットのテキストエディタから使用できない編集機能ボタンを削除</p>
+
+#### アラート通知
+
+<p><Status>Fixed</Status><cmdname sid="event_setting" className="uitext" />><cmdname sid="metrics" className="uitext" />タブメニューで同じjsonファイルを繰り返しimportする場合、内容が表示されない問題の修正</p>
+
+#### ユーザー行為
+
+<p><Status>Changed</Status><cmdname sid="sitemap" className="uitext" />><cmdname sid="user_behavior" className="uitext" />メニューのテーブルで<cmdname sid="request_uri" className="uitext" />、<cmdname sid="active_stat_method" className="uitext" />カラムの削除</p>
+
+* * *
+
+### `Application`
+
+-   <Status>Changed</Status>重複利用される指標の名称に対する統一化、標準化作業
+
+    -   URL, TX, TX名 → TX
+    -   Domain, ドメイン → ドメイン
+    -   DBC Time, DBコネクション時間, DB接続時間 → DBコネクション時間
+    -   URLハッシュ → 時間ハッシュ
+    -   CPU時間, CPU使用時間 → CPU使用時間
+    -   メモリ割当, メモリ割り当て使用量 → メモリ割当量
+    -   HTTPC, HTTPコール, HTTPコール件数 → HTTPコール件数
+    -   その他、重複する多数の用語及び用語に対する作成規則を策定し、標準化を進行
+
+-   <Status>Changed</Status><cmdname sid="stat_report_upper" className="uitext" />><cmdname sid="statistics" className="uitext" />メニューからタブ移動時にユーザーが設定した検索時間を維持するように修正
+
+* * *
+
+### `Server`
+
+#### サーバー一覧
+
+-   <Status>Fixed</Status><cmdname sid="TTL06548" className="uitext" />メニューからエージェント検索時、エージェント一覧の背景色と実際の状態が一致しない問題の修正
+
+-   <Status>Fixed</Status><cmdname sid="server" className="uitext" /><cmdname sid="detail" className="uitext" />メニューからリアルタイムインターバルゲージが満タンになった状態でサーバー一覧を変更する場合、変更前にサーバーの指標値が表示される問題を修正
+
+* * *
+
+### `Database`
+
+#### 共通
+
+-   <Status>Feature</Status><cmdname sid="dashboard" className="uitext" />><cmdname sid="instance_monitoring" className="uitext" />メニューから非リアルタイムモードになると、その時間の<cmdname sid="TTL06468" className="uitext" />メニューに移動できるボタンの追加
+
+-   <Status>Changed</Status><cmdname sid="dashboard" className="uitext" />><cmdname sid="instance_list" className="uitext" />メニューからテーブルがブラウザのサイズに合わせて表示されるように変更
+
+-   <Status>Changed</Status><cmdname sid="reportStat" className="uitext" />><cmdname sid="TTL06468" className="uitext" />メニューのユーザビリティのためのUI改善
+
+    -   プログレスバーの追加
+
+    -   テーブル領域にパネルを追加
+
+    -   テーブルサブチャートにChartIndexを追加
+
+-   <Status>Changed</Status><cmdname sid="analysis" className="uitext" />><cmdname sid="db_parameter" className="uitext" />メニューのテーブルスクロールがテーブル内部で作成されるように変更
+
+#### DB V2
+
+-   <Status>Changed</Status><cmdname sid="log" className="uitext" />><cmdname sid="log_setting" className="uitext" />メニューからインストール型DB、AWS RDSごとのログ設定方法の説明を追加
+
+-   <Status>Changed</Status><cmdname sid="instance_monitoring" className="uitext" />メニューから選択したウィジェットのメトリクスを変更、追加、削除する場合、ウィジェットのタイトルを空にして変更されたメトリクスで自動完成された文字列がplaceholderとして入力されるように変更
+
+-   <Status>Fixed</Status><cmdname sid="multi_instance_monitoring" className="uitext" />メニューからアクティブセッションが漏れていた問題を修正
+
+-   <Status>Fixed</Status><cmdname sid="multi_instance_monitoring" className="uitext" />メニューから<UI>SQL Elapse Map</UI>ウィジェットチャートの照会範囲の修正
+
+#### PostgreSQL
+
+<p><Status>Fixed</Status><cmdname sid="analysis" className="uitext" />><cmdname sid="TTL06993" className="uitext" />メニューからアクティブセッションの詳細ウィンドウを通じて<cmdname sid="TTL06721" className="uitext" />メニューに移動する場合、<cmdname sid="TTL06993" className="uitext" />メニューの時間でセッション履歴を照会するように修正</p>
+
+#### SQL Server
+
+<p><Status>Changed</Status><b>MS SQL Server</b>サービスの名前を<b>SQL Server</b>に変更</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> <cmdname sid="dashboard" className="uitext" />><cmdname sid="containerMap" className="uitext" />メニューからブロックカラー表示指標にアプリケーション関連フィールドも選択できるように追加
+
+    :::info
+
+    `container`、`kube_pod`指標カテゴリのフィールド一覧に`app_counter`指標カテゴリのフィールド一覧の追加
+
+    :::
+
+-   <Status>Fixed</Status><cmdname sid="dashboard" className="uitext" />><cmdname sid="containerMap" className="uitext" />メニューの<b>要約</b>または<b>詳細を見る</b>から<cmdname sid="logs" className="uitext" />/<cmdname sid="event" className="uitext" />タブの照会可能可否による案内メッセージの修正
+
+-   <Status>Fixed</Status><cmdname sid="management" className="uitext" />><cmdname sid="namespace_management" className="uitext" />メニューからトライアル期間中にネームスペースプロジェクトを10個以上作成すると不可能だというメッセージを表示
+
+-   <Status>Changed</Status>次のメニューから<cmdname sid="TTL06209" className="uitext" />機能を改善したバージョンに交換、変更点は<Link to='../../reference/changes-analysis-trace' target='_blank'>次の文書</Link>を参照してください。
+
+    -   <cmdname sid="app_upper" className="uitext" />><cmdname sid="multi_hitmap" className="uitext" />
+
+    -   <cmdname sid="dashboard" className="uitext" />><cmdname sid="containerMap" className="uitext" />
+
+* * *
+
+### `Cloud`
+
+<p><Status>Feature</Status><cmdname sid="sitemap" className="uitext" />><cmdname sid="user_behavior" className="uitext" />メニューの追加</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status><cmdname sid="log" className="uitext" />><cmdname sid="log_setting" className="uitext" />><cmdname sid="log_parser_setting_primary" className="uitext" />タブからパーサーを追加する場合、<cmdname sid="ITM06439" className="uitext" />の検索値入力時に、予約語に対する有効性検証を追加
+
+-   <Status>Changed</Status><cmdname sid="log_setting" className="uitext" />><cmdname sid="log_parser_setting_primary" className="uitext" />タブメニューでインデックス作成が不可能な予約語の説明位置の変更
+
+-   <Status>Fixed</Status><cmdname sid="log" className="uitext" />><cmdname sid="log_search" className="uitext" />メニューのログ一覧でタグをクリックすると現れるドロップダウンメニューの<cmdname sid="search" className="uitext" />または<cmdname sid="exclusion_search" className="uitext" />を選択すると重複値が<cmdname sid="filter" className="uitext" />入力欄に含まれる現像を修正
+
+-   <Status>Fixed</Status>ログフィルター入力で値を修正するとき<cmdname sid="case_sensitive" className="uitext" />オプションが反映されない現象の修正
+
+-   <Status>Fixed</Status><cmdname sid="log_setting" className="uitext" />メニューからユーザーが選択した言語に応じてログ設定ガイドを連動させるように修正
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status> <cmdname sid="sitemap" className="uitext" /> > <cmdname sid="user_behavior" className="uitext" /> メニューの追加
+
+-   <Status>Feature</Status> <cmdname sid="analysis" className="uitext" /> > <cmdname sid="ajaxAnalytics" className="uitext" /> メニューの追加
+
+    :::note
+
+    <cmdname sid="ajaxAnalytics" className="uitext" />メニューの詳細は、<Link to="../../browser/analyze-ajax-hitmap">次の文書</Link>を参照してください。
+
+    :::
+
+-   <Status>Fixed</Status>ユーザー言語が日本語の場合<cmdname sid="dashboard" className="uitext" />><cmdname sid="rumDashboard" className="uitext" />メニューから日本語ウィジェットのタイトルを修正
+
+</div>

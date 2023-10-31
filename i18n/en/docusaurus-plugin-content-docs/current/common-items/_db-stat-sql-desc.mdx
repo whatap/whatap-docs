@@ -1,16 +1,24 @@
 Home > Select Project > **_STAT/REPORT_** > **_SQL Statistics_**
 
-When using the database server, you need to check the amount of usage and free space for the DB that uses a lot of server capacity. If you do not regularly back up your data and free up space, the service may be interrupted. Periodically check and manage the database usage through the following function.
+Statistics are created based on the SQL execution count, execution time, and waiting time within the active sessions collected by the agent, and a list of top SQLs for the search period is provided. It provides a basis for analyzing frequently performed SQL performance through the average and maximum execution time.
 
--   With the time series charts for each SQL, you can see the occurrence time and performance. 
+For quick performance analysis, you can search top SQLs for each frequently analyzed category (DB, application, user, host). The main search criteria are as follows:
 
--   You can query the sum of statistics of multiple instances.
+-   **_execute count_**: Execution count of the SQL
 
--   You can search by the classified data for each usage category.
+-   **_elapse sum (sec)_**: Total execution time (secs) of the SQL
 
-:::note
+-   **_elapse avg (sec)_**: Average execution time (sec) of the SQL. It is the result of **elapse sum**/**execute count**.
 
-This statistics page is provided based on the session data collected every 5 seconds and the SQL texts. There may be errors depending on the collection method.
+-   **_elapse max (sec)_**: Maximum execution time (sec) of the SQL
+
+-   **_elapse wait (sec)_**: Total waiting time (sec) of the SQL
+
+-   **_instance_**: Instance name
+
+:::info
+
+The SQL statistics function creates statistics based on the SQL that excludes literal values.
 
 :::
 
