@@ -24,7 +24,7 @@ files: [
  {
   "source" : "/docs/**/*",
   "translation" : "/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%",
-  "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*", "/docs/weaving/**/*", "/docs/aws-log/_learn-aws-log-main-menu.mdx"],
+  "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*", "/docs/weaving/**/*", "/docs/aws-log/_learn-aws-log-main-menu.mdx", "/docs/release-notes/java/java-2.0.mdx", "/docs/getting-started/_implementation.mdx"],
   "escape_special_characters": 0,
  },
 ]

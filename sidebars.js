@@ -100,6 +100,7 @@ const sidebars = {
             'java/agent-transaction-error-stack',
             'java/agent-additional-option',
             'java/async-tracking',
+            'java/agent-weaving',
           ]
         },
         {
@@ -3091,7 +3092,6 @@ const sidebars = {
                 'release-notes/php/php-2_5_0',
                 'release-notes/php/php-2_4_1',
                 'release-notes/php/php-2_4_0',
-                'release-notes/php/php-2_3_3',
                 'release-notes/php/php-previous',
               ],
             },
