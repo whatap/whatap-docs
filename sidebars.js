@@ -82,15 +82,7 @@ const sidebars = {
             'java/agent-transaction',
             'java/agent-dbsql',
             'java/agent-httpcapicall',
-            {
-              type: 'category',
-              label: '에이전트 플러그인',
-              // description: 'Java 에이전트에서 제공하는 플러그인을 활용해 다양한 일을 할 수 있습니다.',
-              items: [
-                'java/script-plugin',
-                'java/weaving-plugin',
-              ]
-            },
+            'java/script-plugin',
             'java/agent-number-of-user',
             'java/agent-load-amount',
             'java/agent-notification',
