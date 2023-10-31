@@ -41,6 +41,6 @@ npx docusaurus-prince-pdf -u http://localhost:4000/openapi --prince-args="--java
 
 # npx docusaurus-prince-pdf -u http://localhost:4000/best-practice-guides/about-apm-hitmap-class --prince-args="--javascript --page-size='a4' --page-margin='10mm'" -o ./static/pdf/whatap-best-practice-guides-about-apm-hitmap-class.pdf --dest ./static/pdf --include-index --selector 'none'
 
-# npx docusaurus-prince-pdf -u http://localhost:4000/release-notes/k8s/k8s-1_3_6 --prince-args="--javascript --page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/k8s-agent-v1.3.6.pdf --dest ./static/pdf/release-notes --include-index --selector 'none'
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/k8s/k8s-1_4_0 --prince-args="--javascript --page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/k8s-agent-v1.4.0.pdf --dest ./static/pdf/release-notes --include-index --selector 'none'
 
-# npx docusaurus-prince-pdf -u http://localhost:4000/release-notes/service/service-1_108_x --prince-args="--javascript --page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/service-1.108.x.pdf --dest ./static/pdf/release-notes --include-index --selector 'none'
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/release-notes/service/service-1_110_x --prince-args="--javascript --page-size='a4' --page-margin='10mm'" -o ./static/pdf/release-notes/service-1.110.x.pdf --dest ./static/pdf/release-notes --include-index --selector 'none'

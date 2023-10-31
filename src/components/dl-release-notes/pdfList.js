@@ -1,5 +1,11 @@
 const svList = [
     {
+        "name": 'Service-1.110.x',
+        "date": '2023-10-25',
+        "url": '/pdf/release-notes/service-1.110.x.pdf',
+        "docs": '/release-notes/service/service-1_110_x'
+    },
+    {
         "name": 'Service-1.108.x',
         "date": '2023-09-21',
         "url": '/pdf/release-notes/service-1.108.x.pdf',
@@ -172,6 +178,12 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.20',
+        "date": '2023-10-19',
+        "url": '/pdf/release-notes/java-agent-v2.2.20.pdf',
+        "docs": '/release-notes/java/java-2_2_20',
+    },
+    {
         "name": 'Java-agent-v2.2.19',
         "date": '2023-10-10',
         "url": '/pdf/release-notes/java-agent-v2.2.19.pdf',
@@ -311,6 +323,21 @@ const javaList = [
     },
 ];
 
+const javaBatchList = [
+    {
+        "name": "java-batch-agent-v2.2.20",
+        "date": "2023-10-19",
+        "url": "/pdf/release-notes/java-batch-agent-v2.2.20.pdf",
+        "docs": "/release-notes/java-batch/java-batch-2_2_20",
+    },
+    {
+        "name": "java-batch-agent-v2.2.19",
+        "date": "2023-10-10",
+        "url": "/pdf/release-notes/java-batch-agent-v2.2.19.pdf",
+        "docs": "/release-notes/java-batch/java-batch-2_2_19",
+    }
+]
+
 const phpList = [
     {
         "name": 'php-agent-v2.6.2',
@@ -390,6 +417,12 @@ const nodejsList = [
 ]
 
 const pyList = [
+    {
+        "name": 'Python-agent-v1.4.8',
+        "date": '2023-10-25',
+        "url": '/pdf/release-notes/python-agent-v1.4.8.pdf',
+        "docs": '/release-notes/python/python-1_4_8',
+    },
     {
         "name": 'Python-agent-v1.4.6',
         "date": '2023-10-12',
@@ -495,6 +528,18 @@ const pyList = [
 ];
 
 const dotnetList = [
+    {
+        "name": 'dotNet-agent-v2.1.8',
+        "date": '2023-10-24',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.8.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_8',
+    },
+    {
+        "name": 'dotNet-agent-v2.1.7',
+        "date": '2023-10-16',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.7.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_7',
+    },
     {
         "name": 'dotNet-agent-v2.1.6',
         "date": '2023-10-05',
@@ -676,6 +721,12 @@ const goList = [
 
 const serverList = [
     {
+        "name": "Server-agent-v2.4.3",
+        "date": "2023-10-31",
+        "url": "/pdf/release-notes/Server-agent-v2.4.3.pdf",
+        "docs": "/release-notes/server/server-2_4_3"
+    },
+    {
         "name": "Server-agent-v2.4.2",
         "date": "2023-10-06",
         "url": "/pdf/release-notes/Server-agent-v2.4.2.pdf",
@@ -828,6 +879,18 @@ const serverList = [
 ];
 
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.4.0",
+        "date": "2023-10-31",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.0.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_0"
+    },
+    {
+        "name": "Kubernetes-agent-v1.3.9",
+        "date": "2023-10-25",
+        "url": "/pdf/release-notes/k8s-agent-v1.3.9.pdf",
+        "docs": "/release-notes/k8s/k8s-1_3_9"
+    },
     {
         "name": "Kubernetes-agent-v1.3.8",
         "date": "2023-10-04",
@@ -1144,6 +1207,12 @@ const xosList = [
 
 const browserList = [
     {
+        "name": "Browser-agent-v1.3.2",
+        "date": "2022-10-24",
+        "url": "/pdf/release-notes/browser-agent-v1.3.2.pdf",
+        "docs": "release-notes/browser/browser-v1_3_2"
+    },
+    {
         "name": "Browser-agent-v1.3.1",
         "date": "2022-09-25",
         "url": "/pdf/release-notes/browser-agent-v1.3.1.pdf",
@@ -1232,4 +1301,4 @@ const etcList = [
     },
 ];
 
-export {svList, javaList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList, dbxList, xosList, browserList, etcList}
+export {svList, javaList, javaBatchList, phpList, nodejsList, pyList, dotnetList, goList, serverList, k8sList, dbxList, xosList, browserList, etcList}
