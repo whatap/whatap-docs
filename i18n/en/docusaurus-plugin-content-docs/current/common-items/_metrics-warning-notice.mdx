@@ -33,7 +33,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 <ImgLang img='set-events-metrics.png' desc='Metrics Event' />
 
-### Entry of basic information
+### Entry of basic information{#basic-info}
 
 -   **_Event name_**: Enter the name of the event to add.
 
@@ -51,14 +51,16 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 -   **_Level_**
 
-    -   It displays the alert level when an event occurs. The levels are <span class='vslow'>Critical</span>, <span class='slow'>Warning</span>, and <span style={{color:'#757575'}}>Info</span>. When setting the <span class='vslow'>Critical</span> and <span class='slow'>Warning</span> levels, the **_ANotify when event status is resolved._** selection option is enabled.
+    -   It displays the alert level when an event occurs. The levels are <span class='vslow'>Critical</span>, <span class='slow'>Warning</span>, and <span style={{color:'#757575'}}>Info</span>. When setting the <span class='vslow'>Critical</span> and <span class='slow'>Warning</span> levels, the <cmdname sid="resolved_event_notification" className="uitext" /> selection option is enabled.
 
-    -   **_Notify when event status is resolved._**: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
+    -   <cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
 
 -   **_Message_**
 
-    -   Enter an alert message to be displayed when an event occurs. You can apply variables to the message by entering `${tag or field key}`. The key to enter into the variable must be a value contained in the selected metric data, **_Category_**.
+    -   Enter a notification message to be displayed when events occur. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter in the variable must be included in **_Category_** of the selected metrics data. You can see the tags or field keys that can be entered in **_Sitemap_** > **_Metrics search_**.
+
     -   If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
+
     -   **_Test alert_** triggers alerts based on the **_event name_**, **_category_**, **_level_**, and **_message_** to check messages.
 
 -   **_Event Rule_**
@@ -83,7 +85,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 :::
 
-### **_Notification Setting_**
+### **_Notification setting_**{#set-receive-event}
 
 <ImgLang img='set-event-receive.png' desc='Notification Setting' />
 
@@ -91,13 +93,13 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
     :::note
 
-    -   If the selected time is set to **_Not used_**, an alert is sent only when the events occur consecutively as many as the input.
-    -   If the option, **_Notify when event status is resolved_** is activated, it is recommended to select **_Not used_** as the selected time.
-    -   In the **_Category_** option, the collection cycle for the selected item is 5 seconds.
+    -   If the selected time is set to <cmdname sid="metrics_option_disabled" className="uitext" />, an alert is sent only when the events occur consecutively as many as the input.
+    -   If the option, <cmdname sid="resolved_event_notification" className="uitext" /> is activated, it is recommended to select <cmdname sid="metrics_option_disabled" className="uitext" /> as the selected time.
+    -   In the <cmdname sid="category" className="uitext" /> option, the collection cycle for the selected item is 5 seconds.
 
     :::
 
--   **_Event pause_**: This option can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in **_Event History_**.
+-   <cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />: This option can prevent excessive alert notifications from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in <cmdname sid="event_history" className="uitext" />.
 
 -   **_Related category_**: You can set the related categories up to 5 and see them when checking notifications.
 
@@ -202,7 +204,7 @@ Enter basic data for alert settings.
 
 -   **_Title_**: Enter the title of the alert.
 
--   **_Message_**: Enter an alert message to be displayed when an event occurs. You can apply variables to the message by entering `${tag or field key}`. The key to enter into the variable must be a value contained in the selected composite metrics data **_category_**.
+-   **_Message_**: Enter the notification message displayed upon occurrence of events. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter into the variable must be a value contained in the selected composite metrics data **_category_**. You can see the tags or field keys that can be entered in **_Sitemap_** > **_Metrics search_**.
 
 ### **_Event rule condition_**
 
@@ -399,111 +401,3 @@ isEmpty(Key)
 ```java
 isNotEmpty(Key)
 ```
-
-## Template{#template}
-
-<Xclude product='browser,npm'>
-
-The alert templates are provided as follows.
-
--   In case comprehensive event judgment is required for the data received from multiple agents
-
-    -   **_Inactive agents has been found._**
-    -   **_Very slow active transactions are detected._**
-
--   In case it is required to judge events by comparing the past data with the current data 
-
-    **_TPS has changed by more than 30% compared to the previous week._**
-
--   **_Inactive agents has been found._**
-
-    -   An alert is sent when an event occurs each time the number of normal agents among all agents in the project drops below 6.
-    -   Condition: `num_of_current_agents` \< 6
-
--   **_Very slow active transactions are detected._**
-
-    -   An alert is sent when the sum of transactions that take more than 8 seconds in an agent belonging to a specific `okind` of the project exceeds 10.
-    -   Condition: `very_slow_tx_cnt_m5_avg` > 10
-
--   **_TPS has changed by more than 30% compared to the previous week._**
-
-    -   An alert is sent when the sum of TPS of the agents that belong to a specific `okind` of the project changes by more than 30% compared to 7 days ago.
-    -   Condition: `one_week_diff_abs` > `current_tps` \* 0.3
-
-</Xclude>
-
-<InDoc product='browser'>
-
-In **Browser** Monitoring, the alert templates are provided as follows. 
-
-#### Metrics Event Templates
-
-In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add alert policy_**. Select a desired item in **_Templates_**.
-
--   **_Page Load Time or more_**
-
-    If the page loading time of the page group (`${page_group}`) is 10 seconds or more, the corresponding alert is sent.
-
--   **_Browser error count or more_**
-
-    If 10 or more browser errors occur, the corresponding alert is sent.
-
--   **_AJAX response time or more_**
-
-    If the AJAX response time of the AJAX path (`${request_path}`) is 30 seconds or more, the corresponding alert is sent.
-
-#### Composite Metrics Event Templates
-
-In **_Alert_** > **_Event Setting_** > **_Composite Metrics_**, select **_+ Add alert policy_**. Select a desired item in **_Templates_**.
-
--   **_Page Load Time or more per minute_**
-
-    If the page loading time per minute of the page group (`${page_group}`) is 10 seconds or more, the corresponding alert is sent.
-
--   **_Page Load Count or more per minute_**
-
-    If the page loading count per minute of the page group (`${page_group}`) is 100 or more, the corresponding alert is sent.
-
--   **_Router Change Time or more per minute_**
-
-    If the average router change time per minute of the page group (`${page_group}`) is 10 seconds or more, the corresponding alert is sent.
-
--   **_AJAX Response Time or more per minute_**
-
-    If the average AJAX response time per minute of the AJAX path (`${request_path}`) is 30 seconds or more, the corresponding alert is sent.
-
--   **_AJAX Request Count or more per minute_**
-
-    If the AJAX request count per minute of the host (`${request_host}`) is 1000 or more, the corresponding alert is sent.
-
--   **_AJAX Failure Count or more per minute_**
-
-    If the AJAX failure count per minute of the AJAX path (`${request_path}`) is 100 or more, the corresponding alert is sent.
-
--   **_Browser Error Count or more per minute_**
-
-    If the browser error count per minute of the page group (`${page_group}`) is 10 or more, the corresponding alert is sent.
-
-</InDoc>
-
-<InDoc product='npm'>
-
-The alert templates are provided as follows. 
-
-#### Metrics Event Templates
-
-In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add alert policy_**. Select a desired item in **_Templates_**.
-
--   **_Network Jitter Alert_**
-
-    It sends this alert when the average **jitter** exceeds 30 ms.
-
--   **_Network Latency Warning_**
-
-    If the average **latency** exceeds 200 ms, this alert is sent.
-
--   **_Data transfer warning_**
-
-    If the communication **bps** exceeds 128 Mib/s, this alert is sent.
-
-</InDoc>

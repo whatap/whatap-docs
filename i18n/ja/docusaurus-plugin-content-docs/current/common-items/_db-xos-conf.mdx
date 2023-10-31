@@ -44,6 +44,12 @@ _xos_ディレクトリをデータベースサーバーにコピーし、_xos.c
     process=top,lock.sh
     ```
 
+    :::note
+
+    `process`オプションを使用して、データベースで実行中のプロセスが終了した場合、アラート通知を送信できます。詳細は[次の文書]](../best-practice-guides/set-db-metric-warning-notice)を参照してください。
+
+    :::
+
 -   **iplist_interval** <span class='type'>Second</span>
 
     データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。

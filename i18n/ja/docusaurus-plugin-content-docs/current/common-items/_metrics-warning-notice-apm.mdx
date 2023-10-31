@@ -1,0 +1,50 @@
+## テンプレート{#template}
+
+### メトリクスイベント
+
+**_アラート通知_** > **_イベント設定_** > **_メトリクス_**セクションで**_+イベント追加_**ボタンを選択してください。 **_テンプレート_**から目的の項目を選択してください。
+
+-   **_WARNING_OLD_GENARATION_GC_**
+
+    ヒープメモリ(Heap Memory)のOld Generation領域でGCが発生するとアラート通知を送信します。
+
+-   **_TOO_SLOW_SQL_**
+
+    実行中のクエリが5秒以上の遅すぎるクエリが発生した場合は、アラート通知を送信します。
+
+-   **_TOO_MANY_ACTX_**
+
+    8秒超過区間のアクティブトランザクション数が多すぎる場合は、アラート通知を送信します。
+
+-   **_APDEX_**
+
+    **APDEX**数値が0.7より小さい場合は、アラート通知を送信します。
+
+### 複合メトリクスイベント
+
+-   **_Inactive agents has been found._**
+
+    条件：`num_of_current_agents` \< 6
+
+    プロジェクトに含まれるすべてのエージェントの中で、正常なエージェント数が6つ未満でイベントが発生すると、アラート通知を送信します。
+
+-   **_Very slow active transactions detected._**
+
+    条件：`very_slow_tx_cnt_m5_avg` > 10
+
+    プロジェクトに含まれる特定の`okind`に属するエージェントから8秒以上かかるトランザクション数の合計が10個を超えるとアラート通知を送信します。
+
+-   **_TPS has changed by more than 30% compared to the previous week._**
+
+    条件：`one_week_diff_abs` > `current_tps` \* 0.3
+
+    プロジェクトに含まれている特定の`okind`に属するエージェントのTPSが合計7日前と比較して30%以上変化すると、アラート通知を送信します。
+
+複数のエージェントから受信されたデータに対して総合的なイベント判定が必要な場合は、次の複合メトリクステンプレートを設定してください。
+
+-   **_Inactive agents has been found._**
+-   **_Very slow active transactions detected._**
+
+過去のデータと現在のデータを比較してイベントを判定する必要がある場合は、次の複合メトリクステンプレートを設定してください。
+
+-   **_TPS has changed by more than 30% compared to the previous week._**

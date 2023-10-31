@@ -14,6 +14,196 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 1.111.9
+
+2023年10月23日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### User Interface
+
+-   <Status>Feature</Status> <cmdname sid="platform_catalog" className="uitext" />ページでより良いユーザーエクスペリエンスのためのデザインの再編成
+
+-   <Status>Fixed</Status>ユーザー言語が日本語の場合、サイドバーのサービス紹介ページでサービスタイトルを英語に修正
+
+#### Flexボード
+
+<p><Status>Fixed</Status>リッチテキストウィジェットのテキストエディタから使用できない編集機能ボタンを削除</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Feature</Status>ノードエージェント1.3.7バージョンから新規指標の追加およびUIデザインが改善されたノード一覧画面を提供
+
+-   <Status>Fixed</Status>クラスタープロジェクトに対する照会権限がないメンバーの場合、ネームスペースプロジェクト画面上にプロジェクト名がプロジェクトコード(PCODE)で表示される現象を修正
+
+-   <Status>Feature</Status> <cmdname sid="dashboard" className="uitext" />><cmdname sid="containerMap" className="uitext" />メニューからブロックカラー表示指標にアプリケーション関連フィールドも選択できるように追加
+
+* * *
+
+### `Browser`
+
+-   <Status>Fixed</Status>ユーザー言語が日本語の場合<cmdname sid="dashboard" className="uitext" />><cmdname sid="rumDashboard" className="uitext" />メニューから日本語ウィジェットのタイトルを修正
+
+-   <Status>Feature</Status> <cmdname sid="sitemap" className="uitext" /> > <cmdname sid="user_behavior" className="uitext" /> メニューの追加
+
+-   <Status>Feature</Status> <cmdname sid="analysis" className="uitext" /> > <cmdname sid="ajaxAnalytics" className="uitext" /> メニューの追加
+
+</div>
+
+## Preview 1.111.8
+
+2023年10月19日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Changed</Status> <UI>サイトマップ</UI>><UI>ユーザーの行為</UI>メニューのテーブルで<UI>Request URI</UI>、 <UI>METHOD</UI>カラムの削除
+
+-   <Status>Fixed</Status>組織が選択された状態でプロジェクト作成時にサービスカードをクリックすると、選択された組織が解除される現象を修正
+
+* * *
+
+### `Application`
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status><UI>トレース分析</UI>のSQL変数置換機能のバグを修正
+
+-   <Status>Fixed</Status><UI>トレース分析</UI>のマルチトランザクションビューに進入できないバグを修正
+
+#### 分析
+
+<p><Status>Fixed</Status><UI>ヒートマップ</UI>メニューから<UI>検索</UI>ボタン連打防止のため、次の照会まで0.5秒の遅延を追加</p>
+
+#### 統計/レポート
+
+<p><Status>Changed</Status><UI>統計</UI>メニューからタブ移動時にユーザーが設定した検索時間を維持するように修正</p>
+
+* * *
+
+### `Database`
+
+#### 共通
+
+-   <Status>Changed</Status><UI>ダッシュボード</UI>><UI>インスタンス一覧</UI>メニューからテーブルがブラウザのサイズに合わせて表示されるように変更
+
+-   <Status>Changed</Status><UI>統計/レポート</UI>><UI>SQL統計</UI>メニューのユーザビリティのためのUIの改善
+
+    -   プログレスバーの追加
+
+    -   テーブル領域にPanelを追加
+
+    -   テーブルサブチャートにChartIndexを追加
+
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューから非リアルタイムモードになると、該当時間の<UI>SQL統計</UI>メニューに移動できるボタンの追加
+
+#### DB V2
+
+-   <Status>Changed</Status><UI>マルチインスタンスモニタリング</UI>メニューからアクティブセッションが漏れていた問題を修正
+
+-   <Status>Fixed</Status><UI>マルチインスタンスモニタリング</UI>メニューから<UI>SQL Elapse Map</UI>ウィジェットチャートの照会範囲の修正
+
+#### MySQL
+
+<p><Status>Changed</Status><UI>分析</UI>><UI>データベースパラメータ</UI>メニューのテーブルスクロールがテーブル内部で作成されるように変更</p>
+
+#### PostgreSQL
+
+<p><Status>Fixed</Status><UI>分析</UI>><UI>Wait分析</UI>メニューからアクティブセッションの詳細ウィンドウを通じて<UI>セッション履歴</UI>メニューに移動する場合、<UI>Wait分析</UI>メニューの時間でセッション履歴を照会するように修正</p>
+
+#### SQL Server
+
+<p><Status>Changed</Status><b>MS SQL Server</b>サービスの名前を<b>SQL Server</b>に変更</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから<UI>Istio環境の場合、追加リソースの作成</UI>に対してのyamlファイルのインデントを修正
+
+-   <Status>Changed</Status>次のメニューから<UI>トレース分析</UI>機能を改善したバージョンに交換、変更点は<Link to='../../reference/changes-analysis-trace' target='_blank'>次の文書</Link>を参照してください。
+
+    -   <UI>アプリケーション</UI> > <UI>マルチサービスヒットマップ</UI>
+
+    -   <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>
+
+-   <Status>Fixed</Status>次のメニューから<UI>検索</UI>ボタン連打防止のため、次の照会まで0.5秒の遅延の追加
+
+    -   <UI>アプリケーション</UI> > <UI>ヒットマップ</UI>
+
+    -   <UI>アプリケーション</UI> > <UI>マルチサービスヒットマップ</UI>
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status>ログフィルター入力で値を修正するとき<UI>大文字と小文字の区分</UI>オプションが反映されない現象を修正
+
+-   <Status>Fixed</Status><UI>ログ設定</UI>メニューからユーザーが選択した言語に応じてログ設定ガイドを連動させるように修正
+
+* * *
+
+### `ネットワーク`
+
+<p><Status>Changed</Status><UI>サイトマップ</UI>メニューから<UI>ユーザーの行為</UI>メニューリンクを露出するように修正</p>
+
+</div>
+
+## Preview 1.111.7
+
+2023年10月16日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Changed</Status>性能向上とバグ発生要素を減らすために、ラインチャートのリアルタイムアップデートアニメーションを削除</p>
+
+* * *
+
+### `Database`
+
+#### MySQL
+
+-   <Status>Feature</Status><UI>統計</UI>><UI>MySQL SQL統計</UI>メニューから新規機能説明モーダルの追加
+
+-   <Status>Changed</Status><UI>統計</UI>><UI>MySQL SQL統計</UI>メニューからデータが照会されない場合は、設定メッセージを表示するように修正
+
+#### PostgreSQL
+
+-   <Status>Feature</Status><UI>分析</UI>><UI>Wait分析</UI>、<UI>セッション履歴</UI>メニューから新規機能説明モーダルの追加
+
+-   <Status>Changed</Status><UI>統計</UI>><UI>PG SQL統計</UI>メニューからデータが照会されない場合は、設定メッセージを表示するように修正
+
+</div>
+
+## Preview 1.111.6
+
+2023年10月16日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status>サイドバー幅の調整機能の追加
+
+-   <Status>Feature</Status> <UI>利用内訳</UI> > <UI>決済情報</UI>メニューから決済情報を登録すると通話選択機能を追加
+
+-   <Status>Changed</Status> <UI>利用内訳</UI> > <UI>プロジェクト有料転換</UI>、<UI>請求書プレビュー</UI>、<UI>請求及び納付内訳</UI>メニューから為替トグルを除去
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>メニューから新規機能の説明モーダルの追加</p>
+
+</div>
+
 ## Preview 1.111.5
 
 2023年10月13日

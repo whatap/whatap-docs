@@ -1,0 +1,174 @@
+---
+id: analyze-ajax-hitmap
+title: AJAXヒートマップ
+description: AJAXイベントをヒートマップチャート形式で提供し、各イベントの詳細を確認できます。
+tags:
+  - Browser
+  - AJAXヒートマップ
+---
+
+ホーム画面 > プロジェクト選択 > <cmdname sid="analysis" className="uitext" /> > <cmdname sid="ajaxAnalytics" className="uitext" />
+
+**Asynchronous JavaScript and XML(AJAX)**は非同期方式でデータを交換し、ウェブページをアップデートする技術です。 AJAXはページ全体を再びロードせずにページの一部だけをアップデートする、より複雑なウェブページが作成できます。 また、AJAXを使用すると、ウェブページの一部を呼び戻す間もコードが実行され続け、非同期式に作業することができます。 
+
+AJAX の利点には、ユーザー エクスペリエンスの向上とサーバーへの要求の削減が含まれます。 しかし、AJAXはブラウザで実行されるJavaScriptコードによって実装されるため、次のような理由からモニタリングが必要です。
+
+-   AJAXリクエストがきちんと処理されているか確認する必要があります。
+
+-   AJAXリクエストによる性能低下を把握する必要があります。
+
+-   ネットワークの遅延、ダウンロード時間などを含め、ユーザー体感の性能を把握する必要があります。
+
+**ブラウザモニタリング**で提供する<cmdname sid="ajaxAnalytics" className="uitext" />メニューでは、時間に応じたAJAXイベントの応答時間をヒートマップチャートで確認できます。 また、各イベントに関する詳細情報を照会することもできます。 提供する情報は以下のとおりです。
+
+-   AJAXイベント区間別の詳細時間の情報
+
+-   AJAXリクエストURLや呼び出しページ情報など
+
+-   エラーメッセージおよびステータスコード
+
+## 基本画面ガイド
+
+<ImgLang img='browser-analysis-ajax-hitmap.png' desc='AJAX Hitmap' />
+
+### ![](/img/number-01.png) <cmdname sid="ajaxAnalytics" className="uitext" />
+
+時間に応じたAJAXイベントの応答時間を分布図チャートで表現するウィジェットです。 
+
+-   横軸はAJAXイベントの終了時間です。
+
+-   縦軸はAJAXイベントの経過時間です。
+
+-   <span class='lowfg'>空色</span> → <span class='normal'>青色</span> → <span class='highfg'>藍色</span> 順に正常<b>Ajax</b>イベントを表現します。
+
+-   <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>Ajax</b>イベントを表現します。 エラー<b>AJAX</b>イベントはステータスコードが<code>0</code>か<code>400</code>以上の場合です。 ステータスコードが<code>0</code>ならばブラウザからサーバー側にリクエストが届かなかった場合です。
+
+### ![](/img/number-02.png) <cmdname sid="ajax" className="uitext" /> <cmdname sid="list" className="uitext" />
+
+ヒートマップチャートの![数字3](/img/number-03.png)一部領域をドラッグすると、ドラッグした領域のAJAXイベントを![数字2](/img/number-02.png)<cmdname sid="ajax" className="uitext" /> <cmdname sid="list" className="uitext" />と呼び込みます 
+
+次は、テーブル内のカラム項目について説明します。
+
+-   <cmdname sid="ajax_request_url" className="uitext" />: AJAXイベントURL
+
+-   <cmdname sid="start_time" className="uitext" />: AJAXリクエストを始めた時間
+
+-   <cmdname sid="elapsed" className="uitext" />: AJAXイベント完了までの所要時間
+
+-   <cmdname sid="page_url" className="uitext" />: AJAXイベントを呼び出したページのURL
+
+-   <cmdname sid="status_code" className="uitext" />: AJAXイベントの応答ステータスコード
+
+-   <cmdname sid="errMessage" className="uitext" />: ステータスコードが<code>0</code>または<code>400</code>以上の場合のAJAXの応答値(<code>statusText</code>)
+
+    :::note
+
+    ステータスコードが`0`または`400`以上のAJAXイベントは一覧から<span class='vslow'>赤色</span>と表示されます。
+
+    :::
+
+-   <cmdname sid="browser" className="uitext" />: エンドユーザーが使用したブラウザの種類
+
+:::note
+
+<cmdname sid="add_a_column" className="uitext" />ボタンを利用して追加できるカラム項目の詳細については<Link to="#add-column">次の文書</Link>を参照してください。
+
+:::
+
+## AJAXイベントの詳細情報を確認する
+
+<cmdname sid="ajax" className="uitext" /> <cmdname sid="list" className="uitext" />から各項目を選択すると、詳細を照会できる<cmdname sid="ajax" className="uitext" /> <cmdname sid="info" className="uitext" />ウィンドウが表示されます。
+
+<ImgLang img='browser-analysis-ajax-hitmap-details.png' desc='AJAXイベント詳細情報' />
+
+AJAXイベントを読み込み過程での区間別所要時間をグラフチャートで提供します。 これにより、AJAXロードの過程で遅い区間を把握して改善に活用できます。
+
+### <cmdname sid="ajax" className="uitext" /> <cmdname sid="info" className="uitext" />
+
+AJAXイベントの属性情報を確認できます。 AJAXリクエストURL、エンドユーザーのアクセス環境、アクセスページ情報、<cmdname sid="user_id" className="uitext" />、<cmdname sid="session_id" className="uitext" />、<cmdname sid="TTL06081" className="uitext" />などの情報を照会することができます。
+
+### <cmdname sid="TTL07106" className="uitext" /> <cmdname sid="info" className="uitext" />
+
+AJAXイベントを読み込む過程を次の段階に区分し、区間別の所要時間を把握して 
+
+-   <cmdname sid="redirect_time" className="uitext" />: ブラウザがAJAXをリクエストした場合、リダイレクトに要した時間
+
+-   <cmdname sid="cache_time" className="uitext" />: ブラウザがキャッシュされたAJAXリソースを検索するのに要した時間
+
+-   <cmdname sid="TTL06193" className="uitext" />: ブラウザがAJAXリクエストドメインを照会するのに要した時間
+
+-   <cmdname sid="connect_time" className="uitext" />: AJAXリクエスト対象サーバとTCP接続を設定するのに要した時間
+
+-   <cmdname sid="ssl_time" className="uitext" />: SSL/TLSハンドシェイクを完了するのに要した時間
+
+-   <cmdname sid="wait_time" className="uitext" />: ブラウザのHTTPリクエスト開始時間からサーバーがリクエストを受信して応答を開始する時間まで要した時間で、サーバー領域のトランザクション処理時間がこの区間に含まれます。
+
+-   <cmdname sid="download_time" className="uitext" />: ブラウザがサーバーからAJAX応答値をダウンロードするのに要した時間
+
+## AJAX一覧のフィルタリング
+
+AJAX一覧を対象に、検索ワードを入力して一致する対象をフィルタリングすることができます。 目的の照会基準を選択し、検索ワードを入力してください。 エンターキーを押すか、![検索アイコン](/img/ico-search.svg)ボタンを選択すると、フィルタリングされた結果を確認できます。
+
+<ImgLang img='browser-analysis-ajax-hitmap-filter.png' desc='一覧のフィルタリング' />
+
+フィルタリングのために選択できる照会基準は次のとおりです。
+
+-   <cmdname sid="TTL07103" className="uitext" />
+-   <cmdname sid="page_url" className="uitext" />
+-   <cmdname sid="browser" className="uitext" />
+-   <cmdname sid="os" className="uitext" />
+-   <cmdname sid="device" className="uitext" />
+-   <cmdname sid="client_ip" className="uitext" />
+
+## テーブルカラムの設定
+
+AJAX一覧からテーブルヘッダーカラムを隠したり、希望する項目を追加することができます。 カラムの順序を変更することもできます。 **_カラム設定_**ボタンを選択してください。
+
+<ImgLang img="browser-analysis-ajax-column-settings.png" desc="カラム設定" />
+
+:::note
+
+-   設定を完了した後は、**_確認_**ボタンを選択すると、設定事項がテーブルに反映されます。
+
+-   ![数字3](/img/number-03.png)検索欄にテキストを入力して、希望するカラム項目を検索することができます。 入力したテキストと一致するカラム項目が表示されます。
+
+:::
+
+### カラムを追加する{#add-column}
+
+![数字1](/img/number-01.png)一覧でテーブルヘッダーカラムに追加する項目を選択してください。 すべての項目を追加するには、**_全体選択_**を選択してください。 追加できるカラム項目は次のとおりです。
+
+| カラム名                                               | 説明                                                 |
+| -------------------------------------------------- | -------------------------------------------------- |
+| <cmdname sid="client_ip" className="uitext" />     | エンドユーザが使用した機器のIPアドレス                               |
+| <cmdname sid="TTL07104" className="uitext" />      | ブラウザレベルでAJAXリクエストを中断した場合、'true'と表示                 |
+| <cmdname sid="user_agent" className="uitext" />    | ブラウザエージェントが収集したエンドユーザーのユーザーエージェントの文字列              |
+| <cmdname sid="size" className="uitext" />          | AJAX応答値に対する容量、圧縮が解除された実際の容量を意味する                   |
+| <cmdname sid="country" className="uitext" />       | エンドユーザーが位置する国コード                                   |
+| <cmdname sid="city" className="uitext" />          | エンドユーザーが位置する都市名                                    |
+| <cmdname sid="download_time" className="uitext" /> | ブラウザがサーバーからAJAX応答値をダウンロードするのに要した時間                 |
+| <cmdname sid="device" className="uitext" />        | エンドユーザが使用した機器の種類                                   |
+| <cmdname sid="redirect_time" className="uitext" /> | ブラウザがAJAXをリクエストした場合、リダイレクトに要した時間                   |
+| <cmdname sid="user_id" className="uitext" />       | 任意に付与したエンドユーザーのID                                  |
+| <cmdname sid="session_id" className="uitext" />    | エンドユーザーのセッションID                                    |
+| <cmdname sid="connect_time" className="uitext" />  | AJAXリクエスト対象サーバとTCP接続を設定するのに要した時間                   |
+| <cmdname sid="wait_time" className="uitext" />     | ブラウザのHTTPリクエスト開始時間からサーバがリクエストを受信し、応答を開始する時間までの所要時間 |
+| <cmdname sid="browser" className="uitext" />       | エンドユーザーが使用したブラウザの種類                                |
+| <cmdname sid="os" className="uitext" />            | エンドユーザーが使用した機器のOSの種類                               |
+| <cmdname sid="end_time" className="uitext" />      | AJAXイベント終了時間                                       |
+| <cmdname sid="cache_time" className="uitext" />    | ブラウザがキャッシュされたAJAXリソースを検索するのに要した時間                  |
+| <cmdname sid="page_title" className="uitext" />    | ブラウザで接続したHTMLページのタイトル(title)                       |
+| <cmdname sid="TTL06193" className="uitext" />      | ブラウザがAJAXリクエストドメインを照会するのに要した時間                     |
+| <cmdname sid="ssl_time" className="uitext" />      | SSL/TLSハンドシェイクを完了するのに要した時間                         |
+
+### カラムを削除する
+
+![数字1](/img/number-01.png)一覧で削除するカラム項目のチェックボックスを選択解除してください。 または![数字2](/img/number-02.png)一覧で削除する項目の右側の![削除アイコン](/img/ico-remove-white.svg)ボタンを選択してください。
+
+### カラム順序の変更
+
+![数字2](/img/number-02.png)一覧で順序を変更するアイテムをドラッグして、希望する位置に移動できます。 
+
+### 設定事項の初期化
+
+変更事項をすべてキャンセルし、初期化するには、![初期化アイコン](/img/ico-reset.svg) **_初期化_**ボタンを選択してください。

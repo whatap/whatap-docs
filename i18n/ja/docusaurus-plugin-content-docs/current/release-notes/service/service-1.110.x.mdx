@@ -5,9 +5,87 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_108_x
 ---
 
+## Service 1.110.9
+
+2023年10月20日
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status>クラスタープロジェクトに対する照会権限がないメンバーの場合、ネームスペースプロジェクト画面上にプロジェクト名がプロジェクトコード(PCODE)で表示される現象を修正</p>
+
+</div>
+
+## Service 1.110.8
+
+2023年10月19日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status>組織が選択された状態でプロジェクト作成時にサービスカードをクリックすると、選択された組織が解除される現象を修正</p>
+
+* * *
+
+### `Application`
+
+#### ダッシュボード
+
+-   <Status>Fixed</Status><UI>トレース分析</UI>のSQL変数置換機能のバグを修正
+
+-   <Status>Fixed</Status><UI>トレース分析</UI>のマルチトランザクションビューに進入できないバグを修正
+
+#### 分析
+
+<p><Status>Fixed</Status><UI>ヒートマップ</UI>メニューから<UI>検索</UI>ボタン連打防止のため、次の照会まで0.5秒の遅延を追加</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから<UI>Istio環境の場合、追加リソースの作成</UI>に対してのyamlファイルのインデントを修正
+
+-   <Status>Fixed</Status>次のメニューから<UI>検索</UI>ボタン連打防止のため、次の照会まで0.5秒の遅延の追加
+
+    -   <UI>アプリケーション</UI> > <UI>ヒットマップ</UI>
+
+    -   <UI>アプリケーション</UI> > <UI>マルチサービスヒットマップ</UI>
+
+</div>
+
+## Service 1.110.7
+
+2023年10月16日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Changed</Status>性能向上とバグ発生要素を減らすために、ラインチャートのリアルタイムアップデートアニメーションを削除</p>
+
+* * *
+
+### `Database`
+
+#### MySQL
+
+-   <Status>Feature</Status><UI>統計</UI>><UI>MySQL SQL統計</UI>メニューから新規機能説明モーダルの追加
+
+-   <Status>Changed</Status><UI>統計</UI>><UI>MySQL SQL統計</UI>メニューからデータが照会されない場合は、設定メッセージを表示するように修正
+
+#### PostgreSQL
+
+-   <Status>Feature</Status><UI>分析</UI>><UI>Wait分析</UI>、<UI>セッション履歴</UI>メニューから新規機能説明モーダルの追加
+
+-   <Status>Changed</Status><UI>統計</UI>><UI>PG SQL統計</UI>メニューからデータが照会されない場合は、設定メッセージを表示するように修正
+
+</div>
+
 ## Service 1.110.6
 
-2023年10月13日
+2023年10月16日
 
 <div class='indentTab'>
 
@@ -18,6 +96,12 @@ pagination_next: release-notes/service/service-1_108_x
 -   <Status>Feature</Status><UI>決済情報</UI>メニューから決済情報を登録すると通話選択機能を追加
 
 -   <Status>Changed</Status><UI>プロジェクト有料転換</UI>、<UI>請求書プレビュー</UI>、<UI>請求及び納付内訳</UI>メニューから為替トグルを除去
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>メニューから新規機能の説明モーダルの追加</p>
 
 </div>
 

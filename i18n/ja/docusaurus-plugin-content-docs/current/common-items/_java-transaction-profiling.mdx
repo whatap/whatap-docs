@@ -124,6 +124,15 @@
 
     ビジネスExceptionを登録します。 登録したビジネスExceptionはエラー統計から除外します。トレース詳細で確認できます。
 
+-   **biz_exceptions_status** <span class='type'>string</span>
+
+    Exception発生時のイベント通知を抑制するBusiness ExceptionとStatusを設定します。このオプションで設定した**Business Exception:Status**については、イベントレベルが**INFO**に変更されます。Business ExceptionとStatusはコロン(:)で区分し、一つのBusiness Exceptionに複数のStatusを使用する場合、アンパサンド(&)で区分します。コンマを区切り文字として使用して複数を設定できます。
+
+    ```ini title='whatap.conf'
+    # example
+    biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
+    ```
+
 -   **ignore_exceptions** <span class='type'>String</span>
 
     無視するExceptionを登録します。登録されたExceptionエラーを無視します。
@@ -156,4 +165,4 @@
 
     `whatap.error.HTTPC_ERROR`を無視してください。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 このとき、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+    `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。

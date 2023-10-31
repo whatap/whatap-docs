@@ -1,6 +1,6 @@
 ## whatap.confファイルを設定する
 
-圧縮を解凍した`$WHATAP_HOME`パスに移動してください。_$WHATAP_HOME/whatap.conf_ファイルの内容にアクセスキーとデータ収集サーバーのアドレスが正常に含まれているか確認してください。値がなければ[WhaTapモニタリングサービス](https://service.whatap.io)画面に移動し、**_インストール案内_** セクションで**アクセスキー**値をコピーして貼り付けてください。
+圧縮を解凍した`$WHATAP_HOME`パスに移動してください。_$WHATAP_HOME/whatap.conf_ファイルの内容にアクセスキーとデータ収集サーバーのアドレスが正しく含まれていることを確認してください。値がない場合は、[WhaTapモニタリングサービス](https://service.whatap.io)画面に移動し、<cmdname sid="agent-setup-guide" className="uitext" /> セクションで**アクセスキー**値をコピーして貼り付けてください。
 
 ```ini title=$WHATAP_HOME/whatap.conf
 license={アクセスキー}
@@ -9,7 +9,7 @@ whatap.server.host={収集サーバーIP}
 
 :::note
 
--   **_ダウンロード_**ボタンをクリックしてエージェントをダウンロードした場合は、_whatap.conf_に設定値が入っています。 
+-   <cmdname sid="download" className="uitext" />ボタンをクリックしてエージェントをダウンロードした場合は、*whatap.conf*に設定値が入力されます。
 
 -   サーバーから直接ダウンロードした場合は、**アクセスキー**と**収集サーバーIP**を手動で入力してください。
 

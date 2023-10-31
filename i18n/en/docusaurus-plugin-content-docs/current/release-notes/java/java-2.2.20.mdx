@@ -1,0 +1,66 @@
+---
+id: java-2_2_20
+title: Java Agent v2.2.20
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_19
+---
+
+October 19, 2023
+
+-   <Status>Feature</Status> apache-camel-seda-2.22 tracing
+
+    ```ini title='whatap.conf'
+    weaving=camel-seda-2.22
+
+    # default: false
+    trace_camel_header_enabled=false
+    ```
+
+-   <Status>Feature</Status> apache-camel-seda-3.2 tracing
+
+    ```ini title='whatap.conf'
+    weaving=camel-seda-3.2
+
+    # default: false
+    trace_camel_header_enabled=false
+    ```
+
+-   <Status>Feature</Status> Added the `biz_exceptions_status` option
+
+    ```ini title='whatap.conf'
+    biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
+    ```
+
+    If this option is applied, the hitmap info appears in blue and the error statistics is added.
+
+-   <Status>Feature</Status> MongoDB synching method tracing (mongodb-3.8.2, mongodb-4.0.3, mongodb-4.4, mongodb-4.8)
+
+    ```ini title='whatap.conf'
+    # example
+    weaving=mongodb-4.0.3
+
+    # spring-boot-3.x user
+    # spring-boot-3.x: mongodb-4.8
+    weaving=spring-boot-3.0
+
+    # spring-boot-2.7.x user
+    # spring-boot-2.7.x: mongodb-4.4
+    weaving=spring-boot-2.7
+
+    # spring-boot-2.5.x user
+    # spring-boot-2.5.x: mongodb-4.0.3
+    weaving=spring-boot-2.5
+    ```
+
+-   <Status>Changed</Status> Collects <code>biz_exceptions</code> errors into the error statistics.
+
+-   <Status>Fixed</Status> Fixed the SQL parsing error.
+
+-   <Status>Deprecated</Status> Stopped collecting Jedis, Tomcat, and JMX metrics (<code>java_jedis</code>, <code>perfx_jmx_interval</code>, <code>perfx_tomcat_enabled</code>).
+
+    ```ini title='whatap.conf'
+    # deprecated
+    perfx_jedis_enabled=false
+    perfx_jmx_enabled=false
+    perfx_tomcat_enabled=false
+    ```

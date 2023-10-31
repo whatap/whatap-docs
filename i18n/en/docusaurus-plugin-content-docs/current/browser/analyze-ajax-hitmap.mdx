@@ -1,0 +1,174 @@
+---
+id: analyze-ajax-hitmap
+title: AJAX HITMAP
+description: AJAX events are provided in a hitmap chart format, and the detailed information about each event can be viewed.
+tags:
+  - Browser
+  - AJAX HITMAP
+---
+
+Home > Select Project > <cmdname sid="analysis" className="uitext" /> > <cmdname sid="ajaxAnalytics" className="uitext" />
+
+The **Asynchronous JavaScript and XML (AJAX)** technology exchanges data and updates web pages in an asynchronous manner. AJAX allows you to create a more complex web page that update part of the page without reloading the entire page. AJAX also allows you to work asynchronously, enabling the code to continuously run while reloading part of the web page. 
+
+AJAX has advantages such as user experience improvement and reduction of requests to the server. However, because AJAX is implemented with JavaScript code running in the browser, it requires monitoring for the following reasons:
+
+-   You have to make sure that AJAX requests are handled properly.
+
+-   You have to check the performance degradation caused by AJAX requests.
+
+-   You have to understand the user-perceived performance including the network latency, download time, and such.
+
+In the <cmdname sid="ajaxAnalytics" className="uitext" /> menu provided from **Browser Monitoring**, you can see the response times of AJAX events over time on a hitmap chart. You can also see the detailed information for each event. The provided information is as follows:
+
+-   Detailed time information for each AJAX event section
+
+-   AJAX request URL, calling page information, etc.
+
+-   Error message and status code
+
+## Basic screen guide
+
+<ImgLang img='browser-analysis-ajax-hitmap.png' desc='AJAX Hitmap' />
+
+### ![](/img/number-01.png) <cmdname sid="ajaxAnalytics" className="uitext" />
+
+This widget displays the response times for AJAX events over time in a distribution chart. 
+
+-   The horizontal axis is the AJAX event end time.
+
+-   The vertical axis is the AJAX event's elapsed time.
+
+-   The normal <b>AJAX</b> events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
+
+-   The error occurrence <b>AJAX</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. An error <b>AJAX</b> event occurs when the status code is <code>0</code> or more than <code>400</code>. If the status code is <code>0</code>, the request is not passed from the browser to the server.
+
+### ![](/img/number-02.png) <cmdname sid="ajax" className="uitext" /> <cmdname sid="list" className="uitext" />
+
+If you drag part of ![number 3](/img/number-03.png) in the hitmap chart, the AJAX events of the dragged area are loaded into ![number 2](/img/number-02.png) <cmdname sid="ajax" className="uitext" /> <cmdname sid="list" className="uitext" />. 
+
+The following show the descriptions for columns in the table.
+
+-   <cmdname sid="ajax_request_url" className="uitext" />: AJAX event URL
+
+-   <cmdname sid="start_time" className="uitext" />: AJAX request start time
+
+-   <cmdname sid="elapsed" className="uitext" />: Elapsed time until the AJAX event completion
+
+-   <cmdname sid="page_url" className="uitext" />: URL of the AJAX event called page
+
+-   <cmdname sid="status_code" className="uitext" />: Response status code of the AJAX event
+
+-   <cmdname sid="errMessage" className="uitext" />: AJAX response value (<code>statusText</code>) when the status code is <code>0</code> or more than <code>400</code>
+
+    :::note
+
+    AJAX events whose status code is `0` or more than `400` appear in <span class='vslow'>red</span> in the list.
+
+    :::
+
+-   <cmdname sid="browser" className="uitext" />: Type of the browser used by the end user
+
+:::note
+
+For more information about the column that can be added using the <cmdname sid="add_a_column" className="uitext" /> button, see <Link to="#add-column">the following</Link>.
+
+:::
+
+## Checking the AJAX event details
+
+If you select each item in <cmdname sid="ajax" className="uitext" /> <cmdname sid="list" className="uitext" />, the <cmdname sid="ajax" className="uitext" /> <cmdname sid="info" className="uitext" /> window appears to view the detailed information.
+
+<ImgLang img='browser-analysis-ajax-hitmap-details.png' desc='AJAX Event Details' />
+
+The times required for each section is provided in a graph chart while loading the AJAX events. The chart helps you identify slow sections while loading AJAX events and enhance them.
+
+### <cmdname sid="ajax" className="uitext" /> <cmdname sid="info" className="uitext" />
+
+You can see the properties of the AJAX event. You can see the information such as AJAX request URL, end user access environment, access page information, <cmdname sid="user_id" className="uitext" />, <cmdname sid="session_id" className="uitext" />, and <cmdname sid="TTL06081" className="uitext" />.
+
+### <cmdname sid="TTL07106" className="uitext" /> <cmdname sid="info" className="uitext" />
+
+The AJAX event loading process is divided into the following steps and the times required for each section are displayed. 
+
+-   <cmdname sid="redirect_time" className="uitext" />: Time taken by the browser to redirect an AJAX request
+
+-   <cmdname sid="cache_time" className="uitext" />: Time taken by the browser to retrieve cached AJAX resources
+
+-   <cmdname sid="TTL06193" className="uitext" />: Time taken by the browser to retrieve the AJAX request domain
+
+-   <cmdname sid="connect_time" className="uitext" />: Time taken to establish TCP connection with the AJAX request target server
+
+-   <cmdname sid="ssl_time" className="uitext" />: Time taken to complete the SSL/TLS handshake
+
+-   <cmdname sid="wait_time" className="uitext" />: Time taken from the start of the browser's HTTP request to the time when the server receives the request and begins responding. The transaction processing time in the server is included in this section.
+
+-   <cmdname sid="download_time" className="uitext" />: Time taken by the browser to download the AJAX response values from the server
+
+## Filtering the AJAX list
+
+You can enter a search term for an AJAX list and filter matches. Select desired search criteria and then enter a search term. Press Enter or select ![Search icon](/img/ico-search.svg) to see the filtered results.
+
+<ImgLang img='browser-analysis-ajax-hitmap-filter.png' desc='Filtering List' />
+
+The query criteria that can be selected for filtering are as follows:
+
+-   <cmdname sid="TTL07103" className="uitext" />
+-   <cmdname sid="page_url" className="uitext" />
+-   <cmdname sid="browser" className="uitext" />
+-   <cmdname sid="os" className="uitext" />
+-   <cmdname sid="device" className="uitext" />
+-   <cmdname sid="client_ip" className="uitext" />
+
+## Setting the table columns
+
+You can hide table header columns in the AJAX list or add desired items. You can also change the column order. Select **_Column settings_**.
+
+<ImgLang img="browser-analysis-ajax-column-settings.png" desc="Column Settings" />
+
+:::note
+
+-   After configuration, select **_OK_** to apply the settings in the table.
+
+-   In the ![number 3](/img/number-03.png) search bar, enter text to search the desired columns. Only the columns that meet the entered text are displayed.
+
+:::
+
+### Adding columns{#add-column}
+
+From the ![Number 1](/img/number-01.png) list, select the items to add as table header columns. To select all items, select **_Select All_**. The column items that can be added are as follows:
+
+| Column name                                        | Description                                                                                                                 |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <cmdname sid="client_ip" className="uitext" />     | IP address of the device used by the end user                                                                               |
+| <cmdname sid="TTL07104" className="uitext" />      | If the AJAX request is stopped in the browser level, `true` appears.                                                        |
+| <cmdname sid="user_agent" className="uitext" />    | End user's agent string collected by the browser agent                                                                      |
+| <cmdname sid="size" className="uitext" />          | Capacity for AJAX response values indicating the actual uncompressed capacity                                               |
+| <cmdname sid="country" className="uitext" />       | End user's country code                                                                                                     |
+| <cmdname sid="city" className="uitext" />          | End user's city name                                                                                                        |
+| <cmdname sid="download_time" className="uitext" /> | Time taken by the browser to download the AJAX response values from the server                                              |
+| <cmdname sid="device" className="uitext" />        | End user's device type                                                                                                      |
+| <cmdname sid="redirect_time" className="uitext" /> | Time taken by the browser to redirect AJAX requests                                                                         |
+| <cmdname sid="user_id" className="uitext" />       | End user ID assigned randomly                                                                                               |
+| <cmdname sid="session_id" className="uitext" />    | End user's session ID                                                                                                       |
+| <cmdname sid="connect_time" className="uitext" />  | Time taken to establish TCP connection with the target server of the AJAX request                                           |
+| <cmdname sid="wait_time" className="uitext" />     | Time elapsed from the start of the browser's HTTP request to the time the server receives the request and starts responding |
+| <cmdname sid="browser" className="uitext" />       | Type of the browser used by the end user                                                                                    |
+| <cmdname sid="os" className="uitext" />            | OS type of the device used by the end user                                                                                  |
+| <cmdname sid="end_time" className="uitext" />      | AJAX event end time                                                                                                         |
+| <cmdname sid="cache_time" className="uitext" />    | Time taken by the browser to search the cached AJAX resources                                                               |
+| <cmdname sid="page_title" className="uitext" />    | Title of the HTML page accessed through the browser                                                                         |
+| <cmdname sid="TTL06193" className="uitext" />      | Time taken by the browser to search the AJAX request domain                                                                 |
+| <cmdname sid="ssl_time" className="uitext" />      | Time taken to complete the SSL/TLS handshake                                                                                |
+
+### Deleting columns
+
+From the ![number 1](/img/number-01.png) list, unselect the columns to delete. Alternatively, select ![Delete icon](/img/ico-remove-white.svg) on the right of the item to delete from the ![number 2](/img/number-02.png) list.
+
+### Changing the column order
+
+Drag an item to reposition from the ![number 2](/img/number-02.png) list, and then move it to the desired position. 
+
+### Initializing the configuration
+
+To cancel all changes and reset them, select ![Reset icon](/img/ico-reset.svg) **_Reset_**.

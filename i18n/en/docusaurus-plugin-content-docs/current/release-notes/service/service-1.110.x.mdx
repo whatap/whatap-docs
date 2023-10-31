@@ -5,9 +5,87 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_108_x
 ---
 
+## Service 1.110.9
+
+October 20, 2023
+
+<div class='indentTab'>
+
+### `Container`
+
+<p><Status>Fixed</Status> Fixed the issue where the project code (PCODE) appears for the project name on the namespace project screen for the members who do not have the role to view cluster projects.</p>
+
+</div>
+
+## Service 1.110.8
+
+October 19, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Fixed the issue where clicking on the product card when creating a project with an organization selected causes the selected organization to be released.</p>
+
+* * *
+
+### `Application`
+
+#### Dashboard
+
+-   <Status>Fixed</Status> Fixed the bug in SQL variable substitution for <UI>Trace analysis</UI>.
+
+-   <Status>Fixed</Status> Fixed the bug that prevents access to the multi-transaction view of <UI>Trace analysis</UI>.
+
+#### Analytics
+
+<p><Status>Fixed</Status> Added a 0.5-second delay until next search to prevent repeated pressing of <UI>Search</UI> in <UI>HITMAP</UI>.</p>
+
+* * *
+
+### `Container`
+
+-   <Status>Fixed</Status> Modified the indentation of the YAML file for <UI>creating additional resources in the ISTIO environment</UI> in <UI>Management</UI> > <UI>Agent installation</UI>.
+
+-   <Status>Fixed</Status> Added a 0.5-second delay until next search to prevent repeated pressing of <UI>Search</UI> in the following menus.
+
+    -   <UI>APP.</UI> > <UI>Hitmap</UI>
+
+    -   <UI>APP.</UI> > <UI>Multiple Service Hitmap</UI>
+
+</div>
+
+## Service 1.110.7
+
+October 16, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Changed</Status> Deleted real-time update animation for line charts to improve the performance and reduce bugs.</p>
+
+* * *
+
+### `Database`
+
+#### MySQL
+
+-   <Status>Feature</Status> Added the new feature description modal in <UI>Statistics</UI> > <UI>Mysql SQL Statistics</UI>.
+
+-   <Status>Changed</Status> In <UI>Statistics</UI> > <UI>Mysql SQL Statistics</UI>, modified to display the configuration guide if data cannot be searched.
+
+#### PostgreSQL
+
+-   <Status>Feature</Status> In <UI>Analysis</UI> > <UI>Wait analysis</UI>, <UI>Session History</UI>, added the new feature description modal.
+
+-   <Status>Changed</Status> In <UI>Statistics</UI> > <UI>PG SQL statistics</UI>, modified to display the configuration guide if data cannot be searched.
+
+</div>
+
 ## Service 1.110.6
 
-October 13, 2023
+October 16, 2023
 
 <div class='indentTab'>
 
@@ -18,6 +96,12 @@ October 13, 2023
 -   <Status>Feature</Status> Added the function to select the currency in the <UI>Payment information</UI> menu.
 
 -   <Status>Changed</Status> In <UI>Project subscription</UI>, <UI>Preview invoice</UI>, and <UI>Billing and payment history</UI>, deleted the exchange rate toggling.
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Application dashboard</UI>, added the new feature description modal.</p>
 
 </div>
 

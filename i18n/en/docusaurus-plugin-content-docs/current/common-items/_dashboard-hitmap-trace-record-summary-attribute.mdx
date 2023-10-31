@@ -1,44 +1,46 @@
 #### Transaction properties{#transaction-attribute}
 
-| Classification    | Properties              | Description                                                                                                                                                                     |
-| ----------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Agent             | **Agent name (oname)**  | Agent object name                                                                                                                                                               |
-| ^                 | Agent ID (oid)          | Agent object ID                                                                                                                                                                 |
-| ^                 | Agent group name        | Agent group name set with the `okind` option                                                                                                                                    |
-| ^                 | Agent Group ID          | Agent group ID                                                                                                                                                                  |
-| ^                 | Agent server name       | Agent server name set with the `ondoe` option                                                                                                                                   |
-| ^                 | Agent server ID         | Agent server ID                                                                                                                                                                 |
-| ^                 | pcode                   | Identification code of the project registered in the WhaTap monitoring service                                                                                                  |
-| Transactions      | **Transaction ID**      | Transaction ID                                                                                                                                                                  |
-| ^                 | Start Time              | Transaction start time                                                                                                                                                          |
-| ^                 | Endtime                 | Transaction end time                                                                                                                                                            |
-| ^                 | **Elapsed Time**        | Transaction execution time                                                                                                                                                      |
-| ^                 | HTTP Method             | HTTP methods - GET, POST, PUT, HEAD, etc.                                                                                                                                       |
-| ^                 | HTTP Call Time          | External HTTP call time                                                                                                                                                         |
-| ^                 | HTTP Call Count         | External HTTP call count                                                                                                                                                        |
-| ^                 | DB connect time         | DB connection time                                                                                                                                                              |
-| ^                 | SQL Time                | SQL Execution Time                                                                                                                                                              |
-| ^                 | SQL Count               | SQL execution count                                                                                                                                                             |
-| ^                 | SQL Fetch Time          | Time taken to retrieve records<br/>(may overlap or involve other logics)                                                                                                        |
-| ^                 | SQL Fetch Count         | Number of the records retrieved from SQL                                                                                                                                        |
-| Multi-transaction | mcallerUrl              | Address of the parent transaction                                                                                                                                               |
-| ^                 | mcallerPcode            | Project code from which the parent transaction was collected                                                                                                                    |
-| ^                 | mcallerOid              | Agent object ID of the parent transaction                                                                                                                                       |
-| ^                 | mcallerOidName          | Agent name of the parent transaction                                                                                                                                            |
-| ^                 | mcallerOkind            | Agent group ID of the parent transaction                                                                                                                                        |
-| ^                 | mcallerOkindName        | Agent group name of the parent transaction                                                                                                                                      |
-| Resource          | CPU usage time          | CPU usage used by transactions                                                                                                                                                  |
-| ^                 | Memory allocation usage | Memory usage used by transactions                                                                                                                                               |
-| Client            | Client IP               | Client IP address                                                                                                                                                               |
-| ^                 | Domain                  | Internet address assigned to the IP address that the client connected to                                                                                                        |
-| ^                 | WClientID               | Client ID                                                                                                                                                                       |
-| ^                 | Country/Region          | Client's country                                                                                                                                                                |
-| ^                 | OS                      | Client's OS name                                                                                                                                                                |
-| ^                 | Client type             | Browser name used by the client                                                                                                                                                 |
-| ^                 | Client Name             | Device name used by the client                                                                                                                                                  |
-| ^                 | Referer                 | Page address or incoming path used by the browser of the client                                                                                                                 |
-| ^                 | URL/TX                  | When a combination of transaction name and original URL<br/> has the original URL, the original URL is exposed. When there is no original URL, the transaction name is exposed. |
-| ^                 | UserAgent               | Web client information used to extract client data                                                                                                                              |
+| Classification    | Properties               | Description                                                                                                                        |
+| ----------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Agent             | **Agent name (oname)**   | Agent object name                                                                                                                  |
+| ^                 | Agent ID (oid)           | Agent object ID                                                                                                                    |
+| ^                 | Agent group name         | Agent group name set with the `okind` option                                                                                       |
+| ^                 | Agent Group ID           | Agent group ID                                                                                                                     |
+| ^                 | Agent server name        | Agent server name set with the `ondoe` option                                                                                      |
+| ^                 | Agent server ID          | Agent server ID                                                                                                                    |
+| ^                 | pcode                    | Identification code of the project registered in the WhaTap monitoring service                                                     |
+| Transactions      | **Transaction ID**       | Transaction ID                                                                                                                     |
+| ^                 | Start Time               | Transaction start time                                                                                                             |
+| ^                 | Endtime                  | Transaction end time                                                                                                               |
+| ^                 | **Elapsed Time**         | Transaction execution time                                                                                                         |
+| ^                 | HTTP Method              | HTTP methods - GET, POST, PUT, HEAD, etc.                                                                                          |
+| ^                 | HTTP Call Time           | External HTTP call time                                                                                                            |
+| ^                 | HTTP Call Count          | External HTTP call count                                                                                                           |
+| ^                 | Average DBC Time         | DB connection time                                                                                                                 |
+| ^                 | SQL Time                 | SQL Execution Time                                                                                                                 |
+| ^                 | SQL Count                | SQL execution count                                                                                                                |
+| ^                 | SQL Fetch Time           | Time taken to retrieve records<br/>(may overlap or involve other logics)                                                           |
+| ^                 | SQL Fetch Count          | Number of the records retrieved from SQL                                                                                           |
+| Multi-transaction | CallerUrl                | Address of the parent transaction                                                                                                  |
+| ^                 | CallerPcode              | Project code from which the parent transaction was collected                                                                       |
+| ^                 | CallerOid                | Agent object ID of the parent transaction                                                                                          |
+| ^                 | CallerOName              | Agent name of the parent transaction                                                                                               |
+| ^                 | CallerOkind              | Agent group ID of the parent transaction                                                                                           |
+| ^                 | CallerOkindName          | Agent group name of the parent transaction                                                                                         |
+| Resource          | CPU usage time           | CPU usage used by transactions                                                                                                     |
+| ^                 | Memory Allocation        | Memory usage used by transactions                                                                                                  |
+| Client            | Client IP                | Client IP address                                                                                                                  |
+| ^                 | Domain                   | Internet address assigned to the IP address that the client connected to                                                           |
+| ^                 | WClientID                | Client ID                                                                                                                          |
+| ^                 | Country/Region           | Client's country                                                                                                                   |
+| ^                 | City                     | City in the client's country                                                                                                       |
+| ^                 | OS                       | OS environment in which the browser runs                                                                                           |
+| ^                 | Client type              | Browser type used by the client                                                                                                    |
+| ^                 | Client Name              | Device name used by the client                                                                                                     |
+| ^                 | Status                   | HTTP status code for the client request                                                                                            |
+| ^                 | Referer                  | Page address or incoming path used by the browser of the client                                                                    |
+| ^                 | Original URL/Transaction | Combination of transaction name and original URL.<br/> Original URL appears if the URL exists. Otherwise, the transaction appears. |
+| ^                 | UserAgent                | Browser used to extract client-related data                                                                                        |
 
 :::note
 

@@ -1,0 +1,24 @@
+---
+id: dotnet-2_1_7
+title: .NET Agent v2.1.7
+toc_max_heading_level: 2
+pagination_next: release-notes/dotnet/dotnet-2_1_6
+---
+
+2023年10月16日
+
+-   <Status>Changed</Status>1つのトランザクションに多すぎるステップが発生し、負荷を発生させないように1000以上のステップは無視するように修正
+
+-   <Status>Fixed</Status>非同期呼び出し方式でHTTP request bodyが表示されない現象を修正
+
+-   <Status>Fixed</Status>一定時点以降、HTTP headerが異常に表示されるバグを修正
+
+-   <Status>Fixed</Status>同じネームスペースにあるWindows Communication Foundation(WCF、Webサービス)に関係ないパブリックメソッドがトランザクションを誘発し、トランザクション追跡が異常終了するエラーを修正
+
+-   <Status>Fixed</Status>エージェントを削除すると、IISメモリにロードされた一部のファイルが削除した後も残っているエラーを修正
+
+-   <Status>Deprecate</Status>WCF(ウェブサービス)タイムアウト時間設定オプション(<code>webservice_method_timeout</code>)削除
+
+    -   WCF終了時点をキャプチャできず、タイムアウトが発生するエラーを修正
+
+    -   ただし、ユーザがWCFメソッド内でException処理をきちんと行わない場合、トランザクションロストが発生する可能性があります。 <Link to='../../dotnet/agent-transaction'>次の文書</Link>から、`trace_active_transaction_lost_time`オプションを参照してください。

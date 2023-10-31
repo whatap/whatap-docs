@@ -64,6 +64,26 @@ A container map provides multiple user settings that allow you to create any des
 
 -   ![Reset icon](/img/ico-reset.svg) **_Reset_**: It initializes the screen view set by you.
 
+#### Metric selection and threshold setting
+
+![Setting of metric and thresholds on the container map](/img/k8s-container-map-thresholds.png)
+
+Chart metric selection and threshold setting determine the status on the container map. If the selected metric has numeric data, you can set thresholds. The set thresholds are displayed in color according to the following categories: 
+
+-   More than 0 and Less than <span class='slow'>Warning</span>: <span class='normal'>Blue</span>
+
+-   More than <span class='slow'>Warning</span> and Less than <span class='vslow'>Critical</span>: <span class='slow'>Orange</span>
+
+-   More than <span class='vslow'>Critical</span>: <span class='vslow'>Red</span>
+
+:::note
+
+-   Numerical metric units include **_pct_** (percentage), **_bps_**, **_millicore_**, and such. The **_pct#_** metric unit can have a value greater than 100%. 
+
+-   For more information about the chart metric selection and threshold setting, see [the following](container-status).
+
+:::
+
 #### Label options{#label}
 
 -   **_None_**: Labels are not displayed in the block.
@@ -74,7 +94,7 @@ A container map provides multiple user settings that allow you to create any des
 
 -   **_Selected metrics_**: The chart metric selected in **_ConState(state)_** is displayed.
 
-#### Real-time and historical inquiries
+#### Real-time and past search{#time-seletor}
 
 Container maps are based on real-time lookups based on multiple viewpoints. Use the time selector at the top left of the screen to change the real-time inquiry.
 

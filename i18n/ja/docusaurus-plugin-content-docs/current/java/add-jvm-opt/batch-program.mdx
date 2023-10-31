@@ -15,51 +15,117 @@ tags:
 
 ## エージェントダウンロード
 
-次のリンクから、バッチアプリケーションモニタリングのエージェントをダウンロードできます。
+バッチアプリケーションをモニタリングするエージェントは、画面の右下にあるチャネルトークからリクエストしてください。
 
-<Link to='https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/whatap.agent.batch-2.2.3.jar' class='ext-link'>エージェントダウンロード</Link>
+<details>
+<summary>バッチエージェントファイルの構成</summary>
 
-## バッチジョブ(Batch Job) のインストール
+_whatap.agent.batch.tar.gz_
 
-バッチジョブ(Batch Job)を1つのトランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、Jobプロセス用のJob Agentと、この情報をサーバーに中継するためのHost Agentに分けて2つのエージェントをインストールする必要があります。
+⎿ _whatap.agent-x.y.z.jar_：Javaエージェント
 
-```bash title='Batch Job Agent'
-java -javaagent:/full/path/to/whatap.agent.batch-X.Y.Z.jar -jar {batch job jar}
+⎿ _whatap.agent.batch.host-x.y.z.jar_: バッチホスト(Batch Host) - 収集サーバーにデータ送信
+
+⎿ _whatap.conf_: バッチホスト(Batch Host)設定ファイル(ファイルがない場合は、新しくファイルを作成し**_設定_**>**_エージェントのインストール_**メニューに`license`、`whatap.server.host`項目を追加してください。)
+
+⎿ _agent/whatap.agent.batch-x.y.z.jar_: バッチエージェント - アプリケーションデータを収集してバッチホストに送信
+
+⎿ _agent/whatap.conf_: バッチエージェント設定ファイル
+
+</details>
+
+## エージェント設定
+
+### バッチホスト(Batch Host) 設定
+
+`license`、`whatap.server.host`オプション値は、プロジェクトの**_設定_**>**_エージェントのインストール_**メニューから確認できます。
+
+```ini title='whatap.conf'
+# default setting
+license=
+whatap.server.host=
+
+# ステップを分割して送信する
+split_trace_enabled=true
+
+# １つのトレースに表示する最大ステップ数
+trace_step_max_count=1024
 ```
+
+### バッチエージェント設定
+
+```ini title='agent/whatap.conf'
+# default setting
+net_udp_listen_ip=0.0.0.0
+net_udp_listen_port=6611
+
+# バッチホストと通信設定
+net_udp_listen_ip=0.0.0.0
+net_udp_listen_port=6611
+
+# バッチジョブでhttp call最大個数
+trace_httpc_limit=1000000
+
+# バッチジョブにおけるsql最大個数
+trace_sql_limit=1000000
+
+# アクティブスタックの表示有無
+active_stack_enabled=true 
+# ５回以内
+active_stack_time1=5000
+# ５回以降
+active_stack_time2=10000
+# 最初のスタックの開始時間
+active_stack_start_wait_time=1000
+```
+
+## バッチジョブ(Batch Job) を実行する
+
+バッチジョブ(Batch Job)をトランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、JobプロセスのJobエージェントと、この情報をサーバに中継するためにHostエージェントに分離された２つのエージェントを実行する必要があります。
+
+### バッチホスト(Batch Host) 実行コマンド
 
 ```bash title='Batch Host Agent'
-java -jar whatap.agent.host-X.Y.Z.jar
+java -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar:{AGENT_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
+```
+
+```bash title='Batch Host Agent, Java 17 or later'
+java --add-opens=java.base/java.lang=ALL-UNNAMED -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar:{AGENT_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
+```
+
+### バッチエージェント(Batch Agent) 実行コマンド
+
+```bash title='Batch Agent'
+java -javaagent:{BATCH_AGENT_HOME}/whatap.agent.batch-x.y.z.jar -jar {APP_PATH}/batch-application.jar
+```
+
+```bash title='Batch Agent, Java 17 or later'
+java -javaagent:{BATCH_AGENT_HOME}/whatap.agent.batch-x.x.x.jar --add-opens=java.base/java.lang=ALL-UNNAMED -jar {APP_PATH}/batch-application.jar
 ```
 
 :::note
 
-Batch Job AgentとBatch Host Agentは、Batch Jobを実行するホストと一緒にインストールしてください。
-
-:::
-
-:::note
-
-{@include: _java-17.mdx}
+バッチジョブ(BatchJob)エージェントとバッチホスト(Batch Host)エージェントは、バッチジョブ(Batch Job)を実行するホストととしてインストールおよび実行してください。
 
 :::
 
 ## Time Limitの設定
 
-Batch Job AgentとBatch Host Agentの間はUDPを使用して通信します。
+Batch Job(Batch Job) AgentとBatch Host(Batch Host) Agentは、UDPを使用して通信します。
 
 ![Batch Job UDP](/img/batch-app-udp.png)
 
-バッチジョブは通常、長時間行われます。数十秒以上掛かる場合もあります。したがって、バッチジョブごとに、`time_limit`の値は異なる場合があります。バッチジョブが実行される予定処理時間を`time_limit`に設定してください。
+バッチジョブ(Batch Job)は、一般的に長時間で実行します。 数十秒を超えることがあります。 したがって、バッチジョブ(Batch Job)ごとに`time_limit`の値が異なる場合があります。バッチジョブ(Batch Job)が実行される推定処理時間を`time_limit`オプションで設定してください。
 
 ```ini title=whatap.conf
 time_limit=300000
-warning_time=time_limit's 70%
+warning_time=70% of time_limit
 step_interval=5000
 ```
 
 ## アクティブイコライザーカラーの設定
 
-バッチジョブの実行時間が、`time_limit`の70％に達すると黄色で表示し、`time_limit`を超えると赤色で表示します。
+バッチジョブ(Batch Job)の実行時間が`time_limit`の70%に達すると黄色で表示し、`time_limit`を超えると赤色で表示するように次のように設定してください。
 
 ```ini title='whatap.conf' {2,4} showLineNumbers
 ## 終了予定時間の70％
@@ -72,12 +138,24 @@ red_time = time_limit;
 
 :::note
 
-サーバー運用者は、バッチジョブの遅延をリアルタイムで確認するには、`time_limit`値を適切に設定してください。
+サーバ運用者は、バッチジョブ(Batch Job)が遅延しているかどうかをリアルタイムで確認する場合は、'time_limit'値を適切に設定してください。
 
 :::
 
 ## アクティブスタックの収集間隔を設定
 
-Batch Job Agentは、`step_interval`値の間隔でアクティブスタックを収集します。 
+バッチジョブ(Batch Job) エージェントは、`step_interval`オプション値の間隔でアクティブスタックを収集できます。
 
 ![Batch Job Step Interval](/img/batch-app-prof.png)
+
+## バッチエージェントのメトリクス指標の収集
+
+ダッシュボードは、バッチホスト(Batch Host)のHeap Memoryを収集し、バッチアプリケーションの性能指標はメトリクス(TagCount: `batch_job_counter`)で収集します。
+
+### `batch_job_counter`
+
+-   batch job: `pid`, `hostname`, `job_name`
+-   gc: `gc_count`, `gc_time_sum`, `gc_oldgen_count`
+-   heap: `heap_tot`, `heap_use`, `heap_max`, `heap_pending_final`, `heap_perm`
+-   cpu: `cputime`
+-   thread count: `thread_total_started`, `thread_count`, `thread_daemon`, `thread_peak_count`

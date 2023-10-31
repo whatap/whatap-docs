@@ -15,31 +15,97 @@ Different from WAS, the batch application runs and stops repeatedly. Accordingly
 
 ## Download agent
 
-You can download the agent for batch application monitoring through the following link:
+Request an agent for batch application monitoring through Channel Talk on the lower right of the screen.
 
-<Link to='https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/whatap.agent.batch-2.2.3.jar' class='ext-link'>Download agent</Link>
+<details>
+<summary>Batch agent file configuration</summary>
 
-## Installing the batch job
+_whatap.agent.batch.tar.gz_
 
-The batch job must be monitored from a single transaction perspective. WhaTap's Java agent needs to install two separate agents: Job agent for job processes and Host agent for relaying this information to the server.
+⎿ _whatap.agent-x.y.z.jar_: Java agent
 
-```bash title='Batch Job Agent'
-java -javaagent:/full/path/to/whatap.agent.batch-X.Y.Z.jar -jar {batch job jar}
+⎿ _whatap.agent.batch.host-x.y.z.jar_: Batch host - Transmits data to the collection server.
+
+⎿ _whatap.conf_: Batch host configuration file (If there is no file, create a new one to add the items for `license` and `whatap.server.host` in **_Setting_** > **_Agent installation_**.)
+
+⎿ _agent/whatap.agent.batch-x.y.z.jar_: Batch agent - Transmits the collected application data to the batch host.
+
+⎿ _agent/whatap.conf_: Batch agent configuration file
+
+</details>
+
+## Configuring the agent
+
+### Configuration of the batch host
+
+For the values of the `license` and `whatap.server.host` options, see **_Setting_** > **_Agent installation_** for the project.
+
+```ini title='whatap.conf'
+# default setting
+license=
+whatap.server.host=
+
+# Transmit by divided steps
+split_trace_enabled=true
+
+# Maximum step count to be displayed for a trace
+trace_step_max_count=1024
 ```
+
+### Batch agent configuration
+
+```ini title='agent/whatap.conf'
+# default setting
+net_udp_listen_ip=0.0.0.0
+net_udp_listen_port=6611
+
+# Establishing communication with the bach host
+net_udp_listen_ip=0.0.0.0
+net_udp_listen_port=6611
+
+# Maximum HTTP call count for a batch job
+trace_httpc_limit=1000000
+
+# Maximum SQL count for a batch job
+trace_sql_limit=1000000
+
+# Whether or not to display the active stack
+active_stack_enabled=true 
+# Within 5 times
+active_stack_time1=5000
+# After 5 times
+active_stack_time2=10000
+# Initial stack start time
+active_stack_start_wait_time=1000
+```
+
+## Running the batch job
+
+The batch job must be monitored from a single transaction perspective. WhaTap's Java agent needs to run two agents: Job agent for job processes and Host agent for relaying the information to the server.
+
+### Batch host commands
 
 ```bash title='Batch Host Agent'
-java -jar whatap.agent.host-X.Y.Z.jar
+java -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar:{AGENT_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
+```
+
+```bash title='Batch Host Agent, Java 17 or later'
+java --add-opens=java.base/java.lang=ALL-UNNAMED -cp {BATCH_HOST_HOME}/whatap.agent.batch.host-x.y.z.jar:{AGENT_HOME}/whatap.agent-x.y.z.jar -Dwhatap.name=batch whatap.agent.batch.App
+```
+
+### Batch agent commands
+
+```bash title='Batch Agent'
+java -javaagent:{BATCH_AGENT_HOME}/whatap.agent.batch-x.y.z.jar -jar {APP_PATH}/batch-application.jar
+```
+
+```bash title='Batch Agent, Java 17 or later'
+java -javaagent:{BATCH_AGENT_HOME}/whatap.agent.batch-x.x.x.jar --add-opens=java.base/java.lang=ALL-UNNAMED -jar {APP_PATH}/batch-application.jar
 ```
 
 :::note
 
-The batch job agent and batch host agent must be installed in the host that performs the batch job.
-
-:::
-
-:::note
-
-{@include: _java-17.mdx}
+Install and run the batch job agent and batch host agent together with the host that performs a batch job.
 
 :::
 
@@ -49,17 +115,17 @@ Between the batch job agent and batch host agent, communication is enabled throu
 
 ![Batch Job UDP](/img/batch-app-udp.png)
 
-Generally, a batch job is performed for a long time. It may take more than tens of seconds. Accordingly, the `time_limit` values may differ depending on each batch job. Set the estimated process time for the batch job in `time_limit`.
+Generally, a batch job is performed for a long time. It may take more than tens of seconds. Accordingly, the `time_limit` values may differ depending on each batch job. Set the estimated process time for the batch job in `time_limit` option.
 
 ```ini title=whatap.conf
 time_limit=300000
-warning_time=time_limit's 70%
+warning_time=70% of time_limit
 step_interval=5000
 ```
 
 ## Setting the active equalizer's color
 
-If the process time of a batch job exceeds 70% of `time_limit`, it is distinguished in yellow. If it exceeds `time_limit`, it is displayed in red.
+Set as follows to display in yellow if the batch job execution time exceeds 70% of `time_limit` and display in red if it exceeds `time_limit`.
 
 ```ini title='whatap.conf' {2,4} showLineNumbers
 ## 70% of the estimated end time
@@ -78,6 +144,18 @@ In order for the server administrator to check the delay of a batch job in real 
 
 ## Setting the active stack's collection interval
 
-The batch job agent collects active stacks at an interval of `step_interval`. 
+The batch job agent can collect active stacks at an interval set in the `step_interval` option.
 
 ![Batch Job Step Interval](/img/batch-app-prof.png)
+
+## Collection of metrics for the batch agent
+
+The dashboard collects the heap memory for the batch host and the performance metrics for batch applications are collected with the metric (TagCount: `batch_job_counter`).
+
+### `batch_job_counter`
+
+-   batch job: `pid`, `hostname`, `job_name`
+-   gc: `gc_count`, `gc_time_sum`, `gc_oldgen_count`
+-   heap: `heap_tot`, `heap_use`, `heap_max`, `heap_pending_final`, `heap_perm`
+-   cpu: `cputime`
+-   thread count: `thread_total_started`, `thread_count`, `thread_daemon`, `thread_peak_count`

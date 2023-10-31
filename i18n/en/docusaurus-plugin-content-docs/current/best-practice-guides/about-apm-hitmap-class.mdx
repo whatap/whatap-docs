@@ -31,7 +31,7 @@ In the WhaTap monitoring service, you can see the failure status of the service 
 
 Let's look at how to determine which type of failure has occurred depending on the shape of the distribution chart.
 
-**_HITMAP Transaction_** is the chart that displays the response time to user requests in a distribution chart over time. In **_Application Dashboard_**, select ![Right arrow icon](/img/right-arrow.svg) at the upper right of the hitmap widget to enter the **_Hitmap Transaction_** menu.
+**_HITMAP Transaction_** is the chart that displays the response time to user requests in a distribution chart over time. In **_Application Dashboard_**, select ![Right arrow icon](/img/right-arrow.svg) at the upper right of the hitmap widget to enter the **_Analysis_** > **_HITMAP_** menu.
 
 <ImgLang img='best-p/best-p-hitmap-transaction.png' />
 
@@ -117,11 +117,11 @@ When a pattern occurs, it is important to determine whether the factor of the se
 
 ![](/img/best-p/hitmap-transaction-sample.png)
 
-In the lower part of the chart, there are mostly transactions with fast response times. Accordingly, finding patterns is meaningless. You have to find common factors of the pattern caused in the slow section of the above area. When a vertical line pattern occurs and a lock occurs in the service (AP), the pattern occurs only in a web application. On the contrary, if a lock occurs in an externally connected database, the pattern occurs in all web applications.
+In the lower part of the chart, there are mostly transactions with fast response times. Accordingly, finding patterns is meaningless. You have to find common factors of the pattern caused in the slow section of the above area. When a vertical line pattern occurs and a lock occurs in the service (AP), the pattern occurs only in a web application. On the contrary, if a lock occurs in an externally connected database, the pattern occurs in all web applications. 
 
 <ImgLang img='best-p/hitmap-transaction-sample-00.png' />
 
-If you drag the chart area, the transaction information of the dragged area appears in the **_TX Trace_** list at the bottom. You can also find the source of the problem through the **_Agent Name_** column. The **_Application_** widget on the right also groups agents and displays them in a list.
+If you drag the chart area, the transaction information of the dragged area appears in the **_TX Trace_** list at the bottom. The **_Application_** widget on the right groups agents and displays them in a list.
 
 Because we are intended to find common factors of failures, first check whether problems have occurred in the same application or URL. Otherwise, you can also check whether the client IPs are the same.
 
@@ -131,19 +131,20 @@ How can we check if the cause of failure is an internal issue rather than an ext
 
 If it is an internal problem, you can find and solve any problem by checking the execution history of transactions over time and identifying the slowdown section. If it is an external problem, you can check the SQL and outbound call data.
 
-For example, to find any factor that causes a lock in a vertical line pattern, check the contact points between the slowest transaction and the fastest transaction in the same pattern. Drag the area where the pattern occurs on the hitmap chart. The **_TX Trace_** list displays the transactions of the area dragged to the list. Sort the **_TX traces_** by the elapsed time, and then select the transaction that took the longest. The **_Statistics_** window displays information details of the selected transaction.
+For example, to find any factor that causes a lock in a vertical line pattern, check the contact points between the slowest transaction and the fastest transaction in the same pattern. Drag the area where the pattern occurs on the **_HITMAP transaction_** chart. The **_TX Trace_** list displays the transactions of the area dragged to the list. Sort the **_TX traces_** by the elapsed time, and then select the transaction that took the longest. The **_ Transaction information_** window displays information details of the selected transaction.
 
 <ImgLang img='best-p/hitmap-transaction-sample-01.png' />
 
-In the **_Table View_** tab, you can check the **_section time_** and **_step time_**. **_Section time_** is the time when each step started or ended, and **_step time_** is the total time from the start to the end of each method. **_Gap_** is the interval between executed methods.
+In the **_Table View_** tab, you can check the **_Time_** and **_Elapsed_**. **_Time_** is the time when each step started or ended, and **_Elapsed_** is the total time from the start to the end of each method. **_Gap_** is the interval between executed methods.
 
 <ImgLang img='best-p/hitmap-transaction-sample-02.png' />
 
-You can find the slowdown section in the **_Table View_** tab. In the same way, check the slowdown section in the fastest transaction. You may find any common factor. If the slowdown was caused by the service (AP) logic, check the **_active stack_**. If you select **_Active Stack_**, the detailed information window appears. See the step number to correlate the **_active stack_** with the previously executed method. Check this number after clicking the **_Tree View_** tab. Because it is not possible to see the start time of the method using only the **_Tree View_** tab, check the **_section time_** first in the **_Table View_** tab. 
+You can find the slowed section in the **_Table view_** tab. In the same way, check the slowed section in the fastest transaction. You may find any common factors. If the slowed section was caused by the service (AP) logic, check the **_Active stack_**. If you select **_Active stack_**, the detailed information window appears. Check the correlation between the **_active stack_** and the previously executed method in the **_Tree View_** tab. If you click the section on the timeline bar, the expanded information appears for the selected section.
 
 :::note
 
 -   **Active stack** saves snapshots every 10 seconds, so you can check them at any section. Because the probability increases when identifying the section where the response time can be long, you can find the point where the section has been widened through the **active stack**.
+
 -   In the **_TX trace_** list, the transactions that include the **active stack** displays the <span class='mark active'>A</span> icon.
 
 :::
@@ -154,11 +155,11 @@ WhaTap monitoring service repeatedly snapshots the **active stack** to find recu
 
 :::note
 
--   Select **_More_** at the upper right of the **_Statistics_** window to expand for the basic transaction data. Errors, client IP, used devices, OS, country information, and such are provided. You can also see how many calls are being used by looking at the number and times of patches, the number and times of SQLs, and more.
+-   Select **_Record summary_** in the **_Transaction information_** window, the basic information of the transaction appears. It displays the client IP, used device, OS, country, and such. You can also see how many calls are being used by looking at the number and times of patches, the number and times of SQLs, and more.
 
     <ImgLang img='best-p/hitmap-transaction-sample-08.png' />
 
--   The graph that has summarized the above data is the **_diagram_** chart located in the center of the screen. For more information, see [the following](https://docs.whatap.io/java/trs-profile).
+-   For more information about **_Transaction information_**, see [the following](https://docs.whatap.io/java/trs-profile#transaction-info).
 
 :::
 
@@ -166,7 +167,7 @@ WhaTap monitoring service repeatedly snapshots the **active stack** to find recu
 
 -   **_Methods_**
 
-    Select **_Methods_** tab of the **_Statistics_** window. Like SQL, you can also see how many times a method was called within a single transaction. 
+    Select **_Methods_** tab. Like SQL, you can also see how many times a method was called within a single transaction. 
 
     <ImgLang img='analysis-tx-method-summary.png' />
 
@@ -174,7 +175,7 @@ WhaTap monitoring service repeatedly snapshots the **active stack** to find recu
 
 -   **_SQLs_**
 
-    Let's look at the case where the cause of failure is SQL, not internal logic. To see the SQL executions statistically within a single transaction, select the **_SQLs_** tab of the **_Statistics_** window.
+    Let's look at the case where the cause of failure is SQL, not internal logic. To see the SQL executions statistically within a single transaction, select the **_SQLs_** tab.
 
     <ImgLang img='analysis-tx-sql-summary.png' />
 
@@ -184,20 +185,21 @@ WhaTap monitoring service repeatedly snapshots the **active stack** to find recu
 
     <ImgLang img='analysis-tx-http-call.png' />
 
-    Select the **_HTTP Calls_** tab of the **_Statistics_** window. It provides the number of calls, total time, and average time for HTTP calls.
+    Select the **_HTTP Calls_** tab. It provides the number of calls, total time, and average time for HTTP calls.
 
--   **Multi-transaction**
+-   **_Multi-transaction_**
 
     The monolithic environment has a single APM configuration. In this case, check only the transactions for the APM. Recently, the technology like microservice architecture has become mainstream. Because a single APM is broken down into smaller chunks, the transactions that must be collected also increase. In this case, collecting all the splitted transactions takes much load, so the transactions related to a targeet transaction are also collected together. The transactions linked to other APMs are defined by WhaTap as **multi-transaction**. In the **_TX trace_** list, the transactions that include **multi-transactions** display the <span class='mark multi'>M</span> icon.
 
     <ImgLang img='analysis-tx-multi.png' />
 
-    Select **_Multi TX Chart_** in the **_Statistics_** window. The linked data for each transaction can be checked in a chart. If you select the **_Multi TX Table_** tab, you can see the detailed information.
+    Select the **_Multi-transaction_** tab. The data for each transaction can be seen on the chart. You can select **_Table_** and **_Tree_** to see the call relationships between transactions in a table or tree structure format.
 
     :::note
 
     -   For more information about the multi-transaction trace, see [the following](https://docs.whatap.io/java/trs-multi-trace).
-    -   Depending on the transaction, the **_Multi TX Table_** tab may not be available.
+
+    -   Depending on the transaction, the **_Multi transaction_** tab may not be available.
 
     :::
 
@@ -205,7 +207,13 @@ WhaTap monitoring service repeatedly snapshots the **active stack** to find recu
 
 <ImgLang img='analysis-tx-transaction-log.png' />
 
-In the **_Transaction Log_** tab of the **_Statistics_** window, you can also find further improvements through the logs left while the transaction is running.
+In the **_Transaction Log_** tab, you can also find further improvements through the logs left while the transaction is running.
+
+:::note
+
+For more information about transaction log, see [the following](https://docs.whatap.io/java/trs-profile#anlaysis-trace-transaction-log).
+
+:::
 
 ## Finishing
 
