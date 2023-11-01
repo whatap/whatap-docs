@@ -25,18 +25,14 @@ export default function InDoc ({children, product}) {
         // console.log(prods[i]);
         prod = prods[i]
         if (cProd == prod) {
-            // console.log("product!!!");
             myContents = children;
-            break;
+            return (
+                <MDXContents>
+                    {myContents}
+                </MDXContents>
+            );
         } else {
-            // console.log("not product!!!");
-            myContents = "";
+            return null;
         }
     }
-
-    return (
-        <MDXContents>
-            {myContents}
-        </MDXContents>
-    );
 }

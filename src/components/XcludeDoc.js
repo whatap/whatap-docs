@@ -26,17 +26,15 @@ export default function XcludeDoc ({children, product}) {
         prodx = prodsx[s]
         if (cProdx == prodx) {
             // console.log("product!!!");
-            myContent = "";
-            break;
+            return null;
         } else {
             // console.log("not product!!!");
             myContent = children;
+            return (
+                <MDXContent>
+                    {myContent}
+                </MDXContent>
+            );
         }
     }
-
-    return (
-        <MDXContent>
-            {myContent}
-        </MDXContent>
-    );
 }
