@@ -2,39 +2,14 @@ import React from 'react';
 import MDXContent from '@theme-original/MDXContent';
 import {useLocation} from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export default function XcludeDoc ({children, product}) {
-    const {
-        i18n: {currentLocale},
-    } = useDocusaurusContext();
-    let prodsx;
-    if (typeof product.split(",") !== undefined) {
-        prodsx = product.split(",");
-    } else {
-        prodsx.push(product);
-    }
-    let locationx = useLocation();
-    let myContent, cProdx;
-    if (currentLocale == 'ko') {
-        cProdx = locationx.pathname.split("/")[1];
-    } else {
-        cProdx = locationx.pathname.split("/")[2];
-    }
-    let s, prodx;
+    const { i18n: {currentLocale} } = useDocusaurusContext();
+    const location = useLocation();
     
-    for (s =0; s < prodsx.length; s ++) {
-        // console.log(prods[i]);
-        prodx = prodsx[s]
-        if (cProdx == prodx) {
-            // console.log("product!!!");
-            return null;
-        } else {
-            // console.log("not product!!!");
-            myContent = children;
-            return (
-                <MDXContent>
-                    {myContent}
-                </MDXContent>
-            );
-        }
-    }
+    const prods = Array.isArray(product) ? product : product.split(',');
+    const cProd = currentLocale === "ko" ? location.pathname.split("/")[1] : location.pathname.split("/")[2]
+    const isProduct = prods.includes(cProd);
+
+    return isProduct ? null : <MDXContent>{children}</MDXContent>;
 }
