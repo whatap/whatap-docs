@@ -3092,17 +3092,18 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_77',
+                id: 'release-notes/nodejs/nodejs-0_4_80',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_77',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_80',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_77'
               ]
             },
             {
