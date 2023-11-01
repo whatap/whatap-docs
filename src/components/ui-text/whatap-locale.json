@@ -49506,5 +49506,10 @@
     "en": "Invoice Preview History",
     "ja": "請求書プレビュー",
     "ko": "청구서 미리보기"
+  },
+  "serverDetail": {
+    "en": "Server Detail",
+    "ja": "サーバー 詳細",
+    "ko": "서버 상세"
   }
 }

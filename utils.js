@@ -92,6 +92,12 @@ function colsToJson(data){
     "ko": "청구서 미리보기"
   };
 
+  rd["serverDetail"] = {
+    "en": "Server Detail",
+    "ja": "サーバー 詳細",
+    "ko": "서버 상세"
+  }
+
   return rd;
 }
 
