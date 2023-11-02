@@ -213,6 +213,12 @@ module.exports = Promise.resolve({
             position: 'left',
           },
           {
+            type: 'doc',
+            docId: 'learning-guides',
+            label: '학습하기',
+            position: 'left',
+          },
+          {
             type: 'dropdown',
             label: '상품별 문서 바로가기',
             position: 'left',
