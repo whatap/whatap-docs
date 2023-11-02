@@ -3395,6 +3395,10 @@ const sidebars = {
           label: '대시보드 분석',
           collapsible: true,
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'best-practice-guides/about-dashboard'
+          },
           items: [
             {
               type: 'doc',
@@ -3485,7 +3489,7 @@ const sidebars = {
         {
           type: 'doc',
           label: '대시보드 분석',
-          id: 'best-practice-guides/about-apm-dashboard'
+          id: 'best-practice-guides/about-dashboard'
         },
         {
           type: 'doc',
