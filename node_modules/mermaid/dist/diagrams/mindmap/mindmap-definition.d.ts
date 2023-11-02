@@ -1,4 +1,4 @@
-import * as mindmapDb from './mindmapDb';
+import * as mindmapDb from './mindmapDb.js';
 export declare const diagram: {
     db: typeof mindmapDb;
     renderer: {

@@ -2,11 +2,12 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {
-  findFirstCategoryLink,
+  findFirstSidebarItemLink,
   useDocById,
 } from '@docusaurus/theme-common/internal';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {translate} from '@docusaurus/Translate';
+import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 function CardContainer({href, children}) {
   return (
@@ -17,13 +18,15 @@ function CardContainer({href, children}) {
     </Link>
   );
 }
-function CardLayout({href, title, description}) {
+function CardLayout({href, icon, title, description}) {
   return (
     <CardContainer href={href}>
-      <h2 className={clsx('text--truncate', styles.cardTitle)} title={title}>
-        {/* {icon}  */}
-        {title}
-      </h2>
+      <Heading
+        as="h2"
+        className={clsx('text--truncate', styles.cardTitle)}
+        title={title}>
+        {icon} {title}
+      </Heading>
       {description && (
         <p
           className={clsx('text--truncate', styles.cardDescription)}
@@ -35,7 +38,7 @@ function CardLayout({href, title, description}) {
   );
 }
 function CardCategory({item}) {
-  const href = findFirstCategoryLink(item);
+  const href = findFirstSidebarItemLink(item);
   // Unexpected: categories that don't have a link have been filtered upfront
   if (!href) {
     return null;
@@ -43,7 +46,7 @@ function CardCategory({item}) {
   return (
     <CardLayout
       href={href}
-      // icon="🗃️"
+      icon="🗃️"
       title={item.label}
       description={
         item.description ??
@@ -66,7 +69,7 @@ function CardLink({item}) {
   return (
     <CardLayout
       href={item.href}
-      // icon={icon}
+      icon={icon}
       title={item.label}
       description={item.description ?? doc?.description}
     />

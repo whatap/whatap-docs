@@ -1,4 +1,4 @@
-export declare type LogLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal';
+export type LogLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal';
 export declare const LEVELS: Record<LogLevel, number>;
 export declare const log: Record<keyof typeof LEVELS, typeof console.log>;
 /**
