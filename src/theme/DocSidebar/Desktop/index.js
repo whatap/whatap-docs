@@ -4,8 +4,6 @@ import {useThemeConfig} from '@docusaurus/theme-common';
 import Logo from '@theme/Logo';
 import CollapseButton from '@theme/DocSidebar/Desktop/CollapseButton';
 import Content from '@theme/DocSidebar/Desktop/Content';
-import NavbarSearch from '@theme/Navbar/Search';
-import SearchBar from '@theme/SearchBar';
 import styles from './styles.module.css';
 import Translate, { translate } from "@docusaurus/Translate";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -34,7 +32,7 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
         hideOnScroll && styles.sidebarWithHideableNavbar,
         isHidden && styles.sidebarHidden,
       )}>
-      <div className='hold-menu'>
+        <div className='hold-menu'>
         <ul>
           <li><a href={docshome} className='home'>
             {
