@@ -18,14 +18,15 @@ function CardContainer({href, children}) {
     </Link>
   );
 }
-function CardLayout({href, icon, title, description}) {
+function CardLayout({href, title, description}) {
   return (
     <CardContainer href={href}>
       <Heading
         as="h2"
         className={clsx('text--truncate', styles.cardTitle)}
         title={title}>
-        {icon} {title}
+        {/* {icon}  */}
+        {title}
       </Heading>
       {description && (
         <p
@@ -46,7 +47,7 @@ function CardCategory({item}) {
   return (
     <CardLayout
       href={href}
-      icon="🗃️"
+      // icon="🗃️"
       title={item.label}
       description={
         item.description ??
@@ -69,7 +70,7 @@ function CardLink({item}) {
   return (
     <CardLayout
       href={item.href}
-      icon={icon}
+      // icon={icon}
       title={item.label}
       description={item.description ?? doc?.description}
     />
