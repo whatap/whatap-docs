@@ -55,7 +55,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
     ```
 
-5.  Compress the following files: _Procfile_, _.ebextensions_, and _{application}.jar_.
+5.  Compress the following files: _Procfile_, _.ebextensions_, and _\{application}.jar_.
 
     ```bash
     zip -r {application}.zip Procfile .ebextensions/{application}.jar
