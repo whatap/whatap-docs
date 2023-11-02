@@ -14,7 +14,7 @@
 
 :::
 
-## GROKパーサ{#grok-parser-detail}
+## GROKパーサ \{#grok-parser-detail}
 
 ログが不規則な形で収集される場合、GROKパーサを使用してログをパーシングできます。 GROK文法は、named regular expressionsを提供し、正規表現式をより簡単かつ便利に使用できます。 
 
@@ -70,7 +70,7 @@ GROKは2種類の文法を提供します。
 
     :::
 
-#### `%{SYNTAX:SEMANTIC}`活用例{#syntax-semantic-usage}
+#### `%{SYNTAX:SEMANTIC}`活用例 \{#syntax-semantic-usage}
 
 次は`%{SYNTAX:SEMANTIC}`文法を活用する例です。
 
@@ -110,7 +110,7 @@ semanticな単語すべて、正規表現式に置き換えることができま
 - level : LEVEL
 ```
 
-#### `(?<SEMANTIC>REGX)`活用例{#semantic-regx}
+#### `(?<SEMANTIC>REGX)`活用例 \{#semantic-regx}
 
 named regular expressionsでマッチングされない部分は`(?<SEMANTIC>REGX)`パターンを使ってパーシングできます。 上記の[サンプルログ](#syntax-semantic-usage)から`%{SYNTAX:SEMANTIC}`文法だけでパーシングされない領域は次の通りです。
 
@@ -242,7 +242,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 :::
 
-### シミュレーション{#grok-simulation}
+### シミュレーション \{#grok-simulation}
 
 **_パーサシミュレーション_**ウィンドウから**_ログ_**と**_パターン_**を入力してパーシング結果を事前に確認することができます。 
 
@@ -258,7 +258,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
     <ImgLang img='log-grok-parser-simulation.png' desc='GROKパーサーシミュレーション'/>
 
-## JSONパーサ{#json-parser-detail}
+## JSONパーサ \{#json-parser-detail}
 
 ログがJSONフォーマットで収集される場合、JSONパーサを使用して簡単かつ便利にパーシングできます。
 

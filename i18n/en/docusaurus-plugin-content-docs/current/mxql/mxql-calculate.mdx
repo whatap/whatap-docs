@@ -30,7 +30,7 @@ Let's learn about the commands that process metrics with the MXQL syntax. The me
 | [ADJUST](#adjust)            | Used to change the value of a numeric field.                                            |
 | [FILTER](#filter)            | Only the data with specific conditions is passed to the next step.                      |
 
-## ROWNUM {#rownum}
+## ROWNUM  \{#rownum}
 
 Adds a line number field.
 
@@ -40,7 +40,7 @@ FLEXLOAD
 ROWNUM
 ```
 
-## SELECT {#select}
+## SELECT  \{#select}
 
 Select a field. Fields that are not selected are not passed to the next step. 
 
@@ -110,7 +110,7 @@ The `SELECT` command is also used when changing the field sequences.
 
 :::
 
-## CREATE{#create}
+## CREATE \{#create}
 
 Adds a field.
 
@@ -155,7 +155,7 @@ Adds a field.
     SELECT [ time, okind, okindName, my_okind_name]
     ```
 
-## DELETE{#delete}
+## DELETE \{#delete}
 
 Deletes a field.
 
@@ -171,7 +171,7 @@ Be sure to enter it as a string array. `DELETE` `pcode` does not work. (as of 20
 
 :::
 
-## RENAME{#rename}
+## RENAME \{#rename}
 
 Changes the field name.
 
@@ -189,7 +189,7 @@ Changes the field name.
 
 :::
 
-## GROUP{#group}
+## GROUP \{#group}
 
 The data is grouped.
 
@@ -229,7 +229,7 @@ If the `time` field does not exist in the record, all data is grouped.
 
 :::
 
-## UPDATE{#update}
+## UPDATE \{#update}
 
 It changes the data of the field. You can select an operation for the fields that are in the MetricValue state.
 
@@ -307,7 +307,7 @@ You can modify data values by setting the following options.
 
 :::
 
-## ORDER{#order}
+## ORDER \{#order}
 
 The data is aligned. 
 
@@ -342,7 +342,7 @@ If the data contains the `time` field, `time` becomes the top priority for sorti
 
 :::
 
-## JOIN{#join}
+## JOIN \{#join}
 
 Before introducing the `JOIN` command, let's understand the concept of the command. The command, join is used to check the merged results of two query statements. At this time, the data to merge the results of the two queries based on which field must be passed, and this field is called `pk` or `primaryKey`.  
 
@@ -418,7 +418,7 @@ All data to be saved in Yard has the values for `time` and `oid`. This indicates
 
 :::
 
-## LIMIT{#limit}
+## LIMIT \{#limit}
 
 It limits the number of data extracted. The data as many as the number set earlier is passed to the next step.
 
@@ -430,7 +430,7 @@ TAGLOAD
 LIMIT 3
 ```
 
-## SKIP{#skip}
+## SKIP \{#skip}
 
 It ignores some data passed from the previous step.
 
@@ -443,7 +443,7 @@ SKIP 5
 LIMIT 10
 ```
 
-## FILTER-KEYS{#filter-keys}
+## FILTER-KEYS \{#filter-keys}
 
 Extracts only the data with specific content.
 
@@ -459,7 +459,7 @@ FILTERKEYS {keys: [oid], values: [497765289]}
 
 :::
 
-## FIRST-ONLY{#first-only}
+## FIRST-ONLY \{#first-only}
 
 Only the first data with a specific value (pair) is passed to the next step.
 
@@ -489,7 +489,7 @@ If `{backward : true}` is used in the data loading step, the result of this comm
 
 :::
 
-## TIME-FILTER{#time-filter}
+## TIME-FILTER \{#time-filter}
 
 Used to skip data in a specific time.
 
@@ -513,7 +513,7 @@ TAGLOAD
 TIME-FILTER {time:'2021/06/22 00:00:00', gmt:9 }
 ```
 
-## INJECT{#inject}
+## INJECT \{#inject}
 
 Adds MXQL queries to that location.
 
@@ -537,7 +537,7 @@ Example of the passing INJECT value in **_Sitemap_** > **_MXQL Data_**
 
 :::
 
-## ADJUST{#adjust}
+## ADJUST \{#adjust}
 
 It is used to change the value of a numeric field. (`time` value cannot be changed.)
 
@@ -578,7 +578,7 @@ It is used to change the value of a numeric field. (`time` value cannot be chang
 
     ![](https://img.whatap.io/media/images/mxql-10.png)
 
-## FILTER{#filter}
+## FILTER \{#filter}
 
 Only the data with specific conditions is passed to the next step.
 

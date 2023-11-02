@@ -68,7 +68,7 @@ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {
 | act_dbc           | <span class='api'>string</span> | Active DB connection count                                  |
 | act_socket        | <span class='api'>string</span> | Active socket count                                         |
 
-## Active agent count{#active-agent}
+## Active agent count \{#active-agent}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/act_agent
 
@@ -80,7 +80,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 5 // Active agent count
 ```
 
-## Inactive agent count{#deactive-agent}
+## Inactive agent count \{#deactive-agent}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/inact_agent
 
@@ -92,7 +92,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 1 // Inactive agent count
 ```
 
-## Host count{#host-count}
+## Host count \{#host-count}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/host
 
@@ -104,7 +104,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 2 // Host count
 ```
 
-## Sum of CPU cores of the host{#sum-cpu}
+## Sum of CPU cores of the host \{#sum-cpu}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/cpucore
 
@@ -116,7 +116,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 16 // CPU core count
 ```
 
-## Transaction count{#count-transaction}
+## Transaction count \{#count-transaction}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/txcount
 
@@ -128,7 +128,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 469 // Transaction count
 ```
 
-## TPS{#tps}
+## TPS \{#tps}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/tps
 
@@ -140,7 +140,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 92.03 // Number of transactions processed per second (Transaction per second, TPS)
 ```
 
-## Active users (5 minutes){#active-user-5m}
+## Active users (5 minutes) \{#active-user-5m}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/user
 
@@ -158,7 +158,7 @@ WhaTap measures **concurrent users** by counting them who issued transactions wi
 
 :::
 
-## Active transactions{#active-transaction}
+## Active transactions \{#active-transaction}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/actx
 
@@ -170,7 +170,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 171 // Active transaction count
 ```
 
-## Average response time{#response-time}
+## Average response time \{#response-time}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/rtime
 
@@ -182,7 +182,7 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 1644 // Average response time
 ```
 
-## Average CPU utilization{#usage-cpu}
+## Average CPU utilization \{#usage-cpu}
 
 <span class='apitype'>GET</span> https://api.whatap.io/open/api/cpu
 

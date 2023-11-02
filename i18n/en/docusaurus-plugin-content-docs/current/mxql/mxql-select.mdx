@@ -19,7 +19,7 @@ Let's learn about the commands that select metrics with the MXQL syntax.
 | [HEADER](#header)         | Set the value to be passed to the front end.                                           |
 | [TIME-RANGE](#time-range) | Set the start time and end time to search data.                                        |
 
-## CATEGORY{#category}
+## CATEGORY \{#category}
 
 Select which category to search the data from. This **command** and **operands** must be set. 
 
@@ -49,7 +49,7 @@ Select which category to search the data from. This **command** and **operands**
 
 :::
 
-## OID, OKIND, ONODE{#oid}
+## OID, OKIND, ONODE \{#oid}
 
 Set to search the data extracted from specific `OID`, `OKIND`, and `ONODE`. It can select one value of `OID`, `OKIND`, and `ONODE`.
 
@@ -91,7 +91,7 @@ In case of `OKIND` and `ONODE` commands, only when the `okind` and `onode` relat
 
 :::
 
-## HEADER{#header}
+## HEADER \{#header}
 
 The data searched by MXQL is used in the widget of the Flex Board. You can set information about which fields (of the data searched by MXQL) and which type have been used to express the widget of the Flex Board.
 
@@ -112,7 +112,7 @@ It must be passed depending on the format used by the widget of the Flex Board.
 
 :::
 
-## TIME-RANGE{#time-range}
+## TIME-RANGE \{#time-range}
 
 You can set the data lookup time range. Basically, you can use DatePicker from [Test environment](mxql-guide#test-env) to set the time. If this command is used in the test environment, the value set for DatePicker is ignored. 
 
@@ -130,7 +130,7 @@ You can set the data lookup time range. Basically, you can use DatePicker from [
 -   Retrieving data only for the previous 15 seconds before `etime` (passes `etime` as a parameter)
 
     ```sql
-    TIME-RANGE {duration:15s, etime:$etime}
+    TIME-RANGE \{duration:15s, etime:$etime}
     CATEGORY app_counter
     TAGLOAD
     SELECT
@@ -139,7 +139,7 @@ You can set the data lookup time range. Basically, you can use DatePicker from [
 -   Retrieving data only for 15 seconds from `stime` (passes `stime` as a parameter)
 
     ```sql
-    TIME-RANGE {duration:15s, stime:$stime}
+    TIME-RANGE \{duration:15s, stime:$stime}
     CATEGORY app_counter
     TAGLOAD
     SELECT

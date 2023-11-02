@@ -94,7 +94,7 @@ What is required if the DB connection pool is insufficient? Of course, the solut
 
 First, you can use the method to adjust the maximum number of connections in the pool. Set the appropriate number of pools by gradually increasing pools and checking that the DB active count is kept within the maximum number of pools. However, if the pool count is set too large, it may adversely affect the application performance due to an excessive increase in resource consumption. After ensuring sufficient memory and capacity, adjust it depending on the operating environment.
 
-### Reusing and optimizing the connections{#q12}
+### Reusing and optimizing the connections \{#q12}
 
 Second, use the method using the connection reuse and optimization. For example, if a connection leak occurs because the application does not return used connections, it cannot be resolved even though you increase the connection pool count. In this case, the DB active count trend draws an upward trend graph. To prevent the connection leaks, you must manage to return the used connections. After using the connection, you can explicitly set to return it or try reusing it.
 

@@ -33,7 +33,7 @@
 
 <ImgLang img='set-events-metrics.png' desc='メトリクスイベント' />
 
-### 基本情報を入力{#basic-info}
+### 基本情報を入力 \{#basic-info}
 
 -   **_イベント名_** ：追加するイベント名を入力してください。
 
@@ -85,7 +85,7 @@
 
 :::
 
-### **_イベント受信設定_**{#set-receive-event}
+### **_イベント受信設定_** \{#set-receive-event}
 
 <ImgLang img='set-event-receive.png' desc='イベント受信設定' />
 
@@ -250,7 +250,7 @@ import TabItem from '@theme/TabItem';
 
   選択したイベントを削除するには、イベント設定ウィンドウの右上の![削除アイコン](/img/ico-trash.svg) **_削除_**ボタンをクリックしてください。
 
-## 発生条件、対象選択ガイド{#condition-guide}
+## 発生条件、対象選択ガイド \{#condition-guide}
 
 メトリクスアラート通知でイベントの発生条件とイベント対象選択では同じ文法を使用します。ただし、イベントの生成条件は、タグ(Tag)のKeyを変数として使用し、イベント対象選択は、フィールド(Field)のKeyを変数として使用します。
 
@@ -366,37 +366,37 @@ import TabItem from '@theme/TabItem';
 | [isEmpty](#isempty)       | isEmpty(param1)            | param1が`null`または`EmptyString("")`の場合は、`true`、反対の場合は、`false`             |
 | [isNotEmpty](#isnotempty) | isNotEmpty(param1)         | param1が`null`でも、`EmptyString("")`でもない場合は、`true`、反対の場合は、`false`          |
 
-#### startsWith{#startwith}
+#### startsWith \{#startwith}
 
 ```java
 startsWith(Key, "Value")
 ```
 
-#### endsWith{#endswith}
+#### endsWith \{#endswith}
 
 ```java
 endsWith(Key, "Value")
 ```
 
-#### isNull{#isnull}
+#### isNull \{#isnull}
 
 ```java
 isNull(Key)
 ```
 
-#### isNotNull{#isnotnull}
+#### isNotNull \{#isnotnull}
 
 ```java
 isNotNull(Key)
 ```
 
-#### isEmpty{#isempty}
+#### isEmpty \{#isempty}
 
 ```java
 isEmpty(Key)
 ```
 
-#### isNotEmpty{#isnotempty}
+#### isNotEmpty \{#isnotempty}
 
 ```java
 isNotEmpty(Key)

@@ -48,7 +48,7 @@ SELECT [ time, pcode ]
 FILTER { key : tx_count, value : 5}
 ```
 
-## Test environment{#test-env}
+## Test environment \{#test-env}
 
 In Home > Select Project > **_Sitemap_** > **_Laboratory_** > **_MXQL Data_**, you can test the MXQL query.
 
@@ -104,7 +104,7 @@ SELECT [ time, pcode ]
 FILTER { key : tx_count, value : 5}
 ```
 
-## MetricValue (composite value) {#metric-value}
+## MetricValue (composite value)  \{#metric-value}
 
 MetricValue (composite value) is an MXQL data structure that conveniently supports frequently used operations in the metrics processing step. The [GROUP](mxql-calculate#group) and [UPDATE](mxql-calculate#update) commands in the metrics processing step can be used only when the metrics are saved in the MetricValue format.
 
@@ -200,13 +200,13 @@ The default output for MetricValue type fields is `avg`. `avg` is applied to Met
     UPDATE {key:tps, value:avg}
     ```
 
-## Predefined MXQL query statement{#custom-mxql}
+## Predefined MXQL query statement \{#custom-mxql}
 
 You can perform MXQL by setting the path of a predefined MXQL query file without directly writing the MXQL query. For example, the MXQL queries to obtain "Number of active transactions by agent," "Number of cases by &lt;section&gt;," and "Last 15 seconds" are as follows:
 
 ```sql
 HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
-TIME-RANGE {duration:15s, etime:$etime}
+TIME-RANGE \{duration:15s, etime:$etime}
 OIDSET {oid:$oid, okind:$okind, onode:$onode}
 CATEGORY app_counter
 
@@ -234,7 +234,7 @@ In [the following](#custom-query-saas), you can see available queries.
 
 ## References
 
-### Bind variables (parameters){#bind-parameter}
+### Bind variables (parameters) \{#bind-parameter}
 
 In MXQL, you can use the bind variables. Bind variables start with `$`. Also, only the part corresponding to the value can be used. 
 
@@ -275,7 +275,7 @@ Data that can be searched in MXQL is divided into two types depending on the for
 
 Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of categories included in [the following](mxql-loading#flexload-items).
 
-## List of predefined MXQL queries provided by the SaaS service{#custom-query-saas}
+## List of predefined MXQL queries provided by the SaaS service \{#custom-query-saas}
 
 The main purpose of the function to set an MXQL query as a path without directly writing it is not to simply call a complex query, but to allow the administrator to write and use the query as intended. Therefore, rather than checking which queries are included in Yard, use them by registering queries by yourself. Because the case to use the `JOIN` command is a special case among the cases where MXQL queries are used, the administrator must register the query directly and use the path of the file.
 
@@ -293,7 +293,7 @@ You can save the query to register as a file in the path set in `mxql_root` of t
     ```sql
     HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 
-    TIME-RANGE {duration:15s, etime:$etime}
+    TIME-RANGE \{duration:15s, etime:$etime}
 
     OIDSET {oid:$oid, okind:$okind, onode:$onode}
 

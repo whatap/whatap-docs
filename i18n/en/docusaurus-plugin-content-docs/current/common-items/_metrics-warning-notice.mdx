@@ -33,7 +33,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 <ImgLang img='set-events-metrics.png' desc='Metrics Event' />
 
-### Entry of basic information{#basic-info}
+### Entry of basic information \{#basic-info}
 
 -   **_Event name_**: Enter the name of the event to add.
 
@@ -85,7 +85,7 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 :::
 
-### **_Notification setting_**{#set-receive-event}
+### **_Notification setting_** \{#set-receive-event}
 
 <ImgLang img='set-event-receive.png' desc='Notification Setting' />
 
@@ -250,7 +250,7 @@ Most of what is included in Event Setting can be specified using **MXQL**. It pr
 
   To delete the selected event, select ![Delete icon](/img/ico-trash.svg) **_Delete_** on the upper right of the event setting window.
 
-## Guide to select generation conditions and targets{#condition-guide}
+## Guide to select generation conditions and targets \{#condition-guide}
 
 For the event generation conditions and selection of event targets on metrics alerts, use the same syntaxes. For event generation conditions, use the tag key as a variable. For selection of event targets, use the field key as a variable.
 
@@ -366,37 +366,37 @@ You can conveniently search for embedded strings via the wildcard (`*`).
 | [isEmpty](#isempty)       | isEmpty(param1)            | If param1 is `null` or `EmptyString("")`, the value becomes `true`. Otherwise, the value becomes `false`.        |
 | [isNotEmpty](#isnotempty) | isNotEmpty(param1)         | If param1 is not `null` nor `EmptyString("")`, the value becomes `true`. Otherwise, the value becomes `false`.   |
 
-#### startsWith{#startwith}
+#### startsWith \{#startwith}
 
 ```java
 startsWith(Key, "Value")
 ```
 
-#### endsWith{#endswith}
+#### endsWith \{#endswith}
 
 ```java
 endsWith(Key, "Value")
 ```
 
-#### isNull{#isnull}
+#### isNull \{#isnull}
 
 ```java
 isNull(Key)
 ```
 
-#### isNotNull{#isnotnull}
+#### isNotNull \{#isnotnull}
 
 ```java
 isNotNull(Key)
 ```
 
-#### isEmpty{#isempty}
+#### isEmpty \{#isempty}
 
 ```java
 isEmpty(Key)
 ```
 
-#### isNotEmpty{#isnotempty}
+#### isNotEmpty \{#isnotempty}
 
 ```java
 isNotEmpty(Key)

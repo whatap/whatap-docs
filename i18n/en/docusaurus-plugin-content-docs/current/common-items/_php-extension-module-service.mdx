@@ -1,4 +1,4 @@
-## Manual configuration of PHP extension module and whatap-php service{#extension-modul-manual-setting}
+## Manual configuration of PHP extension module and whatap-php service \{#extension-modul-manual-setting}
 
 If installation of the PHP extension module and whatap-php service (_install.sh_) has not been successful, you can install them manually. Use this method when environment information cannot be checked for any reasons such as PHP compile installation.
 
@@ -24,7 +24,7 @@ whatap.app_process_name=   # Process name of apache and php-fpm (httpd,php-fpm)
 | whatap.app_name         | `APHP` is used for the Apache server and `FPHP` is used for php-fpm.                                                                                                                           |
 | whatap.app_process_name | If you enter the exact value as the execution process name of Apache or php-fpm, the memory usage for the process is collected. For example, they are `httpd`, `apache2`, `php-fpm`, and such. |
 
-### Checking the PHP command (CLI){#check-php-cli-path}
+### Checking the PHP command (CLI) \{#check-php-cli-path}
 
 ```bash
 $ which php
@@ -70,7 +70,7 @@ Thread Safety => enabled       	# ZTS available
 
 ### Checking and configuring the PHP extension module's path
 
-#### Checking the PHP extension module's path{#check-php-extension-module}
+#### Checking the PHP extension module's path \{#check-php-extension-module}
 
 ```bash
 $ sudo php -i | grep extension_dir
@@ -102,7 +102,7 @@ export WHATAP_PHP_EXT_SRC=    # whatap library path and file name
 1.  In the `$WHATAP_PHP_EXT_HOME` environment variable, set the PHP extension module's path.
 2.  In the `$WHATAP_PHP_EXT_SRC` environment variable, set the whatap library's full file path.
 
-### whatap.ini configuration{#php-ini-path}
+### whatap.ini configuration \{#php-ini-path}
 
 1.  Check the PHP ini file's path that has been added.
 

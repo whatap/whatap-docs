@@ -14,7 +14,7 @@ The log parser helps you transform the irregular logs into a structured form. Wh
 
 :::
 
-## GROK parser{#grok-parser-detail}
+## GROK parser \{#grok-parser-detail}
 
 If the logs are collected in an irregular form, you can use the GROK parser to parse them. GROK syntax provides named regular expressions, allowing you to use regular expressions more easily. 
 
@@ -70,7 +70,7 @@ GROK provides two types of syntaxes.
 
     :::
 
-#### `%{SYNTAX:SEMANTIC}` Usage example{#syntax-semantic-usage}
+#### `%{SYNTAX:SEMANTIC}` Usage example \{#syntax-semantic-usage}
 
 The following is an example that uses the `%{SYNTAX:SEMANTIC}` syntax.
 
@@ -110,7 +110,7 @@ If you parse with the above syntax, you can extract tags as follows. In this way
 - level : LEVEL
 ```
 
-#### `(?<SEMANTIC>REGX)` Usage example{#semantic-regx}
+#### `(?<SEMANTIC>REGX)` Usage example \{#semantic-regx}
 
 The parts that do not match with the named regular expressions can be parsed using the `(?<SEMANTIC>REGX)` pattern. In the [sample log](#syntax-semantic-usage) above, the parts that cannot be parsed with the `%{SYNTAX:SEMANTIC}` syntax are as follows.
 
@@ -242,7 +242,7 @@ If you parse with the above syntax, you can extract tags as follows.
 
 :::
 
-### Simulation{#grok-simulation}
+### Simulation \{#grok-simulation}
 
 You can check the parsed result in advance by entering **_log_** and **_pattern_** in the **_Parser simulation_** window. 
 
@@ -258,7 +258,7 @@ You can check the parsed result in advance by entering **_log_** and **_pattern_
 
     <ImgLang img='log-grok-parser-simulation.png' desc='GROK parser simulation'/>
 
-## JSON parser{#json-parser-detail}
+## JSON parser \{#json-parser-detail}
 
 If logs are collected in JSON format, they can be easily parsed using the JSON parser.
 

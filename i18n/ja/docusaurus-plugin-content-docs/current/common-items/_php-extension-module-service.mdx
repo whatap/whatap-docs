@@ -1,4 +1,4 @@
-## PHP拡張モジュールおよびwhatap-phpサービスの手動設定{#extension-modul-manual-setting}
+## PHP拡張モジュールおよびwhatap-phpサービスの手動設定 \{#extension-modul-manual-setting}
 
 PHP拡張モジュールとwhatap-phpサービスのインストールおよびオプションのインストール(_install.sh_)が正しく動作しない場合の手動で設定する方法を説明します。PHPコンパイルのインストールなど、環境情報が確認できない場合に使用してください。
 
@@ -24,7 +24,7 @@ whatap.app_process_name=   # apache, php-fpmのプロセス名(httpd,php-fpm)
 | whatap.app_name         | Apacheサーバーは、`APHP`を使用し、php-fpmは、`FPHP`を使用します。                                                                    |
 | whatap.app_process_name | Apacheまたはphp-fpmで実行可能なプロセス名を設定して正しいプロセス名を入力すると、そのプロセスに使用されるメモリが収集されます。例として、`httpd`、`apache2`、`php-fpm`などが挙げられます。 |
 
-### PHPコマンド(CLI) パスの確認{#check-php-cli-path}
+### PHPコマンド(CLI) パスの確認 \{#check-php-cli-path}
 
 ```bash
 $ which php
@@ -70,7 +70,7 @@ Thread Safety => enabled       	# ZTS対応
 
 ### PHP拡張モジュールのパスを確認して設定
 
-#### PHP拡張モジュールパスの確認{#check-php-extension-module}
+#### PHP拡張モジュールパスの確認 \{#check-php-extension-module}
 
 ```bash
 $ sudo php -i | grep extension_dir
@@ -102,7 +102,7 @@ export WHATAP_PHP_EXT_SRC=    # WhaTapライブラリパスおよびファイル
 1.  `$WHATAP_PHP_EXT_HOME`環境変数にPHP拡張モジュールパスを設定します。
 2.  `$WHATAP_PHP_EXT_SRC`環境変数にWhaTapライブラリ全体のファイルパスを設定します。
 
-### whatap.ini設定{#php-ini-path}
+### whatap.ini設定 \{#php-ini-path}
 
 1.  PHP追加のini設定パスを確認します。
 
