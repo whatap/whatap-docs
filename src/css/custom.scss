@@ -1779,13 +1779,13 @@ main {
       .table-desc {
         font-size: .9em;
       }
-      table {
-        font-size: .75em;
-        tr {
-          td {
-            &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7) {
-              width: 17%;
-            }
+    }
+    h3#compare-db + table, h3#compare-db + table + table {
+      font-size: .75em;
+      tr {
+        td {
+          &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7) {
+            width: 17%;
           }
         }
       }
