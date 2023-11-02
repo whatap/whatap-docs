@@ -21,6 +21,7 @@ import {
   useSearchResultUrlProcessor,
 } from '@docusaurus/theme-search-algolia/client';
 import Layout from '@theme/Layout';
+import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 // Very simple pluralization: probably good enough for now
 function useDocumentsFoundPlural() {
@@ -190,7 +191,6 @@ function SearchPageContent() {
           const titles = Object.keys(hierarchy).map((key) =>
             sanitizeValue(hierarchy[key].value),
           );
-          console.log(titles[titles.length-1]);
           const docpath = breadcrums;
           return {
             title: titles[titles.length-1],
@@ -303,7 +303,7 @@ function SearchPageContent() {
       </Head>
 
       <div className="container margin-vert--lg">
-        <h1>{getTitle()}</h1>
+        <Heading as="h1">{getTitle()}</Heading>
 
         <form className="row" onSubmit={(e) => e.preventDefault()}>
           <div
@@ -352,7 +352,8 @@ function SearchPageContent() {
               'text--right',
               styles.searchLogoColumn,
             )}>
-            <a
+            <Link
+              to="https://www.algolia.com/"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.algolia.com/"
@@ -377,7 +378,7 @@ function SearchPageContent() {
                   />
                 </g>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -386,19 +387,19 @@ function SearchPageContent() {
             {searchResultState.items.map(
               ({title, url, summary, breadcrumbs, docpath}, i) => (
                 <article key={i} className={styles.searchResultItem}>
-                  <h2 className={styles.searchResultItemHeading}>
+                  <Heading as="h2" className={styles.searchResultItemHeading}>
                     {docpath == ""
                       ? <Link to={url} dangerouslySetInnerHTML={{__html: title}} />
                       : <Link to={url} dangerouslySetInnerHTML={{__html: docpath.replace("Docs > ", "")}} />
                     }
-                  </h2>
+                  </Heading>
                   {}
                   {breadcrumbs.length > 1 && (
-                    <h3
-                      className={clsx(
-                        'breadcrumbs',
-                        styles.searchResultItemPath,
-                      )}>
+                    <Heading as="h3"
+                        className={clsx(
+                          'breadcrumbs',
+                          styles.searchResultItemPath,
+                        )}>
                       {breadcrumbs.slice(1).map((html, index) => (
                         <span
                           key={index}
@@ -408,8 +409,9 @@ function SearchPageContent() {
                           dangerouslySetInnerHTML={{__html: html}}
                         />
                       ))}
-                    </h3>
+                    </Heading>
                   )}
+
                   {summary && (
                     <p
                       className={styles.searchResultItemSummary}
