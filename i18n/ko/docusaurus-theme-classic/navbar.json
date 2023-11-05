@@ -234,5 +234,9 @@
   "item.label.Network Performance Monitoring": {
     "message": "Network Performance Monitoring",
     "description": "Navbar item with label Network Performance Monitoring"
+  },
+  "item.label.학습하기": {
+    "message": "학습하기",
+    "description": "Navbar item with label 학습하기"
   }
 }
