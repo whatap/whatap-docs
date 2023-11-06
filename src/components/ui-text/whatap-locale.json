@@ -26730,7 +26730,7 @@
     "ja": "範囲",
     "ko": "범위",
     "zh": "Range",
-    "service_id": "_03891"
+    "service_id": "TTL03891"
   },
   "search_depth": {
     "en": "Search depth",
@@ -32328,7 +32328,7 @@
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
     "ja": "15日間無料体験できます。{br}以降、自動的に有償転換されます。",
-    "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
+    "ko": "15일간 무료 체험이 가능합니다. {br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
   },
@@ -35184,7 +35184,7 @@
   "maintenance_repeat_info": {
     "en": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">Once</span>: Maintenance plans operate at a specified time.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Daily</span>: Maintenance plans operate at a specified time everyday.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Weekly</span>: Maintenance plans operate on a specified day of the week.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Monthly</span>: Maintenance plans operate on a day of each month.</span>\n <span style=\"display:block;\"><span style=\"font-weight:bold;\">Yearly</span>: Maintenance plans operate on a specified date every year.</span>",
     "ja": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">一回</span>: 指定した特定時点に一回のメンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">日間</span>: 指定した特定時点に毎日メンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">週間</span>: 指定した曜日に毎週メンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">月間</span>: 指定した日に毎月メンテナンスを実行します。</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">年間</span>: 指定した日に毎年メンテナンスを実行します。</span>",
-    "ko": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">한번만</span>: 지정 시간에 1회 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매일</span>: 매일 지정 시간에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매주</span>: 매주 지정 요일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매월</span>: 매월 지정 일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매년</span>: 매년 지정된 날자에 정비 계획 동작</span>",
+    "ko": "<span style=\"display:block;\"><span style=\"font-weight:bold;\">한번만</span>: 지정 시간에 1회 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매일</span>: 매일 지정 시간에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매주</span>: 매주 지정 요일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매월</span>: 매월 지정 일에 정비 계획 동작</span>\n<span style=\"display:block;\"><span style=\"font-weight:bold;\">매년</span>: 매년 지정된 날짜에 정비 계획 동작</span>",
     "zh": "\"<span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Once</span>: Maintenance plans operate at a specified time.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Daily</span>: Maintenance plans operate at a specified time everyday.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Weekly</span>: Maintenance plans operate on a specified day of the week.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Monthly</span>: Maintenance plans operate on a day of each month.</span>\n <span style=\"\"display:block;\"\"><span style=\"\"font-weight:bold;\"\">Yearly</span>: Maintenance plans operate on a specified date every year.</span>\"",
     "service_id": "_05106"
   },
@@ -48230,10 +48230,10 @@
     "service_id": "DSC07002"
   },
   "DSC07003": {
-    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
+    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。 <br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
-    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
+    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
   },
   "BTN07004": {
@@ -49420,10 +49420,10 @@
     "service_id": "ITM07176"
   },
   "ITM07177": {
-    "en": "After initialization is complete",
-    "ja": "初期化完了後",
-    "ko": "초기화 완료 이후",
-    "zh": "After initialization is complete",
+    "en": "Initialization complete",
+    "ja": "初期化完了",
+    "ko": "초기화 완료",
+    "zh": "Initialization complete",
     "service_id": "ITM07177"
   },
   "ITM07178": {
@@ -49467,6 +49467,328 @@
     "ko": "연결된 컨테이너가 없습니다. 프로젝트 액세스 키를 확인하세요.",
     "zh": "There are no associated containers. Please check your project access key.",
     "service_id": "DSC07183"
+  },
+  "NTC07184": {
+    "en": "Please enter {key} in JSON format.",
+    "ja": "{key}をJSON形式で入力してください。",
+    "ko": "{key}을(를) JSON 형식으로 입력해주세요.",
+    "zh": "Please enter {key} in JSON format.",
+    "service_id": "NTC07184"
+  },
+  "BTN07185": {
+    "en": "Default",
+    "ja": "デフォルト",
+    "ko": "기본",
+    "zh": "默认",
+    "service_id": "BTN07185"
+  },
+  "BTN07186": {
+    "en": "1 min",
+    "ja": "1分",
+    "ko": "1분",
+    "zh": "1分",
+    "service_id": "BTN07186"
+  },
+  "BTN07187": {
+    "en": "5 min",
+    "ja": "5分",
+    "ko": "5분",
+    "zh": "5分",
+    "service_id": "BTN07187"
+  },
+  "BTN07188": {
+    "en": "1 h",
+    "ja": "1時間",
+    "ko": "1시간",
+    "zh": "1小时",
+    "service_id": "BTN07188"
+  },
+  "DSC07189": {
+    "en": "No recommended value exists.",
+    "ja": "推奨値はありません。",
+    "ko": "추천 값이 존재하지 않습니다.",
+    "zh": "No recommended value exists.",
+    "service_id": "DSC07189"
+  },
+  "DSC07190": {
+    "en": "Search for logs that contain values ​​greater than the search value.",
+    "ja": "検索値より大きい値を含むログを検索します。",
+    "ko": "검색 값보다 큰 값이 포함된 로그를 조회합니다.",
+    "zh": "Search for logs that contain values ​​greater than the search value.",
+    "service_id": "DSC07190"
+  },
+  "DSC07191": {
+    "en": "Search for logs containing values ​​greater than or equal to the search value.",
+    "ja": "検索値以上の値を含むログを検索します。",
+    "ko": "검색 값보다 크거나 같은 값이 포함된 로그를 조회합니다.",
+    "zh": "Search for logs containing values ​​greater than or equal to the search value.",
+    "service_id": "DSC07191"
+  },
+  "DSC07192": {
+    "en": "Search for logs with the same value as the search value.",
+    "ja": "検索値と同じ値を持つログを検索します。",
+    "ko": "검색 값과 같은 값을 가진 로그를 조회합니다.",
+    "zh": "Search for logs with the same value as the search value.",
+    "service_id": "DSC07192"
+  },
+  "DSC07193": {
+    "en": "Search for logs that contain values ​​different from the searched value.",
+    "ja": "検索された値とは異なる値を含むログを検索します。",
+    "ko": "검색 값과 다른 값이 포함된 로그를 조회합니다.",
+    "zh": "Search for logs that contain values ​​different from the searched value.",
+    "service_id": "DSC07193"
+  },
+  "DSC07194": {
+    "en": "Search for logs that contain values ​​less than the search value.",
+    "ja": "検索値より小さい値を含むログを検索します。",
+    "ko": "검색 값보다 작은 값이 포함된 로그를 조회합니다.",
+    "zh": "Search for logs that contain values ​​less than the search value.",
+    "service_id": "DSC07194"
+  },
+  "DSC07195": {
+    "en": "Search for logs containing values ​​less than or equal to the search value.",
+    "ja": "検索値以下の値を含むログを検索します。",
+    "ko": "검색 값보다 작거나 같은 값이 포함된 로그를 조회합니다.",
+    "zh": "Search for logs containing values ​​less than or equal to the search value.",
+    "service_id": "DSC07195"
+  },
+  "DSC07196": {
+    "en": "Invalid tag",
+    "ja": "無効なタグ",
+    "ko": "유효하지 않는 태그",
+    "zh": "Invalid tag",
+    "service_id": "DSC07196"
+  },
+  "TTL07197": {
+    "en": "Date / Time",
+    "ja": "日付 / 時刻",
+    "ko": "날짜 / 시간",
+    "zh": "Date / Time",
+    "service_id": "TTL07197"
+  },
+  "ITM07198": {
+    "en": "Selected column",
+    "ja": "選択した列",
+    "ko": "선택된 컬럼",
+    "zh": "Selected column",
+    "service_id": "ITM07198"
+  },
+  "ITM07199": {
+    "en": "All columns",
+    "ja": "すべての列",
+    "ko": "모든 컬럼",
+    "zh": "All columns",
+    "service_id": "ITM07199"
+  },
+  "ITM07200": {
+    "en": "Parsed data",
+    "ja": "解析されたデータ",
+    "ko": "파싱된 데이터",
+    "zh": "Parsed data",
+    "service_id": "ITM07200"
+  },
+  "ITM07201": {
+    "en": "Original data",
+    "ja": "オリジナルデータ",
+    "ko": "원본 데이터",
+    "zh": "Original data",
+    "service_id": "ITM07201"
+  },
+  "DSC07202": {
+    "en": "Apply for WhaTap user training",
+    "ja": "WhaTap ユーザートレーニングに申し込む",
+    "ko": "와탭 사용자 교육 신청",
+    "zh": "Apply for WhaTap user training",
+    "service_id": "DSC07202"
+  },
+  "DSC07203": {
+    "en": "This version is not supported.",
+    "ja": "サポートしていないバージョンです。",
+    "ko": "지원하지 않는 버전입니다.",
+    "zh": "This version is not supported.",
+    "service_id": "DSC07203"
+  },
+  "TTL07204": {
+    "en": "Cluster Object",
+    "ja": "クラスタオブジェクト",
+    "ko": "클러스터 오브젝트",
+    "zh": "Cluster Object",
+    "service_id": "TTL07204"
+  },
+  "TTL07205": {
+    "en": "Cluster Integration Information",
+    "ja": "クラスタ統合情報",
+    "ko": "클러스터 통합 정보",
+    "zh": "Cluster Integration Information",
+    "service_id": "TTL07205"
+  },
+  "TTL07206": {
+    "en": "Cluster Version",
+    "ja": "クラスタバージョン",
+    "ko": "클러스터 버전",
+    "zh": "Cluster Version",
+    "service_id": "TTL07206"
+  },
+  "TTL07207": {
+    "en": "kubelet Version",
+    "ja": "kubelet バージョン",
+    "ko": "kubelet 버전",
+    "zh": "kubelet Version",
+    "service_id": "TTL07207"
+  },
+  "TTL07208": {
+    "en": "Container Runtime",
+    "ja": "コンテナランタイム",
+    "ko": "컨테이너 런타임",
+    "zh": "Container Runtime",
+    "service_id": "TTL07208"
+  },
+  "TTL07209": {
+    "en": "Object list",
+    "ja": "オブジェクトリスト",
+    "ko": "오브젝트 목록",
+    "zh": "Object list",
+    "service_id": "TTL07209"
+  },
+  "TTL07210": {
+    "en": "Count Trend",
+    "ja": "数の推移",
+    "ko": "개수 추이",
+    "zh": "Count Trend",
+    "service_id": "TTL07210"
+  },
+  "TTL07211": {
+    "en": "Number of Pods/Containers",
+    "ja": "パード/コンテナ数",
+    "ko": "파드/컨테이너 수",
+    "zh": "Number of Pods/Containers",
+    "service_id": "TTL07211"
+  },
+  "TTL07212": {
+    "en": "Number of Containers",
+    "ja": "コンテナ数",
+    "ko": "컨테이너 수",
+    "zh": "Number of Containers",
+    "service_id": "TTL07212"
+  },
+  "TTL07213": {
+    "en": "Number of Pods",
+    "ja": "パード数",
+    "ko": "파드 수",
+    "zh": "Number of Pods",
+    "service_id": "TTL07213"
+  },
+  "TTL07214": {
+    "en": "Number of Logs/Events",
+    "ja": "ログ/イベント数",
+    "ko": "로그/이벤트 수",
+    "zh": "Number of Logs/Events",
+    "service_id": "TTL07214"
+  },
+  "TTL07215": {
+    "en": "Number of Logs",
+    "ja": "ログ数",
+    "ko": "로그 수",
+    "zh": "Number of Logs",
+    "service_id": "TTL07215"
+  },
+  "TTL07216": {
+    "en": "Number of Events",
+    "ja": "イベント数",
+    "ko": "이벤트 수",
+    "zh": "Number of Events",
+    "service_id": "TTL07216"
+  },
+  "TTL07217": {
+    "en": "Number of Alarms",
+    "ja": "アラーム数",
+    "ko": "알람 수",
+    "zh": "Number of Alarms",
+    "service_id": "TTL07217"
+  },
+  "TTL07218": {
+    "en": "Last 24 hours",
+    "ja": "最近24時間",
+    "ko": "최근 24시간",
+    "zh": "Last 24 hours",
+    "service_id": "TTL07218"
+  },
+  "TTL07219": {
+    "en": "Last hour",
+    "ja": "最近1時間",
+    "ko": "최근 1시간",
+    "zh": "Last hour",
+    "service_id": "TTL07219"
+  },
+  "TTL07220": {
+    "en": "Number of Nodes",
+    "ja": "ノード数",
+    "ko": "노드 수",
+    "zh": "Number of Nodes",
+    "service_id": "TTL07220"
+  },
+  "TTL07221": {
+    "en": "By Phase",
+    "ja": "Phase別",
+    "ko": "Phase 별",
+    "zh": "By Phase",
+    "service_id": "TTL07221"
+  },
+  "TTL07222": {
+    "en": "By State",
+    "ja": "State別",
+    "ko": "State 별",
+    "zh": "By State",
+    "service_id": "TTL07222"
+  },
+  "TTL07223": {
+    "en": "Total",
+    "ja": "合計",
+    "ko": "전체",
+    "zh": "Total",
+    "service_id": "TTL07223"
+  },
+  "DSC07224": {
+    "en": "Supported versions: {version} or higher",
+    "ja": "サポートバージョン：{version}以降",
+    "ko": "지원 버전: {version} 이상",
+    "zh": "Supported versions: {version} or higher",
+    "service_id": "DSC07224"
+  },
+  "TLT07225": {
+    "en": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
+    "ja": "使用料金は契約方式（固定価格または使用量連携）に\n金額に割引オプションが適用された金額です。",
+    "ko": "사용요금은 계약 방식(고정가 또는 사용량 연계)에 \n따른 금액으로 할인옵션이 적용된 금액입니다.",
+    "zh": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
+    "service_id": "TLT07225"
+  },
+  "TLT07226": {
+    "en": "The discount amount is based on each discount condition applied at the time of contract.\nIt is converted into an amount and printed.",
+    "ja": "割引金額は、契約時に適用される各割引条件です。\n金額に換算して出力されます。",
+    "ko": "할인금액은 계약 시 적용된 각각의 할인 조건을\n금액으로 환산하여 출력됩니다.",
+    "zh": "The discount amount is based on each discount condition applied at the time of contract.\nIt is converted into an amount and printed.",
+    "service_id": "TLT07226"
+  },
+  "DSC07227": {
+    "en": "Actual amount used",
+    "ja": "実用金額",
+    "ko": "실사용 금액",
+    "zh": "Actual amount used",
+    "service_id": "DSC07227"
+  },
+  "DSC07228": {
+    "en": "Compared to actual use",
+    "ja": "実用的なコントラスト",
+    "ko": "실사용 대비",
+    "zh": "Compared to actual use",
+    "service_id": "DSC07228"
+  },
+  "DSC07229": {
+    "en": "apply discount",
+    "ja": "割引適用",
+    "ko": "할인 적용",
+    "zh": "apply discount",
+    "service_id": "DSC07229"
   },
   "": {
     "": "",
