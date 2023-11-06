@@ -3045,7 +3045,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/java-batch-2_2_20',
@@ -3054,7 +3054,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java-batch/java-batch-2_2_20',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java-batch/java-batch-2_2_19'
               ],
@@ -3142,14 +3142,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_8',
+                id: 'release-notes/dotnet/dotnet-2_1_9',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_8',
+                  id: 'release-notes/dotnet/dotnet-2_1_9',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_8',
                 'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-2_1_6',
                 'release-notes/dotnet/dotnet-2_1_5',
@@ -3158,7 +3159,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_2',
                 'release-notes/dotnet/dotnet-2_1_1',
                 'release-notes/dotnet/dotnet-2_1_0',
-                'release-notes/dotnet/dotnet-2_0_9',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3251,7 +3251,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_6_12',
@@ -3260,7 +3260,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_6_12',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_11',
                 'release-notes/db/dbx-1_6_10',
@@ -3276,7 +3276,7 @@ const sidebars = {
               label: 'XOS',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/xos-1_1_6j',
@@ -3285,7 +3285,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/xos-1_1_6j',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/xos-1_1_6g',
                 'release-notes/db/xos-1_1_4',
