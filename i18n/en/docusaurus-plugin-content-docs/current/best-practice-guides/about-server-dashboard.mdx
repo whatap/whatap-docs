@@ -43,7 +43,7 @@ The core of the server monitoring is the process. You have to quickly grasp the 
 
 ## Server Status Summary
 
-![Info Panel](/img/resourceboard-info.png)
+<ImgLang img="resourceboard-info.png" desc="Info Panel" />
 
 You can easily check the summary metrics for all servers registered in the project through Info Panel at the top of the **_Resource Board_**. 
 
@@ -53,7 +53,7 @@ The **_OS_** widget indicates the number of operating systems in the project, **
 
 In addition, if you select the ![Server Status Map icon](/img/dashboard-honeycomb.svg) icon in the **_Resource Board_** main chart to go to **_Server Status Map_**, you can see the status of servers in the project at a glance through the honeycomb chart. The honeycomb chart view is useful when the number of servers is so great. An individual hexagon indicates a server agent. Servers with problems are visualized in color so you can intuitively identify them. If you select an individual hexagon, the **_Server Detail_** page appears for the server agent.
 
-![Honeycomb Chart cht](/img/honeycomb-view.png)
+<ImgLang img="honeycomb-view.png" desc="Honeycomb Chart cht" />
 
 You can easily check the outline of the total resource usage and server status by using each widget on the WhaTap **_Resource Board_**. 
 
@@ -61,27 +61,27 @@ You can easily check the outline of the total resource usage and server status b
 
 The most important factor to check the normal process operation is the CPU usage. This is because CPU metric reflects the system load the fastest. WhaTap provides the CPU usage with a distribution chart so that you can check the overall system operation status at a glance. If you select the ![Resource Map Icon](/img/dashboard-hitmap.svg) icon in **_Resource Board_**, you can see the **_CPU Resource Map_** widget. You can check the CPU usage distribution for all servers in the project through the **_CPU Resource Map_** widget. Drag the cell area to see the detailed information of the section.
 
-![Resource Map Resource Board](/img/resourceboard-resourcemap.png)
+<ImgLang img="resourceboard-resourcemap.png" desc="Resource Map Resource Board" />
 
 For efficient operation of cloud IT assets, you have to **avoid** both **over** and **under** resources and **properly adjust** the **usage**. The following example screen seeks to balance the cost and performance efficiency with the resource usage around 50% for operation optimization. In case of the example, you can avoid any temporary failure with the performance margin of 50% when the usage spikes.
 
-![40% Under Resource Map](/img/resourcemap-under40.png)
+<ImgLang img="resourcemap-under40.png" desc="40% Under Resource Map" />
 
 Over-input is the condition in which systems have been overinstalled in the service and the infrastructure costs too much. Because system stability is guaranteed, users are not affected significantly during the spike. To reduce the time for monitoring, there is a tendency of over-input causing to decrease the average usage. However, because the increase of the tendency of overinput causes the cost to increase, it is important to quickly recognize the condition. Under-input is the condition in which the system usage is out of the management range due to the increase in load by a system change, and causes deterioration in service quality and convenience. Appropriate action must be taken before users leave the service.
 
 WhaTap **_CPU Resource Map_** makes it easy to identify and check over- and under-input situations. The lower part of the map tends to be over-input, and the upper part tends to be under-input. 
 
-![Resource Map Example cht](/img/temp-resourcemap.png)
+<ImgLang img="temp-resourcemap.png" desc="Resource Map Example cht" />
 
 Drag the ![number-s](/img/number-01.png) area at the bottom of the example screen **_CPU Resource Map_** to view the detailed information. In the **_CPU% per server_** graph, you can see the over-input tendency as follows:
 
-![Over-input cht](/img/cpu-usage.png)
+<ImgLang img="cpu-usage.png" desc="Over-input cht" />
 
 This suggests a high tendency, but not all servers displayed at the bottom are in an over-input status. For the servers with periodic peak loads, be sure to pay attention in interpretation of the charts.
 
 Drag the ![number-s](/img/number-02.png) area at the top of **_CPU Resource Map_** to view the detailed information. In the **_CPU% per server_** graph, you can see the under-input tendency. The following detailed information example is a typical CPU shortage or starvation status screen, and the server is a server of interest with repeated peaks and falls. 
 
-![starvation cht](/img/cpu-usage-starvation.png)
+<ImgLang img="cpu-usage-starvation.png" desc="starvation cht" />
 
 IT resources are subject to continual efficiency and improvement and they require constant review. WhaTap Server Monitoring reflects the know-how of engineers in visualization so that abnormal situations can be quickly identified and the processes can be viewed immediately. With **_CPU Resource Map_**, you can easily see over- and under-resource status, as well as checking key processes at a glance with top 5 resource usage list widgets, which is to be described later. Reduce unnecessary chart configuration that requires various presets and quickly view the over- and under-input status and key processes through the data-intensive WhaTap dashboards. 
 
@@ -95,11 +95,11 @@ Before a bigger problem occurs, an example is to be suggested to detect a major 
 
 As a result of reviewing the history of failures that occurred in the same equipment based on the status data of the example, you can see that abnormal situations such as slowdown and index file corruption occurred. In response, we introduced SSD and took actions to use the NAS snapshot backup for the part that was difficult to introduce in large capacity, and solved the disk I/O issue.
 
-![Disk Specification Change cht](/img/discio-usage.png)
+<ImgLang img="discio-usage.png" desc="Disk Specification Change cht" />
 
 **_Alert Status_** that allows you to check the recent event trend, can be checked by selecting ![Alert Status icon](/img/ico-noti.svg) in the fixed menu at the top of **_Resource Board_**. WhaTap provides its own default alert threshold settings. Once the agent has been installed and data has been collected, alerts can be checked from then on without any setting. For example, the disk I/O (%) metric displays the disk utilization in 5 seconds. Disk I/O (%) above 80% can affect the system performance. Disk I/O 100% indicates that the disk is working non-stop. The default warning value setting for disk I/O (%) in WhaTap Server Monitoring is 90%. In other words, if it exceeds 90%, the alert is triggered immediately even if there is no threshold setting.
 
-![Real-time Alert cht2](/img/server-rt-notice.png)
+<ImgLang img="server-rt-notice.png" desc="Real-time Alert cht2" />
 
 WhaTap's default alert settings allow you to quickly start monitoring as soon as installing the agent without any complicated steps. It is a result of adopting efficiency and user convenience, the characteristics of WhaTap Server Monitoring. For more information about the alert settings of Server Monitoring, including easy-to-set process alerts, see [the following](https://docs.whatap.io/server/warning-notice).
 
