@@ -37,17 +37,17 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 ### ![](/img/number-04.png)エージェントインストール{#install}
 
-**プロジェクトアクセスキー**を発行された場合は、インストール手順セクションでWhaTapエージェントのインストールを続けることができます。 <cmdname sid="management" className="uitext" /> > <cmdname sid="agent_installation" className="uitext" />メニューからインストール手順セクションにアクセスすることもできます。
+**プロジェクトアクセスキー**を発行された場合は、インストール手順セクションでWhaTapエージェントのインストールを続けることができます。 <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_installation" className="uitext" />メニューからインストール手順セクションにアクセスすることもできます。
 
 1.  サポート環境を確認してください。 
 
-2.  <cmdname sid="management" className="uitext" /> > <cmdname sid="agent_installation" className="uitext" />メニューの<cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />タブを選択してください。 案内に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
+2.  <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_installation" className="uitext" />メニューの<Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />タブを選択してください。 案内に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
 
     :::note 
 
     **エージェントのダウンロード**
 
-    -   環境に応じて<cmdname sid="download" className="uitext" />ボタンを選択するか、コマンドを使用してサーバーから直接ダウンロードします。
+    -   環境に応じて<Cmdname sid="download" className="uitext" />ボタンを選択するか、コマンドを使用してサーバーから直接ダウンロードします。
     -   環境に応じて、リポジトリを登録し、パッケージをインストールします。
 
     :::
@@ -135,21 +135,21 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 ### ![](/img/number-05.png)ダッシュボード照会{#dashboard}
 
-エージェントインストール後、データがWhaTapサーバーに送信されると、<cmdname sid="dashboard" className="uitext" />メニューでプロジェクトの全体現況をリアルタイムで照会することができます。 WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズダッシュボードを提供します。
+エージェントインストール後、データがWhaTapサーバーに送信されると、<Cmdname sid="dashboard" className="uitext" />メニューでプロジェクトの全体現況をリアルタイムで照会することができます。 WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズダッシュボードを提供します。
 
--   アプリケーションは、<cmdname sid="app_dashboard" className="uitext" />と<cmdname sid="transaction_map" className="uitext" />、<cmdname sid="active_transaction" className="uitext" />、<cmdname sid="application_topology" className="uitext" />そして<cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
+-   アプリケーションは、<Cmdname sid="app_dashboard" className="uitext" />と<Cmdname sid="transaction_map" className="uitext" />、<Cmdname sid="active_transaction" className="uitext" />、<Cmdname sid="application_topology" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
 
--   サーバは、<cmdname sid="sms_resource_board" className="uitext" />と<cmdname sid="sms_compound_eye" className="uitext" />そして<cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
+-   サーバは、<Cmdname sid="sms_resource_board" className="uitext" />と<Cmdname sid="sms_compound_eye" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
 
--   データベースは、<cmdname sid="instance_list" className="uitext" />と<cmdname sid="instance_monitoring" className="uitext" />、<cmdname sid="multi_instance_monitoring" className="uitext" />、<cmdname sid="slow_query" className="uitext" />そして<cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
+-   データベースは、<Cmdname sid="instance_list" className="uitext" />と<Cmdname sid="instance_monitoring" className="uitext" />、<Cmdname sid="multi_instance_monitoring" className="uitext" />、<Cmdname sid="slow_query" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://img.whatap.io/23/11/06/031831DB_prd.mp4}
 
--   Kubernetesは、<cmdname sid="containerMap" className="uitext" />の各ウィジェットを使用して、ノード、コンテナ、アプリケーション、ログ、イベント情報を動的に確認できます。
+-   Kubernetesは、<Cmdname sid="containerMap" className="uitext" />の各ウィジェットを使用して、ノード、コンテナ、アプリケーション、ログ、イベント情報を動的に確認できます。
 
     {@video: https://img.whatap.io/23/11/06/022318en_kubernetes_.mp4}
 
@@ -172,7 +172,7 @@ TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張�
 
 ### ![](/img/ic-number-07.svg)通知設定{#notification}
 
-WhaTapモニタリングサービスは、収集されるすべての指標に対してしきい値ベースの通知設定が可能です。 <cmdname sid="event_statistic" className="uitext" />メニューでイベントと受信設定及び過去の記録を確認することができます。 個人別に通知受信の設定が可能なだけでなく、メール、SMS、メッセンジャーなど多様な通知受信チャンネルを提供します。 
+WhaTapモニタリングサービスは、収集されるすべての指標に対してしきい値ベースの通知設定が可能です。 <Cmdname sid="event_statistic" className="uitext" />メニューでイベントと受信設定及び過去の記録を確認することができます。 個人別に通知受信の設定が可能なだけでなく、メール、SMS、メッセンジャーなど多様な通知受信チャンネルを提供します。 
 
 通知設定の詳細については、製品ごとに以下の文書を参照してください。 
 
@@ -210,7 +210,7 @@ WhaTapモニタリングサービスは、収集されるすべての指標に�
 
 ### ![](/img/ic-number-08.svg)レポート照会{#report}
 
-レポートは、サービス利用状況とトラブルの発生記録を報告する文書で、モニタリングデータ分析はサービスの改善方向を決める指標になります。 WhaTapは、<cmdname sid="report" className="uitext" />メニューでレポートを作成し、業務自動化をサポートします。 個々のプロジェクト単位のレポートとマルチプロジェクト単位の統合レポートを提供します。
+レポートは、サービス利用状況とトラブルの発生記録を報告する文書で、モニタリングデータ分析はサービスの改善方向を決める指標になります。 WhaTapは、<Cmdname sid="report" className="uitext" />メニューでレポートを作成し、業務自動化をサポートします。 個々のプロジェクト単位のレポートとマルチプロジェクト単位の統合レポートを提供します。
 
 :::note
 
@@ -222,7 +222,7 @@ WhaTapモニタリングサービスは、収集されるすべての指標に�
 
 ### ![](/img/ic-number-09.svg)メンバー管理{#member}
 
-ユーザーは、<cmdname sid="management" className="uitext" /> > <cmdname sid="project_member" className="uitext" />メニューでプロジェクトメンバーを追加することができます。 プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
+ユーザーは、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="project_member" className="uitext" />メニューでプロジェクトメンバーを追加することができます。 プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
 
 :::note
 

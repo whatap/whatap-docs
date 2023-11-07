@@ -13,7 +13,7 @@ toc_max_heading_level: 3
 
 ## Composite metrics event templates{#composite-metrics-template}
 
-To add a composite metrics event, select **_+_** <cmdname sid="create_new_composite_mxql_event" className="uitext" /> and a template. It provides a template that generates alerts based on the thresholds set by the metrics for CPU, disk I/O, and network I/O.
+To add a composite metrics event, select **_+_** <Cmdname sid="create_new_composite_mxql_event" className="uitext" /> and a template. It provides a template that generates alerts based on the thresholds set by the metrics for CPU, disk I/O, and network I/O.
 
 <ImgLang img='server-composite-metrics-template.png' desc='Server composite metrics event templates' />
 
@@ -27,19 +27,19 @@ CPU-related metrics are `cpu`, `user_cpu`, and `system_cpu`.
 
 #### **_CPU % is too high_**
 
-The alert occurs when the highest CPU-related metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest CPU-related metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > CPU utilization rate of the `${oname}` in the last minute > `${_rule_}` %
 
 #### **_CPU User % is too high_**
 
-The alert occurs when the highest `user_cpu` metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest `user_cpu` metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > CPU User utilization rate of the `${oname}` in the last minute > `${_rule_} `%
 
 #### **_The number of agents with high CPU SYS % is too large_**
 
-The alert occurs when the number of servers whose `system_cpu` metric is 70% or more matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows: 
+The alert occurs when the number of servers whose `system_cpu` metric is 70% or more matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows: 
 
 > The number of agents with a CPU SYS of 70% or more in the last minute > `${_rule_}`
 
@@ -47,13 +47,13 @@ The alert occurs when the number of servers whose `system_cpu` metric is 70% or 
 
 #### **_The Disk I/O is too high_**
 
-The alert occurs when the highest disk I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest disk I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > In the last minute, `${oname}`'s Disk I/O > `${_rule_}` %
 
 #### **_The Disk Used % is too high_**
 
-The alert occurs when the highest user I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest user I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > In the last minute,`${oname}`'s Disk Used > `${_rule_}` %
 
@@ -61,18 +61,18 @@ The alert occurs when the highest user I/O metric measured in the last minute ma
 
 #### **_Network Traffic I/O is too high_**
 
-The alert occurs when the highest network I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest network I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > In the last minute, `${oname}`'s Network Traffic I/O > `${_rule_}` %
 
 #### **_Network Packet I/O is too high_**
 
-The alert occurs when the highest network packet I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest network packet I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > In the last minute, `${oname}`'s Network Packet I/O > `${_rule_}` %
 
 #### **_Network Error I/O is too high_**
 
-The alert occurs when the highest network error I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <cmdname sid="message" className="uitext" /> example is as follows:
+The alert occurs when the highest network error I/O metric measured in the last minute matches any condition (`>`, `<`, `=`) of the threshold setting (`${_rule_}`). The alert occurs for each agent (oname). The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 >  In the last minute, The maximum value of the `${oname}`'s Network Error I/O > `${_rule_}` %
