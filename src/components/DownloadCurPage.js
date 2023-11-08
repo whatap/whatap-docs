@@ -1,26 +1,45 @@
 import React from 'react';
-import html2pdf from 'html2pdf.js';
+import { PDFDocument } from 'pdf-lib';
 
-const SaveAsPDFButton = () => {
-  const handleSaveAsPDF = () => {
-    const contentElement = document.querySelector('.theme-doc-markdown'); // PDF로 저장하고 싶은 컨텐츠의 CSS 클래스 이름을 선택합니다.
-  
-    if (contentElement) {
-      html2pdf(contentElement, {
-        margin: 10,
-        filename: 'document.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-      });
-    }
-  };
+class PdfDownloadButton extends React.Component {
+  async generatePdf() {
+    const elements = document.getElementsByClassName('theme-doc-markdown'); // 원하는 클래스 이름으로 요소를 찾습니다.
+    const content = Array.from(elements)
+      .map((element) => element.innerText)
+      .join('\n'); // 클래스 이름으로 찾은 요소들의 텍스트를 가져와 합칩니다.
 
-  return (
-    <div>
-      <button onClick={handleSaveAsPDF}>PDF로 저장</button>
-    </div>
-  );
-};
+    const pdfDoc = await PDFDocument.create();
+    const page = pdfDoc.addPage();
+    const { width, height } = page.getSize();
+    const font = await pdfDoc.embedFont(PDFDocument.Font.Helvetica);
+    const fontSize = 12;
 
-export default SaveAsPDFButton;
+    const textWidth = font.widthOfTextAtSize(content, fontSize);
+    const textHeight = font.heightAtSize(fontSize);
+    const x = (width - textWidth) / 2;
+    const y = height - textHeight - 50;
+
+    page.drawText(content, { x, y, font, fontSize });
+
+    const pdfBytes = await pdfDoc.save();
+    return new Blob([pdfBytes], { type: 'application/pdf' });
+  }
+
+  async downloadPdf() {
+    const pdfBlob = await this.generatePdf();
+    const url = URL.createObjectURL(pdfBlob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'generated-pdf.pdf';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  render() {
+    return (
+      <button onClick={() => this.downloadPdf()}>Download PDF</button>
+    );
+  }
+}
+
+export default PdfDownloadButton;
