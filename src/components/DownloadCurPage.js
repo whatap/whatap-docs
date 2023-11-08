@@ -1,45 +1,32 @@
 import React from 'react';
-import { PDFDocument } from 'pdf-lib';
+import { PDFDocument, StandardFonts } from 'pdf-lib';
 
-class PdfDownloadButton extends React.Component {
-  async generatePdf() {
-    const elements = document.getElementsByClassName('theme-doc-markdown'); // 원하는 클래스 이름으로 요소를 찾습니다.
-    const content = Array.from(elements)
-      .map((element) => element.innerText)
-      .join('\n'); // 클래스 이름으로 찾은 요소들의 텍스트를 가져와 합칩니다.
-
+const PdfSaveButton = () => {
+  const handleSavePdf = async () => {
+    const pages = Array.from(window.document.getElementsByClassName('theme-doc-markdown'));
     const pdfDoc = await PDFDocument.create();
-    const page = pdfDoc.addPage();
-    const { width, height } = page.getSize();
-    const font = await pdfDoc.embedFont(PDFDocument.Font.Helvetica);
-    const fontSize = 12;
 
-    const textWidth = font.widthOfTextAtSize(content, fontSize);
-    const textHeight = font.heightAtSize(fontSize);
-    const x = (width - textWidth) / 2;
-    const y = height - textHeight - 50;
-
-    page.drawText(content, { x, y, font, fontSize });
+    for (let i = 0; i < pages.length; i++) {
+      const pageData = await pdfDoc.embedPage(pages[i]);
+      const { width, height } = pageData.getSize();
+      const pdfPage = pdfDoc.addPage([width, height]);
+      pdfPage.drawPage(pageData);
+    }
 
     const pdfBytes = await pdfDoc.save();
-    return new Blob([pdfBytes], { type: 'application/pdf' });
-  }
 
-  async downloadPdf() {
-    const pdfBlob = await this.generatePdf();
-    const url = URL.createObjectURL(pdfBlob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'generated-pdf.pdf';
-    a.click();
-    URL.revokeObjectURL(url);
-  }
+    const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'document.pdf';
+    link.click();
+  };
 
-  render() {
-    return (
-      <button onClick={() => this.downloadPdf()}>Download PDF</button>
-    );
-  }
-}
+  return (
+    <button onClick={handleSavePdf}>
+      현재 페이지를 PDF로 저장하기
+    </button>
+  );
+};
 
-export default PdfDownloadButton;
+export default PdfSaveButton;
