@@ -3198,14 +3198,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_4_3',
+                id: 'release-notes/server/server-2_4_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_4_3',
+                  id: 'release-notes/server/server-2_4_4',
                   className: 'new',
                 },
+                'release-notes/server/server-2_4_3',
                 'release-notes/server/server-2_4_2',
                 'release-notes/server/server-2_4_1',
                 'release-notes/server/server-2_4_0',
@@ -3214,7 +3215,6 @@ const sidebars = {
                 'release-notes/server/server-2_3_7',
                 'release-notes/server/server-2_3_6',
                 'release-notes/server/server-2_3_4',
-                'release-notes/server/server-2_3_3',
                 'release-notes/server/server-previous',
               ],
             },
