@@ -49357,10 +49357,10 @@
     "service_id": "ITM07167"
   },
   "ITM07168": {
-    "en": "Number of restarts (5 minutes)",
-    "ja": "再起動数（5分間）",
-    "ko": "재시작 수(5분간)",
-    "zh": "Number of restarts (5 minutes)",
+    "en": "Number of container restarts",
+    "ja": "コンテナの再起動数",
+    "ko": "컨테이너 재시작 수 ",
+    "zh": "Number of container restarts",
     "service_id": "ITM07168"
   },
   "ITM07169": {
@@ -49839,9 +49839,20 @@
     "zh": "Your temporary license has expired.",
     "service_id": "NTC07236"
   },
+  "TTL07237": {
+    "en": "Resource relationships",
+    "ja": "リソース関係",
+    "ko": "리소스 관계",
+    "zh": "Resource relationships",
+    "service_id": "TTL07237"
+  },
   "": {
-    "": "",
-    "service_id": "#N/A"
+    "en": "There is no container state information.",
+    "ja": "コンテナの状態情報がありません。",
+    "ko": "컨테이너 상태 정보가 없습니다.",
+    "zh": "There is no container state information.",
+    "service_id": "#N/A",
+    "": ""
   },
   "freetrial": {
     "en": "Start a free trial",
