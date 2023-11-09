@@ -52,6 +52,7 @@ module.exports = Promise.resolve({
     },
   ],
   plugins: [
+    [ './customwebpack.js', {}],
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
