@@ -1,0 +1,27 @@
+.btnprint {
+  height: 100%;
+  margin-top: 15px;
+  position: fixed;
+}
+
+.btnprint button {
+  width: 64px;
+  height: 26px;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: bold;
+  padding: 3px 0;
+  border: none;
+  background-color: #598cf1;
+  color: #fff;
+  border-radius: 3px;
+}
+
+@media print {
+  .btnprint {
+    display: none;
+  }
+  .btnprint button {
+    display: none;
+  }
+}
