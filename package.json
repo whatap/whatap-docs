@@ -40,7 +40,6 @@
     "docusaurus-plugin-includes": "^1.1.4",
     "docusaurus-plugin-pagemove": "github:usagrada/docusaurus-plugin-pagemove",
     "docusaurus-plugin-sass": "^0.2.5",
-    "docusaurus-prince-pdf": "^1.2.1",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "google-auth-library": "^0.10.0",
