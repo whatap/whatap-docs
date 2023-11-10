@@ -1,29 +1,57 @@
-const fs = require("fs");
+const fs = require("fs").promises;
 const sharp = require("sharp");
 const path = require("path");
-const { json } = require("body-parser");
 
 const directoryPath = './static/img';
 
-fs.readdir(directoryPath, (err, files) => {
-    if (err) {
-        console.error('Error reading directory:', err);
-        return;
-    }
+// 재귀적으로 디렉토리를 탐색하고 파일 목록을 가져오는 함수
+async function readFilesInDirectory(directory, callback) {
+    try {
+        const files = await fs.readdir(directory);
 
-    const imageInfo = {};
+        for (const file of files) {
+            const filePath = path.join(directory, file);
 
-    files.forEach((file) => {
-        const imagePath = path.join(directoryPath, file);
-        sharp(imagePath).metadata((err, metadata) => {
-            if (err) {
-                console.error(`Error reading metadata for ${file}:`, err);
-            } else {
-                imageInfo[file] = { width: metadata.width, height: metadata.height };
+            // 파일인 경우에만 처리
+            const isFile = (await fs.stat(filePath)).isFile();
+
+            if (isFile && isImageFile(filePath)) {
+                const metadata = await sharp(filePath).metadata();
+                callback(file, metadata);
+            } else if (!isFile) {
+                // 디렉토리인 경우 재귀적으로 탐색
+                await readFilesInDirectory(filePath, callback);
             }
-            const jsonOutput = JSON.stringify(imageInfo, null, 2);
-            fs.writeFileSync("./src/components/sizeOfimages.json", jsonOutput, 'utf-8');
-        });
+        }
+    } catch (err) {
+        console.error('Error reading directory:', err);
+    }
+}
+
+// 파일 확장자가 이미지인지 확인하는 함수
+function isImageFile(filePath) {
+    const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', 'svg']; // 확장자 추가 가능
+    const ext = path.extname(filePath).toLowerCase();
+    return allowedExtensions.includes(ext);
+}
+
+const imageInfo = {};
+
+// 파일 정보를 수집하는 콜백 함수
+function collectFileInfo(file, metadata) {
+    imageInfo[file] = { width: metadata.width, height: metadata.height };
+}
+
+// 디렉토리와 그 하위 디렉토리의 이미지 파일 정보를 수집
+readFilesInDirectory(directoryPath, collectFileInfo)
+    .then(() => {
+        // 최종 결과를 JSON 파일로 저장
+        const jsonOutput = JSON.stringify(imageInfo, null, 2);
+        return fs.writeFile("./src/components/sizeOfimages.json", jsonOutput, 'utf-8');
+    })
+    .then(() => {
+        console.log("Complete");
+    })
+    .catch((err) => {
+        console.error('Error:', err);
     });
-    console.log("complete");
-});
