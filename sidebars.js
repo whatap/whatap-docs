@@ -1405,6 +1405,7 @@ const sidebars = {
                 'postgresql/analysis-lock-and-deadlock',
                 'postgresql/analysis-session-history',
                 'postgresql/analysis-wait-events',
+                'postgresql/analysis-top-object',
                 'postgresql/analysis-databaseparameter',
               ]
             },

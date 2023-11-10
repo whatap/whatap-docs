@@ -22351,10 +22351,10 @@
     "service_id": "TTL03261"
   },
   "preview_target_period_desc": {
-    "en": "This billing data is extracted from the First day of UTC to the present time.",
-    "ja": "本請求データはUTCを基準として１日から現時点までのデータにより抽出しました。",
-    "ko": "본 청구 데이터는 UTC 기준 1일 부터 현재 시점까지의 정보로부터 추출하였습니다.",
-    "zh": "This invoice data is extracted from first date of month to now based on UTC.",
+    "en": "This bill reflects usage from 1 day UTC to the current date.",
+    "ja": "本請求書は、UTC基準1日から現在時点までの使用量を集計した料金です。",
+    "ko": "본 청구서는 UTC 기준 1일부터 현재 시점까지의 사용량을 집계한 요금입니다.",
+    "zh": "This bill reflects usage from 1 day UTC to the current date.",
     "service_id": "DSC03262"
   },
   "widgetwithproject": {
@@ -45024,10 +45024,10 @@
     "service_id": "TTL06531"
   },
   "DSC06532": {
-    "en": "Please select a comparison node from the list.",
-    "ja": "リストから比較ノードを選択してください。",
-    "ko": "목록에서 비교 노드를 선택해 주십시오.",
-    "zh": "Please select a comparison node from the list.",
+    "en": "You can compare key metrics between nodes by clicking the <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div> icon on the far left of the table.",
+    "ja": "テーブルの一番左にある<div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div>アイコンをクリックすると、ノード間の主要な指標を比較できます。",
+    "ko": "테이블 맨 왼쪽의 <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div>아이콘을 눌러 노드 간 주요 지표를 비교할 수 있습니다.",
+    "zh": "You can compare key metrics between nodes by clicking the <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div> icon on the far left of the table.",
     "service_id": "DSC06532"
   },
   "TTL06533": {
@@ -45717,10 +45717,10 @@
     "service_id": "NTC06630"
   },
   "DSC06631": {
-    "en": "Please select a comparison container from the list.",
-    "ja": "リストから比較コンテナを選択してください。",
-    "ko": "목록에서 비교 컨테이너를 선택해 주십시오.",
-    "zh": "Please select a comparison container from the list.",
+    "en": "Click the <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div> icon on the far left of the table. Compare key metrics across containers.",
+    "ja": "テーブルの一番左の <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div>アイコンを押します コンテナ間の主要な指標を比較できます。",
+    "ko": "테이블 맨 왼쪽의 <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div>아이콘을 눌러 컨테이너 간 주요 지표를 비교할 수 있습니다.",
+    "zh": "Click the <div style=\"display: inline-block; width: 10px; height: 10px; border-radius: 10px; border: solid 3px; border-color: #999999;\"></div> icon on the far left of the table. Compare key metrics across containers.",
     "service_id": "DSC06631"
   },
   "NTC06632": {
@@ -46895,7 +46895,7 @@
   "ITM06810": {
     "en": "Process Type",
     "ja": "プロセスタイプ",
-    "ko": "프로세스 타입",
+    "ko": "프로세스 종류",
     "": "Process Type",
     "service_id": "ITM06810"
   },
@@ -46977,10 +46977,10 @@
     "service_id": "BTN06821"
   },
   "TTL06822": {
-    "en": "Tag",
-    "ja": "タグ",
-    "ko": "태그",
-    "": "Tag",
+    "en": "\bSelected tags",
+    "ja": "選択したタグ",
+    "ko": "선택된 태그",
+    "": "\bSelected tags",
     "service_id": "TTL06822"
   },
   "DSC06823": {
@@ -46991,24 +46991,24 @@
     "service_id": "DSC06823"
   },
   "DSC06824": {
-    "en": "Automatically select newly added tags",
-    "ja": "新しく追加されたタグの自動選択",
-    "ko": "새로 추가된 태그 자동 선택",
-    "": "Automatically select newly added tags",
+    "en": "Automatic selection of added tags",
+    "ja": "追加されたタグの自動選択",
+    "ko": "추가된 태그 자동 선택",
+    "": "Automatic selection of added tags",
     "service_id": "DSC06824"
   },
   "ITM06825": {
-    "en": "Ascending",
-    "ja": "昇順",
-    "ko": "오름차순",
-    "": "Ascending",
+    "en": "Ascending order",
+    "ja": "昇順ソート",
+    "ko": "오름차순 정렬",
+    "": "Ascending order",
     "service_id": "ITM06825"
   },
   "ITM06826": {
-    "en": "Descending",
-    "ja": "降順",
-    "ko": "내림차순",
-    "": "Descending",
+    "en": "Descending order",
+    "ja": "降順ソート",
+    "ko": "내림차순 정렬",
+    "": "Descending order",
     "service_id": "ITM06826"
   },
   "ITM06827": {
@@ -49602,10 +49602,10 @@
     "service_id": "DSC07202"
   },
   "DSC07203": {
-    "en": "This version is not supported.",
+    "en": "This agent version is not supported.",
     "ja": "サポートしていないバージョンです。",
-    "ko": "지원하지 않는 버전입니다.",
-    "zh": "This version is not supported.",
+    "ko": "지원하지 않는 에이전트 버전입니다.",
+    "zh": "This agent version is not supported.",
     "service_id": "DSC07203"
   },
   "TTL07204": {
@@ -49790,6 +49790,55 @@
     "zh": "apply discount",
     "service_id": "DSC07229"
   },
+  "DSC07230": {
+    "en": "You do not have permission to view.",
+    "ja": "照会権限がありません。",
+    "ko": "조회 권한이 없습니다.",
+    "zh": "You do not have permission to view.",
+    "service_id": "DSC07230"
+  },
+  "BTN07231": {
+    "en": "Go to the guide",
+    "ja": "ガイドショートカット",
+    "ko": "가이드 바로가기",
+    "zh": "Go to the guide",
+    "service_id": "BTN07231"
+  },
+  "TTL07232": {
+    "en": "Let’s take a look at a more convenient maintenance plan.",
+    "ja": "より便利になったメンテナンスプラン、見てみましょうか？",
+    "ko": "보다 편리해진 정비계획, 살펴볼까요?",
+    "zh": "Let’s take a look at a more convenient maintenance plan.",
+    "service_id": "TTL07232"
+  },
+  "CNT07233": {
+    "en": "Hi! this is WhaTap. Based on your request, we have tuned and made some improvements to the maintenance plan menu\nlocated in the APM, Server, and DB menus.\nYou can check the revised maintenance plan by clicking the \n<b>\"View new version\" button.</b>\nFor further details regarding the use of the revised maintenance plan,\nplease check the technical documentation!",
+    "ja": "こんにちは、WhaTap Labsです！\nApplication、Server、DB Monitoring管理画面内の\nメンテナンスプランメニューについてのご案内です。\nユーザー様からの改善要請を反映し、一部事項を改善しました。\n<b>「新しいバージョンを見る」ボタン</b>をクリックして、改善されたメンテナンスプランが確認できます。\n改善されたメンテナンスプランの詳細については、ガイドをご参考ください。",
+    "ko": "안녕하세요, 와탭입니다! APM, Server, DB 메뉴 내 위치한 정비계획 메뉴에 대한\n고객님의 개선 요청을 적극 반영, 몇몇 불편 요소에 대한 개선을 진행했으며,\n<b>\"신규 버전으로 보기\" 버튼</b>을 통해 개편된 정비계획을 통해 확인하실 수 있습니다.\n개편된 정비계획의 이용과 관련된 자세한 사항은 기술문서를 통해 확인해주세요!",
+    "zh": "Hi! this is WhaTap. Based on your request, we have tuned and made some improvements to the maintenance plan menu\nlocated in the APM, Server, and DB menus.\nYou can check the revised maintenance plan by clicking the \n<b>\"View new version\" button.</b>\nFor further details regarding the use of the revised maintenance plan,\nplease check the technical documentation!",
+    "service_id": "CNT07233"
+  },
+  "CNT07234": {
+    "en": "<b>Addition of repeat function</b> in Server Monitoring",
+    "ja": "Server Monitoring：<b>繰り返し機能の追加</b>",
+    "ko": "Server Monitoring에서 <b>반복 기능의 추가</b>",
+    "zh": "<b>Addition of repeat function</b> in Server Monitoring",
+    "service_id": "CNT07234"
+  },
+  "CNT07235": {
+    "en": "<b>Addition of agent selection function</b> in APM and DB Monitoring",
+    "ja": "APM、DB Monitoring：<b>エージェント選択機能の追加</b>",
+    "ko": "APM, DB Monitoring에서 <b>에이전트 선택 기능의 추가</b>",
+    "zh": "<b>Addition of agent selection function</b> in APM and DB Monitoring",
+    "service_id": "CNT07235"
+  },
+  "NTC07236": {
+    "en": "Your temporary license has expired.",
+    "ja": "仮免許の有効期限が切れています。",
+    "ko": "임시 라이선스가 만료되었습니다.",
+    "zh": "Your temporary license has expired.",
+    "service_id": "NTC07236"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -49833,5 +49882,10 @@
     "en": "Server Detail",
     "ja": "サーバー 詳細",
     "ko": "서버 상세"
+  },
+  "dbObjectInfo": {
+    "en": "Top Object",
+    "ja": "Topオブジェクト",
+    "ko": "Top 오브젝트"
   }
 }
