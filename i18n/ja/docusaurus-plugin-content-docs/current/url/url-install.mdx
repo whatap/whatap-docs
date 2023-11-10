@@ -21,25 +21,25 @@ URLを追加する前に、まずプロジェクトを作成してください�
 
 1.  [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、ログインします。
 
-2.  プロジェクトを作成するには、画面左側のメニューから **_+ <TR sid='project_add_btn'/>_** ボタンを選択してください。
+2.  プロジェクトを作成するには、画面の左側のメニューから **_+_** <Cmdname sid="project_add_btn" className="uitext" />ボタンを選択してください。
 
-3.  **_製品カタログ画面_**でURLモニタリングプロジェクトを作成してください。
+3.  <Cmdname sid="TTL07073" className="uitext" />画面でURLモニタリングプロジェクトを作成してください。
+
+4.  <Cmdname sid="project_name" className="uitext" />、<Cmdname sid="data_server_region" className="uitext" />、<Cmdname sid="project_time_zone" className="uitext" />などの項目を設定してください。
 
     <ImgLang img='url-project.png' desc='urlモニタリングプロジェクト' />
 
-4.  **_プロジェクト名_**、 **_タイムゾーン_** などの項目を設定してください。
+5.  すべての設定を完了した後は <Cmdname sid="creating_a_project" className="uitext" /> ボタンを選択してください。
 
-5.  **_データサーバーリージョン_**でWEB-Checker-Regionを選択してください。
-
-6.  すべての設定を完了した後は **_プロジェクト作成_** ボタンを選択してください。
-
-7.  プロジェクト一覧で新しいプロジェクトを確認してください。
+6.  プロジェクト一覧で新しいプロジェクトを確認してください。
 
 :::note
 
--   **_データサーバーリージョン_**はリージョン(クラウドサービスを提供するためにインストールしたデータセンターのグループ)を意味します。 特定のリージョンを選択すると、そのリージョンに所属するデータセンターにユーザーのデータが保存されます。
--   **_タイムゾーン_**は通知とレポートを生成する基準時間です。
--   複数のプロジェクトをグループで管理する場合は、**_プロジェクトグループ_**からグループを選択するか、グループを追加してください。 グループの詳細については、[次の文書](../project/group)を参照してください。
+-   <Cmdname sid="data_server_region" className="uitext" />はリージョン(クラウドサービスを提供するためにインストールしたデータセンターのグループ)を意味します。特定のリージョンを選択すると、そのリージョンに所属するデータセンターにユーザーのデータが保存されます。
+
+-   <Cmdname sid="project_time_zone" className="uitext" />は通知とレポートを生成する基準時間です。
+
+-   複数のプロジェクトをグループで管理する場合は、<Cmdname sid="project_groups" className="uitext" />からグループを選択するか、グループを追加してください。 グループの詳細については、[次の文書](../project/group)を参照してください。
 
 :::
 
@@ -47,23 +47,29 @@ URLを追加する前に、まずプロジェクトを作成してください�
 
 1.  生成されたURLプロジェクトを選択してください。 URLが設定されていない画面が表示されます。
 
-2.  画面右上の **_+ URL追加する_** ボタンを選択してください。 
+2.  画面右上の **_+_** <Cmdname sid="add_url" className="uitext" /> ボタンを選択してください。 
 
 3.  追加された入力フィールドにURL設定を行ってください。
 
     <ImgLang img='url-input-field.png' desc='url入力フィールド' />
 
-    -   **_名前_**: URL設定の固有の識別情報として使用されます。重複使用はできません。リセット時に同じ名前で登録する場合は、同じ名前の統計データを同じURLのデータとしてみなします。
+    -   <Cmdname sid="name" className="uitext" />: URL設定の固有の識別情報として使用されます。重複使用はできません。リセット時に同じ名前で登録する場合は、同じ名前の統計データを同じURLのデータとしてみなします。
 
-    -   **_URL_**: チェック対象のURLを登録します。 呼び出し先URLの完全パスを入力します。http/httpsプロトコルに対応します。
+    -   <Cmdname sid="url" className="uitext" />: チェック対象のURLを登録します。 呼び出し先URLの完全パスを入力します。http/httpsプロトコルに対応します。
 
-    -   **_確認地域_**: WhaTapが提供するエージェントを選択します。 Seoul、Tokyo、Singapore、Mumbai、Frankfurt、Califoniaリージョンを提供します。 次の確認地域の選択の案内を参照してください。
+    -   <Cmdname sid="check_location" className="uitext" />: WhaTapが提供するエージェントを選択します。Seoul、Tokyo、Singapore、Mumbai、Frankfurt、Califoniaリージョンを提供します。詳細については、<Link to="#select-confirm-region">次の文書</Link>を参照してください。
 
-4.  編集が完了したら、**_保存_**ボタンをクリックして設定情報を保存してください。 
+    -   <Cmdname sid="collection_cycle" className="uitext" />: モニタリングデータを収集する間隔を設定します。デフォルト値は<Cmdname sid="1_min" className="uitext" />(60000 ms)です。最大5分まで1分単位で選択できます。
 
-5.  **_モニタリング_** ボタンを選択してモニタリング画面に切り替えてください。
+4.  編集が完了したら<Cmdname sid="save" className="uitext" />ボタンを選択してください。
 
-### 確認リージョン選択
+:::note
+
+<Cmdname sid="event_setting" className="uitext" />の詳細は、<Link to='url-event'>次の文書</Link>を参照してください。
+
+:::
+
+### 確認リージョン選択{#select-confirm-region}
 
 今後の接続テストのための追加のリージョン(リージョン)を提供することができます。その他のリージョンについては support@whatap.ioまでお問い合わせください。
 
@@ -97,45 +103,45 @@ URLを追加する前に、まずプロジェクトを作成してください�
 
 ## モニタリングする{#url-st}
 
-<ImgLang img='url-monitoring.png' desc='URLモニタリング' />
+<ImgLang img='url-monitoring.png' desc='URLモニタリング画面' />
 
 ### 条件指定オプション
 
-ホーム画面からプロジェクトを選択し **_URL一覧_** メニューに移動してください。![number-1](/img/number-01.png)領域の上部にあるオプションを使用すると、表示形式や整列方式を指定したり、検索して一覧を表示することができます。
+ホーム画面からプロジェクトを選択し <Cmdname sid="url_list" className="uitext" /> メニューに移動してください。![number-1](/img/number-01.png)領域の上部にあるオプションを使用すると、表示形式や整列方式を指定したり、検索して一覧を表示することができます。
 
--   ![一覧ビューアイコン](/img/ic-list.svg)**_一覧ビュー_**：**_URL一覧_**を一覧形式で見ることができます。基本設定は **_一覧ビュー_**です。 
+-   ![一覧ビューアイコン](/img/ic-list.svg) <Cmdname sid="list_view" className="uitext" />：<Cmdname sid="url_list" className="uitext" />を一覧形式で見ることができます。基本設定は <Cmdname sid="list_view" className="uitext" />です。 
 
--   ![カードビューアイコン](/img/ic-project.svg)**_カードビュー_**：**_URL一覧_**をカード形式で見ることができます。
+-   ![カードビューアイコン](/img/ic-project.svg) <Cmdname sid="card_view" className="uitext" />：<Cmdname sid="url_list" className="uitext" />をカード形式で見ることができます。
 
--   **_検索_**：入力ウィンドウからURLまたは指定したURLの名前で検索することができます。
+-   <Cmdname sid="search" className="uitext" />：入力ウィンドウからURLまたは指定したURLの名前で検索することができます。
 
-![number-2](/img/number-02.png)領域で登録されたURL一覧の最終レスポンスのステータスごとの件数情報を確認し、フィルタリングすることができます。 **_全体_** を見る、 **_9XX_**、 **_サーバーエラー_**、 **_リクエストエラー_**、 **_リダイレクション済み_**、 **_成功_** などに基づいて表示することができます。 基本設定は **_全体_** を見るです。 
+![number-2](/img/number-02.png)領域で登録されたURL一覧の最終レスポンスステータスごとの件数情報を確認し、フィルタリングすることができます。 <Cmdname sid="status_total" className="uitext" /> を見る、 **_9XX_**、 <Cmdname sid="status_5xx" className="uitext" />、 <Cmdname sid="status_4xx" className="uitext" />、 <Cmdname sid="status_3xx" className="uitext" />、 <Cmdname sid="status_2xx" className="uitext" /> などを基準に照会することができます。 基本設定は <Cmdname sid="status_total" className="uitext" /> を見るです。
 
 ### URL一覧のエクスポート、インポート
 
-![number-3](/img/number-03.png) 領域で現在 **_URL一覧_**をExcelファイル形式でエクスポートまたはインポートできます。 
+![number-3](/img/number-03.png) 領域で現在 <Cmdname sid="url_list" className="uitext" />をExcelファイル形式でエクスポートまたはインポートできます。 
 
--   ![書き出しアイコン](/img/ico-export.svg) **_書き出し_**：ウェブブラウザーから現在のURL一覧をExcelファイルとしてダウンロードします。
+-   ![インポートアイコン](/img/ico-import.svg) <Cmdname sid="import" className="uitext" />：Excelファイルを選択してURL一覧を読み込みます。 
 
--   ![インポートアイコン](/img/ico-import.svg) **_インポート_**：Excelファイルを選択してURL一覧を読み込みます。 
+-   ![書き出しアイコン](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />：ウェブブラウザーから現在のURL一覧をExcelファイルとしてダウンロードします。
 
 ### URLモニタリングの詳細
 
-![number-4](/img/number-04.png) 領域のURL一覧表で、登録されたURL単位のモニタリングチェック結果を確認することができます。 各カラム項目は、次のとおりです。 URLの登録・編集が必要な場合 ![編集アイコン](/img/ic-edit.svg) **_URLを編集_** アイコンを選択し、編集画面に切り替えてください。
+![number-4](/img/number-04.png) 領域のURL一覧表で、登録されたURL単位のモニタリングチェック結果を確認することができます。 各カラム項目は、次のとおりです。 URLの登録・編集が必要な場合 ![編集アイコン](/img/ic-edit.svg) <Cmdname sid="edit_url" className="uitext" /> アイコンを選択し、編集画面に切り替えてください。
 
--   **_現在ステータスコード_**
+-   <Cmdname sid="current_status" className="uitext" />
 
     最終チェックレスポンスコード(Http Status Code)です。各ステータスコードを選択すると、HTTPステータスコードの文書更新に移動します。
 
--   **_名前/URL_**  
+-   <Cmdname sid="name_and_url" className="uitext" />
 
     URL登録時に指定した固有の識別情報とURLです。
 
--   **_地域_**  
+-   <Cmdname sid="check_region" className="uitext" />
 
     確認リージョンです。
 
--   **_経過時間_**  
+-   <Cmdname sid="elapsed" className="uitext" />
 
     20分間のチェック結果(レスポンスコードおよびレスポンス時間) または最終レスポンス時間です。チャート領域からドラッグして時間範囲を表示すると、次のようにタイムゾーンのレスポンスコードおよびレスポンス時間を確認できます。
 

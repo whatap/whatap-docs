@@ -21,25 +21,25 @@ Create a project before adding the URL.
 
 1.  Log in [WhaTap monitoring service](https://service.whatap.io).
 
-2.  To create a project, on the left of the screen, select **_+ <TR sid='project_add_btn'/>_**.
+2.  To create a project, on the left of the screen, select **_+_** <Cmdname sid="project_add_btn" className="uitext" />.
 
-3.  In **_Product Catalog_**, create a URL monitoring project.
+3.  In <Cmdname sid="TTL07073" className="uitext" />, create a URL monitoring project.
+
+4.  Set items for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, <Cmdname sid="project_time_zone" className="uitext" />, and more in order.
 
     <ImgLang img='url-project.png' desc='URL Monitoring Project' />
 
-4.  Set the **_project name_**, **_time zone_**, etc.
+5.  After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
 
-5.  As **_Data Server Region_**, select WEB-Checker-Region.
-
-6.  After all settings are finished, select **_Creating a project_**.
-
-7.  Check the new project in the project list.
+6.  Check the new project in the project list.
 
 :::note
 
--   A **_data server region_** refers to a region (a bundle of data centers installed to provide cloud services). Selecting a specific region stores your data in the datacenter that belongs to that region.
--   **_Time Zone_** is the reference time for generating alerts and reports.
--   To group multiple projects for management, select a group from **_Project Groups_** or add a group. For more information about grouping, see [the following](../project/group).
+-   A <Cmdname sid="data_server_region" className="uitext" /> refers to a region (a bundle of data centers installed to provide cloud services). Selecting a specific region stores your data in the datacenter that belongs to that region.
+
+-   <Cmdname sid="project_time_zone" className="uitext" /> is the reference time for generating alerts and reports.
+
+-   To group multiple projects for management, select a group from <Cmdname sid="project_groups" className="uitext" /> or add a group. For more information about grouping, see [the following](../project/group).
 
 :::
 
@@ -47,23 +47,29 @@ Create a project before adding the URL.
 
 1.  Select the generated URL project. A screen with no URL set appears.
 
-2.  On the upper right of the screen, select **_+ Add URL_**. 
+2.  On the upper right of the screen, select **_+_** <Cmdname sid="add_url" className="uitext" />. 
 
 3.  Proceed to perform URL settings in the added input fields.
 
     <ImgLang img='url-input-field.png' desc='URL input field' />
 
-    -   **_Name_**: Used as a unique identification for URL settings. Duplicates are not allowed, and if you register with the same name when resetting, statistical data with the name will be considered as data from the same URL.
+    -   <Cmdname sid="name" className="uitext" />: Used as a unique identification for URL settings. Duplicates are not allowed, and if you register with the same name when resetting, statistical data with the name will be considered as data from the same URL.
 
-    -   **_URL_** Register the URL to check. Enter the full path of URL to call. It supports the http/https protocol.
+    -   <Cmdname sid="url" className="uitext" />: Register the URL to check. Enter the full path of URL to call. It supports the http/https protocol.
 
-    -   **_Check Location_**: Select the agent provided by WhaTap. It provides the regions such as Seoul, Tokyo, Singapore, Mumbai, Frankfurt, and California. See the selection guide for the following check location.
+    -   <Cmdname sid="check_location" className="uitext" />: Select the agent provided by WhaTap. It provides the regions such as Seoul, Tokyo, Singapore, Mumbai, Frankfurt, and California. For more information, see <Link to="#select-confirm-region">the following</Link>.
 
-4.  After edition, select **_Save_** to save the settings. 
+    -   <Cmdname sid="collection_cycle" className="uitext" />: Set the interval to collect monitoring data. The default value is <Cmdname sid="1_min" className="uitext" />(60000 ms). You can select up to 5 minutes in 1-minute increments.
 
-5.  Select **_Monitoring_** to switch to the monitoring screen.
+4.  After edtion, select <Cmdname sid="save" className="uitext" />.
 
-### Selecting a region
+:::note
+
+For more information about <Cmdname sid="event_setting" className="uitext" />, see <Link to='url-event'>the following</Link>.
+
+:::
+
+### Selecting a region{#select-confirm-region}
 
 We can provide additional regions for future connectivity testing. For additional regions, contact us at support@whatap.io.
 
@@ -97,49 +103,49 @@ If **cloudflare** is used, you must allow the **region IPs that are compatible w
 
 ## Running Monitoring{#url-st}
 
-<ImgLang img='url-monitoring.png' desc='URL monitoring screen' />
+<ImgLang img='url-monitoring.png' desc='URL Monitoring screen' />
 
 ### Condition setting option
 
-Select a project at Home screen and go to **_URL List_**. Through the option at the top of ![number-1](/img/number-01.png), you can specify the view format and sorting method, or view the list through search.
+Select a project at Home screen and go to <Cmdname sid="url_list" className="uitext" />. Through the option at the top of ![number-1](/img/number-01.png), you can specify the view format and sorting method, or view the list through search.
 
--   ![List View Icon](/img/ic-list.svg)**_List View_**: You can view the **_URL list_** in the list format. The default setting is **_List View_**. 
+-   ![List View Icon](/img/ic-list.svg) <Cmdname sid="list_view" className="uitext" />: You can view the <Cmdname sid="url_list" className="uitext" /> in the list format. The default setting is <Cmdname sid="list_view" className="uitext" />. 
 
--   ![Card View icon](/img/ic-project.svg)**_Card View_**: You can view the **_URL list_** in the card format.
+-   ![Card View icon](/img/ic-project.svg) <Cmdname sid="card_view" className="uitext" />: You can view the <Cmdname sid="url_list" className="uitext" /> in the card format.
 
--   **_Search_**: You can search based on the URL or the name of the specified URL in the input field.
+-   <Cmdname sid="search" className="uitext" />: You can search based on the URL or the name of the specified URL in the input field.
 
-In the ![number-2](/img/number-02.png) area, you can see and filter the counts for each final response status in the list of registered URLs. The view can be seen based on **_View All_**, **_9XX_**, **_Server Error_**, **_Request Error_**, **_Redirection_**, and **_Success_**. The default setting is **_All_** view. 
+In the ![number-2](/img/number-02.png) area, you can see and filter the counts for each final response status in the list of registered URLs. The view can be seen based on <Cmdname sid="status_total" className="uitext" />, **_9XX_**, <Cmdname sid="status_5xx" className="uitext" />, <Cmdname sid="status_4xx" className="uitext" />, <Cmdname sid="status_3xx" className="uitext" />, and <Cmdname sid="status_2xx" className="uitext" />. The default setting is <Cmdname sid="status_total" className="uitext" /> view.
 
 ### Exporting and importing URL List
 
-In the ![number-3](/img/number-03.png) area, you can export or import the current **_URL list_** in Excel format. 
+In the ![number-3](/img/number-03.png) area, you can export or import the current <Cmdname sid="url_list" className="uitext" /> in Excel format. 
 
--   ![Export icon](/img/ico-export.svg) **_Export_**: The current URL list is downloaded in an Excel file through the web browser.
+-   ![Import icon](/img/ico-import.svg) <Cmdname sid="import" className="uitext" />: By selecting an Excel file, the URL list is imported. 
 
--   ![Import icon](/img/ico-import.svg) **_Import_**: By selecting an Excel file, the URL list is imported. 
+-   ![Export icon](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />: The current URL list is downloaded in an Excel file through the web browser.
 
 ### URL Monitoring Detail
 
-In the URL list table of the ![number-4](/img/number-04.png) area, you can see the monitoring check results for each registered URL. The columns are as follows. To register or edit a URL, select ![Edit icon](/img/ic-edit.svg) **_Edit URL_** to switch to the editing screen.
+In the URL list table of the ![number-4](/img/number-04.png) area, you can see the monitoring check results for each registered URL. The columns are as follows. To register or edit a URL, select ![Edit icon](/img/ic-edit.svg) <Cmdname sid="edit_url" className="uitext" /> to switch to the editing screen.
 
--   **_Current Status Code_**
+-   <Cmdname sid="current_status" className="uitext" />
 
     It is the final check response code (HTTP Status Code). If you select each status code, the HTTP status code cleanup document appears.
 
--   **_Name/URL_**  
+-   <Cmdname sid="name_and_url" className="uitext" />
 
     This is the unique ID and URL specified upon registration of the URL.
 
--   **_Location_**  
+-   <Cmdname sid="check_region" className="uitext" />
 
     Check location.
 
--   **_Elapsed Time_**  
+-   <Cmdname sid="elapsed" className="uitext" />
 
     It has the 20-minute check result (response code and time) and final response time. When searching for a time range by dragging in the chart area, you can see the response codes and response times for the time period as follows.
 
-    <ImgLang img='url-monitoring-dt.png' desc='Details' />
+    <ImgLang img='url-monitoring-dt.png' desc='Detail' />
 
 :::note 
 

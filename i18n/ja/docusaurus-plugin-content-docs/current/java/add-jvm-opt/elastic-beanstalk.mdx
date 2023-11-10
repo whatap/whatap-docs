@@ -14,9 +14,9 @@ tags:
 1.  Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
     -   _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
-    -   _.ebextensions/{config_name}.config_：ebの設定ファイル
+    -   _.ebextensions/`{config_name}`.config_：ebの設定ファイル
     -   _Procfile_：JVM command lineオプションを設定するためのファイル
-    -   _{application}.jar_：実行するapplicaion.jarのファイル
+    -   _`{application}`.jar_：実行するapplicaion.jarのファイル
 
 2.  Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
@@ -29,7 +29,7 @@ tags:
     zip -r whatap-agent.zip agent
     ```
 
-3.  _.ebextension/{config_name}.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
+3.  _.ebextension/`{config_name}`.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
 
     ダウンロード用の圧縮ファイルがある場合、ebを実行して自動的にダウンロードして解凍します。
 
@@ -55,7 +55,7 @@ tags:
     web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
     ```
 
-5.  _Procfile_ファイルと_.ebextensions_ファイル、_{application}.jar_ファイルを圧縮してください。
+5.  _Procfile_ファイルと_.ebextensions_ファイル、_`{application}`.jar_ファイルを圧縮してください。
 
     ```bash
     zip -r {application}.zip Procfile .ebextensions/{application}.jar

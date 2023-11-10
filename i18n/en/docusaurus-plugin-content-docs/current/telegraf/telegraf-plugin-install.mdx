@@ -214,7 +214,7 @@ This installation file has been created in advance by adding the WhaTap plug-in 
 
 -   **Source File**
 
-    Unzip in _${GOPATH}/src/github.com/influxdata/telegraf/_.
+    Unzip in _`${GOPATH}`/src/github.com/influxdata/telegraf/_.
 
     :::note
 
@@ -236,7 +236,7 @@ For the detailed builds, see the [Telegraf github](https://github.com/influxdata
 
 :::
 
-Under _${GOPATH}/src/github.com/influxdata/telegraf_ proceed with the build with the Makefile.
+Under _`${GOPATH}`/src/github.com/influxdata/telegraf_ proceed with the build with the Makefile.
 
 1.  Proceed with the dependency installation. Dependency installation uses the go dep. Accordingly, the go dep must have been installed first.
 
@@ -244,7 +244,7 @@ Under _${GOPATH}/src/github.com/influxdata/telegraf_ proceed with the build with
     # make deps
     ```
 
-2.  Build the executable file. Under the _${GOPATH}/bin_ directory, the executable file (telegraf) is generated.
+2.  Build the executable file. Under the _`${GOPATH}`/bin_ directory, the executable file (telegraf) is generated.
 
     ```bash title=SH
     # make go-install

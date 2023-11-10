@@ -1,14 +1,14 @@
-## 警告通知の繰り返し設定{#escalation}
+## アラート通知の繰り返し設定{#escalation}
 
-警告通知の発生時間から通知発生の状況が解消されない場合、最初の通知発生時刻からの通知の繰り返し間隔を設定できます。 例えば、警告通知の発生時間から0分（即時）、1時間後、1日後に警告通知を繰り返すには、「0,1H,1D」を<Cmdname sid="TTL06149" className="uitext" />カラム項目に入力してください。
+アラート通知の発生時間から通知発生の状況が解消されない場合、最初の通知発生時間からの通知の繰り返し間隔を設定できます。 例えば、アラート通知の発生時間から0分(即時)、1時間後、1日後にアラート通知を繰り返すには、「0,1H,1D」を<Cmdname sid="TTL06149" className="uitext" />カラム項目に入力してください。
 
 <ImgLang img='server-notice-escalation.png' desc='エスカレーション' />
 
 :::note
 
--   この機能は<span class='vslow'>Critical</span>または<Cmdname sid="fatal" className="vslow" />グレードのすべてのイベントを対象としています。 イベント追加時に設定した<Cmdname sid="level" className="uitext" />項目を参照してください。
+-   この機能は<span class='vslow'>Critical</span>(または<Cmdname sid="fatal" className="vslow" />)グレードのすべてのイベントを対象としています。 イベント追加時に設定した<Cmdname sid="level" className="uitext" />項目を参照してください。
 
--   **M**：分、**H**：時間、**D**：日、単位を省略すると、分単位で時間を設定します。
+-   時**M**：分、**H**：時間、**D**：日、単位を省略すると、分単位で時間を設定します。
 
 -   <Cmdname sid="save" className="uitext" /> ボタンを選択しないと設定を完了できません。
 

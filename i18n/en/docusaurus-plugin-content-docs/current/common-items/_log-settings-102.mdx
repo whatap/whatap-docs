@@ -288,11 +288,11 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
     -   Pattern for request parsing  
 
-        > String between "Request : " and "Response" {"key1":"value1","key2":"value2",...} Target
+        > Strings between "Request : " and "Response" `{"key1":"value1","key2":"value2",...}`
 
     -   Pattern for response parsing
 
-        > String from "Response : " to the end of a log {"key3":"value3","key4":"value4",...} Target
+        > Strings from "Response : " to the end of a log `{"key3":"value3","key4":"value4",...}`
 -   **JSON custom pattern registration**
 
     If part of a log is output in JSON format, the JSON output can be parsed by a dedicated custom parser. Enter the pattern as follows:
@@ -316,14 +316,14 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
         As in the example, to parse both Request JSON and Response JSON for incoming logs, register the following two patterns.
 
         -   Pattern for request parsing  
-            > String between "Request : " and "Response" {"key1":"value1","key2":"value2",...} Target
+            > Strings between "Request : " and "Response" `{"key1":"value1","key2":"value2",...}`
 
         ```java
         io.whatap.logsink.parser.JsonFormatParser {prefix:"Request : ",postfix:"Response"}
         ```
 
         -   Pattern for response parsing
-            > String from "Response : " to the end of a log {"key3":"value3","key4":"value4",...} Target
+            > Strings from "Response : " to the end of a log `{"key3":"value3","key4":"value4",...}`
 
         ```java
         io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
