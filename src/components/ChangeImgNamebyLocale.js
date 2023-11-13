@@ -13,14 +13,12 @@ export default function ChangeImgName({img, desc, className}) {
     if (currentLocale == 'ko') {
         imgFilePath = useBaseUrl(`/img/${fileName}.${fext}`);
         if (fileName.indexOf('/') != -1) {
-            console.log('!!!', fileName);
             fileName = fileName.split('/')[1]
         }
         getName = `${fileName}.${fext}`;
     } else {
         imgFilePath = useBaseUrl(`/${currentLocale}/img/${fileName}-${currentLocale}.${fext}`);
         if (fileName.indexOf('/') != -1) {
-            console.log('!!!', fileName);
             fileName = fileName.split('/')[1]
         }
         getName = `${fileName}-${currentLocale}.${fext}`;
