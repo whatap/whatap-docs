@@ -9,3 +9,109 @@ tags:
 ---
 
 {@include: ../common-items/_metrics-warning-notice.mdx}
+
+## メトリクスイベントテンプレート{#k8s-metrics-event-template}
+
+:::note 
+
+クバネティスイベントの`reason`フィールド情報は[クバネティス公式文書](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/events/event.go#L27)を参照してください。 
+
+:::
+
+#### **_BackOff_**
+
+Kubernetesイベントの`reason`フィールド情報中`BackOff`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。 
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_Evicted_**
+
+Kubernetesイベントの`reason`フィールド情報中`Evicted`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_FailedCreatePodSandBox_**
+
+Kubernetesイベントの`reason`フィールド情報中`FailedCreatePodSandBox`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_FailedMount_**
+
+Kubernetesイベントの`reason`フィールド情報中`FailedMount`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_FailedScheduling_**
+
+Kubernetesイベントの`reason`フィールド情報中`FailedScheduling`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_FailedSync_**
+
+Kubernetesイベントの`reason`フィールド情報中`FailedSync`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_NodeNotReady_**
+
+Kubernetesイベントの`reason`フィールド情報中`NodeNotReady`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_Unhealthy_**
+
+Kubernetesイベントの`reason`フィールド情報中`Unhealthy`が0回以上押された場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> Kubernetesイベント(Kube Event `${message}`)
+
+#### **_コンテナCPU割当てによる使用率アラート_**
+
+コンテナのCPU Limit基準CPU全使用量(`${cpu_per_quota}`)が70%以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> `${okindName}`の`${oname}`コンテナのCPU使用率が「`${cpu_per_quota}`% >= 70%」で、高いです。
+
+#### **_コンテナメモリ失敗回数_**
+
+コンテナメモリLimit到達件数が1 回以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> `${okindName}`の`${oname}`コンテナ街limitを超えて`${mem_failcnt}`が増加でした。
+
+#### **_コンテナメモリ使用率_**
+
+コンテナメモリLimit基準使用量(`${container.mem_percent}`)が90%以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> `${okindName}`の`${oname}`コンテナのメモリ使用率は「`${container.mem_percent}`% >= 90%」です。
+
+#### **_HPA CPU使用率のアラート通知_**
+
+現在実行中のPodの数がリソース内の最大Pod数と同じで、CPU使用率が70%以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> HPA Podが生成できる最大値に達していて、CPU使用率が「>= 70%」です。
+
+#### **_マスターPod数のアラート通知_**
+
+ノードに割り当て可能なPodが存在しない場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> マスターに割当てできるPodの数は0です。
+
+#### **_ノードCPU使用率のアラート通知_**
+
+ノードのCPU使用率(`${cpu}`)が70%以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> `${oname}`のCPU使用率が「`${cpu}`% >= 70%」です。
+
+#### **_ノードメモリ使用率のアラート通知_**
+
+ノードのメモリ使用率(`${memory_pused}`)が90%以上の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> `${oname}`のメモリ使用率が「`${memory_pused}`% >= 90%」です。
+
+#### **_APDEX_**
+
+トランザクションが存在し、APDEXスコアが0.7点より低い場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+ノードに割り当て可能なPod数が0個以下の場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+
+> APDEXが0.7より低いです。(`${oname}`)

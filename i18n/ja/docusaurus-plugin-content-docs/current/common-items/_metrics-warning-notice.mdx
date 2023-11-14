@@ -33,6 +33,16 @@
 
 <ImgLang img='set-events-metrics.png' desc='メトリクスイベント' />
 
+<InDoc product='kubernetes'>
+
+:::note
+
+メトリクスにイベントテンプレートの詳細については[次の文書](#k8s-metrics-event-template)を参照してください。
+
+:::
+
+</InDoc>
+
 ### 基本情報を入力{#basic-info}
 
 -   **_イベント名_** ：追加するイベント名を入力してください。
@@ -45,13 +55,13 @@
 
     <ImgLang img='set-event-select-category.png' desc='メトリクスイベント - カテゴリ' />
 
-    -   **_カテゴリ_**選択オプションには、![指示線1](/img/number-01.png) **_名前_**と![指示線2](/img/number-02.png)データ収集間隔、![指示線3](/img/number-03.png) **_キー_**情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
+    -   **_カテゴリ_**選択オプションは、![指示線1](/img/number-01.png) **_名前_**と![指示線2](/img/number-02.png)データ収集間隔、![指示線3](/img/number-03.png) **_キー_**情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
 
     -   **_カテゴリ_**は、3時間以内にプロジェクトによって収集されたメトリクスデータを検索し、一覧に表示します。**_カテゴリ_**選択オプションに収集間隔が表示されない場合は、**_手動で入力する_**オプションを選択して、カテゴリキーを入力します。
 
 -   **_レベル_**
 
-    -   イベント発生時の警告レベルを意味します。<span class='vslow'>Critical</span>, <span class='slow'>Warning</span>、<span style={{color:'#757575'}}>Info</span>レベルに分けます。<span class='vslow'>Critical</span>、<span class='slow'>Warning</span>レベル設定時<Cmdname sid="resolved_event_notification" className="uitext" />の選択オプションが有効になります。
+    -   イベント発生時のアラートレベルを意味します。<span class='vslow'>Critical</span>, <span class='slow'>Warning</span>、<span style={{color:'#757575'}}>Info</span>レベルに分けます。<span class='vslow'>Critical</span>、<span class='slow'>Warning</span>レベル設定時<Cmdname sid="resolved_event_notification" className="uitext" />の選択オプションが有効になります。
 
     -   <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
 
@@ -150,13 +160,27 @@
 
 イベント設定ウィンドウが表示されます。 
 
-<ImgLang img='set-event-cmetric.png' desc='統合メトリクスイベント設定' />
+<ImgLang img='set-event-cmetric.png' desc='複合メトリクスイベント設定' />
+
+<Xclude product='server'>
 
 :::note
 
 複合メトリクスイベントを設定するには、**イベント設定**権限が必要です。
 
 :::
+
+</Xclude>
+
+<InDoc product='server'>
+
+:::note
+
+複合メトリクスにイベントテンプレートの詳細については[次の文書](#composite-metrics-template)を参照してください。
+
+:::
+
+</InDoc>
 
 ### **_イベントデータ照会_**
 

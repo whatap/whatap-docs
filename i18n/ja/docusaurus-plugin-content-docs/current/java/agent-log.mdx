@@ -12,7 +12,7 @@ tags:
 
 ## パスおよび名前設定
 
-エージェントログのパスと名前は、_whatap.conf_ファイルで設定できます。`log_root`のデフォルト値として_${WHATAP_HOME}/logs_パスを使用します。
+エージェントログのパスと名前は、_whatap.conf_ファイルで設定できます。`log_root`のデフォルト値として_`${WHATAP_HOME}`/logs_パスを使用します。
 
 ```ini title='whatap.conf'
 log_root=System.getProperty("whatap.home", ".") + "/logs"

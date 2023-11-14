@@ -49357,10 +49357,10 @@
     "service_id": "ITM07167"
   },
   "ITM07168": {
-    "en": "Number of restarts (5 minutes)",
-    "ja": "再起動数（5分間）",
-    "ko": "재시작 수(5분간)",
-    "zh": "Number of restarts (5 minutes)",
+    "en": "Number of container restarts",
+    "ja": "コンテナの再起動数",
+    "ko": "컨테이너 재시작 수 ",
+    "zh": "Number of container restarts",
     "service_id": "ITM07168"
   },
   "ITM07169": {
@@ -49839,6 +49839,41 @@
     "zh": "Your temporary license has expired.",
     "service_id": "NTC07236"
   },
+  "TTL07237": {
+    "en": "Resource relationships",
+    "ja": "リソース関係",
+    "ko": "리소스 관계",
+    "zh": "Resource relationships",
+    "service_id": "TTL07237"
+  },
+  "DSC07238": {
+    "en": "There is no pod state information that matches the condition.",
+    "ja": "条件に合ったパード状態情報はありません。",
+    "ko": "조건에 맞는 파드 상태 정보가 없습니다.",
+    "zh": "There is no pod state information that matches the condition.",
+    "service_id": "DSC07238"
+  },
+  "DSC07239": {
+    "en": "There is no pod state information.",
+    "ja": "パードステータス情報がありません。",
+    "ko": "파드 상태 정보가 없습니다.",
+    "zh": "There is no pod state information.",
+    "service_id": "DSC07239"
+  },
+  "BTN07240": {
+    "en": "Federated authentication",
+    "ja": "フェデレーション認証",
+    "ko": "인증 연동",
+    "zh": "Federated authentication",
+    "service_id": "BTN07240"
+  },
+  "DSC07241": {
+    "en": "Search all logs matching the search key.",
+    "ja": "検索キーに対応するすべてのログを検索します。",
+    "ko": "검색 키에 해당하는 모든 로그를 검색합니다.",
+    "zh": "Search all logs matching the search key.",
+    "service_id": "DSC07241"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -49882,5 +49917,10 @@
     "en": "Server Detail",
     "ja": "サーバー 詳細",
     "ko": "서버 상세"
+  },
+  "dbObjectInfo": {
+    "en": "Top Object",
+    "ja": "Topオブジェクト",
+    "ko": "Top 오브젝트"
   }
 }

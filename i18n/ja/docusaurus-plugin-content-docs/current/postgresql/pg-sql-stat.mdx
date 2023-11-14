@@ -15,7 +15,9 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 
 :::note
 
-`pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参照してください。
+-   1時間おきに`pg_stat_statements`からデルタ値を計算して収集しますので、設定して1時間後から収集を開始します。
+
+-   `pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参照してください。
 
 :::
 

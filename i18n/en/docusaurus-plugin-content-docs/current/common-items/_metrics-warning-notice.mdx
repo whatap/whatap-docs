@@ -33,6 +33,16 @@ Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select 
 
 <ImgLang img='set-events-metrics.png' desc='Metrics Event' />
 
+<InDoc product='kubernetes'>
+
+:::note
+
+For more information about the event templates for metrics, see [the following](#k8s-metrics-event-template).
+
+:::
+
+</InDoc>
+
 ### Entry of basic information{#basic-info}
 
 -   **_Event name_**: Enter the name of the event to add.
@@ -152,11 +162,25 @@ The Event Setting window appears.
 
 <ImgLang img='set-event-cmetric.png' desc='Composite Metrics Event Setting' />
 
+<Xclude product='server'>
+
 :::note
 
 To set a composite metrics event, you have to have the **_event setting_** role.
 
 :::
+
+</Xclude>
+
+<InDoc product='server'>
+
+:::note
+
+For more information about the event templates for composite metrics, see [the following](#composite-metrics-template).
+
+:::
+
+</InDoc>
 
 ### **_Query event data_**
 
@@ -234,7 +258,7 @@ Set additional options that are related to receiving alerts.
 
 ### **_Testing event rules_**
 
-<ImgLang img='set-event-cmetric-test.png' desc='Test Event Rules' />
+<ImgLang img='set-event-cmetric-test.png' desc='Testing event rules' />
 
 You can check how many alerts have occurred by enabling the event conditions you set for the selected time period. If you select Run, you can see the number of notifications, and the selected fields and thresholds are displayed on the chart when the event conditions are met.
 

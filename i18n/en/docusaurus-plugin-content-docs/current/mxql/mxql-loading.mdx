@@ -19,13 +19,13 @@ Let's learn about the commands that load metrics with the MXQL syntax.
 
 It is used to search the data of the category that stores the collected data in the `tag-field` format.
 
-| Option                                          | Function                                                                                        |
-| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| {backward : true}                               | Loads data in reverse chronological order.                                                      |
-| {filter : {key:fieldName, value :fieldValue}}   | Extracts data where the value of the fieldName field is equal to fieldValue.                    |
-| {filter : {key:fieldName, exclude :fieldValue}} | Data is extracted while excluding the data whose fieldName value is equal to fieldValue.        |
-| {filter : {key:fieldName, like :fieldValue}}    | Extracts data where the value of the fieldName field has fieldValue as a substring.             |
-| {filter : {key:fieldName, notlike :fieldValue}} | Data is extracted while excluding the data whose fieldName value has fieldValue as a substring. |
+| Option                                            | Function                                                                                        |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `{backward : true}`                               | Loads data in reverse chronological order.                                                      |
+| `{filter : {key:fieldName, value :fieldValue}}`   | Extracts data where the value of the fieldName field is equal to fieldValue.                    |
+| `{filter : {key:fieldName, exclude :fieldValue}}` | Data is extracted while excluding the data whose fieldName value is equal to fieldValue.        |
+| `{filter : {key:fieldName, like :fieldValue}}`    | Extracts data where the value of the fieldName field has fieldValue as a substring.             |
+| `{filter : {key:fieldName, notlike :fieldValue}}` | Data is extracted while excluding the data whose fieldName value has fieldValue as a substring. |
 
 -   In case no options are set
 
@@ -93,7 +93,7 @@ It is used to search the data of the category that stores the collected data in 
 
 | Option              | Function                                   |
 | ------------------- | ------------------------------------------ |
-| {backward : true}   | Loads data in reverse chronological order. |
+| `{backward : true}` | Loads data in reverse chronological order. |
 
 Data is loaded depending on the information set in the data search condition step.
 

@@ -214,7 +214,7 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 -   **ソースファイル**
 
-    _${GOPATH}/src/github.com/influxdata/telegraf/_ ディレクトリの下の圧縮ファイルを解凍します。
+    _`${GOPATH}`/src/github.com/influxdata/telegraf/_ ディレクトリの下の圧縮ファイルを解凍します。
 
     :::note
 
@@ -236,7 +236,7 @@ Telegrafreleaseバージョンを基準にwhatap pluginを追加して、事前�
 
 :::
 
-_${GOPATH}/src/github.com/influxdata/telegraf_ 以下のMakefileでビルドを進めてください。
+_`${GOPATH}`/src/github.com/influxdata/telegraf_ 以下のMakefileでビルドを進めてください。
 
 1.  依存関係ファイルのインストールを進めてください。 依存関係ファイルのインストールで、go depが使用されるため、go depを最初にインストールする必要があります。
 
@@ -244,7 +244,7 @@ _${GOPATH}/src/github.com/influxdata/telegraf_ 以下のMakefileでビルドを�
     # make deps
     ```
 
-2.  実行ファイルをビルドしてください。 _${GOPATH}/bin_ ディレクトリに実行ファイル(telegraf)が生成されます。
+2.  実行ファイルをビルドしてください。 _`${GOPATH}`/bin_ ディレクトリに実行ファイル(telegraf)が生成されます。
 
     ```bash title=SH
     # make go-install

@@ -1,0 +1,165 @@
+---
+id: about-apm-heap-memory
+title: Heap memory metrics alert configuration
+description: The heap memory-related metrics and metrics alert settings for WhaTap application monitoring products are described.
+tags:
+  - Heap Memory
+  - Metrics Alert
+  - Java
+  - Application Monitoring
+displayed_sidebar: learningSidebar
+---
+
+The heap memory-related metrics and their alert configurations for the application project are described.
+
+## Heap memory metrics{#heap-memory-intro}
+
+Heap memory is a data storage space allocated by the Java Virtual Machine (JVM) to run programs and stores key data such as instances and arrays. The heap area is closely related with the instance life cycle and GC. GC is the task of releasing unnecessary instances from the heap area to secure free space in the heap area. 
+
+<ImgLang img='best-p/about-heap-memory.png' desc='Heap Memory Widget' />
+
+Through heap memory-related metrics, you can check the maximum heap memories and current heap memories for each server to check the risk level. Additionally, you can determine the deviation between the maximum value and the current value to set the heap memory appropriately. If the minimum value for heap memory usage continues to rise, you may suspect a memory leak.
+
+### Metrics Search
+
+Home > Select Project > **_Sitemap_** > **_Analysis_** > **_Metrics Search_**
+
+The heap memory-related metrics are described that can be seen in **_Metrics search_**. 
+
+#### Heap Memory
+
+-   **Heap commit** `heap_committed`
+
+    This indicates the heap memory committed for use by the JVM.
+
+-   **Initial Heap** `heap_init`
+
+    This indicates the initial heap memory that the JVM requests to the OS for memory control.
+
+-   **Heap Max Usage** `heap_max\`
+
+    This indicates the maximum heap memory that the JVM can use for memory control. 
+
+-   **Heap use** `heap_used`
+
+    This indicates the heap memory used by the JVM. 
+
+#### Non-heap Memory
+
+-   **Heap commit** `nonheap_committed`
+
+    This indicates the initial non-heap memory that the JVM requests to the OS for memory control.
+
+-   **Initial Non-heap** `nonheap_init`
+
+    This indicates the initial non-heap memory that the JVM requests to the OS for memory control.
+
+-   **Non-heap max usage** `nonheap_max`
+
+    This indicates the maximum non-heap memory that the JVM can use for memory control. 
+
+-   **Non-heap use** `nonheap_used`
+
+    This indicates the non-heap memory used by the JVM.
+
+### Metrics Chart
+
+Home > Select Project > **_Analysis_** > **_Metrics Chart_**
+
+The heap memory-related metrics are described that can be seen in **_Metrics chart_**.
+
+-   **Heap total** `heap_tot`
+
+    It indicates the total memory for the JVM. 
+
+-   **Heap use** `heap_use`
+
+    This indicates the heap memory being used by the JVM. 
+
+-   **Heap Max Usage** `heap_max`
+
+    This indicates the maximum memory that the JVM can allocate.
+
+-   **Heap perm area usage** `heap_perm`
+
+    This indicates the memory usage in the Perm area.
+
+-   **Heap pending finalization count** `heap_pending_finalization`
+
+    This indicates the approximate number of objects waiting for finalization.
+
+:::note
+
+For more information about application metrics, see [the following](../java/metrics-app). 
+
+:::
+
+## Heap memory metrics alert configuration{#heap-memory-metrics-alert}
+
+Home > Select Project > **_Alert_** > Select **_Metrics_** tab
+
+To use the heap memory-related alerts, configure the metrics alerts. Metrics alert notifications allow for more specific and complex alert settings rather than basic alerts. For more information, see [the following](../java/metric-warning-notice). The following example explains how to configure the metrics alerts based on the heap memory usage (`heap_used`).
+
+<ImgLang img='best-p/about-heap-memory-metrics-event-01.png' desc='Heap memory metrics alert configuration 1' />
+
+1.  In **_Alert_** > **_Event Setting_**, select the **_Metrics_** tab.
+
+2.  Select **_+ Add Alert Policy_** on the upper right of the screen.
+
+3.  In the ![Leader line 1](/img/number-01.png) area on the **_Metrics event_** window, configure settings for **_Event name_**, **_Category_**, **_Level_**, **_Message_**, **_Event rule_**, and the like.
+
+    -   Enter the **_Event name_**. 
+
+        > Heap Memory
+
+    -   **_Level_** indicates the alert level of the occurred event. Set the level. The default value is <span class='vslow'>Critical</span>.
+
+    -   Select **_JavaMemory_** (`java_memory`) in the **_Category_** field.
+
+    -   Enter the event **_message_**. In case of the example message, when the heap memory usage exceeds the set threshold, it is sent along with the time of the occurred event.
+
+        > `${heap_used}` exceeded `${metricThreshold}` at `${time}`.
+
+    -   Enter the fields, operators, and thresholds to set the **_event rule_**. An example of conditions that trigger an alert when the heap usage exceeds 50,000,000 bytes is as follows:
+
+        > Field `heap_used`, operator `>`, threshold `50000000`
+
+4.  In the ![Leader line 2](/img/number-02.png) area, set the detailed requirements for ![Leader line a](/img/char-a.svg) event reception, and then test the event alert rules ![Leader line b](/img/char-b.svg).
+
+    <ImgLang img='best-p/about-heap-memory-metrics-event-02.png' desc='Heap memory metrics alert configuration 2' />
+
+    -   ![지시선 a](/img/char-a.svg) **_Notification setting_**
+
+        -   **_Number of event_** allows you to receive alerts when the event has occurred `n'` times in the last `n` period.
+
+            > The alert is sent when the event occurs `3` times in the last `1` minute.
+
+        -   **_Event pause_** prevents the same alert from occurring for the set time after the alert occurred. 
+
+    -   ![Leader line b](/img/char-b.svg) The **_Testing event rules_** option allows you to see how many alerts were triggered when setting alerts for the event during the selected period. 
+
+        > During the last `60 minutes`, the total number of alerts whose heap memory usage (`heap_used`) of more than `3` times in a row exceeded `50,000,000` bytes within `1 minute` is **_66_**.
+
+5.  Select ![Leader line 3](/img/number-03.png) **_Save_** at the bottom of the **_Metrics event_** window to end the alert configuration.
+
+## Heap memory usage checking{#heap-memory-use-check}
+
+Home > Select Project > **_Analysis_** > **_Metrics Chart_**
+
+To check the heap memory usage (`heap_used`) in detail for the selected period, go to **_Metrics chart_**.
+
+<ImgLang img='best-p/about-heap-memory-metrics-chart-01.png' desc='Metrics Chart' />
+
+1.  Through the ![Leader line 1](/img/number-01.png) time selector at the top, select a time to view.
+
+2.  From the metrics list on the left, select **_JavaMemory_** (`java_memory`) for the ![Leader line 2](/img/number-02.png) **_Category_**.
+
+3.  Under the ![Leader line 3](/img/number-03.png) **_JavaMemory_** category, select `heap_used`. In the chart area, you can see the heap memory usage chart as shown in the example.
+
+4.  Click **_More_** on the upper right of the `heap_used` widget, and then select **_Detail_** in the option menu. Then each metrics trend can be viewed for the monitoring targets.
+
+    <ImgLang img='best-p/about-heap-memory-metrics-chart-02.png' desc='Metrics Chart Details 1' />
+
+5.  Select **_Tag_** and **_Filter_**, then you can see individual charts by selecting values for agent, agent group, agent host, and the like.
+
+    <ImgLang img='best-p/about-heap-memory-metrics-chart-03.png' desc='Metrics Chart Details 2' />

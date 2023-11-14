@@ -4,16 +4,16 @@
 
 -   **\*サーバーCPU**、**\*サーバーメモリ**、**_サーバーディスク_**
 
-    各項目の使用量で設定した**_条件(%)_**に設定したしきい値に達すると通知が送信されます。
+    各項目の使用量が設定した<Cmdname sid="condition" className="uitext" /><span class='uitext'>(%)</span>に設定した基準値に達すると通知を送信します。
 
 -   **_アクティブトランザクション_**
 
-    アクティブトランザクションの発生件数が**_条件(件数)_**に設定したしきい値を超え続ける場合は、通知を送信します。発生件数のデフォルト値は100個です。
+    アクティブトランザクションの発生件数が<Cmdname sid="condition" className="uitext" /><span clas='uitext'>(</span><Cmdname sid="count" className="uitext" /><span clas='uitext'>)</span>に設定したしきい値を超え続ける場合は、通知を送信します。発生件数のデフォルト値は100個です。
 
 -   **_トランザクションエラー_**
 
-    正常に実行されてかったトランザクションを意味します。エラー件数が**_条件(件数)_**に設定したしきい値を超えている場合は通知を送信します。収集間隔は5秒です。
+    正常に実行されていないトランザクションを意味します。エラー件数が<Cmdname sid="condition" className="uitext" /><span clas='uitext'>(</span><Cmdname sid="count" className="uitext" /><span clas='uitext'>)</span>に設定した基準値を超えた状態を継続すると通知を送信します。収集周期は5秒です。
 
 -   **_トランザクションレスポンス_**
 
-    トランザクションが終了した時間を確認します。例えば、**10**秒の**_レスポンス時間_**しきい値を超えるトランザクションの**_件数_**が**10**個を超え、この状態が**5**秒間**_持続_**すると通知を送信します。
+    トランザクションが終了した時間を確認します。例えば、**10**秒の<Cmdname sid="response_time" className="uitext" />しきい値を超えるトランザクションの<Cmdname sid="count" className="uitext" />が**10**個を超え、この状態が**5**秒間<Cmdname sid="continue" className="uitext" />すると通知を送信します。

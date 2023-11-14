@@ -1,9 +1,132 @@
 ---
 id: service-1_112_x
-title: Service 1.112.0
-toc_max_heading_level: 3
+title: Service 1.112.x
+toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_110_x
 ---
+
+<!--
+## Service 1.112.5
+
+2023년 11월 06일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />의 트랜잭션 데이터 미조회 현상 수정</p>
+
+---
+
+### `Kubernetes`
+
+<p><Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="metrics" className="uitext" /> 메뉴에서 <Cmdname sid="composite_metrics" className="uitext" /> 이벤트를 추가할 경우 <Cmdname sid="data_time_range" className="uitext" /> 옵션에 <Cmdname sid="2_min" className="uitext" /> 항목 추가</p>
+
+</div>-->
+
+## Service 1.112.4
+
+2023年11月03日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status><Cmdname sid="report" className="uitext" />メニューから<Cmdname sid="download" className="uitext" />ボタンが作動しないバグを修正</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status><Cmdname sid="sms_server_list" className="uitext" />><Cmdname sid="sms_server_list" className="uitext" />メニューでは、ユーザーはもはや過去の時点を照会することができません。 リアルタイム(<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />)または一時停止（<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />)状態でのみ照会できるように修正しました。</p>
+
+</div>
+
+## Service 1.112.3
+
+2023年11月01日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status>チャンネルトーク左側<Cmdname sid="pcode" className="uitext" />ボタンの位置がチャットウィンドウの後ろに位置して見えない現象を修正
+
+-   <Status>Fixed</Status><Cmdname sid="platform_catalog" className="uitext" />メニューでバナー領域がウェブブラウザによってスタイルが壊れる現象を修正
+
+* * *
+
+### `Application`
+
+#### ダッシュボード
+
+<p><Status>Fixed</Status><Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06126" className="uitext" />タブでエラー情報文字列がカットされる現象の修正</p>
+
+#### エージェントのインストール
+
+<p><Status>Fixed</Status>Javaエージェントのインストールメッセージの修正</p>
+
+-   <Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />セクションにエージェントバージョン別の内容を追加
+
+-   JVMオプションに関してSpringBoot、Java17バージョンに対応した内容を追加
+
+-   その他の重複メッセージの削除
+
+* * *
+
+### `Database`
+
+-   <Status>Changed</Status><Cmdname sid="dashboard" className="uitext" />><Cmdname sid="instance_list" className="uitext" />メニューからテーブルヘッダーにフルインスタンスを選択できるボタンを追加
+
+-   <Status>Fixed</Status>MySQL V2プロジェクトの<Cmdname sid="instance_list" className="uitext" />メニューから<Cmdname sid="multi_view" className="uitext" /> ボタンをタップすると、V1バージョンの<Cmdname sid="instance_monitoring" className="uitext" />メニューに移動するバグの修正
+
+* * *
+
+### `URL`
+
+<p><Status>Feature</Status>URL追加、編集時<Cmdname sid="collection_cycle" className="uitext" />を選択できるUIの追加</p>
+
+</div>
+
+## Service 1.112.2
+
+2023年10月27日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status><Cmdname sid="payment_information" className="uitext" />メニューから<Cmdname sid="billing_reception_info" className="uitext" />項目を修正するとエラーメッセージが表示される問題の修正</p>
+
+#### <Cmdname sid="integrated_dashboard" />
+
+<p><Status>Fixed</Status><Cmdname sid="hitmap" className="uitext" />ウィジェットで<Cmdname sid="TTL06209" className="uitext" />ポップアップウィンドウが作動しない現象の修正</p>
+
+</div>
+
+## Service 1.112.1
+
+2023年10月26日
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status><Cmdname sid="dashboard" className="uitext" />><Cmdname sid="transaction_map" className="uitext" />メニューの<Cmdname sid="trace_list" className="uitext" />一覧から詳細照会ボタンが見えない問題の修正</p>
+
+* * *
+
+### `Database`
+
+-   <Status>Fixed</Status><Cmdname sid="dashboard" className="uitext" />><Cmdname sid="multi_instance_monitoring" className="uitext" />メニューからロックツリーデータが表示されない問題の修正
+
+-   <Status>Changed</Status><b>MySQL</b>および<b>PostgreSQL</b>プロジェクトのV2転換期間を2023年12月31日まで延長し、関連メニューから日付を修正
+
+</div>
+
+## Service 1.112.0
 
 2023年10月25日
 
