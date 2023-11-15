@@ -49064,14 +49064,14 @@
   },
   "DSC07125": {
     "en": "Link project registration has been completed.",
-    "ja": "連携プロジェクト登録が完了しました。",
+    "ja": "連携プロジェクトの登録を完了しました。",
     "ko": "연계 프로젝트 등록이 완료되었습니다.",
     "zh": "Link project registration has been completed.",
     "service_id": "DSC07125"
   },
   "DSC07126": {
     "en": "Deletion of the linked project has been completed.",
-    "ja": "連携プロジェクトの削除が完了しました。",
+    "ja": "連携プロジェクトの削除を完了しました。",
     "ko": "연계 프로젝트 삭제가 완료되었습니다.",
     "zh": "Deletion of the linked project has been completed.",
     "service_id": "DSC07126"
@@ -49085,7 +49085,7 @@
   },
   "CNT07128": {
     "en": "Even if you do not have to reproduce the failure situation, you can use your stack to determine the cause of the problem.",
-    "ja": "障害状況を再現しなくても、保持しているスタックを活用して問題の原因を特定します。",
+    "ja": "障害の再現を待たなくても、すでに記録しているスタックデータを分析して問題の原因を調査します。",
     "ko": "장애 상황을 재현하지 않아도 보유한 스택을 활용하여 문제의 원인을 파악합니다.",
     "zh": "Even if you do not have to reproduce the failure situation, you can use your stack to determine the cause of the problem.",
     "service_id": "CNT07128"
@@ -49099,21 +49099,21 @@
   },
   "DSC07130": {
     "en": "Replication status of ${oname} is Broken or Failover.",
-    "ja": "${oname}のReplication状態がBrokenまたはFailoverされました。",
+    "ja": "${oname}のReplication状態がBroken、またはFailoverされました。",
     "ko": "${oname}의 Replication 상태가 Broken 또는 Failover 되었습니다.",
     "zh": "Replication status of ${oname} is Broken or Failover.",
     "service_id": "DSC07130"
   },
   "DSC07131": {
     "en": "The CPU utilization of ${oname} is ${cpu(xos2)}.",
-    "ja": "${oname}のCPU使用率が${cpu(xos2)}となります。",
+    "ja": "${oname}のCPU使用率が${cpu(xos2)}です。",
     "ko": "${oname}의 CPU 사용률이 ${cpu(xos2)}입니다.",
     "zh": "The CPU utilization of ${oname} is ${cpu(xos2)}.",
     "service_id": "DSC07131"
   },
   "DSC07132": {
     "en": "The memory usage for ${oname} is ${mem(xos)}.",
-    "ja": "${oname}のメモリ使用量が${mem(xos)}となります。",
+    "ja": "${oname}のメモリ使用量が${mem(xos)}です。",
     "ko": "${oname}의 메모리 사용량이 ${mem(xos)}입니다.",
     "zh": "The memory usage for ${oname} is ${mem(xos)}.",
     "service_id": "DSC07132"
@@ -49141,7 +49141,7 @@
   },
   "TTL07136": {
     "en": "Connection utilization",
-    "ja": "Connection 使用率",
+    "ja": "Connection使用率",
     "ko": "Connection 사용률",
     "zh": "Connection utilization",
     "service_id": "TTL07136"
@@ -49155,56 +49155,56 @@
   },
   "TTL07138": {
     "en": "Replication latency",
-    "ja": "Replication 遅延時間",
+    "ja": "Replication遅延時間",
     "ko": "Replication 지연 시간",
     "zh": "Replication latency",
     "service_id": "TTL07138"
   },
   "DSC07139": {
     "en": "The replication delay for ${oname} is ${replication_delay}.",
-    "ja": "${oname} の replication 遅延時間は ${replication_delay} です。'",
+    "ja": "${oname}のreplication遅延時間は ${replication_delay} です。",
     "ko": "${oname}의 replication 지연시간은  ${replication_delay}입니다.",
     "zh": "The replication delay for ${oname} is ${replication_delay}.",
     "service_id": "DSC07139"
   },
   "DSC07140": {
     "en": "The memory block hit rate for ${oname} is ${blks_hit_ratio}.",
-    "ja": "${oname} の Memory Block Hit率は ${blks_hit_ratio} です。",
+    "ja": "${oname}のMemory Block Hit率は ${blks_hit_ratio} です。",
     "ko": "${oname}의 Memory Block Hit율은 ${blks_hit_ratio}입니다.",
     "zh": "The memory block hit rate for ${oname} is ${blks_hit_ratio}.",
     "service_id": "DSC07140"
   },
   "TTL07141": {
     "en": "Long uncommitted sessions",
-    "ja": "長時間Commitしていないセッション",
+    "ja": "長時間コミットしていないセッション",
     "ko": "장시간 Commit하지 않은 세션",
     "zh": "Long uncommitted sessions",
     "service_id": "TTL07141"
   },
   "DSC07142": {
     "en": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
-    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count} 個あります。",
+    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count} 件あります。",
     "ko": "${runtime}초 이상 커밋되지 않은 세션이 ${state_count}개 있습니다.",
     "zh": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
     "service_id": "DSC07142"
   },
   "NTC07144": {
     "en": "You must enter 1 category.",
-    "ja": "必ず1部門にエントリーすること。",
+    "ja": "必ず一つのカテゴリーを入力してください。",
     "ko": "카테고리를 1개 입력해야합니다.",
     "zh": "You must enter 1 category.",
     "service_id": "NTC07144"
   },
   "NTC07145": {
     "en": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
-    "ja": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
+    "ja": "全体の{x}件の中、<span style=\"color: #296CF2;\">合計</span>を照会し、検索された結果は<span style=\"color: #296CF2;\">{y}件</span>です。",
     "ko": "전체 {x}건 중 <span style=\"color: #296CF2;\">전체</span>를 조회했으며 검색된 결과는 <span style=\"color: #296CF2;\">{y}건</span>입니다.",
     "zh": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
     "service_id": "NTC07145"
   },
   "TLT07146": {
     "en": "View related key indicators",
-    "ja": "関連キーインジケータを見る",
+    "ja": "主な関連指標の表示",
     "ko": "연관 주요 지표 보기",
     "zh": "View related key indicators",
     "service_id": "TLT07146"
@@ -49232,7 +49232,7 @@
   },
   "CNT07150": {
     "en": "All within the project",
-    "ja": "プロジェクト内全体",
+    "ja": "プロジェクト内のすべて",
     "ko": "프로젝트내 전체",
     "zh": "All within the project",
     "service_id": "CNT07150"
@@ -49246,14 +49246,14 @@
   },
   "NTC07152": {
     "en": "You don't have a license.",
-    "ja": "あなたはライセンスを持っていない。",
+    "ja": "ライセンスを持っていません。",
     "ko": "라이선스가 없습니다.",
     "zh": "You don't have a license.",
     "service_id": "NTC07152"
   },
   "NTC07153": {
     "en": "You have exceeded your usage.",
-    "ja": "使用量を超えています。",
+    "ja": "使用量を超えました。",
     "ko": "사용량을 초과 하였습니다.",
     "zh": "You have exceeded your usage.",
     "service_id": "NTC07153"
@@ -49267,14 +49267,14 @@
   },
   "NTC07155": {
     "en": "The IP address is invalid or not specified.",
-    "ja": "IPアドレスが無効であるか、指定されていない。",
+    "ja": "IPアドレスが無効であるか、指定されていません。",
     "ko": "IP 주소가 잘못되었거나 지정되지 않았습니다.",
     "zh": "The IP address is invalid or not specified.",
     "service_id": "NTC07155"
   },
   "NTC07156": {
     "en": "This is invalid license.",
-    "ja": "これは無効なライセンスだ。",
+    "ja": "無効なライセンスです。",
     "ko": "유효하지 않은 라이선스 입니다.",
     "zh": "This is invalid license.",
     "service_id": "NTC07156"
@@ -49288,7 +49288,7 @@
   },
   "NTC07158": {
     "en": "The CPU quantity has been exceeded.",
-    "ja": "CPUの数量が超過した。",
+    "ja": "CPUの数量が超えました。",
     "ko": "CPU 수량이 초과 되었습니다.",
     "zh": "The CPU quantity has been exceeded.",
     "service_id": "NTC07158"
@@ -49302,14 +49302,14 @@
   },
   "NTC07160": {
     "en": "You're out of licenses.",
-    "ja": "ライセンスが切れている",
+    "ja": "ライセンスが足りません。",
     "ko": "라이선스가 부족합니다.",
     "zh": "You're out of licenses.",
     "service_id": "NTC07160"
   },
   "NTC07161": {
     "en": "License is not applied.",
-    "ja": "ライセンスは適用されない。",
+    "ja": "ライセンスが適用されていません。",
     "ko": "라이선스 적용이 되지않았습니다.",
     "zh": "License is not applied.",
     "service_id": "NTC07161"
@@ -49357,15 +49357,15 @@
     "service_id": "ITM07167"
   },
   "ITM07168": {
-    "en": "Number of restarts (5 minutes)",
-    "ja": "再起動数（5分間）",
-    "ko": "재시작 수(5분간)",
-    "zh": "Number of restarts (5 minutes)",
+    "en": "Number of container restarts",
+    "ja": "コンテナの再起動回数",
+    "ko": "컨테이너 재시작 수 ",
+    "zh": "Number of container restarts",
     "service_id": "ITM07168"
   },
   "ITM07169": {
     "en": "CPU Request at initialization start",
-    "ja": "初期化開始時のCPU要求",
+    "ja": "初期化開始時のCPU Requrest",
     "ko": "초기화 시작시 CPU Request",
     "zh": "CPU Request at initialization start",
     "service_id": "ITM07169"
@@ -49386,14 +49386,14 @@
   },
   "ITM07172": {
     "en": "Memory Request at initialization start",
-    "ja": "初期化開始時のメモリー要求",
+    "ja": "初期化開始時のメモリ Requrest",
     "ko": "초기화 시작시 Memory Request",
     "zh": "Memory Request at initialization start",
     "service_id": "ITM07172"
   },
   "ITM07173": {
     "en": "Memory Limit when initialization starts",
-    "ja": "初期化開始時のメモリ制限",
+    "ja": "初期化開始時のメモリ Limit",
     "ko": "초기화 시작 시 Memory Limit",
     "zh": "Memory Limit when initialization starts",
     "service_id": "ITM07173"
@@ -49407,14 +49407,14 @@
   },
   "ITM07175": {
     "en": "Initialization start time",
-    "ja": "初期化開始時間",
+    "ja": "初期化開始時刻",
     "ko": "초기화 시작 시간",
     "zh": "Initialization start time",
     "service_id": "ITM07175"
   },
   "ITM07176": {
     "en": "Initialization completion time",
-    "ja": "初期化完了時間",
+    "ja": "初期化完了時刻",
     "ko": "초기화 완료 시간",
     "zh": "Initialization completion time",
     "service_id": "ITM07176"
@@ -49449,21 +49449,21 @@
   },
   "DSC07181": {
     "en": "List of corresponding SQL executions in {time}.",
-    "ja": "{time}の対応するSQL実行リストです。",
+    "ja": "{time}のSQL実行リストです。",
     "ko": "{time}의 해당 SQL 실행 리스트입니다.",
     "zh": "List of corresponding SQL executions in {time}.",
     "service_id": "DSC07181"
   },
   "DSC07182": {
     "en": "Click to go to the instance monitoring screen for that time.",
-    "ja": "クリックすると、その時間のインスタンス監視画面に移動します。",
+    "ja": "クリックすると、該当時間のインスタンス監視画面へ移動します。",
     "ko": "클릭하면 해당시간의 인스턴스 모니터링 화면으로 이동합니다.",
     "zh": "Click to go to the instance monitoring screen for that time.",
     "service_id": "DSC07182"
   },
   "DSC07183": {
     "en": "There are no associated containers. Please check your project access key.",
-    "ja": "リンクされたコンテナはありません。 プロジェクトアクセスキーを確認してください。",
+    "ja": "リンクされたコンテナがありません。 プロジェクトアクセスキーを確認してください。",
     "ko": "연결된 컨테이너가 없습니다. 프로젝트 액세스 키를 확인하세요.",
     "zh": "There are no associated containers. Please check your project access key.",
     "service_id": "DSC07183"
@@ -49505,7 +49505,7 @@
   },
   "DSC07189": {
     "en": "No recommended value exists.",
-    "ja": "推奨値はありません。",
+    "ja": "推奨値がありません。",
     "ko": "추천 값이 존재하지 않습니다.",
     "zh": "No recommended value exists.",
     "service_id": "DSC07189"
@@ -49533,7 +49533,7 @@
   },
   "DSC07193": {
     "en": "Search for logs that contain values ​​different from the searched value.",
-    "ja": "検索された値とは異なる値を含むログを検索します。",
+    "ja": "検索値とは異なる値を含むログを検索します。",
     "ko": "검색 값과 다른 값이 포함된 로그를 조회합니다.",
     "zh": "Search for logs that contain values ​​different from the searched value.",
     "service_id": "DSC07193"
@@ -49554,14 +49554,14 @@
   },
   "DSC07196": {
     "en": "Invalid tag",
-    "ja": "無効なタグ",
+    "ja": "無効なタグです。",
     "ko": "유효하지 않는 태그",
     "zh": "Invalid tag",
     "service_id": "DSC07196"
   },
   "TTL07197": {
     "en": "Date / Time",
-    "ja": "日付 / 時刻",
+    "ja": "日付 / 時間",
     "ko": "날짜 / 시간",
     "zh": "Date / Time",
     "service_id": "TTL07197"
@@ -49589,14 +49589,14 @@
   },
   "ITM07201": {
     "en": "Original data",
-    "ja": "オリジナルデータ",
+    "ja": "原始データ",
     "ko": "원본 데이터",
     "zh": "Original data",
     "service_id": "ITM07201"
   },
   "DSC07202": {
     "en": "Apply for WhaTap user training",
-    "ja": "WhaTap ユーザートレーニングに申し込む",
+    "ja": "WhaTap ユーザートレーニングの申し込み",
     "ko": "와탭 사용자 교육 신청",
     "zh": "Apply for WhaTap user training",
     "service_id": "DSC07202"
@@ -49652,15 +49652,15 @@
   },
   "TTL07210": {
     "en": "Count Trend",
-    "ja": "数の推移",
+    "ja": "件数の推移",
     "ko": "개수 추이",
     "zh": "Count Trend",
     "service_id": "TTL07210"
   },
   "TTL07211": {
     "en": "Number of Pods/Containers",
-    "ja": "パード/コンテナ数",
-    "ko": "파드/컨테이너 수",
+    "ja": "Pod/コンテナ数",
+    "ko": "Pod/컨테이너 수",
     "zh": "Number of Pods/Containers",
     "service_id": "TTL07211"
   },
@@ -49673,7 +49673,7 @@
   },
   "TTL07213": {
     "en": "Number of Pods",
-    "ja": "パード数",
+    "ja": "Pod数",
     "ko": "파드 수",
     "zh": "Number of Pods",
     "service_id": "TTL07213"
@@ -49701,7 +49701,7 @@
   },
   "TTL07217": {
     "en": "Number of Alarms",
-    "ja": "アラーム数",
+    "ja": "アラート数",
     "ko": "알람 수",
     "zh": "Number of Alarms",
     "service_id": "TTL07217"
@@ -49750,35 +49750,35 @@
   },
   "DSC07224": {
     "en": "Supported versions: {version} or higher",
-    "ja": "サポートバージョン：{version}以降",
+    "ja": "対応バージョン：{version}以降",
     "ko": "지원 버전: {version} 이상",
     "zh": "Supported versions: {version} or higher",
     "service_id": "DSC07224"
   },
   "TLT07225": {
     "en": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
-    "ja": "使用料金は契約方式（固定価格または使用量連携）に\n金額に割引オプションが適用された金額です。",
+    "ja": "利用料金は契約方式（固定価または従量制）に割引オプションが適用された金額です。",
     "ko": "사용요금은 계약 방식(고정가 또는 사용량 연계)에 \n따른 금액으로 할인옵션이 적용된 금액입니다.",
     "zh": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
     "service_id": "TLT07225"
   },
   "TLT07226": {
     "en": "The discount amount is based on each discount condition applied at the time of contract.\nIt is converted into an amount and printed.",
-    "ja": "割引金額は、契約時に適用される各割引条件です。\n金額に換算して出力されます。",
+    "ja": "割引金額は、契約時に適用されるそれぞれの割引条件を金額として換算して出力したものです。",
     "ko": "할인금액은 계약 시 적용된 각각의 할인 조건을\n금액으로 환산하여 출력됩니다.",
     "zh": "The discount amount is based on each discount condition applied at the time of contract.\nIt is converted into an amount and printed.",
     "service_id": "TLT07226"
   },
   "DSC07227": {
     "en": "Actual amount used",
-    "ja": "実用金額",
+    "ja": "実の利用金額",
     "ko": "실사용 금액",
     "zh": "Actual amount used",
     "service_id": "DSC07227"
   },
   "DSC07228": {
     "en": "Compared to actual use",
-    "ja": "実用的なコントラスト",
+    "ja": "実の利用との比較",
     "ko": "실사용 대비",
     "zh": "Compared to actual use",
     "service_id": "DSC07228"
@@ -49799,7 +49799,7 @@
   },
   "BTN07231": {
     "en": "Go to the guide",
-    "ja": "ガイドショートカット",
+    "ja": "ガイドへ",
     "ko": "가이드 바로가기",
     "zh": "Go to the guide",
     "service_id": "BTN07231"
@@ -49834,10 +49834,73 @@
   },
   "NTC07236": {
     "en": "Your temporary license has expired.",
-    "ja": "仮免許の有効期限が切れています。",
+    "ja": "臨時のライセンスが満了しました。",
     "ko": "임시 라이선스가 만료되었습니다.",
     "zh": "Your temporary license has expired.",
     "service_id": "NTC07236"
+  },
+  "TTL07237": {
+    "en": "Resource relationships",
+    "ja": "リソース関係",
+    "ko": "리소스 관계",
+    "zh": "Resource relationships",
+    "service_id": "TTL07237"
+  },
+  "DSC07238": {
+    "en": "There is no pod state information that matches the condition.",
+    "ja": "条件に合ったPod状態情報がありません。",
+    "ko": "조건에 맞는 파드 상태 정보가 없습니다.",
+    "zh": "There is no pod state information that matches the condition.",
+    "service_id": "DSC07238"
+  },
+  "DSC07239": {
+    "en": "There is no pod state information.",
+    "ja": "Pod状態情報がありません。",
+    "ko": "파드 상태 정보가 없습니다.",
+    "zh": "There is no pod state information.",
+    "service_id": "DSC07239"
+  },
+  "BTN07240": {
+    "en": "Federated authentication",
+    "ja": "認証連動",
+    "ko": "인증 연동",
+    "zh": "Federated authentication",
+    "service_id": "BTN07240"
+  },
+  "DSC07241": {
+    "en": "Search all logs matching the search key.",
+    "ja": "検索語に該当するすべてのログを検索します。",
+    "ko": "검색 키에 해당하는 모든 로그를 검색합니다.",
+    "zh": "Search all logs matching the search key.",
+    "service_id": "DSC07241"
+  },
+  "TLT07242": {
+    "en": "If you want to use the Monitoring Service more efficiently, please apply for <span style=\"color: #ffc107;\">WhaTap user training</span>",
+    "ja": "モニタリングサービスをより効率的に活用したいなら、<span style=\"color: #ffc107;\">WhaTapユーザートレーニング</span>を申し込んでください。",
+    "ko": "모니터링 서비스를 더 잘 이용해보고 싶다면? <span style=\"color: #ffc107;\">와탭 사용자 교육</span>을 신청하세요",
+    "zh": "If you want to use the Monitoring Service more efficiently, please apply for <span style=\"color: #ffc107;\">\bWhaTap user training<span>",
+    "service_id": "TLT07242"
+  },
+  "BTN07243": {
+    "en": "View new version",
+    "ja": "新しいバージョンで見る",
+    "ko": "신규 버전으로 보기",
+    "zh": "View new version",
+    "service_id": "BTN07243"
+  },
+  "DSC07244": {
+    "en": "{object} has disappeared.",
+    "ja": "表示されなくなった{object}です。",
+    "ko": "사라진 {object} 입니다.",
+    "zh": "{object} has disappeared.",
+    "service_id": "DSC07244"
+  },
+  "DSC07245": {
+    "en": "The agent version is too low and is not supported. Please update to the latest agent.",
+    "ja": "エージェントのバージョンが低くサポートされていません。 最新のエージェントにアップデートしてください。",
+    "ko": "에이전트 버전이 낮아 지원하지 않습니다. 최신 에이전트로 업데이트 하세요.",
+    "zh": "The agent version is too low and is not supported. Please update to the latest agent.",
+    "service_id": "DSC07245"
   },
   "": {
     "": "",
@@ -49882,5 +49945,10 @@
     "en": "Server Detail",
     "ja": "サーバー 詳細",
     "ko": "서버 상세"
+  },
+  "dbObjectInfo": {
+    "en": "Top Object",
+    "ja": "Topオブジェクト",
+    "ko": "Top 오브젝트"
   }
 }
