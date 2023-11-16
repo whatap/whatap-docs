@@ -29673,72 +29673,72 @@
     "service_id": "_04314"
   },
   "master_alert_template_4": {
-    "en": "Master CPU request notification",
-    "ja": "マスターCPU要請量のアラート通知",
-    "ko": "마스터 CPU Request 알림",
-    "zh": "Master CPU request notification",
-    "service_id": "_04315"
+    "en": "Cluster CPU request notification",
+    "ja": "クラスタCPU要請量のアラート通知",
+    "ko": "클러스터 CPU Request 알림",
+    "zh": "Cluster CPU request notification",
+    "service_id": "TTL04315"
   },
   "master_alert_template_4_detail": {
-    "en": "Master CPU request is over 80% of the total.",
-    "ja": "マスターCPU要請量が全体の80%を超えました。",
-    "ko": "마스터 CPU Request 사용률이 전체 대비 80% 이상입니다.",
-    "zh": "Master CPU request is over 80% of the total.",
-    "service_id": "_04316"
+    "en": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
+    "ja": "クラスタCPUクォータに対するCPU要求（最小要求元）が80％を超えました。",
+    "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 80% 이상입니다.",
+    "zh": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
+    "service_id": "NTC04316"
   },
   "master_alert_template_5": {
-    "en": "Master memory request notification",
-    "ja": "マスターメモリ要請量のアラート通知",
-    "ko": "마스터 Memory Request 알림",
-    "zh": "Master memory Request notification",
-    "service_id": "_04317"
+    "en": "Cluster memory request notification",
+    "ja": "クラスタメモリ要請量のアラート通知",
+    "ko": "클러스터 Memory Request 알림",
+    "zh": "Cluster memory request notification",
+    "service_id": "TTL04317"
   },
   "master_alert_template_5_detail": {
-    "en": "Master memory request utilization is over 80% of the total.",
-    "ja": "マスターメモリ要請量が全体の80%を超えました。",
-    "ko": "마스터 Memory Request 량이 전체 대비 80% 이상입니다.",
-    "zh": "Master memory Request utilization is over 80% of the total.",
-    "service_id": "_04318"
+    "en": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
+    "ja": "クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 80% 以上です。",
+    "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 80% 이상입니다.",
+    "zh": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
+    "service_id": "NTC04318"
   },
   "master_alert_template_6": {
-    "en": "Master CPU limit notification",
-    "ja": "マスターCPUリミットによる使用率のアラート通知",
-    "ko": "마스터 CPU Limit 알림",
-    "zh": "Master CPU Limit notification",
-    "service_id": "_04319"
+    "en": "Cluster CPU request notification",
+    "ja": "クラスタCPU要請量のアラート通知",
+    "ko": "클러스터 CPU Request 알림",
+    "zh": "Cluster CPU request notification",
+    "service_id": "TTL04319"
   },
   "master_alert_template_6_detail": {
-    "en": "Master CPU utilization is over 60% of CPU Limit.",
-    "ja": "マスターCPUリミットによる使用率が60%を超えました。",
-    "ko": "마스터 CPU Limit 대비 사용률이 60% 이상입니다.",
-    "zh": "Master CPU utilization is over 60% of CPU Limit.",
-    "service_id": "_04320"
+    "en": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
+    "ja": "クラスタCPUクォータに対するCPU要求（最小要求元）が60%を超えました。",
+    "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 60% 이상입니다.",
+    "zh": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
+    "service_id": "NTC04320"
   },
   "master_alert_template_7": {
-    "en": "Master memory limit notification",
-    "ja": "マスターメモリリミットによる使用率のアラート通知",
-    "ko": "마스터 Memory Limit 알림",
-    "zh": "Master Memory Limit notification",
-    "service_id": "_04321"
+    "en": "Cluster memory request notification",
+    "ja": "クラスタメモリ要請量のアラート通知",
+    "ko": "클러스터 Memory Request 알림",
+    "zh": "Cluster memory request notification",
+    "service_id": "TTL04321"
   },
   "master_alert_template_7_detail": {
-    "en": "Master memory utilization is over 90% of memory limit.",
-    "ja": "マスターメモリリミットによる使用率が90%を超えました。",
-    "ko": "마스터 Memory Limit 대비 사용률이 90% 이상입니다.",
-    "zh": "Master Memory utilization is over 90% of Memory Limit.",
-    "service_id": "_04322"
+    "en": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
+    "ja": "クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 60% 以上です。",
+    "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 60% 이상입니다.",
+    "zh": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
+    "service_id": "NTC04322"
   },
   "master_alert_template_8": {
     "en": "Notification of the number of master pods",
-    "ja": "マスターPod数のアラート通知",
-    "ko": "마스터 POD수 알림",
+    "ja": "クラスタPod数のアラート通知",
+    "ko": "클러스터 POD수 알림",
     "zh": "Notification of the number of master pods",
     "service_id": "_04323"
   },
   "master_alert_template_8_detail": {
     "en": "The number of PODs that can be allocated to the master is 0.",
-    "ja": "マスターに割当てできるPodの数は0です。",
-    "ko": "마스터에 할당 가능한 POD 개수는 0입니다.",
+    "ja": "クラスタに割当てできるPodの数は0です。",
+    "ko": "클러스터에 할당 가능한 POD 개수는 0입니다.",
     "zh": "The number of PODs that can be allocated to the master is 0.",
     "service_id": "_04324"
   },
@@ -49889,10 +49889,10 @@
     "service_id": "BTN07243"
   },
   "DSC07244": {
-    "en": "{object} has disappeared.",
+    "en": "This {object} does not exist.",
     "ja": "表示されなくなった{object}です。",
-    "ko": "사라진 {object} 입니다.",
-    "zh": "{object} has disappeared.",
+    "ko": "존재하지 않는 {object} 입니다.",
+    "zh": "This {object} does not exist.",
     "service_id": "DSC07244"
   },
   "DSC07245": {
@@ -49901,6 +49901,55 @@
     "ko": "에이전트 버전이 낮아 지원하지 않습니다. 최신 에이전트로 업데이트 하세요.",
     "zh": "The agent version is too low and is not supported. Please update to the latest agent.",
     "service_id": "DSC07245"
+  },
+  "TLT07246": {
+    "en": "Pod details View",
+    "ja": "パードの詳細を表示します。",
+    "ko": "파드 상세 보기",
+    "zh": "Pod details View",
+    "service_id": "TLT07246"
+  },
+  "TLT07247": {
+    "en": "Container details view",
+    "ja": "コンテナの詳細を表示します。",
+    "ko": "컨테이너 상세 보기",
+    "zh": "Container details view",
+    "service_id": "TLT07247"
+  },
+  "DSC07248": {
+    "en": "Connection utilization for ${oname} is ${metricValue}.",
+    "ja": "${oname} の Connection 使用率が ${metricValue} です。",
+    "ko": "${oname}의 Connection 사용률이 ${metricValue}입니다.",
+    "zh": "Connection utilization for ${oname} is ${metricValue}.",
+    "service_id": "DSC07248"
+  },
+  "TTL07249": {
+    "en": "Top object",
+    "ja": "Top オブジェクト",
+    "ko": "Top 오브젝트",
+    "zh": "Top object",
+    "service_id": "TTL07249"
+  },
+  "DSC07250": {
+    "en": "Search for objects that require vacuum, objects that require a lot of full scans, and tables that use a lot of DML.",
+    "ja": "Vacuumが必要なオブジェクト、Full Scanの多いオブジェクト、DMLの多いテーブルを検索してみてください。",
+    "ko": "Vacuum이 필요한 오브젝트, Full Scan이 많은 오브젝트, DML사용이 많은 테이블을 조회해보세요.",
+    "zh": "Search for objects that require vacuum, objects that require a lot of full scans, and tables that use a lot of DML.",
+    "service_id": "DSC07250"
+  },
+  "DSC07251": {
+    "en": "You can view the Bloating size, number of Scans, number of DML executions, and objects with many dead tuples for each object (table, index), and provide information to check the status of major objects and perform Vacuum or Analyze at an appropriate time.",
+    "ja": "オブジェクト（テーブル、インデックス）別のBloatingサイズ、Scan数、DML実行数、Dead tupleが多いオブジェクトを照会可能で、主要オブジェクトの現状を把握し、VacuumやAnalyzeを適切な時期に行うように情報を提供します。",
+    "ko": "오브젝트(테이블, 인덱스)별 Bloating 사이즈, Scan 수, DML 수행 수, Dead tuple이 많은 오브젝트를 조회가능하며, 주요 오브젝트의 현황을 파악하고 Vacuum이나 Analyze를 적절한 시기에 수행하도록  정보를 제공합니다.",
+    "zh": "You can view the Bloating size, number of Scans, number of DML executions, and objects with many dead tuples for each object (table, index), and provide information to check the status of major objects and perform Vacuum or Analyze at an appropriate time.",
+    "service_id": "DSC07251"
+  },
+  "DSC07252": {
+    "en": "When searching by applying the [Multi-Transaction ID] filter, only the [Transaction ID] filter can be additionally applied.",
+    "ja": "[マルチトランザクションID]フィルタを適用して検索する場合は、[トランザクションID]フィルタのみを追加適用できます。",
+    "ko": "[멀티 트랜잭션 ID] 필터를 적용하여 검색할 경우 [트랜잭션 ID] 필터만 추가 적용할 수 있습니다.",
+    "zh": "When searching by applying the [Multi-Transaction ID] filter, only the [Transaction ID] filter can be additionally applied.",
+    "service_id": "DSC07252"
   },
   "": {
     "": "",
@@ -49950,5 +49999,10 @@
     "en": "Top Object",
     "ja": "Topオブジェクト",
     "ko": "Top 오브젝트"
+  },
+  "clusterOverview": {
+    "en": "Cluster Summary",
+    "ja": "クラスターサマリー",
+    "ko": "클러스터 요약"
   }
 }
