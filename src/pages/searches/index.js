@@ -13,6 +13,7 @@ function Hit({ hit }) {
     return (
         <article>
             <h1>{hit.product}</h1>
+            <p>{hit.breadcrums}</p>
         </article>
     );
 }
