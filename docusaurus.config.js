@@ -90,7 +90,7 @@ module.exports = Promise.resolve({
       },
     ],
     [
-      'docusaurus-plugin-includes',
+      '@whatap-docs/docusaurus-plugin-includes',
       {
         embeds: [
           {
