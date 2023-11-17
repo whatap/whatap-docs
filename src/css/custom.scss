@@ -656,6 +656,12 @@ div[class*='announcementBar'] {
     }
   }
 }
+.main-wrapper {
+  // searches 페이지 전용
+  span.ais-RefinementList-count {
+    padding-left: 10px
+  }
+}
 // UI
 
 // document
@@ -1872,6 +1878,7 @@ main {
         }
       }
     }
+
   } // 마크다운 문서 내 css
 }
 
