@@ -4,6 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const rehypeTableMerge = require("rehype-table-merge").rehypeTableMerge;
+const isDev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -112,9 +113,6 @@ module.exports = Promise.resolve({
       'docusaurus-plugin-enlarge-image', {}
     ],
   ],
-  markdown: {
-    mermaid: true,
-  },
   themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
@@ -143,32 +141,30 @@ module.exports = Promise.resolve({
       },
     ],
   ],
-  // webpack: {
-  //   jsLoader: (isServer) => ({
-  //     loader: require.resolve("swc-loader"),
-  //     options: {
-  //       jsc: {
-  //         parser: {
-  //           syntax: "typescript",
-  //           tsx: true,
-  //         },
-  //         target: "es2017",
-  //       },
-  //       module: {
-  //         type: isServer ? "commonjs" : "es6",
-  //       },
-  //     },
-  //   }),
-  // },
   webpack: {
     jsLoader: (isServer) => ({
-      loader: require.resolve('esbuild-loader'),
+      loader: require.resolve('swc-loader'),
       options: {
-        loader: 'tsx',
-        format: isServer ? 'cjs' : undefined,
-        target: isServer ? 'node12' : 'es2017',
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+            tsx: true,
+          },
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+          target: 'es2017',
+        },
+        module: {
+          type: isServer ? 'commonjs' : 'es6',
+        },
       },
     }),
+  },
+  markdown: {
+    mermaid: true,
   },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
