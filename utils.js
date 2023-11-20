@@ -110,6 +110,12 @@ function colsToJson(data){
     "ko": "클러스터 요약"
   }
 
+  rd["pendingPod"] = {
+    "en": "Pending Pods",
+    "ja": "Pending Pods",
+    "ko": "Pending Pods"
+  }
+
   return rd;
 }
 
