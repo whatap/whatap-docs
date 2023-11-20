@@ -40,6 +40,7 @@
     "docusaurus-plugin-enlarge-image": "^0.1.1",
     "docusaurus-plugin-pagemove": "github:usagrada/docusaurus-plugin-pagemove",
     "docusaurus-plugin-sass": "^0.2.5",
+    "esbuild-loader": "^4.0.2",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "google-auth-library": "^0.10.0",
