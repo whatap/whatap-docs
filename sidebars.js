@@ -295,6 +295,7 @@ const sidebars = {
             'php/php-os/alpine-linux',
             'php/php-os/gcae',
             'php/php-os/aws-eb',
+            'php/install-agent-docker'
           ]
         },
         {
@@ -1128,7 +1129,17 @@ const sidebars = {
       },
       items: [
         'golang/supported-spec',
-        'golang/install-agent',
+        {
+          type: 'category',
+          label: '에이전트 설치',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/install-agent'
+          },
+          items: [ 'golang/install-agent-docker' ],
+        },
         'golang/api-guide',
         'golang/install-check',
         {
@@ -5187,6 +5198,7 @@ const sidebars = {
                 'kubernetes/install-docker-nodejs',
                 'kubernetes/install-docker-python',
                 'kubernetes/install-docker-php',
+                'kubernetes/install-docker-go'
               ],
             },
             'kubernetes/create-name-space-project'
