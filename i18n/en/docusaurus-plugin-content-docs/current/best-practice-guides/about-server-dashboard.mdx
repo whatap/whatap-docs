@@ -95,7 +95,7 @@ Before a bigger problem occurs, an example is to be suggested to detect a major 
 
 As a result of reviewing the history of failures that occurred in the same equipment based on the status data of the example, you can see that abnormal situations such as slowdown and index file corruption occurred. In response, we introduced SSD and took actions to use the NAS snapshot backup for the part that was difficult to introduce in large capacity, and solved the disk I/O issue.
 
-<ImgLang img="discio-usage.png" desc="Disk Specification Change cht" />
+<ImgLang img="discio-usage.png" desc="Disk Specification Change " />
 
 **_Alert Status_** that allows you to check the recent event trend, can be checked by selecting ![Alert Status icon](/img/ico-noti.svg) in the fixed menu at the top of **_Resource Board_**. WhaTap provides its own default alert threshold settings. Once the agent has been installed and data has been collected, alerts can be checked from then on without any setting. For example, the disk I/O (%) metric displays the disk utilization in 5 seconds. Disk I/O (%) above 80% can affect the system performance. Disk I/O 100% indicates that the disk is working non-stop. The default warning value setting for disk I/O (%) in WhaTap Server Monitoring is 90%. In other words, if it exceeds 90%, the alert is triggered immediately even if there is no threshold setting.
 

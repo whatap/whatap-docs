@@ -14,9 +14,9 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
 1.  To release the Spring Boot result as jar, the content of _.ebextensions_ cannot be applied. Compress the following files and deploy the zip file.
 
     -   _.elasticbeanstalk/config.yml_: Automatically created under the directory where the eb command is executed
-    -   _.ebextensions/{config_name}.config_: eb configuration file
+    -   _.ebextensions/`{config_name}`.config_: eb configuration file
     -   _Procfile_: File to configure the JVM command line options
-    -   _{application}.jar_: applicaion.jar file to execute
+    -   _`{application}`.jar_: applicaion.jar file to execute
 
 2.  Compress the WhaTap agent file to be applied to the service and then upload it to S3 (or a public downloadable path).
 
@@ -29,7 +29,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     zip -r whatap-agent.zip agent
     ```
 
-3.  Enter the WhaTap agent path in the _.ebextension/{config_name}.config_ file.
+3.  Enter the WhaTap agent path in the _.ebextension/`{config_name}`.config_ file.
 
     When its zip file to download exists, execute the eb command to download the file and then unzip it.
 
@@ -55,7 +55,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
     web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
     ```
 
-5.  Compress the following files: _Procfile_, _.ebextensions_, and _{application}.jar_.
+5.  Compress the following files: _Procfile_, _.ebextensions_, and _`{application}`.jar_.
 
     ```bash
     zip -r {application}.zip Procfile .ebextensions/{application}.jar
@@ -76,7 +76,7 @@ The following explains how to apply the WhaTap agent when deploying with **Elast
 
 :::note
 
-{@include: _java-17.mdx}
+{@include: _java-17.mdx} 
 
 :::
 

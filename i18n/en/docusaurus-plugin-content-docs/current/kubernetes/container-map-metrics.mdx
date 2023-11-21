@@ -9,7 +9,7 @@ tags:
   - Metrics
 ---
 
-Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > **_Metrics_**
+Home > Select Project > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="containerMap" className="uitext" /> > Target selection, **Display Detail** > <Cmdname sid="metrics" className="uitext" />
 
 ## Kubernetes metrics
 
@@ -61,7 +61,7 @@ With the above configuration, there are 2 containers in the pod. The resource se
 
 It is not easy to understand the resource configuration data and the current usage of various containers. Therefore, the WhaTap Kubernetes monitoring service provides the function to easily check the resource settings and current usage for a single container, selected multiple containers, or the overall deployment.
 
--   **Display Detail** screen > **_Metrics_** - Resource usage monitoring and analysis
+-   **Detailed View** screen > <Cmdname sid="metrics" className="uitext" /> - Resource usage monitoring and analysis
 
     <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='Resource usage monitoring and analysis' />
 
@@ -73,25 +73,20 @@ According to the above data, the CPU is set to Request 0.2 cores (200 m) and Lim
 
 The memory is set to Request 128 MiB and Limit 256 MiB. By the way, the current memory usage is 184 MiB. According to the memory-related trend graph on the right, it exceeded 100% on a request basis and is using more than 70% on a limit basis.
 
-<!-- 
->
-컨테이너 예시가 특정적이라 기존 화면 잘라서 사용
--->
-
 The main WhaTap metrics related to CPU and memory are as follows: 
 
-| Target resource | Shortname      | Name                                              | Description                                           |
-| --------------- | -------------- | ------------------------------------------------- | ----------------------------------------------------- |
-| CPU             | CpuTotUsage    | **_Container CPU Usage (millicore)_**             | Container CPU utilization                             |
-| ^               | CpuByRequest   | **_Container CPU Usage by Request (%)_**          | Container CPU utilization by request                  |
-| ^               | CpuByLimit     | **_Container CPU Usage by Limit (%)_**            | Container CPU utilization by limit                    |
-| Memory          | MemWs          | **_Container Memory Working Set (byte)_**         | Container memory working set                          |
-| ^               | MemWsByRequest | **_Container Memory Working Set by Request (%)_** | Container memory working set usage by request         |
-| ^               | MemWsByLimit   | **_Container Memory Working Set by Limit (%)_**   | Container memory working set usage by quota           |
+| Target resource | Shortname      | Name                                                                    | Description                                           |
+| --------------- | -------------- | ----------------------------------------------------------------------- | ----------------------------------------------------- |
+| CPU             | CpuTotUsage    | <span class="uitext">Container CPU Usage (millicore)</span>             | Container CPU utilization                             |
+| ^               | CpuByRequest   | <span class="uitext">Container CPU Usage by Request (%)</span>          | Container CPU utilization by request                  |
+| ^               | CpuByLimit     | <span class="uitext">Container CPU Usage by Limit (%)</span>            | Container CPU utilization by limit                    |
+| Memory          | MemWs          | <span class="uitext">Container Memory Working Set (byte)</span>         | Container memory working set                          |
+| ^               | MemWsByRequest | <span class="uitext">Container Memory Working Set by Request (%)</span> | Container memory working set usage by request         |
+| ^               | MemWsByLimit   | <span class="uitext">Container Memory Working Set by Limit (%)</span>   | Container memory working set usage by quota           |
 
 :::note
 
-If the node on which the pod is running has sufficient resources, it can use more resources than the request set in the container. Accordingly, among WhaTap metrics, the values for **_Container CPU Usage by Request (%)_** and **_Container Memory Working Set by Request (%)_** cannot exceed 100%.
+If the node on which the pod is running has sufficient resources, it can use more resources than the request set in the container. Accordingly, among WhaTap metrics, the values for <span class="uitext">Container CPU Usage by Request (%)</span> and <span class="uitext">Container Memory Working Set by Request (%)</span> cannot exceed 100%.
 
 For example, let's assume that the container's memory request has been set to 128 MiB. If the node of the active container (pod) has the total memory of 4 GiB and there has no pod on that node, this container can use more than 128 MiB of memory.
 
@@ -101,12 +96,12 @@ For example, let's assume that the container's memory request has been set to 12
 
 WhaTap provides various metrics other than CPU and memory.
 
--   **_Container Block I/O Read Byte_** (IoReadBytes)
+-   <span class="uitext">Container Block I/O Read Byte</span> (IoReadBytes)
 
--   **_Container Block I/O Write Byte_** (IoWriteBytes)
+-   <span class="uitext">Container Block I/O Write Byte</span> (IoWriteBytes)
 
--   **_Container Network Receive Byte_** (NetRxBytes)
+-   <span class="uitext">Container Network Receive Byte</span> (NetRxBytes)
 
--   **_Container Network Transmit Byte_** (NetTxByes)
+-   <span class="uitext">Container Network Transmit Byte</span> (NetTxByes)
 
 For more information about the WhaTap Kubernetes metrics, see [the following](metrics-intro).

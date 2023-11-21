@@ -19,13 +19,13 @@ MXQL構文を使用してメトリクスを取得する方法を学びます。
 
 収集したデータを`tag-field`形式で保存するカテゴリの情報を表示するために使用します。
 
-| オプション                                           | 機能                                                  |
-| ----------------------------------------------- | --------------------------------------------------- |
-| {backward : true}                               | 時系列の逆順にデータを読み込みます。                                  |
-| {filter : {key:fieldName, value :fieldValue}}   | fieldNameフィールドの値がfieldValueと同じデータのみを抽出します。          |
-| {filter : {key:fieldName, exclude :fieldValue}} | fieldNameフィールドの値がfieldValueと同じデータを除外して抽出します。        |
-| {filter : {key:fieldName, like :fieldValue}}    | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを抽出します。    |
-| {filter : {key:fieldName, notlike :fieldValue}} | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを除いて抽出します。 |
+| オプション                                             | 機能                                                  |
+| ------------------------------------------------- | --------------------------------------------------- |
+| `{backward : true}`                               | 時系列の逆順にデータを読み込みます。                                  |
+| `{filter : {key:fieldName, value :fieldValue}}`   | fieldNameフィールドの値がfieldValueと同じデータのみを抽出します。          |
+| `{filter : {key:fieldName, exclude :fieldValue}}` | fieldNameフィールドの値がfieldValueと同じデータを除外して抽出します。        |
+| `{filter : {key:fieldName, like :fieldValue}}`    | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを抽出します。    |
+| `{filter : {key:fieldName, notlike :fieldValue}}` | fieldNameフィールドの値がfieldValueを部分文字列として持つデータを除いて抽出します。 |
 
 -   オプションを設定していない場合
 
@@ -91,9 +91,9 @@ MXQL構文を使用してメトリクスを取得する方法を学びます。
 
 収集されたデータを`field`形式で保存するカテゴリの情報を照会するために使用します。
 
-| オプション              | 機能                               |
-| ------------------ | -------------------------------- |
-| {backward : true}  | 時系列の逆順にデータを読み込みます。               |
+| オプション               | 機能                               |
+| ------------------- | -------------------------------- |
+| `{backward : true}` | 時系列の逆順にデータを読み込みます。               |
 
 データ検索条件の段階で設定した情報に従ってデータを読み込みます。
 

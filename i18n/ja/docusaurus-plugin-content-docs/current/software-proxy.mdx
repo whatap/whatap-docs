@@ -34,7 +34,7 @@ whatap_infra.exe /SILENT /SERIAL={アクセスキー} /PROXYIP={プロキシサ�
 
 ### エージェント設定
 
-この文書では、エージェントが位置するサーバーの帯域を**内部網(Private Subnet)**, ソフトウェアプロキシが位置するサーバーの帯域を**外部網(Public Subnet)**といいます。
+この文書では、エージェントが位置するサーバーの帯域を**内部網**(**Private Subnet**), ソフトウェアプロキシが位置するサーバーの帯域を**外部網**(**Public Subnet**)といいます。
 
 #### 外部網（Public Subnet）
 
@@ -47,13 +47,13 @@ listen_port=6600 ## ProxyがListenするポート番号
 
 #### 内部網（Private Subnet）
 
-`$WHATAP_HOME`は、エージェントをインストールしたパスです。 `$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**外部網(Public Subnet)**サーバーのIPに変更してください。
+`$WHATAP_HOME`は、エージェントをインストールしたパスです。 `$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**外部網**(**Public Subnet**)サーバーのIPに変更してください。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 whatap.server.host={外部網(Public Subnet)プロキシサーバーIP}
 ```
 
-安定性のために**外部網(Public Subnet)**にプロキシを複数構成できます。 スラッシュ（/）を区切り文字として入力します。
+安定性のために**外部網**(**Public Subnet**)にプロキシを複数構成できます。 スラッシュ（/）を区切り文字として入力します。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 whatap.server.host={外部網(Public Subnet)プロキシサーバーIP #1}/{外部網(Public Subnet)プロキシサーバーIP #2} 
@@ -85,7 +85,7 @@ _proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod 
 
 ### ソフトウェアプロキシ終了
 
-_$PROXY_HOME/{PID}.proxy.run_ファイルを作成します。 このファイルを削除すると、ソフトウェアプロキシは終了します。
+ソフトウェアプロキシが動作している場合は、_`$PROXY_HOME`/`{PID}`.proxy.run_ファイルを作成します。 このファイルを削除すると、ソフトウェアプロキシは終了します。
 
 ## HAProxy
 

@@ -1,9 +1,132 @@
 ---
 id: service-1_112_x
-title: Service 1.112.0
-toc_max_heading_level: 3
+title: Service 1.112.x
+toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_110_x
 ---
+
+<!--
+## Service 1.112.5
+
+2023년 11월 06일
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />의 트랜잭션 데이터 미조회 현상 수정</p>
+
+---
+
+### `Kubernetes`
+
+<p><Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="metrics" className="uitext" /> 메뉴에서 <Cmdname sid="composite_metrics" className="uitext" /> 이벤트를 추가할 경우 <Cmdname sid="data_time_range" className="uitext" /> 옵션에 <Cmdname sid="2_min" className="uitext" /> 항목 추가</p>
+
+</div>-->
+
+## Service 1.112.4
+
+November 3, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In <Cmdname sid="report" className="uitext" />, fixed the bug where the <Cmdname sid="download" className="uitext" /> button does not work.</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="sms_server_list" className="uitext" />, user cannot view the past data anymore. The search is now possible only in Realtime (<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />) or Pause (<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />) status.</p>
+
+</div>
+
+## Service 1.112.3
+
+November 1, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Fixed the issue where the <Cmdname sid="pcode" className="uitext" /> button on the left of the ChannelTalk is hidden behind the chatting window.
+
+-   <Status>Fixed</Status> Fixed the issue where the banner area's style is broken depending on the web browser in <Cmdname sid="platform_catalog" className="uitext" />.
+
+* * *
+
+### `Application`
+
+#### Dashboard
+
+<p><Status>Fixed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the error string is cut off in the <Cmdname sid="TTL06126" className="uitext" /> tab.</p>
+
+#### Agent Installation
+
+<p><Status>Fixed</Status> Modified the installation texts in the Java agent.</p>
+
+-   Added the content for each version in the <Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" /> section.
+
+-   Added SpringBoot and Java 17 related things regarding JVM options.
+
+-   Deleted duplicate phrases.
+
+* * *
+
+### `Database`
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="instance_list" className="uitext" />, added the buttons to select all instances in the table header.
+
+-   <Status>Fixed</Status> Fixed the bug where when the <Cmdname sid="multi_view" className="uitext" /> button is selected in the <Cmdname sid="instance_list" className="uitext" /> menu of the MySQL V2 project, the <Cmdname sid="instance_monitoring" className="uitext" /> menu for V1 appears.
+
+* * *
+
+### `URL`
+
+<p><Status>Feature</Status> Added the URL and UI where <Cmdname sid="collection_cycle" className="uitext" /> can be selected during edition.</p>
+
+</div>
+
+## Service 1.112.2
+
+October 27, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, fixed the issue where the error message appears when the <Cmdname sid="billing_reception_info" className="uitext" /> item is modified.</p>
+
+#### <Cmdname sid="integrated_dashboard" />
+
+<p><Status>Fixed</Status> In the <Cmdname sid="hitmap" className="uitext" /> widget, fixed the bug where the <Cmdname sid="TTL06209" className="uitext" /> pop-up window does not work.</p>
+
+</div>
+
+## Service 1.112.1
+
+October 26, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="transaction_map" className="uitext" />, fixed the issue where the Cube detail button does not appear in the <Cmdname sid="trace_list" className="uitext" /> list.</p>
+
+* * *
+
+### `Database`
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="multi_instance_monitoring" className="uitext" />, fixed the issue where the lock tree data does not appear.
+
+-   <Status>Changed</Status> The V2 transition period for the <b>MySQL</b> and <b>PostgreSQL</b> projects has been extended until December 31, 2023, and the dates have been modified in the related menus.
+
+</div>
+
+## Service 1.112.0
 
 October 25, 2023
 

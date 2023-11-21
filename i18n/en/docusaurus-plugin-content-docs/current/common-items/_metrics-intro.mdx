@@ -19,23 +19,15 @@ WhaTap collects data from monitoring targets and provides them to users. The dat
 
 For example, the `app_counter` is a **_category_** that contains data for transactions. In this case, you can view the transaction related metrics by querying the `app_counter` **_category_**.
 
-<!-- ![metrics_app_counter_example](https://img.whatap.io/media/images/metrics_app_counter_example.png) -->
-
 ![Metrics app_counter sc](/img/metrics-raw-data-table-java.png)
 
-Looking at the `app_counter` sample data, you can see that **_tags_** and **_fields_** have been collected from both agents, `-1143239575` (`demo-8101`) and `-877561626` (`demo-8109`) at the same time (2023-04-06 05:00:00).
+Looking at the `app_counter` sample data, you can see that **_Tags_** and **_Fields_** have been collected from both agents, `-1143239575` (`demo-8101`) and `-877561626` (`demo-8109`) at the same time (2023-04-06 05:00:00).
 
 ## Viewing the metrics chart
 
 **_Project Menu_** > **_Analysis_** > **_Metrics Chart_**
 
-<!-- 와탭 에이전트 설치를 완료했다면 [와탭 모니터링 서비스](https://service.whatap.io/account/login)에 로그인하세요. 초기 화면은 ***프로젝트 목록***입니다. ***프로젝트 목록***에서 에이전트를 설치한 애플리케이션 서버를 확인할 수 있습니다. 에이전트를 설치한 하나의 애플리케이션 서버는 프로젝트이며, 모니터링 단위입니다. -->
-
 After selecting the project in **_Project List_**, select **_Metrics Chart_** from **_Analyze_**. You can view the metric data collected from the monitoring target as a chart.
-
-<!-- 모니터링 대상으로부터 수집된 **메트릭스**들은 차트로 표현될 수 있습니다. -->
-
-<!-- ![metrics_chart_example](https://img.whatap.io/media/images/metrics_chart_example.png) -->
 
 ![metrics_chart_example](/img/metrics-chart-java.png)
 
@@ -45,19 +37,11 @@ After selecting the project in **_Project List_**, select **_Metrics Chart_** fr
 
 The metrics chart screen example displays the metrics (`TPS`) collected from the monitoring targets, `-1143239575` (`demo-8101`) and `-877561626` (`demo-8109`) at the selected time as a chart. At this time, the collection server uses the `app_counter` category metric, which has the selected metric value (`TPS`) as a field.
 
-<!-- 
-
-지표 값을 필드로 가지는 카테고리의 메트릭스가 사용됩니다.
-
--->
-
 ## Viewing the metrics raw data
 
 Home > Select Project > **_Sitemap_** > **_Metrics Search_**
 
 To view the metrics raw data, you have to select the criteria for viewing. 
-
-<!-- ![metrics_app_counter_example_2](https://img.whatap.io/media/images/metrics_app_counter_example_2.png) -->
 
 ![metrics_app_counter_example](/img/metrics-raw-data-java.png)
 

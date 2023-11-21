@@ -1,0 +1,167 @@
+---
+id: preview-1_113_x
+title: Preview 1.113.X
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 1.113.3
+
+November 3, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="flexboard" />
+
+-   <Status>Changed</Status> If multiple projects are selected in the <Cmdname sid="hitmap" className="uitext" /> widget on the unified <Cmdname sid="flexboard" className="uitext" />, the function has been modified to expose the buttons for projects with any data in the <Cmdname sid="TTL06209" className="uitext" /> window that appears when a chart is dragged.
+
+-   <Status>Feature</Status> Added a UI to change exposure of table columns when an auxiliary table is set to the series type widget.
+
+* * *
+
+### `Application`
+
+#### <Cmdname sid="application_dashboard" />
+
+-   <Status>Changed</Status> Modified to sort the agent selection list by name.
+
+-   <Status>Changed</Status> Modified the colors of each item on the list displayed when <Cmdname sid="ITM06006" className="uitext" /> or <Cmdname sid="ITM06007" className="uitext" /> is selected from the agent selection options.
+
+* * *
+
+### `Server`
+
+-   <Status>Feature</Status> In <Cmdname sid="sms_event_menu" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />, added the <Cmdname sid="event_tag" className="uitext" /> option in the server/process event.
+
+-   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="sms_server_list" className="uitext" />, user cannot view the past data anymore. The search is now possible only in Realtime (<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />) or Pause (<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />) status.
+
+* * *
+
+### `Kubernetes`
+
+<p><Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="metrics" className="uitext" />, added the <Cmdname sid="2_min" className="uitext" /> item in the <Cmdname sid="data_time_range" className="uitext" /> option when adding the <Cmdname sid="composite_metrics" className="uitext" /> event.</p>
+
+* * *
+
+### `URL`
+
+<p><Status>Feature</Status> Added the URL and UI where <Cmdname sid="collection_cycle" className="uitext" /> can be selected during edition.</p>
+
+</div>
+
+## Preview 1.113.2
+
+November 1, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> Fixed the issue where the <Cmdname sid="pcode" className="uitext" /> button on the left of the ChannelTalk is hidden behind the chatting window.
+
+-   <Status>Fixed</Status> Fixed the issue where the banner area's style is broken depending on the web browser in <Cmdname sid="platform_catalog" className="uitext" />.
+
+-   <Status>Fixed</Status> Fixed the issue where the style of the QR code area is broken when the browser size is smaller than a certain pixel during multi-factor authentication in <Cmdname sid="manage_account_info" className="uitext" />.
+
+* * *
+
+### `Application`
+
+#### Dashboard
+
+<p><Status>Fixed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the error string is cut off in the <Cmdname sid="TTL06126" className="uitext" /> tab.</p>
+
+#### Agent Installation
+
+<p><Status>Fixed</Status> Modified the installation texts in the Java agent.</p>
+
+-   Added the content for each version in the <Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" /> section.
+
+-   Added SpringBoot and Java 17 related things regarding JVM options.
+
+-   Deleted duplicate phrases.
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="sms_resource_board" className="uitext" />, fixed the issue where the layout of several charts are distorted when the <Cmdname sid="sms_alert_status" className="uitext" /> menu is displayed.
+
+-   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="serverDetail" className="uitext" />, modified to display the time-series chart's unit from `day` to `MM/DD` instead of `HH:MM`.
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> In <Cmdname sid="ITM01408" className="uitext" /> > <Cmdname sid="node_detail" className="uitext" />, added the <Cmdname sid="state" className="uitext" /> column in the <Cmdname sid="product_type_cpm" className="uitext" /> table.
+
+-   <Status>Fixed</Status> In <Cmdname sid="ITM01408" className="uitext" /> > <Cmdname sid="node_list" className="uitext" />, deleted the columns (<Cmdname sid="network_ip" />, <Cmdname sid="open_filedescriptors" />, and <Cmdname sid="TTL06822" />) that are not to be collected.
+
+-   <Status>Changed</Status> Replaced the menu, <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" /> with the enhanced dashboard. For more information about changes, see <Link to='../service/service-1_110_x#application-5' target='_blank'>the following</Link>.
+
+* * *
+
+### `Database`
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="instance_list" className="uitext" />, added the buttons to select all instances in the table header.
+
+-   <Status>Fixed</Status> Fixed the bug where when the <Cmdname sid="multi_view" className="uitext" /> button is selected in the <Cmdname sid="instance_list" className="uitext" /> menu of the MySQL V2 project, the <Cmdname sid="instance_monitoring" className="uitext" /> menu for V1 appears.
+
+* * *
+
+### `Network`
+
+<p><Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="MNU06848" className="uitext" />, fixed the issue where the filter's selected items are released intermittently.</p>
+
+</div>
+
+## Preview 1.113.1
+
+October 27, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="my_usage" />
+
+-   <Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, fixed the issue where the error message appears when the <Cmdname sid="billing_reception_info" className="uitext" /> item is modified.
+
+-   <Status>Fixed</Status> In <Cmdname sid="project_subscription" className="uitext" />, fixed the whiteout that occurs when the data is <code>null</code>.
+
+#### <Cmdname sid="project_list" />
+
+<p><Status>Fixed</Status> Fixed the issue where part of the URL project card is cut off when <Cmdname sid="project_list" className="uitext" /> is set to <Cmdname sid="compact_card_view" className="uitext" />.</p>
+
+</div>
+
+## Preview 1.113.0
+
+October 26, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="transaction_map" className="uitext" />, fixed the issue where the Cube detail button does not appear in the <Cmdname sid="trace_list" className="uitext" /> list.</p>
+
+* * *
+
+### `Database`
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="multi_instance_monitoring" className="uitext" />, fixed the issue where the lock tree data does not appear.
+
+-   <Status>Changed</Status> The V2 transition period for the <b>MySQL</b> and <b>PostgreSQL</b> projects has been extended until December 31, 2023, and the dates have been modified in the related menus.
+
+</div>

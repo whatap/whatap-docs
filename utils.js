@@ -98,6 +98,24 @@ function colsToJson(data){
     "ko": "서버 상세"
   }
 
+  rd["dbObjectInfo"] = {
+    "en": "Top Object",
+    "ja": "Topオブジェクト",
+    "ko": "Top 오브젝트"
+  }
+
+  rd["clusterOverview"] = {
+    "en": "Cluster Summary",
+    "ja": "クラスターサマリー",
+    "ko": "클러스터 요약"
+  }
+
+  rd["pendingPod"] = {
+    "en": "Pending Pods",
+    "ja": "Pending Pods",
+    "ko": "Pending Pods"
+  }
+
   return rd;
 }
 
