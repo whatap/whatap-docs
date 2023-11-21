@@ -22687,10 +22687,10 @@
     "service_id": "_03309"
   },
   "recommend_subscription": {
-    "en": "You can immediately check the monitoring information if you subscribe to WhaTap.",
-    "ja": "有償転換するとモニタリング情報がそのまま確認できます。",
-    "ko": "프로젝트를 유료 전환하시면 모니터링 정보를 바로 확인할 수 있습니다.",
-    "zh": "You can use all of this project features if you subscribe to a paid plan on whatap",
+    "en": "If you {subscribe} right now, {br}You can use the WhaTap monitoring service.",
+    "ja": "今すぐ {subscribe}すると、{br}WhaTap監視サービスをご利用いただけます。",
+    "ko": "지금 바로 {subscribe}하시면, {br}WhaTap 모니터링 서비스를 이용하실 수 있습니다.",
+    "zh": "If you {subscribe} right now, {br}You can use the WhaTap monitoring service.",
     "service_id": "_03310"
   },
   "invoice_excepted": {
@@ -24109,7 +24109,7 @@
   },
   "send_subscription_email": {
     "en": "You are a user or admin of this project.{br}Subscription is possible through the project owner.{br}Would you like to email and request the project owner({super_admin}){br}to subscribe?",
-    "ja": "あなたは当該プロジェクトのユーザーか、管理者です。{br}プロジェクトの所有者権限で有償転換できます。{br}プロジェクトの所有者({super_admin}が有償転換を行うように{br}メールでリクエストしますか？",
+    "ja": "あなたは当該プロジェクトのユーザーか、管理者です。{br}プロジェクトの所有者権限で有償転換できます。{br}プロジェクトの所有者({super_admin})が有償転換を行うように{br}メールでリクエストしますか？",
     "ko": "고객님은 해당 프로젝트의 사용자 또는 관리자입니다.{br}프로젝트 소유자를 통해 유료 전환이 가능합니다.{br}프로젝트 소유자({super_admin})가{br}유료 전환하도록 메일로 요청하시겠습니까?",
     "zh": "You are a user or an admin of this project.{br}The project's owner can subscribe the project.{br}Would you like to ask the project's owner({super_admin}){br}to subscribe by mail?",
     "service_id": "_03515"
@@ -32328,7 +32328,7 @@
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
     "ja": "15日間無料体験できます。{br}以降、自動的に有償転換されます。",
-    "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
+    "ko": "15일간 무료 체험이 가능합니다. {br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
   },
@@ -39180,7 +39180,7 @@
   },
   "page_load_timing": {
     "en": "Page load timing",
-    "ja": "ページロードタイミング",
+    "ja": "ページロード時間",
     "ko": "페이지 로드 타이밍",
     "zh": "Page Load Timing",
     "service_id": "_05678"
@@ -48230,10 +48230,10 @@
     "service_id": "DSC07002"
   },
   "DSC07003": {
-    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
+    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。 <br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
-    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
+    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
   },
   "BTN07004": {
@@ -48314,38 +48314,38 @@
     "service_id": "DSC07014"
   },
   "TTL07015": {
-    "en": "Linkage project registration",
-    "ja": "連携プロジェクトの登録",
-    "ko": "연계 프로젝트 등록",
-    "zh": "Linkage project registration",
+    "en": "Add correlated project",
+    "ja": "相関プロジェクトの登録",
+    "ko": "연계 프로젝트 추가",
+    "zh": "Add correlated project",
     "service_id": "TTL07015"
   },
   "TTL07016": {
-    "en": "Linkage project list",
-    "ja": "連携プロジェクトのリスト",
+    "en": "Correlated project list",
+    "ja": "関連プロジェクト一覧",
     "ko": "연계 프로젝트 목록",
-    "zh": "Linkage project list",
+    "zh": "Correlated project list",
     "service_id": "TTL07016"
   },
   "DSC07017": {
-    "en": "Select the project you want to link to and click the registration button.",
-    "ja": "連携登録するプロジェクトを選択してから、登録ボタンを押してください。",
-    "ko": "연계 등록할 프로젝트를 선택한 후, 등록 버튼을 눌러주세요.",
-    "zh": "Select the project you want to link to and click the registration button.",
+    "en": "After selecting the project you want to add, click the Add button.",
+    "ja": "追加するプロジェクトを選択した後、「追加」ボタンをクリックします。",
+    "ko": "연계 추가할 프로젝트를 선택한 후, 추가 버튼을 눌러주세요.",
+    "zh": "After selecting the project you want to add, click the Add button.",
     "service_id": "DSC07017"
   },
   "DSC07018": {
-    "en": "The project has been linked.",
-    "ja": "プロジェクトを連携登録しました。",
-    "ko": "프로젝트가 연계 등록되었습니다.",
-    "zh": "The project has been linked.",
+    "en": "A correlated project has been added.",
+    "ja": "関連プロジェクトが追加されました。",
+    "ko": "연계 프로젝트가 추가되었습니다.",
+    "zh": "A correlated project has been added.",
     "service_id": "DSC07018"
   },
   "DSC07019": {
-    "en": "プロジェクト連携の登録に失敗しました。",
-    "ja": "プロジェクトの連携登録に失敗しました。",
-    "ko": "프로젝트 연계 등록을 실패했습니다.",
-    "zh": "Project link registration failed.",
+    "en": "Adding project failed.",
+    "ja": "プロジェクトの追加に失敗しました。",
+    "ko": "프로젝트 추가를 실패했습니다.",
+    "zh": "Adding project failed.",
     "service_id": "DSC07019"
   },
   "BTN07020": {
@@ -48531,10 +48531,10 @@
     "service_id": "DSC07045"
   },
   "TTL07046": {
-    "en": "Project linkage analysis",
-    "ja": "プロジェクト連携分析",
-    "ko": "프로젝트 연계 분석",
-    "zh": "Project linkage analysis",
+    "en": "Correlations",
+    "ja": "相関関係",
+    "ko": "연계 분석",
+    "zh": "Correlations",
     "service_id": "TTL07046"
   },
   "TTL07047": {
@@ -48580,17 +48580,17 @@
     "service_id": "TTL07052"
   },
   "DSC07053": {
-    "en": "There are no linked projects that meet the conditions.",
-    "ja": "条件に合った連携プロジェクトがありません。",
+    "en": "There are no correlated projects that meet the conditions.",
+    "ja": "条件を満たす相関プロジェクトはありません。",
     "ko": "조건에 맞는 연계 프로젝트가 없습니다.",
-    "zh": "There are no linked projects that meet the conditions.",
+    "zh": "There are no correlated projects that meet the conditions.",
     "service_id": "DSC07053"
   },
   "DSC07054": {
-    "en": "No linkage scenario exists.",
-    "ja": "連携シナリオが存在しません。",
+    "en": "No correlated scenario exists.",
+    "ja": "相関するシナリオは存在しません。",
     "ko": "연계 시나리오가 존재하지 않습니다.",
-    "zh": "No linkage scenario exists.",
+    "zh": "No correlated scenario exists.",
     "service_id": "DSC07054"
   },
   "LNK07055": {
@@ -49042,38 +49042,38 @@
     "service_id": "BTN07121"
   },
   "DSC07122": {
-    "en": "Select linked project",
-    "ja": "連携プロジェクトの選択",
+    "en": "Select correlated project",
+    "ja": "相関プロジェクトを選択",
     "ko": "연계 프로젝트 선택",
-    "zh": "Select linked project",
+    "zh": "Select correlated project",
     "service_id": "DSC07122"
   },
   "TTL07123": {
-    "en": "Delete linked project",
-    "ja": "連携プロジェクトの削除",
+    "en": "Delete correlated project",
+    "ja": "相関プロジェクトの削除",
     "ko": "연계 프로젝트 삭제",
-    "zh": "Delete linked project",
+    "zh": "Delete correlated project",
     "service_id": "TTL07123"
   },
   "DSC07124": {
-    "en": "Are you sure you want to delete project {projectName} from linked projects?",
-    "ja": "{projectName}プロジェクトを連携プロジェクトから削除しますか？",
+    "en": "Are you sure you want to delete project {projectName} from its correlated projects?",
+    "ja": "プロジェクト {projectName} を相関プロジェクトから削除してもよろしいですか?",
     "ko": "{projectName} 프로젝트를 연계 프로젝트에서 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete project {projectName} from linked projects?",
+    "zh": "Are you sure you want to delete project {projectName} from its correlated projects?",
     "service_id": "DSC07124"
   },
   "DSC07125": {
-    "en": "Link project registration has been completed.",
-    "ja": "連携プロジェクトの登録を完了しました。",
-    "ko": "연계 프로젝트 등록이 완료되었습니다.",
-    "zh": "Link project registration has been completed.",
+    "en": "A correlated project has been added.",
+    "ja": "関連プロジェクトが追加されました。",
+    "ko": "연계 프로젝트가 추가되었습니다.",
+    "zh": "A correlated project has been added.",
     "service_id": "DSC07125"
   },
   "DSC07126": {
-    "en": "Deletion of the linked project has been completed.",
-    "ja": "連携プロジェクトの削除を完了しました。",
-    "ko": "연계 프로젝트 삭제가 완료되었습니다.",
-    "zh": "Deletion of the linked project has been completed.",
+    "en": "The correlated project has been deleted.",
+    "ja": "関連付けられたプロジェクトが削除されました。",
+    "ko": "연계 프로젝트가 삭제되었습니다.",
+    "zh": "The correlated project has been deleted.",
     "service_id": "DSC07126"
   },
   "DSC07127": {
@@ -49203,17 +49203,17 @@
     "service_id": "NTC07145"
   },
   "TLT07146": {
-    "en": "View related key indicators",
+    "en": "View correlated key metrics",
     "ja": "主な関連指標の表示",
     "ko": "연관 주요 지표 보기",
-    "zh": "View related key indicators",
+    "zh": "View correlated key metrics",
     "service_id": "TLT07146"
   },
   "TLT07147": {
-    "en": "View associated process metrics",
+    "en": "View correlated process metrics",
     "ja": "関連プロセス指標の表示",
     "ko": "연관 프로세스 지표 보기",
-    "zh": "View associated process metrics",
+    "zh": "View correlated process metrics",
     "service_id": "TLT07147"
   },
   "TTL07148": {
@@ -49238,10 +49238,10 @@
     "service_id": "CNT07150"
   },
   "TTL07151": {
-    "en": "Linked project",
-    "ja": "連携プロジェクト",
+    "en": "Correlated project",
+    "ja": "相関プロジェクト",
     "ko": "연계 프로젝트",
-    "zh": "Linked project",
+    "zh": "Correlated project",
     "service_id": "TTL07151"
   },
   "NTC07152": {
@@ -49985,6 +49985,13 @@
     "ko": "컨테이너 목록으로 이동",
     "zh": "Go to Container list",
     "service_id": "LNK07257"
+  },
+  "subscribe_whatap": {
+    "en": "subscribe to the WhaTap service",
+    "ja": "WhaTapサービスへの有料変換",
+    "ko": "WhaTap 서비스에 유료 전환",
+    "zh": "subscribe to the WhaTap service",
+    "service_id": "_07258"
   },
   "": {
     "": "",
