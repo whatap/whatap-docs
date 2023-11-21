@@ -178,6 +178,12 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.21',
+        "date": '2023-11-02',
+        "url": '/pdf/release-notes/java-agent-v2.2.21.pdf',
+        "docs": '/release-notes/java/java-2_2_21',
+    },
+    {
         "name": 'Java-agent-v2.2.20',
         "date": '2023-10-19',
         "url": '/pdf/release-notes/java-agent-v2.2.20.pdf',
@@ -409,6 +415,18 @@ const phpList = [
 
 const nodejsList = [
     {
+        "name": 'Node.js-agent-v0.4.81',
+        "date": '2023-11-08',
+        "url": '/pdf/release-notes/nodejs-agent-v0.4.81.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_81',
+    },
+    {
+        "name": 'Node.js-agent-v0.4.80',
+        "date": '2023-10-31',
+        "url": '/pdf/release-notes/nodejs-agent-v0.4.80.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_80',
+    },
+    {
         "name": 'Node.js-agent-v0.4.77',
         "date": '2023-06-23',
         "url": '/pdf/release-notes/nodejs-agent-v0.4.77.pdf',
@@ -529,115 +547,133 @@ const pyList = [
 
 const dotnetList = [
     {
-        "name": 'dotNet-agent-v2.1.8',
+        "name": '.NET-agent-v2.2.0',
+        "date": '2023-11-10',
+        "url": '/pdf/release-notes/dotnet-agent-v2.2.0.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_2_0',
+    },
+    {
+        "name": '.NET-agent-v2.1.9',
+        "date": '2023-11-03',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.9.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_9',
+    },
+    {
+        "name": '.NET-agent-v2.1.8',
         "date": '2023-10-24',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.8.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_8',
     },
     {
-        "name": 'dotNet-agent-v2.1.7',
+        "name": '.NET-agent-v2.1.8',
+        "date": '2023-10-24',
+        "url": '/pdf/release-notes/dotnet-agent-v2.1.8.pdf',
+        "docs": '/release-notes/dotnet/dotnet-2_1_8',
+    },
+    {
+        "name": '.NET-agent-v2.1.7',
         "date": '2023-10-16',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.7.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_7',
     },
     {
-        "name": 'dotNet-agent-v2.1.6',
+        "name": '.NET-agent-v2.1.6',
         "date": '2023-10-05',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.6.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_6',
     },
     {
-        "name": 'dotNet-agent-v2.1.5',
+        "name": '.NET-agent-v2.1.5',
         "date": '2023-09-13',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.5.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_5',
     },
     {
-        "name": 'dotNet-agent-v2.1.4',
+        "name": '.NET-agent-v2.1.4',
         "date": '2023-08-29',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.4.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_4',
     },
     {
-        "name": 'dotNet-agent-v2.1.3',
+        "name": '.NET-agent-v2.1.3',
         "date": '2023-08-16',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.3.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_3',
     },
     {
-        "name": 'dotNet-agent-v2.1.2',
+        "name": '.NET-agent-v2.1.2',
         "date": '2023-07-20',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.2.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_2',
     },
     {
-        "name": 'dotNet-agent-v2.1.1',
+        "name": '.NET-agent-v2.1.1',
         "date": '2023-07-17',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.1.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_1',
     },
     {
-        "name": 'dotNet-agent-v2.1.0',
+        "name": '.NET-agent-v2.1.0',
         "date": '2023-07-06',
         "url": '/pdf/release-notes/dotnet-agent-v2.1.0.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_1_0',
     },
     {
-        "name": 'dotNet-agent-v2.0.9',
+        "name": '.NET-agent-v2.0.9',
         "date": '2023-06-09',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.9.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_9',
     },
     {
-        "name": 'dotNet-agent-v2.0.8',
+        "name": '.NET-agent-v2.0.8',
         "date": '2023-05-31',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.8.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_8',
     },
     {
-        "name": 'dotNet-agent-v2.0.7',
+        "name": '.NET-agent-v2.0.7',
         "date": '2023-05-30',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.7.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_7',
     },
     {
-        "name": 'dotNet-agent-v2.0.6',
+        "name": '.NET-agent-v2.0.6',
         "date": '2023-05-02',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.6.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_6',
     },
     {
-        "name": 'dotNet-agent-v2.0.5',
+        "name": '.NET-agent-v2.0.5',
         "date": '2022-01-10',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.5.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_5',
     },
     {
-        "name": 'dotNet-agent-v2.0.4',
+        "name": '.NET-agent-v2.0.4',
         "date": '2021-05-10',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.4.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_4',
     },
     {
-        "name": 'dotNet-agent-v2.0.3',
+        "name": '.NET-agent-v2.0.3',
         "date": '2021-04-23',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.3.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_3',
     },
     {
-        "name": 'dotNet-agent-v2.0.2',
+        "name": '.NET-agent-v2.0.2',
         "date": '2021-04-02',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.2.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_2',
     },
     {
-        "name": 'dotNet-agent-v2.0.1',
+        "name": '.NET-agent-v2.0.1',
         "date": '2021-02-09',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.1.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_1',
     },
     {
-        "name": 'dotNet-agent-v2.0.0',
+        "name": '.NET-agent-v2.0.0',
         "date": '2020-12-16',
         "url": '/pdf/release-notes/dotnet-agent-v2.0.0.pdf',
         "docs": '/release-notes/dotnet/dotnet-2_0_0',
@@ -721,9 +757,15 @@ const goList = [
 
 const serverList = [
     {
+        "name": "Server-agent-v2.4.4",
+        "date": "2023-11-08",
+        "url": "/pdf/release-notes/server-agent-v2.4.4.pdf",
+        "docs": "/release-notes/server/server-2_4_4"
+    },
+    {
         "name": "Server-agent-v2.4.3",
         "date": "2023-10-31",
-        "url": "/pdf/release-notes/Server-agent-v2.4.3.pdf",
+        "url": "/pdf/release-notes/server-agent-v2.4.3.pdf",
         "docs": "/release-notes/server/server-2_4_3"
     },
     {
@@ -879,6 +921,12 @@ const serverList = [
 ];
 
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.4.1",
+        "date": "2023-11-08",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.1.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_1"
+    },
     {
         "name": "Kubernetes-agent-v1.4.0",
         "date": "2023-10-31",

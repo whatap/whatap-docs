@@ -288,11 +288,11 @@
 
     -   Requestパーシング用のパターン  
 
-        > "Request："と"Response"間の文字列{"key1":"value1","key2":"value2",...} 対象
+        > "Request："と"Response"間の文字列`{"key1":"value1","key2":"value2",...}`を対象とします。
 
     -   Reponseパーシング用のパターン
 
-        > "Response："からログの最後までの文字列{"key3":"value3","key4":"value4",...} 対象
+        > "Response："からログの最後までの文字列`{"key3":"value3","key4":"value4",...}`を対象とします。
 -   **JSONカスタムパターンの登録**
 
     ログの一部がJSON形式で出力される場合、JSONで出力された部分を専用カスタムパーサーを通じてパーシングできます。 パターンを次のように入力してください。
@@ -316,14 +316,14 @@
         例のように流入するログがRequest JSON、Response JSONをすべてパーシングしようとする場合は、次の2つのパターンを登録します。
 
         -   Requestパーシング用のパターン  
-            > "Request："と"Response"間の文字列{"key1":"value1","key2":"value2",...} 対象
+            > "Request："と"Response"間の文字列`{"key1":"value1","key2":"value2",...}`を対象とします。
 
         ```java
         io.whatap.logsink.parser.JsonFormatParser {prefix:"Request : ",postfix:"Response"}
         ```
 
         -   Reponseパーシング用のパターン
-            > "Response："からログの最後までの文字列{"key3":"value3","key4":"value4",...} 対象
+            > "Response："からログの最後までの文字列`{"key3":"value3","key4":"value4",...}`を対象とします。
 
         ```java
         io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}

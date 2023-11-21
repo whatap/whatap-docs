@@ -22687,10 +22687,10 @@
     "service_id": "_03309"
   },
   "recommend_subscription": {
-    "en": "You can immediately check the monitoring information if you subscribe to WhaTap.",
-    "ja": "有償転換するとモニタリング情報がそのまま確認できます。",
-    "ko": "프로젝트를 유료 전환하시면 모니터링 정보를 바로 확인할 수 있습니다.",
-    "zh": "You can use all of this project features if you subscribe to a paid plan on whatap",
+    "en": "If you {subscribe} right now, {br}You can use the WhaTap monitoring service.",
+    "ja": "今すぐ {subscribe}すると、{br}WhaTap監視サービスをご利用いただけます。",
+    "ko": "지금 바로 {subscribe}하시면, {br}WhaTap 모니터링 서비스를 이용하실 수 있습니다.",
+    "zh": "If you {subscribe} right now, {br}You can use the WhaTap monitoring service.",
     "service_id": "_03310"
   },
   "invoice_excepted": {
@@ -24109,7 +24109,7 @@
   },
   "send_subscription_email": {
     "en": "You are a user or admin of this project.{br}Subscription is possible through the project owner.{br}Would you like to email and request the project owner({super_admin}){br}to subscribe?",
-    "ja": "あなたは当該プロジェクトのユーザーか、管理者です。{br}プロジェクトの所有者権限で有償転換できます。{br}プロジェクトの所有者({super_admin}が有償転換を行うように{br}メールでリクエストしますか？",
+    "ja": "あなたは当該プロジェクトのユーザーか、管理者です。{br}プロジェクトの所有者権限で有償転換できます。{br}プロジェクトの所有者({super_admin})が有償転換を行うように{br}メールでリクエストしますか？",
     "ko": "고객님은 해당 프로젝트의 사용자 또는 관리자입니다.{br}프로젝트 소유자를 통해 유료 전환이 가능합니다.{br}프로젝트 소유자({super_admin})가{br}유료 전환하도록 메일로 요청하시겠습니까?",
     "zh": "You are a user or an admin of this project.{br}The project's owner can subscribe the project.{br}Would you like to ask the project's owner({super_admin}){br}to subscribe by mail?",
     "service_id": "_03515"
@@ -29673,72 +29673,72 @@
     "service_id": "_04314"
   },
   "master_alert_template_4": {
-    "en": "Master CPU request notification",
-    "ja": "マスターCPU要請量のアラート通知",
-    "ko": "마스터 CPU Request 알림",
-    "zh": "Master CPU request notification",
-    "service_id": "_04315"
+    "en": "Cluster CPU request notification",
+    "ja": "クラスタCPU要請量のアラート通知",
+    "ko": "클러스터 CPU Request 알림",
+    "zh": "Cluster CPU request notification",
+    "service_id": "TTL04315"
   },
   "master_alert_template_4_detail": {
-    "en": "Master CPU request is over 80% of the total.",
-    "ja": "マスターCPU要請量が全体の80%を超えました。",
-    "ko": "마스터 CPU Request 사용률이 전체 대비 80% 이상입니다.",
-    "zh": "Master CPU request is over 80% of the total.",
-    "service_id": "_04316"
+    "en": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
+    "ja": "クラスタCPUクォータに対するCPU要求（最小要求元）が80％を超えました。",
+    "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 80% 이상입니다.",
+    "zh": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
+    "service_id": "NTC04316"
   },
   "master_alert_template_5": {
-    "en": "Master memory request notification",
-    "ja": "マスターメモリ要請量のアラート通知",
-    "ko": "마스터 Memory Request 알림",
-    "zh": "Master memory Request notification",
-    "service_id": "_04317"
+    "en": "Cluster memory request notification",
+    "ja": "クラスタメモリ要請量のアラート通知",
+    "ko": "클러스터 Memory Request 알림",
+    "zh": "Cluster memory request notification",
+    "service_id": "TTL04317"
   },
   "master_alert_template_5_detail": {
-    "en": "Master memory request utilization is over 80% of the total.",
-    "ja": "マスターメモリ要請量が全体の80%を超えました。",
-    "ko": "마스터 Memory Request 량이 전체 대비 80% 이상입니다.",
-    "zh": "Master memory Request utilization is over 80% of the total.",
-    "service_id": "_04318"
+    "en": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
+    "ja": "クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 80% 以上です。",
+    "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 80% 이상입니다.",
+    "zh": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
+    "service_id": "NTC04318"
   },
   "master_alert_template_6": {
-    "en": "Master CPU limit notification",
-    "ja": "マスターCPUリミットによる使用率のアラート通知",
-    "ko": "마스터 CPU Limit 알림",
-    "zh": "Master CPU Limit notification",
-    "service_id": "_04319"
+    "en": "Cluster CPU request notification",
+    "ja": "クラスタCPU要請量のアラート通知",
+    "ko": "클러스터 CPU Request 알림",
+    "zh": "Cluster CPU request notification",
+    "service_id": "TTL04319"
   },
   "master_alert_template_6_detail": {
-    "en": "Master CPU utilization is over 60% of CPU Limit.",
-    "ja": "マスターCPUリミットによる使用率が60%を超えました。",
-    "ko": "마스터 CPU Limit 대비 사용률이 60% 이상입니다.",
-    "zh": "Master CPU utilization is over 60% of CPU Limit.",
-    "service_id": "_04320"
+    "en": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
+    "ja": "クラスタCPUクォータに対するCPU要求（最小要求元）が60%を超えました。",
+    "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 60% 이상입니다.",
+    "zh": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
+    "service_id": "NTC04320"
   },
   "master_alert_template_7": {
-    "en": "Master memory limit notification",
-    "ja": "マスターメモリリミットによる使用率のアラート通知",
-    "ko": "마스터 Memory Limit 알림",
-    "zh": "Master Memory Limit notification",
-    "service_id": "_04321"
+    "en": "Cluster memory request notification",
+    "ja": "クラスタメモリ要請量のアラート通知",
+    "ko": "클러스터 Memory Request 알림",
+    "zh": "Cluster memory request notification",
+    "service_id": "TTL04321"
   },
   "master_alert_template_7_detail": {
-    "en": "Master memory utilization is over 90% of memory limit.",
-    "ja": "マスターメモリリミットによる使用率が90%を超えました。",
-    "ko": "마스터 Memory Limit 대비 사용률이 90% 이상입니다.",
-    "zh": "Master Memory utilization is over 90% of Memory Limit.",
-    "service_id": "_04322"
+    "en": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
+    "ja": "クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 60% 以上です。",
+    "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 60% 이상입니다.",
+    "zh": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
+    "service_id": "NTC04322"
   },
   "master_alert_template_8": {
     "en": "Notification of the number of master pods",
-    "ja": "マスターPod数のアラート通知",
-    "ko": "마스터 POD수 알림",
+    "ja": "クラスタPod数のアラート通知",
+    "ko": "클러스터 POD수 알림",
     "zh": "Notification of the number of master pods",
     "service_id": "_04323"
   },
   "master_alert_template_8_detail": {
     "en": "The number of PODs that can be allocated to the master is 0.",
-    "ja": "マスターに割当てできるPodの数は0です。",
-    "ko": "마스터에 할당 가능한 POD 개수는 0입니다.",
+    "ja": "クラスタに割当てできるPodの数は0です。",
+    "ko": "클러스터에 할당 가능한 POD 개수는 0입니다.",
     "zh": "The number of PODs that can be allocated to the master is 0.",
     "service_id": "_04324"
   },
@@ -30835,17 +30835,17 @@
     "service_id": "_04480"
   },
   "sry_service": {
-    "en": "We apologize for any inconvenience in using the service.",
-    "ja": "サービス利用にご不便をお掛けしてしまい、申し訳ございません。",
+    "en": "We apologize for any inconvenience",
+    "ja": "ご不便をおかけして申し訳ございません。",
     "ko": "서비스 이용에 불편을 드려 죄송합니다.",
     "zh": "We apologize for any inconvenience in using the service.",
     "service_id": "_04481"
   },
   "sry_service_sub": {
-    "en": "There is a temporary error in the current service.<br/> For related inquiries, please contact support@whatap.io or WhaTap / Channel Talk.",
-    "ja": "現在、サービスに一時的不具合が発生しております。<br/>詳しくはWhaTapのカスタマーサポートまで問い合わせてください。",
-    "ko": "현재 서비스에 일시적인 오류가 발생했습니다.<br/>관련 문의사항은 와탭 채널톡 또는 support@whatap.io로 문의해주시면 안내해드리겠습니다.",
-    "zh": "We are currently experiencing a temporary problem with our service.<br/>For related inquiries, please contact WhaTap / Channel Talk or support@whatap.io.\n",
+    "en": "The current service has encountered a temporary error.{br}For related inquiries, please contact {channel} or {email}<br/>Please contact us.",
+    "ja": "現在のサービスで一時的なエラーが発生しました。{br}お問い合わせについては、{channel} または {email} までお問い合わせください。<br/>お問い合わせください。",
+    "ko": "현재 서비스에 일시적인 오류가 발생했습니다.{br}관련 문의사항은 {channel} 또는 {email}로 문의해주시면 안내해드리겠습니다.",
+    "zh": "The current service has encountered a temporary error.{br}For inquiries, contact {channel} or {email}<br/>Please contact us.",
     "service_id": "_04482"
   },
   "server_not_found": {
@@ -39145,21 +39145,21 @@
   },
   "largest_contentful_paint": {
     "en": "Largest contentful paint",
-    "ja": "最大視覚コンテンツの表示時間（LCP）",
+    "ja": "最大コンテンツプールペイント(LCP)",
     "ko": "최대 콘텐츠풀 페인트",
     "zh": "Largest Contentful Paint",
     "service_id": "TTL05673"
   },
   "first_input_delay": {
     "en": "First input delay",
-    "ja": "初回入力までの遅延時間（FID）",
+    "ja": "初回入力までの遅延時間(FID)",
     "ko": "최초 입력 지연",
     "zh": "First Input Delay",
     "service_id": "TTL05674"
   },
   "cumulative_layout_shift": {
     "en": "Cumulative layout shift",
-    "ja": "累積レイアウト シフト数（CLS）",
+    "ja": "累積レイアウトシフト数(CLS)",
     "ko": "누적 레이아웃 이동",
     "zh": "Cumulative Layout Shift",
     "service_id": "TTL05675"
@@ -39180,7 +39180,7 @@
   },
   "page_load_timing": {
     "en": "Page load timing",
-    "ja": "ページロードタイミング",
+    "ja": "ページロード時間",
     "ko": "페이지 로드 타이밍",
     "zh": "Page Load Timing",
     "service_id": "_05678"
@@ -48314,38 +48314,38 @@
     "service_id": "DSC07014"
   },
   "TTL07015": {
-    "en": "Linkage project registration",
-    "ja": "連携プロジェクトの登録",
-    "ko": "연계 프로젝트 등록",
-    "zh": "Linkage project registration",
+    "en": "Add correlated project",
+    "ja": "相関プロジェクトの登録",
+    "ko": "연계 프로젝트 추가",
+    "zh": "Add correlated project",
     "service_id": "TTL07015"
   },
   "TTL07016": {
-    "en": "Linkage project list",
-    "ja": "連携プロジェクトのリスト",
+    "en": "Correlated project list",
+    "ja": "関連プロジェクト一覧",
     "ko": "연계 프로젝트 목록",
-    "zh": "Linkage project list",
+    "zh": "Correlated project list",
     "service_id": "TTL07016"
   },
   "DSC07017": {
-    "en": "Select the project you want to link to and click the registration button.",
-    "ja": "連携登録するプロジェクトを選択してから、登録ボタンを押してください。",
-    "ko": "연계 등록할 프로젝트를 선택한 후, 등록 버튼을 눌러주세요.",
-    "zh": "Select the project you want to link to and click the registration button.",
+    "en": "After selecting the project you want to add, click the Add button.",
+    "ja": "追加するプロジェクトを選択した後、「追加」ボタンをクリックします。",
+    "ko": "연계 추가할 프로젝트를 선택한 후, 추가 버튼을 눌러주세요.",
+    "zh": "After selecting the project you want to add, click the Add button.",
     "service_id": "DSC07017"
   },
   "DSC07018": {
-    "en": "The project has been linked.",
-    "ja": "プロジェクトを連携登録しました。",
-    "ko": "프로젝트가 연계 등록되었습니다.",
-    "zh": "The project has been linked.",
+    "en": "A correlated project has been added.",
+    "ja": "関連プロジェクトが追加されました。",
+    "ko": "연계 프로젝트가 추가되었습니다.",
+    "zh": "A correlated project has been added.",
     "service_id": "DSC07018"
   },
   "DSC07019": {
-    "en": "プロジェクト連携の登録に失敗しました。",
-    "ja": "プロジェクトの連携登録に失敗しました。",
-    "ko": "프로젝트 연계 등록을 실패했습니다.",
-    "zh": "Project link registration failed.",
+    "en": "Adding project failed.",
+    "ja": "プロジェクトの追加に失敗しました。",
+    "ko": "프로젝트 추가를 실패했습니다.",
+    "zh": "Adding project failed.",
     "service_id": "DSC07019"
   },
   "BTN07020": {
@@ -48531,10 +48531,10 @@
     "service_id": "DSC07045"
   },
   "TTL07046": {
-    "en": "Project linkage analysis",
-    "ja": "プロジェクト連携分析",
-    "ko": "프로젝트 연계 분석",
-    "zh": "Project linkage analysis",
+    "en": "Correlations",
+    "ja": "相関関係",
+    "ko": "연계 분석",
+    "zh": "Correlations",
     "service_id": "TTL07046"
   },
   "TTL07047": {
@@ -48580,17 +48580,17 @@
     "service_id": "TTL07052"
   },
   "DSC07053": {
-    "en": "There are no linked projects that meet the conditions.",
-    "ja": "条件に合った連携プロジェクトがありません。",
+    "en": "There are no correlated projects that meet the conditions.",
+    "ja": "条件を満たす相関プロジェクトはありません。",
     "ko": "조건에 맞는 연계 프로젝트가 없습니다.",
-    "zh": "There are no linked projects that meet the conditions.",
+    "zh": "There are no correlated projects that meet the conditions.",
     "service_id": "DSC07053"
   },
   "DSC07054": {
-    "en": "No linkage scenario exists.",
-    "ja": "連携シナリオが存在しません。",
+    "en": "No correlated scenario exists.",
+    "ja": "相関するシナリオは存在しません。",
     "ko": "연계 시나리오가 존재하지 않습니다.",
-    "zh": "No linkage scenario exists.",
+    "zh": "No correlated scenario exists.",
     "service_id": "DSC07054"
   },
   "LNK07055": {
@@ -48917,7 +48917,7 @@
   },
   "TTL07102": {
     "en": "First Input Delay Top N",
-    "ja": "初回入力までの遅延時間のTop N",
+    "ja": "初回入力までの遅延時間(FID)のTop N",
     "ko": "최초 입력 지연 Top N",
     "zh": "First Input Delay Top N",
     "service_id": "TTL07102"
@@ -49042,38 +49042,38 @@
     "service_id": "BTN07121"
   },
   "DSC07122": {
-    "en": "Select linked project",
-    "ja": "連携プロジェクトの選択",
+    "en": "Select correlated project",
+    "ja": "相関プロジェクトを選択",
     "ko": "연계 프로젝트 선택",
-    "zh": "Select linked project",
+    "zh": "Select correlated project",
     "service_id": "DSC07122"
   },
   "TTL07123": {
-    "en": "Delete linked project",
-    "ja": "連携プロジェクトの削除",
+    "en": "Delete correlated project",
+    "ja": "相関プロジェクトの削除",
     "ko": "연계 프로젝트 삭제",
-    "zh": "Delete linked project",
+    "zh": "Delete correlated project",
     "service_id": "TTL07123"
   },
   "DSC07124": {
-    "en": "Are you sure you want to delete project {projectName} from linked projects?",
-    "ja": "{projectName}プロジェクトを連携プロジェクトから削除しますか？",
+    "en": "Are you sure you want to delete project {projectName} from its correlated projects?",
+    "ja": "プロジェクト {projectName} を相関プロジェクトから削除してもよろしいですか?",
     "ko": "{projectName} 프로젝트를 연계 프로젝트에서 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete project {projectName} from linked projects?",
+    "zh": "Are you sure you want to delete project {projectName} from its correlated projects?",
     "service_id": "DSC07124"
   },
   "DSC07125": {
-    "en": "Link project registration has been completed.",
-    "ja": "連携プロジェクト登録が完了しました。",
-    "ko": "연계 프로젝트 등록이 완료되었습니다.",
-    "zh": "Link project registration has been completed.",
+    "en": "A correlated project has been added.",
+    "ja": "関連プロジェクトが追加されました。",
+    "ko": "연계 프로젝트가 추가되었습니다.",
+    "zh": "A correlated project has been added.",
     "service_id": "DSC07125"
   },
   "DSC07126": {
-    "en": "Deletion of the linked project has been completed.",
-    "ja": "連携プロジェクトの削除が完了しました。",
-    "ko": "연계 프로젝트 삭제가 완료되었습니다.",
-    "zh": "Deletion of the linked project has been completed.",
+    "en": "The correlated project has been deleted.",
+    "ja": "関連付けられたプロジェクトが削除されました。",
+    "ko": "연계 프로젝트가 삭제되었습니다.",
+    "zh": "The correlated project has been deleted.",
     "service_id": "DSC07126"
   },
   "DSC07127": {
@@ -49085,7 +49085,7 @@
   },
   "CNT07128": {
     "en": "Even if you do not have to reproduce the failure situation, you can use your stack to determine the cause of the problem.",
-    "ja": "障害状況を再現しなくても、保持しているスタックを活用して問題の原因を特定します。",
+    "ja": "障害の再現を待たなくても、すでに記録しているスタックデータを分析して問題の原因を調査します。",
     "ko": "장애 상황을 재현하지 않아도 보유한 스택을 활용하여 문제의 원인을 파악합니다.",
     "zh": "Even if you do not have to reproduce the failure situation, you can use your stack to determine the cause of the problem.",
     "service_id": "CNT07128"
@@ -49099,21 +49099,21 @@
   },
   "DSC07130": {
     "en": "Replication status of ${oname} is Broken or Failover.",
-    "ja": "${oname}のReplication状態がBrokenまたはFailoverされました。",
+    "ja": "${oname}のReplication状態がBroken、またはFailoverされました。",
     "ko": "${oname}의 Replication 상태가 Broken 또는 Failover 되었습니다.",
     "zh": "Replication status of ${oname} is Broken or Failover.",
     "service_id": "DSC07130"
   },
   "DSC07131": {
     "en": "The CPU utilization of ${oname} is ${cpu(xos2)}.",
-    "ja": "${oname}のCPU使用率が${cpu(xos2)}となります。",
+    "ja": "${oname}のCPU使用率が${cpu(xos2)}です。",
     "ko": "${oname}의 CPU 사용률이 ${cpu(xos2)}입니다.",
     "zh": "The CPU utilization of ${oname} is ${cpu(xos2)}.",
     "service_id": "DSC07131"
   },
   "DSC07132": {
     "en": "The memory usage for ${oname} is ${mem(xos)}.",
-    "ja": "${oname}のメモリ使用量が${mem(xos)}となります。",
+    "ja": "${oname}のメモリ使用量が${mem(xos)}です。",
     "ko": "${oname}의 메모리 사용량이 ${mem(xos)}입니다.",
     "zh": "The memory usage for ${oname} is ${mem(xos)}.",
     "service_id": "DSC07132"
@@ -49141,7 +49141,7 @@
   },
   "TTL07136": {
     "en": "Connection utilization",
-    "ja": "Connection 使用率",
+    "ja": "Connection使用率",
     "ko": "Connection 사용률",
     "zh": "Connection utilization",
     "service_id": "TTL07136"
@@ -49155,65 +49155,65 @@
   },
   "TTL07138": {
     "en": "Replication latency",
-    "ja": "Replication 遅延時間",
+    "ja": "Replication遅延時間",
     "ko": "Replication 지연 시간",
     "zh": "Replication latency",
     "service_id": "TTL07138"
   },
   "DSC07139": {
     "en": "The replication delay for ${oname} is ${replication_delay}.",
-    "ja": "${oname} の replication 遅延時間は ${replication_delay} です。'",
+    "ja": "${oname}のreplication遅延時間は ${replication_delay} です。",
     "ko": "${oname}의 replication 지연시간은  ${replication_delay}입니다.",
     "zh": "The replication delay for ${oname} is ${replication_delay}.",
     "service_id": "DSC07139"
   },
   "DSC07140": {
     "en": "The memory block hit rate for ${oname} is ${blks_hit_ratio}.",
-    "ja": "${oname} の Memory Block Hit率は ${blks_hit_ratio} です。",
+    "ja": "${oname}のMemory Block Hit率は ${blks_hit_ratio} です。",
     "ko": "${oname}의 Memory Block Hit율은 ${blks_hit_ratio}입니다.",
     "zh": "The memory block hit rate for ${oname} is ${blks_hit_ratio}.",
     "service_id": "DSC07140"
   },
   "TTL07141": {
     "en": "Long uncommitted sessions",
-    "ja": "長時間Commitしていないセッション",
+    "ja": "長時間コミットしていないセッション",
     "ko": "장시간 Commit하지 않은 세션",
     "zh": "Long uncommitted sessions",
     "service_id": "TTL07141"
   },
   "DSC07142": {
     "en": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
-    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count} 個あります。",
+    "ja": "${runtime} 秒以上コミットされていないセッションが ${state_count} 件あります。",
     "ko": "${runtime}초 이상 커밋되지 않은 세션이 ${state_count}개 있습니다.",
     "zh": "There are ${state_count} sessions that have been uncommitted for more than ${runtime} seconds.",
     "service_id": "DSC07142"
   },
   "NTC07144": {
     "en": "You must enter 1 category.",
-    "ja": "必ず1部門にエントリーすること。",
+    "ja": "必ず一つのカテゴリーを入力してください。",
     "ko": "카테고리를 1개 입력해야합니다.",
     "zh": "You must enter 1 category.",
     "service_id": "NTC07144"
   },
   "NTC07145": {
     "en": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
-    "ja": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
+    "ja": "全体の{x}件の中、<span style=\"color: #296CF2;\">合計</span>を照会し、検索された結果は<span style=\"color: #296CF2;\">{y}件</span>です。",
     "ko": "전체 {x}건 중 <span style=\"color: #296CF2;\">전체</span>를 조회했으며 검색된 결과는 <span style=\"color: #296CF2;\">{y}건</span>입니다.",
     "zh": "You have queried <span style=\"color: #296CF2;\">all</span> of the <span style=\"color: #296CF2;\">{x} results and found <span style=\"color: #296CF2;\">{y} results</span>.",
     "service_id": "NTC07145"
   },
   "TLT07146": {
-    "en": "View related key indicators",
-    "ja": "関連キーインジケータを見る",
+    "en": "View correlated key metrics",
+    "ja": "主な関連指標の表示",
     "ko": "연관 주요 지표 보기",
-    "zh": "View related key indicators",
+    "zh": "View correlated key metrics",
     "service_id": "TLT07146"
   },
   "TLT07147": {
-    "en": "View associated process metrics",
+    "en": "View correlated process metrics",
     "ja": "関連プロセス指標の表示",
     "ko": "연관 프로세스 지표 보기",
-    "zh": "View associated process metrics",
+    "zh": "View correlated process metrics",
     "service_id": "TLT07147"
   },
   "TTL07148": {
@@ -49232,28 +49232,28 @@
   },
   "CNT07150": {
     "en": "All within the project",
-    "ja": "プロジェクト内全体",
+    "ja": "プロジェクト内のすべて",
     "ko": "프로젝트내 전체",
     "zh": "All within the project",
     "service_id": "CNT07150"
   },
   "TTL07151": {
-    "en": "Linked project",
-    "ja": "連携プロジェクト",
+    "en": "Correlated project",
+    "ja": "相関プロジェクト",
     "ko": "연계 프로젝트",
-    "zh": "Linked project",
+    "zh": "Correlated project",
     "service_id": "TTL07151"
   },
   "NTC07152": {
     "en": "You don't have a license.",
-    "ja": "あなたはライセンスを持っていない。",
+    "ja": "ライセンスを持っていません。",
     "ko": "라이선스가 없습니다.",
     "zh": "You don't have a license.",
     "service_id": "NTC07152"
   },
   "NTC07153": {
     "en": "You have exceeded your usage.",
-    "ja": "使用量を超えています。",
+    "ja": "使用量を超えました。",
     "ko": "사용량을 초과 하였습니다.",
     "zh": "You have exceeded your usage.",
     "service_id": "NTC07153"
@@ -49267,14 +49267,14 @@
   },
   "NTC07155": {
     "en": "The IP address is invalid or not specified.",
-    "ja": "IPアドレスが無効であるか、指定されていない。",
+    "ja": "IPアドレスが無効であるか、指定されていません。",
     "ko": "IP 주소가 잘못되었거나 지정되지 않았습니다.",
     "zh": "The IP address is invalid or not specified.",
     "service_id": "NTC07155"
   },
   "NTC07156": {
     "en": "This is invalid license.",
-    "ja": "これは無効なライセンスだ。",
+    "ja": "無効なライセンスです。",
     "ko": "유효하지 않은 라이선스 입니다.",
     "zh": "This is invalid license.",
     "service_id": "NTC07156"
@@ -49288,7 +49288,7 @@
   },
   "NTC07158": {
     "en": "The CPU quantity has been exceeded.",
-    "ja": "CPUの数量が超過した。",
+    "ja": "CPUの数量が超えました。",
     "ko": "CPU 수량이 초과 되었습니다.",
     "zh": "The CPU quantity has been exceeded.",
     "service_id": "NTC07158"
@@ -49302,14 +49302,14 @@
   },
   "NTC07160": {
     "en": "You're out of licenses.",
-    "ja": "ライセンスが切れている",
+    "ja": "ライセンスが足りません。",
     "ko": "라이선스가 부족합니다.",
     "zh": "You're out of licenses.",
     "service_id": "NTC07160"
   },
   "NTC07161": {
     "en": "License is not applied.",
-    "ja": "ライセンスは適用されない。",
+    "ja": "ライセンスが適用されていません。",
     "ko": "라이선스 적용이 되지않았습니다.",
     "zh": "License is not applied.",
     "service_id": "NTC07161"
@@ -49357,15 +49357,15 @@
     "service_id": "ITM07167"
   },
   "ITM07168": {
-    "en": "Number of restarts (5 minutes)",
-    "ja": "再起動数（5分間）",
-    "ko": "재시작 수(5분간)",
-    "zh": "Number of restarts (5 minutes)",
+    "en": "Number of container restarts",
+    "ja": "コンテナの再起動回数",
+    "ko": "컨테이너 재시작 수 ",
+    "zh": "Number of container restarts",
     "service_id": "ITM07168"
   },
   "ITM07169": {
     "en": "CPU Request at initialization start",
-    "ja": "初期化開始時のCPU要求",
+    "ja": "初期化開始時のCPU Requrest",
     "ko": "초기화 시작시 CPU Request",
     "zh": "CPU Request at initialization start",
     "service_id": "ITM07169"
@@ -49386,14 +49386,14 @@
   },
   "ITM07172": {
     "en": "Memory Request at initialization start",
-    "ja": "初期化開始時のメモリー要求",
+    "ja": "初期化開始時のメモリ Requrest",
     "ko": "초기화 시작시 Memory Request",
     "zh": "Memory Request at initialization start",
     "service_id": "ITM07172"
   },
   "ITM07173": {
     "en": "Memory Limit when initialization starts",
-    "ja": "初期化開始時のメモリ制限",
+    "ja": "初期化開始時のメモリ Limit",
     "ko": "초기화 시작 시 Memory Limit",
     "zh": "Memory Limit when initialization starts",
     "service_id": "ITM07173"
@@ -49407,14 +49407,14 @@
   },
   "ITM07175": {
     "en": "Initialization start time",
-    "ja": "初期化開始時間",
+    "ja": "初期化開始時刻",
     "ko": "초기화 시작 시간",
     "zh": "Initialization start time",
     "service_id": "ITM07175"
   },
   "ITM07176": {
     "en": "Initialization completion time",
-    "ja": "初期化完了時間",
+    "ja": "初期化完了時刻",
     "ko": "초기화 완료 시간",
     "zh": "Initialization completion time",
     "service_id": "ITM07176"
@@ -49449,23 +49449,23 @@
   },
   "DSC07181": {
     "en": "List of corresponding SQL executions in {time}.",
-    "ja": "{time}の対応するSQL実行リストです。",
+    "ja": "{time}のSQL実行リストです。",
     "ko": "{time}의 해당 SQL 실행 리스트입니다.",
     "zh": "List of corresponding SQL executions in {time}.",
     "service_id": "DSC07181"
   },
   "DSC07182": {
     "en": "Click to go to the instance monitoring screen for that time.",
-    "ja": "クリックすると、その時間のインスタンス監視画面に移動します。",
+    "ja": "クリックすると、該当時間のインスタンス監視画面へ移動します。",
     "ko": "클릭하면 해당시간의 인스턴스 모니터링 화면으로 이동합니다.",
     "zh": "Click to go to the instance monitoring screen for that time.",
     "service_id": "DSC07182"
   },
   "DSC07183": {
-    "en": "There are no associated containers. Please check your project access key.",
-    "ja": "リンクされたコンテナはありません。 プロジェクトアクセスキーを確認してください。",
-    "ko": "연결된 컨테이너가 없습니다. 프로젝트 액세스 키를 확인하세요.",
-    "zh": "There are no associated containers. Please check your project access key.",
+    "en": "Resource information for this application could not be determined. Please check node agent status or access key",
+    "ja": "このアプリケーションのリソース情報を確認できません。 ノードエージェントの状態またはアクセスキーを確認してください",
+    "ko": "이 애플리케이션의 리소스 정보를 확인할 수 없습니다. 노드 에이전트 상태 또는 액세스 키를 확인하여 주십시오",
+    "zh": "Resource information for this application could not be determined. Please check node agent status or access key",
     "service_id": "DSC07183"
   },
   "NTC07184": {
@@ -49505,7 +49505,7 @@
   },
   "DSC07189": {
     "en": "No recommended value exists.",
-    "ja": "推奨値はありません。",
+    "ja": "推奨値がありません。",
     "ko": "추천 값이 존재하지 않습니다.",
     "zh": "No recommended value exists.",
     "service_id": "DSC07189"
@@ -49533,7 +49533,7 @@
   },
   "DSC07193": {
     "en": "Search for logs that contain values ​​different from the searched value.",
-    "ja": "検索された値とは異なる値を含むログを検索します。",
+    "ja": "検索値とは異なる値を含むログを検索します。",
     "ko": "검색 값과 다른 값이 포함된 로그를 조회합니다.",
     "zh": "Search for logs that contain values ​​different from the searched value.",
     "service_id": "DSC07193"
@@ -49554,14 +49554,14 @@
   },
   "DSC07196": {
     "en": "Invalid tag",
-    "ja": "無効なタグ",
+    "ja": "無効なタグです。",
     "ko": "유효하지 않는 태그",
     "zh": "Invalid tag",
     "service_id": "DSC07196"
   },
   "TTL07197": {
     "en": "Date / Time",
-    "ja": "日付 / 時刻",
+    "ja": "日付 / 時間",
     "ko": "날짜 / 시간",
     "zh": "Date / Time",
     "service_id": "TTL07197"
@@ -49589,14 +49589,14 @@
   },
   "ITM07201": {
     "en": "Original data",
-    "ja": "オリジナルデータ",
+    "ja": "原始データ",
     "ko": "원본 데이터",
     "zh": "Original data",
     "service_id": "ITM07201"
   },
   "DSC07202": {
     "en": "Apply for WhaTap user training",
-    "ja": "WhaTap ユーザートレーニングに申し込む",
+    "ja": "WhaTap ユーザートレーニングの申し込み",
     "ko": "와탭 사용자 교육 신청",
     "zh": "Apply for WhaTap user training",
     "service_id": "DSC07202"
@@ -49652,15 +49652,15 @@
   },
   "TTL07210": {
     "en": "Count Trend",
-    "ja": "数の推移",
+    "ja": "件数の推移",
     "ko": "개수 추이",
     "zh": "Count Trend",
     "service_id": "TTL07210"
   },
   "TTL07211": {
     "en": "Number of Pods/Containers",
-    "ja": "パード/コンテナ数",
-    "ko": "파드/컨테이너 수",
+    "ja": "Pod/コンテナ数",
+    "ko": "Pod/컨테이너 수",
     "zh": "Number of Pods/Containers",
     "service_id": "TTL07211"
   },
@@ -49673,8 +49673,8 @@
   },
   "TTL07213": {
     "en": "Number of Pods",
-    "ja": "パード数",
-    "ko": "파드 수",
+    "ja": "Pod数",
+    "ko": "Pod 수",
     "zh": "Number of Pods",
     "service_id": "TTL07213"
   },
@@ -49701,7 +49701,7 @@
   },
   "TTL07217": {
     "en": "Number of Alarms",
-    "ja": "アラーム数",
+    "ja": "アラート数",
     "ko": "알람 수",
     "zh": "Number of Alarms",
     "service_id": "TTL07217"
@@ -49750,35 +49750,35 @@
   },
   "DSC07224": {
     "en": "Supported versions: {version} or higher",
-    "ja": "サポートバージョン：{version}以降",
+    "ja": "対応バージョン：{version}以降",
     "ko": "지원 버전: {version} 이상",
     "zh": "Supported versions: {version} or higher",
     "service_id": "DSC07224"
   },
   "TLT07225": {
     "en": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
-    "ja": "使用料金は契約方式（固定価格または使用量連携）に\n金額に割引オプションが適用された金額です。",
+    "ja": "利用料金は契約方式（固定価または従量制）に割引オプションが適用された金額です。",
     "ko": "사용요금은 계약 방식(고정가 또는 사용량 연계)에 \n따른 금액으로 할인옵션이 적용된 금액입니다.",
     "zh": "Usage fees are based on the contract method (fixed price or usage-related).\nThis is the amount with the discount option applied.",
     "service_id": "TLT07225"
   },
   "TLT07226": {
     "en": "The discount amount is based on each discount condition applied at the time of contract.\nIt is converted into an amount and printed.",
-    "ja": "割引金額は、契約時に適用される各割引条件です。\n金額に換算して出力されます。",
+    "ja": "割引金額は、契約時に適用されるそれぞれの割引条件を金額として換算して出力したものです。",
     "ko": "할인금액은 계약 시 적용된 각각의 할인 조건을\n금액으로 환산하여 출력됩니다.",
     "zh": "The discount amount is based on each discount condition applied at the time of contract.\nIt is converted into an amount and printed.",
     "service_id": "TLT07226"
   },
   "DSC07227": {
     "en": "Actual amount used",
-    "ja": "実用金額",
+    "ja": "実の利用金額",
     "ko": "실사용 금액",
     "zh": "Actual amount used",
     "service_id": "DSC07227"
   },
   "DSC07228": {
     "en": "Compared to actual use",
-    "ja": "実用的なコントラスト",
+    "ja": "実の利用との比較",
     "ko": "실사용 대비",
     "zh": "Compared to actual use",
     "service_id": "DSC07228"
@@ -49799,7 +49799,7 @@
   },
   "BTN07231": {
     "en": "Go to the guide",
-    "ja": "ガイドショートカット",
+    "ja": "ガイドへ",
     "ko": "가이드 바로가기",
     "zh": "Go to the guide",
     "service_id": "BTN07231"
@@ -49834,10 +49834,164 @@
   },
   "NTC07236": {
     "en": "Your temporary license has expired.",
-    "ja": "仮免許の有効期限が切れています。",
+    "ja": "臨時のライセンスが満了しました。",
     "ko": "임시 라이선스가 만료되었습니다.",
     "zh": "Your temporary license has expired.",
     "service_id": "NTC07236"
+  },
+  "TTL07237": {
+    "en": "Resource relationships",
+    "ja": "リソース関係",
+    "ko": "리소스 관계",
+    "zh": "Resource relationships",
+    "service_id": "TTL07237"
+  },
+  "DSC07238": {
+    "en": "There is no pod state information that matches the condition.",
+    "ja": "条件に合ったPod状態情報がありません。",
+    "ko": "조건에 맞는 파드 상태 정보가 없습니다.",
+    "zh": "There is no pod state information that matches the condition.",
+    "service_id": "DSC07238"
+  },
+  "DSC07239": {
+    "en": "There is no pod state information.",
+    "ja": "Pod状態情報がありません。",
+    "ko": "파드 상태 정보가 없습니다.",
+    "zh": "There is no pod state information.",
+    "service_id": "DSC07239"
+  },
+  "BTN07240": {
+    "en": "Federated authentication",
+    "ja": "認証連動",
+    "ko": "인증 연동",
+    "zh": "Federated authentication",
+    "service_id": "BTN07240"
+  },
+  "DSC07241": {
+    "en": "Search all logs matching the search key.",
+    "ja": "検索語に該当するすべてのログを検索します。",
+    "ko": "검색 키에 해당하는 모든 로그를 검색합니다.",
+    "zh": "Search all logs matching the search key.",
+    "service_id": "DSC07241"
+  },
+  "TLT07242": {
+    "en": "If you want to use the Monitoring Service more efficiently, please apply for <span style=\"color: #ffc107;\">WhaTap user training</span>",
+    "ja": "モニタリングサービスをより効率的に活用したいなら、<span style=\"color: #ffc107;\">WhaTapユーザートレーニング</span>を申し込んでください。",
+    "ko": "모니터링 서비스를 더 잘 이용해보고 싶다면? <span style=\"color: #ffc107;\">와탭 사용자 교육</span>을 신청하세요",
+    "zh": "If you want to use the Monitoring Service more efficiently, please apply for <span style=\"color: #ffc107;\">\bWhaTap user training<span>",
+    "service_id": "TLT07242"
+  },
+  "BTN07243": {
+    "en": "View new version",
+    "ja": "新しいバージョンで見る",
+    "ko": "신규 버전으로 보기",
+    "zh": "View new version",
+    "service_id": "BTN07243"
+  },
+  "DSC07244": {
+    "en": "This {object} does not exist.",
+    "ja": "表示されなくなった{object}です。",
+    "ko": "존재하지 않는 {object} 입니다.",
+    "zh": "This {object} does not exist.",
+    "service_id": "DSC07244"
+  },
+  "DSC07245": {
+    "en": "The agent version is too low and is not supported. Please update to the latest agent.",
+    "ja": "エージェントのバージョンが低くサポートされていません。 最新のエージェントにアップデートしてください。",
+    "ko": "에이전트 버전이 낮아 지원하지 않습니다. 최신 에이전트로 업데이트 하세요.",
+    "zh": "The agent version is too low and is not supported. Please update to the latest agent.",
+    "service_id": "DSC07245"
+  },
+  "TLT07246": {
+    "en": "Pod details View",
+    "ja": "Podの詳細を表示します。",
+    "ko": "파드 상세 보기",
+    "zh": "Pod details View",
+    "service_id": "TLT07246"
+  },
+  "TLT07247": {
+    "en": "Container details view",
+    "ja": "コンテナの詳細を表示します。",
+    "ko": "컨테이너 상세 보기",
+    "zh": "Container details view",
+    "service_id": "TLT07247"
+  },
+  "DSC07248": {
+    "en": "Connection utilization for ${oname} is ${metricValue}.",
+    "ja": "${oname} の Connection 使用率が ${metricValue} です。",
+    "ko": "${oname}의 Connection 사용률이 ${metricValue}입니다.",
+    "zh": "Connection utilization for ${oname} is ${metricValue}.",
+    "service_id": "DSC07248"
+  },
+  "TTL07249": {
+    "en": "Top object",
+    "ja": "Top オブジェクト",
+    "ko": "Top 오브젝트",
+    "zh": "Top object",
+    "service_id": "TTL07249"
+  },
+  "DSC07250": {
+    "en": "Search for objects that require vacuum, objects that require a lot of full scans, and tables that use a lot of DML.",
+    "ja": "Vacuumが必要なオブジェクト、Full Scanの多いオブジェクト、DMLの多いテーブルが検索できます。",
+    "ko": "Vacuum이 필요한 오브젝트, Full Scan이 많은 오브젝트, DML사용이 많은 테이블을 조회해보세요.",
+    "zh": "Search for objects that require vacuum, objects that require a lot of full scans, and tables that use a lot of DML.",
+    "service_id": "DSC07250"
+  },
+  "DSC07251": {
+    "en": "You can view the Bloating size, number of Scans, number of DML executions, and objects with many dead tuples for each object (table, index), and provide information to check the status of major objects and perform Vacuum or Analyze at an appropriate time.",
+    "ja": "オブジェクト（テーブル、インデックス）別のBloatingサイズ、Scan数、DML実行数、Dead tupleの多いオブジェクトが照会できます。主なオブジェクトの現状を把握し、VacuumやAnalyzeが適時に行えるように情報を提供します。",
+    "ko": "오브젝트(테이블, 인덱스)별 Bloating 사이즈, Scan 수, DML 수행 수, Dead tuple이 많은 오브젝트를 조회가능하며, 주요 오브젝트의 현황을 파악하고 Vacuum이나 Analyze를 적절한 시기에 수행하도록  정보를 제공합니다.",
+    "zh": "You can view the Bloating size, number of Scans, number of DML executions, and objects with many dead tuples for each object (table, index), and provide information to check the status of major objects and perform Vacuum or Analyze at an appropriate time.",
+    "service_id": "DSC07251"
+  },
+  "DSC07252": {
+    "en": "When searching by applying the [Multi-Transaction ID] filter, only the [Transaction ID] filter can be additionally applied.",
+    "ja": "「マルチトランザクションID」フィルタを適用して検索する場合は、「トランザクションID」フィルタのみが追加できます。",
+    "ko": "[멀티 트랜잭션 ID] 필터를 적용하여 검색할 경우 [트랜잭션 ID] 필터만 추가 적용할 수 있습니다.",
+    "zh": "When searching by applying the [Multi-Transaction ID] filter, only the [Transaction ID] filter can be additionally applied.",
+    "service_id": "DSC07252"
+  },
+  "DSC07253": {
+    "en": "Please select a comparison node from the list",
+    "ja": "リストから比較ノードを選択してください。",
+    "ko": "목록에서 비교 노드를 선택해 주십시오",
+    "zh": "Please select a comparison node from the list",
+    "service_id": "DSC07253"
+  },
+  "page_not_found": {
+    "en": "Page not found.",
+    "ja": "ページが見つかりません。",
+    "ko": "페이지를 찾을 수 없습니다.",
+    "zh": "Page not found.",
+    "service_id": "_07254"
+  },
+  "LNK07255": {
+    "en": "Go to Node list",
+    "ja": "ノードリストに移動",
+    "ko": "노드 목록으로 이동",
+    "zh": "Go to Node list",
+    "service_id": "LNK07255"
+  },
+  "LNK07256": {
+    "en": "Go to Pod list",
+    "ja": "Podリストに移動",
+    "ko": "Pod 목록으로 이동",
+    "zh": "Go to Pod list",
+    "service_id": "LNK07256"
+  },
+  "LNK07257": {
+    "en": "Go to Container list",
+    "ja": "コンテナリストに移動",
+    "ko": "컨테이너 목록으로 이동",
+    "zh": "Go to Container list",
+    "service_id": "LNK07257"
+  },
+  "subscribe_whatap": {
+    "en": "subscribe to the WhaTap service",
+    "ja": "WhaTapサービスへの有料変換",
+    "ko": "WhaTap 서비스에 유료 전환",
+    "zh": "subscribe to the WhaTap service",
+    "service_id": "_07258"
   },
   "": {
     "": "",
@@ -49887,5 +50041,15 @@
     "en": "Top Object",
     "ja": "Topオブジェクト",
     "ko": "Top 오브젝트"
+  },
+  "clusterOverview": {
+    "en": "Cluster Summary",
+    "ja": "クラスターサマリー",
+    "ko": "클러스터 요약"
+  },
+  "pendingPod": {
+    "en": "Pending Pods",
+    "ja": "Pending Pods",
+    "ko": "Pending Pods"
   }
 }

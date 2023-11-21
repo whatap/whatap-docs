@@ -32,9 +32,9 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Fixed</Status> <UI>利用内訳</UI> > <UI>請求書プレビュー</UI>メニューで割引金額がない場合、利用金額が表示されないバグを修正
+-   <Status>Fixed</Status> <UI>利用履歴</UI> > <UI>請求書プレビュー</UI>メニューで割引額がない場合、利用金額が表示されないバグを修正
 
--   <Status>Fixed</Status>プロフィールアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(後ろに行くボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されて前のページに移動しない問題を修正
+-   <Status>Fixed</Status>プロフィールアイコンをクリックした後<UI>アカウント情報管理</UI>メニューに移動してから前のページに移動すると(戻るボタンをクリックすると) クエリパラメータに<code>org=undefined</code>が入力されているため、前のページに移動しない問題を修正
 
 * * *
 
@@ -90,7 +90,7 @@ toc_max_heading_level: 2
 
 ### `Database`
 
-<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント一覧</UI>メニューから設定したインスタンス<UI>別称</UI>が次のメニューに適用されないエラーの修正</p>
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント一覧</UI>メニューから設定したインスタンス<UI>別称</UI>が、次のメニューに適用されない問題を修正</p>
 
 -   **_ダッシュボード_** > **_インスタンス一覧_**
 
@@ -114,7 +114,7 @@ toc_max_heading_level: 2
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>リソース</UI> > <UI>Node詳細</UI>メニューからコンテナ一覧の一部データが見えないバグ修正</p>
+<p><Status>Fixed</Status> <UI>リソース</UI> > <UI>Node詳細</UI>メニューからコンテナ一覧の一部のデータが見えないバグを修正</p>
 
 </div>
 
@@ -126,7 +126,7 @@ toc_max_heading_level: 2
 
 ### `Container`
 
-<p><Status>Deprecate</Status> <UI>ダッシュボード</UI> > <UI>アプリケーションサービスダッシュボード</UI>メニューで<UI>マルチサービスダッシュボード</UI>タブ下位にある各グループパネルの<UI>サービス別アプリケーション</UI>ボタン削除</p>
+<p><Status>Deprecate</Status> <UI>ダッシュボード</UI> > <UI>アプリケーションサービスダッシュボード</UI>メニューから<UI>マルチサービスダッシュボード</UI>タブの下にある各グループパネルの<UI>サービス別アプリケーション</UI>ボタン削除</p>
 
 </div>
 
@@ -148,7 +148,7 @@ toc_max_heading_level: 2
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>コンテナマップ</UI>メニューで<b>ログ照会</b>権限のないユーザーが<UI>コンテナStdout/Stderr</UI>データを照会できないバグ修正</p>
+<p><Status>Fixed</Status> <UI>コンテナマップ</UI>メニューから<b>ログ参照</b>権限のないユーザーが<UI>コンテナStdout/Stderr</UI>データを表示できないバグ修正</p>
 
 </div>
 
@@ -158,9 +158,9 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status>ホーム画面 > <UI>Flexボード</UI> > <UI>ヒートマップ</UI>ウィジェットを通じて<b>トランザクション詳細</b>画面に進入する場合<b>ログ照会</b>権限のあるメンバーに<UI>トランザクションログ</UI>タブが見えない現象修正
+-   <Status>Fixed</Status>ホーム画面 > <UI>Flexボード</UI> > <UI>ヒートマップ</UI>ウィジェットから<b>トランザクションの詳細</b>画面に入る場合<b>ログ参照</b>権限のあるメンバーに<UI>トランザクションログ</UI>タブが表示されない現象を修正
 
--   <Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューでブラウザ画面の幅が特定の大きさの時に一番右側のアイコンボタンが隠れる現象修正
+-   <Status>Fixed</Status> <UI>管理者</UI> > <UI>プロジェクトメンバー</UI>メニューのブラウザ画面の幅が特定のサイズになった場合に右端のアイコンボタンが見えなくなる現象を修正
 
 </div>
 
@@ -190,9 +190,9 @@ toc_max_heading_level: 2
 
 ### `Log`
 
--   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI> > <UI>ログパーサー設定</UI> > <UI>フィルター入力</UI> > フィルターキーの誤字修正(okineName → okindName)
+-   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI> > <UI>ログパーサー設定</UI> > <UI>フィルター入力</UI> > フィルターキーの誤字を修正(okineName → okindName)
 
--   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで照会されたログ データがない場合、以前ログが表示される現象を修正
+-   <Status>Fixed</Status> <UI>ログ</UI> > <UI>ライブテール</UI>メニューで参照するログデータがない場合、以前のログが表示される問題を修正
 
 </div>
 

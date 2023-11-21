@@ -9,3 +9,109 @@ tags:
 ---
 
 {@include: ../common-items/_metrics-warning-notice.mdx}
+
+## Metrics event templates{#k8s-metrics-event-template}
+
+:::note 
+
+For more information about the `reason` field in the Kubernetes event, see [Kubernetes official documentation](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/events/event.go#L27). 
+
+:::
+
+#### **_BackOff_**
+
+The alert occurs when `BackOff` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows: 
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_Evicted_**
+
+The alert occurs when `Evicted` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_FailedCreatePodSandBox_**
+
+The alert occurs when `FailedCreatePodSandBox` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_FailedMount_**
+
+The alert occurs when `FailedMount` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_FailedScheduling_**
+
+The alert occurs when `FailedScheduling` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_FailedSync_**
+
+The alert occurs when `FailedSync` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_NodeNotReady_**
+
+The alert occurs when `NodeNotReady` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_Unhealthy_**
+
+The alert occurs when `Unhealthy` is entered several times in the `reason` field in a Kubernetes event. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Kubernetes Event (Kube Event `${message}`)
+
+#### **_Notification of utilization based on container CPU quota_**
+
+The alert occurs when the total CPU usage (`${cpu_per_quota}`) based on the container's CPU limit is 70% or more. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> The CPU utilization of container `${oname}` in `${okindName}` is high, `${cpu_per_quota}`% >= 70%.
+
+#### **_Container memory fail count_**
+
+If the container's memory limit is reached more than once, the alert occurs. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> Because the `${oname}` container of `${okindName}` exceeded the limit, the `${mem_failcnt}` increased.
+
+#### **_Container memory utilization_**
+
+The alert occurs when the usage (`${container.mem_percent}`) based on the container's memory limit is 90% or more. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> The memory usage of `${oname}` container in `${okindName}` is `${container.mem_percent}`% >= 90%.
+
+#### **_HPA CPU utilization notification_**
+
+The alert occurs when the number of running Pods is equal to the maximum number of Pods in the resource and the CPU utilization is above 70%. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> The maximum HPA POD generation has been reached and the CPU usage is >= 70%.
+
+#### **_Notification of the number of master pods_**
+
+The alert occurs when there are no Pods that can be allocated to the node. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> The number of PODs that can be allocated to the master is 0.
+
+#### **_Node CPU utilization notification_**
+
+The alert occurs when the node's CPU utilization (`${cpu}`) is 70% or more. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> The CPU usage of `${oname}` is `${cpu}`% >= 70%.
+
+#### **_Node memory utilization notification_**
+
+The alert occurs when the node's memory utilization (`${memory_pused}`) is 90% or more. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> The memory usage of `${oname}` is `${memory_pused}`% >= 90%.
+
+#### **_APDEX_**
+
+The alert occurs when the transaction exists and the APDEX score is less than 0.7. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+The alert occurs when the number of Pods that can be allocated to the node is 0. The <Cmdname sid="message" className="uitext" /> example is as follows:
+
+> APDEX is lower than 0.7 (`${oname}`)

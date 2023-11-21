@@ -190,7 +190,6 @@ function SearchPageContent() {
           const titles = Object.keys(hierarchy).map((key) =>
             sanitizeValue(hierarchy[key].value),
           );
-          console.log(titles[titles.length-1]);
           const docpath = breadcrums;
           return {
             title: titles[titles.length-1],

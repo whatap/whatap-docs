@@ -182,6 +182,20 @@ Configuration using the role is recommended. The access key is available only to
 -   AWS WorkMail
 -   AWS WorkSpaces
 
+:::note 
+
+**Disabling the data collection and initializing the service**
+
+<ImgLang img='amazon-cloudwatch-deact.png' desc='Disabling the data collection and initializing the service' />
+
+-   ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
+
+-   ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
+
+-   To completely avoid incurring costs, you must remove the **Role** from the **AWS IAM** console.
+
+:::
+
 ### Selecting the region, metric, and stat
 
 ![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 

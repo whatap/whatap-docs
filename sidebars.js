@@ -295,6 +295,7 @@ const sidebars = {
             'php/php-os/alpine-linux',
             'php/php-os/gcae',
             'php/php-os/aws-eb',
+            'php/install-agent-docker'
           ]
         },
         {
@@ -1128,7 +1129,17 @@ const sidebars = {
       },
       items: [
         'golang/supported-spec',
-        'golang/install-agent',
+        {
+          type: 'category',
+          label: '에이전트 설치',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/install-agent'
+          },
+          items: [ 'golang/install-agent-docker' ],
+        },
         'golang/api-guide',
         'golang/install-check',
         {
@@ -3021,14 +3032,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_21',
+                id: 'release-notes/java/java-2_2_22',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_21',
+                  id: 'release-notes/java/java-2_2_22',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_21',
                 'release-notes/java/java-2_2_20',
                 'release-notes/java/java-2_2_19',
                 'release-notes/java/java-2_2_18',
@@ -3037,7 +3049,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_15',
                 'release-notes/java/java-2_2_14',
                 'release-notes/java/java-2_2_13',
-                'release-notes/java/java-2_2_12',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3093,17 +3104,18 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_80',
+                id: 'release-notes/nodejs/nodejs-0_4_81',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_80',
-                  className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_81',
+                  // className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_80',
                 'release-notes/nodejs/nodejs-0_4_77'
               ]
             },
@@ -3112,7 +3124,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1_4_8',
@@ -3121,7 +3133,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_4_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_4_6',
                 'release-notes/python/python-1_4_4',
@@ -3143,14 +3155,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/dotnet/dotnet-2_1_9',
+                id: 'release-notes/dotnet/dotnet-2_2_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_1_9',
+                  id: 'release-notes/dotnet/dotnet-2_2_0',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_1_9',
                 'release-notes/dotnet/dotnet-2_1_8',
                 'release-notes/dotnet/dotnet-2_1_7',
                 'release-notes/dotnet/dotnet-2_1_6',
@@ -3159,7 +3172,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_1_3',
                 'release-notes/dotnet/dotnet-2_1_2',
                 'release-notes/dotnet/dotnet-2_1_1',
-                'release-notes/dotnet/dotnet-2_1_0',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3196,17 +3208,18 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_4_3',
+                id: 'release-notes/server/server-2_4_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_4_3',
-                  className: 'new',
+                  id: 'release-notes/server/server-2_4_4',
+                  // className: 'new',
                 },
+                'release-notes/server/server-2_4_3',
                 'release-notes/server/server-2_4_2',
                 'release-notes/server/server-2_4_1',
                 'release-notes/server/server-2_4_0',
@@ -3215,7 +3228,6 @@ const sidebars = {
                 'release-notes/server/server-2_3_7',
                 'release-notes/server/server-2_3_6',
                 'release-notes/server/server-2_3_4',
-                'release-notes/server/server-2_3_3',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3227,23 +3239,23 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_4_1',
+                id: 'release-notes/k8s/k8s-1_4_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_4_1',
+                  id: 'release-notes/k8s/k8s-1_4_4',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_4_3',
+                'release-notes/k8s/k8s-1_4_2',
+                'release-notes/k8s/k8s-1_4_1',
                 'release-notes/k8s/k8s-1_4_0',
                 'release-notes/k8s/k8s-1_3_9',
                 'release-notes/k8s/k8s-1_3_8',
                 'release-notes/k8s/k8s-1_3_7',
                 'release-notes/k8s/k8s-1_3_6',
                 'release-notes/k8s/k8s-1_3_5',
-                'release-notes/k8s/k8s-1_3_4',
-                'release-notes/k8s/k8s-1_3_3',
-                'release-notes/k8s/k8s-1_3_2',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3255,14 +3267,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_6_12',
+                id: 'release-notes/db/dbx-1_6_13',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_6_12',
+                  id: 'release-notes/db/dbx-1_6_13',
                   // className: 'new',
                 },
+                'release-notes/db/dbx-1_6_12',
                 'release-notes/db/dbx-1_6_11',
                 'release-notes/db/dbx-1_6_10',
                 'release-notes/db/dbx-1_6_9',
@@ -3310,7 +3323,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_2',
@@ -3319,7 +3332,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_3_1',
                 'release-notes/browser/browser-v1_3_0',
@@ -5186,6 +5199,7 @@ const sidebars = {
                 'kubernetes/install-docker-nodejs',
                 'kubernetes/install-docker-python',
                 'kubernetes/install-docker-php',
+                'kubernetes/install-docker-go'
               ],
             },
             'kubernetes/create-name-space-project'

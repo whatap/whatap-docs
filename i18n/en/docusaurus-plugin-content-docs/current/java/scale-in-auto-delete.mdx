@@ -8,7 +8,7 @@ tags:
 
 If an agent name is automatically assigned in the Auto Scale environment, administrator's intervention is not required when a scale out occurs. The system scales up automatically. If a scale in occurs, the system must recognize it as a graceful shutdown.
 
-For automatic deletion of the agent, the WhaTap server must receive messages from the Java agent. The agent sends a **SILENT_SHUTDOWN** event to the Whatap server when the _whatap\_{java-process-pid>}.shutdown_ file of the Java process appears in `${WHATAP_HOME}`. Transfers are completed within 5 seconds.
+For automatic deletion of the agent, the WhaTap server must receive messages from the Java agent. The agent sends a **SILENT_SHUTDOWN** event to the Whatap server when the _whatap\_`{java-process-pid}`.shutdown_ file of the Java process appears in `${WHATAP_HOME}`. Transfers are completed within 5 seconds.
 
 When the **SILENT_SHUTDOWN** event has been transferred to the WhaTap server and then the agent is shut down within 1 minute, the WhaTap server deletes the agent from the list. Any inactive event does not occur.
 
