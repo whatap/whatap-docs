@@ -295,6 +295,7 @@ const sidebars = {
             'php/php-os/alpine-linux',
             'php/php-os/gcae',
             'php/php-os/aws-eb',
+            'php/install-agent-docker'
           ]
         },
         {
@@ -1128,7 +1129,17 @@ const sidebars = {
       },
       items: [
         'golang/supported-spec',
-        'golang/install-agent',
+        {
+          type: 'category',
+          label: '에이전트 설치',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/install-agent'
+          },
+          items: [ 'golang/install-agent-docker' ],
+        },
         'golang/api-guide',
         'golang/install-check',
         {
@@ -1405,6 +1416,7 @@ const sidebars = {
                 'postgresql/analysis-lock-and-deadlock',
                 'postgresql/analysis-session-history',
                 'postgresql/analysis-wait-events',
+                'postgresql/analysis-top-object',
                 'postgresql/analysis-databaseparameter',
               ]
             },
@@ -3092,7 +3104,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_81',
@@ -3101,7 +3113,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_81',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_80',
                 'release-notes/nodejs/nodejs-0_4_77'
@@ -3196,7 +3208,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_4_4',
@@ -3205,7 +3217,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_4_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_4_3',
                 'release-notes/server/server-2_4_2',
@@ -3227,14 +3239,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_4_2',
+                id: 'release-notes/k8s/k8s-1_4_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_4_2',
+                  id: 'release-notes/k8s/k8s-1_4_4',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_4_3',
+                'release-notes/k8s/k8s-1_4_2',
                 'release-notes/k8s/k8s-1_4_1',
                 'release-notes/k8s/k8s-1_4_0',
                 'release-notes/k8s/k8s-1_3_9',
@@ -3242,8 +3256,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_3_7',
                 'release-notes/k8s/k8s-1_3_6',
                 'release-notes/k8s/k8s-1_3_5',
-                'release-notes/k8s/k8s-1_3_4',
-                'release-notes/k8s/k8s-1_3_3',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3252,7 +3264,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_6_13',
@@ -3261,7 +3273,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_6_13',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_12',
                 'release-notes/db/dbx-1_6_11',
@@ -5187,6 +5199,7 @@ const sidebars = {
                 'kubernetes/install-docker-nodejs',
                 'kubernetes/install-docker-python',
                 'kubernetes/install-docker-php',
+                'kubernetes/install-docker-go'
               ],
             },
             'kubernetes/create-name-space-project'
