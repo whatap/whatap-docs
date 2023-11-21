@@ -3103,7 +3103,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_81',
@@ -3112,7 +3112,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_81',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_80',
                 'release-notes/nodejs/nodejs-0_4_77'
@@ -3207,7 +3207,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_4_4',
@@ -3216,7 +3216,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_4_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_4_3',
                 'release-notes/server/server-2_4_2',
@@ -3238,14 +3238,16 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_4_2',
+                id: 'release-notes/k8s/k8s-1_4_4',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_4_2',
+                  id: 'release-notes/k8s/k8s-1_4_4',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_4_3',
+                'release-notes/k8s/k8s-1_4_2',
                 'release-notes/k8s/k8s-1_4_1',
                 'release-notes/k8s/k8s-1_4_0',
                 'release-notes/k8s/k8s-1_3_9',
@@ -3253,8 +3255,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_3_7',
                 'release-notes/k8s/k8s-1_3_6',
                 'release-notes/k8s/k8s-1_3_5',
-                'release-notes/k8s/k8s-1_3_4',
-                'release-notes/k8s/k8s-1_3_3',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3263,7 +3263,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_6_13',
@@ -3272,7 +3272,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_6_13',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_12',
                 'release-notes/db/dbx-1_6_11',
