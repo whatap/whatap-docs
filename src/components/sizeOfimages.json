@@ -4535,6 +4535,30 @@
     "width": 1085,
     "height": 653
   },
+  "db-sql-details-common-en.png": {
+    "width": 1200,
+    "height": 472
+  },
+  "db-sql-details-common-ja.png": {
+    "width": 1200,
+    "height": 476
+  },
+  "db-sql-details-common.png": {
+    "width": 1200,
+    "height": 473
+  },
+  "db-sql-details-postgresql-en.png": {
+    "width": 1200,
+    "height": 581
+  },
+  "db-sql-details-postgresql-ja.png": {
+    "width": 1200,
+    "height": 580
+  },
+  "db-sql-details-postgresql.png": {
+    "width": 1200,
+    "height": 577
+  },
   "db-sql-elapse-map-example.png": {
     "width": 1810,
     "height": 413
@@ -4581,11 +4605,11 @@
   },
   "db-sql-stat-details-ja.png": {
     "width": 1200,
-    "height": 354
+    "height": 356
   },
   "db-sql-stat-details.png": {
     "width": 1200,
-    "height": 360
+    "height": 355
   },
   "db-sql-stat-disable-filter-en.png": {
     "width": 400,
@@ -5879,6 +5903,30 @@
     "width": 1626,
     "height": 939
   },
+  "k8s-resource-cl-sum-ci-en.png": {
+    "width": 1200,
+    "height": 1200
+  },
+  "k8s-resource-cl-sum-ci-ja.png": {
+    "width": 1200,
+    "height": 1200
+  },
+  "k8s-resource-cl-sum-ci.png": {
+    "width": 1200,
+    "height": 1200
+  },
+  "k8s-resource-cl-sum-co-en.png": {
+    "width": 1201,
+    "height": 1069
+  },
+  "k8s-resource-cl-sum-co-ja.png": {
+    "width": 1201,
+    "height": 1066
+  },
+  "k8s-resource-cl-sum-co.png": {
+    "width": 1201,
+    "height": 1065
+  },
   "k8s-resource-container-list-add-filter-en.png": {
     "width": 405,
     "height": 208
@@ -5904,24 +5952,24 @@
     "height": 208
   },
   "k8s-resource-container-list-cl-en.png": {
-    "width": 1013,
-    "height": 458
+    "width": 1008,
+    "height": 497
   },
   "k8s-resource-container-list-cl-ja.png": {
-    "width": 1010,
-    "height": 459
+    "width": 1008,
+    "height": 501
   },
   "k8s-resource-container-list-cl.png": {
     "width": 1008,
-    "height": 453
+    "height": 497
   },
   "k8s-resource-container-list-compare-en.png": {
     "width": 1214,
-    "height": 649
+    "height": 516
   },
   "k8s-resource-container-list-compare-ja.png": {
     "width": 1214,
-    "height": 646
+    "height": 513
   },
   "k8s-resource-container-list-compare-time-en.png": {
     "width": 1200,
@@ -5937,7 +5985,7 @@
   },
   "k8s-resource-container-list-compare.png": {
     "width": 1214,
-    "height": 645
+    "height": 518
   },
   "k8s-resource-container-list-en.png": {
     "width": 1200,
@@ -5949,15 +5997,15 @@
   },
   "k8s-resource-container-list-m-en.png": {
     "width": 1200,
-    "height": 735
+    "height": 661
   },
   "k8s-resource-container-list-m-ja.png": {
     "width": 1200,
-    "height": 736
+    "height": 660
   },
   "k8s-resource-container-list-m.png": {
     "width": 1200,
-    "height": 734
+    "height": 661
   },
   "k8s-resource-container-list-metric-info-cl.png": {
     "width": 1200,
@@ -9892,16 +9940,16 @@
     "height": 177
   },
   "server-process-event-en.png": {
-    "width": 1200,
-    "height": 1170
+    "width": 1192,
+    "height": 1141
   },
   "server-process-event-ja.png": {
-    "width": 1200,
-    "height": 1164
+    "width": 1192,
+    "height": 1141
   },
   "server-process-event.png": {
-    "width": 1095,
-    "height": 1406
+    "width": 1192,
+    "height": 1141
   },
   "server-process-list-dt-en.png": {
     "width": 1200,
@@ -9960,16 +10008,16 @@
     "height": 882
   },
   "server-server-event-en.png": {
-    "width": 1208,
-    "height": 1176
+    "width": 1192,
+    "height": 1142
   },
   "server-server-event-ja.png": {
-    "width": 1208,
-    "height": 1176
+    "width": 1192,
+    "height": 1142
   },
   "server-server-event.png": {
-    "width": 1095,
-    "height": 1406
+    "width": 1192,
+    "height": 1142
   },
   "server-warning-en.png": {
     "width": 1211,
