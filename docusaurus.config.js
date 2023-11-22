@@ -46,10 +46,10 @@ module.exports = Promise.resolve({
   //   require.resolve('./static/js/rum.js')
   // ],
   scripts: [
-    {
-      src: 'https://app.happyreact.com/widget/reactions.js',
-      async: true,
-    },
+    // {
+    //   src: 'https://app.happyreact.com/widget/reactions.js',
+    //   async: true,
+    // },
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
