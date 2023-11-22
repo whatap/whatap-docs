@@ -1572,16 +1572,16 @@
     "height": 46
   },
   "about-billing-member-recipient-en.png": {
-    "width": 415,
-    "height": 293
+    "width": 477,
+    "height": 294
   },
   "about-billing-member-recipient-ja.png": {
-    "width": 421,
+    "width": 477,
     "height": 294
   },
   "about-billing-member-recipient.png": {
-    "width": 420,
-    "height": 294
+    "width": 477,
+    "height": 292
   },
   "about-billing-member-role-en.png": {
     "width": 1200,
@@ -2153,39 +2153,51 @@
   },
   "browser-analysis-ajax-hitmap-details-en.png": {
     "width": 1200,
-    "height": 519
+    "height": 459
   },
   "browser-analysis-ajax-hitmap-details-ja.png": {
     "width": 1200,
-    "height": 539
+    "height": 461
   },
   "browser-analysis-ajax-hitmap-details.png": {
     "width": 1200,
-    "height": 512
+    "height": 460
   },
   "browser-analysis-ajax-hitmap-en.png": {
-    "width": 1220,
-    "height": 967
+    "width": 1200,
+    "height": 475
   },
   "browser-analysis-ajax-hitmap-filter-en.png": {
     "width": 600,
-    "height": 325
+    "height": 378
   },
   "browser-analysis-ajax-hitmap-filter-ja.png": {
     "width": 600,
-    "height": 318
+    "height": 380
   },
   "browser-analysis-ajax-hitmap-filter.png": {
     "width": 600,
-    "height": 318
+    "height": 379
   },
   "browser-analysis-ajax-hitmap-ja.png": {
-    "width": 1220,
-    "height": 966
+    "width": 1200,
+    "height": 475
+  },
+  "browser-analysis-ajax-hitmap-list-en.png": {
+    "width": 1200,
+    "height": 1118
+  },
+  "browser-analysis-ajax-hitmap-list-ja.png": {
+    "width": 1200,
+    "height": 1118
+  },
+  "browser-analysis-ajax-hitmap-list.png": {
+    "width": 1200,
+    "height": 1118
   },
   "browser-analysis-ajax-hitmap.png": {
-    "width": 1220,
-    "height": 966
+    "width": 1200,
+    "height": 475
   },
   "browser-analysis-pageload-hitmap-en.png": {
     "width": 1200,
@@ -2961,15 +2973,15 @@
   },
   "credit_card_8-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 396
   },
   "credit_card_8-ja.png": {
     "width": 1200,
-    "height": 326
+    "height": 394
   },
   "credit_card_8.png": {
     "width": 1200,
-    "height": 385
+    "height": 433
   },
   "cube-apm-en.png": {
     "width": 1200,
@@ -3106,6 +3118,18 @@
   "db-check-monitoring-agent-lists.png": {
     "width": 1200,
     "height": 206
+  },
+  "db-common-folding-table-en.png": {
+    "width": 600,
+    "height": 211
+  },
+  "db-common-folding-table-ja.png": {
+    "width": 600,
+    "height": 211
+  },
+  "db-common-folding-table.png": {
+    "width": 600,
+    "height": 211
   },
   "db-compare-count-trend-activesession-mysql-en.png": {
     "width": 1200,
@@ -4551,6 +4575,18 @@
     "width": 600,
     "height": 187
   },
+  "db-sql-stat-details-en.png": {
+    "width": 1200,
+    "height": 355
+  },
+  "db-sql-stat-details-ja.png": {
+    "width": 1200,
+    "height": 354
+  },
+  "db-sql-stat-details.png": {
+    "width": 1200,
+    "height": 360
+  },
   "db-sql-stat-disable-filter-en.png": {
     "width": 400,
     "height": 132
@@ -4670,6 +4706,18 @@
   "db-stat.png": {
     "width": 1200,
     "height": 401
+  },
+  "db-top-object-en.png": {
+    "width": 1200,
+    "height": 541
+  },
+  "db-top-object-ja.png": {
+    "width": 1200,
+    "height": 541
+  },
+  "db-top-object.png": {
+    "width": 1200,
+    "height": 539
   },
   "db-update-agent-en.png": {
     "width": 1200,
@@ -5349,15 +5397,15 @@
   },
   "invoice_mail_1-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 718
   },
   "invoice_mail_1-ja.png": {
-    "width": 1200,
-    "height": 326
+    "width": 1203,
+    "height": 718
   },
   "invoice_mail_1.png": {
     "width": 1200,
-    "height": 385
+    "height": 718
   },
   "java-agent-log-oname.png": {
     "width": 1500,
@@ -5807,17 +5855,29 @@
     "width": 1200,
     "height": 1262
   },
+  "k8s-pod-init-perform-cl-en.png": {
+    "width": 1308,
+    "height": 419
+  },
+  "k8s-pod-init-perform-cl-ja.png": {
+    "width": 1007,
+    "height": 467
+  },
+  "k8s-pod-init-perform-cl.png": {
+    "width": 958,
+    "height": 493
+  },
   "k8s-pod-init-perform-en.png": {
-    "width": 1200,
-    "height": 857
+    "width": 1626,
+    "height": 940
   },
   "k8s-pod-init-perform-ja.png": {
-    "width": 1200,
-    "height": 822
+    "width": 1626,
+    "height": 941
   },
   "k8s-pod-init-perform.png": {
-    "width": 1200,
-    "height": 789
+    "width": 1626,
+    "height": 939
   },
   "k8s-resource-container-list-add-filter-en.png": {
     "width": 405,
@@ -5910,6 +5970,74 @@
   "k8s-resource-container-list.png": {
     "width": 1200,
     "height": 678
+  },
+  "k8s-resource-node-detail-en.png": {
+    "width": 1200,
+    "height": 695
+  },
+  "k8s-resource-node-detail-ja.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "k8s-resource-node-detail.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "k8s-resource-node-list-cl-en.png": {
+    "width": 967,
+    "height": 574
+  },
+  "k8s-resource-node-list-cl-ja.png": {
+    "width": 967,
+    "height": 569
+  },
+  "k8s-resource-node-list-cl.png": {
+    "width": 967,
+    "height": 567
+  },
+  "k8s-resource-node-list-compare-en.png": {
+    "width": 1222,
+    "height": 633
+  },
+  "k8s-resource-node-list-compare-ja.png": {
+    "width": 1222,
+    "height": 634
+  },
+  "k8s-resource-node-list-compare-time-en.png": {
+    "width": 1200,
+    "height": 704
+  },
+  "k8s-resource-node-list-compare-time-ja.png": {
+    "width": 1200,
+    "height": 701
+  },
+  "k8s-resource-node-list-compare-time.png": {
+    "width": 1200,
+    "height": 702
+  },
+  "k8s-resource-node-list-compare.png": {
+    "width": 1222,
+    "height": 628
+  },
+  "k8s-resource-node-list-m-en.png": {
+    "width": 1208,
+    "height": 282
+  },
+  "k8s-resource-node-list-m-ja.png": {
+    "width": 1208,
+    "height": 280
+  },
+  "k8s-resource-node-list-m.png": {
+    "width": 1208,
+    "height": 277
+  },
+  "k8s-resource-node-list-metric-info-cl.png": {
+    "width": 731,
+    "height": 230
+  },
+  "k8s-resource-node-list-metric-info.png": {
+    "width": 645,
+    "height": 254
   },
   "k8s-tx-list-en.png": {
     "width": 1200,
@@ -6791,6 +6919,18 @@
     "width": 600,
     "height": 354
   },
+  "maintenance-add-v2-en.png": {
+    "width": 1036,
+    "height": 629
+  },
+  "maintenance-add-v2-ja.png": {
+    "width": 1035,
+    "height": 629
+  },
+  "maintenance-add-v2.png": {
+    "width": 1036,
+    "height": 631
+  },
   "maintenance-add.png": {
     "width": 600,
     "height": 354
@@ -6807,6 +6947,18 @@
     "width": 1200,
     "height": 945
   },
+  "maintenance-header-v2-en.png": {
+    "width": 1200,
+    "height": 696
+  },
+  "maintenance-header-v2-ja.png": {
+    "width": 1200,
+    "height": 698
+  },
+  "maintenance-header-v2.png": {
+    "width": 1200,
+    "height": 697
+  },
   "maintenance-header.png": {
     "width": 1200,
     "height": 945
@@ -6814,6 +6966,18 @@
   "maintenance-ja.png": {
     "width": 1200,
     "height": 356
+  },
+  "maintenance-v2-en.png": {
+    "width": 1200,
+    "height": 434
+  },
+  "maintenance-v2-ja.png": {
+    "width": 1200,
+    "height": 431
+  },
+  "maintenance-v2.png": {
+    "width": 1200,
+    "height": 439
   },
   "maintenance-widget-en.png": {
     "width": 413,
@@ -8914,6 +9078,10 @@
   "realtime-mode.png": {
     "width": 1200,
     "height": 384
+  },
+  "release-k8s-container-block.png": {
+    "width": 1200,
+    "height": 1302
   },
   "release-note-tx-new-feature.png": {
     "width": 1200,

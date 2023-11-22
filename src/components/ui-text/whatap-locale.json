@@ -32328,7 +32328,7 @@
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
     "ja": "15日間無料体験できます。{br}以降、自動的に有償転換されます。",
-    "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
+    "ko": "15일간 무료 체험이 가능합니다. {br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
   },
@@ -48230,10 +48230,10 @@
     "service_id": "DSC07002"
   },
   "DSC07003": {
-    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
+    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。 <br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
-    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
+    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
   },
   "BTN07004": {
