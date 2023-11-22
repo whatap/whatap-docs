@@ -28,12 +28,6 @@ module.exports = function () {
                   CRISP_RUNTIME_CONFIG = {locale : curLang};
                   window.$crisp=[];window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
                 },
-                {
-                  tagName: 'base',
-                  attributes: {
-                    href: '/',
-                  }
-                }
               ]
             };
         },
