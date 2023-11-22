@@ -1584,9 +1584,10 @@ main {
             letter-spacing: -1.4px;
           }
           p.npm {
-            max-height: 42px;
+            // max-height: 42px;
             height: 60px;
             font-size: .9rem;
+            line-height: 1.1;
             padding: 0;
             -webkit-line-clamp: 3; /* 라인수 */
             -webkit-box-orient: vertical;
