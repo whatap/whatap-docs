@@ -1510,5 +1510,9 @@
   "sidebar.indexSidebar.doc.메트릭스 알림 설정": {
     "message": "メトリクス通知設定",
     "description": "The label for the doc item 메트릭스 알림 설정 in sidebar indexSidebar, linking to the doc best-practice-guides/about-apm-heap-memory"
+  },
+  "sidebar.goSidebar.category.에이전트 설치": {
+    "message": "エージェントのインストール",
+    "description": "The label for category 에이전트 설치 in sidebar goSidebar"
   }
 }
