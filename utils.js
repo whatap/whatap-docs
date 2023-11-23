@@ -116,6 +116,14 @@ function colsToJson(data){
     "ko": "Pending Pods"
   }
 
+  rd["active_trx"] = {
+    "en": "Active TX",
+    "ja": "アクティブTX",
+    "ko": "실행중 TX",
+    "zh": "活动TX。",
+    "service_id": "_00297"
+  }
+
   return rd;
 }
 

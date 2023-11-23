@@ -1959,7 +1959,7 @@
     "zh": "活動交易 (Equalizer)",
     "service_id": "_00296"
   },
-  "active_trx.": {
+  "active_trx": {
     "en": "Active TX",
     "ja": "アクティブTX",
     "ko": "실행중 TX",
@@ -50051,5 +50051,12 @@
     "en": "Pending Pods",
     "ja": "Pending Pods",
     "ko": "Pending Pods"
+  },
+  "active_trx": {
+    "en": "Active TX",
+    "ja": "アクティブTX",
+    "ko": "실행중 TX",
+    "zh": "活动TX。",
+    "service_id": "_00297"
   }
 }
