@@ -5280,7 +5280,7 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               items: [
-                'kubernetes/application-service-dashboard',
+                'kubernetes/dashboard',
                 'kubernetes/dashboard-hitmap-trace',
                 'kubernetes/trs-view',
                 'kubernetes/multiservice-hitmap',
