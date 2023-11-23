@@ -124,6 +124,12 @@ function colsToJson(data){
     "service_id": "_00297"
   }
 
+  rd["logTail"] = {
+    "en": "Live Tail",
+    "ja": "ログTail",
+    "ko": "라이브 테일"
+  }
+
   return rd;
 }
 

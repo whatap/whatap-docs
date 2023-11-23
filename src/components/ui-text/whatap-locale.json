@@ -1959,7 +1959,7 @@
     "zh": "活動交易 (Equalizer)",
     "service_id": "_00296"
   },
-  "active_trx": {
+  "active_trx.": {
     "en": "Active TX",
     "ja": "アクティブTX",
     "ko": "실행중 TX",
@@ -49350,10 +49350,10 @@
     "service_id": "ITM07166"
   },
   "ITM07167": {
-    "en": "After initialization is complete (milliseconds) (up to 5 minutes)",
-    "ja": "初期化完了後（ミリ秒）（5分まで）",
-    "ko": "초기화 완료 후 (밀리초)(5분까지)",
-    "zh": "After initialization is complete (milliseconds) (up to 5 minutes)",
+    "en": "After initialization is complete (seconds) (up to 5 minutes)",
+    "ja": "初期化完了後（秒）（5分まで）",
+    "ko": "초기화 완료 후(초)(5분까지)",
+    "zh": "After initialization is complete (seconds) (up to 5 minutes)",
     "service_id": "ITM07167"
   },
   "ITM07168": {
@@ -49366,28 +49366,28 @@
   "ITM07169": {
     "en": "CPU Request at initialization start",
     "ja": "初期化開始時のCPU Requrest",
-    "ko": "초기화 시작시 CPU Request",
+    "ko": "초기화 시작 시 CPU Request",
     "zh": "CPU Request at initialization start",
     "service_id": "ITM07169"
   },
   "ITM07170": {
     "en": "CPU Limit at initialization start",
     "ja": "初期化開始時のCPU Limit",
-    "ko": "초기화 시작시 CPU Limit",
+    "ko": "초기화 시작 시 CPU Limit",
     "zh": "CPU Limit at initialization start",
     "service_id": "ITM07170"
   },
   "ITM07171": {
     "en": "CPU Throttle at initialization start",
     "ja": "初期化開始時のCPU Throttle",
-    "ko": "초기화 시작시 CPU Throttle",
+    "ko": "초기화 시작 시 CPU Throttle",
     "zh": "CPU Throttle at initialization start",
     "service_id": "ITM07171"
   },
   "ITM07172": {
     "en": "Memory Request at initialization start",
     "ja": "初期化開始時のメモリ Requrest",
-    "ko": "초기화 시작시 Memory Request",
+    "ko": "초기화 시작 시 Memory Request",
     "zh": "Memory Request at initialization start",
     "service_id": "ITM07172"
   },
@@ -49847,17 +49847,17 @@
     "service_id": "TTL07237"
   },
   "DSC07238": {
-    "en": "There is no pod state information that matches the condition.",
+    "en": "There is no Pod state information that matches the condition.",
     "ja": "条件に合ったPod状態情報がありません。",
-    "ko": "조건에 맞는 파드 상태 정보가 없습니다.",
-    "zh": "There is no pod state information that matches the condition.",
+    "ko": "조건에 맞는 Pod 상태 정보가 없습니다.",
+    "zh": "There is no Pod state information that matches the condition.",
     "service_id": "DSC07238"
   },
   "DSC07239": {
-    "en": "There is no pod state information.",
+    "en": "There is no Pod state information.",
     "ja": "Pod状態情報がありません。",
-    "ko": "파드 상태 정보가 없습니다.",
-    "zh": "There is no pod state information.",
+    "ko": "Pod 상태 정보가 없습니다.",
+    "zh": "There is no Pod state information.",
     "service_id": "DSC07239"
   },
   "BTN07240": {
@@ -49993,6 +49993,41 @@
     "zh": "subscribe to the WhaTap service",
     "service_id": "_07258"
   },
+  "DSC07259": {
+    "en": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
+    "ja": "新しいポッド初期化パフォーマンスは、WhaTap ノード エージェントのバージョン <strong>{minVersion}</strong> 以降で提供されます。 新しいメニューを使用するにはエージェントを更新してください。 (現在のバージョン: {currVersion})",
+    "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 초기화 성능을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
+    "zh": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
+    "service_id": "DSC07259"
+  },
+  "DSC07260": {
+    "en": "To use the {menu_title} menu, the following settings are required.",
+    "ja": "{menu_title} メニューを使用するには、次の設定が必要です。",
+    "ko": "{menu_title} 메뉴를 사용하기 위해서는 다음과 같은 설정이 필요합니다.",
+    "zh": "To use the {menu_title} menu, the following settings are required.",
+    "service_id": "DSC07260"
+  },
+  "CNT07261": {
+    "en": "Agent version {agent_version} or higher",
+    "ja": "エージェントバージョン{agent_version}以降",
+    "ko": "에이전트 버전 {agent_version} 이상",
+    "zh": "Agent version {agent_version} or higher",
+    "service_id": "CNT07261"
+  },
+  "CNT07262": {
+    "en": "Restart the agent after setting the following options in whatap.conf",
+    "ja": "whatap.confで次のオプションを設定した後のエージェントの再起動",
+    "ko": "whatap.conf에 다음 옵션 설정 후 에이전트 재기동",
+    "zh": "Restart the agent after setting the following options in whatap.conf",
+    "service_id": "CNT07262"
+  },
+  "CNT07263": {
+    "en": "#Data collection at 05:00",
+    "ja": "#05時にデータ収集",
+    "ko": "#05시에 데이터 수집",
+    "zh": "#Data collection at 05:00",
+    "service_id": "CNT07263"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -50058,5 +50093,10 @@
     "ko": "실행중 TX",
     "zh": "活动TX。",
     "service_id": "_00297"
+  },
+  "logTail": {
+    "en": "Live Tail",
+    "ja": "ログTail",
+    "ko": "라이브 테일"
   }
 }
