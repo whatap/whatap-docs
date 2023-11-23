@@ -3032,14 +3032,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_22',
+                id: 'release-notes/java/java-2_2_23',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_22',
+                  id: 'release-notes/java/java-2_2_23',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_22',
                 'release-notes/java/java-2_2_21',
                 'release-notes/java/java-2_2_20',
                 'release-notes/java/java-2_2_19',
@@ -3048,7 +3049,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_16',
                 'release-notes/java/java-2_2_15',
                 'release-notes/java/java-2_2_14',
-                'release-notes/java/java-2_2_13',
                 'release-notes/java/java-previous',
               ],
             },
