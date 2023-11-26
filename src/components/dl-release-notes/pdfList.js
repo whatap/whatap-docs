@@ -1,5 +1,11 @@
 const svList = [
     {
+        "name": 'Service-1.112.x',
+        "date": '2023-11-17',
+        "url": '/pdf/release-notes/service-1.112.x.pdf',
+        "docs": '/release-notes/service/service-1_112_x'
+    },
+    {
         "name": 'Service-1.110.x',
         "date": '2023-10-25',
         "url": '/pdf/release-notes/service-1.110.x.pdf',
@@ -178,6 +184,18 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.23',
+        "date": '2023-11-22',
+        "url": '/pdf/release-notes/java-agent-v2.2.23.pdf',
+        "docs": '/release-notes/java/java-2_2_23',
+    },
+    {
+        "name": 'Java-agent-v2.2.22',
+        "date": '2023-11-16',
+        "url": '/pdf/release-notes/java-agent-v2.2.22.pdf',
+        "docs": '/release-notes/java/java-2_2_22',
+    },
+    {
         "name": 'Java-agent-v2.2.21',
         "date": '2023-11-02',
         "url": '/pdf/release-notes/java-agent-v2.2.21.pdf',
@@ -345,6 +363,12 @@ const javaBatchList = [
 ]
 
 const phpList = [
+    {
+        "name": 'php-agent-v2.6.3',
+        "date": '2023-11-22',
+        "url": '/pdf/release-notes/php-agent-v2.6.3.pdf',
+        "docs": '/release-notes/php/php-2_6_3',
+    },
     {
         "name": 'php-agent-v2.6.2',
         "date": '2023-09-13',
@@ -682,6 +706,12 @@ const dotnetList = [
 
 const goList = [
     {
+        "name": 'Go-agent-v0.2.4',
+        "date": '2023-11-22',
+        "url": '/pdf/release-notes/Go-agent-v0.2.4.pdf',
+        "docs": '/release-notes/golang/golang-0_2_4',
+    },
+    {
         "name": 'Go-agent-v0.2.3',
         "date": '2023-09-13',
         "url": '/pdf/release-notes/Go-agent-v0.2.3.pdf',
@@ -922,6 +952,24 @@ const serverList = [
 
 const k8sList = [
     {
+        "name": "Kubernetes-agent-v1.4.4",
+        "date": "2023-11-22",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.4.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_4"
+    },
+    {
+        "name": "Kubernetes-agent-v1.4.3",
+        "date": "2023-11-21",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.3.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_3"
+    },
+    {
+        "name": "Kubernetes-agent-v1.4.2",
+        "date": "2023-11-15",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.2.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_2"
+    },
+    {
         "name": "Kubernetes-agent-v1.4.1",
         "date": "2023-11-08",
         "url": "/pdf/release-notes/k8s-agent-v1.4.1.pdf",
@@ -1122,6 +1170,12 @@ const k8sList = [
 ];
 
 const dbxList = [
+    {
+        "name": "DBX-agent-v1.6.13",
+        "date": "2023-11-03",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.13.pdf",
+        "docs": "release-notes/db/dbx-1_6_13"
+    },
     {
         "name": "DBX-agent-v1.6.12",
         "date": "2023-10-13",
