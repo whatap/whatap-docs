@@ -1,13 +1,14 @@
 .fbsharebutton {
   height: 100%;
-  margin-top: 50px;
+  margin-top: 15px;
   position: fixed;
+  cursor: pointer;
 }
 .fb_xfbml_parse_ignore {
   cursor: pointer;
   width: fit-content;
   width: -moz-fit-content;
-  min-width: 64px;
+  min-width: 84.47px;
   height: 26px;
   line-height: 100%;
   border: none;

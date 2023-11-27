@@ -421,5 +421,37 @@
   "whatap_plugin.sharefacebook": {
     "message": "Shared",
     "description": "Sharing this page"
+  },
+  "components.feedback.sendfeedback": {
+    "message": "Feedback",
+    "description": "send feedback"
+  },
+  "components.feedback.submit": {
+    "message": "Submit",
+    "description": "Submit a survey"
+  },
+  "components.feedback.question": {
+    "message": "Was this doc helpful?",
+    "description": "Was this doc helpful?"
+  },
+  "components.feedback.details": {
+    "message": "Tell us more",
+    "description": "Tell us more"
+  },
+  "components.feedback.email": {
+    "message": "Please leave your email address and we will give you feedback. (Option)",
+    "description": "Please leave your email address and we will give you feedback."
+  },
+  "component.feedback.complete": {
+    "message": "You have successfully sent your feedback.",
+    "description": "complete sending feedback!"
+  },
+  "components.feedback.emaildesciption": {
+    "message": "We'll only use this email for follow-up questions about your feedback",
+    "description": "We'll only use this email for follow-up questions about your feedback."
+  },
+  "components.feedback.sendfeedbackTitle": {
+    "message": "Send Feedback",
+    "description": "send feedback"
   }
 }
