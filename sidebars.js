@@ -3265,17 +3265,18 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_6_13',
+                id: 'release-notes/db/dbx-1_6_14',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_6_13',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-1_6_14',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-1_6_13',
                 'release-notes/db/dbx-1_6_12',
                 'release-notes/db/dbx-1_6_11',
                 'release-notes/db/dbx-1_6_10',
