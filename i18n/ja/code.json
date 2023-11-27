@@ -421,5 +421,37 @@
   "whatap_plugin.sharefacebook": {
     "message": "共有",
     "description": "Sharing this page"
+  },
+  "components.feedback.sendfeedback": {
+    "message": "Feedback",
+    "description": "send feedback"
+  },
+  "components.feedback.submit": {
+    "message": "提出する",
+    "description": "Submit a survey"
+  },
+  "components.feedback.question": {
+    "message": "このドキュメントは役に立ちましたか?",
+    "description": "Was this doc helpful?"
+  },
+  "components.feedback.details": {
+    "message": "もっとお聞かせください",
+    "description": "Tell us more"
+  },
+  "components.feedback.email": {
+    "message": "メールアドレスを残してください。フィードバックをお送りします。 （オプション）",
+    "description": "Please leave your email address and we will give you feedback."
+  },
+  "component.feedback.complete": {
+    "message": "フィードバック送信が完了しました。",
+    "description": "complete sending feedback!"
+  },
+  "components.feedback.emaildesciption": {
+    "message": "電子メールは、あなたのフィードバックに対する後続の回答にのみ使用されます。",
+    "description": "We'll only use this email for follow-up questions about your feedback."
+  },
+  "components.feedback.sendfeedbackTitle": {
+    "message": "フィードバックを送信",
+    "description": "send feedback"
   }
 }

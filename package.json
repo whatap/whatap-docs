@@ -53,9 +53,11 @@
     "puppeteer": "^18.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-google-forms-hooks": "^1.2.4",
     "rehype-table-merge": "^1.0.1",
     "sass": "^1.58.3",
     "sharp": "^0.32.6",
+    "styled-components": "^6.1.1",
     "swc-loader": "^0.2.3"
   },
   "devDependencies": {

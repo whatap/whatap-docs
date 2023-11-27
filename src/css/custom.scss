@@ -391,6 +391,10 @@ html[lang='ja-JP'] {
 } 
 .theme-doc-footer-edit-meta-row {
   display: block;
+  div[class*="btnwrapper"] {
+    display: none;
+    margin-top: 0;
+  }
 }
 details.feedback[open] summary {
   background: url('img/ic-arrow-up.svg') no-repeat right 0px;
@@ -1915,6 +1919,18 @@ main {
       margin-top: -15px;
       margin-bottom: 9px;
       position: relative;
+    }
+    .col--3 {
+      display: none;
+    }
+  }
+  .theme-doc-footer-edit-meta-row {
+    div[class*="btnwrapper"] {
+      display: contents;
+      margin-top: 0;
+    }
+    div[class*="modalcontent"] {
+      width: 70%;
     }
   }
 }
