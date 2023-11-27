@@ -5406,6 +5406,11 @@ const sidebars = {
           id: 'log/log-parser',
         },
         {
+          type: 'doc',
+          label: '로그 처리하기',
+          id: 'log/log-process',
+        },
+        {
           type: 'category',
           label: '주요 메뉴 알아보기',
           collapsible: true,
