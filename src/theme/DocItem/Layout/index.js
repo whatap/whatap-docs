@@ -13,6 +13,7 @@ import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import styles from './styles.module.css';
 import FacebookShare from '@site/src/components/facebook';
 import PrintPDF from '@site/src/components/printpage/PrintPage';
+import Feedback from '@site/src/components/Feedback';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -54,6 +55,7 @@ export default function DocItemLayout({children}) {
         {docTOC.desktop}
         <FacebookShare />
         <PrintPDF/>
+        <Feedback/>
       </div>
     </div>
   );

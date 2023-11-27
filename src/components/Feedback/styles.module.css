@@ -1,20 +1,31 @@
-.widget .grid {
+.btnwrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  min-height: 50px;
+  justify-content: center;
+  margin-top: 100px;
+  position: fixed;
 }
-.widget .cell {
-  width: 50px;
+
+.modalopenbutton, .modalclosebtn {
+  cursor: pointer;
+  margin-left: auto;
 }
-.widget .reaction {
+
+.modalcontainer {
   width: 100%;
-  border: black 1px solid;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
-.widget .reaction:hover {
-  border: black 1px solid;
-}
-.widget .footer {
-  margin-top: 10px;
-  margin-left: 0;
+
+.modalcontent {
+  background-color: #ffffff;
+  width: 250px;
+  height: 150px;
+  padding: 15px;
 }

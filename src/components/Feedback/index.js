@@ -1,58 +1,139 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useRef } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import styles from './styles.module.css';
 import Translate, { translate } from "@docusaurus/Translate";
+import { GoogleFormProvider, useGoogleForm, useShortAnswerInput } from 'react-google-forms-hooks'
+import form from './form.json'
 
-export default function Feedback({ resource }) {
-  const [reaction, setReaction] = useState(null);
+import CheckboxInput from './components/CheckboxInput'
+import RadioInput from './components/RadioInput'
+import ShortAnswerInput from './components/ShortAnswerInput'
+import LongAnswerInput from './components/LongAnswerInput'
+import RadioGridInput from './components/RadioGridInput'
+import CheckboxGridInput from './components/CheckboxGridInput'
+import DropdownInput from './components/DropdownInput'
+import LinearGrid from './components/LinearGrid'
 
-  const isReacted = reaction === 'Yes' || reaction === 'No';
-  const _resource = String(resource).replace(/\//g, '-');
-  
-  if (!ExecutionEnvironment.canUseDOM) {
-    return null;
-  }
-  
-  const handleReaction = (params) => {
-    setReaction(params.icon);
-  };
+const Form = styled.form`
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+`
 
-  // useEffect(() => {
-  //   window.HappyReact.init();
-  // }, []);
-  useEffect(() => {
-    if (ExecutionEnvironment.canUseDOM) {
-      window.HappyReact?.init({
-        onReaction: handleReaction,
-      });
-    }
-  }, []);
- 
+const QuestionContainer = styled.div`
+  margin-bottom: 20px;
+`
+
+const QuestionLabel = styled.h3`
+  margin-bottom: 10px;
+`
+
+const QuestionHelp = styled.p`
+  font-size: 0.8rem;
+  color: #5c5c5c;
+  margin-top: 0px;
+`
+
+const Questions = () => {
   return (
-    <details class='feedback'>
-      <summary>
-        {
-          translate({
-            id: "Feedback.feedbackMessage",
-            message: "이 페이지가 마음에 드셨나요?",
-            description: "Was this page helpful?",
-          })
+    <div>
+      {form.fields.map((field) => {
+        const { id } = field
+
+        let questionInput = null
+        switch (field.type) {
+          case 'CHECKBOX':
+            questionInput = <CheckboxInput id={id} />
+            break
+          case 'RADIO':
+            questionInput = <RadioInput id={id} />
+            break
+          case 'SHORT_ANSWER':
+            questionInput = <ShortAnswerInput id={id} />
+            break
+          case 'LONG_ANSWER':
+            questionInput = <LongAnswerInput id={id} />
+            break
+          case 'RADIO_GRID':
+            questionInput = <RadioGridInput id={id} />
+            break
+          case 'CHECKBOX_GRID':
+            questionInput = <CheckboxGridInput id={id} />
+            break
+          case 'DROPDOWN':
+            questionInput = <DropdownInput id={id} />
+            break
+          case 'LINEAR':
+            questionInput = <LinearGrid id={id} />
+            break
         }
-      </summary>
-      <div className={styles.root}>
-        <div
-          className={styles.widget}
-          data-hr-token="5f7b0825-7f1b-4400-9bbd-c483b64bb060"
-          data-hr-resource={resource}
-          data-hr-styles={JSON.stringify({
-            container: styles.container,
-            grid: styles.grid,
-            cell: styles.cell,
-            reaction: styles.reaction,
-            footer: styles.footer
-          })}
-        />
-      </div>
-    </details>
-  );
+
+        if (!questionInput) {
+          return null
+        }
+
+        return (
+          <QuestionContainer key={id}>
+            <QuestionLabel>{field.label}</QuestionLabel>
+            {questionInput}
+            <QuestionHelp>{field.description}</QuestionHelp>
+          </QuestionContainer>
+        )
+      })}
+    </div>
+  )
 }
+
+const App = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const modalBackground = useRef();
+  const methods = useGoogleForm({ form })
+  const onSubmit = async (data) => {
+    console.log('>>> Here is the data', data)
+    await methods.submitToGoogleForms(data)
+    alert('Form submitted with success!')
+  }
+
+  console.log('>>> Here are the errors!!!', methods.formState.errors)
+
+  return (
+    <>
+      <div className={styles.btnwrapper}>
+        <button className={styles.modalopenbtn} onClick={() => setModalOpen(true)}>
+          모달 열기
+        </button>
+      </div>
+      {
+        modalOpen &&
+        <div className={styles.modalcontainer} ref={modalBackground} onClick={e => {
+          if (e.target === modalBackground.current) {
+            setModalOpen(false);
+          }
+        }}>
+          <div className={styles.modalcontent}>
+            <p>리액트로 모달 구현하기</p>
+            <GoogleFormProvider {...methods}>
+              <Form onSubmit={methods.handleSubmit(onSubmit)}>
+                {form.title && (
+                  <>
+                    <h1>{form.title}</h1>
+                    {form.description && (
+                      <p style={{ fontSize: '.8rem' }}>{form.description}</p>
+                    )}
+                  </>
+                )}
+                <Questions />
+                <button type='submit'>Submeter</button>
+              </Form>
+            </GoogleFormProvider>
+            <button className={styles.modalclosebtn} onClick={() => setModalOpen(false)}>
+              모달 닫기
+            </button>
+          </div>
+        </div>
+      }
+    </>
+  );
+};
+
+export default App;
