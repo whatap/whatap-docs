@@ -3057,17 +3057,18 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java-batch/java-batch-2_2_20',
+                id: 'release-notes/java-batch/java-batch-2_2_21',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_20',
-                  // className: 'new',
+                  id: 'release-notes/java-batch/java-batch-2_2_21',
+                  className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_20',
                 'release-notes/java-batch/java-batch-2_2_19'
               ],
             },
