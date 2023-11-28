@@ -29659,9 +29659,9 @@
     "service_id": "_04312"
   },
   "master_alert_template_3": {
-    "en": "Assignable node notification",
-    "ja": "割当て可能ノードのアラート通知",
-    "ko": "할당 가능 노드 알림",
+    "en": "Unassignable node notification",
+    "ja": "割当て不能ノードのアラート通知",
+    "ko": "할당 불가능 노드 알림",
     "zh": "Assignable node notification",
     "service_id": "_04313"
   },
@@ -34353,7 +34353,7 @@
     "ja": "発生回数",
     "ko": "발생 횟수",
     "zh": "Number of event",
-    "service_id": "_04986"
+    "service_id": "TTL04986"
   },
   "metrics_number_of_event_help_off": {
     "en": "Receive notifications when events occur as many times as you enter during a selected time.",
@@ -49967,35 +49967,35 @@
   },
   "LNK07255": {
     "en": "Go to Node list",
-    "ja": "ノードリストに移動",
+    "ja": "ノードリストへ",
     "ko": "노드 목록으로 이동",
     "zh": "Go to Node list",
     "service_id": "LNK07255"
   },
   "LNK07256": {
     "en": "Go to Pod list",
-    "ja": "Podリストに移動",
+    "ja": "Podリストへ",
     "ko": "Pod 목록으로 이동",
     "zh": "Go to Pod list",
     "service_id": "LNK07256"
   },
   "LNK07257": {
     "en": "Go to Container list",
-    "ja": "コンテナリストに移動",
+    "ja": "コンテナリストへ",
     "ko": "컨테이너 목록으로 이동",
     "zh": "Go to Container list",
     "service_id": "LNK07257"
   },
   "subscribe_whatap": {
     "en": "subscribe to the WhaTap service",
-    "ja": "WhaTapサービスへの有料変換",
+    "ja": "有料サービスへの転換",
     "ko": "WhaTap 서비스에 유료 전환",
     "zh": "subscribe to the WhaTap service",
     "service_id": "_07258"
   },
   "DSC07259": {
     "en": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
-    "ja": "新しいポッド初期化パフォーマンスは、WhaTap ノード エージェントのバージョン <strong>{minVersion}</strong> 以降で提供されます。 新しいメニューを使用するにはエージェントを更新してください。 (現在のバージョン: {currVersion})",
+    "ja": "新規Pod性能機能は、WhaTapノードエージェントのバージョン <strong>{minVersion}</strong> 以降から提供します。 追加された機能を使用するには、エージェントをアップデートしてください。 (現行のバージョン: {currVersion})",
     "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 초기화 성능을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "service_id": "DSC07259"
@@ -50016,7 +50016,7 @@
   },
   "CNT07262": {
     "en": "Restart the agent after setting the following options in whatap.conf",
-    "ja": "whatap.confで次のオプションを設定した後のエージェントの再起動",
+    "ja": "whatap.confから次のオプションを設定してからエージェントを再起動します。",
     "ko": "whatap.conf에 다음 옵션 설정 후 에이전트 재기동",
     "zh": "Restart the agent after setting the following options in whatap.conf",
     "service_id": "CNT07262"
@@ -50027,6 +50027,160 @@
     "ko": "#05시에 데이터 수집",
     "zh": "#Data collection at 05:00",
     "service_id": "CNT07263"
+  },
+  "DSC07264": {
+    "en": "The <strong style={htmlStyle}>{proxyPort} port</strong> must be open to transfer data to <strong style={htmlStyle}>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
+    "ja": "<strong style={htmlStyle}> WhaTap Server {proxyServer}</strong>へデータを転送するには、<strong style={htmlStyle}> {proxyPort}番のポート</strong>を開く必要があります。 (TCP Outbound)",
+    "ko": "<strong style={htmlStyle}>WhaTap Server {proxyServer}</strong>로 데이터를 전송하기 위해 <strong style={htmlStyle}>{proxyPort}포트</strong>가 열려 있어야 합니다. (TCP Outbound)",
+    "zh": "The <strong style={htmlStyle}>{proxyPort} port</strong> must be open to transfer data to <strong style={htmlStyle}>WhaTap Server {proxyServer}</strong>. (TCP Outbound)",
+    "service_id": "DSC07264"
+  },
+  "TTL07265": {
+    "en": "installation guide",
+    "ja": "インストールガイド",
+    "ko": "설치 안내",
+    "zh": "installation guide",
+    "service_id": "TTL07265"
+  },
+  "BTN07266": {
+    "en": "Install Kubernetes agent",
+    "ja": "Kubernetesエージェントのインストール",
+    "ko": "쿠버네티스 에이전트 설치",
+    "zh": "Install Kubernetes agent",
+    "service_id": "BTN07266"
+  },
+  "BTN07267": {
+    "en": "Install application agent",
+    "ja": "Applicatonエージェントのインストール",
+    "ko": "애플리케이션 에이전트 설치",
+    "zh": "Install application agent",
+    "service_id": "BTN07267"
+  },
+  "ITM07268": {
+    "en": "Kubernetes version {version} or higher",
+    "ja": "Kubernetesバージョン{version}以降",
+    "ko": "쿠버네티스 버전 {version} 이상",
+    "zh": "Kubernetes version {version} or higher",
+    "service_id": "ITM07268"
+  },
+  "ITM07269": {
+    "en": "Kubernetes version {version} or higher (GPU version)",
+    "ja": "Kubernetesバージョン{version}以降（GPUバージョン）",
+    "ko": "쿠버네티스 버전 {version} 이상(GPU 버전)",
+    "zh": "Kubernetes version {version} or higher (GPU version)",
+    "service_id": "ITM07269"
+  },
+  "ITM07270": {
+    "en": "Kubernetes version less than {version}",
+    "ja": "Kubernetesバージョン{version}未満",
+    "ko": "쿠버네티스 버전 {version} 미만",
+    "zh": "Kubernetes version less than {version}",
+    "service_id": "ITM07270"
+  },
+  "ITM07271": {
+    "en": "Kubernetes version lower than {version} (GPU version)",
+    "ja": "Kubernetesバージョン{version}未満（GPUバージョン）",
+    "ko": "쿠버네티스 버전 {version} 미만(GPU 버전)",
+    "zh": "Kubernetes version lower than {version} (GPU version)",
+    "service_id": "ITM07271"
+  },
+  "BTN07272": {
+    "en": "Download YAML file",
+    "ja": "YAMLファイルのダウンロード",
+    "ko": "YAML 파일 다운로드",
+    "zh": "Download YAML file",
+    "service_id": "BTN07272"
+  },
+  "DSC07273": {
+    "en": "Kubernetes agent installation is not complete.",
+    "ja": "Kubernetesエージェントのインストールが完了していません。",
+    "ko": "쿠버네티스 에이전트 설치가 완료되지 않았습니다.",
+    "zh": "Kubernetes agent installation is not complete.",
+    "service_id": "DSC07273"
+  },
+  "DSC07274": {
+    "en": "Please install the Kubernetes agent for normal monitoring.",
+    "ja": "モニタリングを正常に行うために、Kubernetesエージェントをインストールしてください。",
+    "ko": "정상적인 모니터링을 위해 쿠버네티스 에이전트를 설치해주세요.",
+    "zh": "Please install the Kubernetes agent for normal monitoring.",
+    "service_id": "DSC07274"
+  },
+  "DSC07275": {
+    "en": "The Kubernetes agent has been installed successfully.",
+    "ja": "Kubernetesエージェントを正常にインストールしました。",
+    "ko": "쿠버네티스 에이전트가 정상적으로 설치 되었습니다.",
+    "zh": "The Kubernetes agent has been installed successfully.",
+    "service_id": "DSC07275"
+  },
+  "DSC07276": {
+    "en": "If you need to install an application agent, please click the button below.",
+    "ja": "Applicatonエージェントをインストールするなら、下のボタンをクリックしてください。",
+    "ko": "애플리케이션 에이전트를 설치가 필요하다면 아래 버튼을 눌러주세요.",
+    "zh": "If you need to install an application agent, please click the button below.",
+    "service_id": "DSC07276"
+  },
+  "DSC07277": {
+    "en": "Application agent installation is not complete.",
+    "ja": "Applicatonエージェントのインストールが完了していません。",
+    "ko": "애플리케이션 에이전트 설치가 완료되지 않았습니다.",
+    "zh": "Application agent installation is not complete.",
+    "service_id": "DSC07277"
+  },
+  "DSC07278": {
+    "en": "If you need to install the Kubernetes agent, please click the button below.",
+    "ja": "Kubernetesエージェントをインストールするなら、下のボタンをクリックしてください。",
+    "ko": "쿠버네티스 에이전트 설치가 필요하다면 아래 버튼을 눌러주세요.",
+    "zh": "If you need to install the Kubernetes agent, please click the button below.",
+    "service_id": "DSC07278"
+  },
+  "DSC07279": {
+    "en": "Please install the application agent for normal monitoring.",
+    "ja": "モニタリングを正常に行うために、Applicatonエージェントをインストールしてください。",
+    "ko": "정상적인 모니터링을 위해 애플리케이션 에이전트를 설치해주세요.",
+    "zh": "Please install the application agent for normal monitoring.",
+    "service_id": "DSC07279"
+  },
+  "DSC07280": {
+    "en": "The application agent has been installed successfully.",
+    "ja": "Applicatonエージェントを正常にインストールしました。",
+    "ko": "애플리케이션 에이전트가 정상적으로 설치 되었습니다.",
+    "zh": "The application agent has been installed successfully.",
+    "service_id": "DSC07280"
+  },
+  "DSC07281": {
+    "en": "Start monitoring your applications.",
+    "ja": "Applicatonのモニタリングを開始します。",
+    "ko": "애플리케이션 모니터링을 시작해보세요.",
+    "zh": "Start monitoring your applications.",
+    "service_id": "DSC07281"
+  },
+  "TTL07282": {
+    "en": "Event rule & target settings",
+    "ja": "イベント発生条件と対象の設定",
+    "ko": "발생 조건 & 대상 설정",
+    "zh": "Event rule & target settings",
+    "service_id": "TTL07282"
+  },
+  "DSC07283": {
+    "en": "When entering event conditions and targets, an error may occur  <br/>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered.  <br/>\nSelect the <b>Typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
+    "ja": "イベント発生条件と対象を入力する時に特殊文字(~!@#$%^&*()_+=-[]`)が含まれたり、数字で始まるフィールド名を入力したりするとエラーが発生することがあります。 <br/>\n<b>直接入力</b>オプションを選択し、例のように中括弧（$ {}）で囲んで入力します。",
+    "ko": "이벤트 발생조건과 대상 입력시 특수문자(~!@#$%^&*()_+=-[]`)가 포함되거나  <br/>\n숫자로 시작하는 필드명을 입력하면 오류가 발생할 수 있습니다.  <br/>\n<b>직접 입력</b> 옵션을 선택한 다음 예시와 같이 중괄호(${})로 묶어서 입력하세요.",
+    "zh": "When entering event conditions and targets, an error may occur <br>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered. <br/>\nSelect the <b>Typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
+    "service_id": "DSC07283"
+  },
+  "DSC07284": {
+    "en": "Please enter the event target.",
+    "ja": "イベント対象を入力してください。",
+    "ko": "이벤트 대상을 입력해 주세요.",
+    "zh": "Please enter the event target.\n",
+    "service_id": "DSC07284"
+  },
+  "DSC07285": {
+    "en": "If you do not enter an event target, many unintended notifications can occur. <br/>\nIf you narrow down the scope of the event target, you can only receive necessary notifications.",
+    "ja": "イベント対象を入力しないと、意図しない通知が多数発生する可能性があります。 <br/>\nイベント対象の範囲を指定すると、必要な通知だけを受け取ることができます。",
+    "ko": "이벤트 대상을 입력하지 않으면 의도치 않은 많은 알림이 발생할 수 있습니다. <br/>\n이벤트 대상의 범위를 좁히면 꼭 필요한 알림만 수신할 수 있습니다.",
+    "zh": "If you do not enter an event target, many unintended notifications can occur. <br/>\nIf you narrow down the scope of the event target, you can only receive necessary notifications.",
+    "service_id": "DSC07285"
   },
   "": {
     "": "",
