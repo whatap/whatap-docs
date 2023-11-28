@@ -2861,6 +2861,7 @@ const sidebars = {
                 id: 'mongodb/metrics-intro'
               },
               items: [
+                'mongodb/metrics-data-list',
                 'mongodb/metrics-chart',
                 'mongodb/metrics-detect-anormal',
               ]
