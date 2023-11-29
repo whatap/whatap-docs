@@ -50182,6 +50182,20 @@
     "zh": "If you do not enter an event target, many unintended notifications can occur. <br/>\nIf you narrow down the scope of the event target, you can only receive necessary notifications.",
     "service_id": "DSC07285"
   },
+  "BTN07286": {
+    "en": "Add license",
+    "ja": "ライセンスの追加",
+    "ko": "라이선스 추가",
+    "zh": "Add license",
+    "service_id": "BTN07286"
+  },
+  "BTN07287": {
+    "en": "Edit license",
+    "ja": "編集ライセンス",
+    "ko": "라이선스 수정",
+    "zh": "Edit license",
+    "service_id": "BTN07287"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -50252,5 +50266,25 @@
     "en": "Live Tail",
     "ja": "ログTail",
     "ko": "라이브 테일"
+  },
+  "podList": {
+    "en": "Pod List",
+    "ja": "Podリスト",
+    "ko": "Pod 목록"
+  },
+  "containerizedAppList": {
+    "en": "Application List",
+    "ja": "アプリケーションリスト",
+    "ko": "애플리케이션 목록"
+  },
+  "containerImages": {
+    "en": "Container Images",
+    "ja": "コンテナイメージ",
+    "ko": "컨테이너 이미지"
+  },
+  "correlatedProjectManagement": {
+    "en": "Correlated Project Management",
+    "ja": "相関プロジェクト管理",
+    "ko": "연계 프로젝트 관리"
   }
 }
