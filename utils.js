@@ -130,6 +130,30 @@ function colsToJson(data){
     "ko": "라이브 테일"
   }
 
+  rd["podList"] = {
+    "en": "Pod List",
+    "ja": "Podリスト",
+    "ko": "Pod 목록"
+  }
+
+  rd["containerizedAppList"] = {
+    "en": "Application List",
+    "ja": "アプリケーションリスト",
+    "ko": "애플리케이션 목록"
+  }
+
+  rd["containerImages"] = {
+    "en": "Container Images",
+    "ja": "コンテナイメージ",
+    "ko": "컨테이너 이미지"
+  }
+
+  rd["correlatedProjectManagement"] = {
+    "en": "Correlated Project Management",
+    "ja": "相関プロジェクト管理",
+    "ko": "연계 프로젝트 관리"
+  }
+
   return rd;
 }
 

@@ -11,6 +11,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace}) => {
     } else {
         oText = whatapLocale[sid][`${currentLocale}`];
     }
+    if (sid == "TTL06865") {
+        oText = whatapLocale[sid][`${currentLocale}`].toUpperCase();
+    }
     const uiText = oText;
     return (
         <span class={className} id={anchor}>{uiText}</span>
