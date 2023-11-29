@@ -112,7 +112,7 @@ const App = () => {
     setModalOpen(false);
   }
 
-  console.log('>>> Here are the errors!!!', methods.formState.errors)
+  // console.log('>>> Here are the errors!!!', methods.formState.errors)
 
   return (
     <>
