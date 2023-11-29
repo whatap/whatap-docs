@@ -3159,7 +3159,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/dotnet-2_2_0',
@@ -3168,7 +3168,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_2_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_1_9',
                 'release-notes/dotnet/dotnet-2_1_8',
@@ -3215,17 +3215,18 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_4_4',
+                id: 'release-notes/server/server-2_4_5',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_4_4',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2_4_5',
+                  className: 'new',
                 },
+                'release-notes/server/server-2_4_4',
                 'release-notes/server/server-2_4_3',
                 'release-notes/server/server-2_4_2',
                 'release-notes/server/server-2_4_1',
@@ -3234,7 +3235,6 @@ const sidebars = {
                 'release-notes/server/server-2_3_8',
                 'release-notes/server/server-2_3_7',
                 'release-notes/server/server-2_3_6',
-                'release-notes/server/server-2_3_4',
                 'release-notes/server/server-previous',
               ],
             },
