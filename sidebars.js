@@ -2957,10 +2957,14 @@ const sidebars = {
       label: '릴리스 노트 - Preview',
       collapsible: false,
       collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'release-notes/preview/index',
+      },
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_0_0x', 
+          id: 'release-notes/preview/preview-2_0_0x',
           className: 'new',
         },
         'release-notes/preview/preview-1_113_x',
