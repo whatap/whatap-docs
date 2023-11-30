@@ -1,0 +1,12 @@
+<svg class="SVGInline-svg" style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#757575">
+            <g>
+                <g>
+                    <path d="M5 3v15.999L21 19v2l-16-.001V21H3V3h2zm16 3v2.5l-7.891 7.288-2.848-2.63L6 17.091v-2.5l4.26-3.935 2.849 2.63L21 6z" transform="translate(-452 -2136) translate(40 1851) translate(412 285)"></path>
+                    <path d="M10.5 3v1h-1v4h-1V4h-1V3h3zm3 0c.552 0 1 .448 1 1v3c0 .552-.448 1-1 1h-1c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1h1zm4 0c.552 0 1 .448 1 1v1c0 .552-.448 1-1 1h-1v2h-1V3h2zm-4 1h-1v3h1V4zm4 0h-1v1h1V4z" transform="translate(-452 -2136) translate(40 1851) translate(412 285)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

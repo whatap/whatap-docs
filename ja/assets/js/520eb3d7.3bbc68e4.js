@@ -1,0 +1,11 @@
+"use strict";
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[73940],{
+
+/***/ 86392:
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"label":"OpenAPI","permalink":"/ja/tags/open-api","allTagsPath":"/ja/tags","count":13,"items":[{"id":"apidoc/openapi-call-db","title":"Database","description":"データベースモニタリングプロジェクトのエージェント情報およびパラメータ変動事項、統計情報を照会するためのAPIを提供します。","permalink":"/ja/apidoc/openapi-call-db"},{"id":"apidoc/openapi-mxql","title":"MXQL Open API","description":"Open APIを使用してMXQLデータを表示する方法について説明します。","permalink":"/ja/apidoc/openapi-mxql"},{"id":"openapi","title":"Open API","description":"Open APIを通じて収集中のモニタリング情報を抽出して活用することができます。","permalink":"/ja/openapi"},{"id":"apidoc/openapi-spec","title":"Open APIスペック","description":"Open API 仕様の説明。","permalink":"/ja/apidoc/openapi-spec"},{"id":"apidoc/openapi-call","title":"OpenAPIの呼び出し","description":"プロジェクト関連のOpen API呼び出し方法の説明です。","permalink":"/ja/apidoc/openapi-call"},{"id":"apidoc/openapi-call-apm-spot","title":"Spot情報照会","description":"Spot情報照会（Application）のためのOpenAPIに関する説明を提供します。","permalink":"/ja/apidoc/openapi-call-apm-spot"},{"id":"apidoc/openapi-call-server-spot","title":"Spot情報照会","description":"Spot情報検索(Server)のOpenAPIについて説明します。","permalink":"/ja/apidoc/openapi-call-server-spot"},{"id":"apidoc/openapi-call-project-stat","title":"プロジェクト統計照会","description":"プロジェクト統計情報を表示するためのOpenAPIに関する説明を提供します。","permalink":"/ja/apidoc/openapi-call-project-stat"},{"id":"apidoc/openapi-call-meta","title":"メタ情報照会","description":"メタ情報照会のためのOpenAPIについて説明します。","permalink":"/ja/apidoc/openapi-call-meta"},{"id":"apidoc/openapi-call-short-stat","title":"短期検索","description":"短時間のルックアップ用のOpen API について説明します。","permalink":"/ja/apidoc/openapi-call-short-stat"},{"id":"apidoc/openapi-call-apm-stat-data","title":"統計データの参照","description":"統計データ参照(Application)のためのOpenAPIについて説明します。","permalink":"/ja/apidoc/openapi-call-apm-stat-data"},{"id":"apidoc/openapi-call-server-stat-data","title":"統計データの参照","description":"統計データの参照(Server)のためのOpenAPIに関する説明を提供します。","permalink":"/ja/apidoc/openapi-call-server-stat-data"},{"id":"apidoc/openapi-call-long-stat","title":"長期統計","description":"長期的な統計の参照のためのOpenAPIに関する説明を提供します。","permalink":"/ja/apidoc/openapi-call-long-stat"}]}');
+
+/***/ })
+
+}]);
