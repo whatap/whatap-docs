@@ -1,7 +1,0 @@
-<svg class="SVGInline-svg" style="width: 18px;height: 18px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-    <g fill="none" fill-rule="evenodd" transform="translate(-6 -6)">
-        <circle cx="16" cy="16" r="16"></circle>
-        <path d="M6 6h20v20H6z"></path>
-        <path fill="#757575" d="M11 21.833c0 .917.75 1.667 1.667 1.667h6.666c.917 0 1.667-.75 1.667-1.667v-10H11v10zm10.833-12.5h-2.916l-.834-.833h-4.166l-.834.833h-2.916V11h11.666V9.333z"></path>
-    </g>
-</svg>
