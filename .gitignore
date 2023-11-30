@@ -4,6 +4,7 @@
 /.credentials
 # /node_modules
 sheets.googleapis.com-whatap-locale.json
+docusaurus.config.js
 
 # Generated files
 .docusaurus
