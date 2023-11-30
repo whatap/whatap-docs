@@ -23,6 +23,8 @@ jobs:
 
       - name: update docs
         run: git submodule update --init
+      - name: npm install
+        run: npm install
       - name: Build website
         run: export NODE_OPTIONS="--max-old-space-size=12288" && npm run build --no-minify
 
