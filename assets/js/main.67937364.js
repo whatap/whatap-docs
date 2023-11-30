@@ -40184,6 +40184,13 @@ __webpack_require__.r(__webpack_exports__);
       },
       "options": {}
     },
+    "announcementBar": {
+      "id": "moniday-banner",
+      "content": "<div id=\"moniday-banner\">This is unreleased documentation for WhaTap Docs.</div>",
+      "backgroundColor": "none",
+      "textColor": "#ffffff",
+      "isCloseable": true
+    },
     "metadata": [
       {
         "name": "keywords",
