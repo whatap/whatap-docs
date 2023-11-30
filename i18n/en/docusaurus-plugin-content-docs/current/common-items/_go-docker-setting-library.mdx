@@ -1,0 +1,45 @@
+## Configuring the Go library
+
+Add the [github.com/whatap/go-api](https://github.com/whatap/go-api) package to the Go application source code.
+
+```bash
+go get github.com/whatap/go-api
+```
+
+Configure for initialization and shutdown with the `trace.Init()` and `trace.Shutdown()` functions. Set the startup and end for transactions with the `trace.Start()` and `trace.End()` functions.
+
+```go title='Go'
+import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.    
+    defer trace.Shutdown()    
+
+    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+
+    ...
+
+    trace.End(ctx, err)
+}
+```
+
+<InDoc product='golang'>
+
+:::note
+
+For more information about the library configuration, see [the following](api-guide).
+
+:::
+
+</InDoc>
+
+<InDoc product='kubernetes'>
+
+:::note
+
+For more information about the library configuration, see [the following](../golang/api-guide).
+
+:::
+
+</InDoc>

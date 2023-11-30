@@ -16,28 +16,28 @@ Goエージェントサービスを再起動または一時停止、削除する
 WhaTapエージェント（whata-agent）サービスが実行中またはエラーが発生した場合は、サービスを再起動してください。
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash title='SH'
 $ service whatap-agent restart
 ```
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 ```bash title='SH'
 $ sudo service whatap-agent restart
 ```
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 ```bash title='SH'
 $ sudo service whatap-agent restart
 ```
 
 </TabItem>
-<TabItem value="alpinelinux" label="Alpine Linux">
+<TabItem value="apl" label="Alpine Linux">
 
 ```bash title='SH'
 $ /usr/whatap/agent/whatap-agent stop
@@ -50,28 +50,28 @@ $ /usr/whatap/agent/whatap-agent start
 ## WhaTapエージェントサービスを停止する
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash title='SH'
 $ sudo service whatap-agent stop
 ```
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 ```bash title='SH'
 $ sudo service whatap-agent stop
 ```
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 ```bash title='SH'
 $ sudo service whatap-agent stop
 ```
 
 </TabItem>
-<TabItem value="alpinelinux" label="Alpine Linux">
+<TabItem value="apl" label="Alpine Linux">
 
 ```bash title='SH'
 $ /usr/whatap/agent/whatap-agent stop
@@ -85,28 +85,28 @@ $ /usr/whatap/agent/whatap-agent stop
 GoアプリケーションのソースコードからWhaTapライブラリを削除します。
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash title='SH'
 $ sudo yum remove whatap-agent
 ```
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 ```bash title='SH'
 $ sudo apt-get purge whatap-agent
 ```
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 ```bash title='SH'
 $ sudo yum remove whatap-agent
 ```
 
 </TabItem>
-<TabItem value="alpinelinux" label="Alpine Linux">
+<TabItem value="apl" label="Alpine Linux">
 
 ```bash title='SH'
 $ /usr/whatap/agent/whatap-agent stop

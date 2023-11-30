@@ -489,6 +489,34 @@ Select the **_Fast Index Setting_** tab at the top of **_Log Setting_**. Collect
 | Rule                      | Mandatory      | `*` must be included at least one.             |
 | Enabled                   | Mandatory      | Active or inactive (default value is `true`)   |
 
+## Importing/exporting log settings {#export-import-settings}
+
+You can save common parser settings and <Cmdname sid="fast_index_setting" /> content in json file format, and apply them by importing a json file from other projects. You can reduce the hassle of creating the settings repeatedly for each project.
+
+1.  Add the parser settings and <Cmdname sid="fast_index_setting" /> to a project.
+
+2.  Select **_JSON_** ![Export icon](/img/ico-export.svg) on the upper right of each configuration tab.
+
+3.  On the upper right of the <Cmdname sid="export_json" className="uitext" /> window, select <Cmdname sid="export" className="uitext" />.
+
+4.  The json configuration file is saved on your PC.
+
+5.  Move to another project and then go to the <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" /> menu.
+
+6.  Select the configuration tab where you have exported the json configuration file before, and then select ![Import icon](/img/ico-import.svg).
+
+7.  If the file selection window appears, select the json configuration file saved on your PC.
+
+8.  If the <Cmdname sid="import_json" className="uitext" /> window appears, check the configuration file and then select <Cmdname sid="add_to_list" className="uitext" /> or <Cmdname sid="overwrite" className="uitext" />.
+
+9.  Select <Cmdname sid="save" className="uitext" /> on the upper right of the screen.
+
+:::caution
+
+After importing the json configuration file, you cannot save the imported settings unless you select <Cmdname sid="save" className="uitext" />.
+
+:::
+
 ## Log long-term archive statistics{#log-long-term-archive}
 
 Select the **_Log long-term archive statistics_** tab at the top of **_Log Setting_**. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.

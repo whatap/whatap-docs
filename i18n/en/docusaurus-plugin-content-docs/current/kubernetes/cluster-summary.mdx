@@ -1,0 +1,138 @@
+---
+id: cluster-summary
+title: Cluster Summary
+description: Through the Cluster Summary menu, you can check the Kubernetes object counts for nodes, pods, and containers, and you can also see the related versions within the cluster.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Resources
+  - Cluster
+---
+
+Home > Select Project > **_Resource_** > **_Cluster Summary_**
+
+You can check summary information about the cluster. You can integrate the data separated by the namespace project.
+
+:::note
+
+You can check the **_Cluster summary_** menu only if it is a cluster project.
+
+:::
+
+## Cluster object
+
+You can check versions related to the cluster and the number of Kubernetes objects such as nodes, Pods, and containers within the cluster. 
+
+:::note 
+
+-   You can check the **_cluster version_** when the Kubernetes agent version is 1.4.1 or later.
+
+-   If the Kubernetes agent version is 1.3.6 or later, you can check the following: 
+
+    -   **_kubelet Version_** 
+
+    -   **_Container Runtime_**
+
+:::
+
+<ImgLang img='k8s-resource-cl-sum-co.png' desc='Cluster object' />
+
+#### Cluster Version
+
+-   Data at an interval of 5 seconds. When viewing real-time data, the data is called once every 5 seconds.
+
+#### kubelet Version
+
+-   Data at an interval of 5 seconds. When viewing real-time data, the data is called once every 5 seconds.
+
+#### Container Runtime
+
+-   Data at an interval of 5 seconds. When viewing real-time data, the data is called once every 5 seconds.
+
+#### Number of nodes
+
+-   Data at an interval of 5 seconds. When viewing real-time data, the data is called once every 5 seconds.
+
+#### Number of Pods
+
+-   Data at an interval of 5 seconds. When viewing real-time data, the data is called once every 5 seconds.
+
+-   **_Available Pods_**: Indicates the number of Pods allocated to the node. 
+
+-   **_Unavailable Pods_**: Indicates the number of Pods that are not allocated to the node.
+
+-   **_Desired Pods_**: Indicates the number of intended Pods. 
+
+    > **_Available Pods_** + **_Unavailable Pods_**
+
+#### Number of Containers
+
+-   You can check the number of containers by status. 
+
+-   Data at an interval of 5 seconds. When viewing real-time data, the data is called once every 5 seconds.
+
+#### Kubernetes Object list
+
+-   You can check the Kubernetes object list (**_Deployment_**, **_ReplicaSet_**, **_Namespace_**, **_StatefulSet_**).
+
+-   Data at an interval of 5 minutes. When viewing real-time data, the data is called once every 3 minutes.
+
+#### Object count trend
+
+-   You can see how the number of Kubernetes objects (**_Deployment_**, **_ReplicaSet_**, **_Namespace_**, **_StatefulSet_**) has changed over 24 hours.
+
+-   Data at an interval of 5 minutes. When viewing real-time data, the data is called once every 3 minutes.
+
+## Cluster Integration Information
+
+You can see cluster project information and the Pods, containers, logs, event count, and event list separated by the namespace project.
+
+:::note 
+
+To view the data, the **Read** role is required for the namespace project. 
+
+:::
+
+<ImgLang img='k8s-resource-cl-sum-ci.png' desc='Cluster integrated infomation' />
+
+#### Number of Pods/Containers
+
+You can check the container count and Pod count on a project basis. 
+
+-   **_Number of Containers_** 
+
+    -   **_Total_**: Displays the total number of containers belonging to the cluster. 
+
+    -   **_By State_**: Displays the number of containers in progress by status.
+
+-   **_Number of Pods_**
+
+    -   **_Total_**: Displays the total number of Pods belonging to the cluster. 
+
+    -   **_By Phase_**: Displays the number of Pods in progress by status. 
+
+#### Number of Logs/Events
+
+You can check the numbers of logs, Kubernetes events, and WhaTap alarms on a project basis. 
+
+-   **_Number of Logs_**
+
+    -   **_Last 1 hour_**: Displays the number of log lines accumulated in the last hour. 
+
+    -   **_Last 24 hours_**: Displays the number of log lines accumulated for the day. 
+
+-   **_Kubernetes Number of Events_**
+
+    -   **_Last 1 hour_**: Displays the number of event lines accumulated in the last hour. 
+
+    -   **_Last 24 hours_**: Displays the number of event lines accumulated for the day. 
+
+-   **_WhaTap Number of Alarms_**
+
+    -   **_Last 1 hour_**: Displays the number of alarms delivered in the last hour. 
+
+    -   **_Last 24 hours_**: Displays the number of alarms sent for the day. 
+
+#### Kubernetes Event 5
+
+You can see a list of 3 most recent Kubernetes events that occurred in the cluster project and namespace project.

@@ -11,7 +11,7 @@ tags:
 
 :::note
 
-エージェントは基本**127.0.0.1:6600**TCPサーバーで動作します。Goアプリケーションでデータを受信し、WhaTap収集サーバーにOutbound 6600ポートに転送します。
+エージェントは基本**127.0.0.1:6600**TCPサーバーで動作します。Goアプリケーションからデータを受信し、WhaTap収集サーバーにOutbound 6600ポートに送信します。
 
 :::
 
@@ -34,7 +34,7 @@ WhaTapモニタリングサービスを使用するには、[会員登録](https
 **アクセスキー**が発行されたら、次のコマンドを使用してエージェントをダウンロードしてください。
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash title='SH'
 ## パッケージリポジトリ登録
@@ -45,7 +45,7 @@ $ sudo yum install whatap-agent
 ```
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 ```bash title='SH'
 ## パッケージリポジトリ登録
@@ -59,7 +59,7 @@ $ sudo apt-get install whatap-agent
 ```
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 ```bash title='SH'
 ## パッケージリポジトリ登録
@@ -75,7 +75,7 @@ $ sudo yum install whatap-agent
 ```
 
 </TabItem>
-<TabItem value="alpinelinux" label="Alpine Linux">
+<TabItem value="apl" label="Alpine Linux">
 
 [whatap-agent.tar.gz](https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz)ファイルをダウンロードし、「/」ディレクトリを基準に圧縮して解凍します。_/usr/whatap/agent_ パスにモニタリングファイルを作成します。
 
@@ -195,52 +195,24 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-## Goライブラリーの設定
+<!--Go 라이브러리 설정하기-->
 
-Goアプリケーションのソースコードに[github.com/whatap/go-api](https://github.com/whatap/go-api)パッケージを追加してください。
-
-```bash
-go get github.com/whatap/go-api
-```
-
-`trace.Init()`, `trace.Shutdown()`関数で初期化および終了を設定してください。`trace.Start()」`,`trace.End()`関数でトランザクションの開始終了を設定してください。
-
-```go title='Go'
-import "github.com/whatap/go-api/trace"
-
-func main(){
-    trace.Init(nil)
-    //It must be executed before closing the app.    
-    defer trace.Shutdown()    
-
-    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
-
-    ...
-
-    trace.End(ctx, err)
-}
-```
-
-:::note
-
-ライブラリ設定の詳細については、[次の文書](api-guide)を参照してください。
-
-:::
+{@include: ../common-items/_go-docker-setting-library.mdx}
 
 ## モニタリングの開始
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 アプリケーションサーバーを再起動すると、エージェントが情報収集を開始します。
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 アプリケーションサーバーを再起動すると、エージェントが情報収集を開始します。
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 1.  次のコマンドを実行して、WhaTapエージェントデーモンを実行してください。
 

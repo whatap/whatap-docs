@@ -1,0 +1,278 @@
+---
+id: service-1_114_x
+title: Service 1.114.0
+toc_max_heading_level: 3
+pagination_next: release-notes/service/service-1_112_x
+---
+
+2023年11月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="flexboard" />
+
+-   <Status>Feature</Status>シリーズタイプのウィジェットに補助テーブルを設定した場合、テーブルのカラム露出を変更できるUIを追加
+
+-   <Status>Feature</Status>Apdexウィジェットから選択できるチャートの種類を追加
+
+-   <Status>Changed</Status>統合<Cmdname sid="flexboard" className="uitext" />の<Cmdname sid="hitmap" className="uitext" />ウィジェットに複数のプロジェクトを選択した場合、チャートをドラッグすると表示される<Cmdname sid="TTL06209" className="uitext" />ウィンドウにデータがあるプロジェクトのみをボタンで表示するように変更
+
+-   <Status>Changed</Status>補助テーブルに表現される数字の単位が設定されていない場合、小数点２桁まで表示するように変更
+
+-   <Status>Fixed</Status>Safariブラウザでウィジェット全体の画面動作時にコンテンツが見えない現象を修正
+
+#### <Cmdname sid="sms_maintenance" />
+
+<p><Status>Feature</Status><Cmdname sid="management" className="uitext" />&gt;<Cmdname sid="sms_maintenance" className="uitext" />メニューの機能改善</p>
+
+-   新規メンテナンス計画メニューの追加、新機能のメンテナンス計画機能は<Cmdname sid="BTN07004" className="uitext" />ボタンを選択してください。
+
+-   エージェントごとにメンテナンス計画を追加できる<Cmdname sid="TTL07037" className="uitext" />オプションを追加しました。
+
+-   <Cmdname sid="repeat" className="uitext" />オプションはサーバープロジェクトでも使用できます。
+
+:::info
+
+新規メンテナンス計画の詳細については<Link to="../../management/maintenance#maintenance-v2" target="_blank">次の文書</Link>を参照してください。
+
+:::
+
+#### <Cmdname sid="tag_count" />
+
+<p><Status>Changed</Status><span class="uitext">Fields</span>カラムで<Cmdname sid="show_chart" className="uitext" />機能で表示されるチャートデータを照会したテーブルデータベースに変更</p>
+
+#### <Cmdname sid="event_statistic" />
+
+<p><Status>Feature</Status><Cmdname sid="event_statistic" className="uitext" />&gt;<Cmdname sid="event_history" className="uitext" /> メニューからタイトル以外にもメッセージフィールドに対する検索機能を対応</p>
+
+#### <Cmdname sid="my_usage" />
+
+-   <Status>Feature</Status><Cmdname sid="billingPreview" className="uitext" />メニューで使用量を決めるオプションの追加と金額表示の改善
+
+-   <Status>Fixed</Status><Cmdname sid="project_subscription" className="uitext" />メニューからデータが<code>null</code>ならば発生するホワイトアウト現象の修正
+
+-   <Status>Fixed</Status><Cmdname sid="payment_information" className="uitext" />メニューからプロモーションクリック領域の修正
+
+-   <Status>Fixed</Status><Cmdname sid="payment_information" className="uitext" />メニューから<Cmdname sid="billing_reception_info" className="uitext" />項目修正時に連絡先入力欄を削除(<Cmdname sid="payment_method" className="uitext" />の連絡先入力と重複）
+
+#### User Interface
+
+-   <Status>Fixed</Status><Cmdname sid="manage_account_info" className="uitext" />メニューでマルチファクター認証時ブラウザサイズが特定ピクセル以下の場合、QRコード領域のスタイルが壊れる現象を修正
+
+-   <Status>Fixed</Status><Cmdname sid="real_time_alert_list" className="uitext" />メニューから <Cmdname sid="groupby" className="uitext" />オプションを活性化すると、表示されるテーブルの視眼性の改善
+
+-   <Status>Fixed</Status><Cmdname sid="project_list" className="uitext" />を <Cmdname sid="compact_card_view" className="uitext" />に設定するとURLプロジェクトカードの一部内容がカットされる現象を修正
+
+* * *
+
+### `Application`
+
+#### <Cmdname sid="application_dashboard" />
+
+-   <Status>Changed</Status>エージェント選択一覧を名前順に並べ替えるように変更
+
+-   <Status>Changed</Status>エージェント選択オプションから<Cmdname sid="ITM06006" className="uitext" />または<Cmdname sid="ITM06007" className="uitext" />を選択すると、表示される一覧の各項目をクリックしたときの色の変更
+
+-   <Status>Changed</Status>ダッシュボード案内モーダルイメージ変更
+
+#### <Cmdname sid="analysis" />
+
+-   <Status>Fixed</Status><Cmdname sid="stack" className="uitext" />メニューの<Cmdname sid="uniquestack" className="uitext" />で選択したエージェントがない場合、フィルターが適用されないバグの修正
+
+* * *
+
+### `Server`
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Fixed</Status><Cmdname sid="sms_resource_board" className="uitext" />メニューから<Cmdname sid="sms_alert_status" className="uitext" />メニューを表示した場合、一部のチャートのレイアウトがずれる現象を修正
+
+#### <Cmdname sid="sms_server_list" />
+
+-   <Status>Changed</Status><Cmdname sid="serverDetail" className="uitext" />メニューからLinuxプロセスの詳細画面照会時にLimitsテーブルを常に表示するように変更
+
+-   <Status>Changed</Status><Cmdname sid="serverDetail" className="uitext" />メニューから<Cmdname sid="sms_summary_process" className="uitext" />テーブルの詳細画面照会時に<Cmdname sid="diskIo" className="uitext" /><span class="uitext">(Bps)</span>チャートに合計チャート線を共に表示するように変更
+
+-   <Status>Fixed</Status><Cmdname sid="server_list" className="uitext" />メニューから<Cmdname sid="compare" className="uitext" />オプションを活性化し、比較するサーバーのチェックボックスを選択すると、スクロール位置が初期化される問題を修正
+
+-   <Status>Fixed</Status><Cmdname sid="serverDetail" className="uitext" />メニューで時系列チャートのx軸表示単位が'日(day)'ならば'HH:MM'形式ではない日付(MM/DD)形式で表示するように修正
+
+-   <Status>Fixed</Status><Cmdname sid="serverDetail" className="uitext" />メニューから<Cmdname sid="sms_summary_process" className="uitext" />テーブルの最大(max)数値が断続的に誤った値が表示される問題を修正
+
+#### <Cmdname sid="event_statistic" />
+
+-   <Status>Feature</Status><Cmdname sid="event_setting" className="uitext" />メニューからサーバー/プロセスイベントに<Cmdname sid="event_tag" className="uitext" />オプション追加
+
+-   <Status>Changed</Status><Cmdname sid="event_setting" className="uitext" /> メニューからデフォルト(Default)通知の名前を修正できるように変更し、'デフォルト' タグを別途表示するように修正
+
+-   <Status>Fixed</Status><Cmdname sid="event_setting" className="uitext" />メニューから<Cmdname sid="server" className="uitext" />、<Cmdname sid="process" className="uitext" /> イベントを追加または修正する場合、発行条件の持続時間を０分に設定すると、実際に反映するように修正
+
+* * *
+
+### `Database`
+
+#### 共通
+
+-   <Status>Feature</Status><Cmdname sid="reportStat" className="uitext" />&gt; <Cmdname sid="statistics_sql" className="uitext" />メニューから棒グラフをクリックすると、５分間の詳細な統計情報ウィンドウを表示する機能を追加
+
+    :::info
+
+    詳細統計情報ウィンドウの詳細については<Link to="../../postgresql/stat#session-details-info" target="_blank">次の文書</Link>を参照してください。
+
+    :::
+
+-   <Status>Feature</Status><Cmdname sid="dashboard" className="uitext" />&gt;<Cmdname sid="instance_monitoring" className="uitext" />、<Cmdname sid="multi_instance_monitoring" className="uitext" />メニューから<Cmdname sid="active_sessions" className="uitext" />テーブル折りたたむ(folding)ボタンの追加、グラフチャート領域をより広い画面で確認することができます。
+
+-   <Status>Fixed</Status><Cmdname sid="dashboard" className="uitext" />&gt; <Cmdname sid="instance_monitoring" className="uitext" />、<Cmdname sid="multi_instance_monitoring" className="uitext" />メニューの画面の下にあるテーブルタブをクリックしたときにデータをすぐに照会するように修正
+
+-   <Status>Fixed</Status><Cmdname sid="dashboard" className="uitext" />&gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />メニューでイコライザーチャートに表示されるインスタンス順序が画面上のオプションバーのインスタンスタグと一致するように修正
+
+-   <Status>Feature</Status>ユーザービリティーのための<Cmdname sid="TTL06224" className="uitext" />画面のUIを改善
+
+    -   クエリ照会領域とPlan照会領域を上/下、左/右に配置を変更できるように改善
+
+    -   Parameterバインドをデフォルトで実行するように変更
+
+    :::info
+
+    詳細については、<Link to="../../postgresql/instance-monitoring#query-details" target="_blank">次の文書</Link>を参照してください。
+
+    :::
+
+#### PostgreSQL
+
+-   <Status>Feature</Status>Plan照会をjson形式で照会できる機能を追加
+
+-   <Status>Feature</Status><code class="my">V2</code><Cmdname sid="analysis" className="uitext" />&gt;<Cmdname sid="dbObjectInfo" className="uitext" />、新規メニューの追加
+
+    :::info
+
+    <Cmdname sid="dbObjectInfo" className="uitext" />メニューの詳細は、<Link to="../../postgresql/analysis-top-object" target="_blank">次の文書</Link>を参照してください。
+
+    :::
+
+-   <Status>Feature</Status><code class="my">V2</code><Cmdname sid="event_statistic" className="uitext" />&gt;<Cmdname sid="event_setting" className="uitext" />メニューからメトリクス/複合メトリクスイベントのテンプレートを追加
+
+    :::info
+
+    追加されたテンプレートの詳細については<Link to="../../postgresql/metric-warning-notice#template" target="_blank">次の文書</Link>を参照してください。
+
+    :::
+
+-   <Status>Changed</Status><code class="my">V2</code><Cmdname sid="dashboard" className="uitext" />&gt;<Cmdname sid="instance_monitoring" className="uitext" />、<Cmdname sid="multi_instance_monitoring" className="uitext" />メニューでDefaultプリセットに保存された<Cmdname sid="active_sessions" className="uitext" />テーブルのカラム順序の変更
+
+-   <Status>Fixed</Status><code class="my">V2</code><Cmdname sid="reportStat" className="uitext" />&gt;<Cmdname sid="pg_stat" className="uitext" />メニューでインストール案内メッセージが表示されない問題の修正
+
+#### MySQL
+
+<p><Status>Fixed</Status><code class="my">V2</code><Cmdname sid="reportStat" className="uitext" />&gt;<Cmdname sid="TTL06865" className="uitext" />メニューでインストール案内メッセージが表示されない問題の修正</p>
+
+#### Oracle
+
+<p><Status>Changed</Status><Cmdname sid="reportStat" className="uitext" />&gt;<Cmdname sid="table_space" className="uitext" />メニューからテーブルスペース情報を折りたたんで(folding)表示するように修正</p>
+
+* * *
+
+### `Kubernetes`
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Feature</Status><Cmdname sid="containerMap" className="uitext" /> メニューから1分間消えたコンテナ/Podのブロックを表示する機能を追加
+
+    ![](/img/release/release-k8s-container-block.png)
+
+-   <Status>Changed</Status><Cmdname sid="serviceDashboard" className="uitext" />メニューを改善されたダッシュボードに交換、変更点は<Link to='../service/service-1_110_x#application-5' target='_blank'>次の文書</Link>を参照してください。
+
+-   <Status>Changed</Status><Cmdname sid="containerMap" className="uitext" />メニューのサマリー表示パネルから<Cmdname sid="event" className="uitext" />タブの下位要素のデザインを変更
+
+    ![](/img/release/preview-k8s-containermap.png)
+
+#### <Cmdname sid="ITM01408" />
+
+-   <Status>Feature</Status> <Cmdname sid="clusterOverview" className="uitext" />メニューの追加
+
+    :::info
+
+    クラスターに関する情報を要約して提供します。 クラスタープロジェクトだけでなく、ネームスペースプロジェクトで分離された情報まで統合して確認することができます。 詳細については、<Link to="../../kubernetes/cluster-summary" target="_blank">次の文書</Link>を参照してください。
+
+    :::
+
+-   <Status>Feature</Status><Cmdname sid="node_detail" className="uitext" />メニューから<Cmdname sid="product_type_cpm" className="uitext" />テーブルに<Cmdname sid="state" className="uitext" />カラム追加
+
+-   <Status>Changed</Status><Cmdname sid="node_list" className="uitext" /> メニューを次のように改編
+
+    -   ノード情報指標の追加（クラスタープロジェクト）
+
+    -   <Cmdname sid="sms_summary_download_csv" className="uitext" />オプション追加
+
+    -   フィルタ検索機能の追加
+
+    -   テキスト検索を削除し、フィルター検索に置き換え
+
+    -   時間更新間隔を1分から10秒に変更
+
+    -   比較カラムを基本露出に変更し<Cmdname sid="compare" className="uitext" /> ボタンの除去
+
+    -   表示カラムを最大20個に制限
+
+    -   ユーザビリティのためのUI改善
+
+-   <Status>Changed</Status><Cmdname sid="container_list" className="uitext" /> メニューを次のように改編
+
+    -   <Cmdname sid="sms_summary_download_csv" className="uitext" />オプション追加
+
+    -   比較カラムを基本露出に変更し<Cmdname sid="compare" className="uitext" /> ボタンの除去
+
+    -   表示カラムを最大20個に制限
+
+-   <Status>Fixed</Status><Cmdname sid="node_list" className="uitext" />メニューから収集しないデータに該当するカラムの削除(<Cmdname sid="network_ip" />、<Cmdname sid="open_filedescriptors" />、<Cmdname sid="TTL06822" />)
+
+#### <Cmdname sid="analysis" />
+
+-   <Status>Changed</Status><Cmdname sid="pod_init_perform" className="uitext" />メニューの名前の修正(POD → Pod)
+
+-   <Status>Changed</Status><Cmdname sid="pod_init_perform" className="uitext" />メニューからカラムの追加と修正
+
+    ![](/img/release/preview-k8s-pod-column-changes.png)
+
+#### その他
+
+-   <Status>Feature</Status>ネームスペースプロジェクトの実験室メニューで<Cmdname sid="pendingPod" className="uitext" />追加
+
+-   <Status>Deprecated</Status>ネームスペースプロジェクトのPod初期化性能メニューの削除
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status><Cmdname sid="log_setting" className="uitext" />メニューから<Cmdname sid="log_parser_setting_primary" className="uitext" />、<Cmdname sid="log_parser_setting_secondary" className="uitext" />の内容をJSONにエクスポートまたはインポートする機能の追加
+
+-   <Status>Feature</Status><Cmdname sid="log_setting" className="uitext" />メニューから<Cmdname sid="TTL06266" className="uitext" />の設定内容をJSONにエクスポートまたはインポートする機能の追加
+
+:::info
+
+詳細については、<Link to="../../log/log-setting#export-import-settings">次の文書</Link>を参照してください。
+
+:::
+
+* * *
+
+### `Browser`
+
+<p><Status>Feature</Status><Cmdname sid="ajaxAnalytics" className="uitext" />メニューやウィジェット、<Cmdname sid="ajax" className="uitext" /><Cmdname sid="analysis" className="uitext" />機能におけるユーザビリティのためのUIの改善</p>
+
+次のメニューパスで<Cmdname sid="ajaxAnalytics" className="uitext" />ウィジェットのチャート領域をドラッグすると新しくなった<Cmdname sid="ajax" className="uitext" /><Cmdname sid="analysis" className="uitext" />ウィンドウを確認できます。
+
+-   <Cmdname sid="rumDashboard" className="uitext" />&gt;<Cmdname sid="ajaxAnalytics" className="uitext" />ウィジェット
+
+-   <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
+
+:::info
+
+<Cmdname sid="ajaxAnalytics" className="uitext" />メニューの詳細は、<Link to="../../browser/analyze-ajax-hitmap" target="_blank">次の文書</Link>を参照してください。
+
+:::
+
+</div>

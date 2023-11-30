@@ -15,7 +15,7 @@ tags:
 
 ## エージェントダウンロード
 
-次のコマンドを実行して、バッチアプリケーションをモニタリングするためのエージェントをダウンロードできます。
+次のコマンドを実行して、バッチアプリケーションをモニタリングするエージェントをダウンロードできます。
 
 ```bash
 wget https://api.whatap.io/agent/whatap.agent.batch.tar.gz
@@ -85,7 +85,7 @@ active_stack_start_wait_time=1000
 
 ## バッチジョブ(Batch Job) を実行する
 
-バッチジョブ(Batch Job)をトランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、JobプロセスのJobエージェントと、この情報をサーバに中継するためにHostエージェントに分離された２つのエージェントを実行する必要があります。
+バッチジョブ(Batch Job)は、トランザクションの観点からモニタリングする必要があります。そのため、WhaTapのJavaエージェントは、JobプロセスのJobエージェントと、この情報をサーバに中継するためにHostエージェントに分離された２つのエージェントを実行する必要があります。
 
 ### バッチホスト(Batch Host) 実行コマンド
 
@@ -109,7 +109,7 @@ java -javaagent:{BATCH_AGENT_HOME}/whatap.agent.batch-x.x.x.jar --add-opens=java
 
 :::note
 
-バッチジョブ(BatchJob)エージェントとバッチホスト(Batch Host)エージェントは、バッチジョブ(Batch Job)を実行するホストととしてインストールおよび実行してください。
+バッチジョブ(BatchJob)エージェントとバッチホスト(Batch Host)エージェントは、バッチジョブ(Batch Job)を実行するホストでインストールおよび実行してください。
 
 :::
 
@@ -119,7 +119,7 @@ Batch Job(Batch Job) AgentとBatch Host(Batch Host) Agentは、UDPを使用し�
 
 ![Batch Job UDP](/img/batch-app-udp.png)
 
-バッチジョブ(Batch Job)は、一般的に長時間で実行します。 数十秒を超えることがあります。 したがって、バッチジョブ(Batch Job)ごとに`time_limit`の値が異なる場合があります。バッチジョブ(Batch Job)が実行される推定処理時間を`time_limit`オプションで設定してください。
+バッチジョブ(Batch Job)は、通常、長時間に渡って実行します。 数十秒の長さになることがあります。 したがって、バッチジョブ(Batch Job)ごとに`time_limit`の値が異なる場合があります。バッチジョブ(Batch Job)が実行される推定処理時間を`time_limit`オプションで設定してください。
 
 ```ini title=whatap.conf
 time_limit=300000

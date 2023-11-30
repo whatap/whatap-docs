@@ -24,26 +24,32 @@
 
 ## クエリの詳細
 
-<Xclude product='postgresql,mysql'>
+<Xclude product='postgresql,postgresql-v1,mysql'>
 
 ![数字3](/img/number-03.png)クエリ文を選択してください。クエリ文とSQL Planを詳細を確認できる**_SQLビュー_**ウィンドウが表示されます。
 
-<ImgLang img="db-stat-query.png" desc="クエリの詳細" />
+<ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
+
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
 
 </Xclude>
 
-<InDoc product='postgresql'>
+<InDoc product='postgresql,postgresql-v1'>
 
-<ImgLang img='db-pg-sql-stat-sql-details.png' desc='SQL詳細' />
+検索結果の一覧からクエリ項目を選択すると、**_SQL詳細_**ウィンドウが表示されます。
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
+<ImgLang img="db-sql-details-postgresql.png" desc="SQL詳細" />
+
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
 
 </InDoc>
 
 <InDoc product='mysql'>
 
-<ImgLang img='db-mysql-sql-stat-details.png' desc='SQL 상세' />
+検索結果の一覧からクエリ項目を選択すると、**_SQL詳細_**ウィンドウが表示されます。
 
-{@include: ../common-items/_db-product-sql-stat-query-details.mdx}
+<ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
+
+{@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
 
 </InDoc>

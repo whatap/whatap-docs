@@ -1,6 +1,8 @@
 ## Configuring the whatap.conf file
 
-Go to the unzipped `$WHATAP_HOME` path. Check whether the access key and data collection address are correctly written in _$WHATAP_HOME/whatap.conf_. If there is no value, go to the [WhaTap Monitoring Service](https://service.whatap.io) screen, and then copy and paste **access key** in the <Cmdname sid="agent-setup-guide" className="uitext" /> section.
+### Entry of basic information
+
+Go to the unzipped `$WHATAP_HOME` path. Enter the access key and data collection server's IP address in the _$WHATAP_HOME/whatap.conf_ file. Go to the [WhaTap monitoring service](https://service.whatap.io) screen and then copy and paste the **access key** and **collection server IP address** from the <Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" /> item of the <Cmdname sid="agent-setup-guide" className="uitext" /> section.
 
 ```ini title=$WHATAP_HOME/whatap.conf
 license={access key}
@@ -9,10 +11,48 @@ whatap.server.host={collection server IP}
 
 :::note
 
--   If the agent has been downloaded by clicking <Cmdname sid="download" className="uitext" />, the settings exist in *whatap.conf*.
+For more information about _whatap.conf_, see [the following](set-agent).
 
--   If directly downloaded from the server, enter the **access key** and **collection server IP**.
+:::
 
--   For more information about _whatap.conf_, see [the following](set-agent).
+### Setting the security key {#security}
+
+Set a security key to query SQL variables and perform HTTP queries, or use the Thread stop function.
+
+-   Java Agent 2.2.2 or later
+
+    After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+
+    ```ini title='security.conf'
+    paramkey=ABCDEF # SQL variable and HTTP query lookup
+    threadkill=ABCDEF # Thread stop function
+    ```
+
+-   Java agent 2.2.2 or earlier
+
+    After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+
+    ```ini title='paramkey.txt'
+    ABCDEF # SQL variable and HTTP query lookup, thread stop function
+    ```
+
+:::tip
+
+When updating the Java agent version to 2.2.2, the key values in the existing _paramkey.txt_ file are automatically applied to the _security.conf_ file. For example, if you used `FEDCBA` in _paramkey.txt_ and updated to the version 2.2.2, it is applied to the _security.conf_ file as follows:
+
+```ini
+paramkey=FEDCBA
+threadkill=FEDCBA
+```
+
+If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ file is automatically created as the key value of **WHATAP**.
+
+:::
+
+:::note
+
+-   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+
+-   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
 :::

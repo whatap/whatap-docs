@@ -14,6 +14,310 @@ In [https://preview.whatap.io](https://preview.whatap.io), the following new fea
 
 :::
 
+## Preview 1.113.11
+
+November 21, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> Improved the <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="sms_maintenance" className="uitext" /> menu.
+
+    -   Added a new maintenance plan menu. Select <Cmdname sid="BTN07004" className="uitext" /> for the new maintenance plan function.
+
+    -   Added the <Cmdname sid="TTL07037" className="uitext" /> option to add maintenance plans for each agent.
+
+    -   The <Cmdname sid="repeat" className="uitext" /> option is also available in server projects.
+
+-   <Status>Fixed</Status> Improved visibility of the table displayed when the <Cmdname sid="groupby" className="uitext" /> option is enabled in <Cmdname sid="real_time_alert_list" className="uitext" />.
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> Deleted the <Cmdname sid="active_trx" className="uitext" /> button on the <Cmdname sid="active_transaction" className="uitext" /> window that appears when a transaction from the list is selected in <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="active_transaction" className="uitext" />.</p>
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, fixed the issue where the maximum value of the <Cmdname sid="sms_summary_process" className="uitext" /> table is intermittently displayed wrong.
+
+-   <Status>Changed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, when viewing the <Cmdname sid="sms_summary_process" className="uitext" /> table details, modified the <Cmdname sid="diskIo" className="uitext" /> <span class="uitext">(Bps)</span> chart to display the sum chart lines together.
+
+-   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="server_list" className="uitext" />, fixed the issue where the scroll position is reset when enabling the <Cmdname sid="compare" className="uitext" /> option and then checking the checkbox of the server to be compared.
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, added the button to fold the <Cmdname sid="active_sessions" className="uitext" /> button.</p>
+
+#### PostgreSQL / MySQL
+
+<p><Status> Feature </Status> Improved UIs for user convenience.</p>
+
+-   Enhanced the query and plan lookup areas to be moved horizontally and vertically.
+
+-   Changed the parameter bind to be performed by default.
+
+#### PostgreSQL
+
+-   <Status>Feature</Status> Added the function to view the plan information in json format.
+
+-   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added the template for metrics events.
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, changed the order of columns of the <Cmdname sid="active_sessions" className="uitext" /> table saved in the Default preset.
+
+#### Oracle
+
+<p><Status>Changed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="table_space" className="uitext" />, modified to display the table space information to be folded.</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status> Deleted the <Cmdname sid="active_trx" className="uitext" /> button on the <Cmdname sid="active_transaction" className="uitext" /> window that appears when a transaction from the list is selected in the following paths:
+
+    -   Click the <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" /> &gt; container block &gt; click a chart in the <Cmdname sid="BTN06342" className="uitext" /> &gt; <span class='uitext'>Active Transaction</span> widget
+
+    -   Click any item in the transaction list in <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="active_transaction" className="uitext" />
+
+-   <Status>Deprecated</Status> Deleted the Pod initialization performance menu for namespace projects.
+
+-   <Status>Feature</Status> Added <Cmdname sid="pendingPod" className="uitext" /> as the lab menu of the namespace project.
+
+* * *
+
+### `Browser`
+
+<p><Status>Feature</Status> Enhanced the UI designs in the <Cmdname sid="ajaxAnalytics" className="uitext" /> menu and widget, and the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> function.</p>
+
+If you drag the chart area of the <Cmdname sid="ajaxAnalytics" className="uitext" /> widget in the following menu paths, you can see the new <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window.
+
+-   <Cmdname sid="rumDashboard" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" /> widget
+
+-   <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
+
+</div>
+
+## Preview 1.113.10
+
+November 16, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="tag_count" />
+
+<p><Status>Changed</Status> Changed the chart data displayed with the <Cmdname sid="show_chart" className="uitext" /> function in the <span class="uitext">Fields</span> column on the viewed data basis.</p>
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified to reflect the actual event when adding or modifying the <Cmdname sid="server" className="uitext" /> and <Cmdname sid="process" className="uitext" /> events while the duration of the issuance condition has been set to 0 minute.
+
+-   <Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified to change the name of the default alert and to display the `default` tag separately.
+
+-   <Status>Changed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, when viewing the <Cmdname sid="sms_summary_process" className="uitext" /> details, modified to always display the Limits table.
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> Added the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" /> menu.
+
+    :::info
+
+    A summary of cluster information is provided. You can check not only cluster projects but also information separated by namespace projects by integrating them.
+
+    :::
+
+-   <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the function to display the blocks for containers and Pods that disappeared for 1 minute.
+
+    ![](/img/release/release-k8s-container-block.png)
+
+-   <Status>Changed</Status> Reorganized the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" /> menu as follows:
+
+    -   Added the metric for node data (cluster project).
+
+    -   Added the <Cmdname sid="sms_summary_download_csv" className="uitext" /> option.
+
+    -   Added the filter search function.
+
+    -   Removed the text search feature and replaced it with the filter search feature.
+
+    -   Changed the time update interval from 1 minute to 10 seconds.
+
+    -   Changed the comparison column to default exposure and deleted the <Cmdname sid="compare" className="uitext" /> button.
+
+    -   Limited the display columns up to 20.
+
+    -   Improved UIs for user convenience.
+
+-   <Status>Changed</Status> Reorganized the <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" /> menu as follows:
+
+    -   Added the <Cmdname sid="sms_summary_download_csv" className="uitext" /> option.
+
+    -   Changed the comparison column to default exposure and deleted the <Cmdname sid="compare" className="uitext" /> button.
+
+    -   Limited the display columns up to 20.
+
+</div>
+
+## Preview 1.113.9
+
+November 13, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+-   <Status>Feature</Status> In <Cmdname sid="log_setting" className="uitext" />, added the function to export or import <Cmdname sid="log_parser_setting_primary" className="uitext" /> and <Cmdname sid="log_parser_setting_secondary" className="uitext" /> in JSON format.
+
+-   <Status>Feature</Status> In <Cmdname sid="log_setting" className="uitext" />, added the function to export or import the <Cmdname sid="TTL06266" className="uitext" /> settings in JSON format.
+
+</div>
+
+## Preview 1.113.8
+
+November 13, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tx_search" className="uitext" />, changed pagination not to appear at the bottom of the search results, when search results include transaction IDs and multi-transaction IDs.</p>
+
+* * *
+
+### `Database`
+
+#### Common
+
+-   <Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />, added the function to display the detailed statistical data for 5 minutes when the bar graph is clicked.
+
+-   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added the event template that can be selected upon addition of a metric event.
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" /> and <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified to view the data when the table tab is clicked at the bottom of the screen.
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />, modified the order of instances displayed in the equalizer chart to match the instance tags in the option bar on the screen.
+
+#### PostgreSQL V2
+
+-   <Status>Feature</Status> Added a new menu, <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="dbObjectInfo" className="uitext" />.
+
+-   <Status>Fixed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="pg_stat" className="uitext" />, fixed the issue where the installation guide messages do not appear.
+
+#### MySQL V2
+
+<p><Status>Fixed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="TTL06865" className="uitext" />, fixed the issue where the installation guide messages do not appear.</p>
+
+</div>
+
+## Preview 1.113.7
+
+November 10, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Fixed</Status> In <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />, deleted the contact input field when modifying the <Cmdname sid="billing_reception_info" className="uitext" /> item (the contact information of <Cmdname sid="payment_method" className="uitext" /> is duplicated).
+
+-   <Status>Feature</Status> In the Apdex widget of <Cmdname sid="flexboard" className="uitext" />, added the chart types that can be selected.
+
+-   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, supported to search the message field other than the title.
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="TTL06549" className="uitext" />, when the agent is inactive, fixed the issue where the date in the <Cmdname sid="active_inactive" className="uitext" /> column does not appear.</p>
+
+</div>
+
+## Preview 1.113.6
+
+November 8, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="stack" className="uitext" />, fixed the bug where any filter is not applied when the agent selected in <Cmdname sid="uniquestack" className="uitext" /> does not exist.</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Changed</Status> In the summary panel of <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="containerMap" className="uitext" />, changed the design for elements under the <Cmdname sid="event" className="uitext" /> tab.
+
+    ![](/img/release/preview-k8s-containermap.png)
+
+-   <Status>Changed</Status> Changed the name of the <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="pod_init_perform" className="uitext" /> menu (POD → Pod).
+
+-   <Status>Changed</Status> In <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="pod_init_perform" className="uitext" />, added and modified the columns.
+
+    ![](/img/release/preview-k8s-pod-column-changes.png)
+
+</div>
+
+## Preview 1.113.5
+
+November 8, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Feature</Status> In <Cmdname sid="my_usage" className="uitext" /> > <Cmdname sid="billingPreview" className="uitext" />, added the option to hide the usage and improved the price display function.</p>
+
+* * *
+
+### `Database`
+
+<p><Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="lock_tree" className="uitext" />, if the query viewed from the table is clicked, modified to display the <Cmdname sid="plan" className="uitext" /> window.</p>
+
+* * *
+
+### `URL`
+
+<p><Status>Fixed</Status> In <Cmdname sid="url_list" className="uitext" />, supported the multi-language for the <Cmdname sid="BTN07231" className="uitext" /> button on the window displayed upon clicking <Cmdname sid="add_url" className="uitext" />.</p>
+
+</div>
+
+## Preview 1.113.4
+
+November 6, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, modified the promotion click area.</p>
+
+#### <Cmdname sid="flexboard" />
+
+-   <Status>Fixed</Status> Fixed the issue where content does not appear when the widget operates full screen in the Safari browser.
+
+-   <Status>Changed</Status> Modified to display up to 2 decimal places, if the unit of number expressed in the secondary table is not set.
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> Fixed the issue where the transaction data of <Cmdname sid="TTL06209" className="uitext" /> cannot be viewed.</p>
+
+</div>
+
 ## Preview 1.113.3
 
 November 3, 2023
@@ -21,6 +325,10 @@ November 3, 2023
 <div class='indentTab'>
 
 ### `Common`
+
+#### <Cmdname sid="report" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="report" className="uitext" />, fixed the bug where the <Cmdname sid="download" className="uitext" /> button does not work.</p>
 
 #### <Cmdname sid="flexboard" />
 
@@ -44,7 +352,7 @@ November 3, 2023
 
 -   <Status>Feature</Status> In <Cmdname sid="sms_event_menu" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />, added the <Cmdname sid="event_tag" className="uitext" /> option in the server/process event.
 
--   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="sms_server_list" className="uitext" />, user cannot view the past data anymore. The search is now possible only in Realtime (<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />) or Pause (<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />) status.
+-   <Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> > <Cmdname sid="server_list" className="uitext" />, user cannot view the past data anymore. The search is now possible only in Realtime (<LinkImage img='ico-play-time.svg' desc='재생 아이콘' />) or Pause (<LinkImage img='ico-pause.svg' desc='멈춤 아이콘' />) status.
 
 * * *
 

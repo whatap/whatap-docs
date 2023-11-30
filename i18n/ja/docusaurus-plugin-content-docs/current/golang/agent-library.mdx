@@ -18,24 +18,29 @@ Goライブラリー別のエージェント設定を案内します。
     デフォルト値 `true`
 
     gRPC(Google Remote Procedure Call、以下gRPC) 情報の収集有無を設定します。
+
 -   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
     Client stream method情報の収集有無を設定します。
+
 -   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
     Server stream method情報の収集有無を設定します。
+
 -   **grpc_profile_ignore_method** <span class='type'>String</span>
 
     デフォルト値`agent`
 
-    設定した値に対するmethodを収集致しません。 複数登録するときは、コンマ（,）を区切り文字として利用してください。
+    設定した値に対するmethodを収集致しません。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
+
 -   **grpc_profile_stream_method** <span class='type'>String</span>
 
-    設定したstream methodを別途のトランザクションで構成します。 複数登録するときは、コンマ（,）を区切り文字として利用してください。 長時間続くstream 接続に対して、それぞれのmethod 呼び出しを単独トランザクションとして処理します。 ヒートマップ、トランザクション検索からfull methodで検索できます。
+    設定したstream methodを別途のトランザクションで構成します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 長時間続くstream 接続に対して、それぞれのmethod 呼び出しを単独トランザクションとして処理します。 ヒートマップ、トランザクション検索からfull methodで検索できます。
+    
 -   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
 
     デフォルト値`false`

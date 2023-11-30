@@ -54,27 +54,27 @@ You can flexibly grant different roles to different members for each project or 
 
 <div class='c5-3-5-avg'>
 
-| Role scheme              | Description                                                        |
-| ------------------------ | ------------------------------------------------------------------ |
-| View                     | Viewing a project                                                  |
-| Edit                     | Moving, modifying, and deleting an organization, group, or project |
-| View Log                 | Log inquiry and access of log-related functions                    |
-| Log Edit                 | Editing the log settings                                           |
-| Project flexboard update | **_Flex Board_** editing of the project                            |
-| Member Management        | Modifying member roles and adding or excluding members             |
-| Alert Reception          | Alert Reception                                                    |
-| Alert Config             | Alert Notification Setting                                         |
-| Billing                  | Charging the bill                                                  |
+| Role scheme              | Description                                                           |
+| ------------------------ | --------------------------------------------------------------------- |
+| View                     | Viewing a project                                                     |
+| Edit                     | Moving, modifying, and deleting an organization, group, or project    |
+| View Log                 | Log inquiry and access of log-related functions                       |
+| Log Edit                 | Editing the log settings                                              |
+| Project flexboard update | <Cmdname sid="flexboard" className="uitext" /> editing of the project |
+| Member Management        | Modifying member roles and adding or excluding members                |
+| Alert Reception          | Alert Reception                                                       |
+| Alert Config             | Alert Notification Setting                                            |
+| Billing                  | Charging the bill                                                     |
 
 </div>
 
 ### Inquiry and analysis
 
-This role is granted to members by default when inviting them to an organization, group, or project. You can view the **_dashboard_** and other menus.
+This role is granted to members by default when inviting them to an organization, group, or project. You can view the <Cmdname sid="dashboard" className="uitext" /> and other menus.
 
 ### Edit
 
--   You can modify the functions of the project. For example, you can add, modify, and delete **_dashboards_**. 
+-   You can modify the functions of the project. For example, you can add, modify, and delete <Cmdname sid="dashboard" className="uitext" />. 
 
 -   You can move, modify, and delete settings of a group or project.
 
@@ -86,13 +86,13 @@ This role is granted to members by default when inviting them to an organization
 
 ### Alert Reception
 
--   In **_Alert_** > **_Notification Setting_**, you can manage the alert reception settings. 
+-   In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />, you can manage the alert reception settings.
 
 -   If you do not set the **Alert Reception** role, you can handle only the reception settings for your own account.
 
 ### Alert Config
 
-In **_Alert_** > **_Notification Setting_**, the alerts can be added, deleted, or modified. You can also manage other functions.
+In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />, the alerts can be added, deleted, or modified. You can also manage other functions.
 
 ### View Log
 
@@ -100,27 +100,27 @@ In **_Alert_** > **_Notification Setting_**, the alerts can be added, deleted, o
 
 -   Only members with the **Log Read** role can access the log-related functions. The log-related functions are as follows.
 
-    -   **_Log_** menu and sub menus
+    -   <Cmdname sid="log" className="uitext" /> menu and sub menus
 
-    -   **_Alert_** > **_Event Setting_** > **_Log_** tab
+    -   <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="log" className="uitext" /> tab
 
-    -   **_Transaction Log_** tab in the Transaction Detail window
+    -   <Cmdname sid="transaction_log" className="uitext" /> tab in the Transaction Detail window
 
-    -   **_Log_** tab in **Summary Detail** or **Display Detail** under Container Map
+    -   <Cmdname sid="log" className="uitext" /> tab in <b>Summary Detail</b> or <b>Display Detail</b> under Container Map
 
 ### Log Edit
 
-It is the role to edit the settings in **_Log_** > **_Log Setting_**. If you have the **Log Edit** role, you can use the **_Log Setting_** menu.
+It is the role to edit the settings in <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" />. If you have the <b>Log Edit</b> role, you can use the <Cmdname sid="log_setting" className="uitext" /> menu.
 
 :::note
 
-Even if you have the **Log Edit** role, you cannot use the **_Log Setting_** menu when an **access key** has not been issued or the log monitoring is disabled.
+Even if you have the **Log Edit** role, you cannot use the <Cmdname sid="log_setting" className="uitext" /> menu when an **access key** has not been issued or the log monitoring is disabled.
 
 :::
 
 ### Project flexboard update
 
-It is the role to edit the dashboards in the project's **_Flex Board_** menu. In **_Flex Board_** under the project, you can access to **_Edit Mode_**, **_Admin_** Mode, and **_Filtering_**.
+It is the role to edit the dashboards in the project's <Cmdname sid="flexboard" className="uitext" /> menu. In <Cmdname sid="flexboard" className="uitext" /> under the project, you can access to <Cmdname sid="edit_mode" className="uitext" />, <Cmdname sid="admin" className="uitext" /> Mode, and <Cmdname sid="filter" className="uitext" />.
 
 :::note
 
@@ -132,11 +132,11 @@ For more information about Flex Board, see [the following](../java/flex-board).
 
 -   Each organization, group, or project provides the **billing** role to only one person. There must be only 1 member with the billing role.
 
--   **_Billing_** appears next to the member with the **billing** role.
+-   <Cmdname sid="billing" className="uitext" /> appears next to the member with the <b>billing</b> role.
 
 -   If A has transferred the **billing** role to B, A no longer has the right to make **billing**.
 
--   The member to whom the **billing** role is transferred must have registered the billing information. The billing information can be registered in **_My Usage_**. For more information, see [the following](../management/billing).
+-   The member to whom the **billing** role is transferred must have registered the billing information. The billing information can be registered in <Cmdname sid="my_usage" className="uitext" />. For more information, see [the following](../management/billing).
 
 -   If there are billing staff for each organization, group, and project, the billing roles are granted in the order of project, group, and organization. If there is no billing staff for a group or project, billing is charged to the parent group or organization's staff with the billing role.
 
@@ -150,7 +150,7 @@ You can modify the roles of members in the list of the selected organization, gr
 
 <ImgLang img='member-modify-authority-0508.png' desc='Modify member role' />
 
-You can set roles by selecting the toggle button on the right. After configuration, select **_Apply_**.
+You can set roles by selecting the toggle button on the right. After configuration, select <Cmdname sid="apply" className="uitext" />.
 
 ### Modifying the roles of the organization or group members
 
@@ -158,13 +158,13 @@ You can set member roles for a group or project that belongs to an organization 
 
 <ImgLang img='modify-organize-member-authority.png' desc='Modify member role' />
 
-Under the **_User role per group_** or **_User Role per project of a group_** section, select ![Edit icon](/img/ico-edit.svg) to modify the roles. The **_Edit Member Role_** window appears. The options that can be set for roles are as follows.
+Under the <Cmdname sid="user_role_per_group_of_organization" className="uitext" /> or <Cmdname sid="user_role_per_project_of_group" className="uitext" /> section, select <LinkImage img="ico-edit.svg" desc="edit icon" /> to modify the roles. The <Cmdname sid="edit_member_role" className="uitext" /> window appears. The options that can be set for roles are as follows.
 
--   **_Inheritance_**: Inherits the roles of the parent organization or group.
+-   <Cmdname sid="inheritance" className="uitext" /><span class="uitext">(</span><Cmdname sid="allow" className="uitext" /><span class="uitext">)</span>: Inherits the roles of the parent organization or group.
 
--   **_Allow_**: Enables the roles of the selected group or project.
+-   <Cmdname sid="allowed" className="uitext" />: Enables the roles of the selected group or project.
 
--   **_Deny_**: Disables the roles of the selected group or project.
+-   <Cmdname sid="deny" className="uitext" />: Disables the roles of the selected group or project.
 
 :::note
 

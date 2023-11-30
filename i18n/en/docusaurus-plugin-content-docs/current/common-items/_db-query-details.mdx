@@ -1,0 +1,43 @@
+## See query details {#query-details}
+
+To check the SQL query information of the current running session, select the <span class="uitext">query</span> column in the <Cmdname sid="active_sessions" className="uitext" /> section. The <Cmdname sid="TTL06224" className="uitext" /> window appears. You can check the SQL query statements and plan information.
+
+<InDoc product="postgresql,postgresql-v1">
+
+<ImgLang img="db-sql-details-postgresql.png" desc="SQL details" />
+
+</InDoc>
+
+<Xclude product="postgresql,postgresql-v1">
+
+<ImgLang img="db-sql-details-common.png" desc="SQL details" />
+
+</Xclude>
+
+-   <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
+
+-   **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
+
+-   **_Reset Bind_**: You can release the bound default value and check the variable.
+
+-   **_Formatting_**: You can improve readability by applying indentation and formatting to a SQL query statement.
+
+-   **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+
+    <InDoc product='postgresql,postgresql-v1'>
+
+    -   **_Text_**: You can check plan information in text format.
+
+    -   **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+
+    :::note
+
+    The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.12 or later.
+
+    :::
+
+    </InDoc>
+
+-   If you select ![Vertical split icon](/img/ic-column.svg) on the upper right of the screen, the **_Query_** and **_Plan_** sections are placed left to right.
+
+-   If you select ![Vertical split icon](/img/ic-layout-horizontal.svg) on the upper right of the screen, the **_Query_** and **_Plan_** sections are placed up to down.

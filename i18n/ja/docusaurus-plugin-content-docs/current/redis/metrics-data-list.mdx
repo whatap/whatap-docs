@@ -40,7 +40,7 @@ tags:
 | `AOF_ENABLED`                 | _redis.conf_のappendonlyモードがyesなら1、noなら0です。yesの場合は、Redisサーバーの起動の場合は、_appendonly.aof_を読み込み、noなら_dump.rdb_ファイルを読み込みます。                                 | PERSISTENCE  |
 | `AOF_LAST_REWRITE_TIME_SEC`   | 最終AOF rewrite時間(秒)                                                                                                                                  | PERSISTENCE  |
 | `AOF_REWRITE_IN_PROGRESS`     | 現在、AOFファイルをバックグラウンドで保存している場合は、1と表示されます。                                                                                                             | PERSISTENCE  |
-| `AOF_REWRITE_SCHEDULED`       | AOF rewriteを実行する予定がある場合は1です。RDBファイルを保存中の場合は、同時にAOFファイルが保存できないため、スケジュール(scheduled：1)を設定し、保存が完了すると、AOF rewriteが開始します。                                 | PERSISTENCE  |
+| `AOF_REWRITE_SCHEDULED`       | AOF rewriteを実行する予定がある場合は、1.RDBファイルを保存する場合、同時にAOFファイルは保存することはできないため、スケジュール(scheduled：1)に設定し、保存が完了すると、AOF rewriteが開始します。                              | PERSISTENCE  |
 | `RDB_BGSAVE_IN_PROGRESS`      | RDBファイルのbackground saveが進行中の場合は、1と表示されます。                                                                                                           | PERSISTENCE  |
 | `RDB_CHANGES_SINCE_LAST_SAVE` | RDBファイルを最後に保存されてから入力されたデータ件数                                                                                                                        | PERSISTENCE  |
 | `RDB_CURRENT_BGSAVE_TIME_SEC` | 現在バックグラウンドでRDBファイルを保存している場合は、保存開始から現在までの所要時間                                                                                                        | PERSISTENCE  |

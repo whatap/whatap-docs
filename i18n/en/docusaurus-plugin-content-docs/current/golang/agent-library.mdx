@@ -18,24 +18,29 @@ It guides you to the agent configuration for each Go library.
     Default `true`
 
     Set whether or not to collect the Google Remote Call (gRPC) data.
+
 -   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
 
     Default `true`
 
     Set whether or not to collect the client stream methods.
+
 -   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
 
     Default `true`
 
     Set whether or not to collect the server stream methods.
+
 -   **grpc_profile_ignore_method** <span class='type'>String</span>
 
     Default `agent`
 
     It does not collect the method for the set value. For multiple values, use comma (,) as the delimiter.
+
 -   **grpc_profile_stream_method** <span class='type'>String</span>
 
     It organizes the set stream method as a separate transaction. For multiple values, use comma (,) as the delimiter. For long keeping stream connections, each method call is treated as a single transaction. You can search by the full method in the hitmap and transaction search.
+    
 -   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
 
     Default `false`

@@ -5,11 +5,11 @@ displayed_sidebar: indexSidebar
 description: WhaTapモニタリングサービス機能をすばやく使用できるように簡単な案内を提供します。
 ---
 
-WhaTapモニタリングサービスの概括的な案内ページです。 WhaTapモニタリングサービスに初めて利用する新規ユーザーに有用です。
+WhaTapモニタリングサービスの概要ページです。 WhaTapモニタリングサービスを初めて利用する新規ユーザーに役立ちます。
 
 :::note
 
-WhaTapモニタリングサービスエージェントのインストールと利用に関する詳細については、左記の製品別技術文書を参照してください。
+WhaTapモニタリングサービスエージェントのインストールと利用に関する詳細については、左記の製品別の技術文書を参照してください。
 
 :::
 
@@ -41,7 +41,7 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 1.  サポート環境を確認してください。 
 
-2.  <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_installation" className="uitext" />メニューの<Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />タブを選択してください。 案内に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
+2.  <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_installation" className="uitext" />メニューの<Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />タブを選択してください。 指示に従って直接エージェントをダウンロードするか、パッケージのインストールを進めてください。
 
     :::note 
 
@@ -58,10 +58,10 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 これから、WhaTapモニタリングサービスが開始されます。 
 
-ダウンロードおよび設定プロセスの詳細については、製品別のインストール案内文書を参考にしてください。 左側から製品別メニューを選択するか、次のショートカットを確認してください。
+ダウンロードおよび設定プロセスの詳細については、製品別のインストール手順のドキュメントを参照してください。 左側から製品別メニューを選択するか、次のショートカットを確認してください。
 
 <details>
-<summary>製品別動作環境およびインストールガイド文書へのショートカット</summary>
+<summary>製品別の動作環境およびインストール手順のドキュメントへのショートカット</summary>
 
 -   **Java**
     -   [動作環境](java/supported-spec)
@@ -133,15 +133,15 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 * * *
 
-### ![](/img/number-05.png)ダッシュボード照会{#dashboard}
+### ![](/img/number-05.png)ダッシュボード参照{#dashboard}
 
-エージェントインストール後、データがWhaTapサーバーに送信されると、<Cmdname sid="dashboard" className="uitext" />メニューでプロジェクトの全体現況をリアルタイムで照会することができます。 WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズダッシュボードを提供します。
+エージェントをインストール後、データがWhaTapサーバーに送信されると、<Cmdname sid="dashboard" className="uitext" />メニューからプロジェクトの全体の状況をリアルタイムで確認することができます。 WhaTapモニタリングサービスは、収集されたすべてのデータを統合ダッシュボードとして構成でき、ユーザーによって自由に編集できるパーソナライズされたダッシュボードを提供します。
 
 -   アプリケーションは、<Cmdname sid="app_dashboard" className="uitext" />と<Cmdname sid="transaction_map" className="uitext" />、<Cmdname sid="active_transaction" className="uitext" />、<Cmdname sid="application_topology" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/app-activeTransection.mp4}
 
--   サーバは、<Cmdname sid="sms_resource_board" className="uitext" />と<Cmdname sid="sms_compound_eye" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
+-   サーバーは、<Cmdname sid="sms_resource_board" className="uitext" />と<Cmdname sid="sms_compound_eye" className="uitext" />そして<Cmdname sid="flexboard" className="uitext" />の各ウィジェットで収集された性能指標を確認できます。
 
     {@video: https://whatap-landing-resource.s3.ap-northeast-2.amazonaws.com/server-compound.mp4}
 
@@ -155,7 +155,7 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 :::note
 
-ユーザー定義型統合ダッシュボードであるFlexボードの作成および設定に関する詳細な説明は[次の文書](java/flex-board)を参照してください。
+カスタム統合ダッシュボードであるFlexボードの作成および設定に関する詳細な説明は[次の文書](java/flex-board)を参照してください。
 
 :::
 
@@ -163,18 +163,18 @@ WhaTapモニタリングサービスエージェントのインストールと�
 
 ### ![](/img/number-06.png)外部データ収集{#collect}
 
-TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張できます。 詳細については、次の文書[Telegraf](telegraf/introduction.mdx)、[Focus](focus/introduction.mdx)を参考にしてください。
+TelegrafとFocusなどを活用してWhaTapサービス収集データを拡張できます。 詳細については、次の文書[Telegraf](telegraf/introduction.mdx)、[Focus](focus/introduction.mdx)を参照してください。
 
--   WhaTapプラグインをインストールしてTelegrafで収集したデータをWhaTap収集サーバーに転送することができます。
--   WhaTap Focusをインストールして、ユーザーが独自のチェックスクリプトまたはデータベースクエリをアップロードして、収集された値をWhaTapプロジェクトにアップロードできます。
+-   WhaTapプラグインをインストールすると、Telegrafで収集したデータをWhaTap収集サーバーに送信することができます。
+-   WhaTap Focusをインストールして、ユーザーが独自のチェックスクリプトまたはデータベースクエリを実行して、収集された値をWhaTapプロジェクトにアップロードできます。
 
 * * *
 
 ### ![](/img/ic-number-07.svg)通知設定{#notification}
 
-WhaTapモニタリングサービスは、収集されるすべての指標に対してしきい値ベースの通知設定が可能です。 <Cmdname sid="event_statistic" className="uitext" />メニューでイベントと受信設定及び過去の記録を確認することができます。 個人別に通知受信の設定が可能なだけでなく、メール、SMS、メッセンジャーなど多様な通知受信チャンネルを提供します。 
+WhaTapモニタリングサービスは、収集されたすべての指標を使用して、しきい値ベースの通知設定が可能です。 <Cmdname sid="event_statistic" className="uitext" />メニューでは、イベントや受信設定及び過去の記録を確認することができます。 個人別に通知の受信設定が可能だけでなく、メール、SMS、メッセンジャーなどのさまざまな通知チャンネルを提供します。 
 
-通知設定の詳細については、製品ごとに以下の文書を参照してください。 
+アラート設定の詳細については、次の記事を参照してください。 
 
 <details>
 <summary>製品ごとの通知設定ガイド文書のショートカット</summary>
@@ -208,13 +208,13 @@ WhaTapモニタリングサービスは、収集されるすべての指標に�
 
 * * *
 
-### ![](/img/ic-number-08.svg)レポート照会{#report}
+### ![](/img/ic-number-08.svg)レポート参照{#report}
 
-レポートは、サービス利用状況とトラブルの発生記録を報告する文書で、モニタリングデータ分析はサービスの改善方向を決める指標になります。 WhaTapは、<Cmdname sid="report" className="uitext" />メニューでレポートを作成し、業務自動化をサポートします。 個々のプロジェクト単位のレポートとマルチプロジェクト単位の統合レポートを提供します。
+レポートは、サービス利用状況とトラブルの発生記録を報告する文書であり、モニタリングデータ分析はサービス改善の方向性を決める指標になります。 WhaTapは、<Cmdname sid="report" className="uitext" />メニューからレポートを作成し、業務の自動化をサポートします。 個々のプロジェクト単位のレポートと複数のプロジェクト単位の統合レポートを提供します。
 
 :::note
 
-レポートの詳細については、[次の文書](java/report-intro)を参考にしてください。 製品別レポートの案内については、製品別の技術文書を参考にしてください。
+レポートの詳細については、[次の文書](java/report-intro)を参照してください。 製品別のレポートの手順については、製品別の技術文書を参照してください。
 
 :::
 
@@ -222,11 +222,11 @@ WhaTapモニタリングサービスは、収集されるすべての指標に�
 
 ### ![](/img/ic-number-09.svg)メンバー管理{#member}
 
-ユーザーは、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="project_member" className="uitext" />メニューでプロジェクトメンバーを追加することができます。 プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
+ユーザーは、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="project_member" className="uitext" />メニューからプロジェクトメンバーを追加することができます。 プロジェクトとグループごとにメンバーの権限を設定し、メンバーを削除することもできます。  
 
 :::note
 
-メンバー権限体系の詳細については、[次の文書](project/project-structure#project-auth)を参考にしてください。
+メンバー権限体系の詳細については、[次の文書](project/project-structure#project-auth)を参照してください。
 
 :::
 

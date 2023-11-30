@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status><UI>アラート通知通知</UI><UI>イベント設定</UI>メニューのメトリクスイベントで通知ルールテスト時間を1日以上に設定するとホワイトアウト発生バグを修正</p>
+<p><Status>Fixed</Status><UI>アラート通知通知</UI><UI>イベント設定</UI>メニューからメトリクスイベントで通知ルールテスト時間を1日以上に設定するとホワイトアウトが発生バグを修正</p>
 
 </div>
 
@@ -30,15 +30,15 @@ toc_max_heading_level: 2
 
 #### 利用内訳
 
-<p><Status>Fixed</Status>言語設定が英語のとき<UI>決済情報</UI>メニューから小文字でも国/地域の検索ができるように修正</p>
+<p><Status>Fixed</Status>言語設定が英語の場合、<UI>決済情報</UI>メニューから小文字で国/地域の検索ができるように修正</p>
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status> <UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリックス</UI>イベントタブで通知規則テストチャートにidの代わりにname関連データが表示されるよう修正
+-   <Status>Fixed</Status> <UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリックス</UI>イベントタブの通知規則テストチャートをidの代わりにname関連データが表示されるよう修正
 
--   <Status>Fixed</Status> <UI>サーバーリスト</UI>><UI>サーバー詳細</UI>メニューから時間範囲を操作すると、更新時に時間初期化されるバグを修正
+-   <Status>Fixed</Status> <UI>サーバーリスト</UI>><UI>サーバー詳細</UI>メニューから時間範囲を操作すると、更新時に時間を初期化されるバグを修正
 
 </div>
 
@@ -50,7 +50,7 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Feature</Status>エージェントでthrottleが設定され、APIリクエスト制限時に案内メッセージを追加
+-   <Status>Feature</Status>エージェントにthrottleが設定され、APIリクエスト制限時に案内メッセージを追加
 
 -   <Status>Fixed</Status>インストールされた環境で<UI>プロジェクト</UI>、<UI>グループ</UI>、<UI>組織</UI>メンバー招待時に存在しないアカウントの場合の案内メッセージを修正
 
@@ -70,15 +70,15 @@ toc_max_heading_level: 2
 
 -   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国の選択に応じて決済プロセスを変更
 
--   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国内の「逆発行口座振替登録」未露出される部分を変更
+-   <Status>Change</Status><UI>決済情報</UI>メニューから決済情報を登録する際、国内の「逆発行口座振替登録」公開されない部分を変更
 
--   <Status>Change</Status><UI>決済情報</UI>メニューからプロモーションバナーの変更
+-   <Status>Change</Status><UI>決済情報</UI>メニューからプロモーションバナーを変更
 
--   <Status>Fixed</Status><UI>決済情報</UI>メニューから「海外カード登録」のplaceholderをロカール言語に合わせて表示するよう修正
+-   <Status>Fixed</Status><UI>決済情報</UI>メニューから「海外カード登録」のplaceholderをロケール言語に表示するよう修正
 
 #### レポート
 
-<p><Status>Fixed</Status>日間アプリケーション ユーザー定義レポートの<b>訪問者</b>項目削除</p>
+<p><Status>Fixed</Status>日次アプリケーション ユーザー定義レポートの<b>訪問者</b>の項目を削除</p>
 
 * * *
 
@@ -88,29 +88,29 @@ toc_max_heading_level: 2
 
 -   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>>メモリ詳細ウィンドウで次の内容を修正します。
 
-    -   **Heapサイズ**→**_システムメモリ_**、**Heap使用量**→**_プロセスメモリ_**にメッセージ変更
+    -   **Heapサイズ**→**_システムメモリ_**、**Heap使用量**→**_プロセスメモリ_**にメッセージを変更
 
-    -   システムGCボタンを除去
+    -   システムGCボタンの取り外し
 
 #### ダッシュボード
 
 -   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>アプリケーションダッシュボード</UI>>メモリ詳細ウィンドウで次の内容を修正します。
 
-    -   名前のカラムサイズが小さくなると、三点リーダーと一緒にマウスオーバー時に、ツールチップが有効になるよう修正
+    -   名前のカラムサイズが小さくなると、マウスポインターを置いたときにツールチップが省略記号でアクティブになります
 
-    -   <UI>詳細</UI>ボタンのツールチップがボタンクリック後も消えないバグを修正
+    -   <UI>詳細</UI>ボタンのツールチップがボタンクリックした後も消えないバグを修正
 
--   <Status>Fixed</Status><UI>アプリケーションダッシュボード</UI>><UI>ヒートマップ</UI>ウィジェットドラッグ><UI>ヒートマップトランザクション</UI>>TXトレース項目選択><UI>統計</UI>ウィンドウで<UI>トランザクションログ</UI>タブのトランザクションログが未設定の場合:
+-   <Status>Fixed</Status><UI>アプリケーションダッシュボード</UI>><UI>ヒートマップ</UI>ウィジェットをドラッグ><UI>ヒートマップトランザクション</UI>>TXトレース項目を選択><UI>統計</UI>ウィンドウの<UI>トランザクションログ</UI>タブのトランザクションログが未設定の場合:
 
-    -   言語設定が日本語の状態:出力される案内メッセージの改行バグを修正
+    -   言語設定が日本語の場合: 出力メッセージの改行バグを修正
 
-    -   言語設定が韓国語の状態:出力される案内メッセージのスタイルが正しく適用されるように修正
+    -   言語設定が韓国語の場合: 出力メッセージのスタイルが正しく適用されるように修正
 
-    -   出力される案内メッセージのリンクをクリックすると、設定された言語に応じたDocsページに移動するよう修正
+    -   出力されるメッセージのリンクをクリックすると、設定された言語のDocsページに移動するよう修正
 
 #### 分析
 
--   <Status>Fixed</Status>MSA分析メニューでデータを照会した際、結果がなければ「データなし」の案内メッセージが出るように修正
+-   <Status>Fixed</Status>MSA分析メニューでデータを検索しても結果がない場合は、「データがありません」というメッセージが表示されるように修正
 
 * * *
 
@@ -130,7 +130,7 @@ toc_max_heading_level: 2
 
 #### 分析
 
-<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューで<UI>MTID/CUSTID照会</UI>入力欄に入力サイズ制限ロジックを削除</p>
+<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューの<UI>MTID/CUSTID参照</UI>入力欄に入力サイズ制限ロジックを削除</p>
 
 </div>
 
@@ -144,7 +144,7 @@ toc_max_heading_level: 2
 
 #### 分析
 
-<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューで<UI>MTID/CUSTID照会</UI>入力欄に数字以外の文字が入力されないバグを修正</p>
+<p><Status>Fixed</Status><UI>マルチトランザクション追跡</UI>メニューの<UI>MTID/CUSTID参照</UI>入力欄に数字以外の文字が入力されないバグを修正</p>
 
 </div>
 
@@ -156,25 +156,25 @@ toc_max_heading_level: 2
 
 ### `共通`
 
-<p><Status>Fixed</Status>言語設定が日本の場合、サイドバーの<UI>グループ作成</UI>, <UI>プロジェクトの作成</UI>ボタンのテキストを英語で出力されるように修正</p>
+<p><Status>Fixed</Status>言語設定が日本語の場合、サイドバーの<UI>グループ作成</UI>, <UI>プロジェクトの作成</UI>ボタンのテキストが英語で出力される不具合を修正</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>メニューで次のように修正します。</p>
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>メニューから次のように修正します。</p>
 
 -   **_アプリケーションエージェントの設定_** > **_Docker PHP_**
 
-    -   **_アクセスキーの確認_**セクションでアクセスキーのコピー領域の上段の小題目を削除
+    -   **_アクセスキーの確認_**セクションからアクセスキーのコピー領域の上部にある小見出しを削除
 
-    -   **_Kubernetes環境変数およびボリューム_**セクションの小題目のメッセージを削除
+    -   **_Kubernetes環境変数およびボリューム_**セクションの小見出しの文言を削除
 
--   **_アプリケーションエージェントのインストール_**>すべてのインストールタイプ:**_アクセスキーを確認_**セクションのメッセージ統一および**チャットでのお問い合わせ**テキスト左側のアイコン追加
+-   **_アプリケーションエージェントのインストール_**>すべてのインストールタイプ:**_アクセスキーを確認_**セクションの文言を統一および**チャットの問い合わせ**テキストの左側にアイコンを追加
 
--   **_インストールの案内_**セクションで**_チャットでのお問い合わせ_**ボタンのアイコンをチャットトークのアイコンと統一
+-   **_インストールガイド_**セクションで**_チャットのお問い合わせ_**ボタンのアイコンをチャットトークのアイコンに統一します
 
--   **_クバネティスエージェントのインストール_**>**_KUBERNETES_**>**_クバネティスエージェントの作成_**セクションにOOM発生問題関連のメッセージを追加
+-   **_クバネティスエージェントのインストール_**>**_KUBERNETES_**>**_クバネティスエージェントの作成_**セクションにOOM発生の問題に関する通知を追加
 
 </div>
 
@@ -188,11 +188,12 @@ toc_max_heading_level: 2
 
 #### Flexボード
 
--   <Status>Fixed</Status>ダッシュボードコピーボタンをクリックすると、メニューが表示されない現象の修正
+-   <Status>Fixed</Status>ダッシュボードのコピーボタンをクリックすると、メニューが表示されない問題を修正
 
--   <Status>Fixed</Status>ダッシュボードコピーウィンドウに漏れ落ちた多国語（英語）の修正
+-   <Status>Fixed</Status>ダッシュボードの
+    コピーウィンドウに欠落している多国語(英語) 修正
 
--   <Status>Change</Status>ダッシュボード<UI>他人にコピー</UI>機能を利用するとダッシュボードのタイトルに<b>_copied</b>接尾語を追加
+-   <Status>Change</Status>ダッシュボード<UI>を他のユーザーにコピー</UI>機能を使用する場合は、ダッシュボードのタイトルに<b>_copied</b>接尾語を追加
 
 </div>
 
@@ -204,7 +205,7 @@ toc_max_heading_level: 2
 
 ### `共通`
 
-<p><Status>Fixed</Status>グループ作成機能が正常動作しているにもかかわらず、エラーメッセージが出力される現象の修正</p>
+<p><Status>Fixed</Status>グループの作成機能が正常に動作しているのにエラーメッセージが表示される不具合を修正</p>
 
 * * *
 
@@ -215,19 +216,19 @@ toc_max_heading_level: 2
     -   韓国語:　比較する→比較
     -   日本語:　ステータス → 状態
 
--   <Status>Fixed</Status><UI>サーバーリスト</UI>メニューで上段のオプションボタンが同時に活性化されないように修正
+-   <Status>Fixed</Status><UI>サーバーリスト</UI>メニューの上部にあるオプションボタンが同時に有効にならないように修正
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>><UI>アプリケーションエージェントの設定</UI>メニューで<UI>Docker PHP</UI>タブ<UI>モニタリングを開始する</UI>項目のイメージが多国語の設定に従わず、韓国語のダッシュボードイメージを出力する現象を修正</p>
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントの設定</UI>><UI>アプリケーションエージェントの設定</UI>メニューの<UI>Docker PHP</UI>タブ<UI>モニタリング</UI>項目のイメージが多言語設定に従わず、韓国語のダッシュボード画像を表示する問題を修正</p>
 
 * * *
 
 ### `実験室`
 
-<p><Status>New</Status><UI>実験室</UI>メニューで<UI>統合ログファインダー</UI>追加</p>
+<p><Status>New</Status><UI>ラボラトリー</UI>メニューから<UI>統合されたログ検索</UI>追加</p>
 
 </div>
 
@@ -239,7 +240,7 @@ toc_max_heading_level: 2
 
 ### `Server`
 
-<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューで<UI>アラートルールテスト</UI>チャートでマウスホバーすると、同時に複数のチャートのデータが表示されるように修正</p>
+<p><Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューから<UI>アラートルールテスト</UI>チャートにカーソルを合わせると、同時に複数のチャートのデータが表示されるように修正</p>
 
 * * *
 
@@ -257,13 +258,13 @@ toc_max_heading_level: 2
 
 ### `共通`
 
-<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボードお気に入り機能を使うと、サイドバーがメニューに追加されない現象の修正</p>
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューからダッシュボードのお気に入り機能がサイドバーがメニューに追加されない問題を修正</p>
 
 * * *
 
 ### `Application`
 
-<p><Status>Change</Status><UI>統計</UI>,<UI>ヒートマップ</UI>メニューで検索機能(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)を使うと時間セレクタの<UI>最近検索時間</UI>一覧に最近の検索時間を追加するように変更</p>
+<p><Status>Change</Status><UI>統計</UI>,<UI>ヒートマップ</UI>メニューの検索機能(<img src='/img/ico-btn-search.png' alt='검색 아이콘'/>)を使用すると、時間セレクタの<UI>最近の検索時間</UI>一覧に最新の検索時間を追加するように変更</p>
 
 </div>
 
@@ -273,7 +274,7 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status>グループに属したプロジェクトメニューで更新すると、ローディングが無限に続く現象の修正</p>
+<p><Status>Fixed</Status>グループに属したプロジェクトメニューから更新時の無限読み込みに続く問題を修正</p>
 
 </div>
 
@@ -283,13 +284,13 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
-<p><Status>Change</Status>パスワード有効性チェックのロジックを変更</p>
+<p><Status>Change</Status>パスワード検証ロジックを変更</p>
 
 -   最低９桁のアルファベットの小文字および大文字、数字、特殊記号で３種以上の組み合わせ
 
 -   Eメールと同じパスワードの使用不可
 
--   既存に使用したパスワードと同一のパスワード使用不可
+-   以前に使用したパスワードと同じのパスワード使用不可
 
 -   連続するキーボード配列に含まれたパスワード使用不可
 
@@ -297,7 +298,7 @@ toc_max_heading_level: 2
 
 -   連続する数字を含むパスワード使用不可
 
--   現在使用しているパスワードと同一のパスワード使用不可
+-   現在使用しているパスワードと同じパスワード使用不可
 
 </div>
 
@@ -307,9 +308,9 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status>次のメニューのパスで<UI>Key</UI>検索ボックスに一文字だけ入力すると検索ボックス外にフォーカスが外れる現象の修正</p>
+<p><Status>Fixed</Status>次のメニューのパスの<UI>Key</UI>検索ボックスに１文字だけ入力すると、検索ボックスの外にフォーカスが移動する問題を修正</p>
 
--   <UI>アプリケーション</UI>><UI>インスタンスパフォーマンス分析</UI>><UI>エージェント設定</UI>(旧バージョン)
+-   <UI>アプリケーション</UI>><UI>インスタンスのパフォーマンス分析</UI>><UI>エージェント設定</UI>(旧バージョン)
 
 -   <UI>管理</UI>><UI>エージェント設定</UI>><UI>旧バージョン</UI>><UI>エージェント設定</UI>(旧バージョン)
 
@@ -321,7 +322,7 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status> <UI>Flexボード</UI>メニューでリアルタイムで照会すると、最初の呼び出しを除くアップデートAPIリクエストに関して60秒のタイムアウトの設定</p>
+<p><Status>Fixed</Status> <UI>Flexボード</UI>メニューからリアルタイムで検索すると、最初の呼び出しを除くアップデートAPIリクエストに60秒のタイムアウトを設定</p>
 
 </div>
 
@@ -333,7 +334,7 @@ toc_max_heading_level: 2
 
 ### `Container`
 
-<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューで照会ボタンをクリックすると、データが出力されずローディングのみ表示されるバグの修正</p>
+<p><Status>Fixed</Status><UI>リソース</UI>><UI>コンテナボリューム</UI>メニューから参照ボタンをクリックすると、データ出力なしで読み込みのみが表示されるバグの修正</p>
 
 </div>
 
@@ -357,25 +358,25 @@ toc_max_heading_level: 2
 
 ### `共通`
 
-<p><Status>Fixed</Status>プロジェクトを生成した後、自動で更新されない現象の修正</p>
+<p><Status>Fixed</Status>プロジェクトを生成した後、自動で更新されない問題を修正</p>
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status>Pythonプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>エージェントのダウンロード</UI>セクションのダウンロードコマンドの修正
+-   <Status>Fixed</Status>Pythonプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから<UI>エージェントのダウンロード</UI>セクションでダウンロードコマンドの修正
 
--   <Status>Fixed</Status>Javaプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>JVMオプション追加</UI>セクションのJVMオプションコードの修正
+-   <Status>Fixed</Status>Javaプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから<UI>JVMオプション追加</UI>セクションのJVMオプションコードの修正
 
--   <Status>Fixed</Status>Node.jsプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューでNode.jsサポートバージョンのメッセージを修正
+-   <Status>Fixed</Status>Node.jsプロジェクト><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからNode.jsサポートバージョンのメッセージを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Fixed</Status><UI>サーバーリスト</UI>メニューで比較するサーバーを選択すると<UI>期間照会</UI>ボタンがアクティブ化されないバグの修正
+-   <Status>Fixed</Status><UI>サーバーリスト</UI>メニューから比較するサーバーを選択すると<UI>期間参照</UI>ボタンがアクティブ化されないバグの修正
 
--   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント履歴</UI>メニューで<UI>処理内容</UI>追加するとイベントIDがDBに保存されないバグの修正
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント履歴</UI>メニューで<UI>処理内容</UI>を追加するとイベントIDがDBに保存されないバグの修正
 
 </div>
 
@@ -385,9 +386,9 @@ toc_max_heading_level: 2
 
 <div class='indentTab'>
 
--   <Status>Fixed</Status>プロジェクト内で組織が変更されないバグの修正
+-   <Status>Fixed</Status>プロジェクト内で組織が変更できないバグの修正
 
--   <Status>Fixed</Status><UI>組織管理</UI>メニューで<UI>ガイド文書表示</UI>ボタンをクリックすると、ユーザーが選択した言語のガイド文書へ移動するように修正
+-   <Status>Fixed</Status><UI>組織管理</UI>メニューの<UI>ガイド文書の表示</UI>ボタンをクリックすると、ユーザーが選択した言語のガイド文書に移動するように修正
 
 -   <Status>Fixed</Status><UI>Flexボード</UI>メニューでのダッシュボードで、テーブルウィジェットの場合、boolean値を確認できるように修正
 
@@ -401,9 +402,9 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Fixed</Status>無料プロジェクトを10件超過生成すると、表示されるエラーメッセージの修正
+-   <Status>Fixed</Status>無料プロジェクトを10個以上作成する際のエラーメッセージの修正
 
--   <Status>Fixed</Status>時間選択UIでカレンダーで選択した時間が<UI>最近検索時間</UI>一覧で保存されないバグの修正
+-   <Status>Fixed</Status>時間選択UIでカレンダーで選択した時間が<UI>最近の検索時間</UI>一覧で保存されないバグを修正
 
 * * *
 
@@ -411,9 +412,9 @@ toc_max_heading_level: 2
 
 #### アラート通知
 
--   <Status>Fixed</Status><UI>イベント設定</UI>メニューで非活性化されたサーバーのアラート設定の有無が表示されないバグの修正
+-   <Status>Fixed</Status><UI>イベント設定</UI>メニューから無効化されたサーバーのアラート設定の有無が表示されないバグの修正
 
--   <Status>Fixed</Status><UI>イベント設定</UI>メニューで<UI>ログファイル/ウィンドウイベント</UI>のイベントを現在のプロジェクトにコピーすると、正常処理されたのにもかかわらず、エラーメッセージが表示されるバグの修正
+-   <Status>Fixed</Status><UI>イベント設定</UI>メニューから<UI>ログファイル/ウィンドウイベント</UI>のイベントをプロジェクトにコピーすると、正常に処理されているにもかかわらず、エラーメッセージが表示されるバグを修正
 
 * * *
 
@@ -421,13 +422,13 @@ toc_max_heading_level: 2
 
 #### PostgreSQL V2
 
--   <Status>Fixed</Status> <UI>統計/レポート</UI>><UI>SQL統計</UI>メニューで<UI>結果内の検索</UI>機能が動作しない問題の修正
+-   <Status>Fixed</Status> <UI>統計/レポート</UI>><UI>SQL統計</UI>メニューから<UI>結果の検索</UI>機能が動作しない問題を修正
 
--   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下のテーブルの配置が初期化される現象の修正
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューから画面下のテーブルの並べ替えを初期化する問題を修正
 
--   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューで画面下のテーブルのスクロールを最下段まで移動しないと、左右のスクロールバーが見えない現象の修正
+-   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューから画面下のテーブルのスクロールを最下部までスクロールしないと、左右のスクロールバーが表示されない問題を修正
 
--   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>インスタンスモニタリング</UI>、<UI>マルチインスタンスモニタリング</UI>メニューで<UI>セッション詳細</UI>ウインドウの<UI>Session Info</UI>データが位置する要素の幅よりテキストが長くなる場合に備えてCSSを修正
+-   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>インスタンスモニタリング</UI>、<UI>マルチインスタンスモニタリング</UI>メニューから<UI>セッション詳細</UI>ウインドウの<UI>Session Info</UI>データが配置されている要素の幅よりもテキストが長い場合のCSSを修正
 
 </div>
 
@@ -439,31 +440,31 @@ toc_max_heading_level: 2
 
 ### `AWS Log`
 
-<p><Status>New</Status><b>AWS Log</b>モニタリングサービスをオープンします。 たくさんのご利用をお待ちしております！ 商品の詳細については、<a href='../../aws-log/introduction'>次のドキュメント</a>を参考にしてください。</p>
+<p><Status>New</Status><b>AWS Log</b>モニタリングサービスを開始しました。 ご利用いただき誠にありがとうございます! 商品の詳細については、<a href='../../aws-log/introduction'>次のドキュメント</a>を参照してください。</p>
 
 * * *
 
 ### `共通`
 
--   <Status>Fixed</Status>日本語画面で一部間違った翻訳を修正
+-   <Status>Fixed</Status>日本語画面で一部の間違った翻訳を修正
 
--   <Status>Deprecate</Status>多国語サービスの内、中国語サポートの中断
+-   <Status>Deprecate</Status>多言語サービスの中国語サポートの中断
 
 #### サイドバー
 
--   <Status>Feature</Status>サイドバーでプロジェクト名にプロジェクト全体の名前を表示するツールチップを追加
+-   <Status>Feature</Status>サイドバーのプロジェクト名にプロジェクト全体の名前を表示するツールチップを追加
 
--   <Status>Change</Status>サイドバーで<code>AWS Log</code>プロジェクトアイコン変更
+-   <Status>Change</Status>サイドバーの<code>AWS Log</code>プロジェクトアイコン変更
 
 #### ダッシュボード
 
--   <Status>Change</Status>シリーズチャートデザイン修正
+-   <Status>Change</Status>シリーズチャートのデザイン修正
 
     | 修正前                                             | 修正後                                           |
     | ----------------------------------------------- | --------------------------------------------- |
     | ![before](/img/release/series-chart-before.png) | ![after](/img/release/series-chart-after.png) |
 
--   <Status>Change</Status>ヒートマップボタンデザインを修正
+-   <Status>Change</Status>ヒートマップボタンのデザインを修正
 
     | 修正前                                              | 修正後                                            |
     | ------------------------------------------------ | ---------------------------------------------- |
@@ -471,47 +472,47 @@ toc_max_heading_level: 2
 
 #### Flexボード
 
-<p><Status>Change</Status> <b>プロジェクトフレックスボード編集</b>権限に応じてダッシュボードの修正を制限するようUIを修正</p>
+<p><Status>Change</Status> <b>プロジェクトのフレックスボード編集</b>権限に基づいてダッシュボードの修正を制限するように UIを修正</p>
 
 #### レポート
 
--   <Status>Feature</Status><UI>統合レポート</UI>メニューで日間タイプレポートの時間選択の制限を修正
+-   <Status>Feature</Status><UI>統合レポート</UI>メニューにおける日報タイプの時間選択の制限を修正
 
     -   **既存**：終了時間を前日23時59分まで選択可能
 
-    -   **変更**：終了時間を現在の時間基準、1時間前(現在の時間 - 1時間)まで選択可能
+    -   **変更**：終了時間を現在の時間から1時間前(現在の時間 - 1時間)まで選択可能
 
--   <Status>Fixed</Status><UI>統合レポート</UI>><UI>日間レポート</UI>メニューで<UI>終了時間</UI>を本日と選択する時、選択した時間が自動矯正されるロジックの削除
+-   <Status>Fixed</Status><UI>統合レポート</UI>><UI>レポート</UI>メニューで<UI>終了時間</UI>を本日と選択する場合、選択時間の自動調整ロジックを削除
 
 #### アラート通知
 
--   <Status>Feature</Status><UI>イベント受信設定</UI>><UI>ユーザー別アラート受信設定</UI>メニューで<b>WhatsApp</b>アラート設定の追加
+-   <Status>Feature</Status><UI>イベント受信設定</UI>><UI>ユーザー別アラート受信設定</UI>メニューから<b>WhatsApp</b>アラート設定の追加
 
--   <Status>Fixed</Status><UI>イベント受信設定</UI>メニューでEメール, SMS, WhatsApp, モバイルアラートカラムの最小幅の設定
+-   <Status>Fixed</Status><UI>イベント受信設定</UI>メニューから、Eメール, SMS, WhatsApp, モバイルアラートのカラムの最小幅の設定
 
--   <Status>Fixed</Status><UI>イベント受信設定</UI>メニューで各ユーザーの受信設定に関する詳細内容を確認する時(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/>ボタン選択する時)設定内容が垂直に上(Top)に配置されるスタイルに修正
+-   <Status>Fixed</Status><UI>イベント受信設定</UI>メニューで各ユーザーの受信設定に関する詳細内容を確認する場合(<img src='/img/ic-caret-right.svg' alt='その他のアイコン'/>ボタンを選択する場合) 設定内容が垂直に上(Top)に配置されるスタイルに修正
 
 #### 管理
 
 -   <Status>Feature</Status> <b>プロジェクトフレックスボード編集</b>権限を追加
 
--   <Status>Fixed</Status><UI>エージェント設定</UI>メニューから多重適用api修正
+-   <Status>Fixed</Status><UI>エージェント設定</UI>メニューから複数適用api修正
 
--   <Status>Feature</Status> <UI>組織作成</UI>及び<UI>組織管理</UI>メニューでロゴ画像の案内文を追加(画像の推奨サイズ、ファイル容量、拡張子に関する案内)
+-   <Status>Feature</Status> <UI>組織作成</UI>及び<UI>組織管理</UI>メニューでロゴ画像の追加に関する指示(画像の推奨サイズ、ファイル容量、拡張子に関する指示)
 
--   <Status>Feature</Status> <UI>メンバー一覧</UI>メニューでメンバーの削除及び権限修正ボタンの位置をメンバー名カラムに移動
+-   <Status>Feature</Status> <UI>メンバー一覧</UI>メニューでメンバーの削除及びアクセス権限の修正ボタンをメンバー名カラムに移動
 
--   <Status>Change</Status><UI>アカウント情報管理</UI>メニューでユーザーパスワード設定規則を９桁に変更
+-   <Status>Change</Status><UI>アカウント情報管理</UI>メニューからユーザーパスワード設定ルールを9桁に変更
 
--   <Status>Feature</Status><UI>アカウント情報管理</UI>><UI>ユーザー電話番号</UI>,<UI>アラート受信設定</UI>メニューで<b>WhatsApp</b>アラート設定の追加
+-   <Status>Feature</Status><UI>アカウント情報の管理</UI>><UI>ユーザー電話番号</UI>,<UI>アラート受信設定</UI>メニューから<b>WhatsApp</b>アラート設定の追加
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status>最近の30秒以内のトランザクションログデータが照会されない現象の修正
+-   <Status>Fixed</Status>最近の30秒以内のトランザクションログデータが検索されない問題の修正
 
--   <Status>Fixed</Status>サービス画面の言語が英語に設定された状態で、Pythonプロジェクトの<UI>管理</UI> > <UI>エージェントインストール</UI> > <UI>Virtual Environment活性化</UI>セクションで誤字を修正
+-   <Status>Fixed</Status>サービス画面の言語が英語に設定された状態で、Pythonプロジェクトの<UI>管理</UI> > <UI>エージェントインストール</UI> > <UI>Virtual Environmentの有効化</UI>セクションで誤字を修正
 
 * * *
 
@@ -519,16 +520,16 @@ toc_max_heading_level: 2
 
 #### アラート通知
 
--   <Status>Feature</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>(旧：<b>通知ポリシーコピー</b>) 機能に<UI>現在のプロジェクトにコピー</UI>できるオプションを追加
+-   <Status>Feature</Status> <UI>イベント設定</UI>メニューから<UI>イベント設定コピー</UI>(旧,<b>通知ポリシーのコピー</b>) 機能に<UI>現在のプロジェクトにコピー</UI>できるオプションを追加
 
--   <Status>Change</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>機能を次のように変更
+-   <Status>Change</Status> <UI>イベント設定</UI>メニューから<UI>イベント設定コピー</UI>機能を次のように変更
 
-    -   **既存**：コピーしたイベントのタイトルを同じように使用してコピー対象プロジェクトにイベントを重複コピーすると、最後にコピーしたイベントに上書きされます。
+    -   **既存**：コピーしたイベントのタイトルを同じように使用して、コピー対象プロジェクトにイベントを複製コピーすると、最後に複製されたイベントに上書きされます。
 
     -   **変更**
 
         -   イベントのタイトルとして`{コピーしたイベント名}(copy)`を使用
-        -   コピー対象プロジェクトにイベントを重複コピーすると、コピーした回数だけイベントを作成
+        -   コピー対象プロジェクトにイベントを複製コピーすると、コピーされた回数のイベントを作成
 
 * * *
 
@@ -536,9 +537,9 @@ toc_max_heading_level: 2
 
 #### PostgreSQL
 
--   <Status>New</Status> <b>PostgreSQL V2</b>モニタリングサービスをオープンしました。 従来に比べて変更された機能を確認するには<a href='../../postgresql/monitoring-intro#new-feature'>次の文書</a>を参考にしてください。
+-   <Status>New</Status> <b>PostgreSQL V2</b>モニタリングサービスをオープンしました。 以前の機能と比較して変更された機能を確認するには<a　href='../../postgresql/monitoring-intro#new-feature'>次の文書</a>を参照してください。
 
--   <Status>Change</Status> <b>PostgreSQL V2</b>製品のメニューのうち以下の3つを<UI>サイトマップ</UI>を通じて接近するように変更
+-   <Status>Change</Status> <b>PostgreSQL V2</b>製品のメニューから以下の3つを<UI>サイトマップ</UI>にアクセスするように変更
 
     -   **_分析_** > **_ログファイルビューア_**
 
@@ -552,45 +553,45 @@ toc_max_heading_level: 2
 
 #### ダッシュボード
 
--   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューのコンテナ要約表示パネルで<UI>ログ</UI> > <UI>ログ検索</UI>タブにログ照会権限と状態によってメッセージを異なるように表示
+-   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューのコンテナサマリー表示パネルで<UI>ログ</UI> > <UI>ログ検索</UI>タブにログ参照権限とステータスに応じてメッセージが異なるように表示
 
--   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューのコンテナ要約表示パネルで<UI>イベント</UI>タブにイベント数を表示する<UI>イベント数推移</UI>チャートを追加
+-   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューのコンテナサマリー表示パネルの<UI>イベント</UI>タブにイベント数を表示する<UI>イベント数推移</UI>チャートを追加
 
 -   <Status>Feature</Status> <UI>コンテナマップ</UI>メニューに<UI>不一致</UI>フィルターオプションを追加
 
 #### リソース
 
--   <Status>Fixed</Status> <UI>ノード詳細</UI>メニューで下段コンテナ領域のコンテナ構成情報のカラム順序を変更
+-   <Status>Fixed</Status> <UI>ノード詳細</UI>メニューから下部のコンテナ領域のコンテナ構成情報のカラム順序を変更
 
--   <Status>Change</Status> <UI>コンテナボリューム</UI>メニューで<img src='/img/ico-search.svg' alt='검색 아이콘'/>ボタンを選択すると一覧が出力されるという案内メッセージを追加
+-   <Status>Change</Status> <UI>コンテナのボリューム</UI>メニューから<img src='/img/ico-search.svg' alt='검색 아이콘'/>ボタンを選択すると一覧が表示されるメッセージを追加
 
--   <Status>Feature</Status> <UI>パフォーマンス要約</UI>メニューにコンテナ数、パッド数の推移チャートを追加
+-   <Status>Feature</Status> <UI>パフォーマンスサマリー</UI>メニューからコンテナ数、パッド数の推移チャートを追加
 
 <!---->
 
--   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題の修正
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題を修正
 
--   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでインストールされたエージェントがない場合、ローディングアニメーションでなく、インストールされたエージェントがないという案内メッセージが表示されるように修正
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでインストールされたエージェントがない場合、ローディングアニメーションの代わりにインストールされたエージェントがないというメッセージが表示されるように修正
 
 #### 管理
 
--   <Status>Fixed</Status> <UI>エージェントインストール</UI>メニューで案内メッセージを修正
+-   <Status>Fixed</Status> <UI>エージェントインストール</UI>メニューのメッセージを修正
 
--   <Status>Fixed</Status>サービス画面の言語が日本語に設定された状態で<UI>エージェントインストール</UI> メニューの日本語メッセージを修正
+-   <Status>Fixed</Status>サービス画面の言語が日本語に設定した場合の<UI>エージェントインストール</UI> メニューの日本語の文言を修正
 
 * * *
 
 ### `Log`
 
--   <Status>Feature</Status> <UI>ログ</UI>下位メニューで<img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>テーブル設定</UI> > <UI>カラム設定</UI>に <UI>カラム追加</UI>項目として<UI>timestamp</UI>を追加
+-   <Status>Feature</Status> <UI>ログ</UI>サブメニューで<img src='/img/ico-setting.svg' alt='設定アイコン'/> <UI>テーブル設定</UI> > <UI>カラム設定</UI>に <UI>カラム追加</UI>項目として<UI>timestamp</UI>を追加
 
--   <Status>Change</Status>パーサーシミュレーション失敗時に表示されるメッセージを変更
+-   <Status>Change</Status>パーサーのシミュレーション失敗時に表示されるメッセージを変更
 
--   <Status>Feature</Status> <UI>ログ検索エンジン</UI>メニューで選択したログと隣接する時間帯のログを照会できる機能の追加
+-   <Status>Feature</Status> <UI>ログブラウザ</UI>メニューから選択したログと隣接するタイムゾーンのログを参照できる機能の追加
 
--   <Status>Feature</Status> <UI>ログ検索機</UI>、<UI>ログトレンド</UI>、<UI>トランザクションログ</UI>メニューでキーワードのハイライト機能を追加
+-   <Status>Feature</Status> <UI>ログブラウザ</UI>、<UI>ログトレンド</UI>、<UI>トランザクションログ</UI>メニューにキーワードのハイライト機能を追加
 
--   <Status>Fixed</Status> <UI>ログ設定</UI> > <UI>ログ長期保管統計</UI>メニューでログ検出条件を追加すると<UI>ログ検出条件</UI>検索キーを入力しないと出力される案内メッセージを修正
+-   <Status>Fixed</Status> <UI>ログ設定</UI> > <UI>ログ長期保存統計</UI>メニューからログ検出条件を追加すると<UI>ログ検出条件</UI>検索キーを入力しないと表示されるメッセージを修正
 
 * * *
 
@@ -598,24 +599,24 @@ toc_max_heading_level: 2
 
 #### レポート
 
-<p><Status>Feature</Status><UI>レポート</UI>><UI>日間WEBブラウサレポート</UI>メニューの追加</p>
+<p><Status>Feature</Status><UI>レポート</UI>><UI>日次WEBブラウサレポート</UI>メニューの追加</p>
 
 #### ダッシュボード
 
-<p><Status>Feature</Status><UI>WEBブラウサエラー</UI>メニューでエラーに関する詳細画面の追加</p>
+<p><Status>Feature</Status><UI>WEBブラウザー</UI>メニューからエラーに関する詳細画面の追加</p>
 
 #### 分析
 
--   <Status>Feature</Status><UI>ページロードヒートマップ</UI>メニューでページロード詳細データにOSバージョン、クライアントIP情報追加
+-   <Status>Feature</Status> <UI>[ページ読み込みヒートマップ] メニューで</UI>、オペレーティング システムのバージョンとクライアント IP 情報をページ読み込みの詳細に追加
 
--   <Status>Change</Status><UI>ページロードヒートマップ</UI>メニューで<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
+-   <Status>Change</Status><UI>ページ読み込みヒートマップ</UI>メニューから<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
 
--   <Status>Change</Status><UI>エラー追跡</UI>メニューでエラースタック照会UIの変更
+-   <Status>Change</Status><UI>エラー追跡</UI>メニューのエラースタック参照UIの変更
 
 * * *
 
 ### `実験室`
 
-<p><Status>Feature</Status> <code>Container</code>, <code>Java</code>製品に<UI>サイトマップ</UI>  > <UI>実験室</UI> > <UI>Remote Access Status</UI>メニューを追加</p>
+<p><Status>Feature</Status> <code>Container</code>, <code>Java</code>製品に<UI>サイトマップ</UI>  > <UI>ラボラトリー</UI> > <UI>Remote Access Status</UI>メニューを追加</p>
 
 </div>

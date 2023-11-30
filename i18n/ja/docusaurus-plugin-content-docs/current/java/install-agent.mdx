@@ -29,36 +29,6 @@ import TR from '@site/src/components/TR';
 
     モニタリングエージェントの構成情報、アクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。詳細については、[次の文書](set-agent)を参照してください。
 
--   _security.conf_ `Javaエージェント2.2.2バージョン以降`
-
-    thread停止と画面上の各種変数を確認するためのパスワード（6桁の英語、数字で構成）を入力してください。
-
-    ```ini title='security.conf'
-    paramkey=ABCDEF # SQL変数およびHTTPクエリの照会
-    threadkill=ABCDEF # Thread停止機能
-    ```
-
--   _paramkey.txt_ `Javaエージェント2.2.2バージョン以下`
-
-    画面上で各種変数を確認するためのパスワード（6桁の英語、数字で構成）を入力します。
-
-    ```ini title='paramkey.txt'
-    ABCDEF # SQL変数およびHTTPクエリの参照
-    ```
-
-    :::note
-
-    Javaエージェント2.2.2バージョン以前から2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が_seuciry.conf_ファイルのキー値として自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用し、2.2.2バージョンにアップデートした場合、_security.conf_ファイルは次のように適用されます。
-
-    ```ini
-    paramkey=FEDCBA
-    threadkill=FEDCBA
-    ```
-
-    _paramkey.txt_ファイルが存在しない場合、_security.conf_ファイルのキー値は、**WHATAP**というキー値で自動的に生成されます。
-
-    :::
-
 -   _ping.sh(bat)_
 
     現在設定しているアクセスキーで、WhaTapデータ収集サーバーと通信を行い、設定やネットワークに問題がないか確認するためのスクリプト(バッチ)ファイルです。
@@ -83,11 +53,7 @@ import TR from '@site/src/components/TR';
 
     アプリケーションサーバーが稼働しているサーバーからWhaTap収集サーバーに直接接続ができない場合、その間のProxyサーバー(経由サーバー)で経由する役割を果たすアプリケーションです。
 
--   _logs/whatap-`yyyymmdd`.log_
-
-    モニタリングエージェントによって出力されるログファイルです。
-
-{@include: ../common-items/_whatap_conf.mdx} 
+{@include: ../common-items/_whatap_conf.mdx}
 
 ## JVMオプション追加{#addjvmopt}
 

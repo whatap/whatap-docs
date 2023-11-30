@@ -34,7 +34,7 @@ To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/ko/s
 Once you have received the **access key**, download the agent with the following command.
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash title='SH'
 ## Register the package repository
@@ -45,7 +45,7 @@ $ sudo yum install whatap-agent
 ```
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 ```bash title='SH'
 ## Register the package repository
@@ -59,7 +59,7 @@ $ sudo apt-get install whatap-agent
 ```
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 ```bash title='SH'
 ## Register the package repository
@@ -75,7 +75,7 @@ $ sudo yum install whatap-agent
 ```
 
 </TabItem>
-<TabItem value="alpinelinux" label="Alpine Linux">
+<TabItem value="apl" label="Alpine Linux">
 
 [whatap-agent.tar.gz]After downloading the file (https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz), unzip the file based on the "/" directory. Create the monitoring file in the _/usr/whatap/agent_ path.
 
@@ -195,52 +195,24 @@ WHATAP_HOME=./whatap_home1 ./app
 
 ```
 
-## Configuring the Go library
+<!--Go 라이브러리 설정하기-->
 
-Add the [github.com/whatap/go-api](https://github.com/whatap/go-api) package to the Go application source code.
-
-```bash
-go get github.com/whatap/go-api
-```
-
-Configure for initialization and shutdown with the `trace.Init()` and `trace.Shutdown()` functions. Set the startup and end for transactions with the `trace.Start()` and `trace.End()` functions.
-
-```go title='Go'
-import "github.com/whatap/go-api/trace"
-
-func main(){
-    trace.Init(nil)
-    //It must be executed before closing the app.    
-    defer trace.Shutdown()    
-
-    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
-
-    ...
-
-    trace.End(ctx, err)
-}
-```
-
-:::note
-
-For more information about the library configuration, see [the following](api-guide).
-
-:::
+{@include: ../common-items/_go-docker-setting-library.mdx}
 
 ## Starting the monitoring
 
 <Tabs groupId="golang">
-<TabItem value="redhat-centos" label="Red Hat/CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 Once the application server has been restarted, the agent starts collecting data.
 
 </TabItem>
-<TabItem value="debian-ubuntu" label="Debian/Ubuntu">
+<TabItem value="du" label="Debian/Ubuntu">
 
 Once the application server has been restarted, the agent starts collecting data.
 
 </TabItem>
-<TabItem value="amazonlinux" label="Amazon Linux">
+<TabItem value="al" label="Amazon Linux">
 
 1.  Execute the following command to install the WhaTap agent daemon.
 

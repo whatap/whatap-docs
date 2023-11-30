@@ -1,14 +1,14 @@
 ---
 id: install-agent-docker
 title: Docker環境インストール
-description: description
+description: Docker環境でDockerFileを作成し、Node.jsエージェントをインストールして実行する方法について説明します。
 tags:
   - Node.js
   - エージェント
   - DockerFile
 ---
 
-Docker環境でDockerFileを作成し、Node.jsエージェントをインストールして実行する方法について案内します。 次の案内で使用した例ファイルは、[次のリンク](https://github.com/whatap/nodejs_sample_application/tree/main/simple_http)を参考にしてください。
+Docker環境でDockerFileを作成し、Node.jsエージェントをインストールして実行する方法について説明します。 次の手順で使用するサンプルファイルは、[次のリンク](https://github.com/whatap/nodejs_sample_application/tree/main/simple_http)を参照してください。
 
 ## ファイル構成
 
@@ -16,19 +16,19 @@ Node.jsエージェントのサンプル ファイルは、次のように構成
 
 -   _html_：サンプルアプリケーションフォルダ
 
--   _Dockerfile_：ドッカーイメージビルド用の設定ファイル
+-   _Dockerfile_: Dockerイメージビルド用の設定ファイル
 
--   _http.js_：サンプルアプリケーションファイル
+-   _http.js_: サンプルアプリケーションファイル
 
--   _package.json_：サンプルアプリケーション情報と依存性(dependency)管理文書
+-   _package.json_: サンプルアプリケーション情報と依存関係(dependency)管理文書
 
--   _whatap.conf_：モニタリングのためのオプション設定ファイル
+-   _whatap.conf_: モニタリングのオプション設定ファイル
 
--   _paramkey.txt_：パラメータ暗号化キー
+-   _paramkey.txt_: パラメータ暗号化キー
 
 ## エージェントインストール
 
-_package.json_ファイルにNode.jsエージェントを追加するかnpmインストールコマンドを実行してください。
+_package.json_ファイルにNode.jsエージェントを追加するか、npmインストールコマンドを実行してください。
 
 ```json title='package.json'
 "dependencies": {
@@ -40,9 +40,9 @@ _package.json_ファイルにNode.jsエージェントを追加するかnpmイ�
 npm install --save whatap
 ```
 
-## コンテナイメージビルド
+## コンテナイメージをビルド
 
-イメージビルドのためのDockerfileを作成してください。
+イメージをビルドするためのDockerfileを作成してください。
 
 ```docker title='Dockerfile'
 FROM node:latest
@@ -65,7 +65,7 @@ $ docker build -t sampleapp/nodejs:0503 .
 
 ## 実行する
 
-環境変数に収集サーバーIPおよびアクセスキーを作成してコンテナを起動すると、Node.jsエージェントとともにアプリケーションが動作します。
+環境変数に収集サーバーIPおよびアクセスキーを作成してコンテナを起動すると、Node.jsエージェントと連携してアプリケーションが動作します。
 
 ```bash
 export WHATAP_LICENSE={access Key}

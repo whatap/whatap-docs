@@ -1,0 +1,204 @@
+---
+id: analysis-top-object
+title: Top Object
+description: It provides information to help users make appropriate tuning and optimize the database.
+tags:
+  - PostgreSQL
+  - Database
+  - Top Object
+---
+
+Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="dbObjectInfo" className="uitext" />
+
+It provides objects with the bloating size, scan count, DML execution count, and objects with many dead tuples for each object (table, index) of individual instance, and provides information to identify objects that are used a lot and perform Vacuum or Analyze at appropriate times.
+
+<ImgLang img='db-top-object.png' desc='Top object' />
+
+Set <Cmdname sid="date" className="uitext" />, <Cmdname sid="instance" className="uitext" />, <Cmdname sid="TTL06346" className="uitext" />, and <Cmdname sid="TTL06345" className="uitext" /> to view on the screen and then select ![Search icon](/img/ico-btn-search.png). The results for the selected conditions appear in the table.
+
+:::note
+
+-   The <Cmdname sid="dbObjectInfo" /> data is collected once a day. For more information about the related agent settings, see <Link to="#set-agent-topObject">the following</Link>.
+
+-   This function is supported in DBX agent 1.6.13 or later.
+
+:::
+
+## Bloating
+
+**Bloating** is a phenomenon in which the object size increases due to an increase of unused tuples. 
+
+:::tip
+
+**Tuning tips**
+
+For tables with higher `Bloat_ratio`, consider performing the Vacuum operation. For more information, see the following document.
+
+-   [https://postgresql.kr/blog/postgresql_table_bloating.html](https://postgresql.kr/blog/postgresql_table_bloating.html)
+
+-   [https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5](https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5)
+
+:::
+
+If <span class="uitext">Bloating</span> is viewed, the following columns are displayed.
+
+|    Type   | Column name   | Description                                                      |
+| :-------: | ------------- | ---------------------------------------------------------------- |
+| **Table** | `datname`     | Database name                                                    |
+|     ^     | `schemaname`  | Schema name                                                      |
+|     ^     | `tablename`   | Table Name                                                       |
+|     ^     | `est_rows`    | Value predicted by the number of **Dead tuple** + **Live tuple** |
+|     ^     | `table_size`  | Table size                                                       |
+|     ^     | `bloat_size`  | Expected table size inflated by **Dead tuple**                   |
+|     ^     | `bloat_ratio` | Inflated size ratio.                                             |
+| **Index** | `datname`     | Database name                                                    |
+|     ^     | `schemaname`  | Schema name                                                      |
+|     ^     | `tablename`   | Table Name                                                       |
+|     ^     | `indexname`   | Index name                                                       |
+|     ^     | `table_size`  | Table size                                                       |
+|     ^     | `index_size`  | Index size                                                       |
+|     ^     | `bloat_size`  | Expected index size inflated by **Dead tuple**                   |
+|     ^     | `bloat_ratio` | Inflated size ratio.                                             |
+|     ^     | `index_scans` | Number of index scans when using indexes                         |
+
+## Scan
+
+`Seq_scan` means the full scan without using indexes, and `idx_scan` means the number of index uses.
+
+:::tip
+
+**Tuning tips** 
+
+Consider creating indexes for tables with higher `Seq_scan` and deleting indexes with lower `idx_scan`. For more information, see [the following](https://www.postgresql.org/docs/8.1/performance-tips.html).
+
+:::
+
+If <span class="uitext">Scan</span> is viewed, the following columns are displayed.
+
+|    Type   | Column name     | Description                                                         |
+| :-------: | --------------- | ------------------------------------------------------------------- |
+| **Table** | `datname`       | Database name                                                       |
+|     ^     | `schemaname`    | Schema name                                                         |
+|     ^     | `tablename`     | Table Name                                                          |
+|     ^     | `seq_scan`      | Number of sequential scans (full scans) of the table                |
+|     ^     | `seq_tup_read`  | Number of live rows from sequential scans                           |
+|     ^     | `idx_scan`      | Number of index scans for the table                                 |
+|     ^     | `idx_tup_fetch` | Number of live rows read by index scan                              |
+| **Index** | `datname`       | Database name                                                       |
+|     ^     | `schemaname`    | Schema name                                                         |
+|     ^     | `tablename`     | Table Name                                                          |
+|     ^     | `indexname`     | Index name                                                          |
+|     ^     | `idx_scan`      | Number of index scans                                               |
+|     ^     | `idx_tup_fetch` | Number of valid table rows extracted from index scans using indexes |
+|     ^     | `idx_tup_read`  | Number of index items returned by index scan                        |
+
+## DML
+
+Tables with higher `dml_count` values are frequently used tables.
+
+:::tip
+
+**Tuning tips**
+
+Identify major tables and review major issues such as architecture and backup plans.
+
+:::
+
+If <span class="uitext">DML</span> is viewed, the following columns are displayed.
+
+| Column name     | Description                                                          |
+| --------------- | -------------------------------------------------------------------- |
+| `datname`       | Database name                                                        |
+| `schemaname`    | Schema name                                                          |
+| `tablename`     | Table Name                                                           |
+| `dml_count`     | `n_tup_ins` + `n_tup_upd` + `n_tup_del`                              |
+| `n_tup_ins`     | Number of inserted lines                                             |
+| `n_tup_upd`     | Number of updated lines                                              |
+| `n_tup_del`     | Number of deleted lines                                              |
+| `n_tup_hot_upd` | Number of hot updated lines (e.g. no separate index update required) |
+
+## Analyze Time
+
+This list includes objects for which Analyze and Vacuum operations have become outdated.
+
+:::tip
+
+**Tuning tips**
+
+Older tables may have inaccurate statistical information. Review the operations. For more information, see [the following](https://www.enterprisedb.com/blog/postgresql-vacuum-and-analyze-best-practice-tips).
+
+:::
+
+If <span class="uitext">Analyze Time</span> is viewed, the following columns are displayed.
+
+| Column name           | Description                                                       |
+| --------------------- | ----------------------------------------------------------------- |
+| `datname`             | Database name                                                     |
+| `schemaname`          | Schema name                                                       |
+| `tablename`           | Table Name                                                        |
+| `last_analyze`        | Last time of manual table analysis                                |
+| `last_autoanalyze`    | Last time of table analysis by the autovacuum daemon              |
+| `last_autovacuum`     | Last time of table cleanup (vacuum) by the autovacuum daemon      |
+| `analyze_count`       | Number of manual analyses                                         |
+| `last_vacuum`         | Last time of table vacuumed manually (VACUUM FULL not applicable) |
+| `autoanalyze_count`   | Number of analyses by the autovacuum daemon                       |
+| `autovacuum_count`    | Number of cleanups (vacuum) by the autovacuum daemon              |
+| `vacuum_count`        | Number of manual cleanups (vacuum) (VACUUM FULL excluded)         |
+| `n_mod_since_analyze` | Number of lines changed since last analysis (analyze)             |
+
+## Age
+
+In PostgreSQL, XID (transaction id) is used recursively so that the XID may wrap around at a certain point. To prevent this, `xid_age` (Current XID - XID at the time of creation) must be managed so that it does not keep increasing. If `autovacuum_freeze_max_age` exceeds, Anti-Wraparound Vacuum is automatically performed and `xid_age` is managed below `autovacuum_freeze_max_age`.
+
+:::tip
+
+**Tuning tips**
+
+To lower `xid_age`, review performing the Vacuum operation. For more information, see [the following](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND).
+
+:::
+
+If <span class="uitext">Age</span> is viewed, the following columns are displayed.
+
+| Column name                 | Description                                                               |
+| --------------------------- | ------------------------------------------------------------------------- |
+| `datname`                   | Database name                                                             |
+| `schemaname`                | Schema name                                                               |
+| `tablename`                 | Table Name                                                                |
+| `xid_age`                   | Interval (age) of the oldest `xid` cleaned up by vacuum operation         |
+| `table_size`                | Table size                                                                |
+| `autovacuum_vacuum_tuples`  | If the number of dead tuples exceeds this value, autovacuum is performed. |
+| `dead_tuples`               | Number of dead tuples                                                     |
+| `autovacuum_freeze_max_age` | The default value is set to 200 million.                                  |
+
+## Dead Tuple
+
+Dead tuple is the data that has already been deleted using Delete or Update. Review the Vacuum operation to change to free space.
+
+:::tip
+
+**Tuning tips**
+
+To reduce dead tuples, review the Vacuum operation. For more information, see [the following](https://www.postgresql.org/docs/current/routine-vacuuming.html).
+
+:::
+
+If <span class="uitext">Dead Tube</span> is viewed, the following columns are displayed.
+
+| Column name           | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `datname`             | Database name                                             |
+| `schemaname`          | Schema name                                               |
+| `tablename`           | Table Name                                                |
+| `dead_tuple`          | Number of unused tuples due to Delete or Update           |
+| `dead_tuple_ratio`    | Proportion of unused tuples                               |
+| `live_tuple`          | Number of unused tuples                                   |
+| `live_tuple_ratio`    | Proportion of used tuples                                 |
+| `total_relation_size` | Total size of relation including the index and TOAST data |
+| `total_tuple`         | Number of all tuples                                      |
+
+## Agent setting{#set-agent-topObject}
+
+The following is the agent setting to view <Cmdname sid="dbObjectInfo" /> information. Check the options required in _whatap.conf_.
+
+{@include: ../common-items/_db-pg-top-object-agent-setting.mdx}

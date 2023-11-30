@@ -9,7 +9,7 @@ tags:
   - メトリックス
 ---
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="containerMap" className="uitext" /> > 先を選択後**詳細ビュー**画面に入ります > <Cmdname sid="metrics" className="uitext" />
+ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="containerMap" className="uitext" /> > 対象を選択後**詳細ビュー**画面に入ります > <Cmdname sid="metrics" className="uitext" />
 
 ## Kubernetesメトリクス
 
@@ -61,7 +61,7 @@ spec:
 
 様々なコンテナのリソース設定情報や現在の使用量を簡単に把握することは容易ではありません。そのため、WhaTap Kubernetesモニタリングサービスは、特定の単一コンテナ、ユーザーが選択した複数のコンテナ、またはDeployment全体を対象にリソース設定および現在の使用量を簡単に確認できる機能を提供します。
 
--   **詳細を見る** 画面 > <Cmdname sid="metrics" className="uitext" /> - リソース使用量のモニタリングと分析
+-   **詳細を表示** 画面 > <Cmdname sid="metrics" className="uitext" /> - リソース使用量のモニタリングと分析
 
     <ImgLang img='whatap_kubernetes_container_map_resource_example.png' desc='リソース使用量のモニタリングと分析' />
 
@@ -78,23 +78,23 @@ CPU、Memoryに関するの主なWhaTapメトリックは次のとおりです�
 | 対象リソース      | Shortname      | Name                                                                    | 説明                                           |
 | ----------- | -------------- | ----------------------------------------------------------------------- | -------------------------------------------- |
 | CPU         | CpuTotUsage    | <span class="uitext">Container CPU Usage (millicore)</span>             | コンテナCPU使用率                                   |
-| ^           | CpuByRequest   | <span class="uitext">Container CPU Usage by Request (%)</span>          | コンテナCPUの要求比較の使用率                             |
+| ^           | CpuByRequest   | <span class="uitext">Container CPU Usage by Request (%)</span>          | コンテナCPU要求の使用率                                |
 | ^           | CpuByLimit     | <span class="uitext">Container CPU Usage by Limit (%)</span>            | CPU Limit基準CPUの全体使用率                         |
 | メモリ         | MemWs          | <span class="uitext">Container Memory Working Set (byte)</span>         | コンテナのメモリworking set                          |
-| ^           | MemWsByRequest | <span class="uitext">Container Memory Working Set by Request (%)</span> | コンテナメモリの要求基準workingset使用量                    |
-| ^           | MemWsByLimit   | <span class="uitext">Container Memory Working Set by Limit (%)</span>   | コンテナメモリ割当量基準working set使用量                   |
+| ^           | MemWsByRequest | <span class="uitext">Container Memory Working Set by Request (%)</span> | コンテナメモリの要求基準のworkingset使用量                   |
+| ^           | MemWsByLimit   | <span class="uitext">Container Memory Working Set by Limit (%)</span>   | コンテナメモリ割当量基準のworking set使用量                  |
 
 :::note
 
-Podが実行中のノードに使用可能なリソースが十分である場合、コンテナに設定されたRequest以上のリソースを使用できます。WhaTapメトリックのうち、<span class="uitext">Container CPU Usage by Request (%)</span>、<span class="uitext">Container Memory Working Set by Request (%)</span>の値が100%を超える可能性がある理由です。
+Podが実行中のノードに使用可能なリソースが十分である場合、コンテナに設定されたRequest以上のリソースを使用できます。WhaTapメトリックのうち、<span class="uitext">Container CPU Usage by Request (%)</span>、<span class="uitext">Container Memory Working Set by Request (%)</span>の値が100%を超える可能性があります。
 
-例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ(Pod)が実行中のNodeの合計メモリは4GiBであり、そのNodeに他のPodがない場合、コンテナは128MiB以上のメモリを使用できます。
+例えば、コンテナのMemory Requestを128MiBに設定したとします。コンテナ(Pod)が実行中のNodeの合計メモリは4GiBで、そのNodeに他のPodがない場合、コンテナは128MiB以上のメモリを使用できます。
 
 :::
 
 ## その他のメトリクス
 
-WhaTapはCPU、Memoryの他に様々なメトリクスを提供します。
+WhaTapはCPU、Memoryおよび、その他のメトリクスを提供します。
 
 -   <span class="uitext">Container Block I/O Read Byte</span> (IoReadBytes)
 

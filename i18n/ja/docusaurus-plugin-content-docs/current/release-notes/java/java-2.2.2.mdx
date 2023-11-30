@@ -14,18 +14,18 @@ toc_max_heading_level: 2
 
 -   正規分布を活用してresp90、resp95のレスポンス時間のメトリクス指標を生成
 
--   `hook_method_ignore_class_patterns`オプションキー追加：hookingしようとするメソッドの中で無視するclassを追加
+-   `hook_method_ignore_class_patterns`オプションキー追加：hookingしたいメソッドから無視するclassを追加
     ```ini title='whatap.conf'
     hook_method_ignore_class_patterns=a.b.c.D
     ```
 
 ## アップデート <sup><Status>Change</Status></sup>
 
--   Javaエージェントロゴにasm apiバージョン表示を追加
+-   Javaエージェントのロゴにasm apiバージョン表示を追加
 
 -   m**ariadb-java-client-3.0.9**のResultSetを追跡
 
--   JavaエージェントロゴでR2を削除
+-   JavaエージェントのロゴからR2を削除
 
 -   プロセスのcputime測定をsystem time基準からJVMのnano timeに修正
 
@@ -35,9 +35,9 @@ toc_max_heading_level: 2
     hook_method_ignore=get,set,access$
     ```
 
--   毎時間ごとにtext resetを実行できるように`text_zip_enabled`のデフォルト値を`true`に修正
+-   １時間ごとにtext resetを実行できるように`text_zip_enabled`のデフォルト値を`true`に修正
     ```ini title='whatap.conf'
     text_zip_enabled=true
     ```
 
--   tps、レスポンス時間を従来の30秒平均から5秒平均で計算するよう修正
+-   tps、レスポンス時間を従来の30秒平均から5秒平均に調整するように修正

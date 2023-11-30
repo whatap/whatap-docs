@@ -1,0 +1,45 @@
+## Goライブラリーの設定する
+
+Goアプリケーションのソースコードに[github.com/whatap/go-api](https://github.com/whatap/go-api)パッケージを追加してください。
+
+```bash
+go get github.com/whatap/go-api
+```
+
+`trace.Init()`, `trace.Shutdown()`関数で初期化および終了を設定してください。 `trace.Start()」`,`trace.End()`関数でトランザクションの開始終了を設定してください。
+
+```go title='Go'
+import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.    
+    defer trace.Shutdown()    
+
+    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+
+    ...
+
+    trace.End(ctx, err)
+}
+```
+
+<InDoc product='golang'>
+
+:::note
+
+ライブラリ設定の詳細については、[次の文書](api-guide)を参照してください。
+
+:::
+
+</InDoc>
+
+<InDoc product='kubernetes'>
+
+:::note
+
+ライブラリ設定の詳細については、[次の文書](../golang/api-guide)を参照してください。
+
+:::
+
+</InDoc>

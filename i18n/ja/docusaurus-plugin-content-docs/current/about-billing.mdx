@@ -20,19 +20,19 @@ WhaTapモニタリングサービスの決済情報登録と決済権限移譲�
 
 1.  [WhaTapモニタリングサービス](https://service.whatap.io)にログインしてください。 
 
-2.  ホーム画面左下で**_利用履歴_**を選択してください。
+2.  ホーム画面左下で<Cmdname sid="my_usage" className="uitext" />を選択してください。
 
     <ImgLang img='tax_invoice_1.png' desc='利用履歴' />
 
-3.  **_決済情報_**メニューから**_決済情報の登録_**ボタンをクリックしてください。
+3.  <Cmdname sid="payment_information" className="uitext" />メニューから<Cmdname sid="register_billing_info" className="uitext" />ボタンをクリックしてください
 
-4.  **_決済情報の登録_**ウィンドウで決済情報をご記入ください。
+4.  <Cmdname sid="register_billing_info" className="uitext" />ウィンドウで決済情報をご記入ください。
 
-5.  決済手段を選択し、**_クレジットカード_**定期決済または税金**_計算書発行_**関連情報を記入してください。
+5.  決済手段を選択し、<Cmdname sid="creditcard" className="uitext" />定期決済または税金<Cmdname sid="payment_type_banktransfer" className="uitext" />関連情報を記入してください。
 
-6.  **_請求書の受信者_**を設定してください。
+6.  <Cmdname sid="billing_reception_info" className="uitext" />を設定してください。
 
-7.  **_完了_**ボタンを選択してください。
+7.  <Cmdname sid="registration" className="uitext" />ボタンを選択してください。
 
 :::note 
 
@@ -62,48 +62,48 @@ WhaTapモニタリングサービスの決済情報登録と決済権限移譲�
 
 2.  ホーム画面で決済権限を移譲するプロジェクトを選択してください。 
 
-3.  **\*管理**メニュー下位**_プロジェクトメンバー_**メニューに移動してください。
+3.  <Cmdname sid="management" className="uitext" />メニュー下位<Cmdname sid="project_member" className="uitext" />メニューに移動してください。
 
-4.  画面右上の**_メンバー招待_**ボタンを選択してください。
+4.  画面右上の<Cmdname sid="invite_member" className="uitext" />ボタンを選択してください。
 
-5.  メール入力欄に決済権限を移譲するアカウントのメールを入力し、**_追加_**ボタンをクリックしてください。
+5.  メール入力欄に決済権限を移譲するアカウントのメールを入力し、<Cmdname sid="add" className="uitext" />ボタンをクリックしてください。
 
-6.  **_招待メンバー一覧_**に該当アカウントが登録されたことを確認してから、**_完了_**ボタンを選択してください。
+6.  <Cmdname sid="member_invite_list" className="uitext" replace=" ({length})" />に該当アカウントが登録されたことを確認してから、<Cmdname sid="complete" className="uitext" />ボタンを選択してください。
 
 ### 権限修正
 
 <ImgLang img='best-p/about-billing-member-role.png' desc='権限削除' />
 
-1.  **_プロジェクトメンバー_**一覧から決済権限を移譲するアカウントの右側に![指示線 a](/img/char-a.svg)![編集アイコン](/img/ico-edit.svg)修正ボタンを選択してください。
+1.  <Cmdname sid="project_member" className="uitext" />一覧から決済権限を移譲するアカウントの右側に<LinkImage img="char-a.svg" desc="指示線 a" /><LinkImage img="ico-edit.svg" desc="편집 아이콘" />ボタンを選択してください。
 
-2.  **_メンバー権限の修正_** ウィンドウが表示されたら権限のうち、![指示線 b](/img/char-b.svg) **_決済_**権限を許可してください。
+2.  <Cmdname sid="edit_member_role" className="uitext" /> ウィンドウが表示されたら権限のうち、<LinkImage img="char-b.svg" desc="指示線 b" /> <Cmdname sid="billing" className="uitext" />権限を許可してください。
 
-3.  設定を完了したら、![指示線 c](/img/char-c.svg) **_適用_**ボタンを選択してください。
+3.  設定を完了したら、<LinkImage img="char-c.svg" desc="指示線 c" /> <Cmdname sid="apply" className="uitext" />ボタンを選択してください。
 
 :::note
 
--   決済権限を持つメンバーの場合、プロジェクトメンバー\*\*\*一覧で名前の右側に<code class='pay'>決済</code>タグが表示されます。 
+-   決済権限を持つメンバーの場合、<Cmdname sid="project_member" className="uitext" />一覧で名前の右側に<code class='pay'>決済</code>タグが表示されます。 
 
--   **_メンバー権限の修正_**ウィンドウは、プロジェクトメンバー権限または組織およびグループメンバー権限の修正かによって異なります。 メンバー権限の詳細については、[次の文書](/project/project-structure#project-auth)を参照してください。
+-   <Cmdname sid="edit_member_role" className="uitext" />ウィンドウは、プロジェクトメンバー権限または組織およびグループメンバー権限の修正かによって異なります。 メンバー権限の詳細については、<Link to="/project/project-structure#project-auth">次の文書</Link>を参照してください。
 
 :::
 
 ## ![](/img/number-03.png) プロジェクト有償転換
 
-決済情報登録完了時、**_プロジェクト有償転換_**メニューに移動します。 該当アカウントが保有しているすべての**_プロジェクトリスト_**を次のように確認することができます。 
+決済情報登録完了時、<Cmdname sid="project_subscription" className="uitext" />メニューに移動します。 該当アカウントが保有しているすべての<Cmdname sid="project_list" className="uitext" />を次のように確認することができます。 
 
 <ImgLang img='best-p/about-billing-subscription.png' desc='プロジェクト有償転換' />
 
--   有償状態ではなく、プロジェクト全体を一括して有償転換する場合、上段右側の**_有償転換する_**ボタンをクリックしてください。
+-   有償状態ではなく、プロジェクト全体を一括して有償転換する場合、上段右側の<Cmdname sid="BTN06013" className="uitext" />ボタンをクリックしてください。
 
--   複数のプロジェクトを有償転換する場合は、**_プロジェクトリスト_**の各チェックボックスを選択し、上段右側の**_有償転換する_**ボタンをクリックしてください。
+-   複数のプロジェクトを有償転換する場合は、<Cmdname sid="project_list" className="uitext" />の各チェックボックスを選択し、上段右側の<Cmdname sid="BTN06013" className="uitext" />ボタンをクリックしてください。
 
--   プロジェクト別の有償転換の場合、**_プロジェクトリスト_**の状態カラムで**_有償転換_**ボタンをクリックしてください。
+-   プロジェクト別の有償転換の場合、<Cmdname sid="project_list" className="uitext" />の状態カラムで<Cmdname sid="subscribe" className="uitext" />ボタンをクリックしてください。
 
--   **_プロジェクトリスト_**の各プロジェクト項目から**_有償転換_**ボタンをクリックし、個別的に有償転換することができます。
+-   <Cmdname sid="project_list" className="uitext" />の各プロジェクト項目から<Cmdname sid="subscribe" className="uitext" />ボタンをクリックし、個別的に有償転換することができます。
 
 :::note
 
--   **_プロジェクト有償転換_**メニューの詳細は、[次の文書](management/billing#project-subscription)を参照してください。
+-   <Cmdname sid="project_subscription" className="uitext" />メニューの詳細は、<Link to="management/billing#project-subscription">次の文書</Link>を参照してください。
 
 :::

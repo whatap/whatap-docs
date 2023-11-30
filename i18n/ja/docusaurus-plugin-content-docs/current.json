@@ -1204,7 +1204,7 @@
     "description": "The label for category 통계/보고서 in sidebar cubridSidebar"
   },
   "sidebar.serverSidebar.category.서버 목록": {
-    "message": "サーバー一覧",
+    "message": "サーバーリスト",
     "description": "The label for category 서버 목록 in sidebar serverSidebar"
   },
   "sidebar.postgreSidebar.category.대시보드": {

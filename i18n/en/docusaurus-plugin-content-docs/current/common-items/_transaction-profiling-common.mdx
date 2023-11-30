@@ -2,4 +2,10 @@
 
     Default `500`
 
-    Transaction trace data is not collected if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
+    Set the minimum response time to collect trace details. The trace data is not collected, if a transaction is terminated within the set value. The first URL called in every 5 minutes and the erroneous profile data are collected.
+
+    :::note
+
+    To collect errors regardless of the `profile_basetime` option, set the `profile_concern_error_enabled` option to `true`. If set to the default value of `false`, errors are sampled.
+
+    :::

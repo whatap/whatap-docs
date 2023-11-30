@@ -4,17 +4,35 @@
 
     トレース履歴にHTTPヘッダー情報を記録するには、`true`に設定します。
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
     デフォルト値`false`
 
     トレース履歴にHTTPパラメータ情報を記録するには、`true`に設定します。パラメータは、他のセキュリティ キーを入力して参照できます。
+
+    <InDoc product='nodejs'>
 
     :::note
 
     セキュリティキーは、WASサーバ_`${WHATAP_AGENT_HOME}`/paramkey.txt_ ファイル内で6桁で設定します。_paramkey.txt_ ファイルが存在しない場合は、ランダム値で自動的に生成します。
 
     :::
+
+    </InDoc>
+
+    <InDoc product='java'>
+
+    :::note
+
+    -   **Javaエージェント2.2.2バージョン以前**：セキュリティキーは、WASサーバー_`${WHATAP_AGENT_HOME}`/paramkey.txt_ファイル内に6桁で作成します。_paramkey.txt_ファイルが存在しない場合は、ランダム値で自動生成します。
+
+    -   **Javaエージェント2.2.2バージョン以降**：セキュリティキーは、WASサーバー_`${WHATAP_AGENT_HOME}`/security.conf_ファイル内に`paramkey`キー値を確認してください。_security.conf_ファイルが存在しない場合は、`paramkey`キー値を**WHATAP**で自動生成します。
+
+    -   セキュリティキー設定ファイルの詳細については、[次の文書](install-agent#security)を参照してください。
+
+    :::
+
+    </InDoc>
 
 -   **profile_http_header_url_prefix** <span class='type'>String</span>
 

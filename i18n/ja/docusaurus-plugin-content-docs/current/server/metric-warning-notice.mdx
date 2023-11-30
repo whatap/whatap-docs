@@ -9,7 +9,7 @@ tags:
 toc_max_heading_level: 3
 ---
 
-{@include: ../common-items/_metrics-warning-notice.mdx}
+{@include: ../common-items/_metrics-warning-notice.mdx} 
 
 ## 複合メトリクスのイベントテンプレート{#composite-metrics-template}
 
@@ -33,13 +33,13 @@ CPU関連指標は、次のとおりです。`cpu`、`user_cpu`、`system_cpu`
 
 #### **_CPU User % is too high_**
 
-直前1分間で最も高く測定された`user_cpu`指標が関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname) ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+最近１分間で最も高く測定された`user_cpu`指標が値しきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)と一致すると通知が発生します。この通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > CPU User utilization rate of the `${oname}` in the last minute > `${_rule_} `%
 
 #### **_The number of agents with high CPU SYS % is too large_**
 
-`system_cpu`指標が70%以上のサーバの個数が関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname) ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。 
+`system_cpu`指標が70%以上のサーバの個数がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname) ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。 
 
 > The number of agents with a CPU SYS of 70% or more in the last minute > `${_rule_}`
 
@@ -47,13 +47,13 @@ CPU関連指標は、次のとおりです。`cpu`、`user_cpu`、`system_cpu`
 
 #### **_The Disk I/O is too high_**
 
-直前1分間で最も高く測定されたDisk I/Oが関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+直前1分間で最も高く測定されたDisk I/Oがしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute, `${oname}`'s Disk I/O > `${_rule_}` %
 
 #### **_The Disk Used % is too high_**
 
-直前1分間で最も高く測定されたDisk User I/Oが関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+直前1分間で最も高く測定されたDisk User I/Oがしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute,`${oname}`'s Disk Used > `${_rule_}` %
 
@@ -61,18 +61,18 @@ CPU関連指標は、次のとおりです。`cpu`、`user_cpu`、`system_cpu`
 
 #### **_Network Traffic I/O is too high_**
 
-直前1分間で最も高く測定されたNetwork I/O指標が関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+最近１分間で最も高く測定されたNetwork I/O指標が値しきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)と一致すると通知が発生します。この通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute, `${oname}`'s Network Traffic I/O > `${_rule_}` %
 
 #### **_Network Packet I/O is too high_**
 
-直前1分間で最も高く測定されたNetwork Packet I/O指標が関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)と一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+最近１分間で最も高く測定されたNetwork Packet I/O指標が値しきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)と一致すると通知が発生します。この通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 > In the last minute, `${oname}`'s Network Packet I/O > `${_rule_}` %
 
 #### **_Network Error I/O is too high_**
 
-直前1分間で最も高く測定されたNetwork Error I/O指標が関連指標がしきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)に一致すると通知が発生します。これらの通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+最近１分間で最も高く測定されたNetwork Error I/O指標が値しきい値設定値(`${_rule_}`)の条件(`>`, `<`, `=`)と一致すると通知が発生します。この通知はエージェント(oname)ごとに発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
 >  In the last minute, The maximum value of the `${oname}`'s Network Error I/O > `${_rule_}` %

@@ -7,27 +7,6 @@ pagination_next: release-notes/golang/golang-0_2_2
 
 September 13, 2023
 
-:::info
-
-**Download**
-
--   go-api(import library)
-
-    ```bash
-    go get github.com/whatap/go-api@latest
-    ```
-
--   Service agent
-
-    | OS Name                         | Architecture | File format |                                     Download                                    |
-    | ------------------------------- | :----------: | :---------: | :-----------------------------------------------------------------------------: |
-    | Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
-    | Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
-    | Freebsd 10 or later             |    x86 x64   |     TXZ     |        [Download](http://repo.whatap.io/freebsd/10/whatap-php-2.6.2.txz)        |
-    | Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
-
-:::
-
 -   <Status>Feature</Status> Added the large profile processing option.
 
     -   For previous profiles, up to 1024 profiles have been collected. You can increase the maximum value with the setting but the increase in memory followed.
@@ -58,6 +37,8 @@ September 13, 2023
 
     **profile_zip_enabled** <span class='type'>boolean</span> : Default `true`
 
+<!---->
+
 -   <Status>Changed</Status> Modified the function to exclude collection of specific HTTP methods to target all transactions.
 
     -   The `ignore_http_method` option modified to target all transactions.
@@ -69,3 +50,23 @@ September 13, 2023
     -   For more information about the agent configuration for above options, see [the following](../../golang/agent-transaction#track-http-trs).
 
     :::
+
+:::info
+
+**Download**
+
+-   go-api(import library)
+
+    ```bash
+    go get github.com/whatap/go-api@latest
+    ```
+
+-   Service agent
+
+    | OS Name                         | Architecture | File format |                                     Download                                    |
+    | ------------------------------- | :----------: | :---------: | :-----------------------------------------------------------------------------: |
+    | Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
+    | Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
+    | Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
+
+:::

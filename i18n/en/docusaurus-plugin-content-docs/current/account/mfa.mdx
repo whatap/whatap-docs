@@ -12,7 +12,7 @@ tags:
 
 ## Setting the multi-factor authentication
 
-The WhaTap monitoring service (multi-factor authentication is used) provides the methods such as **_OTP_** and **_email token_**. OTP method is recommended.
+The WhaTap monitoring service (multi-factor authentication is used) provides the methods such as **_OTP_** and <Cmdname sid="email" className="uitext" />. OTP method is recommended.
 
 :::note
 
@@ -20,19 +20,19 @@ The WhaTap monitoring service (multi-factor authentication is used) provides the
 
 :::
 
-You can configure the multi-factor authentication by going to **_Manage Account INFO._** in the following order.
+You can configure the multi-factor authentication by going to <Cmdname sid="manage_account_info" className="uitext" /> in the following order.
 
 1.  Log in the WhaTap monitoring service (https://service.whatap.io).
 
 2.  Select the profile icon on the upper right of the screen. A drop-down menu appears.
 
-3.  Select **_Manage Account INFO._**
+3.  Select <Cmdname sid="manage_account_info" className="uitext" />.
 
-4.  Scroll down the page to go to the **_Multi-factor authentication_** section.
+4.  Scroll down the page to go to the <Cmdname sid="two_factor_auth" className="uitext" /> section.
 
     <ImgLang img='account-mfa-section.png' desc='Multi-factor authentication' />
 
-Select an authentication method of **_[OTP](#otp)_** or **_[Email Token](#email)_**.
+Select an authentication method of <Link to="#otp"><span class="uitext">OTP</span></Link> or <Link to="#email"><Cmdname sid="email" /></Link>.
 
 ## OTP authentication{#otp}
 
@@ -45,9 +45,9 @@ If OTP is selected as the multi-factor authentication method, be sure to install
 
 <ImgLang img='account-mfa-otp.png' desc='OTP authentication selection' />
 
-1.  Select **_OTP_** as a multi-factor authentication method, and then select **_(Re)Create OTP Key_**.
+1.  Select <span class="uitext">OTP</span> as a multi-factor authentication method, and then select <Cmdname sid="create_otp_key" className="uitext" />.
 
-2.  Select **_QR Code_** or **_OTP Key_** and then register the key on the OTP app of your mobile device.
+2.  Select <Cmdname sid="qr_code_url" className="uitext" /> or <Cmdname sid="otp_key" className="uitext" /> and then register the key on the OTP app of your mobile device.
 
     -   To use the QR code, select **_Scan a QR code_** and then scan the QR code on your mobile device. (For convenience, it is recommended to use the QR code method.)
 
@@ -55,9 +55,9 @@ If OTP is selected as the multi-factor authentication method, be sure to install
 
     <ImgLang img='account-mfa-google.png' desc='Google OTP app' />
 
-3.  On the **_Manage Account INFO._** page, enter the obtained OTP key in **_Authentication_**. 
+3.  On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the obtained OTP key in <Cmdname sid="authentication" className="uitext" />. 
 
-4.  Select **_Validate OTP Token_**.
+4.  Select <Cmdname sid="validate_otp_token" className="uitext" />.
 
 Now you have completed the OTP-based multi-factor configuration. Log out and then log in the service to check your multi-factor authentication settings.
 
@@ -67,7 +67,7 @@ Now you have completed the OTP-based multi-factor configuration. Log out and the
 
 2.  When the multi-factor authentication screen appears, check your OTP key on the OTP app of your mobile device.
 
-3.  Enter the granted OTP key and then select **_Validate OTP Token_**.
+3.  Enter the granted OTP key and then select <Cmdname sid="validate_otp_token" className="b600" />.
 
 If the OTP token validation is successful, you can enter the service screen.
 
@@ -77,13 +77,13 @@ If the OTP token validation is successful, you can enter the service screen.
 
 <ImgLang img='account-mfa-email.png' desc='Email authentication selection' />
 
-1.  For a multi-factor authentication method, select **_Email_** and then select **_Send Auth Token via Email_**.
+1.  For a multi-factor authentication method, select <Cmdname sid="email" className="uitext" /> and then select <Cmdname sid="send_auth_token_mail" className="uitext" />.
 
 2.  Check the verification token (code) received from no-reply@whatap.io. If you have not received any email, check your spam folder.
 
-3.  On the **_Manage Account INFO._** page, enter the received OTP key in **_Authentication_**. 
+3.  On the <Cmdname sid="manage_account_info" className="uitext" /> page, enter the received OTP key in <Cmdname sid="authentication" className="uitext" />. 
 
-4.  Select **_Validate Email Token_**.
+4.  Select <Cmdname sid="validate_email_token" className="b600" />.
 
 Now you have completed the email-based multi-factor configuration. Log out and then log in the service to check your multi-factor authentication settings.
 
@@ -91,9 +91,9 @@ Now you have completed the email-based multi-factor configuration. Log out and t
 
 1.  On the Login (https://service.whatap.io/account/login) page, log in the service.
 
-2.  If the multi-factor authentication screen appears, select **_Send Auth Token via Email_**.
+2.  If the multi-factor authentication screen appears, select <Cmdname sid="send_auth_token_mail" className="uitext" />.
 
-3.  Enter the authentication token received via the email and then select **_Validate Email Token_**.
+3.  Enter the authentication token received via the email and then select <Cmdname sid="validate_email_token" className="uitext" />.
 
 If the validation of the email authentication token is successful, you can enter the service screen.
 
@@ -101,4 +101,4 @@ If the validation of the email authentication token is successful, you can enter
 
 <ImgLang img='account-mfa-disable.png' desc='Clear Multi-Factor Authentication' />
 
-You can turn off the multi-factor authentication only when you have enabled the multi-factor authentication. On the **_Manage Account INFO._** (https://service.whatap.io/v2/account/management) page, go to the **_Multi-factor authentication_** section and then select **_Clear Multi-Factor Authentication_** or **_Clear OTP Key_**.
+You can turn off the multi-factor authentication only when you have enabled the multi-factor authentication. On the <Link to="https://service.whatap.io/v2/account/management"><Cmdname sid="manage_account_info" /></Link> page, go to the <Cmdname sid="two_factor_auth" className="uitext" /> section and then select <Cmdname sid="clear_multi_factor" className="uitext" /> or <Cmdname sid="clear_otp_key" className="uitext" />.

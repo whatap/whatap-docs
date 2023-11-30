@@ -131,6 +131,12 @@ The AJAX error indicates that the status code is 400 or higher or the request ha
 
 AJAX requests from browser applications are provided in the form of a hitmap chart, and the detailed information on each request can be viewed in a table form. By analyzing each AJAX, you can pinpoint the cause of the performance anomaly.
 
+:::note
+
+For more information about <Cmdname sid="ajaxAnalytics" className='uitext' />, see <Link to="analyze-ajax-hitmap">the following</Link>.
+
+:::
+
 ### Hitmap Chart
 
 <ImgLang img='browser-ajax-hitmap.png' desc='AJAX hitmap' />
@@ -147,13 +153,17 @@ The AJAX hitmap chart displays a distribution of the response times of AJAX requ
 
 -   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to move the chart location up or down.
 
--   Drag a specific area of the chart to see the detailed information. It provides AJAX information details in the form of table. By applying an error filter, you can see only AJAXs with errors.
+-   Drag a specific area of the chart to see the detailed information. To display the AJAX event list and details of the dragged area, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window appears.
 
 ### AJAX Event Detailed Information
 
-<ImgLang img='rum-ajax-details.png' desc='AJAX details' />
+<ImgLang img='browser-analysis-ajax-hitmap-details.png' desc='AJAX Event Details' />
 
-If you drag a cell of the hitmap chart, the detailed information is provided in a table. By applying an error filter, you can see only AJAXs with errors. Each AJAX has the following information:
+If you select each item in the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" /> window appears on the right to display the detailed information.
+
+To see only the AJAX list that has errors, on the upper left of the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" /> window, select from the <Cmdname sid="error" className="uitext" /> <Cmdname sid="all" className="uitext" /> choose list.
+
+Each AJAX has the following information:
 
 -   AJAX URL
 

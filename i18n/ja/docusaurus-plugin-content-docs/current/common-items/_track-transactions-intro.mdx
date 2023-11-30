@@ -42,7 +42,7 @@ http://www.whatap.io/hr/kim/apply.do
 trace_normalize_urls=/hr/{name}/apply.do
 ```
 
-上記のように設定すると、トランザクション名は、_/hr/kim/apply.do_ → _/hello/:name/apply.do_に置き換えられ収集されます。対象URLの設定はそのままにして機能をoffにする場合は、次のようにオプションを指定することができます。 デフォルト値は`true`です。
+上記のように設定した場合、トランザクション名は、_/hr/kim/apply.do_ → _/hello/:name/apply.do_に置き換えられ収集されます。対象URLの設定はそのままにして、この機能をoffにする場合は、次のオプションを指定することができます。 デフォルト値は`true`です。
 
 ```bash title='whatap.conf'
 trace_normalize_enabled=false

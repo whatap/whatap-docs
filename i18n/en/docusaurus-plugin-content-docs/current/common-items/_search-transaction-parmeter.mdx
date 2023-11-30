@@ -4,6 +4,8 @@ Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-
 
 <ImgLang img='sql-parameter-query.png' desc='SQL' />
 
+<Xclude product='java'>
+
 -   **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/paramkey.txt_ file. You can change it to another string.
 
     :::note
@@ -11,6 +13,20 @@ Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-
     The key in _paramkey.txt_ is required to view the SQL variables and HTTP queries, and stop the threads.
 
     :::
+
+</Xclude>
+
+<InDoc product='java'>
+
+-   **_Password_**: You can see the decrypted value. The password is a 6-digit string in the _`WHATAP_HOME`/security.conf_(_paramkey.txt_) file. You can change it to another string.
+
+    :::note
+
+    **_Password_** is required to view the SQL variables and HTTP queries, and stop the threads. For more information, see [the following](install-agent#security).
+
+    :::
+
+</InDoc>
 
 -   **_SQL formatting_**: You can indent and format your SQL statements for better readability.
 
@@ -22,7 +38,11 @@ Select the SQL step in the **_Table view_** tab or select ![Popup Icon](/img/ic-
 
 :::tip
 
-To search SQL variables and HTTP queries, add the following options to the agent settings. For more information about the agent settings for DB and SQL, see [the following](agent-dbsql).
+To search SQL variables and HTTP queries, add the following options to the agent settings.
+
+-   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+
+-   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
 ```ini title='whatap.conf'
 # SQL parameter lookup option: If the option is applied, SQL parameters are collected after being encrypted.

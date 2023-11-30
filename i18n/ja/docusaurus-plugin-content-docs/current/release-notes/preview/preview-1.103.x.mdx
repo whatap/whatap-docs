@@ -24,7 +24,7 @@ toc_max_heading_level: 3
 
 -   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント受信設定</UI>メニューで各ユーザーの受信設定の詳細を確認する時、(<img src='/img/ic-caret-right.svg' alt='더보기 아이콘'/>ボタン選択時) 설정 내용이 수직으로 위(Top) 정렬되도록 스타일 수정
 
--   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント受信設定</UI>メニューでメール、SMS、WhatsAppなどモバイル通知カラムの最小幅を設定
+-   <Status>Fixed</Status> <UI>アラート通知</UI> > <UI>イベント受信設定</UI>メニューからメール、SMS、WhatsAppなどモバイル通知カラムの最小幅を設定
 
 * * *
 
@@ -36,17 +36,17 @@ toc_max_heading_level: 3
 
 ### `Log`
 
-<p><Status>Feature</Status> <UI>ログ検索機</UI>、<UI>ログトレンド</UI>、<UI>トランザクションログ</UI>メニューでキーワードのハイライト機能を追加</p>
+<p><Status>Feature</Status> <UI>ログ検索</UI>、<UI>ログトレンド</UI>、<UI>トランザクションログ</UI>メニューにキーワードのハイライト機能を追加</p>
 
 * * *
 
 ### `AWS Log`
 
--   <Status>Change</Status> <b>プロジェクト作成</b>ページの<UI>AWS Log</UI>アイテムから`beta`タグを除去
+-   <Status>Change</Status> <b>プロジェクト作成</b>ページの<UI>AWS Log</UI>アイテムから`beta`タグを削除
 
--   <Status>Change</Status> <UI>エージェントインストール</UI> > <UI>WhaTap Forwarderインストール</UI>順番で <UI>VPC オプション</UI>は、インストール型の場合にのみ表示するように変更
+-   <Status>Change</Status> <UI>エージェントインストール</UI> > <UI>WhaTap Forwarderインストール</UI>時に <UI>VPC オプション</UI>を表示するように変更
 
--   <Status>Fixed</Status> <UI>プロジェクトアクセスキーの発行を受ける</UI>リンクを選択すると、移動するページURLの<code>productType</code>パラメータ値を<code>sms</code>から<code>VR</code>に修正
+-   <Status>Fixed</Status> <UI>プロジェクトアクセスキーの</UI>リンクを選択すると、移動するページURLの<code>productType</code>パラメータ値を<code>sms</code>から<code>VR</code>に修正
 
 </div>
 
@@ -58,7 +58,7 @@ toc_max_heading_level: 3
 
 ### `Database`
 
-<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで<UI>プリセット保存</UI>ボタンの<b>プリセット保存</b>メッセージ削除</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューから<UI>プリセット保存</UI>ボタンの<b>プリセット保存</b>メッセージ削除</p>
 
 </div>
 
@@ -70,16 +70,16 @@ toc_max_heading_level: 3
 
 ### `Application`
 
-<p><Status>Feature</Status>ダッシュボードメニューでヒートマップウィジェットのチャート領域をドラッグする時、呼び出されるトレース分析のポップアップウィンドウ追加</p>
+<p><Status>Feature</Status>ダッシュボードメニューからヒートマップウィジェットのチャート領域をドラッグする時、呼び出されるトレース分析のポップアップウィンドウ追加</p>
 
 -   動線分析とユーザビリティの改善
     -   トランザクションデータ分析のDepth改善
-    -   交差/比較分析環境の改善
+    -   クロス/比較分析環境の改善
     -   データ分析環境の視認性の改善
     -   情報の認知性と可読性、利便性の改善
 
 -   機能性の改善及びその他
-    -   トランザクション一覧内のカラム位置変更及びデータ表幅の調整の改善
+    -   トランザクション一覧のカラム位置変更及びデータテーブルの幅の調整を改善
     -   ダイヤグラムとスタック区間の連携
     -   TXT、SQLダウンロードファイルのデータをソート
 
@@ -93,27 +93,27 @@ toc_max_heading_level: 3
 
 ### `共通`
 
--   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューで<UI>通知ルールテスト</UI>機能実行時、臨界線がチャートの範囲を超える現象の修正
+-   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューから<UI>通知ルールテスト</UI>機能実行時、しきい値線がチャートの範囲を超える問題を修正
 
--   <Status>Feature</Status>次のメニューで<b>WhatsApp</b>通知設定追加
+-   <Status>Feature</Status>次のメニューで<b>WhatsApp</b>通知設定を追加
 
     -   **_アカウント情報管理_** > **_ユーザー電話番号_**, **_アラート受信設定_**
 
     -   **_アラート通知_** > **_イベント受信設定_** > **_ユーザー別アラート受信設定_**
 
--   <Status>Change</Status><UI>アカウント情報管理</UI>メニューでユーザーパスワード設定規則を９桁に変更
+-   <Status>Change</Status><UI>アカウント情報管理</UI>メニューからユーザーパスワード設定ルールを9桁に変更
 
 * * *
 
 ### `Server`
 
-<p><Status>Fixed</Status><UI>サーバーリスト</UI>><UI>サーバーリスト</UI>メニューで比較する際に、10個を超過するサーバーを選択したら表示されるメッセージの修正</p>
+<p><Status>Fixed</Status><UI>サーバーリスト</UI>><UI>サーバーリスト</UI>メニューから比較対象として、10台以上のサーバーを選択した場合に表示されるメッセージの修正</p>
 
 * * *
 
 ### `Log`
 
-<p><Status>Feature</Status><UI>ログ</UI>><UI>ログ検索エンジン</UI>メニューで選択したログと隣接する時間帯のログを照会できる機能の追加</p>
+<p><Status>Feature</Status><UI>ログ</UI>><UI>ログ検索エンジン</UI>メニューから選択したログと隣接するタイムゾーンのログを検索できる機能の追加</p>
 
 * * *
 
@@ -121,15 +121,15 @@ toc_max_heading_level: 3
 
 #### ダッシュボード
 
-<p><Status>Feature</Status><UI>WEBブラウサエラー</UI>メニューでエラーに関する詳細画面の追加</p>
+<p><Status>Feature</Status><UI>WEBブラウザー</UI>メニューからエラーに関する詳細画面の追加</p>
 
 #### 分析
 
--   <Status>Feature</Status><UI>ページロードヒートマップ</UI>メニューでページロード詳細データにOSバージョン、クライアントIP情報追加
+-   <Status>Feature</Status> <UI>[ページ読み込みヒートマップ] メニューで</UI>、オペレーティング システムのバージョンとクライアント IP 情報をページ読み込みの詳細に追加
 
--   <Status>Change</Status><UI>ページロードヒートマップ</UI>メニューで<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
+-   <Status>Change</Status><UI>ページ読み込みヒートマップ</UI>メニューから<UI>URLグループ一覧フィルター</UI>機能を<UI>ページURL検索</UI>機能に変更
 
--   <Status>Change</Status><UI>エラー追跡</UI>メニューでエラースタック照会UIの変更
+-   <Status>Change</Status><UI>エラー追跡</UI>メニューのエラースタック参照UIの変更
 
 </div>
 
@@ -143,19 +143,19 @@ toc_max_heading_level: 3
 
 #### Go
 
-**_管理_**>**_エージェント設定_**メニューに次の内容を追加します。
+**_管理_**>**_エージェント設定_**メニューで、次の項目を追加します。
 
 -   <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
 
--   <Status>Fixed</Status>Amazon linuxオペレーティングシステムで<b>エージェントダウンロド</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
+-   <Status>Fixed</Status>Amazon linuxオペレーティングシステムの<b>エージェントダウンロード</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
 
--   <Status>Fixed</Status>Alpine linuxオペレーティングシステムで<b>Goライブラリー使用</b>セクションの内容が表示されない部分の修正
+-   <Status>Fixed</Status>Alpine linuxオペレーティングシステムの<b>Goライブラリ使用</b>セクションの内容が表示されない部分の修正
 
--   <Status>Fixed</Status><b>Goライブラリー使用</b>セクションのスクリプトコード内容がすべてのオペレーティングシステムに同じく適用されます
+-   <Status>Fixed</Status><b>Goライブラリ使用</b>セクションのスクリプトコードの内容をすべてのオペレーティングシステムに適用されます
 
--   <Status>Feature</Status>すべてのオペレーティングシステムで<b>エージェント設定</b>セクションに案内メッセージを追加
+-   <Status>Feature</Status>すべてのオペレーティングシステムの<b>エージェント設定</b>セクションに手順を追加
 
--   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに案内メッセージを追加
+-   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに手順を追加
 
 #### PHP
 
@@ -169,7 +169,7 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
-<p><Status>Fixed</Status><UI>Flexボード</UI>メニューでダッシュボード一覧の呼び出す時、組織IDが反映されないエラーの修正</p>
+<p><Status>Fixed</Status><UI>Flexボード</UI>メニューからダッシュボード一覧を呼び出し時、組織IDが反映されないエラーを修正</p>
 
 </div>
 
@@ -181,7 +181,7 @@ toc_max_heading_level: 3
 
 ### `Browser`
 
-<p><Status>Feature</Status><UI>レポート</UI>><UI>日間WEBブラウサレポート</UI>メニューの追加</p>
+<p><Status>Feature</Status><UI>レポート</UI>><UI>日次WEBブラウサレポート</UI>メニューの追加</p>
 
 </div>
 
@@ -193,7 +193,7 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Fixed</Status><UI>統合レポート</UI>><UI>日間レポート</UI>メニューで<UI>終了時間</UI>を本日と選択する時、選択した時間が自動矯正されるロジックの削除</p>
+<p><Status>Fixed</Status><UI>統合レポート</UI>><UI>日次レポート</UI>メニューで<UI>終了時間</UI>を本日として選択する時、選択した時間が自動矯正されるロジックの削除</p>
 
 </div>
 
@@ -205,17 +205,17 @@ toc_max_heading_level: 3
 
 ### `共通`
 
--   <Status>Fixed</Status>上段の固定メニューのガイド文書のリンクを選択する時、サービスで選択した言語と一致するガイド文書に移動するように修正
+-   <Status>Fixed</Status>上部にある固定メニューのガイド文書のリンクを選択すると、サービスで選択した言語と一致するガイド文書に移動するように修正
 
--   <Status>Deprecate</Status>多国語サービスのうち中国語対応の中断により、サービス内の言語選択肢から中国語の除外
+-   <Status>Deprecate</Status>多国語サービスから中国語対応の停止により、サービスの言語オプションから中国語は除外
 
--   <Status>Change</Status>サイドバーで<code>AWS Log</code>プロジェクトアイコン変更
+-   <Status>Change</Status>サイドバーの<code>AWS Log</code>プロジェクトアイコン変更
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status><UI>エージェントのインストール</UI>ページで日本語メッセージの修正</p>
+<p><Status>Fixed</Status><UI>エージェントのインストール</UI>ページの日本語メッセージを修正</p>
 
 </div>
 
@@ -227,7 +227,7 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューで<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブで設定を適用する時、リクエストに成功してもエラーメッセージが表示される現象の修正</p>
+<p><Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューから<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブで設定を適用すると、リクエストが成功した場合でも、エラーメッセージが表示される現象を修正</p>
 
 * * *
 
@@ -235,9 +235,9 @@ toc_max_heading_level: 3
 
 #### リソース
 
--   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題の修正
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでダークテーマが適用されない問題を修正
 
--   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューでインストールされたエージェントがない場合、ローディングアニメーションでなく、インストールされたエージェントがないという案内メッセージが表示されるように修正
+-   <Status>Fixed</Status><UI>コンテナ一覧</UI>メニューからインストールされたエージェントがない場合、読み込みアニメーションの代わりにインストールされたエージェントがないというメッセージが表示されるように修正
 
 * * *
 
@@ -245,11 +245,11 @@ toc_max_heading_level: 3
 
 #### Common
 
-<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントインストール</UI>メニューでエージェントをインストールするための、Java最低バージョンの表示及びxos権限設定メッセージの変更</p>
+<p><Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからエージェントをインストールするための、Java対応バージョンの表示及びxos権限設定の文言の変更</p>
 
 #### Oracle
 
-<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューで画面下<UI>アクティブセッション</UI>テーブルの<UI>SQL</UI>項目を選択したら渡されるハッシュ値の修正</p>
+<p><Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューから画面の下部にある<UI>アクティブセッション</UI>テーブルの<UI>SQL</UI>項目を選択時に渡されるハッシュ値の修正</p>
 
 </div>
 
@@ -261,11 +261,11 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Feature</Status> <UI>統合レポート</UI>メニューで日間タイプレポートの時間選択の制限を修正</p>
+<p><Status>Feature</Status> <UI>統合レポート</UI>メニューから日報の時間選択の制限を修正</p>
 
 -   **既存**：終了時間を前日23時59分まで選択可能
 
--   **変更**：終了時間を現在の時間基準、1時間前(現在の時間 - 1時間)まで選択可能
+-   **変更**：終了時間を現在の時間から1時間前(現在の時間 - 1時間)まで選択可能
 
 * * *
 
@@ -273,16 +273,16 @@ toc_max_heading_level: 3
 
 #### アラート通知
 
--   <Status>Feature</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>(旧：<b>通知ポリシーコピー</b>) 機能に<UI>現在のプロジェクトにコピー</UI>できるオプションを追加
+-   <Status>Feature</Status> <UI>イベント設定</UI>メニューから<UI>イベント設定コピー</UI>(旧,<b>通知ポリシーのコピー</b>) 機能に<UI>現在のプロジェクトにコピー</UI>できるオプションを追加
 
--   <Status>Change</Status> <UI>イベント設定</UI>メニューで<UI>イベント設定コピー</UI>機能を次のように変更
+-   <Status>Change</Status> <UI>イベント設定</UI>メニューから<UI>イベント設定コピー</UI>機能を次のように変更
 
-    -   **既存**：コピーしたイベントのタイトルを同じように使用してコピー対象プロジェクトにイベントを重複コピーすると、最後にコピーしたイベントに上書きされます。
+    -   **既存**：コピーしたイベントのタイトルを同じように使用して、コピー対象プロジェクトにイベントを複製コピーすると、最後に複製されたイベントに上書きされます。
 
     -   **変更**
 
         -   イベントのタイトルとして`{コピーしたイベント名}(copy)`を使用
-        -   コピー対象プロジェクトにイベントを重複コピーすると、コピーした回数だけイベントを作成
+        -   コピー対象プロジェクトにイベントを複製コピーすると、コピーされた回数のイベントを作成
 
 </div>
 
@@ -294,13 +294,13 @@ toc_max_heading_level: 3
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューでデータを照会する最大範囲を1日制限に修正
+-   <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューからデータを参照する最大範囲を1日の制限に修正
 
--   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューでデータを照会する最大範囲を7日制限に修正
+-   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューからデータを参照する最大範囲を7日間の制限に修正
 
 -   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、Traceステップ分析及びメソッドポップアップの出力データを次のように修正
       
-    - 各データタイトルを修正
+    - 各データのタイトルを修正
 
     -   関数 → メソッド
 
@@ -310,7 +310,7 @@ toc_max_heading_level: 3
 
     -   経過時間単位テキストの修正：(ms) → ms
 
-    -   一部の出力値を削除：進入CPU時間、メモリ
+    -   一部の出力値を削除：イングレスCPU時間、メモリ
 
 -   <Status>Fixed</Status> <UI>ヒートマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、SQL文の特定キーワード(content、long)が強調されるバグを修正
 
@@ -324,13 +324,13 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>マルチファクタ認証</UI> > <UI>メールでOTP キーを送信する</UI>ボタンを選択するとOTPキーを(再)生成するウィンドウが表示される現象を修正</p>
+<p><Status>Fixed</Status> <UI>アカウント情報管理</UI> > <UI>マルチファクタ認証</UI> > <UI>メールでOTP キーを送信する</UI>ボタンを選択すると、OTPキーを(再)生成するウィンドウが表示される問題を修正</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントインストール</UI>メニューで案内文を修正</p>
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントのインストール</UI>メニューから説明文を修正</p>
 
 </div>
 
@@ -344,13 +344,13 @@ toc_max_heading_level: 3
 
 #### アラート通知
 
--   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで<b>最後の変更時間</b>カラム名を<UI>イベント解消時刻</UI>に修正
+-   <Status>Fixed</Status> <UI>イベント履歴</UI>メニューから<b>最終変更時間</b>カラム名を<UI>イベント解消時間</UI>に修正
 
--   <Status>Fixed</Status> <UI>イベント記録</UI>メニューで進行中のイベントは<UI>イベント解消時刻</UI>データを表示しないように修正
+-   <Status>Fixed</Status> <UI>イベント履歴</UI>メニューから進行中のイベントは<UI>イベント解消時間</UI>データを表示しないように修正
 
 ### `Container`
 
--   <Status>Feature</Status> <UI>リソース</UI> > <UI>パフォーマンス要約</UI>メニューにコンテナ数、パッド数の推移チャートを追加
+-   <Status>Feature</Status> <UI>機能リソース</UI> > <UI>パフォーマンスの概要</UI>メニューにコンテナ数、パッド数の推移チャートを追加
 
 -   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューに<UI>不一致</UI>フィルターオプションを追加
 
@@ -364,7 +364,7 @@ toc_max_heading_level: 3
 
 ### `Database`
 
-<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>インスタンスモニタリング</UI>メニューで下段アクティブセッションテーブルの5秒単位の時間変更時にテーブル内容が変更されない問題を修正</p>
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>インスタンスモニタリング</UI>メニューから下部のアクティブセッションテーブルの5秒単位の時間変更時にテーブルの内容が変更されない問題を修正</p>
 
 </div>
 
@@ -376,7 +376,7 @@ toc_max_heading_level: 3
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>サーバーリスト</UI>メニューにインストールされているエージェントがない場合、読み込み中画像が表示され続けるバグを修正</p>
+<p><Status>Fixed</Status> <UI>サーバーリスト</UI>メニューにインストールされているエージェントがない場合、読み込み画像が表示され続けるバグを修正</p>
 
 </div>
 
@@ -388,21 +388,21 @@ toc_max_heading_level: 3
 
 ### `共通`
 
--   <Status>Fixed</Status>日本語画面で一部間違った翻訳を修正
+-   <Status>Fixed</Status>日本語画面で一部の間違った翻訳を修正
 
--   <Status>Fixed</Status> <UI>警告通知</UI> > <UI>イベント受信設定</UI>メニューで<UI>ユーザー別イベント受信設定</UI>テーブルの展開機能が作動しないバグを修正
+-   <Status>Fixed</Status> <UI>アラート通知</UI> > <UI>イベント受信設定</UI>メニューで<UI>ユーザー別イベント受信設定</UI>テーブルの展開機能が動作しないバグを修正
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQL要約</UI>, <UI>HTTP呼び出し要約</UI>、<UI>メソッド要約</UI>タブの過去データ照会に関するバグを修正
+-   <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQLサマリー</UI>, <UI>HTTP呼び出しサマリー</UI>、<UI>メソッドサマリー</UI>タブの履歴データの表示に関するバグを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status>データ照会時間選択の機能を追加
+-   <Status>Feature</Status>データ閲覧時間を選択する機能を追加
 
 </div>
 
@@ -414,7 +414,7 @@ toc_max_heading_level: 3
 
 ### `Server`
 
-<p><Status>Fixed</Status> <UI>分析</UI> > <UI>メトリクスチャート</UI>メニューでエージェント名が重複している場合、CSVファイルでデータが正しく表示されないバグを修正</p>
+<p><Status>Fixed</Status> <UI>分析</UI> > <UI>メトリクスチャート</UI>メニューでエージェント名が重複している場合、CSVファイルにデータが正しく表示されないバグを修正</p>
 
 </div>
 
@@ -424,7 +424,7 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
-<p><Status>Feature</Status> <UI>警告通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューで通知設定に対して読み取り権限のみを持つユーザーが<UI>メトリクス</UI>、<UI>複合メトリクス</UI>リストアイテムの内容を確認できるようにツールチップを追加</p>
+<p><Status>Feature</Status> <UI>アラート通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューの通知設定への読み取り権限のみを持つユーザーが<UI>メトリクス</UI>、<UI>複合メトリクス</UI>リストアイテムの内容を確認できるようにツールチップを追加</p>
 
 </div>
 
@@ -438,23 +438,23 @@ toc_max_heading_level: 3
 
 #### 管理
 
--   <Status>Feature</Status> <UI>組織作成</UI>及び<UI>組織管理</UI>メニューでロゴ画像の案内文を追加(画像の推奨サイズ、ファイル容量、拡張子に関する案内)
+-   <Status>Feature</Status> <UI>組織作成</UI>及び<UI>組織管理</UI>メニューでロゴ画像の追加に関する指示(画像の推奨サイズ、ファイル容量、拡張子に関する指示)
 
--   <Status>Feature</Status> <UI>メンバー一覧</UI>メニューでメンバーの削除及び権限修正ボタンの位置をメンバー名カラムに移動
+-   <Status>Feature</Status> <UI>メンバー一覧</UI>メニューでメンバーの削除及びアクセス権限の修正ボタンをメンバー名カラムに移動
 
 -   <Status>Feature</Status> <b>プロジェクトフレックスボード編集</b>権限を追加
 
 #### Flexボード
 
-<p><Status>Change</Status> <b>プロジェクトフレックスボード編集</b>権限に応じてダッシュボードの修正を制限するようUIを修正</p>
+<p><Status>Change</Status> <b>プロジェクトのフレックスボード編集</b>権限に基づいてダッシュボードの修正を制限するように UIを修正</p>
 
 * * *
 
 ### `Database`
 
--   <Status>Feature</Status> <b>PostgreSQL V2</b>製品の<UI>インスタンスダッシュボード</UI>メニューでウィジェットメトリクス変更ウィンドウのメトリクスリストにマウスオーバーすると、該当メトリクス情報に対するツールチップを追加
+-   <Status>Feature</Status> <b>PostgreSQL V2</b>製品の<UI>インスタンスダッシュボード</UI>メニューからウィジェットメトリクスの変更ウィンドウのメトリクスリストにカーソルを合わせると、そのメトリクス情報のツールチップを追加
 
--   <Status>Change</Status> <b>PostgreSQL V2</b>製品のメニューのうち以下の3つを<UI>サイトマップ</UI>を通じて接近するように変更
+-   <Status>Change</Status> <b>PostgreSQL V2</b>製品のメニューから以下の3つを<UI>サイトマップ</UI>にアクセスするように変更
 
     -   **_分析_** > **_ログファイルビューア_**
     -   **_アラート通知_** > **_ファイルログ通知_**
@@ -476,13 +476,13 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント設定</UI>メニューから多重適用api修正</p>
+<p><Status>Fixed</Status> <UI>管理</UI> > <UI>エージェント設定</UI>メニューから多重適用apiを修正</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Change</Status> <UI>リソース</UI> > <UI>コンテナボリューム</UI>メニューの![検索アイコン](/img/ico-search.svg)ボタンを選択すると一覧が出力されるという案内メッセージを追加</p>
+<p><Status>Change</Status> <UI>リソース</UI> > <UI>コンテナボリューム</UI>メニューから![検索アイコン](/img/ico-search.svg)ボタンを選択すると、一覧が出力するようにユーザーに通知するメッセージを追加</p>
 
 * * *
 
@@ -500,7 +500,7 @@ toc_max_heading_level: 3
 
 ### `Database`
 
-<p><Status>New</Status>PostgreSQLモニタリングV2サービスをオープンしました。 従来に比べて変更された機能を確認するには<a href='../../postgresql/monitoring-intro#new-feature'>次の文書</a>を参考にしてください。</p>
+<p><Status>New</Status>PostgreSQLモニタリングV2サービスを開始しました。 従来に比べて変更された機能を確認するには<a href='../../postgresql/monitoring-intro#new-feature'>次の文書</a>を参照してください。</p>
 
 </div>
 
@@ -510,13 +510,13 @@ toc_max_heading_level: 3
 
 <div class='indentTab'>
 
--   <Status>Change</Status>シリーズチャートデザイン修正
+-   <Status>Change</Status>シリーズチャートのデザイン修正
 
     | 修正前                                             | 修正後                                           |
     | ----------------------------------------------- | --------------------------------------------- |
     | ![before](/img/release/series-chart-before.png) | ![after](/img/release/series-chart-after.png) |
 
--   <Status>Change</Status>ヒートマップボタンデザインを修正
+-   <Status>Change</Status>ヒートマップボタンのデザインを修正
 
     | 修正前                                              | 修正後                                            |
     | ------------------------------------------------ | ---------------------------------------------- |
@@ -532,9 +532,9 @@ toc_max_heading_level: 3
 
 ### `Container`
 
--   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントのインストール</UI>メニューでライセンス発行後、別のタブメニューに切り替える場合、ライセンス発行ボタンが再び活性化するバグを修正
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>エージェントのインストール</UI>メニューからライセンス発行後、別のタブメニューに切り替える場合、ライセンス発行ボタンが再び有効になるバグを修正
 
--   <Status>Fixed</Status> <UI>リソース</UI> > <UI>ノード詳細</UI>メニューで下段コンテナ領域のコンテナ構成情報のカラム順序を変更
+-   <Status>Fixed</Status> <UI>リソース</UI> > <UI>ノード詳細</UI>メニューから下部のコンテナ領域のコンテナ構成情報のカラム順序を変更
 
 </div>
 
@@ -546,9 +546,9 @@ toc_max_heading_level: 3
 
 ### `Container`
 
--   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューのコンテナ要約表示パネルで<UI>ログ</UI> > <UI>ログ検索</UI>タブにログ照会権限と状態によってメッセージを異なるように表示
+-   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューのコンテナサマリー表示パネルの<UI>ログ</UI> > <UI>ログ検索</UI>タブにログの表示権限と状態によってメッセージを異なるように表示
 
--   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューのコンテナ要約表示パネルで<UI>イベント</UI>タブにイベント数を表示する<UI>イベント数推移</UI>チャートを追加
+-   <Status>Feature</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューからコンテナサマリー表示パネルで<UI>イベント</UI>タブにイベント数を表示する<UI>イベント数推移</UI>チャートを追加
 
 </div>
 
@@ -560,13 +560,13 @@ toc_max_heading_level: 3
 
 ### `共通`
 
-<p><Status>Feature</Status>サイドバーでプロジェクト名にプロジェクト全体の名前を表示するツールチップを追加</p>
+<p><Status>Feature</Status>サイドバーのプロジェクト名にプロジェクト全体の名前を表示するツールチップを追加</p>
 
 * * *
 
 ### `Log`
 
-<p><Status>Feature</Status> <UI>ログ</UI>下位メニューで<img src='/img/ico-setting.svg' alt='설정 아이콘'/> <UI>テーブル設定</UI> > <UI>カラム設定</UI>に <UI>カラム追加</UI>項目として<UI>timestamp</UI>を追加</p>
+<p><Status>Feature</Status> <UI>ログ</UI>サブメニューで<img src='/img/ico-setting.svg' alt='設定アイコン'/> <UI>テーブル設定</UI> > <UI>カラム設定</UI>に <UI>カラム追加</UI>項目として<UI>timestamp</UI>を追加</p>
 
 </div>
 
@@ -578,7 +578,7 @@ toc_max_heading_level: 3
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューでアプリケーション エージェントがないコンテナ要約表示パネルの<UI>ログ</UI> > <UI>ログ検索</UI>機能利用時にデータ照会に失敗した場合、案内メッセージの誤表記現象を修正</p>
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューでアプリケーションエージェントを使用しないコンテナの概要ビューパネルで<UI>ログ</UI> > <UI>ログ検索</UI>機能を使用する際に、データ参照に失敗した場合のメッセージのスペルミスを修正</p>
 
 </div>
 
@@ -590,13 +590,13 @@ toc_max_heading_level: 3
 
 ### `実験室`
 
-<p><Status>Feature</Status> <code>Container</code>, <code>Java</code>製品群に<UI>サイトマップ</UI>  > <UI>実験室</UI> > <UI>Remote Access Status</UI>メニューを追加</p>
+<p><Status>Feature</Status> <code>Container</code>, <code>Java</code>製品群に<UI>サイトマップ</UI>  > <UI>ラボ</UI> > <UI>Remote Access Status</UI>メニューを追加</p>
 
 * * *
 
 ### `Container`
 
-<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューで要約表示パネルの<UI>ログ</UI> > <UI>ログ検索</UI>機能利用時にデータ照会に失敗した場合、案内メッセージを追加</p>
+<p><Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>コンテナマップ</UI>メニューで要約サマリー表示パネルの<UI>ログ</UI> > <UI>ログ検索</UI>機能利用時にデータ参照に失敗した場合、通知メッセージを追加</p>
 
 </div>
 
@@ -608,14 +608,14 @@ toc_max_heading_level: 3
 
 ### `共通`
 
--   <Status>Fixed</Status>ホーム画面 > <UI>Flexボード</UI>メニューでユーザーアカウントが保有するプロジェクト製品群ダッシュボードのテンプレートだけが見えるようにロジックを修正
+-   <Status>Fixed</Status>ホーム画面 > <UI>Flexボード</UI>メニューからユーザーアカウントが保有するプロジェクト製品群のダッシュボードのテンプレートのみが表示されるようにロジックを修正
 
--   <Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューで新規プロジェクトの作成時<UI>権限</UI>一覧にFLEX_UPDATEというテキストが表示される現象を修正
+-   <Status>Fixed</Status> <UI>管理</UI> > <UI>プロジェクトメンバー</UI>メニューで新規プロジェクトの作成時<UI>権限</UI>一覧にFLEX_UPDATEのテキスト表示を修正
 
 * * *
 
 ### `Log`
 
-<p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI>メニューで<UI>対数パーサー</UI>、<UI>クイックインデックス</UI>、<UI>長期保存統計</UI>追加または修正時に直接入力項目に空白を許容しないように修正</p>
+<p><Status>Fixed</Status> <UI>ログ</UI> > <UI>ログ設定</UI>メニューで<UI>ログパーサー</UI>、<UI>クイックインデックス</UI>、<UI>長期保存統計</UI>追加または修正時に直接入力項目に空白を許可しないように修正</p>
 
 </div>

@@ -28,7 +28,7 @@ toc_max_heading_level: 2
 
         -   com.zaxxer.hikari.pool.ProxyConnection.close()V
 
-    -   patterns設定を通じてdatabase connection closeを表示するクラスを追加可能(デフォルト値 `true`)
+    -   patterns設定では、database connection closeを表示するクラスを追加可能(デフォルト値 `true`)
 
         ```ini title='whatap.conf'
         hook_connection_close_default_enabled=true
@@ -99,9 +99,9 @@ toc_max_heading_level: 2
 
 -   `service_patterns`でトランザクションを登録する場合、トランザクション名を"クラス#メソッド"方式で表示
 
--   SQLモニタリング時null sqlが伝達される場合、stepに**sql is null**を表示
+-   SQLモニタリング時にnull sqlが伝達された場合、stepに**sql is null**を表示
 
--   (batch) DeadLock除去
+-   (batch) DeadLock削除
 
 ## バグ修正 <sup><Status>Fixed</Status></sup>
 

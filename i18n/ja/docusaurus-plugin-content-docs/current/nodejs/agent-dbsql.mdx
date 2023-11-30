@@ -10,6 +10,12 @@ tags:
 
 Node.jsエージェントのDB、SQL関連オプションを提供します。
 
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+
+    デフォルト値`false`
+
+    SQLパラメータの収集を有効にします。ただし、パラメータを表示するには、セキュリティキーを入力する必要があります。セキュリティキーは、エージェントのインストールパスの_paramkey.txt_ファイルに6桁で指定されます。 _paramkey.txt_が存在しない場合は自動生成され、randomキーが設定されます。
+
 -   **profile_connection_open_enabled** <span class='type'>Boolean</span>
 
     デフォルト値 `true`

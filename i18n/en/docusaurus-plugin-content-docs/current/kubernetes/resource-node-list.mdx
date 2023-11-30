@@ -11,79 +11,151 @@ tags:
 
 :::note
 
-If the data for specific columns does not appear, your Kubernetes node agent may be outdated. In this case, update the Kubernetes agent so that enough data can be collected. 
+If the data for specific columns does not appear, your Kubernetes node agent may be outdated. In this case, update the Kubernetes agent to the 1.3.7 or later so that enough data can be collected. 
 
 :::
 
-## Node List
-
 Home > Select Project > **_Resource_** > **_Node List_**
 
-You can check the node status of the current project in a table.
+You can check the node information of the current project in a list.
 
-<ImgLang img='whatap_kubernetes_resource_node_list.png' desc='Node List' />
+-   Real-time data is updated every 10 seconds.
 
-The provided key data is as follows:
+-   It provides the functions for node status summary, comparison, filtering, and CSV file download.
+    > CSV file name, _ kubernetes_node_list\_{pcode}\_{timestamp}.csv_
 
-| Classification   | Key data                                                                 |
-| ---------------- | ------------------------------------------------------------------------ |
-| CPU              | Core Count<br/>Utilization<br/>Sys/User Utilization                      |
-| Memory           | Capacity<br/>Utilization<br/>Swap Utilization                            |
-| Disk             | Utilization<br/>I/O Utilization<br/>inode Usage                          |
-| ETC              | Private IP<br/>Public IP<br/>Uptime<br/>Agent Version, etc.              |
+## Basic screen guide
 
-The following functions are additionally provided.
+<ImgLang img='k8s-resource-node-list-m.png' desc='Node list basic screen' />
 
--   ![Compare icon](/img/ico-compare.svg) **_Compare_**: You can select multiple nodes to compare the usage based on the chart.
+By selecting desired options in the ![number 01](/img/number-01.png) area, you can view the data in ![number 02](/img/number-02.png). 
 
--   ![CSV Download icon](/img/ico-csv.svg) **_Download CSV_**: The list data displayed on the screen can be downloaded as a CSV file.
+-   On the upper left of the ![number 01](/img/number-01.png) area, you can see the total node count and the node counts for each status.
 
-The data on the server list page is automatically updated every 60 seconds. By clicking ![Pause icon](/img/ico-pause.svg), automatic data refresh can be stopped. By clicking ![Replay icon](/img/ico-play-time.svg), automatic refresh can be restarted.
+-   When you select **_→ View previous version_** on the right of the ![number 01](/img/number-01.png) area, you can check the node list before reorganization.
+
+-   When selecting a desired column in the ![number 02](/img/number-02.png) area, you can sort the nodes based on the corresponding column. 
+
+-   When selecting the ![detail icon](/img/ic-pageview.svg) **_Detail_** icon under the OnodeName column in the ![number 02](/img/number-02.png) area, the corresponding node details page appears.
+
+## Metric information
+
+-   If you place your mouse cursor over the desired column, the metrics provided by the column are shown as follows: 
+
+    ![Metric information](/img/k8s-resource-node-list-metric-info.png)
+
+-   You can see the metrics for each column in the colum list on the **_Select column_** option. If you place your mouse cursor over the desired column, the ![Info icon](/img/ico-info.svg) **_Info icon_** appears to the right of the column name. If you place your mouse curson over ![Info icon](/img/ico-info.svg) **_info icon_**, the metric data appears as follows: 
+
+    ![Metric data in the column list](/img/k8s-resource-node-list-metric-info-cl.png)
+
+## Filtering
+
+By using the **_Filter_** option, you can select a desired node list for view. Through the `and` condition, multiple filters can be applied.
+
+1.  If you select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the ![Filter icon](/img/ico-filter.svg) **_Filter_** field of the ![number 01](/img/number-01.png) area, the **_Add filter_** window appears as follows:
+
+    <ImgLang img='k8s-resource-container-list-add-filter.png' desc='Add Filter' />
+
+    -   Select **_Filter Key_** and **_Condition_**.
+
+    -   Select a value that meets the conditions.
+
+2.  Configure a filter and then select **_Apply_** to apply the filter.
+
+3.  To add multiple filters, select ![Add filter icon](/img/ico-add.svg) **_Add icon_** in the **_Filter_** field or **_Add filter_** window.
+
+## Comparing
+
+Through the **_Compare_** column, you can see the comparison chart for key metrics of multiple nodes. 
+
+<ImgLang img='k8s-resource-node-list-compare.png' desc='Compare' />
+
+1.  Through the ![number a](/img/char-a.svg) comparison column on the left of the node list, select a node to compare. 
+
+    -   You can select up to 10 nodes. 
+
+    -   The selected nodes are given different colors.
+
+2.  You can see the comparison chart for the selected nodes in the ![number b](/img/char-b.svg) area. 
+
+    -   You can see the nodes selected in the ![number a](/img/char-a.svg) comparison column at the top of the ![number b](/img/char-b.svg) area.
+
+    -   By dragging the top of ![number b](/img/char-b.svg), you can adjust the height of the comparison chart area.
+
+3.  If you select ![number c](/img/char-c.svg) **_Check period_**, the comparison chart appears withing the period to view as follows:
+
+    <ImgLang img='k8s-resource-node-list-compare-time.png' desc='Check period' />
+
+## Select Column
+
+When using the **_Select column_** option, you can select the desired node data to view the node list. 
+
+<ImgLang img='k8s-resource-node-list-cl.png' desc='Add Filter' />
+
+-   The selected column list is kept even if you re-enter the menu.
+
+-   If you select **_Reset_**, the predefined default key metric columns are selected. In this case, the column selection history is deleted.
+
+-   You can select up to 29 columns.
+
+-   After selecting a column, you can click **_Apply_** at the lower right to apply the selected values.
 
 ## Node Details
 
-Home > Select Project > **_Resource_** > **_Node Details_**
-
-You can see the detailed information of a node.
-
-<ImgLang img='whatap_kubernetes_resource_node_detail.png' desc='Node Details' />
-
 The Node Details screen consists of four charts at the top and container details in the node.
+
+<ImgLang img='k8s-resource-node-detail.png' desc='Node Details screen' />
 
 -   Top charts
 
-    -   **_CPU Usage_**
+    -   **_CPU Usage_**: You can see the CPU usage of the node.
 
-    -   **_Memory Usage_**
+    -   **_Memory Usage_**: You can see the memory usage of the node.
 
-    -   **_Network_**
+    -   **_Network_**: You can see the input/output traffic and error packets of the node's network interface.
 
-    -   **_Disk Usage_**
+    -   **_Disk Usage_**: You can see the disk usage of the node. 
 
 -   Container Info
 
-    | Item              | Description                                                                    |
-    | ----------------- | ------------------------------------------------------------------------------ |
-    | Image             | Container Image Info                                                           |
-    | Pod               | Pod Name                                                                       |
-    | Container         | Container ID                                                                   |
-    | Command           | Container execution command                                                    |
-    | CpuByLimit        | Container CPU utilization by limit                                             |
-    | MemoryWsByLimit   | Container memory working set usage by limit                                    |
-    | CpuThrottledCnt   | Container CPU Throttled Count                                                  |
-    | CpuThrottledTime  | Container CPU Throttled Time                                                   |
-    | MemLimit          | Container Memory Limit Size                                                    |
-    | MemRequest        | Container Memory Request Size                                                  |
-    | MemWs             | Container memory working set                                                   |
-    | IoReadBytes       | Sum of bytes read per second across all block devices in the container         |
-    | IoReadIops        | Sum of counts read per second across all block devices in the container        |
-    | IoWriteBytes      | Sum of bytes written per second across all block devices in the container      |
-    | IoWriteIops       | Sum of counts written per second across all block devices in the container     |
-    | NetRxBytes        | Sum of bytes read per second across all block devices in the container         |
-    | NetRxDropped      | Container Network Receive Dropped Count                                        |
-    | NetRxError        | Container Network Receive Error Count                                          |
-    | NetRxIops         | Container Network Receive Error Count                                          |
-    | NetTxByes         | Container Network Transmit Data Size                                           |
-    | NetTxDropped      | Container Network Transmit Dropped Count                                       |
-    | NetTxError        | Container Network Transmit Error Count                                         |
-    | NetTxIops         | Container Network Transmit Error Count                                         |
+    | Item               | Description                                                                    |
+    | ------------------ | ------------------------------------------------------------------------------ |
+    | Status             | Container status                                                               |
+    | Container          | Container ID                                                                   |
+    | Image              | Container Image Info                                                           |
+    | Command            | Container execution command                                                    |
+    | Application        | Name of the WhaTap APM agent installed in the container                        |
+    | Pod                | Pod Name                                                                       |
+    | CpuByLimit         | Container CPU utilization by limit                                             |
+    | MemoryWsByLimit    | Container memory working set usage by limit                                    |
+    | CpuThrottledCnt    | Container CPU Throttled Count                                                  |
+    | CpuThrottledTime   | Container CPU Throttled Time                                                   |
+    | MemLimit           | Container Memory Limit Size                                                    |
+    | MemRequest         | Container Memory Request Size                                                  |
+    | MemWs              | Container memory working set                                                   |
+    | IoReadBytes        | Sum of bytes read per second across all block devices in the container         |
+    | IoReadIops         | Sum of counts read per second across all block devices in the container        |
+    | IoWriteBytes       | Sum of bytes written per second across all block devices in the container      |
+    | IoWriteIops        | Sum of counts written per second across all block devices in the container     |
+    | NetRxBytes         | Sum of bytes read per second across all block devices in the container         |
+    | NetRxDropped       | Container Network Receive Dropped Count                                        |
+    | NetRxError         | Container Network Receive Error Count                                          |
+    | NetRxIops          | Container Network Receive Error Count                                          |
+    | NetTxBytes         | Container Network Transmit Data Size                                           |
+    | NetTxDropped       | Container Network Transmit Dropped Count                                       |
+    | NetTxError         | Container Network Transmit Error Count                                         |
+    | NetTxIops          | Container Network Transmit Error Count                                         |
+
+<!-- 
+
+ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
+
+다음 기능을 추가로 제공합니다.
+
+* ![비교하기 아이콘](/img/ico-compare.svg) ***비교하기***: 복수의 노드를 선택해 차트 기반으로 사용량을 비교할 수 있습니다.
+
+* ![CSV 다운로드 아이콘](/img/ico-csv.svg) ***CSV 다운로드***: 화면에 표시된 목록 데이터를 CSV 파일로 다운로드할 수 있습니다.
+
+서버 목록 페이지의 데이터는 60초 마다 자동 갱신됩니다. 사용자는 ![일시정지 아이콘](/img/ico-pause.svg) 버튼을 클릭해 데이터의 자동 갱신을 중지하거나 ![재생 아이콘](/img/ico-play-time.svg) 버튼을 클릭해 자동 갱신을 재시작할 수 있습니다.
+
+-->

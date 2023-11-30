@@ -1,18 +1,17 @@
 ---
 id: software-proxy
 title: ソフトウェアプロキシ
-description: モニタリング対象サーバーから外部網への直接アクセスを遮断し、単一チャンネルを通じて外部接続を許可することができます。
+description: モニタリング対象サーバーから外部ネットワークへの直接アクセスを遮断し、単一チャンネルを介して外部接続を許可することができます。
 tags:
   - Java
   - アプリケーションモニタリング
   - ソフトウェアプロキシ
 ---
 
-モニタリング対象サーバーから外部網への直接的なアクセスを遮断し、単一チャンネルを通じて外部への接続を許可しようとする場合、TCP/UDP Proxy
-サーバーを構成して、WhaTapサーバーにデータを転送できます。
+モニタリング対象サーバーから外部ネットワークへの直接的なアクセスを遮断し、単一チャンネルを介して外部への接続を許可しようとする場合、TCP/UDP Proxy サーバーを構成して、WhaTapサーバーにデータを送信できます。
 
-ユーザーが直接Proxyサーバーを構成することが困難な状況であれば、WhaTapが提供するソフトウェアベースの**WhaTap Software Proxy**が活用できます。 
-これにより、ユーザーは多数のサーバーが外部網に直接接続することなく**WhaTap Software Proxy**を経由するように制御できます。 [HAProxy](https://www.haproxy.org)といった汎用プロキシを利用することもできます。
+ユーザーが直接Proxyサーバーを構成することが難しい状況にある場合、WhaTapが提供するソフトウェアベースの**WhaTap Software Proxy**を使用できます。 
+これにより、ユーザーは多数のサーバーが外部ネットワークに直接接続することなく**WhaTap Software Proxy**を経由するように制御できます。 [HAProxy](https://www.haproxy.org)といった汎用プロキシを使用することもできます。
 
 ![](/img/software-proxy.png)
 
@@ -20,11 +19,11 @@ tags:
 
 ### エージェントのインストール
 
-エージェントインストール案内に従ってインストールを進めると_whatap.agent.java.tar.gz_ファイルをダウンロードできます。 圧縮を解凍すると_whatap.agent.proxy-`X.Y.Z`.jar_ファイルをWhaTap収集サーバーと通信可能なサーバーの位置に保存してください。 インストール済みのエージェントがある場合は、その位置のファイルを利用できます。
+エージェントをインストール案内に従ってインストールすると、_whatap.agent.java.tar.gz_ファイルをダウンロードできます。 圧縮を解凍すると_whatap.agent.proxy-`X.Y.Z`.jar_ファイルをWhaTap収集サーバーと通信可能なサーバーの場所に保存してください。 インストール済みのエージェントがある場合は、その場所のファイルを利用できます。
 
 :::tip
 
-ウィンドウズ環境でServerエージェントをインストールする際に、プロキシ経由するようにポート番号を設定するには、次のコマンドを実行してください。
+ウィンドウズ環境でServerエージェントをインストールする場合は、プロキシを経由するポート番号を設定するには、次のコマンドを実行してください。
 
 ```powershell
 whatap_infra.exe /SILENT /SERIAL={アクセスキー} /PROXYIP={プロキシサーバIP} /PROXYPORT=6600
@@ -34,34 +33,34 @@ whatap_infra.exe /SILENT /SERIAL={アクセスキー} /PROXYIP={プロキシサ�
 
 ### エージェント設定
 
-この文書では、エージェントが位置するサーバーの帯域を**内部網**(**Private Subnet**), ソフトウェアプロキシが位置するサーバーの帯域を**外部網**(**Public Subnet**)といいます。
+この文書では、エージェントが配置されているサーバーの帯域を**プライベートサブネット**(**Private Subnet**)と呼び、ソフトウェアプロキシが配置されているサーバーの帯域を**パブリックサブネット**(**Public Subnet**)と呼びます。
 
-#### 外部網（Public Subnet）
+#### パブリックサブネット(Public Subnet)
 
-_whatap.agent.proxy-`X.Y.Z`.jar_ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために_proxy.conf_ファイルを作成してください。 _whatap.agent.proxy-`X.Y.Z`.jar_ファイルが位置するパスは`$PROXY_HOME`となります。
+_whatap.agent.proxy-`X.Y.Z`.jar_ファイルを適切なパスにコピーしたら、WhaTap収集サーバーIPとポート番号を設定するために_proxy.conf_ファイルを作成してください。 _whatap.agent.proxy-`X.Y.Z`.jar_ファイルがあるパスは`$PROXY_HOME`となります。
 
 ```ini title='$PROXY_HOME/proxy.conf'
 whatap.server.host=52.78.209.94/52.78.224.235 ## WhaTapアプリケーションモニタリング収集サーバーアドレス
 listen_port=6600 ## ProxyがListenするポート番号
 ```
 
-#### 内部網（Private Subnet）
+#### プライベートサブネット(Private Subnet)
 
-`$WHATAP_HOME`は、エージェントをインストールしたパスです。 `$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**外部網**(**Public Subnet**)サーバーのIPに変更してください。
+`$WHATAP_HOME`は、エージェントをインストールしたパスです。 `$WHATAP_HOME`_/whatap.conf_ファイルで`whatap.server.host`項目を**パブリックサブネット**(**Public Subnet**)サーバーのIPに変更してください。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
-whatap.server.host={外部網(Public Subnet)プロキシサーバーIP}
+whatap.server.host={パブリックサブネット(Public Subnet)プロキシサーバーIP}
 ```
 
-安定性のために**外部網**(**Public Subnet**)にプロキシを複数構成できます。 スラッシュ（/）を区切り文字として入力します。
+信頼性を確保するために**パブリックサブネット**(**Public Subnet**)にプロキシを複数構成できます。 スラッシュ(/)を区切り文字として入力します。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
-whatap.server.host={外部網(Public Subnet)プロキシサーバーIP #1}/{外部網(Public Subnet)プロキシサーバーIP #2} 
+whatap.server.host={パブリックサブネット(Public Subnet)プロキシサーバーIP #1}/{パブリックサブネット(Public Subnet)プロキシサーバーIP #2} 
 ```
 
 ### エージェント実行
 
-ソフトウェアプロキシは、`java`コマンドを通じて実行したり_proxy.sh_(_proxy.bat_)ファイルを作成して実行してください。
+ソフトウェアプロキシは、`java`コマンドを使用して実行したり_proxy.sh_(_proxy.bat_)ファイルを作成して実行してください。
 
 ```bash title='java command'
 java -jar whatap.agent.proxy-X.Y.Z.jar &
@@ -79,7 +78,7 @@ sh proxy.sh &
 
 :::note
 
-_proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod +x proxy.sh`コマンドで実行権限を付与してください。
+_proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod +x proxy.sh`コマンドを使用して実行権限を付与してください。
 
 :::
 
@@ -89,18 +88,18 @@ _proxy.sh_(_proxy.bat_)ファイルを作成して実行する場合、`$ chmod 
 
 ## HAProxy
 
-**HAProxy**を利用してプロキシサーバーを構築する方法を案内します。
+**HAProxy**を利用してプロキシサーバーを構築する方法を紹介します。
 
-### 内部網（Private Subnet）
+### プライベートサブネット(Private Subnet)
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 license=<プロジェクトアクセスキー>
 whatap.server.host=192.168.203.60 ## プロキシサーバーのIP
 ```
 
-### 外部網（Public Subnet）
+### パブリックサブネット(Public Subnet)
 
-次を参考にして_haproxy.cfg_ファイルを設定してください。
+次を参照して_haproxy.cfg_ファイルを設定してください。
 
 ```ini title='/etc/haproxy/haproxy.cfg'
 frontend proxy_in
@@ -124,18 +123,18 @@ backend proxy_out
 
 ## Nginxリバースプロキシ
 
-**Nginxリバースプロキシ**を利用してプロキシサーバーを構築する方法を案内します。
+**Nginxリバースプロキシ**を使用してプロキシサーバーを構築する方法を説明します。
 
-### 内部網（Private Subnet）
+### プライベートサブネット(Private Subnet)
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 license=<プロジェクトアクセスキー>
 whatap.server.host=192.168.203.60 ## プロキシサーバーのIP
 ```
 
-### 外部網（Public Subnet）
+### パブリックサブネット(Public Subnet)
 
-次を参考にして_nginx.conf_ファイルを設定してください。
+次を参照して_nginx.conf_ファイルを設定してください。
 
 ```apacheconf title='/etc/nginx/nginx.conf'
 stream {

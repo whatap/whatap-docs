@@ -1,0 +1,204 @@
+---
+id: analysis-top-object
+title: Topオブジェクト
+description: ユーザーが適切なチューニングを進め、データベースを最適化する情報を提供します。
+tags:
+  - PostgreSQL
+  - データベース
+  - Topオブジェクト
+---
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="dbObjectInfo" className="uitext" />
+
+個別インスタンスのオブジェクト（テーブル、インデックス）別のBloatingサイズ、Scan数、DML実行数、Dead tupleが多いオブジェクトを提供し、使用の多いオブジェクトを把握し、VacuumやAnalyzeを適切な時期に実行できる情報を提供します。
+
+<ImgLang img='db-top-object.png' desc='Top object' />
+
+画面で照会したい<Cmdname sid="date" className="uitext" />と<Cmdname sid="instance" className="uitext" />、<Cmdname sid="TTL06346" className="uitext" />、<Cmdname sid="TTL06345" className="uitext" />を設定してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。 選択した条件に応じた結果がテーブルに表示されます。
+
+:::note
+
+-   <Cmdname sid="dbObjectInfo" />についての情報は1日に1回収集します。 関連するエージェント設定の詳細については、<Link to="#set-agent-topObject">次の文書</Link>を参照してください。
+
+-   この機能は、DBXエージェント1.6.13バージョン以降に対応しています。
+
+:::
+
+## Bloating
+
+**Bloating**は実際に使用されていないtupleが増加してオブジェクトサイズが大きくなる現象です。 
+
+:::tip
+
+**チューニングチップ**
+
+`Bloat_ratio`が高いテーブルはVacuumの実行を検討してください。 詳細については、次の文書を参照してください。
+
+-   [https://postgresql.kr/blog/postgresql_table_bloating.html](https://postgresql.kr/blog/postgresql_table_bloating.html)
+
+-   [https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5](https://medium.com/compass-true-north/dealing-with-significant-postgres-database-bloat-what-are-your-options-a6c1814a03a5)
+
+:::
+
+次は<span class="uitext">Bloating</span>を照会すると表示されるカラム項目です。
+
+|     区分    | カラム名          | 説明                                      |
+| :-------: | ------------- | --------------------------------------- |
+| **Table** | `datname`     | データベース名                                 |
+|     ^     | `schemaname`  | スキーマ(schema)名                           |
+|     ^     | `tablename`   | テーブル名                                   |
+|     ^     | `est_rows`    | **Dead tuple** + **Live tuple**件数で予測した値 |
+|     ^     | `table_size`  | テーブルサイズ                                 |
+|     ^     | `bloat_size`  | **Dead tuple**で膨らませた予想テーブルサイズ           |
+|     ^     | `bloat_ratio` | 膨らませたサイズの比率です。                          |
+| **Index** | `datname`     | データベース名                                 |
+|     ^     | `schemaname`  | スキーマ(schema)名                           |
+|     ^     | `tablename`   | テーブル名                                   |
+|     ^     | `indexname`   | インデックス名                                 |
+|     ^     | `table_size`  | テーブルサイズ                                 |
+|     ^     | `index_size`  | インデックスサイズ                               |
+|     ^     | `bloat_size`  | **Dead tuple**によって膨らませた予想インデックスサイズ      |
+|     ^     | `bloat_ratio` | 膨らませたサイズ比率                              |
+|     ^     | `index_scans` | インデックスを使用した場合、index scan回収              |
+
+## Scan
+
+`Seq_scan`はインデックスを使用していないFull Scanを意味し、`idx_scan`はインデックスを使用した数を意味します。
+
+:::tip
+
+**チューニングチップ** 
+
+`Seq_scan`が高いテーブルはインデックス作成を、`idx_scan`が低いインデックスは削除を検討してください。 詳細については、[次の文書](https://www.postgresql.org/docs/8.1/performance-tips.html)を参照してください。
+
+:::
+
+次は<span class="uitext">Scan</span>を照会すると表示されるカラム項目です。
+
+|     区分    | カラム名            | 説明                                      |
+| :-------: | --------------- | --------------------------------------- |
+| **Table** | `datname`       | データベース名                                 |
+|     ^     | `schemaname`    | スキーマ(schema)名                           |
+|     ^     | `tablename`     | テーブル名                                   |
+|     ^     | `seq_scan`      | 該当テーブルを順次スキャン(Full scan)した数             |
+|     ^     | `seq_tup_read`  | 順次スキャンから読み込みされたライブ行数                    |
+|     ^     | `idx_scan`      | 該当テーブルのインデックススキャン数                      |
+|     ^     | `idx_tup_fetch` | インデックススキャンで読み込んだライブ行数                   |
+| **Index** | `datname`       | データベース名                                 |
+|     ^     | `schemaname`    | スキーマ(schema)名                           |
+|     ^     | `tablename`     | テーブル名                                   |
+|     ^     | `indexname`     | インデックス名                                 |
+|     ^     | `idx_scan`      | インデックススキャン実行数                           |
+|     ^     | `idx_tup_fetch` | 該当インデックスを使用してインデックススキャンから抽出された有効なテーブル行数 |
+|     ^     | `idx_tup_read`  | インデックススキャンに戻されたインデックス項目の数               |
+
+## DML
+
+`dml_count`値が高いテーブルは、使用の多い主要なテーブルです。
+
+:::tip
+
+**チューニングチップ**
+
+主要なテーブルを把握し、アーキテクチャ、バックアップ設計などの主要な対象を検討してください。
+
+:::
+
+次は<span class="uitext">DML</span>を照会すると表示されるカラム項目です。
+
+| カラム名            | 説明                                       |
+| --------------- | ---------------------------------------- |
+| `datname`       | データベース名                                  |
+| `schemaname`    | スキーマ(schema)名                            |
+| `tablename`     | テーブル名                                    |
+| `dml_count`     | `n_tup_ins` + `n_tup_upd` + `n_tup_del`  |
+| `n_tup_ins`     | 挿入(Insert)された行数                          |
+| `n_tup_upd`     | アップデート(Update)された行数                      |
+| `n_tup_del`     | 削除(Delete)された行数                          |
+| `n_tup_hot_upd` | HOTアップデートされた行数（例えば、別途でインデックスアップデート必要のない） |
+
+## Analyze Time
+
+AnalyzeとVacuum実行の日付が古いオブジェクトの一覧です。
+
+:::tip
+
+**チューニングチップ**
+
+日付の古いテーブルは、統計情報が不正確である可能性があります。 実行を検討してください。 詳細については、[次の文書](https://www.enterprisedb.com/blog/postgresql-vacuum-and-analyze-best-practice-tips)を参照してください。
+
+:::
+
+次は<span class="uitext">Analyze Time</span>を照会すると表示されるカラム項目です。
+
+| カラム名                  | 説明                                              |
+| --------------------- | ----------------------------------------------- |
+| `datname`             | データベース名                                         |
+| `schemaname`          | スキーマ(schema)名                                   |
+| `tablename`           | テーブル名                                           |
+| `last_analyze`        | テーブルを手動分析した最後の時間                                |
+| `last_autoanalyze`    | autovacuumデーモンでテーブルを分析した最後の時間                   |
+| `last_autovacuum`     | autovacuumデーモンでテーブルをバキューム(vacuum)した最後の時間        |
+| `analyze_count`       | 手動で分析した回数                                       |
+| `last_vacuum`         | テーブルが手動でバキューム(vacuum)した最後の時間(VACUUM FULLは該当しない) |
+| `autoanalyze_count`   | autovacuumデーモンで分析した回数                           |
+| `autovacuum_count`    | autovacuumデーモンでバキューム(vacuum)した回数                |
+| `vacuum_count`        | 手動でバキューム(vacuum)した回数(VACUUM FULLは除外)            |
+| `n_mod_since_analyze` | 最後の分析(analyze)以後変更された行数(推定値)                    |
+
+## Age
+
+PostgreSQLからはXID(transaction id)を循環的に使用して、ある時点でXIDがラップアラウンド(Wraparound)されることがあります。 これを防止するために`xid_age`(Current XID - 作成時点のXID)が増え続けないように管理されなければなりません。 `autovacuum_freeze_max_age`を超過するとAnti-Wraparound Vacuumを自動的に行うようになり`autovacuum_freeze_max_age`以下で`xid_age`を管理します。
+
+:::tip
+
+**チューニングチップ**
+
+`xid_age`を下げるためにはVacuumの実行を検討してください。 詳細については、[次の文書](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND)を参照してください。
+
+:::
+
+次は<span class="uitext">Age</span>を照会すると表示されるカラム項目です。
+
+| カラム名                        | 説明                                        |
+| --------------------------- | ----------------------------------------- |
+| `datname`                   | データベース名                                   |
+| `schemaname`                | スキーマ(schema)名                             |
+| `tablename`                 | テーブル名                                     |
+| `xid_age`                   | vacuum作業で整理された最っとも日付の古い`xid`の間隔（年齢）       |
+| `table_size`                | テーブルサイズ                                   |
+| `autovacuum_vacuum_tuples`  | この値よりDead tupleの数が多くなると、autovacuumを実行します。 |
+| `dead_tuples`               | Dead tuple数                               |
+| `autovacuum_freeze_max_age` | デフォルト値は２億に設定                              |
+
+## Dead Tuple
+
+Dead tupleはDeleteやUpdateですでに削除された資料です。 free spaceに変えるためにVacuum実行を検討します。
+
+:::tip
+
+**チューニングチップ**
+
+Dead tupleを減らすためにはVacuum実行を検討してください。 詳細については、[次の文書](https://www.postgresql.org/docs/current/routine-vacuuming.html)を参照してください。
+
+:::
+
+次は<span class="uitext">Dead Tuple</span>を照会すると表示されるカラム項目です。
+
+| カラム名                  | 説明                                  |
+| --------------------- | ----------------------------------- |
+| `datname`             | データベース名                             |
+| `schemaname`          | スキーマ(schema)名                       |
+| `tablename`           | テーブル名                               |
+| `dead_tuple`          | DeleteやUpdate等により使用しないタプル(Tuple)の個数 |
+| `dead_tuple_ratio`    | 使用しないタプル(Tuple)の割合                  |
+| `live_tuple`          | 使用するタプル(Tuple)の個数                   |
+| `live_tuple_ratio`    | 使用するタプル(Tuple)の割合                   |
+| `total_relation_size` | リレーションの全体サイズ、インデックスとTOASTデータを含む     |
+| `total_tuple`         | 全てのタプル(Tuple)の個数                    |
+
+## エージェント設定{#set-agent-topObject}
+
+次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 _whatap.conf_ファイルに必要なオプションを設定してください。
+
+{@include: ../common-items/_db-pg-top-object-agent-setting.mdx}

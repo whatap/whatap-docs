@@ -1,0 +1,41 @@
+-   **pg_object** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Topオブジェクトが情報収集されるかどうかを設定します。 情報を収集するには`true`に変更してください。
+
+-   **pg_object_hour** <span class='type'>Int</span>
+
+    デフォルト値`5`
+
+    Topオブジェクトの情報を収集する時刻を設定します。 デフォルト値は`5`で、午前5時に収集を始めます。
+
+-   **table_bloat_ratio** <span class='type'>Percentage</span>
+
+    デフォルト値`50`
+
+    テーブルbloating ratio値が設定値以上の場合は、情報を収集します。 デフォルト値は50%です。
+
+-   **table_bloat_bytes** <span class='type'>Byte</span>
+
+    デフォルト値`10485760`
+
+    テーブルbloatingbytes値が設定値以上の場合、情報を収集します。 デフォルト値は10MBです。
+
+-   **index_bloat_ratio** <span class='type'>Percentage</span>
+
+    デフォルト値`50`
+
+    インデックスbloatingratio値が設定値以上の場合、情報を収集します。 デフォルト値は50%です。
+
+-   **index_bloat_bytes** <span class='type'>Byte</span>
+
+    デフォルト値`10485760`
+
+    インデックスbloating bytes値が設定値以上の場合、情報を収集します。 デフォルト値は10MBです。
+
+-   **autovacuum_list_limit**  <span class='type'>Int</span>
+
+    デフォルト値`50`
+
+    日付の古いage(`relfrozenxid`)順に設定値だけテーブル情報を収集します。 デフォルト値は50個です。

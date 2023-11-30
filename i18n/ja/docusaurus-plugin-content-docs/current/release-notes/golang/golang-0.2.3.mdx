@@ -7,27 +7,6 @@ pagination_next: release-notes/golang/golang-0_2_2
 
 2023年9月13日
 
-:::info
-
-**ダウンロード**
-
--   go-api(import library)
-
-    ```bash
-    go get github.com/whatap/go-api@latest
-    ```
-
--   サービスエージェント
-
-    | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
-    | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
-    | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
-    | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
-    | Freebsd 10以降                    | x86 x64 |    TXZ   |        [ダウンロード](http://repo.whatap.io/freebsd/10/whatap-php-2.6.2.txz)        |
-    | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
-
-:::
-
 -   <Status>Feature</Status>大容量プロファイル処理オプションの追加
 
     -   既存のプロファイルは、最大1024個のプロファイル情報を収集しました。 設定で最大値を増やすことができますが、メモリの増加は必然的に発生しました。
@@ -69,3 +48,23 @@ pagination_next: release-notes/golang/golang-0_2_2
     -   上記のオプションに関連するエージェント設定の詳細については、[次の文書](../../golang/agent-transaction#track-http-trs)を参照してください。
 
     :::
+
+:::info
+
+**ダウンロード**
+
+-   go-api(import library)
+
+    ```bash
+    go get github.com/whatap/go-api@latest
+    ```
+
+-   サービスエージェント
+
+    | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
+    | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
+    | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
+    | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
+    | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
+
+:::

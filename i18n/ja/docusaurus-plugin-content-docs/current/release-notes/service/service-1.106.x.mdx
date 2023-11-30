@@ -359,9 +359,9 @@ pagination_next: release-notes/service/service-1_104_x
 
 #### User Interface (UI)
 
--   <Status>Change</Status>時間セレクターのエラーメッセージ テキストのスタイルを修正
+-   <Status>Change</Status>時間セレクターのエラーメッセージのテキストスタイルを修正
 
--   <Status>Fixed</Status><UI>プロジェクトリスト</UI>メニューでサイズ調節されないバグの修正
+-   <Status>Fixed</Status><UI>プロジェクトリスト</UI>メニューのサイズが調整できないバグの修正
 
 #### ダッシュボード
 
@@ -377,11 +377,11 @@ pagination_next: release-notes/service/service-1_104_x
 
 #### アラート通知
 
--   <Status>Feature</Status><UI>イベント受信設定</UI>メニューの<UI>ユーザー別イベント受信設定</UI>セクションに折りたたみ/展開機能を追加
+-   <Status>Feature</Status><UI>イベント受信設定</UI>メニューから<UI>ユーザー別イベント受信設定</UI>セクションに折りたたみ/展開機能を追加
 
--   <Status>Feature</Status><UI>イベント受信設定</UI>メニューで3rdパーティープラグインのWebhook JSON追加フォームに<b>ユーザーヘッダー</b>(<code>User-Heaer</code>)機能の追加
+-   <Status>Feature</Status><UI>イベント受信設定</UI>メニューから3rdパーティープラグインのWebhook JSON追加フォームに<b>ユーザーヘッダー</b>(<code>User-Heaer</code>) 機能の追加
 
-    **ユーザーヘッダー**:key,valueペアで入力した情報をウェブフックで受信すると、ヘッダーで確認できます。 次はユーザーヘッダーのkey,valueを`User-Header-Key`,`TestValue`で入力した場合、ウェブフック受信情報に関する例です。
+    **ユーザーヘッダー**: key, value ペアで入力した情報をウェブフックで受信すると、ヘッダーで確認できます。 次は、ユーザーヘッダーのkey, valueを`User-Header-Key`,`TestValue`で入力した場合、ウェブフックの受信情報に関する例です。
 
     ```http {8} title='example'
     POST /test HTTP/1.1
@@ -394,7 +394,7 @@ pagination_next: release-notes/service/service-1_104_x
     User-Header-Key: Test-Value
     ```
 
--   <Status>Fixed</Status>3rdパーティープラグイン追加を完了した後、ウィンドウが閉じれない問題を修正
+-   <Status>Fixed</Status>3rdパーティープラグイン追加を完了した後、ウィンドウが閉じない問題を修正
 
 -   <Status>Change</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクスイベント</UI>タブでイベント追加時に<b>関連カテゴリ</b>項目を削除
 
@@ -402,7 +402,7 @@ pagination_next: release-notes/service/service-1_104_x
 
 -   <Status>Fixed</Status><UI>組織作成</UI>メニューから日本語メッセージを修正
 
--   <Status>Fixed</Status>プロジェクト作成メニューで<b>Node.js</b>,<b>Altibase</b>商品名の修正
+-   <Status>Fixed</Status>プロジェクト作成メニューの<b>Node.js</b>,<b>Altibase</b>製品名の修正
 
 * * *
 
@@ -410,15 +410,15 @@ pagination_next: release-notes/service/service-1_104_x
 
 #### 共通
 
--   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューでチャートのデザイン変更
+-   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューからチャートのデザイン変更
 
     |                          修正前                         |                         修正後                        |
     | :--------------------------------------------------: | :------------------------------------------------: |
     | ![before](/img/release/before-transaction-chart.png) | ![after](/img/release/after-transaction-chart.png) |
 
--   <Status>Change</Status><UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューで一般トランザクションとエラートランザクションが重なる場合、エラーが先に表示されるように改善
+-   <Status>Change</Status><UI>ダッシュボード</UI>><UI>トランザクションマップ</UI>メニューから通常のトランザクションとエラートランザクションが重なる場合、エラーが先に表示されるように改善
 
--   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>アクティブトランザクション</UI>メニューでテーブル内の遅いトランザクションおよび非常に遅いトランザクション表示の色を修正
+-   <Status>Change</Status> <UI>ダッシュボード</UI>><UI>アクティブトランザクション</UI>メニューでテーブルの低速トランザクションと非常に低速なトランザクション表示の色を修正
 
 -   <Status>Fixed</Status>アプリケーションプロジェクトの<UI>Flexボード</UI>メニューから<code>app_user</code>カテゴリー内<code>logbits</code>フィールドを使用する場合、MXQL作成ロジックから例外処理を追加
 
@@ -432,7 +432,7 @@ pagination_next: release-notes/service/service-1_104_x
 
 ### `Server`
 
-<p><Status>Fixed</Status>サーバープロジェクトに進入する際に、画面が表示されないバグを修正</p>
+<p><Status>Fixed</Status>サーバープロジェクトに入力するときに、画面が表示されないバグを修正</p>
 
 * * *
 
@@ -440,7 +440,7 @@ pagination_next: release-notes/service/service-1_104_x
 
 -   <Status>Change</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューの<UI>イベント</UI>タブからログ権限チェックロジックを削除
 
--   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューでイベントログのTagを隠せるオプションを追加
+-   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューからイベントログのTagを非表示にするオプションを追加
 
 -   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューで断続的にホワイトアウトが発生するバグを修正
 
@@ -456,7 +456,7 @@ pagination_next: release-notes/service/service-1_104_x
 
     ![sample](/img/release/k8s-performance-sum-rn.jpg)
 
--   <Status>Fixed</Status><UI>リソース</UI>><UI>ノード一覧</UI>メニューで表示するコンテナ情報がない場合でもロード中のように見えるバグを修正
+-   <Status>Fixed</Status><UI>リソース</UI>><UI>ノード一覧</UI>メニューで表示するコンテナ情報がない場合でもロードされているように見えるバグを修正
 
 -   <Status>Change</Status><UI>ログ</UI>><UI>ログ設定</UI>メニューでのノードエージェントログ設定に対し、ユーザーの利便性のためにオプションを直接入力せず、ボタンクリックだけで適用されるように変更
 
@@ -470,19 +470,19 @@ pagination_next: release-notes/service/service-1_104_x
 
 -   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューからアクティブセッションテーブル整列変更ステータスプリセット保存の追加
 
--   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでデータ更新時、配置解除バグを修正
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでデータ更新時、並べ替え解除バグを修正
 
 -   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>インスタンスモニタリング</UI>メニューでアクティブセッションテーブルの新しいウィンドウで表示を追加
 
--   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>Flexボード</UI>メニューでアクティブセッションテーブルウィジェット整列変更ステータス保存の追加
+-   <Status>Feature</Status> <UI>ダッシュボード</UI>><UI>Flexボード</UI>メニューでアクティブセッションテーブルウィジェット並べ替え変更ステータス保存の追加
 
--   <Status>Change</Status>プロジェクトバージョン選択機能提供の締切日変更
+-   <Status>Change</Status>プロジェクトバージョン選択の機能の変更期日の変更
 
-    -   <code>PostgreSQL</code>:2023年9月30日→2023年10月31日
+    -   <code>PostgreSQL</code>: 2023年9月30日→2023年10月31日
 
-    -   <code>MySQL</code>:2023年10月30日→2023年11月30日
+    -   <code>MySQL</code>: 2023年10月30日→2023年11月30日
 
--   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューでデータ呼び出しおよびローディング速度の差で、チャートが不自然に出力される現象を改善
+-   <Status>Fixed</Status><UI>分析</UI>><UI>カウント推移比較</UI>メニューからデータ呼び出しと読み込み速度の違いによりチャートが不自然に出力される問題を改善
 
 -   <Status>Change</Status><UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューで照会できる最大時間を1時間に制限
 
@@ -502,7 +502,7 @@ pagination_next: release-notes/service/service-1_104_x
 
 ### `URL`
 
-<p><Status>Fixed</Status> <UI>URL一覧</UI>メニューの<UI>URLを追加する</UI>機能利用時<UI>確認地域</UI>セクションの重複項目を削除</p>
+<p><Status>Fixed</Status> <UI>URL一覧</UI>メニューから<UI>URLの追加</UI>機能を使用する場合 <UI>の確認地域</UI>セクションの重複を削除</p>
 
 * * *
 
@@ -514,11 +514,11 @@ pagination_next: release-notes/service/service-1_104_x
 
 #### ログ検索
 
--   <Status>Fixed</Status><UI>フィルター</UI>入力欄に<code>category</code>を入力するか、左のサイドメニューで選択すると<code>category==+none</code>が入力される現象の修正
+-   <Status>Fixed</Status><UI>フィルター</UI>入力欄に<code>category</code>を入力するか、左側のサイドメニューから選択すると<code>category==+none</code>を表示される現象の修正
 
--   <Status>Fixed</Status> <UI>フィルター</UI>入力欄に<code>category</code>が入力された状態では追加<code>category</code>が入力されない現象の修正
+-   <Status>Fixed</Status> <UI>フィルター</UI>入力欄に<code>category</code>を入力された状態では、追加の<code>category</code>が入力できない不具合を修正
 
--   <Status>Fixed</Status><UI>フィルター</UI>入力欄で重複値が入力されないように修正
+-   <Status>Fixed</Status><UI>フィルター</UI>入力欄で重複する値が入力できないように修正
 
 -   <Status>Change</Status>タグ<UI>隣接ログ</UI>を検索すると<UI>時間選択</UI>オプションを変更
 
@@ -536,12 +536,12 @@ pagination_next: release-notes/service/service-1_104_x
 
 -   <Status>Feature</Status><UI>分析</UI>><UI>ページロードヒートマップ</UI>メニューにページグループフィルターと検索フィルターを追加
 
--   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ブラウザエラー</UI>><UI>エラー詳細</UI>メニューで背景スタイルを修正
+-   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ブラウザエラー</UI>><UI>エラー詳細</UI>メニューの背景スタイルを修正
 
 * * *
 
 ### `実験室`
 
-<p><Status>Change</Status>(<b>Container</b>,<b>Java</b>商品のみ該当)<UI>Remote Access Status</UI>メニューで<b>ログ照会</b>権限のないメンバーも使用できるように変更</p>
+<p><Status>Change</Status>(<b>Container</b>,<b>Java</b>商品のみ)<UI>Remote Access Status</UI>メニューで<b>ログ参照</b>権限を持たないメンバーでも使用できるように変更</p>
 
 </div>

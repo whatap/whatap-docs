@@ -6,11 +6,11 @@ toc_max_heading_level: 2
 
 ## デプロイ履歴
 
-リリーズ：2023年6月8日
+リリース：2023年6月8日
 
-<p><Status>Fixed</Status> <code>hostguid.enabled=true</code>オプションを適用する場合<b>AWS EC2</b>を含む仮想マシンの<code>Guid</code>値を<code>oid</code>(エージェント固有番号)生成時に含めるように修正</p>
+<p><Status>Fixed</Status> <code>hostguid.enabled=true</code>オプションを適用する場合<b>AWS EC2</b>を含む仮想マシンの<code>Guid</code>値を<code>oid</code>(エージェント固有番号)作成時に含めるように修正</p>
 
--   IPアドレスが再利用されても<code>oid</code>が変わるように変更し、解約された<code>oid</code>を再利用する際に<code>Guid</code>値を使用して、デフォルト通知の適用が欠落する可能性のあるエラーを防止します。
+-   IPアドレスが再利用された場合でも、<code>oid</code>が変わるように変更し、失効した<code>oid</code>を再利用する際は、<code>Guid</code>値を使用して、デフォルト通知の適用を見逃す可能性のあるエラーを防止します。
 
 ## ダウンロード
 

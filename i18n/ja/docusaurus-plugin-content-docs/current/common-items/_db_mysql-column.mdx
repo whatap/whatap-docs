@@ -11,13 +11,13 @@
 | `user`            | SQL実行アカウント                                                  |
 | `host`            | このスレッドが関連付けられたhostname                                      |
 | `db`              | default database名、 ない場合はNULL                                |
-| `command`         | 実行中のコマンドtype（Query/Sleep/Daemonなど）                          |
+| `command`         | 実行されているコマンドの種類 (Query/Sleep/Daemonなど)                       |
 | `time`            | 現在のCOMMANDの実行時間(秒)                                          |
 | `state`           | スレッドの状態(executing/updating/sending dataなど)                  |
 | `query`           | 実行されているstatementです。`Processlist.info`からリテラル値を除外したSQLを表示します。 |
 | `query_param`     | `query`から分離したリテラル値                                          |
 | `type`            | Threadのタイプ。 FOREGROUND/BACKGROUNDなど                         |
-| `connection_type` | Connectionをする時に使用されるprotocol。 TCP/IP, SSL/TLS               |
+| `connection_type` | Connectionの確立に使用されるprotocol。 TCP/IP, SSL/TLS                |
 
 </TabItem>
 

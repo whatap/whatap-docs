@@ -4,17 +4,35 @@
 
     To record HTTP headers in the trace details, set it to `true`.
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+-   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
     Default `false`
 
     To record HTTP parameters in the trace details, set this to `true`. Parameters can be viewed by entering a separate security key.
+
+    <InDoc product='nodejs'>
 
     :::note
 
     Set the security key to 6 digits in _`${WHATAP_AGENT_HOME}`/paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
 
     :::
+
+    </InDoc>
+
+    <InDoc product='java'>
+
+    :::note
+
+    -   **Earlier than Java Agent 2.2.2**: The security key is written in the WAS server _`${WHATAP_AGENT_HOME}`/paramkey.txt_ file with a 6-letter value. If the _paramkey.txt_ file does not exist, it is automatically created with a random value.
+
+    -   **Java Agent 2.2.2 or later**: For the security key, check the `paramkey` key value in the WAS server _`${WHATAP_AGENT_HOME}`/security.conf_ file. If the _security.conf_ file does not exist, the `paramkey` key value is automatically created as **WHATAP**.
+
+    -   For more information about the security key configuration file, see [the following](install-agent#security).
+
+    :::
+
+    </InDoc>
 
 -   **profile_http_header_url_prefix** <span class='type'>String</span>
 

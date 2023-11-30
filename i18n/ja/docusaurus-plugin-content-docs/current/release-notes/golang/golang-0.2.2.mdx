@@ -25,13 +25,13 @@ pagination_next: release-notes/golang/golang-0_1_14
 
     :::tip
 
-    **エージェント設定**方法の詳細については、[次の文書](../../golang/install-agent#set-agent)を参考にしてください。
+    **エージェント設定**方法の詳細については、[次の文書](../../golang/install-agent#set-agent)を参照してください。
 
     :::
 
--   <Status>Change</Status>エージェントIPC通信をUDPからTCPに変更
+-   <Status>Change</Status>エージェントのIPC通信をUDPからTCPに変更
 
-    -   `net_udp_host`、`net_udp_port`オプションは従来通り維持
+    -   `net_udp_host`、`net_udp_port`のオプションは変わりません
 
     -   追加された`net_ipc_host`、`net_ipc_port`オプション使用可能
 
@@ -61,7 +61,7 @@ pagination_next: release-notes/golang/golang-0_1_14
     service whatap-agent restart
     ```
 
--   <Status>Change</Status>エージェントの名づけルールの変更
+-   <Status>Change</Status>エージェントの命名ルールの変更
 
     -   既存：`{type}`-`{ip2}`-`{ip3}`-`{process}`
 
@@ -73,7 +73,7 @@ pagination_next: release-notes/golang/golang-0_1_14
 
     -   `{cmd_full}`：実行コマンドのすべての行をハッシュ値として処理します。 実行args全体です。
 
-    -   同じプロセスと引数を使用する場合、エージェント名が重複する可能性があります。 _whatap.conf_ファイルに`app_name`オプションをユーザーが任意に設定できます。 詳細は、[次の文書](../../golang/install-agent#duplicate_appname)を参考にしてください。 設定を完了した後は、アプリケーションを再起動する必要があります。
+    -   同じプロセスと引数を使用する場合、エージェント名が重複する可能性があります。 _whatap.conf_ファイルに`app_name`オプションをユーザーが設定できます。 詳細は、[次の文書](../../golang/install-agent#duplicate_appname)を参照してください。 設定を完了した後は、アプリケーションを再起動する必要があります。
 
     :::
 

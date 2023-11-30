@@ -29,9 +29,9 @@ AJAX の利点には、ユーザー エクスペリエンスの向上とサー�
 
 ## 基本画面ガイド
 
-<ImgLang img='browser-analysis-ajax-hitmap.png' desc='AJAX Hitmap' />
+### <Cmdname sid="ajaxAnalytics" />
 
-### ![](/img/number-01.png) <Cmdname sid="ajaxAnalytics" className="uitext" />
+<ImgLang img='browser-analysis-ajax-hitmap.png' desc='AJAX Hitmap' />
 
 時間に応じたAJAXイベントの応答時間を分布図チャートで表現するウィジェットです。 
 
@@ -43,9 +43,11 @@ AJAX の利点には、ユーザー エクスペリエンスの向上とサー�
 
 -   <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>Ajax</b>イベントを表現します。 エラー<b>AJAX</b>イベントはステータスコードが<code>0</code>か<code>400</code>以上の場合です。 ステータスコードが<code>0</code>ならばブラウザからサーバー側にリクエストが届かなかった場合です。
 
-### ![](/img/number-02.png) <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="list" className="uitext" />
+### <Cmdname sid="ajax" /> <Cmdname sid="list" />
 
-ヒートマップチャートの![数字3](/img/number-03.png)一部領域をドラッグすると、ドラッグした領域のAJAXイベントを![数字2](/img/number-02.png)<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="list" className="uitext" />と呼び込みます 
+<ImgLang img='browser-analysis-ajax-hitmap-list.png' desc='AJAX Hitmap' />
+
+<Cmdname sid="ajaxAnalytics" className='uitext' />チャートの一部領域をドラッグすると、ドラッグした領域のAJAXイベント一覧と詳細情報が確認できる<Cmdname sid="ajax" className="uitext" /><Cmdname sid="analysis" className="uitext" />ウィンドウが表示されます。
 
 次は、テーブル内のカラム項目について説明します。
 
@@ -77,11 +79,13 @@ AJAX の利点には、ユーザー エクスペリエンスの向上とサー�
 
 ## AJAXイベントの詳細情報を確認する
 
-<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="list" className="uitext" />から各項目を選択すると、詳細を照会できる<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />ウィンドウが表示されます。
+<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" />ウィンドウで各項目を選択すると、詳細を表示できる<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />ウィンドウが画面の右側に表示されます。
 
 <ImgLang img='browser-analysis-ajax-hitmap-details.png' desc='AJAXイベント詳細情報' />
 
 AJAXイベントを読み込み過程での区間別所要時間をグラフチャートで提供します。 これにより、AJAXロードの過程で遅い区間を把握して改善に活用できます。
+
+エラーが発生したAJAX一覧のみを確認するには、<Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />ウィンドウの左上にある <Cmdname sid="all" className="uitext" />選択ボックスから<Cmdname sid="error" className="uitext" />を選択してください。
 
 ### <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />
 

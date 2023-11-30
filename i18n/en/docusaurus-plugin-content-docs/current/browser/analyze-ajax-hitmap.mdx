@@ -29,9 +29,9 @@ In the <Cmdname sid="ajaxAnalytics" className="uitext" /> menu provided from **B
 
 ## Basic screen guide
 
-<ImgLang img='browser-analysis-ajax-hitmap.png' desc='AJAX Hitmap' />
+### <Cmdname sid="ajaxAnalytics" />
 
-### ![](/img/number-01.png) <Cmdname sid="ajaxAnalytics" className="uitext" />
+<ImgLang img='browser-analysis-ajax-hitmap.png' desc='AJAX Hitmap' />
 
 This widget displays the response times for AJAX events over time in a distribution chart. 
 
@@ -43,9 +43,11 @@ This widget displays the response times for AJAX events over time in a distribut
 
 -   The error occurrence <b>AJAX</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. An error <b>AJAX</b> event occurs when the status code is <code>0</code> or more than <code>400</code>. If the status code is <code>0</code>, the request is not passed from the browser to the server.
 
-### ![](/img/number-02.png) <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="list" className="uitext" />
+### <Cmdname sid="ajax" /> <Cmdname sid="list" />
 
-If you drag part of ![number 3](/img/number-03.png) in the hitmap chart, the AJAX events of the dragged area are loaded into ![number 2](/img/number-02.png) <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="list" className="uitext" />. 
+<ImgLang img='browser-analysis-ajax-hitmap-list.png' desc='AJAX Hitmap' />
+
+If any part is dragged in the <Cmdname sid="ajaxAnalytics" className='uitext' /> chart, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window appears to display the AJAX event list and details of the dragged area.
 
 The following show the descriptions for columns in the table.
 
@@ -77,11 +79,13 @@ For more information about the column that can be added using the <Cmdname sid="
 
 ## Checking the AJAX event details
 
-If you select each item in <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" /> window appears to view the detailed information.
+If you select each item in the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="analysis" className="uitext" /> window, the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" /> window appears on the right to display the detailed information.
 
 <ImgLang img='browser-analysis-ajax-hitmap-details.png' desc='AJAX Event Details' />
 
 The times required for each section is provided in a graph chart while loading the AJAX events. The chart helps you identify slow sections while loading AJAX events and enhance them.
+
+To see only the AJAX list that has errors, on the upper left of the <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" /> window, select from the <Cmdname sid="error" className="uitext" /> <Cmdname sid="all" className="uitext" /> choose list.
 
 ### <Cmdname sid="ajax" className="uitext" /> <Cmdname sid="info" className="uitext" />
 

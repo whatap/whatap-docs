@@ -13,21 +13,35 @@ Home > Select Project > **_Management_** > **_Maintenance Plan_**
 
 You can register a maintenance plan and pause notification set to receive during the registered maintenance time. Set a periodic maintenance plan by using the repeat setting.
 
+-   When <Cmdname sid="BTN07004" className="uitext" /> is selected, a new maintenance plan screen appears.
+
+-   The existing maintenance plan and a new maintenance plan are not compatible. 
+
+    -   Maintenance plans registered in the existing maintenance plan menu can be viewed only in the previous plan menu.
+
+    -   Maintenance plans registered in the New maintenance plan menu can be viewed in the New maintenance plan menu.
+
+-   For more information about new maintenance plans, see [the following](#maintenance-v2).
+
 :::note
+
+**Role**
 
 To add, modify, or delete a maintenance plan, the **_Edit_** role for the project is required. For more information about the member roles, see [the following](../project/project-structure#project-auth).
 
 :::
 
-## Registering a maintenance plan
+## Default maintenance plan {#maintemance-v1}
 
-1.  Select **_+ Add plan_** on the upper right of the screen.
+### Registering a maintenance plan
+
+1.  Select **_+_** <Cmdname sid="add_plan" className="uitext" /> on the upper right of the screen.
 
 2.  If **_Add Maintenance history_** appears, enter values for **_Creator_** and **_Description_** in order.
 
     <ImgLang img='maintenance-add.png' desc='Add Maintenance history' />
 
-3.  Select a periodic repetition interval in the **_Repeat_** field.
+3.  Select a periodic repetition interval in the <Cmdname sid="repeat" className="uitext" /> field.
 
     -   **_Once_**: The maintenance plan notification operates only once during the set time. Select this if you do not need the repeat setting.
     -   **_Daily_**: It is a daily recurring maintenance plan.
@@ -55,7 +69,13 @@ After registering a maintenance plan, if there is any plan scheduled to be prefo
 
 -   If your select on from the list, the **_Maintenance Plan_** window appears for information details. Maintenance plans cannot be modified in this window.
 
-## Modifying a maintenance plan
+:::note
+
+Server projects cannot use the maintenance plan <Cmdname sid="repeat" className="uitext" /> function in the previous maintenance plan menu. 
+
+:::
+
+### Modifying a maintenance plan
 
 1.  In the **_maintenance plan_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the item to edit. 
 
@@ -63,11 +83,11 @@ After registering a maintenance plan, if there is any plan scheduled to be prefo
 
 3.  After modification, select **_OK_**.
 
-## Disabling a maintenance plan
+### Disabling a maintenance plan
 
 It is disabled when you select the toggle button on the utmost right of any plan in the **_Maintenance Plan_** list. The maintenance plan becomes inactive.
 
-## Deleting a maintenance plan
+### Deleting a maintenance plan
 
 1.  Form the **_Maintenance Plan_** list, select the checkbox on the utmost left of the item to delete. You can select multiple items.
 
@@ -78,11 +98,132 @@ It is disabled when you select the toggle button on the utmost right of any plan
 :::note
 
 -   To select all maintenance plans, select the leftmost checkbox at the top of the list.
+
 -   No extra delete confirmation appears. Be careful before deletion.
 
 :::
 
-## Adding the maintenance plan widget to the dashboard
+### Adding the maintenance plan widget to the dashboard
+
+**_Flex Board_** provides the **_maintenance plan_** widget by the widget template. 
+
+<ImgLang img='maintenance-widget.png' desc='Maintenance plan widget' />
+
+1.  Go to Home > Select Project > **_Dashboard_** > **_Flex Board_**, and then select a dashboard in the **_dashboard list_** to add the widget to.
+
+2.  Select **_Edit Mode_**.
+
+3.  In the **_widget template_** list, select **_maintenance plan_**.
+
+4.  Locate the **_maintenance plan_** widget to a desired place.
+
+:::note
+
+-   If you select one from the list in the **_Maintenance Plan_** widget, the detailed information window appears. Maintenance plans cannot be modified in this window.
+
+-   On the upper right of the **_maintenance plan_** widget, if you select ![More icon](/img/ico-more.svg) > ![Shortcut icon](/img/ico-shortcut.svg), **_Management_** > **_Maintenance Plan_** appears.
+
+:::
+
+## New maintenance plan {#maintenance-v2}
+
+<ImgLang img='maintenance-v2.png' desc='New Maintenance Plan' />
+
+:::note 
+
+When <Cmdname sid="BTN06991" className="uitext" /> is selected, the previous maintenance plan screen appears.
+
+:::
+
+### Registering a maintenance plan
+
+1.  Select **_+_** <Cmdname sid="add_plan" className="uitext" /> on the upper right of the screen.
+
+2.  If **_Add Maintenance history_** appears, enter values for **_Creator_** and **_Description_** in order.
+
+    <ImgLang img='maintenance-add-v2.png' desc='Add Maintenance history' />
+
+3.  Select **_Target Agent_**.
+
+    -   Enabling **_Auto-select all agents_**
+
+        -   The agents added after configuring a maintenance plan are automatically included in the maintenance plan.
+
+    -   Disabling **_Auto-select all agents_**
+
+        -   The list of all activated or deactivated agents installed in the project (agent name, IP) appears. 
+
+        -   The agents selected in the **_Target Agent_** list become the targets for the maintenance plan.
+
+        -   You can select up to 300 agents.
+
+4.  Select a periodic repetition interval in the <Cmdname sid="repeat" className="uitext" /> field.
+
+    -   **_Once_**: The maintenance plan notification operates only once during the set time. Select this if you do not need the repeat setting.
+    -   **_Daily_**: It is a daily recurring maintenance plan.
+    -   **_Weekly_**: It is a weekly maintenance plan that repeats on the selected day of the week.
+    -   **_Monthly_**: It is a maintenance plan that repeats every month on the selected day.
+    -   **_Yearly_**: It is a maintenance plan that repeats on the selected month and day every year.
+
+5.  Set the start time and end time in the **_Date and time_** field.
+
+    -   When registering for one-time maintenance plan, select a desired time among **_30 minutes_**, **_1 hour_**, **_2 hours_**, and **_6 hours_** in the quick time selection option.
+
+6.  After all settings are finished, select **_OK_**.
+
+You can see the items added in the list of maintenance plans. 
+
+After registering a maintenance plan, if there is any plan scheduled to be preformed within 1 hour while using the menus in the project, or any plan is running, the maintenance plan appears in the banner format on the screen.
+
+<ImgLang img='maintenance-header-v2.png' desc='Maintenance plan header banner' />
+
+-   Maintenance plans in progress appear in orange, and the maintenance plans that are scheduled to run within an hour appear with a gray background.
+
+    <ImgLang img='progress-banner.png' desc='In progress' />
+
+    <ImgLang img='before-banner.png' desc='Scheduled' />
+
+-   If you select the maintenance plan banner at the top, the **_maintenance plan_** list appears. You can see a list of maintenance plans scheduled to run within an hour and running maintenance plans.
+
+-   If your select on from the list, the **_Maintenance Plan_** window appears for information details. Maintenance plans cannot be modified in this window.
+
+:::note
+
+-   For Kubernetes projects and URL projects, the **_Target Agent_** selection feature cannot be used. 
+
+-   For Kubernetes projects and URL projects, additional agents installed after setting the maintenance plan are automatically included in the maintenance plan.
+
+:::
+
+### Modifying a maintenance plan
+
+1.  In the **_maintenance plan_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the item to edit. 
+
+2.  If the **_edition_** window appears, modify the items if necessary. 
+
+3.  After modification, select **_OK_**.
+
+### Disabling a maintenance plan
+
+It is disabled when you select the toggle button on the utmost right of any plan in the **_Maintenance Plan_** list. The maintenance plan becomes inactive.
+
+### Deleting a maintenance plan
+
+1.  Form the **_Maintenance Plan_** list, select the checkbox on the utmost left of the item to delete. You can select multiple items.
+
+2.  Select **_Delete_** on the upper right of the screen. 
+
+3.  If you select **_Delete_**, the checked maintenance plan is deleted.
+
+:::note
+
+-   To select all maintenance plans, select the leftmost checkbox at the top of the list.
+
+-   No extra delete confirmation appears. Be careful before deletion.
+
+:::
+
+### Adding the maintenance plan widget to the dashboard
 
 **_Flex Board_** provides the **_maintenance plan_** widget by the widget template. 
 

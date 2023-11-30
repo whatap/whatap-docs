@@ -10,6 +10,12 @@ tags:
 
 The following provides the options related to the Node.js agent DB and SQL.
 
+-   **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+
+    Default `false`
+
+    Collecting SQL parameters is enabled. However, the parameters can be retrieved only by entering a separate security key. Set the security key to 6 digits in _paramkey.txt_ of the agent installation path. If _paramkey.txt_ does not exist, it is automatically generated and a random key is set.
+
 -   **profile_connection_open_enabled** <span class='type'>Boolean</span>
 
     Default `true`

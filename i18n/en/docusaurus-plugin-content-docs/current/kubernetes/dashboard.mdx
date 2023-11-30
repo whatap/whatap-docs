@@ -10,13 +10,15 @@ tags:
   - Kubernetes Monitoring
 ---
 
-:::note 
+Home > Select Project > **_Dashboard_** > **_Application Service Dashboard_** 
 
-The Kubernetes application service dashboard V2 can be seen in the preview.
+It is a dashboard that allows you to see the status of applications running inside the container in real time. For normal data output of each widget, the node agent must have been installed in the Kubernetes environment, and the WhaTap agent must also have been installed in the application inside the container.
+
+:::note
+
+WhaTap agent installation is supported for the applications developed in [Java](../java/dashboard-intro), [Node.js](../nodejs/dashboard-intro), [Python](../python/dashboard-intro), and [PHP](../php/dashboard-intro). 
 
 :::
-
-Home > Select Project > **_Dashboard_** > **_Application Service Dashboard_** 
 
 <ImgLang img='k8s-ap-service-dashboard.png' desc='Application service dashboard'/>
 
@@ -24,7 +26,9 @@ Home > Select Project > **_Dashboard_** > **_Application Service Dashboard_**
 
 In case of general charts excluding CPU and memory, the stable data appears in blue and the elements identified as problems appear in red, making it easy to recognize the current status.
 
-## Viewing the past data
+## Application Dashboard
+
+### Viewing the past data
 
 **_Application dashboard_** basically provides real-time monitoring features, in which you can view the past data.
 
@@ -42,9 +46,9 @@ In case of general charts excluding CPU and memory, the stable data appears in b
 
 It updates the data in widgets placed on the dashboard based on the set time. To switch to the Realtime mode, select ![Playback icon](/img/ico-play-time.svg).
 
-## Checking the agent
+### Checking the agent
 
-### Checking the agent connection status
+#### Checking the agent connection status
 
 <ImgLang img='apm-dashboard-check-agent.png' desc='Agent connection status' />
 
@@ -58,7 +62,7 @@ On the upper left of the screen, the right area of the time selector provides in
 
 -   ![Agent display icon](/img/ic-inactive.svg): Can display or hide inactive agents.
 
-### Agent-based monitoring
+#### Agent-based monitoring
 
 <ImgLang img='apm-dashboard-select-agent.png' desc='Selecting the agent' />
 
@@ -76,7 +80,7 @@ If there are numerous agents connected to the project, it is efficient to set th
 
 :::
 
-### Monitoring each classified agents
+#### Monitoring each classified agents
 
 <ImgLang img='apm-dashboard-select-agent-by-category.png' desc='Selecting the agent by kind' />
 
@@ -92,29 +96,29 @@ You can select and monitor agents by each group classified through agent setting
 
 -   **_Agent by server_**: Only the agents classified as `whatap.onode` in the agent configuration can be monitored.
 
-## Editing a dashboard widget
+### Editing a dashboard widget
 
 The widgets on the dashboard can be adjusted to the desired size and placed in the desired positions. You can also delete unnecessary widgets or add them again.
 
-### Resizing a widget
+#### Resizing a widget
 
 <ImgLang img='apm-dashboard-widget-resize.png' desc='Adjusting the widget size' />
 
 Click and hold the mouse on the ![Resize icon](/img/ic-widget-size.svg) element at the lower right of the widget, and then drag it to the desired size. Grids with a uniform horizontal-to-vertical ratio appear and the size of the widget can be adjusted in each grid.
 
-### Moving a widget
+#### Moving a widget
 
 <ImgLang img='apm-dashboard-widget-move.png' desc='Moving a widget' />
 
 When you move the mouse cursor to the top of the widget, the cursor shape changes to ![Move icon](/img/ic-move-pointer.svg). At this time, you can move the widget by dragging with your left mouse button and move to the desired position.
 
-### Deleting a widget
+#### Deleting a widget
 
 <ImgLang img='apm-dashboard-widget-remove.png' desc='Deleting a widget' />
 
 Right-click on a widget to delete. If you select **_Delete_**, the widget is deleted from the dashboard.
 
-### Adding a widget
+#### Adding a widget
 
 <ImgLang img='apm-dashboard-widget-add.png' desc='Adding a widget' />
 
@@ -126,13 +130,13 @@ The widgets that can be added are fixed, but we plan to increase supports throug
 
 :::
 
-## Preset
+### Preset
 
 ![Preset](/img/apm-dashboard-preset-default.png)
 
 You can save and load the settings and layouts for widgets on the dashboard. The default preset (**_Default_**) cannot be changed, but you can create a new preset by resizing and placing widgets in the desired format.
 
-### Creating a new preset
+#### Creating a new preset
 
 1.  Place the widgets in the desired format on the dashboard. You can also resize and place only the widgets to be frequently checked.
 
@@ -156,11 +160,11 @@ You can see the newly saved preset from the preset list.
 
 :::
 
-### Deleting presets
+#### Deleting presets
 
 If you have unused presets, you can delete them from the preset list. Select ![Delete icon](/img/ico-remove.svg) on the right of the item to delete from the preset list.
 
-## Using the widget options
+### Using the widget options
 
 The features of the icon displayed on the upper right of the widget are as follows:
 
@@ -174,7 +178,7 @@ The provided options may differ depending on the widget.
 
 :::
 
-## Learning about widgets
+### Learning about widgets
 
 :::info
 
@@ -188,21 +192,21 @@ This document mainly describes the widgets placed on the **_Application dashboar
 
 :::
 
-### Agent-related widgets
+#### Agent-related widgets
 
 You can see the application information through the agent installed on the application.
 
-### Transaction-related widget
+#### Transaction-related widget
 
 The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. <span class='normal'>Blue (Normal)</span> means transactions within the specified response time, <span class='slow'>Orange (Slow)</span> means slow transactions with the response time of around 8 seconds, and <span class='vslow'>Red (Very slow)</span> means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
 
-#### Active Transaction Speed
+###### Active Transaction Speed
 
 ![Active transaction speed](/img/speedmeter.png)
 
 You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
 
-#### Active transactions{#active-trs}
+###### Active transactions{#active-trs}
 
 <ImgLang img='apm-dashboard-active-tx.png' desc='Active transaction' />
 
@@ -234,7 +238,7 @@ The situation where lots of blue colors are represented is not a problem. You mu
 
     :::
 
-#### Active Status{#active-status}
+###### Active Status{#active-status}
 
 <ImgLang img='apm-dashboard-active-status.png' desc='Active status' />
 
@@ -256,7 +260,7 @@ All agents in the project collect the active transaction count every 5 seconds, 
 
 -   **_SOCKET_**: Indicates the TCP connection attempt to an external system. If the **_SOCKET_** number continues to increase, there is a high possibility of failures due to disconnection of the external system.
 
-#### Hitmap
+###### Hitmap
 
 <ImgLang img='hitmap.png' desc='Hitmap' />
 
@@ -286,11 +290,11 @@ The **_HITMAP_** chart represents the distribution of response times of complete
 
 :::
 
-### Service-related widget
+#### Service-related widget
 
 The service-related widget can be used as the metric for application performance tuning.
 
-#### TPS
+###### TPS
 
 ![TPS](/img/apm-dashboard-tps.png)
 
@@ -302,7 +306,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-#### Average Res. Time
+###### Average Res. Time
 
 <ImgLang img='apm-dashboard-avg-response-time.png' desc='Average response time'/>
 
@@ -314,9 +318,9 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-### Resource-related widget
+#### Resource-related widget
 
-#### Container CPU
+###### Container CPU
 
 <ImgLang img='k8s-ap-service-dashboard-cpu.png' desc='Container CPU' />
 
@@ -328,7 +332,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-#### Heap Memory{#heap-memory}
+###### Heap Memory{#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='Heap memory' />
 
@@ -358,9 +362,9 @@ For more information about the heap memory and its chart analysis, see the follo
 
 :::
 
-### User-related widget
+#### User-related widget
 
-#### Concurrent User
+###### Concurrent User
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='Concurrent User' />
 
@@ -382,21 +386,21 @@ It displays the number of real-time browser users. Every 5 seconds, users who ma
 
 :::
 
-### Comparison widget on a daily basis
+#### Comparison widget on a daily basis
 
-#### Today's TPS
+###### Today's TPS
 
 <ImgLang img="apm-dashboard-today-tps.png" desc="Today's TPS" />
 
 It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily application status_** appears.
 
-#### Today's visits
+###### Today's visits
 
 <ImgLang img="apm-dashboard-today-users.png" desc="Today's Visits" />
 
 This metric shows the number of **_Concurrent user_** for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily application status_** appears.
 
-## Checking the real-time alert
+### Checking the real-time alert
 
 If you select ![Alert Status icon](/img/ico-noti.svg) **Alert Status** on the upper right of the screen, the recent events appear. You can turn on or off the browser notifications by clicking the toggle menu.
 
@@ -405,3 +409,9 @@ If you select ![Alert Status icon](/img/ico-noti.svg) **Alert Status** on the up
 For more information about basic elements in the fixed menu area at the top of the screen, see [the following](../main-ui-intro).
 
 :::
+
+## Multi Service Dashboard
+
+You can view and compare the selected applications in the individual card format.
+
+<ImgLang img='k8s-application-multi-service-dashboard.png' desc='Multi Service Dashboard' />
