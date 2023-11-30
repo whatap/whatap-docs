@@ -4,7 +4,6 @@
 /.credentials
 # /node_modules
 sheets.googleapis.com-whatap-locale.json
-docusaurus.config.js
 
 # Generated files
 .docusaurus
@@ -42,3 +41,4 @@ node_modules/.cache/webpack/client-development-ko/15.pack
 node_modules/.cache/webpack/client-development-ko/index.pack
 node_modules/.cache/webpack/client-development-ko/index.pack.old
 /.vscode/*.json
+docusaurus.config.js
