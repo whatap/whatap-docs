@@ -1,11 +1,11 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - preview
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Deployment?"
+        default: "WhaTap"
 
 permissions:
   contents: write
@@ -26,7 +26,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
-        run: yarn build --no-minify
+        run: yarn build --locale ko --no-minify
+        
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
