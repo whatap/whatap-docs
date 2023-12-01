@@ -827,7 +827,7 @@ function MDXContent(_param) {
     }, `통계 메뉴 옵션 이용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "query-details"
     }, `쿼리 자세히 보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "db-pg-sql-stat-sql-details.png",
+        img: "db-sql-details-postgresql.png",
         desc: "SQL 상세",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {

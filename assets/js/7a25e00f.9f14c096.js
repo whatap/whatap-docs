@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Service 지난 버전",
-        "permalink": "/whatap-docs/release-notes/service/service-previous"
+        "title": "Java Agent v2.2.24",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_24"
     },
     "next": {
         "title": "Java Agent v2.2.22",

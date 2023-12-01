@@ -848,7 +848,7 @@ function MDXContent(_param) {
     }, `서버에 존재하는 기존 인덱스 중 사용할 어떤 인덱스도 찾지 못한 횟수, 횟수가 증가하면 인덱스 점검이 필요합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "query-details"
     }, `쿼리 자세히 보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "db-mysql-sql-stat-details.png",
+        img: "db-sql-details-common.png",
         desc: "SQL 상세",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
