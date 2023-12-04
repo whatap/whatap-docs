@@ -303,9 +303,6 @@
     "message": "タグ",
     "description": "The title of the tag list page"
   },
-  "project_add_btn": {
-    "message": "プロジェクト"
-  },
   "theme.SearchModal.searchBox.resetButtonTitle": {
     "message": "検索ワードの消去",
     "description": "The label and ARIA label for search box reset button"
@@ -413,10 +410,6 @@
   "theme.SearchPage.algoliaLabel": {
     "message": "Search by Algolia",
     "description": "The ARIA label for Algolia mention"
-  },
-  "component.imageErrorMessage": {
-    "message": "!!イメージがありません。サイトの管理者にお問い合わせください!!",
-    "description": "No images. Contact site manager."
   },
   "whatap_plugin.sharefacebook": {
     "message": "共有",

@@ -171,7 +171,7 @@ const App = () => {
                   translate({
                     id: "components.feedback.submit",
                     message: "제출하기",
-                    description: "Sharing this page",
+                    description: "Submit a survey",
                     })
                   }
                 </button>
