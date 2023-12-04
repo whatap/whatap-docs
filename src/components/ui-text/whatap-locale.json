@@ -718,7 +718,7 @@
     "ja": "詳細",
     "ko": "자세히 보기",
     "zh": "查看更多",
-    "service_id": "_00118"
+    "service_id": "LNK00118"
   },
   "sms_summary_list_more": {
     "en": "View all",
@@ -29681,7 +29681,7 @@
   },
   "master_alert_template_4_detail": {
     "en": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
-    "ja": "クラスタCPUクォータに対するCPU要求（最小要求元）が80％を超えました。",
+    "ja": "クラスタCPUの割り当て量に比べ、CPU Request（最小リクエストリソース）が80％を超えました。",
     "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 80% 이상입니다.",
     "zh": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
     "service_id": "NTC04316"
@@ -29695,7 +29695,7 @@
   },
   "master_alert_template_5_detail": {
     "en": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
-    "ja": "クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 80% 以上です。",
+    "ja": "クラスタMemoryの割り当て量に比べ、Memory Request（最小リクエストリソース）が 80% 以上です。",
     "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 80% 이상입니다.",
     "zh": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
     "service_id": "NTC04318"
@@ -29709,7 +29709,7 @@
   },
   "master_alert_template_6_detail": {
     "en": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
-    "ja": "クラスタCPUクォータに対するCPU要求（最小要求元）が60%を超えました。",
+    "ja": "クラスタCPUの割り当て量に比べ、CPU Request（最小リクエストリソース）が60%を超えました。",
     "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 60% 이상입니다.",
     "zh": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
     "service_id": "NTC04320"
@@ -29723,7 +29723,7 @@
   },
   "master_alert_template_7_detail": {
     "en": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
-    "ja": "クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 60% 以上です。",
+    "ja": "クラスタMemoryの割り当て量に比べ、Memory Request（最小リクエストリソース）が 60% 以上です。",
     "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 60% 이상입니다.",
     "zh": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
     "service_id": "NTC04322"
@@ -48315,28 +48315,28 @@
   },
   "TTL07015": {
     "en": "Add correlated project",
-    "ja": "相関プロジェクトの登録",
+    "ja": "関連プロジェクトの登録",
     "ko": "연계 프로젝트 추가",
     "zh": "Add correlated project",
     "service_id": "TTL07015"
   },
   "TTL07016": {
     "en": "Correlated project list",
-    "ja": "関連プロジェクト一覧",
+    "ja": "関連プロジェクトのリスト",
     "ko": "연계 프로젝트 목록",
     "zh": "Correlated project list",
     "service_id": "TTL07016"
   },
   "DSC07017": {
     "en": "After selecting the project you want to add, click the Add button.",
-    "ja": "追加するプロジェクトを選択した後、「追加」ボタンをクリックします。",
+    "ja": "連携するプロジェクトを選択してから、「追加」ボタンをクリックします。",
     "ko": "연계 추가할 프로젝트를 선택한 후, 추가 버튼을 눌러주세요.",
     "zh": "After selecting the project you want to add, click the Add button.",
     "service_id": "DSC07017"
   },
   "DSC07018": {
     "en": "A correlated project has been added.",
-    "ja": "関連プロジェクトが追加されました。",
+    "ja": "関連プロジェクトを追加しました。",
     "ko": "연계 프로젝트가 추가되었습니다.",
     "zh": "A correlated project has been added.",
     "service_id": "DSC07018"
@@ -48532,7 +48532,7 @@
   },
   "TTL07046": {
     "en": "Correlations",
-    "ja": "相関関係",
+    "ja": "連携分析",
     "ko": "연계 분석",
     "zh": "Correlations",
     "service_id": "TTL07046"
@@ -49043,35 +49043,35 @@
   },
   "DSC07122": {
     "en": "Select correlated project",
-    "ja": "相関プロジェクトを選択",
+    "ja": "関連プロジェクトの選択",
     "ko": "연계 프로젝트 선택",
     "zh": "Select correlated project",
     "service_id": "DSC07122"
   },
   "TTL07123": {
     "en": "Delete correlated project",
-    "ja": "相関プロジェクトの削除",
+    "ja": "関連プロジェクトの削除",
     "ko": "연계 프로젝트 삭제",
     "zh": "Delete correlated project",
     "service_id": "TTL07123"
   },
   "DSC07124": {
     "en": "Are you sure you want to delete project {projectName} from its correlated projects?",
-    "ja": "プロジェクト {projectName} を相関プロジェクトから削除してもよろしいですか?",
+    "ja": "プロジェクト {projectName} を関連プロジェクトから削除しますか?",
     "ko": "{projectName} 프로젝트를 연계 프로젝트에서 삭제하시겠습니까?",
     "zh": "Are you sure you want to delete project {projectName} from its correlated projects?",
     "service_id": "DSC07124"
   },
   "DSC07125": {
     "en": "A correlated project has been added.",
-    "ja": "関連プロジェクトが追加されました。",
+    "ja": "関連プロジェクを追加しました。",
     "ko": "연계 프로젝트가 추가되었습니다.",
     "zh": "A correlated project has been added.",
     "service_id": "DSC07125"
   },
   "DSC07126": {
     "en": "The correlated project has been deleted.",
-    "ja": "関連付けられたプロジェクトが削除されました。",
+    "ja": "関連プロジェクトを削除しました。",
     "ko": "연계 프로젝트가 삭제되었습니다.",
     "zh": "The correlated project has been deleted.",
     "service_id": "DSC07126"
@@ -49239,7 +49239,7 @@
   },
   "TTL07151": {
     "en": "Correlated project",
-    "ja": "相関プロジェクト",
+    "ja": "関連プロジェクト",
     "ko": "연계 프로젝트",
     "zh": "Correlated project",
     "service_id": "TTL07151"
@@ -49463,7 +49463,7 @@
   },
   "DSC07183": {
     "en": "Resource information for this application could not be determined. Please check node agent status or access key",
-    "ja": "このアプリケーションのリソース情報を確認できません。 ノードエージェントの状態またはアクセスキーを確認してください",
+    "ja": "該当アプリケーションのリソース情報を確認できません。 ノードエージェントの状態、またはアクセスキーを確認してください。",
     "ko": "이 애플리케이션의 리소스 정보를 확인할 수 없습니다. 노드 에이전트 상태 또는 액세스 키를 확인하여 주십시오",
     "zh": "Resource information for this application could not be determined. Please check node agent status or access key",
     "service_id": "DSC07183"
@@ -50184,17 +50184,199 @@
   },
   "BTN07286": {
     "en": "Add license",
-    "ja": "ライセンスの追加",
+    "ja": "ライセンス追加",
     "ko": "라이선스 추가",
     "zh": "Add license",
     "service_id": "BTN07286"
   },
   "BTN07287": {
     "en": "Edit license",
-    "ja": "編集ライセンス",
+    "ja": "ライセンス修正",
     "ko": "라이선스 수정",
     "zh": "Edit license",
     "service_id": "BTN07287"
+  },
+  "CNT07288": {
+    "en": "Verification code check failed.",
+    "ja": "検証コードのチェックに失敗しました。",
+    "ko": "검증 코드 확인에 실패 하였습니다.",
+    "zh": "Verification code check failed.",
+    "service_id": "CNT07288"
+  },
+  "DSC07289": {
+    "en": "Update all agents to latest version",
+    "ja": "すべてのエージェントを最新バージョンに更新",
+    "ko": "모든 에이전트 최신 버전으로 업데이트",
+    "zh": "Update all agents to latest version",
+    "service_id": "DSC07289"
+  },
+  "TTL07290": {
+    "en": "Reasons for license expiration",
+    "ja": "ライセンス失効の理由",
+    "ko": "라이선스 만료 이유",
+    "zh": "Reasons for license expiration",
+    "service_id": "TTL07290"
+  },
+  "TTL07291": {
+    "en": "Download agent version",
+    "ja": "エージェントバージョンのダウンロード",
+    "ko": "에이전트 버전 다운로드",
+    "zh": "Download agent version",
+    "service_id": "TTL07291"
+  },
+  "DSC07292": {
+    "en": "Once the download to the agent server is complete, the agent automatically restarts with the most recent version of the Jar file. (Takes about 1 minute)",
+    "ja": "エージェントサーバーへのダウンロードが完了すると、最新バージョンのJarファイルでエージェントが自動的に再起動します（1分程かかります）。",
+    "ko": "에이전트 서버에 다운로드가 완료되면 가장 최신버전의 Jar 파일로 에이전트가 자동 재기동욉니다. (약 1분 소요)",
+    "zh": "Once the download to the agent server is complete, the agent automatically restarts with the most recent version of the Jar file. (Takes about 1 minute)",
+    "service_id": "DSC07292"
+  },
+  "DSC07293": {
+    "en": "If it does not restart automatically, run restart.sh in the agent installation folder.",
+    "ja": "自動で再起動しない場合は、エージェントインストールフォルダのrestart.shを実行してください。",
+    "ko": "자동 재기동 되지 않을 경우 에이전트 설치폴더의 restart.sh을 실행해주세요.",
+    "zh": "If it does not restart automatically, run restart.sh in the agent installation folder.",
+    "service_id": "DSC07293"
+  },
+  "DSC07294": {
+    "en": "If the download fails, click the ‘Download to PC’ button and upload the whatap.agent.dbx.jar file to the agent installation folder.",
+    "ja": "ダウンロードに失敗した場合は、「PCにダウンロード」ボタンをクリックして、whatap.agent.dbx.jarファイルをエージェントインストールフォルダにアップロードしてください。",
+    "ko": "다운로드에 실패한 경우 'PC로 다운로드' 버튼을 클릭하여 whatap.agent.dbx.jar파일을 에이전트 설치 폴더에 업로드해주세요.",
+    "zh": "If the download fails, click the ‘Download to PC’ button and upload the whatap.agent.dbx.jar file to the agent installation folder.",
+    "service_id": "DSC07294"
+  },
+  "TTL07295": {
+    "en": "Agent update information",
+    "ja": "エージェントアップデートのご案内",
+    "ko": "에이전트 업데이트 안내",
+    "zh": "Agent update information",
+    "service_id": "TTL07295"
+  },
+  "TTL07296": {
+    "en": "Latest agent version",
+    "ja": "最新エージェントのバージョン",
+    "ko": "최신 에이전트 버전",
+    "zh": "Latest agent version",
+    "service_id": "TTL07296"
+  },
+  "TTL07297": {
+    "en": "{platform} Monitoring V2 change notice",
+    "ja": "{platform} モニタリング V2 への変更のご案内",
+    "ko": "{platform} 모니터링 V2 변경 안내",
+    "zh": "{platform} Monitoring V2 change notice",
+    "service_id": "TTL07297"
+  },
+  "DSC07298": {
+    "en": "<span style='font-weight: bold; color: #296CF2;'><b>Starting from {date}, the existing V1 dashboard will be retired<br/> and converted to the {platform} V2 version with enhanced charting and collection features.</b></span>",
+    "ja": "<span style='font-weight: bold; color: #296CF2;'><b> {date}から既存のV1ダッシュボードから、<br/>チャートと収集機能を強化した{platform} V2ダッシュボードへ移行します。</b></span>",
+    "ko": "<span style='font-weight: bold; color: #296CF2;'><b>{date}부터 기존 V1 대시보드가 폐기되고<br/> 차트 및 수집 기능을 강화한 {platform} V2 버전으로 전환됩니다.</b></span>",
+    "zh": "<span style='font-weight: bold; color: #296CF2;'><b>Starting from {date}, the existing V1 dashboard will be retired<br/> and converted to the {platform} V2 version with enhanced charting and collection features.</b></span>",
+    "service_id": "DSC07298"
+  },
+  "DSC07299": {
+    "en": "<span style='color: #757575;'>After agent update is completed, V1 (old version screen) will be displayed until {date}<br/>\nYou can select and use it in project settings.</span>",
+    "ja": "<span style='color: #757575;'>エージェント更新完了後、V1ダッシュボードは{date}まで、<br/>\nプロジェクト設定から選択して使用できます。</span>",
+    "ko": "<span style='color: #757575;'>에이전트 업데이트 완료 후 V1(구 버전 화면)은 {date}까지<br/>\n프로젝트 설정에서 선택하여 사용하실 수 있습니다.</span>",
+    "zh": "<span style='color: #757575;'>After agent update is completed, V1 (old version screen) will be displayed until {date}<br/>\nYou can select and use it in project settings.</span>",
+    "service_id": "DSC07299"
+  },
+  "DSC07300": {
+    "en": "To fully use all menu functions in V2, use <span style='font-weight: bold; color: #296CF2;'><b>Agent update is required.</b></span><br/>\n<b>Some data may not be viewed from agent version {version} or lower</b>.<br/>\nPlease click the button below to update the agent.",
+    "ja": "V2ダッシュボードを正常に使用するには、<span style = 'font-weight：bold; color: #296CF2;'><b>エージェントの更新が必須です。</b></span><br/>\n<b>エージェントバージョン{version}以下</b>から、一部のデータが照会されない場合があります。<br/>\n下のボタンをクリックしてエージェントのアップデートを進めてください。",
+    "ko": "V2 전 메뉴 기능을 온전히 사용하기 위해서는 <span style='font-weight: bold; color: #296CF2;'><b>에이전트 업데이트가 필수입니다.</b></span><br/>\n<b>에이전트 버전 {version} 이하</b>부터는  일부 데이터가 조회되지 않을 수 있습니다.<br/>\n아래의 버튼을 클릭하여 에이전트 업데이트를 진행해주세요.",
+    "zh": "To fully use all menu functions in V2, use <span style='font-weight: bold; color: #296CF2;'><b>Agent update is required.</b></span><br/>\n<b>Some data may not be viewed from agent version {version} or lower</b>.<br/>\nPlease click the button below to update the agent.",
+    "service_id": "DSC07300"
+  },
+  "DSC07301": {
+    "en": "If you are having trouble updating, please contact WhaTap technical support team.",
+    "ja": "更新へのお問い合わせは、WhaTapサポート窓口までご連絡ください。",
+    "ko": "업데이트가 어려우신 경우 와탭 기술지원팀에 문의하세요.",
+    "zh": "If you are having trouble updating, please contact WhaTap technical support team.",
+    "service_id": "DSC07301"
+  },
+  "LNK07302": {
+    "en": "View {platform} V2 Docs",
+    "ja": "{platform} V2 Docsの確認",
+    "ko": "{platform} V2 Docs 보기",
+    "zh": "View {platform} V2 Docs",
+    "service_id": "LNK07302"
+  },
+  "BTN07303": {
+    "en": "Switch to V2",
+    "ja": "V2の切り替え",
+    "ko": "V2로 전환하기",
+    "zh": "Switch to V2",
+    "service_id": "BTN07303"
+  },
+  "BTN07304": {
+    "en": "Select the entire project",
+    "ja": "プロジェクト全体を選択",
+    "ko": "프로젝트 전체 선택",
+    "zh": "Select the entire project",
+    "service_id": "BTN07304"
+  },
+  "DSC07305": {
+    "en": "To downgrade to a previous version, select the desired version.\nAfter downloading, delete files after that version and restart the agent.",
+    "ja": "以前のバージョンに戻すには、該当のバージョンをダウンロード後、該当バージョン以降のファイルを削除してから、エージェントを再起動してください。",
+    "ko": "이전 버전으로 다운그레이드하려면 원하는 버전을\n다운로드 후 해당버전이후의 파일을 삭제하고 에이전트를 재기동해주세요.",
+    "zh": "To downgrade to a previous version, select the desired version.\nAfter downloading, delete files after that version and restart the agent.",
+    "service_id": "DSC07305"
+  },
+  "DSC07306": {
+    "en": "Container information",
+    "ja": "Containerについて",
+    "ko": "Container 정보",
+    "zh": "Container information",
+    "service_id": "DSC07306"
+  },
+  "DSC07307": {
+    "en": "App.Container information",
+    "ja": "App.Containerについて",
+    "ko": "App.Container 정보",
+    "zh": "App.Container information",
+    "service_id": "DSC07307"
+  },
+  "NTC07308": {
+    "en": "Near Expiration",
+    "ja": "まもなく期限が切れます。",
+    "ko": "만료 임박",
+    "zh": "Near Expiration",
+    "service_id": "NTC07308"
+  },
+  "NTC07309": {
+    "en": "{product} license is scheduled to expire on {date}.",
+    "ja": "{product} ライセンス期限が{date}に満了します。",
+    "ko": "{product} 라이선스가 {date}에 만료 예정입니다.",
+    "zh": "{product} license is scheduled to expire on {date}.",
+    "service_id": "NTC07309"
+  },
+  "DSC07310": {
+    "en": "Number of containers per hour",
+    "ja": "1時間当たりのコンテナ数",
+    "ko": "시간당 Container 수",
+    "zh": "Number of containers per hour",
+    "service_id": "DSC07310"
+  },
+  "DSC07311": {
+    "en": "Total number of containers",
+    "ja": "総コンテナ数",
+    "ko": "전체 Container 수",
+    "zh": "Total number of containers",
+    "service_id": "DSC07311"
+  },
+  "DSC07312": {
+    "en": "Number of App.Containers per hour",
+    "ja": "1時間当たりのApp.Container数",
+    "ko": "시간당 App.Container 수",
+    "zh": "Number of App.Containers per hour",
+    "service_id": "DSC07312"
+  },
+  "DSC07313": {
+    "en": "Total number of App.Containers",
+    "ja": "App.Container の総数",
+    "ko": "전체 App.Container 수",
+    "zh": "Total number of App.Containers",
+    "service_id": "DSC07313"
   },
   "": {
     "": "",
