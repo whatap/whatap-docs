@@ -5280,6 +5280,7 @@ const sidebars = {
                 'kubernetes/resource-container-volume',
                 'kubernetes/resource-master-meta',
                 'kubernetes/resource-namespace',
+                'kubernetes/application-list',
               ],
             },
             {
