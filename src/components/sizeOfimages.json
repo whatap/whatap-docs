@@ -917,7 +917,7 @@
   },
   "apm-dashboard.png": {
     "width": 1500,
-    "height": 823
+    "height": 837
   },
   "apm-dotnet-analystic-env-01.png": {
     "width": 1200,
@@ -2003,15 +2003,35 @@
     "width": 1200,
     "height": 351
   },
+  "bill-preview-group-01-category-en.png": {
+    "width": 1200,
+    "height": 719
+  },
+  "bill-preview-group-01-category-ja.png": {
+    "width": 1200,
+    "height": 719
+  },
   "bill-preview-group-01-category.png": {
     "width": 1200,
-    "height": 470
+    "height": 719
   },
   "bill-preview-group-01-en.png": {
     "width": 1200,
     "height": 680
   },
   "bill-preview-group-01-ja.png": {
+    "width": 1200,
+    "height": 680
+  },
+  "bill-preview-group-01-preview-en.png": {
+    "width": 1200,
+    "height": 680
+  },
+  "bill-preview-group-01-preview-ja.png": {
+    "width": 1200,
+    "height": 680
+  },
+  "bill-preview-group-01-preview.png": {
     "width": 1200,
     "height": 680
   },
@@ -4563,6 +4583,10 @@
     "width": 1810,
     "height": 413
   },
+  "db-sql-preview.png": {
+    "width": 800,
+    "height": 161
+  },
   "db-sql-stat-add-filter-en.png": {
     "width": 600,
     "height": 187
@@ -6427,6 +6451,42 @@
     "width": 794,
     "height": 911
   },
+  "log-content-search-en.png": {
+    "width": 1365,
+    "height": 101
+  },
+  "log-content-search-highlight-en.png": {
+    "width": 1624,
+    "height": 494
+  },
+  "log-content-search-highlight-ja.png": {
+    "width": 1620,
+    "height": 493
+  },
+  "log-content-search-highlight.png": {
+    "width": 1621,
+    "height": 493
+  },
+  "log-content-search-ja.png": {
+    "width": 1368,
+    "height": 102
+  },
+  "log-content-search-more-en.png": {
+    "width": 800,
+    "height": 359
+  },
+  "log-content-search-more-ja.png": {
+    "width": 800,
+    "height": 359
+  },
+  "log-content-search-more.png": {
+    "width": 800,
+    "height": 359
+  },
+  "log-content-search.png": {
+    "width": 1362,
+    "height": 102
+  },
   "log-exp.png": {
     "width": 1230,
     "height": 933
@@ -6754,6 +6814,18 @@
   "log-search-adjacent-log.png": {
     "width": 943,
     "height": 667
+  },
+  "log-search-content-search-highlight-en.png": {
+    "width": 1619,
+    "height": 604
+  },
+  "log-search-content-search-highlight-ja.png": {
+    "width": 1622,
+    "height": 607
+  },
+  "log-search-content-search-highlight.png": {
+    "width": 1625,
+    "height": 609
   },
   "log-search-en.png": {
     "width": 1185,
@@ -9142,6 +9214,10 @@
   "release-notes-add-sidebar-product.png": {
     "width": 1200,
     "height": 955
+  },
+  "rl-report-time-set.png": {
+    "width": 600,
+    "height": 119
   },
   "series-chart-after.png": {
     "width": 570,
