@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[38667],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[53136],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 83294:
+/***/ 15443:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '애플리케이션 대시보드',
     description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
     tags: [
-        'Java',
+        '.NET',
         '대시보드',
         '애플리케이션',
         '애플리케이션 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "java/dashboard",
-    "id": "java/dashboard",
+    "unversionedId": "dotnet/dashboard",
+    "id": "dotnet/dashboard",
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-    "source": "@site/docs/java/dashboard.mdx",
-    "sourceDirName": "java",
-    "slug": "/java/dashboard",
-    "permalink": "/whatap-docs/java/dashboard",
+    "source": "@site/docs/dotnet/dashboard.mdx",
+    "sourceDirName": "dotnet",
+    "slug": "/dotnet/dashboard",
+    "permalink": "/whatap-docs/dotnet/dashboard",
     "draft": false,
-    "editUrl": "undefined/docs/java/dashboard.mdx",
+    "editUrl": "undefined/docs/dotnet/dashboard.mdx",
     "tags": [
         {
-            "label": "Java",
-            "permalink": "/whatap-docs/tags/java"
+            "label": ".NET",
+            "permalink": "/whatap-docs/tags/net"
         },
         {
             "label": "대시보드",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "애플리케이션 대시보드",
         "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
         "tags": [
-            "Java",
+            ".NET",
             "대시보드",
             "애플리케이션",
             "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "javaSidebar",
+    "sidebar": "dotNetSidebar",
     "previous": {
         "title": "대시보드",
-        "permalink": "/whatap-docs/java/dashboard-intro"
+        "permalink": "/whatap-docs/dotnet/dashboard-intro"
     },
     "next": {
         "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/java/dashboard-hitmap-trace"
+        "permalink": "/whatap-docs/dotnet/dashboard-hitmap-trace"
     }
 };
 const assets = {};
@@ -1235,7 +1235,10 @@ function MDXContent(_param) {
         src: (__webpack_require__(69866)/* ["default"] */ .Z),
         width: "600",
         height: "345"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Application Performance Index(Apedx)는 애플리케이션 성능 지표입니다. 웹 애플리케이션의 고객 만족도를 측정합니다. 사용자 만족도에 대한 지표로 활용할 수 있으며, 0 ~ 1 사이의 값을 갖습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "https://www.apdex.org/"
+    }, `Application Performance Index(Apdex)`), `는 애플리케이션 성능 지표입니다. 웹 애플리케이션의 고객 만족도를 측정합니다. 사용자 만족도에 대한 지표로 활용할 수 있으며, 0 ~ 1 사이의 값을 갖습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "blockquote"
     }, `(만족 횟수 + (허용 횟수 * 0.5)) / 전체 요청 수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -1249,7 +1252,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `불만 (Frustrated, F): 업무처리가 불가능 > 4.8초 (허용 T 초과 및 오류)`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `불만 (Frustrated, F): 업무처리가 불가능 > 4.8초 (허용 T 초과 및 오류) `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"

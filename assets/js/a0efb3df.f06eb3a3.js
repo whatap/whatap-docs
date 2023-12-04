@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[70258],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[14596],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 83899:
+/***/ 38704:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,34 +310,34 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'agent-apdex',
     title: 'Apdex',
-    description: 'PHP 에이전트 Apdex에 대한 설명입니다.',
+    description: 'Go 에이전트 Apdex에 대한 설명입니다.',
     tags: [
         'Apdex',
-        'PHP',
+        'Go',
         '설정하기',
         '애플리케이션'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "php/agent-apdex",
-    "id": "php/agent-apdex",
+    "unversionedId": "golang/agent-apdex",
+    "id": "golang/agent-apdex",
     "title": "Apdex",
-    "description": "PHP 에이전트 Apdex에 대한 설명입니다.",
-    "source": "@site/docs/php/agent-apdex.mdx",
-    "sourceDirName": "php",
-    "slug": "/php/agent-apdex",
-    "permalink": "/whatap-docs/php/agent-apdex",
+    "description": "Go 에이전트 Apdex에 대한 설명입니다.",
+    "source": "@site/docs/golang/agent-apdex.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/agent-apdex",
+    "permalink": "/whatap-docs/golang/agent-apdex",
     "draft": false,
-    "editUrl": "undefined/docs/php/agent-apdex.mdx",
+    "editUrl": "undefined/docs/golang/agent-apdex.mdx",
     "tags": [
         {
             "label": "Apdex",
             "permalink": "/whatap-docs/tags/apdex"
         },
         {
-            "label": "PHP",
-            "permalink": "/whatap-docs/tags/php"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
             "label": "설정하기",
@@ -352,22 +352,22 @@ const metadata = {
     "frontMatter": {
         "id": "agent-apdex",
         "title": "Apdex",
-        "description": "PHP 에이전트 Apdex에 대한 설명입니다.",
+        "description": "Go 에이전트 Apdex에 대한 설명입니다.",
         "tags": [
             "Apdex",
-            "PHP",
+            "Go",
             "설정하기",
             "애플리케이션"
         ]
     },
-    "sidebar": "phpSidebar",
+    "sidebar": "goSidebar",
     "previous": {
         "title": "사용자 수",
-        "permalink": "/whatap-docs/php/agent-number-of-user"
+        "permalink": "/whatap-docs/golang/agent-number-of-user"
     },
     "next": {
         "title": "통계",
-        "permalink": "/whatap-docs/php/agent-static"
+        "permalink": "/whatap-docs/golang/agent-static"
     }
 };
 const assets = {};
@@ -385,11 +385,14 @@ function MDXContent(_param) {
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `whatap.apdex_time`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+    }, `apdex_time`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
     }, `millisecond`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `1200`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `만족 S 기본값은 에이전트 설정 메뉴에서 변경할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Application Performance Index(Apedx)는 애플리케이션 성능 지표입니다. 웹 애플리케이션의 고객 만족도를 측정합니다. 사용자 만족도에 대한 지표로 활용할 수 있으며, 0 ~ 1 사이의 값을 갖습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `1200`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `만족 S 기본값은 에이전트 설정 메뉴에서 변경할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "https://www.apdex.org/"
+    }, `Application Performance Index(Apdex)`), `는 애플리케이션 성능 지표입니다. 웹 애플리케이션의 고객 만족도를 측정합니다. 사용자 만족도에 대한 지표로 활용할 수 있으며, 0 ~ 1 사이의 값을 갖습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "blockquote"
     }, `(만족 횟수 + (허용 횟수 * 0.5)) / 전체 요청 수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -403,11 +406,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `불만 (Frustrated, F): 업무처리가 불가능 > 4.8초 (허용 T 초과 및 오류)`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `에이전트 2.0 버전 이상부터 지원합니다.`)));
+    }, `불만 (Frustrated, F): 업무처리가 불가능 > 4.8초 (허용 T 초과 및 오류)`))));
 }
 MDXContent.isMDXComponent = true;
 

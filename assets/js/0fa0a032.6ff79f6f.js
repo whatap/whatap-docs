@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[31012],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[8841],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -350,7 +350,7 @@ function CheckProduct() {
 
 /***/ }),
 
-/***/ 8095:
+/***/ 73862:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -451,27 +451,27 @@ const frontMatter = {
     title: 'SQL 통계',
     description: '데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'CUBRID',
+        'PostgreSQL',
         '데이터베이스',
         '통계'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "cubrid/stat",
-    "id": "cubrid/stat",
+    "unversionedId": "postgresql-v1/stat",
+    "id": "postgresql-v1/stat",
     "title": "SQL 통계",
     "description": "데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/cubrid/stat.mdx",
-    "sourceDirName": "cubrid",
-    "slug": "/cubrid/stat",
-    "permalink": "/whatap-docs/cubrid/stat",
+    "source": "@site/docs/postgresql-v1/stat.mdx",
+    "sourceDirName": "postgresql-v1",
+    "slug": "/postgresql-v1/stat",
+    "permalink": "/whatap-docs/postgresql-v1/stat",
     "draft": false,
-    "editUrl": "undefined/docs/cubrid/stat.mdx",
+    "editUrl": "undefined/docs/postgresql-v1/stat.mdx",
     "tags": [
         {
-            "label": "CUBRID",
-            "permalink": "/whatap-docs/tags/cubrid"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "데이터베이스",
@@ -488,19 +488,19 @@ const metadata = {
         "title": "SQL 통계",
         "description": "데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "CUBRID",
+            "PostgreSQL",
             "데이터베이스",
             "통계"
         ]
     },
-    "sidebar": "cubridSidebar",
+    "sidebar": "postgrev1Sidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/cubrid/metrics-detect-anormal"
+        "permalink": "/whatap-docs/postgresql-v1/metrics-detect-anormal"
     },
     "next": {
-        "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/cubrid/table-size"
+        "title": "데이터베이스 사이즈",
+        "permalink": "/whatap-docs/postgresql-v1/database-size"
     }
 };
 const assets = {};
@@ -533,8 +533,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
     };
 const Xclude = makeShortcode("Xclude");
 const InDoc = makeShortcode("InDoc");
-const ImgLang = makeShortcode("ImgLang");
 const Cmdname = makeShortcode("Cmdname");
+const ImgLang = makeShortcode("ImgLang");
 const layoutProps = {
     toc
 };
@@ -821,11 +821,11 @@ function MDXContent(_param) {
         src: (__webpack_require__(53335)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` 쿼리문을 선택하세요. 쿼리문과 SQL Plan을 자세히 확인할 수 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `SQL 보기`)), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }), ` 쿼리문을 선택하세요. 쿼리문과 SQL Plan을 자세히 확인할 수 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06224",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세",
         mdxType: "ImgLang"
@@ -949,11 +949,15 @@ function MDXContent(_param) {
     }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
         product: "postgresql,postgresql-v1",
         mdxType: "InDoc"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회된 결과 목록에서 쿼리 항목을 선택하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회된 결과 목록에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `SQL 상세`)), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }, `sql`)), ` 컬럼 항목을 선택하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06224",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "db-sql-details-postgresql.png",
         desc: "SQL 상세",
         mdxType: "ImgLang"
@@ -1077,11 +1081,15 @@ function MDXContent(_param) {
     }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
         product: "mysql",
         mdxType: "InDoc"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회된 결과 목록에서 쿼리 항목을 선택하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회된 결과 목록에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `SQL 상세`)), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }, `sql`)), ` 컬럼 항목을 선택하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06224",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "db-sql-details-common.png",
         desc: "SQL 상세",
         mdxType: "ImgLang"

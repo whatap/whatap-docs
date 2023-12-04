@@ -1102,7 +1102,7 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), " 버튼의 링크를 설정된 언어에 맞게 이동하도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `Amazon CloudWatch, Azure Monitor, Oracle Cloud Monitor 대상`))));
+    }, `Amazon CloudWatch, Azure Monitor, Oracle Cloud Monitor 상품 대상`))));
 }
 MDXContent.isMDXComponent = true;
 
