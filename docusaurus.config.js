@@ -191,7 +191,7 @@ module.exports = Promise.resolve({
         content: '<div id="moniday-banner">This is unreleased documentation for WhaTap Docs.</div>',
         backgroundColor: 'none',
         textColor: '#ffffff',
-        isCloseable: true,
+        isCloseable: false,
       },
       metadata: [
         {
