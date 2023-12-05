@@ -184,12 +184,6 @@ function colsToJson(data){
     "ko": "히트맵"
   }
 
-  rd["AA008"] = {
-    "en": "Apdex",
-    "ja": "Apdex",
-    "ko": "Apdex"
-  }
-
   rd["AA016"] = {
     "en": "Active Transaction Equalizer",
     "ja": "アクティブTXイコライザー",
