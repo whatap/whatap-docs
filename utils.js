@@ -154,6 +154,48 @@ function colsToJson(data){
     "ko": "연계 프로젝트 관리"
   }
 
+  rd["AA001"] = {
+    "en": "Active Transaction Speed Chart",
+    "ja": "アクティブTXスピードチャート",
+    "ko": "액티브 트랜잭션 스피드"
+  }
+
+  rd["AA002"] = {
+    "en": "Active Transaction",
+    "ja": "アクティブTX",
+    "ko": "액티브 트랜잭션 스피드"
+  }
+
+  rd["AA003"] = {
+    "en": "Application summary",
+    "ja": "アプリケーション要約",
+    "ko": "애플리케이션 요약"
+  }
+
+  rd["AA004"] = {
+    "en": "Active status",
+    "ja": "アクティブ状態",
+    "ko": "액티브 스테이터스"
+  }
+
+  rd["AA005"] = {
+    "en": "Hitmap",
+    "ja": "ヒットマップ",
+    "ko": "히트맵"
+  }
+
+  rd["AA008"] = {
+    "en": "Apdex",
+    "ja": "Apdex",
+    "ko": "Apdex"
+  }
+
+  rd["AA016"] = {
+    "en": "Active Transaction Equalizer",
+    "ja": "アクティブTXイコライザー",
+    "ko": "액티브 트랜잭션 이퀄라이저"
+  }
+
   return rd;
 }
 
