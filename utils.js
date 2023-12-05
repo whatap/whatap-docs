@@ -184,6 +184,12 @@ function colsToJson(data){
     "ko": "히트맵"
   }
 
+  rd["AA010"] = {
+    "en": "Heap Memory",
+    "ja": "ヒープメモリ",
+    "ko": "힙 메모리"
+  }
+
   rd["AA016"] = {
     "en": "Active Transaction Equalizer",
     "ja": "アクティブTXイコライザー",
