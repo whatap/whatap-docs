@@ -315,7 +315,8 @@ const frontMatter = {
         '애플리케이션',
         '트레이스',
         '트랜잭션'
-    ]
+    ],
+    displayed_sidebar: 'apmSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -352,8 +353,10 @@ const metadata = {
             "애플리케이션",
             "트레이스",
             "트랜잭션"
-        ]
-    }
+        ],
+        "displayed_sidebar": "apmSidebar"
+    },
+    "sidebar": "apmSidebar"
 };
 const assets = {};
 const toc = [

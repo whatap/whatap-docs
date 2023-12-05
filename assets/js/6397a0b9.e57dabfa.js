@@ -314,7 +314,8 @@ const frontMatter = {
     tags: [
         '데이터베이스',
         'CloudWatch'
-    ]
+    ],
+    displayed_sidebar: 'dbSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -346,8 +347,10 @@ const metadata = {
         "tags": [
             "데이터베이스",
             "CloudWatch"
-        ]
-    }
+        ],
+        "displayed_sidebar": "dbSidebar"
+    },
+    "sidebar": "dbSidebar"
 };
 const assets = {};
 const toc = [
