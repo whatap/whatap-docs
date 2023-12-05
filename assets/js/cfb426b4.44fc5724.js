@@ -626,7 +626,7 @@ function MDXContent(_param) {
         img: "ico-setting.svg",
         className: "ico",
         mdxType: "LinkImage"
-    }), " 버튼을 선택하면 지명 이름이 검색되지 않는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), " 버튼을 선택하면 지표 이름이 검색되지 않는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
