@@ -163,7 +163,7 @@ function colsToJson(data){
   rd["AA002"] = {
     "en": "Active Transaction",
     "ja": "アクティブTX",
-    "ko": "액티브 트랜잭션 스피드"
+    "ko": "액티브 트랜잭션"
   }
 
   rd["AA003"] = {
@@ -182,6 +182,12 @@ function colsToJson(data){
     "en": "Hitmap",
     "ja": "ヒットマップ",
     "ko": "히트맵"
+  }
+
+  rd["AA010"] = {
+    "en": "Heap Memory",
+    "ja": "ヒープメモリ",
+    "ko": "힙 메모리"
   }
 
   rd["AA016"] = {

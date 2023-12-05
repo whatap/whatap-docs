@@ -50484,7 +50484,7 @@
   "AA002": {
     "en": "Active Transaction",
     "ja": "アクティブTX",
-    "ko": "액티브 트랜잭션 스피드"
+    "ko": "액티브 트랜잭션"
   },
   "AA003": {
     "en": "Application summary",
@@ -50500,6 +50500,11 @@
     "en": "Hitmap",
     "ja": "ヒットマップ",
     "ko": "히트맵"
+  },
+  "AA010": {
+    "en": "Heap Memory",
+    "ja": "ヒープメモリ",
+    "ko": "힙 메모리"
   },
   "AA016": {
     "en": "Active Transaction Equalizer",
