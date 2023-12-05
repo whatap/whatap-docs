@@ -5374,6 +5374,106 @@ const sidebars = {
       ]
     }
   ],
+  apmSidebar: [
+    {
+      type: 'category',
+      label: 'Category',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: 'Java',
+          href: '../java/introduction',
+        },
+        {
+          type: 'link',
+          label: 'PHP',
+          href: '../php/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Node.js',
+          href: '../nodejs/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Python',
+          href: '../python/introduction',
+        },
+        {
+          type: 'link',
+          label: '.NET',
+          href: '../dotnet/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Go',
+          href: '../golang/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Kubernetes',
+          href: '../Kubernetes/introduction',
+        }
+      ],
+    }
+  ],
+  dbSidebar: [
+    {
+      type: 'category',
+      label: 'Database',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: 'PostgreSQL',
+          href: '../postgresql/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Oracle',
+          href: '../oracle/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'MySQL',
+          href: '../mysql/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'SQL Server',
+          href: '../mssql/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Tibero',
+          href: '../tiber/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'CUBRID',
+          href: '../cubrid/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Altibase',
+          href: '../altibase/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Redis',
+          href: '../redis/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'MongoDB',
+          href: '../mongodb/monitoring-intro',
+        }
+      ],
+    }
+  ],
   logSidebar: [
     {
       type: 'category',
