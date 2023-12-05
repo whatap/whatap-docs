@@ -196,6 +196,12 @@ function colsToJson(data){
     "ko": "액티브 트랜잭션 이퀄라이저"
   }
 
+  rd["yaxis"] = {
+    "en": "Y Auto",
+    "ja": "Y軸自動",
+    "ko": "Y축 자동"
+  }
+
   return rd;
 }
 

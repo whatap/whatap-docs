@@ -50385,6 +50385,13 @@
     "zh": "Event resolution time column has been added!",
     "service_id": "TLT07314"
   },
+  "ITM07315": {
+    "en": "Occurs during maintenance",
+    "ja": "メンテナンス中に発生",
+    "ko": "정비 중 발생",
+    "zh": "Occurs during maintenance",
+    "service_id": "ITM07315"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -50510,5 +50517,10 @@
     "en": "Active Transaction Equalizer",
     "ja": "アクティブTXイコライザー",
     "ko": "액티브 트랜잭션 이퀄라이저"
+  },
+  "yaxis": {
+    "en": "Y Auto",
+    "ja": "Y軸自動",
+    "ko": "Y축 자동"
   }
 }
