@@ -50510,5 +50510,10 @@
     "en": "Active Transaction Equalizer",
     "ja": "アクティブTXイコライザー",
     "ko": "액티브 트랜잭션 이퀄라이저"
+  },
+  "yaxis": {
+    "en": "Y Auto",
+    "ja": "Y軸自動",
+    "ko": "Y축 자동"
   }
 }
