@@ -420,31 +420,31 @@
     "description": "send feedback"
   },
   "components.feedback.submit": {
-    "message": "Submit",
+    "message": "Submitting",
     "description": "Submit a survey"
   },
   "components.feedback.question": {
-    "message": "Was this doc helpful?",
+    "message": "Was this document helpful?",
     "description": "Was this doc helpful?"
   },
   "components.feedback.details": {
-    "message": "Tell us more",
+    "message": "Please tell us more about your evaluation.",
     "description": "Tell us more"
   },
   "components.feedback.email": {
-    "message": "Please leave your email address and we will give you feedback. (Option)",
+    "message": "If you provide your email address, we will give you feedback (optional).",
     "description": "Please leave your email address and we will give you feedback."
   },
   "component.feedback.complete": {
-    "message": "You have successfully sent your feedback.",
+    "message": "The feedback submission is completed.",
     "description": "complete sending feedback!"
   },
   "components.feedback.emaildesciption": {
-    "message": "We'll only use this email for follow-up questions about your feedback",
+    "message": "We only use your email address to follow up on the feedback and do not collect it.",
     "description": "We'll only use this email for follow-up questions about your feedback."
   },
   "components.feedback.sendfeedbackTitle": {
-    "message": "Send Feedback",
+    "message": "Send feedback",
     "description": "send feedback"
   }
 }

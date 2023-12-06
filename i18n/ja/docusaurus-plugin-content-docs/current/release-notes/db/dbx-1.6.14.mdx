@@ -1,0 +1,32 @@
+---
+id: dbx-1_6_14
+title: DBX v1.6.14
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_13
+---
+
+2023年11月24日
+
+## 共通
+
+-   <Status>Changed</Status> <code>agentinfopack</code>の周期を12時間から1時間に修正
+
+-   <Status>Fixed</Status>DB接続失敗時にも<code>DbSetInfo</code>情報を転送するように修正
+
+## PostgreSQL
+
+-   <Status>Fixed</Status> table大文字·小文字区分queryのバグを修正
+
+-   <Status>Changed</Status>EDB、PostgreSQLの<code>pg_wal_count</code>指標収集権限を<code>pg_monitor</code>に変更(PostgreSQL 10バージョン以降)
+
+-   <Status>Changed</Status> <Cmdname sid="dbObjectInfo" className="uitext" /> &gt; <span class="uitext">Bloating</span> &gt; <span class="uitext">Table</span>情報から<code>can_estimate</code>カラムを削除
+
+## Oracle
+
+-   <Status>Fixed</Status> <code>tablespace_split</code>オプション適用時にtemp以外のデータが漏れるバグを修正
+
+-   <Status>Fixed</Status>テーブルスペースサイズ収集時の累積値収集を修正
+
+## Tibero
+
+-   <Status>Fixed</Status>セッション収集時<code>long_run_session_sec=1</code>で固定されたエラーを修正

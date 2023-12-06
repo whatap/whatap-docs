@@ -1,9 +1,93 @@
 ---
 id: service-1_114_x
-title: Service 1.114.0
-toc_max_heading_level: 3
+title: Service 1.114.x
+toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_112_x
 ---
+
+## Service 1.114.4
+
+December 1, 2023
+
+<div class='indentTab'>
+
+### `Application`
+
+<p><Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tx_search" className="uitext" />, added the guidance message that the filters except <Cmdname sid="TTL06111" className="uitext" /> cannot be applied while the <Cmdname sid="TTL06107" className="uitext" /> filter is selected.</p>
+
+* * *
+
+### `Server`
+
+<p><Status>Fixed</Status> In <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="server_list" className="uitext" />, fixed the issue where the table lines are overlapped when enabling a specific column view.</p>
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status> In <Cmdname sid="log_search" className="uitext" />, fixed the issue where column heights in the table are intermittently calculated incorrectly.
+
+-   <Status>Fixed</Status> In <Cmdname sid="log_search" className="uitext" />, fixed the issue where the data within the previous range is displayed if there is no data in the query range after the query time has been changed.
+
+</div>
+
+## Service 1.114.3
+
+November 28, 2023
+
+<div class='indentTab'>
+
+### `Applicatoin`
+
+#### Dashboard
+
+<p><Status>Feature</Status> In the table of the <Cmdname sid="TTL06209" className="uitext" /> window, added the <Cmdname sid="TTL06086" className="uitext" /> column.</p>
+
+### `Database`
+
+#### PostgreSQL
+
+<p><Status>Fixed</Status> <code class="my">V2</code> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />, fixed the problem where data is not output.</p>
+
+</div>
+
+## Service 1.114.2
+
+November 24, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="analysis" />
+
+-   <Status>Fixed</Status> In the chart widget's detailed view of the <Cmdname sid="tag_count_chart" className="uitext" /> menu, fixed the issue where the <Cmdname sid="BTN06884" className="uitext" /> button does not work.
+
+-   <Status>Fixed</Status> In <Cmdname sid="tag_count_anomaly_detection" className="uitext" />, fixed the issue where the <Cmdname sid="BTN06884" className="uitext" /> button does not work.
+
+#### <Cmdname sid="reportStat" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="report" className="uitext" />, modified to move to the guide (Docs) link depending on the set language when the <Cmdname sid="guide" className="uitext" /> button is clicked.</p>
+
+### `Kubernetes`
+
+<p><Status>Fixed</Status> In the <Cmdname sid="containerMap" className="uitext" /> &gt; <Cmdname sid="BTN06342" className="uitext" /> &gt; <Cmdname sid="metrics" className="uitext" /> tab of the namespace project, fixed the bug where the data of the <Cmdname sid="mem_totalrss_percent" className="uitext" /> widget does not appear.</p>
+
+</div>
+
+## Service 1.114.1
+
+November 23, 2023
+
+<div class='indentTab'>
+
+### `Log`
+
+<p><Status>Fixed</Status> In <Cmdname sid="logTail" className="uitext" />, fixed the issue where the recommended list does not appear in the <Cmdname sid="filter" className="uitext" /> field, when the <Cmdname sid="category" className="uitext" /> item is <Cmdname sid="all_log" className="uitext" />.</p>
+
+</div>
+
+## Service 1.114.0
 
 November 22, 2023
 
