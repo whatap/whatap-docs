@@ -303,9 +303,6 @@
     "message": "タグ",
     "description": "The title of the tag list page"
   },
-  "project_add_btn": {
-    "message": "プロジェクト"
-  },
   "theme.SearchModal.searchBox.resetButtonTitle": {
     "message": "検索ワードの消去",
     "description": "The label and ARIA label for search box reset button"
@@ -414,16 +411,12 @@
     "message": "Search by Algolia",
     "description": "The ARIA label for Algolia mention"
   },
-  "component.imageErrorMessage": {
-    "message": "!!イメージがありません。サイトの管理者にお問い合わせください!!",
-    "description": "No images. Contact site manager."
-  },
   "whatap_plugin.sharefacebook": {
     "message": "共有",
     "description": "Sharing this page"
   },
   "components.feedback.sendfeedback": {
-    "message": "Feedback",
+    "message": "フィードバック",
     "description": "send feedback"
   },
   "components.feedback.submit": {
@@ -431,27 +424,27 @@
     "description": "Submit a survey"
   },
   "components.feedback.question": {
-    "message": "このドキュメントは役に立ちましたか?",
+    "message": "この文書が役に立ちましたか？",
     "description": "Was this doc helpful?"
   },
   "components.feedback.details": {
-    "message": "もっとお聞かせください",
+    "message": "評価について詳しく教えてください。",
     "description": "Tell us more"
   },
   "components.feedback.email": {
-    "message": "メールアドレスを残してください。フィードバックをお送りします。 （オプション）",
+    "message": "メールアドレスを残していただければフィードバックいたします。(選択事項)",
     "description": "Please leave your email address and we will give you feedback."
   },
   "component.feedback.complete": {
-    "message": "フィードバック送信が完了しました。",
+    "message": "フィードバックの送信を完了します。",
     "description": "complete sending feedback!"
   },
   "components.feedback.emaildesciption": {
-    "message": "電子メールは、あなたのフィードバックに対する後続の回答にのみ使用されます。",
+    "message": "電子メールは、お客様のフィードバックに対するフォローアップのために使用するだけで、収集しません。",
     "description": "We'll only use this email for follow-up questions about your feedback."
   },
   "components.feedback.sendfeedbackTitle": {
-    "message": "フィードバックを送信",
+    "message": "フィードバック送信",
     "description": "send feedback"
   }
 }

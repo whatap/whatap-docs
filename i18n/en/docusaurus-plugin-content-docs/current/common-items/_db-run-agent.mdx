@@ -10,6 +10,12 @@ Execute a shell script (or batch file) from the path where you have installed th
 ./start.sh
 ```
 
+To use it like a daemon, execute the following command. However, it works only in the environment where **nohup** has been installed.
+
+```bash
+./startd.sh
+```
+
 </TabItem>
 <TabItem value="windows" label="Windows">
 
@@ -17,13 +23,23 @@ Execute a shell script (or batch file) from the path where you have installed th
 start.bat
 ```
 
-</TabItem>
-</Tabs>
-
-To use it like a daemon, execute the following command. However, it works only in the environment where **nohup** has been installed.
+You can set the service to automatically start the agent when the Windows system starts. See the following commands.
 
 ```bash
-./startd.sh
+# In case of registering the service
+install_WindowsService.bat create WhatapDBXAgent
+
+# In case of deleting the service
+install_WindowsService.bat delete WhatapDBXAgent
 ```
+
+:::note
+
+In **Control Panel** > **Windows Tools** > **Services** (services.msc), you can start or stop the **WhatapDBXAgent** service. Depending on the Windows version, the **service** path may differ.
+
+:::
+
+</TabItem>
+</Tabs>
 
 You completed installing the agent for database monitoring. In [the following](after-install-agent), check the post-installation checklist.

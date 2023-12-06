@@ -5474,25 +5474,6 @@ const sidebars = {
       ],
     }
   ],
-  dbSidebar: [
-    {
-      type: 'category',
-      label: 'Database',
-      collapsible: false,
-      collapsed: false,
-      items: [
-        'postgresql/monitoring-intro',
-        'oracle/monitoring-intro',
-        'mysql/monitoring-intro',
-        'mssql/monitoring-intro',
-        'tibero/monitoring-intro',
-        'cubrid/monitoring-intro',
-        'altibase/monitoring-intro',
-        'redis/monitoring-intro',
-        'mongodb/monitoring-intro',
-      ],
-    }
-  ],
   logSidebar: [
     {
       type: 'category',
@@ -5531,6 +5512,11 @@ const sidebars = {
           type: 'doc',
           label: '로그 파싱하기',
           id: 'log/log-parser',
+        },
+        {
+          type: 'doc',
+          label: '로그 처리하기',
+          id: 'log/log-process',
         },
         {
           type: 'category',

@@ -4,18 +4,21 @@ title: Amazon ECS Agent release notes
 toc_max_heading_level: 2
 ---
 
-import Status from '@site/src/components/Highlight';
-import UI from '@site/src/components/UItext';
+## Amazon ECS Agent v1.2.5
+
+2023-11-23
+
+<Status>Fixed</Status> Network Read Byte, Network Transmit Byteを含むTask Network性能情報の収集時のコードエラーにより0に収集される現象を修正
 
 ## Amazon ECS Agent v1.2.4
 
-リリース：2023-03-02
+2023-03-02
 
 <Status>Fixed</Status> 一度に10個のAmazon ECS サービスクエリを必要とするAPI仕様に準拠していないことによるパフォーマンス測定エラーを修正し、10回ずつ繰り返しクエリするようにコードを変更します。
 
 ## Amazon ECS Agent v1.2.1
 
-リリース：2022-12-11
+2022-12-11
 
 ### 収集サーバーとの接続が切断された際、タスクが異常終了する原因となっていたコードエラーを修正しました。
 

@@ -1232,7 +1232,7 @@
     "description": "The label for category 통계/보고서 in sidebar dboracleSidebar"
   },
   "sidebar.learningSidebar.category.학습하기": {
-    "message": "学習資料",
+    "message": "WhaTap活用",
     "description": "The label for category 학습하기 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.애플리케이션 대시보드": {
@@ -1240,7 +1240,7 @@
     "description": "The label for the doc item 애플리케이션 대시보드 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-dashboard"
   },
   "sidebar.learningSidebar.doc.히트맵 트랜잭션": {
-    "message": "ヒートマップトランザクション",
+    "message": "ヒットマップトランザクション",
     "description": "The label for the doc item 히트맵 트랜잭션 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-hitmap-class"
   },
   "sidebar.learningSidebar.doc.브라우저 모니터링": {
@@ -1440,7 +1440,7 @@
     "description": "The label for category Network 모니터링 in sidebar npmsidebar"
   },
   "sidebar.learningSidebar.category.성능 장애 유형": {
-    "message": "パフォーマンストラブルのタイプ",
+    "message": "性能トラブルタイプ",
     "description": "The label for category 성능 장애 유형 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.DB 연결 지연과 커넥션 풀": {
@@ -1496,7 +1496,7 @@
     "description": "The label for the doc item 서버 리소스 보드 in sidebar learningSidebar, linking to the doc best-practice-guides/about-server-dashboard"
   },
   "sidebar.indexSidebar.category.학습하기": {
-    "message": "学習資料",
+    "message": "WhaTap活用",
     "description": "The label for category 학습하기 in sidebar indexSidebar"
   },
   "sidebar.indexSidebar.doc.대시보드 분석": {
@@ -1504,7 +1504,7 @@
     "description": "The label for the doc item 대시보드 분석 in sidebar indexSidebar, linking to the doc best-practice-guides/about-dashboard"
   },
   "sidebar.indexSidebar.doc.성능 장애 유형": {
-    "message": "パフォーマンストラブルのタイプ",
+    "message": "性能トラブルタイプ",
     "description": "The label for the doc item 성능 장애 유형 in sidebar indexSidebar, linking to the doc best-practice-guides/about-apm-dbc"
   },
   "sidebar.indexSidebar.doc.메트릭스 알림 설정": {

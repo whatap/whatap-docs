@@ -14,6 +14,10 @@ const ReplacementLocaleText = ({sid, className, anchor, replace}) => {
     if (sid == "TTL06865") {
         oText = whatapLocale[sid][`${currentLocale}`].toUpperCase();
     }
+    if (sid == "hitmap" && currentLocale == "en") {
+        // 첫글자 제외 다른 문자 소문자로 변경
+        oText = whatapLocale[sid][`${currentLocale}`].substring(0,1) + whatapLocale[sid][`${currentLocale}`].substring(1).toLowerCase();
+    }
     const uiText = oText;
     return (
         <span class={className} id={anchor}>{uiText}</span>

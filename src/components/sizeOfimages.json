@@ -2011,8 +2011,17 @@
     "width": 1200,
     "height": 719
   },
+  "bill-preview-group-01-category-en.png": {
+    "width": 1200,
+    "height": 719
+  },
+  "bill-preview-group-01-category-ja.png": {
+    "width": 1200,
+    "height": 719
+  },
   "bill-preview-group-01-category.png": {
     "width": 1200,
+    "height": 719
     "height": 719
   },
   "bill-preview-group-01-en.png": {
@@ -2038,10 +2047,6 @@
   "bill-preview-group-01.png": {
     "width": 1200,
     "height": 680
-  },
-  "bill-preview-group-02.png": {
-    "width": 1200,
-    "height": 500
   },
   "billing-currency-change-en.png": {
     "width": 800,
@@ -6487,6 +6492,42 @@
     "width": 1362,
     "height": 102
   },
+  "log-content-search-en.png": {
+    "width": 1365,
+    "height": 101
+  },
+  "log-content-search-highlight-en.png": {
+    "width": 1624,
+    "height": 494
+  },
+  "log-content-search-highlight-ja.png": {
+    "width": 1620,
+    "height": 493
+  },
+  "log-content-search-highlight.png": {
+    "width": 1621,
+    "height": 493
+  },
+  "log-content-search-ja.png": {
+    "width": 1368,
+    "height": 102
+  },
+  "log-content-search-more-en.png": {
+    "width": 800,
+    "height": 359
+  },
+  "log-content-search-more-ja.png": {
+    "width": 800,
+    "height": 359
+  },
+  "log-content-search-more.png": {
+    "width": 800,
+    "height": 359
+  },
+  "log-content-search.png": {
+    "width": 1362,
+    "height": 102
+  },
   "log-exp.png": {
     "width": 1230,
     "height": 933
@@ -6827,6 +6868,18 @@
     "width": 1625,
     "height": 609
   },
+  "log-search-content-search-highlight-en.png": {
+    "width": 1619,
+    "height": 604
+  },
+  "log-search-content-search-highlight-ja.png": {
+    "width": 1622,
+    "height": 607
+  },
+  "log-search-content-search-highlight.png": {
+    "width": 1625,
+    "height": 609
+  },
   "log-search-en.png": {
     "width": 1185,
     "height": 896
@@ -6974,6 +7027,10 @@
   "log-table-contents.png": {
     "width": 753,
     "height": 418
+  },
+  "log-timestamp.png": {
+    "width": 1220,
+    "height": 181
   },
   "log-timestamp.png": {
     "width": 1220,
@@ -9215,9 +9272,25 @@
     "width": 1200,
     "height": 423
   },
+  "release-db-object-details-db-size.png": {
+    "width": 1200,
+    "height": 660
+  },
+  "release-db-object-details-monitoring.png": {
+    "width": 1200,
+    "height": 609
+  },
+  "release-db-object-details-topobject.png": {
+    "width": 1200,
+    "height": 423
+  },
   "release-k8s-container-block.png": {
     "width": 1200,
     "height": 1302
+  },
+  "release-multi-tx-chartview.png": {
+    "width": 826,
+    "height": 122
   },
   "release-multi-tx-chartview.png": {
     "width": 826,

@@ -1,0 +1,17 @@
+## Column information guide
+
+The following lists the columns in the table displayed for the <Cmdname sid="active_sessions" className="uitext" /> section. The data is collected using the `currentOp`.
+
+| Item                    | Description                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `opid`                  | Unique identifier of the operation                                                                           |
+| `type`                  | If the value is `op`, the operation type can be viewed in the `op` field.                                    |
+| `host`                  | Server name                                                                                                  |
+| `desc`                  | Description of the client including `connectionId`                                                           |
+| `active`                | If the operation starts, the value is `true` and if it is idle, the value is `false`.                        |
+| `currentOpTime`         | Start time of the operation                                                                                  |
+| `op`                    | operation type (`none`, `update`, `insert`, `query`, `command`, `getmore`, `remove`, etc.)                   |
+| `ns`                    | The name of the namespace appears with `Database` or `Collection`.                                           |
+| `numYields`             | Number of executed operations                                                                                |
+| `waitingForLock`        | If the operation is waiting for lock, the value is `true` and if it has acquired lock, the value is `false`. |
+| `waitingForFlowControl` | If the operation is waiting for `flowcontrol`, the value is `true`.                                          |

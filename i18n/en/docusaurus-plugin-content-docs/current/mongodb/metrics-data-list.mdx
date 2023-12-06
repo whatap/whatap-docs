@@ -1,0 +1,32 @@
+---
+id: metrics-data-list
+title: MongoDB Metrics
+description: It guides you to MongoDB metrics.
+tags:
+  - MongoDB
+  - Metrics
+  - Database
+---
+
+Database metrics are comprehensive data collected for database workloads and resource usages. The WhaTap monitoring service continuously collects metric data to identify bottlenecks in the database and provides data to help identify the root cause of the performance issue.
+
+MongoDB collects key metrics from `db.serverStatus`, and the following lists the descriptions for the collected key metrics: For more information about other metrics, see [the following](https://www.mongodb.com/docs/manual/reference/command/serverStatus/#output/).
+
+| Indicators                     | Description                                                                                    |
+| ------------------------------ | ---------------------------------------------------------------------------------------------- |
+| `active$connections`           | Number of active clients in progress                                                           |
+| `current$connections`          | Number of clients connected to the server                                                      |
+| `CPU`                          | CPU utilization calculated with the `user_time_us` and `system_time_us` values in `extra_info` |
+| `input_blocks$extra_info`      | Input block value of the system                                                                |
+| `output_blocks$extra_info`     | Output block value of the system                                                               |
+| `bytesIn$network`              | Total bytes received by the server via connection from a MongoDB client or other instances     |
+| `bytesOut$network`             | Total bytes sent by the server via connection to a MongoDB client or other instances           |
+| `numRequests$network`          | Total sum of requests received by the server                                                   |
+| `latency$reads$opLatencies`    | Latency for the read request                                                                   |
+| `latency$writes$opLatencies`   | Latency for the write request                                                                  |
+| `latency$commands$opLatencies` | Latency for the Database command                                                               |
+| `insert$opcounters`            | Number of insert commands                                                                      |
+| `query$opcounters`             | Number of query commands                                                                       |
+| `update$opcounters`            | Number of update commands                                                                      |
+| `delete$opcounters`            | Number of delete commands                                                                      |
+| `command$opcounters`           | Total number of commands executed in the database                                              |

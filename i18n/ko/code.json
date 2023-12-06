@@ -303,9 +303,6 @@
     "message": "태그",
     "description": "The title of the tag list page"
   },
-  "project_add_btn": {
-    "message": "프로젝트"
-  },
   "theme.SearchModal.searchBox.resetButtonTitle": {
     "message": "검색어 지우기",
     "description": "The label and ARIA label for search box reset button"
@@ -413,10 +410,6 @@
   "theme.SearchPage.algoliaLabel": {
     "message": "Search by Algolia",
     "description": "The ARIA label for Algolia mention"
-  },
-  "component.imageErrorMessage": {
-    "message": "!!이미지가 없습니다. 사이트 관리자에게 문의하세요!!",
-    "description": "No images. Contact site manager."
   },
   "whatap_plugin.sharefacebook": {
     "message": "공유",
