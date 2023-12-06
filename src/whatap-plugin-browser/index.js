@@ -12,7 +12,7 @@ module.exports = function () {
                             projectAccessKey: "x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",
                             pcode: 29856,
                             sampleRate: 100,
-                            ignoreOrigins: [/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i],
+                            ignoreOrigins: [/^.*localhost.*$/i, /^.*ngrok-free.app.*$/i, 'https://whatap.github.io/whatap-docs'],
                           },
                         };
                         a = h.createElement(_a);
