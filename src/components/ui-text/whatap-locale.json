@@ -30842,10 +30842,10 @@
     "service_id": "_04481"
   },
   "sry_service_sub": {
-    "en": "The current service has encountered a temporary error.{br}For related inquiries, please contact {channel} or {email}<br/>Please contact us.",
-    "ja": "現在のサービスで一時的なエラーが発生しました。{br}お問い合わせについては、{channel} または {email} までお問い合わせください。<br/>お問い合わせください。",
-    "ko": "현재 서비스에 일시적인 오류가 발생했습니다.{br}관련 문의사항은 {channel} 또는 {email}로 문의해주시면 안내해드리겠습니다.",
-    "zh": "The current service has encountered a temporary error.{br}For inquiries, contact {channel} or {email}<br/>Please contact us.",
+    "en": "There is currently a temporary error in the service.{br}For related inquiries, please contact us via {email} or the speech bubble icon in the upper right corner and we will assist you.",
+    "ja": "現在のサービスで一時的なエラーが発生しました。{br}関連のお問い合わせは、{email}または右上のフキダシアイコンにお問い合わせください。",
+    "ko": "현재 서비스에 일시적인 오류가 발생했습니다.{br}관련 문의사항은 {email} 또는 우측 상단의 말풍선 아이콘으로 문의해주시면 안내해드리겠습니다.",
+    "zh": "There is currently a temporary error in the service.{br}For related inquiries, please contact us via {email} or the speech bubble icon in the upper right corner and we will assist you.",
     "service_id": "_04482"
   },
   "server_not_found": {
@@ -49365,7 +49365,7 @@
   },
   "ITM07169": {
     "en": "CPU Request at initialization start",
-    "ja": "初期化開始時のCPU Requrest",
+    "ja": "初期化開始時のCPU Request",
     "ko": "초기화 시작 시 CPU Request",
     "zh": "CPU Request at initialization start",
     "service_id": "ITM07169"
@@ -49378,15 +49378,15 @@
     "service_id": "ITM07170"
   },
   "ITM07171": {
-    "en": "CPU Throttle at initialization start",
-    "ja": "初期化開始時のCPU Throttle",
-    "ko": "초기화 시작 시 CPU Throttle",
-    "zh": "CPU Throttle at initialization start",
+    "en": "CPU Throttle Count at initialization start",
+    "ja": "初期化開始時のCPU Throttle Count",
+    "ko": "초기화 시작 시 CPU Throttle Count",
+    "zh": "CPU Throttle Count at initialization start",
     "service_id": "ITM07171"
   },
   "ITM07172": {
     "en": "Memory Request at initialization start",
-    "ja": "初期化開始時のメモリ Requrest",
+    "ja": "初期化開始時のメモリ Request",
     "ko": "초기화 시작 시 Memory Request",
     "zh": "Memory Request at initialization start",
     "service_id": "ITM07172"
@@ -49399,10 +49399,10 @@
     "service_id": "ITM07173"
   },
   "ITM07174": {
-    "en": "Memory Throttle at initialization start",
-    "ja": "初期化開始時のメモリ Throttle",
-    "ko": "초기화 시작 시 Memory Throttle",
-    "zh": "Memory Throttle at initialization start",
+    "en": "Memory Throttle Count at initialization start",
+    "ja": "初期化開始時のメモリ Throttle Count",
+    "ko": "초기화 시작 시 Memory Throttle Count",
+    "zh": "Memory Throttle Count at initialization start",
     "service_id": "ITM07174"
   },
   "ITM07175": {
@@ -50384,6 +50384,90 @@
     "ko": "이벤트 해소 시각 컬럼이 추가되었어요!",
     "zh": "Event resolution time column has been added!",
     "service_id": "TLT07314"
+  },
+  "ITM07315": {
+    "en": "Occurs during maintenance",
+    "ja": "メンテナンス中に発生",
+    "ko": "정비 중 발생",
+    "zh": "Occurs during maintenance",
+    "service_id": "ITM07315"
+  },
+  "DSC07316": {
+    "en": "When you click the 'Update' button, the latest agent file will be downloaded to the agent installation location and automatically restarted. The update process takes approximately 1 minute. Once complete, the agent version will change to the latest version.",
+    "ja": "「アップデート」ボタンをクリックすると、最新のエージェントファイルがエージェントのインストール場所にダウンロードされ、自動的に再起動されます。 アップデートには約1分かかります。 完了すると、そのエージェントのバージョンが最新バージョンに変更されます。",
+    "ko": " '업데이트' 버튼을 클릭하면 최신 에이전트 파일이 에이전트 설치위치로 다운로드 되고 자동 재기동됩니다. 업데이트 과정은 약 1분정도 소요 됩니다. 완료되면 해당 에이전트 버전이 최신 버전으로 변경됩니다.",
+    "zh": "When you click the 'Update' button, the latest agent file will be downloaded to the agent installation location and automatically restarted. The update process takes approximately 1 minute. Once complete, the agent version will change to the latest version.",
+    "service_id": "DSC07316"
+  },
+  "DSC07317": {
+    "en": "If the update is not performed properly, <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> please refer to this.",
+    "ja": "更新が正しく行われない場合は、<a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> 参考にしてください。",
+    "ko": "업데이트가 제대로 수행되지 않는 경우 <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>를 참고하세요.",
+    "zh": "If the update is not performed properly, <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> please refer to this.",
+    "service_id": "DSC07317"
+  },
+  "NTC07318": {
+    "en": "Update failed. please try again.",
+    "ja": "アップデートに失敗しました。 もう一度お試しください。",
+    "ko": "업데이트가 실패했습니다. 다시 시도해주세요.",
+    "zh": "Update failed. please try again.",
+    "service_id": "NTC07318"
+  },
+  "NTC07319": {
+    "en": "Agent download and update in progress. As you move from page to page, you won't be able to tell what's going on.",
+    "ja": "エージェントのダウンロードとアップデート中です。 ページを移動すると進行状況がわかりません。",
+    "ko": "에이전트 다운로드 및 업데이트 중입니다. 페이지를 이동하면 진행상황을 알 수 없습니다.",
+    "zh": "Agent download and update in progress. As you move from page to page, you won't be able to tell what's going on.",
+    "service_id": "NTC07319"
+  },
+  "NTC07320": {
+    "en": "Agent updating.",
+    "ja": "エージェントがアップデート中です。",
+    "ko": "에이전트 업데이트 중입니다.",
+    "zh": "Agent updating.",
+    "service_id": "NTC07320"
+  },
+  "NTC07321": {
+    "en": "Agent update is complete.",
+    "ja": "エージェントのアップデートが完了しました。",
+    "ko": "에이전트 업데이트가 완료되었습니다.",
+    "zh": "Agent update is complete.",
+    "service_id": "NTC07321"
+  },
+  "NTC07322": {
+    "en": "Agent downloading.",
+    "ja": "エージェントをダウンロードしています。",
+    "ko": "에이전트 다운로드 중입니다.",
+    "zh": "Agent downloading.",
+    "service_id": "NTC07322"
+  },
+  "NTC07323": {
+    "en": "All agents have already been updated to the latest version.",
+    "ja": "すでにすべてのエージェントが最新バージョンに更新されています。",
+    "ko": "이미 모든 에이전트가 최신버전으로 업데이트 되었습니다.",
+    "zh": "All agents have already been updated to the latest version.",
+    "service_id": "NTC07323"
+  },
+  "NTC07324": {
+    "en": "Start downloading the agent.",
+    "ja": "エージェントのダウンロードを開始します。",
+    "ko": "에이전트 다운로드를 시작합니다.",
+    "zh": "Start downloading the agent.",
+    "service_id": "NTC07324"
+  },
+  "NTC07325": {
+    "en": "You already have that agent version.",
+    "ja": "すでに対応するエージェントのバージョンがあります。",
+    "ko": "이미 해당 에이전트 버전이 있습니다.",
+    "zh": "You already have that agent version.",
+    "service_id": "NTC07325"
+  },
+  "DSC07326": {
+    "en": "For Pods created with Agent 1.4.2 or lower, data may not be displayed properly. If you need to check the data, please use the <strong>View Previous Version</strong> function.",
+    "ja": "Agent 1.4.2 以前で作成された Pod の場合、データが正しく表示されない場合があります。 データを確認する必要がある場合は、<strong>以前のバージョンを表示</strong>機能を使用してください。",
+    "ko": "에이전트 1.4.2 이하 버전에서 생성된 Pod의 경우 데이터가 정상적으로 표시되지 않을 수 있습니다. 해당 데이터의 확인이 필요하다면 <strong>이전 버전으로 보기</strong> 기능을 통해 확인하여 주세요.",
+    "zh": "For Pods created with Agent 1.4.2 or lower, data may not be displayed properly. If you need to check the data, please use the <strong>View Previous Version</strong> function.",
+    "service_id": "DSC07326"
   },
   "": {
     "": "",

@@ -6955,6 +6955,10 @@
     "width": 753,
     "height": 418
   },
+  "log-timestamp.png": {
+    "width": 1220,
+    "height": 181
+  },
   "log-trend-bar-en.png": {
     "width": 1151,
     "height": 678
@@ -9179,9 +9183,25 @@
     "width": 1200,
     "height": 384
   },
+  "release-db-object-details-db-size.png": {
+    "width": 1200,
+    "height": 660
+  },
+  "release-db-object-details-monitoring.png": {
+    "width": 1200,
+    "height": 609
+  },
+  "release-db-object-details-topobject.png": {
+    "width": 1200,
+    "height": 423
+  },
   "release-k8s-container-block.png": {
     "width": 1200,
     "height": 1302
+  },
+  "release-multi-tx-chartview.png": {
+    "width": 826,
+    "height": 122
   },
   "release-note-tx-new-feature.png": {
     "width": 1200,
@@ -9194,6 +9214,10 @@
   "release-notes-add-sidebar-product.png": {
     "width": 1200,
     "height": 955
+  },
+  "release-npm-topology.png": {
+    "width": 1730,
+    "height": 824
   },
   "series-chart-after.png": {
     "width": 570,
