@@ -348,10 +348,11 @@ var SearchResults = __webpack_require__(23076);
  * @param  {AlgoliaSearch} client an AlgoliaSearch client
  * @param  {string} index the name of the index to query
  * @param  {SearchParameters|object} opts an object defining the initial config of the search. It doesn't have to be a {SearchParameters}, just an object containing the properties you need from it.
+ * @param {SearchResultsOptions|object} searchResultsOptions an object defining the options to use when creating the search results.
  * @return {AlgoliaSearchHelper} The helper instance
  */
-function algoliasearchHelper(client, index, opts) {
-  return new AlgoliaSearchHelper(client, index, opts);
+function algoliasearchHelper(client, index, opts, searchResultsOptions) {
+  return new AlgoliaSearchHelper(client, index, opts, searchResultsOptions);
 }
 
 /**
@@ -2626,7 +2627,6 @@ function findMatchingHierarchicalFacetFromAttributeName(
   );
 }
 
-// eslint-disable-next-line valid-jsdoc
 /**
  * Constructor for SearchResults
  * @class
@@ -2634,6 +2634,7 @@ function findMatchingHierarchicalFacetFromAttributeName(
  * {@link AlgoliaSearchHelper}.
  * @param {SearchParameters} state state that led to the response
  * @param {array.<object>} results the results from algolia client
+ * @param {object} options options to control results content
  * @example <caption>SearchResults of the first query in
  * <a href="http://demos.algolia.com/instant-search-demo">the instant search demo</a></caption>
 {
@@ -2771,8 +2772,14 @@ function SearchResults(state, results, options) {
   });
 
   // Make every key of the result options reachable from the instance
-  Object.keys(options || {}).forEach(function (key) {
-    self[key] = options[key];
+  var opts = merge(
+    {
+      persistHierarchicalRootCount: false,
+    },
+    options
+  );
+  Object.keys(opts).forEach(function (key) {
+    self[key] = opts[key];
   });
 
   /**
@@ -3122,9 +3129,13 @@ function SearchResults(state, results, options) {
         // We want
         //   | beers (5)
         //     > IPA (5)
+        // @MAJOR: remove this legacy behaviour in next major version
         var defaultData = {};
 
-        if (currentRefinement.length > 0) {
+        if (
+          currentRefinement.length > 0 &&
+          !self.persistHierarchicalRootCount
+        ) {
           var root = currentRefinement[0].split(separator)[0];
           defaultData[root] =
             self.hierarchicalFacets[position][attributeIndex].data[root];
@@ -3797,8 +3808,9 @@ var version = __webpack_require__(24336);
  * @param  {SearchParameters | object} options an object defining the initial
  * config of the search. It doesn't have to be a {SearchParameters},
  * just an object containing the properties you need from it.
+ * @param {SearchResultsOptions|object} searchResultsOptions an object defining the options to use when creating the search results.
  */
-function AlgoliaSearchHelper(client, index, options) {
+function AlgoliaSearchHelper(client, index, options, searchResultsOptions) {
   if (typeof client.addAlgoliaAgent === 'function') {
     client.addAlgoliaAgent('JS Helper (' + version + ')');
   }
@@ -3812,6 +3824,7 @@ function AlgoliaSearchHelper(client, index, options) {
   this._lastQueryIdReceived = -1;
   this.derivedHelpers = [];
   this._currentNbQueries = 0;
+  this._searchResultsOptions = searchResultsOptions;
 }
 
 inherits(AlgoliaSearchHelper, EventEmitter);
@@ -5084,6 +5097,9 @@ AlgoliaSearchHelper.prototype._dispatchAlgoliaResponse = function (
   queryId,
   content
 ) {
+  // eslint-disable-next-line consistent-this
+  var self = this;
+
   // @TODO remove the number of outdated queries discarded instead of just one
 
   if (queryId < this._lastQueryIdReceived) {
@@ -5112,7 +5128,11 @@ AlgoliaSearchHelper.prototype._dispatchAlgoliaResponse = function (
       return;
     }
 
-    helper.lastResults = new SearchResults(state, specificResults);
+    helper.lastResults = new SearchResults(
+      state,
+      specificResults,
+      self._searchResultsOptions
+    );
 
     helper.emit('result', {
       results: helper.lastResults,
@@ -6223,7 +6243,7 @@ module.exports = function isValidUserToken(userToken) {
 "use strict";
 
 
-module.exports = '3.15.0';
+module.exports = '3.16.0';
 
 
 /***/ }),
