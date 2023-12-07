@@ -5449,7 +5449,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Tibero',
-          href: '../tiber/monitoring-intro',
+          href: '../tibero/monitoring-intro',
         },
         {
           type: 'link',
