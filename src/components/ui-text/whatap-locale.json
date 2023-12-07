@@ -50469,6 +50469,13 @@
     "zh": "For Pods created with Agent 1.4.2 or lower, data may not be displayed properly. If you need to check the data, please use the <strong>View Previous Version</strong> function.",
     "service_id": "DSC07326"
   },
+  "DSC07327": {
+    "en": "The button will only be enabled for users with edit permission.",
+    "ja": "変更権限を持つユーザーにのみボタンが有効になります。",
+    "ko": "수정 권한이 있는 사용자에게만 버튼이 활성화됩니다.",
+    "zh": "The button will only be enabled for users with edit permission.",
+    "service_id": "DSC07327"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -50609,5 +50616,10 @@
     "en": "Agent Installation",
     "ja": "エージェントインストール",
     "ko": "에이전트 설치"
+  },
+  "kubeEventList": {
+    "en": "Kubernetes Event",
+    "ja": "クーバーネティスイベント",
+    "ko": "쿠버네티스 이벤트"
   }
 }

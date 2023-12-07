@@ -214,6 +214,12 @@ function colsToJson(data){
     "ko": "에이전트 설치"
   }
 
+  rd["kubeEventList"] = {
+    "en": "Kubernetes Event",
+    "ja": "クーバーネティスイベント",
+    "ko": "쿠버네티스 이벤트"
+  }
+
   return rd;
 }
 
