@@ -188,7 +188,7 @@ module.exports = Promise.resolve({
       },
       announcementBar: {
         id: 'moniday-banner',
-        content: '<div id="moniday-banner">This is unreleased documentation for WhaTap Docs.</div>',
+        content: '<div id="moniday-banner">This is unreleased documentation for WhaTap Docs. Official documentation is <a href="https://docs.whatap.io" target="_blank">https://docs.whatap.io</a></div>',
         backgroundColor: 'none',
         textColor: '#ffffff',
         isCloseable: false,
