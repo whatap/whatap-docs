@@ -50599,5 +50599,15 @@
     "en": "Y Auto",
     "ja": "Y軸自動",
     "ko": "Y축 자동"
+  },
+  "rumPageLoadHitmap": {
+    "en": "Page Load Hitmap",
+    "ja": "Page Load Hitmap",
+    "ko": "페이지 로드 히트맵"
+  },
+  "agentInstall": {
+    "en": "Agent Installation",
+    "ja": "エージェントインストール",
+    "ko": "에이전트 설치"
   }
 }
