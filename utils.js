@@ -202,6 +202,18 @@ function colsToJson(data){
     "ko": "Y축 자동"
   }
 
+  rd["rumPageLoadHitmap"] = {
+    "en": "Page Load Hitmap",
+    "ja": "Page Load Hitmap",
+    "ko": "페이지 로드 히트맵"
+  }
+
+  rd["agentInstall"] = {
+    "en": "Agent Installation",
+    "ja": "エージェントインストール",
+    "ko": "에이전트 설치"
+  }
+
   return rd;
 }
 
