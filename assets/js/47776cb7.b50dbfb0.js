@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[26646],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[14682],{
 
-/***/ 25597:
+/***/ 3283:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -101,29 +101,29 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'agent-manage',
     title: '관리하기',
-    description: 'whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.',
+    description: '에이전트를 업데이트하거나 삭제하는 방법을 알아봅니다.',
     tags: [
-        'Oracle',
+        'CUBRID',
         '데이터베이스',
         '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "oracle/agent-manage",
-    "id": "oracle/agent-manage",
+    "unversionedId": "cubrid/agent-manage",
+    "id": "cubrid/agent-manage",
     "title": "관리하기",
-    "description": "whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.",
-    "source": "@site/docs/oracle/agent-manage.mdx",
-    "sourceDirName": "oracle",
-    "slug": "/oracle/agent-manage",
-    "permalink": "/whatap-docs/oracle/agent-manage",
+    "description": "에이전트를 업데이트하거나 삭제하는 방법을 알아봅니다.",
+    "source": "@site/docs/cubrid/agent-manage.mdx",
+    "sourceDirName": "cubrid",
+    "slug": "/cubrid/agent-manage",
+    "permalink": "/whatap-docs/cubrid/agent-manage",
     "draft": false,
-    "editUrl": "undefined/docs/oracle/agent-manage.mdx",
+    "editUrl": "undefined/docs/cubrid/agent-manage.mdx",
     "tags": [
         {
-            "label": "Oracle",
-            "permalink": "/whatap-docs/tags/oracle"
+            "label": "CUBRID",
+            "permalink": "/whatap-docs/tags/cubrid"
         },
         {
             "label": "데이터베이스",
@@ -138,21 +138,21 @@ const metadata = {
     "frontMatter": {
         "id": "agent-manage",
         "title": "관리하기",
-        "description": "whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.",
+        "description": "에이전트를 업데이트하거나 삭제하는 방법을 알아봅니다.",
         "tags": [
-            "Oracle",
+            "CUBRID",
             "데이터베이스",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "dboracleSidebar",
+    "sidebar": "cubridSidebar",
     "previous": {
-        "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/oracle/agent-xos-settings"
+        "title": "XCUB 에이전트 설정",
+        "permalink": "/whatap-docs/cubrid/agent-xcub-settings"
     },
     "next": {
         "title": "대시보드",
-        "permalink": "/whatap-docs/oracle/dashboard-intro"
+        "permalink": "/whatap-docs/cubrid/dashboard-intro"
     }
 };
 const assets = {};
@@ -163,6 +163,31 @@ const toc = [
         value: '에이전트 업데이트',
         id: '에이전트-업데이트',
         level: 2
+    },
+    {
+        value: '최신 버전으로 업데이트하기',
+        id: '최신-버전으로-업데이트하기',
+        level: 3
+    },
+    {
+        value: '업데이트를 실패한 경우',
+        id: '업데이트를-실패한-경우',
+        level: 3
+    },
+    {
+        value: '에이전트가 재시작하지 않을 경우',
+        id: '에이전트가-재시작하지-않을-경우',
+        level: 4
+    },
+    {
+        value: '에이전트 수동 다운로드',
+        id: '에이전트-수동-다운로드',
+        level: 4
+    },
+    {
+        value: '이전 버전으로 되돌리기',
+        id: '이전-버전으로-되돌리기',
+        level: 3
     },
     {
         value: '에이전트 삭제',
@@ -185,6 +210,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
 const ImgLang = makeShortcode("ImgLang");
+const Cmdname = makeShortcode("Cmdname");
+const InDoc = makeShortcode("InDoc");
 const layoutProps = {
     toc
 };
@@ -198,7 +225,9 @@ function MDXContent(_param) {
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-업데이트"
-    }, `에이전트 업데이트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `에이전트 업데이트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "최신-버전으로-업데이트하기"
+    }, `최신 버전으로 업데이트하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
@@ -210,15 +239,157 @@ function MDXContent(_param) {
         img: "db-update-agent.png",
         desc: "",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `에이전트를 개별로 업데이트하려면 각 에이전트 항목의 오른쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `에이전트를 업데이트하면 최신 버전의 에이전트 파일을 에이전트 설치 경로(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `최신 버전`)), ` 버튼을 선택하세요. 모든 에이전트를 한번에 업데이트하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `agent path`)), `)에 자동으로 다운로드하고 재시작합니다. 에이전트 업데이트는 약 1분 정도 소요되며, 업데이트 과정에서 다운로드 및 업데이트 성공 메세지가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `최신 버전으로 모든 에이전트에 다운로드`)), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `에이전트가 위치한 서버에 자동으로 다운로드합니다. 다운로드를 완료하면 에이전트를 다시 시작하세요. 최신 버전의 에이전트로 자동 적용합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `update`)), ` 컬럼에 차례로 표시됩니다. 업데이트를 완료하면 해당 에이전트 버전이 최신 버전으로 변경됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `업데이트할 수 있는 에이전트는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06230",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼이 활성화됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `에이전트를 개별로 업데이트하려면 각 에이전트 항목의 오른쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06230",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `모든 에이전트를 한번에 업데이트하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "DSC07289",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼을 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "postgresql",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `PostgreSQL 모니터링 V2를 이용하기 위한 DBX 에이전트의 최소 버전은 1.6.7입니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "mysql",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `MySQL 모니터링 V2를 이용하기 위한 DBX 에이전트의 최소 버전은 1.6.8입니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "업데이트를-실패한-경우"
+    }, `업데이트를 실패한 경우`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "에이전트가-재시작하지-않을-경우"
+    }, `에이전트가 재시작하지 않을 경우`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `업데이트 과정에서 다운로드 성공 메세지가 표시된 이후 에이전트 버전이 최신으로 자동 변경되지 않는다면, 수동으로 에이전트를 재시작해야 합니다. 에이전트 설치 경로(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `agent path`)), `)에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `restart.sh`), ` 배치 파일을 실행하거나 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `startd.sh`), ` 배치 파일을 차례로 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "에이전트-수동-다운로드"
+    }, `에이전트 수동 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다운로드가 되지 않는 환경이라면 다음 순서대로 에이전트 설치를 진행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "management",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "agentInstall",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴로 이동하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "agent-setup-guide",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 섹션의 2번 항목에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "uitext"
+    }, "Download"), " 버튼을 선택해 최신 버전의 에이전트를 다운로드하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `다운로드한 파일의 압축을 해제하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `whatap.agent.dbx-`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "em"
+    }, `X.Y.Z`), `.jar`), ` 파일만 에이전트 설치 경로(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `agent path`)), `)에 업로드하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `restart.sh`), ` 배치 파일을 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "이전-버전으로-되돌리기"
+    }, `이전 버전으로 되돌리기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `화면 오른쪽 위에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "goto_previous_version",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `다운로드 가능한 에이전트 목록이 표시됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `원하는 버전을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `선택한 버전으로 되돌릴 에이전트 항목에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "download",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `선택한 에이전트의 설치 경로로 에이전트 파일을 다운로드합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `에이전트 설치 경로에서 상위 버전의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `whatap.agent.dbx-`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "em"
+    }, `X.Y.Z`), `.jar`), ` 파일을 삭제하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `restart.sh`), ` 배치 파일을 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `배치 파일이 에이전트 설치 경로에서 가장 높은 버전의 에이전트 파일을 실행하도록 설정되어 있기 때문에, 상위 버전의 JAR 파일을 삭제해야 이전 버전의 에이전트를 실행할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-삭제"
     }, `에이전트 삭제`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "에이전트-설치-서버에서-삭제하기"
