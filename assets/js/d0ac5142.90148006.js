@@ -344,13 +344,28 @@ const metadata = {
 const assets = {};
 const toc = [
     {
+        value: 'Preview 2.0.0.a2',
+        id: 'preview-200a2',
+        level: 2
+    },
+    {
+        value: '<code>공통</code>',
+        id: '공통',
+        level: 3
+    },
+    {
+        value: '<Cmdname sid="dashboard" />',
+        id: 'cmdname-siddashboard-',
+        level: 4
+    },
+    {
         value: 'Preview 2.0.0.a1',
         id: 'preview-200a1',
         level: 2
     },
     {
         value: '<code>공통</code>',
-        id: '공통',
+        id: '공통-1',
         level: 3
     },
     {
@@ -360,7 +375,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="dashboard" />',
-        id: 'cmdname-siddashboard-',
+        id: 'cmdname-siddashboard--1',
         level: 4
     },
     {
@@ -415,7 +430,7 @@ const toc = [
     },
     {
         value: '<code>공통</code>',
-        id: '공통-1',
+        id: '공통-2',
         level: 3
     },
     {
@@ -425,7 +440,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="dashboard" />',
-        id: 'cmdname-siddashboard--1',
+        id: 'cmdname-siddashboard--2',
         level: 4
     },
     {
@@ -460,7 +475,7 @@ const toc = [
     },
     {
         value: '공통',
-        id: '공통-2',
+        id: '공통-3',
         level: 4
     },
     {
@@ -519,11 +534,30 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "https://preview.whatap.io"
     }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "preview-200a2"
+    }, `Preview 2.0.0.a2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 13일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "공통"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "cmdname-siddashboard-"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dashboard",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 브라우저 화면의 크기가 작아졌다가 커질 경우 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "AA001",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 위젯의 차트가 표시되지 않는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "preview-200a1"
     }, `Preview 2.0.0.a1`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 07일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통"
+        "id": "공통-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -538,7 +572,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 버튼 클릭 시, 설정된 언어에 맞춰 가이드(Docs) 링크로 이동하도록 수정 "), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-siddashboard-"
+        "id": "cmdname-siddashboard--1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "dashboard",
         mdxType: "Cmdname"
@@ -1152,7 +1186,7 @@ function MDXContent(_param) {
     }, `Preview 2.0.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통-1"
+        "id": "공통-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1181,7 +1215,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에서 다국어가 적용되지 않은 용어 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-siddashboard--1"
+        "id": "cmdname-siddashboard--2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "dashboard",
         mdxType: "Cmdname"
@@ -1366,7 +1400,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "공통-2"
+        "id": "공통-3"
     }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
