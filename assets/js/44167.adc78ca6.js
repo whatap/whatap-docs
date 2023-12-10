@@ -48,7 +48,7 @@ var domutils_lib_esm_namespaceObject = {};
 __webpack_require__.r(domutils_lib_esm_namespaceObject);
 __webpack_require__.d(domutils_lib_esm_namespaceObject, {
   DocumentPosition: () => (DocumentPosition),
-  append: () => (manipulation_append),
+  append: () => (append),
   appendChild: () => (appendChild),
   compareDocumentPosition: () => (compareDocumentPosition),
   existsOne: () => (existsOne),
@@ -79,7 +79,7 @@ __webpack_require__.d(domutils_lib_esm_namespaceObject, {
   isTag: () => (node_isTag),
   isText: () => (isText),
   nextElementSibling: () => (nextElementSibling),
-  prepend: () => (manipulation_prepend),
+  prepend: () => (prepend),
   prependChild: () => (prependChild),
   prevElementSibling: () => (prevElementSibling),
   removeElement: () => (removeElement),
@@ -161,7 +161,7 @@ __webpack_require__.r(api_manipulation_namespaceObject);
 __webpack_require__.d(api_manipulation_namespaceObject, {
   _makeDomArray: () => (_makeDomArray),
   after: () => (after),
-  append: () => (api_manipulation_append),
+  append: () => (manipulation_append),
   appendTo: () => (appendTo),
   before: () => (before),
   clone: () => (clone),
@@ -169,7 +169,7 @@ __webpack_require__.d(api_manipulation_namespaceObject, {
   html: () => (manipulation_html),
   insertAfter: () => (insertAfter),
   insertBefore: () => (insertBefore),
-  prepend: () => (api_manipulation_prepend),
+  prepend: () => (manipulation_prepend),
   prependTo: () => (prependTo),
   remove: () => (remove),
   replaceWith: () => (replaceWith),
@@ -265,15 +265,15 @@ var compact = (value) => Array.isArray(value) ? value.filter(Boolean) : [];
 
 var isUndefined = (val) => val === undefined;
 
-var get = (obj, path, defaultValue) => {
-    if (!path || !isObject(obj)) {
+var get = (object, path, defaultValue) => {
+    if (!path || !isObject(object)) {
         return defaultValue;
     }
-    const result = compact(path.split(/[,[\].]+?/)).reduce((result, key) => isNullOrUndefined(result) ? result : result[key], obj);
-    return isUndefined(result) || result === obj
-        ? isUndefined(obj[path])
+    const result = compact(path.split(/[,[\].]+?/)).reduce((result, key) => isNullOrUndefined(result) ? result : result[key], object);
+    return isUndefined(result) || result === object
+        ? isUndefined(object[path])
             ? defaultValue
-            : obj[path]
+            : object[path]
         : result;
 };
 
@@ -544,7 +544,7 @@ var isKey = (value) => /^\w*$/.test(value);
 
 var stringToPath = (input) => compact(input.replace(/["|']|\]/g, '').split(/\.|\[/));
 
-function set(object, path, value) {
+var set = (object, path, value) => {
     let index = -1;
     const tempPath = isKey(path) ? [path] : stringToPath(path);
     const length = tempPath.length;
@@ -565,7 +565,7 @@ function set(object, path, value) {
         object = object[key];
     }
     return object;
-}
+};
 
 /**
  * Custom hook to work with controlled component, this function provide you with both form and field level state. Re-render is isolated at the hook level.
@@ -608,6 +608,7 @@ function useController(props) {
     const _registerProps = React.useRef(control.register(name, {
         ...props.rules,
         value,
+        disabled: props.disabled,
     }));
     _registerProps.current = control.register(name, props.rules);
     React.useEffect(() => {
@@ -890,6 +891,9 @@ const iterateFieldsByAction = (fields, action, fieldsNames, abortEarly) => {
                 else if (_f.ref && action(_f.ref, _f.name) && !abortEarly) {
                     break;
                 }
+                else {
+                    iterateFieldsByAction(currentField, action);
+                }
             }
             else if (isObject(currentField)) {
                 iterateFieldsByAction(currentField, action);
@@ -1160,9 +1164,10 @@ var validateField = async (field, formValues, validateAllFieldCriteria, shouldUs
     return error;
 };
 
-function append(data, value) {
-    return [...data, ...convertToArrayPayload(value)];
-}
+var appendAt = (data, value) => [
+    ...data,
+    ...convertToArrayPayload(value),
+];
 
 var fillEmptyArray = (value) => Array.isArray(value) ? value.map(() => undefined) : undefined;
 
@@ -1185,9 +1190,10 @@ var moveArrayAt = (data, from, to) => {
     return data;
 };
 
-function prepend(data, value) {
-    return [...convertToArrayPayload(value), ...convertToArrayPayload(data)];
-}
+var prependAt = (data, value) => [
+    ...convertToArrayPayload(value),
+    ...convertToArrayPayload(data),
+];
 
 function removeAtIndexes(data, indexes) {
     let i = 0;
@@ -1203,7 +1209,7 @@ var removeArrayAt = (data, index) => isUndefined(index)
     : removeAtIndexes(data, convertToArrayPayload(index).sort((a, b) => a - b));
 
 var swapArrayAt = (data, indexA, indexB) => {
-    data[indexA] = [data[indexB], (data[indexB] = data[indexA])][0];
+    [data[indexA], data[indexB]] = [data[indexB], data[indexA]];
 };
 
 function baseGet(object, updatePath) {
@@ -1313,25 +1319,25 @@ function useFieldArray(props) {
         _actioned.current = true;
         control._updateFieldArray(name, updatedFieldArrayValues);
     }, [control, name]);
-    const append$1 = (value, options) => {
+    const append = (value, options) => {
         const appendValue = convertToArrayPayload(cloneObject(value));
-        const updatedFieldArrayValues = append(control._getFieldArray(name), appendValue);
+        const updatedFieldArrayValues = appendAt(control._getFieldArray(name), appendValue);
         control._names.focus = getFocusFieldName(name, updatedFieldArrayValues.length - 1, options);
-        ids.current = append(ids.current, appendValue.map(generateId));
+        ids.current = appendAt(ids.current, appendValue.map(generateId));
         updateValues(updatedFieldArrayValues);
         setFields(updatedFieldArrayValues);
-        control._updateFieldArray(name, updatedFieldArrayValues, append, {
+        control._updateFieldArray(name, updatedFieldArrayValues, appendAt, {
             argA: fillEmptyArray(value),
         });
     };
-    const prepend$1 = (value, options) => {
+    const prepend = (value, options) => {
         const prependValue = convertToArrayPayload(cloneObject(value));
-        const updatedFieldArrayValues = prepend(control._getFieldArray(name), prependValue);
+        const updatedFieldArrayValues = prependAt(control._getFieldArray(name), prependValue);
         control._names.focus = getFocusFieldName(name, 0, options);
-        ids.current = prepend(ids.current, prependValue.map(generateId));
+        ids.current = prependAt(ids.current, prependValue.map(generateId));
         updateValues(updatedFieldArrayValues);
         setFields(updatedFieldArrayValues);
-        control._updateFieldArray(name, updatedFieldArrayValues, prepend, {
+        control._updateFieldArray(name, updatedFieldArrayValues, prependAt, {
             argA: fillEmptyArray(value),
         });
     };
@@ -1462,8 +1468,8 @@ function useFieldArray(props) {
     return {
         swap: React.useCallback(swap, [updateValues, name, control]),
         move: React.useCallback(move, [updateValues, name, control]),
-        prepend: React.useCallback(prepend$1, [updateValues, name, control]),
-        append: React.useCallback(append$1, [updateValues, name, control]),
+        prepend: React.useCallback(prepend, [updateValues, name, control]),
+        append: React.useCallback(append, [updateValues, name, control]),
         remove: React.useCallback(remove, [updateValues, name, control]),
         insert: React.useCallback(insert$1, [updateValues, name, control]),
         update: React.useCallback(update, [updateValues, name, control]),
@@ -1475,7 +1481,7 @@ function useFieldArray(props) {
     };
 }
 
-function createSubject() {
+var createSubject = () => {
     let _observers = [];
     const next = (value) => {
         for (const observer of _observers) {
@@ -1501,7 +1507,7 @@ function createSubject() {
         subscribe,
         unsubscribe,
     };
-}
+};
 
 var isPrimitive = (value) => isNullOrUndefined(value) || !isObjectType(value);
 
@@ -1727,7 +1733,7 @@ function createFormControl(props = {}, flushRootRender) {
         isValid: false,
         touchedFields: {},
         dirtyFields: {},
-        errors: {},
+        errors: _options.errors || {},
         disabled: false,
     };
     let _fields = {};
@@ -1825,6 +1831,13 @@ function createFormControl(props = {}, flushRootRender) {
         set(_formState.errors, name, error);
         _subjects.state.next({
             errors: _formState.errors,
+        });
+    };
+    const _setErrors = (errors) => {
+        _formState.errors = errors;
+        _subjects.state.next({
+            errors: _formState.errors,
+            isValid: false,
         });
     };
     const updateValidAndValue = (name, shouldSkipSetValueAs, value, ref) => {
@@ -2351,8 +2364,13 @@ function createFormControl(props = {}, flushRootRender) {
     const _disableForm = (disabled) => {
         if (isBoolean(disabled)) {
             _subjects.state.next({ disabled });
-            iterateFieldsByAction(_fields, (ref) => {
-                ref.disabled = disabled;
+            iterateFieldsByAction(_fields, (ref, name) => {
+                let requiredDisabledState = disabled;
+                const currentField = get(_fields, name);
+                if (currentField && isBoolean(currentField._f.disabled)) {
+                    requiredDisabledState || (requiredDisabledState = currentField._f.disabled);
+                }
+                ref.disabled = requiredDisabledState;
             }, 0, false);
         }
     };
@@ -2556,6 +2574,7 @@ function createFormControl(props = {}, flushRootRender) {
             _disableForm,
             _subjects,
             _proxyFormState,
+            _setErrors,
             get _fields() {
                 return _fields;
             },
@@ -2652,7 +2671,7 @@ function useForm(props = {}) {
         submitCount: 0,
         dirtyFields: {},
         touchedFields: {},
-        errors: {},
+        errors: props.errors || {},
         disabled: false,
         defaultValues: isFunction(props.defaultValues)
             ? undefined
@@ -2689,11 +2708,17 @@ function useForm(props = {}) {
         if (props.values && !deepEqual(props.values, _values.current)) {
             control._reset(props.values, control._options.resetOptions);
             _values.current = props.values;
+            updateFormState((state) => ({ ...state }));
         }
         else {
             control._resetDefaultValues();
         }
     }, [props.values, control]);
+    react.useEffect(() => {
+        if (props.errors) {
+            control._setErrors(props.errors);
+        }
+    }, [props.errors, control]);
     react.useEffect(() => {
         if (!control._state.mount) {
             control._updateValid();
@@ -4727,7 +4752,7 @@ function appendChild(parent, child) {
  * @param elem The element to append after.
  * @param next The element be added.
  */
-function manipulation_append(elem, next) {
+function append(elem, next) {
     removeElement(next);
     const { parent } = elem;
     const currNext = elem.next;
@@ -4773,7 +4798,7 @@ function prependChild(parent, child) {
  * @param elem The element to prepend before.
  * @param prev The element be added.
  */
-function manipulation_prepend(elem, prev) {
+function prepend(elem, prev) {
     removeElement(prev);
     const { parent } = elem;
     if (parent) {
@@ -9497,7 +9522,7 @@ function prependTo(target) {
  *
  * @see {@link https://api.jquery.com/append/}
  */
-const api_manipulation_append = _insert((dom, children, parent) => {
+const manipulation_append = _insert((dom, children, parent) => {
     uniqueSplice(children, children.length, 0, dom, parent);
 });
 /**
@@ -9519,7 +9544,7 @@ const api_manipulation_append = _insert((dom, children, parent) => {
  *
  * @see {@link https://api.jquery.com/prepend/}
  */
-const api_manipulation_prepend = _insert((dom, children, parent) => {
+const manipulation_prepend = _insert((dom, children, parent) => {
     uniqueSplice(children, 0, 0, dom, parent);
 });
 function _wrap(insert) {
