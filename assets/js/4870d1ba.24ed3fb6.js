@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[34528],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[89966],{
 
-/***/ 54838:
+/***/ 40392:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -103,27 +103,27 @@ const frontMatter = {
     title: '관리하기',
     description: 'whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.',
     tags: [
-        'Altibase',
+        'SQL Server',
         '데이터베이스',
         '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "altibase/agent-manage",
-    "id": "altibase/agent-manage",
+    "unversionedId": "mssql/agent-manage",
+    "id": "mssql/agent-manage",
     "title": "관리하기",
     "description": "whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.",
-    "source": "@site/docs/altibase/agent-manage.mdx",
-    "sourceDirName": "altibase",
-    "slug": "/altibase/agent-manage",
-    "permalink": "/whatap-docs/altibase/agent-manage",
+    "source": "@site/docs/mssql/agent-manage.mdx",
+    "sourceDirName": "mssql",
+    "slug": "/mssql/agent-manage",
+    "permalink": "/whatap-docs/mssql/agent-manage",
     "draft": false,
-    "editUrl": "undefined/docs/altibase/agent-manage.mdx",
+    "editUrl": "undefined/docs/mssql/agent-manage.mdx",
     "tags": [
         {
-            "label": "Altibase",
-            "permalink": "/whatap-docs/tags/altibase"
+            "label": "SQL Server",
+            "permalink": "/whatap-docs/tags/sql-server"
         },
         {
             "label": "데이터베이스",
@@ -140,19 +140,19 @@ const metadata = {
         "title": "관리하기",
         "description": "whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.",
         "tags": [
-            "Altibase",
+            "SQL Server",
             "데이터베이스",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "altibaseSidebar",
+    "sidebar": "mssqlSidebar",
     "previous": {
         "title": "에이전트 데이터 수집",
-        "permalink": "/whatap-docs/altibase/agent-data"
+        "permalink": "/whatap-docs/mssql/agent-data"
     },
     "next": {
         "title": "실시간 데이터베이스 성능 지표 확인",
-        "permalink": "/whatap-docs/altibase/dashboard-intro"
+        "permalink": "/whatap-docs/mssql/dashboard-intro"
     }
 };
 const assets = {};
@@ -365,7 +365,7 @@ object_name={type}-{ip2}-{ip3}-{port}
         "{3}": true,
         "showLineNumbers": true
     }, `cypher_level=256
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-업데이트"
     }, `에이전트 업데이트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "최신-버전으로-업데이트하기"
@@ -437,8 +437,6 @@ object_name={type}-{ip2}-{ip3}-{port}
         parentName: "strong"
     }, `agent path`)), `)에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `restart.sh`), ` 배치 파일을 실행하거나 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
     }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
     }, `startd.sh`), ` 배치 파일을 차례로 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -483,7 +481,9 @@ object_name={type}-{ip2}-{ip3}-{port}
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `restart.sh`), ` 배치 파일을 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `startd.sh`), ` 배치 파일을 차례로 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "이전-버전으로-되돌리기"
     }, `이전 버전으로 되돌리기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
@@ -527,7 +527,9 @@ object_name={type}-{ip2}-{ip3}-{port}
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `restart.sh`), ` 배치 파일을 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `startd.sh`), ` 배치 파일을 차례로 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"

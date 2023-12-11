@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12432],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[86990],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -333,7 +333,7 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 45865:
+/***/ 97101:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -434,27 +434,27 @@ const frontMatter = {
     title: '관리하기',
     description: '에이전트를 업데이트하거나 삭제하는 방법을 알아봅니다.',
     tags: [
-        'MySQL',
+        'PostgreSQL',
         '데이터베이스',
         '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/agent-manage",
-    "id": "mysql/agent-manage",
+    "unversionedId": "postgresql/agent-manage",
+    "id": "postgresql/agent-manage",
     "title": "관리하기",
     "description": "에이전트를 업데이트하거나 삭제하는 방법을 알아봅니다.",
-    "source": "@site/docs/mysql/agent-manage.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/agent-manage",
-    "permalink": "/whatap-docs/mysql/agent-manage",
+    "source": "@site/docs/postgresql/agent-manage.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/agent-manage",
+    "permalink": "/whatap-docs/postgresql/agent-manage",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/agent-manage.mdx",
+    "editUrl": "undefined/docs/postgresql/agent-manage.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "데이터베이스",
@@ -471,19 +471,19 @@ const metadata = {
         "title": "관리하기",
         "description": "에이전트를 업데이트하거나 삭제하는 방법을 알아봅니다.",
         "tags": [
-            "MySQL",
+            "PostgreSQL",
             "데이터베이스",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
         "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/mysql/agent-xos-settings"
+        "permalink": "/whatap-docs/postgresql/agent-xos-settings"
     },
     "next": {
         "title": "대시보드",
-        "permalink": "/whatap-docs/mysql/dashboard-intro"
+        "permalink": "/whatap-docs/postgresql/dashboard-intro"
     }
 };
 const assets = {};
@@ -561,8 +561,8 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
-        product: "MySQL",
-        link: "../mysql-v1/agent-manage",
+        product: "PostgreSQL",
+        link: "../postgresql-v1/agent-manage",
         mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-업데이트"
@@ -636,8 +636,6 @@ function MDXContent(_param) {
         parentName: "strong"
     }, `agent path`)), `)에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `restart.sh`), ` 배치 파일을 실행하거나 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
     }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
     }, `startd.sh`), ` 배치 파일을 차례로 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -682,7 +680,9 @@ function MDXContent(_param) {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `restart.sh`), ` 배치 파일을 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `startd.sh`), ` 배치 파일을 차례로 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "이전-버전으로-되돌리기"
     }, `이전 버전으로 되돌리기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
@@ -726,7 +726,9 @@ function MDXContent(_param) {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `restart.sh`), ` 배치 파일을 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `stop.sh`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `startd.sh`), ` 배치 파일을 차례로 실행해 에이전트를 재시작하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
