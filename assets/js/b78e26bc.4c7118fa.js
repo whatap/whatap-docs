@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[62863],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[6464],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 59887:
+/***/ 87903:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,38 +308,64 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'nodejs-0_4_83',
-    title: 'Node.js Agent v0.4.83',
+    id: 'dbx-1_6_15',
+    title: 'DBX v1.6.15',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/nodejs/nodejs-0_4_81'
+    pagination_next: 'release-notes/db/dbx-1_6_14'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/nodejs/nodejs-0_4_83",
-    "id": "release-notes/nodejs/nodejs-0_4_83",
-    "title": "Node.js Agent v0.4.83",
-    "description": "2023년 12월 11일",
-    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.83.mdx",
-    "sourceDirName": "release-notes/nodejs",
-    "slug": "/release-notes/nodejs/nodejs-0_4_83",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_83",
+    "unversionedId": "release-notes/db/dbx-1_6_15",
+    "id": "release-notes/db/dbx-1_6_15",
+    "title": "DBX v1.6.15",
+    "description": "2023년 12월 09일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.15.mdx",
+    "sourceDirName": "release-notes/db",
+    "slug": "/release-notes/db/dbx-1_6_15",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_15",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.83.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.15.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "nodejs-0_4_83",
-        "title": "Node.js Agent v0.4.83",
+        "id": "dbx-1_6_15",
+        "title": "DBX v1.6.15",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/nodejs/nodejs-0_4_81"
+        "pagination_next": "release-notes/db/dbx-1_6_14"
+    },
+    "sidebar": "releaseSidebar",
+    "previous": {
+        "title": "Kubernetes Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
     },
     "next": {
-        "title": "Node.js Agent v0.4.81",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81"
+        "title": "DBX v1.6.14",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_14"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: '공통',
+        id: '공통',
+        level: 2
+    },
+    {
+        value: 'PostgreSQL',
+        id: 'postgresql',
+        level: 2
+    },
+    {
+        value: 'MySQL',
+        id: 'mysql',
+        level: 2
+    },
+    {
+        value: 'Oracle',
+        id: 'oracle',
+        level: 2
+    }
+];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
@@ -356,48 +382,68 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 09일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "공통"
+    }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Changed"), " Datatext agent 정보 전달 시간 기준 1일에서 1시간으로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, "Changed"), " Windows 환경에 설치 시 필요한 파일을 에이전트 설치 파일에 포함: *instsrv.exe*, *srvany.exe*"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " Kubernetes 환경에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "ONAME"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "ONODE_NAME"), " 값 전달 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, "Fixed"), " *install_windowsService.bat* 파일 버그 수정(jdbc 디렉토리의 JAR 파일을 읽지 못하는 문제)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "postgresql"
+    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "originUrl"), " 옵션(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "whatap_micro_enabled"), ")을 *whatap.conf* 파일에서 변경하면 적용되도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, "Fixed"), " 테이블 레이아웃 컬럼 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " TypeORM, MySQL 환경에서 replication 적용 시 쿼리 트래킹 안되는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "pg_stat_statements"), " 수집 시 부하 감소 및 버그 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "mysql"
+    }, `MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " Redis로 쿼리 조회 시 트래킹 안되는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "info"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "trx_rseg_history_len"), "(MySQL 5.7 버전 이상 지원), ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "active_transactions"), "(MySQL 5.5 버전 이상 지원) 지표 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `패키지 정보: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "https://www.npmjs.com/package/whatap"
-    }, `https://www.npmjs.com/package/whatap`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `설치 및 적용 방법`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, `다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `whatap.conf`), ` 파일 설정 옵션을 추가해야 합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
-        "className": "language-bash"
-    }, `npm i whatap
-`))))));
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `trx_rseg_history_len=true
+active_transactions=true
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " DB 파라미터를 5초마다 수집하는 기능 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `collect_variables_metric=true
+variables_metric=
+# e.g variables_metric=uptime,version
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " plan 전송 시 json 포맷 전송 추가")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "oracle"
+    }, `Oracle`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 테이블 레이아웃 컬럼 수정");
 }
 MDXContent.isMDXComponent = true;
 

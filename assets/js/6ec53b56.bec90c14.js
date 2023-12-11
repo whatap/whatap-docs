@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[8465],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[2860],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 35278:
+/***/ 9200:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,48 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'php-previous',
-    title: 'PHP Agent 지난 버전',
-    toc_max_heading_level: 2
+    id: 'nodejs-0_4_81',
+    title: 'Node.js Agent v0.4.81',
+    toc_max_heading_level: 2,
+    pagination_next: 'release-notes/nodejs/nodejs-0_4_80'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/php/php-previous",
-    "id": "release-notes/php/php-previous",
-    "title": "PHP Agent 지난 버전",
-    "description": "* PHP Agent v2.3.3",
-    "source": "@site/docs/release-notes/php/php-previous.mdx",
-    "sourceDirName": "release-notes/php",
-    "slug": "/release-notes/php/php-previous",
-    "permalink": "/whatap-docs/release-notes/php/php-previous",
+    "unversionedId": "release-notes/nodejs/nodejs-0_4_81",
+    "id": "release-notes/nodejs/nodejs-0_4_81",
+    "title": "Node.js Agent v0.4.81",
+    "description": "2023년 11월 08일",
+    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
+    "sourceDirName": "release-notes/nodejs",
+    "slug": "/release-notes/nodejs/nodejs-0_4_81",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/php/php-previous.mdx",
+    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "php-previous",
-        "title": "PHP Agent 지난 버전",
-        "toc_max_heading_level": 2
+        "id": "nodejs-0_4_81",
+        "title": "Node.js Agent v0.4.81",
+        "toc_max_heading_level": 2,
+        "pagination_next": "release-notes/nodejs/nodejs-0_4_80"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "PHP Agent v2.4.1",
-        "permalink": "/whatap-docs/release-notes/php/php-2_4_1"
+        "title": "Node.js Agent v0.4.83",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_83"
     },
     "next": {
-        "title": "Node.js Agent v0.4.81",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81"
+        "title": "Node.js Agent v0.4.80",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
     }
 };
 const assets = {};
 const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const Status = makeShortcode("Status");
 const layoutProps = {
     toc
 };
@@ -354,12 +361,30 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 08일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 멀티 트랜잭션 수신 과정에서의 연동 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "info"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "li",
-        "href": "php-2_3_3"
-    }, `PHP Agent v2.3.3`))));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `패키지 정보: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "https://www.npmjs.com/package/whatap"
+    }, `https://www.npmjs.com/package/whatap`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `설치 및 적용 방법`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `npm i whatap
+`))))));
 }
 MDXContent.isMDXComponent = true;
 

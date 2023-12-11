@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[21248],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[8465],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 87877:
+/***/ 35278:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,70 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_14',
-    title: 'DBX v1.6.14',
-    toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_13'
+    id: 'php-previous',
+    title: 'PHP Agent 지난 버전',
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_14",
-    "id": "release-notes/db/dbx-1_6_14",
-    "title": "DBX v1.6.14",
-    "description": "2023년 11월 24일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.14.mdx",
-    "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_14",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_14",
+    "unversionedId": "release-notes/php/php-previous",
+    "id": "release-notes/php/php-previous",
+    "title": "PHP Agent 지난 버전",
+    "description": "* PHP Agent v2.3.3",
+    "source": "@site/docs/release-notes/php/php-previous.mdx",
+    "sourceDirName": "release-notes/php",
+    "slug": "/release-notes/php/php-previous",
+    "permalink": "/whatap-docs/release-notes/php/php-previous",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.14.mdx",
+    "editUrl": "undefined/docs/release-notes/php/php-previous.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_14",
-        "title": "DBX v1.6.14",
-        "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_13"
+        "id": "php-previous",
+        "title": "PHP Agent 지난 버전",
+        "toc_max_heading_level": 2
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
+        "title": "PHP Agent v2.4.1",
+        "permalink": "/whatap-docs/release-notes/php/php-2_4_1"
     },
     "next": {
-        "title": "DBX v1.6.13",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_13"
+        "title": "Node.js Agent v0.4.83",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_83"
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: '공통',
-        id: '공통',
-        level: 2
-    },
-    {
-        value: 'PostgreSQL',
-        id: 'postgresql',
-        level: 2
-    },
-    {
-        value: 'Oracle',
-        id: 'oracle',
-        level: 2
-    },
-    {
-        value: 'Tibero',
-        id: 'tibero',
-        level: 2
-    }
-];
-const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
-    };
-const Status = makeShortcode("Status");
-const Cmdname = makeShortcode("Cmdname");
+const toc = [];
 const layoutProps = {
     toc
 };
@@ -383,55 +354,12 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 24일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "공통"
-    }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "agentinfopack"), "의 주기를 12시간에서 1시간으로 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " DB 접속 실패 시에도 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "DbSetInfo"), " 정보를 전송하도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "postgresql"
-    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " table 대소문자 구분 query 버그 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " EDB, PostgreSQL의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "pg_wal_count"), " 지표 수집 권한을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "pg_monitor"), "로 변경(PostgreSQL 10 버전 이상)"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "dbObjectInfo",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "uitext"
-    }, "Bloating"), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "uitext"
-    }, "Table"), " 정보에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "can_estimate"), " 컬럼 삭제")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "oracle"
-    }, `Oracle`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "tablespace_split"), " 옵션 적용 시 temp 이외의 데이터 누락되는 버그 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 테이블스페이스 사이즈 수집 시 누적값 수집 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "tibero"
-    }, `Tibero`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 세션 수집 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "long_run_session_sec=1"), "로 고정된 오류 수정")));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "li",
+        "href": "php-2_3_3"
+    }, `PHP Agent v2.3.3`))));
 }
 MDXContent.isMDXComponent = true;
 

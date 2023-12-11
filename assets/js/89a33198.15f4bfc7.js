@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[2860],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[62863],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 9200:
+/***/ 59887:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,30 +308,30 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'nodejs-0_4_81',
-    title: 'Node.js Agent v0.4.81',
+    id: 'nodejs-0_4_83',
+    title: 'Node.js Agent v0.4.83',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/nodejs/nodejs-0_4_80'
+    pagination_next: 'release-notes/nodejs/nodejs-0_4_81'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/nodejs/nodejs-0_4_81",
-    "id": "release-notes/nodejs/nodejs-0_4_81",
-    "title": "Node.js Agent v0.4.81",
-    "description": "2023년 11월 08일",
-    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
+    "unversionedId": "release-notes/nodejs/nodejs-0_4_83",
+    "id": "release-notes/nodejs/nodejs-0_4_83",
+    "title": "Node.js Agent v0.4.83",
+    "description": "2023년 12월 11일",
+    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.83.mdx",
     "sourceDirName": "release-notes/nodejs",
-    "slug": "/release-notes/nodejs/nodejs-0_4_81",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81",
+    "slug": "/release-notes/nodejs/nodejs-0_4_83",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_83",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.81.mdx",
+    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.83.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "nodejs-0_4_81",
-        "title": "Node.js Agent v0.4.81",
+        "id": "nodejs-0_4_83",
+        "title": "Node.js Agent v0.4.83",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/nodejs/nodejs-0_4_80"
+        "pagination_next": "release-notes/nodejs/nodejs-0_4_81"
     },
     "sidebar": "releaseSidebar",
     "previous": {
@@ -339,8 +339,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/php/php-previous"
     },
     "next": {
-        "title": "Node.js Agent v0.4.80",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_80"
+        "title": "Node.js Agent v0.4.81",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_81"
     }
 };
 const assets = {};
@@ -361,9 +361,27 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 08일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 멀티 트랜잭션 수신 과정에서의 연동 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, "Changed"), " Datatext agent 정보 전달 시간 기준 1일에서 1시간으로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " Kubernetes 환경에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "ONAME"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "ONODE_NAME"), " 값 전달 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "originUrl"), " 옵션(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "whatap_micro_enabled"), ")을 *whatap.conf* 파일에서 변경하면 적용되도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " TypeORM, MySQL 환경에서 replication 적용 시 쿼리 트래킹 안되는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " Redis로 쿼리 조회 시 트래킹 안되는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
         parentName: "admonition"
