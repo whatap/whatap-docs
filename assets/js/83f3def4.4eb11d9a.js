@@ -880,7 +880,17 @@ function MDXContent(_param) {
         parentName: "p"
     }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `DB Connection 시점의 StackTrace를 트레이스에 저장합니다. 애플리케이션에서 사용하는 Connection Pool 정보를 얻기 위해 사용합니다.`))));
+    }, `DB Connection 시점의 StackTrace를 트레이스에 저장합니다. 애플리케이션에서 사용하는 Connection Pool 정보를 얻기 위해 사용합니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `ignore_sql_hash_set`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `해당 옵션에 입력한 SQL 해시값과 일치하는 SQL 문은 무시하도록 설정할 수 있습니다.`))));
 }
 MDXContent.isMDXComponent = true;
 
