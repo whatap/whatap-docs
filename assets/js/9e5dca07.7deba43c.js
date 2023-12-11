@@ -871,6 +871,9 @@ grant kill database connection to whatap;
         "metastring": "title='Example'",
         "title": "'Example'"
     }, `./uid.sh whatap whatap\\!pwd
+
+# 특수문자가 2개 이상일 경우 각각 이스케이프 문자 추가
+./uid.sh whatap whatap\\!\\@pwd
 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
         value: "windows",
         label: "Windows",

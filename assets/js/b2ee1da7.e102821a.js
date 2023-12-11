@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[49012],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[34528],{
 
-/***/ 33204:
+/***/ 54838:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -103,27 +103,27 @@ const frontMatter = {
     title: '관리하기',
     description: 'whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.',
     tags: [
-        'MongoDB',
+        'Altibase',
         '데이터베이스',
         '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mongodb/agent-manage",
-    "id": "mongodb/agent-manage",
+    "unversionedId": "altibase/agent-manage",
+    "id": "altibase/agent-manage",
     "title": "관리하기",
     "description": "whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.",
-    "source": "@site/docs/mongodb/agent-manage.mdx",
-    "sourceDirName": "mongodb",
-    "slug": "/mongodb/agent-manage",
-    "permalink": "/whatap-docs/mongodb/agent-manage",
+    "source": "@site/docs/altibase/agent-manage.mdx",
+    "sourceDirName": "altibase",
+    "slug": "/altibase/agent-manage",
+    "permalink": "/whatap-docs/altibase/agent-manage",
     "draft": false,
-    "editUrl": "undefined/docs/mongodb/agent-manage.mdx",
+    "editUrl": "undefined/docs/altibase/agent-manage.mdx",
     "tags": [
         {
-            "label": "MongoDB",
-            "permalink": "/whatap-docs/tags/mongo-db"
+            "label": "Altibase",
+            "permalink": "/whatap-docs/tags/altibase"
         },
         {
             "label": "데이터베이스",
@@ -140,19 +140,19 @@ const metadata = {
         "title": "관리하기",
         "description": "whatap.conf 파일을 통해 데이터베이스 에이전트를 관리할 수 있습니다.",
         "tags": [
-            "MongoDB",
+            "Altibase",
             "데이터베이스",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "mongodbSidebar",
+    "sidebar": "altibaseSidebar",
     "previous": {
         "title": "에이전트 데이터 수집",
-        "permalink": "/whatap-docs/mongodb/agent-data"
+        "permalink": "/whatap-docs/altibase/agent-data"
     },
     "next": {
         "title": "실시간 데이터베이스 성능 지표 확인",
-        "permalink": "/whatap-docs/mongodb/dashboard-intro"
+        "permalink": "/whatap-docs/altibase/dashboard-intro"
     }
 };
 const assets = {};
@@ -365,7 +365,7 @@ object_name={type}-{ip2}-{ip3}-{port}
         "{3}": true,
         "showLineNumbers": true
     }, `cypher_level=256
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-업데이트"
     }, `에이전트 업데이트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "최신-버전으로-업데이트하기"
@@ -385,11 +385,7 @@ object_name={type}-{ip2}-{ip3}-{port}
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `agent path`)), `)에 자동으로 다운로드하고 재시작합니다. 에이전트 업데이트는 약 1분 정도 소요되며, 업데이트 과정에서 다운로드 및 업데이트 성공 메세지가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `update`)), ` 컬럼에 차례로 표시됩니다. 업데이트를 완료하면 해당 에이전트 버전이 최신 버전으로 변경됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `agent path`)), `)에 자동으로 다운로드하고 재시작합니다. 에이전트 업데이트는 약 1분 정도 소요되며, 업데이트 과정에서 다운로드 및 업데이트 성공 메세지가 화면 위에 차례로 표시됩니다. 업데이트를 완료하면 해당 에이전트 버전이 최신 버전으로 자동 변경됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -413,7 +409,11 @@ object_name={type}-{ip2}-{ip3}-{port}
         sid: "DSC07289",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 버튼을 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+    }), ` 버튼을 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "tip"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `에이전트를 업데이트하는 도중 다른 메뉴로 이동할 경우 진행 상황을 확인할 수 없으며, 한 개의 에이전트를 업데이트하면서 다른 에이전트를 동시에 업데이트할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
         product: "postgresql",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
