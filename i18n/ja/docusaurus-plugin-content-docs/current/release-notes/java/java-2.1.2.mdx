@@ -27,7 +27,7 @@ weaving_reserved=tomcat10
 
 スレッド動作時間が設定値を超えた場合、スレッドを中止するかどうかを設定できるように項目を追加しました。
 
-デフォルト設定は、falseです。
+デフォルト値はfalseです。
 
 ```ini title='whatap.conf'
 auto_thread_kill_elapsed=0
@@ -36,9 +36,9 @@ auto_thread_kill_enabled=false
 
 ### コレクション監視の変更
 
-コレクションクラスをフッキングする方式から、コレクションホルダーを通じて間接的に区レクションクラス情報を表示できるように修正しました。
+Collectionクラスをhookingする方式から、CollectionHolderを通じて間接的にCollectionクラス情報を照会する方式に修正しました。
 
-コレクションを生成するクラスをcollection_nonstatic_holders設定に追加してCollection Mapメニューで確認することができます。
+Collectionを生成するクラスをcollection_nonstatic_holders設定に追加してCollection Mapメニューから確認できます。
 
 ```ini title='whatap.conf'
 collection_nonstatic_holders=org.apache.catalina.session.ManagerBase
@@ -66,7 +66,7 @@ jdbc urlの抽出時に「?」、「;」を基準に切り捨てできるよう�
 
 ### logオープンソースを使用する場合、自動認識機能を追加
 
-logback、log4jオープンソースを使用する場合、またはlogging文字列を含むlog関連オープンソースを使用する場合、自動的にhookingオプションを無効にする機能を追加しました。
+logback、log4jオープンソースを使用する場合、またはlogging文字列を含むlog関連オープンソースを使用する場合、自動的にhookingオプションを無効にするように機能を追加しました。
 
 ### logsink収集データの追加
 
@@ -116,11 +116,11 @@ active_stack_thread_name_enabled=false
 
 :::note
 
-yardバージョンが低い場合、trueに設定するとプロトコルエラーによりエージェント接続は継続的に切断します。
+yardバージョンが低い場合、trueに設定するとプロトコルエラーによりエージェント接続が継続的に切断されます。
 
 :::
 
-### 非同期thread名の表示設定を追加する
+### 非同期thread名の表示設定を追加
 
 非同期スレッドの ID と名前を表示する設定を追加しました。
 
@@ -138,7 +138,7 @@ debug_async_thread_enabled=false
 
 ### エージェント実行ロゴの修正
 
-Javaエージェント実行時のロゴ内容を修正
+Javaエージェント実行時のロゴ内容を修正しました。
 
 ```bash
 The Best Observability in Java
