@@ -318,7 +318,7 @@ const metadata = {
     "unversionedId": "release-notes/service/service-1_114_x",
     "id": "release-notes/service/service-1_114_x",
     "title": "Service 1.114.x",
-    "description": "Service 1.114.7",
+    "description": "Service 1.114.8",
     "source": "@site/docs/release-notes/service/service-1.114.x.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-1_114_x",
@@ -346,13 +346,28 @@ const metadata = {
 const assets = {};
 const toc = [
     {
+        value: 'Service 1.114.8',
+        id: 'service-11148',
+        level: 2
+    },
+    {
+        value: '<code>공통</code>',
+        id: '공통',
+        level: 3
+    },
+    {
+        value: '<code>URL</code>',
+        id: 'url',
+        level: 3
+    },
+    {
         value: 'Service 1.114.7',
         id: 'service-11147',
         level: 2
     },
     {
         value: '<code>공통</code>',
-        id: '공통',
+        id: '공통-1',
         level: 3
     },
     {
@@ -467,7 +482,7 @@ const toc = [
     },
     {
         value: '<code>공통</code>',
-        id: '공통-1',
+        id: '공통-2',
         level: 3
     },
     {
@@ -502,7 +517,7 @@ const toc = [
     },
     {
         value: '<code>공통</code>',
-        id: '공통-2',
+        id: '공통-3',
         level: 3
     },
     {
@@ -577,7 +592,7 @@ const toc = [
     },
     {
         value: '공통',
-        id: '공통-3',
+        id: '공통-4',
         level: 4
     },
     {
@@ -635,8 +650,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
-const Cmdname = makeShortcode("Cmdname");
 const Status = makeShortcode("Status");
+const Cmdname = makeShortcode("Cmdname");
 const LinkImage = makeShortcode("LinkImage");
 const Link = makeShortcode("Link");
 const layoutProps = {
@@ -651,11 +666,39 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "service-11148"
+    }, `Service 1.114.8`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 12일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "공통"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "my_usage",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 사용량 집계 시 시간당 코어 수 집계 기준 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "url"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `URL`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "url_list",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "card_view",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 모드일 때 상태에 따른 필터링이 적용되지 않는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "service-11147"
     }, `Service 1.114.7`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 08일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통"
+        "id": "공통-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1013,7 +1056,7 @@ function MDXContent(_param) {
     }, `Service 1.114.2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 24일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통-1"
+        "id": "공통-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1113,7 +1156,7 @@ function MDXContent(_param) {
     }, `Service 1.114.0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 22일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통-2"
+        "id": "공통-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1481,7 +1524,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "공통-3"
+        "id": "공통-4"
     }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {

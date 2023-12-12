@@ -349,6 +349,16 @@ const toc = [
         level: 2
     },
     {
+        value: '<code>공통</code>',
+        id: '공통',
+        level: 3
+    },
+    {
+        value: '<code>Application</code>',
+        id: 'application',
+        level: 3
+    },
+    {
         value: '<code>Database</code>',
         id: 'database',
         level: 3
@@ -364,13 +374,18 @@ const toc = [
         level: 4
     },
     {
+        value: '<code>URL</code>',
+        id: 'url',
+        level: 3
+    },
+    {
         value: 'Preview 2.0.0.a2',
         id: 'preview-200a2',
         level: 2
     },
     {
         value: '<code>공통</code>',
-        id: '공통',
+        id: '공통-1',
         level: 3
     },
     {
@@ -380,7 +395,7 @@ const toc = [
     },
     {
         value: '<code>Application</code>',
-        id: 'application',
+        id: 'application-1',
         level: 3
     },
     {
@@ -395,7 +410,7 @@ const toc = [
     },
     {
         value: '<code>공통</code>',
-        id: '공통-1',
+        id: '공통-2',
         level: 3
     },
     {
@@ -425,7 +440,7 @@ const toc = [
     },
     {
         value: '<code>Application</code>',
-        id: 'application-1',
+        id: 'application-2',
         level: 3
     },
     {
@@ -460,7 +475,7 @@ const toc = [
     },
     {
         value: '<code>공통</code>',
-        id: '공통-2',
+        id: '공통-3',
         level: 3
     },
     {
@@ -490,7 +505,7 @@ const toc = [
     },
     {
         value: '<code>Application</code>',
-        id: 'application-2',
+        id: 'application-3',
         level: 3
     },
     {
@@ -505,7 +520,7 @@ const toc = [
     },
     {
         value: '공통',
-        id: '공통-3',
+        id: '공통-4',
         level: 4
     },
     {
@@ -568,6 +583,66 @@ function MDXContent(_param) {
     }, `Preview 2.0.0.a3`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 13일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "공통"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "flexboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "AA005",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 위젯을 통해 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06209",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 창을 확인할 경우, 여러 프로젝트가 선택된 가운데 데이터 수집이 안되는 프로젝트가 있으면 전체 프로젝트 목록을 불러오지 못하는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "my_usage",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 사용량 집계 시 시간당 코어 수 집계 기준 수정(컨테이너의 경우 소수점 이하로 코어 수를 할당하기 위함)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "application"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "analysis",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "stack",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 다음의 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "activestack",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 조회 시 필터링 결과 데이터가 없는 경우 빈데이터로 갱신되지 않는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "activestack",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 조회 시 결과가 출력되기 전에 '", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "no_data",
+        className: "b500",
+        mdxType: "Cmdname"
+    }), "' 문구가 먼저 표시되는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "database"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
@@ -597,12 +672,26 @@ function MDXContent(_param) {
         sid: "multi_instance_monitoring",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴에서 인스턴스 목록에 실행 중인 에이전트만 노출되도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }), " 메뉴에서 인스턴스 목록에 실행 중인 에이전트만 노출되도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "url"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `URL`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "url_list",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "card_view",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 모드일 때 상태에 따른 필터링이 적용되지 않는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "preview-200a2"
     }, `Preview 2.0.0.a2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통"
+        "id": "공통-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -631,7 +720,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 옵션을 기본 적용하도록 변경")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "application"
+        "id": "application-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -715,7 +804,7 @@ function MDXContent(_param) {
     }, `Preview 2.0.0.a1`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 07일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통-1"
+        "id": "공통-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -809,7 +898,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Changed"), " 에러가 발생한 경우 화면에서 채팅 도구(말풍선)를 통해 문의할 수 있도록 안내 문구 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "application-1"
+        "id": "application-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -1344,7 +1433,7 @@ function MDXContent(_param) {
     }, `Preview 2.0.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통-2"
+        "id": "공통-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1454,7 +1543,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), "으로 변경")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "application-2"
+        "id": "application-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -1558,7 +1647,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "공통-3"
+        "id": "공통-4"
     }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
