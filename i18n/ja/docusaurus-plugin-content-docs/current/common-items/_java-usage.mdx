@@ -1,4 +1,4 @@
-CPU、メモリ、ディスク使用量の収集設定を追加しない場合、Javaのjmxライブラリを介して収集されます。
+CPU、メモリ、ディスク使用量の収集設定を追加しない場合、Javaのjmxライブラリを通じて性能指標を収集します。
 
 -   **linux_proc_stat_enabled** <span class='type'>Boolean</span>
 
@@ -10,20 +10,20 @@ CPU、メモリ、ディスク使用量の収集設定を追加しない場合�
 
     デフォルト値`false`
 
-    CPU, メモリ、ディスクの使用量を測定するとき、oshiライブラリを使用するかどうかを設定します。
+    CPU、メモリ、ディスクの使用量を測定するとき、oshiライブラリを使用するかどうかを設定します。
 
     :::note
 
-    whatap.agent.2.1.0バージョン以降でサポートします。
+    whatap.agent.2.1.0バージョン以降から対応します。
 
     :::
 
 -   **sigar_enabled** <span class='type'>Boolean</span>
 
-    CPU, メモリ、ディスク使用量を測定する場合は、sigarライブラリを使用するかどうかを設定します。
+    CPU、メモリ、ディスク使用量を測定する場合は、sigarライブラリを使用するかどうかを設定します。
 
     :::note
 
-    whatap.agent.2.1.0バージョン以下で、デフォルト値は`true`です。また、whatap.agent.2.1.0バージョン以上で、デフォルト値は`false`です。
+    whatap.agent.2.1.0バージョン以下ではデフォルト値は`true`です。whatap.agent.2.1.0バージョン以降ではデフォルト値は`false`です。
 
     :::

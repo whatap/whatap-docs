@@ -40,7 +40,7 @@
     "description": "The label for category 트랜잭션 in sidebar javaSidebar"
   },
   "sidebar.javaSidebar.category.메트릭스": {
-    "message": "メトリックス",
+    "message": "メトリクス",
     "description": "The label for category 메트릭스 in sidebar javaSidebar"
   },
   "sidebar.javaSidebar.category.분석과 통계": {
@@ -440,7 +440,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "リアルタイムのDB性能メトリックの確認",
+    "message": "リアルタイムのDB性能メトリクスの確認",
     "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar mssqlSidebar"
   },
   "sidebar.mssqlSidebar.category.Flex 보드": {
@@ -836,7 +836,7 @@
     "description": "The label for link 릴리스 노트 in sidebar indexSidebar, linking to release-notes"
   },
   "sidebar.indexSidebar.doc.와탭 기술 문서 안내": {
-    "message": "WhaTap技術文書ガイド",
+    "message": "WhaTap技術文書の案内",
     "description": "The label for the doc item 와탭 기술 문서 안내 in sidebar indexSidebar, linking to the doc welcome-to-whatapdocs"
   },
   "sidebar.indexSidebar.doc.Extensions": {
@@ -844,7 +844,7 @@
     "description": "The label for the doc item Extensions in sidebar indexSidebar, linking to the doc extensions"
   },
   "sidebar.cloudSidebar.category.클라우드 모니터링": {
-    "message": "クラウドモニタリング",
+    "message": "CLOUDモニタリング",
     "description": "The label for category 클라우드 모니터링 in sidebar cloudSidebar"
   },
   "sidebar.cloudSidebar.category.Amazon ECS": {
@@ -1040,7 +1040,7 @@
     "description": "The label for category 경고 알림 in sidebar urlSidebar"
   },
   "sidebar.rumsSidebar.category.호환성 및 사전설정": {
-    "message": "互換性およびプリセット",
+    "message": "互換性と事前設定",
     "description": "The label for category 호환성 및 사전설정 in sidebar rumsSidebar"
   },
   "sidebar.rumsSidebar.category.대시보드": {
@@ -1244,7 +1244,7 @@
     "description": "The label for the doc item 히트맵 트랜잭션 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-hitmap-class"
   },
   "sidebar.learningSidebar.doc.브라우저 모니터링": {
-    "message": "ブラウザーモニタリング",
+    "message": "Browserモニタリング",
     "description": "The label for the doc item 브라우저 모니터링 in sidebar learningSidebar, linking to the doc best-practice-guides/using-browser-monitoring"
   },
   "sidebar.indexSidebar.link.Browser": {
@@ -1292,7 +1292,7 @@
     "description": "The label for category 분석 in sidebar postgrev1Sidebar"
   },
   "sidebar.postgrev1Sidebar.category.메트릭스": {
-    "message": "メトリックス",
+    "message": "メトリクス",
     "description": "The label for category 메트릭스 in sidebar postgrev1Sidebar"
   },
   "sidebar.postgrev1Sidebar.category.통계/보고서": {
@@ -1368,7 +1368,7 @@
     "description": "The label for category 분석 in sidebar mysqlv1Sidebar"
   },
   "sidebar.mysqlv1Sidebar.category.메트릭스": {
-    "message": "メトリックス",
+    "message": "メトリクス",
     "description": "The label for category 메트릭스 in sidebar mysqlv1Sidebar"
   },
   "sidebar.mysqlv1Sidebar.category.통계/보고서": {
@@ -1408,7 +1408,7 @@
     "description": "The label for category 알림 설정하기 in sidebar npmsidebar"
   },
   "sidebar.rumsSidebar.category.메트릭스": {
-    "message": "メトリックス",
+    "message": "メトリクス",
     "description": "The label for category 메트릭스 in sidebar rumsSidebar"
   },
   "sidebar.indexSidebar.link.Open API": {
@@ -1440,11 +1440,11 @@
     "description": "The label for category Network 모니터링 in sidebar npmsidebar"
   },
   "sidebar.learningSidebar.category.성능 장애 유형": {
-    "message": "性能トラブルタイプ",
+    "message": "性能トラブルの類型",
     "description": "The label for category 성능 장애 유형 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.DB 연결 지연과 커넥션 풀": {
-    "message": "DB接続遅延とコネクションプール",
+    "message": "DB connection遅延とConnection Pool",
     "description": "The label for the doc item DB 연결 지연과 커넥션 풀 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-dbc"
   },
   "sidebar.indexSidebar.link.Network Performance Monitoring": {
@@ -1476,7 +1476,7 @@
     "description": "The label for category Java Batch in sidebar releaseSidebar"
   },
   "sidebar.learningSidebar.category.메트릭스 경고 알림 설정": {
-    "message": "メトリクスアラート通知設定",
+    "message": "メトリクスのアラート通知設定",
     "description": "The label for category 메트릭스 경고 알림 설정 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.doc.데이터베이스": {
@@ -1504,7 +1504,7 @@
     "description": "The label for the doc item 대시보드 분석 in sidebar indexSidebar, linking to the doc best-practice-guides/about-dashboard"
   },
   "sidebar.indexSidebar.doc.성능 장애 유형": {
-    "message": "性能トラブルタイプ",
+    "message": "性能トラブルの類型",
     "description": "The label for the doc item 성능 장애 유형 in sidebar indexSidebar, linking to the doc best-practice-guides/about-apm-dbc"
   },
   "sidebar.indexSidebar.doc.메트릭스 알림 설정": {
