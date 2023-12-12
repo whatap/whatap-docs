@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[94908],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[61832],{
 
 /***/ 58786:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -880,7 +880,127 @@ function _object_spread_props(target, source) {
 
 /***/ }),
 
-/***/ 53498:
+/***/ 42677:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ZP: () => (/* binding */ MDXContent)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle, toc */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const UI = makeShortcode("UI");
+const layoutProps = {
+    toc
+};
+const MDXLayout = "wrapper";
+function MDXContent(_param) {
+    var { components } = _param, props = _object_without_properties(_param, [
+        "components"
+    ]);
+    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
+        components: components,
+        mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, "AWS CloudWatch를 이용하는 에이전트 설정에 대한 설명입니다. 수집을 시작하면 메트릭스에 포함되며, ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(UI, {
+        mdxType: "UI"
+    }, "분석"), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(UI, {
+        mdxType: "UI"
+    }, "메트릭스 차트"), " 메뉴의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, props.name), " 카테고리에서 다른 지표들과 함께 확인할 수 있습니다."));
+}
+MDXContent.isMDXComponent = true;
+
+
+/***/ }),
+
+/***/ 3131:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -897,6 +1017,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _site_src_components_InDoc_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(38329);
 /* harmony import */ var _site_src_components_XcludeDoc_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(17117);
 /* harmony import */ var _site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(80725);
+/* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42677);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -983,27 +1104,27 @@ const frontMatter = {
     title: 'DBX 에이전트 설정',
     description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
     tags: [
-        'Redis',
+        'MySQL',
         '데이터베이스 모니터링',
         'DBX 에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "redis/agent-dbx-settings",
-    "id": "redis/agent-dbx-settings",
+    "unversionedId": "mysql-v1/agent-dbx-settings",
+    "id": "mysql-v1/agent-dbx-settings",
     "title": "DBX 에이전트 설정",
     "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-    "source": "@site/docs/redis/agent-dbx-settings.mdx",
-    "sourceDirName": "redis",
-    "slug": "/redis/agent-dbx-settings",
-    "permalink": "/whatap-docs/redis/agent-dbx-settings",
+    "source": "@site/docs/mysql-v1/agent-dbx-settings.mdx",
+    "sourceDirName": "mysql-v1",
+    "slug": "/mysql-v1/agent-dbx-settings",
+    "permalink": "/whatap-docs/mysql-v1/agent-dbx-settings",
     "draft": false,
-    "editUrl": "undefined/docs/redis/agent-dbx-settings.mdx",
+    "editUrl": "undefined/docs/mysql-v1/agent-dbx-settings.mdx",
     "tags": [
         {
-            "label": "Redis",
-            "permalink": "/whatap-docs/tags/redis"
+            "label": "MySQL",
+            "permalink": "/whatap-docs/tags/my-sql"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -1020,22 +1141,23 @@ const metadata = {
         "title": "DBX 에이전트 설정",
         "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
         "tags": [
-            "Redis",
+            "MySQL",
             "데이터베이스 모니터링",
             "DBX 에이전트"
         ]
     },
-    "sidebar": "redisSidebar",
+    "sidebar": "mysqlv1Sidebar",
     "previous": {
         "title": "설정하기",
-        "permalink": "/whatap-docs/redis/agent-settings"
+        "permalink": "/whatap-docs/mysql-v1/agent-settings"
     },
     "next": {
         "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/redis/agent-xos-settings"
+        "permalink": "/whatap-docs/mysql-v1/agent-xos-settings"
     }
 };
 const assets = {};
+
 
 
 
@@ -1049,6 +1171,16 @@ const toc = [
         value: '데이터 수집',
         id: '데이터-수집',
         level: 2
+    },
+    {
+        value: 'AWS RDS CloudWatch 적용',
+        id: 'using-aws-rds',
+        level: 2
+    },
+    {
+        value: 'RDS CloudWatch 수집을 위한 설정 예시',
+        id: 'rds-cloudwatch-수집을-위한-설정-예시',
+        level: 3
     },
     {
         value: 'AES 256 암호화 적용',
@@ -1391,7 +1523,9 @@ function MDXContent(_param) {
         parentName: "p"
     }, `ora_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.11 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -1432,6 +1566,239 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "li"
     }, `shared pool free mem ratio`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "using-aws-rds"
+    }, `AWS RDS CloudWatch 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .ZP, {
+        name: "db_mysql_counter",
+        mdxType: "AWSRDSdesc"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `aws_region`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `AWS 리전을 설정합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `aws_access_key`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `AWS 엑세스 키를 설정합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `aws_secret_key`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `AWS 시크릿 키를 설정합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `cloud_watch`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `CloudWatch 모니터링의 유무를 설정합니다. 설정 값은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `on`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `off`), `입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `cloud_watch_instance`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `CloudWatch 인스턴스 명을 설정합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `cloud_watch_interval`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Second`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `CloudWatch로 모니터링 값을 가져올 간격을 설정합니다. (단위: 초)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `cloud_watch_metrics`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `CloudWatch로 가져올 모니터링 지표 이름을 설정합니다. 다음과 같이 설정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini"
+    }, `cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `aws_arn`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `aws_access_key`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `aws_secret_key`), ` 대신 적절한 권한을 가진 IAM ROLE의 ARN을 사용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("details", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("summary", null, "필수 권한"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `ROLE은 다음의 권한(Policy)이 필요합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
+        parentName: "table"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "thead"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("th", {
+        parentName: "tr",
+        "align": null
+    }, `권한`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("th", {
+        parentName: "tr",
+        "align": null
+    }, `권한 내용`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tbody", {
+        parentName: "table"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `rds:DescribeDBInstances`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `인스턴스 클래스 정보 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `rds:DescribeDBClusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `autoscale 사용 시 클러스터의 정보 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `rds:DescribeDBLogFiles`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `CloudWatch 로그 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `rds:DownloadDBLogFilePortion`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `CloudWatch 로그 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `ec2:DescribeInstanceTypes`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `인스턴스 클래스에 해당하는 cpu 개수 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `elasticache:DescribeCacheClusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `elasticache 이용 시 인스턴스 클래스 정보 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `cloudwatch:ListMetrics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `CloudWatch 지표 리스트 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `cloudwatch:GetMetricStatistics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `CloudWatch 지표의 값 수집`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `logs:DescribeLogStreams`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `CloudWatch 로그 수집(게시된 로그 기능 사용 시)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+        parentName: "tbody"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `logs:GetLogEvents`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
+        parentName: "tr",
+        "align": null
+    }, `CloudWatch 로그 수집(게시된 로그 기능 사용 시)`))))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "rds-cloudwatch-수집을-위한-설정-예시"
+    }, `RDS CloudWatch 수집을 위한 설정 예시`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음과 같은 기본 설정을 작성해야 RDS CloudWatch를 모니터링하고 데이터를 수집합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `cloud_watch=on
+aws_region=ap-northeast-2
+
+# AWS IAM에서 역할(Role)을 생성하고 역할 ARN(Role ARN) 값을 복사, 붙여넣기하세요.
+aws_arn=arn:aws:iam::999999999999:role/UpdateApp
+cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+
+#인스턴스 이름 예시
+cloud_watch_instance=pg-rds 
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `역할 ARN`), `(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `Role ARN`), `)에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html"
+    }, `다음 링크`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `IAM ROLE의 ARN 값을 이용하지 않고 EC2에 RDS CloudWatch Metric의 수집 권한을 부여해 데이터를 수집하는 방법은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "../reference/cloudwatch-metric-guide"
+    }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "aes-256-암호화-적용"
     }, `AES 256 암호화 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 DBX 에이전트는 수집된 데이터를 암호화하여 서버로 전송합니다. 데이터의 중요도나 설정에 따라 이를 변경할 수 있습니다. 기본적으로 XOR 연산과 AES 알고리즘을 통한 암호화를 사용하며 평문을 128비트 단위로 나누어 암호화, 복호화를 수행합니다. 사용자 설정에 따라 256비트까지 확장할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 DBX 에이전트를 설치한 경로에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
@@ -1443,7 +1810,7 @@ function MDXContent(_param) {
         "{3}": true,
         "showLineNumbers": true
     }, `cypher_level=256
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "naming"
     }, `에이전트 이름 식별`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("details", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("summary", null, "에이전트 이름 설정"), "와탭 모니터링 서비스에서 모니터링 대상을 포괄적인 의미로 오브젝트라는 명칭을 사용하며 에이전트와 혼용해서 사용하기도 합니다. 모니터링 대상 즉 오브젝트를 구분하기 위해서는 이름을 구분해야 합니다. 와탭은 오브젝트 이름과 오브젝트 아이디를 통해서 대상을 구분합니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"

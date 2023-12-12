@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[99731],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44800],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -367,7 +367,128 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 36279:
+/***/ 20454:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ZP: () => (/* binding */ MDXContent)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle, toc */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const Link = makeShortcode("Link");
+const layoutProps = {
+    toc
+};
+const MDXLayout = "wrapper";
+function MDXContent(_param) {
+    var { components } = _param, props = _object_without_properties(_param, [
+        "components"
+    ]);
+    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
+        components: components,
+        mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, "이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
+        to: props.link,
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요.")));
+}
+MDXContent.isMDXComponent = true;
+
+
+/***/ }),
+
+/***/ 55082:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -381,8 +502,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42677);
-/* harmony import */ var _site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(80725);
+/* harmony import */ var _site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(80725);
+/* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42677);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20454);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -476,16 +598,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "oracle/agent-dbx-settings",
-    "id": "oracle/agent-dbx-settings",
+    "unversionedId": "mysql/agent-dbx-settings",
+    "id": "mysql/agent-dbx-settings",
     "title": "DBX 에이전트 설정",
     "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-    "source": "@site/docs/oracle/agent-dbx-settings.mdx",
-    "sourceDirName": "oracle",
-    "slug": "/oracle/agent-dbx-settings",
-    "permalink": "/whatap-docs/oracle/agent-dbx-settings",
+    "source": "@site/docs/mysql/agent-dbx-settings.mdx",
+    "sourceDirName": "mysql",
+    "slug": "/mysql/agent-dbx-settings",
+    "permalink": "/whatap-docs/mysql/agent-dbx-settings",
     "draft": false,
-    "editUrl": "undefined/docs/oracle/agent-dbx-settings.mdx",
+    "editUrl": "undefined/docs/mysql/agent-dbx-settings.mdx",
     "tags": [
         {
             "label": "MySQL",
@@ -511,17 +633,18 @@ const metadata = {
             "DBX 에이전트"
         ]
     },
-    "sidebar": "dboracleSidebar",
+    "sidebar": "mysqlSidebar",
     "previous": {
         "title": "설정하기",
-        "permalink": "/whatap-docs/oracle/agent-settings"
+        "permalink": "/whatap-docs/mysql/agent-settings"
     },
     "next": {
         "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/oracle/agent-xos-settings"
+        "permalink": "/whatap-docs/mysql/agent-xos-settings"
     }
 };
 const assets = {};
+
 
 
 const toc = [
@@ -573,6 +696,10 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .ZP, {
+        product: "MySQL",
+        link: "../mysql-v1/agent-dbx-settings",
+        mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `DBX 에이전트에 필요한 설정은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
     }, `whatap.conf`), ` 파일에 작성합니다. 설정할 수 있는 옵션은 다음을 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
@@ -625,7 +752,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `dbms`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
         mdxType: "CurProd"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         parentName: "li",
@@ -892,7 +1019,9 @@ function MDXContent(_param) {
         parentName: "p"
     }, `ora_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.11 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -932,10 +1061,109 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "li"
-    }, `shared pool free mem ratio`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `shared pool free mem ratio`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `trx_rseg_history_len`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `MySQL 5.7 or later`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.15 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `trx_rseg_history_len`), ` 지표를 수집 여부를 설정합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `true`), `로 설정하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `db_mysql_counter`), ` 카테고리에서 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `active_transactions`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `MySQL 5.5 or later`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.15 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `active_transactions`), ` 지표를 수집 여부를 설정합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `true`), `로 설정하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `db_mysql_counter`), ` 카테고리에서 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `collect_variables_metric`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.15 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `DB 파라미터를 실시간으로 수집할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `variables_metric`), ` 옵션에 설정한 파라미터를 수집합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `variables_metric`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `String`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.15 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `uptime`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `version`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `read_only`), `와 같이 DB 파라미터 이름을 설정하세요. 2개 이상의 값을 설정하려면 쉼표(,)를 구분자로 이용하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `collect_variables_metric`), ` 옵션을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `true`), `로 설정한 다음 DB 파라미터 이름을 설정하면, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `db_mysql_variables`), ` 카테고리에서 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `collect_variables_metric=true
+variables_metric=uptime,version
+`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "using-aws-rds"
-    }, `AWS RDS CloudWatch 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
-        name: "db_oracle_counter",
+    }, `AWS RDS CloudWatch 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .ZP, {
+        name: "db_mysql_counter",
         mdxType: "AWSRDSdesc"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"

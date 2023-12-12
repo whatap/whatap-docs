@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[78203],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[94908],{
 
 /***/ 58786:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -880,7 +880,7 @@ function _object_spread_props(target, source) {
 
 /***/ }),
 
-/***/ 29158:
+/***/ 53498:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -983,27 +983,27 @@ const frontMatter = {
     title: 'DBX 에이전트 설정',
     description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
     tags: [
-        'CUBRID',
+        'Redis',
         '데이터베이스 모니터링',
         'DBX 에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "cubrid/agent-dbx-settings",
-    "id": "cubrid/agent-dbx-settings",
+    "unversionedId": "redis/agent-dbx-settings",
+    "id": "redis/agent-dbx-settings",
     "title": "DBX 에이전트 설정",
     "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-    "source": "@site/docs/cubrid/agent-dbx-settings.mdx",
-    "sourceDirName": "cubrid",
-    "slug": "/cubrid/agent-dbx-settings",
-    "permalink": "/whatap-docs/cubrid/agent-dbx-settings",
+    "source": "@site/docs/redis/agent-dbx-settings.mdx",
+    "sourceDirName": "redis",
+    "slug": "/redis/agent-dbx-settings",
+    "permalink": "/whatap-docs/redis/agent-dbx-settings",
     "draft": false,
-    "editUrl": "undefined/docs/cubrid/agent-dbx-settings.mdx",
+    "editUrl": "undefined/docs/redis/agent-dbx-settings.mdx",
     "tags": [
         {
-            "label": "CUBRID",
-            "permalink": "/whatap-docs/tags/cubrid"
+            "label": "Redis",
+            "permalink": "/whatap-docs/tags/redis"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -1020,19 +1020,19 @@ const metadata = {
         "title": "DBX 에이전트 설정",
         "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
         "tags": [
-            "CUBRID",
+            "Redis",
             "데이터베이스 모니터링",
             "DBX 에이전트"
         ]
     },
-    "sidebar": "cubridSidebar",
+    "sidebar": "redisSidebar",
     "previous": {
         "title": "설정하기",
-        "permalink": "/whatap-docs/cubrid/agent-settings"
+        "permalink": "/whatap-docs/redis/agent-settings"
     },
     "next": {
         "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/cubrid/agent-xos-settings"
+        "permalink": "/whatap-docs/redis/agent-xos-settings"
     }
 };
 const assets = {};
@@ -1043,11 +1043,6 @@ const toc = [
     {
         value: '기본 옵션',
         id: '기본-옵션',
-        level: 2
-    },
-    {
-        value: 'CUBRID 전용 옵션',
-        id: 'cubrid',
         level: 2
     },
     {
@@ -1173,111 +1168,6 @@ function MDXContent(_param) {
     }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `데이터베이스가 통신에 사용하는 포트를 설정합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "cubrid"
-    }, `CUBRID 전용 옵션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `db_port`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "type"
-    }, `Int`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `0`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `애플리케이션 접속 정보에 사용하는 브로커의 포트 정보입니다. 브로커 설정 파일(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `cubrid_broker.conf`), `)에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `BROKER_PORT`), ` 항목에 정의된 값을 입력하세요. (CUBRID의 기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `BROKER_PORT: 33000`), `)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `cms_port`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "type"
-    }, `Int`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `8001`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `CUBRID Manager`), `가 사용하는 포트입니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `CUBRID Manager`), ` 설정 파일(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `cm.conf`), `)에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `cm_port`), ` 항목에 정의된 값을 입력하세요. 모니터링 정보를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `CUBRID Manager`), `의 api를 통해 가지고 오기 위해 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `cms_token_file`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "type"
-    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `사용자가 생성한 DB가 여러 개일 경우 와탭 에이전트도 DB 개수만큼 설치하고 셋팅해야 합니다. 이 경우 에이전트 간 토큰을 공유하기 위해 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `cms_token_file`), ` 경로가 필요합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "em"
-    }, `{에이전트 설치 경로}`), `/cms_token`), `으로 설정하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `예시) agent2를 설치했을 경우 agent1의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `cms_token_file`), ` 경로를 공유하기 위해 다음과 같이 설정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whtap.conf'",
-        "title": "'whtap.conf'"
-    }, `
-cms_token_file=/agent1/cms_token
-
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `broker`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "type"
-    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `broker1`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `query_editor`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `CUBRID를 설치하면 디폴트로 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `broker1`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `query_editor`), `로 브로커가 실행됩니다. 사용자가 임의로 브로커의 이름을 변경했거나 추가적으로 기동했을 경우 변경 사항을 입력하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        parentName: "li",
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `broker`), ` 옵션으로 설정할 이름은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `cubrid broker status`), ` 명령어로 확인할 수 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "데이터-수집"
     }, `데이터 수집`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_site_src_components_InDoc_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
         product: "mysql,mysql-v1",
@@ -1501,7 +1391,9 @@ cms_token_file=/agent1/cms_token
         parentName: "p"
     }, `ora_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.11 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -1553,7 +1445,7 @@ cms_token_file=/agent1/cms_token
         "{3}": true,
         "showLineNumbers": true
     }, `cypher_level=256
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설정을 추가한 다음 에이전트를 다시 시작하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "naming"
     }, `에이전트 이름 식별`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("details", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("summary", null, "에이전트 이름 설정"), "와탭 모니터링 서비스에서 모니터링 대상을 포괄적인 의미로 오브젝트라는 명칭을 사용하며 에이전트와 혼용해서 사용하기도 합니다. 모니터링 대상 즉 오브젝트를 구분하기 위해서는 이름을 구분해야 합니다. 와탭은 오브젝트 이름과 오브젝트 아이디를 통해서 대상을 구분합니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"

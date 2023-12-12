@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44800],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[71023],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -488,7 +488,7 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 55082:
+/***/ 6065:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -502,8 +502,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* harmony import */ var _site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(80725);
-/* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42677);
+/* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42677);
+/* harmony import */ var _site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(80725);
 /* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20454);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
@@ -591,27 +591,27 @@ const frontMatter = {
     title: 'DBX 에이전트 설정',
     description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
     tags: [
-        'MySQL',
+        'PostgreSQL',
         '데이터베이스 모니터링',
         'DBX 에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/agent-dbx-settings",
-    "id": "mysql/agent-dbx-settings",
+    "unversionedId": "postgresql/agent-dbx-settings",
+    "id": "postgresql/agent-dbx-settings",
     "title": "DBX 에이전트 설정",
     "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-    "source": "@site/docs/mysql/agent-dbx-settings.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/agent-dbx-settings",
-    "permalink": "/whatap-docs/mysql/agent-dbx-settings",
+    "source": "@site/docs/postgresql/agent-dbx-settings.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/agent-dbx-settings",
+    "permalink": "/whatap-docs/postgresql/agent-dbx-settings",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/agent-dbx-settings.mdx",
+    "editUrl": "undefined/docs/postgresql/agent-dbx-settings.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -628,19 +628,19 @@ const metadata = {
         "title": "DBX 에이전트 설정",
         "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
         "tags": [
-            "MySQL",
+            "PostgreSQL",
             "데이터베이스 모니터링",
             "DBX 에이전트"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
         "title": "설정하기",
-        "permalink": "/whatap-docs/mysql/agent-settings"
+        "permalink": "/whatap-docs/postgresql/agent-settings"
     },
     "next": {
         "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/mysql/agent-xos-settings"
+        "permalink": "/whatap-docs/postgresql/agent-xos-settings"
     }
 };
 const assets = {};
@@ -657,6 +657,11 @@ const toc = [
         value: '데이터 수집',
         id: '데이터-수집',
         level: 2
+    },
+    {
+        value: 'Top 오브젝트 사용 설정하기',
+        id: 'top-오브젝트-사용-설정하기',
+        level: 3
     },
     {
         value: 'AWS RDS CloudWatch 적용',
@@ -685,6 +690,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
     };
 const InDoc = makeShortcode("InDoc");
 const Xclude = makeShortcode("Xclude");
+const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
 };
@@ -697,8 +703,8 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .ZP, {
-        product: "MySQL",
-        link: "../mysql-v1/agent-dbx-settings",
+        product: "PostgreSQL",
+        link: "../postgresql-v1/agent-dbx-settings",
         mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `DBX 에이전트에 필요한 설정은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
@@ -752,7 +758,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `dbms`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+    }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_site_src_components_GetProductName_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
         mdxType: "CurProd"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         parentName: "li",
@@ -1019,7 +1025,9 @@ function MDXContent(_param) {
         parentName: "p"
     }, `ora_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.11 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -1059,10 +1067,125 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "li"
-    }, `shared pool free mem ratio`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `shared pool free mem ratio`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "top-오브젝트-사용-설정하기"
+    }, `Top 오브젝트 사용 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dbObjectInfo",
+        mdxType: "Cmdname"
+    }), `에 대한 정보를 조회하기 위한 에이전트 설정입니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dbObjectInfo",
+        mdxType: "Cmdname"
+    }), ` 메뉴에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "analysis-top-object"
+    }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `pg_object`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `false`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `Top 오브젝트의 정보 수집 여부를 설정합니다. 정보를 수집하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `true`), `로 변경하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `pg_object_hour`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Int`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `5`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `Top 오브젝트의 정보를 수집 시각을 설정합니다. 기본값은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `5`), `이며 새벽 5시에 수집을 시작합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `table_bloat_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Percentage`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `50`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `테이블 bloating ratio 값이 설정값 이상인 경우 정보를 수집합니다. 기본값은 50%입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `table_bloat_bytes`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Byte`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `10485760`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `테이블 bloating bytes 값이 설정값 이상인 경우 정보를 수집합니다. 기본값은 10MB입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `index_bloat_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Percentage`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `50`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `인덱스 bloating ratio 값이 설정값 이상인 경우 정보를 수집합니다. 기본값은 50%입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `index_bloat_bytes`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Byte`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `10485760`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `인덱스 bloating bytes 값이 설정값 이상인 경우 정보를 수집합니다. 기본값은 10MB입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `autovacuum_list_limit`), `  `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Int`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `50`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `가장 오래된 age(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `relfrozenxid`), `) 순으로 설정값만큼 테이블 정보를 수집합니다. 기본값은 50개입니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "using-aws-rds"
-    }, `AWS RDS CloudWatch 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .ZP, {
-        name: "db_mysql_counter",
+    }, `AWS RDS CloudWatch 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
+        name: "db_postgresql_counter",
         mdxType: "AWSRDSdesc"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"

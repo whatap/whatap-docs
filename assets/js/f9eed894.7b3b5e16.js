@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[61832],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[22159],{
 
 /***/ 58786:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1000,7 +1000,7 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 3131:
+/***/ 43001:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1104,27 +1104,27 @@ const frontMatter = {
     title: 'DBX 에이전트 설정',
     description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
     tags: [
-        'MySQL',
+        'PostgreSQL',
         '데이터베이스 모니터링',
         'DBX 에이전트'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql-v1/agent-dbx-settings",
-    "id": "mysql-v1/agent-dbx-settings",
+    "unversionedId": "postgresql-v1/agent-dbx-settings",
+    "id": "postgresql-v1/agent-dbx-settings",
     "title": "DBX 에이전트 설정",
     "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-    "source": "@site/docs/mysql-v1/agent-dbx-settings.mdx",
-    "sourceDirName": "mysql-v1",
-    "slug": "/mysql-v1/agent-dbx-settings",
-    "permalink": "/whatap-docs/mysql-v1/agent-dbx-settings",
+    "source": "@site/docs/postgresql-v1/agent-dbx-settings.mdx",
+    "sourceDirName": "postgresql-v1",
+    "slug": "/postgresql-v1/agent-dbx-settings",
+    "permalink": "/whatap-docs/postgresql-v1/agent-dbx-settings",
     "draft": false,
-    "editUrl": "undefined/docs/mysql-v1/agent-dbx-settings.mdx",
+    "editUrl": "undefined/docs/postgresql-v1/agent-dbx-settings.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "데이터베이스 모니터링",
@@ -1141,19 +1141,19 @@ const metadata = {
         "title": "DBX 에이전트 설정",
         "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
         "tags": [
-            "MySQL",
+            "PostgreSQL",
             "데이터베이스 모니터링",
             "DBX 에이전트"
         ]
     },
-    "sidebar": "mysqlv1Sidebar",
+    "sidebar": "postgrev1Sidebar",
     "previous": {
         "title": "설정하기",
-        "permalink": "/whatap-docs/mysql-v1/agent-settings"
+        "permalink": "/whatap-docs/postgresql-v1/agent-settings"
     },
     "next": {
         "title": "XOS 에이전트 설정",
-        "permalink": "/whatap-docs/mysql-v1/agent-xos-settings"
+        "permalink": "/whatap-docs/postgresql-v1/agent-xos-settings"
     }
 };
 const assets = {};
@@ -1523,7 +1523,9 @@ function MDXContent(_param) {
         parentName: "p"
     }, `ora_ratio`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
-    }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `Boolean`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `DBX agent v1.6.11 or later`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -1566,7 +1568,7 @@ function MDXContent(_param) {
     }, `shared pool free mem ratio`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "using-aws-rds"
     }, `AWS RDS CloudWatch 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .ZP, {
-        name: "db_mysql_counter",
+        name: "db_postgresql_counter",
         mdxType: "AWSRDSdesc"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
