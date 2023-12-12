@@ -679,7 +679,7 @@ function MDXContent(_param) {
         sid: "my_usage",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴에서 사용량 집계 시 시간당 코어 수 집계 기준 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), " 메뉴에서 사용량 집계 시 시간당 코어 수 집계 기준 수정(컨테이너의 경우 소수점 이하로 코어 수를 할당하기 위함)"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "url"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
