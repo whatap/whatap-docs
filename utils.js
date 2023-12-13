@@ -220,6 +220,12 @@ function colsToJson(data){
     "ko": "쿠버네티스 이벤트"
   }
 
+  rd["agentsConfiguration"] = {
+    "en": "Instance Performance Analysis",
+    "ja": "インスタンス性能",
+    "ko": "인스턴스 성능 분석"
+  }
+
   return rd;
 }
 
