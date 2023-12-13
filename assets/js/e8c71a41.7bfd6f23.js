@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[85625],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36856],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 60655:
+/***/ 8011:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,58 +308,79 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'play2',
-    title: 'Play2',
-    description: 'Play2 애플리케이션 서버 환경에서 JVM 옵션 추가 설정을 완료하세요.',
+    id: 'resin',
+    title: 'Resin',
+    description: 'Resin 애플리케이션 서버 환경에서 JVM 옵션 추가 설정을 완료하세요.',
     tags: [
         'Java',
-        'Play2'
+        'Resin'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "java/add-jvm-opt/play2",
-    "id": "java/add-jvm-opt/play2",
-    "title": "Play2",
-    "description": "Play2 애플리케이션 서버 환경에서 JVM 옵션 추가 설정을 완료하세요.",
-    "source": "@site/docs/java/add-jvm-opt/play2.mdx",
+    "unversionedId": "java/add-jvm-opt/resin",
+    "id": "java/add-jvm-opt/resin",
+    "title": "Resin",
+    "description": "Resin 애플리케이션 서버 환경에서 JVM 옵션 추가 설정을 완료하세요.",
+    "source": "@site/docs/java/add-jvm-opt/resin.mdx",
     "sourceDirName": "java/add-jvm-opt",
-    "slug": "/java/add-jvm-opt/play2",
-    "permalink": "/whatap-docs/java/add-jvm-opt/play2",
+    "slug": "/java/add-jvm-opt/resin",
+    "permalink": "/whatap-docs/java/add-jvm-opt/resin",
     "draft": false,
-    "editUrl": "undefined/docs/java/add-jvm-opt/play2.mdx",
+    "editUrl": "undefined/docs/java/add-jvm-opt/resin.mdx",
     "tags": [
         {
             "label": "Java",
             "permalink": "/whatap-docs/tags/java"
         },
         {
-            "label": "Play2",
-            "permalink": "/whatap-docs/tags/play-2"
+            "label": "Resin",
+            "permalink": "/whatap-docs/tags/resin"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "play2",
-        "title": "Play2",
-        "description": "Play2 애플리케이션 서버 환경에서 JVM 옵션 추가 설정을 완료하세요.",
+        "id": "resin",
+        "title": "Resin",
+        "description": "Resin 애플리케이션 서버 환경에서 JVM 옵션 추가 설정을 완료하세요.",
         "tags": [
             "Java",
-            "Play2"
+            "Resin"
         ]
     },
     "sidebar": "javaSidebar",
     "previous": {
-        "title": "Spring Boot",
-        "permalink": "/whatap-docs/java/add-jvm-opt/spring-boot"
+        "title": "WebSphere",
+        "permalink": "/whatap-docs/java/add-jvm-opt/websphere"
     },
     "next": {
-        "title": "IBM BlueMix",
-        "permalink": "/whatap-docs/java/add-jvm-opt/ibm-bluemix"
+        "title": "Liberty",
+        "permalink": "/whatap-docs/java/add-jvm-opt/liberty"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: 'JVM 옵션 추가',
+        id: 'jvm-옵션-추가',
+        level: 2
+    },
+    {
+        value: 'Heap 메모리 조회',
+        id: 'heap-메모리-조회',
+        level: 2
+    },
+    {
+        value: '모니터링 시작하기',
+        id: '모니터링-시작하기',
+        level: 2
+    }
+];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
 };
@@ -371,33 +392,58 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Play2를 사용하는 애플리케이션 서버 환경에서 JVM 옵션을 추가하는 방법을 확인하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `$PLAY_HOME/framework/build`), ` 파일에 에이전트 옵션을 설정하세. 별도로 이용하는 시작 또는 중지 스크립트가 있다면 해당 파일에 적용하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash",
-        "metastring": "title=$PLAY_HOME/framework/build {6} showLineNumbers",
-        "title": "$PLAY_HOME/framework/build",
-        "{6}": true,
-        "showLineNumbers": true
-    }, `#! /usr/bin/env sh
-
-########## WHATAP START ############
-WHATAP_HOME=/apps/whatap
-WHATAP_JAR=\`ls \${WHATAP_HOME}/whatap.agent-*.jar | sort -V | tail -1\`
-JAVA_OPTS="\${JAVA_OPTS} -Dwhatap.play2=2.2.6 -javaagent:\${WHATAP_JAR}"
-########## WHATAP END ############
-
-if [ -z "\${PLAY_VERSION}" ]; then
-  PLAY_VERSION="2.2.6"
-...
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "jvm-옵션-추가"
+    }, `JVM 옵션 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Resin을 사용하는 애플리케이션 서버 환경에서 JVM 옵션을 추가하는 방법을 확인하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `Play는 기본 설정 외 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "li"
+    }, `Resin 설정 파일에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `-Dwhatap.play2=2.2.6`), ` 옵션을 추가해야 합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `jvm-arg`), `를 추가하여 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `-javaagent`), ` 옵션을 설정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-xml",
+        "metastring": "title='Resin 4.x: $RESIN_HOME/conf/resin.properties'",
+        "title": "'Resin",
+        "4.x:": true,
+        "$RESIN_HOME/conf/resin.properties'": true
+    }, `...
+<resin xmlns="http://caucho.com/ns/resin">
+<cluster id="web-tier">
+    <server-default>
+        <jvm-arg>-Xmx1024m -XX:MaxPermSize=128m -javaagent:/whatap/whatap.agent-X.Y.Z.jar</jvm-arg>
+    </server-default>
+    ...
+</cluster>
+</resin>
+...
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `애플리케이션 서버를 다시 시작하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `애플리케이션 서버 로그 파일과 에이전트 로그 파일을 통해 에이전트가 정상 작동하는지, 에러가 발생하지 않았는지 확인하세요. 로그 파일의 위치는 다음을 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `에이전트: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "li"
+    }, `$WHATAP_HOME/logs/whatap-`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "em"
+    }, `{SERVER_NAME}`), `-`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "em"
+    }, `{DATE}`), `.log`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `RESIN 4.x: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "li"
+    }, `$RESIN_HOME/log/jvm-app-#.log`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
@@ -409,7 +455,71 @@ if [ -z "\${PLAY_VERSION}" ]; then
     }, `
 --add-opens=java.base/java.lang=ALL-UNNAMED
 
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모든 설정을 완료한 다음 애플리케이션 서버를 다시 시작하면 에이전트가 정보를 수집하기 시작합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `에이전트가 정상 작동하지 않거나 에러가 발생한다면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "../install-check"
+    }, `다음 문서`), `를 확인하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "heap-메모리-조회"
+    }, `Heap 메모리 조회`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭의 Java 모니터링에서는 JVM 메모리에 올라가 있는 Heap 점유 객체 현황(힙 메모리상의 객체별 사이즈)을 조회할 수 있는 기능을 기본으로 제공합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "app_upper",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "instance_performance_analysis",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 메뉴에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "heap_histogram",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 탭을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Java 6 ~ 8 버전에서는 JVM 옵션 없이 기본 지원하지만, 일부 Java 버전에 따라 다음과 같이 JVM 옵션을 적용해야 합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `Java 9 ~ Java 15 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `-Djdk.attach.allowAttachSelf=true
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-bash",
+        "metastring": "title=\"example\"",
+        "title": "\"example\""
+    }, `java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `Java 16 버전 이상`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `-Djdk.attach.allowAttachSelf=true
+--add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-bash",
+        "metastring": "title=\"example\"",
+        "title": "\"example\""
+    }, `java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `Java 5 버전 이하, IBM Java는 지원하지 않습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "모니터링-시작하기"
+    }, `모니터링 시작하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모든 설정을 완료한 다음 애플리케이션 서버를 다시 시작하면 에이전트가 정보를 수집하기 시작합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "/java/install-check"
     }, `다음 문서`), `를 확인하세요.`));

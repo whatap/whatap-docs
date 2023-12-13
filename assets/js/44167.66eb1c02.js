@@ -608,9 +608,8 @@ function useController(props) {
     const _registerProps = React.useRef(control.register(name, {
         ...props.rules,
         value,
-        disabled: props.disabled,
+        ...(isBoolean(props.disabled) ? { disabled: props.disabled } : {}),
     }));
-    _registerProps.current = control.register(name, props.rules);
     React.useEffect(() => {
         const _shouldUnregisterField = control._options.shouldUnregister || shouldUnregister;
         const updateMounted = (name, value) => {
@@ -1858,15 +1857,16 @@ function createFormControl(props = {}, flushRootRender) {
         const output = {
             name,
         };
+        const disabledField = get(_fields, name) && get(_fields, name)._f.disabled;
         if (!isBlurEvent || shouldDirty) {
             if (_proxyFormState.isDirty) {
                 isPreviousDirty = _formState.isDirty;
                 _formState.isDirty = output.isDirty = _getDirty();
                 shouldUpdateField = isPreviousDirty !== output.isDirty;
             }
-            const isCurrentFieldPristine = deepEqual(get(_defaultValues, name), fieldValue);
-            isPreviousDirty = get(_formState.dirtyFields, name);
-            isCurrentFieldPristine
+            const isCurrentFieldPristine = disabledField || deepEqual(get(_defaultValues, name), fieldValue);
+            isPreviousDirty = !disabledField && get(_formState.dirtyFields, name);
+            isCurrentFieldPristine || disabledField
                 ? unset(_formState.dirtyFields, name)
                 : set(_formState.dirtyFields, name, true);
             output.dirtyFields = _formState.dirtyFields;

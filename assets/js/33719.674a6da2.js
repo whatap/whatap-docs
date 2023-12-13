@@ -3409,7 +3409,7 @@ function encode(format, ...args) {
     return format.replace(/%s/g, () => encodeURIComponent(args[i++]));
 }
 
-const algoliasearch_lite_esm_browser_version = '4.21.0';
+const algoliasearch_lite_esm_browser_version = '4.21.1';
 
 const AuthMode = {
     /**
