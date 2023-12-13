@@ -989,7 +989,7 @@ function MDXContent(_param) {
         "id": "그룹에-포함된-프로젝트-조회"
     }, `그룹에 포함된 프로젝트 조회`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "apitype"
-    }, "GET"), " https://api.whatap.io//open/api/json/group/", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "groupKey"), "/projects", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `그룹에 포함된 프로젝트들의 메타정보를 조회하는 API 입니다. 계정의 API Token 이 필요하며 curl 을 사용한 예시 요청은 아래에 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, "GET"), " https://api.whatap.io/open/api/json/group/", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "groupKey"), "/projects", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `그룹에 포함된 프로젝트들의 메타정보를 조회하는 API 입니다. 계정의 API Token 이 필요하며 curl 을 사용한 예시 요청은 아래에 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-bash",
         "metastring": "title='command'",
