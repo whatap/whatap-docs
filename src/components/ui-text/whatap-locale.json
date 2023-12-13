@@ -34251,9 +34251,9 @@
     "service_id": "_04971"
   },
   "metrics_event_message_help": {
-    "en": "ex. ${active_tx_8} ${time} encountered an error.",
-    "ja": "ex.${active_tx_8}${time}にエラーが発生しました。",
-    "ko": "ex. ${active_tx_8} ${time}에 에러가 발생했습니다.",
+    "en": "ex. $\\{active_tx_8\\} $\\{time\\} encountered an error.",
+    "ja": "ex.$\\{active_tx_8\\}$\\{time\\}にエラーが発生しました。",
+    "ko": "ex. $\\{active_tx_8\\} $\\{time\\}에 에러가 발생했습니다.",
     "zh": "ex. ${active_tx_8} ${time} encountered an error.",
     "service_id": "_04972"
   },
@@ -50380,7 +50380,7 @@
   },
   "TLT07314": {
     "en": "Event resolution time column has been added!",
-    "ja": "イベント解消時刻列が追加されました！",
+    "ja": "イベント解消時刻の列が追加されました！",
     "ko": "이벤트 해소 시각 컬럼이 추가되었어요!",
     "zh": "Event resolution time column has been added!",
     "service_id": "TLT07314"
@@ -50394,42 +50394,42 @@
   },
   "DSC07316": {
     "en": "When you click the 'Update' button, the latest agent file will be downloaded to the agent installation location and automatically restarted. The update process takes approximately 1 minute. Once complete, the agent version will change to the latest version.",
-    "ja": "「アップデート」ボタンをクリックすると、最新のエージェントファイルがエージェントのインストール場所にダウンロードされ、自動的に再起動されます。 アップデートには約1分かかります。 完了すると、そのエージェントのバージョンが最新バージョンに変更されます。",
+    "ja": "「アップデート」ボタンをクリックすると、最新のエージェントファイルがエージェントのインストール場所にダウンロードされ、自動的に再起動されます。 アップデートには1分程かかります。 完了すると、該当のエージェントのバージョンが最新バージョンに変更されます。",
     "ko": " '업데이트' 버튼을 클릭하면 최신 에이전트 파일이 에이전트 설치위치로 다운로드 되고 자동 재기동됩니다. 업데이트 과정은 약 1분정도 소요 됩니다. 완료되면 해당 에이전트 버전이 최신 버전으로 변경됩니다.",
     "zh": "When you click the 'Update' button, the latest agent file will be downloaded to the agent installation location and automatically restarted. The update process takes approximately 1 minute. Once complete, the agent version will change to the latest version.",
     "service_id": "DSC07316"
   },
   "DSC07317": {
     "en": "If the update is not performed properly, <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> please refer to this.",
-    "ja": "更新が正しく行われない場合は、<a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> 参考にしてください。",
+    "ja": "更新が正しく行われない場合は、<a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> を参考してください。",
     "ko": "업데이트가 제대로 수행되지 않는 경우 <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>를 참고하세요.",
     "zh": "If the update is not performed properly, <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> please refer to this.",
     "service_id": "DSC07317"
   },
   "NTC07318": {
     "en": "Update failed. please try again.",
-    "ja": "アップデートに失敗しました。 もう一度お試しください。",
+    "ja": "アップデートに失敗しました。 もう一度試してください。",
     "ko": "업데이트가 실패했습니다. 다시 시도해주세요.",
     "zh": "Update failed. please try again.",
     "service_id": "NTC07318"
   },
   "NTC07319": {
     "en": "Agent download and update in progress. As you move from page to page, you won't be able to tell what's going on.",
-    "ja": "エージェントのダウンロードとアップデート中です。 ページを移動すると進行状況がわかりません。",
+    "ja": "エージェントのダウンロードとアップデートを行っています。 ページを移動すると進行状況が分からなくなります。",
     "ko": "에이전트 다운로드 및 업데이트 중입니다. 페이지를 이동하면 진행상황을 알 수 없습니다.",
     "zh": "Agent download and update in progress. As you move from page to page, you won't be able to tell what's going on.",
     "service_id": "NTC07319"
   },
   "NTC07320": {
     "en": "Agent updating.",
-    "ja": "エージェントがアップデート中です。",
+    "ja": "エージェントをアップデートしています。",
     "ko": "에이전트 업데이트 중입니다.",
     "zh": "Agent updating.",
     "service_id": "NTC07320"
   },
   "NTC07321": {
     "en": "Agent update is complete.",
-    "ja": "エージェントのアップデートが完了しました。",
+    "ja": "エージェントのアップデートを完了しました。",
     "ko": "에이전트 업데이트가 완료되었습니다.",
     "zh": "Agent update is complete.",
     "service_id": "NTC07321"
@@ -50443,7 +50443,7 @@
   },
   "NTC07323": {
     "en": "All agents have already been updated to the latest version.",
-    "ja": "すでにすべてのエージェントが最新バージョンに更新されています。",
+    "ja": "すべてのエージェントがすでに最新バージョンに更新されています。",
     "ko": "이미 모든 에이전트가 최신버전으로 업데이트 되었습니다.",
     "zh": "All agents have already been updated to the latest version.",
     "service_id": "NTC07323"
@@ -50457,14 +50457,14 @@
   },
   "NTC07325": {
     "en": "You already have that agent version.",
-    "ja": "すでに対応するエージェントのバージョンがあります。",
+    "ja": "すでに該当するエージェントのバージョンがあります。",
     "ko": "이미 해당 에이전트 버전이 있습니다.",
     "zh": "You already have that agent version.",
     "service_id": "NTC07325"
   },
   "DSC07326": {
     "en": "For Pods created with Agent 1.4.2 or lower, data may not be displayed properly. If you need to check the data, please use the <strong>View Previous Version</strong> function.",
-    "ja": "Agent 1.4.2 以前で作成された Pod の場合、データが正しく表示されない場合があります。 データを確認する必要がある場合は、<strong>以前のバージョンを表示</strong>機能を使用してください。",
+    "ja": "Agent 1.4.2 以前で生成された Pod の場合、データが正しく表示されない場合があります。 データを確認するには、<strong>以前のバージョンで表示</strong>機能を使ってください。",
     "ko": "에이전트 1.4.2 이하 버전에서 생성된 Pod의 경우 데이터가 정상적으로 표시되지 않을 수 있습니다. 해당 데이터의 확인이 필요하다면 <strong>이전 버전으로 보기</strong> 기능을 통해 확인하여 주세요.",
     "zh": "For Pods created with Agent 1.4.2 or lower, data may not be displayed properly. If you need to check the data, please use the <strong>View Previous Version</strong> function.",
     "service_id": "DSC07326"
@@ -50475,6 +50475,125 @@
     "ko": "수정 권한이 있는 사용자에게만 버튼이 활성화됩니다.",
     "zh": "The button will only be enabled for users with edit permission.",
     "service_id": "DSC07327"
+  },
+  "BTN07328": {
+    "en": "Move to a non-organization",
+    "ja": "非組織に移動",
+    "ko": "비조직으로 이동",
+    "zh": "Move to a non-organization",
+    "service_id": "BTN07328"
+  },
+  "BTN07329": {
+    "en": "All",
+    "ja": "全体",
+    "ko": "전체",
+    "zh": "All",
+    "service_id": "BTN07329"
+  },
+  "NTC07330": {
+    "en": "There is no project list.<br/>Create a project first.",
+    "ja": "プロジェクトリストがありません。<br/>先に、プロジェクトを作成してください。",
+    "ko": "프로젝트 목록이 없습니다.<br/>프로젝트를 먼저 생성해주세요.",
+    "zh": "There is no project list.<br/>Create a project first.",
+    "service_id": "NTC07330"
+  },
+  "NTC07331": {
+    "en": "No project exists.",
+    "ja": "プロジェクトがありません。",
+    "ko": "프로젝트가 없습니다.",
+    "zh": "No project exists.",
+    "service_id": "NTC07331"
+  },
+  "BTN07332": {
+    "en": "All projects",
+    "ja": "プロジェクト全体",
+    "ko": "전체 프로젝트",
+    "zh": "All projects",
+    "service_id": "BTN07332"
+  },
+  "DSC07333": {
+    "en": "To use reception testing, enter or select values ​​in the required <span class=\"critical\">(event name, category, level, message)</span>.",
+    "ja": "受信テストを使用するには、必須項目<span class=\"critical\">（イベント名、カテゴリ、レベル、メッセージ）</span>に値を入力または選択します。",
+    "ko": "수신 테스트를 이용하려면 필수 항목<span class=\"critical\">(이벤트 명, 카테고리, 레벨, 메시지)</span>에 값을 입력하거나 선택하세요.",
+    "": "To use reception testing, enter or select values ​​in the required <span class=\"critical\">(event name, category, level, message)</span>.",
+    "service_id": "DSC07333"
+  },
+  "NTC07334": {
+    "en": "Your subscription has been cancelled.",
+    "ja": "購読をキャンセルしました。",
+    "ko": "구독 취소되었습니다.",
+    "zh": "Your subscription has been cancelled.",
+    "service_id": "NTC07334"
+  },
+  "NTC07335": {
+    "en": "You've already canceled your subscription.",
+    "ja": "既に購読をキャンセルしました。",
+    "ko": "이미 구독 취소하셨습니다.",
+    "zh": "You've already canceled your subscription.",
+    "service_id": "NTC07335"
+  },
+  "DSC07336": {
+    "en": "AWS Marketplace Subscription Information",
+    "ja": "AWS Marketplace サブスクリプションについて",
+    "ko": "AWS Marketplace 구독 정보",
+    "zh": "AWS Marketplace Subscription Information",
+    "service_id": "DSC07336"
+  },
+  "BTN07337": {
+    "en": "Cancel Subscription",
+    "ja": "購読をキャンセル",
+    "ko": "구독 취소",
+    "zh": "Cancel Subscription",
+    "service_id": "BTN07337"
+  },
+  "DSC07338": {
+    "en": "An account with an AWS Marketplace subscription set up. Check the AWS Marketplace subscription information for your AWS account ID.",
+    "ja": "AWS Marketplace サブスクリプションが設定されたアカウントです。 AWSアカウントIDのAWS Marketplaceサブスクリプション情報を確認してください。",
+    "ko": "AWS Marketplace 구독이 설정된 계정입니다. AWS 계정 ID의 AWS Marketplace 구독 정보를 확인하세요.",
+    "zh": "An account with an AWS Marketplace subscription set up. Check the AWS Marketplace subscription information for your AWS account ID.",
+    "service_id": "DSC07338"
+  },
+  "DSC07339": {
+    "en": "An account with an AWS Marketplace subscription set up. However, I don't have any AWS account ID information. Please check the AWS Marketplace subscription information for your AWS account ID and contact your administrator if there are any problems.",
+    "ja": "AWS Marketplace サブスクリプションが設定されたアカウントです。ただし、AWSアカウントID情報はありません。 AWS アカウント ID の AWS Marketplace サブスクリプション情報を確認し、異常がある場合は管理者にお問い合わせください。",
+    "ko": "AWS Marketplace 구독이 설정된 계정입니다. 하지만 AWS 계정 ID 정보가 없습니다. AWS 계정 ID의 AWS Marketplace 구독 정보를 확인해보시고 이상이 있다면 관리자에게 문의해주세요.",
+    "zh": "An account with an AWS Marketplace subscription set up. However, I don't have any AWS account ID information. Please check the AWS Marketplace subscription information for your AWS account ID and contact your administrator if there are any problems.",
+    "service_id": "DSC07339"
+  },
+  "NTC07340": {
+    "en": "You don't have a log license.",
+    "ja": "あなたはログライセンスを持っていない。",
+    "ko": "로그 라이선스가 없습니다.",
+    "zh": "You don't have a log license.",
+    "service_id": "NTC07340"
+  },
+  "NTC07341": {
+    "en": "You are subscribed.",
+    "ja": "購読されました。",
+    "ko": "구독되었습니다.",
+    "zh": "You are subscribed.",
+    "service_id": "NTC07341"
+  },
+  "NTC07342": {
+    "en": "You have already subscribed.",
+    "ja": "すでに購読しています。",
+    "ko": "이미 구독하셨습니다.",
+    "zh": "You have already subscribed.",
+    "service_id": "NTC07342"
+  },
+  "DSC07343": {
+    "en": "Do you want to unsubscribe?{br}If you cancel, any data we hold about you will be deleted.{br}Please enter {unsubscribe} below to continue.",
+    "ja": "購読をキャンセルしますか？{br}キャンセルすると、あなたが保持しているデータが削除されます。{br}続行するには、下記に{unsubscribe}と入力してください。",
+    "ko": "구독 취소 하시겠습니까?{br}취소 시, 고객님이 보유한 데이터가 삭제됩니다.{br}계속 진행하려면 아래에 {unsubscribe}를 입력하십시오.",
+    "zh": "Do you want to unsubscribe?{br}If you cancel, any data we hold about you will be deleted.{br}Please enter {unsubscribe} below to continue.",
+    "service_id": "DSC07343"
+  },
+  "DSC07344": {
+    "en": "Usage is calculated based on UTC.",
+    "ja": "使用量は UTC ベースで集計されます。",
+    "ko": "사용량은 UTC 기준으로 집계됩니다.",
+    "zh": "Usage is calculated based on UTC.",
+    "service_id": "DSC07344"
   },
   "": {
     "": "",
@@ -50621,5 +50740,10 @@
     "en": "Kubernetes Event",
     "ja": "クーバーネティスイベント",
     "ko": "쿠버네티스 이벤트"
+  },
+  "agentsConfiguration": {
+    "en": "Instance Performance Analysis",
+    "ja": "インスタンス性能",
+    "ko": "인스턴스 성능 분석"
   }
 }
