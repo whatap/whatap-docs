@@ -333,6 +333,11 @@ const metadata = {
         "toc_max_heading_level": 2,
         "pagination_next": "release-notes/server/server-2_4_5"
     },
+    "sidebar": "releaseSidebar",
+    "previous": {
+        "title": "Go Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/golang/golang-previous"
+    },
     "next": {
         "title": "Server Agent v2.4.5",
         "permalink": "/whatap-docs/release-notes/server/server-2_4_5"

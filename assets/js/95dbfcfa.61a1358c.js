@@ -880,7 +880,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `호환성 제공을 위한 이 기능은 2023.12.31.까지만 제공됩니다.`)))));
+    }, `호환성 제공을 위한 이 기능은 2024년 2월 29일까지 제공합니다.`)))));
 }
 MDXContent.isMDXComponent = true;
 
