@@ -1182,6 +1182,15 @@ main {
       border: 0.5px solid #333;
       height: auto;
     }
+    p:has(> img.mobile-c) {
+      text-align: center;
+      img.mobile-c {
+        width: 40%;
+      }
+    }
+    img.mobile-c {
+      width: 40%;
+    }
     img.noneborder {
       border: none;
     }
