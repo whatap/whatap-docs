@@ -473,8 +473,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
-const ImgLang = makeShortcode("ImgLang");
 const Appname = makeShortcode("Appname");
+const ImgLang = makeShortcode("ImgLang");
 const Cmdname = makeShortcode("Cmdname");
 const Link = makeShortcode("Link");
 const layoutProps = {
@@ -578,9 +578,11 @@ function MDXContent(_param) {
     }, `로그인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `앱을 처음 사용하는 사용자는 로그인해야 합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "https://service.whatap.io"
-    }, `와탭 모니터링 서비스`), `에서 가입한 이메일과 비밀번호를 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "uitext"
-    }, `Get Started`), ` 버튼을 탭하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }, `와탭 모니터링 서비스`), `에서 가입한 이메일과 비밀번호를 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
+        sid: "get_started",
+        className: "uitext",
+        mdxType: "Appname"
+    }), ` 버튼을 탭하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "mobile/mobile-app-login.png",
         desc: "로그인",
         className: "mobile",
