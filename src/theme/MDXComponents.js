@@ -15,6 +15,7 @@ import Link from '@docusaurus/Link';
 import LinkImage from '@site/src/components/LinkImage.js';
 import Youtube from '@site/src/components/OutputbyLang.js';
 import Cmdname from '@site/src/components/ui-text/locale-text.js';
+import Appname from '@site/src/components/ui-text/mobile-locale.js';
 import ScrollToLink from '@site/src/components/OnClickeventOffset.js';
 
 export default {
@@ -34,5 +35,6 @@ export default {
   LinkImage,
   Youtube,
   Cmdname,
+  Appname,
   ScrollToLink
 };
