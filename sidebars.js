@@ -3495,6 +3495,11 @@ const sidebars = {
         },
         'support-env',
         'quick-guide',
+        {
+          type: 'doc',
+          label: '모바일 앱',
+          id: 'mobile-app'
+        },
         'about-billing',
         'software-proxy',
         'main-ui-intro',
