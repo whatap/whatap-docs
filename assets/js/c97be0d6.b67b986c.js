@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[6751],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[4330],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 41459:
+/***/ 94208:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '메트릭스 경고 알림',
     description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
     tags: [
-        'Node.js',
+        'Java',
         '경고 알림',
         '메트릭스 이벤트',
         '애플리케이션 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "nodejs/metric-warning-notice",
-    "id": "nodejs/metric-warning-notice",
+    "unversionedId": "java/metric-warning-notice",
+    "id": "java/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/nodejs/metric-warning-notice.mdx",
-    "sourceDirName": "nodejs",
-    "slug": "/nodejs/metric-warning-notice",
-    "permalink": "/whatap-docs/nodejs/metric-warning-notice",
+    "source": "@site/docs/java/metric-warning-notice.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/metric-warning-notice",
+    "permalink": "/whatap-docs/java/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/nodejs/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/java/metric-warning-notice.mdx",
     "tags": [
         {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
+            "label": "Java",
+            "permalink": "/whatap-docs/tags/java"
         },
         {
             "label": "경고 알림",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "메트릭스 경고 알림",
         "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
         "tags": [
-            "Node.js",
+            "Java",
             "경고 알림",
             "메트릭스 이벤트",
             "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "nodejsSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
         "title": "애플리케이션 경고 알림",
-        "permalink": "/whatap-docs/nodejs/warning-notice"
+        "permalink": "/whatap-docs/java/warning-notice"
     },
     "next": {
         "title": "알림 메시지 사용자 정의",
-        "permalink": "/whatap-docs/nodejs/set-notification-message"
+        "permalink": "/whatap-docs/java/set-notification-message"
     }
 };
 const assets = {};
@@ -766,23 +766,25 @@ function MDXContent(_param) {
         sid: "alert_test",
         className: "uitext",
         mdxType: "Cmdname"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `필수 항목인 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "event_name",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "category",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "level",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "message",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 정보를 기준으로 알림을 발생시켜 메시지를 점검하는 기능입니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), ` 정보를 기준으로 알림을 발생시켜 메시지를 점검하는 기능입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         parentName: "li",
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {

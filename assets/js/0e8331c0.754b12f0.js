@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[41481],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36589],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 53806:
+/***/ 62466:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,25 +312,29 @@ const frontMatter = {
     title: '메트릭스 경고 알림',
     description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
     tags: [
+        'Tibero',
         '경고 알림',
         '메트릭스 이벤트',
-        'Naver Cloud Monitoring',
-        '클라우드'
+        '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "ncloud/metric-warning-notice",
-    "id": "ncloud/metric-warning-notice",
+    "unversionedId": "tibero/metric-warning-notice",
+    "id": "tibero/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/ncloud/metric-warning-notice.mdx",
-    "sourceDirName": "ncloud",
-    "slug": "/ncloud/metric-warning-notice",
-    "permalink": "/whatap-docs/ncloud/metric-warning-notice",
+    "source": "@site/docs/tibero/metric-warning-notice.mdx",
+    "sourceDirName": "tibero",
+    "slug": "/tibero/metric-warning-notice",
+    "permalink": "/whatap-docs/tibero/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/ncloud/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/tibero/metric-warning-notice.mdx",
     "tags": [
+        {
+            "label": "Tibero",
+            "permalink": "/whatap-docs/tags/tibero"
+        },
         {
             "label": "경고 알림",
             "permalink": "/whatap-docs/tags/경고-알림"
@@ -340,12 +344,8 @@ const metadata = {
             "permalink": "/whatap-docs/tags/메트릭스-이벤트"
         },
         {
-            "label": "Naver Cloud Monitoring",
-            "permalink": "/whatap-docs/tags/naver-cloud-monitoring"
-        },
-        {
-            "label": "클라우드",
-            "permalink": "/whatap-docs/tags/클라우드"
+            "label": "데이터베이스 모니터링",
+            "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
         }
     ],
     "version": "current",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "메트릭스 경고 알림",
         "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
         "tags": [
+            "Tibero",
             "경고 알림",
             "메트릭스 이벤트",
-            "Naver Cloud Monitoring",
-            "클라우드"
+            "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "ncloudSidebar",
+    "sidebar": "tiberoSidebar",
     "previous": {
-        "title": "알림 설정하기",
-        "permalink": "/whatap-docs/ncloud/set-notice"
+        "title": "데이터베이스 경고 알림",
+        "permalink": "/whatap-docs/tibero/warning-notice"
     },
     "next": {
-        "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/ncloud/set-receive-event"
+        "title": "알림 메시지 사용자 정의",
+        "permalink": "/whatap-docs/tibero/set-notification-message"
     }
 };
 const assets = {};
@@ -751,23 +751,25 @@ function MDXContent(_param) {
         sid: "alert_test",
         className: "uitext",
         mdxType: "Cmdname"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `필수 항목인 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "event_name",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "category",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "level",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "message",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 정보를 기준으로 알림을 발생시켜 메시지를 점검하는 기능입니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), ` 정보를 기준으로 알림을 발생시켜 메시지를 점검하는 기능입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         parentName: "li",
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
