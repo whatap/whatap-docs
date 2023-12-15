@@ -488,7 +488,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모바일 앱을 통해 이용 가능한 기능에 대해 안내합니다. 앱을 통해 사용자의 프로젝트 현황을 파악하고, 이벤트 설정을 통해 알림을 실시간으로 받을 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모바일 앱을 통해 제공하는 기능은 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모바일 앱을 통해 이용 가능한 기능에 대해 안내합니다. 앱을 통해 사용자의 프로젝트 현황을 파악하고, 설정된 이벤트의 알림을 실시간으로 받을 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모바일 앱을 통해 제공하는 기능은 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -594,7 +594,7 @@ function MDXContent(_param) {
     }, `사용자 계정이 없다면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "account/account-manage"
-    }, `다음 문서`), `의 안내에 따라 회원 가입을 진행하세요. 모바일 앱에서 회원 가입을 할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `다음 문서`), `의 안내에 따라 회원 가입을 진행하세요. 모바일 앱에서는 회원 가입할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "초기-화면-안내"
     }, `초기 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `로그인을 완료했거나 앱을 처음 실행했다면 사용자가 소속된 프로젝트 목록을 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "mobile/mobile-app-home.png",
@@ -614,7 +614,7 @@ function MDXContent(_param) {
         sid: "projects",
         className: "uitext",
         mdxType: "Appname"
-    }), ": 사용자가 소속되어 있거나 관리 중인 프로젝트 목록을 확인할 수 있습니다. 개별 프로젝트의 상세 정보를 확인하고, 주요 지표를 조회할 수 있습니다. 조직 단위로 프로젝트 목록을 분류할 수 있으며, 검색을 통해 원하는 프로젝트를 필터링할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ": 사용자가 소속되어 있거나 관리 중인 프로젝트 목록을 확인할 수 있습니다. 개별 프로젝트의 상세 정보를 확인하고, 주요 지표를 조회할 수 있습니다. 또한 검색을 통해 원하는 프로젝트를 필터링할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "alerts",
@@ -626,7 +626,7 @@ function MDXContent(_param) {
         sid: "account",
         className: "uitext",
         mdxType: "Appname"
-    }), ": 사용자의 계정 정보를 확인할 수 있으며, 언어 변경 및 알림 수신, OTP 인증을 설정할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), ": 사용자의 계정 정보를 확인할 수 있으며, 언어 및 알림 수신 변경, OTP 인증을 설정할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "공지사항-확인하기"
     }, `공지사항 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 서비스의 공지사항을 확인하려면 화면 오른쪽 위, 모서리에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "알림 아이콘",
@@ -866,13 +866,13 @@ function MDXContent(_param) {
         sid: "active_transaction",
         className: "uitext",
         mdxType: "Appname"
-    }), ": 에이전트별 진행 중인 액티브 트랜잭션을 확인할 수 있는 차트입니다. 차트에 표시된 색상은 액티브 트랜잭션의 속도입니다. ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+    }), ": 에이전트별 진행 중인 액티브 트랜잭션을 확인할 수 있는 차트입니다. 차트에 표시된 색상은 액티브 트랜잭션의 응답 시간입니다. ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "normal"
-    }, "파랑색(Normal)"), "은 응답 시간이 정상인 트랜잭션, ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+    }, "파랑색(Normal)"), "은 3초 이내, ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "slow"
-    }, "주황색(Slow)"), "은 응답 시간이 8초 정도의 느린 트랜잭션, ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+    }, "주황색(Slow)"), "은 3~8초, ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "vslow"
-    }, "빨간색(Very slow)"), "은 응답 시간이 보통의 2배 이상으로 느린 트랜잭션을 의미합니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, "빨간색(Very slow)"), "은 8초 이상을 의미합니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "uitext"
