@@ -232,6 +232,7 @@ const sidebars = {
                 }
               ]
             },
+            'java/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
