@@ -356,8 +356,8 @@ const metadata = {
     },
     "sidebar": "javaSidebar",
     "previous": {
-        "title": "통합 보고서",
-        "permalink": "/whatap-docs/java/integrated-report"
+        "title": "인스턴스 성능 분석",
+        "permalink": "/whatap-docs/java/instance-performance-analysis"
     },
     "next": {
         "title": "애플리케이션 경고 알림",

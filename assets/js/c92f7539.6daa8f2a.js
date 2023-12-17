@@ -366,8 +366,8 @@ const metadata = {
         "permalink": "/whatap-docs/java/report-apm"
     },
     "next": {
-        "title": "알림 설정하기",
-        "permalink": "/whatap-docs/java/apm-set-notice"
+        "title": "인스턴스 성능 분석",
+        "permalink": "/whatap-docs/java/instance-performance-analysis"
     }
 };
 const assets = {};
