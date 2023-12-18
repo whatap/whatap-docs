@@ -21,7 +21,7 @@ var metadataUtils = __webpack_require__(89712);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
 var ThemeClassNames = __webpack_require__(65319);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 71 modules
-var Layout = __webpack_require__(58958);
+var Layout = __webpack_require__(99031);
 // EXTERNAL MODULE: ./src/theme/MDXContent/index.js
 var MDXContent = __webpack_require__(5335);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TOC/index.js + 1 modules

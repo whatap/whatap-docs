@@ -49,7 +49,7 @@ var useAlgoliaThemeConfig = __webpack_require__(49704);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-search-algolia/lib/client/useSearchResultUrlProcessor.js
 var useSearchResultUrlProcessor = __webpack_require__(30888);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 71 modules
-var Layout = __webpack_require__(58958);
+var Layout = __webpack_require__(99031);
 ;// CONCATENATED MODULE: ./src/theme/SearchPage/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const styles_module = ({"searchQueryInput":"searchQueryInput_cpyO","searchVersionInput":"searchVersionInput_wf2r","searchResultsColumn":"searchResultsColumn_PLpb","algoliaLogo":"algoliaLogo_YElR","algoliaLogoPathFill":"algoliaLogoPathFill_grp5","searchResultItem":"searchResultItem_AlWU","searchResultItemHeading":"searchResultItemHeading_HJFH","searchResultItemPath":"searchResultItemPath_x9Ef","searchResultItemSummary":"searchResultItemSummary_jej3","searchQueryColumn":"searchQueryColumn_hQFc","searchVersionColumn":"searchVersionColumn_GkmC","searchLogoColumn":"searchLogoColumn_Mj_0","loadingSpinner":"loadingSpinner_E_zt","loading-spin":"loading-spin_hlTL","loader":"loader_ujSQ"});

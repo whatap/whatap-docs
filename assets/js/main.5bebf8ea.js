@@ -31293,7 +31293,7 @@ var Head = __webpack_require__(71098);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/utils-common/lib/index.js
 var lib = __webpack_require__(25750);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 71 modules
-var Layout = __webpack_require__(58958);
+var Layout = __webpack_require__(99031);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/theme-fallback/Error/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -32458,7 +32458,7 @@ function IconExternalLink({ width = 13.5, height = 13.5 }) {
 
 /***/ }),
 
-/***/ 58958:
+/***/ 99031:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -34390,13 +34390,8 @@ const translations = {
 };
 /* harmony default export */ const SearchTranslations = (translations);
 
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-search-algolia/lib/theme/SearchBar/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function SearchBar_define_property(obj, key, value) {
+;// CONCATENATED MODULE: ./src/theme/SearchBar/index.js
+function SearchBar_define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
             value: value,
@@ -34541,7 +34536,7 @@ function DocSearch(_param) {
         return Promise.all([
             __webpack_require__.e(/* import() */ 33719).then(__webpack_require__.bind(__webpack_require__, 33719)),
             Promise.all(/* import() */[__webpack_require__.e(40532), __webpack_require__.e(46945)]).then(__webpack_require__.bind(__webpack_require__, 46945)),
-            Promise.all(/* import() */[__webpack_require__.e(40532), __webpack_require__.e(18894)]).then(__webpack_require__.bind(__webpack_require__, 18894))
+            Promise.all(/* import() */[__webpack_require__.e(40532), __webpack_require__.e(9846)]).then(__webpack_require__.bind(__webpack_require__, 9846))
         ]).then(([{ DocSearchModal: Modal }])=>{
             DocSearchModal = Modal;
         });
