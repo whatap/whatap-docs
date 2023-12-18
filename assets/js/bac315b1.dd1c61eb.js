@@ -933,13 +933,13 @@ function MDXContent(_param) {
         sid: "thread_running_top10",
         className: "uitext",
         mdxType: "Appname"
-    }), ": 인스턴스 별 쿼리를 실행 중인 세션 수입니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ": 인스턴스 별 쿼리를 실행 중인 상위 10개의 세션 수입니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "thread_connected_top10",
         className: "uitext",
         mdxType: "Appname"
-    }), ": 인스턴스 별 현재 접속 되어 있는 세션 갯수입니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ": 인스턴스 별 현재 접속되어 있는 상위 10개의 세션 수입니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "uitext"
