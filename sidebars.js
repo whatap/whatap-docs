@@ -465,6 +465,7 @@ const sidebars = {
                 }
               ]
             },
+            'php/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -680,6 +681,7 @@ const sidebars = {
                 }
               ]
             },
+            'nodejs/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -889,6 +891,7 @@ const sidebars = {
                 }
               ]
             },
+            'python/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -1093,6 +1096,7 @@ const sidebars = {
                 }
               ]
             },
+            'dotnet/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -1293,6 +1297,7 @@ const sidebars = {
                 }
               ]
             },
+            'golang/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
