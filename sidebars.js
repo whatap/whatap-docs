@@ -232,6 +232,7 @@ const sidebars = {
                 }
               ]
             },
+            'java/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -464,6 +465,7 @@ const sidebars = {
                 }
               ]
             },
+            'php/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -679,6 +681,7 @@ const sidebars = {
                 }
               ]
             },
+            'nodejs/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -888,6 +891,7 @@ const sidebars = {
                 }
               ]
             },
+            'python/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -1092,6 +1096,7 @@ const sidebars = {
                 }
               ]
             },
+            'dotnet/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -1292,6 +1297,7 @@ const sidebars = {
                 }
               ]
             },
+            'golang/instance-performance-analysis',
             {
               type: 'category',
               label: '알림 설정하기',
@@ -3035,7 +3041,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_24',
@@ -3044,7 +3050,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_24',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_23',
                 'release-notes/java/java-2_2_22',
@@ -3219,14 +3225,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_4_6',
+                id: 'release-notes/server/server-2_4_7',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_4_6',
+                  id: 'release-notes/server/server-2_4_7',
                   className: 'new',
                 },
+                'release-notes/server/server-2_4_6',
                 'release-notes/server/server-2_4_5',
                 'release-notes/server/server-2_4_4',
                 'release-notes/server/server-2_4_3',
@@ -3235,7 +3242,6 @@ const sidebars = {
                 'release-notes/server/server-2_4_0',
                 'release-notes/server/server-2_3_9',
                 'release-notes/server/server-2_3_8',
-                'release-notes/server/server-2_3_7',
                 'release-notes/server/server-previous',
               ],
             },
