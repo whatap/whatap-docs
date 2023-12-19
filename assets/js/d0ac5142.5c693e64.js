@@ -354,6 +354,11 @@ const toc = [
         level: 3
     },
     {
+        value: '<Cmdname sid="my_usage" />',
+        id: 'cmdname-sidmy_usage-',
+        level: 4
+    },
+    {
         value: 'User Interface',
         id: 'user-interface',
         level: 4
@@ -465,7 +470,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="my_usage" />',
-        id: 'cmdname-sidmy_usage-',
+        id: 'cmdname-sidmy_usage--1',
         level: 4
     },
     {
@@ -515,7 +520,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="my_usage" />',
-        id: 'cmdname-sidmy_usage--1',
+        id: 'cmdname-sidmy_usage--2',
         level: 4
     },
     {
@@ -638,6 +643,31 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 위젯의 대시보드 필터가 정상 적용되도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "cmdname-sidmy_usage-"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "my_usage",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "payment_information",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "Service 1.104.17"), "(국가 선택, 청구 통화 선택 기능 추가) 릴리스 이전에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "credit_card_iamport",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 결제 수단을 선택한 고객에게 USD 통화가 고정되는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "usage",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 UTC 기준 날짜로 사용량 표시")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "user-interface"
     }, `User Interface`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -1060,7 +1090,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 02:00으로 설정된 경우, 2023/12/03 05:00 ~ 2023/12/04 02:00 기간을 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-sidmy_usage-"
+        "id": "cmdname-sidmy_usage--1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "my_usage",
         mdxType: "Cmdname"
@@ -1622,7 +1652,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-sidmy_usage--1"
+        "id": "cmdname-sidmy_usage--2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "my_usage",
         mdxType: "Cmdname"
