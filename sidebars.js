@@ -3030,21 +3030,21 @@ const sidebars = {
             'release-notes/service/service-previous',
           ]
         },
-        // {
-        //   type: 'category',
-        //   label: 'WhaTap Mobile app',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   className: 'new',
-        //   items: [
-        //     {
-        //       type: 'doc',
-        //       label: 'v1.0.3 (52)',
-        //       id: 'release-notes/mobile/mobile-app-v1_0_3',
-        //       className: 'new',
-        //     }
-        //   ],
-        // },
+        {
+          type: 'category',
+          label: 'WhaTap Mobile app',
+          collapsible: true,
+          collapsed: true,
+          className: 'new',
+          items: [
+            {
+              type: 'doc',
+              label: 'v1.0.3 (52)',
+              id: 'release-notes/mobile/mobile-app-v1_0_3',
+              className: 'new',
+            }
+          ],
+        },
         {
           type: 'category',
           label: '에이전트',
@@ -3516,11 +3516,11 @@ const sidebars = {
         },
         'support-env',
         'quick-guide',
-        // {
-        //   type: 'doc',
-        //   label: '모바일 앱',
-        //   id: 'mobile-app'
-        // },
+        {
+          type: 'doc',
+          label: '모바일 앱',
+          id: 'mobile-app'
+        },
         'about-billing',
         'software-proxy',
         'main-ui-intro',
