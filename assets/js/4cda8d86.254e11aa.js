@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[97473],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[64327],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -323,7 +323,7 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 25763:
+/***/ 10142:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -424,24 +424,28 @@ const frontMatter = {
     title: '지원 환경',
     description: '데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.',
     tags: [
+        'MySQL',
         '데이터베이스',
-        '데이터베이스 모니터링',
-        'PostgreSQL'
+        '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "postgresql-v1/monitoring-support",
-    "id": "postgresql-v1/monitoring-support",
+    "unversionedId": "mysql-v1/monitoring-support",
+    "id": "mysql-v1/monitoring-support",
     "title": "지원 환경",
     "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
-    "source": "@site/docs/postgresql-v1/monitoring-support.mdx",
-    "sourceDirName": "postgresql-v1",
-    "slug": "/postgresql-v1/monitoring-support",
-    "permalink": "/whatap-docs/postgresql-v1/monitoring-support",
+    "source": "@site/docs/mysql-v1/monitoring-support.mdx",
+    "sourceDirName": "mysql-v1",
+    "slug": "/mysql-v1/monitoring-support",
+    "permalink": "/whatap-docs/mysql-v1/monitoring-support",
     "draft": false,
-    "editUrl": "undefined/docs/postgresql-v1/monitoring-support.mdx",
+    "editUrl": "undefined/docs/mysql-v1/monitoring-support.mdx",
     "tags": [
+        {
+            "label": "MySQL",
+            "permalink": "/whatap-docs/tags/my-sql"
+        },
         {
             "label": "데이터베이스",
             "permalink": "/whatap-docs/tags/데이터베이스"
@@ -449,10 +453,6 @@ const metadata = {
         {
             "label": "데이터베이스 모니터링",
             "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
-        },
-        {
-            "label": "PostgreSQL",
-            "permalink": "/whatap-docs/tags/postgre-sql"
         }
     ],
     "version": "current",
@@ -461,19 +461,19 @@ const metadata = {
         "title": "지원 환경",
         "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
         "tags": [
+            "MySQL",
             "데이터베이스",
-            "데이터베이스 모니터링",
-            "PostgreSQL"
+            "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "postgrev1Sidebar",
+    "sidebar": "mysqlv1Sidebar",
     "previous": {
-        "title": "PostgreSQL 모니터링",
-        "permalink": "/whatap-docs/postgresql-v1/monitoring-intro"
+        "title": "MySQL 모니터링",
+        "permalink": "/whatap-docs/mysql-v1/monitoring-intro"
     },
     "next": {
         "title": "에이전트 설치",
-        "permalink": "/whatap-docs/postgresql-v1/install-agent"
+        "permalink": "/whatap-docs/mysql-v1/install-agent"
     }
 };
 const assets = {};
@@ -482,7 +482,7 @@ const toc = [
     {
         value: '데이터베이스 지원 버전',
         id: '데이터베이스-지원-버전',
-        level: 3
+        level: 2
     },
     {
         value: '에이전트 구성',
@@ -522,11 +522,11 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
-        name: "PostgreSQL",
+        name: "MySQL",
         mdxType: "Desc"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "데이터베이스-지원-버전"
-    }, `데이터베이스 지원 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `PostgreSQL 9.2 버전 이상 / EDB PAS 9.2 버전 이상을 지원합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `데이터베이스 지원 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `MySQL 5.5 버전 이상 / MariaDB 5.5 버전 이상을 지원합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-구성"
     }, `에이전트 구성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 데이터베이스 모니터링 서비스는 에이전트와 수집 서버로 구성되며, 에이전트와 수집 서버 간에는 보안을 위해 데이터를 암호화합니다. 외부 라이브러리 미사용으로 제작되어 설치 및 업데이트 시 시스템 재기동이 필요 없습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -770,7 +770,7 @@ function MDXContent(_param) {
         "id": "모바일-앱"
     }, `모바일 앱`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모바일 앱은 안드로이드와 iOS 환경을 지원합니다. 다음 링크로 이동하거나 QR 코드를 스캔해 앱을 설치할 수 있습니다. 모바일 앱에 대한 자세한 설명은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://docs.whatpa.io/mobile-app"
+        "href": "https://docs.whatap.io/mobile-app"
     }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {

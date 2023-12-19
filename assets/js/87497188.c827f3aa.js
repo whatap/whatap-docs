@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[22774],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[41398],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 49928:
+/***/ 13477:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,88 +308,76 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'monitoring-support',
+    id: 'supported-spec',
     title: '지원 환경',
-    description: '데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.',
+    description: '와탭 모니터링 서비스가 동작하는 Go 애플리케이션 서버의 기본 사양을 알아보세요.',
     tags: [
-        'CUBRID',
-        '데이터베이스',
-        '데이터베이스 모니터링'
+        'Go'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "cubrid/monitoring-support",
-    "id": "cubrid/monitoring-support",
+    "unversionedId": "golang/supported-spec",
+    "id": "golang/supported-spec",
     "title": "지원 환경",
-    "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
-    "source": "@site/docs/cubrid/monitoring-support.mdx",
-    "sourceDirName": "cubrid",
-    "slug": "/cubrid/monitoring-support",
-    "permalink": "/whatap-docs/cubrid/monitoring-support",
+    "description": "와탭 모니터링 서비스가 동작하는 Go 애플리케이션 서버의 기본 사양을 알아보세요.",
+    "source": "@site/docs/golang/supported-spec.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/supported-spec",
+    "permalink": "/whatap-docs/golang/supported-spec",
     "draft": false,
-    "editUrl": "undefined/docs/cubrid/monitoring-support.mdx",
+    "editUrl": "undefined/docs/golang/supported-spec.mdx",
     "tags": [
         {
-            "label": "CUBRID",
-            "permalink": "/whatap-docs/tags/cubrid"
-        },
-        {
-            "label": "데이터베이스",
-            "permalink": "/whatap-docs/tags/데이터베이스"
-        },
-        {
-            "label": "데이터베이스 모니터링",
-            "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "monitoring-support",
+        "id": "supported-spec",
         "title": "지원 환경",
-        "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
+        "description": "와탭 모니터링 서비스가 동작하는 Go 애플리케이션 서버의 기본 사양을 알아보세요.",
         "tags": [
-            "CUBRID",
-            "데이터베이스",
-            "데이터베이스 모니터링"
+            "Go"
         ]
     },
-    "sidebar": "cubridSidebar",
+    "sidebar": "goSidebar",
     "previous": {
-        "title": "CUBRID 모니터링",
-        "permalink": "/whatap-docs/cubrid/monitoring-intro"
+        "title": "Go 모니터링",
+        "permalink": "/whatap-docs/golang/introduction"
     },
     "next": {
         "title": "에이전트 설치",
-        "permalink": "/whatap-docs/cubrid/install-agent"
+        "permalink": "/whatap-docs/golang/install-agent"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: '지원 데이터베이스 종류',
-        id: '지원-데이터베이스-종류',
+        value: 'Go 에이전트 지원 환경',
+        id: 'go-에이전트-지원-환경',
         level: 2
     },
     {
-        value: '데이터베이스 지원 버전',
-        id: '데이터베이스-지원-버전',
-        level: 3
+        value: '공통 지원 환경',
+        id: '공통-지원-환경',
+        level: 2
     },
     {
         value: '브라우저 지원',
         id: '브라우저-지원',
-        level: 2
+        level: 3
     },
     {
         value: '방화벽',
         id: '방화벽',
-        level: 2
+        level: 3
     },
     {
         value: '모바일 앱',
         id: '모바일-앱',
-        level: 2
+        level: 3
     }
 ];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
@@ -408,15 +396,54 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "지원-데이터베이스-종류"
-    }, `지원 데이터베이스 종류`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 데이터베이스 모니터링 서비스(DBX)에서는 성능 분석을 위해 현재 진행 중인 스탯 지표, 세션 데이터를 수집하며 수집된 데이터들을 저장합니다. 특정 기간의 전체적인 추이를 분석하거나 비교해볼 수 있습니다. 또한 특정 시점에 진행 중이었던 세션을 파악하여 느린 Query를 분석할 수 있습니다. 수집된 SQL들을 재 가공하여 SQL들의 통계 데이터 분석이 가능합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `DBX에서는 다음의 데이터베이스들을 지원합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "go-에이전트-지원-환경"
+    }, `Go 에이전트 지원 환경`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `Java 8`), ` 이상 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `지원 버전`), `: 1.17 버전 이상`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `JDK`), `를 설치해야 합니다.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "데이터베이스-지원-버전"
-    }, `데이터베이스 지원 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `CUBRID 9 버전 이상`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `운영체제`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `CentOS/Red Hat 6.x 버전(64bit) 이상 `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Debian/Ubuntu 12.04 버전(64bit) 이상`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Amazon linux (64bit)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Alpine linux (64bit)`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `라이브러리`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `net/http, gin, chi, fiber, gorilla, echo, fasthttp`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `database/sql, gorm, redigo`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `grpc, sarama, k8s.io/client-go`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `프레임워크 또는 라이브러리 적용 방법 및 예제는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "https://github.com/whatap/go-api-example"
+    }, `GitHub 사이트`), `를 참고하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "공통-지원-환경"
+    }, `공통 지원 환경`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "브라우저-지원"
     }, `브라우저 지원`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 서비스는 웹브라우저와 모바일 앱에서 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
         parentName: "table"
@@ -493,7 +520,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, `브라우저 호환성과 성능을 이유로 Chrome 최신 버전 사용을 권장합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `사용자 인터페이스(User Interface, UI)는 HTML5 표준 기술로 구현하여 Internet Explorer는 지원하지 않습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `사용자 인터페이스(User Interface, UI)는 HTML5 표준 기술로 구현하여 Internet Explorer는 지원하지 않습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "방화벽"
     }, `방화벽`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 에이전트는 수집 서버 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
@@ -584,11 +611,11 @@ function MDXContent(_param) {
         img: "proxy.png",
         desc: "Proxy",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "모바일-앱"
     }, `모바일 앱`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모바일 앱은 안드로이드와 iOS 환경을 지원합니다. 다음 링크로 이동하거나 QR 코드를 스캔해 앱을 설치할 수 있습니다. 모바일 앱에 대한 자세한 설명은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://docs.whatpa.io/mobile-app"
+        "href": "https://docs.whatap.io/mobile-app"
     }, `다음 문서`), `를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {

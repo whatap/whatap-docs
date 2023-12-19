@@ -310,8 +310,7 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'mobile-app-v1_0_3',
     title: 'WhaTap Mobile App v1.0.3 (52)',
-    toc_max_heading_level: 2,
-    pagination_next: null
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
@@ -330,13 +329,16 @@ const metadata = {
     "frontMatter": {
         "id": "mobile-app-v1_0_3",
         "title": "WhaTap Mobile App v1.0.3 (52)",
-        "toc_max_heading_level": 2,
-        "pagination_next": null
+        "toc_max_heading_level": 2
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Service 지난 버전",
-        "permalink": "/whatap-docs/release-notes/service/service-previous"
+        "title": "WhaTap Mobile App v1.0.4 (53)",
+        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_4"
+    },
+    "next": {
+        "title": "Java Agent v2.2.24",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_24"
     }
 };
 const assets = {};
@@ -386,13 +388,13 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "th",
         "href": "https://apps.apple.com/us/app/whatap-mobile/id6450067434"
-    }, `iOS`), ` v1.0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("th", {
+    }, `iOS`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("th", {
         parentName: "tr",
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "th",
         "href": "https://play.google.com/store/apps/details?id=io.whatap.lion"
-    }, `Android`), ` v1.0.3`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tbody", {
+    }, `Android`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tbody", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
         parentName: "tbody"
