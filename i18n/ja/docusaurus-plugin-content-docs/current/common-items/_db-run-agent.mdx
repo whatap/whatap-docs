@@ -10,6 +10,12 @@
 ./start.sh
 ```
 
+デーモンのように使用する場合、次のコマンドを実行してください。ただし、**nohup**を設置した環境のみで動作します。
+
+```bash
+./startd.sh
+```
+
 </TabItem>
 <TabItem value="windows" label="Windows">
 
@@ -17,13 +23,23 @@
 start.bat
 ```
 
-</TabItem>
-</Tabs>
-
-デーモンのように使用する場合、次のコマンドを実行してください。ただし、**nohup**を設置した環境のみで動作します。
+Windowsシステムの起動時、自動的にエージェントを起動するようにサービスに登録できます。次のコマンドを参考にしてください。
 
 ```bash
-./startd.sh
+# サービス登録時
+install_WindowsService.bat create WhatapDBXAgent
+
+# サービス削除時
+install_WindowsService.bat delete WhatapDBXAgent
 ```
+
+:::note
+
+**コントロールパネル** > **Windowsツール** > **サービス**(services.msc)で**WhatapDBXAgent** サービスを開始または停止できます。使用するWindowsバージョンによって**サービス**経路は異なる場合があります。
+
+:::
+
+</TabItem>
+</Tabs>
 
 データベースモニタリングのエージェントのインストールが完了しました。[次の文書](after-install-agent)でインストール後、チェックリストを確認してください。

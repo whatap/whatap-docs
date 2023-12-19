@@ -12,7 +12,7 @@ module.exports = function () {
                             projectAccessKey: "x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",
                             pcode: 29856,
                             sampleRate: 100,
-                            ignoreOrigins: [/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i],
+                            ignoreOrigins: [/^.*localhost.*$/i, /^.*ngrok-free.app.*$/i, /^.*whatap.github.io.*$/i],
                           },
                         };
                         a = h.createElement(_a);
@@ -24,7 +24,7 @@ module.exports = function () {
                 },
                 {
                   tagName: 'script',
-                  innerHTML: `let curLang = new Intl.DateTimeFormat().resolvedOptions().locale;
+                  innerHTML: `let curLang = document.documentElement.lang.split('-')[0];console.log(curLang);
                   CRISP_RUNTIME_CONFIG = {locale : curLang};
                   window.$crisp=[];window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
                 },

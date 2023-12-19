@@ -200,13 +200,13 @@ You can see the application information through the agent installed on the appli
 
 The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. <span class='normal'>Blue (Normal)</span> means transactions within the specified response time, <span class='slow'>Orange (Slow)</span> means slow transactions with the response time of around 8 seconds, and <span class='vslow'>Red (Very slow)</span> means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
 
-###### Active Transaction Speed
+##### Active Transaction Speed
 
 ![Active transaction speed](/img/speedmeter.png)
 
 You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
 
-###### Active transactions{#active-trs}
+##### Active transactions{#active-trs}
 
 <ImgLang img='apm-dashboard-active-tx.png' desc='Active transaction' />
 
@@ -238,7 +238,7 @@ The situation where lots of blue colors are represented is not a problem. You mu
 
     :::
 
-###### Active Status{#active-status}
+##### Active Status{#active-status}
 
 <ImgLang img='apm-dashboard-active-status.png' desc='Active status' />
 
@@ -260,7 +260,7 @@ All agents in the project collect the active transaction count every 5 seconds, 
 
 -   **_SOCKET_**: Indicates the TCP connection attempt to an external system. If the **_SOCKET_** number continues to increase, there is a high possibility of failures due to disconnection of the external system.
 
-###### Hitmap
+##### Hitmap
 
 <ImgLang img='hitmap.png' desc='Hitmap' />
 
@@ -294,7 +294,7 @@ The **_HITMAP_** chart represents the distribution of response times of complete
 
 The service-related widget can be used as the metric for application performance tuning.
 
-###### TPS
+##### TPS
 
 ![TPS](/img/apm-dashboard-tps.png)
 
@@ -306,7 +306,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-###### Average Res. Time
+##### Average Res. Time
 
 <ImgLang img='apm-dashboard-avg-response-time.png' desc='Average response time'/>
 
@@ -320,7 +320,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 #### Resource-related widget
 
-###### Container CPU
+##### Container CPU
 
 <ImgLang img='k8s-ap-service-dashboard-cpu.png' desc='Container CPU' />
 
@@ -332,7 +332,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-###### Heap Memory{#heap-memory}
+##### Heap Memory{#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='Heap memory' />
 
@@ -364,7 +364,7 @@ For more information about the heap memory and its chart analysis, see the follo
 
 #### User-related widget
 
-###### Concurrent User
+##### Concurrent User
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='Concurrent User' />
 
@@ -388,13 +388,13 @@ It displays the number of real-time browser users. Every 5 seconds, users who ma
 
 #### Comparison widget on a daily basis
 
-###### Today's TPS
+##### Today's TPS
 
 <ImgLang img="apm-dashboard-today-tps.png" desc="Today's TPS" />
 
 It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily application status_** appears.
 
-###### Today's visits
+##### Today's visits
 
 <ImgLang img="apm-dashboard-today-users.png" desc="Today's Visits" />
 

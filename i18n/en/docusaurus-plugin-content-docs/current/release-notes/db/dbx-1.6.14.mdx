@@ -1,0 +1,32 @@
+---
+id: dbx-1_6_14
+title: DBX v1.6.14
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_13
+---
+
+November 24, 2023
+
+## Common
+
+-   <Status>Changed</Status> Modified the interval of <code>agentinfopack</code> from 12 hours to 1 hour.
+
+-   <Status>Fixed</Status> Modified to send <code>DbSetInfo</code> even upon DB connection failure.
+
+## PostgreSQL
+
+-   <Status>Fixed</Status> Fixed the bug for the table case-sensitive query.
+
+-   <Status>Changed</Status> Changed the <code>pg_wal_count</code> metric collection role for EDB and PostgreSQL to <code>pg_monitor</code> (PostgreSQL 10 or later).
+
+-   <Status>Changed</Status> Deleted the <code>can_estimate</code> column from <Cmdname sid="dbObjectInfo" className="uitext" /> &gt; <span class="uitext">Bloating</span> &gt; <span class="uitext">Table</span>.
+
+## Oracle
+
+-   <Status>Fixed</Status> Fixed the bug where the data other than temp is missing when applying the <code>tablespace_split</code> option.
+
+-   <Status>Fixed</Status> Modified the cumulative value collection when collecting the table space size.
+
+## Tibero
+
+-   <Status>Fixed</Status> Fixed the error where <code>long_run_session_sec=1</code> is fixed when collecting sessions.

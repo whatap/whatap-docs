@@ -84,11 +84,35 @@ The alert occurs when the usage (`${container.mem_percent}`) based on the contai
 
 > The memory usage of `${oname}` container in `${okindName}` is `${container.mem_percent}`% >= 90%.
 
-#### **_HPA CPU utilization notification_**
+#### **_Container DEAD status notification_**
 
-The alert occurs when the number of running Pods is equal to the maximum number of Pods in the resource and the CPU utilization is above 70%. The <Cmdname sid="message" className="uitext" /> example is as follows:
+The corresponding alert occurs when the container status code is `100`. The status code `100` indicates `DEAD`. The example of <Cmdname sid="message" className="uitext" /> is as follows:
 
-> The maximum HPA POD generation has been reached and the CPU usage is >= 70%.
+> Container `${oname}` is in `DEAD` state.
+
+#### **_Cluster CPU request notification_**
+
+The corresponding alert occurs when the available amount of CPU for node allocation divided by the total limit CPU and multiplied by 100 is 80% or more. The example of <Cmdname sid="message" className="uitext" /> is as follows:
+
+> The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.
+
+#### **_Cluster memory request notification_**
+
+The corresponding alert occurs when the available amount of memory for node allocation divided by the total limit memory and multiplied by 100 is 80% or more. The example of <Cmdname sid="message" className="uitext" /> is as follows:
+
+> Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.
+
+#### **_Cluster CPU request notification_**
+
+The corresponding alert occurs when the available amount of CPU for node allocation divided by the total limit CPU and multiplied by 100 is 60% or more. The example of <Cmdname sid="message" className="uitext" /> is as follows:
+
+> The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.
+
+#### **_Cluster memory request notification_**
+
+The corresponding alert occurs when the available amount of memory for node allocation divided by the total limit memory and multiplied by 100 is 60% or more. The example of <Cmdname sid="message" className="uitext" /> is as follows:
+
+> Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.
 
 #### **_Notification of the number of master pods_**
 
@@ -107,6 +131,10 @@ The alert occurs when the node's CPU utilization (`${cpu}`) is 70% or more. The 
 The alert occurs when the node's memory utilization (`${memory_pused}`) is 90% or more. The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > The memory usage of `${oname}` is `${memory_pused}`% >= 90%.
+
+#### **_Unassignable node notification_**
+
+The corresponding alert occurs when the available number of Pods that can be assigned to a node is zero. 
 
 #### **_APDEX_**
 

@@ -3063,7 +3063,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/java-batch-2_2_21',
@@ -3072,7 +3072,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java-batch/java-batch-2_2_21',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java-batch/java-batch-2_2_20',
                 'release-notes/java-batch/java-batch-2_2_19'
@@ -3083,7 +3083,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/php-2_6_3',
@@ -3092,7 +3092,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_6_3',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_6_2',
                 'release-notes/php/php-2_6_1',
@@ -3111,17 +3111,18 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_81',
+                id: 'release-notes/nodejs/nodejs-0_4_83',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_81',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_4_83',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_81',
                 'release-notes/nodejs/nodejs-0_4_80',
                 'release-notes/nodejs/nodejs-0_4_77'
               ]
@@ -3187,7 +3188,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_2_4',
@@ -3196,7 +3197,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_2_4',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_2_3',
                 'release-notes/golang/golang-0_2_2',
@@ -3243,7 +3244,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_4_4',
@@ -3252,7 +3253,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_4_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_4_3',
                 'release-notes/k8s/k8s-1_4_2',
@@ -3274,14 +3275,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_6_14',
+                id: 'release-notes/db/dbx-1_6_15',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_6_14',
+                  id: 'release-notes/db/dbx-1_6_15',
                   className: 'new',
                 },
+                'release-notes/db/dbx-1_6_14',
                 'release-notes/db/dbx-1_6_13',
                 'release-notes/db/dbx-1_6_12',
                 'release-notes/db/dbx-1_6_11',
@@ -5375,6 +5377,106 @@ const sidebars = {
       ]
     }
   ],
+  apmSidebar: [
+    {
+      type: 'category',
+      label: 'Category',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: 'Java',
+          href: '../java/introduction',
+        },
+        {
+          type: 'link',
+          label: 'PHP',
+          href: '../php/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Node.js',
+          href: '../nodejs/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Python',
+          href: '../python/introduction',
+        },
+        {
+          type: 'link',
+          label: '.NET',
+          href: '../dotnet/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Go',
+          href: '../golang/introduction',
+        },
+        {
+          type: 'link',
+          label: 'Kubernetes',
+          href: '../Kubernetes/introduction',
+        }
+      ],
+    }
+  ],
+  dbSidebar: [
+    {
+      type: 'category',
+      label: 'Database',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        {
+          type: 'link',
+          label: 'PostgreSQL',
+          href: '../postgresql/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Oracle',
+          href: '../oracle/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'MySQL',
+          href: '../mysql/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'SQL Server',
+          href: '../mssql/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Tibero',
+          href: '../tibero/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'CUBRID',
+          href: '../cubrid/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Altibase',
+          href: '../altibase/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'Redis',
+          href: '../redis/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'MongoDB',
+          href: '../mongodb/monitoring-intro',
+        }
+      ],
+    }
+  ],
   logSidebar: [
     {
       type: 'category',
@@ -5413,6 +5515,11 @@ const sidebars = {
           type: 'doc',
           label: '로그 파싱하기',
           id: 'log/log-parser',
+        },
+        {
+          type: 'doc',
+          label: '로그 처리하기',
+          id: 'log/log-process',
         },
         {
           type: 'category',

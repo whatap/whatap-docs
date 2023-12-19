@@ -1,0 +1,146 @@
+---
+id: preview-2_0_0x
+title: Preview 2.0.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.0.0.a0
+
+November 29, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="my_usage" />
+
+-   <Status>Changed</Status> Modified to display the promotion banner and not to enter the promotion code even if payment information is not registered.
+
+-   <Status>Feature</Status> Added the function to display the usage details when any usage value is clicked in <Cmdname sid="billingPreview" className="uitext" />.
+
+-   <Status>Fixed</Status> Fix the terms that are not multilingual in <Cmdname sid="quota" className="uitext" />.
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Fixed</Status> In <Cmdname sid="integrated_dashboard" className="uitext" />, fixed the issue where widget tooltips do not disappear.
+
+#### <Cmdname sid="analysis" />
+
+-   <Status>Fixed</Status> In the chart widget's detailed view of the <Cmdname sid="tag_count_chart" className="uitext" /> menu, fixed the issue where the <Cmdname sid="BTN06884" className="uitext" /> button does not work.
+
+-   <Status>Fixed</Status> In <Cmdname sid="tag_count_anomaly_detection" className="uitext" />, fixed the issue where the <Cmdname sid="BTN06884" className="uitext" /> button does not work.
+
+#### <Cmdname sid="reportStat" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="report" className="uitext" />, modified to move to the guide (Docs) link depending on the set language when the <Cmdname sid="guide" className="uitext" /> button is clicked.</p>
+
+#### User Interface
+
+-   <Status>Fixed</Status> Applied all elements on the service screen where dark themes are not applied. Select <LinkImage img="ico-theme.svg" desc="테마 아이콘" /> on the upper right of the service screen, and then click <span class="uitext">Dark</span>.
+
+-   <Status>Changed</Status> Modified the <Cmdname sid="one_on_one_user_training" className="b500" /> text to <Cmdname sid="DSC07202" className="uitext" /> on the chat inquiry screen.
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> Fixed the issue where the content of the widget information tooltip does not appear in the older versions of the <Cmdname sid="app_dashboard" className="uitext" /> menu.
+
+-   <Status>Feature</Status> In the table of the <Cmdname sid="TTL06209" className="uitext" /> window, added the <Cmdname sid="TTL06086" className="uitext" /> column.
+
+-   <Status>Changed</Status> In the <Cmdname sid="dashboard_hitmap" className="uitext" /> widget of <Cmdname sid="app_dashboard" className="uitext" />, added the button that goes to the <Cmdname sid="hitmap_transaction" className="uitext" /> menu.
+
+-   <Status>Feature</Status> Added the tooltips and related information and multilingual support to each widget in <Cmdname sid="app_dashboard" className="uitext" />.
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> In <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="log_setting" className="uitext" />, modified to operate the agent configuration and script executables normally.
+
+-   <Status>Changed</Status> In <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="log_setting" className="uitext" />, modified to display the <code>encoding</code> item for the agent configuration and script executables differently depending on the set language.
+
+-   <Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, added cautions for event occurrence conditions and targets that are related to the metrics event addition and modification.
+
+-   <Status>Fixed</Status> In the Display Detail screen in <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />, modified to display the tooltip if its name is too long when the mouse is hovered over.
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />, added the function to display the preview when hovering the mouse over the query.</p>
+
+#### PosgreSQL <span class="my">V2</span>
+
+-   <Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />, added the guidance modal for the agent configuration.
+
+-   <Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />, added the function guidance modal.
+
+-   <Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />, fixed the issue where the data does not appear.
+
+-   <Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="pg_stat" className="uitext" />, added the query preview when hovering the mouse over the query.
+
+#### MySQL <span class="my">V2</span>
+
+<p><Status>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="TTL06865" className="uitext" />, added the function to display the preview when hovering the mouse over the query.</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> Added the following menus under the <Cmdname sid="TTL06987" className="uitext" /> menu.
+
+    -   <Cmdname sid="podList" className="uitext" />: The Pod list and information details are provided.
+    -   <Cmdname sid="containerizedAppList" className="uitext" />: The list and information details of the containerized applications are provided.
+    -   <Cmdname sid="containerImages" className="uitext" />: The list of images in use is provided.
+
+-   <Status>Feature</Status> Added the <Cmdname sid="correlatedProjectManagement" className="uitext" /> menu under <Cmdname sid="management" className="uitext" />: Registration, view, and deletion of the linked projects.
+
+-   <Status>Feature</Status> If there is any linked project, provided the <Cmdname sid="TTL07046" className="uitext" /> view for the SQL target server and HTTPURLConnection information in <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="table_view" className="uitext" />.
+
+-   <Status>Deprecated</Status> In <Cmdname sid="tag_count_chart" className="uitext" />, deleted the `Container` category of the metrics chart.
+
+-   <Status>Changed</Status> In the summary view under <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, modified to display the container ID with the container name upon query of the current log (Stdout).
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, fixed the title-related bug in the summary view window.
+
+-   <Status>Fixed</Status> In <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />, fixed the issue where the content in the widget does not appear correctly depending on the user device.
+
+-   <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified the link set on the <Cmdname sid="BTN07231" className="uitext" /> button of the metrics event addition window.
+
+-   <Status>Changed</Status> In <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" />, modified the classification and positions of columns.
+
+    -   Moved the **_CapacityCpu_** column from <Cmdname sid="TTL06705" className="uitext" /> to <Cmdname sid="TTL06701" className="uitext" />.
+    -   Moved the **_CapacityMemory_** column from <Cmdname sid="TTL06705" className="uitext" /> to <Cmdname sid="TTL06702" className="uitext" />.
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> In <Cmdname sid="log_search" className="uitext" /> <Cmdname sid="logTail" className="uitext" />, reorganized the log search filtering function.
+
+    -   Added the query syntax guide to support entry of search values.
+    -   Added the function to change the added tags with keyboard inputs.
+    -   Added the function to create and modify tags and to modify operators by clicking.
+
+* * *
+
+### `Cloud`
+
+<p><Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_installation" className="uitext" />, modified to move the link of the <Cmdname sid="price_policy" className="uitext" /> button in the <Cmdname sid="pricing" className="uitext" /> tab according to the set language.</p>
+
+-   Amazon CloudWatch, Azure Monitor, and Oracle Cloud Monitor products
+
+</div>

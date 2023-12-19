@@ -1,0 +1,146 @@
+---
+id: preview-2_0_0x
+title: Preview 2.0.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.0.0.a0
+
+2023年11月29日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="my_usage" />
+
+-   <Status>Changed</Status>決済情報を登録しなくてもプロモーションバナーを表示し、決済情報を登録していない状態でプロモーションコードを入力できないように変更
+
+-   <Status>Feature</Status> <Cmdname sid="billingPreview" className="uitext" />メニューから使用量数値をクリックすると、使用量の詳細情報を表示する機能を追加
+
+-   <Status>Fixed</Status> <Cmdname sid="quota" className="uitext" />メニューで多言語が適用されない用語を修正
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Fixed</Status> <Cmdname sid="integrated_dashboard" className="uitext" />メニューでウィジェットのツールチップが消えない現象を修正
+
+#### <Cmdname sid="analysis" />
+
+-   <Status>Fixed</Status> <Cmdname sid="tag_count_chart" className="uitext" />メニューのチャートウィジェット詳細表示で<Cmdname sid="BTN06884" className="uitext" />ボタンが動作しない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="tag_count_anomaly_detection" className="uitext" />メニューで<Cmdname sid="BTN06884" className="uitext" />ボタンが動作しない問題を修正
+
+#### <Cmdname sid="reportStat" />
+
+<p><Status>Fixed</Status> <Cmdname sid="report" className="uitext" /> 메뉴에서 <Cmdname sid="guide" className="uitext" />ボタンをクリックする時に、設定された言語に合わせてガイド(Docs) リンクに移動するように修正</p>
+
+#### User Interface
+
+-   <Status>Fixed</Status>サービス画面でダークテーマが適用されていないすべての要素に適用完了しました。 ダークテーマを適用するには、サービス画面の右上の<LinkImage img="ico-theme.svg" desc="테마 아이콘" />ボタンを選択した後<span class="uitext">Dark</span>をクリックしてください。
+
+-   <Status>Changed</Status>チャットのお問い合わせ画面で<Cmdname sid="one_on_one_user_training" className="b500" />テキストを<Cmdname sid="DSC07202" className="uitext" />に変更
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status>旧バージョンの<Cmdname sid="app_dashboard" className="uitext" />メニューでウィジェット情報ツールチップのコンテンツが出力されない問題を修正
+
+-   <Status>Feature</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウのテーブルに<Cmdname sid="TTL06086" className="uitext" />カラムを追加
+
+-   <Status>Changed</Status> <Cmdname sid="app_dashboard" className="uitext" />メニューの<Cmdname sid="dashboard_hitmap" className="uitext" />ウィジェットに<Cmdname sid="hitmap_transaction" className="uitext" />メニューに移動するボタンを追加
+
+-   <Status>Feature</Status> <Cmdname sid="app_dashboard" className="uitext" />メニューの各ウィジェットにツールチップや関連情報、多言語対応を追加
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="log_setting" className="uitext" />メニューでエージェント設定と実行スクリプトの内容を正常に動作させるように修正
+
+-   <Status>Changed</Status> <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="log_setting" className="uitext" />メニューでエージェント設定と実行スクリプトの<code>encoding</code>項目を設定された言語によって異なる表示にするように修正
+
+-   <Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベントの追加、修正時のイベント発生条件および対象設定関連の注意文を追加
+
+-   <Status>Fixed</Status> <Cmdname sid="sms_server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />メニューの詳細表示画面で名前が長くて省略(...) 処理された場合、マウスオーバー時にツールチップが表示されるように修正
+
+* * *
+
+### `Database`
+
+#### 共通
+
+<p><Status>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />メニューでクエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</p>
+
+#### PosgreSQL <span class="my">V2</span>
+
+-   <Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />メニューでエージェント設定方法の案内モーダルを追加
+
+-   <Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />メニューで機能紹介モーダルを追加
+
+-   <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="TTL06993" className="uitext" />メニューでデータが出力されない問題を修正
+
+-   <Status>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="pg_stat" className="uitext" />メニューでクエリ(query)にマウスオーバー時のクエリプレビュー機能を追加
+
+#### MySQL <span class="my">V2</span>
+
+<p><Status>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="TTL06865" className="uitext" />メニューでクエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> <Cmdname sid="TTL06987" className="uitext" />メニュー下位に次のメニューを追加
+
+    -   <Cmdname sid="podList" className="uitext" />: Pod一覧及び詳細情報を提供
+    -   <Cmdname sid="containerizedAppList" className="uitext" />: コンテナ化されたアプリケーションの一覧と詳細情報を提供
+    -   <Cmdname sid="containerImages" className="uitext" />: 使用中の画像一覧を提供
+
+-   <Status>Feature</Status> <Cmdname sid="management" className="uitext" />メニュー下位に <Cmdname sid="correlatedProjectManagement" className="uitext" />メニューを追加：連携プロジェクトの登録、照会、削除機能
+
+-   <Status>Feature</Status>連携登録されたプロジェクトがある場合は<Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="table_view" className="uitext" />でSQL対象サーバ情報およびHTTPURL Connection情報について<Cmdname sid="TTL07046" className="uitext" />ビューを提供
+
+-   <Status>Deprecated</Status> <Cmdname sid="tag_count_chart" className="uitext" />メニューでメトリクスチャート'コンテナ'カテゴリを削除
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューの要約表示画面で現在のログ(Stdout) 照会時にコンテナidをコンテナ名で表示するように変更
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューで要約表示ウィンドウのタイトルバグを修正
+
+-   <Status>Fixed</Status> <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />メニューでユーザーの機器によってウィジェット内のコンテンツが正しく表示されない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューからメトリクスイベント追加ウィンドウの<Cmdname sid="BTN07231" className="uitext" />ボタンに設定されたリンクを修正
+
+-   <Status>Changed</Status> <Cmdname sid="TTL06987" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" />メニューでカラム分類及び位置を変更
+
+    -   **_CapacityCpu_**カラムを<Cmdname sid="TTL06705" className="uitext" />で<Cmdname sid="TTL06701" className="uitext" />下位に移動
+    -   **_CapacityMemory_**カラムを<Cmdname sid="TTL06705" className="uitext" />で<Cmdname sid="TTL06702" className="uitext" />下位に移動
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> <Cmdname sid="log_search" className="uitext" />, <Cmdname sid="logTail" className="uitext" />メニューでログ検索フィルター機能を改善
+
+    -   検索値入力時にサポートする検索文法の案内ガイド機能を追加
+    -   追加されたタグの修正時にキーボード入力で修正できる機能を追加
+    -   タグをキーボード入力で作成および修正できるようにし、演算子をクリックして修正できる機能を追加
+
+* * *
+
+### `Cloud`
+
+<p><Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_installation" className="uitext" />メニューで<Cmdname sid="pricing" className="uitext" />タブの<Cmdname sid="price_policy" className="uitext" />ボタンのリンクを設定された言語に合わせて移動するように修正</p>
+
+-   Amazon CloudWatch、Azure Monitor、Oracle Cloud Monitorサービス向け
+
+</div>

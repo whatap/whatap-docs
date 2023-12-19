@@ -101,6 +101,12 @@ Install the **WhatTap Forwarder** for log transmission by using the AWS Lambda f
 
     <!-- You can use the function as many as (number of functions that can be allocated for each AWS account - `ReservedConcurrency` setting). -->
 
+-   **cloudfrontPrefix** <span class='type'>String</span>
+
+    Default `cloudfront`
+
+    It indicates the prefix value set when sending logs from CloudFront to S3.
+
 ### Installing the CloudFormation stack
 
 <ImgLang img='aws-log-whatap-forwarder-install.png' desc='WhaTap Forwarder'/>

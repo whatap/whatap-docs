@@ -4,18 +4,21 @@ title: Amazon ECS Agent release notes
 toc_max_heading_level: 2
 ---
 
-import Status from '@site/src/components/Highlight';
-import UI from '@site/src/components/UItext';
+## Amazon ECS Agent v1.2.5
+
+2023-11-23
+
+<Status>Fixed</Status> Fixed the issue where 0 is collected due to a code error when collecting the task network performance including Network Read Byte and Network Transmit Byte.
 
 ## Amazon ECS Agent v1.2.4
 
-Release date: 2023-03-02
+2023-03-02
 
 <Status>Fixed</Status> A performance measurement error occurred due to non-compliance with API specifications that require 10 Amazon ECS service queries at a time. The code was fixed to search repeatedly in units of 10.
 
 ## Amazon ECS Agent v1.2.1
 
-Release date: 2022-12-11
+2022-12-11
 
 ### Fixing the problem where the task goes down when the collection server is disconnected due to code error
 

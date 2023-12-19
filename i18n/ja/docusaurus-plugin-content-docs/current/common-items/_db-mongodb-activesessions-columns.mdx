@@ -1,0 +1,17 @@
+## カラム情報ガイド
+
+次は、<Cmdname sid="active_sessions" className="uitext" />セクションのテーブルに表示されるカラム情報です。 `currentOp`コマンドで収集されたデータです。
+
+| 項目                      | 説明                                                                            |
+| ----------------------- | ----------------------------------------------------------------------------- |
+| `opid`                  | operationの固有識別子(identifier)                                                   |
+| `type`                  | 値が`op`の場合`op`フィールドで作業タイプを確認可能                                                 |
+| `host`                  | サーバー名                                                                         |
+| `desc`                  | `connectionId`を含むクライアント説明                                                     |
+| `active`                | 作業が始まる場合は`true`、idleの場合は`false`                                               |
+| `currentOpTime`         | operationの開始時間                                                                |
+| `op`                    | operationタイプ(`none`、`update`、`insert`、`query`、`command`、`getmore`、`remove`など) |
+| `ns`                    | ネームスペース名で`Database`.`Collection`で表示                                           |
+| `numYields`             | 作業が行われた数                                                                      |
+| `waitingForLock`        | ロック(lock)を待機している場合は`true`、ロック(lock)を取得した場合は`false`                            |
+| `waitingForFlowControl` | `flowcontrol`を待機している場合は`true`                                                 |
