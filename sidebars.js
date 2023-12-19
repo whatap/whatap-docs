@@ -3032,7 +3032,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'WhaTap Mobile app',
+          label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
           className: 'new',
