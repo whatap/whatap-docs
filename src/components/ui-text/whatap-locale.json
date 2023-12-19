@@ -29680,7 +29680,7 @@
     "service_id": "TTL04315"
   },
   "master_alert_template_4_detail": {
-    "en": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
+    "en": "CPU request(minimum resource requirement) is greater than or equal to 80% of the cluster CPU quota.",
     "ja": "クラスタCPUの割り当て量に比べ、CPU Request（最小リクエストリソース）が80％を超えました。",
     "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 80% 이상입니다.",
     "zh": "The CPU request (minimum required resource) is more than 80% of the cluster CPU allocation.",
@@ -29694,7 +29694,7 @@
     "service_id": "TTL04317"
   },
   "master_alert_template_5_detail": {
-    "en": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
+    "en": "Memory request(minimum resource requirement) is greater than or equal to 80% of the cluster memory quota.",
     "ja": "クラスタMemoryの割り当て量に比べ、Memory Request（最小リクエストリソース）が 80% 以上です。",
     "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 80% 이상입니다.",
     "zh": "Memory Request (minimum required resource) is more than 80% of the cluster memory allocation.",
@@ -29708,7 +29708,7 @@
     "service_id": "TTL04319"
   },
   "master_alert_template_6_detail": {
-    "en": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
+    "en": "CPU request(minimum resource requirement) is greater than or equal to 60% of the cluster CPU quota.",
     "ja": "クラスタCPUの割り当て量に比べ、CPU Request（最小リクエストリソース）が60%を超えました。",
     "ko": "클러스터 CPU 할당량 대비 CPU Request(최소 요구자원)가 60% 이상입니다.",
     "zh": "The CPU request (minimum required resource) is more than 60% of the cluster CPU allocation.",
@@ -29722,7 +29722,7 @@
     "service_id": "TTL04321"
   },
   "master_alert_template_7_detail": {
-    "en": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
+    "en": "Memory request(minimum resource requirement) is greater than or equal to 60% of the cluster memory quota.",
     "ja": "クラスタMemoryの割り当て量に比べ、Memory Request（最小リクエストリソース）が 60% 以上です。",
     "ko": "클러스터 Memory 할당량 대비 Memory Request(최소 요구자원)가 60% 이상입니다.",
     "zh": "Memory Request (minimum required resource) is more than 60% of the cluster memory allocation.",
@@ -43022,14 +43022,14 @@
     "service_id": "DSC06237"
   },
   "DSC06238": {
-    "en": "Metrics notifications, only composite metrics notifications are synchronized.",
+    "en": "Only metrics notifications and composite metrics notifications are synchronized.",
     "ja": "メトリックス通知、複合メトリックス通知のみが同期されます。",
     "ko": "매트릭스 알림, 복합 매트릭스알림 만 동기화 됩니다.",
     "zh": "Metrics notifications, only composite metrics notifications are synchronized.",
     "service_id": "DSC06238"
   },
   "DSC06239": {
-    "en": "It may take a long time if you have a lot of projects.",
+    "en": "This can take a long time if there are multiple projects.",
     "ja": "プロジェクトが多い場合は時間がかかることがあります。",
     "ko": "프로젝트가 많을 경우 시간이 오래 걸릴수 있습니다.",
     "zh": "It may take a long time if you have a lot of projects.",
@@ -43064,14 +43064,14 @@
     "service_id": "DSC06243"
   },
   "DSC06244": {
-    "en": "Select the session to stop.",
+    "en": "Select a session to stop.",
     "ja": "中止するセッションを選択してください。",
     "ko": "중지시킬 세션을 선택하세요.",
     "zh": "Select the session to stop.",
     "service_id": "DSC06244"
   },
   "DSC06245": {
-    "en": "You have selected {count} active sessions. Would you like to stop it?",
+    "en": "You have selected {count} active sessions, do you want to stop them?",
     "ja": "{count}件のアクティブセッションを選択しました。 中止しますか？",
     "ko": "{count}개의 액티브 세션을 선택했습니다. 중지시키겠습니까?",
     "zh": "You have selected {count} active sessions. Would you like to stop it?",
@@ -43085,21 +43085,21 @@
     "service_id": "TTL06246"
   },
   "TTL06247": {
-    "en": "Total core usage",
+    "en": "Total core count",
     "ja": "合計コア数",
     "ko": "전체 코어 수",
     "zh": "\bTotal Core Count",
     "service_id": "TTL06247"
   },
   "TTL06248": {
-    "en": "Average core usage per hour",
+    "en": "Average core count",
     "ja": "\n1 時間当たりの平均コア数",
     "ko": "평균 코어 수",
     "zh": "Average Core Usage Per Hour",
     "service_id": "TTL06248"
   },
   "TTL06249": {
-    "en": "Total host usage",
+    "en": "Total host",
     "ja": "全体のホスト",
     "ko": "전체 호스트",
     "zh": "Total Host Usage",
@@ -43113,7 +43113,7 @@
     "service_id": "TTL06250"
   },
   "TTL06251": {
-    "en": "Total hour",
+    "en": "Total hours",
     "ja": "総時間",
     "ko": "전체 시간",
     "zh": "Total Hour",
@@ -43211,7 +43211,7 @@
     "service_id": "TTL06266"
   },
   "DSC06267": {
-    "en": "<span>Log search performance can be significantly degraded when collecting large volumes of logs.<br>Creating an index of frequently used search improves log search performance, allowing for faster searching.<br><span style='font-weight:bold;'>Click the Add button to set up your index.</span></span>",
+    "en": "<span>Log search performance can be significantly degraded when collecting large volumes of logs.<br>Creating an index of frequently used search terms improves log search performance, allowing for faster searching.<br><span style='font-weight:bold;'>Click the Add button to set up your index.</span></span>",
     "ja": "<span>大量のログを収集すると、ログ検索のパフォーマンスが著しく低下することがあります。<br>よく使う検索のインデックスを作成することで、ログ検索のパフォーマンスを向上させ、より高速な検索を可能にします。<br> 上段の「追加する」ボタンをクリックして、インデックスを設定します。</span>",
     "ko": "<span>대량의 로그를 수집할 경우 로그 검색 성능이 현저하게 저하될 수 있습니다.<br> 자주 사용하는 검색 조건을 인덱스(index)로 생성하면 로그 검색 성능을 개선해 빠른 탐색이 가능합니다.<br>상단의<span style='font-weight:bold;'>추가하기 버튼을 눌러 인덱스를 설정</span>해보세요.</span>",
     "zh": "<span>Log search performance can be significantly degraded when collecting large volumes of logs.<br>Creating an index of frequently used search improves log search performance, allowing for faster searching.<br><span style='font-weight:bold;'>Click the Add button to set up your index.</span></span>",
@@ -43610,21 +43610,21 @@
     "service_id": "ITM06324"
   },
   "BTN06325": {
-    "en": "Single Line",
+    "en": "View Summary",
     "ja": "一つの線",
     "ko": "요약 보기",
     "zh": "Single line",
     "service_id": "BTN06325"
   },
   "BTN06326": {
-    "en": "Multi Line",
+    "en": "Expanded view",
     "ja": "複数の線",
     "ko": "펼쳐 보기",
     "zh": "Multi line",
     "service_id": "BTN06326"
   },
   "BTN06327": {
-    "en": "Longest Route",
+    "en": "Longest Path",
     "ja": "最長経路",
     "ko": "최장 경로",
     "zh": "Longest route",
@@ -49833,35 +49833,35 @@
     "service_id": "CNT07235"
   },
   "NTC07236": {
-    "en": "Your temporary license has expired.",
+    "en": "Temporary license has expired.",
     "ja": "臨時のライセンスが満了しました。",
     "ko": "임시 라이선스가 만료되었습니다.",
     "zh": "Your temporary license has expired.",
     "service_id": "NTC07236"
   },
   "TTL07237": {
-    "en": "Resource relationships",
+    "en": "Resource relations",
     "ja": "リソース関係",
     "ko": "리소스 관계",
     "zh": "Resource relationships",
     "service_id": "TTL07237"
   },
   "DSC07238": {
-    "en": "There is no Pod state information that matches the condition.",
+    "en": "There is no Pod status that matches the condition.",
     "ja": "条件に合ったPod状態情報がありません。",
     "ko": "조건에 맞는 Pod 상태 정보가 없습니다.",
     "zh": "There is no Pod state information that matches the condition.",
     "service_id": "DSC07238"
   },
   "DSC07239": {
-    "en": "There is no Pod state information.",
+    "en": "Pod status not available.",
     "ja": "Pod状態情報がありません。",
     "ko": "Pod 상태 정보가 없습니다.",
     "zh": "There is no Pod state information.",
     "service_id": "DSC07239"
   },
   "BTN07240": {
-    "en": "Federated authentication",
+    "en": "Authentication integration",
     "ja": "認証連動",
     "ko": "인증 연동",
     "zh": "Federated authentication",
@@ -49903,14 +49903,14 @@
     "service_id": "DSC07245"
   },
   "TLT07246": {
-    "en": "Pod details View",
+    "en": "View pods in detail",
     "ja": "Podの詳細を表示します。",
     "ko": "파드 상세 보기",
     "zh": "Pod details View",
     "service_id": "TLT07246"
   },
   "TLT07247": {
-    "en": "Container details view",
+    "en": "View containers in detail",
     "ja": "コンテナの詳細を表示します。",
     "ko": "컨테이너 상세 보기",
     "zh": "Container details view",
@@ -50197,7 +50197,7 @@
     "service_id": "BTN07287"
   },
   "CNT07288": {
-    "en": "Verification code check failed.",
+    "en": "Code verification has failed.",
     "ja": "検証コードのチェックに失敗しました。",
     "ko": "검증 코드 확인에 실패 하였습니다.",
     "zh": "Verification code check failed.",
@@ -50211,7 +50211,7 @@
     "service_id": "DSC07289"
   },
   "TTL07290": {
-    "en": "Reasons for license expiration",
+    "en": "Reason for license expiration",
     "ja": "ライセンス失効の理由",
     "ko": "라이선스 만료 이유",
     "zh": "Reasons for license expiration",
@@ -50337,14 +50337,14 @@
     "service_id": "DSC07307"
   },
   "NTC07308": {
-    "en": "Near Expiration",
+    "en": "Near to expiry",
     "ja": "まもなく期限が切れます。",
     "ko": "만료 임박",
     "zh": "Near Expiration",
     "service_id": "NTC07308"
   },
   "NTC07309": {
-    "en": "{product} license is scheduled to expire on {date}.",
+    "en": "{product} license is going to expire on {date}.",
     "ja": "{product} ライセンス期限が{date}に満了します。",
     "ko": "{product} 라이선스가 {date}에 만료 예정입니다.",
     "zh": "{product} license is scheduled to expire on {date}.",
@@ -50547,17 +50547,17 @@
     "service_id": "BTN07337"
   },
   "DSC07338": {
-    "en": "An account with an AWS Marketplace subscription set up. Check the AWS Marketplace subscription information for your AWS account ID.",
-    "ja": "AWS Marketplace サブスクリプションが設定されたアカウントです。 AWSアカウントIDのAWS Marketplaceサブスクリプション情報を確認してください。",
-    "ko": "AWS Marketplace 구독이 설정된 계정입니다. AWS 계정 ID의 AWS Marketplace 구독 정보를 확인하세요.",
-    "zh": "An account with an AWS Marketplace subscription set up. Check the AWS Marketplace subscription information for your AWS account ID.",
+    "en": "An account with an AWS Marketplace subscription set up.{br}Check the AWS Marketplace subscription information for your AWS account ID.{br}",
+    "ja": "AWS Marketplace サブスクリプションが設定されたアカウントです。{br}AWSアカウントIDのAWS Marketplaceサブスクリプション情報を確認してください。{br}",
+    "ko": "AWS Marketplace 구독이 설정된 계정입니다.{br}AWS 계정 ID의 AWS Marketplace 구독 정보를 확인하세요.{br}",
+    "zh": "An account with an AWS Marketplace subscription set up.{br}Check the AWS Marketplace subscription information for your AWS account ID.{br}",
     "service_id": "DSC07338"
   },
   "DSC07339": {
-    "en": "An account with an AWS Marketplace subscription set up. However, I don't have any AWS account ID information. Please check the AWS Marketplace subscription information for your AWS account ID and contact your administrator if there are any problems.",
-    "ja": "AWS Marketplace サブスクリプションが設定されたアカウントです。ただし、AWSアカウントID情報はありません。 AWS アカウント ID の AWS Marketplace サブスクリプション情報を確認し、異常がある場合は管理者にお問い合わせください。",
-    "ko": "AWS Marketplace 구독이 설정된 계정입니다. 하지만 AWS 계정 ID 정보가 없습니다. AWS 계정 ID의 AWS Marketplace 구독 정보를 확인해보시고 이상이 있다면 관리자에게 문의해주세요.",
-    "zh": "An account with an AWS Marketplace subscription set up. However, I don't have any AWS account ID information. Please check the AWS Marketplace subscription information for your AWS account ID and contact your administrator if there are any problems.",
+    "en": "An account with an AWS Marketplace subscription set up.{br}However, I don't have any AWS account ID information.{br}Please check the AWS Marketplace subscription information for your AWS account ID and contact your administrator if there are any problems.",
+    "ja": "AWS Marketplace サブスクリプションが設定されたアカウントです。{br}ただし、AWSアカウントID情報はありません。{br}AWS アカウント ID の AWS Marketplace サブスクリプション情報を確認し、異常がある場合は管理者にお問い合わせください。",
+    "ko": "AWS Marketplace 구독이 설정된 계정입니다.{br}하지만 AWS 계정 ID 정보가 없습니다.{br}AWS 계정 ID의 AWS Marketplace 구독 정보를 확인해보시고 이상이 있다면 관리자에게 문의해주세요.",
+    "zh": "An account with an AWS Marketplace subscription set up.{br}However, I don't have any AWS account ID information. {br}Please check the AWS Marketplace subscription information for your AWS account ID and contact your administrator if there are any problems.",
     "service_id": "DSC07339"
   },
   "NTC07340": {
@@ -50568,7 +50568,7 @@
     "service_id": "NTC07340"
   },
   "NTC07341": {
-    "en": "You are subscribed.",
+    "en": "Thank you for subscribing.",
     "ja": "購読されました。",
     "ko": "구독되었습니다.",
     "zh": "You are subscribed.",
@@ -50582,7 +50582,7 @@
     "service_id": "NTC07342"
   },
   "DSC07343": {
-    "en": "Do you want to unsubscribe?{br}If you cancel, any data we hold about you will be deleted.{br}Please enter {unsubscribe} below to continue.",
+    "en": "Would you like to unsubscribe?{br}Once unsubscribed, all the data will be deleted.{br}To continue, please enter {unsubscribe} below.",
     "ja": "購読をキャンセルしますか？{br}キャンセルすると、あなたが保持しているデータが削除されます。{br}続行するには、下記に{unsubscribe}と入力してください。",
     "ko": "구독 취소 하시겠습니까?{br}취소 시, 고객님이 보유한 데이터가 삭제됩니다.{br}계속 진행하려면 아래에 {unsubscribe}를 입력하십시오.",
     "zh": "Do you want to unsubscribe?{br}If you cancel, any data we hold about you will be deleted.{br}Please enter {unsubscribe} below to continue.",
@@ -50594,6 +50594,193 @@
     "ko": "사용량은 UTC 기준으로 집계됩니다.",
     "zh": "Usage is calculated based on UTC.",
     "service_id": "DSC07344"
+  },
+  "ITM07345": {
+    "en": "Include agent selection history",
+    "ja": "エージェント選択履歴を含む",
+    "ko": "에이전트 선택 내역 포함",
+    "zh": "Include agent selection history",
+    "service_id": "ITM07345"
+  },
+  "DSC07346": {
+    "en": "<b>Starting from {date}</b>, the existing V1 dashboard will be retired and moved to the <b>{platform} V2 version with enhanced charting and collection features, requiring an agent update.</b>",
+    "ja": "<b> {date}から</b>既存のV1ダッシュボードが破棄され、チャートと収集機能が強化された<b> {platform} V2バージョンに移行し、エージェントの更新が必要です。</b>",
+    "ko": "<b>{date}부터</b> 기존 V1 대시보드가 폐기되고 차트 및 수집 기능을 강화한 <b>{platform} V2 버전으로 전환되어 에이전트 업데이트가 필요합니다.</b>",
+    "zh": "<b>Starting from {date}</b>, the existing V1 dashboard will be retired and moved to the <b>{platform} V2 version with enhanced charting and collection features, requiring an agent update.</b>",
+    "service_id": "DSC07346"
+  },
+  "DSC07347": {
+    "en": "<b>{platform} V1 feature support has ended, so some data may not be viewed. Please proceed with agent update.</b>",
+    "ja": "<b> {platform} V1 機能サポートが終了し、一部のデータが検索されない場合があります。 エージェントの更新を進めてください。</b>",
+    "ko": "<b>{platform} V1 기능 지원이 종료되어 일부 데이터가 조회되지 않을 수 있습니다. 에이전트 업데이트를 진행해주세요.</b>",
+    "zh": "<b>{platform} V1 feature support has ended, so some data may not be viewed. Please proceed with agent update.</b>",
+    "service_id": "DSC07347"
+  },
+  "CNT07348": {
+    "en": "{count} times",
+    "ja": "{count}回",
+    "ko": "{count}회",
+    "zh": "{count} times",
+    "service_id": "CNT07348"
+  },
+  "CNT07349": {
+    "en": "{count} time",
+    "ja": "{count}回",
+    "ko": "{count}회",
+    "zh": "{count} time",
+    "service_id": "CNT07349"
+  },
+  "CNT07350": {
+    "en": "{minute} minute",
+    "ja": "{minute}分",
+    "ko": "{minute}분",
+    "zh": "{minute} minute",
+    "service_id": "CNT07350"
+  },
+  "CNT07351": {
+    "en": "{minute} minutes",
+    "ja": "{minute}分",
+    "ko": "{minute}분",
+    "zh": "{minute} minutes",
+    "service_id": "CNT07351"
+  },
+  "CNT07352": {
+    "en": "{hour} hour",
+    "ja": "{hour}時間",
+    "ko": "{hour}시간",
+    "zh": "{hour} hour",
+    "service_id": "CNT07352"
+  },
+  "CNT07353": {
+    "en": "{hour} hours",
+    "ja": "{hour}時間",
+    "ko": "{hour}시간",
+    "zh": "{hour} hours",
+    "service_id": "CNT07353"
+  },
+  "CNT07354": {
+    "en": "All",
+    "ja": "全体",
+    "ko": "전체",
+    "zh": "All",
+    "service_id": "CNT07354"
+  },
+  "CNT07355": {
+    "en": "Part",
+    "ja": "部分",
+    "ko": "부분",
+    "zh": "Part",
+    "service_id": "CNT07355"
+  },
+  "NTC07356": {
+    "en": "Payment authorization for AWS Marketplace accounts are not transferable.",
+    "ja": "AWS Marketplaceアカウントは支払い権限を譲渡できません。",
+    "ko": "AWS Marketplace 계정은 결제 권한을 양도할 수 없습니다.",
+    "zh": "AWS Marketplace accounts cannot transfer billing privileges.",
+    "service_id": "NTC07356"
+  },
+  "TLT07357": {
+    "en": "It needs to be applied before saving.",
+    "ja": "保存する前に適用が必要です。",
+    "ko": "저장하기 전에 적용이 필요합니다.",
+    "zh": "Apply is required before saving.",
+    "service_id": "TLT07357"
+  },
+  "TTL07358": {
+    "en": "Decimals",
+    "ja": "小数点以下の桁数",
+    "ko": "소수 자릿수",
+    "zh": "Decimal places",
+    "service_id": "TTL07358"
+  },
+  "BTN07359": {
+    "en": "Organization",
+    "ja": "組織",
+    "ko": "조직",
+    "zh": "Organization",
+    "service_id": "BTN07359"
+  },
+  "MNU07360": {
+    "en": "Manage Accounts",
+    "ja": "アカウント管理",
+    "ko": "계정 관리",
+    "zh": "Manage Accounts",
+    "service_id": "MNU07360"
+  },
+  "MNU07361": {
+    "en": "Usage",
+    "ja": "利用状況",
+    "ko": "이용 내역",
+    "zh": "My Usage",
+    "service_id": "MNU07361"
+  },
+  "TTL07362": {
+    "en": "Define event condition",
+    "ja": "イベント条件の定義",
+    "ko": "이벤트 조건 정의",
+    "zh": "Define Event Condition",
+    "service_id": "TTL07362"
+  },
+  "TTL07363": {
+    "en": "Select event target",
+    "ja": "イベント対象の選択",
+    "ko": "이벤트 대상 선택",
+    "zh": "Select Event Target",
+    "service_id": "TTL07363"
+  },
+  "TTL07364": {
+    "en": "Basic information and notification setting",
+    "ja": "基本情報と通知設定",
+    "ko": "기본 정보 및 수신 설정",
+    "zh": "Basic information and Notification setting",
+    "service_id": "TTL07364"
+  },
+  "TTL07365": {
+    "en": "Indicator settings\n",
+    "ja": "指標設定\n",
+    "ko": "지표 설정",
+    "zh": "Indicator settings\n",
+    "service_id": "TTL07365"
+  },
+  "TTL07366": {
+    "en": "Consecutive",
+    "ja": "連続した",
+    "ko": "연속",
+    "zh": "Consecutive",
+    "service_id": "TTL07366"
+  },
+  "TTL07367": {
+    "en": "Pause",
+    "ja": "一時停止\n",
+    "ko": "일시 중지",
+    "zh": "pause",
+    "service_id": "TTL07367"
+  },
+  "TTL07368": {
+    "en": "Resolved notifications",
+    "ja": "解決された通知\n",
+    "ko": "해결된 알림",
+    "zh": "Resolved Notifications",
+    "service_id": "TTL07368"
+  },
+  "ITM07369": {
+    "en": "Not used",
+    "ja": "無効",
+    "ko": "사용 안함",
+    "zh": "Not used",
+    "service_id": "ITM07369"
+  },
+  "ITM07370": {
+    "en": "Occurrences (occurs up to N times per minute)",
+    "ja": "回発生（1分に最大N回発生）",
+    "ko": "회 발생 (1분에 최대 N회 발생)",
+    "zh": "Occurrences (occurs up to N times per minute)",
+    "service_id": "ITM07370"
+  },
+  "DSC07371": {
+    "": "",
+    "ko": "Critical과 Warning 레벨의 이벤트가 해결되면 <span style='color: {color};'>RECOVERED 상태의 알림을 수신</span>합니다.",
+    "service_id": "DSC07371"
   },
   "": {
     "": "",
