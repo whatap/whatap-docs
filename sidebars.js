@@ -3032,6 +3032,21 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'WhaTap Mobile app',
+          collapsible: true,
+          collapsed: true,
+          className: 'new',
+          items: [
+            {
+              type: 'doc',
+              label: 'v1.0.3 (52)',
+              id: 'release-notes/mobile/mobile-app-v1_0_3',
+              className: 'new',
+            }
+          ],
+        },
+        {
+          type: 'category',
           label: '에이전트',
           collapsible: true,
           collapsed: false,
