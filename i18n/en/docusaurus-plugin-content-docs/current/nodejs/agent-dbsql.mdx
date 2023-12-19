@@ -41,3 +41,15 @@ The following provides the options related to the Node.js agent DB and SQL.
     ```ini title='Example'
     hook_connection_open_patterns=mypool.ConPool.getConnection
     ```
+
+-   **trace_sql_error_stack** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    SQL errors are stored as stacks (MySQL, MariaDB, PostgreSQL, SQL Server).
+
+-   **trace_sql_error_depth** <span class='type'>Int</span>
+
+    Default `50`
+
+    Set the number of lines of errors to be stored when applying the `trace_sql_error_stack` option.

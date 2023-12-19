@@ -1,0 +1,83 @@
+---
+id: log-process
+title: Based on the log timestamp
+description: It describes the reference time of the log timestamp.
+tags:
+  - Log Monitoring
+  - Log handling
+  - Log time stamp
+---
+
+This document provides information on the reference time of the log **_time stamp_** in the **processing** stage of the log monitoring process.
+
+## Changing the reference time of the timestamp
+
+![Change of the log timestamp's reference time](/img/log-timestamp.png)
+
+The reference time of the log **_time stamp_** has been changed from **WhaTap agent's collection time** to **WhaTap collection server's log handling time**.
+
+Under normal circumstances, you can search logs the same as before without much difference. After the change, the log monitoring can be used consistently without modification even in the following cases:
+
+-   When using NTP, the server time of the monitoring target is set to a time earlier or later than the standard time.
+
+-   Without using NTP, the server times in multiple monitoring targets are different.
+
+## Details of the changes
+
+### Setting the search range of the time selector
+
+By a change of the timestamp's reference time, the time selector also operates based on the **WhaTap collection server time**. As a result, there may be a difference between **agent collection time** and **WhaTap collection server time**, resulting in the logs that are not included in the search range. In this case, searching is possible by specifying the search range wider.
+
+### Log Trend
+
+The X axis of the **_Log trend_** chart displays at least 1-minute increments. Even if the log reference time has been changed, it does not affect the overall trend of the chart.
+
+### Log Search
+
+The `agenttime` index has been added that indicates the log creation time in the log message. Check the agent collection time through the `agenttime` value.
+
+:::note 
+
+**WhaTap collection server time** that follows the UTC time zone, is converted according to the user's browser time for display.
+
+> For example, the UTC+9 time appears in Korea. 
+
+:::
+
+## Reference time for each step
+
+Logs are collected through the following 3 steps: Different reference times may be used for each step. 
+
+1.  **Log creation time**
+
+  Deviations may occur depending on the time or logging policy of the monitoring target. 
+
+1.  **Agent collection time** 
+
+  Deviations may occur depending on how the product or agent in use collects logs and which logs are generated. 
+
+```
+* **Application**
+
+  설정에 따라 로그 라이브러리 또는 로그 파일에서 실시간에 가깝게 로그를 수집합니다.
+
+:::note 
+
+로그 라이브러리는 Java 상품의 경우만 지원합니다. 
+
+:::
+
+* **Server** 
+
+  로그 파일에서 실시간에 가깝게 로그를 수집합니다. 
+
+* **AWS Log**
+
+  AWS Resource 정책에 따라 준 실시간 또는 수 분마다 로그를 수집합니다. 
+```
+
+1.  **WhaTap collection server time**
+
+  Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
+
+There is a big difference between **WhaTap agent collection time** and **WhaTap collection server time**. Check the server time of the monitoring target. If the monitored server time is set to a time earlier or later than the server time, this affects the agent collection time.

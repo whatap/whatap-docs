@@ -10,7 +10,7 @@ tags:
   - Kubernetes Monitoring
 ---
 
-Home > Select Project > **_Dashboard_** > **_Application Service Dashboard_** 
+Home > Select Project > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" /> 
 
 It is a dashboard that allows you to see the status of applications running inside the container in real time. For normal data output of each widget, the node agent must have been installed in the Kubernetes environment, and the WhaTap agent must also have been installed in the application inside the container.
 
@@ -22,7 +22,7 @@ WhaTap agent installation is supported for the applications developed in [Java](
 
 <ImgLang img='k8s-ap-service-dashboard.png' desc='Application service dashboard'/>
 
-**_Application dashboard_** allows you to collect key metrics of applications through agents, configure charts to monitor the metrics in real time, and view the past data. You can quickly identify and analyze application problems by using the widgets on the dashboard.
+<Cmdname sid="application_dashboard" className="uitext" /> allows you to collect key metrics of applications through agents, configure charts to monitor the metrics in real time, and view the past data. You can quickly identify and analyze application problems by using the widgets on the dashboard.
 
 In case of general charts excluding CPU and memory, the stable data appears in blue and the elements identified as problems appear in red, making it easy to recognize the current status.
 
@@ -30,7 +30,7 @@ In case of general charts excluding CPU and memory, the stable data appears in b
 
 ### Viewing the past data
 
-**_Application dashboard_** basically provides real-time monitoring features, in which you can view the past data.
+<Cmdname sid="application_dashboard" className="uitext" /> basically provides real-time monitoring features, in which you can view the past data.
 
 |                    Real-time mode                    |                       Non-real-time mode                      |
 | :--------------------------------------------------: | :-----------------------------------------------------------: |
@@ -42,7 +42,7 @@ In case of general charts excluding CPU and memory, the stable data appears in b
 
     <ImgLang img='apm-timeselector-setting.png' desc='Configure manual time' />
 
-3.  Select **_Apply_**.
+3.  Select <Cmdname sid="apply" className="uitext" />.
 
 It updates the data in widgets placed on the dashboard based on the set time. To switch to the Realtime mode, select ![Playback icon](/img/ico-play-time.svg).
 
@@ -86,15 +86,15 @@ If there are numerous agents connected to the project, it is efficient to set th
 
 You can select and monitor agents by each group classified through agent settings.
 
--   **_Agent_**: You can select an individual agent or all agents.
+-   <Cmdname sid="ITM06005" className="uitext" />: You can select an individual agent or all agents.
 
--   **_By task_**: Agents can be monitored in each group classified by `whatap.okind` in the agent configuration.
+-   <Cmdname sid="ITM06006" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.okind</code> in the agent configuration.
 
--   **_By server_**: Agents can be monitored in each group classified by `whatap.onode` in the agent configuration.
+-   <Cmdname sid="ITM06007" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.onode</code> in the agent configuration.
 
--   **_Agent by task_**: Only the agents classified as `whatap.okind` in the agent configuration can be monitored.
+-   <Cmdname sid="ITM06008" className="uitext" />: Only the agents classified as <code>whatap.okind</code> in the agent configuration can be monitored.
 
--   **_Agent by server_**: Only the agents classified as `whatap.onode` in the agent configuration can be monitored.
+-   <Cmdname sid="ITM06009" className="uitext" />: Only the agents classified as <code>whatap.onode</code> in the agent configuration can be monitored.
 
 ### Editing a dashboard widget
 
@@ -116,7 +116,7 @@ When you move the mouse cursor to the top of the widget, the cursor shape change
 
 <ImgLang img='apm-dashboard-widget-remove.png' desc='Deleting a widget' />
 
-Right-click on a widget to delete. If you select **_Delete_**, the widget is deleted from the dashboard.
+Right-click on a widget to delete. If you select <Cmdname sid="delete" className="uitext" />, the widget is deleted from the dashboard.
 
 #### Adding a widget
 
@@ -134,7 +134,7 @@ The widgets that can be added are fixed, but we plan to increase supports throug
 
 ![Preset](/img/apm-dashboard-preset-default.png)
 
-You can save and load the settings and layouts for widgets on the dashboard. The default preset (**_Default_**) cannot be changed, but you can create a new preset by resizing and placing widgets in the desired format.
+You can save and load the settings and layouts for widgets on the dashboard. The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed, but you can create a new preset by resizing and placing widgets in the desired format.
 
 #### Creating a new preset
 
@@ -146,7 +146,7 @@ You can save and load the settings and layouts for widgets on the dashboard. The
 
     <ImgLang img='apm-dashboard-preset-save.png' desc='Save Preset' />
 
-4.  Select **_Save_**.
+4.  Select <Cmdname sid="save" className="uitext" />.
 
 You can see the newly saved preset from the preset list.
 
@@ -168,9 +168,9 @@ If you have unused presets, you can delete them from the preset list. Select ![D
 
 The features of the icon displayed on the upper right of the widget are as follows:
 
--   ![Merge icon](/img/ico-data-merge.svg) **_Merge/Each View_**: The agent data for the widget is displayed individually or merged in a graph.
+-   ![Merge icon](/img/ico-data-merge.svg) <Cmdname sid="TLT06734" className="uitext" />: The agent data for the widget is displayed individually or merged in a graph.
 
--   ![Detail icon](/img/ico-detail.svg) **_Detail_**: A modal window appears where you can search the data of the widgets separately by agent.
+-   ![Detail icon](/img/ico-detail.svg) <Cmdname sid="detail" className="uitext" />: A modal window appears where you can search the data of the widgets separately by agent.
 
 :::note
 
@@ -182,7 +182,7 @@ The provided options may differ depending on the widget.
 
 :::info
 
-This document mainly describes the widgets placed on the **_Application dashboard_**. For more information about how to analyze transactions and users, services, and resources through **_Application dashboard_**, see the following documents:
+This document mainly describes the widgets placed on the <Cmdname sid="application_dashboard" className="uitext" />. For more information about how to analyze transactions and users, services, and resources through <Cmdname sid="application_dashboard" className="uitext" />, see the following documents:
 
 -   [Exploring the Application Dashboard](../best-practice-guides/about-apm-dashboard)
 
@@ -200,17 +200,17 @@ You can see the application information through the agent installed on the appli
 
 The failure status that can be checked through the transaction, can be recognized through the priority response time. If a transaction in progress does not end, this should be considered a failure. WhaTap divides sections for display by the time of the progress status. <span class='normal'>Blue (Normal)</span> means transactions within the specified response time, <span class='slow'>Orange (Slow)</span> means slow transactions with the response time of around 8 seconds, and <span class='vslow'>Red (Very slow)</span> means transactions with the response time that is twice as slow as normal. This allows you to intuitively recognize failures as fast as possible.
 
-##### Active Transaction Speed
+##### <Cmdname sid="AA001" />
 
 ![Active transaction speed](/img/speedmeter.png)
 
 You can see the status of active transactions (middle area) and completed transactions (right area). The water drop icon passing from left to right means a transaction. The status of active transactions is identified by the speed (<span class='normal'>Normal</span>, <span class='slow'>Slow</span>, <span class='vslow'>Very Slow</span>) in color and its number appears on the upper right. 
 
-##### Active transactions{#active-trs}
+##### <Cmdname sid="AA002" /> {#active-trs}
 
 <ImgLang img='apm-dashboard-active-tx.png' desc='Active transaction' />
 
-In the **_Active transaction_** widget, the transactions in progress are displayed in the **arc equalizer** chart. You can see the status of delays by agent. The arc is divided by the number of agents. By representing the number of requests being processed by the server every 5 seconds, you can tell how long the request has been processed. Requests detected at an interval of 5 seconds are classified by color as follows to determine whether they are dangerous or not.
+In the <Cmdname sid="AA002" className="uitext" /> widget, the transactions in progress are displayed in the <b>arc equalizer</b> chart. You can see the status of delays by agent. The arc is divided by the number of agents. By representing the number of requests being processed by the server every 5 seconds, you can tell how long the request has been processed. Requests detected at an interval of 5 seconds are classified by color as follows to determine whether they are dangerous or not.
 
 -   Red (<span class='vslow'>Very Slow</span>): 8 seconds or more 
 
@@ -232,25 +232,25 @@ The situation where lots of blue colors are represented is not a problem. You mu
 
     :::note
 
-    -   If the item selected in the transaction list is a transaction that has already ended, select **_Show Trace_**. The **_Transaction information_** window appears. For more information about the **_Transaction information_** window, see [the following](../java/trs-profile).
+    -   If the item selected in the transaction list is a transaction that has already ended, select <Cmdname sid="show_trace" className="uitext" />. The <Cmdname sid="TTL06527" className="uitext" /> window appears. For more information about the <Cmdname sid="TTL06527" className="uitext" /> window, see <Link to="../java/trs-profile">the following</Link>.
 
     -   For more information about transactions, see [the following](../java/track-transactions-intro).
 
     :::
 
-##### Active Status{#active-status}
+##### <Cmdname sid="AA004" /> {#active-status}
 
 <ImgLang img='apm-dashboard-active-status.png' desc='Active status' />
 
-All agents in the project collect the active transaction count every 5 seconds, along with the progress status. The progress status is classified into **_METHOD_**, **_SQL_**, **_HTTPC_**, **_DBC_**, and **_SOCKET_**.
+All agents in the project collect the active transaction count every 5 seconds, along with the progress status. The progress status is classified into <Cmdname sid="active_stat_method" className="uitext" />, <Cmdname sid="sql" className="uitext" />, <Cmdname sid="active_stat_httpc" className="uitext" />, <Cmdname sid="active_stat_dbc" className="uitext" />, and <Cmdname sid="active_stat_socket" className="uitext" />.
 
--   **_METHOD_**: Status in which the method is executing. Normal situations are displayed in blue.
+-   <Cmdname sid="active_stat_method" className="uitext" />: Status in which the method is executing. Normal situations are displayed in blue.
 
--   **_SQL_**: SQL is running. If the **_SQL_** number increases, check for problems connecting to the database server.
+-   <Cmdname sid="sql" className="uitext" />: SQL is running. If the <Cmdname sid="sql" className="uitext" /> number increases, check for problems connecting to the database server.
 
--   **_HTTPC_**: It is calling any external API. If the **HTTPC\*** number increases, it means that the server connected to outside is not responding normally.
+-   <Cmdname sid="active_stat_httpc" className="uitext" />: It is calling any external API. If the <Cmdname sid="active_stat_httpc" className="uitext" /> number increases, it means that the server connected to outside is not responding normally.
 
--   **_DBC_**: The transaction is attempting to get a new connection from the connection pool. If DB connection pools are insufficient, a delay occurs whenever a new connection request occurs, causing the performance failure. In this case, the **_DBC_** number increases.
+-   <Cmdname sid="active_stat_dbc" className="uitext" />: The transaction is attempting to get a new connection from the connection pool. If DB connection pools are insufficient, a delay occurs whenever a new connection request occurs, causing the performance failure. In this case, the <Cmdname sid="active_stat_dbc" className="uitext" /> number increases.
 
     :::note
 
@@ -258,13 +258,13 @@ All agents in the project collect the active transaction count every 5 seconds, 
 
     :::
 
--   **_SOCKET_**: Indicates the TCP connection attempt to an external system. If the **_SOCKET_** number continues to increase, there is a high possibility of failures due to disconnection of the external system.
+-   <Cmdname sid="active_stat_socket" className="uitext" />: Indicates the TCP connection attempt to an external system. If the <Cmdname sid="active_stat_socket" className="uitext" /> number continues to increase, there is a high possibility of failures due to disconnection of the external system.
 
-##### Hitmap
+##### <Cmdname sid="AA005" />
 
 <ImgLang img='hitmap.png' desc='Hitmap' />
 
-The **_HITMAP_** chart represents the distribution of response times of completed transactions. The horizontal axis is the transaction end time. The vertical axis is the execution time. Transactions with longer execution times are at the top of the distribution. If you drag the chart area in **_HITMAP_**, the **_Trace analysis_** window appears that you can see the transaction information details. For more information about **_Trace analysis_**, see [the following](dashboard-hitmap-trace).
+The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution of response times of completed transactions. The horizontal axis is the transaction end time. The vertical axis is the execution time. Transactions with longer execution times are at the top of the distribution. If you drag the chart area in <Cmdname sid="AA005" className="uitext" />, the <Cmdname sid="TTL06209" className="uitext" /> window appears that you can see the transaction information details. For more information about <Cmdname sid="TTL06209" className="uitext" />, see <Link to="dashboard-hitmap-trace">the following</Link>.
 
 -   Normal transactions are displayed in light blue → blue → Indigo in order.
 
@@ -272,9 +272,9 @@ The **_HITMAP_** chart represents the distribution of response times of complete
 
 -   The number on the upper right indicates the <span class='normal'>transaction count</span>/<span class='slow'>error count</span> in the chart.
 
--   If **_Y-axis Auto_** is selected, the Y-axis (execution time) is automatically adjusted.
+-   If <Cmdname sid="yaxis" className="uitext" /> is selected, the Y-axis (execution time) is automatically adjusted.
 
--   If **_Error_** is selected, only the error transactions appear.
+-   If <Cmdname sid="err" className="uitext" /> is selected, only the error transactions appear.
 
 -   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart from 5 seconds to 80 seconds.
 
@@ -294,7 +294,7 @@ The **_HITMAP_** chart represents the distribution of response times of complete
 
 The service-related widget can be used as the metric for application performance tuning.
 
-##### TPS
+##### <Cmdname sid="tps" />
 
 ![TPS](/img/apm-dashboard-tps.png)
 
@@ -306,11 +306,11 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-##### Average Res. Time
+##### <Cmdname sid="avg_restime" />
 
 <ImgLang img='apm-dashboard-avg-response-time.png' desc='Average response time'/>
 
-It monitors the times needed for the application server to return the request result. **_Avg response time_** is meaningful as a tuning metric. The WhaTap's monitoring service calculates the average response time for transactions every 5 seconds.
+It monitors the times needed for the application server to return the request result. <Cmdname sid="avg_restime" className="uitext" /> is meaningful as a tuning metric. The WhaTap's monitoring service calculates the average response time for transactions every 5 seconds.
 
 :::note
 
@@ -320,7 +320,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 #### Resource-related widget
 
-##### Container CPU
+##### <Cmdname sid="container_cpu" />
 
 <ImgLang img='k8s-ap-service-dashboard-cpu.png' desc='Container CPU' />
 
@@ -332,13 +332,13 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-##### Heap Memory{#heap-memory}
+##### <Cmdname sid="AA010" /> {#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='Heap memory' />
 
 You can see which servers are at risk by displaying the maximum available memory and the current memory for each server. The changes in memory usage over time can be seen in real time.
 
-The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). **_Heap memory_** metric is displayed with average values.
+The memory line chart usually ripples continuously. It increases when using memory to process the requests from the application server. It decreases when memory is cleaned up through GC (Garbage Collection). <Cmdname sid="AA010" className="uitext" /> metric is displayed with average values.
 
 :::note
 
@@ -364,7 +364,7 @@ For more information about the heap memory and its chart analysis, see the follo
 
 #### User-related widget
 
-##### Concurrent User
+##### <Cmdname sid="realtime_user" />
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='Concurrent User' />
 
@@ -388,17 +388,17 @@ It displays the number of real-time browser users. Every 5 seconds, users who ma
 
 #### Comparison widget on a daily basis
 
-##### Today's TPS
+##### <Cmdname sid="today_tps" />
 
 <ImgLang img="apm-dashboard-today-tps.png" desc="Today's TPS" />
 
-It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily application status_** appears.
+It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" /> appears.
 
-##### Today's visits
+##### <Cmdname sid="daily_visit" />
 
 <ImgLang img="apm-dashboard-today-users.png" desc="Today's Visits" />
 
-This metric shows the number of **_Concurrent user_** for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), **_STAT/REPORT_** > **_Daily application status_** appears.
+This metric shows the number of <Cmdname sid="realtime_user" className="uitext" /> for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" /> appears.
 
 ### Checking the real-time alert
 

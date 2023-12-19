@@ -7,6 +7,8 @@ tags:
   - Docker
 ---
 
+## Applying the agent
+
 Based on an existing Docker image, build an image with the WhaTap agent settings added.
 
 :::note
@@ -81,3 +83,9 @@ java -cp whatap.agent-X.Y.Z.jar whatap.agent.setup.Rename -from whatap.agent-X.Y
 ```
 
 :::
+
+{@include: _set-heap-memory.mdx}
+
+## Starting the monitoring
+
+{@include: ../../common-items/_start-apm.mdx} 

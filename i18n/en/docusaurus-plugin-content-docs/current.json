@@ -1514,5 +1514,97 @@
   "sidebar.goSidebar.category.에이전트 설치": {
     "message": "Agent Installation",
     "description": "The label for category 에이전트 설치 in sidebar goSidebar"
+  },
+  "sidebar.apmSidebar.category.Category": {
+    "message": "Category",
+    "description": "The label for category Category in sidebar apmSidebar"
+  },
+  "sidebar.apmSidebar.link.Java": {
+    "message": "Java",
+    "description": "The label for link Java in sidebar apmSidebar, linking to ../java/introduction"
+  },
+  "sidebar.apmSidebar.link.PHP": {
+    "message": "PHP",
+    "description": "The label for link PHP in sidebar apmSidebar, linking to ../php/introduction"
+  },
+  "sidebar.apmSidebar.link.Node.js": {
+    "message": "Node.js",
+    "description": "The label for link Node.js in sidebar apmSidebar, linking to ../nodejs/introduction"
+  },
+  "sidebar.apmSidebar.link.Python": {
+    "message": "Python",
+    "description": "The label for link Python in sidebar apmSidebar, linking to ../python/introduction"
+  },
+  "sidebar.apmSidebar.link..NET": {
+    "message": ".NET",
+    "description": "The label for link .NET in sidebar apmSidebar, linking to ../dotnet/introduction"
+  },
+  "sidebar.apmSidebar.link.Go": {
+    "message": "Go",
+    "description": "The label for link Go in sidebar apmSidebar, linking to ../golang/introduction"
+  },
+  "sidebar.apmSidebar.link.Kubernetes": {
+    "message": "Kubernetes",
+    "description": "The label for link Kubernetes in sidebar apmSidebar, linking to ../Kubernetes/introduction"
+  },
+  "sidebar.dbSidebar.category.Database": {
+    "message": "Database",
+    "description": "The label for category Database in sidebar dbSidebar"
+  },
+  "sidebar.dbSidebar.link.PostgreSQL": {
+    "message": "PostgreSQL",
+    "description": "The label for link PostgreSQL in sidebar dbSidebar, linking to ../postgresql/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.Oracle": {
+    "message": "Oracle",
+    "description": "The label for link Oracle in sidebar dbSidebar, linking to ../oracle/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.MySQL": {
+    "message": "MySQL",
+    "description": "The label for link MySQL in sidebar dbSidebar, linking to ../mysql/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.SQL Server": {
+    "message": "SQL Server",
+    "description": "The label for link SQL Server in sidebar dbSidebar, linking to ../mssql/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.Tibero": {
+    "message": "Tibero",
+    "description": "The label for link Tibero in sidebar dbSidebar, linking to ../tibero/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.CUBRID": {
+    "message": "CUBRID",
+    "description": "The label for link CUBRID in sidebar dbSidebar, linking to ../cubrid/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.Altibase": {
+    "message": "Altibase",
+    "description": "The label for link Altibase in sidebar dbSidebar, linking to ../altibase/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.Redis": {
+    "message": "Redis",
+    "description": "The label for link Redis in sidebar dbSidebar, linking to ../redis/monitoring-intro"
+  },
+  "sidebar.dbSidebar.link.MongoDB": {
+    "message": "MongoDB",
+    "description": "The label for link MongoDB in sidebar dbSidebar, linking to ../mongodb/monitoring-intro"
+  },
+  "sidebar.logSidebar.doc.로그 처리하기": {
+    "message": "Handling logs",
+    "description": "The label for the doc item 로그 처리하기 in sidebar logSidebar, linking to the doc log/log-process"
+  },
+  "sidebar.releaseSidebar.category.WhaTap Mobile app": {
+    "message": "WhaTap Mobile App",
+    "description": "The label for category WhaTap Mobile app in sidebar releaseSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.4 (53)": {
+    "message": "v1.0.4 (53)",
+    "description": "The label for the doc item v1.0.4 (53) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_4"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.3 (52)": {
+    "message": "v1.0.3 (52)",
+    "description": "The label for the doc item v1.0.3 (52) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_3"
+  },
+  "sidebar.indexSidebar.doc.모바일 앱": {
+    "message": "Mobile App",
+    "description": "The label for the doc item 모바일 앱 in sidebar indexSidebar, linking to the doc mobile-app"
   }
 }

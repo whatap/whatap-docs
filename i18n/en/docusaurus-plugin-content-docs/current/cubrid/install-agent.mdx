@@ -52,7 +52,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
   Download the JDBC driver for the OS and version of your database server. https://www.cubrid.com/downloads
 
-<!-- 공통 Notes -->
+<!-- 공통 Notes-->
 
 {@include: ../common-items/_db-install-agent-common-notes.mdx}
 
@@ -87,6 +87,9 @@ Generate an encrypted UID for database connection. All user files must be run fo
 
     ```bash title='Example'
     ./uid.sh whatap whatap\!pwd
+
+    # If there are multiple special characters, add the escape character(\) for each.
+    ./uid.sh whatap whatap\!\@pwd
     ```
 
 :::

@@ -22,7 +22,34 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
 ## Data collection
 
-{@include: ../common-items/_db-agent-setting-data-collection.mdx} 
+{@include: ../common-items/_db-agent-setting-data-collection.mdx}
+
+-   **trx_rseg_history_len** <span class='type'>Boolean</span> <code class="my">MySQL 5.7 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
+
+    Default `false`
+
+    It sets whether or not to collect the `trx_rseg_history_len` metric. If it is set to `true`, you can check it in the `db_mysql_counter` category.
+
+-   **active_transactions** <span class='type'>Boolean</span> <code class="my">MySQL 5.5 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
+
+    Default `false`
+
+    It sets whether or not to collect the `active_transactions` metric. If it is set to `true`, you can check it in the `db_mysql_counter` category.
+
+-   **collect_variables_metric** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.15 or later</code>
+
+    Default `false`
+
+    DB parameters can be collected in real time. The parameters set in the `variables_metric` option are collected.
+
+-   **variables_metric** <span class='type'>String</span> <code class="my">DBX agent v1.6.15 or later</code>
+
+    Set the DB parameter names such as `uptime`, `version`, and `read_only`. To set multiple values, use comma (,) as the delimiter. If you set the `collect_variables_metric` option to `true` and set the DB parameter names, you can check them in the `db_mysql_variables` category.
+
+    ```ini title="whatap.conf"
+    collect_variables_metric=true
+    variables_metric=uptime,version
+    ```
 
 ## Application of AWS RDS CloudWatch{#using-aws-rds}
 

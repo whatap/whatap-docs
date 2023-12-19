@@ -1,0 +1,44 @@
+---
+id: dbx-1_6_15
+title: DBX v1.6.15
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_14
+---
+
+2023年12月09日
+
+## 共通
+
+-   <Status>Changed</Status> Windows環境にインストールする際に必要なファイルをエージェントのインストールファイルに含める：<em>instsrv.exe</em>、<em>srvany.exe</em>
+
+-   <Status>Fixed</Status> <em>install_windowsService.bat</em>ファイルのバグ修正(jdbcディレクトリのJARファイルの読み込み問題)
+
+## PostgreSQL
+
+-   <Status>Fixed</Status>テーブルレイアウトカラムの修正
+-   <Status>Fixed</Status> <code>pg_stat_statements</code>収集時の負荷低減及びバグ修正
+
+## MySQL
+
+-   <Status>Feature</Status> <code>trx_rseg_history_len</code>(MySQL 5.7バージョン以降に対応)、 <code>active_transactions</code>(MySQL 5.5バージョン以降に対応) 指標の追加
+
+    次のように_whatap.conf_ファイル設定オプションを追加する必要があります。
+
+    ```ini title="whatap.conf"
+    trx_rseg_history_len=true
+    active_transactions=true
+    ```
+
+-   <Status>Feature</Status> DBパラメータを5秒ごとに収集する機能を追加
+
+    ```ini title="whatap.conf"
+    collect_variables_metric=true
+    variables_metric=
+    # e.g variables_metric=uptime,version
+    ```
+
+-   <Status>Feature</Status> plan転送時、jsonフォーマット転送の追加
+
+## Oracle
+
+<Status>Fixed</Status>テーブルレイアウトカラムの修正

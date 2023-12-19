@@ -1,0 +1,44 @@
+---
+id: dbx-1_6_15
+title: DBX v1.6.15
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_14
+---
+
+December 9, 2023
+
+## Common
+
+-   <Status>Changed</Status> During installation in the Windows environment, the required files are included in the agent installation file: <em>instsrv.exe</em>, <em>srvany.exe</em>.
+
+-   <Status>Fixed</Status> Fixed the <em>install_windowsService.bat</em> file bug (cannot read JAR files in the jdbc directory).
+
+## PostgreSQL
+
+-   <Status>Fixed</Status> Modified the table layout column.
+-   <Status>Fixed</Status> Reduced the load and fixed the bug when collecting <code>pg_stat_statements</code>.
+
+## MySQL
+
+-   <Status>Feature</Status> Added the metrics, <code>trx_rseg_history_len</code> (MySQL 5.7 or later) and <code>active_transactions</code> (MySQL 5.5 or later).
+
+    Add the _whatap.conf_ file configuration options as follows:
+
+    ```ini title="whatap.conf"
+    trx_rseg_history_len=true
+    active_transactions=true
+    ```
+
+-   <Status>Feature</Status> Added the function to collect DB parameters every 5 seconds.
+
+    ```ini title="whatap.conf"
+    collect_variables_metric=true
+    variables_metric=
+    # e.g variables_metric=uptime,version
+    ```
+
+-   <Status>Feature</Status> Added the json format transmission when transmitting a plan.
+
+## Oracle
+
+<Status>Fixed</Status> Modified the table layout column.

@@ -3032,17 +3032,22 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'WhaTap Mobile app',
+          label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
           className: 'new',
           items: [
             {
               type: 'doc',
+              label: 'v1.0.4 (53)',
+              id: 'release-notes/mobile/mobile-app-v1_0_4',
+              className: 'new',
+            },
+            {
+              type: 'doc',
               label: 'v1.0.3 (52)',
               id: 'release-notes/mobile/mobile-app-v1_0_3',
-              className: 'new',
-            }
+            },
           ],
         },
         {

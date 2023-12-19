@@ -15,6 +15,12 @@ tags:
 
 {@include: ../common-items/_transaction-profiling-common.mdx}
 
+-   **profile_error_step_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    プロファイルにエラー関連情報を表示するステップを追加できます。
+
 {@include: ../common-items/_transaction-profile-active-color.mdx}
 
 -   **hook_method_patterns** <span class='type'>String</span>
@@ -59,6 +65,12 @@ tags:
 
     メソッドトレースを設定する場合は、トレースから除外するクラスをprefixに設定します。
 
+-   **trace_service_port_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    トランザクション名にポート番号を追加します。
+
 ### HTTPトランザクションの追跡
 
 {@include: ../common-items/_transaction-trace-common.mdx} 
@@ -73,25 +85,56 @@ tags:
 
     トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
+-   **ignore_http_method** <span class='type'>String</span>
+
+    デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+
+    設定されたHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
+
+    ```ini title="whatap.conf"
+    # example
+    ignore_http_method=OPTIONS,HEAD
+    ```
+
+-   **status_ignore** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    無視しようとするHTTPステータスコードを設定できます。
+
+    ```ini title="whatap.conf"
+    # example
+    status_ignore=404,500
+    ```
+
+-   **status_ignore_set** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
+
+    ```ini title="whatap.conf"
+    # example
+    status_ignore_set=/a/b/c:400,/a/ab/c:404
+    ```
+
+-   **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+    デフォルト値 `true`
+
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
+
 ### 非HTTPトランザクションのトレース
 
 -   **hook_service_patterns** <span class='type'>String</span>
 
-    NON-Httpトランザクション追跡の開始点パターンを設定します。
+    NON-Httpトランザクション追跡のための開始点パターンを設定します。ワイルドカード文字は使用できません。2つ以上の値を設定するにはコンマ(,)を区切り文字として利用してください。
 
 -   **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
     ソケット (TCP) がトランザクションではなくバックグラウンドスレッドによってオープンされた場合に接続がオープンされ、トランザクションが開始された場合にのみ、オープントレースします。
-
-### トランザクションのトレース
-
--   **trace_service_port_enabled** <span class='type'>Boolean</span>
-
-    デフォルト値`false`
-
-    トランザクション名にポート番号を追加します。
 
 ### マルチトランザクショントレース
 

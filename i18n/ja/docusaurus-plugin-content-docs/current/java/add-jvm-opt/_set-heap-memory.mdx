@@ -1,0 +1,32 @@
+## ヒープメモリ照会
+
+WhaTapのJavaモニタリングでは、JVMメモリのヒープ占有オブジェクト現況(ヒープメモリ上のオブジェクト別サイズ)を照会できる機能を標準として提供します。 <Cmdname sid="app_upper" className="uitext" /> > <Cmdname sid="instance_performance_analysis" className="uitext" />メニューから<Cmdname sid="heap_histogram" className="uitext" />タブを選択してください。
+
+Java 6~8バージョンでは、JVMオプションなしで標準対応しますが、一部のJavaバージョンによっては次のようにJVMオプションを適用する必要があります。
+
+-   Java 9 ~ Java 15バージョン
+
+    ```bash
+    -Djdk.attach.allowAttachSelf=true
+    ```
+
+    ```bash title="example"
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+    ```
+
+-   Java 16バージョン以降
+
+    ```bash
+    -Djdk.attach.allowAttachSelf=true
+    --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+    ```
+
+    ```bash title="example"
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+    ```
+
+:::note
+
+Java 5以前の旧バージョン、IBM Javaには対応していません。
+
+:::

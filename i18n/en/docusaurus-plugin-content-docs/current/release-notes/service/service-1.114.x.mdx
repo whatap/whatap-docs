@@ -5,6 +5,118 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_112_x
 ---
 
+## Service 1.114.8
+
+December 12, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> Modified the aggregation criteria for hourly core counts when collecting the usage in <Cmdname sid="my_usage" className="uitext" /> (for containers, it is to assign the number of cores to decimal places).</p>
+
+* * *
+
+### `URL`
+
+<p><Status>Fixed</Status> In <Cmdname sid="url_list" className="uitext" />, fixed the bug where the status filtering does not work in <Cmdname sid="card_view" className="uitext" /> mode.</p>
+
+</div>
+
+## Service 1.114.7
+
+December 8, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="dashboard" />
+
+<p><Status>Fixed</Status> Fixed the issue where the chart on the <Cmdname sid="AA001" className="uitext" /> widget does not appear when the browser screen size is decreased and then increased.</p>
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, fixed the issue where the company registration number is initialized when the <Cmdname sid="billing_reception_info" className="uitext" /> item is set.</p>
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+<p><Status>Changed</Status> Modified to limit the data search range of the <span class="uitext">SQL Elapsed Map</span> widget to 1 hour.</p>
+
+</div>
+
+## Service 1.114.6
+
+December 7, 2023
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />, fixed the data error in the following widgets:
+
+    -   **_Total Container CPU Request_**: Sum of CPU request (`cpu_request`) values for all containers in the project
+    -   **_Total Container CPU Usage_**: Sum of CPU usage (`cpu_total_milli`) values for all containers in the project
+    -   **_Total Container Memory Request_**: Sum of memory request (`mem_request`) values for all containers in the project
+    -   **_Total Container Memory Usage_**: Sum of memory usage (`mem_working_set`) values for all containers in the project
+
+-   <Status>Fixed</Status> Fixed the bug where you can move to a namespace project with no project viewing role in the following menus:
+
+    -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="namespace_status" className="uitext" />
+    -   <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="namespace_management" className="uitext" />
+
+-   <Status>Changed</Status> In <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />, modified the widget layout to a fixed one not to be moved.
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />, fixed the whiteout and browser freeze issues.</p>
+
+:::note
+
+This occurs when you switch to another tab in the browser and then return to the current tab (<Cmdname sid="rumDashboard" className="uitext" />) after a certain period of time (about an hour).
+
+:::
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status> In <Cmdname sid="log_search" className="uitext" />, fixed the filtering error.
+
+-   <Status>Fixed</Status> In <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="log" className="uitext" />, modified to initialize the previous values when the <Cmdname sid="alert_object_filtering" className="uitext" /> item is changed from <Cmdname sid="metrics_rule_direct" className="uitext" /> to <Cmdname sid="metrics_rule_select" className="uitext" /> while adding <Cmdname sid="realtime_log_event" className="uitext" />.
+
+</div>
+
+## Service 1.114.5
+
+December 5, 2023
+
+<div class='indentTab'>
+
+### `Database`
+
+#### MongoDB / Redis
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />, fixed the issue where the metric name is not searched when the <LinkImage img="ico-setting.svg" className="ico" /> button on the widget is selected.
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />, fixed the issue that causes no response in the browser when viewing for a long time.
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />, modified not to display the instances whose metrics are not viewed in the list.
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> In <Cmdname sid="log_search" className="uitext" />, fixed the issue where the items in the category list on the left are intermittently changed.</p>
+
+</div>
+
 ## Service 1.114.4
 
 December 1, 2023

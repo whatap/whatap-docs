@@ -7,6 +7,8 @@ tags:
   - Play2
 ---
 
+## Adding JVM options
+
 Check the method how to add JVM options in the application server environment using Play2. 
 
 Set the agent options in the _$PLAY_HOME/framework/build_ file. If you have a separate startup or stop script, apply it to that file.
@@ -36,5 +38,9 @@ For Play, add the `-Dwhatap.play2=2.2.6` option other than the default settings.
 {@include: _java-17.mdx}
 
 :::
+
+{@include: _set-heap-memory.mdx}
+
+## Starting the monitoring
 
 {@include: ../../common-items/_start-apm.mdx} 

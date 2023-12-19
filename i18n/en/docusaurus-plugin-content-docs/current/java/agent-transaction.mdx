@@ -16,8 +16,89 @@ tags:
 
 {@include: ../common-items/_java-transaction-profiling.mdx}
 
-{@include: ../common-items/_java-http-transaction.mdx} 
+{@include: ../common-items/_java-http-transaction.mdx}
 
 {@include: ../common-items/_java-non-http-transaction.mdx}
 
 {@include: ../common-items/_java-trace-transaction.mdx}
+
+## Trace data sampling
+
+<code class="my">Java Agent v2.2.4 or later</code>
+
+-   **trace_sampling_enabled** <span class='api'>Boolean</span>
+
+    Default `false`
+
+    You can set whether or not to collect trace data samples.
+
+-   **trace_sampling_tps** <span class='type'>Int</span>
+
+    Default `10000`
+
+    You can set the trace data sampling count. The data exceeding the set count is not transmitted and is initialized every 5 seconds.
+
+-   **trace_send_enabled** <span class='api'>Boolean</span>
+
+    Default `true`
+
+    You can set whether or not to transmit the trace data.
+
+-   **debug_trace_samling** <span class='api'>Boolean</span>
+
+    Default `false`
+
+    You can turn on or off the trace data sampling debug option.
+
+## Modifying the trace URL name
+
+<code class="my">Java Agent v2.2.4 or later</code>
+
+You can modify the name of the trace URL when calling a specific URL or method. For example, if the `test100000()` method is called while calling a URL registered in `io.home.test.TestController.test1`, you can see it as `/api/100000+test1+test100000` on the service screen.
+
+The `hook_tx_name_mode` option allows you to select one of **class**, **method**, **string**, and **return**.
+
+```ini title="whatap.conf"
+# The full path of the call method and wildcard (*) can be used.
+hook_tx_name_patterns=ab.cd.ef.GH.ij
+
+# Select one of class, method, string, and return.
+hook_tx_name_mode=method
+```
+
+## Ignoring a specific exception
+
+<code class="my">Java Agent v2.2.4 or later</code>
+
+You can configure a service to ignore specific exceptions. When registering multiple items, use a comma (,) as the delimiter.
+
+```ini title="whatap.conf"
+ignore_exception_tx_pattern=exception:service_url
+# e.g. java.util.concurrent.TimeoutException:/api/test/timeout,org.springframework.web.util.NestedServletException:/api/posts/test/cexception
+```
+
+## Tracing HttpURLConnection
+
+-   **HttpURLConnection** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    The option is used to trace methods in the `HttpURLConnection` class.
+
+-   **hook_HttpURLConnection_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
+
+    Default `false`
+
+    You can set to trace methods in the `HttpURLConnection` class even when called for the first time.
+
+-   **HttpURLConnection_weblogic** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
+
+    Default `true`
+
+    In case of calling HTTP from Weblogic with `HttpURLConnection`, the option traces methods in the `weblogic.net.http.HttpURLConnection` class.
+
+-   **hook_HttpURLConnection_weblogic_startup_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.4 or later</code>
+
+    Default `false`
+
+    You can set to trace methods in the `weblogic.net.http.HttpURLConnection` class even when called for the first time.
