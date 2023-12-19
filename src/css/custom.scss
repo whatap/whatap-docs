@@ -1230,6 +1230,9 @@ main {
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
+    img[alt*='QR'] {
+      width: 300px;
+    }
     img[src*='k8s-download-yaml'] {
       width: 400px;
     }
