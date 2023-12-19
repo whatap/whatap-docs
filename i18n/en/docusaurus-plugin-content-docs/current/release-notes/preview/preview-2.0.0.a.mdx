@@ -14,6 +14,209 @@ In [https://preview.whatap.io](https://preview.whatap.io), the following new fea
 
 :::
 
+## Preview 2.0.0.a2
+
+December 11, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Fixed</Status> Fixed the issue where the chart on the <Cmdname sid="AA001" className="uitext" /> widget does not appear when the browser screen size is decreased and then increased.
+
+-   <Status>Changed</Status> Modified to apply the <Cmdname sid="yaxis" className="uitext" /> option for all <Cmdname sid="AA005" className="uitext" /> widgets by default.
+
+* * *
+
+### `Application`
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />, modified to apply the <Cmdname sid="yaxis" className="uitext" /> option of the <Cmdname sid="AA005" className="uitext" /> widget by default and save the changed Y-axis values.
+
+-   <Status>Fixed</Status> Fixed the issue where SQL hash items are not automatically entered when you enter the <Cmdname sid="sql" className="uitext" /> tab of the <Cmdname sid="statistic" className="uitext" /> menu on the <Cmdname sid="TTL06209" className="uitext" /> window.
+
+* * *
+
+### `Network`
+
+-   In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="MNU06850" className="uitext" />, <Cmdname sid="MNU06851" className="uitext" />, the functions have been added and modified as follows:
+
+    -   <Status>Feature</Status> Enhanced the method to provide examples for filter keys and values and enhanced the function to check conditional expressions as formulas.
+
+    -   <Status>Changed</Status> Changed the category name used in <code>JOIN</code> for analysis data query from <code>process_tag_list</code> to <code>npm_process_tag_list</code>.
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, fixed the issue where update for presets is not made.
+
+</div>
+
+## Preview 2.0.0.a1
+
+December 7, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="integrated_report" />
+
+<p><Status>Fixed</Status> Modified to move to the guide (Docs) link depending on the set language when <Cmdname sid="guide" className="uitext" /> is clicked.
+
+#### <Cmdname sid="dashboard" />
+
+<p><Status>Fixed</Status> Fixed the issue where the pop-up window mode (<LinkImage img="ico-export.svg" className="ico" />) of the widget created on the Flex board does not work in the organization level.</p>
+
+#### <Cmdname sid="reportStat" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="report" className="uitext" />, modified to search the end time based on the next day, if the set end time is earlier than the start time.</p>
+
+:::info
+
+![](/img/release/rl-report-time-set.png)
+
+For example, if it is set to <Cmdname sid="TTL07090" className="uitext" /> 12-03, <Cmdname sid="TTL07092" className="uitext" /> 05:00, <Cmdname sid="TTL07093" className="uitext" /> 02:00, you can search between 2023/12/03 05:00 and 2023/12/04 02:00.
+
+:::
+
+#### <Cmdname sid="my_usage" />
+
+-   <Status>Fixed</Status> Modified to display a single loading image when entering the <Cmdname sid="project_subscription" className="uitext" /> menu.
+
+-   <Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, fixed the issue where the company registration number is initialized when the <Cmdname sid="billing_reception_info" className="uitext" /> item is set.
+
+#### User Interface
+
+-   <Status>Fixed</Status> Added all elements on the service screen where dark themes are not applied
+
+-   <Status>Changed</Status> Modified the guide message so that you can contact us through the chat tool (speech bubble), if an error occurs.
+
+* * *
+
+### `Application`
+
+-   <Status>Changed</Status> Changed the label display criteria to execution time in <Cmdname sid="TTL06377" className="uitext" /> &gt; <Cmdname sid="chart" className="uitext" /> mode on the <Cmdname sid="TTL06209" className="uitext" /> window.
+
+    ![](/img/release/release-multi-tx-chartview.png)
+
+-   <Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tx_search" className="uitext" />, added the guide message that says the filters other than the <Cmdname sid="TTL06111" className="uitext" /> filter cannot be applied while the <Cmdname sid="TTL06111" className="uitext" /> filter is selected.
+
+-   <Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" /> of the Java project, modified the code for the JVM option.
+
+-   <Status>Feature</Status> Reorganized the <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="transaction_map" className="uitext" /> menu.
+
+    -   Deleted the <Cmdname sid="trace_list" className="uitext" /> section at the bottom of the screen.
+    -   The detailed information is viewed through the <Cmdname sid="TTL06209" className="uitext" /> pop-up window that appears by dragging the chart in the <Cmdname sid="transaction_map" className="uitext" /> section.
+
+    :::note
+
+    For more information about <Cmdname sid="TTL06209" className="uitext" />, see <Link to="../../java/dashboard-hitmap-trace">the following</Link>.
+
+    :::
+
+-   <Status>Fixed</Status> Fixed the issue where a time difference happens when downloading the results searched from <Cmdname sid="TTL06209" className="uitext" /> as a TXT file.
+
+* * *
+
+### `Database`
+
+#### PostgreSQL <code class="my">V2</code>
+
+<p><Status>Feature</Status> Added the function to check the configuration for <b>column</b> and <b>index</b> in the following menu paths:</p>
+
+-   In the <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />, <Cmdname sid="multi_instance_monitoring" className="uitext" /> &gt; <Cmdname sid="active_sessions" className="uitext" /> section, select the query items &gt; view the plan in JSON mode on the <Cmdname sid="TTL06224" className="uitext" /> window &gt; click a table or index.
+
+    ![](/img/release/release-db-object-details-monitoring.png)
+
+-   In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="dbObjectInfo" className="uitext" />, click the <span class="uitext">tablename</span> or <span class="uitext">indexname</span> column.
+
+    ![](/img/release/release-db-object-details-topobject.png)
+
+-   In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />, click the <span class="uitext">tablename</span> column.
+
+    ![](/img/release/release-db-object-details-db-size.png)
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> Added the function to filter only the selected resources when the status icon is selected at the top of the screen in the following menus:
+
+    -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" />
+    -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />
+    -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="podList" className="uitext" />
+
+-   <Status>Feature</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" />, added the metric, - <b>beta.kubernetes.io/instance-type</b>.
+
+-   <Status>Feature</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="containerImages" className="uitext" />, added the metrics, - <b>Total Container CPU</b> and <b>Total Container Memory</b>.
+
+-   <Status>Feature</Status> Added the <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="kubeEventList" className="uitext" /> menu to search Kubernetes events as a project basis.
+
+-   <Status>Changed</Status> Reorganized the <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="pod_init_perform" className="uitext" /> menu
+
+    -   It is supported in Node agent 1.4.2 or later.
+    -   Extended the support from clusters to the cluster and namespace projects.
+    -   Enhanced the search performance.
+    -   Added the CSV download function.
+    -   Provided the Pod filtering function for the status when selecting the status icon.
+
+-   <Status>Changed</Status> Changed the Japanese menu name of the <Cmdname sid="multi_hitmap" className="uitext" /> <Cmdname sid="custom_hitmap" className="uitext" /> menu.
+
+    -   マルチサービスヒトマップ → **マルチサービスヒットマップ**
+    -   カスタムヒトマップ → **カスタムヒットマップ**
+
+-   <Status>Changed</Status> In <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />, modified the widget layout to a fixed one not to be moved.
+
+-   <Status>Fixed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="node_detail" className="uitext" />, fixed the issue where the server cannot be selected intermittently.
+
+-   <Status>Fixed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />, fixed the data error in the following widgets:
+
+    -   **_Total Container CPU Request_**: Sum of CPU request (`cpu_request`) values for all containers in the project
+    -   **_Total Container CPU Usage_**: Sum of CPU usage (`cpu_total_milli`) values for all containers in the project
+    -   **_Total Container Memory Request_**: Sum of memory request (`mem_request`) values for all containers in the project
+    -   **_Total Container Memory Usage_**: Sum of memory usage (`mem_working_set`) values for all containers in the project
+
+-   <Status>Fixed</Status> Fixed the bug where you can move to a namespace project with no project viewing role in the following menus:
+
+    -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="namespace_status" className="uitext" />
+    -   <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="namespace_management" className="uitext" />
+
+* * *
+
+### `Browser`
+
+-   <Status>Feature</Status> Added a filter to search based on the user ID in the following menus:
+
+    -   <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />
+
+    -   <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />, fixed the whiteout and browser freeze issues.
+
+    :::note
+
+    This occurs when you switch to another tab in the browser and then return to the current tab (<Cmdname sid="rumDashboard" className="uitext" />) after a certain period of time (about an hour).
+
+    :::
+
+* * *
+
+### `Network`
+
+-   <Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="MNU06850" className="uitext" />, <Cmdname sid="MNU06851" className="uitext" />, fixed the bug where the filter search fails.
+
+-   <Status>Changed</Status> Changed the real-time request interval to 1 minute in the following menus:
+
+    -   <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />
+    -   <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06849" className="uitext" />
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, changed the UI components to improve usability.
+
+    ![](/img/release/release-npm-topology.png)
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, modified the tooltip of the Setting (<LinkImage img="ico-setting.svg" className="ico" />) button to display the text according to the language setting.
+
+</div>
+
 ## Preview 2.0.0.a0
 
 November 29, 2023

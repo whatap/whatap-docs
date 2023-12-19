@@ -41,3 +41,15 @@ Node.jsエージェントのDB、SQL関連オプションを提供します。
     ```ini title='Example'
     hook_connection_open_patterns=mypool.ConPool.getConnection
     ```
+
+-   **trace_sql_error_stack** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    SQLエラー内容をスタックとして保存(MySQL、MariaDB、PostgreSQL、SQL Server)します。
+
+-   **trace_sql_error_depth** <span class='type'>Int</span>
+
+    デフォルト値`50`
+
+    `trace_sql_error_stack`オプションを適用する場合に保存されるエラーのライン数を設定します。

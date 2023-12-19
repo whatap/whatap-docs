@@ -7,6 +7,8 @@ tags:
   - IBM BlueMix
 ---
 
+## Applying the agent
+
 The following explains how to apply the WhaTap agent when deploying with **IBM BlueMix**. 
 
 [IBM BlueMix](https://console.bluemix.net/docs/apps/index.html%E2%80%8B) provides the **WebSphere Liberty** environment with the container. **Liberty** is a lightweight environment different from **WebSphere Application Server**, and it is similar to how **Spring Boot** works.
@@ -68,5 +70,9 @@ drwxrwxr-x 6 whatap whatap  4096 10/29 15:26 .
 -   For more information about the agent naming, see [the following](../agent-name).
 
 :::
+
+{@include: _set-heap-memory.mdx}
+
+## Starting the monitoring
 
 {@include: ../../common-items/_start-apm.mdx} 

@@ -63,7 +63,7 @@
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "総 {count} の文書を発見",
+    "message": "総 {count} 件の文書を発見",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
@@ -74,7 +74,7 @@
     "message": "WhaTap Docs"
   },
   "whatap_link_go": {
-    "message": "WhaTapのホームページに移動します。"
+    "message": "WhaTapのホームページへ移動します。"
   },
   "theme.ErrorPageContent.title": {
     "message": "ページエラーが発生しました。",
@@ -89,19 +89,19 @@
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "サイト管理者にリンクが切れたことをお知らせください。",
+    "message": "リンクが切れたことをサイト管理者へ知らせてください。",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "一番上にスクロールする",
+    "message": "一番上へスクロールする",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "投稿一覧",
+    "message": "記事一覧",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "投稿一覧",
+    "message": "記事一覧",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
@@ -113,27 +113,27 @@
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "次ページ",
+    "message": "次ページへ",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "ブログ投稿の検索",
+    "message": "ブログ記事の検索",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "前の投稿",
+    "message": "前の記事へ",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "次の投稿",
+    "message": "次の記事へ",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "{count}個人の投稿",
+    "message": "{count}件の記事",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "\"{tagName}\" タグ付けされた {nPosts}個の投稿があります。",
+    "message": "\"{tagName}\" タグ付けされた {nPosts}件の記事があります。",
     "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {

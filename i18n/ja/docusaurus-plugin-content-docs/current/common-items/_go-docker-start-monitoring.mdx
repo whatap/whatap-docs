@@ -17,7 +17,7 @@ sh -c "/usr/whatap/whatap-agent start && [애플리케이션 시작 명령어]"
 
 <TabItem value="sup" label="Supervisor" default>
 
-Supervisorでアプリケーションを起動する場合は、次のコードを参考にしてwhatap-agentサービスを追加してください。
+Supervisorでアプリケーションを起動する場合は、次のコードを参考してwhatap-agentサービスを追加してください。
 
 ```docker
 RUN echo "[program:whatap-agent]" >> /etc/supervisor/conf.d/whatap.conf
@@ -47,6 +47,6 @@ ps -ef | grep whatap_agent
 
 ダウンロードしたファイルをインストールした後に<Cmdname sid="dashboard" className="uitext" />メニューからエージェントが表示されない場合は、次の事項を確認してください。
 
--   コンテナで`ps -ef | grep whatap_agent`コマンドを実行し、エージェントオプションを適用されていることを確認してください。
+-   コンテナで`ps -ef | grep whatap_agent`コマンドを実行し、エージェントオプションが適用されているかを確認してください。
 
--   コンテナの_`WHATAP_HOME`/logs_または、アプリケーション実行パスの_logs_ディレクトリを確認してください。 エージェントログは、_logs/whatap-`{bootまたはinstall}`-yyyymmdd.log_形式のファイル名で出力されます。
+-   コンテナの_`WHATAP_HOME`/logs_、またはアプリケーション実行パスの_logs_ディレクトリを確認してください。 エージェントログは、_logs/whatap-`{bootまたはinstall}`-yyyymmdd.log_形式のファイル名で出力されます。

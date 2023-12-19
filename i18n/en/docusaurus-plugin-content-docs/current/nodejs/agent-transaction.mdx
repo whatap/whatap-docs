@@ -15,6 +15,12 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_transaction-profiling-common.mdx}
 
+-   **profile_error_step_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    You can add a step to display error information in the profile.
+
 {@include: ../common-items/_transaction-profile-active-color.mdx}
 
 -   **hook_method_patterns** <span class='type'>String</span>
@@ -59,6 +65,12 @@ The agent traces the transaction performance and provides the following configur
 
     When setting a method trace, it sets the classes to exclude from the trace.
 
+-   **trace_service_port_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    Add the port number to the transaction name.
+
 ### HTTP transaction tracing
 
 {@include: ../common-items/_transaction-trace-common.mdx} 
@@ -73,25 +85,56 @@ The agent traces the transaction performance and provides the following configur
 
     It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
+-   **ignore_http_method** <span class='type'>String</span>
+
+    Default `PATCH,OPTIONS,HEAD,TRACE`
+
+    Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
+
+    ```ini title="whatap.conf"
+    # example
+    ignore_http_method=OPTIONS,HEAD
+    ```
+
+-   **status_ignore** <span class='type'>String</span>
+
+    Default `Empty`
+
+    You can set the HTTP status codes to ignore.
+
+    ```ini title="whatap.conf"
+    # example
+    status_ignore=404,500
+    ```
+
+-   **status_ignore_set** <span class='type'>String</span>
+
+    Default `Empty`
+
+    Among HTTP status return codes, you can set the codes to ignore on a URL basis.
+
+    ```ini title="whatap.conf"
+    # example
+    status_ignore_set=/a/b/c:400,/a/ab/c:404
+    ```
+
+-   **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
+
 ### Non-HTTP transaction tracing
 
 -   **hook_service_patterns** <span class='type'>String</span>
 
-    It sets the start point pattern for non-HTTP transaction tracing.
+    It sets the starting point pattern for tracing NON-Http transactions. Wildcard characters cannot be used. To set multiple values, use comma (,) as the delimiter.
 
 -   **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
     Default `true`
 
     When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
-
-### Transaction tracing
-
--   **trace_service_port_enabled** <span class='type'>Boolean</span>
-
-    Default `false`
-
-    Add the port number to the transaction name.
 
 ### Multiple transaction trace
 

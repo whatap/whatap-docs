@@ -7,6 +7,8 @@ tags:
   - Play2
 ---
 
+## JVMオプションの追加
+
 Play2を使用するアプリケーションサーバー環境でJVMオプションを追加する方法を確認してください。 
 
 _$PLAY_HOME/framework/build_ファイルにエージェントオプションを設定してください。別途利用する開始または停止スクリプトがある場合は、そのファイルに適用してください。
@@ -36,5 +38,9 @@ Playは基本設定に、`-Dwhatap.play2=2.2.6`オプションを追加する必
 {@include: _java-17.mdx}
 
 :::
+
+{@include: _set-heap-memory.mdx}
+
+## モニタリングの開始
 
 {@include: ../../common-items/_start-apm.mdx} 

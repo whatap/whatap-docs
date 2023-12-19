@@ -22,13 +22,19 @@ The LogSink option is available in whatap.agent-2.1.0 or later.
 
 To monitor logs collected from the framework, add the setting and plugin to intercept logs from the module. Set the default category name for logs collected in the framework to `AppLog`. The default value is the same as in the `hooklog_enabled` option.
 
-If the `hooklog_enabled` value has been changed, restarting is required. The default value of `hooklog_enabled` is `logsink_enabled`. Accordingly, if `logsink_enabled=true` is set and the Java application is restarted, `hooklog_enabled` is set to `true`.
-
 -   **hooklog_enabled** <span class='type'>Boolean</span>
 
     Default `logsink_enabled`
 
     Set whether or not to enable the log tracing.
+
+    :::note
+
+    -   In Java Agent 2.2.4 or later, the changed options can be applied without restarting the application. 
+
+    -   If the `hooklog_enabled` value has been changed, restarting is required for Java agent versions less than 2.2.4. The default value of `hooklog_enabled` is `logsink_enabled`. Accordingly, if `logsink_enabled=true` is set and the Java application is restarted, `hooklog_enabled` is set to `true`.
+
+    :::
 
 -   **hooklog_custom_methods**
 

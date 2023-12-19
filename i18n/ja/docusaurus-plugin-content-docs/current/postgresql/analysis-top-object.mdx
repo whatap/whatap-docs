@@ -30,7 +30,7 @@ tags:
 
 :::tip
 
-**チューニングチップ**
+**チューニングTips**
 
 `Bloat_ratio`が高いテーブルはVacuumの実行を検討してください。 詳細については、次の文書を参照してください。
 
@@ -98,7 +98,7 @@ tags:
 
 :::tip
 
-**チューニングチップ**
+**チューニングTips**
 
 主要なテーブルを把握し、アーキテクチャ、バックアップ設計などの主要な対象を検討してください。
 
@@ -123,7 +123,7 @@ AnalyzeとVacuum実行の日付が古いオブジェクトの一覧です。
 
 :::tip
 
-**チューニングチップ**
+**チューニングTips**
 
 日付の古いテーブルは、統計情報が不正確である可能性があります。 実行を検討してください。 詳細については、[次の文書](https://www.enterprisedb.com/blog/postgresql-vacuum-and-analyze-best-practice-tips)を参照してください。
 
@@ -143,16 +143,16 @@ AnalyzeとVacuum実行の日付が古いオブジェクトの一覧です。
 | `last_vacuum`         | テーブルが手動でバキューム(vacuum)した最後の時間(VACUUM FULLは該当しない) |
 | `autoanalyze_count`   | autovacuumデーモンで分析した回数                           |
 | `autovacuum_count`    | autovacuumデーモンでバキューム(vacuum)した回数                |
-| `vacuum_count`        | 手動でバキューム(vacuum)した回数(VACUUM FULLは除外)            |
+| `vacuum_count`        | 手動でバキューム(vacuum)した回数(VACUUM FULLを除く)            |
 | `n_mod_since_analyze` | 最後の分析(analyze)以後変更された行数(推定値)                    |
 
 ## Age
 
-PostgreSQLからはXID(transaction id)を循環的に使用して、ある時点でXIDがラップアラウンド(Wraparound)されることがあります。 これを防止するために`xid_age`(Current XID - 作成時点のXID)が増え続けないように管理されなければなりません。 `autovacuum_freeze_max_age`を超過するとAnti-Wraparound Vacuumを自動的に行うようになり`autovacuum_freeze_max_age`以下で`xid_age`を管理します。
+PostgreSQLではXID(transaction id)を循環的に使用しているため、ある時点でXIDがラップアラウンド(Wraparound)されることがあります。 この現象を防止するために、`xid_age`(Current XID - 作成時点のXID)が増え続けないように管理する必要があります。 `autovacuum_freeze_max_age`を超えたらAnti-Wraparound Vacuumが自動的に行わるため、`autovacuum_freeze_max_age`以下で`xid_age`を管理します。
 
 :::tip
 
-**チューニングチップ**
+**チューニングTips**
 
 `xid_age`を下げるためにはVacuumの実行を検討してください。 詳細については、[次の文書](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND)を参照してください。
 
@@ -177,7 +177,7 @@ Dead tupleはDeleteやUpdateですでに削除された資料です。 free spac
 
 :::tip
 
-**チューニングチップ**
+**チューニングTips**
 
 Dead tupleを減らすためにはVacuum実行を検討してください。 詳細については、[次の文書](https://www.postgresql.org/docs/current/routine-vacuuming.html)を参照してください。
 
@@ -185,17 +185,17 @@ Dead tupleを減らすためにはVacuum実行を検討してください。 詳
 
 次は<span class="uitext">Dead Tuple</span>を照会すると表示されるカラム項目です。
 
-| カラム名                  | 説明                                  |
-| --------------------- | ----------------------------------- |
-| `datname`             | データベース名                             |
-| `schemaname`          | スキーマ(schema)名                       |
-| `tablename`           | テーブル名                               |
-| `dead_tuple`          | DeleteやUpdate等により使用しないタプル(Tuple)の個数 |
-| `dead_tuple_ratio`    | 使用しないタプル(Tuple)の割合                  |
-| `live_tuple`          | 使用するタプル(Tuple)の個数                   |
-| `live_tuple_ratio`    | 使用するタプル(Tuple)の割合                   |
-| `total_relation_size` | リレーションの全体サイズ、インデックスとTOASTデータを含む     |
-| `total_tuple`         | 全てのタプル(Tuple)の個数                    |
+| カラム名                  | 説明                                 |
+| --------------------- | ---------------------------------- |
+| `datname`             | データベース名                            |
+| `schemaname`          | スキーマ(schema)名                      |
+| `tablename`           | テーブル名                              |
+| `dead_tuple`          | DeleteやUpdate等により使用しないタプル(Tuple)の数 |
+| `dead_tuple_ratio`    | 使用しないタプル(Tuple)の割合                 |
+| `live_tuple`          | 使用するタプル(Tuple)の数                   |
+| `live_tuple_ratio`    | 使用するタプル(Tuple)の割合                  |
+| `total_relation_size` | リレーションの全体サイズ、インデックスとTOASTデータを含む    |
+| `total_tuple`         | 全体タプル(Tuple)の数                     |
 
 ## エージェント設定{#set-agent-topObject}
 

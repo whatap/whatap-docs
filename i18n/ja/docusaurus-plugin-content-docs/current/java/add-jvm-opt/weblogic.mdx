@@ -7,8 +7,7 @@ tags:
   - WebLogic
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+## JVMオプションの追加
 
 WebLogicを使用するアプリケーションサーバ環境でJVMオプションを追加する手順を参照ください。 
 
@@ -55,5 +54,9 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 {@include: _java-17.mdx} 
 
 :::
+
+{@include: _set-heap-memory.mdx}
+
+## モニタリングの開始
 
 {@include: ../../common-items/_start-apm.mdx} 

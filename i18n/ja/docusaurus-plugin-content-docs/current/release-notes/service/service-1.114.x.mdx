@@ -5,6 +5,118 @@ toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_112_x
 ---
 
+## Service 1.114.8
+
+2023年12月12日
+
+<div class='indentTab'>
+
+### `共通`
+
+<p><Status>Fixed</Status> <Cmdname sid="my_usage" className="uitext" />メニューで使用量集計時、時間当たりコア数集計基準の修正(コンテナの場合、小数点以下にコア数を割り当てるため)</p>
+
+* * *
+
+### `URL`
+
+<p><Status>Fixed</Status> <Cmdname sid="url_list" className="uitext" />メニューで<Cmdname sid="card_view" className="uitext" />モード時、ステータスに応じたフィルタリングが適用されない問題を修正</p>
+
+</div>
+
+## Service 1.114.7
+
+2023年12月08日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="dashboard" />
+
+<p><Status>Fixed</Status>ブラウザ画面のサイズが調整された場合<Cmdname sid="AA001" className="uitext" />ウィジェットのチャートが表示されない問題を修正</p>
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status> <Cmdname sid="payment_information" className="uitext" />メニューで<Cmdname sid="billing_reception_info" className="uitext" />項目を設定すると、事業者登録番号が初期化される問題を修正</p>
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+<p><Status>Changed</Status> <span class="uitext">SQL Elapsed Map</span>ウィジェットのデータ照会範囲を1時間に制限するように変更</p>
+
+</div>
+
+## Service 1.114.6
+
+2023年12月07日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />メニューで次のウィジェットのデータエラーを修正
+
+    -   **_Total Container CPU Request_**: プロジェクト内部のすべてのコンテナのCPU Request(`cpu_request`) 値の合計
+    -   **_Total Container CPU Usage_**: プロジェクト内部のすべてのコンテナのCPU Usage(`cpu_total_milli`) 値の合計
+    -   **_Total Container Memory Request_**: プロジェクト内部のすべてのコンテナのMemory Request(`mem_request`) 値の合計
+    -   **_Total Container Memory Usage_**: プロジェクト内部のすべてのコンテナのMemory Usage(`mem_working_set`) 値の合計
+
+-   <Status>Fixed</Status> 次のメニューでプロジェクト照会権限のないネームスペースプロジェクトに移動可能なバグを修正
+
+    -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="namespace_status" className="uitext" />
+    -   <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="namespace_management" className="uitext" />
+
+-   <Status>Changed</Status> <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />メニューでウィジェットを移動できないように固定レイアウトに変更
+
+* * *
+
+### `Browser`
+
+<p><Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />メニューで発生するホワイトアウト、ブラウザ停止問題を修正</p>
+
+:::note
+
+この現象は、ユーザーのブラウザから別のタブに切り替えてから一定時間(約1時間)が経過してから現在のタブ(<Cmdname sid="rumDashboard" className="uitext" />)に戻る場合に発生します。
+
+:::
+
+* * *
+
+### `Log`
+
+-   <Status>Fixed</Status> <Cmdname sid="log_search" className="uitext" />メニューでフィルター機能の誤作動を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="log" className="uitext" />メニューで<Cmdname sid="realtime_log_event" className="uitext" />追加時<Cmdname sid="alert_object_filtering" className="uitext" />項目を<Cmdname sid="metrics_rule_direct" className="uitext" />から<Cmdname sid="metrics_rule_select" className="uitext" />に変更すると、既存に入力した値を初期化するように修正
+
+</div>
+
+## Service 1.114.5
+
+2023年12月05日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### MongoDB / Redis
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />メニューでウィジェットの<LinkImage img="ico-setting.svg" className="ico" />ボタンをクリックすると指標名が検索されない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューで長時間照会するとブラウザでリスポンスなし現象が発生する問題を修正
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューで指標が照会されないインスタンスはリストに表示されないように修正
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> <Cmdname sid="log_search" className="uitext" />メニューで左カテゴリのリストの項目が断続的に変わる現象を修正</p>
+
+</div>
+
 ## Service 1.114.4
 
 2023年12月01日
@@ -181,7 +293,7 @@ pagination_next: release-notes/service/service-1_112_x
 
 -   <Status>Fixed</Status><Cmdname sid="server_list" className="uitext" />メニューから<Cmdname sid="compare" className="uitext" />オプションを活性化し、比較するサーバーのチェックボックスを選択すると、スクロール位置が初期化される問題を修正
 
--   <Status>Fixed</Status><Cmdname sid="serverDetail" className="uitext" />メニューで時系列チャートのx軸表示単位が'日(day)'ならば'HH:MM'形式ではない日付(MM/DD)形式で表示するように修正
+-   <Status>Fixed</Status><Cmdname sid="serverDetail" className="uitext" />メニューで時系列チャートのx軸表示単位が'日(day)'の場合、'HH:MM'形式ではなく日付(MM/DD)形式で表示するように修正
 
 -   <Status>Fixed</Status><Cmdname sid="serverDetail" className="uitext" />メニューから<Cmdname sid="sms_summary_process" className="uitext" />テーブルの最大(max)数値が断続的に誤った値が表示される問題を修正
 

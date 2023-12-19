@@ -52,7 +52,7 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
 
-<!-- 공통 Notes -->
+<!-- 공통 Notes-->
 
 {@include: ../common-items/_db-install-agent-common-notes.mdx}
 
@@ -87,6 +87,9 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
     ```bash title='Example'
     ./uid.sh whatap whatap\!pwd
+
+    # 特殊文字が2つ以上の場合、それぞれエスケープ文字を追加
+    ./uid.sh whatap whatap\!\@pwd
     ```
 
 :::

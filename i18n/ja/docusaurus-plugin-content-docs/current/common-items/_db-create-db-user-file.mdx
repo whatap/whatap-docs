@@ -17,9 +17,12 @@ _uid.sh_シェルスクリプトファイル(または_uid.bat_バッチファ�
 -   Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力する必要があります。
 -   `DB_USER`または`DB_PASSWORD`に特殊文字が含まれている場合、特殊文字の前にEscape Character(\\)を入力してください。
 
-```bash title='Example'
-./uid.sh whatap whatap\!pwd
-```
+    ```bash title='Example'
+    ./uid.sh whatap whatap\!pwd
+
+    # 特殊文字が2つ以上の場合、それぞれエスケープ文字を追加
+    ./uid.sh whatap whatap\!\@pwd
+    ```
 
 :::
 

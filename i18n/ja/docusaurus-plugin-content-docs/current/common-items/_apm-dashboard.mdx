@@ -1,14 +1,14 @@
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_アプリケーションダッシュボード_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" />
 
 <ImgLang img='apm-dashboard.png' desc='アプリケーションダッシュボード'/>
 
-**_アプリケーションダッシュボード_**では、アプリケーションの主要な指標をエージェントを通じて収集し、チャートを構成してリアルタイムでモニタリングし、過去のデータを表示することができます。ダッシュボードに配置されたウィジェットを使用してアプリケーションの問題を素早く特定して分析することができます。
+<Cmdname sid="application_dashboard" className="uitext" />では、アプリケーションの主要な指標をエージェントを通じて収集し、チャートを構成してリアルタイムでモニタリングし、過去のデータを表示することができます。ダッシュボードに配置されたウィジェットを使用してアプリケーションの問題を素早く特定して分析することができます。
 
 CPU、Memoryを除く一般的なチャートの場合、安定したデータは青色の系列で表現され、問題として識別される要素は赤色の系列で表示されるため、現状を簡単に認識できます。
 
 ## 過去のデータ参照
 
-**_アプリケーションダッシュボード_**は基本的にリアルタイムモニタリング機能を提供しますが、過去の時間のデータを表示することもできます。
+<Cmdname sid="application_dashboard" className="uitext" />は基本的にリアルタイムモニタリング機能を提供しますが、過去の時間のデータを表示することもできます。
 
 |                    リアルタイムモード                    |                       非リアルタイムモード                      |
 | :---------------------------------------------: | :---------------------------------------------------: |
@@ -20,7 +20,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
     <ImgLang img='apm-timeselector-setting.png' desc='手動で時刻を設定してください' />
 
-3.  **_適用_**ボタンを選択します。
+3.  <Cmdname sid="apply" className="uitext" />ボタンを選択してください。
 
 ユーザーが設定した時間に基づいてダッシュボードに配置したウィジェットのデータを更新します。リアルタイムモードに切り替えるには![再生アイコン](/img/ico-play-time.svg)ボタンを選択してください。
 
@@ -64,15 +64,15 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 エージェント設定で分類されたグループ単位でエージェントを選択してモニタリングできます。
 
--   **_エージェント_**: 個別エージェントを選択またはすべて選択できます。
+-   <Cmdname sid="ITM06005" className="uitext" />: 個別エージェントを選択またはすべて選択できます。
 
--   **_タスク別_**: エージェント設定で`whatap.okind`に分類されたグループ単位でエージェントをモニタリングします。
+-   <Cmdname sid="ITM06006" className="uitext" />: エージェント設定で<code>whatap.okind</code>に分類されたグループ単位でエージェントをモニタリングします。
 
--   **_サーバー別_**: エージェント設定で`whatap.onode`に分類されたグループ単位でエージェントをモニタリングします。
+-   <Cmdname sid="ITM06007" className="uitext" />: エージェント設定で<code>whatap.onode</code>に分類されたグループ単位でエージェントをモニタリングします。
 
--   **_タスク別エージェント_**: エージェント設定で`whatap.okind`に分類されたエージェントの一覧のみをモニタリングします。
+-   <Cmdname sid="ITM06008" className="uitext" />: エージェント設定で<code>whatap.okind</code>に分類されたエージェントの一覧のみをモニタリングします。
 
--   **_サーバー別エージェント_**: エージェント設定で`whatap.onode`に分類されたエージェントの一覧のみをモニタリングします。
+-   <Cmdname sid="ITM06009" className="uitext" />: エージェント設定で<code>whatap.onode</code>に分類されたエージェントの一覧のみをモニタリングします。
 
 :::note
 
@@ -100,7 +100,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 <ImgLang img='apm-dashboard-widget-remove.png' desc='ウィジェットを削除する' />
 
-削除するウィジェットで右クリックします。**_削除_**ボタンをクリックすると、ウィジェットがダッシュボードから削除されます。
+削除するウィジェットで右クリックします。<Cmdname sid="delete" className="uitext" />ボタンをクリックすると、ウィジェットがダッシュボードから削除されます。
 
 ### ウィジェットを追加する
 
@@ -118,7 +118,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 ![プリセット](/img/apm-dashboard-preset-default.png)
 
-ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。基本プリセット(**_Default_**)は変更できず、目的の形式でウィジェットのサイズを変更して配置して新しいプリセットを作成できます。
+ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。基本プリセット(<Cmdname sid="kube_default" className="uitext" />)は変更できず、目的の形式でウィジェットのサイズを変更して配置して新しいプリセットを作成できます。
 
 ### 新しいプリセットを作成する
 
@@ -130,7 +130,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
     <ImgLang img='apm-dashboard-preset-save.png' desc='プリセット保存' />
 
-4.  **_保存_**ボタンを選択します。
+4.  <Cmdname sid="save" className="uitext" />ボタンを選択してください。
 
 プリセット一覧から新しく保存したプリセットを確認できます。
 
@@ -152,9 +152,9 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 ウィジェットの右上に表示されているアイコンボタンの機能は次のとおりです。
 
--   ![マージアイコン](/img/ico-data-merge.svg)**_マージ/個別表示_**: ウィジェット項目のエージェント データを個別またはマージしてグラフで表示します。
+-   ![マージアイコン](/img/ico-data-merge.svg)<Cmdname sid="TLT06734" className="uitext" />: ウィジェット項目のエージェント データを個別またはマージしてグラフで表示します。
 
--   ![詳細アイコン](/img/ico-detail.svg)**_詳細_**: ウィジェット項目のデータをエージェント別に区分して個別にモーダルウィンドウが表示されます。
+-   ![詳細アイコン](/img/ico-detail.svg)<Cmdname sid="detail" className="uitext" />: ウィジェット項目のデータをエージェント別に区分して個別にモーダルウィンドウが表示されます。
 
 :::note
 
@@ -166,7 +166,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 :::info
 
-この文書では、**_アプリケーションダッシュボード_**に配置されたウィジェットに関する説明に焦点を当てます。**_アプリケーションダッシュボード_**を使用してトランザクションおよびユーザー、サービス、リソース分析方法の詳細については、次の文書を参照してください。
+この文書では、<Cmdname sid="application_dashboard" className="uitext" />に配置されたウィジェットに関する説明に焦点を当てます。<Cmdname sid="application_dashboard" className="uitext" />を使用してトランザクションおよびユーザー、サービス、リソース分析方法の詳細については、次の文書を参照してください。
 
 -   [アプリケーションダッシュボードを確認する](../best-practice-guides/about-apm-dashboard)
 
@@ -180,7 +180,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 アプリケーションにインストールしたエージェントを使用して、アプリケーションの情報を確認できます。
 
-#### アプリケーションの概要
+#### <Cmdname sid="AA003" />
 
 <ImgLang img='agent-dashboard-summary.png' desc='アプリケーション概要' />
 
@@ -190,17 +190,17 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 トランザクションを使用して確認できるトラブルの状態は、応答時間を通じて知ることができます。 また、進行中のトランザクションが終了しない場合もトラブルとして認識する必要があります。WhaTapは、進行中の状態の時間に基づいて区間を分けて表示します。<span class='normal'>青色(Normal)</span>は応答時間が正常なトランザクション、<span class='slow'>橙色(Slow)</span>は応答時間が8秒程度の遅いトランザクション、<span class='vslow'>赤色(Very slow)</span>は、応答時間が通常の 2 倍以上に遅いトランザクションを意味します。これにより、ユーザーは直感的に素早くトラブルを認識できます。
 
-#### アクティブトランザクションスピード
+#### <Cmdname sid="AA001" />
 
 ![アクティブトランザクションスピード](/img/speedmeter.png)
 
 現在進行中のトランザクション(中央領域)と終了したトランザクション(右領域)の状態を確認できます。左から右に流れる水玉模様のアイコンは、トランザクションを意味します。アクティブトランザクションの状態を速度(<span class='normal'>Normal</span>、<span class='slow'>Slow</span>、<span class='vslow'>Very Slow</span>)で色分けして右上に数値として表示されます。 
 
-#### アクティブトランザクション{#active-trs}
+#### <Cmdname sid="AA002" /> {#active-trs}
 
 <ImgLang img='apm-dashboard-active-tx.png' desc='アクティブトランザクション' />
 
-**_アクティブトランザクション_**ウィジェットでは、進行中のトランザクションを**アークイコライザー**チャートで表現します。遅延発生状況をエージェントごとに確認できます。エージェント数だけアークが分割されます。5秒ごとに現在サーバーで処理中のリクエストの数を表現して、そのリクエストがそれぞれどのくらいの時間で処理中なのかを知ることができます。5秒間隔で検出されたリクエストは、危険かどうかを把握できるように次のように色で分類します。
+<Cmdname sid="AA002" className="uitext" />ウィジェットでは、進行中のトランザクションを<b>アークイコライザー</b>チャートで表現します。遅延発生状況をエージェントごとに確認できます。エージェント数だけアークが分割されます。5秒ごとに現在サーバーで処理中のリクエストの数を表現して、そのリクエストがそれぞれどのくらいの時間で処理中なのかを知ることができます。5秒間隔で検出されたリクエストは、危険かどうかを把握できるように次のように色で分類します。
 
 -   赤色(<span class='vslow'>Very Slow</span>)：8秒以上 
 
@@ -222,25 +222,25 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
     :::note
 
-    -   トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、**_トランザクションの表示_**ボタンを選択してください。**_トランザクション情報_**ウィンドウが表示されます。**_トランザクション情報_**ウィンドウの詳細については[次の文書](trs-profile)を参照してください。
+    -   トランザクション一覧で選択した項目が既に終了しているトランザクションの場合は、<Cmdname sid="show_trace" className="uitext" />ボタンを選択してください。<Cmdname sid="TTL06527" className="uitext" />ウィンドウが表示されます。<Cmdname sid="TTL06527" className="uitext" />ウィンドウの詳細については<Link to="trs-profile">次の文書</Link>を参照してください。
 
     -   トランザクションの詳細については、[次の文書](track-transactions-intro)を参照してください。
 
     :::
 
-#### アクティブ状態{#active-status}
+#### <Cmdname sid="AA004" /> {#active-status}
 
 <ImgLang img='apm-dashboard-active-status.png' desc='アクティブステータス' />
 
-プロジェクト内のすべてのエージェントは、5 秒ごとにアクティブトランザクション数を収集すると同時に進捗状況を収集します。進行状態は**_METHOD_**、**_SQL_**、**_HTTPC_**、**_DBC_**、**_SOCKET_**に分類できます。
+プロジェクト内のすべてのエージェントは、5 秒ごとにアクティブトランザクション数を収集すると同時に進捗状況を収集します。進行状態は<Cmdname sid="active_stat_method" className="uitext" />、<Cmdname sid="sql" className="uitext" />、<Cmdname sid="active_stat_httpc" className="uitext" />、<Cmdname sid="active_stat_dbc" className="uitext" />、<Cmdname sid="active_stat_socket" className="uitext" />に分類できます。
 
--   **_METHOD_**: メソッドが実行中の状態です。一般的な状況として青色で表示されます。
+-   <Cmdname sid="active_stat_method" className="uitext" />: メソッドが実行中の状態です。一般的な状況として青色で表示されます。
 
--   **_SQL_**: SQLが実行中の状態です。**_SQL_**数の増加が見られる場合は、データベースサーバーとの接続を確認してください。
+-   <Cmdname sid="sql" className="uitext" />: SQLが実行中の状態です。<Cmdname sid="sql" className="uitext" />数の増加が見られる場合は、データベースサーバーとの接続を確認してください。
 
--   **_HTTPC_**: 外部APIを呼び出している状態です。**_HTTPC_** 数が増加した場合は、外部接続されたサーバーの応答が正しく行われていないことを意味します。
+-   <Cmdname sid="active_stat_httpc" className="uitext" />: 外部APIを呼び出している状態です。<Cmdname sid="active_stat_httpc" className="uitext" /> 数が増加した場合は、外部接続されたサーバーの応答が正しく行われていないことを意味します。
 
--   **_DBC_**: トランザクションがConnection Poolから新しいConnectionを獲得(get)しようとしている状態です。DB Connection Poolの数が不足すると、新しい接続リクエストが発生するたびに遅延が発生し、性能トラブルの原因となります。この場合、**_DBC_**の数値が増加します。
+-   <Cmdname sid="active_stat_dbc" className="uitext" />: トランザクションがConnection Poolから新しいConnectionを獲得(get)しようとしている状態です。DB Connection Poolの数が不足すると、新しい接続リクエストが発生するたびに遅延が発生し、性能トラブルの原因となります。この場合、<Cmdname sid="active_stat_dbc" className="uitext" />の数値が増加します。
 
     :::note
 
@@ -248,13 +248,13 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
     :::
 
--   **_SOCKET_**: 外部システムとのTCP接続の試行を意味します。**_SOCKET_** 数値が持続的に増加する場合は、外部システムとの接続がないために、障害が発生している可能性があります。
+-   <Cmdname sid="active_stat_socket" className="uitext" />: 外部システムとのTCP接続の試行を意味します。<Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続がないために、障害が発生している可能性があります。
 
-#### ヒットマップ
+#### <Cmdname sid="AA005" />
 
 <ImgLang img='hitmap.png' desc='ヒットマップ' />
 
-**_ヒットマップ_**チャートは、終了したトランザクション応答時間を分布図で表現します。横軸はトランザクション終了時間です。縦軸は実行時間です。実行時間の長いトランザクションは、分布図の上部に位置します。**_ヒットマップ_**内のチャート領域をドラッグすると、詳細なトランザクション情報が確認できる**_トレース分析_**ウィンドウが表示されます。**_トレース分析_**の詳細については [次の文書](dashboard-hitmap-trace)を参照してください。
+<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクション応答時間を分布図で表現します。横軸はトランザクション終了時間です。縦軸は実行時間です。実行時間の長いトランザクションは、分布図の上部に位置します。<Cmdname sid="AA005" className="uitext" />内のチャート領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />ウィンドウが表示されます。<Cmdname sid="TTL06209" className="uitext" />の詳細については <Link to="dashboard-hitmap-trace">次の文書</Link>を参照してください。
 
 -   通常のトランザクションは水色→青色→紺色の順に表現されます。
 
@@ -262,9 +262,9 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 -   画面の右上の数字はチャート内の<span class='normal'>トランザクション数と</span>/<span class='slow'>エラー数</span>を意味します。
 
--   **_Y軸自動_**ボタンを選択すると、実行時間を示すように、Y軸が自動的に調整されます。
+-   <Cmdname sid="yaxis" className="uitext" />ボタンをタップすると、実行時間を示すY軸を自動調整します。
 
--   **_エラー_**ボタンを選択すると、エラートランザクションのみ表示します。
+-   <Cmdname sid="err" className="uitext" />ボタンを選択すると、エラートランザクションのみ表示します。
 
 -   ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択すると、5秒~80秒でチャートを拡大／縮小することができます。
 
@@ -284,19 +284,19 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 サービス関連ウィジェットは、アプリケーションのパフォーマンスチューニングの指標として使用できます。
 
-#### Apdex
+#### <Cmdname sid="apdex" />
 
 ![Apdex](/img/apm-dashboard-apdex.png)
 
-{@include: ../common-items/_java-apdex-desc.mdx}
+{@include: ../common-items/_java-apdex-desc.mdx} 
 
 :::note
 
-満足したSのデフォルト値は、**_管理_** > **_エージェント設定_**メニューから変更できます。 設定キーの値は、`apdex_time`です。 エージェントバージョン2.0以降からサポートします。
+満足したSのデフォルト値は、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューから変更できます。 設定キーの値は、`apdex_time`です。 エージェントバージョン2.0以降からサポートします。
 
 :::
 
-#### TPS
+#### <Cmdname sid="tps" />
 
 ![TPS](/img/apm-dashboard-tps.png)
 
@@ -308,11 +308,11 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 :::
 
-#### 平均応答時間
+#### <Cmdname sid="avg_restime" />
 
 <ImgLang img='apm-dashboard-avg-response-time.png' desc='平均応答時間'/>
 
-アプリケーションサーバーがユーザーにリクエスト結果を返すのに掛かる時間をリアルタイムでモニタリングします。**_平均応答時間_**は、チューニング指標として意味があります。WhaTapのモニタリングサービスは、5秒間隔でトランザクションの平均応答時間を計算します。
+アプリケーションサーバーがユーザーにリクエスト結果を返すのに掛かる時間をリアルタイムでモニタリングします。<Cmdname sid="avg_restime" className="uitext" />は、チューニング指標として意味があります。WhaTapのモニタリングサービスは、5秒間隔でトランザクションの平均応答時間を計算します。
 
 :::note
 
@@ -322,7 +322,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 ### リソース関連ウィジェット
 
-#### システムCPU
+#### <Cmdname sid="system_cpu" />
 
 <ImgLang img='apm-dashboard-cpu.png' desc='システムCPU' />
 
@@ -334,13 +334,13 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 :::
 
-#### ヒープメモリ{#heap-memory}
+#### <Cmdname sid="AA010" /> {#heap-memory}
 
 <ImgLang img='apm-dashboard-heap-memory.png' desc='ヒープメモリ' />
 
 各サーバーごとに使用可能な最大メモリと現在のメモリを表示して、危険な数値にあるサーバーを確認できます。時間の経過に伴うメモリ使用量の変化をリアルタイムで確認できます。
 
-メモリ折れ線チャートは通常、波線を続けます。アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。GC(Garbage Collection)によってメモリをクリーンアップすると減少します。**_ヒープメモリー_**指標は平均値を使用して表示します。
+メモリ折れ線チャートは通常、波線を続けます。アプリケーションサーバーがリクエストを処理するためにメモリを使用するとメモリ折れ線チャートは増加します。GC(Garbage Collection)によってメモリをクリーンアップすると減少します。<Cmdname sid="AA010" className="uitext" />指標は平均値を使用して表示します。
 
 :::note
 
@@ -364,7 +364,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 ### ユーザー関連ウィジェット
 
-#### 同時接続ユーザー
+#### <Cmdname sid="realtime_user" />
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='同時接続ユーザー' />
 
@@ -388,17 +388,17 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 ### 1日基準比較ウィジェット
 
-#### 本日TPS
+#### <Cmdname sid="today_tps" />
 
 <ImgLang img='apm-dashboard-today-tps.png' desc='本日TPS' />
 
-1日のTPSを時間帯別に表示します。昨日の同時間帯のTPS(グレー)と比較して確認できます。![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、**_統計/レポート_** > **_日付別アプリケーションの状態_**メニューに移動します。
+1日のTPSを時間帯別に表示します。昨日の同時間帯のTPS(グレー)と比較して確認できます。![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
 
-#### 本日ユーザー
+#### <Cmdname sid="daily_visit" />
 
 <ImgLang img='apm-dashboard-today-users.png' desc='本日ユーザー' />
 
-一日あたりの**_同時接続ユーザー_**の数を時間帯別に表した指標です。昨日の同時ユーザー数(グレー)と比較して確認できます。![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、**_統計/レポート_** >**_日付別アプリケーションの現況_**メニューに移動します。
+一日あたりの<Cmdname sid="realtime_user" className="uitext" />の数を時間帯別に表した指標です。昨日の同時ユーザー数(グレー)と比較して確認できます。![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
 
 ## リアルタイム通知の確認
 

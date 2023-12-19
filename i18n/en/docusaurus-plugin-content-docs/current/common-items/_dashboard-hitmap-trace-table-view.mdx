@@ -60,7 +60,17 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 
 </InDoc>
 
--   ![Column icon](/img/ico-column.svg) **_Select Column_**: You can add or hide the memory accumulation and CPU accumulation data as columns in the table list.
+-   ![Column icon](/img/ico-column.svg) **_Select Column_**: You can add or hide the memory accumulation and CPU accumulation data as columns in the table list. The columns are as follows:
+
+    -   **_No_**: Step occurrence sequence
+
+    -   **_Time_**: Start time of each step
+
+    -   **_Gap_**: There may be a difference between the waiting time from the step start to the next step and the elapsed time if delayed due to external issues.
+
+    -   **_Elapsed_**: Total elapsed time from the start to the end of each method
+
+    -   **_Contents_**: Execution details of the step
 
 -   ![Download icon](/img/ico-download.svg) **_TXT_**: You can download basic transaction data and execution data for each section in a text file.
 
@@ -69,18 +79,3 @@ In the **_Table view_** tab, you can see the transaction execution steps in chro
 -   ![Zoom in icon](/img/ic-outside.svg): You can see only the table list, with hiding the transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when you have a long list of tables.
 
 -   If you select the SQL step, the **_SQL_** window appears to display parameters. For more information, see [the following](#transaction-parameter).
-
-<details>
-<summary> Column information guide</summary>
-
--   **_No_**: Step occurrence sequence
-
--   **_Time_**: Start time of each step
-
--   **_Gap_**: There may be a difference between the waiting time from the step start to the next step and the elapsed time if delayed due to external issues.
-
--   **_Elapsed_**: Total elapsed time from the start to the end of each method
-
--   **_Contents_**: Execution details of the step
-
-</details>

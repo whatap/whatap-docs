@@ -1,7 +1,15 @@
 1.  Set the transaction start point as follows: 
 
-    ```bash
+    ```ini title="whatap.conf"
     hook_service_patterns=com.virtual.web.SimulaNonHttp.process
     ```
 
-2.  Restart it. The `process()` method becomes the **end point** of a new transaction.
+2.  Restart the application. 
+
+The `process()` method becomes the **end point** of a new transaction.
+
+:::note
+
+For the `hook_service_patterns` option, wildcard characters cannot be used. To set multiple values, use comma (,) as the delimiter.
+
+:::
