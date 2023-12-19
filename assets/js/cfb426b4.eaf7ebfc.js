@@ -318,7 +318,7 @@ const metadata = {
     "unversionedId": "release-notes/service/service-1_114_x",
     "id": "release-notes/service/service-1_114_x",
     "title": "Service 1.114.x",
-    "description": "Service 1.114.10",
+    "description": "Service 1.114.11",
     "source": "@site/docs/release-notes/service/service-1.114.x.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-1_114_x",
@@ -345,6 +345,11 @@ const metadata = {
 };
 const assets = {};
 const toc = [
+    {
+        value: 'Service 1.114.11',
+        id: 'service-111411',
+        level: 2
+    },
     {
         value: 'Service 1.114.10',
         id: 'service-111410',
@@ -691,6 +696,24 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "service-111411"
+    }, `Service 1.114.11`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 19일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "my_usage",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "payment_information",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "Service 1.104.17"), "(국가 선택, 청구 통화 선택 기능 추가) 릴리스 이전에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "credit_card_iamport",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 결제 수단을 선택한 고객에게 USD 통화가 고정되는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "service-111410"
     }, `Service 1.114.10`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 18일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
