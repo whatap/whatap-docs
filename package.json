@@ -45,6 +45,7 @@
     "google-auth-library": "^0.10.0",
     "googleapis": "^19.0.0",
     "medium-zoom": "^1.0.6",
+    "meilisearch-docsearch": "^0.6.0",
     "node-sass": "^8.0.0",
     "npm-check-updates": "^16.10.12",
     "pdf-lib": "^1.17.1",
