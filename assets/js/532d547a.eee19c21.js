@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[66276],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[85198],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 63888:
+/***/ 8122:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,39 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-2_2_15',
-    title: 'Java Agent v2.2.15',
+    id: 'java-batch-2_2_22',
+    title: 'Java Batch Agent v2.2.22',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_14'
+    pagination_next: 'release-notes/java-batch/java-batch-2_2_21'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_15",
-    "id": "release-notes/java/java-2_2_15",
-    "title": "Java Agent v2.2.15",
-    "description": "2023년 8월 31일",
-    "source": "@site/docs/release-notes/java/java-2.2.15.mdx",
-    "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_15",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_15",
+    "unversionedId": "release-notes/java-batch/java-batch-2_2_22",
+    "id": "release-notes/java-batch/java-batch-2_2_22",
+    "title": "Java Batch Agent v2.2.22",
+    "description": "2023년 12월 20일",
+    "source": "@site/docs/release-notes/java-batch/java-batch-2.2.22.mdx",
+    "sourceDirName": "release-notes/java-batch",
+    "slug": "/release-notes/java-batch/java-batch-2_2_22",
+    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_22",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.15.mdx",
+    "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.22.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-2_2_15",
-        "title": "Java Agent v2.2.15",
+        "id": "java-batch-2_2_22",
+        "title": "Java Batch Agent v2.2.22",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_14"
+        "pagination_next": "release-notes/java-batch/java-batch-2_2_21"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Java Agent v2.2.16",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_16"
+        "title": "Java Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/java/java-previous"
     },
     "next": {
-        "title": "Java Agent v2.2.14",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_14"
+        "title": "Java Batch Agent v2.2.21",
+        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21"
     }
 };
 const assets = {};
@@ -350,7 +350,6 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
 const Status = makeShortcode("Status");
-const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -362,77 +361,17 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 8월 31일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 20일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Feature"), " kafka-clients-2.4.0 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, "Feature"), " SQL 파라미터 수집 범위 확대", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `weaving=kafka-clients-2.4.0
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 특정 에러 코드를 가진 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "java.sql.SQLException"), " 무시 기능 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# example
-ignore_sql_error_code_set=22001,2009
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 트랜잭션에서 에러 스택 표시 기능 추가: 트랜잭션에서 여러 개의 에러 발생 시 첫번째 에러의 스택 표시", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `트랜잭션 에러 스택에 대한 자세한 내용은 다음 문서를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
-        to: "../../java/agent-transaction-error-stack",
-        target: "_blank",
-        className: "ext-link",
-        mdxType: "Link"
-    }, "트랜잭션 에러 스택")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "java.sql.SQLException"), " 발생 시 에러 코드 표시 기본값을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "true"), "로 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# default
-trace_sql_errorcode_enabled=true
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " 사용자 정의 exception을 우선하도록 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "trace_exception_overwrite_enabled"), " 기본값을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "true"), "로 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# default
-trace_exception_overwrite_enabled=true
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "java.util.Date"), " 타입의 SQL 파라미터 데이터 수집"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " Java 에이전트의 logsink 기능 사용 시 로그가 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "null"), "인 경우에 대한 처리 추가")));
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# default: false
+# requires agent restart
+hook_batch_pstmt_param_enabled=false
+`)));
 }
 MDXContent.isMDXComponent = true;
 

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[42919],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[59710],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 32057:
+/***/ 84416:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,39 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-batch-2_2_21',
-    title: 'Java Batch Agent v2.2.21',
+    id: 'java-2_2_25',
+    title: 'Java Agent v2.2.25',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java-batch/java-batch-2_2_20'
+    pagination_next: 'release-notes/java/java-2_2_24'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java-batch/java-batch-2_2_21",
-    "id": "release-notes/java-batch/java-batch-2_2_21",
-    "title": "Java Batch Agent v2.2.21",
-    "description": "2023년 11월 23일",
-    "source": "@site/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
-    "sourceDirName": "release-notes/java-batch",
-    "slug": "/release-notes/java-batch/java-batch-2_2_21",
-    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21",
+    "unversionedId": "release-notes/java/java-2_2_25",
+    "id": "release-notes/java/java-2_2_25",
+    "title": "Java Agent v2.2.25",
+    "description": "2023년 12월 20일",
+    "source": "@site/docs/release-notes/java/java-2.2.25.mdx",
+    "sourceDirName": "release-notes/java",
+    "slug": "/release-notes/java/java-2_2_25",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_25",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.25.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-batch-2_2_21",
-        "title": "Java Batch Agent v2.2.21",
+        "id": "java-2_2_25",
+        "title": "Java Agent v2.2.25",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java-batch/java-batch-2_2_20"
+        "pagination_next": "release-notes/java/java-2_2_24"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Java Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/java/java-previous"
+        "title": "WhaTap Mobile App v1.0.3 (52)",
+        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
     },
     "next": {
-        "title": "Java Batch Agent v2.2.20",
-        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
+        "title": "Java Agent v2.2.24",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_24"
     }
 };
 const assets = {};
@@ -361,11 +361,56 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 11월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 20일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 30초 이상 배치 작업이 진행되지 않으면 추적이 종료되는 현상 수정")));
+    }, "Feature"), " 로그 모니터링 자바애플리케이션 로그에 멀티 트랜잭션 아이디(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "@mtid"), " 태그) 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "logsink_enabled"), " 옵션 설정 시 트랜잭션 아이디와 멀티 트랜잭션 아이디를 수집할 수 있도록 수정 (기존: ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "logsink_trace_enabled"), " 옵션 추가)", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# default: false
+logsink_enabled=false
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " log4j 사용 시 appender를 기본 수집하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# requires agent restart
+weaving=log4j-2.17
+
+# example: collect Console, AccessLog, ErrorLog 
+trace_log4j_appender_set=Console,AccessLog,ErrorLog
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " logback 사용 시 appender를 기본 수집하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# requires agent restart
+weaving=logback-1.2.8
+
+# example: collect ErrorAppender, FileAppender log
+trace_logback_appender_set=ErrorAppender,FileAppender
+`)))));
 }
 MDXContent.isMDXComponent = true;
 

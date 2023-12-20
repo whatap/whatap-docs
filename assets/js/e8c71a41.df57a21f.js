@@ -366,18 +366,18 @@ const toc = [
         level: 2
     },
     {
-        value: 'Java 6 ~ 8',
-        id: 'java-6--8',
+        value: 'Java 6 ~ 8 버전',
+        id: 'java-6--8-버전',
         level: 3
     },
     {
-        value: 'Java 9 ~ 15',
-        id: 'java-9--15',
+        value: 'Java 9 ~ 15 버전',
+        id: 'java-9--15-버전',
         level: 3
     },
     {
-        value: 'Java 16 이상',
-        id: 'java-16-이상',
+        value: 'Java 16 버전 이상',
+        id: 'java-16-버전-이상',
         level: 3
     },
     {
@@ -461,8 +461,8 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "../install-check"
     }, `다음 문서`), `를 확인하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "java-6--8"
-    }, `Java 6 ~ 8`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        "id": "java-6--8-버전"
+    }, `Java 6 ~ 8 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-properties",
         "metastring": "title=\"resin.properties\"",
@@ -477,8 +477,8 @@ function MDXContent(_param) {
         "resin.xml\"": true
     }, `<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "java-9--15"
-    }, `Java 9 ~ 15`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        "id": "java-9--15-버전"
+    }, `Java 9 ~ 15 버전`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-properties",
         "metastring": "title=\"resin.properties\"",
@@ -494,8 +494,8 @@ function MDXContent(_param) {
     }, `<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
 <jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "java-16-이상"
-    }, `Java 16 이상`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        "id": "java-16-버전-이상"
+    }, `Java 16 버전 이상`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-properties",
         "metastring": "title=\"resin.properties\"",

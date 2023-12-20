@@ -317,7 +317,7 @@ const metadata = {
     "unversionedId": "release-notes/java/java-previous",
     "id": "release-notes/java/java-previous",
     "title": "Java Agent 지난 버전",
-    "description": "* Java Agent 2.2.14",
+    "description": "* Java Agent 2.2.15",
     "source": "@site/docs/release-notes/java/java-previous.mdx",
     "sourceDirName": "release-notes/java",
     "slug": "/release-notes/java/java-previous",
@@ -333,12 +333,12 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Java Agent v2.2.15",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_15"
+        "title": "Java Agent v2.2.16",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_16"
     },
     "next": {
-        "title": "Java Batch Agent v2.2.21",
-        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21"
+        "title": "Java Batch Agent v2.2.22",
+        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_22"
     }
 };
 const assets = {};
@@ -355,6 +355,13 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "java-2_2_15"
+    }, `Java Agent 2.2.15`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
