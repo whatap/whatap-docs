@@ -471,10 +471,10 @@ function MDXContent(_param) {
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-xml",
-        "metastring": "title=\"resin.conf | conf/resin.xml\"",
+        "metastring": "title=\"resin.conf | resin.xml\"",
         "title": "\"resin.conf",
         "|": true,
-        "conf/resin.xml\"": true
+        "resin.xml\"": true
     }, `<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "java-9--15"
@@ -487,10 +487,10 @@ function MDXContent(_param) {
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-xml",
-        "metastring": "title=\"resin.conf | conf/resin.xml\"",
+        "metastring": "title=\"resin.conf | resin.xml\"",
         "title": "\"resin.conf",
         "|": true,
-        "conf/resin.xml\"": true
+        "resin.xml\"": true
     }, `<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
 <jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
@@ -504,10 +504,10 @@ function MDXContent(_param) {
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-xml",
-        "metastring": "title=\"resin.conf | conf/resin.xml\"",
+        "metastring": "title=\"resin.conf | resin.xml\"",
         "title": "\"resin.conf",
         "|": true,
-        "conf/resin.xml\"": true
+        "resin.xml\"": true
     }, `<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
 <jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
 <jvm-arg>--add-opens=java.base/java.lang=ALL-UNNAMED</jvm-arg> <!-- Java 17 or later -->
