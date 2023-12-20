@@ -354,6 +354,11 @@ const toc = [
         level: 3
     },
     {
+        value: '<Cmdname sid="dashboard" />',
+        id: 'cmdname-siddashboard-',
+        level: 4
+    },
+    {
         value: '<Cmdname sid="my_usage" />',
         id: 'cmdname-sidmy_usage-',
         level: 4
@@ -367,6 +372,11 @@ const toc = [
         value: '<code>Kubernetes</code>',
         id: 'kubernetes',
         level: 3
+    },
+    {
+        value: '<Cmdname sid="resource" />',
+        id: 'cmdname-sidresource-',
+        level: 4
     },
     {
         value: '<code>Log</code>',
@@ -425,7 +435,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="dashboard" />',
-        id: 'cmdname-siddashboard-',
+        id: 'cmdname-siddashboard--1',
         level: 4
     },
     {
@@ -465,7 +475,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="dashboard" />',
-        id: 'cmdname-siddashboard--1',
+        id: 'cmdname-siddashboard--2',
         level: 4
     },
     {
@@ -530,7 +540,7 @@ const toc = [
     },
     {
         value: '<Cmdname sid="dashboard" />',
-        id: 'cmdname-siddashboard--2',
+        id: 'cmdname-siddashboard--3',
         level: 4
     },
     {
@@ -598,8 +608,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
-const Status = makeShortcode("Status");
 const Cmdname = makeShortcode("Cmdname");
+const Status = makeShortcode("Status");
 const LinkImage = makeShortcode("LinkImage");
 const Link = makeShortcode("Link");
 const layoutProps = {
@@ -631,13 +641,12 @@ function MDXContent(_param) {
         "id": "공통"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
-    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " 프로젝트 생성 과정에서 상품 선택 시 모든 제품을 의미하는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "All Platform"), " 문구를 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "All Category"), "로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "cmdname-siddashboard-"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dashboard",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "flexboard",
@@ -647,7 +656,7 @@ function MDXContent(_param) {
         sid: "event_list",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 위젯의 대시보드 필터가 정상 적용되도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }), " 위젯의 대시보드 필터가 정상 적용되도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "cmdname-sidmy_usage-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "my_usage",
@@ -678,19 +687,24 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
+    }, "Changed"), " 프로젝트 생성 과정에서 상품 선택 시 모든 제품을 의미하는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "All Platform"), " 문구를 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "All Category"), "로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
     }, "Changed"), " 다크 테마를 더 많은 메뉴에서 이용할 수 있도록 확장 적용했습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "kubernetes"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
-    }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "cmdname-sidresource-"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "resource",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "resource",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "node_list",
         className: "uitext",
         mdxType: "Cmdname"
@@ -703,10 +717,6 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "resource",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "performance_summary",
         className: "uitext",
         mdxType: "Cmdname"
@@ -939,7 +949,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-siddashboard-"
+        "id": "cmdname-siddashboard--1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "dashboard",
         mdxType: "Cmdname"
@@ -1091,7 +1101,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 버튼 클릭 시, 설정된 언어에 맞춰 가이드(Docs) 링크로 이동하도록 수정 "), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-siddashboard--1"
+        "id": "cmdname-siddashboard--2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "dashboard",
         mdxType: "Cmdname"
@@ -1722,7 +1732,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에서 다국어가 적용되지 않은 용어 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "cmdname-siddashboard--2"
+        "id": "cmdname-siddashboard--3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "dashboard",
         mdxType: "Cmdname"
