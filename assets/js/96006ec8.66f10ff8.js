@@ -901,7 +901,7 @@ function MDXContent(_param) {
         img: "browser-pageload-map.png",
         desc: "Pageload map",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `브라우저 애플리케이션의 지역별 페이지 로드 시간과 페이지 로드 수를 지도 차트와 테이블로 표현합니다. 지역별로 웹사이트의 성능을 쉽게 비교할 수 있습니다. 페이지 로드 시간은 2초 간격으로 범례를 표시하고 페이지 로드 수는 백분위수 50, 75, 90, 95 간격으로 범례를 표시합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `브라우저 애플리케이션의 지역별 페이지 로드 시간과 페이지 로드 수를 지도 차트와 테이블로 표현합니다. 지역별로 웹사이트의 성능을 쉽게 비교할 수 있습니다. 페이지 로드 시간은 2초 간격으로 범례를 표시하고 페이지 로드 수는 백분위수 50, 75, 90, 95 간격으로 범례를 표시합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회 시간 기준, 페이지 로드 수가 가장 많은 국가를 위젯에 기본 표시합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
