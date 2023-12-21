@@ -330,15 +330,6 @@ const metadata = {
         "id": "server-2_3_8",
         "title": "Server Agent v2.3.8",
         "toc_max_heading_level": 2
-    },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Server Agent v2.3.9",
-        "permalink": "/whatap-docs/release-notes/server/server-2_3_9"
-    },
-    "next": {
-        "title": "Server Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/server/server-previous"
     }
 };
 const assets = {};

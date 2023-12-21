@@ -1568,7 +1568,7 @@ var PdfDownload = __webpack_require__(3550);
 // EXTERNAL MODULE: ./src/components/dl-release-notes/pdfList.js
 var pdfList = __webpack_require__(1171);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 71 modules
-var Layout = __webpack_require__(99031);
+var Layout = __webpack_require__(58958);
 ;// CONCATENATED MODULE: ./src/pages/dl-release-notes/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const styles_module = ({"dlmain":"dlmain_qja4","contents":"contents_TFPp","dltocs":"dltocs_PM2E","dltocItem":"dltocItem_V7vU","tocList":"tocList_Iwqw","dlHeading1":"dlHeading1_bNyW","lastdiv":"lastdiv_xnS5"});

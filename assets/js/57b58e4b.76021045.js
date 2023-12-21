@@ -337,8 +337,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/server/server-2_4_0"
     },
     "next": {
-        "title": "Server Agent v2.3.8",
-        "permalink": "/whatap-docs/release-notes/server/server-2_3_8"
+        "title": "Server Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/server/server-previous"
     }
 };
 const assets = {};
