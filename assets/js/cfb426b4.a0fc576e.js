@@ -318,7 +318,7 @@ const metadata = {
     "unversionedId": "release-notes/service/service-1_114_x",
     "id": "release-notes/service/service-1_114_x",
     "title": "Service 1.114.x",
-    "description": "Service 1.114.11",
+    "description": "Service 1.114.12",
     "source": "@site/docs/release-notes/service/service-1.114.x.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-1_114_x",
@@ -346,6 +346,21 @@ const metadata = {
 const assets = {};
 const toc = [
     {
+        value: 'Service 1.114.12',
+        id: 'service-111412',
+        level: 2
+    },
+    {
+        value: '<code>Database</code>',
+        id: 'database',
+        level: 3
+    },
+    {
+        value: 'DB <code class="my">V2</code>',
+        id: 'db-v2',
+        level: 4
+    },
+    {
         value: 'Service 1.114.11',
         id: 'service-111411',
         level: 2
@@ -367,12 +382,12 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database',
+        id: 'database-1',
         level: 3
     },
     {
         value: 'DB <code class="my">V2</code>',
-        id: 'db-v2',
+        id: 'db-v2-1',
         level: 4
     },
     {
@@ -412,12 +427,12 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-1',
+        id: 'database-2',
         level: 3
     },
     {
         value: 'DB <code class="my">V2</code>',
-        id: 'db-v2-1',
+        id: 'db-v2-2',
         level: 4
     },
     {
@@ -447,7 +462,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-2',
+        id: 'database-3',
         level: 3
     },
     {
@@ -497,7 +512,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-3',
+        id: 'database-4',
         level: 3
     },
     {
@@ -617,7 +632,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-4',
+        id: 'database-5',
         level: 3
     },
     {
@@ -696,6 +711,28 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "service-111412"
+    }, `Service 1.114.12`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 21일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "database"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "db-v2"
+    }, `DB `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, `V2`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "analysis",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "trends_compare",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 테이블 옵션 선택이 정상 표시되지 않는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "service-111411"
     }, `Service 1.114.11`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 19일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
@@ -736,11 +773,11 @@ function MDXContent(_param) {
     }, `Service 1.114.9`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 12일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database"
+        "id": "database-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "db-v2"
+        "id": "db-v2-1"
     }, `DB `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         class: "my"
     }, `V2`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
@@ -808,11 +845,11 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 항목을 설정하면 사업자 등록 번호가 초기화되는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database-1"
+        "id": "database-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "db-v2-1"
+        "id": "db-v2-2"
     }, `DB `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         class: "my"
     }, `V2`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
@@ -978,7 +1015,7 @@ function MDXContent(_param) {
     }, `Service 1.114.5`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 05일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database-2"
+        "id": "database-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1114,7 +1151,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 컬럼 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database-3"
+        "id": "database-4"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1600,7 +1637,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 이벤트를 추가하거나 수정할 경우 발행 조건의 지속 시간을 0분으로 설정하면 실제 반영하도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database-4"
+        "id": "database-5"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {

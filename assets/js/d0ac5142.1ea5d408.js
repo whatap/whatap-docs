@@ -369,6 +369,16 @@ const toc = [
         level: 4
     },
     {
+        value: '<code>Database</code>',
+        id: 'database',
+        level: 3
+    },
+    {
+        value: 'PostgreSQL / MySQL',
+        id: 'postgresql--mysql',
+        level: 4
+    },
+    {
         value: '<code>Kubernetes</code>',
         id: 'kubernetes',
         level: 3
@@ -405,7 +415,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database',
+        id: 'database-1',
         level: 3
     },
     {
@@ -500,7 +510,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-1',
+        id: 'database-2',
         level: 3
     },
     {
@@ -570,7 +580,7 @@ const toc = [
     },
     {
         value: '<code>Database</code>',
-        id: 'database-2',
+        id: 'database-3',
         level: 3
     },
     {
@@ -681,7 +691,15 @@ function MDXContent(_param) {
         sid: "usage",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴에서 UTC 기준 날짜로 사용량 표시")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }), " 메뉴에서 UTC 기준 날짜로 사용량 표시"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " AWS Marketplace 계정 사용자에게 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "payment_information",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴를 보여주도록 결제 정보 추가")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "user-interface"
     }, `User Interface`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -692,6 +710,30 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Changed"), " 다크 테마를 더 많은 메뉴에서 이용할 수 있도록 확장 적용했습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "database"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "postgresql--mysql"
+    }, `PostgreSQL / MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "instance_list",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 에이전트 업데이트 안내 문구 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        class: "my"
+    }, "V2"), "를 지원하지 않는 에이전트 버전이 설치되어 있으면 에이전트 업데이트 안내 문구를 헤더에 표시하는 기능 추가")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "kubernetes"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
@@ -875,7 +917,7 @@ function MDXContent(_param) {
         className: "b500",
         mdxType: "Cmdname"
     }), "' 문구가 먼저 표시되는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database"
+        "id": "database-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1306,7 +1348,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), "에서 조회 결과를 TXT 파일로 다운로드할 경우 시간차가 발생하는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database-1"
+        "id": "database-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
@@ -1933,7 +1975,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴의 상세 보기 화면에서 이름이 길어 생략(...) 처리된 경우 마우스 오버 시 툴팁이 표시되도록 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "database-2"
+        "id": "database-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Database`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
