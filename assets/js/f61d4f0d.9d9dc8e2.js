@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[99703],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[23703],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 70092:
+/***/ 17614:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,21 +314,22 @@ const frontMatter = {
     tags: [
         'MySQL',
         '데이터베이스',
+        '통계',
         '데이터베이스 사이즈'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/database-size",
-    "id": "mysql/database-size",
+    "unversionedId": "mysql-v1/database-size",
+    "id": "mysql-v1/database-size",
     "title": "데이터베이스 사이즈",
     "description": "데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
-    "source": "@site/docs/mysql/database-size.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/database-size",
-    "permalink": "/whatap-docs/mysql/database-size",
+    "source": "@site/docs/mysql-v1/database-size.mdx",
+    "sourceDirName": "mysql-v1",
+    "slug": "/mysql-v1/database-size",
+    "permalink": "/whatap-docs/mysql-v1/database-size",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/database-size.mdx",
+    "editUrl": "undefined/docs/mysql-v1/database-size.mdx",
     "tags": [
         {
             "label": "MySQL",
@@ -337,6 +338,10 @@ const metadata = {
         {
             "label": "데이터베이스",
             "permalink": "/whatap-docs/tags/데이터베이스"
+        },
+        {
+            "label": "통계",
+            "permalink": "/whatap-docs/tags/통계"
         },
         {
             "label": "데이터베이스 사이즈",
@@ -351,17 +356,18 @@ const metadata = {
         "tags": [
             "MySQL",
             "데이터베이스",
+            "통계",
             "데이터베이스 사이즈"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "mysqlv1Sidebar",
     "previous": {
         "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/mysql/table-size"
+        "permalink": "/whatap-docs/mysql-v1/table-size"
     },
     "next": {
         "title": "보고서",
-        "permalink": "/whatap-docs/mysql/report-intro"
+        "permalink": "/whatap-docs/mysql-v1/report-intro"
     }
 };
 const assets = {};
@@ -394,6 +400,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
 const InDoc = makeShortcode("InDoc");
 const ProdImg = makeShortcode("ProdImg");
 const Cmdname = makeShortcode("Cmdname");
+const ImgLang = makeShortcode("ImgLang");
 const layoutProps = {
     toc
 };
@@ -576,7 +583,25 @@ grant usage on schema {schema_name} to whatap;
         parentName: "p"
     }, `DATA SIZE`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `INDEX SIZE`), `를 표시합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `INDEX SIZE`), `를 표시합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06572",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 섹션의 테이블 목록에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "uitext"
+    }, `TABLENAME`), ` 컬럼 항목을 선택하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `column`), ` 및 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `index`), ` 구성을 확인할 수 있는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `Object detail`)), ` 창이 나타납니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "db-database-size-objectdetail-postgresql.png",
+        desc: "Object detail",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "조회-데이터-다운로드하기"
     }, `조회 데이터 다운로드하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회한 데이터를 CSV 형식의 파일로 다운로드할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "다운로드 아이콘",
