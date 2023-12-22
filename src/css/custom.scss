@@ -1233,7 +1233,7 @@ main {
     img[alt*='QR'] {
       width: 300px;
     }
-    img[src*='k8s-download-yaml'] {
+    img[src*='k8s-download-yaml'],img.width-400 {
       width: 400px;
     }
     img[alt*='number'], img[alt*='Number'], img[alt*='icon'], img[alt*='Icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'], img.ico {
