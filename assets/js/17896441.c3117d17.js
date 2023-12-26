@@ -1,73 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[13085],{
-
-/***/ 1456:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ MDXPage)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(67294);
-// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
-var clsx_m = __webpack_require__(86010);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/metadataUtils.js + 1 modules
-var metadataUtils = __webpack_require__(89712);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(65319);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 71 modules
-var Layout = __webpack_require__(58958);
-// EXTERNAL MODULE: ./src/theme/MDXContent/index.js
-var MDXContent = __webpack_require__(5335);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TOC/index.js + 1 modules
-var TOC = __webpack_require__(48704);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/MDXPage/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"mdxPageWrapper":"mdxPageWrapper_j9I6"});
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/MDXPage/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ 
-
-
-
-
-
-
-function MDXPage(props) {
-    const { content: MDXPageContent } = props;
-    const { metadata: { title, description, frontMatter } } = MDXPageContent;
-    const { wrapperClassName, hide_table_of_contents: hideTableOfContents } = frontMatter;
-    return /*#__PURE__*/ react.createElement(metadataUtils/* HtmlClassNameProvider */.FG, {
-        className: (0,clsx_m/* default */.Z)(wrapperClassName !== null && wrapperClassName !== void 0 ? wrapperClassName : ThemeClassNames/* ThemeClassNames */.k.wrapper.mdxPages, ThemeClassNames/* ThemeClassNames */.k.page.mdxPage)
-    }, /*#__PURE__*/ react.createElement(metadataUtils/* PageMetadata */.d, {
-        title: title,
-        description: description
-    }), /*#__PURE__*/ react.createElement(Layout/* default */.Z, null, /*#__PURE__*/ react.createElement("main", {
-        className: "container container--fluid margin-vert--lg"
-    }, /*#__PURE__*/ react.createElement("div", {
-        className: (0,clsx_m/* default */.Z)('row', styles_module.mdxPageWrapper)
-    }, /*#__PURE__*/ react.createElement("div", {
-        className: (0,clsx_m/* default */.Z)('col', !hideTableOfContents && 'col--8')
-    }, /*#__PURE__*/ react.createElement("article", null, /*#__PURE__*/ react.createElement(MDXContent/* default */.Z, null, /*#__PURE__*/ react.createElement(MDXPageContent, null)))), !hideTableOfContents && MDXPageContent.toc.length > 0 && /*#__PURE__*/ react.createElement("div", {
-        className: "col col--2"
-    }, /*#__PURE__*/ react.createElement(TOC/* default */.Z, {
-        toc: MDXPageContent.toc,
-        minHeadingLevel: frontMatter.toc_min_heading_level,
-        maxHeadingLevel: frontMatter.toc_max_heading_level
-    }))))));
-}
-
-
-/***/ }),
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[27918],{
 
 /***/ 58786:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -157,6 +89,624 @@ function CheckProduct() {
     }
     return product;
 }
+
+
+/***/ }),
+
+/***/ 45321:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  Z: () => (/* binding */ Feedback)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(67294);
+;// CONCATENATED MODULE: ./src/components/Feedback/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"btnwrapper":"btnwrapper_gsW7","modalopenbutton":"modalopenbutton_L7aL","modalclosebtn":"modalclosebtn_OJca","modalopenbtn":"modalopenbtn_jIdz","modalcontainer":"modalcontainer_Uwxb","modalcontent":"modalcontent_3du5","h1Title":"h1Title_z2LJ","submitbtn":"submitbtn_ZER8","emaildesc":"emaildesc_yLrM"});
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(92210);
+// EXTERNAL MODULE: ./node_modules/react-google-forms-hooks/dist/index.modern.js + 71 modules
+var index_modern = __webpack_require__(69562);
+;// CONCATENATED MODULE: ./src/components/Feedback/form.json
+const form_namespaceObject = JSON.parse('{"fvv":1,"pageHistory":0,"fbzx":"7163460488620654395","action":"e/1FAIpQLSemcyCE9n_zq8rHzKWtuuywnzggYq9NeFsB4w3FwLSKI_v6iA","title":"Feedback","description":"","fields":[{"label":"이 문서가 도움이 되었나요?;components.feedback.question","description":null,"type":"RADIO","id":"857652938","options":[{"label":"😊 Good","custom":false},{"label":"😫 Bad","custom":false}],"required":true},{"label":"문서 url 주소를 입력해주세요.","description":null,"type":"SHORT_ANSWER","id":"199330391","required":false},{"label":"평가에 대해 자세히 알려주세요.;components.feedback.details","description":null,"type":"LONG_ANSWER","id":"1718017240","required":false},{"label":"이메일 주소를 남겨주세요.(Option);components.feedback.email","description":null,"type":"SHORT_ANSWER","id":"1036772456","required":false}],"fieldsOrder":{"199330391":1,"857652938":0,"1036772456":3,"1718017240":2}}');
+// EXTERNAL MODULE: ./node_modules/styled-components/dist/styled-components.browser.esm.js + 4 modules
+var styled_components_browser_esm = __webpack_require__(19079);
+;// CONCATENATED MODULE: ./src/components/Feedback/components/CheckboxInput.js
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+const Container = styled_components_browser_esm/* default */.ZP.div`
+  display: flex;
+  flex-direction: column;
+`;
+const CheckboxContainer = styled_components_browser_esm/* default */.ZP.div`
+  display: flex;
+
+  & label {
+    margin: 0 10px;
+  }
+`;
+function CheckboxInput({ id }) {
+    const { options, customOption } = (0,index_modern/* useCheckboxInput */.xB)(id);
+    return /*#__PURE__*/ react.createElement(Container, null, options.map((o)=>/*#__PURE__*/ react.createElement(CheckboxContainer, {
+            key: o.id
+        }, /*#__PURE__*/ react.createElement("input", _object_spread({
+            type: "checkbox",
+            id: o.id
+        }, o.registerOption())), /*#__PURE__*/ react.createElement("label", {
+            htmlFor: o.id
+        }, o.label))), customOption && /*#__PURE__*/ react.createElement(CheckboxContainer, null, /*#__PURE__*/ react.createElement("input", _object_spread({
+        type: "checkbox",
+        id: customOption.id
+    }, customOption.registerOption())), /*#__PURE__*/ react.createElement("label", {
+        htmlFor: customOption.id
+    }, "Outra"), /*#__PURE__*/ react.createElement("input", _object_spread({
+        type: "text",
+        placeholder: "Resposta aqui"
+    }, customOption.registerCustomInput()))));
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/RadioInput.js
+function RadioInput_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function RadioInput_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            RadioInput_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+const RadioInput_Container = styled_components_browser_esm/* default */.ZP.div`
+  display: flex;
+  flex-direction: column;
+`;
+const RadioInput_CheckboxContainer = styled_components_browser_esm/* default */.ZP.div`
+  display: flex;
+
+  & label {
+    margin: 0 10px;
+  }
+`;
+const ErrorLabel = styled_components_browser_esm/* default */.ZP.span`
+  color: red;
+  padding: 10px 0;
+`;
+function RadioInput({ id }) {
+    const { options, customOption, error } = (0,index_modern/* useRadioInput */.Ge)(id);
+    return /*#__PURE__*/ react.createElement(RadioInput_Container, null, options.map((o)=>/*#__PURE__*/ react.createElement(RadioInput_CheckboxContainer, {
+            key: o.id
+        }, /*#__PURE__*/ react.createElement("input", RadioInput_object_spread({
+            type: "radio",
+            id: o.id
+        }, o.registerOption())), /*#__PURE__*/ react.createElement("label", {
+            htmlFor: o.id
+        }, o.label))), customOption && /*#__PURE__*/ react.createElement(RadioInput_CheckboxContainer, null, /*#__PURE__*/ react.createElement("input", RadioInput_object_spread({
+        type: "radio",
+        id: customOption.id
+    }, customOption.registerOption())), /*#__PURE__*/ react.createElement("label", {
+        htmlFor: customOption.id
+    }, "Outra"), /*#__PURE__*/ react.createElement("input", RadioInput_object_spread({
+        type: "text",
+        placeholder: "Resposta aqui"
+    }, customOption.registerCustomInput()))), /*#__PURE__*/ react.createElement(ErrorLabel, null, error && 'This field is required'));
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/ShortAnswerInput.js
+function ShortAnswerInput_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function ShortAnswerInput_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            ShortAnswerInput_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+function ShortAnswerInput({ id, location }) {
+    const { register } = (0,index_modern/* useShortAnswerInput */.Tx)(id);
+    if (id == "199330391") {
+        const myCurl = location;
+        return /*#__PURE__*/ react.createElement("div", null, /*#__PURE__*/ react.createElement("input", ShortAnswerInput_object_spread({
+            type: "text",
+            value: myCurl
+        }, register())));
+    } else {
+        return /*#__PURE__*/ react.createElement("div", null, /*#__PURE__*/ react.createElement("input", ShortAnswerInput_object_spread({
+            type: "text"
+        }, register())));
+    }
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/LongAnswerInput.js
+function LongAnswerInput_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function LongAnswerInput_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            LongAnswerInput_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+function LongAnswerInput({ id }) {
+    const { register } = (0,index_modern/* useLongAnswerInput */.yO)(id);
+    return /*#__PURE__*/ react.createElement("div", null, /*#__PURE__*/ react.createElement("textarea", LongAnswerInput_object_spread({
+        type: "text"
+    }, register())));
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/RadioGridInput.js
+function RadioGridInput_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function RadioGridInput_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            RadioGridInput_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+const GridQuestionContainer = styled_components_browser_esm/* default */.ZP.div`
+  display: table;
+`;
+const TableHeader = styled_components_browser_esm/* default */.ZP.header`
+  display: table-row;
+`;
+const TableRow = styled_components_browser_esm/* default */.ZP.div`
+  display: table-row;
+`;
+const TableCell = styled_components_browser_esm/* default */.ZP.div`
+  display: table-cell;
+  padding: 5px;
+`;
+function RadioGridInput({ id }) {
+    const { columns, renderGrid } = (0,index_modern/* useRadioGridInput */.bk)(id);
+    return /*#__PURE__*/ react.createElement(GridQuestionContainer, null, /*#__PURE__*/ react.createElement(TableHeader, null, /*#__PURE__*/ react.createElement(TableCell, null), columns.map((c)=>/*#__PURE__*/ react.createElement(TableCell, {
+            key: c.label
+        }, c.label))), renderGrid((l)=>/*#__PURE__*/ react.createElement(TableRow, {
+            key: l.label
+        }, /*#__PURE__*/ react.createElement(TableCell, null, l.label), l.renderColumns((c)=>/*#__PURE__*/ react.createElement(TableCell, {
+                key: c.label
+            }, /*#__PURE__*/ react.createElement("input", RadioGridInput_object_spread({
+                type: "radio"
+            }, c.registerColumn())))))));
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/CheckboxGridInput.js
+function CheckboxGridInput_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function CheckboxGridInput_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            CheckboxGridInput_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+const CheckboxGridInput_GridQuestionContainer = styled_components_browser_esm/* default */.ZP.div`
+  display: table;
+`;
+const CheckboxGridInput_TableHeader = styled_components_browser_esm/* default */.ZP.header`
+  display: table-row;
+`;
+const CheckboxGridInput_TableRow = styled_components_browser_esm/* default */.ZP.div`
+  display: table-row;
+`;
+const CheckboxGridInput_TableCell = styled_components_browser_esm/* default */.ZP.div`
+  display: table-cell;
+  padding: 5px;
+`;
+function CheckboxGridInput({ id }) {
+    const { columns, renderGrid } = (0,index_modern/* useCheckboxGridInput */.ck)(id);
+    return /*#__PURE__*/ react.createElement(CheckboxGridInput_GridQuestionContainer, null, /*#__PURE__*/ react.createElement(CheckboxGridInput_TableHeader, null, /*#__PURE__*/ react.createElement(CheckboxGridInput_TableCell, null), columns.map((c)=>/*#__PURE__*/ react.createElement(CheckboxGridInput_TableCell, {
+            key: c.label
+        }, c.label))), renderGrid((l)=>/*#__PURE__*/ react.createElement(CheckboxGridInput_TableRow, {
+            key: l.label
+        }, /*#__PURE__*/ react.createElement(CheckboxGridInput_TableCell, null, l.label), l.renderColumns((c)=>/*#__PURE__*/ react.createElement(CheckboxGridInput_TableCell, {
+                key: c.label
+            }, /*#__PURE__*/ react.createElement("input", CheckboxGridInput_object_spread({
+                type: "checkbox"
+            }, c.registerColumn())))))));
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/DropdownInput.js
+
+
+function DropdownInput({ id }) {
+    const { register, options } = (0,index_modern/* useDropdownInput */.M$)(id);
+    return /*#__PURE__*/ react.createElement("div", null, /*#__PURE__*/ react.createElement("select", register(), /*#__PURE__*/ react.createElement("option", {
+        value: ""
+    }, "Select option"), options.map((o)=>{
+        return /*#__PURE__*/ react.createElement("option", {
+            key: o.label,
+            value: o.label
+        }, o.label);
+    })));
+}
+
+;// CONCATENATED MODULE: ./src/components/Feedback/components/LinearGrid.js
+function LinearGrid_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function LinearGrid_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            LinearGrid_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+const LinearGrid_Container = styled_components_browser_esm/* default */.ZP.div`
+  display: flex;
+  align-items: center;
+
+  & * {
+    margin: 0 10px;
+  }
+  margin-bottom 10px;
+`;
+const LinearGrid_ErrorLabel = styled_components_browser_esm/* default */.ZP.span`
+  color: red;
+`;
+function LinearGrid({ id }) {
+    const { options, legend, error } = (0,index_modern/* useLinearInput */.mP)(id);
+    return /*#__PURE__*/ react.createElement(react.Fragment, null, /*#__PURE__*/ react.createElement(LinearGrid_Container, null, /*#__PURE__*/ react.createElement("div", null, legend.labelFirst), options.map((o)=>{
+        return /*#__PURE__*/ react.createElement("input", LinearGrid_object_spread({
+            key: o.id,
+            type: "radio"
+        }, o.registerOption()));
+    }), /*#__PURE__*/ react.createElement("div", null, legend.labelLast)), /*#__PURE__*/ react.createElement(LinearGrid_ErrorLabel, null, error && 'This field is required'));
+}
+
+// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(16550);
+;// CONCATENATED MODULE: ./static/img/ico-close.svg
+var _path;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+const SvgIcoClose = _ref => {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/react.createElement("svg", _extends({
+    className: "SVGInline-svg",
+    style: {
+      width: 16,
+      height: 16
+    },
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/react.createElement("path", {
+    d: "M19.778 5.636 13.414 12l6.364 6.364-1.414 1.414L12 13.414l-6.364 6.364-1.414-1.414L10.586 12 4.222 5.636l1.414-1.414L12 10.586l6.364-6.364 1.414 1.414Z",
+    fill: "#757575",
+    fillRule: "evenodd"
+  })));
+};
+/* harmony default export */ const ico_close = (SvgIcoClose);
+;// CONCATENATED MODULE: ./src/components/Feedback/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Form = styled_components_browser_esm/* default */.ZP.form`
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 15px;
+`;
+const QuestionContainer = styled_components_browser_esm/* default */.ZP.div`
+  margin-bottom: 20px;
+`;
+const QuestionLabel = styled_components_browser_esm/* default */.ZP.h3`
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+`;
+const QuestionHelp = styled_components_browser_esm/* default */.ZP.p`
+  font-size: 0.8rem;
+  color: #5c5c5c;
+  margin-top: 0px;
+`;
+const Questions = ()=>{
+    const location = (0,react_router/* useLocation */.TH)();
+    const curLocation = location.pathname;
+    return /*#__PURE__*/ react.createElement("div", null, form_namespaceObject.fields.map((field)=>{
+        const { id } = field;
+        let questionInput = null;
+        switch(field.type){
+            case 'CHECKBOX':
+                questionInput = /*#__PURE__*/ react.createElement(CheckboxInput, {
+                    id: id
+                });
+                break;
+            case 'RADIO':
+                questionInput = /*#__PURE__*/ react.createElement(RadioInput, {
+                    id: id
+                });
+                break;
+            case 'SHORT_ANSWER':
+                questionInput = /*#__PURE__*/ react.createElement(ShortAnswerInput, {
+                    id: id,
+                    location: curLocation
+                });
+                break;
+            case 'LONG_ANSWER':
+                questionInput = /*#__PURE__*/ react.createElement(LongAnswerInput, {
+                    id: id
+                });
+                break;
+            case 'RADIO_GRID':
+                questionInput = /*#__PURE__*/ react.createElement(RadioGridInput, {
+                    id: id
+                });
+                break;
+            case 'CHECKBOX_GRID':
+                questionInput = /*#__PURE__*/ react.createElement(CheckboxGridInput, {
+                    id: id
+                });
+                break;
+            case 'DROPDOWN':
+                questionInput = /*#__PURE__*/ react.createElement(DropdownInput, {
+                    id: id
+                });
+                break;
+            case 'LINEAR':
+                questionInput = /*#__PURE__*/ react.createElement(LinearGrid, {
+                    id: id
+                });
+                break;
+        }
+        if (!questionInput) {
+            return null;
+        }
+        const myLabel = field.label.split(';');
+        const fieldTitle = myLabel.length > 1 ? myLabel[1] : myLabel[0];
+        return /*#__PURE__*/ react.createElement(QuestionContainer, {
+            key: id
+        }, /*#__PURE__*/ react.createElement(QuestionLabel, null, (0,Translate/* translate */.I)({
+            id: `${fieldTitle}`
+        })), questionInput, /*#__PURE__*/ react.createElement(QuestionHelp, null, field.description));
+    }));
+};
+const App = ()=>{
+    const [modalOpen, setModalOpen] = (0,react.useState)(false);
+    const modalBackground = (0,react.useRef)();
+    const methods = (0,index_modern/* useGoogleForm */.h1)({
+        form: form_namespaceObject
+    });
+    const onSubmit = async (data)=>{
+        await methods.submitToGoogleForms(data);
+        alert((0,Translate/* translate */.I)({
+            id: "component.feedback.complete",
+            message: "피드백 전송을 완료합니다.",
+            description: "complete sending feedback!"
+        }));
+        setModalOpen(false);
+    };
+    // console.log('>>> Here are the errors!!!', methods.formState.errors)
+    return /*#__PURE__*/ react.createElement(react.Fragment, null, /*#__PURE__*/ react.createElement("div", {
+        className: styles_module.btnwrapper
+    }, /*#__PURE__*/ react.createElement("button", {
+        className: styles_module.modalopenbtn,
+        onClick: ()=>setModalOpen(true)
+    }, (0,Translate/* translate */.I)({
+        id: "components.feedback.sendfeedback",
+        message: "피드백",
+        description: "send feedback"
+    }))), modalOpen && /*#__PURE__*/ react.createElement("div", {
+        className: styles_module.modalcontainer,
+        ref: modalBackground,
+        onClick: (e)=>{
+            if (e.target === modalBackground.current) {
+                setModalOpen(false);
+            }
+        }
+    }, /*#__PURE__*/ react.createElement("div", {
+        className: styles_module.modalcontent
+    }, /*#__PURE__*/ react.createElement("button", {
+        className: styles_module.modalclosebtn,
+        onClick: ()=>setModalOpen(false)
+    }, /*#__PURE__*/ react.createElement(ico_close, null)), /*#__PURE__*/ react.createElement(index_modern/* GoogleFormProvider */.F6, methods, /*#__PURE__*/ react.createElement(Form, {
+        onSubmit: methods.handleSubmit(onSubmit)
+    }, form_namespaceObject.title && /*#__PURE__*/ react.createElement(react.Fragment, null, /*#__PURE__*/ react.createElement("h1", {
+        className: styles_module.h1Title
+    }, (0,Translate/* translate */.I)({
+        id: "components.feedback.sendfeedbackTitle",
+        message: "피드백",
+        description: "send feedback"
+    })), form_namespaceObject.description && /*#__PURE__*/ react.createElement("p", {
+        style: {
+            fontSize: '.8rem'
+        }
+    }, form_namespaceObject.description)), /*#__PURE__*/ react.createElement(Questions, null), /*#__PURE__*/ react.createElement("p", {
+        className: styles_module.emaildesc
+    }, (0,Translate/* translate */.I)({
+        id: "components.feedback.emaildesciption",
+        message: "이메일은 귀하의 피드백에 대한 후속 답변을 위해서만 사용할 뿐 수집하지 않습니다.",
+        description: "We'll only use this email for follow-up questions about your feedback."
+    })), /*#__PURE__*/ react.createElement("button", {
+        type: "submit",
+        className: styles_module.submitbtn
+    }, (0,Translate/* translate */.I)({
+        id: "components.feedback.submit",
+        message: "제출하기",
+        description: "Submit a survey"
+    })))))));
+};
+/* harmony default export */ const Feedback = (App);
 
 
 /***/ }),
@@ -574,6 +1124,400 @@ function DocCard({ item }) {
         default:
             throw new Error(`unknown item type ${JSON.stringify(item)}`);
     }
+}
+
+
+/***/ }),
+
+/***/ 8451:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  Z: () => (/* binding */ DocItemLayout)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(67294);
+// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
+var clsx_m = __webpack_require__(86010);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
+var useWindowSize = __webpack_require__(24683);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/doc.js
+var doc = __webpack_require__(16895);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Paginator/index.js + 2 modules
+var Paginator = __webpack_require__(6974);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBanner/index.js
+var DocVersionBanner = __webpack_require__(2085);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBadge/index.js
+var DocVersionBadge = __webpack_require__(22378);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocItem/Footer/index.js + 4 modules
+var Footer = __webpack_require__(3460);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Mobile/index.js + 5 modules
+var Mobile = __webpack_require__(12973);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocItem/TOC/Desktop/index.js
+var Desktop = __webpack_require__(98331);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
+var ThemeClassNames = __webpack_require__(65319);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
+var Heading = __webpack_require__(24999);
+// EXTERNAL MODULE: ./src/theme/MDXContent/index.js
+var MDXContent = __webpack_require__(5335);
+// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(16550);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(92210);
+;// CONCATENATED MODULE: ./src/components/facebook/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const styles_module = ({"fbsharebutton":"fbsharebutton_dZBI","fb_xfbml_parse_ignore":"fb_xfbml_parse_ignore_BpHP"});
+;// CONCATENATED MODULE: ./src/components/facebook/index.js
+
+
+
+
+function FacebookSharing() {
+    const location = (0,react_router/* useLocation */.TH)();
+    const curLocation = "https://docs.whatap.io" + location.pathname;
+    const faceURL = "https://www.facebook.com/sharer/sharer.php?u=" + curLocation + "&src=sdkpreparse";
+    const onPopup = ()=>{
+        window.open(faceURL, '', 'width=430, height=500, location=no, status=no, scrollbars=yes');
+    };
+    return /*#__PURE__*/ react.createElement("div", {
+        class: styles_module.fbsharebutton,
+        "data-href": curLocation,
+        "data-layout": "",
+        "data-size": ""
+    }, /*#__PURE__*/ react.createElement("button", {
+        type: "button",
+        className: styles_module.fb_xfbml_parse_ignore,
+        onClick: onPopup
+    }, (0,Translate/* translate */.I)({
+        id: "whatap_plugin.sharefacebook",
+        message: "공유",
+        description: "Sharing this page"
+    })));
+}
+
+;// CONCATENATED MODULE: ./src/theme/DocItem/Content/index.js
+
+
+
+
+
+
+
+/**
+ Title can be declared inside md content or declared through
+ front matter and added manually. To make both cases consistent,
+ the added title is added under the same div.markdown block
+ See https://github.com/facebook/docusaurus/pull/4882#issuecomment-853021120
+
+ We render a "synthetic title" if:
+ - user doesn't ask to hide it with front matter
+ - the markdown content does not already contain a top-level h1 heading
+*/ function useSyntheticTitle() {
+    const { metadata, frontMatter, contentTitle } = (0,doc/* useDoc */.k)();
+    const shouldRender = !frontMatter.hide_title && typeof contentTitle === 'undefined';
+    if (!shouldRender) {
+        return null;
+    }
+    return metadata.title;
+}
+function DocItemContent({ children }) {
+    const syntheticTitle = useSyntheticTitle();
+    return /*#__PURE__*/ react.createElement("div", {
+        className: (0,clsx_m/* default */.Z)(ThemeClassNames/* ThemeClassNames */.k.docs.docMarkdown, 'markdown')
+    }, syntheticTitle && /*#__PURE__*/ react.createElement("header", null, /*#__PURE__*/ react.createElement(Heading/* default */.Z, {
+        as: "h1"
+    }, syntheticTitle)), /*#__PURE__*/ react.createElement(FacebookSharing, null), /*#__PURE__*/ react.createElement(MDXContent/* default */.Z, null, children));
+}
+
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/docsUtils.js
+var docsUtils = __webpack_require__(53964);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
+var routesUtils = __webpack_require__(87275);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js + 1 modules
+var Link = __webpack_require__(31984);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(70676);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Icon/Home/index.js
+var Home = __webpack_require__(25551);
+;// CONCATENATED MODULE: ./src/theme/DocBreadcrumbs/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const DocBreadcrumbs_styles_module = ({"breadcrumbsContainer":"breadcrumbsContainer_Alpn","breadcrumbHomeIcon":"breadcrumbHomeIcon_SLhD"});
+;// CONCATENATED MODULE: ./src/theme/DocBreadcrumbs/index.js
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+
+
+
+
+
+
+
+
+
+// TODO move to design system folder
+function BreadcrumbsItemString({ children, href, isLast }) {
+    const className = 'breadcrumbs__link';
+    if (isLast) {
+        return /*#__PURE__*/ react.createElement("span", {
+            itemProp: "name"
+        }, children);
+    }
+    return href ? /*#__PURE__*/ react.createElement("span", {
+        itemProp: "name"
+    }, children, /*#__PURE__*/ react.createElement("cite", null, ">")) : /*#__PURE__*/ react.createElement("span", null, children, /*#__PURE__*/ react.createElement("cite", null, ">"));
+}
+function BreadcrumbsItemLink({ children, href, isLast }) {
+    const className = 'breadcrumbs__link';
+    if (isLast) {
+        return /*#__PURE__*/ react.createElement("span", {
+            className: className,
+            itemProp: "name"
+        }, children);
+    }
+    return href ? /*#__PURE__*/ react.createElement(Link/* default */.Z, {
+        className: className,
+        href: href,
+        itemProp: "item"
+    }, /*#__PURE__*/ react.createElement("span", {
+        itemProp: "name"
+    }, children)) : // TODO Google search console doesn't like breadcrumb items without href.
+    // The schema doesn't seem to require `id` for each `item`, although Google
+    // insist to infer one, even if it's invalid. Removing `itemProp="item
+    // name"` for now, since I don't know how to properly fix it.
+    // See https://github.com/facebook/docusaurus/issues/7241
+    /*#__PURE__*/ react.createElement("span", {
+        className: className
+    }, children);
+}
+// TODO move to design system folder
+function BreadcrumbsItem({ children, active, index, addMicrodata }) {
+    return /*#__PURE__*/ react.createElement("li", _object_spread_props(_object_spread({}, addMicrodata && {
+        itemScope: true,
+        itemProp: 'itemListElement',
+        itemType: 'https://schema.org/ListItem'
+    }), {
+        className: (0,clsx_m/* default */.Z)('breadcrumbs__item', {
+            'breadcrumbs__item--active': active
+        })
+    }), children, /*#__PURE__*/ react.createElement("meta", {
+        itemProp: "position",
+        content: String(index + 1)
+    }));
+}
+function HomeBreadcrumbItem() {
+    const homeHref = (0,useBaseUrl/* default */.Z)('/');
+    return /*#__PURE__*/ react.createElement("li", {
+        className: "breadcrumbs__item"
+    }, /*#__PURE__*/ react.createElement(Link/* default */.Z, {
+        "aria-label": (0,Translate/* translate */.I)({
+            id: 'theme.docs.breadcrumbs.home',
+            message: 'Home page',
+            description: 'The ARIA label for the home page in the breadcrumbs'
+        }),
+        className: (0,clsx_m/* default */.Z)('breadcrumbs__link', DocBreadcrumbs_styles_module.breadcrumbsItemLink),
+        href: homeHref
+    }, /*#__PURE__*/ react.createElement(Home/* default */.Z, {
+        className: DocBreadcrumbs_styles_module.breadcrumbHomeIcon
+    })));
+}
+function DocBreadcrumbs() {
+    const breadcrumbs = (0,docsUtils/* useSidebarBreadcrumbs */.s1)();
+    const homePageRoute = (0,routesUtils/* useHomePageRoute */.Ns)();
+    if (!breadcrumbs) {
+        return null;
+    } else if (breadcrumbs.length == 0) {
+        return null;
+    }
+    // if (breadcrumbs.length < 2) {
+    //   return null;
+    // }
+    return /*#__PURE__*/ react.createElement("nav", {
+        className: (0,clsx_m/* default */.Z)(ThemeClassNames/* ThemeClassNames */.k.docs.docBreadcrumbs, DocBreadcrumbs_styles_module.breadcrumbsContainer),
+        "aria-label": (0,Translate/* translate */.I)({
+            id: 'theme.docs.breadcrumbs.navAriaLabel',
+            message: 'Breadcrumbs',
+            description: 'The ARIA label for the breadcrumbs'
+        })
+    }, /*#__PURE__*/ react.createElement("ul", {
+        className: "breadcrumbs",
+        itemScope: true,
+        itemType: "https://schema.org/BreadcrumbList"
+    }, homePageRoute && /*#__PURE__*/ react.createElement(HomeBreadcrumbItem, null), breadcrumbs.map((item, idx)=>{
+        const isLast = idx === breadcrumbs.length - 1;
+        return /*#__PURE__*/ react.createElement(BreadcrumbsItem, {
+            key: idx,
+            active: isLast,
+            index: idx,
+            addMicrodata: !!item.href
+        }, /*#__PURE__*/ react.createElement(BreadcrumbsItemLink, {
+            href: item.href,
+            isLast: isLast
+        }, item.label));
+    })), /*#__PURE__*/ react.createElement("div", {
+        className: "breadcrumbs-hidden"
+    }, breadcrumbs.map((item, idx)=>{
+        const isXXX = idx === breadcrumbs.length - 1;
+        return /*#__PURE__*/ react.createElement(BreadcrumbsItemString, {
+            href: item.href,
+            isLast: isXXX
+        }, item.label);
+    })));
+}
+
+;// CONCATENATED MODULE: ./src/theme/DocItem/Layout/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Layout_styles_module = ({"docItemContainer":"docItemContainer_c0TR","docItemCol":"docItemCol_z5aJ"});
+;// CONCATENATED MODULE: ./src/components/printpage/styles.module.css
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const printpage_styles_module = ({"btnprint":"btnprint_EBmh"});
+;// CONCATENATED MODULE: ./src/components/printpage/PrintPage.js
+
+
+const PrintPDFButton = ()=>{
+    const [detailsOpen, setDetailsOpen] = (0,react.useState)(false);
+    const handleButtonClick = ()=>{
+        // 모든 details 요소에 open 속성을 부여하고 하위에 있는 div 요소에 display: block 스타일을 적용
+        const detailsElements = document.querySelectorAll('details');
+        detailsElements.forEach((detailsElement)=>{
+            detailsElement.setAttribute('open', true);
+            const childDivs = detailsElement.querySelectorAll('div');
+            childDivs.forEach((div)=>{
+                div.style.display = 'block';
+                div.style.overflow = 'visible';
+                div.style.height = 'auto';
+            });
+        });
+        window.print();
+        // 상태 업데이트
+        setDetailsOpen(true);
+    };
+    return /*#__PURE__*/ react.createElement("div", {
+        className: printpage_styles_module.btnprint
+    }, /*#__PURE__*/ react.createElement("button", {
+        onClick: handleButtonClick
+    }, "PDF"));
+};
+/* harmony default export */ const PrintPage = (PrintPDFButton);
+
+// EXTERNAL MODULE: ./src/components/Feedback/index.js + 11 modules
+var Feedback = __webpack_require__(45321);
+;// CONCATENATED MODULE: ./src/theme/DocItem/Layout/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Decide if the toc should be rendered, on mobile or desktop viewports
+ */ function useDocTOC() {
+    const { frontMatter, toc } = (0,doc/* useDoc */.k)();
+    const windowSize = (0,useWindowSize/* useWindowSize */.i)();
+    const hidden = frontMatter.hide_table_of_contents;
+    const canRender = !hidden && toc.length > 0;
+    const mobile = canRender ? /*#__PURE__*/ react.createElement(Mobile/* default */.Z, null) : undefined;
+    const desktop = canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? /*#__PURE__*/ react.createElement(Desktop/* default */.Z, null) : undefined;
+    return {
+        hidden,
+        mobile,
+        desktop
+    };
+}
+function DocItemLayout({ children }) {
+    const docTOC = useDocTOC();
+    return /*#__PURE__*/ react.createElement("div", {
+        className: "row"
+    }, /*#__PURE__*/ react.createElement("div", {
+        className: (0,clsx_m/* default */.Z)('col', !docTOC.hidden && Layout_styles_module.docItemCol)
+    }, /*#__PURE__*/ react.createElement(DocVersionBanner/* default */.Z, null), /*#__PURE__*/ react.createElement("div", {
+        className: Layout_styles_module.docItemContainer
+    }, /*#__PURE__*/ react.createElement("article", null, /*#__PURE__*/ react.createElement(DocBreadcrumbs, null), /*#__PURE__*/ react.createElement(DocVersionBadge/* default */.Z, null), docTOC.mobile, /*#__PURE__*/ react.createElement(DocItemContent, null, children), /*#__PURE__*/ react.createElement(Footer/* default */.Z, null)), /*#__PURE__*/ react.createElement(Paginator/* default */.Z, null))), /*#__PURE__*/ react.createElement("div", {
+        className: "col col--3"
+    }, docTOC.desktop, /*#__PURE__*/ react.createElement(FacebookSharing, null), /*#__PURE__*/ react.createElement(PrintPage, null), /*#__PURE__*/ react.createElement(Feedback/* default */.Z, null)));
+}
+
+
+/***/ }),
+
+/***/ 46229:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (/* binding */ EditThisPageWrapper)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
+/* harmony import */ var _docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16895);
+/* harmony import */ var _site_src_components_Feedback__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(45321);
+
+
+
+function EditThisPageWrapper(props) {
+    const { metadata } = (0,_docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_2__/* .useDoc */ .k)();
+    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(_site_src_components_Feedback__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, null));
 }
 
 
