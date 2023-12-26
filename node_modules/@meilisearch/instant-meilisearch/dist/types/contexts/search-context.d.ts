@@ -1,0 +1,14 @@
+import { InstantMeiliSearchOptions, AlgoliaMultipleQueriesQuery, SearchContext, AlgoliaSearchForFacetValuesRequest } from '../types';
+/**
+ * @param  {AlgoliaMultipleQueriesQuery} searchRequest
+ * @param  {Context} options
+ * @returns {SearchContext}
+ */
+export declare function createSearchContext(searchRequest: AlgoliaMultipleQueriesQuery, options: InstantMeiliSearchOptions): SearchContext;
+/**
+ * @param  {AlgoliaMultipleQueriesQuery} searchRequest
+ * @param  {Context} options
+ * @returns {SearchContext}
+ */
+export declare function createFacetSearchContext(searchRequest: AlgoliaSearchForFacetValuesRequest, options: InstantMeiliSearchOptions): SearchContext;
+//# sourceMappingURL=search-context.d.ts.map
