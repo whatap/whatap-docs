@@ -39514,7 +39514,9 @@ function Component() {
             searchParams: {
                 filter: [
                     `lang = ${currentLocale}`
-                ]
+                ],
+                limit: 150,
+                cropLength: 150
             }
         });
         return ()=>destroy();
