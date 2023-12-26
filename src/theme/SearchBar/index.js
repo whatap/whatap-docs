@@ -14,7 +14,7 @@ export default function Component() {
                 'dgoMBc2t6fVzILDGqhh63uBXACGOmJbKNnE_Xv8_Hqk',
             indexUid: 'whatap',
             container: '#docsearch',
-            searchParams: { filter: [`lang = ${currentLocale}`] },
+            searchParams: { filter: [`lang = ${currentLocale}`], limit: 50 },
         })
 
         return () => destroy()
