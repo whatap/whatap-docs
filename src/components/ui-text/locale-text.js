@@ -7,7 +7,12 @@ const ReplacementLocaleText = ({sid, className, anchor, replace}) => {
     
     let oText;
     if (replace) {
-        oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '');
+        if (replace === "noSpace") {
+            console.log("11111")
+            oText = whatapLocale[sid][`${currentLocale}`].replace("&nbsp;", ' ');
+        } else {
+            oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '');
+        }
     } else {
         oText = whatapLocale[sid][`${currentLocale}`];
     }
