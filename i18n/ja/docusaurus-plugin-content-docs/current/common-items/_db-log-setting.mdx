@@ -1,8 +1,8 @@
-WhaTapは、データベースのログモニタリングサービスを提供します。 サーバーインストール型データベースとクラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である**_ライブテール_**、**_ログトレンド_**メニューからデータベースの散らばったログを一目で確認することができます。
+WhaTapは、データベースのログモニタリングサービスを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である**_ライブテール_**、**_ログトレンド_**メニューからデータベースの散在したログをひと目で確認することができます。
 
 :::tip
 
-ログモニタリングを適用した後は、各メニューの**_カテゴリ_**項目とログ一覧からインストール型DBは、 `#DB`、AWS RDSは`#RDS_LOG`、`#RDS_EVENT`と表示されます。
+ログモニタリングを適用した後、各メニューの**_カテゴリ_**項目とログ一覧からインストール型DBは、 `#DB`、AWS RDSは`#RDS_LOG`、`#RDS_EVENT`と表示されます。
 
 <ImgLang img='db-log-category.png' desc='카테고리' className='width-200' />
 
@@ -35,7 +35,7 @@ file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
 
 :::note
 
-適用する前に、XOSエージェントをインストールしてエージェント設定を進める必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
+適用する前に、XOSエージェントをインストールしてエージェント設定を行う必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
 :::
 
@@ -45,13 +45,13 @@ file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
 
 ![AWS RDS Log](/img/aws-rds-log-diagram.png)
 
-AWSはRDSのモニタリングのために様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールに直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの**_ログ_**メニューでRDSのログとイベントを提供します。
+AWSはRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの**_ログ_**メニューからRDSのログとイベントを集約して表示します。
 
-WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じて設置することができます。 **AWS CloudFormation**についての詳細は[次のリンク](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html)を参照してください。
+WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストールできます。 **AWS CloudFormation**についての詳細は[次のリンク](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html)を参照してください。
 
 ### 権限確認
 
-**AWS CloudFormation**を通じてWhaTapの**AWS RDS Log**をインストールするには、まず必須IAM権限を確認してください。
+**AWS CloudFormation**を通じてWhaTapの**AWS RDS Log**をインストールするには、まず必要なIAM権限を確認してください。
 
 ```json
 {
@@ -102,39 +102,39 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じて設置すること�
 }
 ```
 
-### インストールおよび設定
+### インストールと設定
 
-1.  WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールすることができます。 次のリンクに移った後、**パラメータ**セクションで以下の項目を入力してください。
+1.  WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールすることができます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力してください。
 
     <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-    -   **Host**: WhaTap収集サーバーアドレス、WhaTapプロジェクトの**_管理_**>**_エージェントインストール_**メニューで確認できます。 例）13.124.11.223/13.209.172.35
+    -   **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの**_管理_**>**_エージェントインストール_**メニューで確認できます。 例）13.124.11.223/13.209.172.35
 
-    -   **MemorySize**: WhaTapRDSLogのメモリサイズ、128MB ~ 10,240MB間の値を入力してください。
+    -   **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB ~ 10,240MB間の値を入力してください。
 
-    -   **Pcode**: WhaTapプロジェクトのプロジェクトコード、**管理**>**プロジェクト管理\***メニューで**_プロジェクトコード_**項目を確認してください。
+    -   **Pcode**: WhaTapプロジェクトのプロジェクトコード。**管理**>**プロジェクト管理\***メニューで**_プロジェクトコード_**項目を確認してください。
 
-    -   **ProjectAccessKey**: WhaTapプロジェクトのアクセスキー、**_管理_**>**_プロジェクト管理_**メニューで**_プロジェクトアクセスキー_**項目を確認してください。
+    -   **ProjectAccessKey**: WhaTapプロジェクトのアクセスキー。**_管理_**>**_プロジェクト管理_**メニューで**_プロジェクトアクセスキー_**項目を確認してください。
 
-    -   **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持される時間です。
+    -   **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
 
     -   **UseReservedConcurrency**: WhaTapRDSの予約された同時性の使用有無です。
 
     -   **ReservedConcurrency**: WhaTapRDSが予約された同時性を使用したときに、同時に実行できる最大インスタンスの数です。
 
-2.  ログモニタリングの詳細設定のために、次のリンクにアクセスしてください。
+2.  ログモニタリングの詳細設定のために、次のリンクへ移動してください。
 
     <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=whataprdseventforwarder&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogSetting.template' target='_blank' className='ext-link'>AWS CloudFormation Setting</Link>
 
 3.  **パラメータ**セクションで以下の項目を順番に入力してください。
 
-    -   **AwsRdsNames**: イベントを受けようとするRDS Cluster、Instanceの名前一覧
+    -   **AwsRdsNames**: イベントを受信したいRDS Cluster、Instanceの名前一覧
 
         -   例）database-1、seoul-pro-db-01、seoul-pro-db-01-writer …
 
         -   EventRuleを生成しないためには、`none`を入力してください。
 
-    -   **RdsLogGroupName**(**1~9**): ログを受け取りたいRDS CloudWatchLogGroup Name
+    -   **RdsLogGroupName**(**1~9**): ログを受信したいRDS CloudWatchLogGroup Name
 
         -   例）/aws/rds/seoul-pro-db-01
 
@@ -164,36 +164,36 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じて設置すること�
 
     -   Function 
 
-        -   CopyZipsFunction:WhaTap AWS S3 Bucketからユーザの環境に実行ファイルを移すAWS Lambda Function
+        -   CopyZipsFunction:WhaTap AWS S3 Bucketからユーザーの環境に実行ファイルを移すAWS Lambda Function
 
         -   WhaTapRDSLog: AWS RDSのモニタリングのためのAWS Lambda Function
 
     -   Permission
 
-        -   CWPermission: RDS CloudWatchLogGroupにLogが生成されるとき、WhaTapRDSLogを実行できるようにしてくれるPermission
+        -   CWPermission: RDS CloudWatchLogGroupにLogが生成される時、WhaTapRDSLogを実行できるようにするPermission
 
-        -   EventBridgePermission: RDS Eventが発生した場合、EventBridgeでWhaTapRDSLogを実行できるようにしてくれるPermission
+        -   EventBridgePermission: RDS Eventが発生した場合、EventBridgeでWhaTapRDSLogを実行できるようにするPermission
 
     -   Role
 
-        -   CopyZipsFuntionがWhaTapのS3からファイルをインポートし、CopyZipsで入れるために必要なRole
+        -   CopyZipsFuntionがWhaTapのS3からファイルをインポートし、CopyZipsに入れるために必要なRole
 
         -   WhaTapRDSLogがCloudWatchLogGroupにLogを残すために必要なRole
 
-### フィルターおよびルールを確認する
+### フィルターとルールを確認する
 
 ![AWS CloudFormation](/img/aws-rds-log-check-resources.png)
 
 -   **WS CloudWatchLogGroup**
 
-    SubscriptionFilter(1~9): RDSの CloudWatch LogGroupに Logが入ってきたらWhatapRDSLogを実行させるフィルター
+    SubscriptionFilter(1~9): RDSの CloudWatch LogGroupに Logが入ってくるとWhatapRDSLogを実行させるフィルター
 
 -   **AWS EventBridge**
 
-    Rule: AWSイベントで、RDSと関連のイベントが発生するとWhatapRDSLogを実行させるルール
+    Rule: AWSイベントで、RDSと関連したイベントが発生するとWhatapRDSLogを実行させるルール
 
 ## ログモニタリングを開始する
 
-すべての設定を完了した後、**_ログ_**>**_ログ設定_**メニューに入り、ログモニタリングを活性化にしてください。
+すべての設定を完了した後、**_ログ_**>**_ログ設定_**メニューにアクセスし、ログモニタリングを活性化してください。
 
 <ImgLang img='log-start-db.png' desc='ログモニタリングの開始'/>

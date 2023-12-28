@@ -69,3 +69,33 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   ]
 }
 ```
+
+## IP-based transaction search
+
+For one hour from the user-specified start time (`stime`), transactions requested by a specific IP are sorted in descending order of the call count and up to 100 URLs are delivered.
+
+<span class='apitype'>POST</span> https://api.whatap.io/open/api/v2/yard/flush
+
+```bash title="command"
+curl --location 'https://api.whatap.io/open/api/v2/yard/flush' \
+--header 'x-whatap-token: {{PROJECT API TOKEN}}' \
+--header 'x-whatap-pcode: {{projectCode}}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "type": "profiles",
+    "path": "/filter/search",
+    "pcode": "{{projectCode}}",
+    "params": {
+        "stime": {{stime}},
+        "filter": {
+            "ip": "{{ip}}"
+        }
+    }
+}'
+```
+
+| Response Field |            Field Type            | Description                                     |
+| -------------- | :------------------------------: | ----------------------------------------------- |
+| `elapsed`      | <span class='type'>number</span> | Elapsed time from the start time (`stime`)      |
+| `count`        | <span class='type'>number</span> | HTTP Call Count                                 |
+| `url`          | <span class='type'>string</span> | Name of the transaction requested by the client |

@@ -14,6 +14,128 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.0.0.a4
+
+2023年12月21日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="dashboard" />
+
+<p><Status>Fixed</Status> <Cmdname sid="flexboard" className="uitext" />メニューで<Cmdname sid="event_list" className="uitext" />ウィジェットのダッシュボードフィルターが正常に適用されるように修正</p>
+
+#### <Cmdname sid="my_usage" />
+
+-   <Status>Fixed</Status> <Cmdname sid="payment_information" className="uitext" />メニューで<b>Service 1.104.17</b>(国の選択、決済通貨の選択機能の追加) リリース前に<Cmdname sid="credit_card_iamport" className="uitext" />決済手段を選択した顧客にUSD通貨が固定されていた問題を修正
+
+-   <Status>Changed</Status> <Cmdname sid="usage" className="uitext" />メニューからUTC基準日付で使用量を表示
+
+-   <Status>Feature</Status> AWS Marketplaceアカウントユーザーに<Cmdname sid="payment_information" className="uitext" />メニューを表示するように決済情報を追加
+
+#### User Interface
+
+-   <Status>Changed</Status>プロジェクト作成過程で製品を選択する時、すべての製品を意味する<b>All Platform</b>文句を<b>All Category</b>に変更
+
+-   <Status>Changed</Status>ダークテーマをより多くのメニューで利用できるように拡張適用しました。
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+-   <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="trends_compare" className="uitext" />メニューでテーブルオプションが正常に表示されない問題を修正
+
+-   <Status>Changed</Status>プロジェクトV2転換期間を2024年2月29日まで延長し、関連メニューから日付を修正
+
+#### PostgreSQL / MySQL
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューでエージェントアップデートの案内文を変更
+
+-   <Status>Feature</Status>プロジェクトで<code class="my">V2</code>に対応していないエージェントバージョンがインストールされている場合、エージェント更新の案内文をヘッダーに表示する機能を追加
+
+* * *
+
+### `Kubernetes`
+
+#### <Cmdname sid="resource" />
+
+-   <Status>Fixed</Status> <Cmdname sid="node_list" className="uitext" />メニューで<Cmdname sid="equal" className="uitext" />条件でフィルター設定時、1つの値だけを選択できるように修正
+
+-   <Status>Fixed</Status> <Cmdname sid="performance_summary" className="uitext" />メニューでリアルタイムモードを一時停止(<LinkImage img="ico-pause.svg" className="ico" />)後に再起動(<LinkImage img="ico-play-time.svg" className="ico" />)ボタンを選択すると、時間セレクターの表記が5分から30分に変わるバグを修正
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでリアルタイムログイベントを追加または修正しながらAPIリクエストに失敗した場合、失敗の原因をメッセージとして表示するよう改善
+
+* * *
+
+### `Browser`
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />メニューで照会時間基準、ページロード数が最も多い国を地図ウィジェットにデフォルト表示するよう修正
+
+</div>
+
+## Preview 2.0.0.a3
+
+2023年12月13日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Fixed</Status> <Cmdname sid="flexboard" className="uitext" />メニューで<Cmdname sid="AA005" className="uitext" />ウィジェットを通じて<Cmdname sid="TTL06209" className="uitext" />ウィンドウを確認する場合、複数のプロジェクトが選択された中でデータ収集ができないプロジェクトがあれば、プロジェクトリスト全体を読み込めない問題を修正
+
+-   <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューでTopNウィジェットの順位更新時、グラフチャートがつながらないように変更
+
+-   <Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_configuration" className="uitext" />メニューからメトリクスイベントを追加すると<Cmdname sid="alert_test" className="uitext" />機能実行のための必須入力条件を変更
+
+    -   従来：<Cmdname sid="category" className="uitext" />
+    -   変更：<Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, <Cmdname sid="message" className="uitext" /> 
+
+-   <Status>Fixed</Status> <Cmdname sid="my_usage" className="uitext" />メニューで使用量集計時、時間当たりコア数集計基準の修正(コンテナの場合、小数点以下にコア数を割り当てる)
+
+* * *
+
+### `Application`
+
+<p><Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="stack" className="uitext" />メニューで次の問題を修正</p>
+
+-   <Status>Fixed</Status> <Cmdname sid="activestack" className="uitext" />照会時、フィルタリング結果データがない場合、空データに更新されない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="activestack" className="uitext" />照会時、結果が出力される前に「<Cmdname sid="no_data" className="b500" />」メッセージが先に表示される問題を修正
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+-   <Status>Feature</Status> <Cmdname sid="" className="uitext" /> &gt; <Cmdname sid="agent_update" className="uitext" />メニューの新しいUI適用及び機能の改編
+
+    -   エージェントのダウンロード及びアップデートの進行状況を知ることができます。
+    -   アップデートが完了すると、ボタンが自動的に無効になります。
+
+-   <Status>Fixed</Status> <code class="my">V2</code> <Cmdname sid="dashboard" className="uitext" />サブメニューで表示されるインスタンス一覧の順序をアルファベット順に並べ替えるように修正
+
+#### PostgreSQL <code class="my">V2</code> / MySQL <code class="my">V2</code>
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />メニューでインスタンス一覧に実行中のエージェントのみを表示するように修正
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="multi_instance_monitoring" className="uitext" />及び<Cmdname sid="flexboard" className="uitext" /> メニューで<span class="uitext">SQL Elapse Map</span>ウィジェットを通じて<span class="uitext">Query List</span>ウィンドウを開いたとき、テーブルのカラム順序を変更
+
+* * *
+
+### `URL`
+
+<p><Status>Fixed</Status> <Cmdname sid="url_list" className="uitext" />メニューで<Cmdname sid="card_view" className="uitext" />モード時、ステータスに応じたフィルタリングが適用されない問題を修正</p>
+
+</div>
+
 ## Preview 2.0.0.a2
 
 2023年12月11日
@@ -35,6 +157,12 @@ toc_max_heading_level: 2
 -   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />メニューで<Cmdname sid="AA005" className="uitext" /> ウィジェットの<Cmdname sid="yaxis" className="uitext" />オプションを、Y軸変動値をき保存するようにデフォルトを変更
 
 -   <Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="statistic" className="uitext" />メニューの<Cmdname sid="sql" className="uitext" />タブに移動するとSQLハッシュ項目が自動入力されない問題を修正
+
+* * *
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="kubeEventList" className="uitext" />メニューの追加：プロジェクト単位でKubernetesイベントに対する照会と検索機能</p>
 
 * * *
 
@@ -149,8 +277,6 @@ toc_max_heading_level: 2
 
 -   <Status>Feature</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="containerImages" className="uitext" />メニューに指標を追加 - <b>Total Container CPU</b>、<b>Total Container Memory</b>
 
--   <Status>Feature</Status> <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="kubeEventList" className="uitext" />メニューの追加：プロジェクト単位でKubernetesイベントに対する照会と検索機能
-
 -   <Status>Changed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="pod_init_perform" className="uitext" /> メニュー変更
 
     -   ノードエージェント1.4.2 バージョン以降に対応
@@ -164,7 +290,7 @@ toc_max_heading_level: 2
     -   マルチサービスヒトマップ → **マルチサービスヒットマップ**
     -   カスタムヒトマップ → **カスタムヒットマップ**
 
--   <Status>Changed</Status> <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />メニューでウィジェットを移動できないように固定レイアウトに変更
+-   <Status>Changed</Status> <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />メニューからウィジェットを移動できないように固定レイアウトに変更
 
 -   <Status>Fixed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="node_detail" className="uitext" />メニューから断続的にサーバーが選択されない問題を修正
 
@@ -175,7 +301,7 @@ toc_max_heading_level: 2
     -   **_Total Container Memory Request_**: プロジェクト内部のすべてのコンテナのMemory Request(`mem_request`) 値の合計
     -   **_Total Container Memory Usage_**: プロジェクト内部のすべてのコンテナのMemory Usage(`mem_working_set`) 値の合計
 
--   <Status>Fixed</Status> 次のメニューでプロジェクト照会権限のないネームスペースプロジェクトに移動可能なバグを修正
+-   <Status>Fixed</Status> 次のメニューからプロジェクト照会権限のないネームスペースのプロジェクトへ移動できるバグを修正
 
     -   <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="namespace_status" className="uitext" />
     -   <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="namespace_management" className="uitext" />
@@ -194,7 +320,7 @@ toc_max_heading_level: 2
 
     :::note
 
-    この現象は、ユーザーのブラウザから別のタブに切り替えてから一定時間(約1時間)が経過してから現在のタブ(<Cmdname sid="rumDashboard" className="uitext" />)に戻る場合に発生します。
+    この現象は、ユーザーのブラウザから別のタブに切り替えた後、一定時間(1時間程)が経過してから現在のタブ(<Cmdname sid="rumDashboard" className="uitext" />)に戻った場合に発生します。
 
     :::
 
@@ -245,7 +371,7 @@ toc_max_heading_level: 2
 
 #### <Cmdname sid="reportStat" />
 
-<p><Status>Fixed</Status> <Cmdname sid="report" className="uitext" /> 메뉴에서 <Cmdname sid="guide" className="uitext" />ボタンをクリックする時に、設定された言語に合わせてガイド(Docs) リンクに移動するように修正</p>
+<p><Status>Fixed</Status> <Cmdname sid="report" className="uitext" /> メニューから <Cmdname sid="guide" className="uitext" />ボタンをクリックする時に、設定された言語に合わせてガイド(Docs) リンクへ移動するように修正</p>
 
 #### User Interface
 

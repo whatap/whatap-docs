@@ -35,7 +35,7 @@ RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
 
 </Tabs>
 
-次のコマンドを実行して、WhaTapサービスが正常に実行されていることを確認してください。 
+次のコマンドを実行して、WhaTapサービスが正常に実行されているかを確認してください。 
 
 ```docker
 ps -ef | grep whatap_agent
@@ -43,10 +43,10 @@ ps -ef | grep whatap_agent
 
 ## エージェントのインストール確認
 
-エージェントが正常にインストールされたことを確認するには、<Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" />メニューに移動してください。
+エージェントが正常にインストールされたかを確認するには、<Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" />メニューへ移動してください。
 
 ダウンロードしたファイルをインストールした後に<Cmdname sid="dashboard" className="uitext" />メニューからエージェントが表示されない場合は、次の事項を確認してください。
 
 -   コンテナで`ps -ef | grep whatap_agent`コマンドを実行し、エージェントオプションが適用されているかを確認してください。
 
--   コンテナの_`WHATAP_HOME`/logs_、またはアプリケーション実行パスの_logs_ディレクトリを確認してください。 エージェントログは、_logs/whatap-`{bootまたはinstall}`-yyyymmdd.log_形式のファイル名で出力されます。
+-   コンテナの_`WHATAP_HOME`/logs_、またはアプリケーション実行パスの_logs_ディレクトリを確認してください。 エージェントログは、_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_形式のファイル名として出力されます。

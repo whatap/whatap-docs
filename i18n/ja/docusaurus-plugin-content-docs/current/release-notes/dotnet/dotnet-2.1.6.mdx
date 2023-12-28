@@ -41,7 +41,7 @@ pagination_next: release-notes/dotnet/dotnet-2_1_5
         }
         ```
 
-    -   ログを残したい位置で`Tracer.Trace("ログ文字列")`と同じ形式でコードを追加してください。
+    -   ログを残したい位置から、`Tracer.Trace("ログ文字列")`の形でコードを追加してください。
 
         ```csharp
         public string UserFunction(int value)
@@ -51,6 +51,6 @@ pagination_next: release-notes/dotnet/dotnet-2_1_5
         }
         ```
 
--   <Status>Fixed</Status>Windows Communication Foundation(WCF, ウェブサービス)関連エラーの修正
+-   <Status>Fixed</Status>Windows Communication Foundation(WCF、WEBサービス)関連エラーの修正
 
     `webservice_method_prefix`オプションが`null`文字列状態で`webservice_method_enabled=true`で設定すると、追跡対象がWCFを含むすべてのメソッドに拡大され、モニタリングできない対象が含まれるバグを修正しました。

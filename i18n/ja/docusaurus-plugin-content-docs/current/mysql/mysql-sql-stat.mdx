@@ -1,7 +1,7 @@
 ---
 id: mysql-sql-stat
-title: MYSQL SQL統計
-description: performance_schemaのevents_statements_summary_by_digest内容を1時間に1回収集し、統計データを提供します。アクティブセッションに基づく既存の'SQL統計'メニューとともにSQL分析に活用してください。
+title: MySQL SQL統計
+description: performance_schemaのevents_statements_summary_by_digest内容を1時間ごとに収集して統計データを表示します。アクティブセッションに基づく他の'SQL統計'メニューと合わせて、SQL分析に活用できます。
 tags:
   - MySQL
   - データベース
@@ -11,7 +11,7 @@ tags:
 
 ホーム画面>プロジェクト選択>**_統計/レポート_**>**_MYSQL統計_**
 
-MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実行時間、Rowの数など)で`performance_schema.events_statements_summary_by_digest`ビューを通じて収集します。 
+MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実行時間、Rowの数など)で、`performance_schema.events_statements_summary_by_digest`ビューを介して収集します。 
 
 :::note
 
@@ -31,13 +31,13 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
     performance_schema = on
     ```
 
-2.  モニタリングアカウントからそのデータを読み取れるように照会権限を設定してください。
+2.  モニタリングアカウントから、該当のデータを読み取りできるように照会権限を設定します。
 
     ```bash
     grant select on performance_schema.* to whatap;
     ```
 
-3.  DBXエージェントにオプションを設定してください。
+3.  DBXエージェントでオプションを設定します。
 
     ```ini title='whatap.conf'
     statements=true
@@ -45,7 +45,7 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 :::note
 
-1時間おきに`events_statements_summary_by_digest`からデルタ値を計算して収集します。 したがって、設定してから1時間後から収集を開始します。
+1時間毎に`events_statements_summary_by_digest`からデルタ値を計算して収集します。 そのため、設定してから1時間後から収集を開始します。
 
 :::
 
@@ -59,21 +59,21 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 
 | フィールド名                    | 説明                                                                     |
 | ------------------------- | ---------------------------------------------------------------------- |
-| `digest_text`             | SQLドア                                                                  |
+| `digest_text`             | SQL文                                                                   |
 | `digest`                  | `digest_text`のハッシュ値                                                    |
 | `schema_name`             | スキーマ名                                                                  |
 | `count_star`              | 実行回数                                                                   |
 | `timer_wait`              | すべての遂行時間(秒)                                                            |
 | `lock_time`               | テーブルロックによる待ち時間(秒)                                                      |
-| `rows_affected`           | 影響を受けたrowの数(insert, update, replace構文)                                 |
+| `rows_affected`           | 影響を受けたrowの数(insert、update、replace構文)                                   |
 | `rows_sent`               | リターンされたrowの数                                                           |
 | `rows_examined`           | server layerで検討されたrowの数                                                |
-| `created_tmp_disk_tables` | コマンドの実行中にサーバーが作成したディスクの臨時テーブル数の合計、回数が高い場合は、sortメモリサイズの増設を考慮してください。     |
+| `created_tmp_disk_tables` | コマンドの実行中にサーバーが作成したディスクの臨時テーブル数の合計。回数が高い場合は、sortメモリサイズの増設を検討します。        |
 | `created_tmp_tables`      | コマンドの実行中にサーバーが作成した内部臨時テーブル数の合計                                         |
-| `select_full_join`        | インデックスを使用していないtablescanの数、0でなければインデックス確認が必要です。                         |
+| `select_full_join`        | インデックスを使用していないテーブルスキャンの数。0でなければインデックスの確認が必要です。                         |
 | `select_full_range_join`  | 参照テーブルでrange検索を使用したジョイン(join)数                                         |
 | `select_range`            | 最初のテーブルでrangeを使用したジョイン(join)数                                          |
-| `select_range_check`      | キーなしでジョイン(join)が発生した数、0でなければ確認が必要です。                                   |
+| `select_range_check`      | キーなしでジョイン(join)が発生した数。0でなければ確認が必要です。                                   |
 | `select_scan`             | Drivingテーブルをフルスキャンした数                                                  |
 | `sort_merge_passes`       | sort mergeでsortされた数                                                    |
 | `sort_range`              | rangeでsortされた数                                                         |

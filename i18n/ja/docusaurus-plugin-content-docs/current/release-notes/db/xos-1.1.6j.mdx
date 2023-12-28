@@ -7,13 +7,13 @@ pagination_next: release-notes/db/xos-1_1_6g
 
 2023年10月13日
 
--   <Status>New</Status>プロセス(process)モニタリング機能の追加、プロセスの実行状態をモニタリング可能
+-   <Status>New</Status>プロセス(process)モニタリング機能の追加。プロセスの実行状態がモニタリングできます。
 
     ```ini title='xos.conf'
     process={process_name}
     ```
 
--   <Status>New</Status>データベースサーバーのIP一覧の収集、秒単位(最低3秒)で時間間隔(interval)を設定すると収集可能
+-   <Status>New</Status>データベースサーバーのIP一覧の収集。秒単位(最小3秒)で周期(interval)を設定すると収集できます。
 
     ```ini title='xos.conf'
     iplist_interval={second}

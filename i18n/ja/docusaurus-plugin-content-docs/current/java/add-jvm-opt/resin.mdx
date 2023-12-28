@@ -9,41 +9,56 @@ tags:
 
 ## JVMオプションの追加
 
-Resinを使用するアプリケーションサーバ環境でJVMオプションを追加する方法を確認してください。 
+Resinを使用するアプリケーションサーバー環境でJVMオプションを追加する方法を確認してください。Javaバージョンによって適用するJVMオプションが異なる場合があります。ユーザーの環境に合わせたJVMオプションを適用してください。オプションを適用して、アプリケーションサーバーを再起動してください。
 
-1.  Resin設定ファイルから`jvm-arg`を追加して`-javaagent`オプションを設定してください。
+-   オプション1: _resin.properties_ファイルに`jvm_args`属性を使って`javaagent`引数を追加してください。
 
-    ```xml title='Resin 4.x: $RESIN_HOME/conf/resin.properties'
-    ...
-    <resin xmlns="http://caucho.com/ns/resin">
-    <cluster id="web-tier">
-        <server-default>
-            <jvm-arg>-Xmx1024m -XX:MaxPermSize=128m -javaagent:/whatap/whatap.agent-X.Y.Z.jar</jvm-arg>
-        </server-default>
-        ...
-    </cluster>
-    </resin>
-    ...
-    ```
+-   オプション2: `conf/resin.conf`または`conf/resin.xml`ファイルに`<jvm-args>`セクションを追加して`-javaagent`引数を設定してください。
 
-2.  アプリケーションサーバーを再起動します。
+:::note
 
-3.  アプリケーションサーバーのログファイルとエージェントのログファイルを使用して、エージェントが正常に動作していることとエラーが発生していないことを確認してください。ログファイルの場所については、以下を確認してください。
+-   アプリケーションサーバーのログファイルとエージェントのログファイルを使用して、エージェントが正常に動作していることとエラーが発生していないことを確認してください。ログファイルの場所については、以下を確認してください。
 
     -   エージェント：_`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
     -   RESIN 4.x: _$RESIN_HOME/log/jvm-app-#.log_
 
-:::note
-
-{@include: _java-17.mdx} 
+-   エージェントが正常に動作しないか、エラーが発生した場合は[次の文書](../install-check)を確認してください。
 
 :::
 
-:::note
+### Java 6 ~ Java 8バージョン
 
-エージェントが正常に動作しないか、エラーが発生した場合は[次の文書](../install-check)を確認してください。
+```properties title="resin.properties"
+jvm_args : -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar
+```
 
-:::
+```xml title="resin.conf | resin.xml"
+<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
+```
+
+### Java 9 ~ Java 15バージョン
+
+```properties title="resin.properties"
+jvm_args : -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true
+```
+
+```xml title="resin.conf | resin.xml"
+<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
+<jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
+```
+
+### Java 16バージョン以降
+
+```properties title="resin.properties"
+jvm_args : -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+```
+
+```xml title="resin.conf | resin.xml"
+<jvm-arg>-javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar</jvm-arg>
+<jvm-arg>-Djdk.attach.allowAttachSelf=true</jvm-arg>
+<jvm-arg>--add-opens=java.base/java.lang=ALL-UNNAMED</jvm-arg> <!-- Java 17 or later -->
+<jvm-arg>--add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED</jvm-arg>
+```
 
 {@include: _set-heap-memory.mdx}
 

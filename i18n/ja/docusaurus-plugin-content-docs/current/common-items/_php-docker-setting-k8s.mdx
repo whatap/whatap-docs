@@ -1,11 +1,11 @@
-## Kubernetes環境変数およびボリューム
+## Kubernetes環境変数とボリューム
 
 次の案内に従って、環境変数とボリュームを設定してください。
 
 <Tabs>
 <TabItem value="basic" label="기본" default>
 
-トランザクションからNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルおよびログファイル用のテンポラリーボリュームを設定します。
+トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
 
 ```docker
 
@@ -21,11 +21,11 @@ env:
 
 </TabItem>
 
-<TabItem value="eks" label="EKS Fargate(サポート予定)" default>
+<TabItem value="eks" label="EKS Fargate(対応予定)" default>
 
 -   **shareProcessNamespaceの設定を追加**
 
-    デプロイメント(Deployment)またはレプリカセット(ReplicaSet)の_.spec_内のフィールドにユーザPodリソースを観測するための 
+    デプロイメント(Deployment)、またはレプリカセット(ReplicaSet)の_.spec_内のフィールドにユーザーPodリソースを観測するための 
     `shareProcessNamespace`、`SERVICE ACCOUNT`を追加してください。
 
     ```docker
@@ -44,7 +44,7 @@ env:
 
 -   **Kubernetesのコンテナ環境変数の設定**
 
-    トランザクションからNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルおよびログファイル用のテンポラリーボリュームを設定します。
+    トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
 
     ```docker
 
