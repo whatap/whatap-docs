@@ -20,9 +20,15 @@
 }
 
 .ais-InstantSearch {
-  max-width: 960px;
+  /* max-width: 960px; */
+  width: 100%;
+  padding: 15px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+.ais-Highlight-highlighted {
+  background-color: yellow;
 }
 
 .ais-Hits-item,
