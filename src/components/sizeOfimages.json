@@ -3511,18 +3511,6 @@
     "width": 1200,
     "height": 421
   },
-  "db-database-size-objectdetail-postgresql-en.png": {
-    "width": 1200,
-    "height": 421
-  },
-  "db-database-size-objectdetail-postgresql-ja.png": {
-    "width": 1200,
-    "height": 421
-  },
-  "db-database-size-objectdetail-postgresql.png": {
-    "width": 1200,
-    "height": 421
-  },
   "db-database-size-postgresql-en.png": {
     "width": 1200,
     "height": 569
@@ -4662,6 +4650,22 @@
   "db-sql-elapse-map-example.png": {
     "width": 1810,
     "height": 413
+  },
+  "db-sql-objectdetail-pg-en.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "db-sql-objectdetail-pg-ja.png": {
+    "width": 1200,
+    "height": 629
+  },
+  "db-sql-objectdetail-pg.png": {
+    "width": 1200,
+    "height": 650
+  },
+  "db-sql-preview.png": {
+    "width": 800,
+    "height": 161
   },
   "db-sql-stat-add-filter-en.png": {
     "width": 600,
@@ -11202,6 +11206,34 @@
   "tx-trace-tree.png": {
     "width": 1759,
     "height": 1194
+  },
+  "main-project-compact-card-view.png": {
+    "width": 1200,
+    "height": 413
+  },
+  "main-project-extend-card-view.png": {
+    "width": 1208,
+    "height": 471
+  },
+  "main-project-favorite-list.png": {
+    "width": 960,
+    "height": 315
+  },
+  "main-project-list-card-view.png": {
+    "width": 1200,
+    "height": 471
+  },
+  "main-project-select-view.png": {
+    "width": 600,
+    "height": 76
+  },
+  "main-project-set-favorite.png": {
+    "width": 400,
+    "height": 145
+  },
+  "main-ui-ver2.png": {
+    "width": 1200,
+    "height": 647
   },
   "uni-topology-select-project-en.png": {
     "width": 800,

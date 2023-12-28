@@ -50783,6 +50783,370 @@
     "ko": "Critical과 Warning 레벨의 이벤트가 해결되면 <span style='color: {color};'>RECOVERED 상태의 알림을 수신</span>합니다.",
     "service_id": "DSC07371"
   },
+  "NTC07372": {
+    "en": "You can select up to {n} search keys.",
+    "ja": "最大{n}件の検索キーが選択できます。",
+    "ko": "검색키는 최대 {n}개까지 선택할 수 있습니다.",
+    "zh": "You can select up to {n} search keys.",
+    "service_id": "NTC07372"
+  },
+  "TTL07373": {
+    "en": "Node agent installation status",
+    "ja": "ノードエージェントのインストール状況",
+    "ko": "노드 에이전트 설치 현황",
+    "zh": "Node agent installation status",
+    "service_id": "TTL07373"
+  },
+  "TTL07374": {
+    "en": "Master agent installation status",
+    "ja": "マスターエージェントのインストール状況",
+    "ko": "마스터 에이전트 설치 현황",
+    "zh": "Master agent installation status",
+    "service_id": "TTL07374"
+  },
+  "TTL07375": {
+    "en": "Event Details",
+    "ja": "イベント内容",
+    "ko": "이벤트 내용",
+    "zh": "Event Details",
+    "service_id": "TTL07375"
+  },
+  "TTL07376": {
+    "en": "Agent (Instance)",
+    "ja": "Agent (Instance)",
+    "ko": "에이전트 (인스턴스)",
+    "zh": "Agent (Instance)",
+    "service_id": "TTL07376"
+  },
+  "TTL07377": {
+    "en": "Project Resources",
+    "ja": "プロジェクトリソース",
+    "ko": "프로젝트 리소스",
+    "zh": "Project Resources",
+    "service_id": "TTL07377"
+  },
+  "TLT07378": {
+    "en": "Collapse the menu",
+    "ja": "メニューを折りたたむ",
+    "ko": "메뉴 접기",
+    "zh": "Collapse the menu",
+    "service_id": "TLT07378"
+  },
+  "TLT07379": {
+    "en": "Select an Organization",
+    "ja": "組織選択",
+    "ko": "조직 선택",
+    "zh": "Select an Organization",
+    "service_id": "TLT07379"
+  },
+  "TLT07380": {
+    "en": "Select a Group / Project",
+    "ja": "グループ/プロジェクトの選択",
+    "ko": "그룹 / 프로젝트 선택",
+    "zh": "Select a Group / Project",
+    "service_id": "TLT07380"
+  },
+  "TLT07381": {
+    "en": "Search for projects",
+    "ja": "プロジェクト検索",
+    "ko": "프로젝트 검색",
+    "zh": "Search for projects",
+    "service_id": "TLT07381"
+  },
+  "TLT07382": {
+    "en": "Theme settings",
+    "ja": "テーマ設定",
+    "ko": "테마 설정",
+    "zh": "Theme settings",
+    "service_id": "TLT07382"
+  },
+  "TLT07383": {
+    "en": "View in full screen",
+    "ja": "全体画面で見る",
+    "ko": "전체 화면으로 보기",
+    "zh": "View in full screen",
+    "service_id": "TLT07383"
+  },
+  "TLT07384": {
+    "en": "Go to Project List",
+    "ja": "プロジェクト一覧へ移動",
+    "ko": "전체 프로젝트 목록으로 이동",
+    "zh": "Go to Project List",
+    "service_id": "TLT07384"
+  },
+  "TLT07385": {
+    "en": "Show only the Favorites menu",
+    "ja": "お気に入りメニューのみ表示",
+    "ko": "즐겨찾기 메뉴만 표시",
+    "zh": "Show only the favorites menu",
+    "service_id": "TLT07385"
+  },
+  "DSC07386": {
+    "en": "Agent information is provided in real time only.",
+    "ja": "エージェント情報はリアルタイム情報のみ表示されます。",
+    "ko": "에이전트 정보는 실시간 정보만 제공됩니다.",
+    "zh": "Agent information is provided in real time only.",
+    "service_id": "DSC07386"
+  },
+  "TLT07387": {
+    "en": "Expand the menu",
+    "ja": "メニューを開く",
+    "ko": "메뉴 펼치기",
+    "zh": "Expand the menu",
+    "service_id": "TLT07387"
+  },
+  "TTL07388": {
+    "en": "Number of Agent nodes",
+    "ja": "エージェントノード数",
+    "ko": "에이전트 노드 수",
+    "zh": "Number of Agent nodes",
+    "service_id": "TTL07388"
+  },
+  "DSC07389": {
+    "en": "A search value that does not exist in the list.",
+    "ja": "リストに存在しない検索値。",
+    "ko": "목록에 존재하지 않는 검색값입니다.",
+    "zh": "A search value that does not exist in the list.",
+    "service_id": "DSC07389"
+  },
+  "DSC07390": {
+    "en": "There is no Favorites menu.",
+    "ja": "お気に入りメニューがありません。",
+    "ko": "즐겨찾기 메뉴가 없습니다.",
+    "zh": "There is no Favorites menu.",
+    "service_id": "DSC07390"
+  },
+  "TLT07391": {
+    "en": "Provides up to {n} search values in ascending order of the string. Search values not included in the list can be entered directly.",
+    "ja": "文字列の昇順で最大{n}個の検索値を提供する。リストに含まれていない検索値は直接入力できます。",
+    "ko": "문자열 오름차순을 기준으로 최대 {n}개의 검색값을 제공합니다. 목록에 포함되지 않는 검색값은 직접 입력할 수 있습니다.",
+    "zh": "Provides up to {n} search values in ascending order of the string. Search values not included in the list can be entered directly.",
+    "service_id": "TLT07391"
+  },
+  "TLT07392": {
+    "en": "Having problems?",
+    "ja": "OTP コードによる認証に問題がありますか?",
+    "ko": "OTP 코드로 인증이 어려우신가요?",
+    "zh": "Having problems?",
+    "service_id": "TLT07392"
+  },
+  "BTN07393": {
+    "en": "Use a recovery code",
+    "ja": "復旧コードによる認証",
+    "ko": "복구 코드로 인증",
+    "zh": "Use a recovery code",
+    "service_id": "BTN07393"
+  },
+  "DSC07394": {
+    "en": "Please select and enter one of the saved recovery code.",
+    "ja": "保存した復旧キーのいずれかを選択して入力してください。",
+    "ko": "저장된 복구 코드 중 하나를 선택하여 입력해 주세요.",
+    "zh": "Please select and enter one of the saved recovery code.",
+    "service_id": "DSC07394"
+  },
+  "DSC07395": {
+    "en": "The recovery code is a one-time use and requires OTP re-authentication.",
+    "ja": "リカバリキーは、ワンタイム使用後にOTPを再認証する必要があります。",
+    "ko": "복구 코드는 일회성으로 사용 후 OTP를 재인증 해야합니다.",
+    "zh": "The recovery code is a one-time use and requires OTP re-authentication.",
+    "service_id": "DSC07395"
+  },
+  "TTL07396": {
+    "en": "Recovery code",
+    "ja": "回復コード",
+    "ko": "복구 코드",
+    "zh": "Recovery code",
+    "service_id": "TTL07396"
+  },
+  "BTN07397": {
+    "en": "Tutorials",
+    "ja": "チュートリアル",
+    "ko": "튜토리얼",
+    "zh": "Tutorials",
+    "service_id": "BTN07397"
+  },
+  "DSC07398": {
+    "en": "The number of attempts allowed has been exceeded. Please try again in a few minutes.",
+    "ja": "許可された試行回数を超えました。 数分後にもう一度試してください。",
+    "ko": "허용되는 시도 횟수를 초과했습니다. 잠시 후 다시 시도해주세요.",
+    "zh": "The number of attempts allowed has been exceeded. Please try again in a few minutes.",
+    "service_id": "DSC07398"
+  },
+  "BTN07399": {
+    "en": "Confirmed",
+    "ja": "確認しました",
+    "ko": "확인했습니다",
+    "zh": "Confirmed",
+    "service_id": "BTN07399"
+  },
+  "TTL07400": {
+    "en": "WhaTap side menu",
+    "ja": "WhaTapサイドメニュー",
+    "ko": "와탭 사이드 메뉴",
+    "zh": "WhaTap side menu",
+    "service_id": "TTL07400"
+  },
+  "TTL07401": {
+    "en": "Select Project",
+    "ja": "プロジェクト選択",
+    "ko": "프로젝트 선택",
+    "zh": "Select Project",
+    "service_id": "TTL07401"
+  },
+  "TTL07402": {
+    "en": "Project List",
+    "ja": "プロジェクト一覧",
+    "ko": "프로젝트 목록",
+    "zh": "Project List",
+    "service_id": "TTL07402"
+  },
+  "TTL07403": {
+    "en": "Project Menu",
+    "ja": "プロジェクトメニュー",
+    "ko": "프로젝트 메뉴",
+    "zh": "Project Menu",
+    "service_id": "TTL07403"
+  },
+  "TTL07404": {
+    "en": "About WhaTap Products",
+    "ja": "WhaTap商品紹介",
+    "ko": "와탭 상품 소개",
+    "zh": "About WhaTap Products",
+    "service_id": "TTL07404"
+  },
+  "TTL07405": {
+    "en": "Change screen mode",
+    "ja": "画面モードの変更",
+    "ko": "화면 모드 변경",
+    "zh": "Change screen mode",
+    "service_id": "TTL07405"
+  },
+  "CNT07406": {
+    "en": "The side menu has gotten a makeover: we've moved from a UI structure with a top-down project list and project menu to a menu-centric structure. Let's take a look at the details of what's changed.",
+    "ja": "サイドメニューが新しくなりました。 既存のプロジェクトリストとプロジェクトメニューが上下に分離されたUI構造からメニュー集中型構造に改編しました。具体的に何が変わったのか見てみましょう。",
+    "ko": "사이드 메뉴가 새단장을 했습니다. 기존에 프로젝트 목록과 프로젝트 메뉴가 상하로 분리된 UI 구조에서 메뉴 집중형 구조로 개편했습니다. 세부적으로 무엇이 달라졌는지 살펴볼까요?",
+    "zh": "The side menu has gotten a makeover: we've moved from a UI structure with a top-down project list and project menu to a menu-centric structure. Let's take a look at the details of what's changed.",
+    "service_id": "CNT07406"
+  },
+  "CNT07407": {
+    "en": "Existing project selections are displayed as a popover with the full project list history when you click the area. After selecting a project, the name of the selected project is displayed.",
+    "ja": "既存のプロジェクト選択領域は、その領域をクリックすると、プロジェクト全体のリスト履歴がポップアップで表示されます。プロジェクトを選択すると、選択したプロジェクト名が表示されます。",
+    "ko": "기존의 프로젝트 선택 영역은 해당 영역 클릭하면 전체 프로젝트 목록 내역이 팝오버로 표시됩니다. 프로젝트를 선택한 후에는 선택한 프로젝트 이름이 표시됩니다.",
+    "zh": "Existing project selections are displayed as a popover with the full project list history when you click the area. After selecting a project, the name of the selected project is displayed.",
+    "service_id": "CNT07407"
+  },
+  "CNT07408": {
+    "en": "In the projects list, you can add groups and projects, or select and move projects. It's enhanced with a tree view to help you see and find your group and project structure more intuitively.",
+    "ja": "プロジェクトリストでは、グループとプロジェクトを追加したり、プロジェクトを選択して移動することができます。トリビューに改善して、より直感的にグループとプロジェクトの構造を把握して探すことができます。",
+    "ko": "프로젝트 목록에서는 그룹과 프로젝트를 추가하거나, 프로젝트를 선택해 이동할 수 있습니다. 트리뷰로 개선하여 보다 직관적으로 그룹과 프로젝트 구조를 파악하고 찾을 수 있습니다.",
+    "zh": "In the projects list, you can add groups and projects, or select and move projects. It's enhanced with a tree view to help you see and find your group and project structure more intuitively.",
+    "service_id": "CNT07408"
+  },
+  "CNT07409": {
+    "en": "To search for a project, click the \"magnifying glass\" icon on the left side of the menu.",
+    "ja": "プロジェクト検索はメニュー左側の「虫眼鏡」アイコンをクリックしてください。",
+    "ko": "프로젝트 검색은 메뉴 왼쪽 ‘돋보기' 아이콘을 클릭하세요.",
+    "zh": "To search for a project, click the \"magnifying glass\" icon on the left side of the menu.",
+    "service_id": "CNT07409"
+  },
+  "CNT07410": {
+    "en": "The menu corresponding to the group / project selected in the project list will be displayed.",
+    "ja": "プロジェクトリストから選択したグループ/プロジェクトに該当するメニューが表示されます。",
+    "ko": "프로젝트 목록에서 선택한 그룹 / 프로젝트에 해당되는 메뉴가 표시됩니다.",
+    "zh": "The menu corresponding to the group / project selected in the project list will be displayed.",
+    "service_id": "CNT07410"
+  },
+  "CNT07411": {
+    "en": "You can check the information of various product lines that are being serviced on the WhaTap platform.",
+    "ja": "WhaTapプラットフォームでサービス中の様々な商品群の情報を確認することができます。",
+    "ko": "와탭 플랫폼에서 서비스 중인 다양한 상품군의 정보를 확인할 수 있습니다.",
+    "zh": "You can check the information of various product lines that are being serviced on the WhaTap platform.",
+    "service_id": "CNT07411"
+  },
+  "CNT07412": {
+    "en": "A theme selection button to change the screen mode, and a button to switch to full screen mode with the menu and header hidden.",
+    "ja": "画面モードを変更できるテーマ選択ボタンと、メニューとヘッダーを非表示にしたフルスクリーンモードに切り替えるボタンです。",
+    "ko": "화면모드를 변경할 수 있는 테마 선택 버튼과 메뉴와 헤더를 숨긴 전체 화면 모드로 전환하는 버튼입니다.",
+    "zh": "A theme selection button to change the screen mode, and a button to switch to full screen mode with the menu and header hidden.",
+    "service_id": "CNT07412"
+  },
+  "CNT07413": {
+    "en": "You can view your existing usage history under the Account menu in the top right corner.",
+    "ja": "既存の利用履歴は、右上のアカウントメニューの下に表示されます。",
+    "ko": "기존의 이용내역은 우측 상단 계정 메뉴 하위에서 보실 수 있습니다.",
+    "zh": "You can view your existing usage history under the Account menu in the top right corner.",
+    "service_id": "CNT07413"
+  },
+  "DSC07414": {
+    "en": "Select a template on the left to create your event.",
+    "ja": "左側のテンプレートを選択してイベントを作成します。",
+    "ko": "왼쪽의 템플릿을 선택하여 이벤트를 작성하세요.",
+    "zh": "Select a template on the left to create your event.",
+    "service_id": "DSC07414"
+  },
+  "TTL07415": {
+    "en": "Event reception",
+    "ja": "イベント受付",
+    "ko": "이벤트 수신",
+    "zh": "Event reception",
+    "service_id": "TTL07415"
+  },
+  "TTL07416": {
+    "en": "Reception tag",
+    "ja": "受信タグ",
+    "ko": "수신 태그",
+    "zh": "Reception tag",
+    "service_id": "TTL07416"
+  },
+  "TLT07417": {
+    "en": "View node information",
+    "ja": "ノード情報の表示",
+    "ko": "노드 정보 보기",
+    "zh": "View node information",
+    "service_id": "TLT07417"
+  },
+  "DSC07418": {
+    "en": "You can enter a variable by typing $. <br>\nex) An error occurred at ${active_tx_8} ${time}.",
+    "ja": "$を入力すると変数を入力できます。<br>\nex) ${active_tx_8} ${time} にエラーが発生しました。",
+    "ko": "$를 입력하면 변수를 입력할 수 있습니다.<br>\nex) ${active_tx_8} ${time}에 에러가 발생했습니다.\n",
+    "zh": "You can enter a variable by typing $. <br>\nex) An error occurred at ${active_tx_8} ${time}.",
+    "service_id": "DSC07418"
+  },
+  "ITM07419": {
+    "en": "Receive All",
+    "ja": "すべて受信",
+    "ko": "전체 수신",
+    "zh": "Receive All",
+    "service_id": "ITM07419"
+  },
+  "ITM07420": {
+    "en": "Receive Selected Tags",
+    "ja": "選択したタグを受信する",
+    "ko": "태그 선택 수신",
+    "zh": "Receive Selected Tags",
+    "service_id": "ITM07420"
+  },
+  "NTC07421": {
+    "en": "\bGenerating a report. Please check back later.",
+    "ja": "レポートを生成しています。しばらくしてからご確認ください。",
+    "ko": "보고서를 생성하고 있습니다. 잠시 후 확인 해주시기 바랍니다.",
+    "zh": "\bGenerating a report. Please check back later.",
+    "service_id": "NTC07421"
+  },
+  "NTC07423": {
+    "en": "This report has already been created.",
+    "ja": "すでに生成されたレポートです。",
+    "ko": "이미 생성된 보고서입니다.",
+    "zh": "This report has already been created.",
+    "service_id": "NTC07423"
+  },
+  "NTC07424": {
+    "en": "The report has been generated.",
+    "ja": "レポートが生成されました。",
+    "ko": "보고서가 생성되었습니다.",
+    "zh": "The report has been generated.",
+    "service_id": "NTC07424"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
