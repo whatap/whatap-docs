@@ -15,7 +15,7 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 
 :::note
 
--   1時間おきに`pg_stat_statements`からデルタ値を計算して収集しますので、設定して1時間後から収集を開始します。
+-   1時間間隔で`pg_stat_statements`からデルタ値を計算して収集するため、設定から1時間が経ってから収集を開始します。
 
 -   `pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参照してください。
 
@@ -43,7 +43,7 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
     create extension pg_stat_statements;
     ```
 
-4.  データを表示するか確認してください。
+4.  データが表示されているか確認してください。
 
     ```bash
     select * from public.pg_stat_statements
@@ -63,21 +63,21 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 | `queryid`             | クエリハッシュコード                                                 |
 | `user`                | ユーザーoid                                                    |
 | `db`                  | データベース名                                                    |
-| `rows`                | 検索または影響を受けるROWの総数                                          |
+| `rows`                | 検索または影響を受ける列の総数                                            |
 | `total_exec_time`     | クエリの実行に費やされた合計時間(ミリ秒)                                      |
 | `calls`               | 実行回数                                                       |
-| `shared_blks_hit`     | 共有ブロックキャッシュの合計総数                                           |
+| `shared_blks_hit`     | 共有ブロックキャッシュの総ヒット数                                          |
 | `shared_blks_read`    | ディスクから読み込んだ共有ブロックの総数                                       |
 | `blk_read_time`       | ブロックの読み取りにかかった合計時間(ミリ秒)、`track_io_timing`が有効な場合、それ以外の場合は0  |
 | `blk_write_time`      | ブロックを書き込みに費やされた合計時間、`track_io_timing`が有効になっている場合、それ以外の場合は0 |
 | `local_blks_dirtied`  | 変更されたローカルブロック数                                             |
 | `local_blks_hit`      | ローカルブロックキャッシュヒット数                                          |
-| `local_blks_written`  | ディスクに書き込まれたローカルブロックの総数                                     |
-| `local_blks_read`     | ディスクで読み込んだローカルブロックの総数                                      |
-| `shared_blks_written` | ディスクに書き込まれた共有ブロックの総数                                       |
+| `local_blks_written`  | ディスクに書き込みしたローカルブロックの総数                                     |
+| `local_blks_read`     | ディスクで読み取ったローカルブロックの総数                                      |
+| `shared_blks_written` | ディスクに書き込みした共有ブロックの総数                                       |
 | `shared_blks_dirtied` | 変更された共有ブロックの総数                                             |
-| `temp_blks_read`      | ディスクから読み取られた一時ブロックの総数                                      |
-| `temp_blks_written`   | ディスクに書き込まれた一時ブロックの総数                                       |
+| `temp_blks_read`      | ディスクから読み取った一時ブロックの総数                                       |
+| `temp_blks_written`   | ディスクに書き込みした一時ブロックの総数                                       |
 
 ## 統計メニューオプションの利用
 

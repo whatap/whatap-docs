@@ -1,0 +1,369 @@
+---
+id: mobile-app
+title: WhaTap mobile app
+description: The following guides you to the functions available through the WhaTap mobile app.
+tags:
+  - WhaTap
+  - Mobile
+  - App
+displayed_sidebar: indexSidebar
+---
+
+The following guides you to the functions available through the WhaTap mobile app. Through the app, you can see the status of user projects and receive alerts for the set events in real time.
+
+The functions provided by the mobile app are as follows:
+
+-   **Dashboard**: You can see the project list and check the project lists by organization and category, and monitor key metrics for each project.
+
+-   **Search for project**: You can search for the desired project by using the project name or code.
+
+-   **Notice**: You can see major notices for the WhaTap monitoring service.
+
+-   **Integrated notification**: You can receive key notifications set for each project, and you can also see the list of previous notifications.
+
+:::note
+
+-   The mobile app supports the [service.whatap.io](https://service.whatap.io) service. The installed type service is unavailable.
+
+-   Available product types are as follows. We will expand the scope of support through future updates.
+
+    -   **Application**: Java, PHP, Python, Node.js, .NET, Go
+    -   **Server**
+    -   **Database**
+    -   **Kubernetes**
+    -   **URL**
+    -   **Browser**
+
+-   The mobile app does not support the project grouping feature.
+
+:::
+
+## Installing the app
+
+The WhaTap mobile app supports both Android and iOS environments. You can install the app by using the following link or scanning the QR code.
+
+| [iOS](https://apps.apple.com/us/app/whatap-mobile/id6450067434) | [Android](https://play.google.com/store/apps/details?id=io.whatap.lion) |
+| :-------------------------------------------------------------: | :---------------------------------------------------------------------: |
+|    ![QR](/img/mobile/whatap-app-ios.png)<br/>iOS 12 or later    |    ![QR](/img/mobile/whatap-app-android.png)<br/>Android 5.0 or later   |
+
+## Log in
+
+You must log in the app for the first time. In [WhaTap monitoring service](https://service.whatap.io), enter the registration email address and password and then tap <Appname sid="get_started" className="uitext" />.
+
+<ImgLang img='mobile/mobile-app-login.png' desc='Login' className="mobile" />
+
+:::note
+
+If you have no account, follow the instructions in [the following](account/account-manage) for sign up. You cannot sign up for membership through the mobile app.
+
+:::
+
+## Guidance to the initial screen
+
+If you have logged in or launched the app for the first time, you can see the list of projects you belong to.
+
+<ImgLang img='mobile/mobile-app-home.png' desc='Initial screen' className="mobile" />
+
+### Learn about the main features
+
+The mobile app consists of the following main menus: You can access the main functions of each menu by tapping at the bottom of the screen.
+
+<ImgLang img='mobile/mobile-app-main-tab.png' desc='Main menus' className="mobile" />
+
+-   <Appname sid="projects" className="uitext" />: You can see the list of projects that user belongs to or are controlled. You can see detailed information of each project and its major metrics. You can also filter the desired projects through search.
+
+-   <Appname sid="alerts" className="uitext" />: You can see notifications for the events set in individual projects starting with the most recent data.
+
+-   <Appname sid="account" className="uitext" />: You can see user accounts, change the language and notification reception, and set the OTP authentication feature.
+
+### Checking the notices
+
+To see the notices of the WhaTap monitoring service, tap ![Notification icon](/img/mobile/mobile-app-notice.png) in the upper right of the screen.
+
+:::note
+
+To return to the previous screen, tap ![Close icon](/img/ico-close.svg) in the upper right of the screen.
+
+:::
+
+### Checking by product type
+
+You can see the projects by product type. 
+
+1.  On the upper right of the screen, tap ![Category icon](/img/mobile/mobile-app-category.png).
+
+2.  If the product list appears, select a desired one.
+
+    <ImgLang img='mobile/mobile-app-category-list.png' desc='List of categories' className='mobile-l' />
+
+Only the projects corresponding to the selected product appear in the list.
+
+### Checking the project status
+
+You can see the list of all projects categorized by product. On the upper right of the initial screen, tap ![Icon](/img/mobile/mobile-app-status-icon.png). You can see the list of projects for each product. If you tap <Appname sid="learn_more" className="uitext" />, the product introduction page appears.
+
+<ImgLang img='mobile/mobile-app-project-all-status.png' desc='Project status' className='mobile' />
+
+### Searching for the project
+
+If it is difficult to find a project because there are a lot of projects, you can find a desired project through a search. Enter the project name or project code in the <Appname sid="search" className="uitext" /> field, and then tap **Complete** on the keyboard.
+
+### Checking by organization
+
+To check the project list set by organization, tap <Appname sid="none_org" className="uitext" /> in <Appname sid="org" className="uitext" />, and then tap a desired organization. Only the projects corresponding to the selected organization appear in the list.
+
+<ImgLang img='mobile/mobile-app-org.png' desc='Select organization' className='mobile' />
+
+## Project
+
+At the bottom of the screen, tap <Appname sid="projects" className="uitext" />. It provides the following key features.
+
+-   You can see the list of projects that user belongs to or are controlled.
+
+-   You can see detailed information of each project and its major metrics.
+
+-   You can sort the projects by organization and filter the desired projects through a search.
+
+-   You can view and filter projects by product category.
+
+:::note
+
+The product types that can be found in the project list are **Application**, **Server**, **Database**, **Kubernetes**, **URL**, and **Browser**.
+
+:::
+
+### Checking the project list
+
+A project appears in the card view format as shown below, and it consists of the project's key metrics, basic information, and such.
+
+<ImgLang img='mobile/mobile-app-project-card.png' desc='Project card' className="mobile" />
+
+-   The project name appears at the top of the project. Tap <Appname sid="detail" className="uitext" /> to see more metrics.
+
+-   The representative metrics appear in the middle section of the project. The displayed metrics may differ depending on the product type.
+
+    -   **Application**: <Appname sid="active_transaction" />
+
+    -   **Server**: CPU utilization
+
+    -   **Database**: Active session
+
+    -   **Kubernetes**: Summary information of the Kubernetes elements
+
+    -   **URL**: Displays the total number of URLs and the numbers of normal URLs and erroneous URLs
+
+    -   **Browser**: <Cmdname sid="page_load" /> <Cmdname sid="timeline" />
+
+-   At the bottom of the project, information such as product type, product name, region, project code, and subscription type appear.
+
+### Learning about the dashboard
+
+If you tap <Appname sid="detail" className="uitext" /> for each project in the project list, the <Appname sid="dashboard" className="uitext" /> screen appears. 
+
+<ImgLang img='mobile/mobile-app-project-dashboard.png' desc='dashboard' className='mobile' />
+
+-   You can see the project codes in the upper right corner of the screen.
+
+-   Details of the project and the agent and server information can be seen in the section located at the top. 
+
+-   Based on the time displayed in <Appname sid="standard_time" className="uitext" />, the metrics can be viewed for 10 minutes, 30 minutes, and 1 hour. In <Appname sid="latest" className="uitext" />, tap any of <span class="uitext">10 Min</span>, <span class="uitext">30 Min</span>, and <span class="uitext">1 Hour</span>.
+
+-   In addition, key metrics for each product are arranged. You can check them in the following list.
+
+    <details>
+
+    <summary><b>Appication</b></summary>
+
+    -   <Appname sid="active_status" className="uitext" />: This chart allows you to see the progress of active transactions and the number of active transactions for each status.
+
+    -   <Appname sid="active_transaction" className="uitext" />: This chart allows you to check active transactions by agent. The colors in the chart indicate the response times of active transactions. <span class='normal'>Blue (Normal)</span> indicates within 3 seconds, <span class='slow'>Orange (Slow)</span> 3 to 8 seconds, <span class='vslow'>Red (Very slow)</span> more than 8 seconds.
+
+    -   <span class="uitext">Hitmap</span>: This chart displays the distribution of response times for completed transactions. If you tap <span class="uitext">TX trace</span>, the <Appname sid="transaction_list" className="uitext" /> screen appears to see the transaction list. To see the erroneous transactions, tap <span class="uitext">All</span>.
+
+    -   <span class="uitext">Apdex</span>: <Link to="https://www.apdex.org/">Application Performance Index (Apdex)</Link> is the indicator of the application performance. You can measure the customer satisfaction about your web applications. It can be used as an indicator of user satisfaction and the value is between 0 and 1.
+
+    -   <span class="uitext">TPS</span>: Number of transactions processed per second
+
+    -   <Appname sid="average_res_time" className="uitext" />: Average time needed for the application server to return the request results.
+
+    -   <Appname sid="system_cpu" className="uitext" />: It is the CPU usage of the application server.
+
+    </details>
+
+    <details>
+
+    <summary><b>Server</b></summary>
+
+    -   <span class="uitext">CPU Resource Map</span>: This distribution chart displays the CPU usage of all servers.
+
+    -   <span class="uitext">CPU Top 5</span>: List of top 5 processes based on the maximum usage of CPU.
+
+    -   <span class="uitext">Memory Top 5</span>: List of top 5 processes based on the maximum usage of memory.
+
+    -   <span class="uitext">Disk Top 5</span>: List of top 5 processes based on the highest disk I/O usage.
+
+    </details>
+
+    <details>
+
+    <summary><b>Database</b></summary>
+
+    -   <Appname sid="thread_running_top10" className="uitext" />: Number of top 10 sessions performing queries by instance.
+
+    -   <Appname sid="thread_connected_top10" className="uitext" />: Number of top 10 connected sessions by instance.
+
+    -   <span class="uitext">Active Sessions</span>: Time series chart that displays the number of active sessions performing queries during search.
+
+    -   <Appname sid="thread_connected_chart" className="uitext" />: Time series chart that displays the number of connected sessions by agent during search.
+
+    :::info
+
+    For **Database** products, you can see the metrics for each instance by tapping <Appname sid="list" className="uitext" /> at the bottom of the screen.
+
+    :::
+
+    </details>
+
+    <details>
+
+    <summary><b>Kubernetes</b></summary>
+
+    -   <Cmdname sid="TTL06263" className="uitext" />: Displays the number of containers in progress by status.
+
+    -   <Cmdname sid="TTL06265" className="uitext" />: Displays the number of Pods in progress by status.
+
+    -   <Appname sid="pod_count_chart" className="uitext" />: Time series chart that displays the number of active Pods by status during search.
+
+    -   <span class="uitext">Node CPU</span>: Time series chart that displays the CPU utilizations for each node during search.
+
+    -   <span class="uitext">Node Memory</span>: Time series chart that displays the memory utilizations for each node during search.
+
+    :::note
+
+    For **Kubernetes** products, you can see the containers by tapping <Appname sid="list" className="uitext" /> at the bottom of the screen. You can see the details for each container.
+
+    :::
+
+    </details>
+
+    <details>
+
+    <summary><b>URL</b></summary>
+
+    You can see the list of URLs registered by the user and the HTTP status codes for each URL.
+
+    </details>
+
+    <details>
+
+    <summary><b>Browser</b></summary>
+
+    -   <Appname sid="page_load_timeline" className="uitext" />: This chart displays average times for each page load and each load step.
+
+    -   <span class="uitext">Pageload Hitmap</span>: This chart displays the distribution of response times for page load during search.
+
+    -   <span class="uitext">AJAX Hitmap</span>: This chart displays the distribution of AJAX response times during search.
+
+    -   <Cmdname sid="TTL06188" className="uitext" />: Displays the number of errors that occurred during search and the top N errors occurred by page.
+
+    -   <Cmdname sid="TTL06189" className="uitext" />: Displays the top N counts for the numbers of errors that occurred during search and the sums for each error message.
+
+    </details>
+
+### Checking alerts by project
+
+You can see the notifications delivered to the events set in individual projects. At the bottom of the screen, tap <Appname sid="alert" className="uitext" />.
+
+<ImgLang img='mobile/mobile-app-project-alert.png' desc='Notification' className='mobile' />
+
+### Checking the project settings
+
+You can see the details of individual projects, alert settings, and user information. At the bottom of the screen, tap <Appname sid="setting" className="uitext" />.
+
+<ImgLang img='mobile/mobile-app-project-setting.png' desc='Setting' className='mobile' />
+
+-   <Appname sid="project_info" className="uitext" />: You can see the detailed information of a project.
+
+-   <Appname sid="alert_settins" className="uitext" />: You can set the alerts for the current project.
+
+    -   <Appname sid="receive_settings" className="uitext" />: You can set whether or not to receive alerts set in the current project.
+
+    -   <Appname sid="range_of_reception" className="uitext" />: You can determine whether to receive <Appname sid="total" className="uitext" /> alerts or receive <Appname sid="warning" className="uitext" /> alerts.
+
+-   <Appname sid="user_info" className="uitext" />: You can see the information of the current user.
+
+-   <Appname sid="member_info" className="uitext" />: You can see the all users in the project.
+
+## Integrated alerts
+
+To see the alerts for all projects, tap <Appname sid="alerts" className="uitext" /> in the initial screen of the mobile app.
+
+<ImgLang img='mobile/mobile-app-alerts.png' desc='Notification' className='mobile' />
+
+-   You can see alerts for all projects starting with the most recent data.
+
+-   Tap the project name in each alert to go to the corresponding project.
+
+:::note
+
+You can view the alert history for up to 7 days. We will expand the scope of view through future updates.
+
+:::
+
+## Setting an account
+
+In the initial screen of the mobile app, tap <Appname sid="account" className="uitext" />.
+
+<ImgLang img='mobile/mobile-app-account.png' desc='Account' className='mobile' />
+
+The <Appname sid="account" className="uitext" /> menu provides the following functions:
+
+-   Checking the user account information and configuring the language and organization settings
+
+-   Alert Notification Setting
+
+-   OTP authentication
+
+### Changing the app's default language
+
+To change the default language of the mobile app, tap the favorite language in <Appname sid="lang" className="uitext" />.
+
+### Setting the default organization
+
+You can default the list of projects displayed in <Appname sid="projects" className="uitext" /> as the list of projects corresponding to your organization. Select a favorite organization in <Appname sid="org" className="uitext" />.
+
+### Setting the alert reception
+
+You can receive alerts or release the reception setting through the mobile app. In the <Appname sid="setup_alarm" className="uitext" /> section, tap <Appname sid="porject" className="uitext" /> to apply the desired settings.
+
+### OTP authentication{#mobileotp}
+
+OTP authentication can be set through the WhaTap mobile app and the OTP authentication key can be provided to be entered when logging in the web service.
+
+1.  Log in the WhaTap monitoring service (https://service.whatap.io).
+
+2.  Select the profile icon on the upper right of the screen.
+
+3.  If the dropdown menu appears, select <Cmdname sid="manage_account_info" className="uitext" />.
+
+4.  If the <Cmdname sid="my_profile" className="uitext" /> menu appears, scroll down the page to go to the <Cmdname sid="two_factor_auth" className="uitext" /> section.
+
+5.  If <Cmdname sid="create_otp_key" className="uitext" /> is selected, the QR code appears.
+
+6.  In the WhaTap mobile app, go to the <Appname sid="account" className="uitext" /> menu.
+
+7.  In the <span class="uitext">OTP</span> section, tap <span class="uitext">QR</span>.
+
+8.  Once the camera has run, scan the QR code on the web page.
+
+9.  The OTP key appears on the WhaTap mobile app.
+
+10. Enter the OTP key on the web page and then select <Cmdname sid="validate_otp_token" className="uitext" />.
+
+The OPT authentication process is completed. Afterwards, log in [WhaTap monitoring service](https://service.whatap.io) and then enter the OTP key on the mobile app when the OTP authentication key prompts.
+
+:::note
+
+For more information about the multi-factor authentication, see [the following](account/mfa#otp).
+
+:::

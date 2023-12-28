@@ -15,17 +15,17 @@ pagination_next: release-notes/db/dbx-1_6_10
 
 -   <Status>Fixed</Status> deadtuple収集クエリの修正
 
--   <Status>Fixed</Status>収集間隔が 1 日のカテゴリは 5 分統計データを作成しないように修正
+-   <Status>Fixed</Status>収集間隔が1日のカテゴリは、5 分統計データを作成しないように修正
 
 ## MySQL
 
--   <Status>Fixed</Status> Maria DBでtableサイズが収集できないバグを修正
+-   <Status>Fixed</Status> Maria DBでテーブルサイズが収集されないバグを修正
 
 -   <Status>Fixed</Status>アクティブセッションstate値を<code>S</code>から<code>Sending data</code>に修正
 
 ## Oracle
 
-<p><Status>New</Status>各種ratio指標の追加、次のようにオプションを設定してください。</p>
+<p><Status>New</Status>各種ratio指標の追加。次のようにオプションを設定してください。</p>
 
 ```ini title='whatap.conf'
 ora_ratio=true

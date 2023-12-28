@@ -69,3 +69,33 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
   ]
 }
 ```
+
+## IPベースのトランザクション検索
+
+ユーザーが指定した開始時間(`stime`)から1時間、特定IPがリクエストしたトランザクションに対して呼び出し件数の多い順にソートして最大100件のURLリストを送信します。
+
+<span class='apitype'>POST</span> https://api.whatap.io/open/api/v2/yard/flush
+
+```bash title="command"
+curl --location 'https://api.whatap.io/open/api/v2/yard/flush' \
+--header 'x-whatap-token: {{PROJECT API TOKEN}}' \
+--header 'x-whatap-pcode: {{projectCode}}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "type": "profiles",
+    "path": "/filter/search",
+    "pcode": "{{projectCode}}",
+    "params": {
+        "stime": {{stime}},
+        "filter": {
+            "ip": "{{ip}}"
+        }
+    }
+}'
+```
+
+| Response Field |            Field Type            | 説明                      |
+| -------------- | :------------------------------: | ----------------------- |
+| `elapsed`      | <span class='type'>number</span> | 開始時間(`stime`) 基準からの経過時間 |
+| `count`        | <span class='type'>number</span> | HTTPコール件数               |
+| `url`          | <span class='type'>string</span> | クライアントがリクエストしたトランザクション名 |

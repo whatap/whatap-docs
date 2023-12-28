@@ -1,7 +1,7 @@
 ---
 id: analysis-top-object
 title: Topオブジェクト
-description: ユーザーが適切なチューニングを進め、データベースを最適化する情報を提供します。
+description: ユーザーが適切なチューニングを進め、データベースを最適化するように情報を提供します。
 tags:
   - PostgreSQL
   - データベース
@@ -10,7 +10,7 @@ tags:
 
 ホーム画面 > プロジェクト選択 > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="dbObjectInfo" className="uitext" />
 
-個別インスタンスのオブジェクト（テーブル、インデックス）別のBloatingサイズ、Scan数、DML実行数、Dead tupleが多いオブジェクトを提供し、使用の多いオブジェクトを把握し、VacuumやAnalyzeを適切な時期に実行できる情報を提供します。
+個別インスタンスのオブジェクト（テーブル、インデックス）別のBloatingサイズ、Scan数、DML実行数、Dead tupleが多いオブジェクトを提供します。また、使用の多いオブジェクトを把握し、VacuumやAnalyzeを適切な時期に実行できるように情報を提供します。
 
 <ImgLang img='db-top-object.png' desc='Top object' />
 
@@ -67,7 +67,7 @@ tags:
 
 :::tip
 
-**チューニングチップ** 
+**チューニングTips** 
 
 `Seq_scan`が高いテーブルはインデックス作成を、`idx_scan`が低いインデックスは削除を検討してください。 詳細については、[次の文書](https://www.postgresql.org/docs/8.1/performance-tips.html)を参照してください。
 
@@ -75,22 +75,22 @@ tags:
 
 次は<span class="uitext">Scan</span>を照会すると表示されるカラム項目です。
 
-|     区分    | カラム名            | 説明                                      |
-| :-------: | --------------- | --------------------------------------- |
-| **Table** | `datname`       | データベース名                                 |
-|     ^     | `schemaname`    | スキーマ(schema)名                           |
-|     ^     | `tablename`     | テーブル名                                   |
-|     ^     | `seq_scan`      | 該当テーブルを順次スキャン(Full scan)した数             |
-|     ^     | `seq_tup_read`  | 順次スキャンから読み込みされたライブ行数                    |
-|     ^     | `idx_scan`      | 該当テーブルのインデックススキャン数                      |
-|     ^     | `idx_tup_fetch` | インデックススキャンで読み込んだライブ行数                   |
-| **Index** | `datname`       | データベース名                                 |
-|     ^     | `schemaname`    | スキーマ(schema)名                           |
-|     ^     | `tablename`     | テーブル名                                   |
-|     ^     | `indexname`     | インデックス名                                 |
-|     ^     | `idx_scan`      | インデックススキャン実行数                           |
-|     ^     | `idx_tup_fetch` | 該当インデックスを使用してインデックススキャンから抽出された有効なテーブル行数 |
-|     ^     | `idx_tup_read`  | インデックススキャンに戻されたインデックス項目の数               |
+|     区分    | カラム名            | 説明                                     |
+| :-------: | --------------- | -------------------------------------- |
+| **Table** | `datname`       | データベース名                                |
+|     ^     | `schemaname`    | スキーマ(schema)名                          |
+|     ^     | `tablename`     | テーブル名                                  |
+|     ^     | `seq_scan`      | 該当テーブルを順次スキャン(Full scan)した数            |
+|     ^     | `seq_tup_read`  | 順次スキャンから読取りされたライブ行数                    |
+|     ^     | `idx_scan`      | 該当テーブルのインデックススキャン数                     |
+|     ^     | `idx_tup_fetch` | インデックススキャンで読み取ったライブ行数                  |
+| **Index** | `datname`       | データベース名                                |
+|     ^     | `schemaname`    | スキーマ(schema)名                          |
+|     ^     | `tablename`     | テーブル名                                  |
+|     ^     | `indexname`     | インデックス名                                |
+|     ^     | `idx_scan`      | インデックススキャン実行数                          |
+|     ^     | `idx_tup_fetch` | 該当インデックスを使用してインデックススキャンから抽出された有効テーブル行数 |
+|     ^     | `idx_tup_read`  | インデックススキャンに返されたインデックス項目の数              |
 
 ## DML
 
@@ -106,16 +106,16 @@ tags:
 
 次は<span class="uitext">DML</span>を照会すると表示されるカラム項目です。
 
-| カラム名            | 説明                                       |
-| --------------- | ---------------------------------------- |
-| `datname`       | データベース名                                  |
-| `schemaname`    | スキーマ(schema)名                            |
-| `tablename`     | テーブル名                                    |
-| `dml_count`     | `n_tup_ins` + `n_tup_upd` + `n_tup_del`  |
-| `n_tup_ins`     | 挿入(Insert)された行数                          |
-| `n_tup_upd`     | アップデート(Update)された行数                      |
-| `n_tup_del`     | 削除(Delete)された行数                          |
-| `n_tup_hot_upd` | HOTアップデートされた行数（例えば、別途でインデックスアップデート必要のない） |
+| カラム名            | 説明                                      |
+| --------------- | --------------------------------------- |
+| `datname`       | データベース名                                 |
+| `schemaname`    | スキーマ(schema)名                           |
+| `tablename`     | テーブル名                                   |
+| `dml_count`     | `n_tup_ins` + `n_tup_upd` + `n_tup_del` |
+| `n_tup_ins`     | 挿入(Insert)された行数                         |
+| `n_tup_upd`     | アップデート(Update)された行数                     |
+| `n_tup_del`     | 削除(Delete)された行数                         |
+| `n_tup_hot_upd` | HOTアップデートされた行数（例：別途のインデックスアップデートが不要）    |
 
 ## Analyze Time
 
@@ -125,26 +125,26 @@ AnalyzeとVacuum実行の日付が古いオブジェクトの一覧です。
 
 **チューニングTips**
 
-日付の古いテーブルは、統計情報が不正確である可能性があります。 実行を検討してください。 詳細については、[次の文書](https://www.enterprisedb.com/blog/postgresql-vacuum-and-analyze-best-practice-tips)を参照してください。
+日付の古いテーブルは、統計情報が正しくないことがあります。 実行を検討してください。 詳細については、[次の文書](https://www.enterprisedb.com/blog/postgresql-vacuum-and-analyze-best-practice-tips)を参照してください。
 
 :::
 
 次は<span class="uitext">Analyze Time</span>を照会すると表示されるカラム項目です。
 
-| カラム名                  | 説明                                              |
-| --------------------- | ----------------------------------------------- |
-| `datname`             | データベース名                                         |
-| `schemaname`          | スキーマ(schema)名                                   |
-| `tablename`           | テーブル名                                           |
-| `last_analyze`        | テーブルを手動分析した最後の時間                                |
-| `last_autoanalyze`    | autovacuumデーモンでテーブルを分析した最後の時間                   |
-| `last_autovacuum`     | autovacuumデーモンでテーブルをバキューム(vacuum)した最後の時間        |
-| `analyze_count`       | 手動で分析した回数                                       |
-| `last_vacuum`         | テーブルが手動でバキューム(vacuum)した最後の時間(VACUUM FULLは該当しない) |
-| `autoanalyze_count`   | autovacuumデーモンで分析した回数                           |
-| `autovacuum_count`    | autovacuumデーモンでバキューム(vacuum)した回数                |
-| `vacuum_count`        | 手動でバキューム(vacuum)した回数(VACUUM FULLを除く)            |
-| `n_mod_since_analyze` | 最後の分析(analyze)以後変更された行数(推定値)                    |
+| カラム名                  | 説明                                           |
+| --------------------- | -------------------------------------------- |
+| `datname`             | データベース名                                      |
+| `schemaname`          | スキーマ(schema)名                                |
+| `tablename`           | テーブル名                                        |
+| `last_analyze`        | テーブルを手動分析した最後の時間                             |
+| `last_autoanalyze`    | autovacuumデーモンでテーブルを分析した最後の時間                |
+| `last_autovacuum`     | autovacuumデーモンでテーブルをバキューム(vacuum)した最後の時間     |
+| `analyze_count`       | 手動で分析した回数                                    |
+| `last_vacuum`         | テーブルが手動でバキューム(vacuum)した最後の時間(VACUUM FULLは除く) |
+| `autoanalyze_count`   | autovacuumデーモンで分析した回数                        |
+| `autovacuum_count`    | autovacuumデーモンでバキューム(vacuum)した回数             |
+| `vacuum_count`        | 手動でバキューム(vacuum)した回数(VACUUM FULLを除く)         |
+| `n_mod_since_analyze` | 最後の分析(analyze)から変更された行数(推定値)                 |
 
 ## Age
 

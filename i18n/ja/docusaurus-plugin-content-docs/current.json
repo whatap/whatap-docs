@@ -1591,10 +1591,6 @@
     "message": "ログ処理",
     "description": "The label for the doc item 로그 처리하기 in sidebar logSidebar, linking to the doc log/log-process"
   },
-  "sidebar.releaseSidebar.category.WhaTap Mobile app": {
-    "message": "WhaTap Mobile App",
-    "description": "The label for category WhaTap Mobile app in sidebar releaseSidebar"
-  },
   "sidebar.releaseSidebar.doc.v1.0.4 (53)": {
     "message": "v1.0.4 (53)",
     "description": "The label for the doc item v1.0.4 (53) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_4"
@@ -1604,7 +1600,15 @@
     "description": "The label for the doc item v1.0.3 (52) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_3"
   },
   "sidebar.indexSidebar.doc.모바일 앱": {
-    "message": "Mobile App",
+    "message": "モバイルアプリ",
     "description": "The label for the doc item 모바일 앱 in sidebar indexSidebar, linking to the doc mobile-app"
+  },
+  "sidebar.releaseSidebar.category.WhaTap Mobile App": {
+    "message": "WhaTap Mobile App",
+    "description": "The label for category WhaTap Mobile App in sidebar releaseSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.5 (56)": {
+    "message": "v1.0.5 (56)",
+    "description": "The label for the doc item v1.0.5 (56) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_5"
   }
 }

@@ -1,7 +1,7 @@
 ---
 id: install-docker-go
 title: Docker Goインストール
-description: コンテナ内のGoアプリケーションをモニタリングするためのエージェントのインストール段階です。
+description: コンテナ内のGoアプリケーションをモニタリングするためのエージェントをインストールする過程です。
 tags:
   - Kubernetes
   - Kubernetesモニタリング
@@ -26,7 +26,7 @@ tags:
 <Tabs>
 <TabItem value='basic' label='デフォルト' default>
 
-トランザクションからNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルおよびログファイル用のテンポラリーボリュームを設定します。
+トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
 
 ```ini
 env:
@@ -55,7 +55,7 @@ env:
     ...
     ```
 
-2.  トランザクションからNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルおよびログファイル用のテンポラリーボリュームを設定します。
+2.  トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
 
     ```ini
     env:

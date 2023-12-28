@@ -1,0 +1,369 @@
+---
+id: mobile-app
+title: WhaTapモバイルアプリ
+description: WhaTapモバイルアプリを通じて利用可能な機能について案内します。
+tags:
+  - WhaTap
+  - モバイル
+  - アプリ
+displayed_sidebar: indexSidebar
+---
+
+WhaTapモバイルアプリを通じて利用可能な機能について案内します。 アプリを通じてユーザーのプロジェクト現況を把握し、設定されたイベントの通知をリアルタイムで受け取ることができます。
+
+モバイルアプリを通じて提供する機能は次のとおりです。
+
+-   **ダッシュボード**：プロジェクト一覧を確認し、組織別、カテゴリ別にプロジェクト一覧を確認することができ、プロジェクト別の主要指標をモニタリングすることができます。
+
+-   **プロジェクト検索**：プロジェクト名またはコードを使用して、目的のプロジェクトを検索できます。
+
+-   **お知らせ**：WhaTapモニタリングサービスの主なお知らせを確認できます。
+
+-   **統合通知機能**：プロジェクトごとに設定した主な通知を受け取ることができ、過去の通知一覧を確認することもできます。
+
+:::note
+
+-   モバイルアプリは、[service.whatap.io](https://service.whatap.io)サービスに対応します。 インストール型サービスには対応していません。
+
+-   対応する製品の種類は次のとおりです。 今後のアップデートにより、対応範囲を拡大していきます。
+
+    -   **Application**: Java, PHP, Python, Node.js, .NET, Go
+    -   **Server**
+    -   **Database**
+    -   **Kubernetes**
+    -   **URL**
+    -   **Browser**
+
+-   モバイルアプリはプロジェクトグループ機能に対応していません。
+
+:::
+
+## アプリのインストール
+
+WhaTapモバイルアプリはAndroidとiOS環境に対応します。 次のリンクに移動するか、QRコードを読み取ってアプリをインストールできます。
+
+| [iOS](https://apps.apple.com/us/app/whatap-mobile/id6450067434) | [Android](https://play.google.com/store/apps/details?id=io.whatap.lion) |
+| :-------------------------------------------------------------: | :---------------------------------------------------------------------: |
+|     ![QR](/img/mobile/whatap-app-ios.png)<br/>iOS 12バージョン以降     |     ![QR](/img/mobile/whatap-app-android.png)<br/>Android 5.0バージョン以降    |
+
+## ログインする
+
+アプリを初めて使用するユーザーはログインする必要があります。 [WhaTapモニタリングサービス](https://service.whatap.io)で登録したメールアドレスとパスワードを入力した後<Appname sid="get_started" className="uitext" />ボタンをタップしてください。
+
+<ImgLang img='mobile/mobile-app-login.png' desc='ログイン' className="mobile" />
+
+:::note
+
+ユーザーアカウントがない場合は、[次の文書](account/account-manage)の案内に従って会員登録を進めてください。 モバイルアプリでは会員登録できません。
+
+:::
+
+## 初期画面案内
+
+ログイン完了、またはアプリの初回起動の場合は、ユーザーが所属しているプロジェクト一覧を確認できます。
+
+<ImgLang img='mobile/mobile-app-home.png' desc='初期画面' className="mobile" />
+
+### メインメニュー
+
+モバイルアプリは、次の主要メニューで構成されています。 画面の下にメニューをタップすると、各メニューの主要機能が利用できます。
+
+<ImgLang img='mobile/mobile-app-main-tab.png' desc='主なメニュー' className="mobile" />
+
+-   <Appname sid="projects" className="uitext" />：ユーザーが所属しているか、管理しているプロジェクトの一覧を確認できます。 個別プロジェクトの詳細を確認し、主要な指標を照会することができます。 また、検索により目的のプロジェクトをフィルタリングできます。
+
+-   <Appname sid="alerts" className="uitext" />：個別のプロジェクトで設定されたイベントの通知を最新順に確認できます。
+
+-   <Appname sid="account" className="uitext" />：ユーザーのアカウント情報を確認することができ、言語および通知受信の変更、OTP認証を設定することができます。
+
+### お知らせの確認
+
+WhaTapモニタリングサービスのお知らせを確認するには、画面右上の角の![通知アイコン](/img/mobile/mobile-app-notice.png)ボタンをタップしてください。
+
+:::note
+
+お知らせの前の画面に戻るには、画面右上の角の![閉じるアイコン](/img/ico-close.svg)ボタンをタップしてください。
+
+:::
+
+### 製品種類別の確認
+
+プロジェクト一覧を製品の種類別に確認できます。 
+
+1.  画面左上の角の![カテゴリアイコン](/img/mobile/mobile-app-category.png)ボタンをタップしてください。
+
+2.  製品一覧が表示されると目的の項目を選択してください。
+
+    <ImgLang img='mobile/mobile-app-category-list.png' desc='カテゴリ一覧' className='mobile-l' />
+
+選択した製品項目に該当するプロジェクトのみが一覧に表示されます。
+
+### プロジェクト現状の確認
+
+プロジェクト全体を製品別に分類した一覧を確認できます。 初期画面の上の![アイコン](/img/mobile/mobile-app-status-icon.png)ボタンをタップしてください。 各製品に該当するプロジェクト一覧を確認することができます。<Appname sid="learn_more" className="uitext" />ボタンをタップすると、製品紹介ページに移動します。
+
+<ImgLang img='mobile/mobile-app-project-all-status.png' desc='プロジェクト状況' className='mobile' />
+
+### プロジェクトの検索
+
+プロジェクト一覧が多くてプロジェクトを見つけるのが難しい場合は、検索を通じて希望するプロジェクトを見つけることができます。 <Appname sid="search" className="uitext" />見つけようとするプロジェクト名またはプロジェクトコードを入力欄に入力し、キーボードの**完了**をタップしてください。
+
+### 組織別の確認
+
+組織ごとに設定されたプロジェクト一覧を確認するには、<Appname sid="org" className="uitext" />で<Appname sid="none_org" className="uitext" />をタップし、目的の組織をタップしてください。 選択した組織に該当するプロジェクト一覧のみが表示されます。
+
+<ImgLang img='mobile/mobile-app-org.png' desc='組織選択' className='mobile' />
+
+## プロジェクト
+
+画面の下の<Appname sid="projects" className="uitext" />メニューをタップしてください。 次の主な機能を提供します。
+
+-   ユーザーが所属しているか、管理しているプロジェクトの一覧を確認できます。
+
+-   個別プロジェクトの詳細を確認し、主要な指標を照会することができます。
+
+-   組織単位でプロジェクト一覧を分類し、検索を通じて目的のプロジェクトをフィルタリングできます。
+
+-   製品分類ごとにプロジェクトを確認してフィルタリングできます。
+
+:::note
+
+プロジェクト一覧で確認できる製品の種類は**Application**および**Server**、**Database**、**Kubernetes**、**URL**、**Browser**です。
+
+:::
+
+### プロジェクト一覧の確認
+
+1つのプロジェクトは、次のようにカードビューの形で表示され、プロジェクトの主要指標、基本情報などで構成されています。
+
+<ImgLang img='mobile/mobile-app-project-card.png' desc='プロジェクトカード' className="mobile" />
+
+-   プロジェクトの一番上にはプロジェクト名を表示します。 <Appname sid="detail" className="uitext" />ボタンをタップすると、より多くの指標を確認できます。
+
+-   プロジェクトの中央セクションには、代表される指標を表示します。 製品の種類によって表示される指標は異なる場合があります。
+
+    -   **Application**: <Appname sid="active_transaction" />
+
+    -   **Server**：CPU使用率
+
+    -   **Database**：アクティブセッション
+
+    -   **Kubernetes**：Kubernetesの構成要素に関する要約情報
+
+    -   **URL**：全体URL個数と正常、エラー状態のURL個数の表示
+
+    -   **Browser**: <Cmdname sid="page_load" /> <Cmdname sid="timeline" />
+
+-   プロジェクトの一番下には、製品の種類、製品名、リージョン、プロジェクトコード、サブスクリプション形態などの情報が表示されます。
+
+### ダッシュボードの紹介
+
+プロジェクト一覧で各プロジェクトの<Appname sid="detail" className="uitext" />ボタンをタップすると<Appname sid="dashboard" className="uitext" />画面に移動できます。 
+
+<ImgLang img='mobile/mobile-app-project-dashboard.png' desc='ダッシュボード' className='mobile' />
+
+-   画面右上の角でプロジェクトコード情報を確認できます。
+
+-   プロジェクトに関する詳細情報やエージェント、サーバー情報は、一番上に配置されたセクションで確認できます。 
+
+-   <Appname sid="standard_time" className="uitext" />に表示された時間を基準に10分、30分、1時間の指標を照会することができます。 <Appname sid="latest" className="uitext" />項目で<span class="uitext">10 Min</span>、<span class="uitext">30 Min</span>, <span class="uitext">1 Hour</span>ボタンをタップしてください。
+
+-   その他、各製品別に代表される主要指標が配置されています。 次の一覧で確認できます。
+
+    <details>
+
+    <summary><b>Appication</b></summary>
+
+    -   <Appname sid="active_status" className="uitext" />：アクティブ トランザクションの進行状況と各進行状態のアクティブトランザクション数を確認できるチャートです。
+
+    -   <Appname sid="active_transaction" className="uitext" />：エージェントごとの進行中のアクティブトランザクションを確認できるチャートです。 チャートに表示されている色は、アクティブトランザクションのレスポンスタイムです。 <span class='normal'>青色(Normal)</span>は3秒以内、<span class='slow'>オレンジ色(Slow)</span>は3~8秒、<span class='vslow'>赤色(Very slow)</span>は8秒以上を意味します。
+
+    -   <span class="uitext">Hitmap</span>：終了したトランザクションのレスポンスタイムを分布図で表現したチャートです。 <span class="uitext">TX trace</span>ボタンをタップするとトランザクション一覧が確認できる<Appname sid="transaction_list" className="uitext" />画面に移動します。 エラーが発生したトランザクションの一覧を確認するには<span class="uitext">All</span>ボタンをタップしてください。
+
+    -   <span class="uitext">Apdex</span>：<Link to="https://www.apdex.org/">Application Performance Index(Apdex)</Link>は、アプリケーションのパフォーマンス指標です。 WEBアプリケーションのユーザー満足度を測定します。 ユーザー満足度の指標として活用でき、0~1の間の値で示します。
+
+    -   <span class="uitext">TPS</span>：秒当りに処理されたトランザクションの数です。
+
+    -   <Appname sid="average_res_time" className="uitext" />：アプリケーションサーバーがユーザーにリクエスト結果を返すのにかかる平均時間です。
+
+    -   <Appname sid="system_cpu" className="uitext" />：アプリケーションサーバーのCPU使用量です。
+
+    </details>
+
+    <details>
+
+    <summary><b>Server</b></summary>
+
+    -   <span class="uitext">CPU Resource Map</span>：全体サーバーのCPU使用量を示す分布図です。
+
+    -   <span class="uitext">CPU Top 5</span>：CPUの最大シェア基準で上位5つのプロセス一覧です。
+
+    -   <span class="uitext">Memory Top 5</span>：メモリの最大シェアベースで上位5つのプロセスの一覧です。
+
+    -   <span class="uitext">Disk Top 5</span>: : 最も多いディスクI/O使用量基準で上位5つのプロセス一覧です。
+
+    </details>
+
+    <details>
+
+    <summary><b>Database</b></summary>
+
+    -   <Appname sid="thread_running_top10" className="uitext" />：インスタンスごとのクエリを実行中の上位10つのセッションの数です。
+
+    -   <Appname sid="thread_connected_top10" className="uitext" />：インスタンスごとに現在接続されている上位10つのセッションの数です。
+
+    -   <span class="uitext">Active Sessions</span>：照会時間中にクエリを実行中のセッション数をエージェント別に表現した時系列チャートです。
+
+    -   <Appname sid="thread_connected_chart" className="uitext" />：照会時間中に現在接続されているセッション数をエージェント別に表現した時系列チャートです。
+
+    :::info
+
+    **Database**製品の場合、画面の下の<Appname sid="list" className="uitext" />メニューをタップすると、インスタンスごとの指標を確認できます。
+
+    :::
+
+    </details>
+
+    <details>
+
+    <summary><b>Kubernetes</b></summary>
+
+    -   <Cmdname sid="TTL06263" className="uitext" />：状態ごとに進行中のコンテナの数を表示します。
+
+    -   <Cmdname sid="TTL06265" className="uitext" />：状態別に進行中のPod数を表示します。
+
+    -   <Appname sid="pod_count_chart" className="uitext" />：照会時間中、状態別に進行中のPodの個数を表現した時系列チャートです。
+
+    -   <span class="uitext">Node CPU</span>：照会時間中の個別のノードのCPU使用率を表現した時系列チャートです。
+
+    -   <span class="uitext">Node Memory</span>: 照会時間中の個別のノードのメモリ使用率を表現した時系列チャートです。
+
+    :::note
+
+    **Kubernetes**製品の場合、画面の下の<Appname sid="list" className="uitext" />メニューをタップすると、コンテナ一覧を確認できます。 個別のコンテナに関する詳細を照会できます。
+
+    :::
+
+    </details>
+
+    <details>
+
+    <summary><b>URL</b></summary>
+
+    ユーザーが登録したURLリストと各URLのHTTPステータスコードを確認できます。
+
+    </details>
+
+    <details>
+
+    <summary><b>Browser</b></summary>
+
+    -   <Appname sid="page_load_timeline" className="uitext" />：ページの読み込み時間と読み込み段階別のプロセスを平均時間で表現したチャートです。
+
+    -   <span class="uitext">Pageload Hitmap</span>：照会時間中のページ読み込みのリスポンスタイムの分布を表現したチャートです。
+
+    -   <span class="uitext">AJAX Hitmap</span>：照会時間中のAJAXのリスポンスタイムの分布を表現したチャートです。
+
+    -   <Cmdname sid="TTL06188" className="uitext" />: 照会時間中に発生したエラー件数とページ別に発生したエラー件数のうち上位N個を表示します。
+
+    -   <Cmdname sid="TTL06189" className="uitext" />：照会時間中に発生したエラーメッセージ件数と各エラーメッセージ別エラー数の合計のうち上位N個を表示します。
+
+    </details>
+
+### プロジェクト別通知の確認
+
+個別のプロジェクトで設定したイベントに送信された通知の一覧を確認できます。 画面の下の<Appname sid="alert" className="uitext" />メニューをタップしてください。
+
+<ImgLang img='mobile/mobile-app-project-alert.png' desc='通知' className='mobile' />
+
+### プロジェクト設定の確認
+
+個別プロジェクトの詳細情報や通知設定、ユーザー情報などを確認できます。 画面の下の<Appname sid="setting" className="uitext" />メニューをタップしてください。
+
+<ImgLang img='mobile/mobile-app-project-setting.png' desc='設定' className='mobile' />
+
+-   <Appname sid="project_info" className="uitext" />：プロジェクトの詳細を確認できます。
+
+-   <Appname sid="alert_settins" className="uitext" />：現在プロジェクトの通知を設定できます。
+
+    -   <Appname sid="receive_settings" className="uitext" />：現在プロジェクトで設定されている通知の受信有無を設定できます。
+
+    -   <Appname sid="range_of_reception" className="uitext" />：<Appname sid="total" className="uitext" />通知の受信有無<Appname sid="warning" className="uitext" />レベルの通知の受信有無を選択できます。
+
+-   <Appname sid="user_info" className="uitext" />：現在のユーザー情報を確認できます。
+
+-   <Appname sid="member_info" className="uitext" />：プロジェクトに所属する全体のユーザー情報を確認できます。
+
+## 統合通知
+
+すべてのプロジェクトの通知を確認するには、モバイルアプリの初期画面で<Appname sid="alerts" className="uitext" />メニューをタップしてください。
+
+<ImgLang img='mobile/mobile-app-alerts.png' desc='通知' className='mobile' />
+
+-   すべてのプロジェクトの通知を最新順に確認できます。
+
+-   各通知のプロジェクト名をタップすると、そのプロジェクトに移動できます。
+
+:::note
+
+最大7日間の通知履歴を照会できます。 今後のアップデートを通じて照会範囲を拡大する予定です。
+
+:::
+
+## アカウント設定
+
+モバイルアプリの初期画面で<Appname sid="account" className="uitext" />メニューをタップしてください。
+
+<ImgLang img='mobile/mobile-app-account.png' desc='アカウント' className='mobile' />
+
+<Appname sid="account" className="uitext" />メニューで提供する機能は次のとおりです。
+
+-   ユーザーアカウント情報の確認、言語および組織設定
+
+-   アラート受信設定
+
+-   OTP認証機能
+
+### アプリの基本言語の変更
+
+モバイルアプリの基本言語を変更するには、<Appname sid="lang" className="uitext" />項目で、希望する言語をタップしてください。
+
+### 基本組織の設定
+
+<Appname sid="projects" className="uitext" />メニューで表示されるプロジェクト一覧を組織に該当するプロジェクト一覧に基本設定できます。 <Appname sid="org" className="uitext" />項目で希望する組織を選択してください。
+
+### 通知受信の設定
+
+モバイルアプリを通じて通知を受信するか、受信設定を解除できます。 <Appname sid="setup_alarm" className="uitext" />セクションで<Appname sid="porject" className="uitext" />項目をタップして、希望する設定を適用してください。
+
+### OTP認証{#mobileotp}
+
+WhaTapモバイルアプリを通じてOTP認証を設定し、ウェブサービスでログイン時に入力できるOTP認証キーを提供します。
+
+1.  [WhaTapモニタリングサービス](https://service.whatap.io)にログインしてください。
+
+2.  画面の右上のプロフィールアイコンを選択してください。
+
+3.  ドロップダウンメニューが表示されたら<Cmdname sid="manage_account_info" className="uitext" />メニューを選択してください。
+
+4.  <Cmdname sid="my_profile" className="uitext" />メニューに移動すると、ページを下にスクロールして<Cmdname sid="two_factor_auth" className="uitext" />セクションに移動してください。
+
+5.  <Cmdname sid="create_otp_key" className="uitext" />ボタンをタップするとQRコードが表示されます。
+
+6.  WhaTapモバイルアプリで<Appname sid="account" className="uitext" />メニューに移動してください。
+
+7.  <span class="uitext">OTP</span>セクションで<span class="uitext">QR</span>ボタンをタップしてください。
+
+8.  カメラが実行されたら、ウェブページに表示されているQRコードをスキャンしてください。
+
+9.  WhaTapモバイルアプリにOTPキーが表示されます。
+
+10. OTPキーをウェブページに入力し<Cmdname sid="validate_otp_token" className="uitext" />ボタンを選択してください。
+
+OTP認証プロセスを完了します。 以後[WhaTapモニタリングサービス](https://service.whatap.io)にログインした後、OTP認証キーを要求されたら、モバイルアプリで提供するOTPキーを入力してください。
+
+:::note
+
+マルチファクター認証の詳細については、[次の文書](account/mfa#otp)を参考にしてください。
+
+:::

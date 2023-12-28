@@ -1,0 +1,37 @@
+---
+id: java-2_2_25
+title: Java Agent v2.2.25
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_24
+---
+
+2023年12月20日
+
+-   <Status>Feature</Status>ログモニタリングJavaアプリケーションログにマルチトランザクションID(<code>@mtid</code>タグ) 追加
+
+-   <Status>Changed</Status> <code>logsink_enabled</code>オプション設定時、トランザクションIDとマルチトランザクションIDを収集できるように修正(既存: <code>logsink_trace_enabled</code>オプション追加)
+
+    ```ini title="whatap.conf"
+    # default: false
+    logsink_enabled=false
+    ```
+
+-   <Status>Changed</Status> log4j使用時、appenderを基本収集するように修正
+
+    ```ini title="whatap.conf"
+    # requires agent restart
+    weaving=log4j-2.17
+
+    # example: collect Console, AccessLog, ErrorLog 
+    trace_log4j_appender_set=Console,AccessLog,ErrorLog
+    ```
+
+-   <Status>Changed</Status> logback使用時、appenderを基本収集するように修正
+
+    ```ini title="whatap.conf"
+    # requires agent restart
+    weaving=logback-1.2.8
+
+    # example: collect ErrorAppender, FileAppender log
+    trace_logback_appender_set=ErrorAppender,FileAppender
+    ```
