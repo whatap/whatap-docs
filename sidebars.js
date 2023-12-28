@@ -3041,6 +3041,7 @@ const sidebars = {
               type: 'doc',
               label: 'v1.0.4 (53)',
               id: 'release-notes/mobile/mobile-app-v1_0_4',
+              className: 'new',
             },
             {
               type: 'doc',
