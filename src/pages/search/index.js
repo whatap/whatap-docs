@@ -1,7 +1,8 @@
 import React from 'react';
 import {
     InstantSearch,
-    InfiniteHits,
+    Hits,
+    Breadcrumb,
     SearchBox,
     Stats,
     Highlight,
@@ -15,9 +16,11 @@ import {
 import Layout from '@theme/Layout';
 import './style.css';
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Link from '@docusaurus/Link';
 
-// const {i18n: {currentLocale} } = useDocusaurusContext();
+// const lang = document.documentElement.lang.split("-")[0];
+const lang = "ko";
+const docsURL = "https://docs.whatap.io";
 
 const { searchClient } = instantMeiliSearch(
     'https://meilsearch.whatap.io',
@@ -25,14 +28,8 @@ const { searchClient } = instantMeiliSearch(
     {
         placeholderSearch: false,
         finitePagination: true,
-        meiliSearchParams: {
-            meilisearchFilters: {
-                filters: 'lang = [ko]'
-            }
-        }
-    }
+    },
 )
-
 
 const App = () => (
     <Layout>
@@ -41,72 +38,93 @@ const App = () => (
         <p>
             이 페이지는 검색 테스트를 위한 임시 페이지입니다.
         </p>
-        <InstantSearch indexName="whatap" searchClient={searchClient}>
+        <InstantSearch 
+            indexName="whatap" 
+            searchClient={searchClient}
+            >
             <Stats />
             
             <div className="left-panel">
-                {/* <ClearRefinements /> */}
-                {/* <SortBy
-                    defaultRefinement="whatap"
-                    items={[
-                    { value: 'whatap', label: 'Relevant' },
-                    {
-                        value: 'whatap:recommendationCount:desc',
-                        label: 'Most Recommended',
-                    },
-                    {
-                        value: 'whatap:recommendationCount:asc',
-                        label: 'Least Recommended',
-                    },
-                    ]}
-                /> */}
-                <h2>Language</h2>
-                <RefinementList attribute="lang" />
-                {/* <h2>Players</h2>
-                <RefinementList attribute="players" />
-                <h2>Platforms</h2>
-                <RefinementList attribute="platforms" />
-                <h2>Misc</h2>
-                <RefinementList attribute="misc" /> */}
-                {/* <Configure
-                    hitsPerPage={6}
-                    attributesToSnippet={['description:50']}
+                <ClearRefinements />
+                <h2>Product</h2>
+                <RefinementList 
+                    searchable
+                    attribute="hierarchy_lvl0" 
+                    limit="50"
+                    // transformItems={transformItems}
+                />
+                <Configure
+                    hitsPerPage={20}
+                    attributesToSnippet={['description:20']}
                     snippetEllipsisText={'...'}
-                /> */}
+                    filters={`lang=${lang}`}
+                />
             </div>
             <div className="right-panel">
                 <SearchBox />
-                <InfiniteHits hitComponent={Hit} />
+                <Hits hitComponent={Hit} />
             </div>
-            <Pagination />
+            <Pagination showLast={true} />
         </InstantSearch>
         </div>
     </Layout>
 )
 
+
+
 const Hit = ({ hit }) => {
+    const titles = [ hit.hierarchy_radio_lvl0, hit.hierarchy_radio_lvl1, hit.hierarchy_radio_lvl2, hit.hierarchy_radio_lvl3, hit.hierarchy_radio_lvl4, hit.hierarchy_radio_lvl5 ];
+    const title = titles.filter(
+        (element, i) => element !== null
+    );
+    const durl = hit.url.replace(docsURL, "").replace("#__docusaurus_skipToContent_fallback", "")
     return (
         <div key={hit.id}>
-        <div className="hit-name">
-            <Highlight attribute="hierarchy_lvl0" hit={hit} />
-        </div>
-        <div className="hit-name">
-            <Highlight attribute="hierarchy_lvl1" hit={hit} />
-        </div>
-        <div className="hit-name">
-            <Snippet attribute="hierarchy_lvl2" hit={hit} />
-        </div>
-        <div className="hit-name">
-            <Snippet attribute="hierarchy_lvl3" hit={hit} />
-        </div>
-        <div className="hit-name">
-            <Snippet attribute="hierarchy_lvl4" hit={hit} />
-        </div>
-        <div className="hit-name">
-            <Snippet attribute="content" hit={hit} />
-        </div>
+            <Link to={durl}>
+                <h3>{title[0]}</h3>
+                <div className='hit-breadcrums'>
+                    <div className="hit-name lvl0">
+                        <Highlight attribute="hierarchy_lvl0" hit={hit} />
+                    </div>
+                    {hit.hierarchy_lvl1 && (
+                        <div className="hit-name">
+                            <Highlight attribute="hierarchy_lvl1" hit={hit} />
+                        </div>
+                    )}
+                    {hit.hierarchy_lvl2 && (
+                        <div className="hit-name">
+                            <Highlight attribute="hierarchy_lvl2" hit={hit} />
+                        </div>
+                    )}
+                    {hit.hierarchy_lvl3 && (
+                        <div className="hit-name">
+                            <Highlight attribute="hierarchy_lvl3" hit={hit} />
+                        </div>
+                    )}
+                    {hit.hierarchy_lvl4 && (
+                        <div className="hit-name">
+                            <Highlight attribute="hierarchy_lvl4" hit={hit} />
+                        </div>
+                    )}
+                    {hit.hierarchy_lvl5 && (
+                        <div className="hit-name last">
+                            <Highlight attribute="hierarchy_lvl5" hit={hit} />
+                        </div>
+                    )}
+                </div>
+            </Link>
+            {hit.content && (
+                <div className="hit-name">
+                    <Snippet attribute="content" hit={hit} />
+                </div>
+            )}
         </div>
     )
 }
+
+
+
+
+
 
 export default App
