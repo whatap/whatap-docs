@@ -226,6 +226,12 @@ function colsToJson(data){
     "ko": "인스턴스 성능 분석"
   }
 
+  rd["whatapEventList"] = {
+    "en": "WhaTap Event",
+    "ja": "WhaTapイベント",
+    "ko": "WhaTap 이벤트"
+  }
+
   return rd;
 }
 
