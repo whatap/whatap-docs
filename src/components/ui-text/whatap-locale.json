@@ -43178,14 +43178,14 @@
   "TTL06262": {
     "en": "Number of Kubernetes nodes",
     "ja": "Kubernetesノード数",
-    "ko": "Kubernetes 노드 수",
+    "ko": "쿠버네티스 노드 수",
     "zh": "Number of Kubernetes Nodes",
     "service_id": "TTL06262"
   },
   "TTL06263": {
     "en": "Number of Kubernetes containers",
     "ja": "Kubernetesコンテナ数",
-    "ko": "Kubernetes 컨테이너 수",
+    "ko": "쿠버네티스 컨테이너 수",
     "zh": "Number of Kubernetes Containers",
     "service_id": "TTL06263"
   },
@@ -43199,7 +43199,7 @@
   "TTL06265": {
     "en": "Number of Kubernetes pods",
     "ja": "Kubernetes Pod数",
-    "ko": "Kubernetes Pod 수",
+    "ko": "쿠버네티스 Pod 수",
     "zh": "Number of Kubernetes Pods",
     "service_id": "TTL06265"
   },
@@ -51147,6 +51147,167 @@
     "zh": "The report has been generated.",
     "service_id": "NTC07424"
   },
+  "TTL07425": {
+    "en": "Now",
+    "ja": "現在時刻",
+    "ko": "현재 시각",
+    "zh": "Now",
+    "service_id": "TTL07425"
+  },
+  "BTN07426": {
+    "en": "Add {keyword} to filter",
+    "ja": "{keyword}をフィルタに追加する",
+    "ko": "{keyword}을(를) 필터에 추가",
+    "zh": "Add {keyword} to filter",
+    "service_id": "BTN07426"
+  },
+  "DSC07427": {
+    "en": "Cluster-wide information regardless of whether the WhaTap node agent is installed or not",
+    "ja": "WhaTapノードエージェントをインストールするかどうかとは無関係のクラスタ全体について",
+    "ko": "와탭 노드 에이전트 설치 여부와 무관한 클러스터 전체 정보",
+    "zh": "Cluster-wide information regardless of whether the WhaTap node agent is installed or not",
+    "service_id": "DSC07427"
+  },
+  "DSC07428": {
+    "en": "Performance information on targets where the WhaTap node agent and application agent are installed within the project.",
+    "ja": "プロジェクト内のWhaTapノードエージェントとApplicationエージェントがインストールされているターゲットのパフォーマンス情報",
+    "ko": "프로젝트 내 와탭 노드 에이전트 및 애플리케이션 에이전트가 설치된 대상의 성능 정보",
+    "zh": "Performance information on targets where the WhaTap node agent and application agent are installed within the project.",
+    "service_id": "DSC07428"
+  },
+  "TTL07429": {
+    "en": "Total number of containers in Kubernetes cluster",
+    "ja": "Kubernetestクラスタ全体のコンテナ数",
+    "ko": "쿠버네티스 클러스터 전체 컨테이너 수",
+    "zh": "Total number of containers in Kubernetes cluster",
+    "service_id": "TTL07429"
+  },
+  "TTL07430": {
+    "en": "Total number of pods in Kubernetes cluster",
+    "ja": "Kubernetestクラスター全体のポッド数",
+    "ko": "쿠버네티스 클러스터 전체 Pod 수",
+    "zh": "Total number of pods in Kubernetes cluster",
+    "service_id": "TTL07430"
+  },
+  "TTL07431": {
+    "en": "Kubernetes cluster total number of nodes",
+    "ja": "Kubernetestクラスタ全体のノード数",
+    "ko": "쿠버네티스 클러스터 전체 노드 수",
+    "zh": "Kubernetes cluster total number of nodes",
+    "service_id": "TTL07431"
+  },
+  "TTL07432": {
+    "en": "Number of containers running on agent installation nodes",
+    "ja": "エージェントインストールノードで実行されているコンテナの数",
+    "ko": "에이전트 설치 노드에서 실행 중인 컨테이너 수",
+    "zh": "Number of containers running on agent installation nodes",
+    "service_id": "TTL07432"
+  },
+  "TTL07433": {
+    "en": "Number of Pods running on agent installation nodes",
+    "ja": "エージェントインストールノードで実行されているPodの数",
+    "ko": "에이전트 설치 노드에서 실행 중인 Pod 수",
+    "zh": "Number of Pods running on agent installation nodes",
+    "service_id": "TTL07433"
+  },
+  "TTL07434": {
+    "en": "Number of agent installation nodes",
+    "ja": "エージェントインストールノード数",
+    "ko": "에이전트 설치 노드 수",
+    "zh": "Number of agent installation nodes",
+    "service_id": "TTL07434"
+  },
+  "NTC07435": {
+    "en": "Event has been created.",
+    "ja": "イベントが生成されました。",
+    "ko": "이벤트가 생성되었습니다.",
+    "zh": "Event has been created.",
+    "service_id": "NTC07435"
+  },
+  "NTC07436": {
+    "en": "Event creation failed.",
+    "ja": "イベントの生成に失敗しました。",
+    "ko": "이벤트 생성에 실패했습니다.",
+    "zh": "Event creation failed.\n",
+    "service_id": "NTC07436"
+  },
+  "NTC07437": {
+    "en": "Event has been modified.\n",
+    "ja": "イベントが修正されました。\n",
+    "ko": "이벤트가 수정되었습니다.",
+    "zh": "Event has been modified.",
+    "service_id": "NTC07437"
+  },
+  "NTC07438": {
+    "en": "Event modification failed.",
+    "ja": "イベントの変更に失敗しました。\n",
+    "ko": "이벤트 수정에 실패했습니다.",
+    "zh": "Event modification failed.",
+    "service_id": "NTC07438"
+  },
+  "NTC07439": {
+    "en": "Event has been deleted.",
+    "ja": "イベントが削除されました。",
+    "ko": "이벤트가 삭제되었습니다.",
+    "zh": "Event has been deleted.",
+    "service_id": "NTC07439"
+  },
+  "NTC07440": {
+    "en": "Event deletion failed.",
+    "ja": "イベントの削除に失敗しました。",
+    "ko": "이벤트 삭제에 실패했습니다.",
+    "zh": "Event deletion failed.\n",
+    "service_id": "NTC07440"
+  },
+  "NTC07441": {
+    "en": "Event load failed.",
+    "ja": "イベントの照会に失敗しました。\n",
+    "ko": "이벤트 조회에 실패했습니다.",
+    "zh": "Event load failed.",
+    "service_id": "NTC07441"
+  },
+  "NTC07442": {
+    "en": "Event field list \bload failed.\n",
+    "ja": "イベントフィールドリストの検索に失敗しました。\n",
+    "ko": "이벤트 필드 목록 조회에 실패했습니다.",
+    "zh": "Event field list \bload failed.\n",
+    "service_id": "NTC07442"
+  },
+  "NTC07443": {
+    "en": "Event has not been saved.",
+    "ja": "イベントは保存されませんでした。\n",
+    "ko": "이벤트가 저장되지 않았습니다.",
+    "zh": "Event has not been saved.",
+    "service_id": "NTC07443"
+  },
+  "DSC07444": {
+    "en": "When you press the exit button, the screen moves without saving what you wrote.",
+    "ja": "終了ボタンを押すと、作成した内容を保存せずに画面が移動します。\n",
+    "ko": "나가기 버튼을 누르면 작성한 내용을 저장하지 않고 화면이 이동합니다.",
+    "zh": "When you press the exit button, the screen moves without saving what you wrote.",
+    "service_id": "DSC07444"
+  },
+  "BTN07445": {
+    "en": "Keep writing\n",
+    "ja": "続ける\n",
+    "ko": "계속 작성하기",
+    "zh": "Keep writing",
+    "service_id": "BTN07445"
+  },
+  "DSC07446": {
+    "en": "Namespace information regardless of whether the WhaTap node agent is installed or not",
+    "ja": "WhaTapノードエージェントをインストールするかどうかに関係ない名前空間情報",
+    "ko": "와탭 노드 에이전트 설치 여부와 무관한 네임스페이스 정보",
+    "zh": "Namespace information regardless of whether the WhaTap node agent is installed or not",
+    "service_id": "DSC07446"
+  },
+  "TTL07447": {
+    "en": "Kubernetes Namespace Performance",
+    "ja": "Kubernetesネームスペースパフォーマンス",
+    "ko": "쿠버네티스 네임스페이스 퍼포먼스",
+    "zh": "Kubernetes Namespace Performance",
+    "service_id": "TTL07447"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -51297,5 +51458,10 @@
     "en": "Instance Performance Analysis",
     "ja": "インスタンス性能",
     "ko": "인스턴스 성능 분석"
+  },
+  "whatapEventList": {
+    "en": "WhaTap Event",
+    "ja": "WhaTapイベント",
+    "ko": "WhaTap 이벤트"
   }
 }
