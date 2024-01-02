@@ -232,6 +232,12 @@ function colsToJson(data){
     "ko": "WhaTap 이벤트"
   }
 
+  rd["objectManifest"] = {
+    "en": "Object Manifest Information",
+    "ja": "Object Manifest情報",
+    "ko": "오브젝트 매니페스트"
+  }
+
   return rd;
 }
 
