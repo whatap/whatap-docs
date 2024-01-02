@@ -835,7 +835,7 @@ function MDXContent(_param) {
         sid: "objectManifest",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 쿠버네티스의 오브젝트 생성을 위한 메타 정보 조회 및 두 시점의 변화 비교 기능 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ": 쿠버네티스의 오브젝트 생성을 위한 메타 정보 UI 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
