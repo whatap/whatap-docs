@@ -17,9 +17,9 @@ import Layout from '@theme/Layout';
 import './style.css';
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 import Link from '@docusaurus/Link';
+import {translate} from '@docusaurus/Translate';
 
-// const lang = document.documentElement.lang.split("-")[0];
-const lang = "ko";
+const lang = document.documentElement.lang.split("-")[0];
 const docsURL = "https://docs.whatap.io";
 
 const { searchClient } = instantMeiliSearch(
@@ -28,25 +28,26 @@ const { searchClient } = instantMeiliSearch(
     {
         placeholderSearch: false,
         finitePagination: true,
-    },
+    }
 )
 
 const App = () => (
     <Layout>
         <div className="ais-InstantSearch">
-        <h1>검색 테스트를 위한 임시 페이지</h1>
-        <p>
-            이 페이지는 검색 테스트를 위한 임시 페이지입니다.
-        </p>
+        <h1>
+            {translate({
+                id: 'theme.SearchPage.emptyResultsTitle',
+                message: 'Search the documentation',
+                description: 'The search page title for empty query',
+            })}
+        </h1>
         <InstantSearch 
             indexName="whatap" 
             searchClient={searchClient}
             >
-            <Stats />
-            
             <div className="left-panel">
                 <ClearRefinements />
-                <h2>Product</h2>
+                <h2>Category</h2>
                 <RefinementList 
                     searchable
                     attribute="hierarchy_lvl0" 
@@ -59,6 +60,7 @@ const App = () => (
                     snippetEllipsisText={'...'}
                     filters={`lang=${lang}`}
                 />
+                <Stats />
             </div>
             <div className="right-panel">
                 <SearchBox />

@@ -3530,6 +3530,11 @@ const sidebars = {
         'about-billing',
         'software-proxy',
         'main-ui-intro',
+        {
+          type: 'link',
+          label: "상세 검색",
+          href: 'search'
+        }
       ],
     },
     {
