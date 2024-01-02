@@ -116,9 +116,10 @@ export default function App() {
                 </div>
                 <div className="right-panel">
                     <SearchBox />
+                    <Pagination showLast={true} />
                     <Hits hitComponent={Hit} />
+                    <Pagination showLast={true} />
                 </div>
-                <Pagination showLast={true} />
             </InstantSearch>
             </div>
         </Layout>
