@@ -3341,7 +3341,7 @@ button.docsearch-btn {
   color: initial;
   background: none;
 }
-html[data-theme='dark'] .docsearch-btn-key {
+html[data-theme='dark'] .docsearch-btn-key, html[data-theme='dark'] button.docsearch-btn {
   color: #b4b4b4 !important;
 }
 html[data-theme='dark'] .docsearch-modal-search-hits-item--active,
