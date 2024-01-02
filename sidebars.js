@@ -3138,7 +3138,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/nodejs-0_4_83',
@@ -3147,7 +3147,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_4_83',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_81',
                 'release-notes/nodejs/nodejs-0_4_80',
@@ -3246,14 +3246,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_4_8',
+                id: 'release-notes/server/server-2_4_9',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_4_8',
+                  id: 'release-notes/server/server-2_4_9',
                   className: 'new',
                 },
+                'release-notes/server/server-2_4_8',
                 'release-notes/server/server-2_4_7',
                 'release-notes/server/server-2_4_6',
                 'release-notes/server/server-2_4_5',
@@ -3262,7 +3263,6 @@ const sidebars = {
                 'release-notes/server/server-2_4_2',
                 'release-notes/server/server-2_4_1',
                 'release-notes/server/server-2_4_0',
-                'release-notes/server/server-2_3_9',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3299,7 +3299,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_6_15',
@@ -3308,7 +3308,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_6_15',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_14',
                 'release-notes/db/dbx-1_6_13',
