@@ -4640,11 +4640,15 @@ html:not([data-theme]) .themedComponent--light_NU7w {
 .ais-RefinementList-list {
   list-style: none;
   padding-left: 0;
-  font-size: 18px;
-  line-height: 180%;
+  font-size: 15px;
+  line-height: 210%;
 }
 .ais-RefinementList-item--selected {
   font-weight: 600;
+  font-size: 18px;
+}
+.ais-Pagination-link--selected {
+  font-size: 22px;
 }
 .ais-RefinementList-checkbox {
   width: 18px;
@@ -4675,9 +4679,11 @@ html:not([data-theme]) .themedComponent--light_NU7w {
 
 .ais-SearchBox-form input {
   width: 100%;
-  height: 35px;
+  height: 45px;
   font-size: 20px;
-  padding: 5px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
 }
 .ais-SearchBox-submit, .ais-SearchBox-reset {
   display: none;

@@ -39545,9 +39545,14 @@ function Component() {
                 filter: [
                     `lang = ${currentLocale}`
                 ],
-                limit: 150,
+                limit: 30,
                 cropLength: 150
-            }
+            },
+            hotKeys: [
+                "ctrl+k",
+                "k",
+                "/"
+            ]
         });
         return ()=>destroy();
     }, []);
