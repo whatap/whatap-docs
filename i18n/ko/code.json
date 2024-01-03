@@ -446,5 +446,8 @@
   "components.feedback.sendfeedbackTitle": {
     "message": "피드백 보내기",
     "description": "send feedback"
+  },
+  "breadcrumbs.releasenotes": {
+    "message": "릴리스 노트"
   }
 }

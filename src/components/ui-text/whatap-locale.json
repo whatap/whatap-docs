@@ -36043,10 +36043,10 @@
     "service_id": "_05228"
   },
   "invite_check_not_found": {
-    "en": "This email is a dormant account or an email that cannot be generated.",
-    "ja": "該当メールは使用中止中か、生成できないアカウントです。",
-    "ko": "해당 이메일은 휴면계정이거나, 생성 불가능한 이메일입니다.",
-    "zh": "This email is either a dormant account or an email that cannot be generated.",
+    "en": "This email is a dormant or locked account. Please bring it out of dormancy to unlock it and invite it to you.",
+    "ja": "このメールは休眠アカウントまたはロックされたアカウントです。休眠状態を解除して招待してください。",
+    "ko": "해당 이메일은 휴면 또는 잠긴 계정으로 휴면 및 잠금 해제 후 초대해 주시기 바랍니다.",
+    "zh": "This email is a dormant or locked account. Please bring it out of dormancy to unlock it and invite it to you.",
     "service_id": "_05229"
   },
   "invite_check_not_possible": {
@@ -49994,7 +49994,7 @@
     "service_id": "_07258"
   },
   "DSC07259": {
-    "en": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
+    "en": "A new Pod initialization performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
     "ja": "新規Pod性能機能は、WhaTapノードエージェントのバージョン <strong>{minVersion}</strong> 以降から提供します。 追加された機能を使用するには、エージェントをアップデートしてください。 (現行のバージョン: {currVersion})",
     "ko": "와탭 노드 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Pod 초기화 성능을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
     "zh": "A new Pod Initialization Performance is provided in WhaTap node agent version <strong>{minVersion}</strong> or higher. Please update your agent to use the new menu. (Current version: {currVersion})",
@@ -50036,21 +50036,21 @@
     "service_id": "DSC07264"
   },
   "TTL07265": {
-    "en": "installation guide",
+    "en": "Installation guide",
     "ja": "インストールガイド",
     "ko": "설치 안내",
     "zh": "installation guide",
     "service_id": "TTL07265"
   },
   "BTN07266": {
-    "en": "Install Kubernetes agent",
+    "en": "Install Kubernetes Agent",
     "ja": "Kubernetesエージェントのインストール",
     "ko": "쿠버네티스 에이전트 설치",
     "zh": "Install Kubernetes agent",
     "service_id": "BTN07266"
   },
   "BTN07267": {
-    "en": "Install application agent",
+    "en": "Install Application Agent",
     "ja": "Applicatonエージェントのインストール",
     "ko": "애플리케이션 에이전트 설치",
     "zh": "Install application agent",
@@ -50085,7 +50085,7 @@
     "service_id": "ITM07271"
   },
   "BTN07272": {
-    "en": "Download YAML file",
+    "en": "Download YAML File",
     "ja": "YAMLファイルのダウンロード",
     "ko": "YAML 파일 다운로드",
     "zh": "Download YAML file",
@@ -50162,7 +50162,7 @@
     "service_id": "TTL07282"
   },
   "DSC07283": {
-    "en": "When entering event conditions and targets, an error may occur  <br/>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered.  <br/>\nSelect the <b>Typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
+    "en": "When entering event conditions and targets, an error may occur  <br/>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered.  <br/>\nSelect the <b>typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
     "ja": "イベント発生条件と対象を入力する時に特殊文字(~!@#$%^&*()_+=-[]`)が含まれたり、数字で始まるフィールド名を入力したりするとエラーが発生することがあります。 <br/>\n<b>直接入力</b>オプションを選択し、例のように中括弧（$ {}）で囲んで入力します。",
     "ko": "이벤트 발생조건과 대상 입력시 특수문자(~!@#$%^&*()_+=-[]`)가 포함되거나  <br/>\n숫자로 시작하는 필드명을 입력하면 오류가 발생할 수 있습니다.  <br/>\n<b>직접 입력</b> 옵션을 선택한 다음 예시와 같이 중괄호(${})로 묶어서 입력하세요.",
     "zh": "When entering event conditions and targets, an error may occur <br>\nif special characters (~!@#$%^&*()_+=-[]`) are included or a field name that starts with a number is entered. <br/>\nSelect the <b>Typing</b> option, then enter it in curly brackets (${}) as shown in the example.",
@@ -50183,14 +50183,14 @@
     "service_id": "DSC07285"
   },
   "BTN07286": {
-    "en": "Add license",
+    "en": "Add License",
     "ja": "ライセンス追加",
     "ko": "라이선스 추가",
     "zh": "Add license",
     "service_id": "BTN07286"
   },
   "BTN07287": {
-    "en": "Edit license",
+    "en": "Edit License",
     "ja": "ライセンス修正",
     "ko": "라이선스 수정",
     "zh": "Edit license",
@@ -50204,7 +50204,7 @@
     "service_id": "CNT07288"
   },
   "DSC07289": {
-    "en": "Update all agents to latest version",
+    "en": "Update all agents to the latest version",
     "ja": "すべてのエージェントを最新バージョンに更新",
     "ko": "모든 에이전트 최신 버전으로 업데이트",
     "zh": "Update all agents to latest version",
@@ -50227,7 +50227,7 @@
   "DSC07292": {
     "en": "Once the download to the agent server is complete, the agent automatically restarts with the most recent version of the Jar file. (Takes about 1 minute)",
     "ja": "エージェントサーバーへのダウンロードが完了すると、最新バージョンのJarファイルでエージェントが自動的に再起動します（1分程かかります）。",
-    "ko": "에이전트 서버에 다운로드가 완료되면 가장 최신버전의 Jar 파일로 에이전트가 자동 재기동욉니다. (약 1분 소요)",
+    "ko": "에이전트 서버에 다운로드가 완료되면 가장 최신버전의 Jar 파일로 에이전트가 자동 재기동됩니다. (약 1분 소요)",
     "zh": "Once the download to the agent server is complete, the agent automatically restarts with the most recent version of the Jar file. (Takes about 1 minute)",
     "service_id": "DSC07292"
   },
@@ -50246,7 +50246,7 @@
     "service_id": "DSC07294"
   },
   "TTL07295": {
-    "en": "Agent update information",
+    "en": "Agent update guide",
     "ja": "エージェントアップデートのご案内",
     "ko": "에이전트 업데이트 안내",
     "zh": "Agent update information",
@@ -50260,14 +50260,14 @@
     "service_id": "TTL07296"
   },
   "TTL07297": {
-    "en": "{platform} Monitoring V2 change notice",
+    "en": "{platform} monitoring V2 change notice",
     "ja": "{platform} モニタリング V2 への変更のご案内",
     "ko": "{platform} 모니터링 V2 변경 안내",
     "zh": "{platform} Monitoring V2 change notice",
     "service_id": "TTL07297"
   },
   "DSC07298": {
-    "en": "<span style='font-weight: bold; color: #296CF2;'><b>Starting from {date}, the existing V1 dashboard will be retired<br/> and converted to the {platform} V2 version with enhanced charting and collection features.</b></span>",
+    "en": "<span style='font-weight: bold; color: #296CF2;'><b>Starting from {date}, the existing V1 dashboard will be discarded<br/> and converted to the {platform} V2 version with enhanced charting and collection features.</b></span>",
     "ja": "<span style='font-weight: bold; color: #296CF2;'><b> {date}から既存のV1ダッシュボードから、<br/>チャートと収集機能を強化した{platform} V2ダッシュボードへ移行します。</b></span>",
     "ko": "<span style='font-weight: bold; color: #296CF2;'><b>{date}부터 기존 V1 대시보드가 폐기되고<br/> 차트 및 수집 기능을 강화한 {platform} V2 버전으로 전환됩니다.</b></span>",
     "zh": "<span style='font-weight: bold; color: #296CF2;'><b>Starting from {date}, the existing V1 dashboard will be retired<br/> and converted to the {platform} V2 version with enhanced charting and collection features.</b></span>",
@@ -50281,7 +50281,7 @@
     "service_id": "DSC07299"
   },
   "DSC07300": {
-    "en": "To fully use all menu functions in V2, use <span style='font-weight: bold; color: #296CF2;'><b>Agent update is required.</b></span><br/>\n<b>Some data may not be viewed from agent version {version} or lower</b>.<br/>\nPlease click the button below to update the agent.",
+    "en": "To fully use all menu functions in V2, <span style='font-weight: bold; color: #296CF2;'><b>agent update is required.</b></span><br/>\n<b>Some data may not be viewed from agent version {version} or lower</b>.<br/>\nPlease click the button below to update the agent.",
     "ja": "V2ダッシュボードを正常に使用するには、<span style = 'font-weight：bold; color: #296CF2;'><b>エージェントの更新が必須です。</b></span><br/>\n<b>エージェントバージョン{version}以下</b>から、一部のデータが照会されない場合があります。<br/>\n下のボタンをクリックしてエージェントのアップデートを進めてください。",
     "ko": "V2 전 메뉴 기능을 온전히 사용하기 위해서는 <span style='font-weight: bold; color: #296CF2;'><b>에이전트 업데이트가 필수입니다.</b></span><br/>\n<b>에이전트 버전 {version} 이하</b>부터는  일부 데이터가 조회되지 않을 수 있습니다.<br/>\n아래의 버튼을 클릭하여 에이전트 업데이트를 진행해주세요.",
     "zh": "To fully use all menu functions in V2, use <span style='font-weight: bold; color: #296CF2;'><b>Agent update is required.</b></span><br/>\n<b>Some data may not be viewed from agent version {version} or lower</b>.<br/>\nPlease click the button below to update the agent.",
@@ -50309,14 +50309,14 @@
     "service_id": "BTN07303"
   },
   "BTN07304": {
-    "en": "Select the entire project",
+    "en": "Select the Entire Project",
     "ja": "プロジェクト全体を選択",
     "ko": "프로젝트 전체 선택",
     "zh": "Select the entire project",
     "service_id": "BTN07304"
   },
   "DSC07305": {
-    "en": "To downgrade to a previous version, select the desired version.\nAfter downloading, delete files after that version and restart the agent.",
+    "en": "To rollback to a previous version, select the desired version.\nAfter downloading, delete files other than that version and restart the agent.",
     "ja": "以前のバージョンに戻すには、該当のバージョンをダウンロード後、該当バージョン以降のファイルを削除してから、エージェントを再起動してください。",
     "ko": "이전 버전으로 다운그레이드하려면 원하는 버전을\n다운로드 후 해당버전이후의 파일을 삭제하고 에이전트를 재기동해주세요.",
     "zh": "To downgrade to a previous version, select the desired version.\nAfter downloading, delete files after that version and restart the agent.",
@@ -50337,7 +50337,7 @@
     "service_id": "DSC07307"
   },
   "NTC07308": {
-    "en": "Near to expiry",
+    "en": "Near expiration",
     "ja": "まもなく期限が切れます。",
     "ko": "만료 임박",
     "zh": "Near Expiration",
@@ -50379,14 +50379,14 @@
     "service_id": "DSC07313"
   },
   "TLT07314": {
-    "en": "Event resolution time column has been added!",
+    "en": "Added event resolution time column!",
     "ja": "イベント解消時刻の列が追加されました！",
     "ko": "이벤트 해소 시각 컬럼이 추가되었어요!",
     "zh": "Event resolution time column has been added!",
     "service_id": "TLT07314"
   },
   "ITM07315": {
-    "en": "Occurs during maintenance",
+    "en": "Occured during maintenance",
     "ja": "メンテナンス中に発生",
     "ko": "정비 중 발생",
     "zh": "Occurs during maintenance",
@@ -50400,7 +50400,7 @@
     "service_id": "DSC07316"
   },
   "DSC07317": {
-    "en": "If the update is not performed properly, <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> please refer to this.",
+    "en": "If the update is not performed properly, please refer to <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>.",
     "ja": "更新が正しく行われない場合は、<a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> を参考してください。",
     "ko": "업데이트가 제대로 수행되지 않는 경우 <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>를 참고하세요.",
     "zh": "If the update is not performed properly, <a target='_blank' href={url} style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a> please refer to this.",
@@ -50778,7 +50778,7 @@
     "service_id": "ITM07370"
   },
   "DSC07371": {
-    "": "",
+    "en": "When events at the critical and warning levels are resolved, you receive a notification with a status of <span style='color: {color};'>RECOVERED</span>.",
     "ja": "CriticalとWarningレベルのイベントが解決されたら、<span style='color: {color};'>RECOVERED状態の通知を受信</span>します。",
     "ko": "Critical과 Warning 레벨의 이벤트가 해결되면 <span style='color: {color};'>RECOVERED 상태의 알림을 수신</span>합니다.",
     "service_id": "DSC07371"
@@ -50805,7 +50805,7 @@
     "service_id": "TTL07374"
   },
   "TTL07375": {
-    "en": "Event Details",
+    "en": "Event details",
     "ja": "イベント内容",
     "ko": "이벤트 내용",
     "zh": "Event Details",
@@ -50819,7 +50819,7 @@
     "service_id": "TTL07376"
   },
   "TTL07377": {
-    "en": "Project Resources",
+    "en": "Project resources",
     "ja": "プロジェクトリソース",
     "ko": "프로젝트 리소스",
     "zh": "Project Resources",
@@ -50833,14 +50833,14 @@
     "service_id": "TLT07378"
   },
   "TLT07379": {
-    "en": "Select an Organization",
+    "en": "Select an organization",
     "ja": "組織選択",
     "ko": "조직 선택",
     "zh": "Select an Organization",
     "service_id": "TLT07379"
   },
   "TLT07380": {
-    "en": "Select a Group / Project",
+    "en": "Select a group / project",
     "ja": "グループ/プロジェクトの選択",
     "ko": "그룹 / 프로젝트 선택",
     "zh": "Select a Group / Project",

@@ -9,6 +9,7 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {translate} from '@docusaurus/Translate';
 import IconHome from '@theme/Icon/Home';
+import {useLocation} from '@docusaurus/router';
 import styles from './styles.module.css';
 // TODO move to design system folder
 function BreadcrumbsItemString({children, href, isLast}) {
@@ -85,10 +86,39 @@ function HomeBreadcrumbItem() {
 export default function DocBreadcrumbs() {
   const breadcrumbs = useSidebarBreadcrumbs();
   const homePageRoute = useHomePageRoute();
+  const location = useLocation();
   if (!breadcrumbs) {
     return null;
   } else if (breadcrumbs.length == 0) {
-    return null;
+    if (location.pathname.indexOf("release-notes") !== -1) {
+      const releaseurl = useBaseUrl('/') + 'release-notes'
+      return (
+        <nav
+          className={clsx(
+            ThemeClassNames.docs.docBreadcrumbs,
+            styles.breadcrumbsContainer,
+          )}
+          aria-label={translate({
+            id: 'theme.docs.breadcrumbs.navAriaLabel',
+            message: 'Breadcrumbs',
+            description: 'The ARIA label for the breadcrumbs',
+          })}>
+          <ul
+            className="breadcrumbs"
+            itemScope
+            itemType="https://schema.org/BreadcrumbList">
+              {homePageRoute && <HomeBreadcrumbItem />}
+              <li className='breadcrumbs__item'>
+                <a className='breadcrumbs__link' href={releaseurl}>
+                  {translate({
+                    id: "breadcrumbs.releasenotes"
+                  })}
+                </a>
+              </li>
+          </ul>
+        </nav>
+      );
+    };
   }
   // if (breadcrumbs.length < 2) {
   //   return null;
