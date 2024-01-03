@@ -446,5 +446,8 @@
   "components.feedback.sendfeedbackTitle": {
     "message": "Send feedback",
     "description": "send feedback"
+  },
+  "breadcrumbs.releasenotes": {
+    "message": "Release Notes"
   }
 }

@@ -446,5 +446,8 @@
   "components.feedback.sendfeedbackTitle": {
     "message": "フィードバック送信",
     "description": "send feedback"
+  },
+  "breadcrumbs.releasenotes": {
+    "message": "リリースノート"
   }
 }
