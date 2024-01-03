@@ -110,6 +110,7 @@ export default function App() {
                         hitsPerPage={20}
                         attributesToSnippet={['description:20']}
                         snippetEllipsisText={'...'}
+                        // filters={`lang=${lang} AND hierarchy_lvl0!=Documentation`}
                         filters={`lang=${lang}`}
                     />
                     <Stats />
