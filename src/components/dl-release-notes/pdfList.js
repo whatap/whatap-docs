@@ -184,6 +184,18 @@ const svList = [
 
 const javaList = [
     {
+        "name": 'Java-agent-v2.2.25',
+        "date": '2023-12-20',
+        "url": '/pdf/release-notes/java-agent-v2.2.25.pdf',
+        "docs": '/release-notes/java/java-2_2_25',
+    },
+    {
+        "name": 'Java-agent-v2.2.24',
+        "date": '2023-11-30',
+        "url": '/pdf/release-notes/java-agent-v2.2.24.pdf',
+        "docs": '/release-notes/java/java-2_2_24',
+    },
+    {
         "name": 'Java-agent-v2.2.23',
         "date": '2023-11-22',
         "url": '/pdf/release-notes/java-agent-v2.2.23.pdf',
@@ -349,6 +361,18 @@ const javaList = [
 
 const javaBatchList = [
     {
+        "name": "java-batch-agent-v2.2.22",
+        "date": "2023-12-20",
+        "url": "/pdf/release-notes/java-batch-agent-v2.2.22.pdf",
+        "docs": "/release-notes/java-batch/java-batch-2_2_22",
+    },
+    {
+        "name": "java-batch-agent-v2.2.21",
+        "date": "2023-11-23",
+        "url": "/pdf/release-notes/java-batch-agent-v2.2.21.pdf",
+        "docs": "/release-notes/java-batch/java-batch-2_2_21",
+    },
+    {
         "name": "java-batch-agent-v2.2.20",
         "date": "2023-10-19",
         "url": "/pdf/release-notes/java-batch-agent-v2.2.20.pdf",
@@ -439,6 +463,12 @@ const phpList = [
 
 const nodejsList = [
     {
+        "name": 'Node.js-agent-v0.4.83',
+        "date": '2023-12-11',
+        "url": '/pdf/release-notes/nodejs-agent-v0.4.83.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_83',
+    },
+    {
         "name": 'Node.js-agent-v0.4.81',
         "date": '2023-11-08',
         "url": '/pdf/release-notes/nodejs-agent-v0.4.81.pdf',
@@ -459,6 +489,18 @@ const nodejsList = [
 ]
 
 const pyList = [
+    {
+        "name": 'Python-agent-v1.5.0',
+        "date": '2023-12-29',
+        "url": '/pdf/release-notes/python-agent-v1.5.0.pdf',
+        "docs": '/release-notes/python/python-1_5_0',
+    },
+    {
+        "name": 'Python-agent-v1.4.9',
+        "date": '2023-12-28',
+        "url": '/pdf/release-notes/python-agent-v1.4.9.pdf',
+        "docs": '/release-notes/python/python-1_4_9',
+    },
     {
         "name": 'Python-agent-v1.4.8',
         "date": '2023-10-25',
@@ -786,6 +828,36 @@ const goList = [
 ];
 
 const serverList = [
+    {
+        "name": "Server-agent-v2.4.9",
+        "date": "2023-12-29",
+        "url": "/pdf/release-notes/server-agent-v2.4.9.pdf",
+        "docs": "/release-notes/server/server-2_4_9"
+    },
+    {
+        "name": "Server-agent-v2.4.8",
+        "date": "2023-12-21",
+        "url": "/pdf/release-notes/server-agent-v2.4.8.pdf",
+        "docs": "/release-notes/server/server-2_4_8"
+    },
+    {
+        "name": "Server-agent-v2.4.7",
+        "date": "2023-12-19",
+        "url": "/pdf/release-notes/server-agent-v2.4.7.pdf",
+        "docs": "/release-notes/server/server-2_4_7"
+    },
+    {
+        "name": "Server-agent-v2.4.6",
+        "date": "2023-12-14",
+        "url": "/pdf/release-notes/server-agent-v2.4.6.pdf",
+        "docs": "/release-notes/server/server-2_4_6"
+    },
+    {
+        "name": "Server-agent-v2.4.5",
+        "date": "2023-11-29",
+        "url": "/pdf/release-notes/server-agent-v2.4.5.pdf",
+        "docs": "/release-notes/server/server-2_4_5"
+    },
     {
         "name": "Server-agent-v2.4.4",
         "date": "2023-11-08",
@@ -1170,6 +1242,18 @@ const k8sList = [
 ];
 
 const dbxList = [
+    {
+        "name": "DBX-agent-v1.6.15",
+        "date": "2023-12-09",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.15.pdf",
+        "docs": "release-notes/db/dbx-1_6_15"
+    },
+    {
+        "name": "DBX-agent-v1.6.14",
+        "date": "2023-11-24",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.14.pdf",
+        "docs": "release-notes/db/dbx-1_6_14"
+    },
     {
         "name": "DBX-agent-v1.6.13",
         "date": "2023-11-03",
