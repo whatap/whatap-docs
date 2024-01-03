@@ -55,7 +55,8 @@ function App() {
         return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             key: hit.id
         }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-            to: durl
+            to: durl,
+            target: "_blank"
         }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, title[0]), /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "hit-breadcrums"
         }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

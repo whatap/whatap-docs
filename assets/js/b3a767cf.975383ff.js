@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[68260],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[32293],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 68272:
+/***/ 44135:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,40 +308,32 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_5_0',
-    title: 'Python Agent v1.5.0',
-    toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_4_9'
+    id: 'browser-v1_1_1',
+    title: 'Browser Agent v1.1.1',
+    toc_max_heading_level: 3,
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_5_0",
-    "id": "release-notes/python/python-1_5_0",
-    "title": "Python Agent v1.5.0",
-    "description": "2023년 12월 29일",
-    "source": "@site/docs/release-notes/python/python-1.5.0.mdx",
-    "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_5_0",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_0",
+    "unversionedId": "release-notes/browser/browser-v1_1_1",
+    "id": "release-notes/browser/browser-v1_1_1",
+    "title": "Browser Agent v1.1.1",
+    "description": "2023년 4월 28일",
+    "source": "@site/docs/release-notes/browser/browser-v1.1.1.mdx",
+    "sourceDirName": "release-notes/browser",
+    "slug": "/release-notes/browser/browser-v1_1_1",
+    "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_1",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.5.0.mdx",
+    "editUrl": "undefined/docs/release-notes/browser/browser-v1.1.1.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_5_0",
-        "title": "Python Agent v1.5.0",
-        "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_4_9"
+        "id": "browser-v1_1_1",
+        "title": "Browser Agent v1.1.1",
+        "toc_max_heading_level": 3,
+        "displayed_sidebar": "releaseSidebar"
     },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Node.js Agent v0.4.77",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
-    },
-    "next": {
-        "title": "Python Agent v1.4.9",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_9"
-    }
+    "sidebar": "releaseSidebar"
 };
 const assets = {};
 const toc = [];
@@ -350,7 +342,6 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
 const Status = makeShortcode("Status");
-const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -362,19 +353,9 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.5.0/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 4월 28일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Feature"), " Frappe 프레임워크(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
-        to: "https://github.com/frappe/frappe",
-        mdxType: "Link"
-    }, "frappe/frappe: Low code web framework for real world applications, in Python and Javascript (github.com)"), ") 성능 수집 기능 추가");
+    }, "Fixed"), " 유효하지 않는 프로젝트 액세스키로 브라우저 에이전트를 실행하면 발생하는 오류 해결"));
 }
 MDXContent.isMDXComponent = true;
 

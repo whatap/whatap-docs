@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[40332],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36032],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 44676:
+/***/ 40415:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,47 +308,50 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_3_9',
-    title: 'Python Agent v1.3.9',
-    toc_max_heading_level: 2,
-    displayed_sidebar: 'releaseSidebar'
+    id: 'preview-2_1_0x',
+    title: 'Preview 2.1.0.a',
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_3_9",
-    "id": "release-notes/python/python-1_3_9",
-    "title": "Python Agent v1.3.9",
-    "description": "2023년 6월 28일",
-    "source": "@site/docs/release-notes/python/python-1.3.9.mdx",
-    "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_3_9",
-    "permalink": "/whatap-docs/release-notes/python/python-1_3_9",
+    "unversionedId": "release-notes/preview/preview-2_1_0x",
+    "id": "release-notes/preview/preview-2_1_0x",
+    "title": "Preview 2.1.0.a",
+    "description": "https://preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
+    "source": "@site/docs/release-notes/preview/preview-2.1.0.a.mdx",
+    "sourceDirName": "release-notes/preview",
+    "slug": "/release-notes/preview/preview-2_1_0x",
+    "permalink": "/whatap-docs/release-notes/preview/preview-2_1_0x",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.3.9.mdx",
+    "editUrl": "undefined/docs/release-notes/preview/preview-2.1.0.a.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_3_9",
-        "title": "Python Agent v1.3.9",
-        "toc_max_heading_level": 2,
-        "displayed_sidebar": "releaseSidebar"
+        "id": "preview-2_1_0x",
+        "title": "Preview 2.1.0.a",
+        "toc_max_heading_level": 2
     },
-    "sidebar": "releaseSidebar",
+    "sidebar": "previewSidebar",
     "previous": {
-        "title": "Python Agent v1.4.0",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_0"
+        "title": "Preview Release Notes",
+        "permalink": "/whatap-docs/release-notes/preview/"
     },
     "next": {
-        "title": "Python Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/python/python-previous"
+        "title": "Preview 2.0.0.a",
+        "permalink": "/whatap-docs/release-notes/preview/preview-2_0_0x"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: '2023년 6월 28일',
-        id: '2023년-6월-28일',
-        level: 4
+        value: 'Preview 2.1.0.a0',
+        id: 'preview-210a0',
+        level: 2
+    },
+    {
+        value: '<code>Application</code>',
+        id: 'application',
+        level: 3
     }
 ];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
@@ -356,7 +359,6 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
 const Status = makeShortcode("Status");
-const UI = makeShortcode("UI");
 const layoutProps = {
     toc
 };
@@ -368,40 +370,29 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "2023년-6월-28일"
-    }, `2023년 6월 28일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("head", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("meta", {
+        name: "robots",
+        content: "noindex, nofollow"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
-    }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.3.9/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        "href": "https://preview.whatap.io"
+    }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "preview-210a0"
+    }, `Preview 2.1.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 04일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "application"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(UI, {
-        mdxType: "UI"
-    }, "로그 검색기"), "에만 로그가 나오고 트랜잭션에서는 로그가 나오지 않는 현상 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `whatap.conf`), ` 파일에 다음 옵션을 추가하면 로그 트레이싱이 가능합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whtap.conf'",
-        "title": "'whtap.conf'"
-    }, `trace_logging_enabled=true
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "method_profiling"), " 버그 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `비동기 메소드에서 프로파일링이 되지 않는 현상을 수정했습니다.`))));
+    }, "Changed"), " Node 에이전트 설치 지원 버전 변경 7.10.0 → ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "16.4.0")))));
 }
 MDXContent.isMDXComponent = true;
 

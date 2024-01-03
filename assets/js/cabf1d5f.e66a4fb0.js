@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[1732],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[63380],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 54514:
+/***/ 14810:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,40 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'index',
-    title: 'Preview Release Notes'
+    id: 'browser-previous',
+    title: 'Browser Agent 지난 버전',
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/preview/index",
-    "id": "release-notes/preview/index",
-    "title": "Preview Release Notes",
-    "description": "https://preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
-    "source": "@site/docs/release-notes/preview/index.mdx",
-    "sourceDirName": "release-notes/preview",
-    "slug": "/release-notes/preview/",
-    "permalink": "/whatap-docs/release-notes/preview/",
+    "unversionedId": "release-notes/browser/browser-previous",
+    "id": "release-notes/browser/browser-previous",
+    "title": "Browser Agent 지난 버전",
+    "description": "* Browser Agent v1.1.1",
+    "source": "@site/docs/release-notes/browser/browser-previous.mdx",
+    "sourceDirName": "release-notes/browser",
+    "slug": "/release-notes/browser/browser-previous",
+    "permalink": "/whatap-docs/release-notes/browser/browser-previous",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/preview/index.mdx",
+    "editUrl": "undefined/docs/release-notes/browser/browser-previous.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "index",
-        "title": "Preview Release Notes"
+        "id": "browser-previous",
+        "title": "Browser Agent 지난 버전",
+        "toc_max_heading_level": 2
     },
-    "sidebar": "previewSidebar",
+    "sidebar": "releaseSidebar",
+    "previous": {
+        "title": "Browser Agent v1.1.2",
+        "permalink": "/whatap-docs/release-notes/browser/browser-v1_1_2"
+    },
     "next": {
-        "title": "Preview 2.0.0.a",
-        "permalink": "/whatap-docs/release-notes/preview/preview-2_0_0x"
+        "title": "Amazon ECS Agent release notes",
+        "permalink": "/whatap-docs/release-notes/amazon-ecs/amazon-ecs-release-notes"
     }
 };
 const assets = {};
 const toc = [];
-const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
-    };
-const DocCardList = makeShortcode("DocCardList");
 const layoutProps = {
     toc
 };
@@ -353,19 +354,21 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("head", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("meta", {
-        name: "robots",
-        content: "noindex, nofollow"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
+        parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://preview.whatap.io"
-    }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(DocCardList, {
-        mdxType: "DocCardList"
-    }));
+        "href": "browser-v1_1_1"
+    }, `Browser Agent v1.1.1`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "browser-v1_1_0"
+    }, `Browser Agent v1.1.0`)))));
 }
 MDXContent.isMDXComponent = true;
 
