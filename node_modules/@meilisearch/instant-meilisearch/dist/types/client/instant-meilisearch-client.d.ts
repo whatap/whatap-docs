@@ -1,0 +1,11 @@
+import { InstantMeiliSearchOptions, InstantMeiliSearchObject, ApiKeyCallback } from '../types';
+/**
+ * Instantiate SearchClient required by instantsearch.js.
+ *
+ * @param  {string} hostUrl
+ * @param  {string | ApiKeyCallback} [apiKey='']
+ * @param  {InstantMeiliSearchOptions} [instantMeiliSearchOptions={}]
+ * @returns {InstantMeiliSearchObject}
+ */
+export declare function instantMeiliSearch(hostUrl: string, apiKey?: string | ApiKeyCallback, instantMeiliSearchOptions?: InstantMeiliSearchOptions): InstantMeiliSearchObject;
+//# sourceMappingURL=instant-meilisearch-client.d.ts.map

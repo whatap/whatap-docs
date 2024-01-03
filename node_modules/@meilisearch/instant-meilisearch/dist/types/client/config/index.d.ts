@@ -1,0 +1,21 @@
+import { InstantMeiliSearchOptions, InstantMeiliSearchConfig, ApiKeyCallback } from '../../types';
+/**
+ * Get the configuration of instant meilisearch
+ *
+ * @param {InstantMeiliSearchOptions} option
+ * @returns {InstantMeiliSearchConfig}
+ */
+export declare function getInstantMeilisearchConfig(options: InstantMeiliSearchOptions): InstantMeiliSearchConfig;
+/**
+ * Resolves apiKey if it is a function
+ * @param  {string | ApiKeyCallback} apiKey
+ * @returns {string} api key value
+ */
+export declare function getApiKey(apiKey: string | ApiKeyCallback): string;
+/**
+ * Validates host and apiKey parameters, throws if invalid
+ * @param hostUrl
+ * @param apiKey
+ */
+export declare function validateInstantMeiliSearchParams(hostUrl: string, apiKey: string | (() => string), instantMeiliSearchOptions: InstantMeiliSearchOptions): void;
+//# sourceMappingURL=index.d.ts.map

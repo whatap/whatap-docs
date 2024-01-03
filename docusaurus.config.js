@@ -163,25 +163,6 @@ module.exports = Promise.resolve({
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        // The application ID provided by Algolia
-        appId: '38IOA0JIBS',
-        // Public API key: it is safe to commit it
-        apiKey: '38a630985eb8e5474430fd5de27aca59',
-        indexName: 'whatap',
-        // Optional: see doc section below
-        contextualSearch: true,
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-        // Optional: Algolia search parameters
-        searchParameters: {
-          
-        },
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-        //... other Algolia params
-        insights: true,
-      },
       image: 'https://www.whatap.io/img/og/whatap.png',
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
@@ -636,8 +617,8 @@ module.exports = Promise.resolve({
           {
             type: 'search',
             position: 'right',
-          },
-        ],
+          }
+        ]
       },
       footer: {
         style: 'dark',

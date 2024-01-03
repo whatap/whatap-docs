@@ -1,0 +1,5 @@
+import { FacetDistribution, SearchContext, MeiliSearchMultiSearchParams, MultiSearchResolver, MeilisearchMultiSearchResult } from '../types';
+export declare function getParametersWithoutFilters(searchContext: SearchContext): MeiliSearchMultiSearchParams;
+export declare function initFacetDistribution(searchResolver: MultiSearchResolver, queries: MeiliSearchMultiSearchParams[], initialFacetDistribution: Record<string, FacetDistribution>): Promise<Record<string, FacetDistribution>>;
+export declare function fillMissingFacets(initialFacetDistribution: Record<string, FacetDistribution>, meilisearchResults: MeilisearchMultiSearchResult[]): Record<string, FacetDistribution>;
+//# sourceMappingURL=init-facets-distribution.d.ts.map

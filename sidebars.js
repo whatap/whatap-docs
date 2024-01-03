@@ -3162,14 +3162,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_5_0',
+                id: 'release-notes/python/python-1_5_2',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_5_0',
+                  id: 'release-notes/python/python-1_5_2',
                   className: 'new',
                 },
+                'release-notes/python/python-1_5_0',
                 'release-notes/python/python-1_4_9',
                 'release-notes/python/python-1_4_8',
                 'release-notes/python/python-1_4_6',
@@ -3178,7 +3179,6 @@ const sidebars = {
                 'release-notes/python/python-1_4_2',
                 'release-notes/python/python-1_4_1',
                 'release-notes/python/python-1_4_0',
-                'release-notes/python/python-1_3_9',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3530,6 +3530,11 @@ const sidebars = {
         'about-billing',
         'software-proxy',
         'main-ui-intro',
+        {
+          type: 'link',
+          label: "상세 검색",
+          href: 'search'
+        }
       ],
     },
     {
