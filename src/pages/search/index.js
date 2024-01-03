@@ -41,7 +41,7 @@ export default function App() {
         const durl = hit.url.replace(docsURL, "").replace("#__docusaurus_skipToContent_fallback", "")
         return (
             <div key={hit.id}>
-                <Link to={durl}>
+                <Link to={durl} target="_blank">
                     <h3>{title[0]}</h3>
                     <div className='hit-breadcrums'>
                         <div className="hit-name lvl0">
