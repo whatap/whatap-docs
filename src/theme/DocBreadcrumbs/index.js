@@ -110,9 +110,11 @@ export default function DocBreadcrumbs() {
               {homePageRoute && <HomeBreadcrumbItem />}
               <li className='breadcrumbs__item'>
                 <a className='breadcrumbs__link' href={releaseurl}>
-                  {translate({
-                    id: "breadcrumbs.releasenotes"
-                  })}
+                  <span itemprop="name">
+                    {translate({
+                      id: "breadcrumbs.releasenotes"
+                    })}
+                  </span>
                 </a>
               </li>
           </ul>
