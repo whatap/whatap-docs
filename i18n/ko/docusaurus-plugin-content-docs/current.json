@@ -1610,5 +1610,9 @@
   "sidebar.releaseSidebar.doc.v1.0.5 (56)": {
     "message": "v1.0.5 (56)",
     "description": "The label for the doc item v1.0.5 (56) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_5"
+  },
+  "sidebar.indexSidebar.link.상세 검색": {
+    "message": "상세 검색",
+    "description": "The label for link 상세 검색 in sidebar indexSidebar, linking to search"
   }
 }
