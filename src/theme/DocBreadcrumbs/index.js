@@ -120,6 +120,8 @@ export default function DocBreadcrumbs() {
           </ul>
         </nav>
       );
+    } else {
+      return null;
     };
   }
   // if (breadcrumbs.length < 2) {
