@@ -1405,6 +1405,8 @@ function DocBreadcrumbs() {
             }, (0,Translate/* translate */.I)({
                 id: "breadcrumbs.releasenotes"
             }))))));
+        } else {
+            return null;
         }
     }
     // if (breadcrumbs.length < 2) {
