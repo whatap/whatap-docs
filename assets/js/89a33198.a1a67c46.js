@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "PHP Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/php/php-previous"
+        "title": "Node.js Agent v0.4.86",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_86"
     },
     "next": {
         "title": "Node.js Agent v0.4.81",
