@@ -112,6 +112,7 @@ export default function App() {
                         snippetEllipsisText={'...'}
                         filters={`lang=${lang} AND hierarchy_lvl0!=Documentation`}
                         // filters={`lang=${lang}`}
+                        matchingStrategy={'all'}
                     />
                     <Stats />
                 </div>
