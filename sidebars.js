@@ -3089,7 +3089,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/java-batch-2_2_22',
@@ -3098,7 +3098,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java-batch/java-batch-2_2_22',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java-batch/java-batch-2_2_21',
                 'release-notes/java-batch/java-batch-2_2_20',
@@ -3141,14 +3141,15 @@ const sidebars = {
               // className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_83',
+                id: 'release-notes/nodejs/nodejs-0_4_86',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_83',
+                  id: 'release-notes/nodejs/nodejs-0_4_86',
                   // className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_83',
                 'release-notes/nodejs/nodejs-0_4_81',
                 'release-notes/nodejs/nodejs-0_4_80',
                 'release-notes/nodejs/nodejs-0_4_77'
