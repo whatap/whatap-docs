@@ -3035,7 +3035,7 @@ const sidebars = {
           label: 'WhaTap Mobile App',
           collapsible: true,
           collapsed: true,
-          className: 'new',
+          // className: 'new',
           items: [
             {
               type: 'doc',
