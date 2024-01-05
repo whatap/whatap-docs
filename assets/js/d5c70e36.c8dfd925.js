@@ -317,7 +317,7 @@ const metadata = {
     "unversionedId": "release-notes/service/service-previous",
     "id": "release-notes/service/service-previous",
     "title": "Service 지난 버전",
-    "description": "* Service 1.94.0",
+    "description": "* Service 1.96.0",
     "source": "@site/docs/release-notes/service/service-previous.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-previous",
@@ -333,8 +333,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Service 1.96.0",
-        "permalink": "/whatap-docs/release-notes/service/service-1_96_0"
+        "title": "Service 1.98.X",
+        "permalink": "/whatap-docs/release-notes/service/service-1_98_x"
     },
     "next": {
         "title": "WhaTap Mobile App v1.0.4 (53)",
@@ -355,6 +355,13 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "service-1_96_0"
+    }, `Service 1.96.0`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"

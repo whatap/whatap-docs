@@ -369,15 +369,7 @@ const metadata = {
         "toc_max_heading_level": 3,
         "displayed_sidebar": "releaseSidebar"
     },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Service 1.98.X",
-        "permalink": "/whatap-docs/release-notes/service/service-1_98_x"
-    },
-    "next": {
-        "title": "Service 지난 버전",
-        "permalink": "/whatap-docs/release-notes/service/service-previous"
-    }
+    "sidebar": "releaseSidebar"
 };
 const assets = {};
 

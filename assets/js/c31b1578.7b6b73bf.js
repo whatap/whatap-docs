@@ -375,8 +375,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/service/service-1_100_x"
     },
     "next": {
-        "title": "Service 1.96.0",
-        "permalink": "/whatap-docs/release-notes/service/service-1_96_0"
+        "title": "Service 지난 버전",
+        "permalink": "/whatap-docs/release-notes/service/service-previous"
     }
 };
 const assets = {};

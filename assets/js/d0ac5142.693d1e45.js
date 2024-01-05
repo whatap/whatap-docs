@@ -549,11 +549,6 @@ const toc = [
         level: 3
     },
     {
-        value: '<code>Kubernetes</code>',
-        id: 'kubernetes-5',
-        level: 3
-    },
-    {
         value: '<code>Network</code>',
         id: 'network',
         level: 3
@@ -610,7 +605,7 @@ const toc = [
     },
     {
         value: '<code>Kubernetes</code>',
-        id: 'kubernetes-6',
+        id: 'kubernetes-5',
         level: 3
     },
     {
@@ -690,7 +685,7 @@ const toc = [
     },
     {
         value: '<code>Kubernetes</code>',
-        id: 'kubernetes-7',
+        id: 'kubernetes-6',
         level: 3
     },
     {
@@ -1574,20 +1569,6 @@ weaving=log4j-2.17,logback-1.2.8
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴 추가: 프로젝트 단위로 쿠버네티스 이벤트에 대한 조회와 검색 기능"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "kubernetes-5"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "h3"
-    }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "log",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "kubeEventList",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " 메뉴 추가: 프로젝트 단위로 쿠버네티스 이벤트에 대한 조회와 검색 기능"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "network"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
@@ -1646,7 +1627,7 @@ weaving=log4j-2.17,logback-1.2.8
         sid: "guide",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 버튼 클릭 시, 설정된 언어에 맞춰 가이드(Docs) 링크로 이동하도록 수정 "), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }), " 버튼 클릭 시, 설정된 언어에 맞춰 가이드(Docs) 링크로 이동하도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "cmdname-siddashboard--3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "dashboard",
@@ -1908,7 +1889,7 @@ weaving=log4j-2.17,logback-1.2.8
         width: "1200",
         height: "660"
     })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "kubernetes-6"
+        "id": "kubernetes-5"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -2541,7 +2522,7 @@ weaving=log4j-2.17,logback-1.2.8
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "kubernetes-7"
+        "id": "kubernetes-6"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
