@@ -3164,14 +3164,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/python/python-1_5_2',
+                id: 'release-notes/python/python-1_5_3',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_5_2',
+                  id: 'release-notes/python/python-1_5_3',
                   className: 'new',
                 },
+                'release-notes/python/python-1_5_2',
                 'release-notes/python/python-1_5_0',
                 'release-notes/python/python-1_4_9',
                 'release-notes/python/python-1_4_8',
@@ -3180,7 +3181,6 @@ const sidebars = {
                 'release-notes/python/python-1_4_3',
                 'release-notes/python/python-1_4_2',
                 'release-notes/python/python-1_4_1',
-                'release-notes/python/python-1_4_0',
                 'release-notes/python/python-previous',
               ],
             },
