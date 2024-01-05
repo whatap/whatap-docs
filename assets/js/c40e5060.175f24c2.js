@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Node.js Agent v0.4.77",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
+        "title": "Python Agent v1.5.3",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_3"
     },
     "next": {
         "title": "Python Agent v1.5.0",
