@@ -3011,12 +3011,12 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2.0.x',
+            id: 'release-notes/service/service-2_0_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2.0.x',
+              id: 'release-notes/service/service-2_0_x',
               className: 'new',
             },
             'release-notes/service/service-1_114_x',
