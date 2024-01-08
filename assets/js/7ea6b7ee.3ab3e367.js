@@ -360,8 +360,8 @@ const metadata = {
         "permalink": "/whatap-docs/account/account-manage"
     },
     "next": {
-        "title": "프로젝트 구조 및 멤버 권한",
-        "permalink": "/whatap-docs/project/project-structure"
+        "title": "SSO 계정 연동",
+        "permalink": "/whatap-docs/account/sso"
     }
 };
 const assets = {};

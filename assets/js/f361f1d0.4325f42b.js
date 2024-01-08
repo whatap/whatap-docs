@@ -344,8 +344,8 @@ const metadata = {
     },
     "sidebar": "manageSidebar",
     "previous": {
-        "title": "멀티팩터 인증",
-        "permalink": "/whatap-docs/account/mfa"
+        "title": "SSO 계정 연동",
+        "permalink": "/whatap-docs/account/sso"
     },
     "next": {
         "title": "프로젝트 관리",
