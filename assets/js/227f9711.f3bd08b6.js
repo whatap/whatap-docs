@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[92127],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[48214],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 10696:
+/***/ 12650:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,66 +308,72 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-docker-php',
-    title: 'Docker PHP 설치',
-    description: '컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
+    id: 'install-agent-docker',
+    title: 'Docker 환경 설치',
+    description: 'Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
     tags: [
-        '쿠버네티스',
-        '쿠버네티스 모니터링',
-        '애플리케이션 설치',
-        'PHP'
+        'PHP',
+        '에이전트 설치',
+        'Docker',
+        '컨테이너',
+        '애플리케이션'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/install-docker-php",
-    "id": "kubernetes/install-docker-php",
-    "title": "Docker PHP 설치",
-    "description": "컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
-    "source": "@site/docs/kubernetes/install-docker-php.mdx",
-    "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/install-docker-php",
-    "permalink": "/whatap-docs/kubernetes/install-docker-php",
+    "unversionedId": "php/install-agent-docker",
+    "id": "php/install-agent-docker",
+    "title": "Docker 환경 설치",
+    "description": "Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+    "source": "@site/docs/php/install-agent-docker.mdx",
+    "sourceDirName": "php",
+    "slug": "/php/install-agent-docker",
+    "permalink": "/whatap-docs/php/install-agent-docker",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/install-docker-php.mdx",
+    "editUrl": "undefined/docs/php/install-agent-docker.mdx",
     "tags": [
-        {
-            "label": "쿠버네티스",
-            "permalink": "/whatap-docs/tags/쿠버네티스"
-        },
-        {
-            "label": "쿠버네티스 모니터링",
-            "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
-        },
-        {
-            "label": "애플리케이션 설치",
-            "permalink": "/whatap-docs/tags/애플리케이션-설치"
-        },
         {
             "label": "PHP",
             "permalink": "/whatap-docs/tags/php"
+        },
+        {
+            "label": "에이전트 설치",
+            "permalink": "/whatap-docs/tags/에이전트-설치"
+        },
+        {
+            "label": "Docker",
+            "permalink": "/whatap-docs/tags/docker"
+        },
+        {
+            "label": "컨테이너",
+            "permalink": "/whatap-docs/tags/컨테이너"
+        },
+        {
+            "label": "애플리케이션",
+            "permalink": "/whatap-docs/tags/애플리케이션"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-docker-php",
-        "title": "Docker PHP 설치",
-        "description": "컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+        "id": "install-agent-docker",
+        "title": "Docker 환경 설치",
+        "description": "Docker 환경에서 컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
         "tags": [
-            "쿠버네티스",
-            "쿠버네티스 모니터링",
-            "애플리케이션 설치",
-            "PHP"
+            "PHP",
+            "에이전트 설치",
+            "Docker",
+            "컨테이너",
+            "애플리케이션"
         ]
     },
-    "sidebar": "kubeSidebar",
+    "sidebar": "phpSidebar",
     "previous": {
-        "title": "Docker Python 설치",
-        "permalink": "/whatap-docs/kubernetes/install-docker-python"
+        "title": "AWS Elastic beanstalk",
+        "permalink": "/whatap-docs/php/php-os/aws-eb"
     },
     "next": {
-        "title": "Docker Go 설치",
-        "permalink": "/whatap-docs/kubernetes/install-docker-go"
+        "title": "설치 점검 사항",
+        "permalink": "/whatap-docs/php/install-check"
     }
 };
 const assets = {};
@@ -416,7 +422,11 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Docker 컨테이너 기반으로 실행하는 PHP 애플리케이션에 와탭 모니터링 에이전트를 적용하고, 컨테이너 이미지를 패키징하는 과정입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Docker 컨테이너 기반으로 실행하는 PHP 애플리케이션에 와탭 모니터링 에이전트를 적용하고, 컨테이너 이미지를 패키징하는 과정입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `EKS Fargate는 지원 예정입니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-다운로드"
     }, `에이전트 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `PHP 애플리케이션 도커 이미지 빌드 시 whatap-php 패키지를 설치하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Tabs, {
         mdxType: "Tabs"
@@ -512,14 +522,7 @@ RUN tar -xvzf whatap-php.tar.gz -C /
 RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "kubernetes-환경-변수-및-볼륨"
-    }, `Kubernetes 환경 변수 및 볼륨`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 안내에 따라 환경 변수 및 볼륨을 설정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Tabs, {
-        mdxType: "Tabs"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(TabItem, {
-        value: "basic",
-        label: "기본",
-        default: true,
-        mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `트랜잭션에서 NODE 및 POD정보를 수집하기 위해 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+    }, `Kubernetes 환경 변수 및 볼륨`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 안내에 따라 환경 변수 및 볼륨을 설정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `트랜잭션에서 NODE 및 POD정보를 수집하기 위해 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `NODE_IP`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -537,110 +540,7 @@ env:
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
 
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(TabItem, {
-        value: "eks",
-        label: "EKS Fargate(지원 예정)",
-        default: true,
-        mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `shareProcessNamespace 설정 추가`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `디플로이먼트(Deployment) 또는 레플리카셋(ReplicaSet)의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `.spec`), ` 내 필드에 사용자 파드(Pod) 자원 관측을 위한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `shareProcessNamespace`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `SERVICE ACCOUNT`), `를 추가하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-docker"
-    }, `
-apiVersion: apps/v1
-kind: Deployment
-...
-spec:
-...
-    spec:
-      shareProcessNamespace: true
-      serviceAccount: whatap
-...
-
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `Kubernetes의 컨테이너 환경 변수 설정`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `트랜잭션에서 NODE 및 POD정보를 수집하기 위해 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `NODE_IP`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `NODE_NAME`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `POD_NAME`), `을 환경 변수로 설정합니다. 와탭 설정 파일 및 로그 파일용 휘발성 볼륨을 탑재합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-docker"
-    }, `
-env:
-- name: NODE_IP
-  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-- name: NODE_NAME
-  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-- name: POD_NAME
-  valueFrom: {fieldRef: {fieldPath: metadata.name}}
-
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `사이드카(Sidecar) 에이전트 추가`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `사용자 파드(Pod) 자원 사용량을 수집하는 whatap-node-agent sidecar 컨테이너를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-docker"
-    }, `
-...
-  - name: whatap-node-agent
-    image: whatap/kube_mon_sidecar
-    resources:
-      requests:
-        memory: 20Mi
-        cpu: 10m
-      limits:
-        memory: 40Mi
-        cpu: 20m
-    ports:
-      - name: nodeport
-        containerPort: 6600
-    env:
-      - name: NODE_IP
-        valueFrom:
-          fieldRef:
-            fieldPath: status.hostIP
-      - name: NODE_NAME
-        valueFrom:
-          fieldRef:
-            fieldPath: spec.nodeName
-        envFrom:
-        - configMapRef:
-            name: node-license
-volumes:
-...
-
-`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "애플리케이션-모니터링-시작하기"
     }, `애플리케이션 모니터링 시작하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Tabs, {
         mdxType: "Tabs"

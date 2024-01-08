@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[85429],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56598],{
 
-/***/ 36850:
+/***/ 13540:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -99,7 +99,7 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-master-node-agent',
+    id: 'install-master-node-agent-temp',
     title: '마스터 및 노드 에이전트 설치',
     description: '설치 안내 페이지에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요.',
     tags: [
@@ -110,20 +110,22 @@ const frontMatter = {
         '노드',
         '에이전트 설치'
     ],
-    hide_table_of_contents: true
+    hide_table_of_contents: false,
+    toc_max_heading_level: 2,
+    draft: false
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/install-master-node-agent",
-    "id": "kubernetes/install-master-node-agent",
+    "unversionedId": "kubernetes/install-master-node-agent-temp",
+    "id": "kubernetes/install-master-node-agent-temp",
     "title": "마스터 및 노드 에이전트 설치",
     "description": "설치 안내 페이지에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요.",
-    "source": "@site/docs/kubernetes/install-master-node-agent.mdx",
+    "source": "@site/docs/kubernetes/install-master-node-agent-temp.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/install-master-node-agent",
-    "permalink": "/whatap-docs/kubernetes/install-master-node-agent",
+    "slug": "/kubernetes/install-master-node-agent-temp",
+    "permalink": "/whatap-docs/kubernetes/install-master-node-agent-temp",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/install-master-node-agent.mdx",
+    "editUrl": "undefined/docs/kubernetes/install-master-node-agent-temp.mdx",
     "tags": [
         {
             "label": "쿠버네티스",
@@ -152,7 +154,7 @@ const metadata = {
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-master-node-agent",
+        "id": "install-master-node-agent-temp",
         "title": "마스터 및 노드 에이전트 설치",
         "description": "설치 안내 페이지에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요.",
         "tags": [
@@ -163,16 +165,9 @@ const metadata = {
             "노드",
             "에이전트 설치"
         ],
-        "hide_table_of_contents": true
-    },
-    "sidebar": "kubeSidebar",
-    "previous": {
-        "title": "에이전트 설치",
-        "permalink": "/whatap-docs/kubernetes/install"
-    },
-    "next": {
-        "title": "애플리케이션 에이전트 설치",
-        "permalink": "/whatap-docs/kubernetes/install-application-agent"
+        "hide_table_of_contents": false,
+        "toc_max_heading_level": 2,
+        "draft": false
     }
 };
 const assets = {};
@@ -198,21 +193,6 @@ const toc = [
         value: 'Running 상태가 아닌 경우',
         id: 'running-상태가-아닌-경우',
         level: 4
-    },
-    {
-        value: '쿠버네티스 에이전트 생성',
-        id: '쿠버네티스-에이전트-생성-1',
-        level: 2
-    },
-    {
-        value: '쿠버네티스 에이전트 설치 확인',
-        id: '쿠버네티스-에이전트-설치-확인-1',
-        level: 2
-    },
-    {
-        value: '클러스터 네임스페이스 확인',
-        id: '클러스터-네임스페이스-확인',
-        level: 2
     }
 ];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
@@ -235,15 +215,11 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `설치 안내`)), ` 화면에서 사용하는 서비스 환경을 선택하고 절차에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-        groupId: "k8stype",
-        mdxType: "Tabs"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
-        value: "kubernetes",
-        label: "KUBERNETES",
-        default: true,
-        mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `설치 안내`)), ` 화면 절차에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `EKS Fargate는 지원 예정입니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "사전-환경-점검-및-설정"
     }, `사전 환경 점검 및 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사용자의 쿠버네티스 환경에 따라 사전 환경 설정이 필요한 경우가 있습니다. Istio, GKE, OpenShift 환경에 해당하지 않을 경우 다음 단계로 넘어가세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
         mdxType: "Tabs"
@@ -252,7 +228,7 @@ function MDXContent(_param) {
         label: "Istio 환경",
         default: true,
         mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Istio 환경이라면 다음 명령을 실행해 필요한 자원을 생성하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Istio 환경이라면 다음 명령을 실행해 와탭 수집서버와 통신하는 자원인 ServiceEntry를 생성하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-bash",
         "metastring": "title='SH'",
@@ -316,7 +292,7 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \\
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `openshift_scc`)), ` 버튼을 선택하세요. 파일을 다운로드 후 다음 명령을 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, `whatap_openshift_scc.yaml`)), ` 버튼을 선택하세요. 파일을 다운로드 후 다음 명령을 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-bash"
     }, `oc create -f whatap_openshift_scc.yaml
@@ -371,7 +347,9 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \\
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
-    }, `마스터 에이전트 자원 사용은 컨테이너 수 증가에 따라 영향을 받을 수 있습니다. 기본값으로 설정된 메모리 limit(350MB) 이상으로 자원을 사용할 경우 OOM(Out Of Meomory)이 발생할 수 있습니다. 사용자가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `마스터 에이전트 자원 사용은 컨테이너 수 증가에 따라 영향을 받을 수 있습니다.`), ` 기본값으로 설정된 메모리 limit(350MB) 이상으로 자원을 사용할 경우 OOM(Out Of Meomory)이 발생할 수 있습니다. 사용자가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
     }, `YAML`), ` 파일을 통해 해당 설정을 변경할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
@@ -390,46 +368,22 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \\
         "className": "language-bash"
     }, `# {whatap_kube_X.YZ.yaml} 파일명을 다운로드한 파일명과 일치하도록 수정하세요.
 kubectl apply -f {whatap_kube_X.YZ.yaml}
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        parentName: "li",
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `와탭 에이전트는 프로젝트 정보를 기억하기 위해 소량의 Persistent Volume(PV)가 필요합니다.`), ` 퍼블릭 클라우드 환경의 K8S에서는 Persistent Volume Claim(PVC) 요청만으로 PV가 자동으로 생성될 수 있지만, 프라이빗 환경 기준이라면 와탭의 PVC 요청을 받을 수 있는 PV가 생성된 후에 명령어를 실행하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `쿠버네티스 API를 이용해 에이전트를 생성(create)한 것을 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음과 같이 에이전트를 생성(create)한 것을 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "에이전트 생성 확인",
         src: (__webpack_require__(68617)/* ["default"] */ .Z),
         width: "771",
         height: "231"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "쿠버네티스-에이전트-설치-확인"
-    }, `쿠버네티스 에이전트 설치 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `쿠버네티스 에이전트 설치가 정상적으로 완료되었을 경우 다음과 같이 설치 완료 메시지를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "k8s-agent-install-check.png",
-        desc: "쿠버네티스 에이전트 설치 확인",
-        mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `다음 명령어를 실행해 마스터 에이전트와 노드 에이전트의 상태를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, `쿠버네티스 에이전트 설치 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `쿠버네티스 에이전트 설치가 정상적으로 완료되었을 경우 다음 명령어를 실행해 마스터 에이전트와 노드 에이전트의 상태를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-bash"
     }, `kubectl get pod -n whatap-monitoring
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         src: (__webpack_require__(11062)/* ["default"] */ .Z),
         width: "771",
         height: "144"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, `STATUS`), ` 항목이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
@@ -448,13 +402,13 @@ kubectl apply -f {whatap_kube_X.YZ.yaml}
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `컨테이너 맵`)), ` 메뉴에서 성능 정보를 수집하는 것을 확인하세요. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }, `컨테이너 맵`)), ` 메뉴에서 성능 정보를 수집하는 것을 확인하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "running-상태가-아닌-경우"
     }, `Running 상태가 아닌 경우`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         src: (__webpack_require__(68463)/* ["default"] */ .Z),
         width: "771",
         height: "153"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `마스터 노드에서 다음 명령어를 실행해 파드(Pod) 생성의 실패 원인을 파악하세요. 실행 결과 하단에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `마스터 노드에서 다음 명령어를 실행해 Pod 생성의 실패 원인을 파악하세요. 실행 결과 하단에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, `Events:`), ` 항목을 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
@@ -476,75 +430,7 @@ kubectl apply -f {whatap_kube_X.YZ.yaml}
         parentName: "p"
     }, `whatap-monitoring`), `이라는 네임스페이스에 설치되므로 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `-n whatap-monitoring`), `이라는 옵션을 추가합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
-        value: "eksfragate",
-        label: "EKS Fargate(지원 예정)",
-        mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "쿠버네티스-에이전트-생성-1"
-    }, `쿠버네티스 에이전트 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `쿠버네티스 모니터링을 위한 설치 파일을 다운로드 하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `whatap_kube_fargate`)), ` 버튼을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `다운로드한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `YAML`), ` 파일을 이용해 에이전트를 생성하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash"
-    }, `kubectl -f whatap_kube_fargate.yaml apply
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "쿠버네티스-에이전트-설치-확인-1"
-    }, `쿠버네티스 에이전트 설치 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `쿠버네티스 에이전트 설치가 정상적으로 완료되었을 경우 다음과 같이 설치 완료 메시지를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "k8s-agent-install-check.png",
-        desc: "쿠버네티스 에이전트 설치 확인",
-        mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `다음 명령어를 실행해 마스터 에이전트와 노드 에이전트의 상태를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash"
-    }, `kubectl get pod -n whatap-monitoring
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `마스터 및 노드 에이전트의 설치를 완료하면 쿠버네티스 환경의 자원 모니터링을 시작합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "https://service.whatap.io"
-    }, `와탭 모니터링 서비스`), `로 이동한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `프로젝트 목록`)), `과 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `대시보드`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `컨테이너 맵`)), ` 메뉴에서 성능 정보를 수집하는 것을 확인하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "클러스터-네임스페이스-확인"
-    }, `클러스터 네임스페이스 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `에이전트 설치를 완료하고 2`, `~`, `3분 후 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "https://service.whatap.io"
-    }, `와탭 모니터링 서비스`), ` 화면 왼쪽의 메뉴에서 프로젝트 이름을 선택하세요. 사용 중인 네임스페이스 목록을 확인 후 + 버튼을 선택해 와탭 프로젝트를 신규 생성하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `-n whatap-monitoring`), `이라는 옵션을 추가합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
         parentName: "admonition"
