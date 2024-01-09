@@ -5319,6 +5319,7 @@ const sidebars = {
                 'kubernetes/resource-node-list',
                 'kubernetes/resource-container-list',
                 'kubernetes/resource-container-volume',
+                'kubernetes/container-images',
                 'kubernetes/resource-master-meta',
                 'kubernetes/resource-namespace',
               ],
