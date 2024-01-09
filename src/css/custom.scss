@@ -1787,6 +1787,13 @@ main {
         }
       }
     }
+    .c3-3 {
+      table {
+        td {
+          width: 33.3%;
+        }
+      }
+    }
     .c4-avg {
       table {
         tr {
@@ -1824,6 +1831,18 @@ main {
             &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
               width: 15%;
             }
+          }
+        }
+      }
+    }
+    .c2-3-7 {
+      table {
+        td {
+          &:first-of-type {
+            width: 20%;
+          }
+          &:nth-of-type(2) {
+            width: 80%;
           }
         }
       }
