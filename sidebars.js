@@ -4167,6 +4167,7 @@ const sidebars = {
           items: [
             'faq/db-faq',
             'faq/log-faq',
+            'faq/support-faq',
           ]
         },
         'glossary/glossary',
