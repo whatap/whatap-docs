@@ -370,97 +370,97 @@ const assets = {};
 const toc = [
     {
         value: '앱 설치하기',
-        id: '앱-설치하기',
+        id: 'dada3d0ee7e361bad7d19f1dd96e05f4',
         level: 2
     },
     {
         value: '로그인하기',
-        id: '로그인하기',
+        id: 'ac3ea01111337c06c3969b2d535337f2',
         level: 2
     },
     {
         value: '초기 화면 안내',
-        id: '초기-화면-안내',
+        id: '4900cf48bac5e30814f09512c18875fa',
         level: 2
     },
     {
         value: '주요 메뉴 알아보기',
-        id: '주요-메뉴-알아보기',
+        id: 'fb046a2eb3f99973d4348afa2074e2d4',
         level: 3
     },
     {
         value: '공지사항 확인하기',
-        id: '공지사항-확인하기',
+        id: 'f315b6390986f7ec1bb01489e982630e',
         level: 3
     },
     {
         value: '상품 종류별 확인하기',
-        id: '상품-종류별-확인하기',
+        id: '8e74337624c2b665a7463e968b626f4b',
         level: 3
     },
     {
         value: '프로젝트 현황 확인하기',
-        id: '프로젝트-현황-확인하기',
+        id: 'e97177b5162ac343349846ac03e6212f',
         level: 3
     },
     {
         value: '프로젝트 검색하기',
-        id: '프로젝트-검색하기',
+        id: 'b8f85764d904d2401f20ccf54ad7cc31',
         level: 3
     },
     {
         value: '조직별 확인하기',
-        id: '조직별-확인하기',
+        id: '392a97edc522f048880f26ab55a29633',
         level: 3
     },
     {
         value: '프로젝트',
-        id: '프로젝트',
+        id: 'fb2eece6f8746f39ede1f98c58d2730c',
         level: 2
     },
     {
         value: '프로젝트 목록 확인하기',
-        id: '프로젝트-목록-확인하기',
+        id: '982e80dcfa91d38e4dfd7d2507a8b6be',
         level: 3
     },
     {
         value: '대시보드 살펴보기',
-        id: '대시보드-살펴보기',
+        id: 'd1b4ddc71ea6512bd94aa87d10e3a78c',
         level: 3
     },
     {
         value: '프로젝트별 알림 확인하기',
-        id: '프로젝트별-알림-확인하기',
+        id: '00eb10b0be6fe8104785a99aaf653277',
         level: 3
     },
     {
         value: '프로젝트 설정 확인하기',
-        id: '프로젝트-설정-확인하기',
+        id: '9e3bd2f2a70fbeb5297ff52d8455b2f0',
         level: 3
     },
     {
         value: '통합 알림',
-        id: '통합-알림',
+        id: '6df98f20941be17b6e955a6c0e1153d3',
         level: 2
     },
     {
         value: '계정 설정',
-        id: '계정-설정',
+        id: '3518ccd39bba16e461d64bf75f209f92',
         level: 2
     },
     {
         value: '앱 기본 언어 변경하기',
-        id: '앱-기본-언어-변경하기',
+        id: '4b442da576063963cf8afe1cb3b2d5fe',
         level: 3
     },
     {
         value: '기본 조직 설정하기',
-        id: '기본-조직-설정하기',
+        id: '5519c33fac468559f5137171d8ee9677',
         level: 3
     },
     {
         value: '알림 수신 설정하기',
-        id: '알림-수신-설정하기',
+        id: '3b0ae19db04b5962b295cd2511398344',
         level: 3
     },
     {
@@ -558,7 +558,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `모바일 앱에서는 프로젝트 그룹 기능을 지원하지 않습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "앱-설치하기"
+        "id": "dada3d0ee7e361bad7d19f1dd96e05f4"
     }, `앱 설치하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모바일 앱은 안드로이드와 iOS 환경을 지원합니다. 다음 링크로 이동하거나 QR 코드를 스캔해 앱을 설치할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
@@ -596,7 +596,7 @@ function MDXContent(_param) {
         width: "600",
         height: "600"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("br", null), `Android 5.0 버전 이상`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "로그인하기"
+        "id": "ac3ea01111337c06c3969b2d535337f2"
     }, `로그인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `앱을 처음 사용하는 사용자는 로그인해야 합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "https://service.whatap.io"
@@ -617,14 +617,14 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "account/account-manage"
     }, `다음 문서`), `의 안내에 따라 회원 가입을 진행하세요. 모바일 앱에서는 회원 가입할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "초기-화면-안내"
+        "id": "4900cf48bac5e30814f09512c18875fa"
     }, `초기 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `로그인을 완료했거나 앱을 처음 실행했다면 사용자가 소속된 프로젝트 목록을 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "mobile/mobile-app-home.png",
         desc: "초기 화면",
         className: "mobile",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "주요-메뉴-알아보기"
+        "id": "fb046a2eb3f99973d4348afa2074e2d4"
     }, `주요 메뉴 알아보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모바일 앱은 다음의 주요 메뉴로 구성되어 있습니다. 화면 아래에 메뉴를 탭하면 각 메뉴의 주요 기능을 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "mobile/mobile-app-main-tab.png",
         desc: "주요 메뉴",
@@ -649,7 +649,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Appname"
     }), ": 사용자의 계정 정보를 확인할 수 있으며, 언어 및 알림 수신 변경, OTP 인증을 설정할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공지사항-확인하기"
+        "id": "f315b6390986f7ec1bb01489e982630e"
     }, `공지사항 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 서비스의 공지사항을 확인하려면 화면 오른쪽 위, 모서리에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "알림 아이콘",
         src: (__webpack_require__(25484)/* ["default"] */ .Z),
@@ -665,7 +665,7 @@ function MDXContent(_param) {
         width: "24",
         height: "24"
     }), ` 버튼을 탭하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "상품-종류별-확인하기"
+        "id": "8e74337624c2b665a7463e968b626f4b"
     }, `상품 종류별 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `프로젝트 목록을 상품 종류별로 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
@@ -685,7 +685,7 @@ function MDXContent(_param) {
         className: "mobile-l",
         mdxType: "ImgLang"
     }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `선택한 상품 항목에 해당하는 프로젝트만 목록에 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "프로젝트-현황-확인하기"
+        "id": "e97177b5162ac343349846ac03e6212f"
     }, `프로젝트 현황 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `전체 프로젝트를 상품별로 분류한 목록을 확인할 수 있습니다. 초기 화면 위에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "아이콘",
         src: (__webpack_require__(48269)/* ["default"] */ .Z),
@@ -701,7 +701,7 @@ function MDXContent(_param) {
         className: "mobile",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "프로젝트-검색하기"
+        "id": "b8f85764d904d2401f20ccf54ad7cc31"
     }, `프로젝트 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `프로젝트 목록이 많아 프로젝트를 찾기 어렵다면 검색을 통해서 원하는 프로젝트를 찾을 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "search",
         className: "uitext",
@@ -709,7 +709,7 @@ function MDXContent(_param) {
     }), ` 입력란에 찾으려는 프로젝트 이름 또는 프로젝트 코드를 입력한 다음 키보드의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, `완료`), `를 탭하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "조직별-확인하기"
+        "id": "392a97edc522f048880f26ab55a29633"
     }, `조직별 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조직별로 설정된 프로젝트 목록을 확인하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "org",
         className: "uitext",
@@ -724,7 +724,7 @@ function MDXContent(_param) {
         className: "mobile",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "프로젝트"
+        "id": "fb2eece6f8746f39ede1f98c58d2730c"
     }, `프로젝트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `화면 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "projects",
         className: "uitext",
@@ -762,7 +762,7 @@ function MDXContent(_param) {
     }, `URL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, `Browser`), `입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "프로젝트-목록-확인하기"
+        "id": "982e80dcfa91d38e4dfd7d2507a8b6be"
     }, `프로젝트 목록 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `하나의 프로젝트는 다음과 같이 카드 뷰 형태로 표시되며, 프로젝트의 주요 지표, 기본 정보 등으로 구성되어 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "mobile/mobile-app-project-card.png",
         desc: "프로젝트 카드",
@@ -832,7 +832,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `프로젝트의 가장 아래에는 상품 종류, 상품 이름, 리전, 프로젝트 코드, 구독 형태 등의 정보를 표시합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "대시보드-살펴보기"
+        "id": "d1b4ddc71ea6512bd94aa87d10e3a78c"
     }, `대시보드 살펴보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `프로젝트 목록에서 각 프로젝트의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "detail",
         className: "uitext",
@@ -1052,7 +1052,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), ": 조회 시간 동안 발생한 에러 메시지 건수와 각 에러 메시지별 오류 수의 합계 중 상위 N개를 표시합니다."))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "프로젝트별-알림-확인하기"
+        "id": "00eb10b0be6fe8104785a99aaf653277"
     }, `프로젝트별 알림 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `개별 프로젝트에서 설정한 이벤트로 전송된 알림 목록을 확인할 수 있습니다. 화면 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "alert",
         className: "uitext",
@@ -1063,7 +1063,7 @@ function MDXContent(_param) {
         className: "mobile",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "프로젝트-설정-확인하기"
+        "id": "9e3bd2f2a70fbeb5297ff52d8455b2f0"
     }, `프로젝트 설정 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `개별 프로젝트의 상세 정보와 알림 설정, 사용자 정보 등을 확인할 수 있습니다. 화면 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "setting",
         className: "uitext",
@@ -1120,7 +1120,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Appname"
     }), ": 프로젝트에 소속된 전체 사용자 정보를 확인할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "통합-알림"
+        "id": "6df98f20941be17b6e955a6c0e1153d3"
     }, `통합 알림`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모든 프로젝트의 알림을 확인하려면 모바일 앱 초기 화면에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "alerts",
         className: "uitext",
@@ -1143,7 +1143,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
     }, `최대 7일 동안의 알림 내역을 조회할 수 있습니다. 향후 업데이트를 통해 조회 범위를 확대할 예정입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "계정-설정"
+        "id": "3518ccd39bba16e461d64bf75f209f92"
     }, `계정 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모바일 앱 초기 화면에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "account",
         className: "uitext",
@@ -1170,13 +1170,13 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `OTP 인증 기능`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "앱-기본-언어-변경하기"
+        "id": "4b442da576063963cf8afe1cb3b2d5fe"
     }, `앱 기본 언어 변경하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모바일 앱의 기본 언어를 변경하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "lang",
         className: "uitext",
         mdxType: "Appname"
     }), ` 항목에서 선호하는 언어를 탭하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "기본-조직-설정하기"
+        "id": "5519c33fac468559f5137171d8ee9677"
     }, `기본 조직 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "projects",
         className: "uitext",
@@ -1186,7 +1186,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Appname"
     }), " 항목에서 선호하는 조직을 선택하세요.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "알림-수신-설정하기"
+        "id": "3b0ae19db04b5962b295cd2511398344"
     }, `알림 수신 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `모바일 앱을 통해 알림을 수신하거나 수신 설정을 해제할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Appname, {
         sid: "setup_alarm",
         className: "uitext",
