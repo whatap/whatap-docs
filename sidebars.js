@@ -5261,9 +5261,10 @@ const sidebars = {
           type: 'category',
           label: '관리하기',
           collapsible: true,
-          collapsed: true,
+          collapsed: true, 
           items: [
             'kubernetes/namespace',
+            'kubernetes/correlations',
             'kubernetes/agent-manage',
             'kubernetes/agent-update',
           ],
