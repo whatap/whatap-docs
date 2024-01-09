@@ -362,8 +362,8 @@ const metadata = {
     },
     "sidebar": "kubeSidebar",
     "previous": {
-        "title": "네임스페이스 관리",
-        "permalink": "/whatap-docs/kubernetes/namespace"
+        "title": "연계 프로젝트 관리",
+        "permalink": "/whatap-docs/kubernetes/correlations"
     },
     "next": {
         "title": "에이전트 업데이트",

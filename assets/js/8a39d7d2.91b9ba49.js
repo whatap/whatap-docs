@@ -354,8 +354,8 @@ const metadata = {
         "permalink": "/whatap-docs/kubernetes/set-agent"
     },
     "next": {
-        "title": "쿠버네티스 에이전트",
-        "permalink": "/whatap-docs/kubernetes/agent-manage"
+        "title": "연계 프로젝트 관리",
+        "permalink": "/whatap-docs/kubernetes/correlations"
     }
 };
 const assets = {};
