@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[50528],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[38667],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 72190:
+/***/ 83294:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '애플리케이션 대시보드',
     description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
     tags: [
-        'Node.js',
+        'Java',
         '대시보드',
         '애플리케이션',
         '애플리케이션 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "nodejs/dashboard",
-    "id": "nodejs/dashboard",
+    "unversionedId": "java/dashboard",
+    "id": "java/dashboard",
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-    "source": "@site/docs/nodejs/dashboard.mdx",
-    "sourceDirName": "nodejs",
-    "slug": "/nodejs/dashboard",
-    "permalink": "/whatap-docs/nodejs/dashboard",
+    "source": "@site/docs/java/dashboard.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/dashboard",
+    "permalink": "/whatap-docs/java/dashboard",
     "draft": false,
-    "editUrl": "undefined/docs/nodejs/dashboard.mdx",
+    "editUrl": "undefined/docs/java/dashboard.mdx",
     "tags": [
         {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
+            "label": "Java",
+            "permalink": "/whatap-docs/tags/java"
         },
         {
             "label": "대시보드",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "애플리케이션 대시보드",
         "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
         "tags": [
-            "Node.js",
+            "Java",
             "대시보드",
             "애플리케이션",
             "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "nodejsSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
         "title": "대시보드",
-        "permalink": "/whatap-docs/nodejs/dashboard-intro"
+        "permalink": "/whatap-docs/java/dashboard-intro"
     },
     "next": {
         "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/nodejs/dashboard-hitmap-trace"
+        "permalink": "/whatap-docs/java/dashboard-hitmap-trace"
     }
 };
 const assets = {};
@@ -832,7 +832,7 @@ function MDXContent(_param) {
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `에이전트 선택 사항을 같이 저장하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `에이전트 선택 내역을 같이 저장하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "ITM07345",
         className: "uitext",
         mdxType: "Cmdname"

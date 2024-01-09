@@ -372,7 +372,7 @@ const toc = [
     },
     {
         value: '프로젝트 관리',
-        id: '프로젝트-관리',
+        id: 'management',
         level: 2
     },
     {
@@ -550,7 +550,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), `을 필수로 설정해야 합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "프로젝트-관리"
+        "id": "management"
     }, `프로젝트 관리`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
