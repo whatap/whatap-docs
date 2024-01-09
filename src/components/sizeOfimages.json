@@ -59,6 +59,18 @@
     "width": 1187,
     "height": 526
   },
+  "account-set-notification-en.png": {
+    "width": 877,
+    "height": 299
+  },
+  "account-set-notification-ja.png": {
+    "width": 820,
+    "height": 299
+  },
+  "account-set-notification.png": {
+    "width": 800,
+    "height": 299
+  },
   "act_tx.png": {
     "width": 876,
     "height": 489
@@ -793,15 +805,15 @@
   },
   "apm-dashboard-preset-save-en.png": {
     "width": 600,
-    "height": 267
+    "height": 206
   },
   "apm-dashboard-preset-save-ja.png": {
     "width": 600,
-    "height": 251
+    "height": 197
   },
   "apm-dashboard-preset-save.png": {
     "width": 600,
-    "height": 277
+    "height": 234
   },
   "apm-dashboard-realtime-user-en.png": {
     "width": 600,
@@ -9212,16 +9224,16 @@
     "height": 46
   },
   "project-01-en.png": {
-    "width": 3034,
-    "height": 1864
+    "width": 1200,
+    "height": 789
   },
   "project-01-ja.png": {
-    "width": 3034,
-    "height": 1892
+    "width": 1200,
+    "height": 789
   },
   "project-01.png": {
-    "width": 3034,
-    "height": 1820
+    "width": 1200,
+    "height": 789
   },
   "project-add-group-en.png": {
     "width": 600,
@@ -9482,6 +9494,10 @@
   "release-k8s-container-block.png": {
     "width": 1200,
     "height": 1302
+  },
+  "release-log-level-color.png": {
+    "width": 1206,
+    "height": 388
   },
   "release-multi-tx-chartview.png": {
     "width": 826,
@@ -10661,15 +10677,15 @@
   },
   "set-event-db-en.png": {
     "width": 1200,
-    "height": 621
+    "height": 492
   },
   "set-event-db-ja.png": {
     "width": 1200,
-    "height": 623
+    "height": 492
   },
   "set-event-db.png": {
     "width": 1200,
-    "height": 623
+    "height": 492
   },
   "set-event-filtering-en.png": {
     "width": 800,
@@ -10894,6 +10910,26 @@
   "sql-parameter-query.png": {
     "width": 1200,
     "height": 485
+  },
+  "whale-none-crisp-chat-icon.png": {
+    "width": 600,
+    "height": 370
+  },
+  "whale-prevent-trace-01.png": {
+    "width": 400,
+    "height": 293
+  },
+  "whale-prevent-trace-02.png": {
+    "width": 400,
+    "height": 155
+  },
+  "whale-prevent-trace-03.png": {
+    "width": 400,
+    "height": 295
+  },
+  "whale-visible-crisp-chat-icon.png": {
+    "width": 600,
+    "height": 368
   },
   "tax_invoice_1-en.png": {
     "width": 1200,
@@ -11143,6 +11179,10 @@
     "width": 960,
     "height": 315
   },
+  "main-project-free-trial.png": {
+    "width": 400,
+    "height": 60
+  },
   "main-project-list-card-view.png": {
     "width": 1200,
     "height": 471
@@ -11154,6 +11194,26 @@
   "main-project-set-favorite.png": {
     "width": 400,
     "height": 145
+  },
+  "main-ui-adjust-sidebar.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "main-ui-profile-menu.png": {
+    "width": 200,
+    "height": 295
+  },
+  "main-ui-project-card.png": {
+    "width": 416,
+    "height": 381
+  },
+  "main-ui-search-by-group.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "main-ui-setting-by-org.png": {
+    "width": 400,
+    "height": 101
   },
   "main-ui-ver2.png": {
     "width": 1200,
