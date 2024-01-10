@@ -8,7 +8,7 @@ export default function InDoc ({children, product}) {
     const location = useLocation();
     
     const prods = Array.isArray(product) ? product : product.split(',');
-    const cProd = currentLocale === "ko" ? location.pathname.split("/")[1] : location.pathname.split("/")[2]
+    const cProd = currentLocale === "ko" ? location.pathname.split("/")[2] : location.pathname.split("/")[3]
     const isProduct = prods.includes(cProd);
 
     return isProduct ? <MDXContents>{children}</MDXContents> : null;
