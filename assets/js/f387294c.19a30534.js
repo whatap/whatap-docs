@@ -350,8 +350,8 @@ const metadata = {
     },
     "sidebar": "npmsidebar",
     "previous": {
-        "title": "에이전트 설치",
-        "permalink": "/whatap-docs/npm/install-agent"
+        "title": "AWS 리소스 정보 수집 옵션",
+        "permalink": "/whatap-docs/npm/set-aws-resource-options"
     },
     "next": {
         "title": "네트워크 토폴로지",
