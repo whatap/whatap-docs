@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[86786],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[26023],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 5879:
+/***/ 19703:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -319,16 +319,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "postgresql-v1/database-size",
-    "id": "postgresql-v1/database-size",
+    "unversionedId": "postgresql/database-size",
+    "id": "postgresql/database-size",
     "title": "데이터베이스 사이즈",
     "description": "데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
-    "source": "@site/docs/postgresql-v1/database-size.mdx",
-    "sourceDirName": "postgresql-v1",
-    "slug": "/postgresql-v1/database-size",
-    "permalink": "/whatap-docs/postgresql-v1/database-size",
+    "source": "@site/docs/postgresql/database-size.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/database-size",
+    "permalink": "/whatap-docs/postgresql/database-size",
     "draft": false,
-    "editUrl": "undefined/docs/postgresql-v1/database-size.mdx",
+    "editUrl": "undefined/docs/postgresql/database-size.mdx",
     "tags": [
         {
             "label": "PostgeSQL",
@@ -354,14 +354,14 @@ const metadata = {
             "데이터베이스 사이즈"
         ]
     },
-    "sidebar": "postgrev1Sidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
-        "title": "SQL 통계",
-        "permalink": "/whatap-docs/postgresql-v1/stat"
+        "title": "PG SQL 통계",
+        "permalink": "/whatap-docs/postgresql/pg-sql-stat"
     },
     "next": {
         "title": "보고서",
-        "permalink": "/whatap-docs/postgresql-v1/report-intro"
+        "permalink": "/whatap-docs/postgresql/report-intro"
     }
 };
 const assets = {};
@@ -595,7 +595,14 @@ grant usage on schema {schema_name} to whatap;
         img: "db-database-size-objectdetail-postgresql.png",
         desc: "Object detail",
         mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `이 기능은 DBX 에이전트 1.6.15 버전 이상에서 지원합니다. 데이터베이스 권한과 관련한 설정은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "install-agent#uid"
+    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "조회-데이터-다운로드하기"
     }, `조회 데이터 다운로드하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `조회한 데이터를 CSV 형식의 파일로 다운로드할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "다운로드 아이콘",

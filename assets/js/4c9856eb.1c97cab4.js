@@ -1298,6 +1298,9 @@ grant execute on function pg_get_backend_memory_contexts to whatap;
 
 # 테이블 사이즈 수집 시
 grant usage on schema {schema_name} to whatap;
+
+# 테이블 레이아웃 조회 시
+GRANT SELECT ON ALL TABLES IN SCHEMA {schemaname} TO whatap;
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "create-db-user"
     }, `DB 유저 파일 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_db_create_db_user_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
