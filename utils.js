@@ -238,6 +238,12 @@ function colsToJson(data){
     "ko": "오브젝트 매니페스트"
   }
 
+  rd["ssoIntegrations"] = {
+    "en": "SSO Integrations",
+    "ja": "SSO連動",
+    "ko": "SSO 연동"
+  }
+
   return rd;
 }
 

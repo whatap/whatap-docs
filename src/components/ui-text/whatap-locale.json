@@ -14843,7 +14843,7 @@
     "service_id": "TTL02187"
   },
   "event_apm_cpu": {
-    "en": "Active transaction",
+    "en": "Server CPU",
     "ja": "サーバーCPU",
     "ko": "서버 CPU",
     "zh": "中央处理器",
@@ -51381,8 +51381,8 @@
   },
   "TLT07458": {
     "en": "5-second trending data is only available within the last month.",
-    "ja": "5秒単位の推移データは<br />最近1ヶ月の範囲内でのみ照会できます。",
-    "ko": "5초 단위 추이 데이터는<br />최근 한 달 범위 내에서만 조회 가능합니다.",
+    "ja": "5秒単位の推移データは{br}最近1ヶ月の範囲内でのみ照会できます。",
+    "ko": "5초 단위 추이 데이터는{br}최근 한 달 범위 내에서만 조회 가능합니다.",
     "zh": "5-second trending data is only available within the last month.",
     "service_id": "TLT07458"
   },
@@ -51513,7 +51513,7 @@
     "service_id": "BTN07476"
   },
   "DSC07477": {
-    "en": "Do you want to be issued an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
+    "en": "Do you want an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
     "ja": "追加でSSOキーを発行しますか？<br />新しく発行された鍵の情報に内容が変更されます。<br />発行された鍵は[SSO情報の確認]で確認できます。",
     "ko": "SSO 키를 추가 발급받겠습니까?<br />새로 발급받는 키의 정보로 내용이 변경됩니다.<br />발급 받은 키는 [SSO 정보 확인]에서 조회할 수 있습니다",
     "zh": "Do you want to be issued an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
@@ -51527,28 +51527,28 @@
     "service_id": "TTL07478"
   },
   "DSC07479": {
-    "en": "The SSO key you've been issued is important information for integration with WhaTap, so make sure to check it correctly.",
+    "en": "The SSO key contains important information to integrate with WhaTap, so pleaes check thoroughly.",
     "ja": "発行されたSSOキーは、WhaTapと統合するための重要な情報ですので、正しく確認してください。",
     "ko": "발급받은 SSO 키는 와탭의 연동에 필요한 중요한 정보이므로 정확히 확인하세요.",
     "zh": "The SSO key you've been issued is important information for integration with WhaTap, so make sure to check it correctly.",
     "service_id": "DSC07479"
   },
   "TTL07480": {
-    "en": "Issue Date",
+    "en": "Issued date",
     "ja": "発行日",
     "ko": "발급 일시",
     "zh": "Issue Date",
     "service_id": "TTL07480"
   },
   "BTN07481": {
-    "en": "Delete SSO key",
+    "en": "Delete SSO Key",
     "ja": "SSOキーの削除",
     "ko": "SSO 키 삭제",
     "zh": "Delete SSO key",
     "service_id": "BTN07481"
   },
   "DSC07482": {
-    "en": "The selected SSO key and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
+    "en": "All selected SSO keys and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
     "ja": "選択したSSOキーと認証情報は削除されます。<br />本当にSSOキー({keyName})を削除しますか？",
     "ko": "선택한 SSO 키와 인증 정보는 모두 삭제됩니다.<br />SSO 키({keyName})를 삭제하겠습니까?",
     "zh": "The selected SSO key and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
@@ -51785,6 +51785,13 @@
     "zh": "View guide",
     "service_id": "BTN07515"
   },
+  "NTC07516": {
+    "en": "*SSO keys can be issued up to {max}. {current}/{max}",
+    "ja": "*SSOキーは最大{max}個まで発行できます。{current}/{max}",
+    "ko": "*SSO 키는 최대 {max}개까지 발급할 수 있습니다. {current}/{max}",
+    "zh": "*SSO keys can be issued up to {max}. {current}/{max}",
+    "service_id": "NTC07516"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -51945,5 +51952,10 @@
     "en": "Object Manifest Information",
     "ja": "Object Manifest情報",
     "ko": "오브젝트 매니페스트"
+  },
+  "ssoIntegrations": {
+    "en": "SSO Integrations",
+    "ja": "SSO連動",
+    "ko": "SSO 연동"
   }
 }
