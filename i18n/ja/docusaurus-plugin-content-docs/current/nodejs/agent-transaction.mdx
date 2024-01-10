@@ -71,6 +71,28 @@ tags:
 
     トランザクション名にポート番号を追加します。
 
+-   **httpc_status_ignore** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    無視する`HTTPC_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+    ```ini title='whatap.conf'
+    httpc_status_ignore=404,500
+    ```
+
+-   **httpc_status_ignore_set** <span class='type'>String</span>
+
+    デフォルト値`Empty`
+
+    `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+    :::note
+
+    `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+
+    :::
+
 ### HTTPトランザクションの追跡
 
 {@include: ../common-items/_transaction-trace-common.mdx} 

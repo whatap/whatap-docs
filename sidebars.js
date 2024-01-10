@@ -3040,9 +3040,15 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              label: 'v1.0.5 (56)',
+              id: 'release-notes/mobile/mobile-app-v1_0_5',
+              className: 'new',
+            },
+            {
+              type: 'doc',
               label: 'v1.0.4 (53)',
               id: 'release-notes/mobile/mobile-app-v1_0_4',
-              className: 'new',
+              // className: 'new',
             },
             {
               type: 'doc',
@@ -3062,7 +3068,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_25',
@@ -3071,7 +3077,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_25',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_24',
                 'release-notes/java/java-2_2_23',

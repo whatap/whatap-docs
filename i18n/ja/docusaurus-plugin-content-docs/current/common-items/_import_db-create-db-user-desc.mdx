@@ -1,3 +1,15 @@
 データベース接続用に暗号化されたUIDを作成します。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行してください。 
 
+<Xclude product='redis'>
+
 <p><em>uid.sh</em>シェルスクリプトファイル(または<em>uid.bat</em>バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userなしでパスワードのみある場合は、<code>DB_USER</code>を<code>{props.name}</code>として設定します。</p>
+
+</Xclude>
+
+<InDoc product='redis'>
+
+-   **Redis 6バージョン以下**: <em>uid.sh</em>シェルスクリプトファイル(または<em>uid.bat</em>バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userなしでパスワードのみある場合は、<code>DB_USER</code>を<code>""</code>に設定します。
+
+-   **Redis 6バージョン以降**: <em>uid.sh</em>シェルスクリプトファイル(または<em>uid.bat</em>バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userなしでパスワードのみある場合は、<code>DB_USER</code>を<code>default</code>に設定します。
+
+</InDoc>

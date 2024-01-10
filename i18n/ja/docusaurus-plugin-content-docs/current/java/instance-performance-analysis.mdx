@@ -9,3 +9,56 @@ tags:
 ---
 
 {@include: ../common-items/_instance-performance-analysis.mdx} 
+
+## スレッドダンプ分析 {#thread-details}
+
+<Cmdname sid="thread_list" className="uitext" />タブで確認できる情報について案内します。
+
+### スレッド状態 {#stateofthread}
+
+スレッドの状態は、`java.lang.Thread`クラス内に`State`という名前のEnumerated Types(列挙型)と宣言された項目です。
+
+-   `NEW`：スレッドは作成されましたが、まだ実行されていません。
+
+-   `RUNNABLE`：現在CPUを占有し、作業を行っている状態です。 オペレーティングシステムのリソース分配により`WAITING`状態になる可能性があります。
+
+-   `WAITING`：`wait()`、`join()`、`park()`メソッドなどを利用して待機している状態です。
+
+-   `TIMED_WAITING`：`sleep()`、`wait()`、`join()`、`park()`メソッド等を用いて待機している状態、`WAITING`状態と異なる点は、与えられた時間に待機している状態です。 外部的な変化だけでなく、時間によっても待機状態が解除されることがあります。
+
+-   `BLOCKED`：使用しようとする個体のロック(Lock)が解除されるまで待機している状態です。
+
+-   `TERMINATED`：実行済みの状態です。
+
+### スレッドダンプ情報
+
+スレッド一覧で各スレッドの<LinkImage img="ico-expander-black.svg" className="ico black" />ボタンをクリックすると、スレッドダンプ情報を確認できます。
+
+<ImgLang img='ipa-java-thread-list.png' desc='스레드 덤프 정보' />
+
+#### <Cmdname sid="stack" />
+
+| 項目                                                    | プロパティ            | 説明                                                           |
+| ----------------------------------------------------- | ---------------- | ------------------------------------------------------------ |
+| <Cmdname sid="thread_id" className="uitext" />        | `threadId`       | スレッドに割り当てられた固有ID                                             |
+| <Cmdname sid="lock_owner_id" className="uitext" />    | `lockOwnerId`    | スレッドがブロックされたオブジェクト(Monitor) のモニタのロックを維持するスレッドID              |
+| <Cmdname sid="waited_count" className="uitext" />     | `waitedCount`    | スレッドが`WAITING`または`TIMED_WAITING`状態になった総回数                    |
+| <Cmdname sid="blocked_count" className="uitext" />    | `blockedCount`   | スレッドが`BLOCKED`状態になった総回数                                      |
+| <Cmdname sid="waited_time" className="uitext" />      | `waitedTime`     | スレッドが`WAITING`状態を継続した経過時間(ミリ秒)、スレッド競合モニタリングが非活性化された場合`-1`を返還 |
+| <Cmdname sid="thread_cpu_time" className="uitext" />  | `threadCpuTime`  | スレッドのCPU時間合計(ナノ秒)をミリ秒で計算して表示、CPU時間測定を非活性化した場合`-1`を返還         |
+| <Cmdname sid="status" className="uitext" />           | `threadstate`    | スレッド状態                                                       |
+| <Cmdname sid="blocked_time" className="uitext" />     | `blockedTime`    | スレッドが`BLOCKED`状態になってからの経過時間(ミリ秒)、スレッド競合監視が非活性化された場合`-1`を返還   |
+| <Cmdname sid="thread_name" className="uitext" />      | `threadName`     | スレッドの固有名                                                     |
+| <Cmdname sid="lock_name" className="uitext" />        | `lockName`       | スレッドの入力がブロックされたり`Object.wait`メソッドを介して通知を待つモニターロックを表示した文字列    |
+| <Cmdname sid="lock_owner_name" className="uitext" />  | `lockOwnerName`  | スレッドがブロックされるオブジェクトのモニターロックを受け入れるスレッド名                        |
+| <Cmdname sid="thread_user_time" className="uitext" /> | `threadUserTime` | スレッドがユーザモードで実行したCPU時間(ナノ秒)をミリ秒で計算して表示                        |
+
+:::note
+
+スレッド情報の詳細については[次のリンク](https://docs.oracle.com/javase/8/docs/api/java/lang/management/ThreadInfo.html)を参考にしてください。
+
+:::
+
+#### <Cmdname sid="stack_trace" />
+
+例外が発生したときスタック(Stack) 追跡を表示します。 スタックフレーム一覧には、コードが呼び出したメソッド情報が含まれています。

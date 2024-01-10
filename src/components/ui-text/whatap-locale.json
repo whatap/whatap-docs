@@ -2101,14 +2101,14 @@
   },
   "1_month": {
     "en": "1 month",
-    "ja": "1月",
+    "ja": "1ヶ月",
     "ko": "한 달",
     "zh": "1月",
     "service_id": "CNT00320"
   },
   "2_month": {
     "en": "2 months",
-    "ja": "2月",
+    "ja": "2ヶ月",
     "ko": "두 달",
     "zh": "2月",
     "service_id": "CNT00321"
@@ -2199,7 +2199,7 @@
   },
   "24_hour": {
     "en": "24 hours",
-    "ja": "24 Hours",
+    "ja": "24時間",
     "ko": "24시간",
     "zh": "24 Hours",
     "service_id": "_00335"
@@ -9113,14 +9113,14 @@
     "service_id": "_01356"
   },
   "sms_mysql_list": {
-    "en": "MySQL Instances",
+    "en": "MySQL instances",
     "ja": "MySQLインスタンス",
     "ko": "MySQL 서버 목록",
     "zh": "MySQL Instances",
     "service_id": "_01357"
   },
   "sms_mysql_summary": {
-    "en": "MySQL Summary",
+    "en": "MySQL summary",
     "ja": "MySQL性能詳細",
     "ko": "MySQL 성능 상세",
     "zh": "MySQL Summary",
@@ -31598,10 +31598,10 @@
     "service_id": "CNT04590"
   },
   "project_menu": {
-    "en": "Project menu",
-    "ja": "プロジェクトメニュー",
-    "ko": "프로젝트 메뉴",
-    "zh": "Project Menu",
+    "en": "Go to the project menu",
+    "ja": "プロジェクトメニューに移動する",
+    "ko": "프로젝트 메뉴로 이동하기",
+    "zh": "Go to the project menu",
     "service_id": "TTL04591"
   },
   "edit_member_role": {
@@ -42035,10 +42035,10 @@
     "service_id": "TTL06093"
   },
   "TTL06094": {
-    "en": "SQL patches count",
-    "ja": "SQLパッチ件数",
+    "en": "SQL fetch count",
+    "ja": "SQLフェッチ数",
     "ko": "SQL 패치 건수",
-    "zh": "SQL Patches Count",
+    "zh": "SQL提取计数",
     "service_id": "TTL06094"
   },
   "TTL06095": {
@@ -46508,7 +46508,7 @@
     "service_id": "TTL06753"
   },
   "CNT06754": {
-    "en": "Grouped and color-balanced record information under transactions, table views, tree views, and even TXT and SQL data that can be downloaded and analyzed in a local environment according to their nature and purpose. Improved data readability.",
+    "en": "Record information, table views, tree views, TXT and even SQL data under transactions can be downloaded and analyzed in a local environment. And also, they are grouped and color-balanced according to their nature and purpose to improve data readability. ",
     "ja": "データの種類と用途に合わせたグループ化とカラーハイライトで、データの可読性を向上しました。例えば、トランザクション下位のレコード情報、テーブルビュー、ツリービュー、およびダウンロードしたTXT、SQLデータ等が対象です。",
     "ko": "트랜잭션 하위의 레코드 정보, 테이블 뷰, 트리 뷰 및 다운로드 후 로컬 환경에서 분석할 수 있는 TXT, SQL 데이터까지 성격과 목적성에 따라 그룹핑 및 컬러 밸런싱을 진행, 데이터 가독성을\n높였습니다.",
     "zh": "Grouped and color-balanced record information under transactions, table views, tree views, and even TXT and SQL data that can be downloaded and analyzed in a local environment according to their nature and purpose. Improved data readability.",
@@ -51332,7 +51332,7 @@
   },
   "TTL07451": {
     "en": "Number of objects",
-    "ja": "オブジェクト数",
+    "ja": "Objecct数",
     "ko": "오브젝트 개수",
     "zh": "Number of Objects",
     "service_id": "TTL07451"
@@ -51387,14 +51387,14 @@
     "service_id": "TLT07458"
   },
   "TTL07459": {
-    "en": "Monthly usage K8s-Container",
+    "en": "K8s-Container monthly usage ",
     "ja": "月間使用のK8sコンテナ",
     "ko": "월간 사용 K8s-Container",
     "zh": "Monthly usage K8s-Container",
     "service_id": "TTL07459"
   },
   "TTL07460": {
-    "en": "K8s Pod event",
+    "en": "K8s Pod events",
     "ja": "K8s Podイベント",
     "ko": "K8s Pod 이벤트",
     "zh": "K8s Pod Event",
@@ -51408,7 +51408,7 @@
     "service_id": "TTL07461"
   },
   "TTL07462": {
-    "en": "WhaTap Pod event",
+    "en": "WhaTap Pod events",
     "ja": "WhaTap Podイベント",
     "ko": "WhaTap Pod 이벤트",
     "zh": "WhaTap Pod Event",
@@ -51420,6 +51420,370 @@
     "ko": "프로젝트를삭제하시겠습니까?",
     "zh": "Do you want to delete the project?\n",
     "service_id": "TTL07463"
+  },
+  "DSC07464": {
+    "en": "Supported types: {types}",
+    "ja": "サポートタイプ：{types}",
+    "ko": "지원 타입: {types}",
+    "zh": "Supported types: {types}",
+    "service_id": "DSC07464"
+  },
+  "DSC07465": {
+    "en": "View data for {minutes} minutes based on the last hour of the selected time.",
+    "ja": "選択した最後の時刻に基づいて{minutes}分のデータを照会します。",
+    "ko": "선택한 시간의 마지막 시간을 기준으로 {minutes}분 간의 데이터를 조회합니다.",
+    "zh": "View data for {minutes} minutes based on the last hour of the selected time.",
+    "service_id": "DSC07465"
+  },
+  "TLT07466": {
+    "en": "View correlated server key indicators",
+    "ja": "相関するサーバーの主要な指標を表示する",
+    "ko": "연계 서버 주요 지표 보기",
+    "zh": "View correlated server key indicators",
+    "service_id": "TLT07466"
+  },
+  "TLT07467": {
+    "en": "View correlated DB key indicators",
+    "ja": "相関のある DB 主要指標を表示する",
+    "ko": "연계 DB 주요 지표 보기",
+    "zh": "View correlated DB key indicators",
+    "service_id": "TLT07467"
+  },
+  "DSC07468": {
+    "en": "There are no correlated projects that match the search conditions or can be viewed.",
+    "ja": "検索条件に一致する、または参照できる相関プロジェクトがありません。",
+    "ko": "검색 조건과 일치하거나, 조회할 수 있는 연계 프로젝트가 없습니다.",
+    "zh": "There are no correlated projects that match the search conditions or can be viewed.",
+    "service_id": "DSC07468"
+  },
+  "BTN07469": {
+    "en": "Expand All",
+    "ja": "全てを展開",
+    "ko": "전체 펼침",
+    "zh": "Expand All",
+    "service_id": "BTN07469"
+  },
+  "BTN07470": {
+    "en": "Collapse All",
+    "ja": "フルフォールド",
+    "ko": "전체 접음",
+    "zh": "Collapse all",
+    "service_id": "BTN07470"
+  },
+  "TLT07471": {
+    "en": "Search Group/Project name",
+    "ja": "グループ/プロジェクト名検索",
+    "ko": "그룹 / 프로젝트 명 검색",
+    "zh": "Search for Group/Project name",
+    "service_id": "TLT07471"
+  },
+  "DSC07472": {
+    "en": "WhaTap's Single Sign On (SSO) service allows you to easily create and register keys and credentials from the management console.<br/>You can be issued up to 5 keys, each with its own credential value.",
+    "ja": "WhaTapのシングルサインオン(SSO)サービスでは、管理コンソールからキーとクレデンシャルを簡単に作成・登録することができます。<br />最大5つのキーを発行することができ、それぞれにクレデンシャル値が設定されています。",
+    "ko": "와탭의 Single Sign On(SSO) 서비스는 관리 콘솔에서 키와 인증 정보를 간단히 생성, 등록할 수 있습니다.<br/>키는 5개까지 발급받을 수 있으며 각각 고유의 인증 정보 값을 가지고 있습니다.",
+    "zh": "WhaTap's Single Sign On (SSO) service allows you to easily create and register keys and credentials from the management console.<br/>You can be issued up to 5 keys, each with its own credential value.",
+    "service_id": "DSC07472"
+  },
+  "BTN07473": {
+    "en": "Issue SSO Key",
+    "ja": "SSOキーの発行",
+    "ko": "SSO 키 발급",
+    "zh": "Issue SSO key",
+    "service_id": "BTN07473"
+  },
+  "DSC07474": {
+    "en": "Get an SSO key to use the WhaTap SSO service.",
+    "ja": "WhaTap SSOサービスを使用するためのSSOキーを取得します。",
+    "ko": "와탭 SSO 서비스를 사용하려면 SSO 키를 발급받으세요.",
+    "zh": "Get an SSO key to use the WhaTap SSO service.",
+    "service_id": "DSC07474"
+  },
+  "TLT07475": {
+    "en": "Enter a key name.",
+    "ja": "キー名を入力します。",
+    "ko": "Key Name을 입력하세요.",
+    "zh": "Enter a Key Name.",
+    "service_id": "TLT07475"
+  },
+  "BTN07476": {
+    "en": "Issue additional SSO key",
+    "ja": "SSOキーの追加発行",
+    "ko": "SSO 키 추가 발급",
+    "zh": "Issue additional SSO key",
+    "service_id": "BTN07476"
+  },
+  "DSC07477": {
+    "en": "Do you want to be issued an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
+    "ja": "追加でSSOキーを発行しますか？<br />新しく発行された鍵の情報に内容が変更されます。<br />発行された鍵は[SSO情報の確認]で確認できます。",
+    "ko": "SSO 키를 추가 발급받겠습니까?<br />새로 발급받는 키의 정보로 내용이 변경됩니다.<br />발급 받은 키는 [SSO 정보 확인]에서 조회할 수 있습니다",
+    "zh": "Do you want to be issued an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
+    "service_id": "DSC07477"
+  },
+  "TTL07478": {
+    "en": "Check SSO information",
+    "ja": "SSO情報の確認",
+    "ko": "SSO 정보 확인",
+    "zh": "Check SSO information",
+    "service_id": "TTL07478"
+  },
+  "DSC07479": {
+    "en": "The SSO key you've been issued is important information for integration with WhaTap, so make sure to check it correctly.",
+    "ja": "発行されたSSOキーは、WhaTapと統合するための重要な情報ですので、正しく確認してください。",
+    "ko": "발급받은 SSO 키는 와탭의 연동에 필요한 중요한 정보이므로 정확히 확인하세요.",
+    "zh": "The SSO key you've been issued is important information for integration with WhaTap, so make sure to check it correctly.",
+    "service_id": "DSC07479"
+  },
+  "TTL07480": {
+    "en": "Issue Date",
+    "ja": "発行日",
+    "ko": "발급 일시",
+    "zh": "Issue Date",
+    "service_id": "TTL07480"
+  },
+  "BTN07481": {
+    "en": "Delete SSO key",
+    "ja": "SSOキーの削除",
+    "ko": "SSO 키 삭제",
+    "zh": "Delete SSO key",
+    "service_id": "BTN07481"
+  },
+  "DSC07482": {
+    "en": "The selected SSO key and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
+    "ja": "選択したSSOキーと認証情報は削除されます。<br />本当にSSOキー({keyName})を削除しますか？",
+    "ko": "선택한 SSO 키와 인증 정보는 모두 삭제됩니다.<br />SSO 키({keyName})를 삭제하겠습니까?",
+    "zh": "The selected SSO key and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
+    "service_id": "DSC07482"
+  },
+  "DSC07483": {
+    "en": "No key has been issued. Get a key from [Issue SSO key].",
+    "ja": "キーが発行されていません。[SSOキーの発行]からキーを取得してください。",
+    "ko": "발급받은 키가 없습니다. [SSO 키 발급]에서 키를 발급받으세요.",
+    "zh": "No key has been issued. Get a key from [Issue SSO key].",
+    "service_id": "DSC07483"
+  },
+  "TTL07484": {
+    "en": "Credentials",
+    "ja": "認証情報",
+    "ko": "인증 정보",
+    "zh": "Credentials",
+    "service_id": "TTL07484"
+  },
+  "DSC07485": {
+    "en": "Set up your Identity Provider(IdP) credentials by registering the metadata issued by Okta.",
+    "ja": "Oktaが発行したメタデータを登録することで、Identity Provider(IdP)の認証情報を設定します。",
+    "ko": "Okta에서 발급 받은 Metadata를 등록해 Identity Provider(IdP) 인증 정보를 설정하세요.",
+    "zh": "Set up your Identity Provider(IdP) credentials by registering the metadata issued by Okta.",
+    "service_id": "DSC07485"
+  },
+  "TTL07486": {
+    "en": "View and manage IdP information",
+    "ja": "IdP情報の確認・管理",
+    "ko": "IdP 정보 확인 및 관리",
+    "zh": "View and manage IdP information",
+    "service_id": "TTL07486"
+  },
+  "TTL07487": {
+    "en": "Register Identity Provider information",
+    "ja": "Identity Provider情報登録",
+    "ko": "Identity Provider 정보 등록",
+    "zh": "Register Identity Provider Information",
+    "service_id": "TTL07487"
+  },
+  "DSC07488": {
+    "en": "You can view and manage the IdP information generated by the metadata you registered.",
+    "ja": "登録したメタデータから生成されるIdP情報を閲覧・管理できる。",
+    "ko": "등록한 Metadata를 통해 생성된 IdP 정보를 확인 및 관리할 수 있습니다.",
+    "zh": "You can view and manage the IdP information generated by the metadata you registered.",
+    "service_id": "DSC07488"
+  },
+  "DSC07489": {
+    "en": "Register and provide the information needed for authentication by registering metadata with WhaTap that can be verified by Okta.",
+    "ja": "Oktaが確認できるメタデータをWhaTapに登録し、認証に必要な情報を提供する。",
+    "ko": "Okta에서 확인할 수 있는 Metadata를 와탭에 등록하여 인증에 필요한 정보를 등록 및 제공합니다.",
+    "zh": "Register and provide the information needed for authentication by registering metadata with WhaTap that can be verified by Okta.",
+    "service_id": "DSC07489"
+  },
+  "BTN07490": {
+    "en": "Modify External IdP",
+    "ja": "External IdP修正/削除",
+    "ko": "External IdP 수정/삭제",
+    "zh": "Modify External IdP",
+    "service_id": "BTN07490"
+  },
+  "BTN07491": {
+    "en": "Register External IdP",
+    "ja": "External IdP登録",
+    "ko": "External IdP 등록",
+    "zh": "Register External IdP",
+    "service_id": "BTN07491"
+  },
+  "DSC07492": {
+    "en": "Please register the metadata of your External Identity Provider.",
+    "ja": "External Identity ProviderのMetadataを登録してください。",
+    "ko": "External Identity Provider의 Metadata를 등록해 주세요.",
+    "zh": "Please register the metadata of your external identity provider.",
+    "service_id": "DSC07492"
+  },
+  "DSC07493": {
+    "en": "Click the [Register Metadata] button to automatically convert it to Certificates data.",
+    "ja": "[Metadata登録]ボタンをクリックすると、Certificatesデータに自動変換されます。",
+    "ko": "[Metadata 등록] 버튼을 클릭하면 Certificates 데이터로 자동 변환됩니다.",
+    "zh": "Click the [Register Metadata] button to automatically convert it to certificates data.",
+    "service_id": "DSC07493"
+  },
+  "BTN07494": {
+    "en": "Register Metadata",
+    "ja": "Metadata登録",
+    "ko": "Metadata 등록",
+    "zh": "Register Metadata",
+    "service_id": "BTN07494"
+  },
+  "DSC07495": {
+    "en": "Paste the metadata you copied from Okta.",
+    "ja": "OktaからコピーしたMetadataを貼り付けてください。",
+    "ko": "Okta에서 복사한 Metadata를 붙여넣기하세요.",
+    "zh": "Paste the metadata you copied from Okta.",
+    "service_id": "DSC07495"
+  },
+  "TLT07496": {
+    "en": "Enter your sign-On URL.",
+    "ja": "Sign-On URLを入力してください。",
+    "ko": "Sign-On URL을 입력하세요.",
+    "zh": "Enter your sign-On URL.",
+    "service_id": "TLT07496"
+  },
+  "TLT07497": {
+    "en": "Enter the Issuer URL.",
+    "ja": "Issuer URLを入力してください。",
+    "ko": "Issuer URL을 입력하세요.",
+    "zh": "Enter the Issuer URL.",
+    "service_id": "TLT07497"
+  },
+  "TLT07498": {
+    "en": "Copy and paste the converted values in the Metadata item.",
+    "ja": "Metadata項目で変換した値をコピー、貼り付けてください。",
+    "ko": "Metadata 항목에서 변환한 값을 복사, 붙여넣기하세요.",
+    "zh": "Copy and paste the converted values in the Metadata item.",
+    "service_id": "TLT07498"
+  },
+  "NTC07499": {
+    "en": "Are you sure you want to delete<br />all the information for the External Identity Provider?",
+    "ja": "External Identity Providerに該当する<br />すべての情報を削除しますか？",
+    "ko": "External Identity Provider에 해당하는<br />모든 정보를 삭제하겠습니까?",
+    "zh": "Are you sure you want to delete<br />all the information for the External Identity Provider?",
+    "service_id": "NTC07499"
+  },
+  "TTL07500": {
+    "en": "SSO account integration",
+    "ja": "SSOアカウント連動設定",
+    "ko": "SSO 계정 연동 설정",
+    "zh": "Set up SSO account integration",
+    "service_id": "TTL07500"
+  },
+  "DSC07501": {
+    "en": "By setting up Single Sign-On (SSO), users can access all linked services with a single login.<br />You can easily manage your accounts using one ID and password. In addition, WhaTap's SSO service is safe and provides enhanced security.",
+    "ja": "Single Sign-On(SSO)を設定すると、ユーザーは一度のログインで連動されたすべてのサービスを利用することができます。<br />一つのIDとパスワードを使用して簡単にアカウントを管理することができます。 また、WhaTapのSSOサービスは安全で強化されたセキュリティを提供します。",
+    "ko": "Single Sign-On(SSO)를 설정하면 사용자는 한번의 로그인으로 연동된 모든 서비스를 이용할 수 있습니다.<br />하나의 아이디와 비밀번호를 사용해 간편하게 계정을 관리할 수 있습니다. 또한 와탭의 SSO 서비스는 안전하고 강화된 보안을 제공합니다.",
+    "zh": "By setting up Single Sign-On (SSO), users can access all linked services with a single login.<br />You can easily manage your accounts using one ID and password. In addition, WhaTap's SSO service is safe and provides enhanced security.",
+    "service_id": "DSC07501"
+  },
+  "NTC07502": {
+    "en": "Metadata has been registered.",
+    "ja": "Metadata登録に成功しました。",
+    "ko": "Metadata 등록에 성공했습니다.",
+    "zh": "Metadata registration was successful.",
+    "service_id": "NTC07502"
+  },
+  "NTC07503": {
+    "en": "Metadata registration failed.",
+    "ja": "Metadata登録に失敗しました。",
+    "ko": "Metadata 등록에 실패했습니다.",
+    "zh": "Metadata registration failed.",
+    "service_id": "NTC07503"
+  },
+  "NTC07504": {
+    "en": "SSO key has been issued.",
+    "ja": "SSOキーの発行に成功しました。",
+    "ko": "SSO 키 발급에 성공했습니다.",
+    "zh": "SSO key issuance was successful.",
+    "service_id": "NTC07504"
+  },
+  "NTC07505": {
+    "en": "Failed to issue SSO key.",
+    "ja": "SSOキーの発行に失敗しました。",
+    "ko": "SSO 키 발급에 실패했습니다.",
+    "zh": "SSO key issuance failed.",
+    "service_id": "NTC07505"
+  },
+  "NTC07506": {
+    "en": "SSO key has been deleted.",
+    "ja": "SSOキーの削除に成功しました。",
+    "ko": "SSO 키 삭제에 성공했습니다.",
+    "zh": "Deleting the SSO key was successful.",
+    "service_id": "NTC07506"
+  },
+  "NTC07507": {
+    "en": "SSO key deletion failed.",
+    "ja": "SSOキーの削除に失敗しました。",
+    "ko": "SSO 키 삭제에 실패했습니다.",
+    "zh": "SSO key deletion failed.",
+    "service_id": "NTC07507"
+  },
+  "NTC07508": {
+    "en": "External IdP has been saved.",
+    "ja": "External IdPの保存に成功しました。",
+    "ko": "External IdP 저장에 성공했습니다.",
+    "zh": "External IdP save was successful.",
+    "service_id": "NTC07508"
+  },
+  "NTC07509": {
+    "en": "External IdP save failed.",
+    "ja": "External IdPの保存に失敗しました。",
+    "ko": "External IdP 저장에 실패했습니다.",
+    "zh": "External IdP save failed.",
+    "service_id": "NTC07509"
+  },
+  "NTC07510": {
+    "en": "External IdP has been deleted.",
+    "ja": "External IdPの削除に成功しました。",
+    "ko": "External IdP 삭제에 성공했습니다.",
+    "zh": "Deleting the External IdP was successful.",
+    "service_id": "NTC07510"
+  },
+  "NTC07511": {
+    "en": "External IdP deletion failed.",
+    "ja": "External IdPの削除に失敗しました。",
+    "ko": "External IdP 삭제에 실패했습니다.",
+    "zh": "External IdP deletion failed.",
+    "service_id": "NTC07511"
+  },
+  "NTC07512": {
+    "en": "Failed to load the SSO key list.",
+    "ja": "SSOキーリストの読み込みに失敗しました。",
+    "ko": "SSO 키 목록을 불러오는데 실패했습니다.",
+    "zh": "Failed to load the SSO key list.",
+    "service_id": "NTC07512"
+  },
+  "DSC07513": {
+    "en": "Fees for using WhaTap service are {postpaid}.\nPayment details can be checked in the Billing history menu.",
+    "ja": "ワタップサービスの利用料金は{postpaid}となります。\nお支払い履歴は、請求および支払い履歴メニューで確認できます。",
+    "ko": "와탭 서비스 이용 요금은 {postpaid} 됩니다.\n결제 내역은 청구 및 납부 내역 메뉴에서 확인할 수 있습니다.",
+    "zh": "Fees for using WhaTap service are {postpaid}.\nPayment details can be checked in the Billing history menu.",
+    "service_id": "DSC07513"
+  },
+  "DSC07514": {
+    "en": "Postpaid on the 25th of each month",
+    "ja": "後払いで毎月25日決済",
+    "ko": "후불로 매월 25일 결제",
+    "zh": "Postpaid on the 25th of each month",
+    "service_id": "DSC07514"
+  },
+  "BTN07515": {
+    "en": "View Guide",
+    "ja": "ガイド表示",
+    "ko": "가이드 보기",
+    "zh": "View guide",
+    "service_id": "BTN07515"
   },
   "": {
     "": "",

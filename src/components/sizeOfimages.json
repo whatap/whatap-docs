@@ -461,15 +461,15 @@
   },
   "analysis-tx-multi-en.png": {
     "width": 800,
-    "height": 646
+    "height": 792
   },
   "analysis-tx-multi-ja.png": {
     "width": 800,
-    "height": 636
+    "height": 792
   },
   "analysis-tx-multi.png": {
     "width": 800,
-    "height": 898
+    "height": 761
   },
   "analysis-tx-record-summary-en.png": {
     "width": 800,
@@ -929,7 +929,7 @@
   },
   "apm-dashboard.png": {
     "width": 1500,
-    "height": 823
+    "height": 837
   },
   "apm-dotnet-analystic-env-01.png": {
     "width": 1200,
@@ -2035,6 +2035,18 @@
     "width": 1200,
     "height": 680
   },
+  "bill-preview-group-01-preview-en.png": {
+    "width": 1200,
+    "height": 680
+  },
+  "bill-preview-group-01-preview-ja.png": {
+    "width": 1200,
+    "height": 680
+  },
+  "bill-preview-group-01-preview.png": {
+    "width": 1200,
+    "height": 680
+  },
   "bill-preview-group-01.png": {
     "width": 1200,
     "height": 680
@@ -2185,15 +2197,15 @@
   },
   "browser-analysis-ajax-hitmap-filter-en.png": {
     "width": 600,
-    "height": 378
+    "height": 432
   },
   "browser-analysis-ajax-hitmap-filter-ja.png": {
     "width": 600,
-    "height": 380
+    "height": 432
   },
   "browser-analysis-ajax-hitmap-filter.png": {
     "width": 600,
-    "height": 379
+    "height": 428
   },
   "browser-analysis-ajax-hitmap-ja.png": {
     "width": 1200,
@@ -3052,16 +3064,76 @@
     "height": 1030
   },
   "dashboard-transaction-map-en.png": {
-    "width": 1229,
-    "height": 1035
+    "width": 1200,
+    "height": 1053
   },
   "dashboard-transaction-map-ja.png": {
-    "width": 1229,
-    "height": 1035
+    "width": 1200,
+    "height": 1053
   },
   "dashboard-transaction-map.png": {
-    "width": 1229,
-    "height": 1035
+    "width": 1200,
+    "height": 1054
+  },
+  "dashboard-txmap-filter-en.png": {
+    "width": 600,
+    "height": 419
+  },
+  "dashboard-txmap-filter-ja.png": {
+    "width": 600,
+    "height": 418
+  },
+  "dashboard-txmap-filter.png": {
+    "width": 600,
+    "height": 411
+  },
+  "dashboard-txmap-select-agent-en.png": {
+    "width": 1200,
+    "height": 226
+  },
+  "dashboard-txmap-select-agent-ja.png": {
+    "width": 1200,
+    "height": 226
+  },
+  "dashboard-txmap-select-agent.png": {
+    "width": 1200,
+    "height": 226
+  },
+  "dashboard-txmap-select-time-en.png": {
+    "width": 600,
+    "height": 460
+  },
+  "dashboard-txmap-select-time-ja.png": {
+    "width": 600,
+    "height": 440
+  },
+  "dashboard-txmap-select-time.png": {
+    "width": 600,
+    "height": 446
+  },
+  "dashboard-txmap-top30-en.png": {
+    "width": 1200,
+    "height": 578
+  },
+  "dashboard-txmap-top30-ja.png": {
+    "width": 1200,
+    "height": 578
+  },
+  "dashboard-txmap-top30.png": {
+    "width": 1200,
+    "height": 578
+  },
+  "dashboard-txmap-tx-analysis-en.png": {
+    "width": 1200,
+    "height": 1090
+  },
+  "dashboard-txmap-tx-analysis-ja.png": {
+    "width": 1200,
+    "height": 1123
+  },
+  "dashboard-txmap-tx-analysis.png": {
+    "width": 1200,
+    "height": 1090
   },
   "database-event-list.png": {
     "width": 1200,
@@ -4603,6 +4675,10 @@
     "width": 1200,
     "height": 650
   },
+  "db-sql-preview.png": {
+    "width": 800,
+    "height": 161
+  },
   "db-sql-stat-add-filter-en.png": {
     "width": 600,
     "height": 187
@@ -4785,15 +4861,15 @@
   },
   "db-update-agent-en.png": {
     "width": 1200,
-    "height": 321
+    "height": 277
   },
   "db-update-agent-ja.png": {
     "width": 1200,
-    "height": 324
+    "height": 292
   },
   "db-update-agent.png": {
     "width": 1200,
-    "height": 263
+    "height": 278
   },
   "db-v2-column-setting-en.png": {
     "width": 645,
@@ -5613,15 +5689,15 @@
   },
   "k8s-agent2application-en.png": {
     "width": 1200,
-    "height": 587
+    "height": 641
   },
   "k8s-agent2application-ja.png": {
     "width": 1200,
-    "height": 587
+    "height": 642
   },
   "k8s-agent2application.png": {
     "width": 1200,
-    "height": 567
+    "height": 645
   },
   "k8s-ap-service-dashboard-cpu-en.png": {
     "width": 409,
@@ -5882,6 +5958,30 @@
   "k8s-container-sum.png": {
     "width": 1173,
     "height": 894
+  },
+  "k8s-cor-pj-add.png": {
+    "width": 1200,
+    "height": 348
+  },
+  "k8s-cor-pj-em.png": {
+    "width": 1200,
+    "height": 351
+  },
+  "k8s-cor-pj.png": {
+    "width": 1200,
+    "height": 349
+  },
+  "k8s-cor-tbv-en.png": {
+    "width": 1221,
+    "height": 904
+  },
+  "k8s-cor-tbv-ja.png": {
+    "width": 1215,
+    "height": 915
+  },
+  "k8s-cor-tbv.png": {
+    "width": 1221,
+    "height": 906
   },
   "k8s-download-yaml-en.png": {
     "width": 465,
@@ -8875,17 +8975,65 @@
     "width": 600,
     "height": 659
   },
+  "npm-analysis-field-list-en.png": {
+    "width": 800,
+    "height": 563
+  },
+  "npm-analysis-field-list-ja.png": {
+    "width": 800,
+    "height": 542
+  },
+  "npm-analysis-field-list.png": {
+    "width": 800,
+    "height": 538
+  },
+  "npm-analysis-filter-numeric-operater-en.png": {
+    "width": 800,
+    "height": 313
+  },
+  "npm-analysis-filter-numeric-operater-ja.png": {
+    "width": 800,
+    "height": 299
+  },
+  "npm-analysis-filter-numeric-operater.png": {
+    "width": 800,
+    "height": 299
+  },
+  "npm-analysis-filter-text-operater-en.png": {
+    "width": 800,
+    "height": 188
+  },
+  "npm-analysis-filter-text-operater-ja.png": {
+    "width": 800,
+    "height": 182
+  },
+  "npm-analysis-filter-text-operater.png": {
+    "width": 800,
+    "height": 181
+  },
+  "npm-analysis-filter-text-val-list-en.png": {
+    "width": 800,
+    "height": 303
+  },
+  "npm-analysis-filter-text-val-list-ja.png": {
+    "width": 800,
+    "height": 290
+  },
+  "npm-analysis-filter-text-val-list.png": {
+    "width": 800,
+    "height": 289
+  },
   "npm-analysis-filtering-en.png": {
     "width": 800,
-    "height": 55
+    "height": 43
   },
   "npm-analysis-filtering-ja.png": {
     "width": 800,
-    "height": 55
+    "height": 45
   },
   "npm-analysis-filtering.png": {
     "width": 800,
-    "height": 55
+    "height": 41
   },
   "npm-analysis-select-in-out-en.png": {
     "width": 400,
@@ -8899,21 +9047,33 @@
     "width": 300,
     "height": 124
   },
+  "npm-dashboad-network-topology-chart-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "npm-dashboad-network-topology-chart-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "npm-dashboad-network-topology-chart.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "npm-dashboad-network-topology-en.png": {
-    "width": 1222,
-    "height": 1058
+    "width": 1200,
+    "height": 1054
   },
   "npm-dashboad-network-topology-ja.png": {
-    "width": 1222,
-    "height": 1058
+    "width": 1200,
+    "height": 1054
   },
   "npm-dashboad-network-topology-status-summary.png": {
     "width": 800,
     "height": 48
   },
   "npm-dashboad-network-topology.png": {
-    "width": 1222,
-    "height": 1058
+    "width": 1200,
+    "height": 1054
   },
   "npm-dashboard-network-trend-en.png": {
     "width": 1200,
@@ -8926,6 +9086,30 @@
   "npm-dashboard-network-trend.png": {
     "width": 1200,
     "height": 1058
+  },
+  "npm-dashboard-settings-popup-en.png": {
+    "width": 400,
+    "height": 581
+  },
+  "npm-dashboard-settings-popup-ja.png": {
+    "width": 400,
+    "height": 578
+  },
+  "npm-dashboard-settings-popup.png": {
+    "width": 400,
+    "height": 578
+  },
+  "npm-dashboard-settings-threshold-en.png": {
+    "width": 400,
+    "height": 396
+  },
+  "npm-dashboard-settings-threshold-ja.png": {
+    "width": 400,
+    "height": 396
+  },
+  "npm-dashboard-settings-threshold.png": {
+    "width": 400,
+    "height": 396
   },
   "npm-dashboard-topology-edge-setting-en.png": {
     "width": 400,
@@ -8989,7 +9173,19 @@
   },
   "npm-dashboard-topology-preset.png": {
     "width": 400,
-    "height": 342
+    "height": 332
+  },
+  "npm-dashboard-topology-save-preset-en.png": {
+    "width": 600,
+    "height": 262
+  },
+  "npm-dashboard-topology-save-preset-ja.png": {
+    "width": 636,
+    "height": 261
+  },
+  "npm-dashboard-topology-save-preset.png": {
+    "width": 600,
+    "height": 281
   },
   "npm-dashboard-topology-select-node-en.png": {
     "width": 400,
@@ -9001,43 +9197,31 @@
   },
   "npm-dashboard-topology-select-node.png": {
     "width": 400,
-    "height": 326
+    "height": 347
   },
   "npm-dashboard-topology-tag-filtering-01-en.png": {
     "width": 800,
-    "height": 503
+    "height": 385
   },
   "npm-dashboard-topology-tag-filtering-01-ja.png": {
     "width": 800,
-    "height": 484
+    "height": 397
   },
   "npm-dashboard-topology-tag-filtering-01.png": {
     "width": 800,
-    "height": 486
-  },
-  "npm-dashboard-topology-tag-filtering-02-en.png": {
-    "width": 800,
-    "height": 583
-  },
-  "npm-dashboard-topology-tag-filtering-02-ja.png": {
-    "width": 800,
-    "height": 564
-  },
-  "npm-dashboard-topology-tag-filtering-02.png": {
-    "width": 800,
-    "height": 619
+    "height": 385
   },
   "npm-dashboard-topology-tag-filtering-en.png": {
-    "width": 601,
-    "height": 521
+    "width": 600,
+    "height": 475
   },
   "npm-dashboard-topology-tag-filtering-ja.png": {
-    "width": 600,
-    "height": 624
+    "width": 500,
+    "height": 433
   },
   "npm-dashboard-topology-tag-filtering.png": {
     "width": 600,
-    "height": 563
+    "height": 487
   },
   "npm-event-history-en.png": {
     "width": 1200,
@@ -10761,15 +10945,15 @@
   },
   "set-event-select-category-en.png": {
     "width": 600,
-    "height": 373
+    "height": 259
   },
   "set-event-select-category-ja.png": {
     "width": 600,
-    "height": 373
+    "height": 259
   },
   "set-event-select-category.png": {
     "width": 600,
-    "height": 373
+    "height": 257
   },
   "set-event-sms-notification-en.png": {
     "width": 600,
@@ -10856,16 +11040,16 @@
     "height": 499
   },
   "set-events-metrics-en.png": {
-    "width": 1200,
-    "height": 709
+    "width": 800,
+    "height": 809
   },
   "set-events-metrics-ja.png": {
-    "width": 1200,
-    "height": 725
+    "width": 800,
+    "height": 811
   },
   "set-events-metrics.png": {
-    "width": 1200,
-    "height": 731
+    "width": 800,
+    "height": 812
   },
   "set-java-agent-start.png": {
     "width": 954,
@@ -11057,15 +11241,15 @@
   },
   "transaction-map-setting-en.png": {
     "width": 600,
-    "height": 287
+    "height": 277
   },
   "transaction-map-setting-ja.png": {
     "width": 600,
-    "height": 275
+    "height": 273
   },
   "transaction-map-setting.png": {
     "width": 600,
-    "height": 277
+    "height": 276
   },
   "transactionmap-filter-en.png": {
     "width": 600,
@@ -11350,6 +11534,30 @@
   "usage-estimate-history.png": {
     "width": 1200,
     "height": 509
+  },
+  "whale-prevent-trace-01-en.png": {
+    "width": 400,
+    "height": 293
+  },
+  "whale-prevent-trace-01-ja.png": {
+    "width": 400,
+    "height": 293
+  },
+  "whale-prevent-trace-02-en.png": {
+    "width": 400,
+    "height": 155
+  },
+  "whale-prevent-trace-02-ja.png": {
+    "width": 400,
+    "height": 155
+  },
+  "whale-prevent-trace-03-en.png": {
+    "width": 400,
+    "height": 295
+  },
+  "whale-prevent-trace-03-ja.png": {
+    "width": 400,
+    "height": 295
   },
   "whatap-docs-upper-en.png": {
     "width": 1200,

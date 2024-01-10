@@ -66,7 +66,7 @@ The roles of each file that makes up the Node.js monitoring service are as follo
 
 ## Using
 
-Add the following code to the first line of the application's main module. In case of the express module, the file is _app.js_ for example.
+Add the following code at the top of the entry point (main module) file of the application. For example, in the Express.js application, _app.js_ and _server.js_ are the entry points (main module). When using a framework like Nest.js, _main.ts_ is the entry point.
 
 ```javascript title='Javascript'
 var whatap = require('whatap').NodeAgent;

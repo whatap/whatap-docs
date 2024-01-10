@@ -71,6 +71,28 @@ The agent traces the transaction performance and provides the following configur
 
     Add the port number to the transaction name.
 
+-   **httpc_status_ignore** <span class='type'>String</span>
+
+    Default `Empty`
+
+    Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+    ```ini title='whatap.conf'
+    httpc_status_ignore=404,500
+    ```
+
+-   **httpc_status_ignore_set** <span class='type'>String</span>
+
+    Default `Empty`
+
+    `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+    :::note
+
+    Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+
+    :::
+
 ### HTTP transaction tracing
 
 {@include: ../common-items/_transaction-trace-common.mdx} 

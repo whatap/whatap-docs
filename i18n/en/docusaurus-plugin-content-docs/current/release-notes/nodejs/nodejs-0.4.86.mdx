@@ -1,0 +1,48 @@
+---
+id: nodejs-0_4_86
+title: Node.js Agent v0.4.86
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_4_83
+---
+
+January 4, 2024
+
+-   <Status>Feature</Status> Added the agent options
+
+    -   **httpc_status_ignore** <span class='type'>String</span>
+
+        Default `Empty`
+
+        Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+        ```ini title='whatap.conf'
+        httpc_status_ignore=404,500
+        ```
+
+    -   **httpc_status_ignore_set** <span class='type'>String</span>
+
+        Default `Empty`
+
+        `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+
+        :::note
+
+        Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+
+        :::
+
+-   <Status>Fixed</Status> Fixed the issue where the MariaDB monitoring does not work.
+
+-   <Status>Fixed</Status> Fixed the SQL (MySQL, SQL Server) connection information output error.
+
+:::info
+
+-   Package information: https://www.npmjs.com/package/whatap
+
+-   Installation and application methods
+
+    ```bash
+    npm i whatap
+    ```
+
+:::
