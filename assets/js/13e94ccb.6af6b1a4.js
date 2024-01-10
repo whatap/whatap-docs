@@ -389,7 +389,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `AWS 환경에서 네트워크 성능 모니터링을 사용하려면 각 리소스(LB 등)에 연결된 ENI 정보를 수집하여 토폴로지에 표현할 수 있습니다. AWS 요소에 에이전트를 직접 설치할 수 없기 때문에 수집된 IP 기준으로 연관된 ENI를 확인하여 표현합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `AWS 환경에서 네트워크 성능 모니터링을 사용하려면 각 리소스(LB 등)에 연결된 EC2 네트워크 인터페이스(ENI) 정보를 수집하여 토폴로지에 표현할 수 있습니다. AWS 요소에 에이전트를 직접 설치할 수 없기 때문에 수집된 IP 기준으로 연관된 ENI를 확인하여 표현합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "Example",
         src: (__webpack_require__(81822)/* ["default"] */ .Z),
         width: "800",
@@ -480,7 +480,7 @@ sudo service whatap-npmd restart
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `ec2:DescribeNetworkInterfaces`), `: 선택한 서브넷의 기존 네트워크 인터페이스를 조회하고 선택합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `ec2:DescribeNetworkInterfaces`), `: EC2 네트워크 인터페이스(ENI)에 대한 정보 조회를 허용합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "tip"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
