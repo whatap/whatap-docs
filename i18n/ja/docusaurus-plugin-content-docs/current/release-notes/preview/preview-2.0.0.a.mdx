@@ -14,6 +14,135 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.0.0.a7
+
+2024年01月02日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="whatapEventList" className="uitext" />: <code>#WhatapEvent</code>カテゴリのログデータの照会機能を追加</p>
+
+</div>
+
+## Preview 2.0.0.a6
+
+2024年01月02日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status> <Cmdname sid="payment_information" className="uitext" />メニューで支払情報を入力または修正する場合<Cmdname sid="phone" className="uitext" />項目を変更すると<Cmdname sid="TTL06080" className="uitext" />項目も一緒に変更されるよう修正</p>
+
+#### <Cmdname sid="integrated_report" />
+
+-   <Status>Changed</Status>新規レポートの作成またはレポートの重複作成時に出力されるメッセージを修正
+
+-   <Status>Fixed</Status>既に作成されたレポートを重複生成する場合、左リストでフォーカスが移動しないバグを修正
+
+#### User Interface
+
+<p><Status>Changed</Status>ダークテーマをより多くのメニューで利用できるように拡張適用しました。</p>
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+<p><Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />メニューから次の内容を修正します。</p>
+
+-   <Status>Fixed</Status>一部のウィジェット名の韓国語表記を修正(<b>使用率</b>)
+
+-   <Status>Fixed</Status> <Cmdname sid="active_sessions" className="uitext" />テーブルを新しいウィンドウとして見たときにデータが照会されない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="active_sessions" className="uitext" />, <Cmdname sid="lock_tree" className="uitext" />, <Cmdname sid="process_info" className="uitext" /> タブを選択すると画面が点滅する現象を改善
+
+-   <Status>Fixed</Status> SQLクエリを選択すると表示される<Cmdname sid="TTL06224" className="uitext" /> ウィンドウでクエリに注釈が含まれる場合、同じクエリが繰り返し表現される問題を修正
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" />メニューに<b>Service</b>、<b>Ingress</b>、<b>Job</b>、<b>CronJob</b>オブジェクト一覧を追加
+
+-   <Status>Changed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />メニューに<Cmdname sid="TTL07432" className="uitext" />と<Cmdname sid="TTL07433" className="uitext" />、<Cmdname sid="TTL07434" className="uitext" />ウィジェットを追加
+
+-   <Status>Changed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" />メニューに<span class="uitext">Total Capacity CPU</span>(ノード総CPU)、<span class="uitext">Total Capacity Memory</span>(ノード総Memory) ウィジェットを追加
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status>エージェントオプションが設定された場合、ログレベルを表示する色表示機能を追加</p>
+
+```ini title="whatap.conf"
+# requires agent restart
+weaving=log4j-2.17,logback-1.2.8
+```
+
+</div>
+
+## Preview 2.0.0.a5
+
+2023年12月28日
+
+<div class='indentTab'>
+
+### `共通`
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Fixed</Status> <Cmdname sid="flexboard" className="uitext" /> 메뉴에서 <Cmdname sid="group_widget" className="uitext" />中にウィジェットを追加する場合、ウィジェット全体の一覧が表示されず、一部だけが表示される問題を修正
+
+-   <Status>Feature</Status> <Cmdname sid="flexboard" className="uitext" />メニューで補助チャートの小数点以下桁数の調整機能を追加
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="transaction_map" className="uitext" />メニューでリアルタイムモードを利用する時、ユーザーのPC時間がサーバー時間より過去に設定された場合、チャートが描かれないバグを修正
+
+    :::note
+
+    サーバー時間とユーザーのPC時間の間に5分以上差がある場合、補正ができないことがあります。
+
+    :::
+
+-   <Status>Fixed</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics" className="uitext" />メニューの<Cmdname sid="httpc" className="uitext" />タブで<Cmdname sid="transaction" className="uitext" />タブに移動する場合<span class="uitext">T</span>/<span class="uitext">U</span>ボタンが動作しない問題を修正
+
+* * *
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />メニューで<span class="uitext">Node</span>カラム項目を選択すると、該当ノード一覧がフィルタリングされた<Cmdname sid="node_list" className="uitext" />メニューに移動する機能を追加</p>
+
+* * *
+
+### `Browser`
+
+-   <Status>Changed</Status>プロジェクトのサイドバー日本語メニュー名を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="rumDashboard" className="uitext" />メニューで時間セレクターを一時停止した後、再びリアルタイムモードを実行すると、リアルタイム30分で照会される問題を修正
+
+-   <Status>Deprecated</Status> <Cmdname sid="rumDashboard" className="uitext" />メニューから時間セレクターの時間選択オプションのうち、次の項目を削除
+
+    -   <Cmdname sid="time_action_live" className="uitext" replace="noSpace" /><Cmdname sid="30_minute" className="uitext" />
+
+    -   <Cmdname sid="time_action_live" className="uitext" replace="noSpace" /><span class="uitext">1</span><Cmdname sid="time_action_hour" className="uitext" replace="noSpace" />
+
+    -   <Cmdname sid="time_action_recent" className="uitext" replace="noSpace" /><span class="uitext">1</span><Cmdname sid="time_action_week" className="uitext" replace="noSpace" />
+
+    -   <Cmdname sid="time_action_recent" className="uitext" replace="noSpace" /><span class="uitext">2</span><Cmdname sid="time_action_week" className="uitext" replace="noSpace" />
+
+    -   <Cmdname sid="time_action_recent" className="uitext" replace="noSpace" /><span class="uitext">3</span><Cmdname sid="time_action_week" className="uitext" replace="noSpace" />
+
+</div>
+
 ## Preview 2.0.0.a4
 
 2023年12月21日

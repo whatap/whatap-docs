@@ -1,3 +1,15 @@
 Generate an encrypted UID for database connection. Enter the username and password and then run the shell script (or batch file). 
 
-The <p><em>uid.sh</em> shell scrip file (or <em>uid.bat</em> batch file) can be found in the path where the WhaTap database agent has been installed. Set <code>DB_USER</code> to <code>{props.name}</code> if there is only a password without user. </p>
+<Xclude product='redis'>
+
+The <p><em>uid.sh</em> shell scrip file (or <em>uid.bat</em> batch file) can be found in the path where the WhaTap database agent has been installed. Set <code>DB_USER</code> to <code>{props.name}</code> if there is only a password without user.</p>
+
+</Xclude>
+
+<InDoc product='redis'>
+
+-   **Redis 6 or earlier**: The <em>uid.sh</em> shell script file (or <em>uid.bat</em> batch file) can be found in the path where the WhaTap's database agent has been installed. When only the password exists without username, set <code>DB_USER</code> as <code>""</code>.
+
+-   **Redis 6 or later**: The <em>uid.sh</em> shell script file (or <em>uid.bat</em> batch file) can be found in the path where the WhaTap database agent has been installed. If there is only a password without username, set <code>DB_USER</code> as <code>default</code>.
+
+</InDoc>

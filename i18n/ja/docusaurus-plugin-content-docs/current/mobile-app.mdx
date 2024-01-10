@@ -122,7 +122,7 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
 -   個別プロジェクトの詳細を確認し、主要な指標を照会することができます。
 
--   組織単位でプロジェクト一覧を分類し、検索を通じて目的のプロジェクトをフィルタリングできます。
+-   組織単位でプロジェクト一覧を分類し、検索を通じて希望するプロジェクトがフィルタリングできます。
 
 -   製品分類ごとにプロジェクトを確認してフィルタリングできます。
 
@@ -140,7 +140,7 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
 -   プロジェクトの一番上にはプロジェクト名を表示します。 <Appname sid="detail" className="uitext" />ボタンをタップすると、より多くの指標を確認できます。
 
--   プロジェクトの中央セクションには、代表される指標を表示します。 製品の種類によって表示される指標は異なる場合があります。
+-   プロジェクトの中央セクションには主要指標を表示します。 サービスの種類によって表示される指標が異なる場合があります。
 
     -   **Application**: <Appname sid="active_transaction" />
 
@@ -150,15 +150,15 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
     -   **Kubernetes**：Kubernetesの構成要素に関する要約情報
 
-    -   **URL**：全体URL個数と正常、エラー状態のURL個数の表示
+    -   **URL**：全体のURL件数と正常、エラー状態のURL件数の表示
 
     -   **Browser**: <Cmdname sid="page_load" /> <Cmdname sid="timeline" />
 
--   プロジェクトの一番下には、製品の種類、製品名、リージョン、プロジェクトコード、サブスクリプション形態などの情報が表示されます。
+-   プロジェクトの一番下には製品の種類、製品名、リージョン、プロジェクトコード、サブスクリプション形態などの情報が表示されます。
 
 ### ダッシュボードの紹介
 
-プロジェクト一覧で各プロジェクトの<Appname sid="detail" className="uitext" />ボタンをタップすると<Appname sid="dashboard" className="uitext" />画面に移動できます。 
+プロジェクト一覧で各プロジェクトの<Appname sid="detail" className="uitext" />ボタンをタップすると<Appname sid="dashboard" className="uitext" />画面へ移動できます。 
 
 <ImgLang img='mobile/mobile-app-project-dashboard.png' desc='ダッシュボード' className='mobile' />
 
@@ -168,19 +168,19 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
 -   <Appname sid="standard_time" className="uitext" />に表示された時間を基準に10分、30分、1時間の指標を照会することができます。 <Appname sid="latest" className="uitext" />項目で<span class="uitext">10 Min</span>、<span class="uitext">30 Min</span>, <span class="uitext">1 Hour</span>ボタンをタップしてください。
 
--   その他、各製品別に代表される主要指標が配置されています。 次の一覧で確認できます。
+-   その他、各サービス別の主要指標が配置されています。 次の一覧で確認できます。
 
     <details>
 
     <summary><b>Appication</b></summary>
 
-    -   <Appname sid="active_status" className="uitext" />：アクティブ トランザクションの進行状況と各進行状態のアクティブトランザクション数を確認できるチャートです。
+    -   <Appname sid="active_status" className="uitext" />：アクティブトランザクションの進行状況と、各進行状態のアクティブトランザクション数を確認できるチャートです。
 
     -   <Appname sid="active_transaction" className="uitext" />：エージェントごとの進行中のアクティブトランザクションを確認できるチャートです。 チャートに表示されている色は、アクティブトランザクションのレスポンスタイムです。 <span class='normal'>青色(Normal)</span>は3秒以内、<span class='slow'>オレンジ色(Slow)</span>は3~8秒、<span class='vslow'>赤色(Very slow)</span>は8秒以上を意味します。
 
-    -   <span class="uitext">Hitmap</span>：終了したトランザクションのレスポンスタイムを分布図で表現したチャートです。 <span class="uitext">TX trace</span>ボタンをタップするとトランザクション一覧が確認できる<Appname sid="transaction_list" className="uitext" />画面に移動します。 エラーが発生したトランザクションの一覧を確認するには<span class="uitext">All</span>ボタンをタップしてください。
+    -   <span class="uitext">Hitmap</span>：終了したトランザクションのレスポンスタイムを分布図として表示するチャートです。 <span class="uitext">TX trace</span>ボタンをタップするとトランザクション一覧が確認できる<Appname sid="transaction_list" className="uitext" />画面へ移動します。 エラーが発生したトランザクションの一覧を確認するには<span class="uitext">All</span>ボタンをタップしてください。
 
-    -   <span class="uitext">Apdex</span>：<Link to="https://www.apdex.org/">Application Performance Index(Apdex)</Link>は、アプリケーションのパフォーマンス指標です。 WEBアプリケーションのユーザー満足度を測定します。 ユーザー満足度の指標として活用でき、0~1の間の値で示します。
+    -   <span class="uitext">Apdex</span>：<Link to="https://www.apdex.org/">Application Performance Index(Apdex)</Link>は、アプリケーションの性能指標です。 WEBアプリケーションのユーザー満足度を測定します。 ユーザー満足度の指標として活用でき、0~1の間の値で示します。
 
     -   <span class="uitext">TPS</span>：秒当りに処理されたトランザクションの数です。
 
@@ -212,9 +212,9 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
     -   <Appname sid="thread_connected_top10" className="uitext" />：インスタンスごとに現在接続されている上位10つのセッションの数です。
 
-    -   <span class="uitext">Active Sessions</span>：照会時間中にクエリを実行中のセッション数をエージェント別に表現した時系列チャートです。
+    -   <span class="uitext">Active Sessions</span>：照会時間中にクエリを実行中のセッション数をエージェント別に表示する時系列チャートです。
 
-    -   <Appname sid="thread_connected_chart" className="uitext" />：照会時間中に現在接続されているセッション数をエージェント別に表現した時系列チャートです。
+    -   <Appname sid="thread_connected_chart" className="uitext" />：照会時間中に現在接続されているセッション数をエージェント別に表示する時系列チャートです。
 
     :::info
 
@@ -232,11 +232,11 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
     -   <Cmdname sid="TTL06265" className="uitext" />：状態別に進行中のPod数を表示します。
 
-    -   <Appname sid="pod_count_chart" className="uitext" />：照会時間中、状態別に進行中のPodの個数を表現した時系列チャートです。
+    -   <Appname sid="pod_count_chart" className="uitext" />：照会時間中、状態別に進行中のPodの数を表示する時系列チャートです。
 
-    -   <span class="uitext">Node CPU</span>：照会時間中の個別のノードのCPU使用率を表現した時系列チャートです。
+    -   <span class="uitext">Node CPU</span>：照会時間中の個別のノードのCPU使用率を表示する時系列チャートです。
 
-    -   <span class="uitext">Node Memory</span>: 照会時間中の個別のノードのメモリ使用率を表現した時系列チャートです。
+    -   <span class="uitext">Node Memory</span>: 照会時間中の個別のノードのメモリ使用率を表示する時系列チャートです。
 
     :::note
 
@@ -250,7 +250,7 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
     <summary><b>URL</b></summary>
 
-    ユーザーが登録したURLリストと各URLのHTTPステータスコードを確認できます。
+    ユーザーが登録したURLリストと、各URLのHTTPステータスコードを確認できます。
 
     </details>
 
@@ -258,15 +258,15 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
     <summary><b>Browser</b></summary>
 
-    -   <Appname sid="page_load_timeline" className="uitext" />：ページの読み込み時間と読み込み段階別のプロセスを平均時間で表現したチャートです。
+    -   <Appname sid="page_load_timeline" className="uitext" />：ページの読み込み時間と、読み込み段階別のプロセスを平均時間として表示するチャートです。
 
-    -   <span class="uitext">Pageload Hitmap</span>：照会時間中のページ読み込みのリスポンスタイムの分布を表現したチャートです。
+    -   <span class="uitext">Pageload Hitmap</span>：照会時間中のページ読み込みのレスポンスタイムの分布を表示するチャートです。
 
-    -   <span class="uitext">AJAX Hitmap</span>：照会時間中のAJAXのリスポンスタイムの分布を表現したチャートです。
+    -   <span class="uitext">AJAX Hitmap</span>：照会時間中のAjaxのレスポンスタイムの分布を表示するチャートです。
 
-    -   <Cmdname sid="TTL06188" className="uitext" />: 照会時間中に発生したエラー件数とページ別に発生したエラー件数のうち上位N個を表示します。
+    -   <Cmdname sid="TTL06188" className="uitext" />: 照会時間中に発生したエラー件数とページ別に発生したエラー件数のうち上位N件を表示します。
 
-    -   <Cmdname sid="TTL06189" className="uitext" />：照会時間中に発生したエラーメッセージ件数と各エラーメッセージ別エラー数の合計のうち上位N個を表示します。
+    -   <Cmdname sid="TTL06189" className="uitext" />：照会時間中に発生したエラーメッセージ件数と各エラーメッセージ別エラー数の合計のうち上位N件を表示します。
 
     </details>
 
@@ -302,7 +302,7 @@ WhaTapモニタリングサービスのお知らせを確認するには、画�
 
 -   すべてのプロジェクトの通知を最新順に確認できます。
 
--   各通知のプロジェクト名をタップすると、そのプロジェクトに移動できます。
+-   各通知のプロジェクト名をタップすると、該当のプロジェクトへ移動できます。
 
 :::note
 

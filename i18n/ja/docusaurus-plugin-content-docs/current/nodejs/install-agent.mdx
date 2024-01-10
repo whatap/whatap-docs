@@ -66,7 +66,7 @@ Node.jsモニタリングサービスを構成する各ファイルの役割は�
 
 ## 活用方法
 
-アプリケーションのメインモジュールの先頭に次のコードを追加してください。例えば、expressモジュールの場合、_app.js_ファイルです。
+アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加してください。例えばExpress.jsアプリケーションでは_app.js_または_server.js_ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、_main.ts_ファイルなどです。
 
 ```javascript title='Javascript'
 var whatap = require('whatap').NodeAgent;

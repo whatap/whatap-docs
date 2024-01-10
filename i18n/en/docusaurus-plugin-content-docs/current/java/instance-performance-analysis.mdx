@@ -9,3 +9,56 @@ tags:
 ---
 
 {@include: ../common-items/_instance-performance-analysis.mdx} 
+
+## Analyzing the thread dump {#thread-details}
+
+It guides you to the information that can be checked in the <Cmdname sid="thread_list" className="uitext" /> tab.
+
+### Thread status {#stateofthread}
+
+The states of the thread are declared as enumerated types named `State` in the `java.lang.Thread` class.
+
+-   `NEW`: The thread has been generated but not run.
+
+-   `RUNNABLE`: The CPU has been occupied and the tasks are being performed. The resource allocation by the OS may result in `WAITING` state.
+
+-   `WAITING`: It is waiting using the `wait()`, `join()`, and `park()` methods.
+
+-   `TIMED_WAITING`: It is waiting using the `sleep()`, `wait()`, `join()`, and `park()` methods. The difference from the `WAITING` state is that it is waiting for a given time. The waiting state can be released by the time as well as external environment change.
+
+-   `BLOCKED`: It is waiting for the locked object to be released.
+
+-   `TERMINATED`: Execution has been completed.
+
+### Thread dump information
+
+You can check the thread dump information by selecting the <LinkImage img="ico-expander-black.svg" className="ico black" /> button for each thread in the thread list.
+
+<ImgLang img='ipa-java-thread-list.png' desc='thread dump info' />
+
+#### <Cmdname sid="stack" />
+
+| Item                                                  | Properties       | Description                                                                                                                                       |
+| ----------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <Cmdname sid="thread_id" className="uitext" />        | `threadId`       | Unique ID allocated to the thread                                                                                                                 |
+| <Cmdname sid="lock_owner_id" className="uitext" />    | `lockOwnerId`    | Thread ID that holds the monitor lock state on the object on which the threads are blocked.                                                       |
+| <Cmdname sid="waited_count" className="uitext" />     | `waitedCount`    | Total number of `WAITING` and `TIMED_WAITING` states of the thread                                                                                |
+| <Cmdname sid="blocked_count" className="uitext" />    | `blockedCount`   | Total number of `Blocked` states of the thread                                                                                                    |
+| <Cmdname sid="waited_time" className="uitext" />      | `waitedTime`     | Elapsed time (milliseconds) that the thread has been in the `WAITING` state. It returns `-1` when the thread contention monitoring is disabled.   |
+| <Cmdname sid="thread_cpu_time" className="uitext" />  | `threadCpuTime`  | It displays the total CPU time (nanoseconds) of the thread calculated in milliseconds. It returns `-1` when the CPU time measurement is disabled. |
+| <Cmdname sid="status" className="uitext" />           | `threadstate`    | Thread status                                                                                                                                     |
+| <Cmdname sid="blocked_time" className="uitext" />     | `blockedTime`    | Elapsed time (milliseconds) that the thread has been in the `BLOCKED` state. It returns `-1` when the thread contention monitoring is disabled.   |
+| <Cmdname sid="thread_name" className="uitext" />      | `threadName`     | Unique name of the thread                                                                                                                         |
+| <Cmdname sid="lock_name" className="uitext" />        | `lockName`       | String indicating that the thread's input is blocked or a monitor lock prompts for notification via the `Object.wait` method.                     |
+| <Cmdname sid="lock_owner_name" className="uitext" />  | `lockOwnerName`  | Name of the thread that holds the monitor lock on the objects on which the thread is blocked.                                                     |
+| <Cmdname sid="thread_user_time" className="uitext" /> | `threadUserTime` | The CPU time (nanoseconds) for which the thread executed in user mode that is calculated in milliseconds.                                         |
+
+:::note
+
+For more information about the thread information, see [the following link](https://docs.oracle.com/javase/8/docs/api/java/lang/management/ThreadInfo.html/).
+
+:::
+
+#### <Cmdname sid="stack_trace" />
+
+It displays the stack trace when any exception occurs. The stack frame list that contains information about the methods called by the code.

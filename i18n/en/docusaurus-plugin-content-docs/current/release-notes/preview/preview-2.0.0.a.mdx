@@ -14,6 +14,135 @@ In [https://preview.whatap.io](https://preview.whatap.io), the following new fea
 
 :::
 
+## Preview 2.0.0.a7
+
+January 2, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> Added the log data search function in the <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="whatapEventList" className="uitext" />: <code>#WhatapEvent</code> category.</p>
+
+</div>
+
+## Preview 2.0.0.a6
+
+January 2, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="my_usage" />
+
+<p><Status>Fixed</Status> In <Cmdname sid="payment_information" className="uitext" />, modified to change the <Cmdname sid="TTL06080" className="uitext" /> item when the <Cmdname sid="phone" className="uitext" /> is changed to enter or modify the payment information.</p>
+
+#### <Cmdname sid="integrated_report" />
+
+-   <Status>Changed</Status> Modified the message that appears when a new report or a duplicated report is generated.
+
+-   <Status>Fixed</Status> Fixed the bug where the focus does not move in the list on the left when a duplicate report is generated.
+
+#### User Interface
+
+<p><Status>Changed</Status> The dark theme has been expanded so that it can be used in more menus.</p>
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+<p>In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />, the following have been modified.</p>
+
+-   <Status>Fixed</Status> Changed the names of some widgets (utilization → <b>utilization</b>).
+
+-   <Status>Fixed</Status> Fixed the issue when data cannot be searched in a new window for the <Cmdname sid="active_sessions" className="uitext" /> table.
+
+-   <Status>Fixed</Status> Fixed the screen flickering issue when the <Cmdname sid="active_sessions" className="uitext" />, <Cmdname sid="lock_tree" className="uitext" />, <Cmdname sid="process_info" className="uitext" /> tabs are selected.
+
+-   <Status>Fixed</Status> Fixed the issue where a same query appears repeatedly when the <Cmdname sid="TTL06224" className="uitext" /> window of the selected SQL query has any comment.
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" />, added the lists for <b>Service</b>, <b>Ingress</b>, <b>Job</b>, and <b>CronJob</b> objects.
+
+-   <Status>Changed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="performance_summary" className="uitext" />, added <Cmdname sid="TTL07432" className="uitext" /> and the <Cmdname sid="TTL07433" className="uitext" /> and <Cmdname sid="TTL07434" className="uitext" /> widgets.
+
+-   <Status>Changed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="clusterOverview" className="uitext" />, added the <span class="uitext">Total Capacity CPU</span> (total CPU for nodes) and <span class="uitext">Total Capacity Memory</span> (total memory for nodes) widgets.
+
+* * *
+
+### `Log`
+
+<p><Status>Feature</Status> Added the function to display colors for log labels when the agent options have been set.</p>
+
+```ini title="whatap.conf"
+# requires agent restart
+weaving=log4j-2.17,logback-1.2.8
+```
+
+</div>
+
+## Preview 2.0.0.a5
+
+December 28, 2023
+
+<div class='indentTab'>
+
+### `Common`
+
+#### <Cmdname sid="dashboard" />
+
+-   <Status>Fixed</Status> In <Cmdname sid="flexboard" className="uitext" />, fixed the issue where only several items in the widget list appear when any widgets are added in <Cmdname sid="group_widget" className="uitext" />.
+
+-   <Status>Feature</Status> In <Cmdname sid="flexboard" className="uitext" />, added the function to adjust the length of decimal places in auxiliary charts.
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="transaction_map" className="uitext" />, fixed the bug where charts are not drawn in real-time mode if the user's PC time has been set older than the server time.
+
+    :::note
+
+    If there is a difference of more than 5 minutes between the server time and the user's PC time, correction may not be possible.
+
+    :::
+
+-   <Status>Fixed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics" className="uitext" />, fixed the issue where the <span class="uitext">T</span>/<span class="uitext">U</span> button does not work when the <Cmdname sid="httpc" className="uitext" /> tab is moved to the <Cmdname sid="transaction" className="uitext" /> tab.
+
+* * *
+
+### `Kubernetes`
+
+<p><Status>Feature</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />, added the function to move to the <Cmdname sid="node_list" className="uitext" /> menu that filters the nodes when the <span class="uitext">Node</span> column is selected.</p>
+
+* * *
+
+### `Browser`
+
+-   <Status>Changed</Status> Modified the Japanese menu names on the sidebars of the project.
+
+-   <Status>Fixed</Status> In <Cmdname sid="rumDashboard" className="uitext" />, fixed the issue where the data appears as 30 minutes of real time when the time selector is paused and then restarted in real time mode.
+
+-   <Status>Deprecated</Status> In <Cmdname sid="rumDashboard" className="uitext" />, deleted the following among the time selection options of the time selector.
+
+    -   <Cmdname sid="time_action_live" className="uitext" replace="noSpace" /><Cmdname sid="30_minute" className="uitext" />
+
+    -   <Cmdname sid="time_action_live" className="uitext" replace="noSpace" /><span class="uitext">1</span><Cmdname sid="time_action_hour" className="uitext" replace="noSpace" />
+
+    -   <Cmdname sid="time_action_recent" className="uitext" replace="noSpace" /><span class="uitext">1</span><Cmdname sid="time_action_week" className="uitext" replace="noSpace" />
+
+    -   <Cmdname sid="time_action_recent" className="uitext" replace="noSpace" /><span class="uitext">2</span><Cmdname sid="time_action_week" className="uitext" replace="noSpace" />
+
+    -   <Cmdname sid="time_action_recent" className="uitext" replace="noSpace" /><span class="uitext">3</span><Cmdname sid="time_action_week" className="uitext" replace="noSpace" />
+
+</div>
+
 ## Preview 2.0.0.a4
 
 December 21, 2023
