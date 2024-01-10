@@ -3010,14 +3010,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-1_114_x',
+            id: 'release-notes/service/service-2_0_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-1_114_x',
+              id: 'release-notes/service/service-2_0_x',
               className: 'new',
             },
+            'release-notes/service/service-1_114_x',
             'release-notes/service/service-1_112_x',
             'release-notes/service/service-1_110_x',
             'release-notes/service/service-1_108_x',
@@ -3026,7 +3027,6 @@ const sidebars = {
             'release-notes/service/service-1_102_x',
             'release-notes/service/service-1_100_x',
             'release-notes/service/service-1_98_x',
-            'release-notes/service/service-1_96_0',
             'release-notes/service/service-previous',
           ]
         },
@@ -5259,9 +5259,10 @@ const sidebars = {
           type: 'category',
           label: '관리하기',
           collapsible: true,
-          collapsed: true,
+          collapsed: true, 
           items: [
             'kubernetes/namespace',
+            'kubernetes/correlations',
             'kubernetes/agent-manage',
             'kubernetes/agent-update',
           ],

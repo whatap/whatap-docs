@@ -82,3 +82,5 @@ i18n/ja/docusaurus-plugin-content-docs/current/telegraf/introduction.mdx 국문 
 license-open-sources -> ``` 삭제할 것
 
 install-aws-log-vpc.mdx -> 인덴트 확인 필요
+
+업데이트
