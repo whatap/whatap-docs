@@ -5318,6 +5318,7 @@ const sidebars = {
                 'kubernetes/performance-summary',
                 'kubernetes/cluster-summary',
                 'kubernetes/resource-node-list',
+                'kubernetes/resource-pod-list',
                 'kubernetes/resource-container-list',
                 'kubernetes/resource-container-volume',
                 'kubernetes/resource-application-list',
