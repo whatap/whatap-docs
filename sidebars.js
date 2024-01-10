@@ -2918,7 +2918,19 @@ const sidebars = {
       },
       items: [
         'npm/compatibility',
-        'npm/install-agent',
+        {
+          type: 'category',
+          label: '에이전트 설치',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'npm/install-agent'
+          },
+          items: [
+            'npm/set-aws-resource-options'
+          ]
+        },
         'npm/set-tagrule',
         {
           type: 'category',
