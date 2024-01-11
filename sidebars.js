@@ -4378,6 +4378,20 @@ const sidebars = {
             },
             'telegraf/telegraf-usage',
           ]
+        },
+        {
+          type: 'category',
+          label: 'OpenTelemetry',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'opentelemetry/introduction'
+          },
+          items: [
+            'opentelemetry/install-agent',
+            'opentelemetry/set-agent',
+          ],
         }
       ]
     }
