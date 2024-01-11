@@ -317,7 +317,7 @@ const metadata = {
     "unversionedId": "release-notes/k8s/k8s-previous",
     "id": "release-notes/k8s/k8s-previous",
     "title": "Kubernetes Agent 지난 버전",
-    "description": "지난 버전 목록",
+    "description": "* Kubernetes Agent 1.3.6",
     "source": "@site/docs/release-notes/k8s/k8s-previous.mdx",
     "sourceDirName": "release-notes/k8s",
     "slug": "/release-notes/k8s/k8s-previous",
@@ -333,8 +333,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent v1.3.5",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_5"
+        "title": "Kubernetes Agent v1.3.7",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_7"
     },
     "next": {
         "title": "DBX v1.6.15",
@@ -342,13 +342,7 @@ const metadata = {
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: '지난 버전 목록',
-        id: '지난-버전-목록',
-        level: 4
-    }
-];
+const toc = [];
 const layoutProps = {
     toc
 };
@@ -360,9 +354,21 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "지난-버전-목록"
-    }, `지난 버전 목록`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "k8s-1_3_6"
+    }, `Kubernetes Agent 1.3.6`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "k8s-1_3_5"
+    }, `Kubernetes Agent 1.3.5`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"

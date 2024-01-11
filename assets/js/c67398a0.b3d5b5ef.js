@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Server Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/server/server-previous"
+        "title": "Kubernetes Agent v1.4.8",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_8"
     },
     "next": {
         "title": "Kubernetes Agent v1.4.3",

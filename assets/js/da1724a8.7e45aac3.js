@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[30286],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[64550],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 89840:
+/***/ 45655:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,51 +308,45 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'k8s-1_3_5',
-    title: 'Kubernetes Agent v1.3.5',
+    id: 'k8s-1_4_8',
+    title: 'Kubernetes Agent v1.4.8',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/k8s/k8s-1_3_4',
+    pagination_next: 'release-notes/k8s/k8s-1_4_4',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/k8s/k8s-1_3_5",
-    "id": "release-notes/k8s/k8s-1_3_5",
-    "title": "Kubernetes Agent v1.3.5",
-    "description": "2023년 9월 12일",
-    "source": "@site/docs/release-notes/k8s/k8s-1.3.5.mdx",
+    "unversionedId": "release-notes/k8s/k8s-1_4_8",
+    "id": "release-notes/k8s/k8s-1_4_8",
+    "title": "Kubernetes Agent v1.4.8",
+    "description": "2023년 12월 14일",
+    "source": "@site/docs/release-notes/k8s/k8s-1.4.8.mdx",
     "sourceDirName": "release-notes/k8s",
-    "slug": "/release-notes/k8s/k8s-1_3_5",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_5",
+    "slug": "/release-notes/k8s/k8s-1_4_8",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_8",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.3.5.mdx",
+    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.8.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "k8s-1_3_5",
-        "title": "Kubernetes Agent v1.3.5",
+        "id": "k8s-1_4_8",
+        "title": "Kubernetes Agent v1.4.8",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/k8s/k8s-1_3_4",
+        "pagination_next": "release-notes/k8s/k8s-1_4_4",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent v1.3.6",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_6"
+        "title": "Kubernetes Agent v1.4.9",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_9"
     },
     "next": {
-        "title": "Kubernetes Agent v1.3.4",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_4"
+        "title": "Kubernetes Agent v1.4.4",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_4"
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: '2023년 9월 12일',
-        id: '2023년-9월-12일',
-        level: 4
-    }
-];
+const toc = [];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
@@ -369,24 +363,22 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "2023년-9월-12일"
-    }, `2023년 9월 12일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 14일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " api-server 호출 최적화 작업을 통해 컨트롤 플레인 노드의 CPU 부하 감소"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 노드 에이전트 컨테이너 로그가 과다하게 발생하는 현상 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "http://repo.whatap.io/docker/kube_mon_1.3.5.tar"
-    }, `http://repo.whatap.io/docker/kube_mon_1.3.5.tar`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 메모리의 특정 단위에 대한 파싱이 제대로 이루어지지 않는 현상 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 네임스페이스 프로젝트 삭제 시 클러스터 프로젝트로 원복되지 않는 오류 수정")));
+        "href": "https://repo.whatap.io/docker/kube_mon_1.4.8.tar"
+    }, `kube_mon_1.4.8.tar`))));
 }
 MDXContent.isMDXComponent = true;
 
