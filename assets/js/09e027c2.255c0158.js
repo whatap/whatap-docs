@@ -310,7 +310,7 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'service-2_0_x',
     title: 'Service 2.0.X',
-    toc_max_heading_level: 3,
+    toc_max_heading_level: 2,
     pagination_next: 'release-notes/service/service-1_114_x'
 };
 const contentTitle = undefined;
@@ -330,7 +330,7 @@ const metadata = {
     "frontMatter": {
         "id": "service-2_0_x",
         "title": "Service 2.0.X",
-        "toc_max_heading_level": 3,
+        "toc_max_heading_level": 2,
         "pagination_next": "release-notes/service/service-1_114_x"
     },
     "sidebar": "releaseSidebar",
