@@ -395,7 +395,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " PHP 8.1.0 버전에서 8.12 버전까지 발생하는 segmentation 오류 수정(사용자 함수에 대한 수집 중지)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, "Fixed"), " PHP 8.1.0 버전에서 8.1.2 버전까지 발생하는 segmentation 오류 수정(사용자 함수에 대한 수집 중지)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
