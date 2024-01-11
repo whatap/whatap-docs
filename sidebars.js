@@ -3080,17 +3080,18 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_25',
+                id: 'release-notes/java/java-2_2_26',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_25',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_26',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_25',
                 'release-notes/java/java-2_2_24',
                 'release-notes/java/java-2_2_23',
                 'release-notes/java/java-2_2_22',
@@ -3099,7 +3100,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_19',
                 'release-notes/java/java-2_2_18',
                 'release-notes/java/java-2_2_17',
-                'release-notes/java/java-2_2_16',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3160,12 +3160,12 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_87',
+                id: 'release-notes/nodejs/nodejs-0_4_88',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_87',
+                  id: 'release-notes/nodejs/nodejs-0_4_88',
                   className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_4_86',
