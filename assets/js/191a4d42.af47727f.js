@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[59710],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[89404],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 84416:
+/***/ 58618:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,30 +308,32 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-2_2_25',
-    title: 'Java Agent v2.2.25',
+    id: 'java-2_2_26',
+    title: 'Java Agent v2.2.26',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_24'
+    pagination_next: 'release-notes/java/java-2_2_25',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_25",
-    "id": "release-notes/java/java-2_2_25",
-    "title": "Java Agent v2.2.25",
-    "description": "2023년 12월 20일",
-    "source": "@site/docs/release-notes/java/java-2.2.25.mdx",
+    "unversionedId": "release-notes/java/java-2_2_26",
+    "id": "release-notes/java/java-2_2_26",
+    "title": "Java Agent v2.2.26",
+    "description": "2024년 01월 11일",
+    "source": "@site/docs/release-notes/java/java-2.2.26.mdx",
     "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_25",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_25",
+    "slug": "/release-notes/java/java-2_2_26",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_26",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.25.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.26.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-2_2_25",
-        "title": "Java Agent v2.2.25",
+        "id": "java-2_2_26",
+        "title": "Java Agent v2.2.26",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_24"
+        "pagination_next": "release-notes/java/java-2_2_25",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
@@ -339,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
     },
     "next": {
-        "title": "Java Agent v2.2.24",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_24"
+        "title": "Java Agent v2.2.25",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_25"
     }
 };
 const assets = {};
@@ -361,59 +363,115 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 20일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Feature"), " 로그 모니터링 자바애플리케이션 로그에 멀티 트랜잭션 아이디(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "@mtid"), " 태그) 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "logsink_enabled"), " 옵션 설정 시 트랜잭션 아이디와 멀티 트랜잭션 아이디를 수집할 수 있도록 수정 (기존: ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "logsink_trace_enabled"), " 옵션 추가)", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, "Feature"), " spring-boot-2.5 이상에서 reactor-kafka-1.3 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `# default: false
-logsink_enabled=false
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `# using spring-boot-2.5 ~
+weaving=spring-boot-2.5
+
+# using spring-boot-2.7 ~
+weaving=spring-boot-2.7
+
+# using spring-boot-3.0 ~
+weaving=spring-boot-3.0
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Changed"), " log4j 사용 시 appender를 기본 수집하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, "Feature"), " spring-boot-2.5 이상에서 RxJava 사용 시 RxJava의 schedule 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `# requires agent restart
-weaving=log4j-2.17
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `# using spring-boot-2.5 ~
+weaving=spring-boot-2.5
 
-# example: collect Console, AccessLog, ErrorLog 
-trace_log4j_appender_set=Console,AccessLog,ErrorLog
+# using spring-boot-2.7 ~
+weaving=spring-boot-2.7
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Changed"), " logback 사용 시 appender를 기본 수집하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, "Feature"), " spring-boot-3.0 이상에서 RxJava 3 사용 시 RxJava 3의 schedule 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `# requires agent restart
-weaving=logback-1.2.8
-
-# example: collect ErrorAppender, FileAppender log
-trace_logback_appender_set=ErrorAppender,FileAppender
-`)))));
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `# using spring-boot-3.0 ~
+weaving=spring-boot-3.0
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 에이전트 로그에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "threadName"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "className"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "methodName"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "lineNumber"), " 수집하여 표시", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-log",
+        "metastring": "title='whatap.log'",
+        "title": "'whatap.log'"
+    }, `[{threadName}][{className}.{methodName}({lineNumber})] 
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 에이전트 로그 형태 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-log",
+        "metastring": "title='whatap.log'",
+        "title": "'whatap.log'"
+    }, `{date} {time} [{threadName}][{className}.{methodName}({lineNumber})] ({work}) {log}
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "whatap log",
+        src: (__webpack_require__(25838)/* ["default"] */ .Z),
+        width: "1200",
+        height: "30"
+    }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " Tibero의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "CallableStatement"), " 추적"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " 에이전트 로그의 텍스트 색상 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " 에이전트 기동 시 에이전트 로그의 파일명을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "whatap-", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "date"), ".log"), "에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "whatap.log"), "로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " UTC 기준 날짜가 변경되면 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "whatap.log"), " 파일명을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "whatap-", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "date"), ".log"), "로 저장")));
 }
 MDXContent.isMDXComponent = true;
 
+
+/***/ }),
+
+/***/ 25838:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/release-java-log-129bfbe7ece5c141b21d673a9223eaab.png");
 
 /***/ })
 

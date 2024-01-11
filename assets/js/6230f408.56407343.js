@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[8465],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[25799],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 35278:
+/***/ 41964:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,46 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'php-previous',
-    title: 'PHP Agent 지난 버전',
-    toc_max_heading_level: 2
+    id: 'java-2_2_16',
+    title: 'Java Agent v2.2.16',
+    toc_max_heading_level: 2,
+    pagination_next: 'release-notes/java/java-2_2_15',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/php/php-previous",
-    "id": "release-notes/php/php-previous",
-    "title": "PHP Agent 지난 버전",
-    "description": "* PHP Agent v2.4.1",
-    "source": "@site/docs/release-notes/php/php-previous.mdx",
-    "sourceDirName": "release-notes/php",
-    "slug": "/release-notes/php/php-previous",
-    "permalink": "/whatap-docs/release-notes/php/php-previous",
+    "unversionedId": "release-notes/java/java-2_2_16",
+    "id": "release-notes/java/java-2_2_16",
+    "title": "Java Agent v2.2.16",
+    "description": "2023년 9월 8일",
+    "source": "@site/docs/release-notes/java/java-2.2.16.mdx",
+    "sourceDirName": "release-notes/java",
+    "slug": "/release-notes/java/java-2_2_16",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_16",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/php/php-previous.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.16.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "php-previous",
-        "title": "PHP Agent 지난 버전",
-        "toc_max_heading_level": 2
+        "id": "java-2_2_16",
+        "title": "Java Agent v2.2.16",
+        "toc_max_heading_level": 2,
+        "pagination_next": "release-notes/java/java-2_2_15",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "PHP Agent v2.5.0",
-        "permalink": "/whatap-docs/release-notes/php/php-2_5_0"
-    },
     "next": {
-        "title": "Node.js Agent v0.4.87",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_87"
+        "title": "Java Agent v2.2.15",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_15"
     }
 };
 const assets = {};
 const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const Status = makeShortcode("Status");
 const layoutProps = {
     toc
 };
@@ -354,28 +359,66 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 9월 8일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " Java 20 지원 (자바 옵션 필요)", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "php-2_4_1"
-    }, `PHP Agent v2.4.1`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `--add-opens=java.base/java.lang=ALL-UNNAMED
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " Redis의 Lettuce 드라이버 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "php-2_4_0"
-    }, `PHP Agent v2.4.0`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `weaving=lettuce-6.2
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " spring-boot-3.0 설정에 Lettuce 설정 포함", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "php-2_3_3"
-    }, `PHP Agent v2.3.3`)))));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `weaving=spring-boot-3.0
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "oracle.jdbc.driver.OraclePreparedStatement"), " 추적 제외하는 옵션 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `# default
+hook_pstmt_oracle_enabled=true
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " kafka-clients-2.4.0 추적 시 발생하는 kafka 헤더 로그 제거"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " okhttp-2.7, okhttp3-3.14, okhttp3-4.4 추적 시 HTTP Call 정보를 수집하지 못하는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " SQL 호출 시 발생할 수 있는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "java.sql.Date"), " 참조 에러 수정")));
 }
 MDXContent.isMDXComponent = true;
 

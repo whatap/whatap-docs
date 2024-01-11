@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[18775],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[89075],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 34489:
+/***/ 37630:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,29 +308,29 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'nodejs-0_4_87',
-    title: 'Node.js Agent v0.4.87',
+    id: 'nodejs-0_4_88',
+    title: 'Node.js Agent v0.4.88',
     toc_max_heading_level: 2,
     pagination_next: 'release-notes/nodejs/nodejs-0_4_86',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/nodejs/nodejs-0_4_87",
-    "id": "release-notes/nodejs/nodejs-0_4_87",
-    "title": "Node.js Agent v0.4.87",
+    "unversionedId": "release-notes/nodejs/nodejs-0_4_88",
+    "id": "release-notes/nodejs/nodejs-0_4_88",
+    "title": "Node.js Agent v0.4.88",
     "description": "2024년 01월 11일",
-    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.87.mdx",
+    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.88.mdx",
     "sourceDirName": "release-notes/nodejs",
-    "slug": "/release-notes/nodejs/nodejs-0_4_87",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_87",
+    "slug": "/release-notes/nodejs/nodejs-0_4_88",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_88",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.87.mdx",
+    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.88.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "nodejs-0_4_87",
-        "title": "Node.js Agent v0.4.87",
+        "id": "nodejs-0_4_88",
+        "title": "Node.js Agent v0.4.88",
         "toc_max_heading_level": 2,
         "pagination_next": "release-notes/nodejs/nodejs-0_4_86",
         "displayed_sidebar": "releaseSidebar"
@@ -379,7 +379,11 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " TCP, UDP 소켓 모니터링 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, "Fixed"), " TCP, UDP 소켓 모니터링 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "profile_http_header_enabled"), " 옵션의 값이 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "true"), "이면 profile의 headers 값을 나타내는 방식 수정 (JSON → key=value\\n)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
         parentName: "admonition"
