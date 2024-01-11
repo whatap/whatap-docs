@@ -415,6 +415,10 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
     }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "my_usage",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "project_subscription",
         className: "uitext",
         mdxType: "Cmdname"
@@ -422,7 +426,7 @@ function MDXContent(_param) {
         sid: "subscribe",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 창에서 프로젝트 이름이 긴 경우 말줄임 처리 및 마우스 오버 시 툴팁으로 프로젝트 이름을 보여주도록 개선"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), " 창에서 프로젝트 이름이 긴 경우 말줄임 처리, 마우스 오버 시 툴팁으로 프로젝트 이름을 보여주도록 개선"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
