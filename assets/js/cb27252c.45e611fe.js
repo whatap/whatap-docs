@@ -1147,7 +1147,7 @@ function MDXContent(_param) {
         class: "type"
     }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `무시할 Exception을 등록합니다. 여기에 등록되면 에러 자체가 무시됩니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `등록한 Exception의 에러 자체를 무시합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `Exception의 경우 Custom Exception Class가 정의되어 있지 않으면, 기본으로 Exception으로 수집됩니다. 특정 Exception을 구분하기 위해서는 Custom Exception Class를 정의하고 해당 이름을 지정하면 제외할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "트랜잭션-추적"

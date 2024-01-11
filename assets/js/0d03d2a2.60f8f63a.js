@@ -857,7 +857,7 @@ function MDXContent(_param) {
         class: "type"
     }, `String`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `무시할 Exception을 등록합니다. 여기에 등록되면 에러 자체가 무시됩니다. 예외할 문자열은 프로파일의 에러 종류 또는 에러 통계와 관련한 클래스 항목의 문자열입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `등록한 Exception의 에러 자체를 무시합니다. 예외할 문자열은 프로파일의 에러 종류 또는 에러 통계와 관련한 클래스 항목의 문자열입니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `Go에서는 발생하는 error의 Type을 문자열로 표기합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
