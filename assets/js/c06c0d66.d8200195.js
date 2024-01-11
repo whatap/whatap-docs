@@ -664,7 +664,7 @@ weaving=logback-1.2.8
     }), `처럼 해당 로그의 전체 content를 확인할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "차트로-로그-조회하기"
     }, `차트로 로그 조회하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "log-trend.png",
+        img: "log-trend-bar.png",
         desc: "로그 트렌드 바 차트 sc",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -676,7 +676,7 @@ weaving=logback-1.2.8
         src: (__webpack_require__(86917)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` 원하는 시간을 클릭하여 해당 시간의 로그를 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ` 원하는 시간을 클릭하여 해당 시간의 로그를 확인할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"

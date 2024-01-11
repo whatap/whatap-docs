@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[30981],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[84573],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 41388:
+/***/ 26329:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,22 +314,21 @@ const frontMatter = {
     tags: [
         '로그 모니터링',
         '로그 트렌드',
-        'UI',
-        'MySQL'
+        'UI'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/log-exp",
-    "id": "mysql/log-exp",
+    "unversionedId": "log/log-exp",
+    "id": "log/log-exp",
     "title": "로그 트렌드",
     "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-    "source": "@site/docs/mysql/log-exp.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/log-exp",
-    "permalink": "/whatap-docs/mysql/log-exp",
+    "source": "@site/docs/log/log-exp.mdx",
+    "sourceDirName": "log",
+    "slug": "/log/log-exp",
+    "permalink": "/whatap-docs/log/log-exp",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/log-exp.mdx",
+    "editUrl": "undefined/docs/log/log-exp.mdx",
     "tags": [
         {
             "label": "로그 모니터링",
@@ -342,10 +341,6 @@ const metadata = {
         {
             "label": "UI",
             "permalink": "/whatap-docs/tags/ui"
-        },
-        {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
         }
     ],
     "version": "current",
@@ -356,18 +351,17 @@ const metadata = {
         "tags": [
             "로그 모니터링",
             "로그 트렌드",
-            "UI",
-            "MySQL"
+            "UI"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "logSidebar",
     "previous": {
         "title": "라이브 테일",
-        "permalink": "/whatap-docs/mysql/log-lt"
+        "permalink": "/whatap-docs/log/log-lt"
     },
     "next": {
         "title": "로그 검색",
-        "permalink": "/whatap-docs/mysql/log-search"
+        "permalink": "/whatap-docs/log/log-search"
     }
 };
 const assets = {};
@@ -670,7 +664,7 @@ weaving=logback-1.2.8
     }), `처럼 해당 로그의 전체 content를 확인할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "차트로-로그-조회하기"
     }, `차트로 로그 조회하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "log-trend.png",
+        img: "log-trend-bar.png",
         desc: "로그 트렌드 바 차트 sc",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -682,7 +676,7 @@ weaving=logback-1.2.8
         src: (__webpack_require__(86917)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` 원하는 시간을 클릭하여 해당 시간의 로그를 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ` 원하는 시간을 클릭하여 해당 시간의 로그를 확인할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"

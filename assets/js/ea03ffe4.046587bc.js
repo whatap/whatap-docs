@@ -778,7 +778,7 @@ function MDXContent(_param) {
         parentName: "strong"
     }, `최근 24시간`)), `: 하루 동안 발송된 알람 개수를 표시합니다. `))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "kubernetes-이벤트-5"
-    }, `Kubernetes 이벤트 5`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `클러스터 프로젝트와 네임스페이스 프로젝트에서 발생한 최근 3개 쿠버네티스 이벤트 목록을 확인할 수 있습니다.`));
+    }, `Kubernetes 이벤트 5`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `클러스터 프로젝트와 네임스페이스 프로젝트에서 발생한 최근 5개 쿠버네티스 이벤트 목록을 확인할 수 있습니다.`));
 }
 MDXContent.isMDXComponent = true;
 

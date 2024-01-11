@@ -478,7 +478,33 @@ function MDXContent(_param) {
         src: (__webpack_require__(79221)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` 영역에서 원하는 컬럼을 선택 시 해당 컬럼 기준으로 컨테이너 목록을 정렬해 조회할 수 있습니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }), ` 영역에서 원하는 컬럼을 선택 시 해당 컬럼 기준으로 컨테이너 목록을 정렬해 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "number 02",
+        src: (__webpack_require__(79221)/* ["default"] */ .Z),
+        width: "35",
+        height: "35"
+    }), ` 영역 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `Node`)), ` 컬럼에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "상세 보기 아이콘",
+        src: (__webpack_require__(4281)/* ["default"] */ .Z),
+        width: "24",
+        height: "24"
+    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `노드 정보 보기`)), ` 아이콘 선택 시 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `노드 목록`)), ` 메뉴로 이동합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "메트릭-정보"
     }, `메트릭 정보`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -777,6 +803,16 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTcuNSIgY3k9IjE3LjUiIHI9IjE3LjUiIGZpbGw9IiNGOUMxMkEiLz4KPHBhdGggZD0iTTE5LjMyODEgMjUuNDY4OFY1SDIyLjk2ODhWMjlMMTkuNjcxOSAyOS4wMTU2TDE5LjMyODEgMjUuNDY4OFpNMTAuMjUgMjEuMjM0NFYxOS45MDYyQzEwLjI1IDE4LjUyMDggMTAuMzc1IDE3LjMyMjkgMTAuNjI1IDE2LjMxMjVDMTAuODc1IDE1LjI5MTcgMTEuMjM5NiAxNC40NDI3IDExLjcxODggMTMuNzY1NkMxMi4yMDgzIDEzLjA4ODUgMTIuNzk2OSAxMi41ODg1IDEzLjQ4NDQgMTIuMjY1NkMxNC4xNzE5IDExLjk0MjcgMTQuOTQ3OSAxMS43ODEyIDE1LjgxMjUgMTEuNzgxMkMxNi42NTYyIDExLjc4MTIgMTcuMzg1NCAxMS45NzQgMTggMTIuMzU5NEMxOC42MTQ2IDEyLjczNDQgMTkuMTM1NCAxMy4yNzA4IDE5LjU2MjUgMTMuOTY4OEMxOS45ODk2IDE0LjY2NjcgMjAuMzI4MSAxNS41IDIwLjU3ODEgMTYuNDY4OEMyMC44Mzg1IDE3LjQyNzEgMjEuMDE1NiAxOC41IDIxLjEwOTQgMTkuNjg3NVYyMS41MzEyQzIwLjk5NDggMjIuNjc3MSAyMC44MTI1IDIzLjcyOTIgMjAuNTYyNSAyNC42ODc1QzIwLjMxMjUgMjUuNjM1NCAxOS45NzQgMjYuNDUzMSAxOS41NDY5IDI3LjE0MDZDMTkuMTE5OCAyNy44MjgxIDE4LjU5MzggMjguMzY0NiAxNy45Njg4IDI4Ljc1QzE3LjM1NDIgMjkuMTI1IDE2LjYzMDIgMjkuMzEyNSAxNS43OTY5IDI5LjMxMjVDMTQuOTMyMyAyOS4zMTI1IDE0LjE1NjIgMjkuMTQwNiAxMy40Njg4IDI4Ljc5NjlDMTIuNzkxNyAyOC40NTMxIDEyLjIwODMgMjcuOTQyNyAxMS43MTg4IDI3LjI2NTZDMTEuMjM5NiAyNi41ODg1IDEwLjg3NSAyNS43NSAxMC42MjUgMjQuNzVDMTAuMzc1IDIzLjczOTYgMTAuMjUgMjIuNTY3NyAxMC4yNSAyMS4yMzQ0Wk0xMy44OTA2IDE5LjkwNjJWMjEuMjM0NEMxMy44OTA2IDIyLjA5OSAxMy45NDI3IDIyLjg0MzggMTQuMDQ2OSAyMy40Njg4QzE0LjE1MSAyNC4wOTM4IDE0LjMxNzcgMjQuNjA5NCAxNC41NDY5IDI1LjAxNTZDMTQuNzc2IDI1LjQxMTUgMTUuMDc4MSAyNS43MDgzIDE1LjQ1MzEgMjUuOTA2MkMxNS44MjgxIDI2LjA5MzggMTYuMjgxMiAyNi4xODc1IDE2LjgxMjUgMjYuMTg3NUMxNy40NzkyIDI2LjE4NzUgMTguMDIwOCAyNi4wMjA4IDE4LjQzNzUgMjUuNjg3NUMxOC44NjQ2IDI1LjM1NDIgMTkuMTkyNyAyNC45MDYyIDE5LjQyMTkgMjQuMzQzOEMxOS42NjE1IDIzLjc3MDggMTkuODI4MSAyMy4xMzU0IDE5LjkyMTkgMjIuNDM3NVYxOC43OTY5QzE5Ljg2OTggMTguMjQ0OCAxOS43NjU2IDE3LjczNDQgMTkuNjA5NCAxNy4yNjU2QzE5LjQ1MzEgMTYuNzg2NSAxOS4yNSAxNi4zNjk4IDE5IDE2LjAxNTZDMTguNzUgMTUuNjYxNSAxOC40NDI3IDE1LjM4NTQgMTguMDc4MSAxNS4xODc1QzE3LjcyNCAxNC45NzkyIDE3LjMwNzMgMTQuODc1IDE2LjgyODEgMTQuODc1QzE2LjI5NjkgMTQuODc1IDE1Ljg0MzggMTQuOTc5MiAxNS40Njg4IDE1LjE4NzVDMTUuMDkzOCAxNS4zODU0IDE0Ljc5MTcgMTUuNjkyNyAxNC41NjI1IDE2LjEwOTRDMTQuMzMzMyAxNi41MTU2IDE0LjE2MTUgMTcuMDM2NSAxNC4wNDY5IDE3LjY3MTlDMTMuOTQyNyAxOC4yOTY5IDEzLjg5MDYgMTkuMDQxNyAxMy44OTA2IDE5LjkwNjJaIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=");
+
+/***/ }),
+
+/***/ 4281:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00IDRIMjBDMjEuMDM1MyA0IDIxLjg5MzQgNC43OTcyMyAyMS45OTA4IDUuODA4MUwyMiA2VjkuMzMzMzNIMjBWNkg0VjE4SDE0VjIwSDRDMi45NjQ3MSAyMCAyLjEwNjU3IDE5LjIwMjggMi4wMDkyIDE4LjE5MTlMMiAxOFY2QzIgNC45NjQ3MSAyLjc5NzIzIDQuMTA2NTcgMy44MDgxIDQuMDA5Mkw0IDRaTTIwLjQ1NjcgMTkuMjFMMTcuNTQ2NyAxNi4zQzE2Ljg1NjcgMTYuNzQgMTYuMDM2NyAxNyAxNS4xNTY3IDE3QzEyLjY3NjcgMTcgMTAuNjY2NyAxNC45OSAxMC42NjY3IDEyLjVDMTAuNjY2NyAxMC4wMSAxMi42NzY3IDggMTUuMTY2NyA4QzE3LjY1NjcgOCAxOS42NjY3IDEwLjAxIDE5LjY2NjcgMTIuNUMxOS42NjY3IDEzLjM4IDE5LjQwNjcgMTQuMTkgMTguOTY2NyAxNC44OUwyMS44NzY3IDE3Ljc5TDIwLjQ1NjcgMTkuMjFaTTE1LjE2NjcgMTBDMTMuNzg2NyAxMCAxMi42NjY3IDExLjEyIDEyLjY2NjcgMTIuNUMxMi42NjY3IDEzLjg4IDEzLjc4NjcgMTUgMTUuMTY2NyAxNUMxNi41NDY3IDE1IDE3LjY2NjcgMTMuODggMTcuNjY2NyAxMi41QzE3LjY2NjcgMTEuMTIgMTYuNTQ2NyAxMCAxNS4xNjY3IDEwWiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K");
 
 /***/ }),
 
