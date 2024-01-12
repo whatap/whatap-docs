@@ -354,7 +354,7 @@ const metadata = {
             "설치"
         ]
     },
-    "sidebar": "pluginSidebar",
+    "sidebar": "otelSidebar",
     "previous": {
         "title": "OpenTelemetry",
         "permalink": "/whatap-docs/opentelemetry/introduction"

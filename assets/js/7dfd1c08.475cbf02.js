@@ -352,10 +352,6 @@ const metadata = {
     "previous": {
         "title": "관리하기",
         "permalink": "/whatap-docs/telegraf/manage"
-    },
-    "next": {
-        "title": "OpenTelemetry",
-        "permalink": "/whatap-docs/opentelemetry/introduction"
     }
 };
 const assets = {};

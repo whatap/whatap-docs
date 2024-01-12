@@ -354,7 +354,7 @@ const metadata = {
             "에이전트"
         ]
     },
-    "sidebar": "pluginSidebar",
+    "sidebar": "otelSidebar",
     "previous": {
         "title": "에이전트 설치",
         "permalink": "/whatap-docs/opentelemetry/install-agent"

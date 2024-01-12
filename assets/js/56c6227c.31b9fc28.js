@@ -348,11 +348,7 @@ const metadata = {
             "Extensions"
         ]
     },
-    "sidebar": "pluginSidebar",
-    "previous": {
-        "title": "사용 예시",
-        "permalink": "/whatap-docs/telegraf/telegraf-usage"
-    },
+    "sidebar": "otelSidebar",
     "next": {
         "title": "에이전트 설치",
         "permalink": "/whatap-docs/opentelemetry/install-agent"
