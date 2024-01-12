@@ -18,9 +18,9 @@ const ScrollToHashComponent = ({anchor}) => {
       });
     }
   }, []);
-
+  const targetPath = location.pathname + '#' + anchor;
   return (
-    <span ref={targetRef} id={anchor}>&#8203;</span>
+    <a href={targetPath} className='hash-link'><span ref={targetRef} id={anchor}>&#8203;</span></a>
   );
 };
 
