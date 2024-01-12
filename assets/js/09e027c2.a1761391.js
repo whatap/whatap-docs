@@ -318,7 +318,7 @@ const metadata = {
     "unversionedId": "release-notes/service/service-2_0_x",
     "id": "release-notes/service/service-2_0_x",
     "title": "Service 2.0.X",
-    "description": "Service 2.0.2",
+    "description": "Service 2.0.3",
     "source": "@site/docs/release-notes/service/service-2.0.x.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-2_0_x",
@@ -345,6 +345,16 @@ const metadata = {
 };
 const assets = {};
 const toc = [
+    {
+        value: 'Service 2.0.3',
+        id: 'service-203',
+        level: 2
+    },
+    {
+        value: '<code>Application</code>',
+        id: 'application',
+        level: 3
+    },
     {
         value: 'Service 2.0.2',
         id: 'service-202',
@@ -412,7 +422,7 @@ const toc = [
     },
     {
         value: '<code>Application</code>',
-        id: 'application',
+        id: 'application-1',
         level: 3
     },
     {
@@ -500,8 +510,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
-const Status = makeShortcode("Status");
 const Cmdname = makeShortcode("Cmdname");
+const Status = makeShortcode("Status");
 const LinkImage = makeShortcode("LinkImage");
 const Link = makeShortcode("Link");
 const layoutProps = {
@@ -516,6 +526,42 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "service-203"
+    }, `Service 2.0.3`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 12일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "application"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "application_dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 다음의 기능을 수정합니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "AA002",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 위젯에서 종류별 필터가 적용되지 않는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "ITM06008",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 또는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "ITM06009",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 옵션을 선택한 다음 에이전트를 선택하지 않았는데 전체 에이전트가 조회되는 문제 수정"))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "service-202"
     }, `Service 2.0.2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
@@ -839,7 +885,7 @@ function MDXContent(_param) {
     }), ` 버튼을 선택한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "uitext"
     }, `Dark`), `를 클릭하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "application"
+        "id": "application-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
