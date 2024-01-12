@@ -1614,5 +1614,9 @@
   "sidebar.indexSidebar.link.상세 검색": {
     "message": "Detailed Search",
     "description": "The label for link 상세 검색 in sidebar indexSidebar, linking to search"
+  },
+  "sidebar.npmsidebar.category.에이전트 설치": {
+    "message": "Agent Installation",
+    "description": "The label for category 에이전트 설치 in sidebar npmsidebar"
   }
 }
