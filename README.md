@@ -8,6 +8,11 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 ## 다국어 문서 수정 사항
 
+번역 전 다음의 파일에 주석 삭제할 것
+
+- about-apm-heap-memory.mdx
+- kubernetes/dashboard.mdx
+
 * /\\_([a-z]) -> /_$1
 
 * : \_ -> : _
