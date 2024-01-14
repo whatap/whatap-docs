@@ -45326,7 +45326,7 @@
   },
   "ITM06575": {
     "en": "Cell phones",
-    "ja": "一般携帯電話",
+    "ja": "携帯電話",
     "ko": "일반 휴대전화",
     "zh": "Cell phones",
     "service_id": "ITM06575"
@@ -45340,7 +45340,7 @@
   },
   "DSC06577": {
     "en": "You can only register <span style=\"color: #F34747;\">Korean mobile phone numbers</span>.",
-    "ja": "一般携帯電話は<span style=\"color: #F34747;\">韓国内での携帯電話番号のみ登録</span>できます。",
+    "ja": "日本国内の携帯電話番号のみ登録できます。(入力例: 8012345678)",
     "ko": "일반 휴대전화는 <span style=\"color: #F34747;\">한국 휴대전화 번호만 등록</span> 가능합니다.",
     "zh": "You can only register <span style=\"color: #F34747;\">Korean mobile phone numbers</span>.",
     "service_id": "DSC06577"
@@ -51430,56 +51430,56 @@
   },
   "DSC07465": {
     "en": "View data for {minutes} minutes based on the last hour of the selected time.",
-    "ja": "選択した最後の時刻に基づいて{minutes}分のデータを照会します。",
+    "ja": "選択した時間の最後の時刻を基準で{minutes}分間のデータを照会します。",
     "ko": "선택한 시간의 마지막 시간을 기준으로 {minutes}분 간의 데이터를 조회합니다.",
     "zh": "View data for {minutes} minutes based on the last hour of the selected time.",
     "service_id": "DSC07465"
   },
   "TLT07466": {
     "en": "View correlated server key indicators",
-    "ja": "相関するサーバーの主要な指標を表示する",
+    "ja": "関連するサーバーの主な指標を表示します。",
     "ko": "연계 서버 주요 지표 보기",
     "zh": "View correlated server key indicators",
     "service_id": "TLT07466"
   },
   "TLT07467": {
     "en": "View correlated DB key indicators",
-    "ja": "相関のある DB 主要指標を表示する",
+    "ja": "関連する DBの主な指標を表示します。",
     "ko": "연계 DB 주요 지표 보기",
     "zh": "View correlated DB key indicators",
     "service_id": "TLT07467"
   },
   "DSC07468": {
     "en": "There are no correlated projects that match the search conditions or can be viewed.",
-    "ja": "検索条件に一致する、または参照できる相関プロジェクトがありません。",
+    "ja": "検索条件と一致するか、参照できる連携プロジェクトがありません。",
     "ko": "검색 조건과 일치하거나, 조회할 수 있는 연계 프로젝트가 없습니다.",
     "zh": "There are no correlated projects that match the search conditions or can be viewed.",
     "service_id": "DSC07468"
   },
   "BTN07469": {
     "en": "Expand All",
-    "ja": "全てを展開",
+    "ja": "全てを開く",
     "ko": "전체 펼침",
     "zh": "Expand All",
     "service_id": "BTN07469"
   },
   "BTN07470": {
     "en": "Collapse All",
-    "ja": "フルフォールド",
+    "ja": "全てを畳む",
     "ko": "전체 접음",
     "zh": "Collapse all",
     "service_id": "BTN07470"
   },
   "TLT07471": {
     "en": "Search Group/Project name",
-    "ja": "グループ/プロジェクト名検索",
+    "ja": "グループ/プロジェクト名の検索",
     "ko": "그룹 / 프로젝트 명 검색",
     "zh": "Search for Group/Project name",
     "service_id": "TLT07471"
   },
   "DSC07472": {
     "en": "WhaTap's Single Sign On (SSO) service allows you to easily create and register keys and credentials from the management console.<br/>You can be issued up to 5 keys, each with its own credential value.",
-    "ja": "WhaTapのシングルサインオン(SSO)サービスでは、管理コンソールからキーとクレデンシャルを簡単に作成・登録することができます。<br />最大5つのキーを発行することができ、それぞれにクレデンシャル値が設定されています。",
+    "ja": "WhaTapのSSO(シングルサインオン)では、管理画面からキーと認証情報を簡単に作成と登録できます。<br />最大5つのキーが発行でき、それぞれに固有の認証情報を持ちます。",
     "ko": "와탭의 Single Sign On(SSO) 서비스는 관리 콘솔에서 키와 인증 정보를 간단히 생성, 등록할 수 있습니다.<br/>키는 5개까지 발급받을 수 있으며 각각 고유의 인증 정보 값을 가지고 있습니다.",
     "zh": "WhaTap's Single Sign On (SSO) service allows you to easily create and register keys and credentials from the management console.<br/>You can be issued up to 5 keys, each with its own credential value.",
     "service_id": "DSC07472"
@@ -51493,7 +51493,7 @@
   },
   "DSC07474": {
     "en": "Get an SSO key to use the WhaTap SSO service.",
-    "ja": "WhaTap SSOサービスを使用するためのSSOキーを取得します。",
+    "ja": "WhaTapのSSOを使用するためには、まずSSOキーを取得します。",
     "ko": "와탭 SSO 서비스를 사용하려면 SSO 키를 발급받으세요.",
     "zh": "Get an SSO key to use the WhaTap SSO service.",
     "service_id": "DSC07474"
@@ -51514,7 +51514,7 @@
   },
   "DSC07477": {
     "en": "Do you want an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
-    "ja": "追加でSSOキーを発行しますか？<br />新しく発行された鍵の情報に内容が変更されます。<br />発行された鍵は[SSO情報の確認]で確認できます。",
+    "ja": "追加でSSOキーを発行しますか？<br />新しく発行されたキーの情報に内容が変更されます。<br />発行されたキーは「SSO情報の確認」から確認できます。",
     "ko": "SSO 키를 추가 발급받겠습니까?<br />새로 발급받는 키의 정보로 내용이 변경됩니다.<br />발급 받은 키는 [SSO 정보 확인]에서 조회할 수 있습니다",
     "zh": "Do you want to be issued an additional SSO key?<br />The contents will be changed to the information of the newly issued key.<br/>You can view the issued key in [Check SSO information].",
     "service_id": "DSC07477"
@@ -51528,7 +51528,7 @@
   },
   "DSC07479": {
     "en": "The SSO key contains important information to integrate with WhaTap, so pleaes check thoroughly.",
-    "ja": "発行されたSSOキーは、WhaTapと統合するための重要な情報ですので、正しく確認してください。",
+    "ja": "発行されたSSOキーは、WhaTapとのログイン連携に重要な情報ですので、正しく確認してください。",
     "ko": "발급받은 SSO 키는 와탭의 연동에 필요한 중요한 정보이므로 정확히 확인하세요.",
     "zh": "The SSO key you've been issued is important information for integration with WhaTap, so make sure to check it correctly.",
     "service_id": "DSC07479"
@@ -51549,14 +51549,14 @@
   },
   "DSC07482": {
     "en": "All selected SSO keys and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
-    "ja": "選択したSSOキーと認証情報は削除されます。<br />本当にSSOキー({keyName})を削除しますか？",
+    "ja": "選択したSSOキーと認証情報が削除されます。<br />本当にSSOキー({keyName})を削除しますか？",
     "ko": "선택한 SSO 키와 인증 정보는 모두 삭제됩니다.<br />SSO 키({keyName})를 삭제하겠습니까?",
     "zh": "The selected SSO key and credentials will be deleted.<br />Are you sure you want to delete the SSO key ({keyName})?",
     "service_id": "DSC07482"
   },
   "DSC07483": {
     "en": "No key has been issued. Get a key from [Issue SSO key].",
-    "ja": "キーが発行されていません。[SSOキーの発行]からキーを取得してください。",
+    "ja": "キーが発行されていません。「SSOキーの発行」からキーを取得してください。",
     "ko": "발급받은 키가 없습니다. [SSO 키 발급]에서 키를 발급받으세요.",
     "zh": "No key has been issued. Get a key from [Issue SSO key].",
     "service_id": "DSC07483"
@@ -51577,28 +51577,28 @@
   },
   "TTL07486": {
     "en": "View and manage IdP information",
-    "ja": "IdP情報の確認・管理",
+    "ja": "IdP情報の確認と管理",
     "ko": "IdP 정보 확인 및 관리",
     "zh": "View and manage IdP information",
     "service_id": "TTL07486"
   },
   "TTL07487": {
     "en": "Register Identity Provider information",
-    "ja": "Identity Provider情報登録",
+    "ja": "Identity Provider情報の登録",
     "ko": "Identity Provider 정보 등록",
     "zh": "Register Identity Provider Information",
     "service_id": "TTL07487"
   },
   "DSC07488": {
     "en": "You can view and manage the IdP information generated by the metadata you registered.",
-    "ja": "登録したメタデータから生成されるIdP情報を閲覧・管理できる。",
+    "ja": "登録したメタデータから生成されたIdP情報を閲覧と管理できます。",
     "ko": "등록한 Metadata를 통해 생성된 IdP 정보를 확인 및 관리할 수 있습니다.",
     "zh": "You can view and manage the IdP information generated by the metadata you registered.",
     "service_id": "DSC07488"
   },
   "DSC07489": {
     "en": "Register and provide the information needed for authentication by registering metadata with WhaTap that can be verified by Okta.",
-    "ja": "Oktaが確認できるメタデータをWhaTapに登録し、認証に必要な情報を提供する。",
+    "ja": "Oktaが確認できるメタデータをWhaTapに登録し、認証に必要な情報を登録と提供します。",
     "ko": "Okta에서 확인할 수 있는 Metadata를 와탭에 등록하여 인증에 필요한 정보를 등록 및 제공합니다.",
     "zh": "Register and provide the information needed for authentication by registering metadata with WhaTap that can be verified by Okta.",
     "service_id": "DSC07489"
@@ -51612,35 +51612,35 @@
   },
   "BTN07491": {
     "en": "Register External IdP",
-    "ja": "External IdP登録",
+    "ja": "External IdPの登録",
     "ko": "External IdP 등록",
     "zh": "Register External IdP",
     "service_id": "BTN07491"
   },
   "DSC07492": {
     "en": "Please register the metadata of your External Identity Provider.",
-    "ja": "External Identity ProviderのMetadataを登録してください。",
+    "ja": "External Identity Providerのメタデータを登録してください。",
     "ko": "External Identity Provider의 Metadata를 등록해 주세요.",
     "zh": "Please register the metadata of your external identity provider.",
     "service_id": "DSC07492"
   },
   "DSC07493": {
     "en": "Click the [Register Metadata] button to automatically convert it to Certificates data.",
-    "ja": "[Metadata登録]ボタンをクリックすると、Certificatesデータに自動変換されます。",
+    "ja": "「メタデータ登録」ボタンをクリックすると、Certificatesデータに自動で変換されます。",
     "ko": "[Metadata 등록] 버튼을 클릭하면 Certificates 데이터로 자동 변환됩니다.",
     "zh": "Click the [Register Metadata] button to automatically convert it to certificates data.",
     "service_id": "DSC07493"
   },
   "BTN07494": {
     "en": "Register Metadata",
-    "ja": "Metadata登録",
+    "ja": "メタデータ登録",
     "ko": "Metadata 등록",
     "zh": "Register Metadata",
     "service_id": "BTN07494"
   },
   "DSC07495": {
     "en": "Paste the metadata you copied from Okta.",
-    "ja": "OktaからコピーしたMetadataを貼り付けてください。",
+    "ja": "Oktaからコピーしたメタデータを貼り付けてください。",
     "ko": "Okta에서 복사한 Metadata를 붙여넣기하세요.",
     "zh": "Paste the metadata you copied from Okta.",
     "service_id": "DSC07495"
@@ -51661,7 +51661,7 @@
   },
   "TLT07498": {
     "en": "Copy and paste the converted values in the Metadata item.",
-    "ja": "Metadata項目で変換した値をコピー、貼り付けてください。",
+    "ja": "メタデータ項目で変換した値をコピー、貼り付けてください。",
     "ko": "Metadata 항목에서 변환한 값을 복사, 붙여넣기하세요.",
     "zh": "Copy and paste the converted values in the Metadata item.",
     "service_id": "TLT07498"
@@ -51675,28 +51675,28 @@
   },
   "TTL07500": {
     "en": "SSO account integration",
-    "ja": "SSOアカウント連動設定",
+    "ja": "SSOアカウント連携の設定",
     "ko": "SSO 계정 연동 설정",
     "zh": "Set up SSO account integration",
     "service_id": "TTL07500"
   },
   "DSC07501": {
     "en": "By setting up Single Sign-On (SSO), users can access all linked services with a single login.<br />You can easily manage your accounts using one ID and password. In addition, WhaTap's SSO service is safe and provides enhanced security.",
-    "ja": "Single Sign-On(SSO)を設定すると、ユーザーは一度のログインで連動されたすべてのサービスを利用することができます。<br />一つのIDとパスワードを使用して簡単にアカウントを管理することができます。 また、WhaTapのSSOサービスは安全で強化されたセキュリティを提供します。",
+    "ja": "SSO(シングルサインオン)を設定すると、ユーザーは一度のログインで連携されたすべてのサービスを利用することができます。<br />一つのIDとパスワードを使用して簡単にアカウントを管理することができます。 また、WhaTapのSSOでは、安全で強化されたセキュリティを提供します。",
     "ko": "Single Sign-On(SSO)를 설정하면 사용자는 한번의 로그인으로 연동된 모든 서비스를 이용할 수 있습니다.<br />하나의 아이디와 비밀번호를 사용해 간편하게 계정을 관리할 수 있습니다. 또한 와탭의 SSO 서비스는 안전하고 강화된 보안을 제공합니다.",
     "zh": "By setting up Single Sign-On (SSO), users can access all linked services with a single login.<br />You can easily manage your accounts using one ID and password. In addition, WhaTap's SSO service is safe and provides enhanced security.",
     "service_id": "DSC07501"
   },
   "NTC07502": {
     "en": "Metadata has been registered.",
-    "ja": "Metadata登録に成功しました。",
+    "ja": "メタデータ登録に成功しました。",
     "ko": "Metadata 등록에 성공했습니다.",
     "zh": "Metadata registration was successful.",
     "service_id": "NTC07502"
   },
   "NTC07503": {
     "en": "Metadata registration failed.",
-    "ja": "Metadata登録に失敗しました。",
+    "ja": "メタデータ登録に失敗しました。",
     "ko": "Metadata 등록에 실패했습니다.",
     "zh": "Metadata registration failed.",
     "service_id": "NTC07503"
@@ -51766,14 +51766,14 @@
   },
   "DSC07513": {
     "en": "Fees for using WhaTap service are {postpaid}.\nPayment details can be checked in the Billing history menu.",
-    "ja": "ワタップサービスの利用料金は{postpaid}となります。\nお支払い履歴は、請求および支払い履歴メニューで確認できます。",
+    "ja": "WhaTap Monitoringの利用料金は{postpaid}となります。\nお支払い履歴は、請求および支払い履歴メニューから確認できます。",
     "ko": "와탭 서비스 이용 요금은 {postpaid} 됩니다.\n결제 내역은 청구 및 납부 내역 메뉴에서 확인할 수 있습니다.",
     "zh": "Fees for using WhaTap service are {postpaid}.\nPayment details can be checked in the Billing history menu.",
     "service_id": "DSC07513"
   },
   "DSC07514": {
     "en": "Postpaid on the 25th of each month",
-    "ja": "後払いで毎月25日決済",
+    "ja": "翌月の25日の決済(後払い)",
     "ko": "후불로 매월 25일 결제",
     "zh": "Postpaid on the 25th of each month",
     "service_id": "DSC07514"
@@ -51787,10 +51787,178 @@
   },
   "NTC07516": {
     "en": "*SSO keys can be issued up to {max}. {current}/{max}",
-    "ja": "*SSOキーは最大{max}個まで発行できます。{current}/{max}",
+    "ja": "*SSOキーは最大{max}件まで発行できます。{current}/{max}",
     "ko": "*SSO 키는 최대 {max}개까지 발급할 수 있습니다. {current}/{max}",
     "zh": "*SSO keys can be issued up to {max}. {current}/{max}",
     "service_id": "NTC07516"
+  },
+  "NTC07517": {
+    "en": "Please enter the event title.",
+    "ja": "イベント名を入力してください。",
+    "ko": "이벤트 이름을 입력해 주세요.",
+    "zh": "Please enter the event title.",
+    "service_id": "NTC07517"
+  },
+  "NTC07518": {
+    "en": "Please enter the number of consecutive occurrences.",
+    "ja": "連続発生回数を入力してください。",
+    "ko": "연속 횟수를 입력해 주세요.",
+    "zh": "Please enter the number of consecutive occurrences.",
+    "service_id": "NTC07518"
+  },
+  "NTC07519": {
+    "en": "Please set different indicator settings.",
+    "ja": "指標の設定値を異なるように設定してください。",
+    "ko": "지표 설정값을 다르게 설정해 주세요.",
+    "zh": "Please set different indicator settings.",
+    "service_id": "NTC07519"
+  },
+  "NTC07520": {
+    "en": "Please enter the message.",
+    "ja": "メッセージを入力してください。",
+    "ko": "메시지를 입력해 주세요.",
+    "zh": "Please enter the message.",
+    "service_id": "NTC07520"
+  },
+  "NTC07521": {
+    "en": "The event name can be up to {max_length} characters long.",
+    "ja": "イベント名は最大 {max_length} 文字まで入力できます。",
+    "ko": "이벤트 이름은 최대 {max_length}자 까지 입력할 수 있습니다.",
+    "zh": "Event title can be up to {max_length} characters long.",
+    "service_id": "NTC07521"
+  },
+  "NTC07522": {
+    "en": "Messages can be up to {max_length} characters long.",
+    "ja": "メッセージ内容は最大 {max_length} 文字まで入力できます。",
+    "ko": "메시지는 최대 {max_length}자 까지 입력할 수 있습니다.",
+    "zh": "Message can be up to {max_length} characters long.",
+    "service_id": "NTC07522"
+  },
+  "TTL07523": {
+    "en": "Number of requests currently running (1 second)",
+    "ja": "現在実行中のリクエスト数（1秒）",
+    "ko": "현재 실행 중인 요청 수 (1초)",
+    "zh": "Number of currently executing requests (in 1 second)",
+    "service_id": "TTL07523"
+  },
+  "TTL07524": {
+    "en": "Thread count",
+    "ja": "スレッド数",
+    "ko": "스레드 수",
+    "zh": "number of threads",
+    "service_id": "TTL07524"
+  },
+  "TTL07525": {
+    "en": "Goroutine count",
+    "ja": "ごルーチン数",
+    "ko": "고루틴 수",
+    "zh": "number of goroutines",
+    "service_id": "TTL07525"
+  },
+  "TTL07526": {
+    "en": "3xx response number of requests per Resource & Subresource",
+    "ja": "3xx応答のResourceとSubresource別のリクエスト数",
+    "ko": "3xx 응답 Resource & Subresource 별 요청 수",
+    "zh": "Number of requests by 3xx response Resource & Subresource",
+    "service_id": "TTL07526"
+  },
+  "TTL07527": {
+    "en": "2xx response number of requests by Resource & Subresource",
+    "ja": "2xx応答のResourceとSubresource別のリクエスト数",
+    "ko": "2xx 응답 Resource & Subresource 별 요청 수",
+    "zh": "2xx Response Number of requests by Resource & Subresource",
+    "service_id": "TTL07527"
+  },
+  "TTL07528": {
+    "en": "3xx ~ Trend of number of requests by response code",
+    "ja": "3xx〜応答コード別のリクエスト数推移",
+    "ko": "3xx ~ 응답 코드별 요청 수 추이",
+    "zh": "3xx ~ Trend of number of requests by response code",
+    "service_id": "TTL07528"
+  },
+  "TTL07529": {
+    "en": "3xx ~ Total number of requests",
+    "ja": "3xx〜全体リクエスト数",
+    "ko": "3xx ~ 전체 요청 수",
+    "zh": "3xx ~ Total number of requests",
+    "service_id": "TTL07529"
+  },
+  "TTL07530": {
+    "en": "2xx Trend of response request count",
+    "ja": "2xx応答のリクエスト数推移",
+    "ko": "2xx 응답 요청 수 추이",
+    "zh": "2xx response request count trend",
+    "service_id": "TTL07530"
+  },
+  "TTL07531": {
+    "en": "2xx Total number of response requests",
+    "ja": "2xx応答の全体リクエスト数",
+    "ko": "2xx 응답 전체 요청 수",
+    "zh": "2xx Response Total number of requests",
+    "service_id": "TTL07531"
+  },
+  "TTL07532": {
+    "en": "Trends in POST requests by Resource & Subresource",
+    "ja": "ResourceとSubresource別のPOSTリクエスト数の推移",
+    "ko": "Resource & Subresource 별 POST 요청 수 추이",
+    "zh": "Trend of number of POST requests by Resource & Subresource",
+    "service_id": "TTL07532"
+  },
+  "TTL07533": {
+    "en": "Trend of POST requests per second",
+    "ja": "1秒当たりPOSTリクエスト数の推移",
+    "ko": "초당 POST 요청 수 추이",
+    "zh": "Trend of POST requests per second",
+    "service_id": "TTL07533"
+  },
+  "TTL07534": {
+    "en": "POST request status",
+    "ja": "POSTリクエストの状況",
+    "ko": "POST 요청 현황",
+    "zh": "POST request status",
+    "service_id": "TTL07534"
+  },
+  "TTL07535": {
+    "en": "Trends in the number of GET requests per Resource & Subresource",
+    "ja": "ResourceとSubresource別のGETリクエスト数の推移",
+    "ko": "Resource & Subresource 별 GET 요청 수 추이",
+    "zh": "Trend of number of GET requests by Resource & Subresource",
+    "service_id": "TTL07535"
+  },
+  "TTL07536": {
+    "en": "GET request status",
+    "ja": "GETリクエストの状況",
+    "ko": "GET 요청 현황",
+    "zh": "GET request status",
+    "service_id": "TTL07536"
+  },
+  "TTL07537": {
+    "en": "Trend of GET requests per second",
+    "ja": "1秒当たりGETリクエスト数の推移",
+    "ko": "초당 GET 요청 수 추이",
+    "zh": "Trend of GET requests per second",
+    "service_id": "TTL07537"
+  },
+  "TTL07538": {
+    "en": "GET request statistics",
+    "ja": "GETリクエスト統計",
+    "ko": "GET 요청 통계",
+    "zh": "GET request statistics",
+    "service_id": "TTL07538"
+  },
+  "TTL07539": {
+    "en": "POST request statistics",
+    "ja": "POSTリクエスト統計",
+    "ko": "POST 요청 통계",
+    "zh": "POST request statistics",
+    "service_id": "TTL07539"
+  },
+  "TTL07540": {
+    "en": "Request statistics by response code",
+    "ja": "応答コード別のリクエスト統計",
+    "ko": "응답 코드별 요청 통계",
+    "zh": "Request statistics by response code",
+    "service_id": "TTL07540"
   },
   "": {
     "": "",

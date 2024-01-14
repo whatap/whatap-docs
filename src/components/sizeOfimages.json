@@ -5735,6 +5735,30 @@
     "width": 372,
     "height": 137
   },
+  "k8s-app-list-detail-en.png": {
+    "width": 1200,
+    "height": 678
+  },
+  "k8s-app-list-detail-ja.png": {
+    "width": 1200,
+    "height": 676
+  },
+  "k8s-app-list-detail.png": {
+    "width": 1200,
+    "height": 686
+  },
+  "k8s-app-list-en.png": {
+    "width": 1200,
+    "height": 437
+  },
+  "k8s-app-list-ja.png": {
+    "width": 1200,
+    "height": 437
+  },
+  "k8s-app-list.png": {
+    "width": 1200,
+    "height": 438
+  },
   "k8s-application-accesskey-en.png": {
     "width": 1200,
     "height": 403
@@ -5842,6 +5866,18 @@
   "k8s-container-group.png": {
     "width": 1210,
     "height": 547
+  },
+  "k8s-container-img-en.png": {
+    "width": 1200,
+    "height": 655
+  },
+  "k8s-container-img-ja.png": {
+    "width": 1201,
+    "height": 653
+  },
+  "k8s-container-img.png": {
+    "width": 1200,
+    "height": 658
   },
   "k8s-container-log-en.png": {
     "width": 1200,
@@ -5959,13 +5995,29 @@
     "width": 1173,
     "height": 894
   },
+  "k8s-cor-pj-add-en.png": {
+    "width": 1200,
+    "height": 299
+  },
+  "k8s-cor-pj-add-ja.png": {
+    "width": 1200,
+    "height": 298
+  },
   "k8s-cor-pj-add.png": {
     "width": 1200,
-    "height": 348
+    "height": 299
+  },
+  "k8s-cor-pj-em-en.png": {
+    "width": 1200,
+    "height": 300
+  },
+  "k8s-cor-pj-em-ja.png": {
+    "width": 1200,
+    "height": 300
   },
   "k8s-cor-pj-em.png": {
     "width": 1200,
-    "height": 351
+    "height": 301
   },
   "k8s-cor-pj.png": {
     "width": 1200,
@@ -6138,6 +6190,30 @@
   "k8s-pod-init-perform.png": {
     "width": 1626,
     "height": 939
+  },
+  "k8s-pod-list-detail-en.png": {
+    "width": 1200,
+    "height": 562
+  },
+  "k8s-pod-list-detail-ja.png": {
+    "width": 1200,
+    "height": 570
+  },
+  "k8s-pod-list-detail.png": {
+    "width": 1200,
+    "height": 576
+  },
+  "k8s-pod-list-en.png": {
+    "width": 1200,
+    "height": 555
+  },
+  "k8s-pod-list-ja.png": {
+    "width": 1200,
+    "height": 548
+  },
+  "k8s-pod-list.png": {
+    "width": 1200,
+    "height": 611
   },
   "k8s-resource-cl-sum-ci-en.png": {
     "width": 1200,
@@ -6603,6 +6679,10 @@
     "width": 1200,
     "height": 639
   },
+  "log-agent-option-level.png": {
+    "width": 1200,
+    "height": 224
+  },
   "log-alert-config-en.png": {
     "width": 1321,
     "height": 636
@@ -6693,7 +6773,7 @@
   },
   "log-content-search-more.png": {
     "width": 800,
-    "height": 359
+    "height": 426
   },
   "log-content-search.png": {
     "width": 1362,
@@ -6704,8 +6784,24 @@
     "height": 933
   },
   "log-filter-comp.png": {
-    "width": 442,
-    "height": 50
+    "width": 348,
+    "height": 54
+  },
+  "log-filter-search.png": {
+    "width": 1127,
+    "height": 112
+  },
+  "log-filter-ui1.png": {
+    "width": 1177,
+    "height": 759
+  },
+  "log-filter-ui2.png": {
+    "width": 1123,
+    "height": 215
+  },
+  "log-filter-ui3.png": {
+    "width": 1124,
+    "height": 564
   },
   "log-filter.png": {
     "width": 1105,
@@ -6960,8 +7056,8 @@
     "height": 133
   },
   "log-lt-filter-modify.png": {
-    "width": 529,
-    "height": 139
+    "width": 1125,
+    "height": 564
   },
   "log-lt-highlight-en.png": {
     "width": 610,
@@ -7036,8 +7132,8 @@
     "height": 607
   },
   "log-search-content-search-highlight.png": {
-    "width": 1625,
-    "height": 609
+    "width": 1200,
+    "height": 679
   },
   "log-search-en.png": {
     "width": 1185,
@@ -7213,7 +7309,7 @@
   },
   "log-trend.png": {
     "width": 1201,
-    "height": 874
+    "height": 688
   },
   "lt-highlight.png": {
     "width": 457,
@@ -9047,6 +9143,14 @@
     "width": 300,
     "height": 124
   },
+  "npm-aws-resource-example.png": {
+    "width": 800,
+    "height": 316
+  },
+  "npm-aws-resource-k8s-example.png": {
+    "width": 1200,
+    "height": 807
+  },
   "npm-dashboad-network-topology-chart-en.png": {
     "width": 1200,
     "height": 1055
@@ -9235,6 +9339,10 @@
     "width": 1200,
     "height": 315
   },
+  "npm-k8s-check-running.png": {
+    "width": 600,
+    "height": 71
+  },
   "npm-network-rc-lc-chart.png": {
     "width": 1200,
     "height": 493
@@ -9342,6 +9450,10 @@
   "organization-member.png": {
     "width": 1200,
     "height": 240
+  },
+  "opentelemetry-overview.png": {
+    "width": 1200,
+    "height": 604
   },
   "overview-notification-en.png": {
     "width": 1200,
@@ -9674,6 +9786,10 @@
   "release-db-object-details-topobject.png": {
     "width": 1200,
     "height": 423
+  },
+  "release-java-log.png": {
+    "width": 1200,
+    "height": 30
   },
   "release-k8s-container-block.png": {
     "width": 1200,
