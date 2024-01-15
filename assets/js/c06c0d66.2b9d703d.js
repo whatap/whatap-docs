@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[84573],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87198],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 26329:
+/***/ 39817:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'log-exp',
+    id: 'aws-log-exp',
     title: '로그 트렌드',
-    description: '로그 모니터링의 로그 트렌드 메뉴를 안내합니다.',
+    description: 'AWS Log 모니터링의 로그 트렌드 메뉴를 안내합니다.',
     tags: [
-        '로그 모니터링',
+        'AWS Log',
         '로그 트렌드',
         'UI'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "log/log-exp",
-    "id": "log/log-exp",
+    "unversionedId": "aws-log/aws-log-exp",
+    "id": "aws-log/aws-log-exp",
     "title": "로그 트렌드",
-    "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-    "source": "@site/docs/log/log-exp.mdx",
-    "sourceDirName": "log",
-    "slug": "/log/log-exp",
-    "permalink": "/whatap-docs/log/log-exp",
+    "description": "AWS Log 모니터링의 로그 트렌드 메뉴를 안내합니다.",
+    "source": "@site/docs/aws-log/aws-log-exp.mdx",
+    "sourceDirName": "aws-log",
+    "slug": "/aws-log/aws-log-exp",
+    "permalink": "/whatap-docs/aws-log/aws-log-exp",
     "draft": false,
-    "editUrl": "undefined/docs/log/log-exp.mdx",
+    "editUrl": "undefined/docs/aws-log/aws-log-exp.mdx",
     "tags": [
         {
-            "label": "로그 모니터링",
-            "permalink": "/whatap-docs/tags/로그-모니터링"
+            "label": "AWS Log",
+            "permalink": "/whatap-docs/tags/aws-log"
         },
         {
             "label": "로그 트렌드",
@@ -345,23 +345,23 @@ const metadata = {
     ],
     "version": "current",
     "frontMatter": {
-        "id": "log-exp",
+        "id": "aws-log-exp",
         "title": "로그 트렌드",
-        "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
+        "description": "AWS Log 모니터링의 로그 트렌드 메뉴를 안내합니다.",
         "tags": [
-            "로그 모니터링",
+            "AWS Log",
             "로그 트렌드",
             "UI"
         ]
     },
-    "sidebar": "logSidebar",
+    "sidebar": "awslogSidebar",
     "previous": {
         "title": "라이브 테일",
-        "permalink": "/whatap-docs/log/log-lt"
+        "permalink": "/whatap-docs/aws-log/aws-log-lt"
     },
     "next": {
         "title": "로그 검색",
-        "permalink": "/whatap-docs/log/log-search"
+        "permalink": "/whatap-docs/aws-log/aws-log-search"
     }
 };
 const assets = {};
@@ -560,7 +560,9 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `에이전트 옵션이 설정된 경우 로그 레벨을 수집해 로그 레벨 기준 색상이 다음과 같이 표시됩니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `에이전트 옵션이 설정된 경우`), ` 로그 레벨을 수집해 로그 레벨 기준 색상이 다음과 같이 표시됩니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "로그 레벨 색상",
@@ -591,7 +593,7 @@ weaving=logback-1.2.8
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `Java 에이전트 2.2.22 버전 이후부터 위빙 설정에 log4j-2.17 또는 logback-1.2.8 설정시 사용할 수 있습니다. 에이전트 재시작이 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Java 에이전트 2.2.22 버전 이후부터 위빙 설정에 log4j-2.17 또는 logback-1.2.8 설정 시 사용할 수 있습니다. 에이전트 재시작이 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -603,18 +605,18 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `level`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `type`), `으로 파싱된 키가 존재하고 파싱 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `FATAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `CRITICAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `ERROR`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `WARN`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `WARNING`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
+    }, `type`), `으로 파싱된 키가 존재하고 파싱 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `FATAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `CRITICAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `ERROR`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "slow"
+    }, `WARN`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "slow"
+    }, `WARNING`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "mstop"
     }, `INFO`), `를 포함할 경우 로그 레벨 색상을 표시합니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "로그-content-확인하기"
     }, `로그 Content 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {

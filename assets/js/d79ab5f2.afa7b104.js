@@ -642,7 +642,9 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `에이전트 옵션이 설정된 경우 로그 레벨을 수집해 로그 레벨 기준 색상이 다음과 같이 표시됩니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `에이전트 옵션이 설정된 경우`), ` 로그 레벨을 수집해 로그 레벨 기준 색상이 다음과 같이 표시됩니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "로그 레벨 색상",
@@ -673,7 +675,7 @@ weaving=logback-1.2.8
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `Java 에이전트 2.2.22 버전 이후부터 위빙 설정에 log4j-2.17 또는 logback-1.2.8 설정시 사용할 수 있습니다. 에이전트 재시작이 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Java 에이전트 2.2.22 버전 이후부터 위빙 설정에 log4j-2.17 또는 logback-1.2.8 설정 시 사용할 수 있습니다. 에이전트 재시작이 필요합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -685,18 +687,18 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `level`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `type`), `으로 파싱된 키가 존재하고 파싱 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `FATAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `CRITICAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `ERROR`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `WARN`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `WARNING`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
+    }, `type`), `으로 파싱된 키가 존재하고 파싱 값이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `FATAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `CRITICAL`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `ERROR`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "slow"
+    }, `WARN`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "slow"
+    }, `WARNING`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "mstop"
     }, `INFO`), `를 포함할 경우 로그 레벨 색상을 표시합니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "로그-content-확인하기"
     }, `로그 Content 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
@@ -743,7 +745,7 @@ weaving=logback-1.2.8
         src: (__webpack_require__(6894)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), `처럼 해당 로그의 전체 Content를 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), `처럼 해당 로그의 전체 Content를 확인할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -784,7 +786,7 @@ weaving=logback-1.2.8
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `필터`)), ` 입력 창을 클릭해 필터를 지정할 수 있습니다. 입력창 아래 가이드 UI를 제공합니다. 필터 태그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+    }, `필터`)), ` 입력 창을 클릭해 필터를 지정할 수 있습니다. 필터 태그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `검색 키`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -812,22 +814,35 @@ weaving=logback-1.2.8
         src: (__webpack_require__(53335)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` 영역에서 조회할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
-        alt: "로그 필터1",
-        src: (__webpack_require__(83356)/* ["default"] */ .Z),
-        width: "1177",
-        height: "759"
+    }), ` 영역에서 조회할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `가이드 UI`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `다음과 같이 입력 창 아래 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `가이드 UI`), `를 제공합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "log-filter-ui1.png",
+        desc: "로그 필터",
+        mdxType: "ImgLang"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "검색-키-연산자-검색-값-입력"
     }, `검색 키, 연산자, 검색 값 입력`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `검색 키 입력 시 일반 인덱스, 예약어 인덱스, 숫자만 입력할 수 있는 인덱스를 구분해 추천 값을 제공합니다 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `검색 키`), ` 입력 시 일반 인덱스, 예약어 인덱스, 숫자만 입력할 수 있는 인덱스를 구분해 추천 값을 제공합니다 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `연산자 입력 시 일반 인덱스 검색 키의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `연산자`), ` 입력 시 일반 인덱스 검색 키의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `==`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -847,7 +862,9 @@ weaving=logback-1.2.8
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `검색 값 입력 시 일치 검색(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `검색 값`), ` 입력 시 일치 검색(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `>`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
@@ -857,13 +874,19 @@ weaving=logback-1.2.8
         parentName: "p"
     }, `>=`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `==`), `)일 때 파란색으로, 제외 검색(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+    }, `==`), `)일 때 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "normal"
+    }, `파란색`), `으로, 제외 검색(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `!=`), `)일 때 붉은색으로 하이라이팅합니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `!=`), `)일 때 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "vslow"
+    }, `붉은색`), `으로 하이라이팅합니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `검색 값 입력 시 대소문자 구분 옵션을 활용해 검색할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `검색 값`), ` 입력 시 대소문자 구분 옵션을 활용해 검색할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
@@ -878,26 +901,30 @@ weaving=logback-1.2.8
         parentName: "strong"
     }, `접기`)), ` 아이콘을 선택해 접어둘 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "필터-태그-추가"
-    }, `필터 태그 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+    }, `필터 태그 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `입력 창에 텍스트를 입력하고 키보드의 Enter, Tab키를 통해 추가할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `입력 창 아래 가이드 UI에서 추천 값을 클릭하여 추가할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+    }, `입력 창 아래 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `가이드 UI`), `에서 추천 값을 클릭하여 추가할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `입력 창 아래 가이드 UI에서 키보드의 위아래 방향키로 추천 값을 선택할 수 있고 Enter, Tab키로 태그를 추가할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }, `입력 창 아래 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `가이드 UI`), `에서 키보드의 위아래 방향키로 추천 값을 선택할 수 있고 Enter, Tab키로 태그를 추가할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "필터-태그-제거"
-    }, `필터 태그 제거`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+    }, `필터 태그 제거`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `Backspace로 삭제할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `태그의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
@@ -905,7 +932,7 @@ weaving=logback-1.2.8
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
     }, `X`)), ` 아이콘 선택 시 태그를 삭제할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `입력 창의 전체 삭제 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
@@ -914,14 +941,18 @@ weaving=logback-1.2.8
         parentName: "strong"
     }, `X`)), ` 아이콘 선택 시 전체 태그를 삭제할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "필터-적용-예외-상황"
-    }, `필터 적용 예외 상황`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+    }, `필터 적용 예외 상황`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `숫자만 입력할 수 있는 인덱스(.n으로 끝나는 검색 키)를 입력한 태그에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+    }, `숫자만 입력할 수 있는 인덱스(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `.n`), `으로 끝나는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `검색 키`), `)를 입력한 태그에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `검색 값`), `은 숫자만 입력할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `중복된 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
@@ -929,25 +960,26 @@ weaving=logback-1.2.8
     }, `검색 키`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `검색 값`), `은 입력할 수 없습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `검색 키`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `검색 값`), ` 중 하나라도 없는 태그가 존재할 때 검색할 수 없습니다. 유효하지 않는 태그로 회색으로 태그를 표시합니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `검색 값`), ` 중 하나라도 없는 태그가 존재할 때 검색할 수 없습니다. 유효하지 않는 태그의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "mstop"
+    }, `회색`), `으로 표시합니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "미파싱-키워드-필터-적용"
     }, `미파싱 키워드 필터 적용`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `로그에서 파싱되지 않은 즉 인덱스가 생성되지 않은 키워드를 포함한 로그를 조회할 수 있습니다. 이 경우 지정 범위 내 모든 로그를 Full Scan합니다. 그렇기 때문에 인덱스가 생성된 키와 비교해 검색 속도가 다소 떨어질 수 있습니다. 정형화된 로그 데이터의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `로그 파서 설정`)), `을 통해 인덱스 키 값을 활용해 검색하는 것을 권장합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
-        alt: "미파싱 키워드 필터 적용",
-        src: (__webpack_require__(35092)/* ["default"] */ .Z),
-        width: "1127",
-        height: "112"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `로그 파서 설정`)), `을 통해 인덱스 키 값을 활용해 검색하는 것을 권장합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "log-filter-search.png",
+        desc: "미파싱 키워드 필터 적용",
+        mdxType: "ImgLang"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -1004,28 +1036,30 @@ weaving=logback-1.2.8
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `전체 로그 중 서버 조회 범위 당 1만 건씩 조회합니다. 서버 조회 범위의 경우 기본 20만 건이지만 전체 로그 양에 따라 비율이 달라질 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `전체 로그 중 서버 조회 범위 당 1만 건씩 조회합니다. 서버 조회 범위의 경우 기본 20만 건이지만 전체 로그 양에 따라 비율이 달라질 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `파서 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "/whatap-docs/mysql/log-parser"
-    }, `다음 문서`), `를 참조하세요. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "필터-수정"
     }, `필터 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `필터에 값을 입력한 뒤 입력한 값을 클릭하면 해당 값을 수정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "log-lt-filter-modify.png",
         desc: "필터 수정",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `입력 창에 텍스트 재입력해 수정할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `입력 창 아래 가이드 UI를 통해 추천 값을 선택해 수정할 수 있습니다.  `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `입력 창 아래 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `가이드 UI`), `를 통해 추천 값을 선택해 수정할 수 있습니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "검색-키search-key"
     }, `검색 키(Search Key)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `왼쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "number-s",
@@ -1654,7 +1688,7 @@ weaving=logback-1.2.8
         parentName: "strong"
     }, `하이라이트`)), ` 아이콘을 선택해 하이라이팅할 키워드 및 색상을 설정할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "log-lt-highlight.png",
-        desc: "라이브테일 하이라이트",
+        desc: "하이라이트",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -1923,26 +1957,6 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAAA2CAYAAACLDiGkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABHbSURBVHgB7Z0JdFNVGse/NGmaNF2xghVcQCqgVgQFFFBBBAVcEBlcAPdldFxQjzNnxm2OznjcRh3PqOOuLC7jigqioKzihgVEdoEKCBYKbWmbNm2W+f735dGXNFvTNF34fufkNG1e7ru577v/+y33pSYfQ4IgCEJL40shQRAEISmI4AqCICQJEVxBEIQkIYIrCIKQJCzRDiguLqZNmzZRaWkpeTweEgRBEOIjouAWFRVRSUkJFRYWUn5+PpnNZhIEQRDiI6zgwrOF2I4aNUqEVhAEIQGEzeEijQDPVsRWEAQhMYQVXORskUYQBEEQEkNYwUWBTLxbQRCExCHbwgRBEJKECK4gCEKSEMEVBEFIElFvfGiruOqItu/2qp+CIAitTZqV6IjOKepnONqt4GpiK98sKQhC20B3Ant2C584aLcpBfFsBUFoa0TTJcnhHuRsLWmZKKGl2hWE9kxCUgq4K605FBQUkCAIQken2YILsX366aepOUydOlVEVxCEDk+bSCmI2AqxUsuF0vXF9VTvlpSF0P5otocLsYSHCi8Xz8eOHRvT+3SvGO8VNKprfPTih5U08WwHde3csW6r/n2vhz5Y4KTLRjkoNytwnX/tkyoq7JlKp/RJi9rOb3s89Ni0Cnrk1lzqnNv2xwj/ovX59ytp+Mk26tM9NeA1fUwuGemgQ7Jbxvf5bbeHZi12hnxtaN80OrHASm2NX7bX06df19Atf8gki9lEHYmEXGUI7ZgxY1R6Yfbs2er3SI+NGzeq9+E9B7N3+/KsSjXhdFL4aqTbTNQRv8KikheT5WtdVOMK9Ezx24oNdUpIOyJefvzAn3tPeePPV+n0qjFx1nopUQTbVHm1V50/JzNFLeLGR0Z66we4uP73PFdGKzY2lPctFhM5eB6YTMkT20d5Ef9okTPs6+s4qrr6wVIVXTWHhO3D1T3bOXPmKO81nOcKQcYxENtYveFE4GGbNsdpX162Clx7U5xtw6i8IY7Zt9/LItvQqj3NRDeOz4zrHLEe095ozesWD4lqM1o7+GwpIT5YsE0B/Hb2ABt17tS8lTxan2J5HU5FcLd3sadfU9uwEB+db6HrxyV3HvQ6KpVm+QV33JnpAa9BbBFVXch/7310KjWHhN74YBRdCGuwoLaG2P76u5vene+kDb/WK+/x3NPsdO5gO1VUeukfr5bTqFPtNGqQXR37zrxq+mlTHd17bY4SvzI+ZsZnVbRuaz1l2FPo1MI0dXyG3RSxbbz6xXc1VLS+jo5i41myopbq2cE5qSCVrrkgU02KR14vpxrOR27a7qYV6130z5tz1SS67/kyuv3SLOp5hHZhi3e56b0vnbRxWz1Z+U+nnpBGEzkEtVq0Ptzx5D4aM9TOnlIdbd5RT0cfbqExg9Opf+/4QsX97BHVuhrnRx3sDcHrQA51f1Vjj8yaalJeVHPBuOGzoP9zOKz08KAMOj6NJoxwqDEOZleph556az8N5mszblg6PfteJeVkpLAn7VXtZDlS6Mz+Nho71H7gPZHG9MOFTtryWz3dNSlbHQvP/J5ny+iGizLohGO0MTUe09T+RuOb1S7V5q/cx06cehk7JJ2Gn2I78DrSELP5PCs2uMhmNdHJvdPUZ6t0+kLaVDRg7y99VEl3XJ5NPbpayMOX/tE3KiiXr+VNF2ui99XyWlr4Y60SxsJjUmkYp0dO7NlgX9+tcdFny2poG88HpHkmj3YcGCtcD8wX2PzaLdp4jxhgp4uGp9Oiolp6/8tqlXaZPqeKz1ND916TQ8vXuWjap1X0zN2HqDZgje9/5aTv+Tx7KzzU9VCLOsexR2pzZOtONz05s4KmjMlQ3n0pH9OXUyUXsT106xybxOkiGyy6RrENFuJ4SPidZkbRNf7eGmKLi/z0m/upXy8rTTo3hzbwBJv5WTXl5aTQgOPSlEDiQg7k5xAaGDqMDGJbV++jp/i9mDS3XZKl2oP4bitx01QWxGht13PkASE+6jCLEvCVHDLNWeqkmXOr6OrzM+nvN+TSfz+oVJMKOdtMFrRyFrIqnuAev54hDEUfCo600D3XZKs+vfRRFYegVSwA2mTA8R+xAFx5XgZdwQb3yRInvfVFddyCi0Vn2U+uRn+HgIwdYlfh6asfVzV6HRPsrklZ1Fwwbps4h9eJc5p3T8miPWVeldfu0c3COUdbwLEYn8dnVFBv9k4uHKZNhloW2i95wl483EEPXJ9ORZyuwKQedIKVr4056pgW8CTGdcLCAkFbtdGlhf7r6tRnxOT/6Zc66usXnFj7i0Wsyhm4UDlrAxc2hNWvs9CMYG/05gmZnMt0q9+RYjqjn02d+z/v7ldiCGGqYHt5eVYV7d3vYbvNogfYpl4Isin299T7YCfphvObOTcKO0cOtxd7bdPZtu9nO13I4rqDhfOGcTnqOCwA786vpjF87QfyQoLf//32frrn6hwl0D9vrlP2MGFEOv2Ro7OvfqilZ96ppEduyVX9wPVYucHNYuigiWxDENVPeXw7d0pRCx3G9M/P7FPiiPbVmLq1/urg/F+vctEFZ6TTScdaaQGL/+PTK+jBG3MpP89Mbq92PBa8q8/PUN7ttDnVNPebGrruwkyKlWDRhdebSLEFLXJrb7Do6s+TnUaAZwl3c9Jo7SLg4qxio17Mf4cojhgIAalTArWPV8X+7C3ohRvkarazuD58s3ZRAYwYBQi3J3rbABPjsnMc6vnheXYuinnpczaCK8ZmqCJJqgX3X5vCFkyWrHApQcBk0kOkMexBT2NvAB7CoTlav+DZDfSfE97O/S+Uq5xo10ObHkJiMYB4B2P2h6lDWEQGndC4uJWSwHxbNnulCCnxmY/oQnQ8e1WrNtUfEDBMRYgNhPJIXtCu5UllPHt/XgR1j3b0IXaau8yp3j9igFmNaX2IMZ3uH9NeR1mUGG3g69+XJzfyyyf3sapri/MiBw1PbsrojJj7C2BjeASj9xttw0vEJIedAVxfnPcTtjldcPdVeJWNHnaIWT3gIOwu86hz50WwqYdeKQ/4HQvL367SvHh4hvdyHvVjXqxhnxezMGJxwvnmsRMCUT7/dE1wIDz4/IjuILjwtuFNjhyojfdELoouW11L3/CirV+DAcdZVf/BZD4XIoxFRS41PugrQD45VIRU5/YpR2j8MIdaiMD4s9Lp65W1fG7nAUFFK9demMHjr0na6Sel0adLaqipBItuIsUWtNh3KQSLbrLFFmzhUAM68Cx7BTowTv2fD6uLdEEG3ccClcYh8a2XNHhoW9koIJi62AIYnl7VjdY2SAmyn+N7aGHn3nJvQLvh2MxhK3JGxnwUjBshGKrPuuDarQ1ygxAaIOyPR3Cx3QoiH4wtTRNdN8ecNbWNX7ewJSWqogzRMH5mfKadQUW1Fz+sojL27P5yRXajfJ3NMB64RpjMiGAAxrRX0JgiPPYaxvS4Hqm0htNIvfFzcz09dFMOPfRyBads3GrRzLClUPfDLU3q7+W88A4+MdBDR18QJQFENUgjjB8eOLkh+gildY8bi8LbLNyr2cvGwo4HhC8aD1yXQ4cadnUYC7NYMOA4wDuG4J/lFzb0aXuJR6UQjOgRH8asmOcBcsPPvNMwD2Anuw1FQmNKGU8xDxZzOiEWIM6YU8f3aMidYqgxDyH6RmxphnnAaSVEJj5/Hr8pYAxaihb98hoIrH4XWrLFFjh5cmTzwB9n2I6D52mGCen16T8DRcTt1qqlzWm7EQfORTGBcDXbEdie/t6Wqt8ibRIppfDdz/GlFCBI6Hqdu/EuBYh4U4scORkmzrmaVch9J583lvHAuUKOqf+n/ldM5vnf11CfLanKi4QI9+ttVXlTFD+xha2pkxh24bAHvsluEAgf2x8WO+PfVN/8gqGbJzzJUzgSW845WlyL9zhdAg8VeepwoEWkxoLPH3Aer94P0gbKpPUJOelwCymum4sXZzgPPbs1SAnmAcYtEr4mzAGcPXhclJBS4jHmbEG4Qlq8tNtvC4uFfE6uIyQ7i5P0oSq6uGivsHhgglWyB/TG7Cq6daImGoexEe1hj7WUV+o8vyeJAg1ymOdxeBWt7VCs55wuJg/yvLEAD/VHLrwZV+m1W7XtM927tsylw+S97JzGKQWrf105jYtT/Xo1TilEE8wu/go5ctmoQuts5DFBmN6lCRV0DAWKjxCJBzlURtSAxSCW92FMi4LGdB2PKZ7qY1rIHu80tgXkM/v5c+En88+3Pq9WXubowdHP1VQgahgD5If18Bus3VJH+SxeEJxyLuJ+z/Y3hD1lCC8e6NMszuFHEtxolHE09CbXFiAq83ihwWIzkgvJ6FNetlnZ3OATG645CmhduE+IvjA3PCy8Zw+MbUygs0jX5eXGNgfyEaWZtLy5fg60sYbHBfncRBKuQJZI0e3QX14zcqCNk+lems6TB+KJXQevsUeEpD1AbmgH52kncbiHvOoqrth++7Pm3Q3gvB1ySm+yQSPURHUY3hQKJBDYaG2DvRVaIQ7hICbKUs47IdeK9AVARXfXHre64SGU14sdEU6XthCgrZJ9Hvri21pVXNBTB4kGgoKqcvBD3xWBSRjq9WAPJBjscEC/F/FkXcjhJHKwyI/CQ8M49G3iBnyExNhLOoWr1R8uqKZN22LbHzmSx7Q6xJgOMIwpij2ohCNsRz4Y9OluVX3esdt9oAKfSDB6EPLVv9SrXC4WIVT1MUYj/EJj4zH8gIu8/+MiEvoCAd7JToDDsJ82lE3hxx5OY8GGjQ+9MIUdAUgLoCiF/DEKybt5XNR2skE21QfsKECRDzaMGoJF00E6h8dzJeerUaCq5tcxVx5+vSJgvyoKl2u2aAsrPtuWnfWcY7UF9BnpgdoQX7faKVMrrn3O1whzCOmu+Tyn0PfT+8W/yAQTTmzxHH+D6EbapxsrHdrDRQId+SYURBZxMQvFEIQ7MCr9Lp8JnICHsOZw7n30aekqpO7DKzfSBXdenqWqwPe9UKbyUgglr/Un6SO1rYMJjLzfO/P2Km8M7WI7i84Q9hqee7+Obnl8Lz12W26j0A2h2tRLs5U4LF6xT4kaVnVUYtsjV3ExDhXnN+dW0xv+6nufo61043iH2lYWD0N54iJyeJ7zj6haR+PwGMYUPelbkEp1LAB6ESbVrOXPsTslnu1esQABgah9zEWyd3khgvCfN7RhW5iNx+juKdmc0qmkO57apxZB5JuxZU1Ht6lb2aYeva1hPJ6YUdHofCiEIfSH94gdCvD4h3Iflq500csc+f31ymzlVVY5fcrxwJhhXmA3QoF/2+JZ3DcIJQQJCwHGE2JqzIN24zHEwgpRRV1jWH87neH3yDGS8KZhF0XrXPT47Z0a9RPO0Ey2mZc4b48UB7Z6/WlCZkCk1Bwg85F2IxgLadgR05y9uCafL3Q2ZcaMGTR58mRqLi11C++aLUg6xX4/PRLo9rQUtTI3FUwCFIWsYXK6odqevbSGFvxYQ0+wAWFVxj5cR4iJCi8E24Wieaw4Jt2eEnP6IlbwNYrduyReQCK1C4tDRJCRbgo7psmgpca0ucCqkeKKZBPwFlPDFCpjtakm9cmn2Xm4NtFnFGpRrDL26F8zK1RR7rpxmcrrTk0NPY9079YWoQaCIh6210XKRbck8Nqji62JC3xhx93XoT1cI5nNuI0xmkcTrW14b9Yw1wmTPZaJ0RZuw0wU8KQ6ZbX+52mrYwpri2YTkVI4sdpUk/oUpU30Bt5vJCIJZSSh1UGdoLXEFjT3LjOQFIuTbwMTBEFIQg4X28EORsHFLb4jByUuqS8I7RHUOUyt55S2OVpccA9W7xbhj7mtJQcFIcmkWmQOGGm3icG0tvc1nu2SliiYtWS7gtCWiaZL7bZohv//rv2rdBIEQWh1ILbQpUi0W8HFh4v0/98FQRDaGqJYgiAISUIEVxAEIUmI4AqCICQJEVxBEIQkEVZwzWZ87VrH/E+qgiAIrUFYwc3Ly6Ndu3aRIAiCkBjCCi7uEFu9erV4uYIgCAki7NczgqKiIiopKaHCwkLKz89XaQZBEAQhLnwRBRcUFxer/0tWWloq3q4gCEL8RBdcQRAEISH4ZFuYIAhCkhDBFQRBSBIiuIIgCElCBFcQBCFJ/B9Rxz60cIQOigAAAABJRU5ErkJggg==");
-
-/***/ }),
-
-/***/ 35092:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-filter-search-a85a3ed49a401aacb59a1ef9ab92a29d.png");
-
-/***/ }),
-
-/***/ 83356:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-filter-ui1-e2cafb4fcb94e3455fcf01d1a3b4415e.png");
 
 /***/ }),
 
