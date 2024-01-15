@@ -238,5 +238,9 @@
   "item.label.학습하기": {
     "message": "WhaTap活用",
     "description": "Navbar item with label 학습하기"
+  },
+  "item.label.OpenTelemetry": {
+    "message": "OpenTelemetry",
+    "description": "Navbar item with label OpenTelemetry"
   }
 }
