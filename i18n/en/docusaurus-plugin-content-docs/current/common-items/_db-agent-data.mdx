@@ -18,14 +18,18 @@ The description of the settings to collect data from the database server
 
     Set the time to collect data for storing the table information. The default value is `5` and collection starts at 5 am.
 
--   **tables_min_row** <span class='type'>Int</span>
-
-    Default `10000`
-
-    When collecting the table information, table data with the number of rows smaller than the set value is not collected.
-
 -   **tables_exclude_sys** <span class='type'>Boolean</span>
 
     Default `false`
 
     When collecting the table data, set whether or not to collect the table data owned by sys. If set to `true`, the table data owned by sys is not collected.
+
+<InDoc product='oracle,tibero'>
+
+-   **tables_min_size** <span class='type'>Int</span>
+
+    Default `10`
+
+    When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
+
+</InDoc>
