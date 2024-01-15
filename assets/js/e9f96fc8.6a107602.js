@@ -374,12 +374,12 @@ const assets = {};
 const toc = [
     {
         value: ' 결제 정보 등록',
-        id: '-결제-정보-등록',
+        id: 'regisgerpay',
         level: 2
     },
     {
         value: ' 결제 권한 이양',
-        id: '-결제-권한-이양',
+        id: 'transferpayauth',
         level: 2
     },
     {
@@ -399,7 +399,7 @@ const toc = [
     },
     {
         value: ' 프로젝트 유료 전환',
-        id: '-프로젝트-유료-전환',
+        id: 'subscripeproject',
         level: 2
     }
 ];
@@ -423,7 +423,7 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 서비스의 결제 정보 등록과 결제 권한 이양, 프로젝트 유료 전환 등 결제 계정 관리 방법에 대해 안내합니다. 무료 이용 기간 및 무료 이용 기준 초과 시점에 서비스 이용을 계속 원한다면 결제 정보를 등록하고 해당 프로젝트를 유료로 전환해야 합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "-결제-정보-등록"
+        "id": "regisgerpay"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         src: (__webpack_require__(27374)/* ["default"] */ .Z),
         width: "35",
@@ -524,7 +524,7 @@ function MDXContent(_param) {
         desc: "청구서 수신자 다수 설정",
         mdxType: "ImgLang"
     })))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "-결제-권한-이양"
+        "id": "transferpayauth"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         src: (__webpack_require__(79221)/* ["default"] */ .Z),
         width: "35",
@@ -681,7 +681,7 @@ function MDXContent(_param) {
         to: "/project/project-structure#project-auth",
         mdxType: "Link"
     }, "다음 문서"), "를 참조하세요."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "-프로젝트-유료-전환"
+        "id": "subscripeproject"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         src: (__webpack_require__(53335)/* ["default"] */ .Z),
         width: "35",

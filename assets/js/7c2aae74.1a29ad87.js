@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[7508],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[81173],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 84176:
+/***/ 25807:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '에이전트 데이터 수집',
     description: '데이터베이스 서버의 정보를 수집하는 설정에 대한 설명입니다.',
     tags: [
-        'MongoDB',
+        'Altibase',
         '데이터베이스',
         '데이터베이스 모니터링',
         '에이전트'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mongodb/agent-data",
-    "id": "mongodb/agent-data",
+    "unversionedId": "altibase/agent-data",
+    "id": "altibase/agent-data",
     "title": "에이전트 데이터 수집",
     "description": "데이터베이스 서버의 정보를 수집하는 설정에 대한 설명입니다.",
-    "source": "@site/docs/mongodb/agent-data.mdx",
-    "sourceDirName": "mongodb",
-    "slug": "/mongodb/agent-data",
-    "permalink": "/whatap-docs/mongodb/agent-data",
+    "source": "@site/docs/altibase/agent-data.mdx",
+    "sourceDirName": "altibase",
+    "slug": "/altibase/agent-data",
+    "permalink": "/whatap-docs/altibase/agent-data",
     "draft": false,
-    "editUrl": "undefined/docs/mongodb/agent-data.mdx",
+    "editUrl": "undefined/docs/altibase/agent-data.mdx",
     "tags": [
         {
-            "label": "MongoDB",
-            "permalink": "/whatap-docs/tags/mongo-db"
+            "label": "Altibase",
+            "permalink": "/whatap-docs/tags/altibase"
         },
         {
             "label": "데이터베이스",
@@ -354,24 +354,29 @@ const metadata = {
         "title": "에이전트 데이터 수집",
         "description": "데이터베이스 서버의 정보를 수집하는 설정에 대한 설명입니다.",
         "tags": [
-            "MongoDB",
+            "Altibase",
             "데이터베이스",
             "데이터베이스 모니터링",
             "에이전트"
         ]
     },
-    "sidebar": "mongodbSidebar",
+    "sidebar": "altibaseSidebar",
     "previous": {
         "title": "AWS CloudWatch 이용",
-        "permalink": "/whatap-docs/mongodb/agent-aws"
+        "permalink": "/whatap-docs/altibase/agent-aws"
     },
     "next": {
         "title": "관리하기",
-        "permalink": "/whatap-docs/mongodb/agent-manage"
+        "permalink": "/whatap-docs/altibase/agent-manage"
     }
 };
 const assets = {};
 const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const InDoc = makeShortcode("InDoc");
 const layoutProps = {
     toc
 };
@@ -435,20 +440,6 @@ function MDXContent(_param) {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `tables_min_row`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
-        class: "type"
-    }, `Int`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `10000`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `테이블 정보를 수집할 때 설정한 값보다 작은 row 수를 가진 테이블 정보는 수집하지 않습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
     }, `tables_exclude_sys`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
         class: "type"
     }, `Boolean`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
@@ -459,7 +450,24 @@ function MDXContent(_param) {
         parentName: "li"
     }, `테이블 정보를 수집할 때 sys 소유인 테이블 정보의 수집 유무를 설정합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `true`), `로 설정하면 sys 소유의 테이블 정보는 수집하지 않습니다.`))));
+    }, `true`), `로 설정하면 sys 소유의 테이블 정보는 수집하지 않습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "oracle,tibero",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, `tables_min_size`), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "type"
+    }, `Int`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `기본값 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `10`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `테이블 정보를 수집할 때 설정한 값보다 작은 크기의 테이블 정보는 수집하지 않습니다. 테이블 데이터를 수집하는 최소 단위로 기본값은 10MB 입니다.`)))));
 }
 MDXContent.isMDXComponent = true;
 
