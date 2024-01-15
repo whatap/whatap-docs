@@ -1618,5 +1618,9 @@
   "sidebar.npmsidebar.category.에이전트 설치": {
     "message": "エージェントのインストール",
     "description": "The label for category 에이전트 설치 in sidebar npmsidebar"
+  },
+  "sidebar.otelSidebar.category.OpenTelemetry": {
+    "message": "OpenTelemetry",
+    "description": "The label for category OpenTelemetry in sidebar otelSidebar"
   }
 }
