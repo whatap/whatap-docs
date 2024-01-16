@@ -24878,10 +24878,10 @@
     "service_id": "_03624"
   },
   "validate_otp_token": {
-    "en": "Validate OTP token",
-    "ja": "OTPトークン検証",
-    "ko": "OTP 토큰 검증",
-    "zh": "Validate OTP Token",
+    "en": "Validate OTP key",
+    "ja": "OTPキー検証",
+    "ko": "OTP 키 검증",
+    "zh": "Validate OTP key",
     "service_id": "_03625"
   },
   "validate_email_token": {
@@ -51856,45 +51856,45 @@
     "service_id": "TTL07525"
   },
   "TTL07526": {
-    "en": "3xx response number of requests per Resource & Subresource",
-    "ja": "3xx応答のResourceとSubresource別のリクエスト数",
-    "ko": "3xx 응답 Resource & Subresource 별 요청 수",
-    "zh": "Number of requests by 3xx response Resource & Subresource",
+    "en": "[ 300~ ] Request trends by Resource & Subresource",
+    "ja": "[ 300~ ] Resource & Subresource別のリクエスト傾向",
+    "ko": "[ 300~ ] Resource & Subresource 별 요청 추이",
+    "zh": "[ 300~ ] Request trends by Resource & Subresource",
     "service_id": "TTL07526"
   },
   "TTL07527": {
-    "en": "2xx response number of requests by Resource & Subresource",
-    "ja": "2xx応答のResourceとSubresource別のリクエスト数",
-    "ko": "2xx 응답 Resource & Subresource 별 요청 수",
-    "zh": "2xx Response Number of requests by Resource & Subresource",
+    "en": "[ 200 ] Request trends by Resource & Subresource",
+    "ja": "[ 200 ] Resource & Subresource別のリクエスト傾向",
+    "ko": "[ 200 ] Resource & Subresource 별 요청 추이",
+    "zh": "[ 200 ] Request trends by Resource & Subresource",
     "service_id": "TTL07527"
   },
   "TTL07528": {
-    "en": "3xx ~ Trend of number of requests by response code",
-    "ja": "3xx〜応答コード別のリクエスト数推移",
-    "ko": "3xx ~ 응답 코드별 요청 수 추이",
-    "zh": "3xx ~ Trend of number of requests by response code",
+    "en": "[ 300~ ] Trend of response request count",
+    "ja": "[ 300~ ] 応答のリクエスト数推移",
+    "ko": "[ 300~ ] 응답 요청 수 추이",
+    "zh": "[ 300~ ] Trend of response request count",
     "service_id": "TTL07528"
   },
   "TTL07529": {
-    "en": "3xx ~ Total number of requests",
-    "ja": "3xx〜全体リクエスト数",
-    "ko": "3xx ~ 전체 요청 수",
-    "zh": "3xx ~ Total number of requests",
+    "en": "[ 300~ ] Response request status",
+    "ja": "[ 300~ ] 応答要求の状況",
+    "ko": "[ 300~ ] 응답 요청 현황",
+    "zh": "[ 300~ ] Response request status",
     "service_id": "TTL07529"
   },
   "TTL07530": {
-    "en": "2xx Trend of response request count",
-    "ja": "2xx応答のリクエスト数推移",
-    "ko": "2xx 응답 요청 수 추이",
-    "zh": "2xx response request count trend",
+    "en": "[ 200 ] Trend of response request count",
+    "ja": "[ 200 ] 応答のリクエスト数推移",
+    "ko": "[ 200 ] 응답 요청 수 추이",
+    "zh": "[ 200 ] Trend of response request count",
     "service_id": "TTL07530"
   },
   "TTL07531": {
-    "en": "2xx Total number of response requests",
-    "ja": "2xx応答の全体リクエスト数",
-    "ko": "2xx 응답 전체 요청 수",
-    "zh": "2xx Response Total number of requests",
+    "en": "[ 200 ] Response request status",
+    "ja": "[ 200 ] 応答要求の状況",
+    "ko": "[ 200 ] 응답 요청 현황",
+    "zh": "[ 200 ] Response request status",
     "service_id": "TTL07531"
   },
   "TTL07532": {
@@ -51912,10 +51912,10 @@
     "service_id": "TTL07533"
   },
   "TTL07534": {
-    "en": "POST request status",
-    "ja": "POSTリクエストの状況",
-    "ko": "POST 요청 현황",
-    "zh": "POST request status",
+    "en": "POST request status per minute",
+    "ja": "1分当たりPOSTリクエストの状況",
+    "ko": "분당 POST 요청 현황",
+    "zh": "POST request status per minute",
     "service_id": "TTL07534"
   },
   "TTL07535": {
@@ -51926,10 +51926,10 @@
     "service_id": "TTL07535"
   },
   "TTL07536": {
-    "en": "GET request status",
-    "ja": "GETリクエストの状況",
-    "ko": "GET 요청 현황",
-    "zh": "GET request status",
+    "en": "GET request status per minute",
+    "ja": "1分当たりGETリクエストの状況",
+    "ko": "분당 GET 요청 현황",
+    "zh": "GET request status per minute",
     "service_id": "TTL07536"
   },
   "TTL07537": {
@@ -51940,25 +51940,144 @@
     "service_id": "TTL07537"
   },
   "TTL07538": {
-    "en": "GET request statistics",
-    "ja": "GETリクエスト統計",
-    "ko": "GET 요청 통계",
-    "zh": "GET request statistics",
+    "en": "API GET request",
+    "ja": "API GETリクエスト",
+    "ko": "API GET 요청",
+    "zh": "API GET request",
     "service_id": "TTL07538"
   },
   "TTL07539": {
-    "en": "POST request statistics",
-    "ja": "POSTリクエスト統計",
-    "ko": "POST 요청 통계",
-    "zh": "POST request statistics",
+    "en": "API POST request",
+    "ja": "API POSTリクエスト",
+    "ko": "API POST 요청",
+    "zh": "API POST request",
     "service_id": "TTL07539"
   },
   "TTL07540": {
-    "en": "Request statistics by response code",
-    "ja": "応答コード別のリクエスト統計",
-    "ko": "응답 코드별 요청 통계",
-    "zh": "Request statistics by response code",
+    "en": "Request by API response code",
+    "ja": "API 応答コード別のリクエスト",
+    "ko": "API 응답 코드별 요청",
+    "zh": "Request by API response code",
     "service_id": "TTL07540"
+  },
+  "CNT07541": {
+    "en": "Authentication token",
+    "ja": "認証トークン",
+    "ko": "인증 토큰",
+    "zh": "Authentication token",
+    "service_id": "CNT07541"
+  },
+  "DSC07542": {
+    "en": "Copy URL",
+    "ja": "URLをコピー\n",
+    "ko": "URL 복사",
+    "zh": "Copy URL",
+    "service_id": "DSC07542"
+  },
+  "DSC07543": {
+    "en": "Copy OTP key\n",
+    "ja": "OTPキーのコピー",
+    "ko": "OTP 키 복사",
+    "zh": "Copy OTP key",
+    "service_id": "DSC07543"
+  },
+  "BTN07544": {
+    "en": "Save recovery code",
+    "ja": "回復コードを保存\n",
+    "ko": "복구 코드 저장",
+    "zh": "Save recovery code",
+    "service_id": "BTN07544"
+  },
+  "DSC07545": {
+    "en": "Authentication has been completed.{br}Please save the recovery code.",
+    "ja": "認証が完了しました。{br}回復コードを保存してください。",
+    "ko": "인증이 완료되었습니다.{br}복구 코드를 저장해 주세요.",
+    "zh": "Authentication has been completed.{br}Please save the recovery code.",
+    "service_id": "DSC07545"
+  },
+  "DSC07546": {
+    "en": "There is no agent status information.",
+    "ja": "エージェント状態情報がありません。",
+    "ko": "에이전트 상태 정보가 없습니다.",
+    "zh": "There is no agent status information.",
+    "service_id": "DSC07546"
+  },
+  "DSC07547": {
+    "en": "There is no agent status information that matches your criteria.",
+    "ja": "条件に合ったエージェント状態情報がありません。",
+    "ko": "조건에 맞는 에이전트 상태 정보가 없습니다.",
+    "zh": "There is no agent status information that matches your criteria.",
+    "service_id": "DSC07547"
+  },
+  "NTC07548": {
+    "en": "URL has been copied.",
+    "ja": "URLをコピーしました。",
+    "ko": "URL을 복사했습니다.",
+    "zh": "URL has been copied.",
+    "service_id": "NTC07548"
+  },
+  "NTC07549": {
+    "en": "The OTP key has been copied.",
+    "ja": "OTPキーをコピーしました。",
+    "ko": "OTP 키를 복사했습니다.",
+    "zh": "The OTP key has been copied.",
+    "service_id": "NTC07549"
+  },
+  "ITM07550": {
+    "en": "Real-Time Today (0-24h)",
+    "ja": "リアルタイム本日 (0 ~ 24h)",
+    "ko": "실시간 금일 (0 ~ 24h)",
+    "zh": "Real-Time Today (0-24h)",
+    "service_id": "ITM07550"
+  },
+  "MNU07551": {
+    "en": "Object Manifest",
+    "ja": "Object Manifest",
+    "ko": "오브젝트 매니페스트",
+    "zh": "Object Manifest",
+    "service_id": "MNU07551"
+  },
+  "CNT07552": {
+    "en": "Email or OTP re-authentication is required.{br}Please cancel email authentication or delete OTP and authenticate again.",
+    "ja": "メールまたはOTP再認証が必要です。{br}メール認証キャンセルまたはOTP削除後に再認証してください。",
+    "ko": "이메일 또는 OTP 재인증이 필요합니다.{br}메일 인증 취소 또는 OTP 삭제 후 다시 인증해 주세요.",
+    "zh": "Email or OTP re-authentication is required.{br}Please cancel email authentication or delete OTP and authenticate again.",
+    "service_id": "CNT07552"
+  },
+  "TLT07553": {
+    "en": "You do not have \brole to set alert settings.",
+    "ja": "アラート設定を行う役割がありません。",
+    "ko": "알림 설정 권한이 없습니다.",
+    "zh": "You do not have \brole to set alert settings.",
+    "service_id": "TLT07553"
+  },
+  "\bTLT07554": {
+    "en": "Kind",
+    "ja": "種類",
+    "ko": "종류",
+    "zh": "Kind",
+    "service_id": "TTL07554"
+  },
+  "TLT07555": {
+    "en": "Node",
+    "ja": "ノード",
+    "ko": "노드",
+    "zh": "Node",
+    "service_id": "TTL07555"
+  },
+  "TLT07556": {
+    "en": "Agent (Instance)",
+    "ja": "エージェント(インスタンス)",
+    "ko": "에이전트 (인스턴스)",
+    "zh": "Agent (Instance)",
+    "service_id": "TTL07556"
+  },
+  "TLT07557": {
+    "en": "Agent (Server)",
+    "ja": "エージェント(サーバー)",
+    "ko": "에이전트 (서버)",
+    "zh": "Agent (Server)",
+    "service_id": "TTL07557"
   },
   "": {
     "": "",
