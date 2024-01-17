@@ -52079,6 +52079,27 @@
     "zh": "Agent (Server)",
     "service_id": "TTL07557"
   },
+  "NTC07558": {
+    "en": "Please select “{value}”.",
+    "ja": "「{value}」を選択してください。",
+    "ko": "“{value}”을(를) 선택해주세요.",
+    "zh": "Please select “{value}”.",
+    "service_id": "NTC07558"
+  },
+  "TTL07559": {
+    "en": "Object",
+    "ja": "Object",
+    "ko": "오브젝트",
+    "zh": "Object",
+    "service_id": "TTL07559"
+  },
+  "NTC07560": {
+    "en": "Please update your agent to view historical data.",
+    "ja": "過去のデータを表示するには、エージェントを更新してください。",
+    "ko": "과거 데이터를 보려면 에이전트를 업데이트 해주세요.",
+    "zh": "Please update your agent to view historical data.",
+    "service_id": "NTC07560"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
