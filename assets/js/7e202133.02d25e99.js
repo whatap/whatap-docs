@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[99670],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[47742],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 35202:
+/***/ 12476:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,29 +308,29 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-docker-python-temp',
-    title: 'Docker Python 설치',
-    description: '컨테이너 내 Python 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
+    id: 'install-docker-nodejs-temp',
+    title: 'Docker Node.js 설치',
+    description: '컨테이너 내 Node.js 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
     tags: [
         '쿠버네티스',
         '쿠버네티스 모니터링',
         '애플리케이션 설치',
-        'Python'
+        'Node.js'
     ],
     draft: false
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/install-docker-python-temp",
-    "id": "kubernetes/install-docker-python-temp",
-    "title": "Docker Python 설치",
-    "description": "컨테이너 내 Python 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
-    "source": "@site/docs/kubernetes/install-docker-python-temp.mdx",
+    "unversionedId": "kubernetes/install-docker-nodejs-temp",
+    "id": "kubernetes/install-docker-nodejs-temp",
+    "title": "Docker Node.js 설치",
+    "description": "컨테이너 내 Node.js 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+    "source": "@site/docs/kubernetes/install-docker-nodejs-temp.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/install-docker-python-temp",
-    "permalink": "/whatap-docs/kubernetes/install-docker-python-temp",
+    "slug": "/kubernetes/install-docker-nodejs-temp",
+    "permalink": "/whatap-docs/kubernetes/install-docker-nodejs-temp",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/install-docker-python-temp.mdx",
+    "editUrl": "undefined/docs/kubernetes/install-docker-nodejs-temp.mdx",
     "tags": [
         {
             "label": "쿠버네티스",
@@ -345,20 +345,20 @@ const metadata = {
             "permalink": "/whatap-docs/tags/애플리케이션-설치"
         },
         {
-            "label": "Python",
-            "permalink": "/whatap-docs/tags/python"
+            "label": "Node.js",
+            "permalink": "/whatap-docs/tags/node-js"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-docker-python-temp",
-        "title": "Docker Python 설치",
-        "description": "컨테이너 내 Python 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+        "id": "install-docker-nodejs-temp",
+        "title": "Docker Node.js 설치",
+        "description": "컨테이너 내 Node.js 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
         "tags": [
             "쿠버네티스",
             "쿠버네티스 모니터링",
             "애플리케이션 설치",
-            "Python"
+            "Node.js"
         ],
         "draft": false
     }
@@ -376,18 +376,18 @@ const toc = [
         level: 2
     },
     {
-        value: 'Dockerfile',
-        id: 'dockerfile',
+        value: 'whatap.conf 설정',
+        id: 'whatapconf-설정',
         level: 3
     },
     {
-        value: '추가 설정',
-        id: '추가-설정',
+        value: '애플리케이션 파일 내 에이전트 삽입 설정',
+        id: '애플리케이션-파일-내-에이전트-삽입-설정',
         level: 3
     },
     {
-        value: '컨테이너 환경변수 설정',
-        id: '컨테이너-환경변수-설정',
+        value: '컨테이너 환경변수',
+        id: '컨테이너-환경변수',
         level: 2
     },
     {
@@ -423,7 +423,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `Docker Python`)), ` 탭 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Docker 컨테이너 기반으로 실행하는 Python 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `Docker Node.js`)), ` 탭 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Docker 컨테이너 기반으로 실행하는 Node.js 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
         parentName: "admonition"
@@ -435,221 +435,113 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `Python 애플리케이션 연동 과정에 대한 이해를 돕고자 Git 예시 코드를 제공합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+    }, `Node.js 애플리케이션 연동 과정에 대한 이해를 돕고자 Git 예시 코드를 제공합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi"
+        "href": "https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-다운로드"
-    }, `에이전트 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Python 애플리케이션 도커 이미지 빌드 시 whatap-python 패키지를 설치하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, `에이전트 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 명령어를 통해 whatap을 설치하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
-        "className": "language-docker"
-    }, `RUN pip3 install --upgrade whatap-python
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 Dockerfile의 정의 예시를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        "className": "language-bash"
+    }, `npm install --save whatap
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `업데이트를 진행하려면 다음 명령어를 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
-        "className": "language-docker",
-        "metastring": "title='python ver 3.10'",
-        "title": "'python",
-        "ver": true,
-        "3.10'": true
-    }, `# python3.10을 도커환경에 설치합니다.
-FROM python:3.10
-
-# 작업 디렉토리를 /app 으로 설정합니다.
-WORKDIR /app
-
-# 현재 디렉토리의 모든 파일과 폴더를 컨테이너 내의 /app 디렉토리에 복사합니다.
-ADD . /app/
-
-# 파이썬에서는 pip를 이용하여 외부 라이브러리를 설치할 수 있습니다. 
-# 와탭 파이썬 에이전트를 도커 이미지 빌드시 설치합니다.
-RUN pip3 install --upgrade whatap-python
+        "className": "language-bash"
+    }, `npm update whatap
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-설정"
-    }, `에이전트 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `애플리케이션 실행 전 Python 에이전트 작업 디렉터리를 정하고 기본 설정 파일을 생성하세요. 설정 파일을 통해 에이전트에 인증 정보를 전달하고 로그 추적 여부 등을 설정합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `에이전트 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "whatapconf-설정"
+    }, `whatap.conf 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `Python 애플리케이션 시작 시 와탭 에이전트가 Injection할 수 있도록 애플리케이션 시작 스크립트를 수정하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `컨테이너 작업 디렉터리를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `WHATAP_HOME`), ` 환경변수로 설정하세요. 해당 경로에 에이전트 로그 및 설정 파일을 생성합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash"
-    }, `export WHATAP_HOME=\${PWD}
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `WHATAP_HOME`), `으로 설정한 경로에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `whatap.conf`), ` 파일을 생성하고 설정하도록 다음 명령어를 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash"
-    }, `whatap-setting-config \\
---host $whatap_server_host \\
---license $license \\
---app_name $app_name \\
---app_process_name $app_process_name
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `애플리케이션 시작 명령어 앞에 다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `whatap-start-agent`), `를 추가해 모니터링을 활성화하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash"
-    }, `whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "caution"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `권한 문제가 발생하는 경우 다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "p"
-    }, `$WHATAP_HOME`), `에 권한을 부여하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-bash"
-    }, `echo \`sudo chmod -R 777 $WHATAP_HOME\`
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `에이전트 구성에 필수적인 설정 값으로 애플리케이션 배포 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `yaml`), ` 파일을 통해 설정합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `yaml`), ` 작성 예제는 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "#k8s-env"
-    }, `컨테이너 환경변수 설정`), `을 참고하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `라이센스(license)는 와탭의 사용자 인증 정보로 외부에 노출되면 안됩니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "dockerfile"
-    }, `Dockerfile`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 Dockerfile 정의 예시를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-docker"
-    }, `FROM python:3.10
-WORKDIR /app
-ADD . /app/
-RUN pip3 install --upgrade whatap-python 
-
-#entrypoint.sh 스크립트을 컨테이너에서 실행할 수 있도록 권한을 부여합니다.
-RUN chmod +x ./entrypoint.sh
-
-# 컨테이너 생성시 entrypoint.sh 스크립트를 실행합니다.
-CMD ["./entrypoint.sh"]
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "추가-설정"
-    }, `추가 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 설정은 선택사항으로 필요한 경우에만 사용하세요. 다음 추가 설정 외에도 로그 및 트랜잭션 관련 설정이 가능합니다. 기타 추가 설정의 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "https://docs.whatap.io/python/introduction"
-    }, `다음 문서`), `를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `node_modules/whatap`), ` 경로에 위치한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `에이전트 그룹화`), ` `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, `whatap.conf`), ` 파일을 Node.js 애플리케이션 루트 디렉토리로 복사하세요. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `whatap.conf`), ` 파일을 다음과 같이 수정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
-        "className": "language-bash"
-    }, `echo "okind=$okind" >> whatap.conf
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `로그 수집 활성화`), ` `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        "className": "language-ini"
+    }, `license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+whatap.server.host={수집 서버 IP}
+whatap_micro_enabled=true
+`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "애플리케이션-파일-내-에이전트-삽입-설정"
+    }, `애플리케이션 파일 내 에이전트 삽입 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `애플리케이션 메인 모듈의 첫 줄에 다음 코드를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
-        "className": "language-bash"
-    }, `echo "logsink_enabled=true" >> whatap.conf
-echo "logsink_trace_enabled=true" >> whatap.conf
-echo "trace_logging_enabled=true" >> whatap.conf
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "컨테이너-환경변수-설정"
-    }, `컨테이너 환경변수 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Docker 빌드 후 쿠버네티스 환경 내 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        "className": "language-javascript",
+        "metastring": "title='Example' showLineNumbers {1}",
+        "title": "'Example'",
+        "showLineNumbers": true,
+        "{1}": true
+    }, `var WhatapAgent = require('whatap').NodeAgent;
+
+WhatapAgent.NodeAgent;
+import http from 'http';
+import setupApp from '../src/app';
+let server = null;
+const port = normalizePort(process.env.PORT || '3000');
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `ECMAScript(ES)를 활용한다면 다음 코드를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-javascript"
+    }, `import WhatapAgent from 'whatap';
+WhatapAgent.NodeAgent;
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "컨테이너-환경변수"
+    }, `컨테이너 환경변수`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Docker 빌드 후 쿠버네티스 환경 내 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, `컨테이너 환경변수`), `를 설정하세요. 애플리케이션 배포 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
     }, `yaml`), ` 파일에 다음 내용을 추가하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-yaml"
-    }, `      env:
-        - name: license
-            value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-        - name: whatap_server_host
-            value: XXX.XXX.XXX.XXX
-        - name: app_name
-            value: {YOUR_APP_NAME}
-        - name: app_process_name
-          value: {YOUR_PROCESS_NAME}
-        - name: okind
-            value: {YOUR_GROUP_NAME}
-        - name: NODE_IP
-          valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-        - name: NODE_NAME
-          valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-        - name: POD_NAME
-          valueFrom: {fieldRef: {fieldPath: metadata.name}}
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 예시를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, `env:
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: OKIND
+    value: {YOUR_OKIND_NAME}
+- name: license
+    value: {licenseKey}
+- name: whatap_server_host
+    value: {proxyServer}
+- name: whatap_micro_enabled
+    value: "true"
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 예시를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-yaml"
-    }, `apiVersion: apps/v1
-kind: Deployment
+    }, `apiVersion: v1
+kind: Pod
 metadata:
-  name: python-fastapi-deployment
+  name: # Pod Name
+  labels: # Pod Labels
 spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: python-fastapi-pod
-  template:
-    metadata:
-      labels:
-        app: python-fastapi-pod
   containers:
-    - name: agent-python-fastapi
-    image: whatap/agent-python-fastapi
       env:
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
         - name: license
-            value: XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
+            value: {licenseKey}
         - name: whatap_server_host
-            value: XXX.XXX.XXX.XXX
-        - name: app_name
-            value: "myapp-python-fastapi"
-        - name: app_process_name
-          value: "uvicorn"
-        - name: NODE_IP
-          valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-        - name: NODE_NAME
-          valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-        - name: POD_NAME
-          valueFrom: {fieldRef: {fieldPath: metadata.name}}
+            value: {proxyServer}
+        - name: whatap_micro_enabled
+            value: "true"
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
@@ -718,9 +610,29 @@ spec:
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
+    }, `다운로드한 파일을 직접 설치한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `대시보드`)), ` 메뉴에서 에이전트를 확인할 수 없다면 다음 사항을 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
     }, `컨테이너에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `ps -ef | grep whatap_python`), ` 명령어를 실행해 와탭 Python 서비스가 정상적으로 실행되는지 확인하세요.`))));
+    }, `ps -ef | grep whatap`), ` 명령어를 실행해 에이전트 옵션을 적용했는지 확인하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `컨테이너의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `/whatap/logs`), ` 경로의 내용을 확인하세요. 에이전트 로그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `logs/`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "em"
+    }, `{whatap 설정파일명}`), `-yyyymmdd.log`), ` 형식의 파일명으로 출력됩니다.`))))));
 }
 MDXContent.isMDXComponent = true;
 
