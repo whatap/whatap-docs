@@ -639,7 +639,7 @@ function MDXContent(_param) {
         sid: "MNU07551",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴에서 탭 메뉴 위치 수정 및 매니페스트 정보 UI 변경"))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }), " 메뉴에서 과거 오브젝트 매니페스트를 조회할 수 있는 기능 추가"))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "preview-210a1"
     }, `Preview 2.1.0.a1`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
