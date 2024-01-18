@@ -474,7 +474,7 @@ RUN pip3 install --upgrade whatap-python
         "title": "'entrypoint.sh'"
     }, `#!/bin/bash
 
-# 컨테이너의 작업 디렉터리를 와탭 경로로 설정하세요. 해당 경로에 에이전트 로그 및 설정 파일이 생성됩니다.
+# 컨테이너의 작업 디렉터리를 와탭 경로로 설정하세요. 해당 경로에 에이전트 로그 및 설정 파일을 생성합니다.
 export WHATAP_HOME=\${PWD}
 
 # 권한 오류 발생 시 다음 주석을 제거 후 진행하세요.
@@ -504,8 +504,6 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `Python 애플리케이션 시작 시 와탭 에이전트가 Injection 할 수 있도록 애플리케이션 시작 스크립트를 수정하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
     }, `컨테이너 작업 디렉터리를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
     }, `WHATAP_HOME`), ` 환경변수로 설정하세요. 해당 경로에 에이전트 로그 및 설정 파일을 생성합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
@@ -522,7 +520,11 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
         parentName: "p"
     }, `WHATAP_HOME`), `으로 설정한 경로에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `whatap.conf`), ` 파일을 생성하고 설정하도록 다음 명령어를 실행하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, `whatap.conf`), ` 파일을 생성하고 설정하도록 다음 명령어를 실행하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `$`), `로 표시된 변수는 에이전트 구성에 필수적인 설정 값으로 애플리케이션 배포 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "p"
+    }, `yaml`), ` 파일을 통해 설정합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
@@ -538,9 +540,7 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
         parentName: "li"
     }, `애플리케이션 시작 명령어 앞에 다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "p"
-    }, `whatap-start-agent`), `를 추가해 에이전트를 실행하세요. 에이전트 구성에 필수적인 설정 값으로 애플리케이션 배포 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `yaml`), ` 파일을 통해 설정합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, `whatap-start-agent`), `를 추가해 에이전트를 실행하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
