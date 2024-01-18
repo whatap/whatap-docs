@@ -119,6 +119,12 @@ function App() {
         snippetEllipsisText: '...',
         filters: `lang=${lang} AND hierarchy_lvl0!=Documentation`
     }), /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, null)), /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "mobile-refine"
+    }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {
+        attribute: "hierarchy_lvl0",
+        limit: "10",
+        showMore: true
+    })), /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "right-panel"
     }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Z, null), /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_instantsearch_dom__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Z, {
         showLast: true

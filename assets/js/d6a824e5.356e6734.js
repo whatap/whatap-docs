@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56687],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[89348],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 11147:
+/***/ 624:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -325,12 +325,12 @@ const metadata = {
     "id": "kubernetes/install-docker-go-temp",
     "title": "Docker Go 설치",
     "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
-    "source": "@site/docs/kubernetes/install-docekr-go-temp.mdx",
+    "source": "@site/docs/kubernetes/install-docker-go-temp.mdx",
     "sourceDirName": "kubernetes",
     "slug": "/kubernetes/install-docker-go-temp",
     "permalink": "/whatap-docs/kubernetes/install-docker-go-temp",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/install-docekr-go-temp.mdx",
+    "editUrl": "undefined/docs/kubernetes/install-docker-go-temp.mdx",
     "tags": [
         {
             "label": "쿠버네티스",
