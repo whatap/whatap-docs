@@ -33,6 +33,9 @@
   float: left;
   width: 23%;
 }
+.mobile-refine {
+  display: none;
+}
 
 .ais-RefinementList-list {
   list-style: none;
@@ -126,6 +129,13 @@
 @media (max-width: 640px) {
   .left-panel {
     display: none;
+  }
+  .mobile-refine {
+    display: block;
+  }
+  .mobile-refine ul li {
+    display: inline-block;
+    margin-right: 10px;
   }
   .right-panel {
     display: block;

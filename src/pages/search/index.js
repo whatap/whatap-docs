@@ -115,6 +115,13 @@ export default function App() {
                     />
                     <Stats />
                 </div>
+                <div className='mobile-refine'>
+                    <RefinementList 
+                        attribute="hierarchy_lvl0" 
+                        limit="10"
+                        showMore={true}
+                    />
+                </div>
                 <div className="right-panel">
                     <SearchBox />
                     <Pagination showLast={true} />
