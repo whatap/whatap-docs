@@ -562,25 +562,42 @@ EXPOSE 8080
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 예시를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-yaml"
-    }, `apiVersion: v1
-kind: Pod
+    }, `apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: mypod
+  name: #DeploymentName
+  labels:
+    app: #AppLabel
 spec:
-  containers:
-      env:
-    - name: NODE_IP
-      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-    - name: NODE_NAME
-      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-    - name: POD_NAME
-      valueFrom: {fieldRef: {fieldPath: metadata.name}}
-        - name: license
-            value: {licenseKey}
-        - name: whatap_server_host
-            value: {proxyServer}
-        - name: whatap_micro_enabled
-            value: "true"
+  selector:
+    matchLabels:
+      app: #AppLabel
+    replicas: 3
+  template:
+    metadata:
+      labels:
+        app: #AppLabel
+        spec:
+          containers:
+            - name: #ContainerName
+        image: nginx
+        ports:
+        - containerPort: 80
+              env:
+            - name: NODE_IP
+            valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+                - name: NODE_NAME
+              valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+            - name: POD_NAME
+              valueFrom: {fieldRef: {fieldPath: metadata.name}}
+                - name: OKIND
+          value: #DeploymentName
+                - name: license
+                    value: {licenseKey}
+                - name: whatap_server_host
+                    value: {proxyServer}
+                - name: whatap_micro_enabled
+                    value: "true"
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {

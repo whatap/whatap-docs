@@ -376,16 +376,6 @@ const toc = [
         level: 2
     },
     {
-        value: 'whatap.conf 설정',
-        id: 'whatapconf-설정',
-        level: 3
-    },
-    {
-        value: '애플리케이션 파일 내 에이전트 삽입 설정',
-        id: '애플리케이션-파일-내-에이전트-삽입-설정',
-        level: 3
-    },
-    {
         value: '컨테이너 환경변수',
         id: '컨테이너-환경변수',
         level: 2
@@ -450,50 +440,19 @@ function MDXContent(_param) {
     }, `npm update whatap
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-설정"
-    }, `에이전트 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "whatapconf-설정"
-    }, `whatap.conf 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `node_modules/whatap`), ` 경로에 위치한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `whatap.conf`), ` 파일을 Node.js 애플리케이션 루트 디렉토리로 복사하세요. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `whatap.conf`), ` 파일을 다음과 같이 수정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
-        parentName: "pre",
-        "className": "language-ini"
-    }, `license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-whatap.server.host={수집 서버 IP}
-whatap_micro_enabled=true
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "애플리케이션-파일-내-에이전트-삽입-설정"
-    }, `애플리케이션 파일 내 에이전트 삽입 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `애플리케이션 메인 모듈의 첫 줄에 다음 코드를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+    }, `에이전트 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `애플리케이션 메인 모듈의 첫 줄에 다음 코드를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-javascript",
         "metastring": "title='Example' showLineNumbers {1}",
         "title": "'Example'",
         "showLineNumbers": true,
         "{1}": true
-    }, `var WhatapAgent = require('whatap').NodeAgent;
-
+    }, `const WhatapAgent = require('whatap').NodeAgent;
 WhatapAgent.NodeAgent;
-import http from 'http';
-import setupApp from '../src/app';
-let server = null;
-const port = normalizePort(process.env.PORT || '3000');
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `ECMAScript(ES) 활용 시 다음 코드를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-javascript"
-    }, `import WhatapAgent from 'whatap';
+    }, `import WhatapAgentfrom 'whatap';
 WhatapAgent.NodeAgent;
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "컨테이너-환경변수"
@@ -522,26 +481,42 @@ WhatapAgent.NodeAgent;
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음 예시를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-yaml"
-    }, `apiVersion: v1
-kind: Pod
+    }, `apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: # Pod Name
-  labels: # Pod Labels
+  name: #DeploymentName
+  labels:
+    app: #AppLabel
 spec:
-  containers:
-      env:
-    - name: NODE_IP
-      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-    - name: NODE_NAME
-      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-    - name: POD_NAME
-      valueFrom: {fieldRef: {fieldPath: metadata.name}}
-        - name: license
-            value: {licenseKey}
-        - name: whatap_server_host
-            value: {proxyServer}
-        - name: whatap_micro_enabled
-            value: "true"
+  selector:
+    matchLabels:
+      app: #AppLabel
+    replicas: 3
+  template:
+    metadata:
+      labels:
+        app: #AppLabel
+        spec:
+          containers:
+            - name: #ContainerName
+        image: nginx
+        ports:
+        - containerPort: 80
+              env:
+            - name: NODE_IP
+            valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+                - name: NODE_NAME
+              valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+            - name: POD_NAME
+              valueFrom: {fieldRef: {fieldPath: metadata.name}}
+                - name: OKIND
+          value: #DeploymentName
+                - name: license
+                    value: {licenseKey}
+                - name: whatap_server_host
+                    value: {proxyServer}
+                - name: whatap_micro_enabled
+                    value: "true"
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
@@ -628,11 +603,7 @@ spec:
         parentName: "li"
     }, `컨테이너의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "p"
-    }, `/whatap/logs`), ` 경로의 내용을 확인하세요. 에이전트 로그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `logs/`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "em"
-    }, `{whatap 설정파일명}`), `-yyyymmdd.log`), ` 형식의 파일명으로 출력됩니다.`))))));
+    }, `/whatap/logs`), ` 경로의 내용을 확인하세요.`))))));
 }
 MDXContent.isMDXComponent = true;
 
