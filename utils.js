@@ -250,6 +250,12 @@ function colsToJson(data){
     "ko": "통합 APP.그룹 토폴로지"
   }
 
+  rd["logExplorer"] = {
+    "en": "Log Trend",
+    "ja": "ログトレンド",
+    "ko": "로그 트렌드"
+  }
+
   return rd;
 }
 
