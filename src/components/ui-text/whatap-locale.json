@@ -51856,52 +51856,52 @@
     "service_id": "TTL07525"
   },
   "TTL07526": {
-    "en": "[ 300~ ] Request trends by Resource & Subresource",
-    "ja": "[ 300~ ] Resource & Subresource別のリクエスト傾向",
-    "ko": "[ 300~ ] Resource & Subresource 별 요청 추이",
-    "zh": "[ 300~ ] Request trends by Resource & Subresource",
+    "en": "[ 3xx ] Request trends by Resource & Subresource per minute",
+    "ja": "[ 3xx ] 1分当たりResource & Subresource別のリクエスト傾向",
+    "ko": "[ 3xx ] 분당 Resource & Subresource 별 요청 수 추이",
+    "zh": "[ 3xx ] Request trends by Resource & Subresource per minute",
     "service_id": "TTL07526"
   },
   "TTL07527": {
-    "en": "[ 200 ] Request trends by Resource & Subresource",
-    "ja": "[ 200 ] Resource & Subresource別のリクエスト傾向",
-    "ko": "[ 200 ] Resource & Subresource 별 요청 추이",
-    "zh": "[ 200 ] Request trends by Resource & Subresource",
+    "en": "[ 2xx ] Request trends by Resource & Subresource per minute",
+    "ja": "[ 2xx ] 1分当たりResource & Subresource別のリクエスト傾向",
+    "ko": "[ 2xx ] 분당 Resource & Subresource 별 요청 수 추이",
+    "zh": "[ 2xx ] Request trends by Resource & Subresource per minute",
     "service_id": "TTL07527"
   },
   "TTL07528": {
-    "en": "[ 300~ ] Trend of response request count",
-    "ja": "[ 300~ ] 応答のリクエスト数推移",
-    "ko": "[ 300~ ] 응답 요청 수 추이",
-    "zh": "[ 300~ ] Trend of response request count",
+    "en": "[ 3xx ] Trend of response request count per minute",
+    "ja": "[ 3xx ] 1分当たり応答のリクエスト数推移",
+    "ko": "[ 3xx ] 분당 응답 코드별 요청 수 추이",
+    "zh": "[ 3xx ] Trend of response request count per minute",
     "service_id": "TTL07528"
   },
   "TTL07529": {
-    "en": "[ 300~ ] Response request status",
-    "ja": "[ 300~ ] 応答要求の状況",
-    "ko": "[ 300~ ] 응답 요청 현황",
-    "zh": "[ 300~ ] Response request status",
+    "en": "[ 3xx ] Response request status per minute",
+    "ja": "[ 3xx ] 1分当たり応答要求の状況",
+    "ko": "[ 3xx ] 분당 응답 요청 현황",
+    "zh": "[ 3xx ] Response request status per minute",
     "service_id": "TTL07529"
   },
   "TTL07530": {
-    "en": "[ 200 ] Trend of response request count",
-    "ja": "[ 200 ] 応答のリクエスト数推移",
-    "ko": "[ 200 ] 응답 요청 수 추이",
-    "zh": "[ 200 ] Trend of response request count",
+    "en": "[ 2xx ] Trend of response request count per minute",
+    "ja": "[ 2xx ] 1分当たり応答のリクエスト数推移",
+    "ko": "[ 2xx ] 분당 응답 코드별 요청 수 추이",
+    "zh": "[ 2xx ] Trend of response request count per minute",
     "service_id": "TTL07530"
   },
   "TTL07531": {
-    "en": "[ 200 ] Response request status",
-    "ja": "[ 200 ] 応答要求の状況",
-    "ko": "[ 200 ] 응답 요청 현황",
-    "zh": "[ 200 ] Response request status",
+    "en": "[ 2xx ] Response request status per minute",
+    "ja": "[ 2xx ] 1分当たり応答要求の状況",
+    "ko": "[ 2xx ] 분당 응답 요청 현황",
+    "zh": "[ 2xx ] Response request status per minute",
     "service_id": "TTL07531"
   },
   "TTL07532": {
-    "en": "Trends in POST requests by Resource & Subresource",
-    "ja": "ResourceとSubresource別のPOSTリクエスト数の推移",
-    "ko": "Resource & Subresource 별 POST 요청 수 추이",
-    "zh": "Trend of number of POST requests by Resource & Subresource",
+    "en": "Trends in POST requests by Resource & Subresource per minute",
+    "ja": "1分当たりResourceとSubresource別のPOSTリクエスト数の推移",
+    "ko": "Resource & Subresource 별 분당 POST 요청 수 추이",
+    "zh": "Trends in POST requests by Resource & Subresource per minute",
     "service_id": "TTL07532"
   },
   "TTL07533": {
@@ -51919,10 +51919,10 @@
     "service_id": "TTL07534"
   },
   "TTL07535": {
-    "en": "Trends in the number of GET requests per Resource & Subresource",
-    "ja": "ResourceとSubresource別のGETリクエスト数の推移",
-    "ko": "Resource & Subresource 별 GET 요청 수 추이",
-    "zh": "Trend of number of GET requests by Resource & Subresource",
+    "en": "Trends in the number of GET requests by Resource & Subresource per minute",
+    "ja": "1分当たりResourceとSubresource別のGETリクエスト数の推移",
+    "ko": "Resource & Subresource 별 분당 GET 요청 수 추이",
+    "zh": "Trends in the number of GET requests by Resource & Subresource per minute",
     "service_id": "TTL07535"
   },
   "TTL07536": {
@@ -52051,7 +52051,7 @@
     "zh": "You do not have \brole to set alert settings.",
     "service_id": "TLT07553"
   },
-  "\bTLT07554": {
+  "TLT07554": {
     "en": "Kind",
     "ja": "種類",
     "ko": "종류",
@@ -52094,11 +52094,95 @@
     "service_id": "TTL07559"
   },
   "NTC07560": {
-    "en": "Please update your agent to view historical data.",
-    "ja": "過去のデータを表示するには、エージェントを更新してください。",
-    "ko": "과거 데이터를 보려면 에이전트를 업데이트 해주세요.",
-    "zh": "Please update your agent to view historical data.",
+    "en": "To enable the feature for viewing historical object manifests, please update your agent",
+    "ja": "過去のObject Manifestルックアップ機能を有効にするには、エージェントを更新してください。",
+    "ko": "과거 Object Manifest 조회 기능을 활성화하려면 에이전트를 업데이트하세요.",
+    "zh": "To enable the feature for viewing historical object manifests, please update your agent",
     "service_id": "NTC07560"
+  },
+  "DSC07561": {
+    "en": "We recommend increasing the memory limit of the master agent.",
+    "ja": "マスター エージェントのメモリ制限を増やすことをお勧めします。",
+    "ko": "마스터 에이전트의 메모리 Limit 상향을 권고드립니다.",
+    "zh": "We recommend increasing the memory limit of the master agent.",
+    "service_id": "DSC07561"
+  },
+  "ITM07562": {
+    "en": "Current Master Agent CPU Limit",
+    "ja": "現在のマスター エージェントの CPU 制限",
+    "ko": "현재 마스터 에이전트 CPU Limit",
+    "zh": "Current Master Agent CPU Limit",
+    "service_id": "ITM07562"
+  },
+  "ITM07563": {
+    "en": "Node Agent Count",
+    "ja": "ノードエージェント数",
+    "ko": "노드 에이전트 수",
+    "zh": "Node Agent Count",
+    "service_id": "ITM07563"
+  },
+  "ITM07564": {
+    "en": "Lookup time",
+    "ja": "照会時間",
+    "ko": "조회 시간",
+    "zh": "Lookup time",
+    "service_id": "ITM07564"
+  },
+  "NTC07565": {
+    "en": "Successfully saved.",
+    "ja": "正常に保存されました",
+    "ko": "성공적으로 저장되었습니다.",
+    "zh": "Successfully saved.",
+    "service_id": "NTC07565"
+  },
+  "TTL07566": {
+    "en": "{object} Detail",
+    "ja": "{object}詳細",
+    "ko": "{object} 상세",
+    "zh": "{object} Detail",
+    "service_id": "TTL07566"
+  },
+  "ITM07568": {
+    "en": "Virginia",
+    "ja": "バージニア州",
+    "ko": "버지니아",
+    "zh": "Virginia",
+    "service_id": "ITM07568"
+  },
+  "ITM07569": {
+    "en": "East America",
+    "ja": "東アメリカ",
+    "ko": "미국 동부",
+    "zh": "East America",
+    "service_id": "ITM07569"
+  },
+  "TTL07570": {
+    "en": "[ 400~ ] Request trends by Resource & Subresource per minute",
+    "ja": "[ 400~ ] 1分当たりResource & Subresource別のリクエスト傾向",
+    "ko": "[ 400~ ] 분당 Resource & Subresource 별 요청 수 추이",
+    "zh": "[ 400~ ] Request trends by Resource & Subresource per minute",
+    "service_id": "TTL07570"
+  },
+  "TTL07571": {
+    "en": "[ 400~ ] Trend of response request count per minute",
+    "ja": "[ 400~ ] 1分当たり応答のリクエスト数推移",
+    "ko": "[ 400~ ] 분당 응답 코드별 요청 수 추이",
+    "zh": "[ 400~ ] Trend of response request count per minute",
+    "service_id": "TTL07571"
+  },
+  "TTL07572": {
+    "en": "[ 400~ ] Response request status per minute",
+    "ja": "[ 400~ ] 1分当たり応答要求の状況",
+    "ko": "[ 400~ ] 분당 응답 요청 현황",
+    "zh": "[ 400~ ] Response request status per minute",
+    "service_id": "TTL07572"
+  },
+  "TTL07573": {
+    "en": "Number of requests running in the last 1 second",
+    "ja": "最近 1 秒以内に実行中のリクエスト数",
+    "ko": "최근 1초 내 실행중인 요청 수",
+    "zh": "Number of requests running in the last 1 second",
+    "service_id": "TTL07573"
   },
   "": {
     "": "",
@@ -52265,5 +52349,10 @@
     "en": "SSO Integrations",
     "ja": "SSO連動",
     "ko": "SSO 연동"
+  },
+  "integratedTopology": {
+    "en": "Integrated APP. Topology",
+    "ja": "統合APPトポロジー",
+    "ko": "통합 APP.그룹 토폴로지"
   }
 }

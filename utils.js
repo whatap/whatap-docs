@@ -244,6 +244,12 @@ function colsToJson(data){
     "ko": "SSO 연동"
   }
 
+  rd["integratedTopology"] = {
+    "en": "Integrated APP. Topology",
+    "ja": "統合APPトポロジー",
+    "ko": "통합 APP.그룹 토폴로지"
+  }
+
   return rd;
 }
 
