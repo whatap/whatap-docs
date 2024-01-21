@@ -3023,14 +3023,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_0_x',
+            id: 'release-notes/service/service-2_1_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_0_x',
+              id: 'release-notes/service/service-2_1_x',
               className: 'new',
             },
+            'release-notes/service/service-2_0_x',
             'release-notes/service/service-1_114_x',
             'release-notes/service/service-1_112_x',
             'release-notes/service/service-1_110_x',
@@ -3039,7 +3040,6 @@ const sidebars = {
             'release-notes/service/service-1_104_x',
             'release-notes/service/service-1_102_x',
             'release-notes/service/service-1_100_x',
-            'release-notes/service/service-1_98_x',
             'release-notes/service/service-previous',
           ]
         },
