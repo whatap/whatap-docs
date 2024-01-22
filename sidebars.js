@@ -3160,14 +3160,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_88',
+                id: 'release-notes/nodejs/nodejs-0_4_89',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_88',
+                  id: 'release-notes/nodejs/nodejs-0_4_89',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_88',
                 'release-notes/nodejs/nodejs-0_4_86',
                 'release-notes/nodejs/nodejs-0_4_83',
                 'release-notes/nodejs/nodejs-0_4_81',
@@ -3264,7 +3265,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/server-2_4_9',
@@ -3273,7 +3274,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_4_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_4_8',
                 'release-notes/server/server-2_4_7',
@@ -3381,7 +3382,7 @@ const sidebars = {
               label: 'Browser',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/browser/browser-v1_3_3',
@@ -3390,7 +3391,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/browser/browser-v1_3_3',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/browser/browser-v1_3_2',
                 'release-notes/browser/browser-v1_3_1',
