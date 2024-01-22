@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36449],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[32505],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -333,7 +333,7 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 57843:
+/***/ 64037:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -434,7 +434,7 @@ const frontMatter = {
     title: '이벤트 기록',
     description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
     tags: [
-        'MySQL',
+        'PostgreSQL',
         '경고 알림',
         '이벤트 기록',
         '데이터베이스 모니터링'
@@ -442,20 +442,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/set-event-history",
-    "id": "mysql/set-event-history",
+    "unversionedId": "postgresql/set-event-history",
+    "id": "postgresql/set-event-history",
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-    "source": "@site/docs/mysql/set-event-history.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/set-event-history",
-    "permalink": "/whatap-docs/mysql/set-event-history",
+    "source": "@site/docs/postgresql/set-event-history.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/set-event-history",
+    "permalink": "/whatap-docs/postgresql/set-event-history",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/set-event-history.mdx",
+    "editUrl": "undefined/docs/postgresql/set-event-history.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "경고 알림",
@@ -476,20 +476,20 @@ const metadata = {
         "title": "이벤트 기록",
         "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
         "tags": [
-            "MySQL",
+            "PostgreSQL",
             "경고 알림",
             "이벤트 기록",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
         "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/mysql/set-receive-event"
+        "permalink": "/whatap-docs/postgresql/set-receive-event"
     },
     "next": {
         "title": "이벤트 수신 포맷",
-        "permalink": "/whatap-docs/mysql/set-event-format"
+        "permalink": "/whatap-docs/postgresql/set-event-format"
     }
 };
 const assets = {};
@@ -502,6 +502,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
 const Cmdname = makeShortcode("Cmdname");
 const InDoc = makeShortcode("InDoc");
 const ImgLang = makeShortcode("ImgLang");
+const Link = makeShortcode("Link");
+const Xclude = makeShortcode("Xclude");
 const layoutProps = {
     toc
 };
@@ -514,8 +516,8 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
-        product: "MySQL",
-        link: "../mysql-v1/set-event-history",
+        product: "PostgreSQL",
+        link: "../postgresql-v1/set-event-history",
         mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "event_statistic",
@@ -624,13 +626,43 @@ function MDXContent(_param) {
         sid: "message",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 내용을 기준으로 이벤트 기록을 필터링할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), " 내용을 기준으로 이벤트 기록을 필터링할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "java,php,nodejs,python,dotnet,golang,log",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "all_selected",
+        sid: "application",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "database",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "kubernetes",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "container",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "browser,npm,amazon-cloudwatch,amazon-ecs,aws-log,azure,ncloud,oracle-cloud",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "agent",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -670,7 +702,130 @@ function MDXContent(_param) {
         sid: "event_setting",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴로 이동합니다.")));
+    }), " 메뉴로 이동합니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "title",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " / ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "message",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_setting",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 추가한 이벤트의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_name",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "과 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "message",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 항목의 내용입니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        parentName: "li",
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `이벤트 추가에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "metric-warning-notice"
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `알림 메시지 사용자 정의에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "set-notification-message"
+    }, `다음 문서`), `를 참조하세요.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_time",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 이벤트가 발생한 시각입니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `이벤트가 해소되지 않고 진행 중일 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "in_progress",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `정비 중인 경우 이벤트가 발생하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "ITM07315",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        parentName: "li",
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "sms_maintenance",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "에 대한 자세한 내용은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
+        to: "../management/maintenance",
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06583",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 설정한 이벤트가 해결된 시각입니다. 만약 해당 컬럼이 보이지 않는다면 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "column_select",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 버튼을 클릭한 다음 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06583",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "을 선택하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Xclude, {
+        product: "postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb",
+        mdxType: "Xclude"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "application",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_setting",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 이벤트 추가 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "alert_object_filtering",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 항목을 설정하면 표시됩니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "instance",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_setting",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 이벤트 추가 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "alert_object_filtering",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 항목을 설정하면 표시됩니다."))));
 }
 MDXContent.isMDXComponent = true;
 

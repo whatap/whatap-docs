@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[34561],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[36449],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,128 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 78898:
+/***/ 20454:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ZP: () => (/* binding */ MDXContent)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle, toc */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
+    };
+const Link = makeShortcode("Link");
+const layoutProps = {
+    toc
+};
+const MDXLayout = "wrapper";
+function MDXContent(_param) {
+    var { components } = _param, props = _object_without_properties(_param, [
+        "components"
+    ]);
+    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
+        components: components,
+        mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, "이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
+        to: props.link,
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요.")));
+}
+MDXContent.isMDXComponent = true;
+
+
+/***/ }),
+
+/***/ 57843:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -226,6 +347,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20454);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -312,27 +434,28 @@ const frontMatter = {
     title: '이벤트 기록',
     description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
     tags: [
-        'AWS Log',
+        'MySQL',
         '경고 알림',
-        '이벤트 기록'
+        '이벤트 기록',
+        '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "aws-log/set-event-history",
-    "id": "aws-log/set-event-history",
+    "unversionedId": "mysql/set-event-history",
+    "id": "mysql/set-event-history",
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-    "source": "@site/docs/aws-log/set-event-history.mdx",
-    "sourceDirName": "aws-log",
-    "slug": "/aws-log/set-event-history",
-    "permalink": "/whatap-docs/aws-log/set-event-history",
+    "source": "@site/docs/mysql/set-event-history.mdx",
+    "sourceDirName": "mysql",
+    "slug": "/mysql/set-event-history",
+    "permalink": "/whatap-docs/mysql/set-event-history",
     "draft": false,
-    "editUrl": "undefined/docs/aws-log/set-event-history.mdx",
+    "editUrl": "undefined/docs/mysql/set-event-history.mdx",
     "tags": [
         {
-            "label": "AWS Log",
-            "permalink": "/whatap-docs/tags/aws-log"
+            "label": "MySQL",
+            "permalink": "/whatap-docs/tags/my-sql"
         },
         {
             "label": "경고 알림",
@@ -341,6 +464,10 @@ const metadata = {
         {
             "label": "이벤트 기록",
             "permalink": "/whatap-docs/tags/이벤트-기록"
+        },
+        {
+            "label": "데이터베이스 모니터링",
+            "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
         }
     ],
     "version": "current",
@@ -349,18 +476,24 @@ const metadata = {
         "title": "이벤트 기록",
         "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
         "tags": [
-            "AWS Log",
+            "MySQL",
             "경고 알림",
-            "이벤트 기록"
+            "이벤트 기록",
+            "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "awslogSidebar",
+    "sidebar": "mysqlSidebar",
     "previous": {
         "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/aws-log/set-receive-event"
+        "permalink": "/whatap-docs/mysql/set-receive-event"
+    },
+    "next": {
+        "title": "이벤트 수신 포맷",
+        "permalink": "/whatap-docs/mysql/set-event-format"
     }
 };
 const assets = {};
+
 const toc = [];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
@@ -369,6 +502,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
 const Cmdname = makeShortcode("Cmdname");
 const InDoc = makeShortcode("InDoc");
 const ImgLang = makeShortcode("ImgLang");
+const Link = makeShortcode("Link");
+const Xclude = makeShortcode("Xclude");
 const layoutProps = {
     toc
 };
@@ -380,6 +515,10 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .ZP, {
+        product: "MySQL",
+        link: "../mysql-v1/set-event-history",
+        mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "event_statistic",
         className: "uitext",
@@ -487,13 +626,43 @@ function MDXContent(_param) {
         sid: "message",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 내용을 기준으로 이벤트 기록을 필터링할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), " 내용을 기준으로 이벤트 기록을 필터링할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "java,php,nodejs,python,dotnet,golang,log",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "all_selected",
+        sid: "application",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "database",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "kubernetes",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "container",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "browser,npm,amazon-cloudwatch,amazon-ecs,aws-log,azure,ncloud,oracle-cloud",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "agent",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 프로젝트에 포함한 에이전트를 선택할 수 있습니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -533,7 +702,130 @@ function MDXContent(_param) {
         sid: "event_setting",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴로 이동합니다.")));
+    }), " 메뉴로 이동합니다."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "title",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " / ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "message",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_setting",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 추가한 이벤트의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_name",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "과 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "message",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 항목의 내용입니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        parentName: "li",
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `이벤트 추가에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "metric-warning-notice"
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `알림 메시지 사용자 정의에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "set-notification-message"
+    }, `다음 문서`), `를 참조하세요.`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_time",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 이벤트가 발생한 시각입니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `이벤트가 해소되지 않고 진행 중일 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "in_progress",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `정비 중인 경우 이벤트가 발생하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "ITM07315",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        parentName: "li",
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "sms_maintenance",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "에 대한 자세한 내용은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
+        to: "../management/maintenance",
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06583",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 설정한 이벤트가 해결된 시각입니다. 만약 해당 컬럼이 보이지 않는다면 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "column_select",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 버튼을 클릭한 다음 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "TTL06583",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), "을 선택하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Xclude, {
+        product: "postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb",
+        mdxType: "Xclude"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "application",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_setting",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 이벤트 추가 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "alert_object_filtering",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 항목을 설정하면 표시됩니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "instance",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "event_setting",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 이벤트 추가 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "alert_object_filtering",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 항목을 설정하면 표시됩니다."))));
 }
 MDXContent.isMDXComponent = true;
 
