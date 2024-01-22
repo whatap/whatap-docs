@@ -535,6 +535,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
 const Xclude = makeShortcode("Xclude");
 const InDoc = makeShortcode("InDoc");
 const ProdImg = makeShortcode("ProdImg");
+const Cmdname = makeShortcode("Cmdname");
 const Tabs = makeShortcode("Tabs");
 const TabItem = makeShortcode("TabItem");
 const layoutProps = {
@@ -602,36 +603,40 @@ function MDXContent(_param) {
         src: (__webpack_require__(27374)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `시간`)), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "time",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "숫자 2",
         src: (__webpack_require__(79221)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "instance",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), `에서 조회하길 원하는 날짜와 시간, 인스턴스를 선택하세요. 설정한 시간에 락이 발생했다면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `인스턴스`)), `에서 조회하길 원하는 날짜와 시간, 인스턴스를 선택하세요. 설정한 시간에 락이 발생했다면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `Lock Wait Sessions`)), `와 화면 아래 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `Lock Wait Wessions`)), `와 화면 아래 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `Lock Tree`)), ` 테이블에 조회한 데이터를 표시합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Lock Tree`)), ` 테이블에 조회한 데이터를 표시합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `그래프 차트에서 특정 시간을 클릭하면 화면 아래 테이블에서 선택한 시간의 락 정보를 확인할 수 있습니다. 화면 아래 상세 정보에서 초 단위 버튼을 선택하면 5초 단위로 락 정보를 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `최대 2주간의 데이터를 조회할 수 있습니다. 그래프 차트에서 특정 시간을 클릭하면 화면 아래 테이블에서 선택한 시간의 락 정보를 확인할 수 있습니다. 화면 아래 상세 정보에서 초 단위 버튼을 선택하면 5초 단위로 락 정보를 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `그래프 차트에서 특정 시간 영역을 드래그하면 선택한 영역을 확대해 락 정보를 확인할 수 있습니다. `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `그래프 차트에서 특정 시간 영역을 계속해서 드래그(드릴다운)할수록 상세 시간의 차트와 락 트리를 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `차트에서 3시간 이내로 드래그해서 5초 단위의 데이터를 조회할 수 있습니다. 다만 5초 단위의 데이터는 최근 한 달 범위에서만 조회할 수 있습니다. 한 달 이전의 데이터는 5분 요약 데이터로만 볼 수 있습니다. 예를 들어, 40일 전의 락 트릭 데이터를 드래그(드릴다운)해서 데이터를 조회할 수 없으며, 5분 요약 데이터로만 볼 수 있습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "column-info"
     }, `컬럼 정보 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Tabs, {
         groupId: "db-columns",
