@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[89075],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[21224],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 37630:
+/***/ 41693:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,31 +308,31 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'nodejs-0_4_88',
-    title: 'Node.js Agent v0.4.88',
+    id: 'nodejs-0_4_89',
+    title: 'Node.js Agent v0.4.89',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/nodejs/nodejs-0_4_86',
+    pagination_next: 'release-notes/nodejs/nodejs-0_4_88',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/nodejs/nodejs-0_4_88",
-    "id": "release-notes/nodejs/nodejs-0_4_88",
-    "title": "Node.js Agent v0.4.88",
-    "description": "2024년 01월 11일",
-    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.88.mdx",
+    "unversionedId": "release-notes/nodejs/nodejs-0_4_89",
+    "id": "release-notes/nodejs/nodejs-0_4_89",
+    "title": "Node.js Agent v0.4.89",
+    "description": "2024년 01월 22일",
+    "source": "@site/docs/release-notes/nodejs/nodejs-0.4.89.mdx",
     "sourceDirName": "release-notes/nodejs",
-    "slug": "/release-notes/nodejs/nodejs-0_4_88",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_88",
+    "slug": "/release-notes/nodejs/nodejs-0_4_89",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_89",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.88.mdx",
+    "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.4.89.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "nodejs-0_4_88",
-        "title": "Node.js Agent v0.4.88",
+        "id": "nodejs-0_4_89",
+        "title": "Node.js Agent v0.4.89",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/nodejs/nodejs-0_4_86",
+        "pagination_next": "release-notes/nodejs/nodejs-0_4_88",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
@@ -341,8 +341,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/php/php-previous"
     },
     "next": {
-        "title": "Node.js Agent v0.4.86",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_86"
+        "title": "Node.js Agent v0.4.88",
+        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_88"
     }
 };
 const assets = {};
@@ -363,27 +363,11 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 22일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "trace_http_client_ip_header_key=x-forwarded-for"), " 옵션을 설정한 상태에서 헤더로 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "x-forwarded-for"), " 값에 여러 개의 IP가 전달될 경우(쉼표 기준) 첫 번째 값으로 IP를 설정하도록 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        parentName: "li",
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `이 옵션에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "../../nodejs/agent-number-of-user#trace_http_client_ip_header_key"
-    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " TCP, UDP 소켓 모니터링 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "profile_http_header_enabled"), " 옵션의 값이 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "true"), "이면 profile의 headers 값을 나타내는 방식 수정 (JSON → key=value\\n)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, "Fixed"), " ONODE 설정 오류 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
         parentName: "admonition"
