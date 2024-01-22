@@ -628,7 +628,16 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `최대 2주간의 데이터를 조회할 수 있습니다. 그래프 차트에서 특정 시간을 클릭하면 화면 아래 테이블에서 선택한 시간의 락 정보를 확인할 수 있습니다. 화면 아래 상세 정보에서 초 단위 버튼을 선택하면 5초 단위로 락 정보를 조회할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `최대 2주간의 데이터를 조회할 수 있습니다. 그래프 차트에서 특정 시간을 클릭하면 화면 아래 테이블에서 선택한 시간의 락 정보를 확인할 수 있습니다. 화면 아래 상세 정보에서 초 단위 버튼을 선택하면 5초 단위로 락 정보를 조회할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        parentName: "li",
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `Lock Wait Sessions`)), ` 차트의 오른쪽 위에 표시된 태그를 통해 조회 단위를 확인할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
