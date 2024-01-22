@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[48104],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[10148],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 62838:
+/***/ 23480:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,21 +314,21 @@ const frontMatter = {
     tags: [
         '트랜잭션',
         'UI',
-        'Go'
+        'Node.js'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/trs-profile",
-    "id": "golang/trs-profile",
+    "unversionedId": "nodejs/trs-profile",
+    "id": "nodejs/trs-profile",
     "title": "트랜잭션 트레이싱",
     "description": "트랜잭션 트레이싱을 안내합니다.",
-    "source": "@site/docs/golang/trs-profile.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/trs-profile",
-    "permalink": "/whatap-docs/golang/trs-profile",
+    "source": "@site/docs/nodejs/trs-profile.mdx",
+    "sourceDirName": "nodejs",
+    "slug": "/nodejs/trs-profile",
+    "permalink": "/whatap-docs/nodejs/trs-profile",
     "draft": false,
-    "editUrl": "undefined/docs/golang/trs-profile.mdx",
+    "editUrl": "undefined/docs/nodejs/trs-profile.mdx",
     "tags": [
         {
             "label": "트랜잭션",
@@ -339,8 +339,8 @@ const metadata = {
             "permalink": "/whatap-docs/tags/ui"
         },
         {
-            "label": "Go",
-            "permalink": "/whatap-docs/tags/go"
+            "label": "Node.js",
+            "permalink": "/whatap-docs/tags/node-js"
         }
     ],
     "version": "current",
@@ -351,17 +351,17 @@ const metadata = {
         "tags": [
             "트랜잭션",
             "UI",
-            "Go"
+            "Node.js"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "nodejsSidebar",
     "previous": {
         "title": "트랜잭션 분석하기",
-        "permalink": "/whatap-docs/golang/trs-view"
+        "permalink": "/whatap-docs/nodejs/trs-view"
     },
     "next": {
-        "title": "액티브 트랜잭션",
-        "permalink": "/whatap-docs/golang/active-transactions"
+        "title": "멀티 트랜잭션",
+        "permalink": "/whatap-docs/nodejs/trs-multi-trace"
     }
 };
 const assets = {};
@@ -460,6 +460,7 @@ const ImgLang = makeShortcode("ImgLang");
 const Xclude = makeShortcode("Xclude");
 const InDoc = makeShortcode("InDoc");
 const Cmdname = makeShortcode("Cmdname");
+const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -983,7 +984,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `레코드 요약`)), ` 탭을 선택하세요. 트랜잭션의 기본 정보 및 해당 트랜잭션이 수행된 에이전트 관련 정보, 메모리 할당 사용량, 클라이언트 관련 정보를 확인할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }, `레코드 요약`)), ` 탭을 선택하세요. 트랜잭션의 기본 정보 및 해당 트랜잭션이 수행된 에이전트 관련 정보, 메모리 할당 사용량, 클라이언트 관련 정보를 확인할 수 있습니다.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "transaction-attribute"
     }, `트랜잭션 속성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
         parentName: "table"
@@ -1855,7 +1856,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
     }, `설정한 Param Key를 입력하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `가려진 매개 변수를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Xclude, {
-        product: "java",
+        product: "java,kubernetes",
         mdxType: "Xclude"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
@@ -1874,7 +1875,7 @@ function MDXContent(_param) {
         sid: "BTN06764",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 복호화된 파라미터 값을 확인할 수 있습니다. 비밀번호는 *`WHATAP_HOME`/paramkey.txt* 파일 내 6자리 문자열입니다. 다른 문자열로 변경 가능합니다. *paramkey.txt* 내 키는 SQL 변수 조회, HTTP 쿼리 조회, Thread 중지에 필요합니다.")))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+    }), ": 복호화된 파라미터 값을 확인할 수 있습니다. 비밀번호는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "WHATAP_HOME"), "/security.conf"), "(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "paramkey.txt"), ") 파일 내 6자리 문자열입니다. 다른 문자열로 변경 가능합니다. SQL 변수 조회, HTTP 쿼리 조회, Thread 중지에 필요합니다.")))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
         product: "java",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
@@ -1894,7 +1895,31 @@ function MDXContent(_param) {
         sid: "BTN06764",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 복호화된 파라미터 값을 확인할 수 있습니다. 비밀번호는 *`WHATAP_HOME`/security.conf*(*paramkey.txt*) 파일 내 6자리 문자열입니다. 다른 문자열로 변경 가능합니다. SQL 변수 조회, HTTP 쿼리 조회, Thread 중지에 필요합니다. 자세한 내용은 [다음 문서](install-agent#security)를 참조하세요.")))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), ": 복호화된 파라미터 값을 확인할 수 있습니다. 비밀번호는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "WHATAP_HOME"), "/security.conf"), "(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "paramkey.txt"), ") 파일 내 6자리 문자열입니다. 다른 문자열로 변경 가능합니다. SQL 변수 조회, HTTP 쿼리 조회, Thread 중지에 필요합니다. 자세한 내용은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
+        to: "install-agent#security",
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요.")))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(InDoc, {
+        product: "kubernetes",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `HTTP 파라미터와 관련한 에이전트 설정은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
+        to: "../java/agent-transaction#profile_http_parameter",
+        target: "_blank",
+        mdxType: "Link"
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "BTN06764",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ": 복호화된 파라미터 값을 확인할 수 있습니다. 비밀번호는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "WHATAP_HOME"), "/security.conf"), "(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "paramkey.txt"), ") 파일 내 6자리 문자열입니다. 다른 문자열로 변경 가능합니다. SQL 변수 조회, HTTP 쿼리 조회, Thread 중지에 필요합니다.")))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "transaction-parameter"
     }, `SQL 파라미터 조회`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
