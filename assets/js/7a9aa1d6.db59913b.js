@@ -99,7 +99,7 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-master-node-agent-temp',
+    id: 'install-master-node-agent-temp-en',
     title: 'Installation of the master and node agents',
     description: 'Follow the installation guide to install the master and node agents.',
     tags: [
@@ -116,14 +116,14 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/install-master-node-agent-temp",
-    "id": "kubernetes/install-master-node-agent-temp",
+    "unversionedId": "kubernetes/install-master-node-agent-temp-en",
+    "id": "kubernetes/install-master-node-agent-temp-en",
     "title": "Installation of the master and node agents",
     "description": "Follow the installation guide to install the master and node agents.",
     "source": "@site/docs/kubernetes/install-master-node-agent-temp-en.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/install-master-node-agent-temp",
-    "permalink": "/whatap-docs/kubernetes/install-master-node-agent-temp",
+    "slug": "/kubernetes/install-master-node-agent-temp-en",
+    "permalink": "/whatap-docs/kubernetes/install-master-node-agent-temp-en",
     "draft": false,
     "editUrl": "undefined/docs/kubernetes/install-master-node-agent-temp-en.mdx",
     "tags": [
@@ -154,7 +154,7 @@ const metadata = {
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-master-node-agent-temp",
+        "id": "install-master-node-agent-temp-en",
         "title": "Installation of the master and node agents",
         "description": "Follow the installation guide to install the master and node agents.",
         "tags": [
@@ -363,7 +363,7 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \\
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-bash"
-    }, `# {whatap_kube_X.YZ.yaml} 파일명을 다운로드한 파일명과 일치하도록 수정하세요.
+    }, `# {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
 kubectl apply -f {whatap_kube_X.YZ.yaml}
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
