@@ -10,26 +10,29 @@ tags:
   - Node
   - エージェントのインストール
 hide_table_of_contents: true
+toc_max_heading_level: 2
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**_インストール手順_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびNodeエージェントのインストールプロセスを進めてください。 
+次のように、マスター及びノードエージェントのインストール過程を案内します。 ***インストール案内***画面と同じプロセスです。
 
-<Tabs groupId='k8stype'>
+:::note 
 
-<TabItem value='kubernetes' label='KUBERNETES' default>
+EKS Fargateは、対応予定です。 
+
+:::
 
 ## 環境を事前に確認して設定
 
-ユーザーのKubernetes環境によっては、事前に環境設定が必要な場合があります。Istio、GKE、OpenShift環境に当てはまらない場合は、次のステップに進んでください。
+ユーザーのKubernetes環境によっては、事前の環境設定が必要な場合があります。 Istio、GKE、OpenShiftの環境に該当しない場合、[次の段階](#create-kubernetes-agent)に進んでください。
 
 <Tabs>
 
 <TabItem value='istio' label='Istio環境' default>
 
-Istio環境の場合は、次のコマンドを実行して必要なリソースを生成してください。
+Istio環境の場合は、次のコマンドを実行し、WhaTap収集サーバーと通信するリソースであるServiceEntryを生成してください。
 
 ```bash title='SH'
 kubectl create namespace whatap-monitoring
@@ -79,7 +82,7 @@ gcloudコマンドのインストールの詳細については、[グーグル�
 
 ![OpenShift](/img/kube-install-openshift.png)
 
-**_インストール手順_**画面で**_OpenShift環境の場合は、追加設定_**セクションを開いて**_openshift_scc_**ボタンを選択してください。ファイルをダウンロードした後、次のコマンドを実行してください。
+***インストール方法***画面で***OpenShift環境の場合の追加設定***セクションを開いて***whatap_openshift_scc.yaml***ボタンを選択してください。 ファイルをダウンロードした後、次のコマンドを実行してください。
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -91,9 +94,9 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成
 
-ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントをインストールする手順です。
+ユーザーのKubernetesバージョンとContainer Runtimeの*YAML*ファイルをダウンロードしてエージェントを生成してください。
 
-1.  マスターNodeで次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
+1.  次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
     ```bash
     kubectl get node -o wide
@@ -101,96 +104,68 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-check-version.svg)
 
-2.  **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンを選択してください。
+2.  ***エージェントのインストール***画面で**VERSION**と**CONTAINER-RUNTIME**の*YAML*ファイルを選択し***ダウンロード***ボタンをクリックしてください。
 
     <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
 
-    :::note
+3.  ダウンロードした*YAML*ファイルをマスターNodeにアップロードしてください。
 
-    マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
-
-    :::
-
-3.  ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
-
-4.  エージェントを作成するには、マスターNodeで次のコマンドを実行してください。 
+4.  エージェントを作成するには、次のコマンドを実行してください。 
 
     ```bash
     # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように変更してください。
     kubectl apply -f {whatap_kube_X.YZ.yaml}
     ```
 
-    :::note
+5.  次のようにエージェントを正常に生成(create)したことを確認してください。
 
-    **WhaTapエージェントは、プロジェクト情報を記憶するために少量のPersistent Volume(PV)が必要です。**パブリッククラウド環境のK8Sでは、Persistent Volume Claim(PVC) リクエストのみでPVが自動的に作成できますが、プライベート環境の場合は、WhaTapのPVCリクエストを受信できるPVが作成された後に、コマンドを実行してください。
-
-    :::
-
-Kubernetes APIを利用して、エージェントが作成(create)されたことが確認できます。
-
-![](/img/k8s-install-agent-check.svg)
-
-## Kubernetesエージェントのインストールを確認
-
--   クバネティスエージェントのインストールが正常に完了した場合、次のようにインストール完了メッセージが確認できます。
-
-    <ImgLang img='k8s-agent-install-check.png' desc='Kubernetesエージェントのインストール確認' />
-
--   次のコマンドを実行して、マスターエージェントとノードエージェントの状態を確認することができます。
-
-    ```bash
-    kubectl get pod -n whatap-monitoring
-    ```
-
-    ![](/img/k8s-check-running-agent-monitoring.svg)
-
-    **STATUS**項目が**Running**の場合は、インストールは完了です。マスターエージェントとNodeエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクトリスト**_とダッシュボード_** >**_コンテナマップ_**メニューからパフォーマンス情報を収集することを確認してください。 
-
-#### Running状態でない場合
-
-![](/img/k8s-not-running-agent-monitoring.svg)
-
-マスターNodeで次のコマンドを実行して、Pod(pod) の生成に失敗した原因を特定します。実行結果の下部の**Events:**項目を確認してください。
-
-```bash
-kubectl describe pod {POD_NAME} -n whatap-monitoring
-```
-
-![](/img/k8s-check-install-fail.svg)
-
-:::tip
-
-`kubectl`コマンドを使用する場合、`-n {ネームスペース}`オプションを使用して、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
-
-:::
-
-</TabItem>
-
-<TabItem value='eksfragate' label='EKS Fargate(サポート予定)'>
-
-## Kubernetesエージェント作成
-
-1.  Kubernetesモニタリングのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択します。
-
-2.  ダウンロードした_YAML_ファイルを使用して、エージェントを作成してください。
-
-    ```bash
-    kubectl -f whatap_kube_fargate.yaml apply
-    ```
-
-{@include: _check-k8s-agent.mdx}
-
-## クラスターのネームスペースの確認
-
-エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)の画面の左側のメニューからプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
-
-</TabItem>
-
-</Tabs>
+    ![エージェント生成確認](/img/k8s-install-agent-check.svg)
 
 :::note
 
--   アプリケーションエージェントのインストールを継続するには、画面の右下にある**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書](install-application-agent)を参照してください。
+**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。**デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、*YAML*ファイルを使用してこれらの設定を変更することができます。
+
+:::
+
+## Kubernetesエージェントのインストールを確認
+
+Kubernetesエージェントのインストールが正常に完了した場合、次のコマンドを実行してマスターエージェントとノードエージェントの状態を確認することができます。
+
+```bash
+kubectl get pod -n whatap-monitoring
+```
+
+#### Running状態の場合
+
+次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。 マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。 [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクトリスト***とダッシュボード*** >***コンテナマップ***メニューから性能情報を収集することを確認してください。 
+
+![](/img/k8s-check-running-agent-monitoring.svg)
+
+#### Running状態でない場合
+
+次のように**STATUS**項目が**Running**でない場合、インストールが正しく行われていない状態です。 
+
+![](/img/k8s-not-running-agent-monitoring.svg)
+
+1.  マスターNodeで次のコマンドを実行して、Pod の生成に失敗した原因を特定します。 
+
+    ```bash
+    kubectl describe pod {POD_NAME} -n whatap-monitoring
+    ```
+
+2.  実行結果の下部の**Events:**項目を確認してください。
+
+    ![](/img/k8s-check-install-fail.svg)
+
+:::tip
+
+`kubectl`コマンドを使用する場合、`-n {ネームスペース}`オプションを使用して、特定のネームスペースを対象にタスクを実行します。 WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
+
+:::
+
+:::note
+
+-   アプリケーションエージェントのインストールを進めるには、メニューの画面右下の***アプリケーションエージェントインストール***ボタンを選択してください。 詳細については、[次の文書](install-application-agent)を参照してください。
 -   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

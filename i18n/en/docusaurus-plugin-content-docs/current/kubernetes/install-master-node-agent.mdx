@@ -10,26 +10,30 @@ tags:
   - Node
   - Agent Installation
 hide_table_of_contents: true
+toc_max_heading_level: 2
 ---
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-On the **_Install guide_** screen, select your service environment and then install the master and node agents according to the procedure. 
+The following guides you to the master and node agent installation procedure as follows: This procedure is the same as in **Install guide**.
 
-<Tabs groupId='k8stype'>
+:::note 
 
-<TabItem value='kubernetes' label='KUBERNETES' default>
+EKS Fargate is to be supported later. 
+
+:::
 
 ## Pre-environment checking and setting
 
-Depending on the Kubernetes environment, pre-environment configuration may be required. If your Istio, GKE, or OpenShift environment is not applicable, skip to the next step.
+Depending on the Kubernetes environment, pre-environment configuration may be required. If this does not apply to the Istio, GKE, and OpenShift environments, skip to [Next step](#create-kubernetes-agent).
 
 <Tabs>
 
 <TabItem value='istio' label='ISTIO environment' default>
 
-In the ISTIO environment, execute the following command to create required resources.
+In the Istio environment, execute the following command to create the ServiceEntry, the resource that communicates with the WhaTap collection server.
 
 ```bash title='SH'
 kubectl create namespace whatap-monitoring
@@ -79,7 +83,7 @@ For more information about installation with the gcloud commands, see [Google Cl
 
 ![OpenShift](/img/kube-install-openshift.png)
 
-On the **_Install guide_** screen, open the **_Additional settings for OpenShift environment_** section and then select **_openshift_scc_**. After downloading the file, execute the following command.
+On the ***Installation guide*** screen, open the ***Additional setting in case of the OpenShift environment*** section and then select ***whatap_openshift_scc.yaml***. After downloading the file, execute the following command.
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -91,9 +95,9 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Creating the Kubernetes agent
 
-In this step, download the _YAML_ file suitable for your Kubernetes version and container runtime, and then install the agent.
+Download the *YAML* file that is suitable for your Kubernetes version and container runtime, and then create an agent.
 
-1.  Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command on the master node.
+1.  Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command:
 
     ```bash
     kubectl get node -o wide
@@ -101,62 +105,58 @@ In this step, download the _YAML_ file suitable for your Kubernetes version and 
 
     ![](/img/k8s-check-version.svg)
 
-2.  On the **_Agent Installation_** screen, select the _YAML_ file that matches the **VERSION** and **CONTAINER-RUNTIME** and then select **_Download_**.
+2.  On the ***Agent Installation*** screen, select the *YAML* file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click ***Download***.
 
     <ImgLang img='k8s-download-yaml.png' desc='yaml download' />
 
-    :::note
+3.  Upload the downloaded *YAML* file to the master node.
 
-    Using the master agent resources can be affected by the increase in the container count. Out of memory (OOM) may occur if the resources are used beyond the default memory limit (350 MB). You can change the settings through the _YAML_ file.
-
-    :::
-
-3.  Upload the downloaded _YAML_ file to the master node.
-
-4.  Execute the following command on the master node to create an agent. 
+4.  Execute the following command to create an agent. 
 
     ```bash
-    # Modify the {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
+    # {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
     kubectl apply -f {whatap_kube_X.YZ.yaml}
     ```
 
-    :::note
+5.  Check that the agent has been created successfully as follows:
 
-    **The WhaTap agent needs a small Persistent Volume (PV) to keep the project information.** In K8S of a public cloud environment, a PV can be automatically created only with a Persistent Volume Claim (PVC) request, but in a private environment, execute the command after a PV that can receive WhaTap's PVC request has been created.
+    ![Agent creation check](/img/k8s-install-agent-check.svg)
 
-    :::
+:::note
 
-You can see that the agent has been successfully created using the Kubernetes API.
+**Using the master agent resources can be affected by the increase in the container count**. Out of memory (OOM) may occur if the resources are used beyond the default memory limit (350 MB). You can change the settings through the *YAML* file.
 
-![](/img/k8s-install-agent-check.svg)
+:::
 
 ## Checking the Kubernetes agent installation
 
--   If the Kubernetes agent has been installed successfully, the installation completion message appears as follows:
+If the Kubernetes agent installation has been completed, you can check the status of the master agent and node agent by executing the following command:
 
-    <ImgLang img='k8s-agent-install-check.png' desc='Checking the Kubernetes agent installation' />
+```bash
+kubectl get pod -n whatap-monitoring
+```
 
--   You can check the status of the master agent and node agents by executing the following command:
+#### In case the status is Running
 
-    ```bash
-    kubectl get pod -n whatap-monitoring
-    ```
+If **STATUS** is in **Running**, it indicates the installation has been finished as follows. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in ***Project List*** and ***Dashboard*** > ***Container Map***. 
 
-    ![](/img/k8s-check-running-agent-monitoring.svg)
-
-    If **STATUS** is **Running**, it indicates the installation is complete. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in **_Project list_** and **_Dashboard_** > **_Container Map_**. 
+![](/img/k8s-check-running-agent-monitoring.svg)
 
 #### In case the status is not Running
 
+If the **STATUS** is not **Running**, it indicates that the installation has not been completed successfully as follows. 
+
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-Execute the following command on the master node to determine the cause of the pod creation failure. Check the **Events:** item at the bottom of the execution result.
+1.  Execute the following command on the master node to determine the cause of the Pod creation failure. 
 
-```bash
-kubectl describe pod {POD_NAME} -n whatap-monitoring
-```
+    ```bash
+    kubectl describe pod {POD_NAME} -n whatap-monitoring
+    ```
 
-![](/img/k8s-check-install-fail.svg)
+2.  Check the **Events:** item at the bottom of the execution result.
+
+    ![](/img/k8s-check-install-fail.svg)
 
 :::tip
 
@@ -164,33 +164,9 @@ When using the `kubectl` command, the `-n {namespace}` option performs the task 
 
 :::
 
-</TabItem>
-
-<TabItem value='eksfragate' label='EKS Fargate(Scheduled support)'>
-
-## Creating the Kubernetes agent
-
-1.  Download the installation file for Kubernetes Monitoring. Select **_whatap_kube_fargate_**.
-
-2.  Create an agent with the downloaded _YAML_ file.
-
-    ```bash
-    kubectl -f whatap_kube_fargate.yaml apply
-    ```
-
-{@include: _check-k8s-agent.mdx}
-
-## Checking the cluster namespace
-
-In 2-3 minutes after agent installation, select the project name from the menu on the left side of the [Whatap Monitoring Service](https://service.whatap.io) screen. Check the list of namespaces in use, and then select + to create a new WhaTab project.
-
-</TabItem>
-
-</Tabs>
-
 :::note
 
--   To proceed with the application agent installation, select **_Application Agent Installation_** at the lower right of the screen. For more information, see [the following](install-application-agent).
+-   To proceed with the application agent installation, select ***Application Agent Installation*** at the lower right of the screen. For more information, see [the following](install-application-agent).
 -   To update the agent to the latest version, see [the following](agent-update).
 
 :::
