@@ -368,8 +368,8 @@ const metadata = {
         "permalink": "/whatap-docs/kubernetes/container-images"
     },
     "next": {
-        "title": "마스터 메타 정보",
-        "permalink": "/whatap-docs/kubernetes/resource-master-meta"
+        "title": "오브젝트 매니페스트",
+        "permalink": "/whatap-docs/kubernetes/object-manifest"
     }
 };
 const assets = {};
