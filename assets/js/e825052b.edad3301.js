@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[1732],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[69593],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 54514:
+/***/ 37905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,40 +308,58 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'index',
-    title: 'Preview Release Notes'
+    id: 'preview-2_2_0x',
+    title: 'Preview 2.2.0.a',
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/preview/index",
-    "id": "release-notes/preview/index",
-    "title": "Preview Release Notes",
+    "unversionedId": "release-notes/preview/preview-2_2_0x",
+    "id": "release-notes/preview/preview-2_2_0x",
+    "title": "Preview 2.2.0.a",
     "description": "https://preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
-    "source": "@site/docs/release-notes/preview/index.mdx",
+    "source": "@site/docs/release-notes/preview/preview-2.2.0.a.mdx",
     "sourceDirName": "release-notes/preview",
-    "slug": "/release-notes/preview/",
-    "permalink": "/whatap-docs/release-notes/preview/",
+    "slug": "/release-notes/preview/preview-2_2_0x",
+    "permalink": "/whatap-docs/release-notes/preview/preview-2_2_0x",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/preview/index.mdx",
+    "editUrl": "undefined/docs/release-notes/preview/preview-2.2.0.a.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "index",
-        "title": "Preview Release Notes"
+        "id": "preview-2_2_0x",
+        "title": "Preview 2.2.0.a",
+        "toc_max_heading_level": 2
     },
     "sidebar": "previewSidebar",
+    "previous": {
+        "title": "Preview Release Notes",
+        "permalink": "/whatap-docs/release-notes/preview/"
+    },
     "next": {
         "title": "Preview 2.1.0.a",
         "permalink": "/whatap-docs/release-notes/preview/preview-2_1_0x"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: 'Preview 2.2.0.a0',
+        id: 'preview-220a0',
+        level: 2
+    },
+    {
+        value: '<code>공통</code>',
+        id: '공통',
+        level: 3
+    }
+];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
     };
-const DocCardList = makeShortcode("DocCardList");
+const Status = makeShortcode("Status");
+const UI = makeShortcode("UI");
 const layoutProps = {
     toc
 };
@@ -363,9 +381,23 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "https://preview.whatap.io"
-    }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(DocCardList, {
-        mdxType: "DocCardList"
-    }));
+    }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "preview-220a0"
+    }, `Preview 2.2.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "공통"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 계정 아이콘 선택 > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(UI, {
+        mdxType: "UI"
+    }, "계정 정보 관리"), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(UI, {
+        mdxType: "UI"
+    }, "SSO 계정 연동"), " 관리 메뉴 추가"))));
 }
 MDXContent.isMDXComponent = true;
 

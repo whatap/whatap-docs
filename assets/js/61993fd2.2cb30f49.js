@@ -454,14 +454,14 @@ function MDXContent(_param) {
     }, `# python3.10을 도커환경에 설치합니다.
 FROM python:3.10
 
-# 작업 디렉토리를 /app 으로 설정합니다.
+# 작업 디렉터리를 /app 으로 설정합니다.
 WORKDIR /app
 
-# 현재 디렉토리의 모든 파일과 폴더를 컨테이너 내의 /app 디렉토리에 복사합니다.
+# 현재 디렉터리의 모든 파일과 폴더를 컨테이너 내의 /app 디렉터리에 복사합니다.
 ADD . /app/
 
-# 파이썬에서는 pip를 이용하여 외부 라이브러리를 설치할 수 있습니다. 
-# 와탭 파이썬 에이전트를 도커 이미지 빌드시 설치합니다.
+# Python에서는 pip를 이용하여 외부 라이브러리를 설치할 수 있습니다. 
+# 와탭 Python 에이전트를 도커 이미지 빌드시 설치합니다.
 RUN pip3 install --upgrade whatap-python
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "에이전트-설정-및-실행"
