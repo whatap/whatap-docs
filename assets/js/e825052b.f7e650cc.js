@@ -310,7 +310,8 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'preview-2_2_0x',
     title: 'Preview 2.2.0.a',
-    toc_max_heading_level: 2
+    toc_max_heading_level: 2,
+    draft: false
 };
 const contentTitle = undefined;
 const metadata = {
@@ -329,7 +330,8 @@ const metadata = {
     "frontMatter": {
         "id": "preview-2_2_0x",
         "title": "Preview 2.2.0.a",
-        "toc_max_heading_level": 2
+        "toc_max_heading_level": 2,
+        "draft": false
     },
     "sidebar": "previewSidebar",
     "previous": {
@@ -383,7 +385,7 @@ function MDXContent(_param) {
         "href": "https://preview.whatap.io"
     }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "preview-220a0"
-    }, `Preview 2.2.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+    }, `Preview 2.2.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 25일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "공통"
