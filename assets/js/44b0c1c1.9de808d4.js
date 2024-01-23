@@ -429,11 +429,6 @@ const toc = [
         level: 3
     },
     {
-        value: '<code>Application</code>',
-        id: 'application-2',
-        level: 3
-    },
-    {
         value: '<code>Database</code>',
         id: 'database-1',
         level: 3
@@ -953,14 +948,6 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에서 대시보드 내보내기 기능을 통해 JSON 파일로 저장할 경우, 파일명의 특수 문자를 기존에는 제거했으나 밑줄(_)로 변경")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "application-2"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "h3"
-    }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " Node 에이전트 설치 지원 버전 변경 7.10.0 → ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("b", null, "16.4.0"))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "database-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
