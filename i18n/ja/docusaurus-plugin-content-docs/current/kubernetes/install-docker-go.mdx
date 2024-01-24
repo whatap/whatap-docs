@@ -9,69 +9,231 @@ tags:
   - Go
 ---
 
-<!--에이전트 다운로드-->
+***管理*** > ***エージェントインストール*** > 下段の***アプリケーションインストール*** クリック > 設置案内の中で ***Docker Go*** タブを選択
 
-{@include: ../common-items/_go-docker-download-agent.mdx}
+Dockerコンテナベースで実行するGoアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする過程を次のように案内します。 
 
-<!--에이전트 설정-->
+:::note 
 
-{@include: ../common-items/_go-docker-setting-agent.mdx} 
+EKS Fargateは、対応予定です。 
 
-<!--Go 라이브러리 설정하기-->
+:::
 
-{@include: ../common-items/_go-docker-setting-library.mdx}
+## エージェントダウンロード
 
-## Kubernetes環境変数およびボリューム
+GoアプリケーションのDockerイメージをビルド時、whatap-agentパッケージをインストールしてください。
 
 <Tabs>
-<TabItem value='basic' label='デフォルト' default>
+<TabItem value="rc" label="Red Hat/CentOS" default>
 
-トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
-
-```ini
-env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
+```docker title='Red Hat/CentOS'
+RUN rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+RUN yum install -y whatap-agent
 ```
 
 </TabItem>
-<TabItem value='eksfragate' label='EKS Fargate(サポート予定)'>
 
-1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`と`serviceAccount`を追加します。
+<TabItem value="du" label="Debian/Ubuntu" default>
 
-    ```ini
-    apiVersion: apps/v1
-    kind: Deployment
-    ...
-    spec:
-    ...
-        spec:
-          shareProcessNamespace: true
-          serviceAccount: whatap
-    ...
-    ```
-
-2.  トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
-
-    ```ini
-    env:
-      - name: NODE_IP
-        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-      - name: NODE_NAME
-        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-      - name: POD_NAME
-        valueFrom: {fieldRef: {fieldPath: metadata.name}}
-    ```
-
-{@include: _pod-sidecar.mdx}
+```docker title='Debian/Ubuntu'
+RUN wget https://repo.whatap.io/debian/release.gpg -O -| apt-key add -
+RUN wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+RUN dpkg -i whatap-repo_1.0_all.deb
+RUN apt-get update
+RUN apt-get install -y whatap-agent
+```
 
 </TabItem>
+
+<TabItem value="al" label="Amazon Linux" default>
+
+```docker title='Amazon Linux'
+RUN rpm --import https://repo.whatap.io/centos/release.gpg
+RUN echo "[whatap]" | tee /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "name=whatap packages for enterprise linux" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "enabled=1" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "gpgcheck=0" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN yum install -y whatap-agent
+```
+
+</TabItem>
+
+<TabItem value="apl" label="Alpine Linux" default>
+
+```docker title='Alpine Linux'
+RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+RUN tar -xvzf whatap-agent.tar.gz -C /
+```
+
+</TabItem>
+
 </Tabs>
 
-<!--모니터링 시작하기-->
+## エージェント設定
 
-{@include: ../common-items/_go-docker-start-monitoring.mdx}
+ユーザーアプリケーションの実行パスに、WhaTapのアクセスキー、サーバーIPアドレス情報を入力した*whatap.conf*ファイルを作成してください。 特定のパスを使用する場合に`WHATAP_HOME`環境変数として設定できます。
+
+```docker title='whatap.conf'
+RUN echo "accesskey={アクセスキー}" >> whatap.conf
+RUN echo "whatap.server.host={収集サーバーIP}" >> whatap.conf
+```
+
+:::note 
+
+**アクセスキー**がDocker Public状態のイメージにさらされないように注意してください。
+
+:::
+
+### `WHATAP_HOME`環境変数の設定
+
+*whatap.conf*ファイルパスを`WHATAP_HOME`環境変数として設定できます。 まず、`WHATAP_HOME`パスを作成してください。 アプリケーション実行構文の前に`WHATAP_HOME`設定を追加します。 
+
+```bash
+mkdir ./whatap_home
+echo "license={アクセスキー}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={収集サーバーIP}" >> ./whatap_home/whatap.conf
+
+# run application
+WHATAP_HOME=./whatap_home ./app
+```
+
+## Goライブラリーの設定する
+
+Goアプリケーションのソースコードに[github.com/whatap/go-api](https://github.com/whatap/go-api)パッケージを追加してください。
+
+```bash
+go get github.com/whatap/go-api
+```
+
+`trace.Init()`, `trace.Shutdown()`関数で初期化と終了を設定してください。 `trace.Start()」`,`trace.End()`関数でトランザクションの開始終了を設定してください。
+
+```go title='Go'
+import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.    
+    defer trace.Shutdown()    
+
+    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+
+    ...
+
+    trace.End(ctx, err)
+}
+```
+
+<InDoc product='golang'>
+
+:::note
+
+ライブラリ設定の詳細については、[次の文書](api-guide)を参照してください。
+
+:::
+
+</InDoc>
+
+<InDoc product='kubernetes'>
+
+:::note
+
+ライブラリ設定の詳細については、[次の文書](../golang/api-guide)を参照してください。
+
+:::
+
+</InDoc>
+
+## コンテナ環境変数の設定
+
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
+
+```yaml
+env:
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+```
+
+次の例を参照してください。 
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: # Pod Name
+  labels: # Pod Labels
+spec:
+  containers:
+	  env:
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
+```
+
+:::note 
+
+**環境変数の役割**
+
+-   `NODE_IP`: 現在のパッドがホストされているノード(Node)のIPアドレスを収集します。
+
+-   `NODE_NAME`: 現在ポッドが実行中のノードの名前を収集します。
+
+-   `POD_NAME`: 現在のポッドの名前を収集します。
+
+:::
+
+## エージェント実行
+
+<Tabs>
+<TabItem value="cm" label="Command" default>
+
+アプリケーション開始コマンドの前にwhatap-agentの開始コマンドを追加してください。 
+
+```docker
+sh -c "/usr/whatap/whatap-agent start && [アプリケーション開始コマンド]"
+```
+
+</TabItem>
+
+<TabItem value="sup" label="Supervisor" default>
+
+Supervisorでアプリケーションを起動する場合は、次のコードを参考してwhatap-agentサービスを追加してください。
+
+```docker
+RUN echo "[program:whatap-agent]" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "command = /usr/whatap/whatap-agent start" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autorestart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+```
+
+</TabItem>
+
+</Tabs>
+
+次のコマンドを実行して、WhaTapサービスが正常に実行されているかを確認してください。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集し始めます。
+
+```docker
+ps -ef | grep whatap_agent
+```
+
+## エージェントのインストール確認
+
+エージェントが正常にインストールされたかを確認するには、***ダッシュボード*** > ***アプリケーション サービス ダッシュボード***メニューへ移動してください。
+
+ダウンロードしたファイルをインストールした後に***ダッシュボード***メニューからエージェントが表示されない場合は、次の事項を確認してください。
+
+-   コンテナで`ps -ef | grep whatap_agent`コマンドを実行し、エージェントオプションが適用されているかを確認してください。
+
+-   コンテナの*`WHATAP_HOME`/logs*、またはアプリケーション実行パスの*logs*ディレクトリを確認してください。 エージェントログは、*logs/whatap-`{boot、またはinstall}`-yyyymmdd.log*形式のファイル名として出力されます。
