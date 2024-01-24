@@ -3023,14 +3023,15 @@ const sidebars = {
           className: 'new',
           link: {
             type: 'doc',
-            id: 'release-notes/service/service-2_0_x',
+            id: 'release-notes/service/service-2_1_x',
           },
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_0_x',
+              id: 'release-notes/service/service-2_1_x',
               className: 'new',
             },
+            'release-notes/service/service-2_0_x',
             'release-notes/service/service-1_114_x',
             'release-notes/service/service-1_112_x',
             'release-notes/service/service-1_110_x',
@@ -3231,17 +3232,18 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/golang/golang-0_3_0',
+                id: 'release-notes/golang/golang-0_3_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_3_0',
-                  // className: 'new'
+                  id: 'release-notes/golang/golang-0_3_1',
+                  className: 'new'
                 },
+                'release-notes/golang/golang-0_3_0',
                 'release-notes/golang/golang-0_2_4',
                 'release-notes/golang/golang-0_2_3',
                 'release-notes/golang/golang-0_2_2',
@@ -3250,7 +3252,6 @@ const sidebars = {
                 'release-notes/golang/golang-0_1_12',
                 'release-notes/golang/golang-0_1_11',
                 'release-notes/golang/golang-0_1_10',
-                'release-notes/golang/golang-0_1_9',
                 'release-notes/golang/golang-previous',
               ],
             },
