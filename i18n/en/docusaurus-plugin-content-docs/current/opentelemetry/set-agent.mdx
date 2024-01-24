@@ -1,0 +1,242 @@
+---
+id: set-agent
+title: Configuration
+description: You can collect various metrics from OpenTelemetry through the agent settings.
+tags:
+  - OpenTelemetry
+  - Extensions
+  - Agent
+---
+
+You can configure the agent to collect and process various metrics from OpenTelemetry. 
+
+## Agent
+
+-   **otel_grpc_server_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    Enable the Grpc server to receive the data delivered via the OpenTelemetry protocol (OTLP).
+
+-   **otel_grpc_server_port** <span class='type'>String</span>
+
+    Default `6600`
+
+    Listening port of the Grpc server. 
+
+    :::note
+
+    After changing the port number, be sure to restart the whatap-otel service. 
+
+    :::
+
+-   **otel_grpc_server_gzip_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    It enables `gzip` by encrypting the data from the Grpc server. 
+
+-   **debug_otel_grpc_server_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It enables the output of debugging logs for processing the OpenTelemetry Trace data.
+
+## Trace
+
+Agent setting option for processing the OpenTelemetry Trace data. WhaTap gets values from the `attributes` object of **Span**, an OpenTelemetry Trace element, and uses them as monitoring information.
+
+See the following code to see how the `attributes` object of **Span** relates to the WhaTap's agent configuration.
+
+```json title='OpenTelemetry - Span example' showLineNumbers {18,22,24}
+{
+    "name": "/v1/sys/health",
+    "context": {
+        "trace_id": "7bba9f33312b3dbb8b2c2c62bb7abe2d",
+        "span_id": "086e83747d0e381e"
+    },
+    "parent_id": "",
+    "start_time": "2021-10-22 16:04:01.209458162 +0000 UTC",
+    "end_time": "2021-10-22 16:04:01.209514132 +0000 UTC",
+    "status_code": "STATUS_CODE_OK",
+    "status_message": "",
+    "attributes": {
+        "net.transport": "IP.TCP",
+        "net.peer.ip": "172.17.0.1",
+        "net.peer.port": "51820",
+        "net.host.ip": "10.177.2.152",
+        "net.host.port": "26040",
+        "http.method": "GET",
+        "http.target": "/v1/sys/health",
+        "http.server_name": "mortar-gateway",
+        "http.route": "/v1/sys/health",
+        "http.user_agent": "Consul Health Check",
+        "http.scheme": "http",
+        "http.host": "10.177.2.152:26040",
+        "http.flavor": "1.1"
+    },
+    "events": [
+        {
+            "name": "",
+            "message": "OK",
+            "timestamp": "2021-10-22 16:04:01.209512872 +0000 UTC"
+        }
+    ]
+}
+```
+
+```ini title="whatap.conf"
+otel_attr_tx_host_keys=http.host
+otel_attr_tx_method_keys=http.method
+otel_attr_tx_useragent_keys=http.user_agent
+```
+
+:::note
+
+-   For more information about the WhaTap trace analysis, see [the following](../java/dashboard-hitmap-trace#anlaysis-trace).
+
+-   For more information about the trace data processing for OpenTelemetry, see [the following link](https://opentelemetry.io/docs/concepts/signals/traces/). 
+
+-   For more information about the attributes provided by OpenTelemetry, see the following links:
+
+    -   [Database](https://opentelemetry.io/docs/specs/semconv/database/database-spans/)
+
+    -   [Error](https://opentelemetry.io/docs/specs/semconv/attributes-registry/error/)
+
+    -   [Host](https://opentelemetry.io/docs/specs/semconv/attributes-registry/host/)
+
+    -   [HTTP](https://opentelemetry.io/docs/specs/semconv/attributes-registry/http/)
+
+    -   [Network](https://opentelemetry.io/docs/specs/semconv/attributes-registry/network/)
+
+    -   [URL](https://opentelemetry.io/docs/specs/semconv/attributes-registry/url/)
+
+    -   [User agent](https://opentelemetry.io/docs/specs/semconv/attributes-registry/user-agent/)
+
+:::
+
+-   **otel_trace_server_enabled** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    It enables to process the OpenTelemetry Trace data. 
+
+-   **otel_trace_queue_size** <span class='type'>Int</span>
+
+    Default `5000`
+
+    It sets the queue size for processing the OpenTelemetry Trace data. 
+
+-   **otel_span_collector_max** <span class='type'>Int</span>
+
+    Default `100000`
+
+    Set the maximum size (number) of the Span data buffers for the OpenTelemetry Trace data. 
+
+-   **otel_attr_dbcon_keys** <span class='type'>String</span>
+
+    Default `sql.system,db.connection_string,db.system`
+
+    Enter the attribute name to be used as DB Connection information. Using this information, WhaTap displays it as the **DB Connection** step.
+
+-   **otel_attr_sql_keys** <span class='type'>String</span>
+
+    Default `db.statement,sql.query`
+
+    Enter the attribute name to use as SQL query information. Using this information, WhaTap displays it as the **SQL** step. 
+
+-   **otel_attr_httpc_keys** <span class='type'>String</span>
+
+    Default `url.full,http.url,http.target`
+
+    Enter the attribute name to use as the HTTP call. Using this information, WhaTap displays it as the **HTTP Call** step. 
+
+-   **otel_attr_tx_url_keys** <span class='type'>String</span>
+
+    Default `http.url,http.route,http.target,tyk.api.path,http.url`
+
+    Enter the attribute name to use as the service URL for transactions.
+
+-   **otel_attr_tx_host_keys** <span class='type'>String</span>
+
+    Default `http.host`
+
+    Enter the attribute name to use as the host name for transactions.
+
+-   **otel_attr_tx_method_keys** <span class='type'>String</span>
+
+    Default `http.method,http.request.method`
+
+    Enter the attribute name to use as the HTTP method.
+
+-   **otel_attr_tx_status_keys** <span class='type'>String</span>
+
+    Default `http.status_code`
+
+    Enter the attribute name to use as the HTTP status code for transactions.
+
+-   **otel_attr_tx_useragent_keys** <span class='type'>String</span>
+
+    Default `http.user_agent`
+
+    Enter the attribute name to use as the User-Agent for transactions.
+
+-   **otel_attr_tx_clientip_keys** <span class='type'>String</span>
+
+    Default `net.peer.ip,net.socket.peer.addr`
+
+    Enter the attribute name to use as the client IP for transactions.
+
+-   **otel_attr_tx_referer_keys** <span class='type'>String</span>
+
+    Enter the attribute name to use as the HTTP Referer for transactions.
+
+-   **otel_attr_error_keys** <span class='type'>String</span>
+
+    Default `error.type`
+
+    Enter the attribute name to use as the error information for transactions.
+
+## Metric
+
+Agent setting option for processing the OpenTelemetry Metric data.
+
+:::note
+
+For more information about the metric data processing for OpenTelemetry, see [the following link](https://opentelemetry.io/docs/concepts/signals/metrics/).
+
+:::
+
+-   **otel_metric_server_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It enables to process the OpenTelemetry Metric data.
+
+-   **otel_metric_queue_size** <span class='type'>Int</span>
+
+    Default `5000`
+
+    It sets the queue size for processing the OpenTelemetry Metric data.
+
+## Log
+
+Agent setting option for processing the OpenTelemetry Log data.
+
+:::note
+
+For more information about the log data processing for OpenTelemetry, see [the following link](https://opentelemetry.io/docs/concepts/signals/logs/).
+
+:::
+
+-   **otel_log_server_enabled** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It enables to process the OpenTelemetry Log data.
+
+-   **otel_log_queue_size** <span class='type'>Int</span>
+
+    Default `5000`
+
+    It sets the queue size for processing the OpenTelemetry Log data.

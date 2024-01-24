@@ -14,6 +14,12 @@ import TabItem from '@theme/TabItem';
 
 This process adds the settings for applying the agent to the JVM option of the Java application running on a Docker container and packages the container image.
 
+:::note 
+
+EKS Fargate is to be supported later. 
+
+:::
+
 ## Download agent
 
 <Tabs>
@@ -83,15 +89,7 @@ This process adds the settings for applying the agent to the JVM option of the J
 :::
 
 </TabItem>
-<TabItem value='eksfargate' label='EKS Fargate(Scheduled support)'>
 
-{@include: _docker-build.mdx}  
-
-{@include: _pod-sidecar.mdx}
-
-1.  Release the Docker image with the WhaTap agent installed.
-
-</TabItem>
 </Tabs>
 
 {@include: _check-install-agent.mdx} 

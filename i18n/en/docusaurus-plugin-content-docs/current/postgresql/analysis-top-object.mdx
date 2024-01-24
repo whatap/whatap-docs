@@ -14,11 +14,27 @@ It provides objects with the bloating size, scan count, DML execution count, and
 
 <ImgLang img='db-top-object.png' desc='Top object' />
 
-Set <Cmdname sid="date" className="uitext" />, <Cmdname sid="instance" className="uitext" />, <Cmdname sid="TTL06346" className="uitext" />, and <Cmdname sid="TTL06345" className="uitext" /> to view on the screen and then select ![Search icon](/img/ico-btn-search.png). The results for the selected conditions appear in the table.
+-   Set <Cmdname sid="date" className="uitext" />, <Cmdname sid="instance" className="uitext" />, <Cmdname sid="TTL06346" className="uitext" />, and <Cmdname sid="TTL06345" className="uitext" /> to view on the screen and then select ![Search icon](/img/ico-btn-search.png). The results for the selected conditions appear in the table.
+
+-   If you select the **_tablename_** or **_indexname_** column in the inquiry list, the **_Object detail_** window appears where you can see the configuration for **column** and **index**.
+
+    ![Object detail](/img/release/release-db-object-details-topobject.png)
+
+    :::note
+
+    **_Object detail_** is provided in the DBX agent 1.6.15 or later. For more information about the database roles and related settings, see [the following](install-agent#uid).
+
+    :::
 
 :::note
 
 -   The <Cmdname sid="dbObjectInfo" /> data is collected once a day. For more information about the related agent settings, see <Link to="#set-agent-topObject">the following</Link>.
+
+-   To view data, the DB monitoring account requires the following roles:
+
+    ```sql
+    grant select on all tables in schema {schema_name} to whatap;
+    ```
 
 -   This function is supported in DBX agent 1.6.13 or later.
 
@@ -27,6 +43,8 @@ Set <Cmdname sid="date" className="uitext" />, <Cmdname sid="instance" className
 ## Bloating
 
 **Bloating** is a phenomenon in which the object size increases due to an increase of unused tuples. 
+
+Tables and indexes with the values greater than the collection reference set in `table[index]_bloat_ratio[bytes]` in the agent configuration (_whatap.conf_), appear in the list. If there is no corresponding object, data may not be viewed.
 
 :::tip
 
@@ -100,7 +118,7 @@ Tables with higher `dml_count` values are frequently used tables.
 
 **Tuning tips**
 
-Identify major tables and review major issues such as architecture and backup plans.
+Identify the main tables in your system and then use them as references when changing tables or designing the architecture.
 
 :::
 
@@ -150,11 +168,19 @@ If <span class="uitext">Analyze Time</span> is viewed, the following columns are
 
 In PostgreSQL, XID (transaction id) is used recursively so that the XID may wrap around at a certain point. To prevent this, `xid_age` (Current XID - XID at the time of creation) must be managed so that it does not keep increasing. If `autovacuum_freeze_max_age` exceeds, Anti-Wraparound Vacuum is automatically performed and `xid_age` is managed below `autovacuum_freeze_max_age`.
 
+This list displays vacuum targets that meet the following criteria: If there is no target, data may not be viewed.
+
+-   Table with dead tuples more than vacuum threshold (`autovacuum_threshold` + `autovacuum_scale_factor` \* `number-of-tuples`).
+
+-   Table with the age (`relfrozenxid`) greater than `autovacuum_freeze_max_age`
+
 :::tip
 
 **Tuning tips**
 
-To lower `xid_age`, review performing the Vacuum operation. For more information, see [the following](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND).
+If `xid_age` continues to increase, XID cleaning may not be performed under the set Auto Vaccum condition. Adjust the auto vacuum parameters or review the vacuum execution manually.
+
+For more information, see [the following](https://www.postgresql.org/docs/current/routine-vacuuming.html#VACUUM-FOR-WRAPAROUND).
 
 :::
 

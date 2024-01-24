@@ -51,7 +51,7 @@ The following guides you to the basic installation method for using the WhaTap d
 
 <!-- 모니터링용 계정 생성-->
 
-{@include: ../common-items/_db-create-monitoring-account.mdx}
+{@include: ../common-items/_db-create-monitoring-account.mdx} 
 
 <!-- PostgreSQL-->
 
@@ -78,6 +78,9 @@ grant execute on function pg_get_backend_memory_contexts to whatap;
 
 #  In case of collecting the table size
 grant usage on schema {schema_name} to whatap;
+
+# In case of viewing the object information
+grant select on all tables in schema {schema_name} to whatap;
 ```
 
 ## DB user file creation {#create-db-user}

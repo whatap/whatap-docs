@@ -75,7 +75,7 @@ The agent traces the transaction performance and provides the following configur
 
     Default `Empty`
 
-    Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+    If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
 
     ```ini title='whatap.conf'
     httpc_status_ignore=404,500
@@ -122,11 +122,11 @@ The agent traces the transaction performance and provides the following configur
 
     Default `Empty`
 
-    You can set the HTTP status codes to ignore.
+    You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
 
-    ```ini title="whatap.conf"
+    ```ini title='whatap.conf'
     # example
-    status_ignore=404,500
+    status_ignore=408,500
     ```
 
 -   **status_ignore_set** <span class='type'>String</span>
@@ -135,16 +135,16 @@ The agent traces the transaction performance and provides the following configur
 
     Among HTTP status return codes, you can set the codes to ignore on a URL basis.
 
-    ```ini title="whatap.conf"
+    ```ini title='whatap.conf'
     # example
-    status_ignore_set=/a/b/c:400,/a/ab/c:404
+    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
     ```
 
 -   **transaction_status_error_enable** <span class='type'>Boolean</span>
 
     Default `true`
 
-    If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
+    If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
 ### Non-HTTP transaction tracing
 

@@ -1,7 +1,7 @@
 ---
 id: pg-sql-stat
 title: PG SQL統計
-description: PostgreSQLで提供するSQL統計(遂行回数、実行時間、Rowの数など)データでPG_state_statementsビューを通じて収集します。
+description: PostgreSQLで提供するSQL統計(実行回数、実行時間、Rowの数など)データで、PG_state_statementsビューを通じて収集します。
 tags:
   - PostgreSQL
   - データベース
@@ -9,13 +9,13 @@ tags:
   - PG SQL統計
 ---
 
-ホーム画面 > プロジェクト選択 > **_統計／レポート_** > **_PG SQL統計_**
+ホーム画面 > プロジェクト選択 > **_統計/レポート_** > **_PG SQL統計_**
 
-PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) は、`pg_state_statements`ビューを使用して収集します。
+PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) で、`pg_state_statements`ビューを使用して収集します。
 
 :::note
 
--   1時間間隔で`pg_stat_statements`からデルタ値を計算して収集するため、設定から1時間が経ってから収集を開始します。
+-   1時間周期で`pg_stat_statements`からデルタ値を計算して収集するため、設定から1時間が経ってから収集を開始します。
 
 -   `pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参照してください。
 
@@ -57,29 +57,35 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 
 ### カラム情報ガイド
 
-| 項目                    | 説明                                                         |
-| --------------------- | ---------------------------------------------------------- |
-| `query`               | クエリ文字列                                                     |
-| `queryid`             | クエリハッシュコード                                                 |
-| `user`                | ユーザーoid                                                    |
-| `db`                  | データベース名                                                    |
-| `rows`                | 検索または影響を受ける列の総数                                            |
-| `total_exec_time`     | クエリの実行に費やされた合計時間(ミリ秒)                                      |
-| `calls`               | 実行回数                                                       |
-| `shared_blks_hit`     | 共有ブロックキャッシュの総ヒット数                                          |
-| `shared_blks_read`    | ディスクから読み込んだ共有ブロックの総数                                       |
-| `blk_read_time`       | ブロックの読み取りにかかった合計時間(ミリ秒)、`track_io_timing`が有効な場合、それ以外の場合は0  |
-| `blk_write_time`      | ブロックを書き込みに費やされた合計時間、`track_io_timing`が有効になっている場合、それ以外の場合は0 |
-| `local_blks_dirtied`  | 変更されたローカルブロック数                                             |
-| `local_blks_hit`      | ローカルブロックキャッシュヒット数                                          |
-| `local_blks_written`  | ディスクに書き込みしたローカルブロックの総数                                     |
-| `local_blks_read`     | ディスクで読み取ったローカルブロックの総数                                      |
-| `shared_blks_written` | ディスクに書き込みした共有ブロックの総数                                       |
-| `shared_blks_dirtied` | 変更された共有ブロックの総数                                             |
-| `temp_blks_read`      | ディスクから読み取った一時ブロックの総数                                       |
-| `temp_blks_written`   | ディスクに書き込みした一時ブロックの総数                                       |
+| 項目                    | 説明                                                      |
+| --------------------- | ------------------------------------------------------- |
+| `query`               | クエリ文字列                                                  |
+| `queryid`             | クエリハッシュコード                                              |
+| `user`                | ユーザーoid                                                 |
+| `db`                  | データベース名                                                 |
+| `rows`                | 検索や影響を受けた列の総数                                           |
+| `total_exec_time`     | クエリの実行に費やされた合計時間(ミリ秒)                                   |
+| `calls`               | 実行回数                                                    |
+| `shared_blks_hit`     | 共有ブロックキャッシュの総ヒット数                                       |
+| `shared_blks_read`    | ディスクから読み取った共有ブロックの総数                                    |
+| `blk_read_time`       | ブロックの読み取りにかかった合計時間(ミリ秒)。`track_io_timing`が有効な場合。それ以外は0  |
+| `blk_write_time`      | ブロックを書き込みに費やされた合計時間。`track_io_timing`が有効になっている場合。それ以外は0 |
+| `local_blks_dirtied`  | 変更されたローカルブロック数                                          |
+| `local_blks_hit`      | ローカルブロックキャッシュヒット数                                       |
+| `local_blks_written`  | ディスクに書き込みしたローカルブロックの総数                                  |
+| `local_blks_read`     | ディスクで読み取ったローカルブロックの総数                                   |
+| `shared_blks_written` | ディスクに書き込みした共有ブロックの総数                                    |
+| `shared_blks_dirtied` | 変更された共有ブロックの総数                                          |
+| `temp_blks_read`      | ディスクから読み取った一時ブロックの総数                                    |
+| `temp_blks_written`   | ディスクに書き込みした一時ブロックの総数                                    |
 
 ## 統計メニューオプションの利用
+
+### クエリプレビュー
+
+![クエリ文プレビュー](/img/db-sql-preview.png)
+
+照会された結果リストからマウスポインタを**_sql_**カラム項目に移動すると、クエリ文をプレビューすることができます。
 
 ### クエリの詳細を見る{#query-details}
 

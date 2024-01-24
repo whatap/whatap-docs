@@ -120,49 +120,115 @@
 
     :::
 
+## 例外処理{#exception}
+
 -   **biz_exceptions** <span class='type'>String</span>
 
-    ビジネスExceptionを登録します。 登録したビジネスExceptionはエラー統計から除外します。トレース詳細で確認できます。
+    Business Exceptionを登録します。
 
--   **biz_exceptions_status** <span class='type'>string</span>
+    :::tip
 
-    Exception発生時のイベント通知を抑制するBusiness ExceptionとStatusを設定します。このオプションで設定した**Business Exception:Status**の場合、イベントレベルが**INFO**に変更されます。Business ExceptionとStatusはコロン(:)で区分し、１つのBusiness Exceptionに複数のStatusが使用されている場合、アンパサンド(&)で区分します。コンマを区切り文字として使用して、複数を設定できます。
+    エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
+
+    :::
+
+    :::note
+
+    Javaエージェント[v2.2.20](../release-notes/java/java-2_2_20) 以降では、登録したビジネスExceptionをエラー統計で収集します。v2.2.20未満では、登録したビジネスExceptionをエラー統計から除外します。ただし、トレースの詳細では表示されます。
+
+    :::
+
+-   **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
+
+    Business Exception発生時のイベント通知を抑制するBusiness ExceptionとStatusを設定します。このオプションで設定した**Business Exception:Status**の場合、イベントレベルが<span class="normal">INFO</span>に変更されます。Business ExceptionとStatusはコロン(:)で区分し、１つのBusiness Exceptionに複数のStatusが使用されている場合、アンパサンド(&)で区分します。コンマを区切り文字として使用して、複数を設定できます。
 
     ```ini title='whatap.conf'
     # example
     biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
     ```
 
+    :::tip
+
+    エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
+
+    :::
+
 -   **ignore_exceptions** <span class='type'>String</span>
 
-    無視するExceptionを登録します。登録されたExceptionエラーを無視します。
+    登録したExceptionのエラー自体を無視します。
+
+    :::tip
+
+    エラークラス無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+    :::
 
 -   **transaction_status_error_enable** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとしての処理有無を設定します。
 
 -   **status_ignore** <span class='type'>String</span>
 
-    無視する`STATUS_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    無視しようとするHTTPステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+    ```ini title='whatap.conf'
+    # example
+    status_ignore=408,500
+    ```
+
+    :::tip
+
+    Statusエラー無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+    :::
 
 -   **status_ignore_set** <span class='type'>String</span>
 
     `whatap.error.STATUS_ERROR`を無視してください。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
 
+    ```ini title='whatap.conf'
+    # example
+    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+    ```
+
+    :::tip
+
+    Status エラーセット無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+
+    :::
+
 -   **httpc_status_error_enable** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    `HTTPC_ERROR`を返ってくるかどうかを確認します。
+    HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
+
+    :::note
+
+    HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
+
+    :::
 
 -   **httpc_status_ignore** <span class='type'>String</span>
 
-    無視する`HTTPC_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+    :::tip
+
+    HTTPステータスエラーコード無視 / エラー統計を含まない
+
+    :::
 
 -   **httpc_status_url_ignore_set** <span class='type'>String</span>
 
     `whatap.error.HTTPC_ERROR`を無視してください。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
     `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+
+    :::tip
+
+    HTTPステータスエラーコード無視 / エラー統計を含まない
+
+    :::

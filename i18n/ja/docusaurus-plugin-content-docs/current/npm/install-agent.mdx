@@ -13,12 +13,31 @@ WhaTap NPMサービスを使用するためには、[会員登録](https://www.w
 
 {@include: ../getting-started/_accesskey.mdx} 
 
-## エージェントダウンロード
+## Linux環境にインストールする
+
+**_インストール案内_**セクションで**_Linux_**タブを選択し、画面の案内に従ってエージェントのインストールを進めてください。
+
+### エージェントダウンロード
 
 モニタリング対象サーバーにエージェントファイルをダウンロードしてください。
 
 <Tabs groupId="os">
-<TabItem value="ubuntu" label="Ubuntu">
+<TabItem value="al" label="Amazon Linux">
+
+```bash
+sudo rpm --import https://repo.whatap.io/centos/release.gpg
+echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+echo "baseurl=https://repo.whatap.io/centos/9/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+sudo yum install whatap-npmd
+```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+インストール過程でgnupg2パッケージが必要です。
 
 ```bash
 wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
@@ -29,7 +48,7 @@ sudo apt-get install whatap-npmd
 ```
 
 </TabItem>
-<TabItem value="centos" label="CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash
 sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
@@ -39,7 +58,13 @@ sudo yum install whatap-npmd
 </TabItem>
 </Tabs>
 
-## 互換性チェック及び設定
+:::note
+
+AWS環境でリソース情報を収集するには、[次の文書](set-aws-resource-options)を参考にしてください。
+
+:::
+
+### 互換性チェック及び設定
 
 エージェントをダウンロードしたサーバーの互換性をチェックし、設定情報を入力してください。
 
@@ -60,8 +85,34 @@ Start service
 Installation complete!
 ```
 
+## Kubernetes環境に設置する
+
+**_インストール案内_**セクションで**_Kubernetes_**タブを選択し、画面の案内に従ってエージェントのインストールを進めてください。
+
+### エージェント生成
+
+1.  エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードしてください。
+
+2.  ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
+
+3.  マスターノードで次のコマンドを実行し、エージェントを作成してください。
+
+    ```bash
+    kubectl apply -f whatap_npmd.yaml
+    ```
+
+4.  次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認してください。
+
+    ```bash
+    kubectl get pod -n whatap-npm-ns
+    ```
+
+    ![NPMエージェントのインストール](/img/npm-k8s-check-running.png)
+
+## TagRuleオプション設定(選択事項)
+
+**NPM**では、**tagRule**設定により、不規則で多様な情報を収集し、トポロジーまたはチャートで表現できます。 詳細については、[次の文書](set-tagrule)を参考にしてください。
+
 ## モニタリングの開始
 
--   エージェントが正常に動作すると、モニタリング情報の収集を開始します。 収集された情報をサービス画面で確認するには、画面右下の**_NPMダッシュボード_**ボタンを選択してください。
-
--   **NPM**では、**tagRule**設定により、不規則で多様な情報を収集し、トポロジーまたはチャートで表現できます。 詳細については、[次の文書](set-tagrule)を参考にしてください。
+エージェントが正常に動作すると、モニタリング情報の収集を開始します。 収集された情報をサービス画面で確認するには、画面右下の<Cmdname sid="MNU06848" className="uitext" />ボタンを選択してください。

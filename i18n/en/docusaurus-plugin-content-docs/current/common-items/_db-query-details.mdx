@@ -41,3 +41,17 @@ To check the SQL query information of the current running session, select the <s
 -   If you select ![Vertical split icon](/img/ic-column.svg) on the upper right of the screen, the **_Query_** and **_Plan_** sections are placed left to right.
 
 -   If you select ![Vertical split icon](/img/ic-layout-horizontal.svg) on the upper right of the screen, the **_Query_** and **_Plan_** sections are placed up to down.
+
+<InDoc product='postgresql,postgresql-v1'>
+
+:::tip
+
+If you select a table or index while viewing the plan information in **_JSON_** format, the **_Object detail_** window appears where you can see the configurations for **columns** and **index** items in the table.
+
+<ImgLang img='db-sql-objectdetail-pg.png' desc='Object detail' />
+
+This function is supported in DBX agent 1.6.15 or later. For more information about the database roles and related settings, see [the following](install-agent#uid).
+
+:::
+
+</InDoc>

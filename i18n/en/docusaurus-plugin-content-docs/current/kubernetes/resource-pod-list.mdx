@@ -1,0 +1,73 @@
+---
+id: resource-pod-list
+title: Pod List
+description: Check the Pod list.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Pod List
+toc_max_heading_level: 2
+---
+
+<!-- 
+>
+다국어 이미지 필요
+-->
+
+Home > Select Project > <Cmdname sid="resource" className="uitext" /> > <Cmdname sid="podList" className="uitext" />
+
+It displays the Pod list. If you select a desired column, you can search the Pod list sorted by that column. 
+
+<ImgLang img='k8s-pod-list.png' desc='Pod list' />
+
+-   You can check the total number of Pods and the Pod counts by status on the upper left of the sreen.
+
+-   If you select a desired column, you can search the Pod list sorted by that column.
+
+:::note 
+
+Guides to **Metric information**, **Filter**, and **Select column** are the same as the list-type guidance under the <Cmdname sid="resource" className="uitext" /> menu.
+
+:::
+
+## Metric information
+
+{@include: ../common-items/_k8s-list-metric.mdx}
+
+## Filtering
+
+{@include: ../common-items/_k8s-list-filter.mdx}
+
+## Select Column
+
+{@include: ../common-items/_k8s-list-cl.mdx}
+
+## Display Detail
+
+When you select a desired application to view in <Cmdname sid="containerizedAppList" className="uitext" />, you can see the details about the application.
+
+:::note 
+
+The [Trace](container-map-trace), [Metrics](container-map-metrics), [Log](container-map-log), and [Event](container-map-event) tabs of the detailed view window are the same as in Container map's container view details.
+
+:::
+
+### Resources
+
+After selecting a target, you can see the resource list and relationship diagram for the selected resource in the <Cmdname sid="resource" className="uitext" /> tab in the detailed view. 
+
+<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
+
+#### Summary
+
+It provides a summary of the list of resources for the selected resource. If you select the detailed view icon next to the resource name, the corresponding resource list screen appears. 
+
+-   <Cmdname sid="container" className="uitext" />: Goes to <Cmdname sid="container_list" className="uitext" /> with only the container filtered.
+
+-   <Cmdname sid="podName" className="uitext" />: Goes to <Cmdname sid="podList" className="uitext" /> with only the Pod filtered.
+
+-   <Cmdname sid="node" className="uitext" />: Goes to <Cmdname sid="node_detail" className="uitext" /> with the node name selected.
+
+#### Relational diagram of resources
+
+You can visually see the relationships and status between resources. As in the list, you can check the detailed metric information by hovering your mouse over a Pod, container, or application. If you select a resource, the resource list page appears.

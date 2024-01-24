@@ -4,7 +4,14 @@
 
 -   **trace_transaction_name_key** <span class='type'>String</span>
 
-    The value extracted from the set HTTP request parameter is added at the end of the transaction name.
+    If you set the HTTP request parameter value in the option, the parameter value is extracted and added to the end of the transaction name. 
+
+    For example, when calling the `/api/test` URL with `paramKey` as an HTTP parameter, if you set it as in the following example, the transaction name in the trace history appears as `/api/test$paramKey={value}`. However, multiple parameters cannot be registered.
+
+    ```ini title='whatap.conf'
+    # example
+    trace_transaction_name_key=paramKey
+    ```
 
 {@include: ../common-items/_transaction-trace-common.mdx}
 

@@ -16,7 +16,9 @@ This process applies the WhaTap monitoring agent to the Node.js application runn
 
 :::note 
 
-To help you understand the Node.js application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express).
+-   EKS Fargate is to be supported later. 
+
+-   To help you understand the Node.js application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express).
 
 :::
 
@@ -67,9 +69,6 @@ WhatapAgent.NodeAgent;
 
 ## Environment variables
 
-<Tabs>
-<TabItem value='basic' label='Default' default>
-
 ```ini
 env:
   - name: NODE_IP
@@ -79,78 +78,5 @@ env:
   - name: POD_NAME
     valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
-
-</TabItem>
-<TabItem value='eksfragate' label='EKS Fargate(Scheduled support)'>
-
-1.  Add `shareProcessNamespace` and `serviceAccount` to observe user pod resources to fields in _.spec_ of Deployment or ReplicaSet.
-
-    ```ini
-    apiVersion: apps/v1
-    kind: Deployment
-    ...
-    spec:
-    ...
-        spec:
-          shareProcessNamespace: true
-          serviceAccount: whatap
-    ...
-    ```
-
-2.  Set container environment variables in your Kubernetes environment. Enter the environment variables for the application agent.
-
-    The `OKIND` environment variable plays a role to set the applications for the pod as the same group.
-
-    ```ini showLineNumbers {8}
-    env:
-      - name: NODE_IP
-        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-      - name: NODE_NAME
-        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-      - name: POD_NAME
-        valueFrom: {fieldRef: {fieldPath: metadata.name}}
-      # If whatap.conf is not to be used, add the settings.
-      - name: license
-        value: "XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX"
-      - name: whatap_server_host
-        value: "15.165.146.117"
-      - name: whatap_micro_enabled
-        value: "true"
-    ```
-
-3.  Add the whatap-node-agent sidecar container to collect the user Pod resource usage.
-
-    ```ini
-    ...
-      - name: whatap-node-agent
-        image: whatap/kube_mon_sidecar
-        resources:
-          requests:
-            memory: 20Mi
-            cpu: 10m
-          limits:
-            memory: 40Mi
-            cpu: 20m
-        ports:
-          - name: nodeport
-            containerPort: 6600
-        env:
-          - name: NODE_IP
-            valueFrom:
-              fieldRef:
-                fieldPath: status.hostIP
-          - name: NODE_NAME
-            valueFrom:
-              fieldRef:
-                fieldPath: spec.nodeName
-            envFrom:
-            - configMapRef:
-                name: node-license
-    volumes:
-    ...
-    ```
-
-</TabItem>
-</Tabs>
 
 {@include: _check-install-agent.mdx}

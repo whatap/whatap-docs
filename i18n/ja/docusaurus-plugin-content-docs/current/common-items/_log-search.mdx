@@ -36,13 +36,17 @@
 
 -   ログデータを時系列順と逆順で表示できます。![number-s](/img/number-03.png)ログテーブルの右上で、**_Timestamp_** **_過去順_**と**_現在順_**で目的の検索方法を選択してください。
 
+-   時間範囲を指定した後**_適用_**ボタンをタップして照会時間を設定し、![検索アイコン](/img/ic-search-on-press.svg) **_検索_**ボタンをタップしてデータを照会します。
+
 -   ![number-s](/img/number-03.png)ログテーブル上段の右の <LinkImage img='ic-fullscreen.svg' desc='全画面表示アイコン'/>**_全画面_**アイコンを選択すると、**_ログ_**と**_タイムスタンプ_**を全画面で確認することができます。
+
+-   {@include: ../common-items/_log-agent-option.mdx}
 
 ## ログContentの確認
 
 {@include: ../common-items/_log-ui-log-content.mdx}
 
--   ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体Contentを確認することができます。
+-   ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体Contentを確認することができます。 
 
 -   ログのタグを選択すると、**_コピー_**、**_検索_**、**_除外検索_**、**_隣接ログ検索_**のドロップダウンメニューが表示されます。
 
@@ -50,21 +54,13 @@
 
 ### フィルター適用
 
-![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。右側から、{@include: ../common-items/_log-filter-apply.mdx} 
-
-:::note
-
-**フィルター数式**
-
-入力フィルター値の下にある数式(expression)は、ログデータを表示するときに適用されるフィルター式のプレビューです。 
-
-:::
+![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。右側から、{@include: ../common-items/_log-filter-apply2.mdx} 
 
 ### 構文解析されていないキーワードのフィルター適用
 
 ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。この場合、指定範囲内のすべてのログをFull Scanします。そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。定型化されたログデータの場合、ログパーサー設定\*\*\*を通じてインデックスキー値を活用して検索することをお勧めします。
 
-<ImgLang img='log-content-search.png' desc='미파싱 키워드 필터 적용'/>
+<ImgLang img='log-filter-search.png' desc='構文解析されていないキーワードのフィルター適用'/>
 
 1.  **_カテゴリー_**を選択してください。カテゴリ指定が必須です。
 
@@ -76,11 +72,11 @@
 
 4.  スクロールを下げて下段の**_追加照会_**ボタンを選択すると、追加で照会することができます。 
 
-<ImgLang img='log-content-search-more.png' desc='추가 조회하기'/>
+<ImgLang img='log-content-search-more.png' desc='追加照会'/>
 
 :::note 
 
--   全体ログのうち、サーバー照会範囲当たり1万件ずつ照会します。サーバー照会範囲の場合、基本20万件ですが、ログ全体の量によって比率が変わることがあります。
+-   全体ログのうち、サーバー照会範囲当たり1万件ずつ照会します。サーバー照会範囲の場合、基本20万件ですが、ログ全体の量によって比率が変わることがあります。 
 
 -   パーサー設定の詳細については、[次の文書](log-parser.mdx)を参考にしてください。
 
@@ -110,25 +106,21 @@
 
 {@include: ../common-items/_log-filter-expressions-search-key.mdx}
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx} 
+{@include: ../common-items/_log-filter-expressions-commons.mdx}
 
 ## ログのタグオプション
 
-ログのタグを選択すると、次のようにドロップダウンメニューが表示されます。**_検索_**、**_除外検索_**、**_隣接ログ_**オプションを確認できます。
+ログのタグを選択すると、次のようにドロップダウンメニューが表示されます。**_検索_**、**_除外検索_**、**_隣接ログ_**オプションを確認できます。 
 
 <ImgLang img='log-search-tag.png' desc='ログタグドロップダウンメニュー'/>
 
 -   **検索**
 
-    **_検索_**オプションを選択すると**_フィルター_**にタグが次のように含まれる('+') 条件で入力されます。
-
-    <ImgLang img='log-search-tag-se.png' desc='ログタグ検索'/>
+    **_検索_**オプションを選択すると**_フィルター_**に該当タグが含まれる('==') 条件として入力されます。
 
 -   **除外検索**
 
-    **_除外検索_**オプションを選択すると**_フィルター_**にタグが、次のように除外される('-') 条件として入力されます。
-
-    <ImgLang img='log-search-tag-ese.png' desc='ログタグ除外検索'/>
+    **_除外_**オプションを選択すると**_フィルター_**に該当タグが除外('==') 条件として入力されます。
 
 -   **隣接ログ**
 
@@ -166,7 +158,7 @@
 
 ![アイコン](/img/ic-highlight.svg) **_ハイライト_**アイコンを選択して、ハイライトするキーワードと色を設定できます。 
 
-<ImgLang img='log-lt-highlight.png' desc='ライブテールハイライト'/>
+<ImgLang img='log-lt-highlight.png' desc='ハイライト'/>
 
 -   追加でカラー設定を希望するキーワードを入力ウィンドウに入力してください。 
 
@@ -179,9 +171,3 @@
 ## テーブル設定
 
 -   ![number-s](/img/number-03.png)領域の右側{@include: ../common-items/_log-ui-table-setting.mdx}
-
-<!-- 
-
-include: ../common-items/_log-highlight.mdx
-
--->

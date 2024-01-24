@@ -1,16 +1,15 @@
 #### Common syntaxes
 
-| Syntax type               | Description                                                                                                                                                                                 | Example                                                                            |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `+searchValue`            | -   Searches for the logs that match the search value.<br/> - If no operator is entered, it operates as +.<br/> - If the value is a negative number such as -123, be sure to enter `+-123`. | `exception:RuntimeException` <br/> `exception:+RuntimeException`<br/>`@txid:+-123` |
-| `-searchValue`            | -   Searches for the logs excluding search values.<br/> - To search by excluding the logs with a value of 123, be sure to enter `-123`.                                                     | `exception:-RuntimeException`<br/> `@txid:-123`                                    |
-| `*searchValue`            | Searches for the logs ending with the search value.                                                                                                                                         | `word:*hello`                                                                      |
-| `searchValue*`            | Searches for the logs starting with the search value.                                                                                                                                       | `word:hello*`                                                                      |
-| `*searchValue*`           | Searches for the logs that contain the search value in the middle.                                                                                                                          | `word:*hello*`                                                                     |
-| `*search*Value*`          | Searches for the logs that contain the search value.                                                                                                                                        | `word:*he*llo*`                                                                    |
-| `re:{regexr}+re:{regexr}` | Searches for the logs that match a regular expression.                                                                                                                                      | `caller:+re:^i\.w\.a\.w\.s\.v\.r\.`                                                |
-| `-re:{regexr}`            | It searches for the logs that do not match the regular expression.                                                                                                                          | `caller:-re:^i\.w\.a\.w\.s\.v\.r\.`                                                |
-| `**`                      | Search all logs matching the search key.                                                                                                                                                    |                                                                                    |
+| Syntax type      | Description                                                        | Example                                |
+| ---------------- | ------------------------------------------------------------------ | -------------------------------------- |
+| `==searchValue`  | Searches for the logs that match the search value.                 | `exception==RuntimeExceptionexception` |
+| `!=searchValue`  | Searches for the logs that exclude the search value.               | `exception!=RuntimeException`          |
+| `*searchValue`   | Searches for the logs ending with the search value.                | `word==*hello`                         |
+| `searchValue*`   | Searches for the logs starting with the search value.              | `word==hello*`                         |
+| `*searchValue*`  | Searches for the logs that contain the search value in the middle. | `word==*hello*`                        |
+| `*search*Value*` | Searches for the logs that contain the search value.               | `word==*he*llo*`                       |
+| `re:{regexr}`    | Searches for the logs that match a regular expression.             | `caller==re:^i\.w\.a\.w\.s\.v\.r\.`    |
+| `**`             | Searches all logs that match the search key.                       |                                        |
 
 #### Syntax in case the search key has a numeric value (keyword.n)
 

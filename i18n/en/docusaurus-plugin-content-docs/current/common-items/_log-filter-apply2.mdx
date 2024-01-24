@@ -1,0 +1,53 @@
+When a filter is applied, the logs that match the specified conditions are filtered. You can enter multiple filters. If the filter has the same tag, it is applied as OR (||). Otherwise, it is applied as AND (&&).
+
+You can specify a filter by directly entering a value in the input field or clicking the **_Filter_** field. Filter tags are entered in the following order: `Search key`, `Operator`, and `Search value`. When entering values in the input field, separate keywords with spaces. If spaces are included for keywords, enclose them with the _''_ or _""_ symbol. If the symbol-enclosed keyword includes _\\_, enter it as _\\\\_. If you select ![Search icon](/img/ic-search-on-press.svg) **_Search_**, the data with the filter applied can be viewed in the ![number-s3](/img/number-03.png) area.
+
+:::note 
+
+**Guide UI**
+
+The **Guide UI** is provided under the input field as follows: 
+
+<ImgLang img='log-filter-ui1.png' desc='Log filter'/>
+
+:::
+
+#### Entry of the search key, operator, and search value
+
+-   Upon entry of the `search key`, recommended values are provided by distinguishing for general index, reserved word index, and numeric index. 
+
+-   When entering an `operator`, for a general index search key, `==` and `!=` options are provided at the bottom. In case of the numeric index, the `>`, `<`, `<=`, `>=`, `==`, and `!=` options are provided.
+
+-   Upon entry of the `search value` for matched search (`>`, `<`, `<=`, `>=`, `==`), it is highlighted in <span class='normal'>blue</span>, In case of excluded search (`!=`), it is highlighted in <span class='vslow'>red</span>. 
+
+-   Upon entry of the `search value`, you can search using the case-sensitive option.
+
+:::note 
+
+If the filter tags exceed 2 lines, you can fold it by selecting the ![Icon](/img/up-arrow.svg) **_Fold_** icon.
+
+:::
+
+#### Adding filter tags
+
+-   You can enter text in the input field and add more items by using the Enter and Tab keys on your keyboard.
+
+-   You can add recommended values by clicking them in the **Guide UI** below the input field.
+
+-   In the **Guide UI** below the input field, you can select recommended values with the up/down arrow keys on the keyboard and add tags by using the Enter and Tab keys.
+
+#### Deleting filter tags
+
+-   A tag can be deleted with the Backspace key.
+
+-   You can delete a tag by selecting the **_X_** icon for it.
+
+-   You can delete all tags by selecting the Delete All **_X_** icon in the input field.
+
+#### Exceptional cases for application of filters
+
+-   In the tag with a numeric index (`search key` that ends with `.n`), only numbers can be input for the `search value`.
+
+-   Duplicate ‘search key’ and ‘search value’ cannot be entered.
+
+-   Searching is not possible if there is a tag whose `search key` or `search value` is missing. Invalid tags appear in <span class='mstop'>gray</span>.

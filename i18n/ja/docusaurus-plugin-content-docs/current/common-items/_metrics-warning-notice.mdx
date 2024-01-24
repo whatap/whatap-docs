@@ -1,4 +1,4 @@
-ホーム画面 > プロジェクト選択 > **_アラート通知_** > **_イベント設定_** >**_メトリクス_**タブ選択
+ホーム画面 > プロジェクト選択 > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="metrics" className="uitext" />タブ選択
 
 ## メトリクスイベントとは
 
@@ -29,7 +29,7 @@
 
 ## メトリクスイベント
 
-**_アラート通知_** > **_イベント設定_**メニューから画面の上にある**_メトリクス_**を選択します。画面の右上にある **_+イベント追加_**を選択します。**_メトリクスイベント_**ウィンドウが表示されます。
+<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />ウィンドウが表示されます。
 
 <ImgLang img='set-events-metrics.png' desc='メトリクスイベント' />
 
@@ -45,11 +45,11 @@
 
 ### 基本情報を入力{#basic-info}
 
--   **_イベント名_** ：追加するイベント名を入力してください。
+-   <Cmdname sid="event_name" className="uitext" />：追加するイベント名を入力してください。
 
--   **_イベントのアクティブ化_**：イベントのアクティブ化の有無を選択します。
+-   <Cmdname sid="enable_events" className="uitext" />：イベントのアクティブ化の有無を選択します。
 
--   **_テンプレート_**：作成したテンプレートを選択して、すばやく簡単にイベントを設定できます。テンプレートを使用しない場合は、**_使用しない_**を選択します。
+-   <Cmdname sid="template" className="uitext" />：作成したテンプレートを選択して、すばやく簡単にイベントを設定できます。テンプレートを使用しない場合は、<Cmdname sid="metrics_option_disabled" className="uitext" />を選択します。
 
     <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
 
@@ -61,35 +61,43 @@
 
     </InDoc>
 
--   **_カテゴリ_**：メトリクス データを区切る単位です。メトリクスイベント設定時の必須のオプションの値です。
+-   <Cmdname sid="category" className="uitext" />：メトリクス データを区切る単位です。メトリクスイベント設定時の必須のオプションの値です。
 
     <ImgLang img='set-event-select-category.png' desc='メトリクスイベント - カテゴリ' />
 
-    -   **_カテゴリ_**選択オプションは、![指示線1](/img/number-01.png) **_名前_**と![指示線2](/img/number-02.png)データ収集間隔、![指示線3](/img/number-03.png) **_キー_**情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
+    -   <Cmdname sid="category" className="uitext" />選択オプションは、<LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" />と<LinkImage img="number-02.png" className="ico" />データ収集間隔、<LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
 
-    -   **_カテゴリ_**は、3時間以内にプロジェクトによって収集されたメトリクスデータを検索し、一覧に表示します。**_カテゴリ_**選択オプションに収集間隔が表示されない場合は、**_手動で入力する_**オプションを選択して、カテゴリキーを入力します。
+    -   <Cmdname sid="category" className="uitext" />は、3時間以内にプロジェクトによって収集されたメトリクスデータを検索し、一覧に表示します。<Cmdname sid="category" className="uitext" />選択オプションに収集間隔が表示されない場合は、<Cmdname sid="enter_category_self" className="uitext" />オプションを選択して、カテゴリキーを入力します。
 
--   **_レベル_**
+-   <Cmdname sid="level" className="uitext" />
 
     -   イベント発生時のアラートレベルを意味します。<span class='vslow'>Critical</span>, <span class='slow'>Warning</span>、<span style={{color:'#757575'}}>Info</span>レベルに分けます。<span class='vslow'>Critical</span>、<span class='slow'>Warning</span>レベル設定時<Cmdname sid="resolved_event_notification" className="uitext" />の選択オプションが有効になります。
 
     -   <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
 
--   **_メッセージ_**
+-   <Cmdname sid="message" className="uitext" />
 
-    -   イベント発生時に出力する通知メッセージを入力します。`${タグまたはフィールドキー}` を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ**_カテゴリ_**に含まれる値である必要があります。**_サイトマップ_**>**_メトリクス照会_**メニューで入力できるタグまたはフィールドキーを確認することができます。
+    -   イベント発生時に出力する通知メッセージを入力します。`${タグまたはフィールドキー}` を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
 
     -   ![時間アイコン](/img/ico-timing.svg)ボタンをクリックすると、以前に入力したメッセージの履歴を確認できます。
 
-    -   **_受信テスト_**は、**_イベント名_**、**_カテゴリ_**、**_レベル_**、**_メッセージ_**の情報に基づいて通知を発生させることでメッセージをチェックする機能です。
+-   <Cmdname sid="alert_test" className="uitext" />
 
--   **_イベント発生条件_**
+    必須項目である<Cmdname sid="event_name" className="uitext" />、<Cmdname sid="category" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="message" className="uitext" />情報に基づいて通知を発生させ、メッセージをチェックする機能です。
+
+    :::note
+
+    受信テストを利用するには、必須項目(<Cmdname sid="event_name" className="uitext" />、<Cmdname sid="category" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="message" className="uitext" />)に値を入力または選択する必要があります。
+
+    :::
+
+-   <Cmdname sid="metrics_event_rules" className="uitext" />
 
     <ImgLang img='set-event-condition.png' desc='イベント発生条件' />
 
     ![指示線4](/img/number-04.png)フィールド、![指示線5](/img/number-05.png)演算子の選択、![指示線6](/img/number-06.png)しきい値を入力して、イベントが発生する条件を設定します。
 
--   **_イベント対象フィルタリング_**
+-   <Cmdname sid="alert_object_filtering" className="uitext" />
 
     <ImgLang img='set-event-filtering.png' desc='イベント対象フィルタリング' />
 
@@ -97,19 +105,25 @@
 
 :::note
 
--   **_イベント発生条件_**と**_イベント対象フィルタリング_**で使用できる基本文法と演算子の一覧は、[次の文書](#condition-guide)を参照してください。
+-   <Cmdname sid="metrics_event_rules" className="uitext" />と<Cmdname sid="alert_object_filtering" className="uitext" />で使用できる基本文法と演算子の一覧は、<Link to="#condition-guide">次の文書</Link>を参照してください。
 
--   **_イベント発生条件_**と**_イベント対象フィルタリング_**オプションは、**_選択入力_**または**_直接入力_**モードを選択できます。
+-   <Cmdname sid="metrics_event_rules" className="uitext" />と<Cmdname sid="alert_object_filtering" className="uitext" />オプションは、<Cmdname sid="metrics_rule_select" className="uitext" />または<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択できます。
 
--   イベント設定が保存された後、オプション値は**_直接入力_**モードで管理します。その後、**_選択入力_**モードに切り替えると、オプション値が初期化される場合があります。
+-   イベント設定内容が保存された後は、そのオプション値は<Cmdname sid="metrics_rule_direct" className="uitext" />オプションで管理します。以降<Cmdname sid="metrics_rule_select" className="uitext" />オプションに切り替えると、オプション値が初期化される可能性があります。
+
+-   イベント発生条件と対象入力時の特殊文字(<code>~!@#$%^&*()_+=-[]`</code>)を含めるか、数字で始まるフィールド名を入力すると、エラーが発生する可能性があります。 こんな場合<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択した上で例示のように中括弧(<code>${}</code>)にまとめて入力してください。
+
+    ```text
+    ${4xxErrorType} == '401'
+    ```
 
 :::
 
-### **_イベント受信設定_**{#set-receive-event}
+### イベント受信設定 {#set-receive-event}
 
 <ImgLang img='set-event-receive.png' desc='イベント受信設定' />
 
--   **_発生回数_**：選択した時間内に**_イベント発生条件_**で設定したイベントが入力回数と同じ回数が発生した場合、アラート通知が送信されます。
+-   <Cmdname sid="number_of_event" className="uitext" />：選択した時間内に<Cmdname sid="metrics_event_rules" className="uitext" />で設定したイベントが入力回数と同じ回数が発生した場合、アラート通知が送信されます。
 
     :::note
 
@@ -121,17 +135,17 @@
 
 -   <Cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />：過剰なアラート通知が発生しないようにするオプションです。最初のアラート通知の後、選択された時間にアラート通知は送信されません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
 
--   **_関連カテゴリ_**：関連カテゴリを最大5つまで設定し、通知を閲覧するときに参照します。
+-   <Cmdname sid="related_category" className="uitext" />：関連カテゴリを最大5つまで設定し、通知を閲覧するときに参照します。
 
--   **_イベント受信タグ_**：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
+-   <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
 
     :::note
 
-    **_アラート通知_** > **_イベント受信設定_**メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
+    <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
 
     :::
 
-### **_通知ルールテスト_**
+### イベントルールテスト
 
 <ImgLang img='set-event-test.png' desc='アラート通知テスト' />
 
@@ -139,7 +153,7 @@
 
 ## 複合メトリクスイベント
 
-**_複合メトリクスイベント_**を利用するには、次の概念を理解する必要があります。
+<Cmdname sid="composite_metrics" className="uitext" />を利用するには、次の概念を理解する必要があります。
 
 <Xclude product='npm'>
 
@@ -155,18 +169,18 @@
 
 -   [MXQL](../mxql/mxql-overview)
 
-**_複合メトリクスイベント_**は、メトリクスデータより複雑なルールを使用してイベントを生成し、アラート通知を送信します。複合メトリクスは、次のような状況で効果的に使用できます。
+<Cmdname sid="composite_metrics" className="uitext" />は、メトリクスデータより複雑なルールを使用してイベントを生成し、アラート通知を送信します。複合メトリクスは、次のような状況で効果的に使用できます。
 
 -   複数のエージェントから受信したデータに対して総合的にイベント判定を行う必要がある場合
 -   過去のデータと現在のデータを比較して、イベント判定を行う必要がある場合
 
 メトリクスイベントは、エージェントからメトリクスを受信するたびにイベント判定を行います。一方、複合メトリクスイベントは、各エージェントから収集されたメトリクスをデータベースに保存してから、再度イベント判定を行います。これらの特性により複数のエージェントからのデータを集計したり、履歴データを活用することができます。ただし、**MXQL**と呼ばれるWhaTap独自のデータ言語を使用するという参入障壁があります。そのため、ユーザーが基礎的なレベルの**MXQL**を理解するだけで効果的にイベントを設定できるようにイベントテンプレートを提供します。MXQLのネイティブユーザーは、イベント対象のフィルタリングとイベント条件のクエリのみを修正することでイベントを適用することができます。
 
-1.  **_アラート通知_** > **_イベント設定_**メニューから画面の上にある**_メトリクス_**を選択してください。 
+1.  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。
 
-2.  **_複合メトリクス_**セクションの右側にある**_+イベント追加_**を選択してください。 
+2.  <Cmdname sid="composite_metrics" className="uitext" />セクションの右側にある<Cmdname sid="add_notification" className="uitext" />を選択してください。
 
-3.  **_複合メトリクス_**ウィンドウが表示されたら、**_チャートで生成_**を選択してください。
+3.  <Cmdname sid="composite_metrics" className="uitext" />ウィンドウが表示されたら、<Cmdname sid="create_new_composite_mxql_event" className="uitext" />を選択してください。
 
 イベント設定ウィンドウが表示されます。 
 
@@ -192,12 +206,9 @@
 
 </InDoc>
 
-### **_イベントデータ参照_**
+### イベントデータ照会
 
-**_複合メトリクスイベント_**は、メトリクスデータのクエリ言語である**MXQL**に基づいてイベント条件を生成します。**_チャートを生成する_**機能は、**MXQL**をオートコンプリートするためのコンボボックス機能を提供します。イベントデータを参照してチャートを構成し、イベント発行条件を直接入力するためのテンプレートです。**_ウィジェット_**または**_テキスト_**オプションを選択してイベントを設定してください。
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+<Cmdname sid="composite_metrics" className="uitext" />は、メトリクスデータのクエリ言語である<b>MXQL</b>に基づいてイベント条件を生成します。<Cmdname sid="create_new_composite_mxql_event" className="uitext" />機能は、<b>MXQL</b>をオートコンプリートするためのコンボボックス機能を提供します。イベントデータを参照してチャートを構成し、イベント発行条件を直接入力するためのテンプレートです。<Cmdname sid="widget" className="uitext" />または<Cmdname sid="text" className="uitext" />オプションを選択してイベントを設定してください。
 
 <Tabs>
 <TabItem value='widget' label='ウィジェット'>
@@ -206,15 +217,15 @@ import TabItem from '@theme/TabItem';
 
 <ImgLang img='set-event-data-view.png' desc='イベントデータ参照' />
 
--   **_フィルター_**：イベント条件の対象を選択します。![指示線1](/img/number-01.png)演算式、![指示線2](/img/number-02.png)タグ、![指示線3](/img/number-03.png)フィルタリング値を入力して、フィルタリング条件を作成します。
+-   <Cmdname sid="filter" className="uitext" />：イベント条件の対象を選択します。<LinkImage img="number-01.png" className="ico" />演算式、<LinkImage img="number-02.png" className="ico" />タグ、<LinkImage img="number-03.png" className="ico" />フィルタリング値を入力して、フィルタリング条件を作成します。
 
     <ImgLang img='set-event-cmetric-filter.png' desc='フィルター' />
 
--   **_グループ化_**：グループ化されたメトリクスデータを選択します。複数選択できます。
+-   <Cmdname sid="groupby" className="uitext" />：グループ化されたメトリクスデータを選択します。複数を選択できます。
 
--   **_時間単位_**：グループ化されたデータを分割する時間基準を設定します。**_秒_**、**_分_**、**_時間_**で選択して設定することができます。
+-   <Cmdname sid="timeunit" className="uitext" />：グループ化されたデータを分割する時間基準を設定します。<Cmdname sid="second" className="uitext" />、<Cmdname sid="minute" className="uitext" />、<Cmdname sid="hour" className="uitext" />で選択して設定することができます。
 
--   **_フィールド_**：イベント発行条件に使用するフィールドを選択します。複数選択が可能です。
+-   <Cmdname sid="field" className="uitext" />：イベント発行条件に使用するフィールドを選択します。複数選択が可能です。
 
 </TabItem>
 <TabItem value='text' label='テキスト'>
@@ -226,47 +237,47 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
-### **_通知_**
+### 通知
 
 アラート通知設定の基本情報を入力します。
 
--   **_イベントのアクティブ化_**：トグルボタンをクリックして、イベントをアクティブ化の有無を選択します。
+-   <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、イベントをアクティブ化の有無を選択します。
 
--   **_レベル_**: <span class='vslow'>危険(Critical)</span>, <span class='slow'>警告(Warning)</span>, <span style={{color: '#757575'}}>情報</span>の中で一つのレベルを選択してください。
+-   <Cmdname sid="level" className="uitext" />: <span class='vslow'>危険(Critical)</span>, <span class='slow'>警告(Warning)</span>, <span style={{color: '#757575'}}>情報</span>の中で一つのレベルを選択してください。
 
-    **_イベントの状態が解決した場合の追加通知_**：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
+    <Cmdname sid="resolved_event_notification" className="uitext" />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
 
--   **_タイトル_**：アラート通知のタイトルを入力します。
+-   <Cmdname sid="title" className="uitext" />：アラート通知のタイトルを入力します。
 
--   **_メッセージ_**: イベント発生時に送信する通知メッセージを入力します。`${タグまたはフィールドキー}` を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ**_カテゴリ_**に含まれる値である必要があります。**_サイトマップ_**>**_複合メトリクス表示_**メニューで入力できるタグまたはフィールドキーを確認することができます。
+-   <Cmdname sid="message" className="uitext" />：イベント発生時に送信する通知メッセージを入力します。<code>&#36;&#123;タグまたはフィールドキー&#125;</code> を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
 
-### **_イベント発行条件_**
+### アラート通知ポリシー
 
 アラート通知を送信する条件を入力します。
 
--   **_データ参照範囲_**: イベント条件に使用する**MXQL**のリアルタイムデータの参照範囲を設定します。イベント データの参照に含まれるフィールドのみ使用できます。
+-   <Cmdname sid="data_time_range" className="uitext" />：イベント条件に使用する<b>MXQL</b>のリアルタイムデータの参照範囲を設定します。イベント データの参照に含まれるフィールドのみ使用できます。
 
     複合メトリクスイベントは、DBに保存されているメトリクスを参照して使用します。したがって、最初にデータを検索する時間範囲を指定する必要があります。データ取得時間を5分で選択すると、過去5分間に収集されたデータが参照され、イベント発生条件を確認します。最近のデータに対して、イベントを設定する場合は短く、統計的にアクセスしたい場合は長く設定できます。実際の使用例については、[次の文書](#template)を参照してください。
 
--   **_条件_**：MXQLに反映するフィールドと演算ルール、しきい値を入力します。
+-   <Cmdname sid="condition" className="uitext" />：MXQLに反映するフィールドと演算ルール、しきい値を入力します。
 
-### **_付加情報_**
+### 付加情報
 
 アラート通知を受信するために追加オプションを設定します。
 
--   **_インターバル_**：選択した時間間隔で通知条件を確認します。
+-   <Cmdname sid="interval" className="uitext" />：選択した時間間隔で通知条件を確認します。
 
--   **_ミュート_**：過剰なアラート通知の発生を防ぐオプションです。最初のアラート通知から選択した時間にアラート通知は送信しません。また、**_イベント履歴_**メニューに記録されません。
+-   <Cmdname sid="silent" className="uitext" />：過剰なアラート通知が発生しないようにするオプションです。最初のアラート通知の後、選択された時間にアラート通知は送信されません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
 
--   **_イベント受信タグ_**：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
+-   <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
 
     :::note
 
-    **_アラート通知_** > **_イベント受信設定_**メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
+    <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
 
     :::
 
-### **_イベントルールテスト_**
+### アラート通知テスト
 
 <ImgLang img='set-event-cmetric-test.png' desc='イベントルールテスト' />
 
@@ -276,15 +287,15 @@ import TabItem from '@theme/TabItem';
 
 ## メトリクスイベントの修正と削除
 
-1.  **_アラート通知_** > **_イベント設定_**メニューから移動した後**_メトリクス_**タブを選択してください。 
+1.  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから移動した後<Cmdname sid="metrics" className="uitext" />タブを選択してください。
 
 2.  イベント一覧から修正または削除する項目の右端の![編集アイコン](/img/ico-edit.svg)ボタンをクリックしてください。
 
-3.  メトリクスまたは複合メトリクスのイベント設定ウィンドウが表示すると、各オプションを修正して、**_保存_**ボタンを選択してください。
+3.  メトリクスまたは複合メトリクスのイベント設定ウィンドウが表示すると、各オプションを修正して、<Cmdname sid="save" className="uitext" />ボタンを選択してください。
 
-  選択したイベントを削除するには、イベント設定ウィンドウの右上の![削除アイコン](/img/ico-trash.svg) **_削除_**ボタンをクリックしてください。
+  選択したイベントを削除するには、イベント設定ウィンドウの右上の![削除アイコン](/img/ico-trash.svg) <Cmdname sid="delete" className="uitext" />ボタンをクリックしてください。
 
-## 発生条件、対象選択ガイド{#condition-guide}
+## 発生条件、対象選択ガイド {#condition-guide}
 
 メトリクスアラート通知でイベントの発生条件とイベント対象選択では同じ文法を使用します。ただし、イベントの生成条件は、タグ(Tag)のKeyを変数として使用し、イベント対象選択は、フィールド(Field)のKeyを変数として使用します。
 
@@ -400,37 +411,37 @@ import TabItem from '@theme/TabItem';
 | [isEmpty](#isempty)       | isEmpty(param1)            | param1が`null`または`EmptyString("")`の場合は、`true`、反対の場合は、`false`             |
 | [isNotEmpty](#isnotempty) | isNotEmpty(param1)         | param1が`null`でも、`EmptyString("")`でもない場合は、`true`、反対の場合は、`false`          |
 
-#### startsWith{#startwith}
+#### startsWith {#startwith}
 
 ```java
 startsWith(Key, "Value")
 ```
 
-#### endsWith{#endswith}
+#### endsWith {#endswith}
 
 ```java
 endsWith(Key, "Value")
 ```
 
-#### isNull{#isnull}
+#### isNull {#isnull}
 
 ```java
 isNull(Key)
 ```
 
-#### isNotNull{#isnotnull}
+#### isNotNull {#isnotnull}
 
 ```java
 isNotNull(Key)
 ```
 
-#### isEmpty{#isempty}
+#### isEmpty {#isempty}
 
 ```java
 isEmpty(Key)
 ```
 
-#### isNotEmpty{#isnotempty}
+#### isNotEmpty {#isnotempty}
 
 ```java
 isNotEmpty(Key)

@@ -1,0 +1,74 @@
+---
+id: correlations
+title: Correlated project management
+description: Data is linked between projects and it is provided through the tags.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Correlations
+  - Correlated project management
+---
+
+This document provides information about the <Cmdname sid="correlatedProjectManagement" className="uitext" /> menu. WhaTap provides integration visibility based on the data link between projects. You can search for linked projects through tags and quickly check key metrics that may cause problems in the project. 
+
+-   It provides controls such as viewing, adding, and deleting the linked projects.
+
+-   The correlations between added projects can be analyzed.
+
+## Basic screen
+
+Home > Select Project > <Cmdname sid="management" className="uitext" /> > <Cmdname sid="correlatedProjectManagement" className="uitext" />
+
+<ImgLang img='k8s-cor-pj-em.png' desc='연계 프로젝트 관리 기본 화면' />
+
+The following guides you to the basic screen layout of the <Cmdname sid="correlatedProjectManagement" className="uitext" /> menu. It consists of <Cmdname sid="TTL07015" className="uitext" /> at the top and <Cmdname sid="TTL07016" className="uitext" /> at the bottom.
+
+#### Adding a correlated project
+
+You can add any correlated project. By clicking the <Cmdname sid="project_selection" className="uitext" /> window, you can view the projects that can be linked as follows: 
+
+<ImgLang img='k8s-cor-pj-add.png' desc='연계 프로젝트 추가' />
+
+-   In the <Cmdname sid="project_selection" className="uitext" /> window, you can perform search by <Cmdname sid="project_code" className="uitext" /> and <Cmdname sid="project_name" className="uitext" />.
+
+-   If you select a project, the <Cmdname sid="add" className="uitext" /> button is enabled. You can select multiple projects.
+
+-   If you click <Cmdname sid="add" className="uitext" /> with a project selected, you can see that the project has been added to <Cmdname sid="TTL07016" className="uitext" /> at the bottom along with a guide message.
+
+#### Deleting a correlated project
+
+To exclude any added project from the correlations, click the ![Delete icon](/img/ico-trash.svg) <Cmdname sid="delete" className="uitext" /> icon on the right of the <Cmdname sid="TTL07151" className="uitext" /> list.
+
+:::note 
+
+-   [Server](https://docs.whatap.io/server/introduction), [PostgreSQL](https://docs.whatap.io/postgresql/monitoring-intro), and [MySQL](https://docs.whatap.io/mysql/monitoring-intro) products are supported now.
+
+-   If the added correlated project does not appear in the list, wait a moment and then select the ![Refresh icon](/img/ic-refresh-w-bg.svg) **_Refresh_** icon to refresh information.
+
+-   In case of <Cmdname sid="delete" className="uitext" />, the <b>Edit project</b> role is required.
+
+:::
+
+## Correlation analysis example
+
+Drag <Cmdname sid="hitmap" className="uitext" /> and go to the <Cmdname sid="TTL06209" className="uitext" /> window > Select a transaction > Select <Cmdname sid="table_view" className="uitext" /> on the right of the detailed analysis screen
+
+The following provides a correlation analysis example based on the correlated projects. 
+
+<ImgLang img='k8s-cor-tbv.png' desc='연계 분석 활용 예시 중 트레이스 분석 sc' />
+
+1.  By dragging <Cmdname sid="hitmap" className="uitext" /> on the <Cmdname sid="serviceDashboard" className="uitext" />, go to the <Cmdname sid="TTL06209" className="uitext" /> window.
+
+2.  Select a transaction to view, and then select ![Leader line](/img/char-a.svg) <Cmdname sid="table_view" className="uitext" /> on the detailed analysis screen to the right.
+
+3.  If you select ![Leader line](/img/ic-link.svg) **_Correlation icon_** in the ![Leader line](/img/char-b.svg) area, you can see key metrics of the ![Leader line](/img/char-c.svg) correlated projects. If there are multiple correlated scenarios, the drop-down provides a list of desired analysis scenarios. 
+
+:::note 
+
+**Lookup time**
+
+It displays data for 10 minutes based on the last viewed time. 
+
+> For example, if you drag data in the 34 to 36 minute range of <Cmdname sid="hitmap" className="uitext" />, the data from 26 to 36 minutes appear.
+
+:::

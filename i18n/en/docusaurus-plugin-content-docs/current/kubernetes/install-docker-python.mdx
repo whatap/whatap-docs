@@ -16,7 +16,9 @@ This process applies the WhaTap monitoring agent to the Python application runni
 
 :::note 
 
-To help you understand the Python application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
+-   EKS Fargate is to be supported later. 
+
+-   To help you understand the Python application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
 
 :::
 
@@ -60,9 +62,6 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ## Kubernetes's environment variables and volumes
 
-<Tabs>
-<TabItem value='basic' label='Default' default>
-
 Set the following environment variables: `NODE_IP`, `NODE_NAME`, and `POD_NAME` to collect nodes and pods in transactions. Mount volatile volumes for WhaTap configuration files and log files.
 
 ```ini
@@ -74,40 +73,6 @@ env:
   - name: POD_NAME
     valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
-
-</TabItem>
-<TabItem value='eksfragate' label='EKS Fargate(Scheduled support)'>
-
-1.  Add `shareProcessNamespace` and `serviceAccount` to observe user pod resources to fields in _.spec_ of Deployment or ReplicaSet.
-
-    ```ini
-    apiVersion: apps/v1
-    kind: Deployment
-    ...
-    spec:
-    ...
-        spec:
-          shareProcessNamespace: true
-          serviceAccount: whatap
-    ...
-    ```
-
-2.  Set the following environment variables: `NODE_IP`, `NODE_NAME`, and `POD_NAME` to collect nodes and pods in transactions. Mount volatile volumes for WhaTap configuration files and log files.
-
-    ```ini
-    env:
-      - name: NODE_IP
-        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-      - name: NODE_NAME
-        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-      - name: POD_NAME
-        valueFrom: {fieldRef: {fieldPath: metadata.name}}
-    ```
-
-{@include: _pod-sidecar.mdx}
-
-</TabItem>
-</Tabs>
 
 ## Starting the monitoring
 

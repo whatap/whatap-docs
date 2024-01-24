@@ -16,7 +16,7 @@
 
 -   <Cmdname sid="BTN06225" className="uitext" />: 該当SQLクエリ文に関する統計情報が確認できる<Cmdname sid="statistics_sql" className="uitext" />メニューへ移動できます。
 
--   **_Default Bind_**: クエリ文で変数として設定された部分をデフォルト値でバインディングできます。
+-   **_Default Bind_**: クエリ文で変数として設定された部分をデフォルト値としてバインディングできます。
 
 -   **_Reset Bind_**: バインディングされたデフォルト値を解除し、変数を確認できます。
 
@@ -41,3 +41,17 @@
 -   画面右上に![垂直分割アイコン](/img/ic-column.svg)ボタンを選択すると**_Query_**と**_Plan_**セクションを左右に配置します。
 
 -   画面右上に![垂直分割アイコン](/img/ic-layout-horizontal.svg)ボタンを選択すると**_Query_**と **_Plan_**セクションを上下に配置します。
+
+<InDoc product='postgresql,postgresql-v1'>
+
+:::tip
+
+**_JSON_**形式でプラン情報を照会した状態でtableまたはindex項目を選択すると、テーブルの**column**、 **index**構成が確認できる**_Object detail_**ウィンドウが表示されます。
+
+<ImgLang img='db-sql-objectdetail-pg.png' desc='Object detail' />
+
+この機能は、DBXエージェント1.6.15バージョン以降に対応しています。 データベース権限に関する設定は、[次の文書](install-agent#uid)を参考にしてください。
+
+:::
+
+</InDoc>

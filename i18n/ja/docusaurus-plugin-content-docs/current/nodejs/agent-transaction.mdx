@@ -75,7 +75,7 @@ tags:
 
     デフォルト値`Empty`
 
-    無視する`HTTPC_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
     ```ini title='whatap.conf'
     httpc_status_ignore=404,500
@@ -122,11 +122,11 @@ tags:
 
     デフォルト値`Empty`
 
-    無視しようとするHTTPステータスコードを設定できます。
+    無視しようとするHTTPステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    ```ini title="whatap.conf"
+    ```ini title='whatap.conf'
     # example
-    status_ignore=404,500
+    status_ignore=408,500
     ```
 
 -   **status_ignore_set** <span class='type'>String</span>
@@ -135,16 +135,16 @@ tags:
 
     HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
 
-    ```ini title="whatap.conf"
+    ```ini title='whatap.conf'
     # example
-    status_ignore_set=/a/b/c:400,/a/ab/c:404
+    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
     ```
 
 -   **transaction_status_error_enable** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとしての処理有無を設定します。
 
 ### 非HTTPトランザクションのトレース
 

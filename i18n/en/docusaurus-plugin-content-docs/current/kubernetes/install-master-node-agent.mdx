@@ -15,11 +15,13 @@ hide_table_of_contents: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-On the **_Install guide_** screen, select your service environment and then install the master and node agents according to the procedure. 
+Follow the **_Install guide_** onscreen instructions to install the master and node agents. 
 
-<Tabs groupId='k8stype'>
+:::note 
 
-<TabItem value='kubernetes' label='KUBERNETES' default>
+EKS Fargate is to be supported later. 
+
+:::
 
 ## Pre-environment checking and setting
 
@@ -163,30 +165,6 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 When using the `kubectl` command, the `-n {namespace}` option performs the task for specific namespaces. Because the WhaTap agent is installed in the namespace named `whatap-monitoring` by default, add the `-n whatap-monitoring` option.
 
 :::
-
-</TabItem>
-
-<TabItem value='eksfragate' label='EKS Fargate(Scheduled support)'>
-
-## Creating the Kubernetes agent
-
-1.  Download the installation file for Kubernetes Monitoring. Select **_whatap_kube_fargate_**.
-
-2.  Create an agent with the downloaded _YAML_ file.
-
-    ```bash
-    kubectl -f whatap_kube_fargate.yaml apply
-    ```
-
-{@include: _check-k8s-agent.mdx}
-
-## Checking the cluster namespace
-
-In 2-3 minutes after agent installation, select the project name from the menu on the left side of the [Whatap Monitoring Service](https://service.whatap.io) screen. Check the list of namespaces in use, and then select + to create a new WhaTab project.
-
-</TabItem>
-
-</Tabs>
 
 :::note
 

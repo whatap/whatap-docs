@@ -8,9 +8,9 @@ tags:
   - Page Load
 ---
 
-Home > Select Project > **_Analysis_** > **_Page Load HITMAP_**
+Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="rumPageLoadHitmap" className="uitext" />
 
-The [Page Load](before-starting#load-page) event occurs when an end user visiting your web applications has finished loading. **Page Load** events are provided in a hitmap chart, and the detailed information about each event can be viewed in timelines. This allows you to determine what prevents your web pages from loading. The following information is included.
+The [Page Load](before-starting#load-page) event occurs when an end user visiting your web applications has finished loading. <b>Page Load</b> events are provided in a hitmap chart, and the detailed information about each event can be viewed in timelines. This allows you to determine what prevents your web pages from loading. The following information is included.
 
 -   Time details for each **page load** event section
 
@@ -18,47 +18,47 @@ The [Page Load](before-starting#load-page) event occurs when an end user visitin
 
 -   Browser error data
 
-## Checking the page load event list{#pageload-events-list}
+## Checking the page load event list {#pageload-events-list}
 
 You can analyze load events on a single page basis. It provides the hitmap and various metrics to analyze the page load performance.
 
 <ImgLang img='browser-analysis-pageload-hitmap.png' desc='Page Load Hitmap' />
 
-Drag the chart area of the ![Leader line 1](/img/number-01.png) **_Page Load Hitmap_** widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) **_Page List_** at the bottom of the screen, and the events are classified by [Page Group](before-starting#page-group) and then fetched as ![Leader line 4](/img/number-04.png) **_Page Group List_** on the right of the screen. In ![Leader line 3](/img/number-03.png) **_Page URL Search_**, the desired page list can be searched.
+Drag the chart area of the ![Leader line 1](/img/number-01.png) <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> at the bottom of the screen, and the events are classified by [Page Group](before-starting#page-group) and then fetched as ![Leader line 4](/img/number-04.png) <Cmdname sid="page_group" className="uitext" /> <Cmdname sid="list" className="uitext" /> on the right of the screen. In ![Leader line 3](/img/number-03.png) <Cmdname sid="page_url" className="uitext" />, the desired page list can be searched.
 
-### ![](/img/number-01.png) Page Load Hitmap{#pageload-hitmap}
+### ![](/img/number-01.png) Page Load Hitmap {#pageload-hitmap}
 
-**_Page Load Hitmap_** widget is a distribution chart of response times for **page loads** over time. 
+<Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget is a distribution chart of response times for <b>page loads</b> over time.
 
--   The horizontal axis is the end time of the **page load** event.
+-   The horizontal axis is the end time of the <b>page load</b> event.
 
--   The vertical axis is the elapsed time of the **page load** event.
+-   The vertical axis is the elapsed time of the <b>page load</b> event.
 
 -   The normal <b>page load</b> events are displayed in the order of <span class='lowfg'>Light Blue</span> → <span class='normal'>Blue</span> → <span class='highfg'>Indigo</span>.
 
 -   The error occurrence <b>page load</b> events are displayed in the order of <span class='logwr'>Yellow</span> → <span class='slow'>Orange</span> → <span class='vslow'>Red</span>. The erroneous <b>page load</b> event occurs when a browser error is encountered while loading pages.
 
-### ![](/img/number-02.png) Page list{#page-list}
+### ![](/img/number-02.png) Page list {#page-list}
 
-The **page load** events in the area dragged from the **_page load hitmap_** widget appear in the table for **_page list_** widgets. If you select ![Display Detail icon](/img/ico-detail-view.svg) on the utmost left of each item in the list, the **_Page Load Detail_** window appears.
+The <b>page load</b> events in the area dragged from the <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget appear in the table for <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> widgets. If you select <LinkImage img="ico-detail-view.svg" className="ico" desc="detailed view icon" /> on the utmost left of each item in the list, the <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" /> window appears.
 
-The table of the **_Page List_** widget includes the following data.
+The table of the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> widget includes the following data.
 
--   **_Start Time_**: Start time of the **page load** event.
+-   <Cmdname sid="start_time" className="uitext" />: Start time of the <b>page load</b> event.
 
--   **_Elapsed Time_**: Elapsed time up to the **page load** event completion.
+-   <Cmdname sid="elapsed" className="uitext" />: Elapsed time up to the <b>page load</b> event completion.
 
--   **_Page URL_**: Path of the page URL accessed by the end user.
+-   <Cmdname sid="page_url" className="uitext" />: Path of the page URL accessed by the end user.
 
--   **_Browser_**: Type of the browser of the end user.
+-   <Cmdname sid="browser" className="uitext" />: Type of the browser of the end user.
 
--   **_Device_**: Type of the device of the end user.
+-   <Cmdname sid="device" className="uitext" />: Type of the device of the end user.
 
--   **_OS_**: OS type of the device of the end user
+-   <Cmdname sid="os" className="uitext" />: OS type of the device used by the end user
 
--   **_Client IP_**: IP address of the device of the end user
+-   <Cmdname sid="client_ip" className="uitext" />: IP address of the device used by the end user
 
-You can add other data columns to the table, or you can hide the added columns. Select ![Column icon](/img/ico-column.svg) on the upper right of the **_page list_** widget.
+You can add other data columns to the table, or you can hide the added columns. Select ![Column icon](/img/ico-column.svg) on the upper right of the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> widget.
 
 :::note
 
@@ -68,46 +68,48 @@ In the page list, the page load events that contain browser errors appear in red
 
 :::
 
-### ![](/img/number-03.png) Filtering the page list{#filtering-page-list}
+### ![](/img/number-03.png) Filtering the page list {#filtering-page-list}
 
 You can enter a search word for the page list and then filter for matches. The search criteria are as follows. Select a desired item, enter a search word and then press Enter, or select ![Search icon](/img/ico-search.svg).
 
--   **_Page URL_**
+-   <Cmdname sid="page_url" className="uitext" />
 
--   **_Browser_**
+-   <Cmdname sid="browser" className="uitext" />
 
--   **_Device_**
+-   <Cmdname sid="device" className="uitext" />
 
--   **_OS_**
+-   <Cmdname sid="os" className="uitext" />
 
--   **_Client IP_**
+-   <Cmdname sid="client_ip" className="uitext" />
 
-### ![](/img/number-04.png) Page group list{#page-group-list}
+-   <Cmdname sid="user_id" className="uitext" />
+
+### ![](/img/number-04.png) Page group list {#page-group-list}
 
 <ImgLang img='browser-analysis-pageload-hitmap-pagegroup.png' desc='Page group list' />
 
-In the **_page load hitmap_** widget, you can check the **page load** events of the dragged area by [Page Group](before-starting#page-group). If you select a desired item in the list, the selected **page load** events corresponding to the selected **page group** appear in the **_Page List_**.
+In the <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget, you can check the <b>page load</b> events of the dragged area by <Link to="before-starting#page-group">Page Group</Link>. If you select a desired item in the list, the selected <b>page load</b> events corresponding to the selected <b>page group</b> appear in the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" />.
 
-## Page Load Event Detail{#pageload-details}
+## Page Load Event Detail {#pageload-details}
 
-If you select ![Display Detail icon](/img/ico-detail-view.svg) on the utmost left of each item in **_Page List_**, the **_Page Load Detail_** window appears. It provides various metrics to analyze the **page load** performance and the factors that affect the performance.
+If you select <LinkImage img="ico-detail-view.svg" className="ico" desc="detailed view icon" /> on the utmost left of each item in <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" /> winndow appears. It provides various metrics to analyze the <b>page load</b> performance and the factors that affect the performance.
 
 <ImgLang img='rum-pageload-event-02.png' desc='Page Load Detail' />
 
-### ![](/img/number-01.png) URL list{#url-list}
+### ![](/img/number-01.png) URL list {#url-list}
 
-The items in the **_page list_** can be seen on the URL basis. **_URL List_** is sorted by the elapsed time. If you select a URL item, you can see the detailed information about the **page load** events on the right of ![Leader line 2](/img/number-02.png).
+The items in the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> can be seen on the URL basis. <Cmdname sid="url_list" className="uitext" /> is sorted by the elapsed time. If you select a URL item, you can see the detailed information about the <b>page load</b> events on the right of <LinkImage img="number-02.png" className="ico" desc="number 2" />.
 
--   The blue bar graph of each item is the elapsed time of **page load**.
--   The time to the right of the bar graph for each item is the start time of **page load**.
+-   The blue bar graph of each item is the elapsed time of <b>page load</b>.
+-   The time to the right of the bar graph for each item is the start time of <b>page load</b>.
 
-### ![](/img/number-02.png) Overview (Page Load Event Summary){#pageload-events-summary}
+### ![](/img/number-02.png) Overview (Page Load Event Summary) {#pageload-events-summary}
 
-The **_Overview_** tab provides the times spent for the **page load** step in a graph chart. This allows you to identify slow sections during the **page load**.
+The <Cmdname sid="summary" className="uitext" /> tab provides the times spent for the <b>page load</b> step in a graph chart. This allows you to identify slow sections during the <b>page load</b>.
 
--   **_Page Info_**: It provides the end users' access environment, access pages, **_user IDs_**, and **_session IDs_**.
+-   <Cmdname sid="page" className="uitext" /> <Cmdname sid="info" className="uitext" />: It provides the end users' access environment, access pages, <Cmdname sid="user_id" className="uitext" />, and <Cmdname sid="session_id" className="uitext" />.
 
--   **_Page Load Timing_**: You can check the times elapsed for each section upon **page load**.
+-   <Cmdname sid="page_load_timing" className="uitext" /> <Cmdname sid="info" className="uitext" />: You can check the times elapsed for each section upon <b>page load</b>.
 
     -   **_redirect_**: Elapsed time for browser's redirection.
 
@@ -115,29 +117,29 @@ The **_Overview_** tab provides the times spent for the **page load** step in a 
 
     -   **_dns_**: Time spent for the browser to search domains.
 
-    -   **_wait_**: Time spent for the browser to respond to the data required for **page load**.
+    -   **_wait_**: Time spent for the browser to respond to the data required for <b>page load</b>.
 
     -   **_download_**: Time taken for the browser to download resources from the server.
 
-    -   **_render_**: Time spent to render the resources downloaded from the server on the screen and complete a **page load** event.
+    -   **_render_**: Time spent to render the resources downloaded from the server on the screen and complete a <b>page load</b> event.
 
-### Resource List{#resource-list}
+### Resource list {#resource-list}
 
-The resources downloaded from the server by the browser can significantly affect the **page load** performance. The **_resource list_** lets you quickly identify the resources that are slow to load or have large files.
+The resources downloaded from the server by the browser can significantly affect the <b>page load</b> performance. The <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" /> lets you quickly identify the resources that are slow to load or have large files.
 
 <ImgLang img='rum-pageload-event-03.png' desc='Resource list' />
 
-We provide a timeline chart based on the start times for each resource so that you can identify which resources are loaded slowly. By seeing the file sizes of each resource, you can improve the performance impact. You can check the detailed time information through the **_Resource Detail_** window that appears when you click each resource.
+We provide a timeline chart based on the start times for each resource so that you can identify which resources are loaded slowly. By seeing the file sizes of each resource, you can improve the performance impact. You can check the detailed time information through the <Cmdname sid="resource" className="uitext" /> <Cmdname sid="detail" className="uitext" /> window that appears when you click each resource.
 
 <ImgLang img='rum-pageload-event-04.png' desc='Resource Detail' />
 
 ### Checking the browser errors
 
-The page load events that contain browser errors appear in red. You can see the steps in which errors occurred in **_Resource List_**.
+The page load events that contain browser errors appear in red. You can see the steps in which errors occurred in <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" />.
 
 <ImgLang img='browser-pageload-details-resource-error.png' desc='Resource List - Error Data' />
 
-1.  If you select a step with any error in **_Resource List_**, the **_Exception stack_** window appears.
+1.  If you select a step with any error in <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="exception_stack" className="uitext" /> window appears.
 
     <ImgLang img='browser-pageload-details-resource-error-stack.png' desc='Exception Stack' />
 

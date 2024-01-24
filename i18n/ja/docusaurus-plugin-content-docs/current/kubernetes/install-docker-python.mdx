@@ -16,7 +16,9 @@ Dockerコンテナベースで実行されているPythonアプリケーショ�
 
 :::note 
 
-Pythonアプリケーションの統合プロセスを理解しやすくするために、Git のサンプルコードを提供します。[次の文書](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi)を参照してください。
+-   EKS Fargateは、対応予定です。 
+
+-   Pythonアプリケーションの統合プロセスを理解しやすくするために、Git のサンプルコードを提供します。[次の文書](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi)を参照してください。
 
 :::
 
@@ -60,9 +62,6 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ## Kubernetes環境変数およびボリューム
 
-<Tabs>
-<TabItem value='basic' label='デフォルト' default>
-
 トランザクションでNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
 
 ```ini
@@ -74,40 +73,6 @@ env:
   - name: POD_NAME
     valueFrom: {fieldRef: {fieldPath: metadata.name}}
 ```
-
-</TabItem>
-<TabItem value='eksfragate' label='EKS Fargate(サポート予定)'>
-
-1.  デプロイメント(Deployment) またはレプリカセット(ReplicaSet)の_.spec_のフィールドにユーザーポッド(Pod) リソースをモニタリングするための`shareProcessNamespace`と`serviceAccount`を追加します。
-
-    ```ini
-    apiVersion: apps/v1
-    kind: Deployment
-    ...
-    spec:
-    ...
-        spec:
-          shareProcessNamespace: true
-          serviceAccount: whatap
-    ...
-    ```
-
-2.  トランザクションでNodeおよびPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`の環境変数を設定します。WhaTap設定ファイルおよびログファイル用の揮発性ボリュームをマウントします。
-
-    ```ini
-    env:
-      - name: NODE_IP
-        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-      - name: NODE_NAME
-        valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-      - name: POD_NAME
-        valueFrom: {fieldRef: {fieldPath: metadata.name}}
-    ```
-
-{@include: _pod-sidecar.mdx}
-
-</TabItem>
-</Tabs>
 
 ## モニタリングの開始
 

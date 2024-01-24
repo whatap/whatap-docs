@@ -18,17 +18,21 @@ In **_Live Tail_**, you can easily check the log data stream on the monitoring s
 
 In **_Live Tail_**, complex logs can be easily accessed. You can search the logs in real time by using the functions such as **_Filter_** or **_Highlight_**, if necessary. The log data search cycle is 2 seconds. {@include: ../common-items/_log-ui-main-term.mdx}
 
+## Agent option
+
+{@include: ../common-items/_log-agent-option.mdx}
+
 ## ![](/img/number-01.png) Filter area{#log-filter}
 
 ### Apply Filter
 
-{@include: ../common-items/_log-filter-apply.mdx}
+{@include: ../common-items/_log-filter-apply2.mdx}
 
 :::note
 
-**Filter Expression**
+-   You cannot enter a `category` with the **_Live Tail_** `search key`.
 
-The expression under the entered filter value is a preview of the filter expression for querying the log data. 
+-   The expression under the entered filter value is a preview of the filter expression for querying the log data. 
 
 :::
 
@@ -36,7 +40,7 @@ The expression under the entered filter value is a preview of the filter express
 
 You can search the logs containing keywords that have not been parsed, or for which no index has been created. In this case, all logs in the specified range are fully scanned. Therefore, the search speed may be slower compared to the indexed key. For standardized log data, it is recommended to search using the index key through **_Log parser setting_**.
 
-<ImgLang img='log-content-search.png' desc='Application of non-parsing keyword filters'/>
+<ImgLang img='log-filter-search.png' desc='Applying non-parsing keyword filters'/>
 
 1.  Select **_Category_**. 
 
@@ -52,13 +56,13 @@ You can search the logs containing keywords that have not been parsed, or for wh
 
 -   For more information about the parser configuration, see [the following](log-parser.mdx/). 
 
--   In case of **_Live Tail_**, all logs can be viewed. Thus, the category is not required to be set.
+-   In case of **_Live Tail_**, all logs can be viewed. Thus, the category is not required to be specified.
 
 :::
 
 ### Modifying the filter
 
-{@include: ../common-items/_log-filter-modify.mdx}
+{@include: ../common-items/_log-filter-modify.mdx} 
 
 ### Search Key
 
@@ -71,11 +75,11 @@ In the following image, the blue boxed part is the search key for parsing. The s
 {@include: ../common-items/_log-filter-expressions-search-key.mdx}
 {@include: ../common-items/_log-filter-expressions-search-key-lt.mdx}
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx}
+{@include: ../common-items/_log-filter-expressions-commons.mdx} 
 
 ## ![](/img/number-02.png) Content highlight area
 
-The highlight function is provided to easily identify the desired keywords among the log data.
+The highlight function is provided to easily identify the desired keywords among the log data. 
 
 <ImgLang img='log-content-search-highlight.png' desc='Content highlight'/>
 
@@ -83,11 +87,11 @@ The highlight function is provided to easily identify the desired keywords among
 
     > e.g. `select`
 
--   As shown in the example, the keyword within the content is highlighted in the ![Leader line b](/img/char-b.svg) log list.
+-   As shown in the example, the keyword within the content is highlighted in the ![Leader line b](/img/char-b.svg) log list. 
 
 -   You can filter by single or multiple keywords.
 
--   If you select ![Full screen icon](/img/ic-fullscreen.svg) **_Full screen_**, the **_logs_** and **_timestamps_** appear in the full screen.
+-   If you select ![Full screen icon](/img/ic-fullscreen.svg) **_Full screen_**, the **_logs_** and **_timestamps_** appear in the full screen. 
 
 ### Multi-keyword condition
 

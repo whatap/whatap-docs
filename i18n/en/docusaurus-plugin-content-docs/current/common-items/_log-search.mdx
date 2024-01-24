@@ -36,13 +36,17 @@ The searched log data is imported to the dynamic page line by line. If the scrol
 
 -   Log data can be queried in chronological order. On the upper right of the ![number-s](/img/number-03.png) log table, select a desired search method among **_Timestamp_**, **_Oldest_**, and **_Newest_**
 
+-   After specifying the time range, select **_Apply_** to finish the search time setting, and then select ![Search icon](/img/ic-search-on-press.svg) **_Search_** to search for data.
+
 -   On the upper right of the ![number-s](/img/number-03.png) log table, select the <LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/> **_full screen_** icon, you can see the **_log_** and **_timestamp_** in the full screen.
+
+-   {@include: ../common-items/_log-agent-option.mdx}
 
 ## Checking the log content
 
 {@include: ../common-items/_log-ui-log-content.mdx}
 
--   ![number-s](/img/number-03.png) For each row (log) of the log table, the ![Icon](/img/ic-caret-right.svg) **_More_** button exists. If you select the ![Icon](/img/ic-caret-right.svg) **_More_** button, you can check the entire content of the log like ![number-s](/img/number-04.png).
+-   ![number-s](/img/number-03.png) For each row (log) of the log table, the ![Icon](/img/ic-caret-right.svg) **_More_** button exists. If you select the ![Icon](/img/ic-caret-right.svg) **_More_** button, you can check the entire content of the log like ![number-s](/img/number-04.png). 
 
 -   If you select a tag in the log, a drop-down menu appears that allows you to perform **_Copy_**, **_Search_**, **_Exclusion search_**, and **_Adjacent log search_**.
 
@@ -50,21 +54,13 @@ The searched log data is imported to the dynamic page line by line. If the scrol
 
 ### Apply Filter
 
-In **_Time Selector_** on the left of ![number-s](/img/number-01.png), you can specify the time range. On the right: {@include: ../common-items/_log-filter-apply.mdx} 
-
-:::note
-
-**Filter Expression**
-
-The expression under the entered filter value is a preview of the filter expression for querying the log data. 
-
-:::
+In **_Time Selector_** on the left of ![number-s](/img/number-01.png), you can specify the time range. On the right: {@include: ../common-items/_log-filter-apply2.mdx} 
 
 ### Applying non-parsing keyword filters
 
 You can search the logs containing keywords that have not been parsed, or for which no index has been created. In this case, all logs in the specified range are fully scanned. Therefore, the search speed may be slower compared to the indexed key. For standardized log data, it is recommended to search using the index key through **_Log parser setting_**.
 
-<ImgLang img='log-content-search.png' desc='Application of non-parsing keyword filters'/>
+<ImgLang img='log-filter-search.png' desc='Applying non-parsing keyword filters'/>
 
 1.  Select **_Category_**. It is required to set the category.
 
@@ -80,7 +76,7 @@ You can search the logs containing keywords that have not been parsed, or for wh
 
 :::note 
 
--   Among all logs, 10,000 logs are viewed for a server search range. The default range for a server search is 200,000, but the ratio may differ depending on the total log volume.
+-   Among all logs, 10,000 logs are viewed for a server search range. The default range for a server search is 200,000, but the ratio may differ depending on the total log volume. 
 
 -   For more information about the parser configuration, see [the following](log-parser.mdx/).
 
@@ -96,13 +92,13 @@ The tags on the left ![number-s](/img/number-02.png) area are the search keys pa
 
 <InDoc product='log,postgresql,mysql'>
 
-For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log_** > **_Log Setting_**. 
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Log_** > **_Log Configuration_**. 
 
 </InDoc>
 
 <InDoc product='aws-log'>
 
-For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Management_** > **_Log Setting_**.
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log Parser Setting_** under **_Management_** > **_Log Configuration_**.
 
 </InDoc>
 
@@ -110,25 +106,21 @@ For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut
 
 {@include: ../common-items/_log-filter-expressions-search-key.mdx}
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx} 
+{@include: ../common-items/_log-filter-expressions-commons.mdx}
 
 ## Log tagging options
 
-When you select a log tag, the following drop-down menu appears. You can find the **_Search_**, **_Exclusion search_**, and **_Adjacent log_** options.
+When you select a log tag, the following drop-down menu appears. You can find the **_Search_**, **_Exclusion search_**, and **_Adjacent log_** options. 
 
 <ImgLang img='log-search-tag.png' desc='Log tag dropdown menu'/>
 
 -   **Search**
 
-    If you select the **_Search_** option, the tags that correspond to **_Filter_** are entered with the inclusion (`+`) condition as follows:
-
-    <ImgLang img='log-search-tag-se.png' desc='Log tag search'/>
+    If you select the **_Search_** option, the tags that correspond to **_Filter_** are entered with the inclusion (`==`) condition.
 
 -   **Exclusion search**
 
-    If you select the **_Exclusion search_** option, the tags that correspond to **_Filter_** are entered with the exclusion (`-`) condition as follows:
-
-    <ImgLang img='log-search-tag-ese.png' desc='Log search exclude tag'/>
+    If you select the **_Exclusion search_** option, the tags that correspond to **_Filter_** are entered with the exclusion (`!=`) condition.
 
 -   **Adjacent Log**
 
@@ -166,7 +158,7 @@ When highlighting with multiple keywords, write as follows:
 
 By selecting ![Icon](/img/ic-highlight.svg) **_Highlight_**, you can set the keyword and its color for highlighting. 
 
-<ImgLang img='log-lt-highlight.png' desc='Live tail highlight'/>
+<ImgLang img='log-lt-highlight.png' desc='Highlight'/>
 
 -   In addition, enter the keyword to set the color for. 
 

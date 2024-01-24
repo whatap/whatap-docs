@@ -19,25 +19,41 @@ The agent traces the transaction performance and provides the following configur
 
     Default `true`
 
-    If an HTTP status code that is not a normal response, such as HTTP 401 or 403, is returned, it is handled as an error.
+    If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
 -   **status_ignore** <span class='type'>String</span>
 
-    Set the `STATUS_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+    You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
+
+    ```ini title='whatap.conf'
+    # example
+    status_ignore=408,500
+    ```
 
 -   **status_ignore_set** <span class='type'>String</span>
 
     `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
+    ```ini title='whatap.conf'
+    # example
+    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+    ```
+
 -   **httpc_status_error_enable** <span class='type'>Boolean</span>
 
     Default `true`
 
-    Determine whether or not to return `HTTPC_ERROR`.
+    Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
+
+    :::note
+
+    For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
+
+    :::
 
 -   **httpc_status_ignore** <span class='type'>String</span>
 
-    Set the `HTTPC_ERROR` codes to ignore. For multiple values, use comma (,) as the delimiter.
+    If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
 
 -   **httpc_status_ignore_set** <span class='type'>String</span>
 

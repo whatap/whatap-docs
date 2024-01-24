@@ -14,6 +14,12 @@ import TabItem from '@theme/TabItem';
 
 Dockerコンテナベースで動作するJavaアプリケーションのJVM Optionにエージェント適用の設定を追加し、コンテナイメージをパッケージングする過程です。
 
+:::note 
+
+EKS Fargateは、対応予定です。 
+
+:::
+
 ## エージェントダウンロード
 
 <Tabs>
@@ -83,15 +89,7 @@ Dockerコンテナベースで動作するJavaアプリケーションのJVM Opt
 :::
 
 </TabItem>
-<TabItem value='eksfargate' label='EKS Fargate(サポート予定)'>
 
-{@include: _docker-build.mdx}  
-
-{@include: _pod-sidecar.mdx}
-
-1.  WhaTapエージェントをインストールしたDockerイメージをデプロイしてください。
-
-</TabItem>
 </Tabs>
 
 {@include: _check-install-agent.mdx} 

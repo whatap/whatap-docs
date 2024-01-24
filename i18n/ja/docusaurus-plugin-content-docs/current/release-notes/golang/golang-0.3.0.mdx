@@ -1,0 +1,42 @@
+---
+id: golang-0_3_0
+title: Go Agent v0.3.0
+toc_max_heading_level: 2
+pagination_next: release-notes/golang/golang-0_2_4
+---
+
+2024年01月10日
+
+-   <Status>Feature</Status>マルチトランザクショントレースでTrace context(W3C) に対応
+
+    Trace contextに対応する**OpenTelmetry**とマルチトランザクショントレースの連携に対応します。
+
+-   <Status>Changed</Status> SQL、Method、HTTP callのリソース指標の収集を修正
+
+    トランザクション開始時点のリソース(cpu、memory)と、各スタッフ開始時点のリソースの違いを収集します。
+
+-   <Status>Changed</Status>設定ファイル(<em>whatap.conf</em>)がない場合、新たに生成するよう修正
+
+-   <Status>Fixed</Status>アクティブトランザクション一覧から外部呼び出し累積件数が累積時間として誤って収集されるエラーを修正
+
+-   <Status>Fixed</Status>Linux環境でwhatap-agentサービス(<code>whatap-agent.service</code>)実行エラーを修正
+
+:::info
+
+**ダウンロード**
+
+-   go-api(import library)
+
+    ```bash
+    go get github.com/whatap/go-api@latest
+    ```
+
+-   サービスエージェント
+
+    | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
+    | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
+    | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.3-0.x86_64.rpm) |
+    | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.3.0_amd64.deb) |
+    | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.3.0.tar.gz)    |
+
+:::

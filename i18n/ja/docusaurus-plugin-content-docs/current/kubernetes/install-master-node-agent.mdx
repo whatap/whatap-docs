@@ -15,11 +15,13 @@ hide_table_of_contents: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**_インストール手順_**画面で使用するサービス環境を選択し、手順に従ってマスターおよびNodeエージェントのインストールプロセスを進めてください。 
+**_インストール手順_**画面の手順に従ってマスターおよびNodeエージェントのインストールプロセスを進めてください。 
 
-<Tabs groupId='k8stype'>
+:::note 
 
-<TabItem value='kubernetes' label='KUBERNETES' default>
+EKS Fargateは、対応予定です。 
+
+:::
 
 ## 環境を事前に確認して設定
 
@@ -163,30 +165,6 @@ kubectl describe pod {POD_NAME} -n whatap-monitoring
 `kubectl`コマンドを使用する場合、`-n {ネームスペース}`オプションを使用して、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
 
 :::
-
-</TabItem>
-
-<TabItem value='eksfragate' label='EKS Fargate(サポート予定)'>
-
-## Kubernetesエージェント作成
-
-1.  Kubernetesモニタリングのインストールファイルをダウンロードしてください。**_whatap_kube_fargate_** ボタンを選択します。
-
-2.  ダウンロードした_YAML_ファイルを使用して、エージェントを作成してください。
-
-    ```bash
-    kubectl -f whatap_kube_fargate.yaml apply
-    ```
-
-{@include: _check-k8s-agent.mdx}
-
-## クラスターのネームスペースの確認
-
-エージェントのインストールを完了し、2~3分後に[WhaTapモニタリングサービス](https://service.whatap.io)の画面の左側のメニューからプロジェクト名を選択してください。使用中のネームスペース一覧を確認し、+ボタンを選択してWhaTapプロジェクトを新規作成してください。
-
-</TabItem>
-
-</Tabs>
 
 :::note
 

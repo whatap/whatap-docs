@@ -1,0 +1,206 @@
+---
+id: log-search-2
+title: Log Search
+description: It guides you to the Log Search menu of Log Monitoring.
+tags:
+  - Log Monitoring
+  - Log
+  - Log Search
+  - UI
+toc_max_heading_level: 3
+draft: true
+---
+
+{@include: ../common-items/_log-role-view.mdx}
+
+<Xclude product='aws-log'>
+
+Home > Select Project > **_Log_** > **_Log Search_**
+
+</Xclude>
+
+<InDoc product='aws-log'>
+
+Home > Select Project > **_Dashboard_** > **_Log Search_**
+
+</InDoc>
+
+In **_Log Search_**, you can search a large number of integrated logs under various conditions and specify the desired logs. Multiple search conditions can be specified with parsed keys and values, so only the log data that matches the desired conditions are extracted. 
+
+The searched log data is imported to the dynamic page line by line. If the scroll reaches the bottom, the next data is automatically retrieved and displayed. {@include: ../common-items/_log-ui-main-term.mdx}
+
+<Xclude product='postgresql,mysql'>
+
+<ImgLang img='log-search.png' desc='Log search' />
+
+</Xclude>
+
+<InDoc product='postgresql,mysql'>
+
+<ImgLang img='db-log-search.png' desc='' />
+
+</InDoc>
+
+## Request Data
+
+-   If the scroll reaches the bottom, the next data is retrieved. You can view 10,000 logs at a time.
+
+-   ![number-s](/img/number-03.png) You can see the total number of logs viewed from the upper left of the log table. 
+
+-   Log data can be queried in chronological order or reverse order. On the upper right of the ![number-s](/img/number-03.png) log table, select a desired search method among **_Timestamp_**, **_Oldest_**, and **_Newest_**.
+
+-   After specifying the time range, select **_Apply_** to finish the search time setting, and then select ![Search icon](/img/ic-search-on-press.svg) **_Search_** to search for data.
+
+-   On the upper right of the ![number-s](/img/number-03.png) log table, select the <LinkImage img='ic-fullscreen.svg' desc='전체 화면 아이콘'/> **_full screen_** icon, you can see the **_log_** and **_timestamp_** in the full screen.
+
+-   If the agent option has been set, the log levels are collected and the colors for each log level appear as follows: 
+
+    ![Log level color](/img/log-agent-option-level.png)
+
+:::note 
+
+**Setting the agent options**
+
+-   The agent options are as follows: 
+
+    ```ini
+    # whatap.conf
+    weaving=log4j-2.17
+    weaving=logback-1.2.8
+    ```
+
+-   In Java agent 2.2.22 or later, it can be used when setting log4j-2.17 or logback-1.2.8 in the weaving setting. It is required to restart the agent.
+
+-   The log level is determined based on the `level` and `type` among the parsed keywords. When there are keys parsed as `level` and `type`, and the parsed values have `FATAL`, `CRITICAL`, `ERROR`, `WARN`, `WARNING`, and `INFO`, the log level appears in color. 
+
+:::
+
+## Checking the log content
+
+{@include: ../common-items/_log-ui-log-content.mdx}
+
+-   ![number-s](/img/number-03.png) For each row (log) of the log table, the ![Icon](/img/ic-caret-right.svg) **_More_** button exists. If you select the ![Icon](/img/ic-caret-right.svg) **_More_** button, you can check the entire content of the log like ![number-s](/img/number-png).
+
+-   If you select a tag in the log, a drop-down menu appears that allows you to perform **_Copy_**, **_Search_**, **_Exclusion search_**, and **_Adjacent log search_**.
+
+## Filter{#log-search-filter}
+
+### Apply Filter
+
+In **_Time Selector_** on the left of ![number-s](/img/number-01.png), you can specify the time range. On the right: {@include: ../common-items/_log-filter-apply2.mdx} 
+
+### Applying non-parsing keyword filters
+
+You can search the logs containing keywords that have not been parsed, or for which no index has been created. In this case, all logs in the specified range are fully scanned. Therefore, the search speed may be slower compared to the indexed key. For standardized log data, it is recommended to search using the index key through **_Log parser setting_**.
+
+![Applying non-parsing keyword filters](/img/log-filter-search.png)
+
+1.  Select **_Category_**. It is required to set the category.
+
+2.  In the **_Filter_** field, enter a desired keyword for a search after leaving spaces on the `content` basis. 
+
+    > e.g. `content *select*`
+
+3.  Click ![Icon](/img/ic-search.svg) **_Search_** to view the logs. Several logs are viewed first. You can view a maximum of 10,000 logs per each search.
+
+4.  You can make additional inquiries by scrolling down and selecting **_Get more logs_** at the bottom. 
+
+<ImgLang img='log-content-search-more.png' desc='Get more'/>
+
+:::note 
+
+-   Among all logs, 10,000 logs are viewed for a server search range. The default range for a server search is 200,000, but the ratio may differ depending on the total log volume.
+
+-   For more information about the parser configuration, see [the following](log-parser.mdx/).
+
+:::
+
+### Modifying the filter
+
+{@include: ../common-items/_log-filter-modify.mdx} 
+
+### Search Key
+
+The tags on the left ![number-s](/img/number-02.png) area are the search keys parsed for each category. You can enter filters by selecting tags. The <span class='logwr'>orange</span> tag is the category, and the <span class='lowfg'>blue</span> tag is the search key.
+
+<InDoc product='log,postgresql,mysql'>
+
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. The search keys can be set by registering the parsing logic in **_Log parser setting_** under **_Log_** > **_Log Configuration_**. 
+
+</InDoc>
+
+<InDoc product='aws-log'>
+
+For example, <span class='logwr'>AppLog</span> and <span class='logwr'>AppStdOut</span> in ![number-s](/img/number-02.png) are categories. The tags below such as <span class='lowfg'>oid</span> are search keys parsed. In **_Management_** > **_Log Configuration_**, you can register and set the parsing logic in **_Log parser setting_** with the search key.
+
+</InDoc>
+
+### Filter input syntax{#filter-expressions}
+
+{@include: ../common-items/_log-filter-expressions-search-key.mdx}
+
+{@include: ../common-items/_log-filter-expressions-commons.mdx} 
+
+## Log tagging options
+
+When you select a log tag, the following drop-down menu appears. You can see the **_Search_**, **_Exclusion search_**, and **_Adjacent Log_** options. 
+
+<ImgLang img='log-search-tag.png' desc='Log tag dropdown menu'/>
+
+-   **Search**
+
+    If you select the **_Search_** option, the tags that correspond to **_Filter_** are entered with the inclusion (`==`) condition.
+
+-   **Exclusion search**
+
+    If you select the **_Exclusion search_** option, the tags that correspond to **_Filter_** are entered with the exclusion (`!=`) condition.
+
+-   **Adjacent Log**
+
+    If you select the **_Adjacent Log_** option, the **_Adjacent Log_** details appear. Search for the logs in the time zones adjacent to the server of the selected log. You can click **_Select a time_** to view the logs in adjacent time zones. Reference logs are displayed with a blue background.
+
+    <ImgLang img='log-search-adjacent-log.png' desc='Log tag - adjacent logs'/>
+
+## Content highlighting
+
+The highlight function is provided to easily identify the desired keywords among the log data.
+
+<ImgLang img='log-search-content-search-highlight.png' desc='Contents Highlight'/>
+
+-   In the ![Leader line a](/img/char-a.svg) keyword field, enter a keyword to highlight, and then click ![Search icon](/img/ic-search.svg)**_Search_**.
+
+    > e.g. `select`
+
+-   As shown in the example, the keyword within the content is highlighted in the ![Leader line b](/img/char-b.svg) log list.
+
+-   You can filter by single or multiple keywords.
+
+-   If you select ![Full screen icon](/img/ic-fullscreen.svg) **_Full screen_**, the **_logs_** and **_timestamps_** appear in the full screen.
+
+### Multi-keyword condition
+
+When highlighting with multiple keywords, write as follows:
+
+| String to input       | Description                                                           | Result            |
+| --------------------- | --------------------------------------------------------------------- | ----------------- |
+| `a b c`               | Separate each keyword with a space.                                   | a, b, c           |
+| `"Whatap is good."`   | To include spaces in keywords, wrap them in '`'` or `""`.             | Whatap is good.   |
+| `"Whatap\\ is good."` | If `\` is included in the keyword surrounded by "", enter it as `\\`. | Whatap\\ is good. |
+
+### Setting the highlight color
+
+By selecting ![Icon](/img/ic-highlight.svg) **_Highlight_**, you can set the keyword and its color for highlighting. 
+
+<ImgLang img='log-lt-highlight.png' desc='Live tail highlight'/>
+
+-   In addition, enter the keyword to set the color for. 
+
+-   If you click **_Color_** on the left of the input field, available colors appear. 
+
+-   Basically, different highlighting by the level (<span class='logwr'>WARN</span>, <span class='loger'>ERROR</span>, <span class='logft'>FATAL</span>) is applied. 
+
+-   The settings are saved in **Project Rules**. 
+
+## Setting the table
+
+-   Right of the ![number-s](/img/number-03.png) area: {@include: ../common-items/_log-ui-table-setting.mdx}

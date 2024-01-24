@@ -1,9 +1,83 @@
 ## Agent Update
 
+### Updating to the latest version
+
 Home > Select Project > **_Management_** > **_Agent Update_**
 
 <ImgLang img='db-update-agent.png' desc='' />
 
-To update agents individually, select **_Latest version_** on the right of each agent. To update all agents at once, select **_Download to all agents with the latest version_**.
+When you update the agent, the latest version of the agent file is automatically downloaded to the agent installation path (**_agent path_**) and it is restarted. The update takes about 1 minute. During an update, the download and update success messages appear on the screen step by step. After an update, the agent is automatically changed to the latest version.
 
-It is automatically downloaded to the server where the agent is located. After downloading, restart the agent. The agent is automatically updated to the latest version.
+-   For the agents that can be updated, the <Cmdname sid="TTL06230" className="uitext" /> button is enabled.
+
+-   To update agents individually, select <Cmdname sid="TTL06230" className="uitext" /> to the right of each agent.
+
+-   To update all agents at a time, select <Cmdname sid="DSC07289" className="uitext" />.
+
+:::tip
+
+If you move to another menu while updating an agent, you cannot check its progress. While updating an agent, you cannot update another agent at the same time.
+
+:::
+
+<InDoc product='postgresql'>
+
+:::note
+
+The minimum version of the DBX agent to use the PostgreSQL monitoring V2 is 1.6.7.
+
+:::
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+:::note
+
+The minimum version of the DBX agent to use the MySQL monitoring V2 is 1.6.8.
+
+:::
+
+</InDoc>
+
+### In case of update failure
+
+#### In case of no agent restart
+
+If the agent is not automatically changed to the latest version after display of a successful download message, manually restart the agent. Run the _stop.sh_ and _startd.sh_ batch files sequentially in the agent installation path (**_agent path_**).
+
+#### Manual download of the agent
+
+If downloading is not possible, proceed with agent installation in the following order:
+
+1.  Go to <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />.
+
+2.  Select <span class="uitext">Download</span> in 2 of the <Cmdname sid="agent-setup-guide" className="uitext" /> section to download the latest version of the agent.
+
+3.  Unzip the downloaded file.
+
+4.  Upload only the _whatap.agent.dbx-`X.Y.Z`.jar_ file to the agent installation path (**_agent path_**).
+
+5.  Run the _stop.sh_ and _startd.sh_ batch files to restart the agent.
+
+### Returning to the previous version
+
+1.  On the upper right of the screen, select <Cmdname sid="goto_previous_version" className="uitext" />.
+
+2.  The list of downloadable agents appears.
+
+3.  Select a desired version.
+
+4.  Select <Cmdname sid="download" className="uitext" /> for the agent to return to the selected version.
+
+5.  Download the file to the installation path of the selected agent.
+
+6.  Delete the _whatap.agent.dbx-`X.Y.Z`.jar_ file of the higher version from the agent installation path.
+
+7.  Run the _stop.sh_ and _startd.sh_ batch files to restart the agent.
+
+:::note
+
+Because the batch file is set to run the highest version of the agent in the installation path, delete the higher version of JAR file to run the previous version of the agent.
+
+:::
