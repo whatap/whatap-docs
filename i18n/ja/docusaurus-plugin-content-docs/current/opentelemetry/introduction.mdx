@@ -1,0 +1,44 @@
+---
+id: introduction
+title: OpenTelemetry
+description: OpenTelemetry Collectorの収集情報をWhaTapモニタリングサービスで確認できる方法を案内します。
+tags:
+  - OpenTelemetry
+  - Extensions
+---
+
+この文書は、WhaTapモニタリングサービスのアプリケーション商品を利用しながらOpenTelemetryを通じてデータを追加収集しようとするユーザーのための文書です。
+
+## OpenTelemetryを通じてWhaTapモニタリングを使用する
+
+[OpenTelemetry](https://opentelemetry.io/)は、遠隔測定データ(メトリック、ログ、及び追跡)を計測、生成、収集、エクスポートするためのオープンソースオブザーバビリティ(Observability)フレームワークです。 OpenTelemetryを通じて収集した測定データをWhaTapモニタリングプラットフォームに転送することで、アプリケーションやサービスの性能と動作を分析し、問題を解決することができます。
+
+もし、運用中のアプリケーションまたはサービスがOpenTelemetryライブラリに収集される場合は、追跡及び指標、ログデータをWhaTapモニタリングプラットフォームに持ってくる方法を選択することができます。 WhaTapモニタリングプラットフォームのダッシュボード及び分析メニューを活用して、可視性の高いオブザーバビリティモニタリングを提供します。
+
+## OpenTelemetryエージェント
+
+OpenTelemetryエージェントは、OpenTelemetry CollectorのOTLP Exporterを通じて収集されたデータをWhaTapモニタリングプラットフォームに加工・伝達するエージェントです。 
+
+![WhaTap OTel Agent](/img/otel/opentelemetry-overview.png)
+
+エージェントのインストールと実行のためのプロセスについては、以下を参考にしてください。
+
+1.  OpenTelemetry Collectorがインストールされたインスタンスに[WhaTapエージェントをインストールして実行してください](install-agent)。
+
+2.  実行されたwhatap-otelサービスは、OTLP ExporterのためのGrpcサーバーを実行します。
+
+    -   リスニングポートは、基本6600ポートです
+
+    -   OpenTelemetry Collectorの基本設定と同様に、gzip圧縮設定は`True`となります。
+
+## サポート環境
+
+OpenTelemetryエージェントをインストールできるOSは、次のとおりです。
+
+-   CentOS/Red Hat 6.xバージョン(64bit) 以降
+
+-   Debian/Ubuntu 12.04バージョン(64bit) 以降
+
+-   Amazon linux (64bit)
+
+-   Alpine linux（64bit）

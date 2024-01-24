@@ -19,25 +19,41 @@ tags:
 
     デフォルト値 `true`
 
-    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとしての処理有無を設定します。
 
 -   **status_ignore** <span class='type'>String</span>
 
-    無視する`STATUS_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    無視しようとするHTTPステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+
+    ```ini title='whatap.conf'
+    # example
+    status_ignore=408,500
+    ```
 
 -   **status_ignore_set** <span class='type'>String</span>
 
     `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
+    ```ini title='whatap.conf'
+    # example
+    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+    ```
+
 -   **httpc_status_error_enable** <span class='type'>Boolean</span>
 
     デフォルト値 `true`
 
-    `HTTPC_ERROR`を返ってくるかどうかを確認します。
+    HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
+
+    :::note
+
+    HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
+
+    :::
 
 -   **httpc_status_ignore** <span class='type'>String</span>
 
-    無視する`HTTPC_ERROR`コードを設定します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
 -   **httpc_status_ignore_set** <span class='type'>String</span>
 

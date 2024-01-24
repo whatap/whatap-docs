@@ -1,0 +1,90 @@
+---
+id: preview-2_1_0x
+title: Preview 2.1.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.1.0.a1
+
+2024年01月15日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Changed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count_chart" className="uitext" />メニューでエージェント全体の選択・解除する機能を追加
+
+-   <Status>Fixed</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="statistics" className="uitext" />メニューの<Cmdname sid="sql" className="uitext" />タブで他のタブのフィルターが適用されるバグを修正
+
+-   <Status>Changed</Status> <Cmdname sid="my_usage" className="uitext" />メニューで課金の固定価格のポリシーを変更
+
+    :::note
+
+    WhaTapの料金体系の変更に関する詳細は、[次のリンク](https://www.whatap.io/ko/blog/203/index.html)を参考にしてください。
+
+    :::
+
+* * *
+
+### `Application`
+
+-   <Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06127" className="uitext" />タブで<LinkImage img="ic-outside.svg" className="ico" />ボタンを選択すると、設定された他のオプションが解除される現象を修正
+
+-   <Status>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06377" className="uitext" />タブでチャートとツリー設定の保存機能を追加
+
+-   <Status>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウの<Cmdname sid="TTL06377" className="uitext" />タブでプロジェクトの選択状態を保存する機能を追加
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status>以下のメニューで抜けている多言語翻訳を追加
+
+    -   <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />
+    -   <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="report" className="uitext" />
+
+</div>
+
+## Preview 2.1.0.a0
+
+2024年01月11日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Changed</Status> <Cmdname sid="project_list" className="uitext" />メニューでプロジェクト削除時に表示されるポップアップウィンドウのUIを変更(プロジェクト名がカットされる現象を改善)
+
+-   <Status>Changed</Status>サイドバーでプロジェクト一覧にマウスオーバーをする時、表示されるツールチップをクリックすると、そのプロジェクトに移動する現象を修正
+
+-   <Status>Changed</Status>休眠状態またはロックされたアカウントをプロジェクトまたはグループに招待する時に表示されるフレーズを変更
+
+-   <Status>Changed</Status> <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="project_subscription" className="uitext" />メニューの<Cmdname sid="subscribe" className="uitext" /> ウィンドウでプロジェクト名が長い場合は、省略処理、マウスオーバー時のツールチップでプロジェクト名を表示するように改善
+
+-   <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューで<Cmdname sid="apdex" className="uitext" />ウィジェットにチャート凡例設定を追加
+
+-   <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューでダッシュボードのエクスポート機能を通じてJSONファイルとして保存する場合、ファイル名の特殊文字を以前は削除したが、下線(_)に変更
+
+* * *
+
+### `Application`
+
+-   <Status>Changed</Status> Nodeエージェントのインストールの対応バージョンを変更7.10.0 → <b>16.4.0</b>
+
+* * *
+
+### `Database`
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />メニューで正常状態のカラムを選択すると表示される<Cmdname sid="event" className="uitext" />ウィンドウの照会機能のエラーを修正
+
+</div>

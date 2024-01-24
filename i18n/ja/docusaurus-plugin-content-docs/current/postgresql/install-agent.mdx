@@ -51,24 +51,24 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 <!-- 모니터링용 계정 생성-->
 
-{@include: ../common-items/_db-create-monitoring-account.mdx}
+{@include: ../common-items/_db-create-monitoring-account.mdx} 
 
 <!-- PostgreSQL-->
 
 ```bash showLineNumbers
 # 10バージョン以降
-create user whatap with password 'DB Password'; # 必要なpasswordを入力してください。
+create user whatap with password 'DB Password'; # 希望するpasswordを入力してください。
 grant pg_read_all_stats to whatap;
  
 # 10バージョン未満
-create user whatap with password 'DB Password'; # 必要なpasswordを入力してください。
+create user whatap with password 'DB Password'; # 希望するpasswordを入力してください。
 alter user whatap with superuser;
  
 # kill session使用時
 alter user whatap with superuser;
 grant rds_superuser to whatap; # AWS RDS使用時
 
-# wal_count収集時
+# wal_count 収集時
 grant execute on function pg_ls_dir(text) to whatap;  #EDB使用時
 alter user whatap with superuser;
 
@@ -78,6 +78,9 @@ grant execute on function pg_get_backend_memory_contexts to whatap;
 
 # テーブルサイズ収集時
 grant usage on schema {schema_name} to whatap;
+
+# オブジェクト情報照会時
+grant select on all tables in schema {schema_name} to whatap;
 ```
 
 ## DBユーザーファイルの作成{#create-db-user}

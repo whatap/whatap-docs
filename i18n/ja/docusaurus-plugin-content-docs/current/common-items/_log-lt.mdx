@@ -18,17 +18,21 @@
 
 **_ライブテール_**メニューから複雑なログでも簡単にアクセスできます。必要に応じて**_フィルター_**や**_ハイライト_**などの機能を使用してリアルタイムで表示することができます。ログデータの検索サイクルは2秒です。{@include: ../common-items/_log-ui-main-term.mdx}
 
+## エージェントオプション
+
+{@include: ../common-items/_log-agent-option.mdx}
+
 ## ![](/img/number-01.png)フィルター領域{#log-filter}
 
 ### フィルター適用
 
-{@include: ../common-items/_log-filter-apply.mdx}
+{@include: ../common-items/_log-filter-apply2.mdx}
 
 :::note
 
-**フィルター数式**
+-   **_ライブテール_** `検索キー`として`category`は入力できません。
 
-入力フィルター値の下にある数式(expression)は、ログデータを表示するときに適用されるフィルター式のプレビューです。 
+-   入力フィルター値の下にある数式(expression)は、ログデータを表示するときに適用されるフィルター式のプレビューです。 
 
 :::
 
@@ -36,7 +40,7 @@
 
 ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。この場合、指定範囲内のすべてのログをFull Scanします。そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。定型化されたログデータの場合、ログパーサー設定\*\*\*を通じてインデックスキー値を活用して検索することをお勧めします。
 
-<ImgLang img='log-content-search.png' desc='미파싱 키워드 필터 적용'/>
+<ImgLang img='log-filter-search.png' desc='構文解析されていないキーワードのフィルター適用'/>
 
 1.  **_カテゴリ_**を選択してください。 
 
@@ -52,13 +56,13 @@
 
 -   パーサー設定の詳細については、[次の文書](log-parser.mdx)を参考にしてください。 
 
--   **_ライブテール_**の場合、すべてのログ検索が可能であり、カテゴリ指定が必須というわけではありません。
+-   **_ライブテール_**の場合、すべてのログ検索が可能であるため、カテゴリを指定する必要はありません。
 
 :::
 
 ### フィルター修正
 
-{@include: ../common-items/_log-filter-modify.mdx}
+{@include: ../common-items/_log-filter-modify.mdx} 
 
 ### 検索キー(Search Key)
 
@@ -71,11 +75,11 @@
 {@include: ../common-items/_log-filter-expressions-search-key.mdx}
 {@include: ../common-items/_log-filter-expressions-search-key-lt.mdx}
 
-{@include: ../common-items/_log-filter-expressions-commons.mdx}
+{@include: ../common-items/_log-filter-expressions-commons.mdx} 
 
 ## ![](/img/number-02.png)コンテンツハイライト領域
 
-ログのコンテンツの中で、目的のキーワードを簡単に識別するためのハイライト機能を提供します。
+ログのコンテンツの中で、目的のキーワードを簡単に識別するためのハイライト機能を提供します。 
 
 <ImgLang img='log-content-search-highlight.png' desc='콘텐츠 하이라이트'/>
 
@@ -83,11 +87,11 @@
 
     > 例）`select`
 
--   例のイメージのように![指示線b](/img/char-b.svg)ログ一覧で、Content内のキーワードがハイライトされます。
+-   例のイメージのように![指示線b](/img/char-b.svg)ログ一覧で、Content内のキーワードがハイライトされます。 
 
 -   １つまたは複数のキーワードでフィルタリングできます。
 
--   ![フルスクリーンアイコン](/img/ic-fullscreen.svg) **_フルスクリーン_**アイコンを選択すると**_ログ_**と**_タイムスタンプ_**をフルスクリーンで確認できます。
+-   ![フルスクリーンアイコン](/img/ic-fullscreen.svg) **_フルスクリーン_**アイコンを選択すると**_ログ_**と**_タイムスタンプ_**をフルスクリーンで確認できます。 
 
 ### 複数キーワード条件
 

@@ -38,6 +38,50 @@ description: WhaTapモニタリングサービスを利用するには、会員�
 
 :::
 
+## 通知受信の設定
+
+電子メール通知、SMS、モバイルなどの通知受信の媒体を設定することができます。 
+
+<!-- SMS 알림 수신 추가하기 -->
+
+{@include: ../common-items/_set-receive-event-sms.mdx} 
+
+<!-- WhatsApp 알림 수신-->
+
+{@include: ../common-items/_set-receive-event-whatsapp.mdx}
+
+### 受信レベル及び通知時間の設定
+
+<ImgLang img='account-set-notification.png' desc='アラート受信設定' />
+
+EメールとSMSで受信される通知のレベルを設定するには、<Cmdname sid="notification_setting" className="uitext" />セクションの<Cmdname sid="level" className="uitext" />項目で希望するレベルを選択してください。
+
+-   <Cmdname sid="all" className="uitext" />：すべての通知を受信することができます。
+
+-   <Cmdname sid="fatal" className="uitext" />：危険レベルの通知のみ受信することができます。
+
+<Cmdname sid="date" className="uitext" />と<Cmdname sid="time" className="uitext" />項目で通知を受信する日付と時刻を設定できます。すべての設定を完了した後は、<Cmdname sid="save" className="uitext" /> ボタンを選択してください。
+
+:::note
+
+この設定は、すでに作成されているか、招待されたプロジェクトの通知受信の設定には適用されません。既存の通知の受信設定は、各プロジェクトの<Cmdname sid="event_receive_configuration" className="uitext" /> メニューで変更できます。
+
+:::
+
+## APIトークンの確認
+
+APIトークンは、OpenAPIを通じて収集中のモニタリング情報を抽出しようとする時に必要なパラメータ情報です。トークンを再発行するには、<Cmdname sid="reissue_token" className="uitext" />ボタンを選択してください。
+
+:::note
+
+Open APIの詳細については、[次の文書](openapi)を参考にしてください。
+
+:::
+
+## マーケティング受信の設定
+
+WhaTapが提供するマーケティング情報を受信または受信拒否することができます。<Cmdname sid="TTL06539" className="uitext" />セクションに移動して<Cmdname sid="ITM06537" className="uitext" />または<Cmdname sid="ITM06538" className="uitext" />項目を選択してください。選択したオプションを適用するには、<Cmdname sid="save" className="uitext" />ボタンを選択してください。
+
 ## 会員退会
 
 会員退会は、WhaTapモニタリングサービスにログインした状態で直接行う必要があります。

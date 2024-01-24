@@ -3081,7 +3081,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/java-2_2_26',
@@ -3090,7 +3090,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_26',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_25',
                 'release-notes/java/java-2_2_24',
@@ -3133,14 +3133,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/php/php-2_7_0',
+                id: 'release-notes/php/php-2_7_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_7_0',
+                  id: 'release-notes/php/php-2_7_1',
                   className: 'new',
                 },
+                'release-notes/php/php-2_7_0',
                 'release-notes/php/php-2_6_3',
                 'release-notes/php/php-2_6_2',
                 'release-notes/php/php-2_6_1',
@@ -3149,7 +3150,6 @@ const sidebars = {
                 'release-notes/php/php-2_5_3',
                 'release-notes/php/php-2_5_2',
                 'release-notes/php/php-2_5_1',
-                'release-notes/php/php-2_5_0',
                 'release-notes/php/php-previous',
               ],
             },
@@ -3182,7 +3182,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/python-1_5_4',
@@ -3191,7 +3191,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_5_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_5_3',
                 'release-notes/python/python-1_5_2',
@@ -3238,7 +3238,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_3_0',
@@ -3247,7 +3247,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_3_0',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_2_4',
                 'release-notes/golang/golang-0_2_3',
@@ -3266,17 +3266,18 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_4_9',
+                id: 'release-notes/server/server-2_5_0',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_4_9',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2_5_0',
+                  className: 'new',
                 },
+                'release-notes/server/server-2_4_9',
                 'release-notes/server/server-2_4_8',
                 'release-notes/server/server-2_4_7',
                 'release-notes/server/server-2_4_6',
@@ -3285,7 +3286,6 @@ const sidebars = {
                 'release-notes/server/server-2_4_3',
                 'release-notes/server/server-2_4_2',
                 'release-notes/server/server-2_4_1',
-                'release-notes/server/server-2_4_0',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3294,7 +3294,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/k8s-1_4_9',
@@ -3303,7 +3303,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_4_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_4_8',
                 'release-notes/k8s/k8s-1_4_4',

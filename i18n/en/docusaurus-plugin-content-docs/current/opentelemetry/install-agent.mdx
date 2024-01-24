@@ -1,0 +1,197 @@
+---
+id: install-agent
+title: Agent Installation
+description: It guides you how to install the OpenTelemetry agent.
+tags:
+  - OpenTelemetry
+  - Extensions
+  - Install
+---
+
+It guides you how to install the OpenTelemetry agent. 
+
+## Download agent
+
+Execute the following command to download the agent to the instance where the OpenTelemetry Collector has been installed.
+
+<Tabs groupId="os">
+<TabItem value="rc" label="Red Hat/Centos">
+
+```bash
+# Register package repository
+$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+
+# Install package
+$ sudo yum install whatap-otel
+```
+
+</TabItem>
+
+<TabItem value="du" label="Debian/Ubuntu">
+
+```bash
+# Register package repository
+$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+$ sudo dpkg -i whatap-repo_1.0_all.deb
+$ sudo apt-get update
+
+# Install package
+$ sudo apt-get install whatap-otel
+```
+
+</TabItem>
+
+<TabItem value="al" label="Amazon Linux">
+
+```bash
+# Register package repository
+$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
+$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+
+# Install package
+$ sudo yum install whatap-otel
+```
+
+</TabItem>
+
+<TabItem value="apl" label="Alpine Linux">
+
+```bash
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-otel.tar.gz
+$ tar -xvzf whatap-otel.tar.gz -C /
+```
+
+</TabItem>
+
+<TabItem value="apldocker" label="Alpine Linux Docker">
+
+```bash title="FROM alpine"
+FROM alpine
+
+RUN apk update && apk upgrade
+# Install WhaTap Go monitoring agent
+RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-otel.tar.gz
+RUN tar -xvzf whatap-otel.tar.gz -C /
+```
+
+</TabItem>
+
+</Tabs>
+
+## Default agent settings
+
+To configure the agent, the WhaTap project's access key and collection server IP address are required. In [WhaTap monitoring service](https://service.whatap.io), move to the project for the application product. In <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agentInstall" className="uitext" />, check the access key and collection server IP address for preparation.
+
+### Configuring the whatap.conf file
+
+Set the access key and collection server IP address in the agent configuration (_whatap.conf_) file.
+
+```bash
+echo "accesskey={Access key}" >> /usr/whatap/otel/whatap.conf
+echo "whatap.server.host={Collection Server IP}" >> /usr/whatap/otel/whatap.conf
+```
+
+### Configuring with environment variables
+
+You can set the access key and collection server IP address as environment variables.
+
+```ini
+WHATAP_ACCESSKEY={Access key}
+WHATAP_SERVER_HOST={Collection server IP}
+WHATAP_OTEL_GRPC_SERVER_PORT={Grpc server listening port}
+```
+
+:::note
+
+If both environment variables and the _whatap.conf_ file have been configured, the settings in the _whatap.conf_ file take precedence.
+
+:::
+
+## Configuring the Opentelemetry Collector
+
+Configure the OTLP Exporter to forward data to whatap-otel.
+
+```yaml title="otel-collector-config.yaml" showLineNumbers{13,14-15}
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+processors:
+  batch:
+
+exporters:
+  logging:
+  # Set whatap-otel as the target for the otlp exporter.
+  otlp:
+    endpoint: 127.0.0.1:6600
+    tls:
+      insecure: true
+
+service:
+  pipelines:
+    traces:
+      receivers:
+      - otlp
+      processors:
+      - batch
+      exporters:
+      - logging
+      - otlp
+  telemetry:
+    logs:
+      level: debug #activate debug mode
+```
+
+-   End point (`endpoint`) setting: `127.0.0.1:6600`
+
+    The default port for local agents is 6600.
+
+-   `tls.secure` setting: `insecure: true`
+
+-   The gzip compression settings are used by default. (gzip is used)
+
+:::info
+
+For more information about the OpenTelemetry Collector installation, see the following link.
+
+-   [Install the Collector](https://opentelemetry.io/docs/collector/installation/)
+
+-   [Building a custom collector](https://opentelemetry.io/docs/collector/custom-collector/)
+
+:::
+
+## Other platforms
+
+### Tyk Gateway
+
+Enable the OpenTelemetry function of [Tyk Gateway](https://tyk.io/) and then check the transaction information through the OpenTelemetry Collecotr. 
+
+1.  Connect the OpenTelemetry Collector to the Tyk Gateway. 
+
+```json title="tyk.conf"
+{
+  "log_level": "debug" ,
+  "listen_port": 8081,
+
+  ...
+
+  "opentelemetry": {
+      "enabled": true,
+      "endpoint": "111.222.333.444:4317",
+  }
+}
+```
+
+1.  When the whatap-otel agent is connected to the OpenTelemetry Collector, trace data is collected.
+
+## Starting the monitoring
+
+-   If the application server is restarted after all settings are made, the agent collects data. Go to the <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" /> menu and then perform monitoring for the collected data in real time.
+
+-   For more information about the agent configuration, see [the following](set-agent).

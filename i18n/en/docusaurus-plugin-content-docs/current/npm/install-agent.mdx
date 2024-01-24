@@ -13,12 +13,31 @@ To use the WhaTap NPM service, perform [Sign up](https://www.whatap.io/ko/signup
 
 {@include: ../getting-started/_accesskey.mdx} 
 
-## Download agent
+## Installation in the Linux environment
+
+In the **_Install guide_** section, select the **_Linux_** tab and then follow the on-screen instructions to install the agent.
+
+### Download agent
 
 Download the agent file to a target monitoring server.
 
 <Tabs groupId="os">
-<TabItem value="ubuntu" label="Ubuntu">
+<TabItem value="al" label="Amazon Linux">
+
+```bash
+sudo rpm --import https://repo.whatap.io/centos/release.gpg
+echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+echo "baseurl=https://repo.whatap.io/centos/9/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+sudo yum install whatap-npmd
+```
+
+</TabItem>
+<TabItem value="du" label="Debian/Ubuntu">
+
+For installation, the gnupg2 package is required.
 
 ```bash
 wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
@@ -29,7 +48,7 @@ sudo apt-get install whatap-npmd
 ```
 
 </TabItem>
-<TabItem value="centos" label="CentOS">
+<TabItem value="rc" label="Red Hat/CentOS">
 
 ```bash
 sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
@@ -39,7 +58,13 @@ sudo yum install whatap-npmd
 </TabItem>
 </Tabs>
 
-## Compatibility checking and configuration
+:::note
+
+To collect resource information in the AWS environment, see [the following](set-aws-resource-options).
+
+:::
+
+### Compatibility checking and configuration
 
 Check the compatibility of the server in which the agent has been downloaded, and then enter the required settings.
 
@@ -60,8 +85,34 @@ Start service
 Installation complete!
 ```
 
+## Installation in the Kubernetes environment
+
+In the **_Install guide_** section, select the **_Kubernetes_** tab and then follow the on-screen instructions to install the agent.
+
+### Agent Creation
+
+1.  To create an agent, select <Cmdname sid="download" className="uitext" /> and then download the YAML file.
+
+2.  Upload the downloaded YAML file to the master node.
+
+3.  Execute the following command in the master node to create an agent.
+
+    ```bash
+    kubectl apply -f whatap_npmd.yaml
+    ```
+
+4.  Execute the following command and then check whether the agent's status (**STATUS**) is **RUNNING**.
+
+    ```bash
+    kubectl get pod -n whatap-npm-ns
+    ```
+
+    ![Installation NPM agent](/img/npm-k8s-check-running.png)
+
+## Setting the TagRule option (optional)
+
+**NPM** can collect irregular and diverse data through the **tagRule** settings and display the data in a topography or chart. For more details, see [the following](set-tagrule).
+
 ## Starting the monitoring
 
--   When the agent works, it starts collecting the monitoring data. To check the collected data on the service screen, select **_NPM Dashboard_** at the lower right of the screen.
-
--   **NPM** can collect irregular and diverse data through the **tagRule** settings and display the data in a topography or chart. For more details, see [the following](set-tagrule).
+When the agent works, it starts collecting the monitoring data. To check the collected data on the service screen, select <Cmdname sid="MNU06848" className="uitext" /> at the lower right of the screen.

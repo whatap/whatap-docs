@@ -1,0 +1,21 @@
+**If the agent option is set**, the log levels are collected and the colors for each log level appear as follows: 
+
+  ![Log level color](/img/log-agent-option-level.png)
+
+:::note 
+
+**Setting the agent options**
+
+-   The agent options are as follows: 
+
+    ```ini
+    # whatap.conf
+    weaving=log4j-2.17
+    weaving=logback-1.2.8
+    ```
+
+-   In Java agent 2.2.22 or later, it can be used when setting log4j-2.17 or logback-1.2.8 in the weaving setting. It is required to restart the agent.
+
+-   The log level is determined based on the `level` and `type` among the parsed keywords. When there are keys parsed as `level` and `type`, and the parsed values have <span class='vslow'>FATAL</span>, <span class='vslow'>CRITICAL</span>, <span class=' vslow'>ERROR</span>, <span class='slow'>WARN</span>, <span class='slow'>WARNING</span>, and <span class='mstop'>INFO</span>, the log level color appears. 
+
+:::

@@ -1,0 +1,30 @@
+---
+id: container-images
+title: コンテナイメージ
+description: コンテナで使用しているイメージ情報を提供します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - リソース
+  - コンテナイメージ
+---
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="resource" className="uitext" /> > <Cmdname sid="containerImages" className="uitext" />
+
+本文書は、<Cmdname sid="containerImages" className="uitext" />メニューを案内します。 <Cmdname sid="containerImages" className="uitext" />メニューは、コンテナで使用しているイメージ情報とそのイメージに基づいて実行中のコンテナの個数及びCPU、Memory使用総量をリスト形式で提供します。
+
+![コンテナイメージ](/img/k8s-container-img.png)
+
+### ![](/img/char-a.svg)フィルター
+
+フィルターのウィンドウで<Cmdname sid="TTL06740" className="uitext" />選択時、**_Image Name_**、**_Image Tag_**、**_Repo Digest_**に対するフィルター機能を提供します。
+
+### ![](/img/char-b.svg) CSVダウンロード
+
+上段右側の<Cmdname sid="sms_summary_download_csv" className="uitext" />ボタンを選択すると、元のデータをCSV形式のファイルとしてダウンロードできます。 
+
+> ファイル名例、`kubernetes_container_images_{pcode}_{timestamp}.csv`
+
+### ![](/img/char-c.svg)コンテナの詳細を見る
+
+**_Image Name_** カラム右の![詳細を見るアイコン](/img/ic-pageview.svg) <Cmdname sid="TLT07247" className="uitext" />アイコンを選択すると、そのイメージが検索された<Cmdname sid="container_list" className="uitext" />メニューに移動します。

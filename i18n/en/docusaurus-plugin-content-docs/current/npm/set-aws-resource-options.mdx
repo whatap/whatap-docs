@@ -1,0 +1,82 @@
+---
+id: set-aws-resource-options
+title: Options for collection of AWS resource data
+description: You can collect resource data from the AWS environment and display it on the topology screen.
+tags:
+  - Network performance monitoring
+  - Agent
+  - AWS
+  - Amazon Linux
+---
+
+To use the network performance monitoring in the AWS environment, you can collect data on the EC2 network interface (ENI) connected to each resource (e.g. LB) and then represent it in the topology. Because the agent cannot be installed directly as an AWS element, the associated ENI is displayed after checking based on the collected IP.
+
+![Example](/img/npm-aws-resource-example.png)
+
+When traffic is applied internally through AWS's ELB, it can appear in the topology through the data displayed in ENI, as shown in the figure. It appears based on the `Description` field in AWS's ENI. If you do not leave any data in the `Description` field, the `NetworkInterfaceId` property is provided.
+
+## Setting the agent options and roles
+
+Set the options in the _/usr/whatap/whatap-npmd/whatap.conf_ file as follows: Enter the authentication information issued by AWS in the brackets ([ ]). The user role required in this case is `ec2:DescribeNetworkInterfaces`.
+
+```ini title='whatap.conf'
+awsInfoEnable=1
+# AWS access key
+awsAccessKey=[User Access Key]
+# AWS secret access key
+awsSecretKey=[User Secret Key]
+# Region
+awsRegions=[RegionCode1,RegionCode2,...]
+```
+
+Using the following commands, you can add options.
+
+```bash
+echo "awsInfoEnable=1" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+echo "awsAccessKey=[User Access Key]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+echo "awsSecretKey=[User Secret Key]"  |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+
+sudo service whatap-npmd restart
+```
+
+-   **awsInfoEnable**
+
+    Set whether or not to use the AWS information inquiry. The default value is `0`. To view the AWS information, set it to `1`.
+
+-   **awsAccessKey**
+
+    Enter your AWS access key.
+
+-   **awsSecretKey**
+
+    Enter your AWS secret access key.
+
+-   **awsRegions**
+
+    Enter the region that contains your resources. You can enter multiple regions using comma (,) as the delimiter.
+
+:::note
+
+-   For more information about the generation of the AWS AccessKey, see [the following link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey).
+
+-   `ec2:DescribeNetworkInterfaces`: Allows to view the information on the EC2 network interface (ENI).
+
+:::
+
+:::tip
+
+For the Kubernetes environment, see the following image and then add the items in the yellow box to the YAML file.
+
+![K8s example](/img/npm-aws-resource-k8s-example.png)
+
+Enter the authentication information issued by AWS in the brackets ([ ]).
+
+```yaml
+echo "awsInfoEnable=1" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+echo "awsAccessKey=[User Access Key]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+echo "awsSecretKey=[User Secret Key]"  |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npmd/whatap.conf > /dev/null
+```
+
+:::

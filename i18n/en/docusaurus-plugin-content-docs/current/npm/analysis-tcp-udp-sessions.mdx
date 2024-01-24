@@ -10,7 +10,7 @@ tags:
   - Session
 ---
 
-Home > Select Project > **_Analysis_** > **_TCP session_** or **_UDP session_**
+Home > Select Project > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="MNU06850" className="uitext" /> or <Cmdname sid="MNU06851" className="uitext" />
 
 The session data collected by agents can be used to identify failure points in detail. It provides the filters that allow you to set multiple conditions to efficiently identify data. The identified data can be downloaded in CSV format for other purposes.
 
@@ -52,23 +52,64 @@ Before setting the search conditions, select the following traffic types.
 
 ### Setting the filter conditions
 
-You can see the data by setting multiple filter conditions for tag and field values. Conditions are added by the `&&` (and) condition.
-
-For example, to search the session data with the `ProcessType` tag value of "agencyrun" and the `Session` field value greater than 2, set as follows.
+You can see the data by setting multiple filter conditions for tag and field values. Conditions are added by the `&&` (and) condition. For example, to search the session data with the `ProcessType` tag value of "agencyrun" and the `Session Count` field value greater than 2, set as follows.
 
 <ImgLang img="npm-analysis-filtering.png" desc="Tag filtering" />
+
+:::tip
+
+You can filter with the `||` (or) condition when duplicate tags or field values have been set as follows:
+
+```text
+Local Process Type == agencyrun, Local Process Type == dev-yard
+```
+
+:::
+
+1.  Select the Filter field to see the list of available filters.
+
+    You can select the string format (`text`) and the numeric format (`numeric`).
+
+    <ImgLang img='npm-analysis-field-list.png' desc='Field list' />
+
+2.  Select a filter and then select <Cmdname sid="operator" className="uitext" />(`Operator`). 
+
+    Depending on the string format and numeric format, the operator you can select may differ.
+
+    -   String format<br/><ImgLang img='npm-analysis-filter-text-operater.png' desc='' />
+
+    -   Numeric format<br/><ImgLang img='npm-analysis-filter-numeric-operater.png' desc='' />
+
+3.  If a string format is selected, the list of available values appears. Select a desired value. In case of a numeric format, enter it directly.
+
+    <ImgLang img='npm-analysis-filter-text-val-list.png' desc='' />
+
+4.  Select a desired value or enter a number. To add filters, press Enter and then repeat the above steps.
+
+5.  Select ![Search icon](/img/ico-btn-search.png) to the right of the Filter field.
+
+### Operator types
+
+| Type                           | Operator | Description                                                                             |
+| ------------------------------ | :------: | --------------------------------------------------------------------------------------- |
+| Text/Numeric                   |   `==`   | Filters the strings that match the value of the selected filter.                        |
+| ^                              |   `!=`   | Filters the strings that exclude the value of the selected filter.                      |
+| Numeric                        |   `>`    | Filters the cases that are greater than the value of the selected filter.               |
+| ^                              |   `>=`   | Filters the cases that are greater than or equal to the value of the selected filter.   |
+| ^                              |   `<`    | Filters the cases that are less than the value of the selected filter.                  |
+| ^                              |   `<=`   | Filters the cases that are less than or equal to the value of the selected filter.      |
 
 ## Additional options
 
 ### Setting the table columns
 
-You can hide the table header columns or add any of them. You can also change the column order. Select **_Column settings_**.
+You can hide the table header columns or add any of them. You can also change the column order. Select <Cmdname sid="BTN06441" className="uitext" />.
 
 <ImgLang img="npm-analysis-column-settings.png" desc="Column Settings" />
 
 :::note
 
--   After configuration, select **_OK_** to apply the settings in the table.
+-   After configuration, select <Cmdname sid="BTN06053" className="uitext" /> to apply the settings in the table.
 
 -   In the ![number 3](/img/number-03.png) search bar, enter text to search the desired columns. Only the columns that meet the entered text are displayed.
 
@@ -76,7 +117,7 @@ You can hide the table header columns or add any of them. You can also change th
 
 #### Adding columns
 
-From the ![Number 1](/img/number-01.png) list, select the items to add as table header columns. To select all items, select **_Select All_**.
+From the ![Number 1](/img/number-01.png) list, select the items to add as table header columns. To select all items, select <Cmdname sid="BTN06048" className="uitext" />.
 
 #### Deleting columns
 
@@ -88,7 +129,7 @@ Drag an item to reposition from the ![number 2](/img/number-02.png) list, and th
 
 #### Initializing the configuration
 
-To cancel all changes and reset them, select ![Reset icon](/img/ico-reset.svg) **_Reset_**.
+To cancel all changes and reset them, select ![Reset icon](/img/ico-reset.svg) <Cmdname sid="initialized" className="uitext" />.
 
 ### Downloading the viewed data
 

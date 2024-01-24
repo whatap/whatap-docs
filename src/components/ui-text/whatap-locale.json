@@ -42371,10 +42371,10 @@
     "service_id": "ITM06142"
   },
   "DSC6143": {
-    "en": "After receiving the notification, events will not occur for the selected period.\nIf the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time period after receiving the RECOVERED notification.",
-    "ja": "通知の受信後、選択した時間中にイベントが発生しません。\nただし、\"イベントの状態が解決されると追加通知\"機能を有効にした場合は、RECOVERED通知を受信してから選択した時間にイベントが発生しません。",
-    "ko": "알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.\n단, \"이벤트 상태가 해결되면 추가 알림\" 기능을 활성화한 경우에는 RECOVERED 알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.",
-    "zh": "The event does not occur for the selected time after receiving the notification.\nHowever, if the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time after receiving the RECOVERED notification.",
+    "en": "After receiving the notification, events will not occur for the selected period.<br />\nIf the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time period after receiving the RECOVERED notification.",
+    "ja": "通知の受信後、選択した時間中にイベントが発生しません。<br />\nただし、\"イベントの状態が解決されると追加通知\"機能を有効にした場合は、RECOVERED通知を受信してから選択した時間にイベントが発生しません。",
+    "ko": "알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.<br />\n단, \"이벤트 상태가 해결되면 추가 알림\" 기능을 활성화한 경우에는 RECOVERED 알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.",
+    "zh": "The event does not occur for the selected time after receiving the notification.<br />\nHowever, if the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time after receiving the RECOVERED notification.",
     "service_id": "DSC06143"
   },
   "TTL06144": {
@@ -50736,10 +50736,10 @@
     "service_id": "TTL07364"
   },
   "TTL07365": {
-    "en": "Indicator settings\n",
+    "en": "Indicator</br>settings",
     "ja": "指標設定\n",
     "ko": "지표 설정",
-    "zh": "Indicator settings\n",
+    "zh": "Indicator</br>settings",
     "service_id": "TTL07365"
   },
   "TTL07366": {
@@ -51856,14 +51856,14 @@
     "service_id": "TTL07525"
   },
   "TTL07526": {
-    "en": "[ 3xx ] Request trends by Resource & Subresource per minute",
+    "en": "[ 3xx ] Trend of request count by resource & subresource per minute",
     "ja": "[ 3xx ] 1分当たりResource & Subresource別のリクエスト傾向",
     "ko": "[ 3xx ] 분당 Resource & Subresource 별 요청 수 추이",
     "zh": "[ 3xx ] Request trends by Resource & Subresource per minute",
     "service_id": "TTL07526"
   },
   "TTL07527": {
-    "en": "[ 2xx ] Request trends by Resource & Subresource per minute",
+    "en": "[ 2xx ] Trend of request count by resource & subresource per minute",
     "ja": "[ 2xx ] 1分当たりResource & Subresource別のリクエスト傾向",
     "ko": "[ 2xx ] 분당 Resource & Subresource 별 요청 수 추이",
     "zh": "[ 2xx ] Request trends by Resource & Subresource per minute",
@@ -51898,14 +51898,14 @@
     "service_id": "TTL07531"
   },
   "TTL07532": {
-    "en": "Trends in POST requests by Resource & Subresource per minute",
+    "en": "Trend of POST request count by resource & subresource per minute",
     "ja": "1分当たりResourceとSubresource別のPOSTリクエスト数の推移",
     "ko": "Resource & Subresource 별 분당 POST 요청 수 추이",
     "zh": "Trends in POST requests by Resource & Subresource per minute",
     "service_id": "TTL07532"
   },
   "TTL07533": {
-    "en": "Trend of POST requests per second",
+    "en": "Trend of POST request count per second",
     "ja": "1秒当たりPOSTリクエスト数の推移",
     "ko": "초당 POST 요청 수 추이",
     "zh": "Trend of POST requests per second",
@@ -51919,7 +51919,7 @@
     "service_id": "TTL07534"
   },
   "TTL07535": {
-    "en": "Trends in the number of GET requests by Resource & Subresource per minute",
+    "en": "Trend of GET request count by resource & subresource per minute",
     "ja": "1分当たりResourceとSubresource別のGETリクエスト数の推移",
     "ko": "Resource & Subresource 별 분당 GET 요청 수 추이",
     "zh": "Trends in the number of GET requests by Resource & Subresource per minute",
@@ -51933,7 +51933,7 @@
     "service_id": "TTL07536"
   },
   "TTL07537": {
-    "en": "Trend of GET requests per second",
+    "en": "Trend of GET request count per second",
     "ja": "1秒当たりGETリクエスト数の推移",
     "ko": "초당 GET 요청 수 추이",
     "zh": "Trend of GET requests per second",
@@ -51983,14 +51983,14 @@
   },
   "BTN07544": {
     "en": "Save recovery code",
-    "ja": "回復コードを保存\n",
+    "ja": "復旧コードを保存\n",
     "ko": "복구 코드 저장",
     "zh": "Save recovery code",
     "service_id": "BTN07544"
   },
   "DSC07545": {
     "en": "Authentication has been completed.{br}Please save the recovery code.",
-    "ja": "認証が完了しました。{br}回復コードを保存してください。",
+    "ja": "認証が完了しました。{br}復旧コードを保存してください。",
     "ko": "인증이 완료되었습니다.{br}복구 코드를 저장해 주세요.",
     "zh": "Authentication has been completed.{br}Please save the recovery code.",
     "service_id": "DSC07545"
@@ -52024,8 +52024,8 @@
     "service_id": "NTC07549"
   },
   "ITM07550": {
-    "en": "Real-Time Today (0-24h)",
-    "ja": "リアルタイム本日 (0 ~ 24h)",
+    "en": "Today real-time (0-24h)",
+    "ja": "リアルタイム：本日 (0 ~ 24h)",
     "ko": "실시간 금일 (0 ~ 24h)",
     "zh": "Real-Time Today (0-24h)",
     "service_id": "ITM07550"
@@ -52038,22 +52038,22 @@
     "service_id": "MNU07551"
   },
   "CNT07552": {
-    "en": "Email or OTP re-authentication is required.{br}Please cancel email authentication or delete OTP and authenticate again.",
-    "ja": "メールまたはOTP再認証が必要です。{br}メール認証キャンセルまたはOTP削除後に再認証してください。",
+    "en": "Re-authentication using e-mail or OTP is required.{br}Please cancel e-mail authentication or delete OTP and authenticate again.",
+    "ja": "メールまたはOTP再認証が必要です。{br}メール認証キャンセル、またはOTP削除後に再認証を行ってください。",
     "ko": "이메일 또는 OTP 재인증이 필요합니다.{br}메일 인증 취소 또는 OTP 삭제 후 다시 인증해 주세요.",
     "zh": "Email or OTP re-authentication is required.{br}Please cancel email authentication or delete OTP and authenticate again.",
     "service_id": "CNT07552"
   },
   "TLT07553": {
-    "en": "You do not have \brole to set alert settings.",
-    "ja": "アラート設定を行う役割がありません。",
+    "en": "You do not have permission to set alert settings.",
+    "ja": "アラート設定権限がありません。",
     "ko": "알림 설정 권한이 없습니다.",
     "zh": "You do not have \brole to set alert settings.",
     "service_id": "TLT07553"
   },
   "TLT07554": {
-    "en": "Kind",
-    "ja": "種類",
+    "en": "Type",
+    "ja": "タイプ",
     "ko": "종류",
     "zh": "Kind",
     "service_id": "TTL07554"
@@ -52094,8 +52094,8 @@
     "service_id": "TTL07559"
   },
   "NTC07560": {
-    "en": "To enable the feature for viewing historical object manifests, please update your agent",
-    "ja": "過去のObject Manifestルックアップ機能を有効にするには、エージェントを更新してください。",
+    "en": "Please update your agent to activate past object manifest lookup feature.",
+    "ja": "過去のObject Manifest照会機能を有効にするには、エージェントを更新してください。",
     "ko": "과거 Object Manifest 조회 기능을 활성화하려면 에이전트를 업데이트하세요.",
     "zh": "To enable the feature for viewing historical object manifests, please update your agent",
     "service_id": "NTC07560"
@@ -52108,21 +52108,21 @@
     "service_id": "DSC07561"
   },
   "ITM07562": {
-    "en": "Current Master Agent CPU Limit",
-    "ja": "現在のマスター エージェントの CPU 制限",
+    "en": "Current master agent CPU limit",
+    "ja": "現在のマスター エージェントのCPU 制限",
     "ko": "현재 마스터 에이전트 CPU Limit",
     "zh": "Current Master Agent CPU Limit",
     "service_id": "ITM07562"
   },
   "ITM07563": {
-    "en": "Node Agent Count",
+    "en": "Node agent count",
     "ja": "ノードエージェント数",
     "ko": "노드 에이전트 수",
     "zh": "Node Agent Count",
     "service_id": "ITM07563"
   },
   "ITM07564": {
-    "en": "Lookup time",
+    "en": "View time",
     "ja": "照会時間",
     "ko": "조회 시간",
     "zh": "Lookup time",
@@ -52130,7 +52130,7 @@
   },
   "NTC07565": {
     "en": "Successfully saved.",
-    "ja": "正常に保存されました",
+    "ja": "正常に保存しました。",
     "ko": "성공적으로 저장되었습니다.",
     "zh": "Successfully saved.",
     "service_id": "NTC07565"
@@ -52150,21 +52150,21 @@
     "service_id": "ITM07568"
   },
   "ITM07569": {
-    "en": "East America",
-    "ja": "東アメリカ",
+    "en": "Eastern United States",
+    "ja": "アメリカ東部",
     "ko": "미국 동부",
     "zh": "East America",
     "service_id": "ITM07569"
   },
   "TTL07570": {
     "en": "[ 400~ ] Request trends by Resource & Subresource per minute",
-    "ja": "[ 400~ ] 1分当たりResource & Subresource別のリクエスト傾向",
+    "ja": "[ 400~ ] 1分当たりResource & Subresource別のリクエスト数推移",
     "ko": "[ 400~ ] 분당 Resource & Subresource 별 요청 수 추이",
     "zh": "[ 400~ ] Request trends by Resource & Subresource per minute",
     "service_id": "TTL07570"
   },
   "TTL07571": {
-    "en": "[ 400~ ] Trend of response request count per minute",
+    "en": "[ 400~ ] Trend of request count by response code per minute",
     "ja": "[ 400~ ] 1分当たり応答のリクエスト数推移",
     "ko": "[ 400~ ] 분당 응답 코드별 요청 수 추이",
     "zh": "[ 400~ ] Trend of response request count per minute",
@@ -52172,7 +52172,7 @@
   },
   "TTL07572": {
     "en": "[ 400~ ] Response request status per minute",
-    "ja": "[ 400~ ] 1分当たり応答要求の状況",
+    "ja": "[ 400~ ] 1分当たり応答リクエストの状況",
     "ko": "[ 400~ ] 분당 응답 요청 현황",
     "zh": "[ 400~ ] Response request status per minute",
     "service_id": "TTL07572"
@@ -52183,6 +52183,118 @@
     "ko": "최근 1초 내 실행중인 요청 수",
     "zh": "Number of requests running in the last 1 second",
     "service_id": "TTL07573"
+  },
+  "DSC07574": {
+    "en": "Contains {count} targets.",
+    "ja": "{count}件のターゲットが含まれています。",
+    "ko": "{count}건의 대상이 포함됩니다.",
+    "zh": "Contains {count} targets.",
+    "service_id": "DSC07574"
+  },
+  "DSC07575": {
+    "en": "The entire target is included.",
+    "ja": "ターゲット全体が含まれます。",
+    "ko": "전체 대상이 포함됩니다.",
+    "zh": "The entire target is included.",
+    "service_id": "DSC07575"
+  },
+  "NTC07576": {
+    "en": "Please select the object you want to check from the list on the left.",
+    "ja": "左側のリストから確認したいObjectを選択してください。",
+    "ko": "좌측 목록에서 확인하고자 하는 오브젝트를 선택해주세요.",
+    "zh": "Please select the object you want to check from the list on the left.",
+    "service_id": "NTC07576"
+  },
+  "NTC07577": {
+    "en": "Please select the object you want to check from the list above.",
+    "ja": "上記のリストから確認したいオブジェクトを選択してください。",
+    "ko": "위의 목록에서 확인하고자 하는 오브젝트를 선택해주세요.",
+    "zh": "Please select the object you want to check from the list above.",
+    "service_id": "NTC07577"
+  },
+  "ITM07578": {
+    "en": "Indicator",
+    "ja": "指標",
+    "ko": "지표",
+    "zh": "Indicator",
+    "service_id": "ITM07578"
+  },
+  "ITM07579": {
+    "en": "Target",
+    "ja": "対象",
+    "ko": "대상",
+    "zh": "Target",
+    "service_id": "ITM07579"
+  },
+  "TLT07580": {
+    "en": "If an event occurs N times in succession, a notification is sent. If disabled, notifications will be sent whenever an event occurs.",
+    "ja": "イベントが連続してN回発生すると、通知が送信されます。使用しない場合、イベントが発生するたびに通知が送信されます。",
+    "ko": "이벤트가 연속으로 N회 발생할 경우, 알림이 발송됩니다. 사용하지 않을 경우, 이벤트가 발생할 때마다 알림이 발송됩니다.",
+    "zh": "If an event occurs N times in succession, a notification is sent. If disabled, notifications will be sent whenever an event occurs.",
+    "service_id": "TLT07580"
+  },
+  "NTC07581": {
+    "en": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Agent 1.5.0 or higher</strong>, you can view and compare past information on a daily basis.",
+    "ja": "「マスターメタ情報」機能が<strong>「Object Manifest」</strong>機能に変更されました。 WhaTapクーバーネティス<strong>エージェント1.5.0以降</strong>を使用すると、過去の過去の情報の検索と相互比較が可能になります。",
+    "ko": "\"마스터 메타 정보\" 기능이 <strong>\"오브젝트 매니페스트\"</strong> 기능으로 변경되었습니다. 와탭 쿠버네티스 <strong>에이전트 1.5.0 이상</strong>을 사용하면 일단위 과거 정보 조회 및 상호 비교가 가능합니다.",
+    "zh": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Agent 1.5.0 or higher</strong>, you can view and compare past information on a daily basis.",
+    "service_id": "NTC07581"
+  },
+  "DSC07582": {
+    "en": "Event name, indicator search",
+    "ja": "イベント名、指標検索",
+    "ko": "이벤트 이름, 지표 검색",
+    "zh": "Event name, indicator search",
+    "service_id": "DSC07582"
+  },
+  "TTL07583": {
+    "en": "Indicator",
+    "ja": "指標",
+    "ko": "지표",
+    "zh": "Indicator",
+    "service_id": "TTL07583"
+  },
+  "LNK07584": {
+    "en": "guide document",
+    "ja": "ガイドドキュメント",
+    "ko": "가이드 문서",
+    "zh": "guide document\n",
+    "service_id": "LNK07584"
+  },
+  "DSC07585": {
+    "en": "To simulate an event, select <a href='#run_simulation' class='primary'><u>Run button</u></a> in the 'Event condition definition' item at the top of the screen.",
+    "ja": "イベントをシミュレートするには、画面の上部にある[イベント条件の定義]項目で<a href='#run_simulation' class='primary'><u>実行ボタン</u></a>を選択します。",
+    "ko": "이벤트를 시뮬레이션하려면 화면 최상단에 '이벤트 조건 정의' 항목에서 <a href='#run_simulation' class='primary'><u>실행 버튼</u></a>을 선택하세요.",
+    "zh": "To simulate an event, select <a href='#run_simulation' class='primary'><u>Run button</u></a> in the 'Event condition definition' item at the top of the screen.",
+    "service_id": "DSC07585"
+  },
+  "DSC07586": {
+    "en": "If you do not set the above items, the event will be executed for all agents included in the project and many notifications may be generated.",
+    "ja": "上記の項目を設定しないと、プロジェクトに含まれるエージェント全体を対象にイベントが実行され、多くの通知が発生する可能性があります。",
+    "ko": "위 항목들을 설정하지 않으면 프로젝트에 포함된 전체 에이전트를 대상으로 이벤트가 실행되며 많은 알림이 발생할 수 있습니다.",
+    "zh": "If you do not set the above items, the event will be executed for all agents included in the project and many notifications may be generated.",
+    "service_id": "DSC07586"
+  },
+  "DSC07587": {
+    "en": "Please refer to the guide document for a detailed explanation of event targets.",
+    "ja": "イベントターゲットの詳細については、ガイドのドキュメントを参照してください。",
+    "ko": "이벤트 대상에 대한 자세한 설명은 가이드 문서를 참고하세요.",
+    "zh": "Please refer to the guide document for a detailed explanation of event targets.",
+    "service_id": "DSC07587"
+  },
+  "ITM07588": {
+    "en": "Select target",
+    "ja": "ターゲットを選択",
+    "ko": "대상 선택",
+    "zh": "Select target",
+    "service_id": "ITM07588"
+  },
+  "TTL07589": {
+    "en": "Project Product Filter",
+    "ja": "プロジェクト商品フィルター",
+    "ko": "프로젝트 상품 필터",
+    "zh": "Project Product Filter",
+    "service_id": "TTL07589"
   },
   "": {
     "": "",

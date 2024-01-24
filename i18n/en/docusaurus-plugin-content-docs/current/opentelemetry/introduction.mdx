@@ -1,0 +1,44 @@
+---
+id: introduction
+title: OpenTelemetry
+description: The following guides you how to check the information collected by OpenTelemetry Collector through the WhaTap monitoring service.
+tags:
+  - OpenTelemetry
+  - Extensions
+---
+
+This document is intended for users who want to collect additional data through OpenTelemetry while using applications of the WhaTap monitoring service.
+
+## Using the WhaTap monitoring through OpenTelemetry
+
+[OpenTelemetry](https://opentelemetry.io/) is an open source observability framework for instrumenting, generating, collecting, and exporting telemetry data (metrics, logs, and traces). Measurement data collected through OpenTelemetry can be transmitted to the WhaTap monitoring platform to analyze the performances and behaviors of applications or services and then resolve problems.
+
+If active applications or services are collected using the OpenTelemetry library, you can select a method to get the traces, metrics, and log data into the WhaTap monitoring platform. Highly visible observability monitoring is provided using the dashboards and analysis menus on the WhaTap monitoring platform.
+
+## OpenTelemetry agent
+
+The OpenTelemetry agent processes and delivers to the WhaTap monitoring platform the data collected through the OTLP Exporter of OpenTelemetry Collector. 
+
+![WhaTap OTel Agent](/img/otel/opentelemetry-overview.png)
+
+For the procedure to install and run the agent, see the following:
+
+1.  [Install and run the WhaTap agent](install-agent) on the instance where OpenTelemetry Collector has been installed.
+
+2.  The launched whatap-otel service runs the Grpc server for OTLP Exporter.
+
+    -   The listening port is 6600 by default.
+
+    -   As in the default setting for OpenTelemetry Collector, the gzip compression setting is `True`.
+
+## Support Environment
+
+The operating systems on which the OpenTelemetry agent can be installed are:
+
+-   CentOS/Red Hat 6.x (64bit) or later
+
+-   Debian/Ubuntu 12.04 (64 bit) or later
+
+-   Amazon linux (64bit)
+
+-   Alpine Linux (64 bit)

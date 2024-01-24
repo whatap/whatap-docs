@@ -79,21 +79,29 @@ MySQLの`performance_schema`で提供するSQL統計データ(遂行回数、実
 | `sort_range`              | rangeでsortされた数                                                         |
 | `sort_rows`               | sort遂行されたrowの数                                                         |
 | `sort_scan`               | スキャンでsortされた数                                                          |
-| `no_index_used`           | クエリでどのインデックスも使用していない回数、インデックス作成を考慮する必要があります。                           |
-| `no_good_index_used`      | サーバーに存在する既存のインデックスのうち、使用するインデックスが見つからない回数、回数が増えるとインデックスメンテナンスが必要になります。 |
+| `no_index_used`           | クエリでどのインデックスも使用していない回数。インデックス作成を考慮する必要があります。                           |
+| `no_good_index_used`      | サーバーに存在する既存のインデックスのうち、使用するインデックスが見つからない回数。回数が増えるとインデックスメンテナンスが必要になります。 |
 
-## クエリの詳細を見る{#query-details}
+## 統計メニューオプションの利用
+
+### クエリプレビュー
+
+![クエリ文プレビュー](/img/db-sql-preview.png)
+
+照会された結果リストからマウスポインタを**_sql_**カラム項目に移動すると、クエリ文をプレビューすることができます。
+
+### クエリの詳細を見る{#query-details}
 
 <ImgLang img="db-sql-details-common.png" desc="SQL詳細" />
 
 {@include: ../common-items/_db-product-sql-stat-query-details.mdx} 
 
-## 参照結果フィルタリング
+### 参照結果フィルタリング
 
 <ImgLang img='db-sql-stat-add-filter-mysql.png' desc='Filtering' />
 
 {@include: ../common-items/_db-product-sql-stat-filtering-result.mdx}
 
-## テーブルカラムの設定{#change-column}
+### テーブルカラムの設定{#change-column}
 
 {@include: ../common-items/_db-v2-data-edit-column.mdx} 

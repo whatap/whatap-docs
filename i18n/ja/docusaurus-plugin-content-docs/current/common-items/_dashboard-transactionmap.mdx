@@ -1,6 +1,8 @@
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_トランザクションマップ_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="transaction_map" className="uitext" />
 
-トランザクションマップチャートは、終了した個々のトランザクションの応答時間を分布図形式で表現するチャートです。ヒットマップと同様に分布パターンによる問題を検出、分析することができます。ヒットマップは5分単位でトランザクションをグループ化して表示され、トランザクションマップは、トランザクションを個別に表示します。
+<Cmdname sid="transaction_map" className="uitext" />チャートは、終了した個々のトランザクションの応答時間を分布図の形で表現したチャートです。ヒートマップと同様に、分布パターンに応じた問題点を発見し、分析することができます。<Cmdname sid="hitmap" className="uitext" />は5分単位でトランザクションをグループ化して表示することに対し、<Cmdname sid="transaction_map" className="uitext" />は、トランザクションを個別に表示します。
+
+<ImgLang img='dashboard-transaction-map.png' desc='トランザクションマップ' />
 
 :::tip 
 
@@ -8,77 +10,110 @@
 
 ヒットマップチャートは、特定の期間のトランザクション発生件の合計を表示します。発生件数が多い箇所を色で違いを表現しています。ヒットマップの場合、セクションごとに合計されたデータが別々に保存されるため、比較的長い時間の傾向も確認できます。しかし、トランザクションを集計して表示するため、個々のトランザクション情報を知ることが困難です。
 
--   長期的に大量のトランザクションの分布図を分析するには、ヒットマップ分析を使用します。(**_プロジェクトメニュー_** > **_分析_** > **_ヒットマップ_**)
--   パフォーマンステストのトラブル状況で1~5分以内にトランザクションの分布図の分析を行い、実行時間の制限なしでトランザクションの分布図を確認するには、**_トランザクションマップ_**を確認してください。
+-   長期的に大量のトランザクションの分布図を分析するには、ヒットマップ分析を使用します。(<Cmdname sid="project_menu" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)
+
+-   パフォーマンステストのトラブル状況で1~5分以内にトランザクションの分布図の分析を行い、実行時間の制限なしでトランザクションの分布図を確認するには、<Cmdname sid="transaction_map" className="uitext" />を確認してください。
 
 :::
 
 :::note
 
--   **_ヒットマップ_**メニューの詳細については、[次の文書](trs-view)を参照してください。 
+-   <Cmdname sid="hitmap" className="uitext" />メニューの詳細については、<Link to="trs-view">次の文書</Link>を参照してください。
 
--   **_ヒットマップトランザクション_**チャートを分析する方法についての詳細は、[次の文書](../best-practice-guides/about-apm-hitmap-class)を参照してください。
+-   <Cmdname sid="hitmap_transaction" className="uitext" />チャートを分析する方法についての詳細は、<Link to="../best-practice-guides/about-apm-hitmap-class">次の文書</Link>を参照してください。
 
 -   サーバー時間よりユーザーのPC時間が過去に設定された場合、サーバー時間とユーザーのPC時間に5分以上差がある場合、データがチャートに出力されないことがあります。
 
 :::
 
-<ImgLang img='dashboard-transaction-map.png' desc='トランザクションマップ' />
+## トレース分析
 
-## ![](/img/number-01.png)エージェント領域
+<Cmdname sid="transaction_map" className="uitext" />ウィジェットのチャート領域をドラッグすると、トランザクション詳細情報が確認できる<Cmdname sid="TTL06209" className="uitext" />ウィンドウが表示されます。トランザクションリストと各トランザクションの下位のステップ情報を一度に確認できます。
 
-プロジェクトに含まれるエージェントを選択して、エージェントごとにトランザクションマップを確認できます。重複選択することができ、**_全選択_**チェックボックスを選択してすべてのエージェントを選択することができます。選択したエージェントによって、トランザクションマップの分布図が変更されます。
+<ImgLang img='dashboard-txmap-tx-analysis.png' desc='トレース分析' />
 
-右端に![下方向アイコン](/img/down-arrow.svg)ボタンをクリックしてください。エージェントは、サーバー別、種類別にフィルタリングまたは検索できます。
+:::note
 
-## ![](/img/number-02.png)時間と検索領域
+<Cmdname sid="TTL06209" className="uitext" />の詳細は、<Link to="dashboard-hitmap-trace">次の文書</Link>を参照してください。
 
--   **_終了時間_**
+:::
 
-    リアルタイムで終了したトランザクションの応答時間を分布図形式でチャートに表示するには、**_リアルタイム_**ボタンを選択してください。特定の時間を基準にチャートを確認するには、**_終了時刻_**を選択してから時間を設定してください。
+## エージェント選択
 
--   **_期間_**：最大 5 分以内のトランザクション分布図を確認できます。
+プロジェクトに含まれるエージェントを選択して、エージェントごとにトランザクションを確認できます。 複数選択ができ、<Cmdname sid="select_all" className="uitext" />チェックボックスを選択して、すべてのエージェントを選択できます。選択したエージェントによって<Cmdname sid="transaction_map" className="uitext" />の分布図が変更されます。
 
--   **_Filter_**：入力した文字列と一致するサービス、ドメイン、IPをフィルタリングします。 
+<ImgLang img='dashboard-txmap-select-agent.png' desc='エージェント選択' />
 
-    1.  **_フィルター追加_**を選択してください。
+右端に![数字1](/img/number-01.png)![下方向アイコン](/img/down-arrow.svg)ボタンをクリックしてください。エージェントは、サーバー別、種類別にフィルタリングまたは検索できます。
 
-    2.  **_+ Add_**をクリックして、目的の文字列を入力してください。 複数の文字列を入力できます。
+### 分類別エージェント選択
 
-        <ImgLang img='transactionmap-filter.png' desc='フィルター追加' />
+ドロップダウンメニューのエージェント設定を通じて分類したグループ単位でエージェントを選択してトランザクションマップを確認することができます。
 
-    3.  フィルタリングする文字列をすべて入力したら、**_Apply_**を選択してください。
+-   <Cmdname sid="type_oid" className="uitext" />：個別エージェントを選択またはすべて選択できます。
 
-## ![](/img/number-03.png) **_Top 30_**
+-   <Cmdname sid="type_onode" className="uitext" />：エージェント設定で<code>whatap.onode</code>で分類されたエージェントの一覧を選択できます。
 
-Top30一覧は、設定した指標に従ってフィルタリングされたトランザクションの中でカウント件数が高い順に並べ替えられます。一覧のサービス項目をクリックすると、そのトランザクションがフィルターとして追加されます。
+-   <Cmdname sid="type_okind" className="uitext" />：エージェント設定の<code>whatap.okind</code>で分類されたエージェントの一覧を選択できます。
 
-## ![](/img/number-04.png) **_トランザクションマップ_**
+### エージェント検索で選択
 
-トランザクション分布図を示すマップです。 
+検索入力ボックスに目的のエージェント名を入力してください。入力後<Cmdname sid="apply_immediately" className="uitext" />ボタンを選択すると、そのエージェントの一覧のみが選択されます。
 
--   ![上アイコン](/img/up-arrow.svg)または![下アイコン](/img/down-arrow.svg)ボタンを選択してY軸を拡大、縮小することができます。
+## 過去のデータ参照
 
--   右上の![設定アイコン](/img/ico-setting.svg)を選択して、チャート関連の設定を変更します。Y軸指標を選択して最大値を設定できます。
+<Cmdname sid="transaction_map" className="uitext" />は、リアルタイムモニタリングをデフォルトで提供します。<Cmdname sid="duration" className="uitext" />に設定された間隔でトランザクションを照会します。過去のデータを照会するには<Cmdname sid="end_time" className="uitext" />を選択してください。
 
-    <ImgLang img='transaction-map-setting.png' desc='トランザクションマップの設定' />
+<ImgLang img='dashboard-txmap-select-time.png' desc='時間選択' />
 
--   **_エラーのみ_**を選択すると、トランザクションマップにエラー状態のトランザクションが表示されます。
+希望する日付と時間を選択した後、<Cmdname sid="ok" className="uitext" />ボタンを選択してください。選択した時間に基づいて、5分間のトランザクションを照会できます。
 
--   トランザクションマップの一部の領域をマウスでドラッグすると、**_TXトレース_**領域にトランザクション情報が表示されます。
+:::note
 
-## ![](/img/number-05.png) **_TXトレース_**
+過去のデータを照会してからリアルタイムモニタリングに切り替えるには<Cmdname sid="realtime" className="uitext" />ボタンを選択してください。
 
-トランザクション情報について詳細なトレース情報を確認するには![詳細情報アイコン](/img/ico-detail-view.svg)を選択してください。詳細なトレース情報ウィンドウが表示されます。
+:::
 
-<Xclude product='php,nodejs,golang'>
+## 上位一覧を確認する
 
-<ImgLang img="analysis-tx-table-view-mode.png" desc="テーブルビュー" />
+**_Top 30_**セクションでは、<Cmdname sid="TTL06918" className="uitext" />, <Cmdname sid="TTL06101" className="uitext" />, <Cmdname sid="ip" className="uitext" />を基準に、トランザクションの実行数が多い上位30の一覧を表示します。 
 
-</Xclude>
+<ImgLang img='dashboard-txmap-top30.png' desc='Top 30' />
 
-<InDoc product='php,nodejs,golang'>
+一覧で個別項目を選択すると<Cmdname sid="filter" className="uitext" />オプションで追加され<Cmdname sid="transaction_map" className="uitext" />チャートに反映されます。複数の項目を選択できます。
 
-<ImgLang img="analysis-tx-table-view-mode-none-actx.png" desc="テーブルビュー" />
+## フィルターを追加する
 
-</InDoc>
+**_Top 30_**セクションの一覧で個別の項目を選択してフィルターを追加することもできますが、ユーザーが希望する項目を直接入力して追加することもできます。ユーザーが入力した文字列と一致するトランザクションをフィルタリングします。
+
+1.  <Cmdname sid="filter" className="uitext" />オプションで<Cmdname sid="add_filter" className="uitext" />または<LinkImage img="ico-add.svg" className="ico" />ボタンを選択してください。
+
+2.  **_+ Add_**ボタンを選択してください。
+
+3.  <Cmdname sid="TTL06918" className="uitext" />、<Cmdname sid="TTL06101" className="uitext" />、<Cmdname sid="ip" className="uitext" />のいずれかを選択し、文字列を入力してください。
+
+    <ImgLang img='dashboard-txmap-filter.png' desc='フィルター追加' />
+
+    **_+ Add_**ボタンをタップしてフィルター項目を追加できます。
+
+4.  希望するフィルター項目を すべて追加したら**_Apply_**ボタンを選択してください。
+
+追加したフィルター項目が<Cmdname sid="transaction_map" className="uitext" />チャートに反映されていることを確認してください。
+
+## チャート設定
+
+チャート分析のために、ユーザーが希望する条件に設定を変更できます。<Cmdname sid="transaction_map" className="uitext" />チャート右上のオプションを利用してください。
+
+<ImgLang img='transaction-map-setting.png' desc='トランザクションマップの設定' />
+
+-   ![設定アイコン](/img/ico-setting.svg)ボタンをタップすると、チャート関連の設定を修正できます。Y軸指標を選択することができ、最大値を設定することができます。設定を適用するには**_Apply_**ボタンを選択してください。
+
+    :::tip
+
+    Y軸指標としては<Cmdname sid="TTL06361" className="uitext" />、<Cmdname sid="TTL06364" className="uitext" />、<Cmdname sid="TTL06972" className="uitext" />、<Cmdname sid="TTL06362" className="uitext" />を選択することができます。
+
+    :::
+
+-   ![上アイコン](/img/up-arrow.svg)または![下アイコン](/img/down-arrow.svg)ボタンを選択してY軸を拡大または縮小することができます。
+
+-   <Cmdname sid="error_only" className="uitext" />を選択すると、チャートにエラー状態のトランザクションのみを表示します。

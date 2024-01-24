@@ -1,0 +1,65 @@
+---
+id: resource-application-list
+title: アプリケーション一覧
+description: コンテナ化されたアプリケーションの一覧を確認します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - アプリケーション
+  - アプリケーション一覧
+toc_max_heading_level: 2
+---
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="resource" className="uitext" /> > <Cmdname sid="containerizedAppList" className="uitext" />
+
+コンテナ化されたアプリケーションの一覧を照会します。 希望するカラムを選択すると、そのカラムを基準にアプリケーション一覧をソートして照会することができます。 
+
+<ImgLang img='k8s-app-list.png' desc='アプリケーションリスト' />
+
+:::note 
+
+**メトリック情報**、**フィルター**、**カラム選択**案内は、<Cmdname sid="resource" className="uitext" />メニュー下位のリスト型の機能案内と同じです。
+
+:::
+
+## メトリック情報
+
+{@include: ../common-items/_k8s-list-metric.mdx}
+
+## フィルター
+
+{@include: ../common-items/_k8s-list-filter.mdx}
+
+## カラム選択
+
+{@include: ../common-items/_k8s-list-cl.mdx}
+
+## 詳細を確認
+
+<Cmdname sid="containerizedAppList" className="uitext" />で照会したいアプリケーションを選択すると、そのアプリケーションに関する詳細情報を確認することができます。
+
+:::note 
+
+詳細を見るウィンドウの[トレース](container-map-trace)、[メトリクス](container-map-metrics)、[ログ](container-map-log)、[イベント](container-map-event) タブの場合、コンテナマップコンテナビューの詳細と同じです。
+
+:::
+
+### リソース
+
+対象を選択した後、詳細表示の<Cmdname sid="resource" className="uitext" />タブで選択したリソースに関連するリソースの一覧と関係図を照会できます。 
+
+<ImgLang img='k8s-app-list-detail.png' desc='アプリケーションリスト' />
+
+#### 要約情報
+
+選択したリソースに関連付けられているリソース一覧の要約情報を提供します。 リソース名の横にある詳細ビュー アイコンを選択すると、そのリソース一覧の画面に移動します。 
+
+-   <Cmdname sid="container" className="uitext" />：当該コンテナのみフィルタリングされた状態の<Cmdname sid="container_list" className="uitext" />に移動します。
+
+-   <Cmdname sid="podName" className="uitext" />：該当するパッドのみフィルタリングされた<Cmdname sid="podList" className="uitext" />に移動します。
+
+-   <Cmdname sid="node" className="uitext" />：該当ノード名が選択された状態の<Cmdname sid="node_detail" className="uitext" />に移動します。
+
+#### リソース関係図
+
+リソース間の接続関係と状態を視覚的に確認できます。 リソース間の接続関係と状態を視覚的に確認できます。 一覧と同様に、Pod、コンテナ、アプリケーションにマウスオーバーすると、詳細指標を確認することができます。 リソースを選択すると、そのリソース一覧ページに移動します。

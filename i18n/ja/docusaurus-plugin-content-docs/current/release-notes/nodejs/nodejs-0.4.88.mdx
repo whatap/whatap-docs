@@ -1,0 +1,33 @@
+---
+id: nodejs-0_4_88
+title: Node.js Agent v0.4.88
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_4_86
+displayed_sidebar: releaseSidebar
+---
+
+2024年01月11日
+
+-   <Status>Fixed</Status> <code>trace_http_client_ip_header_key=x-forwarded-for</code>オプションを設定した状態でヘッダで<code>x-forwarded-for</code>値に複数のIPが転送される場合(コンマ基準)、最初の値にIPを設定するよう修正
+
+    :::note
+
+    このオプションの詳細については、[次の文書](../../nodejs/agent-number-of-user#trace_http_client_ip_header_key)を参考にしてください。
+
+    :::
+
+-   <Status>Fixed</Status> TCP、UDPソケットモニタリングを修正
+
+-   <Status>Fixed</Status> <code>profile_http_header_enabled</code>オプションの値が<code>true</code>であれば、profileのheaders値を表す方式を修正(JSON → key=value\n)
+
+:::info
+
+-   パッケージ情報：https://www.npmjs.com/package/whatap
+
+-   インストール及び適用方法
+
+    ```bash
+    npm i whatap
+    ```
+
+:::

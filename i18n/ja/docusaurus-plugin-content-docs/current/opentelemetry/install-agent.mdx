@@ -1,0 +1,197 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: OpenTelemetryエージェントのインストール方法を案内します。
+tags:
+  - OpenTelemetry
+  - Extensions
+  - インストール
+---
+
+OpenTelemetryエージェントのインストール方法を案内します。 
+
+## エージェントダウンロード
+
+次のコマンドを実行してOpenTelemetry Collectorがインストールされているインスタンスにエージェントをダウンロードしてください。
+
+<Tabs groupId="os">
+<TabItem value="rc" label="Red Hat/Centos">
+
+```bash
+# Register package repository
+$ sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+
+# Install package
+$ sudo yum install whatap-otel
+```
+
+</TabItem>
+
+<TabItem value="du" label="Debian/Ubuntu">
+
+```bash
+# Register package repository
+$ wget https://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+$ wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+$ sudo dpkg -i whatap-repo_1.0_all.deb
+$ sudo apt-get update
+
+# Install package
+$ sudo apt-get install whatap-otel
+```
+
+</TabItem>
+
+<TabItem value="al" label="Amazon Linux">
+
+```bash
+# Register package repository
+$ sudo rpm --import https://repo.whatap.io/centos/release.gpg
+$ echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+$ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+
+# Install package
+$ sudo yum install whatap-otel
+```
+
+</TabItem>
+
+<TabItem value="apl" label="Alpine Linux">
+
+```bash
+$ wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-otel.tar.gz
+$ tar -xvzf whatap-otel.tar.gz -C /
+```
+
+</TabItem>
+
+<TabItem value="apldocker" label="Alpine Linux Docker">
+
+```bash title="FROM alpine"
+FROM alpine
+
+RUN apk update && apk upgrade
+# Install WhaTap Go monitoring agent
+RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-otel.tar.gz
+RUN tar -xvzf whatap-otel.tar.gz -C /
+```
+
+</TabItem>
+
+</Tabs>
+
+## エージェントのデフォルト設定
+
+エージェント設定には、WhaTapプロジェクトのアクセスキーと収集サーバーのIPアドレスが必要です。 [WhaTapモニタリングサービス](https://service.whatap.io)でアプリケーション(Application)商品のプロジェクトに移動してください。 <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agentInstall" className="uitext" /> メニューでアクセス キーと収集サーバーのIPアドレスを確認して準備してください。
+
+### whatap.confファイルを設定する
+
+エージェント設定(_whatap.conf_) ファイルに アクセスキーと 収集サーバーのIPアドレスを設定してください。
+
+```bash
+echo "accesskey={アクセスキー}" >> /usr/whatap/otel/whatap.conf
+echo "whatap.server.host={収集サーバーのIPアドレス}" >> /usr/whatap/otel/whatap.conf
+```
+
+### 環境変数で設定する
+
+環境変数(Environment)でアクセスキーと 収集サーバーのIP アドレスを設定できます。
+
+```ini
+WHATAP_ACCESSKEY={アクセスキー}
+WHATAP_SERVER_HOST={収集サーバーのIPアドレス}
+WHATAP_OTEL_GRPC_SERVER_PORT={Grpc server listening port}
+```
+
+:::note
+
+環境変数と_whatap.conf_ファイルをすべて設定した場合、_whatap.conf_ファイルの設定値が優先されます。
+
+:::
+
+## Opentelemetry Collectorの設定
+
+whatap-otelでデータを伝達するようにOTLP Exporterを設定してください。
+
+```yaml title="otel-collector-config.yaml" showLineNumbers{13,14-15}
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+processors:
+  batch:
+
+exporters:
+  logging:
+  # otlp exporterにwhatap-otelをターゲットに設定します。 
+  otlp:
+    endpoint: 127.0.0.1:6600
+    tls:
+      insecure: true
+
+service:
+  pipelines:
+    traces:
+      receivers:
+      - otlp
+      processors:
+      - batch
+      exporters:
+      - logging
+      - otlp
+  telemetry:
+    logs:
+      level: debug #activate debug mode
+```
+
+-   エンドポイント(`endpoint`)設定：`127.0.0.1:6600`
+
+    ローカルにインストールしたエージェントが使用するデフォルトのポートは 6600です。
+
+-   `tls.secure`設定：`insecure: true`
+
+-   gzip圧縮設定をデフォルトで使用します。 (gzip使用)
+
+:::info
+
+OpenTelemetry Collectorインストールの詳細については、次のリンクを参考にしてください。
+
+-   [Install the Collector](https://opentelemetry.io/docs/collector/installation/)
+
+-   [Building a custom collector](https://opentelemetry.io/docs/collector/custom-collector/)
+
+:::
+
+## その他のプラットフォーム
+
+### Tyk Gateway
+
+[Tyk Gateway](https://tyk.io/)のOpenTelemetry機能を活性化した上でOpenTelemetry Collecotrを通じてトランザクション情報を確認することができます。 
+
+1.  OpenTelemetry CollectorをTyk Gatewayに接続します。 
+
+```json title="tyk.conf"
+{
+  "log_level": "debug" ,
+  "listen_port": 8081,
+
+  ...
+
+  "opentelemetry": {
+      "enabled": true,
+      "endpoint": "111.222.333.444:4317",
+  }
+}
+```
+
+1.  接続されたOpenTelemetry Collectorにwhatap-otelエージェントが接続されたら、トレース情報を収集します。
+
+## モニタリングの開始
+
+-   すべての設定を完了した後、アプリケーションサーバーを再起動すると、エージェントが情報を収集します。 <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" />メニューに移動して、収集されたデータをリアルタイムでモニタリングしてください。
+
+-   エージェント設定の詳細については、[次の文書](set-agent)を確認してください。

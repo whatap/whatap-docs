@@ -1,0 +1,40 @@
+---
+id: php-2_7_0
+title: PHP Agent v2.7.0
+toc_max_heading_level: 2
+pagination_next: release-notes/php/php-2_6_3
+---
+
+January 10, 2024
+
+-   <Status>Feature</Status> PHP 8.3 has been supported.
+
+-   <Status>Feature</Status> Trace context (W3C) is supported in the multi-transaction tracing.
+
+    **OpenTelmetry** that supports the trace context, and the multi-transaction tracing correlation are supported.
+
+-   <Status>Changed</Status> Modified the resource collection for SQL, Method, and HTTP call.
+
+    The differences between resources (CPU, memory) at the start of the transaction and the start of each step are collected.
+
+-   <Status>Changed</Status> Modified to newly create the configuration file (<em>whatap.conf</em>) if nothing.
+
+-   <Status>Fixed</Status> Fixed the error where the cumulative number of outbound calls are collected wrong as the cumulative time in the active transation list.
+
+-   <Status>Fixed</Status> Fixed the whatap-php service (<code>whatap-php.service</code>) execution error in the Linux environment.
+
+-   <Status>Fixed</Status> Fixed the segmentation errors from PHP 8.1.0 to 8.1.2 (collection for user functions is stopped).
+
+:::info
+
+**Download**
+
+| OS Name                         | Architecture | File format |                                    Download                                   |
+| ------------------------------- | :----------: | :---------: | :---------------------------------------------------------------------------: |
+| Red Hat / CentOS / Amazon linux |    x86 x64   |     RPM     | [Download](http://repo.whatap.io/centos/6/x86_64/whatap-php-2.7-0.x86_64.rpm) |
+| Ubuntu 12 and above / Debian    |     amd64    |     DEB     |  [Download](http://repo.whatap.io/debian/unstable/whatap-php_2.7.0_amd64.deb) |
+| Freebsd 10 or later             |    x86 x64   |     TXZ     |       [Download](http://repo.whatap.io/freebsd/10/whatap-php-2.7.0.txz)       |
+| Alpine linux                    |    x86 x64   |   tar gzip  |    [Download](http://repo.whatap.io/alpine/x86_64/whatap-php-2.7.0.tar.gz)    |
+
+:::
+ 

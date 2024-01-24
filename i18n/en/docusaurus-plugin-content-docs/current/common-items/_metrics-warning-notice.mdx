@@ -1,4 +1,4 @@
-Home > Select Project > **_Alert_** > **_Event Setting_** > **_Metrics_** tab
+Home > Select Project > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > Select <Cmdname sid="metrics" className="uitext" /> tab
 
 ## What is the metrics event?
 
@@ -29,7 +29,7 @@ For more information about metrics, see [the following](../metrics/common-metric
 
 ## Metrics Event
 
-Select **_Metrics_** on the screen in **_Alert_** > **_Event Setting_**. Select **_+ Add alert policy_** on the upper right of the screen. The **_Metrics Events_** window appears.
+Select <Cmdname sid="metrics" className="uitext" /> on the screen in <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />. Select <Cmdname sid="add_notification" className="uitext" /> on the upper right of the screen. The <Cmdname sid="metrics_event" className="uitext" /> window appears.
 
 <ImgLang img='set-events-metrics.png' desc='Metrics Event' />
 
@@ -45,11 +45,11 @@ For more information about the event templates for metrics, see [the following](
 
 ### Entry of basic information{#basic-info}
 
--   **_Event name_**: Enter the name of the event to add.
+-   <Cmdname sid="event_name" className="uitext" />: Enter the name of the event to add.
 
--   **_Activate Events_**: Select whether or not to activate events.
+-   <Cmdname sid="enable_events" className="uitext" />: Select whether or not to activate events.
 
--   **_Templates_**: Events can be easily set after selecting a template. If the template is not to be used, select **_Not used_**.
+-   <Cmdname sid="template" className="uitext" />: Events can be easily set after selecting a template. If the template is not to be used, select <Cmdname sid="metrics_option_disabled" className="uitext" />.
 
     <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
 
@@ -61,35 +61,43 @@ For more information about the event templates for metrics, see [the following](
 
     </InDoc>
 
--   **_Category_**: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
+-   <Cmdname sid="category" className="uitext" />: The unit to identify the metrics data. It is a mandatory value for setting the metrics events.
 
     <ImgLang img='set-event-select-category.png' desc='Metrics Event - Category' />
 
-    -   The **_category_** selection options display ![Leader line 1](/img/number-01.png) **_name_** and ![Leader line 2](/img/number-02.png) data collection interval, and ![Leader line 3](/img/number-03.png) **_key_**. When setting up an event, use the key value of the category.
+    -   The <Cmdname sid="category" className="uitext" /> selection options display <LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" /> and <LinkImage img="number-02.png" className="ico" /> data collection interval, and <LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />. When setting up an event, use the key value of the category.
 
-    -   **_Category_** retrieves metrics data being collected from projects within the last 3 hours and displays them in a list. If the collection interval is not displayed in the **_category_** selection options, you can select **_Enter it yourself_** option to enter a category key.
+    -   <Cmdname sid="category" className="uitext" /> retrieves metrics data being collected from projects within the last 3 hours and displays them in a list. If the collection interval is not displayed in the <Cmdname sid="category" className="uitext" /> selection options, you can select <Cmdname sid="enter_category_self" className="uitext" /> option to enter a category key.
 
--   **_Level_**
+-   <Cmdname sid="level" className="uitext" />
 
     -   It displays the alert level when an event occurs. The levels are <span class='vslow'>Critical</span>, <span class='slow'>Warning</span>, and <span style={{color:'#757575'}}>Info</span>. When setting the <span class='vslow'>Critical</span> and <span class='slow'>Warning</span> levels, the <Cmdname sid="resolved_event_notification" className="uitext" /> selection option is enabled.
 
     -   <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
 
--   **_Message_**
+-   <Cmdname sid="message" className="uitext" />
 
-    -   Enter a notification message to be displayed when events occur. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter in the variable must be included in **_Category_** of the selected metrics data. You can see the tags or field keys that can be entered in **_Sitemap_** > **_Metrics search_**.
+    -   Enter a notification message to be displayed when events occur. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />.
 
     -   If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
 
-    -   **_Test alert_** triggers alerts based on the **_event name_**, **_category_**, **_level_**, and **_message_** to check messages.
+-   <Cmdname sid="alert_test" className="uitext" />
 
--   **_Event Rule_**
+    By generating alerts based on the required items: <Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, and <Cmdname sid="message" className="uitext" />, this function checks the messages.
+
+    :::note
+
+    To use a reception test, enter or select required items in <Cmdname sid="event_name" className="uitext" />, <Cmdname sid="category" className="uitext" />, <Cmdname sid="level" className="uitext" />, and <Cmdname sid="message" className="uitext" />.
+
+    :::
+
+-   <Cmdname sid="metrics_event_rules" className="uitext" />
 
     <ImgLang img='set-event-condition.png' desc='Event Rule' />
 
     By entering the ![Leader line 4](/img/number-04.png) field, ![Leader line 5](/img/number-05.png) operator selection, and ![Leader line 6](/img/number-06.png) threshold value, set the event rule.
 
--   **_Filtering event targets_**
+-   <Cmdname sid="alert_object_filtering" className="uitext" />
 
     <ImgLang img='set-event-filtering.png' desc='Filtering event targets' />
 
@@ -97,19 +105,25 @@ For more information about the event templates for metrics, see [the following](
 
 :::note
 
--   For available basic syntaxes and operators in **_Event Rule_** and **_Filtering event targets_**, see [the following](#condition-guide).
+-   For available basic syntaxes and operators in <Cmdname sid="metrics_event_rules" className="uitext" /> and <Cmdname sid="alert_object_filtering" className="uitext" />, see <Link to="#condition-guide">the following</Link>.
 
--   For the **_event rule_** and **_filtering event targets_** options, you can select **_Selector_** or **_Direct Input_** mode.
+-   For the <Cmdname sid="metrics_event_rules" className="uitext" /> and <Cmdname sid="alert_object_filtering" className="uitext" /> options, you can select <Cmdname sid="metrics_rule_select" className="uitext" /> or <Cmdname sid="metrics_rule_direct" className="uitext" />.
 
--   After event settings have been saved, the option values are managed in **_Direct Input_** mode. Afterwards, if the mode is switched to **_Selector_**, the option values can be initialized.
+-   After the event setting is made, the option value is managed as the <Cmdname sid="metrics_rule_direct" className="uitext" /> option. Afterwards, if switched to the <Cmdname sid="metrics_rule_select" className="uitext" /> option, the option value can be initialized.
+
+-   Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&*()_+=-[]`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>${}</code>) as shown in the following example:
+
+    ```text
+    ${4xxErrorType} == '401'
+    ```
 
 :::
 
-### **_Notification setting_**{#set-receive-event}
+### Notification setting {#set-receive-event}
 
 <ImgLang img='set-event-receive.png' desc='Notification Setting' />
 
--   **_Number of event_**: For the selected period, if the events set in **_Event Rule_** occur as many as the input, an alert is sent.
+-   <Cmdname sid="number_of_event" className="uitext" />: For the selected period, if the events set in <Cmdname sid="metrics_event_rules" className="uitext" /> occur as many as the input, an alert is sent.
 
     :::note
 
@@ -121,17 +135,17 @@ For more information about the event templates for metrics, see [the following](
 
 -   <Cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />: This option can prevent excessive alert notifications from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in <Cmdname sid="event_history" className="uitext" />.
 
--   **_Related category_**: You can set the related categories up to 5 and see them when checking notifications.
+-   <Cmdname sid="related_category" className="uitext" />: You can set the related categories up to 5 and see them when checking notifications.
 
--   **_Event Receiving Tag_**: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
+-   <Cmdname sid="event_tag" className="uitext" />: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
 
     :::note
 
-    In **_Alert_** > **_Notification Setting_**, you can set the tags in project members and 3rd-party plug-ins.
+    In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins.
 
     :::
 
-### **_Testing event rules_**
+### Testing event rules
 
 <ImgLang img='set-event-test.png' desc='Alert Test' />
 
@@ -139,7 +153,7 @@ You can check how many alerts have occurred by enabling the event conditions you
 
 ## Composite metrics event
 
-To use the **_composite metrics events_**, you have to understand the following concepts:
+To use the <Cmdname sid="composite_metrics" className="uitext" />, you have to understand the following concepts:
 
 <Xclude product='npm'>
 
@@ -155,18 +169,18 @@ To use the **_composite metrics events_**, you have to understand the following 
 
 -   [MXQL](../mxql/mxql-overview)
 
-The **_composite metrics event_** can generate events by using more complex rules along with the metrics data and send alerts. Composite metrics can be used effectively in the following situations:
+The <Cmdname sid="composite_metrics" className="uitext" /> can generate events by using more complex rules along with the metrics data and send alerts. Composite metrics can be used effectively in the following situations:
 
 -   You have to make comprehensive decisions on data received from multiple agents.
 -   You have to compare the past data with the current ones to make judgment.
 
 Metrics events make judgment whenever metrics are received from the agents. On the other hand, the composite metrics event stores the metrics collected from each agent into the database. Then they are reviewed to judge the event. Because of this characteristic, the data from multiple agents can be used collectively or the past data can be used. However, there is a barrier to entry that requires to use **_MXQL_**, the WhaTap's unique data query language. Therefore, event templates are provided so that users can effectively set events only if they understand the basic **_MXQL_**. Basic MXQL users can apply events by just modifying the query for event target filtering and conditions.
 
-1.  In **_Alert_** > **_Event Setting_**, select **_Metrics_** on the screen. 
+1.  Select <Cmdname sid="metrics" className="uitext" /> on the screen in <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />.
 
-2.  In the **_Composite Metrics_** section, select **_+ Add alert policy_** on the right. 
+2.  In the <Cmdname sid="composite_metrics" className="uitext" /> section, select <Cmdname sid="add_notification" className="uitext" /> on the right.
 
-3.  If the **_Composite Metrics_** window appears, select **_Creating as a Chart_**.
+3.  If the <Cmdname sid="composite_metrics" className="uitext" /> window appears, select <Cmdname sid="create_new_composite_mxql_event" className="uitext" />.
 
 The Event Setting window appears. 
 
@@ -192,12 +206,9 @@ For more information about the event templates for composite metrics, see [the f
 
 </InDoc>
 
-### **_Query event data_**
+### Query event data
 
-The **_composite metrics event_** creates event conditions based on the metrics data query language, **MXQL**. The **_Creating as a Chart_** function provides a combo box function for automatic completion of **MXQL**. This template is used to query the event data, construct a chart, and then directly enter the event generation conditions. Set the event by selecting **_Widget_** or **_Text_**.
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+The <Cmdname sid="composite_metrics" className="uitext" /> creates event conditions based on the metrics data query language, <b>MXQL</b>. The <Cmdname sid="create_new_composite_mxql_event" className="uitext" /> function provides a combo box function for automatic completion of <b>MXQL</b>. This template is used to query the event data, construct a chart, and then directly enter the event generation conditions. Set the event by selecting <Cmdname sid="widget" className="uitext" /> or <Cmdname sid="text" className="uitext" />.
 
 <Tabs>
 <TabItem value='widget' label='Widget'>
@@ -206,15 +217,15 @@ Through the option to configure the time series charts, you can autocomplete **M
 
 <ImgLang img='set-event-data-view.png' desc='Event data inquiry' />
 
--   **_Filter_**: Select an event condition target. Enter values for ![Leader line 1](/img/number-01.png) formula, ![Leader line 2](/img/number-02.png) tag, and ![Leader line 3](/img/number-03.png) filtering values to create filtering conditions.
+-   <Cmdname sid="filter" className="uitext" />: Select an event condition target. Enter values for <LinkImage img="number-01.png" className="ico" /> formula, <LinkImage img="number-02.png" className="ico" /> tag, and <LinkImage img="number-03.png" className="ico" /> filtering values to create filtering conditions.
 
     <ImgLang img='set-event-cmetric-filter.png' desc='Filter' />
 
--   **_Group by_**: Select the grouped metrics data. You can select multiple items.
+-   <Cmdname sid="groupby" className="uitext" />: Select the grouped metrics data. You can select multiple items.
 
--   **_Time Unit_**: Set the time criterion for dividing the grouped data. You can set it by selecting **_sec_**, **_min_**, and **_hour_**.
+-   <Cmdname sid="timeunit" className="uitext" />: Set the time criterion for dividing the grouped data. You can set it by selecting <Cmdname sid="second" className="uitext" />, <Cmdname sid="minute" className="uitext" />, and <Cmdname sid="hour" className="uitext" />.
 
--   **_Field_**: Select a field to use as an event generation condition. You can select multiple items.
+-   <Cmdname sid="field" className="uitext" />: Select a field to use as an event generation condition. You can select multiple items.
 
 </TabItem>
 <TabItem value='text' label='Text'>
@@ -226,47 +237,47 @@ The editing window appears where you can modify **MXQL** in plain text.
 </TabItem>
 </Tabs>
 
-### **_Alert_**
+### Notification
 
 Enter basic data for alert settings.
 
--   **_Activate Events_**: You can select to enable or disable the events by clicking the toggle button.
+-   <Cmdname sid="enable_events" className="uitext" />: You can select to enable or disable the events by clicking the toggle button.
 
--   **_Level_**: Select a level among <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>, and <span style={{color: '#757575'}}>Info</span>.
+-   <Cmdname sid="level" className="uitext" />: Select a level among <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>, and <span style={{color: '#757575'}}>Info</span>.
 
-    **_Notify when event status is resolved._**: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
+    <Cmdname sid="resolved_event_notification" className="uitext" />: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
 
--   **_Title_**: Enter the title of the alert.
+-   <Cmdname sid="title" className="uitext" />: Enter the title of the alert.
 
--   **_Message_**: Enter the notification message displayed upon occurrence of events. By entering `${tag or field key}`, you can apply the variable to the message. The key to enter into the variable must be a value contained in the selected composite metrics data **_category_**. You can see the tags or field keys that can be entered in **_Sitemap_** > **_Metrics search_**.
+-   <Cmdname sid="message" className="uitext" />: Enter the notification message displayed upon occurrence of events. By entering <code>&#36;&#123;tag or field key&#125;</code>, you can apply the variable to the message. The key to enter into the variable must be a value contained in the selected composite metrics data <Cmdname sid="category" className="uitext" />. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />.
 
-### **_Event rule condition_**
+### Alert Policy
 
 Enter the conditions to send alerts.
 
--   **_Time Range_**: Set the time range to view the **MXQL** real-time data for event conditions. You can use only the fields included for viewing the event data.
+-   <Cmdname sid="data_time_range" className="uitext" />: Set the time range to view the <b>MXQL</b> real-time data for event conditions. You can use only the fields included for viewing the event data.
 
     Composite metrics events retrieve metrics in DB for later use. Therefore, first specify the time range to query data. If you select 5 minutes for the data lookup time, the event generation conditions are checked by searching for the data collected for the last 5 minutes. You can set it short when you set any event for recent data, or long when you want to approach statistically for a wide period. For an actual use case, see [the following](#template).
 
--   **_Condition_**: Enter the fields, calculation rules, and thresholds reflected in MXQL.
+-   <Cmdname sid="condition" className="uitext" />: Enter the fields, calculation rules, and thresholds reflected in MXQL.
 
-### **_Additional_**
+### Additional information
 
 Set additional options that are related to receiving alerts.
 
--   **_Interval_**: Check the notification conditions at the selected time interval.
+-   <Cmdname sid="interval" className="uitext" />: Check the notification conditions at the selected time interval.
 
--   **_Silent_**: This option can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in **_Event History_**.
+-   <Cmdname sid="silent" className="uitext" />: This option can prevent excessive alert notifications from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in <Cmdname sid="event_history" className="uitext" />.
 
--   **_Event Receiving Tag_**: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
+-   <Cmdname sid="event_tag" className="uitext" />: If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members.
 
     :::note
 
-    In **_Alert_** > **_Notification Setting_**, you can set the tags in project members and 3rd-party plug-ins.
+    In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins.
 
     :::
 
-### **_Testing event rules_**
+### Test Event Rules
 
 <ImgLang img='set-event-cmetric-test.png' desc='Testing event rules' />
 
@@ -276,15 +287,15 @@ Most of what is included in Event Setting can be specified using **MXQL**. It pr
 
 ## Modifying and deleting metrics events
 
-1.  Go to **_Alert_** > **_Event Setting_** and then select the **_Metrics_** tab. 
+1.  Go to <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> and then select the <Cmdname sid="metrics" className="uitext" /> tab.
 
 2.  In the event list, select ![Edit icon](/img/ico-edit.svg) at the utmost right of the item to modify or delete.
 
-3.  If the metrics or composite metrics event setting window appears, modify each option and then select **_Save_**.
+3.  If the metrics or composite metrics event setting window appears, modify each option and then select <Cmdname sid="save" className="uitext" />.
 
-  To delete the selected event, select ![Delete icon](/img/ico-trash.svg) **_Delete_** on the upper right of the event setting window.
+  To delete the selected event, select ![Delete icon](/img/ico-trash.svg) <Cmdname sid="delete" className="uitext" /> on the upper right of the event setting window.
 
-## Guide to select generation conditions and targets{#condition-guide}
+## Guide to select generation conditions and targets {#condition-guide}
 
 For the event generation conditions and selection of event targets on metrics alerts, use the same syntaxes. For event generation conditions, use the tag key as a variable. For selection of event targets, use the field key as a variable.
 
@@ -400,37 +411,37 @@ You can conveniently search for embedded strings via the wildcard (`*`).
 | [isEmpty](#isempty)       | isEmpty(param1)            | If param1 is `null` or `EmptyString("")`, the value becomes `true`. Otherwise, the value becomes `false`.        |
 | [isNotEmpty](#isnotempty) | isNotEmpty(param1)         | If param1 is not `null` nor `EmptyString("")`, the value becomes `true`. Otherwise, the value becomes `false`.   |
 
-#### startsWith{#startwith}
+#### startsWith {#startwith}
 
 ```java
 startsWith(Key, "Value")
 ```
 
-#### endsWith{#endswith}
+#### endsWith {#endswith}
 
 ```java
 endsWith(Key, "Value")
 ```
 
-#### isNull{#isnull}
+#### isNull {#isnull}
 
 ```java
 isNull(Key)
 ```
 
-#### isNotNull{#isnotnull}
+#### isNotNull {#isnotnull}
 
 ```java
 isNotNull(Key)
 ```
 
-#### isEmpty{#isempty}
+#### isEmpty {#isempty}
 
 ```java
 isEmpty(Key)
 ```
 
-#### isNotEmpty{#isnotempty}
+#### isNotEmpty {#isnotempty}
 
 ```java
 isNotEmpty(Key)

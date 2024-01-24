@@ -1,6 +1,8 @@
-Home > Select Project > **_Dashboard_** > **_Transaction Map_**
+Home > Select Project > <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="transaction_map" className="uitext" />
 
-The transaction map chart expresses the response time of each complete transaction in the form of distribution chart. Same as the hitmap, you can find and analyze problems based on the distribution patterns. The hitmap displays transactions that are grouped every 5 minutes, while the transaction map displays transactions individually.
+The <Cmdname sid="transaction_map" className="uitext" /> chart expresses the response time of each complete transaction in the form of distribution chart. Same as the hitmap, you can find and analyze problems based on the distribution patterns. The <Cmdname sid="hitmap" className="uitext" /> displays transactions that are grouped every 5 minutes, while the <Cmdname sid="transaction_map" className="uitext" /> displays transactions individually.
+
+<ImgLang img='dashboard-transaction-map.png' desc='Transaction map' />
 
 :::tip 
 
@@ -8,77 +10,110 @@ The transaction map chart expresses the response time of each complete transacti
 
 The hitmap chart displays the total number of transactions during a specific period. Differences are expressed in color where the number of occurrences is high. In case of the hitmap, the sums for each section are stored separately. Accordingly, you can check the trend over a relatively long time. However, because transactions are aggregated and displayed, it is difficult to know individual transactions.
 
--   To analyze the distribution of the long-term, high-volume transactions, use the hit map analysis. (**_Project Menu_** > **_Analysis_** > **_HITMAP_**)
--   To do performance test, or analyze the transaction distribution within 1 to 5 minutes upon a failure, or check the transaction distribution without limiting the execution time, check the **_Transaction map_**.
+-   To analyze the distribution of the long-term, high-volume transactions, use the hit map analysis. (<Cmdname sid="project_menu" className="uitext" /> > <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />)
+
+-   To do performance test, or analyze the transaction distribution within 1 to 5 minutes upon a failure, or check the transaction distribution without limiting the execution time, check the <Cmdname sid="transaction_map" className="uitext" />.
 
 :::
 
 :::note
 
--   For more information about the **_Hitmap_** menu, see [the following](trs-view). 
+-   For more information about <Cmdname sid="hitmap" className="uitext" />, see <Link to="trs-view">the following</Link>.
 
--   For more information about the analysis method of the **_hitmap transaction_** chart, see [the following](../best-practice-guides/about-apm-hitmap-class).
+-   For more information about the analysis method of the <Cmdname sid="hitmap_transaction" className="uitext" /> chart, see <Link to="../best-practice-guides/about-apm-hitmap-class">the following</Link>.
 
 -   If the user's PC time has been set to be older than the server time, the data may not appear on the chart if the server time and the user's PC time differ by more than 5 minutes.
 
 :::
 
-<ImgLang img='dashboard-transaction-map.png' desc='Transaction map' />
+## Analyzing a trace
 
-## ![](/img/number-01.png) agent area
+If you drag the chart area in <Cmdname sid="transaction_map" className="uitext" />, the <Cmdname sid="TTL06209" className="uitext" /> window appears that you can see the transaction information details. You can see the transaction list and steps under each transaction at once.
 
-You can check the transaction maps for each agent by selecting an agent included in the project. You can select duplicate items and select all agents by selecting **_Select All_**. Depending on the selected agent, the distribution of the transaction map changes.
+<ImgLang img='dashboard-txmap-tx-analysis.png' desc='Trace Analysis' />
 
-If you select ![Down arrow icon](/img/down-arrow.svg) on the upmost right, you can filter or search agents by server or type.
+:::note
 
-## ![](/img/number-02.png) Time and search area
+For more information about <Cmdname sid="TTL06209" className="uitext" />, see <Link to="dashboard-hitmap-trace">the following</Link>.
 
--   **_End Time_**
+:::
 
-    To express the response times of the complete transactions on the chart in real time in the form of distribution chart, select **_Real Time_**. To check the chart based on a specific time, select **_End Time_** and then set the time.
+## Selecting the agent
 
--   **_Duration_**: You can check the distribution of transactions within the maximum of 5 minutes.
+You can check the transaction for each agent by selecting an agent included in the project. You can select duplicate items and select all agents by selecting <Cmdname sid="select_all" className="uitext" />. Depending on the selected agent, the distribution of the <Cmdname sid="transaction_map" className="uitext" /> changes.
 
--   **_Filter_**: The services, domains, and IPs that match the entered string are filtered. 
+<ImgLang img='dashboard-txmap-select-agent.png' desc='Select Agent' />
 
-    1.  Select **_Add Filter_**.
+If you select ![Number 1](/img/number-01.png) ![Down arrow icon](/img/down-arrow.svg) on the upmost right, you can filter or search agents by server or type.
 
-    2.  Click **_+ Add_** to enter the desired string. You can enter multiple strings.
+### Selecting agents by category
 
-        <ImgLang img='transactionmap-filter.png' desc='Add filter' />
+You can see the transaction map by selecting agents for the group classified by the agent setting from the drop-down menu.
 
-    3.  If the filtered strings are all entered, select **_Apply_**.
+-   <Cmdname sid="type_oid" className="uitext" />: You can select an individual agent or all agents.
 
-## ![](/img/number-03.png) **_Top 30_**
+-   <Cmdname sid="type_onode" className="uitext" />: The agent list classified as <code>whatap.onode</code> in the agent configuration can be selected.
 
-The Top 30 list is sorted in descending order of the count among the filtered transactions according to the set metrics. If you click a service item in the list, the transaction is added as a filter.
+-   <Cmdname sid="type_okind" className="uitext" />: The agent list classified as <code>whatap.okind</code> in the agent configuration can be selected.
 
-## ![](/img/number-04.png) **_Transaction Map_**
+### Selecting by agent search
 
-This map displays the distribution of transactions. 
+Enter a desired agent name in the Search field. If you select <Cmdname sid="apply_immediately" className="uitext" />, only the corresponding agent list is selected.
+
+## Viewing the past data
+
+<Cmdname sid="transaction_map" className="uitext" /> provides the real-time monitoring by default. Transactions appear at the interval set in <Cmdname sid="duration" className="uitext" />. To see the historical data, select <Cmdname sid="end_time" className="uitext" />.
+
+<ImgLang img='dashboard-txmap-select-time.png' desc='Time selection' />
+
+Select the desired date and time, and then select <Cmdname sid="ok" className="uitext" />. You can see transactions for 5 minutes based on the selected time.
+
+:::note
+
+To switch to real-time monitoring after viewing the previous data, select <Cmdname sid="realtime" className="uitext" />.
+
+:::
+
+## Checking the upper list
+
+In the **_Top 30_** section, the list of top 30 items with the highest transactions performed based on <Cmdname sid="TTL06918" className="uitext" />, <Cmdname sid="TTL06101" className="uitext" />, and <Cmdname sid="ip" className="uitext" />. 
+
+<ImgLang img='dashboard-txmap-top30.png' desc='Top 30' />
+
+If you select individual items from the list, they are added as the <Cmdname sid="filter" className="uitext" /> option and then reflected in the <Cmdname sid="transaction_map" className="uitext" /> chart. You can select multiple items.
+
+## Adding filters
+
+You can add filters by selecting individual items from the list in the **_Top 30_** section, but you can directly add filters by entering the desired items. It filters transactions that match the specified string.
+
+1.  In the <Cmdname sid="filter" className="uitext" /> option, select <Cmdname sid="add_filter" className="uitext" /> or <LinkImage img="ico-add.svg" className="ico" />.
+
+2.  Select **_+ Add_**.
+
+3.  Select one of <Cmdname sid="TTL06918" className="uitext" />, <Cmdname sid="TTL06101" className="uitext" />, and <Cmdname sid="ip" className="uitext" />, and then enter the following string:
+
+    <ImgLang img='dashboard-txmap-filter.png' desc='Add Filter' />
+
+    By selecting **_+ Add_**, you can add a filter.
+
+4.  After all the desired filters are added, select **_Apply_**.
+
+Check that the added filters have been applied in the <Cmdname sid="transaction_map" className="uitext" /> chart.
+
+## Configuring the chart
+
+You can change to the settings with desired conditions for chart analysis. Use the options on the upper right of the <Cmdname sid="transaction_map" className="uitext" /> chart.
+
+<ImgLang img='transaction-map-setting.png' desc='Transaction map setting' />
+
+-   Select [Configuration icon](/img/ico-setting.svg) to modify the chart settings. You can select a metric on the Y axis and set the maximum value. To apply the settings, select **_Apply_**.
+
+    :::tip
+
+    For a metric on the Y-axis, select any of <Cmdname sid="TTL06361" className="uitext" />, <Cmdname sid="TTL06364" className="uitext" />, <Cmdname sid="TTL06972" className="uitext" />, and <Cmdname sid="TTL06362" className="uitext" />.
+
+    :::
 
 -   Select ![Up arrow icon](/img/up-arrow.svg) or ![Down arrow icon](/img/down-arrow.svg) to zoom in/out the chart on the Y axis.
 
--   On the upper right, select [Configuration icon](/img/ico-setting.svg) to modify the chart settings. You can select a metric on the Y axis and set the maximum value.
-
-    <ImgLang img='transaction-map-setting.png' desc='Transaction map setting' />
-
--   If **_Error Only_** is selected, only the transactions in error appear on the transaction map.
-
--   If you drag a part of the transaction map, the transaction information appears in the **_TX Trace_** area.
-
-## ![](/img/number-05.png) **_TX Trace_**
-
-To check the detailed trace information for transactions, select ![Detail icon](/img/ico-detail-view.svg). The detailed trace information window appears.
-
-<Xclude product='php,nodejs,golang'>
-
-<ImgLang img="analysis-tx-table-view-mode.png" desc="Table view" />
-
-</Xclude>
-
-<InDoc product='php,nodejs,golang'>
-
-<ImgLang img="analysis-tx-table-view-mode-none-actx.png" desc="Table view" />
-
-</InDoc>
+-   If <Cmdname sid="error_only" className="uitext" /> is selected, only erroneous transactions appear on the chart.

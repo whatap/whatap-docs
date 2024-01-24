@@ -2,9 +2,6 @@
 
 次の案内に従って、環境変数とボリュームを設定してください。
 
-<Tabs>
-<TabItem value="basic" label="기본" default>
-
 トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
 
 ```docker
@@ -18,82 +15,3 @@ env:
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
 
 ```
-
-</TabItem>
-
-<TabItem value="eks" label="EKS Fargate(対応予定)" default>
-
--   **shareProcessNamespaceの設定を追加**
-
-    デプロイメント(Deployment)、またはレプリカセット(ReplicaSet)の_.spec_内のフィールドにユーザーPodリソースを観測するための 
-    `shareProcessNamespace`、`SERVICE ACCOUNT`を追加してください。
-
-    ```docker
-
-    apiVersion: apps/v1
-    kind: Deployment
-    ...
-    spec:
-    ...
-        spec:
-          shareProcessNamespace: true
-          serviceAccount: whatap
-    ...
-
-    ```
-
--   **Kubernetesのコンテナ環境変数の設定**
-
-    トランザクションからNodeとPod情報を収集するには、`NODE_IP`、`NODE_NAME`、`POD_NAME`を環境変数として設定してください。 WhaTap設定ファイルとログファイル用のテンポラリーボリュームを設定します。
-
-    ```docker
-
-    env:
-    - name: NODE_IP
-      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-    - name: NODE_NAME
-      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-    - name: POD_NAME
-      valueFrom: {fieldRef: {fieldPath: metadata.name}}
-
-    ```
-
--   **Sidecar（サイドカー）エージェントの追加**
-
-    ユーザーPod(Pod) リソースの使用量を収集するwhatap-node-agent sidecarコンテナを追加します。
-
-    ```docker
-
-    ...
-      - name: whatap-node-agent
-        image: whatap/kube_mon_sidecar
-        resources:
-          requests:
-            memory: 20Mi
-            cpu: 10m
-          limits:
-            memory: 40Mi
-            cpu: 20m
-        ports:
-          - name: nodeport
-            containerPort: 6600
-        env:
-          - name: NODE_IP
-            valueFrom:
-              fieldRef:
-                fieldPath: status.hostIP
-          - name: NODE_NAME
-            valueFrom:
-              fieldRef:
-                fieldPath: spec.nodeName
-            envFrom:
-            - configMapRef:
-                name: node-license
-    volumes:
-    ...
-
-    ```
-
-</TabItem>
-
-</Tabs>

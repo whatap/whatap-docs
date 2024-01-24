@@ -1,4 +1,4 @@
-WhaTapは、データベースのログモニタリングサービスを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である**_ライブテール_**、**_ログトレンド_**メニューからデータベースの散在したログをひと目で確認することができます。
+WhaTapは、データベースのログモニタリングを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である**_ライブテール_**、**_ログトレンド_**メニューからデータベースの散在したログをひと目で確認することができます。
 
 :::tip
 
@@ -45,7 +45,7 @@ file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
 
 ![AWS RDS Log](/img/aws-rds-log-diagram.png)
 
-AWSはRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの**_ログ_**メニューからRDSのログとイベントを集約して表示します。
+AWSではRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの**_ログ_**メニューからRDSのログとイベントを集約して表示します。
 
 WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストールできます。 **AWS CloudFormation**についての詳細は[次のリンク](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html)を参照してください。
 
@@ -118,9 +118,9 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
     -   **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
 
-    -   **UseReservedConcurrency**: WhaTapRDSの予約された同時性の使用有無です。
+    -   **UseReservedConcurrency**: WhaTap RDSの予約された同時性の使用有無です。
 
-    -   **ReservedConcurrency**: WhaTapRDSが予約された同時性を使用したときに、同時に実行できる最大インスタンスの数です。
+    -   **ReservedConcurrency**: WhaTap RDSが予約された同時性を使用したときに、同時に実行できる最大インスタンスの数です。
 
 2.  ログモニタリングの詳細設定のために、次のリンクへ移動してください。
 

@@ -38,6 +38,50 @@ If you cannot access the email account, contact WhaTap Labs Online Support (mail
 
 :::
 
+## Setting the alert reception
+
+You can set the alert reception media such as email, SMS, and mobile device. 
+
+<!-- SMS 알림 수신 추가하기 -->
+
+{@include: ../common-items/_set-receive-event-sms.mdx} 
+
+<!-- WhatsApp 알림 수신-->
+
+{@include: ../common-items/_set-receive-event-whatsapp.mdx}
+
+### Setting the reception level and alerting time
+
+<ImgLang img='account-set-notification.png' desc='Alert Notification Setting' />
+
+To set the alerting time via email and SMS, select a desired level in <Cmdname sid="level" className="uitext" /> of the <Cmdname sid="notification_setting" className="uitext" /> section.
+
+-   <Cmdname sid="all" className="uitext" />: All alerts can be received.
+
+-   <Cmdname sid="fatal" className="uitext" />: Only fatal alerts can be received.
+
+In <Cmdname sid="date" className="uitext" /> and <Cmdname sid="time" className="uitext" />, you can set the date and time to receive alerts. After all settings are made, select <Cmdname sid="save" className="uitext" />.
+
+:::note
+
+These setting are not applied to alert reception by created or invited projects. The reception settings for previous alerts can be changed in <Cmdname sid="event_receive_configuration" className="uitext" /> for each project.
+
+:::
+
+## Checking the API token
+
+The API token is a parameter required to extract monitoring data being collected through the open API. To reissue the token, select <Cmdname sid="reissue_token" className="uitext" />.
+
+:::note
+
+For more information about the open API, see [the following](openapi).
+
+:::
+
+## Setting up reception of marketing messages
+
+You can opt out of receiving marketing messages from WhaTap. Go to the <Cmdname sid="TTL06539" className="uitext" /> section and then select <Cmdname sid="ITM06537" className="uitext" /> or <Cmdname sid="ITM06538" className="uitext" />. Select <Cmdname sid="save" className="uitext" /> to apply the selected option.
+
 ## Withdrawal
 
 Membership withdrawal must be done manually while logged in to the WhaTap monitoring service.
