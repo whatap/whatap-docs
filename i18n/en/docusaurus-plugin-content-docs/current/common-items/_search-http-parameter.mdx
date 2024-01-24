@@ -12,13 +12,13 @@ You can view the HTTP parameters of the transaction in the <Cmdname sid="TTL0612
 
 You can see the hidden parameters.
 
-<Xclude product='java'>
+<Xclude product='java,kubernetes'>
 
 :::note
 
 -   For the agent settings for HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
--   <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string in the *`WHATAP_HOME`/paramkey.txt* file. You can change it to another string. The key in *paramkey.txt* is required to view the SQL variables and HTTP queries, and stop the threads.
+-   <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string in the <em><code>WHATAP_HOME</code>/paramkey.txt</em> file. You can change it to another string. The key in <em>paramkey.txt</em> is required to view the SQL variables and HTTP queries, and stop the threads.
 
 :::
 
@@ -30,7 +30,19 @@ You can see the hidden parameters.
 
 -   For the agent settings for HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
--   <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string in the *`WHATAP_HOME`/security.conf*(*paramkey.txt*) file. You can change it to another string. It is required to view the SQL variables and HTTP queries and to stop the threads. For more information, see [the following](install-agent#security).
+-   <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string in the <em><code>WHATAP_HOME</code>/security.conf</em>(<em>paramkey.txt</em>) file. You can change it to another string. It is required to view the SQL variables and HTTP queries and to stop the threads. For more information, see <Link to="install-agent#security">the following</Link>.
+
+:::
+
+</InDoc>
+
+<InDoc product='kubernetes'>
+
+:::note
+
+-   For the agent settings for HTTP parameters, see <Link to="../java/agent-transaction#profile_http_parameter" target="_blank">the following</Link>(agent-transaction#profile_http_parameter).
+
+-   <Cmdname sid="BTN06764" className="uitext" />: You can see the decrypted parameter value. The password is a 6-digit string in the <em><code>WHATAP_HOME</code>/security.conf</em>(<em>paramkey.txt</em>) file. You can change it to another string.
 
 :::
 
