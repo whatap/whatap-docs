@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[50431],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[912],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 17738:
+/***/ 72545:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,28 +308,30 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'mobile-app-v1_0_5',
-    title: 'WhaTap Mobile App v1.0.5 (56)',
-    toc_max_heading_level: 3
+    id: 'mobile-app-v1_0_6',
+    title: 'WhaTap Mobile App v1.0.6 (67)',
+    toc_max_heading_level: 3,
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/mobile/mobile-app-v1_0_5",
-    "id": "release-notes/mobile/mobile-app-v1_0_5",
-    "title": "WhaTap Mobile App v1.0.5 (56)",
-    "description": "2023년 12월 22일",
-    "source": "@site/docs/release-notes/mobile/mobile-app-v1.0.5.mdx",
+    "unversionedId": "release-notes/mobile/mobile-app-v1_0_6",
+    "id": "release-notes/mobile/mobile-app-v1_0_6",
+    "title": "WhaTap Mobile App v1.0.6 (67)",
+    "description": "2024년 01월 24일",
+    "source": "@site/docs/release-notes/mobile/mobile-app-v1.0.6.mdx",
     "sourceDirName": "release-notes/mobile",
-    "slug": "/release-notes/mobile/mobile-app-v1_0_5",
-    "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_5",
+    "slug": "/release-notes/mobile/mobile-app-v1_0_6",
+    "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_6",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/mobile/mobile-app-v1.0.5.mdx",
+    "editUrl": "undefined/docs/release-notes/mobile/mobile-app-v1.0.6.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "mobile-app-v1_0_5",
-        "title": "WhaTap Mobile App v1.0.5 (56)",
-        "toc_max_heading_level": 3
+        "id": "mobile-app-v1_0_6",
+        "title": "WhaTap Mobile App v1.0.6 (67)",
+        "toc_max_heading_level": 3,
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
@@ -376,7 +378,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 22일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 24일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "공통"
     }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
@@ -402,7 +404,19 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 다수의 일본어 표기 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, "Fixed"), " 다국어 번역 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 프로젝트 로딩 시간 개선"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 화면 간 이동 시간 개선"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " 차트 범례에서 다국어 제목 표시 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "application"
     }, `Application`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"

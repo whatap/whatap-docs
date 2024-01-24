@@ -621,7 +621,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `차트에서 3시간 이내로 드래그해서 5초 단위의 데이터를 조회할 수 있습니다. 다만 5초 단위의 데이터는 최근 한 달 범위에서만 조회할 수 있습니다. 한 달 이전의 데이터는 5분 요약 데이터로만 볼 수 있습니다. 예를 들어, 40일 전의 락 트릭 데이터를 드래그(드릴다운)해서 5분 요약 데이터를 조회할 수 있으나 5초 데이터는 S 수 없습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+    }, `차트에서 3시간 이내로 드래그해서 5초 단위의 데이터를 조회할 수 있습니다. 다만 5초 단위의 데이터는 최근 한 달 범위에서만 조회할 수 있습니다. 한 달 이전의 데이터는 5분 요약 데이터로만 볼 수 있습니다. 예를 들어, 40일 전의 락 트릭 데이터를 드래그(드릴다운)해서 5분 요약 데이터를 조회할 수 있으나 5초 데이터는 알 수 없습니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "column-info"
     }, `컬럼 정보 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Tabs, {
         groupId: "db-columns",
