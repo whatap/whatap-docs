@@ -2493,15 +2493,15 @@
   },
   "browser-event-history-en.png": {
     "width": 1200,
-    "height": 319
+    "height": 519
   },
   "browser-event-history-ja.png": {
     "width": 1200,
-    "height": 320
+    "height": 520
   },
   "browser-event-history.png": {
     "width": 1200,
-    "height": 315
+    "height": 517
   },
   "browser-fid-widget-en.png": {
     "width": 1200,
@@ -2759,17 +2759,29 @@
     "width": 38,
     "height": 38
   },
+  "cloud-deact-en.png": {
+    "width": 1208,
+    "height": 772
+  },
+  "cloud-deact-ja.png": {
+    "width": 1208,
+    "height": 770
+  },
+  "cloud-deact.png": {
+    "width": 1208,
+    "height": 772
+  },
   "cloud-event-history-en.png": {
     "width": 1200,
-    "height": 434
+    "height": 413
   },
   "cloud-event-history-ja.png": {
     "width": 1200,
-    "height": 435
+    "height": 413
   },
   "cloud-event-history.png": {
     "width": 1200,
-    "height": 430
+    "height": 413
   },
   "cloud-namespace-datainterval-aws-cloudwatch-en.png": {
     "width": 1200,
@@ -3905,15 +3917,15 @@
   },
   "db-event-history-en.png": {
     "width": 1200,
-    "height": 427
+    "height": 433
   },
   "db-event-history-ja.png": {
     "width": 1200,
-    "height": 427
+    "height": 436
   },
   "db-event-history.png": {
     "width": 1200,
-    "height": 426
+    "height": 432
   },
   "db-file-log-notice.png": {
     "width": 1072,
@@ -4985,11 +4997,11 @@
   },
   "event-history-en.png": {
     "width": 1200,
-    "height": 666
+    "height": 686
   },
   "event-history-ja.png": {
     "width": 1200,
-    "height": 668
+    "height": 686
   },
   "event-history-server-en.png": {
     "width": 1200,
@@ -5005,7 +5017,7 @@
   },
   "event-history.png": {
     "width": 1200,
-    "height": 668
+    "height": 683
   },
   "flex-board-mod-en.png": {
     "width": 1200,
@@ -6068,16 +6080,16 @@
     "height": 660
   },
   "k8s-event-history-en.png": {
-    "width": 1226,
-    "height": 777
+    "width": 1200,
+    "height": 683
   },
   "k8s-event-history-ja.png": {
-    "width": 1226,
-    "height": 778
+    "width": 1200,
+    "height": 683
   },
   "k8s-event-history.png": {
-    "width": 1230,
-    "height": 780
+    "width": 1200,
+    "height": 680
   },
   "k8s-event-wt.png": {
     "width": 1212,
@@ -6765,15 +6777,15 @@
   },
   "log-content-search-more-en.png": {
     "width": 800,
-    "height": 359
+    "height": 457
   },
   "log-content-search-more-ja.png": {
     "width": 800,
-    "height": 359
+    "height": 453
   },
   "log-content-search-more.png": {
     "width": 800,
-    "height": 426
+    "height": 458
   },
   "log-content-search.png": {
     "width": 1362,
@@ -6787,9 +6799,25 @@
     "width": 348,
     "height": 54
   },
+  "log-filter-search-en.png": {
+    "width": 1114,
+    "height": 105
+  },
+  "log-filter-search-ja.png": {
+    "width": 1122,
+    "height": 108
+  },
   "log-filter-search.png": {
-    "width": 1127,
+    "width": 1129,
     "height": 112
+  },
+  "log-filter-ui1-en.png": {
+    "width": 1160,
+    "height": 758
+  },
+  "log-filter-ui1-ja.png": {
+    "width": 1160,
+    "height": 746
   },
   "log-filter-ui1.png": {
     "width": 1177,
@@ -7048,12 +7076,12 @@
     "height": 89
   },
   "log-lt-filter-modify-en.png": {
-    "width": 554,
-    "height": 134
+    "width": 1111,
+    "height": 561
   },
   "log-lt-filter-modify-ja.png": {
-    "width": 667,
-    "height": 133
+    "width": 1119,
+    "height": 561
   },
   "log-lt-filter-modify.png": {
     "width": 1125,
@@ -9329,15 +9357,15 @@
   },
   "npm-event-history-en.png": {
     "width": 1200,
-    "height": 319
+    "height": 541
   },
   "npm-event-history-ja.png": {
     "width": 1200,
-    "height": 320
+    "height": 540
   },
   "npm-event-history.png": {
     "width": 1200,
-    "height": 315
+    "height": 542
   },
   "npm-k8s-check-running.png": {
     "width": 600,
