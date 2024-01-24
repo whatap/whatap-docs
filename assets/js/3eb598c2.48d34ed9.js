@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[66403],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[2929],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 39570:
+/***/ 39418:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,78 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dotnet-previous',
-    title: '.NET Agent 지난 버전',
+    id: 'golang-0_1_9',
+    title: 'Go Agent v0.1.9',
     toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/dotnet/dotnet-previous",
-    "id": "release-notes/dotnet/dotnet-previous",
-    "title": ".NET Agent 지난 버전",
-    "description": "* .NET Agent v2.1.0",
-    "source": "@site/docs/release-notes/dotnet/dotnet-previous.mdx",
-    "sourceDirName": "release-notes/dotnet",
-    "slug": "/release-notes/dotnet/dotnet-previous",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-previous",
+    "unversionedId": "release-notes/golang/golang-0_1_9",
+    "id": "release-notes/golang/golang-0_1_9",
+    "title": "Go Agent v0.1.9",
+    "description": "배포일: 2022-04-27",
+    "source": "@site/docs/release-notes/golang/golang-0.1.9.mdx",
+    "sourceDirName": "release-notes/golang",
+    "slug": "/release-notes/golang/golang-0_1_9",
+    "permalink": "/whatap-docs/release-notes/golang/golang-0_1_9",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/dotnet/dotnet-previous.mdx",
+    "editUrl": "undefined/docs/release-notes/golang/golang-0.1.9.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dotnet-previous",
-        "title": ".NET Agent 지난 버전",
+        "id": "golang-0_1_9",
+        "title": "Go Agent v0.1.9",
         "toc_max_heading_level": 2
-    },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": ".NET Agent v2.1.1",
-        "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_1_1"
-    },
-    "next": {
-        "title": "Go Agent v0.3.0",
-        "permalink": "/whatap-docs/release-notes/golang/golang-0_3_0"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: '베타 - 버그 수정',
+        id: '베타---버그-수정',
+        level: 2
+    },
+    {
+        value: 'panic 상황에서 웹 트랜잭션 정보가 수집 안되는 오류 수정',
+        id: 'panic-상황에서-웹-트랜잭션-정보가-수집-안되는-오류-수정',
+        level: 3
+    },
+    {
+        value: '베타 - 업데이트',
+        id: '베타---업데이트',
+        level: 2
+    },
+    {
+        value: 'http status code 수집',
+        id: 'http-status-code-수집',
+        level: 3
+    },
+    {
+        value: 'github.com/labstack/echo',
+        id: 'githubcomlabstackecho',
+        level: 3
+    },
+    {
+        value: 'echo/v4 지원',
+        id: 'echov4-지원',
+        level: 4
+    },
+    {
+        value: 'echo의 HTTPErrorHandler Wrapper 추가',
+        id: 'echo의-httperrorhandler-wrapper-추가',
+        level: 4
+    },
+    {
+        value: '로그 출력',
+        id: '로그-출력',
+        level: 3
+    },
+    {
+        value: 'Http Method를 지정해서 수집을 제외할 수 있는 설정 추가',
+        id: 'http-method를-지정해서-수집을-제외할-수-있는-설정-추가',
+        level: 3
+    }
+];
 const layoutProps = {
     toc
 };
@@ -354,84 +391,126 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `배포일: 2022-04-27`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "베타---버그-수정"
+    }, `베타 - 버그 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "panic-상황에서-웹-트랜잭션-정보가-수집-안되는-오류-수정"
+    }, `panic 상황에서 웹 트랜잭션 정보가 수집 안되는 오류 수정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `net/http`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `github.com/labstack/echo`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `github.com/gorilla/mux`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `github.com/go-gonic/gin`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `recover()`), `를 통해서 오류 정보를 수집하지만, 다시 동일한 panic를 발생시킵니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-go",
+        "metastring": "title='Go'",
+        "title": "'Go'"
+    }, `defer func() {
+  // panic 
+  
+  x := recover()
+  var err error = nil
+  if x != nil {
+    err = fmt.Errorf("Panic: %v", x)
+    
+    // panic 정보 수집
+    trace.Error(ctx, err)
+    err = nil
+  }
+
+  ...
+
+  // 다시 panic 발생
+
+  if x != nil {
+    panic(x)
+  }
+}()
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "베타---업데이트"
+    }, `베타 - 업데이트`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "http-status-code-수집"
+    }, `http status code 수집`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `400 이상의 status code는 오류메세지로 수집합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "githubcomlabstackecho"
+    }, `github.com/labstack/echo`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "echov4-지원"
+    }, `echo/v4 지원`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `기존 echo/whatapecho 패키지 대신에 echo/v4/whatapecho를 사용합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-go",
+        "metastring": "title='Go'",
+        "title": "'Go'"
+    }, `import (
+  "github.com/labstack/echo"
+  
+  "github.com/whatap/go-api/trace"
+  "github.com/whatap/go-api/instrumentation/github.com/labstack/echo/v4/whatapecho"
+)
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+        "id": "echo의-httperrorhandler-wrapper-추가"
+    }, `echo의 HTTPErrorHandler Wrapper 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `HTTPErrorHandler를 통해서 오류 정보를 추가로 수집합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `echo.Context.Error()`), ` 함수가 호출될 때 오류 정보를 수집합니다.Recover 미들웨어가 처리한 panic 정보를 수집합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `whatapecho 미들웨어가 마지막으로 실행 되면 HTTPErrorHandler 정보를 최대한 많이 수집할 수 있습니다. 미들웨어 등록을 최상단에서 설정하고, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `Pre()`), ` 함수를 통해 등록합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-go",
+        "metastring": "title='Go'",
+        "title": "'Go'"
+    }, `func main() {
+  ...
+
+  e := echo.New()
+  //echo DefaultHTTPErrorHandler wrapper
+  e.HTTPErrorHandler = whatapecho.WrapHTTPErrorHandler(e.DefaultHTTPErrorHandler)
+  e.Pre(whatapecho.Middleware())
+  e.Use(middleware.Recover())
+  ...
+}
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "로그-출력"
+    }, `로그 출력`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `debug 옵션을 설정하면 모니터링 관련된 로그를 출력합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini"
+    }, `debug=true
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `트랜잭션, DB 커넥션, Sql 실행, Http 외부 호출에 대한 로그를 추가했습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "http-method를-지정해서-수집을-제외할-수-있는-설정-추가"
+    }, `Http Method를 지정해서 수집을 제외할 수 있는 설정 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `지정한 uri 에 대해서 특정 HTTP Method로 요청되는 트랜잭션의 수집을 제외합니다. 콤마(,) 구분으로 여러개의 uri, Method를 등록할 수 있습니다. 대소문자 구분은 없습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_1_0"
-    }, `.NET Agent v2.1.0`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `ignore_http_method_urls`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `#Default : ""#`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `#Type : String#`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_9"
-    }, `.NET Agent v2.0.9`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "p"
+    }, `ignore_http_method`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_8"
-    }, `.NET Agent v2.0.8`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `#Default : ""#`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_7"
-    }, `.NET Agent v2.0.7`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+    }, `#Type : String#`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_6"
-    }, `.NET Agent v2.0.6`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_5"
-    }, `.NET Agent v2.0.5`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_4"
-    }, `.NET Agent v2.0.4`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_3"
-    }, `.NET Agent v2.0.3`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_2"
-    }, `.NET Agent v2.0.2`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_1"
-    }, `.NET Agent v2.0.1`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
-        parentName: "p",
-        "href": "dotnet-2_0_0"
-    }, `.NET Agent v2.0.0`)))));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
+        parentName: "pre",
+        "className": "language-ini"
+    }, `ignore_http_method_urls=/index, /sql/select
+ignore_http_method=options, connect
+`)))));
 }
 MDXContent.isMDXComponent = true;
 

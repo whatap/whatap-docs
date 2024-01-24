@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": ".NET Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/dotnet/dotnet-previous"
+        "title": "Go Agent v0.3.1",
+        "permalink": "/whatap-docs/release-notes/golang/golang-0_3_1"
     },
     "next": {
         "title": "Go Agent v0.2.4",

@@ -427,25 +427,13 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `요구 사항`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+    }, `요구 사항`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `와탭 에이전트 1.5.0 버전 이상(1.5.0 버전 미만일 경우 기존 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `와탭 에이전트 1.5.0 버전 이상이 필요합니다. 1.5.0 버전 미만일 경우 기존 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `마스터 메타 정보`)), ` 화면)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `와탭 서버 2.7.2 버전 이상 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `와탭 프론트 Service 2.1.0 버전 이상`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `쿠버네티스 마스터 에이전트는 클러스터에 있는 Pod, 서비스, ReplicaSet 등의 오브젝트에 대한 매니페스트를 하루에 한 번씩 자동으로 수집합니다. 해당 데이터는 날짜별로 저장되어 사용자가 특정 날짜 기준의 클러스터 상태를 쉽게 확인할 수 있습니다. 수집한 데이터는 날짜별 비교가 가능해 시간에 따른 클러스터의 변화를 파악하기 용이합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `또한 사용자는 쿠버네티스 마스터 에이전트의 Deployment 배포 전 컨테이너 환경변수를 설정해 수집 시간의 타임존을 자유롭게 지정할 수 있습니다. 해당 설정 방법은 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+    }, `마스터 메타 정보`)), ` 화면이 제공됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `쿠버네티스 마스터 에이전트는 클러스터에 있는 Pod, 서비스, ReplicaSet 등의 오브젝트에 대한 매니페스트를 하루에 한 번씩 자동으로 수집합니다. 해당 데이터는 날짜별로 저장되어 사용자가 특정 날짜 기준의 클러스터 상태를 쉽게 확인할 수 있습니다. 수집한 데이터는 날짜별 비교가 가능해 시간에 따른 클러스터의 변화를 파악하기 용이합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `또한 사용자는 쿠버네티스 마스터 에이전트의 Deployment 배포 전 컨테이너 환경변수를 설정해 수집 시간의 타임존을 자유롭게 지정할 수 있습니다. 해당 설정 방법은 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "#object-manifest-evn"
     }, `컨테이너 환경변수`), ` 안내를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[69593],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[60574],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 37905:
+/***/ 19457:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,60 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'preview-2_2_0x',
-    title: 'Preview 2.2.0.a',
-    toc_max_heading_level: 2,
-    draft: false
+    id: 'golang-previous',
+    title: 'Go Agent 지난 버전',
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/preview/preview-2_2_0x",
-    "id": "release-notes/preview/preview-2_2_0x",
-    "title": "Preview 2.2.0.a",
-    "description": "https://preview.whatap.io에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다.",
-    "source": "@site/docs/release-notes/preview/preview-2.2.0.a.mdx",
-    "sourceDirName": "release-notes/preview",
-    "slug": "/release-notes/preview/preview-2_2_0x",
-    "permalink": "/whatap-docs/release-notes/preview/preview-2_2_0x",
+    "unversionedId": "release-notes/golang/golang-previous",
+    "id": "release-notes/golang/golang-previous",
+    "title": "Go Agent 지난 버전",
+    "description": "* Go Agent 0.1.9",
+    "source": "@site/docs/release-notes/golang/golang-previous.mdx",
+    "sourceDirName": "release-notes/golang",
+    "slug": "/release-notes/golang/golang-previous",
+    "permalink": "/whatap-docs/release-notes/golang/golang-previous",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/preview/preview-2.2.0.a.mdx",
+    "editUrl": "undefined/docs/release-notes/golang/golang-previous.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "preview-2_2_0x",
-        "title": "Preview 2.2.0.a",
-        "toc_max_heading_level": 2,
-        "draft": false
+        "id": "golang-previous",
+        "title": "Go Agent 지난 버전",
+        "toc_max_heading_level": 2
     },
-    "sidebar": "previewSidebar",
+    "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Preview Release Notes",
-        "permalink": "/whatap-docs/release-notes/preview/"
+        "title": "Go Agent v0.1.10",
+        "permalink": "/whatap-docs/release-notes/golang/golang-0_1_10"
     },
     "next": {
-        "title": "Preview 2.1.0.a",
-        "permalink": "/whatap-docs/release-notes/preview/preview-2_1_0x"
+        "title": "Server Agent v2.5.0",
+        "permalink": "/whatap-docs/release-notes/server/server-2_5_0"
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: 'Preview 2.2.0.a0',
-        id: 'preview-220a0',
-        level: 2
-    },
-    {
-        value: '<code>공통</code>',
-        id: '공통',
-        level: 3
-    }
-];
-const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
-    };
-const Status = makeShortcode("Status");
-const Cmdname = makeShortcode("Cmdname");
+const toc = [];
 const layoutProps = {
     toc
 };
@@ -373,47 +354,42 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("head", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("meta", {
-        name: "robots",
-        content: "noindex, nofollow"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
+        parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://preview.whatap.io"
-    }, `https://preview.whatap.io`), `에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "preview-220a0"
-    }, `Preview 2.2.0.a0`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 25일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
-        class: "indentTab"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "공통"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
-        parentName: "h3"
-    }, `공통`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        "href": "golang-0_1_9"
+    }, `Go Agent 0.1.9`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " SSO 계정 연동 기능 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `화면 오른쪽 위에 프로필 아이콘을 선택한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "MNU07360",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "ssoIntegrations",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), `을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        parentName: "li",
-        "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `SSO 계정 연동에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "/whatap-docs/account/sso"
-    }, `다음 문서`), `를 참조하세요.`))))));
+        "href": "golang-0_1_8"
+    }, `Go Agent 0.1.8`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "golang-0_1_7"
+    }, `Go Agent 0.1.7`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "golang-0_1_6"
+    }, `Go Agent 0.1.6`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "golang-0_1_5"
+    }, `Go Agent 0.1.5`)))));
 }
 MDXContent.isMDXComponent = true;
 

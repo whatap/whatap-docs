@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56598],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[85429],{
 
-/***/ 13540:
+/***/ 36850:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -99,7 +99,7 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-master-node-agent-temp',
+    id: 'install-master-node-agent',
     title: '마스터 및 노드 에이전트 설치',
     description: '설치 안내 페이지에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요.',
     tags: [
@@ -110,22 +110,20 @@ const frontMatter = {
         '노드',
         '에이전트 설치'
     ],
-    hide_table_of_contents: false,
-    toc_max_heading_level: 2,
-    draft: false
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/install-master-node-agent-temp",
-    "id": "kubernetes/install-master-node-agent-temp",
+    "unversionedId": "kubernetes/install-master-node-agent",
+    "id": "kubernetes/install-master-node-agent",
     "title": "마스터 및 노드 에이전트 설치",
     "description": "설치 안내 페이지에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요.",
-    "source": "@site/docs/kubernetes/install-master-node-agent-temp.mdx",
+    "source": "@site/docs/kubernetes/install-master-node-agent.mdx",
     "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/install-master-node-agent-temp",
-    "permalink": "/whatap-docs/kubernetes/install-master-node-agent-temp",
+    "slug": "/kubernetes/install-master-node-agent",
+    "permalink": "/whatap-docs/kubernetes/install-master-node-agent",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/install-master-node-agent-temp.mdx",
+    "editUrl": "undefined/docs/kubernetes/install-master-node-agent.mdx",
     "tags": [
         {
             "label": "쿠버네티스",
@@ -154,7 +152,7 @@ const metadata = {
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-master-node-agent-temp",
+        "id": "install-master-node-agent",
         "title": "마스터 및 노드 에이전트 설치",
         "description": "설치 안내 페이지에 따라 마스터 및 노드 에이전트 설치 과정을 진행하세요.",
         "tags": [
@@ -165,9 +163,16 @@ const metadata = {
             "노드",
             "에이전트 설치"
         ],
-        "hide_table_of_contents": false,
-        "toc_max_heading_level": 2,
-        "draft": false
+        "toc_max_heading_level": 2
+    },
+    "sidebar": "kubeSidebar",
+    "previous": {
+        "title": "에이전트 설치",
+        "permalink": "/whatap-docs/kubernetes/install"
+    },
+    "next": {
+        "title": "애플리케이션 에이전트 설치",
+        "permalink": "/whatap-docs/kubernetes/install-application-agent"
     }
 };
 const assets = {};
@@ -283,12 +288,11 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \\
         value: "openshift",
         label: "OpenShift 환경",
         mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
-        alt: "OpenShift",
-        src: (__webpack_require__(52252)/* ["default"] */ .Z),
-        width: "800",
-        height: "558"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "kube-install-openshift.png",
+        desc: "OpenShift",
+        mdxType: "ImgLang"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
@@ -535,16 +539,6 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-not-running-agent-monitoring-bf973783a5f1db1cf4ec16fb3a2c93c1.svg");
-
-/***/ }),
-
-/***/ 52252:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/kube-install-openshift-5c98690b240ef8c2ee188617dfe5523e.png");
 
 /***/ })
 
