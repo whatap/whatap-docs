@@ -7,12 +7,23 @@ tags:
   - Kubernetes Monitoring
   - Application Installation
   - Java
+toc_max_heading_level: 2
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This process adds the settings for applying the agent to the JVM option of the Java application running on a Docker container and packages the container image.
+At the bottom of ***Management*** > ***Agent installation***, click ***Install Application*** > Select the ***Docker Java*** tab in Install guide.
+
+This process adds the settings for applying the agent to the JVM option of the Java application running on the Docker container and packages the container images as follows:
+
+:::note 
+
+-   EKS Fargate is to be supported later. 
+
+-   Git example code is provided to help you understand the Java application integration process.See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/java/springboot).
+
+:::
 
 :::note 
 
@@ -22,17 +33,132 @@ EKS Fargate is to be supported later.
 
 ## Download agent
 
-<Tabs>
+<Tabs groupId='k8stype2'>
+
 <TabItem value="dockerinstall" label="Docker Install" default>
 
-{@include: _docker-build.mdx}  
+To install the WhaTap application agent, create the *whatap.conf* file. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
 
-1.  Release the Docker image with the WhaTap agent installed.
+```bash
+cat >{YOUR_PROJECT_ROOT}/whatap.conf <<EOL
+whatap.server.host={proxyServer}
+EOL
+```
+
+:::note
+
+The *whatap.conf* file can be managed using the ConfigMap function in the user Kubernetes environment.
+
+:::
+
+<Tabs>
+
+<TabItem value='latest' label='Including the latest version of the agent in the application image' default>
+
+The following guides you to include **the latest version of the agent** in the application image.
+
+1.  To include the WhaTap agent in the application image, add the following in the Dockerfile's final image build step. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
+
+    ```docker
+    # Create the WhaTap agent directory in the user container
+    RUN mkdir -p /whatap
+
+    # Copy the WhaTap Java agent to the user container
+    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
+
+    # Copy the created whatap.conf file to the user container
+    COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
+    ```
+
+2.  Add the following to the startup command of Dockerfile.
+
+    ```bash
+    -javaagent:/whatap/whatap.agent.kube.jar -Dwhatap.micro.enabled=true
+    ```
+
+    See the following definition example of the following Dockerfile. 
+
+    ```docker title='Dockerfile' showLineNumbers {4,7}
+    FROM openjdk:8-jdk-slim
+    RUN mkdir -p /app && mkdir /whatap
+    WORKDIR /app
+    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
+    COPY ./whatap.conf /whatap
+    COPY ./target/myApp.jar /app/
+    CMD ["java","-javaagent:/whatap/whatap.agent.kube.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+    EXPOSE 8080
+    ```
+
+3.  Build the Docker. Change `{YOUR_DOCKERFILE_DIR}` to the path where Dockerfile is located. 
+
+    ```docker
+    cd {YOUR_DOCKERFILE_DIR}
+    docker build -t {IMAGE_NAME} .
+    ```
 
 </TabItem>
+
+<TabItem value='choice' label='Including the specified version of the agent in the application image' default>
+
+The following guides you to include **the specified version of the agent** in the application image.
+
+1.  To include the WhaTap agent in the application image, add the following in the Dockerfile's final image build step. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
+
+    ```docker
+    # Create the WhaTap agent directory in the user container
+    RUN mkdir -p /whatap
+
+    # Copy the WhaTap Java agent to the user container
+    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
+
+    # Copy the created whatap.conf file to the user container
+    COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
+    ```
+
+2.  Check the version of the WhaTap agent. 
+
+    ```bash
+    docker run whatap/kube_mon ls /data/agent/micro | grep -E 'whatap\.agent-(.*?\.)(.*?\.)(.*?\.)jar' | sort | tail -1
+
+    # Displaying Sample
+    ## whatap.agent-X.Y.Z.jar
+    ```
+
+3.  Add the following to the startup command of Dockerfile. In **X.Y.Z**, enter the agent version that you checked before. 
+
+    ```bash
+    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
+    ```
+
+    See the following definition example of the following Dockerfile.
+
+    ```docker title='Dockerfile' showLineNumbers {4,7}
+    FROM openjdk:8-jdk-slim
+    RUN mkdir -p /app && mkdir /whatap
+    WORKDIR /app
+    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
+    COPY ./whatap.conf /whatap
+    COPY ./target/myApp.jar /app/
+    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+    EXPOSE 8080
+    ```
+
+4.  Build the Docker. Change `{YOUR_DOCKERFILE_DIR}` to the path where Dockerfile is located.
+
+    ```docker
+    cd {YOUR_DOCKERFILE_DIR}
+    docker build -t {IMAGE_NAME} .
+    ```
+
+</TabItem>
+
+</Tabs>
+
+</TabItem>
+
 <TabItem value="direct" label="Direct Installation">
 
-1.  Select **_Download_** to download the installation file (_whatap.agent.java.tar.gz_).
+1.  Select ***Download*** to download the installation file (*whatap.agent.java.tar.gz*).
 
 2.  Upload the dockerfile to the server and then unzip the file.
 
@@ -46,44 +172,41 @@ EKS Fargate is to be supported later.
 
     :::
 
-3.  Check the settings in _whatap.conf_.
+3.  When unzipped, the *whatap* directory is created. Check the settings in the *whatap.conf* file under the *whatap* directory, and then modify it as follows:
 
     ```ini
-    license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-    whatap.server.host={collection server IP}
+    license={licenseKey}
+    whatap.server.host={proxyServer}
     ```
 
-4.  Create the _paramkey.txt_ file and then enter a 6-letter alphanumeric password.
+4.  Add the following to the startup command of Dockerfile. Check the agent file under the *whatap* directory, and then enter the version in **X.Y.Z**.
 
-5.  See the following example to create a Dockerfile.
+    ```bash
+    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
+    ```
+
+    See the following definition example of the following Dockerfile.
 
     ```bash title='Dockerfile'
     FROM openjdk:8-jdk-alpine
-
-    # whatap
-    RUN mkdir -p /whatap
-
-    COPY ./whatap/whatap.conf /whatap/
-    COPY ./whatap/paramkey.txt /whatap/
-    COPY ./whatap/whatap-virtual-X.Y.Z.jar whatap-virtual-X.Y.Z.jar
-    COPY ./whatap/whatap.agent-X.Y.Z.jar /whatap/
-
-    EXPOSE 8085
-
-    ENTRYPOINT ["java", "-javaagent:/whatap/whatap.agent-X.Y.Z.jar", "-Dwhatap.micro.enabled=true", "-cp", "whatap-virtual-X.Y.Z.jar", "-Dwhatap.port=8085", "-Duser.timezone=Asia/Seoul", "-Dfile.encoding=UTF-8", "com.virtual.App"]
+    RUN mkdir -p /app && mkdir /whatap
+    WORKDIR /app
+    COPY ./whatap.agent-X.Y.Z.jar /whatap/
+    COPY ./whatap.conf /whatap/
+    COPY ./target/myApp.jar myApp.jar
+    COPY ./paramkey.txt /whatap/
+    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+    EXPOSE 8080
     ```
-
-    :::tip
-
-    For Java 17 or later, add the `--add-opens=java.base/java.lang=ALL-UNNAMED` option related to the reflection.
-
-    :::
 
 :::note
 
--   _whatap-virtual-X.Y.Z.jar_: Monitoring target (sample application)
--   _whatap.agent-X.Y.Z.jar_: WhaTap agent
--   If the agent's file name is _whatap.agent-1.2.3.jar_, change the **X.Y.Z** part to **1.2.3**.
+-   *whatap-virtual-X.Y.Z.jar*: Monitoring target (sample application)
+
+-   *whatap.agent-X.Y.Z.jar*: WhaTap agent
+
+-   If the agent's file name is *whatap.agent-1.2.3.jar*, change the **X.Y.Z** part to **1.2.3**.
+
 -   For more information about addition of JVM options, see [the following](https://docs.whatap.io/java/install-agent#addjvmopt).
 
 :::
@@ -92,4 +215,109 @@ EKS Fargate is to be supported later.
 
 </Tabs>
 
-{@include: _check-install-agent.mdx} 
+:::tip
+
+For Java 17 or later, add the `--add-opens=java.base/java.lang=ALL-UNNAMED` option related to the reflection.
+
+:::
+
+### Creating the paramkey file
+
+Create the *paramkey.txt* file in the top-level path of the project, and then enter a 6-letter alphanumeric password.
+
+-   The *paramkey.txt* file is used when decrypting parameters during monitoring. 
+
+-   The password example is as follows: `ABCDEF`
+
+## Configuring the container environment variables
+
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
+
+```yaml
+env:
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: OKIND
+	value: {YOUR_OKIND_NAME}
+- name: license
+	value: {licenseKey}
+- name: whatap_server_host
+	value: {proxyServer}
+- name: whatap_micro_enabled
+	value: "true"
+```
+
+See the following example:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #DeploymentName
+  labels:
+    app: #AppLabel
+spec:
+  selector:
+    matchLabels:
+      app: #AppLabel
+	replicas: 3
+  template:
+    metadata:
+      labels:
+        app: #AppLabel
+		spec:
+		  containers:
+			- name: #ContainerName
+        image: nginx
+        ports:
+        - containerPort: 80
+			  env:
+		    - name: NODE_IP
+	        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+				- name: NODE_NAME
+		      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+		    - name: POD_NAME
+		      valueFrom: {fieldRef: {fieldPath: metadata.name}}
+				- name: OKIND
+          value: #DeploymentName
+				- name: license
+					value: {licenseKey}
+				- name: whatap_server_host
+					value: {proxyServer}
+				- name: whatap_micro_enabled
+					value: "true"
+```
+
+:::note
+
+**Roles of environment variables**
+
+-   `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
+
+-   `NODE_NAME`: Collects the name of the node where the current Pod is running.
+
+-   `POD_NAME`: Collects the name of the current Pod.
+
+-   `OKIND` (optional): Groups applications for Pods. If set to a deployment name, the corresponding Pods are grouped together.
+
+-   `license`: Key for agent authentication.
+
+-   `whatap_server_host`: Host IP of the WhaTap collection server
+
+-   `whatap_micro_enabled`: Enables integration with containers.
+
+:::
+
+## Checking the agent installation
+
+-   To check whether the agent has been installed, go to ***Dashboard*** > ***Application Service Dashboard***.
+
+-   If you have manually installed the downloaded file but cannot see the agent in ***Dashboard***, check the following.
+
+    -   Execute the command, `ps -ef | grep whatap` in the container, and then check whether the agent options have been applied properly.
+
+    -   Check the content of the container in the */whatap/logs* path. Agent logs are output in the format of *logs/`{whatap configuration file name}`-yyyymmdd.log*.

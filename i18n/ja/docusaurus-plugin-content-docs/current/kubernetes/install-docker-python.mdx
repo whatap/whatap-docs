@@ -9,7 +9,10 @@ tags:
   - Python
 ---
 
-**_管理_** > **_エージェントインストール_** > 下段の**_アプリケーションインストール_** クリック > 設置案内の中で **_Docker Python_** タブを選択
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+***管理*** > ***エージェントインストール*** > 下段の***アプリケーションインストール*** クリック > 設置案内の中で ***Docker Python*** タブを選択
 
 Dockerコンテナベースで実行するPythonアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする過程を次のように案内します。 Kubernetesアプリケーションをリリーズするために、ドッカーイメージが必要です。 次の過程を通じてwhatap-pythonパッケージがインストールされているドッカー画像を作成します。
 
@@ -48,7 +51,7 @@ RUN pip3 install --upgrade whatap-python
 
 ## エージェントの設定及び実行
 
-アプリケーションを実行する前に、Pythonエージェントの作業ディレクトリを設定し、デフォルトの設定ファイルを作成します。 設定ファイル(_entrypoint.sh_)を通じてエージェントに認証情報を伝達し、ログの追跡有無を設定します。
+アプリケーションを実行する前に、Pythonエージェントの作業ディレクトリを設定し、デフォルトの設定ファイルを作成します。 設定ファイル(*entrypoint.sh*)を通じてエージェントに認証情報を伝達し、ログの追跡有無を設定します。
 
 <details>
 <summary>設定ファイル(entrypoint.sh)完成例</summary>
@@ -92,7 +95,7 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
     export WHATAP_HOME=${PWD}
     ```
 
-2.  `WHATAP_HOME`で設定したパスに_whatap.conf_ファイルを作成するように、次のコマンドを実行してください。 `$`で表される変数は、エージェント構成に不可欠な設定値であり、アプリケーションをリリーズする_yaml_ファイルを通じて設定します。
+2.  `WHATAP_HOME`で設定したパスに*whatap.conf*ファイルを作成するように、次のコマンドを実行してください。 `$`で表される変数は、エージェント構成に不可欠な設定値であり、アプリケーションをリリーズする*yaml*ファイルを通じて設定します。
 
     ```bash
     whatap-setting-config \
@@ -120,7 +123,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::note 
 
--   _yaml_作成例は、次の[コンテナ環境変数の設定](#k8s-env)を参考にしてください。
+-   *yaml*作成例は、次の[コンテナ環境変数の設定](#k8s-env)を参考にしてください。
 
 -   ライセンス(`license`)は、WhaTapのユーザー認証情報です。 **外部に公開してはいけません**。
 
@@ -128,7 +131,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ### スクリプト実行の例
 
-次のDockerfile定義の例を参考にしてください。 _entrypoint.sh_スクリプトを実行する完成した例です。
+次のDockerfile定義の例を参考にしてください。 *entrypoint.sh*スクリプトを実行する完成した例です。
 
 ```docker
 FROM python:3.10
@@ -136,7 +139,7 @@ WORKDIR /app
 ADD . /app/
 RUN pip3 install --upgrade whatap-python 
 
-#entrypoint.shスクリプトをコンテナで実行する権限を付与します。
+# entrypoint.shスクリプトをコンテナで実行する権限を付与します。
 RUN chmod +x ./entrypoint.sh
 
 # コンテナ作成時にentrypoint.sh スクリプトを実行します。
@@ -145,7 +148,7 @@ CMD ["./entrypoint.sh"]
 
 ### 追加設定
 
-次の設定は、選択事項として必要な場合に限って使用してください。 設定ファイル(_entrypoint.sh_)に次の追加設定の他にも、ログ及びトランザクション関連の設定が可能です。 その他の追加設定の場合、[次の文書](https://docs.whatap.io/python/set-agent)を参考にしてください。 
+次の設定は、選択事項として必要な場合に限って使用してください。 設定ファイル(*entrypoint.sh*)に次の追加設定の他にも、ログ及びトランザクション関連の設定が可能です。 その他の追加設定の場合、[次の文書](https://docs.whatap.io/python/set-agent)を参考にしてください。 
 
 -   **エージェントグループ化** 
 
@@ -163,7 +166,7 @@ CMD ["./entrypoint.sh"]
 
 ## コンテナ環境変数の設定{#k8s-env}
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ_yaml_ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
 
 ```yaml
 	  env:
@@ -229,11 +232,11 @@ spec:
 
 -   `whatap_server_host`：WhaTap収集サーバーのホストIPです。
 
--   `app_name`：アプリケーションのエージェントを識別する名前です。 エージェント識別の詳細については、[次の文書]](https://docs.whatap.io/python/agent-name)を参考にしてください。
+-   `app_name`: アプリケーションを識別するためのエージェント名の構成要素です。
 
--   `app_process_name`：CPU、Heap Memoryなど収集する対象プロセスを設定します。 例としてuwsgi、gunicornなどがあります。
+-   `app_process_name`: アプリケーションを識別するためのエージェント名(ONAME)のコンポーネントです。アプリケーションプロセス名のアプリケーションプロセスのCPU、Heap Memoryなどを収集する対象プロセスを設定します。
 
--   `okind`(選択事項)：Podに該当するアプリケーションをグループ化します。 デプロイメント(Deployment) 名に設定時に、該当するPodを一つにグループ化します。
+-   `okind`(選択事項)：Podに該当するアプリケーションをグループ化します。 デプロイメント(Deployment) 名に設定すると、該当するPodを一つにグループ化します。
 
 -   `NODE_IP`: 現在のPodがホストされているノード(Node)のIPアドレスを収集します。
 
@@ -241,10 +244,14 @@ spec:
 
 -   `POD_NAME`: 現在のPodの名前を収集します。
 
+
+
+-   `whatap_micro_enabled`：コンテナとの連動を活性化します。
+
 :::
 
 ## エージェントのインストール確認
 
--   エージェントが正常にインストールされたことを確認するには、**_ダッシュボード_** > **_アプリケーションサービスダッシュボード_**メニューに移動してください。
+-   エージェントが正常にインストールされたことを確認するには、***ダッシュボード*** > ***アプリケーションサービスダッシュボード***メニューに移動してください。
 
 -   コンテナで`ps -ef | grep whatap_python`コマンドを実行し、WhaTap Pythonサービスが正常に実行されているかを確認してください。 

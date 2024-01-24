@@ -12,13 +12,15 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This process applies the WhaTap monitoring agent to the Node.js application running on the Docker container and packages the container image.
+At the bottom of ***Management*** > ***Agent installation***, click ***Install Application*** > Select the ***Docker Node.js*** tab in Install guide.
+
+This process applies the WhaTap monitoring agent to the Node.js application running on the Docker container and packages the container image as follows. 
 
 :::note 
 
 -   EKS Fargate is to be supported later. 
 
--   To help you understand the Node.js application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express).
+-   Git example code is provided to help you understand the Node.js application integration process. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/nodejs/express).
 
 :::
 
@@ -38,45 +40,109 @@ npm update whatap
 
 ## Agent CONFIG.
 
-Copy the _whatap.conf_ file from _node_modules/whatap_ to the root directory of your Node.js application. Modify the copied _whatap.conf_ file by referencing the following.
-
-```ini
-license=XXXXXXXXXXXXXX-XXXXXXXXXXXXXX-XXXXXXXXXXXXXX
-whatap.server.host={collection server IP}
-whatap_micro_enabled=true
-```
-
-## Usage
-
 Add the following code to the first line of your application's main module.
 
-```javascript title='Example' showLineNumbers {1}
-var WhatapAgent = require('whatap').NodeAgent;
-
+```javascript title='Example' 
+const WhatapAgent = require('whatap').NodeAgent;
 WhatapAgent.NodeAgent;
-import http from 'http';
-import setupApp from '../src/app';
-let server = null;
-const port = normalizePort(process.env.PORT || '3000');
 ```
 
-To use ECMAScript (ES), add the following code.
+When using ECMAScript (ES), add the following code:
 
 ```javascript
 import WhatapAgent from 'whatap';
 WhatapAgent.NodeAgent;
 ```
 
-## Environment variables
+## Configuring the container environment variables
 
-```ini
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
+
+```yaml
 env:
-  - name: NODE_IP
-    valueFrom: {fieldRef: {fieldPath: status.hostIP}}
-  - name: NODE_NAME
-    valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
-  - name: POD_NAME
-    valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: OKIND
+	value: {YOUR_OKIND_NAME}
+- name: license
+	value: {licenseKey}
+- name: whatap_server_host
+	value: {proxyServer}
+- name: whatap_micro_enabled
+	value: "true"
 ```
 
-{@include: _check-install-agent.mdx}
+See the following example:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #DeploymentName
+  labels:
+    app: #AppLabel
+spec:
+  selector:
+    matchLabels:
+      app: #AppLabel
+	replicas: 3
+  template:
+    metadata:
+      labels:
+        app: #AppLabel
+		spec:
+		  containers:
+			- name: #ContainerName
+        image: nginx
+        ports:
+        - containerPort: 80
+			  env:
+		    - name: NODE_IP
+	        valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+				- name: NODE_NAME
+		      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+		    - name: POD_NAME
+		      valueFrom: {fieldRef: {fieldPath: metadata.name}}
+				- name: OKIND
+          value: #DeploymentName
+				- name: license
+					value: {licenseKey}
+				- name: whatap_server_host
+					value: {proxyServer}
+				- name: whatap_micro_enabled
+					value: "true"
+```
+
+:::note
+
+**Roles of environment variables**
+
+-   `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
+
+-   `NODE_NAME`: Collects the name of the node where the current Pod is running.
+
+-   `POD_NAME`: Collects the name of the current Pod.
+
+-   `OKIND` (optional): Groups applications for Pods. If set to a deployment name, the corresponding Pods are grouped together.
+
+-   `license`: Key for agent authentication.
+
+-   `whatap_server_host`: Host IP of the WhaTap collection server
+
+-   `whatap_micro_enabled`: Enables integration with containers.
+
+:::
+
+## Checking the agent installation
+
+-   To check whether the agent has been installed, go to ***Dashboard*** > ***Application Service Dashboard***.
+
+-   If you have manually installed the downloaded file but cannot see the agent in ***Dashboard***, check the following.
+
+    -   Execute the command, `ps -ef | grep whatap` in the container, and then check whether the agent options have been applied properly.
+
+    -   Check the content of the container in the */whatap/logs* path. 

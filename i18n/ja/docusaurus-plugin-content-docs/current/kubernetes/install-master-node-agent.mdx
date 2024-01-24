@@ -1,5 +1,5 @@
 ---
-id: install-master-node-agent-temp
+id: install-master-node-agent-temp-ja
 title: マスターおよびNodeエージェントのインストール
 description: インストール手順のページに従って、マスターおよびNodeエージェントのインストールプロセスを進めてください。
 tags:
@@ -16,7 +16,7 @@ toc_max_heading_level: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-次のように、マスター及びノードエージェントのインストール過程を案内します。 **_インストール案内_**画面と同じプロセスです。
+次のように、マスター及びノードエージェントのインストール過程を案内します。 ***インストール案内***画面と同じプロセスです。
 
 :::note 
 
@@ -82,7 +82,7 @@ gcloudコマンドのインストールの詳細については、[グーグル�
 
 ![OpenShift](/img/kube-install-openshift.png)
 
-**_インストール方法_**画面で**_OpenShift環境の場合の追加設定_**セクションを開いて**_whatap_openshift_scc.yaml_**ボタンを選択してください。 ファイルをダウンロードした後、次のコマンドを実行してください。
+***インストール方法***画面で***OpenShift環境の場合の追加設定***セクションを開いて***whatap_openshift_scc.yaml***ボタンを選択してください。 ファイルをダウンロードした後、次のコマンドを実行してください。
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -94,7 +94,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成
 
-ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントを生成してください。
+ユーザーのKubernetesバージョンとContainer Runtimeの*YAML*ファイルをダウンロードしてエージェントを生成してください。
 
 1.  次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
@@ -104,11 +104,11 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-check-version.svg)
 
-2.  **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
+2.  ***エージェントのインストール***画面で**VERSION**と**CONTAINER-RUNTIME**の*YAML*ファイルを選択し***ダウンロード***ボタンをクリックしてください。
 
     <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
 
-3.  ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
+3.  ダウンロードした*YAML*ファイルをマスターNodeにアップロードしてください。
 
 4.  エージェントを作成するには、次のコマンドを実行してください。 
 
@@ -123,7 +123,7 @@ oc create -f whatap_openshift_scc.yaml
 
 :::note
 
-**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。**デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
+**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。**デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、*YAML*ファイルを使用してこれらの設定を変更することができます。
 
 :::
 
@@ -137,7 +137,7 @@ kubectl get pod -n whatap-monitoring
 
 #### Running状態の場合
 
-次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。 マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。 [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクトリスト**_とダッシュボード_** >**_コンテナマップ_**メニューから性能情報を収集することを確認してください。 
+次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。 マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。 [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクトリスト***とダッシュボード*** >***コンテナマップ***メニューから性能情報を収集することを確認してください。 
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
@@ -165,7 +165,7 @@ kubectl get pod -n whatap-monitoring
 
 :::note
 
--   アプリケーションエージェントのインストールを進めるには、メニューの画面右下の**_アプリケーションエージェントインストール_**ボタンを選択してください。 詳細については、[次の文書](install-application-agent)を参照してください。
+-   アプリケーションエージェントのインストールを進めるには、メニューの画面右下の***アプリケーションエージェントインストール***ボタンを選択してください。 詳細については、[次の文書](install-application-agent)を参照してください。
 -   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

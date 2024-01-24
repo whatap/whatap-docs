@@ -9,7 +9,7 @@ tags:
   - PHP
 ---
 
-**_管理_** > **_エージェントインストール_** > 下段の**_アプリケーションインストール_** クリック > 設置案内の中で **_Docker PHP_** タブを選択
+***管理*** > ***エージェントインストール*** > 下段の***アプリケーションインストール*** クリック > 設置案内の中で ***Docker PHP*** タブを選択
 
 Dockerコンテナベースで実行するPHPアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする過程を次のように案内します。 
 
@@ -83,13 +83,13 @@ RUN tar -xvzf whatap-php.tar.gz -C /
 -   次のコマンドを使用してインストールスクリプトを設定してください。 WhaTapアクセスキー、サーバーIP情報を入力すると、PHP環境情報を自動的に収集します。
 
     ```docker
-    RUN (echo "[アクセスキー]"; echo "[サーバーIP]")|/usr/whatap/php/install.sh
+    RUN (echo "[発行されたアクセスキー]"; echo "[発行されたサーバーIP]")|/usr/whatap/php/install.sh
     ```
 
 -   次のような方法で、PHP環境情報を直接入力することもできます。 
 
     ```docker
-    # RUN /usr/whatap/php/install.sh -l [アクセスキー] -s [サーバーIP] -v [PHPバージョンx.x] -i [php.iniのフルパス] -p [プロセス名] -z [thread safety]
+    # RUN /usr/whatap/php/install.sh -l [発行されたアクセスキー] -s [発行されたサーバーIP] -v [PHPバージョンx.x] -i [php.iniのフルパス] -p [プロセス名] -z [thread safety]
     RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
     ```
 
@@ -101,7 +101,7 @@ RUN tar -xvzf whatap-php.tar.gz -C /
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ_yaml_ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
 
 ```yaml
 
@@ -154,7 +154,7 @@ spec:
 アプリケーション開始コマンドの前にwhatap-php開始コマンドを追加してください。 
 
 ```docker'
-sh -c "/usr/whatap/php/whatap-php start && [アプリケーション開始コマンド]"
+sh -c "/usr/whatap/php/whatap-php start && [アプリケーションの起動コマンド]"
 ```
 
 </TabItem>
@@ -191,10 +191,10 @@ ps -ef | grep whatap_php
 
 ## エージェントのインストール確認
 
-エージェントが正常にインストールされたかを確認するには、<Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" />メニューへ移動してください。
+エージェントが正常にインストールされたかを確認するには、***ダッシュボード*** > ***アプリケーションサービスダッシュボード***メニューへ移動してください。
 
-ダウンロードしたファイルをインストールした後に<Cmdname sid="dashboard" className="uitext" />メニューからエージェントが表示されない場合は、次の事項を確認してください。
+ダウンロードしたファイルをインストールした後に***ダッシュボード***メニューからエージェントが表示されない場合は、次の事項を確認してください。
 
 -   コンテナで`ps -ef | grep whatap`コマンドを実行し、エージェントオプションを適用されていることを確認してください。
 
--   該当コンテナ内の_/usr/whatap/php/logs_経路の内容を確認してください。 エージェントログは、_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_形式のファイル名として出力されます。
+-   該当コンテナ内の*/usr/whatap/php/logs*経路の内容を確認してください。 エージェントログは、*logs/whatap-`{boot、またはinstall}`-yyyymmdd.log*形式のファイル名として出力されます。
