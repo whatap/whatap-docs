@@ -9,18 +9,192 @@ tags:
   - PHP
 ---
 
-<!--에이전트 다운로드-->
+At the bottom of ***Management*** > ***Agent installation***, click ***Install Application*** > Select the ***Docker PHP*** tab in Install guide.
 
-{@include: ../common-items/_php-docker-download-agent.mdx}
+This process applies the WhaTap monitoring agent to the PHP application running on the Docker container and packages the container image as follows. 
 
-<!--에이전트 설정-->
+:::note 
 
-{@include: ../common-items/_php-docker-setting-agent.mdx}
+EKS Fargate is to be supported later. 
 
-<!--K8s 환경 변수 및 볼률 설정-->
+:::
 
-{@include: ../common-items/_php-docker-setting-k8s.mdx}
+## Download agent
 
-<!--모니터링 시작하기-->
+Install the whatap-php package when building your PHP application docker image.
 
-{@include: ../common-items/_php-docker-start-monitoring.mdx}
+<Tabs>
+<TabItem value="rc" label="Red Hat/CentOS" default>
+
+```docker title='Red Hat/CentOS'
+
+RUN rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+RUN yum install -y whatap-php
+
+```
+
+</TabItem>
+
+<TabItem value="du" label="Debian/Ubuntu" default>
+
+```docker title='Debian/Ubuntu'
+
+RUN wget https://repo.whatap.io/debian/release.gpg -O -| apt-key add -
+RUN wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+RUN dpkg -i whatap-repo_1.0_all.deb
+RUN apt-get update
+RUN apt-get install -y whatap-php
+
+```
+
+</TabItem>
+
+<TabItem value="al" label="Amazon Linux" default>
+
+```docker title='Amazon Linux'
+
+RUN rpm --import https://repo.whatap.io/centos/release.gpg
+RUN echo "[whatap]" | tee /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "name=whatap packages for enterprise linux" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "baseurl=https://repo.whatap.io/centos/latest/\$basearch" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "enabled=1" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN echo "gpgcheck=0" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+RUN yum install -y whatap-php
+
+```
+
+</TabItem>
+
+<TabItem value="apl" label="Alpine Linux" default>
+
+```docker title='Alpine Linux'
+
+RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
+RUN tar -xvzf whatap-php.tar.gz -C /
+
+```
+
+</TabItem>
+
+</Tabs>
+
+## Agent CONFIG.
+
+-   Use the following command to set the installation script. If you enter the WhaTap access key and server IP, the PHP environment data is automatically collected.
+
+    ```docker
+    RUN (echo "[granted access key]"; echo "[granted server IP]")|/usr/whatap/php/install.sh
+    ```
+
+-   Using the following method, you can directly enter the PHP environment settings. 
+
+    ```docker
+    # RUN /usr/whatap/php/install.sh -l [granted access key] -s [granged server IP] -v [PHP version x.x] -i [the full path of php.ini] -p [process name] -z [thread safety]
+    RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
+    ```
+
+:::note 
+
+Be careful not to expose the **access key** to images that are in Docker Public status.
+
+:::
+
+## Configuring the container environment variables
+
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
+
+```yaml
+
+env:
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+
+```
+
+See the following example: 
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: # Pod Name
+  labels: # Pod Labels
+spec:
+  containers:
+	  env:
+    - name: NODE_IP
+      valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+    - name: NODE_NAME
+      valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+    - name: POD_NAME
+      valueFrom: {fieldRef: {fieldPath: metadata.name}}
+```
+
+:::note 
+
+**Roles of environment variables**
+
+-   `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
+
+-   `NODE_NAME`: Collects the name of the node where the current Pod is running.
+
+-   `POD_NAME`: Collects the name of the current Pod.
+
+:::
+
+## Running the agent
+
+<Tabs>
+<TabItem value="cm" label="Command" default>
+
+Add the whatap-php startup command before the application startup command. 
+
+```docker'
+sh -c "/usr/whatap/php/whatap-php start && [the application startup command]"
+```
+
+</TabItem>
+
+<TabItem value="sup" label="Supervisor" default>
+
+In case of starting the application as supervisor, see the following code to add the whatap-php service.
+
+```docker
+
+RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "command = /usr/whatap/php/whatap-php start" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autorestart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+
+```
+
+</TabItem>
+
+</Tabs>
+
+Execute the following command to check whether the WhaTap service has been run normally. When the application server runs, it begins collecting monitoring information.
+
+```docker
+
+ps -ef | grep whatap_php
+
+```
+
+## Checking the agent installation
+
+To check whether the agent has been installed, go to ***Dashboard*** > ***Application Service Dashboard***.
+
+If you have manually installed the downloaded file but cannot see the agent in ***Dashboard***, check the following.
+
+-   Execute the command, `ps -ef | grep whatap` in the container, and then check whether the agent options have been applied properly.
+
+-   Check the content of the container in the */usr/whatap/php/logs* path. The file name of the agent log is displayed as *logs/`{boot or install}`-yyyymmdd.log*.
