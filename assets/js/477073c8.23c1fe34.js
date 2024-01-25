@@ -429,7 +429,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `요구 사항`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
-    }, `와탭 에이전트 1.5.0 버전 이상이 필요합니다. 1.5.0 버전 미만일 경우 기존 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `와탭 마스터 에이전트 1.5.0 버전 이상이 필요합니다. 1.5.0 버전 미만일 경우 기존 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
