@@ -309,7 +309,7 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'service-2_0_x',
-    title: 'Service 2.0.X',
+    title: 'Service 2.0.x',
     toc_max_heading_level: 2,
     pagination_next: 'release-notes/service/service-1_114_x',
     displayed_sidebar: 'releaseSidebar'
@@ -318,7 +318,7 @@ const contentTitle = undefined;
 const metadata = {
     "unversionedId": "release-notes/service/service-2_0_x",
     "id": "release-notes/service/service-2_0_x",
-    "title": "Service 2.0.X",
+    "title": "Service 2.0.x",
     "description": "Service 2.0.8",
     "source": "@site/docs/release-notes/service/service-2.0.x.mdx",
     "sourceDirName": "release-notes/service",
@@ -330,14 +330,14 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "service-2_0_x",
-        "title": "Service 2.0.X",
+        "title": "Service 2.0.x",
         "toc_max_heading_level": 2,
         "pagination_next": "release-notes/service/service-1_114_x",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Service 2.1.X",
+        "title": "Service 2.1.x",
         "permalink": "/whatap-docs/release-notes/service/service-2_1_x"
     },
     "next": {
