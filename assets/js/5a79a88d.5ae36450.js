@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[6464],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[68833],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 87903:
+/***/ 92374:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,64 +308,43 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_15',
-    title: 'DBX v1.6.15',
+    id: 'xos-1_1_6j',
+    title: 'xos v1.1.6j',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_14'
+    pagination_next: 'release-notes/db/xos-1_1_6g'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_15",
-    "id": "release-notes/db/dbx-1_6_15",
-    "title": "DBX v1.6.15",
-    "description": "2023년 12월 09일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.15.mdx",
+    "unversionedId": "release-notes/db/xos-1_1_6j",
+    "id": "release-notes/db/xos-1_1_6j",
+    "title": "xos v1.1.6j",
+    "description": "2023년 10월 13일",
+    "source": "@site/docs/release-notes/db/xos-1.1.6j.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_15",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_15",
+    "slug": "/release-notes/db/xos-1_1_6j",
+    "permalink": "/whatap-docs/release-notes/db/xos-1_1_6j",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.15.mdx",
+    "editUrl": "undefined/docs/release-notes/db/xos-1.1.6j.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_15",
-        "title": "DBX v1.6.15",
+        "id": "xos-1_1_6j",
+        "title": "xos v1.1.6j",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_14"
+        "pagination_next": "release-notes/db/xos-1_1_6g"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
+        "title": "DBX v1.6.8",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_8"
     },
     "next": {
-        "title": "DBX v1.6.14",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_14"
+        "title": "xos v1.1.6g",
+        "permalink": "/whatap-docs/release-notes/db/xos-1_1_6g"
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: '공통',
-        id: '공통',
-        level: 2
-    },
-    {
-        value: 'PostgreSQL',
-        id: 'postgresql',
-        level: 2
-    },
-    {
-        value: 'MySQL',
-        id: 'mysql',
-        level: 2
-    },
-    {
-        value: 'Oracle',
-        id: 'oracle',
-        level: 2
-    }
-];
+const toc = [];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
@@ -382,68 +361,31 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 12월 09일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "공통"
-    }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 10월 13일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Changed"), " Windows 환경에 설치 시 필요한 파일을 에이전트 설치 파일에 포함: ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "instsrv.exe"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "srvany.exe")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", null, "install_windowsService.bat"), " 파일 버그 수정(jdbc 디렉토리의 JAR 파일을 읽지 못하는 문제)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "postgresql"
-    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 테이블 레이아웃 컬럼 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "pg_stat_statements"), " 수집 시 부하 감소 및 버그 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "mysql"
-    }, `MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "trx_rseg_history_len"), "(MySQL 5.7 버전 이상 지원), ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "active_transactions"), "(MySQL 5.5 버전 이상 지원) 지표 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, `다음과 같이 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "p"
-    }, `whatap.conf`), ` 파일 설정 옵션을 추가해야 합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, "New"), " 프로세스(process) 감시 기능 추가, 프로세스의 실행 상태를 모니터링 가능", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `trx_rseg_history_len=true
-active_transactions=true
+        "metastring": "title='xos.conf'",
+        "title": "'xos.conf'"
+    }, `process={process_name}
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Feature"), " DB 파라미터를 5초마다 수집하는 기능 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+    }, "New"), " 데이터베이스 서버의 IP 목록 수집, 초 단위(최소 3초)로 시간 간격(interval)을 설정해야 수집 가능", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",
         "className": "language-ini",
-        "metastring": "title=\"whatap.conf\"",
-        "title": "\"whatap.conf\""
-    }, `collect_variables_metric=true
-variables_metric=
-# e.g variables_metric=uptime,version
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " plan 전송 시 json 포맷 전송 추가")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "oracle"
-    }, `Oracle`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 테이블 레이아웃 컬럼 수정");
+        "metastring": "title='xos.conf'",
+        "title": "'xos.conf'"
+    }, `iplist_interval={second}
+`)))));
 }
 MDXContent.isMDXComponent = true;
 

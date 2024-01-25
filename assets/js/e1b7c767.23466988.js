@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[20681],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[11521],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 78647:
+/***/ 39049:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,46 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_17',
-    title: 'DBX v1.6.17',
+    id: 'dbx-1_6_16',
+    title: 'DBX v1.6.16',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_16'
+    pagination_next: 'release-notes/db/dbx-1_6_15'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_17",
-    "id": "release-notes/db/dbx-1_6_17",
-    "title": "DBX v1.6.17",
-    "description": "2024년 01월 16일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.17.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_16",
+    "id": "release-notes/db/dbx-1_6_16",
+    "title": "DBX v1.6.16",
+    "description": "2024년 01월 03일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.16.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_17",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_17",
+    "slug": "/release-notes/db/dbx-1_6_16",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_16",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.17.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.16.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_17",
-        "title": "DBX v1.6.17",
+        "id": "dbx-1_6_16",
+        "title": "DBX v1.6.16",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_16"
+        "pagination_next": "release-notes/db/dbx-1_6_15"
+    },
+    "sidebar": "releaseSidebar",
+    "previous": {
+        "title": "DBX v1.6.17",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_17"
     },
     "next": {
-        "title": "DBX v1.6.16",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_16"
+        "title": "DBX v1.6.15",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_15"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: 'MySQL',
-        id: 'mysql',
+        value: 'PostgreSQL',
+        id: 'postgresql',
         level: 2
     }
 ];
@@ -362,13 +367,13 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 16일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "mysql"
-    }, `MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 03일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "postgresql"
+    }, `PostgreSQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " MariaDB 10.2 버전 이하의 slave 정보 수집 버그 수정")));
+    }, "Changed"), " 파라미터 수집 시 unit 정보도 함께 수집하도록 수정")));
 }
 MDXContent.isMDXComponent = true;
 

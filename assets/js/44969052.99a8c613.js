@@ -333,15 +333,7 @@ const metadata = {
         "toc_max_heading_level": 2,
         "displayed_sidebar": "releaseSidebar"
     },
-    "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "DBX v1.6.6",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_6"
-    },
-    "next": {
-        "title": "xos v1.1.6j",
-        "permalink": "/whatap-docs/release-notes/db/xos-1_1_6j"
-    }
+    "sidebar": "releaseSidebar"
 };
 const assets = {};
 const toc = [
