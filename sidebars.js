@@ -3322,17 +3322,19 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_6_15',
+                id: 'release-notes/db/dbx-1_6_17',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_6_15',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-1_6_17',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-1_6_16',
+                'release-notes/db/dbx-1_6_15',
                 'release-notes/db/dbx-1_6_14',
                 'release-notes/db/dbx-1_6_13',
                 'release-notes/db/dbx-1_6_12',
@@ -3340,9 +3342,6 @@ const sidebars = {
                 'release-notes/db/dbx-1_6_10',
                 'release-notes/db/dbx-1_6_9',
                 'release-notes/db/dbx-1_6_8',
-                'release-notes/db/dbx-1_6_7',
-                'release-notes/db/dbx-1_6_6',
-                'release-notes/db/dbx-1_6_5',
               ]
             },
             {
