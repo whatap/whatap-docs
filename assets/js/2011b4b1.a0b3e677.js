@@ -335,7 +335,7 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "WhaTap Mobile App v1.0.6 (67)",
+        "title": "WhaTap Mobile App v1.0.6 (74)",
         "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_6"
     },
     "next": {

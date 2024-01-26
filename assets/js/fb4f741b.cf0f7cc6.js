@@ -309,7 +309,7 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'mobile-app-v1_0_6',
-    title: 'WhaTap Mobile App v1.0.6 (67)',
+    title: 'WhaTap Mobile App v1.0.6 (74)',
     toc_max_heading_level: 3,
     displayed_sidebar: 'releaseSidebar'
 };
@@ -317,8 +317,8 @@ const contentTitle = undefined;
 const metadata = {
     "unversionedId": "release-notes/mobile/mobile-app-v1_0_6",
     "id": "release-notes/mobile/mobile-app-v1_0_6",
-    "title": "WhaTap Mobile App v1.0.6 (67)",
-    "description": "2024년 01월 24일",
+    "title": "WhaTap Mobile App v1.0.6 (74)",
+    "description": "2024년 01월 26일",
     "source": "@site/docs/release-notes/mobile/mobile-app-v1.0.6.mdx",
     "sourceDirName": "release-notes/mobile",
     "slug": "/release-notes/mobile/mobile-app-v1_0_6",
@@ -329,7 +329,7 @@ const metadata = {
     "version": "current",
     "frontMatter": {
         "id": "mobile-app-v1_0_6",
-        "title": "WhaTap Mobile App v1.0.6 (67)",
+        "title": "WhaTap Mobile App v1.0.6 (74)",
         "toc_max_heading_level": 3,
         "displayed_sidebar": "releaseSidebar"
     },
@@ -378,7 +378,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 24일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 26일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "공통"
     }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"

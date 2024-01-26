@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Go Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/golang/golang-previous"
+        "title": "Server Agent v2.5.1",
+        "permalink": "/whatap-docs/release-notes/server/server-2_5_1"
     },
     "next": {
         "title": "Server Agent v2.4.9",
