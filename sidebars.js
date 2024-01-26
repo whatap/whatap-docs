@@ -3326,14 +3326,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/dbx-1_6_17',
+                id: 'release-notes/db/dbx-1_6_18',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_6_17',
+                  id: 'release-notes/db/dbx-1_6_18',
                   className: 'new',
                 },
+                'release-notes/db/dbx-1_6_17',
                 'release-notes/db/dbx-1_6_16',
                 'release-notes/db/dbx-1_6_15',
                 'release-notes/db/dbx-1_6_14',
@@ -3342,7 +3343,6 @@ const sidebars = {
                 'release-notes/db/dbx-1_6_11',
                 'release-notes/db/dbx-1_6_10',
                 'release-notes/db/dbx-1_6_9',
-                'release-notes/db/dbx-1_6_8',
               ]
             },
             {
