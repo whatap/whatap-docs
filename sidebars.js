@@ -3054,6 +3054,12 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              label: 'v1.0.6 (74)',
+              id: 'release-notes/mobile/mobile-app-v1_0_6',
+              className: 'new',
+            },
+            {
+              type: 'doc',
               label: 'v1.0.4 (53)',
               id: 'release-notes/mobile/mobile-app-v1_0_4',
               // className: 'new',
