@@ -3269,14 +3269,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server/server-2_5_0',
+                id: 'release-notes/server/server-2_5_1',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_5_0',
+                  id: 'release-notes/server/server-2_5_1',
                   className: 'new',
                 },
+                'release-notes/server/server-2_5_0',
                 'release-notes/server/server-2_4_9',
                 'release-notes/server/server-2_4_8',
                 'release-notes/server/server-2_4_7',
