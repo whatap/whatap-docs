@@ -256,6 +256,12 @@ function colsToJson(data){
     "ko": "로그 트렌드"
   }
 
+  rd["masterMetaTopology"] = {
+    "en": "Object Manifest Topology",
+    "ja": "Object Manifestトポロジー",
+    "ko": "오브젝트 토폴로지"
+  }
+
   return rd;
 }
 
