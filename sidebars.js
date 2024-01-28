@@ -3553,7 +3553,7 @@ const sidebars = {
         },
         'about-billing',
         'software-proxy',
-        'main-ui-intro',
+        'main-ui-intro-v2',
         {
           type: 'link',
           label: "상세 검색",
