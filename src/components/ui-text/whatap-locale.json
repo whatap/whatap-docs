@@ -52094,10 +52094,10 @@
     "service_id": "TTL07559"
   },
   "NTC07560": {
-    "en": "Please update your agent to activate past object manifest lookup feature.",
+    "en": "Please update your master agent to activate past object manifest lookup feature.",
     "ja": "過去のObject Manifest照会機能を有効にするには、エージェントを更新してください。",
-    "ko": "과거 Object Manifest 조회 기능을 활성화하려면 에이전트를 업데이트하세요.",
-    "zh": "To enable the feature for viewing historical object manifests, please update your agent",
+    "ko": "과거 Object Manifest 조회 기능을 활성화하려면 마스터 에이전트를 업데이트하세요.",
+    "zh": "To enable the feature for viewing historical object manifests, please update your master agent.",
     "service_id": "NTC07560"
   },
   "DSC07561": {
@@ -52207,7 +52207,7 @@
   },
   "NTC07577": {
     "en": "Please select the object you want to check from the list above.",
-    "ja": "上記のリストから確認したいオブジェクトを選択してください。",
+    "ja": "上記のリストから確認したいObjectを選択してください。",
     "ko": "위의 목록에서 확인하고자 하는 오브젝트를 선택해주세요.",
     "zh": "Please select the object you want to check from the list above.",
     "service_id": "NTC07577"
@@ -52227,17 +52227,17 @@
     "service_id": "ITM07579"
   },
   "TLT07580": {
-    "en": "If an event occurs N times in succession, a notification is sent. If disabled, notifications will be sent whenever an event occurs.",
-    "ja": "イベントが連続してN回発生すると、通知が送信されます。使用しない場合、イベントが発生するたびに通知が送信されます。",
+    "en": "If an event occurs N times in a row, a notification will be sent. If disabled, a notification will be sent each time the event occurs.",
+    "ja": "イベントが連続してN回発生したら、アラート通知します。使用しない場合は、イベントが発生するたびにアラートを通知します。",
     "ko": "이벤트가 연속으로 N회 발생할 경우, 알림이 발송됩니다. 사용하지 않을 경우, 이벤트가 발생할 때마다 알림이 발송됩니다.",
     "zh": "If an event occurs N times in succession, a notification is sent. If disabled, notifications will be sent whenever an event occurs.",
     "service_id": "TLT07580"
   },
   "NTC07581": {
-    "en": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Agent 1.5.0 or higher</strong>, you can view and compare past information on a daily basis.",
-    "ja": "「マスターメタ情報」機能が<strong>「Object Manifest」</strong>機能に変更されました。 WhaTapクーバーネティス<strong>エージェント1.5.0以降</strong>を使用すると、過去の過去の情報の検索と相互比較が可能になります。",
-    "ko": "\"마스터 메타 정보\" 기능이 <strong>\"오브젝트 매니페스트\"</strong> 기능으로 변경되었습니다. 와탭 쿠버네티스 <strong>에이전트 1.5.0 이상</strong>을 사용하면 일단위 과거 정보 조회 및 상호 비교가 가능합니다.",
-    "zh": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Agent 1.5.0 or higher</strong>, you can view and compare past information on a daily basis.",
+    "en": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Master Agent 1.5.2 or higher</strong>, you can view and compare past information on a daily basis.",
+    "ja": "「マスターメタ情報」機能が<strong>「Object Manifest」</strong>機能に変更されました。 WhaTap Kubernetes Monitoring<strong>マスターエージェント1.5.2以降</strong>を使用すると、過去の過去の情報の検索と相互比較が可能になります。",
+    "ko": "\"마스터 메타 정보\" 기능이 <strong>\"오브젝트 매니페스트\"</strong> 기능으로 변경되었습니다. 와탭 쿠버네티스 <strong>마스터 에이전트 1.5.2 이상</strong>을 사용하면 일단위 과거 정보 조회 및 상호 비교가 가능합니다.",
+    "zh": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Master Agent 1.5.2 or higher</strong>, you can view and compare past information on a daily basis.",
     "service_id": "NTC07581"
   },
   "DSC07582": {
@@ -52255,46 +52255,151 @@
     "service_id": "TTL07583"
   },
   "LNK07584": {
-    "en": "guide document",
-    "ja": "ガイドドキュメント",
+    "en": "Guide document",
+    "ja": "ガイドへ",
     "ko": "가이드 문서",
     "zh": "guide document\n",
     "service_id": "LNK07584"
   },
   "DSC07585": {
     "en": "To simulate an event, select <a href='#run_simulation' class='primary'><u>Run button</u></a> in the 'Event condition definition' item at the top of the screen.",
-    "ja": "イベントをシミュレートするには、画面の上部にある[イベント条件の定義]項目で<a href='#run_simulation' class='primary'><u>実行ボタン</u></a>を選択します。",
+    "ja": "イベントをシミュレートするには、画面の上部にある[イベント条件の定義]項目から<a href='#run_simulation' class='primary'><u>実行ボタン</u></a>を選択します。",
     "ko": "이벤트를 시뮬레이션하려면 화면 최상단에 '이벤트 조건 정의' 항목에서 <a href='#run_simulation' class='primary'><u>실행 버튼</u></a>을 선택하세요.",
     "zh": "To simulate an event, select <a href='#run_simulation' class='primary'><u>Run button</u></a> in the 'Event condition definition' item at the top of the screen.",
     "service_id": "DSC07585"
   },
   "DSC07586": {
     "en": "If you do not set the above items, the event will be executed for all agents included in the project and many notifications may be generated.",
-    "ja": "上記の項目を設定しないと、プロジェクトに含まれるエージェント全体を対象にイベントが実行され、多くの通知が発生する可能性があります。",
+    "ja": "上記の項目を設定しなかった場合、プロジェクト内のすべてのエージェントを対象にイベントが実行され、多くのアラート通知が発生する可能性があります。",
     "ko": "위 항목들을 설정하지 않으면 프로젝트에 포함된 전체 에이전트를 대상으로 이벤트가 실행되며 많은 알림이 발생할 수 있습니다.",
     "zh": "If you do not set the above items, the event will be executed for all agents included in the project and many notifications may be generated.",
     "service_id": "DSC07586"
   },
   "DSC07587": {
     "en": "Please refer to the guide document for a detailed explanation of event targets.",
-    "ja": "イベントターゲットの詳細については、ガイドのドキュメントを参照してください。",
+    "ja": "イベント対象の詳細については、ガイドを参照してください。",
     "ko": "이벤트 대상에 대한 자세한 설명은 가이드 문서를 참고하세요.",
     "zh": "Please refer to the guide document for a detailed explanation of event targets.",
     "service_id": "DSC07587"
   },
   "ITM07588": {
     "en": "Select target",
-    "ja": "ターゲットを選択",
+    "ja": "対象を選択",
     "ko": "대상 선택",
     "zh": "Select target",
     "service_id": "ITM07588"
   },
   "TTL07589": {
-    "en": "Project Product Filter",
-    "ja": "プロジェクト商品フィルター",
+    "en": "Project product filter",
+    "ja": "プロジェクトカタログのフィルター",
     "ko": "프로젝트 상품 필터",
     "zh": "Project Product Filter",
     "service_id": "TTL07589"
+  },
+  "TTL07590": {
+    "en": "legend",
+    "ja": "凡例",
+    "ko": "범례",
+    "zh": "cpu 사용량 범례",
+    "service_id": "TTL07590"
+  },
+  "NTC07591": {
+    "en": "To utilize the <b>Object Topology</b> in a namespace project, you must use Master Agent version <b>1.5.2 or higher</b>. Please update.",
+    "ja": "Namespaceプロジェクトで<b>Object Topology</b>を使用するには、マスターエージェントのバージョンが<b> 1.5.2以降</b>を使用する必要があります。 更新お願いします。",
+    "ko": "네임스페이스 프로젝트에서 <b>오브젝트 토폴로지</b>를 사용하려면 마스터 에이전트 버전이 <b>1.5.2 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
+    "zh": "To utilize the <b>Object Topology</b> in a namespace project, you must use Master Agent version <b>1.5.2 or higher</b>. Please update.",
+    "service_id": "NTC07591"
+  },
+  "BTN07592": {
+    "en": "Agent inactivity warning",
+    "ja": "エージェント非活性化の警告",
+    "ko": "에이전트 비활성 경고",
+    "zh": "Agent inactivity warning",
+    "service_id": "BTN07592"
+  },
+  "TLT07593": {
+    "en": "If there's no response after the time you set, you'll receive an alert notification from the agent.",
+    "ja": "設定した時間まで応答がなかった場合、エージェントからアラートを通知します。",
+    "ko": "설정한 시간 후까지 응답이 없으면 에이전트로부터 경고 알림을 보내줍니다.",
+    "zh": "If there's no response after the time you set, you'll receive an alert notification from the agent.",
+    "service_id": "TLT07593"
+  },
+  "TTL07594": {
+    "en": "Throttling",
+    "ja": "スロットリング",
+    "ko": "쓰로틀링",
+    "zh": "Throttling",
+    "service_id": "TTL07594"
+  },
+  "TTL07595": {
+    "en": "Convenience options",
+    "ja": "その他のオプション",
+    "ko": "편의 옵션",
+    "zh": "Convenience options",
+    "service_id": "TTL07595"
+  },
+  "TTL07596": {
+    "en": "Control",
+    "ja": "コントロール",
+    "ko": "제어",
+    "zh": "Control",
+    "service_id": "TTL07596"
+  },
+  "TTL07597": {
+    "en": "Automatically Terminate Threads",
+    "ja": "スレッドの自動終了",
+    "ko": "쓰레드 자동 종료",
+    "zh": "Automatically Terminate Threads",
+    "service_id": "TTL07597"
+  },
+  "DSC07598": {
+    "en": "A monitoring function has been released for <b style=\"color:{primaryColor}\">kube-apiserver, which plays the role of an API server within the Control Plane component that manages the overall Kubernetes cluster.",
+    "ja": "クーバーネティスクラスタ全体を管理するコントロールプレーンコンポーネント内でAPIサーバーの役割を担っている<b style=\"color:{primaryColor}\">kube-apiserverの監視機能がリリースされました。",
+    "ko": "쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 (Control Plane) 컴포넌트 내에서 API server 역할을 담당하고 있는 <b>kube-apiserver에 대한 모니터링 기능이 출시</b>되었습니다.",
+    "zh": "A monitoring function has been released for <b style=\"color:{primaryColor}\">kube-apiserver, which plays the role of an API server within the Control Plane component that manages the overall Kubernetes cluster.",
+    "service_id": "DSC07598"
+  },
+  "DSC07599": {
+    "en": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
+    "ja": "可視化されたダッシュボードを使用して、kube-apiserverの負荷状態とパフォーマンスの推移図を観察することで、kube-apiserverによるクラスタ障害をすばやく検出して原因を分析できます。",
+    "ko": "시각화된 대시보드를 통해 kube-apiserver의 부하 상태 및 성능 추이 차트를 관찰함으로써 kube-apiserver로 인한 클러스터 장애를 빠르게 감지하고 원인을 분석할 수 있습니다.",
+    "zh": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
+    "service_id": "DSC07599"
+  },
+  "DSC07600": {
+    "en": "The control plane monitoring feature requires <b>adding permissions, setting options, and adding a container for control plane monitoring within the master agent pod</b>.",
+    "ja": "コントロールプレーン監視機能を使用するには、<b>権限の追加、オプションの設定、およびマスターエージェントPod内のコントロールプレーン監視のためのコンテナの追加操作が必要です</b>。",
+    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>권한 추가, 옵션 설정, 그리고 마스터 에이전트 Pod 내 컨트롤 플레인 모니터링용 컨테이너 추가 작업이 필요</strong>합니다.",
+    "zh": "The control plane monitoring feature requires <b>adding permissions, setting options, and adding a container for control plane monitoring within the master agent pod</b>.",
+    "service_id": "DSC07600"
+  },
+  "DSC07601": {
+    "en": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
+    "ja": "以下のWhaTap Docsでコントロールプレーンのkube-apiserverモニタリングの詳細をご覧ください！",
+    "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한자세한 내용을 확인해보세요!",
+    "zh": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
+    "service_id": "DSC07601"
+  },
+  "TTL07602": {
+    "en": "Kubernetes kube-apiserver monitoring is now available!",
+    "ja": "Kubernetes kube-apiserverモニタリングが利用可能です！",
+    "ko": "쿠버네티스 kube-apiserver 모니터링을 사용할 수 있습니다!",
+    "zh": "Kubernetes kube-apiserver monitoring is now available!",
+    "service_id": "TTL07602"
+  },
+  "NTC07603": {
+    "en": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
+    "ja": "Namespaceプロジェクトで<b>Object Manifest</b>機能を使用するには、<b>マスターエージェント1.5.2以降</b>を使用する必要があります。 更新お願いします。",
+    "ko": "네임스페이스 프로젝트에서 <b>오브젝트 매니페스트</b> 기능을 사용하려면 <b>마스터 에이전트 1.5.2 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
+    "zh": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
+    "service_id": "NTC07603"
+  },
+  "DSC07604": {
+    "en": "You cannot withdraw for the following reasons. Please check the contents below and retry.",
+    "ja": "以下の理由により脱退できません。以下の内容を確認してから、再度試してください。",
+    "ko": "다음의 사유로 탈퇴가 불가능합니다. 원활한 회원 탈퇴를 위해 아래 내용을 확인 후 시도하세요.",
+    "zh": "You cannot withdraw for the following reasons. Please check the contents below and try it for smooth membership withdrawal.",
+    "service_id": "DSC07604"
   },
   "": {
     "": "",
@@ -52471,5 +52576,10 @@
     "en": "Log Trend",
     "ja": "ログトレンド",
     "ko": "로그 트렌드"
+  },
+  "masterMetaTopology": {
+    "en": "Object Manifest Topology",
+    "ja": "Object Manifestトポロジー",
+    "ko": "오브젝트 토폴로지"
   }
 }
