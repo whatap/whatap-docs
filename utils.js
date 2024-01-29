@@ -262,6 +262,12 @@ function colsToJson(data){
     "ko": "오브젝트 토폴로지"
   }
 
+  rd["landingSignup"] = {
+    "en": "Sign up",
+    "ja": "サインアップ",
+    "ko": "계정 생성"
+  }
+
   return rd;
 }
 

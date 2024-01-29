@@ -45487,7 +45487,7 @@
   },
   "DSC06598": {
     "en": "Mobile device management for bulk subscriptions and access to event notifications is available in the <b>Account Information menu</b>.",
-    "ja": "イベント通知の一括受信設定とアクセス設定のためのモバイルデバイスの管理は、<b>アカウント情報</b>メニューから行います。",
+    "ja": "イベント通知の一括受信設定と、アクセス設定のためのモバイルデバイス管理は、<b>アカウント情報</b>メニューから行います。",
     "ko": "이벤트 알림의 일괄 수신설정 및 접근 설정을 위한 모바일 기기 관리는 <b>계정 정보 메뉴에서 가능</b>합니다.",
     "zh": "Mobile device management for bulk subscriptions and access to event notifications is available in the <b>Account Information menu</b>.",
     "service_id": "DSC06598"
@@ -52581,5 +52581,10 @@
     "en": "Object Manifest Topology",
     "ja": "Object Manifestトポロジー",
     "ko": "오브젝트 토폴로지"
+  },
+  "landingSignup": {
+    "en": "Sign up",
+    "ja": "サインアップ",
+    "ko": "계정 생성"
   }
 }
