@@ -468,7 +468,7 @@ function MDXContent(_param) {
     }, `이름, 이메일, 비밀번호, 회사명을 차례로 입력하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "sign_up",
+        sid: "landingSignup",
         className: "uitext",
         mdxType: "Cmdname"
     }), " 버튼을 선택하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {

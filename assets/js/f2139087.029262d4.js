@@ -319,7 +319,7 @@ const metadata = {
     "unversionedId": "release-notes/service/service-2_1_x",
     "id": "release-notes/service/service-2_1_x",
     "title": "Service 2.1.x",
-    "description": "Service 2.1.4",
+    "description": "Service 2.1.5",
     "source": "@site/docs/release-notes/service/service-2.1.x.mdx",
     "sourceDirName": "release-notes/service",
     "slug": "/release-notes/service/service-2_1_x",
@@ -348,6 +348,16 @@ const metadata = {
 const assets = {};
 const toc = [
     {
+        value: 'Service 2.1.5',
+        id: 'service-215',
+        level: 2
+    },
+    {
+        value: '<code>Kubernetes</code>',
+        id: 'kubernetes',
+        level: 3
+    },
+    {
         value: 'Service 2.1.4',
         id: 'service-214',
         level: 2
@@ -364,7 +374,7 @@ const toc = [
     },
     {
         value: '<code>Kubernetes</code>',
-        id: 'kubernetes',
+        id: 'kubernetes-1',
         level: 3
     },
     {
@@ -374,7 +384,7 @@ const toc = [
     },
     {
         value: '<code>Kubernetes</code>',
-        id: 'kubernetes-1',
+        id: 'kubernetes-2',
         level: 3
     },
     {
@@ -429,7 +439,7 @@ const toc = [
     },
     {
         value: '<code>Kubernetes</code>',
-        id: 'kubernetes-2',
+        id: 'kubernetes-3',
         level: 3
     },
     {
@@ -457,6 +467,26 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
+        "id": "service-215"
+    }, `Service 2.1.5`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
+        class: "indentTab"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "kubernetes"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
+        parentName: "h3"
+    }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "dashboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " > ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "clusterOverview",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("span", {
+        class: "uitext"
+    }, "Total Capacity Memory"), " 위젯의 단위 오류 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "service-214"
     }, `Service 2.1.4`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
@@ -475,7 +505,7 @@ function MDXContent(_param) {
     }, `Service 2.1.3`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 26일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "kubernetes"
+        "id": "kubernetes-1"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -499,7 +529,7 @@ function MDXContent(_param) {
     }, `Service 2.1.2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 25일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", {
         class: "indentTab"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "kubernetes-1"
+        "id": "kubernetes-2"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
@@ -866,7 +896,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), " 메뉴에서 많은 양의 락으로 인해 로직 상의 부하를 초래하여 발생하는 화이트아웃 현상 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "kubernetes-2"
+        "id": "kubernetes-3"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("inlineCode", {
         parentName: "h3"
     }, `Kubernetes`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {

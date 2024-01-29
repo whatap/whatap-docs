@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[15670],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[21501],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -350,7 +350,7 @@ function CheckProduct() {
 
 /***/ }),
 
-/***/ 3892:
+/***/ 40082:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -449,33 +449,33 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'install-agent',
     title: '설치하기',
-    description: 'Amazon CloudWatch 아이템 설치를 안내합니다.',
+    description: 'Azure 아이템 설치를 안내합니다.',
     tags: [
         '설치하기',
-        'Amazon CloudWatch',
+        'Azure Monitor',
         '클라우드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "amazon-cloudwatch/install-agent",
-    "id": "amazon-cloudwatch/install-agent",
+    "unversionedId": "azure/install-agent",
+    "id": "azure/install-agent",
     "title": "설치하기",
-    "description": "Amazon CloudWatch 아이템 설치를 안내합니다.",
-    "source": "@site/docs/amazon-cloudwatch/install-agent.mdx",
-    "sourceDirName": "amazon-cloudwatch",
-    "slug": "/amazon-cloudwatch/install-agent",
-    "permalink": "/whatap-docs/amazon-cloudwatch/install-agent",
+    "description": "Azure 아이템 설치를 안내합니다.",
+    "source": "@site/docs/azure/install-agent.mdx",
+    "sourceDirName": "azure",
+    "slug": "/azure/install-agent",
+    "permalink": "/whatap-docs/azure/install-agent",
     "draft": false,
-    "editUrl": "undefined/docs/amazon-cloudwatch/install-agent.mdx",
+    "editUrl": "undefined/docs/azure/install-agent.mdx",
     "tags": [
         {
             "label": "설치하기",
             "permalink": "/whatap-docs/tags/설치하기"
         },
         {
-            "label": "Amazon CloudWatch",
-            "permalink": "/whatap-docs/tags/amazon-cloud-watch"
+            "label": "Azure Monitor",
+            "permalink": "/whatap-docs/tags/azure-monitor"
         },
         {
             "label": "클라우드",
@@ -486,17 +486,17 @@ const metadata = {
     "frontMatter": {
         "id": "install-agent",
         "title": "설치하기",
-        "description": "Amazon CloudWatch 아이템 설치를 안내합니다.",
+        "description": "Azure 아이템 설치를 안내합니다.",
         "tags": [
             "설치하기",
-            "Amazon CloudWatch",
+            "Azure Monitor",
             "클라우드"
         ]
     },
-    "sidebar": "amazoncloudwatchSidebar",
+    "sidebar": "azuremonitorSidebar",
     "next": {
         "title": "주요 메뉴 알아보기",
-        "permalink": "/whatap-docs/amazon-cloudwatch/learn-main-menu"
+        "permalink": "/whatap-docs/azure/learn-main-menu"
     }
 };
 const assets = {};
@@ -508,24 +508,19 @@ const toc = [
         level: 2
     },
     {
-        value: '사전 점검 사항',
-        id: '사전-점검-사항',
-        level: 2
-    },
-    {
         value: '모니터링 절차',
         id: '모니터링-절차',
         level: 2
     },
     {
-        value: '인증 정보 입력',
-        id: '인증-정보-입력',
+        value: 'Azure Registered App 추가',
+        id: 'azure-registered-app-추가',
         level: 3
     },
     {
-        value: '역할(Role) 생성',
-        id: '역할role-생성',
-        level: 4
+        value: '인증 정보 입력',
+        id: '인증-정보-입력',
+        level: 3
     },
     {
         value: '네임스페이스 및 수집 주기 선택',
@@ -543,8 +538,8 @@ const toc = [
         level: 4
     },
     {
-        value: '리전, 메트릭스, 스탯 선택',
-        id: '리전-메트릭스-스탯-선택',
+        value: '리소스 그룹, 메트릭스, 스탯 선택',
+        id: '리소스-그룹-메트릭스-스탯-선택',
         level: 3
     },
     {
@@ -572,7 +567,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 Amazon CloudWatch 모니터링은 API 연동을 통해 메트릭을 주기적으로 수집합니다. 수집을 원하는 서비스에 해당하는 CloudWatch 네임스페이스에서 5분 간격으로 원하는 스탯을 취사선택해 수집합니다. 모니터링 시작 시 모든 리전의 사용자 자원을 검색하여 원클릭으로 모니터링을 시작할 수 있습니다. Role 방식 인증으로 안전하고 편리하게 사용할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 서비스를 사용하기 위해서는 먼저 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 Azure Monitor는 API 연동을 통해 메트릭을 주기적으로 수집합니다. 수집을 원하는 서비스에 해당하는 Azure Monitor 네임스페이스를 5분 기간으로 원하는 스탯을 취사선택해 수집합니다. 모니터링 시작 시 모든 리전의 사용자 자원을 검색하여 원클릭으로 모니터링을 시작할 수 있습니다. 와탭은 안전하고 편리한 사용을 위해 Azure Registerd App을 지원합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 서비스를 사용하기 위해서는 먼저 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
         "href": "https://www.whatap.io/ko/signup/"
     }, `회원 가입`), ` 후 프로젝트를 생성해야 합니다. 회원 가입에 관한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
@@ -604,7 +599,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
     }, `+`)), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "project_add_btn",
+        sid: "BTN06696",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 버튼을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -722,171 +717,51 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
     }, `전체 프로젝트`)), `를 선택한 다음 새로 생성한 프로젝트를 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
-        "id": "사전-점검-사항"
-    }, `사전 점검 사항`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `필요한 권한과 권장되는 정책을 확인하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("thead", {
-        parentName: "table"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "thead"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("th", {
-        parentName: "tr",
-        "align": null
-    }, `Resouce`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("th", {
-        parentName: "tr",
-        "align": null
-    }, `권한`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tbody", {
-        parentName: "table"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `CloudWatch`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `EC2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `ElasticCache`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `CloudFront`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Dynammodb`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `ElasticBeansTalk`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `AutoScaling`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `EFS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
-        parentName: "tbody"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `RDS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
-        parentName: "tr",
-        "align": null
-    }, `Read`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, `권장 Policy`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, `arn:aws:iam::aws:policy/ReadOnlyAccess`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "모니터링-절차"
     }, `모니터링 절차`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
-    }, `Amazon 인증 정보를 입력하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Azure Registered App을 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
-    }, `CloudWatch 네임스페이스 및 수집 주기를 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Azure 인증 정보를 입력하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
-    }, `리전, 메트릭스, 스탯 등을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }, `Azure Monitor 네임스페이스 및 수집 주기를 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, `리소스 그룹, 메트릭스, 스탯 등을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
     }, `설치 후 사용량에 따라 와탭 요금과는 별개로 클라우드에서 추가 비용이 발생할 수 있습니다. 설치 전 사용 중인 클라우드 서비스의 가격 정책을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://aws.amazon.com/ko/cloudwatch/pricing/"
+        "href": "https://azure.microsoft.com/ko-kr/pricing/details/monitor/"
     }, `다음 문서`), `에서 확인하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "azure-registered-app-추가"
+    }, `Azure Registered App 추가`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링용 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps"
+    }, `Registered App`), `을 추가하세요. Secret을 생성하고 애플리케이션 ID(ApplicationId), 테넌트 ID(TenantId) 와 시크릿(Secret)을 와탭에 입력하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링을 위해서는 Monitor Reader, 독자, API Management 서비스 독자 권한이 필요합니다. Azure Portal에서 Subscript > 액세스 제어(IAM) 메뉴에서 추가 버튼을 통해 권한을 추가할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "Azure Active Directory",
+        src: (__webpack_require__(72343)/* ["default"] */ .Z),
+        width: "1200",
+        height: "859"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "인증-정보-입력"
-    }, `인증 정보 입력`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Role ARN을 이용한 설치 방법을 지원합니다. 와탭 AWS 계정(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `인증 정보 입력`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `Azure 인증 정보인 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `911937781722`), `)이 직접 사용자 Role을 Assume하여 Cloudwatch 정보를 수집합니다. Role Assume은 액세스 키 발급이 불필요해 안전하고 편리합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "admonition"
-    }, `Role을 이용한 설정을 권장합니다. Access Key 활용은 기존 Access Key 사용자만 가능합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "역할role-생성"
-    }, `역할(Role) 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "cloudwatch-auth-role.png",
-        desc: "Amazon Cloudwatch - role",
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `애플리케이션 ID`)), `(ApplicationID), `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `테넌트 ID`)), `(TenantID)와 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
+        parentName: "strong"
+    }, `Azure 시크릿 키`)), `(Secret)를 와탭에 입력하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "whatap_azure_auth_dialog.png",
+        desc: "Azure Monitor - Authentification",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `AWS Management Console에 로그인 후 IAM 콘솔을 엽니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `콘솔의 탐색창에서 역할을 선택한 후 역할 생성을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `Select type of trusted entity(신뢰할 수 있는 엔티티 유형 선택)에서 Another AWS account를 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `Account ID에 와탭 계정ID `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, `911937781722`), ` 를 입력하세요. ReadOnlyAccess를 선택해 적용하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `Role의 이름과 설명을 입력하고 Create Role 버튼을 클릭해 Summary 화면으로 전환하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `Maximum session duration 항목의 Edit 버튼을 클릭해 12시간으로 변경하고 저장하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, `Role ARN`), ` 항목을 복사하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ol"
-    }, `와탭 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `관리`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `에이전트 설치`)), ` 페이지로 돌아가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `Role`)), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `ARN`)), ` 창에 복사한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, `Role ARN`), `을 붙여넣고 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `확인`)), ` 버튼을 클릭하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "네임스페이스-및-수집-주기-선택"
     }, `네임스페이스 및 수집 주기 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `설치가 완료되면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
@@ -975,7 +850,7 @@ function MDXContent(_param) {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `저장`)), ` 버튼을 선택해 변경 사항을 저장하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }, `저장`)), ` 버튼을 선택해 변경 사항을 저장하세요.  `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "와탭-수집-주기"
     }, `와탭 수집 주기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
@@ -1013,216 +888,306 @@ function MDXContent(_param) {
         "id": "네임스페이스"
     }, `네임스페이스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ACMPrivateCA`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.aadiam azureADMetrics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS AmazonMQ`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.AnalysisServices servers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ApplicationELB Monitoring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ApiManagement service`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS AppSync`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.AppConfiguration configurationStores`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Athena`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.AppPlatform Spring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS AutoScaling`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Automation automationAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Elastic Beanstalk Health`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.AVS privateClouds`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Billing`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Batch batchAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Cassandra`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.BatchAI workspaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Chatbot`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Blockchain blockchainMembers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Cloud Front`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.botservice botservices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS CloudHSM`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Cache redis`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS CloudSearch`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Cache redisEnterprise`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS CodeBuild`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Cdn cdnwebapplicationfirewallpolicies`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS CodeGuruProfiler`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Cdn profiles`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Cognito`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicCompute domainNames slots roles`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Connect`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicCompute virtualMachines`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ContainerInsights Monitoring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicStorage storageAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS DataSync`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicStorage storageAccounts blobServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS DAX`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicStorage storageAccounts fileServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS DDoSProtection`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicStorage storageAccounts queueServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS DMS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ClassicStorage storageAccounts tableServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS DocDB`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.CognitiveServices accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS DX`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Communication CommunicationServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Dynamo DB`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Compute cloudServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Ebs Usage`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Compute cloudServices roles`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS EC2 Monitoring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.compute disks`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS EC2 Alert Config`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Compute virtualMachines`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS EC2Spot`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Compute virtualMachineScaleSets`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ECS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Compute virtualMachineScaleSets virtualMachines`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS EFS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ContainerInstance containerGroups`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ElastiCache Usage`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ContainerRegistry registries`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ElasticGPUs`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.ContainerService managedClusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ElasticInference`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.CustomProviders resourceproviders`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ElasticMapReduce`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataBoxEdge dataBoxEdgeDevices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ElasticTranscoder`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataCollaboration workspaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Classic ELB Monitoring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataFactory datafactories`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ES`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataFactory factories`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Events`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataLakeAnalytics accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Firehose`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataLakeStore accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS FSx`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DataShare accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS GameLift`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DBforMariaDB servers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS GatewayELB`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DBforMySQL flexibleServers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Glue`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DBforMySQL servers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS GroundStation`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DBforPostgreSQL flexibleServers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Health`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DBforPostgreSQL servers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Inspector`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DBforPostgreSQL serversv2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS IoT`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Devices ElasticPools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS IoTAnalytics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Devices ElasticPools IotHubTenants`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS IoTSiteWise`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Devices IotHubs`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS IVS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Devices provisioningServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Kafka`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DigitalTwins digitalTwinsInstances`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Kinesis`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.DocumentDB databaseAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS KinesisAnalytics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid domains`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS KinesisVideo`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid eventSubscriptions`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS KMS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid extensionTopics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Lambda`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid partnerNamespaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Lex`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid partnerTopics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Location`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid systemTopics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Logs`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventGrid topics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS LookoutMetrics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventHub clusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS MediaConnect`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.EventHub namespaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS MediaConvert`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.HDInsight clusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS MediaPackage`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.HealthcareApis services`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS MediaStore`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.hybridnetwork networkfunctions`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS MediaTailor`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.hybridnetwork virtualnetworkfunctions`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ML`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.insights autoscalesettings`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS NATGateway`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Insights Components`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Neptune`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.IoTCentral IoTApps`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS NetworkELB`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.IoTSpaces Graph`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS NetworkFirewall`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.keyvault managedhsms`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS OpsWorks`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.KeyVault vaults`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Polly`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.kubernetes connectedClusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS QLDB`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Kusto Clusters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS RDS Monitoring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Logic integrationServiceEnvironments`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Redshift`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Logic workflows`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Robomaker`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.MachineLearningServices workspaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Route53`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Maps accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS S3`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Media mediaservices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SageMaker`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Media mediaservices liveEvents`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SDKMetrics`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Media mediaservices streamingEndpoints`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ServiceCatalog`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.MixedReality remoteRenderingAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SES`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.MixedReality spatialAnchorsAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SNS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.NetApp netAppAccounts capacityPools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SQS`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.NetApp netAppAccounts capacityPools volumes`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SQS Message`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network applicationGateways`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SSM-RunCommand`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network azurefirewalls`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS States`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network connections`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS StorageGateway`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network dnszones`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS SWF`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network expressRouteCircuits`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Textract`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network expressRouteCircuits peerings`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS ThingsGraph`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network expressRouteGateways`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Timestream`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network expressRoutePorts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Transfer`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network frontdoors`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS TransitGateway`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network loadBalancers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Translate`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network natGateways`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS TrustedAdvisor`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network networkInterfaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS Api Usage`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network networkWatchers connectionMonitors`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS VPN Monitoring`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network p2sVpnGateways`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS WAF`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network privateDnsZones`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS WorkMail`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `Microsoft.Network privateEndpoints`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, `AWS WorkSpaces`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "리전-메트릭스-스탯-선택"
-    }, `리전, 메트릭스, 스탯 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+    }, `Microsoft.Network privateLinkServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Network publicIPAddresses`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Network trafficManagerProfiles`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Network virtualNetworkGateways`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Network virtualNetworks`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Network virtualRouters`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Network vpnGateways`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.NotificationHubs Namespaces NotificationHubs`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.OperationalInsights workspaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Peering peerings`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Peering peeringServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.PowerBIDedicated capacities`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.ProjectBabylon accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.purview accounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Relay namespaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.resources subscriptions`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Search searchServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.ServiceBus namespaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.ServiceFabricMesh applications`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.SignalRService SignalR`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Sql managedInstances`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Sql servers databases`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Sql servers elasticPools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Storage storageAccounts`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Storage storageAccounts blobServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Storage storageAccounts fileServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Storage storageAccounts queueServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Storage storageAccounts tableServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.StorageCache caches`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.storagesync storageSyncServices`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.storagesync storageSyncServices registeredServers`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.storagesync storageSyncServices syncGroups`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.storagesync storageSyncServices syncGroups serverEndpoints`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.StreamAnalytics streamingjobs`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Synapse workspaces`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Synapse workspaces bigDataPools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Synapse workspaces sqlPools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.TimeSeriesInsights environments`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.TimeSeriesInsights environments eventsources`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.VMwareCloudSimple virtualMachines`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Web hostingEnvironments multiRolePools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Web hostingEnvironments workerPools`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Web serverfarms`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Web sites`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Web sites slots`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Microsoft.Web staticSites`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "리소스-그룹-메트릭스-스탯-선택"
+    }, `리소스 그룹, 메트릭스, 스탯 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "number 2",
         src: (__webpack_require__(79221)/* ["default"] */ .Z),
         width: "35",
         height: "35"
-    }), ` 수집 체크 된 네임스페이스의 오른쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+    }), ` 수집 체크된 네임스페이스의 오른쪽 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "수정 아이콘",
         src: (__webpack_require__(83808)/* ["default"] */ .Z),
         width: "24",
@@ -1235,7 +1200,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `리전`)), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `리소스 그룹`)), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
@@ -1243,14 +1208,14 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `스탯`)), `을 선택할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "amazon_cloudwatch_setup_dialog_2nd.png",
-        desc: "Amazon Cloudwatch - Region,Metric,Stats",
+    }, `스탯`)), `을 선택할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "whatap_azure_resourcegroup_dialog.png",
+        desc: "Azure Monitor - ResourceGroup, Metric, Stats",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "data-deactivation"
     }, `데이터 수집 비활성화 및 서비스 초기화`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "amazon-cloudwatch-deact.png",
+        img: "cloud-deact.png",
         desc: "비활성화 및 서비스 초기화 sc",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -1297,11 +1262,17 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `완전한 비용 발생 방지를 위해서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `AWS IAM`), ` 콘솔에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, `역할`), `(Role)을 제거해야 합니다.`))));
+    }, `완전한 비용 발생 방지를 위해서는 다음을 제거해야 합니다.  `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `Azure Portal Subscript에서 모니터링 리더 Role을 제거하세요. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `Azure Registered App을 제거하세요.`))))));
 }
 MDXContent.isMDXComponent = true;
 
@@ -1405,6 +1376,16 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LjE0ZWNiNDJmMmMsIDIwMjMvMDEvMTMtMTI6MjU6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MjNjODFkMGUtOTAzMy00NmVhLWI3MzQtZWVmNzY0Y2U4ODY1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRCRDFDMjg4QjU2QTExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRCRDFDMjg3QjU2QTExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4wIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODNkOGM4MWEtNWE2MS00MmRiLTk2YTgtYTc1NjI2MTU1MDg1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIzYzgxZDBlLTkwMzMtNDZlYS1iNzM0LWVlZjc2NGNlODg2NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhIBdIgAAAMcSURBVHjazFh9aI1hFD93KIw1hZDkZn+oOyklFLar5ONiSzNqUmqF+UqakFmjKMWSiCSaj3wlaXcmaV8YKQ2bf0xL/rDIR1uTYvE73ee573vf3bud5953b0792t37cd7fe57zO885r6+nlv4bG2p4/XhgOZALBICpQAbwF+gGOoA2oB64D3w2ce4TRmYBsAdYavACv4Ea4BjwVHJD2gDnpwFhoBFYYRjJYUAe8AS4B/hTIVMEtKhlSdVWKl+FyZCpAK4Ao1zMT86t68ABEzKHgIODJBgfcBjYKyGzHijzQMVHgHX9kckCznpUUjhC55xJbVfHKSBd4unLD0ismajuJdHtpsixAog/OIsoNI9oXKY4h04Cq5x1hotYncTDnQZk90Wi9s7457MmEF0tJ8r2i6M0X8k/ukylkrt6fsUS4QdvCkWioo3PFVVErhVaqT0yE/H3IzBEcmfHJ6KtJ4iKUQJX51jHH74gyrel/l1oZvFscaWezFsH50xISoTND+q38KD04bHHnQ/u/mlUqXmbqeJlWmgqBScRndR2mzTWyGWuVtOMVDTKJFreEVXetI5xHs0NGLkJaDJTkiHRimZhzpa+x0/vJFoTNHbn12rKdKuS5SDGGSPjL+MANlqrqVfQSsRdnqZXRF1I1NftKKdh6xxL/cxuI1JcCEYwmW/4MSbVqLDk8/dZNehoMdGOAvm7cRfJEfngxhKx5Hettf6vfW72LjpnWk0jIKmuDW+MyLzVZBqldzAJXoqS4xE1OUlW3oiVt4HVa2lz6vVKqvCF6khOMHi3ZvVMR2H42mXt3toKF4mJ/FGTRHTXDkt6XY5M2flY5cQzg32JVLOeZyfD7/FIejdvis2Yjp61WbmRRD9jH4MeO+cm/rXE4yEyrEagPm3nNl4JD4nwBLo9UQ+MOkolHpLZrOtLoumgiounB0R4FLommZv2q9lmsKw8kf+0fphvdDmH2NcGNSQaz9qXgJnAAxeI1Chfl1P5CvFe9adBW6WWGl9brVrKkPLlyveZaGsLLOM+CshWXaJuP76rDkB/LOJodJo4/yfAABNxzftn0khZAAAAAElFTkSuQmCC");
+
+/***/ }),
+
+/***/ 72343:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/registeredapps-bcb215d518d7d3ee3e33fe6b1f762bf1.png");
 
 /***/ })
 
