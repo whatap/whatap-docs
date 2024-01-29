@@ -32328,7 +32328,7 @@
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
     "ja": "15日間無料体験できます。{br}以降、自動的に有償転換されます。",
-    "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
+    "ko": "15일간 무료 체험이 가능합니다. {br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
   },
@@ -48230,10 +48230,10 @@
     "service_id": "DSC07002"
   },
   "DSC07003": {
-    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
-    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。<br />(設定から1時間後に収集が始まります。)",
+    "en": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
+    "ja": "1時間周期でevents_statements_summary_by_digestからデルタ値を計算して収集します。 <br />(設定から1時間後に収集が始まります。)",
     "ko": "1시간 주기로 events_statements_summary_by_digest로부터 델타값을 계산하여 수집합니다.<br/>(따라서 셋팅 후 1시간 뒤부터 수집이 시작됩니다.)",
-    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour.<br/> (So the collection starts an hour after the setup.)",
+    "zh": "Calculates and collects delta values from events_statements_summary_by_digest every hour. <br/> (So the collection starts an hour after the setup.)",
     "service_id": "DSC07003"
   },
   "BTN07004": {
@@ -51417,7 +51417,7 @@
   "TTL07463": {
     "en": "Do you want to delete the project?",
     "ja": "プロジェクトを削除しますか？",
-    "ko": "프로젝트를삭제하시겠습니까?",
+    "ko": "프로젝트를 삭제하시겠습니까?",
     "zh": "Do you want to delete the project?\n",
     "service_id": "TTL07463"
   },
@@ -52376,7 +52376,7 @@
   "DSC07601": {
     "en": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
     "ja": "以下のWhaTap Docsでコントロールプレーンのkube-apiserverモニタリングの詳細をご覧ください！",
-    "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한자세한 내용을 확인해보세요!",
+    "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한 자세한 내용을 확인해보세요!",
     "zh": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
     "service_id": "DSC07601"
   },
@@ -52401,13 +52401,34 @@
     "zh": "You cannot withdraw for the following reasons. Please check the contents below and try it for smooth membership withdrawal.",
     "service_id": "DSC07604"
   },
+  "DSC07605": {
+    "en": "Multi-factor authentication is an additional security procedure that requires authentication code after login to fortify your account safety even if your password is leaked.",
+    "ja": "マルチファクター認証はアカウントに対するセキュリティを強化するための対策の一つです。{br}ログインしてから追加の認証コードを要求することで、万が一パスワードが流出された場合に備えます。",
+    "ko": "멀티팩터 인증은 계정 보안을 확보하기 위한 추가 인증 절차입니다.{br}로그인 이후 인증 코드를 요구하여 비밀번호가 유출되는 경우를 대비할 수 있습니다.",
+    "zh": "Multi-factor authentication is an additional security procedure that requires authentication code after login to fortify your account safety even if your password is leaked.",
+    "service_id": "DSC07605"
+  },
+  "DSC07606": {
+    "en": "Show all paid projects",
+    "ja": "すべての有料プロジェクトを表示\n",
+    "ko": "모든 유료 프로젝트 표시",
+    "zh": "Show all paid projects",
+    "service_id": "DSC07606"
+  },
+  "TLT07607": {
+    "en": "Shows all projects in paid status that you don't have permission to pay for.",
+    "ja": "支払い権限のない有料ステータスのすべてのプロジェクトを表示します。",
+    "ko": "결제 권한이 없는 유료 상태의 모든 프로젝트를 표시합니다.",
+    "zh": "Shows all projects in paid status that you don't have permission to pay for.",
+    "service_id": "TLT07607"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
   },
   "freetrial": {
-    "en": "Start a free trial",
-    "ja": "Start a free trial",
+    "en": "Get Started for free",
+    "ja": "無料で試す",
     "ko": "무료로 시작하기"
   },
   "ajaxAnalytics": {

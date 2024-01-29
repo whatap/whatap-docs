@@ -6163,6 +6163,54 @@
     "width": 1000,
     "height": 270
   },
+  "k8s-object-manifest-cm-en.png": {
+    "width": 1200,
+    "height": 693
+  },
+  "k8s-object-manifest-cm-ja.png": {
+    "width": 1200,
+    "height": 698
+  },
+  "k8s-object-manifest-cm.png": {
+    "width": 1200,
+    "height": 694
+  },
+  "k8s-object-manifest-compare-en.png": {
+    "width": 1246,
+    "height": 1033
+  },
+  "k8s-object-manifest-compare-ja.png": {
+    "width": 1246,
+    "height": 1033
+  },
+  "k8s-object-manifest-compare.png": {
+    "width": 1246,
+    "height": 1033
+  },
+  "k8s-object-manifest-detail-en.png": {
+    "width": 1194,
+    "height": 995
+  },
+  "k8s-object-manifest-detail-ja.png": {
+    "width": 1192,
+    "height": 995
+  },
+  "k8s-object-manifest-detail.png": {
+    "width": 1197,
+    "height": 993
+  },
+  "k8s-object-manifest-en.png": {
+    "width": 1200,
+    "height": 623
+  },
+  "k8s-object-manifest-ja.png": {
+    "width": 1200,
+    "height": 627
+  },
+  "k8s-object-manifest.png": {
+    "width": 1200,
+    "height": 629
+  },
   "k8s-performance-summary-en.png": {
     "width": 1200,
     "height": 1262
@@ -6435,9 +6483,17 @@
     "width": 1024,
     "height": 739
   },
+  "kube-install-openshift-en.png": {
+    "width": 838,
+    "height": 695
+  },
+  "kube-install-openshift-ja.png": {
+    "width": 895,
+    "height": 682
+  },
   "kube-install-openshift.png": {
-    "width": 800,
-    "height": 558
+    "width": 827,
+    "height": 682
   },
   "kubernetes-container-map-event.png": {
     "width": 800,
@@ -7501,7 +7557,7 @@
   },
   "member-modify-authority-0508-ja.png": {
     "width": 682,
-    "height": 731
+    "height": 870
   },
   "member-modify-authority-0508.png": {
     "width": 683,
@@ -9221,27 +9277,27 @@
   },
   "npm-dashboard-settings-popup-en.png": {
     "width": 400,
-    "height": 581
+    "height": 508
   },
   "npm-dashboard-settings-popup-ja.png": {
     "width": 400,
-    "height": 578
+    "height": 508
   },
   "npm-dashboard-settings-popup.png": {
     "width": 400,
-    "height": 578
+    "height": 510
   },
   "npm-dashboard-settings-threshold-en.png": {
     "width": 400,
-    "height": 396
+    "height": 309
   },
   "npm-dashboard-settings-threshold-ja.png": {
     "width": 400,
-    "height": 396
+    "height": 309
   },
   "npm-dashboard-settings-threshold.png": {
     "width": 400,
-    "height": 396
+    "height": 309
   },
   "npm-dashboard-topology-edge-setting-en.png": {
     "width": 400,
@@ -9826,6 +9882,10 @@
   "release-log-level-color.png": {
     "width": 1206,
     "height": 388
+  },
+  "release-main-ui.png": {
+    "width": 2384,
+    "height": 702
   },
   "release-multi-tx-chartview.png": {
     "width": 826,
@@ -11527,6 +11587,18 @@
     "width": 1200,
     "height": 647
   },
+  "main-ui-fold-extend-sidemenu.png": {
+    "width": 1200,
+    "height": 462
+  },
+  "main-ui-home-to-project-move-01.png": {
+    "width": 600,
+    "height": 414
+  },
+  "main-ui-home-to-project-move-02.png": {
+    "width": 694,
+    "height": 837
+  },
   "main-ui-profile-menu.png": {
     "width": 200,
     "height": 295
@@ -11539,6 +11611,10 @@
     "width": 1200,
     "height": 647
   },
+  "main-ui-set-favorite-menu.png": {
+    "width": 400,
+    "height": 361
+  },
   "main-ui-setting-by-org.png": {
     "width": 400,
     "height": 101
@@ -11546,6 +11622,10 @@
   "main-ui-ver2.png": {
     "width": 1200,
     "height": 647
+  },
+  "main-ui-view-only-favorite.png": {
+    "width": 400,
+    "height": 137
   },
   "uni-topology-select-project-en.png": {
     "width": 800,
