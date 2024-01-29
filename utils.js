@@ -54,8 +54,8 @@ function colsToJson(data){
     }
   }
   rd['freetrial'] = {};
-  rd['freetrial']['en'] = 'Start a free trial';
-  rd['freetrial']['ja'] = 'Start a free trial';
+  rd['freetrial']['en'] = 'Get Started for free';
+  rd['freetrial']['ja'] = '無料で試す';
   rd['freetrial']['ko'] = '무료로 시작하기';
 
   rd['ajaxAnalytics'] = {};
