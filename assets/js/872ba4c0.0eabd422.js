@@ -361,7 +361,7 @@ const metadata = {
     },
     "next": {
         "title": "홈 화면(UI) 안내",
-        "permalink": "/whatap-docs/main-ui-intro"
+        "permalink": "/whatap-docs/main-ui-intro-v2"
     }
 };
 const assets = {};

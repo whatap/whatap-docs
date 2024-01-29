@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[88757],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[11717],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 9484:
+/***/ 3637:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,37 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'k8s-1_4_9',
-    title: 'Kubernetes Agent v1.4.9',
+    id: 'k8s-1_3_8',
+    title: 'Kubernetes Agent v1.3.8',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/k8s/k8s-1_4_8',
+    pagination_next: 'release-notes/k8s/k8s-1_3_7',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/k8s/k8s-1_4_9",
-    "id": "release-notes/k8s/k8s-1_4_9",
-    "title": "Kubernetes Agent v1.4.9",
-    "description": "2024년 01월 08일",
-    "source": "@site/docs/release-notes/k8s/k8s-1.4.9.mdx",
+    "unversionedId": "release-notes/k8s/k8s-1_3_8",
+    "id": "release-notes/k8s/k8s-1_3_8",
+    "title": "Kubernetes Agent v1.3.8",
+    "description": "2023년 10월 4일",
+    "source": "@site/docs/release-notes/k8s/k8s-1.3.8.mdx",
     "sourceDirName": "release-notes/k8s",
-    "slug": "/release-notes/k8s/k8s-1_4_9",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_9",
+    "slug": "/release-notes/k8s/k8s-1_3_8",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_8",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.9.mdx",
+    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.3.8.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "k8s-1_4_9",
-        "title": "Kubernetes Agent v1.4.9",
+        "id": "k8s-1_3_8",
+        "title": "Kubernetes Agent v1.3.8",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/k8s/k8s-1_4_8",
+        "pagination_next": "release-notes/k8s/k8s-1_3_7",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Server Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/server/server-previous"
-    },
     "next": {
-        "title": "Kubernetes Agent v1.4.8",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_8"
+        "title": "Kubernetes Agent v1.3.7",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_3_7"
     }
 };
 const assets = {};
@@ -363,16 +359,16 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 08일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "collect_control_plane_monitoring_enabled"), " 옵션 추가, 이 옵션의 값을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", null, "true"), "로 설정하면 컨트롤 플레인(Control Plane) 지표를 수집합니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2023년 10월 4일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://repo.whatap.io/docker/kube_mon_1.4.9.tar"
-    }, `kube_mon_1.4.9.tar`))));
+        "href": "http://repo.whatap.io/docker/kube_mon_1.3.8.tar"
+    }, `http://repo.whatap.io/docker/kube_mon_1.3.8.tar`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " 파드(Pod) 목록 신규 개발을 위한 데이터 추가 수집(podIp, age, restartCount)"));
 }
 MDXContent.isMDXComponent = true;
 

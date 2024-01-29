@@ -356,7 +356,15 @@ const metadata = {
             "모니터링"
         ]
     },
-    "sidebar": "indexSidebar"
+    "sidebar": "indexSidebar",
+    "previous": {
+        "title": "소프트웨어 프록시",
+        "permalink": "/whatap-docs/software-proxy"
+    },
+    "next": {
+        "title": "학습하기",
+        "permalink": "/whatap-docs/learning-guides"
+    }
 };
 const assets = {};
 const toc = [
