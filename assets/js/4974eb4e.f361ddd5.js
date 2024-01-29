@@ -439,7 +439,7 @@ const toc = [
         level: 3
     },
     {
-        value: '프로젝트 메뉴 이용하기',
+        value: '프로젝트 메뉴를 즐겨찾기로 등록하기',
         id: 'usingprojectmenu',
         level: 3
     },
@@ -983,7 +983,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "td",
         "href": "/log/introduction"
-    }, `Log 모니터링`), `을 위한 프로젝트를 생성할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
+    }, `Log 모니터링`), `에 대한 소개와 설정 방법을 안내합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
         parentName: "tr",
@@ -1309,7 +1309,7 @@ function MDXContent(_param) {
         mdxType: "Link"
     }, "다음 문서"), "를 참조하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "usingprojectmenu"
-    }, `프로젝트 메뉴 이용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면에서 프로젝트를 선택해 이동하면 사이드 메뉴에는 프로젝트에서 이용할 수 있는 메뉴가 표시됩니다. 자주 이용하는 메뉴를 즐겨찾기로 등록해 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `프로젝트 메뉴를 즐겨찾기로 등록하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면에서 프로젝트를 선택해 이동하면 사이드 메뉴에는 프로젝트에서 이용할 수 있는 메뉴가 표시됩니다. 자주 이용하는 메뉴를 즐겨찾기로 등록해 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
