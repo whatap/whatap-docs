@@ -408,11 +408,6 @@ const toc = [
         level: 4
     },
     {
-        value: '노드 크기 설정하기',
-        id: '노드-크기-설정하기',
-        level: 4
-    },
-    {
         value: '임계치 설정하기',
         id: '임계치-설정하기',
         level: 4
@@ -676,7 +671,7 @@ function MDXContent(_param) {
         desc: "엣지",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `토폴로지 차트의 엣지에 표시할 값의 종류를 선택할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "MNU06813",
+        sid: "ITM07578",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 항목에서 원하는 지표를 선택할 수 있습니다. 엣지에 표시 가능한 성능 지표의 종류는 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -687,7 +682,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `latency`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `jitter`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -695,7 +690,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `jitter`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `latency`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -721,39 +716,27 @@ function MDXContent(_param) {
         parentName: "strong"
     }, `sessions`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "MNU06813",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 항목에서 선택한 지표의 종류에 따라 세 번째 항목도 같이 변경됩니다. 세 번째 항목에서는 선택한 지표의 임계치를 설정할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }), " 항목에서 선택한 지표의 종류에 따라 두 번째 항목도 같이 변경됩니다. 두 번째 항목에서는 선택한 지표의 임계치를 설정할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "npm-dashboard-settings-threshold.png",
         desc: "임계치 설정",
         mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "노드-크기-설정하기"
-    }, `노드 크기 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "MNU06814",
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+        sid: "ITM07578",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 항목에서는 토폴로지 차트에 표시되는 노드 크기의 가중치 종류를 설정할 수 있습니다. 데이터 또는 패킷 처리량에 따라 노드의 크기가 달라집니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `Total bytes`)), ` : 데이터 처리량을 가중치로 설정합니다. 데이터 처리량은 송신 데이터량 및 수신 데이터량의 총합입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `Packet counts`)), ` : 패킷 처리량을 가중치로 설정합니다. 패킷 처리량은 송신 패킷량 및 수신 패킷량의 총합입니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
+    }), " 항목에서 선택한 값에 따라 노드 크기의 가중치가 자동 설정됩니다."))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
         "id": "임계치-설정하기"
-    }, `임계치 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `세 번째 항목과 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `임계치 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `두 번째 항목과 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "TTL06840",
         className: "uitext",
         mdxType: "Cmdname"
