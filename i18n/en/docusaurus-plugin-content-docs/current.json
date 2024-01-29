@@ -1622,5 +1622,9 @@
   "sidebar.otelSidebar.category.OpenTelemetry": {
     "message": "OpenTelemetry",
     "description": "The label for category OpenTelemetry in sidebar otelSidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.6 (74)": {
+    "message": "v1.0.6 (74)",
+    "description": "The label for the doc item v1.0.6 (74) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_6"
   }
 }
