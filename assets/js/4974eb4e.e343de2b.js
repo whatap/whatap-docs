@@ -404,7 +404,7 @@ const toc = [
         level: 3
     },
     {
-        value: '사이드바',
+        value: '사이드 메뉴',
         id: 'sidebar',
         level: 2
     },
@@ -434,8 +434,13 @@ const toc = [
         level: 3
     },
     {
-        value: '통합 메뉴 이용하기',
-        id: 'usingintmenu',
+        value: '홈 메뉴 이용하기',
+        id: 'usinghomemenu',
+        level: 3
+    },
+    {
+        value: '프로젝트 메뉴 이용하기',
+        id: 'usingprojectmenu',
         level: 3
     },
     {
@@ -459,7 +464,7 @@ const toc = [
         level: 3
     },
     {
-        value: '사이드바 크기 조절하기',
+        value: '사이드 메뉴 크기 조절하기',
         id: 'adjustsizesidebar',
         level: 3
     },
@@ -527,7 +532,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `화면 왼쪽에 위치한 패널은 사이드바입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `화면 왼쪽에 위치한 패널은 사이드 메뉴입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -779,15 +784,15 @@ function MDXContent(_param) {
         height: "24"
     }), ` 버튼을 선택하세요. 입력한 문자열과 일치하는 프로젝트가 프로젝트 목록에 표시됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "sidebar"
-    }, `사이드바`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 화면에서 왼쪽 패널 메뉴 영역을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `사이드 메뉴`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `와탭 모니터링 화면에서 왼쪽 패널 메뉴 영역을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
-    }, `사이드바`), `라고 지칭합니다. 사이드바에서는 프로젝트 간에 이동할 수 있는 기능과 그룹, 조직을 생성하거나 이동할 수 있는 기능, 프로젝트 생성 등의 주요 기능을 제공합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `사이드 메뉴`), `라고 부릅니다. 사이드 메뉴에서는 프로젝트 간에 이동할 수 있는 기능과 그룹, 조직을 생성하거나 이동할 수 있는 기능, 프로젝트 생성 등의 주요 기능을 제공합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "createproject"
     }, `프로젝트 생성하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `프로젝트를 새로 생성하려면 다음의 두 가지 방식을 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `사이드바에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `사이드 메뉴에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "BTN07332",
         className: "uitext",
         mdxType: "Cmdname"
@@ -804,7 +809,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `사이드바 가장 왼쪽에 상품 종류별 소개 아이콘을 선택하세요. 상품 소개 페이지로 이동하면 원하는 상품에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `사이드 메뉴의 가장 왼쪽에 상품 종류별 소개 아이콘을 선택하세요. 상품 소개 페이지로 이동하면 원하는 상품에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "BTN06900",
         className: "uitext",
         mdxType: "Cmdname"
@@ -1010,17 +1015,26 @@ function MDXContent(_param) {
         sid: "BTN07332",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 메뉴를 선택하세요. 프로젝트 목록 패널이 열리면 원하는 프로젝트를 선택하세요. 선택한 프로젝트로 이동할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ` 메뉴를 선택하세요. 프로젝트 목록 패널이 열리면 원하는 프로젝트를 선택하세요. 선택한 프로젝트로 이동할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "ui-home/main-ui-home-to-project-move-01.png",
+        desc: "",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `프로젝트로 진입한 상태에서 사이드바의 프로젝트 이름 메뉴를 선택하면 현재 프로젝트의 계층 구조를 파악할 수 있으며, 다른 프로젝트를 선택해 쉽게 이동할 수도 있습니다. 홈 화면으로 이동하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
-        sid: "BTN07329",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` 버튼을 선택하세요. 또는 화면 왼쪽 위에 와탭 로고를 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+    }, `프로젝트로 진입한 상태에서 사이드 메뉴의 프로젝트 이름을 선택하면 현재 프로젝트의 계층 구조를 파악할 수 있으며, 다른 프로젝트를 선택해 쉽게 이동할 수도 있습니다. 홈 화면으로 이동하려면 화면 왼쪽 위에 와탭 로고를 선택하거나 화면 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "홈 아이콘",
+        src: (__webpack_require__(90809)/* ["default"] */ .Z),
+        width: "24",
+        height: "24"
+    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "ui-home/main-ui-home-to-project-move-02.png",
+        desc: "",
+        mdxType: "ImgLang"
+    }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "managegroup"
-    }, `그룹 생성 또는 이동, 관리하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사이드바에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `그룹 생성 또는 이동, 관리하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사이드 메뉴에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "BTN07332",
         className: "uitext",
         mdxType: "Cmdname"
@@ -1083,7 +1097,7 @@ function MDXContent(_param) {
         "href": "project/project-structure"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "manageorganization"
-    }, `조직 생성 또는 이동, 관리하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사이드바에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `조직 생성 또는 이동, 관리하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사이드 메뉴에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "sidebar_org_selector_no_organization",
         className: "uitext",
         mdxType: "Cmdname"
@@ -1193,8 +1207,8 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
     }, `Agent`)), `: 프로젝트에 포함된 에이전트 이름을 기준으로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 프로젝트와 에이전트를 확인할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
-        "id": "usingintmenu"
-    }, `통합 메뉴 이용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면에서 이용할 수 있는 통합 메뉴는 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        "id": "usinghomemenu"
+    }, `홈 메뉴 이용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면에서 이용할 수 있는 통합 메뉴는 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "project_list",
@@ -1294,6 +1308,51 @@ function MDXContent(_param) {
         to: "project/integrated-manage",
         mdxType: "Link"
     }, "다음 문서"), "를 참조하세요.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
+        "id": "usingprojectmenu"
+    }, `프로젝트 메뉴 이용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `홈 화면에서 프로젝트를 선택해 이동하면 사이드 메뉴에는 프로젝트에서 이용할 수 있는 메뉴가 표시됩니다. 자주 이용하는 메뉴를 즐겨찾기로 등록해 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `사이드 메뉴에서 자주 이용하는 메뉴로 마우스 포인터를 놓으면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "즐겨찾기 아이콘",
+        src: (__webpack_require__(3735)/* ["default"] */ .Z),
+        width: "24",
+        height: "24"
+    }), ` 버튼이 나타납니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "ui-home/main-ui-set-favorite-menu.png",
+        desc: "즐겨찾는 메뉴 설정하기",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `버튼을 선택하면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "즐겨찾기 설정 아이콘",
+        src: (__webpack_require__(55671)/* ["default"] */ .Z),
+        width: "24",
+        height: "24"
+    }), `으로 변경됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `다른 메뉴를 즐겨찾기로 추가하려면 위의 과정을 반복하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `사이드 메뉴 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+        alt: "즐겨찾는 메뉴만 표시 아이콘",
+        src: (__webpack_require__(3735)/* ["default"] */ .Z),
+        width: "24",
+        height: "24"
+    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "ui-home/main-ui-view-only-favorite.png",
+        desc: "즐겨찾는 메뉴만 표시",
+        mdxType: "ImgLang"
+    }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사이드 메뉴에는 즐겨찾기로 설정된 메뉴만 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "admonition"
+    }, `프로젝트의 상품에 따라 표시되는 메뉴는 다를 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "applytheme"
     }, `테마 변경하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `사용자가 어둡거나 밝은 모드의 화면을 설정할 수 있습니다. 화면 왼쪽 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "테마 아이콘",
@@ -1360,33 +1419,37 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `진입한 메뉴 경로 또는 프로젝트에 따라 지원하는 메뉴는 다를 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "튜토리얼-확인하기"
-    }, `튜토리얼 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `화면 상에서 사이드바 사용에 대한 자세한 안내를 확인하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `튜토리얼 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `화면 상에서 사이드 메뉴 사용에 대한 자세한 안내를 확인하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "BTN07397",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h3", {
         "id": "adjustsizesidebar"
-    }, `사이드바 크기 조절하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음의 두 가지 방식으로 사이드바의 크기를 조절해 화면을 폭 넓게 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `사이드 메뉴 크기 조절하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `다음의 두 가지 방식으로 사이드 메뉴의 크기를 조절해 화면을 폭 넓게 이용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `사이드바를 접으려면 와탭 로고 오른쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+    }, `사이드 메뉴를 접으려면 와탭 로고 오른쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "접기 아이콘",
         src: (__webpack_require__(92155)/* ["default"] */ .Z),
         width: "13",
         height: "14"
-    }), ` 버튼을 선택하세요. 다시 사이드바를 펼치려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
+    }), ` 버튼을 선택하세요. 다시 사이드 메뉴를 펼치려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("img", {
         alt: "펼치기 아이콘",
         src: (__webpack_require__(45389)/* ["default"] */ .Z),
         width: "13",
         height: "13"
-    }), ` 버튼을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+        img: "ui-home/main-ui-fold-extend-sidemenu.png",
+        desc: "",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `사이드바를 기존보다 넓게 펼치려면 사이드바 경계선에 마우스를 오버하고 드래그하세요. 원하는 크기로 조절할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }, `사이드 메뉴를 기존보다 넓게 펼치려면 사이드 메뉴 경계선에 마우스를 오버하고 드래그하세요. 원하는 크기로 조절할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "ui-home/main-ui-adjust-sidebar.png",
-        desc: "사이드바",
+        desc: "사이드 메뉴",
         mdxType: "ImgLang"
     }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h2", {
         "id": "supportmenu"
@@ -1516,6 +1579,16 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
+/***/ 90809:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC42NzEyIDIuNTA1MThDMTEuNDI5IDEuODMxNjEgMTIuNTcwOSAxLjgzMTYxIDEzLjMyODcgMi41MDUxOEwyMi4zMjg3IDEwLjUwNTJDMjIuOTQ5MyAxMS4wNTY4IDIzLjE2NDUgMTEuOTM0NiAyMi44Njk0IDEyLjcxMDhDMjIuNTc0MyAxMy40ODY5IDIxLjgzMDMgMTQgMjEgMTRIMjBWMjBDMjAgMjEuMTA0NiAxOS4xMDQ1IDIyIDE4IDIySDEzVjIwVjE2SDExVjIwVjIySDUuOTk5OTZDNC44OTUzOSAyMiAzLjk5OTk2IDIxLjEwNDYgMy45OTk5NiAyMFYxNEgyLjk5OTk2QzIuMTY5NiAxNCAxLjQyNTYxIDEzLjQ4NjkgMS4xMzA1MiAxMi43MTA4QzAuODM1NDI3IDExLjkzNDYgMS4wNTA2MiAxMS4wNTY4IDEuNjcxMjQgMTAuNTA1MkwxMC42NzEyIDIuNTA1MThaTTguOTk5OTcgMjBWMTRIOS45OTk5N0gxMUgxM0gxNVYxNlYyMEgxOFYxMkgyMUwxMiA0TDIuOTk5OTYgMTJINS45OTk5NlYyMEg4Ljk5OTk3WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K");
+
+/***/ }),
+
 /***/ 56522:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1553,6 +1626,16 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=");
+
+/***/ }),
+
+/***/ 55671:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMyA5LjM4MzE2TDE1LjA5MSA4LjY2NTI2TDEyIDFMOC45MDkgOC42NzY4NEwxIDkuMzgzMTZMNy4wMDYgMTQuODZMNS4yMDIgMjNMMTIgMTguNjgxMUwxOC43OTggMjNMMTcuMDA1IDE0Ljg2TDIzIDkuMzgzMTZWOS4zODMxNloiIGZpbGw9IiMyOTZDRjIiLz4KPC9zdmc+Cg==");
 
 /***/ }),
 
