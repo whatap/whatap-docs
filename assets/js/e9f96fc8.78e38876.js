@@ -443,12 +443,16 @@ function MDXContent(_param) {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, `홈 화면 왼쪽 하단에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }, `홈 화면 오른쪽 위에 프로필 아이콘을 선택하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, `드롭다운 메뉴가 나타나면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "my_usage",
         className: "uitext",
         mdxType: "Cmdname"
     }), `을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
-        img: "tax_invoice_1.png",
+        img: "billing-select-my-usage.png",
         desc: "이용 내역",
         mdxType: "ImgLang"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
@@ -742,10 +746,6 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), " 버튼을 선택해 개별적으로 유료 전환할 수 있습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "project_subscription",
         className: "uitext",
@@ -753,7 +753,7 @@ function MDXContent(_param) {
     }), " 메뉴에 대한 자세한 내용은 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Link, {
         to: "management/billing#project-subscription",
         mdxType: "Link"
-    }, "다음 문서"), "를 참조하세요."))));
+    }, "다음 문서"), "를 참조하세요."));
 }
 MDXContent.isMDXComponent = true;
 
