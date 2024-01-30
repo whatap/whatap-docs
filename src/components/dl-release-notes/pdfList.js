@@ -1,5 +1,17 @@
 const svList = [
     {
+        "name": 'Service-2.0.x',
+        "date": '2024-01-19',
+        "url": '/pdf/release-notes/service-2.0.x.pdf',
+        "docs": '/release-notes/service/service-2_0_x'
+    },
+    {
+        "name": 'Service-1.114.x',
+        "date": '2023-12-21',
+        "url": '/pdf/release-notes/service-1.114.x.pdf',
+        "docs": '/release-notes/service/service-1_114_x'
+    },
+    {
         "name": 'Service-1.112.x',
         "date": '2023-11-17',
         "url": '/pdf/release-notes/service-1.112.x.pdf',
@@ -183,6 +195,12 @@ const svList = [
 ];
 
 const javaList = [
+    {
+        "name": 'Java-agent-v2.2.26',
+        "date": '2024-01-11',
+        "url": '/pdf/release-notes/java-agent-v2.2.26.pdf',
+        "docs": '/release-notes/java/java-2_2_26',
+    },
     {
         "name": 'Java-agent-v2.2.25',
         "date": '2023-12-20',
@@ -388,6 +406,18 @@ const javaBatchList = [
 
 const phpList = [
     {
+        "name": 'php-agent-v2.7.1',
+        "date": '2024-01-24',
+        "url": '/pdf/release-notes/php-agent-v2.7.1.pdf',
+        "docs": '/release-notes/php/php-2_7_1',
+    },
+    {
+        "name": 'php-agent-v2.7.0',
+        "date": '2024-01-10',
+        "url": '/pdf/release-notes/php-agent-v2.7.0.pdf',
+        "docs": '/release-notes/php/php-2_7_0',
+    },
+    {
         "name": 'php-agent-v2.6.3',
         "date": '2023-11-22',
         "url": '/pdf/release-notes/php-agent-v2.6.3.pdf',
@@ -463,6 +493,24 @@ const phpList = [
 
 const nodejsList = [
     {
+        "name": 'Node.js-agent-v0.4.89',
+        "date": '2024-01-22',
+        "url": '/pdf/release-notes/nodejs-agent-v0.4.89.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_89',
+    },
+    {
+        "name": 'Node.js-agent-v0.4.88',
+        "date": '2024-01-11',
+        "url": '/pdf/release-notes/nodejs-agent-v0.4.88.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_88',
+    },
+    {
+        "name": 'Node.js-agent-v0.4.86',
+        "date": '2024-01-04',
+        "url": '/pdf/release-notes/nodejs-agent-v0.4.86.pdf',
+        "docs": '/release-notes/nodejs/nodejs-0_4_86',
+    },
+    {
         "name": 'Node.js-agent-v0.4.83',
         "date": '2023-12-11',
         "url": '/pdf/release-notes/nodejs-agent-v0.4.83.pdf',
@@ -489,6 +537,24 @@ const nodejsList = [
 ]
 
 const pyList = [
+    {
+        "name": 'Python-agent-v1.5.4',
+        "date": '2024-01-09',
+        "url": '/pdf/release-notes/python-agent-v1.5.4.pdf',
+        "docs": '/release-notes/python/python-1_5_4',
+    },
+    {
+        "name": 'Python-agent-v1.5.3',
+        "date": '2024-01-05',
+        "url": '/pdf/release-notes/python-agent-v1.5.3.pdf',
+        "docs": '/release-notes/python/python-1_5_3',
+    },
+    {
+        "name": 'Python-agent-v1.5.2',
+        "date": '2024-01-03',
+        "url": '/pdf/release-notes/python-agent-v1.5.2.pdf',
+        "docs": '/release-notes/python/python-1_5_2',
+    },
     {
         "name": 'Python-agent-v1.5.0',
         "date": '2023-12-29',
@@ -748,6 +814,18 @@ const dotnetList = [
 
 const goList = [
     {
+        "name": 'Go-agent-v0.3.1',
+        "date": '2024-01-24',
+        "url": '/pdf/release-notes/Go-agent-v0.3.1.pdf',
+        "docs": '/release-notes/golang/golang-0_3_1',
+    },
+    {
+        "name": 'Go-agent-v0.3.0',
+        "date": '2024-01-10',
+        "url": '/pdf/release-notes/Go-agent-v0.3.0.pdf',
+        "docs": '/release-notes/golang/golang-0_3_0',
+    },
+    {
         "name": 'Go-agent-v0.2.4',
         "date": '2023-11-22',
         "url": '/pdf/release-notes/Go-agent-v0.2.4.pdf',
@@ -828,6 +906,18 @@ const goList = [
 ];
 
 const serverList = [
+    {
+        "name": "Server-agent-v2.5.1",
+        "date": "2024-01-26",
+        "url": "/pdf/release-notes/server-agent-v2.5.1.pdf",
+        "docs": "/release-notes/server/server-2_5_1"
+    },
+    {
+        "name": "Server-agent-v2.5.0",
+        "date": "2024-01-24",
+        "url": "/pdf/release-notes/server-agent-v2.5.0.pdf",
+        "docs": "/release-notes/server/server-2_5_0"
+    },
     {
         "name": "Server-agent-v2.4.9",
         "date": "2023-12-29",
@@ -1023,6 +1113,30 @@ const serverList = [
 ];
 
 const k8sList = [
+    {
+        "name": "Kubernetes-agent-v1.5.2",
+        "date": "2024-01-26",
+        "url": "/pdf/release-notes/k8s-agent-v1.5.2.pdf",
+        "docs": "/release-notes/k8s/k8s-1_5_2"
+    },
+    {
+        "name": "Kubernetes-agent-v1.5.1",
+        "date": "2024-01-25",
+        "url": "/pdf/release-notes/k8s-agent-v1.5.1.pdf",
+        "docs": "/release-notes/k8s/k8s-1_5_1"
+    },
+    {
+        "name": "Kubernetes-agent-v1.4.9",
+        "date": "2024-01-08",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.9.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_9"
+    },
+    {
+        "name": "Kubernetes-agent-v1.4.8",
+        "date": "2023-12-14",
+        "url": "/pdf/release-notes/k8s-agent-v1.4.8.pdf",
+        "docs": "/release-notes/k8s/k8s-1_4_8"
+    },
     {
         "name": "Kubernetes-agent-v1.4.4",
         "date": "2023-11-22",
@@ -1243,6 +1357,24 @@ const k8sList = [
 
 const dbxList = [
     {
+        "name": "DBX-agent-v1.6.18",
+        "date": "2024-01-25",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.18.pdf",
+        "docs": "release-notes/db/dbx-1_6_18"
+    },
+    {
+        "name": "DBX-agent-v1.6.17",
+        "date": "2024-01-16",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.17.pdf",
+        "docs": "release-notes/db/dbx-1_6_17"
+    },
+    {
+        "name": "DBX-agent-v1.6.16",
+        "date": "2024-01-03",
+        "url": "/pdf/release-notes/dbx-agent-v1.6.16.pdf",
+        "docs": "release-notes/db/dbx-1_6_16"
+    },
+    {
         "name": "DBX-agent-v1.6.15",
         "date": "2023-12-09",
         "url": "/pdf/release-notes/dbx-agent-v1.6.15.pdf",
@@ -1393,68 +1525,74 @@ const xosList = [
 
 const browserList = [
     {
+        "name": "Browser-agent-v1.3.3",
+        "date": "2023-12-27",
+        "url": "/pdf/release-notes/browser-agent-v1.3.2.pdf",
+        "docs": "release-notes/browser/browser-v1_3_2"
+    },
+    {
         "name": "Browser-agent-v1.3.2",
-        "date": "2022-10-24",
+        "date": "2023-10-24",
         "url": "/pdf/release-notes/browser-agent-v1.3.2.pdf",
         "docs": "release-notes/browser/browser-v1_3_2"
     },
     {
         "name": "Browser-agent-v1.3.1",
-        "date": "2022-09-25",
+        "date": "2023-09-25",
         "url": "/pdf/release-notes/browser-agent-v1.3.1.pdf",
         "docs": "release-notes/browser/browser-v1_3_1"
     },
     {
         "name": "Browser-agent-v1.3.0",
-        "date": "2022-09-06",
+        "date": "2023-09-06",
         "url": "/pdf/release-notes/browser-agent-v1.3.0.pdf",
         "docs": "release-notes/browser/browser-v1_3_0"
     },
     {
         "name": "Browser-agent-v1.2.2",
-        "date": "2022-08-08",
+        "date": "2023-08-08",
         "url": "/pdf/release-notes/browser-agent-v1.2.2.pdf",
         "docs": "release-notes/browser/browser-v1_2_2"
     },
     {
         "name": "Browser-agent-v1.2.1",
-        "date": "2022-07-06",
+        "date": "2023-07-06",
         "url": "/pdf/release-notes/browser-agent-v1.2.1.pdf",
         "docs": "release-notes/browser/browser-v1_2_1"
     },
     {
         "name": "Browser-agent-v1.2.0",
-        "date": "2022-06-21",
+        "date": "2023-06-21",
         "url": "/pdf/release-notes/browser-agent-v1.2.0.pdf",
         "docs": "release-notes/browser/browser-v1_2_0"
     },
     {
         "name": "Browser-agent-v1.1.4",
-        "date": "2022-05-30",
+        "date": "2023-05-30",
         "url": "/pdf/release-notes/browser-agent-v1.1.4.pdf",
         "docs": "release-notes/browser/browser-v1_1_4"
     },
     {
         "name": "Browser-agent-v1.1.3",
-        "date": "2022-05-23",
+        "date": "2023-05-23",
         "url": "/pdf/release-notes/browser-agent-v1.1.3.pdf",
         "docs": "release-notes/browser/browser-v1_1_3"
     },
     {
         "name": "Browser-agent-v1.1.2",
-        "date": "2022-05-15",
+        "date": "2023-05-15",
         "url": "/pdf/release-notes/browser-agent-v1.1.2.pdf",
         "docs": "release-notes/browser/browser-v1_1_2"
     },
     {
         "name": "Browser-agent-v1.1.1",
-        "date": "2022-04-28",
+        "date": "2023-04-28",
         "url": "/pdf/release-notes/browser-agent-v1.1.1.pdf",
         "docs": "release-notes/browser/browser-v1_1_1"
     },
     {
         "name": "Browser-agent-v1.1.0",
-        "date": "2022-04-28",
+        "date": "2023-04-28",
         "url": "/pdf/release-notes/browser-agent-v1.1.0.pdf",
         "docs": "release-notes/browser/browser-v1_1_0"
     },
@@ -1469,7 +1607,7 @@ const etcList = [
     },
     {
         "name": "Amazon-ECS-Release-Notes",
-        "date": "2023-03-02",
+        "date": "2023-11-23",
         "url": "/pdf/release-notes/amazon-ecs-release-notes.pdf",
         "docs": "release-notes/amazon-ecs/amazon-ecs-release-notes"
     },
@@ -1481,7 +1619,7 @@ const etcList = [
     },
     {
         "name": "Focus-Release-Notes",
-        "date": "2020-08-28",
+        "date": "2023-03-22",
         "url": "/pdf/release-notes/focus-release-notes.pdf",
         "docs": "release-notes/focus/focus-release-notes"
     },
