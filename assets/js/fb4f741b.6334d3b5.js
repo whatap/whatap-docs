@@ -335,8 +335,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Service 지난 버전",
-        "permalink": "/whatap-docs/release-notes/service/service-previous"
+        "title": "WhaTap Mobile App v1.0.7 (75)",
+        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_7"
     },
     "next": {
         "title": "WhaTap Mobile App v1.0.4 (53)",

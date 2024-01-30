@@ -466,7 +466,7 @@ function MDXContent(_param) {
         "align": "center"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "td",
-        "href": "https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-0.x86_64.rpm"
+        "href": "https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-1.x86_64.rpm"
     }, `다운로드`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("td", {
