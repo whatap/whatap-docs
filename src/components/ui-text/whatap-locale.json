@@ -52422,6 +52422,13 @@
     "zh": "Shows all projects in paid status that you don't have permission to pay for.",
     "service_id": "TLT07607"
   },
+  "NTC07608": {
+    "en": "The dashboard failed to load.",
+    "ja": "ダッシュボードの読み込みに失敗しました。",
+    "ko": "대시보드 불러오기에 실패했습니다.",
+    "zh": "The dashboard failed to load.",
+    "service_id": "NTC07608"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -52607,5 +52614,10 @@
     "en": "Sign up",
     "ja": "サインアップ",
     "ko": "계정 생성"
+  },
+  "kubernetesAgentList": {
+    "en": "Kubernetes Agent List",
+    "ja": "Kubernetesエージェントリスト",
+    "ko": "쿠버네티스 에이전트 목록"
   }
 }

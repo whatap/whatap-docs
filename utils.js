@@ -268,6 +268,12 @@ function colsToJson(data){
     "ko": "계정 생성"
   }
 
+  rd["kubernetesAgentList"] = {
+    "en": "Kubernetes Agent List",
+    "ja": "Kubernetesエージェントリスト",
+    "ko": "쿠버네티스 에이전트 목록"
+  }
+
   return rd;
 }
 
