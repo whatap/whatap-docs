@@ -2944,25 +2944,6 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Flex 보드',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'npm/flex-board',
-          },
-          items: [
-            'npm/flexboard-template',
-            'npm/flexboard-create',
-            'npm/flexboard-manage',
-            'npm/flexboard-metric-widget',
-            'npm/flexboard-widget-manage',
-            'npm/flexboard-mode',
-            'npm/flexboard-share',
-          ],
-        },
-        {
-          type: 'category',
           label: '분석',
           collapsible: true,
           collapsed: true,
