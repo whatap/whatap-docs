@@ -6,46 +6,49 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 [https://github.com/whatap/whatap-docs/wiki](https://github.com/whatap/whatap-docs/wiki)
 
-## 다국어 문서 수정 사항
+## 다국어 작업
 
-번역 전 다음의 파일에 주석 삭제할 것
+### Crowdin CLI 설치
+
+클라우딘 CLI 다운로드: `brew install crowdin@3`
+
+### 번역을 위한 클라우딘 업로드
+
+참조. 번역 업로드 전 다음의 파일에 주석 삭제할 것
 
 - about-apm-heap-memory.mdx
 - kubernetes/dashboard.mdx
 
-* /\\_([a-z]) -> /_$1
+```
+crowdin upload
+# or
+npm run crowdin upload
+```
 
-* : \_ -> : _
+### 번역 다운로드
 
-* \[ -> [
+```
+crowdin download
+# or
+npm run crowdin download
+```
 
-* \: -> :
-* _trs-profile.mdx 주석 삭제
+### 다국어 문서 수정 사항
 
-:::note null -> :::note
+정규표현식 찾아 바꾸기
 
-:::note\ -> :::note
+- /\\_([a-z]) -> /_$1
 
-<Version> -> {Version} 또는 &lt;Version&gt;
+일반 찾아바꾸기
 
-<version> -> {version}
-
-<section>
-
-server-list.mdx -> 주석 삭제
+- : \_ -> : _
+- \[ -> [
+- \: -> :
 
 < > -> 부호 앞에 &lt;, &gt; 적용할 것
 
-\<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
-\<section> ->> &lt;section&gt;
-
-  ::: 탭 공백 확인해볼 것
-
-  _sv-w-cpf.mdx 파일 수정
-
-  ../../account/account-manage -> ../account/account-manage 경로 수정할 것
-
-../../project/ -> ../project/
+- \<whatap-monitoring\> ->> &lt;whatap-monitoring&gt;
+- \<section> ->> &lt;section&gt;
 
 문장 끝 / 으로 끝나는 부분 확인해볼 것
 
@@ -68,24 +71,4 @@ code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최
 
 [次の文書](..／billing) -> 슬래시 수정할 것
 
-_metrics-intro-v2.mdx -> 링크 경로 모두 수정 필요
-
-_db-instance-monitoring-basic-usage.mdx 파일에 코드 수정 필요
-
-_php-extension-whatap.mdx 문서 수정 필요
-
-redhat-centos.mdx, freebsd.mdx, amazon-linux.mdx 노트 원문 추가
-
-php/agent-transaction.mdx(_php-trs-profile.mdx) 탭 공백 수정 필요
-
-aws-log-lt.mdx
-
 라이선스 페이지 국문과 맞출 것
-
-i18n/ja/docusaurus-plugin-content-docs/current/telegraf/introduction.mdx 국문 파일 인덴트 수정
-
-license-open-sources -> ``` 삭제할 것
-
-install-aws-log-vpc.mdx -> 인덴트 확인 필요
-
-업데이트
