@@ -368,8 +368,8 @@ const metadata = {
     },
     "sidebar": "npmsidebar",
     "previous": {
-        "title": "Flex 보드 공유하기",
-        "permalink": "/whatap-docs/npm/flexboard-share"
+        "title": "네트워크 추이(TCP)",
+        "permalink": "/whatap-docs/npm/network-trend-tcp"
     },
     "next": {
         "title": "알림 설정하기",

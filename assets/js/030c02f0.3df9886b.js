@@ -560,13 +560,11 @@ java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name}
         "id": "spring-boot-250-버전-이상"
     }, `Spring Boot 2.5.0 버전 이상`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
     }, `Java 에이전트 v2.2.9 버전 이상(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "li"
-    }, `whatap.agent-2.2.9.jar`), `)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
+        parentName: "p"
+    }, `whatap.agent-2.2.9.jar`), `)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("pre", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("code", {
         parentName: "pre",

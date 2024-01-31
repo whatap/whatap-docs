@@ -366,8 +366,8 @@ const metadata = {
         "permalink": "/whatap-docs/npm/network-topology"
     },
     "next": {
-        "title": "Flex 보드",
-        "permalink": "/whatap-docs/npm/flex-board"
+        "title": "TCP 세션 / UDP 세션",
+        "permalink": "/whatap-docs/npm/analysis-tcp-udp-sessions"
     }
 };
 const assets = {};
