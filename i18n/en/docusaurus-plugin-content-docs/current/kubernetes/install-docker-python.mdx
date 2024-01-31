@@ -12,7 +12,7 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-At the bottom of ***Management*** > ***Agent installation***, click ***Install Application*** > Select the ***Docker Python*** tab in Install guide.
+At the bottom of **_Management_** > **_Agent installation_**, click **_Install Application_** > Select the **_Docker Python_** tab in Install guide.
 
 This process applies the WhaTap monitoring agent to the Python application running on the Docker container and packages the container image as follows. To release the Kubernetes application, the Docker image is required. Create a Docker image with the whatap-python package installed using the following process.
 
@@ -20,7 +20,7 @@ This process applies the WhaTap monitoring agent to the Python application runni
 
 -   EKS Fargate is to be supported later. 
 
--   Git example code is provided to help you understand the Python application integration process. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
+-   To help you understand the Python application integration process, Git example codes are provided. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/python/fastapi).
 
 :::
 
@@ -51,7 +51,7 @@ RUN pip3 install --upgrade whatap-python
 
 ## Configuration and execution of the agent
 
-Before running the application, determine the Python agent's working directory and then create a default configuration file. Pass the authentication information to the agent and set whether or not to trace logs through the configuration file (*entrypoint.sh*).
+Before running the application, determine the Python agent's working directory and then create a default configuration file. Pass the authentication information to the agent and set whether or not to trace logs through the configuration file (_entrypoint.sh_).
 
 <details>
 <summary>Configuration file (entrypoint.sh) example</summary>
@@ -83,7 +83,7 @@ whatap-setting-config \
 #echo "trace_logging_enabled=true" >> whatap.conf
 
 
-# Add whatap-start-agent before the application startup command to run the agent.  
+# Add whatap-start-agent before the application startup command to run the agent. 
 whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
 ```
 
@@ -95,7 +95,7 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
     export WHATAP_HOME=${PWD}
     ```
 
-2.  Execute the following command to create and configure the *whatap.conf* file in the path set as `WHATAP_HOME`. Variables marked with `$` are required for agent configuration and are set through the *yaml* file for releasing the application.
+2.  Execute the following command to create and configure the _whatap.conf_ file in the path set as `WHATAP_HOME`. Variables marked with `$` are required for agent configuration and are set through the _yaml_ file for releasing the application.
 
     ```bash
     whatap-setting-config \
@@ -123,7 +123,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::note 
 
--   As an example of the *yaml* file, see [Container environment variable settings](#k8s-env) as follows:
+-   As an example of the _yaml_ file, see [Container environment variable settings](#k8s-env) as follows:
 
 -   The `license` is the user authentication information of WhaTap. **Do not expose to outside**.
 
@@ -131,7 +131,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 ### Script running example
 
-See the following definition example of the following Dockerfile. This is a complete example to run the *entrypoint.sh* script.
+See the following definition example of the following Dockerfile. This is a complete example to run the _entrypoint.sh_ script.
 
 ```docker
 FROM python:3.10
@@ -148,7 +148,7 @@ CMD ["./entrypoint.sh"]
 
 ### Additional function
 
-The following settings are optional and must be used if necessary. In addition to the following additional settings in the configuration file (*entrypoint.sh*), log and transaction-related settings are also configurable. For additional settings, see [the following](https://docs.whatap.io/python/set-agent). 
+The following settings are optional and must be used if necessary. In addition to the following additional settings in the configuration file (_entrypoint.sh_), log and transaction-related settings are also configurable. For additional settings, see [the following](https://docs.whatap.io/python/set-agent). 
 
 -   **Agent grouping** 
 
@@ -166,7 +166,7 @@ The following settings are optional and must be used if necessary. In addition t
 
 ## Configuring the container environment variables {#k8s-env}
 
-After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
 
 ```yaml
 	  env:
@@ -230,13 +230,13 @@ spec:
 
 -   `license`: Key for agent authentication.
 
--   `whatap_server_host`: Host IP of the WhaTap collection server.
+-   `whatap_server_host`: Host IP of the WhaTap collection server
 
--   `app_name`: The agent naming scheme to identify applications.
+-   `app_name`: Name to identify the agent for the application. For more information about the agent identification, see [the following](https://docs.whatap.io/python/agent-name).
 
--   `app_process_name`: The agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. 
+-   `app_process_name`: Set the target processes such as CPU and Heap Memory. For example, there are uwsgi and gunicorn.
 
--   `okind` (optional): Groups applications for Pods. If set to a deployment name, the corresponding Pods are grouped together.
+-   `okind` (optional): Groups applications for the Pod. If set using the deployment name, the corresponding Pods are grouped together.
 
 -   `NODE_IP`: Collects the IP address of the node where the current Pod has been hosted.
 
@@ -248,6 +248,6 @@ spec:
 
 ## Checking the agent installation
 
--   To check whether the agent has been installed, go to ***Dashboard*** > ***Application Service Dashboard***.
+-   To check whether the agent has been installed, go to **_Dashboard_** > **_Application Service Dashboard_**.
 
 -   Run the `ps -ef | grep whatap_python` command in the container to check whether the Whatap Python service is running normally. 

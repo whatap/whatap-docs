@@ -11,7 +11,7 @@ import TR from '@site/src/components/TR';
 
 WhaTap AmazonECSモニタリングは、META APIおよびCgroupディレクトリを使用してDockerコンテナ固有のリソース使用量をリアルタイムで収集します。 Amazon ECS API連携のWhaTap Taskを使用して、Amazon ECS Service、Deployment、Container Instanceの状態を参照および収集します。
 
-{@include: ../getting-started/_create-project-accesskey-item.mdx} 
+{@include: ../getting-started/_create-project-accesskey-item.mdx}
 
 ## チェックリスト
 
@@ -290,3 +290,13 @@ Amazon ECS launch typesの詳しい説明は[次の文書](https://docs.aws.amaz
 -   モニタリングサービスの無効化
 
     <ImgLang img='amazon-ecs-monitoring-off.png' desc='モニタリングの無効化' />
+
+## 除去時の注意事項
+
+完全なコスト発生を防ぐために、次の項目を削除してください。
+
+-   ECS Service: `whatap-ecs-agent`
+
+-   Task Sidecar: `whatap-ecs-agent` 
+
+-   Role: `WhatapEcsReadonly`

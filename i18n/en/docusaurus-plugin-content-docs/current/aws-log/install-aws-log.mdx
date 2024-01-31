@@ -9,7 +9,7 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../getting-started/_how-to-start-intro.mdx}
+{@include: ../getting-started/_how-to-start-intro.mdx}  
 
 ## Preliminary checking
 
@@ -38,7 +38,7 @@ To collect AWS logs, additional resources are required. WhaTap provides **WhatTa
 #### S3
 
 -   VPC: S3 bucket names must be set to **_VPC resource_** for collection of logs.
--   CloudFront: While setting logs, the prefix must be set to **_cloudfront_** to enable collection of logs.
+-   CloudFront: While setting logs, the default prefix is **_cloudfront_**. This can be changed when setting parameters.
 -   ELB
 
 </details>

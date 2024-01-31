@@ -9,7 +9,7 @@ tags:
 
 import TR from '@site/src/components/TR';
 
-{@include: ../getting-started/_how-to-start-intro.mdx}
+{@include: ../getting-started/_how-to-start-intro.mdx}  
 
 ## 事前確認
 
@@ -38,7 +38,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 #### S3
 
 -   VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定することで正常な収集が可能です。
--   CloudFront：Log設定時に接頭辞を**cloudfront**として設定することで正常な収集が可能です。
+-   CloudFront：Log設定時の接頭辞は、**_cloudfront_**がデフォルト値です。パラメータ設定時に変更可能です。
 -   ELB
 
 </details>

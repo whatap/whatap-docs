@@ -27,10 +27,10 @@ tags:
 
 コンテナマップのビューによって対応するグループ化の属性は次のとおりです。
 
-| 標準ビュー    | グループ化属性                                                                                                                        |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| コンテナ     | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet<br/>Pod<br/>ContainerName<br/>Image<br/>DemonSet<br/>StatefulSet |
-| Pod      | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet                                                                  |
+| 標準ビュー     | グループ化属性                                                                                                                           |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Container | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSet<br/>Pod<br/>ContainerName<br/>Image                                 |
+| Pod       | 未設定(All)<br/>Node<br/>Namespace<br/>Deployment<br/>ReplicaSetDemonSet<br/>StatefulSet                                             |
 
 {@include: ../common-items/_container-note-reset.mdx}
 
@@ -48,10 +48,10 @@ tags:
 
 各カードの下には、グループ化された対象に関するメトリクスデータを表示します。以下は、提供する指標の情報です。
 
-| 標準ビュー    | リソース指標                                                                        | アプリケーションメトリクス                                               |
-| -------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| コンテナ     | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/> | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS |
-| Pod      | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes          | ^                                                           |
+| 標準ビュー     | リソース指標                                                                        | アプリケーションメトリクス                                               |
+| --------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Container | CpuByLimit<br/>CpuByRequest<br/>MemByLimit<br/>NetRxBytes<br/>NetTxBytes<br/> | Normal TX<br/>Slow TX<br/>Very Slow TX<br/>Total TX<br/>TPS |
+| Pod       | CpuTotUsage<br/>CpuByNode<br/>MemUsage<br/>NetRxBytes<br/>NetTxBytes          | ^                                                           |
 
 ユーザーのカーソルが**_Container_**(または**_Pod_**)、**_ActiveTX_**の上に置かれている場合は、各メトリクスに関する説明をポップアップで確認することができます。
 

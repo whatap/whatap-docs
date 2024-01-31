@@ -13,7 +13,7 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Azure Monitor collects metrics periodically through API integration. It collects the target stats every 5 minutes from the Azure Monitor namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently with Azure registerd app.
 
-{@include: ../getting-started/_create-project-cloud.mdx} 
+{@include: ../getting-started/_create-project-cloud.mdx}
 
 ## Monitoring procedure
 
@@ -205,3 +205,17 @@ Enter the **_application ID_**, **_tenant ID_**, and **_Azure secret key_** into
 ![number2](/img/number-02.png) If you click ![Edit icon](/img/ico-edit.svg) **_Edit_** on the right of the collection checked namespace, you can select **_Resource Group_**, **_Metrics_**, and **_Stat_**.
 
 <ImgLang img='whatap_azure_resourcegroup_dialog.png' desc='Azure Monitor - ResourceGroup, Metric, Stats' />
+
+## Service initialization and deactivation of data collection {#data-deactivation}
+
+<ImgLang img='cloud-deact.png' desc='비활성화 및 서비스 초기화 sc' />
+
+-   ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
+
+-   ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
+
+-   To completely avoid incurring costs, delete the following items:  
+
+    -   Delete the monitoring leader role from the Azure portal subscript. 
+
+    -   Delete the Azure registered app. 

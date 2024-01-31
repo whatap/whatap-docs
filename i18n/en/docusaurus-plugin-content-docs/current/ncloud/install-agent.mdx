@@ -13,7 +13,7 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Naver Cloud Monitoring collects metrics periodically through API integration. Select and collect the desired stats in the Naver Cloud Monitoring namespaces that correspond to the services to collect every 5 minutes. When you start monitoring, you can search for user resources in all regions and then start monitoring with a click. 
 
-{@include: ../getting-started/_create-project-cloud.mdx} 
+{@include: ../getting-started/_create-project-cloud.mdx}
 
 ## Monitoring procedure
 
@@ -59,3 +59,13 @@ Enter values for AccessKey and Secret.
 ![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
 
 <ImgLang img='ncloud_region_dialog.png' desc='Ncloud Monitoring - ResourceGroup, Metric, Stats' />
+
+## Service initialization and deactivation of data collection {#data-deactivation}
+
+<ImgLang img='cloud-deact.png' desc='비활성화 및 서비스 초기화 sc' />
+
+-   ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
+
+-   ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
+
+-   To completely avoid incurring costs, go to Naver Cloud Account Management > Authentication Key Management, and then disable **API Authentication Key Management**.

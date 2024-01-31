@@ -14,6 +14,97 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.1.0.a4
+
+2024年01月19日
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="cube_navigator" className="uitext" />及び<Cmdname sid="performance_trend" className="uitext" /> ニューでデザインを修正
+
+* * *
+
+### `Application`, `Kubernetes`
+
+-   <Status>Fixed</Status> <Cmdname sid="integratedTopology" className="uitext" />及び<Cmdname sid="application_topology" className="uitext" />内のボタングループ間の間隔エラーを修正
+
+* * *
+
+### `AWS Log`
+
+-   <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" /> メニューを次のように修正
+
+    -   <Status>Change</Status>インストール画面でS3案内文を修正
+
+    -   <Status>Feature</Status> <span class="uitext">WhaTap Forwarderインストール</span>タブの2番目の<span class="uitext">AWS Region</span>一覧にVirginia(us-east-1) 項目を追加
+
+</div>
+
+## Preview 2.1.0.a3
+
+2024年01月19日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />メニューで次の機能を追加
+
+    -   <Cmdname sid="event_time" className="uitext" />カラムに<Cmdname sid="in_progress" className="uitext" />, <Cmdname sid="ITM07315" className="uitext" />タグ表示機能を追加
+
+    -   <Cmdname sid="TTL06583" className="uitext" />カラム表示のオプションを追加
+
+    :::note
+
+    この機能は、Server製品に既に適用されている機能であり、Server製品を除くすべての製品に拡大適用します。
+
+    :::
+
+-   <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューで次の機能を修正
+
+    -   <Cmdname sid="metrics" className="uitext" />イベントタブの修正ウィンドウで<Cmdname sid="guide" className="uitext" /> <Cmdname sid="shortcut_link" className="uitext" />ボタンをクリックすると、言語設定別のガイド文書に移動するように修正
+
+    -   <Cmdname sid="metrics" className="uitext" />イベントタブでJSONの書き出しまたは読み込みの過程で<Cmdname sid="save" className="uitext" />及び<Cmdname sid="add_to_list" className="uitext" />ボタンクリック時に、書き出しまたは読み込みウィンドウが閉じられないイシューを修正
+
+-   <Status>Fixed</Status> <Cmdname sid="real_time_alert_list" className="uitext" />メニューでグループ指定時に通知一覧が正しく表示されないイシューを修正
+
+-   <Status>Changed</Status>一部のメニューで適用されなかった要素にダークテーマを追加適用
+
+-   <Status>Fixed</Status> Safariブラウザーで<Cmdname sid="TTL06763" className="uitext" />メニュー内の断続的に一覧が表示されないイシューを修正
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" /> &gt; イベント項目選択&gt; イベント詳細メニューで処理履歴を追加する場合、作成したユーザーアカウントが登録されない問題を修正
+
+-   <Status>Changed</Status> <Cmdname sid="report" className="uitext" />メニューの<b>月間サーバーレポート(詳細)</b>テンプレート選択画面でエージェント選択のオプション名を<Cmdname sid="application" className="b500" />から<Cmdname sid="filter" className="uitext" />に変更
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+-   <Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />メニューで次の機能を追加
+
+    -   <span class="uitext">Lock Wait Sessions</span>ウィジェットの右上に照会時間単位と最大値の表記タグを追加
+    -   時間照会範囲が1か月前の状態で3時間以内のデータを照会する場合、照会不可メッセージの表示機能を追加
+
+-   <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />メニューで大量のロックによりロジック上の負荷を招いて発生するホワイトアウト現象を修正
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Changed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="kube_master" className="uitext" />メニュー名を<Cmdname sid="MNU07551" className="uitext" />に変更
+
+-   <Status>Changed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="MNU07551" className="uitext" />メニューで過去のオブジェクトマニフェストを照会できる機能を追加
+
+</div>
+
 ## Preview 2.1.0.a1
 
 2024年01月15日
@@ -53,6 +144,10 @@ toc_max_heading_level: 2
     -   <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />
     -   <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="report" className="uitext" />
 
+### `Log`
+
+-   <Status>Feature</Status> <Cmdname sid="logExplorer" className="uitext" />メニューで<Cmdname sid="filter" className="uitext" />一覧にない値を直接入力して選択可能
+
 </div>
 
 ## Preview 2.1.0.a0
@@ -74,12 +169,6 @@ toc_max_heading_level: 2
 -   <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューで<Cmdname sid="apdex" className="uitext" />ウィジェットにチャート凡例設定を追加
 
 -   <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューでダッシュボードのエクスポート機能を通じてJSONファイルとして保存する場合、ファイル名の特殊文字を以前は削除したが、下線(_)に変更
-
-* * *
-
-### `Application`
-
--   <Status>Changed</Status> Nodeエージェントのインストールの対応バージョンを変更7.10.0 → <b>16.4.0</b>
 
 * * *
 

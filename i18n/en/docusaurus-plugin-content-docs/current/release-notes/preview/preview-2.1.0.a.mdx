@@ -14,6 +14,97 @@ In [https://preview.whatap.io](https://preview.whatap.io), the following new fea
 
 :::
 
+## Preview 2.1.0.a4
+
+January 19, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+-   <Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="cube_navigator" className="uitext" /> and <Cmdname sid="performance_trend" className="uitext" />, modified the UI designs.
+
+* * *
+
+### `Application`, `Kubernetes`
+
+-   <Status>Fixed</Status> Fixed the spacing error between button groups in <Cmdname sid="integratedTopology" className="uitext" /> and <Cmdname sid="application_topology" className="uitext" />.
+
+* * *
+
+### `AWS Log`
+
+-   In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, modified as follows:
+
+    -   <Status>Change</Status> Modified the S3 guidance text on the installation screen.
+
+    -   <Status>Feature</Status> In the <span class="uitext">Install WhaTap Forwarder</span> tab, added Virginia(us-east-1) in the <span class="uitext">AWS Region</span> list as in Step 2.
+
+</div>
+
+## Preview 2.1.0.a3
+
+January 19, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, added the following features:
+
+    -   In the <Cmdname sid="event_time" className="uitext" /> column, added the function to display <Cmdname sid="in_progress" className="uitext" /> and <Cmdname sid="ITM07315" className="uitext" /> tags.
+
+    -   Added the option to display the <Cmdname sid="TTL06583" className="uitext" /> column.
+
+    :::note
+
+    This feature has already been applied to server products and will be expanded to all products except for server products.
+
+    :::
+
+-   <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified the following features:
+
+    -   In the modification window of the <Cmdname sid="metrics" className="uitext" /> event tab, modified to move to guides for each language setting when the <Cmdname sid="guide" className="uitext" /> <Cmdname sid="shortcut_link" className="uitext" /> button is clicked.
+
+    -   In the JSON export and import step under the <Cmdname sid="metrics" className="uitext" /> event tab, fixed the issue where the export or import window does not close when the <Cmdname sid="save" className="uitext" /> and <Cmdname sid="add_to_list" className="uitext" /> buttons are clicked.
+
+-   <Status>Fixed</Status> In <Cmdname sid="real_time_alert_list" className="uitext" />, fixed the issue where the notification list does not appear when a group is specified.
+
+-   <Status>Changed</Status> Applied an additional dark theme to the elements that are unavailable in some menus.
+
+-   <Status>Fixed</Status> Fixed the issue where the list does not appear intermittently in <Cmdname sid="TTL06763" className="uitext" /> in the Safari browser.
+
+* * *
+
+### `Server`
+
+-   <Status>Fixed</Status> Fixed the user account registration issue when <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" /> &gt; events are selected &gt; and the processing detail is added in the event detail menu, fixed the issue where the specified user account is not registered.
+
+-   <Status>Changed</Status> In the <b>Monthly server report (Detail)</b> template selection screen of <Cmdname sid="report" className="uitext" />, changed the agent selection option's name from <Cmdname sid="application" className="b500" /> to <Cmdname sid="filter" className="uitext" />.
+
+* * *
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+-   <Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />, added the following features:
+
+    -   Added the query time unit and maximum value tag on the upper right of the <span class="uitext">Lock Wait Sessions</span> widget.
+    -   Added the function to display the unable-to-view message when searching for the data within 3 hours while the query period is within 1 month.
+
+-   <Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />, fixed the whiteout occurrence issue due to a logic load caused by a large amount of locks.
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Changed</Status> Changed the name of the <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="kube_master" className="uitext" /> menu to <Cmdname sid="MNU07551" className="uitext" />.
+
+-   <Status>Changed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="MNU07551" className="uitext" />, added the function to view the existing object manifests.
+
+</div>
+
 ## Preview 2.1.0.a1
 
 January 15, 2024
@@ -53,6 +144,10 @@ January 15, 2024
     -   <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />
     -   <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="report" className="uitext" />
 
+### `Log`
+
+-   <Status>Feature</Status> In <Cmdname sid="logExplorer" className="uitext" />, you can select values that are not in the <Cmdname sid="filter" className="uitext" /> list by directly entering them.
+
 </div>
 
 ## Preview 2.1.0.a0
@@ -74,12 +169,6 @@ January 11, 2024
 -   <Status>Changed</Status> In <Cmdname sid="flexboard" className="uitext" />, added the chart legend settings in the <Cmdname sid="apdex" className="uitext" /> widget.
 
 -   <Status>Changed</Status> In <Cmdname sid="flexboard" className="uitext" />, when saving as a JSON file through the dashboard export function, modified the display of special characters in the file name from deletion to underscore (_).
-
-* * *
-
-### `Application`
-
--   <Status>Changed</Status> Changed the Node agent installation support version: 7.10.0 → <b>16.4.0</b>.
 
 * * *
 

@@ -1,0 +1,22 @@
+---
+id: dbx-1_6_18
+title: DBX v1.6.18
+toc_max_heading_level: 2
+pagination_next: release-notes/db/dbx-1_6_17
+---
+
+2024年01月25日
+
+## 共通
+
+-   <Status>Feature</Status>データベースの通知も復旧メッセージを受け取るよう<code>uuid</code>、<code>statefulset</code>を追加
+
+-   XOS v1.1.8aアップデート
+
+    -   <Status>Changed</Status> PostgreSQLでlogファイル名を設定する時、`%H%M%S`の時分秒まで使えるように修正
+
+    -   <Status>Fixed</Status> CPU使用率が負の値で表示されるバグを修正
+
+## MySQL
+
+-   <Status>Changed</Status> <code>show slave status</code>コマンドによるconnection fullが発生しないように、timeout3回以上発生した場合、リトライしないように変更

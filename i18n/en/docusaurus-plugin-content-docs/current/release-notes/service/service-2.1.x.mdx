@@ -1,0 +1,153 @@
+---
+id: service-2_1_x
+title: Service 2.1.x
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_0_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.1.3
+
+January 26, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status> For the namespace project, fixed the issue where the data does not appear in <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="masterMetaTopology" className="uitext" />.
+
+-   <Status>Changed</Status> To support object manifests, the master agent version has been changed to <b>1.5.2</b>.
+
+</div>
+
+## Service 2.1.2
+
+January 25, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<p><Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, improved the guidance message.</p>
+
+</div>
+
+## Service 2.1.1
+
+January 24, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+#### DB <code class="my">V2</code>
+
+<p><Status>Changed</Status> Changed the date on the pop-up guide regarding the end of project V1 support.</p>
+
+</div>
+
+## Service 2.1.0
+
+January 24, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, added the following features:
+
+    -   In the <Cmdname sid="event_time" className="uitext" /> column, added the function to display <Cmdname sid="in_progress" className="uitext" /> and <Cmdname sid="ITM07315" className="uitext" /> tags.
+
+    -   Added the option to display the <Cmdname sid="TTL06583" className="uitext" /> column.
+
+    :::note
+
+    This feature has already been applied to server products and will be expanded to all products except for server products.
+
+    :::
+
+-   <Status>Changed</Status> In <Cmdname sid="project_list" className="uitext" />, modified the popup UI that appears upon deletion of the project (fixed the project name truncation issue).
+
+-   <Status>Changed</Status> Fixed the issue where clicking the tooltip that appears by hovering the mouse over the project list in the sidebar, displays the project.
+
+-   <Status>Changed</Status> Modified the text displayed when inviting a dormant account to the project or group
+
+-   <Status>Changed</Status> In <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="project_subscription" className="uitext" />, if the project name is long at the <Cmdname sid="subscribe" className="uitext" /> window, modified to abbreviate and display the project name as a tooltip displayed when hovering the mouse over.
+
+-   <Status>Changed</Status> In <Cmdname sid="flexboard" className="uitext" />, added the chart legend settings in the <Cmdname sid="apdex" className="uitext" /> widget.
+
+-   <Status>Changed</Status> In <Cmdname sid="flexboard" className="uitext" />, when saving as a JSON file through the dashboard export function, modified the display of special characters in the file name from deletion to underscore (_).
+
+-   <Status>Changed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count_chart" className="uitext" />, added the function to deselect all agents.
+
+-   <Status>Changed</Status> Applied an additional dark theme to the elements that are unavailable in some menus.
+
+-   <Status>Fixed</Status> In <Cmdname sid="real_time_alert_list" className="uitext" />, fixed the issue where the notification list does not appear when a group is specified.
+
+-   <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified the following features:
+
+    -   In the modification window of the <Cmdname sid="metrics" className="uitext" /> event tab, modified to move to guides for each language setting when the <Cmdname sid="guide" className="uitext" /> <Cmdname sid="shortcut_link" className="uitext" /> button is clicked.
+
+    -   In the JSON export and import step under the <Cmdname sid="metrics" className="uitext" /> event tab, fixed the issue where the export or import window does not close when the <Cmdname sid="save" className="uitext" /> and <Cmdname sid="add_to_list" className="uitext" /> buttons are clicked.
+
+-   <Status>Fixed</Status> Fixed the issue where the list does not appear intermittently in <Cmdname sid="TTL06763" className="uitext" /> in the Safari browser.
+
+* * *
+
+### `Application`
+
+-   <Status>Changed</Status> In the <Cmdname sid="TTL06377" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, added the function to save the chart and tree settings.
+
+-   <Status>Changed</Status> In the <Cmdname sid="TTL06377" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, added the function to save the project selection status.
+
+-   <Status>Fixed</Status> When <LinkImage img="ic-outside.svg" className="ico" /> is selected in the <Cmdname sid="TTL06127" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where other option settings are turned off.
+
+-   <Status>Fixed</Status> Fixed the spacing error between button groups in <Cmdname sid="integratedTopology" className="uitext" /> and <Cmdname sid="application_topology" className="uitext" />.
+
+-   <Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="cube_navigator" className="uitext" /> and <Cmdname sid="performance_trend" className="uitext" />, modified the UI designs.
+
+* * *
+
+### `Server`
+
+-   <Status>Changed</Status> In the <b>Monthly server report (Detail)</b> template selection screen of <Cmdname sid="report" className="uitext" />, changed the agent selection option's name from <Cmdname sid="application" className="b500" /> to <Cmdname sid="filter" className="uitext" />.
+
+-   <Status>Fixed</Status> Fixed the user account registration issue when <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" /> &gt; events are selected &gt; and the processing detail is added in the event detail menu, fixed the issue where the specified user account is not registered.
+
+* * *
+
+### `Database`
+
+#### Common
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_list" className="uitext" />, fixed the error where event records on the <Cmdname sid="event" className="uitext" /> window are not viewed when the <Cmdname sid="status" className="uitext" /> column is selected that is not in a normal state.
+
+#### DB <code class="my">V2</code>
+
+-   <Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />, added the following features:
+
+    -   Added the query time unit and maximum value tag on the upper right of the <span class="uitext">Lock Wait Sessions</span> widget.
+    -   Added the function to display the unable-to-view message when searching for the data within 3 hours while the query period is within 1 month.
+
+-   <Status>Fixed</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="lock_tree" className="uitext" />, fixed the whiteout occurrence issue due to a logic load caused by a large amount of locks.
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="MNU07551" className="uitext" />, improved to search and compare the object manifests (supports Kubernetes agent v1.5.0 or later).
+
+-   <Status>Changed</Status> Changed the name of the <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="kube_master" className="uitext" /> menu to <Cmdname sid="MNU07551" className="uitext" />.
+
+-   <Status>Fixed</Status> Added missing multilingual translations in the following menus:
+
+    -   <Cmdname sid="app_upper" className="uitext" /> &gt; <Cmdname sid="multi_hitmap" className="uitext" />
+    -   <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="report" className="uitext" />
+
+* * *
+
+### `Log`
+
+-   <Status>Feature</Status> In <Cmdname sid="logExplorer" className="uitext" />, you can select values that are not in the <Cmdname sid="filter" className="uitext" /> list by directly entering them.
+
+</div>
