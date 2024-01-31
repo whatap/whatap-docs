@@ -13,7 +13,7 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Azure Monitorは、API連携を使用してメトリックを定期的に収集します。収集するサービスに対応するAzure Monitorネームスペースを5分ごとに収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングが開始できます。WhaTapは、安全で便利な使用のためにAzure Registard Appをサポートします。
 
-{@include: ../getting-started/_create-project-cloud.mdx} 
+{@include: ../getting-started/_create-project-cloud.mdx}
 
 ## モニタリング手順
 
@@ -205,3 +205,17 @@ Azureの認証情報の**_アプリケーションID_**(ApplicationID), **_テ�
 ![number 2](/img/number-02.png)収集されたネームスペースの右側をチェック![修正アイコン](/img/ico-edit.svg)**修正**ボタンをクリックすると、収集する**_リソースグループ_**、**_メトリクス_**、**_スタット_**を選択できます。
 
 <ImgLang img='whatap_azure_resourcegroup_dialog.png' desc='Azure Monitor - ResourceGroup, Metric, Stats' />
+
+## データ収集の無効化及びサービス初期化 {#data-deactivation}
+
+<ImgLang img='cloud-deact.png' desc='비활성화 및 서비스 초기화 sc' />
+
+-   ![指示線a](/img/char-a.svg)収集トグル![アイコン](/img/ic-toggle-off.svg)無効化した場合、データ収集が中止されます。
+
+-   ![指示線b](/img/char-b.svg)**_役割(Role)の変更_**ボタンをクリックし、**_エージェントのインストール_**画面で![指示線c](/img/char-c.svg)**_サービスの初期化_**を選択すると、メトリクスを収集中のすべてのサービスを無効化します。
+
+-   完全なコスト発生を防ぐためには、以下を取り除く必要があります。  
+
+    -   Azure Portal SubscriptからモニタリングリーダーのRoleを削除してください。 
+
+    -   Azure Registered Appを除去してください。 

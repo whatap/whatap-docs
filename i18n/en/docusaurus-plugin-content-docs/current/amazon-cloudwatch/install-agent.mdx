@@ -13,7 +13,7 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Amazon CloudWatch monitoring collects metrics periodically through API integration. It collects the target stats every 5 minutes from the CloudWatch namespace of the desired service. When you start monitoring, you can search for user resources in all regions and start monitoring with one click. You can use it safely and conveniently with role-based authentication. 
 
-{@include: ../getting-started/_create-project-cloud.mdx} 
+{@include: ../getting-started/_create-project-cloud.mdx}
 
 ## Preliminary inspection
 
@@ -182,7 +182,13 @@ Configuration using the role is recommended. The access key is available only to
 -   AWS WorkMail
 -   AWS WorkSpaces
 
-### Service initialization and deactivation of data collection {#data-deactivation}
+### Selecting the region, metric, and stat
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+<ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />
+
+## Service initialization and deactivation of data collection {#data-deactivation}
 
 <ImgLang img='amazon-cloudwatch-deact.png' desc='Disabling the data collection and initializing the service' />
 
@@ -191,9 +197,3 @@ Configuration using the role is recommended. The access key is available only to
 -   ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
 
 -   To completely avoid incurring costs, you must remove the **Role** from the **AWS IAM** console.
-
-### Selecting the region, metric, and stat
-
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
-
-<ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />

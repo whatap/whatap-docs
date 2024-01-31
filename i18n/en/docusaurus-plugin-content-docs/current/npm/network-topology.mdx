@@ -67,11 +67,11 @@ Edge means the node-to-node communication and the labels for each edge display t
 
 <ImgLang img="npm-dashboard-topology-edge.png" desc="Edge" />
 
-You can select a type of the value to display on the edge of the topology chart. In <Cmdname sid="MNU06813" className="uitext" />, you can select a desired metric. The types of performance metrics that can be displayed on the edge are as follows.
-
--   **_latency_**
+You can select a type of the value to display on the edge of the topology chart. In <Cmdname sid="ITM07578" className="uitext" />, you can select a desired metric. The types of performance metrics that can be displayed on the edge are as follows.
 
 -   **_jitter_**
+
+-   **_latency_**
 
 -   **_bps_**(bit per second)
 
@@ -81,23 +81,17 @@ You can select a type of the value to display on the edge of the topology chart.
 
 :::note
 
-In <Cmdname sid="MNU06813" className="uitext" />, the third item is also changed according to the selected metric type. In the third item, you can set the thresholds for the selected metric.
+-   In <Cmdname sid="MNU06813" className="uitext" />, the second item is also changed according to the selected metric type. In the second item, you can set the thresholds for the selected metric.
 
-<ImgLang img='npm-dashboard-settings-threshold.png' desc='Threshold setting' />
+    <ImgLang img='npm-dashboard-settings-threshold.png' desc='Threshold setting' />
+
+-   The weight of the node size is automatically set depending on the value selected in the <Cmdname sid="ITM07578" className="uitext" /> item.
 
 :::
 
-#### Setting the node size
-
-In <Cmdname sid="MNU06814" className="uitext" />, the weight type of the node size can be set to display in the topology chart. The node size may differ depending on the throughput for data or packets.
-
--   **_Total bytes_**: The throughput to process data is set by a weight. The data throughput is a sum of the transmitted data and received data.
-
--   **_Packet counts_**: The packet throughput is set by a weight. The packet throughput is a sum of the transmitted packets and received packets.
-
 #### Setting the threshold
 
-In the third item and <Cmdname sid="TTL06840" className="uitext" />, you can set the thresholds and units for the metric set to Edge. The edges that exceed the threshold are highlighted on the topology. 
+In the second item and <Cmdname sid="TTL06840" className="uitext" />, you can set the thresholds and units for the metric set to Edge. The edges that exceed the threshold are highlighted on the topology. 
 
 The thresholds and units are set as follows, unless there is a separate setting procedure. 
 

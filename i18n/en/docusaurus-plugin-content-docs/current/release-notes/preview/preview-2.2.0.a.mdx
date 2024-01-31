@@ -1,0 +1,144 @@
+---
+id: preview-2_2_0x
+title: Preview 2.2.0.a
+toc_max_heading_level: 2
+draft: false
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.2.0.a2
+
+January 26, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> Improved the performance degradation of <Cmdname sid="project_list" className="uitext" /> in the side menu.
+
+-   <Status>Fixed</Status> For all products except <code>URL</code>, in <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, fixed the issue where the chart is not drawn when there is only one time point for data on the notification rule test chart when setting metrics events.
+
+-   <Status>Fixed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, modified the <Cmdname sid="terminate_now" className="uitext" /> button in the <Cmdname sid="aboids_large_number_alerts" className="uitext" /> panel to be disabled.
+
+* * *
+
+### `Network`
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" /> and <Cmdname sid="MNU06849" className="uitext" />, modified to enable the real-time view for the last 5 minutes.
+
+-   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, modified as follows:
+
+    -   Among topology options, changed the name of the <Cmdname sid="MNU06813" className="uitext" /> option to <Cmdname sid="ITM07578" className="uitext" />.
+
+    -   Among the topology options, deleted the node size weight option and changed the node size weight to be set according to the selected <Cmdname sid="ITM07578" className="uitext" /> option.
+
+</div>
+
+## Preview 2.2.0.a1
+
+January 26, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status> For the namespace project, fixed the issue where the data does not appear in <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="masterMetaTopology" className="uitext" />.
+
+-   <Status>Changed</Status> To support object manifests, the master agent version has been changed to <b>1.5.2</b>.
+
+-   <Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, improved the guidance message.
+
+</div>
+
+## Preview 2.2.0.a0
+
+January 25, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Feature</Status> Added the SSO account linking option.
+
+    Select the profile icon on the upper right of the screen, and then select <Cmdname sid="MNU07360" className="uitext" /> > <Cmdname sid="ssoIntegrations" className="uitext" />.
+
+    :::note
+
+    For more information about the SSO account integration, see [the following](https://whatap.github.io/whatap-docs/account/sso/).
+
+    :::
+
+-   <Status>Feature</Status> Reorganized the side menus.
+
+    The side menus have been improved. The previous UI structure where the projects and project menus were separated at the top and bottom, has been reorganized into the menu-centered structure. For more information, select <Cmdname sid="BTN07397" className="uitext" /> at the bottom of the side menu.
+
+    <ImgLang img='release/release-main-ui.png' desc='' />
+
+    :::note
+
+    For more information about the side menus, see [the following](https://whatap.github.io/whatap-docs/main-ui-intro-v2/).
+
+    :::
+
+-   <Status>Feature</Status> When adding or modifying the metrics events in <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, improved the visibility of the dark theme applied to the product logo for <Cmdname sid="category" className="uitext" />.
+
+-   <Status>Changed</Status> Change the title on the <Cmdname sid="add_group" className="uitext" /> page: <Cmdname sid="project_list" className="b500" /> → <Cmdname sid="add_group" className="uitext" />.
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Deprecated</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />, deleted the <Cmdname sid="alert_log" className="uitext" /> button.</p>
+
+#### DB <code class="my">V2</code>
+
+<p><Status>Changed</Status> Changed the date on the pop-up guide regarding the end of project V1 support.</p>
+
+#### PostgreSQL <code class="my">V2</code>
+
+<p><Status>Feature</Status> In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="db_parameter" className="uitext" />, added unit notation to some values when displaying the <span class="uitext">Value</span> column.</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, added the ReplicationController grouping option.
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />, fixed the issue where data is not visible when no data is associated with a selected grouping option.
+
+-   <Status>Fixed</Status> In <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_volume" className="uitext" />, modified the icon when UsedPercent is 100%.
+
+* * *
+
+### `Log`
+
+<p><Status>Changed</Status> In <Cmdname sid="log" className="uitext" />, modified to share all the table settings of the project in <Cmdname sid="logTail" className="uitext" />, <Cmdname sid="log_search" className="uitext" />, and <Cmdname sid="logExplorer" className="uitext" />.</p>
+
+* * *
+
+### `Network`
+
+-   <Status>Feature</Status> Added the option to identify AWS resources when installing the agent.
+
+-   <Status>Fixed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />, fixed the issue where all tags appear as unselected when the page is refreshed with a preset selected.
+
+-   <Status>Fixed</Status> Under <Cmdname sid="analysis" className="uitext" />, added missing searchable fields, and modified to expose only the fields that can be searched in each menu.
+
+    -   Added the <code>session_count</code> field in the following two menus:
+
+    -   <Cmdname sid="MNU06850" className="uitext" />: Added the <code>avg_jitter</code> and <code>avg_latency</code> fields.
+
+    -   <Cmdname sid="MNU06851" className="uitext" />: Modified not to display the <code>avg_jitter</code>, <code>avg_latency</code>, <code>lost_count</code>, and <code>retransmission_count</code> fields.
+
+</div>

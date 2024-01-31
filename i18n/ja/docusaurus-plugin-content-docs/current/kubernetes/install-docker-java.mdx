@@ -13,7 +13,7 @@ toc_max_heading_level: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-***管理*** > ***エージェントインストール*** > 下段の***アプリケーションインストール*** クリック > 設置案内の中で ***Docker Java*** タブを選択
+**_管理_** > **_エージェントインストール_** > 下段の**_アプリケーションインストール_** クリック > 設置案内の中で **_Docker Java_** タブを選択
 
 Dockerコンテナベースで動作するJavaアプリケーションのJVM Optionにエージェント適用の設定を追加し、コンテナイメージをパッケージングする過程を次のように案内します。
 
@@ -31,7 +31,7 @@ Dockerコンテナベースで動作するJavaアプリケーションのJVM Opt
 
 <TabItem value="dockerinstall" label="Docker Install" default>
 
-WhaTapアプリケーションエージェントのインストールのために*whatap.conf*ファイルを作成してください。 `{YOUR_PROJECT_ROOT}`は、エージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+WhaTapアプリケーションエージェントのインストールのために_whatap.conf_ファイルを作成してください。`{YOUR_PROJECT_ROOT}`は、エージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
 
 ```bash
 cat >{YOUR_PROJECT_ROOT}/whatap.conf <<EOL
@@ -41,7 +41,7 @@ EOL
 
 :::note
 
-*whatap.conf*ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
+_whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
 
 :::
 
@@ -51,16 +51,16 @@ EOL
 
 **最新バージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1.  アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。 `{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+1.  アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
 
     ```docker
-    # WhaTapエージェント用ディレクトリをユーザーコンテナーに作成
+    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
     RUN mkdir -p /whatap
 
     # WhaTap Javaエージェントをユーザーコンテナにコピー
     COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
 
-    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピーします。
+    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
     COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
     ```
 
@@ -83,7 +83,7 @@ EOL
     EXPOSE 8080
     ```
 
-3.  Dockerをビルドします。 `{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。 
+3.  Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。 
 
     ```docker
     cd {YOUR_DOCKERFILE_DIR}
@@ -96,16 +96,16 @@ EOL
 
 **指定したバージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1.  アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。 `{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+1.  アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
 
     ```docker
-    # WhaTapエージェント用ディレクトリをユーザーコンテナーに作成
+    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
     RUN mkdir -p /whatap
 
     # WhaTap Javaエージェントをユーザーコンテナにコピー
     COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
 
-    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピーします。
+    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
     COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
     ```
 
@@ -118,7 +118,7 @@ EOL
     ## whatap.agent-X.Y.Z.jar
     ```
 
-3.  Dockerfileの開始コマンドに次の内容を追加してください。 **X.Y.Z**に、前もって確認したエージェントバージョンを入力してください。 
+3.  Dockerfileの開始コマンドに次の内容を追加してください。**X.Y.Z**に、前もって確認したエージェントバージョンを入力してください。 
 
     ```bash
     -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
@@ -137,7 +137,7 @@ EOL
     EXPOSE 8080
     ```
 
-4.  Dockerをビルドします。 `{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。
+4.  Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。
 
     ```docker
     cd {YOUR_DOCKERFILE_DIR}
@@ -152,7 +152,7 @@ EOL
 
 <TabItem value="direct" label="直接設置">
 
-1.  インストールファイル(*whatap.agent.java.tar.gz*)をダウンロードするには、***ダウンロード***ボタンを選択してください。
+1.  インストールファイル(_whatap.agent.java.tar.gz_)をダウンロードするには、**_ダウンロード_**ボタンを選択してください。
 
 2.  Dockerfileを作成できるサーバーにアップロードし、圧縮を解凍してください。
 
@@ -166,14 +166,14 @@ EOL
 
     :::
 
-3.  圧縮を解除する時、*whatap*ディレクトリが作成されます。 *whatap*ディレクトリ内部の*whatap.conf*ファイルで設定内容を確認した後、次のように修正してください。
+3.  圧縮を解除する時、_whatap_ディレクトリが作成されます。_whatap_ディレクトリ内部の_whatap.conf_ファイルで設定内容を確認した後、次のように修正してください。
 
     ```ini
     license={licenseKey}
     whatap.server.host={proxyServer}
     ```
 
-4.  Dockerfileの開始コマンドに次の内容を追加してください。 *whatap*ディレクトリ内でエージェントファイルを確認した後、**X.Y.Z**に該当バージョンを入力してください。
+4.  Dockerfileの開始コマンドに次の内容を追加してください。_whatap_ディレクトリ内でエージェントファイルを確認した後、**X.Y.Z**に該当バージョンを入力してください。
 
     ```bash
     -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
@@ -195,11 +195,11 @@ EOL
 
 :::note
 
--   *whatap-virtual-X.Y.Z.jar*：モニタリング対象(サンプルアプリケーション)
+-   _whatap-virtual-X.Y.Z.jar_：モニタリング対象(サンプルアプリケーション)
 
--   *whatap.agent-X.Y.Z.jar*：WhaTapエージェント
+-   _whatap.agent-X.Y.Z.jar_：WhaTapエージェント
 
--   エージェントのファイル名が*whatap.agent-1.2.3.jar*の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+-   エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
 -   JVMオプション追加の詳細については、[次の文書](https://docs.whatap.io/java/install-agent#addjvmopt)を参照してください。
 
@@ -217,15 +217,15 @@ Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.
 
 ### paramkeyファイル作成
 
-プロジェクトの最上位パスに*paramkey.txt*ファイルを作成し、6桁の英語、数字からなるパスワードを指定してください。
+プロジェクトの最上位パスに_paramkey.txt_ファイルを作成し、6桁の英語、数字からなるパスワードを指定してください。
 
--   *paramkey.txt*ファイルは、モニタリング時に暗号化された引数を復号化する時に使用します。 
+-   _paramkey.txt_ファイルは、モニタリング時に暗号化された引数を復号化する時に使用します。 
 
--   パスワードの例は次のとおりです。 `ABCDEF`
+-   パスワードの例は次のとおりです。`ABCDEF`
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーションリリーズ_yaml_ファイルに次の内容を追加してください。 
 
 ```yaml
 env:
@@ -296,7 +296,7 @@ spec:
 
 -   `POD_NAME`: 現在のPodの名前を収集します。
 
--   `OKIND`(選択事項)：Podに該当するアプリケーションをグループ化します。 デプロイメント(Deployment) 名に設定すると、該当するPodを一つにグループ化します。
+-   `OKIND`(選択事項)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名に設定すると、該当するPodを一つにグループ化します。
 
 -   `license`：エージェント認証を確認するためのキーです。
 
@@ -306,12 +306,4 @@ spec:
 
 :::
 
-## エージェントのインストール確認
-
--   エージェントが正常にインストールされたことを確認するには、***ダッシュボード*** > ***アプリケーションサービスダッシュボード***メニューに移動してください。
-
--   ダウンロードしたファイルをインストールした後に***ダッシュボード***メニューからエージェントが表示されない場合は、次の事項を確認してください。
-
-    -   コンテナで`ps -ef | grep whatap`コマンドを実行し、エージェントオプションを適用されていることを確認してください。
-
-    -   コンテナの*/whatap/logs*パスの内容を確認してください。エージェントログは*logs/`{whatapの設定ファイル名}`-yyyymmdd.log*形式のファイル名で出力されます。
+{@include: _check-install-agent.mdx} 

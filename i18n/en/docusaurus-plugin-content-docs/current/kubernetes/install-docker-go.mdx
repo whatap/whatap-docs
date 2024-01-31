@@ -9,7 +9,7 @@ tags:
   - Go
 ---
 
-At the bottom of ***Management*** > ***Agent installation***, click ***Install Application***, and then Select the ***Docker Go*** tab in Install guide.
+At the bottom of **_Management_** > **_Agent installation_**, click **_Install Application_**, and then Select the **_Docker Go_** tab in Install guide.
 
 This process applies the WhaTap monitoring agent to the Go application running on the Docker container and packages the container image as follows. 
 
@@ -72,7 +72,7 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 ## Agent CONFIG.
 
-Create the *whatap.conf* file in which WhaTap's access key and server IP address have been set in the user application execution path. If you use a specific path, you can set it with the `WHATAP_HOME` environment variable.
+Create the _whatap.conf_ file in which WhaTap's access key and server IP address have been set in the user application execution path. If you use a specific path, you can set it with the `WHATAP_HOME` environment variable.
 
 ```docker title='whatap.conf'
 RUN echo "accesskey={granted access key}" >> whatap.conf
@@ -87,7 +87,7 @@ Be careful not to expose the **access key** to images that are in Docker Public 
 
 ### Setting the `WHATAP_HOME` variable
 
-You can set the *whatap.conf* path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first. Add the `WHATAP_HOME` setting before the application startup command. 
+You can set the _whatap.conf_ path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first. Add the `WHATAP_HOME` setting before the application startup command. 
 
 ```bash
 mkdir ./whatap_home
@@ -146,7 +146,7 @@ For more information about the library configuration, see [the following](../gol
 
 ## Configuring the container environment variables
 
-After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
 
 ```yaml
 env:
@@ -230,10 +230,10 @@ ps -ef | grep whatap_agent
 
 ## Checking the agent installation
 
-To check whether the agent has been installed, go to ***Dashboard*** > ***Application Service Dashboard***.
+To check whether the agent has been installed, go to <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="serviceDashboard" className="uitext" />.
 
-If you have manually installed the downloaded file but cannot see the agent in ***Dashboard***, check the following.
+If you have manually installed the downloaded file but cannot see the agent in <Cmdname sid="dashboard" className="uitext" />, check the following.
 
 -   Execute the command, `ps -ef | grep whatap_agent` in the container, and then check whether the agent options have been applied properly.
 
--   Check the *`WHATAP_HOME`/logs* of the container or the *logs* directory of the application execution path. The file name of the agent log is displayed as *logs/`{boot or install}`-yyyymmdd.log*.
+-   Check the _`WHATAP_HOME`/logs_ of the container or the _logs_ directory of the application execution path. The file name of the agent log is displayed as _logs/`{boot or install}`-yyyymmdd.log_.

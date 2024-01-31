@@ -9,14 +9,13 @@ tags:
   - マスター
   - Node
   - エージェントのインストール
-hide_table_of_contents: false
 toc_max_heading_level: 2
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-次のように、マスター及びノードエージェントのインストール過程を案内します。 ***インストール案内***画面と同じプロセスです。
+次のように、マスター及びノードエージェントのインストール過程を案内します。**_インストール案内_**画面と同じプロセスです。
 
 :::note 
 
@@ -26,7 +25,7 @@ EKS Fargateは、対応予定です。
 
 ## 環境を事前に確認して設定
 
-ユーザーのKubernetes環境によっては、事前の環境設定が必要な場合があります。 Istio、GKE、OpenShiftの環境に該当しない場合、[次の段階](#create-kubernetes-agent)に進んでください。
+ユーザーのKubernetes環境によっては、事前の環境設定が必要な場合があります。Istio、GKE、OpenShiftの環境に該当しない場合、[次の段階](#create-kubernetes-agent)に進んでください。
 
 <Tabs>
 
@@ -82,7 +81,7 @@ gcloudコマンドのインストールの詳細については、[グーグル�
 
 <ImgLang img='kube-install-openshift.png' desc='OpenShift'/>
 
-***インストール方法***画面で***OpenShift環境の場合の追加設定***セクションを開いて***whatap_openshift_scc.yaml***ボタンを選択してください。 ファイルをダウンロードした後、次のコマンドを実行してください。
+**_インストール方法_**画面で**_OpenShift環境の場合の追加設定_**セクションを開いて**_whatap_openshift_scc.yaml_**ボタンを選択してください。ファイルをダウンロードした後、次のコマンドを実行してください。
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -94,7 +93,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Kubernetesエージェント作成
 
-ユーザーのKubernetesバージョンとContainer Runtimeの*YAML*ファイルをダウンロードしてエージェントを生成してください。
+ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントを生成してください。
 
 1.  次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
@@ -104,11 +103,11 @@ oc create -f whatap_openshift_scc.yaml
 
     ![](/img/k8s-check-version.svg)
 
-2.  ***エージェントのインストール***画面で**VERSION**と**CONTAINER-RUNTIME**の*YAML*ファイルを選択し***ダウンロード***ボタンをクリックしてください。
+2.  **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
 
     <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
 
-3.  ダウンロードした*YAML*ファイルをマスターNodeにアップロードしてください。
+3.  ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
 
 4.  エージェントを作成するには、次のコマンドを実行してください。 
 
@@ -123,7 +122,7 @@ oc create -f whatap_openshift_scc.yaml
 
 :::note
 
-**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります。**デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、*YAML*ファイルを使用してこれらの設定を変更することができます。
+**マスターエージェントのリソース使用量は、コンテナ数の増加によって影響を受ける可能性があります**。デフォルトで設定されたメモリlimit(350MB) を超えてリソースを使用する場合、OOM(Out Of Meomory)が発生する可能性があります。 ユーザーは、_YAML_ファイルを使用してこれらの設定を変更することができます。
 
 :::
 
@@ -137,7 +136,7 @@ kubectl get pod -n whatap-monitoring
 
 #### Running状態の場合
 
-次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。 マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。 [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、プロジェクトリスト***とダッシュボード*** >***コンテナマップ***メニューから性能情報を収集することを確認してください。 
+次のように**STATUS**項目が**Running**である場合**インストールを完了した状態**です。マスター及びノードエージェントのインストールを完了すると、Kubernetes環境のリソースモニタリングを開始します。[WhaTapモニタリングサービス](https://service.whatap.io)に移動し、**_プロジェクトリスト_**と**_ダッシュボード_** > **_コンテナマップ_**メニューから性能情報を収集することを確認してください。 
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
@@ -159,13 +158,13 @@ kubectl get pod -n whatap-monitoring
 
 :::tip
 
-`kubectl`コマンドを使用する場合、`-n {ネームスペース}`オプションを使用して、特定のネームスペースを対象にタスクを実行します。 WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
+`kubectl`コマンドを使用する場合、`-n {ネームスペース}`オプションを使用して、特定のネームスペースを対象にタスクを実行します。WhaTapエージェントは、基本的に`whatap-monitoring`というネームスペースにインストールされるため、`-n whatap-monitoring`というオプションを追加します。
 
 :::
 
 :::note
 
--   アプリケーションエージェントのインストールを進めるには、メニューの画面右下の***アプリケーションエージェントインストール***ボタンを選択してください。 詳細については、[次の文書](install-application-agent)を参照してください。
+-   アプリケーションエージェントのインストールを継続するには、画面の右下にある**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書](install-application-agent)を参照してください。
 -   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

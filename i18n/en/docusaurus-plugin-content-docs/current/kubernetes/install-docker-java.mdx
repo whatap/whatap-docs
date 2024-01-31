@@ -13,7 +13,7 @@ toc_max_heading_level: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-At the bottom of ***Management*** > ***Agent installation***, click ***Install Application*** > Select the ***Docker Java*** tab in Install guide.
+At the bottom of **_Management_** > **_Agent installation_**, click **_Install Application_** > Select the **_Docker Java_** tab in Install guide.
 
 This process adds the settings for applying the agent to the JVM option of the Java application running on the Docker container and packages the container images as follows:
 
@@ -21,7 +21,7 @@ This process adds the settings for applying the agent to the JVM option of the J
 
 -   EKS Fargate is to be supported later. 
 
--   Git example code is provided to help you understand the Java application integration process.See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/java/springboot).
+-   Git example code is provided to help you understand the Java application integration process. See [the following](https://github.com/whatap/kuber-apm-boilerplate/tree/main/java/springboot).
 
 :::
 
@@ -31,7 +31,7 @@ This process adds the settings for applying the agent to the JVM option of the J
 
 <TabItem value="dockerinstall" label="Docker Install" default>
 
-To install the WhaTap application agent, create the *whatap.conf* file. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
+To install the WhaTap application agent, create the _whatap.conf_ file. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
 
 ```bash
 cat >{YOUR_PROJECT_ROOT}/whatap.conf <<EOL
@@ -41,7 +41,7 @@ EOL
 
 :::note
 
-The *whatap.conf* file can be managed using the ConfigMap function in the user Kubernetes environment.
+The _whatap.conf_ file can be managed using the ConfigMap function in the user Kubernetes environment.
 
 :::
 
@@ -114,7 +114,7 @@ The following guides you to include **the specified version of the agent** in th
     ```bash
     docker run whatap/kube_mon ls /data/agent/micro | grep -E 'whatap\.agent-(.*?\.)(.*?\.)(.*?\.)jar' | sort | tail -1
 
-    # Displaying Sample
+    # Output example
     ## whatap.agent-X.Y.Z.jar
     ```
 
@@ -152,7 +152,7 @@ The following guides you to include **the specified version of the agent** in th
 
 <TabItem value="direct" label="Direct Installation">
 
-1.  Select ***Download*** to download the installation file (*whatap.agent.java.tar.gz*).
+1.  Select **_Download_** to download the installation file (_whatap.agent.java.tar.gz_).
 
 2.  Upload the dockerfile to the server and then unzip the file.
 
@@ -166,14 +166,14 @@ The following guides you to include **the specified version of the agent** in th
 
     :::
 
-3.  When unzipped, the *whatap* directory is created. Check the settings in the *whatap.conf* file under the *whatap* directory, and then modify it as follows:
+3.  When unzipped, the _whatap_ directory is created. Check the settings in the _whatap.conf_ file under the _whatap_ directory, and then modify it as follows:
 
     ```ini
     license={licenseKey}
     whatap.server.host={proxyServer}
     ```
 
-4.  Add the following to the startup command of Dockerfile. Check the agent file under the *whatap* directory, and then enter the version in **X.Y.Z**.
+4.  Add the following to the startup command of Dockerfile. Check the agent file under the _whatap_ directory, and then enter the version in **X.Y.Z**.
 
     ```bash
     -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
@@ -195,11 +195,11 @@ The following guides you to include **the specified version of the agent** in th
 
 :::note
 
--   *whatap-virtual-X.Y.Z.jar*: Monitoring target (sample application)
+-   _whatap-virtual-X.Y.Z.jar_: Monitoring target (sample application)
 
--   *whatap.agent-X.Y.Z.jar*: WhaTap agent
+-   _whatap.agent-X.Y.Z.jar_: WhaTap agent
 
--   If the agent's file name is *whatap.agent-1.2.3.jar*, change the **X.Y.Z** part to **1.2.3**.
+-   If the agent's file name is _whatap.agent-1.2.3.jar_, change the **X.Y.Z** part to **1.2.3**.
 
 -   For more information about addition of JVM options, see [the following](https://docs.whatap.io/java/install-agent#addjvmopt).
 
@@ -217,15 +217,15 @@ For Java 17 or later, add the `--add-opens=java.base/java.lang=ALL-UNNAMED` opti
 
 ### Creating the paramkey file
 
-Create the *paramkey.txt* file in the top-level path of the project, and then enter a 6-letter alphanumeric password.
+Create the _paramkey.txt_ file in the top-level path of the project, and then enter a 6-letter alphanumeric password.
 
--   The *paramkey.txt* file is used when decrypting parameters during monitoring. 
+-   The _paramkey.txt_ file is used when decrypting parameters during monitoring. 
 
 -   The password example is as follows: `ABCDEF`
 
 ## Configuring the container environment variables
 
-After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
 
 ```yaml
 env:
@@ -306,12 +306,4 @@ spec:
 
 :::
 
-## Checking the agent installation
-
--   To check whether the agent has been installed, go to ***Dashboard*** > ***Application Service Dashboard***.
-
--   If you have manually installed the downloaded file but cannot see the agent in ***Dashboard***, check the following.
-
-    -   Execute the command, `ps -ef | grep whatap` in the container, and then check whether the agent options have been applied properly.
-
-    -   Check the content of the container in the */whatap/logs* path. Agent logs are output in the format of *logs/`{whatap configuration file name}`-yyyymmdd.log*.
+{@include: _check-install-agent.mdx} 

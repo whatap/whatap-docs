@@ -1,0 +1,144 @@
+---
+id: preview-2_2_0x
+title: Preview 2.2.0.a
+toc_max_heading_level: 2
+draft: false
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[https://preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.2.0.a2
+
+2024年01月26日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status>サイドメニューの<Cmdname sid="project_list" className="uitext" />性能低下を改善
+
+-   <Status>Fixed</Status> <code>URL</code>を除くすべての製品<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベント設定時、通知ルールテストチャートのデータ時点が1つだけある場合、チャートが描かれないイシューを修正
+
+-   <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューで通知設定の権限がないユーザーは<Cmdname sid="aboids_large_number_alerts" className="uitext" />パネルの<Cmdname sid="terminate_now" className="uitext" />ボタンを非活性化状態に修正
+
+* * *
+
+### `ネットワーク`
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />及び<Cmdname sid="MNU06849" className="uitext" />メニューでリアルタイム照会時、直近5分のみできるように変更
+
+-   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />メニューで次のように変更
+
+    -   トポロジオプションで<Cmdname sid="MNU06813" className="uitext" />オプション名を<Cmdname sid="ITM07578" className="uitext" />に表記変更
+
+    -   トポロジオプションでノードサイズのウエイトオプションが削除され、選択した<Cmdname sid="ITM07578" className="uitext" />オプションによってノードサイズのウエイトを設定するように変更
+
+</div>
+
+## Preview 2.2.0.a1
+
+2024年01月26日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+-   <Status>Fixed</Status>ネームスペースプロジェクトで<Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="masterMetaTopology" className="uitext" />メニューデータが出ない事象を修正
+
+-   <Status>Changed</Status>オブジェクトマニフェスト対応のマスターエージェントバージョンを<b>1.5.2</b>に変更
+
+-   <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューの案内文を改善
+
+</div>
+
+## Preview 2.2.0.a0
+
+2024年01月25日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Feature</Status> SSOアカウントの連動機能を追加
+
+    画面右上のプロフィールアイコンを選択し<Cmdname sid="MNU07360" className="uitext" /> > <Cmdname sid="ssoIntegrations" className="uitext" />を選択してください。
+
+    :::note
+
+    SSOアカウント連動の詳細については、[次の文書](https://whatap.github.io/whatap-docs/account/sso)を参考にしてください。
+
+    :::
+
+-   <Status>Feature</Status>サイドメニューを改編
+
+    サイドメニューがリニューアルしました。 プロジェクト一覧とプロジェクトメニューが上下に分離されていた既存のUI構造からメニュー集中型の構造に改編しました。 詳細を確認するには、サイドメニューの下の<Cmdname sid="BTN07397" className="uitext" />ボタンを選択してください。
+
+    <ImgLang img='release/release-main-ui.png' desc='' />
+
+    :::note
+
+    サイドメニューの詳細については、[次の文書](https://whatap.github.io/whatap-docs/main-ui-intro-v2)を参考にしてください。
+
+    :::
+
+-   <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベントを追加または編集する時、<Cmdname sid="category" className="uitext" />項目の製品ロゴに適用されているダークテーマの視認性を改善
+
+-   <Status>Changed</Status> <Cmdname sid="add_group" className="uitext" />ページのタイトル変更、<Cmdname sid="project_list" className="b500" /> → <Cmdname sid="add_group" className="uitext" />
+
+* * *
+
+### `Database`
+
+#### 共通
+
+<p><Status>Deprecated</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_history" className="uitext" />メニューで<Cmdname sid="alert_log" className="uitext" />ボタンを 削除 </p>
+
+#### DB <code class="my">V2</code>
+
+<p><Status>Changed</Status>プロジェクトV1対応の終了に関する案内ポップアップウィンドウの日付を変更</p>
+
+#### PostgreSQL <code class="my">V2</code>
+
+<p><Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="db_parameter" className="uitext" />メニューで<span class="uitext">Value</span>カラム表記時、一部の値に対して単位表記を追加</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューでレプリケーションコントローラ(Replication Controller) のグループ化オプションを追加
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューで以前に選択したグループ化オプションに関連するデータがない場合、データが見えない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_volume" className="uitext" />メニューでUsedPercentが100%の時のアイコンを修正
+
+* * *
+
+### `Log`
+
+<p><Status>Changed</Status> <Cmdname sid="log" className="uitext" />メニューでテーブルの設定値を当該プロジェクトの<Cmdname sid="logTail" className="uitext" />、<Cmdname sid="log_search" className="uitext" />, <Cmdname sid="logExplorer" className="uitext" />メニューですべて共有されるように修正</p>
+
+* * *
+
+### `ネットワーク`
+
+-   <Status>Feature</Status>エージェントのインストール時にAWSのリソースを識別するためのオプションを追加
+
+-   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />メニューでプリセットを選択した状態でページを更新すると、すべてのタグが選択されない状態で表示される問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" />の下位メニューで検索できる欠落したフィールドを追加し、各メニューで検索できるフィールドのみを表示するように修正
+
+    -   次の二つのメニューに<code>session_count</code>フィールドを追加
+
+    -   <Cmdname sid="MNU06850" className="uitext" />: <code>avg_jitter</code>、<code>avg_latency</code>フィールドを追加
+
+    -   <Cmdname sid="MNU06851" className="uitext" />: <code>avg_jitter</code>、<code>avg_latency</code>、<code>lost_count</code>、<code>retransmission_count</code>フィールドが表示されないように修正
+
+</div>

@@ -13,7 +13,7 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Amazon CloudWatchモニタリングはAPI連動を通じてメトリックを周期的に収集します。 収集を希望するサービスに該当するCloudWatchネームスペースで、5分おきに希望するスタットを炊事選択して収集します。モニタリングを開始する時、すべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリングを開始できます。Role方式認証で安全かつ便利に使用できます。 
 
-{@include: ../getting-started/_create-project-cloud.mdx} 
+{@include: ../getting-started/_create-project-cloud.mdx}
 
 ## チェックリスト
 
@@ -182,7 +182,13 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 -   AWS WorkMail
 -   AWS WorkSpaces
 
-### データ収集の無効化及びサービス初期化 {#data-deactivation}
+### リージョン、メトリクス、統計を選択
+
+![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
+
+<ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />
+
+## データ収集の無効化及びサービス初期化 {#data-deactivation}
 
 <ImgLang img='amazon-cloudwatch-deact.png' desc='データ収集の無効化及びサービス初期化' />
 
@@ -191,9 +197,3 @@ Roleを使用して設定をお勧めします。 Access Keyの使用は、既�
 -   ![指示線b](/img/char-b.svg)**_役割(Role)の変更_**ボタンをクリックし、**_エージェントのインストール_**画面で![指示線c](/img/char-c.svg)**_サービスの初期化_**を選択すると、メトリクスを収集中のすべてのサービスを無効化します。
 
 -   完全に費用発生を防止するためには、**AWS IAM**コンソールから**役割**(Role)を削除する必要があります。
-
-### リージョン、メトリクス、統計を選択
-
-![number 2](/img/number-02.png) {@include: ../common-items/_region-metric-stats.mdx} 
-
-<ImgLang img='amazon_cloudwatch_setup_dialog_2nd.png' desc='Amazon Cloudwatch - Region,Metric,Stats' />

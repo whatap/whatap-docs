@@ -1,9 +1,37 @@
 ---
 id: service-2_0_x
-title: Service 2.0.X
+title: Service 2.0.x
 toc_max_heading_level: 2
 pagination_next: release-notes/service/service-1_114_x
 ---
+
+## Service 2.0.8
+
+January 19, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<p><Status>Fixed</Status> In the <Cmdname sid="metrics" className="uitext" /> tab of <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_configuration" className="uitext" />, fixed the issue where page loading gets slowed too much when there are numerous events. </p>
+
+</div>
+
+## Service 2.0.6
+
+January 19, 2024
+
+<div class='indentTab'>
+
+### `AWS Log`
+
+-   In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, modified as follows:
+
+    -   <Status>Change</Status> Modified the S3 guidance text on the installation screen.
+
+    -   <Status>Feature</Status> In the <span class="uitext">Install WhaTap Forwarder</span> tab, added Virginia(us-east-1) in the <span class="uitext">AWS Region</span> list as in Step 2.
+
+</div>
 
 ## Service 2.0.4
 
@@ -170,6 +198,8 @@ For example, if it is set to <Cmdname sid="TTL07090" className="uitext" /> 12-03
 -   <Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" /> of the Java project, modified the code for the JVM option.
 
 -   <Status>Changed</Status> In <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />, modified to apply the <Cmdname sid="yaxis" className="uitext" /> option of the <Cmdname sid="AA005" className="uitext" /> widget by default and save the changed Y-axis values.
+
+-   <Status>Changed</Status> Changed the Node agent installation support version: 7.10.0 → <b>16.4.0</b>.
 
 -   <Status>Fixed</Status> Fixed the issue where SQL hash items are not automatically entered when you enter the <Cmdname sid="sql" className="uitext" /> tab of the <Cmdname sid="statistic" className="uitext" /> menu on the <Cmdname sid="TTL06209" className="uitext" /> window.
 

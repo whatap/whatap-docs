@@ -67,11 +67,11 @@ tags:
 
 <ImgLang img="npm-dashboard-topology-edge.png" desc="エッジ" />
 
-トポロジーチャートのエッジに表示する値の種類を選択できます。 <Cmdname sid="MNU06813" className="uitext" />項目で希望する指標を選択することができます。 エッジに表示可能な性能指標の種類は次のとおりです。
-
--   **_latency_**
+トポロジーチャートのエッジに表示する値の種類を選択できます。 <Cmdname sid="ITM07578" className="uitext" />項目で希望する指標を選択することができます。 エッジに表示可能な性能指標の種類は次のとおりです。
 
 -   **_jitter_**
+
+-   **_latency_**
 
 -   **_bps_**(bit per second)
 
@@ -81,23 +81,17 @@ tags:
 
 :::note
 
-<Cmdname sid="MNU06813" className="uitext" />項目で選択した指標の種類によって、3番目の項目も同様に変更されます。 3番目の項目では、選択した指標のしきい値を設定できます。
+-   <Cmdname sid="MNU06813" className="uitext" />項目で選択した指標の種類によって、2番目の項目も同様に変更されます。 2番目の項目では、選択した指標のしきい値を設定できます。
 
-<ImgLang img='npm-dashboard-settings-threshold.png' desc='しきい値の設定' />
+    <ImgLang img='npm-dashboard-settings-threshold.png' desc='しきい値の設定' />
+
+-   <Cmdname sid="ITM07578" className="uitext" />項目で選択した値に応じて、ノードサイズのウエイトが自動的に設定されます。
 
 :::
 
-#### ノードサイズの設定
-
-<Cmdname sid="MNU06814" className="uitext" />項目では、トポロジ チャートに表示されるノードサイズのウエイトの種類を設定できます。 ノードのサイズは、データまたはパケットの処理量によって異なります。
-
--   **_Total bytes_**：データ処理量をウエイトに設定します。 データ処理量は、送信データ量および受信データ量の合計です。
-
--   **_Packet counts_**：パケット処理量をウエイトに設定します。 パケット処理量は、送信パケット量および受信パケット量の合計です。
-
 #### しきい値の設定
 
-3番目の項目と<Cmdname sid="TTL06840" className="uitext" />項目では、エッジとして設定された指標に対するしきい値と単位を設定できます。 しきい値を超えるエッジは、トポロジー上で強調表示されます。 
+2番目の項目と<Cmdname sid="TTL06840" className="uitext" />項目では、エッジとして設定された指標に対するしきい値と単位を設定できます。 しきい値を超えるエッジは、トポロジー上で強調表示されます。 
 
 別途の設定プロセスがない場合、しきい値と単位は次のようにデフォルト設定されます。 
 

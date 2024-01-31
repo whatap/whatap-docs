@@ -9,7 +9,6 @@ tags:
   - Master
   - Node
   - Agent Installation
-hide_table_of_contents: true
 toc_max_heading_level: 2
 ---
 
@@ -30,7 +29,7 @@ Depending on the Kubernetes environment, pre-environment configuration may be re
 
 <Tabs>
 
-<TabItem value='istio' label='Istio Environment' default>
+<TabItem value='istio' label='ISTIO environment' default>
 
 In the Istio environment, execute the following command to create the ServiceEntry, the resource that communicates with the WhaTap collection server.
 
@@ -82,7 +81,7 @@ For more information about installation with the gcloud commands, see [Google Cl
 
 <ImgLang img='kube-install-openshift.png' desc='OpenShift'/>
 
-On the ***Installation guide*** screen, open the ***Additional setting in case of the OpenShift environment*** section and then select ***whatap_openshift_scc.yaml***. After downloading the file, execute the following command.
+On the **_Installation guide_** screen, open the **_Additional setting in case of the OpenShift environment_** section and then select **_whatap_openshift_scc.yaml_**. After downloading the file, execute the following command.
 
 ```bash
 oc create -f whatap_openshift_scc.yaml
@@ -94,7 +93,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Creating the Kubernetes agent
 
-Download the *YAML* file that is suitable for your Kubernetes version and container runtime, and then create an agent.
+Download the _YAML_ file that is suitable for your Kubernetes version and container runtime, and then create an agent.
 
 1.  Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command:
 
@@ -104,16 +103,16 @@ Download the *YAML* file that is suitable for your Kubernetes version and contai
 
     ![](/img/k8s-check-version.svg)
 
-2.  On the ***Agent Installation*** screen, select the *YAML* file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click ***Download***.
+2.  On the **_Agent Installation_** screen, select the _YAML_ file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click **_Download_**.
 
     <ImgLang img='k8s-download-yaml.png' desc='yaml download' />
 
-3.  Upload the downloaded *YAML* file to the master node.
+3.  Upload the downloaded _YAML_ file to the master node.
 
 4.  Execute the following command to create an agent. 
 
     ```bash
-    # {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
+    # Modify the {whatap_kube_X.YZ.yaml} filename to match the downloaded filename.
     kubectl apply -f {whatap_kube_X.YZ.yaml}
     ```
 
@@ -123,7 +122,7 @@ Download the *YAML* file that is suitable for your Kubernetes version and contai
 
 :::note
 
-**Using the master agent resources can be affected by the increase in the container count**. Out of memory (OOM) may occur if the resources are used beyond the default memory limit (350 MB). You can change the settings through the *YAML* file.
+**Using the master agent resources can be affected by the increase in the container count**. Out of memory (OOM) may occur if the resources are used beyond the default memory limit (350 MB). You can change the settings through the _YAML_ file.
 
 :::
 
@@ -137,7 +136,7 @@ kubectl get pod -n whatap-monitoring
 
 #### In case the status is Running
 
-If **STATUS** is in **Running**, it indicates the installation has been finished as follows. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in ***Project List*** and ***Dashboard*** > ***Container Map***. 
+If **STATUS** is in **Running**, it indicates **the installation has been finished** as follows. After installing the master and node agents, start monitoring the resources in your Kubernetes environment. Go to [Whatap Monitoring Service](https://service.whatap.io) and then check the performance data collection in **_Project List_** and **_Dashboard_** > **_Container Map_**. 
 
 ![](/img/k8s-check-running-agent-monitoring.svg)
 
@@ -165,7 +164,7 @@ When using the `kubectl` command, the `-n {namespace}` option performs the task 
 
 :::note
 
--   To proceed with the application agent installation, select ***Application Agent Installation*** at the lower right of the screen. For more information, see [the following](install-application-agent).
+-   To proceed with the application agent installation, select **_Application Agent Installation_** at the lower right of the screen. For more information, see [the following](install-application-agent).
 -   To update the agent to the latest version, see [the following](agent-update).
 
 :::

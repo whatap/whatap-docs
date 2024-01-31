@@ -1,0 +1,136 @@
+---
+id: object-manifest
+title: Object Manifest Information
+description: It guides you to the WhaTap's Object Manifest function.
+tags:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Object Manifest Information
+---
+
+Home > Select Project > **_Resource_** > **_Object Manifest Information_** 
+
+:::note 
+
+**Requirements**
+
+WhaTap Master Agent 1.5.2 or later is required. If the version is less than 1.5.2, the **_master meta info_** screen appears.
+
+:::
+
+The Kubernetes Master Agent automatically collects manifests for objects such as Pods, services, and ReplicaSets in clusters once a day. The data is stored by date, allowing users to easily check the cluster status as of a specific date. The collected data can be compared by date, making it easy to identify changes in clusters over time. 
+
+Additionally, you can freely set the collection time zone by specifying the container environment variables before deployment of the Kubernetes Master Agent. For more information about the configuration, see the guide to [Container environment variables](#object-manifest-evn). 
+
+## Container environment variables {#object-manifest-evn}
+
+-   **store_k8s_object_manifest_enabled**
+
+    Default `true`
+
+    The object manifest collection feature is enabled. The default value is `true`, the collection feature is enabled without any further settings.
+
+-   **store_k8s_object_manifest_timezone**
+
+    Default `UTC`
+
+    Set the time zone for collection of object manifests. If there is no separate setting, collection starts at midnight based on `UTC` by default. 
+
+    -   Can be set as a region-based time zone or in GMT offset format. 
+
+    -   Supports a precise time setting in minutes. 
+
+        > For example, a non-standard time zone for a specific region can be specified by setting it to `GMT+0810`.
+
+-   **store_k8s_object_manifest_max_fetch_limit**
+
+    Default `50`
+
+    Set the number of objects to request to the cluster at a time. If there is no separate setting, 50 items are requested upon request based on the default value of `50`. 
+
+    > For example, when setting the option `30` in a cluster with a total number of Pods of 90, pods are requested 3 times for 30 pods each.
+
+```yaml title='Example'
+containers:
+	- name: whatap-master-agent
+	  image: whatap/kube_mon
+	  resources:
+	    requests:
+	      memory: 300Mi
+	      cpu: 100m
+	    limits:
+	      memory: 350Mi
+	      cpu: 200m
+	  ports:
+	    - containerPort: 6600
+	  command: ['/bin/entrypoint.sh']
+	  env:
+	    - name: WHATAP_LICENSE
+	      value: {PROJECT_LICENSE_VALUE}
+	    - name: WHATAP_HOST
+	      value: "13.124.11.223/13.209.172.35"
+	    - name: WHATAP_PORT
+	      value: "6600"
+	    - name: WHATP_MEM_LIMIT
+	      valueFrom:
+	        resourceFieldRef:
+	          containerName: whatap-master-agent
+	          resource: limits.memory
+	    # Added environment variables
+	    - name: store_k8s_object_manifest_enabled
+	      value: "true"
+	    - name: store_k8s_object_manifest_timezone
+	      value: "GMT+9"
+	    - name: store_k8s_object_manifest_max_fetch_limit
+	      value: "50"
+```
+
+## Basic screen guide
+
+### Object list
+
+When you select a desired object from the object type list, you can see the list of objects. It displays the objects such as **_Name_**, **_Namespace_**, **_Uid_**, and **_CreatedTime_**. The following screen is an example when selecting **_Deployment_** from the object type list.
+
+<ImgLang img='k8s-object-manifest.png' desc='Object Manifest' />
+
+### Object Manifest information details
+
+When you select ![Icon](/img/ico-detail-view.svg) **_Display Detail_** in the object list, you can see the manifest of the object selected in the **_Object Manifest Detail_** window. 
+
+<ImgLang img='k8s-object-manifest-detail.png' desc='Object Manifest details' />
+
+#### List of Object Manifest saving times
+
+-   You can see the list of the times saved for object manifests on the left. Object manifests are automatically saved at a specified time per day.
+
+-   The object manifest saving time can be changed by modifying the value of the master agent's container environment variable, `store_k8s_object_manifest_timezone`. 
+
+-   Object manifests are saved at a scheduled time per day, but are also additionally saved when any warning events occur. 
+
+:::note 
+
+The warning events in which the object manifests are saved indicate Kubernetes event objects of Warning type.
+
+:::
+
+#### Comparison of object manifests
+
+When ![Icon](/img/ic-toggle-on.svg) **_Compare_** is enabled, you can compare two saved object manifests as follows: Any changes are highlighted. 
+
+<ImgLang img='k8s-object-manifest-compare.png' desc='Comparing Object Manifests' />
+
+:::note 
+
+**Viewing object manifests on the container map**
+
+You can see the **_object manifests_** in the **_container map_**. 
+
+<ImgLang img='k8s-object-manifest-cm.png' desc='Viewing Object Manifest in Container map' />
+
+-   Select a desired block. 
+
+-   In the summary window, select the **_Target Info_** tab to view the Pod or container data.  
+
+-   On the right of the **_Pod_**, **_Deployment_**, **_ReplicaSet_**, and **_Node_** tags, click ![More icon](/img/ico-more.svg) **_More_** and then select **_Object Manifest_**.
+
+:::

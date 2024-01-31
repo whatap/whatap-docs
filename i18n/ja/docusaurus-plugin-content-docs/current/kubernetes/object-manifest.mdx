@@ -1,0 +1,136 @@
+---
+id: object-manifest
+title: Object Manifest情報
+description: WhaTapオブジェクトマニフェスト機能を案内します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - Object Manifest情報
+---
+
+ホーム画面 > プロジェクトを選択 > **_リソース_** > **_Object Manifest情報_** 
+
+:::note 
+
+**要求事項**
+
+WhaTapマスターエージェントの1.5.2バージョン以降が必要です。 1.5.2バージョン未満の場合は、既存の**_マスターメタ情報_**画面が提供されます。
+
+:::
+
+Kubernetesマスターエージェントは、クラスターにあるPod、サービス、Replicasetなどのオブジェクトに対するマニフェストを1日に1回ずつ自動的に収集します。 該当データは日付別に保存され、ユーザーが特定の日付基準のクラスター状態を簡単に確認できます。 収集したデータは日付別の比較が可能で、時間によるクラスターの変化を把握しやすいです。 
+
+また、ユーザーは、KubernetesマスターエージェントのDeployment配布前にコンテナ環境変数を設定することで、収集時間のタイムゾーンを自由に指定することができます。 当該設定方法は、次の[コンテナ環境変数](#object-manifest-evn) の案内を参考にしてください。 
+
+## コンテナ環境変数{#object-manifest-evn}
+
+-   **store_k8s_object_manifest_enabled**
+
+    デフォルト値 `true`
+
+    オブジェクトマニフェスト収集機能を活性化します。 デフォルト値が`true`であるため、別途の設定なしで収集機能が活性化されます。
+
+-   **store_k8s_object_manifest_timezone**
+
+    デフォルト値`UTC`
+
+    オブジェクトマニフェスト収集のためのタイムゾーンを設定します。 別途設定がない場合、デフォルト値の`UTC`を基準にして、午前0時に収集を開始します。 
+
+    -   リージョンベースのタイムゾーンまたはGMTオフセット形式で設定できます。 
+
+    -   分単位の精密な時間指定に対応します。 
+
+        > 例、`GMT+0810`のように設定することで、特定地域の非標準時間帯の指定が可能
+
+-   **store_k8s_object_manifest_max_fetch_limit**
+
+    デフォルト値`50`
+
+    クラスターが一度にリクエストするオブジェクト数を設定します。 別途設定がない場合、デフォルト値の`50`を基準にして1回のリクエストにつき50個ずつリクエストします。 
+
+    > 例、全体のPod数が90個のクラスタで該当オプションを`30`に設定すると、Pod情報を30個ずつ3回リクエスト
+
+```yaml title='Example'
+containers:
+	- name: whatap-master-agent
+	  image: whatap/kube_mon
+	  resources:
+	    requests:
+	      memory: 300Mi
+	      cpu: 100m
+	    limits:
+	      memory: 350Mi
+	      cpu: 200m
+	  ports:
+	    - containerPort: 6600
+	  command: ['/bin/entrypoint.sh']
+	  env:
+	    - name: WHATAP_LICENSE
+	      value: {PROJECT_LICENSE_VALUE}
+	    - name: WHATAP_HOST
+	      value: "13.124.11.223/13.209.172.35"
+	    - name: WHATAP_PORT
+	      value: "6600"
+	    - name: WHATP_MEM_LIMIT
+	      valueFrom:
+	        resourceFieldRef:
+	          containerName: whatap-master-agent
+	          resource: limits.memory
+	    # 追加された環境変数
+	    - name: store_k8s_object_manifest_enabled
+	      value: "true"
+	    - name: store_k8s_object_manifest_timezone
+	      value: "GMT+9"
+	    - name: store_k8s_object_manifest_max_fetch_limit
+	      value: "50"
+```
+
+## 基本画面ガイド
+
+### オブジェクトリスト
+
+オブジェクトの種類の一覧から目的のオブジェクトを選択すると、そのオブジェクトの一覧を確認することができます。 **_Name_**、**_Namespace_**、**_Uid_**、**_CreatedTime_**などのオブジェクト情報が表示されます。 次の画面は、オブジェクト種類の一覧から**_Deployment_**を選択する時の例示画面です。
+
+<ImgLang img='k8s-object-manifest.png' desc='Object Manifest' />
+
+### Object Manifest情報の詳細
+
+オブジェクト一覧で![アイコン](/img/ico-detail-view.svg) **_詳細を見る_**ボタンの選択時**_オブジェクトマニフェスト詳細_**ウィンドウで選択したオブジェクトのマニフェストを照会できます。 
+
+<ImgLang img='k8s-object-manifest-detail.png' desc='Object Manifest詳細' />
+
+#### オブジェクトマニフェストの保存時間一覧
+
+-   そのオブジェクトのマニフェストが保存されている時間の一覧を左側で確認できます。 オブジェクトマニフェストは、毎日決まった時間に自動的に保存されます。
+
+-   オブジェクトマニフェストの保存時間は、マスター エージェントのコンテナ環境変数`store_k8s_object_manifest_timezone`値を修正して変更できます。 
+
+-   オブジェクトマニフェストは、毎日決められた保存時間に保存されるだけでなく、警告イベントが発生した場合にも追加で保存されます。 
+
+:::note 
+
+オブジェクトマニフェストが保存される警告イベントは、WarningタイプのKubernetesイベントオブジェクトを意味します。
+
+:::
+
+#### Object Manifest情報の比較
+
+![アイコン](/img/ic-toggle-on.svg) **_比較する_**トグルを活性化すると、次のように保存されている2つのオブジェクトマニフェストを比較できます。 変更事項がある場合、ハイライトされます。 
+
+<ImgLang img='k8s-object-manifest-compare.png' desc='Object Manifest比較する' />
+
+:::note 
+
+**コンテナマップでのオブジェクトマニフェスト照会**
+
+**_コンテナ·マップ_**で**_オブジェクトマニフェスト_**を確認することができます。 
+
+<ImgLang img='k8s-object-manifest-cm.png' desc='컨테이너 맵에서 오브젝트 매니페스트 조회' />
+
+-   目的のブロックを選択してください。 
+
+-   要約を見るウィンドウで**_対象情報_**タブを選択してPodまたはコンテナ情報を確認してください。  
+
+-   **_Pod_**、**_Deployment_**、**_ReplicaSet_**、**_Node_**タグの右の![詳細を見るアイコン](/img/ico-more.svg)**_詳細を見る_**アイコンをクリックして**_オブジェクトマニフェスト_**を選択してください。
+
+:::
