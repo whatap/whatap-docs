@@ -37,7 +37,7 @@
   --ifm-safe-color: #00b543;
   --ifm-list-left-padding: 1rem;
   --ifm-color-success-dark: #098938;
-  --ifm-color-info-dark: #296CF2;
+  --ifm-color-info-dark: #999999;
   --ifm-color-secondary-dark: #296CF2;
   --ifm-color-warning-dark: #ff9900;
   --ifm-color-danger-dark: #df3737;
@@ -1451,9 +1451,13 @@ main {
         padding-bottom: 0;
       }
     }
-    .alert--secondary, .alert--info {
+    .alert--secondary {
       color: var(--ifm-font-color-base);
       background: url('img/alert-note.svg') var(--ifm-alert-background) no-repeat top 19px left 20px;
+    }
+    .alert--info {
+      color: var(--ifm-font-color-base);
+      background: url('img/alert-info.svg') var(--ifm-alert-background) no-repeat top 19px left 20px;
     }
     .alert--success {
       color: var(--ifm-font-color-base);
