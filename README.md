@@ -33,6 +33,8 @@ crowdin download
 npm run crowdin download
 ```
 
+언어별 다운로드 `crowdin download -l en`
+
 ### 다국어 문서 수정 사항
 
 정규표현식 찾아 바꾸기
