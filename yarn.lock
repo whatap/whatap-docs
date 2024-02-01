@@ -2588,7 +2588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@meilisearch/instant-meilisearch@npm:^1.0.0":
+"@meilisearch/instant-meilisearch@npm:1.0.0":
   version: 1.0.0
   resolution: "@meilisearch/instant-meilisearch@npm:1.0.0"
   dependencies:
@@ -5503,6 +5503,15 @@ __metadata:
   dependencies:
     node-fetch: "npm:^2.6.12"
   checksum: 10c0/4c5e022ffe6abdf380faa6e2373c0c4ed7ef75e105c95c972b6f627c3f083170b6886f19fb488a7fa93971f4f69dcc890f122b0d97f0bf5f41ca1d9a8f58c8af
+  languageName: node
+  linkType: hard
+
+"cross-fetch@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "cross-fetch@npm:4.0.0"
+  dependencies:
+    node-fetch: "npm:^2.6.12"
+  checksum: 10c0/386727dc4c6b044746086aced959ff21101abb85c43df5e1d151547ccb6f338f86dec3f28b9dbddfa8ff5b9ec8662ed2263ad4607a93b2dc354fb7fe3bbb898a
   languageName: node
   linkType: hard
 
@@ -15086,17 +15095,20 @@ __metadata:
     "@docusaurus/plugin-debug": "npm:^2.4.3"
     "@docusaurus/plugin-google-analytics": "npm:^2.4.3"
     "@docusaurus/plugin-google-gtag": "npm:^2.4.3"
+    "@docusaurus/plugin-google-tag-manager": "npm:2.4.3"
     "@docusaurus/plugin-ideal-image": "npm:^2.4.3"
     "@docusaurus/plugin-sitemap": "npm:^2.4.3"
     "@docusaurus/preset-classic": "npm:^2.4.3"
+    "@docusaurus/theme-common": "npm:2.4.3"
     "@docusaurus/theme-mermaid": "npm:^2.4.3"
     "@docusaurus/theme-search-algolia": "npm:^2.4.3"
     "@mdx-js/react": "npm:^1.6.22"
-    "@meilisearch/instant-meilisearch": "npm:^1.0.0"
+    "@meilisearch/instant-meilisearch": "npm:1.0.0"
     "@swc/core": "npm:^1.3.99"
     "@tsconfig/docusaurus": "npm:^1.0.5"
     "@whatap-docs/docusaurus-plugin-includes": "npm:^0.0.1"
     clsx: "npm:^1.2.1"
+    cross-fetch: "npm:^4.0.0"
     docusaurus-plugin-enlarge-image: "npm:^0.1.1"
     docusaurus-plugin-pagemove: "github:usagrada/docusaurus-plugin-pagemove"
     docusaurus-plugin-sass: "npm:^0.2.5"
