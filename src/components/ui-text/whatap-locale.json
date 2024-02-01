@@ -52429,6 +52429,13 @@
     "zh": "The dashboard failed to load.",
     "service_id": "NTC07608"
   },
+  "ITM07609": {
+    "en": "Number of application containers",
+    "ja": "アプリケーション・コンテナの数",
+    "ko": "애플리케이션 컨테이너 수",
+    "zh": "Number of application containers",
+    "service_id": "ITM07609"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
