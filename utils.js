@@ -274,6 +274,12 @@ function colsToJson(data){
     "ko": "쿠버네티스 에이전트 목록"
   }
 
+  rd["kubeApiserverDashboard"] = {
+    "en": "kube-apiserver Dashboard",
+    "ja": "kube-apiserver ダッシュボード",
+    "ko": "kube-apiserver 대시보드"
+  }
+
   return rd;
 }
 
