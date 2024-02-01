@@ -52626,5 +52626,10 @@
     "en": "Kubernetes Agent List",
     "ja": "Kubernetesエージェントリスト",
     "ko": "쿠버네티스 에이전트 목록"
+  },
+  "kubeApiserverDashboard": {
+    "en": "kube-apiserver Dashboard",
+    "ja": "kube-apiserver ダッシュボード",
+    "ko": "kube-apiserver 대시보드"
   }
 }
