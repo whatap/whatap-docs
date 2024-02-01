@@ -24,33 +24,37 @@ export default function PDFDownloads({typeName, pdfList}) {
     };
 
     const handleDownload = async () => {
-        if (selectedFiles.length === 1) {
-            // 선택한 파일이 1개일 경우 개별 파일 다운로드
-            console.log(selectedFiles[0].url);
-            saveAs(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
-        } else if (selectedFiles.length > 1) {
-            // 파일명을 역순으로 정렬
-            const sortedFiles = selectedFiles.slice().sort((a, b) => b.name.localeCompare(a.name));
-            
-            // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
-            const mergedPdf = await PDFDocument.create();
-            const pdfPromises = sortedFiles.map((file) => fetch(file.url).then((response) => response.arrayBuffer()));
-            const pdfArrayBuffers = await Promise.all(pdfPromises);
+        try {
+            if (selectedFiles.length === 1) {
+                // 선택한 파일이 1개일 경우 개별 파일 다운로드
+                console.log(selectedFiles[0].url);
+                saveAs(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
+            } else if (selectedFiles.length > 1) {
+                // 파일명을 역순으로 정렬
+                const sortedFiles = selectedFiles.slice().sort((a, b) => b.name.localeCompare(a.name));
+                
+                // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
+                const mergedPdf = await PDFDocument.create();
+                const pdfPromises = sortedFiles.map((file) => fetch(file.url).then((response) => response.arrayBuffer()));
+                const pdfArrayBuffers = await Promise.all(pdfPromises);
 
-            for (const pdfBuffer of pdfArrayBuffers) {
-                const pdfDoc = await PDFDocument.load(pdfBuffer);
-                const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
-                pages.forEach((page) => mergedPdf.addPage(page));
+                for (const pdfBuffer of pdfArrayBuffers) {
+                    const pdfDoc = await PDFDocument.load(pdfBuffer);
+                    const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
+                    pages.forEach((page) => mergedPdf.addPage(page));
+                }
+
+                const mergedPdfBytes = await mergedPdf.save();
+                const mergedPdfBlob = new Blob([mergedPdfBytes], {type: 'application/pdf'});
+                const downloadLink = URL.createObjectURL(mergedPdfBlob);
+                const a = document.createElement('a');
+                a.href = downloadLink;
+                a.download = 'merged.pdf';
+                a.click();
+                URL.revokeObjectURL(downloadLink);
             }
-
-            const mergedPdfBytes = await mergedPdf.save();
-            const mergedPdfBlob = new Blob([mergedPdfBytes], {type: 'application/pdf'});
-            const downloadLink = URL.createObjectURL(mergedPdfBlob);
-            const a = document.createElement('a');
-            a.href = downloadLink;
-            a.download = 'merged.pdf';
-            a.click();
-            URL.revokeObjectURL(downloadLink);
+        } catch(error) {
+            alert("An error occurred during the PDF download and merge process: ", error);
         }
     };
 
