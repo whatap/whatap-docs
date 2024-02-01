@@ -26,7 +26,6 @@ export default function PDFDownloads({typeName, pdfList}) {
     const handleDownload = async () => {
         if (selectedFiles.length === 1) {
             // 선택한 파일이 1개일 경우 개별 파일 다운로드
-            console.log(selectedFiles[0].url);
             saveAs(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
         } else if (selectedFiles.length > 1) {
             // 파일명을 역순으로 정렬
