@@ -2977,15 +2977,15 @@
   },
   "create-project-v2-browser-en.png": {
     "width": 1200,
-    "height": 734
+    "height": 665
   },
   "create-project-v2-browser-ja.png": {
     "width": 1200,
-    "height": 734
+    "height": 632
   },
   "create-project-v2-browser.png": {
     "width": 1200,
-    "height": 728
+    "height": 656
   },
   "create-project-v2-cloud-en.png": {
     "width": 800,
@@ -9237,15 +9237,15 @@
   },
   "npm-dashboad-network-topology-chart-en.png": {
     "width": 1200,
-    "height": 1055
+    "height": 905
   },
   "npm-dashboad-network-topology-chart-ja.png": {
     "width": 1200,
-    "height": 1055
+    "height": 904
   },
   "npm-dashboad-network-topology-chart.png": {
     "width": 1200,
-    "height": 1055
+    "height": 905
   },
   "npm-dashboad-network-topology-en.png": {
     "width": 1200,
