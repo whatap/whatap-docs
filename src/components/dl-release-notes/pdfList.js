@@ -2,193 +2,193 @@ const svList = [
     {
         "name": 'Service-2.0.x',
         "date": '2024-01-19',
-        "url": '/pdf/release-notes/service-2.0.x.pdf',
+        "url": 'http://img.whatap.io/24/02/01/065728service-20x.pdf',
         "docs": '/release-notes/service/service-2_0_x'
     },
     {
         "name": 'Service-1.114.x',
         "date": '2023-12-21',
-        "url": '/pdf/release-notes/service-1.114.x.pdf',
+        "url": 'http://img.whatap.io/24/02/01/065728service-1114x.pdf',
         "docs": '/release-notes/service/service-1_114_x'
     },
     {
         "name": 'Service-1.112.x',
         "date": '2023-11-17',
-        "url": '/pdf/release-notes/service-1.112.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1112x.pdf',
         "docs": '/release-notes/service/service-1_112_x'
     },
     {
         "name": 'Service-1.110.x',
         "date": '2023-10-25',
-        "url": '/pdf/release-notes/service-1.110.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1100x.pdf',
         "docs": '/release-notes/service/service-1_110_x'
     },
     {
         "name": 'Service-1.108.x',
         "date": '2023-09-21',
-        "url": '/pdf/release-notes/service-1.108.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1108x.pdf',
         "docs": '/release-notes/service/service-1_108_x'
     },
     {
         "name": 'Service-1.106.x',
         "date": '2023-07-26',
-        "url": '/pdf/release-notes/service-1.106.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1106x.pdf',
         "docs": '/release-notes/service/service-1_106_x'
     },
     {
         "name": 'Service-1.104.x',
         "date": '2023-06-28',
-        "url": '/pdf/release-notes/service-1.104.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1104x.pdf',
         "docs": '/release-notes/service/service-1_104_x'
     },
     {
         "name": 'Service-1.102.x',
         "date": '2023-05-24',
-        "url": '/pdf/release-notes/service-1.102.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1102x.pdf',
         "docs": '/release-notes/service/service-1_102_x'
     },
     {
         "name": 'Service-1.100.x',
         "date": '2023-04-26',
-        "url": '/pdf/release-notes/service-1.100.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-1100x.pdf',
         "docs": '/release-notes/service/service-1_100_x'
     },
     {
         "name": 'Service-1.98.x',
         "date": '2023-03-29',
-        "url": '/pdf/release-notes/service-1.98.x.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065728service-198x.pdf',
         "docs": '/release-notes/service/service-1_98_x'
     },
     {
         "name": 'Service-1.96.0',
         "date": '2023-02-22',
-        "url": '/pdf/release-notes/service-1.96.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1960.pdf',
         "docs": '/release-notes/service/service-1_96_0'
     },
     {
         "name": 'Service-1.94.0',
         "date": '2023-01-11',
-        "url": '/pdf/release-notes/service-1.94.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1940.pdf',
         "docs": '/release-notes/service/service-1_94_0'
     },
     {
         "name": 'Service-1.92.0',
         "date": '2022-11-24',
-        "url": '/pdf/release-notes/service-1.92.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1920.pdf',
         "docs": '/release-notes/service/service-1_92_0'
     },
     {
         "name": 'Service-1.90.0',
         "date": '2022-10-18',
-        "url": '/pdf/release-notes/service-1.90.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1900.pdf',
         "docs": '/release-notes/service/service-1_90_0'
     },
     {
         "name": 'Service-1.88.0',
         "date": '2022-09-28',
-        "url": '/pdf/release-notes/service-1.88.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1880.pdf',
         "docs": '/release-notes/service/service-1_88_0'
     },
     {
         "name": 'Service-1.86.0',
         "date": '2022-09-14',
-        "url": '/pdf/release-notes/service-1.86.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1860.pdf',
         "docs": '/release-notes/service/service-1_86_0'
     },
     {
         "name": 'Service-1.84.0',
         "date": '2022-08-24',
-        "url": '/pdf/release-notes/service-1.84.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1840.pdf',
         "docs": '/release-notes/service/service-1_84_0'
     },
     {
         "name": 'Service-1.82.0',
         "date": '2022-07-27',
-        "url": '/pdf/release-notes/service-1.82.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1820.pdf',
         "docs": '/release-notes/service/service-1_82_0'
     },
     {
         "name": 'Service-1.80.0',
         "date": '2022-07-13',
-        "url": '/pdf/release-notes/service-1.80.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1800.pdf',
         "docs": '/release-notes/service/service-1_80_0'
     },
     {
         "name": 'Service-1.78.0',
         "date": '2022-06-22',
-        "url": '/pdf/release-notes/service-1.78.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1780.pdf',
         "docs": '/release-notes/service/service-1_78_0'
     },
     {
         "name": 'Service-1.76.0',
         "date": '2022-06-08',
-        "url": '/pdf/release-notes/service-1.76.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1760.pdf',
         "docs": '/release-notes/service/service-1_76_0'
     },
     {
         "name": 'Service-1.74.0',
         "date": '2022-05-25',
-        "url": '/pdf/release-notes/service-1.74.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1740.pdf',
         "docs": '/release-notes/service/service-1_74_0'
     },
     {
         "name": 'Service-1.72.0',
         "date": '2022-05-11',
-        "url": '/pdf/release-notes/service-1.72.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065727service-1720.pdf',
         "docs": '/release-notes/service/service-1_72_0'
     },
     {
         "name": 'Service-1.70.0',
         "date": '2022-04-20',
-        "url": '/pdf/release-notes/service-1.70.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1700.pdf',
         "docs": '/release-notes/service/service-1_70_0'
     },
     {
         "name": 'Service-1.68.0',
         "date": '2022-04-06',
-        "url": '/pdf/release-notes/service-1.68.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1680.pdf',
         "docs": '/release-notes/service/service-1_68_0'
     },
     {
         "name": 'Service-1.66.0',
         "date": '2022-03-23',
-        "url": '/pdf/release-notes/service-1.66.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1660.pdf',
         "docs": '/release-notes/service/service-1_66_0'
     },
     {
         "name": 'Service-1.64.0',
         "date": '2022-03-09',
-        "url": '/pdf/release-notes/service-1.64.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1640.pdf',
         "docs": '/release-notes/service/service-1_64_0'
     },
     {
         "name": 'Service-1.62.0',
         "date": '2022-02-20',
-        "url": '/pdf/release-notes/service-1.62.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1620.pdf',
         "docs": '/release-notes/service/service-1_62_0'
     },
     {
         "name": 'Service-1.60.0',
         "date": '2022-02-09',
-        "url": '/pdf/release-notes/service-1.60.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1600.pdf',
         "docs": '/release-notes/service/service-1_60_0'
     },
     {
         "name": 'Service-1.58.0',
         "date": '2022-01-19',
-        "url": '/pdf/release-notes/service-1.58.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1580.pdf',
         "docs": '/release-notes/service/service-1_58_0'
     },
     {
         "name": 'Service-1.56.0',
         "date": '2022-01-05',
-        "url": '/pdf/release-notes/service-1.56.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1560.pdf',
         "docs": '/release-notes/service/service-1_56_0'
     },
     {
         "name": 'Service-1.54.0',
         "date": '2021-12-28',
-        "url": '/pdf/release-notes/service-1.54.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065726service-1540.pdf',
         "docs": '/release-notes/service/service-1_54_0'
     },
     // 추가적인 PDF 파일들을 원하는 만큼 목록에 추가할 수 있습니다.
@@ -198,73 +198,73 @@ const javaList = [
     {
         "name": 'Java-agent-v2.2.26',
         "date": '2024-01-11',
-        "url": '/pdf/release-notes/java-agent-v2.2.26.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2226.pdf',
         "docs": '/release-notes/java/java-2_2_26',
     },
     {
         "name": 'Java-agent-v2.2.25',
         "date": '2023-12-20',
-        "url": '/pdf/release-notes/java-agent-v2.2.25.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2225.pdf',
         "docs": '/release-notes/java/java-2_2_25',
     },
     {
         "name": 'Java-agent-v2.2.24',
         "date": '2023-11-30',
-        "url": '/pdf/release-notes/java-agent-v2.2.24.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2224.pdf',
         "docs": '/release-notes/java/java-2_2_24',
     },
     {
         "name": 'Java-agent-v2.2.23',
         "date": '2023-11-22',
-        "url": '/pdf/release-notes/java-agent-v2.2.23.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2223.pdf',
         "docs": '/release-notes/java/java-2_2_23',
     },
     {
         "name": 'Java-agent-v2.2.22',
         "date": '2023-11-16',
-        "url": '/pdf/release-notes/java-agent-v2.2.22.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2222.pdf',
         "docs": '/release-notes/java/java-2_2_22',
     },
     {
         "name": 'Java-agent-v2.2.21',
         "date": '2023-11-02',
-        "url": '/pdf/release-notes/java-agent-v2.2.21.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2221.pdf',
         "docs": '/release-notes/java/java-2_2_21',
     },
     {
         "name": 'Java-agent-v2.2.20',
         "date": '2023-10-19',
-        "url": '/pdf/release-notes/java-agent-v2.2.20.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2220.pdf',
         "docs": '/release-notes/java/java-2_2_20',
     },
     {
         "name": 'Java-agent-v2.2.19',
         "date": '2023-10-10',
-        "url": '/pdf/release-notes/java-agent-v2.2.19.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2219.pdf',
         "docs": '/release-notes/java/java-2_2_19',
     },
     {
         "name": 'Java-agent-v2.2.18',
         "date": '2023-09-26',
-        "url": '/pdf/release-notes/java-agent-v2.2.18.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2218.pdf',
         "docs": '/release-notes/java/java-2_2_18',
     },
     {
         "name": 'Java-agent-v2.2.17',
         "date": '2023-09-18',
-        "url": '/pdf/release-notes/java-agent-v2.2.17.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2217.pdf',
         "docs": '/release-notes/java/java-2_2_17',
     },
     {
         "name": 'Java-agent-v2.2.16',
         "date": '2023-09-08',
-        "url": '/pdf/release-notes/java-agent-v2.2.16.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2216.pdf',
         "docs": '/release-notes/java/java-2_2_16',
     },
     {
         "name": 'Java-agent-v2.2.15',
         "date": '2023-08-31',
-        "url": '/pdf/release-notes/java-agent-v2.2.15.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2215.pdf',
         "docs": '/release-notes/java/java-2_2_15',
     },
     {
