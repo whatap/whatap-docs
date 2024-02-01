@@ -317,7 +317,7 @@ const metadata = {
     "unversionedId": "release-notes/python/python-previous",
     "id": "release-notes/python/python-previous",
     "title": "Python Agent 지난 버전",
-    "description": "* Python Agent v1.4.1",
+    "description": "* Python Agent v1.4.2",
     "source": "@site/docs/release-notes/python/python-previous.mdx",
     "sourceDirName": "release-notes/python",
     "slug": "/release-notes/python/python-previous",
@@ -333,8 +333,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Python Agent v1.4.2",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_2"
+        "title": "Python Agent v1.4.3",
+        "permalink": "/whatap-docs/release-notes/python/python-1_4_3"
     },
     "next": {
         "title": ".NET Agent v2.2.0",
@@ -355,6 +355,13 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
+        parentName: "p",
+        "href": "python-1_4_2"
+    }, `Python Agent v1.4.2`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"

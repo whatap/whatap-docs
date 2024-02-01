@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37663],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[95812],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 42636:
+/***/ 11687:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,30 +308,30 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_5_4',
-    title: 'Python Agent v1.5.4',
+    id: 'python-1_5_5',
+    title: 'Python Agent v1.5.5',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_5_3'
+    pagination_next: 'release-notes/python/python-1_5_4'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_5_4",
-    "id": "release-notes/python/python-1_5_4",
-    "title": "Python Agent v1.5.4",
-    "description": "2024년 01월 09일",
-    "source": "@site/docs/release-notes/python/python-1.5.4.mdx",
+    "unversionedId": "release-notes/python/python-1_5_5",
+    "id": "release-notes/python/python-1_5_5",
+    "title": "Python Agent v1.5.5",
+    "description": "2024년 02월 01일",
+    "source": "@site/docs/release-notes/python/python-1.5.5.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_5_4",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_4",
+    "slug": "/release-notes/python/python-1_5_5",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_5",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.5.4.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.5.5.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_5_4",
-        "title": "Python Agent v1.5.4",
+        "id": "python-1_5_5",
+        "title": "Python Agent v1.5.5",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_5_3"
+        "pagination_next": "release-notes/python/python-1_5_4"
     },
     "sidebar": "releaseSidebar",
     "previous": {
@@ -339,8 +339,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
     },
     "next": {
-        "title": "Python Agent v1.5.3",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_3"
+        "title": "Python Agent v1.5.4",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_4"
     }
 };
 const assets = {};
@@ -361,20 +361,16 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 09일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 02월 01일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " Frappe 프레임워크로 개발된 애플리케이션에서 데이터베이스 연결 정보에 인스턴스(DB) 정보가 없으면 성능 수집 오류가 발생하는 현상 개선", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.5.4/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " Python 에이전트 v1.4.9 버전 이상에서 일부 파이썬 버전의 모듈 의존성 수집 오류 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, `Python 3.6`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
-        parentName: "ul"
-    }, `Python 3.7`)));
+        "href": "https://pypi.org/project/whatap-python/1.5.5/"
+    }, `whatap-python · PyPI`))));
 }
 MDXContent.isMDXComponent = true;
 

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[65007],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37663],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 28016:
+/***/ 42636:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,49 +308,43 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_4_2',
-    title: 'Python Agent v1.4.2',
+    id: 'python-1_5_4',
+    title: 'Python Agent v1.5.4',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_4_1'
+    pagination_next: 'release-notes/python/python-1_5_3'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_4_2",
-    "id": "release-notes/python/python-1_4_2",
-    "title": "Python Agent v1.4.2",
-    "description": "2023년 7월 12일",
-    "source": "@site/docs/release-notes/python/python-1.4.2.mdx",
+    "unversionedId": "release-notes/python/python-1_5_4",
+    "id": "release-notes/python/python-1_5_4",
+    "title": "Python Agent v1.5.4",
+    "description": "2024년 01월 09일",
+    "source": "@site/docs/release-notes/python/python-1.5.4.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_4_2",
-    "permalink": "/whatap-docs/release-notes/python/python-1_4_2",
+    "slug": "/release-notes/python/python-1_5_4",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_4",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.4.2.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.5.4.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_4_2",
-        "title": "Python Agent v1.4.2",
+        "id": "python-1_5_4",
+        "title": "Python Agent v1.5.4",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_4_1"
+        "pagination_next": "release-notes/python/python-1_5_3"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Python Agent v1.4.3",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_3"
+        "title": "Python Agent v1.5.5",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_5"
     },
     "next": {
-        "title": "Python Agent v1.4.1",
-        "permalink": "/whatap-docs/release-notes/python/python-1_4_1"
+        "title": "Python Agent v1.5.3",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_3"
     }
 };
 const assets = {};
-const toc = [
-    {
-        value: '2023년 7월 12일',
-        id: '2023년-7월-12일',
-        level: 4
-    }
-];
+const toc = [];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("div", props);
@@ -367,18 +361,20 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h4", {
-        "id": "2023년-7월-12일"
-    }, `2023년 7월 12일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `2024년 01월 09일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.4.2/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
+        "href": "https://pypi.org/project/whatap-python/1.5.4/"
+    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " fastapi에서 active status가 비정상적으로 집계되는 현상 수정"));
+    }, "Fixed"), " Python 에이전트 v1.4.9 버전 이상에서 일부 파이썬 버전의 모듈 의존성 수집 오류 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Python 3.6`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+        parentName: "ul"
+    }, `Python 3.7`)));
 }
 MDXContent.isMDXComponent = true;
 
