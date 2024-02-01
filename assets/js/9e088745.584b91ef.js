@@ -52,34 +52,37 @@ function PDFDownloads({ typeName, pdfList: pdfList1 }) {
         }
     };
     const handleDownload = async ()=>{
-        if (selectedFiles.length === 1) {
-            // 선택한 파일이 1개일 경우 개별 파일 다운로드
-            console.log(selectedFiles[0].url);
-            (0,FileSaver_min.saveAs)(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
-        } else if (selectedFiles.length > 1) {
-            // 파일명을 역순으로 정렬
-            const sortedFiles = selectedFiles.slice().sort((a, b)=>b.name.localeCompare(a.name));
-            // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
-            const mergedPdf = await es.PDFDocument.create();
-            const pdfPromises = sortedFiles.map((file)=>fetch(file.url).then((response)=>response.arrayBuffer()));
-            const pdfArrayBuffers = await Promise.all(pdfPromises);
-            for (const pdfBuffer of pdfArrayBuffers){
-                const pdfDoc = await es.PDFDocument.load(pdfBuffer);
-                const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
-                pages.forEach((page)=>mergedPdf.addPage(page));
+        try {
+            if (selectedFiles.length === 1) {
+                // 선택한 파일이 1개일 경우 개별 파일 다운로드
+                (0,FileSaver_min.saveAs)(selectedFiles[0].url, selectedFiles[0].name + '.pdf');
+            } else if (selectedFiles.length > 1) {
+                // 파일명을 역순으로 정렬
+                const sortedFiles = selectedFiles.slice().sort((a, b)=>b.name.localeCompare(a.name));
+                // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
+                const mergedPdf = await es.PDFDocument.create();
+                const pdfPromises = sortedFiles.map((file)=>fetch(file.url).then((response)=>response.arrayBuffer()));
+                const pdfArrayBuffers = await Promise.all(pdfPromises);
+                for (const pdfBuffer of pdfArrayBuffers){
+                    const pdfDoc = await es.PDFDocument.load(pdfBuffer);
+                    const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
+                    pages.forEach((page)=>mergedPdf.addPage(page));
+                }
+                const mergedPdfBytes = await mergedPdf.save();
+                const mergedPdfBlob = new Blob([
+                    mergedPdfBytes
+                ], {
+                    type: 'application/pdf'
+                });
+                const downloadLink = URL.createObjectURL(mergedPdfBlob);
+                const a = document.createElement('a');
+                a.href = downloadLink;
+                a.download = 'merged.pdf';
+                a.click();
+                URL.revokeObjectURL(downloadLink);
             }
-            const mergedPdfBytes = await mergedPdf.save();
-            const mergedPdfBlob = new Blob([
-                mergedPdfBytes
-            ], {
-                type: 'application/pdf'
-            });
-            const downloadLink = URL.createObjectURL(mergedPdfBlob);
-            const a = document.createElement('a');
-            a.href = downloadLink;
-            a.download = 'merged.pdf';
-            a.click();
-            URL.revokeObjectURL(downloadLink);
+        } catch (error) {
+            alert("An error occurred during the PDF download and merge process: ", error);
         }
     };
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
@@ -501,109 +504,109 @@ const javaList = [
     {
         "name": 'Java-agent-v2.2.14',
         "date": '2023-08-17',
-        "url": '/pdf/release-notes/java-agent-v2.2.14.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2214.pdf',
         "docs": '/release-notes/java/java-2_2_14'
     },
     {
         "name": 'Java-agent-v2.2.13',
         "date": '2023-08-08',
-        "url": '/pdf/release-notes/java-agent-v2.2.13.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2213.pdf',
         "docs": '/release-notes/java/java-2_2_13'
     },
     {
         "name": 'Java-agent-v2.2.12',
         "date": '2023-07-21',
-        "url": '/pdf/release-notes/java-agent-v2.2.12.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065717java-agent-v2212.pdf',
         "docs": '/release-notes/java/java-2_2_12'
     },
     {
         "name": 'Java-agent-v2.2.11',
         "date": '2023-07-10',
-        "url": '/pdf/release-notes/java-agent-v2.2.11.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v2211.pdf',
         "docs": '/release-notes/java/java-2_2_11'
     },
     {
         "name": 'Java-agent-v2.2.10',
         "date": '2023-06-29',
-        "url": '/pdf/release-notes/java-agent-v2.2.10.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v2210.pdf',
         "docs": '/release-notes/java/java-2_2_10'
     },
     {
         "name": 'Java-agent-v2.2.09',
         "date": '2023-06-16',
-        "url": '/pdf/release-notes/java-agent-v2.2.9.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v229.pdf',
         "docs": '/release-notes/java/java-2_2_9'
     },
     {
         "name": 'Java-agent-v2.2.08',
         "date": '2023-06-09',
-        "url": '/pdf/release-notes/java-agent-v2.2.8.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v228.pdf',
         "docs": '/release-notes/java/java-2_2_8'
     },
     {
         "name": 'Java-agent-v2.2.07',
         "date": '2023-06-05',
-        "url": '/pdf/release-notes/java-agent-v2.2.7.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v227.pdf',
         "docs": '/release-notes/java/java-2_2_7'
     },
     {
         "name": 'Java-agent-v2.2.06',
         "date": '2023-06-01',
-        "url": '/pdf/release-notes/java-agent-v2.2.6.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v226.pdf',
         "docs": '/release-notes/java/java-2_2_6'
     },
     {
         "name": 'Java-agent-v2.2.05',
         "date": '2023-05-30',
-        "url": '/pdf/release-notes/java-agent-v2.2.5.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v225.pdf',
         "docs": '/release-notes/java/java-2_2_5'
     },
     {
         "name": 'Java-agent-v2.2.04',
         "date": '2023-05-25',
-        "url": '/pdf/release-notes/java-agent-v2.2.4.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v224.pdf',
         "docs": '/release-notes/java/java-2_2_4'
     },
     {
         "name": 'Java-agent-v2.2.03',
         "date": '2023-02-14',
-        "url": '/pdf/release-notes/java-agent-v2.2.3.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v223.pdf',
         "docs": '/release-notes/java/java-2_2_3'
     },
     {
         "name": 'Java-agent-v2.2.02',
         "date": '2022-12-21',
-        "url": '/pdf/release-notes/java-agent-v2.2.2.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v222.pdf',
         "docs": '/release-notes/java/java-2_2_2'
     },
     {
         "name": 'Java-agent-v2.2.0',
         "date": '2022-11-01',
-        "url": '/pdf/release-notes/java-agent-v2.2.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v220.pdf',
         "docs": '/release-notes/java/java-2_2_0'
     },
     {
         "name": 'Java-agent-v2.1.3',
         "date": '2022-09-01',
-        "url": '/pdf/release-notes/java-agent-v2.1.3.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065716java-agent-v213.pdf',
         "docs": '/release-notes/java/java-2_1_3'
     },
     {
         "name": 'Java-agent-v2.1.2',
         "date": '2022-08-01',
-        "url": '/pdf/release-notes/java-agent-v2.1.2.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065715java-agent-v212.pdf',
         "docs": '/release-notes/java/java-2_1_2'
     },
     {
         "name": 'Java-agent-v2.1.1',
         "date": '2022-07-12',
-        "url": '/pdf/release-notes/java-agent-v2.1.1.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065715java-agent-v211.pdf',
         "docs": '/release-notes/java/java-2_1_1'
     },
     {
         "name": 'Java-agent-v2.1.0',
         "date": '2022-12-15',
-        "url": '/pdf/release-notes/java-agent-v2.1.0.pdf',
+        "url": 'https://img.whatap.io/24/02/01/065715java-agent-v210.pdf',
         "docs": '/release-notes/java/java-2_1_0'
     }
 ];
@@ -611,25 +614,25 @@ const javaBatchList = [
     {
         "name": "java-batch-agent-v2.2.22",
         "date": "2023-12-20",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.22.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2222.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_22"
     },
     {
         "name": "java-batch-agent-v2.2.21",
         "date": "2023-11-23",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.21.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2221.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_21"
     },
     {
         "name": "java-batch-agent-v2.2.20",
         "date": "2023-10-19",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.20.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2220.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_20"
     },
     {
         "name": "java-batch-agent-v2.2.19",
         "date": "2023-10-10",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.19.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2219.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_19"
     }
 ];
