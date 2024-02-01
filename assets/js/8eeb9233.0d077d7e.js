@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[35978],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[26729],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 92237:
+/***/ 58369:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '트랜잭션 맵',
     description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
     tags: [
-        '.NET',
+        'PHP',
         '트랜잭션 맵',
         '대시보드',
         '애플리케이션'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/dashboard-transactionmap",
-    "id": "dotnet/dashboard-transactionmap",
+    "unversionedId": "php/dashboard-transactionmap",
+    "id": "php/dashboard-transactionmap",
     "title": "트랜잭션 맵",
     "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
-    "source": "@site/docs/dotnet/dashboard-transactionmap.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/dashboard-transactionmap",
-    "permalink": "/whatap-docs/dotnet/dashboard-transactionmap",
+    "source": "@site/docs/php/dashboard-transactionmap.mdx",
+    "sourceDirName": "php",
+    "slug": "/php/dashboard-transactionmap",
+    "permalink": "/whatap-docs/php/dashboard-transactionmap",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/dashboard-transactionmap.mdx",
+    "editUrl": "undefined/docs/php/dashboard-transactionmap.mdx",
     "tags": [
         {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
+            "label": "PHP",
+            "permalink": "/whatap-docs/tags/php"
         },
         {
             "label": "트랜잭션 맵",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "트랜잭션 맵",
         "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
         "tags": [
-            ".NET",
+            "PHP",
             "트랜잭션 맵",
             "대시보드",
             "애플리케이션"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "phpSidebar",
     "previous": {
         "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/dotnet/dashboard-hitmap-trace"
+        "permalink": "/whatap-docs/php/dashboard-hitmap-trace"
     },
     "next": {
         "title": "액티브 트랜잭션",
-        "permalink": "/whatap-docs/dotnet/dashboard-active-transaction"
+        "permalink": "/whatap-docs/php/dashboard-active-transaction"
     }
 };
 const assets = {};
@@ -448,7 +448,7 @@ function MDXContent(_param) {
         sid: "hitmap",
         className: "uitext",
         mdxType: "Cmdname"
-    }), "은 5분 단위로 트랜잭션을 그룹화해서 보여주지만 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), "은 5초 단위로 트랜잭션을 그룹화해서 보여주지만 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "transaction_map",
         className: "uitext",
         mdxType: "Cmdname"

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[45841],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[32164],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 5710:
+/***/ 40397:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '트랜잭션 맵',
     description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
     tags: [
-        'Java',
+        'Golnag',
         '트랜잭션 맵',
         '대시보드',
         '애플리케이션'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "java/dashboard-transactionmap",
-    "id": "java/dashboard-transactionmap",
+    "unversionedId": "golang/dashboard-transactionmap",
+    "id": "golang/dashboard-transactionmap",
     "title": "트랜잭션 맵",
     "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
-    "source": "@site/docs/java/dashboard-transactionmap.mdx",
-    "sourceDirName": "java",
-    "slug": "/java/dashboard-transactionmap",
-    "permalink": "/whatap-docs/java/dashboard-transactionmap",
+    "source": "@site/docs/golang/dashboard-transactionmap.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/dashboard-transactionmap",
+    "permalink": "/whatap-docs/golang/dashboard-transactionmap",
     "draft": false,
-    "editUrl": "undefined/docs/java/dashboard-transactionmap.mdx",
+    "editUrl": "undefined/docs/golang/dashboard-transactionmap.mdx",
     "tags": [
         {
-            "label": "Java",
-            "permalink": "/whatap-docs/tags/java"
+            "label": "Golnag",
+            "permalink": "/whatap-docs/tags/golnag"
         },
         {
             "label": "트랜잭션 맵",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "트랜잭션 맵",
         "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
         "tags": [
-            "Java",
+            "Golnag",
             "트랜잭션 맵",
             "대시보드",
             "애플리케이션"
         ]
     },
-    "sidebar": "javaSidebar",
+    "sidebar": "goSidebar",
     "previous": {
         "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/java/dashboard-hitmap-trace"
+        "permalink": "/whatap-docs/golang/dashboard-hitmap-trace"
     },
     "next": {
         "title": "액티브 트랜잭션",
-        "permalink": "/whatap-docs/java/dashboard-active-transaction"
+        "permalink": "/whatap-docs/golang/dashboard-active-transaction"
     }
 };
 const assets = {};
@@ -448,7 +448,7 @@ function MDXContent(_param) {
         sid: "hitmap",
         className: "uitext",
         mdxType: "Cmdname"
-    }), "은 5분 단위로 트랜잭션을 그룹화해서 보여주지만 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
+    }), "은 5초 단위로 트랜잭션을 그룹화해서 보여주지만 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(Cmdname, {
         sid: "transaction_map",
         className: "uitext",
         mdxType: "Cmdname"

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[51199],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[67533],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 94053:
+/***/ 8071:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,26 +312,26 @@ const frontMatter = {
     title: '유형별 토폴로지',
     description: '유형별 토폴로지에서 제공하는 기능을 알아봅니다.',
     tags: [
-        'Go',
+        'Node.js',
         '토폴로지'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/topology-type",
-    "id": "golang/topology-type",
+    "unversionedId": "nodejs/topology-type",
+    "id": "nodejs/topology-type",
     "title": "유형별 토폴로지",
     "description": "유형별 토폴로지에서 제공하는 기능을 알아봅니다.",
-    "source": "@site/docs/golang/topology-type.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/topology-type",
-    "permalink": "/whatap-docs/golang/topology-type",
+    "source": "@site/docs/nodejs/topology-type.mdx",
+    "sourceDirName": "nodejs",
+    "slug": "/nodejs/topology-type",
+    "permalink": "/whatap-docs/nodejs/topology-type",
     "draft": false,
-    "editUrl": "undefined/docs/golang/topology-type.mdx",
+    "editUrl": "undefined/docs/nodejs/topology-type.mdx",
     "tags": [
         {
-            "label": "Go",
-            "permalink": "/whatap-docs/tags/go"
+            "label": "Node.js",
+            "permalink": "/whatap-docs/tags/node-js"
         },
         {
             "label": "토폴로지",
@@ -344,18 +344,18 @@ const metadata = {
         "title": "유형별 토폴로지",
         "description": "유형별 토폴로지에서 제공하는 기능을 알아봅니다.",
         "tags": [
-            "Go",
+            "Node.js",
             "토폴로지"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "nodejsSidebar",
     "previous": {
         "title": "기본 사용법",
-        "permalink": "/whatap-docs/golang/topology-basic"
+        "permalink": "/whatap-docs/nodejs/topology-basic"
     },
     "next": {
         "title": "부가 기능",
-        "permalink": "/whatap-docs/golang/topology-add-function"
+        "permalink": "/whatap-docs/nodejs/topology-add-function"
     }
 };
 const assets = {};
@@ -434,15 +434,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `그룹 통계 토폴로지`)), ` (`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `통계/보고서`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `토폴로지`)), `)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
+    }, `그룹 통계 토폴로지`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", {
         parentName: "li"
@@ -521,15 +513,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `인스턴스 토폴로지`)), ` (`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `대시보드`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `토폴로지`)), `)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
+    }, `인스턴스 토폴로지`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
@@ -563,15 +547,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
         parentName: "strong"
-    }, `Netstat 토폴로지`)), ` (`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `대시보드`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("em", {
-        parentName: "strong"
-    }, `토폴로지`)), `)`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `프로젝트에 포함된 애플리케이션과 애플리케이션의 리스닝 정보, 아웃바운드 호출 정보를 노드로 표현합니다. 리스닝 포트와의 관계는 직선으로 아웃바운드 호출 정보와의 관계는 곡선으로 표현합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
+    }, `Netstat 토폴로지`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p", null, `프로젝트에 포함된 애플리케이션과 애플리케이션의 리스닝 정보, 아웃바운드 호출 정보를 노드로 표현합니다. 리스닝 포트와의 관계는 직선으로 아웃바운드 호출 정보와의 관계는 곡선으로 표현합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(ImgLang, {
         img: "netstat-topology.png",
         desc: "Netstat 토폴로지",
         mdxType: "ImgLang"
