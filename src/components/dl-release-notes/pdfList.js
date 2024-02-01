@@ -381,25 +381,25 @@ const javaBatchList = [
     {
         "name": "java-batch-agent-v2.2.22",
         "date": "2023-12-20",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.22.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2222.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_22",
     },
     {
         "name": "java-batch-agent-v2.2.21",
         "date": "2023-11-23",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.21.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2221.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_21",
     },
     {
         "name": "java-batch-agent-v2.2.20",
         "date": "2023-10-19",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.20.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2220.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_20",
     },
     {
         "name": "java-batch-agent-v2.2.19",
         "date": "2023-10-10",
-        "url": "/pdf/release-notes/java-batch-agent-v2.2.19.pdf",
+        "url": "https://img.whatap.io/24/02/01/065717java-batch-agent-v2219.pdf",
         "docs": "/release-notes/java-batch/java-batch-2_2_19",
     }
 ]
