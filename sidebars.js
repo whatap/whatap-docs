@@ -3351,17 +3351,18 @@ const sidebars = {
               label: 'XOS',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/db/xos-1_1_6j',
+                id: 'release-notes/db/xos-1_1_8a',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/xos-1_1_6j',
-                  // className: 'new',
+                  id: 'release-notes/db/xos-1_1_8a',
+                  className: 'new',
                 },
+                'release-notes/db/xos-1_1_6j',
                 'release-notes/db/xos-1_1_6g',
                 'release-notes/db/xos-1_1_4',
                 'release-notes/db/xos-1_1_3b',
@@ -3370,7 +3371,6 @@ const sidebars = {
                 'release-notes/db/xos-1_1_1b',
                 'release-notes/db/xos-1_1_1a',
                 'release-notes/db/xos-1_1_1',
-                'release-notes/db/xos-1_1_0b',
                 'release-notes/db/xos-previous',
               ]
             },
