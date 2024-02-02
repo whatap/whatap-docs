@@ -3,6 +3,7 @@ import { saveAs } from 'file-saver';
 import { PDFDocument } from 'pdf-lib';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function PDFDownloads({typeName, pdfList}) {
     const [selectedFiles, setSelectedFiles] = useState([]);
@@ -24,6 +25,7 @@ export default function PDFDownloads({typeName, pdfList}) {
     };
 
     const handleDownload = async () => {
+        const corsproxy = "https://corsproxy.io/?";
         try {
             if (selectedFiles.length === 1) {
                 // 선택한 파일이 1개일 경우 개별 파일 다운로드
@@ -31,32 +33,30 @@ export default function PDFDownloads({typeName, pdfList}) {
             } else if (selectedFiles.length > 1) {
                 // 파일명을 역순으로 정렬
                 const sortedFiles = selectedFiles.slice().sort((a, b) => b.name.localeCompare(a.name));
-                
-                // 선택한 파일이 2개 이상일 경우 zip 파일로 압축하여 다운로드
                 const mergedPdf = await PDFDocument.create();
-                const pdfPromises = sortedFiles.map((file) => fetch(file.url).then((response) => response.arrayBuffer()));
+                const pdfPromises = sortedFiles.map((file) => fetch(corsproxy + encodeURIComponent(file.url)).then((response) => response.arrayBuffer()));
                 const pdfArrayBuffers = await Promise.all(pdfPromises);
     
-                    for (const pdfBuffer of pdfArrayBuffers) {
-                        const pdfDoc = await PDFDocument.load(pdfBuffer);
-                        const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
-                        pages.forEach((page) => mergedPdf.addPage(page));
-                    }
-    
-                    const mergedPdfBytes = await mergedPdf.save();
-                    const mergedPdfBlob = new Blob([mergedPdfBytes], {type: 'application/pdf'});
-                    const downloadLink = URL.createObjectURL(mergedPdfBlob);
-                    const a = document.createElement('a');
-                    a.href = downloadLink;
-                    a.download = 'merged.pdf';
-                    a.click();
-                    URL.revokeObjectURL(downloadLink);
+                for (const pdfBuffer of pdfArrayBuffers) {
+                    const pdfDoc = await PDFDocument.load(pdfBuffer);
+                    const pages = await mergedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
+                    pages.forEach((page) => mergedPdf.addPage(page));
                 }
+
+                const mergedPdfBytes = await mergedPdf.save();
+                const mergedPdfBlob = new Blob([mergedPdfBytes], {type: 'application/pdf'});
+                const downloadLink = URL.createObjectURL(mergedPdfBlob);
+                const a = document.createElement('a');
+                a.href = downloadLink;
+                a.download = 'merged.pdf';
+                a.click();
+                URL.revokeObjectURL(downloadLink);
+            }
         } catch(error) {
             alert("An error occurred during the PDF download and merge process: ", error);
         }
     };
-
+    const downIcon = useBaseUrl('/img/ico-download.svg');
     return (
         <>
             <div className={styles.dlList}>
@@ -103,7 +103,7 @@ export default function PDFDownloads({typeName, pdfList}) {
                                 <p>{pdf.date}</p>
                             </td>
                             <td>
-                                <p><img src='/img/ico-download.svg' className={styles.dlIcon}/> <a href={pdf.url}>Download</a></p>
+                                <p><img src={downIcon} className={styles.dlIcon}/> <a href={pdf.url}>Download</a></p>
                             </td>
                         </tr>
                     ))}
