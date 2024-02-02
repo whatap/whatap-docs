@@ -5833,7 +5833,7 @@ function isUndefined(arg) {
         return initialFacetDistribution;
     }
 
-    var PACKAGE_VERSION = '1.0.0';
+    var PACKAGE_VERSION = '0.14.0';
 
     var constructClientAgents = function (clientAgents) {
         if (clientAgents === void 0) { clientAgents = []; }
