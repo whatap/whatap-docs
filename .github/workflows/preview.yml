@@ -16,42 +16,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "YARN_CACHE_DIR=$(yarn cache dir)" >> "${GITHUB_OUTPUT}"
-
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache.outputs.YARN_CACHE_DIR }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-website-
+          cache: npm
 
       - name: update docs
         run: git submodule update --init
-
-      - name: Cache Docusaurus Build
-        uses: actions/cache@v3
-        with:
-          path: node_modules/.cache/webpack
-          key: docusaurus-${{ github.ref_name }}-${{ github.run_id }}
-          restore-keys: |
-            docusaurus-${{ github.ref_name }}
-            docusaurus-main
-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-
       - name: Build website
-        env:
-          NODE_OPTIONS: --max-old-space-size=6144
         run: DOCUSAURUS_SSR_CONCURRENCY=5 yarn build --locale ko --no-minify
+        
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
