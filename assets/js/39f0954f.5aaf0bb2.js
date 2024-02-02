@@ -186,12 +186,12 @@ const toc = [
     },
     {
         value: '쿠버네티스 에이전트 생성',
-        id: '쿠버네티스-에이전트-생성',
+        id: 'create-kubernetes-agent',
         level: 2
     },
     {
         value: '쿠버네티스 에이전트 설치 확인',
-        id: '쿠버네티스-에이전트-설치-확인',
+        id: 'check-kubernetes-agent',
         level: 2
     },
     {
@@ -309,7 +309,7 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \\
         "className": "language-bash"
     }, `oc create -f whatap_openshift_scc.yaml
 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "쿠버네티스-에이전트-생성"
+        "id": "create-kubernetes-agent"
     }, `쿠버네티스 에이전트 생성`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용자의 쿠버네티스 버전과 Container Runtime에 맞는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `YAML`), ` 파일을 다운로드해 에이전트를 생성하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
@@ -391,7 +391,7 @@ kubectl apply -f {whatap_kube_X.YZ.yaml}
     }, `마스터 에이전트 자원 사용은 컨테이너 수 증가에 따라 영향을 받을 수 있습니다.`), ` 기본값으로 설정된 메모리 limit(350MB) 이상으로 자원을 사용할 경우 OOM(Out Of Meomory)이 발생할 수 있습니다. 사용자가 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `YAML`), ` 파일을 통해 해당 설정을 변경할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "쿠버네티스-에이전트-설치-확인"
+        "id": "check-kubernetes-agent"
     }, `쿠버네티스 에이전트 설치 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `쿠버네티스 에이전트 설치가 정상적으로 완료되었을 경우 다음 명령어를 실행해 마스터 에이전트와 노드 에이전트의 상태를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-bash"
