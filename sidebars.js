@@ -5417,6 +5417,21 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                // 'kubernetes/metrics-intro',
+                // 'kubernetes/metrics-chart',
+                // 'kubernetes/metrics-detect-anormal',
+                'kubernetes/trs-view',
+                'kubernetes/multiservice-hitmap',
+                'kubernetes/analysis-msa',
+                'kubernetes/analysis-stack',
+              ],
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -5431,19 +5446,6 @@ const sidebars = {
                 'kubernetes/metrics-detect-anormal',
               ]
             },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                // 'kubernetes/metrics-intro',
-                // 'kubernetes/metrics-chart',
-                // 'kubernetes/metrics-detect-anormal',
-                'kubernetes/analysis-msa',
-                'kubernetes/analysis-stack',
-              ],
-            },
             'kubernetes/log',
             'kubernetes/report-intro',
             'kubernetes/integrated-report',
@@ -5455,10 +5457,9 @@ const sidebars = {
               items: [
                 'kubernetes/dashboard',
                 'kubernetes/dashboard-hitmap-trace',
-                'kubernetes/trs-view',
-                'kubernetes/multiservice-hitmap',
-                'kubernetes/tx-profile',
                 'kubernetes/application-daily-stat',
+                'kubernetes/tx-profile',
+                
               ],
             },
             {
