@@ -638,9 +638,11 @@ function MDXContent(_param) {
         parentName: "p"
     }, `1024`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `누적값을 가지는 필드의 증가 값을 계산하여 별도의 필드를 추가합니다. name.fields 형식으로 지정하고, 여러 개는 콤마(,)로 구분합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, `누적값을 가지는 필드의 증가 값을 계산하여 별도의 필드를 추가합니다. name.fields 형식으로 지정하고, 여러 개는 콤마(,)로 구분합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", {
         parentName: "li"
-    }, `e.g. nginx.accepts,nginx.requests nginx의 accepts, requests 값의 증가 값을 acceptsDelta, requestsDelta 필드 이름으로 추가 전달합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "blockquote"
+    }, `예, nginx.accepts, nginx.requests nginx의 accepts, requests 값의 증가 값을 acceptsDelta, requestsDelta 필드 이름으로 추가 전달합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "로그"
     }, `로그`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
