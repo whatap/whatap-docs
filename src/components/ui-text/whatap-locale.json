@@ -20706,8 +20706,8 @@
     "service_id": "_03030"
   },
   "tag_count": {
-    "en": "Metrics search",
-    "ja": "メトリクス照会",
+    "en": "Metrics Search",
+    "ja": "メトリックス照会",
     "ko": "메트릭스 조회",
     "zh": "Metric Search",
     "service_id": "_03031"
@@ -39543,10 +39543,10 @@
     "service_id": "_05729"
   },
   "terms_of_payment_1": {
-    "en": "When you register your payment information, the <span style='color: #296CF2ed'> service status changes to paid </span> as of the registration date.<br />\n  WhaTap service fee will be charged from next month </span> as used <span style='color: #296CF2'>, and paid with a credit card you registered on the 25th of every month.",
-    "ja": "決済情報を登録すると、登録日を基準に<span style='color:#296CF2ed'>サービス状態がサブスクリプション</span>に変わります。<br/>\nWhatap Monitoringの利用料金は、<span style='color: #296CF2'>利用した分だけが翌月に請求され</span>、情報を登録したクレジットカードで毎月25日に決済されます。",
-    "ko": "결제 정보를 등록하면 등록일 기준으로 <span style='color: #296CF2ed'>서비스 상태가 유료로 변경</span>됩니다.<br />\n와탭 서비스 요금은 <span style='color: #296CF2'>사용한만큼 익월 후불 청구</span>되며, 입력하신 신용카드로 매월 25일 와탭 요금이 결제됩니다.",
-    "zh": "When you register your payment information, the <span style='color: #296CF2ed'> service status changes to paid </span> as of the registration date.<br />\nThe Whatap service fee will be charged after the month of next month </span> as you used <span style='color: #296CF2'>, and the Whatap fee will be paid on the 25th of every month with the credit card you entered.",
+    "en": "WhaTap service fees are <span style='color: #296CF2'>billed in arrears in the following month for the amount used</span>, and WhaTap fees are paid on the 25th of each month using the credit card you entered.",
+    "ja": "Whatap Monitoringの利用料金は、<span style='color: #296CF2'>利用した分だけが翌月に請求され</span>、情報を登録したクレジットカードで毎月25日に決済されます。",
+    "ko": "와탭 서비스 요금은 <span style='color: #296CF2'>사용한만큼 익월 후불 청구</span>되며, 입력하신 신용카드로 매월 25일 와탭 요금이 결제됩니다.",
+    "zh": "WhaTap service fees are <span style='color: #296CF2'>billed in arrears in the following month for the amount used</span>, and WhaTap fees are paid on the 25th of each month using the credit card you entered.",
     "service_id": "_05730"
   },
   "terms_of_payment_2": {
@@ -50771,9 +50771,9 @@
     "service_id": "ITM07369"
   },
   "ITM07370": {
-    "en": "Occurrences (occurs up to N times per minute)",
-    "ja": "回発生（1分に最大N回発生）",
-    "ko": "회 발생 (1분에 최대 N회 발생)",
+    "en": "Occurrences (occurs up to {count} times per minute)",
+    "ja": "回発生（1分に最大{count}回発生）",
+    "ko": "회 발생 (1분에 최대 {count}회 발생)",
     "zh": "Occurrences (occurs up to N times per minute)",
     "service_id": "ITM07370"
   },

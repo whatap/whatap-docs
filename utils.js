@@ -292,6 +292,9 @@ function colsToJson(data){
     "ko": "프로젝트 유료 전환"
   }
 
+  rd["tag_count"].ja = "メトリックス照会";
+  rd["tag_count"].en = "Metrics Search";
+
   return rd;
 }
 
