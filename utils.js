@@ -294,6 +294,8 @@ function colsToJson(data){
 
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
+  rd["tag_count_chart"].ja = "メトリックスチャート";
+  rd["tag_count_chart"].en = "Metrics Chart";
 
   return rd;
 }
