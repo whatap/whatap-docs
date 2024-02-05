@@ -286,6 +286,12 @@ function colsToJson(data){
     "ko": "이벤트 수신 설정"
   }
 
+  rd["projectSubscription"] = {
+    "en": "Project Subscription Status",
+    "ja": "プロジェクト課金状況",
+    "ko": "프로젝트 유료 전환"
+  }
+
   return rd;
 }
 
