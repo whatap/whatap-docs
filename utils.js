@@ -280,6 +280,12 @@ function colsToJson(data){
     "ko": "kube-apiserver 대시보드"
   }
 
+  rd["eventNoti"] = {
+    "en": "Configuration",
+    "ja": "通知設定",
+    "ko": "이벤트 수신 설정"
+  }
+
   return rd;
 }
 
