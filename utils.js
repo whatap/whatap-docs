@@ -294,8 +294,12 @@ function colsToJson(data){
 
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
+
   rd["tag_count_chart"].ja = "メトリックスチャート";
   rd["tag_count_chart"].en = "Metrics Chart";
+
+  rd["tag_count_anomaly_detection"].ja = "メトリックス異常検出";
+  rd["tag_count_anomaly_detection"].en = "Metrics Anomaly Detection";
 
   return rd;
 }
