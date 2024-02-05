@@ -50562,7 +50562,7 @@
   },
   "NTC07340": {
     "en": "You don't have a log license.",
-    "ja": "ログモニタリングのためのライセンスがありません。",
+    "ja": "あなたはログライセンスを持っていない。",
     "ko": "로그 라이선스가 없습니다.",
     "zh": "You don't have a log license.",
     "service_id": "NTC07340"
@@ -52311,7 +52311,7 @@
     "service_id": "NTC07591"
   },
   "BTN07592": {
-    "en": "Agent inactivity warning",
+    "en": "Agent Inactivity Warning",
     "ja": "エージェント非活性化の警告",
     "ko": "에이전트 비활성 경고",
     "zh": "Agent inactivity warning",
@@ -52353,50 +52353,50 @@
     "service_id": "TTL07597"
   },
   "DSC07598": {
-    "en": "A monitoring function has been released for <b style=\"color:{primaryColor}\">kube-apiserver, which plays the role of an API server within the Control Plane component that manages the overall Kubernetes cluster.",
-    "ja": "クーバーネティスクラスタ全体を管理するコントロールプレーンコンポーネント内でAPIサーバーの役割を担っている<b style=\"color:{primaryColor}\">kube-apiserverの監視機能がリリースされました。",
-    "ko": "쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 (Control Plane) 컴포넌트 내에서 API server 역할을 담당하고 있는 <b>kube-apiserver에 대한 모니터링 기능이 출시</b>되었습니다.",
-    "zh": "A monitoring function has been released for <b style=\"color:{primaryColor}\">kube-apiserver, which plays the role of an API server within the Control Plane component that manages the overall Kubernetes cluster.",
+    "en": "A monitoring function for <b>kube-apiserver, which plays the role of <br/>API server within the Control Plane component that manages the overall Kubernetes cluster, has been released</b>.",
+    "ja": "Kubernetes クラスタ全体を管理するコントロールプレーンコンポーネント内の<br/>API サーバーの役割を担う、<b>kube-apiserver の監視機能がリリース</b>されました。",
+    "ko": "쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 (Control Plane) 컴포넌트 내에서<br/>API server 역할을 담당하고 있는 <b>kube-apiserver에 대한 모니터링 기능이 출시</b>되었습니다.",
+    "zh": "A monitoring function for <b>kube-apiserver, which plays the role of <br/>API server within the Control Plane component that manages the overall Kubernetes cluster, has been released</b>.",
     "service_id": "DSC07598"
   },
   "DSC07599": {
     "en": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
-    "ja": "可視化されたダッシュボードを使用して、kube-apiserverの負荷状態とパフォーマンスの推移図を観察することで、kube-apiserverによるクラスタ障害をすばやく検出して原因を分析できます。",
-    "ko": "시각화된 대시보드를 통해 kube-apiserver의 부하 상태 및 성능 추이 차트를 관찰함으로써 kube-apiserver로 인한 클러스터 장애를 빠르게 감지하고 원인을 분석할 수 있습니다.",
+    "ja": "可視化されたダッシュボードでkube-apiserverの負荷状況や性能推移グラフを確認します。これにより、kube-apiserverが原因で発生するクラスタ障害を迅速に検知し、原因が把握できます。",
+    "ko": "시각화된 대시보드를 통해 kube-apiserver의 부하 상태 및 성능 추이 차트를 관찰함으로써<br/>kube-apiserver로 인한 클러스터 장애를 빠르게 감지하고 원인을 분석할 수 있습니다.",
     "zh": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
     "service_id": "DSC07599"
   },
   "DSC07600": {
-    "en": "The control plane monitoring feature requires <b>adding permissions, setting options, and adding a container for control plane monitoring within the master agent pod</b>.",
-    "ja": "コントロールプレーン監視機能を使用するには、<b>権限の追加、オプションの設定、およびマスターエージェントPod内のコントロールプレーン監視のためのコンテナの追加操作が必要です</b>。",
-    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>권한 추가, 옵션 설정, 그리고 마스터 에이전트 Pod 내 컨트롤 플레인 모니터링용 컨테이너 추가 작업이 필요</strong>합니다.",
-    "zh": "The control plane monitoring feature requires <b>adding permissions, setting options, and adding a container for control plane monitoring within the master agent pod</b>.",
+    "en": "To use the control plane monitoring feature,<strong>WhaTap Kubernetes Agent 1.5.0 or higher is required,<br/>setting permissions and feature activation options, and<br/>adding a container for control plane monitoring in the master agent. It is necessary</strong>to do so.",
+    "ja": "コントロール プレーン監視機能を使用するには、<strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、<br/>マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
+    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.0 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
+    "zh": "To use the control plane monitoring feature,<strong>WhaTap Kubernetes Agent 1.5.0 or higher is required,<br/>setting permissions and feature activation options, and<br/>adding a container for control plane monitoring in the master agent. It is necessary</strong>to do so.",
     "service_id": "DSC07600"
   },
   "DSC07601": {
     "en": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
-    "ja": "以下のWhaTap Docsでコントロールプレーンのkube-apiserverモニタリングの詳細をご覧ください！",
-    "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한자세한 내용을 확인해보세요!",
+    "ja": "コントロール プレーンのkube-apiserver の監視についての詳細は、以下の WhaTap ドキュメントをご参考ください。",
+    "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한<br/>자세한 내용을 확인해보세요!",
     "zh": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
     "service_id": "DSC07601"
   },
   "TTL07602": {
-    "en": "Kubernetes kube-apiserver monitoring is now available!",
-    "ja": "Kubernetes kube-apiserverモニタリングが利用可能です！",
-    "ko": "쿠버네티스 kube-apiserver 모니터링을 사용할 수 있습니다!",
-    "zh": "Kubernetes kube-apiserver monitoring is now available!",
+    "en": "Introducing the Kubernetes kube-apiserver monitoring feature!",
+    "ja": "Kubernetes kube-apiserver 監視機能のご紹介",
+    "ko": "쿠버네티스 kube-apiserver 모니터링 기능을 소개합니다!",
+    "zh": "Introducing the Kubernetes kube-apiserver monitoring feature!",
     "service_id": "TTL07602"
   },
   "NTC07603": {
     "en": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
-    "ja": "Namespaceプロジェクトで<b>Object Manifest</b>機能を使用するには、<b>マスターエージェント1.5.2以降</b>を使用する必要があります。 更新お願いします。",
+    "ja": "Namespaceプロジェクトで<b>Object Manifest</b>機能を使用するには、<b>マスターエージェント1.5.2以降</b>を使用する必要があります。 アップデートを行ってください。",
     "ko": "네임스페이스 프로젝트에서 <b>오브젝트 매니페스트</b> 기능을 사용하려면 <b>마스터 에이전트 1.5.2 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
     "zh": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
     "service_id": "NTC07603"
   },
   "DSC07604": {
     "en": "You cannot withdraw for the following reasons. Please check the contents below and retry.",
-    "ja": "以下の理由により脱退できません。以下の内容を確認してから、再度試してください。",
+    "ja": "以下の理由により脱退できません。内容を確認してから、再度試してください。",
     "ko": "다음의 사유로 탈퇴가 불가능합니다. 원활한 회원 탈퇴를 위해 아래 내용을 확인 후 시도하세요.",
     "zh": "You cannot withdraw for the following reasons. Please check the contents below and try it for smooth membership withdrawal.",
     "service_id": "DSC07604"
@@ -52431,10 +52431,31 @@
   },
   "ITM07609": {
     "en": "Number of application containers",
-    "ja": "アプリケーション・コンテナの数",
+    "ja": "アプリケーションコンテナの数",
     "ko": "애플리케이션 컨테이너 수",
     "zh": "Number of application containers",
     "service_id": "ITM07609"
+  },
+  "TTL07610": {
+    "en": "Effective Bandwidth",
+    "ja": "実効帯域幅",
+    "ko": "유효 대역폭",
+    "zh": "Effective Bandwidth",
+    "service_id": "TTL07610"
+  },
+  "TTL07611": {
+    "en": "Effective Connection Type",
+    "ja": "有効接続タイプ",
+    "ko": "유효 연결 유형",
+    "zh": "Effective Connection Type",
+    "service_id": "TTL07611"
+  },
+  "TTL07612": {
+    "en": "RTT",
+    "ja": "RTT",
+    "ko": "RTT",
+    "zh": "RTT",
+    "service_id": "TTL07612"
   },
   "": {
     "": "",
@@ -52631,5 +52652,10 @@
     "en": "kube-apiserver Dashboard",
     "ja": "kube-apiserver ダッシュボード",
     "ko": "kube-apiserver 대시보드"
+  },
+  "eventNoti": {
+    "en": "Configuration",
+    "ja": "通知設定",
+    "ko": "이벤트 수신 설정"
   }
 }
