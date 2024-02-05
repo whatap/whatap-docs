@@ -3164,14 +3164,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/nodejs/nodejs-0_4_89',
+                id: 'release-notes/nodejs/nodejs-0_4_90',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_89',
+                  id: 'release-notes/nodejs/nodejs-0_4_90',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_89',
                 'release-notes/nodejs/nodejs-0_4_88',
                 'release-notes/nodejs/nodejs-0_4_86',
                 'release-notes/nodejs/nodejs-0_4_83',
