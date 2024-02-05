@@ -24,7 +24,8 @@ async function findImagesInMdxFiles(dir) {
                       imagePathsSet.add(match[1].replace('/img/', '')); // 이미지 경로 집합에 저장
                   }
               });
-          } else if (imagePaths2) {
+          } 
+          if (imagePaths2) {
               imagePaths2.forEach((imgPath) => {
                   const match2 = imgPath.match(/img=['"](.*?)['"]/);
                   if (match2) {

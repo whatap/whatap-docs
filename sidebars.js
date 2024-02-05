@@ -3052,7 +3052,7 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              label: 'v1.0.7 (75)',
+              label: 'v1.0.7 (81)',
               id: 'release-notes/mobile/mobile-app-v1_0_7',
               className: 'new',
             },
