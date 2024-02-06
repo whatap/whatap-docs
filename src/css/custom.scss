@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+Coptic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
 
 :root {
   --doc-sidebar-width: 220px !important;
@@ -347,6 +348,19 @@ html[lang='ja-JP'] {
   background: url('img/ic-release-up.svg') no-repeat;
   transform: rotateZ(0deg);
   margin-left: 6px;
+}
+.menu__list-item.newfunc > a {
+  display: inline-block;
+}
+.menu__list-item.newfunc > a::after {
+  display: inline;
+  content: 'New';
+  border-radius: 1px solid none;
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  font-family: "Oleo Script";
+  margin-left: 10px;
+  font-weight: 400;
 }
 .menu__list-item-collapsible:hover {
   background: var(--ifm-active-menu-color);
@@ -1140,6 +1154,12 @@ main {
       color: #fff;
       border: none;
       padding: 0 5px 0 5px;
+    }
+    code.newfunc {
+      background-color: rgb(232, 225, 255);
+      color: rgb(139, 82, 255);
+      font-family: "Oleo Script";
+      font-weight: 400;
     }
     sup > code {
       font-size: .6em;
