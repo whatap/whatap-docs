@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[93856],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[93880],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 16600:
+/***/ 2312:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,22 +314,21 @@ const frontMatter = {
     tags: [
         '경고 알림',
         '메트릭스 이벤트',
-        'Naver Cloud Monitoring',
-        '클라우드'
+        'Amazon ECS'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "ncloud/metric-warning-notice",
-    "id": "ncloud/metric-warning-notice",
+    "unversionedId": "amazon-ecs/metric-warning-notice",
+    "id": "amazon-ecs/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/ncloud/metric-warning-notice.mdx",
-    "sourceDirName": "ncloud",
-    "slug": "/ncloud/metric-warning-notice",
-    "permalink": "/whatap-docs/ncloud/metric-warning-notice",
+    "source": "@site/docs/amazon-ecs/metric-warning-notice.mdx",
+    "sourceDirName": "amazon-ecs",
+    "slug": "/amazon-ecs/metric-warning-notice",
+    "permalink": "/whatap-docs/amazon-ecs/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/ncloud/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/amazon-ecs/metric-warning-notice.mdx",
     "tags": [
         {
             "label": "경고 알림",
@@ -340,12 +339,8 @@ const metadata = {
             "permalink": "/whatap-docs/tags/메트릭스-이벤트"
         },
         {
-            "label": "Naver Cloud Monitoring",
-            "permalink": "/whatap-docs/tags/naver-cloud-monitoring"
-        },
-        {
-            "label": "클라우드",
-            "permalink": "/whatap-docs/tags/클라우드"
+            "label": "Amazon ECS",
+            "permalink": "/whatap-docs/tags/amazon-ecs"
         }
     ],
     "version": "current",
@@ -356,18 +351,17 @@ const metadata = {
         "tags": [
             "경고 알림",
             "메트릭스 이벤트",
-            "Naver Cloud Monitoring",
-            "클라우드"
+            "Amazon ECS"
         ]
     },
-    "sidebar": "ncloudSidebar",
+    "sidebar": "awsecsSidebar",
     "previous": {
         "title": "알림 설정하기",
-        "permalink": "/whatap-docs/ncloud/set-notice"
+        "permalink": "/whatap-docs/amazon-ecs/set-notice"
     },
     "next": {
         "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/ncloud/set-receive-event"
+        "permalink": "/whatap-docs/amazon-ecs/set-receive-event"
     }
 };
 const assets = {};
@@ -1542,10 +1536,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\< operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 < operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
@@ -1553,10 +1547,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\<= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 <= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작거나 같은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {

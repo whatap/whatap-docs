@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[34776],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[1791],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 30128:
+/***/ 52540:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '메트릭스 경고 알림',
     description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
     tags: [
-        'PostgreSQL',
+        'Redis',
         '경고 알림',
         '메트릭스 이벤트',
         '데이터베이스 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "postgresql-v1/metric-warning-notice",
-    "id": "postgresql-v1/metric-warning-notice",
+    "unversionedId": "redis/metric-warning-notice",
+    "id": "redis/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/postgresql-v1/metric-warning-notice.mdx",
-    "sourceDirName": "postgresql-v1",
-    "slug": "/postgresql-v1/metric-warning-notice",
-    "permalink": "/whatap-docs/postgresql-v1/metric-warning-notice",
+    "source": "@site/docs/redis/metric-warning-notice.mdx",
+    "sourceDirName": "redis",
+    "slug": "/redis/metric-warning-notice",
+    "permalink": "/whatap-docs/redis/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/postgresql-v1/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/redis/metric-warning-notice.mdx",
     "tags": [
         {
-            "label": "PostgreSQL",
-            "permalink": "/whatap-docs/tags/postgre-sql"
+            "label": "Redis",
+            "permalink": "/whatap-docs/tags/redis"
         },
         {
             "label": "경고 알림",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "메트릭스 경고 알림",
         "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
         "tags": [
-            "PostgreSQL",
+            "Redis",
             "경고 알림",
             "메트릭스 이벤트",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "postgrev1Sidebar",
+    "sidebar": "redisSidebar",
     "previous": {
-        "title": "데이터베이스 경고 알림",
-        "permalink": "/whatap-docs/postgresql-v1/warning-notice"
+        "title": "알림 설정하기",
+        "permalink": "/whatap-docs/redis/set-notice"
     },
     "next": {
         "title": "알림 메시지 사용자 정의",
-        "permalink": "/whatap-docs/postgresql-v1/set-notification-message"
+        "permalink": "/whatap-docs/redis/set-notification-message"
     }
 };
 const assets = {};
@@ -1542,10 +1542,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\< operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 < operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
@@ -1553,10 +1553,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\<= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 <= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작거나 같은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[5704],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[52668],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 47756:
+/***/ 12268:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '메트릭스 경고 알림',
     description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
     tags: [
-        'MongoDB',
+        'Tibero',
         '경고 알림',
         '메트릭스 이벤트',
         '데이터베이스 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mongodb/metric-warning-notice",
-    "id": "mongodb/metric-warning-notice",
+    "unversionedId": "tibero/metric-warning-notice",
+    "id": "tibero/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/mongodb/metric-warning-notice.mdx",
-    "sourceDirName": "mongodb",
-    "slug": "/mongodb/metric-warning-notice",
-    "permalink": "/whatap-docs/mongodb/metric-warning-notice",
+    "source": "@site/docs/tibero/metric-warning-notice.mdx",
+    "sourceDirName": "tibero",
+    "slug": "/tibero/metric-warning-notice",
+    "permalink": "/whatap-docs/tibero/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/mongodb/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/tibero/metric-warning-notice.mdx",
     "tags": [
         {
-            "label": "MongoDB",
-            "permalink": "/whatap-docs/tags/mongo-db"
+            "label": "Tibero",
+            "permalink": "/whatap-docs/tags/tibero"
         },
         {
             "label": "경고 알림",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "메트릭스 경고 알림",
         "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
         "tags": [
-            "MongoDB",
+            "Tibero",
             "경고 알림",
             "메트릭스 이벤트",
             "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "mongodbSidebar",
+    "sidebar": "tiberoSidebar",
     "previous": {
         "title": "데이터베이스 경고 알림",
-        "permalink": "/whatap-docs/mongodb/warning-notice"
+        "permalink": "/whatap-docs/tibero/warning-notice"
     },
     "next": {
         "title": "알림 메시지 사용자 정의",
-        "permalink": "/whatap-docs/mongodb/set-notification-message"
+        "permalink": "/whatap-docs/tibero/set-notification-message"
     }
 };
 const assets = {};
@@ -1542,10 +1542,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\< operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 < operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
@@ -1553,10 +1553,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\<= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 <= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작거나 같은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {

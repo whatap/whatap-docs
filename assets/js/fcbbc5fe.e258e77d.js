@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[60872],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[55384],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 48972:
+/***/ 15440:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,25 +312,29 @@ const frontMatter = {
     title: '메트릭스 경고 알림',
     description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
     tags: [
+        'CUBRID',
         '경고 알림',
         '메트릭스 이벤트',
-        'Oracle Cloud Monitor',
-        '클라우드'
+        '데이터베이스 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "oracle-cloud/metric-warning-notice",
-    "id": "oracle-cloud/metric-warning-notice",
+    "unversionedId": "cubrid/metric-warning-notice",
+    "id": "cubrid/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/oracle-cloud/metric-warning-notice.mdx",
-    "sourceDirName": "oracle-cloud",
-    "slug": "/oracle-cloud/metric-warning-notice",
-    "permalink": "/whatap-docs/oracle-cloud/metric-warning-notice",
+    "source": "@site/docs/cubrid/metric-warning-notice.mdx",
+    "sourceDirName": "cubrid",
+    "slug": "/cubrid/metric-warning-notice",
+    "permalink": "/whatap-docs/cubrid/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/oracle-cloud/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/cubrid/metric-warning-notice.mdx",
     "tags": [
+        {
+            "label": "CUBRID",
+            "permalink": "/whatap-docs/tags/cubrid"
+        },
         {
             "label": "경고 알림",
             "permalink": "/whatap-docs/tags/경고-알림"
@@ -340,12 +344,8 @@ const metadata = {
             "permalink": "/whatap-docs/tags/메트릭스-이벤트"
         },
         {
-            "label": "Oracle Cloud Monitor",
-            "permalink": "/whatap-docs/tags/oracle-cloud-monitor"
-        },
-        {
-            "label": "클라우드",
-            "permalink": "/whatap-docs/tags/클라우드"
+            "label": "데이터베이스 모니터링",
+            "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
         }
     ],
     "version": "current",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "메트릭스 경고 알림",
         "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
         "tags": [
+            "CUBRID",
             "경고 알림",
             "메트릭스 이벤트",
-            "Oracle Cloud Monitor",
-            "클라우드"
+            "데이터베이스 모니터링"
         ]
     },
-    "sidebar": "oracleSidebar",
+    "sidebar": "cubridSidebar",
     "previous": {
-        "title": "알림 설정하기",
-        "permalink": "/whatap-docs/oracle-cloud/set-notice"
+        "title": "데이터베이스 경고 알림",
+        "permalink": "/whatap-docs/cubrid/warning-notice"
     },
     "next": {
-        "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/oracle-cloud/set-receive-event"
+        "title": "알림 메시지 사용자 정의",
+        "permalink": "/whatap-docs/cubrid/set-notification-message"
     }
 };
 const assets = {};
@@ -1542,10 +1542,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\< operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 < operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
@@ -1553,10 +1553,10 @@ id == '123' 또는 oid == "123"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": "center"
-    }, `\\<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `<=`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `operand1 \\<= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, `operand1 <= operand2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `operand1의 값이 operand2의 값보다 작거나 같은지 확인합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
