@@ -3098,17 +3098,18 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java/java-2_2_26',
+                id: 'release-notes/java/java-2_2_27',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_26',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_27',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_26',
                 'release-notes/java/java-2_2_25',
                 'release-notes/java/java-2_2_24',
                 'release-notes/java/java-2_2_23',
@@ -3117,7 +3118,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_20',
                 'release-notes/java/java-2_2_19',
                 'release-notes/java/java-2_2_18',
-                'release-notes/java/java-2_2_17',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3126,17 +3126,18 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/java-batch/java-batch-2_2_22',
+                id: 'release-notes/java-batch/java-batch-2_2_23',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_22',
-                  // className: 'new',
+                  id: 'release-notes/java-batch/java-batch-2_2_23',
+                  className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_22',
                 'release-notes/java-batch/java-batch-2_2_21',
                 'release-notes/java-batch/java-batch-2_2_20',
                 'release-notes/java-batch/java-batch-2_2_19'
