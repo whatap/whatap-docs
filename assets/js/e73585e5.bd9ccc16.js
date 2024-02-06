@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[58702],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[79176],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 49488:
+/***/ 93300:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,43 +308,47 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_5_2',
-    title: 'Python Agent v1.5.2',
+    id: 'python-1_4_4',
+    title: 'Python Agent v1.4.4',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_5_0'
+    pagination_next: 'release-notes/python/python-1_4_3',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_5_2",
-    "id": "release-notes/python/python-1_5_2",
-    "title": "Python Agent v1.5.2",
-    "description": "2024년 01월 03일",
-    "source": "@site/docs/release-notes/python/python-1.5.2.mdx",
+    "unversionedId": "release-notes/python/python-1_4_4",
+    "id": "release-notes/python/python-1_4_4",
+    "title": "Python Agent v1.4.4",
+    "description": "2023년 8월 17일",
+    "source": "@site/docs/release-notes/python/python-1.4.4.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_5_2",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_2",
+    "slug": "/release-notes/python/python-1_4_4",
+    "permalink": "/whatap-docs/release-notes/python/python-1_4_4",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.5.2.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.4.4.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_5_2",
-        "title": "Python Agent v1.5.2",
+        "id": "python-1_4_4",
+        "title": "Python Agent v1.4.4",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_5_0"
+        "pagination_next": "release-notes/python/python-1_4_3",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Python Agent v1.5.3",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_3"
-    },
     "next": {
-        "title": "Python Agent v1.5.0",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_0"
+        "title": "Python Agent v1.4.3",
+        "permalink": "/whatap-docs/release-notes/python/python-1_4_3"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: '2023년 8월 17일',
+        id: '2023년-8월-17일',
+        level: 4
+    }
+];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
@@ -361,16 +365,18 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 03일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+        "id": "2023년-8월-17일"
+    }, `2023년 8월 17일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.5.2/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        "href": "https://pypi.org/project/whatap-python/1.4.4/"
+    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " INJECTION 방식의 로그 수집 코드 오류 수정");
+    }, "Fixed"), " wsgi 애플리케이션에서 active status 카운팅 버그 수정"));
 }
 MDXContent.isMDXComponent = true;
 

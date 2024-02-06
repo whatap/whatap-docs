@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[66928],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[90236],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 33820:
+/***/ 11272:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'k8s-1_5_3',
-    title: 'Kubernetes Agent v1.5.3',
+    id: 'python-1_5_0',
+    title: 'Python Agent v1.5.0',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/k8s/k8s-1_5_2',
+    pagination_next: 'release-notes/python/python-1_4_9',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/k8s/k8s-1_5_3",
-    "id": "release-notes/k8s/k8s-1_5_3",
-    "title": "Kubernetes Agent v1.5.3",
-    "description": "2024년 01월 30일",
-    "source": "@site/docs/release-notes/k8s/k8s-1.5.3.mdx",
-    "sourceDirName": "release-notes/k8s",
-    "slug": "/release-notes/k8s/k8s-1_5_3",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_3",
+    "unversionedId": "release-notes/python/python-1_5_0",
+    "id": "release-notes/python/python-1_5_0",
+    "title": "Python Agent v1.5.0",
+    "description": "2023년 12월 29일",
+    "source": "@site/docs/release-notes/python/python-1.5.0.mdx",
+    "sourceDirName": "release-notes/python",
+    "slug": "/release-notes/python/python-1_5_0",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_0",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.5.3.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.5.0.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "k8s-1_5_3",
-        "title": "Kubernetes Agent v1.5.3",
+        "id": "python-1_5_0",
+        "title": "Python Agent v1.5.0",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/k8s/k8s-1_5_2",
+        "pagination_next": "release-notes/python/python-1_4_9",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Server Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/server/server-previous"
+        "title": "Python Agent v1.5.2",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_2"
     },
     "next": {
-        "title": "Kubernetes Agent v1.5.2",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_5_2"
+        "title": "Python Agent v1.4.9",
+        "permalink": "/whatap-docs/release-notes/python/python-1_4_9"
     }
 };
 const assets = {};
@@ -352,7 +352,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
 const Status = makeShortcode("Status");
-const Cmdname = makeShortcode("Cmdname");
+const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -364,53 +364,19 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 30일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 메트리스 수집 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "server_disk"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "server_network"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "server_base"), " 카테고리의 수집 간격을 5초 단위로 맞춤"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " 메트릭스 수집 시 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "kube_node"), " 카테고리에 노드의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "external-ip"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("b", null, "internal-ip"), " 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        parentName: "li",
-        "type": "tip"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "admonition"
-    }, `쿠버네티스 프로젝트의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "sitemap",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "tag_count",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), `에서 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, `InternalIP`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `클러스터 내부에서만 접근할 수 있는 IP 주소입니다. 클러스터 안에 있는 다른 노드나 파드(Pods)가 서로 통신할 때 사용하는 주소입니다. 이 내부 IP 주소는 클러스터 외부에서는 접근할 수 없으며, 일반적으로 프라이빗 네트워크 주소 범위에서 할당됩니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, `ExternalIP`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `외부 네트워크에서 접근할 수 있는 노드의 IP 주소입니다. 이 주소를 통해 클러스터 외부의 시스템이 노드에 접근할 수 있습니다. 모든 노드가 외부 IP 주소를 가지고 있는 것은 아니며, 외부 IP 주소가 할당되는 것은 클러스터를 구성하는 환경(예: 클라우드 제공 업체, 베어 메탈 환경 등)에 따라 다를 수 있습니다.`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        "type": "info"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 12월 29일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://repo.whatap.io/docker/kube_mon_1.5.3.tar"
-    }, `kube_mon_1.5.3.tar`))));
+        "href": "https://pypi.org/project/whatap-python/1.5.0/"
+    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " Frappe 프레임워크(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
+        to: "https://github.com/frappe/frappe",
+        mdxType: "Link"
+    }, "frappe/frappe: Low code web framework for real world applications, in Python and Javascript (github.com)"), ") 성능 수집 기능 추가");
 }
 MDXContent.isMDXComponent = true;
 

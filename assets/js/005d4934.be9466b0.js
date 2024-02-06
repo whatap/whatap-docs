@@ -311,7 +311,8 @@ const frontMatter = {
     id: 'k8s-1_4_1',
     title: 'Kubernetes Agent v1.4.1',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/k8s/k8s-1_4_0'
+    pagination_next: 'release-notes/k8s/k8s-1_4_0',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
@@ -331,13 +332,10 @@ const metadata = {
         "id": "k8s-1_4_1",
         "title": "Kubernetes Agent v1.4.1",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/k8s/k8s-1_4_0"
+        "pagination_next": "release-notes/k8s/k8s-1_4_0",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Kubernetes Agent v1.4.2",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2"
-    },
     "next": {
         "title": "Kubernetes Agent v1.4.0",
         "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_0"

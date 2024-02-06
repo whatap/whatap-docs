@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[79492],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[52372],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 23360:
+/***/ 75012:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_5_3',
-    title: 'Python Agent v1.5.3',
+    id: 'k8s-1_4_3',
+    title: 'Kubernetes Agent v1.4.3',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_5_2'
+    pagination_next: 'release-notes/k8s/k8s-1_4_2',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_5_3",
-    "id": "release-notes/python/python-1_5_3",
-    "title": "Python Agent v1.5.3",
-    "description": "2024년 01월 05일",
-    "source": "@site/docs/release-notes/python/python-1.5.3.mdx",
-    "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_5_3",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_3",
+    "unversionedId": "release-notes/k8s/k8s-1_4_3",
+    "id": "release-notes/k8s/k8s-1_4_3",
+    "title": "Kubernetes Agent v1.4.3",
+    "description": "2023년 11월 21일",
+    "source": "@site/docs/release-notes/k8s/k8s-1.4.3.mdx",
+    "sourceDirName": "release-notes/k8s",
+    "slug": "/release-notes/k8s/k8s-1_4_3",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.5.3.mdx",
+    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.3.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_5_3",
-        "title": "Python Agent v1.5.3",
+        "id": "k8s-1_4_3",
+        "title": "Kubernetes Agent v1.4.3",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_5_2"
+        "pagination_next": "release-notes/k8s/k8s-1_4_2",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Python Agent v1.5.4",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_4"
+        "title": "Kubernetes Agent v1.4.4",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_4"
     },
     "next": {
-        "title": "Python Agent v1.5.2",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_2"
+        "title": "Kubernetes Agent v1.4.2",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2"
     }
 };
 const assets = {};
@@ -361,16 +363,22 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 05일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        "type": "note"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 11월 21일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.5.3/"
-    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        "href": "https://repo.whatap.io/docker/kube_mon_1.4.3.tar"
+    }, `https://repo.whatap.io/docker/kube_mon_1.4.3.tar`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " Python 에이전트 v1.4.9 버전 이상에서 gunicorn 트랜잭션 수집 오류 수정");
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "kube_stat"), "에 클러스터 cpu 용량 추가(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "kube_stat.total_capacity_cpu"), ")"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "kube_entities"), "에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "job"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "cronJob"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "ingress"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "service"), " 데이터 추가")));
 }
 MDXContent.isMDXComponent = true;
 

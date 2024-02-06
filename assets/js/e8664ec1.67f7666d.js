@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[71892],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[97208],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 24908:
+/***/ 10036:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'k8s-1_4_4',
-    title: 'Kubernetes Agent v1.4.4',
+    id: 'k8s-1_4_2',
+    title: 'Kubernetes Agent v1.4.2',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/k8s/k8s-1_4_3'
+    pagination_next: 'release-notes/k8s/k8s-1_4_1',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/k8s/k8s-1_4_4",
-    "id": "release-notes/k8s/k8s-1_4_4",
-    "title": "Kubernetes Agent v1.4.4",
-    "description": "2023년 11월 22일",
-    "source": "@site/docs/release-notes/k8s/k8s-1.4.4.mdx",
+    "unversionedId": "release-notes/k8s/k8s-1_4_2",
+    "id": "release-notes/k8s/k8s-1_4_2",
+    "title": "Kubernetes Agent v1.4.2",
+    "description": "2023년 11월 15일",
+    "source": "@site/docs/release-notes/k8s/k8s-1.4.2.mdx",
     "sourceDirName": "release-notes/k8s",
-    "slug": "/release-notes/k8s/k8s-1_4_4",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_4",
+    "slug": "/release-notes/k8s/k8s-1_4_2",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_2",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.4.mdx",
+    "editUrl": "undefined/docs/release-notes/k8s/k8s-1.4.2.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "k8s-1_4_4",
-        "title": "Kubernetes Agent v1.4.4",
+        "id": "k8s-1_4_2",
+        "title": "Kubernetes Agent v1.4.2",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/k8s/k8s-1_4_3"
+        "pagination_next": "release-notes/k8s/k8s-1_4_1",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent v1.4.8",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_8"
-    },
-    "next": {
         "title": "Kubernetes Agent v1.4.3",
         "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3"
+    },
+    "next": {
+        "title": "Kubernetes Agent v1.4.1",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_1"
     }
 };
 const assets = {};
@@ -361,28 +363,30 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 11월 22일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 11월 15일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "info"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://repo.whatap.io/docker/kube_mon_1.4.4.tar"
-    }, `https://repo.whatap.io/docker/kube_mon_1.4.4.tar`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "href": "https://repo.whatap.io/docker/kube_mon_1.4.2.tar"
+    }, `https://repo.whatap.io/docker/kube_mon_1.4.2.tar`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " client-api 버전 변경(13.0.2 → 15.0.1)", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "kube_pod"), " 카테고리에 수집 데이터 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
-    }, `낮은 client-api 버전으로 인해 쿠버네티스 서비스 플랫폼(eks, gke)과의 호환성이 떨어지는 현상이 있었습니다. 해당 문제를 해결하고자 client-api 버전을 업데이트했습니다. 특히, deprecated 메소드를 업데이트된 버전으로 대체하였습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "kube_entities"), " 필드 이름 변경(", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "cronJobs"), " → ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "cronjobs"), ")"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "qosClass"), ": Pod에 대한 서비스 품질"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 마스터 메타 정보 CronJob 데이터 누락 현상 해결")));
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "startTime"), ": Pod 시작 시간"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "podHash"), ": Pod 이름의 해시값"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "con_cpu_limit_total"), ": Pod 내부 컨테이너의 cpu limit 합계"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "con_mem_alloc_fail_total_count"), ": Pod 내부 컨테이너의 memory 할당 실패 수 합계")))));
 }
 MDXContent.isMDXComponent = true;
 

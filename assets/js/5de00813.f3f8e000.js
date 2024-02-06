@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[56020],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[79492],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 56312:
+/***/ 23360:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'python-1_5_6',
-    title: 'Python Agent v1.5.6',
+    id: 'python-1_5_3',
+    title: 'Python Agent v1.5.3',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/python/python-1_5_5'
+    pagination_next: 'release-notes/python/python-1_5_2',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/python/python-1_5_6",
-    "id": "release-notes/python/python-1_5_6",
-    "title": "Python Agent v1.5.6",
-    "description": "2024년 02월 02일",
-    "source": "@site/docs/release-notes/python/python-1.5.6.mdx",
+    "unversionedId": "release-notes/python/python-1_5_3",
+    "id": "release-notes/python/python-1_5_3",
+    "title": "Python Agent v1.5.3",
+    "description": "2024년 01월 05일",
+    "source": "@site/docs/release-notes/python/python-1.5.3.mdx",
     "sourceDirName": "release-notes/python",
-    "slug": "/release-notes/python/python-1_5_6",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_6",
+    "slug": "/release-notes/python/python-1_5_3",
+    "permalink": "/whatap-docs/release-notes/python/python-1_5_3",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/python/python-1.5.6.mdx",
+    "editUrl": "undefined/docs/release-notes/python/python-1.5.3.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "python-1_5_6",
-        "title": "Python Agent v1.5.6",
+        "id": "python-1_5_3",
+        "title": "Python Agent v1.5.3",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/python/python-1_5_5"
+        "pagination_next": "release-notes/python/python-1_5_2",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Node.js Agent v0.4.77",
-        "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_77"
+        "title": "Python Agent v1.5.4",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_4"
     },
     "next": {
-        "title": "Python Agent v1.5.5",
-        "permalink": "/whatap-docs/release-notes/python/python-1_5_5"
+        "title": "Python Agent v1.5.2",
+        "permalink": "/whatap-docs/release-notes/python/python-1_5_2"
     }
 };
 const assets = {};
@@ -361,16 +363,16 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 02일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " Superset 지원", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 05일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `Agent download: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://pypi.org/project/whatap-python/1.5.6/"
-    }, `whatap-python · PyPI`))));
+        "href": "https://pypi.org/project/whatap-python/1.5.3/"
+    }, `whatap-python · PyPI`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " Python 에이전트 v1.4.9 버전 이상에서 gunicorn 트랜잭션 수집 오류 수정");
 }
 MDXContent.isMDXComponent = true;
 
