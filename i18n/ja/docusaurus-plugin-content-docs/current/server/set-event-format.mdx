@@ -111,8 +111,8 @@ Stateful : true
 
 | Event Type | Event Level         | Event Message                             | Event Off Message                        |
 | ---------- | ------------------- | ----------------------------------------- | ---------------------------------------- |
-| プロセス数警告    | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count \< ${value}" |
-| プロセス数危険    | Warning or Critical | Process ${processName} Count \< ${value}" | "Process ${groupName} Count >= ${value}" |
+| プロセス数警告    | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count < ${value}" |
+| プロセス数危険    | Warning or Critical | Process ${processName} Count < ${value}" | "Process ${groupName} Count >= ${value}" |
 | プロセスCPU    | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
 | プロセスメモリ    | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
 

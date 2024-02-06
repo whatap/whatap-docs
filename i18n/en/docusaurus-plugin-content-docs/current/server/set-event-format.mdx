@@ -111,8 +111,8 @@ The server alert provides only the event message with no event title.
 
 | Event Type              | Event Level         | Event Message                             | Event Off Message                        |
 | ----------------------- | ------------------- | ----------------------------------------- | ---------------------------------------- |
-| Process count alert     | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count \< ${value}" |
-| Process count critical  | Warning or Critical | Process ${processName} Count \< ${value}" | "Process ${groupName} Count >= ${value}" |
+| Process count alert     | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count < ${value}" |
+| Process count critical  | Warning or Critical | Process ${processName} Count < ${value}" | "Process ${groupName} Count >= ${value}" |
 | Process CPU             | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
 | Process Memory          | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
 

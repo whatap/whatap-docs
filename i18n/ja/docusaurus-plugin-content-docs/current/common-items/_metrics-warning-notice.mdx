@@ -1,13 +1,23 @@
+<Xclude product="npm">
+
 ホーム画面 > プロジェクト選択 > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" /> > <Cmdname sid="metrics" className="uitext" />タブ選択
 
+</Xclude>
+
+<InDoc product="npm">
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />
+
+</InDoc>
+
 ## メトリクスイベントとは
+
+<Xclude product='npm'>
 
 メトリクスイベントは、基本イベント(アプリケーションイベント、サーバーイベントなど)より具体的で複雑なイベントを設定するために使用します。プロジェクトがリアルタイムで収集中のメトリクスデータに基づいてイベントを設定できます。使用状況に応じて、2つの設定方法のいずれかを選択してイベントを設定できます。
 
 -   メトリクスイベント
 -   複合メトリクスイベント
-
-<Xclude product='npm'>
 
 :::note
 
@@ -19,6 +29,8 @@
 
 <InDoc product='npm'>
 
+メトリクスイベントは、基本イベント(アプリケーションイベント、サーバーイベントなど)より具体的で複雑なイベントを設定するために使用します。プロジェクトがリアルタイムで収集中のメトリクスデータに基づいてイベントを設定できます。
+
 :::note
 
 メトリクスの詳細については、[次の文書](../metrics/common-metrics-intro)を参照ください。
@@ -29,7 +41,17 @@
 
 ## メトリクスイベント
 
+<Xclude product="npm">
+
 <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />ウィンドウが表示されます。
+
+</Xclude>
+
+<InDoc product="npm">
+
+<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の右上にある <Cmdname sid="add_notification" className="uitext" />を選択します。<Cmdname sid="metrics_event" className="uitext" />ウィンドウが表示されます。
+
+</InDoc>
 
 <ImgLang img='set-events-metrics.png' desc='メトリクスイベント' />
 
@@ -150,299 +172,3 @@
 <ImgLang img='set-event-test.png' desc='アラート通知テスト' />
 
 選択した時間に設定したイベント条件を実行し、アラート通知の件数を確認できます。実行ボタンを選択すると、通知発生の件数情報が表示され、イベント発生条件で選択したフィールドとしきい値がチャートに表示します。
-
-## 複合メトリクスイベント
-
-<Cmdname sid="composite_metrics" className="uitext" />を利用するには、次の概念を理解する必要があります。
-
-<Xclude product='npm'>
-
--   [メトリクスとは](metrics-intro)
-
-</Xclude>
-
-<InDoc product='npm'>
-
--   [メトリクスとは](../metrics/common-metrics-intro)
-
-</InDoc>
-
--   [MXQL](../mxql/mxql-overview)
-
-<Cmdname sid="composite_metrics" className="uitext" />は、メトリクスデータより複雑なルールを使用してイベントを生成し、アラート通知を送信します。複合メトリクスは、次のような状況で効果的に使用できます。
-
--   複数のエージェントから受信したデータに対して総合的にイベント判定を行う必要がある場合
--   過去のデータと現在のデータを比較して、イベント判定を行う必要がある場合
-
-メトリクスイベントは、エージェントからメトリクスを受信するたびにイベント判定を行います。一方、複合メトリクスイベントは、各エージェントから収集されたメトリクスをデータベースに保存してから、再度イベント判定を行います。これらの特性により複数のエージェントからのデータを集計したり、履歴データを活用することができます。ただし、**MXQL**と呼ばれるWhaTap独自のデータ言語を使用するという参入障壁があります。そのため、ユーザーが基礎的なレベルの**MXQL**を理解するだけで効果的にイベントを設定できるようにイベントテンプレートを提供します。MXQLのネイティブユーザーは、イベント対象のフィルタリングとイベント条件のクエリのみを修正することでイベントを適用することができます。
-
-1.  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから画面の上にある<Cmdname sid="metrics" className="uitext" />を選択します。
-
-2.  <Cmdname sid="composite_metrics" className="uitext" />セクションの右側にある<Cmdname sid="add_notification" className="uitext" />を選択してください。
-
-3.  <Cmdname sid="composite_metrics" className="uitext" />ウィンドウが表示されたら、<Cmdname sid="create_new_composite_mxql_event" className="uitext" />を選択してください。
-
-イベント設定ウィンドウが表示されます。 
-
-<ImgLang img='set-event-cmetric.png' desc='複合メトリクスイベント設定' />
-
-<Xclude product='server'>
-
-:::note
-
-複合メトリクスイベントを設定するには、**イベント設定**権限が必要です。
-
-:::
-
-</Xclude>
-
-<InDoc product='server,postgresql,postgresql-v1,java,python,php,nodejs,golang,dotnet,browser'>
-
-:::note
-
-複合メトリクスにイベントテンプレートの詳細については[次の文書](#composite-metrics-template)を参照してください。
-
-:::
-
-</InDoc>
-
-### イベントデータ照会
-
-<Cmdname sid="composite_metrics" className="uitext" />は、メトリクスデータのクエリ言語である<b>MXQL</b>に基づいてイベント条件を生成します。<Cmdname sid="create_new_composite_mxql_event" className="uitext" />機能は、<b>MXQL</b>をオートコンプリートするためのコンボボックス機能を提供します。イベントデータを参照してチャートを構成し、イベント発行条件を直接入力するためのテンプレートです。<Cmdname sid="widget" className="uitext" />または<Cmdname sid="text" className="uitext" />オプションを選択してイベントを設定してください。
-
-<Tabs>
-<TabItem value='widget' label='ウィジェット'>
-
-時系列チャートを設定するオプションからイベント設定時に使用する**MXQL**をオートコンプリートさせることができます。
-
-<ImgLang img='set-event-data-view.png' desc='イベントデータ参照' />
-
--   <Cmdname sid="filter" className="uitext" />：イベント条件の対象を選択します。<LinkImage img="number-01.png" className="ico" />演算式、<LinkImage img="number-02.png" className="ico" />タグ、<LinkImage img="number-03.png" className="ico" />フィルタリング値を入力して、フィルタリング条件を作成します。
-
-    <ImgLang img='set-event-cmetric-filter.png' desc='フィルター' />
-
--   <Cmdname sid="groupby" className="uitext" />：グループ化されたメトリクスデータを選択します。複数を選択できます。
-
--   <Cmdname sid="timeunit" className="uitext" />：グループ化されたデータを分割する時間基準を設定します。<Cmdname sid="second" className="uitext" />、<Cmdname sid="minute" className="uitext" />、<Cmdname sid="hour" className="uitext" />で選択して設定することができます。
-
--   <Cmdname sid="field" className="uitext" />：イベント発行条件に使用するフィールドを選択します。複数選択が可能です。
-
-</TabItem>
-<TabItem value='text' label='テキスト'>
-
-**MXQL**を平文のまま修正できる編集ウィンドウが表示されます。
-
-<ImgLang img='set-event-metrics-text.png' desc='メトリクスイベント - テキスト' />
-
-</TabItem>
-</Tabs>
-
-### 通知
-
-アラート通知設定の基本情報を入力します。
-
--   <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、イベントをアクティブ化の有無を選択します。
-
--   <Cmdname sid="level" className="uitext" />: <span class='vslow'>危険(Critical)</span>, <span class='slow'>警告(Warning)</span>, <span style={{color: '#757575'}}>情報</span>の中で一つのレベルを選択してください。
-
-    <Cmdname sid="resolved_event_notification" className="uitext" />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
-
--   <Cmdname sid="title" className="uitext" />：アラート通知のタイトルを入力します。
-
--   <Cmdname sid="message" className="uitext" />：イベント発生時に送信する通知メッセージを入力します。<code>&#36;&#123;タグまたはフィールドキー&#125;</code> を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
-
-### アラート通知ポリシー
-
-アラート通知を送信する条件を入力します。
-
--   <Cmdname sid="data_time_range" className="uitext" />：イベント条件に使用する<b>MXQL</b>のリアルタイムデータの参照範囲を設定します。イベント データの参照に含まれるフィールドのみ使用できます。
-
-    複合メトリクスイベントは、DBに保存されているメトリクスを参照して使用します。したがって、最初にデータを検索する時間範囲を指定する必要があります。データ取得時間を5分で選択すると、過去5分間に収集されたデータが参照され、イベント発生条件を確認します。最近のデータに対して、イベントを設定する場合は短く、統計的にアクセスしたい場合は長く設定できます。実際の使用例については、[次の文書](#template)を参照してください。
-
--   <Cmdname sid="condition" className="uitext" />：MXQLに反映するフィールドと演算ルール、しきい値を入力します。
-
-### 付加情報
-
-アラート通知を受信するために追加オプションを設定します。
-
--   <Cmdname sid="interval" className="uitext" />：選択した時間間隔で通知条件を確認します。
-
--   <Cmdname sid="silent" className="uitext" />：過剰なアラート通知が発生しないようにするオプションです。最初のアラート通知の後、選択された時間にアラート通知は送信されません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
-
--   <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
-
-    :::note
-
-    <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
-
-    :::
-
-### アラート通知テスト
-
-<ImgLang img='set-event-cmetric-test.png' desc='イベントルールテスト' />
-
-選択した時間に設定したイベント条件を実行し、アラート通知の件数を確認できます。実行ボタンを選択すると、通知発生の件数情報が表示され、イベント発生条件で選択したフィールドとしきい値がチャートに表示します。
-
-イベント設定に含まれるほとんどの内容は、**MXQL**を使用して指定されます。**MXQL**が正しく作成されているかシミュレーションできる機能を提供します。シミュレーション機能は、過去24時間のデータを参照してイベントを特定した後、表示されたメトリックの数と成功したメトリックの数を表示します。
-
-## メトリクスイベントの修正と削除
-
-1.  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューから移動した後<Cmdname sid="metrics" className="uitext" />タブを選択してください。
-
-2.  イベント一覧から修正または削除する項目の右端の![編集アイコン](/img/ico-edit.svg)ボタンをクリックしてください。
-
-3.  メトリクスまたは複合メトリクスのイベント設定ウィンドウが表示すると、各オプションを修正して、<Cmdname sid="save" className="uitext" />ボタンを選択してください。
-
-  選択したイベントを削除するには、イベント設定ウィンドウの右上の![削除アイコン](/img/ico-trash.svg) <Cmdname sid="delete" className="uitext" />ボタンをクリックしてください。
-
-## 発生条件、対象選択ガイド {#condition-guide}
-
-メトリクスアラート通知でイベントの発生条件とイベント対象選択では同じ文法を使用します。ただし、イベントの生成条件は、タグ(Tag)のKeyを変数として使用し、イベント対象選択は、フィールド(Field)のKeyを変数として使用します。
-
-### 基本文法
-
--   文字列をそのまま入力すると変数、バッククォート(' ')またはダブルクォート('' ")で囲むとtextとして認識します。
-
-    ```java title='oid == "oid"'
-    1. oid : 変数
-    2. == : 関数
-    3. "oid" : text
-    ```
-
-    ```java
-    // onameがott-1235の場合
-
-    // 正常な場合
-    onname = 'ott-1235'またはonname = "ott-1235"
-
-    // 異常な場合、通知は機能しません。
-    onname = ott-1235
-    ```
-
--   数字をそのまま入力すると、number、バッククォート(' ')またはダブルクォート('' '')で囲むとtextとして認識します。
-
-    ```java title='oid == 123'
-    1. oid : 変数
-    2. == : 関数
-    3. 123 : number
-    ```
-
-    ```java
-    // oidが123の場合
-
-    // 正常な場合
-    oid = 123
-
-    // 異常な場合、通知は機能しません。
-    id == '123' または oid == '123'
-    ```
-
-### 使用可能な演算子の一覧
-
-|   オペレーター       | 使い方                           | 説明                                                                                            |
-| :------------: | ----------------------------- | --------------------------------------------------------------------------------------------- |
-|    ==          | operand1 == operand2          | operand1とoperand2の値が同じであることを確認します。                                                            |
-|    !=          | operand1 != operand2          | operand1とoperand2の値が異なることを確認します。                                                              |
-| <span>></span> | operand1 > operand2           | operand1の値がoperand2の値より大きいことを確認します。                                                           |
-|    > =         | operand1 >= operand2          | operand1の値がoperand2の値より大きいことを確認します。                                                           |
-|    \<          | operand1 \< operand2          | operand1の値がoperand2の値より小さいことを確認します。                                                           |
-|    \<=         | operand1 \<= operand2         | operand1の値がoperand2の値より小さいことを確認します。                                                           |
-|    like        | operand1 like operand2        | operand1にoperand2が含まれているかどうかをパターンで検索します。                                                      |
-|    &&          | expression1 && expression2    | expression1とexpression2の両方が`true`であることを確認します。                                                 |
-|    and         | expression1 and expression2   | expression1とexpression2の両方が`true`であることを確認します。<br/>**&&**と同じ役割を実行する演算子です。                      |
-|     ||         | expression1 || expression2    | expression1またはexpression2が`true`であることを確認します。                                                  |
-|    or          | expression1 or expression2    | expression1またはexpression2が`true`であることを確認します。<br/>**||**と同じ役割を実行する演算子です。                       |
-
-#### likeの使い方
-
-ワイルドカード(`*`)含む文字列を簡単に検索できます。
-
--   特定のキーワードで始まる文字列検索
-
-    ```java
-
-    Key like "Value*"
-
-    ```
-
--   特定のキーワードで終わる文字列検索
-
-    ```java
-
-    Key like "*Value"
-
-    ```
-
--   特定のキーワードを含む文字列検索
-
-    ```java
-
-    Key like "*Value*"
-
-    ```
-
--   キーワードの中にワイルドカード(`*`)が使用できません。
-
-    ```java
-
-    //対応しない文法
-    Key like "Va*lue"
-
-    ```
-
--   `like`演算子からワイルドカード(`*`)を省略する場合、equals(`==`)で動作します。
-
-    ```java
-
-    //以下の2つの文章は全く同じ結果になります。
-    Key like "Value"
-    Key == "Value"
-
-    ```
-
-### 使用可能なメソッド一覧
-
-| メソッド                      | 使い方                        | 説明                                                                      |
-| ------------------------- | -------------------------- | ----------------------------------------------------------------------- |
-| [startsWith](#startwith)  | startsWith(param1, param2) | param1をKeyとするValueがparam2で始まる場合は、`true`、反対の場合は、`false`                  |
-| [endsWith](#endsWith)     | endsWith(param1, param2)   | param1をKeyとするValueがparam2で終わる場合、`true`、反対の場合は、`false`                   |
-| [isNull](#isnull)         | isNull(param1)             | param1が`null`の場合は、`true`、反対の場合は、`false`                                 |
-| [isNotNull](#isnotnull)   | isNotNull(param1)          | param1が`null`でない場合は、`true`、反対の場合は、`false`                               |
-| [isEmpty](#isempty)       | isEmpty(param1)            | param1が`null`または`EmptyString("")`の場合は、`true`、反対の場合は、`false`             |
-| [isNotEmpty](#isnotempty) | isNotEmpty(param1)         | param1が`null`でも、`EmptyString("")`でもない場合は、`true`、反対の場合は、`false`          |
-
-#### startsWith {#startwith}
-
-```java
-startsWith(Key, "Value")
-```
-
-#### endsWith {#endswith}
-
-```java
-endsWith(Key, "Value")
-```
-
-#### isNull {#isnull}
-
-```java
-isNull(Key)
-```
-
-#### isNotNull {#isnotnull}
-
-```java
-isNotNull(Key)
-```
-
-#### isEmpty {#isempty}
-
-```java
-isEmpty(Key)
-```
-
-#### isNotEmpty {#isnotempty}
-
-```java
-isNotEmpty(Key)
-```

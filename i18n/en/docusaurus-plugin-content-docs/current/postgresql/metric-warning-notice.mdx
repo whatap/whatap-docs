@@ -13,7 +13,13 @@ import Note from '../common-items/_import_v2-note.mdx';
 
 <Note product='PostgreSQL' link='../postgresql-v1/metric-warning-notice' />
 
-{@include: ../common-items/_metrics-warning-notice.mdx}
+{@include: ../common-items/_metrics-warning-notice.mdx} 
+
+{@include: ../common-items/_composite-metrics-warning-notice.mdx}
+
+{@include: ../common-items/_metrics-event-modify-delete.mdx}
+
+{@include: ../common-items/_metrics-event-condition-select-target-guide.mdx}
 
 ## Template{#template}
 
@@ -68,7 +74,7 @@ in the <Cmdname sid="metrics" className="uitext" /> section. From the <Cmdname s
 
 -   <p><Cmdname sid="TTL07137" className="uitext" /><span class="uitext">_Warning</span></p>
 
-    Condition: `blks_hit_ratio` \<= 80
+    Condition: `blks_hit_ratio` <= 80
 
     If the memory block hit ratio in an individual instance is 80% or less, a <span class='slow'>Warning</span> level notification is sent.
 

@@ -11,11 +11,13 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+:::note 
+
+EKS Fargateは、対応予定です。 
+
+:::
+
 エージェントのアップデートが必要な場合は、次のコマンドを実行してください。
-
-<Tabs groupId='k8stype'>
-
-<TabItem value='kubernetes' label='KUBERNETES' default>
 
 -   **マスターエージェント**
 
@@ -28,20 +30,6 @@ import TabItem from '@theme/TabItem';
     ```bash
     kubectl set image -n whatap-monitoring daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent_version}
     ```
-
-</TabItem>
-
-<TabItem value='eksfragate' label='EKS Fargate(サポート予定)'>
-
-**マスターエージェント**
-
-```
-kubectl set image deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:{agent_version}
-```
-
-</TabItem>
-
-</Tabs>
 
 :::note
 

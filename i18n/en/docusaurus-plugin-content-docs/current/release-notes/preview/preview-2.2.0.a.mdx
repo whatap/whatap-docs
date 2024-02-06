@@ -15,6 +15,100 @@ In [https://preview.whatap.io](https://preview.whatap.io), the following new fea
 
 :::
 
+## Preview 2.2.0.a3
+
+February 1, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+-   <Status>Changed</Status> In <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="project_subscription" className="uitext" />, changed from <Cmdname sid="include_project_has_not_billing" className="b500" /> to <Cmdname sid="DSC07606" className="uitext" /> and added the tooltip.
+
+-   <Status>Fixed</Status> In <Cmdname sid="integrated_member_management" className="uitext" />, modified the width of the member list table.
+
+-   <Status>Fixed</Status> In <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="my_profile" className="uitext" />, fixed the issue where even tags are copied when copying a reason for not being able to withdraw from membership.
+
+-   In <Cmdname sid="flexboard" className="uitext" />, the following features have been added and modified.
+
+    -   <Status>Feature</Status> Added the group widget copying feature.
+
+    -   <Status>Fixed</Status> Fixed the issue where the number of events in the event timeline widget intermittently increases differently from the actual event count.
+
+    -   <Status>Fixed</Status> Modified to move to the dashboard list when loading the dashboard fails.
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the agent filtering (<code>okind</code>, <code>onode</code>) is not applied.</p>
+
+* * *
+
+### `Database`
+
+#### Common
+
+<p><Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, added considerations depending on the operating system when entering commands to create a DB user file.</p>
+
+#### Redis
+
+<p><Status>Changed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, added descriptions for the <em>uid.sh</em> execution command that differ depending on the Redis version.</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status> Added the <Cmdname sid="kubernetesAgentList" className="uitext" /> menu to check the installation status of master and node agents.
+
+    :::note
+
+    This feature is only for cluster projects. In the <Cmdname sid="management" className="uitext" /> > <Cmdname sid="kubernetesAgentList" className="uitext" /> path, you can see this feature.
+
+    :::
+
+-   Added the <Cmdname sid="kubeApiserverDashboard" className="uitext" /> menu to monitor the availability and performance of the cluster by collecting health and performance metrics for kube-apiserver and tracing the response times, throughput, request failures, and such.
+
+    :::note
+
+    This feature can be seen in the <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="kubeApiserverDashboard" className="uitext" /> path.
+
+    :::
+
+-   <Status>Changed</Status> When using the comparison feature in <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />, added the <span class="uitext">Container CPU Usage</span> chart in the <Cmdname sid="kube_default" className="uitext" /> and <Cmdname sid="kube_cpu" className="uitext" /> tabs.
+
+* * *
+
+### `Log`
+
+<p><Status>Changed</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />, modified the style of the guide message that appears when the log monitoring is disabled.</p>
+
+* * *
+
+### `AWS Log`
+
+<p><Status>Fixed</Status> In <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />, modified to connect the guide for the user-selected language.</p>
+
+* * *
+
+### `Network`
+
+-   <Status>Fixed</Status> Modified the image for the language set in the agent installation menu.
+
+-   <Status>Fixed</Status> Fixed the issue where the Docs (guide) link is not connected in some menu paths.
+
+-   <Status>Fixed</Status> In some elements, fixed the issue where the dark theme is not applied.
+
+-   <Status>Fixed</Status> In the sidebar and <Cmdname sid="sitemap" className="uitext" />, fixed the issue where some menus do not appear.
+
+-   <Status>Fixed</Status> In <Cmdname sid="MNU06848" className="uitext" />, modified to perform line wrapping depending on the length of the title under the <Cmdname sid="filter" className="uitext" /> tab.
+
+-   <Status>Fixed</Status> Fixed the agent IP address display issue when adding a maintenance plan.
+
+<p>Fixed and improved minor bugs that users might not notice. 😉</p>
+
+</div>
+
 ## Preview 2.2.0.a2
 
 January 26, 2024
