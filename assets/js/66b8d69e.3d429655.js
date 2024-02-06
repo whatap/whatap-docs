@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[26080],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[99684],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 4260:
+/***/ 24776:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -319,16 +319,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "amazon-ecs/metrics-search",
-    "id": "amazon-ecs/metrics-search",
+    "unversionedId": "python/metrics-search",
+    "id": "python/metrics-search",
     "title": "메트릭스 조회",
     "description": "메트릭스 Raw Data를 조회할 수 있습니다.",
-    "source": "@site/docs/amazon-ecs/metrics-search.mdx",
-    "sourceDirName": "amazon-ecs",
-    "slug": "/amazon-ecs/metrics-search",
-    "permalink": "/whatap-docs/amazon-ecs/metrics-search",
+    "source": "@site/docs/python/metrics-search.mdx",
+    "sourceDirName": "python",
+    "slug": "/python/metrics-search",
+    "permalink": "/whatap-docs/python/metrics-search",
     "draft": false,
-    "editUrl": "undefined/docs/amazon-ecs/metrics-search.mdx",
+    "editUrl": "undefined/docs/python/metrics-search.mdx",
     "tags": [
         {
             "label": "메트릭스",
@@ -354,14 +354,14 @@ const metadata = {
             "UI"
         ]
     },
-    "sidebar": "awsecsSidebar",
+    "sidebar": "pySidebar",
     "previous": {
-        "title": "메트릭스",
-        "permalink": "/whatap-docs/amazon-ecs/metrics-intro"
+        "title": "애플리케이션 성능 카운터",
+        "permalink": "/whatap-docs/python/metrics-performance-counter"
     },
     "next": {
-        "title": "메트릭스 큐브",
-        "permalink": "/whatap-docs/amazon-ecs/metrics-cube"
+        "title": "메트릭스 차트",
+        "permalink": "/whatap-docs/python/metrics-chart"
     }
 };
 const assets = {};
@@ -387,6 +387,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
 const ImgLang = makeShortcode("ImgLang");
+const InDoc = makeShortcode("InDoc");
+const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
 };
@@ -632,7 +634,18 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `CSV 다운로드`)), ` 버튼을 선택해 해당 메트릭스 원본 데이터를 CSV 파일로 다운로드할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `CSV 다운로드`)), ` 버튼을 선택해 해당 메트릭스 원본 데이터를 CSV 파일로 다운로드할 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        product: "npm",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `네트워크 성능 모니터링에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "tag",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 항목을 제공하지 않습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "-메트릭스-테이블"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         src: (__webpack_require__(31805)/* ["default"] */ .c),
@@ -679,7 +692,18 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
-    }, `필드`)), ` 지정은 선택 사항입니다. `)))));
+    }, `필드`)), ` 지정은 선택 사항입니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        product: "npm",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, `네트워크 성능 모니터링에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "tag",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 항목을 제공하지 않습니다.`)))));
 }
 MDXContent.isMDXComponent = true;
 
