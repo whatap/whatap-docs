@@ -274,6 +274,33 @@ function colsToJson(data){
     "ko": "쿠버네티스 에이전트 목록"
   }
 
+  rd["kubeApiserverDashboard"] = {
+    "en": "kube-apiserver Dashboard",
+    "ja": "kube-apiserver ダッシュボード",
+    "ko": "kube-apiserver 대시보드"
+  }
+
+  rd["eventNoti"] = {
+    "en": "Configuration",
+    "ja": "通知設定",
+    "ko": "이벤트 수신 설정"
+  }
+
+  rd["projectSubscription"] = {
+    "en": "Project Subscription Status",
+    "ja": "プロジェクト課金状況",
+    "ko": "프로젝트 유료 전환"
+  }
+
+  rd["tag_count"].ja = "メトリックス照会";
+  rd["tag_count"].en = "Metrics Search";
+
+  rd["tag_count_chart"].ja = "メトリックスチャート";
+  rd["tag_count_chart"].en = "Metrics Chart";
+
+  rd["tag_count_anomaly_detection"].ja = "メトリックス異常検出";
+  rd["tag_count_anomaly_detection"].en = "Metrics Anomaly Detection";
+
   return rd;
 }
 
