@@ -8,7 +8,13 @@ tags:
   - Kubernetes Monitoring
 ---
 
-{@include: ../common-items/_metrics-warning-notice.mdx}
+{@include: ../common-items/_metrics-warning-notice.mdx} 
+
+{@include: ../common-items/_composite-metrics-warning-notice.mdx}
+
+{@include: ../common-items/_metrics-event-modify-delete.mdx}
+
+{@include: ../common-items/_metrics-event-condition-select-target-guide.mdx}
 
 ## Metrics event templates{#k8s-metrics-event-template}
 
@@ -143,3 +149,19 @@ The alert occurs when the transaction exists and the APDEX score is less than 0.
 The alert occurs when the number of Pods that can be allocated to the node is 0. The <Cmdname sid="message" className="uitext" /> example is as follows:
 
 > APDEX is lower than 0.7 (`${oname}`)
+
+<!-- 
+
+#### ***HPA CPU 사용률 알림***
+
+현재 실행 중인 Pod의 수가 리소스 내 최대 Pod 수와 같고 CPU 사용률이 70% 이상일 경우 해당 알림이 발생합니다. <Cmdname sid="message" className="uitext" /> 예시는 다음과 같습니다.
+
+> HPA POD 생성 최대치에 도달하였고 CPU 사용률이 >= 70% 상태 입니다.
+
+#### ***HPA 메모리 사용률 알림***
+
+현재 실행 중인 Pod의 수가 리소스의 허용 가능한 최대 Pod 수와 같고 메모리 사용률이 90% 이상일 경우 해당 알림이 발생합니다. 
+
+> HPA POD 생성 최대치에 도달하였고 메모리 사용률이 >= 90% 상태 입니다.
+
+-->

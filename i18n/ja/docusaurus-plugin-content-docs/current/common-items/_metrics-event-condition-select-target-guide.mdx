@@ -1,0 +1,151 @@
+## 発生条件、対象選択ガイド {#condition-guide}
+
+メトリクスアラート通知でイベントの発生条件とイベント対象選択では同じ文法を使用します。 ただし、イベントの生成条件は、タグ(Tag)のKeyを変数として使用し、イベント対象選択は、フィールド(Field)のKeyを変数として使用します。
+
+### 基本文法
+
+-   文字列をそのまま入力すると変数、バッククォート(' ')またはダブルクォート('' ")で囲むとtextとして認識します。
+
+    ```java title='oid == "oid"'
+    1. oid : 変数
+    2. == : 関数
+    3. "oid" : text
+    ```
+
+    ```java
+    // onameがott-1235の場合
+
+    // 正常な場合
+    onname = 'ott-1235'またはonname = "ott-1235"
+
+    // 異常な場合、通知は機能しません。
+    onname = ott-1235
+    ```
+
+-   数字をそのまま入力すると、number、バッククォート(' ')またはダブルクォート('' '')で囲むとtextとして認識します。
+
+    ```java title='oid == 123'
+    1. oid : 変数
+    2. == : 関数
+    3. 123 : number
+    ```
+
+    ```java
+    // oidが123の場合
+
+    // 正常な場合
+    oid = 123
+
+    // 異常な場合、通知は機能しません。
+    id == '123' または oid == '123'
+    ```
+
+### 使用可能な演算子の一覧
+
+|   オペレーター       | 使い方                           | 説明                                                                                            |
+| :------------: | ----------------------------- | --------------------------------------------------------------------------------------------- |
+|    ==          | operand1 == operand2          | operand1とoperand2の値が同じであることを確認します。                                                            |
+|    !=          | operand1 != operand2          | operand1とoperand2の値が異なることを確認します。                                                              |
+| <span>></span> | operand1 > operand2           | operand1の値がoperand2の値より大きいことを確認します。                                                           |
+|    > =         | operand1 >= operand2          | operand1の値がoperand2の値より大きいことを確認します。                                                           |
+|    <          | operand1 < operand2          | operand1の値がoperand2の値より小さいことを確認します。                                                           |
+|    <=         | operand1 <= operand2         | operand1の値がoperand2の値より小さいことを確認します。                                                           |
+|    like        | operand1 like operand2        | operand1にoperand2が含まれているかどうかをパターンで検索します。                                                      |
+|    &&          | expression1 && expression2    | expression1とexpression2の両方が`true`であることを確認します。                                                 |
+|    and         | expression1 and expression2   | expression1とexpression2の両方が`true`であることを確認します。<br/>**&&**と同じ役割を実行する演算子です。                      |
+|     ||         | expression1 || expression2    | expression1またはexpression2が`true`であることを確認します。                                                  |
+|    or          | expression1 or expression2    | expression1またはexpression2が`true`であることを確認します。<br/>**||**と同じ役割を実行する演算子です。                       |
+
+#### likeの使い方
+
+ワイルドカード(`*`)含む文字列を簡単に検索できます。
+
+-   特定のキーワードで始まる文字列検索
+
+    ```java
+
+    Key like "Value*"
+
+    ```
+
+-   特定のキーワードで終わる文字列検索
+
+    ```java
+
+    Key like "*Value"
+
+    ```
+
+-   特定のキーワードを含む文字列検索
+
+    ```java
+
+    Key like "*Value*"
+
+    ```
+
+-   キーワードの中にワイルドカード(`*`)が使用できません。
+
+    ```java
+
+    //対応しない文法
+    Key like "Va*lue"
+
+    ```
+
+-   `like`演算子からワイルドカード(`*`)を省略する場合、equals(`==`)で動作します。
+
+    ```java
+
+    //以下の2つの文章は全く同じ結果になります。
+    Key like "Value"
+    Key == "Value"
+
+    ```
+
+### 使用可能なメソッド一覧
+
+| メソッド                      | 使い方                        | 説明                                                                      |
+| ------------------------- | -------------------------- | ----------------------------------------------------------------------- |
+| [startsWith](#startwith)  | startsWith(param1, param2) | param1をKeyとするValueがparam2で始まる場合は、`true`、反対の場合は、`false`                  |
+| [endsWith](#endsWith)     | endsWith(param1, param2)   | param1をKeyとするValueがparam2で終わる場合、`true`、反対の場合は、`false`                   |
+| [isNull](#isnull)         | isNull(param1)             | param1が`null`の場合は、`true`、反対の場合は、`false`                                 |
+| [isNotNull](#isnotnull)   | isNotNull(param1)          | param1が`null`でない場合は、`true`、反対の場合は、`false`                               |
+| [isEmpty](#isempty)       | isEmpty(param1)            | param1が`null`または`EmptyString("")`の場合は、`true`、反対の場合は、`false`             |
+| [isNotEmpty](#isnotempty) | isNotEmpty(param1)         | param1が`null`でも、`EmptyString("")`でもない場合は、`true`、反対の場合は、`false`          |
+
+#### startsWith {#startwith}
+
+```java
+startsWith(Key, "Value")
+```
+
+#### endsWith {#endswith}
+
+```java
+endsWith(Key, "Value")
+```
+
+#### isNull {#isnull}
+
+```java
+isNull(Key)
+```
+
+#### isNotNull {#isnotnull}
+
+```java
+isNotNull(Key)
+```
+
+#### isEmpty {#isempty}
+
+```java
+isEmpty(Key)
+```
+
+#### isNotEmpty {#isnotempty}
+
+```java
+isNotEmpty(Key)
+```

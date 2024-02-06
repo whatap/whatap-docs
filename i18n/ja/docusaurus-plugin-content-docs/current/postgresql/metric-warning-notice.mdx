@@ -13,7 +13,13 @@ import Note from '../common-items/_import_v2-note.mdx';
 
 <Note product='PostgreSQL' link='../postgresql-v1/metric-warning-notice' />
 
-{@include: ../common-items/_metrics-warning-notice.mdx}
+{@include: ../common-items/_metrics-warning-notice.mdx} 
+
+{@include: ../common-items/_composite-metrics-warning-notice.mdx}
+
+{@include: ../common-items/_metrics-event-modify-delete.mdx}
+
+{@include: ../common-items/_metrics-event-condition-select-target-guide.mdx}
 
 ## テンプレート{#template}
 
@@ -67,7 +73,7 @@ import Note from '../common-items/_import_v2-note.mdx';
 
 -   <p><Cmdname sid="TTL07137" className="uitext" /><span class="uitext">_Warning</span></p>
 
-    条件：`blks_hit_ratio` \<= 80
+    条件：`blks_hit_ratio` <= 80
 
     個々のインスタンスでMemory Block Hit率が80%以下の場合、<span class='slow'>Warning</span>(アラート) レベルの通知が送信されます。
 

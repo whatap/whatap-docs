@@ -121,6 +121,12 @@ It displays the method start time and execution time in the transaction trace as
 
 The plug-in APIs are divided into common items: `$ctx`, `$point`, `$req`, and `$res`. Upon the transaction start/end, it can be applied in HTTPC section, specific method execution section, etc.
 
+:::caution
+
+It is prohibited to store personally identifiable information by using plug-in APIs. When collecting personal information, this must be clearly stated in the privacy policy.
+
+:::
+
 ### Provision of parameters - common plug-in files{#common-plugin}
 
 | Parameter | Method/variable                                                   | Description                                                                        |

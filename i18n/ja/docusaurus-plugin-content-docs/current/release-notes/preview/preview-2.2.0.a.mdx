@@ -15,6 +15,100 @@ draft: false
 
 :::
 
+## Preview 2.2.0.a3
+
+2024年02月01日
+
+<div class='indentTab'>
+
+### `共通`
+
+-   <Status>Changed</Status> <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="project_subscription" className="uitext" />メニューの<Cmdname sid="include_project_has_not_billing" className="b500" />メッセージを<Cmdname sid="DSC07606" className="uitext" />に変更し、ツールチップを追加
+
+-   <Status>Fixed</Status> <Cmdname sid="integrated_member_management" className="uitext" />メニューでメンバー一覧テーブルの幅を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="my_profile" className="uitext" />メニューで会員退会不可の理由をコピーするとタグまでコピーされる問題を修正
+
+-   <Cmdname sid="flexboard" className="uitext" />メニューで次の機能を追加・修正します。
+
+    -   <Status>Feature</Status>グループウィジェットコピー機能を追加
+
+    -   <Status>Fixed</Status>イベントタイムラインウィジェットのイベント回数が断続的に実際のイベント発生回数と異なるように増加する現象を修正
+
+    -   <Status>Fixed</Status>ダッシュボードの読み込みに失敗した場合、ダッシュボード一覧に移動するように修正
+
+* * *
+
+### `Application`
+
+<p><Status>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウでエージェントフィルタリング(<code>okind</code>、<code>onode</code>)が適用されない問題を修正</p>
+
+* * *
+
+### `Database`
+
+#### 共通
+
+<p><Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでDBユーザーファイルを作成するためのコマンドを入力する時に、オペレーティングシステムによる考慮事項を追加</p>
+
+#### Redis
+
+<p><Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでRedisバージョンによって異なる<em>uid.sh</em>実行コマンドの説明を追加</p>
+
+* * *
+
+### `Kubernetes`
+
+-   <Status>Feature</Status>マスター及びノードエージェントのインストール状況が確認できる<Cmdname sid="kubernetesAgentList" className="uitext" />メニューを追加
+
+    :::note
+
+    この機能はクラスタープロジェクト専用であり、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="kubernetesAgentList" className="uitext" />メニューパスで確認できます。
+
+    :::
+
+-   <Status>Feature</Status> kube-apiserverの状態と性能メトリクスの収集、レスポンスタイム、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューを追加
+
+    :::note
+
+    この機能は、<Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューパスで確認できます。
+
+    :::
+
+-   <Status>Changed</Status> <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />メニューで比較する機能の利用時、<Cmdname sid="kube_default" className="uitext" />、<Cmdname sid="kube_cpu" className="uitext" />タブに<span class="uitext">Container CPU Usage</span>チャートを追加
+
+* * *
+
+### `Log`
+
+<p><Status>Changed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでログモニタリングを非活性化する時に表示される案内メッセージのスタイルを修正</p>
+
+* * *
+
+### `AWS Log`
+
+<p><Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでユーザーが選択した言語に合ったガイドにアクセスするように修正</p>
+
+* * *
+
+### `ネットワーク`
+
+-   <Status>Fixed</Status>エージェントのインストールメニューで言語に合う画像に修正
+
+-   <Status>Fixed</Status>一部のメニューパスでDocs(ガイド) のリンクがつながらない問題を修正
+
+-   <Status>Fixed</Status>一部の要素にダークテーマが適用されない問題を修正
+
+-   <Status>Fixed</Status>サイドバー及び<Cmdname sid="sitemap" className="uitext" />で一部メニューが見えない問題を修正
+
+-   <Status>Fixed</Status> <Cmdname sid="MNU06848" className="uitext" />メニューの<Cmdname sid="filter" className="uitext" />タブでタイトルテキスト要素の長さに応じて改行されるように処理
+
+-   <Status>Fixed</Status>整備計画の追加時、エージェントipのアドレス表示問題を修正
+
+<p>この他にも、ユーザーが気づかない些細なバグを修正し、改善しました。 😉</p>
+
+</div>
+
 ## Preview 2.2.0.a2
 
 2024年01月26日

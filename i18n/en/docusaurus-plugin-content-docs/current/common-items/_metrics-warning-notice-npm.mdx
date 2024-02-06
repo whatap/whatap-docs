@@ -1,15 +1,23 @@
 ## Template{#template}
 
-In **_Alert_** > **_Event Setting_** > **_Metrics_**, select **_+ Add Alert Policy_**. Select a desired item in **_Templates_**. The alert templates are provided as follows.
+In **_Alert_** > **_Event Configuration_**, select **_+ Add Alert Policy_**. Select a desired item in **_Templates_**. The alert templates are provided as follows.
 
--   **_Network Jitter Alert_**
+-   <Cmdname sid="CNT06830" className="uitext" />
 
-    It sends this alert when the average **jitter** exceeds 30 ms.
+    It sends this alert when the average **jitter**(`avg_jitter`) exceeds 30 ms.
 
--   **_Network Latency Warning_**
+-   <Cmdname sid="CNT06831" className="uitext" />
 
-    If the average **latency** exceeds 200 ms, this alert is sent.
+    If the average **latency**(`avg_latency`) exceeds 200 ms, this alert is sent.
 
--   **_Data transfer warning_**
+-   <Cmdname sid="CNT06832" className="uitext" />
 
-    If the communication **bps** exceeds 128 Mib/s, this alert is sent.
+    If the data transmission amount (**bps**) exceeds 128 Mib/s, this alert is sent.
+
+-   <Cmdname sid="CNT06833" className="uitext" />
+
+    If the packet transmission amount (**pps**) exceeds 50 Kpps, this alert is sent.
+
+-   <Cmdname sid="CNT06834" className="uitext" />
+
+    If the aggregated session count (`session_count`) is greater than 100, this alert is sent.

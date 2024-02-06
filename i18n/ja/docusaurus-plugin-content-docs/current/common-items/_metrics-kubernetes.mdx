@@ -95,9 +95,9 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | mem_maxusage            | バイト   | MemMaxUsage                                                                                                                           |
 | ^                       | ^     | Container Memory Max Usage (byte)                                                                                                     |
 | ^                       | ^     | コンテナメモリの最大使用量の記録値                                                                                                                     |
-| mem_percent             | パーセント | MemByLimit                                                                                                                            |
-| ^                       | ^     | Container Memory by Limit (%)                                                                                                         |
-| ^                       | ^     | コンテナメモリLimit基準使用量<br/>= mem_usage / mem_limit \* 100                                                                                  |
+| mem_percent             | パーセント | MemWsByLimit                                                                                                                          |
+| ^                       | ^     | Container Memory Working Set by Limit (%)                                                                                             |
+| ^                       | ^     | コンテナメモリLimit基準working set使用量<br/>= mem_working_set / mem_limit \* 100                                                                 |
 | mem_totalcache          | バイト   | MemTotCache                                                                                                                           |
 | ^                       | ^     | Container Memory Total Cache (byte)                                                                                                   |
 | ^                       | ^     | コンテナ全体のキャッシュサイズ                                                                                                                       |

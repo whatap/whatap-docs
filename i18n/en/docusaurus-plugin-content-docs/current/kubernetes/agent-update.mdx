@@ -11,11 +11,13 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+:::note 
+
+EKS Fargate is to be supported later. 
+
+:::
+
 If an agent update is required, execute the following command:
-
-<Tabs groupId='k8stype'>
-
-<TabItem value='kubernetes' label='KUBERNETES' default>
 
 -   **Master Agent**
 
@@ -28,20 +30,6 @@ If an agent update is required, execute the following command:
     ```bash
     kubectl set image -n whatap-monitoring daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:{agent_version}
     ```
-
-</TabItem>
-
-<TabItem value='eksfragate' label='EKS Fargate(Scheduled support)'>
-
-**Master Agent**
-
-```
-kubectl set image deployment/whatap-master-agent whatap-master-agent=whatap/kube_mon:{agent_version}
-```
-
-</TabItem>
-
-</Tabs>
 
 :::note
 

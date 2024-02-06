@@ -1,0 +1,133 @@
+## Composite metrics event
+
+To use the <Cmdname sid="composite_metrics" className="uitext" />, you have to understand the following concepts:
+
+<Xclude product='npm'>
+
+-   [What is the metrics?](metrics-intro)
+
+</Xclude>
+
+<InDoc product='npm'>
+
+-   [What is the metrics?](../metrics/common-metrics-intro)
+
+</InDoc>
+
+-   [MXQL](../mxql/mxql-overview)
+
+The <Cmdname sid="composite_metrics" className="uitext" /> event can generate events by using more complex rules along with the metrics data and send alerts. Composite metrics can be used effectively in the following situations:
+
+-   You have to make comprehensive decisions on data received from multiple agents.
+-   You have to compare the past data with the current ones to make judgment.
+
+Metrics events make judgment whenever metrics are received from the agents. On the other hand, the composite metrics event stores the metrics collected from each agent into the database. Then they are reviewed to judge the event. Because of this characteristic, the data from multiple agents can be used collectively or the past data can be used. However, there is a barrier to entry that requires to use **MXQL**, the WhaTap's unique data query language. Therefore, event templates are provided so that users can effectively set events only if they understand the basic **MXQL**. Basic MXQL users can apply events by just modifying the query for event target filtering and conditions.
+
+1.  Select <Cmdname sid="metrics" className="uitext" /> on the screen in <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />.
+
+2.  In the <Cmdname sid="composite_metrics" className="uitext" /> section, select <Cmdname sid="add_notification" className="uitext" /> on the right.
+
+3.  If the <Cmdname sid="composite_metrics" className="uitext" /> window appears, select <Cmdname sid="create_new_composite_mxql_event" className="uitext" />.
+
+The Event Setting window appears. 
+
+<ImgLang img='set-event-cmetric.png' desc='Composite Metrics Event Setting' />
+
+<Xclude product='server'>
+
+:::note
+
+To set a composite metrics event, you have to have the **_event setting_** role.
+
+:::
+
+</Xclude>
+
+<InDoc product='server,postgresql,postgresql-v1,java,python,php,nodejs,golang,dotnet,browser'>
+
+:::note
+
+For more information about the event templates for composite metrics, see [the following](#composite-metrics-template).
+
+:::
+
+</InDoc>
+
+### Query event data
+
+<Cmdname sid="composite_metrics" className="uitext" /> The event creates event conditions by using <b>MXQL</b>, a metrics data query language. The <Cmdname sid="create_new_composite_mxql_event" className="uitext" /> function provides a combo box function for automatic completion of <b>MXQL</b>. This template is used to query the event data, construct a chart, and then directly enter the event generation conditions. Select the <Cmdname sid="widget" className="uitext" /> or <Cmdname sid="text" className="uitext" /> option, and then configure the event.
+
+<Tabs>
+<TabItem value='widget' label='위젯'>
+
+Through the option to configure the time series charts, you can autocomplete **MXQL** for using when setting events.
+
+<ImgLang img='set-event-data-view.png' desc='Event data inquiry' />
+
+-   <Cmdname sid="filter" className="uitext" />: Select an event condition target. Enter values for <LinkImage img="number-01.png" className="ico" /> formula, <LinkImage img="number-02.png" className="ico" /> tag, and <LinkImage img="number-03.png" className="ico" /> filtering values to create filtering conditions.
+
+    <ImgLang img='set-event-cmetric-filter.png' desc='Filter' />
+
+-   <Cmdname sid="groupby" className="uitext" />: Select the grouped metrics data. You can select multiple items.
+
+-   <Cmdname sid="timeunit" className="uitext" />: Set the time criterion for dividing the grouped data. You can set it by selecting <Cmdname sid="second" className="uitext" />, <Cmdname sid="minute" className="uitext" />, and <Cmdname sid="hour" className="uitext" />.
+
+-   <Cmdname sid="field" className="uitext" />: Select fields to use as event generation conditions. You can select multiple items.
+
+</TabItem>
+<TabItem value='text' label='텍스트'>
+
+The editing window appears where you can modify **MXQL** in plain text.
+
+<ImgLang img='set-event-metrics-text.png' desc='Metrics Event - Text' />
+
+</TabItem>
+</Tabs>
+
+### Notification
+
+Enter basic data for alert settings.
+
+-   <Cmdname sid="enable_events" className="uitext" />: You can select to enable or disable the events by clicking the toggle button.
+
+-   <Cmdname sid="level" className="uitext" />: Select a level among <span class='vslow'>Fatal</span>, <span class='slow'>Warning</span>, and <span style={{color: '#757575'}}>Info</span>.
+
+    <Cmdname sid="resolved_event_notification" className="uitext" />: You can set whether or not to send notifications when the occurred event's status is resolved. This function can be enabled or disabled by selecting the toggle button.
+
+-   <Cmdname sid="title" className="uitext" />: Enter the title of the alert.
+
+-   <Cmdname sid="message" className="uitext" />: Enter a notification message to be displayed when events occur. By entering <code>&#36;&#123;tag or field key}&#125;</code>, you can apply the variable to the message. The key in the variable must be the value contained in <Cmdname sid="category" className="uitext" /> for the selected composite metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />.
+
+### Alert Policy
+
+Enter the conditions to send alerts.
+
+-   <Cmdname sid="data_time_range" className="uitext" />: Set the time range to view the <b>MXQL</b> real-time data for event conditions. You can use only the fields included for viewing the event data.
+
+    Composite metrics events retrieve metrics in DB for later use. Therefore, first specify the time range to query data. If you select 5 minutes for the data lookup time, the event generation conditions are checked by searching for the data collected for the last 5 minutes. You can set it short when you set any event for recent data, or long when you want to approach statistically for a wide period. For actual usage examples, see [the following](#template).
+
+-   <Cmdname sid="condition" className="uitext" />: Enter the fields, calculation rules, and thresholds reflected in MXQL.
+
+### Additional information
+
+Set additional options that are related to receiving alerts.
+
+-   <Cmdname sid="interval" className="uitext" />: Check the notification conditions at the selected time interval.
+
+-   <Cmdname sid="silent" className="uitext" />: This option can prevent excessive alerts from happening. No alerts are sent for the selected period after the first alert notification is generated. In addition, they are not recorded in <Cmdname sid="event_history" className="uitext" />.
+
+-   <Cmdname sid="event_tag" className="uitext" />: If you select an event receiving tag, alert notifications can be sent to project members and 3rd-party plug-ins with the tag. If the event receiving tag is not selected, alerts are sent to all project members.
+
+    :::note
+
+    In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins.
+
+    :::
+
+### Test Event Rules
+
+<ImgLang img='set-event-cmetric-test.png' desc='Testing event rules' />
+
+You can check how many alerts have occurred by enabling the event conditions you set for the selected time period. If you select Run, you can see the number of notifications, and the selected fields and thresholds are displayed on the chart when the event conditions are met.
+
+Most of what is included in Event Setting can be specified using **MXQL**. It provides the function to simulate whether **MXQL** has been properly written. The simulation function queries the past 24-hour data to make judgment, and then informs you how many metrics were queried and how many of them are successful.
