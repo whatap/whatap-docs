@@ -2953,6 +2953,20 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'npm/metrics-intro',
+          },
+          items: [
+            'npm/metrics-npm',
+            'npm/metrics-search',
+          ],
+        },
+        {
+          type: 'category',
           label: '알림 설정하기',
           collapsible: true,
           collapsed: true,
