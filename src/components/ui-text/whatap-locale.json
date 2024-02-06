@@ -20741,8 +20741,8 @@
     "service_id": "_03035"
   },
   "tag_count_chart": {
-    "en": "Metrics chart",
-    "ja": "メトリクスチャート",
+    "en": "Metrics Chart",
+    "ja": "メトリックスチャート",
     "ko": "메트릭스 차트",
     "zh": "Metrics Chart",
     "service_id": "TTL03036"
@@ -23051,8 +23051,8 @@
     "service_id": "_03361"
   },
   "tag_count_anomaly_detection": {
-    "en": "Metric anomaly detection",
-    "ja": "メトリクス異常検知",
+    "en": "Metrics Anomaly Detection",
+    "ja": "メトリックス異常検出",
     "ko": "메트릭스 이상 탐지",
     "zh": "Metric Anomaly Detection",
     "service_id": "_03362"
