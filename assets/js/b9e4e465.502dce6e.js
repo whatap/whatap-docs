@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[78936],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12660],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 96164:
+/***/ 47724:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,41 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-2_2_26',
-    title: 'Java Agent v2.2.26',
+    id: 'java-batch-2_2_21',
+    title: 'Java Batch Agent v2.2.21',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_25',
+    pagination_next: 'release-notes/java-batch/java-batch-2_2_20',
     displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_26",
-    "id": "release-notes/java/java-2_2_26",
-    "title": "Java Agent v2.2.26",
-    "description": "2024년 01월 11일",
-    "source": "@site/docs/release-notes/java/java-2.2.26.mdx",
-    "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_26",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_26",
+    "unversionedId": "release-notes/java-batch/java-batch-2_2_21",
+    "id": "release-notes/java-batch/java-batch-2_2_21",
+    "title": "Java Batch Agent v2.2.21",
+    "description": "2023년 11월 23일",
+    "source": "@site/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
+    "sourceDirName": "release-notes/java-batch",
+    "slug": "/release-notes/java-batch/java-batch-2_2_21",
+    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.26.mdx",
+    "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-2_2_26",
-        "title": "Java Agent v2.2.26",
+        "id": "java-batch-2_2_21",
+        "title": "Java Batch Agent v2.2.21",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_25",
+        "pagination_next": "release-notes/java-batch/java-batch-2_2_20",
         "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "WhaTap Mobile App v1.0.3 (52)",
-        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
+        "title": "Java Batch Agent v2.2.22",
+        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_22"
     },
     "next": {
-        "title": "Java Agent v2.2.25",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_25"
+        "title": "Java Batch Agent v2.2.20",
+        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
     }
 };
 const assets = {};
@@ -363,115 +363,14 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 01월 11일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 11월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " spring-boot-2.5 이상에서 reactor-kafka-1.3 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# using spring-boot-2.5 ~
-weaving=spring-boot-2.5
-
-# using spring-boot-2.7 ~
-weaving=spring-boot-2.7
-
-# using spring-boot-3.0 ~
-weaving=spring-boot-3.0
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " spring-boot-2.5 이상에서 RxJava 사용 시 RxJava의 schedule 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# using spring-boot-2.5 ~
-weaving=spring-boot-2.5
-
-# using spring-boot-2.7 ~
-weaving=spring-boot-2.7
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " spring-boot-3.0 이상에서 RxJava3 사용 시 RxJava3의 schedule 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-ini",
-        "metastring": "title='whatap.conf'",
-        "title": "'whatap.conf'"
-    }, `# using spring-boot-3.0 ~
-weaving=spring-boot-3.0
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 에이전트 로그에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "threadName"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "className"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "methodName"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "lineNumber"), " 수집하여 표시", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-log",
-        "metastring": "title='whatap.log'",
-        "title": "'whatap.log'"
-    }, `[{threadName}][{className}.{methodName}({lineNumber})] 
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " 에이전트 로그 형태 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-log",
-        "metastring": "title='whatap.log'",
-        "title": "'whatap.log'"
-    }, `{date} {time} [{threadName}][{className}.{methodName}({lineNumber})] ({work}) {log}
-`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
-        alt: "whatap log",
-        src: (__webpack_require__(30836)/* ["default"] */ .c),
-        width: "1200",
-        height: "30"
-    }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Feature"), " Tibero의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "CallableStatement"), " 추적"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " 에이전트 로그의 텍스트 색상 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " 에이전트 기동 시 에이전트 로그의 파일명을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap-", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "date"), ".log"), "에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap.log"), "로 변경"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " UTC 기준 날짜가 변경되면 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap.log"), " 파일명을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap-", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "date"), ".log"), "로 저장")));
+    }, "Fixed"), " 30초 이상 배치 작업이 진행되지 않으면 추적이 종료되는 현상 수정")));
 }
 MDXContent.isMDXComponent = true;
 
-
-/***/ }),
-
-/***/ 30836:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   c: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/release-java-log-129bfbe7ece5c141b21d673a9223eaab.png");
 
 /***/ })
 

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12660],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[46954],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 47724:
+/***/ 55652:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,37 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-batch-2_2_21',
-    title: 'Java Batch Agent v2.2.21',
+    id: 'java-2_2_17',
+    title: 'Java Agent v2.2.17',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java-batch/java-batch-2_2_20'
+    pagination_next: 'release-notes/java/java-2_2_16',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java-batch/java-batch-2_2_21",
-    "id": "release-notes/java-batch/java-batch-2_2_21",
-    "title": "Java Batch Agent v2.2.21",
-    "description": "2023년 11월 23일",
-    "source": "@site/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
-    "sourceDirName": "release-notes/java-batch",
-    "slug": "/release-notes/java-batch/java-batch-2_2_21",
-    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21",
+    "unversionedId": "release-notes/java/java-2_2_17",
+    "id": "release-notes/java/java-2_2_17",
+    "title": "Java Agent v2.2.17",
+    "description": "2023년 9월 18일",
+    "source": "@site/docs/release-notes/java/java-2.2.17.mdx",
+    "sourceDirName": "release-notes/java",
+    "slug": "/release-notes/java/java-2_2_17",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_17",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.17.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-batch-2_2_21",
-        "title": "Java Batch Agent v2.2.21",
+        "id": "java-2_2_17",
+        "title": "Java Agent v2.2.17",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java-batch/java-batch-2_2_20"
+        "pagination_next": "release-notes/java/java-2_2_16",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
-    "previous": {
-        "title": "Java Batch Agent v2.2.22",
-        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_22"
-    },
     "next": {
-        "title": "Java Batch Agent v2.2.20",
-        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
+        "title": "Java Agent v2.2.16",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_16"
     }
 };
 const assets = {};
@@ -361,11 +359,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 11월 23일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 9월 18일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 30초 이상 배치 작업이 진행되지 않으면 추적이 종료되는 현상 수정")));
+    }, "Changed"), " 에러 스택의 타이틀을 Error Stack으로 지정, 기존 에러 메시지는 에러 스택 위에 배치"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " Http Request 데이터 수집 시 특정 상황에서 queryString을 수집하지 못하는 버그 수정")));
 }
 MDXContent.isMDXComponent = true;
 

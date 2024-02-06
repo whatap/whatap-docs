@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44398],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[21072],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 48660:
+/***/ 37368:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,37 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-batch-2_2_19',
-    title: 'Java Batch Agent v2.2.19',
-    toc_max_heading_level: 2
+    id: 'java-batch-2_2_20',
+    title: 'Java Batch Agent v2.2.20',
+    toc_max_heading_level: 2,
+    pagination_next: 'release-notes/java-batch/java-batch-2_2_19',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java-batch/java-batch-2_2_19",
-    "id": "release-notes/java-batch/java-batch-2_2_19",
-    "title": "Java Batch Agent v2.2.19",
-    "description": "2023년 10월 10일",
-    "source": "@site/docs/release-notes/java-batch/java-batch-2.2.19.mdx",
+    "unversionedId": "release-notes/java-batch/java-batch-2_2_20",
+    "id": "release-notes/java-batch/java-batch-2_2_20",
+    "title": "Java Batch Agent v2.2.20",
+    "description": "2023년 10월 19일",
+    "source": "@site/docs/release-notes/java-batch/java-batch-2.2.20.mdx",
     "sourceDirName": "release-notes/java-batch",
-    "slug": "/release-notes/java-batch/java-batch-2_2_19",
-    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_19",
+    "slug": "/release-notes/java-batch/java-batch-2_2_20",
+    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.19.mdx",
+    "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.20.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-batch-2_2_19",
-        "title": "Java Batch Agent v2.2.19",
-        "toc_max_heading_level": 2
+        "id": "java-batch-2_2_20",
+        "title": "Java Batch Agent v2.2.20",
+        "toc_max_heading_level": 2,
+        "pagination_next": "release-notes/java-batch/java-batch-2_2_19",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Java Batch Agent v2.2.20",
-        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
+        "title": "Java Batch Agent v2.2.21",
+        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21"
     },
     "next": {
-        "title": "PHP Agent v2.7.1",
-        "permalink": "/whatap-docs/release-notes/php/php-2_7_1"
+        "title": "Java Batch Agent v2.2.19",
+        "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_19"
     }
 };
 const assets = {};
@@ -359,27 +363,11 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 10월 10일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 10월 19일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Feature"), " Java 17, spring-boot-3.x 배치 애플리케이션 추적"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ASM-9.2에서 ASM-9.5로 업데이트"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " Java 17, spring-boot-3.x 배치 추적 시 발생하는 에이전트 에러 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " Java 17 배치 추적 시 ASM api 버전 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " 엑티브 트랜잭션 호출 시 발생하는 버그 수정")));
+    }, "Feature"), " AWS MySQL 프로젝트의 SQL 추적")));
 }
 MDXContent.isMDXComponent = true;
 

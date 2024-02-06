@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[46954],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[20624],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 55652:
+/***/ 65532:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,39 +308,41 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'java-2_2_17',
-    title: 'Java Agent v2.2.17',
+    id: 'java-2_2_27',
+    title: 'Java Agent v2.2.27',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/java/java-2_2_16'
+    pagination_next: 'release-notes/java/java-2_2_26',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/java/java-2_2_17",
-    "id": "release-notes/java/java-2_2_17",
-    "title": "Java Agent v2.2.17",
-    "description": "2023년 9월 18일",
-    "source": "@site/docs/release-notes/java/java-2.2.17.mdx",
+    "unversionedId": "release-notes/java/java-2_2_27",
+    "id": "release-notes/java/java-2_2_27",
+    "title": "Java Agent v2.2.27",
+    "description": "2024년 02월 06일",
+    "source": "@site/docs/release-notes/java/java-2.2.27.mdx",
     "sourceDirName": "release-notes/java",
-    "slug": "/release-notes/java/java-2_2_17",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_17",
+    "slug": "/release-notes/java/java-2_2_27",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_27",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/java/java-2.2.17.mdx",
+    "editUrl": "undefined/docs/release-notes/java/java-2.2.27.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "java-2_2_17",
-        "title": "Java Agent v2.2.17",
+        "id": "java-2_2_27",
+        "title": "Java Agent v2.2.27",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/java/java-2_2_16"
+        "pagination_next": "release-notes/java/java-2_2_26",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Java Agent v2.2.18",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_18"
+        "title": "WhaTap Mobile App v1.0.3 (52)",
+        "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
     },
     "next": {
-        "title": "Java Agent v2.2.16",
-        "permalink": "/whatap-docs/release-notes/java/java-2_2_16"
+        "title": "Java Agent v2.2.26",
+        "permalink": "/whatap-docs/release-notes/java/java-2_2_26"
     }
 };
 const assets = {};
@@ -361,15 +363,82 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 9월 18일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 06일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " 에러 스택의 타이틀을 Error Stack으로 지정, 기존 에러 메시지는 에러 스택 위에 배치"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, "Feature"), " mule-3.9.5 추적 범위 확대", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# requires agent restart
+weaving=mule-3.9.5
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " Http Request 데이터 수집 시 특정 상황에서 queryString을 수집하지 못하는 버그 수정")));
+    }, "Feature"), " camel-cxf-3.15 추적", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# requires agent restart
+weaving=camel-cxf-3.15
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Feature"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "OracleCallableStatement"), " 추적 추가"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " Lettuce 드라이버 사용 시 Redis의 key 수집 범위 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# requires agent restart
+weaving=Lettuce-6.2
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " Lettuce 드라이버 사용 시 Redis의 key 수집 여부 수정", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-ini",
+        "metastring": "title=\"whatap.conf\"",
+        "title": "\"whatap.conf\""
+    }, `# default: false
+trace_sql_param_enabled=true
+
+# default: false
+trace_redis_Lettuce_key_enabled=true
+`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Changed"), " Lettuce 드라이버 사용 시 Redis의 key 수집 숫자를 제한"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " spring-boot에서 netty 사용 시 request의 URL에서 querystring 분리"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Fixed"), " spring-boot에서 netty 사용 시 request의 HTTP 파라미터를 수집하지 못하는 문제 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
+    }, "Deprecate"), " Lettuce 드라이버 사용 시 Redis의 value 수집 중단")));
 }
 MDXContent.isMDXComponent = true;
 
