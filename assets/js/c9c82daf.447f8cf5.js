@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[62836],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[60184],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 66468:
+/***/ 1376:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -319,16 +319,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "amazon-cloudwatch/metrics-search",
-    "id": "amazon-cloudwatch/metrics-search",
+    "unversionedId": "java/metrics-search",
+    "id": "java/metrics-search",
     "title": "메트릭스 조회",
     "description": "메트릭스 Raw Data를 조회할 수 있습니다.",
-    "source": "@site/docs/amazon-cloudwatch/metrics-search.mdx",
-    "sourceDirName": "amazon-cloudwatch",
-    "slug": "/amazon-cloudwatch/metrics-search",
-    "permalink": "/whatap-docs/amazon-cloudwatch/metrics-search",
+    "source": "@site/docs/java/metrics-search.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/metrics-search",
+    "permalink": "/whatap-docs/java/metrics-search",
     "draft": false,
-    "editUrl": "undefined/docs/amazon-cloudwatch/metrics-search.mdx",
+    "editUrl": "undefined/docs/java/metrics-search.mdx",
     "tags": [
         {
             "label": "메트릭스",
@@ -354,14 +354,14 @@ const metadata = {
             "UI"
         ]
     },
-    "sidebar": "amazoncloudwatchSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
-        "title": "메트릭스",
-        "permalink": "/whatap-docs/amazon-cloudwatch/metrics-intro"
+        "title": "애플리케이션 성능 카운터",
+        "permalink": "/whatap-docs/java/metrics-performance-counter"
     },
     "next": {
-        "title": "메트릭스 큐브",
-        "permalink": "/whatap-docs/amazon-cloudwatch/metrics-cube"
+        "title": "메트릭스 차트",
+        "permalink": "/whatap-docs/java/metrics-chart"
     }
 };
 const assets = {};
@@ -641,7 +641,11 @@ function MDXContent(_param) {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
-    }, `네트워크 성능 모니터링에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `네트워크 성능 지표 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `npm_process_tag_data`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `npm_process_tag_list`), ` 카테고리는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "tag",
         className: "uitext",
         mdxType: "Cmdname"
@@ -699,7 +703,11 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, `네트워크 성능 모니터링에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `네트워크 성능 지표 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "li"
+    }, `npm_process_tag_data`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "li"
+    }, `npm_process_tag_list`), ` 카테고리는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "tag",
         className: "uitext",
         mdxType: "Cmdname"

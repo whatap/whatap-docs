@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[81540],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[35694],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 29304:
+/***/ 89748:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -319,16 +319,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "server/metrics-search",
-    "id": "server/metrics-search",
+    "unversionedId": "oracle-cloud/metrics-search",
+    "id": "oracle-cloud/metrics-search",
     "title": "메트릭스 조회",
     "description": "메트릭스 Raw Data를 조회할 수 있습니다.",
-    "source": "@site/docs/server/metrics-search.mdx",
-    "sourceDirName": "server",
-    "slug": "/server/metrics-search",
-    "permalink": "/whatap-docs/server/metrics-search",
+    "source": "@site/docs/oracle-cloud/metrics-search.mdx",
+    "sourceDirName": "oracle-cloud",
+    "slug": "/oracle-cloud/metrics-search",
+    "permalink": "/whatap-docs/oracle-cloud/metrics-search",
     "draft": false,
-    "editUrl": "undefined/docs/server/metrics-search.mdx",
+    "editUrl": "undefined/docs/oracle-cloud/metrics-search.mdx",
     "tags": [
         {
             "label": "메트릭스",
@@ -354,14 +354,14 @@ const metadata = {
             "UI"
         ]
     },
-    "sidebar": "serverSidebar",
+    "sidebar": "oracleSidebar",
     "previous": {
-        "title": "서버 지표",
-        "permalink": "/whatap-docs/server/metrics-server"
+        "title": "메트릭스",
+        "permalink": "/whatap-docs/oracle-cloud/metrics-intro"
     },
     "next": {
-        "title": "메트릭스 차트",
-        "permalink": "/whatap-docs/server/metrics-chart"
+        "title": "메트릭스 큐브",
+        "permalink": "/whatap-docs/oracle-cloud/metrics-cube"
     }
 };
 const assets = {};
@@ -641,7 +641,11 @@ function MDXContent(_param) {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
-    }, `네트워크 성능 모니터링에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `네트워크 성능 지표 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `npm_process_tag_data`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `npm_process_tag_list`), ` 카테고리는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "tag",
         className: "uitext",
         mdxType: "Cmdname"
@@ -699,7 +703,11 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
-    }, `네트워크 성능 모니터링에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `네트워크 성능 지표 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "li"
+    }, `npm_process_tag_data`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "li"
+    }, `npm_process_tag_list`), ` 카테고리는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "tag",
         className: "uitext",
         mdxType: "Cmdname"
