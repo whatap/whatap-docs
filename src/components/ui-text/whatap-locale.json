@@ -45340,7 +45340,7 @@
   },
   "DSC06577": {
     "en": "You can only register <span style=\"color: #F34747;\">Korean mobile phone numbers</span>.",
-    "ja": "日本国内の携帯電話番号のみ登録できます。(入力例: 8012345678)",
+    "ja": "一般携帯電話は<span style=\"color: #F34747;\">韓国内での携帯電話番号のみ登録</span>できます。",
     "ko": "일반 휴대전화는 <span style=\"color: #F34747;\">한국 휴대전화 번호만 등록</span> 가능합니다.",
     "zh": "You can only register <span style=\"color: #F34747;\">Korean mobile phone numbers</span>.",
     "service_id": "DSC06577"
@@ -50737,7 +50737,7 @@
   },
   "TTL07365": {
     "en": "Indicator</br>settings",
-    "ja": "指標設定\n",
+    "ja": "指標設定",
     "ko": "지표 설정",
     "zh": "Indicator</br>settings",
     "service_id": "TTL07365"
@@ -50751,14 +50751,14 @@
   },
   "TTL07367": {
     "en": "Pause",
-    "ja": "一時停止\n",
+    "ja": "一時停止",
     "ko": "일시 중지",
     "zh": "pause",
     "service_id": "TTL07367"
   },
   "TTL07368": {
     "en": "Resolved notifications",
-    "ja": "解決済み通知\n",
+    "ja": "解決済み通知",
     "ko": "해결된 알림",
     "zh": "Resolved Notifications",
     "service_id": "TTL07368"
@@ -50771,9 +50771,9 @@
     "service_id": "ITM07369"
   },
   "ITM07370": {
-    "en": "Occurrences (occurs up to {count} times per minute)",
-    "ja": "回発生（1分に最大{count}回発生）",
-    "ko": "회 발생 (1분에 최대 {count}회 발생)",
+    "en": "Occurrences ",
+    "ja": "回発生",
+    "ko": "회 발생",
     "zh": "Occurrences (occurs up to N times per minute)",
     "service_id": "ITM07370"
   },
@@ -52311,14 +52311,14 @@
     "service_id": "NTC07591"
   },
   "BTN07592": {
-    "en": "Agent Inactivity Warning",
+    "en": "Agent Inactive Warning",
     "ja": "エージェント非活性化の警告",
     "ko": "에이전트 비활성 경고",
     "zh": "Agent inactivity warning",
     "service_id": "BTN07592"
   },
   "TLT07593": {
-    "en": "If there's no response after the time you set, you'll receive an alert notification from the agent.",
+    "en": "If there's no response after the time you set, you'll receive an alert from the agent.",
     "ja": "設定した時間まで応答がなかった場合、エージェントからアラートを通知します。",
     "ko": "설정한 시간 후까지 응답이 없으면 에이전트로부터 경고 알림을 보내줍니다.",
     "zh": "If there's no response after the time you set, you'll receive an alert notification from the agent.",
@@ -52346,7 +52346,7 @@
     "service_id": "TTL07596"
   },
   "TTL07597": {
-    "en": "Automatically Terminate Threads",
+    "en": "Thread automatic termination",
     "ja": "スレッドの自動終了",
     "ko": "쓰레드 자동 종료",
     "zh": "Automatically Terminate Threads",
@@ -52360,70 +52360,70 @@
     "service_id": "DSC07598"
   },
   "DSC07599": {
-    "en": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
+    "en": "By observing kube-apiserver's load status and performance trend charts through visualized dashboards, you can quickly detect cluster failures caused by<br/>kube-apiserver and analyze the cause.",
     "ja": "可視化されたダッシュボードでkube-apiserverの負荷状況や性能推移グラフを確認します。これにより、kube-apiserverが原因で発生するクラスタ障害を迅速に検知し、原因が把握できます。",
     "ko": "시각화된 대시보드를 통해 kube-apiserver의 부하 상태 및 성능 추이 차트를 관찰함으로써<br/>kube-apiserver로 인한 클러스터 장애를 빠르게 감지하고 원인을 분석할 수 있습니다.",
     "zh": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
     "service_id": "DSC07599"
   },
   "DSC07600": {
-    "en": "To use the control plane monitoring feature,<strong>WhaTap Kubernetes Agent 1.5.0 or higher is required,<br/>setting permissions and feature activation options, and<br/>adding a container for control plane monitoring in the master agent. It is necessary</strong>to do so.",
+    "en": "The control plane monitoring feature requires <strong>Watap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
     "ja": "コントロール プレーン監視機能を使用するには、<strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、<br/>マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
     "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.0 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
     "zh": "To use the control plane monitoring feature,<strong>WhaTap Kubernetes Agent 1.5.0 or higher is required,<br/>setting permissions and feature activation options, and<br/>adding a container for control plane monitoring in the master agent. It is necessary</strong>to do so.",
     "service_id": "DSC07600"
   },
   "DSC07601": {
-    "en": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
+    "en": "Check out the WhaTap Docs below to learn more about<br/>control plane kube-apiserver monitoring!",
     "ja": "コントロール プレーンのkube-apiserver の監視についての詳細は、以下の WhaTap ドキュメントをご参考ください。",
     "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한<br/>자세한 내용을 확인해보세요!",
     "zh": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
     "service_id": "DSC07601"
   },
   "TTL07602": {
-    "en": "Introducing the Kubernetes kube-apiserver monitoring feature!",
+    "en": "Introducing the Kubernetes kube-apiserver monitoring!",
     "ja": "Kubernetes kube-apiserver 監視機能のご紹介",
     "ko": "쿠버네티스 kube-apiserver 모니터링 기능을 소개합니다!",
     "zh": "Introducing the Kubernetes kube-apiserver monitoring feature!",
     "service_id": "TTL07602"
   },
   "NTC07603": {
-    "en": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
+    "en": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please update.",
     "ja": "Namespaceプロジェクトで<b>Object Manifest</b>機能を使用するには、<b>マスターエージェント1.5.2以降</b>を使用する必要があります。 アップデートを行ってください。",
     "ko": "네임스페이스 프로젝트에서 <b>오브젝트 매니페스트</b> 기능을 사용하려면 <b>마스터 에이전트 1.5.2 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
     "zh": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
     "service_id": "NTC07603"
   },
   "DSC07604": {
-    "en": "You cannot withdraw for the following reasons. Please check the contents below and retry.",
+    "en": "You cannot unsubscribe for the following reasons. Please check and try again.",
     "ja": "以下の理由により脱退できません。内容を確認してから、再度試してください。",
     "ko": "다음의 사유로 탈퇴가 불가능합니다. 원활한 회원 탈퇴를 위해 아래 내용을 확인 후 시도하세요.",
     "zh": "You cannot withdraw for the following reasons. Please check the contents below and try it for smooth membership withdrawal.",
     "service_id": "DSC07604"
   },
   "DSC07605": {
-    "en": "Multi-factor authentication is an additional security procedure that requires authentication code after login to fortify your account safety even if your password is leaked.",
+    "en": "Multifactor authentication is an additional authentication process to ensure account security.{br}It can require a verification code after signing in, in case your password is leaked.",
     "ja": "マルチファクター認証はアカウントに対するセキュリティを強化するための対策の一つです。{br}ログインしてから追加の認証コードを要求することで、万が一パスワードが流出された場合に備えます。",
     "ko": "멀티팩터 인증은 계정 보안을 확보하기 위한 추가 인증 절차입니다.{br}로그인 이후 인증 코드를 요구하여 비밀번호가 유출되는 경우를 대비할 수 있습니다.",
     "zh": "Multi-factor authentication is an additional security procedure that requires authentication code after login to fortify your account safety even if your password is leaked.",
     "service_id": "DSC07605"
   },
   "DSC07606": {
-    "en": "Show all paid projects",
+    "en": "Shows all paid projects",
     "ja": "すべての有料プロジェクトを表示\n",
     "ko": "모든 유료 프로젝트 표시",
     "zh": "Show all paid projects",
     "service_id": "DSC07606"
   },
   "TLT07607": {
-    "en": "Shows all projects in paid status that you don't have permission to pay for.",
+    "en": "Shows all subscribed projects without payment permissions.",
     "ja": "支払い権限のない有料ステータスのすべてのプロジェクトを表示します。",
     "ko": "결제 권한이 없는 유료 상태의 모든 프로젝트를 표시합니다.",
     "zh": "Shows all projects in paid status that you don't have permission to pay for.",
     "service_id": "TLT07607"
   },
   "NTC07608": {
-    "en": "The dashboard failed to load.",
+    "en": "Failed to load dashboard.",
     "ja": "ダッシュボードの読み込みに失敗しました。",
     "ko": "대시보드 불러오기에 실패했습니다.",
     "zh": "The dashboard failed to load.",
@@ -52437,14 +52437,14 @@
     "service_id": "ITM07609"
   },
   "TTL07610": {
-    "en": "Effective Bandwidth",
+    "en": "Valid bandwidth",
     "ja": "実効帯域幅",
     "ko": "유효 대역폭",
     "zh": "Effective Bandwidth",
     "service_id": "TTL07610"
   },
   "TTL07611": {
-    "en": "Effective Connection Type",
+    "en": "Valid connection type",
     "ja": "有効接続タイプ",
     "ko": "유효 연결 유형",
     "zh": "Effective Connection Type",
@@ -52456,6 +52456,76 @@
     "ko": "RTT",
     "zh": "RTT",
     "service_id": "TTL07612"
+  },
+  "CNT07613": {
+    "en": "Not specified",
+    "ja": "指定されていない",
+    "ko": "명시되지 않음",
+    "zh": "not specified",
+    "service_id": "CNT07613"
+  },
+  "DSC07614": {
+    "en": "*Only the TOP 30 list is displayed.",
+    "ja": "*TOP 30リストのみ表示されます。",
+    "ko": "*TOP 30 리스트만 표시됩니다.",
+    "zh": "*Only the TOP 30 list is displayed.",
+    "service_id": "DSC07614"
+  },
+  "NTC07615": {
+    "en": "You can only add one elapsed time.",
+    "ja": "経過時間は1つだけ追加できます。",
+    "ko": "경과시간은 하나만 추가할 수 있습니다.",
+    "zh": "You can only add one elapsed time.",
+    "service_id": "NTC07615"
+  },
+  "NTC07616": {
+    "en": "Sharing a dashboard to {email} failed.",
+    "ja": "{email}へのダッシュボードの共有に失敗しました。",
+    "ko": "{email}에게 대시보드 공유를 실패하였습니다.",
+    "zh": "Sharing a dashboard to {email} failed.",
+    "service_id": "NTC07616"
+  },
+  "DSC07617": {
+    "en": "Events are available after an access key is issued.",
+    "ja": "アクセスキーの発行後にイベントを使用できます。",
+    "ko": "액세스 키 발급 후 이벤트를 사용할 수 있습니다.",
+    "zh": "Events are available after an access key is issued.",
+    "service_id": "DSC07617"
+  },
+  "BTN07618": {
+    "en": "Issue access key",
+    "ja": "アクセスキー発行",
+    "ko": "액세스 키 발급",
+    "zh": "Issue access key",
+    "service_id": "BTN07618"
+  },
+  "DSC07619": {
+    "en": "Selecting the below button will automatically create an event list optimized for the new feature.",
+    "ja": "次のボタンを選択すると、新機能に最適化されたイベントのリストが自動的に生成されます。",
+    "ko": "다음 버튼을 선택하면 새로운 기능에 최적화된 이벤트 목록이 자동으로 생성됩니다.",
+    "zh": "Selecting the below button will automatically create an event list optimized for the new feature.",
+    "service_id": "DSC07619"
+  },
+  "BTN07620": {
+    "en": "Create an event\n",
+    "ja": "イベントを生成する",
+    "ko": "이벤트 생성하기",
+    "zh": "Create an event\n",
+    "service_id": "BTN07620"
+  },
+  "DSC07621": {
+    "en": "Creating an event.</br>Please wait a moment.",
+    "ja": "イベントを生成しています。</br>しばらくお待ちください。",
+    "ko": "이벤트를 생성하고 있습니다.</br>잠시만 기다려 주세요.",
+    "zh": "Creating an event.</br>Please wait a moment.",
+    "service_id": "DSC07621"
+  },
+  "TTL07622": {
+    "en": "Resource Timing",
+    "ja": "リソースのタイミング",
+    "ko": "리소스 타이밍",
+    "zh": "Resource Timing",
+    "service_id": "TTL07622"
   },
   "": {
     "": "",
