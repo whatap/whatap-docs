@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[86264],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[93856],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 80104:
+/***/ 16600:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,22 +314,22 @@ const frontMatter = {
     tags: [
         '경고 알림',
         '메트릭스 이벤트',
-        'Azure Monitor',
+        'Naver Cloud Monitoring',
         '클라우드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "azure/metric-warning-notice",
-    "id": "azure/metric-warning-notice",
+    "unversionedId": "ncloud/metric-warning-notice",
+    "id": "ncloud/metric-warning-notice",
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "source": "@site/docs/azure/metric-warning-notice.mdx",
-    "sourceDirName": "azure",
-    "slug": "/azure/metric-warning-notice",
-    "permalink": "/whatap-docs/azure/metric-warning-notice",
+    "source": "@site/docs/ncloud/metric-warning-notice.mdx",
+    "sourceDirName": "ncloud",
+    "slug": "/ncloud/metric-warning-notice",
+    "permalink": "/whatap-docs/ncloud/metric-warning-notice",
     "draft": false,
-    "editUrl": "undefined/docs/azure/metric-warning-notice.mdx",
+    "editUrl": "undefined/docs/ncloud/metric-warning-notice.mdx",
     "tags": [
         {
             "label": "경고 알림",
@@ -340,8 +340,8 @@ const metadata = {
             "permalink": "/whatap-docs/tags/메트릭스-이벤트"
         },
         {
-            "label": "Azure Monitor",
-            "permalink": "/whatap-docs/tags/azure-monitor"
+            "label": "Naver Cloud Monitoring",
+            "permalink": "/whatap-docs/tags/naver-cloud-monitoring"
         },
         {
             "label": "클라우드",
@@ -356,18 +356,18 @@ const metadata = {
         "tags": [
             "경고 알림",
             "메트릭스 이벤트",
-            "Azure Monitor",
+            "Naver Cloud Monitoring",
             "클라우드"
         ]
     },
-    "sidebar": "azuremonitorSidebar",
+    "sidebar": "ncloudSidebar",
     "previous": {
         "title": "알림 설정하기",
-        "permalink": "/whatap-docs/azure/set-notice"
+        "permalink": "/whatap-docs/ncloud/set-notice"
     },
     "next": {
         "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/azure/set-receive-event"
+        "permalink": "/whatap-docs/ncloud/set-receive-event"
     }
 };
 const assets = {};
@@ -758,9 +758,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `이벤트 발생 시 출력하는 알림 메시지를 입력합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
-        parentName: "p"
-    }, `\${태그 또는 필드키}`), ` 입력으로 메시지에 변수를 적용할 수 있습니다. 변수에 입력할 키는 선택한 메트릭스 데이터 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `이벤트 발생 시 출력하는 알림 메시지를 입력합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `$`, `{`, `Tag`, `}`), ` 또는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, `$`, `{`, `Field`, `}`), ` 입력으로 메시지에 변수를 적용할 수 있습니다. 변수에 입력할 키는 선택한 메트릭스 데이터 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "category",
         className: "uitext",
         mdxType: "Cmdname"
@@ -772,7 +770,11 @@ function MDXContent(_param) {
         sid: "tag_count",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 메뉴에서 입력할 수 있는 태그 또는 필드키를 확인할 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }), ` 메뉴에서 입력할 수 있는 태그 또는 필드키를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "event-config-message-example.png",
+        desc: "Message example",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
