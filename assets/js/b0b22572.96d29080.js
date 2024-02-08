@@ -358,8 +358,8 @@ const metadata = {
     },
     "sidebar": "serverSidebar",
     "previous": {
-        "title": "서버 경고 알림",
-        "permalink": "/whatap-docs/server/warning-notice"
+        "title": "이벤트 설정",
+        "permalink": "/whatap-docs/server/warning-notice-v2"
     },
     "next": {
         "title": "알림 메시지 사용자 정의",

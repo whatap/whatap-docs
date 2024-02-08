@@ -360,8 +360,8 @@ const metadata = {
         "permalink": "/whatap-docs/server/set-notice"
     },
     "next": {
-        "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/server/metric-warning-notice"
+        "title": "이벤트 설정",
+        "permalink": "/whatap-docs/server/warning-notice-v2"
     }
 };
 const assets = {};
