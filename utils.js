@@ -292,6 +292,12 @@ function colsToJson(data){
     "ko": "프로젝트 유료 전환"
   }
 
+  rd["integratedFlexboard"] = {
+    "en": "Integrated Flex Board",
+    "ja": "統合Flexボード",
+    "ko": "통합 Flex 보드"
+  }
+
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 

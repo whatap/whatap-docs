@@ -51107,10 +51107,10 @@
     "service_id": "TLT07417"
   },
   "DSC07418": {
-    "en": "You can enter a variable by typing $. <br>\nex) An error occurred at ${active_tx_8} ${time}.",
-    "ja": "$を入力すると変数が入力できます。<br>\n例) ${active_tx_8} ${time} にエラーが発生しました。",
-    "ko": "$를 입력하면 변수를 입력할 수 있습니다.<br>\nex) ${active_tx_8} ${time}에 에러가 발생했습니다.\n",
-    "zh": "You can enter a variable by typing $. <br>\nex) An error occurred at ${active_tx_8} ${time}.",
+    "en": "You can enter a variable by typing $. <br>\nex) An error occurred at ${active_tx_8} ${time}.\nPlease refer to the guide document for Tag and Field variables that can be entered as messages.",
+    "ja": "$を入力すると変数が入力できます。<br>\n例) ${active_tx_8} ${time} にエラーが発生しました。\nメッセージとして入力できるタグとフィールド変数については、ガイドのドキュメントを参照してください。",
+    "ko": "$를 입력하면 변수를 입력할 수 있습니다.<br/>\nex) ${active_tx_8} ${time}에 에러가 발생했습니다.<br/>\n메시지로 입력할 수 있는 Tag와 Field 변수는 가이드 문서를 참고하세요.",
+    "zh": "You can enter a variable by typing $. <br>\nex) An error occurred at ${active_tx_8} ${time}.\nPlease refer to the guide document for Tag and Field variables that can be entered as messages.",
     "service_id": "DSC07418"
   },
   "ITM07419": {
@@ -52527,6 +52527,90 @@
     "zh": "Resource Timing",
     "service_id": "TTL07622"
   },
+  "NTC07623": {
+    "en": "Copying a dashboard to {email} failed.",
+    "ja": "{email}へのダッシュボードのコピーに失敗しました。",
+    "ko": "{email}에게 대시보드 복사를 실패하였습니다.",
+    "zh": "Copying a dashboard to {email} failed.",
+    "service_id": "NTC07623"
+  },
+  "DSC07624": {
+    "en": "There are no recommendations.",
+    "ja": "おすすめアイテムはありません。",
+    "ko": "추천 항목이 없습니다.",
+    "zh": "There are no recommendations.",
+    "service_id": "DSC07624"
+  },
+  "TTL07625": {
+    "en": "Project limitations and paid conversion information",
+    "ja": "プロジェクト制限と有料コンバージョンガイド",
+    "ko": "프로젝트 제한과 유료 전환 안내",
+    "zh": "Project limitations and paid conversion information",
+    "service_id": "TTL07625"
+  },
+  "CNT07626": {
+    "en": "{createable} when used in Free or Trial status.{br}To create additional projects, you must convert the project to a paid version.",
+    "ja": "Free、Trial状態で使用する場合は{createable}します。{br}追加プロジェクトを作成するには、そのプロジェクトを有料に切り替える必要があります。",
+    "ko": "Free, Trial 상태로 사용시 {createable}합니다.{br}추가 프로젝트를 생성하려면 해당 프로젝트를 유료로 전환해야 합니다.",
+    "zh": "{createable} when used in Free or Trial status.{br}To create additional projects, you must convert the project to a paid version.",
+    "service_id": "CNT07626"
+  },
+  "CNT07627": {
+    "en": "Up to 10 projects can be created",
+    "ja": "最大10個のプロジェクトまで作成可能",
+    "ko": "최대 10개의 프로젝트까지 생성 가능",
+    "zh": "Up to 10 projects can be created",
+    "service_id": "CNT07627"
+  },
+  "CNT07628": {
+    "en": "Register your payment information and then switch to a paid service{br} to use all the features provided by WhaTap.",
+    "ja": "お支払い情報を登録してから有料に切り替えて、{br}とタブで提供されているすべての機能をご利用ください。",
+    "ko": "결제 정보를 등록한 다음 유료 전환하여{br}와탭에서 제공하는 모든 기능을 이용해 보세요.",
+    "zh": "Register your payment information and then switch to a paid service{br}to use all the features provided by WhaTap.",
+    "service_id": "CNT07628"
+  },
+  "LNK07629": {
+    "en": "View paid conversion instructions",
+    "ja": "有料コンバージョンガイドを見る",
+    "ko": "유료 전환 안내 보기",
+    "zh": "View paid conversion instructions",
+    "service_id": "LNK07629"
+  },
+  "BTN07630": {
+    "en": "Register payment information",
+    "ja": "お支払い情報の登録",
+    "ko": "결제 정보 등록",
+    "zh": "Register payment information",
+    "service_id": "BTN07630"
+  },
+  "TTL07631": {
+    "en": "Limit URL project creation",
+    "ja": "URLプロジェクト作成の制限",
+    "ko": "URL 프로젝트 생성 제한",
+    "zh": "Limit URL project creation",
+    "service_id": "TTL07631"
+  },
+  "CNT07632": {
+    "en": "Up to 10 URL projects can be created.",
+    "ja": "URLプロジェクトは最大10個まで作成できます。",
+    "ko": "URL 프로젝트는 최대 10개까지 생성할 수 있습니다.",
+    "zh": "Up to 10 URL projects can be created.",
+    "service_id": "CNT07632"
+  },
+  "CNT07633": {
+    "en": "The number of{br}URLs that can be registered in one URL project is free and unlimited.",
+    "ja": "1つのURLプロジェクトで登録できる{br}URLは無制限無料です。",
+    "ko": "한 개의 URL 프로젝트에서 등록 할 수 있는{br}URL은 무제한 무료입니다.",
+    "zh": "The number of{br}URLs that can be registered in one URL project is free and unlimited.",
+    "service_id": "CNT07633"
+  },
+  "ITM07634": {
+    "en": "Read Only All",
+    "ja": "読み取り専用 すべて",
+    "ko": "읽기 전용 전체",
+    "zh": "Read Only All",
+    "service_id": "ITM07634"
+  },
   "": {
     "": "",
     "service_id": "#N/A"
@@ -52732,5 +52816,10 @@
     "en": "Project Subscription Status",
     "ja": "プロジェクト課金状況",
     "ko": "프로젝트 유료 전환"
+  },
+  "integratedFlexboard": {
+    "en": "Integrated Flex Board",
+    "ja": "統合Flexボード",
+    "ko": "통합 Flex 보드"
   }
 }
