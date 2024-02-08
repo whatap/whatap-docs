@@ -5250,6 +5250,11 @@ const sidebars = {
               },
               items: [
                 'server/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'server/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'server/metric-warning-notice',
                 'server/set-notification-message',
                 'server/set-event-detect-anomal',
