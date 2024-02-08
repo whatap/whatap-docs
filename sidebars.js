@@ -244,6 +244,11 @@ const sidebars = {
               },
               items: [
                 'java/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'java/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'java/metric-warning-notice',
                 'java/set-notification-message',
                 'java/hitmap-notice',
