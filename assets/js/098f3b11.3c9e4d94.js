@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[13668],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[13512],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 15800:
+/***/ 79880:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,66 +308,72 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-docker-php',
-    title: 'Docker PHP 설치',
-    description: '컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
+    id: 'install-agent-docker',
+    title: 'Docker 환경 설치',
+    description: 'Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
     tags: [
-        '쿠버네티스',
-        '쿠버네티스 모니터링',
-        '애플리케이션 설치',
-        'PHP'
+        'Go',
+        '에이전트 설치',
+        'Docker',
+        '컨테이너',
+        '애플리케이션'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/install-docker-php",
-    "id": "kubernetes/install-docker-php",
-    "title": "Docker PHP 설치",
-    "description": "컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
-    "source": "@site/docs/kubernetes/install-docker-php.mdx",
-    "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/install-docker-php",
-    "permalink": "/whatap-docs/kubernetes/install-docker-php",
+    "unversionedId": "golang/install-agent-docker",
+    "id": "golang/install-agent-docker",
+    "title": "Docker 환경 설치",
+    "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+    "source": "@site/docs/golang/install-agent-docker.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/install-agent-docker",
+    "permalink": "/whatap-docs/golang/install-agent-docker",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/install-docker-php.mdx",
+    "editUrl": "undefined/docs/golang/install-agent-docker.mdx",
     "tags": [
         {
-            "label": "쿠버네티스",
-            "permalink": "/whatap-docs/tags/쿠버네티스"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
-            "label": "쿠버네티스 모니터링",
-            "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
+            "label": "에이전트 설치",
+            "permalink": "/whatap-docs/tags/에이전트-설치"
         },
         {
-            "label": "애플리케이션 설치",
-            "permalink": "/whatap-docs/tags/애플리케이션-설치"
+            "label": "Docker",
+            "permalink": "/whatap-docs/tags/docker"
         },
         {
-            "label": "PHP",
-            "permalink": "/whatap-docs/tags/php"
+            "label": "컨테이너",
+            "permalink": "/whatap-docs/tags/컨테이너"
+        },
+        {
+            "label": "애플리케이션",
+            "permalink": "/whatap-docs/tags/애플리케이션"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-docker-php",
-        "title": "Docker PHP 설치",
-        "description": "컨테이너 내 PHP 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+        "id": "install-agent-docker",
+        "title": "Docker 환경 설치",
+        "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
         "tags": [
-            "쿠버네티스",
-            "쿠버네티스 모니터링",
-            "애플리케이션 설치",
-            "PHP"
+            "Go",
+            "에이전트 설치",
+            "Docker",
+            "컨테이너",
+            "애플리케이션"
         ]
     },
-    "sidebar": "kubeSidebar",
+    "sidebar": "goSidebar",
     "previous": {
-        "title": "Docker Python 설치",
-        "permalink": "/whatap-docs/kubernetes/install-docker-python"
+        "title": "에이전트 설치",
+        "permalink": "/whatap-docs/golang/install-agent"
     },
     "next": {
-        "title": "Docker Go 설치",
-        "permalink": "/whatap-docs/kubernetes/install-docker-go"
+        "title": "API 가이드",
+        "permalink": "/whatap-docs/golang/api-guide"
     }
 };
 const assets = {};
@@ -416,23 +422,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `관리`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `에이전트 설치`)), ` > 하단의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `애플리케이션 설치`)), ` 클릭 > 설치 안내 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `Docker PHP`)), ` 탭 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 컨테이너 기반으로 실행하는 PHP 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 컨테이너 기반으로 실행하는 PHP 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -622,8 +612,9 @@ spec:
 RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "command = /usr/whatap/php/whatap-php start" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "startsecs = 0" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
-RUN echo "autorestart = true" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "autorestart = false" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
