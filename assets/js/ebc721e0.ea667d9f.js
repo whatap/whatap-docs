@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[13512],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[8168],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 79880:
+/***/ 7312:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,72 +308,66 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'install-agent-docker',
-    title: 'Docker 환경 설치',
-    description: 'Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.',
+    id: 'install-docker-go',
+    title: 'Docker Go 설치',
+    description: '컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.',
     tags: [
-        'Go',
-        '에이전트 설치',
-        'Docker',
-        '컨테이너',
-        '애플리케이션'
+        '쿠버네티스',
+        '쿠버네티스 모니터링',
+        '애플리케이션 설치',
+        'Go'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/install-agent-docker",
-    "id": "golang/install-agent-docker",
-    "title": "Docker 환경 설치",
-    "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
-    "source": "@site/docs/golang/install-agent-docker.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/install-agent-docker",
-    "permalink": "/whatap-docs/golang/install-agent-docker",
+    "unversionedId": "kubernetes/install-docker-go",
+    "id": "kubernetes/install-docker-go",
+    "title": "Docker Go 설치",
+    "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
+    "source": "@site/docs/kubernetes/install-docker-go.mdx",
+    "sourceDirName": "kubernetes",
+    "slug": "/kubernetes/install-docker-go",
+    "permalink": "/whatap-docs/kubernetes/install-docker-go",
     "draft": false,
-    "editUrl": "undefined/docs/golang/install-agent-docker.mdx",
+    "editUrl": "undefined/docs/kubernetes/install-docker-go.mdx",
     "tags": [
+        {
+            "label": "쿠버네티스",
+            "permalink": "/whatap-docs/tags/쿠버네티스"
+        },
+        {
+            "label": "쿠버네티스 모니터링",
+            "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
+        },
+        {
+            "label": "애플리케이션 설치",
+            "permalink": "/whatap-docs/tags/애플리케이션-설치"
+        },
         {
             "label": "Go",
             "permalink": "/whatap-docs/tags/go"
-        },
-        {
-            "label": "에이전트 설치",
-            "permalink": "/whatap-docs/tags/에이전트-설치"
-        },
-        {
-            "label": "Docker",
-            "permalink": "/whatap-docs/tags/docker"
-        },
-        {
-            "label": "컨테이너",
-            "permalink": "/whatap-docs/tags/컨테이너"
-        },
-        {
-            "label": "애플리케이션",
-            "permalink": "/whatap-docs/tags/애플리케이션"
         }
     ],
     "version": "current",
     "frontMatter": {
-        "id": "install-agent-docker",
-        "title": "Docker 환경 설치",
-        "description": "Docker 환경에서 컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치를 안내합니다.",
+        "id": "install-docker-go",
+        "title": "Docker Go 설치",
+        "description": "컨테이너 내 Go 애플리케이션을 모니터링하기 위한 에이전트 설치 단계입니다.",
         "tags": [
-            "Go",
-            "에이전트 설치",
-            "Docker",
-            "컨테이너",
-            "애플리케이션"
+            "쿠버네티스",
+            "쿠버네티스 모니터링",
+            "애플리케이션 설치",
+            "Go"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "kubeSidebar",
     "previous": {
-        "title": "에이전트 설치",
-        "permalink": "/whatap-docs/golang/install-agent"
+        "title": "Docker PHP 설치",
+        "permalink": "/whatap-docs/kubernetes/install-docker-php"
     },
     "next": {
-        "title": "API 가이드",
-        "permalink": "/whatap-docs/golang/api-guide"
+        "title": "네임스페이스 프로젝트 만들기",
+        "permalink": "/whatap-docs/kubernetes/create-name-space-project"
     }
 };
 const assets = {};
@@ -386,6 +380,16 @@ const toc = [
     {
         value: '에이전트 설정',
         id: '에이전트-설정',
+        level: 2
+    },
+    {
+        value: '<code>WHATAP_HOME</code> 환경변수 설정하기',
+        id: 'whatap_home-환경변수-설정하기',
+        level: 3
+    },
+    {
+        value: 'Go 라이브러리 설정하기',
+        id: 'go-라이브러리-설정하기',
         level: 2
     },
     {
@@ -410,6 +414,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
     };
 const Tabs = makeShortcode("Tabs");
 const TabItem = makeShortcode("TabItem");
+const InDoc = makeShortcode("InDoc");
 const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
@@ -422,13 +427,29 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 컨테이너 기반으로 실행하는 PHP 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `관리`)), ` > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `에이전트 설치`)), ` > 하단의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `애플리케이션 설치`)), ` 클릭 > 설치 안내 중 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `Docker Go`)), ` 탭 선택`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 컨테이너 기반으로 실행하는 Go 애플리케이션에 와탭 모니터링 에이전트를 적용하고 컨테이너 이미지를 패키징하는 과정을 다음과 같이 안내합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `EKS Fargate는 지원 예정입니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "에이전트-다운로드"
-    }, `에이전트 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `PHP 애플리케이션 도커 이미지 빌드 시 whatap-php 패키지를 설치하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Tabs, {
+    }, `에이전트 다운로드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Go 애플리케이션 도커 이미지 빌드 시 whatap-agent 패키지를 설치하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Tabs, {
         mdxType: "Tabs"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
         value: "rc",
@@ -441,10 +462,8 @@ function MDXContent(_param) {
         "metastring": "title='Red Hat/CentOS'",
         "title": "'Red",
         "Hat/CentOS'": true
-    }, `
-RUN rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-RUN yum install -y whatap-php
-
+    }, `RUN rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+RUN yum install -y whatap-agent
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
         value: "du",
         label: "Debian/Ubuntu",
@@ -455,13 +474,11 @@ RUN yum install -y whatap-php
         "className": "language-docker",
         "metastring": "title='Debian/Ubuntu'",
         "title": "'Debian/Ubuntu'"
-    }, `
-RUN wget https://repo.whatap.io/debian/release.gpg -O -| apt-key add -
+    }, `RUN wget https://repo.whatap.io/debian/release.gpg -O -| apt-key add -
 RUN wget https://repo.whatap.io/debian/whatap-repo_1.0_all.deb
 RUN dpkg -i whatap-repo_1.0_all.deb
 RUN apt-get update
-RUN apt-get install -y whatap-php
-
+RUN apt-get install -y whatap-agent
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
         value: "al",
         label: "Amazon Linux",
@@ -473,15 +490,13 @@ RUN apt-get install -y whatap-php
         "metastring": "title='Amazon Linux'",
         "title": "'Amazon",
         "Linux'": true
-    }, `
-RUN rpm --import https://repo.whatap.io/centos/release.gpg
+    }, `RUN rpm --import https://repo.whatap.io/centos/release.gpg
 RUN echo "[whatap]" | tee /etc/yum.repos.d/whatap.repo > /dev/null
 RUN echo "name=whatap packages for enterprise linux" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
 RUN echo "baseurl=https://repo.whatap.io/centos/latest/\\$basearch" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
 RUN echo "enabled=1" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
 RUN echo "gpgcheck=0" | tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-RUN yum install -y whatap-php
-
+RUN yum install -y whatap-agent
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
         value: "apl",
         label: "Alpine Linux",
@@ -493,40 +508,104 @@ RUN yum install -y whatap-php
         "metastring": "title='Alpine Linux'",
         "title": "'Alpine",
         "Linux'": true
-    }, `
-RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
-RUN tar -xvzf whatap-php.tar.gz -C /
-
+    }, `RUN wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-agent.tar.gz
+RUN tar -xvzf whatap-agent.tar.gz -C /
 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "에이전트-설정"
-    }, `에이전트 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `다음 명령어를 이용해 설치 스크립트를 설정하세요. 와탭 액세스 키, 서버 IP 정보를 입력하면 PHP 환경 정보를 자동으로 수집합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+    }, `에이전트 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용자 애플리케이션 실행 경로에 와탭의 액세스 키, 서버 IP 주소 정보를 입력한 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `whatap.conf`), ` 파일을 생성하세요. 특정 경로를 사용할 경우 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `WHATAP_HOME`), ` 환경변수로 설정할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
-        "className": "language-docker"
-    }, `RUN (echo "[액세스 키]"; echo "[서버 IP]")|/usr/whatap/php/install.sh
-`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `다음과 같이 PHP 환경 정보를 직접 입력할 수 있습니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
-        parentName: "pre",
-        "className": "language-docker"
-    }, `# RUN /usr/whatap/php/install.sh -l [액세스 키] -s [서버 IP] -v [PHP 버전 x.x] -i [php.ini의 전체 경로] -p [프로세스명] -z [thread safety]
-RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.ini -p httpd [-z]
-`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "className": "language-docker",
+        "metastring": "title='whatap.conf'",
+        "title": "'whatap.conf'"
+    }, `RUN echo "accesskey={액세스 키}" >> whatap.conf
+RUN echo "whatap.server.host={수집 서버 IP 주소}" >> whatap.conf
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `액세스 키`), `가 Docker Public 상태의 이미지에 노출되지 않도록 주의하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `액세스 키`), `가 Docker Public 상태의 이미지에 노출되지 않도록 주의하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "whatap_home-환경변수-설정하기"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "h3"
+    }, `WHATAP_HOME`), ` 환경변수 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `whatap.conf`), ` 파일 경로를 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `WHATAP_HOME`), ` 환경변수로 설정할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `WHATAP_HOME`), ` 경로를 우선 생성하세요. 애플리케이션 실행 문구 앞에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `WHATAP_HOME`), ` 설정을 추가합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `mkdir ./whatap_home
+echo "license={액세스 키}" >> ./whatap_home/whatap.conf
+echo "whatap.server.host={수집 서버 IP 주소}" >> ./whatap_home/whatap.conf
+
+# run application
+WHATAP_HOME=./whatap_home ./app
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "go-라이브러리-설정하기"
+    }, `Go 라이브러리 설정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Go 애플리케이션 소스 코드에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "https://github.com/whatap/go-api"
+    }, `github.com/whatap/go-api`), ` 패키지를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-bash"
+    }, `go get github.com/whatap/go-api
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `trace.Init()`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `trace.Shutdown()`), ` 함수로 초기화 및 종료를 설정하세요. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `trace.Start()`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `trace.End()`), ` 함수로 트랜잭션의 시작 종료를 설정하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+        parentName: "pre",
+        "className": "language-go",
+        "metastring": "title='Go'",
+        "title": "'Go'"
+    }, `import "github.com/whatap/go-api/trace"
+
+func main(){
+    trace.Init(nil)
+    //It must be executed before closing the app.    
+    defer trace.Shutdown()    
+
+    ctx, _ := trace.Start(context.Bacground(), "Start Tx")
+
+    ...
+
+    trace.End(ctx, err)
+}
+`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        product: "golang",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `라이브러리 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "api-guide"
+    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        product: "kubernetes",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `라이브러리 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "../golang/api-guide"
+    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "컨테이너-환경변수-설정"
     }, `컨테이너 환경변수 설정`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Docker 빌드 후 쿠버네티스 환경 내 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
@@ -535,15 +614,13 @@ RUN /usr/whatap/php/install.sh -l xxxxx -s 1.1.1.1/2.2.2.2 -v 7.0 -i /etc/php.in
     }, `yaml`), ` 파일에 다음 내용을 추가하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-yaml"
-    }, `
-env:
+    }, `env:
 - name: NODE_IP
   valueFrom: {fieldRef: {fieldPath: status.hostIP}}
 - name: NODE_NAME
   valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
 - name: POD_NAME
   valueFrom: {fieldRef: {fieldPath: metadata.name}}
-
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 예시를 참조하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-yaml"
@@ -575,19 +652,19 @@ spec:
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `NODE_IP`), `: 현재 Pod가 호스팅된 노드(Node)의 IP 주소를 수집합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `NODE_IP`), `: 현재 파드가 호스팅된 노드(Node)의 IP 주소를 수집합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `NODE_NAME`), `: 현재 Pod가 실행 중인 노드의 이름을 수집합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `NODE_NAME`), `: 현재 파드가 실행 중인 노드의 이름을 수집합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `POD_NAME`), `: 현재 Pod의 이름을 수집합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `POD_NAME`), `: 현재 파드의 이름을 수집합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "에이전트-실행"
     }, `에이전트 실행`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Tabs, {
         mdxType: "Tabs"
@@ -596,21 +673,20 @@ spec:
         label: "Command",
         default: true,
         mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션 시작 명령어 앞에 추가로 whatap-php 시작 명령어를 추가하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션 시작 명령어 앞에 추가로 whatap-agent 시작 명령어를 추가하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
-        "className": "language-docker'"
-    }, `sh -c "/usr/whatap/php/whatap-php start && [애플리케이션 시작 명령어]"
+        "className": "language-docker"
+    }, `sh -c "/usr/whatap/agent/whatap-agent start && [애플리케이션 시작 명령어]"
 `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(TabItem, {
         value: "sup",
         label: "Supervisor",
         default: true,
         mdxType: "TabItem"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Supervisor로 애플리케이션을 시작하는 경우 다음 코드를 참조해 whatap-php 서비스를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Supervisor로 애플리케이션을 시작하는 경우 다음 코드를 참조해 whatap-agent 서비스를 추가하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-docker"
-    }, `
-RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
-RUN echo "command = /usr/whatap/php/whatap-php start" >> /etc/supervisor/conf.d/whatap.conf
+    }, `RUN echo "[program:whatap-agent]" >> /etc/supervisor/conf.d/whatap.conf
+RUN echo "command = /usr/whatap/agent/whatap-agent start" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "startsecs = 0" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
@@ -619,13 +695,10 @@ RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
 RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
-
 `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `다음 명령어를 실행해 와탭 서비스가 정상 실행되었는지 확인하세요. 애플리케이션 서버가 실행되면 에이전트가 모니터링 정보를 수집하기 시작합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("pre", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
         parentName: "pre",
         "className": "language-docker"
-    }, `
-ps -ef | grep whatap_php
-
+    }, `ps -ef | grep whatap_agent
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "에이전트-설치-확인"
     }, `에이전트 설치 확인`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `에이전트를 제대로 설치했는지 확인하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
@@ -646,13 +719,17 @@ ps -ef | grep whatap_php
         parentName: "li"
     }, `컨테이너에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `ps -ef | grep whatap`), ` 명령어를 실행해 에이전트 옵션을 적용했는지 확인하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `ps -ef | grep whatap_agent`), ` 명령어를 실행해 에이전트 옵션을 적용했는지 확인하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, `컨테이너의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
-    }, `/usr/whatap/php/logs`), ` 경로의 내용을 확인하세요. 에이전트 로그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "em"
+    }, `WHATAP_HOME`), `/logs`), ` 또는 애플리케이션 실행 경로의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "p"
+    }, `logs`), ` 디렉터리를 확인하세요. 에이전트 로그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "p"
     }, `logs/whatap-`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "em"
