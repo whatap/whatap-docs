@@ -33321,7 +33321,7 @@
   },
   "alert_config_telegram_step1": {
     "en": "Search @WhaTapApmNotiBot in Telegram.",
-    "ja": "Telegramから「@WaTapApmNotiBot」を検索します。",
+    "ja": "Telegramから「@WhaTapApmNotiBot」を検索します。",
     "ko": "Telegram 에 @WhaTapApmNotiBot 을 검색합니다.",
     "zh": "Search @WaTapApmNotiBot in Telegram.",
     "service_id": "DSC04840"
@@ -46333,7 +46333,7 @@
     "service_id": "ITM06728"
   },
   "DSC06729": {
-    "en": "<div>\nView log information collected while a specific transaction is performed.<br/>\nThe following tasks are required to use the log storage and retrieval function through the [Log Search] feature of WaTap.<br />\n<b>However, you will be charged for using the log monitoring feature</b>\n</div>\n<div style='width:55%;text-align:start;'>\n<a target='_blank' href='https://docs.whatap.io/log/log-{platform}' style='text-decoration: underline !important; color: #296CF2'>\n<b>1. WhaTap {platform} Agent upgrade</b>\n</a>\n<br />\nSupports {version} and later versions\n</div>\n<div style='width:55%;text-align:start;'>\n<b>2. Agent setting</b>\n<br />\n- logsink_enabled=true add\n<br />\n- logsink_trace_enabled=true add\n</div>\n<div style='width:55%;text-align:start;'>\n<b>3. Enable log monitoring</b><br />\nLeft menu > Log> Setting > Start log monitoring > <a target='_blank' href='https://docs.whatap.io/log/log-setting' style='text-decoration:underline!important;color:#296CF2'><b>Enable log monitoring</b></a>\n</div>\n<div style='width:55%;text-align:start;'>\n<b>4. AppLog Check category log collection</b><br />\nLeft menu > Log > Live tail\n</div>\n<div>",
+    "en": "<div>\nView log information collected while a specific transaction is performed.<br/>\nThe following tasks are required to use the log storage and retrieval function through the [Log Search] feature of WhaTap.<br />\n<b>However, you will be charged for using the log monitoring feature</b>\n</div>\n<div style='width:55%;text-align:start;'>\n<a target='_blank' href='https://docs.whatap.io/log/log-{platform}' style='text-decoration: underline !important; color: #296CF2'>\n<b>1. WhaTap {platform} Agent upgrade</b>\n</a>\n<br />\nSupports {version} and later versions\n</div>\n<div style='width:55%;text-align:start;'>\n<b>2. Agent setting</b>\n<br />\n- logsink_enabled=true add\n<br />\n- logsink_trace_enabled=true add\n</div>\n<div style='width:55%;text-align:start;'>\n<b>3. Enable log monitoring</b><br />\nLeft menu > Log> Setting > Start log monitoring > <a target='_blank' href='https://docs.whatap.io/log/log-setting' style='text-decoration:underline!important;color:#296CF2'><b>Enable log monitoring</b></a>\n</div>\n<div style='width:55%;text-align:start;'>\n<b>4. AppLog Check category log collection</b><br />\nLeft menu > Log > Live tail\n</div>\n<div>",
     "ja": "<div>\n特定のトランザクションが実行中に収集されたログ情報を照会します。<br/>\nWhatap Log Monitoringを通じてログを保存したり、照会したりするためには、次の手順が必要です。<br/>\n<b>但し、Log Monitoring機能を使用すると</b>追加の料金が発生します。\n</div>\n<div style='width:55%;text-align:start;'>\n<a target='_blank' href='https://docs.whatap.io/ja/log/log-{platform}' style='text-decoration:underline!important;color:#296CF2'>\n<b>1. Whatap{platform}エージェントのアップデート</b>\n</a>\n<br/>\n{version}以降のバージョンから対応します。\n</div>\n<div style='width:55%;text-align:start;'>\n<b>2. エージェント設定</b>\n<br />\n- logsink_enabled=true\n<br />\n- logsink_trace_enabled=true\n</div>\n<div style='width:55%;text-align:start;'>\n<b>3. ログモニタリングの活性化</b><br/>\n左メニュー > ログ > 設定 > ログモニタリング開始><a target='_blank' href='https://docs.whatap.io/ja/log/log-setting' style='text-decoration:underline!important;color:#296CF2'>ログモニタリング活性化</b></a>\n</div>\n<div style='width:55%;text-align:start;'>\n<b>4. AppLogカテゴリログ収集の確認</b><br/>\n左メニュー > ログ > ライブテール\n</div>",
     "ko": "<div>\n특정 트랜잭션이 수행되는 동안 수집된 로그 정보를 조회합니다.<br/>\n와탭의 [로그 검색] 기능을 통해 로그 저장 및 조회 기능을 사용하기 위해서는 다음 작업이 필요합니다.<br />\n<b>단, 로그 모니터링 기능 사용 시 이용 요금이 청구됩니다</b>\n</div>\n<div style='width:55%;text-align:start;'>\n<a target='_blank' href='https://docs.whatap.io/log/log-{platform}' style='text-decoration: underline !important; color: #296CF2'>\n<b>1. 와탭 {platform} 에이전트 업그레이드</b>\n</a>\n<br />\n{version} 이후 버전부터 지원\n</div>\n<div style='width:55%;text-align:start;'>\n<b>2. 에이전트 설정</b>\n<br />\n- logsink_enabled=true 추가\n<br />\n- logsink_trace_enabled=true 추가\n</div>\n<div style='width:55%;text-align:start;'>\n<b>3. 로그 모니터링 활성화</b><br />\n좌측 메뉴 > 로그 > 설정 > 로그 모니터링 시작하기 > <a target='_blank' href='https://docs.whatap.io/log/log-setting' style='text-decoration:underline!important;color:#296CF2'><b>로그 모니터링 활성화</b></a>\n</div>\n<div style='width:55%;text-align:start;'>\n<b>4. AppLog 카테고리 로그 수집 확인</b><br />\n좌측 메뉴 > 로그 > 라이브 Tail\n</div>\n<div>",
     "zh": "<div>\n Queries log information collected during a particular transaction.<br/>\n To save and query log with Log Search on Whatap, The following steps are required:<br />\n <b>However, you will be charged for using the log monitoring function</b>\n </div>\n <div style='width:55%;text-align:start;'>\n <a target='_blank' href='https://guide.whatap.io/whatap_guide/use_guide/log_monitoring/pages/{platform}_install.html' style='text-decoration: underline !important; color: #296CF2'>\n <b>1. Upgrade the Whatap {platform} Agent </b>\n </a>\n <br />\n Supported from {version} and later versions\n </div>\n <div style='width:55%;text-align:start;'>\n <b>2. Add below options on Agent Settings </b><br/>\n - logsink_enabled=true to agent settings\n <br />\n - logsink_trace_enabled=true\n </div>\n <div style='width:55%;text-align:start;'>\n <b>3. Enable log monitoring </b><br/>\n Left Menu > Logs > Settings > Start Monitoring Logs > <a target='_blank' href='https://guide.whatap.io/whatap_guide/use_guide/log_monitoring/pages/setting.html#_2_%EB%A1%9C%EA%B7%B8_%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81_%ED%99%9C%EC%84%B1%ED%99%94' style='text-decoration: underline!important; color: #296CF2'>Enable log monitoring </b></a>\n </div>\n <div style='width:55%;text-align:start;'>\n <b>4. Check AppLog Category Log Collection </b><br/>\n Left Menu > Log > Live Tail\n </div>",
@@ -49875,7 +49875,7 @@
     "service_id": "DSC07241"
   },
   "TLT07242": {
-    "en": "Want to get better at monitoring? Sign up for <span style=\"color: #ffc107;\">Watap User Training</span>.",
+    "en": "Want to get better at monitoring? Sign up for <span style=\"color: #ffc107;\">WhaTap User Training</span>.",
     "ja": "モニタリングサービスをより効率的に活用したいなら、<span style=\"color: #ffc107;\">WhaTapユーザートレーニング</span>を申し込んでください。",
     "ko": "모니터링 서비스를 더 잘 이용해보고 싶다면? <span style=\"color: #ffc107;\">와탭 사용자 교육</span>을 신청하세요",
     "zh": "If you want to use the Monitoring Service more efficiently, please apply for <span style=\"color: #ffc107;\">\bWhaTap user training<span>",
@@ -52367,10 +52367,10 @@
     "service_id": "DSC07599"
   },
   "DSC07600": {
-    "en": "The control plane monitoring feature requires <strong>Watap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
+    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
     "ja": "コントロール プレーン監視機能を使用するには、<strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、<br/>マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
     "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.0 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
-    "zh": "To use the control plane monitoring feature,<strong>WhaTap Kubernetes Agent 1.5.0 or higher is required,<br/>setting permissions and feature activation options, and<br/>adding a container for control plane monitoring in the master agent. It is necessary</strong>to do so.",
+    "zh": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
     "service_id": "DSC07600"
   },
   "DSC07601": {
@@ -52465,7 +52465,7 @@
     "service_id": "CNT07613"
   },
   "DSC07614": {
-    "en": "*Only the TOP 30 list is displayed.",
+    "en": "*Only the TOP 30 is displayed.",
     "ja": "*TOP 30リストのみ表示されます。",
     "ko": "*TOP 30 리스트만 표시됩니다.",
     "zh": "*Only the TOP 30 list is displayed.",
@@ -52493,7 +52493,7 @@
     "service_id": "DSC07617"
   },
   "BTN07618": {
-    "en": "Issue access key",
+    "en": "Issue Access Key",
     "ja": "アクセスキー発行",
     "ko": "액세스 키 발급",
     "zh": "Issue access key",
@@ -52507,7 +52507,7 @@
     "service_id": "DSC07619"
   },
   "BTN07620": {
-    "en": "Create an event\n",
+    "en": "Create an Event\n",
     "ja": "イベントを生成する",
     "ko": "이벤트 생성하기",
     "zh": "Create an event\n",
@@ -52521,7 +52521,7 @@
     "service_id": "DSC07621"
   },
   "TTL07622": {
-    "en": "Resource Timing",
+    "en": "Resource timing",
     "ja": "リソースのタイミング",
     "ko": "리소스 타이밍",
     "zh": "Resource Timing",
@@ -52542,14 +52542,14 @@
     "service_id": "DSC07624"
   },
   "TTL07625": {
-    "en": "Project limitations and paid conversion information",
+    "en": "Information on project limitations and subscription.",
     "ja": "プロジェクト制限と有料コンバージョンガイド",
     "ko": "프로젝트 제한과 유료 전환 안내",
     "zh": "Project limitations and paid conversion information",
     "service_id": "TTL07625"
   },
   "CNT07626": {
-    "en": "{createable} when used in Free or Trial status.{br}To create additional projects, you must convert the project to a paid version.",
+    "en": "{createable} when used in Free or Trial status.{br}Please subscribe to create additional projects.",
     "ja": "Free、Trial状態で使用する場合は{createable}します。{br}追加プロジェクトを作成するには、そのプロジェクトを有料に切り替える必要があります。",
     "ko": "Free, Trial 상태로 사용시 {createable}합니다.{br}추가 프로젝트를 생성하려면 해당 프로젝트를 유료로 전환해야 합니다.",
     "zh": "{createable} when used in Free or Trial status.{br}To create additional projects, you must convert the project to a paid version.",
@@ -52563,21 +52563,21 @@
     "service_id": "CNT07627"
   },
   "CNT07628": {
-    "en": "Register your payment information and then switch to a paid service{br} to use all the features provided by WhaTap.",
+    "en": "Register your payment information and subscribe{br} to use all the features provided by WhaTap.",
     "ja": "お支払い情報を登録してから有料に切り替えて、{br}とタブで提供されているすべての機能をご利用ください。",
     "ko": "결제 정보를 등록한 다음 유료 전환하여{br}와탭에서 제공하는 모든 기능을 이용해 보세요.",
     "zh": "Register your payment information and then switch to a paid service{br}to use all the features provided by WhaTap.",
     "service_id": "CNT07628"
   },
   "LNK07629": {
-    "en": "View paid conversion instructions",
+    "en": "Subscription instructions",
     "ja": "有料コンバージョンガイドを見る",
     "ko": "유료 전환 안내 보기",
     "zh": "View paid conversion instructions",
     "service_id": "LNK07629"
   },
   "BTN07630": {
-    "en": "Register payment information",
+    "en": "Register Payment Information",
     "ja": "お支払い情報の登録",
     "ko": "결제 정보 등록",
     "zh": "Register payment information",
@@ -52598,18 +52598,102 @@
     "service_id": "CNT07632"
   },
   "CNT07633": {
-    "en": "The number of{br}URLs that can be registered in one URL project is free and unlimited.",
+    "en": "You can register unlimited number of {br}URLs in a single URL project for free.",
     "ja": "1つのURLプロジェクトで登録できる{br}URLは無制限無料です。",
     "ko": "한 개의 URL 프로젝트에서 등록 할 수 있는{br}URL은 무제한 무료입니다.",
     "zh": "The number of{br}URLs that can be registered in one URL project is free and unlimited.",
     "service_id": "CNT07633"
   },
   "ITM07634": {
-    "en": "Read Only All",
+    "en": "Read only",
     "ja": "読み取り専用 すべて",
     "ko": "읽기 전용 전체",
     "zh": "Read Only All",
     "service_id": "ITM07634"
+  },
+  "TLT07635": {
+    "en": "Supported in agent version {version} or later.",
+    "ja": "エージェントバージョン{version}以上でサポートされます。",
+    "ko": "에이전트 버전 {version} 이상에서 지원됩니다.",
+    "zh": "Supported in agent version {version} or later.",
+    "service_id": "TLT07635"
+  },
+  "DSC07636": {
+    "en": "Shows top {number}cases sorted by runtime.",
+    "ja": "runtime でソートされた親 {number}ガンを示します。",
+    "ko": "runtime으로 정렬한 상위 {number}건을 보여줍니다.",
+    "zh": "Shows top {number}cases sorted by runtime.",
+    "service_id": "DSC07636"
+  },
+  "TTL07637": {
+    "en": "Announcing changes to {platform} monitoring",
+    "ja": "{platform}モニタリングの変更案内",
+    "ko": "{platform} 모니터링 변경사항 안내",
+    "zh": "Notice on changes to {platform} monitoring",
+    "service_id": "TTL07637"
+  },
+  "TTL07638": {
+    "en": "Complex object information in a cluster at a glance",
+    "ja": "クラスターの複雑なObject情報を一目で",
+    "ko": "클러스터의 복잡한 오브젝트 정보를 한눈에",
+    "zh": "Complex object information in a cluster at a glance",
+    "service_id": "TTL07638"
+  },
+  "DSC07639": {
+    "en": "A greatly improved UI allows you to conveniently check complex object manifest information. Additionally, the <b>addition of past search and comparison functions for each object</b> allows you to easily track changes within a cluster.",
+    "ja": "大幅に改善されたUIにより、複雑な\bObject Manifest情報を便利に確認できるようになりました。 また、<b>Object別の過去のルックアップと比較機能の追加</b>を使用すると、クラスタ内の変動を簡単に追跡できます。",
+    "ko": "대폭 개선된 UI를 통해 복잡한 오브젝트 매니페스트 정보를 편리하게 확인할 수 있게 되었습니다. 또한 <b>오브젝트별 과거 조회 및 비교 기능의 추가</b>로 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.",
+    "zh": "A greatly improved UI allows you to conveniently check complex object manifest information. Additionally, the <b>addition of past search and comparison functions for each object</b> allows you to easily track changes within a cluster.",
+    "service_id": "DSC07639"
+  },
+  "DSC07640": {
+    "en": "To use this feature, you must update to Kubernetes Master Agent version 1.5.2 or higher.",
+    "ja": "この機能は、KubernetesのMaster Agent 1.5.2バージョン以上にアップデートする必要があります。",
+    "ko": "이 기능은 쿠버네티스의 마스터 에이전트 1.5.2 버전 이상으로 업데이트해야 이용할 수 있습니다.",
+    "zh": "To use this feature, you must update to Kubernetes Master Agent version 1.5.2 or higher.",
+    "service_id": "DSC07640"
+  },
+  "DSC07641": {
+    "en": "For more information about the object manifest feature, check out the WhaTap Docs below.",
+    "ja": "Object Manifest機能の詳細については、以下のWhaTap Docsを参照してください。",
+    "ko": "오브젝트 매니페스트 기능에 대한 자세한 내용은 아래 WhaTap Docs에서 확인하세요.",
+    "zh": "For more information about the object manifest feature, check out the WhaTap Docs below.",
+    "service_id": "DSC07641"
+  },
+  "DSC07642": {
+    "en": "Some data cannot be viewed unless you update the agent.<br/>(Agent v{version} and earlier)",
+    "ja": "エージェントを更新しないと、一部のデータを検索できません。<br/>（エージェントv{version}以下）",
+    "ko": "에이전트를 업데이트하지 않으면 일부 데이터를 조회할 수 없습니다.<br/>(에이전트 v{version} 이하)",
+    "zh": "Some data cannot be viewed unless you update the agent.<br/>(Agent v{version} and earlier)",
+    "service_id": "DSC07642"
+  },
+  "TTL07643": {
+    "en": "XOS2 indicator replacement",
+    "ja": "XOS2インジケーターの置き換え",
+    "ko": "XOS2 지표 대체",
+    "zh": "XOS2 indicator replacement",
+    "service_id": "TTL07643"
+  },
+  "DSC07644": {
+    "en": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v1.7.0.",
+    "ja": "xos、xos2 に分かれていた CPU 指標をエージェント v1.7.0 からは 1 つに統合します。",
+    "ko": "xos, xos2로 나누어져 있던 CPU 지표를 에이전트 v1.7.0부터는 하나로 통합합니다.",
+    "zh": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v1.7.0.",
+    "service_id": "DSC07644"
+  },
+  "DSC07645": {
+    "en": "Because the units change, you may need to change the units set in existing dashboards and alarms.<br/>\nPlease update to the latest agent and request maintenance from WhaTap technical support.",
+    "ja": "ユニットが変更されるため、既存のダッシュボードとアラームに設定されているユニットを変更する必要があります。<br/>\n最新のエージェントにアップデートした後、Watabテクニカルサポートチームに確認を依頼してください。",
+    "ko": "단위가 변경되기 때문에 기존 대시보드와 알람에 설정된 단위를 변경해야 할 수 있습니다.<br/>\n최신 에이전트로 업데이트 후 와탭 기술 지원팀에 점검을 요청하세요.",
+    "zh": "Because the units change, you may need to change the units set in existing dashboards and alarms.<br/>\nPlease update to the latest agent and request maintenance from WhaTap technical support.",
+    "service_id": "DSC07645"
+  },
+  "TTL07646": {
+    "en": "Switch V2 version",
+    "ja": "V2バージョンの切り替え",
+    "ko": "V2 버전 전환",
+    "zh": "Switch V2 version",
+    "service_id": "TTL07646"
   },
   "": {
     "": "",
@@ -52821,5 +52905,10 @@
     "en": "Integrated Flex Board",
     "ja": "統合Flexボード",
     "ko": "통합 Flex 보드"
+  },
+  "workload": {
+    "en": "Workload",
+    "ja": "ワークロード",
+    "ko": "워크로드"
   }
 }

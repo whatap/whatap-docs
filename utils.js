@@ -298,6 +298,12 @@ function colsToJson(data){
     "ko": "통합 Flex 보드"
   }
 
+  rd["workload"] = {
+    "en": "Workload",
+    "ja": "ワークロード",
+    "ko": "워크로드"
+  }
+
   rd["tag_count"].ja = "メトリックス照会";
   rd["tag_count"].en = "Metrics Search";
 
