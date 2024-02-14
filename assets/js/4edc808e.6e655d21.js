@@ -317,20 +317,33 @@ const frontMatter = {
     keywords: [
         'WhaTap',
         '와탭',
+        '와탭랩스',
         '매뉴얼',
         '사용법',
         'WhaTap 사용법',
         'WhaTap 매뉴얼',
         '기술 문서',
         'APM',
+        '클라우드 모니터링',
         '애플리케이션 모니터링',
-        '로그 모니터링',
-        '쿠버네티스 모니터링',
         '서버 모니터링',
         '데이터베이스 모니터링',
-        'URL 모니터링',
-        '클라우드 모니터링',
-        '네트워크 모니터링'
+        '무료 모니터링',
+        '쿠버네티스 모니터링',
+        '인프라 관리',
+        '서버 관리',
+        '모니터링 솔루션',
+        '브라우저 모니터링',
+        '네트워크 모니터링',
+        'NPM',
+        '성능 모니터링',
+        '히트맵',
+        '액티브 스택',
+        '옵저버빌리티',
+        'Observability',
+        '하이브리드 모니터링',
+        '온프레미스(On-premise) 모니터링',
+        '통합 모니터링'
     ]
 };
 const contentTitle = undefined;
@@ -357,20 +370,33 @@ const metadata = {
         "keywords": [
             "WhaTap",
             "와탭",
+            "와탭랩스",
             "매뉴얼",
             "사용법",
             "WhaTap 사용법",
             "WhaTap 매뉴얼",
             "기술 문서",
             "APM",
+            "클라우드 모니터링",
             "애플리케이션 모니터링",
-            "로그 모니터링",
-            "쿠버네티스 모니터링",
             "서버 모니터링",
             "데이터베이스 모니터링",
-            "URL 모니터링",
-            "클라우드 모니터링",
-            "네트워크 모니터링"
+            "무료 모니터링",
+            "쿠버네티스 모니터링",
+            "인프라 관리",
+            "서버 관리",
+            "모니터링 솔루션",
+            "브라우저 모니터링",
+            "네트워크 모니터링",
+            "NPM",
+            "성능 모니터링",
+            "히트맵",
+            "액티브 스택",
+            "옵저버빌리티",
+            "Observability",
+            "하이브리드 모니터링",
+            "온프레미스(On-premise) 모니터링",
+            "통합 모니터링"
         ]
     },
     "sidebar": "indexSidebar"
@@ -404,7 +430,7 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("head", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("title", null, "실시간 옵저버빌리티 플랫폼 | WhaTap Docs")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "와탭-docs-페이지에-오신-것을-진심으로-환영합니다"
     }, `와탭 Docs 페이지에 오신 것을 진심으로 환영합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"

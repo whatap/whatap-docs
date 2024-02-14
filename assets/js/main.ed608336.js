@@ -50555,7 +50555,7 @@ __webpack_require__.r(__webpack_exports__);
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  "title": "WhaTap",
+  "title": "WhaTap Docs",
   "tagline": "와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.",
   "url": "https://docs.whatap.io",
   "baseUrl": "/whatap-docs/",
