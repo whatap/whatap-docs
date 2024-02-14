@@ -15138,7 +15138,7 @@
     "ja": "ノードエージェントリスト",
     "ko": "노드 에이전트 목록",
     "zh": "Node agent list",
-    "service_id": "_02229"
+    "service_id": "TTL02229"
   },
   "node_selection": {
     "en": "Node Selection",
@@ -52227,10 +52227,10 @@
     "service_id": "ITM07579"
   },
   "TLT07580": {
-    "en": "If an event occurs N times in a row, a notification will be sent. If disabled, a notification will be sent each time the event occurs.",
-    "ja": "イベントが連続してN回発生したら、アラート通知します。使用しない場合は、イベントが発生するたびにアラートを通知します。",
-    "ko": "이벤트가 연속으로 N회 발생할 경우, 알림이 발송됩니다. 사용하지 않을 경우, 이벤트가 발생할 때마다 알림이 발송됩니다.",
-    "zh": "If an event occurs N times in succession, a notification is sent. If disabled, notifications will be sent whenever an event occurs.",
+    "en": "You will receive a notification when an event occurs N times in a row.</br>If you disable that feature, you will receive a notification every time an event occurs.",
+    "ja": "イベントが連続してN回発生したときに通知を受信します。</br>この機能を無効にすると、イベントが発生するたびに通知を受信します。",
+    "ko": "이벤트가 연속으로 N회 발생할 때 알림을 수신합니다.</br>해당 기능을 사용하지 않으면 이벤트가 발생할 때마다 알림을 수신합니다.",
+    "zh": "You will receive a notification when an event occurs N times in a row.</br>If you disable that feature, you will receive a notification every time an event occurs.",
     "service_id": "TLT07580"
   },
   "NTC07581": {
@@ -52361,21 +52361,21 @@
   },
   "DSC07599": {
     "en": "By observing kube-apiserver's load status and performance trend charts through visualized dashboards, you can quickly detect cluster failures caused by<br/>kube-apiserver and analyze the cause.",
-    "ja": "可視化されたダッシュボードでkube-apiserverの負荷状況や性能推移グラフを確認します。これにより、kube-apiserverが原因で発生するクラスタ障害を迅速に検知し、原因が把握できます。",
+    "ja": "可視化されたダッシュボードでkube-apiserverの負荷状況や性能推移グラフを確認します。<br/>これにより、kube-apiserverが原因で発生するクラスタ障害を迅速に検知し、原因が把握できます。",
     "ko": "시각화된 대시보드를 통해 kube-apiserver의 부하 상태 및 성능 추이 차트를 관찰함으로써<br/>kube-apiserver로 인한 클러스터 장애를 빠르게 감지하고 원인을 분석할 수 있습니다.",
     "zh": "By observing the load status and performance trend charts of kube-apiserver through a visualized dashboard, you can quickly detect cluster failures caused by kube-apiserver and analyze the cause.",
     "service_id": "DSC07599"
   },
   "DSC07600": {
-    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
-    "ja": "コントロール プレーン監視機能を使用するには、<strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、<br/>マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
+    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and setting up permissions and feature enablement options, and adding a container for control plane monitoring within the master agent</strong> is required.",
+    "ja": "コントロール プレーン監視機能を使用するには、<br/><strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
     "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.0 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
     "zh": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
     "service_id": "DSC07600"
   },
   "DSC07601": {
     "en": "Check out the WhaTap Docs below to learn more about<br/>control plane kube-apiserver monitoring!",
-    "ja": "コントロール プレーンのkube-apiserver の監視についての詳細は、以下の WhaTap ドキュメントをご参考ください。",
+    "ja": "コントロール プレーンのkube-apiserver の監視についての詳細は、<br/>以下の WhaTap ドキュメントをご参考ください。",
     "ko": "아래 WhaTap Docs를 통해 컨트롤 플레인 kube-apiserver 모니터링에 대한<br/>자세한 내용을 확인해보세요!",
     "zh": "Check out the WhaTap Docs below to learn more about monitoring the control plane kube-apiserver!",
     "service_id": "DSC07601"
@@ -52694,6 +52694,34 @@
     "ko": "V2 버전 전환",
     "zh": "Switch V2 version",
     "service_id": "TTL07646"
+  },
+  "BTN07647": {
+    "en": "Check the changing indicators",
+    "ja": "変更される指標を確認する",
+    "ko": "변경되는 지표 확인하기",
+    "zh": "Check the changing indicators",
+    "service_id": "BTN07647"
+  },
+  "ITM07648": {
+    "en": "Merge multiple projects",
+    "ja": "複数プロジェクトのマージ",
+    "ko": "복수 프로젝트 병합",
+    "zh": "Merge multiple projects",
+    "service_id": "ITM07648"
+  },
+  "DSC07649": {
+    "en": "The agent version on each node is different. Please use only one version to ensure accurate data collection. (Currently running versions: {nodeAgentVersionCount})",
+    "ja": "各ノードのエージェントバージョンが異なります。 正確なデータ収集のために1つのバージョンのみを使用してください。 （現在実行中のバージョン数：{nodeAgentVersionCount}個）",
+    "ko": "각 노드의 에이전트 버전이 상이합니다. 정확한 데이터 수집을 위해 하나의 버전만 사용해주세요. (현재 실행 중인 버전 수: {nodeAgentVersionCount}개)",
+    "zh": "The agent version on each node is different. Please use only one version to ensure accurate data collection. (Currently running versions: {nodeAgentVersionCount})",
+    "service_id": "DSC07649"
+  },
+  "BTN07650": {
+    "en": "Agent version warning",
+    "ja": "エージェントバージョンの警告",
+    "ko": "에이전트 버전 경고",
+    "zh": "Agent version warning",
+    "service_id": "NTC07650"
   },
   "": {
     "": "",
