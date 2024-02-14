@@ -5333,6 +5333,7 @@ const sidebars = {
             'kubernetes/correlations',
             'kubernetes/agent-manage',
             'kubernetes/agent-update',
+            'kubernetes/uninstall-agent',
           ],
         },
         {
