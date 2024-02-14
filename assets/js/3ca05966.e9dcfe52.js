@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[72172],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[68276],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 41036:
+/***/ 34896:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,33 +310,28 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'flexboard-share',
     title: 'Flex 보드 공유하기',
-    description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
+    description: 'Flex 보드를 다른 계정의 사용자와 공유하거나 재사용할 수 있습니다.',
     tags: [
-        '클라우드',
-        'Amazon CloudWatch',
+        'Java',
         'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "amazon-cloudwatch/flexboard-share",
-    "id": "amazon-cloudwatch/flexboard-share",
+    "unversionedId": "java/flexboard-share",
+    "id": "java/flexboard-share",
     "title": "Flex 보드 공유하기",
-    "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/amazon-cloudwatch/flexboard-share.mdx",
-    "sourceDirName": "amazon-cloudwatch",
-    "slug": "/amazon-cloudwatch/flexboard-share",
-    "permalink": "/whatap-docs/amazon-cloudwatch/flexboard-share",
+    "description": "Flex 보드를 다른 계정의 사용자와 공유하거나 재사용할 수 있습니다.",
+    "source": "@site/docs/java/flexboard-share.mdx",
+    "sourceDirName": "java",
+    "slug": "/java/flexboard-share",
+    "permalink": "/whatap-docs/java/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/amazon-cloudwatch/flexboard-share.mdx",
+    "editUrl": "undefined/docs/java/flexboard-share.mdx",
     "tags": [
         {
-            "label": "클라우드",
-            "permalink": "/whatap-docs/tags/클라우드"
-        },
-        {
-            "label": "Amazon CloudWatch",
-            "permalink": "/whatap-docs/tags/amazon-cloud-watch"
+            "label": "Java",
+            "permalink": "/whatap-docs/tags/java"
         },
         {
             "label": "Flex 보드",
@@ -347,21 +342,20 @@ const metadata = {
     "frontMatter": {
         "id": "flexboard-share",
         "title": "Flex 보드 공유하기",
-        "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
+        "description": "Flex 보드를 다른 계정의 사용자와 공유하거나 재사용할 수 있습니다.",
         "tags": [
-            "클라우드",
-            "Amazon CloudWatch",
+            "Java",
             "Flex 보드"
         ]
     },
-    "sidebar": "amazoncloudwatchSidebar",
+    "sidebar": "javaSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/amazon-cloudwatch/flexboard-mode"
+        "permalink": "/whatap-docs/java/flexboard-mode"
     },
     "next": {
-        "title": "메트릭스",
-        "permalink": "/whatap-docs/amazon-cloudwatch/metrics-intro"
+        "title": "토폴로지",
+        "permalink": "/whatap-docs/java/topology"
     }
 };
 const assets = {};
@@ -571,7 +565,11 @@ function MDXContent(_param) {
         sid: "shared",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 구성원에 대한 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 멤버에 대한 정보를 확인할 수 있습니다. 읽기 전용으로 공유한 멤버에게는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "read_only",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "thead"

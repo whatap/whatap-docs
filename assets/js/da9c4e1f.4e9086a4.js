@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[24272],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[4032],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 49804:
+/***/ 96768:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,30 +312,30 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        'Flex 보드',
-        'AWS Log'
+        'MongoDB',
+        'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "aws-log/flexboard-share",
-    "id": "aws-log/flexboard-share",
+    "unversionedId": "mongodb/flexboard-share",
+    "id": "mongodb/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/aws-log/flexboard-share.mdx",
-    "sourceDirName": "aws-log",
-    "slug": "/aws-log/flexboard-share",
-    "permalink": "/whatap-docs/aws-log/flexboard-share",
+    "source": "@site/docs/mongodb/flexboard-share.mdx",
+    "sourceDirName": "mongodb",
+    "slug": "/mongodb/flexboard-share",
+    "permalink": "/whatap-docs/mongodb/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/aws-log/flexboard-share.mdx",
+    "editUrl": "undefined/docs/mongodb/flexboard-share.mdx",
     "tags": [
+        {
+            "label": "MongoDB",
+            "permalink": "/whatap-docs/tags/mongo-db"
+        },
         {
             "label": "Flex 보드",
             "permalink": "/whatap-docs/tags/flex-보드"
-        },
-        {
-            "label": "AWS Log",
-            "permalink": "/whatap-docs/tags/aws-log"
         }
     ],
     "version": "current",
@@ -344,18 +344,18 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            "Flex 보드",
-            "AWS Log"
+            "MongoDB",
+            "Flex 보드"
         ]
     },
-    "sidebar": "awslogSidebar",
+    "sidebar": "mongodbSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/aws-log/flexboard-mode"
+        "permalink": "/whatap-docs/mongodb/flexboard-mode"
     },
     "next": {
-        "title": "알림 설정하기",
-        "permalink": "/whatap-docs/aws-log/set-notice"
+        "title": "메트릭스",
+        "permalink": "/whatap-docs/mongodb/metrics-intro"
     }
 };
 const assets = {};
@@ -565,7 +565,11 @@ function MDXContent(_param) {
         sid: "shared",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 구성원에 대한 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 멤버에 대한 정보를 확인할 수 있습니다. 읽기 전용으로 공유한 멤버에게는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "read_only",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "thead"

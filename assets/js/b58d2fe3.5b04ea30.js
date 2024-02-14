@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[38166],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[48652],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 21928:
+/***/ 88436:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,26 +312,26 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        '브라우저 모니터링',
+        'SQL Server',
         'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "browser/flexboard-share",
-    "id": "browser/flexboard-share",
+    "unversionedId": "mssql/flexboard-share",
+    "id": "mssql/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/browser/flexboard-share.mdx",
-    "sourceDirName": "browser",
-    "slug": "/browser/flexboard-share",
-    "permalink": "/whatap-docs/browser/flexboard-share",
+    "source": "@site/docs/mssql/flexboard-share.mdx",
+    "sourceDirName": "mssql",
+    "slug": "/mssql/flexboard-share",
+    "permalink": "/whatap-docs/mssql/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/browser/flexboard-share.mdx",
+    "editUrl": "undefined/docs/mssql/flexboard-share.mdx",
     "tags": [
         {
-            "label": "브라우저 모니터링",
-            "permalink": "/whatap-docs/tags/브라우저-모니터링"
+            "label": "SQL Server",
+            "permalink": "/whatap-docs/tags/sql-server"
         },
         {
             "label": "Flex 보드",
@@ -344,18 +344,18 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            "브라우저 모니터링",
+            "SQL Server",
             "Flex 보드"
         ]
     },
-    "sidebar": "rumsSidebar",
+    "sidebar": "mssqlSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/browser/flexboard-mode"
+        "permalink": "/whatap-docs/mssql/flexboard-mode"
     },
     "next": {
-        "title": "페이지 로드 분석하기",
-        "permalink": "/whatap-docs/browser/analyze-pageload"
+        "title": "메트릭스",
+        "permalink": "/whatap-docs/mssql/metrics-intro"
     }
 };
 const assets = {};
@@ -565,7 +565,11 @@ function MDXContent(_param) {
         sid: "shared",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 구성원에 대한 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 멤버에 대한 정보를 확인할 수 있습니다. 읽기 전용으로 공유한 멤버에게는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "read_only",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "thead"

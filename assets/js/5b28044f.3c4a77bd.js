@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[80144],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[16264],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 45236:
+/***/ 76176:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,26 +312,26 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        'Node.js',
+        'Altibase',
         'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "nodejs/flexboard-share",
-    "id": "nodejs/flexboard-share",
+    "unversionedId": "altibase/flexboard-share",
+    "id": "altibase/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/nodejs/flexboard-share.mdx",
-    "sourceDirName": "nodejs",
-    "slug": "/nodejs/flexboard-share",
-    "permalink": "/whatap-docs/nodejs/flexboard-share",
+    "source": "@site/docs/altibase/flexboard-share.mdx",
+    "sourceDirName": "altibase",
+    "slug": "/altibase/flexboard-share",
+    "permalink": "/whatap-docs/altibase/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/nodejs/flexboard-share.mdx",
+    "editUrl": "undefined/docs/altibase/flexboard-share.mdx",
     "tags": [
         {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
+            "label": "Altibase",
+            "permalink": "/whatap-docs/tags/altibase"
         },
         {
             "label": "Flex 보드",
@@ -344,18 +344,18 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            "Node.js",
+            "Altibase",
             "Flex 보드"
         ]
     },
-    "sidebar": "nodejsSidebar",
+    "sidebar": "altibaseSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/nodejs/flexboard-mode"
+        "permalink": "/whatap-docs/altibase/flexboard-mode"
     },
     "next": {
-        "title": "토폴로지",
-        "permalink": "/whatap-docs/nodejs/topology"
+        "title": "메트릭스",
+        "permalink": "/whatap-docs/altibase/metrics-intro"
     }
 };
 const assets = {};
@@ -565,7 +565,11 @@ function MDXContent(_param) {
         sid: "shared",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 구성원에 대한 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 멤버에 대한 정보를 확인할 수 있습니다. 읽기 전용으로 공유한 멤버에게는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "read_only",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "thead"

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[68921],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[38166],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 71272:
+/***/ 21928:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,35 +312,30 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        'Flex 보드',
-        'Naver Cloud Monitoring',
-        '클라우드'
+        '브라우저 모니터링',
+        'Flex 보드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "ncloud/flexboard-share",
-    "id": "ncloud/flexboard-share",
+    "unversionedId": "browser/flexboard-share",
+    "id": "browser/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/ncloud/flexboard-share.mdx",
-    "sourceDirName": "ncloud",
-    "slug": "/ncloud/flexboard-share",
-    "permalink": "/whatap-docs/ncloud/flexboard-share",
+    "source": "@site/docs/browser/flexboard-share.mdx",
+    "sourceDirName": "browser",
+    "slug": "/browser/flexboard-share",
+    "permalink": "/whatap-docs/browser/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/ncloud/flexboard-share.mdx",
+    "editUrl": "undefined/docs/browser/flexboard-share.mdx",
     "tags": [
+        {
+            "label": "브라우저 모니터링",
+            "permalink": "/whatap-docs/tags/브라우저-모니터링"
+        },
         {
             "label": "Flex 보드",
             "permalink": "/whatap-docs/tags/flex-보드"
-        },
-        {
-            "label": "Naver Cloud Monitoring",
-            "permalink": "/whatap-docs/tags/naver-cloud-monitoring"
-        },
-        {
-            "label": "클라우드",
-            "permalink": "/whatap-docs/tags/클라우드"
         }
     ],
     "version": "current",
@@ -349,19 +344,18 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            "Flex 보드",
-            "Naver Cloud Monitoring",
-            "클라우드"
+            "브라우저 모니터링",
+            "Flex 보드"
         ]
     },
-    "sidebar": "ncloudSidebar",
+    "sidebar": "rumsSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/ncloud/flexboard-mode"
+        "permalink": "/whatap-docs/browser/flexboard-mode"
     },
     "next": {
-        "title": "메트릭스",
-        "permalink": "/whatap-docs/ncloud/metrics-intro"
+        "title": "페이지 로드 분석하기",
+        "permalink": "/whatap-docs/browser/analyze-pageload"
     }
 };
 const assets = {};
@@ -571,7 +565,11 @@ function MDXContent(_param) {
         sid: "shared",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 구성원에 대한 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 멤버에 대한 정보를 확인할 수 있습니다. 읽기 전용으로 공유한 멤버에게는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "read_only",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "thead"

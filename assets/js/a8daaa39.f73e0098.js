@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[64452],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12521],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 21708:
+/***/ 75472:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -313,29 +313,34 @@ const frontMatter = {
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
         'Flex 보드',
-        '쿠버네티스'
+        'Oracle Cloud Monitor',
+        '클라우드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/flexboard-share",
-    "id": "kubernetes/flexboard-share",
+    "unversionedId": "oracle-cloud/flexboard-share",
+    "id": "oracle-cloud/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/kubernetes/flexboard-share.mdx",
-    "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/flexboard-share",
-    "permalink": "/whatap-docs/kubernetes/flexboard-share",
+    "source": "@site/docs/oracle-cloud/flexboard-share.mdx",
+    "sourceDirName": "oracle-cloud",
+    "slug": "/oracle-cloud/flexboard-share",
+    "permalink": "/whatap-docs/oracle-cloud/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/flexboard-share.mdx",
+    "editUrl": "undefined/docs/oracle-cloud/flexboard-share.mdx",
     "tags": [
         {
             "label": "Flex 보드",
             "permalink": "/whatap-docs/tags/flex-보드"
         },
         {
-            "label": "쿠버네티스",
-            "permalink": "/whatap-docs/tags/쿠버네티스"
+            "label": "Oracle Cloud Monitor",
+            "permalink": "/whatap-docs/tags/oracle-cloud-monitor"
+        },
+        {
+            "label": "클라우드",
+            "permalink": "/whatap-docs/tags/클라우드"
         }
     ],
     "version": "current",
@@ -345,17 +350,18 @@ const metadata = {
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
             "Flex 보드",
-            "쿠버네티스"
+            "Oracle Cloud Monitor",
+            "클라우드"
         ]
     },
-    "sidebar": "kubeSidebar",
+    "sidebar": "oracleSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/kubernetes/flexboard-mode"
+        "permalink": "/whatap-docs/oracle-cloud/flexboard-mode"
     },
     "next": {
         "title": "메트릭스",
-        "permalink": "/whatap-docs/kubernetes/metrics-intro"
+        "permalink": "/whatap-docs/oracle-cloud/metrics-intro"
     }
 };
 const assets = {};
@@ -565,7 +571,11 @@ function MDXContent(_param) {
         sid: "shared",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 구성원에 대한 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
+    }), ` 태그에 마우스를 오버하면 대시보드를 공유한 멤버에 대한 정보를 확인할 수 있습니다. 읽기 전용으로 공유한 멤버에게는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "read_only",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 태그가 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "thead"
