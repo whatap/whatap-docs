@@ -3070,7 +3070,7 @@ const sidebars = {
               type: 'doc',
               label: 'v1.0.7 (81)',
               id: 'release-notes/mobile/mobile-app-v1_0_7',
-              className: 'new',
+              // className: 'new',
             },
             {
               type: 'doc',
@@ -3150,7 +3150,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/php-2_7_1',
@@ -3159,7 +3159,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_7_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_7_0',
                 'release-notes/php/php-2_6_3',
@@ -3259,7 +3259,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/golang-0_3_1',
@@ -3268,7 +3268,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_3_1',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_3_0',
                 'release-notes/golang/golang-0_2_4',
@@ -3319,14 +3319,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/k8s/k8s-1_5_4',
+                id: 'release-notes/k8s/k8s-1_5_5',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_5_4',
+                  id: 'release-notes/k8s/k8s-1_5_5',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_5_4', 
                 'release-notes/k8s/k8s-1_5_3', 
                 'release-notes/k8s/k8s-1_5_2', 
                 'release-notes/k8s/k8s-1_5_1',
@@ -3335,7 +3336,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_4_8',
                 'release-notes/k8s/k8s-1_4_4',
                 'release-notes/k8s/k8s-1_4_3',
-                'release-notes/k8s/k8s-1_4_2',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3344,7 +3344,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-1_6_19',
@@ -3353,7 +3353,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-1_6_19',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_6_18',
                 'release-notes/db/dbx-1_6_17',
@@ -3371,7 +3371,7 @@ const sidebars = {
               label: 'XOS',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/xos-1_1_8a',
@@ -3380,7 +3380,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/xos-1_1_8a',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/xos-1_1_6j',
                 'release-notes/db/xos-1_1_6g',
