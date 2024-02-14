@@ -2086,6 +2086,11 @@ const sidebars = {
               },
               items: [
                 'mysql/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mysql/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'mysql/metric-warning-notice',
                 'mysql/set-notification-message',
                 'mysql/set-event-detect-anomal',
@@ -5460,6 +5465,11 @@ const sidebars = {
               },
               items: [
                 'kubernetes/container-warning-notice',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/metric-warning-notice',
                 'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
