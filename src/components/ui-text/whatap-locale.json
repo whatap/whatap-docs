@@ -36247,7 +36247,7 @@
   },
   "metrics": {
     "en": "Metrics",
-    "ja": "メトリクス",
+    "ja": "メトリックス",
     "ko": "메트릭스",
     "zh": "Metrics",
     "service_id": "TTL05258"
