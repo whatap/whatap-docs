@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[35334],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[12521],{
 
 /***/ 95788:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 56044:
+/***/ 75472:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,30 +312,35 @@ const frontMatter = {
     title: 'Flex 보드 공유하기',
     description: 'Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.',
     tags: [
-        '.NET',
-        'Flex 보드'
+        'Flex 보드',
+        'Oracle Cloud Monitor',
+        '클라우드'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/flexboard-share",
-    "id": "dotnet/flexboard-share",
+    "unversionedId": "oracle-cloud/flexboard-share",
+    "id": "oracle-cloud/flexboard-share",
     "title": "Flex 보드 공유하기",
     "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
-    "source": "@site/docs/dotnet/flexboard-share.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/flexboard-share",
-    "permalink": "/whatap-docs/dotnet/flexboard-share",
+    "source": "@site/docs/oracle-cloud/flexboard-share.mdx",
+    "sourceDirName": "oracle-cloud",
+    "slug": "/oracle-cloud/flexboard-share",
+    "permalink": "/whatap-docs/oracle-cloud/flexboard-share",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/flexboard-share.mdx",
+    "editUrl": "undefined/docs/oracle-cloud/flexboard-share.mdx",
     "tags": [
-        {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
-        },
         {
             "label": "Flex 보드",
             "permalink": "/whatap-docs/tags/flex-보드"
+        },
+        {
+            "label": "Oracle Cloud Monitor",
+            "permalink": "/whatap-docs/tags/oracle-cloud-monitor"
+        },
+        {
+            "label": "클라우드",
+            "permalink": "/whatap-docs/tags/클라우드"
         }
     ],
     "version": "current",
@@ -344,18 +349,19 @@ const metadata = {
         "title": "Flex 보드 공유하기",
         "description": "Flex 보드를 다른 계정의 사용자와 공유하고 재사용할 수 있습니다.",
         "tags": [
-            ".NET",
-            "Flex 보드"
+            "Flex 보드",
+            "Oracle Cloud Monitor",
+            "클라우드"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "oracleSidebar",
     "previous": {
         "title": "Flex 보드 화면 모드",
-        "permalink": "/whatap-docs/dotnet/flexboard-mode"
+        "permalink": "/whatap-docs/oracle-cloud/flexboard-mode"
     },
     "next": {
-        "title": "토폴로지",
-        "permalink": "/whatap-docs/dotnet/topology"
+        "title": "메트릭스",
+        "permalink": "/whatap-docs/oracle-cloud/metrics-intro"
     }
 };
 const assets = {};
@@ -376,9 +382,19 @@ const toc = [
         level: 2
     },
     {
-        value: 'Flex 보드 내보내기, 가져오기',
-        id: 'flex-보드-내보내기-가져오기',
+        value: 'JSON 파일로 공유하기',
+        id: 'json-파일로-공유하기',
         level: 2
+    },
+    {
+        value: '내보내기',
+        id: '내보내기',
+        level: 3
+    },
+    {
+        value: '가져오기',
+        id: '가져오기',
+        level: 3
     }
 ];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
@@ -715,8 +731,10 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 옵션을 선택하면 복사 받은 사용자는 대시보드를 수정할 수 없습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "flex-보드-내보내기-가져오기"
-    }, `Flex 보드 내보내기, 가져오기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Flex 보드 설정을 JSON 파일로 저장하고 다른 멤버에서 전달할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        "id": "json-파일로-공유하기"
+    }, `JSON 파일로 공유하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `Flex 보드 설정을 JSON 파일로 저장하고 다른 멤버에서 전달하거나 다른 멤버의 설정을 가져올 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "내보내기"
+    }, `내보내기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "integratedFlexboard",
@@ -741,7 +759,19 @@ function MDXContent(_param) {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `다운로드한 JSON 파일을 다른 멤버에게 전달하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `JSON 파일이 다운로드되면 공유할 다른 멤버에게 전달하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "가져오기"
+    }, `가져오기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ol"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "integratedFlexboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 또는 프로젝트의 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "flexboard",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), " 메뉴로 이동하세요."), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -758,7 +788,7 @@ function MDXContent(_param) {
         parentName: "ol"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `JSON 파일을 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }, `다운로드한 JSON 파일을 선택하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
