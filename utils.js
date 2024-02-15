@@ -314,6 +314,7 @@ function colsToJson(data){
   rd["tag_count_anomaly_detection"].en = "Metrics Anomaly Detection";
 
   rd["Container"].ja = "コンテナー";
+  rd["metrics"].ja = "メトリックス";
 
   return rd;
 }
