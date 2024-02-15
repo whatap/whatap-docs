@@ -190,7 +190,7 @@ module.exports = Promise.resolve({
         },
         {
           name: 'google-site-verification',
-          contnet: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
+          content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
       docs: {
