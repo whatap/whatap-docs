@@ -15191,7 +15191,7 @@
   },
   "Container": {
     "en": "Container",
-    "ja": "コンテナ",
+    "ja": "コンテナー",
     "ko": "컨테이너",
     "zh": "Container",
     "service_id": "_02237"
@@ -52712,7 +52712,7 @@
   "DSC07649": {
     "en": "The agent version on each node is different. Please use only one version to ensure accurate data collection. (Currently running versions: {nodeAgentVersionCount})",
     "ja": "各ノードのエージェントバージョンが異なります。 正確なデータ収集のために1つのバージョンのみを使用してください。 （現在実行中のバージョン数：{nodeAgentVersionCount}個）",
-    "ko": "각 노드의 에이전트 버전이 상이합니다. 정확한 데이터 수집을 위해 하나의 버전만 사용해주세요. (현재 실행 중인 버전 수: {nodeAgentVersionCount}개)",
+    "ko": "각 노드의 에이전트 버전이 상이합니다. 보다 정확한 데이터 수집을 위해 하나의 버전만 사용해주세요. (현재 실행 중인 버전 수: {nodeAgentVersionCount}개)",
     "zh": "The agent version on each node is different. Please use only one version to ensure accurate data collection. (Currently running versions: {nodeAgentVersionCount})",
     "service_id": "DSC07649"
   },
