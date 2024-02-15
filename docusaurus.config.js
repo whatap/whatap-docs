@@ -187,6 +187,10 @@ module.exports = Promise.resolve({
         {
           name: 'naver-site-verification',
           content: '0c21fc5664a467108fb762ade47a3f81ee9b88ed',
+        },
+        {
+          name: 'google-site-verification',
+          contnet: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
       docs: {
