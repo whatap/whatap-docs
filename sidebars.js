@@ -482,6 +482,11 @@ const sidebars = {
               },
               items: [
                 'php/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'php/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'php/metric-warning-notice',
                 'php/set-notification-message',
                 'php/hitmap-notice',
@@ -698,6 +703,11 @@ const sidebars = {
               },
               items: [
                 'nodejs/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'nodejs/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'nodejs/metric-warning-notice',
                 'nodejs/set-notification-message',
                 'nodejs/hitmap-notice',
@@ -908,6 +918,11 @@ const sidebars = {
               },
               items: [
                 'python/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'python/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'python/metric-warning-notice',
                 'python/set-notification-message',
                 'python/hitmap-notice',
@@ -1113,6 +1128,11 @@ const sidebars = {
               },
               items: [
                 'dotnet/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'dotnet/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'dotnet/metric-warning-notice',
                 'dotnet/set-notification-message',
                 'dotnet/hitmap-notice',
@@ -1314,6 +1334,11 @@ const sidebars = {
               },
               items: [
                 'golang/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'golang/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'golang/metric-warning-notice',
                 'golang/set-notification-message',
                 'golang/hitmap-notice',
@@ -1487,6 +1512,11 @@ const sidebars = {
               },
               items: [
                 'postgresql/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'postgresql/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'postgresql/metric-warning-notice',
                 'postgresql/set-notification-message',
                 'postgresql/set-event-detect-anomal',
@@ -1777,6 +1807,11 @@ const sidebars = {
               },
               items: [
                 'oracle/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'oracle/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'oracle/metric-warning-notice',
                 'oracle/set-notification-message',
                 'oracle/set-event-detect-anomal',
@@ -2086,6 +2121,11 @@ const sidebars = {
               },
               items: [
                 'mysql/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mysql/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'mysql/metric-warning-notice',
                 'mysql/set-notification-message',
                 'mysql/set-event-detect-anomal',
@@ -2222,6 +2262,11 @@ const sidebars = {
               },
               items: [
                 'mssql/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mssql/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'mssql/metric-warning-notice',
                 'mssql/set-notification-message',
                 'mssql/set-event-detect-anomal',
@@ -2356,6 +2401,11 @@ const sidebars = {
               },
               items: [
                 'tibero/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'tibero/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'tibero/metric-warning-notice',
                 'tibero/set-notification-message',
                 'tibero/set-event-detect-anomal',
@@ -2501,6 +2551,11 @@ const sidebars = {
               },
               items: [
                 'cubrid/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'cubrid/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'cubrid/metric-warning-notice',
                 'cubrid/set-notification-message',
                 'cubrid/set-event-detect-anomal',
@@ -2635,6 +2690,11 @@ const sidebars = {
               },
               items: [
                 'altibase/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'altibase/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'altibase/metric-warning-notice',
                 'altibase/set-notification-message',
                 'altibase/set-event-detect-anomal',
@@ -2981,6 +3041,11 @@ const sidebars = {
           },
           items: [
             'npm/metric-warning-notice',
+            {
+              type: 'doc',
+              id: 'npm/warning-notice-v2',
+              className: 'newfunc'
+            },
             'npm/set-receive-event',
             'npm/set-event-history',
           ],
@@ -5047,6 +5112,11 @@ const sidebars = {
           },
           items: [
             'browser/metric-warning-notice',
+            {
+              type: 'doc',
+              id: 'browser/warning-notice-v2',
+              className: 'newfunc'
+            },
             'browser/set-receive-event',
             'browser/set-event-history'
           ],
@@ -5475,6 +5545,11 @@ const sidebars = {
               },
               items: [
                 'kubernetes/container-warning-notice',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/warning-notice-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/metric-warning-notice',
                 'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
