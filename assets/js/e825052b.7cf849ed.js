@@ -310,8 +310,7 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'preview-2_2_0x',
     title: 'Preview 2.2.0.a',
-    toc_max_heading_level: 2,
-    draft: false
+    toc_max_heading_level: 2
 };
 const contentTitle = undefined;
 const metadata = {
@@ -330,8 +329,7 @@ const metadata = {
     "frontMatter": {
         "id": "preview-2_2_0x",
         "title": "Preview 2.2.0.a",
-        "toc_max_heading_level": 2,
-        "draft": false
+        "toc_max_heading_level": 2
     },
     "sidebar": "previewSidebar",
     "previous": {
@@ -596,9 +594,7 @@ function MDXContent(_param) {
         "id": "application"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
-    }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }, `Application`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
     }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "dashboard",
@@ -608,7 +604,7 @@ function MDXContent(_param) {
         sid: "application_dashboard",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 메뉴에서 차트 영역의 디자인 요소 수정(위젯 제목 크기 및 위젯 간격, 차트 구간 설명 텍스트의 크기 수정)")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), " 메뉴에서 차트 영역의 디자인 요소 수정(위젯 제목 크기 및 위젯 간격, 차트 구간 설명 텍스트의 크기 수정)"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("hr", null), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "database"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "h3"
