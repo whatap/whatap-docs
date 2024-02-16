@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[14805],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[69512],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 93847:
+/***/ 29005:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,39 +310,29 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'warning-notice-v2',
     title: '이벤트 설정',
-    description: '컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+    description: 'Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
     tags: [
-        '쿠버네티스',
-        'Kubernetes',
-        '컨테이너',
+        'Browser',
         '경고 알림',
         '이벤트 설정'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/warning-notice-v2",
-    "id": "kubernetes/warning-notice-v2",
+    "unversionedId": "browser/warning-notice-v2",
+    "id": "browser/warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/kubernetes/warning-notice-v2.mdx",
-    "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/warning-notice-v2",
-    "permalink": "/whatap-docs/kubernetes/warning-notice-v2",
+    "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "source": "@site/docs/browser/warning-notice-v2.mdx",
+    "sourceDirName": "browser",
+    "slug": "/browser/warning-notice-v2",
+    "permalink": "/whatap-docs/browser/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/browser/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "쿠버네티스",
-            "permalink": "/whatap-docs/tags/쿠버네티스"
-        },
-        {
-            "label": "Kubernetes",
-            "permalink": "/whatap-docs/tags/kubernetes"
-        },
-        {
-            "label": "컨테이너",
-            "permalink": "/whatap-docs/tags/컨테이너"
+            "label": "Browser",
+            "permalink": "/whatap-docs/tags/browser"
         },
         {
             "label": "경고 알림",
@@ -357,23 +347,21 @@ const metadata = {
     "frontMatter": {
         "id": "warning-notice-v2",
         "title": "이벤트 설정",
-        "description": "컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+        "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "쿠버네티스",
-            "Kubernetes",
-            "컨테이너",
+            "Browser",
             "경고 알림",
             "이벤트 설정"
         ]
     },
-    "sidebar": "kubeSidebar",
+    "sidebar": "rumsSidebar",
     "previous": {
-        "title": "컨테이너 경고 알림",
-        "permalink": "/whatap-docs/kubernetes/container-warning-notice"
+        "title": "메트릭스 경고 알림",
+        "permalink": "/whatap-docs/browser/metric-warning-notice"
     },
     "next": {
-        "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/kubernetes/metric-warning-notice"
+        "title": "경고 알림 수신 설정",
+        "permalink": "/whatap-docs/browser/set-receive-event"
     }
 };
 const assets = {};
@@ -652,7 +640,7 @@ function MDXContent(_param) {
         parentName: "li"
     }, `트랜잭션의 평균 응답 시간(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `resp_time`), `)이 10회 연속, 2초(2,000 ms)를 초과한 상태로 지속되면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `resp_time`), `)이 10회 연속, 2,000ms(2초)를 초과한 상태로 지속되면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
     }, `Warning`), `) 수준의 알림을 보냅니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
@@ -824,6 +812,31 @@ function MDXContent(_param) {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
+    }, `Network BPS`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `카테고리: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "metrics-server#server_network"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "a"
+    }, `server_network`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `네트워크 인바운드 트래픽(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `trafficIn`), `)과 아웃바운드 트래픽(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `trafficOut`), `)의 합이 150,000,000byte(150MB)를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+        class: "slow"
+    }, `Warning`), `) 수준의 알림을, 200,000,000byte(200MB)를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+        class: "vslow"
+    }, `Critical`), `) 수준의 알림을 보냅니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
     }, `Network IOPS`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, `카테고리: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
@@ -837,9 +850,9 @@ function MDXContent(_param) {
         parentName: "p"
     }, `packetIn`), `)과 아웃바운드 패킷(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `packetOut`), `)의 합이 45000 byte를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `packetOut`), `)의 합이 45000byte를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을, 50000 byte를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `Warning`), `) 수준의 알림을, 50000byte를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
     }, `Critical`), `) 수준의 알림을 보냅니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1011,13 +1024,13 @@ function MDXContent(_param) {
         parentName: "a"
     }, `kube_pod_stat`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `사용 가능한 Pod의 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `사용할 수 있는 Pod 개수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `available_pod`), `)가 배포 시 필요한 Pod의 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `available_pod`), `)가 배포 시 필요한 Pod 개수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `desired_pod`), `)보다 작으면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을 보냅니다. 원하는 값을 입력하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `Warning`), `) 수준의 알림을 보냅니다. 사용할 수 있는 Pod 개수와 배포 시 필요한 Pod 개수의 차이를 임곗값으로 입력하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -1142,9 +1155,16 @@ function MDXContent(_param) {
         parentName: "li"
     }, `트랜잭션의 평균 응답 시간(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `resp_time`), `)이 10회 연속, 2초(2,000 ms)를 초과한 상태로 지속되면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `resp_time`), `)이 10회 연속, 2,000ms(2초)를 초과한 상태로 지속되면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을 보냅니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+    }, `Warning`), `) 수준의 알림을 보냅니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `기본 이벤트 템플릿에 적용된 필드에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "metrics-kubernetes"
+    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
         product: "mysql",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
@@ -1195,7 +1215,7 @@ function MDXContent(_param) {
         parentName: "a"
     }, `db_mysql_counter`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1306,7 +1326,7 @@ function MDXContent(_param) {
         parentName: "a"
     }, `db_postgresql_counter`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1417,7 +1437,7 @@ function MDXContent(_param) {
         parentName: "a"
     }, `db_oracle_counter`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1499,7 +1519,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `db_cubrid_counter`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1578,7 +1598,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `db_tibero_counter`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1657,7 +1677,7 @@ function MDXContent(_param) {
         parentName: "p"
     }, `db_altibase_counter`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1742,7 +1762,7 @@ function MDXContent(_param) {
         parentName: "a"
     }, `db_mssql_counter`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `현재 row lock을 획득하기 위해 대기 중인 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+    }, `현재 row lock을 획득하기 위해 대기 중인 세션 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
     }, `lock_wait_sessions`), `)가 3개를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
@@ -1828,9 +1848,9 @@ function MDXContent(_param) {
         parentName: "li"
     }, `패킷 왕복 지연 시간의 평균(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `avg_latency`), `)이 200초를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `avg_latency`), `)이 200ms(0.2초)를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을, 400초를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `Warning`), `) 수준의 알림을, 400ms(0.4초)를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
     }, `Critical`), `) 수준의 알림을 보냅니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1947,11 +1967,18 @@ function MDXContent(_param) {
         parentName: "p"
     }, `send_packet_size`), `)와 수신한 패킷의 데이터 크기(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `recv_packet_size`), `)의 합이 7.68GB를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `recv_packet_size`), `)의 합이 7,680,000,000byte(7.68GB)를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을, 15.36GB를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `Warning`), `) 수준의 알림을, 15,360,000,000byte(15.36GB)를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
-    }, `Critical`), `) 수준의 알림을 보냅니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+    }, `Critical`), `) 수준의 알림을 보냅니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `기본 이벤트 템플릿에 적용된 필드에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "metrics-npm"
+    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
         product: "browser",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
@@ -2000,9 +2027,9 @@ function MDXContent(_param) {
         parentName: "li"
     }, `AJAX 요청 평균 응답 시간(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `ajax_duration`), `)이 20초를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `ajax_duration`), `)이 20,000ms(20초)를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을, 50초를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `Warning`), `) 수준의 알림을, 50,000ms(50초)를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
     }, `Critical`), `) 수준의 알림을 보냅니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -2073,7 +2100,14 @@ function MDXContent(_param) {
         class: "slow"
     }, `Warning`), `) 수준의 알림을, 6초를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
-    }, `Critical`), `) 수준의 알림을 보냅니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, `Critical`), `) 수준의 알림을 보냅니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `기본 이벤트 템플릿에 적용된 필드에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "metrics-browser"
+    }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "modify-event"
     }, `이벤트 수정하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `기본 이벤트 템플릿에 적용된 지표값을 수정해 경고 알림이 발생 기준을 변경할 수 있습니다. 그 외에도 다양한 옵션 설정을 통해 알림 발생 기준을 변경할 수 있습니다. 수정하려는 이벤트 항목에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "수정 아이콘",
