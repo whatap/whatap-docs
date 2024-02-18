@@ -44,7 +44,7 @@ function DocSidebarDesktop({path, sidebar, onCollapse, isHidden}) {
               })
             }
           </a></li>
-          <li><a href={whataphome} target='_blank' className='ext'>
+          <li><a href={whataphome} target='_blank' className='ext' rel="noopener noreferrer">
             {
               translate({
                 id: "whatap_link_go",
