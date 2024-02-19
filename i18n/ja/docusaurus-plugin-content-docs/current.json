@@ -1622,5 +1622,13 @@
   "sidebar.releaseSidebar.doc.v1.0.6 (74)": {
     "message": "v1.0.6 (74)",
     "description": "The label for the doc item v1.0.6 (74) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_6"
+  },
+  "sidebar.npmsidebar.category.메트릭스": {
+    "message": "メトリックス",
+    "description": "The label for category 메트릭스 in sidebar npmsidebar"
+  },
+  "sidebar.releaseSidebar.doc.v1.0.7 (81)": {
+    "message": "v1.0.7 (81)",
+    "description": "The label for the doc item v1.0.7 (81) in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_7"
   }
 }
