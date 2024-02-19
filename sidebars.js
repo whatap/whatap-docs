@@ -5406,9 +5406,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/resource-pod-list',
-                'kubernetes/pod-init-perform',
                 'kubernetes/resource-application-list',
-                'kubernetes/object-manifest',
               ],
             },
             {
@@ -5418,6 +5416,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'kubernetes/resource-node-list',
+                'kubernetes/object-manifest',
                 'kubernetes/resource-namespace',
               ],
             },
@@ -5430,6 +5429,7 @@ const sidebars = {
                 // 'kubernetes/metrics-intro',
                 // 'kubernetes/metrics-chart',
                 // 'kubernetes/metrics-detect-anormal',
+                'kubernetes/pod-init-perform',
                 'kubernetes/trs-view',
                 'kubernetes/multiservice-hitmap',
                 'kubernetes/analysis-msa',
