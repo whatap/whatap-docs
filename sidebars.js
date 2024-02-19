@@ -216,20 +216,20 @@ const sidebars = {
                 'java/analysis-apm',
                 'java/performance-trend',
                 'java/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'java/report-intro'
-                  },
-                  items: [
-                    'java/report-apm',
-                    'java/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'java/report-intro'
+              },
+              items: [
+                'java/report-apm',
+                'java/integrated-report',
               ]
             },
             'java/instance-performance-analysis',
@@ -448,21 +448,20 @@ const sidebars = {
                 'php/cube',
                 'php/performance-trend',
                 'php/analysis-apm-trs',
-                // 'php/analysis-apm',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'php/report-intro'
-                  },
-                  items: [
-                    'php/report-apm',
-                    'php/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'php/report-intro'
+              },
+              items: [
+                'php/report-apm',
+                'php/integrated-report',
               ]
             },
             'php/instance-performance-analysis',
@@ -665,20 +664,20 @@ const sidebars = {
                 'nodejs/performance-trend',
                 // 'nodejs/analysis-apm',
                 'nodejs/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'nodejs/report-intro'
-                  },
-                  items: [
-                    'nodejs/report-apm',
-                    'nodejs/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'nodejs/report-intro'
+              },
+              items: [
+                'nodejs/report-apm',
+                'nodejs/integrated-report',
               ]
             },
             'nodejs/instance-performance-analysis',
@@ -875,20 +874,20 @@ const sidebars = {
                 'python/analysis-apm',
                 'python/performance-trend',
                 'python/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'python/report-intro'
-                  },
-                  items: [
-                    'python/report-apm',
-                    'python/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'python/report-intro'
+              },
+              items: [
+                'python/report-apm',
+                'python/integrated-report',
               ]
             },
             'python/instance-performance-analysis',
@@ -1080,20 +1079,20 @@ const sidebars = {
                 'dotnet/analysis-apm',
                 'dotnet/performance-trend',
                 'dotnet/analysis-apm-trs',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'dotnet/report-intro'
-                  },
-                  items: [
-                    'dotnet/report-apm',
-                    'dotnet/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'dotnet/report-intro'
+              },
+              items: [
+                'dotnet/report-apm',
+                'dotnet/integrated-report',
               ]
             },
             'dotnet/instance-performance-analysis',
@@ -1281,20 +1280,20 @@ const sidebars = {
                 'golang/performance-trend',
                 'golang/analysis-apm-trs',
                 // 'analysis/php-analysis-apm',
-                {
-                  type: 'category',
-                  label: '보고서',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'golang/report-intro'
-                  },
-                  items: [
-                    'golang/report-apm',
-                    'golang/integrated-report',
-                  ]
-                }
+              ]
+            },
+            {
+              type: 'category',
+              label: '보고서',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'golang/report-intro'
+              },
+              items: [
+                'golang/report-apm',
+                'golang/integrated-report',
               ]
             },
             'golang/instance-performance-analysis',
