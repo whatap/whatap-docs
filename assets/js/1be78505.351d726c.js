@@ -970,6 +970,7 @@ function DocSidebarDesktop({ path, sidebar, onCollapse, isHidden }) {
                                 href: whataphome,
                                 target: "_blank",
                                 className: "ext",
+                                rel: "noopener noreferrer",
                                 children: (0,Translate/* translate */.T)({
                                     id: "whatap_link_go",
                                     message: "와탭 홈페이지 바로가기"
