@@ -52367,10 +52367,10 @@
     "service_id": "DSC07599"
   },
   "DSC07600": {
-    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and setting up permissions and feature enablement options, and adding a container for control plane monitoring within the master agent</strong> is required.",
-    "ja": "コントロール プレーン監視機能を使用するには、<br/><strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
-    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.0 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
-    "zh": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
+    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.5 or later and setting up permissions and feature enablement options, and adding a container for control plane monitoring within the master agent</strong> is required.",
+    "ja": "コントロール プレーン監視機能を使用するには、<br/><strong>WhaTap Kubernetes Agent 1.5.5 以降が必要です。<br/>権限と、機能活性化オプションを設定し、マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
+    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.5 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
+    "zh": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.5 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
     "service_id": "DSC07600"
   },
   "DSC07601": {
@@ -52850,10 +52850,10 @@
     "service_id": "DSC07668"
   },
   "TTL07669": {
-    "en": "Complete the event setup quickly and easily with event templates.",
+    "en": "Complete the event setup quickly and easily<br/>with event templates.",
     "ja": "イベントテンプレートで簡単かつ迅速にイベント設定を完了してください。",
     "ko": "이벤트 템플릿으로 쉽고 빠르게 이벤트 설정을 완료하세요.",
-    "zh": "Complete the event setup quickly and easily with event templates.",
+    "zh": "Complete the event setup quickly and easily<br/>with event templates.",
     "service_id": "TTL07669"
   },
   "CNT07670": {
@@ -52892,17 +52892,17 @@
     "service_id": "CNT07674"
   },
   "CNT07675": {
-    "en": "You can see the reorganized event configuration menu through <b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized event configuration menu.",
+    "en": "You can see the reorganized event configuration menu through<br/><b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized<br/>event configuration menu.",
     "ja": "<b style=\"color:{primaryColor}\">“新規バージョンで見る”ボタン</b>を通じて、改編されたイベント設定メニューを確認することができます。<br/>改編されたイベント設定メニューの利用に関する詳細は、技術文書で確認してください。",
     "ko": "<b style=\"color:{primaryColor}\">“신규 버전으로 보기” 버튼</b>을 통해 개편된 이벤트 설정 메뉴를 확인하실 수 있습니다.<br/>개편된 이벤트 설정 메뉴의 이용과 관련된 자세한 사항은 기술문서를 통해 확인해주세요.",
-    "zh": "You can see the reorganized event configuration menu through <b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized event configuration menu.",
+    "zh": "You can see the reorganized event configuration menu through<br/><b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized<br/>event configuration menu.",
     "service_id": "CNT07675"
   },
   "CNT07676": {
-    "en": "The above image is an example. The provided event template may differ depending on the monitoring product.",
+    "en": "The above image is an example.<br/>The provided event template may differ depending on the monitoring product.",
     "ja": "上記の画像は例示画像で、モニタリングサービスによって提供するイベントテンプレートは異なる場合があります。",
     "ko": "위 이미지는 예시 이미지로, 모니터링 상품에 따라 제공하는 이벤트 템플릿은 다를 수 있습니다.",
-    "zh": "The above image is an example. The provided event template may differ depending on the monitoring product.",
+    "zh": "The above image is an example.<br/>The provided event template may differ depending on the monitoring product.",
     "service_id": "CNT07676"
   },
   "BTN07677": {
@@ -52969,46 +52969,53 @@
     "service_id": "LNK07685"
   },
   "TTL07686": {
-    "en": "Number of kube-apiserver Pods",
-    "ja": "kube-apiserver ポッド数",
-    "ko": "kube-apiserver Pod 수",
-    "zh": "Number of kube-apiserver Pods",
+    "en": "kube-apiserver quantity",
+    "ja": "kube-apiserver 数量",
+    "ko": "kube-apiserver 수량",
+    "zh": "kube-apiserver quantity",
     "service_id": "TTL07686"
   },
   "TTL07687": {
-    "en": "cpu usage (millicore)",
-    "ja": "cpu使用量（millicore）",
-    "ko": "cpu 사용량(millicore)",
-    "zh": "cpu usage (millicore)",
+    "en": "Total CPU usage (millicore)",
+    "ja": "CPU使用量総合(millicore)",
+    "ko": "CPU 사용량 총합 (millicore)",
+    "zh": "Total CPU usage (millicore)",
     "service_id": "TTL07687"
   },
   "TTL07688": {
-    "en": "memory usage",
-    "ja": "memory 使用量",
-    "ko": "memory 사용량",
-    "zh": "memory usage",
+    "en": "Total memory usage",
+    "ja": "メモリ使用量総合",
+    "ko": "Memory 사용량 총합",
+    "zh": "Total memory usage",
     "service_id": "TTL07688"
   },
   "TTL07689": {
-    "en": "kube-apiserver restart count",
-    "ja": "kube-apiserver restart count",
-    "ko": "kube-apiserver restart count",
-    "zh": "kube-apiserver restart count",
+    "en": "Total number of kube-apiserver restarts",
+    "ja": "kube-apiserver 再起動数総合",
+    "ko": "kube-apiserver 재기동 수 총합",
+    "zh": "Total number of kube-apiserver restarts",
     "service_id": "TTL07689"
   },
   "TTL07690": {
-    "en": "kube-apiserver pod summary information",
-    "ja": "kube-apiserver パードサマリー情報",
-    "ko": "kube-apiserver 파드 요약 정보",
-    "zh": "kube-apiserver pod summary information",
+    "en": "kube-apiserver Pod Summary Information",
+    "ja": "kube-apiserver Pod 概要情報",
+    "ko": "kube-apiserver Pod 요약 정보",
+    "zh": "kube-apiserver Pod Summary Information",
     "service_id": "TTL07690"
   },
   "DSC07691": {
-    "en": "If you use a managed Kubernetes service, you won't be able to see information about the kube-apiserver container.",
-    "ja": "マネージドキューバネティスサービスを使用している場合、kube-apiserverコンテナに関する情報は表示されません。",
-    "ko": "관리형 쿠버네티스 서비스를 사용하는 경우 kube-apiserver 컨테이너에 대한 정보는 볼 수 없습니다.",
-    "zh": "If you use a managed Kubernetes service, you won't be able to see information about the kube-apiserver container.",
+    "en": "If you use managed Kubernetes, such as Amazon EKS, kube-apiserver Pod information is not displayed.",
+    "ja": "Amazon EKSなどのマネージドキューバネティスを使用している場合、kube-apiserver Pod情報は表示されません。",
+    "ko": "Amazon EKS 등 관리형 쿠버네티스를 사용하는 경우 kube-apiserver Pod 정보는 표시되지 않습니다.",
+    "zh": "If you use managed Kubernetes, such as Amazon EKS, kube-apiserver Pod information is not displayed.",
     "service_id": "DSC07691"
+  },
+  "DSC07692": {
+    "en": "Select the target on the left and add the widget.",
+    "ja": "左側のターゲットを選択してウィジェットを追加します。",
+    "ko": "왼쪽의 대상을 선택 후 위젯을 추가하세요.",
+    "zh": "Select the target on the left and add the widget.",
+    "service_id": "DSC07692"
   },
   "": {
     "": "",
@@ -53157,9 +53164,9 @@
     "ko": "쿠버네티스 이벤트"
   },
   "agentsConfiguration": {
-    "en": "Instance Performance Analysis",
-    "ja": "インスタンス性能",
-    "ko": "인스턴스 성능 분석"
+    "en": "Instance Performance Management",
+    "ja": "インスタンス性能管理",
+    "ko": "인스턴스 성능 관리"
   },
   "whatapEventList": {
     "en": "WhaTap Event",

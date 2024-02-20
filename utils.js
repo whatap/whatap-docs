@@ -221,9 +221,9 @@ function colsToJson(data){
   }
 
   rd["agentsConfiguration"] = {
-    "en": "Instance Performance Analysis",
-    "ja": "インスタンス性能",
-    "ko": "인스턴스 성능 분석"
+    "en": "Instance Performance Management",
+    "ja": "インスタンス性能管理",
+    "ko": "인스턴스 성능 관리"
   }
 
   rd["whatapEventList"] = {
