@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[7541],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[31710],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 53542:
+/***/ 1061:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,21 +314,22 @@ const frontMatter = {
     tags: [
         'MySQL',
         '데이터베이스',
+        '통계',
         '데이터베이스 사이즈'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/database-size",
-    "id": "mysql/database-size",
+    "unversionedId": "mysql-v1/database-size",
+    "id": "mysql-v1/database-size",
     "title": "데이터베이스 사이즈",
     "description": "데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
-    "source": "@site/docs/mysql/database-size.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/database-size",
-    "permalink": "/whatap-docs/mysql/database-size",
+    "source": "@site/docs/mysql-v1/database-size.mdx",
+    "sourceDirName": "mysql-v1",
+    "slug": "/mysql-v1/database-size",
+    "permalink": "/whatap-docs/mysql-v1/database-size",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/database-size.mdx",
+    "editUrl": "undefined/docs/mysql-v1/database-size.mdx",
     "tags": [
         {
             "label": "MySQL",
@@ -337,6 +338,10 @@ const metadata = {
         {
             "label": "데이터베이스",
             "permalink": "/whatap-docs/tags/데이터베이스"
+        },
+        {
+            "label": "통계",
+            "permalink": "/whatap-docs/tags/통계"
         },
         {
             "label": "데이터베이스 사이즈",
@@ -351,17 +356,18 @@ const metadata = {
         "tags": [
             "MySQL",
             "데이터베이스",
+            "통계",
             "데이터베이스 사이즈"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "mysqlv1Sidebar",
     "previous": {
         "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/mysql/table-size"
+        "permalink": "/whatap-docs/mysql-v1/table-size"
     },
     "next": {
         "title": "보고서",
-        "permalink": "/whatap-docs/mysql/report-intro"
+        "permalink": "/whatap-docs/mysql-v1/report-intro"
     }
 };
 const assets = {};
@@ -571,7 +577,7 @@ grant usage on schema {schema_name} to whatap;
         parentName: "p",
         "href": "install-agent#uid"
     }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql",
+        product: "postgresql,mysql",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `테이블별 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87201],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[5643],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,128 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 34357:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle, toc */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) {
-            symbols = symbols.filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-            });
-        }
-        keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _object_spread_props(target, source) {
-    source = source != null ? source : {};
-    if (Object.getOwnPropertyDescriptors) {
-        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-        ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-function _object_without_properties(source, excluded) {
-    if (source == null) return {};
-    var target = _object_without_properties_loose(source, excluded);
-    var key, i;
-    if (Object.getOwnPropertySymbols) {
-        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-        for(i = 0; i < sourceSymbolKeys.length; i++){
-            key = sourceSymbolKeys[i];
-            if (excluded.indexOf(key) >= 0) continue;
-            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-            target[key] = source[key];
-        }
-    }
-    return target;
-}
-function _object_without_properties_loose(source, excluded) {
-    if (source == null) return {};
-    var target = {};
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-const toc = [];
-const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
-    };
-const Link = makeShortcode("Link");
-const layoutProps = {
-    toc
-};
-const MDXLayout = "wrapper";
-function MDXContent(_param) {
-    var { components } = _param, props = _object_without_properties(_param, [
-        "components"
-    ]);
-    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
-        components: components,
-        mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, "이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
-        to: props.link,
-        mdxType: "Link"
-    }, "다음 문서"), "를 참조하세요.")));
-}
-MDXContent.isMDXComponent = true;
-
-
-/***/ }),
-
-/***/ 67671:
+/***/ 4845:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -347,7 +226,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
-/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34357);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -434,36 +312,31 @@ const frontMatter = {
     title: 'SQL 통계',
     description: '데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'MySQL',
+        'Oracle',
         '데이터베이스',
-        '데이터베이스 모니터링',
         '통계'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql/stat",
-    "id": "mysql/stat",
+    "unversionedId": "oracle/stat",
+    "id": "oracle/stat",
     "title": "SQL 통계",
     "description": "데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/mysql/stat.mdx",
-    "sourceDirName": "mysql",
-    "slug": "/mysql/stat",
-    "permalink": "/whatap-docs/mysql/stat",
+    "source": "@site/docs/oracle/stat.mdx",
+    "sourceDirName": "oracle",
+    "slug": "/oracle/stat",
+    "permalink": "/whatap-docs/oracle/stat",
     "draft": false,
-    "editUrl": "undefined/docs/mysql/stat.mdx",
+    "editUrl": "undefined/docs/oracle/stat.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "Oracle",
+            "permalink": "/whatap-docs/tags/oracle"
         },
         {
             "label": "데이터베이스",
             "permalink": "/whatap-docs/tags/데이터베이스"
-        },
-        {
-            "label": "데이터베이스 모니터링",
-            "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
         },
         {
             "label": "통계",
@@ -476,24 +349,22 @@ const metadata = {
         "title": "SQL 통계",
         "description": "데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "MySQL",
+            "Oracle",
             "데이터베이스",
-            "데이터베이스 모니터링",
             "통계"
         ]
     },
-    "sidebar": "mysqlSidebar",
+    "sidebar": "dboracleSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/mysql/metrics-detect-anormal"
+        "permalink": "/whatap-docs/oracle/metrics-detect-anormal"
     },
     "next": {
-        "title": "MYSQL SQL 통계",
-        "permalink": "/whatap-docs/mysql/mysql-sql-stat"
+        "title": "테이블스페이스 사이즈",
+        "permalink": "/whatap-docs/oracle/table-space-size"
     }
 };
 const assets = {};
-
 const toc = [
     {
         value: '기본 화면 안내',
@@ -541,10 +412,6 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
-        product: "MySQL",
-        link: "../mysql-v1/stat",
-        mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
@@ -893,7 +760,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1025,7 +892,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1157,7 +1024,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[63117],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87201],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -333,7 +333,7 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ 13897:
+/***/ 67671:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -434,31 +434,36 @@ const frontMatter = {
     title: 'SQL 통계',
     description: '데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'PostgreSQL',
+        'MySQL',
         '데이터베이스',
+        '데이터베이스 모니터링',
         '통계'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "postgresql/stat",
-    "id": "postgresql/stat",
+    "unversionedId": "mysql/stat",
+    "id": "mysql/stat",
     "title": "SQL 통계",
     "description": "데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/postgresql/stat.mdx",
-    "sourceDirName": "postgresql",
-    "slug": "/postgresql/stat",
-    "permalink": "/whatap-docs/postgresql/stat",
+    "source": "@site/docs/mysql/stat.mdx",
+    "sourceDirName": "mysql",
+    "slug": "/mysql/stat",
+    "permalink": "/whatap-docs/mysql/stat",
     "draft": false,
-    "editUrl": "undefined/docs/postgresql/stat.mdx",
+    "editUrl": "undefined/docs/mysql/stat.mdx",
     "tags": [
         {
-            "label": "PostgreSQL",
-            "permalink": "/whatap-docs/tags/postgre-sql"
+            "label": "MySQL",
+            "permalink": "/whatap-docs/tags/my-sql"
         },
         {
             "label": "데이터베이스",
             "permalink": "/whatap-docs/tags/데이터베이스"
+        },
+        {
+            "label": "데이터베이스 모니터링",
+            "permalink": "/whatap-docs/tags/데이터베이스-모니터링"
         },
         {
             "label": "통계",
@@ -471,19 +476,20 @@ const metadata = {
         "title": "SQL 통계",
         "description": "데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "PostgreSQL",
+            "MySQL",
             "데이터베이스",
+            "데이터베이스 모니터링",
             "통계"
         ]
     },
-    "sidebar": "postgreSidebar",
+    "sidebar": "mysqlSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/postgresql/metrics-detect-anormal"
+        "permalink": "/whatap-docs/mysql/metrics-detect-anormal"
     },
     "next": {
-        "title": "PG SQL 통계",
-        "permalink": "/whatap-docs/postgresql/pg-sql-stat"
+        "title": "MYSQL SQL 통계",
+        "permalink": "/whatap-docs/mysql/mysql-sql-stat"
     }
 };
 const assets = {};
@@ -511,7 +517,7 @@ const toc = [
     },
     {
         value: '상세 정보 확인하기',
-        id: 'session-details-info',
+        id: '상세-정보-확인하기',
         level: 2
     }
 ];
@@ -536,8 +542,8 @@ function MDXContent(_param) {
         components: components,
         mdxType: "MDXLayout"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
-        product: "PostgreSQL",
-        link: "../postgresql-v1/stat",
+        product: "MySQL",
+        link: "../mysql-v1/stat",
         mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
@@ -887,7 +893,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1019,7 +1025,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1151,7 +1157,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1215,7 +1221,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
     }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "session-details-info"
+        "id": "상세-정보-확인하기"
     }, `상세 정보 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "db-sql-stat-details.png",
         desc: "세션 상세 정보",

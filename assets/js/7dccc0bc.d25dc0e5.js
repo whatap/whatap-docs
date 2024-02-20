@@ -571,7 +571,7 @@ grant usage on schema {schema_name} to whatap;
         parentName: "p",
         "href": "install-agent#uid"
     }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql",
+        product: "postgresql,mysql",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `테이블별 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"

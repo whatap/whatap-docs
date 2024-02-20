@@ -900,7 +900,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"

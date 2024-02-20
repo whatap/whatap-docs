@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[31710],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[75707],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 1061:
+/***/ 35452:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,36 +312,31 @@ const frontMatter = {
     title: '데이터베이스 사이즈',
     description: '데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.',
     tags: [
-        'MySQL',
+        'PostgeSQL',
         '데이터베이스',
-        '통계',
         '데이터베이스 사이즈'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql-v1/database-size",
-    "id": "mysql-v1/database-size",
+    "unversionedId": "postgresql-v1/database-size",
+    "id": "postgresql-v1/database-size",
     "title": "데이터베이스 사이즈",
     "description": "데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
-    "source": "@site/docs/mysql-v1/database-size.mdx",
-    "sourceDirName": "mysql-v1",
-    "slug": "/mysql-v1/database-size",
-    "permalink": "/whatap-docs/mysql-v1/database-size",
+    "source": "@site/docs/postgresql-v1/database-size.mdx",
+    "sourceDirName": "postgresql-v1",
+    "slug": "/postgresql-v1/database-size",
+    "permalink": "/whatap-docs/postgresql-v1/database-size",
     "draft": false,
-    "editUrl": "undefined/docs/mysql-v1/database-size.mdx",
+    "editUrl": "undefined/docs/postgresql-v1/database-size.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "PostgeSQL",
+            "permalink": "/whatap-docs/tags/postge-sql"
         },
         {
             "label": "데이터베이스",
             "permalink": "/whatap-docs/tags/데이터베이스"
-        },
-        {
-            "label": "통계",
-            "permalink": "/whatap-docs/tags/통계"
         },
         {
             "label": "데이터베이스 사이즈",
@@ -354,20 +349,19 @@ const metadata = {
         "title": "데이터베이스 사이즈",
         "description": "데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
         "tags": [
-            "MySQL",
+            "PostgeSQL",
             "데이터베이스",
-            "통계",
             "데이터베이스 사이즈"
         ]
     },
-    "sidebar": "mysqlv1Sidebar",
+    "sidebar": "postgrev1Sidebar",
     "previous": {
-        "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/mysql-v1/table-size"
+        "title": "SQL 통계",
+        "permalink": "/whatap-docs/postgresql-v1/stat"
     },
     "next": {
         "title": "보고서",
-        "permalink": "/whatap-docs/mysql-v1/report-intro"
+        "permalink": "/whatap-docs/postgresql-v1/report-intro"
     }
 };
 const assets = {};
@@ -577,7 +571,7 @@ grant usage on schema {schema_name} to whatap;
         parentName: "p",
         "href": "install-agent#uid"
     }, `다음 문서`), `를 참조하세요.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql",
+        product: "postgresql,mysql",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `테이블별 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"

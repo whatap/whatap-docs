@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[28881],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87057],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,149 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 45731:
+/***/ 93356:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ ChangeImgName)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+/* harmony import */ var _site_src_components_CheckProduct__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(82265);
+/* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92469);
+/* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(90062);
+
+
+
+
+
+function ChangeImgName({ img, desc, className }) {
+    const { i18n: { currentLocale } } = (0,_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)();
+    const product = (0,_site_src_components_CheckProduct__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)();
+    let fext = img.substr(img.lastIndexOf('.') + 1);
+    let fileName = img.replace('.' + fext, '');
+    let imgFilePath;
+    if (currentLocale != 'ko') {
+        imgFilePath = (0,_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
+    } else {
+        imgFilePath = (0,_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)('/img/' + fileName + product + '.' + fext);
+    }
+    function onError(e) {
+        if (currentLocale != 'ko') {
+            e.target.src = '/' + currentLocale + '/img/' + fileName + product + '.' + fext;
+        } else {
+            e.target.src = '/img/' + fileName + product + '.' + fext;
+        }
+    }
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+            loading: "lazy",
+            src: imgFilePath,
+            alt: desc,
+            class: className,
+            onError: (e)=>onError(e)
+        })
+    });
+} // agent-setting.png
+ // 국문일 경우 agent-setting-java.png (e) => agent-setting.png
+ // 다국어일 경우 agent-setting-java-en.png (e) => agent-setting-java.png (e) => agent-setting.png
+
+
+/***/ }),
+
+/***/ 82265:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ CheckProduct)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/* harmony import */ var _docusaurus_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56347);
+/* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(90062);
+
+
+
+function CheckProduct() {
+    let location = (0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_2__/* .useLocation */ .zy)();
+    let cProdt;
+    const { i18n: { currentLocale } } = (0,_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)();
+    // console.log(currentLocale);
+    if (currentLocale == 'ko') {
+        cProdt = location.pathname.split("/")[2];
+    } else {
+        cProdt = location.pathname.split("/")[3];
+    }
+    var product;
+    if (cProdt === 'nodejs') {
+        product = '-nodejs';
+    } else if (cProdt === 'java') {
+        product = '-java';
+    } else if (cProdt === 'php') {
+        product = '-php';
+    } else if (cProdt === 'python') {
+        product = '-python';
+    } else if (cProdt === 'golang') {
+        product = '-golang';
+    } else if (cProdt === 'dotnet') {
+        product = '-dotnet';
+    } else if (cProdt === 'server') {
+        product = '-server';
+    } else if (cProdt === 'kubernetes') {
+        product = '-k8s';
+    } else if (cProdt === 'postgresql-v1') {
+        product = '-postgresql-v1';
+    } else if (cProdt === 'postgresql') {
+        product = '-postgresql';
+    } else if (cProdt === 'oracle-cloud') {
+        product = '-oci';
+    } else if (cProdt === 'oracle') {
+        product = '-oracle';
+    } else if (cProdt === 'mysql-rds') {
+        product = '-mysql-rds';
+    } else if (cProdt === 'mysql-v1') {
+        product = '-mysql-v1';
+    } else if (cProdt === 'mysql') {
+        product = '-mysql';
+    } else if (cProdt === 'mssql') {
+        product = '-mssql';
+    } else if (cProdt === 'tibero') {
+        product = '-tibero';
+    } else if (cProdt === 'cubrid') {
+        product = '-cubrid';
+    } else if (cProdt === 'altibase') {
+        product = '-altibase';
+    } else if (cProdt === 'redis') {
+        product = '-redis';
+    } else if (cProdt === 'mongodb') {
+        product = '-mongodb';
+    } else if (cProdt === 'url') {
+        product = '-url';
+    } else if (cProdt === 'amazon-cloudwatch') {
+        product = '-aws-cloudwatch';
+    } else if (cProdt === 'amazon-ecs') {
+        product = '-aws-ecs';
+    } else if (cProdt === 'azure') {
+        product = '-azure';
+    } else if (cProdt === 'ncloud') {
+        product = '-ncloud';
+    } else if (cProdt === 'aws-log') {
+        product = '-aws-log';
+    } else if (cProdt === 'log') {
+        product = '-log';
+    } else if (cProdt === 'browser') {
+        product = '-browser';
+    } else if (cProdt === 'npm') {
+        product = '-npm';
+    } else {
+        product = '';
+    }
+    return product;
+}
+
+
+/***/ }),
+
+/***/ 52634:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -226,6 +368,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
+/* harmony import */ var _site_src_components_ChangeImgName_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(93356);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -312,27 +455,27 @@ const frontMatter = {
     title: 'SQL 통계',
     description: '데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'MySQL',
+        'CUBRID',
         '데이터베이스',
         '통계'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "mysql-v1/stat",
-    "id": "mysql-v1/stat",
+    "unversionedId": "cubrid/stat",
+    "id": "cubrid/stat",
     "title": "SQL 통계",
     "description": "데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/mysql-v1/stat.mdx",
-    "sourceDirName": "mysql-v1",
-    "slug": "/mysql-v1/stat",
-    "permalink": "/whatap-docs/mysql-v1/stat",
+    "source": "@site/docs/cubrid/stat.mdx",
+    "sourceDirName": "cubrid",
+    "slug": "/cubrid/stat",
+    "permalink": "/whatap-docs/cubrid/stat",
     "draft": false,
-    "editUrl": "undefined/docs/mysql-v1/stat.mdx",
+    "editUrl": "undefined/docs/cubrid/stat.mdx",
     "tags": [
         {
-            "label": "MySQL",
-            "permalink": "/whatap-docs/tags/my-sql"
+            "label": "CUBRID",
+            "permalink": "/whatap-docs/tags/cubrid"
         },
         {
             "label": "데이터베이스",
@@ -349,22 +492,23 @@ const metadata = {
         "title": "SQL 통계",
         "description": "데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "MySQL",
+            "CUBRID",
             "데이터베이스",
             "통계"
         ]
     },
-    "sidebar": "mysqlv1Sidebar",
+    "sidebar": "cubridSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/mysql-v1/metrics-detect-anormal"
+        "permalink": "/whatap-docs/cubrid/metrics-detect-anormal"
     },
     "next": {
         "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/mysql-v1/table-size"
+        "permalink": "/whatap-docs/cubrid/table-size"
     }
 };
 const assets = {};
+
 const toc = [
     {
         value: '기본 화면 안내',
@@ -397,7 +541,6 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
 const Xclude = makeShortcode("Xclude");
-const ProdImg = makeShortcode("ProdImg");
 const InDoc = makeShortcode("InDoc");
 const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
@@ -490,7 +633,7 @@ function MDXContent(_param) {
         src: "https://www.youtube.com/embed/lt_R3SeTbOc"
     }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "기본-화면-안내"
-    }, `기본 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ProdImg, {
+    }, `기본 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_ChangeImgName_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
         img: "db-database-sql-stat.png",
         desc: "SQL 통계",
         mdxType: "ProdImg"
@@ -760,7 +903,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -892,7 +1035,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1024,7 +1167,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"

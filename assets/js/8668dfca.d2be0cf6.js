@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[87057],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[63117],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,149 +212,128 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 93356:
+/***/ 34357:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ ChangeImgName)
+/* harmony export */   Ay: () => (/* binding */ MDXContent)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
-/* harmony import */ var _site_src_components_CheckProduct__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(82265);
-/* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92469);
-/* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(90062);
-
-
-
-
-
-function ChangeImgName({ img, desc, className }) {
-    const { i18n: { currentLocale } } = (0,_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)();
-    const product = (0,_site_src_components_CheckProduct__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)();
-    let fext = img.substr(img.lastIndexOf('.') + 1);
-    let fileName = img.replace('.' + fext, '');
-    let imgFilePath;
-    if (currentLocale != 'ko') {
-        imgFilePath = (0,_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)('/img/' + fileName + product + '-' + currentLocale + '.' + fext);
+/* unused harmony exports frontMatter, contentTitle, toc */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
     } else {
-        imgFilePath = (0,_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)('/img/' + fileName + product + '.' + fext);
+        obj[key] = value;
     }
-    function onError(e) {
-        if (currentLocale != 'ko') {
-            e.target.src = '/' + currentLocale + '/img/' + fileName + product + '.' + fext;
-        } else {
-            e.target.src = '/img/' + fileName + product + '.' + fext;
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
         }
     }
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-            loading: "lazy",
-            src: imgFilePath,
-            alt: desc,
-            class: className,
-            onError: (e)=>onError(e)
-        })
-    });
-} // agent-setting.png
- // 국문일 경우 agent-setting-java.png (e) => agent-setting.png
- // 다국어일 경우 agent-setting-java-en.png (e) => agent-setting-java.png (e) => agent-setting.png
-
-
-/***/ }),
-
-/***/ 82265:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ CheckProduct)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
-/* harmony import */ var _docusaurus_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56347);
-/* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(90062);
-
-
-
-function CheckProduct() {
-    let location = (0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_2__/* .useLocation */ .zy)();
-    let cProdt;
-    const { i18n: { currentLocale } } = (0,_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)();
-    // console.log(currentLocale);
-    if (currentLocale == 'ko') {
-        cProdt = location.pathname.split("/")[2];
-    } else {
-        cProdt = location.pathname.split("/")[3];
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
     }
-    var product;
-    if (cProdt === 'nodejs') {
-        product = '-nodejs';
-    } else if (cProdt === 'java') {
-        product = '-java';
-    } else if (cProdt === 'php') {
-        product = '-php';
-    } else if (cProdt === 'python') {
-        product = '-python';
-    } else if (cProdt === 'golang') {
-        product = '-golang';
-    } else if (cProdt === 'dotnet') {
-        product = '-dotnet';
-    } else if (cProdt === 'server') {
-        product = '-server';
-    } else if (cProdt === 'kubernetes') {
-        product = '-k8s';
-    } else if (cProdt === 'postgresql-v1') {
-        product = '-postgresql-v1';
-    } else if (cProdt === 'postgresql') {
-        product = '-postgresql';
-    } else if (cProdt === 'oracle-cloud') {
-        product = '-oci';
-    } else if (cProdt === 'oracle') {
-        product = '-oracle';
-    } else if (cProdt === 'mysql-rds') {
-        product = '-mysql-rds';
-    } else if (cProdt === 'mysql-v1') {
-        product = '-mysql-v1';
-    } else if (cProdt === 'mysql') {
-        product = '-mysql';
-    } else if (cProdt === 'mssql') {
-        product = '-mssql';
-    } else if (cProdt === 'tibero') {
-        product = '-tibero';
-    } else if (cProdt === 'cubrid') {
-        product = '-cubrid';
-    } else if (cProdt === 'altibase') {
-        product = '-altibase';
-    } else if (cProdt === 'redis') {
-        product = '-redis';
-    } else if (cProdt === 'mongodb') {
-        product = '-mongodb';
-    } else if (cProdt === 'url') {
-        product = '-url';
-    } else if (cProdt === 'amazon-cloudwatch') {
-        product = '-aws-cloudwatch';
-    } else if (cProdt === 'amazon-ecs') {
-        product = '-aws-ecs';
-    } else if (cProdt === 'azure') {
-        product = '-azure';
-    } else if (cProdt === 'ncloud') {
-        product = '-ncloud';
-    } else if (cProdt === 'aws-log') {
-        product = '-aws-log';
-    } else if (cProdt === 'log') {
-        product = '-log';
-    } else if (cProdt === 'browser') {
-        product = '-browser';
-    } else if (cProdt === 'npm') {
-        product = '-npm';
-    } else {
-        product = '';
-    }
-    return product;
+    return target;
 }
 
 
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+const toc = [];
+const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
+        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+        return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
+    };
+const Link = makeShortcode("Link");
+const layoutProps = {
+    toc
+};
+const MDXLayout = "wrapper";
+function MDXContent(_param) {
+    var { components } = _param, props = _object_without_properties(_param, [
+        "components"
+    ]);
+    return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
+        components: components,
+        mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, "이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
+        to: props.link,
+        mdxType: "Link"
+    }, "다음 문서"), "를 참조하세요.")));
+}
+MDXContent.isMDXComponent = true;
+
+
 /***/ }),
 
-/***/ 52634:
+/***/ 13897:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -368,7 +347,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15680);
-/* harmony import */ var _site_src_components_ChangeImgName_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(93356);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34357);
 /* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */ function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -455,27 +434,27 @@ const frontMatter = {
     title: 'SQL 통계',
     description: '데이터베이스별 통계 데이터를 제공합니다.',
     tags: [
-        'CUBRID',
+        'PostgreSQL',
         '데이터베이스',
         '통계'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "cubrid/stat",
-    "id": "cubrid/stat",
+    "unversionedId": "postgresql/stat",
+    "id": "postgresql/stat",
     "title": "SQL 통계",
     "description": "데이터베이스별 통계 데이터를 제공합니다.",
-    "source": "@site/docs/cubrid/stat.mdx",
-    "sourceDirName": "cubrid",
-    "slug": "/cubrid/stat",
-    "permalink": "/whatap-docs/cubrid/stat",
+    "source": "@site/docs/postgresql/stat.mdx",
+    "sourceDirName": "postgresql",
+    "slug": "/postgresql/stat",
+    "permalink": "/whatap-docs/postgresql/stat",
     "draft": false,
-    "editUrl": "undefined/docs/cubrid/stat.mdx",
+    "editUrl": "undefined/docs/postgresql/stat.mdx",
     "tags": [
         {
-            "label": "CUBRID",
-            "permalink": "/whatap-docs/tags/cubrid"
+            "label": "PostgreSQL",
+            "permalink": "/whatap-docs/tags/postgre-sql"
         },
         {
             "label": "데이터베이스",
@@ -492,19 +471,19 @@ const metadata = {
         "title": "SQL 통계",
         "description": "데이터베이스별 통계 데이터를 제공합니다.",
         "tags": [
-            "CUBRID",
+            "PostgreSQL",
             "데이터베이스",
             "통계"
         ]
     },
-    "sidebar": "cubridSidebar",
+    "sidebar": "postgreSidebar",
     "previous": {
         "title": "메트릭스 이상 탐지",
-        "permalink": "/whatap-docs/cubrid/metrics-detect-anormal"
+        "permalink": "/whatap-docs/postgresql/metrics-detect-anormal"
     },
     "next": {
-        "title": "테이블 사이즈 증감",
-        "permalink": "/whatap-docs/cubrid/table-size"
+        "title": "PG SQL 통계",
+        "permalink": "/whatap-docs/postgresql/pg-sql-stat"
     }
 };
 const assets = {};
@@ -532,7 +511,7 @@ const toc = [
     },
     {
         value: '상세 정보 확인하기',
-        id: '상세-정보-확인하기',
+        id: 'session-details-info',
         level: 2
     }
 ];
@@ -541,6 +520,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
 const Xclude = makeShortcode("Xclude");
+const ProdImg = makeShortcode("ProdImg");
 const InDoc = makeShortcode("InDoc");
 const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
@@ -555,6 +535,10 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
+        product: "PostgreSQL",
+        link: "../postgresql-v1/stat",
+        mdxType: "Note"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 > 프로젝트 선택 > `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
@@ -633,7 +617,7 @@ function MDXContent(_param) {
         src: "https://www.youtube.com/embed/lt_R3SeTbOc"
     }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "기본-화면-안내"
-    }, `기본 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(_site_src_components_ChangeImgName_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+    }, `기본 화면 안내`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ProdImg, {
         img: "db-database-sql-stat.png",
         desc: "SQL 통계",
         mdxType: "ProdImg"
@@ -903,7 +887,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1035,7 +1019,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1167,7 +1151,7 @@ function MDXContent(_param) {
         width: "35",
         height: "29"
     }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "postgresql,postgresql-v1",
+        product: "postgresql,postgresql-v1,mysql,mysql-v1",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "li"
@@ -1231,7 +1215,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
         parentName: "strong"
     }, `Plan`)), ` 섹션을 위, 아래로 배치합니다. `)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "상세-정보-확인하기"
+        "id": "session-details-info"
     }, `상세 정보 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "db-sql-stat-details.png",
         desc: "세션 상세 정보",
