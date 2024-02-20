@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[6711],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44258],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 26729:
+/***/ 38027:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -309,32 +309,31 @@ function _object_without_properties_loose(source, excluded) {
 
 const frontMatter = {
     id: 'dashboard',
-    title: '애플리케이션 서비스 대시보드',
+    title: '애플리케이션 대시보드',
     description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
     tags: [
-        'Kubernetes',
+        '.NET',
         '대시보드',
         '애플리케이션',
-        '애플리케이션 모니터링',
-        '쿠버네티스 모니터링'
+        '애플리케이션 모니터링'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "kubernetes/dashboard",
-    "id": "kubernetes/dashboard",
-    "title": "애플리케이션 서비스 대시보드",
+    "unversionedId": "dotnet/dashboard",
+    "id": "dotnet/dashboard",
+    "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-    "source": "@site/docs/kubernetes/dashboard.mdx",
-    "sourceDirName": "kubernetes",
-    "slug": "/kubernetes/dashboard",
-    "permalink": "/whatap-docs/kubernetes/dashboard",
+    "source": "@site/docs/dotnet/dashboard.mdx",
+    "sourceDirName": "dotnet",
+    "slug": "/dotnet/dashboard",
+    "permalink": "/whatap-docs/dotnet/dashboard",
     "draft": false,
-    "editUrl": "undefined/docs/kubernetes/dashboard.mdx",
+    "editUrl": "undefined/docs/dotnet/dashboard.mdx",
     "tags": [
         {
-            "label": "Kubernetes",
-            "permalink": "/whatap-docs/tags/kubernetes"
+            "label": ".NET",
+            "permalink": "/whatap-docs/tags/net"
         },
         {
             "label": "대시보드",
@@ -347,210 +346,205 @@ const metadata = {
         {
             "label": "애플리케이션 모니터링",
             "permalink": "/whatap-docs/tags/애플리케이션-모니터링"
-        },
-        {
-            "label": "쿠버네티스 모니터링",
-            "permalink": "/whatap-docs/tags/쿠버네티스-모니터링"
         }
     ],
     "version": "current",
     "frontMatter": {
         "id": "dashboard",
-        "title": "애플리케이션 서비스 대시보드",
+        "title": "애플리케이션 대시보드",
         "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
         "tags": [
-            "Kubernetes",
+            ".NET",
             "대시보드",
             "애플리케이션",
-            "애플리케이션 모니터링",
-            "쿠버네티스 모니터링"
+            "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "kubeSidebar",
+    "sidebar": "dotNetSidebar",
     "previous": {
-        "title": "네임스페이스 현황",
-        "permalink": "/whatap-docs/kubernetes/resource-namespace"
+        "title": "대시보드",
+        "permalink": "/whatap-docs/dotnet/dashboard-intro"
     },
     "next": {
         "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/kubernetes/dashboard-hitmap-trace"
+        "permalink": "/whatap-docs/dotnet/dashboard-hitmap-trace"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: '애플리케이션 대시보드',
-        id: '애플리케이션-대시보드',
-        level: 2
-    },
-    {
         value: '과거 데이터 조회하기',
         id: '과거-데이터-조회하기',
-        level: 3
+        level: 2
     },
     {
         value: '에이전트 확인하기',
         id: '에이전트-확인하기',
-        level: 3
+        level: 2
     },
     {
         value: '에이전트 연결 상태 확인하기',
         id: '에이전트-연결-상태-확인하기',
-        level: 4
+        level: 3
     },
     {
         value: '에이전트별 모니터링',
         id: '에이전트별-모니터링',
-        level: 4
+        level: 3
     },
     {
         value: '분류별 에이전트 모니터링',
         id: '분류별-에이전트-모니터링',
-        level: 4
+        level: 3
     },
     {
         value: '대시보드 위젯 편집하기',
         id: '대시보드-위젯-편집하기',
-        level: 3
+        level: 2
     },
     {
         value: '위젯 크기 조절하기',
         id: '위젯-크기-조절하기',
-        level: 4
+        level: 3
     },
     {
         value: '위젯 이동하기',
         id: '위젯-이동하기',
-        level: 4
+        level: 3
     },
     {
         value: '위젯 삭제하기',
         id: '위젯-삭제하기',
-        level: 4
+        level: 3
     },
     {
         value: '위젯 추가하기',
         id: '위젯-추가하기',
-        level: 4
+        level: 3
     },
     {
         value: '프리셋',
         id: '프리셋',
-        level: 3
+        level: 2
     },
     {
         value: '새로운 프리셋 만들기',
         id: '새로운-프리셋-만들기',
-        level: 4
+        level: 3
     },
     {
         value: '프리셋 삭제하기',
         id: '프리셋-삭제하기',
-        level: 4
+        level: 3
     },
     {
         value: '위젯 옵션 이용하기',
         id: '위젯-옵션-이용하기',
-        level: 3
+        level: 2
     },
     {
         value: '위젯 알아보기',
         id: '위젯-알아보기',
-        level: 3
+        level: 2
     },
     {
         value: '에이전트 관련 위젯',
         id: '에이전트-관련-위젯',
+        level: 3
+    },
+    {
+        value: '<Cmdname sid="AA003" />',
+        id: 'cmdname-sidaa003-',
         level: 4
     },
     {
         value: '트랜잭션 관련 위젯',
         id: '트랜잭션-관련-위젯',
-        level: 4
+        level: 3
     },
     {
         value: '<Cmdname sid="AA001" />',
         id: 'cmdname-sidaa001-',
-        level: 5
+        level: 4
     },
     {
         value: '<Cmdname sid="AA002" />',
         id: 'active-trs',
-        level: 5
+        level: 4
     },
     {
         value: '<Cmdname sid="AA004" />',
         id: 'active-status',
-        level: 5
+        level: 4
     },
     {
         value: '<Cmdname sid="AA005" />',
         id: 'cmdname-sidaa005-',
-        level: 5
+        level: 4
     },
     {
         value: '서비스 관련 위젯',
         id: '서비스-관련-위젯',
+        level: 3
+    },
+    {
+        value: '<Cmdname sid="apdex" />',
+        id: 'cmdname-sidapdex-',
         level: 4
     },
     {
         value: '<Cmdname sid="tps" />',
         id: 'cmdname-sidtps-',
-        level: 5
+        level: 4
     },
     {
         value: '<Cmdname sid="avg_restime" />',
         id: 'cmdname-sidavg_restime-',
-        level: 5
+        level: 4
     },
     {
         value: '리소스 관련 위젯',
         id: '리소스-관련-위젯',
-        level: 4
+        level: 3
     },
     {
-        value: '<Cmdname sid="container_cpu" />',
-        id: 'cmdname-sidcontainer_cpu-',
-        level: 5
+        value: '<Cmdname sid="system_cpu" />',
+        id: 'cmdname-sidsystem_cpu-',
+        level: 4
     },
     {
         value: '<Cmdname sid="AA010" />',
         id: 'heap-memory',
-        level: 5
+        level: 4
     },
     {
         value: '사용자 관련 위젯',
         id: '사용자-관련-위젯',
-        level: 4
+        level: 3
     },
     {
         value: '<Cmdname sid="realtime_user" />',
         id: 'cmdname-sidrealtime_user-',
-        level: 5
+        level: 4
     },
     {
         value: '1일 기준 비교 위젯',
         id: '1일-기준-비교-위젯',
-        level: 4
+        level: 3
     },
     {
         value: '<Cmdname sid="today_tps" />',
         id: 'cmdname-sidtoday_tps-',
-        level: 5
+        level: 4
     },
     {
         value: '<Cmdname sid="daily_visit" />',
         id: 'cmdname-siddaily_visit-',
-        level: 5
+        level: 4
     },
     {
         value: '실시간 알림 확인하기',
         id: '실시간-알림-확인하기',
-        level: 3
-    },
-    {
-        value: '멀티 서비스 대시보드',
-        id: '멀티-서비스-대시보드',
         level: 2
     }
 ];
@@ -560,8 +554,8 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
     };
 const Cmdname = makeShortcode("Cmdname");
 const ImgLang = makeShortcode("ImgLang");
-const Link = makeShortcode("Link");
 const InDoc = makeShortcode("InDoc");
+const Link = makeShortcode("Link");
 const layoutProps = {
     toc
 };
@@ -578,36 +572,18 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "serviceDashboard",
+        sid: "application_dashboard",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `컨테이너 내부에서 실행 중인 애플리케이션 상태를 실시간으로 확인할 수 있는 대시보드입니다. 각 위젯의 정상적인 데이터 출력을 위해서는 쿠버네티스 환경에 노드 에이전트를 설치해야 하고, 컨테이너 내부의 애플리케이션에도 와탭 에이전트를 설치해야 합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
-        "type": "note"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "admonition"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../java/dashboard-intro"
-    }, `Java`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../nodejs/dashboard-intro"
-    }, `Node.js`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../python/dashboard-intro"
-    }, `Python`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
-        "href": "../php/dashboard-intro"
-    }, `PHP`), `로 개발한 애플리케이션에 와탭 에이전트 설치를 지원합니다. `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-ap-service-dashboard.png",
-        desc: "애플리케이션 서비스 대시보드",
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "apm-dashboard.png",
+        desc: "애플리케이션 대시보드",
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "application_dashboard",
         className: "uitext",
         mdxType: "Cmdname"
     }), "에서는 애플리케이션의 주요 지표들을 에이전트를 통해 수집하고 차트를 구성해 실시간으로 모니터링하고 과거의 데이터를 조회할 수 있습니다. 대시보드에 배치된 위젯들을 통해 애플리케이션의 문제를 빠르게 파악하고 분석할 수 있습니다.", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `CPU, Memory를 제외한 일반적인 차트의 경우 안정적인 데이터는 파란색 계열로 표현되고, 문제로 식별되는 요소들은 붉은색 계열로 표시되어 현황을 쉽게 인지할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "애플리케이션-대시보드"
-    }, `애플리케이션 대시보드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "과거-데이터-조회하기"
     }, `과거 데이터 조회하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "application_dashboard",
@@ -671,15 +647,25 @@ function MDXContent(_param) {
         src: (__webpack_require__(73618)/* ["default"] */ .A),
         width: "24",
         height: "24"
-    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "에이전트-확인하기"
-    }, `에이전트 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `에이전트 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "에이전트-연결-상태-확인하기"
-    }, `에이전트 연결 상태 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+    }, `에이전트 연결 상태 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "dashboard",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-check-agent.png",
         desc: "에이전트 연결 상태",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 왼쪽 위, 시간 선택자의 오른쪽에서는 해당 프로젝트와 연결된 에이전트의 상태를 확인할 수 있는 정보를 제공합니다. 이를 통해 애플리케이션 서버의 동작 여부를 바로 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "dashboard-transactionmap",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "txmap-check-agent.png",
+        desc: "에이전트 연결 상태",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 왼쪽 위, 시간 선택자의 오른쪽에서는 해당 프로젝트와 연결된 에이전트의 상태를 확인할 수 있는 정보를 제공합니다. 이를 통해 애플리케이션 서버의 동작 여부를 바로 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -712,13 +698,29 @@ function MDXContent(_param) {
         src: (__webpack_require__(96656)/* ["default"] */ .A),
         width: "15",
         height: "19"
-    }), `: 비활성화된 에이전트를 표시하거나 감출 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }), `: 비활성화된 에이전트를 표시하거나 감출 수 있습니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "에이전트별-모니터링"
-    }, `에이전트별 모니터링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+    }, `에이전트별 모니터링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "dashboard",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-select-agent.png",
         desc: "에이전트 선택하기",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `기본적으로 대시보드에는 모든 에이전트로부터 수집한 지표들을 차트에 표시하지만 에이전트별로 데이터를 조회할 수도 있습니다. 시간 선택자 아래에 위치한 에이전트를 하나 또는 둘 이상을 선택하세요. 선택한 에이전트의 지표들로 대시보드에 배치된 위젯의 데이터를 갱신합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "dashboard-transactionmap",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "txmap-select-agent.png",
+        desc: "에이전트 선택하기",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "dashboard",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `기본적으로 대시보드에는 모든 에이전트로부터 수집한 지표들을 차트에 표시하지만 에이전트별로 데이터를 조회할 수도 있습니다. 시간 선택자 아래에 위치한 에이전트를 하나 또는 둘 이상을 선택하세요. 선택한 에이전트의 지표들로 대시보드에 배치된 위젯의 데이터를 갱신합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        pages: "dashboard-transactionmap",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `기본적으로 차트에는 모든 에이전트로부터 수집한 지표들을 차트에 표시하지만 에이전트별로 데이터를 조회할 수도 있습니다. 시간 선택자 아래에 위치한 에이전트를 하나 또는 둘 이상을 선택하세요. 선택한 에이전트의 트랜잭션 데이터로 차트를 갱신합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "tip"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
@@ -732,8 +734,8 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `프로젝트에 연결된 에이전트의 수가 많을 경우 에이전트의 이름을 짧게 설정하는 것이 효율적입니다. 에이전트 이름 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "../java/agent-name"
-    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+        "href": "agent-name"
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "분류별-에이전트-모니터링"
     }, `분류별 에이전트 모니터링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-select-agent-by-category.png",
@@ -769,9 +771,16 @@ function MDXContent(_param) {
         sid: "ITM06009",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ": 에이전트 설정에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "whatap.onode"), "로 분류된 에이전트 목록만을 모니터링합니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), ": 에이전트 설정에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "whatap.onode"), "로 분류된 에이전트 목록만을 모니터링합니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `에이전트 설정에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "agent-name"
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "대시보드-위젯-편집하기"
-    }, `대시보드 위젯 편집하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드에 배치한 위젯은 사용자가 원하는 크기로 조절할 수 있고, 원하는 위치에 배치할 수 있습니다. 불필요하다고 생각되는 위젯은 삭제하고 다시 추가할 수도 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `대시보드 위젯 편집하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `대시보드에 배치한 위젯은 사용자가 원하는 크기로 조절할 수 있고, 원하는 위치에 배치할 수 있습니다. 불필요하다고 생각되는 위젯은 삭제하고 다시 추가할 수도 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "위젯-크기-조절하기"
     }, `위젯 크기 조절하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-widget-resize.png",
@@ -782,7 +791,7 @@ function MDXContent(_param) {
         src: (__webpack_require__(28891)/* ["default"] */ .A),
         width: "50",
         height: "50"
-    }), ` 요소를 마우스로 클릭한 상태에서 원하는 크기로 드래그하세요. 균일한 가로, 세로 비율의 격자가 표시되고, 격자 단위로 위젯의 크기를 조절할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }), ` 요소를 마우스로 클릭한 상태에서 원하는 크기로 드래그하세요. 균일한 가로, 세로 비율의 격자가 표시되고, 격자 단위로 위젯의 크기를 조절할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "위젯-이동하기"
     }, `위젯 이동하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-widget-move.png",
@@ -793,7 +802,7 @@ function MDXContent(_param) {
         src: (__webpack_require__(21288)/* ["default"] */ .A),
         width: "88",
         height: "88"
-    }), ` 모양으로 변경됩니다. 이때 마우스 왼쪽 버튼을 클릭한 상태로 원하는 위치로 드래그하여 위젯을 이동할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }), ` 모양으로 변경됩니다. 이때 마우스 왼쪽 버튼을 클릭한 상태로 원하는 위치로 드래그하여 위젯을 이동할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "위젯-삭제하기"
     }, `위젯 삭제하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-widget-remove.png",
@@ -803,7 +812,7 @@ function MDXContent(_param) {
         sid: "delete",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 버튼을 선택하면 해당 위젯이 대시보드에서 삭제됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }), ` 버튼을 선택하면 해당 위젯이 대시보드에서 삭제됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "위젯-추가하기"
     }, `위젯 추가하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "apm-dashboard-widget-add.png",
@@ -813,7 +822,7 @@ function MDXContent(_param) {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
-    }, `현재 추가할 수 있는 위젯은 고정적이지만 향후 업데이트를 통해 위젯 지원을 늘려갈 계획입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }, `현재 추가할 수 있는 위젯은 고정적이지만 향후 업데이트를 통해 위젯 지원을 늘려갈 계획입니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "프리셋"
     }, `프리셋`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "프리셋",
@@ -824,7 +833,7 @@ function MDXContent(_param) {
         sid: "kube_default",
         className: "uitext",
         mdxType: "Cmdname"
-    }), `)은 변경할 수 없으며, 원하는 형식으로 위젯의 크기를 조절하고, 배치해 새로운 프리셋을 만들 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }), `)은 변경할 수 없으며, 원하는 형식으로 위젯의 크기를 조절하고, 배치해 새로운 프리셋을 만들 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "새로운-프리셋-만들기"
     }, `새로운 프리셋 만들기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ol", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ol"
@@ -880,14 +889,14 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `프리셋은 사용자 계정으로 저장되며 현재는 다른 사용자와 공유할 수 없습니다. 더 나은 기능을 제공하도록 업데이트 예정입니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `프리셋은 사용자 계정으로 저장되며 현재는 다른 사용자와 공유할 수 없습니다. 더 나은 기능을 제공하도록 업데이트 예정입니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "프리셋-삭제하기"
     }, `프리셋 삭제하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용하지 않는 프리셋이 있다면 프리셋 목록에서 삭제할 수 있습니다. 프리셋 목록에서 삭제하려는 항목의 오른쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "삭제 아이콘",
         src: (__webpack_require__(88054)/* ["default"] */ .A),
         width: "20",
         height: "20"
-    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), ` 버튼을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "위젯-옵션-이용하기"
     }, `위젯 옵션 이용하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `위젯의 위에 표시된 아이콘 버튼의 기능은 다음과 같습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -928,7 +937,7 @@ function MDXContent(_param) {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
-    }, `위젯에 따라 제공되는 옵션은 다를 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }, `위젯에 따라 제공되는 옵션은 다를 수 있습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "위젯-알아보기"
     }, `위젯 알아보기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "info"
@@ -965,9 +974,18 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../best-practice-guides/about-apm-dbc"
-    }, `DB 연결 지연과 커넥션 풀`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `DB 연결 지연과 커넥션 풀`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "에이전트-관련-위젯"
     }, `에이전트 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션에 설치한 에이전트를 통해서 애플리케이션의 정보를 확인할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+        "id": "cmdname-sidaa003-"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "AA003",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "agent-dashboard-summary.png",
+        desc: "애플리케이션 요약",
+        mdxType: "ImgLang"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `프로젝트에 등록한 애플리케이션의 실행 상태 및 개수, CPU 코어 수, Hosts 수를 표시합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "트랜잭션-관련-위젯"
     }, `트랜잭션 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `트랜잭션을 통해 확인할 수 있는 장애의 현황은 우선 응답시간을 통해 알 수 있습니다. 또한 진행 중인 트랜잭션이 종료되지 않는다면 이 또한 장애로 인식해야 합니다. 와탭은 진행 중인 상태의 시간에 따라 구간을 나누어 표시합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "normal"
@@ -975,7 +993,7 @@ function MDXContent(_param) {
         class: "slow"
     }, `주황색(Slow)`), `은 응답 시간이 8초 정도의 느린 트랜잭션, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
-    }, `빨간색(Very slow)`), `은 응답 시간이 보통의 2배 이상으로 느린 트랜잭션을 의미합니다. 이를 통해 사용자는 직관적으로 가장 빨리 장애를 인지할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `빨간색(Very slow)`), `은 응답 시간이 보통의 2배 이상으로 느린 트랜잭션을 의미합니다. 이를 통해 사용자는 직관적으로 가장 빨리 장애를 인지할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidaa001-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "AA001",
@@ -991,7 +1009,7 @@ function MDXContent(_param) {
         class: "slow"
     }, `Slow`), `, `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
-    }, `Very Slow`), `)로 색상으로 분류하여 우측 상단에 개수로 표시합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `Very Slow`), `)로 색상으로 분류하여 우측 상단에 개수로 표시합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "active-trs"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "AA002",
@@ -1064,7 +1082,7 @@ function MDXContent(_param) {
         className: "uitext",
         mdxType: "Cmdname"
     }), ` 창에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Link, {
-        to: "../java/trs-profile",
+        to: "trs-profile",
         mdxType: "Link"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1072,8 +1090,8 @@ function MDXContent(_param) {
         parentName: "li"
     }, `트랜잭션에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "../java/track-transactions-intro"
-    }, `다음 문서`), `를 참조하세요.`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+        "href": "track-transactions-intro"
+    }, `다음 문서`), `를 참조하세요.`)))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "active-status"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "AA004",
@@ -1156,7 +1174,7 @@ function MDXContent(_param) {
         sid: "active_stat_socket",
         className: "uitext",
         mdxType: "Cmdname"
-    }), " 수치가 지속적으로 증가한다는 것은 외부 시스템과의 연결이 되지 않아 장애가 발생 중일 가능성이 높습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }), " 수치가 지속적으로 증가한다는 것은 외부 시스템과의 연결이 되지 않아 장애가 발생 중일 가능성이 높습니다.")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidaa005-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "AA005",
@@ -1244,14 +1262,55 @@ function MDXContent(_param) {
         parentName: "li"
     }, `에이전트 설정을 통해 정책을 설정할 수 있습니다. 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "../java/agent-transaction"
+        "href": "agent-transaction"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `히트맵 위젯을 통해 트랜잭션을 분석하는 과정은 다음 문서를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `히트맵 위젯을 통해 트랜잭션을 분석하는 과정은 다음 문서를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "서비스-관련-위젯"
-    }, `서비스 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `서비스 관련 위젯을 통해 애플리케이션 성능 튜닝을 위한 지표로 활용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `서비스 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `서비스 관련 위젯을 통해 애플리케이션 성능 튜닝을 위한 지표로 활용할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+        "id": "cmdname-sidapdex-"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "apdex",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "Apdex",
+        src: (__webpack_require__(22859)/* ["default"] */ .A),
+        width: "600",
+        height: "345"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "https://www.apdex.org/"
+    }, `Application Performance Index(Apdex)`), `는 애플리케이션 성능 지표입니다. 웹 애플리케이션의 고객 만족도를 측정합니다. 사용자 만족도에 대한 지표로 활용할 수 있으며, 0 ~ 1 사이의 값을 갖습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("blockquote", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "blockquote"
+    }, `(만족 횟수 + (허용 횟수 * 0.5)) / 전체 요청 수`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `만족 (Satisfied, S): 업무처리에 전혀 문제 없음 ≤ 1.2초 (만족 S 기본값)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `허용 (Tolerating, T): 사용자가 지연을 느끼나 업무처리는 가능 ≤ 4.8초 (만족 S * 4)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `불만 (Frustrated, F): 업무처리가 불가능 > 4.8초 (허용 T 초과 및 오류) `))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, `만족 S 기본값은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "management",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "agent_configuration",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 메뉴에서 변경할 수 있습니다. 설정 키 값은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `apdex_time`), `입니다. 에이전트 버전 2.0 이상만 지원합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidtps-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "tps",
@@ -1272,7 +1331,7 @@ function MDXContent(_param) {
     }, `TPS, 응답시간, CPU 사용률 분석에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../best-practice-guides/about-apm-dashboard#analysis-user-service-resource"
-    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidavg_restime-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "avg_restime",
@@ -1292,25 +1351,25 @@ function MDXContent(_param) {
     }, `TPS, 응답시간, CPU 사용률 분석에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../best-practice-guides/about-apm-dashboard#analysis-user-service-resource"
-    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "리소스-관련-위젯"
-    }, `리소스 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
-        "id": "cmdname-sidcontainer_cpu-"
+    }, `리소스 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+        "id": "cmdname-sidsystem_cpu-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "container_cpu",
+        sid: "system_cpu",
         mdxType: "Cmdname"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-ap-service-dashboard-cpu.png",
-        desc: "컨테이너 CPU",
+        img: "apm-dashboard-cpu.png",
+        desc: "시스템 CPU",
         mdxType: "ImgLang"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `컨테이너 CPU 사용량입니다. 실시간으로 CPU 사용량 변화 추이를 파악할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `애플리케이션 서버의 CPU 사용량입니다. 실시간으로 CPU 사용량 변화 추이를 파악할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
         "type": "note"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
     }, `TPS, 응답시간, CPU 사용률 분석에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../best-practice-guides/about-apm-dashboard#analysis-user-service-resource"
-    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "heap-memory"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "AA010",
@@ -1339,7 +1398,7 @@ function MDXContent(_param) {
         "type": "tip"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "admonition"
-    }, `힙 메모리 및 힙 메모리 차트 분석에 대한 자세한 내용은 다음 링크를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
+    }, `힙 메모리 차트 분석에 대한 자세한 내용은 다음 링크를 참조하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
         parentName: "admonition"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -1347,31 +1406,24 @@ function MDXContent(_param) {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
-        "href": "https://docs.whatap.io/best-practice-guides/about-apm-heap-memory"
-    }, `학습하기: 힙 메모리 메트릭스 및 메트릭스 알림 설정`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
-        parentName: "p",
         "href": "https://www.whatap.io/ko/blog/94/"
-    }, `월간 와탭: 모니터링에 주목해야할 지표`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `월간 와탭 : 모니터링에 주목해야할 지표`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "https://youtu.be/FcWfVrETWh4"
-    }, `Java 힙 메모리 차트 분석: Ch.1 힙차트 관찰하기`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `Java 힙 메모리 차트 분석 : Ch.1 힙차트 관찰하기`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "https://youtu.be/t2q5z4HHNfs"
-    }, `JAVA 힙메모리 차트 분석: Ch.2 메모리 릭, 그리고 힙덤프 분석`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `JAVA 힙메모리 차트 분석 : Ch.2 메모리 릭, 그리고 힙덤프 분석`))))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "사용자-관련-위젯"
-    }, `사용자 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `사용자 관련 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidrealtime_user-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "realtime_user",
@@ -1410,9 +1462,15 @@ function MDXContent(_param) {
         parentName: "p"
     }, `HyperLogLog`), `로 산출합니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
-    }, `HyperLogLog`), `는 매우 적은 메모리로 집합의 원소 개수를 추정하는 확률적 자료 구조를 의미합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `HyperLogLog`), `는 매우 적은 메모리로 집합의 원소 개수를 추정하는 확률적 자료 구조를 의미합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "1일-기준-비교-위젯"
-    }, `1일 기준 비교 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }, `1일 기준 비교 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `All APPS.`), ` 태그가 표시된 위젯은 항상 모든 에이전트에 대한 데이터를 표시합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidtoday_tps-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "today_tps",
@@ -1434,7 +1492,7 @@ function MDXContent(_param) {
         sid: "daily_app_stat",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h5", {
+    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-siddaily_visit-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "daily_visit",
@@ -1460,7 +1518,7 @@ function MDXContent(_param) {
         sid: "daily_app_stat",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), ` 메뉴로 이동합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "실시간-알림-확인하기"
     }, `실시간 알림 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 오른쪽 위에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "실시간 알림 icon",
@@ -1476,16 +1534,20 @@ function MDXContent(_param) {
     }, `화면 가장 위에 고정 메뉴 영역의 기본 요소들에 대한 자세한 내용은 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
         "href": "../main-ui-intro"
-    }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "멀티-서비스-대시보드"
-    }, `멀티 서비스 대시보드`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `선택한 애플리케이션을 개별 카드 형태로 조회, 비교할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
-        img: "k8s-application-multi-service-dashboard.png",
-        desc: "멀티 서비스 대시보드",
-        mdxType: "ImgLang"
-    }));
+    }, `다음 문서`), `를 참조하세요.`)));
 }
 MDXContent.isMDXComponent = true;
 
+
+/***/ }),
+
+/***/ 22859:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/apm-dashboard-apdex-4beb13d03ae3217f150ef39562cb6ed1.png");
 
 /***/ }),
 

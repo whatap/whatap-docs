@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44258],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[76912],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 38027:
+/***/ 79591:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
     title: '애플리케이션 대시보드',
     description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
     tags: [
-        '.NET',
+        'Python',
         '대시보드',
         '애플리케이션',
         '애플리케이션 모니터링'
@@ -320,20 +320,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "dotnet/dashboard",
-    "id": "dotnet/dashboard",
+    "unversionedId": "python/dashboard",
+    "id": "python/dashboard",
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-    "source": "@site/docs/dotnet/dashboard.mdx",
-    "sourceDirName": "dotnet",
-    "slug": "/dotnet/dashboard",
-    "permalink": "/whatap-docs/dotnet/dashboard",
+    "source": "@site/docs/python/dashboard.mdx",
+    "sourceDirName": "python",
+    "slug": "/python/dashboard",
+    "permalink": "/whatap-docs/python/dashboard",
     "draft": false,
-    "editUrl": "undefined/docs/dotnet/dashboard.mdx",
+    "editUrl": "undefined/docs/python/dashboard.mdx",
     "tags": [
         {
-            "label": ".NET",
-            "permalink": "/whatap-docs/tags/net"
+            "label": "Python",
+            "permalink": "/whatap-docs/tags/python"
         },
         {
             "label": "대시보드",
@@ -354,20 +354,20 @@ const metadata = {
         "title": "애플리케이션 대시보드",
         "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
         "tags": [
-            ".NET",
+            "Python",
             "대시보드",
             "애플리케이션",
             "애플리케이션 모니터링"
         ]
     },
-    "sidebar": "dotNetSidebar",
+    "sidebar": "pySidebar",
     "previous": {
         "title": "대시보드",
-        "permalink": "/whatap-docs/dotnet/dashboard-intro"
+        "permalink": "/whatap-docs/python/dashboard-intro"
     },
     "next": {
         "title": "히트맵 - 트레이스 분석",
-        "permalink": "/whatap-docs/dotnet/dashboard-hitmap-trace"
+        "permalink": "/whatap-docs/python/dashboard-hitmap-trace"
     }
 };
 const assets = {};
@@ -1464,7 +1464,13 @@ function MDXContent(_param) {
         parentName: "p"
     }, `HyperLogLog`), `는 매우 적은 메모리로 집합의 원소 개수를 추정하는 확률적 자료 구조를 의미합니다.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "1일-기준-비교-위젯"
-    }, `1일 기준 비교 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
+    }, `1일 기준 비교 위젯`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("admonition", {
+        "type": "note"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "admonition"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `All APPS.`), ` 태그가 표시된 위젯은 항상 모든 에이전트에 대한 데이터를 표시합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidtoday_tps-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "today_tps",
@@ -1512,7 +1518,7 @@ function MDXContent(_param) {
         sid: "daily_app_stat",
         className: "uitext",
         mdxType: "Cmdname"
-    }), ` 메뉴로 이동합니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), ` 메뉴로 이동합니다. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "실시간-알림-확인하기"
     }, `실시간 알림 확인하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `화면 오른쪽 위에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "실시간 알림 icon",
