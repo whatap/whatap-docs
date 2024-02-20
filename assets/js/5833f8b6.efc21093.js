@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[11578],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[44696],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 12561:
+/***/ 32768:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -313,7 +313,7 @@ const frontMatter = {
     description: '애플리케이션 통계 메뉴를 안내합니다.',
     toc_max_heading_level: 2,
     tags: [
-        'Node.js',
+        'Go',
         '트랜잭션',
         '애플리케이션',
         '분석하기',
@@ -323,20 +323,20 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "nodejs/analysis-apm-trs",
-    "id": "nodejs/analysis-apm-trs",
+    "unversionedId": "golang/analysis-apm-trs",
+    "id": "golang/analysis-apm-trs",
     "title": "통계",
     "description": "애플리케이션 통계 메뉴를 안내합니다.",
-    "source": "@site/docs/nodejs/analysis-apm-trs.mdx",
-    "sourceDirName": "nodejs",
-    "slug": "/nodejs/analysis-apm-trs",
-    "permalink": "/whatap-docs/nodejs/analysis-apm-trs",
+    "source": "@site/docs/golang/analysis-apm-trs.mdx",
+    "sourceDirName": "golang",
+    "slug": "/golang/analysis-apm-trs",
+    "permalink": "/whatap-docs/golang/analysis-apm-trs",
     "draft": false,
-    "editUrl": "undefined/docs/nodejs/analysis-apm-trs.mdx",
+    "editUrl": "undefined/docs/golang/analysis-apm-trs.mdx",
     "tags": [
         {
-            "label": "Node.js",
-            "permalink": "/whatap-docs/tags/node-js"
+            "label": "Go",
+            "permalink": "/whatap-docs/tags/go"
         },
         {
             "label": "트랜잭션",
@@ -366,7 +366,7 @@ const metadata = {
         "description": "애플리케이션 통계 메뉴를 안내합니다.",
         "toc_max_heading_level": 2,
         "tags": [
-            "Node.js",
+            "Go",
             "트랜잭션",
             "애플리케이션",
             "분석하기",
@@ -374,14 +374,14 @@ const metadata = {
             "UI"
         ]
     },
-    "sidebar": "nodejsSidebar",
+    "sidebar": "goSidebar",
     "previous": {
         "title": "성능 추이",
-        "permalink": "/whatap-docs/nodejs/performance-trend"
+        "permalink": "/whatap-docs/golang/performance-trend"
     },
     "next": {
         "title": "보고서",
-        "permalink": "/whatap-docs/nodejs/report-intro"
+        "permalink": "/whatap-docs/golang/report-intro"
     }
 };
 const assets = {};
@@ -447,6 +447,7 @@ const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
     };
 const ImgLang = makeShortcode("ImgLang");
+const Cmdname = makeShortcode("Cmdname");
 const layoutProps = {
     toc
 };
@@ -1081,15 +1082,21 @@ stat_mtrace_enabled=true
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `트랜잭션`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "ITM07683",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `트랜잭션 URL hash`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
+    }, `HTTP 호출 URL 해시(hash)`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
         parentName: "tbody"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
-    }, `서비스`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "TTL06918",
+        mdxType: "Cmdname"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("td", {
         parentName: "tr",
         "align": null
     }, `해당 HTTP API를 요청한 URL 중 하나를 임의로 수집한 정보`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tr", {
