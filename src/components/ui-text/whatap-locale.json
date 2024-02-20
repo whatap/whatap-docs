@@ -1296,7 +1296,7 @@
   },
   "sms_noti_sms_alert_only_paid_server": {
     "en": "SMS notification feature is limited to paid server.",
-    "ja": "SMSアラート機能は有償転換からご利用できます。",
+    "ja": "SMSアラート機能は有料転換からご利用できます。",
     "ko": "SMS 알림 기능은 유료 서버에 한정됩니다.",
     "zh": "SMS通知功能只能用于收费服务器上。",
     "service_id": "DSC00201"
@@ -1485,70 +1485,70 @@
   },
   "sms_limited_down_check_title": {
     "en": "Down checker is provided to paid users only.",
-    "ja": "ダウンチェックは有償版の利用者のみ利用できます。",
+    "ja": "ダウンチェックは有料版の利用者のみ利用できます。",
     "ko": "Down Check는 유료 사용자를 위한 기능입니다.",
     "zh": "Down Check是为收费用户的功能。",
     "service_id": "_00228"
   },
   "sms_limited_down_check_msg": {
     "en": "Down checker enables advanced monitoring on servers & network status. The feature is provided to paid users of infrastructure monitoring only.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "ダウンチェックはサーバー及びネットワークをより詳しくモニタリングできる機能で、サーバーモニタリングを有償で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "ダウンチェックはサーバー及びネットワークをより詳しくモニタリングできる機能で、サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "Down Check는 서버 및 네트워크 상태를 보다 심화적으로 모니터링해주는 기능으로, 서버 모니터링 서비스를 유료로 사용하시는 고객에 한해 활성화되는 기능입니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "Down Check是更详细地监控服务器和网络状态的功能，该功能仅提供给基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00229"
   },
   "sms_limited_compound_eye_title": {
     "en": "Compound eye is for paid users only.",
-    "ja": "Compound Eyeは有償版の利用者のみ利用できます。",
+    "ja": "Compound Eyeは有料版の利用者のみ利用できます。",
     "ko": "Compound Eye는 유료 사용자를 위한 기능입니다.",
     "zh": "复眼(Compound Eye)是为收费用户的功能。",
     "service_id": "_00230"
   },
   "sms_limited_compound_eye_msg": {
     "en": "Compound eye offers an intuitive view on monitoring multiple servers. The feature is provided to paid users of infrastructure monitoring only.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "Compound Eyeはより多くのサーバーを一目でモニタリングできるよう視覚化したビューを提供する機能です。サーバーモニタリングを有償で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "Compound Eyeはより多くのサーバーを一目でモニタリングできるよう視覚化したビューを提供する機能です。サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "Compound Eye는 보다 많은 서버를 한 번에 모니터리 할 수 있도록  직관적인 뷰를 제공하는 기능으로, 서버 모니터링 서비스를 유료로 사용하시는 고객에 한해 활성화되는 기능입니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "Compound Eye可以监控多台服务器的直观视图, 该功能仅提供给基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00231"
   },
   "sms_limited_time_availability_title": {
     "en": "Availability dashboard is for paid users only.",
-    "ja": "可用性ダッシュボードは有償版の利用者のみ利用できます。",
+    "ja": "可用性ダッシュボードは有料版の利用者のみ利用できます。",
     "ko": "가용성 대시보드는 유료 사용자를 위한 기능입니다.",
     "zh": "可用性仪表板是为收费用户的功能。",
     "service_id": "_00232"
   },
   "sms_limited_time_availability_msg": {
     "en": "Availability dashboard provides the status history of monitored servers & networks. The feature is provided to paid users of infrastructure monitoring only.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "可用性ダッシュボードはモニタリングするサーバーとネットワーク状態履歴を一目で把握できる機能です。サーバーモニタリングを有償で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "可用性ダッシュボードはモニタリングするサーバーとネットワーク状態履歴を一目で把握できる機能です。サーバーモニタリングを有料で利用する場合のみに活性化されます。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "가용성 대시보드는 모니터링하는 서버 및 네트워크 상태 history를 한 눈에 파악할 수 있는 기능으로, 서버 모니터링 서비스를 유료로 사용하시는 고객에 한해 활성화되는 기능입니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "可用性仪表板一目了然地可以了解监控的服务器和网络的状态历史记录。该功能仅提供给基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00233"
   },
   "sms_limited_detailed_info_title": {
     "en": "Detailed information is provided to paid users only.",
-    "ja": "詳細は有償版の利用者のみ利用できます。",
+    "ja": "詳細は有料版の利用者のみ利用できます。",
     "ko": "자세히 보기는 유료 사용자를 위한 기능입니다.",
     "zh": "详细信息是为收费用户的功能。",
     "service_id": "_00234"
   },
   "sms_limited_detailed_info_msg": {
     "en": "To see detailed information about specific index or process, you must be a paid user of infrastructure monitoring.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "指標、またはプロセスの詳細情報を確認するためにはサーバーモニタリングを有償で利用する必要があります。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "指標、またはプロセスの詳細情報を確認するためにはサーバーモニタリングを有料で利用する必要があります。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "지표(카운트)나 프로세스의 상세 정보를 확인하기 위해서는 서버 모니터링 서비스를 유료로 사용하셔야 합니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "要查看有关特定索引或进程的详细信息，您必须是基础架构监控的付费用户。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00235"
   },
   "sms_limited_export_chart_title": {
     "en": "Data export function is for paid users only.",
-    "ja": "データ抽出機能は有償版の利用者のみ利用できます。",
+    "ja": "データ抽出機能は有料版の利用者のみ利用できます。",
     "ko": "데이터 내보내기 기능은 유료 사용자를 위한 기능입니다.",
     "zh": "数据导出功能仅提供给付费用户。",
     "service_id": "_00236"
   },
   "sms_limited_export_chart_msg": {
     "en": "Please use the daily report menu or change to a paid plan to export details.<br /><br />Any questions regarding this issue, please contact the number or email below.<br /><br />TEL : 02-565-1803<br />Email: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
-    "ja": "詳細情報を抽出するためには日次レポートメニューを利用するか、有償版に転換してください。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
+    "ja": "詳細情報を抽出するためには日次レポートメニューを利用するか、有料版に転換してください。<br/><br/>お問い合わせはカスタマーサポートの窓口まで問い合わせてくださぃ。<br/><Eメール: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>\"href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "ko": "지표(카운트)의 상세 정보를 내보내기 위해서는  일일 보고서 메뉴를 이용하시거나 서버 모니터링 서비스를 유료로 사용하셔야 합니다.<br /><br />기타 문의사항이 있으신 경우, 아래 대표번호나 이메일로 문의주세요.<br /><br />전   화 :  02-565-1803<br />이메일:<a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "zh": "请使用每日报表或更改为付费以导出详细信息。<br /><br />如果您有任何其他疑问，请联系以下的总机或电子邮件。<br /><br />电话 :  02-565-1803<br />电子邮件: <a href=\"mailto:support@whatap.io\">support@whatap.io</a>",
     "service_id": "_00237"
@@ -9170,7 +9170,7 @@
   },
   "sms_subscribe": {
     "en": "Subscribe",
-    "ja": "有償転換",
+    "ja": "有料転換",
     "ko": "Subscribe",
     "zh": "Subscribe",
     "service_id": "_01366"
@@ -9212,7 +9212,7 @@
   },
   "submenu_subscribe": {
     "en": "Subscribe",
-    "ja": "有償転換",
+    "ja": "有料転換",
     "ko": "유료 전환",
     "zh": "Subscribe",
     "service_id": "_01372"
@@ -11543,7 +11543,7 @@
   },
   "subscribe_start": {
     "en": "Subscribe start",
-    "ja": "有償転換日",
+    "ja": "有料転換日",
     "ko": "유료 전환 시작일",
     "zh": "Subscribe Start",
     "service_id": "_01714"
@@ -11683,14 +11683,14 @@
   },
   "is_subscribed": {
     "en": "Is subscribed",
-    "ja": "有償状態",
+    "ja": "有料状態",
     "ko": "유료 전환 유무",
     "zh": "Is Subscribed",
     "service_id": "_01735"
   },
   "subscribe_date": {
     "en": "Subscribe date",
-    "ja": "有償転換日",
+    "ja": "有料転換日",
     "ko": "유료 전환일",
     "zh": "Subscribe Date",
     "service_id": "_01736"
@@ -11704,7 +11704,7 @@
   },
   "project_subscribe_on_create": {
     "en": "Project subscribe on create",
-    "ja": "プロジェクト生成時に有償転換",
+    "ja": "プロジェクト生成時に有料転換",
     "ko": "프로젝트 생성시 구독 상태로",
     "zh": "Project Subscribe on Create",
     "service_id": "_01738"
@@ -12359,7 +12359,7 @@
   },
   "invite-db-support-account-notice": {
     "en": "If you need support with the subscribed DB project, please invite 'help@whatap.io'.",
-    "ja": "有償版のDBモニタリングプロジェクトに対するWhaTapのカスタマーサポートが必要な場合は、「help@whatap.io」を招待してください。",
+    "ja": "有料版のDBモニタリングプロジェクトに対するWhaTapのカスタマーサポートが必要な場合は、「help@whatap.io」を招待してください。",
     "ko": "유료 DB 프로젝트에 대해 WhaTap의 지원이 필요한 경우, 'help@whatap.io' 계정을 초대하여 주시기 바랍니다.",
     "zh": "If you want to be supported for the DB project subscribed, please invite 'help@whatap.io'.",
     "service_id": "_01833"
@@ -21974,7 +21974,7 @@
   },
   "subscription_list": {
     "en": "Subscription list",
-    "ja": "有償リスト",
+    "ja": "有料リスト",
     "ko": "유료 목록",
     "zh": "Subscription List",
     "service_id": "_03206"
@@ -21988,28 +21988,28 @@
   },
   "project_subscription": {
     "en": "Project subscription",
-    "ja": "プロジェクト有償転換",
+    "ja": "プロジェクト有料転換",
     "ko": "프로젝트 유료 전환",
     "zh": "Project Subscription",
     "service_id": "_03208"
   },
   "subscribe_all": {
     "en": "Subscribe All",
-    "ja": "一括有償転換",
+    "ja": "一括有料転換",
     "ko": "일괄 유료 전환",
     "zh": "Subscribe All",
     "service_id": "BTN03209"
   },
   "platform_subscription": {
     "en": "Platform subscription",
-    "ja": "プラットフォーム有償転換",
+    "ja": "プラットフォーム有料転換",
     "ko": "플랫폼 유료 전환",
     "zh": "Platform Subscription",
     "service_id": "_03210"
   },
   "platform_subscription_date": {
     "en": "Platform subscription date",
-    "ja": "プラットフォーム有償転換日",
+    "ja": "プラットフォーム有料転換日",
     "ko": "플랫폼 유료 전환일",
     "zh": "Platform Subscription Date",
     "service_id": "TTL03211"
@@ -22093,14 +22093,14 @@
   },
   "subscribe": {
     "en": "Subscribe",
-    "ja": "有償転換",
+    "ja": "有料転換",
     "ko": "유료 전환",
     "zh": "Subscribe",
     "service_id": "TTL03224"
   },
   "purchase_history": {
     "en": "Subscribed history",
-    "ja": "有償転換履歴",
+    "ja": "有料転換履歴",
     "ko": "유료 전환 이력",
     "zh": "Subscribed History",
     "service_id": "TTL03225"
@@ -22121,7 +22121,7 @@
   },
   "succeed_to_subscribe": {
     "en": "Changed to subscription.",
-    "ja": "有償転換できました。",
+    "ja": "有料転換できました。",
     "ko": "유료로 변경되었습니다.",
     "zh": "Succeed to subscribe.",
     "service_id": "_03228"
@@ -22142,7 +22142,7 @@
   },
   "purchase_date": {
     "en": "Subscribed date",
-    "ja": "有償転換日",
+    "ja": "有料転換日",
     "ko": "유료 전환일",
     "zh": "Subscribed Date",
     "service_id": "CNT03232"
@@ -22163,7 +22163,7 @@
   },
   "purchase_history_not_exist": {
     "en": "There is no subscription history.",
-    "ja": "有償転換履歴が存在しません。",
+    "ja": "有料転換履歴が存在しません。",
     "ko": "유료전환 이력이 존재하지 않습니다.",
     "zh": "There is no subscribed histories.",
     "service_id": "_03235"
@@ -22520,7 +22520,7 @@
   },
   "auto_subscription": {
     "en": "Auto subscription",
-    "ja": "自動有償転換",
+    "ja": "自動有料転換",
     "ko": "자동 유료 전환",
     "zh": "Auto Subscription",
     "service_id": "_03286"
@@ -22646,7 +22646,7 @@
   },
   "project_subscription_status": {
     "en": "Project subscription status",
-    "ja": "プロジェクト有償状態",
+    "ja": "プロジェクト有料状態",
     "ko": "프로젝트 유료 상태",
     "zh": "Project Subscription Status",
     "service_id": "LNK03304"
@@ -23017,7 +23017,7 @@
   },
   "subscribe_please": {
     "en": "Please subscribe.",
-    "ja": "プロジェクトを有償転換してください。",
+    "ja": "プロジェクトを有料転換してください。",
     "ko": "프로젝트를 유료구독 해주세요.",
     "zh": "Please subscribe to the project.",
     "service_id": "_03357"
@@ -23038,14 +23038,14 @@
   },
   "question_subscribe_all": {
     "en": "Would you like to subscribe to all projects?",
-    "ja": "全てのプロジェクトを有償転換しますか？",
+    "ja": "全てのプロジェクトを有料転換しますか？",
     "ko": "모든 프로젝트를 유료로 전환하시겠습니까?",
     "zh": "Would you like to subscribe to all projects?",
     "service_id": "_03360"
   },
   "question_subscribe_each": {
     "en": "Would you like to subscribe to {projectName}",
-    "ja": "{projectName}を有償転換しますか？",
+    "ja": "{projectName}を有料転換しますか？",
     "ko": "{projectName}을(를) 유료 전환하시겠습니까?",
     "zh": "Would you like to subscribe to {projectName}",
     "service_id": "_03361"
@@ -23150,7 +23150,7 @@
   },
   "subscription_data_period": {
     "en": "Data retention period for subscription",
-    "ja": "有償データ保存期間",
+    "ja": "有料データ保存期間",
     "ko": "유료 데이터 유지 기간",
     "zh": "Data Retention Period for Subscription",
     "service_id": "_03377"
@@ -23241,7 +23241,7 @@
   },
   "subscribed_status": {
     "en": "Subscribed",
-    "ja": "有償転換",
+    "ja": "有料転換",
     "ko": "유료구독",
     "zh": "Subscribed",
     "service_id": "_03390"
@@ -23311,7 +23311,7 @@
   },
   "server_count_description": {
     "en": "If you subscribe to WhaTap service now,{br}you can use the monitoring service without limit on the number of servers.",
-    "ja": "今すぐWhaTapサービスを有償転換すると、サーバー数制限なしで{br}WhaTapモニタリングサービスが利用できます。",
+    "ja": "今すぐWhaTapサービスを有料転換すると、サーバー数制限なしで{br}WhaTapモニタリングサービスが利用できます。",
     "ko": "지금 바로 와탭 서비스를 구독하시면 서버 수 제한 없이{br}와탭 모니터링 서비스를 이용하실 수 있습니다.",
     "zh": "If you subscribe to Whatap service,{br}you can use Watap monitoring service without any number of servers.",
     "service_id": "_03400"
@@ -23367,14 +23367,14 @@
   },
   "server_count_payment_method_expired": {
     "en": "Your payment method has expired.{br}Please register your payment method first to convert to a paid account.",
-    "ja": "決済方法が満了しました。{br}有償転換のためにまず決済方法を登録してください。",
+    "ja": "決済方法が満了しました。{br}有料転換のためにまず決済方法を登録してください。",
     "ko": "결제수단이 만료되었습니다.{br}유료 전환을 위해 먼저 결제 수단을 등록해 주십시오.",
     "zh": "Your payment method has expired.{br}Please register your payment method first in order to convert your payment.",
     "service_id": "_03408"
   },
   "server_count_payment_method_null": {
     "en": "Your payment method is not registered.{br}Please register your payment method first to convert to a paid account.",
-    "ja": "決済方法が登録されていません。{br}有償転換のためにまず決済方法を登録してください。",
+    "ja": "決済方法が登録されていません。{br}有料転換のためにまず決済方法を登録してください。",
     "ko": "결제수단이 등록되어 있지 않습니다.{br}유료 전환을 위해 먼저 결제 수단을 등록해 주십시오.",
     "zh": "Your payment method is not registered.{br}Please register your payment method first in order to convert your payment.",
     "service_id": "_03409"
@@ -23402,7 +23402,7 @@
   },
   "datadashboard_limited_project_info": {
     "en": "* If you want to continue using the dashboard {br}\n You need to convert the limited project to a paid account or delete the widget containing the limited project.",
-    "ja": "* ダッシュボードを続けて利用するためには<br>制限プロジェクトを有償転換するか、制限プロジェクトが含まれたウィジェットを削除してください。",
+    "ja": "* ダッシュボードを続けて利用するためには<br>制限プロジェクトを有料転換するか、制限プロジェクトが含まれたウィジェットを削除してください。",
     "ko": "* 대시보드를 계속 이용하고자 한다면{br}\n제한된 프로젝트를 유료전환 하거나 제한된 프로젝트가 포함된 위젯을 삭제해야합니다.",
     "zh": "* If you want to use the dashboard {br}\nYou need to subscribe to limited projects or delete a widget that contains limited projects.",
     "service_id": "_03414"
@@ -23416,7 +23416,7 @@
   },
   "subscribed_status_message": {
     "en": "This project is subscribed.",
-    "ja": "このプロジェクトは有償版としてモニタリング中です。",
+    "ja": "このプロジェクトは有料版としてモニタリング中です。",
     "ko": "이 프로젝트는 구독 상태입니다.",
     "zh": "This project is subscribed.",
     "service_id": "_03416"
@@ -24109,21 +24109,21 @@
   },
   "send_subscription_email": {
     "en": "You are a user or admin of this project.{br}Subscription is possible through the project owner.{br}Would you like to email and request the project owner({super_admin}){br}to subscribe?",
-    "ja": "あなたは当該プロジェクトのユーザーか、管理者です。{br}プロジェクトの所有者権限で有償転換できます。{br}プロジェクトの所有者({super_admin})が有償転換を行うように{br}メールでリクエストしますか？",
+    "ja": "あなたは当該プロジェクトのユーザーか、管理者です。{br}プロジェクトの所有者権限で有料転換できます。{br}プロジェクトの所有者({super_admin})が有料転換を行うように{br}メールでリクエストしますか？",
     "ko": "고객님은 해당 프로젝트의 사용자 또는 관리자입니다.{br}프로젝트 소유자를 통해 유료 전환이 가능합니다.{br}프로젝트 소유자({super_admin})가{br}유료 전환하도록 메일로 요청하시겠습니까?",
     "zh": "You are a user or an admin of this project.{br}The project's owner can subscribe the project.{br}Would you like to ask the project's owner({super_admin}){br}to subscribe by mail?",
     "service_id": "_03515"
   },
   "send_subscription_email_success": {
     "en": "Subscription request email has been sent to the project owner.",
-    "ja": "有償転換リクエストメールをプロジェクト所有者へ送信しました。",
+    "ja": "有料転換リクエストメールをプロジェクト所有者へ送信しました。",
     "ko": "프로젝트 소유자에 유료 전환 요청 메일을 송부하였습니다.",
     "zh": "The mail to request to subscribe project was sent to the project's owner.",
     "service_id": "_03516"
   },
   "send_subscription_email_fail": {
     "en": "An error occurred while sending subscription request email.",
-    "ja": "有償転換リクエストメールの送信に失敗しました。",
+    "ja": "有料転換リクエストメールの送信に失敗しました。",
     "ko": "유료 전환 요청 메일 전송에 실패하였습니다.",
     "zh": "An error occurred while sending subscription request mail.",
     "service_id": "_03517"
@@ -24242,14 +24242,14 @@
   },
   "subscription_fail": {
     "en": "An error occurred while switching to subscription.",
-    "ja": "有償転換に失敗しました。",
+    "ja": "有料転換に失敗しました。",
     "ko": "유료 전환에 실패했습니다.",
     "zh": "An error occurred while switching to subscription",
     "service_id": "_03534"
   },
   "create_project_info": {
     "en": "If there is a project you have subscribed to, the project of the same type (product) created later will also be subscribed.",
-    "ja": "有償で使用中のプロジェクトがあった場合、後で生成される同一タイプ(商品)のプロジェクトも有償として登録されます。",
+    "ja": "有料で使用中のプロジェクトがあった場合、後で生成される同一タイプ(商品)のプロジェクトも有料として登録されます。",
     "ko": "유료로 사용 중 프로젝트가 있는 경우, 이후 생성하는 동일 유형(상품)의 프로젝트도 유료로 등록됩니다.",
     "zh": "If you have a project you're subscribing to, the same product type project you're creating will also be registered as a subscription.",
     "service_id": "_03535"
@@ -24333,7 +24333,7 @@
   },
   "account_withdrawal_info": {
     "en": "-When you withdraw, all information such as your project, promotional coupon information will be deleted.\n {br}\n -If you have an outstanding balance, it is impossible to withdraw it.\n {br}\n -If you are the super admin, you need to either transfer your role or delete the project\n {br}\n -Please note that withdrawn accounts cannot be reused or recovered.",
-    "ja": "- 脱退時、あなたのプロジェクト及びプロモーション情報などの全ての情報が削除されます。\n{br}\n- 有償プロジェクトに対する未払い額があった場合は脱退できません。\n{br}\n- あなたがの最上位管理者権限であった場合、最上位管理者としての権限を他のメンバーに譲るか、プロジェクトを削除してください。\n{br}\n- 脱退したアカウントは再利用と復旧ができなくなるので、慎重に進めてください。\n{br}",
+    "ja": "- 脱退時、あなたのプロジェクト及びプロモーション情報などの全ての情報が削除されます。\n{br}\n- 有料プロジェクトに対する未払い額があった場合は脱退できません。\n{br}\n- あなたがの最上位管理者権限であった場合、最上位管理者としての権限を他のメンバーに譲るか、プロジェクトを削除してください。\n{br}\n- 脱退したアカウントは再利用と復旧ができなくなるので、慎重に進めてください。\n{br}",
     "ko": "- 탈퇴 시, 고객님이 보유하신 프로젝트, 프로모션 쿠폰 정보 등 모든 정보가 삭제됩니다.\n{br}\n- 유료로 사용한 프로젝트의 미납금이 있는 경우 탈퇴는 불가능합니다.\n{br}\n- 최고관리자인 경우, 최고관리자 권한을 이양하거나 프로젝트를 삭제해야합니다\n{br}\n- 탈퇴한 계정은 재사용 및 복구가 불가하오니 신중하게 선택하시기 바랍니다. ",
     "zh": "-When you withdraw, all information such as your project, promotional coupon information will be deleted.\n{br}\n-If you have an outstanding balance, it is impossible to withdraw it.\n{br}\n-If you are the super admin, you need to either transfer your role or delete the project\n{br}\n-Please note that withdrawn accounts cannot be reused or recovered.",
     "service_id": "DSC03547"
@@ -25222,7 +25222,7 @@
   },
   "request_subscription_email": {
     "en": "Request to subscribe",
-    "ja": "有償転換をリクエストする",
+    "ja": "有料転換をリクエストする",
     "ko": "유료전환 요청하기",
     "zh": "Request to Subscribe",
     "service_id": "_03674"
@@ -28351,7 +28351,7 @@
   },
   "no_subscribable_projects": {
     "en": "There are no subscribable projects.",
-    "ja": "有償転換可能なプロジェクトがありません。",
+    "ja": "有料転換可能なプロジェクトがありません。",
     "ko": "유료전환 가능한 프로젝트가 없습니다.",
     "zh": "There are no subscribing projects.",
     "service_id": "_04125"
@@ -30017,7 +30017,7 @@
   },
   "too_many_projects_created": {
     "en": "Too many projects are created. You need to subscribe first.",
-    "ja": "無料版として生成できるプロジェクトの数を超えました。先に、有償版への転換を行ってください。",
+    "ja": "無料版として生成できるプロジェクトの数を超えました。先に、有料版への転換を行ってください。",
     "ko": "너무 많은 프로젝트가 생성되었습니다. 먼저 유료 전환을 해 주세요.",
     "zh": "Too many projects are created. You need to subscribe first.",
     "service_id": "_04364"
@@ -30262,7 +30262,7 @@
   },
   "weeklySubscribedProject": {
     "en": "Weekly subscribed project",
-    "ja": "週間有償転換プロジェクト",
+    "ja": "週間有料転換プロジェクト",
     "ko": "주간 유료 전환 프로젝트",
     "zh": "Weekly Subscribed Project",
     "service_id": "_04399"
@@ -30311,14 +30311,14 @@
   },
   "subscribed_platform": {
     "en": "Subscribed platform",
-    "ja": "サービス別有償状況",
+    "ja": "サービス別有料状況",
     "ko": "제품별 유료현황",
     "zh": "Subscribed Platform",
     "service_id": "_04406"
   },
   "subscribed_project": {
     "en": "Subscribed project",
-    "ja": "週間有償転換プロジェクト",
+    "ja": "週間有料転換プロジェクト",
     "ko": "주간 유료 구독 프로젝트",
     "zh": "Subscribed Project",
     "service_id": "_04407"
@@ -30388,14 +30388,14 @@
   },
   "accumulated_subscribed_customer": {
     "en": "Accumulated subscribed customer",
-    "ja": "累積有償ユーザー",
+    "ja": "累積有料ユーザー",
     "ko": "누적 유료 고객",
     "zh": "Accumulated Subscribed Customer",
     "service_id": "_04417"
   },
   "new_subscribed_customer": {
     "en": "New subscribed customer",
-    "ja": "新規有償ユーザー",
+    "ja": "新規有料ユーザー",
     "ko": "신규 유료 고객",
     "zh": "New Subscribed Customer",
     "service_id": "_04418"
@@ -30752,7 +30752,7 @@
   },
   "chart_limited_project_info": {
     "en": "You cannot see the data of limited project.<br/>\n If you want to see the data, please <span style=\"text-decoration:underline;\">subscribe the project</span>.",
-    "ja": "制限状態のプロジェクトではデータが参照できません。<br/>\nデータを参照するには、プロジェクトを<span style=\"text-decoration:underline;\">有償転換</span>してください。",
+    "ja": "制限状態のプロジェクトではデータが参照できません。<br/>\nデータを参照するには、プロジェクトを<span style=\"text-decoration:underline;\">有料転換</span>してください。",
     "ko": "제한된 프로젝트는 데이터를 볼 수 없습니다.<br/>데이터를 보고자 한다면 <span style=\"text-decoration:underline;\">프로젝트를 유료전환</span> 해주시기 바랍니다. ",
     "zh": "You cannot see the data of limited project.<br/>\nIf you want to see the data, please <span style=\"text-decoration:underline;\">subscribe the project</span>.",
     "service_id": "_04469"
@@ -32257,7 +32257,7 @@
   },
   "lm_limited_message": {
     "en": "If you want to use the feature, please subscribe to the application project.",
-    "ja": "機能を続けて使用するには、有償転換してください。",
+    "ja": "機能を続けて使用するには、有料転換してください。",
     "ko": "기능을 계속 사용하려면 유료 전환해 주세요.",
     "zh": "If you want to use the feature, please subscribe to the application project.",
     "service_id": "_04687"
@@ -32327,7 +32327,7 @@
   },
   "lm_modal_on_message_subscribe": {
     "en": "A 15-day free trial is available.{br}After that, it will automatically be converted to a paid subscription.",
-    "ja": "15日間無料体験できます。{br}以降、自動的に有償転換されます。",
+    "ja": "15日間無料体験できます。{br}以降、自動的に有料転換されます。",
     "ko": "15일간 무료 체험이 가능합니다.{br}이후 자동으로 유료 전환됩니다.",
     "zh": "A 15-day free trial is available.{br}After that, you will automatically become a paid subscription.",
     "service_id": "_04697"
@@ -32390,7 +32390,7 @@
   },
   "lm_subscription_modal_limited_title": {
     "en": "Switch to a paid subscription to continue using log monitoring.",
-    "ja": "ログモニタリング機能を続けて使用するには、有償転換してください。",
+    "ja": "ログモニタリング機能を続けて使用するには、有料転換してください。",
     "ko": "로그 모니터링을 계속 이용하려면 유료 전환해 주세요.",
     "zh": "Switch to a paid subscription to continue using log monitoring.",
     "service_id": "_04706"
@@ -32411,14 +32411,14 @@
   },
   "lm_subscription_modal_limited_footer": {
     "en": "You can check the log monitoring fee on your monthly bill.",
-    "ja": "ログモニタリング機能の有償利用金額は毎月の請求書で確認できます。",
+    "ja": "ログモニタリング機能の有料利用金額は毎月の請求書で確認できます。",
     "ko": "로그 모니터링 유료 이용 금액은 매월 청구서에서 확인 가능합니다.",
     "zh": "You can check the log monitoring fee on your monthly bill.",
     "service_id": "_04709"
   },
   "lm_subscription_modal_trial_footer": {
     "en": "If you do not subscribe after the free trial expires,{br}you will have limited functionality.",
-    "ja": "無料体験終了後に有償転換しないと、機能の利用が制限されます。",
+    "ja": "無料体験終了後に有料転換しないと、機能の利用が制限されます。",
     "ko": "무료 체험 만료 후 유료 전환하지 않으면 기능이 제한됩니다.",
     "zh": "If you do not subscribe after the free trial expires,{br}you will have limited functionality.",
     "service_id": "_04710"
@@ -39453,7 +39453,7 @@
   },
   "cancel_subscription": {
     "en": "Cancel subscription",
-    "ja": "サブスクリプションのキャンセル",
+    "ja": "有料の解除",
     "ko": "유료 취소",
     "zh": "Cancel Subscription",
     "service_id": "_05717"
@@ -41525,7 +41525,7 @@
   },
   "CNT06012": {
     "en": "Paid subscription",
-    "ja": "サブスクリプション",
+    "ja": "有料",
     "ko": "유료",
     "zh": "Paid Subscription",
     "service_id": "CNT06012"
@@ -45655,7 +45655,7 @@
   },
   "DSC06622": {
     "en": "WhatsApp notification feature is limited to paid server.",
-    "ja": "WhatsApp通知機能は有償転換から利用できます。",
+    "ja": "WhatsApp通知機能は有料転換から利用できます。",
     "ko": "WhatsApp 알림 기능은 유료 서버에 한정됩니다.",
     "zh": "WhatsApp通知功能只能用于收费服务器上。",
     "service_id": "DSC06622"
@@ -50562,7 +50562,7 @@
   },
   "NTC07340": {
     "en": "You don't have a log license.",
-    "ja": "あなたはログライセンスを持っていない。",
+    "ja": "ログモニタリングのためのライセンスがありません。",
     "ko": "로그 라이선스가 없습니다.",
     "zh": "You don't have a log license.",
     "service_id": "NTC07340"
@@ -52228,16 +52228,16 @@
   },
   "TLT07580": {
     "en": "You will receive a notification when an event occurs N times in a row.</br>If you disable that feature, you will receive a notification every time an event occurs.",
-    "ja": "イベントが連続してN回発生したときに通知を受信します。</br>この機能を無効にすると、イベントが発生するたびに通知を受信します。",
+    "ja": "イベントが連続してN回発生した際に通知を受信します。</br>この機能を無効にすると、イベントが発生するたびに通知が受信されます。",
     "ko": "이벤트가 연속으로 N회 발생할 때 알림을 수신합니다.</br>해당 기능을 사용하지 않으면 이벤트가 발생할 때마다 알림을 수신합니다.",
     "zh": "You will receive a notification when an event occurs N times in a row.</br>If you disable that feature, you will receive a notification every time an event occurs.",
     "service_id": "TLT07580"
   },
   "NTC07581": {
-    "en": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Master Agent 1.5.2 or higher</strong>, you can view and compare past information on a daily basis.",
-    "ja": "「マスターメタ情報」機能が<strong>「Object Manifest」</strong>機能に変更されました。 WhaTap Kubernetes Monitoring<strong>マスターエージェント1.5.2以降</strong>を使用すると、過去の過去の情報の検索と相互比較が可能になります。",
-    "ko": "\"마스터 메타 정보\" 기능이 <strong>\"오브젝트 매니페스트\"</strong> 기능으로 변경되었습니다. 와탭 쿠버네티스 <strong>마스터 에이전트 1.5.2 이상</strong>을 사용하면 일단위 과거 정보 조회 및 상호 비교가 가능합니다.",
-    "zh": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Master Agent 1.5.2 or higher</strong>, you can view and compare past information on a daily basis.",
+    "en": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Master Agent {version} or higher</strong>, you can view and compare past information on a daily basis.",
+    "ja": "「マスターメタ情報」機能が<strong>「Object Manifest」</strong>機能に変更されました。 WhaTap Kubernetes Monitoring<strong>マスターエージェント{version}以降</strong>を使用すると、過去の過去の情報の検索と相互比較が可能になります。",
+    "ko": "\"마스터 메타 정보\" 기능이 <strong>\"오브젝트 매니페스트\"</strong> 기능으로 변경되었습니다. 와탭 쿠버네티스 <strong>마스터 에이전트 {version} 이상</strong>을 사용하면 일단위 과거 정보 조회 및 상호 비교가 가능합니다.",
+    "zh": "The \"Master-Meta Information\" feature has been changed to the <strong>\"Object Manifest\"</strong> feature. By using WhaTap Kubernetes <strong>Master Agent {version} or higher</strong>, you can view and compare past information on a daily basis.",
     "service_id": "NTC07581"
   },
   "DSC07582": {
@@ -52304,10 +52304,10 @@
     "service_id": "TTL07590"
   },
   "NTC07591": {
-    "en": "To utilize the <b>Object Topology</b> in a namespace project, you must use Master Agent version <b>1.5.2 or higher</b>. Please update.",
-    "ja": "Namespaceプロジェクトで<b>Object Topology</b>を使用するには、マスターエージェントのバージョンが<b> 1.5.2以降</b>を使用する必要があります。 更新お願いします。",
-    "ko": "네임스페이스 프로젝트에서 <b>오브젝트 토폴로지</b>를 사용하려면 마스터 에이전트 버전이 <b>1.5.2 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
-    "zh": "To utilize the <b>Object Topology</b> in a namespace project, you must use Master Agent version <b>1.5.2 or higher</b>. Please update.",
+    "en": "To utilize the <b>Object Topology</b> in a namespace project, you must use Master Agent version <b>{version} or higher</b>. Please update.",
+    "ja": "Namespaceプロジェクトで<b>Object Topology</b>を使用するには、マスターエージェントのバージョンが<b> {version}以降</b>を使用する必要があります。 更新お願いします。",
+    "ko": "네임스페이스 프로젝트에서 <b>오브젝트 토폴로지</b>를 사용하려면 마스터 에이전트 버전이 <b>{version} 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
+    "zh": "To utilize the <b>Object Topology</b> in a namespace project, you must use Master Agent version <b>{version} or higher</b>. Please update.",
     "service_id": "NTC07591"
   },
   "BTN07592": {
@@ -52388,10 +52388,10 @@
     "service_id": "TTL07602"
   },
   "NTC07603": {
-    "en": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please update.",
-    "ja": "Namespaceプロジェクトで<b>Object Manifest</b>機能を使用するには、<b>マスターエージェント1.5.2以降</b>を使用する必要があります。 アップデートを行ってください。",
-    "ko": "네임스페이스 프로젝트에서 <b>오브젝트 매니페스트</b> 기능을 사용하려면 <b>마스터 에이전트 1.5.2 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
-    "zh": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent 1.5.2 or higher.\" Please proceed with the update.",
+    "en": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent {version} or higher.\" Please update.",
+    "ja": "Namespaceプロジェクトで<b>Object Manifest</b>機能を使用するには、<b>マスターエージェント{version}以降</b>を使用する必要があります。 アップデートを行ってください。",
+    "ko": "네임스페이스 프로젝트에서 <b>오브젝트 매니페스트</b> 기능을 사용하려면 <b>마스터 에이전트 {version} 이상</b>을 사용해야 합니다. 업데이트 부탁드립니다.",
+    "zh": "To utilize the <b>Object Manifest</b> feature in a namespace project, it is necessary to use \"Master Agent {version} or higher.\" Please proceed with the update.",
     "service_id": "NTC07603"
   },
   "DSC07604": {
@@ -52459,14 +52459,14 @@
   },
   "CNT07613": {
     "en": "Not specified",
-    "ja": "指定されていない",
+    "ja": "指定されていません。",
     "ko": "명시되지 않음",
     "zh": "not specified",
     "service_id": "CNT07613"
   },
   "DSC07614": {
     "en": "*Only the TOP 30 is displayed.",
-    "ja": "*TOP 30リストのみ表示されます。",
+    "ja": "*TOP 30リストのみ表示します。",
     "ko": "*TOP 30 리스트만 표시됩니다.",
     "zh": "*Only the TOP 30 list is displayed.",
     "service_id": "DSC07614"
@@ -52487,7 +52487,7 @@
   },
   "DSC07617": {
     "en": "Events are available after an access key is issued.",
-    "ja": "アクセスキーの発行後にイベントを使用できます。",
+    "ja": "アクセスキーを発行してから、イベントが使用できます。",
     "ko": "액세스 키 발급 후 이벤트를 사용할 수 있습니다.",
     "zh": "Events are available after an access key is issued.",
     "service_id": "DSC07617"
@@ -52501,14 +52501,14 @@
   },
   "DSC07619": {
     "en": "Selecting the below button will automatically create an event list optimized for the new feature.",
-    "ja": "次のボタンを選択すると、新機能に最適化されたイベントのリストが自動的に生成されます。",
+    "ja": "次のボタンを選択すると、新しい機能に最適化したイベントリストが自動的に生成されます。",
     "ko": "다음 버튼을 선택하면 새로운 기능에 최적화된 이벤트 목록이 자동으로 생성됩니다.",
     "zh": "Selecting the below button will automatically create an event list optimized for the new feature.",
     "service_id": "DSC07619"
   },
   "BTN07620": {
     "en": "Create an Event\n",
-    "ja": "イベントを生成する",
+    "ja": "イベント生成",
     "ko": "이벤트 생성하기",
     "zh": "Create an event\n",
     "service_id": "BTN07620"
@@ -52543,35 +52543,35 @@
   },
   "TTL07625": {
     "en": "Information on project limitations and subscription.",
-    "ja": "プロジェクト制限と有料コンバージョンガイド",
+    "ja": "プロジェクト制限と有料転換のご案内",
     "ko": "프로젝트 제한과 유료 전환 안내",
     "zh": "Project limitations and paid conversion information",
     "service_id": "TTL07625"
   },
   "CNT07626": {
     "en": "{createable} when used in Free or Trial status.{br}Please subscribe to create additional projects.",
-    "ja": "Free、Trial状態で使用する場合は{createable}します。{br}追加プロジェクトを作成するには、そのプロジェクトを有料に切り替える必要があります。",
+    "ja": "Free、Trial状態で使用する場合は{createable}します。{br}追加プロジェクトを作成するには、そのプロジェクトを有料転換する必要があります。",
     "ko": "Free, Trial 상태로 사용시 {createable}합니다.{br}추가 프로젝트를 생성하려면 해당 프로젝트를 유료로 전환해야 합니다.",
     "zh": "{createable} when used in Free or Trial status.{br}To create additional projects, you must convert the project to a paid version.",
     "service_id": "CNT07626"
   },
   "CNT07627": {
     "en": "Up to 10 projects can be created",
-    "ja": "最大10個のプロジェクトまで作成可能",
+    "ja": "最大10件のプロジェクトまで生成できます。",
     "ko": "최대 10개의 프로젝트까지 생성 가능",
     "zh": "Up to 10 projects can be created",
     "service_id": "CNT07627"
   },
   "CNT07628": {
     "en": "Register your payment information and subscribe{br} to use all the features provided by WhaTap.",
-    "ja": "お支払い情報を登録してから有料に切り替えて、{br}とタブで提供されているすべての機能をご利用ください。",
+    "ja": "お支払い情報を登録してから有料へ転換し、{br}WhaTap Monitoringから提供されるすべての機能をご利用ください。",
     "ko": "결제 정보를 등록한 다음 유료 전환하여{br}와탭에서 제공하는 모든 기능을 이용해 보세요.",
     "zh": "Register your payment information and then switch to a paid service{br}to use all the features provided by WhaTap.",
     "service_id": "CNT07628"
   },
   "LNK07629": {
     "en": "Subscription instructions",
-    "ja": "有料コンバージョンガイドを見る",
+    "ja": "有料転換へのガイド",
     "ko": "유료 전환 안내 보기",
     "zh": "View paid conversion instructions",
     "service_id": "LNK07629"
@@ -52585,72 +52585,72 @@
   },
   "TTL07631": {
     "en": "Limit URL project creation",
-    "ja": "URLプロジェクト作成の制限",
+    "ja": "URLプロジェクトの生成制限",
     "ko": "URL 프로젝트 생성 제한",
     "zh": "Limit URL project creation",
     "service_id": "TTL07631"
   },
   "CNT07632": {
     "en": "Up to 10 URL projects can be created.",
-    "ja": "URLプロジェクトは最大10個まで作成できます。",
+    "ja": "URLプロジェクトは最大10件まで生成できます。",
     "ko": "URL 프로젝트는 최대 10개까지 생성할 수 있습니다.",
     "zh": "Up to 10 URL projects can be created.",
     "service_id": "CNT07632"
   },
   "CNT07633": {
     "en": "You can register unlimited number of {br}URLs in a single URL project for free.",
-    "ja": "1つのURLプロジェクトで登録できる{br}URLは無制限無料です。",
+    "ja": "1つのURLプロジェクトで登録できる{br}URL数には制限がありません。",
     "ko": "한 개의 URL 프로젝트에서 등록 할 수 있는{br}URL은 무제한 무료입니다.",
     "zh": "The number of{br}URLs that can be registered in one URL project is free and unlimited.",
     "service_id": "CNT07633"
   },
   "ITM07634": {
     "en": "Read only",
-    "ja": "読み取り専用 すべて",
+    "ja": "全てを読み取り専用にする",
     "ko": "읽기 전용 전체",
     "zh": "Read Only All",
     "service_id": "ITM07634"
   },
   "TLT07635": {
     "en": "Supported in agent version {version} or later.",
-    "ja": "エージェントバージョン{version}以上でサポートされます。",
+    "ja": "エージェントバージョン{version}以降から対応します。",
     "ko": "에이전트 버전 {version} 이상에서 지원됩니다.",
     "zh": "Supported in agent version {version} or later.",
     "service_id": "TLT07635"
   },
   "DSC07636": {
     "en": "Shows top {number}cases sorted by runtime.",
-    "ja": "runtime でソートされた親 {number}ガンを示します。",
+    "ja": "ランタイムとしてソートされた上位 {number}件を示します。",
     "ko": "runtime으로 정렬한 상위 {number}건을 보여줍니다.",
     "zh": "Shows top {number}cases sorted by runtime.",
     "service_id": "DSC07636"
   },
   "TTL07637": {
     "en": "Announcing changes to {platform} monitoring",
-    "ja": "{platform}モニタリングの変更案内",
+    "ja": "{platform}モニタリングの変更のご案内",
     "ko": "{platform} 모니터링 변경사항 안내",
     "zh": "Notice on changes to {platform} monitoring",
     "service_id": "TTL07637"
   },
   "TTL07638": {
     "en": "Complex object information in a cluster at a glance",
-    "ja": "クラスターの複雑なObject情報を一目で",
+    "ja": "クラスターの複雑なObject情報をひと目で",
     "ko": "클러스터의 복잡한 오브젝트 정보를 한눈에",
     "zh": "Complex object information in a cluster at a glance",
     "service_id": "TTL07638"
   },
   "DSC07639": {
     "en": "A greatly improved UI allows you to conveniently check complex object manifest information. Additionally, the <b>addition of past search and comparison functions for each object</b> allows you to easily track changes within a cluster.",
-    "ja": "大幅に改善されたUIにより、複雑な\bObject Manifest情報を便利に確認できるようになりました。 また、<b>Object別の過去のルックアップと比較機能の追加</b>を使用すると、クラスタ内の変動を簡単に追跡できます。",
+    "ja": "大幅に改善されたUIにより、複雑なObject Manifest情報を便利に確認できるようになりました。 また、<b>Object別の過去の照会と比較機能が追加され、</b>クラスタ内の変更内容が簡単に追跡できます。",
     "ko": "대폭 개선된 UI를 통해 복잡한 오브젝트 매니페스트 정보를 편리하게 확인할 수 있게 되었습니다. 또한 <b>오브젝트별 과거 조회 및 비교 기능의 추가</b>로 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.",
     "zh": "A greatly improved UI allows you to conveniently check complex object manifest information. Additionally, the <b>addition of past search and comparison functions for each object</b> allows you to easily track changes within a cluster.",
     "service_id": "DSC07639"
   },
   "DSC07640": {
-    "en": "To use this feature, you must update to Kubernetes Master Agent version 1.5.2 or higher.",
-    "ja": "この機能は、KubernetesのMaster Agent 1.5.2バージョン以上にアップデートする必要があります。",
-    "ko": "이 기능은 쿠버네티스의 마스터 에이전트 1.5.2 버전 이상으로 업데이트해야 이용할 수 있습니다.",
-    "zh": "To use this feature, you must update to Kubernetes Master Agent version 1.5.2 or higher.",
+    "en": "To use this feature, you must update to Kubernetes Master Agent version {version} or higher.",
+    "ja": "この機能のためには、KubernetesのMaster Agent {version}バージョン以降へアップデートする必要があります。",
+    "ko": "이 기능은 쿠버네티스의 마스터 에이전트 {version} 버전 이상으로 업데이트해야 이용할 수 있습니다.",
+    "zh": "To use this feature, you must update to Kubernetes Master Agent version {version} or higher.",
     "service_id": "DSC07640"
   },
   "DSC07641": {
@@ -52669,7 +52669,7 @@
   },
   "TTL07643": {
     "en": "XOS2 indicator replacement",
-    "ja": "XOS2インジケーターの置き換え",
+    "ja": "XOS2指標の置き換え",
     "ko": "XOS2 지표 대체",
     "zh": "XOS2 indicator replacement",
     "service_id": "TTL07643"
@@ -52683,7 +52683,7 @@
   },
   "DSC07645": {
     "en": "Because the units change, you may need to change the units set in existing dashboards and alarms.<br/>\nPlease update to the latest agent and request maintenance from WhaTap technical support.",
-    "ja": "ユニットが変更されるため、既存のダッシュボードとアラームに設定されているユニットを変更する必要があります。<br/>\n最新のエージェントにアップデートした後、Watabテクニカルサポートチームに確認を依頼してください。",
+    "ja": "単位が変更されるため、既存のダッシュボードとアラートに設定されている単位を変更する必要があります。<br/>\n最新のエージェントへアップデートしてから、テクニカルサポートへ確認のお問い合わせください。",
     "ko": "단위가 변경되기 때문에 기존 대시보드와 알람에 설정된 단위를 변경해야 할 수 있습니다.<br/>\n최신 에이전트로 업데이트 후 와탭 기술 지원팀에 점검을 요청하세요.",
     "zh": "Because the units change, you may need to change the units set in existing dashboards and alarms.<br/>\nPlease update to the latest agent and request maintenance from WhaTap technical support.",
     "service_id": "DSC07645"
@@ -52697,7 +52697,7 @@
   },
   "BTN07647": {
     "en": "Check the changing indicators",
-    "ja": "変更される指標を確認する",
+    "ja": "変更される指標の確認",
     "ko": "변경되는 지표 확인하기",
     "zh": "Check the changing indicators",
     "service_id": "BTN07647"
@@ -52722,6 +52722,293 @@
     "ko": "에이전트 버전 경고",
     "zh": "Agent version warning",
     "service_id": "NTC07650"
+  },
+  "NTC07651": {
+    "en": "The selected account has payment permissions for the organization or group it currently belongs to.{br}To exclude selected accounts from an organization or group, you must first transfer payment permissions to another member.",
+    "ja": "選択したアカウントには、現在所属している組織またはグループの支払い権限があります。{br}組織またはグループから選択したアカウントを除外するには、まず支払い権限を他のメンバーに譲渡する必要があります。",
+    "ko": "선택한 계정은 현재 소속된 조직 또는 그룹의 결제 권한을 가지고 있습니다.{br}조직 또는 그룹에서 선택한 계정을 제외하려면, 우선 결제 권한을 다른 멤버에게 양도해야 합니다.",
+    "zh": "The selected account has payment permissions for the organization or group it currently belongs to.{br}To exclude selected accounts from an organization or group, you must first transfer payment permissions to another member.",
+    "service_id": "NTC07651"
+  },
+  "NTC07652": {
+    "en": "The selected account is the only one in the organization or group it currently belongs to that has member management permissions.{br}To exclude the selected account from the organization or group, you must additionally set member management permissions to other members.",
+    "ja": "選択したアカウントには、現在所属している組織またはグループで唯一のメンバー管理権限があります。{br}組織またはグループで選択したアカウントを除外するには、メンバー管理権限を他のメンバーに追加設定する必要があります。",
+    "ko": "선택한 계정은 현재 소속된 조직 또는 그룹에서 유일하게 멤버 관리 권한을 가지고 있습니다.{br}조직 또는 그룹에서 선택한 계정을 제외하려면, 멤버 관리 권한을 다른 멤버에게 추가 설정해야 합니다",
+    "zh": "The selected account is the only one in the organization or group it currently belongs to that has member management permissions.{br}To exclude the selected account from the organization or group, you must additionally set member management permissions to other members.",
+    "service_id": "NTC07652"
+  },
+  "NTC07653": {
+    "en": "Enabled",
+    "ja": "有効になりました。",
+    "ko": "활성화 되었습니다.",
+    "zh": "Enabled",
+    "service_id": "NTC07653"
+  },
+  "NTC07654": {
+    "en": "Disabled",
+    "ja": "無効になりました。",
+    "ko": "비활성화 되었습니다.",
+    "zh": "Disabled",
+    "service_id": "NTC07654"
+  },
+  "NTC07655": {
+    "en": "Invalid request",
+    "ja": "無効なリクエスト方式です。",
+    "ko": "잘못된 요청 방식입니다.",
+    "zh": "Invalid request",
+    "service_id": "NTC07655"
+  },
+  "NTC07656": {
+    "en": "A server error has occurred. Please try again later.",
+    "ja": "サーバーエラーが発生しました。しばらくしてからもう一度お試しください。",
+    "ko": "서버 오류가 발생하였습니다. 잠시 후에 다시 시도해주세요.",
+    "zh": "A server error has occurred. Please try again later.",
+    "service_id": "NTC07656"
+  },
+  "NTC07657": {
+    "en": "Event creation was successful.\n",
+    "ja": "イベント生成に成功しました。",
+    "ko": "이벤트 생성에 성공하였습니다.",
+    "zh": "Event creation was successful.\n",
+    "service_id": "NTC07657"
+  },
+  "NTC07658": {
+    "en": "Save was successful.",
+    "ja": "保存に成功しました。",
+    "ko": "저장에 성공하였습니다.",
+    "zh": "Save was successful.",
+    "service_id": "NTC07658"
+  },
+  "ITM07659": {
+    "en": "Indicator name",
+    "ja": "指標名",
+    "ko": "지표 이름",
+    "zh": "Indicator name",
+    "service_id": "ITM07659"
+  },
+  "TTL07660": {
+    "en": "Template",
+    "ja": "テンプレート",
+    "ko": "템플릿",
+    "zh": "Template",
+    "service_id": "TTL07660"
+  },
+  "TTL07661": {
+    "en": "V2 released",
+    "ja": "V2リリース",
+    "ko": "V2 출시",
+    "zh": "V2 released",
+    "service_id": "TTL07661"
+  },
+  "DSC07662": {
+    "en": "Some data cannot be viewed unless you update the agent.",
+    "ja": "エージェントを更新しないと、一部のデータを検索できません。",
+    "ko": "에이전트를 업데이트하지 않으면 일부 데이터를 조회할 수 없습니다.",
+    "zh": "Some data cannot be viewed unless you update the agent.",
+    "service_id": "DSC07662"
+  },
+  "DSC07663": {
+    "en": "(Updates are available from {date})",
+    "ja": "（アップデートは{date}から可能です。）",
+    "ko": "(업데이트는 {date}부터 가능)",
+    "zh": "(Updates are available from {date})",
+    "service_id": "DSC07663"
+  },
+  "DSC07664": {
+    "en": "(Agent v{version} and earlier)",
+    "ja": "（エージェントv{version}以下）",
+    "ko": "(에이전트 v{version} 이하)",
+    "zh": "(Agent v{version} and earlier)",
+    "service_id": "DSC07664"
+  },
+  "DSC07665": {
+    "en": "Starting from {date}, it will be converted to<br/>{platform} V2 version with enhanced chart and collection functions.",
+    "ja": "{date}からチャートと収集機能を強化した<br/>{platform} V2バージョンへ切り替えます。",
+    "ko": "{date}부터 차트 및 수집 기능을 강화한<br/>{platform} V2 버전으로 전환됩니다.",
+    "zh": "Starting from {date}, it will be converted to<br/>{platform} V2 version with enhanced chart and collection functions.",
+    "service_id": "DSC07665"
+  },
+  "TTL07666": {
+    "en": "Container state",
+    "ja": "コンテナの状態",
+    "ko": "컨테이너 상태",
+    "zh": "Container state",
+    "service_id": "TTL07666"
+  },
+  "DSC07667": {
+    "en": "(Agent v{version} or higher update required)",
+    "ja": "（エージェントv {バージョン}以降の更新が必須）",
+    "ko": "(에이전트 v{version} 이상 업데이트 필수)",
+    "zh": "(Agent v{version} or higher update required)",
+    "service_id": "DSC07667"
+  },
+  "DSC07668": {
+    "en": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v{version}.",
+    "ja": "xos、xos2 に分かれていた CPU 指標をエージェント v{version} からは 1 つに統合します。",
+    "ko": "xos, xos2로 나누어져 있던 CPU 지표를 에이전트 v{version}부터는 하나로 통합합니다.",
+    "zh": "CPU indicators, which were divided into xos and xos2, are integrated into one starting from agent v{version}.",
+    "service_id": "DSC07668"
+  },
+  "TTL07669": {
+    "en": "Complete the event setup quickly and easily with event templates.",
+    "ja": "イベントテンプレートで簡単かつ迅速にイベント設定を完了してください。",
+    "ko": "이벤트 템플릿으로 쉽고 빠르게 이벤트 설정을 완료하세요.",
+    "zh": "Complete the event setup quickly and easily with event templates.",
+    "service_id": "TTL07669"
+  },
+  "CNT07670": {
+    "en": "Hello. To respond to customer inconveniences for event configuration, a new <br/><b style=\"color:{primaryColor}\">Event configuration</b> menu has been released.",
+    "ja": "これまでのイベント設定に対するお客様からの声を反映し<br/><b style=\"color:{primaryColor}\">新しいイベント設定メニューをリリース</b>しました。",
+    "ko": "안녕하세요. 그동안의 이벤트 설정에 대한 고객분들의 불편 사항을 수용하여<br/><b style=\"color:{primaryColor}\">새로운 이벤트 설정 메뉴를 출시</b>했습니다.",
+    "zh": "Hello. To respond to customer inconveniences for event configuration, a new <br/><b style=\"color:{primaryColor}\">Event configuration</b> menu has been released.",
+    "service_id": "CNT07670"
+  },
+  "CNT07671": {
+    "en": "You can register and modify event settings for each template.",
+    "ja": "テンプレートに基づいてイベント設定を登録・変更できます。",
+    "ko": "템플릿 기반으로 이벤트 설정을 등록하고 수정할 수 있습니다.",
+    "zh": "You can register and modify event settings for each template.",
+    "service_id": "CNT07671"
+  },
+  "CNT07672": {
+    "en": "The list of events has been enhanced in a table format to increase the readability.",
+    "ja": "設定されたイベント一覧をテーブル形式に改善し、可読性を向上させました。",
+    "ko": "설정된 이벤트 목록을 테이블 형식으로 개선하여 가독성을 향상시켰습니다.",
+    "zh": "The list of events has been enhanced in a table format to increase the readability.",
+    "service_id": "CNT07672"
+  },
+  "CNT07673": {
+    "en": "The functionality has been expanded to provide more information through event simulation.",
+    "ja": "イベント シミュレーションを通じて、より多くの情報を確認できるように機能を拡張しました。",
+    "ko": "이벤트 시뮬레이션을 통해 더 많은 정보를 확인할 수 있도록 기능을 확장했습니다.",
+    "zh": "The functionality has been expanded to provide more information through event simulation.",
+    "service_id": "CNT07673"
+  },
+  "CNT07674": {
+    "en": "The newly released Beta version can be accessed through the sitemap.",
+    "ja": "新しくリリースしたベータ版は、サイトマップを通じてアクセスできます。",
+    "ko": "새롭게 릴리스한 베타 버전은 사이트맵을 통해서 진입할 수 있습니다.",
+    "zh": "The newly released Beta version can be accessed through the sitemap.",
+    "service_id": "CNT07674"
+  },
+  "CNT07675": {
+    "en": "You can see the reorganized event configuration menu through <b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized event configuration menu.",
+    "ja": "<b style=\"color:{primaryColor}\">“新規バージョンで見る”ボタン</b>を通じて、改編されたイベント設定メニューを確認することができます。<br/>改編されたイベント設定メニューの利用に関する詳細は、技術文書で確認してください。",
+    "ko": "<b style=\"color:{primaryColor}\">“신규 버전으로 보기” 버튼</b>을 통해 개편된 이벤트 설정 메뉴를 확인하실 수 있습니다.<br/>개편된 이벤트 설정 메뉴의 이용과 관련된 자세한 사항은 기술문서를 통해 확인해주세요.",
+    "zh": "You can see the reorganized event configuration menu through <b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized event configuration menu.",
+    "service_id": "CNT07675"
+  },
+  "CNT07676": {
+    "en": "The above image is an example. The provided event template may differ depending on the monitoring product.",
+    "ja": "上記の画像は例示画像で、モニタリングサービスによって提供するイベントテンプレートは異なる場合があります。",
+    "ko": "위 이미지는 예시 이미지로, 모니터링 상품에 따라 제공하는 이벤트 템플릿은 다를 수 있습니다.",
+    "zh": "The above image is an example. The provided event template may differ depending on the monitoring product.",
+    "service_id": "CNT07676"
+  },
+  "BTN07677": {
+    "en": "View new version",
+    "ja": "新規バージョンで見る",
+    "ko": "신규 버전으로 보기",
+    "zh": "View new version",
+    "service_id": "BTN07677"
+  },
+  "BTN07678": {
+    "en": "Don't see again for today",
+    "ja": "今日は表示しない",
+    "ko": "하루동안 다시 보지 않기",
+    "zh": "Don't see again for today",
+    "service_id": "BTN07678"
+  },
+  "BTN07679": {
+    "en": "Don't see again for a week",
+    "ja": "一週間また会わない",
+    "ko": "일주일간 다시 보지 않기",
+    "zh": "Don't see again for a week",
+    "service_id": "BTN07679"
+  },
+  "TTL07680": {
+    "en": "Autocomplete event settings with one button.",
+    "ja": "ワンクリックでイベント設定を自動入力します。",
+    "ko": "버튼 한 번으로 이벤트 설정을 자동 완성하세요.",
+    "zh": "Autocomplete event settings with one button.",
+    "service_id": "TTL07680"
+  },
+  "CNT07681": {
+    "en": "If you select the 'Create event template' button, a template-based event list will be automatically created.<br/>For more information about default generated events, please refer to the technical documentation.",
+    "ja": "[イベントテンプレートの作成]ボタンを選択すると、テンプレートベースのイベントのリストが自動的に生成されます。<br/>デフォルトで生成されたイベントの詳細については、技術文書を参照してください。",
+    "ko": "이벤트 템플릿 생성' 버튼을 선택하면 템플릿 기반의 이벤트 목록을 자동 생성합니다.<br/>기본 생성된 이벤트에 대한 자세한 내용은 기술 문서를 참조하세요.",
+    "zh": "If you select the 'Create event template' button, a template-based event list will be automatically created.<br/>For more information about default generated events, please refer to the technical documentation.",
+    "service_id": "CNT07681"
+  },
+  "BTN07682": {
+    "en": "Create event template",
+    "ja": "イベントテンプレートの生成",
+    "ko": "이벤트 템플릿 생성",
+    "zh": "Create event template",
+    "service_id": "BTN07682"
+  },
+  "ITM07683": {
+    "en": "HTTP call URL",
+    "ja": "HTTP呼び出しURL",
+    "ko": "HTTP 호출 URL",
+    "zh": "HTTP call URL",
+    "service_id": "ITM07683"
+  },
+  "LNK07684": {
+    "en": "Go to the Topstack URL",
+    "ja": "トップスタックのURLへ",
+    "ko": "탑 스택 URL 이동",
+    "zh": "Go to the Topstack URL",
+    "service_id": "LNK07684"
+  },
+  "LNK07685": {
+    "en": "Go to the unique stack URL",
+    "ja": "独自のスタックURLへ",
+    "ko": "유니크 스택 URL 이동",
+    "zh": "Go to the unique stack URL",
+    "service_id": "LNK07685"
+  },
+  "TTL07686": {
+    "en": "Number of kube-apiserver Pods",
+    "ja": "kube-apiserver ポッド数",
+    "ko": "kube-apiserver Pod 수",
+    "zh": "Number of kube-apiserver Pods",
+    "service_id": "TTL07686"
+  },
+  "TTL07687": {
+    "en": "cpu usage (millicore)",
+    "ja": "cpu使用量（millicore）",
+    "ko": "cpu 사용량(millicore)",
+    "zh": "cpu usage (millicore)",
+    "service_id": "TTL07687"
+  },
+  "TTL07688": {
+    "en": "memory usage",
+    "ja": "memory 使用量",
+    "ko": "memory 사용량",
+    "zh": "memory usage",
+    "service_id": "TTL07688"
+  },
+  "TTL07689": {
+    "en": "kube-apiserver restart count",
+    "ja": "kube-apiserver restart count",
+    "ko": "kube-apiserver restart count",
+    "zh": "kube-apiserver restart count",
+    "service_id": "TTL07689"
+  },
+  "TTL07690": {
+    "en": "kube-apiserver pod summary information",
+    "ja": "kube-apiserver パードサマリー情報",
+    "ko": "kube-apiserver 파드 요약 정보",
+    "zh": "kube-apiserver pod summary information",
+    "service_id": "TTL07690"
+  },
+  "DSC07691": {
+    "en": "If you use a managed Kubernetes service, you won't be able to see information about the kube-apiserver container.",
+    "ja": "マネージドキューバネティスサービスを使用している場合、kube-apiserverコンテナに関する情報は表示されません。",
+    "ko": "관리형 쿠버네티스 서비스를 사용하는 경우 kube-apiserver 컨테이너에 대한 정보는 볼 수 없습니다.",
+    "zh": "If you use a managed Kubernetes service, you won't be able to see information about the kube-apiserver container.",
+    "service_id": "DSC07691"
   },
   "": {
     "": "",
