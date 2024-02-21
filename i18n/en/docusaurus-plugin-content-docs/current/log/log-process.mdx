@@ -12,7 +12,7 @@ This document provides information on the reference time of the log **_time stam
 
 ## Changing the reference time of the timestamp
 
-![Change of the log timestamp's reference time](/img/log-timestamp.png)
+<ImgLang img="log-timestamp.png" desc="Change of the log timestamp's reference time" />
 
 The reference time of the log **_time stamp_** has been changed from **WhaTap agent's collection time** to **WhaTap collection server's log handling time**.
 
@@ -50,34 +50,32 @@ Logs are collected through the following 3 steps: Different reference times may 
 
 1.  **Log creation time**
 
-  Deviations may occur depending on the time or logging policy of the monitoring target. 
+    Deviations may occur depending on the time or logging policy of the monitoring target. 
 
 1.  **Agent collection time** 
 
-  Deviations may occur depending on how the product or agent in use collects logs and which logs are generated. 
+    Deviations may occur depending on how the product or agent in use collects logs and which logs are generated. 
 
-```
-* **Application**
+    * **Application**
 
-  설정에 따라 로그 라이브러리 또는 로그 파일에서 실시간에 가깝게 로그를 수집합니다.
+      Depending on your settings, logs are collected in near real-time from the log library or log files.
 
-:::note 
+      :::note 
 
-로그 라이브러리는 Java 상품의 경우만 지원합니다. 
+      The log library is only supported for Java products.
 
-:::
+      :::
 
-* **Server** 
+    * **Server** 
 
-  로그 파일에서 실시간에 가깝게 로그를 수집합니다. 
+      Collect near real-time logs from log files.
 
-* **AWS Log**
+    * **AWS Log**
 
-  AWS Resource 정책에 따라 준 실시간 또는 수 분마다 로그를 수집합니다. 
-```
+      Logs are collected in semi-real time or every few minutes depending on AWS Resource policies.
 
 1.  **WhaTap collection server time**
 
-  Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
+    Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
 
 There is a big difference between **WhaTap agent collection time** and **WhaTap collection server time**. Check the server time of the monitoring target. If the monitored server time is set to a time earlier or later than the server time, this affects the agent collection time.
