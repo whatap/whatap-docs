@@ -596,7 +596,7 @@ spec:
         - name: NODE_NAME
           valueFrom: {fieldRef: {fieldPath: "spec.nodeName"}}
         - name: POD_NAME
-          valueFrom: {fieldRef: {fieldPath: "http://metadata.name "}}
+          valueFrom: {fieldRef: {fieldPath: "metadata.name "}}
         - name: OKIND
           value: #DeploymentName
         - name: license
