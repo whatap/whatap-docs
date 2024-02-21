@@ -337,8 +337,8 @@ const metadata = {
         "permalink": "/whatap-docs/release-notes/k8s/k8s-1_4_3"
     },
     "next": {
-        "title": "DBX v1.6.19",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_19"
+        "title": "DBX v1.6.23",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_23"
     }
 };
 const assets = {};

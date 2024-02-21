@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[30892],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[71277],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 21482:
+/***/ 10006:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,46 +308,48 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_9',
-    title: 'DBX v1.6.9',
+    id: 'dbx-1_6_23',
+    title: 'DBX v1.6.23',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_8'
+    pagination_next: 'release-notes/db/dbx-1_6_22',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_9",
-    "id": "release-notes/db/dbx-1_6_9",
-    "title": "DBX v1.6.9",
-    "description": "2023년 8월 25일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.9.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_23",
+    "id": "release-notes/db/dbx-1_6_23",
+    "title": "DBX v1.6.23",
+    "description": "2024년 02월 20일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.23.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_9",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_9",
+    "slug": "/release-notes/db/dbx-1_6_23",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_23",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.9.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.23.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_9",
-        "title": "DBX v1.6.9",
+        "id": "dbx-1_6_23",
+        "title": "DBX v1.6.23",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_8"
+        "pagination_next": "release-notes/db/dbx-1_6_22",
+        "displayed_sidebar": "releaseSidebar"
+    },
+    "sidebar": "releaseSidebar",
+    "previous": {
+        "title": "Kubernetes Agent 지난 버전",
+        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
     },
     "next": {
-        "title": "DBX v1.6.8",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_8"
+        "title": "DBX v1.6.22",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_22"
     }
 };
 const assets = {};
 const toc = [
     {
-        value: 'PostgreSQL V2',
-        id: 'postgresql-v2',
-        level: 2
-    },
-    {
-        value: 'MySQL V2',
-        id: 'mysql-v2',
+        value: 'MySQL',
+        id: 'mysql',
         level: 2
     },
     {
@@ -372,33 +374,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2023년 8월 25일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "postgresql-v2"
-    }, `PostgreSQL V2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 20일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "mysql"
+    }, `MySQL`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "blk_read_time"), ", ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "blk_write_time"), " 버그 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "db_postgrersql_wait_evet"), " 카테고리에 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "wait_event_type"), " 필드 추가")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
-        "id": "mysql-v2"
-    }, `MySQL V2`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "db_mysql_statements"), " 사용을 위한 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap.conf"), " 옵션명 수정 및 에러 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "db_mysql_tables"), "의 schemaname 데이터 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }, "Feature"), " 테이블 레이아웃 실시간 조회 기능 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "redis"
-    }, `Redis`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }, `Redis`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " Connection fail 발생 시 에이전트 쓰레드 중지되는 현상 수정")));
+    }, "Changed"), " Redis cluster, replica 정보 추가");
 }
 MDXContent.isMDXComponent = true;
 

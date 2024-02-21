@@ -337,8 +337,8 @@ const metadata = {
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "DBX v1.6.10",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_10"
+        "title": "DBX 지난 버전",
+        "permalink": "/whatap-docs/release-notes/db/dbx-previous"
     },
     "next": {
         "title": "xos v1.1.6j",

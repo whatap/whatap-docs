@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[47192],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[90808],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 91245:
+/***/ 50625:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -308,43 +308,56 @@ function _object_without_properties_loose(source, excluded) {
 
 
 const frontMatter = {
-    id: 'dbx-1_6_19',
-    title: 'DBX v1.6.19',
+    id: 'dbx-1_6_20',
+    title: 'DBX v1.6.20',
     toc_max_heading_level: 2,
-    pagination_next: 'release-notes/db/dbx-1_6_18'
+    pagination_next: 'release-notes/db/dbx-1_6_19',
+    displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "release-notes/db/dbx-1_6_19",
-    "id": "release-notes/db/dbx-1_6_19",
-    "title": "DBX v1.6.19",
-    "description": "2024년 02월 01일",
-    "source": "@site/docs/release-notes/db/dbx-1.6.19.mdx",
+    "unversionedId": "release-notes/db/dbx-1_6_20",
+    "id": "release-notes/db/dbx-1_6_20",
+    "title": "DBX v1.6.20",
+    "description": "2024년 02월 02일",
+    "source": "@site/docs/release-notes/db/dbx-1.6.20.mdx",
     "sourceDirName": "release-notes/db",
-    "slug": "/release-notes/db/dbx-1_6_19",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_19",
+    "slug": "/release-notes/db/dbx-1_6_20",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_6_20",
     "draft": false,
-    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.19.mdx",
+    "editUrl": "undefined/docs/release-notes/db/dbx-1.6.20.mdx",
     "tags": [],
     "version": "current",
     "frontMatter": {
-        "id": "dbx-1_6_19",
-        "title": "DBX v1.6.19",
+        "id": "dbx-1_6_20",
+        "title": "DBX v1.6.20",
         "toc_max_heading_level": 2,
-        "pagination_next": "release-notes/db/dbx-1_6_18"
+        "pagination_next": "release-notes/db/dbx-1_6_19",
+        "displayed_sidebar": "releaseSidebar"
     },
     "sidebar": "releaseSidebar",
     "previous": {
-        "title": "Kubernetes Agent 지난 버전",
-        "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
+        "title": "DBX v1.6.21",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_21"
     },
     "next": {
-        "title": "DBX v1.6.18",
-        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_18"
+        "title": "DBX v1.6.19",
+        "permalink": "/whatap-docs/release-notes/db/dbx-1_6_19"
     }
 };
 const assets = {};
-const toc = [];
+const toc = [
+    {
+        value: '공통',
+        id: '공통',
+        level: 2
+    },
+    {
+        value: 'Redis',
+        id: 'redis',
+        level: 2
+    }
+];
 const makeShortcode = (name)=>function MDXDefaultShortcode(props) {
         console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
         return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("div", props);
@@ -361,25 +374,15 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 01일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `2024년 02월 02일`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "공통"
+    }, `공통`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Changed"), " DBX 에이전트 로그 파일명을 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "dbx.log"), "에서 ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, "whatap.log"), "로 변경", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", {
-        parentName: "li"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, `변경 전: 25MB 기준으로 과거 로그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, `dbx.log.n`), ` 파일로 분리되었습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, `변경 후: 현재 날짜의 기동 로그는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, `whatap.log`), ` 파일에 기록되고 날짜가 변경되면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", null, `whatap-yyyymmdd.log`), ` 파일로 분리됩니다. 파일 크기 제한 없이 60일까지 보관합니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+    }, "Feature"), " 데이터베이스 알람 원복을 위한 stateful 추가", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+        "id": "redis"
+    }, `Redis`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
-    }, "Fixed"), " 에이전트 기동 시 AgentInfo bootParam init 순서로 인한 NullPointerExeception 버그 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Changed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", null, "disk_usage_interval=60"), " 옵션을 기본 수집하도록 변경")));
+    }, "Feature"), " Redis autoscale 기능 추가");
 }
 MDXContent.isMDXComponent = true;
 
