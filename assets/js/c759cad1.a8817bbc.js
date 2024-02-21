@@ -492,7 +492,7 @@ function MDXContent(_param) {
     "act_httpc": "64",
     "act_dbc": "10",
     "act_socket": "0",
-    "apdex": 0.9871
+    "apdex": "0.9871"
 }
 `)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("table", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("thead", {
         parentName: "table"
