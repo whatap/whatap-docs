@@ -5510,6 +5510,7 @@ const sidebars = {
               items: [
                 'kubernetes/resource-node-list',
                 'kubernetes/object-manifest',
+                'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/resource-namespace',
               ],
             },
