@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37748],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[1172],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 80054:
+/***/ 33932:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,29 +310,34 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'warning-notice-v2',
     title: '이벤트 설정',
-    description: '네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+    description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
     tags: [
-        '네트워크 성능 모니터링',
+        'Tibero',
+        '데이터베이스',
         '경고 알림',
         '이벤트 설정'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "npm/warning-notice-v2",
-    "id": "npm/warning-notice-v2",
+    "unversionedId": "tibero/warning-notice-v2",
+    "id": "tibero/warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/npm/warning-notice-v2.mdx",
-    "sourceDirName": "npm",
-    "slug": "/npm/warning-notice-v2",
-    "permalink": "/whatap-docs/npm/warning-notice-v2",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "source": "@site/docs/tibero/warning-notice-v2.mdx",
+    "sourceDirName": "tibero",
+    "slug": "/tibero/warning-notice-v2",
+    "permalink": "/whatap-docs/tibero/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/npm/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/tibero/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "네트워크 성능 모니터링",
-            "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
+            "label": "Tibero",
+            "permalink": "/whatap-docs/tags/tibero"
+        },
+        {
+            "label": "데이터베이스",
+            "permalink": "/whatap-docs/tags/데이터베이스"
         },
         {
             "label": "경고 알림",
@@ -347,21 +352,22 @@ const metadata = {
     "frontMatter": {
         "id": "warning-notice-v2",
         "title": "이벤트 설정",
-        "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+        "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "네트워크 성능 모니터링",
+            "Tibero",
+            "데이터베이스",
             "경고 알림",
             "이벤트 설정"
         ]
     },
-    "sidebar": "npmsidebar",
+    "sidebar": "tiberoSidebar",
     "previous": {
-        "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/npm/metric-warning-notice"
+        "title": "데이터베이스 경고 알림",
+        "permalink": "/whatap-docs/tibero/warning-notice"
     },
     "next": {
-        "title": "경고 알림 수신 설정",
-        "permalink": "/whatap-docs/npm/set-receive-event"
+        "title": "메트릭스 경고 알림",
+        "permalink": "/whatap-docs/tibero/metric-warning-notice"
     }
 };
 const assets = {};
@@ -448,12 +454,21 @@ function MDXContent(_param) {
     return /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(MDXLayout, _object_spread_props(_object_spread({}, layoutProps, props), {
         components: components,
         mdxType: "MDXLayout"
-    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 `, `>`, ` 프로젝트 선택 `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `홈 화면 `, `>`, ` 프로젝트 선택 `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "아이콘",
+        src: (__webpack_require__(58624)/* ["default"] */ .A),
+        width: "24",
+        height: "24"
+    }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "sitemap",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "event_statistic",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` `, `>`, ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "event_configuration",
+        sid: "event_setting",
         className: "uitext",
         mdxType: "Cmdname"
     }), ` `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("code", {
@@ -2938,6 +2953,16 @@ function MDXContent(_param) {
 }
 MDXContent.isMDXComponent = true;
 
+
+/***/ }),
+
+/***/ 58624:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=");
 
 /***/ }),
 

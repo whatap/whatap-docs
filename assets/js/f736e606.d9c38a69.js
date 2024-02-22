@@ -393,6 +393,11 @@ const toc = [
         level: 3
     },
     {
+        value: '네트워크 성능 모니터링',
+        id: '네트워크-성능-모니터링',
+        level: 3
+    },
+    {
         value: '클라우드 모니터링',
         id: '클라우드-모니터링',
         level: 3
@@ -608,6 +613,17 @@ function MDXContent(_param) {
         parentName: "p",
         "href": "browser"
     }, `브라우저 모니터링`), `은 브라우저 애플리케이션의 페이지 로드 시간, 서버 응답 시간, 리소스 로딩 시간, 브라우저 에러 등 다양한 성능 지표를 수집하여 분석합니다. 또한 브라우저 애플리케이션의 병목 현상이나 성능 이슈를 파악 후 최적화를 통해 모든 사용자에게 일관된 최상의 성능을 제공할 수 있도록 돕습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+        "id": "네트워크-성능-모니터링"
+    }, `네트워크 성능 모니터링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        parentName: "p",
+        "src": "https://preview.whatap.io/assets/assets/image/intro_npm.png",
+        "alt": "네트워크 성능 모니터링"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "npm/introduction"
+    }, `네트워크 성능 모니터링`), `(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, `Network Performance Monitoring`), `)은 네트워크 간의 혼잡 및 장애를 파악하고 사용자의 네트워크 성능 개선에 활용하기 위하여 프로세스의 네트워크 통신 정보를 수집하여 가시화하는 솔루션입니다. 복잡한 네트워크를 그룹화하여 구간별 성능 지표를 빠르게 모니터링합니다. 네트워크 장애를 빠르게 대처할 수 있는 토폴로지 대시보드를 통해 그룹화, 단순화한 네트워크 정보를 통해 네트워크 장애 여부를 빠르게 파악할 수 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "클라우드-모니터링"
     }, `클라우드 모니터링`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
         parentName: "p",
