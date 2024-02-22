@@ -215,45 +215,45 @@ Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.
 
 :::
 
-### Setting the security key {#security}
+### セキュリティキーの設定{#security}
 
-Set a security key to query SQL variables and perform HTTP queries, or use the Thread stop function.
+SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は、セキュリティキーを設定してください。
 
--   Java Agent 2.2.2 or later
+-   Javaエージェント2.2.2バージョン以降
 
-    After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+    `$WHATAP_HOME`パスに_security.conf_ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
 
     ```ini title='security.conf'
-    paramkey=ABCDEF # SQL variable and HTTP query lookup
-    threadkill=ABCDEF # Thread stop function
+    paramkey=ABCDEF # SQL変数およびHTTPクエリの検索
+    threadkill=ABCDEF # Thread停止機能
     ```
 
--   Java agent 2.2.2 or earlier
+-   Javaエージェント2.2.2バージョン未満
 
-    After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+    `$WHATAP_HOME`パスに_paramkey.txt_ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
 
     ```ini title='paramkey.txt'
-    ABCDEF # SQL variable and HTTP query lookup, thread stop function
+    ABCDEF # SQL変数およびHTTPクエリの検索、スレッド停止機能
     ```
 
 :::tip
 
-When updating the Java agent version to 2.2.2, the key values in the existing _paramkey.txt_ file are automatically applied to the _security.conf_ file. For example, if you used `FEDCBA` in _paramkey.txt_ and updated to the version 2.2.2, it is applied to the _security.conf_ file as follows:
+Javaエージェント 2.2.2 のバージョン未満から2.2.2バージョンにアップデートする場合、既存の_paramkey.txt_ファイルのキー値が _seuciry.conf_ファイルのキー値に自動的に適用されます。例えば、_paramkey.txt_に`FEDCBA`を使用して、バージョン2.2.2にアップデートした場合、_security.conf_ファイルには次のように適用されます。
 
 ```ini
 paramkey=FEDCBA
 threadkill=FEDCBA
 ```
 
-If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ file is automatically created as the key value of **WHATAP**.
+_paramkey.txt_ファイルが存在しない場合、_security.conf_ファイルのキー値は、**WHATAP**というキー値で自動的に生成されます。
 
 :::
 
 :::note
 
--   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+-   SQLパラメータ情報記録に関連するエージェント設定は[次の文書](../java/agent-dbsql#profile-sql-param)を参照してください。
 
--   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
+-   HTTPパラメータ情報記録に係るエージェント設定は[次の文書](../java/agent-transaction#profile_http_parameter)を参照してください。
 
 :::
 

@@ -92,12 +92,12 @@ async function readFilesInDirectory(directory) {
             if (file.isDirectory()) {
                 await readFilesInDirectory(path.join(directory, file.name));
             } else if (file.isFile() && file.name.match(/.jpg|.jpeg|.png|.gif|.bmp|.webp|.svg/g)) {
-                allImages.add(path.join(directory, file.name));
-                // if (file.name.endsWith('-en.png') || file.name.endsWith('-ja.png')) {
-                //     continue
-                // } else {
-                //     allImages.add(path.join(directory, file.name));
-                // }
+                
+                if (file.name.endsWith('-en.png') || file.name.endsWith('-en.svg') || file.name.endsWith('-ja.png') || file.name.endsWith('-ja.svg')) {
+                    continue
+                } else {
+                    allImages.add(path.join(directory, file.name).replace('static/img/', ''));
+                }
             } 
             else {
                 console.log(path.join(directory, file.name))
