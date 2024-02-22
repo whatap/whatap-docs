@@ -215,13 +215,48 @@ Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.
 
 :::
 
-### paramkeyファイル作成
+### Setting the security key {#security}
 
-プロジェクトの最上位パスに_paramkey.txt_ファイルを作成し、6桁の英語、数字からなるパスワードを指定してください。
+Set a security key to query SQL variables and perform HTTP queries, or use the Thread stop function.
 
--   _paramkey.txt_ファイルは、モニタリング時に暗号化された引数を復号化する時に使用します。 
+-   Java Agent 2.2.2 or later
 
--   パスワードの例は次のとおりです。`ABCDEF`
+    After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+
+    ```ini title='security.conf'
+    paramkey=ABCDEF # SQL variable and HTTP query lookup
+    threadkill=ABCDEF # Thread stop function
+    ```
+
+-   Java agent 2.2.2 or earlier
+
+    After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+
+    ```ini title='paramkey.txt'
+    ABCDEF # SQL variable and HTTP query lookup, thread stop function
+    ```
+
+:::tip
+
+When updating the Java agent version to 2.2.2, the key values in the existing _paramkey.txt_ file are automatically applied to the _security.conf_ file. For example, if you used `FEDCBA` in _paramkey.txt_ and updated to the version 2.2.2, it is applied to the _security.conf_ file as follows:
+
+```ini
+paramkey=FEDCBA
+threadkill=FEDCBA
+```
+
+If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ file is automatically created as the key value of **WHATAP**.
+
+:::
+
+:::note
+
+-   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+
+-   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
+
+:::
+
 
 ## コンテナ環境変数の設定
 

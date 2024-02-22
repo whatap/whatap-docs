@@ -7,12 +7,11 @@ const fs = require('fs').promises;
 const path = require('path');
 
 // 파일 유무 체크
-const fileLists = ['imagePaths.txt', 'find-allimages.txt'];
+const fileLists = ['imagePaths.txt', 'imagePathsAll.txt'];
 
 for (let i in fileLists) {
     if (fss.existsSync(fileLists[i])) {
         fs.unlink(fileLists[i]);
-        console.log(fileLists[i], '111111111');
     } else {
         fs.writeFile(fileLists[i], '', { flag: 'w' }, function (err) {
             if (err) throw err;
@@ -92,28 +91,25 @@ async function readFilesInDirectory(directory) {
         for (const file of files) {
             if (file.isDirectory()) {
                 await readFilesInDirectory(path.join(directory, file.name));
-            } else if (file.isFile() && isImageFile(file.name)) {
+            } else if (file.isFile() && file.name.match(/.jpg|.jpeg|.png|.gif|.bmp|.webp|.svg/g)) {
                 allImages.add(path.join(directory, file.name));
+                // if (file.name.endsWith('-en.png') || file.name.endsWith('-ja.png')) {
+                //     continue
+                // } else {
+                //     allImages.add(path.join(directory, file.name));
+                // }
             } 
-            // else {
-            //     console.log(path.join(directory, file.name))
-            // }
+            else {
+                console.log(path.join(directory, file.name))
+            }
         }
         const allimagepathArray = Array.from(allImages).sort();
         const allimagepathStr = allimagepathArray.join('\n');
-        fs.appendFile("find-allimages.txt", allimagepathStr, 'utf-8');
+        fs.appendFile("imagePathsAll.txt", allimagepathStr, 'utf-8');
     } catch (err) {
         console.error('Error reading directory:', err);
     }
 }
-
-// 파일 확장자가 이미지인지 확인하는 함수
-function isImageFile(filePath) {
-    const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', 'svg']; // 확장자 추가 가능
-    const ext = path.extname(filePath).toLowerCase();
-    return allowedExtensions.includes(ext);
-}
-
 
 // 디렉토리와 그 하위 디렉토리의 이미지 파일 정보를 수집
 readFilesInDirectory(directoryPath)

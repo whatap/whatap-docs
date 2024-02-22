@@ -215,13 +215,47 @@ For Java 17 or later, add the `--add-opens=java.base/java.lang=ALL-UNNAMED` opti
 
 :::
 
-### Creating the paramkey file
+### Setting the security key {#security}
 
-Create the _paramkey.txt_ file in the top-level path of the project, and then enter a 6-letter alphanumeric password.
+Set a security key to query SQL variables and perform HTTP queries, or use the Thread stop function.
 
--   The _paramkey.txt_ file is used when decrypting parameters during monitoring. 
+-   Java Agent 2.2.2 or later
 
--   The password example is as follows: `ABCDEF`
+    After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+
+    ```ini title='security.conf'
+    paramkey=ABCDEF # SQL variable and HTTP query lookup
+    threadkill=ABCDEF # Thread stop function
+    ```
+
+-   Java agent 2.2.2 or earlier
+
+    After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+
+    ```ini title='paramkey.txt'
+    ABCDEF # SQL variable and HTTP query lookup, thread stop function
+    ```
+
+:::tip
+
+When updating the Java agent version to 2.2.2, the key values in the existing _paramkey.txt_ file are automatically applied to the _security.conf_ file. For example, if you used `FEDCBA` in _paramkey.txt_ and updated to the version 2.2.2, it is applied to the _security.conf_ file as follows:
+
+```ini
+paramkey=FEDCBA
+threadkill=FEDCBA
+```
+
+If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ file is automatically created as the key value of **WHATAP**.
+
+:::
+
+:::note
+
+-   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+
+-   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
+
+:::
 
 ## Configuring the container environment variables
 
