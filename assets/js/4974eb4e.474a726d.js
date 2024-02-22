@@ -765,24 +765,16 @@ function MDXContent(_param) {
         mdxType: "ImgLang"
     }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "searchprojectwithcode"
-    }, `프로젝트/프로젝트 코드로 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `관리 중이거나 소속된 프로젝트가 많아 프로젝트를 찾기 어렵다면 검색 기능을 이용하세요. 찾길 원하는 프로젝트를 필터링할 수 있습니다. 화면 위에 프로젝트 검색 입력 상자에 프로젝트 이름 또는 프로젝트 코드를 입력하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `입력 상자 아래에 입력한 문자열과 일치하는 프로젝트 목록이 표시됩니다. 찾으려는 프로젝트를 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+    }, `프로젝트/프로젝트 코드로 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `관리 중이거나 소속된 프로젝트가 많아 프로젝트를 찾기 어렵다면 검색 기능을 이용하세요. 찾길 원하는 프로젝트를 필터링할 수 있습니다. 화면 위에 프로젝트 검색 입력 상자에 프로젝트 이름 또는 프로젝트 코드를 입력하세요. `), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "ui-home/main-project-filter.png",
         className: "width-200",
         mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `문자열을 입력한 상태에서 엔터 키를 입력하거나 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `입력 상자 아래에 입력한 문자열과 일치하는 프로젝트 목록이 표시됩니다. 찾으려는 프로젝트를 선택하세요. 문자열을 입력한 상태에서 엔터 키를 누르거나 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "검색 아이콘",
         src: (__webpack_require__(70378)/* ["default"] */ .A),
         width: "24",
         height: "24"
-    }), ` 버튼을 선택하세요. 입력한 문자열과 일치하는 프로젝트가 프로젝트 목록에 표시됩니다.`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
+    }), ` 버튼을 선택하세요. 입력한 문자열과 일치하는 프로젝트가 목록에 표시됩니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "sidebar"
     }, `사이드 메뉴`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `와탭 모니터링 화면에서 왼쪽 패널 메뉴 영역을 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
         parentName: "p"
@@ -809,7 +801,7 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `사이드 메뉴의 가장 왼쪽에 상품 종류별 소개 아이콘을 선택하세요. 상품 소개 페이지로 이동하면 원하는 상품에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `사이드 메뉴의 가장 왼쪽에 상품 종류별 아이콘을 선택하세요. 상품 소개 페이지로 이동하면 원하는 상품의 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "BTN06900",
         className: "uitext",
         mdxType: "Cmdname"
@@ -822,7 +814,7 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
         parentName: "tr",
         "align": "center"
-    }, `상품 분류`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
+    }, `상품 아이콘`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("th", {
         parentName: "tr",
         "align": null
     }, `설명`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("tbody", {
@@ -1007,11 +999,7 @@ function MDXContent(_param) {
         "href": "project/project-manage#create-project"
     }, `다음 문서`), `를 참조하세요.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "move2project"
-    }, `홈 화면 또는 프로젝트 간 이동하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("ul", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `사용자가 속한 그룹의 프로젝트를 트리뷰 형식으로 전체 목록을 확인할 수 있습니다. 화면 로고 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `홈 화면 또는 프로젝트 간 이동하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사용자가 속한 그룹의 프로젝트를 트리뷰 형식으로 전체 목록을 확인할 수 있습니다. 화면 로고 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "BTN07332",
         className: "uitext",
         mdxType: "Cmdname"
@@ -1019,11 +1007,20 @@ function MDXContent(_param) {
         img: "ui-home/main-ui-home-to-project-move-01.png",
         desc: "",
         mdxType: "ImgLang"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
-        parentName: "ul"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
-        parentName: "li"
-    }, `프로젝트로 진입한 상태에서 사이드 메뉴의 프로젝트 이름을 선택하면 현재 프로젝트의 계층 구조를 파악할 수 있으며, 다른 프로젝트를 선택해 쉽게 이동할 수도 있습니다. 홈 화면으로 이동하려면 화면 왼쪽 위에 와탭 로고를 선택하거나 화면 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `그룹이나 프로젝트가 많아 원하는 항목을 찾기 어렵다면, 프로젝트 목록 패널에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "TLT07471",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 입력 상자에 문자열을 입력하세요. 문자열과 일치하는 그룹 또는 프로젝트를 필터링할 수 있습니다. 상품별로 프로젝트를 필터링하려면 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+        alt: "필터 아이콘",
+        src: (__webpack_require__(57176)/* ["default"] */ .A),
+        width: "24",
+        height: "24"
+    }), ` 버튼을 선택한 다음 원하는 상품을 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "ui-home/main-ui-filter-project.png",
+        desc: "프로젝트 필터링",
+        mdxType: "ImgLang"
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `프로젝트로 진입한 상태에서 사이드 메뉴의 프로젝트 이름을 선택하면 현재 프로젝트의 계층 구조를 파악할 수 있으며, 다른 프로젝트를 선택해 쉽게 이동할 수도 있습니다. 홈 화면으로 이동하려면 화면 왼쪽 위에 와탭 로고를 선택하거나 화면 아래에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "홈 아이콘",
         src: (__webpack_require__(40674)/* ["default"] */ .A),
         width: "24",
@@ -1032,7 +1029,7 @@ function MDXContent(_param) {
         img: "ui-home/main-ui-home-to-project-move-02.png",
         desc: "",
         mdxType: "ImgLang"
-    }))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
+    }), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h3", {
         "id": "managegroup"
     }, `그룹 생성 또는 이동, 관리하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `사이드 메뉴에서 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "BTN07332",
@@ -1666,6 +1663,16 @@ MDXContent.isMDXComponent = true;
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtc3RhcjwvdGl0bGU+IC0tPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iSWNvbi1TZXQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJXaGFUYXBfSWNvbl9TZXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04MzYuMDAwMDAwLCAtMjc5MS4wMDAwMDApIiBmaWxsPSIjNzU3NTc1Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtc3RhciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzk2LjAwMDAwMCwgNDQ1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuMDAwMDAwLCAxLjAwMDAwMCkiIGlkPSJJY29uIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTExLDAgTDE0LjA5MSw3LjY2NTI2MzE2IEwyMiw4LjM4MzE1Nzg5IEwxNi4wMDUsMTMuODYgTDE3Ljc5OCwyMiBMMTEsMTcuNjgxMDUyNiBMNC4yMDIsMjIgTDYuMDA2LDEzLjg2IEwwLDguMzgzMTU3ODkgTDcuOTA5LDcuNjc2ODQyMTEgTDExLDAgWiBNOS4zMDY4MTA0NSw5LjU1OTk2OTc5IEw0LjcwOTAwNDExLDkuOTcwNTc4MzcgTDguMjA5MTQ0MTcsMTMuMTYyMzM5IEw3LjE5NzQyMjY4LDE3LjcyNzQyMzggTDExLDE1LjMxMTU0NjkgTDE0LjgwOTk2ODUsMTcuNzMyMTE5NiBMMTMuODAzMzg4NCwxMy4xNjIzNjkzIEwxNy4zMDMxOTc2LDkuOTY1MDU0NCBMMTIuNjkzMTU5OCw5LjU0NjYwNDMgTDExLjAwMTQsNS4zNTEyNjgxNiBMOS4zMDY4MTA0NSw5LjU1OTk2OTc5IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+
+/***/ }),
+
+/***/ 57176:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZmlsdGVyPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ1Mi4wMDAwMDAsIC0yNTUxLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgICA8ZyBpZD0iYXBwbGljYXRpb24taWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwMDAwMCwgMjM0Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1maWx0ZXIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMi4wMDAwMDAsIDIwNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIiBpZD0iSWNvbiI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLDAgTDAsMS45NTE3MTE0NCBMOS4wNTQ2NDk2LDExLjY2NjY2NjcgTDkuMDU0NjQ5NiwyMCBMMTAuOTg2NDg3OSwxOC41NTY0MDI0IEwxMC45ODY0ODc5LDExLjY2NjY2NjcgTDIwLDEuOTUxNzExNDQgTDIwLDAgTDAsMCBaIE0zLjQ0NzI3ODExLDMgTDE2LjYxNDY0NTQsMyBMMTAuMDE0NTA0MiwxMCBMMy40NDcyNzgxMSwzIFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
 
 /***/ }),
 
