@@ -438,6 +438,10 @@ trace_redis_Lettuce_key_enabled=true
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
+    }, "Fixed"), " 히트맵의 트랜잭션 건수, 에러 건수 오류 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
+        mdxType: "Status"
     }, "Deprecate"), " Lettuce 드라이버 사용 시 Redis의 value 수집 중단")));
 }
 MDXContent.isMDXComponent = true;
