@@ -33546,7 +33546,7 @@
   "should_exist_person_in_charge_of_billing": {
     "en": "There must be at least one payer in the group. Please give the billing role to another person and try again.",
     "ja": "グループ内には1人以上のお支払い担当がアサインされている必要があります。決済権限を譲渡してから再度行ってください。",
-    "ko": "그룹내에 결제 담장자가 최소 1인은 있어야합니다. 결제 권한을 양도후 다시 시도해주세요.",
+    "ko": "그룹내에 결제 담당자가 최소 1인은 있어야합니다. 결제 권한을 양도 후 다시 시도해주세요.",
     "zh": "There must be at least one payer in the group. Please give the billing role to another person and try again.",
     "service_id": "_04872"
   },
@@ -38348,7 +38348,7 @@
   "should_exist_person_in_charge_of_member_udpate": {
     "en": "There must be at least one person who can mange members in the group. Please give the member update role to another person and try again.",
     "ja": "グループ内に、メンバー管理を行う担当が一人以上必要です。メンバー管理権限を譲渡してから再度行ってください。",
-    "ko": "그룹내에 멤버 관리 담장자가 최소 1인은 있어야합니다. 멤버 관리 권한을 양도후 다시 시도해주세요.",
+    "ko": "그룹내에 멤버 관리 담당자가 최소 1인은 있어야합니다. 멤버 관리 권한을 양도 후 다시 시도해주세요.",
     "zh": "There must be at least one person who can mange members in the group. Please give the member update role to another person and try again.",
     "service_id": "_05559"
   },
@@ -52367,10 +52367,10 @@
     "service_id": "DSC07599"
   },
   "DSC07600": {
-    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and setting up permissions and feature enablement options, and adding a container for control plane monitoring within the master agent</strong> is required.",
-    "ja": "コントロール プレーン監視機能を使用するには、<br/><strong>WhaTap Kubernetes Agent 1.5.0 以降が必要です。<br/>権限と、機能活性化オプションを設定し、マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
-    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.0 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
-    "zh": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.0 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
+    "en": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.6 or later and setting up permissions and feature enablement options, and adding a container for control plane monitoring within the master agent</strong> is required.",
+    "ja": "コントロール プレーン監視機能を使用するには、<br/><strong>WhaTap Kubernetes Agent 1.5.6 以降が必要です。<br/>権限と、機能活性化オプションを設定し、マスター エージェントにコントロール プレーン監視用のコンテナを追加する必要があります。</strong>",
+    "ko": "컨트롤 플레인 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 1.5.6 이상이 필요하며<br/>권한 및 기능 활성화 옵션 설정, 그리고 마스터 에이전트 내 컨트롤 플레인 모니터링을 위한<br/>컨테이너 추가 작업이 필요</strong>합니다.",
+    "zh": "The control plane monitoring feature requires <strong>WhaTap Kubernetes Agent 1.5.6 or later and  <br/>setting up permissions and feature enablement options, and adding a <br/>container for control plane monitoring within the master agent</strong> is required.",
     "service_id": "DSC07600"
   },
   "DSC07601": {
@@ -52556,10 +52556,10 @@
     "service_id": "CNT07626"
   },
   "CNT07627": {
-    "en": "Up to 10 projects can be created",
-    "ja": "最大10件のプロジェクトまで生成できます。",
-    "ko": "최대 10개의 프로젝트까지 생성 가능",
-    "zh": "Up to 10 projects can be created",
+    "en": "Up to 10 projects can be created per product",
+    "ja": "製品ごとに10個までのプロジェクトが作成できます。",
+    "ko": "상품당 최대 10개의 프로젝트까지 생성 가능",
+    "zh": "Up to 10 projects can be created per product",
     "service_id": "CNT07627"
   },
   "CNT07628": {
@@ -52633,7 +52633,7 @@
     "service_id": "TTL07637"
   },
   "TTL07638": {
-    "en": "Complex object information in a cluster at a glance",
+    "en": "Capture complex object information in clusters at a glance",
     "ja": "クラスターの複雑なObject情報をひと目で",
     "ko": "클러스터의 복잡한 오브젝트 정보를 한눈에",
     "zh": "Complex object information in a cluster at a glance",
@@ -52837,7 +52837,7 @@
   },
   "DSC07667": {
     "en": "(Agent v{version} or higher update required)",
-    "ja": "（エージェントv {バージョン}以降の更新が必須）",
+    "ja": "（エージェントv {バージョン}以降の更新が必要です。）",
     "ko": "(에이전트 v{version} 이상 업데이트 필수)",
     "zh": "(Agent v{version} or higher update required)",
     "service_id": "DSC07667"
@@ -52850,10 +52850,10 @@
     "service_id": "DSC07668"
   },
   "TTL07669": {
-    "en": "Complete the event setup quickly and easily with event templates.",
-    "ja": "イベントテンプレートで簡単かつ迅速にイベント設定を完了してください。",
+    "en": "Complete the event setup quickly and easily<br/>with event templates.",
+    "ja": "イベントテンプレートを通じて、より楽に<br/>イベント設定を完了してください。",
     "ko": "이벤트 템플릿으로 쉽고 빠르게 이벤트 설정을 완료하세요.",
-    "zh": "Complete the event setup quickly and easily with event templates.",
+    "zh": "Complete the event setup quickly and easily<br/>with event templates.",
     "service_id": "TTL07669"
   },
   "CNT07670": {
@@ -52865,44 +52865,44 @@
   },
   "CNT07671": {
     "en": "You can register and modify event settings for each template.",
-    "ja": "テンプレートに基づいてイベント設定を登録・変更できます。",
+    "ja": "テンプレートを通じて、イベント設定が登録と変更できます。",
     "ko": "템플릿 기반으로 이벤트 설정을 등록하고 수정할 수 있습니다.",
     "zh": "You can register and modify event settings for each template.",
     "service_id": "CNT07671"
   },
   "CNT07672": {
     "en": "The list of events has been enhanced in a table format to increase the readability.",
-    "ja": "設定されたイベント一覧をテーブル形式に改善し、可読性を向上させました。",
+    "ja": "設定されたイベント一覧をテーブル形式に改善し、可読性を向上しました。",
     "ko": "설정된 이벤트 목록을 테이블 형식으로 개선하여 가독성을 향상시켰습니다.",
     "zh": "The list of events has been enhanced in a table format to increase the readability.",
     "service_id": "CNT07672"
   },
   "CNT07673": {
     "en": "The functionality has been expanded to provide more information through event simulation.",
-    "ja": "イベント シミュレーションを通じて、より多くの情報を確認できるように機能を拡張しました。",
+    "ja": "イベント シミュレーションを通じて、より多くの情報が確認できるように機能を拡張<br/>しました。",
     "ko": "이벤트 시뮬레이션을 통해 더 많은 정보를 확인할 수 있도록 기능을 확장했습니다.",
     "zh": "The functionality has been expanded to provide more information through event simulation.",
     "service_id": "CNT07673"
   },
   "CNT07674": {
     "en": "The newly released Beta version can be accessed through the sitemap.",
-    "ja": "新しくリリースしたベータ版は、サイトマップを通じてアクセスできます。",
+    "ja": "新しくリリースしたベータ版へは、サイトマップからアクセスできます。",
     "ko": "새롭게 릴리스한 베타 버전은 사이트맵을 통해서 진입할 수 있습니다.",
     "zh": "The newly released Beta version can be accessed through the sitemap.",
     "service_id": "CNT07674"
   },
   "CNT07675": {
-    "en": "You can see the reorganized event configuration menu through <b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized event configuration menu.",
-    "ja": "<b style=\"color:{primaryColor}\">“新規バージョンで見る”ボタン</b>を通じて、改編されたイベント設定メニューを確認することができます。<br/>改編されたイベント設定メニューの利用に関する詳細は、技術文書で確認してください。",
+    "en": "You can see the reorganized event configuration menu through<br/><b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized<br/>event configuration menu.",
+    "ja": "<b style=\"color:{primaryColor}\">“新規バージョンで見る”ボタン</b>を押して、変更したイベント設定メニューが確認できます。<br/>新しくなったイベント設定メニューの利用に関する詳細は、ガイドを参考してください。",
     "ko": "<b style=\"color:{primaryColor}\">“신규 버전으로 보기” 버튼</b>을 통해 개편된 이벤트 설정 메뉴를 확인하실 수 있습니다.<br/>개편된 이벤트 설정 메뉴의 이용과 관련된 자세한 사항은 기술문서를 통해 확인해주세요.",
-    "zh": "You can see the reorganized event configuration menu through <b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized event configuration menu.",
+    "zh": "You can see the reorganized event configuration menu through<br/><b style=\"color:{primaryColor}\">“View new version” button</b>.<br/>Check the technical documents for more details about the reorganized<br/>event configuration menu.",
     "service_id": "CNT07675"
   },
   "CNT07676": {
-    "en": "The above image is an example. The provided event template may differ depending on the monitoring product.",
-    "ja": "上記の画像は例示画像で、モニタリングサービスによって提供するイベントテンプレートは異なる場合があります。",
+    "en": "The above image is an example.<br/>The provided event template may differ depending on the monitoring product.",
+    "ja": "上記の画像は例示で、製品によっては提供するイベントテンプレートが<br/>異なる場合があります。",
     "ko": "위 이미지는 예시 이미지로, 모니터링 상품에 따라 제공하는 이벤트 템플릿은 다를 수 있습니다.",
-    "zh": "The above image is an example. The provided event template may differ depending on the monitoring product.",
+    "zh": "The above image is an example.<br/>The provided event template may differ depending on the monitoring product.",
     "service_id": "CNT07676"
   },
   "BTN07677": {
@@ -52921,28 +52921,28 @@
   },
   "BTN07679": {
     "en": "Don't see again for a week",
-    "ja": "一週間また会わない",
+    "ja": "一週間表示しない",
     "ko": "일주일간 다시 보지 않기",
     "zh": "Don't see again for a week",
     "service_id": "BTN07679"
   },
   "TTL07680": {
     "en": "Autocomplete event settings with one button.",
-    "ja": "ワンクリックでイベント設定を自動入力します。",
+    "ja": "ワンクリックでイベント設定が自動入力できます。",
     "ko": "버튼 한 번으로 이벤트 설정을 자동 완성하세요.",
     "zh": "Autocomplete event settings with one button.",
     "service_id": "TTL07680"
   },
   "CNT07681": {
     "en": "If you select the 'Create event template' button, a template-based event list will be automatically created.<br/>For more information about default generated events, please refer to the technical documentation.",
-    "ja": "[イベントテンプレートの作成]ボタンを選択すると、テンプレートベースのイベントのリストが自動的に生成されます。<br/>デフォルトで生成されたイベントの詳細については、技術文書を参照してください。",
+    "ja": "[イベントテンプレート生成]ボタンを選択すると、テンプレートベースのイベントのリストが自動的に生成されます。<br/>デフォルトで生成されたイベントの詳細については、ガイドを参考してください。",
     "ko": "이벤트 템플릿 생성' 버튼을 선택하면 템플릿 기반의 이벤트 목록을 자동 생성합니다.<br/>기본 생성된 이벤트에 대한 자세한 내용은 기술 문서를 참조하세요.",
     "zh": "If you select the 'Create event template' button, a template-based event list will be automatically created.<br/>For more information about default generated events, please refer to the technical documentation.",
     "service_id": "CNT07681"
   },
   "BTN07682": {
     "en": "Create event template",
-    "ja": "イベントテンプレートの生成",
+    "ja": "イベントテンプレート生成",
     "ko": "이벤트 템플릿 생성",
     "zh": "Create event template",
     "service_id": "BTN07682"
@@ -52963,52 +52963,178 @@
   },
   "LNK07685": {
     "en": "Go to the unique stack URL",
-    "ja": "独自のスタックURLへ",
+    "ja": "ユニックスタックのURLへ",
     "ko": "유니크 스택 URL 이동",
     "zh": "Go to the unique stack URL",
     "service_id": "LNK07685"
   },
   "TTL07686": {
-    "en": "Number of kube-apiserver Pods",
-    "ja": "kube-apiserver ポッド数",
-    "ko": "kube-apiserver Pod 수",
-    "zh": "Number of kube-apiserver Pods",
+    "en": "kube-apiserver quantity",
+    "ja": "kube-apiserverの数",
+    "ko": "kube-apiserver 수량",
+    "zh": "kube-apiserver quantity",
     "service_id": "TTL07686"
   },
   "TTL07687": {
-    "en": "cpu usage (millicore)",
-    "ja": "cpu使用量（millicore）",
-    "ko": "cpu 사용량(millicore)",
-    "zh": "cpu usage (millicore)",
+    "en": "Total CPU usage (millicore)",
+    "ja": "CPU使用量合計(ミリコア)",
+    "ko": "CPU 사용량 총합 (millicore)",
+    "zh": "Total CPU usage (millicore)",
     "service_id": "TTL07687"
   },
   "TTL07688": {
-    "en": "memory usage",
-    "ja": "memory 使用量",
-    "ko": "memory 사용량",
-    "zh": "memory usage",
+    "en": "Total memory usage",
+    "ja": "メモリ使用量合計",
+    "ko": "Memory 사용량 총합",
+    "zh": "Total memory usage",
     "service_id": "TTL07688"
   },
   "TTL07689": {
-    "en": "kube-apiserver restart count",
-    "ja": "kube-apiserver restart count",
-    "ko": "kube-apiserver restart count",
-    "zh": "kube-apiserver restart count",
+    "en": "Total number of kube-apiserver restarts",
+    "ja": "kube-apiserver 再起動数の合計",
+    "ko": "kube-apiserver 재기동 수 총합",
+    "zh": "Total number of kube-apiserver restarts",
     "service_id": "TTL07689"
   },
   "TTL07690": {
-    "en": "kube-apiserver pod summary information",
-    "ja": "kube-apiserver パードサマリー情報",
-    "ko": "kube-apiserver 파드 요약 정보",
-    "zh": "kube-apiserver pod summary information",
+    "en": "kube-apiserver Pod Summary Information",
+    "ja": "kube-apiserver Podの要約",
+    "ko": "kube-apiserver Pod 요약 정보",
+    "zh": "kube-apiserver Pod Summary Information",
     "service_id": "TTL07690"
   },
   "DSC07691": {
-    "en": "If you use a managed Kubernetes service, you won't be able to see information about the kube-apiserver container.",
-    "ja": "マネージドキューバネティスサービスを使用している場合、kube-apiserverコンテナに関する情報は表示されません。",
-    "ko": "관리형 쿠버네티스 서비스를 사용하는 경우 kube-apiserver 컨테이너에 대한 정보는 볼 수 없습니다.",
-    "zh": "If you use a managed Kubernetes service, you won't be able to see information about the kube-apiserver container.",
+    "en": "If you use managed Kubernetes, such as Amazon EKS, kube-apiserver Pod information is not displayed.",
+    "ja": "Amazon EKSなどのマネージドKubernetesを使用している場合、kube-apiserver Pod情報は表示されません。",
+    "ko": "Amazon EKS 등 관리형 쿠버네티스를 사용하는 경우 kube-apiserver Pod 정보는 표시되지 않습니다.",
+    "zh": "If you use managed Kubernetes, such as Amazon EKS, kube-apiserver Pod information is not displayed.",
     "service_id": "DSC07691"
+  },
+  "DSC07692": {
+    "en": "Select the target on the left and add the widget.",
+    "ja": "左側のターゲットを選択してウィジェットを追加します。",
+    "ko": "왼쪽의 대상을 선택 후 위젯을 추가하세요.",
+    "zh": "Select the target on the left and add the widget.",
+    "service_id": "DSC07692"
+  },
+  "DSC07693": {
+    "en": "For those who were inconvenienced by the real-time and past viewing periods being fixed to 5 minutes\nWe have improved the viewing period to up to 30 minutes for real-time and up to 1hour for historical views.\nAnalyze more information with an extended viewing period.",
+    "ja": "リアルタイムと過去の照会期間が5分に固定されていて不便だったユーザーのために、\nリアルタイムは最大30分、過去の照会は最大1時間に照会期間を変更しました。\nより長い検索期間で、より多くの情報が分析できます。",
+    "ko": "실시간과 과거 조회 기간이 5분으로 고정되어 불편했던 분들을 위해\n실시간은 최대 30분, 과거 조회는 최대 1시간으로 조회 기간을 개선했습니다.\n늘어난 조회 기간으로 더 많은 정보를 분석해 보세요.",
+    "zh": "For those who were inconvenienced by the real-time and past viewing periods being fixed to 5 minutes\nWe have improved the viewing period to up to 30 minutes for real-time and up to 1\bhour for historical views.\nAnalyze more information with an extended viewing period.",
+    "service_id": "DSC07693"
+  },
+  "DSC07694": {
+    "en": "If you want to use the filter function, no need to bother clicking the button multiple times!\nWe have improved user convenience so that you can use filters quickly and easily.\nTry the new filter function.",
+    "ja": "フィルタ機能を使うためにボタンを何度もクリックする手間がなくなりました。\nより楽にフィルタを使用できるように、ユーザーの利便性を改善しました。\n新しくなったフィルタ機能を利用してみてください。",
+    "ko": "필터 기능을 사용하고 싶은데 버튼을 여러 번 클릭해야 하는 번거로움은 NO!\n빠르고 쉽게 필터를 사용할 수 있도록 사용자 편의성을 개선했습니다.\n새로워진 필터 기능을 이용해 보세요.",
+    "zh": "If you want to use the filter function, no need to bother clicking the button multiple times!\nWe have improved user convenience so that you can use filters quickly and easily.\nTry the new filter function.",
+    "service_id": "DSC07694"
+  },
+  "DSC07695": {
+    "en": "Trace analysis of up to 100 views when dragging the transaction chart\nIt has been improved so that up to 1,000 views can be viewed.\nExperience a transaction map that allows you to view more at once.",
+    "ja": "トランザクションチャートをドラッグする時に100件まで照会できたトレース分析を、\n最大1,000件まで照会できるように改善しました。\n一度にさらに多くのトランザクションが照会できるトランザクションマップを体験してください。",
+    "ko": "트랜잭션 차트 드래그 시 100건까지 조회되었던 트레이스 분석을\n최대 1,000건까지 조회할 수 있도록 개선되었습니다.\n한번에 더 많이 조회할 수 있는 트랜잭션 맵을 경험해 보세요.",
+    "zh": "Trace analysis of up to 100 views when dragging the transaction chart\nIt has been improved so that up to 1,000 views can be viewed.\nExperience a transaction map that allows you to view more at once.",
+    "service_id": "DSC07695"
+  },
+  "TTL07696": {
+    "en": "Introducing the new transaction map!",
+    "ja": "新しくなったトランザクションマップを紹介します！",
+    "ko": "새로워진 트랜잭션 맵을 소개합니다!",
+    "zh": "Introducing the new transaction map!",
+    "service_id": "TTL07696"
+  },
+  "TTL07697": {
+    "en": "Convenient filter function!",
+    "ja": "便利になったフィルター機能！",
+    "ko": "편리해진 필터 기능!",
+    "zh": "Convenient filter function!",
+    "service_id": "TTL07697"
+  },
+  "TTL07698": {
+    "en": "Trace analysis that can view up to 1,000 cases!",
+    "ja": "1,000件まで照会できるトレース分析！",
+    "ko": "1,000건까지 조회 가능한 트레이스 분석!",
+    "zh": "Trace analysis that can view up to 1,000 cases!",
+    "service_id": "TTL07698"
+  },
+  "DSC07699": {
+    "en": "Select the team to receive notifications from the Team menu and select the Integrations menu.",
+    "ja": "Teamメニューから通知を受け取るチームを選択し、Integrationsメニューを選択します。",
+    "ko": "Team 메뉴에서 알림을 받을 팀을 선택 후 Integrations 메뉴를 선택하세요.",
+    "zh": "Select the team to receive notifications from the Team menu and select the Integrations menu.",
+    "service_id": "DSC07699"
+  },
+  "DSC07700": {
+    "en": "Click the Add Integration button.",
+    "ja": "[Add Integration] ボタンをクリックします。",
+    "ko": "Add Integration 버튼을 클릭합니다.",
+    "zh": "Click the Add Integration button.",
+    "service_id": "DSC07700"
+  },
+  "DSC07701": {
+    "en": "Search for “API” in the Integration list and select it.",
+    "ja": "Integrationリストで「API」を検索してから選択します。",
+    "ko": "Integration 목록에서 \"API\" 검색 후 선택합니다.",
+    "zh": "Search for “API” in the Integration list and select it.",
+    "service_id": "DSC07701"
+  },
+  "DSC07702": {
+    "en": "Assign the API name and Team, set permissions, and save.",
+    "ja": "API名とTeamを割り当て、権限を設定してから保存します。",
+    "ko": "API 이름 및 Team 을 할당하고 권한 설정 후 저장합니다.",
+    "zh": "Assign the API name and Team, set permissions, and save.",
+    "service_id": "DSC07702"
+  },
+  "DSC07703": {
+    "en": "Enter the Name value and API Key below and click the register button to register.",
+    "ja": "以下にName値とAPIキーを入力し、登録ボタンを押します。",
+    "ko": "아래에 Name값과 API Key를 입력 후 등록 버튼을 눌러 등록합니다.",
+    "zh": "Enter the Name value and API Key below and click the register button to register.",
+    "service_id": "DSC07703"
+  },
+  "DSC07704": {
+    "en": "No input",
+    "ja": "入力値がありません。",
+    "ko": "입력값 없음",
+    "zh": "No input",
+    "service_id": "DSC07704"
+  },
+  "TLT07705": {
+    "en": "When you select a date and time, the target and indicator change.",
+    "ja": "日付、時間を選択すると、ターゲットと指標が変更されます。",
+    "ko": "날짜, 시간을 선택하면 대상과 지표가 변경됩니다.",
+    "zh": "When you select a date and time, the target and indicator change.",
+    "service_id": "TLT07705"
+  },
+  "ITM07706": {
+    "en": "Cloud",
+    "ja": "クラウド",
+    "ko": "클라우드",
+    "zh": "Cloud",
+    "service_id": "ITM07706"
+  },
+  "NTC07707": {
+    "en": "The maximum number of views has been reached and data can no longer be viewed.",
+    "ja": "最大照会できる件数になったため、これ以上データが照会できません。",
+    "ko": "최대 조회 가능 개수에 도달하여 더 이상 데이터 조회가 불가능합니다.",
+    "zh": "The maximum number of views has been reached and data can no longer be viewed.",
+    "service_id": "NTC07707"
+  },
+  "DSC07708": {
+    "en": "Master meta information functionality has been <b>reorganized into object manifest</b>. <br /> Now, in addition to checking the current manifest information of an object, <br /> it is possible <strong>to search for past information</strong> <br /> through the daily storage function for each object. <br /> Additionally, the newly introduced UI allows <br /> <strong>comparison between the present and the past or past points in time</strong>, <br /> making it easier to track changes in the cluster.",
+    "ja": "マスターメタ情報機能が<b>Object Manifestに変更</b>されました。 <br />Objectの現在のManifest情報が確認でき、<br />Objectごとに日別の保存により<strong>過去の時点の情報を照会することも</strong>可能です。 <br />また、新しくなったUIを通じて、<strong>現在と過去の時点や、過去の時点間を比較</strong>することで、<br />クラスタの変更内容がより簡単にトレースできます。",
+    "ko": "마스터 메타 정보 기능이 <b>오브젝트 매니페스트로 개편</b>되었습니다. <br /> 이제 오브젝트의 현재 매니페스트 정보를 확인하는 것은 물론이고 <br /> 오브젝트별 일별 저장 기능을 통한 <strong>과거시점의 정보 조회</strong>가 가능합니다. <br />또 새롭게 선보이는 UI를 통해 <strong>현재와 과거시점 또는 과거 시점간의 비교</strong>를 할 수 있어 <br /> 클러스터의 변동 사항을 더욱 쉽게 추적할 수 있습니다.",
+    "zh": "Master meta information functionality has been <b>reorganized into object manifest</b>. <br /> Now, in addition to checking the current manifest information of an object, <br /> it is possible <strong>to search for past information</strong> <br /> through the daily storage function for each object. <br /> Additionally, the newly introduced UI allows <br /> <strong>comparison between the present and the past or past points in time</strong>, <br /> making it easier to track changes in the cluster.",
+    "service_id": "DSC07708"
+  },
+  "TTL07709": {
+    "en": "View time",
+    "ja": "照会時刻",
+    "ko": "조회 시각",
+    "zh": "View time",
+    "service_id": "TTL07709"
   },
   "": {
     "": "",
