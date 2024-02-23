@@ -21,41 +21,41 @@ Write the settings for the DBX agent in the _whatap.conf_ file. For the options 
 
 ## CUBRID-dedicated options{#cubrid}
 
--   **db_port** <span class='type'>Int</span>
+- **db_port** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    Broker port information used for application connection information. Enter the value defined in `BROKER_PORT` in the broker configuration file (_cubrid_broker.conf_). (CUBRID default `BROKER_PORT: 33000`)
+  Broker port information used for application connection information. Enter the value defined in `BROKER_PORT` in the broker configuration file (_cubrid_broker.conf_). (CUBRID default `BROKER_PORT: 33000`)
 
--   **cms_port** <span class='type'>Int</span>
+- **cms_port** <span class='type'>Int</span>
 
-    Default `8001`
+  Default `8001`
 
-    This port is used by **CUBRID Manager**. In the **CUBRID Manager** configuration file (_cm.conf_), enter the value defined in `cm_port`. It is necessary to fetch monitoring information through the API of **CUBRID Manager**.
+  This port is used by **CUBRID Manager**. In the **CUBRID Manager** configuration file (_cm.conf_), enter the value defined in `cm_port`. It is necessary to fetch monitoring information through the API of **CUBRID Manager**.
 
--   **cms_token_file** <span class='type'>String</span>
+- **cms_token_file** <span class='type'>String</span>
 
-    If there are multiple DBs created by the user, WhaTap agents must have been installed and set as many as the number of DBs. In this case, the `cms_token_file` path is required to share tokens between agents. Set to _`{Agent installation path}`/cms_token_. 
+  If there are multiple DBs created by the user, WhaTap agents must have been installed and set as many as the number of DBs. In this case, the `cms_token_file` path is required to share tokens between agents. Set to _`{Agent installation path}`/cms_token_. 
 
-    For example) If agent2 has been installed, set as follows to share the `cms_token_file` path of agent1.
+  For example) If agent2 has been installed, set as follows to share the `cms_token_file` path of agent1.
 
-    ```ini title='whtap.conf'
+  ```ini title='whtap.conf'
 
-    cms_token_file=/agent1/cms_token
+  cms_token_file=/agent1/cms_token
 
-    ```
+  ```
 
--   **broker** <span class='type'>String</span>
+- **broker** <span class='type'>String</span>
 
-    Default `broker1`, `query_editor`
+  Default `broker1`, `query_editor`
 
-    Once CUBRID has been installed, the broker runs as `broker1` and `query_editor` by default. If you arbitrarily changed the name of the broker or started it additionally, enter the changes.
+  Once CUBRID has been installed, the broker runs as `broker1` and `query_editor` by default. If you arbitrarily changed the name of the broker or started it additionally, enter the changes.
 
-    :::note
+  :::note
 
-    The name to set with the `broker` option can be viewed by the `cubrid broker status` command.
+  The name to set with the `broker` option can be viewed by the `cubrid broker status` command.
 
-    :::
+  :::
 
 ## Data collection
 

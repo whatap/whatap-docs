@@ -21,40 +21,40 @@ Once you have received a **access key**, the **_Download_** button is enabled in
 
 :::note
 
--   The .zip file is also provided for the users who cannot accept .exe files due to security issues.
+- The .zip file is also provided for the users who cannot accept .exe files due to security issues.
 
--   For server security, it is recommended to run the downloaded installation file rather than installing through the browser.
+- For server security, it is recommended to run the downloaded installation file rather than installing through the browser.
 
 :::
 
 ## Installing the agent{#install-agent}
 
-1.  Double-click the downloaded installation file to run it.
+1. Double-click the downloaded installation file to run it.
 
-2.  According to the on-screen instructions, enter the **access key** in **_License Key_** and the **WhaTap server IP** in **_WhatTap IP_**.
+2. According to the on-screen instructions, enter the **access key** in **_License Key_** and the **WhaTap server IP** in **_WhatTap IP_**.
 
-    You can copy the **_access key_** and **_WhaTap server IP_** values from the project creation screen of the WhaTap Monitoring Service.
+   You can copy the **_access key_** and **_WhaTap server IP_** values from the project creation screen of the WhaTap Monitoring Service.
 
-    ![.NET installation - 01](https://img.whatap.io/media/agent_dotnet/install/agent_install_02.png)
+   ![.NET installation - 01](https://img.whatap.io/media/agent_dotnet/install/agent_install_02.png)
 
-3.  Click **_Next_**.
+3. Click **_Next_**.
 
-4.  In the following screen, click **_Install_**. Proceed with the installation.
+4. In the following screen, click **_Install_**. Proceed with the installation.
 
-5.  Click **_Finish_** to finish the installation.
+5. Click **_Finish_** to finish the installation.
 
 <details>
 <summary>Configuration file after installation of the .NET agent</summary>
 
 It consists of a tracer to collect monitoring data and agents to transfer the collected data to the server.
 
--   _WhaTap.ClrProfiler.dll_: .NET CLR profiler. It is connected to the .NET tracing API.
+- _WhaTap.ClrProfiler.dll_: .NET CLR profiler. It is connected to the .NET tracing API.
 
--   _WhaTap.Trace.dll_: It processes the data passed by the profiler and sends it to the agent.
+- _WhaTap.Trace.dll_: It processes the data passed by the profiler and sends it to the agent.
 
--   _whatap_dotnet.exe_: This program transfers the data passed from the agent or tracer to the collection server.
+- _whatap_dotnet.exe_: This program transfers the data passed from the agent or tracer to the collection server.
 
--   _whatap.conf_: Configuration file for the agent environment
+- _whatap.conf_: Configuration file for the agent environment
 
 </details>
 

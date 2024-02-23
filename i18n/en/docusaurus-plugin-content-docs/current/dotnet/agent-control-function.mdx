@@ -8,80 +8,80 @@ tags:
 
 The functions of the .NET application server are controlled.
 
--   **stat_enabled** <span class='type'>Boolean</span>
+- **stat_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The statistics tracing is enabled. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes. 
+  The statistics tracing is enabled. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes. 
 
--   **license** <span class='type'>String</span>
+- **license** <span class='type'>String</span>
 
-    Default `NONE`
+  Default `NONE`
 
-    To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
+  To install the agent, set the access key granted from the server. The access key includes the agent's project and the encryption key for secured communication.
 
--   **active_stack_enabled** <span class='type'>Boolean</span>
+- **active_stack_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Active stack tracing is enabled. The tracing data includes the **_top stack_**, **_unique stack_**, and **_active stack_** in **_Analysis_** > **_Stack_**.
+  Active stack tracing is enabled. The tracing data includes the **_top stack_**, **_unique stack_**, and **_active stack_** in **_Analysis_** > **_Stack_**.
 
--   **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
+- **realtime_user_thinktime_max** <span class='type'>Milliseconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
+  Set the maximum call interval credited by the same user when measuring the number of real-time browser users.
 
--   **time_sync_interval_ms** <span class='type'>Milliseconds</span>
+- **time_sync_interval_ms** <span class='type'>Milliseconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the synchronization time interval between the agent and the server. For no synchronization, set it to `0`.
+  Set the synchronization time interval between the agent and the server. For no synchronization, set it to `0`.
 
--   **text_reset** <span class='type'>Int</span>
+- **text_reset** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
+  The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
 
-    :::note
+  :::note
 
-    Transaction URLs and SQL strings correspond to text data.
+  Transaction URLs and SQL strings correspond to text data.
 
-    :::
+  :::
 
--   **profile_method_enabled** <span class='type'>Boolean</span>
+- **profile_method_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The user functions whose execution time exceeds the value of the `profile_method_time` option can be found in the transaction details.
+  The user functions whose execution time exceeds the value of the `profile_method_time` option can be found in the transaction details.
 
-    :::note
+  :::note
 
-    To apply the set values, restart IIS.
+  To apply the set values, restart IIS.
 
-    :::
+  :::
 
--   **profile_method_time** <span class='type'>Milliseconds</span>
+- **profile_method_time** <span class='type'>Milliseconds</span>
 
-    Default `1000`
+  Default `1000`
 
-    You can set the execution time of the functions to be collected in `profile_method_enabled` option.
+  You can set the execution time of the functions to be collected in `profile_method_enabled` option.
 
-    :::note
+  :::note
 
-    To apply the set values, restart IIS.
+  To apply the set values, restart IIS.
 
-    :::
+  :::
 
--   **profile_method_stack_enabled** <span class='type'>Boolean</span>
+- **profile_method_stack_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    You can check the stack information of the user functions in transaction details.
+  You can check the stack information of the user functions in transaction details.
 
-    :::note
+  :::note
 
-    To apply the set values, restart IIS.
+  To apply the set values, restart IIS.
 
-    :::
+  :::

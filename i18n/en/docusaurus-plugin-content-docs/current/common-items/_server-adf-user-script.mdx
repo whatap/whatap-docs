@@ -1,6 +1,6 @@
 It periodically runs the executable user script on the Linux server and uploads the results. Write your own script noting the following example
 
-1.  Write the script as follows and then run it.
+1. Write the script as follows and then run it.
 
 ```bash title='Linux Shell'
 #!/bin/bash
@@ -26,7 +26,7 @@ EOF
 done
 ```
 
-2.  Check whether the out is as follows:
+2. Check whether the out is as follows:
 
 ```bash title='Linux Shell'
 $ ./curl.sh
@@ -56,7 +56,7 @@ H https://service.whatap.io/ time_starttransfer 0.055226
 H https://service.whatap.io/ time_total 0.055307
 ```
 
-3.  Check whether the collection is normal and register the script to the WhaTap server monitoring agent as follows:
+3. Check whether the collection is normal and register the script to the WhaTap server monitoring agent as follows:
 
 ```bash title='Linux Shell'
 export USER_SCRIPT=Absolute path to the script to run

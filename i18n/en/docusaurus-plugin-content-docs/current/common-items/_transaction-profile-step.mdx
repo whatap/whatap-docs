@@ -10,32 +10,32 @@ WhaTap's step is used with the same meaning as Span.
 
 * * *
 
--   **DB connection step** <span class='type'>START-END</span>
+- **DB connection step** <span class='type'>START-END</span>
 
-    It includes the performance for connection to RDB. Step information includes the name, response time, and error.
+  It includes the performance for connection to RDB. Step information includes the name, response time, and error.
 
--   **SQL Step** <span class='type'>START-END</span>
+- **SQL Step** <span class='type'>START-END</span>
 
-    It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
+  It includes the performance for JDBC SQL. Step information includes connection data, SQL statements, and errors.
 
--   **HTTP Call step** <span class='type'>START-END</span>
+- **HTTP Call step** <span class='type'>START-END</span>
 
-    It includes the performance for the outbound HTTP service calls. Step information includes URL, host, port, response time, and errors.
+  It includes the performance for the outbound HTTP service calls. Step information includes URL, host, port, response time, and errors.
 
--   **Message step** <span class='type'>ADD</span>
+- **Message step** <span class='type'>ADD</span>
 
-    While collecting traces, the message steps are used to collect the records of all irregular sections.  
+  While collecting traces, the message steps are used to collect the records of all irregular sections.  
 
--   **SOCKET Step** <span class='type'>ADD</span>
+- **SOCKET Step** <span class='type'>ADD</span>
 
-    Step to represent the socket open.
+  Step to represent the socket open.
 
--   **METHOD Step** <span class='type'>START-END</span>
+- **METHOD Step** <span class='type'>START-END</span>
 
-    The method response time is traced.
+  The method response time is traced.
 
--   **ACTIVE STACK Step** <span class='type'>START-END</span>
+- **ACTIVE STACK Step** <span class='type'>START-END</span>
 
-    It includes the active stack information. It is created and collected by a separate thread and it is added to the transaction trace.
+  It includes the active stack information. It is created and collected by a separate thread and it is added to the transaction trace.
 
 * * *

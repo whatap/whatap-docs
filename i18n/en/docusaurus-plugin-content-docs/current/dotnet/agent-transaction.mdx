@@ -15,74 +15,74 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_dotnet-transaction-profile.mdx} 
 
--   **transaction_status_error_enable** <span class='type'>Boolean</span>
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
+  If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
--   **status_ignore** <span class='type'>String</span>
+- **status_ignore** <span class='type'>String</span>
 
-    You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
+  You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore=408,500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
 
--   **status_ignore_set** <span class='type'>String</span>
+- **status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+  `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
 
--   **httpc_status_error_enable** <span class='type'>Boolean</span>
+- **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
+  Set whether or not to collect when the HTTP status code is an error. It includes client error responses (`400` or higher) and server error responses (`500` or higher).
 
-    :::note
+  :::note
 
-    For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
+  For more information about the HTTP status codes, see [the following](https://developer.mozilla.org/docs/Web/HTTP/Status).
 
-    :::
+  :::
 
--   **httpc_status_ignore** <span class='type'>String</span>
+- **httpc_status_ignore** <span class='type'>String</span>
 
-    If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
+  If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
 
--   **httpc_status_ignore_set** <span class='type'>String</span>
+- **httpc_status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+  `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-    :::note
+  :::note
 
-    Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+  Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
 
-    :::
+  :::
 
--   **profile_http_parameter_keys** <span class='type'>String</span>
+- **profile_http_parameter_keys** <span class='type'>String</span>
 
-    Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
+  Only the parameters corresponding to the set key are recorded. For multiple values, use comma (,) as the delimiter.
 
--   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
-    Default `3000`
+  Default `3000`
 
-    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
+  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a slow section. If the transaction response time exceeds the set time, the number of slow active transactions is included.
 
--   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
-    Default `8000`
+  Default `8000`
 
-    In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a very slow section. If the transaction response time exceeds the set time, the number of very slow active transactions is included.
+  In the active transaction arc equalizer graph on the dashboard that checks collected data, specify the criteria for the transaction response time that can be recorded as a very slow section. If the transaction response time exceeds the set time, the number of very slow active transactions is included.
 
--   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
 
-    Default `30000`
+  Default `30000`
 
-    Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.
+  Timeout waiting for a transaction to end. If a transaction does not end within 5 minutes, no further transaction data is collected. You can see `Lost Connection` in the transaction trace information.

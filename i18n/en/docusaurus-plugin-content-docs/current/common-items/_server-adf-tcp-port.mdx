@@ -4,33 +4,33 @@ Select Home > Select Project > **_Alert_** > **_Event Setting_** > **_Server_** 
 
 <ImgLang img='server-adf-tcp-port.png' desc='TCP port'/>
 
--   Click the ![number-s](/img/number-01.png) **_Port_** metric toggle button and then change it to **_Use_**.
+- Click the ![number-s](/img/number-01.png) **_Port_** metric toggle button and then change it to **_Use_**.
 
--   Select ![number-s](/img/number-02.png) **_Save_** to save the settings.
+- Select ![number-s](/img/number-02.png) **_Save_** to save the settings.
 
--   Add the following command on the target server. 
+- Add the following command on the target server. 
 
-    <Tabs>
-      <TabItem value="lxst" label="Linux Shell">
+  <Tabs>
+    <TabItem value="lxst" label="Linux Shell">
 
-    ```bash title=SH
-    #Specify the IP to be monitored in the following variable.
-    export TARGET_IP=127.0.0.1
-    #Specify the port to be monitored in the following variable.
-    export TARGET_PORT=80
-    echo "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    ```
+  ```bash title=SH
+  #Specify the IP to be monitored in the following variable.
+  export TARGET_IP=127.0.0.1
+  #Specify the port to be monitored in the following variable.
+  export TARGET_PORT=80
+  echo "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
 
-    </TabItem>
-      <TabItem value="wpst" label="Windows Powershell">
+  </TabItem>
+    <TabItem value="wpst" label="Windows Powershell">
 
-    ```bash title=SH
-    #Specify the IP to be monitored in the following variable.
-    $TARGET_IP="127.0.0.1"
-    #Specify the port to be monitored in the following variable.
-    $TARGET_PORT="80"
-    Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT"
-    ```
+  ```bash title=SH
+  #Specify the IP to be monitored in the following variable.
+  $TARGET_IP="127.0.0.1"
+  #Specify the port to be monitored in the following variable.
+  $TARGET_PORT="80"
+  Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT"
+  ```
 
-    </TabItem>
-      </Tabs>
+  </TabItem>
+    </Tabs>

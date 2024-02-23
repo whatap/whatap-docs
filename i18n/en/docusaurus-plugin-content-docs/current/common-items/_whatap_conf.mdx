@@ -19,22 +19,22 @@ For more information about _whatap.conf_, see [the following](set-agent).
 
 Set a security key to query SQL variables and perform HTTP queries, or use the Thread stop function.
 
--   Java Agent 2.2.2 or later
+- Java Agent 2.2.2 or later
 
-    After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
-    ```ini title='security.conf'
-    paramkey=ABCDEF # SQL variable and HTTP query lookup
-    threadkill=ABCDEF # Thread stop function
-    ```
+  ```ini title='security.conf'
+  paramkey=ABCDEF # SQL variable and HTTP query lookup
+  threadkill=ABCDEF # Thread stop function
+  ```
 
--   Java agent 2.2.2 or earlier
+- Java agent 2.2.2 or earlier
 
-    After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
-    ```ini title='paramkey.txt'
-    ABCDEF # SQL variable and HTTP query lookup, thread stop function
-    ```
+  ```ini title='paramkey.txt'
+  ABCDEF # SQL variable and HTTP query lookup, thread stop function
+  ```
 
 :::tip
 
@@ -51,8 +51,8 @@ If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ 
 
 :::note
 
--   For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
+- For agent settings related to recording SQL parameters, see [the following](agent-dbsql#profile-sql-param).
 
--   For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
+- For agent settings related to recording the HTTP parameters, see [the following](agent-transaction#profile_http_parameter).
 
 :::
