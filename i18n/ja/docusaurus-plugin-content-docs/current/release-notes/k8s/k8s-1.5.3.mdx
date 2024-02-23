@@ -8,23 +8,23 @@ displayed_sidebar: releaseSidebar
 
 2024年01月30日
 
--   <Status>Fixed</Status>メトリクス収集時<code>server_disk</code>、<code>server_network</code>、<code>server_base</code>カテゴリーの収集間隔を5秒単位で合わせます。
+- <Status>Fixed</Status>メトリクス収集時<code>server_disk</code>、<code>server_network</code>、<code>server_base</code>カテゴリーの収集間隔を5秒単位で合わせます。
 
--   <Status>Changed</Status>メトリクス収集時<code>kube_node</code>カテゴリにノードの<b>external-ip</b>、<b>internal-ip</b>を追加
+- <Status>Changed</Status>メトリクス収集時<code>kube_node</code>カテゴリにノードの<b>external-ip</b>、<b>internal-ip</b>を追加
 
-    :::tip
+  :::tip
 
-    Kubernetesプロジェクトの<Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />で確認することができます。
+  Kubernetesプロジェクトの<Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />で確認することができます。
 
-    -   **InternalIP**
+  - **InternalIP**
 
-        クラスタ内でのみアクセスできるIPアドレスです。 クラスタ内にある他のノードやポッド(Pods)が互いに通信する時に使用するアドレスです。 この内部IPアドレスは、クラスターの外部からはアクセスできず、通常、プライベートネットワークアドレス範囲で割り当てられます。
+    クラスタ内でのみアクセスできるIPアドレスです。 クラスタ内にある他のノードやポッド(Pods)が互いに通信する時に使用するアドレスです。 この内部IPアドレスは、クラスターの外部からはアクセスできず、通常、プライベートネットワークアドレス範囲で割り当てられます。
 
-    -   **ExternalIP**
+  - **ExternalIP**
 
-        外部ネットワークからアクセスできるノードのIP アドレスです。 このアドレスにより、クラスター外部のシステムがノードにアクセスできます。 すべてのノードが外部IPアドレスを持っているわけではありません。外部IPアドレスが割り当てられるのは、クラスターを構成する環境(例えば、クラウドプロバイダ、ベアメタル環境など)によって異なる場合があります。
+    外部ネットワークからアクセスできるノードのIP アドレスです。 このアドレスにより、クラスター外部のシステムがノードにアクセスできます。 すべてのノードが外部IPアドレスを持っているわけではありません。外部IPアドレスが割り当てられるのは、クラスターを構成する環境(例えば、クラウドプロバイダ、ベアメタル環境など)によって異なる場合があります。
 
-    :::
+  :::
 
 :::info
 

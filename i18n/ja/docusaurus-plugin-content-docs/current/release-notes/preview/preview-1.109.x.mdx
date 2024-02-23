@@ -28,35 +28,35 @@ toc_max_heading_level: 2
 
 ### `Application`
 
--   <Status>Feature</Status><UI>アプリケーションダッシュボード</UI>メニューを次のように変更しました。
+- <Status>Feature</Status><UI>アプリケーションダッシュボード</UI>メニューを次のように変更しました。
 
-    -   タイムピッカーのオプションを追加し、過去データを照会できるように変更しました。
+  - タイムピッカーのオプションを追加し、過去データを照会できるように変更しました。
 
-        |                 リアルタイムモード                |
-        | :--------------------------------------: |
-        |    ![](/img/release/realtime-mode.png)   |
-        |              **非リアルタイムモード**              |
-        | ![](/img/release/none-realtime-mode.png) |
+    |                 リアルタイムモード                |
+    | :--------------------------------------: |
+    |    ![](/img/release/realtime-mode.png)   |
+    |              **非リアルタイムモード**              |
+    | ![](/img/release/none-realtime-mode.png) |
 
-    -   ユーザーが希望する場所にウィジェットを追加、または削除できます。 また希望するサイズに調整することも可能です。
+  - ユーザーが希望する場所にウィジェットを追加、または削除できます。 また希望するサイズに調整することも可能です。
 
-        ![](/img/release/apm-dashboad-editable-widget.png)
+    ![](/img/release/apm-dashboad-editable-widget.png)
 
-    -   ユーザーが編集したウィジェットの位置とサイズ、レイアウトを保存するプリセット機能を追加しました。
+  - ユーザーが編集したウィジェットの位置とサイズ、レイアウトを保存するプリセット機能を追加しました。
 
-        ![](/img/release/apm-dashboard-preset-feature.png)
+    ![](/img/release/apm-dashboard-preset-feature.png)
 
--   ダッシュボードの<UI>トレース分析</UI>画面で次の機能を追加および修正しました。
+- ダッシュボードの<UI>トレース分析</UI>画面で次の機能を追加および修正しました。
 
-    -   <Status>Feature</Status><UI>マルチトランザクション</UI>タブの<UI>テーブル</UI>ビュー、<UI>ツリー</UI>ビューモードでプロジェクトフィルター機能を追加
+  - <Status>Feature</Status><UI>マルチトランザクション</UI>タブの<UI>テーブル</UI>ビュー、<UI>ツリー</UI>ビューモードでプロジェクトフィルター機能を追加
 
-    -   <Status>Fixed</Status><UI>マルチトランザクション</UI>タブの<UI>チャート</UI>ビューモードでトランザクションノードをクリックすると<UI>テーブル</UI>ビューに切り替わるエラーの修正
+  - <Status>Fixed</Status><UI>マルチトランザクション</UI>タブの<UI>チャート</UI>ビューモードでトランザクションノードをクリックすると<UI>テーブル</UI>ビューに切り替わるエラーの修正
 
-    -   <Status>Feature</Status><UI>トランザクションログ</UI>タブからデータがない場合は、次の状況に応じたメッセージを出力するように機能を追加
+  - <Status>Feature</Status><UI>トランザクションログ</UI>タブからデータがない場合は、次の状況に応じたメッセージを出力するように機能を追加
 
-        -   実際のログデータがない場合
-        -   エージェント未設定でログを収集できない場合
-        -   ログが活性化されていない場合
+    - 実際のログデータがない場合
+    - エージェント未設定でログを収集できない場合
+    - ログが活性化されていない場合
 
 * * *
 
@@ -82,41 +82,41 @@ toc_max_heading_level: 2
 
 #### 共通
 
--   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスリスト</UI>メニューからチャートデータの間隔を修正
+- <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>インスタンスリスト</UI>メニューからチャートデータの間隔を修正
 
--   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>インスタンスリスト</UI>メニューからレプリケーション状態異常アラート表示を追加
+- <Status>Feature</Status><UI>ダッシュボード</UI>><UI>インスタンスリスト</UI>メニューからレプリケーション状態異常アラート表示を追加
 
--   <Status>Changed</Status><b>PostgreSQL</b>プロジェクトの<UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューからチャートをDBログの時間に合わせて描くように変更
+- <Status>Changed</Status><b>PostgreSQL</b>プロジェクトの<UI>ダッシュボード</UI>><UI>スロークエリ</UI>メニューからチャートをDBログの時間に合わせて描くように変更
 
--   <Status>Changed</Status><UI>統計/レポート</UI>><UI>SQL統計</UI>メニューからタブメニューを選択したときにテーブルの最初の行を選択するように変更
+- <Status>Changed</Status><UI>統計/レポート</UI>><UI>SQL統計</UI>メニューからタブメニューを選択したときにテーブルの最初の行を選択するように変更
 
--   <Status>Changed</Status>yard APIパラメータ変更
+- <Status>Changed</Status>yard APIパラメータ変更
 
-    -   通知設定/照会API
+  - 通知設定/照会API
 
-    -   Kill session API
+  - Kill session API
 
 #### Database V2
 
--   <Status>Changed</Status><UI>マルチインスタンスモニタリング</UI>メニューからクエリ一覧テーブルの並べ替えと幅の調整
+- <Status>Changed</Status><UI>マルチインスタンスモニタリング</UI>メニューからクエリ一覧テーブルの並べ替えと幅の調整
 
--   <Status>Feature</Status><UI>インスタンスモニタリング</UI>メニューからメトリクス選択画面にLazyLoad属性を適用
+- <Status>Feature</Status><UI>インスタンスモニタリング</UI>メニューからメトリクス選択画面にLazyLoad属性を適用
 
--   <Status>Feature</Status><b>PostgreSQL</b>プロジェクトで次のメニューを追加
+- <Status>Feature</Status><b>PostgreSQL</b>プロジェクトで次のメニューを追加
 
-    -   <UI>分析</UI>><UI>セッション履歴</UI>
+  - <UI>分析</UI>><UI>セッション履歴</UI>
 
-    -   <UI>分析</UI>><UI>Wait分析</UI>
+  - <UI>分析</UI>><UI>Wait分析</UI>
 
--   <Status>Feature</Status><b>MySQL</b>プロジェクトで<UI>統計/レポート</UI>><UI>MySQL SQL統計</UI>メニュー追加
+- <Status>Feature</Status><b>MySQL</b>プロジェクトで<UI>統計/レポート</UI>><UI>MySQL SQL統計</UI>メニュー追加
 
 * * *
 
 ### `Container`
 
--   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューの<b>詳細を見る</b>から<UI>外部呼び出し状態</UI>と<UI>呼び出しフローチャート</UI>タブを追加
+- <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューの<b>詳細を見る</b>から<UI>外部呼び出し状態</UI>と<UI>呼び出しフローチャート</UI>タブを追加
 
--   <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューからコンテナ情報照会テーブルにデータ項目を追加
+- <Status>Feature</Status><UI>ダッシュボード</UI>><UI>コンテナマップ</UI>メニューからコンテナ情報照会テーブルにデータ項目を追加
 
 * * *
 
@@ -152,12 +152,12 @@ toc_max_heading_level: 2
 
 ### `ネットワーク`
 
--   <Status>Fixed</Status>次のメニューで表示する各指標の計算方式エラーの修正
+- <Status>Fixed</Status>次のメニューで表示する各指標の計算方式エラーの修正
 
-    -   **_ダッシュボード_**>**_ネットワークトポロジー_**
-    -   **_ダッシュボード_**>**_ネットワーク推移(TCP)_**
+  - **_ダッシュボード_**>**_ネットワークトポロジー_**
+  - **_ダッシュボード_**>**_ネットワーク推移(TCP)_**
 
--   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ネットワークトポロジ</UI>メニューでトポロジチャートに表示されるラベルの小数点表記の修正
+- <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>ネットワークトポロジ</UI>メニューでトポロジチャートに表示されるラベルの小数点表記の修正
 
 </div>
 
@@ -189,13 +189,13 @@ toc_max_heading_level: 2
 
 ### `Server`
 
--   <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>リソースボード</UI>/<UI>CPUリソースマップ</UI>メニューのレイアウトがSafariブラウザで正しく表示されない問題の修正
+- <Status>Fixed</Status><UI>ダッシュボード</UI>><UI>リソースボード</UI>/<UI>CPUリソースマップ</UI>メニューのレイアウトがSafariブラウザで正しく表示されない問題の修正
 
--   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューの<UI>イベント追加</UI>ウィンドウから<UI>イベント発行条件</UI>のメトリクステキストが幅に合わせて改行されるように修正
+- <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>メニューの<UI>イベント追加</UI>ウィンドウから<UI>イベント発行条件</UI>のメトリクステキストが幅に合わせて改行されるように修正
 
--   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからWindowsインストールファイルオプションのうち<UI>Silent Install</UI>ボタンを除去
+- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューからWindowsインストールファイルオプションのうち<UI>Silent Install</UI>ボタンを除去
 
--   <Status>Fixed</Status><UI>ログ</UI>><UI>ログ設定</UI>メニューからウィンドウコマンドコードのディレクトリパスの修正
+- <Status>Fixed</Status><UI>ログ</UI>><UI>ログ設定</UI>メニューからウィンドウコマンドコードのディレクトリパスの修正
 
 * * *
 
@@ -213,11 +213,11 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Feature</Status><UI>分析</UI>><UI>メトリクスチャート</UI>メニューから活性化されたすべてのウィジェットを閉じるボタンを追加
+- <Status>Feature</Status><UI>分析</UI>><UI>メトリクスチャート</UI>メニューから活性化されたすべてのウィジェットを閉じるボタンを追加
 
--   <Status>Changed</Status><UI>管理</UI>><UI>エージェント設定</UI>メニューでユーザビリティーを高めるためにオプション一覧を簡素化
+- <Status>Changed</Status><UI>管理</UI>><UI>エージェント設定</UI>メニューでユーザビリティーを高めるためにオプション一覧を簡素化
 
-    <UI>オプション作成</UI>セクションの左リストから適用されたオプションの上位カテゴリ分類を削除し、最終オプション項目のみが見えるように修正
+  <UI>オプション作成</UI>セクションの左リストから適用されたオプションの上位カテゴリ分類を削除し、最終オプション項目のみが見えるように修正
 
 * * *
 
@@ -265,39 +265,39 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Feature</Status><UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択した場合、デフォルトのインターバル値を表示する機能の追加
+- <Status>Feature</Status><UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択した場合、デフォルトのインターバル値を表示する機能の追加
 
-    <div class='.release-compare'>
+  <div class='.release-compare'>
 
-    |                      変更前                     |                     変更後                     |
-    | :------------------------------------------: | :-----------------------------------------: |
-    | ![](/img/release/interval-option-before.png) | ![](/img/release/interval-option-after.png) |
+  |                      変更前                     |                     変更後                     |
+  | :------------------------------------------: | :-----------------------------------------: |
+  | ![](/img/release/interval-option-before.png) | ![](/img/release/interval-option-after.png) |
 
-    </div>
+  </div>
 
--   <Status>Changed</Status><UI>時間</UI>照会区間が変更されるとき<UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択するようにロジックを修正
+- <Status>Changed</Status><UI>時間</UI>照会区間が変更されるとき<UI>インターバル</UI>選択オプションから<UI>デフォルト</UI>項目を選択するようにロジックを修正
 
-    照会区間を変更する際、**_インターバル_**オプションが**_デフォルト_**項目が選択される場合は、次のとおりです。
+  照会区間を変更する際、**_インターバル_**オプションが**_デフォルト_**項目が選択される場合は、次のとおりです。
 
-    -   **_インターバル_**オプションで以前の選択項目が**_デフォルト_**の場合
+  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**の場合
 
-    -   **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、変更された**_インターバル_** オプション一覧にない場合
+  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、変更された**_インターバル_** オプション一覧にない場合
 
-    -   **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、選択した**_インターバル_** オプション値が照会期間の半分以下の場合
+  - **_インターバル_**オプションで以前の選択項目が**_デフォルト_**ではなく、選択した**_インターバル_** オプション値が照会期間の半分以下の場合
 
--   <Status>Fixed</Status>一部の状況で<UI>カラム設定</UI>ポップアップの<UI>確認</UI>ボタンを押したときに、不明なエラーメッセージを表示し、作動しないエラーの修正
+- <Status>Fixed</Status>一部の状況で<UI>カラム設定</UI>ポップアップの<UI>確認</UI>ボタンを押したときに、不明なエラーメッセージを表示し、作動しないエラーの修正
 
--   <Status>Fixed</Status><UI>アカウント情報管理</UI>メニューから、WhatsAppに電話番号を入力すると、国コード番号が空欄にデフォルト設定されるエラーを修正
+- <Status>Fixed</Status><UI>アカウント情報管理</UI>メニューから、WhatsAppに電話番号を入力すると、国コード番号が空欄にデフォルト設定されるエラーを修正
 
--   <Status>Fixed</Status>初期画面<UI>プロジェクトリスト</UI>のカードビュー画面で<UI>アプリケーション</UI> 項目のカウントが０に出力されるバグを修正
+- <Status>Fixed</Status>初期画面<UI>プロジェクトリスト</UI>のカードビュー画面で<UI>アプリケーション</UI> 項目のカウントが０に出力されるバグを修正
 
 * * *
 
 ### `Application`
 
--   <Status>Changed</Status>JAVAプロジェクトの<UI>管理</UI>><UI>エージェント設定</UI>メニューから<code>biz_exceptions</code>と<code>ignore_exceptions</code>オプションのカテゴリを<UI>通知オプション</UI>><UI>HTTP outbound呼び出し</UI>から<UI>Exception</UI>下位に変更
+- <Status>Changed</Status>JAVAプロジェクトの<UI>管理</UI>><UI>エージェント設定</UI>メニューから<code>biz_exceptions</code>と<code>ignore_exceptions</code>オプションのカテゴリを<UI>通知オプション</UI>><UI>HTTP outbound呼び出し</UI>から<UI>Exception</UI>下位に変更
 
--   <Status>Fixed</Status><UI>トレース分析</UI>ウィンドウの<UI>トランザクションログ</UI>タブでログ照会パスワードが設定された場合、レイアウトが壊れる現象を修正
+- <Status>Fixed</Status><UI>トレース分析</UI>ウィンドウの<UI>トランザクションログ</UI>タブでログ照会パスワードが設定された場合、レイアウトが壊れる現象を修正
 
 * * *
 
@@ -337,13 +337,13 @@ toc_max_heading_level: 2
 
 #### ダッシュボード
 
--   <Status>Changed</Status><UI>ネットワークトポロジー</UI>メニューからプリセットが<UI>デフォルト</UI>状態の場合は、更新時に設定状態を維持するように変更
+- <Status>Changed</Status><UI>ネットワークトポロジー</UI>メニューからプリセットが<UI>デフォルト</UI>状態の場合は、更新時に設定状態を維持するように変更
 
--   <Status>Fixed</Status><UI>ネットワークトポロジー</UI>メニューでトポロジーに表示されるエッジのラベル値に単位も表示されるよう修正
+- <Status>Fixed</Status><UI>ネットワークトポロジー</UI>メニューでトポロジーに表示されるエッジのラベル値に単位も表示されるよう修正
 
--   <Status>Fixed</Status><UI>ネットワークトポロジー</UI>メニューから一部のツールチップが、ボタンを隠れてクリックできない問題を修正
+- <Status>Fixed</Status><UI>ネットワークトポロジー</UI>メニューから一部のツールチップが、ボタンを隠れてクリックできない問題を修正
 
--   <Status>Changed</Status><UI>ネットワーク推移(TCP)</UI>メニューの<UI>Retransmission Count</UI>、<UI>Lost Count</UI>チャートがノード間の通信基準ではなく、ノード基準で値を表示するように変更
+- <Status>Changed</Status><UI>ネットワーク推移(TCP)</UI>メニューの<UI>Retransmission Count</UI>、<UI>Lost Count</UI>チャートがノード間の通信基準ではなく、ノード基準で値を表示するように変更
 
 #### 分析
 
@@ -373,17 +373,17 @@ toc_max_heading_level: 2
 
 #### トランザクション検索
 
--   <Status>Changed</Status><UI>分析</UI>><UI>トランザクション検索</UI>メニューから<UI>原本URL</UI>カラム追加
+- <Status>Changed</Status><UI>分析</UI>><UI>トランザクション検索</UI>メニューから<UI>原本URL</UI>カラム追加
 
--   <Status>Changed</Status><UI>分析</UI>><UI>トランザクション検索</UI>メニューからダウンロードしたCSVデータファイルに<UI>原本URL</UI>メトリクス追加
+- <Status>Changed</Status><UI>分析</UI>><UI>トランザクション検索</UI>メニューからダウンロードしたCSVデータファイルに<UI>原本URL</UI>メトリクス追加
 
 * * *
 
 ### `Container`
 
--   <Status>Fixed</Status><UI>コンテナマップ</UI>メニューから<UI>グループ化</UI>しない場合、チャートブロックが一部隠れる現象の修正
+- <Status>Fixed</Status><UI>コンテナマップ</UI>メニューから<UI>グループ化</UI>しない場合、チャートブロックが一部隠れる現象の修正
 
--   <Status>Changed</Status><UI>ダッシュボード</UI>><UI>Flexボード</UI>および<UI>分析</UI>><UI>メトリクスチャート</UI>メニューからエージェントフィルターに表示されるフィルター名の修正
+- <Status>Changed</Status><UI>ダッシュボード</UI>><UI>Flexボード</UI>および<UI>分析</UI>><UI>メトリクスチャート</UI>メニューからエージェントフィルターに表示されるフィルター名の修正
 
 </div>
 
@@ -399,11 +399,11 @@ toc_max_heading_level: 2
 
 <p><Status>Changed</Status><UI>トランザクション分析</UI>ウィンドウで次の内容を変更</p>
 
--   トランザクション一覧の<UI>カラム設定</UI>にて<UI>No</UI>カラムのみを削除できないように変更
+- トランザクション一覧の<UI>カラム設定</UI>にて<UI>No</UI>カラムのみを削除できないように変更
 
--   トランザクション一覧の最低選択カラム数を5つに変更
+- トランザクション一覧の最低選択カラム数を5つに変更
 
--   トランザクション一覧のフィルターから<UI>エラー</UI>オプション追加
+- トランザクション一覧のフィルターから<UI>エラー</UI>オプション追加
 
 * * *
 
@@ -453,11 +453,11 @@ toc_max_heading_level: 2
 
 この変更は、他のユーザーに選択したトランザクション項目のURLを共有する際に役立ちます。 
 
-1.  トランザクション一覧から特定のトランザクション項目を選択し、ウェブブラウザのURLをコピーしてください。
+1. トランザクション一覧から特定のトランザクション項目を選択し、ウェブブラウザのURLをコピーしてください。
 
-2.  ウェブブラウザで、新しいタブまたは新しいウィンドウを介してそのURLに移動してください。
+2. ウェブブラウザで、新しいタブまたは新しいウィンドウを介してそのURLに移動してください。
 
-3.  トランザクション一覧から、該当トランザクションが選択されていることを確認できます。
+3. トランザクション一覧から、該当トランザクションが選択されていることを確認できます。
 
 #### Flexボード
 
@@ -479,9 +479,9 @@ toc_max_heading_level: 2
 
 #### ダッシュボード
 
--   <Status>Changed</Status><UI>コンテナマップ</UI>メニューからカテゴリーを<UI>Container</UI>に設定した場合、ブロックの行の間隔を修正
+- <Status>Changed</Status><UI>コンテナマップ</UI>メニューからカテゴリーを<UI>Container</UI>に設定した場合、ブロックの行の間隔を修正
 
--   <Status>Changed</Status><UI>コンテナマップ</UI>メニューから2段階グループ化設定時に、グループ名が表示されるように修正
+- <Status>Changed</Status><UI>コンテナマップ</UI>メニューから2段階グループ化設定時に、グループ名が表示されるように修正
 
 </div>
 
@@ -495,19 +495,19 @@ toc_max_heading_level: 2
 
 #### 利用内訳
 
--   <Status>Changed</Status><UI>請求及び納付内訳</UI>メニューの<UI>請求内容の詳細を見る</UI>から<UI>CPUコア</UI>の代わりに<UI>課金集計量</UI>を表示
+- <Status>Changed</Status><UI>請求及び納付内訳</UI>メニューの<UI>請求内容の詳細を見る</UI>から<UI>CPUコア</UI>の代わりに<UI>課金集計量</UI>を表示
 
--   <Status>Fixed</Status><UI>利用内訳</UI>下位メニューから<code>Network</code>プロジェクトアイコンが正常に露出するように修正
+- <Status>Fixed</Status><UI>利用内訳</UI>下位メニューから<code>Network</code>プロジェクトアイコンが正常に露出するように修正
 
--   <Status>Fixed</Status><code>Network</code>プロジェクトの課金集計がエージェント基準で表示されるように修正
+- <Status>Fixed</Status><code>Network</code>プロジェクトの課金集計がエージェント基準で表示されるように修正
 
--   <Status>Feature</Status>以下のメニュー経路でKRWを基準にJPY、USD為替レートに応じて金額及び為替レートアップデート日付を表示
+- <Status>Feature</Status>以下のメニュー経路でKRWを基準にJPY、USD為替レートに応じて金額及び為替レートアップデート日付を表示
 
-    -   **_プロジェクト有償転換_**
+  - **_プロジェクト有償転換_**
 
-    -   **_請求及び支払履歴_**
+  - **_請求及び支払履歴_**
 
-    -   **_請求書プレビュー_**
+  - **_請求書プレビュー_**
 
 * * *
 
@@ -515,9 +515,9 @@ toc_max_heading_level: 2
 
 <p><Status>Fixed</Status><UI>ログ検索</UI>メニューからログの数字(.n)タグをクリックし、ドロップダウンメニューから次の項目を選択すると演算子が抜ける現象を修正</p>
 
--   <UI>検索</UI>を選択するとき<code>==</code>演算子が抜ける現象を修正
+- <UI>検索</UI>を選択するとき<code>==</code>演算子が抜ける現象を修正
 
--   <UI>除外検索</UI>を選択するとき<code>!=</code>演算子が抜ける現象を修正
+- <UI>除外検索</UI>を選択するとき<code>!=</code>演算子が抜ける現象を修正
 
 * * *
 
@@ -541,9 +541,9 @@ toc_max_heading_level: 2
 
 ### `Container`
 
--   <Status>Fixed</Status>フィルター適用ロジックの改善
+- <Status>Fixed</Status>フィルター適用ロジックの改善
 
--   <Status>Fixed</Status>ネームスペースプロジェクトに対する<b>照会</b>権限がない場合<UI>リソース</UI>><UI>パフォーマンス要約</UI>メニューが表示されないバグを修正
+- <Status>Fixed</Status>ネームスペースプロジェクトに対する<b>照会</b>権限がない場合<UI>リソース</UI>><UI>パフォーマンス要約</UI>メニューが表示されないバグを修正
 
 </div>
 
@@ -563,9 +563,9 @@ toc_max_heading_level: 2
 
 #### 管理
 
--   <Status>Feature</Status><UI>エージェントのインストール</UI> メニューから文書ガイド、動画チュートリアルリンクを追加
+- <Status>Feature</Status><UI>エージェントのインストール</UI> メニューから文書ガイド、動画チュートリアルリンクを追加
 
--   <Status>Changed</Status><UI>エージェントのインストール</UI> メニューからyamlファイルダウンロードボタンのスタイル修正
+- <Status>Changed</Status><UI>エージェントのインストール</UI> メニューからyamlファイルダウンロードボタンのスタイル修正
 
 </div>
 
@@ -577,23 +577,23 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューの<UI>TOO_SLOW_SQL</UI>テンプレートから<UI>イベント発生条件</UI>項目の重複値、未使用値の除去
+- <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>メトリクス</UI>メニューの<UI>TOO_SLOW_SQL</UI>テンプレートから<UI>イベント発生条件</UI>項目の重複値、未使用値の除去
 
--   <Status>Fixed</Status>言語が英語に設定されている場合、<UI>アカウント情報管理</UI>メニューから次の事例に出力される通知メッセージの不自然なスペースを修正
+- <Status>Fixed</Status>言語が英語に設定されている場合、<UI>アカウント情報管理</UI>メニューから次の事例に出力される通知メッセージの不自然なスペースを修正
 
-    -   マルチファクター認証を解除するとき
+  - マルチファクター認証を解除するとき
 
-    -   OTP認証キーを作成する際
+  - OTP認証キーを作成する際
 
-    -   OTP認証を取り消す際
+  - OTP認証を取り消す際
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>分析</UI>><UI>ヒットマップ</UI>メニューからアプリケーション選択ボックスのデフォルト値を<UI>すべて選択</UI>に修正
+- <Status>Fixed</Status> <UI>分析</UI>><UI>ヒットマップ</UI>メニューからアプリケーション選択ボックスのデフォルト値を<UI>すべて選択</UI>に修正
 
--   <Status>Feature</Status><UI>統計/レポート</UI>><UI>統計</UI>メニューの<UI>クライアントIP</UI>タブでIP一覧のうち、WhaTapIPアドレスに該当する場合<b>(Whatap)</b>表示の追加
+- <Status>Feature</Status><UI>統計/レポート</UI>><UI>統計</UI>メニューの<UI>クライアントIP</UI>タブでIP一覧のうち、WhaTapIPアドレスに該当する場合<b>(Whatap)</b>表示の追加
 
 </div>
 
@@ -611,21 +611,21 @@ toc_max_heading_level: 2
 
 #### 利用内訳
 
--   <Status>Fixed</Status>プロモーション終了期間をUTC時間基準で出力するよう修正
+- <Status>Fixed</Status>プロモーション終了期間をUTC時間基準で出力するよう修正
 
--   <Status>Changed</Status>決済情報入力欄に部署名、電話番号、請求書言語を入力できるように修正
+- <Status>Changed</Status>決済情報入力欄に部署名、電話番号、請求書言語を入力できるように修正
 
 * * *
 
 ### `ネットワーク`
 
--   <Status>Changed</Status>次のメニュー パスでタグ選択者のスタイル変更
+- <Status>Changed</Status>次のメニュー パスでタグ選択者のスタイル変更
 
-    -   **_ダッシュボード_**>**_ネットワークトポロジー_**
+  - **_ダッシュボード_**>**_ネットワークトポロジー_**
 
-    -   **_ダッシュボード_**>**_ネットワーク推移_**
+  - **_ダッシュボード_**>**_ネットワーク推移_**
 
--   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから状況に応じてプロキシサーバー アドレスの表記に発生するエラーを修正
+- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューから状況に応じてプロキシサーバー アドレスの表記に発生するエラーを修正
 
 * * *
 
@@ -665,13 +665,13 @@ toc_max_heading_level: 2
 
 **_ログ検索機_**/**_ライブテール_**メニューから次の機能を修正します。
 
--   <Status>Fixed</Status>ログ フィルタに検索値がないか、検索値を入力していない場合は、案内メッセージを出力
+- <Status>Fixed</Status>ログ フィルタに検索値がないか、検索値を入力していない場合は、案内メッセージを出力
 
--   <Status>Fixed</Status>ログ フィルタでタグをクリックして値を修正する場合、重複した値が存在する場合は案内メッセージを出力
+- <Status>Fixed</Status>ログ フィルタでタグをクリックして値を修正する場合、重複した値が存在する場合は案内メッセージを出力
 
--   <Status>Fixed</Status>ログフィルタで重複した値を複数入力し、1つを修正する場合、重複した値すべてが修正される現象修正
+- <Status>Fixed</Status>ログフィルタで重複した値を複数入力し、1つを修正する場合、重複した値すべてが修正される現象修正
 
--   <Status>Fixed</Status>ログ フィルタで.n キーを入力し、比較オペレーターをクリックせずに<b>==100</b>のように<code>比較オペレーターの値</code>をすぐ入力すると <b>+</b>、<b>-</b>が前につく現象を修正
+- <Status>Fixed</Status>ログ フィルタで.n キーを入力し、比較オペレーターをクリックせずに<b>==100</b>のように<code>比較オペレーターの値</code>をすぐ入力すると <b>+</b>、<b>-</b>が前につく現象を修正
 
 </div>
 
@@ -687,23 +687,23 @@ toc_max_heading_level: 2
 
 **_コンテナ一覧_**メニューから次の機能を追加および修正します。
 
--   <Status>Changed</Status>コンテナ一覧の照会周期を1分から10秒に変更
+- <Status>Changed</Status>コンテナ一覧の照会周期を1分から10秒に変更
 
--   <Status>Feature</Status>フィルタ検索機能の追加
+- <Status>Feature</Status>フィルタ検索機能の追加
 
--   <Status>Changed</Status>ユーザビリティのためのUI改善
+- <Status>Changed</Status>ユーザビリティのためのUI改善
 
--   <Status>Deprecated</Status>ノードエージェントセレクタの削除(フィルタ検索に置き換え)
+- <Status>Deprecated</Status>ノードエージェントセレクタの削除(フィルタ検索に置き換え)
 
--   <Status>Deprecated</Status>テキスト検索の削除(フィルター検索に置き換え)
+- <Status>Deprecated</Status>テキスト検索の削除(フィルター検索に置き換え)
 
 * * *
 
 ### `Log`
 
--   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI> メニューから<UI>リアルタイムログイベント</UI>または<UI>複合対数イベント</UI>を追加または修正する場合、翻訳値が正常に出力されない現象の修正
+- <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI> メニューから<UI>リアルタイムログイベント</UI>または<UI>複合対数イベント</UI>を追加または修正する場合、翻訳値が正常に出力されない現象の修正
 
--   <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI> メニューから<b>通知設定</b>権限がないか、ログモニタリングがアクティブ化されていなくても、ログイベント設定内容を表示できるように修正
+- <Status>Fixed</Status><UI>アラート通知</UI>><UI>イベント設定</UI>><UI>ログ</UI> メニューから<b>通知設定</b>権限がないか、ログモニタリングがアクティブ化されていなくても、ログイベント設定内容を表示できるように修正
 
 * * *
 

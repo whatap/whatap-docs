@@ -7,11 +7,11 @@ pagination_next: release-notes/db/dbx-1_6_18
 
 2024年02月01日
 
--   <Status>Changed</Status> DBXエージェントのログファイル名を<em>dbx.log</em>から<em>whatap.log</em>に変更
+- <Status>Changed</Status> DBXエージェントのログファイル名を<em>dbx.log</em>から<em>whatap.log</em>に変更
 
-    -   変更前：25MB基準で過去のログは<em>dbx.log.n</em>ファイルに分離されました。
-    -   変更後：現在の日付の起動ログは<em>whatap.log</em>ファイルに記録され、日付が変更されると<em>whatap-yyyymmdd.log</em>ファイルに分離されます。 ファイルサイズの制限なしで60日まで保存します。
+  - 変更前：25MB基準で過去のログは<em>dbx.log.n</em>ファイルに分離されました。
+  - 変更後：現在の日付の起動ログは<em>whatap.log</em>ファイルに記録され、日付が変更されると<em>whatap-yyyymmdd.log</em>ファイルに分離されます。 ファイルサイズの制限なしで60日まで保存します。
 
--   <Status>Fixed</Status>エージェント起動時AgentInfo bootParam init順序によるNullPointerExeceptionバグを修正
+- <Status>Fixed</Status>エージェント起動時AgentInfo bootParam init順序によるNullPointerExeceptionバグを修正
 
--   <Status>Changed</Status> <code>disk_usage_interval=60</code>オプションを基本収集するように変更
+- <Status>Changed</Status> <code>disk_usage_interval=60</code>オプションを基本収集するように変更

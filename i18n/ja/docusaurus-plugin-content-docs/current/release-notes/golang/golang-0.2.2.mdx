@@ -7,76 +7,76 @@ pagination_next: release-notes/golang/golang-0_1_14
 
 2023年6月21日
 
--   <Status>Change</Status>エージェント設定方法の変更
+- <Status>Change</Status>エージェント設定方法の変更
 
-    -   プロセス単位で_whatap.conf_ファイルを設定するように変更されました。
+  - プロセス単位で_whatap.conf_ファイルを設定するように変更されました。
 
-    -   プロセス実行前に_whatap.conf_ファイルを事前に作成する必要があります。
+  - プロセス実行前に_whatap.conf_ファイルを事前に作成する必要があります。
 
-    -   既存設定に使用された_/usr/whatap/agent/whatap.conf_ファイルは、whatap-agentサービスのみ使用します。
+  - 既存設定に使用された_/usr/whatap/agent/whatap.conf_ファイルは、whatap-agentサービスのみ使用します。
 
-    :::note
+  :::note
 
-    -   プロセス単位で1つのエージェントとして認識され、データが分離されます。
+  - プロセス単位で1つのエージェントとして認識され、データが分離されます。
 
-    -   従来は、複数のプロセスがすべて1つのエージェントとして認識され、データが統合されていました。
+  - 従来は、複数のプロセスがすべて1つのエージェントとして認識され、データが統合されていました。
 
-    :::
+  :::
 
-    :::tip
+  :::tip
 
-    **エージェント設定**方法の詳細については、[次の文書](../../golang/install-agent#set-agent)を参照してください。
+  **エージェント設定**方法の詳細については、[次の文書](../../golang/install-agent#set-agent)を参照してください。
 
-    :::
+  :::
 
--   <Status>Change</Status>エージェントのIPC通信をUDPからTCPに変更
+- <Status>Change</Status>エージェントのIPC通信をUDPからTCPに変更
 
-    -   `net_udp_host`、`net_udp_port`のオプションは変わりません
+  - `net_udp_host`、`net_udp_port`のオプションは変わりません
 
-    -   追加された`net_ipc_host`、`net_ipc_port`オプション使用可能
+  - 追加された`net_ipc_host`、`net_ipc_port`オプション使用可能
 
-    デフォルト値として、IPは127.0.0.1、ポート番号は6600を使用します。 変更するには、ユーザーアプリケーションとwhatap-agentサービス設定ファイルを変更してください。 再起動後に適用されます。
+  デフォルト値として、IPは127.0.0.1、ポート番号は6600を使用します。 変更するには、ユーザーアプリケーションとwhatap-agentサービス設定ファイルを変更してください。 再起動後に適用されます。
 
-    1.  ユーザーアプリケーションの_whatap.conf_ファイル変更
+  1. ユーザーアプリケーションの_whatap.conf_ファイル変更
 
-    ```ini title='whatap.conf'
-    # ホスト変更
-    net_ipc_host=127.0.0.1
-    # ポート変更
-    net_ipc_port=6601
-    ```
+  ```ini title='whatap.conf'
+  # ホスト変更
+  net_ipc_host=127.0.0.1
+  # ポート変更
+  net_ipc_port=6601
+  ```
 
-    1.  whatap-agentサービスの_whatap.conf_ファイル変更
+  1. whatap-agentサービスの_whatap.conf_ファイル変更
 
-    ```bash
-    vi /usr/whatap/agent/whatap.conf
+  ```bash
+  vi /usr/whatap/agent/whatap.conf
 
-    # ポート番号変更 
-    net_ipc_port=6601
-    ```
+  # ポート番号変更 
+  net_ipc_port=6601
+  ```
 
-    1.  再起動
+  1. 再起動
 
-    ```bash
-    service whatap-agent restart
-    ```
+  ```bash
+  service whatap-agent restart
+  ```
 
--   <Status>Change</Status>エージェントの命名ルールの変更
+- <Status>Change</Status>エージェントの命名ルールの変更
 
-    -   既存：`{type}`-`{ip2}`-`{ip3}`-`{process}`
+  - 既存：`{type}`-`{ip2}`-`{ip3}`-`{process}`
 
-    -   変更：`{type}`-`{ip2}`-`{ip3}`-`{cmd}`-`{cmd_full}`
+  - 変更：`{type}`-`{ip2}`-`{ip3}`-`{cmd}`-`{cmd_full}`
 
-    :::note
+  :::note
 
-    -   `{cmd}`：プロセス名です。 実行args[0] 値です。
+  - `{cmd}`：プロセス名です。 実行args[0] 値です。
 
-    -   `{cmd_full}`：実行コマンドのすべての行をハッシュ値として処理します。 実行args全体です。
+  - `{cmd_full}`：実行コマンドのすべての行をハッシュ値として処理します。 実行args全体です。
 
-    -   同じプロセスと引数を使用する場合、エージェント名が重複する可能性があります。 _whatap.conf_ファイルに`app_name`オプションをユーザーが設定できます。 詳細は、[次の文書](../../golang/install-agent#duplicate_appname)を参照してください。 設定を完了した後は、アプリケーションを再起動する必要があります。
+  - 同じプロセスと引数を使用する場合、エージェント名が重複する可能性があります。 _whatap.conf_ファイルに`app_name`オプションをユーザーが設定できます。 詳細は、[次の文書](../../golang/install-agent#duplicate_appname)を参照してください。 設定を完了した後は、アプリケーションを再起動する必要があります。
 
-    :::
+  :::
 
--   <Status>Change</Status>メモリ使用量の変更
+- <Status>Change</Status>メモリ使用量の変更
 
-    `runtime.MemStats`内部の`HeapInUse`と`StackInUse`項目の合計でメモリ使用量を表示します。 
+  `runtime.MemStats`内部の`HeapInUse`と`StackInUse`項目の合計でメモリ使用量を表示します。 

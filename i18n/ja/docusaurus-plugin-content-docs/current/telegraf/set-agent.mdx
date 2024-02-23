@@ -21,97 +21,97 @@ WhaTapは、モニタリング情報の収集対象のインフラストラク�
 
 {@include: ../common-items/_agent-name-warning.mdx}
 
--   **object_name** <span class='type'>String</span>
+- **object_name** <span class='type'>String</span>
 
-    デフォルト値`{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`
+  デフォルト値`{type}`-`{hostname}`-`{ip2}`-`{ip3}`-`{docker}`
 
-    アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。
+  アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。
 
-    | 名称           | 説明                                                        |
-    | ------------ | --------------------------------------------------------- |
-    | `{type}`     | app_nameに設定した値を使用します。 デフォルト値は、Telegrafです。                 |
-    | `{ip#}`      | IPを分割するときは、#番目の桁を使用します。                                   |
-    | `{hostname}` | サーバーのホスト名を使用します。                                          |
-    | `{docker}`   | DockerコンテナIDを使用します。                                       |
+  | 名称           | 説明                                                        |
+  | ------------ | --------------------------------------------------------- |
+  | `{type}`     | app_nameに設定した値を使用します。 デフォルト値は、Telegrafです。                 |
+  | `{ip#}`      | IPを分割するときは、#番目の桁を使用します。                                   |
+  | `{hostname}` | サーバーのホスト名を使用します。                                          |
+  | `{docker}`   | DockerコンテナIDを使用します。                                       |
 
--   **app_name** <span class='type'>String</span>
+- **app_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。`object_name`の`{type}`に対応する値です。
+  アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。`object_name`の`{type}`に対応する値です。
 
-    :::note
+  :::note
 
-    whatap-telegrafのサービスを再起動した後に適用されます。
+  whatap-telegrafのサービスを再起動した後に適用されます。
 
-    :::
+  :::
 
 ## エージェントの通信設定
 
--   **license** <span class='type'>String</span>
+- **license** <span class='type'>String</span>
 
-    エージェントのインストール時にサーバーから受け取ったプロジェクトアクセスキーを設定します。 プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のための暗号化キーが含まれています。
+  エージェントのインストール時にサーバーから受け取ったプロジェクトアクセスキーを設定します。 プロジェクトアクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のための暗号化キーが含まれています。
 
--   **whatap.server.host** <span class='type'>ip_address</span>
+- **whatap.server.host** <span class='type'>ip_address</span>
 
-    デフォルト値`127.0.0.1,127.0.1`
+  デフォルト値`127.0.0.1,127.0.1`
 
-    エージェントが収集したデータを送信するサーバーを指定します。収集サーバーを冗長化して2つ以上のIPがある場合、コンマ(,)で区分して指定できます。指定されたIPは、収集サーバーのproxyデーモンがリスニング状態でサービスする必要があります。
+  エージェントが収集したデータを送信するサーバーを指定します。収集サーバーを冗長化して2つ以上のIPがある場合、コンマ(,)で区分して指定できます。指定されたIPは、収集サーバーのproxyデーモンがリスニング状態でサービスする必要があります。
 
--   **whatap.server.port** <span class='type'>tcp_port</span>
+- **whatap.server.port** <span class='type'>tcp_port</span>
 
-    デフォルト値`6600`
+  デフォルト値`6600`
 
-    収集サーバーのポート番号を指定します。 ポートは1つしか指定できないため、`whatap_server_host`で指定した収集サーバーは同じポート番号を使用する必要があります。
+  収集サーバーのポート番号を指定します。 ポートは1つしか指定できないため、`whatap_server_host`で指定した収集サーバーは同じポート番号を使用する必要があります。
 
--   **tcp_so_timeout** <span class='type'>Millisecond</span>
+- **tcp_so_timeout** <span class='type'>Millisecond</span>
 
-    デフォルト値`60000`
+  デフォルト値`60000`
 
-    収集サーバーと通信するTCPセッションのSocket Timeout値を指定します。
+  収集サーバーと通信するTCPセッションのSocket Timeout値を指定します。
 
--   **tcp_connection_timeout** <span class='type'>Millisecond</span>
+- **tcp_connection_timeout** <span class='type'>Millisecond</span>
 
-    デフォルト値`5000`
+  デフォルト値`5000`
 
-    収集サーバーと通信するTCPセッションのConnection Timeout値を指定します。
+  収集サーバーと通信するTCPセッションのConnection Timeout値を指定します。
 
--   **net_send_max_bytes** <span class='type'>Byte</span>
+- **net_send_max_bytes** <span class='type'>Byte</span>
 
-    デフォルト値`5242880`
+  デフォルト値`5242880`
 
-    収集サーバーにデータを送信するときに、一度に送信される最大サイズを指定します。
+  収集サーバーにデータを送信するときに、一度に送信される最大サイズを指定します。
 
--   **net_send_buffer_size** <span class='type'>Byte</span>
+- **net_send_buffer_size** <span class='type'>Byte</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    データ送信を行う必要がある最大バイトのサイズです。 
+  データ送信を行う必要がある最大バイトのサイズです。 
 
 ## Telegraf
 
--   **telegraf_tcp_port** <span class='type'>tcp_port</span>
+- **telegraf_tcp_port** <span class='type'>tcp_port</span>
 
-    デフォルト値`6600`
+  デフォルト値`6600`
 
-    Telegraf socker_writer output pluginが接続するTCPのポート番号です。
+  Telegraf socker_writer output pluginが接続するTCPのポート番号です。
 
-    :::note
+  :::note
 
-    whatap-telegrafのサービスを再起動した後に適用されます。
+  whatap-telegrafのサービスを再起動した後に適用されます。
 
-    :::
+  :::
 
--   **telegraf_delta_fields** <span class='type'>String</span>
+- **telegraf_delta_fields** <span class='type'>String</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    累積値を持つフィールドの増加値を計算し、別のフィールドを追加します。 name.fields形式として指定し、複数はコンマ(,)で区切ります。
+  累積値を持つフィールドの増加値を計算し、別のフィールドを追加します。 name.fields形式として指定し、複数はコンマ(,)で区切ります。
 
-    > 例、nginx.accepts、nginx.requestsnginxのaccepts、requests値の増加値をacceptsDelta、requestsDeltaフィールド名として追加送信します。
+  > 例、nginx.accepts、nginx.requestsnginxのaccepts、requests値の増加値をacceptsDelta、requestsDeltaフィールド名として追加送信します。
 
 ## ログ
 
--   **log_keep_days** <span class='type'>Day</span>
+- **log_keep_days** <span class='type'>Day</span>
 
-    デフォルト値`7`
+  デフォルト値`7`
 
-    ログファイルの保存期間を設定します。
+  ログファイルの保存期間を設定します。

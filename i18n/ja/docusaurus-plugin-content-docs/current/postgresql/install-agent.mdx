@@ -27,23 +27,23 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-3.  解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-    ```ini title='whatap.conf'
-    license=プロジェクトアクセスキー
-    whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+   ```ini title='whatap.conf'
+   license=プロジェクトアクセスキー
+   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
 
-    dbms=postgresql
-    db=postgres
-    db_ip={DBサーバーのIPアドレス}
-    db_port={DBサーバーのポート番号} 
-    ```
+   dbms=postgresql
+   db=postgres
+   db_ip={DBサーバーのIPアドレス}
+   db_port={DBサーバーのポート番号} 
+   ```
 
-4.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-    データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
+   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。 
 
-    **PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
+   **PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
 
 <!-- 공통 Notes-->
 
@@ -87,7 +87,7 @@ grant select on all tables in schema {schema_name} to whatap;
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx} 
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
 
 <!--## 에이전트 실행-->
 

@@ -40,27 +40,27 @@ echo "awsRegions=[RegionCode1,RegionCode2,...]" |  tee -a /usr/whatap/whatap-npm
 sudo service whatap-npmd restart
 ```
 
--   **awsInfoEnable**
+- **awsInfoEnable**
 
-    AWS情報照会の使用有無を設定します。 デフォルト値は`0`であり、AWS情報を照会するには`1`に設定してください。
+  AWS情報照会の使用有無を設定します。 デフォルト値は`0`であり、AWS情報を照会するには`1`に設定してください。
 
--   **awsAccessKey**
+- **awsAccessKey**
 
-    ユーザーのAWS access key(アクセスキー)を入力してください。
+  ユーザーのAWS access key(アクセスキー)を入力してください。
 
--   **awsSecretKey**
+- **awsSecretKey**
 
-    ユーザーのAWS secret access Key(秘密アクセスキー)を入力してください。
+  ユーザーのAWS secret access Key(秘密アクセスキー)を入力してください。
 
--   **awsRegions**
+- **awsRegions**
 
-    ユーザーのリソースを含むリージョンを入力してください。 遠くのリージョンを使用する場合は、コンマ(,)を区切り文字として入力してください。
+  ユーザーのリソースを含むリージョンを入力してください。 遠くのリージョンを使用する場合は、コンマ(,)を区切り文字として入力してください。
 
 :::note
 
--   AWSのAccess Key生成についての詳細は、[次のリンク](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey)を参考にしてください。
+- AWSのAccess Key生成についての詳細は、[次のリンク](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey)を参考にしてください。
 
--   `ec2:DescribeNetworkInterfaces`: EC2ネットワークインターフェース(ENI)に関する情報の照会を許可します。
+- `ec2:DescribeNetworkInterfaces`: EC2ネットワークインターフェース(ENI)に関する情報の照会を許可します。
 
 :::
 

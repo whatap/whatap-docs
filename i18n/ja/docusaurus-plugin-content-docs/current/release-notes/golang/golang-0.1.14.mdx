@@ -9,108 +9,108 @@ import UI from '@site/src/components/UItext';
 
 #### 2022年12月14日
 
--   <Status>Fixed</Status> UDPサーバーが停止した状態でCPU使用率が増加する現象を修正
+- <Status>Fixed</Status> UDPサーバーが停止した状態でCPU使用率が増加する現象を修正
 
-    UDPサーバーが停止した状態(whatap-agentサービスが停止)で、Goモニタリングを適用するとアプリケーションのCPU負荷が増加します。UDPサーバーへの接続と終了の処理が繰り返されることで、UDP接続が複数維持され、CPU使用量が増加します。
+  UDPサーバーが停止した状態(whatap-agentサービスが停止)で、Goモニタリングを適用するとアプリケーションのCPU負荷が増加します。UDPサーバーへの接続と終了の処理が繰り返されることで、UDP接続が複数維持され、CPU使用量が増加します。
 
--   <Status>New</Status> k8s.io/client-go/kubernetesライブラリに対応
+- <Status>New</Status> k8s.io/client-go/kubernetesライブラリに対応
 
-    [参考例](https://github.com/whatap/go-api-example/tree/main/k8s.io/client-go/kubernetes)
+  [参考例](https://github.com/whatap/go-api-example/tree/main/k8s.io/client-go/kubernetes)
 
-    ```go title='golang'
-    import (
-      "k8s.io/client-go/rest"
-    )
+  ```go title='golang'
+  import (
+    "k8s.io/client-go/rest"
+  )
 
-    func main() {
-      // Init whatap trace
-      config := make(map[string]string)
-      trace.Init(config)
-      defer trace.Shutdown()
+  func main() {
+    // Init whatap trace
+    config := make(map[string]string)
+    trace.Init(config)
+    defer trace.Shutdown()
 
-      ...
+    ...
 
-      config, err := clientcmd.BuildConfigFromFlags("", *kubeconfig)
-      if err != nil {
-        return nil, err
-      }
-
-      // whatap roundTripper関数を設定します。 
-      config.WrapTransport = wRT.WrapRoundTripper()
-
-      clientset, err := kubernetes.NewForConfig(config)
-      if err != nil {
-        return nil, err
-      }
-
-      deploymentsClient := clientset.AppsV1().Deployments(conf.Server.Namespace)
-
-      ...
+    config, err := clientcmd.BuildConfigFromFlags("", *kubeconfig)
+    if err != nil {
+      return nil, err
     }
-    ```
 
--   <Status>New</Status> github.com/gofiber/fiber/v2ライブラリに対応
+    // whatap roundTripper関数を設定します。 
+    config.WrapTransport = wRT.WrapRoundTripper()
 
-    [参考例](https://github.com/whatap/go-api-example/tree/main/github.com/gofiber/fiber)
+    clientset, err := kubernetes.NewForConfig(config)
+    if err != nil {
+      return nil, err
+    }
 
-    ```go title='golang'
-    import (
-      "github.com/whatap/go-api/instrumentation/github.com/gofiber/fiber/v2/whatapfiber"
-    )
+    deploymentsClient := clientset.AppsV1().Deployments(conf.Server.Namespace)
 
-    func main() {
-      // Init whatap trace
-      config := make(map[string]string)
-      trace.Init(config)
-      defer trace.Shutdown()
+    ...
+  }
+  ```
 
-      ...
+- <Status>New</Status> github.com/gofiber/fiber/v2ライブラリに対応
 
-      r := fiber.New(fiber.Config{
-        StrictRouting: true,
-        Views:         engine,
-      })
+  [参考例](https://github.com/whatap/go-api-example/tree/main/github.com/gofiber/fiber)
 
-      r.Use(recover.New())
+  ```go title='golang'
+  import (
+    "github.com/whatap/go-api/instrumentation/github.com/gofiber/fiber/v2/whatapfiber"
+  )
 
-      // whatapfiberのmiddlewareを登録します。
-      r.Use(whatapfiber.Middleware())
+  func main() {
+    // Init whatap trace
+    config := make(map[string]string)
+    trace.Init(config)
+    defer trace.Shutdown()
+
+    ...
+
+    r := fiber.New(fiber.Config{
+      StrictRouting: true,
+      Views:         engine,
+    })
+
+    r.Use(recover.New())
+
+    // whatapfiberのmiddlewareを登録します。
+    r.Use(whatapfiber.Middleware())
+    
+    ...
+  }
+  ```
+
+- <Status>New</Status> github.com/valyala/fasthttpライブラリに対応
+
+  [参考例](https://github.com/whatap/go-api-example/tree/main/github.com/valyala/fasthttp)
+
+  ```go title='golang'
+  import (
+    "github.com/whatap/go-api/instrumentation/github.com/valyala/fasthttp/whatapfasthttp"
+  )
+
+  func main() {
+    // Init whatap trace
+    config := make(map[string]string)
+    trace.Init(config)
+    defer trace.Shutdown()
+
+    ...
       
+    r := fiber.New(fiber.Config{
+      StrictRouting: true,
+      Views:         engine,
+    })
+
+    r.Use(recover.New())
+
+    // ラッパー（Wrapper）関数whatapfasthtp.Funcを使用します。 
+    r.GET("/", whatapfasthttp.Func(func(ctx *fasthttp.RequestCtx) {
       ...
-    }
-    ```
-
--   <Status>New</Status> github.com/valyala/fasthttpライブラリに対応
-
-    [参考例](https://github.com/whatap/go-api-example/tree/main/github.com/valyala/fasthttp)
-
-    ```go title='golang'
-    import (
-      "github.com/whatap/go-api/instrumentation/github.com/valyala/fasthttp/whatapfasthttp"
-    )
-
-    func main() {
-      // Init whatap trace
-      config := make(map[string]string)
-      trace.Init(config)
-      defer trace.Shutdown()
-
-      ...
-        
-      r := fiber.New(fiber.Config{
-        StrictRouting: true,
-        Views:         engine,
-      })
-
-      r.Use(recover.New())
-
-      // ラッパー（Wrapper）関数whatapfasthtp.Funcを使用します。 
-      r.GET("/", whatapfasthttp.Func(func(ctx *fasthttp.RequestCtx) {
-        ...
-      }))
-      r.GET("/hello/{name}", whatapfasthttp.Func(func(ctx *fasthttp.RequestCtx) {
-        fmt.Fprintf(ctx, "Hello, %s!\n", ctx.UserValue("name"))
-        ctx.SetContentType("text/html;charset=utf8")
-      }))
-    }
-    ```
+    }))
+    r.GET("/hello/{name}", whatapfasthttp.Func(func(ctx *fasthttp.RequestCtx) {
+      fmt.Fprintf(ctx, "Hello, %s!\n", ctx.UserValue("name"))
+      ctx.SetContentType("text/html;charset=utf8")
+    }))
+  }
+  ```

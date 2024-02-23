@@ -38,13 +38,13 @@ DB関連ライブラリのbind parameterを収集します。`whatap.profile_sql
 
 **パラメータ名**
 
--   最大256 bytesを収集します。 
+- 最大256 bytesを収集します。 
 
 **パラメータ値**
 
--   Stringタイプの場合、最大256 bytesまで収集します。
--   Arrayタイプの場合、"ARRAY"文字列として表示されます。 
--   数字型および文字型データ以外は収集しません。 
+- Stringタイプの場合、最大256 bytesまで収集します。
+- Arrayタイプの場合、"ARRAY"文字列として表示されます。 
+- 数字型および文字型データ以外は収集しません。 
 
 ### odbc_do関数の追加
 
@@ -52,17 +52,17 @@ odbc_execと同じ機能を持つエイリアス関数を追加しました。
 
 ### 指定したUriとHTTP Methodのトランザクション収集を除外
 
--   `ignore_http_method_urls`
+- `ignore_http_method_urls`
 
-    Default : ""  
+  Default : ""  
 
-    Type : String
+  Type : String
 
--   `ignore_http_method`
+- `ignore_http_method`
 
-    Default : ""
+  Default : ""
 
-    Type : String
+  Type : String
 
 ```
 whatap.ignore_http_method_urls=/index, /path
@@ -75,11 +75,11 @@ whatap.ignore_http_method=options, connect
 
 指定したパラメータのみを収集すると、サービスURLが簡略化され、統計情報からより正確な情報を確認できます。
 
--   `query_string_keys`
+- `query_string_keys`
 
-    -   Default : ""
+  - Default : ""
 
-    -   Type : String
+  - Type : String
 
 コンマ(,)で区切って複数のパラメータを指定します。 設定手順と同じ順序で収集されたパラメータ情報が表示されます。 
 

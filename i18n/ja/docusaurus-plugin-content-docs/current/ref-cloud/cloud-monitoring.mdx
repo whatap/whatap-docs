@@ -13,8 +13,8 @@ tags:
 
 WhaTapクラウドモニタリングは、クラウドプロバイダのAPIに接続し、すべてのメトリクスとクラウドイベントをリアルタイムで収集します。代表的に2つのメトリクスがあります。
 
--   インスタンス（仮想サーバー）の正常性を判断できるインジケーター
--   クラウドサービスプロバイダ独自のサービス可用性のメトリクス
+- インスタンス（仮想サーバー）の正常性を判断できるインジケーター
+- クラウドサービスプロバイダ独自のサービス可用性のメトリクス
 
 メトリクス収集の時間間隔は、コストを最適化するためにリアルタイム（5分間隔）から3時間まで調整できます。
 
@@ -24,125 +24,125 @@ WhaTapクラウドモニタリングを使用すると、収集したデータ�
 
 :::note
 
--   ネームスペースは、アプリケーション向けのサービスをグループ化する方法です。
--   クラウドでリージョンとは、クラウドサービスを提供するために設定したデータセンターです。
--   特定のリージョンを選択すると、そのリージョンに属するデータセンターにユーザーのデータが保存されます。
--   クラウドモニタリングは、１つのプロジェクトを選択し、プロジェクトメニューの**_管理_** >**_クラウドモニタリング_**メニューで確認することができます。
+- ネームスペースは、アプリケーション向けのサービスをグループ化する方法です。
+- クラウドでリージョンとは、クラウドサービスを提供するために設定したデータセンターです。
+- 特定のリージョンを選択すると、そのリージョンに属するデータセンターにユーザーのデータが保存されます。
+- クラウドモニタリングは、１つのプロジェクトを選択し、プロジェクトメニューの**_管理_** >**_クラウドモニタリング_**メニューで確認することができます。
 
 :::
 
 ## 設定
 
-1.  モニタリングするAWSアカウントに次のアクセス権限を持つユーザーを作成します。
+1. モニタリングするAWSアカウントに次のアクセス権限を持つユーザーを作成します。
 
-    -   CloudWatchReadOnlyAccess
-    -   AmazonEC2ReadOnlyAccess
+   - CloudWatchReadOnlyAccess
+   - AmazonEC2ReadOnlyAccess
 
-2.  アクセスキー/シークレットキーまたはAMAZONリソース名(ARN) を入力します。
+2. アクセスキー/シークレットキーまたはAMAZONリソース名(ARN) を入力します。
 
 ## サポート一覧
 
 AWSに対応するNamespaceです。
 
--   AWS ACMPrivateCA
--   AWS AmazonMQ
--   AWS ApplicationELB Monitoring
--   AWS AppSync
--   AWS Athena
--   AWS AutoScaling
--   AWS Elastic Beanstalk Health
--   AWS Billing
--   AWS Cassandra
--   AWS Chatbot
--   AWS Cloud Front
--   AWS CloudHSM
--   AWS CloudSearch
--   AWS CodeBuild
--   AWS CodeGuruProfiler
--   AWS Cognito
--   AWS Connect
--   AWS ContainerInsights Monitoring
--   AWS DataSync
--   AWS DAX
--   AWS DDoSProtection
--   AWS DMS
--   AWS DocDB
--   AWS DX
--   AWS Dynamo DB
--   AWS Ebs Usage
--   AWS EC2 Monitoring
--   AWS EC2 Alert Config
--   AWS EC2Spot
--   AWS ECS
--   AWS EFS
--   AWS ElastiCache Usage
--   AWS ElasticGPUs
--   AWS ElasticInference
--   AWS ElasticMapReduce
--   AWS ElasticTranscoder
--   AWS Classic ELB Monitoring
--   AWS ES
--   AWS Events
--   AWS Firehose
--   AWS FSx
--   AWS GameLift
--   AWS GatewayELB
--   AWS Glue
--   AWS GroundStation
--   AWS Health
--   AWS Inspector
--   AWS IoT
--   AWS IoTAnalytics
--   AWS IoTSiteWise
--   AWS IVS
--   AWS Kafka
--   AWS Kinesis
--   AWS KinesisAnalytics
--   AWS KinesisVideo
--   AWS KMS
--   AWS Lambda
--   AWS Lex
--   AWS Location
--   AWS Logs
--   AWS LookoutMetrics
--   AWS MediaConnect
--   AWS MediaConvert
--   AWS MediaPackage
--   AWS MediaStore
--   AWS MediaTailor
--   AWS ML
--   AWS NATGateway
--   AWS Neptune
--   AWS NetworkELB
--   AWS NetworkFirewall
--   AWS OpsWorks
--   AWS Polly
--   AWS QLDB
--   AWS RDS Monitoring
--   AWS Redshift
--   AWS Robomaker
--   AWS Route53
--   AWS S3
--   AWS SageMaker
--   AWS SDKMetrics
--   AWS ServiceCatalog
--   AWS SES
--   AWS SNS
--   AWS SQS
--   AWS SQS Message
--   AWS SSM-RunCommand
--   AWS States
--   AWS StorageGateway
--   AWS SWF
--   AWS Textract
--   AWS ThingsGraph
--   AWS Timestream
--   AWS Transfer
--   AWS TransitGateway
--   AWS Translate
--   AWS TrustedAdvisor
--   AWS Api Usage
--   AWS VPN Monitoring
--   AWS WAF
--   AWS WorkMail
--   AWS WorkSpaces
+- AWS ACMPrivateCA
+- AWS AmazonMQ
+- AWS ApplicationELB Monitoring
+- AWS AppSync
+- AWS Athena
+- AWS AutoScaling
+- AWS Elastic Beanstalk Health
+- AWS Billing
+- AWS Cassandra
+- AWS Chatbot
+- AWS Cloud Front
+- AWS CloudHSM
+- AWS CloudSearch
+- AWS CodeBuild
+- AWS CodeGuruProfiler
+- AWS Cognito
+- AWS Connect
+- AWS ContainerInsights Monitoring
+- AWS DataSync
+- AWS DAX
+- AWS DDoSProtection
+- AWS DMS
+- AWS DocDB
+- AWS DX
+- AWS Dynamo DB
+- AWS Ebs Usage
+- AWS EC2 Monitoring
+- AWS EC2 Alert Config
+- AWS EC2Spot
+- AWS ECS
+- AWS EFS
+- AWS ElastiCache Usage
+- AWS ElasticGPUs
+- AWS ElasticInference
+- AWS ElasticMapReduce
+- AWS ElasticTranscoder
+- AWS Classic ELB Monitoring
+- AWS ES
+- AWS Events
+- AWS Firehose
+- AWS FSx
+- AWS GameLift
+- AWS GatewayELB
+- AWS Glue
+- AWS GroundStation
+- AWS Health
+- AWS Inspector
+- AWS IoT
+- AWS IoTAnalytics
+- AWS IoTSiteWise
+- AWS IVS
+- AWS Kafka
+- AWS Kinesis
+- AWS KinesisAnalytics
+- AWS KinesisVideo
+- AWS KMS
+- AWS Lambda
+- AWS Lex
+- AWS Location
+- AWS Logs
+- AWS LookoutMetrics
+- AWS MediaConnect
+- AWS MediaConvert
+- AWS MediaPackage
+- AWS MediaStore
+- AWS MediaTailor
+- AWS ML
+- AWS NATGateway
+- AWS Neptune
+- AWS NetworkELB
+- AWS NetworkFirewall
+- AWS OpsWorks
+- AWS Polly
+- AWS QLDB
+- AWS RDS Monitoring
+- AWS Redshift
+- AWS Robomaker
+- AWS Route53
+- AWS S3
+- AWS SageMaker
+- AWS SDKMetrics
+- AWS ServiceCatalog
+- AWS SES
+- AWS SNS
+- AWS SQS
+- AWS SQS Message
+- AWS SSM-RunCommand
+- AWS States
+- AWS StorageGateway
+- AWS SWF
+- AWS Textract
+- AWS ThingsGraph
+- AWS Timestream
+- AWS Transfer
+- AWS TransitGateway
+- AWS Translate
+- AWS TrustedAdvisor
+- AWS Api Usage
+- AWS VPN Monitoring
+- AWS WAF
+- AWS WorkMail
+- AWS WorkSpaces

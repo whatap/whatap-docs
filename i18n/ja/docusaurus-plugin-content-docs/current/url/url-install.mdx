@@ -19,27 +19,27 @@ WhaTapモニタリングサービスを使用するには、[会員登録](https
 
 URLを追加する前に、まずプロジェクトを作成してください。
 
-1.  [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、ログインします。
+1. [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、ログインします。
 
-2.  プロジェクトを作成するには、画面の左側のメニューから **_+_** <Cmdname sid="project_add_btn" className="uitext" />ボタンを選択してください。
+2. プロジェクトを作成するには、画面の左側のメニューから **_+_** <Cmdname sid="project_add_btn" className="uitext" />ボタンを選択してください。
 
-3.  <Cmdname sid="TTL07073" className="uitext" />画面でURLモニタリングプロジェクトを作成してください。
+3. <Cmdname sid="TTL07073" className="uitext" />画面でURLモニタリングプロジェクトを作成してください。
 
-4.  <Cmdname sid="project_name" className="uitext" />、<Cmdname sid="data_server_region" className="uitext" />、<Cmdname sid="project_time_zone" className="uitext" />などの項目を設定してください。
+4. <Cmdname sid="project_name" className="uitext" />、<Cmdname sid="data_server_region" className="uitext" />、<Cmdname sid="project_time_zone" className="uitext" />などの項目を設定してください。
 
-    <ImgLang img='url-project.png' desc='urlモニタリングプロジェクト' />
+   <ImgLang img='url-project.png' desc='urlモニタリングプロジェクト' />
 
-5.  すべての設定を完了した後は <Cmdname sid="creating_a_project" className="uitext" /> ボタンを選択してください。
+5. すべての設定を完了した後は <Cmdname sid="creating_a_project" className="uitext" /> ボタンを選択してください。
 
-6.  プロジェクトリストで新しいプロジェクトを確認してください。
+6. プロジェクトリストで新しいプロジェクトを確認してください。
 
 :::note
 
--   <Cmdname sid="data_server_region" className="uitext" />は、リージョン(クラウドサービスを提供するためにインストールしたデータセンターのグループ)を意味します。特定のリージョンを選択すると、そのリージョンに所属するデータセンターにユーザーのデータが保存されます。
+- <Cmdname sid="data_server_region" className="uitext" />は、リージョン(クラウドサービスを提供するためにインストールしたデータセンターのグループ)を意味します。特定のリージョンを選択すると、そのリージョンに所属するデータセンターにユーザーのデータが保存されます。
 
--   <Cmdname sid="project_time_zone" className="uitext" />は通知とレポートを生成する基準時間です。
+- <Cmdname sid="project_time_zone" className="uitext" />は通知とレポートを生成する基準時間です。
 
--   複数のプロジェクトをグループで管理する場合は、<Cmdname sid="project_groups" className="uitext" />からグループを選択するか、グループを追加してください。 グループの詳細については、[次の文書](../project/group)を参照してください。
+- 複数のプロジェクトをグループで管理する場合は、<Cmdname sid="project_groups" className="uitext" />からグループを選択するか、グループを追加してください。 グループの詳細については、[次の文書](../project/group)を参照してください。
 
 :::
 
@@ -51,23 +51,23 @@ URLプロジェクトは最大10個まで作成できます。1つのURLプロ�
 
 ## URLを追加する{#add-url}
 
-1.  生成されたURLプロジェクトを選択してください。 URLが設定されていない画面が表示されます。
+1. 生成されたURLプロジェクトを選択してください。 URLが設定されていない画面が表示されます。
 
-2.  画面の右上にある **_+_** <Cmdname sid="add_url" className="uitext" /> ボタンを選択してください。 
+2. 画面の右上にある **_+_** <Cmdname sid="add_url" className="uitext" /> ボタンを選択してください。 
 
-3.  追加された入力フィールドにURL設定を行ってください。
+3. 追加された入力フィールドにURL設定を行ってください。
 
-    <ImgLang img='url-input-field.png' desc='url入力フィールド' />
+   <ImgLang img='url-input-field.png' desc='url入力フィールド' />
 
-    -   <Cmdname sid="name" className="uitext" />: URL設定の固有の識別情報として使用されます。繰り返し使用することはできません。リセット時に同じ名前で登録する場合は、同じ名前の統計データを同じURLのデータとみなされます。
+   - <Cmdname sid="name" className="uitext" />: URL設定の固有の識別情報として使用されます。繰り返し使用することはできません。リセット時に同じ名前で登録する場合は、同じ名前の統計データを同じURLのデータとみなされます。
 
-    -   <Cmdname sid="url" className="uitext" />: チェック対象のURLを登録します。 呼び出し先URLの完全パスを入力します。http/httpsプロトコルに対応します。
+   - <Cmdname sid="url" className="uitext" />: チェック対象のURLを登録します。 呼び出し先URLの完全パスを入力します。http/httpsプロトコルに対応します。
 
-    -   <Cmdname sid="check_location" className="uitext" />: WhaTapが提供するエージェントを選択します。Seoul、Tokyo、Singapore、Mumbai、Frankfurt、Califoniaリージョンを提供します。詳細については、<Link to="#select-confirm-region">次の文書</Link>を参照してください。
+   - <Cmdname sid="check_location" className="uitext" />: WhaTapが提供するエージェントを選択します。Seoul、Tokyo、Singapore、Mumbai、Frankfurt、Califoniaリージョンを提供します。詳細については、<Link to="#select-confirm-region">次の文書</Link>を参照してください。
 
-    -   <Cmdname sid="collection_cycle" className="uitext" />: モニタリングデータを収集する間隔を設定します。デフォルト値は<Cmdname sid="1_min" className="uitext" />(60000 ms)です。最大5分まで1分単位で選択できます。
+   - <Cmdname sid="collection_cycle" className="uitext" />: モニタリングデータを収集する間隔を設定します。デフォルト値は<Cmdname sid="1_min" className="uitext" />(60000 ms)です。最大5分まで1分単位で選択できます。
 
-4.  編集が完了したら<Cmdname sid="save" className="uitext" />ボタンを選択してください。
+4. 編集が完了したら<Cmdname sid="save" className="uitext" />ボタンを選択してください。
 
 :::note
 
@@ -81,31 +81,31 @@ URLプロジェクトは最大10個まで作成できます。1つのURLプロ�
 
 **閉域網サイトの接続テストを実行**する場合は、エージェントからの呼び出しが許可するようにファイアウォールを解除する必要があります。 位置IPアドレスはヘルプとして表示されます。各エージェントの **ファイアウォール開放対象IP Address**は次のとおりです。
 
--   AWS-Seoul-Agent - 54.180.11.176
+- AWS-Seoul-Agent - 54.180.11.176
 
--   AWS-Tokyo-Agent - 18.179.189.142
+- AWS-Tokyo-Agent - 18.179.189.142
 
--   AWS-Singapore-Agent - 54.169.168.45
+- AWS-Singapore-Agent - 54.169.168.45
 
--   AWS-Mumbai-Agent - 3.6.243.66
+- AWS-Mumbai-Agent - 3.6.243.66
 
--   AWS-Frankfurt-Agent - 18.197.22.141
+- AWS-Frankfurt-Agent - 18.197.22.141
 
--   AWS-California-Agent - 54.215.76.203
+- AWS-California-Agent - 54.215.76.203
 
 **cloudflare**を使用する場合、 cloudflare **ファイアウォールのルールに対応するリージョンIP**を許可する必要があります。
 
--   AWS-Seoul-Agent - 54.180.11.176
+- AWS-Seoul-Agent - 54.180.11.176
 
--   AWS-Tokyo-Agent - 18.179.189.142
+- AWS-Tokyo-Agent - 18.179.189.142
 
--   AWS-Singapore-Agent - 54.169.168.45
+- AWS-Singapore-Agent - 54.169.168.45
 
--   AWS-Mumbai-Agent - 3.6.243.66
+- AWS-Mumbai-Agent - 3.6.243.66
 
--   AWS-Frankfurt-Agent - 18.197.22.141
+- AWS-Frankfurt-Agent - 18.197.22.141
 
--   AWS-California-Agent - 54.215.76.203 
+- AWS-California-Agent - 54.215.76.203 
 
 ## モニタリングする{#url-st}
 
@@ -115,11 +115,11 @@ URLプロジェクトは最大10個まで作成できます。1つのURLプロ�
 
 ホーム画面からプロジェクトを選択し <Cmdname sid="url_list" className="uitext" /> メニューに移動してください。![number-1](/img/number-01.png)領域の上部にあるオプションを使用すると、表示形式や整列方式を指定したり、検索して一覧を表示することができます。
 
--   ![一覧ビューアイコン](/img/ic-list.svg) <Cmdname sid="list_view" className="uitext" />：<Cmdname sid="url_list" className="uitext" />を一覧形式で見ることができます。基本設定は <Cmdname sid="list_view" className="uitext" />です。 
+- ![一覧ビューアイコン](/img/ic-list.svg) <Cmdname sid="list_view" className="uitext" />：<Cmdname sid="url_list" className="uitext" />を一覧形式で見ることができます。基本設定は <Cmdname sid="list_view" className="uitext" />です。 
 
--   ![カードビューアイコン](/img/ic-project.svg) <Cmdname sid="card_view" className="uitext" />：<Cmdname sid="url_list" className="uitext" />をカード形式で見ることができます。
+- ![カードビューアイコン](/img/ic-project.svg) <Cmdname sid="card_view" className="uitext" />：<Cmdname sid="url_list" className="uitext" />をカード形式で見ることができます。
 
--   <Cmdname sid="search" className="uitext" />：入力ウィンドウからURLまたは指定したURLの名前で検索することができます。
+- <Cmdname sid="search" className="uitext" />：入力ウィンドウからURLまたは指定したURLの名前で検索することができます。
 
 ![number-2](/img/number-02.png)領域で登録されたURL一覧の最終レスポンスステータスごとの件数情報を確認し、フィルタリングすることができます。 <Cmdname sid="status_total" className="uitext" /> を見る、 **_9XX_**、 <Cmdname sid="status_5xx" className="uitext" />、 <Cmdname sid="status_4xx" className="uitext" />、 <Cmdname sid="status_3xx" className="uitext" />、 <Cmdname sid="status_2xx" className="uitext" /> などを基準に参照することができます。 基本設定は <Cmdname sid="status_total" className="uitext" /> を見るです。
 
@@ -127,31 +127,31 @@ URLプロジェクトは最大10個まで作成できます。1つのURLプロ�
 
 ![number-3](/img/number-03.png) 領域で現在の <Cmdname sid="url_list" className="uitext" />をExcelファイル形式でエクスポートまたはインポートできます。 
 
--   ![インポートアイコン](/img/ico-import.svg) <Cmdname sid="import" className="uitext" />：Excelファイルを選択してURL一覧を読み込みます。 
+- ![インポートアイコン](/img/ico-import.svg) <Cmdname sid="import" className="uitext" />：Excelファイルを選択してURL一覧を読み込みます。 
 
--   ![書き出しアイコン](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />：ウェブブラウザーから現在のURL一覧をExcelファイルとしてダウンロードします。
+- ![書き出しアイコン](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />：ウェブブラウザーから現在のURL一覧をExcelファイルとしてダウンロードします。
 
 ### URLモニタリングの詳細
 
 ![number-4](/img/number-04.png) 領域のURL一覧表で登録されたURL単位のモニタリングチェック結果を確認することができます。 各カラム項目は、次のとおりです。 URLの登録・編集が必要な場合 ![編集アイコン](/img/ic-edit.svg) <Cmdname sid="edit_url" className="uitext" /> アイコンを選択し、編集画面に切り替えてください。
 
--   <Cmdname sid="current_status" className="uitext" />
+- <Cmdname sid="current_status" className="uitext" />
 
-    最終チェックレスポンスコード(Http Status Code)です。各ステータスコードを選択すると、HTTPステータスコードの文書更新に移動します。
+  最終チェックレスポンスコード(Http Status Code)です。各ステータスコードを選択すると、HTTPステータスコードの文書更新に移動します。
 
--   <Cmdname sid="name_and_url" className="uitext" />
+- <Cmdname sid="name_and_url" className="uitext" />
 
-    URL登録時に指定した固有の識別情報とURLです。
+  URL登録時に指定した固有の識別情報とURLです。
 
--   <Cmdname sid="check_region" className="uitext" />
+- <Cmdname sid="check_region" className="uitext" />
 
-    リージョンを確認してください。
+  リージョンを確認してください。
 
--   <Cmdname sid="elapsed" className="uitext" />
+- <Cmdname sid="elapsed" className="uitext" />
 
-    20分間のチェック結果(レスポンスコードおよびレスポンス時間) または最終レスポンス時間です。チャート領域からドラッグして時間範囲を表示すると、そのタイムゾーンのレスポンスコードおよびレスポンス時間を確認できます。
+  20分間のチェック結果(レスポンスコードおよびレスポンス時間) または最終レスポンス時間です。チャート領域からドラッグして時間範囲を表示すると、そのタイムゾーンのレスポンスコードおよびレスポンス時間を確認できます。
 
-    <ImgLang img='url-monitoring-dt.png' desc='詳細' />
+  <ImgLang img='url-monitoring-dt.png' desc='詳細' />
 
 :::note 
 

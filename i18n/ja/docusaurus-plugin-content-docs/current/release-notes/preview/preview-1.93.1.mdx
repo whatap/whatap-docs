@@ -25,8 +25,8 @@ import UI from '@site/src/components/UItext';
 
 ### ログ
 
--   <Status>Fixed</Status> フィルターに比較演算子として「==」を入力時、表現式に「==」が重複表示されるバグを修正
--   <Status>Fixed</Status> フィルターに数値フィールド（.nフィールド）を入力時、プリフィックスとして「＋」が追加され検索できないバグを修正しました。
+- <Status>Fixed</Status> フィルターに比較演算子として「==」を入力時、表現式に「==」が重複表示されるバグを修正
+- <Status>Fixed</Status> フィルターに数値フィールド（.nフィールド）を入力時、プリフィックスとして「＋」が追加され検索できないバグを修正しました。
 
 ## 2022-12-05
 
@@ -48,23 +48,23 @@ import UI from '@site/src/components/UItext';
 
 ### `共通`
 
--   <Status>Change</Status> プロジェクト作成時のプラットフォーム選択画面でインテグレーション項目のベータ表示を削除
--   <Status>Change</Status> <UI>イベント設定</UI> メニューと <UI>イベント受信設定</UI> メニューで、イベントに適用中の <UI>イベント受信タグ</UI>は削除できないよう修正
+- <Status>Change</Status> プロジェクト作成時のプラットフォーム選択画面でインテグレーション項目のベータ表示を削除
+- <Status>Change</Status> <UI>イベント設定</UI> メニューと <UI>イベント受信設定</UI> メニューで、イベントに適用中の <UI>イベント受信タグ</UI>は削除できないよう修正
 
 ### コンテナマップ
 
--   <Status>New</Status> Kubernetes製品群の実験メニューに <UI>Pending Pod</UI> 機能を追加
--   <Status>Change</Status> 1 つのPod内に1つ以上のコンテナが存在する場合、コンテナ情報を表示するように修正
--   <Status>Feature</Status> JobタイプのPodに追加ログ情報を提供するため、関連イベントにCronジョブを追加
+- <Status>New</Status> Kubernetes製品群の実験メニューに <UI>Pending Pod</UI> 機能を追加
+- <Status>Change</Status> 1 つのPod内に1つ以上のコンテナが存在する場合、コンテナ情報を表示するように修正
+- <Status>Feature</Status> JobタイプのPodに追加ログ情報を提供するため、関連イベントにCronジョブを追加
 
 ### Flexボード
 
--   <Status>Feature</Status> ダッシュボードにサーバー製品群のLog RPS Boardテンプレートを追加
--   <Status>Feature</Status> ウィジェットテンプレートの追加
-    * 毎秒ログカウント数
-    * 4xx、5xxログ件数
-    * ログリクエスト成功率
-    * ログレスポンス時間
+- <Status>Feature</Status> ダッシュボードにサーバー製品群のLog RPS Boardテンプレートを追加
+- <Status>Feature</Status> ウィジェットテンプレートの追加
+  * 毎秒ログカウント数
+  * 4xx、5xxログ件数
+  * ログリクエスト成功率
+  * ログレスポンス時間
 
 ### メンテナンス計画
 
@@ -90,20 +90,20 @@ import UI from '@site/src/components/UItext';
 
 インテグレーションアイテムのインストール数（制限なし→1個）の変更に応じたメニューの入力パスとデザイン修正
 
--   <Status>Change</Status> <UI>インテグレーションアイテム</UI> メニューの位置を <UI>管理</UI> のサブメニューに移動、1つのインテグレーションアイテムのみインストールと設定ができるように修正
+- <Status>Change</Status> <UI>インテグレーションアイテム</UI> メニューの位置を <UI>管理</UI> のサブメニューに移動、1つのインテグレーションアイテムのみインストールと設定ができるように修正
 
--   <Status>Change</Status> プロジェクト進入時のインテグレーションアイテムのインストール状況に応じてエントリパスを修正
+- <Status>Change</Status> プロジェクト進入時のインテグレーションアイテムのインストール状況に応じてエントリパスを修正
 
-    -   アイテムがインストールされている場合：アイテムの種類に合わせたダッシュボードに移動します。
-        -   aws：<UI>Amazon CloudWatch</UI> > <UI>EC2</UI> メニューに移動
-        -   ec：<UI>Amazon ECS</UI> > <UI>Task</UI> メニューに移動
-        -   その他：<UI>Flexボード</UI>メニューに移動
+  - アイテムがインストールされている場合：アイテムの種類に合わせたダッシュボードに移動します。
+    - aws：<UI>Amazon CloudWatch</UI> > <UI>EC2</UI> メニューに移動
+    - ec：<UI>Amazon ECS</UI> > <UI>Task</UI> メニューに移動
+    - その他：<UI>Flexボード</UI>メニューに移動
 
-    -   アイテムがインストールされていない場合：<UI>管理</UI> > <UI>インテグレーションアイテム</UI> メニューに移動
+  - アイテムがインストールされていない場合：<UI>管理</UI> > <UI>インテグレーションアイテム</UI> メニューに移動
 
--   <Status>Change</Status> プロジェクトカードデザイン修正
+- <Status>Change</Status> プロジェクトカードデザイン修正
 
--   <Status>Change</Status> インテグレーションアイテムがECSの場合：<UI>管理</UI> > <UI>インテグレーションインストール</UI> メニューで <UI>インストール案内</UI> ページ下段に固定されていた <UI>モニタリングサービスの活性化</UI> ボタン位置をインストール過程中に移動
+- <Status>Change</Status> インテグレーションアイテムがECSの場合：<UI>管理</UI> > <UI>インテグレーションインストール</UI> メニューで <UI>インストール案内</UI> ページ下段に固定されていた <UI>モニタリングサービスの活性化</UI> ボタン位置をインストール過程中に移動
 
 ### インテグレーション、クラウドモニタリング
 
@@ -117,5 +117,5 @@ import UI from '@site/src/components/UItext';
 
 <UI>決済管理</UI> > <UI>有料プラン転換履歴</UI> メニューで次の機能を修正します。
 
--   <Status>Change</Status> <UI>月間予想費用</UI> カラムに「セッション使用詳細履歴」を追加表示するよう修正
--   <Status>Change</Status> <UI>製品の種類</UI> カラムにMYSQL RDS製品を表示するよう修正
+- <Status>Change</Status> <UI>月間予想費用</UI> カラムに「セッション使用詳細履歴」を追加表示するよう修正
+- <Status>Change</Status> <UI>製品の種類</UI> カラムにMYSQL RDS製品を表示するよう修正

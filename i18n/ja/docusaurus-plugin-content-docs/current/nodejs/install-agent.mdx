@@ -14,11 +14,11 @@ import TR from '@site/src/components/TR';
 
 Node.jsモニタリングサービスを使用するには、モニタリング対象アプリケーションにモニタリングエージェントをインストールする必要があります。インストールはnpm(Node Package Manager)を使用してください。
 
--   サービス中のNode.jsアプリケーションのディレクトリパスに、WhaTapエージェントモジュールをインストールしてください。
+- サービス中のNode.jsアプリケーションのディレクトリパスに、WhaTapエージェントモジュールをインストールしてください。
 
--   WhaTapエージェントの環境設定(_whatap.conf_)を作成してください。
+- WhaTapエージェントの環境設定(_whatap.conf_)を作成してください。
 
--   Node.jsサービスを再起動します。
+- Node.jsサービスを再起動します。
 
 {@include: ../getting-started/_create-project-v2.mdx} 
 
@@ -26,24 +26,24 @@ Node.jsモニタリングサービスを使用するには、モニタリング�
 
 ## エージェントダウンロード
 
-1.  サービス中のNode.jsアプリケーションのディレクトリパスに、エージェントモジュールをインストールしてください。
+1. サービス中のNode.jsアプリケーションのディレクトリパスに、エージェントモジュールをインストールしてください。
 
-    ```bash
-    $ npm install --save whatap
-    ```
+   ```bash
+   $ npm install --save whatap
+   ```
 
-2.  _node_modules/whatap_パスから_whatap.conf_ファイルをコピーして、ソースコードのルート(root)パスに貼り付けます。
+2. _node_modules/whatap_パスから_whatap.conf_ファイルをコピーして、ソースコードのルート(root)パスに貼り付けます。
 
-3.  [WhaTapモニタリングサービス](https://service.whatap.io) 画面に移動してください。
+3. [WhaTapモニタリングサービス](https://service.whatap.io) 画面に移動してください。
 
-4.  作成したプロジェクトを選択し**_インストール手順_**セクションの**_エージェントのダウンロード_** セクションから、次をコピーしてください。
+4. 作成したプロジェクトを選択し**_インストール手順_**セクションの**_エージェントのダウンロード_** セクションから、次をコピーしてください。
 
-    ```ini title='Example'
-    license={アクセスキー}
-    whatap.server.host={収集サーバーIP}
-    ```
+   ```ini title='Example'
+   license={アクセスキー}
+   whatap.server.host={収集サーバーIP}
+   ```
 
-5.  _whatap.conf_ファイルに貼り付けてください。
+5. _whatap.conf_ファイルに貼り付けてください。
 
 ホスト(`whatap.server.host`) のアドレスは、WhaTap proxyをインストールしたサーバーのアドレスです。スラッシュ(「/」)を区切り文字として使用し、WhaTap proxy が実行中のサーバーにアドレスを入力することができます。
 
@@ -52,15 +52,15 @@ Node.jsモニタリングサービスを使用するには、モニタリング�
 
 Node.jsモニタリングサービスを構成する各ファイルの役割は、次のとおりです。
 
--   _whatap.conf_：エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。
+- _whatap.conf_：エージェント設定ファイルのサンプルです。そのファイルをコピーして、アクセスキーを入力してください。
 
--   _lib_：エージェント、トレーサープログラムです。
+- _lib_：エージェント、トレーサープログラムです。
 
--   _README.md_：エージェントのインストールに関する手順書です。
+- _README.md_：エージェントのインストールに関する手順書です。
 
--   _package.json_：npmモジュール環境構成ファイルです。
+- _package.json_：npmモジュール環境構成ファイルです。
 
--   _index.js_：main export宣言ファイルです。
+- _index.js_：main export宣言ファイルです。
 
 </details>
 
@@ -101,11 +101,11 @@ const port = normalizePort(process.env.PORT || '3000');
 
 次の場合に該当する場合は、.confを除いたファイル名を設定してください。
 
--   環境別にプロジェクトを分割している場合
+- 環境別にプロジェクトを分割している場合
 
--   異なるエージェントのオプションを設定する場合
+- 異なるエージェントのオプションを設定する場合
 
--   pm2でクラスター(Cluster) モードを起動する場合
+- pm2でクラスター(Cluster) モードを起動する場合
 
 ```javascript
 process.env.WHATAP_CONF = 'whatapdev';
@@ -117,13 +117,13 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 `WHATAP_NAME`オプションで設定できる引数は次のとおりです。
 
--   **ipN**：ip0、ip1、ip2、ip3
+- **ipN**：ip0、ip1、ip2、ip3
 
--   **cluster**：cluster ID
+- **cluster**：cluster ID
 
--   **pid**：process ID
+- **pid**：process ID
 
--   **hostname**：ホスト名
+- **hostname**：ホスト名
 
 :::
 

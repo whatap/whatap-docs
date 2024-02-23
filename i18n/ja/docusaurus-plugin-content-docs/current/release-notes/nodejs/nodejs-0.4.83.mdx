@@ -3,81 +3,82 @@ id: nodejs-0_4_83
 title: Node.js Agent v0.4.83
 toc_max_heading_level: 2
 pagination_next: release-notes/nodejs/nodejs-0_4_81
+displayed_sidebar: releaseSidebar
 ---
 
 2023年12月11日
 
--   <Status>Feature</Status>エージェントオプションの追加
+- <Status>Feature</Status>エージェントオプションの追加
 
-    -   **trace_sql_error_stack** <span class='type'>Boolean</span>
+  - **trace_sql_error_stack** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-        SQLエラー内容をスタックとして保存(MySQL、MariaDB、PostgreSQL、SQL Server)します。
+    SQLエラー内容をスタックとして保存(MySQL、MariaDB、PostgreSQL、SQL Server)します。
 
-    -   **trace_sql_error_depth** <span class='type'>Int</span>
+  - **trace_sql_error_depth** <span class='type'>Int</span>
 
-        デフォルト値`50`
+    デフォルト値`50`
 
-        `trace_sql_error_stack`オプションを適用する場合に保存されるエラーのライン数を設定します。
+    `trace_sql_error_stack`オプションを適用する場合に保存されるエラーのライン数を設定します。
 
-    -   **profile_error_step_enabled** <span class='type'>Boolean</span>
+  - **profile_error_step_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値 `true`
+    デフォルト値 `true`
 
-        プロファイルにエラー関連情報を表示するステップを追加できます。
+    プロファイルにエラー関連情報を表示するステップを追加できます。
 
-    -   **ignore_http_method** <span class='type'>String</span>
+  - **ignore_http_method** <span class='type'>String</span>
 
-        デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+    デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
 
-        設定されたHTTPメソッド(Method)でリクエストされたトランザクション情報は収集しません。 複数を設定するにはコンマ (,)で区切ります。
+    設定されたHTTPメソッド(Method)でリクエストされたトランザクション情報は収集しません。 複数を設定するにはコンマ (,)で区切ります。
 
-        ```ini title="whatap.conf"
-        # example
-        ignore_http_method=OPTIONS,HEAD
-        ```
+    ```ini title="whatap.conf"
+    # example
+    ignore_http_method=OPTIONS,HEAD
+    ```
 
-    -   **status_ignore** <span class='type'>String</span>
+  - **status_ignore** <span class='type'>String</span>
 
-        デフォルト値`Empty`
+    デフォルト値`Empty`
 
-        無視しようとするHTTPステータスコードを設定できます。
+    無視しようとするHTTPステータスコードを設定できます。
 
-        ```ini title="whatap.conf"
-        # example
-        status_ignore=404,500
-        ```
+    ```ini title="whatap.conf"
+    # example
+    status_ignore=404,500
+    ```
 
-    -   **status_ignore_set** <span class='type'>String</span>
+  - **status_ignore_set** <span class='type'>String</span>
 
-        デフォルト値`Empty`
+    デフォルト値`Empty`
 
-        HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
+    HTTPステータスリターンコードの中で無視したいコードをURL単位で設定できます。
 
-        ```ini title="whatap.conf"
-        # example
-        status_ignore_set=/a/b/c:400,/a/ab/c:404
-        ```
+    ```ini title="whatap.conf"
+    # example
+    status_ignore_set=/a/b/c:400,/a/ab/c:404
+    ```
 
-    -   **transaction_status_error_enable** <span class='type'>Boolean</span>
+  - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-        デフォルト値 `true`
+    デフォルト値 `true`
 
-        HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
 
--   <Status>Fixed</Status> MongoDBモニタリングができない問題を修正
+- <Status>Fixed</Status> MongoDBモニタリングができない問題を修正
 
--   <Status>Fixed</Status> MongoDB Connection情報を保存するように修正
+- <Status>Fixed</Status> MongoDB Connection情報を保存するように修正
 
 :::info
 
--   パッケージ情報：https://www.npmjs.com/package/whatap
+- パッケージ情報：https://www.npmjs.com/package/whatap
 
--   インストール及び適用方法
+- インストール及び適用方法
 
-    ```bash
-    npm i whatap
-    ```
+  ```bash
+  npm i whatap
+  ```
 
 :::

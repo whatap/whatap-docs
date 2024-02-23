@@ -19,67 +19,67 @@ Javaエージェント2.1.1バージョン以降で可能です。アップデ�
 
 WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、プロジェクトメニューの**_ログ_** > **_ログ設定_**メニューを選択してください。**_ログモニタリングの開始_**セクションの**_エージェント設定の確認_**タブの手順を参照してください。
 
-1.  プロジェクトメニューの**_管理_** > **_エージェントの設定_**メニューを選択してください。
+1. プロジェクトメニューの**_管理_** > **_エージェントの設定_**メニューを選択してください。
 
-2.  **_オプション作成_**タブから**_手動で入力_**を選択してください。入力ウィンドウから`logsink_enabled=true`オプションを追加してください。 
+2. **_オプション作成_**タブから**_手動で入力_**を選択してください。入力ウィンドウから`logsink_enabled=true`オプションを追加してください。 
 
-    <ImgLang img='log-agent-conf.png' desc='ログエージェント設定'/>
+   <ImgLang img='log-agent-conf.png' desc='ログエージェント設定'/>
 
-3.  ログモニタリングを適用するには、アプリケーションを再起動してください。
+3. ログモニタリングを適用するには、アプリケーションを再起動してください。
 
 ### 主なオプション
 
--   **hooklog_enabled** <span class='type'>Boolean</span>
+- **hooklog_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Logライブラリをhookingしてログモニタリングを有効にします。  
+  Logライブラリをhookingしてログモニタリングを有効にします。  
 
-    :::caution
+  :::caution
 
-    アプリケーションを実行する前に、_whatap.conf_オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
+  アプリケーションを実行する前に、_whatap.conf_オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
 
-    :::
+  :::
 
-    :::note
+  :::note
 
-    今後ログモニタリングを活用する可能性がある場合は、事前にこのオプションを設定することをお勧めします。
+  今後ログモニタリングを活用する可能性がある場合は、事前にこのオプションを設定することをお勧めします。
 
-    :::
+  :::
 
--   **hooklog_custom_methods**
+- **hooklog_custom_methods**
 
-    ユーザーのカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用します。
+  ユーザーのカスタムログを登録します。任意のログフレームワークの内容を配信します。サイトで個別に作成したログモジュールのログを追跡するときに使用します。
 
-    ```java title='Java'
-    package io.home.test;
+  ```java title='Java'
+  package io.home.test;
 
-    public class MyLog {  
-      public void customLog(String log) { ... }
-    }
-    ```
+  public class MyLog {  
+    public void customLog(String log) { ... }
+  }
+  ```
 
-    ```ini title='whatap.conf'
-    hooklog_custom_methods=io.home.test.MyLog.customLog
-    ```
+  ```ini title='whatap.conf'
+  hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```
 
--   **logsink_enabled** <span class='type'>Boolean</span>
+- **logsink_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Logモニタリング機能をOn/Offします。
+  Logモニタリング機能をOn/Offします。
 
-    :::caution
+  :::caution
 
-    アプリケーションが起動する前に_whatap.conf_に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
+  アプリケーションが起動する前に_whatap.conf_に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
 
-    :::
+  :::
 
--   **logsink_trace_enabled** <span class='type'>Boolean</span>
+- **logsink_trace_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
+  LogにトランザクションIDを挿入して、トランザクショントレースのログタブの表示有無を指定します。  
 
 ## ログモニタリングの活性化
 

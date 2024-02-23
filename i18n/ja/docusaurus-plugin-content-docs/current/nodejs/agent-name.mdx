@@ -69,8 +69,8 @@ var whatap=require('whatap').NodeAgent;
 
 :::note
 
--   envを設定するには、`require('whatap')`より先に宣言する必要があります。
--   **Heroku**環境では、サーバを再起動するたびにIPアドレスを変更するため、新しい名前に変更されます。
+- envを設定するには、`require('whatap')`より先に宣言する必要があります。
+- **Heroku**環境では、サーバを再起動するたびにIPアドレスを変更するため、新しい名前に変更されます。
 
 :::
 
@@ -82,28 +82,28 @@ var whatap=require('whatap').NodeAgent;
 
 Node.jsエージェント名の設定の詳細については、 [次の文書](#agentname)を参照してください。
 
--   **whatap.okind** <span class='type'>String</span>
+- **whatap.okind** <span class='type'>String</span>
 
-    エージェントが所属するグループ単位を設定します。複数のエージェントをまとめて設定し、そのグループ名でトポロジを確認できます。
+  エージェントが所属するグループ単位を設定します。複数のエージェントをまとめて設定し、そのグループ名でトポロジを確認できます。
 
--   **whatap.onode** <span class='type'>String</span>
+- **whatap.onode** <span class='type'>String</span>
 
-    エージェントが属するNode単位を設定します。
+  エージェントが属するNode単位を設定します。
 
--   **auto_oname_enabled** <span class='type'>Boolean</span>
+- **auto_oname_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    サーバーに登録するエージェント名をサーバーから自動付与される機能を有効にします。
+  サーバーに登録するエージェント名をサーバーから自動付与される機能を有効にします。
 
--   **auto_oname_prefix** <span class='type'>String</span>
+- **auto_oname_prefix** <span class='type'>String</span>
 
-    デフォルト値`agent`
+  デフォルト値`agent`
 
-    エージェント名をサーバーから自動的に割り当てる場合は、エージェント名のprefixや業務名を使用します。prefixにシリアル番号「1~)」を付与します。
+  エージェント名をサーバーから自動的に割り当てる場合は、エージェント名のprefixや業務名を使用します。prefixにシリアル番号「1~)」を付与します。
 
--   **auto_oname_reset** <span class='type'>Int</span>
+- **auto_oname_reset** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    サーバーから新しいエージェント名を取得するために修正します。エージェント名が設定されると、Node.jsが再起動するまで保持されます。リセットする場合は、`auto_oname_reset`値を修正してください。現在の設定値と異なる値に変更すると有効になります。
+  サーバーから新しいエージェント名を取得するために修正します。エージェント名が設定されると、Node.jsが再起動するまで保持されます。リセットする場合は、`auto_oname_reset`値を修正してください。現在の設定値と異なる値に変更すると有効になります。

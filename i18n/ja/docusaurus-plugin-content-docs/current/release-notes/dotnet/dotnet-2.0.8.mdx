@@ -7,52 +7,52 @@ displayed_sidebar: releaseSidebar
 
 #### 2023年5月31日
 
--   <Status>New</Status>次のエージェント設定オプションを追加
+- <Status>New</Status>次のエージェント設定オプションを追加
 
-    -   **transaction_status_error_enable** <span class='type'>Boolean</span>
+  - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-        デフォルト値 `true`
+    デフォルト値 `true`
 
-        HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
+    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとして処理します。
 
-    -   **status_ignore** <span class='type'>String</span>
+  - **status_ignore** <span class='type'>String</span>
 
-        無視する`STATUS_ERROR`コードを設定します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    無視する`STATUS_ERROR`コードを設定します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    -   **status_ignore_set** <span class='type'>String</span>
+  - **status_ignore_set** <span class='type'>String</span>
 
-        `whatap.error.STATUS_ERROR`を無視します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    `whatap.error.STATUS_ERROR`を無視します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    -   **httpc_status_error_enable** <span class='type'>Boolean</span>
+  - **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-        デフォルト値 `true`
+    デフォルト値 `true`
 
-        `HTTPC_ERROR`を返ってくるかどうかを確認します。
+    `HTTPC_ERROR`を返ってくるかどうかを確認します。
 
-    -   **httpc_status_ignore** <span class='type'>String</span>
+  - **httpc_status_ignore** <span class='type'>String</span>
 
-        無視する`HTTPC_ERROR`コードを設定します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    無視する`HTTPC_ERROR`コードを設定します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    -   **httpc_status_ignore_set** <span class='type'>String</span>
+  - **httpc_status_ignore_set** <span class='type'>String</span>
 
-        `whatap.error.HTTPC_ERROR`を無視します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    `whatap.error.HTTPC_ERROR`を無視します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-        `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+    `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
 
-    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+  - **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-        トレース履歴にHTTPパラメータ情報を記録する場合、`true`に設定します。 パラメータは、別のセキュリティキーを入力することで表示できます。   
+    トレース履歴にHTTPパラメータ情報を記録する場合、`true`に設定します。 パラメータは、別のセキュリティキーを入力することで表示できます。   
 
-        セキュリティキーは、WASサーバー _`${WHATAP_AGENT_HOME}`/paramkey.txt_ファイル内に6桁で設定します。 _paramkey.txt_ ファイルが存在しない場合は、ランダムな値で自動的に生成します。
+    セキュリティキーは、WASサーバー _`${WHATAP_AGENT_HOME}`/paramkey.txt_ファイル内に6桁で設定します。 _paramkey.txt_ ファイルが存在しない場合は、ランダムな値で自動的に生成します。
 
-    -   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+  - **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-        トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
+    トレース履歴にhttpパラメータ情報を記録する対象URLのprefixを定義するときに使用します。
 
-    -   **profile_http_parameter_keys** <span class='type'>String</span>
+  - **profile_http_parameter_keys** <span class='type'>String</span>
 
-        設定されたキーに対応するパラメータ情報のみを記録します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
+    設定されたキーに対応するパラメータ情報のみを記録します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
 
--   <Status>Fixed</Status>エラー表示がされていない部分の検索と修正
+- <Status>Fixed</Status>エラー表示がされていない部分の検索と修正

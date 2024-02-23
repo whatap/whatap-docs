@@ -10,46 +10,46 @@ tags:
 
 Node.jsエージェントのDB、SQL関連オプションを提供します。
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
+- **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    SQLパラメータの収集を有効にします。ただし、パラメータを表示するには、セキュリティキーを入力する必要があります。セキュリティキーは、エージェントのインストールパスの_paramkey.txt_ファイルに6桁で指定されます。 _paramkey.txt_が存在しない場合は自動生成され、randomキーが設定されます。
+  SQLパラメータの収集を有効にします。ただし、パラメータを表示するには、セキュリティキーを入力する必要があります。セキュリティキーは、エージェントのインストールパスの_paramkey.txt_ファイルに6桁で指定されます。 _paramkey.txt_が存在しない場合は自動生成され、randomキーが設定されます。
 
--   **profile_connection_open_enabled** <span class='type'>Boolean</span>
+- **profile_connection_open_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トレース履歴にDBConnectionオープン情報を記録します。
+  トレース履歴にDBConnectionオープン情報を記録します。
 
--   **profile_error_sql_time_max** <span class='type'>Int</span>
+- **profile_error_sql_time_max** <span class='type'>Int</span>
 
-    デフォルト値`30000`
+  デフォルト値`30000`
 
-    SQLの実行時間が設定値を超えると、TOO SLOWエラーとして処理されます。`0`に設定する場合、エラー処理は実行されません。
+  SQLの実行時間が設定値を超えると、TOO SLOWエラーとして処理されます。`0`に設定する場合、エラー処理は実行されません。
 
--   **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_sql_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    SQL文からリテラル部分を抽出し、SQL文を正規化する機能を活性化します。
+  SQL文からリテラル部分を抽出し、SQL文を正規化する機能を活性化します。
 
--   **hook_connection_open_patterns** <span class='type'>String</span>
+- **hook_connection_open_patterns** <span class='type'>String</span>
 
-    DB Connection Open時に呼び出すメソッドを登録します。事前設定していないConnection PoolのgetConnectionを登録するのが一般的です。
+  DB Connection Open時に呼び出すメソッドを登録します。事前設定していないConnection PoolのgetConnectionを登録するのが一般的です。
 
-    ```ini title='Example'
-    hook_connection_open_patterns=mypool.ConPool.getConnection
-    ```
+  ```ini title='Example'
+  hook_connection_open_patterns=mypool.ConPool.getConnection
+  ```
 
--   **trace_sql_error_stack** <span class='type'>Boolean</span>
+- **trace_sql_error_stack** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    SQLエラー内容をスタックとして保存(MySQL、MariaDB、PostgreSQL、SQL Server)します。
+  SQLエラー内容をスタックとして保存(MySQL、MariaDB、PostgreSQL、SQL Server)します。
 
--   **trace_sql_error_depth** <span class='type'>Int</span>
+- **trace_sql_error_depth** <span class='type'>Int</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    `trace_sql_error_stack`オプションを適用する場合に保存されるエラーのライン数を設定します。
+  `trace_sql_error_stack`オプションを適用する場合に保存されるエラーのライン数を設定します。

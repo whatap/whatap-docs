@@ -27,52 +27,52 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx}  
 
-3.  解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-    ```ini title='whatap.conf'
-    license=プロジェクトアクセスキー
-    whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
+   ```ini title='whatap.conf'
+   license=プロジェクトアクセスキー
+   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTapサーバー情報
 
-    dbms=mysql
-    db_ip={DBサーバーのIPアドレス}
-    db_port={DBサーバーのポート番号}
-    ```
+   dbms=mysql
+   db_ip={DBサーバーのIPアドレス}
+   db_port={DBサーバーのポート番号}
+   ```
 
-    :::info
+   :::info
 
-    **MySQLサーバとエージェントが localhostにインストールする場合**(**default 3306 port**)
+   **MySQLサーバとエージェントが localhostにインストールする場合**(**default 3306 port**)
 
-    ```ini title='whatap.conf'
-    dbms=mysql
-    db_ip=127.0.0.1
-    db_port=3306
-    ```
+   ```ini title='whatap.conf'
+   dbms=mysql
+   db_ip=127.0.0.1
+   db_port=3306
+   ```
 
-    :::
+   :::
 
-4.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-    データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
 
-    **Mysql & MariaDB 5.5バージョン以降**
+   **Mysql & MariaDB 5.5バージョン以降**
 
-    -   [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
-    -   [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
+   - [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
+   - [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
 
 :::tip
 
--   JDBCドライバー8.xバージョン以降を使用する場合は、接続URLに`serverTimezone`設定が必要な場合は、次のようにオプションを設定してください。
+- JDBCドライバー8.xバージョン以降を使用する場合は、接続URLに`serverTimezone`設定が必要な場合は、次のようにオプションを設定してください。
 
-    ```ini title='whatap.conf'
-    connect_option=?serverTimezone={SERVER_TIMEZONE}
-    # ex) connect_option=?serverTimezone=UTC
-    ```
+  ```ini title='whatap.conf'
+  connect_option=?serverTimezone={SERVER_TIMEZONE}
+  # ex) connect_option=?serverTimezone=UTC
+  ```
 
--   SSLを使用する場合は、次のようにオプションを設定してください。
+- SSLを使用する場合は、次のようにオプションを設定してください。
 
-    ```ini title='whatap.conf'
-    connect_option=?useSSL=true&verifyServerCertificate=false
-    ```
+  ```ini title='whatap.conf'
+  connect_option=?useSSL=true&verifyServerCertificate=false
+  ```
 
 :::
 
@@ -110,7 +110,7 @@ grant execute on procedure mysql.rds_kill to whatap;  # AWS RDSを使用する�
 
 <DBuserDesc name='default'/>
 
-{@include: ../common-items/_db-create-db-user-file-body.mdx} 
+{@include: ../common-items/_db-create-db-user-file-body.mdx}
 
 <!--## 에이전트 실행-->
 

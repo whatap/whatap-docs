@@ -1,0 +1,50 @@
+---
+id: java-2_2_27
+title: Java Agent v2.2.27
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_26
+displayed_sidebar: releaseSidebar
+---
+
+2024年02月06日
+
+- <Status>Feature</Status> mule-3.9.5追跡範囲の拡大
+
+  ```ini title="whatap.conf"
+  # requires agent restart
+  weaving=mule-3.9.5
+  ```
+
+- <Status>Feature</Status> camel-cxf-3.15追跡
+
+  ```ini title="whatap.conf"
+  # requires agent restart
+  weaving=camel-cxf-3.15
+  ```
+
+- <Status>Feature</Status> <code>OracleCallableStatement</code>追跡追加
+
+- <Status>Changed</Status> Lettuceドライバーの使用時、Redisのkey収集範囲の追加
+
+  ```ini title="whatap.conf"
+  # requires agent restart
+  weaving=Lettuce-6.2
+  ```
+
+- <Status>Changed</Status> Lettuceドライバーの使用時、Redisのkey収集有無の修正
+
+  ```ini title="whatap.conf"
+  # default: false
+  trace_sql_param_enabled=true
+
+  # default: false
+  trace_redis_Lettuce_key_enabled=true
+  ```
+
+- <Status>Changed</Status> Lettuceドライバーの使用時、Redisのkey収集数の制限
+
+- <Status>Fixed</Status> spring-bootでnetty使用時、requestのURLからquerystringを分離
+
+- <Status>Fixed</Status> spring-bootでnettyの使用時、requestのHTTPパラメータを収集できない問題の修正
+
+- <Status>Deprecate</Status> Lettuceドライバーの使用時、Redisのvalue収集中断

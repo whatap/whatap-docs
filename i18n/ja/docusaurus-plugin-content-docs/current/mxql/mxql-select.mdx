@@ -25,27 +25,27 @@ MXQL文法を利用してメトリクスを選択するコマンドについて�
 
 ### オペランド
 
--   **文字列**：指定したカテゴリのデータを収集します。検索時間に関係なく、常時、`app_counter`カテゴリのデータをロードします。
+- **文字列**：指定したカテゴリのデータを収集します。検索時間に関係なく、常時、`app_counter`カテゴリのデータをロードします。
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  ```
 
--   **JSON**：データ参照時間の長さに応じてカテゴリを選択するように設定できます。
+- **JSON**：データ参照時間の長さに応じてカテゴリを選択するように設定できます。
 
-    参照時間が6時間、3日、それ以上の場合に対して、`app_counter`、`app_counter{m5}`、`app_counter{h1}`カテゴリを選択します。
+  参照時間が6時間、3日、それ以上の場合に対して、`app_counter`、`app_counter{m5}`、`app_counter{h1}`カテゴリを選択します。
 
-    ```sql
-    CATEGORY {"app_counter":6h, "app_counter{m5}":3d, "app_counter{h1}":unlimit } 
-    TAGLOAD 
-    ```
+  ```sql
+  CATEGORY {"app_counter":6h, "app_counter{m5}":3d, "app_counter{h1}":unlimit } 
+  TAGLOAD 
+  ```
 
 :::caution
 
--   `CATEGORY`のオペランドは 1つの値だけを指定できます。複数の`CATEGORY`のデータを一度に確認したい場合は[JOIN](mxql-calculate#join)を使用する必要があります。
--   読み込み方式([TAGLOAD](mxql-loading#tagload)または[FLEXLOAD](mxql-loading#flexload))によって設定可能なカテゴリが異なります。 
--   `CATEGORY`の名前に`{m5}`または`{h1}`が追加されている場合、[MetricValue](mxql-guide#metric-value)を参照してください。
+- `CATEGORY`のオペランドは 1つの値だけを指定できます。複数の`CATEGORY`のデータを一度に確認したい場合は[JOIN](mxql-calculate#join)を使用する必要があります。
+- 読み込み方式([TAGLOAD](mxql-loading#tagload)または[FLEXLOAD](mxql-loading#flexload))によって設定可能なカテゴリが異なります。 
+- `CATEGORY`の名前に`{m5}`または`{h1}`が追加されている場合、[MetricValue](mxql-guide#metric-value)を参照してください。
 
 :::
 
@@ -77,11 +77,11 @@ TAGLOAD
 
 :::caution
 
--   `OID`、`OKIND`、`ONODE`のいずれかの値を設定できます。 
--   オペランドを入力しない(またはパラメータの値を渡さない) コマンドは無視します。
--   `OID`、`OKIND`、`ONODE`を重複して使用する場合は、最後に入力したコマンドを適用します。
--   `OIDSET`はdeprecatedされ、`OID`、`OKIND`、`ONODE`のいずれかのコマンドを使用することをお勧めします。
--   データ読み込み段階から必要なデータを参照することでデータ処理ステップで[FILTER](mxql-calculate#filter)を適用するのと異なります。
+- `OID`、`OKIND`、`ONODE`のいずれかの値を設定できます。 
+- オペランドを入力しない(またはパラメータの値を渡さない) コマンドは無視します。
+- `OID`、`OKIND`、`ONODE`を重複して使用する場合は、最後に入力したコマンドを適用します。
+- `OIDSET`はdeprecatedされ、`OID`、`OKIND`、`ONODE`のいずれかのコマンドを使用することをお勧めします。
+- データ読み込み段階から必要なデータを参照することでデータ処理ステップで[FILTER](mxql-calculate#filter)を適用するのと異なります。
 
 :::
 
@@ -118,29 +118,29 @@ Flexボードのウィジェットで使用する形式に合わせて渡す必�
 
 <ImgLang img='mxql-8.png' desc='テスト環境のDatePicker' />
 
--   直前15秒間のデータを照会
+- 直前15秒間のデータを照会
 
-    ```sql
-    TIME-RANGE { recent : 15s }
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  TIME-RANGE { recent : 15s }
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```
 
--   `etime`以前の15秒間のデータを表示(パラメータとして`etime`を渡します)
+- `etime`以前の15秒間のデータを表示(パラメータとして`etime`を渡します)
 
-    ```sql
-    TIME-RANGE {duration:15s, etime:$etime}
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  TIME-RANGE {duration:15s, etime:$etime}
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```
 
--   `stime`以前の15秒間のデータを表示(パラメータとして`stime`を渡します)
+- `stime`以前の15秒間のデータを表示(パラメータとして`stime`を渡します)
 
-    ```sql
-    TIME-RANGE {duration:15s, stime:$stime}
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  TIME-RANGE {duration:15s, stime:$stime}
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```

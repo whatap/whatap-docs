@@ -91,23 +91,23 @@ Installation complete!
 
 ### エージェント生成
 
-1.  エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードしてください。
+1. エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードしてください。
 
-2.  ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
+2. ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
 
-3.  マスターノードで次のコマンドを実行し、エージェントを作成してください。
+3. マスターノードで次のコマンドを実行し、エージェントを作成してください。
 
-    ```bash
-    kubectl apply -f whatap_npmd.yaml
-    ```
+   ```bash
+   kubectl apply -f whatap_npmd.yaml
+   ```
 
-4.  次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認してください。
+4. 次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認してください。
 
-    ```bash
-    kubectl get pod -n whatap-npm-ns
-    ```
+   ```bash
+   kubectl get pod -n whatap-npm-ns
+   ```
 
-    ![NPMエージェントのインストール](/img/npm-k8s-check-running.png)
+   ![NPMエージェントのインストール](/img/npm-k8s-check-running.png)
 
 ## TagRuleオプション設定(選択事項)
 

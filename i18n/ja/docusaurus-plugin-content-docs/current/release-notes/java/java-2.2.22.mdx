@@ -7,39 +7,39 @@ pagination_next: release-notes/java/java-2_2_21
 
 2023年11月16日
 
--   <Status>Feature</Status>log4j-2.17 appender ログトレース(log4j-2.17バージョン以降)
+- <Status>Feature</Status>log4j-2.17 appender ログトレース(log4j-2.17バージョン以降)
 
-    ```ini title='whatap.conf'
-    # requires agent restart
-    weaving=log4j-2.17
+  ```ini title='whatap.conf'
+  # requires agent restart
+  weaving=log4j-2.17
 
-    # default
-    trace_log4j_stack_depth=50
-    trace_log4j_appender_enabled=false
-    trace_log4j_appender_set=
+  # default
+  trace_log4j_stack_depth=50
+  trace_log4j_appender_enabled=false
+  trace_log4j_appender_set=
 
-    # example
-    trace_log4j_appender_enabled=true
-    trace_log4j_appender_set=Console,AccessLog,ErrorLog
-    ```
+  # example
+  trace_log4j_appender_enabled=true
+  trace_log4j_appender_set=Console,AccessLog,ErrorLog
+  ```
 
--   <Status>Changed</Status>logback-1.2.8 appenderログ設定の変更
+- <Status>Changed</Status>logback-1.2.8 appenderログ設定の変更
 
-    ```ini title='whatap.conf'
-    # requires agent restart
-    weaving=logback-1.2.8
+  ```ini title='whatap.conf'
+  # requires agent restart
+  weaving=logback-1.2.8
 
-    # default
-    trace_logback_stack_depth=50
-    trace_logback_appender_enabled=false
-    trace_logback_appender_set=
-    ```
+  # default
+  trace_logback_stack_depth=50
+  trace_logback_appender_enabled=false
+  trace_logback_appender_set=
+  ```
 
--   <Status>Fixed</Status>エージェント起動時のエラー防止のために<code>hook_db_native_enabled</code>オプションのデフォルト値を<code>false</code>に修正
+- <Status>Fixed</Status>エージェント起動時のエラー防止のために<code>hook_db_native_enabled</code>オプションのデフォルト値を<code>false</code>に修正
 
-    ```ini title='whatap.conf'
-    # default
-    hook_db_native_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # default
+  hook_db_native_enabled=false
+  ```
 
--   <Status>Fixed</Status>r2dbc呼び出し時に一部パラメータが収集されない現象の修正
+- <Status>Fixed</Status>r2dbc呼び出し時に一部パラメータが収集されない現象の修正

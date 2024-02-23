@@ -14,117 +14,117 @@ import TabItem from '@theme/TabItem';
 
 **Elastic Beanstalk**を使用してデプロイする場合、WhaTapエージェントを適用します。
 
-1.  Linuxのインストール環境に合わせ、以下をElastic Beanstalkの **インストールスクリプト**に追加します。
+1. Linuxのインストール環境に合わせ、以下をElastic Beanstalkの **インストールスクリプト**に追加します。
 
-    :::note
+   :::note
 
-    `whatap.server.host`と`license`は**プロジェクトアクセスキー**をユーザーに合わせて入力します。
+   `whatap.server.host`と`license`は**プロジェクトアクセスキー**をユーザーに合わせて入力します。
 
-    :::
+   :::
 
-    <Tabs>
-    <TabItem value="du" label="Debian / Ubuntu" default>
+   <Tabs>
+   <TabItem value="du" label="Debian / Ubuntu" default>
 
-    ```bash
-    wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
-    wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-    sudo dpkg -i whatap-repo_1.0_all.deb
-    sudo apt-get update
-    sudo apt-get install whatap-infra
-    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    sudo service whatap-infra restart
-    ```
+   ```bash
+   wget http://repo.whatap.io/debian/release.gpg -O -|sudo apt-key add -
+   wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+   sudo dpkg -i whatap-repo_1.0_all.deb
+   sudo apt-get update
+   sudo apt-get install whatap-infra
+   echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo service whatap-infra restart
+   ```
 
-    </TabItem>
-    <TabItem value="co" label="CentOS">
+   </TabItem>
+   <TabItem value="co" label="CentOS">
 
-    ```bash
-    sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
-    sudo yum install whatap-infra
-    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    sudo service whatap-infra restart
-    ```
+   ```bash
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   sudo yum install whatap-infra
+   echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo service whatap-infra restart
+   ```
 
-    </TabItem>
-    <TabItem value="al" label="Amazon Linux">
+   </TabItem>
+   <TabItem value="al" label="Amazon Linux">
 
-    ```bash
-    sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
-    sudo yum install whatap-infra
-    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    sudo service whatap-infra restart
-    ```
+   ```bash
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   echo "[whatap]" | sudo tee /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/centos/latest/\$basearch" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
+   sudo yum install whatap-infra
+   echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo service whatap-infra restart
+   ```
 
-    </TabItem>
-    </Tabs>
-    <Tabs>
-    <TabItem value="suse" label="SUSE">
+   </TabItem>
+   </Tabs>
+   <Tabs>
+   <TabItem value="suse" label="SUSE">
 
-    ```bash
-    sudo rpm --import http://repo.whatap.io/suse/release.gpg
-    echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
-    sudo zypper refresh
-    sudo zypper install whatap-infra
-    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    sudo /etc/init.d/whatap-infra restart
-    ```
+   ```bash
+   sudo rpm --import http://repo.whatap.io/suse/release.gpg
+   echo "[whatap]" | sudo tee /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "name=whatap packages for enterprise linux" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "baseurl=http://repo.whatap.io/suse/12/x86_64" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "enabled=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   echo "gpgcheck=1" | sudo tee -a /etc/zypp/repos.d/whatap.repo > /dev/null
+   sudo zypper refresh
+   sudo zypper install whatap-infra
+   echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo /etc/init.d/whatap-infra restart
+   ```
 
-    </TabItem>
-    <TabItem value="fb" label="FreeBSD">
+   </TabItem>
+   <TabItem value="fb" label="FreeBSD">
 
-    ```bash
-    wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
-    pkg install whatap-infra.txz
-    echo "license={LICENSE_INFO}" |tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host={HOST_IP}" |tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=`date +%s%N`" |tee -a /usr/whatap/infra/conf/whatap.conf
-    service whatap_infra restart
-    ```
+   ```bash
+   wget http://repo.whatap.io/freebsd/10/whatap-infra.txz
+   pkg install whatap-infra.txz
+   echo "license={LICENSE_INFO}" |tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host={HOST_IP}" |tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |tee -a /usr/whatap/infra/conf/whatap.conf
+   service whatap_infra restart
+   ```
 
-    </TabItem>
-    <TabItem value="xs" label="XenServer">
+   </TabItem>
+   <TabItem value="xs" label="XenServer">
 
-    ```bash
-    sudo rpm --import http://repo.whatap.io/centos/release.gpg
-    sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
-    sudo yum install whatap-infra
-    echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
-    echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    sudo service whatap_infra restart
-    ```
+   ```bash
+   sudo rpm --import http://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh http://repo.whatap.io/centos/python/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   sudo yum install whatap-infra
+   echo "license={LICENSE_INFO}" |sudo tee /usr/whatap/infra/conf/whatap.conf
+   echo "whatap.server.host={HOST_IP}" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   echo "createdtime=`date +%s%N`" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   sudo service whatap_infra restart
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
-2.  次の**コマンド**を変更します。
+2. 次の**コマンド**を変更します。
 
-    ```bash
-    echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    ```
+   ```bash
+   echo "createdtime=date +%s%N" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   ```
 
-    インストール後、サーバーモニタリングをBeanstalkに含めて、アプリケーションをデプロイすると、サーバーモニタリングが繰り返される可能性があります。 
+   インストール後、サーバーモニタリングをBeanstalkに含めて、アプリケーションをデプロイすると、サーバーモニタリングが繰り返される可能性があります。 
 
-    WhaTapエージェントの内部IDが、上記のコマンドが実行されるたびに新しく発行されるためです。 今後のデプロイ時に新しいリストが追加されないように、次のように変更します。
+   WhaTapエージェントの内部IDが、上記のコマンドが実行されるたびに新しく発行されるためです。 今後のデプロイ時に新しいリストが追加されないように、次のように変更します。
 
-    ```bash
-    echo "createdtime=12345678" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    ```
+   ```bash
+   echo "createdtime=12345678" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+   ```

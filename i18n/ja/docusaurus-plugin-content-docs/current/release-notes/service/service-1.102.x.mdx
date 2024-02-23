@@ -70,21 +70,21 @@ toc_max_heading_level: 2
 
 **_管理_**>**_エージェント設定_**メニューで、次の項目を追加します。
 
--   <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
+- <Status>Fixed</Status>エージェントインストールのためのGO対応バージョンの変更(1.14 → 1.17)
 
--   <Status>Fixed</Status>Amazon linuxオペレーティングシステムの<b>エージェントダウンロード</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
+- <Status>Fixed</Status>Amazon linuxオペレーティングシステムの<b>エージェントダウンロード</b>セクションのスクリプトコードにバックスラッシュ(\)が表示されない部分の修正
 
--   <Status>Fixed</Status>Alpine linuxオペレーティングシステムの<b>Goライブラリ使用</b>セクションの内容が表示されない部分の修正
+- <Status>Fixed</Status>Alpine linuxオペレーティングシステムの<b>Goライブラリ使用</b>セクションの内容が表示されない部分の修正
 
--   <Status>Fixed</Status><b>Goライブラリ使用</b>セクションのスクリプトコードの内容をすべてのオペレーティングシステムに適用されます
+- <Status>Fixed</Status><b>Goライブラリ使用</b>セクションのスクリプトコードの内容をすべてのオペレーティングシステムに適用されます
 
--   <Status>Feature</Status>すべてのオペレーティングシステムの<b>エージェント設定</b>セクションに手順を追加
+- <Status>Feature</Status>すべてのオペレーティングシステムの<b>エージェント設定</b>セクションに手順を追加
 
--   <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに手順を追加
+- <Status>Feature</Status>Alpine linuxオペレーティングシステムで<b>モニタリングの開始</b>セクションに手順を追加
 
 #### PHP
 
--   <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>Amazon linux</UI>タブ><b>エージェントダウンロード</b>セクション内容のうち、スクリプトコードにバックスラッシュが表示されない部分の修正
+- <Status>Fixed</Status><UI>管理</UI>><UI>エージェントのインストール</UI>メニューで<UI>Amazon linux</UI>タブ><b>エージェントダウンロード</b>セクション内容のうち、スクリプトコードにバックスラッシュが表示されない部分の修正
 
 </div>
 
@@ -104,9 +104,9 @@ toc_max_heading_level: 2
 
 #### エージェント設定とサーバー設定
 
--   <Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューor<UI>サーバー設定</UI>><UI>サーバー設定</UI>メニューの<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブの設定を適用すると、リクエストが成功した場合でもエラーメッセージが表示される問題を修正
+- <Status>Fixed</Status> <UI>管理</UI>><UI>エージェント設定</UI>メニューor<UI>サーバー設定</UI>><UI>サーバー設定</UI>メニューの<UI>業務デフォルト</UI>, <UI>プロジェクトデフォルト</UI>タブの設定を適用すると、リクエストが成功した場合でもエラーメッセージが表示される問題を修正
 
--   <Status>Fixed</Status>設定を適用する対象がIDではなく、名前で表示されるように修正
+- <Status>Fixed</Status>設定を適用する対象がIDではなく、名前で表示されるように修正
 
 </div>
 
@@ -156,25 +156,25 @@ toc_max_heading_level: 2
 
 ### `Application`
 
--   <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューからデータを参照する最大範囲を1日の制限に修正
+- <Status>Fixed</Status> <UI>分析</UI> > <UI>MSA分析</UI>メニューからデータを参照する最大範囲を1日の制限に修正
 
--   <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューからデータを参照する最大範囲を7日間の制限に修正
+- <Status>Fixed</Status> <UI>統計/レポート</UI> > <UI>統計</UI> > <UI>クライアントIP</UI>メニューからデータを参照する最大範囲を7日間の制限に修正
 
--   <Status>Fixed</Status> <UI>ヒットマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、Traceステップ分析及びメソッドポップアップの出力データを次のように修正
-      
-    - 各データのタイトルを修正
+- <Status>Fixed</Status> <UI>ヒットマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、Traceステップ分析及びメソッドポップアップの出力データを次のように修正
+    
+  - 各データのタイトルを修正
 
-    -   関数 → メソッド
+  - 関数 → メソッド
 
-    -   Parameter/Return → パラメータ/リターン (多言語適用)
+  - Parameter/Return → パラメータ/リターン (多言語適用)
 
-    -   モーダルタイトル修正：関数→メソッド
+  - モーダルタイトル修正：関数→メソッド
 
-    -   経過時間単位テキストの修正：(ms) → ms
+  - 経過時間単位テキストの修正：(ms) → ms
 
-    -   一部の出力値を削除：イングレスCPU時間、メモリ
+  - 一部の出力値を削除：イングレスCPU時間、メモリ
 
--   <Status>Fixed</Status> <UI>ヒットマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、SQL文の特定キーワード(content、long)が強調されるバグを修正
+- <Status>Fixed</Status> <UI>ヒットマップトランザクション</UI> > <UI>TXトレース</UI>一覧で<UI>統計</UI> 情報を確認する場合、SQL文の特定キーワード(content、long)が強調されるバグを修正
 
 </div>
 
@@ -198,9 +198,9 @@ toc_max_heading_level: 2
 
 #### アラート通知
 
--   <Status>Fixed</Status> <UI>イベント履歴</UI>メニューから<b>最終変更時間</b>カラム名を<UI>イベント解消時間</UI>に修正
+- <Status>Fixed</Status> <UI>イベント履歴</UI>メニューから<b>最終変更時間</b>カラム名を<UI>イベント解消時間</UI>に修正
 
--   <Status>Fixed</Status> <UI>イベント履歴</UI>メニューから進行中のイベントは<UI>イベント解消時間</UI>データを表示しないように修正
+- <Status>Fixed</Status> <UI>イベント履歴</UI>メニューから進行中のイベントは<UI>イベント解消時間</UI>データを表示しないように修正
 
 </div>
 
@@ -230,13 +230,13 @@ toc_max_heading_level: 2
 
 ### `Application`
 
--   <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQLサマリー</UI>, <UI>HTTP呼び出しサマリー</UI>、<UI>メソッドサマリー</UI>タブの履歴データの表示に関するバグを修正
+- <Status>Fixed</Status> <b>トランザクション詳細情報</b>ウィンドウで<UI>SQLサマリー</UI>, <UI>HTTP呼び出しサマリー</UI>、<UI>メソッドサマリー</UI>タブの履歴データの表示に関するバグを修正
 
 * * *
 
 ### `Server`
 
--   <Status>Feature</Status>データ閲覧時間を選択する機能を追加
+- <Status>Feature</Status>データ閲覧時間を選択する機能を追加
 
 </div>
 
@@ -362,31 +362,31 @@ toc_max_heading_level: 2
 
 ### `共通`
 
--   <Status>Fixed</Status> サイドバーメニューで<img src='/img/ico-filter.svg' alt='修正した'/>プロジェクトタイプのフィルターに<code>Browser</code>タイプの追加およびユーザーが選択した言語に合わせてテキストが表示されるように修正
+- <Status>Fixed</Status> サイドバーメニューで<img src='/img/ico-filter.svg' alt='修正した'/>プロジェクトタイプのフィルターに<code>Browser</code>タイプの追加およびユーザーが選択した言語に合わせてテキストが表示されるように修正
 
--   <Status>Change</Status> <UI>サイトマップ</UI> > <UI>ユーザーアクション</UI>メニューを変更して、メンバー管理権限を持つアカウントがすべてのアカウントのユーザー行動を表示できるように変更
+- <Status>Change</Status> <UI>サイトマップ</UI> > <UI>ユーザーアクション</UI>メニューを変更して、メンバー管理権限を持つアカウントがすべてのアカウントのユーザー行動を表示できるように変更
 
--   <Status>Change</Status>サービス全体の削除アイコン(<img src='/img/ico-trash-new.svg' alt='icon'/>)変更、チャンネル問い合わせアイコン(<img src='/img/ic-message-filled.svg' alt='icon'/>)変更
+- <Status>Change</Status>サービス全体の削除アイコン(<img src='/img/ico-trash-new.svg' alt='icon'/>)変更、チャンネル問い合わせアイコン(<img src='/img/ic-message-filled.svg' alt='icon'/>)変更
 
 #### Flexボード
 
--   <Status>Change</Status>ダッシュボードでサイドメニューのオン/オフに関係なくウィジェットの操作ボタンの状態が変更されないように修正
+- <Status>Change</Status>ダッシュボードでサイドメニューのオン/オフに関係なくウィジェットの操作ボタンの状態が変更されないように修正
 
--   <Status>Fixed</Status>リッチテキストウィジェットの場合、修正後に保存した内容が反映されないバグを修正
+- <Status>Fixed</Status>リッチテキストウィジェットの場合、修正後に保存した内容が反映されないバグを修正
 
--   <Status>Fixed</Status>ブラウザーウィンドウのサイズが特定のサイズの場合、<UI>Flexボード</UI>メニューの<UI>管理者</UI>モードでウィジェットのJSON編集ウィンドウを読み込むと、テキストボックスにスクロールが繰り返し表示されたり、消えたりする問題を修正
+- <Status>Fixed</Status>ブラウザーウィンドウのサイズが特定のサイズの場合、<UI>Flexボード</UI>メニューの<UI>管理者</UI>モードでウィジェットのJSON編集ウィンドウを読み込むと、テキストボックスにスクロールが繰り返し表示されたり、消えたりする問題を修正
 
--   <Status>Change</Status>次のウィジェットにデータ応答がない場合、具体的な理由を表示するように修正
+- <Status>Change</Status>次のウィジェットにデータ応答がない場合、具体的な理由を表示するように修正
 
-    -   ログ4XX, 5XX件数
-    -   ログリクエスト成功率
-    -   応答時間byログ
+  - ログ4XX, 5XX件数
+  - ログリクエスト成功率
+  - 応答時間byログ
 
--   <Status>Change</Status> <b>統合サービスダッシュボード</b>テンプレートに使用されているウィジェットのMXQL Pathバージョンの更新
+- <Status>Change</Status> <b>統合サービスダッシュボード</b>テンプレートに使用されているウィジェットのMXQL Pathバージョンの更新
 
--   <Status>Fixed</Status> <b>サーバーリソースPlus</b>ダッシュボードテンプレートのウィジェットMXQLを修正
+- <Status>Fixed</Status> <b>サーバーリソースPlus</b>ダッシュボードテンプレートのウィジェットMXQLを修正
 
--   <Status>Change</Status> <b>Log RPS Board</b>ダッシュボードテンプレートから<UI>Log RPS Trend</UI>ウィジェットメトリクスの追加と名前の整理
+- <Status>Change</Status> <b>Log RPS Board</b>ダッシュボードテンプレートから<UI>Log RPS Trend</UI>ウィジェットメトリクスの追加と名前の整理
 
 #### 管理
 
@@ -394,31 +394,31 @@ toc_max_heading_level: 2
 
 #### 利用内訳
 
--   <Status>Fixed</Status> <UI>請求書プレビュー</UI>メニューでクラウド製品の割引額が<UI>割引額</UI> カラムに表示されない不具合を修正
+- <Status>Fixed</Status> <UI>請求書プレビュー</UI>メニューでクラウド製品の割引額が<UI>割引額</UI> カラムに表示されない不具合を修正
 
--   <Status>Fixed</Status> <UI>請求書プレビュー</UI>メニューから固定価格、割引金額が<UI>割引情報</UI>に表示されている場合、請求通貨の案内メッセージを追加
+- <Status>Fixed</Status> <UI>請求書プレビュー</UI>メニューから固定価格、割引金額が<UI>割引情報</UI>に表示されている場合、請求通貨の案内メッセージを追加
 
--   <Status>Change</Status> <UI>使用量</UI>メニューでユーザーエクスペリエンスを改善するためのUI改善
+- <Status>Change</Status> <UI>使用量</UI>メニューでユーザーエクスペリエンスを改善するためのUI改善
 
--   <Status>Feature</Status> <UI>使用量</UI>メニューでプロジェクト名を検索できる機能を追加
+- <Status>Feature</Status> <UI>使用量</UI>メニューでプロジェクト名を検索できる機能を追加
 
--   <Status>Change</Status> <UI>使用量</UI>メニューで利用時間に応じて平均使用量情報を提供するよう修正
+- <Status>Change</Status> <UI>使用量</UI>メニューで利用時間に応じて平均使用量情報を提供するよう修正
 
 * * *
 
 ### `Log`
 
--   <Status>Feature</Status> <b>ログ編集</b>権限の追加及び関連機能<UI>ログ設定</UI>メニューに適用
+- <Status>Feature</Status> <b>ログ編集</b>権限の追加及び関連機能<UI>ログ設定</UI>メニューに適用
 
--   <Status>Change</Status> <UI>ログ設定</UI>メニューのユーザーエクスペリエンスを向上させるためUI/UXを改善
+- <Status>Change</Status> <UI>ログ設定</UI>メニューのユーザーエクスペリエンスを向上させるためUI/UXを改善
 
--   <Status>Change</Status> <UI>ログ設定</UI>メニューで統一されている用語を修正
+- <Status>Change</Status> <UI>ログ設定</UI>メニューで統一されている用語を修正
 
--   <Status>Change</Status> <UI>ログ検索</UI>メニューからフィルターにキーだけを入力し、値を入力せずにカテゴリを追加する場合、キー値としてnone値を入力するように修正
+- <Status>Change</Status> <UI>ログ検索</UI>メニューからフィルターにキーだけを入力し、値を入力せずにカテゴリを追加する場合、キー値としてnone値を入力するように修正
 
--   <Status>Change</Status> <UI>ライブテール</UI>メニューのcontentフィルターのツールチップ用語の誤字を修正
+- <Status>Change</Status> <UI>ライブテール</UI>メニューのcontentフィルターのツールチップ用語の誤字を修正
 
--   <Status>Change</Status> <UI>ログ検索</UI>メニューでフィルター入力時、検索値のprefixとして「-」を入力すると自動的に「+」のprefix'を追加されないように修正
+- <Status>Change</Status> <UI>ログ検索</UI>メニューでフィルター入力時、検索値のprefixとして「-」を入力すると自動的に「+」のprefix'を追加されないように修正
 
 * * *
 
@@ -426,18 +426,18 @@ toc_max_heading_level: 2
 
 #### ダッシュボード
 
--   <Status>Change</Status> <UI>マルチインスタンスモニタリング</UI>メニュー画面の上にある<b>データベース</b>の選択オプション名を<UI>インスタンス</UI>に変更
+- <Status>Change</Status> <UI>マルチインスタンスモニタリング</UI>メニュー画面の上にある<b>データベース</b>の選択オプション名を<UI>インスタンス</UI>に変更
 
--   <Status>Fixed</Status> <UI>インスタンスリスト</UI>メニューから<UI>ステータス</UI>カラムの<b>重大</b>または<b>警告</b>アイコンを選択すると表示される<UI>イベント</UI>ウィンドウでテキストが切れてしまう問題を修正するために、テーブルのソートとカラム幅の調整機能を追加
+- <Status>Fixed</Status> <UI>インスタンスリスト</UI>メニューから<UI>ステータス</UI>カラムの<b>重大</b>または<b>警告</b>アイコンを選択すると表示される<UI>イベント</UI>ウィンドウでテキストが切れてしまう問題を修正するために、テーブルのソートとカラム幅の調整機能を追加
 
 #### 統計/レポート
 
--   <Status>Change</Status> <UI>テーブルサイズの増減</UI>メニューから<UI>CSVダウンロード</UI>ボタンを<img src='/img/ic-csv-download-ms.svg' alt='CSV ダウンロードアイコン' />ボタンに変更
+- <Status>Change</Status> <UI>テーブルサイズの増減</UI>メニューから<UI>CSVダウンロード</UI>ボタンを<img src='/img/ic-csv-download-ms.svg' alt='CSV ダウンロードアイコン' />ボタンに変更
 
--   <Status>Fixed</Status>次のメニューパスで<img src='/img/ic-csv-download-ms.svg' alt='CSV ダウンロードアイコン' />ボタンをタップすると、ドロップダウンメニュー項目をクリックした領域でダウンロード機能が動作しない問題を修正
+- <Status>Fixed</Status>次のメニューパスで<img src='/img/ic-csv-download-ms.svg' alt='CSV ダウンロードアイコン' />ボタンをタップすると、ドロップダウンメニュー項目をクリックした領域でダウンロード機能が動作しない問題を修正
 
-    -   <UI>統計/レポート</UI> > <UI>テーブルサイズ増減</UI>
-    -   <UI>統計/レポート</UI> > <UI>SQL統計</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI>タブ
+  - <UI>統計/レポート</UI> > <UI>テーブルサイズ増減</UI>
+  - <UI>統計/レポート</UI> > <UI>SQL統計</UI> > <UI>DB</UI>, <UI>USER</UI>, <UI>HOST</UI>タブ
 
 * * *
 
@@ -445,23 +445,23 @@ toc_max_heading_level: 2
 
 #### コンテナマップ
 
--   <Status>Feature</Status>] コンテナー要素にカーソルを合わせたときに表示されるグラフのツールチップのパーセント単位のインジケーターは、棒グラフチャートを表示します
+- <Status>Feature</Status>] コンテナー要素にカーソルを合わせたときに表示されるグラフのツールチップのパーセント単位のインジケーターは、棒グラフチャートを表示します
 
--   <Status>Change</Status> <img src='/img/ico-setting.svg' alt='設定アイコン'/> > <UI>ラベル</UI>オプションに<UI>選択された指標</UI>項目を追加
+- <Status>Change</Status> <img src='/img/ico-setting.svg' alt='設定アイコン'/> > <UI>ラベル</UI>オプションに<UI>選択された指標</UI>項目を追加
 
--   <Status>Fixed</Status>サマリー表示パネルで<UI>ログ検索</UI>タブと<UI>イベント</UI>タブのオプションの一部が非表示になる現象を修正
+- <Status>Fixed</Status>サマリー表示パネルで<UI>ログ検索</UI>タブと<UI>イベント</UI>タブのオプションの一部が非表示になる現象を修正
 
--   <Status>Change</Status>サマリー表示パネルの <UI>ログ</UI> > <UI>ログ検索</UI>機能の利用時、App関連カテゴリの場合、<code>microOid</code>でログを検索するように変更
+- <Status>Change</Status>サマリー表示パネルの <UI>ログ</UI> > <UI>ログ検索</UI>機能の利用時、App関連カテゴリの場合、<code>microOid</code>でログを検索するように変更
 
--   <Status>Fixed</Status>グループ選択後<UI>ログ</UI> > <UI>ログ検索</UI>機能の利用時、App関連カテゴリログが検索できない不具合を修正
+- <Status>Fixed</Status>グループ選択後<UI>ログ</UI> > <UI>ログ検索</UI>機能の利用時、App関連カテゴリログが検索できない不具合を修正
 
 * * *
 
 ### `Browser`
 
--   <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>ブラウザーのエラー</UI>メニューから<UI>エラーメッセージテーブル</UI>のチャートの読み込みの際のちらつき現象を修正
+- <Status>Fixed</Status> <UI>ダッシュボード</UI> > <UI>ブラウザーのエラー</UI>メニューから<UI>エラーメッセージテーブル</UI>のチャートの読み込みの際のちらつき現象を修正
 
--   <Status>Feature</Status> <UI>アラート通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューからメトリクス、複合メトリクス通知テンプレートを追加
+- <Status>Feature</Status> <UI>アラート通知</UI> > <UI>イベント設定</UI> > <UI>メトリクス</UI>メニューからメトリクス、複合メトリクス通知テンプレートを追加
 
 * * *
 

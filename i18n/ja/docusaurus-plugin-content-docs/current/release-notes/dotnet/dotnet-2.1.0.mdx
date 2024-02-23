@@ -7,30 +7,30 @@ displayed_sidebar: releaseSidebar
 
 #### 2023年7月6日
 
--   <Status>New</Status> Web Service設定オプションを追加
+- <Status>New</Status> Web Service設定オプションを追加
 
-    -   **webservice_method_enabled** <span class='type'>Boolean</span>
+  - **webservice_method_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-        値を`true`に設定するとWeb Serviceを追跡できます。 設定した値を有効するには、IISを再起動する必要があります。
+    値を`true`に設定するとWeb Serviceを追跡できます。 設定した値を有効するには、IISを再起動する必要があります。
 
-    -   **webservice_method_prefix** <span class='type'>String</span>
+  - **webservice_method_prefix** <span class='type'>String</span>
 
-        追跡するメソッド名をネームスペースを入力してください。 Web Serviceは直接追跡できないため、Web Serviceを使用したメソッドを直接追跡対象として入力する必要があります。 設定した値を有効するには、IISを再起動する必要があります。
+    追跡するメソッド名をネームスペースを入力してください。 Web Serviceは直接追跡できないため、Web Serviceを使用したメソッドを直接追跡対象として入力する必要があります。 設定した値を有効するには、IISを再起動する必要があります。
 
-        次の例を参照してください。
+    次の例を参照してください。
 
-        ```ini title='whatap.conf'
-        webservice_method_prefix=Test.Demo, WebServiceDemo.WebService.
-        ```
+    ```ini title='whatap.conf'
+    webservice_method_prefix=Test.Demo, WebServiceDemo.WebService.
+    ```
 
-        :::caution
+    :::caution
 
-        -   条件を満たすメソッドは、Web Serviceを使用していない場合でも追跡されます。 ただし、Web Serviceを使用するメソッドでなければ、エラーが発生してもエラーは検出されず、トランザクションが終わっていない状態に維持される可能性があります。
+    - 条件を満たすメソッドは、Web Serviceを使用していない場合でも追跡されます。 ただし、Web Serviceを使用するメソッドでなければ、エラーが発生してもエラーは検出されず、トランザクションが終わっていない状態に維持される可能性があります。
 
-        -   メソッドが所属するクラスまで入力すると、そのクラス内のすべてのメソッドが追跡対象になります。
+    - メソッドが所属するクラスまで入力すると、そのクラス内のすべてのメソッドが追跡対象になります。
 
-        :::
+    :::
 
--   <Status>Change</Status>パケット処理部分でのエージェント性能改善
+- <Status>Change</Status>パケット処理部分でのエージェント性能改善

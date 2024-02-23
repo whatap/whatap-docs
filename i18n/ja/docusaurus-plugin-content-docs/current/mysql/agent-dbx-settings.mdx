@@ -24,32 +24,32 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成�
 
 {@include: ../common-items/_db-agent-setting-data-collection.mdx} 
 
--   **trx_rseg_history_len** <span class='type'>Boolean</span> <code class="my">MySQL 5.7 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
+- **trx_rseg_history_len** <span class='type'>Boolean</span> <code class="my">MySQL 5.7 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    `trx_rseg_history_len`指標の収集有無を設定します。`true`に設定すると`db_mysql_counter`カテゴリで確認できます。
+  `trx_rseg_history_len`指標の収集有無を設定します。`true`に設定すると`db_mysql_counter`カテゴリで確認できます。
 
--   **active_transactions** <span class='type'>Boolean</span> <code class="my">MySQL 5.5 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
+- **active_transactions** <span class='type'>Boolean</span> <code class="my">MySQL 5.5 or later</code> <code class="my">DBX agent v1.6.15 or later</code>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    `active_transactions`指標の収集有無を設定します。`true`に設定すると`db_mysql_counter`カテゴリで確認できます。
+  `active_transactions`指標の収集有無を設定します。`true`に設定すると`db_mysql_counter`カテゴリで確認できます。
 
--   **collect_variables_metric** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.15 or later</code>
+- **collect_variables_metric** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.15 or later</code>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    DBパラメータをリアルタイムで収集できます。`variables_metric`オプションに設定したパラメータを収集します。
+  DBパラメータをリアルタイムで収集できます。`variables_metric`オプションに設定したパラメータを収集します。
 
--   **variables_metric** <span class='type'>String</span> <code class="my">DBX agent v1.6.15 or later</code>
+- **variables_metric** <span class='type'>String</span> <code class="my">DBX agent v1.6.15 or later</code>
 
-    `uptime`、`version`、`read_only`のようにDBパラメータ名を設定してください。2つ以上の値を設定するには、コンマ(,)を区切り文字として利用してください。`collect_variables_metric`オプションを`true`に設定してからDBパラメータ名を設定すると、`db_mysql_variables`カテゴリで確認できます。
+  `uptime`、`version`、`read_only`のようにDBパラメータ名を設定してください。2つ以上の値を設定するには、コンマ(,)を区切り文字として利用してください。`collect_variables_metric`オプションを`true`に設定してからDBパラメータ名を設定すると、`db_mysql_variables`カテゴリで確認できます。
 
-    ```ini title="whatap.conf"
-    collect_variables_metric=true
-    variables_metric=uptime,version
-    ```
+  ```ini title="whatap.conf"
+  collect_variables_metric=true
+  variables_metric=uptime,version
+  ```
 
 ## AWS RDS CloudWatch適用{#using-aws-rds}
 

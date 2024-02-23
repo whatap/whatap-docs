@@ -14,49 +14,49 @@ import TabItem from '@theme/TabItem';
 
 PHPモニタリングサービスを一時停止するには、PHP拡張モジュールを停止し、whatap-phpサービスを停止する必要があります。次の項目を参照してください。
 
-1.  PHP拡張モジュール(PHP Extension module)を停止してください。 
+1. PHP拡張モジュール(PHP Extension module)を停止してください。 
 
-    _whatap.ini_ファイルの`extension=`構文をコメント処理してください。コメントはセミコロン(_;_)で設定してください。
+   _whatap.ini_ファイルの`extension=`構文をコメント処理してください。コメントはセミコロン(_;_)で設定してください。
 
-    ```bash
-    $ sudo vi whatap.ini
+   ```bash
+   $ sudo vi whatap.ini
 
-    extension=whatap.so
+   extension=whatap.so
 
-    ;コメント
-    ;extension=whatap.so
-    ```
+   ;コメント
+   ;extension=whatap.so
+   ```
 
-    手動設定で_php.ini_ファイルに直接設定する場合も同様に` extension=` 構文をコメントアウトしてください。 
+   手動設定で_php.ini_ファイルに直接設定する場合も同様に` extension=` 構文をコメントアウトしてください。 
 
-    :::note
+   :::note
 
-    ApacheまたはPHP-FPMの(Service)サービスを開始します。
+   ApacheまたはPHP-FPMの(Service)サービスを開始します。
 
-    :::
+   :::
 
-2.  whatap-phpサービス(Service)を停止してください。
+2. whatap-phpサービス(Service)を停止してください。
 
-    <Tabs>
-    <TabItem value="rdct" label="Red Hat/CentOS" default>
+   <Tabs>
+   <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-    ```bash
-    $ sudo service whatap-php stop
-    ```
+   ```bash
+   $ sudo service whatap-php stop
+   ```
 
-    </TabItem>
-    <TabItem value="dbub" label="Debian/Ubuntu">
+   </TabItem>
+   <TabItem value="dbub" label="Debian/Ubuntu">
 
-    ```bash
-    $ sudo service whatap-php stop
-    ```
+   ```bash
+   $ sudo service whatap-php stop
+   ```
 
-    </TabItem>
-    <TabItem value="frbsd" label="FreeBSD">
+   </TabItem>
+   <TabItem value="frbsd" label="FreeBSD">
 
-    ```bash
-    $ service whatap_php stop
-    ```
+   ```bash
+   $ service whatap_php stop
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>

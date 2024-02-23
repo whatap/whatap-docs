@@ -32,55 +32,55 @@ FROM gcr.io/google-appengine/php56
 
 PHPモニタリングエージェントをインストールしてください。
 
-1.  ライブラリー(wget)をインストールしてください。
+1. ライブラリー(wget)をインストールしてください。
 
-    ```docker
-    RUN apt-get install wget -y
-    ```
+   ```docker
+   RUN apt-get install wget -y
+   ```
 
-2.  php-fpm実行コマンドのリンクを作成してください。
+2. php-fpm実行コマンドのリンクを作成してください。
 
-    ```docker
-    RUN ln -s /opt/php/sbin/php-fpm /usr/bin/php-fpm
-    ```
+   ```docker
+   RUN ln -s /opt/php/sbin/php-fpm /usr/bin/php-fpm
+   ```
 
-3.  WhaTapリポジトリおよび、Whatap-phpパッケージをインストールしてください。
+3. WhaTapリポジトリおよび、Whatap-phpパッケージをインストールしてください。
 
-    ```docker
-    RUN wget http://repo.whatap.io/debian/release.gpg -O -| apt-key add -
-    RUN wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
-    RUN dpkg -i whatap-repo_1.0_all.deb
-    RUN apt-get update
-    RUN apt-get install whatap-php
-    ```
+   ```docker
+   RUN wget http://repo.whatap.io/debian/release.gpg -O -| apt-key add -
+   RUN wget http://repo.whatap.io/debian/whatap-repo_1.0_all.deb
+   RUN dpkg -i whatap-repo_1.0_all.deb
+   RUN apt-get update
+   RUN apt-get install whatap-php
+   ```
 
-4.  PHP拡張モジュールおよびwhatap-phpサービスを設定してください。
+4. PHP拡張モジュールおよびwhatap-phpサービスを設定してください。
 
-    ```docker
-    #RUN (echo "[発行されたアクセスキー]"; echo "[発行されたサーバーIP]")|/usr/whatap/php/install.sh
-    RUN (echo "xxxxxxxx"; echo "1.1.1.1/2.2.2.2")|/usr/whatap/php/install.sh
-    ```
+   ```docker
+   #RUN (echo "[発行されたアクセスキー]"; echo "[発行されたサーバーIP]")|/usr/whatap/php/install.sh
+   RUN (echo "xxxxxxxx"; echo "1.1.1.1/2.2.2.2")|/usr/whatap/php/install.sh
+   ```
 
-    :::note
+   :::note
 
-    PHPモニタリングプロジェクトの作成後、**アクセスキー**とサーバーIPが発行されます。_/_を区切り文字として複数のIP発行が可能です。
+   PHPモニタリングプロジェクトの作成後、**アクセスキー**とサーバーIPが発行されます。_/_を区切り文字として複数のIP発行が可能です。
 
-    :::
+   :::
 
-5.  `supervisor`を使用してwhatap-phpサービスを実行してくたさい。
+5. `supervisor`を使用してwhatap-phpサービスを実行してくたさい。
 
-    ```docker
-    RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "command = /etc/init.d/whatap-php start" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "autorestart = true" >> /etc/supervisor/conf.d/whatap.conf
-    RUN echo "priority = 10" >> /etc/supervisor/conf.d/whatap.conf
-    ```
+   ```docker
+   RUN echo "[program:whatap-php]" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "command = /etc/init.d/whatap-php start" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "stdout_logfile = /dev/stdout" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "stdout_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "stderr_logfile = /dev/stderr" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "user = root" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "autostart = true" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "autorestart = true" >> /etc/supervisor/conf.d/whatap.conf
+   RUN echo "priority = 10" >> /etc/supervisor/conf.d/whatap.conf
+   ```
 
 ## ファイアウォールルールの追加
 
