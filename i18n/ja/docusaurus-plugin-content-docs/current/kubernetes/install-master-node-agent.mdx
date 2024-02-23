@@ -95,30 +95,30 @@ oc create -f whatap_openshift_scc.yaml
 
 ユーザーのKubernetesバージョンとContainer Runtimeの_YAML_ファイルをダウンロードしてエージェントを生成してください。
 
-1.  次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
+1. 次のコマンドを実行し、**VERSION**と**CONTAINER-RUNTIME**を確認してください。
 
-    ```bash
-    kubectl get node -o wide
-    ```
+   ```bash
+   kubectl get node -o wide
+   ```
 
-    ![](/img/k8s-check-version.svg)
+   ![](/img/k8s-check-version.svg)
 
-2.  **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
+2. **_エージェントのインストール_**画面で**VERSION**と**CONTAINER-RUNTIME**の_YAML_ファイルを選択し**_ダウンロード_**ボタンをクリックしてください。
 
-    <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
+   <ImgLang img='k8s-download-yaml.png' desc='YAMLダウンロード' />
 
-3.  ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
+3. ダウンロードした_YAML_ファイルをマスターNodeにアップロードしてください。
 
-4.  エージェントを作成するには、次のコマンドを実行してください。 
+4. エージェントを作成するには、次のコマンドを実行してください。 
 
-    ```bash
-    # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように変更してください。
-    kubectl apply -f {whatap_kube_X.YZ.yaml}
-    ```
+   ```bash
+   # {whatap_kube_X.YZ.yaml}ファイル名をダウンロードしたファイル名と一致するように変更してください。
+   kubectl apply -f {whatap_kube_X.YZ.yaml}
+   ```
 
-5.  次のようにエージェントを正常に生成(create)したことを確認してください。
+5. 次のようにエージェントを正常に生成(create)したことを確認してください。
 
-    ![エージェント生成確認](/img/k8s-install-agent-check.svg)
+   ![エージェント生成確認](/img/k8s-install-agent-check.svg)
 
 :::note
 
@@ -146,15 +146,15 @@ kubectl get pod -n whatap-monitoring
 
 ![](/img/k8s-not-running-agent-monitoring.svg)
 
-1.  マスターNodeで次のコマンドを実行して、Pod の生成に失敗した原因を特定します。 
+1. マスターNodeで次のコマンドを実行して、Pod の生成に失敗した原因を特定します。 
 
-    ```bash
-    kubectl describe pod {POD_NAME} -n whatap-monitoring
-    ```
+   ```bash
+   kubectl describe pod {POD_NAME} -n whatap-monitoring
+   ```
 
-2.  実行結果の下部の**Events:**項目を確認してください。
+2. 実行結果の下部の**Events:**項目を確認してください。
 
-    ![](/img/k8s-check-install-fail.svg)
+   ![](/img/k8s-check-install-fail.svg)
 
 :::tip
 
@@ -164,7 +164,7 @@ kubectl get pod -n whatap-monitoring
 
 :::note
 
--   アプリケーションエージェントのインストールを継続するには、画面の右下にある**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書](install-application-agent)を参照してください。
--   エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
+- アプリケーションエージェントのインストールを継続するには、画面の右下にある**_アプリケーションエージェントのインストール_**ボタンを選択してください。詳細は[次の文書](install-application-agent)を参照してください。
+- エージェントを最新バージョンにアップデートするには[次の文書](agent-update)を参照してください。
 
 :::

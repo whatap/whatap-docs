@@ -1,10 +1,10 @@
 WhaTapエージェントは、アプリケーションのパフォーマンスに関するさまざまな情報を収集します。情報は、大きく3つに分類できます。
 
--   **User**：リアルタイムユーザーまたは訪問ユーザー
+- **User**：リアルタイムユーザーまたは訪問ユーザー
 
--   **Service** ：トランザクション、SQL、外部呼び出し件数および応答、エラー率など
+- **Service** ：トランザクション、SQL、外部呼び出し件数および応答、エラー率など
 
--   **Resource**：システム、プロセスリソースの使用量
+- **Resource**：システム、プロセスリソースの使用量
 
 ## User Counter
 
@@ -16,43 +16,43 @@ WhaTapエージェントは、アプリケーションのパフォーマンス�
 
 WhaTapエージェントのユーザーを区別するためのさまざまなオプションを提供します。
 
--   **Remote IP**
+- **Remote IP**
 
-    デフォルト値は、remote ipを使用してユーザーを区別します。remote ipは、実際のユーザーを区別するには制限があります。
+  デフォルト値は、remote ipを使用してユーザーを区別します。remote ipは、実際のユーザーを区別するには制限があります。
 
--   **Cookie**
+- **Cookie**
 
-    クッキーを使用してユーザーを区別します。すべての接続クライアントを対象に**WHATAP**というクッキーに、UUIDは保存されています。
+  クッキーを使用してユーザーを区別します。すべての接続クライアントを対象に**WHATAP**というクッキーに、UUIDは保存されています。
 
-    ```ini title='whatap.conf'
-    trace_user_using_ip=false
+  ```ini title='whatap.conf'
+  trace_user_using_ip=false
 
-    # Java agent v2.2.0 or later
-    wclient_using_ip=false
-    ```
+  # Java agent v2.2.0 or later
+  wclient_using_ip=false
+  ```
 
--   **Header Key**
+- **Header Key**
 
-    HTTP headerに渡される値でユーザーを区別できます。
+  HTTP headerに渡される値でユーザーを区別できます。
 
-    ```ini title='whatap.conf'
-    user_header_ticket=USER
+  ```ini title='whatap.conf'
+  user_header_ticket=USER
 
-    # Java agent v2.2.0 or later
-    wclient_header_ticket=USER
-    ```
+  # Java agent v2.2.0 or later
+  wclient_header_ticket=USER
+  ```
 
 ### ユーザーカウント
 
 ユーザーのカウント方法によって異なります。リアルタイムユーザーは、現在のシステムを使用しているユーザーの数を知るために測定します。毎日の訪問ユーザーは、日中にサービスに関心を持っているユーザーの数をビジネス管理のために測定されます。
 
--   **リアルタイムユーザー**  
+- **リアルタイムユーザー**  
 
-    過去5分間のユーザー数をカウントします。 5秒ごとにshiftingすると、ユーザーをカウントします。 各サーバーでカウントされた数は、HyperLogLogアルゴリズムによってマージされます。
+  過去5分間のユーザー数をカウントします。 5秒ごとにshiftingすると、ユーザーをカウントします。 各サーバーでカウントされた数は、HyperLogLogアルゴリズムによってマージされます。
 
--   **毎日の訪問者**(**DAU**, Daily Active User)
+- **毎日の訪問者**(**DAU**, Daily Active User)
 
-    1日にシステムに接続したユーザーをカウントします。24時間接続したユーザーをHyperLogLogで計算します。
+  1日にシステムに接続したユーザーをカウントします。24時間接続したユーザーをHyperLogLogで計算します。
 
 :::tip
 
@@ -64,46 +64,46 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 トランザクションによって使用されたSQLまたは外部呼び出しの件数、応答時間、エラー件数などのパフォーマンス指標が含まれます。
 
--   **Transaction Counter**
+- **Transaction Counter**
 
-    トランザクションを実行すると、測定するのはカウンターです。
+  トランザクションを実行すると、測定するのはカウンターです。
 
-    -   **件数**
-    -   **応答時間**
-    -   **エラー件数**  
+  - **件数**
+  - **応答時間**
+  - **エラー件数**  
 
--   **Active Transaction Counter**
+- **Active Transaction Counter**
 
-    進行中のトランザクションの数をカウントします。
+  進行中のトランザクションの数をカウントします。
 
-    -   **件数**
+  - **件数**
 
-    -   **Active Status**
+  - **Active Status**
 
-        進行状況は、METHOD, SQL, HTTPC, DBC, SOCKETの5つの状態で固定されます。
+    進行状況は、METHOD, SQL, HTTPC, DBC, SOCKETの5つの状態で固定されます。
 
-        -   METHOD - 一般関数を呼び出す状態
-        -   SQL - DB SQLの実行中の状態
-        -   HTTPC - 外部HTTP API(サービス)を呼び出しの状態
-        -   DBC - DB接続を要求された状態、通常はPoolから取得
-        -   SOCKET - TCPセッションに接続を要求している状態
+    - METHOD - 一般関数を呼び出す状態
+    - SQL - DB SQLの実行中の状態
+    - HTTPC - 外部HTTP API(サービス)を呼び出しの状態
+    - DBC - DB接続を要求された状態、通常はPoolから取得
+    - SOCKET - TCPセッションに接続を要求している状態
 
--   **SQL**
+- **SQL**
 
-    SQLの実行状況をカウントします。
+  SQLの実行状況をカウントします。
 
-    -   **件数**
-    -   **応答時間**
-    -   **エラー件数**
-    -   **パッチ回数**
+  - **件数**
+  - **応答時間**
+  - **エラー件数**
+  - **パッチ回数**
 
--   **HTTP Call**
+- **HTTP Call**
 
-    外部HTTPリクエストの状況をカウントします。
+  外部HTTPリクエストの状況をカウントします。
 
-    -   **件数**
-    -   **応答時間**
-    -   **エラー件数**   
+  - **件数**
+  - **応答時間**
+  - **エラー件数**   
 
 ## Resource Counter
 
@@ -111,54 +111,54 @@ WhaTapでは、長期間ユーザーをカウントするために、ユーザ�
 
 * * *
 
--   **CPU** (sys, usr, wait, steal, irq, cores)
+- **CPU** (sys, usr, wait, steal, irq, cores)
 
-    CPU使用率%です。各種類別に収集されます。仮想環境のみ、Stealが意味を持ちます。Cpu Coreの数も収集されます。
+  CPU使用率%です。各種類別に収集されます。仮想環境のみ、Stealが意味を持ちます。Cpu Coreの数も収集されます。
 
--   **Process CPU**
+- **Process CPU**
 
-    Javaプロセスが使用するCPU%です。
+  Javaプロセスが使用するCPU%です。
 
--   **Memory**
+- **Memory**
 
-    システムメモリの使用率(%)です。
+  システムメモリの使用率(%)です。
 
--   **Swap**
+- **Swap**
 
-    Swapメモリの使用率(%)です。
+  Swapメモリの使用率(%)です。
 
--   **Disk**
+- **Disk**
 
-    Diskは、Java ProcessのCurrentディレクトリの使用率(%)です。
+  Diskは、Java ProcessのCurrentディレクトリの使用率(%)です。
 
--   **Heap** (Total, Used, Perm)
+- **Heap** (Total, Used, Perm)
 
-    Java HeapメモリのTotal、Used、Perm量です。データ単位はKBytesです。
+  Java HeapメモリのTotal、Used、Perm量です。データ単位はKBytesです。
 
--   **GC** (Count, Time)
+- **GC** (Count, Time)
 
-    5秒間に発生したGCインシデント件数と時間の合計です。
+  5秒間に発生したGCインシデント件数と時間の合計です。
 
--   **ObjectPendingFinalizationCount**
+- **ObjectPendingFinalizationCount**
 
-    GC呼び出し中にfinalize() を実行するために待機しているオブジェクトの数です。この値が大きくなると、GCtimeが遅れる可能性があります。
+  GC呼び出し中にfinalize() を実行するために待機しているオブジェクトの数です。この値が大きくなると、GCtimeが遅れる可能性があります。
 
--   **Thread** (start Count, Count, Daemon, Peak Count)
+- **Thread** (start Count, Count, Daemon, Peak Count)
 
-    JVMが実行されてから開始されたスレッド数、現在実行中のスレッド、デーモン、最大スレッド数を収集します。例えば、スレッドプールが必要かどうかを判断できます。
+  JVMが実行されてから開始されたスレッド数、現在実行中のスレッド、デーモン、最大スレッド数を収集します。例えば、スレッドプールが必要かどうかを判断できます。
 
--   **DB Connection Count** (active,idle)
+- **DB Connection Count** (active,idle)
 
-    Connection Poolのidleとactiveカウントを収集します。
+  Connection Poolのidleとactiveカウントを収集します。
 
--   **Tomcat Thread Pool** (active, queueSize)
+- **Tomcat Thread Pool** (active, queueSize)
 
-    トムキャットのExecutorは、スレッドプールの設定時にパフォーマンス情報を収集します。
+  トムキャットのExecutorは、スレッドプールの設定時にパフォーマンス情報を収集します。
 
-    ```xml title='XML'
-        <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"
-        maxThreads="50" minSpareThreads="2" maxQueueSize="78"/>
-    ```
+  ```xml title='XML'
+      <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"
+      maxThreads="50" minSpareThreads="2" maxQueueSize="78"/>
+  ```
 
 * * *
 
@@ -210,16 +210,16 @@ dbcp_pool_enabled==trueの場合、tomcat_ds_enabled=false
 weblogic_pool_enabled== trueの場合、weblogic_ds_enabled=false
 ```
 
-1.  **オプション自動決定**の内容を確認してください。
+1. **オプション自動決定**の内容を確認してください。
 
-2.  関連付けられたpoolのオプション値を`false`として宣言します。 
+2. 関連付けられたpoolのオプション値を`false`として宣言します。 
 
-3.  DataSource関連オプション値を`true`に変更してください。デフォルト値は `false` です。
+3. DataSource関連オプション値を`true`に変更してください。デフォルト値は `false` です。
 
-    ```bash title='whatap.conf'
-    tomcat_ds_enabled=false
-    weblogic_ds_enabled=false
-    ```
+   ```bash title='whatap.conf'
+   tomcat_ds_enabled=false
+   weblogic_ds_enabled=false
+   ```
 
 ### ThreadPoolカウンター
 
@@ -246,19 +246,19 @@ JMX ThreadPool ObjectNameやAttributeNameなどのMbean名は、JMXモニタリ�
 
 #### Jconsole使用時
 
--   **ObjectName** : Catalina
+- **ObjectName** : Catalina
 
-    **type** : ThreadPool
+  **type** : ThreadPool
 
-    **name** : "http-bio-8080"
+  **name** : "http-bio-8080"
 
-    ![](https://img.whatap.io/media/agent_java/data/threadpool_jmx01.png)
+  ![](https://img.whatap.io/media/agent_java/data/threadpool_jmx01.png)
 
--   **ActiveName** : connectionCount
+- **ActiveName** : connectionCount
 
-    **QueueName** : maxThreads
+  **QueueName** : maxThreads
 
-    ![](https://img.whatap.io/media/agent_java/data/threadpool_jmx02.png)
+  ![](https://img.whatap.io/media/agent_java/data/threadpool_jmx02.png)
 
 #### 結果確認
 
@@ -282,8 +282,8 @@ Apdexはユーザー満足度の指標として使用でき、0~1の値です。
 | 許容(Tolerating, **T**) | 使用者が遅延を感じるが業務処理は可能≤ 4.8秒(満足**S** \* 4) |
 | 不満(Frustrated, **F**) | 業務処理が不可能> 4.8秒(許容**T**超過及びエラー)         |
 
--   **whatap.apdex_time** <span class='type'>millisecond</span>
+- **whatap.apdex_time** <span class='type'>millisecond</span>
 
-    デフォルト値`1200`
+  デフォルト値`1200`
 
-    満足 **S** デフォルト値は、エージェント設定メニューから変更できます。
+  満足 **S** デフォルト値は、エージェント設定メニューから変更できます。

@@ -1,49 +1,49 @@
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレースにHTTPヘッダーの情報を出力します。ヘッダー収集の有無に関係なく、ヘッダーをトレースに公開するための設定です。 
+  トレースにHTTPヘッダーの情報を出力します。ヘッダー収集の有無に関係なく、ヘッダーをトレースに公開するための設定です。 
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース履歴にhttpパラメータ情報を記録する場合は`true`に設定してください。ただし、パラメータを表示するには、パラメータに別のセキュリティキーを入力する必要があります。セキュリティキーをエージェントインストールパスの_paramkey.txt_ファイルを6桁で指定します。_paramkey.txt_が存在しない場合は、自動生成され、randomキーが設定されます。
+  トレース履歴にhttpパラメータ情報を記録する場合は`true`に設定してください。ただし、パラメータを表示するには、パラメータに別のセキュリティキーを入力する必要があります。セキュリティキーをエージェントインストールパスの_paramkey.txt_ファイルを6桁で指定します。_paramkey.txt_が存在しない場合は、自動生成され、randomキーが設定されます。
 
--   **trace_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクションURLをパーシングおよび正規化する機能を有効にします。
+  トランザクションURLをパーシングおよび正規化する機能を有効にします。
 
-    :::note
+  :::note
 
-    値を`false`に変更すると、パスパラメータのパーシングが無効になります。 この場合、統計データの意味がなさないため、デバッグ目的で使用することをお勧めします。
+  値を`false`に変更すると、パスパラメータのパーシングが無効になります。 この場合、統計データの意味がなさないため、デバッグ目的で使用することをお勧めします。
 
-    :::
+  :::
 
--   **trace_auto_normalize_enabled**(**\***) <span class='type'>Boolean</span>
+- **trace_auto_normalize_enabled**(**\***) <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクションURLを正規化すると、パターン値をアノテーションから抽出して自動的にパーシングする機能を有効にします。
+  トランザクションURLを正規化すると、パターン値をアノテーションから抽出して自動的にパーシングする機能を有効にします。
 
--   **trace_normalize_urls** <span class='type'>String</span>
+- **trace_normalize_urls** <span class='type'>String</span>
 
-    トランザクションURLをパーシングして正規化します。呼び出しURLパターンをパーシングしてパスパラメータを削除します。  
+  トランザクションURLをパーシングして正規化します。呼び出しURLパターンをパーシングしてパスパラメータを削除します。  
 
-    :::note
+  :::note
 
-    例)`/a/{v}/b`と宣言する場合、`/a/123/b` → `/a/{v}/b`に置き換えます。複数を登録するにはコンマ(,)を使用します。`/a/*/b`で使用して、特定の形式のパスパラメータを削除して収集できます。
+  例)`/a/{v}/b`と宣言する場合、`/a/123/b` → `/a/{v}/b`に置き換えます。複数を登録するにはコンマ(,)を使用します。`/a/*/b`で使用して、特定の形式のパスパラメータを削除して収集できます。
 
-    :::
+  :::
 
--   **web_static_content_extensions**(**\***) <span class='type'>String</span>
+- **web_static_content_extensions**(**\***) <span class='type'>String</span>
 
-    デフォルト値`js, htm, html, gif, png, jpg, css, swf, ico`
+  デフォルト値`js, htm, html, gif, png, jpg, css, swf, ico`
 
-    スタティックコンテンツを判断する拡張子を指定します。ここで設定された拡張子を持つトランザクションは、トレース追跡とカウントが除外されます。
+  スタティックコンテンツを判断する拡張子を指定します。ここで設定された拡張子を持つトランザクションは、トレース追跡とカウントが除外されます。
 
--   **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span>
 
-    トランザクション収集を除外するURL prefixを指定します。指定した値と一致するURLは、トランザクションのパフォーマンスを収集しません。
+  トランザクション収集を除外するURL prefixを指定します。指定した値と一致するURLは、トランザクションのパフォーマンスを収集しません。

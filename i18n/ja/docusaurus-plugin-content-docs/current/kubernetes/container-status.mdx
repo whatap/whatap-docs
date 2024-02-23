@@ -43,9 +43,9 @@ WhaTapは、コンテナのチャート指標変更機能を提供します。�
 | Kubernetes Event | <span class='slow'>Warning</span>                                      |
 | WhaTap Event     | <span class='slow'>Warning</span>, <span class='vslow'>Critical</span> |
 
--   `Kubernetes Event`は、Kubernetesが提供するイベント情報です。ユーザーのKubernetes環境で`kubectl get events`コマンドで表示可能なイベント情報と同じです。
+- `Kubernetes Event`は、Kubernetesが提供するイベント情報です。ユーザーのKubernetes環境で`kubectl get events`コマンドで表示可能なイベント情報と同じです。
 
--   `WhaTap Event`は、ユーザーがWhaTapイベント機能を通じて設定するイベントです。
+- `WhaTap Event`は、ユーザーがWhaTapイベント機能を通じて設定するイベントです。
 
 `EventConState`は、次のような方式で決定されます。
 
@@ -60,12 +60,12 @@ WhaTapは、コンテナのチャート指標変更機能を提供します。�
 
 WhaTapイベント中は、「イベントの状態が解決時の追加通知」が設定されています。内部的にイベントを次のように区別します。
 
--   状態解決を追跡しないイベント：`stateless`イベント
+- 状態解決を追跡しないイベント：`stateless`イベント
 
--   サーバーステータスの解決時に追加の通知を設定するイベント：`stateful`イベント
+- サーバーステータスの解決時に追加の通知を設定するイベント：`stateful`イベント
 
 コンテナで発生した`stateless`、`stateful`イベントは、`EventConState`状態を判別する上で次のように使用します。 
 
--   `stateless`イベント：コンテナで発生した直近の1分間の`stateless`イベントを`EventConState`状態に反映します。
+- `stateless`イベント：コンテナで発生した直近の1分間の`stateless`イベントを`EventConState`状態に反映します。
 
--   `stateful`イベント：発生から終了までの`stateful`イベントを`EventConState`状態に反映します。
+- `stateful`イベント：発生から終了までの`stateful`イベントを`EventConState`状態に反映します。

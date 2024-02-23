@@ -12,59 +12,59 @@ error log に`segmentation fault`、`sig bus`などのエラー文があるか�
 
 ### Core Dump設定
 
-1.  _dump_ファイルを作成するディレクトリのアクセス権限を付与します。
+1. _dump_ファイルを作成するディレクトリのアクセス権限を付与します。
 
-    ```java
-    chmod 0777 /home/httpd-core
-    ```
+   ```java
+   chmod 0777 /home/httpd-core
+   ```
 
-2.  システム設定をしてください。
+2. システム設定をしてください。
 
-    ```java
-    ulimit -c unlimited
-    sysctl fs.suid_dumpable=2
-    sysctl kernel.core_uses_pid=0
-    sysctl kernel.core_pattern='| /home/httpd-core/core-%e.%p'
-    ```
+   ```java
+   ulimit -c unlimited
+   sysctl fs.suid_dumpable=2
+   sysctl kernel.core_uses_pid=0
+   sysctl kernel.core_pattern='| /home/httpd-core/core-%e.%p'
+   ```
 
 ### Apache
 
-1.  Apache confにCoreDumpDirectory項目を設定してください。 
+1. Apache confにCoreDumpDirectory項目を設定してください。 
 
-    ```java
-    vi /etc/httpd/conf/httpd.conf
+   ```java
+   vi /etc/httpd/conf/httpd.conf
 
-    CoreDumpDirectory /home/httpd-core
-    ```
+   CoreDumpDirectory /home/httpd-core
+   ```
 
-2.  Apacheを再起動すると、設定は完了です。 
+2. Apacheを再起動すると、設定は完了です。 
 
-3.  エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルが生成されると、gdbを使用してエラーの原因を確認します。`bt full`コマンドを使用して、全体スタックの情報を確認してください。
+3. エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルが生成されると、gdbを使用してエラーの原因を確認します。`bt full`コマンドを使用して、全体スタックの情報を確認してください。
 
-    ```java
-    # gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
-    ...
-    ...
+   ```java
+   # gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
+   ...
+   ...
 
-    > bt full
-    ```
+   > bt full
+   ```
 
 ### PHP-FPM
 
-1.  FPM設定ファイルに`rlimit_core`を設定してください。 
+1. FPM設定ファイルに`rlimit_core`を設定してください。 
 
-    ```java
-    rlimit_core = unlimited
-    ```
+   ```java
+   rlimit_core = unlimited
+   ```
 
-2.  PHP-FPMを再起動すると、設定は完了です。 
+2. PHP-FPMを再起動すると、設定は完了です。 
 
-3.  エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルが生成されると、gdbを通じてエラーの原因を確認します。`bt full`コマンドで全体スタックの情報を確認してください。
+3. エラーが発生すると_dump_ファイルが作成されます。_dump_ファイルが生成されると、gdbを通じてエラーの原因を確認します。`bt full`コマンドで全体スタックの情報を確認してください。
 
-    ```java
-    # gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832
-    ...
-    ...
+   ```java
+   # gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832
+   ...
+   ...
 
-    > bt full
-    ```
+   > bt full
+   ```

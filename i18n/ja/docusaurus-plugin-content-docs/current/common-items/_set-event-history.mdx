@@ -44,82 +44,82 @@
 
 :::
 
--   <Cmdname sid="time_selector" className="uitext" />
+- <Cmdname sid="time_selector" className="uitext" />
 
-    -   右側の緑色のボタンを選択して表示時間を選択することができます。
+  - 右側の緑色のボタンを選択して表示時間を選択することができます。
 
-    -   ![左アイコン](/img/left-arrow.svg)または ![右アイコン](/img/right-arrow.svg)ボタンを選択すると、選択した表示時間だけ間隔を移動します。
+  - ![左アイコン](/img/left-arrow.svg)または ![右アイコン](/img/right-arrow.svg)ボタンを選択すると、選択した表示時間だけ間隔を移動します。
 
-    -   詳細な時間を選択するには、日付または時間の領域を選択してください。詳細な時間を設定し、<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+  - 詳細な時間を選択するには、日付または時間の領域を選択してください。詳細な時間を設定し、<Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
--   <Cmdname sid="filter" className="uitext" />: <Cmdname sid="title" className="uitext" />または<Cmdname sid="message" className="uitext" />内容に基づいてイベント履歴をフィルタリングできます。
+- <Cmdname sid="filter" className="uitext" />: <Cmdname sid="title" className="uitext" />または<Cmdname sid="message" className="uitext" />内容に基づいてイベント履歴をフィルタリングできます。
 
 <InDoc product='java,php,nodejs,python,dotnet,golang,log'>
 
--   <Cmdname sid="application" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
+- <Cmdname sid="application" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
 
 </InDoc>
 
 <InDoc product='postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb'>
 
--   <Cmdname sid="database" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
+- <Cmdname sid="database" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
 
 </InDoc>
 
 <InDoc product='kubernetes'>
 
--   <Cmdname sid="container" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
+- <Cmdname sid="container" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
 
 </InDoc>
 
 <InDoc product='browser,npm,amazon-cloudwatch,amazon-ecs,aws-log,azure,ncloud,oracle-cloud'>
 
--   <Cmdname sid="agent" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
+- <Cmdname sid="agent" className="uitext" />：プロジェクトに含まれるエージェントを選択できます。
 
 </InDoc>
 
--   **_CSV_**：参照したイベント履歴結果をcsvファイルとして保存することができます。<Cmdname sid="maximum_csv_lines" className="uitext" />を入力し <Cmdname sid="download" className="uitext" /> ボタンを選択してください。
+- **_CSV_**：参照したイベント履歴結果をcsvファイルとして保存することができます。<Cmdname sid="maximum_csv_lines" className="uitext" />を入力し <Cmdname sid="download" className="uitext" /> ボタンを選択してください。
 
--   <Cmdname sid="column_select" className="uitext" />：取得されたイベント履歴の結果の列項目を追加することができます。
+- <Cmdname sid="column_select" className="uitext" />：取得されたイベント履歴の結果の列項目を追加することができます。
 
--   <Cmdname sid="event_setting" className="uitext" />：<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />メニューに移動します。
+- <Cmdname sid="event_setting" className="uitext" />：<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />メニューに移動します。
 
--   <Cmdname sid="title" className="uitext" /> / <Cmdname sid="message" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />メニューで追加したイベントの<Cmdname sid="event_name" className="uitext" />と<Cmdname sid="message" className="uitext" />項目の内容です。
+- <Cmdname sid="title" className="uitext" /> / <Cmdname sid="message" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />メニューで追加したイベントの<Cmdname sid="event_name" className="uitext" />と<Cmdname sid="message" className="uitext" />項目の内容です。
 
-    <Xclude product="amazon-cloudwatch,amazon-ecs,aws-log,azure,browser,log,ncloud,npm,oracle-cloud">
+  <Xclude product="amazon-cloudwatch,amazon-ecs,aws-log,azure,browser,log,ncloud,npm,oracle-cloud">
 
-    :::note
+  :::note
 
-    -   イベント追加の詳細については、[次の文書](metric-warning-notice)を参考にしてください。
+  - イベント追加の詳細については、[次の文書](metric-warning-notice)を参考にしてください。
 
-    -   通知メッセージのユーザー定義の詳細については、[次の文書](set-notification-message)を参考にしてください。
+  - 通知メッセージのユーザー定義の詳細については、[次の文書](set-notification-message)を参考にしてください。
 
-    :::
+  :::
 
-    </Xclude>
+  </Xclude>
 
--   <Cmdname sid="event_time" className="uitext" />: イベントが発生した時刻です。
+- <Cmdname sid="event_time" className="uitext" />: イベントが発生した時刻です。
 
-    -   イベントが解消されずに進行中である場合、<Cmdname sid="in_progress" className="uitext" />タグが表示されます。
+  - イベントが解消されずに進行中である場合、<Cmdname sid="in_progress" className="uitext" />タグが表示されます。
 
-    -   整備中である場合、イベントが発生すると<Cmdname sid="ITM07315" className="uitext" />タグが表示されます。
+  - 整備中である場合、イベントが発生すると<Cmdname sid="ITM07315" className="uitext" />タグが表示されます。
 
-    :::note
+  :::note
 
-    <Cmdname sid="sms_maintenance" className="uitext" />メニューの詳細については、<Link to="../management/maintenance">次の文書</Link>を参考にしてください。
+  <Cmdname sid="sms_maintenance" className="uitext" />メニューの詳細については、<Link to="../management/maintenance">次の文書</Link>を参考にしてください。
 
-    :::
+  :::
 
--   <Cmdname sid="TTL06583" className="uitext" />: 設定したイベントが解決された時刻です。もし該当カラムが見えなかったら<Cmdname sid="column_select" className="uitext" />ボタンをクリックし<Cmdname sid="TTL06583" className="uitext" />を選択してください。
+- <Cmdname sid="TTL06583" className="uitext" />: 設定したイベントが解決された時刻です。もし該当カラムが見えなかったら<Cmdname sid="column_select" className="uitext" />ボタンをクリックし<Cmdname sid="TTL06583" className="uitext" />を選択してください。
 
 <Xclude product="postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb">
 
--   <Cmdname sid="application" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />メニューでイベントを追加して<Cmdname sid="alert_object_filtering" className="uitext" />項目を設定すると表示されます。
+- <Cmdname sid="application" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />メニューでイベントを追加して<Cmdname sid="alert_object_filtering" className="uitext" />項目を設定すると表示されます。
 
 </Xclude>
 
 <InDoc product='postgresql,postgresql-v1,oracle,mysql,mysql-v1,mssql,tibero,cubrid,altibase,redis,mongodb'>
 
--   <Cmdname sid="instance" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />メニューでイベントを追加して<Cmdname sid="alert_object_filtering" className="uitext" />項目を設定すると表示されます。
+- <Cmdname sid="instance" className="uitext" />: <Cmdname sid="event_setting" className="uitext" />メニューでイベントを追加して<Cmdname sid="alert_object_filtering" className="uitext" />項目を設定すると表示されます。
 
 </InDoc>

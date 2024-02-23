@@ -4,41 +4,41 @@
 
 ### 基本文法
 
--   文字列をそのまま入力すると変数、バッククォート(' ')またはダブルクォート('' ")で囲むとtextとして認識します。
+- 文字列をそのまま入力すると変数、バッククォート(' ')またはダブルクォート('' ")で囲むとtextとして認識します。
 
-    ```java title='oid == "oid"'
-    1. oid : 変数
-    2. == : 関数
-    3. "oid" : text
-    ```
+  ```java title='oid == "oid"'
+  1. oid : 変数
+  2. == : 関数
+  3. "oid" : text
+  ```
 
-    ```java
-    // onameがott-1235の場合
+  ```java
+  // onameがott-1235の場合
 
-    // 正常な場合
-    onname = 'ott-1235'またはonname = "ott-1235"
+  // 正常な場合
+  onname = 'ott-1235'またはonname = "ott-1235"
 
-    // 異常な場合、通知は機能しません。
-    onname = ott-1235
-    ```
+  // 異常な場合、通知は機能しません。
+  onname = ott-1235
+  ```
 
--   数字をそのまま入力すると、number、バッククォート(' ')またはダブルクォート('' '')で囲むとtextとして認識します。
+- 数字をそのまま入力すると、number、バッククォート(' ')またはダブルクォート('' '')で囲むとtextとして認識します。
 
-    ```java title='oid == 123'
-    1. oid : 変数
-    2. == : 関数
-    3. 123 : number
-    ```
+  ```java title='oid == 123'
+  1. oid : 変数
+  2. == : 関数
+  3. 123 : number
+  ```
 
-    ```java
-    // oidが123の場合
+  ```java
+  // oidが123の場合
 
-    // 正常な場合
-    oid = 123
+  // 正常な場合
+  oid = 123
 
-    // 異常な場合、通知は機能しません。
-    id == '123' または oid == '123'
-    ```
+  // 異常な場合、通知は機能しません。
+  id == '123' または oid == '123'
+  ```
 
 ### 使用可能な演算子の一覧
 
@@ -48,8 +48,8 @@
 |    !=          | operand1 != operand2          | operand1とoperand2の値が異なることを確認します。                                                              |
 | <span>></span> | operand1 > operand2           | operand1の値がoperand2の値より大きいことを確認します。                                                           |
 |    > =         | operand1 >= operand2          | operand1の値がoperand2の値より大きいことを確認します。                                                           |
-|    <          | operand1 < operand2          | operand1の値がoperand2の値より小さいことを確認します。                                                           |
-|    <=         | operand1 <= operand2         | operand1の値がoperand2の値より小さいことを確認します。                                                           |
+|    \<          | operand1 \< operand2          | operand1の値がoperand2の値より小さいことを確認します。                                                           |
+|    \<=         | operand1 \<= operand2         | operand1の値がoperand2の値より小さいことを確認します。                                                           |
 |    like        | operand1 like operand2        | operand1にoperand2が含まれているかどうかをパターンで検索します。                                                      |
 |    &&          | expression1 && expression2    | expression1とexpression2の両方が`true`であることを確認します。                                                 |
 |    and         | expression1 and expression2   | expression1とexpression2の両方が`true`であることを確認します。<br/>**&&**と同じ役割を実行する演算子です。                      |
@@ -60,48 +60,48 @@
 
 ワイルドカード(`*`)含む文字列を簡単に検索できます。
 
--   特定のキーワードで始まる文字列検索
+- 特定のキーワードで始まる文字列検索
 
-    ```java
+  ```java
 
-    Key like "Value*"
+  Key like "Value*"
 
-    ```
+  ```
 
--   特定のキーワードで終わる文字列検索
+- 特定のキーワードで終わる文字列検索
 
-    ```java
+  ```java
 
-    Key like "*Value"
+  Key like "*Value"
 
-    ```
+  ```
 
--   特定のキーワードを含む文字列検索
+- 特定のキーワードを含む文字列検索
 
-    ```java
+  ```java
 
-    Key like "*Value*"
+  Key like "*Value*"
 
-    ```
+  ```
 
--   キーワードの中にワイルドカード(`*`)が使用できません。
+- キーワードの中にワイルドカード(`*`)が使用できません。
 
-    ```java
+  ```java
 
-    //対応しない文法
-    Key like "Va*lue"
+  //対応しない文法
+  Key like "Va*lue"
 
-    ```
+  ```
 
--   `like`演算子からワイルドカード(`*`)を省略する場合、equals(`==`)で動作します。
+- `like`演算子からワイルドカード(`*`)を省略する場合、equals(`==`)で動作します。
 
-    ```java
+  ```java
 
-    //以下の2つの文章は全く同じ結果になります。
-    Key like "Value"
-    Key == "Value"
+  //以下の2つの文章は全く同じ結果になります。
+  Key like "Value"
+  Key == "Value"
 
-    ```
+  ```
 
 ### 使用可能なメソッド一覧
 

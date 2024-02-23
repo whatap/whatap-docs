@@ -15,74 +15,74 @@ tags:
 
 {@include: ../common-items/_dotnet-transaction-profile.mdx} 
 
--   **transaction_status_error_enable** <span class='type'>Boolean</span>
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとしての処理有無を設定します。
+  正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
--   **status_ignore** <span class='type'>String</span>
+- **status_ignore** <span class='type'>String</span>
 
-    無視しようとするHTTPステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore=408,500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
 
--   **status_ignore_set** <span class='type'>String</span>
+- **status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
 
--   **httpc_status_error_enable** <span class='type'>Boolean</span>
+- **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
+  HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
 
-    :::note
+  :::note
 
-    HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
+  HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
 
-    :::
+  :::
 
--   **httpc_status_ignore** <span class='type'>String</span>
+- **httpc_status_ignore** <span class='type'>String</span>
 
-    HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
--   **httpc_status_ignore_set** <span class='type'>String</span>
+- **httpc_status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  `whatap.error.HTTPC_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    :::note
+  :::note
 
-    `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+  `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`に設定します。 この時に、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
 
-    :::
+  :::
 
--   **profile_http_parameter_keys** <span class='type'>String</span>
+- **profile_http_parameter_keys** <span class='type'>String</span>
 
-    設定されたキーで対応するパラメータ情報を記録します。複数の登録をする場合は、コンマ(,)を区切り文字として使用します。
+  設定されたキーで対応するパラメータ情報を記録します。複数の登録をする場合は、コンマ(,)を区切り文字として使用します。
 
--   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
-    デフォルト値 `3000`
+  デフォルト値 `3000`
 
-    収集情報を確認するダッシュボードのアクティブトランザクションのアークイコライザーグラフで、slow間隔と表示するトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、slowアクティブのトランザクションの数に含まれます。
+  収集情報を確認するダッシュボードのアクティブトランザクションのアークイコライザーグラフで、slow間隔と表示するトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、slowアクティブのトランザクションの数に含まれます。
 
--   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
-    デフォルト値 `8000`
+  デフォルト値 `8000`
 
-    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてvery slow区間と表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、very slowアクティブトランザクションの数に含まれます。
+  収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフにおいてvery slow区間と表記できるトランザクションレスポンス時間の基準を設定します。トランザクションのレスポンス時間が設定時間を超えた場合、very slowアクティブトランザクションの数に含まれます。
 
--   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
 
-    デフォルト値`30000`
+  デフォルト値`30000`
 
-    トランザクションが終了するまで待機時間です。5分以内にトランザクションが終了しない場合、トランザクションは情報を収集しません。トランザクションのトレース情報で「Lost Connection」を確認できます。
+  トランザクションが終了するまで待機時間です。5分以内にトランザクションが終了しない場合、トランザクションは情報を収集しません。トランザクションのトレース情報で「Lost Connection」を確認できます。

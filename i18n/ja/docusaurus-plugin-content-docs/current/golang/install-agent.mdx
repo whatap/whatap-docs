@@ -15,11 +15,11 @@ tags:
 
 :::
 
-1.  WhaTapリポジトリ(Repository)をインストールします。
+1. WhaTapリポジトリ(Repository)をインストールします。
 
-2.  whatap-agent Linuxパッケージ(yum, apt-get)をインストールします。
+2. whatap-agent Linuxパッケージ(yum, apt-get)をインストールします。
 
-3.  whatap-agentサービスを実行してください。
+3. whatap-agentサービスを実行してください。
 
 ![Go Monitoring](/img/golang_system.png)
 
@@ -107,15 +107,15 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 モニタリング情報を収集するトレーサー、収集した情報をサーバーに転送するエージェント、トレーサーとエージェントをサーバーへ動的に適用するインストールスクリプト ファイルで構成されます。
 
--   _whatap-agent_：エージェント、トレーサーからUDPとして転送した情報を収集サーバーに転送するプログラムです。
+- _whatap-agent_：エージェント、トレーサーからUDPとして転送した情報を収集サーバーに転送するプログラムです。
 
--   _/etc/init.d/whatap-agent_：サービスのスクリプトファイルです。
+- _/etc/init.d/whatap-agent_：サービスのスクリプトファイルです。
 
--   _whatap_agent_：サービスの実行ファイルです。
+- _whatap_agent_：サービスの実行ファイルです。
 
--   _whatap.conf_：設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。
+- _whatap.conf_：設定情報および収集サーバーのIP、アクセスキーを入力するファイルです。
 
--   _whatap-boot-`yyyymmdd`.log_：エージェントログファイルです。(パス：_/usr/whata/agent/log_)
+- _whatap-boot-`yyyymmdd`.log_：エージェントログファイルです。(パス：_/usr/whata/agent/log_)
 
 </details>
 
@@ -125,9 +125,9 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 次のコマンドを順番に実行して、_whatap.conf_ファイルに**アクセスキー**と**収集サーバーIPアドレス**などを設定してください。
 
--   アプリケーションの開始スクリプトパスに_whatap.conf_ファイルを作成してください。 
+- アプリケーションの開始スクリプトパスに_whatap.conf_ファイルを作成してください。 
 
--   `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション起動スクリプトのパスを_whatap.conf_ファイルパスとして認識します。
+- `WHATAP_HOME`環境変数を設定しない場合は、アプリケーション起動スクリプトのパスを_whatap.conf_ファイルパスとして認識します。
 
 ```bash title='SH'
 # スクリプトの実行パスにwhatap.confファイルを作成
@@ -139,17 +139,17 @@ $ echo "app_name={アプリケーション名}" >> ./whatap.conf
 ./app
 ```
 
--   `license`：**アクセスキー**を入力してください。
+- `license`：**アクセスキー**を入力してください。
 
--   `whatap.server.host`：**収集サーバーのIPアドレス**を入力してください。
+- `whatap.server.host`：**収集サーバーのIPアドレス**を入力してください。
 
--   `app_name`：アプリケーション名を入力してください。文字列を使用してユーザー設定することができます。
+- `app_name`：アプリケーション名を入力してください。文字列を使用してユーザー設定することができます。
 
-    :::note
+  :::note
 
-    `app_name`はエージェント名を決定するための構成要素です。詳細については、[次の文書](agent-name)を参照してください。
+  `app_name`はエージェント名を決定するための構成要素です。詳細については、[次の文書](agent-name)を参照してください。
 
-    :::
+  :::
 
 ### `WHATAP_HOME`環境変数の設定
 
@@ -214,17 +214,17 @@ WHATAP_HOME=./whatap_home1 ./app
 </TabItem>
 <TabItem value="al" label="Amazon Linux">
 
-1.  次のコマンドを実行して、WhaTapエージェントデーモンを実行してください。
+1. 次のコマンドを実行して、WhaTapエージェントデーモンを実行してください。
 
-    ```bash
-    /usr/whatap/php/whatap-agent start
-    ```
+   ```bash
+   /usr/whatap/php/whatap-agent start
+   ```
 
-2.  次のコマンドを実行して、WhaTapサービスが正常に実行されていることを確認してください。
+2. 次のコマンドを実行して、WhaTapサービスが正常に実行されていることを確認してください。
 
-    ```bash
-    ps -elf | grep whatap_agent_static
-    ```
+   ```bash
+   ps -elf | grep whatap_agent_static
+   ```
 
 アプリケーションサーバーを再起動すると、エージェントが情報収集を開始します。
 

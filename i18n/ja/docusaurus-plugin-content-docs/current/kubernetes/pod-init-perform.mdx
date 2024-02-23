@@ -25,15 +25,15 @@ WhaTap Kubernetesの**_Pod初期化性能_**機能を使用すると、Pod開始
 
 <ImgLang img='k8s-pod-init-perform.png' desc='Pod初期化性能' />
 
--   ![number 01](/img/number-01.png)領域の左上にある状態別のPod数を確認することができます。
+- ![number 01](/img/number-01.png)領域の左上にある状態別のPod数を確認することができます。
 
--   ![number 01](/img/number-01.png)領域の右上にある ![更新アイコン](/img/ico-refresh.svg)**_更新_**アイコンを選択して更新できます。
+- ![number 01](/img/number-01.png)領域の右上にある ![更新アイコン](/img/ico-refresh.svg)**_更新_**アイコンを選択して更新できます。
 
--   ![number 01](/img/number-01.png)領域の左側にある ![カラム選択アイコン](/img/ic-k8s-filter.svg)**_カラム選択_**アイコンを選択してカラムを選択できます。 
+- ![number 01](/img/number-01.png)領域の左側にある ![カラム選択アイコン](/img/ic-k8s-filter.svg)**_カラム選択_**アイコンを選択してカラムを選択できます。 
 
--   ![number 01](/img/number-01.png)領域の右側にある入力ウィンドウで、Pod<Cmdname sid="name" className="uitext" />または<Cmdname sid="qosClass" className="uitext" />を検索できます。
+- ![number 01](/img/number-01.png)領域の右側にある入力ウィンドウで、Pod<Cmdname sid="name" className="uitext" />または<Cmdname sid="qosClass" className="uitext" />を検索できます。
 
--   ![number 02](/img/number-02.png)領域では、目的のカラムを選択すると、そのカラム一覧を並べ替えて表示することができます。 
+- ![number 02](/img/number-02.png)領域では、目的のカラムを選択すると、そのカラム一覧を並べ替えて表示することができます。 
 
 ## カラムガイド
 
@@ -45,67 +45,67 @@ WhaTap Kubernetesの**_Pod初期化性能_**機能を使用すると、Pod開始
 
 Podの<Cmdname sid="name" className="uitext" />と<Cmdname sid="phase" className="uitext" />、<Cmdname sid="qosClass" className="uitext" />、<Cmdname sid="startTime" className="uitext" />に関する情報を確認することができます。
 
--   <Cmdname sid="phase" className="uitext" />: Podのライフサイクルを意味します。
+- <Cmdname sid="phase" className="uitext" />: Podのライフサイクルを意味します。
 
-    -   ![一時停止アイコン](/img/ico-pause.svg)Pending: クバネティスクラスター内でPod開始が承認されているが、コンテナが生成されていない状態を意味します。
+  - ![一時停止アイコン](/img/ico-pause.svg)Pending: クバネティスクラスター内でPod開始が承認されているが、コンテナが生成されていない状態を意味します。
 
-    -   ![通常アイコン](/img/ic-check-circle-filled.svg) Running: Podがノードにバインディングされ、すべてのコンテナが生成され、1 つ以上のコンテナがまだ実行中であるか、開始または再起動中である状態を意味します。
+  - ![通常アイコン](/img/ic-check-circle-filled.svg) Running: Podがノードにバインディングされ、すべてのコンテナが生成され、1 つ以上のコンテナがまだ実行中であるか、開始または再起動中である状態を意味します。
 
-    -   ![成功アイコン](/img/ic-check-circle-filled-bl.svg)Succeeded: Podのすべてのコンテナが正常に終了し、再起動されていない状態を意味します。
+  - ![成功アイコン](/img/ic-check-circle-filled-bl.svg)Succeeded: Podのすべてのコンテナが正常に終了し、再起動されていない状態を意味します。
 
-    -   ![危険アイコン](/img/ic-warning-critical.svg)Failed: Podのコンテナの1 つ以上で障害が発生し、終了した状態を意味します。
+  - ![危険アイコン](/img/ic-warning-critical.svg)Failed: Podのコンテナの1 つ以上で障害が発生し、終了した状態を意味します。
 
-    -   ![不明なアイコン](/img/ic-question-circle.svg)Unknown: 何らかの理由でPodと通信できない状態を意味します。
+  - ![不明なアイコン](/img/ic-question-circle.svg)Unknown: 何らかの理由でPodと通信できない状態を意味します。
 
--   <Cmdname sid="qosClass" className="uitext" />: PodのQuality of Serviceを意味します。QoSクラスは、リソース不足時のPodの優先順位を決定します。優先度の高いPodが優先度の低いPodより先に終了します。
+- <Cmdname sid="qosClass" className="uitext" />: PodのQuality of Serviceを意味します。QoSクラスは、リソース不足時のPodの優先順位を決定します。優先度の高いPodが優先度の低いPodより先に終了します。
 
-    -   Guaranteed: ノードで使用可能なリソースが保証され、他のPodよりも優先的に割り当てます。最も最後に終了します。
+  - Guaranteed: ノードで使用可能なリソースが保証され、他のPodよりも優先的に割り当てます。最も最後に終了します。
 
-        -   PodのすべてのコンテナがCPUおよびメモリのrequestを持っている場合です。
+    - PodのすべてのコンテナがCPUおよびメモリのrequestを持っている場合です。
 
-        -   PodのすべてのコンテナがCPUおよびメモリに limitを持っており、それらの値がrequestと同じである場合です。
+    - PodのすべてのコンテナがCPUおよびメモリに limitを持っており、それらの値がrequestと同じである場合です。
 
-    -   Burstable: Podはノードのリソースが不足している場合は、一部のリソースを割り当てます。
+  - Burstable: Podはノードのリソースが不足している場合は、一部のリソースを割り当てます。
 
-        -   Guaranteedクラスの条件を満たしていない場合です。
+    - Guaranteedクラスの条件を満たしていない場合です。
 
-        -   PodのコンテナのいずれかがCPUおよびメモリに request または limitが設定されている場合です。
+    - PodのコンテナのいずれかがCPUおよびメモリに request または limitが設定されている場合です。
 
-    -   BestEffort: リソース requestやlimitがないため、他のPodより優先度が低くなります。 最初に終了します。
+  - BestEffort: リソース requestやlimitがないため、他のPodより優先度が低くなります。 最初に終了します。
 
-        -   Podのすべてのコンテナには、CPUおよびメモリの requestと limitはありません。
+    - Podのすべてのコンテナには、CPUおよびメモリの requestと limitはありません。
 
--   <Cmdname sid="startTime" className="uitext" />: Podが開始または生成された時間を意味します。
+- <Cmdname sid="startTime" className="uitext" />: Podが開始または生成された時間を意味します。
 
 ### <Cmdname sid="ITM07179" className="b600" />
 
 <Cmdname sid="ITM07179" className="uitext" />は、最初のメトリクスデータが収集された日時を意味します。
 
--   <Cmdname sid="ITM07175" className="uitext" />: 初期化が開始された時間に関するデータで、最初のデータ収集時間を意味します。
+- <Cmdname sid="ITM07175" className="uitext" />: 初期化が開始された時間に関するデータで、最初のデータ収集時間を意味します。
 
--   <Cmdname sid="ITM07170" className="uitext" />: 初期化の開始時のCPU limitを意味します。
+- <Cmdname sid="ITM07170" className="uitext" />: 初期化の開始時のCPU limitを意味します。
 
--   <Cmdname sid="ITM07169" className="uitext" />: 初期化の開始時のCPU requestを意味します。
+- <Cmdname sid="ITM07169" className="uitext" />: 初期化の開始時のCPU requestを意味します。
 
--   <Cmdname sid="ITM07171" className="uitext" />: 初期化の開始時にコンテナでCPU制限を超える使用試行が発生した場合、増加する値を意味します。
+- <Cmdname sid="ITM07171" className="uitext" />: 初期化の開始時にコンテナでCPU制限を超える使用試行が発生した場合、増加する値を意味します。
 
--   <Cmdname sid="ITM07173" className="uitext" />: 初期化の開始時に設定したメモリ limitを意味します。
+- <Cmdname sid="ITM07173" className="uitext" />: 初期化の開始時に設定したメモリ limitを意味します。
 
--   <Cmdname sid="ITM07172" className="uitext" />: 初期化の開始時に要求したメモリ requestを意味します。
+- <Cmdname sid="ITM07172" className="uitext" />: 初期化の開始時に要求したメモリ requestを意味します。
 
--   <Cmdname sid="ITM07174" className="uitext" />: 初期化の開始時にコンテナでメモリ制限を超える使用試行が発生した場合、増加する値を意味します。
+- <Cmdname sid="ITM07174" className="uitext" />: 初期化の開始時にコンテナでメモリ制限を超える使用試行が発生した場合、増加する値を意味します。
 
 ### <Cmdname sid="ITM07178" className="b600" />
 
 <Cmdname sid="ITM07178" className="uitext" />は、初期化の開始後5分間のデータのCpuByLimitの平均値より低いCpuByLimit値のデータが発生した以前の時点を意味します。
 
--   <Cmdname sid="ITM07164" className="uitext" />: Pod初期化にかかった時間を意味します。
+- <Cmdname sid="ITM07164" className="uitext" />: Pod初期化にかかった時間を意味します。
 
-    > 初期化開始時の5分間のデータのうち、CpuByLimitの平均値より低いCpuByLimit値が収集された時間 - 最初のデータ収集時間
+  > 初期化開始時の5分間のデータのうち、CpuByLimitの平均値より低いCpuByLimit値が収集された時間 - 最初のデータ収集時間
 
--   <Cmdname sid="ITM07162" className="uitext" />: 初期化中に使用したCpuByLimitの平均値を意味します。
+- <Cmdname sid="ITM07162" className="uitext" />: 初期化中に使用したCpuByLimitの平均値を意味します。
 
--   <Cmdname sid="ITM07163" className="uitext" />: 初期化中にそのコンテナで使用されたメモリの最大使用量を意味します。
+- <Cmdname sid="ITM07163" className="uitext" />: 初期化中にそのコンテナで使用されたメモリの最大使用量を意味します。
 
 :::note
 
@@ -117,10 +117,10 @@ CpuByLimit(`cpu_per_quota`)は、CPU Limitに基づくCPU全体の使用率を�
 
 <Cmdname sid="ITM07177" className="uitext" />とは、初期化開始後5分間のデータのCpuByLimit平均値より低いCpuByLimit値のデータが発生した時間を意味します。
 
--   <Cmdname sid="ITM07176" className="uitext" />: 初期化完了した時間を意味します。
+- <Cmdname sid="ITM07176" className="uitext" />: 初期化完了した時間を意味します。
 
--   <Cmdname sid="ITM07165" className="uitext" />: 初期化完了後に使用したCpuByLimitの平均値を意味します。
+- <Cmdname sid="ITM07165" className="uitext" />: 初期化完了後に使用したCpuByLimitの平均値を意味します。
 
--   <Cmdname sid="ITM07166" className="uitext" />: 初期化が完了した後、そのコンテナで使用したメモリの最大使用量を意味します。
+- <Cmdname sid="ITM07166" className="uitext" />: 初期化が完了した後、そのコンテナで使用したメモリの最大使用量を意味します。
 
--   <Cmdname sid="ITM07167" className="uitext" />: 初期化完了後5分間のミリ秒単位時間を意味します。
+- <Cmdname sid="ITM07167" className="uitext" />: 初期化完了後5分間のミリ秒単位時間を意味します。

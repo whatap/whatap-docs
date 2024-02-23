@@ -4,33 +4,33 @@
 
 トランザクションのパフォーマンス追跡のために収集するステップの種類は次のとおりです。
 
--   **DB接続ステップ** <span class='type'>START-END</span>
+- **DB接続ステップ** <span class='type'>START-END</span>
 
-    RDBへの接続のパフォーマンスが含まれます。 ステップ情報には、名前、レスポンス時間、エラーが含まれます。
+  RDBへの接続のパフォーマンスが含まれます。 ステップ情報には、名前、レスポンス時間、エラーが含まれます。
 
--   **SQLステップ** <span class='type'>START-END</span>
+- **SQLステップ** <span class='type'>START-END</span>
 
-    JDBC SQLのパフォーマンスが含まれます。 ステップ情報には、接続情報、SQL文、エラーが含まれています。
+  JDBC SQLのパフォーマンスが含まれます。 ステップ情報には、接続情報、SQL文、エラーが含まれています。
 
--   **HTTP Callステップ** <span class='type'>START-END</span>
+- **HTTP Callステップ** <span class='type'>START-END</span>
 
-    外部HTTPサービス呼び出しのパフォーマンスが含まれます。 ステップ情報には、url、host、port、レスポンス時間、エラーが含まれます。
+  外部HTTPサービス呼び出しのパフォーマンスが含まれます。 ステップ情報には、url、host、port、レスポンス時間、エラーが含まれます。
 
--   **Messageステップ** <span class='type'>ADD</span>
+- **Messageステップ** <span class='type'>ADD</span>
 
-    トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
+  トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
 
--   **SOCKETステップ** <span class='type'>ADD</span>
+- **SOCKETステップ** <span class='type'>ADD</span>
 
-    Socketオープンを表現するステップです。
+  Socketオープンを表現するステップです。
 
--   **METHODステップ** <span class='type'>START-END</span>
+- **METHODステップ** <span class='type'>START-END</span>
 
-    メソッド応答時間を追跡します。
+  メソッド応答時間を追跡します。
 
--   **ACTIVE STACK ステップ** <span class='type'>START-END</span>
+- **ACTIVE STACK ステップ** <span class='type'>START-END</span>
 
-    アクティブスタックに関する情報を含みます。 別のスレッドが作成し、トレースに追加する方法で収集します。
+  アクティブスタックに関する情報を含みます。 別のスレッドが作成し、トレースに追加する方法で収集します。
 
 :::note
 

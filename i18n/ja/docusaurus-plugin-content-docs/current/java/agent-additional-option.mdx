@@ -8,44 +8,44 @@ tags:
 
 アプリケーション環境によっては、エージェントのデフォルト値だけでは目的のレベルの情報が取得できない場合があります。以下は、頻繁に使用されているセキュリティなどの理由でエージェントの基本設定から除外したオプションです。必要に応じて、以下のオプションを追加して適用できます。
 
--   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+- **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    SQLパラメータを収集します。
+  SQLパラメータを収集します。
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    HTTPパラメータを収集します。
+  HTTPパラメータを収集します。
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    HTTP Header情報を収集します。
+  HTTP Header情報を収集します。
 
--   **trace_http_client_ip_header_key** <span class='type'>String</span>
+- **trace_http_client_ip_header_key** <span class='type'>String</span>
 
-    デフォルト値 `X-Forwarded-For`
+  デフォルト値 `X-Forwarded-For`
 
-    ユーザーIP情報をHTTPヘッダーのキーから抽出します。
+  ユーザーIP情報をHTTPヘッダーのキーから抽出します。
 
--   **trace_user_method** / **wclient_cookie_limit** <span class='type'>Boolean</span>
+- **trace_user_method** / **wclient_cookie_limit** <span class='type'>Boolean</span>
 
-    デフォルト値 `cookie`
+  デフォルト値 `cookie`
 
-    ユーザー数の追跡をクッキーベースに行います。
+  ユーザー数の追跡をクッキーベースに行います。
 
-    :::note
+  :::note
 
-    Javaエージェント 2.2.0バージョン以降の場合、`wclient_trace_type`オプションをご利用ください。
+  Javaエージェント 2.2.0バージョン以降の場合、`wclient_trace_type`オプションをご利用ください。
 
-    :::
+  :::
 
--   **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
+- **hook_httpc_sap3_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    SAP JCOを使用する場合は、SAP Functionを追跡します。
+  SAP JCOを使用する場合は、SAP Functionを追跡します。

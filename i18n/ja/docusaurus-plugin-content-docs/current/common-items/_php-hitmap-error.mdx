@@ -2,31 +2,31 @@
 
 CPUとメモリのグラフは表示されるが、次の場合は応答時間分布 (ヒットマップ) が表示されません。 
 
--   エージェントは、収集サーバーに正常に接続されましたが、トレーサーは、PHP拡張モジュールに正常に適用されませんでした。
--   セットアップ後にApache および PHP-FPM サービスを再起動していない場合
+- エージェントは、収集サーバーに正常に接続されましたが、トレーサーは、PHP拡張モジュールに正常に適用されませんでした。
+- セットアップ後にApache および PHP-FPM サービスを再起動していない場合
 
-1.  PHP 拡張モジュールが適用されていることを確認します。
+1. PHP 拡張モジュールが適用されていることを確認します。
 
-    ```bash
-    $ sudo php -m
+   ```bash
+   $ sudo php -m
 
-    [PHP Modules]
-    bz2
-    calendar
-    Core
-    ctype
-    curl
-    date
-    …
-    whatap               # WhaTapモジュールの読み込みを確認
-    …
-    [Zend Modules]
-    ```
+   [PHP Modules]
+   bz2
+   calendar
+   Core
+   ctype
+   curl
+   date
+   …
+   whatap               # WhaTapモジュールの読み込みを確認
+   …
+   [Zend Modules]
+   ```
 
-2.  ApacheおよびPHP-FRMサービスを再起動します。
+2. ApacheおよびPHP-FRMサービスを再起動します。
 
-3.  PHP拡張モジュールが適用されていない場合は、正常にインストールされません。_whatap.so _または_whatap.ini_ファイルパスがPHP環境と一致していることを確認してください。
+3. PHP拡張モジュールが適用されていない場合は、正常にインストールされません。_whatap.so _または_whatap.ini_ファイルパスがPHP環境と一致していることを確認してください。
 
-    次の説明書を参照して、[PHPコマンド(CLI) パス](#check-php-cli-path)、[PHP拡張モジュールパス](#check-php-extension-module)、[PHP追加ini設定パス](#php-ini-path) の項目を確認してください。
+   次の説明書を参照して、[PHPコマンド(CLI) パス](#check-php-cli-path)、[PHP拡張モジュールパス](#check-php-extension-module)、[PHP追加ini設定パス](#php-ini-path) の項目を確認してください。
 
 <!-- 위 항목의 포함관계 검토 필요-->

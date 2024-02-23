@@ -14,61 +14,61 @@ JEUSを使用するアプリケーションサーバ環境でJVMオプション�
 
 ## JVMオプションの追加
 
-1.  JEUSバージョンによる開始オプションの設定ファイルのパスを参照して、`-javaagent`オプションを追加してください。
+1. JEUSバージョンによる開始オプションの設定ファイルのパスを参照して、`-javaagent`オプションを追加してください。
 
-    <Tabs>
-    <TabItem value='jeus7' label='JEUS 7' default>
+   <Tabs>
+   <TabItem value='jeus7' label='JEUS 7' default>
 
-    ```xml title="$JEUS_HOME/domains/jeus_domain/config.xml" {6-9} showLineNumbers
-    <domain>
-        <servers>
-            <server>
-                <name>server1</name>
-                <jvm-config>
-                    <jvm-option>
-                        -Xmx1024m -XX:MaxPermSize=128m
-                        -javaagent:/whatap/whatap.agent-X.Y.Z.jar
-                    </jvm-option>
-                </jvm-config>
-            </server>
-        </servers>
-        ...
-    </domain>
-    ```
+   ```xml title="$JEUS_HOME/domains/jeus_domain/config.xml" {6-9} showLineNumbers
+   <domain>
+       <servers>
+           <server>
+               <name>server1</name>
+               <jvm-config>
+                   <jvm-option>
+                       -Xmx1024m -XX:MaxPermSize=128m
+                       -javaagent:/whatap/whatap.agent-X.Y.Z.jar
+                   </jvm-option>
+               </jvm-config>
+           </server>
+       </servers>
+       ...
+   </domain>
+   ```
 
-    </TabItem>
-    <TabItem value='jeus6' label='JEUS 6'>
+   </TabItem>
+   <TabItem value='jeus6' label='JEUS 6'>
 
-    ```xml title="$JEUS_HOME/config/$hostname/JEUSMain.xml" {6-9} showLineNumbers
-    <node>
-        <name>node01</name>
-        <engine-container1>
-            <name>container1</name>
-            ...
-            <command-option>-Xmx1024m -XX:MaxPermSize=128m
-                -javaagent:/whatap/whatap.agent-#.#.#.jar
-            </command-option>
-            ...
-        </engine-container1>
-    </node>
-    ```
+   ```xml title="$JEUS_HOME/config/$hostname/JEUSMain.xml" {6-9} showLineNumbers
+   <node>
+       <name>node01</name>
+       <engine-container1>
+           <name>container1</name>
+           ...
+           <command-option>-Xmx1024m -XX:MaxPermSize=128m
+               -javaagent:/whatap/whatap.agent-#.#.#.jar
+           </command-option>
+           ...
+       </engine-container1>
+   </node>
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
-2.  アプリケーションサーバーを再起動します。
+2. アプリケーションサーバーを再起動します。
 
-    ```bash
-    jdown && jboot
-    ```
+   ```bash
+   jdown && jboot
+   ```
 
-3.  アプリケーションサーバーのログファイルとエージェントのログファイルを確認して、エージェントが正常に動作しているか、エラーが発生していないかを確認してください。ログファイルの場所については、以下を参照してください。
+3. アプリケーションサーバーのログファイルとエージェントのログファイルを確認して、エージェントが正常に動作しているか、エラーが発生していないかを確認してください。ログファイルの場所については、以下を参照してください。
 
-    -   エージェント：_`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
-    -   JEUS 7: _$JEUS_HOME/domains/$HOST_NAME/servers/$NODE_NAME/logs/JeusServer.log_
-    -   JEUS 6: _$JEUS_HOME/logs/$NODE_NAME/JeusServer.log_
+   - エージェント：_`$WHATAP_HOME`/logs/whatap-`{SERVER_NAME}`-`{DATE}`.log_
+   - JEUS 7: _$JEUS_HOME/domains/$HOST_NAME/servers/$NODE_NAME/logs/JeusServer.log_
+   - JEUS 6: _$JEUS_HOME/logs/$NODE_NAME/JeusServer.log_
 
-4.  エージェントがアプリケーションサーバーの種類とサービスコンテナー名を認識していることを確認してください。
+4. エージェントがアプリケーションサーバーの種類とサービスコンテナー名を認識していることを確認してください。
 
 :::note
 
@@ -93,7 +93,7 @@ JEUSを使用するアプリケーションサーバ環境でJVMオプション�
 | JEUS7    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | JEUS6    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 
-| WAS Ver. |       OpenJDK6 (1.6.0_45)       |       OpenJDK7 (1.7.0_80)       |       OpenJDK8 (1.8.0_91)       |
+| WAS Ver. |       OpenJDK 6 (1.6.0_45)      |       OpenJDK 7 (1.7.0_80)      |       OpenJDK 8 (1.8.0_91)      |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | JEUS7    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
 | JEUS6    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |

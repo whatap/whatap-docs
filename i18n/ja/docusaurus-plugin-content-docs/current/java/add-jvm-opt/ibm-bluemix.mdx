@@ -36,27 +36,27 @@ drwxrwxr-x 8 whatap whatap  4096 10月 29 13:13 .git
 drwxrwxr-x 6 whatap whatap  4096 10月 29 15:26 .
 ```
 
-1.  `${APP_HOME}`で_src/main/resources/whatap-agent/_ディレクトリを作成し、jarファイルと confファイルをコピーします。
+1. `${APP_HOME}`で_src/main/resources/whatap-agent/_ディレクトリを作成し、jarファイルと confファイルをコピーします。
 
-    ```bash
-    $ mkdir -p src/main/resources/whatap-agent/
-    $ cp /apps/whatap/whatap.agent.tracer-1.5.4.jar src/main/resources/whatap-agent/
-    $ cp /apps/whatap/whatap.conf src/main/resources/whatap-agent/
-    ```
+   ```bash
+   $ mkdir -p src/main/resources/whatap-agent/
+   $ cp /apps/whatap/whatap.agent.tracer-1.5.4.jar src/main/resources/whatap-agent/
+   $ cp /apps/whatap/whatap.conf src/main/resources/whatap-agent/
+   ```
 
-2.  _`${APP_HOME}`/manifest.yml_ファイルにオプションを追加します。ymlファイルですので、スペースとインデントに従って作成します。
+2. _`${APP_HOME}`/manifest.yml_ファイルにオプションを追加します。ymlファイルですので、スペースとインデントに従って作成します。
 
-    ```yaml title=${APP_HOME}/manifest.yml {8-9} showLineNumbers
-    ---
-    applications:
-    - name: sample-java-helloworld
-    random-route: true
-    memory: 256M
-    path: target/JavaHelloWorldApp.war
-    # ここから追加します。
-    env:
-        JAVA_OPTS: "-javaagent:/{APPLICATION_DIR}/WEB-INF/classes/whatap-agent/whatap.agent-X.Y.Z.jar -Dorg.osgi.framework.bootdelegation=whatap.* "
-    ```
+   ```yaml title=${APP_HOME}/manifest.yml {8-9} showLineNumbers
+   ---
+   applications:
+   - name: sample-java-helloworld
+   random-route: true
+   memory: 256M
+   path: target/JavaHelloWorldApp.war
+   # ここから追加します。
+   env:
+       JAVA_OPTS: "-javaagent:/{APPLICATION_DIR}/WEB-INF/classes/whatap-agent/whatap.agent-X.Y.Z.jar -Dorg.osgi.framework.bootdelegation=whatap.* "
+   ```
 
 :::note
 
@@ -66,8 +66,8 @@ drwxrwxr-x 6 whatap whatap  4096 10月 29 15:26 .
 
 :::note
 
--   _whatap.conf_設定は、PaaS以外の環境と同様に適用します。適用後、エージェント名の識別が特定するのが難しい場合があるため、状況に応じたエージェント名を適用してください。
--   エージェントネーミングの詳細については、[次の文書](../agent-name)を参照にしてください。
+- _whatap.conf_設定は、PaaS以外の環境と同様に適用します。適用後、エージェント名の識別が特定するのが難しい場合があるため、状況に応じたエージェント名を適用してください。
+- エージェントネーミングの詳細については、[次の文書](../agent-name)を参照にしてください。
 
 :::
 

@@ -10,32 +10,32 @@ WhaTapのステップ(Step)は、スパン(Span)と同じ意味で使用しま�
 
 * * *
 
--   **DB接続ステップ** <span class='type'>START-END</span>
+- **DB接続ステップ** <span class='type'>START-END</span>
 
-    RDBへの接続のパフォーマンスが含まれます。ステップ情報には、名前、応答時間、エラーが含まれます。
+  RDBへの接続のパフォーマンスが含まれます。ステップ情報には、名前、応答時間、エラーが含まれます。
 
--   **SQLステップ** <span class='type'>START-END</span>
+- **SQLステップ** <span class='type'>START-END</span>
 
-    JDBC SQLのパフォーマンスが含まれます。ステップ情報には接続情報、SQL文、エラーが含まれています。
+  JDBC SQLのパフォーマンスが含まれます。ステップ情報には接続情報、SQL文、エラーが含まれています。
 
--   **HTTP Callステップ** <span class='type'>START-END</span>
+- **HTTP Callステップ** <span class='type'>START-END</span>
 
-    外部HTTPサービス呼び出しのパフォーマンスが含まれます。ステップ情報にはurl、host、port、応答時間、エラーが含まれます。
+  外部HTTPサービス呼び出しのパフォーマンスが含まれます。ステップ情報にはurl、host、port、応答時間、エラーが含まれます。
 
--   **Messageステップ** <span class='type'>ADD</span>
+- **Messageステップ** <span class='type'>ADD</span>
 
-    トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
+  トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
 
--   **SOCKETステップ** <span class='type'>ADD</span>
+- **SOCKETステップ** <span class='type'>ADD</span>
 
-    Socketオープンを表現するステップです。
+  Socketオープンを表現するステップです。
 
--   **METHODステップ** <span class='type'>START-END</span>
+- **METHODステップ** <span class='type'>START-END</span>
 
-    メソッド応答時間を追跡します。
+  メソッド応答時間を追跡します。
 
--   **ACTIVE STACK ステップ** <span class='type'>START-END</span>
+- **ACTIVE STACK ステップ** <span class='type'>START-END</span>
 
-    アクティブスタックに関する情報が含まれます。別のスレッドを作成し、トレースに追加することで収集されます。
+  アクティブスタックに関する情報が含まれます。別のスレッドを作成し、トレースに追加することで収集されます。
 
 * * *
