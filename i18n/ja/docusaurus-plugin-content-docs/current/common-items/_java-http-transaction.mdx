@@ -2,45 +2,59 @@
 
 {@include: ../common-items/_transaction-profile-http.mdx}
 
--   **trace_transaction_name_key** <span class='type'>String</span>
+- **trace_transaction_name_key** <span class='type'>String</span>
 
-    HTTP request parameter値をそのオプションに設定すると、パラメータ値を抽出してトランザクション名の最後に追加します。 
+  HTTP request parameter値をそのオプションに設定すると、パラメータ値を抽出してトランザクション名の最後に追加します。 
 
-    例えば、HTTPパラメータで`paramKey`を持つ`/api/test` URLを呼び出す場合、次の例のように設定すると、トレース履歴に`/api/test$paramKey={value}`でトランザクション名を表示します。ただし、複数のパラメータを登録することはできません。
+  例えば、HTTPパラメータで`paramKey`を持つ`/api/test` URLを呼び出す場合、次の例のように設定すると、トレース履歴に`/api/test$paramKey={value}`でトランザクション名を表示します。ただし、複数のパラメータを登録することはできません。
 
-    ```ini title='whatap.conf'
-    # example
-    trace_transaction_name_key=paramKey
-    ```
+  ```ini title='whatap.conf'
+  # example
+  trace_transaction_name_key=paramKey
+  ```
 
 {@include: ../common-items/_transaction-trace-common.mdx}
 
--   **recursive_max** <span class='type'>Int</span>
+- **recursive_max** <span class='type'>Int</span>
 
-    デフォルト値`1000000`
+  デフォルト値`1000000`
 
-    トランザクションが再帰呼び出されているかどうかを検知するためのオプションです。１つのトランザクションから派生する再帰呼び出し回数をカウントすると、イベント通知を発行するための条件が設定されます。
+  トランザクションが再帰呼び出されているかどうかを検知するためのオプションです。１つのトランザクションから派生する再帰呼び出し回数をカウントすると、イベント通知を発行するための条件が設定されます。
 
-    :::note
+  :::note
 
-    HTTP URLの再帰呼び出しを対象とします。jsp:forwardによって再呼び出しするケースもカウントに含まれます。
+  HTTP URLの再帰呼び出しを対象とします。jsp:forwardによって再呼び出しするケースもカウントに含まれます。
 
-    :::
+  :::
 
--   **hook_httpservlet_classes** <span class='type'>String</span>
+- **hook_httpservlet_classes** <span class='type'>String</span>
 
-    HTTPトランザクションのEND POINTを設定します。メソッドの2つのパラメータは、`HttpServletRequest`と`HttpServletResponse`を設定することができます。
+  HTTPトランザクションのEND POINTを設定します。メソッドの2つのパラメータは、`HttpServletRequest`と`HttpServletResponse`を設定することができます。
 
--   **hook_jsp_patterns** <span class='type'>String</span>
+- **hook_jsp_patterns** <span class='type'>String</span>
 
-    デフォルト値`org.apache.jasper.servlet.JspServlet.serviceJspFile`
+  デフォルト値`org.apache.jasper.servlet.JspServlet.serviceJspFile`
 
-    JSPファイルをロードするためのメソッドを設定します。トランザクションの呼び出しの結果として戻されたJSP情報をトレースに表示します。このオプションで追加された設定にデフォルト値が自動的に追加されます。
+  JSPファイルをロードするためのメソッドを設定します。トランザクションの呼び出しの結果として戻されたJSP情報をトレースに表示します。このオプションで追加された設定にデフォルト値が自動的に追加されます。
 
--   **trace_ignore_url_set** <span class='type'>String</span>
+- **trace_ignore_url_set** <span class='type'>String</span>
 
-    トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
+  トランザクション追跡から除外するURLを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
 
--   **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span>
 
-    トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
+  トランザクション追跡から除外するURL prefixを設定します。2つ以上の値を設定する場合は、コンマ(,)を区切り文字として使用します。
+
+- **ignore_http_method** <span class='type'>String</span>
+
+  デフォルト値 `PATCH,OPTIONS,HEAD,TRACE`
+
+  設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
+
+  ```ini title="whatap.conf"
+  # e.g. http_methodがOPTIONS、HEADであるトランザクションを「追跡」
+  ignore_http_method=PATCH,TRACE
+
+  # e.g. http_methodがOPTIONS、HEADであるトランザクションを「無視」
+  ignore_http_method=OPTIONS,HEAD
+  ```

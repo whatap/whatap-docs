@@ -2,83 +2,83 @@
 
 _xos_ディレクトリをデータベースサーバーにコピーし、_xos.conf_ファイルにエージェントサーバー情報を入力して追加オプションを設定してください。
 
--   **dbx_ip** <span class='type'>String</span>
+- **dbx_ip** <span class='type'>String</span>
 
-    DBXエージェントをインストールしたサーバーのIPアドレスを入力してください。  
+  DBXエージェントをインストールしたサーバーのIPアドレスを入力してください。  
 
--   **dbx_port** <span class='type'>String</span>
+- **dbx_port** <span class='type'>String</span>
 
-    デフォルト値`3002`
+  デフォルト値`3002`
 
-    DBXエージェントと通信するポートを設定します。DBXエージェントは、UDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためにファイアウォールを解除してください。  
+  DBXエージェントと通信するポートを設定します。DBXエージェントは、UDPで通信します。そのポートにファイアウォールを設定した場合は、UDP通信のためにファイアウォールを解除してください。  
 
--   **cpu_limit** <span class='type'>Int</span>
+- **cpu_limit** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    limitの設定値より大きい値を持つプロセス情報を収集します。1/100%単位で1.23%の場合、`123`として設定します。  
+  limitの設定値より大きい値を持つプロセス情報を収集します。1/100%単位で1.23%の場合、`123`として設定します。  
 
--   **mem_limit** <span class='type'>Int</span>
+- **mem_limit** <span class='type'>Int</span>
 
-    デフォルト値`10240`
+  デフォルト値`10240`
 
-    limitの設定値より大きい値を持つプロセス情報を収集します。K bytes単位で10240は10M bytesです。
+  limitの設定値より大きい値を持つプロセス情報を収集します。K bytes単位で10240は10M bytesです。
 
--   **disk_usage_interval** <span class='type'>Second</span>
+- **disk_usage_interval** <span class='type'>Second</span>
 
-    デフォルト値 `60`
+  デフォルト値 `60`
 
-    インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。値が'0'の場合、ディスク使用率は収集しません。
+  インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。値が'0'の場合、ディスク使用率は収集しません。
 
--   **process** <span class='type'>String</span>
+- **process** <span class='type'>String</span>
 
-    プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力してください。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
+  プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力してください。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
 
-    ```ini title='xos.conf'
-    process={process_name}
-    ```
+  ```ini title='xos.conf'
+  process={process_name}
+  ```
 
-    例えば、topとlock.shプロセスをモニタリング対象に設定するには、次のようにオプションを設定してください。
+  例えば、topとlock.shプロセスをモニタリング対象に設定するには、次のようにオプションを設定してください。
 
-    ```ini title='xos.conf'
-    process=top,lock.sh
-    ```
+  ```ini title='xos.conf'
+  process=top,lock.sh
+  ```
 
-    :::note
+  :::note
 
-    `process`オプションを使用して、データベースの実行されているプロセスが終了した場合はアラート通知を送信できます。詳細は[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照してください。
+  `process`オプションを使用して、データベースの実行されているプロセスが終了した場合はアラート通知を送信できます。詳細は[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照してください。
 
-    :::
+  :::
 
--   **iplist_interval** <span class='type'>Second</span>
+- **iplist_interval** <span class='type'>Second</span>
 
-    データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
+  データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
 
 <InDoc product='postgresql'>
 
--   **file** <span class='type'>String</span>
+- **file** <span class='type'>String</span>
 
-    **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+  **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
 
-    ```ini title='xos.conf'
-    file=/opt/postgresql/logs/postgresql.log
-    file1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log
-    file2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log
-    file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
-    ```
+  ```ini title='xos.conf'
+  file=/opt/postgresql/logs/postgresql.log
+  file1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log
+  file2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log
+  file3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log
+  ```
 
 </InDoc>
 
 <InDoc product='mysql'>
 
--   **file** <span class='type'>String</span>
+- **file** <span class='type'>String</span>
 
-    **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+  **_ログ_**メニュー(**_ライブテール_**、**_ログトレンド_**、**_ログ検索_**、**_ログ設定_**)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
 
-    ```ini title='xos.conf'
-    file=/var/log/mysqld.log
-    file1=/var/log/mysql_history.log
-    file2=/var/lib/mysql/dbx-database-slow.log
-    ```
+  ```ini title='xos.conf'
+  file=/var/log/mysqld.log
+  file1=/var/log/mysql_history.log
+  file2=/var/lib/mysql/dbx-database-slow.log
+  ```
 
 </InDoc>

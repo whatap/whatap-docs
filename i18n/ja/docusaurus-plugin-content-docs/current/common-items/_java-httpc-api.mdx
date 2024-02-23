@@ -1,49 +1,49 @@
--   **profile_error_httpc_time_max** <span class='type'>Int</span>
+- **profile_error_httpc_time_max** <span class='type'>Int</span>
 
-    デフォルト値`10000`
+  デフォルト値`10000`
 
-    HTTPCの実行時間が指定した値を超えると、TOO SLOWエラーとして処理されます。`0`に設定するとエラーは処理しません。
+  HTTPCの実行時間が指定した値を超えると、TOO SLOWエラーとして処理されます。`0`に設定するとエラーは処理しません。
 
--   **profile_httpc_resource_enabled** <span class='type'>Boolean</span>
+- **profile_httpc_resource_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレースからHTTP Call ステップを収集する場合は、それらのステップで使用されるCPUとメモリ使用量を追跡します。
+  トレースからHTTP Call ステップを収集する場合は、それらのステップで使用されるCPUとメモリ使用量を追跡します。
 
--   **profile_position_httpc** <span class='type'>Boolean</span>
+- **profile_position_httpc** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    HTTPCが実行されている時点のStackTraceを記録します。
+  HTTPCが実行されている時点のStackTraceを記録します。
 
--   **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクション内のHTTPC URLを解析および正規化する機能を有効にします。
+  トランザクション内のHTTPC URLを解析および正規化する機能を有効にします。
 
--   **trace_httpc_normalize_urls** <span class='type'>String</span>
+- **trace_httpc_normalize_urls** <span class='type'>String</span>
 
-    正規化するHTTPC URLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
+  正規化するHTTPC URLパターンを設定します。呼び出しURLパターンを解析して、pathパラメータを削除します。
 
-    :::note
+  :::note
 
-    例）`/a/{v}/b`と宣言すると、`a/123/b` → `a/{v}/b`に置き換えます。複数を登録する場合は、コンマ(,)を区切り文字として使用します。 置換パターンをクリーンアップした後、補足する必要があります。
+  例）`/a/{v}/b`と宣言すると、`a/123/b` → `a/{v}/b`に置き換えます。複数を登録する場合は、コンマ(,)を区切り文字として使用します。 置換パターンをクリーンアップした後、補足する必要があります。
 
-    :::
+  :::
 
--   **hook_httpc_patterns** <span class='type'>String</span>
+- **hook_httpc_patterns** <span class='type'>String</span>
 
-    HTTP outbound呼び出しを行い、`full packageクラス名`.`メソッド`を設定します。HTTP Callを実行するメソッド(method)のフルパス(full path)を登録して使用します。登録後のクラス再定義(class redefine)をするか、エージェントを再起動する必要があります。
+  HTTP outbound呼び出しを行い、`full packageクラス名`.`メソッド`を設定します。HTTP Callを実行するメソッド(method)のフルパス(full path)を登録して使用します。登録後のクラス再定義(class redefine)をするか、エージェントを再起動する必要があります。
 
-    ```ini title='whatap.conf'
-    hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
-    ```
+  ```ini title='whatap.conf'
+  hook_httpc_patterns=io.home.test.baseapp.app.post.service.HookHttpcService.*
+  ```
 
-    :::note
+  :::note
 
-    -   クラスを複数登録するに場合は、コンマ(,)を区切り文字として使用してください。 
+  - クラスを複数登録するに場合は、コンマ(,)を区切り文字として使用してください。 
 
-    -   ワイルドカードは、アスタリスク(\*)のみ使用でき、正規表現は使用できません。
+  - ワイルドカードは、アスタリスク(\*)のみ使用でき、正規表現は使用できません。
 
-    :::
+  :::

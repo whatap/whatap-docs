@@ -1,61 +1,61 @@
 ## マルチトランザクショントレース
 
--   **mtrace_enabled** <span class='type'>Boolean</span>
+- **mtrace_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    マルチトランザクション追跡機能(Multi Transaction ID、以下MTID) の使用有無を設定します。MTIDを追跡することで、登録したすべてのアプリケーション間の呼び出しを確認できます。
+  マルチトランザクション追跡機能(Multi Transaction ID、以下MTID) の使用有無を設定します。MTIDを追跡することで、登録したすべてのアプリケーション間の呼び出しを確認できます。
 
--   **mtrace_rate** <span class='type'>Percentage</span>
+- **mtrace_rate** <span class='type'>Percentage</span>
 
-    デフォルト値`10`
+  デフォルト値`10`
 
-    最初のトランザクションが発生したときに発行されるMTIDの発行比率を設定するオプションです。
+  最初のトランザクションが発生したときに発行されるMTIDの発行比率を設定するオプションです。
 
--   **mtrace_caller_key** <span class='type'>String</span>
+- **mtrace_caller_key** <span class='type'>String</span>
 
-    デフォルト値`x-wtap-mst`
+  デフォルト値`x-wtap-mst`
 
-    MTID追跡に使用するCaller Key Nameを設定します。
+  MTID追跡に使用するCaller Key Nameを設定します。
 
--   **mtrace_callee_key** <span class='type'>String</span>
+- **mtrace_callee_key** <span class='type'>String</span>
 
-    デフォルト値`x-wtap-tx`
+  デフォルト値`x-wtap-tx`
 
-    MTID追跡に使用するCallee Key Nameを定義します。
+  MTID追跡に使用するCallee Key Nameを定義します。
 
--   **mtrace_send_url_length** <span class='type'>Int</span>
+- **mtrace_send_url_length** <span class='type'>Int</span>
 
-    デフォルト値`80`
+  デフォルト値`80`
 
-    Http Callerは、CalleeにそのURLを渡します。このとき、URLの長さが制限され、この長さの値が設定されます。
+  Http Callerは、CalleeにそのURLを渡します。このとき、URLの長さが制限され、この長さの値が設定されます。
 
--   **mtrace_callee_id_send_enabled** <span class='type'>Boolean</span>
+- **mtrace_callee_id_send_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    MTIDを追跡する場合、HTTPC呼び出しで発行されたCallee IDをトレースに表示します。
+  MTIDを追跡する場合、HTTPC呼び出しで発行されたCallee IDをトレースに表示します。
 
--   **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
+- **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    MTID追跡時に受信したCallee IDのトレースを表します。
+  MTID追跡時に受信したCallee IDのトレースを表します。
 
--   **mtrace_alltx_enabled** <span class='type'>Boolean</span>
+- **mtrace_alltx_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    log4jなどのロギングシステムに接続するために、すべてのトランザクションのMTIDを追跡できます。
+  log4jなどのロギングシステムに接続するために、すべてのトランザクションのMTIDを追跡できます。
 
--   **mtrace_basetime** <span class='type'>Miliseconds</span>
+- **mtrace_basetime** <span class='type'>Miliseconds</span>
 
-    デフォルト値`100`
+  デフォルト値`100`
 
-    `mtrace_alltx_enabled`オプションの値が`true`の場合、多くのログが残る可能性があります。この場合、トレースログの量を減らす必要があります。
+  `mtrace_alltx_enabled`オプションの値が`true`の場合、多くのログが残る可能性があります。この場合、トレースログの量を減らす必要があります。
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+- **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    CallerとCalleeの相関統計を収集します。Callerに適用するとCallerの詳細情報が送信され、Calleeを適用するとurl単位のCaller-Calleeの呼び出し統計情報が収集サーバーに送信されます。
+  CallerとCalleeの相関統計を収集します。Callerに適用するとCallerの詳細情報が送信され、Calleeを適用するとurl単位のCaller-Calleeの呼び出し統計情報が収集サーバーに送信されます。

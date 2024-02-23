@@ -1,139 +1,139 @@
 Javaアプリケーションサーバーの機能を制御します。
 
--   **shutdown** <span class='type'>Boolean</span>
+- **shutdown** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    `true`場合は、エージェントのすべての動作を停止し、サーバーとの接続を終了します。
+  `true`場合は、エージェントのすべての動作を停止し、サーバーとの接続を終了します。
 
--   **enabled** <span class='type'>Boolean</span>
+- **enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    機能のすべてを有効にします。`false`の場合でも、サーバーと最小限の通信を維持するために情報が送信されます。
+  機能のすべてを有効にします。`false`の場合でも、サーバーと最小限の通信を維持するために情報が送信されます。
 
--   **transaction_enabled** <span class='type'>Boolean</span>
+- **transaction_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクション追跡機能を有効にします。ヒットマップに記録されるトランザクション情報に対応します。`enabled`オプションが`'false`の場合、無効にします。
+  トランザクション追跡機能を有効にします。ヒットマップに記録されるトランザクション情報に対応します。`enabled`オプションが`'false`の場合、無効にします。
 
--   **counter_enabled** <span class='type'>Boolean</span>
+- **counter_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    パフォーマンスカウンターを追跡する機能をアクティブにします。 アクティブトランザクション数およびユーザ数、JVMリソースの使用量、Process CPUの使用量、DB Poolの使用量情報などが含まれます。`enabled`オプションが`false`の場合、無効にします。
+  パフォーマンスカウンターを追跡する機能をアクティブにします。 アクティブトランザクション数およびユーザ数、JVMリソースの使用量、Process CPUの使用量、DB Poolの使用量情報などが含まれます。`enabled`オプションが`false`の場合、無効にします。
 
--   **stat_enabled** <span class='type'>Boolean</span>
+- **stat_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    統計情報を追跡する機能をアクティブにします。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが含まれます。`enabled`オプションが`false`の場合、無効にします。
+  統計情報を追跡する機能をアクティブにします。5分単位で収集するトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが含まれます。`enabled`オプションが`false`の場合、無効にします。
 
--   **sigar_enabled** <span class='type'>Boolean</span>
+- **sigar_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    sigarライブラリによるOS情報の収集をアクティブします。sigarライブラリを通じて5秒単位で収集するCPU、Memory、DiskなどのOSリソースデータが含まれます。`enabled`オプションが`false`の場合、無効にします。
+  sigarライブラリによるOS情報の収集をアクティブします。sigarライブラリを通じて5秒単位で収集するCPU、Memory、DiskなどのOSリソースデータが含まれます。`enabled`オプションが`false`の場合、無効にします。
 
--   **active_stack_enabled** <span class='type'>Boolean</span>
+- **active_stack_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    アクティブスタックの追跡をアクティブにします。スタックメニューのトップスタック、およびユニークスタック、アクティブスタックが適用されます。`enabled`または`counter_enabled`オプションが`false`の場合、無効にします。
+  アクティブスタックの追跡をアクティブにします。スタックメニューのトップスタック、およびユニークスタック、アクティブスタックが適用されます。`enabled`または`counter_enabled`オプションが`false`の場合、無効にします。
 
--   **license** <span class='type'>String</span>
+- **license** <span class='type'>String</span>
 
-    エージェントのインストール時にサーバーから付与されたアクセスキーを入力します。 アクセスキーは、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
+  エージェントのインストール時にサーバーから付与されたアクセスキーを入力します。 アクセスキーは、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれます。
 
--   **cypher_level** <span class='type'>aes_bit [128, 256]</span>
+- **cypher_level** <span class='type'>aes_bit [128, 256]</span>
 
-    デフォルト値`128`
+  デフォルト値`128`
 
-    AESセキュリティアルゴリズムの暗号レベルを設定します。256ビットまで拡張できます。AES256暗号化の設定については、[次の文書](aes-256-encryption)を参照してください。
+  AESセキュリティアルゴリズムの暗号レベルを設定します。256ビットまで拡張できます。AES256暗号化の設定については、[次の文書](aes-256-encryption)を参照してください。
 
--   **encrypt_level** <span class='type'>encrypt_level [1, 2, 3]</span>
+- **encrypt_level** <span class='type'>encrypt_level [1, 2, 3]</span>
 
-    デフォルト値`2`
+  デフォルト値`2`
 
-    WhaTapエージェントは、サーバーにデータを送信する際、データ属性に基づいて選択的に暗号化します。高いセキュリティを維持しながらも、パフォーマンス上の利点を持っています。データ タイプに関係なく、一括した暗号化ポリシーを適用するには、次のオプションを参照してください。
+  WhaTapエージェントは、サーバーにデータを送信する際、データ属性に基づいて選択的に暗号化します。高いセキュリティを維持しながらも、パフォーマンス上の利点を持っています。データ タイプに関係なく、一括した暗号化ポリシーを適用するには、次のオプションを参照してください。
 
-    -   `1`：暗号化送信機能を無効
-    -   `2`：SQLパラメータ、Plain Textなどの機密属性の暗号化された転送
-    -   `3`：すべての項目の暗号化送信
+  - `1`：暗号化送信機能を無効
+  - `2`：SQLパラメータ、Plain Textなどの機密属性の暗号化された転送
+  - `3`：すべての項目の暗号化送信
 
--   **stat_ip_enabled** <span class='type'>Boolean</span>
+- **stat_ip_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で、**_統計/レポート_** > **_統計_** > **_クライアントIP_**項目のIP統計の使用を有効にします。
+  [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で、**_統計/レポート_** > **_統計_** > **_クライアントIP_**項目のIP統計の使用を有効にします。
 
--   **realtime_user_enabled** <span class='type'>Boolean</span>
+- **realtime_user_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    [WhaTapモニタリングサービス](https://service.whatap.io)の**_ダッシュボード_** > **_アプリケーションダッシュボード_**メニューで確認できる指標のうち、**_同時接続ユーザー_**指標を収集するかどうかを設定します。
+  [WhaTapモニタリングサービス](https://service.whatap.io)の**_ダッシュボード_** > **_アプリケーションダッシュボード_**メニューで確認できる指標のうち、**_同時接続ユーザー_**指標を収集するかどうかを設定します。
 
--   **hook_direct_patch_classes** <span class='type'>ClassFile_FullPath</span>
+- **hook_direct_patch_classes** <span class='type'>ClassFile_FullPath</span>
 
-      特定のクラスをロードタイムに置き換えるときに直接使用します。クラスをコンパイルしてから別のファイルを作成し、そのファイルの完全パスを設定します。
+    特定のクラスをロードタイムに置き換えるときに直接使用します。クラスをコンパイルしてから別のファイルを作成し、そのファイルの完全パスを設定します。
 
--   **active_stack_second** <span class='type'>Seconds</span>
+- **active_stack_second** <span class='type'>Seconds</span>
 
-    デフォルト値`10`
+  デフォルト値`10`
 
-    アクティブスタックを追跡する間隔を設定します。
+  アクティブスタックを追跡する間隔を設定します。
 
-    :::caution
+  :::caution
 
-    指定されたデフォルト値を変更しないことをお勧めします。
+  指定されたデフォルト値を変更しないことをお勧めします。
 
-    :::
+  :::
 
--   **boot_redefine_size** <span class='type'>Int</span>
+- **boot_redefine_size** <span class='type'>Int</span>
 
-    デフォルト値`100`
+  デフォルト値`100`
 
-    エージェントをAttach方式またはWatcher方式でインストールされている場合、すでにロードされているクラスの追跡のためにBCIを新たに実行します。このとき、同時にredefineするクラスの数を設定します。
+  エージェントをAttach方式またはWatcher方式でインストールされている場合、すでにロードされているクラスの追跡のためにBCIを新たに実行します。このとき、同時にredefineするクラスの数を設定します。
 
--   **trace_component_enabled** <span class='type'>Boolean</span>
+- **trace_component_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で**_アプリケーション_** > **_インスタンスパフォーマンス分析_**メニューで**_ライブラリバージョン_**機能をアクティブにします。
+  [WhaTapモニタリングサービス](https://service.whatap.io)の**_プロジェクトメニュー_**で**_アプリケーション_** > **_インスタンスパフォーマンス分析_**メニューで**_ライブラリバージョン_**機能をアクティブにします。
 
--   **realtime_user_thinktime_max** / **wclient_thinktime_max** <span class='type'>MiliSeconds</span>
+- **realtime_user_thinktime_max** / **wclient_thinktime_max** <span class='type'>MiliSeconds</span>
 
-    デフォルト値`300000`
+  デフォルト値`300000`
 
-    リアルタイムにブラウザのユーザー数を測定する場合、同じユーザーとして認識される呼び出し間隔の最大値を設定します。
+  リアルタイムにブラウザのユーザー数を測定する場合、同じユーザーとして認識される呼び出し間隔の最大値を設定します。
 
-    :::note
+  :::note
 
-    Javaエージェント 2.2.0 バージョン以降の場合は、 `wclient_thinktime_max` オプションを使用します。
+  Javaエージェント 2.2.0 バージョン以降の場合は、 `wclient_thinktime_max` オプションを使用します。
 
-    :::
+  :::
 
--   **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
+- **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
 
-    デフォルト値`300000`
+  デフォルト値`300000`
 
-    エージェントとサーバー間を同期する時間間隔を設定します。同期しない場合は、`0`に設定します。
+  エージェントとサーバー間を同期する時間間隔を設定します。同期しない場合は、`0`に設定します。
 
--   **detect_deadlock_enabled** <span class='type'>Boolean</span>
+- **detect_deadlock_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Javaスレッドがデッドロック(DeadLock)しているかどうかをチェックして検知する場合、イベントを発生させます。発生間隔は5秒単位です。同じDeadLockに対するイベントは1時間に1回だけ発生します。
+  Javaスレッドがデッドロック(DeadLock)しているかどうかをチェックして検知する場合、イベントを発生させます。発生間隔は5秒単位です。同じDeadLockに対するイベントは1時間に1回だけ発生します。
 
--   **text_reset** <span class='type'>Int</span>
+- **text_reset** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    WhaTapエージェントは、送信されるテキストタイプのデータをhash処理するため、翌日まで再送信されません。以前の設定値と異なる値を入力する場合は、再度送信します。
+  WhaTapエージェントは、送信されるテキストタイプのデータをhash処理するため、翌日まで再送信されません。以前の設定値と異なる値を入力する場合は、再度送信します。
 
-    :::note
+  :::note
 
-    トランザクションURL、SQL Stringなどがテキストタイプデータに対応します。
+  トランザクションURL、SQL Stringなどがテキストタイプデータに対応します。
 
-    :::
+  :::

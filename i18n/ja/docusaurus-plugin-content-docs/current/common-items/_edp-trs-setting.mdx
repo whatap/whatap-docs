@@ -1,10 +1,10 @@
-1.  トランザクションの開始点を次のように設定します。 
+1. トランザクションの開始点を次のように設定します。 
 
-    ```ini title="whatap.conf"
-    hook_service_patterns=com.virtual.web.SimulaNonHttp.process
-    ```
+   ```ini title="whatap.conf"
+   hook_service_patterns=com.virtual.web.SimulaNonHttp.process
+   ```
 
-2.  アプリケーションを再起動してください。 
+2. アプリケーションを再起動してください。 
 
 `process()`メソッドは、新しいトランザクションの**エンドポイント**になります。
 
