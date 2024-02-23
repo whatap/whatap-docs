@@ -16,8 +16,8 @@ Agent download: http://repo.whatap.io/docker/kube_mon_1.2.1.tar
 
 :::
 
--   <Status>Change</Status> Deleted the column due to the non-support of horizontal pod autoscaling (HPA) metric collection in higher versions of the K8S SDK.
+- <Status>Change</Status> Deleted the column due to the non-support of horizontal pod autoscaling (HPA) metric collection in higher versions of the K8S SDK.
 
--   <Status>Change</Status> Only in POD phase ‘<b>Running</b>’, changed to collect <b>TotalRequestCpu</b>, <b>TotalLimitCpu</b>, <b>TotalRequestCpu</b>, and <b>TotalRequestMemory</b> of <b>kube_stat</b>.
+- <Status>Change</Status> Only in POD phase ‘<b>Running</b>’, changed to collect <b>TotalRequestCpu</b>, <b>TotalLimitCpu</b>, <b>TotalRequestCpu</b>, and <b>TotalRequestMemory</b> of <b>kube_stat</b>.
 
--   <Status>Fix</Status> Upgraded the low version SDK to the version 13, which is the cause of role search failure after K8S Server API 1.23.
+- <Status>Fix</Status> Upgraded the low version SDK to the version 13, which is the cause of role search failure after K8S Server API 1.23.

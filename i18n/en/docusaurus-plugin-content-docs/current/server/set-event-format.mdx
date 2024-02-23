@@ -13,9 +13,9 @@ tags:
 
 In case of server monitoring, the alert template differs exceptionally.
 
--   Product Type: Server
--   Event Type: Server alert, Process alert, Log file/Windows event notification
--   Event Channel : SMS, Mobile, 3rd party plugin , Plugin
+- Product Type: Server
+- Event Type: Server alert, Process alert, Log file/Windows event notification
+- Event Channel : SMS, Mobile, 3rd party plugin , Plugin
 
 ### Event Title
 
@@ -111,8 +111,8 @@ The server alert provides only the event message with no event title.
 
 | Event Type              | Event Level         | Event Message                             | Event Off Message                        |
 | ----------------------- | ------------------- | ----------------------------------------- | ---------------------------------------- |
-| Process count alert     | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count < ${value}" |
-| Process count critical  | Warning or Critical | Process ${processName} Count < ${value}" | "Process ${groupName} Count >= ${value}" |
+| Process count alert     | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count \< ${value}" |
+| Process count critical  | Warning or Critical | Process ${processName} Count \< ${value}" | "Process ${groupName} Count >= ${value}" |
 | Process CPU             | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
 | Process Memory          | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
 

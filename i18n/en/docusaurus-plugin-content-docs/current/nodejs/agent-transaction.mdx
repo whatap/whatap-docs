@@ -15,83 +15,83 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_transaction-profiling-common.mdx}
 
--   **profile_error_step_enabled** <span class='type'>Boolean</span>
+- **profile_error_step_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    You can add a step to display error information in the profile.
+  You can add a step to display error information in the profile.
 
 {@include: ../common-items/_transaction-profile-active-color.mdx}
 
--   **hook_method_patterns** <span class='type'>String</span>
+- **hook_method_patterns** <span class='type'>String</span>
 
-    It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
+  It sets the method to measure the response time. Class full names and methods are separated by the period (.) as the delimiter, and asterisk (\*) can be used as the wildcard. In case of multiple items, comma (,) is used as the delimiter.
 
-    ```ini title='Example'
-    hook_method_patterns=a.b.C1.*
-    ```
+  ```ini title='Example'
+  hook_method_patterns=a.b.C1.*
+  ```
 
--   **hook_method_access_public_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the public methods as separate targets.
 
--   **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the protected methods as separate targets.
 
--   **hook_method_access_private_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the private methods as separate targets.
 
--   **hook_method_access_none_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
+  When setting a method trace, it sets whether or not to treat only the no access indicated methods as separate targets.
 
--   **hook_method_ignore_prefixes** <span class='type'>String</span>
+- **hook_method_ignore_prefixes** <span class='type'>String</span>
 
-    Default `get,set`
+  Default `get,set`
 
-    When setting a method trace, it sets the classes to exclude from the trace with a prefix.
+  When setting a method trace, it sets the classes to exclude from the trace with a prefix.
 
--   **hook_method_ignore_classes** <span class='type'>String</span>
+- **hook_method_ignore_classes** <span class='type'>String</span>
 
-    When setting a method trace, it sets the classes to exclude from the trace.
+  When setting a method trace, it sets the classes to exclude from the trace.
 
--   **trace_service_port_enabled** <span class='type'>Boolean</span>
+- **trace_service_port_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Add the port number to the transaction name.
+  Add the port number to the transaction name.
 
--   **httpc_status_ignore** <span class='type'>String</span>
+- **httpc_status_ignore** <span class='type'>String</span>
 
-    Default `Empty`
+  Default `Empty`
 
-    If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
+  If the HTTP status code is an error (`HTTPC_ERROR`), it can be ignored. When listing multiple values, use comma (,) as the delimiter.
 
-    ```ini title='whatap.conf'
-    httpc_status_ignore=404,500
-    ```
+  ```ini title='whatap.conf'
+  httpc_status_ignore=404,500
+  ```
 
--   **httpc_status_ignore_set** <span class='type'>String</span>
+- **httpc_status_ignore_set** <span class='type'>String</span>
 
-    Default `Empty`
+  Default `Empty`
 
-    `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
+  `whatap.error.HTTPC_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 
-    :::note
+  :::note
 
-    Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
+  Set it as `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`. In Statistics/Error Analysis, enter the value for `HTTPC_URL`.
 
-    :::
+  :::
 
 ### HTTP transaction tracing
 
@@ -99,111 +99,114 @@ The agent traces the transaction performance and provides the following configur
 
 {@include: ../common-items/_transaction-profile-http.mdx} 
 
--   **trace_ignore_url_set** <span class='type'>String</span>
+- **trace_ignore_url_set** <span class='type'>String</span>
 
-    It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+  It sets URLs to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
--   **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span>
 
-    It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
+  It sets URL prefixes to exclude from transaction tracing. For multiple values, use comma (,) as the delimiter.
 
--   **ignore_http_method** <span class='type'>String</span>
+- **ignore_http_method** <span class='type'>String</span>
 
-    Default `PATCH,OPTIONS,HEAD,TRACE`
+  Default `PATCH,OPTIONS,HEAD,TRACE`
 
-    Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
+  Transactions requested by the specified HTTP method are not collected. To set multiple items, use comma (,) as the delimiter.
 
-    ```ini title="whatap.conf"
-    # example
-    ignore_http_method=OPTIONS,HEAD
-    ```
+  ```ini title="whatap.conf"
+  # e.g. tracing the transactions whose http_method is OPTIONS or HEAD
+  ignore_http_method=PATCH,TRACE
 
--   **status_ignore** <span class='type'>String</span>
+  # e.g. ignoring the transactions whose http_method is OPTIONS or HEAD
+  ignore_http_method=OPTIONS,HEAD
+  ```
 
-    Default `Empty`
+- **status_ignore** <span class='type'>String</span>
 
-    You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
+  Default `Empty`
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore=408,500
-    ```
+  You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
 
--   **status_ignore_set** <span class='type'>String</span>
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
 
-    Default `Empty`
+- **status_ignore_set** <span class='type'>String</span>
 
-    Among HTTP status return codes, you can set the codes to ignore on a URL basis.
+  Default `Empty`
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-    ```
+  Among HTTP status return codes, you can set the codes to ignore on a URL basis.
 
--   **transaction_status_error_enable** <span class='type'>Boolean</span>
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
 
-    Default `true`
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-    If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
+  Default `true`
+
+  If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
 ### Non-HTTP transaction tracing
 
--   **hook_service_patterns** <span class='type'>String</span>
+- **hook_service_patterns** <span class='type'>String</span>
 
-    It sets the starting point pattern for tracing NON-Http transactions. Wildcard characters cannot be used. To set multiple values, use comma (,) as the delimiter.
+  It sets the starting point pattern for tracing NON-Http transactions. Wildcard characters cannot be used. To set multiple values, use comma (,) as the delimiter.
 
--   **trace_background_socket_enabled** <span class='type'>Boolean</span>
+- **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
+  When a socket (TCP) connection is opened, this open is traced only in transaction start status. This tracing is made when the socket is opened by a background thread rather than a transaction.
 
 ### Multiple transaction trace
 
--   **mtrace_rate** <span class='type'>Int</span>
+- **mtrace_rate** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    This option sets the rate of the MTID (Multi Transaction ID) issued when the first transaction occurs. It can be set from `0` to `100`. By tracing the MTID, you can check calls between all registered applications. For the applications belonging to the same project, you can check transaction traces immediately through the Caller & Callee function.
+  This option sets the rate of the MTID (Multi Transaction ID) issued when the first transaction occurs. It can be set from `0` to `100`. By tracing the MTID, you can check calls between all registered applications. For the applications belonging to the same project, you can check transaction traces immediately through the Caller & Callee function.
 
--   **mtrace_spec** <span class='type'>String</span>
+- **mtrace_spec** <span class='type'>String</span>
 
-    Default: `v1`
+  Default: `v1`
 
-    Set the application version of the current instance. You can arbitrarily enter a string. This data is used for call statistics.
+  Set the application version of the current instance. You can arbitrarily enter a string. This data is used for call statistics.
 
--   **mtrace_caller_key** <span class='type'>String</span>
+- **mtrace_caller_key** <span class='type'>String</span>
 
-    Default `x-wtap-mst`
+  Default `x-wtap-mst`
 
-    Set the caller key name to be used for MTID tracing.
+  Set the caller key name to be used for MTID tracing.
 
--   **mtrace_callee_key** <span class='type'>String</span>
+- **mtrace_callee_key** <span class='type'>String</span>
 
-    Default `x-wtap-tx`
+  Default `x-wtap-tx`
 
-    Set the callee key name to be used for MTID tracing.
+  Set the callee key name to be used for MTID tracing.
 
--   **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
+- **mtrace_callee_id_recv_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    Upon MTID tracing, the received callee ID is represented in the trace.
+  Upon MTID tracing, the received callee ID is represented in the trace.
 
--   **mtrace_alltx_enabled** <span class='type'>Boolean</span>
+- **mtrace_alltx_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    MTIDs of all transactions can be traced to link with the logging system like log4j.
+  MTIDs of all transactions can be traced to link with the logging system like log4j.
 
--   **mtrace_basetime** <span class='type'>Miliseconds</span>
+- **mtrace_basetime** <span class='type'>Miliseconds</span>
 
-    Default `100`
+  Default `100`
 
-    If the value of `mtrace_alltx_enabled` is `true`, it may leave too many logs. In this case, it needs to reduce the amount of trace logging.
+  If the value of `mtrace_alltx_enabled` is `true`, it may leave too many logs. In this case, it needs to reduce the amount of trace logging.
 
--   **stat_mtrace_enabled** <span class='type'>Boolean</span>
+- **stat_mtrace_enabled** <span class='type'>Boolean</span>
 
-    Default `false`
+  Default `false`
 
-    It collects correlation statistics between callers and callees. When applied to a caller, the caller details are sent. When applied to a callee, the caller-callee call statistics are sent to the collection server in URL units.
+  It collects correlation statistics between callers and callees. When applied to a caller, the caller details are sent. When applied to a callee, the caller-callee call statistics are sent to the collection server in URL units.

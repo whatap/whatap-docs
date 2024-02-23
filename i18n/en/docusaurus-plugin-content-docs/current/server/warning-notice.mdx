@@ -14,35 +14,35 @@ You can create, modify, and delete event policies such as **_Server_**, **_Proce
 
 <ImgLang img='server-warning.png' desc='Server Event setting'/>
 
--   ![Leader line 1](/img/number-01.png) **_+ Add Alert settings_**
+- ![Leader line 1](/img/number-01.png) **_+ Add Alert settings_**
 
-    You can add the event.
+  You can add the event.
 
--   ![Leader line 2](/img/number-02.png) **_Name_**
+- ![Leader line 2](/img/number-02.png) **_Name_**
 
-    Displays the event name.
+  Displays the event name.
 
--   ![Leader line 3](/img/number-03.png) **_Condition_**
+- ![Leader line 3](/img/number-03.png) **_Condition_**
 
-    Displays the event condition.
+  Displays the event condition.
 
--   ![Leader line 4](/img/number-04.png) **_Server_**
+- ![Leader line 4](/img/number-04.png) **_Server_**
 
-    Displays the server on which the event has been set.    
+  Displays the server on which the event has been set.    
 
--   ![Leader line 5](/img/number-05.png) **_Edit_** and **_Copy_**
+- ![Leader line 5](/img/number-05.png) **_Edit_** and **_Copy_**
 
-    -   By selecting ![Edit icon](/img/ico-edit.svg), you can **_modify_** the saved event settings. 
+  - By selecting ![Edit icon](/img/ico-edit.svg), you can **_modify_** the saved event settings. 
 
-    -   By selecting ![Copy icon](/img/ico-copy.svg), you can **_copy_** the event to other infrastructure.
+  - By selecting ![Copy icon](/img/ico-copy.svg), you can **_copy_** the event to other infrastructure.
 
 :::note
 
--   For more information about addition of **_metrics_** events, see [the following](metric-warning-notice).
+- For more information about addition of **_metrics_** events, see [the following](metric-warning-notice).
 
--   For addition of **_Anomaly Detection_** events, see [the following](set-event-detect-anomal).
+- For addition of **_Anomaly Detection_** events, see [the following](set-event-detect-anomal).
 
--   For addition of **_log_** events, see [the following](set-event-log).
+- For addition of **_log_** events, see [the following](set-event-log).
 
 :::
 
@@ -54,41 +54,41 @@ You can set overall events for a specific server.
 
 <ImgLang img='server-server-event.png' desc='Adding a server event'/>
 
-1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+2. Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
 
-3.  In the ![number3](/img/number-03.png) **_Event rule condition_** tab, set the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
+3. In the ![number3](/img/number-03.png) **_Event rule condition_** tab, set the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
 
-    -   **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
+   - **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
 
-    -   **_Duration_**: After the set **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
+   - **_Duration_**: After the set **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
 
-    For guide to **_metrics_**, see the following. 
+   For guide to **_metrics_**, see the following. 
 
-    -   **_Restart_**: This event occurs when the server restarts.
+   - **_Restart_**: This event occurs when the server restarts.
 
-    -   **_Not received_**: This is a communication failure event that occurs when normal data is not received from the agent for the **_duration_**.
+   - **_Not received_**: This is a communication failure event that occurs when normal data is not received from the agent for the **_duration_**.
 
-    -   **_Port_**: Port access unavailable event. Registered agents in the project check each other's status through **10120 port**. This event occurs when communication fails for the **_duration_**.  
+   - **_Port_**: Port access unavailable event. Registered agents in the project check each other's status through **10120 port**. This event occurs when communication fails for the **_duration_**.  
 
-    -   **_CPU, Memory, Swap_**: Set the usage events such as CPU, memory, and SWAP memory. 
+   - **_CPU, Memory, Swap_**: Set the usage events such as CPU, memory, and SWAP memory. 
 
-    -   **_Steal_**: Set the event for CPU steal time. Only Linux-based OS can be set. 
+   - **_Steal_**: Set the event for CPU steal time. Only Linux-based OS can be set. 
 
-    -   **_Disk_**: Set the events based on the disk usage, I/O usage, and Inode usage.
+   - **_Disk_**: Set the events based on the disk usage, I/O usage, and Inode usage.
 
-    -   **_Network_**: Set the network usage-related event. It can be set based on the traffic and packets per second. 
+   - **_Network_**: Set the network usage-related event. It can be set based on the traffic and packets per second. 
 
-4.  Set the ![number 4](/img/number-04.png) <Cmdname sid="event_tag" className="uitext" />. 
+4. Set the ![number 4](/img/number-04.png) <Cmdname sid="event_tag" className="uitext" />. 
 
-    -   If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members. 
+   - If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members. 
 
-    -   Click <span class="uitext">+</span> <Cmdname sid="add_tag" className="uitext" /> and then select target alert receivers in <Cmdname sid="event_tag_list" className="uitext" />. You can also select <span class="uitext">+</span> <Cmdname sid="create_new_eventtag" className="uitext" /> to add new tags.
+   - Click <span class="uitext">+</span> <Cmdname sid="add_tag" className="uitext" /> and then select target alert receivers in <Cmdname sid="event_tag_list" className="uitext" />. You can also select <span class="uitext">+</span> <Cmdname sid="create_new_eventtag" className="uitext" /> to add new tags.
 
-    -   In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information about <Cmdname sid="event_receive_configuration" className="uitext" />, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
+   - In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information about <Cmdname sid="event_receive_configuration" className="uitext" />, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
 
-5.  If you finished the event configuration, select ![number5](/img/number-05.png) **_Save_**.
+5. If you finished the event configuration, select ![number5](/img/number-05.png) **_Save_**.
 
 :::caution
 
@@ -103,52 +103,52 @@ WhaTap server monitoring service provides the following basic event settings aft
 
 ![Server Default Alarm sc](/img/server-default-notice-setting.png)
 
--   **_Restart_**: Enable
+- **_Restart_**: Enable
 
--   **_Network IOPS_**
+- **_Network IOPS_**
 
-    -   <span class='slow'>Warning</span>: 45,000 pps/duration: 5 minutes
-    -   <span class='vslow'>Fatal</span>: 50,000 pps/duration: 5 minutes
+  - <span class='slow'>Warning</span>: 45,000 pps/duration: 5 minutes
+  - <span class='vslow'>Fatal</span>: 50,000 pps/duration: 5 minutes
 
--   **_Network BPS_**
+- **_Network BPS_**
 
-    -   <span class='slow'>Warning</span>: 5000,000 bps/duration: 5 minutes
-    -   <span class='vslow'>Fatal</span>: 7000,000 bps/duration: 5 minutes
+  - <span class='slow'>Warning</span>: 5000,000 bps/duration: 5 minutes
+  - <span class='vslow'>Fatal</span>: 7000,000 bps/duration: 5 minutes
 
--   **_Disk I/O_**
+- **_Disk I/O_**
 
-    -   <span class='slow'>Warning</span>: 90%/duration: 5 minutes
-    -   <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
+  - <span class='slow'>Warning</span>: 90%/duration: 5 minutes
+  - <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
 
--   **_Disk Usage_**
+- **_Disk Usage_**
 
-    -   <span class='slow'>Warning</span>: 90%/duration: 5 minutes
-    -   <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
+  - <span class='slow'>Warning</span>: 90%/duration: 5 minutes
+  - <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
 
--   **_inode_**
+- **_inode_**
 
-    -   <span class='slow'>Warning</span>: 90%/duration: 5 minutes
-    -   <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
+  - <span class='slow'>Warning</span>: 90%/duration: 5 minutes
+  - <span class='vslow'>Fatal</span>: 95%/duration: 5 minutes
 
--   **_CPU_**
+- **_CPU_**
 
-    -   <span class='slow'>Warning</span>: 70%/duration: 1 minute
-    -   <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
+  - <span class='slow'>Warning</span>: 70%/duration: 1 minute
+  - <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
 
--   **_Memory_**
+- **_Memory_**
 
-    -   <span class='slow'>Warning</span>: 70%/duration: 1 minute
-    -   <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
+  - <span class='slow'>Warning</span>: 70%/duration: 1 minute
+  - <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
 
--   **_steal_**
+- **_steal_**
 
-    -   <span class='slow'>Warning</span>: 5%/duration: 1 minute
-    -   <span class='vslow'>Fatal</span>: 10%/duration: 1 minutes
+  - <span class='slow'>Warning</span>: 5%/duration: 1 minute
+  - <span class='vslow'>Fatal</span>: 10%/duration: 1 minutes
 
--   **_Swap_**
+- **_Swap_**
 
-    -   <span class='slow'>Warning</span>: 50%/duration: 1 minute
-    -   <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
+  - <span class='slow'>Warning</span>: 50%/duration: 1 minute
+  - <span class='vslow'>Fatal</span>: 90%/duration: 1 minutes
 
 </details>
 
@@ -160,55 +160,55 @@ You can set the event policy for a specific process.
 
 <ImgLang img='server-process-event.png' desc='Event Alert settings - Process'/>
 
-1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  In the ![number2](/img/number-02.png) **_Event rule condition_** tab, click **_No agent selected_** under the **_server list_** and then select a server from the **_server list_** window. 
+2. In the ![number2](/img/number-02.png) **_Event rule condition_** tab, click **_No agent selected_** under the **_server list_** and then select a server from the **_server list_** window. 
 
-    :::note
+   :::note
 
-    When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
+   When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
 
-    :::
+   :::
 
-3.  In the **_process_** selection window, select a process or process group. 
+3. In the **_process_** selection window, select a process or process group. 
 
-    :::note
+   :::note
 
-    For more information about addition of a process group, see [the following](server-detail-process-group.mdx).
+   For more information about addition of a process group, see [the following](server-detail-process-group.mdx).
 
-    :::
+   :::
 
-4.  Select a **_process owner_**. 
+4. Select a **_process owner_**. 
 
-    -   If no **_process owner_** has been assigned, the settings are applied to all processes with the same name regardless of the owner.
-    -   Event conditions work on the owner-process unit basis, even if the **_process owner_** is omitted.
+   - If no **_process owner_** has been assigned, the settings are applied to all processes with the same name regardless of the owner.
+   - Event conditions work on the owner-process unit basis, even if the **_process owner_** is omitted.
 
-5.  Set the **_level_**, **_duration_**, and **_Enable_** for the desired **_metric_**.
+5. Set the **_level_**, **_duration_**, and **_Enable_** for the desired **_metric_**.
 
-    -   **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
+   - **_Level_**: You can select a level of <span class='slow'>Warning</span> and <span class='vslow'>Fatal</span>.
 
-    -   **_Duration_**: After the threshold's **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
+   - **_Duration_**: After the threshold's **_duration_**, the server status is set to <span class='slow'>Warning</span> or <span class='vslow'>Fatal</span>.
 
-    For guide to **_metrics_**, see the following. 
+   For guide to **_metrics_**, see the following. 
 
-    -   **_Process Count_**: You can set an event for the number of processes with the same name. Set the number of **_Danger_** and **_Warning_** conditions.
-    -   **_Process CPU_**: You can set the events depending on the CPU usage.
-    -   **_Process Memory_**: You can set the events depending on the memory usage.
+   - **_Process Count_**: You can set an event for the number of processes with the same name. Set the number of **_Danger_** and **_Warning_** conditions.
+   - **_Process CPU_**: You can set the events depending on the CPU usage.
+   - **_Process Memory_**: You can set the events depending on the memory usage.
 
-6.  Set the ![number 3](/img/number-03.png) <Cmdname sid="event_tag" className="uitext" />. 
+6. Set the ![number 3](/img/number-03.png) <Cmdname sid="event_tag" className="uitext" />. 
 
-    -   If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members. 
+   - If this tag is selected, notifications can be sent to project members and 3rd-party plug-ins with the corresponding tags. If the event receiving tag is not selected, alerts are sent to all project members. 
 
-    -   Click <span class="uitext">+</span> <Cmdname sid="add_tag" className="uitext" /> and then select target alert receivers in <Cmdname sid="event_tag_list" className="uitext" />. You can also select <span class="uitext">+</span> <Cmdname sid="create_new_eventtag" className="uitext" /> to add new tags.
+   - Click <span class="uitext">+</span> <Cmdname sid="add_tag" className="uitext" /> and then select target alert receivers in <Cmdname sid="event_tag_list" className="uitext" />. You can also select <span class="uitext">+</span> <Cmdname sid="create_new_eventtag" className="uitext" /> to add new tags.
 
-    -   In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information about <Cmdname sid="event_receive_configuration" className="uitext" />, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
+   - In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />, you can set the tags in project members and 3rd-party plug-ins. For more information about <Cmdname sid="event_receive_configuration" className="uitext" />, see <Link to="set-receive-event#set-notice-by-team-or-users">the following</Link>.
 
-7.  If you finished the event configuration, select ![number4](/img/number-04.png) **_Save_**.
+7. If you finished the event configuration, select ![number4](/img/number-04.png) **_Save_**.
 
 :::note
 
--   If you set the process alert **_conditions_** incorrectly, disable it or set the alert **_conditions_** again.
--   If you have incorrectly set the **_process_** and **_process owner_**, disable these alerts to cancel activation, and then set the alert **_conditions_** again.
+- If you set the process alert **_conditions_** incorrectly, disable it or set the alert **_conditions_** again.
+- If you have incorrectly set the **_process_** and **_process owner_**, disable these alerts to cancel activation, and then set the alert **_conditions_** again.
 
 :::
 
@@ -224,31 +224,31 @@ To add a **_log file_** event, set the **_event rules_** seeing the following.
 
 <ImgLang img='server-log-file.png' desc='Adding log file event'/>
 
-1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+2. Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
 
-    :::note
+   :::note
 
-    When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
+   When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
 
-    :::
+   :::
 
-3.  ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Log File_** in **_Log Type_**.
+3. ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Log File_** in **_Log Type_**.
 
-4.  See the example and then enter the **_file path_** following a regular expression rule. 
+4. See the example and then enter the **_file path_** following a regular expression rule. 
 
-    > e.g. _/var/log/mylogfile_%Y-%m-%d_%H:%M:%S.log_
+   > e.g. _/var/log/mylogfile_%Y-%m-%d_%H:%M:%S.log_
 
-5.  Enter the **_search keyword_** to trigger events. Multiple items can be specified.
+5. Enter the **_search keyword_** to trigger events. Multiple items can be specified.
 
-6.  Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
+6. Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
 
-7.  Enter the **_repetitions_** and **_duration_** for alerts how many seconds and how many times when detecting the specified **_keyword_**. 
+7. Enter the **_repetitions_** and **_duration_** for alerts how many seconds and how many times when detecting the specified **_keyword_**. 
 
-8.  Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
+8. Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
 
-9.  Select ![number4](/img/number-04.png) **_Save_**.
+9. Select ![number4](/img/number-04.png) **_Save_**.
 
 ### Window Event{#windows-event}
 
@@ -256,85 +256,85 @@ To add an **_Windows event_**, set the **_event rule conditions_** seeing the fo
 
 <ImgLang img='server-log-windows.png' desc='Adding Windows events'/>
 
-1.  If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
+1. If the **_Add Alert settings_** window appears, enter the ![number1](/img/number-01.png) event **_title_**.
 
-2.  Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
+2. Check the ![number2](/img/number-02.png) **_server list_** or select a desired server for monitoring through the search bar. 
 
-    :::note
+   :::note
 
-    When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
+   When enabling the **_Project Default Policy_** option ![Icon](/img/ic-toggle-on.svg), apply the default alert policy to the project administration server.
 
-    :::
+   :::
 
-3.  ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Window Event_** in **_Log Type_**.
+3. ![number 3](/img/number-03.png) In the **_Event rule condition_** tab, select **_Window Event_** in **_Log Type_**.
 
-4.  Select **_Log Name_** by referencing the following example.
+4. Select **_Log Name_** by referencing the following example.
 
-    <ImgLang img='server-log-windows-a-01.png' desc='Log name'/>
+   <ImgLang img='server-log-windows-a-01.png' desc='Log name'/>
 
-5.  Noting the following example, set the values for **_Level_**, **_Event Source_**, **_Event ID_**, and **_Keyword_**. For the **_search keyword_**, multiple items can be specified.
+5. Noting the following example, set the values for **_Level_**, **_Event Source_**, **_Event ID_**, and **_Keyword_**. For the **_search keyword_**, multiple items can be specified.
 
-    <ImgLang img='server-log-windows-a-02.png' desc='Level, event source, etc'/>
+   <ImgLang img='server-log-windows-a-02.png' desc='Level, event source, etc'/>
 
-6.  Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
+6. Enter the **_exclusion keywords_** to be excluded from alerts. Multiple items can be specified.
 
-7.  Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
+7. Select an event **_severity_**. You can set the level of <span class='vslow'>Fatal</span> or <span class='slow'>Warning</span>.
 
-8.  Select ![number4](/img/number-04.png) **_Save_**.
+8. Select ![number4](/img/number-04.png) **_Save_**.
 
 #### Log File Throughput
 
 The file log throughput is set as follows based on the log lines. This is to prevent excessive CPU use of the WhaTap server monitoring agent when too many logs occur. Excessive amount is not processed.
 
--   Version 1.3.6 or earlier: Exceeding 60 lines per 2 seconds are processed. 
--   Version 1.3.7 or later: Exceeding 1000 lines per 2 seconds are processed. 
+- Version 1.3.6 or earlier: Exceeding 60 lines per 2 seconds are processed. 
+- Version 1.3.7 or later: Exceeding 1000 lines per 2 seconds are processed. 
 
 You can adjust the excess per 2 seconds with the following option.
 
--   **Linux**
+- **Linux**
 
-    > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _/usr/whatap/infra/conf/whatap.conf_ file
+  > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _/usr/whatap/infra/conf/whatap.conf_ file
 
--   **Windows**
+- **Windows**
 
-    > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _C:\\Program Files\\WhatapInfra\\whatap.conf_ file
+  > `log.skip.threshold=number of lines that can be processed per 2 seconds` in the _C:\\Program Files\\WhatapInfra\\whatap.conf_ file
 
 ## Modifying an event{#event-edit}
 
-1.  On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
+1. On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
 
-2.  In the **_Event rule condition_** tab, modify the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
+2. In the **_Event rule condition_** tab, modify the **_condition_**, **_level_**, **_duration_**, and **_Enable_** of the desired **_metric_**.
 
-3.  After modification, select **_Save_**.
+3. After modification, select **_Save_**.
 
 :::note
 
--   If there is any modification for a specific metric, all active alerts for the metric are <span class='vslow'>disabled</span>.
--   After modification, a new alert is triggered when any data for the set conditions is received.
--   If any process alert data of **_title_**, **_process_**, and **_process owner_** has been modified, all alerts for the condition are <span class='vslow'>disabled</span>.
+- If there is any modification for a specific metric, all active alerts for the metric are <span class='vslow'>disabled</span>.
+- After modification, a new alert is triggered when any data for the set conditions is received.
+- If any process alert data of **_title_**, **_process_**, and **_process owner_** has been modified, all alerts for the condition are <span class='vslow'>disabled</span>.
 
 :::
 
 ## Deleting an event{#event-delete}
 
-1.  On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
+1. On the right of the event list, select ![Edit icon](/img/ico-edit.svg)**_Edit_**. 
 
-2.  On the upper right of the modification screen, select ![Delete icon](/img/ic-delete-critical.svg)**_Delete_**.
+2. On the upper right of the modification screen, select ![Delete icon](/img/ic-delete-critical.svg)**_Delete_**.
 
 ## Copying an event{#event-copy}
 
-1.  On the right of the event list, select ![Copy icon](/img/ico-copy.svg)**_Copy_**.
+1. On the right of the event list, select ![Copy icon](/img/ico-copy.svg)**_Copy_**.
 
-2.  If the **_Copying event settings_** window appears, select a desired project or **_Copy to current project_**.
+2. If the **_Copying event settings_** window appears, select a desired project or **_Copy to current project_**.
 
-3.  If a project to copy the event settings to has been set, select **_Copy_**.
+3. If a project to copy the event settings to has been set, select **_Copy_**.
 
 :::note
 
--   When duplicate events are copied within the same project, as many events as the number of copies are created.
+- When duplicate events are copied within the same project, as many events as the number of copies are created.
 
--   The copied event name is added with the suffix **_(copy)_**. 
-    > e.g. Previous event name **_Default_** → Copied event name **_Default(copy)_**
+- The copied event name is added with the suffix **_(copy)_**. 
+  > e.g. Previous event name **_Default_** → Copied event name **_Default(copy)_**
 
 :::
 

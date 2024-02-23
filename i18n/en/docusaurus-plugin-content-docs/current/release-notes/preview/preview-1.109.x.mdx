@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 
 :::note
 
-[In https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+In [https://preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
 
 :::
 
@@ -28,35 +28,35 @@ September 20, 2023
 
 ### `Application`
 
--   <Status>Feature</Status> The <UI>Application dashboard</UI> menu has been reorganized as follows:
+- <Status>Feature</Status> The <UI>Application dashboard</UI> menu has been reorganized as follows:
 
-    -   Added the time selector option and improved the function to view the past data.
+  - Added the time selector option and improved the function to view the past data.
 
-        |              Real-time mode              |
-        | :--------------------------------------: |
-        |    ![](/img/release/realtime-mode.png)   |
-        |          **Non-real-time mode**          |
-        | ![](/img/release/none-realtime-mode.png) |
+    |              Real-time mode              |
+    | :--------------------------------------: |
+    |    ![](/img/release/realtime-mode.png)   |
+    |          **Non-real-time mode**          |
+    | ![](/img/release/none-realtime-mode.png) |
 
-    -   Any widget can be added to the desired position or deleted. The widget can be adjusted to the desired size.
+  - Any widget can be added to the desired position or deleted. The widget can be adjusted to the desired size.
 
-        ![](/img/release/apm-dashboad-editable-widget.png)
+    ![](/img/release/apm-dashboad-editable-widget.png)
 
-    -   The preset function has been added that allows saving and loading the positions, sizes, and layouts of the edited widgets.
+  - The preset function has been added that allows saving and loading the positions, sizes, and layouts of the edited widgets.
 
-        ![](/img/release/apm-dashboard-preset-feature.png)
+    ![](/img/release/apm-dashboard-preset-feature.png)
 
--   In the <UI>Trace analysis</UI> window on the dashboard, the following functions have been added and modified.
+- In the <UI>Trace analysis</UI> window on the dashboard, the following functions have been added and modified.
 
-    -   <Status>Feature</Status> Added the project filtering function in <UI>table</UI> view and <UI>tree</UI> view modes under the <UI>Multi-transaction</UI> tab.
+  - <Status>Feature</Status> Added the project filtering function in <UI>table</UI> view and <UI>tree</UI> view modes under the <UI>Multi-transaction</UI> tab.
 
-    -   <Status>Fixed</Status> In <UI>chart</UI> view mode under the <UI>Multi-transaction</UI> tab, fixed the bug where the mode is switched to the <UI>table</UI> view if the transaction node is clicked.
+  - <Status>Fixed</Status> In <UI>chart</UI> view mode under the <UI>Multi-transaction</UI> tab, fixed the bug where the mode is switched to the <UI>table</UI> view if the transaction node is clicked.
 
-    -   <Status>Feature</Status> Added the function to display appropriate messages if there is no data in the <UI>Transaction log</UI> tab.
+  - <Status>Feature</Status> Added the function to display appropriate messages if there is no data in the <UI>Transaction log</UI> tab.
 
-        -   In case there is no actual log data
-        -   In case logs cannot be collected without agent configuration
-        -   In case logs are disabled
+    - In case there is no actual log data
+    - In case logs cannot be collected without agent configuration
+    - In case logs are disabled
 
 * * *
 
@@ -82,41 +82,41 @@ September 19, 2023
 
 #### Common
 
--   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, modified the chart data interval.
+- <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, modified the chart data interval.
 
--   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, added the warning sign for replication status anomaly.
+- <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Instance list</UI>, added the warning sign for replication status anomaly.
 
--   <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI> of the <b>PostgreSQL</b> project, modified the chart to be drawn based on the DB log time.
+- <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Slow query</UI> of the <b>PostgreSQL</b> project, modified the chart to be drawn based on the DB log time.
 
--   <Status>Changed</Status> Modified to select the first row of the table if the tab menu is selected in <UI>STAT/REPORT</UI> > <UI>SQL statistics</UI>.
+- <Status>Changed</Status> Modified to select the first row of the table if the tab menu is selected in <UI>STAT/REPORT</UI> > <UI>SQL statistics</UI>.
 
--   <Status>Changed</Status> Modified the yard API parameters.
+- <Status>Changed</Status> Modified the yard API parameters.
 
-    -   Alert settings/View API
+  - Alert settings/View API
 
-    -   Kill session API
+  - Kill session API
 
 #### Database V2
 
--   <Status>Changed</Status> In <UI>Multiple instance monitoring</UI>, modified the query list alignment and adjusted the table width.
+- <Status>Changed</Status> In <UI>Multiple instance monitoring</UI>, modified the query list alignment and adjusted the table width.
 
--   <Status>Feature</Status> In <UI>Instance monitoring</UI>, applied the LazyLoad property to the metrics selection screen.
+- <Status>Feature</Status> In <UI>Instance monitoring</UI>, applied the LazyLoad property to the metrics selection screen.
 
--   <Status>Feature</Status> Added the following menus in the <b>PostgreSQL</b> project.
+- <Status>Feature</Status> Added the following menus in the <b>PostgreSQL</b> project.
 
-    -   <UI>Analysis</UI> > <UI>Session History</UI>
+  - <UI>Analysis</UI> > <UI>Session History</UI>
 
-    -   <UI>Analysis</UI> > <UI>Wait analysis</UI>
+  - <UI>Analysis</UI> > <UI>Wait analysis</UI>
 
--   <Status>Feature</Status> Added the <UI>STAT/REPORT</UI> > <UI>Mysql SQL Statistics</UI> menu in the <b>MySQL</b> project.
+- <Status>Feature</Status> Added the <UI>STAT/REPORT</UI> > <UI>Mysql SQL Statistics</UI> menu in the <b>MySQL</b> project.
 
 * * *
 
 ### `Container`
 
--   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the tabs for <UI>Remote Access Status</UI> and <UI>Call Flow</UI> under <b>Display Detail</b>.
+- <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the tabs for <UI>Remote Access Status</UI> and <UI>Call Flow</UI> under <b>Display Detail</b>.
 
--   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the data items in the container information inquiry table.
+- <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, added the data items in the container information inquiry table.
 
 * * *
 
@@ -152,12 +152,12 @@ September 18, 2023
 
 ### `Network`
 
--   <Status>Fixed</Status> Fixed the calculation errors for each metric displayed in the following menus:
+- <Status>Fixed</Status> Fixed the calculation errors for each metric displayed in the following menus:
 
-    -   **_Dashboard_** > **_Network Topology_**
-    -   **_Dashboard_** > **_Network Trend (TCP)_**
+  - **_Dashboard_** > **_Network Topology_**
+  - **_Dashboard_** > **_Network Trend (TCP)_**
 
--   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Network Topology</UI>, fixed the decimal notation for labels displayed on the topology chart.
+- <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Network Topology</UI>, fixed the decimal notation for labels displayed on the topology chart.
 
 </div>
 
@@ -189,13 +189,13 @@ September 13, 2023
 
 ### `Server`
 
--   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Resource board</UI> / <UI>CPU resource map</UI>, fixed the problem where the layout does not appear correctly on the Safari browser.
+- <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Resource board</UI> / <UI>CPU resource map</UI>, fixed the problem where the layout does not appear correctly on the Safari browser.
 
--   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, fixed to wrap the metric text to fit the width in <UI>Event rule condition</UI> under the <UI>Add Alert Policy</UI> window.
+- <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, fixed to wrap the metric text to fit the width in <UI>Event rule condition</UI> under the <UI>Add Alert Policy</UI> window.
 
--   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, deleted the <UI>Silent Install</UI> button among the Windows installation file options.
+- <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, deleted the <UI>Silent Install</UI> button among the Windows installation file options.
 
--   <Status>Fixed</Status> In <UI>Log</UI> > <UI>Log setting</UI>, modified the directory path of the Windows command code.
+- <Status>Fixed</Status> In <UI>Log</UI> > <UI>Log setting</UI>, modified the directory path of the Windows command code.
 
 * * *
 
@@ -213,11 +213,11 @@ September 12, 2023
 
 ### `Common`
 
--   <Status>Feature</Status> In <UI>Analysis</UI> > <UI>Metrics chart</UI>, added a button to close all active widgets.
+- <Status>Feature</Status> In <UI>Analysis</UI> > <UI>Metrics chart</UI>, added a button to close all active widgets.
 
--   <Status>Changed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, simplified the option list for user convenience.
+- <Status>Changed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI>, simplified the option list for user convenience.
 
-    In the list to the left of the <UI>Write options</UI> section, deleted the parent category of the applied option and modified to display the final options.
+  In the list to the left of the <UI>Write options</UI> section, deleted the parent category of the applied option and modified to display the final options.
 
 * * *
 
@@ -265,39 +265,39 @@ September 8, 2023
 
 ### `Common`
 
--   <Status>Feature</Status> Added the function to display the default interval value, if you select <UI>Default</UI> among the <UI>Interval</UI> selection options.
+- <Status>Feature</Status> Added the function to display the default interval value, if you select <UI>Default</UI> among the <UI>Interval</UI> selection options.
 
-    <div class='.release-compare'>
+  <div class='.release-compare'>
 
-    |                    Before                    |                    After                    |
-    | :------------------------------------------: | :-----------------------------------------: |
-    | ![](/img/release/interval-option-before.png) | ![](/img/release/interval-option-after.png) |
+  |                    Before                    |                    After                    |
+  | :------------------------------------------: | :-----------------------------------------: |
+  | ![](/img/release/interval-option-before.png) | ![](/img/release/interval-option-after.png) |
 
-    </div>
+  </div>
 
--   <Status>Changed</Status> Modified to select <UI>Default</UI> among the <UI>Interval</UI> selection options, when any <UI>time</UI> search section is changed.
+- <Status>Changed</Status> Modified to select <UI>Default</UI> among the <UI>Interval</UI> selection options, when any <UI>time</UI> search section is changed.
 
-    When changing the search section, the **_Interval_** option is selected as **_Default_** in the following cases:
+  When changing the search section, the **_Interval_** option is selected as **_Default_** in the following cases:
 
-    -   The previous selection in the **_Interval_** option is **_Default_**.
+  - The previous selection in the **_Interval_** option is **_Default_**.
 
-    -   The previous selection in the **_Interval_** option is not **_Default_** and it is not in the changed **_Interval_** option list.
+  - The previous selection in the **_Interval_** option is not **_Default_** and it is not in the changed **_Interval_** option list.
 
-    -   The previous selection in the **_Interval_** option is not **_Default_** and the selected **_Interval_** option value is less than half of the search period.
+  - The previous selection in the **_Interval_** option is not **_Default_** and the selected **_Interval_** option value is less than half of the search period.
 
--   <Status>Fixed</Status> Fixed the error where, in some situations, pressing <UI>OK</UI> in the <UI>Column settings</UI> pop-up displays an unknown error message and it does not work.
+- <Status>Fixed</Status> Fixed the error where, in some situations, pressing <UI>OK</UI> in the <UI>Column settings</UI> pop-up displays an unknown error message and it does not work.
 
--   <Status>Fixed</Status> In <UI>Manage account INFO.</UI>, fixed the error where the country code number is defaulted to blank when entering a phone number using WhatsApp.
+- <Status>Fixed</Status> In <UI>Manage account INFO.</UI>, fixed the error where the country code number is defaulted to blank when entering a phone number using WhatsApp.
 
--   <Status>Fixed</Status> In the card view screen for the <UI>Project list</UI> of the initial screen, fixed the bug where the <UI>application</UI> count appears as 0.
+- <Status>Fixed</Status> In the card view screen for the <UI>Project list</UI> of the initial screen, fixed the bug where the <UI>application</UI> count appears as 0.
 
 * * *
 
 ### `Application`
 
--   <Status>Changed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI> for the Java project, changed the category for the <code>biz_exceptions</code> and <code>ignore_exceptions</code> options from <UI>Alert option</UI> > <UI>HTTP outbound call</UI> to <UI>Exception</UI>.
+- <Status>Changed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI> for the Java project, changed the category for the <code>biz_exceptions</code> and <code>ignore_exceptions</code> options from <UI>Alert option</UI> > <UI>HTTP outbound call</UI> to <UI>Exception</UI>.
 
--   <Status>Fixed</Status> Fixed the issue where the layout is broken when the log search password has been set in the <UI>Transaction log</UI> tab of the <UI>Trace analysis</UI> window.
+- <Status>Fixed</Status> Fixed the issue where the layout is broken when the log search password has been set in the <UI>Transaction log</UI> tab of the <UI>Trace analysis</UI> window.
 
 * * *
 
@@ -337,13 +337,13 @@ September 5, 2023
 
 #### Dashboard
 
--   <Status>Changed</Status> In <UI>Network topology</UI>, modified to keep the settings upon refreshing when the preset is in <UI>Default</UI> status.
+- <Status>Changed</Status> In <UI>Network topology</UI>, modified to keep the settings upon refreshing when the preset is in <UI>Default</UI> status.
 
--   <Status>Fixed</Status> In <UI>Network topology</UI>, modified to display the unit on the label of the edge for the topology.
+- <Status>Fixed</Status> In <UI>Network topology</UI>, modified to display the unit on the label of the edge for the topology.
 
--   <Status>Fixed</Status> In <UI>Network topology</UI>, fixed the issue where some tooltips obscure the button and make the button unclickable.
+- <Status>Fixed</Status> In <UI>Network topology</UI>, fixed the issue where some tooltips obscure the button and make the button unclickable.
 
--   <Status>Changed</Status> In <UI>Network trend (TCP)</UI>, modified to display data based on the node (not communication between nodes) on the charts for <UI>Retransmission Count</UI> and <UI>Lost Count</UI>.
+- <Status>Changed</Status> In <UI>Network trend (TCP)</UI>, modified to display data based on the node (not communication between nodes) on the charts for <UI>Retransmission Count</UI> and <UI>Lost Count</UI>.
 
 #### Analytics
 
@@ -373,17 +373,17 @@ September 4, 2023
 
 #### Transaction search
 
--   <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> column.
+- <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> column.
 
--   <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> metric into the downloaded CSV data file.
+- <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> metric into the downloaded CSV data file.
 
 * * *
 
 ### `Container`
 
--   <Status>Fixed</Status> In <UI>Container map</UI>, fixed the issue where the chart block is partially hidden in case of no <UI>grouping</UI>.
+- <Status>Fixed</Status> In <UI>Container map</UI>, fixed the issue where the chart block is partially hidden in case of no <UI>grouping</UI>.
 
--   <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Flex Board</UI> and <UI>Analysis</UI> > <UI>Metrics chart</UI>, modified the filter name that is displayed on the agent filter.
+- <Status>Changed</Status> In <UI>Dashboard</UI> > <UI>Flex Board</UI> and <UI>Analysis</UI> > <UI>Metrics chart</UI>, modified the filter name that is displayed on the agent filter.
 
 </div>
 
@@ -399,11 +399,11 @@ September 1, 2023
 
 <p><Status>Changed</Status> Modified the following in the <UI>Transaction analysis</UI> window.</p>
 
--   Modified only the <UI>No</UI> column cannot be deleted in <UI>Column settings</UI> for the transaction list.
+- Modified only the <UI>No</UI> column cannot be deleted in <UI>Column settings</UI> for the transaction list.
 
--   Changed the minimum number of selected columns in the transaction list to 5.
+- Changed the minimum number of selected columns in the transaction list to 5.
 
--   Added <UI>error</UI> options in Filter for the transaction list.
+- Added <UI>error</UI> options in Filter for the transaction list.
 
 * * *
 
@@ -453,11 +453,11 @@ August 31, 2023
 
 This change can be useful when sharing the URL of the selected transaction with other users. 
 
-1.  Select a specific transaction from the transaction list, and then copy the URL of the web browser.
+1. Select a specific transaction from the transaction list, and then copy the URL of the web browser.
 
-2.  Go to the URL in the web browser through a new tab or window.
+2. Go to the URL in the web browser through a new tab or window.
 
-3.  You can see that the transaction has been selected in the transaction list.
+3. You can see that the transaction has been selected in the transaction list.
 
 #### Flex Board
 
@@ -479,9 +479,9 @@ This change can be useful when sharing the URL of the selected transaction with 
 
 #### Dashboard
 
--   <Status>Changed</Status> In <UI>Container map</UI>, modified the line spacing in a block when the category is set to <UI>Container</UI>.
+- <Status>Changed</Status> In <UI>Container map</UI>, modified the line spacing in a block when the category is set to <UI>Container</UI>.
 
--   <Status>Changed</Status> In <UI>Container map</UI>, modified to display the group name when setting the step 2 grouping.
+- <Status>Changed</Status> In <UI>Container map</UI>, modified to display the group name when setting the step 2 grouping.
 
 </div>
 
@@ -495,19 +495,19 @@ August 30, 2023
 
 #### My Usage
 
--   <Status>Changed</Status> In <UI>Billing history details</UI> of <UI>Billing and payment history</UI>, modified to display <UI>Metered units</UI> instead of <UI>CPU core</UI>.
+- <Status>Changed</Status> In <UI>Billing history details</UI> of <UI>Billing and payment history</UI>, modified to display <UI>Metered units</UI> instead of <UI>CPU core</UI>.
 
--   <Status>Fixed</Status> In the sub menus under <UI>My Usage</UI>, modified to expose the <code>Network</code> project icon.
+- <Status>Fixed</Status> In the sub menus under <UI>My Usage</UI>, modified to expose the <code>Network</code> project icon.
 
--   <Status>Fixed</Status> Modified to display the aggregated billing of the <code>Network</code> project by the agent.
+- <Status>Fixed</Status> Modified to display the aggregated billing of the <code>Network</code> project by the agent.
 
--   <Status>Feature</Status> Displayed the updated date for the cost and exchange rate according to the exchange rates for JPY and USD based on KRW in the following menu path.
+- <Status>Feature</Status> Displayed the updated date for the cost and exchange rate according to the exchange rates for JPY and USD based on KRW in the following menu path.
 
-    -   **_Project subscription_**
+  - **_Project subscription_**
 
-    -   **_Billing History_**
+  - **_Billing History_**
 
-    -   **_Invoice Preview_**
+  - **_Invoice Preview_**
 
 * * *
 
@@ -515,9 +515,9 @@ August 30, 2023
 
 <p><Status>Fixed</Status> In <UI>Log search</UI>, fixed the issue where operators are missing after clicking the number (.n) tag in the log and selecting the next item from the drop-down menu.</p>
 
--   Fixed the issue where the <code>==</code> operator is missing when <UI>Search</UI> is selected.
+- Fixed the issue where the <code>==</code> operator is missing when <UI>Search</UI> is selected.
 
--   Fixed the issue where the <code>!=</code> operator is missing if <UI>Exclusion search</UI> has been selected.
+- Fixed the issue where the <code>!=</code> operator is missing if <UI>Exclusion search</UI> has been selected.
 
 * * *
 
@@ -541,9 +541,9 @@ August 29, 2023
 
 ### `Container`
 
--   <Status>Fixed</Status> Improved the filtering logic.
+- <Status>Fixed</Status> Improved the filtering logic.
 
--   <Status>Fixed</Status> Fixed the bug where <UI>Resource</UI> > <UI>Performance summary</UI> does not appear when you have no <b>View</b> role for the namespace project.
+- <Status>Fixed</Status> Fixed the bug where <UI>Resource</UI> > <UI>Performance summary</UI> does not appear when you have no <b>View</b> role for the namespace project.
 
 </div>
 
@@ -563,9 +563,9 @@ August 28, 2023
 
 #### Management
 
--   <Status>Feature</Status> In <UI>Agent installation</UI>, added the links to Document guide and Video tutorials.
+- <Status>Feature</Status> In <UI>Agent installation</UI>, added the links to Document guide and Video tutorials.
 
--   <Status>Changed</Status> In <UI>Agent installation</UI>, modified the download button for the yaml file.
+- <Status>Changed</Status> In <UI>Agent installation</UI>, modified the download button for the yaml file.
 
 </div>
 
@@ -577,23 +577,23 @@ August 28, 2023
 
 ### `Common`
 
--   <Status>Fixed</Status> In the <UI>TOO_SLOW_SQL</UI> template in <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI>, deleted the duplicate and unused values for <UI>Event rule</UI>.
+- <Status>Fixed</Status> In the <UI>TOO_SLOW_SQL</UI> template in <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI>, deleted the duplicate and unused values for <UI>Event rule</UI>.
 
--   <Status>Fixed</Status> If the language has been set to English, modified the unnatural spacing in notification messages displayed in the following cases for the <UI>Manage account INFO.</UI> menu.
+- <Status>Fixed</Status> If the language has been set to English, modified the unnatural spacing in notification messages displayed in the following cases for the <UI>Manage account INFO.</UI> menu.
 
-    -   In case the multi-factor authentication is disabled
+  - In case the multi-factor authentication is disabled
 
-    -   In case the OTP authentication key is created
+  - In case the OTP authentication key is created
 
-    -   In case the OTP authentication is canceled
+  - In case the OTP authentication is canceled
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>HITMAP</UI>, changed the default value in the application selection box into <UI>Select all</UI>.
+- <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>HITMAP</UI>, changed the default value in the application selection box into <UI>Select all</UI>.
 
--   <Status>Feature</Status> In the <UI>Client IP</UI> tab under <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, added to display <b>(Whatap)</b> when it corresponds to the WhaTap IP address in the IP list.
+- <Status>Feature</Status> In the <UI>Client IP</UI> tab under <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, added to display <b>(Whatap)</b> when it corresponds to the WhaTap IP address in the IP list.
 
 </div>
 
@@ -611,21 +611,21 @@ August 25, 2023
 
 #### My Usage
 
--   <Status>Fixed</Status> Modified to output the promotion end period based on the UTC time
+- <Status>Fixed</Status> Modified to output the promotion end period based on the UTC time
 
--   <Status>Changed</Status> Modified to enter the department name, phone number, and invoice language in the payment information input fields.
+- <Status>Changed</Status> Modified to enter the department name, phone number, and invoice language in the payment information input fields.
 
 * * *
 
 ### `Network`
 
--   <Status>Changed</Status> Modified the style of the tag selector in the following menu path.
+- <Status>Changed</Status> Modified the style of the tag selector in the following menu path.
 
-    -   **_Dashboard_** > **_Network Topology_**
+  - **_Dashboard_** > **_Network Topology_**
 
-    -   **_Dashboard_** > **_Network Trend_**
+  - **_Dashboard_** > **_Network Trend_**
 
--   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, fixed the proxy server address notation errors depending on the situation.
+- <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, fixed the proxy server address notation errors depending on the situation.
 
 * * *
 
@@ -665,13 +665,13 @@ August 24, 2023
 
 In **_Log Search_**/**_Live Tail_**, the following functions have been modified.
 
--   <Status>Fixed</Status> Displayed a guide message when there is no search value in the log filter or there is no search entry.
+- <Status>Fixed</Status> Displayed a guide message when there is no search value in the log filter or there is no search entry.
 
--   <Status>Fixed</Status> Once a value has been modified after clicking a tag in the log filter, a guide message appears if there is any duplicate value.
+- <Status>Fixed</Status> Once a value has been modified after clicking a tag in the log filter, a guide message appears if there is any duplicate value.
 
--   <Status>Fixed</Status> Fixed the issue where all duplicate values are modified when multiple duplicate values have been entered in the log filter and then any value is modified.
+- <Status>Fixed</Status> Fixed the issue where all duplicate values are modified when multiple duplicate values have been entered in the log filter and then any value is modified.
 
--   <Status>Fixed</Status> Fixed the problem where <b>+</b> and <b>-</b> are attached in front, when the .n key is entered in the log filter and the <code>comparison operator</code> like <b>==100</b> is entered without clicking the comparison operator.
+- <Status>Fixed</Status> Fixed the problem where <b>+</b> and <b>-</b> are attached in front, when the .n key is entered in the log filter and the <code>comparison operator</code> like <b>==100</b> is entered without clicking the comparison operator.
 
 </div>
 
@@ -687,23 +687,23 @@ August 24, 2023
 
 In **_Container list_**, added and modified the following functions.
 
--   <Status>Changed</Status> Modified the container list search cycle from 1 minute to 10 seconds.
+- <Status>Changed</Status> Modified the container list search cycle from 1 minute to 10 seconds.
 
--   <Status>Feature</Status> Added the filter search function.
+- <Status>Feature</Status> Added the filter search function.
 
--   <Status>Change</Status> Improved UIs for user convenience.
+- <Status>Change</Status> Improved UIs for user convenience.
 
--   <Status>Deprecated</Status> Removed the node agent selector (replaced by filter search).
+- <Status>Deprecated</Status> Removed the node agent selector (replaced by filter search).
 
--   <Status>Deprecated</Status> Removed the text search (replaced by filter search).
+- <Status>Deprecated</Status> Removed the text search (replaced by filter search).
 
 * * *
 
 ### `Log`
 
--   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, fixed the issue where the translation is not output when adding or modifying the <UI>real-time log event</UI> or <UI>composite log event</UI>.
+- <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, fixed the issue where the translation is not output when adding or modifying the <UI>real-time log event</UI> or <UI>composite log event</UI>.
 
--   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, modified to display the log event settings even if there is no granted <b>alert configuration</b> role or the log monitoring is disabled.
+- <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, modified to display the log event settings even if there is no granted <b>alert configuration</b> role or the log monitoring is disabled.
 
 * * *
 

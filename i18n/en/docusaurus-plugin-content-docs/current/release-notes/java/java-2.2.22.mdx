@@ -7,39 +7,39 @@ pagination_next: release-notes/java/java-2_2_21
 
 November 16, 2023
 
--   <Status>Feature</Status> log4j-2.17 appender log tracing (log4j-2.17 or later)
+- <Status>Feature</Status> log4j-2.17 appender log tracing (log4j-2.17 or later)
 
-    ```ini title='whatap.conf'
-    # requires agent restart
-    weaving=log4j-2.17
+  ```ini title='whatap.conf'
+  # requires agent restart
+  weaving=log4j-2.17
 
-    # default
-    trace_log4j_stack_depth=50
-    trace_log4j_appender_enabled=false
-    trace_log4j_appender_set=
+  # default
+  trace_log4j_stack_depth=50
+  trace_log4j_appender_enabled=false
+  trace_log4j_appender_set=
 
-    # example
-    trace_log4j_appender_enabled=true
-    trace_log4j_appender_set=Console,AccessLog,ErrorLog
-    ```
+  # example
+  trace_log4j_appender_enabled=true
+  trace_log4j_appender_set=Console,AccessLog,ErrorLog
+  ```
 
--   <Status>Changed</Status> Changed the setting of the logback-1.2.8 appender log.
+- <Status>Changed</Status> Changed the setting of the logback-1.2.8 appender log.
 
-    ```ini title='whatap.conf'
-    # requires agent restart
-    weaving=logback-1.2.8
+  ```ini title='whatap.conf'
+  # requires agent restart
+  weaving=logback-1.2.8
 
-    # default
-    trace_logback_stack_depth=50
-    trace_logback_appender_enabled=false
-    trace_logback_appender_set=
-    ```
+  # default
+  trace_logback_stack_depth=50
+  trace_logback_appender_enabled=false
+  trace_logback_appender_set=
+  ```
 
--   <Status>Fixed</Status> To prevent error from occurring upon starting the agent, changed the default value of the <code>hook_db_native_enabled</code> option to <code>false</code>.
+- <Status>Fixed</Status> To prevent error from occurring upon starting the agent, changed the default value of the <code>hook_db_native_enabled</code> option to <code>false</code>.
 
-    ```ini title='whatap.conf'
-    # default
-    hook_db_native_enabled=false
-    ```
+  ```ini title='whatap.conf'
+  # default
+  hook_db_native_enabled=false
+  ```
 
--   <Status>Fixed</Status> Fixed the issue where some parameters are not collected when calling r2dbc.
+- <Status>Fixed</Status> Fixed the issue where some parameters are not collected when calling r2dbc.

@@ -19,27 +19,27 @@ See the following video guide.
 
 Create a project before adding the URL.
 
-1.  Log in [WhaTap monitoring service](https://service.whatap.io).
+1. Log in [WhaTap monitoring service](https://service.whatap.io).
 
-2.  To create a project, on the left of the screen, select **_+_** <Cmdname sid="project_add_btn" className="uitext" />.
+2. To create a project, on the left of the screen, select **_+_** <Cmdname sid="project_add_btn" className="uitext" />.
 
-3.  In <Cmdname sid="TTL07073" className="uitext" />, create a URL monitoring project.
+3. In <Cmdname sid="TTL07073" className="uitext" />, create a URL monitoring project.
 
-4.  Set items for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, <Cmdname sid="project_time_zone" className="uitext" />, and more in order.
+4. Set items for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, <Cmdname sid="project_time_zone" className="uitext" />, and more in order.
 
-    <ImgLang img='url-project.png' desc='URL Monitoring Project' />
+   <ImgLang img='url-project.png' desc='URL Monitoring Project' />
 
-5.  After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
+5. After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
 
-6.  Check the new project in the project list.
+6. Check the new project in the project list.
 
 :::note
 
--   A <Cmdname sid="data_server_region" className="uitext" /> refers to a region (a bundle of data centers installed to provide cloud services). Selecting a specific region stores your data in the datacenter that belongs to that region.
+- A <Cmdname sid="data_server_region" className="uitext" /> refers to a region (a bundle of data centers installed to provide cloud services). Selecting a specific region stores your data in the datacenter that belongs to that region.
 
--   <Cmdname sid="project_time_zone" className="uitext" /> is the reference time for generating alerts and reports.
+- <Cmdname sid="project_time_zone" className="uitext" /> is the reference time for generating alerts and reports.
 
--   To group multiple projects for management, select a group from <Cmdname sid="project_groups" className="uitext" /> or add a group. For more information about grouping, see [the following](../project/group).
+- To group multiple projects for management, select a group from <Cmdname sid="project_groups" className="uitext" /> or add a group. For more information about grouping, see [the following](../project/group).
 
 :::
 
@@ -51,23 +51,23 @@ Up to 10 URL projects can be created. The number of URLs that can be registered 
 
 ## Adding a URL{#add-url}
 
-1.  Select the generated URL project. A screen with no URL set appears.
+1. Select the generated URL project. A screen with no URL set appears.
 
-2.  On the upper right of the screen, select **_+_** <Cmdname sid="add_url" className="uitext" />. 
+2. On the upper right of the screen, select **_+_** <Cmdname sid="add_url" className="uitext" />. 
 
-3.  Proceed to perform URL settings in the added input fields.
+3. Proceed to perform URL settings in the added input fields.
 
-    <ImgLang img='url-input-field.png' desc='URL input field' />
+   <ImgLang img='url-input-field.png' desc='URL input field' />
 
-    -   <Cmdname sid="name" className="uitext" />: Used as a unique identification for URL settings. Duplicates are not allowed, and if you register with the same name when resetting, statistical data with the name will be considered as data from the same URL.
+   - <Cmdname sid="name" className="uitext" />: Used as a unique identification for URL settings. Duplicates are not allowed, and if you register with the same name when resetting, statistical data with the name will be considered as data from the same URL.
 
-    -   <Cmdname sid="url" className="uitext" />: Register the URL to check. Enter the full path of URL to call. It supports the http/https protocol.
+   - <Cmdname sid="url" className="uitext" />: Register the URL to check. Enter the full path of URL to call. It supports the http/https protocol.
 
-    -   <Cmdname sid="check_location" className="uitext" />: Select the agent provided by WhaTap. It provides the regions such as Seoul, Tokyo, Singapore, Mumbai, Frankfurt, and California. For more information, see <Link to="#select-confirm-region">the following</Link>.
+   - <Cmdname sid="check_location" className="uitext" />: Select the agent provided by WhaTap. It provides the regions such as Seoul, Tokyo, Singapore, Mumbai, Frankfurt, and California. For more information, see <Link to="#select-confirm-region">the following</Link>.
 
-    -   <Cmdname sid="collection_cycle" className="uitext" />: Set the interval to collect monitoring data. The default value is <Cmdname sid="1_min" className="uitext" />(60000 ms). You can select up to 5 minutes in 1-minute increments.
+   - <Cmdname sid="collection_cycle" className="uitext" />: Set the interval to collect monitoring data. The default value is <Cmdname sid="1_min" className="uitext" />(60000 ms). You can select up to 5 minutes in 1-minute increments.
 
-4.  After edtion, select <Cmdname sid="save" className="uitext" />.
+4. After edtion, select <Cmdname sid="save" className="uitext" />.
 
 :::note
 
@@ -81,31 +81,31 @@ We can provide additional regions for future connectivity testing. For additiona
 
 For **access testing to a closed network site**, you may need to open the firewall to allow calls from the agent. The location IP address is displayed as a help. The **Firewall open target IP addresses** of each agent are as follows.
 
--   AWS-Seoul-Agent - 54.180.11.176
+- AWS-Seoul-Agent - 54.180.11.176
 
--   AWS-Tokyo-Agent - 18.179.189.142
+- AWS-Tokyo-Agent - 18.179.189.142
 
--   AWS-Singapore-Agent - 54.169.168.45
+- AWS-Singapore-Agent - 54.169.168.45
 
--   AWS-Mumbai-Agent - 3.6.243.66
+- AWS-Mumbai-Agent - 3.6.243.66
 
--   AWS-Frankfurt-Agent - 18.197.22.141
+- AWS-Frankfurt-Agent - 18.197.22.141
 
--   AWS-California-Agent - 54.215.76.203
+- AWS-California-Agent - 54.215.76.203
 
 If **cloudflare** is used, you must allow the **region IPs that are compatible with its firewall rules**.
 
--   AWS-Seoul-Agent - 54.180.11.176
+- AWS-Seoul-Agent - 54.180.11.176
 
--   AWS-Tokyo-Agent - 18.179.189.142
+- AWS-Tokyo-Agent - 18.179.189.142
 
--   AWS-Singapore-Agent - 54.169.168.45
+- AWS-Singapore-Agent - 54.169.168.45
 
--   AWS-Mumbai-Agent - 3.6.243.66
+- AWS-Mumbai-Agent - 3.6.243.66
 
--   AWS-Frankfurt-Agent - 18.197.22.141
+- AWS-Frankfurt-Agent - 18.197.22.141
 
--   AWS-California-Agent - 54.215.76.203 
+- AWS-California-Agent - 54.215.76.203 
 
 ## Running Monitoring{#url-st}
 
@@ -115,11 +115,11 @@ If **cloudflare** is used, you must allow the **region IPs that are compatible w
 
 Select a project at Home screen and go to <Cmdname sid="url_list" className="uitext" />. Through the option at the top of ![number-1](/img/number-01.png), you can specify the view format and sorting method, or view the list through search.
 
--   ![List View Icon](/img/ic-list.svg) <Cmdname sid="list_view" className="uitext" />: You can view the <Cmdname sid="url_list" className="uitext" /> in the list format. The default setting is <Cmdname sid="list_view" className="uitext" />. 
+- ![List View Icon](/img/ic-list.svg) <Cmdname sid="list_view" className="uitext" />: You can view the <Cmdname sid="url_list" className="uitext" /> in the list format. The default setting is <Cmdname sid="list_view" className="uitext" />. 
 
--   ![Card View icon](/img/ic-project.svg) <Cmdname sid="card_view" className="uitext" />: You can view the <Cmdname sid="url_list" className="uitext" /> in the card format.
+- ![Card View icon](/img/ic-project.svg) <Cmdname sid="card_view" className="uitext" />: You can view the <Cmdname sid="url_list" className="uitext" /> in the card format.
 
--   <Cmdname sid="search" className="uitext" />: You can search based on the URL or the name of the specified URL in the input field.
+- <Cmdname sid="search" className="uitext" />: You can search based on the URL or the name of the specified URL in the input field.
 
 In the ![number-2](/img/number-02.png) area, you can see and filter the counts for each final response status in the list of registered URLs. The view can be seen based on <Cmdname sid="status_total" className="uitext" />, **_9XX_**, <Cmdname sid="status_5xx" className="uitext" />, <Cmdname sid="status_4xx" className="uitext" />, <Cmdname sid="status_3xx" className="uitext" />, and <Cmdname sid="status_2xx" className="uitext" />. The default setting is <Cmdname sid="status_total" className="uitext" /> view.
 
@@ -127,31 +127,31 @@ In the ![number-2](/img/number-02.png) area, you can see and filter the counts f
 
 In the ![number-3](/img/number-03.png) area, you can export or import the current <Cmdname sid="url_list" className="uitext" /> in Excel format. 
 
--   ![Import icon](/img/ico-import.svg) <Cmdname sid="import" className="uitext" />: By selecting an Excel file, the URL list is imported. 
+- ![Import icon](/img/ico-import.svg) <Cmdname sid="import" className="uitext" />: By selecting an Excel file, the URL list is imported. 
 
--   ![Export icon](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />: The current URL list is downloaded in an Excel file through the web browser.
+- ![Export icon](/img/ico-export.svg) <Cmdname sid="export" className="uitext" />: The current URL list is downloaded in an Excel file through the web browser.
 
 ### URL Monitoring Detail
 
 In the URL list table of the ![number-4](/img/number-04.png) area, you can see the monitoring check results for each registered URL. The columns are as follows. To register or edit a URL, select ![Edit icon](/img/ic-edit.svg) <Cmdname sid="edit_url" className="uitext" /> to switch to the editing screen.
 
--   <Cmdname sid="current_status" className="uitext" />
+- <Cmdname sid="current_status" className="uitext" />
 
-    It is the final check response code (HTTP Status Code). If you select each status code, the HTTP status code cleanup document appears.
+  It is the final check response code (HTTP Status Code). If you select each status code, the HTTP status code cleanup document appears.
 
--   <Cmdname sid="name_and_url" className="uitext" />
+- <Cmdname sid="name_and_url" className="uitext" />
 
-    This is the unique ID and URL specified upon registration of the URL.
+  This is the unique ID and URL specified upon registration of the URL.
 
--   <Cmdname sid="check_region" className="uitext" />
+- <Cmdname sid="check_region" className="uitext" />
 
-    Check location.
+  Check location.
 
--   <Cmdname sid="elapsed" className="uitext" />
+- <Cmdname sid="elapsed" className="uitext" />
 
-    It has the 20-minute check result (response code and time) and final response time. When searching for a time range by dragging in the chart area, you can see the response codes and response times for the time period as follows.
+  It has the 20-minute check result (response code and time) and final response time. When searching for a time range by dragging in the chart area, you can see the response codes and response times for the time period as follows.
 
-    <ImgLang img='url-monitoring-dt.png' desc='Detail' />
+  <ImgLang img='url-monitoring-dt.png' desc='Detail' />
 
 :::note 
 

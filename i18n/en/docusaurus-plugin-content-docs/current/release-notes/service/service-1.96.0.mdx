@@ -26,9 +26,9 @@ import UI from '@site/src/components/UItext';
 
 ### `Common`
 
--   <Status>Fixed</Status> In <UI>Management</UI> &gt; <UI>Maintenance Plan</UI>, fixed the problem where a whiteout occurs when the <UI>Monthly</UI> tab is clicked.
+- <Status>Fixed</Status> In <UI>Management</UI> &gt; <UI>Maintenance Plan</UI>, fixed the problem where a whiteout occurs when the <UI>Monthly</UI> tab is clicked.
 
--   <Status>Fixed</Status> Modified the MXQL query generation logic to fix the bugs that occur when calling the MXQL data while special characters are used in the field names for MXQL queries.
+- <Status>Fixed</Status> Modified the MXQL query generation logic to fix the bugs that occur when calling the MXQL data while special characters are used in the field names for MXQL queries.
 
 ## Hotfix: 2023-03-09
 
@@ -58,64 +58,64 @@ import UI from '@site/src/components/UItext';
 
 #### Flex Board
 
--   <Status>Change</Status> Modified the <UI>Log RPS Board</UI> dashboard template.
+- <Status>Change</Status> Modified the <UI>Log RPS Board</UI> dashboard template.
 
-    -   Change of the default value in the data lookup period: real-time 30 minutes → real-time 12 hours
-    -   Modified the layout height of the **_Log RPS trend_** and **_server status_** widgets.
-    -   Setting the **_4XX, 5XX Count_** widget's auxiliary table data units
-    -   Changed the widget data call interval for some widgets from 5 seconds to 1 minute.
+  - Change of the default value in the data lookup period: real-time 30 minutes → real-time 12 hours
+  - Modified the layout height of the **_Log RPS trend_** and **_server status_** widgets.
+  - Setting the **_4XX, 5XX Count_** widget's auxiliary table data units
+  - Changed the widget data call interval for some widgets from 5 seconds to 1 minute.
 
--   <Status>Feature</Status> Added the <UI>Active Transaction TopN</UI> widget.
+- <Status>Feature</Status> Added the <UI>Active Transaction TopN</UI> widget.
 
--   <Status>Feature</Status> <UI>Hitmap</UI> Widget: Added the <b>Copy</b>(<img src='/img/ico-copy.svg' alt='복사 아이콘' />) button in the <UI>URL</UI> column of the transaction trace table.
+- <Status>Feature</Status> <UI>Hitmap</UI> Widget: Added the <b>Copy</b>(<img src='/img/ico-copy.svg' alt='복사 아이콘' />) button in the <UI>URL</UI> column of the transaction trace table.
 
--   <Status>Feature</Status> In the dashboard list under <UI>Home</UI> > <UI>Flex Board</UI>, added the Share Dashboard (<img src='/img/ico-flexboard-share.svg' alt='공유 아이콘' />) function.
+- <Status>Feature</Status> In the dashboard list under <UI>Home</UI> > <UI>Flex Board</UI>, added the Share Dashboard (<img src='/img/ico-flexboard-share.svg' alt='공유 아이콘' />) function.
 
 #### Analytics
 
--   <Status>Feature</Status> At the top of the widget in the <UI>metrics chart</UI> menu, displayed the method to merge times and objects at the top of the widget.
+- <Status>Feature</Status> At the top of the widget in the <UI>metrics chart</UI> menu, displayed the method to merge times and objects at the top of the widget.
 
--   <Status>Fixed</Status> In <UI>Sitemap</UI> > <UI>Analysis</UI> > <UI>Metric Anomaly Detection</UI>, replaced the UI logic due to the UI bug upon selection of category and field.
+- <Status>Fixed</Status> In <UI>Sitemap</UI> > <UI>Analysis</UI> > <UI>Metric Anomaly Detection</UI>, replaced the UI logic due to the UI bug upon selection of category and field.
 
--   <Status>Fixed</Status> Modified not to change the <UI>start date</UI>, <UI>metrics of interest</UI>, and dashboard tab, if query is not finished in <UI>CUBE</UI>.
+- <Status>Fixed</Status> Modified not to change the <UI>start date</UI>, <UI>metrics of interest</UI>, and dashboard tab, if query is not finished in <UI>CUBE</UI>.
 
 #### Log setting
 
--   <Status>Change</Status> Deleted the storage column from the <UI>Data retention period by category</UI> table.
+- <Status>Change</Status> Deleted the storage column from the <UI>Data retention period by category</UI> table.
 
--   <Status>Feature</Status> In the <UI>Data retention period by category</UI> table, added the <UI>Daily Log Count</UI> column and helps for each column.
+- <Status>Feature</Status> In the <UI>Data retention period by category</UI> table, added the <UI>Daily Log Count</UI> column and helps for each column.
 
--   <Status>Feature</Status> In the <UI>Log Parser Settings</UI> section, when registering the status success rate parser and the 4xx, 5xx parser, added validation so that the parser cannot be registered twice in the same category.
+- <Status>Feature</Status> In the <UI>Log Parser Settings</UI> section, when registering the status success rate parser and the 4xx, 5xx parser, added validation so that the parser cannot be registered twice in the same category.
 
 #### Manages the account information
 
--   <Status>Feature</Status> In <UI>My Profile</UI>, added the message window for final confirmation when enabling the multi-factor authentication.
+- <Status>Feature</Status> In <UI>My Profile</UI>, added the message window for final confirmation when enabling the multi-factor authentication.
 
 #### Management
 
--   <Status>Fixed</Status> In <UI>Maintenance Plan</UI>, fixed the bug where any registered maintenance plan cannot be deleted.
+- <Status>Fixed</Status> In <UI>Maintenance Plan</UI>, fixed the bug where any registered maintenance plan cannot be deleted.
 
--   In **_Management_** > **_Project Member_**, the following functions have been added.
+- In **_Management_** > **_Project Member_**, the following functions have been added.
 
-    -   <Status>Feature</Status> Added the function to display the member affiliation type (<UI>group</UI>/<UI>project</UI>) for improved project member management.
-    -   <Status>Feature</Status> Added the tooltip (deletion is impossible) when the member deletion (<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) button is disabled.
+  - <Status>Feature</Status> Added the function to display the member affiliation type (<UI>group</UI>/<UI>project</UI>) for improved project member management.
+  - <Status>Feature</Status> Added the tooltip (deletion is impossible) when the member deletion (<img src='/img/ico-trash.svg' alt='삭제 아이콘'/>) button is disabled.
 
--   In **_My Usage_** and **_Billing Management_**, the following functions have been modified.
+- In **_My Usage_** and **_Billing Management_**, the following functions have been modified.
 
-    <Status>Change</Status> In <UI>Preview Invoice</UI> and <UI>Usage</UI>, changed the log display and expression units according to the change in log charging policy.
+  <Status>Change</Status> In <UI>Preview Invoice</UI> and <UI>Usage</UI>, changed the log display and expression units according to the change in log charging policy.
 
-    -   Change of the log display unit: LOGs ⇒ LOG UNITs
-    -   Change of the log expression unit: Changed to display the daily average instead of the log line counts per hour.
-    -   In <UI>Preview Invoice</UI>, changed to display the log usage in the <UI>Metered Units</UI> column.
-    -   In <UI>Usage</UI>, changed the metering summary column for usage details.
+  - Change of the log display unit: LOGs ⇒ LOG UNITs
+  - Change of the log expression unit: Changed to display the daily average instead of the log line counts per hour.
+  - In <UI>Preview Invoice</UI>, changed to display the log usage in the <UI>Metered Units</UI> column.
+  - In <UI>Usage</UI>, changed the metering summary column for usage details.
 
 #### My Usage
 
 In **_Preview Invoice_**, the following functions have been added.
 
--   <Status>Feature</Status> Addition of grouping buttons for each project or product name column: Provides the previews for time sum, cost average, and billing cost sum.
+- <Status>Feature</Status> Addition of grouping buttons for each project or product name column: Provides the previews for time sum, cost average, and billing cost sum.
 
--   <Status>Feature</Status> In the invoice table, added the option to select whether or not to display the <UI>product type</UI>, <UI>platform</UI>, <UI>product currency</UI>, <UI>product price</UI>, <UI>exchange rate</UI>, and <UI>currency</UI> columns.
+- <Status>Feature</Status> In the invoice table, added the option to select whether or not to display the <UI>product type</UI>, <UI>platform</UI>, <UI>product currency</UI>, <UI>product price</UI>, <UI>exchange rate</UI>, and <UI>currency</UI> columns.
 
 ### `Application`
 
@@ -129,11 +129,11 @@ The items have been added and modified in the following menu path.
 
 :::note
 
--   Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > **_Active Transaction_** widget > select a finished transaction item > click **_Show Transaction_**.
--   Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > drag the **_Hitmap Transaction_** chart > click a desired item from the **_TX Trace_** list.
--   Drag the **_Dashboard_** > **_Transaction Map_** > **_Transaction_** chart > In the **_TX Trace_** list, click ![See details icon](/img/ico-detail-view.svg) on the upmost left.
--   Select the finished transaction column on the **_Dashboard_** > **_Active Transaction_** > **_Transaction_** tab > Click **_Show Trace_**.
--   Drag **_Analysis_** > **_Hitmap_** > **_Hitmap Transaction_** chart > Click a desired item in **_TX Trace_** list.
+- Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > **_Active Transaction_** widget > select a finished transaction item > click **_Show Transaction_**.
+- Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > drag the **_Hitmap Transaction_** chart > click a desired item from the **_TX Trace_** list.
+- Drag the **_Dashboard_** > **_Transaction Map_** > **_Transaction_** chart > In the **_TX Trace_** list, click ![See details icon](/img/ico-detail-view.svg) on the upmost left.
+- Select the finished transaction column on the **_Dashboard_** > **_Active Transaction_** > **_Transaction_** tab > Click **_Show Trace_**.
+- Drag **_Analysis_** > **_Hitmap_** > **_Hitmap Transaction_** chart > Click a desired item in **_TX Trace_** list.
 
 :::
 
@@ -143,45 +143,45 @@ Before modification<br/>
 After modification<br/>
 ![](/img/release/apm-transaction-list-after-change.png)
 
--   <Status>Feature</Status> <UI>Methods</UI>: Trace step information provides the analysis of the duplicated methods.
+- <Status>Feature</Status> <UI>Methods</UI>: Trace step information provides the analysis of the duplicated methods.
 
--   <Status>Feature</Status> <UI>SQLs</UI>: Trace step information provides the analysis of the duplicated SQLs.
+- <Status>Feature</Status> <UI>SQLs</UI>: Trace step information provides the analysis of the duplicated SQLs.
 
--   <Status>Feature</Status> Added the <UI>HTTP Calls</UI> tab: Provided the HTTP call count, time sum, and time average.
+- <Status>Feature</Status> Added the <UI>HTTP Calls</UI> tab: Provided the HTTP call count, time sum, and time average.
 
--   <Status>Change</Status> Changed the name of the tab menu.
+- <Status>Change</Status> Changed the name of the tab menu.
 
-    -   **_Profile_** → **_Table View_**
-    -   **_Profile Tree_** → **_Tree View_**
-    -   **_Log_** > **_Transaction Log_**
+  - **_Profile_** → **_Table View_**
+  - **_Profile Tree_** → **_Tree View_**
+  - **_Log_** > **_Transaction Log_**
 
--   <Status>Change</Status> Modified the design of the <UI>Table View</UI> tab.
+- <Status>Change</Status> Modified the design of the <UI>Table View</UI> tab.
 
-    -   Display of text colors of the method information step (**_step content_** column)
-    -   Indentation of the depth information of the method information step (**_step content_** column)
-    -   Change of the column name: **_Cumulative Time_** → **_Interval Time_**
+  - Display of text colors of the method information step (**_step content_** column)
+  - Indentation of the depth information of the method information step (**_step content_** column)
+  - Change of the column name: **_Cumulative Time_** → **_Interval Time_**
 
--   <Status>Change</Status> Modified the design of the <UI>Tree View</UI> tab.
+- <Status>Change</Status> Modified the design of the <UI>Tree View</UI> tab.
 
-    Before modification<br/>
-    ![](/img/release/transaction-profile-trace-before.png)
+  Before modification<br/>
+  ![](/img/release/transaction-profile-trace-before.png)
 
-    After modification<br/>
-    ![](/img/release/transaction-profile-trace-after.png)
+  After modification<br/>
+  ![](/img/release/transaction-profile-trace-after.png)
 
-    -   Display of the text color according to the trace type
-    -   Addition of the data type column (**_Detail Info_**, **_Type_**, **_Elapsed Time_**)
-    -   If the active stack item is clicked, **Detail Info** confirmation view has been added.
+  - Display of the text color according to the trace type
+  - Addition of the data type column (**_Detail Info_**, **_Type_**, **_Elapsed Time_**)
+  - If the active stack item is clicked, **Detail Info** confirmation view has been added.
 
--   <Status>Change</Status> In <UI>Tree View</UI> tab, deleted the <UI>Start Point CPU Time</UI> item from the Method type trace display information.
+- <Status>Change</Status> In <UI>Tree View</UI> tab, deleted the <UI>Start Point CPU Time</UI> item from the Method type trace display information.
 
--   <Status>Change</Status> Modification of the button name on the transaction chart: <UI>Profile Diagram</UI> → <UI>Diagram</UI>
+- <Status>Change</Status> Modification of the button name on the transaction chart: <UI>Profile Diagram</UI> → <UI>Diagram</UI>
 
 #### Analytics
 
--   <Status>Fixed</Status> In <UI>Multiple Transaction Trace</UI> > <UI>Tree View</UI>, fixed the bug where the trace integration data is not represented in a tree structure.
+- <Status>Fixed</Status> In <UI>Multiple Transaction Trace</UI> > <UI>Tree View</UI>, fixed the bug where the trace integration data is not represented in a tree structure.
 
--   <Status>Fixed</Status> In <UI>HITMAP</UI>, fixed the bug where the <UI>End Time</UI> column in the <UI>TX Trace</UI> table appears before the <UI>Start Time</UI> column.
+- <Status>Fixed</Status> In <UI>HITMAP</UI>, fixed the bug where the <UI>End Time</UI> column in the <UI>TX Trace</UI> table appears before the <UI>Start Time</UI> column.
 
 ### `Server`
 
@@ -191,50 +191,50 @@ After modification<br/>
 
 ### `Database`
 
--   In <UI>STAT/REPORT</UI> of the <b>Tibero</b> product, the following functions have been added and modified.
+- In <UI>STAT/REPORT</UI> of the <b>Tibero</b> product, the following functions have been added and modified.
 
-    -   <Status>Feature</Status> Improved the screen UI of the <UI>tablespace size</UI>.
+  - <Status>Feature</Status> Improved the screen UI of the <UI>tablespace size</UI>.
 
-        -   The tablespace size is provided in the form of a stacked chart.
-        -   Changed the chart data via the **_Total_** and **_Used_** buttons for stacked charts.
-        -   Provision of the information details in a table
-        -   Data file information can be checked by selecting the toggle buttons for each item.
-        -   Added a bar graph to the **_Usage (%)_** column to improve the data visibility.
-        -   Click names for each column to add the table sorting function.
-        -   Added the function to adjust the size of the **_tablespace name_** column.
+    - The tablespace size is provided in the form of a stacked chart.
+    - Changed the chart data via the **_Total_** and **_Used_** buttons for stacked charts.
+    - Provision of the information details in a table
+    - Data file information can be checked by selecting the toggle buttons for each item.
+    - Added a bar graph to the **_Usage (%)_** column to improve the data visibility.
+    - Click names for each column to add the table sorting function.
+    - Added the function to adjust the size of the **_tablespace name_** column.
 
-    -   <Status>Change</Status> In the <UI>SQL Statistics</UI>, added the <UI>sql_id</UI> column in the statistics table.
+  - <Status>Change</Status> In the <UI>SQL Statistics</UI>, added the <UI>sql_id</UI> column in the statistics table.
 
-    -   <Status>Feature</Status> Addition of the daily/weekly/monthly user-defined reports
-          
-        - Function to select a metric in the performance trend chart
-        - Table size increase/decrease, list of tablespace sizes
+  - <Status>Feature</Status> Addition of the daily/weekly/monthly user-defined reports
+      
+    - Function to select a metric in the performance trend chart
+    - Table size increase/decrease, list of tablespace sizes
 
--   In **_STAT/REPORT_** for the **MySQL** product, the following functions have been added.
+- In **_STAT/REPORT_** for the **MySQL** product, the following functions have been added.
 
-    -   <Status>Feature</Status> Addition of the daily/weekly/monthly user-defined reports
-          
-        - Function to select a metric in the performance trend chart
-        - Table size increase/decrease, list of database sizes
+  - <Status>Feature</Status> Addition of the daily/weekly/monthly user-defined reports
+      
+    - Function to select a metric in the performance trend chart
+    - Table size increase/decrease, list of database sizes
 
 ### `Container`
 
 In **_Dashboard_** > **_Container Map_**, the following functions have been added.
 
--   <Status>Feature</Status> Added the function to display the container status with a label: Click the <img src='/img/ico-setting.svg' alt='설정 아이콘' /> button at the top of the screen and then select <UI>Container Status</UI>.
+- <Status>Feature</Status> Added the function to display the container status with a label: Click the <img src='/img/ico-setting.svg' alt='설정 아이콘' /> button at the top of the screen and then select <UI>Container Status</UI>.
 
--   <Status>Change</Status> In Display Container Map <b>Detail</b>, modified the design elements of the container and pod lists.
+- <Status>Change</Status> In Display Container Map <b>Detail</b>, modified the design elements of the container and pod lists.
 
-    -   Modified to enable multi-selection without expanding information details even when each item is selected.
-    -   Modified to check information details by selecting the toggle button.
+  - Modified to enable multi-selection without expanding information details even when each item is selected.
+  - Modified to check information details by selecting the toggle button.
 
--   <Status>Feature</Status> Added <UI>DaemonSet</UI> and <UI>StatefulSet</UI> in the pod category view grouping conditions.
+- <Status>Feature</Status> Added <UI>DaemonSet</UI> and <UI>StatefulSet</UI> in the pod category view grouping conditions.
 
 ### `AWS`, `Azure`, `NCP`, `OCI`
 
--   <Status>Fixed</Status> Fixed the problem where the registered authentication information does not appear immediately after clicking <UI>Change access key</UI> after entering the <UI>Agent Installation</UI> page.
+- <Status>Fixed</Status> Fixed the problem where the registered authentication information does not appear immediately after clicking <UI>Change access key</UI> after entering the <UI>Agent Installation</UI> page.
 
--   <Status>Fixed</Status> Fixed the problem where the menu path on the screen appears after creating a project as <UI>Integration > Install</UI> (<UI>Management > Install Agent</UI>).
+- <Status>Fixed</Status> Fixed the problem where the menu path on the screen appears after creating a project as <UI>Integration > Install</UI> (<UI>Management > Install Agent</UI>).
 
 ### `URL`
 

@@ -14,37 +14,37 @@ import TabItem from '@theme/TabItem';
 
 Delete the tracers that are the PHP extension module and whatap-php service daemon by using the installation script. Afterward, delete the package (yum, apt-get) and then if necessary, delete the log file and other files under _/usr/whatap/php_.
 
-1.  Delete the PHP extension module and whatap-php service.
+1. Delete the PHP extension module and whatap-php service.
 
-    ```bash
-    $ /usr/whatap/php/install.sh remove
-    ```
+   ```bash
+   $ /usr/whatap/php/install.sh remove
+   ```
 
-2.  Delete the package.
+2. Delete the package.
 
-    <Tabs>
-    <TabItem value="rdct" label="Red Hat/CentOS" default>
+   <Tabs>
+   <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-    ```bash
-    $ sudo yum remove whatap-php
-    ```
+   ```bash
+   $ sudo yum remove whatap-php
+   ```
 
-    </TabItem>
-    <TabItem value="dbub" label="Debian/Ubuntu">
+   </TabItem>
+   <TabItem value="dbub" label="Debian/Ubuntu">
 
-    ```bash
-    $ sudo apt-get purge whatap-php
-    ```
+   ```bash
+   $ sudo apt-get purge whatap-php
+   ```
 
-    </TabItem>
-    <TabItem value="frbsd" label="FreeBSD">
+   </TabItem>
+   <TabItem value="frbsd" label="FreeBSD">
 
-    ```bash
-    $ pkg delete whatap-php
-    ```
+   ```bash
+   $ pkg delete whatap-php
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
 :::note
 

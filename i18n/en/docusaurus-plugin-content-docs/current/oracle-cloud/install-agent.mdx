@@ -17,9 +17,9 @@ WhaTap Oracle Cloud Monitor collects metrics periodically through API integratio
 
 ## Monitoring procedure
 
-1.  Enter your Oracle Cloud authentication data.
-2.  Select values for the Oracle Cloud Monitor namespace and collection cycle.
-3.  Select values for region, metric, and stat.
+1. Enter your Oracle Cloud authentication data.
+2. Select values for the Oracle Cloud Monitor namespace and collection cycle.
+3. Select values for region, metric, and stat.
 
 :::note
 
@@ -31,39 +31,39 @@ After installation, extra charge may be incurred in the cloud depending on the u
 
 <ImgLang img='oci-install.png' desc='OCI Monitor' />
 
-1.  After creating the **RSA public key**, copy it to Notepad. 
+1. After creating the **RSA public key**, copy it to Notepad. 
 
-    :::note
+   :::note
 
-    After that, you can check the generated key on the **_Install guide_** screen at any time by clicking **_Generate RSA Public Key_**.
+   After that, you can check the generated key on the **_Install guide_** screen at any time by clicking **_Generate RSA Public Key_**.
 
-    :::
+   :::
 
-2.  Go to Oracle Cloud Console Identity & Security. 
+2. Go to Oracle Cloud Console Identity & Security. 
 
-3.  Select Groups at the bottom of the Identity & Security menu to create or select a new **group** for monitoring.
+3. Select Groups at the bottom of the Identity & Security menu to create or select a new **group** for monitoring.
 
-4.  Select Policies at the bottom of the Identity & Security menu to create a **policy** for monitoring.
+4. Select Policies at the bottom of the Identity & Security menu to create a **policy** for monitoring.
 
-    -   Select Create Policy to enter the name, description, and compartment.
-    -   In Policy Builder, select Show Manual Editor to enter the roles below, and then select Create.
-        > -   Allow group `{Group}` to read metrics in compartment `{Compartment}`
-        > -   Allow group `{Group}` to inspect metrics in compartment `{Compartment}`
+   - Select Create Policy to enter the name, description, and compartment.
+   - In Policy Builder, select Show Manual Editor to enter the roles below, and then select Create.
+     > - Allow group `{Group}` to read metrics in compartment `{Compartment}`
+     > - Allow group `{Group}` to inspect metrics in compartment `{Compartment}`
 
-5.  Select Users at the bottom of the Identity & Security menu, and then create or select a **user**.
+5. Select Users at the bottom of the Identity & Security menu, and then create or select a **user**.
 
-    -   Select Create user and then create a new user or select a user.
-    -   On the User Details screen, add the user to the group selected in Step 3.
-    -   Select API Keys at the lower left.
-    -   Select Add API Key.
-    -   Select Paste Public Key and then enter the **RSA public key** generated in Step 2.
-    -   After addition, you can see the **user** and **tenancy** on the screen. Copy the information to Notepad.
+   - Select Create user and then create a new user or select a user.
+   - On the User Details screen, add the user to the group selected in Step 3.
+   - Select API Keys at the lower left.
+   - Select Add API Key.
+   - Select Paste Public Key and then enter the **RSA public key** generated in Step 2.
+   - After addition, you can see the **user** and **tenancy** on the screen. Copy the information to Notepad.
 
-6.  Select Compartment at the bottom of the Identity & Security menu, and then copy the **OCID** of the compartment to be monitored to Notepad.
+6. Select Compartment at the bottom of the Identity & Security menu, and then copy the **OCID** of the compartment to be monitored to Notepad.
 
-7.  Return to **_Management_** > **_Agent Installation_** and then enter values for **_Tenancy_** and **_User_** checked in Step 5 and **_CompartmentID_** checked in Step 6
+7. Return to **_Management_** > **_Agent Installation_** and then enter values for **_Tenancy_** and **_User_** checked in Step 5 and **_CompartmentID_** checked in Step 6
 
-8.  Select **_OK_**.
+8. Select **_OK_**.
 
 ### Selecting the namespace and collection cycle
 
@@ -75,52 +75,52 @@ After installation, extra charge may be incurred in the cloud depending on the u
 
 #### Namespace
 
--   API Gateway
--   Bastion
--   Big Data
--   Blockchain Platform
--   Block Volume
--   Events
--   Compute
--   Compute Infrastructure Health
--   ComputeAgent
--   Data TransferData Flow
--   Database Migration
--   Data TransferDatacatalog
--   Data TransferDataintegration
--   DevOpsDevops Build
--   DevOpsDevops Code Repos
--   DevOpsDevops Deployment
--   Digital Assistant
--   DNS
--   Email Delivery
--   Functions
--   NetworkingFastconnect
--   File Storage
--   GoldenGate
--   Health Checks
--   ComputeNstancepools
--   IntegrationNtegration
--   Java Management
--   VaultKms Keys
--   Load Balancing
--   Logging Analytics
--   Management Agent
--   IntegrationMonitoring Metrics
--   NoSQL
--   Notifications
--   Object Storage
--   Container Engine for Kubernetes
--   Operations Insights
--   OS Management
--   VaultSecrets
--   Service Connector Hub
--   NetworkingService Gateway
--   Streaming
--   NetworkingVcn
--   NetworkingVpn
--   Vulnerability Scanning
--   WAF
+- API Gateway
+- Bastion
+- Big Data
+- Blockchain Platform
+- Block Volume
+- Events
+- Compute
+- Compute Infrastructure Health
+- ComputeAgent
+- Data TransferData Flow
+- Database Migration
+- Data TransferDatacatalog
+- Data TransferDataintegration
+- DevOpsDevops Build
+- DevOpsDevops Code Repos
+- DevOpsDevops Deployment
+- Digital Assistant
+- DNS
+- Email Delivery
+- Functions
+- NetworkingFastconnect
+- File Storage
+- GoldenGate
+- Health Checks
+- ComputeNstancepools
+- IntegrationNtegration
+- Java Management
+- VaultKms Keys
+- Load Balancing
+- Logging Analytics
+- Management Agent
+- IntegrationMonitoring Metrics
+- NoSQL
+- Notifications
+- Object Storage
+- Container Engine for Kubernetes
+- Operations Insights
+- OS Management
+- VaultSecrets
+- Service Connector Hub
+- NetworkingService Gateway
+- Streaming
+- NetworkingVcn
+- NetworkingVpn
+- Vulnerability Scanning
+- WAF
 
 ### Selecting the region, metric, and stat
 
@@ -132,10 +132,10 @@ After installation, extra charge may be incurred in the cloud depending on the u
 
 <ImgLang img='cloud-deact.png' desc='비활성화 및 서비스 초기화 sc' />
 
--   ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
+- ![Leader line a](/img/char-a.svg) When the collection toggle ![Icon](/img/ic-toggle-off.svg) is disabled, the data collection is stopped.
 
--   ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
+- ![Leader line b](/img/char-b.svg) Select **_Change Role_** to disable all services that are collecting metrics by selecting ![Leader line c](/img/char-c.svg) **_Service initialization_** on the **_Agent installation_** screen.
 
--   To completely avoid incurring costs, delete the following items: 
+- To completely avoid incurring costs, delete the following items: 
 
-    -   In Oracle Cloud Console Identity & Security, select a domain and a user, and then delete the fingerprint of API Keys.
+  - In Oracle Cloud Console Identity & Security, select a domain and a user, and then delete the fingerprint of API Keys.

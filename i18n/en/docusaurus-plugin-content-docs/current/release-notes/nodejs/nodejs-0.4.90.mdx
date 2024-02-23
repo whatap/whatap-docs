@@ -1,0 +1,37 @@
+---
+id: nodejs-0_4_90
+title: Node.js Agent v0.4.90
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_4_89
+displayed_sidebar: releaseSidebar
+---
+
+February 5, 2024
+
+- <Status>New</Status> Added the agent setting options.
+
+  - **httpc_not_found_ignore** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If more than 50 Not Found errors occur in a certain time (`httpc_not_found_ignore_time`), monitoring detection is ignored.
+
+  - **httpc_not_found_ignore_time** <span class='type'>Milisecond</span>
+
+    Default `300000`
+
+    If the value of `httpc_not_found_ignore` is `true`, set the time to ignore the Not Found errors.
+
+- <Status>Fixed</Status> Fixed the issue where the Mongoose tracking does not work.
+
+:::info
+
+- Package information: https://www.npmjs.com/package/whatap
+
+- Installation and application methods
+
+  ```bash
+  npm i whatap
+  ```
+
+:::

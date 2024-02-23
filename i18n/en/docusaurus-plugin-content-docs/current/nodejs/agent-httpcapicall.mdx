@@ -10,6 +10,18 @@ tags:
 
 It provides the HTTPC and API call related options of the Node.js agent.
 
-**hook_httpc_patterns** <span class='type'>String</span>
+- **hook_httpc_patterns** <span class='type'>String</span>
 
   Set the class that performs the HTTP calls.
+
+- **httpc_not_found_ignore** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  If more than 50 Not Found errors occur in a certain time (`httpc_not_found_ignore_time`), monitoring detection is ignored.
+
+- **httpc_not_found_ignore_time** <span class='type'>Milisecond</span>
+
+  Default `300000`
+
+  If the value of `httpc_not_found_ignore` is `true`, set the time to ignore the Not Found errors.

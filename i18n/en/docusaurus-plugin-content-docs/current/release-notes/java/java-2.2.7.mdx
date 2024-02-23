@@ -9,37 +9,37 @@ June 5, 2023
 
 ## New Feature <sup><Status>New</Status></sup>
 
--   Tracing the spring-boot
+- Tracing the spring-boot
 
-    -   Tracing "@Async"
+  - Tracing "@Async"
 
-        ```ini title='whatap.conf'
-        # In case of spring-boot-2.7 or later
-        weaving=tomcat9,spring-boot-2.7.x
+    ```ini title='whatap.conf'
+    # In case of spring-boot-2.7 or later
+    weaving=tomcat9,spring-boot-2.7.x
 
-        # In case of spring-boot-3.0 or later
-        weaving=tomcat10,spring-boot-3.x
-        springboot_tomcat10_enabled=true
-        ```
--   Tracing the netflix-zuul
+    # In case of spring-boot-3.0 or later
+    weaving=tomcat10,spring-boot-3.x
+    springboot_tomcat10_enabled=true
+    ```
+- Tracing the netflix-zuul
 
-    -   Zuul-based tracing
-        ```ini title='whatap.conf'
-        # zuul
-        weaving=zuul
-        ```
--   Tracing the redis
+  - Zuul-based tracing
+    ```ini title='whatap.conf'
+    # zuul
+    weaving=zuul
+    ```
+- Tracing the redis
 
-    -   Tracing the lettuce-core-5.1
-        ```ini title='whatap.conf'
-        # redis: lettuce-core-5.1
-        weaving=lettuce-5.1
-        ```
--   Tracing the reactor-kafka
+  - Tracing the lettuce-core-5.1
+    ```ini title='whatap.conf'
+    # redis: lettuce-core-5.1
+    weaving=lettuce-5.1
+    ```
+- Tracing the reactor-kafka
 
-    -   Tracing the reactor-kafka-1.x
+  - Tracing the reactor-kafka-1.x
 
-        ```ini title='whatap.conf'
-        # kafka: reactor-kafka-1.x
-        weaving=reactor-kafka-1.x
-        ```
+    ```ini title='whatap.conf'
+    # kafka: reactor-kafka-1.x
+    weaving=reactor-kafka-1.x
+    ```

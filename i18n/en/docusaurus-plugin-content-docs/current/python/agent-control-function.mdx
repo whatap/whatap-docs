@@ -10,68 +10,68 @@ tags:
 
 The functions of the Python application server are controlled.
 
--   **enabled** <span class='type'>Boolean</span>
+- **enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    All functions are enabled. Even when the value is `false`, the minimum data to maintain communication with the server is sent.
+  All functions are enabled. Even when the value is `false`, the minimum data to maintain communication with the server is sent.
 
--   **counter_enabled** <span class='type'>Boolean</span>
+- **counter_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The performance counter tracing is enabled. The performance counter includes data such as active transaction, user, CPU, memory, SQL, and outbound HTTP call. It is ignored when the `enabled` value is `false`.
+  The performance counter tracing is enabled. The performance counter includes data such as active transaction, user, CPU, memory, SQL, and outbound HTTP call. It is ignored when the `enabled` value is `false`.
 
--   **stat_enabled** <span class='type'>Boolean</span>
+- **stat_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    The statistics tracing is enabled. Statistical data such as transactions, SQL queries, outbound HTTP calls, user agents, and client IPs is collected every 5 minutes, but now the collection is stopped. It is ignored when the `enabled` value is `false`. 
+  The statistics tracing is enabled. Statistical data such as transactions, SQL queries, outbound HTTP calls, user agents, and client IPs is collected every 5 minutes, but now the collection is stopped. It is ignored when the `enabled` value is `false`. 
 
--   **active_stack_enabled** <span class='type'>Boolean</span>
+- **active_stack_enabled** <span class='type'>Boolean</span>
 
-    Default `true`
+  Default `true`
 
-    Enable the active stack tracing.
+  Enable the active stack tracing.
 
-    :::note
+  :::note
 
-    If the `counter_enabled` value is disabled, the active stacks are not collected because no active transaction data is collected.
+  If the `counter_enabled` value is disabled, the active stacks are not collected because no active transaction data is collected.
 
-    :::
+  :::
 
--   **eactive_stack_second** <span class='type'>Seconds</span>
+- **eactive_stack_second** <span class='type'>Seconds</span>
 
-    Default `10`
+  Default `10`
 
-    Set the interval for tracing the active stacks.
+  Set the interval for tracing the active stacks.
 
-    :::caution
+  :::caution
 
-    It is not recommended changing the value.
+  It is not recommended changing the value.
 
-    :::
+  :::
 
--   **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
+- **realtime_user_thinktime_max** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the maximum call interval credited by the same user when measuring the number of real-time users.
+  Set the maximum call interval credited by the same user when measuring the number of real-time users.
 
--   **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
+- **time_sync_interval_ms** <span class='type'>MiliSeconds</span>
 
-    Default `300000`
+  Default `300000`
 
-    Set the synchronization interval between the agents and the server. For no synchronization, set it to `0`.  
+  Set the synchronization interval between the agents and the server. For no synchronization, set it to `0`.  
 
--   **realtime_user_thinktime_max** <span class='type'>Int</span>
+- **realtime_user_thinktime_max** <span class='type'>Int</span>
 
-    Default `0`
+  Default `0`
 
-    The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
+  The WhaTap agent does not transmit the text data once sent until the next day again because it is hashed. If a value is set different from the previous setting, the data is sent again.
 
-    :::note
+  :::note
 
-    Transaction URLs and SQL strings correspond to text data.
+  Transaction URLs and SQL strings correspond to text data.
 
-    :::
+  :::

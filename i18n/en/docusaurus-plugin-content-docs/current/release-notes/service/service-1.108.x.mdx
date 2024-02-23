@@ -15,9 +15,9 @@ September 21, 2023
 
 In **_Analysis_** > **_HITMAP_**, the following have been modified.
 
--   <Status>Fixed</Status> Fixed the bug where the trace data cannot be viewed.
+- <Status>Fixed</Status> Fixed the bug where the trace data cannot be viewed.
 
--   <Status>Fixed</Status> Fixed the bug where the maximum number of rows in CSV download is limited to 1000.
+- <Status>Fixed</Status> Fixed the bug where the maximum number of rows in CSV download is limited to 1000.
 
 </div>
 
@@ -85,13 +85,13 @@ September 13, 2023
 
 ### `Server`
 
--   <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Resource board</UI> / <UI>CPU resource map</UI>, fixed the bug where the layout does not appear correctly on the Safari browser.
+- <Status>Fixed</Status> In <UI>Dashboard</UI> > <UI>Resource board</UI> / <UI>CPU resource map</UI>, fixed the bug where the layout does not appear correctly on the Safari browser.
 
--   <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, fixed to wrap the metric text to fit the width in <UI>Event rule condition</UI> under the <UI>Add Alert Policy</UI> window.
+- <Status>Fixed</Status> In <UI>Alert</UI> > <UI>Event setting</UI>, fixed to wrap the metric text to fit the width in <UI>Event rule condition</UI> under the <UI>Add Alert Policy</UI> window.
 
--   <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, deleted the <UI>Silent Install</UI> button among the Windows installation file options.
+- <Status>Fixed</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, deleted the <UI>Silent Install</UI> button among the Windows installation file options.
 
--   <Status>Fixed</Status> In <UI>Log</UI> > <UI>Log setting</UI>, modified the directory path of the Windows command code.
+- <Status>Fixed</Status> In <UI>Log</UI> > <UI>Log setting</UI>, modified the directory path of the Windows command code.
 
 </div>
 
@@ -133,37 +133,37 @@ September 8, 2023
 
 ### `Common`
 
--   <Status>Feature</Status> Added the function to display the default interval value, if you select <UI>Default</UI> among the <UI>Interval</UI> selection options.
+- <Status>Feature</Status> Added the function to display the default interval value, if you select <UI>Default</UI> among the <UI>Interval</UI> selection options.
 
-    <div class='release-compare'>
+  <div class='release-compare'>
 
-    |                    Before                    |                    After                    |
-    | :------------------------------------------: | :-----------------------------------------: |
-    | ![](/img/release/interval-option-before.png) | ![](/img/release/interval-option-after.png) |
+  |                    Before                    |                    After                    |
+  | :------------------------------------------: | :-----------------------------------------: |
+  | ![](/img/release/interval-option-before.png) | ![](/img/release/interval-option-after.png) |
 
-    </div>
+  </div>
 
--   <Status>Changed</Status> Modified to select <UI>Default</UI> among the <UI>Interval</UI> selection options, when any <UI>time</UI> search section is changed.
+- <Status>Changed</Status> Modified to select <UI>Default</UI> among the <UI>Interval</UI> selection options, when any <UI>time</UI> search section is changed.
 
-    When changing the search section, the **_Interval_** option is selected as **_Default_** in the following cases:
+  When changing the search section, the **_Interval_** option is selected as **_Default_** in the following cases:
 
-    -   The previous selection in the **_Interval_** option is **_Default_**.
+  - The previous selection in the **_Interval_** option is **_Default_**.
 
-    -   The previous selection in the **_Interval_** option is not **_Default_** and it is not in the changed **_Interval_** option list.
+  - The previous selection in the **_Interval_** option is not **_Default_** and it is not in the changed **_Interval_** option list.
 
-    -   The previous selection in the **_Interval_** option is not **_Default_** and the selected **_Interval_** option value is less than half of the search period.
+  - The previous selection in the **_Interval_** option is not **_Default_** and the selected **_Interval_** option value is less than half of the search period.
 
--   <Status>Fixed</Status> Fixed the error where, in some situations, pressing <UI>OK</UI> in the <UI>Column settings</UI> pop-up displays an unknown error message and it does not work.
+- <Status>Fixed</Status> Fixed the error where, in some situations, pressing <UI>OK</UI> in the <UI>Column settings</UI> pop-up displays an unknown error message and it does not work.
 
--   <Status>Fixed</Status> In the card view screen for the <UI>Project list</UI> of the initial screen, fixed the bug where the <UI>application</UI> count appears as 0.
+- <Status>Fixed</Status> In the card view screen for the <UI>Project list</UI> of the initial screen, fixed the bug where the <UI>application</UI> count appears as 0.
 
 * * *
 
 ### `Application`
 
--   <Status>Changed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI> for the Java project, changed the category for the <code>biz_exceptions</code> and <code>ignore_exceptions</code> options from <UI>Alert option</UI> > <UI>HTTP outbound call</UI> to <UI>Exception</UI>.
+- <Status>Changed</Status> In <UI>Management</UI> > <UI>Agent CONFIG.</UI> for the Java project, changed the category for the <code>biz_exceptions</code> and <code>ignore_exceptions</code> options from <UI>Alert option</UI> > <UI>HTTP outbound call</UI> to <UI>Exception</UI>.
 
--   <Status>Fixed</Status> Fixed the issue where the layout is broken when the log search password has been set in the <UI>Transaction log</UI> tab of the <UI>Trace analysis</UI> window.
+- <Status>Fixed</Status> Fixed the issue where the layout is broken when the log search password has been set in the <UI>Transaction log</UI> tab of the <UI>Trace analysis</UI> window.
 
 * * *
 
@@ -203,17 +203,17 @@ September 4, 2023
 
 <p><Status>Changed</Status> Modified the following in the <UI>Transaction analysis</UI> window.</p>
 
--   Modified only the <UI>No</UI> column cannot be deleted in <UI>Column settings</UI> for the transaction list.
+- Modified only the <UI>No</UI> column cannot be deleted in <UI>Column settings</UI> for the transaction list.
 
--   Changed the minimum number of selected columns in the transaction list to 5.
+- Changed the minimum number of selected columns in the transaction list to 5.
 
--   Added <UI>error</UI> options in Filter for the transaction list.
+- Added <UI>error</UI> options in Filter for the transaction list.
 
 #### Transaction search
 
--   <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> column.
+- <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> column.
 
--   <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> metric into the downloaded CSV data file.
+- <Status>Changed</Status> In <UI>Analysis</UI> > <UI>Transaction search</UI>, added the <UI>Original URL</UI> metric into the downloaded CSV data file.
 
 </div>
 
@@ -259,11 +259,11 @@ August 31, 2023
 
 This change can be useful when sharing the URL of the selected transaction with other users. 
 
-1.  Select a specific transaction from the transaction list, and then copy the URL of the web browser.
+1. Select a specific transaction from the transaction list, and then copy the URL of the web browser.
 
-2.  Go to the URL in the web browser through a new tab or window.
+2. Go to the URL in the web browser through a new tab or window.
 
-3.  You can see that the transaction has been selected in the transaction list.
+3. You can see that the transaction has been selected in the transaction list.
 
 #### Alert
 
@@ -287,9 +287,9 @@ August 30, 2023
 
 <p><Status>Fixed</Status> In <UI>Log search</UI>, fixed the issue where operators are missing after clicking the number (.n) tag in the log and selecting the next item from the drop-down menu.</p>
 
--   Fixed the issue where the <code>==</code> operator is missing when <UI>Search</UI> is selected.
+- Fixed the issue where the <code>==</code> operator is missing when <UI>Search</UI> is selected.
 
--   Fixed the issue where the <code>!=</code> operator is missing if <UI>Exclusion search</UI> has been selected.
+- Fixed the issue where the <code>!=</code> operator is missing if <UI>Exclusion search</UI> has been selected.
 
 </div>
 
@@ -325,23 +325,23 @@ August 28, 2023
 
 ### `Common`
 
--   <Status>Fixed</Status> In the <UI>TOO_SLOW_SQL</UI> template in <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI>, deleted the duplicate and unused values for <UI>Event rule</UI>.
+- <Status>Fixed</Status> In the <UI>TOO_SLOW_SQL</UI> template in <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Metrics</UI>, deleted the duplicate and unused values for <UI>Event rule</UI>.
 
--   <Status>Fixed</Status> If the language has been set to English, modified the unnatural spacing in notification messages displayed in the following cases for the <UI>Manage account INFO.</UI> menu.
+- <Status>Fixed</Status> If the language has been set to English, modified the unnatural spacing in notification messages displayed in the following cases for the <UI>Manage account INFO.</UI> menu.
 
-    -   In case the multi-factor authentication is disabled
+  - In case the multi-factor authentication is disabled
 
-    -   In case the OTP authentication key is created
+  - In case the OTP authentication key is created
 
-    -   In case the OTP authentication is canceled
+  - In case the OTP authentication is canceled
 
 * * *
 
 ### `Application`
 
--   <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>HITMAP</UI>, changed the default value in the application selection box into <UI>Select all</UI>.
+- <Status>Fixed</Status> In <UI>Analysis</UI> > <UI>HITMAP</UI>, changed the default value in the application selection box into <UI>Select all</UI>.
 
--   <Status>Feature</Status> In the <UI>Client IP</UI> tab under <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, added to display <b>(Whatap)</b> when it corresponds to the WhaTap IP address in the IP list.
+- <Status>Feature</Status> In the <UI>Client IP</UI> tab under <UI>STAT/REPORT</UI> > <UI>Statistics</UI>, added to display <b>(Whatap)</b> when it corresponds to the WhaTap IP address in the IP list.
 
 </div>
 
@@ -431,9 +431,9 @@ August 23, 2023
 
 #### Flex Board
 
--   <Status>Fixed</Status> In <UI>Flex Board</UI>, hided the blog content when creating a Flex Board if the language is not set to Korean.
+- <Status>Fixed</Status> In <UI>Flex Board</UI>, hided the blog content when creating a Flex Board if the language is not set to Korean.
 
--   <Status>Fixed</Status> In case of merging the series widget objects in <UI>Flex Board</UI>, fixed the problem where the maximum and minimum values do not work.
+- <Status>Fixed</Status> In case of merging the series widget objects in <UI>Flex Board</UI>, fixed the problem where the maximum and minimum values do not work.
 
 * * *
 
@@ -451,21 +451,21 @@ August 23, 2023
 
 #### V2 commons
 
--   <Status>Change</Status> Modified the modal UI for the table column selector.
+- <Status>Change</Status> Modified the modal UI for the table column selector.
 
--   <Status>Change</Status> Modified the <UI>Session Kill</UI> button to be exposed only to the members with <b>Edit</b> role among project members.
+- <Status>Change</Status> Modified the <UI>Session Kill</UI> button to be exposed only to the members with <b>Edit</b> role among project members.
 
--   <Status>Feature</Status> Applied to display maximum data values on the line chart.
+- <Status>Feature</Status> Applied to display maximum data values on the line chart.
 
--   In <UI>Dashboard</UI> > <UI>Multiple instance monitoring</UI>, the following functions have been added or modified.
+- In <UI>Dashboard</UI> > <UI>Multiple instance monitoring</UI>, the following functions have been added or modified.
 
-    -   <Status>Feature</Status> Added the Info icon to display metrics for each widget.
+  - <Status>Feature</Status> Added the Info icon to display metrics for each widget.
 
-    -   <Status>Feature</Status> Separated the tabs for each product environment (RDS, XOS).
+  - <Status>Feature</Status> Separated the tabs for each product environment (RDS, XOS).
 
-    -   <Status>Change</Status> In the <UI>XOS Disk Usage</UI> widget, modified as <code>Mount Source</code> → <code>Mount Point</code> among the table columns (requires an update to the latest version of agent).
+  - <Status>Change</Status> In the <UI>XOS Disk Usage</UI> widget, modified as <code>Mount Source</code> → <code>Mount Point</code> among the table columns (requires an update to the latest version of agent).
 
--   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Database Size</UI>, Download CSV has been added.
+- <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Database Size</UI>, Download CSV has been added.
 
 #### PostgresSQL
 
@@ -477,37 +477,37 @@ August 23, 2023
 
 #### SQL Server
 
--   <Status>Change</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the configuration command example in <em>whatap.conf</em> under the <UI>Download database agent</UI> section.
+- <Status>Change</Status> In <UI>Management</UI> > <UI>Agent installation</UI>, added the configuration command example in <em>whatap.conf</em> under the <UI>Download database agent</UI> section.
 
 * * *
 
 ### `Container`
 
--   <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, replaced the filter to enhance the function.
+- <Status>Feature</Status> In <UI>Dashboard</UI> > <UI>Container map</UI>, replaced the filter to enhance the function.
 
--   <Status>Change</Status> Separated the tags in the summary view of <UI>Container map</UI> into the <UI>Target Information</UI> tab.
+- <Status>Change</Status> Separated the tags in the summary view of <UI>Container map</UI> into the <UI>Target Information</UI> tab.
 
 * * *
 
 ### `Log`
 
--   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Log</UI> > <UI>Composite log event</UI>, added the templates for function update and addition of the log event template.
+- <Status>Feature</Status> In <UI>Alert</UI> > <UI>Event Setting</UI> > <UI>Log</UI> > <UI>Composite log event</UI>, added the templates for function update and addition of the log event template.
 
--   <Status>Feature</Status> In <UI>Alert</UI> > <UI>Log</UI>, the filtering is disabled when no category is selected in case of adding the template events with <UI>Composite log event</UI>.
+- <Status>Feature</Status> In <UI>Alert</UI> > <UI>Log</UI>, the filtering is disabled when no category is selected in case of adding the template events with <UI>Composite log event</UI>.
 
--   <Status>Change</Status> In the highlight function under <UI>Log</UI>, changed the colors that can be selected and the log's body font.
+- <Status>Change</Status> In the highlight function under <UI>Log</UI>, changed the colors that can be selected and the log's body font.
 
--   <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the filter operator from <code>=</code> to <code>!=</code>.
+- <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the filter operator from <code>=</code> to <code>!=</code>.
 
--   <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the search value that appears by entering the numeric keyword, <code>.n</code> to be displayed from <code>+>= 123</code> to <code>>= 123</code> as the <code>comparison operator</code> <code>search value</code>.
+- <Status>Fixed</Status> In <UI>Log Search</UI> and <UI>Live Tail</UI>, modified the search value that appears by entering the numeric keyword, <code>.n</code> to be displayed from <code>+>= 123</code> to <code>>= 123</code> as the <code>comparison operator</code> <code>search value</code>.
 
--   <Status>Feature</Status> Added the scroll position movement and highlighting functions to the base log from the adjacent logs.
+- <Status>Feature</Status> Added the scroll position movement and highlighting functions to the base log from the adjacent logs.
 
--   <Status>Change</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, deleted <UI>All</UI> from <UI>Search key</UI> when newly creating a <UI>real-time log event</UI>.
+- <Status>Change</Status> In <UI>Alert</UI> > <UI>Event setting</UI> > <UI>Log</UI>, deleted <UI>All</UI> from <UI>Search key</UI> when newly creating a <UI>real-time log event</UI>.
 
--   <Status>Fixed</Status> In <UI>Log Search</UI>, modified not to display the drop-down menu when the <code>pcode</code> tag is clicked.
+- <Status>Fixed</Status> In <UI>Log Search</UI>, modified not to display the drop-down menu when the <code>pcode</code> tag is clicked.
 
--   <Status>Feature</Status> In <UI>Log setting</UI>, improved the selection UI for detection of categories and logs.
+- <Status>Feature</Status> In <UI>Log setting</UI>, improved the selection UI for detection of categories and logs.
 
 * * *
 
@@ -517,10 +517,10 @@ August 23, 2023
 
 <p>In <UI>Page Load Hitmap</UI>, the following have been modified.</p>
 
--   <Status>Feature</Status> In <UI>Page Load Details</UI>, added the browser error data and step column.
+- <Status>Feature</Status> In <UI>Page Load Details</UI>, added the browser error data and step column.
 
--   <Status>Feature</Status> In <UI>Page List</UI>, the red font color appears for page load events that include the browser error data.
+- <Status>Feature</Status> In <UI>Page List</UI>, the red font color appears for page load events that include the browser error data.
 
--   <Status>Feature</Status> It has been set to limit the search time to the maximum of 15 days and to make it impossible to search for data older than 30 days in the past.
+- <Status>Feature</Status> It has been set to limit the search time to the maximum of 15 days and to make it impossible to search for data older than 30 days in the past.
 
 </div>

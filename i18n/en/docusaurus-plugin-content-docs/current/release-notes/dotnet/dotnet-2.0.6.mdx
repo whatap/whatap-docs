@@ -7,42 +7,42 @@ displayed_sidebar: releaseSidebar
 
 #### May 2, 2023
 
--   <Status>New</Status> Added the StackExchcange Redis latest library (2.x).
+- <Status>New</Status> Added the StackExchcange Redis latest library (2.x).
 
--   <Status>New</Status> Added the Oracle.ManagedDataAccess latest library (up to the 19.19.0 version).
+- <Status>New</Status> Added the Oracle.ManagedDataAccess latest library (up to the 19.19.0 version).
 
--   <Status>New</Status> Added the function to select and trace only specific application pools.
+- <Status>New</Status> Added the function to select and trace only specific application pools.
 
-    -   **application_pool_filter_enabled** <span class='type'>Boolean</span>
+  - **application_pool_filter_enabled** <span class='type'>Boolean</span>
 
-        Default `false`
+    Default `false`
 
-        Set it to `true` to trace only the applications registered in the `application_pool_filter` option.
+    Set it to `true` to trace only the applications registered in the `application_pool_filter` option.
 
-    -   **application_pool_filter** <span class='type'>String</span>
+  - **application_pool_filter** <span class='type'>String</span>
 
-        Enter the name of the application to trace. You can set multiple values using comma (,) as a separator.
+    Enter the name of the application to trace. You can set multiple values using comma (,) as a separator.
 
-        ```ini title='whatap.conf'
-        application_pool_filter="DefaultAppPool, userSiteAppName"
-        ```
+    ```ini title='whatap.conf'
+    application_pool_filter="DefaultAppPool, userSiteAppName"
+    ```
 
--   <Status>Fixed</Status> Fixed the bug where <b>ASP.NET Web API</b> could not be traced.
+- <Status>Fixed</Status> Fixed the bug where <b>ASP.NET Web API</b> could not be traced.
 
--   <Status>Fixed</Status> Fixed the bug where active transactions could not be traced.
+- <Status>Fixed</Status> Fixed the bug where active transactions could not be traced.
 
--   <Status>Fixed</Status> Fixed the bug where transaction IDs are sometimes duplicated.
+- <Status>Fixed</Status> Fixed the bug where transaction IDs are sometimes duplicated.
 
--   <Status>Fixed</Status> Fixed the problem where multiple threads simultaneously accessed the same log file and the log was ignored.
+- <Status>Fixed</Status> Fixed the problem where multiple threads simultaneously accessed the same log file and the log was ignored.
 
--   <Status>Fixed</Status> Fixed the bug where the user count is not measered.
+- <Status>Fixed</Status> Fixed the bug where the user count is not measered.
 
-    See [.NET Configuration - User count](../../dotnet/agent-number-of-user).
+  See [.NET Configuration - User count](../../dotnet/agent-number-of-user).
 
--   <Status>Fixed</Status> Fixed the bug where the <code>trace_httpc_normalize_urls</code> option does not work.
+- <Status>Fixed</Status> Fixed the bug where the <code>trace_httpc_normalize_urls</code> option does not work.
 
-    See [.NET Configuration - HTTPC, API Call](../../dotnet/agent-httpcapicall).
+  See [.NET Configuration - HTTPC, API Call](../../dotnet/agent-httpcapicall).
 
--   <Status>Fixed</Status> Fixed the bug where the <code> profile_http_header_enabled </code> option does not work.
+- <Status>Fixed</Status> Fixed the bug where the <code> profile_http_header_enabled </code> option does not work.
 
-    See [.NET Configuration - Transactions](../../dotnet/agent-transaction).
+  See [.NET Configuration - Transactions](../../dotnet/agent-transaction).

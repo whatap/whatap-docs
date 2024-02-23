@@ -8,29 +8,29 @@ displayed_sidebar: releaseSidebar
 
 January 16, 2024
 
--   <Status>Feature</Status> Added the Object Manifest collection function.
+- <Status>Feature</Status> Added the Object Manifest collection function.
 
-    Added the function to collect and store the cluster objects once a day at midnight in the specified time zone. To use this function, set the agent options as follows. For more information, see [the following](../../kubernetes/object-manifest).
+  Added the function to collect and store the cluster objects once a day at midnight in the specified time zone. To use this function, set the agent options as follows. For more information, see [the following](../../kubernetes/object-manifest).
 
-    -   `store_k8s_object_manifest_enabled` <span class='type'>Boolean</span>
+  - `store_k8s_object_manifest_enabled` <span class='type'>Boolean</span>
 
-        Default `true`
+    Default `true`
 
-        The Object Manifest collection feature can be enabled.
+    The Object Manifest collection feature can be enabled.
 
-    -   `store_k8s_object_manifest_timezone` <span class='type'>String</span>
+  - `store_k8s_object_manifest_timezone` <span class='type'>String</span>
 
-        Default `UTC`
+    Default `UTC`
 
-        Run the Object Manifest collection schedule at midnight in the specified time zone.
+    Run the Object Manifest collection schedule at midnight in the specified time zone.
 
-    -   `store_k8s_object_manifest_max_fetch_limit` <span class='type'>Int</span>
+  - `store_k8s_object_manifest_max_fetch_limit` <span class='type'>Int</span>
 
-        Default `50`
+    Default `50`
 
-        Set the number of objects to view at a time in the cluster.
+    Set the number of objects to view at a time in the cluster.
 
--   <Status>Fixed</Status> Improved the performance of the control plane monitoring agent, including the performance improvements for clients that communicate with the cluster.
+- <Status>Fixed</Status> Improved the performance of the control plane monitoring agent, including the performance improvements for clients that communicate with the cluster.
 
 :::info
 

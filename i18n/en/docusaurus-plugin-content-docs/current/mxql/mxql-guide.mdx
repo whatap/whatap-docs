@@ -17,29 +17,29 @@ MXQL consists of **command** and **operands** on each line, separated by spaces.
 
 `Command` is the reserved word that is a single word. `Command` is input in uppercase characters and `Operand` in lowercase characters. The format of `Operand` that can be input for each `Command` is fixed. `Operand` can have 4 types of values.
 
-1.  In case there is no operand
+1. In case there is no operand
 
-    ```sql
-    TAGLOAD
-    ```
+   ```sql
+   TAGLOAD
+   ```
 
-2.  String (number or word)
+2. String (number or word)
 
-    ```sql
-    CATEGORY app_counter
-    ```
+   ```sql
+   CATEGORY app_counter
+   ```
 
-3.  String array
+3. String array
 
-    ```sql
-    SELECT [ time, pcode ]
-    ```
+   ```sql
+   SELECT [ time, pcode ]
+   ```
 
-4.  JSON string type
+4. JSON string type
 
-    ```sql
-    FILTER { key : tx_count, value : 5}
-    ```
+   ```sql
+   FILTER { key : tx_count, value : 5}
+   ```
 
 ```sql title='Sample MXQL query'
 CATEGORY app_counter
@@ -64,11 +64,11 @@ In metrics, tags and fields are separated, but the **_MXQL Data_** menu displays
 
 MXQL has can be configured step by step. The types of **commands** that can be used for each step have been fixed, and the names and characteristics of each step are as follows: 
 
-1.  **Metric selection**: Select one of metrics collected by each agent.
+1. **Metric selection**: Select one of metrics collected by each agent.
 
-2.  **Metrics loading**: The metrics are loaded with the values set in the previous step. In most cases, use `TAGLOAD`. Only in special cases, use `FLEXLOAD`. To use `FLEXLOAD`, see [the following](mxql-loading#flexload-items).
+2. **Metrics loading**: The metrics are loaded with the values set in the previous step. In most cases, use `TAGLOAD`. Only in special cases, use `FLEXLOAD`. To use `FLEXLOAD`, see [the following](mxql-loading#flexload-items).
 
-3.  **Metrics processing**: It is performed step by step for the metrics loaded in the previous step.
+3. **Metrics processing**: It is performed step by step for the metrics loaded in the previous step.
 
 ```sql title='Example'
 # Metrics selection step
@@ -151,54 +151,54 @@ UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
 
 ## How to use the MetricValue type data
 
--   Set fields in the merge option of the `GROUP` command.
+- Set fields in the merge option of the `GROUP` command.
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
-    -- Using the merge option in the GROUP command, set the fields to be converted to MetricValue
-    GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
-    -- Apply the sum option via the UPDATE command
-    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
+  -- Using the merge option in the GROUP command, set the fields to be converted to MetricValue
+  GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
+  -- Apply the sum option via the UPDATE command
+  UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+  ```
 
--   Since the data has been saved to the collection server, all fields have the categories stored in MetricValue format. In **_Sitemap_** > **_Analysis_** > **_Metrics Search_** > **_Category_** option, you can see the categories that can be set in **_Basic_**, **_5 Minutes_**, and **_1 Hour_** units. Here, the category where you can select **_5 Minutes_** or **_1 Hour_** is the one saved in MetricValue format.
+- Since the data has been saved to the collection server, all fields have the categories stored in MetricValue format. In **_Sitemap_** > **_Analysis_** > **_Metrics Search_** > **_Category_** option, you can see the categories that can be set in **_Basic_**, **_5 Minutes_**, and **_1 Hour_** units. Here, the category where you can select **_5 Minutes_** or **_1 Hour_** is the one saved in MetricValue format.
 
-    <ImgLang img='mxql-3.png' desc='List of categories that can be set in MetricValue format' />
+  <ImgLang img='mxql-3.png' desc='List of categories that can be set in MetricValue format' />
 
-    If the name of the category in which **_5 Minutes_** or **_1 Hour_** can be selected, is combined with `{m5}` or `{h1}`, instead of applying the merge option of the `GROUP` command, you can apply the `sum` option of the `UPDATE` command. 
+  If the name of the category in which **_5 Minutes_** or **_1 Hour_** can be selected, is combined with `{m5}` or `{h1}`, instead of applying the merge option of the `GROUP` command, you can apply the `sum` option of the `UPDATE` command. 
 
-    ```sql
-    CATEGORY app_counter{m5}
-    TAGLOAD
-    SELECT [time, pname, host_ip, pid, httpc_count]
-    -- Even if you have not applied the GROUP command, you can apply the UPDATE command because the data is already of the MetricValue type.
-    UPDATE { key : httpc_count, value : avg }
-    ```
+  ```sql
+  CATEGORY app_counter{m5}
+  TAGLOAD
+  SELECT [time, pname, host_ip, pid, httpc_count]
+  -- Even if you have not applied the GROUP command, you can apply the UPDATE command because the data is already of the MetricValue type.
+  UPDATE { key : httpc_count, value : avg }
+  ```
 
 ## Basic operation of MetricValue type `avg`
 
 The default output for MetricValue type fields is `avg`. `avg` is applied to MetricValue type fields unless a separate option has been set. The following two queries have the same result.
 
--   **In case avg has not been set**
+- **In case avg has not been set**
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode,pname, tps]
-    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode,pname, tps]
+  GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+  ```
 
--   **In case avg has been set**
+- **In case avg has been set**
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode,pname, tps]
-    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-    UPDATE {key:tps, value:avg}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode,pname, tps]
+  GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+  UPDATE {key:tps, value:avg}
+  ```
 
 ## Predefined MXQL query statement{#custom-mxql}
 
@@ -270,8 +270,8 @@ Bind variable names can only contain uppercase and lowercase characters. Numbers
 
 Data that can be searched in MXQL is divided into two types depending on the format of [Metrics](../metrics/common-metrics-intro).
 
--   Data in which the metric is divided into tags and fields to be loaded using the stored data [TAGLOAD](mxql-loading#tagload).
--   All metrics data stored in fields (data that can be loaded using [FLEXLOAD](mxql-loading#flexload))
+- Data in which the metric is divided into tags and fields to be loaded using the stored data [TAGLOAD](mxql-loading#tagload).
+- All metrics data stored in fields (data that can be loaded using [FLEXLOAD](mxql-loading#flexload))
 
 Most categories are using `TAGLOAD`. `FLEXLOAD` is used only when using data of categories included in [the following](mxql-loading#flexload-items).
 
@@ -287,51 +287,51 @@ You can save the query to register as a file in the path set in `mxql_root` of t
 
 ### Number of active transactions by agent, number of cases, last 15 seconds
 
--   Path: _/app/act_tx/act_tx_oid_
--   Query: 
+- Path: _/app/act_tx/act_tx_oid_
+- Query: 
 
-    ```sql
-    HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
+  ```sql
+  HEADER {  act0$:I, act3$:I, act8$:I, act$:I}
 
-    TIME-RANGE {duration:15s, etime:$etime}
+  TIME-RANGE {duration:15s, etime:$etime}
 
-    OIDSET {oid:$oid, okind:$okind, onode:$onode}
+  OIDSET {oid:$oid, okind:$okind, onode:$onode}
 
-    CATEGORY app_counter
+  CATEGORY app_counter
 
-    TAGLOAD {backward:true}
+  TAGLOAD {backward:true}
 
-    SELECT [oid, oname, active_tx_0, active_tx_3, active_tx_8, active_tx_count]
-    FIRST-ONLY {key:oid}
-    RENAME {src:active_tx_0,  dst:act0}
-    RENAME {src:active_tx_3,  dst:act3}
-    RENAME {src:active_tx_8,  dst:act8}
-    RENAME {src:active_tx_count,  dst:act}
+  SELECT [oid, oname, active_tx_0, active_tx_3, active_tx_8, active_tx_count]
+  FIRST-ONLY {key:oid}
+  RENAME {src:active_tx_0,  dst:act0}
+  RENAME {src:active_tx_3,  dst:act3}
+  RENAME {src:active_tx_8,  dst:act8}
+  RENAME {src:active_tx_count,  dst:act}
 
-    CREATE {key:_id_, from:oid}
-    CREATE {key:_name_, from:oname}
-    ```
+  CREATE {key:_id_, from:oid}
+  CREATE {key:_name_, from:oname}
+  ```
 
 ### Detailed information by agent, number of active transactions by agent, number of cases, last 15 seconds
 
--   Path: _/app/act_tx/agent_with_tx_
--   Query: 
+- Path: _/app/act_tx/agent_with_tx_
+- Query: 
 
-    ```sql
-    CATEGORY agent_list
+  ```sql
+  CATEGORY agent_list
 
-    OIDSET {oid:$oid, okind:$okind, onode:$onode}
+  OIDSET {oid:$oid, okind:$okind, onode:$onode}
 
-    FLEXLOAD
+  FLEXLOAD
 
-    JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8, act] }
+  JOIN {query:'/app/act_tx/act_tx_oid', pk:oid, field:[act0,act3,act8, act] }
 
-    UPDATE {key:act0, notnull:0}
-    UPDATE {key:act3, notnull:0}
-    UPDATE {key:act8, notnull:0}
-    UPDATE {key:act, notnull:0}
+  UPDATE {key:act0, notnull:0}
+  UPDATE {key:act3, notnull:0}
+  UPDATE {key:act8, notnull:0}
+  UPDATE {key:act, notnull:0}
 
-    RENAME {src:[act0, act3, act8, act],  dst:[normal, slow, verySlow, total]}
+  RENAME {src:[act0, act3, act8, act],  dst:[normal, slow, verySlow, total]}
 
-    INJECT default
-    ```
+  INJECT default
+  ```

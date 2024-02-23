@@ -19,23 +19,23 @@ Select a project in the initial screen of the WhaTap monitoring service, and the
 
 It displays the current status of the collection server by status. The status is updated every 1 minute.
 
--   ![Disable icon](/img/ico-disable-agent.svg)**Disabled**: The agent cannot collect data from the server.
+- ![Disable icon](/img/ico-disable-agent.svg)**Disabled**: The agent cannot collect data from the server.
 
--   ![Danger icon](/img/ic-warning-critical.svg)**Danger** : Any fatal events occur in the collection server.
+- ![Danger icon](/img/ic-warning-critical.svg)**Danger** : Any fatal events occur in the collection server.
 
--   ![Warning icon](/img/ic-warning-filled.svg)**Warning** : Any warning events occur in the collection server.
+- ![Warning icon](/img/ic-warning-filled.svg)**Warning** : Any warning events occur in the collection server.
 
--   ![Normal icon](/img/ic-check-circle-filled.svg)**Normal** : The agent is running normally in the collection server.
+- ![Normal icon](/img/ic-check-circle-filled.svg)**Normal** : The agent is running normally in the collection server.
 
--   ![Icon](/img/ic-s-pause.svg)**Pause** : The agent temporarily paused collecting data.
+- ![Icon](/img/ic-s-pause.svg)**Pause** : The agent temporarily paused collecting data.
 
 ## ![](/img/number-02.png) Data update
 
 The data on the server list page is automatically updated every 60 seconds.
 
--   ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : You can stop automatic update of the data. 
--   ![Playback icon](/img/ic-play-grn.svg)**_Playback_** : You can restart the auto update you have stopped.
--   ![Refresh icon](/img/ic-refresh2.svg)**_Refresh_** : You can update the data based on the current time.
+- ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : You can stop automatic update of the data. 
+- ![Playback icon](/img/ic-play-grn.svg)**_Playback_** : You can restart the auto update you have stopped.
+- ![Refresh icon](/img/ic-refresh2.svg)**_Refresh_** : You can update the data based on the current time.
 
 ## ![](/img/number-03.png) Server Status
 
@@ -47,31 +47,31 @@ It displays the status of all servers to which agents are assigned. If an agent 
 
 ### Columns
 
--   ![Columns Icon](/img/ic-column.svg) **_Select Column_**
+- ![Columns Icon](/img/ic-column.svg) **_Select Column_**
 
-    ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Select Column_**, you can select columns to displays in the table as follows.
+  ![number-s](/img/number-03.png) In the menu at the top, if you click ![Column icon](/img/ic-column.svg)**_Select Column_**, you can select columns to displays in the table as follows.
 
-    <ImgLang img='server-list-cl.png' desc='Server list column'/>
+  <ImgLang img='server-list-cl.png' desc='Server list column'/>
 
-    :::note
+  :::note
 
-    The selected **_Columns_** are stored as the browser cookie values so that the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the full selection state.
+  The selected **_Columns_** are stored as the browser cookie values so that the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the full selection state.
 
-    :::
+  :::
 
--   **Column Width Setting**
+- **Column Width Setting**
 
-    You can set the column width by dragging the edge of the column title.
+  You can set the column width by dragging the edge of the column title.
 
--   **Align Columns**
+- **Align Columns**
 
-    Sort Columns By clicking the column title, you can sort in ascending or descending order.
+  Sort Columns By clicking the column title, you can sort in ascending or descending order.
 
-    :::note
+  :::note
 
-    The settings for **Columns Width** and **Columns Align** are stored in the browser cookies and the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the unset state.
+  The settings for **Columns Width** and **Columns Align** are stored in the browser cookies and the status is maintained after refreshing the page. If an error occurs between settings due to cookie deletion or other reasons, it is initialized to the unset state.
 
-    :::
+  :::
 
 ### Filtering
 
@@ -81,19 +81,19 @@ Tags are automatically assigned when installing the agent. You can add input val
 
 <ImgLang img='server-list-filter.png' desc='Server list filter'/>
 
--   ![number-s](/img/number-04.png) By selecting a tag in the area, you can filter servers. 
+- ![number-s](/img/number-04.png) By selecting a tag in the area, you can filter servers. 
 
--   You can enable new tag features by entering tags for each agent. Check the input field in the ![number-s](/img/number-05.png) area.
+- You can enable new tag features by entering tags for each agent. Check the input field in the ![number-s](/img/number-05.png) area.
 
 ### Monitoring Management
 
 This function manages servers through agent commands. Click ![Server Management icon](/img/ico-setting.svg)**_Management_** and then select a server to apply the management features from the list. On the right, **_Pause_**, **_Restart_**, and **_Terminate_** buttons are activated.
 
--   ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : Data collection for the agent is paused. It is displayed as the paused state in the server list.
+- ![Pause icon](/img/ic-s-pause.svg)**_Pause_** : Data collection for the agent is paused. It is displayed as the paused state in the server list.
 
--   ![Restart icon](/img/ic-caret-right.svg)**_Restart_** : The agent is restarted.
+- ![Restart icon](/img/ic-caret-right.svg)**_Restart_** : The agent is restarted.
 
--   ![Terminate icon](/img/ic-delete-critical.svg)**_Terminate_** : The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.
+- ![Terminate icon](/img/ic-delete-critical.svg)**_Terminate_** : The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.
 
 ### Agent Transfer
 
@@ -101,18 +101,18 @@ By selecting ![Transfer icon](/img/ic-swap.svg)**_Agent Transfer_**, you can tra
 
 <ImgLang img='server-list-agent-transfer.png' desc='Server list agent transfer'/>
 
-1.  Select a project to transfer on the right screen.
+1. Select a project to transfer on the right screen.
 
-2.  Select an agent to transfer on the left screen.
+2. Select an agent to transfer on the left screen.
 
-3.  By clicking ![right-arrow](/img/right-arrow.svg) **_Right arrow_**, you can transfer to the target project.
+3. By clicking ![right-arrow](/img/right-arrow.svg) **_Right arrow_**, you can transfer to the target project.
 
-4.  If you click **_Save_**, the transfer is completed.
+4. If you click **_Save_**, the transfer is completed.
 
 :::note
 
--   If you move the same agent again within 10 minutes just after execution, it may cause a conflict. 
--   The collected data is not transferred. Do not delete the existing projects for a while to retrieve the past data.
+- If you move the same agent again within 10 minutes just after execution, it may cause a conflict. 
+- The collected data is not transferred. Do not delete the existing projects for a while to retrieve the past data.
 
 :::
 
@@ -122,20 +122,20 @@ The comparison chart between servers is provided as follows.
 
 <ImgLang img='server-list-compare.png' desc='Comparison between servers'/>
 
-1.  Select ![Chart comparison icon](/img/ic-multiline-chart2.svg) **_Compare_**.
+1. Select ![Chart comparison icon](/img/ic-multiline-chart2.svg) **_Compare_**.
 
-2.  Like ![number-s](/img/number-06.png), check whether the **_Compare_** column has been added on the left of the server list.
+2. Like ![number-s](/img/number-06.png), check whether the **_Compare_** column has been added on the left of the server list.
 
-3.  In the **_Compare_** column, select a server for comparison..
+3. In the **_Compare_** column, select a server for comparison..
 
-4.  To enable the comparison function, you can see the chart to compare in the ![number-s](/img/ic-number-07.svg) area.
+4. To enable the comparison function, you can see the chart to compare in the ![number-s](/img/ic-number-07.svg) area.
 
 :::note
 
--   The comparison servers can be selected up to 5.
+- The comparison servers can be selected up to 5.
 
--   Unique colors are assigned to each server. The unique colors are used to distinguish servers in ![number-s](/img/ic-number-07.svg) **_Comparison Chart_**.
+- Unique colors are assigned to each server. The unique colors are used to distinguish servers in ![number-s](/img/ic-number-07.svg) **_Comparison Chart_**.
 
--   If you select **_Check period_**, the past data can be retrieved.
+- If you select **_Check period_**, the past data can be retrieved.
 
 :::

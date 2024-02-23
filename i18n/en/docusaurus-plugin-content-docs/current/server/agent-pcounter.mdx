@@ -9,17 +9,17 @@ tags:
 
 The Windows performance count can be arbitrarily collected. Add the performance counter set name to the WhaTap server monitoring configuration file. 
 
--   The performance counter set name can be retrieved.
-    ```bash title='Windows Powershell'
-    Get-Counter -ListSet *
-    ```
+- The performance counter set name can be retrieved.
+  ```bash title='Windows Powershell'
+  Get-Counter -ListSet *
+  ```
 
--   A performance counter set can be added in the configuration file.
-    ```bash title='Windows Powershell'
-    Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "performance.counter.$(Get-Date -uformat %s)=Performance counter set name to view"
-    ```
+- A performance counter set can be added in the configuration file.
+  ```bash title='Windows Powershell'
+  Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "performance.counter.$(Get-Date -uformat %s)=Performance counter set name to view"
+  ```
 
--   In **_Analysis_** > **_Metrics Search_**, the added performance counter can be searched by **_category_** `performance_counter_{performance counter set name}`.
+- In **_Analysis_** > **_Metrics Search_**, the added performance counter can be searched by **_category_** `performance_counter_{performance counter set name}`.
 
 :::note
 

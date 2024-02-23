@@ -23,8 +23,8 @@ import UI from '@site/src/components/UItext';
 
 <Status>Fixed</Status> Modified the Java, Python, Node.js agent configuration option names.
 
--   `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
--   `trace_active_stack_red_time` → `trace_active_transaction_red_time`
+- `trace_active_stack_yellow_time` → `trace_active_transaction_yellow_time`
+- `trace_active_stack_red_time` → `trace_active_transaction_red_time`
 
 ## Official Release: 2023-01-16
 
@@ -32,28 +32,28 @@ import UI from '@site/src/components/UItext';
 
 #### Changing the terms
 
--   <Status>Change</Status> Changed the term from <b>profile</b> to <b>trace</b>.
+- <Status>Change</Status> Changed the term from <b>profile</b> to <b>trace</b>.
 
 #### Log setting
 
--   <Status>Change</Status> Deleted the storage column from the <UI>Data retention period by category</UI> table.
+- <Status>Change</Status> Deleted the storage column from the <UI>Data retention period by category</UI> table.
 
--   <Status>Feature</Status> In the <UI>Data retention period by category</UI> table, added the <UI>Daily Log Count</UI> column and helps for each column.
+- <Status>Feature</Status> In the <UI>Data retention period by category</UI> table, added the <UI>Daily Log Count</UI> column and helps for each column.
 
--   <Status>Feature</Status> In the <UI>Log Parser Settings</UI> section, when registering the status success rate parser and the 4xx, 5xx parser, added validation so that the parser cannot be registered twice in the same category.
+- <Status>Feature</Status> In the <UI>Log Parser Settings</UI> section, when registering the status success rate parser and the 4xx, 5xx parser, added validation so that the parser cannot be registered twice in the same category.
 
 #### Manages the account information
 
--   <Status>Feature</Status> In <UI>My Profile</UI>, added the message window for final confirmation when enabling the multi-factor authentication.
+- <Status>Feature</Status> In <UI>My Profile</UI>, added the message window for final confirmation when enabling the multi-factor authentication.
 
 #### Flex Board
 
 <Status>Change</Status> Modified the <UI>Log RPS Board</UI> dashboard template.
 
--   Change of the default value in the data lookup period: real-time 30 minutes → real-time 12 hours
--   Modified the layout height of the **_Log RPS trend_** and **_server status_** widgets.
--   Setting the **_4XX, 5XX Count_** widget's auxiliary table data units
--   Changed the widget data call interval for some widgets from 5 seconds to 1 minute.
+- Change of the default value in the data lookup period: real-time 30 minutes → real-time 12 hours
+- Modified the layout height of the **_Log RPS trend_** and **_server status_** widgets.
+- Setting the **_4XX, 5XX Count_** widget's auxiliary table data units
+- Changed the widget data call interval for some widgets from 5 seconds to 1 minute.
 
 ### `Application`
 
@@ -63,11 +63,11 @@ The items have been added and modified in the following menu path.
 
 :::note
 
--   Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > **_Active Transaction_** widget > select a finished transaction item > click **_Show Transaction_**.
--   Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > drag the **_Hitmap Transaction_** chart > click a desired item from the **_TX Trace_** list.
--   Drag the **_Dashboard_** > **_Transaction Map_** > **_Transaction_** chart > In the **_TX Trace_** list, click ![See details icon](/img/ico-detail-view.svg) on the upmost left.
--   Select the finished transaction column on the **_Dashboard_** > **_Active Transaction_** > **_Transaction_** tab > Click **_Show Trace_**.
--   Drag **_Analysis_** > **_Hitmap_** > **_Hitmap Transaction_** chart > Click a desired item in **_TX Trace_** list.
+- Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > **_Active Transaction_** widget > select a finished transaction item > click **_Show Transaction_**.
+- Click `![See details icon](/img/right-arrow.svg)` on the right of the **_Dashboard_** > **_Application Dashboard_** > drag the **_Hitmap Transaction_** chart > click a desired item from the **_TX Trace_** list.
+- Drag the **_Dashboard_** > **_Transaction Map_** > **_Transaction_** chart > In the **_TX Trace_** list, click ![See details icon](/img/ico-detail-view.svg) on the upmost left.
+- Select the finished transaction column on the **_Dashboard_** > **_Active Transaction_** > **_Transaction_** tab > Click **_Show Trace_**.
+- Drag **_Analysis_** > **_Hitmap_** > **_Hitmap Transaction_** chart > Click a desired item in **_TX Trace_** list.
 
 :::
 
@@ -77,32 +77,32 @@ Before modification<br/>
 After modification<br/>
 ![](/img/release/apm-transaction-list-after.png)
 
--   <Status>Feature</Status> <UI>Method Analysis</UI>: Trace step information provides the analysis of the duplicated methods.
+- <Status>Feature</Status> <UI>Method Analysis</UI>: Trace step information provides the analysis of the duplicated methods.
 
--   <Status>Feature</Status> <UI>SQL Analysis</UI>: Trace step information provides the analysis of the duplicated SQLs.
+- <Status>Feature</Status> <UI>SQL Analysis</UI>: Trace step information provides the analysis of the duplicated SQLs.
 
--   <Status>Change</Status> Changed the name of the tab menu.
+- <Status>Change</Status> Changed the name of the tab menu.
 
-    -   **_Profile_** → **_Table View_**
-    -   **_Profile Tree_** → **_Tree View_**
-    -   **_Log_** > **_Transaction Log_**
+  - **_Profile_** → **_Table View_**
+  - **_Profile Tree_** → **_Tree View_**
+  - **_Log_** > **_Transaction Log_**
 
--   <Status>Change</Status> Modified the design of the <UI>Table View</UI> tab.
+- <Status>Change</Status> Modified the design of the <UI>Table View</UI> tab.
 
-    -   Display of text colors of the method information step (**_step content_** column)
-    -   Indentation of the depth information of the method information step (**_step content_** column)
-    -   Change of the column name: **_Cumulative Time_** → **_Interval Time_**
+  - Display of text colors of the method information step (**_step content_** column)
+  - Indentation of the depth information of the method information step (**_step content_** column)
+  - Change of the column name: **_Cumulative Time_** → **_Interval Time_**
 
--   <Status>Change</Status> Modified the design of the <UI>Tree View</UI> tab.
+- <Status>Change</Status> Modified the design of the <UI>Tree View</UI> tab.
 
-    Before modification<br/>
-    ![](/img/release/transaction-profile-trace-before.png)
+  Before modification<br/>
+  ![](/img/release/transaction-profile-trace-before.png)
 
-    After modification<br/>
-    ![](/img/release/transaction-profile-trace-after.png)
+  After modification<br/>
+  ![](/img/release/transaction-profile-trace-after.png)
 
-    -   Display of the text color according to the trace type
-    -   Addition of the data type column (**_Detail Info_**, **_Type_**, **_Elapsed Time_**)
-    -   If the active stack item is clicked, **Detail Info** confirmation view has been added.
+  - Display of the text color according to the trace type
+  - Addition of the data type column (**_Detail Info_**, **_Type_**, **_Elapsed Time_**)
+  - If the active stack item is clicked, **Detail Info** confirmation view has been added.
 
--   <Status>Change</Status> Modification of the button name on the transaction chart: <UI>Profile Diagram</UI> → <UI>Diagram</UI>
+- <Status>Change</Status> Modification of the button name on the transaction chart: <UI>Profile Diagram</UI> → <UI>Diagram</UI>

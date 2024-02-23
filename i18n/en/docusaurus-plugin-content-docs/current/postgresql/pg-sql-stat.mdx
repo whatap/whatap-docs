@@ -15,9 +15,9 @@ SQL statistics (execution count, execution time, row count, etc.) provided by Po
 
 :::note
 
--   Because the delta values are calculated and collected from `pg_stat_statements` every hour, the collection begins 1 hour after configuration.
+- Because the delta values are calculated and collected from `pg_stat_statements` every hour, the collection begins 1 hour after configuration.
 
--   For more information about the `pg_stat_statements` module, see [the following link](https://www.postgresql.org/docs/current/pgstatstatements.html).
+- For more information about the `pg_stat_statements` module, see [the following link](https://www.postgresql.org/docs/current/pgstatstatements.html).
 
 :::
 
@@ -25,29 +25,29 @@ SQL statistics (execution count, execution time, row count, etc.) provided by Po
 
 To use **_PG SQL Statistics_**, the following settings are required in the target monitoring DB.
 
-1.  Install the PostgreSQL extension pack.
+1. Install the PostgreSQL extension pack.
 
-    ```bash
-    yum install postgresql-contrib
-    ```
+   ```bash
+   yum install postgresql-contrib
+   ```
 
-2.  Configure the parameters in _postgresql.conf_ and then restart the DB.
+2. Configure the parameters in _postgresql.conf_ and then restart the DB.
 
-    ```ini title='postgresql.conf'
-    shared_preload_libraries = 'pg_stat_statements'
-    ```
+   ```ini title='postgresql.conf'
+   shared_preload_libraries = 'pg_stat_statements'
+   ```
 
-3.  Install the extension module after connecting the DB to use.
+3. Install the extension module after connecting the DB to use.
 
-    ```bash
-    create extension pg_stat_statements;
-    ```
+   ```bash
+   create extension pg_stat_statements;
+   ```
 
-4.  Check that the data query is possible.
+4. Check that the data query is possible.
 
-    ```bash
-    select * from public.pg_stat_statements
-    ```
+   ```bash
+   select * from public.pg_stat_statements
+   ```
 
 ### Basic screen guide
 

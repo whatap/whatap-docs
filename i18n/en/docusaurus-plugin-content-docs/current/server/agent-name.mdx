@@ -20,19 +20,19 @@ To see the user-defined agent name in [WhaTap Monitoring Service](https://servic
 
 For a user-friendly name, you can specify it in the configuration file as follows.
 
--   **Linux Shell**
+- **Linux Shell**
 
-    ```bash title=SH
-    export WHATAP_SERVER_NAME=user-friendly name
+  ```bash title=SH
+  export WHATAP_SERVER_NAME=user-friendly name
 
-    echo "oname=$WHATAP_SERVER_NAME" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    ```
+  echo "oname=$WHATAP_SERVER_NAME" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
 
--   **Windows Power Shell** 
+- **Windows Power Shell** 
 
-    ```bash title=SH
-    # The admin role is required.
-    $WHATAP_SERVER_NAME="user-friendly name"
+  ```bash title=SH
+  # The admin role is required.
+  $WHATAP_SERVER_NAME="user-friendly name"
 
-    Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"
-    ```
+  Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"
+  ```
