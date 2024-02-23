@@ -26,39 +26,39 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-3.  解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-    ```ini title='whatap.conf'
-    license=プロジェクトアクセスキー
-    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
+   ```ini title='whatap.conf'
+   license=プロジェクトアクセスキー
+   whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
 
-    dbms=mssql
-    db=master
-    db_ip=データベースのIPアドレス
-    db_port=データベースのポート番号 
-    ```
+   dbms=mssql
+   db=master
+   db_ip=データベースのIPアドレス
+   db_port=データベースのポート番号 
+   ```
 
-    :::note
+   :::note
 
-    **MS SQLサーバとエージェントがlocalhostにインストールされている場合**(**default 1433 port**)
+   **MS SQLサーバとエージェントがlocalhostにインストールされている場合**(**default 1433 port**)
 
-    ```ini title='whatap.conf'
-    dbms=mssql
-    db=master
-    db_ip=127.0.0.1
-    db_port=1433
-    ```
+   ```ini title='whatap.conf'
+   dbms=mssql
+   db=master
+   db_ip=127.0.0.1
+   db_port=1433
+   ```
 
-    :::
+   :::
 
-4.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-    データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
 
-    **MS SQL 2005バージョン以降**
+   **MS SQL 2005バージョン以降**
 
-    -   [Microsoft JDBC Driver 6.4 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=56615)
-    -   [Microsoft JDBC Driver 6.2 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=55539)
+   - [Microsoft JDBC Driver 6.4 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=56615)
+   - [Microsoft JDBC Driver 6.2 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=55539)
 
 :::note
 
@@ -87,4 +87,4 @@ grant kill database connection to whatap;
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-{@include: ../common-items/_db-create-db-user-file.mdx}
+{@include: ../common-items/_db-create-db-user-file.mdx} 

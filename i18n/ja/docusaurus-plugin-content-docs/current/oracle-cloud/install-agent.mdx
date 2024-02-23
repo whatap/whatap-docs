@@ -17,9 +17,9 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 ## モニタリング手順
 
-1.  Oracle Cloud認証情報を入力してください。
-2.  Oracle Cloud Monitoringネームスペースおよび収集サイクルを選択してください。
-3.  リージョン、メトリクス、スタットなどを選択してください。
+1. Oracle Cloud認証情報を入力してください。
+2. Oracle Cloud Monitoringネームスペースおよび収集サイクルを選択してください。
+3. リージョン、メトリクス、スタットなどを選択してください。
 
 :::note
 
@@ -31,39 +31,39 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 <ImgLang img='oci-install.png' desc='OCI Monitor' />
 
-1.  **RSA Public Key**を作成後、メモ帳にコピーしてください。 
+1. **RSA Public Key**を作成後、メモ帳にコピーしてください。 
 
-    :::note
+   :::note
 
-    その後、**_インストール手順_**画面から**_RSA Public Key生成_**ボタンを選択すると、生成されたKEYをいつでも確認することができます。
+   その後、**_インストール手順_**画面から**_RSA Public Key生成_**ボタンを選択すると、生成されたKEYをいつでも確認することができます。
 
-    :::
+   :::
 
-2.  Oracle CloudコンソールのIdentity & Securityメニューに移動してください。 
+2. Oracle CloudコンソールのIdentity & Securityメニューに移動してください。 
 
-3.  Identity & Securityメニューの下のGroupsを選択してモニタリングに使用する**Group**を新規作成または選択してください。
+3. Identity & Securityメニューの下のGroupsを選択してモニタリングに使用する**Group**を新規作成または選択してください。
 
-4.  Identity & Securityメニューの下のPoliciesを選択して、モニタリング用の**Policy**を生成してください。
+4. Identity & Securityメニューの下のPoliciesを選択して、モニタリング用の**Policy**を生成してください。
 
-    -   Create Policyを選択して、名前、DescritionおよびCompartmentを入力してください。
-    -   Policy BuilderでShow Manual Editorを選択して、以下の権限を入力した後に、Createを選択してください。
-        > -   Allow group `{グループ}` to read metrics in compartment `{コンパートメント}`
-        > -   Allow group `{グループ}` to inspect metrics in compartment `{コンパートメント}`
+   - Create Policyを選択して、名前、DescritionおよびCompartmentを入力してください。
+   - Policy BuilderでShow Manual Editorを選択して、以下の権限を入力した後に、Createを選択してください。
+     > - Allow group `{グループ}` to read metrics in compartment `{コンパートメント}`
+     > - Allow group `{グループ}` to inspect metrics in compartment `{コンパートメント}`
 
-5.  Identity & Securityメニューの下のUsersを選択して、**User**を生成または選択してください。
+5. Identity & Securityメニューの下のUsersを選択して、**User**を生成または選択してください。
 
-    -   Create Userを選択して、新規Userを生成するか、Userを選択してください。
-    -   User Details画面で、3で選択したGroupにそのユーザーを追加してください。
-    -   左下のAPI Keysを選択してください。
-    -   Add API Keyボタンを選択してください。
-    -   ラジオボタンのPaste Public Keyを選択し、2段階認証で受け取った**RSA Public Key**を入力してください。
-    -   追加完了時、**User**、**Tenancy**情報を画面で確認することができます。この情報をメモ帳にコピーしてください。
+   - Create Userを選択して、新規Userを生成するか、Userを選択してください。
+   - User Details画面で、3で選択したGroupにそのユーザーを追加してください。
+   - 左下のAPI Keysを選択してください。
+   - Add API Keyボタンを選択してください。
+   - ラジオボタンのPaste Public Keyを選択し、2段階認証で受け取った**RSA Public Key**を入力してください。
+   - 追加完了時、**User**、**Tenancy**情報を画面で確認することができます。この情報をメモ帳にコピーしてください。
 
-6.  Identity & Securityメニューの下のCompartmentsを選択して、モニタリングするCompartmentの**OCID**を確認し、メモ帳にコピーしてください。
+6. Identity & Securityメニューの下のCompartmentsを選択して、モニタリングするCompartmentの**OCID**を確認し、メモ帳にコピーしてください。
 
-7.  WhaTap**_管理_** > **_エージェントのインストール_**画面に戻り、5で確認した**_Tenancy_**と**_User_**及び6で確認した**_CompartmentID_**を入力してください。
+7. WhaTap**_管理_** > **_エージェントのインストール_**画面に戻り、5で確認した**_Tenancy_**と**_User_**及び6で確認した**_CompartmentID_**を入力してください。
 
-8.  **_確認_**ボタンを選択してください。
+8. **_確認_**ボタンを選択してください。
 
 ### ネームスペースおよび収集サイクルの選択
 
@@ -75,52 +75,52 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 #### ネームスペース
 
--   API Gateway
--   Bastion
--   Big Data
--   Blockchain Platform
--   Block Volume
--   Events
--   Compute
--   Compute Infrastructure Health
--   ComputeAgent
--   Data TransferData Flow
--   Database Migration
--   Data TransferDatacatalog
--   Data TransferDataintegration
--   DevOpsDevops Build
--   DevOpsDevops Code Repos
--   DevOpsDevops Deployment
--   Digital Assistant
--   DNS
--   Email Delivery
--   Functions
--   NetworkingFastconnect
--   File Storage
--   GoldenGate
--   Health Checks
--   ComputeNstancepools
--   IntegrationNtegration
--   Java Management
--   VaultKms Keys
--   Load Balancing
--   Logging Analytics
--   Management Agent
--   IntegrationMonitoring Metrics
--   NoSQL
--   Notifications
--   Object Storage
--   Container Engine for Kubernetes
--   Operations Insights
--   OS Management
--   VaultSecrets
--   Service Connector Hub
--   NetworkingService Gateway
--   Streaming
--   NetworkingVcn
--   NetworkingVpn
--   Vulnerability Scanning
--   WAF
+- API Gateway
+- Bastion
+- Big Data
+- Blockchain Platform
+- Block Volume
+- Events
+- Compute
+- Compute Infrastructure Health
+- ComputeAgent
+- Data TransferData Flow
+- Database Migration
+- Data TransferDatacatalog
+- Data TransferDataintegration
+- DevOpsDevops Build
+- DevOpsDevops Code Repos
+- DevOpsDevops Deployment
+- Digital Assistant
+- DNS
+- Email Delivery
+- Functions
+- NetworkingFastconnect
+- File Storage
+- GoldenGate
+- Health Checks
+- ComputeNstancepools
+- IntegrationNtegration
+- Java Management
+- VaultKms Keys
+- Load Balancing
+- Logging Analytics
+- Management Agent
+- IntegrationMonitoring Metrics
+- NoSQL
+- Notifications
+- Object Storage
+- Container Engine for Kubernetes
+- Operations Insights
+- OS Management
+- VaultSecrets
+- Service Connector Hub
+- NetworkingService Gateway
+- Streaming
+- NetworkingVcn
+- NetworkingVpn
+- Vulnerability Scanning
+- WAF
 
 ### リージョン、メトリクス、統計を選択
 
@@ -132,10 +132,10 @@ WhaTap Oracle Cloud Monitorは、API連携からメトリクスを定期的に�
 
 <ImgLang img='cloud-deact.png' desc='비활성화 및 서비스 초기화 sc' />
 
--   ![指示線a](/img/char-a.svg)収集トグル![アイコン](/img/ic-toggle-off.svg)無効化した場合、データ収集が中止されます。
+- ![指示線a](/img/char-a.svg)収集トグル![アイコン](/img/ic-toggle-off.svg)無効化した場合、データ収集が中止されます。
 
--   ![指示線b](/img/char-b.svg)**_役割(Role)の変更_**ボタンをクリックし、**_エージェントのインストール_**画面で![指示線c](/img/char-c.svg)**_サービスの初期化_**を選択すると、メトリクスを収集中のすべてのサービスを無効化します。
+- ![指示線b](/img/char-b.svg)**_役割(Role)の変更_**ボタンをクリックし、**_エージェントのインストール_**画面で![指示線c](/img/char-c.svg)**_サービスの初期化_**を選択すると、メトリクスを収集中のすべてのサービスを無効化します。
 
--   完全なコスト発生を防ぐためには、以下を取り除く必要があります。 
+- 完全なコスト発生を防ぐためには、以下を取り除く必要があります。 
 
-    -   Oracle CloudコンソールのIdentity & Securityメニューでドメインとユーザーを選択し、API KeysのFingerprintを除去してください。
+  - Oracle CloudコンソールのIdentity & Securityメニューでドメインとユーザーを選択し、API KeysのFingerprintを除去してください。

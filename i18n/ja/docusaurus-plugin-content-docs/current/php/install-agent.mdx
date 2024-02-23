@@ -28,15 +28,15 @@ import TR from '@site/src/components/TR';
 
 PHPエージェントのインストール方法は、**Linuxパッケージのインストール**です。インストールの手順は次のとおりです。
 
-1.  WhaTap **リポジトリ**を登録します。
+1. WhaTap **リポジトリ**を登録します。
 
-2.  whatap-php **Linuxパッケージ**(yum,apt-get)をインストールしてください。
+2. whatap-php **Linuxパッケージ**(yum,apt-get)をインストールしてください。
 
-3.  **設定スクリプト**を実行してください。設定スクリプトのトレーサーは**PHP拡張モジュール**として登録され、エージェントは**whatap-phpサービス**として実行されます。
+3. **設定スクリプト**を実行してください。設定スクリプトのトレーサーは**PHP拡張モジュール**として登録され、エージェントは**whatap-phpサービス**として実行されます。
 
-    ![php](https://img.whatap.io/media/images/php.png)
+   ![php](https://img.whatap.io/media/images/php.png)
 
-4.  ApacheまたはPHP-FPMを**再起動**してください。
+4. ApacheまたはPHP-FPMを**再起動**してください。
 
 :::note
 
@@ -49,53 +49,53 @@ PHPエージェントのインストール方法は、**Linuxパッケージの�
 
 PHPエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出してWhaTap収集サーバーに送信するトレーサー、収集された情報をサーバーに送信するエージェント、トレーサーとエージェントをサーバーに動的に適用するインストールスクリプトファイルで構成されています。
 
--   _whatap\_`X.Y.Z`.so_
+- _whatap\_`X.Y.Z`.so_
 
-    トレーサーとして登録されたPHP拡張モジュールとして追加され、情報を収集し、収集された情報をエージェントに送信するライブラリです。拡張モジュールはPHPバージョン(PHP API Version)とZend Thread Safe対応の可否によって判別されます。例は次のとおりです。 
+  トレーサーとして登録されたPHP拡張モジュールとして追加され、情報を収集し、収集された情報をエージェントに送信するライブラリです。拡張モジュールはPHPバージョン(PHP API Version)とZend Thread Safe対応の可否によって判別されます。例は次のとおりです。 
 
-    -   _whatap_zts_20041225.so_  
+  - _whatap_zts_20041225.so_  
 
-        PHP 5.2バージョン、Zend Thread safe enable
+    PHP 5.2バージョン、Zend Thread safe enable
 
-    -   _whatap_20041225.so_
+  - _whatap_20041225.so_
 
-        PHP 5.2バージョン、Non Thread Safe 
+    PHP 5.2バージョン、Non Thread Safe 
 
--   _whatap-php(whatap_php)_
+- _whatap-php(whatap_php)_
 
-    エージェントは、トレーサーからUDPに送信された情報を収集サーバーに送信するプログラムです。
+  エージェントは、トレーサーからUDPに送信された情報を収集サーバーに送信するプログラムです。
 
--   _/etc/init.d/whatap-php_
+- _/etc/init.d/whatap-php_
 
-    サービススクリプトです。
+  サービススクリプトです。
 
--   _whatap_php_
+- _whatap_php_
 
-    サービスの実行ファイルです。
+  サービスの実行ファイルです。
 
--   _whatap.ini_
+- _whatap.ini_
 
-    アプリケーションサーバからデータを収集するPHP拡張モジュールの設定情報、収集サーバのアドレスとサーバのプロジェクトアクセスキーが入力されたファイルです。
+  アプリケーションサーバからデータを収集するPHP拡張モジュールの設定情報、収集サーバのアドレスとサーバのプロジェクトアクセスキーが入力されたファイルです。
 
--   _template.ini_ 
+- _template.ini_ 
 
-    _whatap.ini_ 作成時、コピーして使用するテンプレートファイルです。
+  _whatap.ini_ 作成時、コピーして使用するテンプレートファイルです。
 
--   _whatap-install-`yyyymmdd`.log_
+- _whatap-install-`yyyymmdd`.log_
 
-    インストールプロセスのログファイルです。基本の保存パスは_/usr/whata/php/logs_です。日付順にファイルが作成されます。基本的に7日間のログが保存されます。
+  インストールプロセスのログファイルです。基本の保存パスは_/usr/whata/php/logs_です。日付順にファイルが作成されます。基本的に7日間のログが保存されます。
 
--   _whatap-boot-`yyyymmdd`.log_
+- _whatap-boot-`yyyymmdd`.log_
 
-    エージェントのログファイルです。基本の保存パスは、_/usr/whata/php/logs_です。日付順にファイルが作成されます。基本的に7 日間のログが保存されます。
+  エージェントのログファイルです。基本の保存パスは、_/usr/whata/php/logs_です。日付順にファイルが作成されます。基本的に7 日間のログが保存されます。
 
--   _install.sh_
+- _install.sh_
 
-    インストールスクリプトです。PHP拡張モジュール(_whatap.so _)をApacheまたはPHP-FPMにインストールし、whatap-phpサービスのインストールを進めます。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参照してください。
+  インストールスクリプトです。PHP拡張モジュール(_whatap.so _)をApacheまたはPHP-FPMにインストールし、whatap-phpサービスのインストールを進めます。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参照してください。
 
--   _WhaTap.php (sample.php)_
+- _WhaTap.php (sample.php)_
 
-    PHPソースコードで使用するAPIリファレンスクラス(_/usr/whatap/php/lib/WhaTap.php_)およびサンプルソースファイル(_sample.php_)です。
+  PHPソースコードで使用するAPIリファレンスクラス(_/usr/whatap/php/lib/WhaTap.php_)およびサンプルソースファイル(_sample.php_)です。
 
 </details>
 

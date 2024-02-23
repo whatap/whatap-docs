@@ -11,30 +11,30 @@ tags:
 
 WebSphereアプリケーションサーバ環境でJVMオプションを追加するには、管理コンソール(Admin console)にアクセスしてください。
 
-1.  ウェブブラウザで管理コンソールにログインしてください。
+1. ウェブブラウザで管理コンソールにログインしてください。
 
-2.  **_Environment_** > **_Virtual Hosts_** > **_default host_** > **_Host Aliases_**項目を選択し、エージェントをインストールするサーバーのポート番号を確認してください。
+2. **_Environment_** > **_Virtual Hosts_** > **_default host_** > **_Host Aliases_**項目を選択し、エージェントをインストールするサーバーのポート番号を確認してください。
 
-    ![WebSphere port](https://img.whatap.io/media/agent_java/install/330.png)
+   ![WebSphere port](https://img.whatap.io/media/agent_java/install/330.png)
 
-3.  **_Servers_** > **_Server Types_** > **_Websphere application servers_**項目に移動し、エージェントをインストールするサーバーを選択してください。
+3. **_Servers_** > **_Server Types_** > **_Websphere application servers_**項目に移動し、エージェントをインストールするサーバーを選択してください。
 
-    ![WebSpherer application servers](https://img.whatap.io/media/agent_java/install/300.png)
+   ![WebSpherer application servers](https://img.whatap.io/media/agent_java/install/300.png)
 
-4.  選択したサーバー画面から**_Configuration_**タブを選択し、**_Server Infrastructure_**セクションの**_Java and Process Management_** > **_Process definition_**メニューを選択してください。
+4. 選択したサーバー画面から**_Configuration_**タブを選択し、**_Server Infrastructure_**セクションの**_Java and Process Management_** > **_Process definition_**メニューを選択してください。
 
-    ![WebSphere Configuration](https://img.whatap.io/media/agent_java/install/310.png)
+   ![WebSphere Configuration](https://img.whatap.io/media/agent_java/install/310.png)
 
-5.  右側のメニューから**_Additional Properties_** > **_Java Virtual Machine_**メニューを選択してください。
+5. 右側のメニューから**_Additional Properties_** > **_Java Virtual Machine_**メニューを選択してください。
 
-6.  **_Configuration_**タブから**_Generic JVM arguments_**テキストボックスに`-javaagent`と`-Dwhatap.port`を追加してください。
+6. **_Configuration_**タブから**_Generic JVM arguments_**テキストボックスに`-javaagent`と`-Dwhatap.port`を追加してください。
 
-    ```bash
-    -javaagent:/whatap/whatap.agent-X.Y.Z.jar
-    -Dwhatap.port={ポート番号} ## 2番 項目 ポート番号 ##
-    ```
+   ```bash
+   -javaagent:/whatap/whatap.agent-X.Y.Z.jar
+   -Dwhatap.port={ポート番号} ## 2番 項目 ポート番号 ##
+   ```
 
-    ![Add JVM arguments](https://img.whatap.io/media/agent_java/install/340.png)
+   ![Add JVM arguments](https://img.whatap.io/media/agent_java/install/340.png)
 
 :::note
 

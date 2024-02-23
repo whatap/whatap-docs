@@ -2,7 +2,6 @@
 id: preview-2_2_0x
 title: Preview 2.2.0.a
 toc_max_heading_level: 2
-draft: false
 ---
 
 <head>
@@ -15,6 +14,223 @@ draft: false
 
 :::
 
+## Preview 2.2.0.a6
+
+2024年02月19日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Changed</Status> <Cmdname sid="MNU07360" className="uitext" />メニューの<Cmdname sid="two_factor_auth" className="uitext" />セクションでOTPキーを発行していない状態であれば<Cmdname sid="send_otp_key_mail" className="uitext" />ボタンを非活性化
+
+- <Status>Changed</Status>プロジェクト作成時、製品のおすすめバナーに<b>Network Performance Monitoring</b>追加、<b>Java</b>製品を除去
+
+- <Status>Deprecated</Status> 言語設定が英語または日本語の場合、<Cmdname sid="manage_account_info" className="uitext" /> メニューからマーケティングオプションを削除
+
+* * *
+
+### `Application`
+
+- <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />メニューで<Cmdname sid="today_tps" className="uitext" />及び<Cmdname sid="today_user" className="uitext" />ウィジェットに<code>All APPS.</code>タグを追加
+
+  :::note
+
+  `All APPS.`タグ付きウィジェットは、常にすべてのエージェントのデータを表示するように固定されています。
+
+  :::
+
+- <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="transaction_map" className="uitext" />メニューに新しいUIを適用し、機能を変更
+
+  - データ照会区間の拡張：リアルタイムで最大30分、過去の時点で最大1日
+  - <Cmdname sid="TTL06209" className="uitext" />ウィンドウで最大照会可能データ数の増加(100件→1000件)
+  - トランザクションとエラー数をリアルタイムで表示
+  - Top 30リストでキーボードイベントを追加
+  - チャートエリアにキーボードイベントを追加
+  - 過去時点のデータを照会する場合、サーバーから受信するデータフィルタリングが可能
+
+<!-- 블로그 링크 추가-->
+
+* * *
+
+### `Database`
+
+#### 共通
+
+- <Status>Feature</Status> XOS2指標の代替に関する案内事項を追加
+
+- <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />タブで<Cmdname sid="resolved_event_notification" className="uitext" />機能に対するツールチップメッセージを修正(エージェントバージョン1.6.22以降 → <b>エージェントバージョン1.6.30</b>以降)
+
+#### MySQL <code class="my">V2</code>
+
+- <Status>Feature</Status> JSON形式でのPlan照会機能を追加
+
+- <Status>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />メニューの<Cmdname sid="TTL06572" className="uitext" />テーブルで<span class="uitext">TABLENAME</span>カラム項目をクリックすると<b>column</b>、<b>index</b>構成を確認できる機能を追加
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Fixed</Status>ホーム画面&gt; <Cmdname sid="flexboard" className="uitext" />メニューでコンテナperformnaceテンプレート選択時に発生するホワイトアウト問題を修正
+
+- <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューでノードブロックを選択した後、<Cmdname sid="BTN06342" className="uitext" />ボタンを選択すると発生するホワイトアウト問題を修正
+
+* * *
+
+### `Log`
+
+<p><Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="log" className="uitext" />メニューで複合ログイベントの保存に失敗する問題を修正</p>
+
+</div>
+
+## Preview 2.2.0.a5
+
+2024年02月15日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status>プロフィールアイコン選択&gt; <Cmdname sid="MNU07360" className="uitext" />メニューの<Cmdname sid="two_factor_auth" className="uitext" />セクションでOTP認証手段を紛失した場合に備えて<Cmdname sid="TTL07396" className="uitext" />機能を追加
+
+- <Status>Feature</Status>ダッシュボードのApdex*100ウィジェットに<Cmdname sid="ITM07648" className="uitext" />メトリクス項目を追加
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />メニューでチャートエリアのデザイン要素を修正(ウィジェットタイトルのサイズとウィジェット間隔、チャート区間の説明テキストのサイズを修正)</p>
+
+* * *
+
+### `Database`
+
+#### 共通
+
+- <Status>Feature</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_list" className="uitext" />メニューでデータベースサーバーのIPアドレスを表記する<Cmdname sid="db_ip" className="uitext" />カラムを追加
+
+- <Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_list" className="uitext" />メニューでステータスアイコンの色を変更、<Cmdname sid="name" className="uitext" />(<Cmdname sid="initial" className="uitext" />), <Cmdname sid="db_ip" className="uitext" />カラムのテキストがカラム幅より長い場合、マウスオーバー時にツールチップで確認できるように修正
+
+- <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />タブで<Cmdname sid="resolved_event_notification" className="uitext" />機能に対するツールチップメッセージを追加(エージェントバージョン1.6.22以降に対応)
+
+#### Database <code class="my">V2</code>
+
+- <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />メニューで基本プリセット(<span class="uitext">Default(rds)</span>、<span class="uitext">Default(xos)</span>) を追加
+
+#### PostgreSQL <code class="my">V2</code>
+
+<p><Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="dbObjectInfo" className="uitext" />メニューで<span class="uitext">table_size</span>及び<span class="uitext">index_size</span>、<span class="uitext">bloat_size</span>カラムの値を正常に出力するように修正</p>
+
+* * *
+
+### `Kubernetes`
+
+- <Status>Change</Status> <Cmdname sid="workload" className="uitext" /> &gt; <Cmdname sid="MNU07551" className="uitext" />メニューで<Cmdname sid="compare" className="uitext" />機能のUIを修正し、目次機能を追加
+
+- <Status>Change</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューでブロックサイズが小さい場合、UI表示を修正
+
+- <Status>Changed</Status> <Cmdname sid="Container" className="uitext" /> &gt; <Cmdname sid="containerImages" className="uitext" />メニューのカラム項目を変更
+
+  - 追加：<span class="uitext">Registry</span>、<span class="uitext">Name</span>、<span class="uitext">Tag</span>
+  - 除去：<b>Image Name</b>、<b>Image Tag</b>
+
+- <Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでPHP、Goアプリケーションエージェントのインストール過程中に<b>エージェント実行</b>のために一部のコマンドを修正
+
+- <Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="kubernetesAgentList" className="uitext" />メニューで非活性化されたエージェントのデータが出力されない問題を修正
+
+- <Status>Feature</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="kubernetesAgentList" className="uitext" />メニューでノード別エージェントのバージョンが異なる場合、画面上にバージョンの統一を薦める案内メッセージを追加
+
+* * *
+
+### `Browser`
+
+- <Status>Feature</Status>ページ読み込みヒートマップデータにネットワークステータスに関する指標を追加：<Cmdname sid="TTL07611" className="uitext" />、<Cmdname sid="TTL07612" className="uitext" />、<Cmdname sid="TTL07610" className="uitext" />
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />メニューの<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェット
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />
+
+- <Status>Feature</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />メニューの<Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" />ウィンドウでリソースデータに指標を追加：<Cmdname sid="status_code" className="uitext" />、<span class="uitext">Delivery Type</span>
+
+- <Status>Feature</Status> AJAXヒートマップデータにネットワークステータスに関する指標を追加：<Cmdname sid="TTL07611" className="uitext" />、<Cmdname sid="TTL07612" className="uitext" />、<Cmdname sid="TTL07610" className="uitext" />、<span class="uitext">Delivery Type</span>
+
+  - <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="ajaxAnalytics" className="uitext" />
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="rumDashboard" className="uitext" />メニューの<Cmdname sid="ajaxAnalytics" className="uitext" />ウィジェット
+
+:::note
+
+追加された指標の詳細については、次のリンクを参考にしてください。
+
+- [<Cmdname sid="TTL07611" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType)
+- [<Cmdname sid="TTL07612" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/rtt)
+- [<Cmdname sid="TTL07610" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlink)
+- [<span class="uitext">Delivery Type</span>](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/deliveryType)
+- [<Cmdname sid="status_code" className="uitext" />](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStatus)
+
+:::
+
+</div>
+
+## Preview 2.2.0.a4
+
+2024年02月08日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status>Feature</Status>サイドメニューで<Cmdname sid="TLT07385" className="uitext" />機能の使用時、表示するメニューがない場合は、案内メッセージを追加
+
+- <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューの<Cmdname sid="alert_receive_settings_by_member" className="uitext" />セクションテーブルでメンバー名が長すぎるとテーブルの列がずれる問題を修正
+
+- <Status>Changed</Status>クラウド関連指標について、5分、1時間の統計カテゴリが使用できるように変更：<code>aws_</code> / <code>azure_</code> / <code>ncloud_</code> / <code>oci_</code>
+
+- <Status>Changed</Status> <Cmdname sid="BTN06853" className="uitext" />ウィンドウのWhaTapロゴにダークテーマを適用、プラットフォームに<b>WhaTap Network</b>を追加
+
+- <Status>Changed</Status> <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" />メニューでクレジットカードを支払方法として登録する時、約款同意に関する文章を変更
+
+- <Status>Fixed</Status>ダッシュボードのチャートで最大値を表示すると、最も高い値のラベルテキストが切り取られる問題を修正
+
+- <Status>Fixed</Status>チャートに表示されるY軸のしきい値のラベルテキストが切り取られる問題を修正
+
+- <Status>Feature</Status> <Cmdname sid="flexboard" className="uitext" />メニューでウィジェットに該当製品のダッシュボードに移動可能なボタンを追加
+
+- <Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューでウィジェットのウィンドウモードボタンアイコンを変更(<LinkImage img="ico-export.svg" className="ico" /> → <LinkImage img="ic-popup.svg" className="ico" />)
+
+- <Status>Changed</Status>プロジェクト作成数が制限された時に表示される案内メッセージをモーダル方式に変更
+
+* * *
+
+### `Application`
+
+<p><Status>Changed</Status> <Cmdname sid="flexboard" className="uitext" />メニューの<Cmdname sid="filter" className="uitext" />タブに提供するエージェントグループの単位名を変更</p>
+
+- <Cmdname sid="type_okind" className="b500" /> → <Cmdname sid="ITM06006" className="uitext" />
+
+- <Cmdname sid="type_onode" className="b500" /> → <Cmdname sid="ITM06007" className="uitext" />
+
+- <Cmdname sid="application" className="b500" /> → <Cmdname sid="ITM06005" className="uitext" />
+
+* * *
+
+### `Server`
+
+- <Status>Fixed</Status> <Cmdname sid="server_list" className="uitext" /> &gt; <Cmdname sid="serverDetail" className="uitext" />メニューで凡例項目が多すぎる場合、チャート領域が隠れて見えなかった部分を修正
+
+  - 凡例が多くなる場合、<Cmdname sid="more" className="uitext" />ボタンを表示してボタンを選択するとドロップダウンメニューを表示
+
+- <Status>Fixed</Status> <Cmdname sid="tag_count_chart" className="uitext" />メニューでNetwork Traffic関連チャートに表示されるbyte単位をbit単位で表示されるように修正
+
+- <Status>Feature</Status>AIX OSに対してエージェントインストールパッケージ及び案内を提供
+
+* * *
+
+### `ネットワーク`
+
+<p><Status>Fixed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューの<span class="uitext">Kubernetes</span>タブで入力した<b>AWSリソースオプション</b>このダウンロードしたYAMLファイルに反映されない問題を修正</p>
+
+</div>
+
 ## Preview 2.2.0.a3
 
 2024年02月01日
@@ -23,19 +239,19 @@ draft: false
 
 ### `共通`
 
--   <Status>Changed</Status> <Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="project_subscription" className="uitext" />メニューの<Cmdname sid="include_project_has_not_billing" className="b500" />メッセージを<Cmdname sid="DSC07606" className="uitext" />に変更し、ツールチップを追加
+- <Status>Changed</Status> <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="projectSubscription" className="uitext" />メニューの<Cmdname sid="include_project_has_not_billing" className="b500" />メッセージを<Cmdname sid="DSC07606" className="uitext" />に変更し、ツールチップを追加
 
--   <Status>Fixed</Status> <Cmdname sid="integrated_member_management" className="uitext" />メニューでメンバー一覧テーブルの幅を修正
+- <Status>Fixed</Status> <Cmdname sid="integrated_member_management" className="uitext" />メニューでメンバー一覧テーブルの幅を修正
 
--   <Status>Fixed</Status> <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="my_profile" className="uitext" />メニューで会員退会不可の理由をコピーするとタグまでコピーされる問題を修正
+- <Status>Fixed</Status> <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="my_profile" className="uitext" />メニューで会員退会不可の理由をコピーするとタグまでコピーされる問題を修正
 
--   <Cmdname sid="flexboard" className="uitext" />メニューで次の機能を追加・修正します。
+- <Cmdname sid="flexboard" className="uitext" />メニューで次の機能を追加・修正します。
 
-    -   <Status>Feature</Status>グループウィジェットコピー機能を追加
+  - <Status>Feature</Status>グループウィジェットコピー機能を追加
 
-    -   <Status>Fixed</Status>イベントタイムラインウィジェットのイベント回数が断続的に実際のイベント発生回数と異なるように増加する現象を修正
+  - <Status>Fixed</Status>イベントタイムラインウィジェットのイベント回数が断続的に実際のイベント発生回数と異なるように増加する現象を修正
 
-    -   <Status>Fixed</Status>ダッシュボードの読み込みに失敗した場合、ダッシュボード一覧に移動するように修正
+  - <Status>Fixed</Status>ダッシュボードの読み込みに失敗した場合、ダッシュボード一覧に移動するように修正
 
 * * *
 
@@ -49,7 +265,23 @@ draft: false
 
 #### 共通
 
-<p><Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでDBユーザーファイルを作成するためのコマンドを入力する時に、オペレーティングシステムによる考慮事項を追加</p>
+- <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューでDBユーザーファイルを作成するためのコマンドを入力する時に、オペレーティングシステムによる考慮事項を追加
+
+- <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />タブで<Cmdname sid="database_inactive_alert" className="b500" />の文章を<Cmdname sid="inactive_agent_alert" className="uitext" />に修正
+
+  :::note
+
+  この修正事項は、DBXエージェント1.6.22バージョン以降に対応します。
+
+  :::
+
+- <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />タブでエージェントイベントの復旧通知(<Cmdname sid="resolved_event_notification" className="uitext" />) 機能を追加
+
+  :::note
+
+  この追加機能は、DBXエージェント1.6.22バージョン以降に対応します。
+
+  :::
 
 #### Redis
 
@@ -59,23 +291,23 @@ draft: false
 
 ### `Kubernetes`
 
--   <Status>Feature</Status>マスター及びノードエージェントのインストール状況が確認できる<Cmdname sid="kubernetesAgentList" className="uitext" />メニューを追加
+- <Status>Feature</Status>マスター及びノードエージェントのインストール状況が確認できる<Cmdname sid="kubernetesAgentList" className="uitext" />メニューを追加
 
-    :::note
+  :::note
 
-    この機能はクラスタープロジェクト専用であり、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="kubernetesAgentList" className="uitext" />メニューパスで確認できます。
+  この機能はクラスタープロジェクト専用であり、<Cmdname sid="management" className="uitext" /> > <Cmdname sid="kubernetesAgentList" className="uitext" />メニューパスで確認できます。
 
-    :::
+  :::
 
--   <Status>Feature</Status> kube-apiserverの状態と性能メトリクスの収集、レスポンスタイム、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューを追加
+- <Status>Feature</Status> kube-apiserverの状態と性能メトリクスの収集、レスポンスタイム、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューを追加
 
-    :::note
+  :::note
 
-    この機能は、<Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューパスで確認できます。
+  この機能は、<Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="kubeApiserverDashboard" className="uitext" />メニューパスで確認できます。
 
-    :::
+  :::
 
--   <Status>Changed</Status> <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />メニューで比較する機能の利用時、<Cmdname sid="kube_default" className="uitext" />、<Cmdname sid="kube_cpu" className="uitext" />タブに<span class="uitext">Container CPU Usage</span>チャートを追加
+- <Status>Changed</Status> <Cmdname sid="container" className="uitext" /> &gt; <Cmdname sid="container_list" className="uitext" />メニューで比較する機能の利用時、<Cmdname sid="kube_default" className="uitext" />、<Cmdname sid="kube_cpu" className="uitext" />タブに<span class="uitext">Container CPU Usage</span>チャートを追加
 
 * * *
 
@@ -93,17 +325,17 @@ draft: false
 
 ### `ネットワーク`
 
--   <Status>Fixed</Status>エージェントのインストールメニューで言語に合う画像に修正
+- <Status>Fixed</Status>エージェントのインストールメニューで言語に合う画像に修正
 
--   <Status>Fixed</Status>一部のメニューパスでDocs(ガイド) のリンクがつながらない問題を修正
+- <Status>Fixed</Status>一部のメニューパスでDocs(ガイド) のリンクがつながらない問題を修正
 
--   <Status>Fixed</Status>一部の要素にダークテーマが適用されない問題を修正
+- <Status>Fixed</Status>一部の要素にダークテーマが適用されない問題を修正
 
--   <Status>Fixed</Status>サイドバー及び<Cmdname sid="sitemap" className="uitext" />で一部メニューが見えない問題を修正
+- <Status>Fixed</Status>サイドバー及び<Cmdname sid="sitemap" className="uitext" />で一部メニューが見えない問題を修正
 
--   <Status>Fixed</Status> <Cmdname sid="MNU06848" className="uitext" />メニューの<Cmdname sid="filter" className="uitext" />タブでタイトルテキスト要素の長さに応じて改行されるように処理
+- <Status>Fixed</Status> <Cmdname sid="MNU06848" className="uitext" />メニューの<Cmdname sid="filter" className="uitext" />タブでタイトルテキスト要素の長さに応じて改行されるように処理
 
--   <Status>Fixed</Status>整備計画の追加時、エージェントipのアドレス表示問題を修正
+- <Status>Fixed</Status>整備計画の追加時、エージェントipのアドレス表示問題を修正
 
 <p>この他にも、ユーザーが気づかない些細なバグを修正し、改善しました。 😉</p>
 
@@ -117,23 +349,23 @@ draft: false
 
 ### `共通`
 
--   <Status>Feature</Status>サイドメニューの<Cmdname sid="project_list" className="uitext" />性能低下を改善
+- <Status>Feature</Status>サイドメニューの<Cmdname sid="project_list" className="uitext" />性能低下を改善
 
--   <Status>Fixed</Status> <code>URL</code>を除くすべての製品<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベント設定時、通知ルールテストチャートのデータ時点が1つだけある場合、チャートが描かれないイシューを修正
+- <Status>Fixed</Status> <code>URL</code>を除くすべての製品<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベント設定時、通知ルールテストチャートのデータ時点が1つだけある場合、チャートが描かれないイシューを修正
 
--   <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューで通知設定の権限がないユーザーは<Cmdname sid="aboids_large_number_alerts" className="uitext" />パネルの<Cmdname sid="terminate_now" className="uitext" />ボタンを非活性化状態に修正
+- <Status>Fixed</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューで通知設定の権限がないユーザーは<Cmdname sid="aboids_large_number_alerts" className="uitext" />パネルの<Cmdname sid="terminate_now" className="uitext" />ボタンを非活性化状態に修正
 
 * * *
 
 ### `ネットワーク`
 
--   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />及び<Cmdname sid="MNU06849" className="uitext" />メニューでリアルタイム照会時、直近5分のみできるように変更
+- <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />及び<Cmdname sid="MNU06849" className="uitext" />メニューでリアルタイム照会時、直近5分のみできるように変更
 
--   <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />メニューで次のように変更
+- <Status>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />メニューで次のように変更
 
-    -   トポロジオプションで<Cmdname sid="MNU06813" className="uitext" />オプション名を<Cmdname sid="ITM07578" className="uitext" />に表記変更
+  - トポロジオプションで<Cmdname sid="MNU06813" className="uitext" />オプション名を<Cmdname sid="ITM07578" className="uitext" />に表記変更
 
-    -   トポロジオプションでノードサイズのウエイトオプションが削除され、選択した<Cmdname sid="ITM07578" className="uitext" />オプションによってノードサイズのウエイトを設定するように変更
+  - トポロジオプションでノードサイズのウエイトオプションが削除され、選択した<Cmdname sid="ITM07578" className="uitext" />オプションによってノードサイズのウエイトを設定するように変更
 
 </div>
 
@@ -145,11 +377,11 @@ draft: false
 
 ### `Kubernetes`
 
--   <Status>Fixed</Status>ネームスペースプロジェクトで<Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="masterMetaTopology" className="uitext" />メニューデータが出ない事象を修正
+- <Status>Fixed</Status>ネームスペースプロジェクトで<Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="masterMetaTopology" className="uitext" />メニューデータが出ない事象を修正
 
--   <Status>Changed</Status>オブジェクトマニフェスト対応のマスターエージェントバージョンを<b>1.5.2</b>に変更
+- <Status>Changed</Status>オブジェクトマニフェスト対応のマスターエージェントバージョンを<b>1.5.2</b>に変更
 
--   <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューの案内文を改善
+- <Status>Changed</Status> <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />メニューの案内文を改善
 
 </div>
 
@@ -161,31 +393,31 @@ draft: false
 
 ### `共通`
 
--   <Status>Feature</Status> SSOアカウントの連動機能を追加
+- <Status>Feature</Status> SSOアカウントの連動機能を追加
 
-    画面右上のプロフィールアイコンを選択し<Cmdname sid="MNU07360" className="uitext" /> > <Cmdname sid="ssoIntegrations" className="uitext" />を選択してください。
+  画面右上のプロフィールアイコンを選択し<Cmdname sid="MNU07360" className="uitext" /> > <Cmdname sid="ssoIntegrations" className="uitext" />を選択してください。
 
-    :::note
+  :::note
 
-    SSOアカウント連動の詳細については、[次の文書](https://whatap.github.io/whatap-docs/account/sso)を参考にしてください。
+  SSOアカウント連動の詳細については、[次の文書](https://whatap.github.io/whatap-docs/account/sso)を参考にしてください。
 
-    :::
+  :::
 
--   <Status>Feature</Status>サイドメニューを改編
+- <Status>Feature</Status>サイドメニューを改編
 
-    サイドメニューがリニューアルしました。 プロジェクト一覧とプロジェクトメニューが上下に分離されていた既存のUI構造からメニュー集中型の構造に改編しました。 詳細を確認するには、サイドメニューの下の<Cmdname sid="BTN07397" className="uitext" />ボタンを選択してください。
+  サイドメニューがリニューアルしました。 プロジェクト一覧とプロジェクトメニューが上下に分離されていた既存のUI構造からメニュー集中型の構造に改編しました。 詳細を確認するには、サイドメニューの下の<Cmdname sid="BTN07397" className="uitext" />ボタンを選択してください。
 
-    <ImgLang img='release/release-main-ui.png' desc='' />
+  <ImgLang img='release/release-main-ui.png' desc='' />
 
-    :::note
+  :::note
 
-    サイドメニューの詳細については、[次の文書](https://whatap.github.io/whatap-docs/main-ui-intro-v2)を参考にしてください。
+  サイドメニューの詳細については、[次の文書](https://whatap.github.io/whatap-docs/main-ui-intro-v2)を参考にしてください。
 
-    :::
+  :::
 
--   <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベントを追加または編集する時、<Cmdname sid="category" className="uitext" />項目の製品ロゴに適用されているダークテーマの視認性を改善
+- <Status>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューでメトリクスイベントを追加または編集する時、<Cmdname sid="category" className="uitext" />項目の製品ロゴに適用されているダークテーマの視認性を改善
 
--   <Status>Changed</Status> <Cmdname sid="add_group" className="uitext" />ページのタイトル変更、<Cmdname sid="project_list" className="b500" /> → <Cmdname sid="add_group" className="uitext" />
+- <Status>Changed</Status> <Cmdname sid="add_group" className="uitext" />ページのタイトル変更、<Cmdname sid="project_list" className="b500" /> → <Cmdname sid="add_group" className="uitext" />
 
 * * *
 
@@ -207,11 +439,11 @@ draft: false
 
 ### `Kubernetes`
 
--   <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューでレプリケーションコントローラ(Replication Controller) のグループ化オプションを追加
+- <Status>Feature</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューでレプリケーションコントローラ(Replication Controller) のグループ化オプションを追加
 
--   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューで以前に選択したグループ化オプションに関連するデータがない場合、データが見えない問題を修正
+- <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" />メニューで以前に選択したグループ化オプションに関連するデータがない場合、データが見えない問題を修正
 
--   <Status>Fixed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_volume" className="uitext" />メニューでUsedPercentが100%の時のアイコンを修正
+- <Status>Fixed</Status> <Cmdname sid="resource" className="uitext" /> &gt; <Cmdname sid="container_volume" className="uitext" />メニューでUsedPercentが100%の時のアイコンを修正
 
 * * *
 
@@ -223,16 +455,16 @@ draft: false
 
 ### `ネットワーク`
 
--   <Status>Feature</Status>エージェントのインストール時にAWSのリソースを識別するためのオプションを追加
+- <Status>Feature</Status>エージェントのインストール時にAWSのリソースを識別するためのオプションを追加
 
--   <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />メニューでプリセットを選択した状態でページを更新すると、すべてのタグが選択されない状態で表示される問題を修正
+- <Status>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="MNU06848" className="uitext" />メニューでプリセットを選択した状態でページを更新すると、すべてのタグが選択されない状態で表示される問題を修正
 
--   <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" />の下位メニューで検索できる欠落したフィールドを追加し、各メニューで検索できるフィールドのみを表示するように修正
+- <Status>Fixed</Status> <Cmdname sid="analysis" className="uitext" />の下位メニューで検索できる欠落したフィールドを追加し、各メニューで検索できるフィールドのみを表示するように修正
 
-    -   次の二つのメニューに<code>session_count</code>フィールドを追加
+  - 次の二つのメニューに<code>session_count</code>フィールドを追加
 
-    -   <Cmdname sid="MNU06850" className="uitext" />: <code>avg_jitter</code>、<code>avg_latency</code>フィールドを追加
+  - <Cmdname sid="MNU06850" className="uitext" />: <code>avg_jitter</code>、<code>avg_latency</code>フィールドを追加
 
-    -   <Cmdname sid="MNU06851" className="uitext" />: <code>avg_jitter</code>、<code>avg_latency</code>、<code>lost_count</code>、<code>retransmission_count</code>フィールドが表示されないように修正
+  - <Cmdname sid="MNU06851" className="uitext" />: <code>avg_jitter</code>、<code>avg_latency</code>、<code>lost_count</code>、<code>retransmission_count</code>フィールドが表示されないように修正
 
 </div>

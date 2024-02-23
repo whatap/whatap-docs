@@ -90,37 +90,37 @@ Kubernetesイベントの`reason`フィールド情報が`Unhealthy`が0回以�
 
 > `${okindName}`の`${oname}`コンテナのメモリ使用率は「`${container.mem_percent}`% >= 90%」です。
 
-#### **_コンテナdead状態のアラート通知_**
+#### **_コンテナDEAD状態の通知_**
 
-コンテナステータスコードが`100`の場合、この通知が発生します。ステータスコード`100`は`DEAD`を意味します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+コンテナステータスコードが`100`の場合、通知が発生します。ステータスコード`100`は、`DEAD`を意味します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
-> `${oname}`コンテナが`dead`状態です。
+> `${oname}`コンテナが`DEAD`状態です。
 
-#### **_クラスタCPU要請量のアラート通知_**
+#### **_クラスタCPU Request通知_**
 
-ノード割り当て可能なCPU量をLimit CPU総和で割った値に100を掛けた値が80%以上の場合、この通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ノードに割り当て可能なCPU量をLimit CPUの総合で割った値に100を掛けた値が80%以上の場合、通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
-> クラスタCPUクォータに対するCPU要求（最小要求元）が80％を超えました。
+> クラスタのCPUクォータに対してCPU Request(最低要求リソース)が80％を超えました。
 
-#### **_クラスタメモリ要請量のアラート通知_**
+#### **_クラスタMemory Request通知_**
 
-ノード割り当て可能なメモリ量をLimit Memory総和で割った値に100を掛けた値が80%以上の場合、この通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ノードに割り当て可能なメモリ量をLimit Memory総合で割った値に100を掛けた値が80%以上の場合、通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
-> クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 80% 以上です。
+> クラスタのMemoryクォータに対してMemory Request(最低要求リソース)が 80%を超えました。
 
-#### **_クラスタCPU要請量のアラート通知_**
+#### **_クラスタCPU Request通知_**
 
-ノード割り当て可能なCPU量をLimit CPU総和で割った値に100を掛けた値が60%以上の場合、この通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ノードに割り当て可能なCPU量をLimit CPUの総合で割った値に100を掛けた値が60%以上の場合、通知がが発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
-> クラスタCPUクォータに対するCPU要求（最小要求元）が60%を超えました。
+> クラスタのCPUクォータに対してCPU Request(最低要求リソース)が60％を超えました。
 
-#### **_クラスタメモリ要請量のアラート通知_**
+#### **_クラスタMemory Request通知_**
 
-ノード割り当て可能なメモリ量をLimit Memory総和で割った値に100を掛けた値が60%以上の場合、この通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
+ノードに割り当て可能なメモリ量をLimit Memory総合で割った値に100を掛けた値が60%以上の場合、通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
-> クラスタ Memory クォータと比較して、Memory Request（最小要求元）が 60% 以上です。
+> クラスタのMemoryクォータに対してMemory Request(最低要求リソース)が 60%を超えました。
 
-#### **_クラスタPod数のアラート通知_**
+#### **_クラスタPod数の通知_**
 
 ノードに割り当て可能なPodが存在しない場合、その通知が発生します。<Cmdname sid="message" className="uitext" />例は次のとおりです。
 
@@ -138,7 +138,7 @@ Kubernetesイベントの`reason`フィールド情報が`Unhealthy`が0回以�
 
 > `${oname}`のメモリ使用率が「`${memory_pused}`% >= 90%」です。
 
-#### **_割当て不能ノードのアラート通知_**
+#### **_割り当てできないノード通知_**
 
 ノードに割り当て可能なPod数が 0以下の場合、通知が発生します。 
 

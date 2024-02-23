@@ -26,29 +26,29 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx} 
 
-3.  解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-    ```ini title='whatap.conf'
-    license=プロジェクトアクセスキー
-    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapのサーバー情報
+   ```ini title='whatap.conf'
+   license=プロジェクトアクセスキー
+   whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapのサーバー情報
 
-    dbms=tibero
-    db=データベース名(sid)
-    db_ip=データベースのIPアドレス
-    db_port=データベースのポート番号 
-    ```
+   dbms=tibero
+   db=データベース名(sid)
+   db_ip=データベースのIPアドレス
+   db_port=データベースのポート番号 
+   ```
 
-4.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
-    データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
+   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバをダウンロードします。
 
-    **Tibero JDBC Drivers**: `{$TB_HOME}`/client/lib/jar/tibero`{Version}`-jdbc.jar
+   **Tibero JDBC Drivers**: `{$TB_HOME}`/client/lib/jar/tibero`{Version}`-jdbc.jar
 
-    :::note
+   :::note
 
-    _/解凍されたフォルダ/jdbc/README.md_ファイルで各データベースのJDBCドライバのインストールパスを確認することができます。
+   _/解凍されたフォルダ/jdbc/README.md_ファイルで各データベースのJDBCドライバのインストールパスを確認することができます。
 
-    :::
+   :::
 
 {@include: ../common-items/_db-create-monitoring-account.mdx} 
 
@@ -63,4 +63,4 @@ grant alter system to whatap;
 
 ## DBユーザーファイルの作成{#create-db-user}
 
-{@include: ../common-items/_db-create-db-user-file.mdx}
+{@include: ../common-items/_db-create-db-user-file.mdx} 

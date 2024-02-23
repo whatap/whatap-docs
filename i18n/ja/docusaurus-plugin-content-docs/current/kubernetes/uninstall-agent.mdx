@@ -1,0 +1,85 @@
+---
+id: uninstall-agent
+title: エージェント削除
+description: Kubernetesエージェントの削除方法を案内します。
+tags:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - 管理
+  - エージェント
+  - エージェント削除
+toc_max_heading_level: 3
+---
+
+## Kubernetesエージェントの削除
+
+エージェントのインストール段階でダウンロードしたKubernetesバージョンとContainer Runtimeに合う _YAML_ ファイル名を確認し、手順に従ってKubernetesエージェントの削除プロセスを進めてください。 
+
+#### KubernetesエージェントのYAMLファイル名
+
+| Docker                              | YAMLファイル名                   |
+| ----------------------------------- | --------------------------- |
+| Kubernetesバージョン1.16以降               | _whatap_kube_1.16.yaml_     |
+| Kubernetesバージョン1.16以降(GPUバージョン)     | _whatap_kube_1.16_gpu.yaml_ |
+| Kubernetesバージョン1.16未満               | _whatap_kube.yaml_          |
+| Kubernetesバージョン1.16未満(GPUバージョン)     | _whatap_kube_gpu.yaml_      |
+
+| Containerd                          | YAMLファイル名                              |
+| ----------------------------------- | -------------------------------------- |
+| Kubernetesバージョン1.16以降               | _whatap_kube_containerd_1.16.yaml_     |
+| Kubernetesバージョン1.16以降(GPUバージョン)     | _whatap_kube_containerd_1.16_gpu.yaml_ |
+| Kubernetesバージョン1.16未満               | _whatap_kube_containerd.yaml_          |
+| Kubernetesバージョン1.16未満(GPUバージョン)     | _whatap_kube_containerd_gpu.yaml_      |
+
+| CRIO	YAML                           | ファイル名                            |
+| ----------------------------------- | -------------------------------- |
+| Kubernetesバージョン1.16以降               | _whatap_kube_crio_1.16.yaml_     |
+| Kubernetesバージョン1.16以降(GPUバージョン)     | _whatap_kube_crio_1.16_gpu.yaml_ |
+| Kubernetesバージョン1.16未満               | _whatap_kube_crio.yaml_          |
+| Kubernetesバージョン1.16未満(GPUバージョン)     | _whatap_kube_crio_gpu.yaml_      |
+
+### YAMLファイルがある場合
+
+1. インストール段階でダウンロードした_YAML_ファイル名でインストールされているKubernetesエージェントを削除します。 次のコマンドの表記部分をユーザの_YAML_ファイル名に変更して実行してください。 
+
+   ```bash
+   kubectl delete -f < ユーザーのYAMLファイル名 >
+   ```
+
+2. Kubernetesエージェントの削除が正常に完了した場合、次のようなメッセージを確認できます。 
+
+   ```bash
+   namespace "whatap-monitoring" deleted
+   serviceaccount "whatap" deleted
+   clusterrole.rbac.authorization.k8s.io "whatap" deleted
+   configmap "node-start-script" deleted
+   clusterrolebinding.rbac.authorization.k8s.io "whatap" deleted
+   daemonset.apps "whatap-node-agent" deleted
+   configmap "master-start-script" deleted
+   deployment.apps "whatap-master-agent" deleted
+   service "whatap-master-agent" deleted
+   ```
+
+### YAMLファイルがない場合
+
+:::caution 
+
+whatap-monitoringネームスペースに直接ユーザー定義リソースを作成した場合、そのリソースも一緒に削除されます。 
+
+:::
+
+1. 次のコマンドを実行して、Kubernetesエージェントを削除してください。 
+
+   ```bash
+   kubectl delete namespace whatap-monitoring
+   kubectl delete clusterrolebinding whatap
+   kubectl delete clusterrole whatap
+   ```
+
+2. Kubernetesエージェントの削除が正常に完了した場合、次のようなメッセージを確認できます。
+
+   ```bash
+   namespace "whatap-monitoring" deleted
+   clusterrolebinding.rbac.authorization.k8s.io "whatap" deleted
+   clusterrole.rbac.authorization.k8s.io "whatap" deleted
+   ```

@@ -8,147 +8,147 @@
 
 <Cmdname sid="application_agents" className="uitext" />では、プロジェクト内のエージェントのリストを確認できます。 個々のエージェント項目を選択すると、右画面に、設定された環境変数、エージェント設定及びに性能に関する情報を照会できます。
 
--   ![カラムアイコン](/img/ico-column.svg): エージェントリストテーブルのカラムを追加または削除できます。
+- ![カラムアイコン](/img/ico-column.svg): エージェントリストテーブルのカラムを追加または削除できます。
 
--   ![更新アイコン](/img/ico-refresh.svg): エージェントリストを更新できます。 非活性化されたエージェントを再起動してから自動にリストが表示されない場合は、ボタンを押して更新してください。
+- ![更新アイコン](/img/ico-refresh.svg): エージェントリストを更新できます。 非活性化されたエージェントを再起動してから自動にリストが表示されない場合は、ボタンを押して更新してください。
 
--   ![拡張アイコン](/img/ic-s-arrows-alt.svg): 右画面を非表示にし、エージェントリストを拡張してエージェントに関する追加情報を確認できます。
+- ![拡張アイコン](/img/ic-s-arrows-alt.svg): 右画面を非表示にし、エージェントリストを拡張してエージェントに関する追加情報を確認できます。
 
-    <ImgLang img='ipa-agent-list.png' desc='エージェントリスト' />
+  <ImgLang img='ipa-agent-list.png' desc='エージェントリスト' />
 
--   <Cmdname sid="inactive_agent_deletion_time" className="uitext" />: 設定した時間にエージェントが非活性化すると、リストから削除されます。
+- <Cmdname sid="inactive_agent_deletion_time" className="uitext" />: 設定した時間にエージェントが非活性化すると、リストから削除されます。
 
 ## エージェントおよびアプリケーションの詳細情報
 
 画面の右側では、エージェントおよびアプリケーションに関する詳細情報を確認できます。 
 
--   右上のテキスト入力欄から希望する項目がフィルタリングできます。 
+- 右上のテキスト入力欄から希望する項目がフィルタリングできます。 
 
--   モニタリング対象サーバーに位置するエージェントおよびアプリケーションの変更が自動的に反映されない場合は、![更新アイコン](/img/ico-refresh.png)ボタンを選択してください。
+- モニタリング対象サーバーに位置するエージェントおよびアプリケーションの変更が自動的に反映されない場合は、![更新アイコン](/img/ico-refresh.png)ボタンを選択してください。
 
 ### エージェント関連項目
 
--   <Cmdname sid="runtime_boot_env" className="uitext" />
+- <Cmdname sid="runtime_boot_env" className="uitext" />
 
-    エージェントの実行に関連する環境変数を照会できます。 エージェントバージョンやインストールパス、名前、IPアドレスなどを確認できます。
+  エージェントの実行に関連する環境変数を照会できます。 エージェントバージョンやインストールパス、名前、IPアドレスなどを確認できます。
 
 <InDoc product="dotnet,golang,php">
 
--   <Cmdname sid="agent_status" className="uitext" />
+- <Cmdname sid="agent_status" className="uitext" />
 
-    過去 1 日間にエージェントが使用したリソースの使用量を確認できます。
+  過去 1 日間にエージェントが使用したリソースの使用量を確認できます。
 
 </InDoc>
 
--   <Cmdname sid="agent_log" className="uitext" />
+- <Cmdname sid="agent_log" className="uitext" />
 
-    モニタリング対象サーバーに保存されているエージェントログを照会できます。 ログのファイル名は、_whatap-`YYYYMMDD`.log_形式です。 各ログを選択して、ログに含まれてあるエラーやイベントに関する情報が確認できます。
+  モニタリング対象サーバーに保存されているエージェントログを照会できます。 ログのファイル名は、_whatap-`YYYYMMDD`.log_形式です。 各ログを選択して、ログに含まれてあるエラーやイベントに関する情報が確認できます。
 
-    :::note
+  :::note
 
-    ログに関連するエージェント設定は、[次の文書](agent-log)を参考してください。
+  ログに関連するエージェント設定は、[次の文書](agent-log)を参考してください。
 
-    :::
+  :::
 
--   <Cmdname sid="agent_configuration" className="uitext" />
+- <Cmdname sid="agent_configuration" className="uitext" />
 
-    モニタリング対象サーバーに位置する_whatap.conf_ファイルを直接修正することなく、エージェント設定オプションを追加、変更、または削除できます。
+  モニタリング対象サーバーに位置する_whatap.conf_ファイルを直接修正することなく、エージェント設定オプションを追加、変更、または削除できます。
 
-    :::info
+  :::info
 
-    エージェント設定機能は、使用性と機能を改善した<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューの利用をお勧めします。 画面右上の<Cmdname sid="new_agents_setting" className="uitext" />ボタンを選択してください。 詳細については、[次の文書](set-agent#set-agent-service)を参考してください。
+  エージェント設定機能は、使用性と機能を改善した<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューの利用をお勧めします。 画面右上の<Cmdname sid="new_agents_setting" className="uitext" />ボタンを選択してください。 詳細については、[次の文書](set-agent#set-agent-service)を参考してください。
 
-    :::
+  :::
 
 ### アプリケーション関連項目
 
--   <Cmdname sid="boot_env" className="uitext" />
+- <Cmdname sid="boot_env" className="uitext" />
 
-    アプリケーションの実行に関連する環境変数情報を照会できます。
+  アプリケーションの実行に関連する環境変数情報を照会できます。
 
 <InDoc product="java">
 
--   <Cmdname sid="heap_histogram" className="uitext" />
+- <Cmdname sid="heap_histogram" className="uitext" />
 
-    JVM(Java仮想マシン)のメモリにロードされているヒープ占有オブジェクトの現状(ヒープメモリ上のオブジェクト別サイズ)を照会することができます。
+  JVM(Java仮想マシン)のメモリにロードされているヒープ占有オブジェクトの現状(ヒープメモリ上のオブジェクト別サイズ)を照会することができます。
 
-    :::note
+  :::note
 
-    Java 6~8バージョンでは、JVMオプションなしで標準対応しますが、一部のJavaバージョンによっては次のようにJVMオプションを適用する必要があります。
+  Java 6~8バージョンでは、JVMオプションなしで標準対応しますが、一部のJavaバージョンによっては次のようにJVMオプションを適用する必要があります。
 
-    -   Java 9 ~ Java 15バージョン
+  - Java 9 ~ Java 15バージョン
 
-        ```bash
-        -Djdk.attach.allowAttachSelf=true
-        ```
+    ```bash
+    -Djdk.attach.allowAttachSelf=true
+    ```
 
-        ```bash title="example"
-        java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
-        ```
+    ```bash title="example"
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+    ```
 
-    -   Java 16バージョン以降
+  - Java 16バージョン以降
 
-        ```bash
-        -Djdk.attach.allowAttachSelf=true
-        --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
-        ```
+    ```bash
+    -Djdk.attach.allowAttachSelf=true
+    --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+    ```
 
-        ```bash title="example"
-        java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
-        ```
+    ```bash title="example"
+    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+    ```
 
-    -   Java 5以前の旧バージョン、IBM Javaには対応していません。
+  - Java 5以前の旧バージョン、IBM Javaには対応していません。
 
-    :::
+  :::
 
--   <Cmdname sid="loaded_classes" className="uitext" />
+- <Cmdname sid="loaded_classes" className="uitext" />
 
-    Javaアプリケーションにロードされたクラス情報を確認できます。
+  Javaアプリケーションにロードされたクラス情報を確認できます。
 
--   <Cmdname sid="components_version" className="uitext" />
+- <Cmdname sid="components_version" className="uitext" />
 
-    Javaアプリケーションを構成するライブラリのバージョンを確認できます。
+  Javaアプリケーションを構成するライブラリのバージョンを確認できます。
 
--   <Cmdname sid="thread_list" className="uitext" />
+- <Cmdname sid="thread_list" className="uitext" />
 
-    Javaプロセス内のすべてのスレッド状態に関するスナップショット情報を確認できます。 Javaアプリケーションの性能問題を分析するために利用できます。 スレッドリストから各スレッドの![拡張アイコン](/img/ico-expander.svg)ボタンを選択すると、スレッドダンプの詳細を確認できます。 詳細については[次の文書](#thread-details)を参照してください。
+  Javaプロセス内のすべてのスレッド状態に関するスナップショット情報を確認できます。 Javaアプリケーションの性能問題を分析するために利用できます。 スレッドリストから各スレッドの![拡張アイコン](/img/ico-expander.svg)ボタンを選択すると、スレッドダンプの詳細を確認できます。 詳細については[次の文書](#thread-details)を参照してください。
 
--   <Cmdname sid="open_socket_count" className="uitext" />
+- <Cmdname sid="open_socket_count" className="uitext" />
 
-    JavaアプリケーションがTCP機能を実行するためにオープンしたソケット(Socket) 情報を確認できます。
+  JavaアプリケーションがTCP機能を実行するためにオープンしたソケット(Socket) 情報を確認できます。
 
--   <Cmdname sid="method_stat" className="uitext" />
+- <Cmdname sid="method_stat" className="uitext" />
 
-    Javaアプリケーションで実行中のメソッド(Method)の詳細情報を確認できます。
+  Javaアプリケーションで実行中のメソッド(Method)の詳細情報を確認できます。
 
--   <Cmdname sid="datasource_status" className="uitext" />
+- <Cmdname sid="datasource_status" className="uitext" />
 
-    データソース(DataSource)の状態を確認できます。
+  データソース(DataSource)の状態を確認できます。
 
--   <Cmdname sid="system_gc_only" className="uitext" />
+- <Cmdname sid="system_gc_only" className="uitext" />
 
-    JVM(Java仮想マシン)のヒープ領域で 動的に割り当てたメモリのうち、不要になったメモリオブジェクト(garbage)を集めて削除することができます。 <Cmdname sid="run" className="uitext" />ボタンを選択するとGCプロセスが実行され、実行前後のメモリ容量が確認できます。
+  JVM(Java仮想マシン)のヒープ領域で 動的に割り当てたメモリのうち、不要になったメモリオブジェクト(garbage)を集めて削除することができます。 <Cmdname sid="run" className="uitext" />ボタンを選択するとGCプロセスが実行され、実行前後のメモリ容量が確認できます。
 
--   <Cmdname sid="heap_dump" className="uitext" />
+- <Cmdname sid="heap_dump" className="uitext" />
 
-    Javaアプリケーションの実行中にメモリ漏れなどの問題が発生すると、関連した問題を整理してダンプファイルを作成できます。 <Cmdname sid="dump_heap" className="uitext" />ボタンを選択します。
+  Javaアプリケーションの実行中にメモリ漏れなどの問題が発生すると、関連した問題を整理してダンプファイルを作成できます。 <Cmdname sid="dump_heap" className="uitext" />ボタンを選択します。
 
-    :::note
+  :::note
 
-    この機能は、Javaエージェント1.5.2バージョン以降に対応しています。 エージェント設定で`heapdump_enabled`オプションを`true`に設定してください。
+  この機能は、Javaエージェント1.5.2バージョン以降に対応しています。 エージェント設定で`heapdump_enabled`オプションを`true`に設定してください。
 
-    :::
+  :::
 
--   <Cmdname sid="configuration_throttling" className="uitext" />
+- <Cmdname sid="configuration_throttling" className="uitext" />
 
-    Javaアプリケーションの負荷量制御に関連するエージェント設定を確認し、オプションを設定できます。 負荷量制御に関するエージェント設定の詳細については、[次の文書](agent-load-amount)を参考してください。
+  Javaアプリケーションの負荷量制御に関連するエージェント設定を確認し、オプションを設定できます。 負荷量制御に関するエージェント設定の詳細については、[次の文書](agent-load-amount)を参考してください。
 
 </InDoc>
 
 <InDoc product="nodejs,php,python">
 
--   <Cmdname sid="module_dependency" className="uitext" />
+- <Cmdname sid="module_dependency" className="uitext" />
 
-    アプリケーションで使用中のモジュール関連情報を照会することができます。
+  アプリケーションで使用中のモジュール関連情報を照会することができます。
 
 </InDoc>

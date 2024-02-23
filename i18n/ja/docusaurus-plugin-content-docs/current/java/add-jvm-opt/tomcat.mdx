@@ -31,42 +31,42 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 ### Windows
 
--   _setup.bat_ファイルを実行した場合
+- _setup.bat_ファイルを実行した場合
 
-    _catalina.bat_ファイルの先頭に`JAVA_OPT`環境変数を追加します。
+  _catalina.bat_ファイルの先頭に`JAVA_OPT`環境変数を追加します。
 
-    ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
-    rem ########## WHATAP START ############
-    set WHATAP_HOME=C:\whatap
-    for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-*.jar"') do set last=%%f
-    set WHATAP_JAR=%last%
-    set WHATAP_OPTS=-javaagent:%WHATAP_HOME%\%WHATAP_JAR%
+  ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
+  rem ########## WHATAP START ############
+  set WHATAP_HOME=C:\whatap
+  for /f %%f in ('dir /b /on "%WHATAP_HOME%\whatap.agent-*.jar"') do set last=%%f
+  set WHATAP_JAR=%last%
+  set WHATAP_OPTS=-javaagent:%WHATAP_HOME%\%WHATAP_JAR%
 
-    if "x%JAVA_OPTS%"=="x" goto setWhatap
+  if "x%JAVA_OPTS%"=="x" goto setWhatap
 
-    set JAVA_OPTS_TMP=%JAVA_OPTS:"=%
-    if not "x%JAVA_OPTS_TMP:whatap=%"=="x%JAVA_OPTS_TMP%" goto endWhatap
+  set JAVA_OPTS_TMP=%JAVA_OPTS:"=%
+  if not "x%JAVA_OPTS_TMP:whatap=%"=="x%JAVA_OPTS_TMP%" goto endWhatap
 
-    :setWhatap
-    set JAVA_OPTS=%JAVA_OPTS% %WHATAP_OPTS%
+  :setWhatap
+  set JAVA_OPTS=%JAVA_OPTS% %WHATAP_OPTS%
 
-    :endWhatap
-    rem ########## WHATAP END ############
-    ```
+  :endWhatap
+  rem ########## WHATAP END ############
+  ```
 
--   TomcatをWindowsインストーラーでインストールした場合
+- TomcatをWindowsインストーラーでインストールした場合
 
-    1.  **_開始_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**を選択します。
+  1. **_開始_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**を選択します。
 
-    2.  **_Java_**タブを選択します。
+  2. **_Java_**タブを選択します。
 
-    3.  **_Java Options_**テキストボックスに`-javaagent`オプションを追加します。
+  3. **_Java Options_**テキストボックスに`-javaagent`オプションを追加します。
 
-    ```text
-    -javaagent:{WhaTapインストールパス}/whatap.agent-X.Y.Z.jar
-    ```
+  ```text
+  -javaagent:{WhaTapインストールパス}/whatap.agent-X.Y.Z.jar
+  ```
 
-    ![Apache Tomcat](https://img.whatap.io/media/images/tomcat-win.png)
+  ![Apache Tomcat](https://img.whatap.io/media/images/tomcat-win.png)
 
 ### Java 17バージョン以降
 
@@ -82,24 +82,24 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 | WAS Ver. |       Java SE 6 (jdk1.6.0)      |     Java SE 7 (jdk1.7.0_80)     |     Java SE 8 (jdk1.8.0_91)     |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Tomcat6  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat7  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat8  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat9  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 
-| WAS Ver. |       OpenJDK6 (1.6.0_45)       |       OpenJDK7 (1.7.0_80)       |       OpenJDK8 (1.8.0_91)       |
+| WAS Ver. |       OpenJDK 6 (1.6.0_45)      |       OpenJDK 7 (1.7.0_80)      |       OpenJDK 8 (1.8.0_91)      |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Tomcat6  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat7  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat8  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat9  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 
 | WAS Ver. |        ibm-java-x86_64-60       |        ibm-java-x86_64-71       |        ibm-java-x86_64-80       |
 | -------- | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Tomcat6  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat7  | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat8  | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Tomcat9  | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 6 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 7 | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 8 | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
+| Tomcat 9 | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
 
 ## Tomcat DataSource
 

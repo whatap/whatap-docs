@@ -7,64 +7,66 @@ pagination_next: release-notes/golang/golang-0_2_2
 
 2023年9月13日
 
--   <Status>Feature</Status>大容量プロファイル処理オプションの追加
+- <Status>Feature</Status>大容量プロファイル処理オプションの追加
 
-    -   既存のプロファイルは、最大1024個のプロファイル情報を収集しました。 設定で最大値を増やすことができますが、メモリの増加は必然的に発生しました。
+  - 既存のプロファイルは、最大1024個のプロファイル情報を収集しました。 設定で最大値を増やすことができますが、メモリの増加は必然的に発生しました。
 
-    -   一定量のプロファイルを圧縮および分割転送して、メモリの増加なしにより多くのプロファイル情報を収集できるように改善しました。
+  - 一定量のプロファイルを圧縮および分割転送して、メモリの増加なしにより多くのプロファイル情報を収集できるように改善しました。
 
-    -   **large_profile_enabled** <span class='type'>Boolean</span>
+  - **large_profile_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-        約1万件以下のプロファイル（ステップ）情報を収集できます。 より多くの量を収集する場合、`split_profile_enabled`オプションとして使用することをお勧めします。
+    約1万件以下のプロファイル（ステップ）情報を収集できます。 より多くの量を収集する場合、`split_profile_enabled`オプションとして使用することをお勧めします。
 
-    -   **split_profile_enabled** <span class='type'>Boolean</span>
+  - **split_profile_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-        一定量のプロファイルを仮想トランザクションに分離して、より多くのプロファイル情報を収集します。 複数のトランザクション一覧に分割表記します。
+    一定量のプロファイルを仮想トランザクションに分離して、より多くのプロファイル情報を収集します。 複数のトランザクション一覧に分割表記します。
 
-    :::note
+  :::note
 
-    -   二つのオプションを設定した場合、`split_profile_enabled`オプションが優先的に適用されます。
+  - 二つのオプションを設定した場合、`split_profile_enabled`オプションが優先的に適用されます。
 
-    -   上記のオプションに関連するエージェント設定の詳細は、[次の文書](../../golang/agent-transaction#trs-trc)を参照してください。
+  - 上記のオプションに関連するエージェント設定の詳細は、[次の文書](../../golang/agent-transaction#trs-trc)を参照してください。
 
-    :::
+  :::
 
--   <Status>Feature</Status>プロファイル データ圧縮転送オプションの追加
+- <Status>Feature</Status>プロファイル データ圧縮転送オプションの追加
 
-    **profile_zip_enabled** <span class='type'>boolean</span> : デフォルト値`true`
+  **profile_zip_enabled** <span class='type'>boolean</span> : デフォルト値`true`
 
--   <Status>Changed</Status>特定のHTTP Method収集を除く機能を、すべてのトランザクション対象に変更
+<!---->
 
-    -   `ignore_http_method`オプションはすべてのトランザクションを対象に変更します。
+- <Status>Changed</Status>特定のHTTP Method収集を除く機能を、すべてのトランザクション対象に変更
 
-    -   既存の除外機能は、`http_method_urls`オプションで設定されたトランザクションのみを除外しました。 `http_method_urls`オプションを削除し、すべてのトランザクション対象を変更します。
+  - `ignore_http_method`オプションはすべてのトランザクションを対象に変更します。
 
-    :::note
+  - 既存の除外機能は、`http_method_urls`オプションで設定されたトランザクションのみを除外しました。 `http_method_urls`オプションを削除し、すべてのトランザクション対象を変更します。
 
-    -   上記のオプションに関連するエージェント設定の詳細については、[次の文書](../../golang/agent-transaction#track-http-trs)を参照してください。
+  :::note
 
-    :::
+  - 上記のオプションに関連するエージェント設定の詳細については、[次の文書](../../golang/agent-transaction#track-http-trs)を参照してください。
+
+  :::
 
 :::info
 
 **ダウンロード**
 
--   go-api(import library)
+- go-api(import library)
 
-    ```bash
-    go get github.com/whatap/go-api@latest
-    ```
+  ```bash
+  go get github.com/whatap/go-api@latest
+  ```
 
--   サービスエージェント
+- サービスエージェント
 
-    | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
-    | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
-    | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
-    | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
-    | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
+  | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
+  | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
+  | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-3.x86_64.rpm) |
+  | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.3_amd64.deb) |
+  | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.3.tar.gz)    |
 
 :::

@@ -37,33 +37,33 @@ pipコマンドでインストールできない場合は、[pypi WhaTapペー�
 
 ### Docker
 
-1.  Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加してください。
+1. Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加してください。
 
-    -   **Pythonエージェント**をインストールしてください。
+   - **Pythonエージェント**をインストールしてください。
 
-        ```docker title='Dockerfile' {3}
-        ENV WHATAP_HOME /whatap
-        RUN mkdir -p /whatap
-        RUN pip install whatap-python
-        // requirements.txtを使用する場合は、そのファイルにwhatap-pythonを追加してください。
-        ```
+     ```docker title='Dockerfile' {3}
+     ENV WHATAP_HOME /whatap
+     RUN mkdir -p /whatap
+     RUN pip install whatap-python
+     // requirements.txtを使用する場合は、そのファイルにwhatap-pythonを追加してください。
+     ```
 
-    -   **アクセスキー**および**収集サーバーIP**設定を登録してください。
+   - **アクセスキー**および**収集サーバーIP**設定を登録してください。
 
-        ```docker title='Dockerfile'
-        RUN touch /whatap/whatap.conf
-        RUN echo "license=[発行されたアクセスキー]" > /whatap/whatap.conf
-        RUN echo "whatap.server.host=[収集サーバIP]" >> /whatap/whatap.conf
-        RUN echo "app_name=[エージェント名]" >> /whatap/whatap.conf
-        RUN echo "app_process_name=[アプリケーションプロセス名の例)uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
-        ```
+     ```docker title='Dockerfile'
+     RUN touch /whatap/whatap.conf
+     RUN echo "license=[発行されたアクセスキー]" > /whatap/whatap.conf
+     RUN echo "whatap.server.host=[収集サーバIP]" >> /whatap/whatap.conf
+     RUN echo "app_name=[エージェント名]" >> /whatap/whatap.conf
+     RUN echo "app_process_name=[アプリケーションプロセス名の例)uwsgi, gunicorn.. ]" >> /whatap/whatap.conf
+     ```
 
-2.  既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
+2. 既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
 
-    ```docker title='Dockerfile'
-    #ENTRYPOINT python manage.py runserver
-    ENTRYPOINT whatap-start-agent python manage.py runserver
-    ```
+   ```docker title='Dockerfile'
+   #ENTRYPOINT python manage.py runserver
+   ENTRYPOINT whatap-start-agent python manage.py runserver
+   ```
 
 :::note
 
@@ -75,57 +75,57 @@ pipコマンドでインストールできない場合は、[pypi WhaTapペー�
 <summary>Pythonエージェント構成ファイル</summary>
 Pythonエージェントファイルは、アプリケーションモニタリングに必要な情報を抽出し、タブ収集サーバーに伝達するトレーサーと、トレーサーがデータを送信できるよう支援する要素で構成されています。
 
--   _whatap.conf_
+- _whatap.conf_
 
-    エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて_whatap.conf_ファイルで設定できます。
+  エージェント設定の基本的な必須ファイルです。エージェントに関連するオプションはすべて_whatap.conf_ファイルで設定できます。
 
--   _paramkey.txt_
+- _paramkey.txt_
 
-    追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。 
+  追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。 
 
-    セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力して表示できます。 
+  セキュリティキーをファイルに保存した後、実際に収集されたデータをブラウザで確認したい場合は、ファイルに保存されたセキュリティキーを入力して表示できます。 
 
-    ファイルの内容を直接変更することで、セキュリティ キーの修正が可能です。関連オプションは次のとおりです。 
+  ファイルの内容を直接変更することで、セキュリティ キーの修正が可能です。関連オプションは次のとおりです。 
 
-    -   **profile_http_parameter_enabled** <span class='type'>Boolean</span>
+  - **profile_http_parameter_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
-    -   **profile_sql_param_enabled** <span class='type'>Boolean</span>
+  - **profile_sql_param_enabled** <span class='type'>Boolean</span>
 
-        デフォルト値`false`
+    デフォルト値`false`
 
 </details>
 
 ## エージェント設定
 
-1.  **WHATAP_HOMEの基本パス設定**
+1. **WHATAP_HOMEの基本パス設定**
 
-    ログと設定ファイルパスのための`$WHATAP_HOME`パスを指定してください。whatapディレクトリを新たに作成することをお勧めします。
+   ログと設定ファイルパスのための`$WHATAP_HOME`パスを指定してください。whatapディレクトリを新たに作成することをお勧めします。
 
-    ```bash
-    $ export WHATAP_HOME=[PATH]
-    ```
+   ```bash
+   $ export WHATAP_HOME=[PATH]
+   ```
 
-2.  **アクセスキーと収集サーバーのIP設定**
+2. **アクセスキーと収集サーバーのIP設定**
 
-    次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルが設定されます。
+   次のコマンドを実行すると、`$WHATAP_HOME`に指定したパスに_whatap.conf_ファイルが設定されます。
 
-    ```bash
-    whatap-setting-config \
-    --host [収集サーバIP] \
-    --license [アクセスキー] \
-    --app_name [ユーザー指定のエージェント名を入力] \
-    --app_process_name [プロセス名、ex. uwsgi, gunicorn]
-    ```
+   ```bash
+   whatap-setting-config \
+   --host [収集サーバIP] \
+   --license [アクセスキー] \
+   --app_name [ユーザー指定のエージェント名を入力] \
+   --app_process_name [プロセス名、ex. uwsgi, gunicorn]
+   ```
 
-3.  **設定表示**
+3. **設定表示**
 
-    次のように設定ファイル作成されていることを確認してください。
+   次のように設定ファイル作成されていることを確認してください。
 
-    ```bash
-    $ cat $WHATAP_HOME/whatap.conf
-    ```
+   ```bash
+   $ cat $WHATAP_HOME/whatap.conf
+   ```
 
 ## アプリケーションサーバごとに適用
 
@@ -238,19 +238,19 @@ def simple_app(environ, start_response):
 
 ## エージェントの適用およびサービス実行の確認
 
--   **WhaTapエージェントの適用**
+- **WhaTapエージェントの適用**
 
-    最上部にAPIを直接呼び出すコードを次のように追加し、WhaTapエージェントを適用してください。
+  最上部にAPIを直接呼び出すコードを次のように追加し、WhaTapエージェントを適用してください。
 
-    ```bash
-    import whatap
-    whatap.agent
-    ```
+  ```bash
+  import whatap
+  whatap.agent
+  ```
 
--   **サービス実行の確認**
+- **サービス実行の確認**
 
-    次のコマンドを実行して、WhaTap Pythonサービスが正常に実行されたか確認してください。
+  次のコマンドを実行して、WhaTap Pythonサービスが正常に実行されたか確認してください。
 
-    ```bash
-    ps -ef | grep whatap_python
-    ```
+  ```bash
+  ps -ef | grep whatap_python
+  ```

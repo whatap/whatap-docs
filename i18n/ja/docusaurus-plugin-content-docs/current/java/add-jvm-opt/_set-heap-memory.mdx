@@ -4,26 +4,26 @@ WhaTapのJavaモニタリングでは、JVMメモリのヒープ占有オブジ�
 
 Java 6~8バージョンでは、JVMオプションなしで標準対応しますが、一部のJavaバージョンによっては次のようにJVMオプションを適用する必要があります。
 
--   Java 9 ~ Java 15バージョン
+- Java 9 ~ Java 15バージョン
 
-    ```bash
-    -Djdk.attach.allowAttachSelf=true
-    ```
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  ```
 
-    ```bash title="example"
-    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
-    ```
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true -jar {application.jar}
+  ```
 
--   Java 16バージョン以降
+- Java 16バージョン以降
 
-    ```bash
-    -Djdk.attach.allowAttachSelf=true
-    --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
-    ```
+  ```bash
+  -Djdk.attach.allowAttachSelf=true
+  --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED
+  ```
 
-    ```bash title="example"
-    java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
-    ```
+  ```bash title="example"
+  java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Djdk.attach.allowAttachSelf=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -jar {application.jar}
+  ```
 
 :::note
 

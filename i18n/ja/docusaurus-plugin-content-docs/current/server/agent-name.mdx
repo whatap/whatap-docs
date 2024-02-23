@@ -20,19 +20,19 @@ WhaTapは、モニタリング情報の収集対象となるインフラスト�
 
 ユーザーフレンドリーな名前を指定する場合、次のように設定ファイルに指定できます。
 
--   **Linux Shell**
+- **Linux Shell**
 
-    ```bash title=SH
-    export WHATAP_SERVER_NAME=ユーザーフレンドリーな名前
+  ```bash title=SH
+  export WHATAP_SERVER_NAME=ユーザーフレンドリーな名前
 
-    echo "oname=$WHATAP_SERVER_NAME" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
-    ```
+  echo "oname=$WHATAP_SERVER_NAME" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
 
--   **Windows Power Shell** 
+- **Windows Power Shell** 
 
-    ```bash title=SH
-    # 管理者権限が必要です。
-    $WHATAP_SERVER_NAME="ユーザーフレンドリーな名前"
+  ```bash title=SH
+  # 管理者権限が必要です。
+  $WHATAP_SERVER_NAME="ユーザーフレンドリーな名前"
 
-    Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"
-    ```
+  Add-Content "C:\Program Files\WhatapInfra\whatap.conf" "oname=$WHATAP_SERVER_NAME"
+  ```

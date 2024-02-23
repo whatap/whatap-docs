@@ -13,40 +13,40 @@ Goライブラリー別のエージェント設定を案内します。
 
 [goolge.golang.org/grpc](https://pkg.go.dev/google.golang.org/grpc)
 
--   **grpc_profile_enabled** <span class='type'>Boolean</span>
+- **grpc_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    gRPC(Google Remote Procedure Call、以下gRPC) 情報の収集有無を設定します。
+  gRPC(Google Remote Procedure Call、以下gRPC) 情報の収集有無を設定します。
 
--   **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
+- **grpc_profile_stream_client_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    Client stream method情報の収集有無を設定します。
+  Client stream method情報の収集有無を設定します。
 
--   **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
+- **grpc_profile_stream_server_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    Server stream method情報の収集有無を設定します。
+  Server stream method情報の収集有無を設定します。
 
--   **grpc_profile_ignore_method** <span class='type'>String</span>
+- **grpc_profile_ignore_method** <span class='type'>String</span>
 
-    デフォルト値`agent`
+  デフォルト値`agent`
 
-    設定した値に対するmethodを収集致しません。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
+  設定した値に対するmethodを収集致しません。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。
 
--   **grpc_profile_stream_method** <span class='type'>String</span>
+- **grpc_profile_stream_method** <span class='type'>String</span>
 
-    設定したstream methodを別途のトランザクションで構成します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 長時間続くstream 接続に対して、それぞれのmethod 呼び出しを単独トランザクションとして処理します。 ヒットマップ、トランザクション検索からfull methodで検索できます。
+  設定したstream methodを別途のトランザクションで構成します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 長時間続くstream 接続に対して、それぞれのmethod 呼び出しを単独トランザクションとして処理します。 ヒットマップ、トランザクション検索からfull methodで検索できます。
 
--   **grpc_profile_stream_identify** <span class='type'>Boolean</span>
+- **grpc_profile_stream_identify** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    Stream full methodをトランザクション名で収集し、同一のfull methodに対してclient、 serverを区分できる接頭語を追加します。
+  Stream full methodをトランザクション名で収集し、同一のfull methodに対してclient、 serverを区分できる接頭語を追加します。
 
-    ```ini title='whatap.conf'
-    grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
-    ```
+  ```ini title='whatap.conf'
+  grpc_profile_stream_identify=/StreamClient/[full method], /StreamServer/[full method]
+  ```

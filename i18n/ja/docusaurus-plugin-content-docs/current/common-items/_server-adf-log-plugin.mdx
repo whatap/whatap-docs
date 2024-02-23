@@ -66,28 +66,28 @@ Restart-Service "Whatap Infra"
 
 ### オプション設定
 
--   `stats_enabled`：収集状態データの収集有無を設定します。デフォルト値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
+- `stats_enabled`：収集状態データの収集有無を設定します。デフォルト値は`false`です。値を`true`に設定してください。`true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
 
--   `stats_category`：収集データを保存するメトリクスカテゴリを設定します。値を`logsink_stats`に設定してください。統計データのフィールドは次のとおりです。
+- `stats_category`：収集データを保存するメトリクスカテゴリを設定します。値を`logsink_stats`に設定してください。統計データのフィールドは次のとおりです。
 
-    -   `file`
-    -   `checkInterval`
-    -   `encoding`
-    -   `filepos`
-    -   `checkedLocalTime`
-    -   `lastupdatedLocalTime`
-    -   `fileSize`
-    -   `error`
-    -   `firstCheck`
-    -   `transferBytes`
+  - `file`
+  - `checkInterval`
+  - `encoding`
+  - `filepos`
+  - `checkedLocalTime`
+  - `lastupdatedLocalTime`
+  - `fileSize`
+  - `error`
+  - `firstCheck`
+  - `transferBytes`
 
--   `excludeNames`：ログのファイルパス（path）にアスタリスク（\*）が含まれた場合、ログの非対象ファイルを除外するようにファイル名を設定できます。コンマ（,）を区切り文字として複数回設定できます。
+- `excludeNames`：ログのファイルパス（path）にアスタリスク（\*）が含まれた場合、ログの非対象ファイルを除外するようにファイル名を設定できます。コンマ（,）を区切り文字として複数回設定できます。
 
-    ```ini title='Example'
-    excludeNames = [ ".gz",".zip" ]
-    ```
+  ```ini title='Example'
+  excludeNames = [ ".gz",".zip" ]
+  ```
 
--   `nowrap_keywords`：行単位のログ検索時に、対応するオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
+- `nowrap_keywords`：行単位のログ検索時に、対応するオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
 
 <!-- 
 

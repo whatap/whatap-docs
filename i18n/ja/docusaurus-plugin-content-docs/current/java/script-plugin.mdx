@@ -13,57 +13,57 @@ Javaエージェントが提供するプラグインを使用してトレース�
 
 Javaエージェントプラグインは、メソッドの開始/終了部分に挿入して実行します。プラグインを適用する場所(クラス、メソッド)は、エージェントオプションで設定できます。
 
--   `hook_trace_helper_start_patterns`
+- `hook_trace_helper_start_patterns`
 
-    メソッドの開始部分にトレースプラグインを挿入するポイント(クラス、メソッド)を設定します。プラグインコードは、_`$WHATAP_HOME`/plugin/TraceHelperStart.x_ファイルに記述してください。
+  メソッドの開始部分にトレースプラグインを挿入するポイント(クラス、メソッド)を設定します。プラグインコードは、_`$WHATAP_HOME`/plugin/TraceHelperStart.x_ファイルに記述してください。
 
--   `hook_trace_helper_end_patterns`
+- `hook_trace_helper_end_patterns`
 
-    メソッドの最後にトレースプラグインを挿入するポイント(クラス、メソッド)を設定します。プラグインコードは、_`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ファイルに記述してください。
+  メソッドの最後にトレースプラグインを挿入するポイント(クラス、メソッド)を設定します。プラグインコードは、_`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ファイルに記述してください。
 
--   `hook_trace_helper_patterns`
+- `hook_trace_helper_patterns`
 
-    メソッドの開始/終了の両方にトレースプラグインを挿入するポイント(クラス、メソッド)を設定します。プラグインコードは、_`$WHATAP_HOME`/plugin/TraceHelperStart.x_, _`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ファイルにそれぞれ記述してください。
+  メソッドの開始/終了の両方にトレースプラグインを挿入するポイント(クラス、メソッド)を設定します。プラグインコードは、_`$WHATAP_HOME`/plugin/TraceHelperStart.x_, _`$WHATAP_HOME`/plugin/TraceHelperEnd.x_ファイルにそれぞれ記述してください。
 
--   `custom_pool_classes`
+- `custom_pool_classes`
 
-    ユーザー定義プールをモニタリングするには、プール使用量の情報を含むクラスを設定します。プラグインコードは、_`$/WHATAP_HOME`/plugin/CustomPool.x_に作成します。
+  ユーザー定義プールをモニタリングするには、プール使用量の情報を含むクラスを設定します。プラグインコードは、_`$/WHATAP_HOME`/plugin/CustomPool.x_に作成します。
 
 ## プラグインの設定例
 
 複数のクラスを設定する場合は、コンマ(,)を区切り文字として利用してください。パッケージ名の文字列の一部または全部を「\*」に置き換えることができます。
 
--   **パッケージとメソッド名を設定する場合**
+- **パッケージとメソッド名を設定する場合**
 
-    ```java
-    whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
-    ```
+  ```java
+  whatap.bytecode.instrument.PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.testB
+  ```
 
--   **パッケージとメソッド名を「\*」に置き換える場合**
+- **パッケージとメソッド名を「\*」に置き換える場合**
 
-    ```java
-    *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
-    ```
+  ```java
+  *PluginTestA.testA,whatap.bytecode.instrument.PluginTestB.*
+  ```
 
-    ```java
-    *.testA, *PluginTestB.testB
-    ```
+  ```java
+  *.testA, *PluginTestB.testB
+  ```
 
--   **全体を対象とする場合**
+- **全体を対象とする場合**
 
-    ```java
-    *.*
-    ```
+  ```java
+  *.*
+  ```
 
--   **Custom Poolを設定する場合**
+- **Custom Poolを設定する場合**
 
-    Custom Poolは、識別子@パッケージ名の形に設定します。
+  Custom Poolは、識別子@パッケージ名の形に設定します。
 
-    例）Class名の前に`whatap_plugin_guide`という識別子を設定します。識別子とクラスは@で区切ります。
+  例）Class名の前に`whatap_plugin_guide`という識別子を設定します。識別子とクラスは@で区切ります。
 
-    ```java
-    whatap_plugin_guide@com.ibm.ws.connectionpool.monitor.ConnectionPoolStats 
-    ```
+  ```java
+  whatap_plugin_guide@com.ibm.ws.connectionpool.monitor.ConnectionPoolStats 
+  ```
 
 ## プラグインコードの作成例
 
@@ -71,13 +71,13 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### 設定したメソッド開始時間をトレースに記録する
 
-1.  Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを_whatap.conf_ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを_whatap.conf_ファイルに記述してください。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
 ```
 
-2.  _TraceHelperStart.x_ファイルにプラグインコードを記述してください。
+2. _TraceHelperStart.x_ファイルにプラグインコードを記述してください。
 
 ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
 // String prefixにクラス名、メソッド名を代入してください。
@@ -94,13 +94,13 @@ $ctx.profile(prefix + " Start", new java.util.Date().toString());
 
 ### 設定したメソッド終了時間と実行時間をトレースに記録する
 
-1.  Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを_whatap.conf_ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを_whatap.conf_ファイルに記述してください。
 
 ```ini title='$WHATAP_HOME/whatap.conf'
 hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
 ```
 
-1.  _TraceHelperEnd.x_ファイルにプラグインコードを記述してください。
+1. _TraceHelperEnd.x_ファイルにプラグインコードを記述してください。
 
 ```java title='$WHATAP_HOME/plugin/TraceHelperEnd.x' {3,8} showLineNumbers
 String prefix = $point.class1 + "." + $point.method;
@@ -186,8 +186,8 @@ $ctx.profile(prefix + " End", sb.toString());
 
 デーモン、バッチなどのアプリケーション サーバーをモニタリングする場合、開始点として設定したメソッドに適用するAPIです。次のファイルにコードを記述してください。
 
--   サービス開始部分適用：_`$WHATAP_HOME`/plugin/AppServiceStart.x_
--   サービス終了部分適用：_`$WHATAP_HOME`/plugin/AppServiceEnd.x_
+- サービス開始部分適用：_`$WHATAP_HOME`/plugin/AppServiceStart.x_
+- サービス終了部分適用：_`$WHATAP_HOME`/plugin/AppServiceEnd.x_
 
 | プラグインファイル         |  パラメータ  | メソッド／変数      | 説明           |
 | ----------------- | :-----: | ------------ | ------------ |
@@ -199,8 +199,8 @@ $ctx.profile(prefix + " End", sb.toString());
 
 `javax.servlet.http.HTTPServlet`クラスを使用する一般的なウェブアプリケーションに適用できるAPIです。次のファイルにコードを記述してください。
 
--   サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpServiceStart.x_
--   サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
+- サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpServiceStart.x_
+- サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
 
 | プラグインファイル                                |  パラメータ | メソッド／変数                                 | 説明                      |
 | ---------------------------------------- | :----: | --------------------------------------- | ----------------------- |
@@ -229,8 +229,8 @@ $ctx.profile(prefix + " End", sb.toString());
 
 `HttpClient`などのライブラリを使用してHTTP Outbound Callを実行するときに適用できるAPIです。次のファイルにコードを記述してください。
 
--   サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpCallStart.x_
--   サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpCallEnd.x_
+- サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpCallStart.x_
+- サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpCallEnd.x_
 
 | プラグインファイル       |  パラメータ | メソッド／変数                       | 説明                    |
 | --------------- | :----: | ----------------------------- | --------------------- |

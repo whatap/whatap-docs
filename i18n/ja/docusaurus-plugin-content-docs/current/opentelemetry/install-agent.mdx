@@ -148,21 +148,21 @@ service:
       level: debug #activate debug mode
 ```
 
--   エンドポイント(`endpoint`)設定：`127.0.0.1:6600`
+- エンドポイント(`endpoint`)設定：`127.0.0.1:6600`
 
-    ローカルにインストールしたエージェントが使用するデフォルトのポートは 6600です。
+  ローカルにインストールしたエージェントが使用するデフォルトのポートは 6600です。
 
--   `tls.secure`設定：`insecure: true`
+- `tls.secure`設定：`insecure: true`
 
--   gzip圧縮設定をデフォルトで使用します。 (gzip使用)
+- gzip圧縮設定をデフォルトで使用します。 (gzip使用)
 
 :::info
 
 OpenTelemetry Collectorインストールの詳細については、次のリンクを参考にしてください。
 
--   [Install the Collector](https://opentelemetry.io/docs/collector/installation/)
+- [Install the Collector](https://opentelemetry.io/docs/collector/installation/)
 
--   [Building a custom collector](https://opentelemetry.io/docs/collector/custom-collector/)
+- [Building a custom collector](https://opentelemetry.io/docs/collector/custom-collector/)
 
 :::
 
@@ -172,7 +172,7 @@ OpenTelemetry Collectorインストールの詳細については、次のリン
 
 [Tyk Gateway](https://tyk.io/)のOpenTelemetry機能を活性化した上でOpenTelemetry Collecotrを通じてトランザクション情報を確認することができます。 
 
-1.  OpenTelemetry CollectorをTyk Gatewayに接続します。 
+1. OpenTelemetry CollectorをTyk Gatewayに接続します。 
 
 ```json title="tyk.conf"
 {
@@ -188,10 +188,10 @@ OpenTelemetry Collectorインストールの詳細については、次のリン
 }
 ```
 
-1.  接続されたOpenTelemetry Collectorにwhatap-otelエージェントが接続されたら、トレース情報を収集します。
+1. 接続されたOpenTelemetry Collectorにwhatap-otelエージェントが接続されたら、トレース情報を収集します。
 
 ## モニタリングの開始
 
--   すべての設定を完了した後、アプリケーションサーバーを再起動すると、エージェントが情報を収集します。 <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" />メニューに移動して、収集されたデータをリアルタイムでモニタリングしてください。
+- すべての設定を完了した後、アプリケーションサーバーを再起動すると、エージェントが情報を収集します。 <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" />メニューに移動して、収集されたデータをリアルタイムでモニタリングしてください。
 
--   エージェント設定の詳細については、[次の文書](set-agent)を確認してください。
+- エージェント設定の詳細については、[次の文書](set-agent)を確認してください。

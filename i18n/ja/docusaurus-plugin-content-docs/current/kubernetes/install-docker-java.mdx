@@ -19,9 +19,9 @@ Dockerコンテナベースで動作するJavaアプリケーションのJVM Opt
 
 :::note 
 
--   EKS Fargateは、対応予定です。 
+- EKS Fargateは、対応予定です。 
 
--   Javaアプリケーション連動過程に対する理解を助けるためにGit例示コードを提供します。[次の文書](https://github.com/whatap/kuber-apm-boilerplate/tree/main/java/springboot)を参考にしてください。
+- Javaアプリケーション連動過程に対する理解を助けるためにGit例示コードを提供します。[次の文書](https://github.com/whatap/kuber-apm-boilerplate/tree/main/java/springboot)を参考にしてください。
 
 :::
 
@@ -51,44 +51,44 @@ _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して
 
 **最新バージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1.  アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
 
-    ```docker
-    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
-    RUN mkdir -p /whatap
+   ```docker
+   # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
+   RUN mkdir -p /whatap
 
-    # WhaTap Javaエージェントをユーザーコンテナにコピー
-    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
+   # WhaTap Javaエージェントをユーザーコンテナにコピー
+   COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
 
-    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
-    COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
-    ```
+   # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
+   COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
+   ```
 
-2.  Dockerfileの開始コマンドに次の内容を追加してください。
+2. Dockerfileの開始コマンドに次の内容を追加してください。
 
-    ```bash
-    -javaagent:/whatap/whatap.agent.kube.jar -Dwhatap.micro.enabled=true
-    ```
+   ```bash
+   -javaagent:/whatap/whatap.agent.kube.jar -Dwhatap.micro.enabled=true
+   ```
 
-    次のDockerfileで定義の例を参考にしてください。 
+   次のDockerfileで定義の例を参考にしてください。 
 
-    ```docker title='Dockerfile' showLineNumbers {4,7}
-    FROM openjdk:8-jdk-slim
-    RUN mkdir -p /app && mkdir /whatap
-    WORKDIR /app
-    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
-    COPY ./whatap.conf /whatap
-    COPY ./target/myApp.jar /app/
-    CMD ["java","-javaagent:/whatap/whatap.agent.kube.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
-    EXPOSE 8080
-    ```
+   ```docker title='Dockerfile' showLineNumbers {4,7}
+   FROM openjdk:8-jdk-slim
+   RUN mkdir -p /app && mkdir /whatap
+   WORKDIR /app
+   COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent.kube.jar /whatap
+   COPY ./whatap.conf /whatap
+   COPY ./target/myApp.jar /app/
+   CMD ["java","-javaagent:/whatap/whatap.agent.kube.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+   EXPOSE 8080
+   ```
 
-3.  Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。 
+3. Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。 
 
-    ```docker
-    cd {YOUR_DOCKERFILE_DIR}
-    docker build -t {IMAGE_NAME} .
-    ```
+   ```docker
+   cd {YOUR_DOCKERFILE_DIR}
+   docker build -t {IMAGE_NAME} .
+   ```
 
 </TabItem>
 
@@ -96,53 +96,53 @@ _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して
 
 **指定したバージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1.  アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
 
-    ```docker
-    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
-    RUN mkdir -p /whatap
+   ```docker
+   # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
+   RUN mkdir -p /whatap
 
-    # WhaTap Javaエージェントをユーザーコンテナにコピー
-    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
+   # WhaTap Javaエージェントをユーザーコンテナにコピー
+   COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
 
-    # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
-    COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
-    ```
+   # 作成したwhatap.conf設定ファイルをユーザーコンテナにコピー
+   COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
+   ```
 
-2.  現在のWhaTapエージェントのバージョンを確認してください。 
+2. 現在のWhaTapエージェントのバージョンを確認してください。 
 
-    ```bash
-    docker run whatap/kube_mon ls /data/agent/micro | grep -E 'whatap\.agent-(.*?\.)(.*?\.)(.*?\.)jar' | sort | tail -1
+   ```bash
+   docker run whatap/kube_mon ls /data/agent/micro | grep -E 'whatap\.agent-(.*?\.)(.*?\.)(.*?\.)jar' | sort | tail -1
 
-    # 出力例
-    ## whatap.agent-X.Y.Z.jar
-    ```
+   # 出力例
+   ## whatap.agent-X.Y.Z.jar
+   ```
 
-3.  Dockerfileの開始コマンドに次の内容を追加してください。**X.Y.Z**に、前もって確認したエージェントバージョンを入力してください。 
+3. Dockerfileの開始コマンドに次の内容を追加してください。**X.Y.Z**に、前もって確認したエージェントバージョンを入力してください。 
 
-    ```bash
-    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
-    ```
+   ```bash
+   -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
+   ```
 
-    次のDockerfileで定義の例を参考にしてください。
+   次のDockerfileの定義例をご参照ください。
 
-    ```docker title='Dockerfile' showLineNumbers {4,7}
-    FROM openjdk:8-jdk-slim
-    RUN mkdir -p /app && mkdir /whatap
-    WORKDIR /app
-    COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
-    COPY ./whatap.conf /whatap
-    COPY ./target/myApp.jar /app/
-    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
-    EXPOSE 8080
-    ```
+   ```docker title='Dockerfile' showLineNumbers {4,7}
+   FROM openjdk:8-jdk-slim
+   RUN mkdir -p /app && mkdir /whatap
+   WORKDIR /app
+   COPY --from=whatap/kube_mon /data/agent/micro/whatap.agent-*.jar /whatap
+   COPY ./whatap.conf /whatap
+   COPY ./target/myApp.jar /app/
+   CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+   EXPOSE 8080
+   ```
 
-4.  Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。
+4. Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。
 
-    ```docker
-    cd {YOUR_DOCKERFILE_DIR}
-    docker build -t {IMAGE_NAME} .
-    ```
+   ```docker
+   cd {YOUR_DOCKERFILE_DIR}
+   docker build -t {IMAGE_NAME} .
+   ```
 
 </TabItem>
 
@@ -152,56 +152,56 @@ _whatap.conf_ファイルは、Kubernetes環境のConfigMap機能を使用して
 
 <TabItem value="direct" label="直接設置">
 
-1.  インストールファイル(_whatap.agent.java.tar.gz_)をダウンロードするには、**_ダウンロード_**ボタンを選択してください。
+1. インストールファイル(_whatap.agent.java.tar.gz_)をダウンロードするには、**_ダウンロード_**ボタンを選択してください。
 
-2.  Dockerfileを作成できるサーバーにアップロードし、圧縮を解凍してください。
+2. Dockerfileを作成できるサーバーにアップロードし、圧縮を解凍してください。
 
-    :::info
+   :::info
 
-    インストールするサーバーから直接ダウンロードするには、次のコマンドを実行してください。
+   インストールするサーバーから直接ダウンロードするには、次のコマンドを実行してください。
 
-    ```bash
-    wget https://api.whatap.io/agent/whatap.agent.java.tar.gz
-    ```
+   ```bash
+   wget https://api.whatap.io/agent/whatap.agent.java.tar.gz
+   ```
 
-    :::
+   :::
 
-3.  圧縮を解除する時、_whatap_ディレクトリが作成されます。_whatap_ディレクトリ内部の_whatap.conf_ファイルで設定内容を確認した後、次のように修正してください。
+3. 圧縮を解除する時、_whatap_ディレクトリが作成されます。_whatap_ディレクトリ内部の_whatap.conf_ファイルで設定内容を確認した後、次のように修正してください。
 
-    ```ini
-    license={licenseKey}
-    whatap.server.host={proxyServer}
-    ```
+   ```ini
+   license={licenseKey}
+   whatap.server.host={proxyServer}
+   ```
 
-4.  Dockerfileの開始コマンドに次の内容を追加してください。_whatap_ディレクトリ内でエージェントファイルを確認した後、**X.Y.Z**に該当バージョンを入力してください。
+4. Dockerfileの開始コマンドに次の内容を追加してください。_whatap_ディレクトリ内でエージェントファイルを確認した後、**X.Y.Z**に該当バージョンを入力してください。
 
-    ```bash
-    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
-    ```
+   ```bash
+   -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
+   ```
 
-    次のDockerfileで定義の例を参考にしてください。
+   次のDockerfileの定義例をご参照ください。
 
-    ```bash title='Dockerfile'
-    FROM openjdk:8-jdk-alpine
-    RUN mkdir -p /app && mkdir /whatap
-    WORKDIR /app
-    COPY ./whatap.agent-X.Y.Z.jar /whatap/
-    COPY ./whatap.conf /whatap/
-    COPY ./target/myApp.jar myApp.jar
-    COPY ./paramkey.txt /whatap/
-    CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
-    EXPOSE 8080
-    ```
+   ```bash title='Dockerfile'
+   FROM openjdk:8-jdk-alpine
+   RUN mkdir -p /app && mkdir /whatap
+   WORKDIR /app
+   COPY ./whatap.agent-X.Y.Z.jar /whatap/
+   COPY ./whatap.conf /whatap/
+   COPY ./target/myApp.jar myApp.jar
+   COPY ./paramkey.txt /whatap/
+   CMD ["java","-javaagent:/whatap/whatap.agent-X.Y.Z.jar","-Dwhatap.micro.enabled=true","-jar","/app/myApp.jar"]
+   EXPOSE 8080
+   ```
 
 :::note
 
--   _whatap-virtual-X.Y.Z.jar_：モニタリング対象(サンプルアプリケーション)
+- _whatap-virtual-X.Y.Z.jar_：モニタリング対象(サンプルアプリケーション)
 
--   _whatap.agent-X.Y.Z.jar_：WhaTapエージェント
+- _whatap.agent-X.Y.Z.jar_：WhaTapエージェント
 
--   エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+- エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
--   JVMオプション追加の詳細については、[次の文書](https://docs.whatap.io/java/install-agent#addjvmopt)を参照してください。
+- JVMオプション追加の詳細については、[次の文書](https://docs.whatap.io/java/install-agent#addjvmopt)を参照してください。
 
 :::
 
@@ -260,7 +260,7 @@ _paramkey.txt_ファイルが存在しない場合、_security.conf_ファイル
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーションリリーズ_yaml_ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーション配布の_yaml_ファイルに次の内容を追加してください。 
 
 ```yaml
 env:
@@ -325,19 +325,19 @@ spec:
 
 **環境変数の役割**
 
--   `NODE_IP`: 現在のPodがホストされているノード(Node)のIPアドレスを収集します。
+- `NODE_IP`: 現在のPodがホストされているノード(Node)のIPアドレスを収集します。
 
--   `NODE_NAME`: 現在Podが実行中のノードの名前を収集します。
+- `NODE_NAME`: 現在Podが実行中のノードの名前を収集します。
 
--   `POD_NAME`: 現在のPodの名前を収集します。
+- `POD_NAME`: 現在のPodの名前を収集します。
 
--   `OKIND`(選択事項)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名に設定すると、該当するPodを一つにグループ化します。
+- `OKIND`(選択事項)：Podに該当するアプリケーションをグループ化します。デプロイメント(Deployment) 名に設定すると、該当するPodを一つにグループ化します。
 
--   `license`：エージェント認証を確認するためのキーです。
+- `license`：エージェント認証を確認するためのキーです。
 
--   `whatap_server_host`：WhaTap収集サーバーのホストIPです。
+- `whatap_server_host`：WhaTap収集サーバーのホストIPです。
 
--   `whatap_micro_enabled`：コンテナとの連動を活性化します。
+- `whatap_micro_enabled`：コンテナとの連動を活性化します。
 
 :::
 

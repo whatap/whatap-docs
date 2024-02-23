@@ -50,57 +50,57 @@ ROWNUM
 | like      | 設定値を部分文字列として持つフィールドのみが表示されます。                               |
 | notlike   | 設定値を部分文字列として持たないフィールドのみが検索されます。                             |
 
--   すべてのフィールドが選択されている場合は、 1 （`SELECT`コマンド、オペランド両方を入力していない場合）
+- すべてのフィールドが選択されている場合は、 1 （`SELECT`コマンド、オペランド両方を入力していない場合）
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  ```
 
--   すべてのフィールドが選択されている場合は、 2 （`SELECT`コマンドのオペランドを入力されていない場合）
+- すべてのフィールドが選択されている場合は、 2 （`SELECT`コマンドのオペランドを入力されていない場合）
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ```
 
--   参照するフィールド名を設定する場合は、文字列配列のオペランドを使用します。
+- 参照するフィールド名を設定する場合は、文字列配列のオペランドを使用します。
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode]
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode]
+  ```
 
--   `default`に設定するフィールドの値が１つしかなく、`like`オプションを使用する場合
+- `default`に設定するフィールドの値が１つしかなく、`like`オプションを使用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT {default:time, like:_m}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT {default:time, like:_m}
+  ```
 
--   `default`に設定するフィールドの値が複数ある場合、`like`オプションを使用する場合、`default`として設定するフィールドの値が複数ある場合と`like`オプションを使用する場合
+- `default`に設定するフィールドの値が複数ある場合、`like`オプションを使用する場合、`default`として設定するフィールドの値が複数ある場合と`like`オプションを使用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT {default:[time,name], like:_m}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT {default:[time,name], like:_m}
+  ```
 
--   `like`と`notlike`の両方を使いたい場合は、`SELECT`コマンドを2回入力する必要があります。
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT {default:[time,name], like:name}
-    SELECT {notlike:pname}
-    ```
+- `like`と`notlike`の両方を使いたい場合は、`SELECT`コマンドを2回入力する必要があります。
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT {default:[time,name], like:name}
+  SELECT {notlike:pname}
+  ```
 
 :::caution
 
--   フィールド全体を選択する場合、オペランドを入力されません。 
--   `like`と`notlike`は同時に設定することができません。 複数の`SELECT`時間に設定する必要があります。 
+- フィールド全体を選択する場合、オペランドを入力されません。 
+- `like`と`notlike`は同時に設定することができません。 複数の`SELECT`時間に設定する必要があります。 
 
 :::
 
@@ -123,37 +123,37 @@ ROWNUM
 | okind  | `okind`カラム名を設定して、`okind`値に対応する`okind name`値のカラムを作成します。 |
 | onode  | `onode`カラム名を設定して、`onode`値に対応する`onode name`値のカラムを作成します。 |
 
--   `value`属性を設定する場合
+- `value`属性を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    CREATE {key:active$, value:'#'}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  CREATE {key:active$, value:'#'}
+  ```
 
--   `from`属性を設定する場合
+- `from`属性を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    CREATE {key:_id_, from:okind }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  CREATE {key:_id_, from:okind }
+  ```
 
--   `expr`属性を設定する場合
+- `expr`属性を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated*0.5))/apdex_total " }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated*0.5))/apdex_total " }
+  ```
 
--   `okind`属性を設定する場合
-    ```sql
-    CATEGORY agent_list
-    FLEXLOAD
-    CREATE { key : my_okind_name, okind : okind}
-    SELECT [ time, okind, okindName, my_okind_name]
-    ```
+- `okind`属性を設定する場合
+  ```sql
+  CATEGORY agent_list
+  FLEXLOAD
+  CREATE { key : my_okind_name, okind : okind}
+  SELECT [ time, okind, okindName, my_okind_name]
+  ```
 
 ## DELETE{#delete}
 
@@ -175,13 +175,13 @@ DELETE [pcode]
 
 フィールド名を変更します。
 
--   `pcode`フィールド名を`my_pcode`に変更します。
+- `pcode`フィールド名を`my_pcode`に変更します。
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    RENAME { src : pcode, dst : my_pcode }
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  RENAME { src : pcode, dst : my_pcode }
+  ```
 
 :::caution
 
@@ -203,15 +203,15 @@ DELETE [pcode]
 | merge            | 設定したカラム(column)のデータをMetricValue(複合値)として保存する場合に設定します。内部的には、設定値をkeyとしてMetric Value値に追加されます。        |
 | rows             | １つのグループで保存できるデータの最大数を設定します。デフォルト値は`10000`です。                                                     |
 
--   設定したフィールドを`merge`に設定し、MetricValue に設定し、sum演算を実行します。
+- 設定したフィールドを`merge`に設定し、MetricValue に設定し、sum演算を実行します。
 
-    ```
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
-    GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
-    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
-    ```
+  ```
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [ time, okindName, okind, apdex_satisfied, apdex_tolerated, apdex_total]
+  GROUP { timeunit:5000, pk:okind, last:okindName, merge:[apdex_satisfied, apdex_tolerated, apdex_total] }
+  UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+  ```
 
 :::note
 
@@ -223,9 +223,9 @@ DELETE [pcode]
 
 もし、レコードに`time`フィールドがない場合は、全体をグループ化します。 
 
--   `GROUP`コマンドが実行される前に、`SELECT`コマンドで`time`フィールドが設定されていない場合
--   `RENAME` コマンドで`time`フィールド名を変更した場合
--   `DELETE`コマンドで`time`フィールドを削除した場合
+- `GROUP`コマンドが実行される前に、`SELECT`コマンドで`time`フィールドが設定されていない場合
+- `RENAME` コマンドで`time`フィールド名を変更した場合
+- `DELETE`コマンドで`time`フィールドを削除した場合
 
 :::
 
@@ -249,61 +249,61 @@ DELETE [pcode]
 
 次のオプションを設定してデータの値を変更します。
 
--   `value`オプションを設定する場合
+- `value`オプションを設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pcode,pname, tps]
-    GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
-    UPDATE {key:tps, value:sum}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pcode,pname, tps]
+  GROUP  {timeunit:5000, pk:pcode, last: pname, merge:tps}
+  UPDATE {key:tps, value:sum}
+  ```
 
--   `datetime`、`timezone`オプションを設定する場合は、`CREATE {key:localtime, from:time}`で`time`フィールドの値の'long'タイプの値でコピーします。
+- `datetime`、`timezone`オプションを設定する場合は、`CREATE {key:localtime, from:time}`で`time`フィールドの値の'long'タイプの値でコピーします。
 
-    ```sql
-    CATEGORY app_user
-    TAGLOAD
-    SELECT [time, pcode, pname, logbits]
-    CREATE {key:localtime, from:time}
-    UPDATE {key:localtime, datetime:'yyyyMMdd HH:mm:ss', timezone: GMT9}
-    ```
+  ```sql
+  CATEGORY app_user
+  TAGLOAD
+  SELECT [time, pcode, pname, logbits]
+  CREATE {key:localtime, from:time}
+  UPDATE {key:localtime, datetime:'yyyyMMdd HH:mm:ss', timezone: GMT9}
+  ```
 
--   `notnull`オプションを設定する場合
+- `notnull`オプションを設定する場合
 
-    ```sql
-    UPDATE {key:tps, notnull:0}
-    ```
+  ```sql
+  UPDATE {key:tps, notnull:0}
+  ```
 
--   `pct`を設定する場合
+- `pct`を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [ time, pcode, tx_count ]
-    GROUP { key : pcode, listup : tx_count}
-    UPDATE { key : tx_count, pct : 90}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [ time, pcode, tx_count ]
+  GROUP { key : pcode, listup : tx_count}
+  UPDATE { key : tx_count, pct : 90}
+  ```
 
--   `decimal`オプションを設定する場合
+- `decimal`オプションを設定する場合
 
-    ```sql
-    CATEGORY app_counter 
-    TAGLOAD 
-    SELECT [ time, oname, apdex_satisfied, apdex_tolerated, apdex_total]  
-    GROUP  { timeunit:5m, pk:oname}
-    UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
-    CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated/2.0))/apdex_total " } 
-    UPDATE { key:time, datetime:'yyyyMMdd HH:mm:ss', timezone:'GMT9'}
-    UPDATE { key:apdex, decimal:'0.000'} 
-    ROWNUM
-    ```
+  ```sql
+  CATEGORY app_counter 
+  TAGLOAD 
+  SELECT [ time, oname, apdex_satisfied, apdex_tolerated, apdex_total]  
+  GROUP  { timeunit:5m, pk:oname}
+  UPDATE { key:[apdex_satisfied, apdex_tolerated, apdex_total], value:sum }
+  CREATE { key:apdex, expr:" (apdex_satisfied(apdex_tolerated/2.0))/apdex_total " } 
+  UPDATE { key:time, datetime:'yyyyMMdd HH:mm:ss', timezone:'GMT9'}
+  UPDATE { key:apdex, decimal:'0.000'} 
+  ROWNUM
+  ```
 
 :::caution
 
--   `{datetime:'yyyyMMdd HH:mm:ss'}`の場合は、コロン(:)を含んでいるため、必ずバッククォート('')またはダブルクォート("")で囲む必要があります。
--   `pct: 90`は、90番目の値を選択することを意味します。ただし、このフィールドは`GROUP`コマンド実行時に、`listup`フィールドに設定する必要があります。 
--   formatの形式は、[Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html)を使います。
+- `{datetime:'yyyyMMdd HH:mm:ss'}`の場合は、コロン(:)を含んでいるため、必ずバッククォート('')またはダブルクォート("")で囲む必要があります。
+- `pct: 90`は、90番目の値を選択することを意味します。ただし、このフィールドは`GROUP`コマンド実行時に、`listup`フィールドに設定する必要があります。 
+- formatの形式は、[Java, Decimal Format](https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html)を使います。
 
 :::
 
@@ -317,24 +317,24 @@ DELETE [pcode]
 | sort  | ソートしたdirectionを設定します。(ascまたはdesc)         |
 | rows  | 同じ時間値を持つデータを保持する最大数を設定します。default `10000` |
 
--   `key`、`sort`、`rows`を設定する場合
+- `key`、`sort`、`rows`を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pname, host_ip, pid, httpc_count]
-    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:2}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pname, host_ip, pid, httpc_count]
+  ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:2}
+  ```
 
--   2回に分けてソートする場合
+- 2回に分けてソートする場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT [time, pname, host_ip, pid, httpc_count]
-    ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:1000}
-    ORDER  {key:tps, sort:desc}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT [time, pname, host_ip, pid, httpc_count]
+  ORDER {key: [pid, host_ip, httpc_count] , sort: [desc, desc, desc], rows:1000}
+  ORDER  {key:tps, sort:desc}
+  ```
 
 :::caution
 
@@ -375,8 +375,8 @@ DELETE [pcode]
 
 2つのMXQLを組み合わせて表示したデータを見ることができます。`RENAME`コマンドと`INJECT`コマンドは、`JOIN`コマンドを実行した結果を処理し、結合の操作に影響しません。 
 
--   最初のクエリ : CATEGORY agent_list FLEXLOAD 
--   2番目のクエリ : /app/act_tx/act_tx_oid
+- 最初のクエリ : CATEGORY agent_list FLEXLOAD 
+- 2番目のクエリ : /app/act_tx/act_tx_oid
 
 ```sql
 CATEGORY agent_list
@@ -413,8 +413,8 @@ Yardに保存されているすべてのデータは`time`、`oid`の値があ�
 
 :::caution
 
--   `JOIN`コマンドに使用される最初のクエリは直接作成したMXQLクエリ、2番目のクエリは[pathに設定できるクエリ](mxql-guide#custom-mxql)です。 
--   `JOIN`コマンドを使用してMXQLクエリ全体をYardにファイルとして登録する場合、3つ以上のカテゴリが`JOIN`できます。 
+- `JOIN`コマンドに使用される最初のクエリは直接作成したMXQLクエリ、2番目のクエリは[pathに設定できるクエリ](mxql-guide#custom-mxql)です。 
+- `JOIN`コマンドを使用してMXQLクエリ全体をYardにファイルとして登録する場合、3つ以上のカテゴリが`JOIN`できます。 
 
 :::
 
@@ -550,33 +550,33 @@ ROWNUM
 | over   | すべての数字データの最小値を設定します。 |
 | under  | すべての数値データの最大値を設定します。 |
 
--   `mul`を設定する場合
+- `mul`を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ADJUST {mul : 100}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ADJUST {mul : 100}
+  ```
 
--   `over`を設定する場合
+- `over`を設定する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    ADJUST { key:[rate], over:30}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  ADJUST { key:[rate], over:30}
+  ```
 
-    ![](https://img.whatap.io/media/images/mxql-9.png)
+  ![](https://img.whatap.io/media/images/mxql-9.png)
 
--   `under`を設定する場合
+- `under`を設定する場合
 
-    ```sql
-    ADJUST { key:[rate], under:30}
-    ```
+  ```sql
+  ADJUST { key:[rate], under:30}
+  ```
 
-    ![](https://img.whatap.io/media/images/mxql-10.png)
+  ![](https://img.whatap.io/media/images/mxql-10.png)
 
 ## FILTER{#filter}
 
@@ -591,54 +591,54 @@ ROWNUM
 | over     | 特定の値以上のデータを検索します。(greaterまたはequal to) |
 | under    | 特定の値以下のデータを検索します。(lessまたはequal to)    |
 
--   `expr`オプションを適用する場合
+- `expr`オプションを適用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER {expr : "tx_count != 0"}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER {expr : "tx_count != 0"}
+  ```
 
--   `value`オプションを適用する場合
+- `value`オプションを適用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, value : 5}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, value : 5}
+  ```
 
--   `exist`オプションを適用する場合
+- `exist`オプションを適用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, exist : true}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, exist : true}
+  ```
 
--   `notexist`オプションを適用する場合
+- `notexist`オプションを適用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, notexist : true}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, notexist : true}
+  ```
 
--   `under`オプションを適用する場合
+- `under`オプションを適用する場合
 
-    ```sql
-    CATEGORY app_counter
-    TAGLOAD
-    SELECT
-    FILTER { key : tx_count, under : 6}
-    ```
+  ```sql
+  CATEGORY app_counter
+  TAGLOAD
+  SELECT
+  FILTER { key : tx_count, under : 6}
+  ```
 
 :::caution
 
--   データが0の場合、データは存在する場合があります。`{exist: true}`に適用されます。
--   `{exist : false}`と`{notexist : false}`はできません。 `{notexist : true}`と`{exist : true}`を使用してください。
+- データが0の場合、データは存在する場合があります。`{exist: true}`に適用されます。
+- `{exist : false}`と`{notexist : false}`はできません。 `{notexist : true}`と`{exist : true}`を使用してください。
 
 :::

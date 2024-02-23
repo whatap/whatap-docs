@@ -20,17 +20,17 @@ log_output=FILE # または TABLE
 
 :::note
 
--   DBサーバーに`log_output=FILE`オプションを設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
+- DBサーバーに`log_output=FILE`オプションを設定した場合は、xosインストールが必要です。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
--   AWS RDS を使用して、`log_output=FILE`オプションを設定したユーザーは、xosをインストールする代わりにCloudWatchを使用するための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
+- AWS RDS を使用して、`log_output=FILE`オプションを設定したユーザーは、xosをインストールする代わりにCloudWatchを使用するための設定が必要です。 詳細については、[次の文書](agent-dbx-settings#using-aws-rds)を参照してください。
 
--   他のクラウドを使用しているユーザーの場合、**_スロークエリ_**メニューを使用するには、`log_output=TABLE`オプションを設定してください。 ただし、スロークエリが頻繫に発生する環境、mysql.slow_log検索時にDBの性能が低下する可能性があるため注意が必要です。
+- 他のクラウドを使用しているユーザーの場合、**_スロークエリ_**メニューを使用するには、`log_output=TABLE`オプションを設定してください。 ただし、スロークエリが頻繫に発生する環境、mysql.slow_log検索時にDBの性能が低下する可能性があるため注意が必要です。
 
--   `log_output=TABLE`オプションを設定する場合は、モニタリングアカウントに参照権限を付与する必要があります。 次のコマンドを実行してください。
+- `log_output=TABLE`オプションを設定する場合は、モニタリングアカウントに参照権限を付与する必要があります。 次のコマンドを実行してください。
 
-    ```bash
-    grant select on mysql.slow_log to whatap;
-    ```
+  ```bash
+  grant select on mysql.slow_log to whatap;
+  ```
 
 :::
 
@@ -64,9 +64,9 @@ slow_query_interval=30#デフォルト値30秒
 
 :::note
 
--   RDS postgreSQLのslow queryはサポートされていません。
+- RDS postgreSQLのslow queryはサポートされていません。
 
--   モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
+- モニタリング対象のDBサーバーにXOSエージェントをインストールしないと、slow queryをモニタリングできません。 XOSエージェントインストールの詳細については、[次の文書](agent-xos-settings)を参照してください。
 
 :::
 

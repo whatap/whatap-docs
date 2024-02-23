@@ -9,36 +9,36 @@ displayed_sidebar: releaseSidebar
 
 ## 新機能 <sup><Status>New</Status></sup>
 
--   **aws-mysql-jdbc-1.1.1**追跡
+- **aws-mysql-jdbc-1.1.1**追跡
 
--   **mariadb-java-client-3.0.3**追跡
+- **mariadb-java-client-3.0.3**追跡
 
--   正規分布を活用してresp90、resp95のレスポンス時間のメトリクス指標を生成
+- 正規分布を活用してresp90、resp95のレスポンス時間のメトリクス指標を生成
 
--   `hook_method_ignore_class_patterns`オプションキー追加：hookingしたいメソッドから無視するclassを追加
-    ```ini title='whatap.conf'
-    hook_method_ignore_class_patterns=a.b.c.D
-    ```
+- `hook_method_ignore_class_patterns`オプションキー追加：hookingしたいメソッドから無視するclassを追加
+  ```ini title='whatap.conf'
+  hook_method_ignore_class_patterns=a.b.c.D
+  ```
 
 ## アップデート <sup><Status>Change</Status></sup>
 
--   Javaエージェントのロゴにasm apiバージョン表示を追加
+- Javaエージェントのロゴにasm apiバージョン表示を追加
 
--   m**ariadb-java-client-3.0.9**のResultSetを追跡
+- m**ariadb-java-client-3.0.9**のResultSetを追跡
 
--   JavaエージェントのロゴからR2を削除
+- JavaエージェントのロゴからR2を削除
 
--   プロセスのcputime測定をsystem time基準からJVMのnano timeに修正
+- プロセスのcputime測定をsystem time基準からJVMのnano timeに修正
 
--   `hook_method_ignore`項目にaccess$メソッドを基本hookingから除外
+- `hook_method_ignore`項目にaccess$メソッドを基本hookingから除外
 
-    ```ini title='whatap.conf'
-    hook_method_ignore=get,set,access$
-    ```
+  ```ini title='whatap.conf'
+  hook_method_ignore=get,set,access$
+  ```
 
--   １時間ごとにtext resetを実行できるように`text_zip_enabled`のデフォルト値を`true`に修正
-    ```ini title='whatap.conf'
-    text_zip_enabled=true
-    ```
+- １時間ごとにtext resetを実行できるように`text_zip_enabled`のデフォルト値を`true`に修正
+  ```ini title='whatap.conf'
+  text_zip_enabled=true
+  ```
 
--   tps、レスポンス時間を従来の30秒平均から5秒平均に調整するように修正
+- tps、レスポンス時間を従来の30秒平均から5秒平均に調整するように修正

@@ -10,25 +10,25 @@ tags:
 
 エージェントをインストールする前に、.NET Frameworkアプリケーションのサポート環境を確認してください。
 
--   **対応バージョン**：.NET Framework 4.5(4.61以降を推奨)
+- **対応バージョン**：.NET Framework 4.5(4.61以降を推奨)
 
--   **オペレーティングシステム**：Windows Server2012以降
+- **オペレーティングシステム**：Windows Server2012以降
 
--   **アプリケーションサーバー**：IIS 8.0 以降
+- **アプリケーションサーバー**：IIS 8.0 以降
 
--   **ライブラリ**
+- **ライブラリ**
 
-    -   WebClient/WebRequest
+  - WebClient/WebRequest
 
-    -   HttpClient/HttpClientHandler
+  - HttpClient/HttpClientHandler
 
-    -   ASP.NET MVC 5 (IIS)
+  - ASP.NET MVC 5 (IIS)
 
-    -   ASP.NET Web API 2 (IIS)
+  - ASP.NET Web API 2 (IIS)
 
-    -   ADO.NET (Database)
+  - ADO.NET (Database)
 
--   **データベース**：MS SQL、Oracle、MySQLなど、ADO.NETに対応するすべてのデータベースおよびRadis
+- **データベース**：MS SQL、Oracle、MySQLなど、ADO.NETに対応するすべてのデータベースおよびRadis
 
 ## サーバ対応環境を分析する方法
 
@@ -36,35 +36,35 @@ tags:
 
 エージェントをインストールするサーバーの対応環境が不明な場合は、次のリンクから分析ツールをダウンロードしてください。
 
--   <https://repo.whatap.io/windows/WhaTapDotnetScan.exe>
+- <https://repo.whatap.io/windows/WhaTapDotnetScan.exe>
 
--   <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
+- <https://repo.whatap.io/windows/WhaTapDotnetScan.zip>
 
 ### 分析ツールの使用{#use-tools}
 
-1.  ダウンロードした分析ツールを実行してください。
+1. ダウンロードした分析ツールを実行してください。
 
-    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
+   ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-01.png)
 
-2.  ![数字1](/img/number-01.png) **分析**(**Scan**)ボタンをクリックしてください。
+2. ![数字1](/img/number-01.png) **分析**(**Scan**)ボタンをクリックしてください。
 
-3.  ![数字2](/img/number-02.png)領域でウィンドウサーバーのバージョンが2012以降であることを確認してください。
+3. ![数字2](/img/number-02.png)領域でウィンドウサーバーのバージョンが2012以降であることを確認してください。
 
-4.  ![数字3](/img/number-03.png)領域で**IIS 8.0**バージョン以降、**.NET Framework 4.5**バージョン以降であることを確認してください。
+4. ![数字3](/img/number-03.png)領域で**IIS 8.0**バージョン以降、**.NET Framework 4.5**バージョン以降であることを確認してください。
 
-    ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
+   ![WhaTap System information scanner](/img/apm-dotnet-analystic-env-02.png)
 
-5.  IISに設置されたサイトごとに**.NET Framework**バージョンがv4.0と表示されていることを確認してください。
+5. IISに設置されたサイトごとに**.NET Framework**バージョンがv4.0と表示されていることを確認してください。
 
-    ![](/img/apm-dotnet-analystic-env-03.png)
+   ![](/img/apm-dotnet-analystic-env-03.png)
 
-    ![数字5](/img/number-05.png)の場合、_web.config_ファイルが見つかりません。ほとんどの場合、**.NET**を使用しないASP、PHPなどのサイトでは、エージェントが動作しません。
+   ![数字5](/img/number-05.png)の場合、_web.config_ファイルが見つかりません。ほとんどの場合、**.NET**を使用しないASP、PHPなどのサイトでは、エージェントが動作しません。
 
 :::note
 
--   **.NET Framework**は、4.8.1バージョン以降で対応しています。
+- **.NET Framework**は、4.8.1バージョン以降で対応しています。
 
--   **Core**または**.NET 5**以降のバージョンは対応していません。**.NET Core**バージョンは開発中です。
+- **Core**または**.NET 5**以降のバージョンは対応していません。**.NET Core**バージョンは開発中です。
 
 :::
 

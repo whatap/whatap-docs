@@ -1,0 +1,85 @@
+---
+id: changes-db-xos-metrics-guide
+title: XOS2指標廃棄の案内
+description: データベースモニタリングでXOSエージェントを通じて提供される2つのCPU指標をDBXエージェントv1.7.0から統合して提供される予定です。
+tags:
+  - データベース
+  - XOSエージェント
+displayed_sidebar: dbSidebar
+---
+
+データベースサーバーにXOSエージェントをインストールすると、サーバーのリソース状態をモニタリングできます。 収集する主な指標については、次の文書を参考にしてください。
+
+:::note
+
+- <Link to="https://docs.whatap.io/postgresql/instance-monitoring#column-info" target="_blank"><Cmdname sid="instance_monitoring" /></Link> - <b>Process information</b>タブを確認してください。
+
+- <Link to="https://docs.whatap.io/postgresql/metrics-data-list" target="_blank">メトリクス指標</Link> - <b>XOS</b>カテゴリの指標
+
+:::
+
+## XOS指標の変更事項
+
+データベースモニタリングでは、CPU使用量について`CPU(xos)`、`CPU(xos2)`指標の2つを提供していました。 DBXエージェント1.7.0バージョン以降では、両方の指標が1つの単位に統合される予定です。
+
+|                  変更前の指標名                 |      変更後の指標名      |   単位   |
+| :--------------------------------------: | :---------------: | :----: |
+|        `cpu(xos2)`<br/>`cpu(xos)`        |     `cpu(xos)`    | 使用率(%) |
+|   `cpu_idle(xos2)`<br/>`cpu_idle(xos)`   |  `cpu_idle(xos)`  |    %   |
+|    `cpu_sys(xos2)`<br/>`cpu_sys(xos)`    |   `cpu_sys(xos)`  |    %   |
+|   `cpu_user(xos2)`<br/>`cpu_user(xos)`   |  `cpu_user(xos)`  |    %   |
+| `cpu_iowait(xos2)`<br/>`cpu_iowait(xos)` | `cpu_iowait(xos)` |    %   |
+
+:::note
+
+DBXエージェント1.7.0バージョン以下で`cpu(xos)`指標の値が9000なら`cpu(xos2)`指標の値は90で収集されました。
+
+:::
+
+DBXエージェントを1.7.0バージョンに更新した後、既存の指標で警告通知を設定した場合、またはダッシュボードを構成した場合は、指標設定を変更する必要があります。 <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />メニューで設定したしきい値は自動的に切り替わります。 既に設定した警告通知のうち、上記5つの指標を使用した通知が正しく切り替わったか確認してください。 次の内容を参考にしてください。
+
+## DBXエージェントのアップデート
+
+<Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_update" className="uitext" />メニューで1.7.0バージョン以下のエージェントをアップデートしてください。
+
+<ImgLang img='changes/refer-db-agent-update-170.png' desc='エージェントアップデート' />
+
+:::note
+
+エージェント更新の詳細については、[次の文書](../postgresql/agent-manage)を参照してください。
+
+:::
+
+## 変更された指標の確認
+
+DBXエージェントアップデート後、<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="database" className="uitext" />タブで`cpu(xos2)`指標が`cpu(xos)`指標に変更されたか確認してください。
+
+- **DBXエージェントアップデート前**
+
+  <ImgLang img='changes/refer-db-alert-xos2.png' desc='アラート設定' />
+
+- **DBXエージェントアップデート後**
+
+  <ImgLang img='changes/refer-db-alert-xos.png' desc='アラート設定' />
+
+:::tip
+
+ユーザーが設定したメトリクス通知とダッシュボードの設定は、直接修正する必要があります。
+
+- <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="metrics" className="uitext" />タブで<code>cpu(xos2)</code>指標に設定したイベントを<code>cpu(xos)</code>指標に変更してください。
+
+- 次のメニュー経路で`cpu(xos2)`指標を`cpu(xos)`指標に変更すべき設定があるか確認してください。
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
+
+  - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="flexboard" className="uitext" />
+
+:::
+
+:::note
+
+- 3月の定期サービスリリーズ(2024年3月27日18:00)後、ダッシュボードで`cpu(xos)`指標の表示が従来と異なる場合は、DBXエージェントを1.7.0バージョン以降にアップデートしてください。 エージェント更新の詳細については、[次の文書](../postgresql/agent-manage)を参照してください。
+
+- サポートが必要な顧客の場合、[WhaTapモニタリングサービス](https://service.whatap.io)画面右上の![チャットのお問い合わせアイコン](/img/ico-help.svg) **チャットでのお問い合わせ**を通じてサポートを受けることができます。
+
+:::

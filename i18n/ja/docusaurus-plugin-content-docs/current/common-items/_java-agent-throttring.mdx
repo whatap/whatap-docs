@@ -1,77 +1,77 @@
--   **throttle_enabled** <span class='type'>Boolean</span>
+- **throttle_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    アプリケーションの最大同時処理数を制限するスロットリング機能をアクティブにします。throttle\_で始まるすべてのオプションは、`throttle_enabled=true`状態でのみ機能します。
+  アプリケーションの最大同時処理数を制限するスロットリング機能をアクティブにします。throttle\_で始まるすべてのオプションは、`throttle_enabled=true`状態でのみ機能します。
 
-    スロットリング制御に関するポリシーには、次の優先順位があります。
+  スロットリング制御に関するポリシーには、次の優先順位があります。
 
-    1.  Block：URLとユーザーIPアドレスに基づいてサービスをブロックし、最優先します。
+  1. Block：URLとユーザーIPアドレスに基づいてサービスをブロックし、最優先します。
 
-    2.  Passing：通過として適用されたURLは、Rejectリシーよりも優先されます。
+  2. Passing：通過として適用されたURLは、Rejectリシーよりも優先されます。
 
-    3.  Reject: Passingポリシーの後にRejectポリシーをブロックして適用します。
+  3. Reject: Passingポリシーの後にRejectポリシーをブロックして適用します。
 
--   **throttle_limit** <span class='type'>Int</span>
+- **throttle_limit** <span class='type'>Int</span>
 
-    デフォルト値`10000`
+  デフォルト値`10000`
 
-    エージェントごとに同時処理できるリクエスト(トランザクション) の数が設定値を超えたらと、追加で流入するリクエストはRejectされます。
+  エージェントごとに同時処理できるリクエスト(トランザクション) の数が設定値を超えたらと、追加で流入するリクエストはRejectされます。
 
--   **throttle_rejected_message** <span class='type'>String</span>
+- **throttle_rejected_message** <span class='type'>String</span>
 
-    デフォルト値`too many request!!`
+  デフォルト値`too many request!!`
 
-    スロットリングを制限する場合は、ユーザーに案内するメッセージを設定します。
+  スロットリングを制限する場合は、ユーザーに案内するメッセージを設定します。
 
--   **throttle_rejected_forward** <span class='type'>String</span>
+- **throttle_rejected_forward** <span class='type'>String</span>
 
-    ユーザーのリクエストがlimit値を超えてrejectされた場合、ユーザーに送信される案内ページのURLを設定します。`throttle_rejected_message`を同時設定した場合、`throttle_rejected_forward`が優先されます。
+  ユーザーのリクエストがlimit値を超えてrejectされた場合、ユーザーに送信される案内ページのURLを設定します。`throttle_rejected_message`を同時設定した場合、`throttle_rejected_forward`が優先されます。
 
-    :::caution
+  :::caution
 
-    案内ページを同じコンテナでサービスする場合、これらも同時処理数としてカウントされ、再帰呼び出しによる障害につながる場合があります。そのため、案内ページはstatic htmlページにするか、外部におく必要があります。
+  案内ページを同じコンテナでサービスする場合、これらも同時処理数としてカウントされ、再帰呼び出しによる障害につながる場合があります。そのため、案内ページはstatic htmlページにするか、外部におく必要があります。
 
-    :::
+  :::
 
--   **reject_event_enabled** <span class='type'>Boolean</span>
+- **reject_event_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    ユーザーリクエストがRejectされた場合、イベント通知を発生させるかどうかを設定します。
+  ユーザーリクエストがRejectされた場合、イベント通知を発生させるかどうかを設定します。
 
--   **reject_event_interval** <span class='type'>MiliSecond</span>
+- **reject_event_interval** <span class='type'>MiliSecond</span>
 
-    デフォルト値`30000`
+  デフォルト値`30000`
 
-    Rejectのイベント通知が発生した後、設定した時間の間に重複したイベントの通知は発生しません。
+  Rejectのイベント通知が発生した後、設定した時間の間に重複したイベントの通知は発生しません。
 
--   **throttle_blocking_url** <span class='type'>String</span>
+- **throttle_blocking_url** <span class='type'>String</span>
 
-    `throttle_limit`を超えない場合でも、ブロッキング(処理拒否)するURLを設定します。システム障害の原因になり得るURLを強制的にブロックする場合に有効です。
+  `throttle_limit`を超えない場合でも、ブロッキング(処理拒否)するURLを設定します。システム障害の原因になり得るURLを強制的にブロックする場合に有効です。
 
--   **throttle_blocking_ip** <span class='type'>ip_address</span>
+- **throttle_blocking_ip** <span class='type'>ip_address</span>
 
-    ユーザーのIPアドレスを基準にブロックする場合に設定します。DDoS攻撃や悪意のあるユーザーをIPアドレスベースでブロックするときに使用します。複数の場合はコンマ(,)で区切ります。
+  ユーザーのIPアドレスを基準にブロックする場合に設定します。DDoS攻撃や悪意のあるユーザーをIPアドレスベースでブロックするときに使用します。複数の場合はコンマ(,)で区切ります。
 
--   **throttle_target_urls** <span class='type'>String</span>
+- **throttle_target_urls** <span class='type'>String</span>
 
-    登録したURLを対象にスロットリング機能を適用します。複数の場合はコンマ(,)で区切ります。
+  登録したURLを対象にスロットリング機能を適用します。複数の場合はコンマ(,)で区切ります。
 
--   **throttle_passing_url** <span class='type'>String</span>
+- **throttle_passing_url** <span class='type'>String</span>
 
-    `throttle_limit`を超えた場合でも処理するURLを設定します。複数の場合はコンマ(,)で区切ります。
+  `throttle_limit`を超えた場合でも処理するURLを設定します。複数の場合はコンマ(,)で区切ります。
 
--   **throttle_passing_url_prefix** <span class='type'>String</span>
+- **throttle_passing_url_prefix** <span class='type'>String</span>
 
-    `throttle_limit`を超えた場合でも処理するURLを設定します。複数の場合はコンマ(,)で区切ります。
+  `throttle_limit`を超えた場合でも処理するURLを設定します。複数の場合はコンマ(,)で区切ります。
 
--   **throttle_blocked_message** <span class='type'>String</span>
+- **throttle_blocked_message** <span class='type'>String</span>
 
-    デフォルト値`request blocked!!`
+  デフォルト値`request blocked!!`
 
-    リクエストをブロックしたユーザーに案内するメッセージを設定します。
+  リクエストをブロックしたユーザーに案内するメッセージを設定します。
 
--   **throttle_blocked_forward** <span class='type'>String</span>
+- **throttle_blocked_forward** <span class='type'>String</span>
 
-    リクエストをブロックしたユーザーに案内するURLを設定します。`throttle_blocked_message`を同時設定した場合、`throttle_blocked_forward`を優先します。
+  リクエストをブロックしたユーザーに案内するURLを設定します。`throttle_blocked_message`を同時設定した場合、`throttle_blocked_forward`を優先します。

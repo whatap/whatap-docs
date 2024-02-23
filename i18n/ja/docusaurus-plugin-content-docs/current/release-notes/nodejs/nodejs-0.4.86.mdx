@@ -3,46 +3,47 @@ id: nodejs-0_4_86
 title: Node.js Agent v0.4.86
 toc_max_heading_level: 2
 pagination_next: release-notes/nodejs/nodejs-0_4_83
+displayed_sidebar: releaseSidebar
 ---
 
 2024年01月04日
 
--   <Status>Feature</Status>エージェントオプションの追加
+- <Status>Feature</Status>エージェントオプションの追加
 
-    -   **httpc_status_ignore** <span class='type'>String</span>
+  - **httpc_status_ignore** <span class='type'>String</span>
 
-        デフォルト値`Empty`
+    デフォルト値`Empty`
 
-        無視する`HTTPC_ERROR`コードを設定します。 複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
+    無視する`HTTPC_ERROR`コードを設定します。 複数の値を対象とする場合は、コンマ（,）を区切り文字として使用してください。
 
-        ```ini title='whatap.conf'
-        httpc_status_ignore=404,500
-        ```
+    ```ini title='whatap.conf'
+    httpc_status_ignore=404,500
+    ```
 
-    -   **httpc_status_ignore_set** <span class='type'>String</span>
+  - **httpc_status_ignore_set** <span class='type'>String</span>
 
-        デフォルト値`Empty`
+    デフォルト値`Empty`
 
-        `whatap.error.HTTPC_ERROR`を無視します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+    `whatap.error.HTTPC_ERROR`を無視します。 複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-        :::note
+    :::note
 
-        `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+    `httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
 
-        :::
+    :::
 
--   <Status>Fixed</Status> MariaDBモニタリングができない問題を修正
+- <Status>Fixed</Status> MariaDBモニタリングができない問題を修正
 
--   <Status>Fixed</Status> SQL(MySQL、SQL Server) コネクション情報出力エラーを修正
+- <Status>Fixed</Status> SQL(MySQL、SQL Server) コネクション情報出力エラーを修正
 
 :::info
 
--   パッケージ情報：https://www.npmjs.com/package/whatap
+- パッケージ情報：https://www.npmjs.com/package/whatap
 
--   インストール及び適用方法
+- インストール及び適用方法
 
-    ```bash
-    npm i whatap
-    ```
+  ```bash
+  npm i whatap
+  ```
 
 :::

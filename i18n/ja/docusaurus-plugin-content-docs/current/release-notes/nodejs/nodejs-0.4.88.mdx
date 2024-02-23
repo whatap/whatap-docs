@@ -8,26 +8,26 @@ displayed_sidebar: releaseSidebar
 
 2024年01月11日
 
--   <Status>Fixed</Status> <code>trace_http_client_ip_header_key=x-forwarded-for</code>オプションを設定した状態でヘッダで<code>x-forwarded-for</code>値に複数のIPが転送される場合(コンマ基準)、最初の値にIPを設定するよう修正
+- <Status>Fixed</Status> <code>trace_http_client_ip_header_key=x-forwarded-for</code>オプションを設定した状態でヘッダで<code>x-forwarded-for</code>値に複数のIPが転送される場合(コンマ基準)、最初の値にIPを設定するよう修正
 
-    :::note
+  :::note
 
-    このオプションの詳細については、[次の文書](../../nodejs/agent-number-of-user#trace_http_client_ip_header_key)を参考にしてください。
+  このオプションの詳細については、[次の文書](../../nodejs/agent-number-of-user#trace_http_client_ip_header_key)を参考にしてください。
 
-    :::
+  :::
 
--   <Status>Fixed</Status> TCP、UDPソケットモニタリングを修正
+- <Status>Fixed</Status> TCP、UDPソケットモニタリングを修正
 
--   <Status>Fixed</Status> <code>profile_http_header_enabled</code>オプションの値が<code>true</code>であれば、profileのheaders値を表す方式を修正(JSON → key=value\n)
+- <Status>Fixed</Status> <code>profile_http_header_enabled</code>オプションの値が<code>true</code>であれば、profileのheaders値を表す方式を修正(JSON → key=value\n)
 
 :::info
 
--   パッケージ情報：https://www.npmjs.com/package/whatap
+- パッケージ情報：https://www.npmjs.com/package/whatap
 
--   インストール及び適用方法
+- インストール及び適用方法
 
-    ```bash
-    npm i whatap
-    ```
+  ```bash
+  npm i whatap
+  ```
 
 :::

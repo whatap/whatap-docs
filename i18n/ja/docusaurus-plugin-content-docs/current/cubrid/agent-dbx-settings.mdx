@@ -21,41 +21,41 @@ DBXエージェントに必要な設定は、_whatap.conf_ファイルで作成�
 
 ## CUBRID専用オプション{#cubrid}
 
--   **db_port** <span class='type'>Int</span>
+- **db_port** <span class='type'>Int</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    アプリケーション接続情報に使用するブローカーのポート情報です。ブローカー設定ファイル(_cubrid_broker.conf_)に`BROKER_PORT`項目に定義された値を入力してください。(CUBRIDのデフォルト値 `BROKER_PORT: 33000`)
+  アプリケーション接続情報に使用するブローカーのポート情報です。ブローカー設定ファイル(_cubrid_broker.conf_)に`BROKER_PORT`項目に定義された値を入力してください。(CUBRIDのデフォルト値 `BROKER_PORT: 33000`)
 
--   **cms_port** <span class='type'>Int</span>
+- **cms_port** <span class='type'>Int</span>
 
-    デフォルト値 `8001`
+  デフォルト値 `8001`
 
-    **CUBRID Manager**が使用するポートです。**CUBRID Manager**設定ファイル(_cm.conf_)のcm_port\`項目に定義された値を入力してください。モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
+  **CUBRID Manager**が使用するポートです。**CUBRID Manager**設定ファイル(_cm.conf_)のcm_port\`項目に定義された値を入力してください。モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
 
--   **cms_token_file** <span class='type'>String</span>
+- **cms_token_file** <span class='type'>String</span>
 
-    ユーザーが生成したDBが複数ある場合、WhaTapエージェントをDB数だけインストールして設定する必要があります。この場合、エージェント間でトークンを共有するには、`cms_token_file`パスが必要です。_`{エージェントインストールパス}`/cms_token_に設定してください。 
+  ユーザーが生成したDBが複数ある場合、WhaTapエージェントをDB数だけインストールして設定する必要があります。この場合、エージェント間でトークンを共有するには、`cms_token_file`パスが必要です。_`{エージェントインストールパス}`/cms_token_に設定してください。 
 
-    例) agent2をインストールした場合、agent1の`cms_token_file`パスを共有するために次のように設定してください。
+  例) agent2をインストールした場合、agent1の`cms_token_file`パスを共有するために次のように設定してください。
 
-    ```ini title='whtap.conf'
+  ```ini title='whtap.conf'
 
-    cms_token_file=/agent1/cms_token
+  cms_token_file=/agent1/cms_token
 
-    ```
+  ```
 
--   **broker** <span class='type'>String</span>
+- **broker** <span class='type'>String</span>
 
-    デフォルト値 `broker1`、`query_editor`
+  デフォルト値 `broker1`、`query_editor`
 
-    CUBRIDをインストールすると、デフォルトで`broker1`、`query_editor`でブローカーが実行されます。ユーザーが任意にブローカーの名前を変更または、追加で移動を行った場合は、変更を入力してください。
+  CUBRIDをインストールすると、デフォルトで`broker1`、`query_editor`でブローカーが実行されます。ユーザーが任意にブローカーの名前を変更または、追加で移動を行った場合は、変更を入力してください。
 
-    :::note
+  :::note
 
-    `broker`オプションで設定する名前は、`cubrid broker status`コマンドで確認できます。
+  `broker`オプションで設定する名前は、`cubrid broker status`コマンドで確認できます。
 
-    :::
+  :::
 
 ## データ収集
 

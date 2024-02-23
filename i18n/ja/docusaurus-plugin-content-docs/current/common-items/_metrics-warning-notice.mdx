@@ -16,8 +16,8 @@
 
 メトリクスイベントは、基本イベント(アプリケーションイベント、サーバーイベントなど)より具体的で複雑なイベントを設定するために使用します。プロジェクトがリアルタイムで収集中のメトリクスデータに基づいてイベントを設定できます。使用状況に応じて、2つの設定方法のいずれかを選択してイベントを設定できます。
 
--   メトリクスイベント
--   複合メトリクスイベント
+- メトリクスイベント
+- 複合メトリクスイベント
 
 :::note
 
@@ -67,77 +67,77 @@
 
 ### 基本情報を入力{#basic-info}
 
--   <Cmdname sid="event_name" className="uitext" />：追加するイベント名を入力してください。
+- <Cmdname sid="event_name" className="uitext" />：追加するイベント名を入力してください。
 
--   <Cmdname sid="enable_events" className="uitext" />：イベントのアクティブ化の有無を選択します。
+- <Cmdname sid="enable_events" className="uitext" />：イベントのアクティブ化の有無を選択します。
 
--   <Cmdname sid="template" className="uitext" />：作成したテンプレートを選択して、すばやく簡単にイベントを設定できます。テンプレートを使用しない場合は、<Cmdname sid="metrics_option_disabled" className="uitext" />を選択します。
+- <Cmdname sid="template" className="uitext" />：作成したテンプレートを選択して、すばやく簡単にイベントを設定できます。テンプレートを使用しない場合は、<Cmdname sid="metrics_option_disabled" className="uitext" />を選択します。
 
-    <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
+  <InDoc product='java,php,nodejs,python,golang,dotnet,postgresql,postgresql-v1,browser,npm'>
 
-    :::note
+  :::note
 
-    テンプレート一覧の詳細については[次の文書](#template)を参照してください。
+  テンプレート一覧の詳細については[次の文書](#template)を参照してください。
 
-    :::
+  :::
 
-    </InDoc>
+  </InDoc>
 
--   <Cmdname sid="category" className="uitext" />：メトリクス データを区切る単位です。メトリクスイベント設定時の必須のオプションの値です。
+- <Cmdname sid="category" className="uitext" />：メトリクス データを区切る単位です。メトリクスイベント設定時の必須のオプションの値です。
 
-    <ImgLang img='set-event-select-category.png' desc='メトリクスイベント - カテゴリ' />
+  <ImgLang img='set-event-select-category.png' desc='メトリクスイベント - カテゴリ' />
 
-    -   <Cmdname sid="category" className="uitext" />選択オプションは、<LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" />と<LinkImage img="number-02.png" className="ico" />データ収集間隔、<LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
+  - <Cmdname sid="category" className="uitext" />選択オプションは、<LinkImage img="number-01.png" className="ico" /> <Cmdname sid="name" className="uitext" />と<LinkImage img="number-02.png" className="ico" />データ収集間隔、<LinkImage img="number-03.png" className="ico" /> <Cmdname sid="key" className="uitext" />情報を表示します。イベント設定時に、そのカテゴリのキー値を使用します。
 
-    -   <Cmdname sid="category" className="uitext" />は、3時間以内にプロジェクトによって収集されたメトリクスデータを検索し、一覧に表示します。<Cmdname sid="category" className="uitext" />選択オプションに収集間隔が表示されない場合は、<Cmdname sid="enter_category_self" className="uitext" />オプションを選択して、カテゴリキーを入力します。
+  - <Cmdname sid="category" className="uitext" />は、3時間以内にプロジェクトによって収集されたメトリクスデータを検索し、一覧に表示します。<Cmdname sid="category" className="uitext" />選択オプションに収集間隔が表示されない場合は、<Cmdname sid="enter_category_self" className="uitext" />オプションを選択して、カテゴリキーを入力します。
 
--   <Cmdname sid="level" className="uitext" />
+- <Cmdname sid="level" className="uitext" />
 
-    -   イベント発生時のアラートレベルを意味します。<span class='vslow'>Critical</span>, <span class='slow'>Warning</span>、<span style={{color:'#757575'}}>Info</span>レベルに分けます。<span class='vslow'>Critical</span>、<span class='slow'>Warning</span>レベル設定時<Cmdname sid="resolved_event_notification" className="uitext" />の選択オプションが有効になります。
+  - イベント発生時のアラートレベルを意味します。<span class='vslow'>Critical</span>, <span class='slow'>Warning</span>、<span style={{color:'#757575'}}>Info</span>レベルに分けます。<span class='vslow'>Critical</span>、<span class='slow'>Warning</span>レベル設定時<Cmdname sid="resolved_event_notification" className="uitext" />の選択オプションが有効になります。
 
-    -   <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
+  - <Cmdname sid="resolved_event_notification" className="uitext" /><ScrollToLink anchor='scrollTo-resolve-event' />：イベント項目中に発生したイベントの状態が解決した場合、追加の通知を選択できます。トグルボタンを選択して、機能をオンまたは、オフにすることができます。
 
--   <Cmdname sid="message" className="uitext" />
+- <Cmdname sid="message" className="uitext" />
 
-    -   イベント発生時に出力する通知メッセージを入力します。`${タグまたはフィールドキー}` を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
+  - イベント発生時に出力する通知メッセージを入力します。`${タグまたはフィールドキー}` を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリック データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認することができます。
 
-    -   ![時間アイコン](/img/ico-timing.svg)ボタンをクリックすると、以前に入力したメッセージの履歴を確認できます。
+  - ![時間アイコン](/img/ico-timing.svg)ボタンをクリックすると、以前に入力したメッセージの履歴を確認できます。
 
--   <Cmdname sid="alert_test" className="uitext" />
+- <Cmdname sid="alert_test" className="uitext" />
 
-    必須項目である<Cmdname sid="event_name" className="uitext" />、<Cmdname sid="category" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="message" className="uitext" />情報に基づいて通知を発生させ、メッセージをチェックする機能です。
+  必須項目である<Cmdname sid="event_name" className="uitext" />、<Cmdname sid="category" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="message" className="uitext" />情報に基づいて通知を発生させ、メッセージをチェックする機能です。
 
-    :::note
+  :::note
 
-    受信テストを利用するには、必須項目(<Cmdname sid="event_name" className="uitext" />、<Cmdname sid="category" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="message" className="uitext" />)に値を入力または選択する必要があります。
+  受信テストを利用するには、必須項目(<Cmdname sid="event_name" className="uitext" />、<Cmdname sid="category" className="uitext" />、<Cmdname sid="level" className="uitext" />、<Cmdname sid="message" className="uitext" />)に値を入力または選択する必要があります。
 
-    :::
+  :::
 
--   <Cmdname sid="metrics_event_rules" className="uitext" />
+- <Cmdname sid="metrics_event_rules" className="uitext" />
 
-    <ImgLang img='set-event-condition.png' desc='イベント発生条件' />
+  <ImgLang img='set-event-condition.png' desc='イベント発生条件' />
 
-    ![指示線4](/img/number-04.png)フィールド、![指示線5](/img/number-05.png)演算子の選択、![指示線6](/img/number-06.png)しきい値を入力して、イベントが発生する条件を設定します。
+  ![指示線4](/img/number-04.png)フィールド、![指示線5](/img/number-05.png)演算子の選択、![指示線6](/img/number-06.png)しきい値を入力して、イベントが発生する条件を設定します。
 
--   <Cmdname sid="alert_object_filtering" className="uitext" />
+- <Cmdname sid="alert_object_filtering" className="uitext" />
 
-    <ImgLang img='set-event-filtering.png' desc='イベント対象フィルタリング' />
+  <ImgLang img='set-event-filtering.png' desc='イベント対象フィルタリング' />
 
-    ![指示線7](/img/number-07.png)タグ、![指示線8](/img/number-08.png)演算子の選択、![指示線9](/img/number-09.png)フィルタリング値を入力して、ターゲットをフィルタリングします。入力がない場合は、全体エージェントにアラート通知を送信します。
+  ![指示線7](/img/number-07.png)タグ、![指示線8](/img/number-08.png)演算子の選択、![指示線9](/img/number-09.png)フィルタリング値を入力して、ターゲットをフィルタリングします。入力がない場合は、全体エージェントにアラート通知を送信します。
 
 :::note
 
--   <Cmdname sid="metrics_event_rules" className="uitext" />と<Cmdname sid="alert_object_filtering" className="uitext" />で使用できる基本文法と演算子の一覧は、<Link to="#condition-guide">次の文書</Link>を参照してください。
+- <Cmdname sid="metrics_event_rules" className="uitext" />と<Cmdname sid="alert_object_filtering" className="uitext" />で使用できる基本文法と演算子の一覧は、<Link to="#condition-guide">次の文書</Link>を参照してください。
 
--   <Cmdname sid="metrics_event_rules" className="uitext" />と<Cmdname sid="alert_object_filtering" className="uitext" />オプションは、<Cmdname sid="metrics_rule_select" className="uitext" />または<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択できます。
+- <Cmdname sid="metrics_event_rules" className="uitext" />と<Cmdname sid="alert_object_filtering" className="uitext" />オプションは、<Cmdname sid="metrics_rule_select" className="uitext" />または<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択できます。
 
--   イベント設定内容が保存された後は、そのオプション値は<Cmdname sid="metrics_rule_direct" className="uitext" />オプションで管理します。以降<Cmdname sid="metrics_rule_select" className="uitext" />オプションに切り替えると、オプション値が初期化される可能性があります。
+- イベント設定内容が保存された後は、そのオプション値は<Cmdname sid="metrics_rule_direct" className="uitext" />オプションで管理します。以降<Cmdname sid="metrics_rule_select" className="uitext" />オプションに切り替えると、オプション値が初期化される可能性があります。
 
--   イベント発生条件と対象入力時の特殊文字(<code>~!@#$%^&*()_+=-[]`</code>)を含めるか、数字で始まるフィールド名を入力すると、エラーが発生する可能性があります。 こんな場合<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択した上で例示のように中括弧(<code>${}</code>)にまとめて入力してください。
+- イベント発生条件と対象入力時の特殊文字(<code>~!@#$%^&*()_+=-[]`</code>)を含めるか、数字で始まるフィールド名を入力すると、エラーが発生する可能性があります。 こんな場合<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択した上で例示のように中括弧(<code>${}</code>)にまとめて入力してください。
 
-    ```text
-    ${4xxErrorType} == '401'
-    ```
+  ```text
+  ${4xxErrorType} == '401'
+  ```
 
 :::
 
@@ -145,27 +145,27 @@
 
 <ImgLang img='set-event-receive.png' desc='イベント受信設定' />
 
--   <Cmdname sid="number_of_event" className="uitext" />：選択した時間内に<Cmdname sid="metrics_event_rules" className="uitext" />で設定したイベントが入力回数と同じ回数が発生した場合、アラート通知が送信されます。
+- <Cmdname sid="number_of_event" className="uitext" />：選択した時間内に<Cmdname sid="metrics_event_rules" className="uitext" />で設定したイベントが入力回数と同じ回数が発生した場合、アラート通知が送信されます。
 
-    :::note
+  :::note
 
-    -   選択時間を<Cmdname sid="metrics_option_disabled" className="uitext" />に設定すると、入力した回数だけ連続して発生通知が送信されます。
-    -   <Cmdname sid="resolved_event_notification" className="uitext" />オプションを有効する場合は、選択時間を<Cmdname sid="metrics_option_disabled" className="uitext" />で選択することをお勧めします。
-    -   <Cmdname sid="category" className="uitext" />オプションで選択した項目のログ収集の周期は5秒です。
+  - 選択時間を<Cmdname sid="metrics_option_disabled" className="uitext" />に設定すると、入力した回数だけ連続して発生通知が送信されます。
+  - <Cmdname sid="resolved_event_notification" className="uitext" />オプションを有効する場合は、選択時間を<Cmdname sid="metrics_option_disabled" className="uitext" />で選択することをお勧めします。
+  - <Cmdname sid="category" className="uitext" />オプションで選択した項目のログ収集の周期は5秒です。
 
-    :::
+  :::
 
--   <Cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />：過剰なアラート通知が発生しないようにするオプションです。最初のアラート通知の後、選択された時間にアラート通知は送信されません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
+- <Cmdname sid="event_pause" className="uitext" /><ScrollToLink anchor='scrollTo-event-pause' />：過剰なアラート通知が発生しないようにするオプションです。最初のアラート通知の後、選択された時間にアラート通知は送信されません。 また、<Cmdname sid="event_history" className="uitext" />メニューに記録されません。
 
--   <Cmdname sid="related_category" className="uitext" />：関連カテゴリを最大5つまで設定し、通知を閲覧するときに参照します。
+- <Cmdname sid="related_category" className="uitext" />：関連カテゴリを最大5つまで設定し、通知を閲覧するときに参照します。
 
--   <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
+- <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、そのタグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。イベント受信タグを選択しない場合は、プロジェクトの全体メンバーにアラート通知を送信します。
 
-    :::note
+  :::note
 
-    <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
+  <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_receive_configuration" className="uitext" />メニューでプロジェクトメンバーと3rd-partyプラグインにタグを設定できます。
 
-    :::
+  :::
 
 ### イベントルールテスト
 

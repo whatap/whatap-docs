@@ -17,19 +17,19 @@ WhaTap Kubernetesをインストールする場合、デフォルトでは、Kub
 
 マスターエージェントはDeploymentの形式であり、ノードエージェントはDaemonSet形式です。以下は、Kubernetes環境にインストールされているWhaTapエージェントを確認する方法です。
 
--   **マスターエージェント**
+- **マスターエージェント**
 
-    ```bash
-    kubectl get deployments -n whatap-monitoring 
-    kubectl get pods -l=name=whatap-master-agent -n whatap-monitoring
-    ```
+  ```bash
+  kubectl get deployments -n whatap-monitoring 
+  kubectl get pods -l=name=whatap-master-agent -n whatap-monitoring
+  ```
 
--   **ノードエージェント**
+- **ノードエージェント**
 
-    ```bash
-    kubectl get daemonsets -n whatap-monitoring
-    kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
-    ```
+  ```bash
+  kubectl get daemonsets -n whatap-monitoring
+  kubectl get pods -l=name=whatap-node-agent -n whatap-monitoring
+  ```
 
 以下は、&lt;whatap-monitoring&gt; Namespaceで実行中のマスターエージェントであるノードエージェントが実行される例です。
 

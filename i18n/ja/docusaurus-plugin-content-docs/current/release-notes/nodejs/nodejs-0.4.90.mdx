@@ -1,0 +1,37 @@
+---
+id: nodejs-0_4_90
+title: Node.js Agent v0.4.90
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_4_89
+displayed_sidebar: releaseSidebar
+---
+
+2024年02月05日
+
+- <Status>New</Status>エージェント設定オプションを追加
+
+  - **httpc_not_found_ignore** <span class='type'>Boolean</span>
+
+    デフォルト値`false`
+
+    Not Foundエラーが特定の時間(`httpc_not_found_ignore_time`)に50件以上発生すると、モニタリング検出を無視します。
+
+  - **httpc_not_found_ignore_time** <span class='type'>Milisecond</span>
+
+    デフォルト値`300000`
+
+    `httpc_not_found_ignore`値が`true`である場合、Not Foundエラーを無視する時間を設定します。
+
+- <Status>Fixed</Status> Mongooseトラッキングができない問題を修正
+
+:::info
+
+- パッケージ情報：https://www.npmjs.com/package/whatap
+
+- インストール及び適用方法
+
+  ```bash
+  npm i whatap
+  ```
+
+:::

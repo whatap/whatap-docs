@@ -26,29 +26,29 @@ WhaTapデータベースモニタリングサービスを使用するための�
 
 {@include: ../common-items/_db-install-agent-steps.mdx}  
 
-3.  解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
+3. 解凍したフォルダに入って_whatap.conf_ファイルを確認してください。_whatap.conf_ ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、db接続情報を入力してください。
 
-    ```ini title='whatap.conf'
-    license=プロジェクトアクセスキー
-    whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
+   ```ini title='whatap.conf'
+   license=プロジェクトアクセスキー
+   whatap.server.host=13.124.11.223/13.209.172.35 // WhaTapサーバー情報
 
-    db = {$CUBRID_HOME/databases/databases.txtのdb-name}
-    db_ip = {DBサーバーのIPアドレス}
-    db_port = {$CUBRID_HOME/conf/cubrid_broker.confのBROKER_PORT (default : 33000)}
-    cms_port = {$CUBRID_HOME/conf/cm.confのcm_port (default : 8001)}
-    cms_token_file = {エージェントインストールパス}/cms_token
-    broker = query_editor,broker1
-    ```
+   db = {$CUBRID_HOME/databases/databases.txtのdb-name}
+   db_ip = {DBサーバーのIPアドレス}
+   db_port = {$CUBRID_HOME/conf/cubrid_broker.confのBROKER_PORT (default : 33000)}
+   cms_port = {$CUBRID_HOME/conf/cm.confのcm_port (default : 8001)}
+   cms_token_file = {エージェントインストールパス}/cms_token
+   broker = query_editor,broker1
+   ```
 
-    :::note
+   :::note
 
-    -   `cms_token_file`、`broker`オプションの詳細については、[次の文書](agent-dbx-settings#cubrid)を参照してください。
+   - `cms_token_file`、`broker`オプションの詳細については、[次の文書](agent-dbx-settings#cubrid)を参照してください。
 
-    -   `broker`オプションで設定する名前は、`cubrid broker status`コマンドで確認できます。
+   - `broker`オプションで設定する名前は、`cubrid broker status`コマンドで確認できます。
 
-    :::
+   :::
 
-4.  次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
 
   データベースサーバーのオペレーティングシステムとバージョン用のJDBCドライバーをダウンロードしてください。https://www.cubrid.com/downloads
 
@@ -64,32 +64,32 @@ CUBRIDをモニタリングするには、DBアカウントとCUBRID Managerア�
 
 データベース接続用に暗号化されたUIDを生成します。ユーザーファイルは、ユーザーDB(`dba`)とCUBRID Manager(`admin`)の両方に対して実行する必要があります。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行してください。 
 
--   _uid.sh_シェルスクリプトファイル(または_uid.bat_配置ファイル)は、WhaTapデータベースエージェントをインストールしたパスで見ることができます。
+- _uid.sh_シェルスクリプトファイル(または_uid.bat_配置ファイル)は、WhaTapデータベースエージェントをインストールしたパスで見ることができます。
 
--   `dba`と`DB_PASSWORD`は、会員登録で使用したユーザー名とパスワードです。
+- `dba`と`DB_PASSWORD`は、会員登録で使用したユーザー名とパスワードです。
 
-    ```bash title='uid.sh | uid.bat'
-    ./uid.sh dba DB_PASSWORD
-    ./cmsuid.sh admin ADMIN_PASSWORD
+  ```bash title='uid.sh | uid.bat'
+  ./uid.sh dba DB_PASSWORD
+  ./cmsuid.sh admin ADMIN_PASSWORD
 
-    # または
+  # または
 
-    ./uid.bat "dba" "DB_PASSWORD"
-    ./cmsuid.bat "admin" "ADMIN_PASSWORD"
-    ```
+  ./uid.bat "dba" "DB_PASSWORD"
+  ./cmsuid.bat "admin" "ADMIN_PASSWORD"
+  ```
 
 :::note
 
--   最初に設定すると、暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
--   DBユーザーファイルを生成するには、プロジェクトアクセスキーを_whatap.conf_ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
--   Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力する必要があります。
--   `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character(\\)を入力してください。
+- 最初に設定すると、暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
+- DBユーザーファイルを生成するには、プロジェクトアクセスキーを_whatap.conf_ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
+- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力する必要があります。
+- `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character(\\)を入力してください。
 
-    ```bash title='Example'
-    ./uid.sh whatap whatap\!pwd
+  ```bash title='Example'
+  ./uid.sh whatap whatap\!pwd
 
-    # 特殊文字が2つ以上の場合、それぞれエスケープ文字を追加
-    ./uid.sh whatap whatap\!\@pwd
-    ```
+  # 特殊文字が2つ以上の場合、それぞれエスケープ文字を追加
+  ./uid.sh whatap whatap\!\@pwd
+  ```
 
 :::

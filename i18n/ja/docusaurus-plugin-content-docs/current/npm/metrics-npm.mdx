@@ -1,0 +1,75 @@
+---
+id: metrics-npm
+title: ネットワーク性能指標
+description: ネットワーク性能指標を案内します。
+tags:
+  - ネットワーク性能モニタリング
+  - メトリクス
+  - UI
+toc_max_heading_level: 2
+---
+
+ネットワーク性能モニタリングで収集しているメトリクス指標の説明です。 <Cmdname sid="sitemap" className="uitext" /> > <Cmdname sid="tag_count" className="uitext" />メニューで検索できます。 ネットワーク性能指標は、すべての情報をフィールド(Field)にフォールディングされた形で提供します。
+
+## npm_process_tag_data
+
+セッションごとのネットワーク通信指標を意味します。 収集間隔は1分です。
+
+| フィールド名                 |   単位  | 説明                                    | 備考                                                                                   |
+| ---------------------- | :---: | ------------------------------------- | ------------------------------------------------------------------------------------ |
+| `app_name`             |   -   | 通信主体に対するカスタム識別タグ                      | デフォルト値<br/>- 単一のLinuxサーバー環境：ホスト名<br/>- Kubernetesコンテナ環境：Pod名                         |
+| `avg_jitter`           |   ms  | パケット往復遅延時間の変動値の平均                     | 収集間隔の平均jitter                                                                        |
+| `avg_latency`          |   ms  | パケット往復遅延時間の平均                         | 収集間隔の平均latency                                                                       |
+| `container_name`       |   -   | Kubernetes環境で収集されたコンテナ名               | Kubernetes環境でなければ空値                                                                  |
+| `direction`            |   -   | セッションの連結方向                            | **IN**(Inbound)、**OUT**(Outbound)                                                    |
+| `foreign_container_id` |   -   | Kubernetesコンテナ内にローカル通信の場合、当該コンテナのid   | ローカル通信の場合、IPアドレス、ポート番号では対象を知ることができず、正確な対象を探すために追加情報を提供                               |
+| `foreign_ip`           |   -   | 通信対象のIPアドレス                           | -                                                                                    |
+| `foreign_pod_id`       |   -   | Kubernetes Pod内にローカル通信の場合、当該Podのid    | ローカル通信の場合、IPアドレス、ポート番号では対象を知ることができず、正確な対象を探すために追加情報を提供                               |
+| `foreign_port`         |   -   | 通信対象のポート番号                            | Client Port(Inbound - `foreign_port`)は、0でデータが併合されて表記                                 |
+| `host_tag`             |   -   | 通信主体のホスト名                             | -                                                                                    |
+| `local_ip`             |   -   | 通信主体のIPアドレス                           | -                                                                                    |
+| `local_port`           |   -   | 通信主体のポート番号                            | Client Port(Outbound - `local_port`)は0でデータが併合されて表記                                   |
+| `lost_count`           | count | 失われたパケットの数量                           | -                                                                                    |
+| `max_jitter`           |   ms  | パケット往復遅延時間の変動値の最大値                    | 一定周期で収集されたjitterの中で最大値                                                               |
+| `max_latency`          |   ms  | パケット往復遅延時間の最大値                        | 一定周期で収集されたlatencyの中で最大値                                                              |
+| `min_jitter`           |   ms  | パケット往復遅延時間の変動値の最小値                    | 一定周期の間に収集されたjitterの中で最小値                                                             |
+| `min_latency`          |   ms  | パケット往復遅延時間の最小値                        | 一定周期の間に収集されたlatencyの最小値                                                              |
+| `pod_name`             |   -   | 通信主体がKubernetes環境であれば、Pod名            | Kubernetes環境でなければ空値                                                                  |
+| `process_type`         |   -   | 通信を行ったプロセスの種類                         | -                                                                                    |
+| `protocol`             |   -   | 通信プロトコルの種類                            | TCP / UDP                                                                            |
+| `recv_packet_count`    | count | 受信したパケットの数量                           | -                                                                                    |
+| `recv_packet_size`     |  バイト  | 受信したパケットのデータサイズ                       | -                                                                                    |
+| `retransmission_count` | count | 再送信が起きたパケット数量                         | -                                                                                    |
+| `row_count`            | count | 重複を含むセッション数                           | -                                                                                    |
+| `send_packet_count`    | count | 送信したパケットの数量                           | -                                                                                    |
+| `send_packet_size`     |  バイト  | 送信したパケットの全体サイズ                        | -                                                                                    |
+| `session_count`        | count | 重複を除いたセッション数                          | ユニークセッションの数は、単純合算ではなく**HyperLogLog**<sup><Link to="#hyperloglog">(1)</Link></sup>で算出 |
+| `session_count_lobits` |   -   | ユニークセッション計算のためのbit情報(**HyperLogLog**) | 統計処理のための**HyperLogLog**関連情報です。                                                       |
+| `tot_jitter`           |   ms  | パケット往復遅延時間の変動値の合計値                    | -                                                                                    |
+| `tot_latency`          |   ms  | パケット往復遅延時間の合計値                        | -                                                                                    |
+
+:::note
+
+<a name="hyperloglog">(1)</a>： <b>HyperLogLog</b>は、非常に少ないメモリ内の要素の数を推定する確率的なデータ構造を意味します。
+
+:::
+
+## npm_process_tag_list
+
+セッションのForeign領域タギング処理のための内部データです。
+
+- セッションごとのタグ一覧
+- 収集周期：1分
+
+| フィールド名                   | 説明                                  | 備考                                                           |
+| ------------------------ | ----------------------------------- | ------------------------------------------------------------ |
+| `foreign_app_name`       | 通信対象のカスタム識別値                        | デフォルト値<br/>- 単一のLinuxサーバー環境：ホスト名<br/>- Kubernetesコンテナ環境：Pod名 |
+| `foreign_container_id`   | Kubernetesコンテナ内にローカル通信の場合、当該コンテナのid | -                                                            |
+| `foreign_container_name` | 通信対象がKubernetes環境であればコンテナ名          | -                                                            |
+| `foreign_host_tag`       | 通信対象のホスト名                           | -                                                            |
+| `foreign_ip`             | 通信対象のIPアドレス                         | -                                                            |
+| `foreign_pod_id`         | Kubernetes Pod内にローカル通信の場合、当該Podのid  | -                                                            |
+| `foreign_pod_name`       | 通信対象がKubernetes環境であれば、Pod名          | -                                                            |
+| `foreign_port`           | 通信対象のポート番号                          | -                                                            |
+| `foreign_process_type`   | 通信対象のプロセス名                          | 識別できなければ`untagged`                                           |
+| `local_inbound_check`    | 内部ネットワークで発生したInbound通信有無の確認         | -                                                            |

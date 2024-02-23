@@ -1,108 +1,108 @@
 :::note
 
--   エージェントの性能オプションを有効にするには、設定後に、WhaTap .NET Windows サービスを再起動する必要があります。
--   エージェントのパフォーマンスを拡大すると、CPU、メモリ使用率が増加する可能性があります。
+- エージェントの性能オプションを有効にするには、設定後に、WhaTap .NET Windows サービスを再起動する必要があります。
+- エージェントのパフォーマンスを拡大すると、CPU、メモリ使用率が増加する可能性があります。
 
 :::
 
--   **tx_max_count** <span class='type'>Int</span>
+- **tx_max_count** <span class='type'>Int</span>
 
-    デフォルト値`5000`
+  デフォルト値`5000`
 
-    トランザクションを保存する最大数です。 同時に処理するトランザクションが多い場合は、そのサイズをさらに大きくしてください。
+  トランザクションを保存する最大数です。 同時に処理するトランザクションが多い場合は、そのサイズをさらに大きくしてください。
 
--   **tx_default_capacity** <span class='type'>Int</span>
+- **tx_default_capacity** <span class='type'>Int</span>
 
-    デフォルト値`101`
+  デフォルト値`101`
 
-    トランザクションを保存するバッファのデフォルトサイズです。
+  トランザクションを保存するバッファのデフォルトサイズです。
 
--   **tx_load_factor** <span class='type'>String(Float)</span>
+- **tx_load_factor** <span class='type'>String(Float)</span>
 
-    デフォルト値`0.75`
+  デフォルト値`0.75`
 
-    トランザクションを保存するバッファのサイズを徐々に増加させるための基準です。 101個から75％以上保存すると、バッファのサイズが2倍になります。
-                            
+  トランザクションを保存するバッファのサイズを徐々に増加させるための基準です。 101個から75％以上保存すると、バッファのサイズが2倍になります。
+                          
 
--   **queue_log_enabled** <span class='type'>Boolean</span>
+- **queue_log_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    queue関連ログを出力します。
+  queue関連ログを出力します。
 
--   **queue_tcp_enabled** <span class='type'>Boolean</span>
+- **queue_tcp_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    TCPデータ送信処理に使用するChannelの代わりに別のQueueを使用します。 データ優先順位キューを使用します。
+  TCPデータ送信処理に使用するChannelの代わりに別のQueueを使用します。 データ優先順位キューを使用します。
 
--   **queue_tcp_sender_thread_count** <span class='type'>Int</span>
+- **queue_tcp_sender_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`2`
+  デフォルト値`2`
 
-    TCPデータ送信を処理するスレッドの数を設定します。 スレッド数を増やすと、データ送信をより迅速に処理できます。 
+  TCPデータ送信を処理するスレッドの数を設定します。 スレッド数を増やすと、データ送信をより迅速に処理できます。 
 
--   **net_send_buffer_size** <span class='type'>Int</span>
+- **net_send_buffer_size** <span class='type'>Int</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    TCPデータ処理のChannelバッファを設定します。
+  TCPデータ処理のChannelバッファを設定します。
 
--   **queue_udp_enabled** <span class='type'>Boolean</span>
+- **queue_udp_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    UDPデータ受信処理にChannelに代わり、他のQueueを使用します。
+  UDPデータ受信処理にChannelに代わり、他のQueueを使用します。
 
--   **queue_udp_size** <span class='type'>Int</span>
+- **queue_udp_size** <span class='type'>Int</span>
 
-    デフォルト値`2048`
+  デフォルト値`2048`
 
-    UDPデータ受信のバッファを設定します。 チャンネル、キューバッファを設定します。 
+  UDPデータ受信のバッファを設定します。 チャンネル、キューバッファを設定します。 
 
--   **queue_udp_read_thread_count** <span class='type'>Int</span>
+- **queue_udp_read_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`3`
+  デフォルト値`3`
 
-    UDPデータ受信を処理するスレッドの数を設定します。 スレッド数を増やすと、UDPバッファからより早くデータを読むことができます。 
+  UDPデータ受信を処理するスレッドの数を設定します。 スレッド数を増やすと、UDPバッファからより早くデータを読むことができます。 
 
--   **queue_udp_overflowed_size** <span class='type'>Int</span>
-    デフォルト値`4096`
+- **queue_udp_overflowed_size** <span class='type'>Int</span>
+  デフォルト値`4096`
 
-    UDPデータ受信にQueueを使用する場合は、overflowed Queueバッファサイズを設定します。
+  UDPデータ受信にQueueを使用する場合は、overflowed Queueバッファサイズを設定します。
 
--   **queue_udp_process_thread_count** <span class='type'>Int</span>
+- **queue_udp_process_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    UDPデータを処理するスレッドの数を設定します。 スレッド数を増やすと、UDPから読み取ったデータより迅速に処理できます。
+  UDPデータを処理するスレッドの数を設定します。 スレッド数を増やすと、UDPから読み取ったデータより迅速に処理できます。
 
--   **queue_profile_enabled** <span class='type'>Boolean</span>
+- **queue_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース情報を処理するためにChannelの変わりに他のQueueを使用します。
+  トレース情報を処理するためにChannelの変わりに他のQueueを使用します。
 
--   **queue_profile_size** <span class='type'>Int</span>
+- **queue_profile_size** <span class='type'>Int</span>
 
-    デフォルト値 `512`
+  デフォルト値 `512`
 
-    トレース情報を処理するためのバッファを設定します。
+  トレース情報を処理するためのバッファを設定します。
 
--   **queue_profile_process_thread_count** <span class='type'>Int</span>
+- **queue_profile_process_thread_count** <span class='type'>Int</span>
 
-    デフォルト値`1`
+  デフォルト値`1`
 
-    トレース情報を処理するスレッドの数を設定します。 スレッド数を増やすと、より迅速に処理できます。
+  トレース情報を処理するスレッドの数を設定します。 スレッド数を増やすと、より迅速に処理できます。
 
--   **queue_text_enabled** <span class='type'>Boolean</span>
+- **queue_text_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    テキストデータ処理をするためにChannelの変わりにQueueを使用します。
+  テキストデータ処理をするためにChannelの変わりにQueueを使用します。
 
--   **queue_text_size** <span class='type'>Int</span>
+- **queue_text_size** <span class='type'>Int</span>
 
-    デフォルト値 `512`
+  デフォルト値 `512`
 
-    テキストデータを処理するためのバッファを設定します。
+  テキストデータを処理するためのバッファを設定します。

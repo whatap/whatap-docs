@@ -7,50 +7,50 @@ displayed_sidebar: releaseSidebar
 
 2023年7月10日
 
--   <Status>New</Status>mongodb-reactive追跡
+- <Status>New</Status>mongodb-reactive追跡
 
-    mongodb-3.8.2, mongodb-4.0.3, mongodb-4.4, mongodb-4.8追跡
+  mongodb-3.8.2, mongodb-4.0.3, mongodb-4.4, mongodb-4.8追跡
+
+  ```ini title='whatap.conf'
+  #適用例(重複適用不可)
+  weaving=mongodb-3.8.2
+  ```
+
+- <Status>Change</Status><code>trace_ignore_url_prefix</code>設定で読点(、)で区分し、多数のprefixを登録できるように修正
+
+  ```ini title='whatap.conf'
+  #適用例
+  trace_ignore_url_prefix=/api,/sample
+  ```
+
+- <Status>Change</Status>weaving下位オプション自動化(再起動オプション)
+
+  - `weaving=spring-boot-2.5`
+
+    tomcat9, mongodb-4.0.3自動追跡
 
     ```ini title='whatap.conf'
-    #適用例(重複適用不可)
-    weaving=mongodb-3.8.2
+    #追跡解除(再起動必要)
+    weaving_mongodb4_0_3_enabled=false
+    weaving_tomcat9_enabled=false
     ```
 
--   <Status>Change</Status><code>trace_ignore_url_prefix</code>設定で読点(、)で区分し、多数のprefixを登録できるように修正
+  - `weaving=spring-boot-2.7`
+
+    tomcat9, mongodb-4.4自動追跡
 
     ```ini title='whatap.conf'
-    #適用例
-    trace_ignore_url_prefix=/api,/sample
+    #追跡解除(再起動必要)
+    weaving_mongodb4_4_enabled=false
+    weaving_tomcat9_enabled=false
     ```
 
--   <Status>Change</Status>weaving下位オプション自動化(再起動オプション)
+  - `weaving=spring-boot-3.0`
 
-    -   `weaving=spring-boot-2.5`
+    tomcat10, mongodb-4.8自動追跡
 
-        tomcat9, mongodb-4.0.3自動追跡
-
-        ```ini title='whatap.conf'
-        #追跡解除(再起動必要)
-        weaving_mongodb4_0_3_enabled=false
-        weaving_tomcat9_enabled=false
-        ```
-
-    -   `weaving=spring-boot-2.7`
-
-        tomcat9, mongodb-4.4自動追跡
-
-        ```ini title='whatap.conf'
-        #追跡解除(再起動必要)
-        weaving_mongodb4_4_enabled=false
-        weaving_tomcat9_enabled=false
-        ```
-
-    -   `weaving=spring-boot-3.0`
-
-        tomcat10, mongodb-4.8自動追跡
-
-        ```ini title='whatap.conf'
-        #追跡解除(再起動必要)
-        weaving_mongodb4_8_enabled=false
-        weaving_tomcat10_enabled=false
-        ```
+    ```ini title='whatap.conf'
+    #追跡解除(再起動必要)
+    weaving_mongodb4_8_enabled=false
+    weaving_tomcat10_enabled=false
+    ```

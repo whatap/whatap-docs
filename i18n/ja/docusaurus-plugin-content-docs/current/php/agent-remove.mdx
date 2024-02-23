@@ -14,37 +14,37 @@ import TabItem from '@theme/TabItem';
 
 インストールスクリプトを使用してトレーサー、PHP拡張モジュール、およびwhatap-phpサービスデーモンを削除します。その後、パッケージ(yum、 apt-get) の削除に進み、必要に応じて_/usr/whatap/php_のログファイルおよびその他のファイルを削除します。
 
-1.  PHP 拡張モジュールとwhatap-php サービスを削除します。
+1. PHP 拡張モジュールとwhatap-php サービスを削除します。
 
-    ```bash
-    $ /usr/whatap/php/install.sh remove
-    ```
+   ```bash
+   $ /usr/whatap/php/install.sh remove
+   ```
 
-2.  パッケージを削除します。
+2. パッケージを削除します。
 
-    <Tabs>
-    <TabItem value="rdct" label="Red Hat/CentOS" default>
+   <Tabs>
+   <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-    ```bash
-    $ sudo yum remove whatap-php
-    ```
+   ```bash
+   $ sudo yum remove whatap-php
+   ```
 
-    </TabItem>
-    <TabItem value="dbub" label="Debian/Ubuntu">
+   </TabItem>
+   <TabItem value="dbub" label="Debian/Ubuntu">
 
-    ```bash
-    $ sudo apt-get purge whatap-php
-    ```
+   ```bash
+   $ sudo apt-get purge whatap-php
+   ```
 
-    </TabItem>
-    <TabItem value="frbsd" label="FreeBSD">
+   </TabItem>
+   <TabItem value="frbsd" label="FreeBSD">
 
-    ```bash
-    $ pkg delete whatap-php
-    ```
+   ```bash
+   $ pkg delete whatap-php
+   ```
 
-    </TabItem>
-    </Tabs>
+   </TabItem>
+   </Tabs>
 
 :::note
 

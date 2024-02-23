@@ -14,19 +14,19 @@ displayed_sidebar: dbSidebar
 
 WhaTapが提供するAWS CloudFormationテンプレートを通じて、AWS IAM Policy、Role、AWS EC2 Instance Profileを自動インストールする方法です。
 
-1.  次のリンクをクリックし、スタック生成によりInstance Profileを作成してください。
+1. 次のリンクをクリックし、スタック生成によりInstance Profileを作成してください。
 
-    <Link to='https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRdsMetricInstaceProfile&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/whatapCloudMonitoring.yaml' target='_blank' className='ext-link'>RDS権限インストールページ</Link>
+   <Link to='https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRdsMetricInstaceProfile&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/whatapCloudMonitoring.yaml' target='_blank' className='ext-link'>RDS権限インストールページ</Link>
 
-2.  **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**を順番に選択してください。
+2. **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**を順番に選択してください。
 
-    ![](/img/ec2-instances.png)
+   ![](/img/ec2-instances.png)
 
-3.  **EC2**>**Instances**>**Modify IAM role**で先だって生成した**IAM Role**または**Instance Profile Name**を入力してください。
+3. **EC2**>**Instances**>**Modify IAM role**で先だって生成した**IAM Role**または**Instance Profile Name**を入力してください。
 
-    ![](/img/ec2-instances-modify-iam-role.png)
+   ![](/img/ec2-instances-modify-iam-role.png)
 
-    基本値: Role(WhaTapRDSCloudWatchMetricRole), InstanceProfile(WhaTapRDSCloudWatchMetricProfile)
+   基本値: Role(WhaTapRDSCloudWatchMetricRole), InstanceProfile(WhaTapRDSCloudWatchMetricProfile)
 
 ## AWS Consoleを通じた設定
 
@@ -34,70 +34,70 @@ WhaTapが提供するAWS CloudFormationテンプレートを通じて、AWS IAM 
 
 ### AWS IAM Policy 生成
 
-1.  **IAM**>**Polices**へ進入したあとに、**Create Policy**ボタンを選択してください。
+1. **IAM**>**Polices**へ進入したあとに、**Create Policy**ボタンを選択してください。
 
-    ![](/img/iam-polices-create-policy.png)
+   ![](/img/iam-polices-create-policy.png)
 
-2.  設定方式をJSONを選択した後、次の内容を入力し、**Next**を選択してください。
+2. 設定方式をJSONを選択した後、次の内容を入力し、**Next**を選択してください。
 
-    ```json
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "ec2:DescribeInstanceTypes",
-                    "elasticache:DescribeCacheClusters",
-                    "cloudwatch:GetMetricStatistics",
-                    "cloudwatch:ListMetrics"
-                ],
-                "Resource": "*"
-            },
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "rds:DownloadDBLogFilePortion",
-                    "rds:DescribeDBInstances",
-                    "rds:DescribeDBLogFiles",
-                    "rds:DescribeDBClusters"
-                ],
-                "Resource": [
-                    "arn:aws:rds:*:{AWS::ACCOUNT}:db:*",
-                    "arn:aws:rds:*:{AWS::ACCOUNT}:cluster:*"
-                ]
-            }
-        ]
-    }
-    ```
+   ```json
+   {
+       "Version": "2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "ec2:DescribeInstanceTypes",
+                   "elasticache:DescribeCacheClusters",
+                   "cloudwatch:GetMetricStatistics",
+                   "cloudwatch:ListMetrics"
+               ],
+               "Resource": "*"
+           },
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "rds:DownloadDBLogFilePortion",
+                   "rds:DescribeDBInstances",
+                   "rds:DescribeDBLogFiles",
+                   "rds:DescribeDBClusters"
+               ],
+               "Resource": [
+                   "arn:aws:rds:*:{AWS::ACCOUNT}:db:*",
+                   "arn:aws:rds:*:{AWS::ACCOUNT}:cluster:*"
+               ]
+           }
+       ]
+   }
+   ```
 
-3.  ポリシー名(**Policy name**)を設定したあと、**Create Policy**ボタンを選択してください。
+3. ポリシー名(**Policy name**)を設定したあと、**Create Policy**ボタンを選択してください。
 
-    ![](/img/policy-name.png)
+   ![](/img/policy-name.png)
 
 ### AWS IAM Role 生成
 
-1.  **IAM**>**Roles**へ進入したあと、**Create Role**ボタンを選択してください。
+1. **IAM**>**Roles**へ進入したあと、**Create Role**ボタンを選択してください。
 
-    ![](/img/iam-roles-create-role.png)
+   ![](/img/iam-roles-create-role.png)
 
-2.  **Select trusted entity**段階で信頼できるNTTタイプで**AWS Service**、**EC2**を順番に選択してください。
+2. **Select trusted entity**段階で信頼できるNTTタイプで**AWS Service**、**EC2**を順番に選択してください。
 
-    ![](/img/select-trusted-entity.png)
+   ![](/img/select-trusted-entity.png)
 
-3.  **Add permissoins** 段階で先に作成したポリシーを選択してください。
+3. **Add permissoins** 段階で先に作成したポリシーを選択してください。
 
-4.  **Name, review, and create**段階では名前と説明を作成し、Create roleボタンを選択してください。
+4. **Name, review, and create**段階では名前と説明を作成し、Create roleボタンを選択してください。
 
 ### AWS IAM Role修正
 
-1.  **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**を順番に選択してください。
+1. **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**を順番に選択してください。
 
-    ![](/img/ec2-instances.png)
+   ![](/img/ec2-instances.png)
 
-2.  **EC2**>**Instances**>**Modify IAM role**で先立って生成した**IAM Role**を入力してください。
+2. **EC2**>**Instances**>**Modify IAM role**で先立って生成した**IAM Role**を入力してください。
 
-    ![](/img/ec2-instances-modify-iam-role.png)
+   ![](/img/ec2-instances-modify-iam-role.png)
 
 ## エージェント設定
 

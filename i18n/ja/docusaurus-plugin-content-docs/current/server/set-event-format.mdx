@@ -13,9 +13,9 @@ tags:
 
 サーバーモニタリングは、例外的に異なる通知テンプレートを使います。
 
--   Product Type：サーバー
--   Event Type：サーバー通知、プロセス通知、ログファイル/ウィンドウイベント通知
--   Event Channel : SMS, Mobile, 3rd party plugin , Plugin
+- Product Type：サーバー
+- Event Type：サーバー通知、プロセス通知、ログファイル/ウィンドウイベント通知
+- Event Channel : SMS, Mobile, 3rd party plugin , Plugin
 
 ### イベントタイトル
 
@@ -111,8 +111,8 @@ Stateful : true
 
 | Event Type | Event Level         | Event Message                             | Event Off Message                        |
 | ---------- | ------------------- | ----------------------------------------- | ---------------------------------------- |
-| プロセス数警告    | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count < ${value}" |
-| プロセス数危険    | Warning or Critical | Process ${processName} Count < ${value}" | "Process ${groupName} Count >= ${value}" |
+| プロセス数警告    | Warning or Critical | Process ${processName} Count >= ${value}" | "Process ${groupName} Count \< ${value}" |
+| プロセス数危険    | Warning or Critical | Process ${processName} Count \< ${value}" | "Process ${groupName} Count >= ${value}" |
 | プロセスCPU    | Warning or Critical | Process ${processName} CPU > ${value}"    | -                                        |
 | プロセスメモリ    | Warning or Critical | Process ${processName} Memory > ${value}" | -                                        |
 

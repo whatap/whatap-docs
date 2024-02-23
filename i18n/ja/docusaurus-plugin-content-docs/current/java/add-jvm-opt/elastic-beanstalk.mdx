@@ -13,68 +13,68 @@ tags:
 
 {@include: _pass-note.mdx}
 
-1.  Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
+1. Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
-    -   _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
-    -   _.ebextensions/`{config_name}`.config_：ebの設定ファイル
-    -   _Procfile_：JVM command lineオプションを設定するためのファイル
-    -   _`{application}`.jar_：実行するapplicaion.jarのファイル
+   - _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
+   - _.ebextensions/`{config_name}`.config_：ebの設定ファイル
+   - _Procfile_：JVM command lineオプションを設定するためのファイル
+   - _`{application}`.jar_：実行するapplicaion.jarのファイル
 
-2.  Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
+2. Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
-    -   _paramkey.txt_
-    -   _whatap.agent-2.0_25.jar_
-    -   _whatap.conf_
+   - _paramkey.txt_
+   - _whatap.agent-2.0_25.jar_
+   - _whatap.conf_
 
-    ```bash
-    # ディレクトリ圧縮
-    zip -r whatap-agent.zip agent
-    ```
+   ```bash
+   # ディレクトリ圧縮
+   zip -r whatap-agent.zip agent
+   ```
 
-3.  _.ebextension/`{config_name}`.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
+3. _.ebextension/`{config_name}`.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
 
-    ダウンロード用の圧縮ファイルがある場合、ebを実行して自動的にダウンロードして解凍します。
+   ダウンロード用の圧縮ファイルがある場合、ebを実行して自動的にダウンロードして解凍します。
 
-    ```yaml title=ebextension/{config_name}.config
-    sources:
-      target directory:
-        S3のパス
-    ```
+   ```yaml title=ebextension/{config_name}.config
+   sources:
+     target directory:
+       S3のパス
+   ```
 
-    ```yaml title='Example'
-    sources:
-      /home/webapp:
-        http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
-    ```
+   ```yaml title='Example'
+   sources:
+     /home/webapp:
+       http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
+   ```
 
-4.  WhaTapエージェントオプションを追加したJVM commandを入力して_Procfile_を作成してください。
+4. WhaTapエージェントオプションを追加したJVM commandを入力して_Procfile_を作成してください。
 
-    ```yaml title='Procfile'
-    web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
-    ```
+   ```yaml title='Procfile'
+   web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
+   ```
 
-    ```yaml title='Example'
-    web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
-    ```
+   ```yaml title='Example'
+   web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
+   ```
 
-5.  _Procfile_ファイルと_.ebextensions_ファイル、_`{application}`.jar_ファイルを圧縮してください。
+5. _Procfile_ファイルと_.ebextensions_ファイル、_`{application}`.jar_ファイルを圧縮してください。
 
-    ```bash
-    zip -r {application}.zip Procfile .ebextensions/{application}.jar
-    ```
+   ```bash
+   zip -r {application}.zip Procfile .ebextensions/{application}.jar
+   ```
 
-6.  _.elasticbeanstalk/config.yml_ファイルにデプロイする zipファイルのパスを追加してください。
+6. _.elasticbeanstalk/config.yml_ファイルにデプロイする zipファイルのパスを追加してください。
 
-    ```yaml
-    deploy:
-      artifact: /path/to/{application}.zip
-    ```
+   ```yaml
+   deploy:
+     artifact: /path/to/{application}.zip
+   ```
 
-7.  eb配布コマンドを実行してください。
+7. eb配布コマンドを実行してください。
 
-    ```bash
-    eb deploy
-    ```
+   ```bash
+   eb deploy
+   ```
 
 :::note
 

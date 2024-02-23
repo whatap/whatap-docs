@@ -7,32 +7,32 @@ pagination_next: release-notes/golang/golang-0_2_3
 
 2023年11月22日
 
--   <Status>Changed</Status>テキストキャッシュの保存期間を従来の１日おきから１時間おきに変更
+- <Status>Changed</Status>テキストキャッシュの保存期間を従来の１日おきから１時間おきに変更
 
--   <Status>Changed</Status>kubernates環境でcpu、memeory指標を収集しないように変更、Kubernates エージェントが収集したシステム指標に置き換え
+- <Status>Changed</Status>kubernates環境でcpu、memeory指標を収集しないように変更、Kubernates エージェントが収集したシステム指標に置き換え
 
--   <Status>Fixed</Status>CentOS 9以降でwhatap-agentサービス実行エラーの修正
+- <Status>Fixed</Status>CentOS 9以降でwhatap-agentサービス実行エラーの修正
 
--   <Status>Fixed</Status>ドッカーコンテナ環境におけるvCPu情報の重複収集現象の修正
+- <Status>Fixed</Status>ドッカーコンテナ環境におけるvCPu情報の重複収集現象の修正
 
--   <Status>Fixed</Status>クライアントIPアドレス収集中にポート情報が一緒に収集されるエラーを修正
+- <Status>Fixed</Status>クライアントIPアドレス収集中にポート情報が一緒に収集されるエラーを修正
 
 :::info
 
 **ダウンロード**
 
--   go-api(import library)
+- go-api(import library)
 
-    ```bash
-    go get github.com/whatap/go-api@latest
-    ```
+  ```bash
+  go get github.com/whatap/go-api@latest
+  ```
 
--   サービスエージェント
+- サービスエージェント
 
-    | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
-    | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
-    | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-4.x86_64.rpm) |
-    | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.4_amd64.deb) |
-    | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.4.tar.gz)    |
+  | OS名                             | アーキテクチャ |  ファイル形式  |                                     ダウンロード                                    |
+  | ------------------------------- | :-----: | :------: | :---------------------------------------------------------------------------: |
+  | Red Hat / CentOS / Amazon linux | x86 x64 |    RPM   | [ダウンロード](http://repo.whatap.io/centos/6/x86_64/whatap-agent-0.2-4.x86_64.rpm) |
+  | Ubuntu 12 and above / Debian    |  amd64  |    DEB   |  [ダウンロード](http://repo.whatap.io/debian/unstable/whatap-agent_0.2.4_amd64.deb) |
+  | Alpine linux                    | x86 x64 | tar gzip |    [ダウンロード](http://repo.whatap.io/alpine/x86_64/whatap-agent-0.2.4.tar.gz)    |
 
 :::

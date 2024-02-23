@@ -15,9 +15,9 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 
 :::note
 
--   1時間周期で`pg_stat_statements`からデルタ値を計算して収集するため、設定から1時間が経ってから収集を開始します。
+- 1時間周期で`pg_stat_statements`からデルタ値を計算して収集するため、設定から1時間が経ってから収集を開始します。
 
--   `pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参照してください。
+- `pg_stat_statements`モジュールの詳細については、[次のリンク](https://www.postgresql.org/docs/current/pgstatstatements.html)を参照してください。
 
 :::
 
@@ -25,29 +25,29 @@ PostgreSQLが提供するSQL統計(実行回数、実行時間、Row数など) �
 
 **_PG SQL統計_**メニューを使用するには、モニタリング対象DBで次の設定が必要です。
 
-1.  PostgreSQL拡張パックをインストールしてください。
+1. PostgreSQL拡張パックをインストールしてください。
 
-    ```bash
-    yum install postgresql-contrib
-    ```
+   ```bash
+   yum install postgresql-contrib
+   ```
 
-2.  _postgresql.conf_ファイルにパラメータを設定し、DBを再起動してください。
+2. _postgresql.conf_ファイルにパラメータを設定し、DBを再起動してください。
 
-    ```ini title='postgresql.conf'
-    shared_preload_libraries = 'pg_stat_statements'
-    ```
+   ```ini title='postgresql.conf'
+   shared_preload_libraries = 'pg_stat_statements'
+   ```
 
-3.  使用するDBに接続し、拡張モジュールをインストールしてください。
+3. 使用するDBに接続し、拡張モジュールをインストールしてください。
 
-    ```bash
-    create extension pg_stat_statements;
-    ```
+   ```bash
+   create extension pg_stat_statements;
+   ```
 
-4.  データが表示されているか確認してください。
+4. データが表示されているか確認してください。
 
-    ```bash
-    select * from public.pg_stat_statements
-    ```
+   ```bash
+   select * from public.pg_stat_statements
+   ```
 
 ### 基本画面ガイド
 

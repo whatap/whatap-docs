@@ -1,234 +1,234 @@
--   **profile_step_normal_count** <span class='type'>Int</span>
+- **profile_step_normal_count** <span class='type'>Int</span>
 
-    デフォルト値 `1000`
+  デフォルト値 `1000`
 
-    トランザクショントレースの最大ステップ数を設定します。
+  トランザクショントレースの最大ステップ数を設定します。
 
--   **profile_step_heavy_count** <span class='type'>Int</span>
+- **profile_step_heavy_count** <span class='type'>Int</span>
 
-    デフォルト値`1020`
+  デフォルト値`1020`
 
-    Heavyなステップの場合、トレースの基本ステップ数を超えても決められた値だけ記録します。
+  Heavyなステップの場合、トレースの基本ステップ数を超えても決められた値だけ記録します。
 
--   **profile_step_max_count** <span class='type'>Int</span>
+- **profile_step_max_count** <span class='type'>Int</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後に収集されるステップはすべて破棄されます。`profile_step_heavy_count`を最大1000に設定すると、`profile_step_max_count`までアクティブスタックが収集されます。
+  トレースステップの最大数を設定します。収集されたトレースステップの数が設定値を超えると、その後に収集されるステップはすべて破棄されます。`profile_step_heavy_count`を最大1000に設定すると、`profile_step_max_count`までアクティブスタックが収集されます。
 
--   **profile_step_heavy_time** <span class='type'>MiliSecond</span>
+- **profile_step_heavy_time** <span class='type'>MiliSecond</span>
 
-    デフォルト値`100`
+  デフォルト値`100`
 
-    Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`の値を超えても、`profile_step_heavy_count`の設定値のみ記録します。
+  Heavyなステップの基準を設定します。 設定した値より実行時間が長い場合、`profile_step_normal_count`の値を超えても、`profile_step_heavy_count`の設定値のみ記録します。
 
--   **active_stack_count** <span class='type'>Int</span>
+- **active_stack_count** <span class='type'>Int</span>
 
-    デフォルト値`100`
+  デフォルト値`100`
 
-    トランザクション内で収集するアクティブスタックの最大数を設定します。
+  トランザクション内で収集するアクティブスタックの最大数を設定します。
 
--   **profile_method_resource_enabled** <span class='type'>Boolean</span>
+- **profile_method_resource_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレースからmethodステップを収集する場合は、そのステップで使用したCPUとメモリ使用量を追跡します。
+  トレースからmethodステップを収集する場合は、そのステップで使用したCPUとメモリ使用量を追跡します。
 
--   **profile_position_method** <span class='type'>String</span>
+- **profile_position_method** <span class='type'>String</span>
 
-    設定したメソッド実行時のStackTraceを記録します。
+  設定したメソッド実行時のStackTraceを記録します。
 
--   **profile_position_depth** <span class='type'>Int</span>
+- **profile_position_depth** <span class='type'>Int</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    position追跡のStackTraceを記録する場合、最大ライン数を設定します。
+  position追跡のStackTraceを記録する場合、最大ライン数を設定します。
 
--   **trace_error_callstack_depth** <span class='type'>Int</span>
+- **trace_error_callstack_depth** <span class='type'>Int</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    Error発生時に収集するStackTraceの最大ライン数を設定します。
+  Error発生時に収集するStackTraceの最大ライン数を設定します。
 
--   **trace_active_callstack_depth** <span class='type'>Int</span>
+- **trace_active_callstack_depth** <span class='type'>Int</span>
 
-    デフォルト値`50`
+  デフォルト値`50`
 
-    アクティブスタックから収集するStackTraceの最大ライン数を設定します。
+  アクティブスタックから収集するStackTraceの最大ライン数を設定します。
 
 {@include: ../common-items/_transaction-profile-active-color.mdx}
 
--   **hook_method_patterns** <span class='type'>String</span>
+- **hook_method_patterns** <span class='type'>String</span>
 
-    レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用することができます。対象が複数ある場合は、コンマ(,)で区切ります。
+  レスポンス時間を測定するメソッドを設定します。最後のピリオド(.)を区切り文字としてクラスのFullNameとメソッドに区分され、アスタリスク(\*)をワイルドカードとして使用することができます。対象が複数ある場合は、コンマ(,)で区切ります。
 
-    ```ini title='whatap.conf'
-    hook_method_patterns=a.b.C1.*
-    ```
+  ```ini title='whatap.conf'
+  hook_method_patterns=a.b.C1.*
+  ```
 
--   **hook_method_supers** <span class='type'>String</span>
+- **hook_method_supers** <span class='type'>String</span>
 
-     特定のクラスを継承するメソッドの応答時間を測定する場合は、Super Classを設定します。 クラスFullNameを設定し、対象が複数ある場合は、コンマ(,)で区切ります。
+   特定のクラスを継承するメソッドの応答時間を測定する場合は、Super Classを設定します。 クラスFullNameを設定し、対象が複数ある場合は、コンマ(,)で区切ります。
 
-    ```ini title='whatap.conf'
-    hook_method_supers=a.b.C1
-    ```
+  ```ini title='whatap.conf'
+  hook_method_supers=a.b.C1
+  ```
 
--   **hook_method_interfaces** <span class='type'>String</span>
+- **hook_method_interfaces** <span class='type'>String</span>
 
-    特定のインターフェイスを実装するメソッドの応答時間を測定する場合は、Interfaceを設定します。インターフェイスのFullNameを設定し、対象が複数ある場合は、コンマ(,)で区切ります。
+  特定のインターフェイスを実装するメソッドの応答時間を測定する場合は、Interfaceを設定します。インターフェイスのFullNameを設定し、対象が複数ある場合は、コンマ(,)で区切ります。
 
--   **hook_method_ignore_classes** <span class='type'>String</span>
+- **hook_method_ignore_classes** <span class='type'>String</span>
 
-    メソッドトレースを設定する場合は、トレースから除外するクラスをprefixに設定します。
+  メソッドトレースを設定する場合は、トレースから除外するクラスをprefixに設定します。
 
--   **hook_method_access_public_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_public_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
+  メソッドトレースを設定する場合、publicメソッドを個別のターゲットとしてのみ処理するかどうかを設定します。
 
--   **hook_method_access_private_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_private_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
+  メソッドトレースを設定する場合、privateメソッドに限り、個別の対象として処理するかどうかを設定します。
 
--   **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_protected_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
+  メソッドトレースを設定する場合、protectedメソッドに限り、個別の対象として処理するかどうかを設定します。
 
--   **hook_method_access_none_enabled** <span class='type'>Boolean</span>
+- **hook_method_access_none_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
+  メソッドトレースを設定する際、no access indicatedメソッドに限り、別途対象として処理するかを設定します。
 
--   **stacklog_socket_port** <span class='type'>TCP_PortNumber</span>
+- **stacklog_socket_port** <span class='type'>TCP_PortNumber</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    宛先のTCPポートを設定すると、Socket.connect()は、特定の時点でStackTraceをエージェントログとして記録します。基本設定で確認されていないDB接続、HTTPC接続などを追跡する場合に使用できます。
+  宛先のTCPポートを設定すると、Socket.connect()は、特定の時点でStackTraceをエージェントログとして記録します。基本設定で確認されていないDB接続、HTTPC接続などを追跡する場合に使用できます。
 
-    :::caution
+  :::caution
 
-    設定した宛先への接続は、毎回StackTraceを記録します。これらを行うと、パフォーマンスが低下する可能性があります。デバッグ用に選択したエージェントに一時的に使用する必要があります。
+  設定した宛先への接続は、毎回StackTraceを記録します。これらを行うと、パフォーマンスが低下する可能性があります。デバッグ用に選択したエージェントに一時的に使用する必要があります。
 
-    DB接続状態追跡の例）`stacklog_socket_port=1521`
+  DB接続状態追跡の例）`stacklog_socket_port=1521`
 
-    :::
+  :::
 
 ## 例外処理{#exception}
 
--   **biz_exceptions** <span class='type'>String</span>
+- **biz_exceptions** <span class='type'>String</span>
 
-    Business Exceptionを登録します。
+  Business Exceptionを登録します。
 
-    :::tip
+  :::tip
 
-    エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
+  エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
 
-    :::
+  :::
 
-    :::note
+  :::note
 
-    Javaエージェント[v2.2.20](../release-notes/java/java-2_2_20) 以降では、登録したビジネスExceptionをエラー統計で収集します。v2.2.20未満では、登録したビジネスExceptionをエラー統計から除外します。ただし、トレースの詳細では表示されます。
+  Javaエージェント[v2.2.20](../release-notes/java/java-2_2_20) 以降では、登録したビジネスExceptionをエラー統計で収集します。v2.2.20未満では、登録したビジネスExceptionをエラー統計から除外します。ただし、トレースの詳細では表示されます。
 
-    :::
+  :::
 
--   **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
+- **biz_exceptions_status** <span class='type'>String</span> <code class='my'>Java Agent v2.2.20 or later</code>
 
-    Business Exception発生時のイベント通知を抑制するBusiness ExceptionとStatusを設定します。このオプションで設定した**Business Exception:Status**の場合、イベントレベルが<span class="normal">INFO</span>に変更されます。Business ExceptionとStatusはコロン(:)で区分し、１つのBusiness Exceptionに複数のStatusが使用されている場合、アンパサンド(&)で区分します。コンマを区切り文字として使用して、複数を設定できます。
+  Business Exception発生時のイベント通知を抑制するBusiness ExceptionとStatusを設定します。このオプションで設定した**Business Exception:Status**の場合、イベントレベルが<span class="normal">INFO</span>に変更されます。Business ExceptionとStatusはコロン(:)で区分し、１つのBusiness Exceptionに複数のStatusが使用されている場合、アンパサンド(&)で区分します。コンマを区切り文字として使用して、複数を設定できます。
 
-    ```ini title='whatap.conf'
-    # example
-    biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
-    ```
+  ```ini title='whatap.conf'
+  # example
+  biz_exceptions_status=java.util.concurrent.TimeoutException:400&404&408,java.lang.Exception:200
+  ```
 
-    :::tip
+  :::tip
 
-    エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
+  エラークラス収集 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含む
 
-    :::
+  :::
 
--   **ignore_exceptions** <span class='type'>String</span>
+- **ignore_exceptions** <span class='type'>String</span>
 
-    登録したExceptionのエラー自体を無視します。
+  登録したExceptionのエラー自体を無視します。
 
-    :::tip
+  :::tip
 
-    エラークラス無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+  エラークラス無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
 
-    :::
+  :::
 
--   **transaction_status_error_enable** <span class='type'>Boolean</span>
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    HTTP401、403などの通常の応答ではないHTTP状態コードが返された場合、エラーとしての処理有無を設定します。
+  正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
--   **status_ignore** <span class='type'>String</span>
+- **status_ignore** <span class='type'>String</span>
 
-    無視しようとするHTTPステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore=408,500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore=408,500
+  ```
 
-    :::tip
+  :::tip
 
-    Statusエラー無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+  Statusエラー無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
 
-    :::
+  :::
 
--   **status_ignore_set** <span class='type'>String</span>
+- **status_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.STATUS_ERROR`を無視してください。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
+  `whatap.error.STATUS_ERROR`を無視してください。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
 
-    ```ini title='whatap.conf'
-    # example
-    status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
-    ```
+  ```ini title='whatap.conf'
+  # example
+  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  ```
 
-    :::tip
+  :::tip
 
-    Status エラーセット無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
+  Status エラーセット無視 / ヒートマップ表示レベル：<span class="normal">INFO</span>(青色) / エラー統計を含まない
 
-    :::
+  :::
 
--   **httpc_status_error_enable** <span class='type'>Boolean</span>
+- **httpc_status_error_enable** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
+  HTTPステータスコードがエラーの場合は、収集有無を設定します。クライアントエラーレスポンス(`400`以上)、サーバーエラーレスポンス(`500`以上)が該当します。
 
-    :::note
+  :::note
 
-    HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
+  HTTPステータスコードの詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/HTTP/Status)を参考にしてください。
 
-    :::
+  :::
 
--   **httpc_status_ignore** <span class='type'>String</span>
+- **httpc_status_ignore** <span class='type'>String</span>
 
-    HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  HTTPステータスコードがエラー(`HTTPC_ERROR`)の場合、無視することができます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    :::tip
+  :::tip
 
-    HTTPステータスエラーコード無視 / エラー統計を含まない
+  HTTPステータスエラーコード無視 / エラー統計を含まない
 
-    :::
+  :::
 
--   **httpc_status_url_ignore_set** <span class='type'>String</span>
+- **httpc_status_url_ignore_set** <span class='type'>String</span>
 
-    `whatap.error.HTTPC_ERROR`を無視してください。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  `whatap.error.HTTPC_ERROR`を無視してください。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
-    `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
+  `httpc_status_url_ignore_set =/a/b/c:400,/a/ab/c:404`のように設定してください。 この場合、URLは統計/エラー分析に`HTPC_URL`の値を入力します。
 
-    :::tip
+  :::tip
 
-    HTTPステータスエラーコード無視 / エラー統計を含まない
+  HTTPステータスエラーコード無視 / エラー統計を含まない
 
-    :::
+  :::

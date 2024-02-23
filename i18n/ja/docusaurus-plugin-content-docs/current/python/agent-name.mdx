@@ -14,27 +14,27 @@ tags:
 
 :::note
 
--   WhaTapモニタリンサービスでは、モニタリング対象をオブジェクトまたはエージェントとして混在して使用できます。
+- WhaTapモニタリンサービスでは、モニタリング対象をオブジェクトまたはエージェントとして混在して使用できます。
 
 :::
 
--   **object_name** <span class='type'>String</span>
+- **object_name** <span class='type'>String</span>
 
-    デフォルト値`{type}-{ip2}-{ip3}-{process}`
+  デフォルト値`{type}-{ip2}-{ip3}-{process}`
 
-    アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。 
+  アプリケーションを識別するためのエージェント名(ONAME) 構成方式です。ONAMEに基づいてOIDが生成されます。 
 
-    | 名称           | 説明                                    |
-    | ------------ | ------------------------------------- |
-    | `{type}`     | whatap.app_nameに設定された値を使用します。         |
-    | `{ip#}`      | IPを分割するときは、#番目の桁を使用します。               |
-    | `{process}`  | whatap.app_process_nameに設定された値を使用します。 |
-    | `{hostname}` | サーバーのホスト名を使用します。                      |
+  | 名称           | 説明                                    |
+  | ------------ | ------------------------------------- |
+  | `{type}`     | whatap.app_nameに設定された値を使用します。         |
+  | `{ip#}`      | IPを分割するときは、#番目の桁を使用します。               |
+  | `{process}`  | whatap.app_process_nameに設定された値を使用します。 |
+  | `{hostname}` | サーバーのホスト名を使用します。                      |
 
--   **app_name** <span class='type'>String</span>
+- **app_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。`object_name`の`{type}`に対応する値です。
+  アプリケーションを識別するためのエージェント名(ONAME)の構成要素です。`object_name`の`{type}`に対応する値です。
 
--   **app_process_name** <span class='type'>String</span>
+- **app_process_name** <span class='type'>String</span>
 
-    アプリケーションを識別するためのエージェント名(ONAME)のコンポーネントです。アプリケーションプロセス名のアプリケーションプロセスのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に対応する値です。  
+  アプリケーションを識別するためのエージェント名(ONAME)のコンポーネントです。アプリケーションプロセス名のアプリケーションプロセスのCPU、Heap Memoryなどを収集する対象プロセスを設定します。`object_name`の`{process}`に対応する値です。  

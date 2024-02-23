@@ -1,10 +1,18 @@
 ## 大量アラート通知発生の防止
 
-通知が大量に発生すると、設定した時間のアラート通知を一時的に停止します。**_アラート通知_** > **_イベント受信設定_**メニューから大量アラート通知発生の防止セクションに移動してください。
+通知が大量に発生すると、設定した時間には警告通知を一時的に停止します。<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="eventNoti" className="uitext" />メニューで<Cmdname sid="aboids_large_number_alerts" className="uitext" /> セクションに移動してください。
 
 <ImgLang img='set-event-huge-message.png' desc='大量通知発生の防止' />
 
--   **_有効化_**トグルボタンを選択して、機能をオン・オフにすることができます。
--   **_検知時間_**に**_検知回数_**を超えるイベントが発生すると**_停止時間_**にアラート通知を停止します。
+- <Cmdname sid="enable" className="uitext" />トグルボタンを選択して、機能をオン・オフにすることができます。
+- <Cmdname sid="detection_time" className="uitext" />に<Cmdname sid="number_of_detections" className="uitext" />を超えるイベントが発生すると<Cmdname sid="pause_time" className="uitext" />にアラート通知を停止します。
 
-例えば、5分間に20回のイベントが発生した場合、5分間アラート通知を停止します。設定した**_停止時間_**時間が経過すると、大量通知発生の防止機能は解除されます。
+例えば、5分間に20回のイベントが発生した場合、5分間アラート通知を停止します。設定した<Cmdname sid="pause_time" className="uitext" />時間が経過すると、大量通知発生の防止機能は解除されます。
+
+:::caution
+
+テキストメッセージの通知が 1日 200件以上発生した時に一時停止し、次のメッセージを表示します。テキストメッセージ通知停止機能を解除するには<Cmdname sid="terminate_now" className="uitext" />ボタンを選択してください。
+
+<ImgLang img='notification-set-large-message-warning.png' desc='SMS通知中止を解除する' />
+
+:::

@@ -17,283 +17,281 @@ tags:
 
 ## トランザクショントレーシング{#trs-trc}
 
--   **profile_step_normal_count** <span class='type'>Int</span>
+- **profile_step_normal_count** <span class='type'>Int</span>
 
-    デフォルト値 `1000`
+  デフォルト値 `1000`
 
-    トランザクショントレースの最大ステップ数を指定します。
+  トランザクショントレースの最大ステップ数を指定します。
 
--   **profile_step_max_count** <span class='type'>Int</span>
+- **profile_step_max_count** <span class='type'>Int</span>
 
-    デフォルト値 `1024`
+  デフォルト値 `1024`
 
-    収集可能なトレースステップの最大数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
+  収集可能なトレースステップの最大数を設定します。収集されたトレースステップの数がこの値を超えると、その後収集されるステップはすべて捨てられます。
 
-    :::caution
+  :::caution
 
-    設定値を上げすぎると、メモリ使用量が増加します。デフォルト値を変更しないことをお勧めします。 
+  設定値を上げすぎると、メモリ使用量が増加します。デフォルト値を変更しないことをお勧めします。 
 
-    :::
+  :::
 
--   **profile_step_heavy_count** <span class='type'>Int</span>
+- **profile_step_heavy_count** <span class='type'>Int</span>
 
-    デフォルト値 `1000`
+  デフォルト値 `1000`
 
-    基本ステップの収集数を超えるた場合は、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の`profile_step_normal_count`が800の場合、最大200個のステップが収集されます。
+  基本ステップの収集数を超えるた場合は、実行時間が`profile_step_heavy_time`を超えるステップのみを収集します。そのステップの収集可能な数を設定します。Default設定の`profile_step_normal_count`が800の場合、最大200個のステップが収集されます。
 
--   **profile_step_heavy_time** <span class='type'>Millisecond</span>
+- **profile_step_heavy_time** <span class='type'>Millisecond</span>
 
-    デフォルト値`100`
+  デフォルト値`100`
 
-    Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
+  Heavyなステップの基準を指定します。指定された値より実行時間が長い場合は、`profile_step_normal_count`を超える場合でも`profile_step_heavy_count`以内で記録されます。
 
--   **profile_basetime** <span class='type'>Millisecond</span>
+- **profile_basetime** <span class='type'>Millisecond</span>
 
-    デフォルト値`500`
+  デフォルト値`500`
 
-    トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただし、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
+  トランザクションが設定値以下の時間内に終了した場合、トレース情報を収集しません。ただし、5分単位で最初に呼び出されたURL、エラーが発生したトランザクションに関するトレース情報は収集されます。
 
--   **query_string_enabled** <span class='type'>Boolean</span>
+- **query_string_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トランザクションURLのクエリ文字列をまとめて収集する機能を有効にします。`query_string_urls`に登録されたURLのみ適用されます。
+  トランザクションURLのクエリ文字列をまとめて収集する機能を有効にします。`query_string_urls`に登録されたURLのみ適用されます。
 
--   **query_string_urls** <span class='type'>String</span>
+- **query_string_urls** <span class='type'>String</span>
 
-    トランザクションからクエリストリングを収集するURLを登録します。
+  トランザクションからクエリストリングを収集するURLを登録します。
 
--   **split_profile_enabled** <span class='type'>Boolean</span>
+- **split_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    一定量のプロファイルを仮想トランザクションに分割して、より多くのプロファイル情報を収集します。複数のトランザクション一覧に分割されます。
+  一定量のプロファイルを仮想トランザクションに分割して、より多くのプロファイル情報を収集します。複数のトランザクション一覧に分割されます。
 
-    :::note
+  :::note
 
-    同時に設定された場合、優先順位は次の通りです。 
+  同時に設定された場合、優先順位は次の通りです。 
 
-    1.  split
+  1. split
 
-    2.  large
+  2. large
 
-    3.  circular
+  3. circular
 
-    :::
+  :::
 
--   **large_profile_enabled** <span class='type'>Boolean</span>
+- **large_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    一定量のプロファイルを圧縮および分割して、メモリを増やことなく多くのプロファイル情報を収集できます。
+  一定量のプロファイルを圧縮および分割して、メモリを増やことなく多くのプロファイル情報を収集できます。
 
-    :::note
+  :::note
 
-    -   約1万件以下のプロファイル(ステップ) 情報を収集できます。ボリュームが大きい場合は、`split_profile_enabled`オプションの使用をお勧めします。
+  - 約1万件以下のプロファイル(ステップ) 情報を収集できます。ボリュームが大きい場合は、`split_profile_enabled`オプションの使用をお勧めします。
 
-    -   同時に設定された場合、優先順位は次の通りです。 
+  - 同時に設定された場合、優先順位は次の通りです。 
 
-        1.  split
+    1. split
 
-        2.  large
+    2. large
 
-        3.  circular
+    3. circular
 
-    :::
+  :::
 
--   **circular_profile_enabled** <span class='type'>Boolean</span>
+- **circular_profile_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    最新の1024個のプロファイリング情報を収集します。 
+  最新の1024個のプロファイリング情報を収集します。 
 
-    :::note
+  :::note
 
-    同時に設定された場合、優先順位は次の通りです。 
+  同時に設定された場合、優先順位は次の通りです。 
 
-    1.  split
+  1. split
 
-    2.  large
+  2. large
 
-    3.  circular
+  3. circular
 
-    :::
+  :::
 
--   **profile_zip_enabled** <span class='type'>Boolean</span>
+- **profile_zip_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    プロファイル情報を圧縮して送信します。デフォルト値は、`true`に設定されています。
+  プロファイル情報を圧縮して送信します。デフォルト値は、`true`に設定されています。
 
 ## HTTPトランザクションの追跡{#track-http-trs}
 
--   **trace_normalize_enabled** <span class='type'>Boolean</span>
+- **trace_normalize_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値 `true`
+  デフォルト値 `true`
 
-    トランザクションURLを変換して一般化する機能を有効にします。
+  トランザクションURLを変換して一般化する機能を有効にします。
 
--   **trace_normalize_urls** <span class='type'>String</span>
+- **trace_normalize_urls** <span class='type'>String</span>
 
-    トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。      
+  トランザクションURLを変換して一般化する対象URLを指定します。呼び出しURLパターンを変換してパスパラメータを削除します。      
 
-    :::note
+  :::note
 
-    例えば、`/a/{v}/b`と設定すると、その形式で呼び出されたトランザクションURLは、`/a/{v}/b`形式として変換されます。複数の登録するときはコンマ(,)を使います。
+  例えば、`/a/{v}/b`と設定すると、その形式で呼び出されたトランザクションURLは、`/a/{v}/b`形式として変換されます。複数の登録するときはコンマ(,)を使います。
 
-    :::
+  :::
 
--   **trace_ignore_url_set** <span class='type'>String</span>
+- **trace_ignore_url_set** <span class='type'>String</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    特定のURLを設定すると、トランザクション追跡対象から除外されます。設定されたURLはトランザクション情報を収集せず、トランザクション 一覧で確認できません。トランザクション追跡対象から除外するURLを指定します。2つ以上の値を指定する場合は、コンマ(,)を区切り文字として使用します。
+  特定のURLを設定すると、トランザクション追跡対象から除外されます。設定されたURLはトランザクション情報を収集せず、トランザクション 一覧で確認できません。トランザクション追跡対象から除外するURLを指定します。2つ以上の値を指定する場合は、コンマ(,)を区切り文字として使用します。
 
--   **trace_ignore_url_prefix** <span class='type'>String</span>
+- **trace_ignore_url_prefix** <span class='type'>String</span>
 
-    デフォルト値`0`
+  デフォルト値`0`
 
-    トランザクション追跡対象から除外するURL prefixを指定します。
+  トランザクション追跡対象から除外するURL prefixを指定します。
 
--   **profile_http_header_enabled** <span class='type'>Boolean</span>
+- **profile_http_header_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース履歴にHTTPヘッダーの情報を記録する場合に使用します。
+  トレース履歴にHTTPヘッダーの情報を記録する場合に使用します。
 
--   **profile_http_header_ignore_keys** <span class='type'>String</span>
+- **profile_http_header_ignore_keys** <span class='type'>String</span>
 
-    デフォルト値`host,accept,user-agent,referer, accept-language, connection`
+  デフォルト値`host,accept,user-agent,referer, accept-language, connection`
 
-    HTTP Header名を指定して、収集する情報から除外する機能を追加しました。指定されたHTTP Header名の値は収集から除外され、"#"として表示されます。
+  HTTP Header名を指定して、収集する情報から除外する機能を追加しました。指定されたHTTP Header名の値は収集から除外され、"#"として表示されます。
 
--   **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
+- **profile_http_parameter_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile_http_parameter' />
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トレース履歴にhtpパラメータ情報を記録する場合に使用します。パラメータは、他のセキュリティキーを入力しないと参照できません。Get、Postパラメータから、textタイプの名前と値を収集します。最大40個(Get 20個、Post 20個) を収集し、パラメータ名と値は最大256byteまで収集されます。
+  トレース履歴にhtpパラメータ情報を記録する場合に使用します。パラメータは、他のセキュリティキーを入力しないと参照できません。Get、Postパラメータから、textタイプの名前と値を収集します。最大40個(Get 20個、Post 20個) を収集し、パラメータ名と値は最大256byteまで収集されます。
 
-    :::note
+  :::note
 
-    セキュリティキーは、_whatap.conf_ファイルがある`WHATAP_HOME`_/paramkey.txt_ファイルに６ケタで設定します。_paramkey.txt_ファイルがない場合は、ランダムに値が自動生成されます。
+  セキュリティキーは、_whatap.conf_ファイルがある`WHATAP_HOME`_/paramkey.txt_ファイルに６ケタで設定します。_paramkey.txt_ファイルがない場合は、ランダムに値が自動生成されます。
 
-    :::
+  :::
 
--   **profile_http_parameter_url_prefix** <span class='type'>String</span>
+- **profile_http_parameter_url_prefix** <span class='type'>String</span>
 
-    デフォルト値 `/`
+  デフォルト値 `/`
 
-    トレース履歴にHTTPパラメータ情報を記録するために、対象URLのprefixを定義する場合に使用します。
+  トレース履歴にHTTPパラメータ情報を記録するために、対象URLのprefixを定義する場合に使用します。
 
--   **profile_http_host_enabled** <span class='type'>Boolean</span>
+- **profile_http_host_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    トランザクションのHost情報を出力します。値が`false`の場合、トランザクションのURLはURIのみ表示され、`true`の場合は、`/xxx.aaa.com/URL`形式で出力されます。
+  トランザクションのHost情報を出力します。値が`false`の場合、トランザクションのURLはURIのみ表示され、`true`の場合は、`/xxx.aaa.com/URL`形式で出力されます。
 
--   **ignore_http_method** <span class='type'>String</span>
+- **ignore_http_method** <span class='type'>String</span>
 
-    デフォルト値`Empty`
+  デフォルト値`Empty`
 
-    指定されたHTTP Methodでリクエストされたトランザクション情報は収集しません。複数を指定するときはコンマ(,)で区切ります。
+  設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
 
-    :::note 
+  ```ini title="whatap.conf"
+  # e.g. http_methodがOPTIONS、HEADであるトランザクションを「追跡」
+  ignore_http_method=PATCH,TRACE
 
-    次のように、`OPTIONS`と`HEAD`2つの値を指定する場合は、コンマ(,)で区切ります。
+  # e.g. http_methodがOPTIONS、HEADであるトランザクションを「無視」
+  ignore_http_method=OPTIONS,HEAD
+  ```
 
-    ```ini title='whatap.conf'
-    ignore_http_method=OPTIONS, HEAD
-    ```
+- **biz_exceptions** <span class='type'>String</span>
 
-    :::
+  デフォルト値`Empty`
 
--   **biz_exceptions** <span class='type'>String</span>
+  特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒットマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
 
-    デフォルト値`Empty`
+- **ignore_exceptions** <span class='type'>String</span>
 
-    特定のErrorまたはExceptionをBusiness Exceptionとして指定します。ヒットマップはエラーと表示せず、統計情報として収集されます。収集されるError Class名と同じように適用します。コンマを区切り文字として複数登録できます。
+  登録したExceptionのエラー自体を無視します。例外する文字列は、プロファイルのエラーの種類またはエラー統計に関連するクラス項目の文字列です。
 
--   **ignore_exceptions** <span class='type'>String</span>
+  Goでは、発生するerrorのTypeを文字列で表記します。
 
-    登録したExceptionのエラー自体を無視します。例外する文字列は、プロファイルのエラーの種類またはエラー統計に関連するクラス項目の文字列です。
+  ```go
+  thr.ErrorClassName = fmt.Sprintf("%T", err)
+  thr.ErrorMessage = err.Error()
 
-    Goでは、発生するerrorのTypeを文字列で表記します。
+  # error Type 出力
 
-    ```go
-    thr.ErrorClassName = fmt.Sprintf("%T", err)
-    thr.ErrorMessage = err.Error()
-
-    # error Type 出力
-
-    *errors.errorString
-    *echo.HTTPError
-    *url.Error
-    ```
+  *errors.errorString
+  *echo.HTTPError
+  *url.Error
+  ```
 
 ## トランザクションのトレース
 
--   **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_slow_time** <span class='type'>Millisecond</span>
 
-    デフォルト値 `3000`
+  デフォルト値 `3000`
 
-    収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表示できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
+  収集情報を確認するダッシュボードのアクティブトランザクションアークイコライザーグラフでSlow区間として表示できるトランザクション応答時間の基準を指定します。トランザクションの応答時間が指定時間を超えた場合、Slowアクティブトランザクションの数に含まれます。
 
--   **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_very_slow_time** <span class='type'>Millisecond</span>
 
-    デフォルト値 `8000`
+  デフォルト値 `8000`
 
--   **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
+- **trace_active_transaction_lost_time** <span class='type'>Millisecond</span>
 
-    デフォルト値`30000`
+  デフォルト値`30000`
 
-    トランザクションが終了する制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報はそれ以上収集されません。トランザクションのトレース情報から"Lost Connection"を確認できます。
+  トランザクションが終了する制限時間の5分以内にトランザクションが終了しない場合、トランザクション情報はそれ以上収集されません。トランザクションのトレース情報から"Lost Connection"を確認できます。
 
--   **trace_useragent_enabled** <span class='type'>Boolean</span>
+- **trace_useragent_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    値が`true`の場合、トランザクションのユーザーエージェント情報を収集します。 
+  値が`true`の場合、トランザクションのユーザーエージェント情報を収集します。 
 
--   **trace_referer_enabled** <span class='type'>Boolean</span>
+- **trace_referer_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    値が`true`であれば、トランザクションのRefere情報を収集します。
+  値が`true`であれば、トランザクションのRefere情報を収集します。
 
 ## マルチトランザクショントレース
 
--   **mtrace_enabled** <span class='type'>Boolean</span>
+- **mtrace_enabled** <span class='type'>Boolean</span>
 
-    デフォルト値`false`
+  デフォルト値`false`
 
-    マルチトランザクション追跡機能(MTID) を使用可否を設定します。MTIDを追跡すると、登録されたすべてのアプリケーション間の呼び出しを確認できます。
+  マルチトランザクション追跡機能(MTID) を使用可否を設定します。MTIDを追跡すると、登録されたすべてのアプリケーション間の呼び出しを確認できます。
 
--   **mtrace_rate** <span class='type'>Percentage</span>
+- **mtrace_rate** <span class='type'>Percentage</span>
 
-    デフォルト値`10`
+  デフォルト値`10`
 
-    最初のトランザクションが発生したときに発行されるMTID(Multi Transaction ID)の発行比率を設定するオプションです。
+  最初のトランザクションが発生したときに発行されるMTID(Multi Transaction ID)の発行比率を設定するオプションです。
 
--   **mtrace_poid_key** <span class='type'>String</span>
+- **mtrace_poid_key** <span class='type'>String</span>
 
-    デフォルト値`x-wtap-po`
+  デフォルト値`x-wtap-po`
 
-    MTID追跡に使用するCallerプロジェクトの情報を渡すためのKey Nameを設定します。
+  MTID追跡に使用するCallerプロジェクトの情報を渡すためのKey Nameを設定します。
 
--   **mtrace_caller_key** <span class='type'>String</span>
+- **mtrace_caller_key** <span class='type'>String</span>
 
-    デフォルト値`x-wtap-mst`
+  デフォルト値`x-wtap-mst`
 
-    MTID追跡に使用するCaller Key Nameを設定します。
+  MTID追跡に使用するCaller Key Nameを設定します。
 
--   **mtrace_callee_key** <span class='type'>String</span>
+- **mtrace_callee_key** <span class='type'>String</span>
 
-    デフォルト値`x-wtap-tx`
+  デフォルト値`x-wtap-tx`
 
-    MTID追跡に使用するCallee Key Nameを定義します。
+  MTID追跡に使用するCallee Key Nameを定義します。
 
--   **mtrace_send_url_length** <span class='type'>Int</span>
+- **mtrace_send_url_length** <span class='type'>Int</span>
 
-    デフォルト値`80`
+  デフォルト値`80`
 
-    HTTP Callerは、CalleeにURLを渡します。この時、URLの長さを制限しています。この長さを指定します。
+  HTTP Callerは、CalleeにURLを渡します。この時、URLの長さを制限しています。この長さを指定します。
