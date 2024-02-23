@@ -364,11 +364,6 @@ const toc = [
         level: 4
     },
     {
-        value: '<Cmdname sid="analysis" />',
-        id: 'cmdname-sidanalysis-',
-        level: 4
-    },
-    {
         value: '<Cmdname sid="event_statistic" />',
         id: 'cmdname-sidevent_statistic-',
         level: 4
@@ -680,17 +675,6 @@ function MDXContent(_param) {
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
         mdxType: "Status"
     }, "Fixed"), " 차트에 표시되는 Y축 임계치 라벨 텍스트가 잘리는 문제 수정")), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
-        "id": "cmdname-sidanalysis-"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "analysis",
-        mdxType: "Cmdname"
-    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Status, {
-        mdxType: "Status"
-    }, "Fixed"), " ", /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
-        sid: "tag_count_chart",
-        className: "uitext",
-        mdxType: "Cmdname"
-    }), " 메뉴의 위젯에서 다운로드하는 CSV 파일에 시작 시간 이상 종료 시간 미만까지 데이터를 포함하도록 수정"), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h4", {
         "id": "cmdname-sidevent_statistic-"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "event_statistic",
