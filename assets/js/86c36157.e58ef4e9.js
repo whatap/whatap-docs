@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[48801],{
+(self["webpackChunkwhatap_origin"] = self["webpackChunkwhatap_origin"] || []).push([[37748],{
 
 /***/ 15680:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 47137:
+/***/ 80054:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -310,30 +310,29 @@ function _object_without_properties_loose(source, excluded) {
 const frontMatter = {
     id: 'warning-notice-v2',
     title: '이벤트 설정',
-    description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+    description: '네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
     tags: [
-        'Go',
+        '네트워크 성능 모니터링',
         '경고 알림',
-        '이벤트 설정',
-        '애플리케이션'
+        '이벤트 설정'
     ]
 };
 const contentTitle = undefined;
 const metadata = {
-    "unversionedId": "golang/warning-notice-v2",
-    "id": "golang/warning-notice-v2",
+    "unversionedId": "npm/warning-notice-v2",
+    "id": "npm/warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-    "source": "@site/docs/golang/warning-notice-v2.mdx",
-    "sourceDirName": "golang",
-    "slug": "/golang/warning-notice-v2",
-    "permalink": "/whatap-docs/golang/warning-notice-v2",
+    "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "source": "@site/docs/npm/warning-notice-v2.mdx",
+    "sourceDirName": "npm",
+    "slug": "/npm/warning-notice-v2",
+    "permalink": "/whatap-docs/npm/warning-notice-v2",
     "draft": false,
-    "editUrl": "undefined/docs/golang/warning-notice-v2.mdx",
+    "editUrl": "undefined/docs/npm/warning-notice-v2.mdx",
     "tags": [
         {
-            "label": "Go",
-            "permalink": "/whatap-docs/tags/go"
+            "label": "네트워크 성능 모니터링",
+            "permalink": "/whatap-docs/tags/네트워크-성능-모니터링"
         },
         {
             "label": "경고 알림",
@@ -342,32 +341,27 @@ const metadata = {
         {
             "label": "이벤트 설정",
             "permalink": "/whatap-docs/tags/이벤트-설정"
-        },
-        {
-            "label": "애플리케이션",
-            "permalink": "/whatap-docs/tags/애플리케이션"
         }
     ],
     "version": "current",
     "frontMatter": {
         "id": "warning-notice-v2",
         "title": "이벤트 설정",
-        "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+        "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
         "tags": [
-            "Go",
+            "네트워크 성능 모니터링",
             "경고 알림",
-            "이벤트 설정",
-            "애플리케이션"
+            "이벤트 설정"
         ]
     },
-    "sidebar": "goSidebar",
+    "sidebar": "npmsidebar",
     "previous": {
-        "title": "애플리케이션 경고 알림",
-        "permalink": "/whatap-docs/golang/warning-notice"
+        "title": "메트릭스 경고 알림",
+        "permalink": "/whatap-docs/npm/metric-warning-notice"
     },
     "next": {
-        "title": "메트릭스 경고 알림",
-        "permalink": "/whatap-docs/golang/metric-warning-notice"
+        "title": "경고 알림 수신 설정",
+        "permalink": "/whatap-docs/npm/set-receive-event"
     }
 };
 const assets = {};
@@ -489,11 +483,11 @@ function MDXContent(_param) {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
-    }, `신규 프로젝트는 별도의 설정없이 이 기능을 이용할 수 있으나 이미 생성된 프로젝트에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
-        parentName: "p"
-    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
-        parentName: "strong"
-    }, `이벤트 생성하기`)), ` 버튼을 선택하세요. 새로운 기능에 최적화된 이벤트 목록을 자동으로 생성합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+    }, `신규 프로젝트는 별도의 설정없이 이 기능을 이용할 수 있으나 이미 생성된 프로젝트에서는 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "BTN07682",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 버튼을 선택하세요. 새로운 기능에 최적화된 이벤트 목록을 자동으로 생성합니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
@@ -510,7 +504,7 @@ function MDXContent(_param) {
         "href": "../project/project-structure#project-auth"
     }, `다음 문서`), `를 참조하세요.`)))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "basic-template"
-    }, `기본 이벤트 템플릿`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `생성한 프로젝트의 상품에 따라 기본 이벤트 템플릿을 제공합니다. 이벤트 목록의 가장 오른쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+    }, `기본 이벤트 템플릿`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `생성한 프로젝트의 상품에 따라 기본 이벤트 템플릿을 제공합니다. 이벤트 목록의 가장 왼쪽에 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "TTL06099",
         className: "uitext",
         mdxType: "Cmdname"
@@ -886,11 +880,34 @@ function MDXContent(_param) {
         parentName: "a"
     }, `server_process`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
         parentName: "li"
+    }, `CPU 전체 사용률(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "p"
+    }, `cpu`), `)이 90%를 초과하면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+        class: "slow"
+    }, `Warning`), `) 수준의 알림을, 95%를 초과하면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+        class: "vslow"
+    }, `Critical`), `) 수준의 알림을 보냅니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
+        parentName: "ul"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `Process Count`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
+    }, `카테고리: `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("a", {
+        parentName: "p",
+        "href": "metrics-server#server_process"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
+        parentName: "a"
+    }, `server_process`))), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", {
+        parentName: "li"
     }, `프로세스의 수(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("inlineCode", {
         parentName: "p"
-    }, `count`), `)가 2 이상이면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `count`), `)가 2개 이상이면 경고(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "slow"
-    }, `Warning`), `) 수준의 알림을, 1 미만이면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
+    }, `Warning`), `) 수준의 알림을, 1개 미만이면 위험(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("span", {
         class: "vslow"
     }, `Critical`), `) 수준의 알림을 보냅니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("li", {
         parentName: "ul"
@@ -2325,7 +2342,7 @@ function MDXContent(_param) {
         sid: "TTL07363",
         mdxType: "Cmdname"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
-        product: "java,php,python,nodejs,dotnet,golang,kubernetes,mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis",
+        product: "java,php,python,nodejs,dotnet,golang,kubernetes",
         mdxType: "InDoc"
     }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `특정 에이전트에서만 발생하는 이벤트를 알림으로 보내도록 설정할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
         sid: "TLT07556",
@@ -2333,6 +2350,21 @@ function MDXContent(_param) {
         mdxType: "Cmdname"
     }), ` 항목을 클릭한 다음 원하는 에이전트를 선택하세요.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
         img: "event-config-v2-target-apm.png",
+        desc: "이벤트 대상 선택",
+        mdxType: "ImgLang"
+    })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
+        product: "mysql,postgresql,oracle,mssql,cubrid,tibero,altibase,redis",
+        mdxType: "InDoc"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `특정 에이전트에서만 발생하는 이벤트를 알림으로 보내도록 설정할 수 있습니다. `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(Cmdname, {
+        sid: "TLT07556",
+        className: "uitext",
+        mdxType: "Cmdname"
+    }), ` 항목을 클릭한 다음 원하는 에이전트를 선택하세요. 에이전트를 선택한 다음 연결된 DB 서버의 데이터베이스 이름(`, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("strong", {
+        parentName: "p"
+    }, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("em", {
+        parentName: "strong"
+    }, `DbName`)), `)을 추가로 선택할 수도 있습니다.`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(ImgLang, {
+        img: "event-config-v2-target-db.png",
         desc: "이벤트 대상 선택",
         mdxType: "ImgLang"
     })), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)(InDoc, {
@@ -2944,7 +2976,7 @@ function MDXContent(_param) {
         parentName: "admonition"
     }, `이 기능은 같은 종류의 상품 간에 이용할 것을 권장합니다. 다른 상품의 프로젝트로부터 이벤트 설정을 가져올 수는 있지만 정상 작동하지 않습니다.`)), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("h2", {
         "id": "이벤트-검색하기"
-    }, `이벤트 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 검색어를 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
+    }, `이벤트 검색하기`), /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("p", null, `이벤트 목록에서 이벤트 이름 또는 지표를 기준으로 검색할 수 있습니다. 검색 입력란에 문자열을 입력한 다음 `, /*#__PURE__*/ (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .yg)("img", {
         alt: "검색 아이콘",
         src: (__webpack_require__(70378)/* ["default"] */ .A),
         width: "24",
